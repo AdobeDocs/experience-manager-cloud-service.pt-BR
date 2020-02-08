@@ -1,0 +1,63 @@
+---
+title: Console de componentes
+description: O console Componentes permite navegar por todos os componentes definidos para a sua instância
+translation-type: tm+mt
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+
+---
+
+
+# Console de componentes {#components-console}
+
+O console Componentes permite navegar por todos os componentes definidos para a sua instância e exibir as informações principais de cada componente.
+
+It can be accessed from **Tools ->** **General ->** **Components**. Como não há estrutura em árvore para componentes, somente a exibição de lista está disponível.
+
+![O console Componentes](/help/sites-cloud/authoring/assets/components-console.png)
+
+>[!NOTE]
+>
+>O console Componentes mostra todos os componentes no sistema. O [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) mostra componentes que estão disponíveis para autores e oculta todos os grupos de componentes que começam com um ponto final ( `.`).
+
+## Pesquisar {#search-field}
+
+Com o ícone **Apenas conteúdo** (na parte superior esquerda), você pode abrir o painel **Pesquisar** para pesquisar e/ou filtrar os componentes: 
+
+![Como pesquisar no console Componentes](/help/sites-cloud/authoring/assets/components-console-search.png)
+
+### Detalhes do componente {#component-details}
+
+Para exibir detalhes sobre um componente específico, toque/clique no recurso desejado. As três guias fornecem:
+
+* **Propriedades**
+
+   ![Propriedades do console Componentes](/help/sites-cloud/authoring/assets/components-console-properties.png)
+
+   Na guia Propriedades, é possível:
+
+   * Veja as propriedades gerais do componente.
+      * Visualizar como o ícone ou a abreviação foi definida para o componente. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
+      * Clicar na origem do ícone levará você até esse componente.
+   * Visualizar o **Tipo de recurso** e o **Supertipo do recurso** (se definido) para o componente.
+      * Clicar no Supertipo do recurso levará você até esse componente.
+   >[!NOTE]
+   >
+   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+
+* **Políticas**
+
+   ![Políticas do console de componentes](/help/sites-cloud/authoring/assets/components-console-policies.png)
+
+* **Uso em tempo real**
+
+   ![Uso em tempo real de componentes](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
+
+   >[!CAUTION]
+   >
+   >Devido à natureza das informações coletadas para esta exibição, ela pode levar algum tempo para ser agrupada/exibida. 
+
+* **Documentação**
+
+   Se o desenvolvedor tiver fornecido a documentação referente ao componente, ela aparecerá na guia **Documentação**. Se não houver documentação disponível, a guia **Documentação** não será exibida. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+
+   ![Documentação do componente](/help/sites-cloud/authoring/assets/components-console-documentation.png)
