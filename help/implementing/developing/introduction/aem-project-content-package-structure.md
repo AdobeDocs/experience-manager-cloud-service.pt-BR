@@ -1,0 +1,507 @@
+---
+title: Entender a estrutura do pacote de conteúdo de um projeto
+description: Saiba mais sobre como definir adequadamente as estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
+translation-type: tm+mt
+source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+
+---
+
+
+# Entenda a estrutura de um pacote de conteúdo do projeto no serviço da Adobe Experience Manager Cloud {#understand-cloud-service-package-structure}
+
+>[!TIP]
+>
+>Familiarize-se com o uso [básico do](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM Project Archetype e com o plug-in [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) FileVault Content Maven, pois este artigo se baseia nesses aprendizados e conceitos.
+
+Este artigo descreve as alterações necessárias para que os projetos do Adobe Experience Manager Maven sejam compatíveis com o AEM Cloud Service, garantindo que eles respeitem a divisão de conteúdo mutável e imutável. que sejam estabelecidas as dependências necessárias para criar implantações determinísticas e não conflitantes; E que eles são empacotados numa estrutura implantável.
+
+As implantações de aplicativos AEM devem ser compostas por um único pacote AEM. Este pacote deve, por sua vez, conter subpacotes que contêm tudo o que o aplicativo exige para funcionar, incluindo código, configuração e qualquer conteúdo básico de suporte.
+
+O AEM requer uma separação de **conteúdo** e **código**, o que significa que um único pacote de conteúdo **não pode** ser implantado em áreas graváveis em **ambos** `/apps` e em tempo de execução (por exemplo, `/content`, `/conf`, `/home`ou qualquer outra coisa que não `/apps`) do repositório. Em vez disso, o aplicativo deve separar código e conteúdo em pacotes separados para implantação no AEM.
+
+A estrutura do pacote descrita neste documento é compatível com implantações de desenvolvimento **** locais e implantações do serviço da AEM Cloud.
+
+>[!TIP]
+>
+>As configurações descritas neste documento são fornecidas pelo [AEM Project Maven Archetype 21 ou posterior](https://github.com/adobe/aem-project-archetype/releases).
+
+## Áreas mutáveis vs. imutáveis do repositório {#mutable-vs-immutable}
+
+`/apps` e `/libs` são consideradas áreas **imutáveis** do AEM, pois não podem ser alteradas (criar, atualizar, excluir) após o AEM ser iniciado (isto é, no tempo de execução). Qualquer tentativa de alterar uma área imutável no tempo de execução falhará.
+
+Tudo o resto no repositório, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`etc. são todas áreas **mutáveis** , o que significa que podem ser alteradas em tempo de execução.
+
+>[!WARNING]
+>
+> Como nas versões anteriores do AEM, não `/libs` deve ser modificado. Somente o código de produto AEM pode ser implantado em `/libs`.
+
+## Estrutura do pacote recomendada {#recommended-package-structure}
+
+![Estrutura do pacote de projetos do Experience Manager](assets/content-package-organization.png)
+
+Este diagrama fornece uma visão geral da estrutura do projeto e dos artefatos de implantação do pacote recomendados.
+
+A estrutura de implantação do aplicativo recomendada é a seguinte:
+
++ O `ui.apps` pacote, ou Pacote de conteúdo, contém todo o código a ser implantado e só é implantado `/apps`. Os elementos comuns do `ui.apps` pacote incluem, mas não se limitam a:
+   + Pacotes OSGi
+      + `/apps/my-app/install`
+   + Configurações do OSGi
+      + `/apps/my-app/config`
+   + Scripts HTL
+      + `/apps/my-app/components`
+   + JavaScript e CSS (por meio das bibliotecas do cliente)
+      + `/apps/my-app/clientlibs`
+   + Sobreposições de /libs
+      + `/apps/cq`, `/apps/dam/`, etc.
+   + Configurações com reconhecimento de contexto de fallback
+      + `/apps/settings`
+   + ACLs (permissões)
+      + Qualquer caminho `rep:policy` sob qualquer `/apps`
++ O `ui.content` pacote, ou Pacote de código, contém todo o conteúdo e a configuração. Os elementos comuns do `ui.content` pacote incluem, mas não se limitam a:
+   + Configurações sensíveis ao contexto
+      + `/conf`
+   + Estruturas de conteúdo da linha de base (pastas de ativos, páginas raiz do Sites)
+      + `/content`, `/content/dam`, etc.
+   + Taxonomias de marcação controladas
+      + `/content/cq:tags`
+   + Usuários do serviço
+      + `/home/users`
+   + Grupos de usuários
+      + `/home/groups`
+   + Índices de Oak
+      + `/oak:indexes`
+   + Etc. nós herdados
+      + `/etc`
+   + ACLs (permissões)
+      + Qualquer `rep:policy` caminho **não** sob `/apps`
++ O `all` pacote é um pacote de contêiner que APENAS inclui os pacotes `ui.apps` e `ui.content` como incorporados. O `all` pacote não deve ter **nenhum conteúdo** próprio, mas deve delegar toda a implantação no repositório em seus subpacotes.
+
+   Os pacotes agora são incluídos usando a configuração [incorporada do plug-in Maven](#embeddeds)FileVault Package Maven, em vez da `<subPackages>` configuração.
+
+   Para implantações complexas do Experience Manager, pode ser desejável criar vários projetos `ui.apps` e `ui.content` pacotes que representem sites ou locatários específicos no AEM. Se isso for feito, verifique se a divisão entre conteúdo mutável e imutável é respeitada e se os pacotes de conteúdo necessários são adicionados como subpacotes no pacote de conteúdo do `all` contêiner.
+
+   Por exemplo, uma estrutura complexa de pacote de conteúdo de implantação pode ter a seguinte aparência:
+
+   + `all` o pacote de conteúdo incorpora os seguintes pacotes para criar um artefato de implantação singular
+      + `ui.apps.common` implanta o código necessário para **ambos** os locais A e B
+      + `ui.apps.site-a` implanta o código exigido pelo site A
+      + `ui.content.site-a` implanta o conteúdo e a configuração necessários para o site A
+      + `ui.apps.site-b` implanta o código exigido pelo site B
+      + `ui.content.site-b` implanta o conteúdo e a configuração necessários para o site B
+
+## Tipos de encapsulamento {#package-types}
+
+As embalagens devem ser marcadas com o tipo de embalagem declarado.
+
++ Os pacotes de contêiner não devem ter um `packageType` conjunto.
++ Os pacotes de código (imutáveis) devem definir seus `packageType` como `application`.
++ Os pacotes de conteúdo (mutável) devem definir `packageType` como `content`.
+
+Para obter mais informações, consulte [Apache Jackrabbit FileVault - documentação](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) do plug-in Package Maven e o trecho [de configuração](#marking-packages-for-deployment-by-adoube-cloud-manager) FileVault Maven abaixo.
+
+>[!TIP]
+>
+>Consulte a seção Trechos [XML](#xml-package-types) POM abaixo para obter um trecho completo.
+
+## Pacotes de marcação para implantação pelo Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
+
+Por padrão, o Adobe Cloud Manager coleta todos os pacotes produzidos pela compilação Maven, no entanto, como o pacote do contêiner (`all`) é o artefato de implantação singular que contém todos os pacotes de código e conteúdo, devemos garantir que **somente** o pacote do contêiner (`all`) seja implantado. Para garantir isso, outros pacotes gerados pela compilação Maven devem ser marcados com a configuração do Plug-in FileVault Content Package Maven do `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
+
+>[!TIP]
+>
+>Consulte a seção Trechos [XML](#pom-xml-snippets) POM abaixo para obter um trecho completo.
+
+## Pacote de estrutura do repositório {#repository-structure-package}
+
+Os Pacotes de código exigem a configuração do plug-in FileVault Maven para fazer referência a uma configuração `<repositoryStructurePackage>` que imponha a correção das dependências estruturais (para garantir que um pacote de código não seja instalado sobre outro). Você pode [criar seu próprio pacote de estrutura de repositório para seu projeto](repository-structure-package.md).
+
+Isso **só é necessário** para pacotes de código, o que significa qualquer Pacote marcado com `<packageType>application</packageType>`.
+
+Para saber como criar um pacote de estrutura de repositório para seu aplicativo, consulte [Desenvolver um pacote](repository-structure-package.md)de estrutura de repositório.
+
+Observe que os pacotes de conteúdo (`<packageType>content</packageType>`) **não** exigem este Pacote de estrutura de repositório.
+
+>[!TIP]
+>
+>Consulte a seção Trechos [XML](#xml-repository-structure-package) POM abaixo para obter um trecho completo.
+
+## Como incorporar subpacotes no pacote de contêiner{#embeddeds}
+
+Os pacotes de conteúdo ou código são colocados em uma pasta especial &quot;carro lateral&quot; e podem ser direcionados para instalação no autor do AEM, na publicação do AEM ou em ambos, usando a `<embeddeds>` configuração do plug-in FileVault Maven. Observe que a `<subPackages>` configuração não deve ser usada.
+
+Os casos de uso frequentes incluem:
+
++ ACLs/permissões diferentes entre usuários do autor de AEM e usuários de publicação de AEM
++ Configurações usadas para suportar atividades somente no autor do AEM
++ Código como integrações com sistemas de back-office, necessário apenas para execução no autor de AEM
+
+![Como incorporar pacotes](assets/embeddeds.png)
+
+Para direcionar o autor do AEM, a publicação do AEM ou ambos, o pacote é incorporado no pacote do `all` contêiner em um local de pasta especial, no seguinte formato:
+
+`/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
+
+Detalhando a estrutura desta pasta:
+
++ A pasta de primeiro nível **deve ser** `/apps`.
++ A pasta de segundo nível representa o aplicativo com `-packages` post-fixed no nome da pasta. Muitas vezes, há apenas uma única pasta de segundo nível na qual todos os subpacotes são incorporados, no entanto, qualquer número de pastas de segundo nível pode ser criado para melhor representar a estrutura lógica do aplicativo:
+   + `/apps/my-app-packages`
+   + `/apps/my-other-app-packages`
+   + `/apps/vendor-packages`
+   >[!WARNING]
+   >
+   >Por convenção, as pastas incorporadas do subpacote são nomeadas com o sufixo de `-packages`. Isso garante que o código de implantação e os pacotes de conteúdo **não** sejam implantados na(s) pasta(s) de destino de qualquer subpacote `/apps/<app-name>/...` que resulte em comportamento de instalação destrutivo e cíclico.
+
++ A pasta de terceiro nível deve ser
+   `application` ou `content`
+   + A `application` pasta contém pacotes de códigos
+   + Os pacotes de conteúdo da pasta `content` douradosEste nome de pasta deve corresponder aos tipos [de](#package-types) pacote dos pacotes que contém.
++ A pasta de 4º nível contém os subpacotes e deve ser uma das seguintes:
+   + `install` para instalar no autor **** do AEM e na publicação do AEM
+   + `install.author` para instalar **somente** no autor de AEM
+   + `install.publish` para instalar **somente** no AEM publishObserve que somente `install.author` e `install.publish` são alvos suportados. Outros modos de execução não **** são suportados.
+
+Por exemplo, uma implantação que contenha o autor do AEM e publique pacotes específicos pode ser semelhante ao seguinte:
+
++ `all` O pacote de contêiner incorpora os seguintes pacotes, para criar um artefato de implantação singular
+   + `ui.apps` incorporado em `/apps/my-app-packages/application/install` implanta o código para o autor do AEM e para a publicação do AEM
+   + `ui.apps.author` incorporado em `/apps/my-app-packages/application/install.author` implanta código somente para autor de AEM
+   + `ui.content` incorporado na implantação `/apps/my-app-packages/content/install` do conteúdo e da configuração para o autor e a publicação do AEM
+   + `ui.content.publish` incorporado em `/apps/my-app-packages/content/install.publish` implanta conteúdo e configuração somente para publicação do AEM
+
+>[!TIP]
+>
+>Consulte a seção Trechos [XML](#xml-embeddeds) POM abaixo para obter um trecho completo.
+
+### Definição de filtro do pacote de contêiner {#container-package-filter-definition}
+
+Devido à incorporação dos subpacotes de código e conteúdo no pacote do contêiner, os caminhos de destino incorporados devem ser adicionados ao projeto do contêiner `filter.xml` para garantir que os pacotes incorporados sejam incluídos no pacote do contêiner quando criados.
+
+Basta adicionar as `<filter root="/apps/<my-app>-packages"/>` entradas para qualquer pasta de segundo nível que contenha subpacotes a serem implantados.
+
+>[!TIP]
+>
+>Consulte a seção Trechos [XML](#xml-container-package-filters) POM abaixo para obter um trecho completo.
+
+## Como incorporar pacotes de terceiros {#embedding-3rd-party-packages}
+
+Todos os pacotes devem estar disponíveis no repositório [público de artefatos Maven da](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) Adobe ou em um repositório de artefatos Maven de terceiros acessível e referenciável.
+
+Se os pacotes de terceiros estiverem no repositório **público de artefatos Maven da** Adobe, nenhuma configuração adicional será necessária para o Adobe Cloud Manager resolver os artefatos.
+
+Se os pacotes de terceiros estiverem em um repositório **de artefatos Maven de terceiros** públicos, esse repositório deverá ser registrado no projeto `pom.xml` e incorporado de acordo com o método [descrito acima](#embeddeds). Se o aplicativo/conector de terceiros exigir pacotes de código e conteúdo, cada um deles deve ser incorporado aos locais corretos no pacote do contêiner (`all`).
+
+A adição de dependências Maven segue as práticas padrão de Maven e a incorporação de artefatos de terceiros (pacotes de código e conteúdo) são [descritas acima](#embedding-3rd-party-packages).
+
+>[!TIP]
+>
+>Consulte a seção Trechos [XML](#xml-3rd-party-maven-repositories) POM abaixo para obter um trecho completo.
+
+## Dependências do pacote entre os pacotes `ui.apps` dos `ui.content` pacotes {#package-dependencies}
+
+A fim de garantir a instalação correta das embalagens, recomenda-se estabelecer dependências entre embalagens.
+
+A regra geral é que os pacotes que contêm conteúdo mutável (`ui.content`) devem depender do conteúdo imutável (`ui.apps`) que suporta a renderização e o uso do conteúdo mutável.
+
+>[!TIP]
+>
+>Consulte a seção Trechos [XML](#xml-package-dependencies) POM abaixo para obter um trecho completo.
+
+Os padrões comuns para dependências de pacotes de conteúdo são:
+
+### Dependências do pacote de implantação simples {#simple-deployment-package-dependencies}
+
+O caso simples define o pacote de conteúdo `ui.content` mutável para depender do pacote de código `ui.apps` imutável.
+
++ `all` não possui dependências
+   + `ui.apps` não possui dependências
+   + `ui.content` depende de `ui.apps`
+
+### Dependências complexas do pacote de implantação {#complex-deploxment-package-dependencies}
+
+Implantações complexas se expandem no caso simples e definem dependências entre o conteúdo mutável correspondente e os pacotes de código imutáveis. Conforme necessário, as dependências também podem ser estabelecidas entre pacotes de código imutáveis.
+
++ `all` não possui dependências
+   + `ui.apps.common` não possui dependências
+   + `ui.apps.site-a` depende de `ui.apps.common`
+   + `ui.content.site-a` depende de `ui.apps.site-a`
+   + `ui.apps.site-b` depende de `ui.apps.common`
+   + `ui.content.site-b` depende de `ui.apps.site-b`
+
+## Desenvolvimento local e implantação {#local-development-and-deployment}
+
+As estruturas e a organização do projeto descritas neste artigo são instâncias do AEM de desenvolvimento local **totalmente compatíveis** .
+
+## Trechos XML POM {#pom-xml-snippets}
+
+A seguir estão trechos `pom.xml` de configuração Maven que podem ser adicionados aos projetos Maven para alinhar às recomendações acima.
+
+### Tipos de encapsulamento {#xml-package-types}
+
+Os pacotes de código e conteúdo, que são implantados como subpacotes, devem declarar um tipo de pacote de **aplicativo** ou **conteúdo**, dependendo do que eles contêm.
+
+#### Tipos de encapsulamento do contêiner {#container-package-types}
+
+O projeto de `all/pom.xml` contêiner **não** declara um `<packageType>`.
+
+#### Tipos de encapsulamento de código (imutável) {#immutable-package-types}
+
+Os pacotes de código devem definir `packageType` como `application`.
+
+Na `ui.apps/pom.xml`, as diretivas de configuração de `<packageType>application</packageType>` compilação da declaração de `filevault-package-maven-plugin` plug-in declaram seu tipo de pacote.
+
+```xml
+...
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>filevault-package-maven-plugin</artifactId>
+      <extensions>true</extensions>
+      <configuration>
+        <group>${project.groupId}</group>
+        <name>${my-app.ui.apps}</name>
+        <packageType>application</packageType>
+        <accessControlHandling>merge</accessControlHandling>
+        <properties>
+          <cloudManagerTarget>none</cloudManagerTarget>
+        </properties>
+      </configuration>
+    </plugin>
+    ...
+```
+
+#### Tipos de encapsulamento de conteúdo (variável) {#mutable-package-types}
+
+Os pacotes de conteúdo devem definir `packageType` como `content`.
+
+Na `ui.content/pom.xml`, a diretiva de configuração de `<packageType>content</packageType>` compilação da declaração de `filevault-package-maven-plugin` plug-in declara seu tipo de pacote.
+
+```xml
+...
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>filevault-package-maven-plugin</artifactId>
+      <extensions>true</extensions>
+      <configuration>
+        <group>${project.groupId}</group>
+        <name>${my-app.ui.content}</name>
+        <packageType>content</packageType>
+        <accessControlHandling>merge</accessControlHandling>
+        <properties>
+          <cloudManagerTarget>none</cloudManagerTarget>
+        </properties>
+      </configuration>
+    </plugin>
+    ...
+```
+
+### Implantação de pacotes de marcação para o Adobe Cloud Manager {#cloud-manager-target}
+
+Em todos os projetos que geram um pacote, **exceto** para o projeto do contêiner (`all`), adicione `<cloudManagerTarget>none</cloudManagerTarget>` à `<properties>` configuração da declaração do `filevault-package-maven-plugin` plug-in para garantir que eles não **** sejam implantados pelo Adobe Cloud Manager. O pacote (`all`) do contêiner deve ser o único pacote implantado pelo Cloud Manager, que por sua vez incorpora todos os pacotes de código e conteúdo necessários.
+
+```xml
+...
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>filevault-package-maven-plugin</artifactId>
+      <extensions>true</extensions>
+      <configuration>
+        ...
+        <properties>
+          <cloudManagerTarget>none</cloudManagerTarget>
+        </properties>
+      </configuration>
+    </plugin>
+    ...
+```
+
+### Pacote de estrutura do repositório {#xml-repository-structure-package}
+
+No `ui.apps/pom.xml` e em qualquer outra `pom.xml` que declare um pacote de códigos (`<packageType>application</packageType>`), adicione a seguinte configuração de pacote de estrutura de repositório ao plug-in FileVault Maven. Você pode [criar seu próprio pacote de estrutura de repositório para seu projeto](repository-structure-package.md).
+
+```xml
+...
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>filevault-package-maven-plugin</artifactId>
+      <extensions>true</extensions>
+      <configuration>
+        ...
+        <repositoryStructurePackages>
+          <repositoryStructurePackage>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>repository-structure-pkg</artifactId>
+              <version>${project.version}</version>
+          </repositoryStructurePackage>
+        </repositoryStructurePackages>
+      </configuration>
+    </plugin>
+    ...
+```
+
+### Como incorporar subpacotes no pacote de contêiner {#xml-embeddeds}
+
+Na `all/pom.xml`, adicione as seguintes `<embeddeds>` diretivas à declaração de `filevault-package-maven-plugin` plug-in. Lembre-se de **não** usar a `<subPackages>` configuração, pois isso incluirá os subpacotes em `/etc/packages` vez de `/apps/my-app-packages/<application|content>/install(.author|.publish)?`.
+
+```xml
+...
+<plugin>
+  <groupId>org.apache.jackrabbit</groupId>
+  <artifactId>filevault-package-maven-plugin</artifactId>
+  <extensions>true</extensions>
+  <configuration>
+      ...
+      <embeddeds>
+
+          <!-- Include the application's ui.apps and ui.content packages -->
+          <!-- Ensure the artifactIds are correct -->
+
+          <!-- Code package that deploys to BOTH AEM Author and AEM Publish -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.ui.apps</artifactId>
+              <type>zip</type>
+              <target>/apps/my-app-packages/application/install</target>
+          </embedded>
+
+          <!-- Code package that deploys ONLY to AEM Author -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.ui.apps.author</artifactId>
+              <type>zip</type>
+              <target>/apps/my-app-packages/application/install.author</target>
+          </embedded>
+
+          <!-- Content package that deploys to BOTH AEM Author and AEM Publish -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.ui.content</artifactId>
+              <type>zip</type>
+              <target>/apps/my-app-packages/content/install</target>
+          </embedded>
+
+          <!-- Content package that deploys ONLY to AEM Publish -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.ui.content.publish-only</artifactId>
+              <type>zip</type>
+              <target>/apps/my-app-packages/content/install.publish</target>
+          </embedded>
+
+          <!-- Include any other extra packages such as AEM WCM Core Components -->
+          <embedded>
+              <groupId>com.adobe.cq</groupId>
+              <!-- Not to be confused; WCM Core Components' Code package's artifact is named `.content` -->
+              <artifactId>core.wcm.components.content</artifactId>
+              <type>zip</type>
+              <target>/apps/vendor-packages/application/install</target>
+          </embedded>
+
+          <embedded>
+              <groupId>com.adobe.cq</groupId>
+              <!-- Not to be confused; WCM Core Components' Content package's artifact is named `.conf` -->
+              <artifactId>core.wcm.components.conf</artifactId>
+              <type>zip</type>
+              <target>/apps/vendor-packages/content/install</target>
+          </embedded>
+      <embeddeds>
+  </configuration>
+</plugin>
+...
+```
+
+### Definição de filtro do pacote de contêiner {#xml-container-package-filters}
+
+No `all` projeto `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`), **inclua** quaisquer `-packages` pastas que contenham subpacotes a serem implantados:
+
+```xml
+<filter root="/apps/my-app-packages"/>
+```
+
+Se vários `/apps/*-packages` forem usados nos destinos incorporados, todos eles deverão ser enumerados aqui.
+
+### Repositórios Maven de terceiros {#xml-3rd-party-maven-repositories}
+
+No projeto do reator `pom.xml`, adicione quaisquer diretivas de repositório Maven público de terceiros. A `<repository>` configuração completa deve estar disponível no provedor de repositório de terceiros.
+
+```xml
+<repositories>
+  ...
+  <repository>
+      <id>3rd-party-repository</id>
+      <name>Public 3rd Party Repository</name>
+      <url>https://repo.3rdparty.example.com/...</url>
+      <releases>
+          <enabled>true</enabled>
+          <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+          <enabled>false</enabled>
+      </snapshots>
+  </repository>
+  ...
+</repositories>
+```
+
+### Dependências do pacote entre os pacotes `ui.apps` dos `ui.content` pacotes {#xml-package-dependencies}
+
+Na `ui.content/pom.xml`, adicione as seguintes `<dependencies>` diretivas à declaração de `filevault-package-maven-plugin` plug-in.
+
+```xml
+...
+<plugin>
+  <groupId>org.apache.jackrabbit</groupId>
+  <artifactId>filevault-package-maven-plugin</artifactId>
+  <extensions>true</extensions>
+  <configuration>
+      ...
+      <dependencies>
+        <!-- Declare the content package dependency in the ui.content/pom.xml on the ui.apps project -->
+        <dependency>
+            <groupId${project.groupId}</groupId>
+            <artifactId>my-app.ui.apps</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+      </dependencies>
+    ...
+  </configuration>
+</plugin>
+...
+```
+
+### Limpando a pasta de destino do projeto do contêiner {#xml-clean-container-package}
+
+Na página `all/pom.xml` , adicione o plug- `maven-clean-plugin` in que limpará o diretório de destino antes de uma compilação Maven.
+
+```xml
+<plugins>
+  ...
+  <plugin>
+    <artifactId>maven-clean-plugin</artifactId>
+    <executions>
+      <execution>
+        <id>auto-clean</id>
+        <!-- Run at the beginning of the build rather than the default, which is after the build is done -->
+        <phase>initialize</phase>
+        <goals>
+          <goal>clean</goal>
+        </goals>
+      </execution>
+    </executions>
+  </plugin>
+  ...
+</plugins>
+```
+
+## Additional Resources {#additional-resources}
+
++ [Gerenciamento De Pacotes Usando O Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
++ [Plug-in FileVault Content Package Maven](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
