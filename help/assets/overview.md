@@ -1,0 +1,41 @@
+---
+title: Introdução aos ativos como um serviço em nuvem
+description: Novidades do Assets como um serviço em nuvem.
+contentOwner: AG
+translation-type: tm+mt
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+
+---
+
+
+# Introdução aos ativos como um serviço em nuvem {#assets-cloud-service-introduction}
+
+<!-- Need review information from gklebus -->
+
+Os ativos Adobe Experience Manager como um serviço em nuvem oferecem uma solução PaaS nativa para as empresas não apenas executarem suas operações de Gerenciamento de ativos digitais e Mídia dinâmica com velocidade e impacto, mas também usarem recursos inteligentes da próxima geração, como o AI/ML, de dentro de um sistema que está sempre atualizado, sempre disponível e sempre aprendendo.
+
+A assimilação simultânea de um grande número de ativos ou ativos complexos é uma tarefa que consome muitos recursos para uma instância do autor de AEM. A instância principal consome recursos consideráveis de CPU, memória e E/S quando os ativos são adicionados, processados ou mesmo migrados. Esses problemas de desempenho afetam a criação e a experiência de navegação dos usuários finais.
+
+As empresas precisam de suporte para uma grande variedade de formatos de arquivo e resoluções de conteúdo para casos de uso multidispositivos, geografia e multilíngues. Os requisitos de processamento e armazenamento de ativos exigem recursos e recursos que podem sobrecarregar uma solução tradicional. Por vezes, as limitações técnicas do processamento de ativos não produzem os resultados desejados e, noutras alturas, o custo do armazenamento constitui um entrave às margens de lucro.
+
+Para começar, entenda os [benefícios de uma oferta](#solution-benefits)nativa de nuvem. Verifique as [alterações notáveis no AEM como um serviço](/help/release-notes/aem-cloud-changes.md) em nuvem que também afetam os Ativos acompanharam as [alterações notáveis nos Ativos](/help/assets/assets-cloud-changes.md).
+
+Leia para saber os [detalhes dos novos recursos](#whats-new-assets) do Assets e os problemas [](/help/release-notes/known-issues.md)conhecidos. Veja uma lista de funcionalidades [](/help/release-notes/deprecated-removed-features.md) obsoletas ou removidas para saber o que foi removido nesta versão e veja esta [lista de recursos](/help/release-notes/known-issues.md#upcoming-assets-capabilities) futuros para saber o que está por vir no futuro próximo. Por fim, entenda os termos do AEM com a ajuda deste [glossário](/help/overview/terminology.md).
+
+## Benefícios da solução {#solution-benefits}
+
+A seguir estão os principais benefícios dos Ativos como um serviço em nuvem. Para saber mais, consulte a [visão geral do Experience Manager como um serviço](/help/overview/introduction.md)na nuvem.
+
+* **Serviço Modern Cloud para processamento** de ativos: Os novos microserviços de ativos são um serviço de processamento de ativos baseado em nuvem, dimensionável, confiável e sem complicações.
+* **Altamente escalável**: Escalabilidade elástica em todos os tipos de implantações. Recursos praticamente ilimitados que estão disponíveis sob demanda, conforme e quando necessário. Economiza o custo do design excedente em comparação com um sistema tradicional.
+* **Software** mais recente: Sempre atual e sempre atualizado. Todos os usuários têm apenas o software mais recente com todos os patches, recursos, segurança e correções de erros disponíveis. Os desenvolvedores e integradores trabalham com o conjunto mais recente de APIs sem problemas de suporte a várias versões.
+* **Sempre online**: Tempo de inatividade zero (0dt), graças à instância implantada em um cluster com backups e redundância. As atualizações também são 0dt.
+* **Monitoramento** constante: O monitoramento do sistema é automatizado e as verificações e acionadores integrados ajudam a manter o desempenho, a disponibilidade e a robustez geral.
+* **Implantações** sem complicações: O AEM nas operações da Cloud foi desenvolvido para ser totalmente automatizado e não exigir intervenção manual. Para isso, o componente Cloud Manager (CM) automatiza a criação de imagens do Docker implantáveis que contêm seu código personalizado.
+
+## Novos recursos de ativos {#whats-new-assets}
+
+Os novos recursos significativos são:
+
+* [Microserviços de ativos](/help/assets/asset-microservices-overview.md)
+* [Métodos de upload de ativos](/help/assets/add-assets.md)
