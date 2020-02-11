@@ -18,7 +18,7 @@ Em relação às permissões de exclusão, os Fragmentos de conteúdo devem ser 
 1. **O Fragmento do conteúdo como uma única entidade.**
 
    * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo **e excluir um fragmento** inteiro.
-   * **Permissões**: A permissão Excluir pode ser atribuída por meio do Gerenciamento de usuários e/ou grupos. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **Permissões**: A permissão Excluir pode ser atribuída por meio do Gerenciamento de usuários e/ou grupos.
 
 2. **As várias subentidades que compõem um fragmento de conteúdo; por exemplo, variações, subnós.**
 
@@ -29,7 +29,7 @@ Em relação às permissões de exclusão, os Fragmentos de conteúdo devem ser 
 
 >[!NOTE]
 >
->Quando um usuário não tem permissões de exclusão, o editor de Fragmento de conteúdo opera no modo somente ** leitura. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>Quando um usuário não tem permissões de exclusão, o editor de Fragmento de conteúdo opera no modo somente ** leitura.
 
 >[!NOTE]
 >
