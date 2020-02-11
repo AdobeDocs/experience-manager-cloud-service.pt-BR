@@ -2,7 +2,7 @@
 title: Suporte IMS para o Adobe Experience Manager como um serviço em nuvem
 description: 'Suporte IMS para o Adobe Experience Manager como um serviço em nuvem '
 translation-type: tm+mt
-source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
+source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
 
 ---
 
@@ -26,7 +26,7 @@ O AEM como serviço em nuvem oferece suporte à autenticação IMS somente para 
 
 ## Arquitetura {#architecture}
 
-A autenticação IMS funciona usando o protocolo OAuth entre o AEM e o terminal Adobe IMS. Depois que um usuário é adicionado ao IMS e tem uma Adobe Identity, ele pode fazer logon em instâncias do AEM Managed Services usando credenciais IMS.
+A autenticação IMS funciona usando o protocolo OAuth entre o AEM e o terminal Adobe IMS. Depois que um usuário é adicionado ao IMS e tem uma Adobe Identity, ele pode fazer logon no serviço de autor do AEM usando credenciais IMS.
 
 O fluxo de logon do usuário é mostrado abaixo, o usuário será redirecionado para o IMS e, opcionalmente, para o IDP do cliente para SSO e redirecionado para o AEM.
 
