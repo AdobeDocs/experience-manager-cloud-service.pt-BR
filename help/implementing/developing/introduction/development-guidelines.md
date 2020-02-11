@@ -2,7 +2,7 @@
 title: Diretrizes de desenvolvimento do AEM como serviço de nuvem
 description: 'A completar '
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 13c0a670330532f574c2b38823b8a924c609e8e4
 
 ---
 
@@ -58,7 +58,7 @@ Os clientes podem acessar a lista CRXDE no ambiente de desenvolvimento, mas não
 
 Um conjunto de ferramentas para depurar o AEM como ambientes de desenvolvedor do Cloud Service está disponível no Developer Console para ambientes de desenvolvimento, estágio e produção. O url pode ser determinado ajustando os urls do autor ou do serviço de publicação da seguinte maneira:
 
-`https://dev-console>-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 Como atalho, o seguinte comando da CLI do Gerenciador de nuvem pode ser usado para iniciar o console do desenvolvedor com base em um parâmetro de ambiente descrito abaixo:
 
