@@ -30,7 +30,7 @@ Os termos a seguir são usados em relação ao Adobe Experience Manager (AEM) co
 
 <!-- This section of the table must be alphabetic -->
 
-##  Terminologia {#terminology}
+## Terminologia {#terminology}
 
 | Term | Descrição |
 |---|---|
