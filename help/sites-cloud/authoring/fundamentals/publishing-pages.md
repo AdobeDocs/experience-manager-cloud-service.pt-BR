@@ -15,7 +15,7 @@ Isso é referido como a publicação de uma página. Quando você deseja remover
 
 Você pode publicar/cancelar a publicação de uma página imediatamente ou em uma data/hora predefinida no futuro.
 
-##  Terminologia {#terminology}
+## Terminologia {#terminology}
 
 Você pode encontrar termos diferentes relacionados à publicação enquanto trabalha com o AEM.
 
