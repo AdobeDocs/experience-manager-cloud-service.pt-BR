@@ -2,7 +2,7 @@
 title: Operações e manutenção do Adobe Experience Manager como um serviço em nuvem
 description: Adobe Experience Manager como operações de serviço em nuvem e recursos de autoajuda de manutenção e links de documentação
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -16,7 +16,6 @@ Esta página lista os recursos de autoajuda sobre operações e manutenção do 
 * [Replicação de conteúdo](replication.md)
 * [Tarefas de manutenção](maintenance.md)
 * [Backup e restauração](backup.md)
-* [Indexação](indexing.md)
 
 ## Guia de serviços do Experience Manager como uma nuvem {#aem-guides}
 
