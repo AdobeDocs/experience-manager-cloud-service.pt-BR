@@ -1,13 +1,13 @@
 ---
-title: Indexação
-description: 'Indexação '
+title: Pesquisa e indexação de conteúdo
+description: 'Pesquisa e indexação de conteúdo '
 translation-type: tm+mt
-source-git-commit: 83d2abd5b75e644be97de1d5420e7bca6b13e0d9
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
 
-# Indexação {#indexing}
+# Pesquisa e indexação de conteúdo {#indexing}
 
 ## Alterações no AEM como um serviço em nuvem {#changes-in-aem-as-a-cloud-service}
 
