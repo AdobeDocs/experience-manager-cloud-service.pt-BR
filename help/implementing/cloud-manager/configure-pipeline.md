@@ -2,7 +2,7 @@
 title: Configurar o pipeline de CI/CD - Serviços em nuvem
 description: Configurar o pipeline de CI/CD - Serviços em nuvem
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -88,7 +88,7 @@ Na tela inicial, esses pipelines são listados em um novo cartão:
 
    Além disso, também é possível configurar o Acionador de implantação e o Comportamento de falha importante nas Opções de pipeline.
 
-   ![](assets/set-up-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. Clique em **Salvar** e o pipeline é mostrado no cartão na tela inicial com três ações, como mostrado abaixo:
 
@@ -97,8 +97,6 @@ Na tela inicial, esses pipelines são listados em um novo cartão:
    * **Editar** - permite a edição das configurações de pipeline
    * **Build** - navega até a página de execução, a partir da qual o pipeline pode ser executado
    * **Gerenciar Git** - permite que o usuário obtenha as informações necessárias para acessar o repositório Git do Cloud Manager
-
-
 
 ## Próximas etapas {#the-next-steps}
 
