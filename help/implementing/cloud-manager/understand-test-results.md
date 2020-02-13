@@ -2,7 +2,7 @@
 title: Entenda seus resultados de teste - Serviços em nuvem
 description: Entenda os resultados do teste - Serviços em nuvem
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: a0630410d281913f35caa5ba33807496e612ef3d
 
 ---
 
@@ -117,7 +117,7 @@ Neste arquivo JAR, os nomes de classe dos testes reais a serem executados devem 
 
 Por exemplo, uma classe chamada `com.myco.tests.aem.ExampleIT` seria executada, mas uma classe chamada não `com.myco.tests.aem.ExampleTest` seria.
 
-As classes de teste precisam ser testes JUnit normais. A infraestrutura de teste é projetada e configurada para ser compatível com as convenções usadas pela biblioteca de testes aem-testing-customers. Os desenvolvedores são fortemente incentivados a usar essa biblioteca e seguir suas práticas recomendadas.
+As classes de teste precisam ser testes JUnit normais. A infraestrutura de teste é projetada e configurada para ser compatível com as convenções usadas pela biblioteca de testes aem-testing-customers. Os desenvolvedores são fortemente incentivados a usar essa biblioteca e seguir suas práticas recomendadas. Consulte [Git Link](https://github.com/adobe/aem-testing-clients) para obter mais detalhes.
 
 ## Teste funcional personalizado {#custom-functional-test}
 
@@ -126,7 +126,7 @@ A etapa de teste Funcional personalizada no pipeline está sempre presente e nã
 No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão. Esta etapa é realizada imediatamente após a implantação do estágio.
 
 > Nota:
->O botão **Download Log** permite o acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade regular de Download ou Logs de assinatura descrita acima.
+>O botão **Download Log** permite o acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade normal de Download ou Logs de assinatura. Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
 
 ## Execução de teste local {#local-test-execution}
 
