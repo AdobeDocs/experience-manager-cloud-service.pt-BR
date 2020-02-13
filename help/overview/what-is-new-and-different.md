@@ -2,7 +2,7 @@
 title: O que é diferente e o que há de novo - Adobe Experience Manager como um serviço em nuvem
 description: 'O que é diferente e o que há de novo - Adobe Experience Manager (AEM) como um serviço em nuvem. '
 translation-type: tm+mt
-source-git-commit: 38503961d0d7437511533d122ac1f4e7c8f9f042
+source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
 
 ---
 
@@ -46,22 +46,24 @@ Há diferenças intrínsecas entre essas abordagens anteriores e o AEM como um s
 >
 >Para obter mais detalhes, consulte [Arquitetura](/help/core-concepts/architecture.md).
 
-### Versões anteriores {#previous-versions-architecture}
+<!--
+### Previous Versions {#previous-versions-architecture}
 
-O AEM no local e o AEM sob Serviços gerenciados usaram uma arquitetura estática composta por um número fixo de máquinas e instâncias.
+Both AEM on-premise, and AEM under Managed Services used a static architecture comprised of a fixed number of machines and instances. 
 
-![Arquitetura](assets/introduction-01.png "estáticaArquitetura estática")
+![Static architecture](assets/introduction-01.png "Static architecture")
 
-Estes:
+These:
 
-* Foram dimensionados para *pico* de tráfego (Internet) e *pico* de atividade (marketing), o que resultou em ociosidade por períodos significativos:
-   ![A estrutura estática deve atender a](assets/introduction-02.png "padrões de uso variadosA estrutura estática deve atender a padrões de uso variados")
+* Were sized for *peak* traffic (internet) and *peak* activity (marketing), which resulted in them being idle for significant periods of time:
+![Static structure must cater for varying usage patterns](assets/introduction-02.png "Static structure must cater for varying usage patterns")
 
-* Eram aplicativos monolíticos (o início rápido).
+* Were monolithic applications (the quickstart).
 
-* Teve uma única instância de autor; que estava sujeita a tempo ocioso durante as janelas de manutenção.
+* Had a single author instance; which was subject to downtime during maintenance windows.
 
-### AEM como um serviço em nuvem {#aem-as-a-cloud-service-architecture}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-architecture}
+-->
 
 O AEM como serviço de nuvem agora tem:
 
@@ -92,13 +94,15 @@ Isso permite o dimensionamento automático para padrões de uso variados:
 >For further details see the [Deploying Introduction](/help/sites/deploying/introduction.md).
 -->
 
-### Versões anteriores {#previous-versions-upgrades}
+<!--
+### Previous Versions {#previous-versions-upgrades}
 
-O AEM no local e o AEM sob Serviços gerenciados estavam sujeitos a um padrão fixo de uma versão principal anual aumentada por service packs, pacotes de recursos e hot fixes. Muitas vezes, as instâncias executariam uma versão principal por dois ou mais anos.
+Both AEM on-premise, and AEM under Managed Services were subject to a fixed pattern of a yearly major release augmented by service packs, feature packs and hot-fixes. Often instances would run a major version for two or more years. 
 
-Dependendo do tipo de atualização, o processo pode exigir uma preparação significativa que consiste em análise, desenvolvimento e teste, seguido de uma janela de tempo de inatividade para a atualização real.
+Depending on the upgrade type, the process could require significant preparation consisting of analysis, development and testing, followed with a window of downtime for the actual upgrade.
 
-### AEM como um serviço em nuvem {#aem-as-a-cloud-service-upgrades}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-upgrades}
+-->
 
 O AEM como serviço em nuvem agora usa a integração contínua e a entrega contínua (CI/CD) para garantir que seus projetos estejam totalmente atualizados. Isso significa que todas as operações de atualização são totalmente automatizadas, portanto, não é necessário interromper o serviço para os usuários.
 
@@ -168,13 +172,17 @@ Atualmente, o Cloud Manager pode criar ambientes em três regiões geográficas 
 >For further details see [Onboarding - An Overview](/help/onboarding/overview.md).
 -->
 
-### Versões anteriores {#previous-versions-onboarding}
+<!--
+### Previous Versions {#previous-versions-onboarding}
 
-A implementação de um projeto do AEM seguiu os métodos tradicionais de gerenciamento de projetos.
+Implementing an AEM project basically followed traditional project management methods.  
 
-### AEM como um serviço em nuvem {#aem-as-a-cloud-service-onboarding}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-onboarding}
 
-Iniciar e gerenciar um projeto do AEM é significativamente mais fácil ao usar o AEM como um serviço da Cloud, pois a Adobe é responsável por vários aspectos:
+Starting and managing an AEM project is significantly easier when using AEM as a Cloud service as Adobe is responsible for many aspects:
+-->
+
+Iniciar e gerenciar um projeto do AEM é simples ao usar o AEM como um serviço do Cloud, pois a Adobe é responsável por vários aspectos:
 
 * As imagens do AEM de linha de base são otimizadas para casos de uso específicos.
 
@@ -208,17 +216,24 @@ Também é significativamente diferente, já que agora existe:
 >For further details start with [The Developing Experience](/help/sites/developing/introduction/developer-experience.md, [Developing - The Basics](/help/sites/developing/introduction/the-basics.md) and [Developing Best Practices](/help/sites/best-practices/developing.md).
 -->
 
-### Versões anteriores {#previous-versions-developing}
+<!--
+### Previous Versions {#previous-versions-developing}
+-->
 
 <!-- needs more detail -->
-O desenvolvimento foi uma tarefa intensiva executada localmente, seguida de implantação para a instância de produção.
 
-### AEM como um serviço em nuvem {#aem-as-a-cloud-service-developing}
+<!-- 
+Development was an intensive task performed locally, followed by deployment to the production instance. 
+
+### AEM as a Cloud Service {#aem-as-a-cloud-service-developing}
+-->
 
 <!-- Will need information for new customers -->
 A nova arquitetura que suporta o AEM como um serviço em nuvem envolve algumas alterações importantes na experiência geral do desenvolvedor. Um dos principais objetivos do AEM como serviço em nuvem é permitir que clientes experientes (que usaram o AEM no local ou no contexto dos serviços gerenciados da Adobe) migrem para o AEM como um serviço em nuvem o mais rápido possível, sem precisar reescrever a maior parte do código personalizado. No entanto, poderão ainda ser necessários alguns ajustamentos.
 
-#### Desenvolvimento em nuvem {#aem-as-a-cloud-service-developing-cloud-development}
+<!-- adjusting title level -->
+
+### Desenvolvimento em nuvem {#aem-as-a-cloud-service-developing-cloud-development}
 
 Para que os aplicativos AEM existentes sejam executados no AEM como um serviço de nuvem, as seguintes etapas são esperadas:
 
@@ -246,7 +261,9 @@ Devido à clara separação de código e conteúdo, os desenvolvedores podem usa
 
 * Usuários do serviço e grupos de usuários
 
-#### Desenvolvimento local {#aem-as-a-cloud-service-developing-local-development}
+<!-- adjusting title level -->
+
+### Desenvolvimento local {#aem-as-a-cloud-service-developing-local-development}
 
 Para suportar iterações e desenvolvimento rápidos, também é possível desenvolver aplicativos AEM fora do AEM como um contexto de Serviço em nuvem. Para esse efeito, os seguintes artefatos são disponibilizados aos desenvolvedores:
 
@@ -264,11 +281,13 @@ Para suportar iterações e desenvolvimento rápidos, também é possível desen
 >
 >Para obter mais detalhes, comece com [Backup](/help/operations/backup.md), [Indexação](/help/operations/indexing.md)e [outras Tarefas](/help/operations/maintenance.md)de manutenção.
 
-### Versões anteriores {#previous-versions-operations-and-performance}
+<!--
+### Previous Versions {#previous-versions-operations-and-performance}
 
-No passado, especialmente do lado do autor, era necessário interromper periodicamente um caso; para operações de manutenção de rotina, bem como atualizações. Para alguns clientes, isso resultava em horas de inatividade programadas semanalmente.
+In the past, especially on the author side, there was a need to periodically stop an instance; for routine maintenance operations, as well as upgrades and updates. For some customers, this resulted in hours of scheduled downtime on a weekly basis. 
 
-### AEM como um serviço em nuvem {#aem-as-a-cloud-service-operatioms-and-performance}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-operatioms-and-performance}
+-->
 
 Com o AEM como um serviço em nuvem, essas operações são automatizadas para que nenhuma interrupção do serviço seja mais necessária.
 
@@ -290,19 +309,20 @@ As operações do AEM como um serviço em nuvem também são suportadas por uma 
 >For further details see [Security - Single Sign-On](/help/sites/security/single-sign-on.md).
 -->
 
-### Versões anteriores {#previous-versions-identity-management}
+<!--
+### Previous Versions {#previous-versions-identity-management}
 
-Por padrão, o gerenciamento de identidade era interno do AEM.
+By default, identity management was internal to AEM.
 
 >[!NOTE]
 >
->AEM 6.4.3.0 apresentado:
+>AEM 6.4.3.0 introduced:
 >
->* Suporte do Admin Console para instâncias do AEM.
->* Autenticação baseada no Adobe IMS (Identity Management System) para clientes do AEM Managed Services.
+>* Admin Console support for AEM instances. 
+>* Adobe IMS (Identity Management System) based authentication for AEM Managed Services customers.
 
-
-### AEM como um serviço em nuvem {#aem-as-a-cloud-service-identity-management}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-identity-management}
+-->
 
 Uma grande mudança no AEM como um serviço em nuvem é o uso totalmente integrado das Adobe IDs para acessar a camada do autor.
 
@@ -322,11 +342,13 @@ Isso combina os benefícios de:
 >For further details, the [Basic Handling](/help/sites/authoring/getting-started/basic-handling.md) and [Best Practices](/help/sites/best-practices/authoring.md) are good starting points.
 -->
 
-### Versões anteriores {#previous-versions-authoring}
+<!--
+### Previous Versions {#previous-versions-authoring}
 
-A interface do usuário da instância do autor (IU), tanto para Sites quanto para Ativos, foi desenvolvida e otimizada progressivamente para atender a todos os casos de uso, usando as interfaces de usuário habilitadas para toque e clássica.
+The user interface of the author instance (UI), for both Sites and Assets, was progressively developed and optimized to cater for all use-cases, using both the touch-enabled and classic UIs.
 
-### AEM como um serviço em nuvem {#aem-as-a-cloud-service-authoring}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-authoring}
+-->
 
 Os princípios básicos da interface do usuário de criação, tanto para sites quanto para ativos, serão familiares a qualquer pessoa que já tenha usado o AEM no passado.
 
@@ -345,5 +367,3 @@ Os ativos Adobe Experience Manager como um serviço em nuvem oferecem uma soluç
 A oferta de ativos inclui o processamento de ativos da próxima geração na nuvem e a inclusão e pesquisa de ativos de alto desempenho.
 
 Para obter detalhes, consulte [Visão geral e introdução aos Ativos como um serviço](/help/assets/overview.md)em nuvem.
-
-
