@@ -2,7 +2,7 @@
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 translation-type: tm+mt
-source-git-commit: 64475ec492863f713a7cefaedc4c0782014682ae
+source-git-commit: ddc1b21dd14dcded72465e727ce740d481520170
 
 ---
 
@@ -697,45 +697,89 @@ Parabéns! Se o validador não relatar mais nenhum problema e o contêiner do do
 
 ## Dispatcher e CDN {#dispatcher-cdn}
 
+A entrega de conteúdo do serviço de publicação inclui:
+
+* CDN (normalmente gerenciado pela Adobe)
+* Despachante do AEM
+* Publicar AEM
+
 O fluxo de dados é o seguinte:
 
-1. URL colocado no navegador
-2. Solicitação feita ao CDN mapeada no DNS para esse domínio
-3. Se o conteúdo for totalmente armazenado em cache no CDN, o CDN o enviará para o navegador
-4. Se o conteúdo não estiver totalmente armazenado em cache, a CDN chamará (proxy reverso) o dispatcher
-5. Se o conteúdo for totalmente armazenado em cache no dispatcher, o dispatcher o enviará para a CDN
-6. Se o conteúdo não estiver totalmente armazenado em cache, o dispatcher chamará (proxy reverso) para a publicação do AEM
-7. Conteúdo renderizado pelo navegador
+1. O URL é adicionado no navegador
+1. Solicitação feita ao CDN mapeada no DNS para esse domínio
+1. Se o conteúdo for totalmente armazenado em cache no CDN, o CDN o enviará para o navegador
+1. Se o conteúdo não estiver totalmente armazenado em cache, a CDN chamará (proxy reverso) o dispatcher
+1. Se o conteúdo for totalmente armazenado em cache no dispatcher, o dispatcher o enviará para a CDN
+1. Se o conteúdo não estiver totalmente armazenado em cache, o dispatcher chamará (proxy reverso) para a publicação do AEM
+1. O conteúdo é renderizado pelo navegador, que também pode armazená-lo em cache, dependendo dos cabeçalhos
+
+A maioria do conteúdo é definida para expirar após cinco minutos, um limite que o cache do dispatcher e o CDN respeitam. Durante as reimplantações do serviço de publicação, o cache do dispatcher é limpo e aquecido posteriormente antes que os novos nós de publicação aceitem o tráfego.
+
+As seções abaixo fornecem mais detalhes sobre a entrega de conteúdo, incluindo configuração CDN e cache do dispatcher.
+
+Informações sobre replicação do serviço de autor para o serviço de publicação estão disponíveis [aqui](/help/operations/replication.md).
+
+>[!NOTE]
+>O tráfego passa por um servidor da Web apache, que suporta módulos incluindo o dispatcher. O dispatcher é usado principalmente como cache para limitar o processamento nos nós de publicação, a fim de aumentar o desempenho.
 
 ### CDN {#cdn}
 
-O AEM oferece duas opções:
+O AEM oferece três opções:
 
-1. CDN gerenciado - CDN predefinido do AEM.
-2. CDN não gerenciado - o cliente traz seu próprio CDN e é inteiramente responsável por gerenciá-lo.
+1. Adobe Managed CDN - CDN predefinido do AEM. Essa é a opção recomendada, pois está completamente integrada.
+1. CDN gerenciada pelo cliente - o cliente traz seu próprio CDN e é inteiramente responsável por gerenciá-lo.
+1. Aponte para Adobe Managed CDN - o cliente aponta um CDN para o CDN predefinido do AEM.
 
-A primeira opção é altamente recomendada e a Adobe não é responsável pelo resultado de qualquer configuração incorreta ao usar a segunda opção.
+>[!CAUTION]
+>A primeira opção é altamente recomendada. A Adobe não pode ser responsabilizada pelo resultado de qualquer configuração incorreta se você escolher a segunda opção.
 
-#### CDN gerenciado {#managed-cdn}
+A segunda e a terceira opções serão permitidas caso a caso. Isso envolve atender a determinados pré-requisitos, incluindo, mas não se limitando a, o cliente ter uma integração herdada com seu fornecedor de CDN, o que é difícil de desfazer.
 
-Depois que a Adobe provisionar o CDN, você deve criar um CNAME, mapeando os domínios de seu aplicativo para um domínio controlado pela Adobe hospedado no domínio CDN gerenciado.
+#### CDN gerenciada da Adobe {#adobe-managed-cdn}
 
-O CDN atua como um firewall de aplicativo da Web camada 7, que requer terminação SSL, portanto ele precisará de um certificado SSL assinado pelo cliente. Durante a fase de pré-lançamento, é necessário fornecer o certificado à Adobe por meio de processos manuais.
+A preparação para a entrega de conteúdo usando a CDN predefinida da Adobe é simples, como descrito abaixo:
 
-No momento do GA, você deve fazer upload do certificado para o Cloud Manager, que, por sua vez, o carregará para o CDN. Quando os certificados SSL estiverem expirando, você será notificado para que possa atualizar os certificados no Cloud Manager.
+1. Você fornecerá o certificado SSL assinado e a chave secreta para a Adobe compartilhando um link para um formulário seguro contendo essas informações. Coordene-se com o suporte ao cliente nesta tarefa.
+Observação: O Aem como um serviço em nuvem não oferece suporte a certificados DV (Domain Validated, Domínio validado).
+1. O suporte ao cliente coordenará com você o tempo de um registro DNS CNAME, apontando para o FQDN `adobe-aem.map.fastly.net`.
+1. Você será notificado quando os certificados SSL estiverem expirando, para que possa reenviar os novos certificados SSL.
 
-#### CDN não gerenciado {#unmanaged-cdn}
+Por padrão, para uma configuração de CDN gerenciada da Adobe, todo o tráfego público pode chegar ao serviço de publicação, tanto para ambientes de produção quanto de não produção (desenvolvimento e estágio). Se você deseja limitar o tráfego ao serviço de publicação para um determinado ambiente (por exemplo, limitar o armazenamento temporário por uma faixa de endereços IP), é necessário trabalhar com o suporte ao cliente para configurar essas restrições.
+
+#### CDN gerenciada pelo cliente {#customer-managed-cdn}
 
 Você pode gerenciar seu próprio CDN, desde que:
 
 1. Você tem um CDN existente.
-2. Você vai lidar com isso.
-3. Seu aplicativo não efetua chamadas de API extensas para o CDN que ainda não estão acomodadas na arquitetura do AEM.
-4. O AEM como um serviço em nuvem pode estabelecer que o sistema completo funciona corretamente.
-5. Você precisará fornecer à Adobe a lista de permissões de urls CDN para permitir.
+1. Deve ser um CDN suportado. Atualmente, o Akamai é compatível. Se sua organização quiser gerenciar um CDN não suportado no momento, entre em contato com o suporte ao cliente.
+1. Você vai lidar com isso.
+1. Você deve ser capaz de configurar o CDN para trabalhar com o Aem como um serviço de nuvem - consulte as instruções de configuração abaixo.
+1. Você tem especialistas em engenharia de CDN que estão em contato caso surjam problemas relacionados.
+1. É necessário fornecer listas de permissões de nós CDN para o Gerenciador de nuvem, conforme descrito nas instruções de configuração.
+1. Você deve executar e passar com êxito em um teste de carga antes de ir para a produção.
 
-A Adobe fornecerá um url da AEM Cloud para uso como origem do CDN.
+Instruções de configuração:
 
+1. Forneça a lista de permissões do fornecedor de CDN para a Adobe chamando a API de criação/atualização do ambiente com uma lista de CIDRs para a lista de permissões.
+1. Defina o `X-Forwarded-Host` cabeçalho com o nome do domínio.
+1. Defina o cabeçalho Host com o domínio de origem, que é o Aem como uma entrada do serviço em nuvem. O valor deve vir da Adobe.
+1. Envie o cabeçalho SNI para a origem. O cabeçalho sni deve ser o domínio de origem.
+1. Defina o `X-Edge-Key` que é necessário para rotear o tráfego corretamente para os servidores AEM. O valor deve vir da Adobe.
+
+Antes de aceitar o tráfego ao vivo, você deve validar com o suporte ao cliente da Adobe que o roteamento de tráfego completo está funcionando corretamente.
+
+#### Aponte para Adobe Managed CDN {#point-to-point-CDN}
+
+Suportado se você quiser usar seu CDN existente, mas não puder atender aos requisitos de um CDN gerenciado pelo cliente. Nesse caso, você gerencia seu próprio CDN, mas aponta para o CDN gerenciado da Adobe.
+
+Os clientes devem executar e passar com êxito em um teste de carga antes de irem para a produção.
+
+Instruções de configuração:
+
+1. Defina o `X-Forwarded-Host` cabeçalho com o nome do domínio.
+1. Defina o cabeçalho Host com o domínio de origem, que é a entrada do CDN da Adobe. O valor deve vir da Adobe.
+1. Envie o cabeçalho SNI para a origem. Como o cabeçalho Host, o cabeçalho sni deve ser o domínio de origem.
+1. Defina o `X-Edge-Key`, que é necessário para rotear o tráfego corretamente para os servidores AEM. O valor deve vir da Adobe.
 
 #### Invalidação do cache CDN {#CDN-cache-invalidation}
 
@@ -745,27 +789,36 @@ A invalidação do cache segue estas regras:
 * As bibliotecas do cliente (JavaScript e CSS) são armazenadas em cache indefinidamente usando o controle de cache definido como imutável ou 30 dias para navegadores mais antigos que não respeitam o valor imutável. Observe que as bibliotecas do cliente são fornecidas em um caminho exclusivo que muda se as bibliotecas do cliente mudarem. Em outras palavras, o HTML que faz referência às bibliotecas do cliente será produzido conforme necessário para que você possa experimentar o novo conteúdo conforme ele é publicado.
 * Por padrão, as imagens não são armazenadas em cache.
 
+Antes de aceitar o tráfego ao vivo, os clientes devem validar com o suporte ao cliente da Adobe que o roteamento de tráfego completo está funcionando corretamente.
+
 ## Invalidação explícita do cache do dispatcher {#explicit-invalidation}
+
+Como mencionado anteriormente, o tráfego passa por um servidor da Web apache, que suporta módulos, incluindo o dispatcher. O dispatcher é usado principalmente como cache para limitar o processamento nos nós de publicação, a fim de aumentar o desempenho.
+
+Em geral, não será necessário invalidar manualmente o conteúdo no dispatcher, mas é possível se necessário, conforme descrito abaixo.
 
 Antes do AEM como um serviço em nuvem, havia duas maneiras de invalidar o cache do dispatcher.
 
-1. Chame a API de replicação, especificando o agente de liberação do dispatcher de publicação
+1. Chame o agente de replicação, especificando o agente de liberação do dispatcher de publicação
 2. Chamando diretamente a `invalidate.cache` API (por exemplo, POST /dispatcher/invalidate.cache)
 
 A `invalidate.cache` abordagem não será mais suportada, pois ela aborda somente um nó de dispatcher específico.
 O AEM como um serviço em nuvem opera no nível de serviço, não no nível de nó individual e, portanto, as instruções de invalidação na documentação da Ajuda [do](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) Dispatcher não são mais precisas.
-Em vez disso, a abordagem da API de replicação deve ser usada. [A documentação](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) da API está disponível e, para obter um exemplo de como limpar o cache, consulte a página [de exemplo da](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API e, especificamente, o exemplo CustomStep que emite uma ação de replicação do tipo ATIVATE para todos os agentes disponíveis.
+Em vez disso, o agente de liberação de replicação deve ser usado. Isso pode ser feito usando a API de replicação. A documentação da API de replicação está disponível [aqui](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) e, para obter um exemplo de como limpar o cache, consulte a página [de exemplo da](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API especificamente o `CustomStep` exemplo que emite uma ação de replicação do tipo ATIVATE para todos os agentes disponíveis. O ponto de extremidade do agente de liberação não é configurável, mas pré-configurado para apontar para o dispatcher, correspondente ao serviço de publicação que executa o agente de liberação. O agente de descarga normalmente pode ser acionado por eventos ou fluxos de trabalho OSGi.
 
 O diagrama abaixo ilustra isso.
 
-<!-- [CDN](assets/cdn.png "CDN") -->
+![](assets/cdn.png "CDN")
 
-<!-- See [Apache and Dispatcher Configuration and Testing](../developing/introduction/developer-experience.md#apache-and-dispatcher-configuration-and-testing) for instructions on how a developer can configure apache and the dispatcher module. -->
+Se houver uma preocupação de que o cache do dispatcher não esteja sendo apagado, entre em contato com o suporte ao cliente que pode liberar o cache do dispatcher, se necessário.
+
+O CDN gerenciado pela Adobe respeita os TTLs e, portanto, não é necessário liberá-lo. Se houver suspeita de um problema, entre em contato com o suporte ao cliente que pode liberar um cache CDN gerenciado pela Adobe, conforme necessário.
 
 ### Invalidação do Cache do Dispatcher durante Ativação/Desativação {#cache-activation-deactivation}
 
-Essa invalidação acionada por publicação é a mesma de início rápido:
-Quando a instância de publicação recebe uma nova versão de uma página ou ativo do autor (por meio da fila de replicação e pipeline), usa o agente de liberação para invalidar os caminhos apropriados em seu dispatcher. O caminho atualizado é removido do cache do dispatcher, juntamente com seus pais, até um nível que você pode configurar com o [nível de arquivo de estado](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+Como nas versões anteriores do AEM, publicar ou desfazer a publicação de páginas limpará o conteúdo do cache do dispatcher. Se houver suspeita de um problema de armazenamento em cache, os clientes devem republicar as páginas em questão.
+
+Quando a instância de publicação recebe uma nova versão de uma página ou ativo do autor, ela usa o agente de liberação para invalidar os caminhos apropriados em seu dispatcher. O caminho atualizado é removido do cache do dispatcher, juntamente com seus pais, até um nível mais alto (você pode configurá-lo com o [status fileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
 ### Influência do conteúdo e consistência da versão {#content-consistency}
 
