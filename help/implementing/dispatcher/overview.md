@@ -2,7 +2,7 @@
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 translation-type: tm+mt
-source-git-commit: b7f3122db5b55d515965b638c2b4aa4bc2a67fe6
+source-git-commit: 2ab8a4fb492b85c1a9b42442d868cdbc329756cf
 
 ---
 
@@ -806,9 +806,9 @@ A `invalidate.cache` abordagem não será mais suportada, pois ela aborda soment
 O AEM como um serviço em nuvem opera no nível de serviço, não no nível de nó individual e, portanto, as instruções de invalidação na documentação da Ajuda [do](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) Dispatcher não são mais precisas.
 Em vez disso, o agente de liberação de replicação deve ser usado. Isso pode ser feito usando a API de replicação. A documentação da API de replicação está disponível [aqui](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) e, para obter um exemplo de como limpar o cache, consulte a página [de exemplo da](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API especificamente o `CustomStep` exemplo que emite uma ação de replicação do tipo ATIVATE para todos os agentes disponíveis. O ponto de extremidade do agente de liberação não é configurável, mas pré-configurado para apontar para o dispatcher, correspondente ao serviço de publicação que executa o agente de liberação. O agente de descarga normalmente pode ser acionado por eventos ou fluxos de trabalho OSGi.
 
-O diagrama abaixo ilustra isso.
+<!--The diagram below illustrates this.
 
-![](assets/cdn.png "CDN")
+![CDN](assets/cdn.png "CDN")-->
 
 Se houver uma preocupação de que o cache do dispatcher não esteja sendo apagado, entre em contato com o suporte ao cliente que pode liberar o cache do dispatcher, se necessário.
 
