@@ -2,7 +2,7 @@
 title: Notas de versão da versão 2020.2.0
 description: Notas de versão da versão 2020.2.0
 translation-type: tm+mt
-source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
 
 A seção a seguir descreve as Notas de versão gerais do Experience Manager como um serviço da Cloud 2020.2.0.
 
-A data de lançamento é 13 de fevereiro de 2020.
-
 ## Cloud Manager {#cloud-manager}
+
+A data de lançamento da versão 2020.2.0 do Cloud Manager é 13 de fevereiro de 2020.
 
 Siga esta seção para saber mais sobre as novidades e as atualizações do Cloud Manager Versão 2020.2.0.
 
