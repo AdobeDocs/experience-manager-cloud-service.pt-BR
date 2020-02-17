@@ -1,13 +1,13 @@
 ---
-title: Implantação no AEM como um serviço em nuvem
-description: 'Implantação no AEM como um serviço em nuvem '
+title: Implantação do AEM como Cloud Service
+description: 'Implantação do AEM como Cloud Service '
 translation-type: tm+mt
-source-git-commit: 6bf4d9d106a35ead10be235237986a60f2bf1148
+source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
 
 ---
 
 
-# Implantação no AEM como um serviço em nuvem {#deploying-to-aem-as-a-cloud-service}
+# Implantação do AEM como Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
 ## Introdução {#introduction}
 
@@ -48,7 +48,7 @@ Assim como para versões AEM não-em nuvem existentes, um desenvolvimento local 
 > [!OBSERVAÇÃO}
 >Há diferenças operacionais sutis entre o comportamento do aplicativo em uma máquina local e a Adobe Cloud. Essas diferenças arquitetônicas devem ser respeitadas durante o desenvolvimento local e podem levar a um comportamento diferente ao implantar na infraestrutura de nuvem. Devido a essas diferenças, é importante executar testes exaustivos em ambientes de desenvolvimento e estágio antes de implantar o novo código personalizado na produção.
 
-Para desenvolver o código personalizado para uma versão interna, a versão relevante do [AEM como um SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) do serviço em nuvem deve ser baixada e instalada. Para obter informações adicionais sobre como usar as ferramentas como um Dispatcher Service, consulte [esta página](/help/implementing/dispatcher/overview.md).
+Para desenvolver o código personalizado para uma versão interna, a versão relevante do [AEM como um SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) do serviço em nuvem deve ser baixada e instalada. Para obter informações adicionais sobre como usar o AEM como ferramentas do Dispatcher do serviço em nuvem, consulte [esta página](/help/implementing/dispatcher/overview.md).
 
 ## Implantação de pacotes de conteúdo por meio do Cloud Manager e do Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
