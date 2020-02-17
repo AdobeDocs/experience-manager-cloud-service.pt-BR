@@ -2,7 +2,7 @@
 title: Implantar seu código - Serviços em nuvem
 description: Implantar seu código - Serviços em nuvem
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ---
 
@@ -39,15 +39,15 @@ Depois de configurar seu **Pipeline** (repositório, ambiente e ambiente de test
 
    * Validação: Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento, por exemplo, que a ramificação configurada exista, os ambientes estarão disponíveis.
    * Compilação e teste de unidade: Esta etapa executa um processo de criação contido. Consulte [Criar um projeto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) de aplicativo AEM para obter detalhes sobre o ambiente de criação.
-   * Digitalização de código: Esta etapa avalia a qualidade do código do aplicativo. Consulte [Entender os resultados](understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
+   * Digitalização de código: Esta etapa avalia a qualidade do código do aplicativo. Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
    * Criar imagens: Esta etapa tem um arquivo de log do processo usado para criar imagens. Esse processo é responsável por transformar os pacotes de conteúdo e despachante produzidos pela etapa de compilação em imagens Docker e configurações de Kubernetes.
    * Implantar no palco
 
       ![](assets/stage-deployment.png)
    O teste **** Stage envolve as seguintes etapas:
 
-   * Teste funcional do produto: As execuções de pipeline do Gerenciador de nuvem oferecerão suporte à execução de testes executados no ambiente de estágio. Consulte [Entender os resultados](understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
-   * Teste funcional personalizado: Esta etapa do pipeline está sempre presente e não pode ser ignorada. No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão. Consulte [Entender os resultados](understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
+   * Teste funcional do produto: As execuções de pipeline do Gerenciador de nuvem oferecerão suporte à execução de testes executados no ambiente de estágio. Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
+   * Teste funcional personalizado: Esta etapa do pipeline está sempre presente e não pode ser ignorada. No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão. Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
 
       ![](assets/stage-testing.png)
 
