@@ -2,7 +2,7 @@
 title: Entenda seus resultados de teste - Serviços em nuvem
 description: Entenda os resultados do teste - Serviços em nuvem
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
 
 ---
 
@@ -125,7 +125,7 @@ A etapa de teste Funcional personalizada no pipeline está sempre presente e nã
 
 No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão. Esta etapa é realizada imediatamente após a implantação do estágio.
 
-> Nota:
+>[!NOTE]
 >O botão **Download Log** permite o acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade normal de Download ou Logs de assinatura. Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
 
 ## Execução de teste local {#local-test-execution}
