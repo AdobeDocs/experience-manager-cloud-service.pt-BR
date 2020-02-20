@@ -4,12 +4,12 @@ description: Saiba mais sobre vários métodos de edição e gerenciamento de at
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage assets {#manag-assets}
+# Manage assets {#manage-assets}
 
 Este artigo descreve como gerenciar e editar ativos nos ativos Adobe Experience Manager (AEM). Para gerenciar os Fragmentos de conteúdo, consulte os ativos [Fragmentos](content-fragments/content-fragments.md) de conteúdo.
 
@@ -32,32 +32,7 @@ Os seguintes caracteres (lista separada por espaços de) não são suportados:
 
 ## Upload assets {#uploading-assets}
 
-Consulte [adicionar ativos digitais ao Experience Manager](add-assets.md).
-
-### Carregamentos em fluxo {#streamed-uploads}
-
-Se você fizer upload de muitos ativos para o AEM, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode até mesmo fazer com que algumas tarefas de upload sejam encerradas. O AEM Assets oferece suporte ao upload simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de carregamento de grandes ativos e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado nos ativos AEM.
-
->[!NOTE]
->
->O carregamento de fluxo é desativado para o AEM em execução no servidor JEE com a versão servlet-api inferior a 3.1.
-
-### Extrair arquivo ZIP contendo ativos {#extractzip}
-
-Você pode carregar arquivos ZIP como qualquer outro ativo suportado. As mesmas regras de nome de arquivo se aplicam aos arquivos ZIP. O AEM permite que você extraia um arquivo ZIP para um local DAM. Se os arquivos de arquivamento não contiverem ZIP como extensão, ative a detecção de tipo de arquivo usando conteúdo.
-
-Selecione um arquivo ZIP de cada vez, clique em **[!UICONTROL Extrair arquivo]** e selecione uma pasta de destino. Selecione uma opção para lidar com conflitos, se houver. Se os ativos no arquivo ZIP já existirem na pasta de destino, você poderá selecionar uma destas opções: ignore a extração, substitua os arquivos existentes, mantenha ambos os ativos renomeando ou crie uma nova versão.
-
-Após a extração ser concluída, o AEM notifica você na área de notificação. Enquanto o AEM extrai o ZIP, você pode voltar ao seu trabalho sem interromper a extração.
-
-![Notificação da extração de zip](assets/zip_extract_notification.png)
-
-Algumas limitações do recurso são:
-
-* Se uma pasta com o mesmo nome existir no destino, os ativos do arquivo ZIP serão extraídos na pasta existente.
-* Se você cancelar a extração, os ativos já extraídos não serão excluídos.
-* Não é possível selecionar dois arquivos ZIP ao mesmo tempo e extraí-los. Você só pode extrair um arquivo ZIP por vez.
-* Ao carregar um arquivo ZIP, se a caixa de diálogo de upload exibir um erro de servidor 500, tente novamente após instalar o service pack mais recente.
+Consulte [adicionar ativos digitais ao Experience Manager](add-assets.md)para obter informações detalhadas.
 
 ## Visualizar ativos {#previewing-assets}
 
@@ -94,19 +69,13 @@ Para visualizar um ativo, siga estas etapas.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. No campo **[!UICONTROL Tags]** , selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione Enter. A nova tag é salva no AEM.
+1. No campo **[!UICONTROL Tags]** , selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione a tecla Enter. A nova tag é salva no AEM.
 
    O YouTube requer Tags para publicar e ter um link para o YouTube (se for possível encontrar um link adequado).
 
    >[!NOTE]
    >
-   >Para criar tags, é necessário ter permissão de gravação `/content/cq:tags/default` no repositório CRX.
-
-1. Para fornecer uma classificação ao ativo, toque/clique na guia **[!UICONTROL Avançado]** e, em seguida, toque/clique na estrela na posição apropriada para atribuir a classificação desejada.
-
-   ![classificações](assets/ratings.png)
-
-   A pontuação de classificação atribuída ao ativo é exibida em **[!UICONTROL Suas Classificações]**. A pontuação de classificação média recebida dos usuários que classificaram o ativo é exibida em **[!UICONTROL Classificação]**. Além disso, a análise das pontuações de classificação que contribuem para a pontuação de classificação média é exibida em **[!UICONTROL Análise]** de classificação. Você pode pesquisar ativos com base nas pontuações de classificação médias.
+   >Para criar tags, é necessário ter permissão de gravação no `/content/cq:tags/default` caminho no repositório CRX.
 
 1. Para exibir as estatísticas de uso do ativo, clique/toque na guia **[!UICONTROL Insights]** .
 
@@ -118,7 +87,8 @@ Para visualizar um ativo, siga estas etapas.
    Para obter mais detalhes, consulte [Asset Insights](assets-insights.md).
 
 1. Toque/clique em **[!UICONTROL Salvar e fechar]**.
-1. Navegue até a interface do usuário Ativos. As propriedades de metadados editadas, incluindo título, descrição, classificações e assim por diante, são exibidas no cartão de ativos na exibição Cartão e nas colunas relevantes na exibição Lista.
+
+1. Navegue até a interface do usuário Ativos. As propriedades de metadados editadas, incluindo título, descrição e tags, são exibidas no cartão de ativos na exibição Cartão e nas colunas relevantes na exibição Lista.
 
 ## Copiar ativos {#copying-assets}
 
@@ -239,28 +209,6 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    >
    >As anotações em vídeo são compatíveis apenas em navegadores com formatos de vídeo compatíveis com HTML5. Além disso, dependendo do navegador, diferentes formatos de vídeo são suportados.
 
-### View subassets {#viewing-subassets}
-
-No AEM, os subativos podem ser gerados para ativos com formatos de várias páginas compatíveis, como PDF, AI, Powerpoint/Apple Keynote e InDesign. Esses subativos são como ativos normais, mas estão vinculados a seus ativos principais e facilitam a visualização de várias páginas na interface do usuário para toque.
-
-Por padrão, a geração de conjunto de subconjuntos é desativada. Para ativar a geração de subativos, adicione a etapa **[!UICONTROL Criar subativo]** ao fluxo de trabalho Atualizar ativo do DAM.
-
-Para documentos do Word, o fluxo de trabalho Analisar documentos do Word gera um `cq:Page` componente do conteúdo do documento do Word. As imagens extraídas do documento são referenciadas do `cq:Page` componente. Essas imagens são extraídas mesmo se a geração de subativos estiver desativada.
-
-1. Para exibir subativos, navegue até o local do ativo e abra sua página de ativos.
-
-1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Subativos]** na lista
-
-   ![chlimage_1-223](assets/chlimage_1-223.png)
-
-   >[!NOTE]
-   >
-   >A opção **Subativos** é exibida somente se os subativos não estiverem disponíveis/tiverem sido gerados para o ativo.
-
-   Quando você seleciona **Subativos** na lista, a página **subativos** exibe os subativos vinculados ao ativo pai.
-
-   ![chlimage_1-224](assets/chlimage_1-224.png)
-
 ## Delete assets {#delete-assets}
 
 Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo.
@@ -293,7 +241,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
 ## Baixar ativos {#download-assets}
 
-Consulte [Baixar ativos do AEM](/help/assets/download-assets-from-aem.md).
+See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publish-assets}
 
@@ -365,7 +313,7 @@ Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você tam
 1. Publique a pasta e tente acessá-la da instância de publicação. Uma tela de login é exibida.
 1. Se você for um membro do CUG, insira suas credenciais de segurança. A pasta é exibida depois que o AEM o autentica.
 
-## Search assets {#search-assets}
+## Pesquisar ativos {#search-assets}
 
 Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos pelos usuários e comerciantes de negócios ou para administração por administradores de DAM.
 
@@ -564,43 +512,11 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   >[!NOTE]
-   >
-   >Se o ativo tiver subativos, você poderá imprimir todos os subativos junto com suas anotações específicas em nível de página.
-
    Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor, o tamanho e o estilo da fonte, a cor de plano de fundo dos comentários e status, abra a configuração **[!UICONTROL do PDF de]** anotação no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Retorne ao arquivo PDF renderizado e atualize-o. O PDF atualizado reflete as alterações feitas.
-
-Se um ativo incluir anotações em idiomas estrangeiros (especialmente idiomas não latinos), você deve primeiro configurar o serviço CQ-DAM-Handler-Gibson Font Manager no servidor AEM para poder imprimir essas anotações. Ao configurar o serviço CQ-DAM-Handler-Gibson Font Manager, forneça o caminho onde as fontes dos idiomas desejados estão localizadas.
-
-1. Abra a página de configuração do serviço CQ-DAM-Handler-Gibson Font Manager do URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
-1. Para configurar o serviço CQ-DAM-Handler-Gibson Font Manager, execute um dos seguintes procedimentos:
-
-   * Na opção de diretório Fontes do sistema, especifique o caminho completo para o diretório de fontes no sistema. Por exemplo, se você for um usuário do Mac, poderá especificar o caminho como */Library/Fonts* na opção de diretório System Fonts. O AEM busca as fontes desse diretório.
-   * Crie um diretório nomeado `fonts` dentro da ``crx-quickstart`` pasta. O serviço CQ-DAM-Handler-Gibson Font Manager busca automaticamente as fontes no local `crx-quickstart/fonts`. Você pode substituir esse caminho padrão na opção de diretório Fontes do Adobe Server.
-
-   * Crie uma nova pasta para fontes em seu sistema e armazene as fontes desejadas na pasta. Em seguida, especifique o caminho completo para essa pasta na opção de diretório Fontes do cliente.
-
-1. Acesse a configuração do PDF de anotação do URL `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
-1. Configure o PDF de anotação com o conjunto correto de tipos de letra/família da seguinte maneira:
-
-   * Inclua a string `<font_family_name_of_custom_font, sans-serif>` na opção font-family. Por exemplo, se você quiser imprimir anotações em CJK (chinês, japonês e coreano), inclua a string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` na opção família de fontes. Se quiser imprimir anotações em Hindi, baixe a fonte apropriada e configure a família de fontes como Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
-
-1. Reinicie a instância do AEM.
-
-Este é um exemplo de como configurar o AEM para imprimir anotações em CJK (chinês, japonês e coreano):
-
-1. Baixe as fontes do Google Noto CJK dos links a seguir e armazene-as no diretório de fontes configurado no Serviço do Gerenciador de fontes.
-
-   * Todas em uma fonte Super CJK: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans (para as línguas europeias): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * Não use fontes para um idioma de sua escolha: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-
-1. Configure o arquivo PDF de anotação definindo o parâmetro font-family como `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Esta configuração está disponível por padrão e funciona para todos os idiomas europeus e CJK.
-1. Se o idioma de sua escolha for diferente dos idiomas mencionados na etapa 2, anexe uma entrada apropriada (separada por vírgulas) à família de fontes padrão.
 
 ## Controle de versão de ativos {#asset-versioning}
 
