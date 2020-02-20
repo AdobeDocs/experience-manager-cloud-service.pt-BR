@@ -2,7 +2,7 @@
 title: Vincular URLs ao aplicativo da Web.
 description: Como vincular URLs ao aplicativo da Web em mídia dinâmica
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -19,11 +19,11 @@ Para colocar essas strings de URL em suas páginas da Web e aplicativos, copie-a
 >
 >As strings de URL estão disponíveis somente para representações dinâmicas de ativos. No momento, eles não estão disponíveis para ativos estáticos que residem no DAM e não no servidor de mídia dinâmica. O botão URL não é exibido para execuções estáticas.
 
-Consulte também [Incorporação do visualizador de vídeo ou imagem em uma página da Web.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
 
 See also [Linking YouTube URLs to your Web Application.](video.md)
 
-Consulte também [Fornecer imagens otimizadas para um site responsivo.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-assets)
 
@@ -205,4 +205,4 @@ O Dynamic Media suporta a entrega de ativos estáticos, que são ativos adiciona
 
 HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. A entrega de ativos de Dynamic Media pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
-Consulte Entrega [HTTP2 de conteúdo](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
+Consulte Entrega [HTTP2 de conteúdo](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
