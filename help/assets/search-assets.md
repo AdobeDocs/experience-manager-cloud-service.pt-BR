@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários no AEM usando o painel 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -221,7 +221,7 @@ O recurso de pesquisa do AEM oferece suporte à pesquisa de coleções e à pesq
 
 O seletor de ativos permite que você pesquise, filtre e navegue pelos ativos DAM de uma maneira especial. O seletor de ativos está disponível em `https://[aem_server]:[port]/aem/assetpicker.html`. Você pode buscar os metadados dos ativos selecionados usando o seletor de ativos. Você pode iniciá-lo com parâmetros de solicitação suportados, como tipo de ativo (imagem, vídeo, texto) e modo de seleção (seleções únicas ou múltiplas). Esses parâmetros definem o contexto do seletor de ativos para uma instância de pesquisa específica e permanecem intactos durante toda a seleção.
 
-O seletor de ativos usa a mensagem HTML5 Window.postMessage para enviar dados do ativo selecionado para o destinatário. O seletor de ativos é baseado no vocabulário do seletor de fundações de Granite. Por padrão, o seletor de ativos opera no modo Procurar.
+O seletor de ativos usa a mensagem HTML5 `Window.postMessage` para enviar dados do ativo selecionado para o destinatário. O seletor de ativos é baseado no vocabulário do seletor de fundações de Granite. Por padrão, o seletor de ativos opera no modo Procurar.
 
 Você pode passar os seguintes parâmetros de solicitação em um URL para iniciar o seletor de ativos em um contexto específico:
 
