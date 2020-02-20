@@ -2,12 +2,12 @@
 title: Fornecer imagens otimizadas para um site responsivo
 description: Como usar o recurso de código responsivo para fornecer imagens otimizadas
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
+# Entrega de imagens otimizadas para um site responsivo {#delivering-optimized-images-for-a-responsive-site}
 
 Use o recurso de código responsivo quando quiser compartilhar o código para serviço responsivo com seu desenvolvedor da Web. Você copia o código responsivo (**[!UICONTROL RESS]**) para a área de transferência para que possa compartilhá-lo com o desenvolvedor da Web.
 
@@ -15,7 +15,7 @@ Esse recurso faz sentido se o site estiver em um WCM de terceiros. No entanto, s
 
 Consulte também [Incorporação do visualizador de vídeo em uma página da Web.](embed-code.md)
 
-Consulte também [Vincular URLs ao seu aplicativo da Web.](linking-urls-to-yourwebapplication.md)
+See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
 **Para fornecer imagens otimizadas para um site** responsivo:
 
@@ -44,4 +44,4 @@ Consulte também [Vincular URLs ao seu aplicativo da Web.](linking-urls-to-yourw
 
 HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. A entrega de ativos de Dynamic Media é suportada usando o HTTP/2, que oferece melhor resposta e tempo de carregamento.
 
-Consulte Entrega [HTTP2 de conteúdo](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
+Consulte Entrega [HTTP2 de conteúdo](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
