@@ -4,12 +4,12 @@ description: Entenda o conceito de coleção nos ativos AEM. Saiba como gerencia
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3291f4f5de8c5333013850dad71630689cae7565
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage collections {#manage-collections}
+# Gerenciar coleções {#manage-collections}
 
 Uma coleção é um conjunto de ativos nos ativos Adobe Experience Manager (AEM). Use coleções para compartilhar ativos entre usuários.
 
@@ -102,7 +102,7 @@ Você pode adicionar ativos a uma coleção que contenha uma lista de ativos ou 
 As coleções inteligentes são criadas salvando uma pesquisa para que você possa alterar seu conteúdo modificando os parâmetros de pesquisa da pesquisa [](#saved-searches)salva.
 
 1. Na interface do usuário do Assets, toque/clique no ícone **[!UICONTROL Pesquisar]** na barra de ferramentas.
-1. Com o cursor na caixa Omnisearch, pressione a tecla Return.
+1. Com o cursor na caixa Omnisearch, pressione a tecla Enter.
 1. Toque/clique no ícone GlobalNav para exibir o painel Filtros.
 1. Na lista Pesquisas **** salvas, selecione a coleção inteligente que deseja modificar. O painel Pesquisar exibe os filtros configurados para a pesquisa salva.
 1. Na lista **[!UICONTROL Arquivos e pastas]** , selecione **[!UICONTROL Arquivos]**.
@@ -225,7 +225,7 @@ Para personalizar a página [!UICONTROL Propriedades] de metadados, incluindo a 
 
 Na interface do usuário do Assets, você pode pesquisar ou filtrar ativos com base em determinadas regras, critérios de pesquisa ou aspectos de pesquisa personalizados. Se salvá-los como Pesquisas **** salvas, você poderá acessá-los posteriormente na lista Pesquisas **** salvas no painel Filtro. Criar uma pesquisa salva também cria uma coleção inteligente.
 
-Pesquisas salvas são criadas quando você cria uma coleção inteligente. As coleções inteligentes são automaticamente adicionadas à lista Pesquisas **** salvas. A consulta Pesquisas salvas para a coleção é salva na `dam:query` propriedade no CRXDE no local relativo `/content/dam/collections/`.
+Pesquisas salvas são criadas quando você cria uma coleção inteligente. As coleções inteligentes são automaticamente adicionadas à lista Pesquisas **** salvas. A consulta Pesquisas salvas para a coleção é salva na `dam:query` propriedade no CRX no local relativo `/content/dam/collections/`.
 
 >[!NOTE]
 >
