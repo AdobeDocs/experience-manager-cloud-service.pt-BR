@@ -2,12 +2,12 @@
 title: Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web
 description: Saiba como incorporar vídeos ou imagens do Dynamic Media em uma página da Web
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Você copia o código incorporado para a área de transferência para poder colá-lo em suas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]** .
 
@@ -15,7 +15,7 @@ Você incorpora URLs somente se _não_ estiver usando o AEM como seu WCM. Se voc
 
 See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
-Consulte [Fornecer imagens otimizadas para um site responsivo.](responsive-site.md)
+See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 >[!NOTE]
 >
@@ -49,4 +49,4 @@ Consulte [Fornecer imagens otimizadas para um site responsivo.](responsive-site.
 
 HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. A entrega de ativos de Dynamic Media pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
-Consulte Entrega [HTTP2 de conteúdo](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
+Consulte Entrega [HTTP2 de conteúdo](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
