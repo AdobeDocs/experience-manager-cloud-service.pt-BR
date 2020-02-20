@@ -3,7 +3,7 @@ title: Gerenciamento de direitos digitais nos ativos Adobe Experience Manager
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados no AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -32,9 +32,9 @@ Você pode exibir o status de expiração de um ativo nos seguintes locais:
 
 Você pode pesquisar ativos expirados, incluindo subativos expirados no painel Pesquisar.
 
-1. No console Ativos, clique no ícone Pesquisar na barra de ferramentas para exibir a caixa Pesquisa Omni.
+1. No console Ativos, clique no ícone Pesquisar na barra de ferramentas para exibir o campo Omnisearch.
 
-1. Com o cursor na caixa Pesquisa Omni, pressione a tecla Return para exibir a página Resultados da pesquisa.
+1. Com o cursor na caixa Omnisearch, pressione a tecla Enter para exibir a página de resultados da pesquisa.
 
 1. Clique no ícone GlobalNav para exibir o painel Pesquisar.
 
@@ -42,7 +42,7 @@ Você pode pesquisar ativos expirados, incluindo subativos expirados no painel P
 
 1. Selecione **[!UICONTROL Expirado]**. Os ativos expirados são exibidos nos resultados da pesquisa.
 
-Quando você escolhe a opção **Expirado** , o console Ativos exibe apenas os ativos e subativos expirados que são referenciados pelos ativos compostos. Os ativos compostos que fazem referência a subativos expirados não são exibidos imediatamente após a expiração dos subativos. Em vez disso, eles são exibidos depois que o AEM Assets detecta que fazem referência a subativos expirados na próxima vez que o agendador for executado.
+Quando você escolhe a opção **[!UICONTROL Expirado]** , o console Ativos exibe apenas os ativos e subativos expirados que são referenciados pelos ativos compostos. Os ativos compostos que fazem referência a subativos expirados não são exibidos imediatamente após a expiração dos subativos. Em vez disso, eles são exibidos depois que o AEM Assets detecta que fazem referência a subativos expirados na próxima vez que o agendador for executado.
 
 Se você modificar a data de expiração de um ativo publicado para uma data anterior ao ciclo atual do programador, a programação ainda detectará esse ativo como um ativo expirado na próxima vez que ele for executado e refletirá seu status de acordo.
 
@@ -90,7 +90,7 @@ O console Ativos dos ativos Adobe Experience Manager (AEM) pode exibir vários e
 
 1. Para pesquisar ativos com base em seu status, clique/toque no ícone **[!UICONTROL Pesquisar]** para exibir a barra Omnisearch.
 
-1. Pressione a tecla Return e clique/toque no ícone **[!UICONTROL GlobalNav]** para exibir o painel Pesquisar.
+1. Pressione a tecla Enter e clique/toque no ícone AEM para exibir o painel Pesquisar.
 1. No painel Pesquisar, toque/clique em **[!UICONTROL Publicar status]** e selecione **[!UICONTROL Publicado]** para procurar ativos publicados nos ativos AEM.
 
 1. Toque/clique em Status **[!UICONTROL de]** aprovação e clique na opção apropriada para procurar ativos aprovados ou rejeitados.
