@@ -1,14 +1,14 @@
 ---
-title: Baixar ativos do AEM
+title: Baixar ativos no AEM
 description: Saiba como baixar ativos do AEM e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Baixar ativos do AEM {#download-assets-from-aem}
+# Baixar ativos no AEM {#download-assets-from-aem}
 
 Você pode baixar ativos incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente dos ativos AEM. Os ativos baixados são agrupados em um arquivo ZIP. O arquivo ZIP compactado tem um tamanho máximo de 1 GB para o trabalho de exportação. É permitido um máximo de 500 ativos por tarefa de exportação.
 
@@ -61,8 +61,6 @@ O `Asset Download Servlet` pode ser desativado em instâncias de publicação de
 1. Para bloquear solicitações de download de ativos por meio de uma configuração do dispatcher, edite a `dispatcher.any` configuração e adicione uma nova regra à seção [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
-1. Você pode desativar manualmente o componente OSGi em uma instância de Publicação navegando até o console OSGi em `<aem-host>/system/console/components`. Localize `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` e clique em **[!UICONTROL Desativar]**.
 
 >[!MORELIKETHIS]
 >
