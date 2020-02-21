@@ -3,14 +3,14 @@ title: Aplicar fluxos de trabalho a ativos
 description: Saiba como aplicar fluxos de trabalho a ativos, pastas e coleções nos ativos Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
 
 # Aplicar fluxos de trabalho a ativos {#applying-workflows-to-assets}
 
-Use fluxos de trabalho em ativos digitais para ativar o ativo ou criar marcas d&#39;água. Alguns dos fluxos de trabalho dos ativos são configurados para serem executados automaticamente com base em determinadas condições. Por exemplo, o fluxo de trabalho que cria automaticamente uma representação é executado automaticamente depois que uma imagem é editada.
+Use fluxos de trabalho em ativos digitais para ativar o ativo. Alguns dos fluxos de trabalho dos ativos são configurados para serem executados automaticamente com base em determinadas condições. Por exemplo, o fluxo de trabalho que cria automaticamente uma representação é executado automaticamente depois que uma imagem é editada.
 
 ## Aplicar um fluxo de trabalho a um ativo AEM {#apply-a-workflow-to-an-aem-asset}
 
