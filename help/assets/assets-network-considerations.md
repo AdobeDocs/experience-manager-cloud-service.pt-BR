@@ -3,7 +3,7 @@ title: Considerações de rede de ativos
 description: Discute considerações de rede ao projetar uma implantação do AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -87,11 +87,9 @@ Estes são alguns itens a serem considerados:
 
 * Leitura/gravação de metadados XMP
 * Ativação e replicação automáticas
-* Aplicação de marca d&#39;água
 * Inclusão/extração de página em conjunto
 * Fluxos de trabalho sobrepostos.
 
 Este é um exemplo de cliente para a definição de um fluxo de trabalho de ativos.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
