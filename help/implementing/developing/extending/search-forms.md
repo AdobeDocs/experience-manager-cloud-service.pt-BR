@@ -2,18 +2,32 @@
 title: Configuração de formulários de pesquisa
 description: Configuração de formulários de pesquisa para o Adobe Experience Manager como um serviço em nuvem.
 translation-type: tm+mt
-source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
+source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 ---
 
 
 # Configuração de formulários de pesquisa {#configuring-search-forms}
 
-Use o **Search Forms** para personalizar os aspectos de pesquisa e os filtros disponíveis nos vários painéis de pesquisa do ambiente do autor. A personalização desses painéis torna a funcionalidade de pesquisa versátil de acordo com suas necessidades específicas.
+O Adobe Experience Manager como um serviço em nuvem é fornecido com um poderoso mecanismo de [pesquisa](/help/sites-cloud/authoring/getting-started/search.md) .
 
-Uma [variedade de](#predicates-and-their-settings)predicados está disponível prontamente.
+Em combinação com isso, também há um conjunto de opções predefinidas para ajudar a filtrar o conteúdo. Eles possuem aspectos predefinidos, como Data **** Modificada, Status **de** Publicação ou Status **do** Livecopy, para ajudá-lo a detalhar rapidamente os recursos necessários.
 
-Você pode [configurar os formulários](#configuring-your-search-forms) de pesquisa usados em vários consoles e no navegador de ativos (ao editar páginas). As [caixas de diálogo para configurar esses formulários](#configuring-your-search-forms) podem ser acessadas por meio de:
+![uso de pesquisa e filtro](assets/csf-usage.png)
+
+Juntas, essas metas ajudam a localizar o conteúdo de forma rápida e fácil:
+
+* [Pesquisar e filtrar](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [Seletor de painéis](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* o Navegador [de](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) ativos (ao editar páginas)
+
+>[!NOTE]
+>
+>Você pode configurar o serviço subjacente de Pesquisa e Indexação [de](/help/operations/indexing.md) Conteúdo.
+
+Usando o **Search Forms**, você pode personalizar e estender esses painéis, de acordo com suas necessidades específicas.
+
+O **Search Forms** fornece uma seleção predefinida de [predicados](#predicates-and-their-settings) que você pode combinar e definir. As [caixas de diálogo para configurar esses formulários](#configuring-your-search-forms) podem ser acessadas por meio de:
 
 * **Ferramentas**
 
@@ -21,73 +35,48 @@ Você pode [configurar os formulários](#configuring-your-search-forms) de pesqu
 
       * **Formulários de pesquisa**
 
-Ao acessar esse console pela primeira vez, você pode ver que todas as configurações têm um símbolo de cadeado. Isso indica que a configuração apropriada é a configuração padrão (out-of-the-box) e não pode ser excluída. Depois de personalizar a configuração, o bloqueio desaparecerá - a menos que você [exclua sua configuração](#deleting-a-configuration-to-reinstate-the-default)personalizada, caso em que o padrão (e o indicador de cadeado) será reinstalado.
+## Formulários padrão {#default-forms}
+
+Ao acessar o console **Pesquisar formulários** pela primeira vez, é possível ver que todas as configurações têm um símbolo de cadeado. Isso indica que a configuração correspondente é a configuração padrão (out-of-the-box) e não pode ser excluída. Depois que você tiver personalizado e salvo, uma configuração do bloqueio desaparecerá. Ele será reexibido quando você [excluir sua configuração](#deleting-a-configuration-to-reinstate-the-default)personalizada; nesse caso, o padrão (e o indicador de cadeado) será reinstalado.
 
 ![configuração da visão geral dos formulários de pesquisa](assets/csf-overview.png)
-
-## Configurações {#configurations}
 
 As configurações padrão (listadas em ordem alfabética) disponíveis são:
 
 * **Trilho de pesquisa do administrador de ativos:**
 
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao usar o console Ativos.
-
 * **Editor de páginas (Pesquisa de documentos):**
-
-   Essa configuração define as opções disponíveis ao procurar documentos no navegador de ativos (ao editar uma página).
 
 * **Editor de páginas (Pesquisa de Fragmentos de experiência):**
 
-   Essa configuração define as opções disponíveis ao pesquisar por Fragmentos de experiência no navegador de ativos (ao editar uma página).
-
 * **Editor de páginas (Pesquisa de imagens):**
-
-   Essa configuração define as opções disponíveis ao pesquisar por imagens no navegador de ativos (ao editar uma página).
 
 * **Editor de páginas (Pesquisa de manuscrito):**
 
-   Essa configuração define as opções disponíveis ao pesquisar por manuscritos no navegador de ativos (ao editar uma página).
-
 * **Editor de páginas (Pesquisa de páginas):**
-
-   Essa configuração define as opções disponíveis ao pesquisar por páginas no navegador de ativos (ao editar uma página).
 
 * **Editor de páginas (Pesquisa de parágrafos):**
 
-   Essa configuração define as opções disponíveis ao procurar parágrafos no navegador de ativos (ao editar uma página).
-
 * **Editor de páginas (Pesquisa de produto):**
-
-   Essa configuração define as opções disponíveis ao procurar produtos no navegador de ativos (ao editar uma página).
 
 * **Editor de páginas (pesquisa do Scene7)**:
 
-   Essa configuração define as opções disponíveis ao pesquisar recursos do Scene7 no navegador de ativos (ao editar uma página).
-
 * **Editor de página (Pesquisa de vídeos)**:
-
-   Essa configuração define as opções disponíveis ao procurar vídeos no navegador de ativos (ao editar uma página).
 
 * **Trilho de pesquisa do administrador de projetos:**
 
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar projetos.
-
 * **Painel de pesquisa de tradução de projetos:**
-
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar traduções do projeto.
 
 * **Trilho de pesquisa do administrador de sites**:
 
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao usar o painel de pesquisa do console Sites.
-
 * **Painel de pesquisa do administrador de trechos**:
-
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar trechos.
 
 * **Painel de pesquisa do Admin do Stock**:
 
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar no stock.
+>[!NOTE]
+>
+> Para obter mais detalhes sobre os formulários de pesquisa relacionados ao ativo, consulte [Ativos - Aspectos de pesquisa](/help/assets/search-facets.md)
+
 
 ## Predicados e suas configurações {#predicates-and-their-settings}
 
@@ -168,7 +157,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Intervalo de datas</td>
-   <td>Pesquisar ativos criados em um intervalo especificado para uma propriedade de data. No painel Pesquisar, é possível especificar as datas de início e término.</td>
+   <td>Procure recursos criados em um intervalo especificado para uma propriedade de data. No painel Pesquisar, é possível especificar as datas de início e término.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -181,7 +170,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Status da expiração</td>
-   <td>Pesquisar ativos com base no status de expiração.</td>
+   <td>Pesquisar recursos com base no status de expiração.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -191,7 +180,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Tamanho do arquivo</td>
-   <td>Pesquisar ativos com base no tamanho.</td>
+   <td>Filtre os recursos com base no tamanho.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -205,7 +194,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>Pesquisar ativos com base no tipo de arquivo/mime.</td>
    <td>
     <ul>
-     <li>Rótulo do campo</li>
+     <li>Rótulo do campo</li> 
      <li>Nome da Propriedade*</li>
      <li>Caminho Mimetype</li>
      <li>Descrição</li>
@@ -214,7 +203,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Texto completo</td>
-   <td>Projetar pesquisa para pesquisas de texto completo.</td>
+   <td>Projetar pesquisa para pesquisas de texto completo. Ela é mapeada com o operador ‘jcr:contains’.</td>
    <td>
     <ul>
      <li>Espaço reservado</li>
@@ -304,7 +293,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Status da página</td>
-   <td>Pesquisar páginas de acordo com seu status.</td>
+   <td>Filtre as páginas de acordo com seu status.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -315,7 +304,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Caminho</td>
-   <td>Pesquisar ativos localizados em um caminho específico.</td>
+   <td>Filtrar de acordo com o caminho específico. É possível especificar vários caminhos como opções.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -325,7 +314,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Navegador de caminhos</td>
-   <td>Forneça um navegador de caminho para pesquisar.</td>
+   <td>Forneça um navegador de caminho para pesquisar em um caminho raiz predefinido.</td>
    <td>
     <ul>
      <li>Espaço reservado</li>
@@ -360,7 +349,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Publicar status</td>
-   <td>Pesquisar ativos com base em seu status de publicação</td>
+   <td>Filtre os recursos com base no status de publicação.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -380,7 +369,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Classificação</td>
-   <td>Pesquisar ativos de acordo com sua classificação.<br /> </td>
+   <td>Procure recursos de acordo com sua classificação média.<br /> </td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -391,7 +380,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Data relativa</td>
-   <td>Pesquisar ativos com base na data relativa de sua criação<br /> </td>
+   <td>Filtre os recursos com base na data relativa de sua criação. Por exemplo, 1 semana atrás, 1 mês atrás.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -497,23 +486,24 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
 -->
 
-<!--
 >[!NOTE]
 >
->* The common search predicates are defined in:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>* Os predicados de pesquisa comuns são definidos em:
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >
+Essas informações são apenas para referência, você não deve fazer alterações em `/libs`.
+
+<!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
 > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
 -->
 
 ### Configurações de previsão {#predicate-settings}
 
-Dependendo do predicado, uma seleção de configurações está disponível para configuração:
+Dependendo do predicado, uma seleção de configurações está disponível para configuração, incluindo:
 
 * **Rótulo do campo**
 
@@ -659,22 +649,19 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
 
    * `jcr:title` - o rótulo do campo a apresentar no painel de pesquisa
    * `value` - o valor da propriedade a ser pesquisada
+   ![Definição de previsão](assets/csf-options-predicate-01.png)
 
-<!--
-   ![chlimage_1-379](assets/chlimage_1-379.png)
--->
-
->[!NOTE]
->
->Você não ***deve*** alterar nada no `/libs` caminho.
->
->Isso ocorre porque o conteúdo do é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos). `/libs`
->
->O método recomendado para configuração e outras alterações é:
->
->1. Recrie o item desejado, como ele existe em `/libs`, em `/apps`. Neste caso a partir de:
->1. `/libs/cq/gui/content/common/options/predicates`
->1. Faça quaisquer alterações em `/apps.`
+   >[!NOTE]
+   >
+   >Você não ***deve*** alterar nada no `/libs` caminho.
+   >
+   >Isso ocorre porque o conteúdo do é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos). `/libs`
+   >
+   >O método recomendado para configuração e outras alterações é:
+   >
+   >1. Recrie o item desejado, como ele existe em `/libs`, em `/apps`. Neste caso a partir de:
+   >1. `/libs/cq/gui/content/common/options/predicates`
+   >1. Faça quaisquer alterações em `/apps.`
 
 
 1. Abra o console **Pesquisar formulários** e selecione a configuração que deseja atualizar. Por exemplo, Painel **de pesquisa do administrador de** sites.
@@ -695,16 +682,13 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
       Selecione o caminho para onde suas opções são mantidas. Por exemplo:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-
-<!--
-   ![chlimage_1-380](assets/chlimage_1-380.png)
--->
+   ![Previsões de opção](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. Navegue até o console apropriado (neste exemplo, **Sites**) e abra o painel **Pesquisar** . Os formulários de pesquisa recém-definidos, juntamente com as várias opções, estarão visíveis. Selecione a opção necessária para ver os resultados da pesquisa:
+1. Navegue até o console apropriado (neste exemplo, **Sites**) e abra o painel **Pesquisar** . Os formulários de pesquisa recém-definidos, juntamente com as várias opções, estarão visíveis. Selecione a opção necessária para ver os resultados da pesquisa.
 
 <!--
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![options being used](assets/csf-options-usage.png)
 -->
 
 ## Permissões de usuário {#user-permissions}
@@ -715,7 +699,7 @@ A tabela a seguir lista as permissões necessárias para executar ações de edi
  <tbody>
   <tr>
    <td><strong>Ação</strong></td>
-   <td><strong>Permissões</strong></td>
+   <td><strong>Permissões </strong></td>
   </tr>
   <tr>
    <td>Editar </td>
