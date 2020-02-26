@@ -2,7 +2,7 @@
 title: Entendendo os tipos de programas e programas
 description: Entendendo os tipos de programas e programas - Serviços em nuvem
 translation-type: tm+mt
-source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
+source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
 # Noções básicas sobre programas e tipos de programas {#understanding-programs}
 
 No Cloud Manager, você tem a entidade Inquilino na parte superior, que pode ter vários Programas dentro dela.  Cada programa não pode conter mais de um ambiente de produção e vários ambientes que não sejam de produção.
+
+O diagrama a seguir mostra a hierarquia de entidades no Gerenciador de nuvem.
+
+![image](assets/program-types1.png)
 
 ## Tipos de programas {#program-types}
 
