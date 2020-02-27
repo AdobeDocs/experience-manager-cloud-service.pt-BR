@@ -664,9 +664,7 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
    >1. Faça quaisquer alterações em `/apps.`
 
 
-1. Abra o console **Pesquisar formulários** e selecione a configuração que deseja atualizar. Por exemplo, Painel **de pesquisa do administrador de** sites.
-
-   Em seguida, clique/toque no ícone **Editar formulários** de pesquisa.
+1. Abra o console **Pesquisar formulários** e selecione a configuração que deseja atualizar. Por exemplo, Painel **de pesquisa do administrador de** sites. Em seguida, selecione **Editar**.
 
 1. Dependendo da configuração, adicione uma Propriedade **Options** ou **Options** à configuração.
 1. Atualize os campos, em especial:
@@ -685,11 +683,10 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
    ![Previsões de opção](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. Navegue até o console apropriado (neste exemplo, **Sites**) e abra o painel **Pesquisar** . Os formulários de pesquisa recém-definidos, juntamente com as várias opções, estarão visíveis. Selecione a opção necessária para ver os resultados da pesquisa.
+1. Navegue até o console apropriado (neste exemplo, **Sites**) e abra o painel **Pesquisar - Filtros** . Os formulários de pesquisa recém-definidos, juntamente com as várias opções, estarão visíveis. Selecione a opção necessária para ver os resultados da pesquisa.
 
-<!--
-   ![options being used](assets/csf-options-usage.png)
--->
+   ![opções que estão sendo usadas](assets/csf-options-usage.png)
+
 
 ## Permissões de usuário {#user-permissions}
 
