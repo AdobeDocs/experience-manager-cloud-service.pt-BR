@@ -2,12 +2,12 @@
 title: O que é diferente e o que há de novo - Adobe Experience Manager como um serviço em nuvem
 description: 'O que é diferente e o que há de novo - Adobe Experience Manager (AEM) como um serviço em nuvem. '
 translation-type: tm+mt
-source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
+source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
 
 ---
 
 
-# O que é novo e o que é diferente {#what-is-new-and-what-is-different}
+# Novidades e diferenças {#what-is-new-and-what-is-different}
 
 Há muitos anos o AEM está disponível:
 
@@ -20,7 +20,7 @@ Há diferenças intrínsecas entre essas abordagens anteriores e o AEM como um s
 * [Arquitetura](#architecture)
 * [Atualizações](#upgrades)
 * [Cloud Manager](#cloud-manager)
-* [Onboard](#onboarding)
+* [Integração](#onboarding)
 * [Desenvolvimento](#developing)
 * [Operações e desempenho](#operations-and-performance)
 * [Gerenciamento de identidade](#identity-management)
@@ -42,25 +42,25 @@ Há diferenças intrínsecas entre essas abordagens anteriores e o AEM como um s
 >
 >Para obter mais detalhes, consulte [Arquitetura](/help/core-concepts/architecture.md).
 
-O AEM como serviço de nuvem agora tem:
+O AEM como Cloud Service agora tem:
 
-* Uma arquitetura dinâmica com um número variável de imagens AEM.
+* Uma arquitetura dinâmica com diversas imagens do AEM.
 
-![Arquitetura dinâmicaArquitetura](assets/introduction-03.png "dinâmica")
+![Arquitetura dinâmica](assets/introduction-03.png "Arquitetura dinâmica")
 
-Esta arquitetura:
+Essa arquitetura:
 
-* É dimensionado com base no tráfego *real* e na atividade *real* .
+* É dimensionada com base no tráfego *real* e na atividade *real* .
 
-* Tem instâncias individuais que só são executadas quando necessário.
+* Possui instâncias individuais que são executadas somente quando necessário.
 
 * Usa aplicativos modulares.
 
-* Tem um cluster autor como padrão; isso evita a paralisação das tarefas de manutenção.
+* Possui um cluster de criação como padrão; isso evita o tempo de inatividade para tarefas de manutenção.
 
-Isso permite o dimensionamento automático para padrões de uso variados:
+Isso permite o dimensionamento automático para vários padrões de uso:
 
-![Dimensionamento automático para](assets/introduction-04.png "padrões de uso variadosDimensionamento automático para padrões de uso variados")
+![Dimensionamento automático para vários padrões de uso](assets/introduction-04.png "Dimensionamento automático para vários padrões de uso")
 
 
 ## Atualizações {#upgrades}
@@ -129,7 +129,7 @@ Atualmente, o Cloud Manager pode criar ambientes em três regiões geográficas 
 
 * APAC (Austrália)
 
-## Onboard {#onboarding}
+## Integração {#onboarding}
 
 >[!NOTE]
 >
@@ -179,6 +179,10 @@ Esse processo é comumente chamado de desenvolvimento em nuvem. Como a duração
 
 O console da Web, onde os pacotes OSGI e suas configurações associadas são gerenciados e anteriormente parte do QuickStart do AEM, não é mais diretamente acessível aos usuários de um AEM como um ambiente de serviço em nuvem. Essa interface ainda pode ser acessada no modo somente leitura usando um novo console do desenvolvedor. Com esse console, os desenvolvedores podem selecionar e fazer logon diretamente em qualquer nó específico de um autor ou serviço de publicação e, em seguida, acessar as áreas bloqueadas por padrão.
 
+>[!NOTE]
+>
+>Consulte também Configuração [OSGi](/help/implementing/deploying/overview.md#osgi-configuration)
+
 Outro requisito comum para desenvolvedores é o acesso rápido aos arquivos de registro dos vários ambientes. Com o AEM como um serviço em nuvem, os arquivos de registro dos diferentes nós do autor e publicação são disponibilizados pelo Gerenciador de nuvem, na forma de arquivos que podem ser baixados ou por meio de APIs.
 
 Devido à clara separação de código e conteúdo, os desenvolvedores podem usar um processo específico para atualizar o conteúdo como parte de uma implantação. Os casos de uso típicos para conteúdo mutável são:
@@ -207,7 +211,7 @@ Para suportar iterações e desenvolvimento rápidos, também é possível desen
 
 >[!NOTE]
 >
->Para obter mais detalhes, comece com [Backup](/help/operations/backup.md), [Indexação](/help/operations/indexing.md)e [outras Tarefas](/help/operations/maintenance.md)de manutenção.
+>Para obter mais detalhes, comece com [Backup](/help/operations/backup.md), [Indexação](/help/operations/indexing.md) e [outras Tarefas de manutenção](/help/operations/maintenance.md).
 
 Com o AEM como um serviço em nuvem, essas operações são automatizadas para que nenhuma interrupção do serviço seja mais necessária.
 
