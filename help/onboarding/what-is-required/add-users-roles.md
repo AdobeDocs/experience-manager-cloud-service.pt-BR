@@ -2,12 +2,12 @@
 title: Adicionar usuários e funções - O que é necessário
 description: Adicionar usuários e funções - O que é necessário
 translation-type: tm+mt
-source-git-commit: 1d2d39ba3dd84b79420da94c985b00aa1bb5b806
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
 
-# Adicionar usuários e funções - O que é necessário {#add-users-roles}
+# Adicionar usuários e funções {#add-users-roles}
 
 
 Muitos recursos no [!UICONTROL Cloud Manager] exigem permissões específicas para operar. Por exemplo, somente alguns usuários podem definir os Indicadores-chave de desempenho (KPIs) para um programa. Essas permissões são logicamente agrupadas em funções.
