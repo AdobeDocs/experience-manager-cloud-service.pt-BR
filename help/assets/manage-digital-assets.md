@@ -4,7 +4,7 @@ description: Saiba mais sobre vários métodos de edição e gerenciamento de at
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
 ---
 
@@ -61,7 +61,7 @@ Para visualizar um ativo, siga estas etapas.
    >
    >O layout da página [!UICONTROL Propriedades] e as propriedades de metadados disponíveis dependem do esquema de metadados subjacente. Para saber como modificar o layout da página [!UICONTROL Propriedades] , consulte Esquemas [de metadados](/help/assets/metadata-schemas.md).
 
-1. Para programar uma data/hora específica para a ativação do ativo, use o seletor de datas ao lado do campo **[!UICONTROL Em tempo]** .
+1. Para programar uma data/hora específica para a ativação do ativo, use o seletor de datas ao lado do campo **[!UICONTROL No horário]**.
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
@@ -96,7 +96,7 @@ Quando você copia um ativo ou uma pasta, o ativo inteiro ou a pasta é copiado,
 
 Alguns atributos exclusivos a uma cópia específica de um ativo não são transmitidos. Alguns exemplos são:
 
-* Caminho relativo, ID do ativo, data e hora de criação e versões e histórico de versões. Algumas dessas propriedades são indicadas pelas propriedades `dam:relativePath`, `jcr:uuid`, `jcr:created`e `cq:name`.
+* ID do ativo, data e hora de criação e versões e histórico de versões. Algumas dessas propriedades são indicadas pelas propriedades `jcr:uuid`, `jcr:created`e `cq:name`.
 
 * O tempo de criação e os caminhos referenciados são exclusivos para cada ativo e cada uma de suas execuções.
 
@@ -187,17 +187,17 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    **Carregar uma nova execução**
 
-   Navegue até a página de detalhes do ativo e toque/clique no ícone **[!UICONTROL Adicionar representação]** na barra de ferramentas para carregar uma nova representação do ativo.
+   Navegue até a página de detalhes do ativo e toque/clique no ícone **[!UICONTROL Adicionar representação]** na barra de ferramentas para fazer upload de uma nova representação do ativo.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 
    >[!NOTE]
    >
-   >Se você selecionar uma representação no painel **[!UICONTROL Representações]** , a barra de ferramentas alterará o contexto e exibirá somente as ações que são relevantes para a representação. As opções, como o ícone Carregar representação, não são exibidas. Para exibir essas opções na barra de ferramentas, navegue até a página de detalhes do ativo.
+   >Se você selecionar uma representação no painel **[!UICONTROL Representações]**, a barra de ferramentas alterará o contexto e exibirá somente as ações relevantes para a representação. As opções, como o ícone Fazer upload da representação, não são exibidas. Para exibir essas opções na barra de ferramentas, navegue até a página de detalhes do ativo.
 
    Você pode configurar as dimensões para a representação que deseja exibir na página de detalhes de um ativo de imagem ou vídeo. Com base nas dimensões especificadas, os ativos AEM exibem a representação com as dimensões exatas ou mais próximas.
 
-   Para configurar dimensões de representação de uma imagem no nível de detalhes do ativo, sobreponha o `renditionpicker` nó (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configure o valor da propriedade width. Configure o **[!UICONTROL tamanho da propriedade (Longo) em KB]** no lugar da largura para personalizar a representação na página de detalhes do ativo com base no tamanho da imagem. Para personalização baseada em tamanho, a propriedade `preferOriginal` atribui preferência ao original se o tamanho da representação correspondente for maior que o original.
+   Para configurar as dimensões de representação de uma imagem no nível de detalhes do ativo, sobreponha o nó `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configure o valor da propriedade largura. Configure o **[!UICONTROL tamanho (Longo) em KB]** da propriedade no lugar da largura para personalizar a representação na página Detalhes do ativo com base no tamanho da imagem. Para personalização baseada em tamanho, a propriedade `preferOriginal` atribui preferência ao original se o tamanho da representação correspondente for maior que o original.
 
    Da mesma forma, é possível personalizar a imagem da página Anotar sobrepondo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -253,7 +253,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Navegue até o local dos ativos/pastas que deseja publicar.
 
-1. Selecione a ação rápida **[!UICONTROL Publicar]** no cartão de ativos ou selecione o ativo e toque/clique no ícone Publicação **** rápida na barra de ferramentas.
+1. Selecione a ação rápida **[!UICONTROL Publicar]** no cartão de ativos ou selecione o ativo e toque/clique no ícone **[!UICONTROL Publicação rápida]** na barra de ferramentas.
 1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas/não foram publicadas são exibidas. Escolha as referências que deseja publicar.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -345,7 +345,7 @@ As ferramentas de edição na interface do AEM Assets permitem executar pequenos
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. Selecione a opção desejada na lista. A área de corte aparece na imagem com base na opção escolhida. A opção **Mão** livre permite cortar a imagem sem restrições de proporção.
+1. Selecione a opção desejada na lista. A área de corte aparece na imagem com base na opção escolhida. A opção **Mão livre** permite cortar a imagem sem restrições de proporção.
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
@@ -354,7 +354,7 @@ As ferramentas de edição na interface do AEM Assets permitem executar pequenos
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
-1. Use os ícones **Desfazer** e **Refazer** na parte superior direita para reverter para a imagem não cortada ou manter a imagem recortada, respectivamente.
+1. Use os ícones **Desfazer** e **Refazer** na parte superior direita para reverter para a imagem não cortada ou manter a imagem cortada, respectivamente.
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
@@ -411,7 +411,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
-1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]** .
+1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]**.
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -442,7 +442,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   Especifique a cor desejada na caixa Cor **[!UICONTROL da]** anotação e clique/toque em **[!UICONTROL Aceitar]**.
+   Especifique a cor desejada na caixa **[!UICONTROL Cor da anotação]** e clique/toque em **[!UICONTROL Aceitar]**.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -504,7 +504,7 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
    >
    >Anotações extensas podem não ser renderizadas corretamente no arquivo PDF. Para uma renderização ideal, a Adobe recomenda que você limite as anotações a 50 palavras.
 
-1. Toque/clique em **[!UICONTROL Imprimir]**. Dependendo da opção escolhida na etapa 2, o PDF gerado exibirá as anotações/status na posição especificada. Por exemplo, se você optar por imprimir as anotações e o status da revisão usando a configuração **Superior esquerdo** , a saída gerada será semelhante ao arquivo PDF mostrado aqui.
+1. Toque/clique em **[!UICONTROL Imprimir]**. Dependendo da opção escolhida na etapa 2, o PDF gerado exibirá as anotações/os status na posição especificada. Por exemplo, se optar por imprimir as anotações e o status da revisão usando a configuração **Superior esquerdo**, o resultado será semelhante ao arquivo PDF mostrado aqui.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -554,7 +554,7 @@ A funcionalidade de controle de versão permite fazer o seguinte:
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Para exibir a nova versão, abra a lista **[!UICONTROL Mostrar tudo]** na linha do tempo na página de detalhes do ativo ou na interface do usuário do Assets e escolha **[!UICONTROL Versões]**. Todas as versões criadas para um ativo são listadas na guia Linha do tempo. Você pode filtrar a lista para mostrar Versões clicando na seta suspensa e selecionando **[!UICONTROL Versões]** na lista.
+1. Para exibir a nova versão, abra a lista **[!UICONTROL Mostrar tudo]** na linha do tempo da página Detalhes do ativo ou na interface do usuário do Assets e escolha **[!UICONTROL Versões]**. Todas as versões criadas para um ativo são listadas na guia Linha do tempo. Filtre a lista para mostrar Versões ao clicar na seta suspensa e selecionar **[!UICONTROL Versões]** na lista.
 
    ![version_option](assets/versions_option.png)
 
@@ -566,7 +566,7 @@ A funcionalidade de controle de versão permite fazer o seguinte:
 
    ![save_version](assets/save_version.png)
 
-1. Para gerar uma visualização para a versão, toque/clique em **[!UICONTROL Visualizar versão]**.
+1. Para gerar uma visualização da versão, toque/clique em **[!UICONTROL Visualizar versão]**.
 1. Para exibir essa versão na interface do usuário do Assets, selecione **[!UICONTROL Reverter para esta versão]**.
 1. Para comparar entre duas versões, vá para a página de ativos do ativo e toque/clique na versão a ser comparada com a versão atual.
 
@@ -591,7 +591,7 @@ A funcionalidade de controle de versão permite fazer o seguinte:
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. Na caixa de diálogo **[!UICONTROL Iniciar fluxo de trabalho]** , selecione um modelo de fluxo de trabalho na lista.
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -599,7 +599,7 @@ A funcionalidade de controle de versão permite fazer o seguinte:
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Toque/clique em **[!UICONTROL Iniciar]** e, em seguida, toque/clique em **[!UICONTROL Prosseguir]** na caixa de diálogo para confirmar. Cada etapa do fluxo de trabalho é exibida na linha do tempo como um evento.
+1. Toque/clique em **[!UICONTROL Iniciar]** e em **[!UICONTROL Prosseguir]** na caixa de diálogo para confirmar. Cada etapa do fluxo de trabalho é exibida na linha do tempo como um evento.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
