@@ -3,26 +3,18 @@ title: Formatos de arquivo e tipos MIME suportados pelos ativos Experience Manag
 description: Formatos de arquivo e tipos MIME suportados pelos ativos Experience Manager como um serviço em nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
 
 # Formatos de arquivo compatíveis com ativos {#supported-file-formats}
 
-O Adobe Experience Manager como um serviço em nuvem oferece suporte aos recursos básicos de gerenciamento de conteúdo - armazenamento, gerenciamento de metadados on-line, controle de versão, upload e download e assim por diante - para qualquer arquivo binário, independentemente de seu formato. Além disso, para os formatos de arquivo comumente usados, como imagem, propriedade da Adobe, documento e vídeo, ele oferece suporte estendido para gerar visualizações e execuções e extrair metadados e texto para indexação de texto completo. Esse suporte estendido é fornecido usando microserviços [de](asset-microservices-configure-and-use.md)ativos.
+O Adobe Experience Manager como um serviço em nuvem oferece suporte aos recursos básicos de gerenciamento de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download e assim por diante — para qualquer arquivo binário, independentemente de seu formato. Os ativos Adobe Experience Manager oferecem suporte a uma grande variedade de formatos de arquivo e cada recurso de produto tem suporte variado para formatos diferentes.
 
-Alguns destaques dos formatos de arquivo com suporte estendido incluem:
+Além disso, os ativos Experience Manager fornecem suporte estendido para gerar visualizações e execuções e extrair metadados e texto para indexação de texto completo. Esse suporte estendido é fornecido usando microserviços [de](asset-microservices-configure-and-use.md)ativos.
 
-* Formatos [de arquivo principais da](#adobe-formats) Adobe produzidos por aplicativos e serviços da Adobe, incluindo Adobe Photoshop, InDesign, Illustrator, XD, Dimension e Acrobat / PDF.
-* Formatos de arquivo de [imagem principais](#image-formats)
-* [Formatos](#camera-raw-formats) de arquivo Camera Raw para uma grande variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (capacitados pelo Adobe Camera Raw)
-* Formatos [de](#document-formats)documento comuns, incluindo os formatos [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) e [Open Document](#opendocument-formats)
-* Grande variedade de formatos de [vídeo](#video-formats) e [áudio](#audio-formats)
-
-## Legenda para obter informações detalhadas de suporte {#legend-for-detailed-support-information}
-
-A legenda a seguir descreve o nível de suporte para um recurso:
+A legenda a seguir descreve o nível de suporte.
 
 | Nível de suporte | Descrição |
 | ------------------------------------------------------------ | --------------------------- |
@@ -30,7 +22,17 @@ A legenda a seguir descreve o nível de suporte para um recurso:
 | * | Ver observações abaixo do quadro |
 | - | Não aplicável |
 
-As colunas das tabelas de suporte fornecem as seguintes informações:
+## Conversão de ativos usando microserviços de ativos {#asset-microservices-supported-formats}
+
+Os destaques incluem:
+
+* Formatos [de arquivo principais da](#adobe-formats) Adobe produzidos por aplicativos e serviços da Adobe, incluindo Adobe Photoshop, InDesign, Illustrator, XD, Dimension e Acrobat / PDF.
+* Formatos [de arquivo de](#image-formats)imagem principais.
+* [Formatos](#camera-raw-formats) de arquivo Camera Raw para uma grande variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (capacitados pelo Adobe Camera Raw).
+* Formatos [de](#document-formats)documento comuns, incluindo os formatos [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) e [Open Document](#opendocument-formats) .
+* Grande variedade de formatos de [vídeo](#video-formats) e [áudio.](#audio-formats)
+
+As colunas das tabelas a seguir fornecem as seguintes informações:
 
 | Coluna | Descrição |
 | ------------ | --------------------------------------------------------------- |
@@ -42,11 +44,7 @@ As colunas das tabelas de suporte fornecem as seguintes informações:
 | TXT | Extração de texto do documento para indexação |
 | Largura/altura | Suporte para definir a largura e a altura de uma representação (pixels) |
 
-<!-- Adding this checkmark icon ✓ does not look good in table. The icon's shade and size has to be toned down for good readability and less clutter.
-@gklebus: I suggest using a checkmark character, either U+2713 ✓ CHECK MARK or U+2714 ✔ HEAVY CHECK MARK
--->
-
-## Formatos da Adobe {#adobe-formats}
+### Formatos da Adobe {#adobe-formats}
 
 | Formato de arquivo | GIF | JPEG | PNG | TXT | XMP | Largura/altura |
 | ----------- | --- | ---- | --- | --- | --- | ------------ |
@@ -64,7 +62,7 @@ As colunas das tabelas de suporte fornecem as seguintes informações:
 
 \* Para INDD (arquivos do InDesign), o tamanho da execução é determinado pela visualização incorporada ao arquivo INDD. Configure as preferências no InDesign (**[!UICONTROL Preferências > Manuseio de arquivo > Sempre salvar imagens de visualização com documentos, tamanho]** de visualização) para incorporar renderização maior.
 
-## Formatos de imagem {#image-formats}
+### Formatos de imagem {#image-formats}
 
 | Formato de arquivo | GIF | JPEG | PNG | XMP | Largura/altura |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -76,8 +74,7 @@ As colunas das tabelas de suporte fornecem as seguintes informações:
 | SVG | - | - | - | ✓ | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-
-## Formatos Camera RAW {#camera-raw-formats}
+### Formatos Camera RAW {#camera-raw-formats}
 
 | Formato de arquivo | GIF | JPEG | PNG | XMP | Largura/altura |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -109,7 +106,7 @@ As colunas das tabelas de suporte fornecem as seguintes informações:
 | SRW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formatos de documento {#document-formats}
+### Formatos de documento {#document-formats}
 
 | Formato de arquivo | TXT | XMP |
 | ----------- | --- | --- |
@@ -120,7 +117,7 @@ As colunas das tabelas de suporte fornecem as seguintes informações:
 | TEXTO | ✓ | - |
 | XML | ✓ | - |
 
-## Formatos do Microsoft Office {#microsoft-office-formats}
+### Formatos do Microsoft Office {#microsoft-office-formats}
 
 | Formato de arquivo | GIF | JPEG | PNG | TEXTO | Largura/altura |
 | ----------- | --- | ---- | --- | ---- | ------------ |
@@ -128,7 +125,7 @@ As colunas das tabelas de suporte fornecem as seguintes informações:
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formatos OpenDocument {#opendocument-formats}
+### Formatos OpenDocument {#opendocument-formats}
 
 | Formato de arquivo | GIF | JPEG | PNG | TEXTO | Altura |
 | ----------- | --- | ---- | --- | ---- | ------ |
@@ -139,7 +136,7 @@ As colunas das tabelas de suporte fornecem as seguintes informações:
 | ODS | ✓ | ✓ | ✓ | ✓ | ✓ |
 | ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formatos de vídeo {#video-formats}
+### Formatos de vídeo {#video-formats}
 
 | Formato de arquivo | GIF | JPEG | PNG | XMP | Largura/altura |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -166,15 +163,27 @@ As colunas das tabelas de suporte fornecem as seguintes informações:
 | WEBM | ✓ | ✓ | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formatos de áudio {#audio-formats}
+### Formatos de áudio {#audio-formats}
 
 Os ativos como um serviço em nuvem fornecem suporte a XMP para estes formatos de áudio: AIF, ASF, M4A, MP3, WAV e WMA.
 
-<!-- TBD: Some items from https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedinputvideoformatsforDynamicMediatranscoding may be applicable.
+## Formatos de documento suportados {#doc-formats}
 
-Bring more parity with https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedMIMEtypes.
-https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#Supportedmultimediaformats
--->
+Os formatos de documento suportados para recursos de gerenciamento de ativos são os seguintes.
+
+| Formato de arquivo | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+|---|---|
+| DOC | ✓ |
+| DOCX | ✓ |
+| ODT | ✓ |
+| PDF | ✓ |
+| HTML | ✓ |
+| RTF | ✓ |
+| TXT | ✓ |
+| XLS | ✓ |
+| XLSX | ✓ |
+| PPT | ✓ |
+| PPTX | ✓ |
 
 >[!MORELIKETHIS]
 >
