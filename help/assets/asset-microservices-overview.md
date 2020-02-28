@@ -3,7 +3,7 @@ title: Saiba como os microserviços de ativos podem processar seus ativos digita
 description: Processar seus ativos digitais usando microserviços de processamento de ativos escaláveis e nativos na nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
@@ -26,7 +26,7 @@ Os microserviços de ativos fornecem um processamento escalonável e resiliente 
 * Maior capacidade de resistência do processamento de ativos. Os possíveis problemas ao lidar com arquivos atípicos, como arquivos corrompidos ou arquivos extremamente grandes, não afetam mais o desempenho da implantação.
 * Configuração simplificada do processamento de ativos para os administradores.
 * A configuração de processamento de ativos é gerenciada e mantida pela Adobe para fornecer a melhor configuração conhecida para lidar com representações, metadados e extração de texto para vários tipos de arquivos
-* Os serviços nativos de processamento de arquivos da Adobe são usados onde for aplicável, fornecendo saída de alta fidelidade e manuseio eficiente de formatos proprietários da Adobe.
+* Os serviços nativos de processamento de arquivos da Adobe são usados onde for aplicável, fornecendo saída de alta fidelidade e manuseio [eficiente de formatos](file-format-support.md)proprietários da Adobe.
 * Capacidade de configurar o fluxo de trabalho de pós-processamento para adicionar ações e integrações específicas do usuário.
 
 Os microserviços de ativos ajudam a evitar a necessidade de ferramentas de renderização de terceiros (como o ImageMagick) e a simplificar a configuração do sistema, além de fornecer uma funcionalidade pronta para uso para tipos de arquivos comuns.
@@ -82,7 +82,7 @@ O Adobe Experience Manager pode ser configurado para acionar automaticamente os 
 
 >[!MORELIKETHIS]
 >
->* [Introdução ao uso dos microserviços de ativos](asset-microservices-configure-and-use.md)
+>* [Introdução ao uso dos microsserviços de ativos](asset-microservices-configure-and-use.md)
 >* [Formatos de arquivo não suportados](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Aplicativo de desktop do AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
