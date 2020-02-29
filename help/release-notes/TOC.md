@@ -1,7 +1,7 @@
 ---
 sub-product: Release Notes for AEM as a Cloud Service
 user-guide-title: Release Notes for AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a3c8d4eed20c21eddf1a4a46f8ad342427af804c
 
 ---
