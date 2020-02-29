@@ -3,12 +3,12 @@ title: Configurar e usar microserviços de ativos para processamento de ativos
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# Introdução ao uso dos microserviços de ativos {#get-started-using-asset-microservices}
+# Introdução ao uso dos microsserviços de ativos {#get-started-using-asset-microservices}
 
 <!--
 
@@ -99,7 +99,7 @@ Um valor vazio significa que o processamento de ativos assume a dimensão em pix
 
 Quando um ativo com um tipo MIME específico é processado, o tipo MIME é verificado pela primeira vez em relação ao valor de tipos MIME excluídos para a especificação de representação. Se corresponder a essa lista, essa representação específica não será gerada para o ativo (&quot;lista negra&quot;).
 
-Caso contrário, o tipo mime será verificado em relação ao tipo mime incluído e, se ele corresponder à lista, a representação será gerada (&quot;lista de permissões&quot;).
+Caso contrário, o tipo MIME será verificado em relação ao tipo MIME incluído e, se ele corresponder à lista, a representação será gerada (&quot;lista de permissões&quot;).
 
 #### Representação especial do FPO {#special-fpo-rendition}
 
@@ -114,7 +114,7 @@ Depois que mais perfis de processamento forem criados, eles precisarão ser apli
 Há duas maneiras de aplicar perfis de processamento às pastas:
 
 * Os administradores podem selecionar uma definição de perfil de processamento em **[!UICONTROL Ferramentas > Ativos > Perfis]** de processamento e usar a ação **[!UICONTROL Aplicar perfil às pastas]** . Ele abre um navegador de conteúdo que permite navegar para pastas específicas, selecioná-las e confirmar o aplicativo do perfil.
-* Os usuários podem selecionar uma pasta na interface do usuário Ativos, usar a ação **[!UICONTROL Propriedades]** para abrir a tela de propriedades da pasta, clicar na guia Perfis **[!UICONTROL de]** processamento e, na lista suspensa, selecionar o perfil de processamento correto para essa pasta. A escolha será salva na ação **[!UICONTROL Salvar e fechar]** .
+* Os usuários podem selecionar uma pasta na interface do usuário do Assets, usar a ação **[!UICONTROL Propriedades]** para abrir a tela de propriedades da pasta, clicar na guia **[!UICONTROL Perfis de processamento]** e, na lista suspensa, selecionar o perfil de processamento correto para essa pasta. A escolha será salva após a ação **[!UICONTROL Salvar e fechar]**.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Depois que um perfil de processamento é aplicado a uma pasta, todos os novos at
 >
 >Quando os ativos são carregados em uma pasta, o Experience Manager verifica as propriedades da pasta que os contém em busca de um perfil de processamento. Se nenhum for aplicado, ele sobe na árvore de pastas até encontrar um perfil de processamento aplicado e o usa para o ativo. Isso significa que um perfil de processamento aplicado a uma pasta funciona para a árvore inteira, mas pode ser substituído por outro perfil aplicado a uma subpasta.
 
-Os usuários podem verificar se o processamento realmente ocorreu abrindo um ativo recém-carregado para o qual o processamento foi concluído, abrindo a visualização de ativos e clicando na exibição **[!UICONTROL Representações]** do painel esquerdo. As representações específicas no perfil de processamento, para as quais o tipo de ativo específico corresponde às regras de inclusão de tipo MIME, devem estar visíveis e acessíveis.
+Os usuários podem verificar se o processamento realmente ocorreu abrindo um ativo recém-carregado para o qual o processamento foi concluído, abrindo a visualização de ativos e clicando na exibição **[!UICONTROL Representações]** do painel esquerdo. As representações específicas no perfil de processamento, para as quais o tipo de ativo específico corresponde às regras de inclusão do tipo MIME, devem estar visíveis e acessíveis.
 
 ![execuções adicionais](assets/renditions-additional-renditions.png)*Figura: Exemplo de duas execuções adicionais geradas por um perfil de processamento aplicado à pasta pai*
 
