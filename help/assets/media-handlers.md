@@ -3,7 +3,7 @@ title: Processar ativos usando manipuladores de mídia e fluxos de trabalho
 description: Saiba mais sobre vários manipuladores de mídia e como usá-los em fluxos de trabalho para executar tarefas em ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -116,7 +116,7 @@ O AEM tem alguns fluxos de trabalho padrão para processar ativos. Para exibi-lo
 
 Os fluxos de trabalho existentes podem ser estendidos e novos podem ser criados para processar ativos de acordo com requisitos específicos.
 
-O exemplo a seguir mostra como aprimorar o fluxo de trabalho de sincronização **** do AEM Assets para que os subativos sejam gerados para todos os ativos, exceto documentos PDF.
+O exemplo a seguir mostra como aprimorar o fluxo de trabalho de **[!UICONTROL Sincronização do AEM Assets]** para que os ativos secundários sejam gerados para todos os ativos, exceto documentos PDF.
 
 ### Desabilitando/habilitando um manipulador de mídia {#disabling-enabling-a-media-handler}
 
@@ -151,10 +151,10 @@ Este é um modelo de exemplo:
 
 A interface e as classes incluem:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo mime requer a implementação dessa interface. A interface contém métodos para importar e exportar documentos específicos, para criar miniaturas e extrair metadados.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo MIME requer a implementação dessa interface. A interface contém métodos para importar e exportar documentos específicos, para criar miniaturas e extrair metadados.
 * `com.day.cq.dam.core.AbstractAssetHandler` classe: Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` classe:
-   * Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum usada, além da funcionalidade usada comum para a extração de subativos.
+* classe `com.day.cq.dam.core.AbstractSubAssetHandler`:
+   * Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece a funcionalidade comum usada, além da funcionalidade usada frequentemente na extração de ativos secundários.
    * A melhor maneira de iniciar uma implementação é herdar de uma implementação abstrata fornecida que cuida da maioria das coisas e fornece um comportamento padrão razoável: a classe com.day.cq.dam.core.AbstractAssetHandler.
    * Essa classe já fornece um descritor de serviço abstrato. Portanto, se você herdar desta classe e usar o plug-in maven-sling-sling, certifique-se de definir o sinalizador de herança como verdadeiro.
 
@@ -162,7 +162,7 @@ A interface e as classes incluem:
 
 * `extractMetadata()`: este método extrai todos os metadados disponíveis.
 * `getThumbnailImage()`: esse método cria uma imagem em miniatura do ativo passado.
-* `getMimeTypes()`: esse método retorna os tipos MIME do ativo.
+* `getMimeTypes()`: este método retorna o(s) tipo(s) MIME do ativo.
 
 Este é um modelo de exemplo:
 
@@ -170,7 +170,7 @@ pacote my.own.stuff /&amp;ast;&amp;ast; &amp;ast; @scr.component hereit=&quot;tr
 
 A interface e as classes incluem:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo mime requer a implementação dessa interface. A interface contém métodos para importar e exportar documentos específicos, para criar miniaturas e extrair metadados.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo MIME requer a implementação dessa interface. A interface contém métodos para importar e exportar documentos específicos, para criar miniaturas e extrair metadados.
 * `com.day.cq.dam.core.AbstractAssetHandler` classe: Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` classe:Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum usada, além da funcionalidade usada comum para a extração de subativos.
 
@@ -421,7 +421,7 @@ Primeiro instale o ImageMagick no disco que hospeda o servidor AEM:
 
    Uma imagem virada é adicionada ao diretório.
 
-Em seguida, adicione a etapa do processo da linha de comando ao fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM:
+Em seguida, adicione a etapa do processo da linha de comando ao fluxo de trabalho **[!UICONTROL Atualizar ativo do DAM]**:
 
 1. Vá para o console **[!UICONTROL Fluxo de trabalho]** .
 1. Na guia **[!UICONTROL Modelos]** , edite o modelo **[!UICONTROL DAM Update Asset (Atualizar ativo]** DAM).
@@ -441,7 +441,7 @@ Para testar o fluxo de trabalho modificado, adicione um ativo ao `/content/dam`.
 
 #### Configurando a Etapa do Processo CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-Esta seção descreve como definir os Argumentos **do** Processo de **CommandLineProcess**.
+Esta seção descreve como definir os **Argumentos de processo** do **CommandLineProcess**.
 
 Os valores dos Argumentos **de** Processo devem ser separados por uma vírgula e não devem começar com um espaço em branco.
 
@@ -453,7 +453,7 @@ Os valores dos Argumentos **de** Processo devem ser separados por uma vírgula e
   </tr>
   <tr>
    <td> mime:&lt;mime-type&gt;</td>
-   <td><p>Argumento opcional. O processo é aplicado se o ativo tiver o mesmo tipo MIME que o argumento.</p> <p>Vários tipos MIME podem ser definidos.</p> </td>
+   <td><p>Argumento opcional. O processo é aplicado se o ativo tiver o mesmo tipo MIME do argumento.</p> <p>Vários tipos MIME podem ser definidos.</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;largura&gt;:&lt;altura&gt;</td>
@@ -461,7 +461,7 @@ Os valores dos Argumentos **de** Processo devem ser separados por uma vírgula e
   </tr>
   <tr>
    <td> cmd: &lt;comando&gt;</td>
-   <td><p>Define o comando que será executado. A sintaxe depende da ferramenta de linha de comando.</p> <p>Somente um comando pode ser definido.</p> <p>As variáveis a seguir podem ser usadas para criar o comando:<br/></p> <p><code>${filename}</code>: nome do arquivo de entrada, por exemplo, original.jpg<br/><code>${file}</code>: nome completo do caminho do arquivo de entrada, por exemplo, /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>: diretório do arquivo de entrada, por exemplo, /tmp/cqdam0816.tmp.<br/> <code>${basename}</code>: nome do arquivo de entrada sem sua extensão, por exemplo, original<br/> <code>${extension}</code>: extensão do arquivo de entrada, por exemplo jpg<br/></p></td>
+   <td><p>Define o comando que será executado. A sintaxe depende da ferramenta de linha de comando.</p> <p>Somente um comando pode ser definido.</p> <p>As variáveis a seguir podem ser usadas para criar o comando:<br/></p> <p><code>${filename}</code>: nome do arquivo de entrada, por exemplo, ‘original.jpg`<br/><code>${file}</code>: nome completo do caminho do arquivo de entrada, por exemplo, "/tmp/cqdam0816.tmp/original.jpg`<br/><code>${directory}</code>: diretório do arquivo de entrada, por exemplo "/tmp/cqdam0816.tmp".<br/> <code>${basename}</code>: nome do arquivo de entrada sem sua extensão, por exemplo, original<br/> <code>${extension}</code>: extensão do arquivo de entrada, por exemplo JPG<br/></p></td>
   </tr>
  </tbody>
 </table>
