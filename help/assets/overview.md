@@ -1,14 +1,14 @@
 ---
-title: Introdução aos ativos como um serviço em nuvem
+title: Introdução aos ativos as a Cloud Service
 description: Novidades do Assets como um serviço em nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# Introdução aos ativos como um serviço em nuvem {#assets-cloud-service-introduction}
+# Introdução ao Assets como Cloud Service {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -18,7 +18,7 @@ A assimilação simultânea de um grande número de ativos ou ativos complexos �
 
 As empresas precisam de suporte para uma grande variedade de formatos de arquivo e resoluções de conteúdo para casos de uso multidispositivos, geografia e multilíngues. Os requisitos de processamento e armazenamento de ativos exigem recursos e recursos que podem sobrecarregar uma solução tradicional. Por vezes, as limitações técnicas do processamento de ativos não produzem os resultados desejados e, noutras alturas, o custo do armazenamento constitui um entrave às margens de lucro.
 
-Para começar, entenda os [benefícios de uma oferta](#solution-benefits)nativa de nuvem. Verifique as [alterações notáveis no AEM como um serviço](/help/release-notes/aem-cloud-changes.md) em nuvem que também afetam os Ativos acompanharam as [alterações notáveis nos Ativos](/help/assets/assets-cloud-changes.md).
+Para começar, entenda os [benefícios de uma oferta](#solution-benefits)nativa de nuvem. Verifique as [alterações notáveis no AEM como um serviço](/help/release-notes/aem-cloud-changes.md) em nuvem que também afetam os ativos do Experience Manager acompanharam as [alterações notáveis nos ativos](/help/assets/assets-cloud-changes.md).
 
 Leia para saber os [detalhes dos novos recursos](#whats-new-assets) do Assets e os problemas [](/help/release-notes/known-issues.md)conhecidos. Veja uma lista de funcionalidades [](/help/release-notes/deprecated-removed-features.md) obsoletas ou removidas para saber o que foi removido nesta versão e veja esta [lista de recursos](/help/release-notes/known-issues.md#upcoming-assets-capabilities) futuros para saber o que está por vir no futuro próximo. Por fim, entenda os termos do AEM com a ajuda deste [glossário](/help/overview/terminology.md).
 
@@ -37,5 +37,5 @@ A seguir estão os principais benefícios dos Ativos como um serviço em nuvem. 
 
 Os novos recursos significativos são:
 
-* [Microserviços de ativos](/help/assets/asset-microservices-overview.md)
+* [Microsserviços de ativos](/help/assets/asset-microservices-overview.md)
 * [Métodos de upload de ativos](/help/assets/add-assets.md)
