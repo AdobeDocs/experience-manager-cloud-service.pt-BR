@@ -3,7 +3,7 @@ title: Referência dos esquemas de metadados
 description: 'Saiba mais sobre as convenções padrão para descrever metadados de ativos, incluindo Dublin Core, IPTC e outros esquemas de metadados. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
