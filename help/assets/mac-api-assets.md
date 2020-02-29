@@ -1,14 +1,14 @@
 ---
-title: API HTTP Assets
+title: API HTTP de ativos
 description: Saiba mais sobre a implementação, o modelo de dados e os recursos da API HTTP do Assets. Use a API HTTP Assets para executar várias tarefas em torno dos ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3db5a1d668ad88e340a1580900d222c370b8d3e8
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# API HTTP Assets {#assets-http-api}
+# API HTTP de ativos {#assets-http-api}
 
 ## Visão geral {#overview}
 
@@ -58,7 +58,7 @@ As pastas são como diretórios em sistemas de arquivos tradicionais. São cont�
 * `parent`: Link para a pasta pai
 * `thumbnail`: (Opcional) link para uma imagem em miniatura de pasta
 
-### Assets {#assets}
+### Ativos {#assets}
 
 No AEM, um ativo contém os seguintes elementos:
 
