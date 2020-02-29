@@ -3,7 +3,7 @@ title: Configurar restrições de upload de ativos
 description: Saiba como configurar os ativos Adobe Experience Manager (AEM) para restringir o tipo de ativos (arquivos) que os usuários podem carregar.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -17,9 +17,8 @@ Você pode configurar os ativos Adobe Experience Manager (AEM) para restringir o
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
-1. Para restringir usuários a carregarem arquivos de determinados tipos MIME apenas, desmarque a opção **[!UICONTROL Permitir todos os tipos MIME]** e especifique os tipos MIME permitidos nos campos MIMEs de ativos **[!UICONTROL permitidos (regex)]** usando expressões regulares.
+1. Para impedir que usuários façam upload de arquivos apenas de determinados tipos MIME, desmarque a opção **[!UICONTROL Permitir todos os tipos MIME]** e especifique os tipos MIME permitidos nos campos **[!UICONTROL MIMEs de ativos permitidos (regex)]** usando expressões regulares.
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
-1. Clique/toque em **[!UICONTROL Salvar]** para salvar as alterações. Se você especificar sequências de caracteres MIME para tipos MIME permitidos, a operação de upload falhará para qualquer ativo com tipo MIME que não corresponda às sequências de caracteres MIME configuradas nesses campos.
-
+1. Clique/toque em **[!UICONTROL Salvar]** para salvar as alterações. Se você especificar cadeias de caracteres MIME para os tipos MIME permitidos, a operação de upload falhará todos os ativos de tipo MIME que não correspondam às cadeias de caracteres MIME configuradas nesses campos.
