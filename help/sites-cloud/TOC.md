@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Sites {#sites}
 
-+ [AEM Sites como Cloud Service](/help/sites-cloud/home.md)
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [Alterações importantes para o AEM Sites no AEM Cloud Service](sites-cloud-changes.md)
 + Criação {#authoring}
    + Introdução {#getting-started}
@@ -68,6 +68,6 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Gerenciamento de públicos](authoring/personalization/audiences.md)
       + [Criação e gerenciamento de ofertas](authoring/personalization/offers.md)
       + [Noções sobre segmentação](authoring/personalization/segmentation.md)
-+ Integração ao AEM como Cloud Service {#integrations}
++ Integração ao AEM as a Cloud Service {#integrations}
    + [Integração ao Adobe Analytics](integrating/adobe-analytics.md)
    + [Integração com o Adobe Target](integrating/adobe-target.md)
