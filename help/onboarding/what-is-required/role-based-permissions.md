@@ -2,7 +2,7 @@
 title: Permissões baseadas em função
 description: Permissões baseadas em função
 translation-type: tm+mt
-source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
+source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
 
 ---
 
@@ -26,9 +26,7 @@ Cada uma das funções tem permissões específicas, tarefas pré-configuradas o
 | Atualizar ambiente | Atualize Ambientes Prod+Stage, Dev, Playground. | x | x |  |  |
 | Excluir ambiente | Exclua Ambientes sem produção, Desenvolvimento e Reprodução. | x | x |  |  |
 | Excluir ambiente | Excluir Prod+Stage Environment. |  |  |  |  |
-| Ambiente de hibernação | Ambientes Hibernate sem produção, Dev, Playground. | x | x |  |  |
 | Configuração do programa | Configurar programa (incluindo KPIs). | x |  |  |  |
-| Configuração do programa | Configurar Políticas de Escala (Geral: configurar o número máximo de níveis e a escala horizontal sob demanda: Aceitação). | x |  |  |  |
 | Configuração do programa | Confirmar acesso. |  | x |  | x |
 | Configuração de pipeline | Configure ou edite o pipeline. |  | x |  |  |
 | Execução do pipeline | Inicie o Pipeline. | x | x |  |  |
@@ -36,10 +34,7 @@ Cada uma das funções tem permissões específicas, tarefas pré-configuradas o
 | Execução do pipeline | Fornecer aprovação do GoLive. | x | x | x |  |
 | Execução do pipeline | Agendar implantação de produção. | x | x | x |  |
 | Execução do pipeline | Retomar Pipeline de Produção. |  |  |  |  |
-| Aceitação (ou não) para Provisionamento | Incluir no provisionamento horizontal sob demanda na tela de configuração do programa. Configure o máximo de segmentos P-D &#39;permitidos&#39; que podem ser dimensionados horizontalmente em ambientes PROD e não PROD. | x |  |  |  |
 | Gerenciar ambiente | Adicione o segmento Publicar-Dispatcher da tela Gerenciar ambiente. | x | x |  |  |  |
-| Atualização do produto | O AEM Update Card está visível e leva o usuário para o Assistente de atualização. | x | x | x | x |
-| Atualização do produto | O Assistente de atualização de produto pode ser ativado. | x | x |  |  |
 | Atualização de push | Inicie o pipeline de atualização de push. |  |  |  |  |
 | Gerar token de acesso pessoal | Gerar token de acesso pessoal. |  | x |  | x |
 
