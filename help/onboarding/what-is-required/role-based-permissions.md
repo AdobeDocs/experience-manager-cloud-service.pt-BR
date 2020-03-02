@@ -2,7 +2,7 @@
 title: Permissões baseadas em função
 description: Permissões baseadas em função
 translation-type: tm+mt
-source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
+source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
 
 ---
 
@@ -17,12 +17,8 @@ Cada uma das funções tem permissões específicas, tarefas pré-configuradas o
 
 | Permissão | Descrição | Proprietário da empresa | Gerenciador de implantação | Gerente do programa | Desenvolvedor |
 |--- |--- |--- |--- |--- |--- |
-| Criar inquilino | Criar um novo inquilino. |  |  |  |  |
-| Atualizar Locatário | Atualizar Locatário. |  |  |  |  |
 | Adicionar programa | Adicionar um novo programa. | x |  |  |  |
 | Criar ambiente | Crie Ambientes Prod+Stage, Dev, Playground. | x | x |  |  |
-| Configurar variáveis de ambiente | Configurar variáveis e segredos de ambiente. |  | x |  | x |
-| Adicionar ou remover nome de domínio personalizado, carregar ou atualizar certificado SSL | Adicionar / Remover Nome de Domínio Personalizado, Carregar / Atualizar Certificado SSL. | x | x |  |  |
 | Atualizar ambiente | Atualize Ambientes Prod+Stage, Dev, Playground. | x | x |  |  |
 | Excluir ambiente | Exclua Ambientes sem produção, Desenvolvimento e Reprodução. | x | x |  |  |
 | Excluir ambiente | Excluir Prod+Stage Environment. |  |  |  |  |
