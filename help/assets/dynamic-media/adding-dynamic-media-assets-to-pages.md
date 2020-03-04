@@ -24,7 +24,7 @@ Adicionar um componente de Mídia dinâmica, Mídia interativa, Mídia panorâmi
 **Adicionar um componente de Dynamic Media a uma página**
 
 1. No AEM, abra a página à qual você deseja adicionar o componente Mídia dinâmica.
-1. No painel esquerdo, toque no ícone **[!UICONTROL Componentes]** e filtre para Dynamic Media.
+1. No painel esquerdo, toque no ícone **[!UICONTROL Componentes]** e, em seguida, filtre para Dynamic Media.
 
    Se nenhum componente do Dynamic Media estiver disponível, será necessário ativar ou ativar os componentes do Dynamic Media. Consulte [Edição de modelos - Autores](/help/sites-cloud/authoring/features/templates.md) de modelos para obter mais informações.
 
@@ -93,7 +93,7 @@ O componente Dynamic Media é inteligente. Dependendo de você adicionar uma ima
 >* Cada instância usa o mesmo tipo de ativo.
 >
 >
-Observe que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente de Dynamic Media nessa página.
+Esteja ciente de que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente de Dynamic Media nessa página.
 >
 >Entretanto, é possível usar a mesma predefinição do visualizador para todos os componentes do Dynamic Media que usam ativos do mesmo tipo, na página.
 
@@ -220,7 +220,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 O componente Mídia interativa é para ativos que possuem interatividade em pontos de acesso ou mapas de imagem. Se você tiver uma imagem interativa, um vídeo interativo ou um banner de carrossel, use o componente **[!UICONTROL Mídia interativa]**.
 
-O componente de mídia interativa é inteligente. Dependendo de você adicionar uma imagem ou um vídeo, você terá várias opções. Além disso, o visualizador responde: o tamanho da tela muda automaticamente com base no tamanho da tela. Todos são visualizadores HTML5.
+O componente de Mídia interativa é inteligente. Dependendo de você adicionar uma imagem ou um vídeo, você terá várias opções. Além disso, o visualizador responde: o tamanho da tela muda automaticamente com base no tamanho da tela. Todos são visualizadores HTML5.
 
 >[!NOTE]
 >
@@ -267,7 +267,7 @@ Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos 
 >
 >Se sua página da Web tiver o seguinte:
 >
->* Várias instâncias do componente Mídia **** panorâmica sendo usado na mesma página.
+>* Várias instâncias do componente de Mídia **** panorâmica sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
 >
 >
