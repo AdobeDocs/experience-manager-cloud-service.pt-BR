@@ -2,7 +2,7 @@
 title: Permissões baseadas em função
 description: Permissões baseadas em função
 translation-type: tm+mt
-source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
+source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
 
 ---
 
@@ -32,5 +32,5 @@ Cada uma das funções tem permissões específicas, tarefas pré-configuradas o
 | Execução do pipeline | Retomar Pipeline de Produção. |  |  |  |  |
 | Gerenciar ambiente | Adicione o segmento Publicar-Dispatcher da tela Gerenciar ambiente. | x | x |  |  |  |
 | Atualização de push | Inicie o pipeline de atualização de push. |  |  |  |  |
-| Gerar token de acesso pessoal | Gerar token de acesso pessoal. |  | x |  | x |
+| Gerar token de acesso pessoal | Git de acesso. |  | x |  | x |
 
