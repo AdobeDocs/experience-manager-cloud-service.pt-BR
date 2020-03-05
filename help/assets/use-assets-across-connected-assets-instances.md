@@ -3,7 +3,7 @@ title: Usar ativos conectados para compartilhar ativos DAM no fluxo de trabalho 
 description: Use os ativos disponíveis em uma implantação remota dos ativos Adobe Experience Manager ao criar suas páginas da Web em outra implantação do Site do Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 64aab464c2d5de0c837ee465a088107a78ba9374
+source-git-commit: 188917fe677a88142c702b9637600db872853974
 
 ---
 
@@ -38,7 +38,7 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 Os autores podem pesquisar por imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao `Download` componente e as imagens podem ser adicionadas ao `Image` componente. Os autores também podem adicionar os ativos remotos em qualquer componente AEM personalizado que estende os componentes padrão `Download` ou `Image` . As listas de formatos suportados são:
 
 * **Formatos** de imagem: Os formatos de imagem suportados pelo componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Imagem são suportados. Imagens do Dynamic Media não são compatíveis.
-* **Formatos** de documento: Consulte Formatos [de documento compatíveis com os ativos](file-format-support.md#supported-document-formats)conectados.
+* **Formatos** de documento: Consulte Formatos [de documento compatíveis com os ativos](file-format-support.md#doc-formats)conectados.
 
 ### Users and groups involved {#users-and-groups-involved}
 
