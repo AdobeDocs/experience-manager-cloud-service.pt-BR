@@ -1,19 +1,45 @@
 ---
-title: Diretrizes de desenvolvimento do AEM como serviço de nuvem
+title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: 'A completar '
 translation-type: tm+mt
-source-git-commit: 13c0a670330532f574c2b38823b8a924c609e8e4
+source-git-commit: 9777dd5772ab443b5b3dabbc74ed0d362e52df60
 
 ---
 
 
-# Diretrizes de desenvolvimento do AEM como serviço de nuvem {#aem-as-a-cloud-service-development-guidelines}
+# Diretrizes de desenvolvimento do AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
+
+O código em execução no AEM como um serviço de nuvem deve estar ciente do fato de que ele está sempre em execução em um cluster. Isso significa que há sempre mais de uma instância em execução. O código deve ser resiliente, especialmente porque uma instância pode ser interrompida em qualquer momento.
+
+Durante a atualização do AEM como um serviço em nuvem, haverá instâncias com o código novo e antigo em execução em paralelo. Portanto, o código antigo não deve quebrar com o conteúdo criado pelo novo código e o novo código deve ser capaz de lidar com o conteúdo antigo.
+<!--
+
+>[!NOTE]
+> All of the best practices mentioned here hold true for on-premise deployments of AEM, if not stated otherwise. An instance can always stop due to various reasons. However, with Skyline it is more likely to happen therefore an instance stopping is the rule not an exception.
+
+-->
+
+Se houver a necessidade de identificar o mestre no cluster, a Apache Sling Discovery API poderá ser usada para detectá-lo.
+
+## Estado na memória {#state-in-memory}
+
+O estado não deve ser mantido na memória, mas persistido no repositório. Caso contrário, esse estado pode ser perdido se uma instância for interrompida.
+
+## Estado no sistema de arquivos {#state-on-the-filesystem}
+
+O sistema de arquivos da instância não deve ser usado no AEM como um serviço em nuvem. O disco é efêmero e será descartado quando as instâncias forem recicladas. A utilização limitada do sistema de arquivos para armazenamento temporário relacionado ao processamento de pedidos únicos é possível, mas não deve ser abusada para arquivos enormes. Isso ocorre porque pode ter um impacto negativo na cota de uso de recursos e ser executado em limitações de disco.
+
+Como exemplo, onde o uso do sistema de arquivos não é suportado, a camada de publicação deve garantir que todos os dados que precisam ser persistentes sejam enviados para um serviço externo para armazenamento de longo prazo.
+
+## Observação {#observation}
+
+Da mesma forma, com tudo o que está a acontecer de forma assíncrona, como atuar sobre eventos de observação, não se pode garantir que seja executado a nível local, pelo que tem de ser utilizado com cuidado. Isso é verdadeiro para eventos JCR e eventos de recursos Sling. No momento em que uma alteração ocorre, a instância pode ser retirada e substituída por uma instância diferente. Outras instâncias na topologia ativas no momento poderão reagir a esse evento. No entanto, neste caso, este não será um evento local e poderá mesmo não haver um líder ativo no caso de uma eleição de líder em curso quando o evento for lançado.
 
 ## Tarefas em Segundo Plano e Trabalhos de Longa Duração {#background-tasks-and-long-running-jobs}
 
 O código executado como tarefas em segundo plano deve supor que a instância em que está sendo executado pode ser desativada a qualquer momento. Portanto, o código deve ser resiliente e a maior parte das importações retomável. Isso significa que, se o código for executado novamente, ele não deverá começar do início novamente, mas sim perto de onde parou. Embora este não seja um novo requisito para esse tipo de código, no AEM como um serviço em nuvem é mais provável que ocorra uma interrupção de instância.
 
-Para minimizar os problemas, devem ser evitados trabalhos de longa duração, se possível, e eles devem ser retomados no mínimo. Para executar esses trabalhos, use os Trabalhos Sling, que têm uma garantia pelo menos uma vez e, portanto, se forem interrompidos, serão executados novamente o mais rápido possível. Mas eles provavelmente não deveriam começar do início novamente. Para agendar esses trabalhos, é melhor usar o programador [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) como a execução pelo menos uma vez novamente.
+Para minimizar os problemas, devem ser evitados trabalhos de longa duração, se possível, e eles devem ser retomados no mínimo. Para executar esses trabalhos, use os Trabalhos Sling, que têm uma garantia pelo menos uma vez e, portanto, se forem interrompidos, serão executados novamente o mais rápido possível. Mas eles provavelmente não deveriam começar do início de novo. Para agendar esses trabalhos, é melhor usar o programador de [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) como a execução pelo menos uma vez novamente.
 
 O Sling Commons Scheduler não deve ser usado para agendamento, pois a execução não pode ser garantida. É mais provável que seja agendada.
 
@@ -29,7 +55,29 @@ As alternativas que são conhecidas por funcionarem, mas que podem exigir que a 
 
 * [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) e/ou [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (fornecido pelo AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (não recomendado, pois está desatualizado e substituído pela versão 4.x)
-* [OK Http](OK Http (Não fornecido pelo AEM)) (Não fornecido pelo AEM)
+* [OK Http](https://square.github.io/okhttp/) (não fornecido pelo AEM)
+
+## Nenhuma personalização de interface clássica {#no-classic-ui-customizations}
+
+O AEM como um serviço em nuvem suporta apenas a interface de usuário para toque para código de cliente de terceiros. A interface clássica não está disponível para personalização.
+
+## Evitar binários nativos {#avoid-native-binaries}
+
+O código não poderá baixar binários em tempo de execução nem modificá-los. Por exemplo, ele não poderá desempacotar `jar` ou `tar` arquivos.
+
+## Nenhum vínculo de fluxo por meio do AEM como um serviço em nuvem {#no-streaming-binaries}
+
+Os binários devem ser acessados por meio do CDN, que disponibilizará binários fora dos principais serviços do AEM.
+
+Por exemplo, não use `asset.getOriginal().getStream()`, o que aciona o download de um binário no disco efêmero do serviço AEM.
+
+## Nenhum agente de replicação reverso {#no-reverse-replication-agents}
+
+A replicação reversa de Publicar para Autor não é compatível com o AEM como um serviço em nuvem. Se tal estratégia for necessária, você poderá usar um armazenamento de persistência externo que seja compartilhado entre o farm de instâncias de Publicação e, potencialmente, o cluster Autor.
+
+## Os agentes de replicação encaminhados podem precisar ser transferidos {#forward-replication-agents}
+
+O conteúdo é replicado de Autor para Publicar por meio de um mecanismo de sub-publicação. Não há suporte para agentes de replicação personalizados.
 
 ## Monitoramento e depuração {#monitoring-and-debugging}
 
@@ -44,19 +92,19 @@ As alternativas que são conhecidas por funcionarem, mas que podem exigir que a 
 
 Os despejos de processos em ambientes da Cloud são coletados continuamente, mas não podem ser baixados de uma forma de autoatendimento no momento. Entretanto, entre em contato com o suporte do AEM se os despejos por thread forem necessários para depurar um problema, especificando a janela de hora exata.
 
-### CRX/DE Lite e console do sistema {#crxde-lite-and-system-console}
+## CRX/DE Lite e console do sistema {#crxde-lite-and-system-console}
 
-## Desenvolvimento local {#local-development}
+### Desenvolvimento local {#local-development}
 
 Para o desenvolvimento local, os desenvolvedores têm acesso total ao CRXDE Lite (`/crx/de`) e ao console da Web do AEM (`/system/console`).
 
 Observe que no desenvolvimento local (usando o recurso de início rápido pronto para a nuvem), `/apps` e `/libs` pode ser gravado diretamente, o que é diferente dos ambientes da Cloud nos quais as pastas de nível superior são imutáveis.
 
-## AEM como ferramentas de desenvolvimento de serviços em nuvem {#aem-as-a-cloud-service-development-tools}
+### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
 Os clientes podem acessar a lista CRXDE no ambiente de desenvolvimento, mas não no estágio ou na produção. O repositório imutável (`/libs`, `/apps`) não pode ser gravado no tempo de execução, portanto, tentar fazer isso resultará em erros.
 
-Um conjunto de ferramentas para depurar o AEM como ambientes de desenvolvedor do Cloud Service está disponível no Developer Console para ambientes de desenvolvimento, estágio e produção. O url pode ser determinado ajustando os urls do autor ou do serviço de publicação da seguinte maneira:
+Um conjunto de ferramentas para depurar o AEM como ambientes de desenvolvedor do Cloud Service está disponível no Developer Console para ambientes de desenvolvimento, estágio e produção. O url pode ser determinado ajustando-se as urls do serviço Autor ou Publicação da seguinte maneira:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -82,10 +130,10 @@ Também útil para depuração, o console Desenvolvedor tem um link para a ferra
 
 ![Console de desenvolvedor 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-**Serviço de armazenamento temporário e produção do AEM**
+### Serviço de armazenamento temporário e produção do AEM {#aem-staging-and-production-service}
 
 Os clientes não terão acesso à ferramenta para desenvolvedores para ambientes de armazenamento temporário e produção.
 
-### Diagnóstico {#diagnostics}
+### Monitoramento de desempenho {#performance-monitoring}
 
-O console do sistema está disponível para ambientes dev. No entanto, os despejos de diagnóstico para armazenamento temporário e produção não estão disponíveis.
+A Adobe monitora o desempenho do aplicativo e toma medidas para resolver se a deterioração é observada. No momento, as métricas do aplicativo não podem ser observadas.
