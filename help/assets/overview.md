@@ -8,7 +8,7 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 ---
 
 
-# Introdução ao Assets como Cloud Service {#assets-cloud-service-introduction}
+# Introdução ao Assets as a Cloud Service {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
