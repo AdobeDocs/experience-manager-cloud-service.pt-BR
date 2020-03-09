@@ -1,7 +1,7 @@
 ---
 title: Sistema de estilos
 description: O Sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente, de modo que o autor de conteúdo possa selecioná-los ao editar o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -13,7 +13,7 @@ O Sistema de estilos permite ao autor do modelo definir classes de estilo na pol
 
 Isso elimina a necessidade de desenvolver um componente personalizado para cada estilo ou personalizar a caixa de diálogo do componente para permitir essa funcionalidade de estilo. Isso resulta em componentes mais reutilizáveis, que podem ser adaptados de forma rápida e fácil às necessidades dos autores de conteúdo, sem exigir uma implantação de back-end no AEM.
 
-## Caso de uso {#use-case}
+## Caso de uso   {#use-case}
 
 Os autores de modelos precisam ter a capacidade de configurar a forma como os componentes funcionam para os autores de conteúdo, bem como configurar algumas variações visuais alternativas de um componente.
 
@@ -32,10 +32,10 @@ O uso do sistema de estilos geralmente funciona da seguinte maneira.
 
 1. O web designer cria diferentes variações visuais de um componente.
 1. O desenvolvedor de HTML recebe a saída dos componentes em HTML e as variações visuais desejadas para implementar.
-1. O desenvolvedor HTML define as classes CSS que correspondem a cada variação visual e que devem ser inseridas no elemento que envolve os componentes.
-1. O desenvolvedor de HTML implementa o código CSS correspondente (e opcionalmente o código JS) para cada uma das variações visuais para que elas pareçam definidas.
+1. O desenvolvedor de HTML define as classes CSS que correspondem a cada variação visual e que devem ser inseridas no elemento que envolve os componentes.
+1. O desenvolvedor de HTML implementa o código CSS correspondente (e, opcionalmente, o código JS) para cada uma das variações visuais, de modo a serem exibidas conforme a definição.
 1. O desenvolvedor do AEM coloca o CSS fornecido (e o JS opcional) em uma Biblioteca do cliente e a implanta. <!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
-1. O desenvolvedor ou autor do modelo do AEM configura os modelos de página e edita a política de cada componente estilizado, adicionando as classes CSS definidas, dando nomes amigáveis a cada estilo e indicando quais estilos podem ser combinados.
+1. O desenvolvedor do AEM ou o autor do modelo define os modelos de página e edita a política de cada componente estilizado, adicionando as classes CSS definidas, fornecendo nomes amigáveis a cada estilo e indicando quais estilos podem ser combinados.
 1. O autor da página do AEM pode escolher os estilos criados no editor de páginas no menu de estilo da barra de ferramentas do componente.
 
 Observe que somente as três últimas etapas são realmente realizadas no AEM. Isso significa que todo o desenvolvimento dos códigos CSS e Javascript necessários pode ser feito sem o AEM.
@@ -44,11 +44,11 @@ A aplicação real dos estilos requer apenas a implantação no AEM e a seleçã
 
 O diagrama a seguir ilustra a arquitetura do sistema de estilos.
 
-![Arquitetura do sistema de estilo](/help/sites-cloud/authoring/assets/style-system-architecture.png)
+![Arquitetura do sistema de estilos](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
-## Use {#use}
+## Uso {#use}
 
-Para demonstrar o recurso, estilos precisam ser criados para um componente. As seções a seguir [Como um autor](#as-a-content-author) de conteúdo e [Como um autor](#as-a-template-author) de modelo descrevem como usar a funcionalidade do sistema de estilo usando o sistema de estilo, assumindo que seus componentes já tenham estilos configurados.
+Para demonstrar o recurso, estilos precisam ser criados para um componente. As seções a seguir [Como um autor de conteúdo](#as-a-content-author) e [Como um autor de modelo](#as-a-template-author) descrevem como usar a funcionalidade do sistema de estilos, usando o sistema de estilos, considerando que os componentes já tenham estilos configurados.
 
 Se você desejar usar o sistema de estilos em seus próprios componentes, faça o seguinte:
 
@@ -56,28 +56,28 @@ Se você desejar usar o sistema de estilos em seus próprios componentes, faça 
 1. Configure as classes CSS que deseja disponibilizar para os autores de conteúdo, conforme descrito na seção [Como um autor de modelo](#as-a-template-author).
 1. Os autores de conteúdo podem usar os estilos conforme descrito na seção [Como um autor de conteúdo](#as-a-content-author).
 
-### Como um autor de conteúdo {#as-a-content-author}
+### Como um autor de conteúdo   {#as-a-content-author}
 
-1. Edite uma página que tenha um componente para o qual haja um estilo configurado.
-1. Selecione um componente com estilo configurado, como o componente **Lista** , como exemplo aqui.
+1. Edite uma página que tenha um componente com um estilo configurado.
+1. Selecione um componente com estilo configurado, como o componente **Lista**, como exemplo aqui.
 
    ![Estilos de criação](/help/sites-cloud/authoring/assets/style-system-author.png)
 
 1. Toque ou clique no botão **Estilos** na barra de ferramentas do componente **Lista** para abrir o menu de estilos e alterar a aparência do componente.
 
-   ![Criação de estilos selecionando](/help/sites-cloud/authoring/assets/style-system-author-select.png)
+   ![Criação de estilos por seleção](/help/sites-cloud/authoring/assets/style-system-author-select.png)
 
    >[!NOTE]
    >
-   >In this example, the **Layout** styles (**Block** and **Grid**) are mutually exclusive, while the **Display** options (**Image** or **Date**) can be combined. Isso pode [ser configurado no modelo como autor do modelo](#as-a-template-author).
+   >Neste exemplo, os estilos de **Layout** (**Bloco** e **Grade**) são mutuamente exclusivos, enquanto que as opções de **Exibição** (**Imagem** ou **Data**) podem ser combinadas. Isso pode [ser configurado no modelo como autor do modelo](#as-a-template-author).
 
-### Como um autor de modelo {#as-a-template-author}
+### Como um autor de modelo   {#as-a-template-author}
 
-1. Ao editar uma página de conteúdo para a qual deseja configurar estilos, edite o modelo da página por meio de Informações da **página -> Editar modelo**.
+1. Ao editar uma página de conteúdo para a qual deseja configurar estilos, edite o modelo da página por meio de **Informações da página -> Editar modelo**.
 
    ![Editar modelo](/help/sites-cloud/authoring/assets/style-system-template.png)
 
-1. Edite a política do componente para o qual deseja configurar os estilos, como o componente **Lista** , tocando ou clicando no botão **Política** do componente.
+1. Edite a política do componente para o qual deseja configurar os estilos, como o componente **Lista**, tocando ou clicando no botão **Política** do componente.
 
    ![Política do componente de modelo](/help/sites-cloud/authoring/assets/style-system-template-policy.png)
 
@@ -93,7 +93,7 @@ Se você desejar usar o sistema de estilos em seus próprios componentes, faça 
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as Client Libraries in order to work. <!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>As classes CSS (bem como qualquer Javascript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como Bibliotecas do cliente para funcionarem. <!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
 
 ## Configurar {#setup}
 
@@ -110,11 +110,11 @@ Para que um componente funcione com o sistema de estilos do AEM e mostre a guia 
 
 Com o componente configurado, os estilos configurados pelos autores da página serão inseridos automaticamente pelo AEM no elemento de decoração que o AEM adiciona ao redor de cada componente editável. O componente não precisa fazer mais nada para que isso ocorra.
 
-### Estilos com nomes de elemento {#styles-with-element-names}
+### Estilos com nomes de elemento   {#styles-with-element-names}
 
 Um desenvolvedor também pode configurar uma lista de nomes de elementos permitidos para os estilos no componente por meio da propriedade de matriz da sequência `cq:styleElements`. Na guia Estilos da política na caixa de diálogo de design, o autor do modelo também pode escolher um nome de elemento para definir cada estilo. Isso definirá o nome de elemento do wrapper.
 
-This property is set on the `cq:Component` node. Por exemplo:
+Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 
 * `/apps/wknd/components/content/contentfragment@cq:styleElements=[div,section,span]`
 
@@ -124,11 +124,11 @@ This property is set on the `cq:Component` node. Por exemplo:
 >
 >1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
->1. Finally, the component&#39;s `cq:htmlTag`/ `cq:tagName` will be considered as a fallback value.
+>1. Por fim, a `cq:tagName`/ `cq:htmlTag` do componente será considerada como um valor de fallback.
 >
 
 
 
 Essa capacidade de definir nomes de estilo é útil para componentes muito genéricos, como o Contêiner de layout ou o componente de Fragmento do conteúdo, para oferecer-lhes significado adicional.
 
-For instance it allows a Layout Container to be given semantics like `<main>`, `<aside>`, `<nav>`, etc.
+Por exemplo, permite que um Contêiner de layout receba uma semântica como `<main>`, `<aside>`, `<nav>`, etc.
