@@ -1,7 +1,7 @@
 ---
 title: Console de componentes
-description: O console Componentes permite navegar por todos os componentes definidos para a sua instância
-translation-type: tm+mt
+description: O console Componentes permite navegar por todos os componentes definidos para a instância
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,21 +9,21 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Console de componentes {#components-console}
 
-O console Componentes permite navegar por todos os componentes definidos para a sua instância e exibir as informações principais de cada componente.
+O console Componentes permite navegar em todos os componentes definidos para a sua instância e exibir as principais informações de cada componente.
 
-It can be accessed from **Tools ->** **General ->** **Components**. Como não há estrutura em árvore para componentes, somente a exibição de lista está disponível.
+Ele pode ser acessado em **Ferramentas ->** **Geral ->** **Componentes**. Como não há uma estrutura de árvore para componentes, somente a visualização de lista está disponível.
 
 ![O console Componentes](/help/sites-cloud/authoring/assets/components-console.png)
 
 >[!NOTE]
 >
->O console Componentes mostra todos os componentes no sistema. O [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) mostra componentes que estão disponíveis para autores e oculta todos os grupos de componentes que começam com um ponto final ( `.`).
+>O console Componentes mostra todos os componentes do sistema. O [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) mostra componentes que estão disponíveis para autores e oculta todos os grupos de componentes que começam com um ponto final ( `.`).
 
 ## Pesquisar {#search-field}
 
 Com o ícone **Apenas conteúdo** (na parte superior esquerda), você pode abrir o painel **Pesquisar** para pesquisar e/ou filtrar os componentes: 
 
-![Como pesquisar no console Componentes](/help/sites-cloud/authoring/assets/components-console-search.png)
+![Pesquisa no console Componentes](/help/sites-cloud/authoring/assets/components-console-search.png)
 
 ### Detalhes do componente {#component-details}
 
@@ -42,11 +42,11 @@ Para exibir detalhes sobre um componente específico, toque/clique no recurso de
       * Clicar no Supertipo do recurso levará você até esse componente.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Como `/apps` não pode ser editado no tempo de execução, o console Componentes fica somente leitura.
 
 * **Políticas**
 
-   ![Políticas do console de componentes](/help/sites-cloud/authoring/assets/components-console-policies.png)
+   ![Políticas do console Componentes](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **Uso em tempo real**
 
