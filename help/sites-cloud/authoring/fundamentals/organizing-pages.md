@@ -1,7 +1,7 @@
 ---
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,11 +9,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Criar e organizar páginas {#creating-and-organizing-pages}
 
-This document describes how to create and manage pages with Adobe Experience Manager Cloud Service so that you can then [create content](/help/sites-cloud/authoring/fundamentals/editing-content.md) on those pages.
+Este documento descreve como criar e gerenciar páginas com o Adobe Experience Manager Cloud Service para depois [criar o conteúdo](/help/sites-cloud/authoring/fundamentals/editing-content.md) nessas páginas.
 
 >[!NOTE]
 >
->Sua conta precisa dos direitos de acesso apropriados] e permissões para executar ações em páginas como criar, copiar, mover, editar e excluir.
+>Sua conta precisa de direitos de acesso apropriados e permissões para realizar ações nas páginas, como criar, copiar, mover, editar, excluir.
 >
 >Caso encontre algum problema, sugerimos que você entre em contato com o administrador do sistema.
 
@@ -34,9 +34,9 @@ Como um autor, você precisará organizar o seu site dentro do AEM. Isto implica
 
 Você também pode usar [pastas](#creating-a-new-folder) para ajudar a organizar o seu conteúdo.
 
-A estrutura de um site pode ser considerada como uma árvore que armazena suas páginas de conteúdo. Os nomes dessas páginas de conteúdo são usados para formar os URLs, enquanto os títulos são exibidos quando o conteúdo da página é exibido.
+A estrutura de um site pode ser considerada como uma árvore que armazena suas páginas de conteúdo. Os nomes dessas páginas de conteúdo são usadas para formar os URLs, ao passo que os títulos são mostrados quando o conteúdo da página é visualizado.
 
-A seguir, é mostrado um exemplo do site Tutorial [](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) WKND, onde um artigo sobre parques de skate ( `la-skateparks`) é acessado:
+O exemplo a seguir mostra o site [Tutorial WKND](https://docs.adobe.com/content/help/br/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), onde um artigo sobre skateparks ( `la-skateparks`) é acessado:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -57,13 +57,13 @@ A seguir, é mostrado um exemplo do site Tutorial [](https://docs.adobe.com/cont
    /...
 ```
 
-This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) and perform actions on the pages. Você também pode criar novos sites e [páginas](#creating-a-new-page).
+Esta estrutura pode ser visualizada do console **Sites**, onde é possível [navegar através das páginas do seu site](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e executar ações nas páginas. Você também pode criar novos sites e [páginas](#creating-a-new-page).
 
-De qualquer ponto, você pode visualizar o ramo ascendente da navegação estrutural na barra do cabeçalho:
+De qualquer ponto, você pode visualizar a ramificação ascendente da navegação estrutural na barra do cabeçalho:
 
 ![Uso de navegações estruturais para navegar](/help/sites-cloud/authoring/assets/organizing-breadcrumbs.png)
 
-### Page Naming Conventions {#page-naming-conventions}
+### Convenções de nomenclatura da página {#page-naming-conventions}
 
 Ao criar uma nova página, existem dois campos principais:
 
@@ -86,17 +86,17 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 
 >[!TIP]
 >
->Ao definir um nome de página, um princípio básico é manter o nome da página curto, mas tão expressivo e memorável quanto possível para facilitar a compreensão do leitor. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.
+>Ao definir um nome de página, um princípio básico é manter o nome da página curto, mas tão expressivo e memorável quanto possível para facilitar a compreensão do leitor. Consulte o [guia de estilo W3C](https://www.w3.org/Provider/Style/TITLE.html) no elemento `title`para obter mais informações.
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs de até um determinado comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-When creating a new page, AEM will validate the page name according to the conventions imposed by AEM and the JCR. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+Ao criar uma nova página, o AEM validará o nome da página de acordo com as convenções impostas pelo AEM e JCR. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
 
 Os caracteres mínimos permitidos são:
 
-* `a` through `z`
-* `A` through `Z`
-* `0` through `9`
+* `a` a `z`
+* `A` a `Z`
+* `0` a `9`
 * `_` (sublinhado)
 * `-` (hífen/sinal de menos)
 
@@ -104,13 +104,13 @@ Detalhes completos sobre todos os caracteres permitidos podem ser encontrados na
 
 >[!NOTE]
 >
->Os nomes das páginas são limitados a 150 caracteres.
+>Os nomes de página são limitados a 150 caracteres.
 
 #### Título {#title}
 
 Caso forneça apenas um **Título** de página ao criar uma nova página, o AEM vai derivar o **Nome** de página desta cadeia de caracteres e validá-lo de acordo com as convenções impostas pelo AEM e JCR. <!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
 
-A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters substituted. Por exemplo:
+Um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
 | Título | Nome derivado |
 |---|---|
@@ -119,7 +119,7 @@ A **Title** field containing invalid characters will be accepted, but the name d
 
 #### Nome {#name}
 
-Quando você fornecer um **Nome** de página ao criar uma nova página, o AEM vai  validar o nome de acordo com as convenções impostas pelo AEM e JCR. Não é possível enviar caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo será realçado. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+Quando você fornecer um **Nome** de página ao criar uma nova página, o AEM vai validar o nome de acordo com as convenções impostas pelo AEM e JCR. Não é possível enviar caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é realçado. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
 
 ![Exemplo de inserção de um nome de página inválido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -152,7 +152,7 @@ O AEM vem com vários modelos predefinidos. Os modelos disponíveis dependem do 
 
 ### Componentes {#components}
 
-Os componentes são os elementos fornecidos pelo AEM, desse modo, é possível adicionar tipos específicos de conteúdo. O AEM vem com diversos componentes prontos para uso que fornecem funcionalidade abrangente. Eles incluem:
+Os componentes são os elementos fornecidos pelo AEM, desse modo, é possível adicionar tipos específicos de conteúdo. O AEM vem com vários componentes prontos para uso que fornecem funcionalidade abrangente. Esses componentes incluem:
 
 * Texto
 * Imagem
@@ -172,20 +172,20 @@ Depois de criar e abrir uma página, é possível[ adicionar conteúdo usando os
 
 A menos que todas as páginas tenham sido criadas antecipadamente para você, é necessário criar uma página antes de começar a criar o conteúdo:
 
-1. Open the Sites console (for example, `https://<host>:<port>/sites.html/content`.
+1. Abra o console Sites (por exemplo, `https://<host>:<port>/sites.html/content`.
 1. Navegue até o local onde deseja criar a nova página.
 1. Abra o seletor suspenso usando **Criar** na barra de ferramentas e, em seguida, selecione **Página** na lista:
 
    ![Criação de uma página](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
-1. A partir da primeira etapa do assistente, você pode:
+1. A partir do primeiro estágio do assistente, você pode:
 
    * Selecionar o modelo que deseja usar para criar a nova página, em seguida, clicar/tocar em **Próximo** para prosseguir.
 
    * **Cancelar** para suspender o processo.
-   ![Selecionar um modelo para uma nova página](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
+   ![Seleção de um modelo para uma nova página](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
-1. A partir da última etapa do assistente, você pode:
+1. A partir do último estágio do assistente, você pode:
 
    * Usar as três guias para inserir as [propriedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) que deseja atribuir à nova página, em seguida, clicar/tocar em **Criar** para realmente criar a página.
 
@@ -198,7 +198,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
    * **Nome**:
 
       * Usado para gerar o URI. Se não for especificado, o nome é derivado do título.
-      * Se você fornecer um **Nome** de página ao criar uma nova página, o AEM vai  validar o nome de acordo com as convenções impostas pelo AEM e JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+      * Se você fornecer um **Nome** de página ao criar uma nova página, o AEM vai validar o nome de acordo com as convenções impostas pelo AEM e JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * **Não é possível enviar caracteres inválidos** no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo será destacado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
    >[!TIP]
    >
@@ -214,7 +214,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
 
    >[!NOTE]
    >
-   >Caso crie uma página usando um nome que já existe no local, o sistema vai gerar automaticamente uma variação do nome, ao anexar um número. For example if `beach` already exists a new page will become `beach1`.
+   >Caso crie uma página usando um nome que já existe no local, o sistema vai gerar automaticamente uma variação do nome, ao anexar um número. Por exemplo, se `beach` já existir, uma nova página se tornará `beach1`.
 
 1. Caso volte ao console, você verá em sua nova página:
 
@@ -222,11 +222,11 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
 
 >[!CAUTION]
 >
->Once a page has been created its template cannot be changed - unless you [create a launch with a new template](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), though this will lose any existing content.
+>Assim que uma página tiver sido criada, seu modelo não poderá ser alterado, a menos que você [crie um lançamento com um novo modelo; ](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template)porém, o conteúdo existente será perdido.
 
 ### Abrir uma página para edição {#opening-a-page-for-editing}
 
-Depois de criar uma página ou navegar até uma página existente (no console), você pode abri-la para edição:
+Após criar uma página ou navegar para uma página existente (no console), você pode abri-la para edição:
 
 1. Abra o console **Sites**.
 1. Navegue até que você encontre a página que deseja editar.
@@ -234,7 +234,7 @@ Depois de criar uma página ou navegar até uma página existente (no console), 
 
    * [Ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e a barra de ferramentas
-   And then select the **Edit** icon:
+   E, em seguida, selecione o ícone **Editar**:
 
    ![Botão Editar](/help/sites-cloud/authoring/assets/edit.png)
 
@@ -244,9 +244,9 @@ Depois de criar uma página ou navegar até uma página existente (no console), 
 >
 >Navegar para outras páginas do editor de páginas só é possível no modo de visualização, pois os links não estão ativos no modo de Edição...
 
-### Copiar e colar uma página {#copying-and-pasting-a-page}
+### Copiar e colar uma página   {#copying-and-pasting-a-page}
 
-É possível copiar uma página e todas as suas subpáginas para um novo local:
+É possível copiar uma página e todas as respectivas subpáginas para um novo site:
 
 1. No console **Sites**, navegue até que você encontre a página que deseja copiar.
 1. Selecione sua página usando:
@@ -266,11 +266,11 @@ Depois de criar uma página ou navegar até uma página existente (no console), 
 
    ![Botão Colar](/help/sites-cloud/authoring/assets/paste.png)
 
-   Uma cópia da página original e qualquer subpágina será criada neste local.
+   Uma cópia da página original e suas respectivas subpáginas será criada neste local.
 
    >[!NOTE]
    >
-   >Se você copiar a página para um local onde uma página com o mesmo nome que a original já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir uma nova página com o nome `beach` se tornará `beach1`.
+   >Se você copiar a página para um local onde uma página com o mesmo nome que a original já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` se tornará `beach1`.
 
 ### Mover ou renomear uma página {#moving-or-renaming-a-page}
 
@@ -293,7 +293,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
    Isto abrirá o assistente de página para movimento.
 
-1. Na etapa **Renomear** do assistente, é possível:
+1. No estágio **Renomear** do assistente, é possível:
 
    * Especifique o nome que deseja para a página após movê-la, em seguida, clique/toque em **Próximo** para prosseguir.
    * **Cancelar** para suspender o processo.
@@ -303,9 +303,9 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
    >[!NOTE]
    >
-   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir uma nova página com o nome `beach` se tornará `beach1`.
+   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` se tornará `beach1`.
 
-1. Na etapa **Selecionar destino** do assistente, é possível:
+1. No estágio **Selecionar destino** do assistente, é possível:
 
    * Use a [exibição de coluna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) para navegar até o novo local da página:
 
@@ -316,7 +316,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
    >
    >Por padrão, o pai da página que você está movendo/renomeando será selecionado como o destino.
 
-   ![Selecionar destino de movimentação de página](/help/sites-cloud/authoring/assets/move-page-destination.png)
+   ![Selecionar destino de movimentação da página](/help/sites-cloud/authoring/assets/move-page-destination.png)
 
    >[!NOTE]
    >
@@ -330,13 +330,13 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
    >
    >Se a página não estiver vinculada nem referenciada, essa etapa não estará disponível.
 
-   ![Publicar novamente página ao mover](/help/sites-cloud/authoring/assets/move-page-republish.png)
+   ![Republicar página ao mover](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
 1. Selecionar **Mover** concluirá o processo e moverá/renomeará sua página, conforme apropriado.
 
 >[!NOTE]
 >
->Se a página já tiver sido publicada, movê-la automaticamente removerá a publicação. By default, it will be republished when the move is complete, but this can changed by un-checking the **Republish** field in the **Adjust/Republish** step.
+>Se a página já tiver sido publicada, movê-la automaticamente removerá a publicação. Por padrão, ela será publicadas novamente quando o movimento for concluído, mas isso pode ser alterado ao desmarcar o campo **Republicar** na etapa **Ajustar/Republicar**.
 
 >[!NOTE]
 >
@@ -348,7 +348,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
 >[!NOTE]
 >
->Uma página só pode ser movida para um local onde o modelo no qual a página se baseia está permitido. Consulte Disponibilidade do modelo para obter mais informações.
+>Uma página só pode ser movida para um local onde o modelo no qual a página se baseia está permitido. Consulte Disponibilidade de modelo para obter mais informações.
 <!--
 >A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
 -->
@@ -374,15 +374,16 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
 >[!NOTE]
 >
->Se uma página já estiver publicada, ela será automaticamente despublicada antes da exclusão.
+>Se uma página já estiver publicada, sua publicação será automaticamente removida antes da exclusão.
 
 ### Bloquear uma página {#locking-a-page}
 
 Você pode [bloquear/desbloquear uma página](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) em um console ou ao editar uma página individual. Informações sobre se uma página está bloqueada são exibidas em ambos os locais.
 
-![Botão](/help/sites-cloud/authoring/assets/lock.png)Bloquear botão![Desbloquear](/help/sites-cloud/authoring/assets/unlock.png)
+![Botão Bloquear](/help/sites-cloud/authoring/assets/lock.png)
+![Botão Desbloquear](/help/sites-cloud/authoring/assets/unlock.png)
 
-### Creating a New Folder {#creating-a-new-folder}
+### Criação de uma nova pasta {#creating-a-new-folder}
 
 Você pode criar pastas para ajudar a organizar seus arquivos e páginas.
 
@@ -401,6 +402,6 @@ Você pode criar pastas para ajudar a organizar seus arquivos e páginas.
 >[!CAUTION]
 >
 >* Pastas só podem ser criadas diretamente em **Sites** ou em outras pastas. Eles não podem ser criadas em uma página.
->* As ações padrão de mover, copiar, colar, excluir, publicar, cancelar a publicação e exibir/editar propriedades podem ser executadas em uma pasta.
+>* As ações padrão de mover, copiar, colar, excluir, publicar, cancelar a publicação e exibir/editar propriedades podem ser executadas em uma pasta.
 >* As pastas não estão disponíveis para seleção em uma live copy.
 
