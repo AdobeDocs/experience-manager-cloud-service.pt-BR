@@ -1,15 +1,15 @@
 ---
 title: Criação de uma página para dispositivos móveis
 description: Ao criar em dispositivos móveis, você pode alternar entre vários emuladores para ver o que o usuário final vê
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Criação de uma página para dispositivos móveis {#authoring-a-page-for-mobile-devices}
+# Criação de uma página para dispositivos móveis   {#authoring-a-page-for-mobile-devices}
 
-As páginas do Adobe Experience Manager são baseadas em um layout responsivo. O layout responsivo adapta seu conteúdo para ajustá-lo automaticamente ao dispositivo de destino, eliminando a necessidade de criar conteúdo para dispositivos específicos.
+As páginas do Adobe Experience Manager são baseadas em um layout responsivo. O layout responsivo adapta o conteúdo para ajustá-lo automaticamente ao dispositivo de destino, eliminando a necessidade de criar conteúdo para dispositivos específicos.
 
 Ao criar uma página para dispositivos móveis, a página é exibida de uma maneira que emula o dispositivo móvel. Ao criar a página, você pode alternar entre vários emuladores para ver o que o usuário final vê ao acessar a página.
 
@@ -17,9 +17,9 @@ Os dispositivos são agrupados nas categorias Recurso, Inteligente e Toque, de a
 
 >[!NOTE]
 >
->Para criar um site móvel com base em um site padrão existente, crie uma live copy do site padrão. Consulte Criação de uma Live Copy para diferentes canais.
+>Para criar um site móvel com base em um site padrão existente, crie uma live copy do site padrão. Consulte Criação de uma live copy para diferentes canais.
 >
->Os desenvolvedores do AEM podem criar novos grupos de dispositivos. Consulte Criação de filtros de grupo de dispositivos.
+>Os desenvolvedores do AEM podem criar novos grupos de dispositivos. Consulte Criação de filtros de grupos de dispositivos.
 <!--
 >To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
 >
@@ -28,14 +28,14 @@ Os dispositivos são agrupados nas categorias Recurso, Inteligente e Toque, de a
 
 Use o procedimento a seguir para criar uma página para dispositivos móveis:
 
-1. From global navigation open the **Sites** console.
+1. Na navegação global, abra o console **Sites**.
 1. Edite uma página de conteúdo.
-1. Switch to the desired emulator by clicking the **Emulator** icon at the top of the page.
+1. Alterne para o emulador desejado, clicando no ícone de **Emulador** na parte superior da página.
 
-   ![Ícone Emulador](/help/sites-cloud/authoring/assets/emulator.png)
+   ![Ícone de Emulador](/help/sites-cloud/authoring/assets/emulator.png)
 
-1. Arraste e solte componentes do navegador de componentes ou do navegador de ativos na página.
-1. [Modifique o layout](/help/sites-cloud/authoring/features/responsive-layout.md) responsivo da página e seus componentes com base no dispositivo selecionado.
+1. Arraste e solte os componentes do navegador de componentes ou do navegador de ativos na página.
+1. [Modifique o layout responsivo](/help/sites-cloud/authoring/features/responsive-layout.md) da página e seus componentes com base no dispositivo selecionado.
 
 A página será semelhante ao seguinte:
 
