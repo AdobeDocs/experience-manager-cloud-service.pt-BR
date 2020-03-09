@@ -1,13 +1,13 @@
 ---
 title: Pesquisar
 description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Pesquisar {#search-feature}
+# Pesquisar   {#search-feature}
 
 O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteúdo, dependendo do tipo de recurso.
 
@@ -17,15 +17,15 @@ A pesquisa está disponível na barra de ferramentas superior:
 
 ![Botão Pesquisar](/help/sites-cloud/authoring/assets/search-button.png)
 
-Com o trilho de pesquisa, você pode:
+Com o painel de pesquisa, você pode:
 
-* Procurar uma palavra-chave, caminho ou tag específicos
+* Pesquise por uma palavra-chave, um caminho ou uma tag específica
 * Filtre de acordo com os critérios específicos dos recursos, como datas modificadas, status da página, tamanho do arquivo, etc.
 * Defina e use uma [pesquisa salva](#saved-searches) - com base nos critérios acima
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>A pesquisa também pode ser invocada usando a tecla de atalho `/` (barra) sempre que o painel de pesquisa estiver visível.
 
 ## Pesquisar e filtrar {#search-and-filter}
 
@@ -50,19 +50,19 @@ Para pesquisar e filtrar os recursos:
 
    ![Botão Painel](/help/sites-cloud/authoring/assets/rail-button.png)
 
-   De acordo com o tipo de recurso, a pesquisa mostrará uma seleção predefinida de critérios de pesquisa/filtro.
+   De acordo com o tipo de recurso, a Pesquisa mostrará uma seleção predefinida de critérios de pesquisa/filtro.
 
    O painel lateral permite selecionar:
 
    * Pesquisas salvas
    * Diretório de pesquisa
    * Tags
-   * Critérios de pesquisa, por exemplo Datas modificadas, Status de publicação, Status do Live Copy
+   * Critérios de pesquisa, por exemplo, datas modificadas, status de publicação, status da Live Copy.
    >[!NOTE]
    >
    >O critério de pesquisa pode variar:
    >
-   >* Dependendo do tipo de recurso selecionado; por exemplo, os critérios de Assets e Communities são compreensivelmente especializados.
+   >* Dependendo do tipo de recurso selecionado; por exemplo, os critérios de Ativos e comunidades são compreensivelmente especializados.
    >* Sua instância, como os Formulários de pesquisa, pode ser personalizada (adequada ao local no AEM).
 
 <!--
@@ -81,17 +81,17 @@ Para pesquisar e filtrar os recursos:
 >
 >Quando você seleciona um item na página de resultados da pesquisa e retorna à página de pesquisa após usar o botão Voltar do navegador, os critérios de pesquisa permanecem.
 
-## Saved Searches {#saved-searches}
+## Pesquisas salvas {#saved-searches}
 
-Além de pesquisar por uma grande variedade de aspectos, também é possível salvar uma configuração de pesquisa específica para recuperar e usar em uma etapa posterior:
+Além de pesquisar por uma grande variedade de aspectos, também é possível salvar uma configuração de pesquisa específica para recuperar e usar em um estágio posterior:
 
 1. Defina o seu critério de pesquisa e selecione **Salvar**.
 
-   ![Salvar uma pesquisa](/help/sites-cloud/authoring/assets/search-side-panel.png)
+   ![Como salvar uma pesquisa](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
 1. Atribua um nome, em seguida, use **Salvar** para confirmar:
 
-   ![Salvar uma pesquisa com um nome](/help/sites-cloud/authoring/assets/search-save-name.png)
+   ![Como salvar uma pesquisa com um nome](/help/sites-cloud/authoring/assets/search-save-name.png)
 
 1. Sua pesquisa salva estará disponível no seletor da próxima vez que você acessar o painel de pesquisa:
 
@@ -104,4 +104,4 @@ Além de pesquisar por uma grande variedade de aspectos, também é possível sa
 
 Para modificar uma pesquisa salva, selecione-a e clique em **Editar pesquisa alva**, na parte inferior do painel de pesquisa.
 
-![Modificando uma pesquisa salva](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
+![Modificação de uma pesquisa salva](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
