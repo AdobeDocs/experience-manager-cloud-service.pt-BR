@@ -1,7 +1,7 @@
 ---
 title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Manuseio básico {#basic-handling}
 
-Este documento foi projetado para fornecer uma visão geral da manipulação básica ao usar o ambiente de autor do AEM. Usa o console **Sites** como base.
+Este documento foi criado para apresentar uma visão geral do manuseio básico ao usar um ambiente de criação do AEM. Usa o console **Sites** como base.
 
 >[!NOTE]
 >
@@ -19,60 +19,60 @@ Este documento foi projetado para fornecer uma visão geral da manipulação bá
 
 ## Uma interface de usuário habilitada para toque {#a-touch-enabled-ui}
 
-A interface do usuário do AEM está ativada para toque. Uma interface habilitada para toque permite que você use toques para interagir com o software por meio de gestos, como tocar, tocar e segurar e deslizar o dedo. Como a interface do usuário do AEM está habilitada para toque, você pode usar os gestos de toque em seus dispositivos de toque, como seu celular ou tablet. No entanto, as ações do mouse em um dispositivo de desktop tradicional também estão disponíveis, o que proporciona flexibilidade na maneira como você escolhe criar seu conteúdo.
+A interface do usuário do AEM é habilitada para toque. Uma interface habilitada para toque permite que você use toques para interagir com o software por meio de gestos, como tocar, tocar e segurar e deslizar o dedo. Como a interface do usuário do AEM é habilitada para toque, você pode usar os gestos de toque nos dispositivos de toque, como celular ou tablet. No entanto, as ações do mouse em um dispositivo de desktop tradicional também estão disponíveis, o que proporciona flexibilidade na maneira como você escolhe criar conteúdo.
 
 ## Primeiras etapas {#first-steps}
 
 Logo após o logon, você acessa o [painel de Navegação](#navigation-panel). Selecionar uma das opções abre o respectivo console.
 
-![Painel de navegação](/help/sites-cloud/authoring/assets/navigation.png)
+![Painel Navegação](/help/sites-cloud/authoring/assets/navigation.png)
 
 Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console de **Sites.** Clique ou toque em **Sites** para começar.
 
-## Navegação do produto {#product-navigation}
+## Navegação do produto   {#product-navigation}
 
 Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação do produto é iniciado. Reserve alguns momentos para clicar ou tocar no conteúdo a fim de obter uma boa visão geral sobre a manipulação básica do AEM.
 
 ![Tutorial de navegação](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Clique ou toque em **Avançar** para avançar para a próxima página da visão geral. Click or tap **Close** or click or tap outside of the overview dialog to close.
+Clique ou toque em **Avançar** para avançar para a próxima página da visão geral. Clique ou toque em **Fechar** ou fora da caixa de diálogo de visão geral para fechar.
 
-The overview will restart the next time you access a console unless you either view all slides or check the option **Don&#39;t show this again**.
+A visão geral será reiniciada na próxima vez que você acessar um console a menos que visualize todos os slides ou marque a opção **Não mostrar esta mensagem novamente**.
 
 ## Navegação global {#global-navigation}
 
 É possível navegar entre os consoles usando o painel de navegação global. Ele é acionado como uma lista suspensa em tela cheia ao clicar ou tocar no link do Adobe Experience Manager na parte superior esquerda da tela.
 
-You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
+Você pode fechar o painel de navegação global clicando ou tocando em **Fechar** para retornar ao seu local anterior.
 
 ![Barra superior do painel Navegação](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
 A navegação global possui dois painéis, representados por ícones na margem esquerda da tela:
 
-* **[Navegação](#navigation-panel)**- Representado por uma bússola e o painel padrão ao fazer logon no AEM
+* **[Navegação](#navigation-panel)**- Representado por uma bússola   e o painel padrão ao fazer logon no AEM
 * **[Ferramentas](#tools-panel)**- Representado por um martelo
 
 As opções disponíveis nesses painéis estão descritas abaixo.
 
-### Painel Navegação {#navigation-panel}
+### Painel Navegação   {#navigation-panel}
 
 O painel de Navegação:
 
-![Painel de navegação](/help/sites-cloud/authoring/assets/navigation.png)
+![Painel Navegação](/help/sites-cloud/authoring/assets/navigation.png)
 
 Em Navegação, os consoles disponíveis são:
 
 | Console | Propósito |
 |---|---|
-| Projetos | O console Projetos fornece acesso direto aos projetos. [Os projetos são painéis](/help/sites-cloud/authoring/projects/overview.md) virtuais que podem ser usados para criar uma equipe. Você pode então dar a essa equipe acesso a recursos, fluxos de trabalho e tarefas, permitindo assim que as pessoas trabalhem em direção a um objetivo comum. |
-| Sites | The Sites consoles let you [create, view, and manage sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) running on your AEM instance. Por meio desse console, você pode criar, editar, copiar, mover e excluir páginas, iniciar fluxos de trabalho e publicar páginas. |
-| Fragmentos de experiência | An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences. |
-| Assets | O console Ativos permite importar e gerenciar ativos digitais, como imagens, vídeos, documentos e arquivos de áudio. These assets can then be used by any site running on the same AEM instance.<!--add some kind of assets link--> |
-| Personalização | This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.](/help/sites-cloud/authoring/personalization/overview.md) |
+| Projetos | O console Projetos concede acesso direto aos projetos. [Projetos são painéis virtuais](/help/sites-cloud/authoring/projects/overview.md) que podem ser usados para criar uma equipe. Você pode conceder a essa equipe acesso a recursos, fluxos de trabalho e tarefas, permitindo que as pessoas trabalhem por um objetivo comum. |
+| Sites | O console Sites permite [criar, exibir e gerenciar sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) em execução na sua instância do AEM. Por meio desse console, você pode criar, copiar, mover e excluir páginas, iniciar fluxos de trabalho e publicar páginas. |
+| Fragmentos de experiência | Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências. |
+| Ativos | O console Ativos permite importar e gerenciar ativos digitais como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por um site em execução na mesma instância do AEM.<!--add some kind of assets link--> |
+| Personalização | Esse console fornece uma estrutura de ferramentas para a [criação de conteúdo direcionado e a apresentação de experiências personalizadas.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## Painel Ferramentas {#tools-panel}
 
-No painel Ferramentas, há um painel lateral contendo um intervalo de categorias, que agrupa consoles de Ferramentas semelhantes. The Tools consoles provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+No painel Ferramentas, há um painel lateral que contém um intervalo de categorias que agrupa consoles de Ferramentas semelhantes. Os consoles Ferramentas fornecem acesso a uma série de ferramentas e consoles especializados que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Painel Ferramentas](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -84,7 +84,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * [Navegação global](#global-navigation)
 
-   Select the **Adobe Experience Manager** link to navigate between consoles.
+   Selecione o link do **Adobe Experience Manager** para navegar entre consoles.
 
    ![Navegação global](/help/sites-cloud/authoring/assets/global-navigation.png)
 
@@ -92,9 +92,9 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![Botão Pesquisar](/help/sites-cloud/authoring/assets/search-button.png)
 
-   You can also use the [shortcut key](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+   Você também pode usar a [tecla de atalho](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
 
-* [Soluções](https://www.adobe.com/experience-cloud.html)
+* [Soluções](https://www.adobe.com/br/experience-cloud.html)
 
    ![Botão Soluções](/help/sites-cloud/authoring/assets/solutions.png)
 
@@ -114,23 +114,23 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * [Seletor de painéis](#rail-selector)
 
-   ![Botão seletor do painel](/help/sites-cloud/authoring/assets/rail-selector.png)
+   ![Botão Seletor de painéis](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-   As opções apresentadas dependem do seu console atual. For example, in **Sites** you can select content only (the default), the timeline, references, or filter side panel.
+   As opções apresentadas dependem do seu console atual. Por exemplo, em **Sites**, é possível selecionar somente o conteúdo (o padrão), a linha do tempo, as referências ou o painel lateral de filtros.
 
-   ![Exemplo de seletor de painel](/help/sites-cloud/authoring/assets/rail-selector-example.png)
+   ![Exemplo de seletor de painéis](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
 * Navegações estruturais
 
    ![Navegação estrutural na barra de navegação](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-   Situadas no meio do painel e sempre mostrando a descrição do item atualmente selecionado, as navegações estruturais permitem que você navegue dentro de um console específico. In the **Sites** console, you can navigate through the levels of your website.
+   Situadas no meio do painel e sempre mostrando a descrição do item atualmente selecionado, as navegações estruturais permitem que você navegue dentro de um console específico. No console **Sites**, você pode navegar pelos níveis do seu site.
 
    Basta clicar no texto da navegação estrutural para exibir uma lista suspensa dos níveis da hierarquia do item atualmente selecionado. Clique em uma entrada para acessar esse local.
 
    ![Exemplo de navegação estrutural expandida](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
-* **Botão Criar**
+* Botão **Criar**
 
    ![Botão Criar](/help/sites-cloud/authoring/assets/create.png)
 
@@ -138,17 +138,17 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * [Exibições](#viewing-and-selecting-resources)
 
-   O ícone de exibição está na extrema direita da barra de ferramentas do AEM. Como também indica a exibição atual, ele muda. Por exemplo, no modo de exibição padrão, e **Exibição em coluna** ele aparece da seguinte forma:
+   O ícone de exibição está na extrema direita da barra de ferramentas do AEM. Como também indica a exibição atual, ele muda. Por exemplo, no modo de exibição padrão, e **Exibição de coluna** ele aparece da seguinte forma:
 
    ![Botão Exibições](/help/sites-cloud/authoring/assets/views-button.png)
 
-   Você pode alternar entre a exibição de coluna, de cartão e de lista. Na exibição de lista, também mostra as configurações de exibição.
+   É possível alternar entre o modo de exibição de coluna, exibição de cartão e exibição de lista. No modo de exibição de lista também mostra as configurações de exibição.
 
    ![Exibições](/help/sites-cloud/authoring/assets/view.png)
 
    >[!NOTE]
    >
-   >A opção Configurações **de** exibição só está disponível no modo de Exibição **de** lista.
+   >A opção **Configurações de exibição** só está disponível no modo **Exibição de lista**.
 
 ## Acessar ajuda {#accessing-help}
 
@@ -158,7 +158,7 @@ Há vários recursos de ajuda disponíveis:
 
    Dependendo do seu local, o ícone **Ajuda** abrirá os recursos adequados:
 
-   ![Ícone Ajuda](/help/sites-cloud/authoring/assets/help-console.png)
+   ![Ícone da ajuda](/help/sites-cloud/authoring/assets/help-console.png)
 
 * **Navegação**
 
@@ -180,11 +180,11 @@ Há vários recursos de ajuda disponíveis:
 
    No console **Ferramentas** é possível acessar os **Recursos** externos:
 
-   * **Documentação** - Exibir a documentação do Web Experience Management
-   * **Recursos** do desenvolvedor - Recursos e downloads do desenvolvedor
+   * **Documentação** - exibir a documentação do Adobe® Experience Manager
+   * **Recursos do desenvolvedor** - recursos e downloads do desenvolvedor
    >[!NOTE]
    >
-   >Você pode acessar uma visão geral das teclas de atalho disponíveis a qualquer momento usando a tecla de atalho `?` (ponto de interrogação) em um console.
+   >É possível acessar uma visão geral das teclas de atalho disponíveis a qualquer momento, usando a tecla de atalho `?` (ponto de interrogação) em um console.
    >
    >Para obter uma visão geral de todos os atalhos de teclado, consulte a seguinte documentação:
    >
@@ -204,7 +204,7 @@ A ação disponível na barra de ferramentas muda para refletir as ações que v
 
 A forma como você [seleciona um recurso](#viewing-and-selecting-resources) depende da exibição.
 
-Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer,  opções adicionais serão exibidas. Clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso que contém todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
+Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso que contém todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
 
 ![Opções adicionais](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -212,7 +212,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 >
 >Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
-## Ações rápidas {#quick-actions}
+## Ações rápidas   {#quick-actions}
 
 Na [Exibição de cartão](#card-view), determinadas ações estão disponíveis como ícones de ação rápida, além de estarem na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e elimina a necessidade de pré-seleção.
 
@@ -226,7 +226,7 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 
 É possível visualizar, navegar e selecionar (para novas ações) os recursos com qualquer uma das exibições disponíveis, que podem ser selecionadas por meio do ícone no canto superior direito:
 
-* [Visualização de coluna](#column-view)
+* [Exibição de coluna](#column-view)
 * [Exibição de cartão](#card-view)
 * [Exibição de lista](#list-view)
 
@@ -234,11 +234,11 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 >
 >Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
 
-### Seleção de recursos {#selecting-resources}
+### Seleção de recursos   {#selecting-resources}
 
 Selecionar um recurso específico depende de uma combinação da exibição e do dispositivo:
 
-| Exibir | Selecionar toque | Selecionar desktop | Desmarque Tocar | Desmarcar área de trabalho |
+| Exibir | Selecionar toque | Selecionar desktop | Desmarcar toque | Desmarcar desktop |
 |---|---|---|---|---|
 | Coluna | Toque na miniatura | Clique na miniatura | Toque na miniatura | Clique na miniatura |
 | Cartão | Toque e segure o cartão | Passe o mouse sobre ele e use a ação rápida da marca de seleção | Toque no cartão | Clique no cartão |
@@ -249,7 +249,7 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
 Selecione todos os itens em qualquer exibição clicando na opção **Selecionar tudo** no canto superior direito do console.
 
 * Na **Exibição de cartão**, todas os cartões são selecionados.
-* In **List View** all items in the list are selected.
+* Na **Exibição de lista**, todos os itens na lista são selecionados.
 * Na **Exibição de coluna**, todos os itens na coluna mais à esquerda são selecionados.
 
 ![Selecionar tudo](/help/sites-cloud/authoring/assets/select-all.png)
@@ -258,30 +258,30 @@ Selecione todos os itens em qualquer exibição clicando na opção **Selecionar
 
 Em todos os casos, ao selecionar itens, a contagem dos itens selecionados é exibida na parte superior direita da barra de ferramentas.
 
-Você pode desmarcar todos os itens e sair do modo de seleção:
+Você pode desmarcar todos os itens e sair do modo de seleção ao:
 
-* Clicking or tapping the **X** next to the count
-* Uso da tecla **escape**
+* Clicar ou tocar no **X** ao lado da contagem
+* Usar a tecla **escape**
 
 ![Desmarcar tudo](/help/sites-cloud/authoring/assets/deselect-all.png)
 
-Em todas as exibições, todos os itens podem ser desmarcados tocando em Escape no teclado se você estiver usando um dispositivo de desktop.
+Em todas as visualizações, todos os itens podem ser desmarcados. Para isso, pressione a tecla Escape no teclado se você estiver usando um computador desktop.
 
 #### Exemplo de seleção {#selecting-example}
 
 1. Por exemplo, na exibição de cartão:
 
-   ![Seleção da exibição do cartão](/help/sites-cloud/authoring/assets/card-view-select.png)
+   ![Seleção da exibição de cartão](/help/sites-cloud/authoring/assets/card-view-select.png)
 
 1. Após selecionar um recurso, o cabeçalho superior é coberto pela [barra de ferramentas das ações](#actions-toolbar), que fornece acesso às ações atualmente aplicáveis ao recurso selecionado.
 
-   To exit selection mode select the **X** to the top-right, or use **escape**.
+   Para sair do modo de seleção, selecione o **X** no canto superior direito, ou use a tecla **escape**.
 
 ### Exibição de coluna {#column-view}
 
 ![Exibição de coluna](/help/sites-cloud/authoring/assets/column-view.png)
 
-A visualização de coluna permite uma navegação visual de uma árvore de conteúdo por uma série de colunas em cascata. Essa exibição permite visualizar e navegar pela estrutura em árvore do site.
+A exibição de coluna permite uma navegação visual de uma árvore de conteúdo por uma série de colunas em cascata. Essa exibição permite visualizar e navegar pela estrutura em árvore do site.
 
 A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho em uma coluna à direita. A seleção de um recurso na coluna direita mostrará então os recursos filhos em outra coluna à direita e assim por diante.
 
@@ -293,10 +293,10 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 * Tocar ou clicar na miniatura seleciona o recurso correspondente.
 
-   * Quando selecionada, uma marca de seleção será sobreposta na miniatura e o nome do recurso também será destacado.
+   * Quando essa opção for selecionada, uma marca de seleção será sobreposta à miniatura, e o nome do recurso também será destacado.
    * Os detalhes do recurso selecionado serão mostrados na coluna final.
    * A barra de ferramentas de ação ficará disponível.
-   Quando uma página é selecionada na visualização de coluna, a página selecionada é exibida na coluna final junto com os seguintes detalhes:
+   Quando uma página é selecionada na exibição de coluna, a página selecionada é exibida na coluna final junto com os seguintes detalhes:
 
    * Título da página
    * Nome da página (parte do URL da página)
@@ -315,7 +315,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * Uma representação visual do conteúdo da página
    * O título da página
    * Datas importantes (como a última edição/publicação)
-   * Se a página estiver bloqueada, oculta ou fizer parte de uma cópia dinâmica
+   * Se a página estiver bloqueada, oculta ou fizer parte de uma live copy
    * Se for o caso, quando for necessário tomar medidas como parte de um fluxo de trabalho
       * Marcadores que indicam ações necessárias podem estar relacionados a entradas na sua [Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
 
@@ -325,7 +325,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 * É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar as ações rápidas) ou para cima novamente usando a [navegação estrutural no cabeçalho](#the-header).
 
-### Exibição de lista {#list-view}
+### Exibição de lista   {#list-view}
 
 ![Exibição de lista](/help/sites-cloud/authoring/assets/list-view.png)
 
@@ -356,13 +356,13 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * **Tempo na página**
 
       ![Selecionar colunas](/help/sites-cloud/authoring/assets/select-columns.png)
-   By default the **Name** column is shown, which makes up part of the URL for the page. Em alguns casos, o autor pode precisar acessar páginas que estão em um idioma diferente e ver o nome da página (que geralmente é imutável) pode ser de grande ajuda se o autor não souber o idioma da página.
+   Por padrão, é exibida a coluna **Nome**, que faz parte do URL da página. Em alguns casos, o autor pode precisar acessar páginas que estão em um idioma diferente, e ver o nome da página (que normalmente é imutável) pode ser de grande ajuda quando ele não conhece o idioma.
 
 * Altere a ordem dos itens usando a barra vertical pontilhada na extremidade direita de cada item da lista.
 
    >[!NOTE]
    >
-   >Changing the order works only within an ordered folder that has `jcr:primaryType` value as `sling:OrderedFolder`.
+   >Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
 
    ![Ordem das colunas](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -372,11 +372,11 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 ## Seletor de painéis {#rail-selector}
 
-The **Rail Selector** is available at the top-left of the window and displays options depending on your current consoles.
+O **Seletor de painéis** está disponível no canto superior esquerdo da janela e exibe opções dependendo dos seus consoles atuais.
 
-![Seletor de painel expandido](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
+![Seletor de painéis expandido](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-For example, in **Sites** you can select content only (the default), content tree, the timeline, references, or filter side panel.
+Por exemplo, no **Sites**, é possível selecionar somente conteúdo (padrão), árvore de conteúdo, linha de tempo, referências ou o painel lateral de filtro.
 
 Se somente conteúdo for selecionado, apenas o ícone do painel será exibido. Se qualquer outra opção for selecionada, o nome da opção aparecerá ao lado do ícone do painel.
 
@@ -416,7 +416,7 @@ A coluna de linha do tempo permite:
       * [Lançamentos](/help/sites-cloud/authoring/launches/overview.md)
       * [Versões](/help/sites-cloud/authoring/features/page-versions.md)
       * [Fluxos de trabalhos](/help/sites-cloud/authoring/workflows/overview.md)
-         * With the exception of transient workflows as no history information is saved for these <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
+         * Com exceção de fluxos de trabalho transitórios pois nenhuma informação de histórico é salva para eles <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * Exibir todos
 
 * Adicionar/exibir comentários sobre o item selecionado. A caixa **Comentário** é exibida na parte inferior da lista de eventos. Inserir um comentário seguido por Retornar registrará esse comentário. Ele será mostrado quando a opção **Comentários** ou **Exibir todos** estiver selecionada.
@@ -426,7 +426,7 @@ A coluna de linha do tempo permite:
    * [Salvar uma versão](/help/sites-cloud/authoring/features/page-versions.md)
    * [Iniciar um fluxo de trabalho](/help/sites-cloud/authoring/workflows/applying.md)
 
-These options accessible via the chevron next to the **Comment** field.
+Essas opções podem ser acessadas por meio da divisa ao lado do campo **Comentário**.
 
 ![Campo Comentário](/help/sites-cloud/authoring/assets/comments.png)
 
@@ -435,12 +435,12 @@ These options accessible via the chevron next to the **Comment** field.
 A opção **Referências** mostra conexões com o recurso selecionado. Por exemplo, no console de **Sites**, as [referências](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) de páginas mostram o seguinte:
 
 * [Lançamentos](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
-* Cópias dinâmicas<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
+* Live copies<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
 * Cópias de idioma<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
 * Referência de conteúdo:
 
    * Links de outras páginas para a página selecionada
-   * Conteúdo emprestado de e/ou emprestado para a página selecionada pelo componente de Referência
+   * Conteúdo emprestado de e/ou concedido à página selecionada pelo componente Referência
 
 ![Exemplo de referências](/help/sites-cloud/authoring/assets/references-example.png)
 
