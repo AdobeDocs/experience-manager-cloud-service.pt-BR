@@ -1,28 +1,28 @@
 ---
-title: Atalhos de teclado para os consoles
+title: Atalhos de teclado para Consoles
 description: Poupe tempo durante a criação usando estes atalhos de teclado
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Atalhos de teclado para os consoles {#keyboard-shortcuts-for-consoles}
+# Atalhos de teclado para Consoles   {#keyboard-shortcuts-for-consoles}
 
-Os seguintes atalhos estão disponíveis para os consoles Sites, Assets, Usuários, Grupos, Projetos e Fragmentos de experiência.
+Os seguintes atalhos estão disponíveis para os consoles Sites, Ativos, Usuários, Grupos, Projetos e Fragmentos de experiência.
 
 | Local | Atalho | Descrição |
 |---|---|---|
 | Geral | `Ctrl+Click` | Seleção múltipla |
-| Console - Exibição de coluna e Exibição de conteúdo | `Right Arrow` | Navegar para baixo na estrutura do site / expandir o nó da árvore |
+| Console - Exibição de coluna e exibição de conteúdo | `Right Arrow` | Navegar para baixo na estrutura do site / expandir o nó da árvore |
 |  | `Left Arrow` | Navegar para cima na estrutura de árvore / recolher o nó de árvore |
 |  | `Down Arrow` | Mova para baixo uma lista de páginas no mesmo nível |
 |  | `Up Arrow` | Mova para cima uma lista de páginas no mesmo nível |
-| Console - Exibição de Coluna | `Shift-Up/Down Arrow` | Mova para cima uma lista de páginas no mesmo nível |
+| Console - Exibição de coluna | `Shift-Up/Down Arrow` | Mova para cima uma lista de páginas no mesmo nível |
 |  | `Esc` | Mova para cima uma lista de páginas no mesmo nível |
 | Consoles | `?` | Ajuda dos atalhos de teclado |
 |  | `/` | Executar a [pesquisa](/help/sites-cloud/authoring/getting-started/search.md) |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) option to view |
+|  | `Alt+`&lt;`Number`> | Alternar para a opção de [seletor do painel](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) que deseja exibir |
 |  | ` | Ocultar painel |
 |  | `e` | Editar |
 |  | `p` | Propriedades |
@@ -36,7 +36,7 @@ As combinações de teclas são listadas com as [teclas modificadoras](#os-speci
 
 ## Teclas modificadoras específicas do sistema operacional {#os-specific-modifier-keys}
 
-As teclas modificadoras usadas para os atalhos do teclado variam dependendo do sistema operacional usado pelo cliente.
+As teclas modificadoras usadas para os atalhos de teclado variam de acordo com o sistema operacional usado pelo cliente.
 
 | Windows/Linux | macOS |
 |---|---|
@@ -59,7 +59,7 @@ Além disso, os atalhos de teclado são os mesmos para todas as localidades e la
 >
 >Os atalhos de teclado do AEM podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
 >
->A Adobe recomenda[desabilitar os atalhos de teclado do AEM](#deactivating-keyboard-shortcuts) ao usar um leitor de tela.
+>A Adobe recomenda [desabilitar os atalhos de teclado do AEM](#deactivating-keyboard-shortcuts) ao usar um leitor de tela.
 
 ## Desativar atalhos de teclado {#deactivating-keyboard-shortcuts}
 
