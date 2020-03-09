@@ -1,7 +1,7 @@
 ---
 title: Atalhos de teclado para edição de página
 description: Vários atalhos do teclado estão disponíveis em todo o AEM, inclusive alguns para edição de páginas
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -19,14 +19,14 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 | Local | Atalho | Descrição |
 |---|---|---|
-| Qualquer modo de janela de edição | `Ctrl-Shift-m` | Toggle between **Preview** and the currently selected [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (e.g. **Edit**, **Layout**, etc)* |
+| Qualquer modo de Editar janela | `Ctrl-Shift-m` | Alternar entre a **Visualização** e o [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> selecionado atualmente (por exemplo, **Editar**, **Layout**, etc.)* |
 | Modo de **Edição** | `Ctrl-z` | [Desfazer a última alteração](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Refazer a última alteração](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Selecionar parágrafos múltiplos |
 |  | `Ctrl-c` | Copiar parágrafos selecionados |
-|  | `Ctrl-x` | Recortar parágrafos selecionados (parágrafos recortados não desaparecerão na interface do usuário até que sejam colados) |
+|  | `Ctrl-x` | Recortar parágrafos selecionados (os parágrafos recortados não desaparecerão na interface do usuário até que sejam colados) |
 |  | `Ctrl-v` | Colar parágrafos recortados ou copiados anteriormente |
-|  | `Ctrl-Backspace` | Excluir parágrafos selecionados |
+|  | `Ctrl-Backspace` | Excluir os parágrafos selecionados |
 | **Modo de Edição** - Rich Text Editor | `Ctrl-b` | Negrito |
 |  | `Ctrl-I` | Itálico |
 |  | `Ctrl-u` | Sublinhado |
@@ -43,7 +43,7 @@ Vários atalhos de teclado também estão disponíveis para os usuários de desk
 
 ## Teclas modificadoras específicas do sistema operacional {#os-specific-modifier-keys}
 
-As teclas modificadoras usadas para os atalhos do teclado variam dependendo do sistema operacional usado pelo cliente.
+As teclas modificadoras usadas para os atalhos de teclado variam de acordo com o sistema operacional usado pelo cliente.
 
 | Windows e Linux | macOS |
 |---|---|
