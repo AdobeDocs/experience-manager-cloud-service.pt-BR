@@ -1,19 +1,19 @@
 ---
-title: Usar o Editor de Rich Text para criar conteúdo
-description: Usar o Editor de Rich Text para criar conteúdo
-translation-type: tm+mt
+title: Uso do Editor de rich text para criar conteúdo
+description: Uso do Editor de rich text para criar conteúdo
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Usar o Editor de Rich Text para criar conteúdo {#use-rich-text-editor-to-author-content}
+# Uso do Editor de rich text para criar conteúdo {#use-rich-text-editor-to-author-content}
 
-O Editor de Rich Text (RTE) é um elemento básico fundamental para inserir conteúdo textual no AEM. Ele é a base de vários componentes
+O Editor de Rich Text (RTE) é um elemento básico fundamental para inserir conteúdo textual no AEM. É a base de vários componentes
 
 ## Edição no local {#in-place-editing}
 
-Selecting a text-based component with a single tap or click will reveal the [component toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) as with any component.
+Selecionar um componente baseado em texto com um único toque ou clique revelará a [barra de ferramentas de componentes](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) como com qualquer componente.
 
 ![A barra de ferramentas do componente](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
@@ -23,17 +23,17 @@ Tocar/clicar mais uma vez, ou selecionar inicialmente o componente com um toque/
 
 Essa barra de ferramentas fornece as seguintes opções:
 
-* **Formato**: Isso permite definir Negrito, Itálico e Sublinhado.
-* **Listas**: Com isso, é possível criar listas com marcadores ou numeradas ou definir o recuo.
+* **Formato**: permite que você defina Negrito, Itálico e Sublinhado.
+* **Listas**: com este recurso, você pode criar listas com marcadores ou numeradas, ou definir o recuo.
 * **Hiperlink**
 * **Desvincular**
 * **Tela inteira**
 * **Fechar**
 * **Salvar**
 
-## Edição em tela cheia {#full-screen-editing}
+## Edição de tela cheia {#full-screen-editing}
 
-For text-based components, tapping the full screen mode from the [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) opens the rich text editor and hides the rest of the page content.
+Para componentes baseados em texto, tocar no modo de tela cheia na [barra de ferramentas](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) abrirá o editor de rich text e ocultará o restante do conteúdo da página.
 
 ![Botão de tela cheia do RTE](/help/sites-cloud/authoring/assets/editing-full-screen.png)
 
@@ -43,7 +43,7 @@ O modo de tela cheia exibe todas as opções configuradas que podem ser usadas p
 
 Outras opções do editor de Rich Text incluem:
 
-* **Âncora**: Crie uma âncora no texto para a qual você pode posteriormente vincular/fazer referência.
+* **Âncora**: crie uma âncora no texto para a qual você poderá mais tarde vincular ou fazer referência.
 * **Alinhar texto à esquerda**
 * **Centralizar texto**
 * **Alinhar texto à direita**
@@ -54,4 +54,4 @@ Feche o modo de tela cheia clicando no ícone Minimizar.
 
 >[!NOTE]
 >
->Copiar listas aninhadas do Microsoft Word para o RTE pode gerar resultados inconsistentes e pode exigir ajuste manual após colar o texto no RTE.
+>Copiar listas aninhadas do Microsoft Word para o RTE pode gerar resultados inconsistentes e exigir ajuste manual após colar o texto no RTE.
