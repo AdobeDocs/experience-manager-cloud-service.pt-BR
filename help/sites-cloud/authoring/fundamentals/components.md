@@ -1,7 +1,7 @@
 ---
 title: Componentes
-description: Os componentes são o elemento fundamental de criação das páginas de conteúdo no AEM
-translation-type: tm+mt
+description: Os componentes são o bloco de construção fundamental de criação das páginas de conteúdo no AEM
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Componentes {#components}
 
-Os componentes são o elemento fundamental da criação de páginas de conteúdo no Adobe Experience Manager (AEM). Componentes como imagens, texto, títulos etc. pode ser facilmente arrastado e solto para criar seu conteúdo.
+Os componentes são o bloco de construção fundamental de criação das páginas de conteúdo no Adobe Experience Manager (AEM). Componentes como imagens, texto, títulos, etc. podem ser facilmente arrastados e soltos para criar o conteúdo.
 
 O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites. Estão disponíveis ao [editar uma página](/help/sites-cloud/authoring/fundamentals/editing-content.md) e são agrupados por área funcional principal (chamada conjunto de componentes) para ajudar na filtragem.
 
@@ -19,7 +19,7 @@ O AEM é disponibilizado com vários componentes prontos para uso que fornecem f
 >
 >Dependendo do seu caso, você pode ter componentes personalizados desenvolvidos explicitamente para as suas necessidades. Eles podem até ter o mesmo nome que alguns dos componentes discutidos aqui.
 
-## Uso geral {#general-usage}
+## Uso geral   {#general-usage}
 
 Os componentes estão disponíveis na guia **Componentes** do painel lateral do editor de páginas ao [editar uma página](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
@@ -33,14 +33,14 @@ Para obter mais informações sobre como adicionar componentes a uma página, co
 
 ## Visão geral de todos os componentes {#overview-of-all-components}
 
-The [Components Console](/help/sites-cloud/authoring/features/components-console.md) gives an overview of the component groups and components that are provided by your AEM installation. É possível visualizar as principais informações sobre os componentes individuais e seu uso.
+O console [Componentes](/help/sites-cloud/authoring/features/components-console.md) fornece uma visão geral dos grupos de componentes e dos componentes que são fornecidos por sua instalação do AEM. É possível visualizar as principais informações sobre os componentes individuais e seu uso.
 
 ## Componentes principais {#core-components}
 
-The [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
+Os ](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)Componentes principais[ oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
 
-Elas são criadas usando as práticas recomendadas do AEM e são a base da experiência de criação do AEM. Os componentes principais podem ser facilmente estendidos pelos desenvolvedores para atender às necessidades específicas do projeto.
+São criados usando as práticas recomendadas do AEM e são a base da experiência de criação do AEM. Os componentes principais podem ser facilmente estendidos pelos desenvolvedores para atender às necessidades específicas do projeto.
 
 ### Configuração de modelos {#configuring-templates}
 
-If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-cloud/authoring/features/templates.md) enable/disable these and edit parameters for specific components.
+Se a página for baseada no modelo editável moderno recomendado, é possível [editar o modelo](/help/sites-cloud/authoring/features/templates.md), habilitar/desabilitar os modelos e editar parâmetros de componentes específicos.
