@@ -1,76 +1,76 @@
 ---
-title: Introdução ao Adobe Experience Manager como um serviço em nuvem
-description: 'Introdução ao Adobe Experience Manager (AEM) como um serviço em nuvem. '
-translation-type: tm+mt
+title: Introdução ao Adobe Experience Manager as a Cloud Service
+description: 'Introdução ao Adobe Experience Manager (AEM) as a Cloud Service. '
+translation-type: ht
 source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 
 ---
 
 
-# Uma introdução ao Adobe Experience Manager como um serviço da nuvem {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
+# Uma introdução ao Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[O Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM) agora está disponível como um serviço em nuvem.
+Agora o [Adobe Experience Manager](https://www.adobe.com/br/marketing/experience-manager.html) (AEM) está disponível como Cloud Service.
 
-Adobe Experience Manager como um serviço em nuvem:
+Adobe Experience Manager as a Cloud Service
 
-* É a maneira nativa de aproveitar os aplicativos AEM.
+* É a maneira nativa em nuvem de aproveitar os aplicativos do AEM.
 
-* Permite fornecer aos clientes experiências personalizadas e orientadas por conteúdo, combinando o poder do AEM Content Management System com o AEM Digital Asset Management.
+* Permite proporcionar experiências personalizadas e orientadas por conteúdo aos clientes, combinando a eficiência do Sistema de gerenciamento de conteúdo do AEM com o Gerenciamento de ativos digitais do AEM.
 
-* Fornece fornecimento contínuo e integração contínua para atualizações sem tempo ocioso.
+* Fornece Entrega contínua e integração contínua para atualizações sem tempo de inatividade.
 
-* É baseado em uma arquitetura dinâmica que é autodimensionada, removendo assim as considerações sobre infraestrutura.
+* É baseado em uma arquitetura dinâmica com dimensionamento automático, eliminando assim as considerações sobre infraestrutura.
 
-* Está focado na segurança, usando testes automatizados para verificar vulnerabilidades comuns.
+* Concentra-se na segurança, usando testes automáticos para verificar vulnerabilidades comuns.
 
-* Valida o código do cliente usando testes automatizados.
+* Valida o código do cliente usando testes automáticos.
 
 * Possui topologias de desempenho otimizadas para máxima resiliência e eficiência.
 
 * Reduz significativamente a configuração manual necessária.
 
-* É profundamente integrado à Adobe Experience Cloud.
+* É extremamente integrado à Adobe Experience Cloud.
 
 * Apresenta a próxima geração da linha de produtos Adobe Experience Manager, com base em investimentos e inovações anteriores, preservando e estendendo todos os casos de uso e funcionalidades.
 
-Todas estas ajuda:
+Tudo isso ajuda no seguinte:
 
-* Os desenvolvedores se concentram na configuração e extensão do AEM, seguindo os mesmos padrões que fizeram com que o AEM tenha sido aumentado com sucesso até o momento com o novo padrão de desenvolvimento baseado em nuvem.
+* Os desenvolvedores se concentram na configuração e extensão do AEM, seguindo os mesmos padrões que tornaram o AEM bem-sucedido até agora, aumentado com o novo padrão de desenvolvimento baseado em nuvem.
 
-* Os autores desfrutam das mais recentes inovações, regularmente apresentadas.
+* Os autores desfrutam das mais recentes inovações, entregues a eles regularmente.
 
 * Simplifique a configuração e a infraestrutura para os administradores do sistema.
 
-* Os profissionais de marketing experimentam um tempo de implantação mais rápido.
+* Os profissionais de marketing experimentam um rendimento mais rápido.
 
 >[!NOTE]
 >
->Consulte [Terminologia](terminology.md) para obter alguns dos novos termos que foram introduzidos no AEM como um serviço em nuvem.
+>Consulte [Terminologia](terminology.md) para obter alguns dos novos termos que foram introduzidos no AEM as a Cloud Service.
 
-## Valor adicionado como um serviço em nuvem {#value-added-as-a-cloud-service}
+## Valor agregado como Cloud Service {#value-added-as-a-cloud-service}
 
-O AEM atinge esses objetivos ao adotar as principais características dos serviços em nuvem modernos:
+O AEM atinge esses objetivos adotando as principais características dos serviços em nuvem modernos:
 
-* Está sempre ativado:
+* Está sempre ativo:
 
-   * Toda a arquitetura de serviço foi revisitada para que você não tenha tempo de inatividade; não para o gerenciamento de conteúdo nem para os recursos de entrega de conteúdo.
+   * Toda a arquitetura de serviço foi revisitada para que você não tenha tempo de inatividade, nem no gerenciamento de conteúdo nem nos recursos de entrega de conteúdo.
 
 * Está sempre em escala:
 
-   * Todas as instâncias do AEM como um serviço de nuvem são criadas iguais; assim, a arquitetura de serviço aumentará, aumentará e diminuirá automaticamente, dependendo de suas necessidades.
+   * Todas as instâncias do AEM as a Cloud Service são criadas iguais. Dessa forma, a arquitetura de serviço aumentará e diminuirá automaticamente, dependendo das necessidades.
 
 * É sempre atual:
 
-   * O AEM como um serviço em nuvem implementa um pipeline de entrega novo e contínuo para a base de códigos AEM, com atualizações automatizadas até várias vezes por mês. Isso soluciona um dos principais desafios dos aplicativos AEM, mantendo-o atualizado na versão mais recente.
+   * O AEM as a Cloud Service implementa um pipeline de entrega novo e contínuo para a base de códigos do AEM, com atualizações automáticas até várias vezes por mês. Isso soluciona um dos principais desafios dos aplicativos do AEM, mantendo-o atualizado na versão mais recente.
 
 * Está sempre evoluindo:
 
-   * O AEM como serviço em nuvem evolui diariamente, com base nos projetos implementados por nossos clientes. O conteúdo, o código e as configurações são constantemente revisados e avaliados em relação às práticas recomendadas, o que nos permite orientá-lo sobre como atingir seus objetivos comerciais.
+   * O AEM as a Cloud Service evolui diariamente, com base nos projetos implementados pelos clientes. O conteúdo, o código e as configurações são constantemente revisados e avaliados em relação às práticas recomendadas, o que permite orientar sobre como atingir os objetivos comerciais.
 
-## Conhecendo o Adobe Experience Manager como um serviço em nuvem {#getting-to-know-aem-as-cloud-service}
+## Noções básicas sobre o Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
-* [Novidades e diferenças](/help/overview/what-is-new-and-different.md) entre o Adobe Experience Manager como um serviço em nuvem e as versões anteriores
-* A [arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager como um serviço em nuvem
-* [Alterações notáveis no AEM Sites como um serviço na nuvem](/help/sites-cloud/sites-cloud-changes.md)
-* [Introdução aos ativos como um serviço em nuvem](/help/assets/overview.md)
-* [Tutoriais do Adobe Experience Manager como um serviço em nuvem](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Novidades e diferenças](/help/overview/what-is-new-and-different.md) entre o Adobe Experience Manager as a Cloud Service e as versões anteriores
+* A [Arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager as a Cloud Service
+* [Alterações importantes no AEM Sites no AEM as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Introdução ao Assets as a Cloud Service](/help/assets/overview.md)
+* [Tutoriais do Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/br/experience-manager-learn/cloud-service/overview.html)
