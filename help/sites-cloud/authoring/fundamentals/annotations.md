@@ -1,17 +1,17 @@
 ---
-title: Adicionar anotações de página
+title: Adição de anotações de página
 description: Muitos componentes diretamente relacionados ao conteúdo permitem que você adicione uma anotação
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Adicionar anotações de página {#adding-page-annotations}
+# Adição de anotações de página {#adding-page-annotations}
 
 Com frequência, a adição de conteúdo às páginas do seu website está sujeita a discussões antes da publicação efetiva. Para auxiliar nesse processo, muitos componentes diretamente relacionados ao conteúdo (em oposição, por exemplo, ao layout) permitem a adição de uma anotação.
 
-Uma anotação coloca um rascunho colorido ou uma nota adesiva na página. A anotação permite a você (ou outros usuários) deixar comentários e/ou perguntas para outros autores/revisores.
+Uma anotação coloca um rascunho colorido ou nota adesiva na página. A anotação permite a você (ou outros usuários) deixar comentários e/ou perguntas para outros autores/revisores.
 
 >[!NOTE]
 >
@@ -23,11 +23,11 @@ Um [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-mod
 
 >[!CAUTION]
 >
->A exclusão de um recurso (por exemplo, componente) exclui todas as anotações e rascunhos associados a esse recurso, independentemente de sua posição na página como um todo.
+>A exclusão de um recurso (por exemplo, componente) exclui todas as anotações e rascunhos associados a ele, independentemente de sua posição na página como um todo.
 
 >[!NOTE]
 >
->Dependendo dos seus requisitos, também é possível desenvolver um fluxo de trabalho para enviar notificações quando as anotações forem adicionadas, atualizadas ou excluídas.
+>Dependendo dos seus requisitos, também é possível desenvolver um fluxo de trabalho para enviar notificações quando anotações são adicionadas, atualizadas ou excluídas.
 
 ### Anotação em componente {#annotating-a-component}
 
@@ -51,16 +51,16 @@ O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteú
 
 1. Clique/toque no componente desejado (os componentes que podem ser anotados serão destacados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
 
-   ![Adicionar uma anotação](/help/sites-cloud/authoring/assets/annotation-adding.png)
+   ![Adição de uma anotação](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
    Aqui, você pode usar o campo e/ou ícone apropriado para:
 
    * Inserir o texto da anotação.
    * Criar um rascunho (linhas e formas) para realçar uma área do componente.
 
-      ![Botão Rascunho da anotação](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+      ![Botão Rascunho de anotação](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      O cursor se transformará em um cursor de mira ao criar um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, um círculo ou uma elipse.
+      O cursor se transformará em uma cruz durante a criação de um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.
 
    * Escolher/alterar a cor:
 
@@ -102,9 +102,9 @@ As anotações não aparecem no modo Editar, mas o selo na parte superior direit
 
 ![Indicador de anotação](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
-## Anotar em outros recursos {#annotating-other-resources}
+## Anotação em outros recursos {#annotating-other-resources}
 
-Além dos componentes, você pode anotar uma variedade de recursos:
+Além dos componente, é possível fazer anotações em vários recursos:
 
 * Anotação de ativos [Anotação de ativos](/help/assets/manage-digital-assets.md#annotating)
 * Anotação de ativos de vídeo [Anotação de ativos de vídeo](/help/assets/manage-video-assets.md#annotate-video-assets)
