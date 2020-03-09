@@ -1,7 +1,7 @@
 ---
 title: Fragmentos de experiência
-description: Use o Adobe Experience Manager como fragmentos de experiência do serviço em nuvem para tornar suas experiências reutilizáveis e flexíveis.
-translation-type: tm+mt
+description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
+translation-type: ht
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
 
 ---
@@ -9,10 +9,10 @@ source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
 
 # Fragmentos de experiência {#experience-fragments}
 
-No Adobe Experience Manager como um serviço em nuvem, um fragmento de experiência:
+No Adobe Experience Manager as a Cloud Service, um fragmento de experiência:
 * é um grupo de um ou mais componentes
 * inclui conteúdo e layout
-* pode ser referenciado em páginas
+* pode ser referenciado nas páginas
 * pode conter qualquer componente
 
 Um fragmento de experiência:
@@ -31,8 +31,8 @@ Use os Fragmentos de experiência:
 * Se um autor quiser reutilizar partes (um fragmento de uma experiência) de uma página.
 Sem Fragmentos de experiência, o autor precisaria copiar e colar esse fragmento. Criar e manter essa experiências de copiar/colar é um processo demorado e pode causar erros feitos pelo usuário.
 Os fragmentos de experiência eliminam a necessidade de copiar/colar.
-* Para suportar o caso de uso de CMS sem cabeçalho.
-Os autores desejam usar o AEM somente para criação, mas não para entrega ao cliente. Um ponto de contato ou sistema de terceiros consumiria essa experiência e a entregaria para o usuário final.
+* Para dar suporte ao caso de uso de CMS sem periféricos.
+Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um ponto de contato ou sistema de terceiros consumiria essa experiência e a entregaria para o usuário final.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Os autores desejam usar o AEM somente para criação, mas não para entrega ao c
 >
 Entre em contato com o administrador do sistema se você tiver problemas.
 
-## Quando você deve usar fragmentos de experiência? {#when-should-you-use-experience-fragments}
+## Quando você deve usar fragmentos de experiência?   {#when-should-you-use-experience-fragments}
 
 Os fragmentos de experiência devem ser usados:
 
@@ -54,25 +54,25 @@ Os fragmentos de experiência devem ser usados:
    * Ao incorporar conteúdo em pontos de contato de terceiros.
 * Se você tiver uma Experiência com variações ou execuções diferentes.
    * Canal ou variações específicas ao contexto.
-   * Experiências que façam sentido agrupar; por exemplo, uma campanha com diferentes experiências entre canais.
-* Quando você usar o Omnichannel Commerce.
+   * Experiências que fazem sentido agrupar; por exemplo, uma campanha com diferentes experiências entre canais.
+* Quando você usar o Comércio omnichannel.
    * Ao compartilhar conteúdo comercial em canais de [redes sociais](/help/implementing/developing/extending/experience-fragments.md#social-variations) em escala.
    * Tornar pontos de toque transacionais.
 
-## Organizar seus fragmentos de experiência {#organizing-your-experience-fragments}
+## Organizar os Fragmentos de experiência {#organizing-your-experience-fragments}
 
 Recomenda-se:
-* use pastas para organizar seus fragmentos de experiência,
+* usar pastas para organizar os Fragmentos de experiência,
 
-* [configure os modelos permitidos nessas pastas](#configure-allowed-templates-folder).
+* [configurar os modelos permitidos nessas pastas](#configure-allowed-templates-folder).
 
 A criação de pastas permite:
 
-* criar uma estrutura significativa para seus Fragmentos de experiência; por exemplo, de acordo com a classificação
+* criar uma estrutura significativa para os Fragmentos de experiência; por exemplo, de acordo com a classificação
 
    >[!NOTE]
    >
-   >Não é necessário alinhar a estrutura dos fragmentos de experiência com a estrutura de página do site.
+   >Não é necessário alinhar a estrutura dos Fragmentos de experiência com a estrutura de página do site.
 
 * [alocar os modelos permitidos no nível da pasta](#configure-allowed-templates-folder)
 
@@ -80,37 +80,37 @@ A criação de pastas permite:
    >
    >Você pode usar o [editor de modelos](/help/sites-cloud/authoring/features/templates.md) para criar seu próprio modelo.
 
-O projeto WKND estrutura alguns Fragmentos de experiência de acordo com `Contributors`. A estrutura usada também ilustra como outros recursos, como o Gerenciamento de vários sites (incluindo cópias de idiomas), podem ser usados.
+O projeto WKND estrutura alguns Fragmentos de experiência de acordo com `Contributors`. A estrutura usada também ilustra a maneira como outros recursos, como o Gerenciamento de vários sites (incluindo cópias de idiomas), podem ser usados.
 
 Consulte:
 
 `http://localhost:4502/aem/experience-fragments.html/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master`
 
-![Pastas para fragmentos de experiência](/help/sites-cloud/authoring/assets/xf-folders.png)
+![Pastas para Fragmentos de experiência](/help/sites-cloud/authoring/assets/xf-folders.png)
 
-## Criação e configuração de uma pasta para seus fragmentos de experiência {#creating-and-configuring-a-folder-for-your-experience-fragments}
+## Criação e configuração de uma pasta para os Fragmentos de experiência {#creating-and-configuring-a-folder-for-your-experience-fragments}
 
-Para criar e configurar uma pasta para seus Fragmentos de experiência, é recomendável:
+Para criar e configurar uma pasta para os Fragmentos de experiência, recomenda-se:
 
-1. [Crie uma pasta](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-folder).
+1. [Criar uma pasta](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-folder).
 
-1. [Configure os modelos de Fragmento de experiência permitidos para essa pasta](#configure-allowed-templates-folder).
-
->[!NOTE]
->
->Também é possível configurar os Modelos [permitidos para sua instância](#configure-allowed-templates-instance), mas esse método **não** é recomendado, pois os valores podem ser substituídos na atualização.
-
-### Configurar os modelos permitidos para sua pasta {#configure-allowed-templates-folder}
+1. [Configurar os modelos de Fragmento de experiência permitidos para essa pasta](#configure-allowed-templates-folder).
 
 >[!NOTE]
 >
->Este é o método recomendado para especificar os Modelos **** permitidos, pois os valores não serão substituídos na atualização.
+>Também é possível configurar os [Modelos permitidos para sua instância](#configure-allowed-templates-instance), mas esse método **não** é recomendado, pois os valores podem ser substituídos na atualização.
+
+### Configurar os Modelos permitidos para sua Pasta {#configure-allowed-templates-folder}
+
+>[!NOTE]
+>
+>Esse é o método recomendado para especificar os **Modelos permitidos**, pois os valores não serão substituídos na atualização.
 
 1. Acesse a pasta **Fragmentos de experiência** necessária.
 
-1. Selecione a pasta e, em seguida, **Propriedades**.
+1. Selecione a pasta e depois as **Propriedades**.
 
-1. Especifique a expressão regular para recuperar os modelos necessários no campo Modelos **** permitidos.
+1. Especifique a expressão regular para recuperar os modelos necessários no campo **Modelos permitidos**.
 
    Por exemplo:
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
@@ -118,7 +118,7 @@ Para criar e configurar uma pasta para seus Fragmentos de experiência, é recom
    Consulte:
    `http://localhost:4502/mnt/overlay/cq/experience-fragments/content/experience-fragments/folderproperties.html/content/experience-fragments/wknd`
 
-   ![Propriedades do fragmento de experiência - Modelos permitidos](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
+   ![Propriedades dos fragmentos de experiência - Modelos permitidos](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
    >
@@ -126,15 +126,15 @@ Para criar e configurar uma pasta para seus Fragmentos de experiência, é recom
 
 1. Selecione **Salvar e fechar**.
 
-### Configurar os modelos permitidos para sua instância {#configure-allowed-templates-instance}
+### Configurar os Modelos permitidos para sua Instância {#configure-allowed-templates-instance}
 
 >[!CAUTION]
 >
->Não é recomendável alterar os Modelos **** permitidos por esse método, pois os modelos especificados podem ser substituídos na atualização.
+>Não é recomendável alterar os **Modelos permitidos** usando esse método, pois os modelos especificados podem ser substituídos na atualização.
 >
->Use essa caixa de diálogo apenas para fins informativos.
+>Use esta caixa de diálogo apenas para fins informativos.
 
-1. Navigate to the required **Experience Fragments** console.
+1. Acesse o console **Fragmentos de experiência** necessário.
 
 1. Selecione **Opções de configuração**:
 
@@ -155,7 +155,7 @@ Para criar e configurar uma pasta para seus Fragmentos de experiência, é recom
 
 Para criar um fragmento de experiência:
 
-1. Select **Experience Fragments** from the Global Navigation.
+1. Selecione **Fragmentos de experiência** na Navegação global.
 
    ![Fragmentos de experiência no painel Navegação](/help/sites-cloud/authoring/assets/xf-01.png)
 
@@ -163,11 +163,11 @@ Para criar um fragmento de experiência:
 
    ![Criação de uma pasta para Fragmentos de experiência](/help/sites-cloud/authoring/assets/xf-02.png)
 
-1. Selecione Fragmento **de** experiência para abrir o assistente **Criar fragmento** de experiência.
+1. Selecione **Fragmento de experiência** para abrir o assistente **Criar fragmento de experiência**.
 
    Selecione o **modelo** obrigatório e, em seguida, clique em **Avançar**:
 
-   ![Selecionar um modelo de Fragmento de experiência](/help/sites-cloud/authoring/assets/xf-03.png)
+   ![Seleção de um modelo de Fragmento de experiência](/help/sites-cloud/authoring/assets/xf-03.png)
 
 
 1. Insira as **Propriedades** do **Fragmento de experiência**.
@@ -193,7 +193,7 @@ O Editor de fragmento de experiência oferece recursos semelhantes ao editor de 
 
 O exemplo de procedimento a seguir ilustra como criar um teaser para um produto:
 
-1. Arraste e solte o componente desejado do Navegador de [componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
+1. Arraste e solte o componente desejado do [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
 1. Dependendo do componente:
    * Adicione qualquer conteúdo e/ou ativo, conforme necessário.
@@ -205,14 +205,14 @@ Por exemplo: `http://<host>:<port>/editor.html/content/experience-fragments/wknd
 
 ![Fragmento de experiência na página](/help/sites-cloud/authoring/assets/xf-05.png)
 
-## Criação de uma variação de fragmento de experiência {#creating-an-experience-fragment-variation}
+## Criação de uma variação de Fragmento de experiência {#creating-an-experience-fragment-variation}
 
 Você pode criar variações de seu fragmento de experiência, de acordo com suas necessidades:
 
-1. Abra a página para [edição](#editing-your-experience-fragment).
+1. Abra o fragmento para [edição](#editing-your-experience-fragment).
 1. Abra a guia **Variações**.
 
-   ![Criação de uma variação de fragmento de experiência](/help/sites-cloud/authoring/assets/xf-06.png)
+   ![Criação de uma variação de Fragmento de experiência](/help/sites-cloud/authoring/assets/xf-06.png)
 
 1. **Criar** permite criar:
 
@@ -223,14 +223,14 @@ Você pode criar variações de seu fragmento de experiência, de acordo com sua
 
    * **Modelo**
    * **Título**
-   * **Nome** - se deixado em branco, será derivado do Título
+   * **Nome** - se deixado em branco, ele será derivado do Título
    * **Descrição**
    * **Tags de variação**
    Por exemplo:
 
    ![Propriedades de variação](/help/sites-cloud/authoring/assets/xf-07.png)
 
-1. Confirm with **Done**, the new variation will be shown in the panel.
+1. Confirme com **Concluído**, a nova variação será mostrada no painel.
 
 ## Usar seu fragmento de experiência {#using-your-experience-fragment}
 
@@ -238,19 +238,19 @@ Agora você pode usar o Fragmento de experiência ao criar suas páginas:
 
 1. Abra qualquer página para edição.
 
-1. Crie uma instância do componente Fragmento de experiência, no sistema de parágrafo da página:
+1. Crie uma instância do componente Fragmento de experiência, no sistema de parágrafos da página:
 
 1. Adicione o Fragmento de experiência real à ocorrência de componente:
 
    * Arraste o fragmento necessário do Navegador de Ativos e solte no componente.
-   * Select **Configure** from the component toolbar and specify the fragment to use, confirm with **Done**.
+   * Selecione **Configurar** na barra de ferramentas do componente e especifique o fragmento a ser usado, confirme com **Concluído**.
    >[!NOTE]
    >
    >Editar, na barra de ferramentas do componente, opera como um atalho para abrir o fragmento no editor de fragmentos.
 
 Por exemplo: `http://<host>:<port>/editor.html/content/wknd/language-masters/en/about-us.html`
 
-![Fragmento de experiência no editor de página](/help/sites-cloud/authoring/assets/xf-08.png)
+![Fragmento de experiência no editor de páginas](/help/sites-cloud/authoring/assets/xf-08.png)
 
 ## Blocos de construção {#building-blocks}
 
@@ -270,9 +270,9 @@ Para criar um novo Bloco de construção:
 
 1. Insira o nome do **Bloco de construção** e confirme com **Converter**:
 
-   ![Bloco de construção de nomes](/help/sites-cloud/authoring/assets/xf-11.png)
+   ![Nomear bloco de construção](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. O **bloco** de construção será mostrado na guia esquerda (**Local**) e poderá ser selecionado para outras ações:
+1. O **Bloco de construção** será mostrado na guia esquerda (**Local**) e poderá ser selecionado para outras ações:
 
    ![Bloco de construção no painel](/help/sites-cloud/authoring/assets/xf-12.png)
 
@@ -284,24 +284,24 @@ O bloco de construção está visível na guia **Blocos de construção**. As se
 * **Renomeie**
 * **Excluir**
 
-![Gerenciamento de blocos componentes](/help/sites-cloud/authoring/assets/xf-13.png)
+![Gerenciar blocos de construção](/help/sites-cloud/authoring/assets/xf-13.png)
 
 #### Usar um bloco de construção {#using-a-building-block}
 
 Arraste o bloco de construção para o sistema de parágrafo de qualquer fragmento, como com qualquer componente.
 
-Ao editar um fragmento de experiência disponível, os blocos componentes são exibidos na guia à esquerda. Você pode filtrar de acordo com:
+Ao editar um Fragmento de experiência disponível, os Blocos de construção são exibidos na guia à esquerda. Você pode filtrar de acordo com:
 
-* **Local** - Criação de blocos a partir do fragmento de experiência atual
-* **Todos** - Criar blocos de todos os fragmentos
+* **Local** - blocos de construção no Fragmento de experiência atual
+* **Todos** - blocos de construção de todos os fragmentos
 
-![Selecionar blocos componentes](/help/sites-cloud/authoring/assets/xf-14.png)
+![Seleção de blocos de construção](/help/sites-cloud/authoring/assets/xf-14.png)
 
 ## Detalhes do Fragmento de experiência {#details-of-your-experience-fragment}
 
 Os detalhes do fragmento podem ser vistos:
 
-1. Navegue até o local dos Fragmentos de experiência (não navegue mais para baixo até as variações no fragmento).
+1. Navegue até o local dos Fragmentos de experiência (não navegue além das variações dentro do fragmento).
 Os detalhes são mostrados em todas as exibições do console **Fragmentos de experiência**, com a **de Exibição em lista**, incluindo detalhes de uma exportação para o Target: <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
 
    ![Detalhes do fragmento de experiência](/help/sites-cloud/authoring/assets/xf-15.png)
@@ -316,7 +316,7 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
    >
    >Essas guias são exibidas quando você abre **Propriedades** no console Fragmentos de experiência.
    >
-   >Se você **Abrir propriedades** ao editar um fragmento de experiência, as Propriedades [da](/help/sites-cloud/authoring/fundamentals/page-properties.md) página apropriadas serão exibidas.
+   >Se você clicar em **Abrir propriedades** ao editar um Fragmento de experiência, as [Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md) apropriadas serão exibidas.
 
    ![Propriedades do fragmento de experiência](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -326,11 +326,11 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
       * **Tags**
       * **Número total de variantes** - somente informações
       * **Número de variantes da Web** - somente informações
-      * **Número de variantes** que não são da Web - somente informações
+      * **Número de variantes que não são da Web** - somente informações
       * **Número de páginas que usam este fragmento** - somente informações
-   * **Serviços em nuvem**
+   * **Cloud Services**
       * **Configuração na nuvem**
-      * **Configurações do serviço de nuvem**
+      * **Configurações do Cloud Service**
       * **ID da Página do Facebook**
       * **Pasta do Pinterest**
    * **Referências**
@@ -340,13 +340,13 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
 
 ## A representação HTML simples {#the-plain-html-rendition}
 
-Using the `.plain.` selector in the URL, you can access the plain HTML rendition from the browser.
+Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML simples do navegador.
 
 >[!NOTE]
 >
 >Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações móveis personalizadas) para acessar o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
-## Exportar fragmentos de experiência {#exporting-experience-fragments}
+## Exportar fragmentos de experiência   {#exporting-experience-fragments}
 
 Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado pelo AEM e por canais de terceiros.
 
