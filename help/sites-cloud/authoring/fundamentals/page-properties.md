@@ -1,7 +1,7 @@
 ---
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -61,12 +61,12 @@ As propriedades são distribuídas por meio de várias guias.
 * **Hora de desligar**
 
    * A hora em que a página publicada será desativada.
-   * Deixe esses campos vazios para ação imediata.
+   * Deixe esses campos em branco para ação imediata.
 
 * **URL personalizada**
 
    * Permite que você insira uma vanity URL para esta página, o que pode permitir que você tenha um URL menor e/ou mais expressivo.
-   * For example, if the Vanity URL is set to `welcome` to the page identified by the path `/v1.0/startpage` for the website `http://example.com`, then `http://example.com/welcome` would be the vanity URL of `http://example.com/content/v1.0/startpage`
+   * Por exemplo, se o URL personalizado estiver definido como `welcome` para a página identificada pelo caminho `/v1.0/startpage` para o site `http://example.com`, em seguida, `http://example.com/welcome`será o URL personalizado de `http://example.com/content/v1.0/startpage`
    >[!CAUTION]
    >
    >URLs personalizadas:
@@ -80,7 +80,7 @@ As propriedades são distribuídas por meio de várias guias.
 
    * Indica se você deseja que a página use a URL personalizada.
 
-### Avançado {#advanced}
+### Avançado   {#advanced}
 
 * **Idioma**
 
@@ -99,9 +99,9 @@ As propriedades são distribuídas por meio de várias guias.
    * Especifique um alias a ser usado com esta página.
    >[!NOTE]
    >
-   >O alias define a `sling:alias` propriedade para definir um nome de alias para o recurso (isso afeta apenas o recurso, não o caminho).
+   >O alias ajusta a propriedade `sling:alias` para definir um nome de alias para o recurso (isso afeta apenas o recurso, não o caminho).
    >
-   >Por exemplo: se você definir um alias de `latin-lang` para o `/content/we-retail/spanish` nó, essa página poderá ser acessada via `/content/we-retail/latin-language`
+   >Por exemplo: se você definir um alias de `latin-lang` para o `/content/we-retail/spanish` nó, essa página poderá ser acessada por meio de `/content/we-retail/latin-language`
    >
    >Para obter mais detalhes, consulte Nomes de página localizados em SEO e Práticas recomendadas de gerenciamento de URL.
    <!--
@@ -135,7 +135,7 @@ As propriedades são distribuídas por meio de várias guias.
 
    * Especifique uma configuração de exportação.
 
-### Miniatura {#thumbnail}
+### Miniatura   {#thumbnail}
 
 Exibe a imagem de miniatura da página. É possível:
 
@@ -159,16 +159,16 @@ Exibe a imagem de miniatura da página. É possível:
 
 * **Compartilhamento em rede social**
 
-   Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente de compartilhamento principal](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
+   Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente de compartilhamento principal](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/sharing.html).
 
    * **Permitir o compartilhamento de usuário para Facebook**
    * **Permitir o compartilhamento de usuário para Pinterest**
    * **Variação preferida de XF**
-      * Definir a variação do fragmento da experiência usada para gerar metadados para a página
+      * Define a variação do fragmento de experiência usada para gerar metadados para a página
 
-### Serviços em nuvem {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **Serviços em nuvem**
+* **Cloud Services**
 
    * Defina as propriedades para os serviços em nuvem. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
 
@@ -176,13 +176,13 @@ Exibe a imagem de miniatura da página. É possível:
 
 * **Configurações do ContextHub**
 
-   * Selecione Configuração do ContextHub e  Caminho de segmentos. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * Selecione Configuração do ContextHub e Caminho de segmentos. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
 
 * **Configuração de direcionamento**
 
    * Selecione uma [Marca para especificar um escopo para a segmentação](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
-### Permissões {#permissions}
+### Permissões   {#permissions}
 
 * **Permissões**
 
@@ -195,16 +195,16 @@ Exibe a imagem de miniatura da página. É possível:
 * **Blueprint**
 
    * Defina as propriedades para uma página do Blueprint no gerenciamento de vários sites. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
-   * Controla as circunstâncias sob as quais as modificações serão propagadas no Live-copy.
+   * Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
-### Live Copy {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    * Defina as propriedades para uma página de Live Copy no gerenciamento de vários sites. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site {#site-structure}
+### Estrutura do site   {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
@@ -212,18 +212,18 @@ Exibe a imagem de miniatura da página. É possível:
 
 * No console **Sites**:
    * [Criação de uma nova página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) (um subconjunto das propriedades)
-   * Clicking or tapping **Properties**
+   * Ao clicar ou tocar em **Propriedades**
       * Para uma página única
       * Para várias páginas (apenas um subconjunto das propriedades está disponível para edição em massa)
 * No editor de página:
-   * Using **Page Information** (then **Open Properties**)
+   * Ao usar **Informações da página** (em seguida, **Abrir propriedades**)
 
 ### No console Sites - Página única {#from-the-sites-console-single-page}
 
 Ao clicar ou tocar em **Propriedades** para definir as propriedades da página:
 
 1. Usando o console **Sites**, navegue até o local da página no qual deseja visualizar e editar as propriedades.
-1. Select the **Properties** option for the required page using either:
+1. Selecione a opção **Propriedades da exibição** para a página desejada usando uma das seguintes opções:
    * [Ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * As propriedades da página serão exibidas usando as guias adequadas.
@@ -236,7 +236,7 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 
 1. Abra a página na qual deseja editar as propriedades.
 1. Selecione o ícone **Informações da página** para abrir o menu de seleção:
-1. Select **Open Properties** and a dialog will open allowing you to edit the properties, sorted by the appropriate tab. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
+1. Selecione a opção **Abrir propriedades** e uma caixa de diálogo será aberta permitindo que você edite as propriedades, escolhidas através da guia adequada. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
    * **Cancelar**
    * **Salvar e fechar**
 1. Use o botão **Salvar e fechar** para salvar as alterações.
@@ -247,7 +247,7 @@ No console **Sites** é possível selecionar várias páginas, em seguida, use a
 
 >[!NOTE]
 >
->A edição de itens em massa das propriedades também está disponível para o Assets. É muito semelhante, mas difere em alguns pontos. Consulte Editar propriedades de vários ativos para obter detalhes.
+>A edição de itens em massa das propriedades também está disponível para os Ativos. É muito semelhante, mas difere em alguns pontos. Consulte Editar propriedades de vários ativos para obter detalhes.
 >
 >Também existe o Editor de itens em massa, que permite que você pesquise o conteúdo de várias páginas usando o GQL (Google Query Language) e, em seguida, editar o conteúdo diretamente no editor de itens em massa antes de salvar as alterações para as páginas de origem.
 <!--
@@ -261,14 +261,14 @@ No console **Sites** é possível selecionar várias páginas, em seguida, use a
 * Ao navegar no console **Sites**
 * Após usar a opção **Pesquisar** para localizar um conjunto de páginas
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+Após selecionar as páginas e, em seguida, clicar ou tocar na opção **Propriedades**, as propriedades em massa serão mostradas:
 
 ![Propriedades da página de edição em massa](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
 Só é possível fazer a edição de itens em massa nas páginas que:
 
 * Compartilham o mesmo tipo de recurso
-* Não são parte de uma livecopy
+* Não fazem parte de uma live copy
    * Uma mensagem será mostrada quando as propriedades forem abertas, se qualquer página estiver em uma live copy.
 
 Depois de entrar na edição de itens em massa é possível:
