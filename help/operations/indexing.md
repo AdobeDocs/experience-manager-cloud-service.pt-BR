@@ -2,7 +2,7 @@
 title: Pesquisa e indexação de conteúdo
 description: 'Pesquisa e indexação de conteúdo '
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
 
 ---
 
@@ -61,7 +61,7 @@ Para ambos os pontos 1 e 2 acima, é necessário criar uma nova definição de �
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-O que então precisa de ir para baixo `ui.content/src/main/content/jcr_root`. As pastas de sub-raiz não são suportadas a partir de agora.
+O que então precisa de ir para baixo `ui.apps/src/main/content/jcr_root`. As pastas de sub-raiz não são suportadas a partir de agora.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -71,9 +71,9 @@ O pacote da amostra acima é construído como `com.adobe.granite:new-index-conte
 
 As definições de índice agora são marcadas como personalizadas e com controle de versão:
 
-* A própria definição de índice (por exemplo `/oak:index/ntBaseLucene-custom-1`) que é o conteúdo MUTABLE
+* A própria definição do índice (por exemplo `/oak:index/ntBaseLucene-custom-1`)
 
-Portanto, para implantar um índice, a definição do índice (`/oak:index/definitionname`) deve ser fornecida por meio do pacote **** mutável, normalmente `ui.content` por Git e pelo processo de implantação do Cloud Manager.
+Portanto, para implantar um índice, a definição (`/oak:index/definitionname`) do índice precisa ser fornecida por meio `ui.apps` do processo de implantação Git e do Cloud Manager.
 
 Depois que a nova definição de índice é adicionada, o novo aplicativo precisa ser implantado pelo Cloud Manager. Após a implantação, dois trabalhos são iniciados, responsáveis por adicionar (e mesclar, se necessário) as definições de índice ao MongoDB e ao Azure Segment Store para autor e publicação, respectivamente. Os repositórios subjacentes estão sendo indexados novamente com as novas definições de índice, antes da mudança Blue-Green.
 
@@ -81,9 +81,9 @@ Depois que a nova definição de índice é adicionada, o novo aplicativo precis
 
 ### O que é Gerenciamento de índice {#what-is-index-management}
 
-O gerenciamento de índice trata de adicionar, remover e alterar índices. A alteração da *definição* de um índice é rápida, mas a aplicação da alteração (frequentemente chamada de &quot;criação de um índice&quot; ou, para índices existentes, &quot;reindexação&quot;) requer tempo. Não é instantâneo: o repositório deve ser verificado para que os dados sejam indexados.
+O gerenciamento de índice trata de adicionar, remover e alterar índices. A alteração da *definição* de um índice é rápida, mas a aplicação da alteração (muitas vezes chamada de &quot;criação de um índice&quot; ou, para índices existentes, &quot;reindexação&quot;) requer tempo. Não é instantâneo: o repositório deve ser verificado para que os dados sejam indexados.
 
-### O que é implantação da Blue-Green {#what-is-blue-green-deployment}
+### O que é a implantação do Blue-Green {#what-is-blue-green-deployment}
 
 A implantação Blue-Green pode reduzir o tempo de inatividade. Também permite upgrades sem tempo de inatividade e reversões rápidas. A versão antiga do aplicativo (azul) é executada ao mesmo tempo que a nova versão do aplicativo (verde).
 
@@ -109,7 +109,7 @@ Durante o desenvolvimento ou ao usar instalações locais, os índices podem ser
 
 ### Gerenciamento De Índice Com Implantação Blue-Green {#index-management-with-blue-green-deployment}
 
-Com implantações azul-esverdeadas, não há tempo de inatividade. No entanto, para o gerenciamento de índice, isso requer que os índices sejam usados apenas por determinadas versões do aplicativo. Por exemplo, ao adicionar um índice na versão 2 do aplicativo, você não gostaria que ele fosse usado pela versão 1 do aplicativo. O inverso ocorre quando um índice é removido: um índice removido na versão 2 ainda é necessário na versão 1. Ao alterar uma definição de índice, desejamos que a versão antiga do índice seja usada apenas para a versão 1 e que a nova versão do índice seja usada apenas para a versão 2.
+Com implantações azul-esverdeadas, não há tempo de inatividade. No entanto, para o gerenciamento de índice, isso requer que os índices sejam usados apenas por determinadas versões do aplicativo. Por exemplo, ao adicionar um índice na versão 2 do aplicativo, você não gostaria que ele fosse usado pela versão 1 do aplicativo. O inverso é o caso quando um índice é removido: um índice removido na versão 2 ainda é necessário na versão 1. Ao alterar uma definição de índice, desejamos que a versão antiga do índice seja usada apenas para a versão 1 e que a nova versão do índice seja usada apenas para a versão 2.
 
 A tabela a seguir mostra 5 definições de índice: index `cqPageLucene` é usado em ambas as versões enquanto index `damAssetLucene-custom-1` é usado somente na versão 2.
 
@@ -138,7 +138,7 @@ Quando a Adobe altera um índice predefinido como &quot;damAssetLucene&quot; ou 
 | /oak:index/cqPageLucene | Sim | Sim | Não |
 | /oak:index/cqPageLucene-2 | Sim | Não | Sim |
 
-### Limitações {#limitations}
+### Limitações   {#limitations}
 
 Atualmente, o gerenciamento de índice é compatível apenas com índices do tipo `lucene`.
 
