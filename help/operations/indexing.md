@@ -2,7 +2,7 @@
 title: Pesquisa e indexação de conteúdo
 description: 'Pesquisa e indexação de conteúdo '
 translation-type: tm+mt
-source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
+source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
 
 ---
 
@@ -68,6 +68,10 @@ O que então precisa de ir para baixo `ui.apps/src/main/content/jcr_root`. As pa
 O pacote da amostra acima é construído como `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
 ### Implantação de definições de índice {#deploying-index-definitions}
+
+> [!NOTE]
+>
+> Há um problema conhecido com o Plug-in do pacote Jackrabbit Filevault Maven versão **1.1.0** que não permite que você adicione `oak:index` aos módulos do `<packageType>application</packageType>`. Para contornar esse problema, use a versão **1.0.4**.
 
 As definições de índice agora são marcadas como personalizadas e com controle de versão:
 
