@@ -2,7 +2,7 @@
 title: Configuração do serviço Dynamic Media Cloud
 description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: ad621c24e58fba6bcc873e36544505cc50385509
+source-git-commit: 91f1a7c89b3c3122a0d1cd3fde4a45c16bcff317
 
 ---
 
