@@ -4,7 +4,7 @@ description: Entenda o conceito de coleção nos ativos Adobe Experience Manager
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -77,7 +77,7 @@ Uma coleção inteligente usa um critério de pesquisa para preencher dinamicame
 
    >[!NOTE]
    >
-   >Se você selecionar **[!UICONTROL Público]**, a coleção inteligente ficará disponível para todos com a função Proprietário depois que você a criar. Se você desmarcar a opção **[!UICONTROL Público]** , o grupo de usuários do DAM não estará mais associado à coleção inteligente.
+   >Se você selecionar **[!UICONTROL Público]**, a coleção inteligente ficará disponível para todos com a função Proprietário após criá-la. Se você desmarcar a opção **[!UICONTROL Público]** , o grupo de usuários do DAM não estará mais associado à coleção inteligente.
 
 1. Toque/clique em **[!UICONTROL Salvar]** para criar a coleção inteligente e feche a caixa de mensagem para concluir o processo. A nova coleção inteligente também é adicionada à lista **[!UICONTROL Pesquisas salvas]**.
 O rótulo do botão **[!UICONTROL Criar seleção inteligente]** muda para **[!UICONTROL Editar seleção inteligente]**. Para editar as configurações da coleção inteligente, selecione **[!UICONTROL Arquivos]** na lista **[!UICONTROL Arquivos e pastas]**. Em seguida, toque/clique no botão **[!UICONTROL Editar seleção inteligente]**.
@@ -166,11 +166,11 @@ Você pode editar configurações da coleção, como título e descrição, ou a
 
 ## Baixar uma coleção {#download-a-collection}
 
-Quando você baixa uma coleção, toda a hierarquia de ativos dentro dela é baixada, incluindo pastas e coleções secundárias.
+Quando você baixa uma coleção, toda a hierarquia de ativos dentro dela é baixada, incluindo pastas e coleções-filho.
 
 1. No console Coleções, selecione uma ou mais coleções para baixar.
 1. Na barra de ferramentas, toque/clique no ícone de download.
-1. Na caixa de diálogo **[!UICONTROL Download]** , toque/clique em **[!UICONTROL Download]**. Se desejar baixar as representações dos ativos dentro da coleção, selecione **[!UICONTROL Representações]**. Selecione a opção **[!UICONTROL Email]** para enviar uma notificação por email ao proprietário da coleção.
+1. Na caixa de diálogo **[!UICONTROL Download]** , toque/clique em **[!UICONTROL Download]**. Se desejar baixar as representações dos ativos dentro da coleção, selecione **[!UICONTROL Representações]**. <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    Quando você seleciona uma coleção para download, a hierarquia completa da pasta sob a coleção é baixada. Para incluir cada coleção que você baixa (incluindo ativos em coleções secundárias aninhadas sob a coleção pai) em uma pasta individual, selecione **[!UICONTROL Criar pasta separada para cada ativo]**.
 
