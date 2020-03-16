@@ -4,7 +4,7 @@ description: Saiba mais sobre vários métodos de edição e gerenciamento de at
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -43,7 +43,7 @@ Para visualizar um ativo, siga estas etapas.
 
 1. No modo de visualização, as opções de zoom estão disponíveis para os tipos [de imagem](/help/assets/file-format-support.md) suportados (com edição interativa).
 
-   Para aplicar zoom em um ativo, toque/clique `+` (ou toque/clique na lupa do ativo). Para diminuir o zoom, toque/clique em `-`. Ao aplicar zoom, você pode observar cuidadosamente qualquer área da imagem ao aplicar panorama. A seta para redefinir zoom leva você de volta à exibição original.
+   Para aplicar zoom em um ativo, toque/clique `+` (ou toque/clique na lupa do ativo). Para diminuir o zoom, toque/clique em `-`. Ao ampliar, você pode observar cuidadosamente qualquer área da imagem ao deslocar o panorama. A seta para redefinir zoom leva você de volta à exibição original.
 
    Toque em **[!UICONTROL Redefinir]** para redefinir a exibição para o tamanho original.
 
@@ -102,7 +102,7 @@ Alguns atributos exclusivos a uma cópia específica de um ativo não são trans
 
 As outras propriedades e informações de metadados são mantidas. Uma cópia parcial não é criada ao copiar um ativo.
 
-1. Na interface do usuário do Assets, selecione um ou mais ativos e toque/clique no ícone **[!UICONTROL Copiar]** da barra de ferramentas. Como alternativa, selecione a ação rápida **[!UICONTROL Copiar]** ![copy_icon](assets/copy_icon.png) no cartão de ativos.
+1. Na interface do usuário do Assets, selecione um ou mais ativos e, em seguida, toque/clique no ícone **[!UICONTROL Copiar]** na barra de ferramentas. Como alternativa, selecione a ação rápida **[!UICONTROL Copiar]** ![copy_icon](assets/copy_icon.png) no cartão de ativos.
 
    >[!NOTE]
    >
@@ -139,7 +139,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    >* Ao renomear, o espaço em branco não é permitido no nome do arquivo.
 
 
-1. Na caixa de diálogo **[!UICONTROL Selecionar destino]** , siga um destes procedimentos:
+1. Na caixa de diálogo **[!UICONTROL Selecionar destino]** , execute um dos procedimentos a seguir:
 
    * Navegue até o novo local dos ativos e toque/clique em **[!UICONTROL Avançar]** para continuar.
 
@@ -230,7 +230,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
       * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são referenciados.** Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
    >[!NOTE]
    >
-   >É necessário excluir permissões no dam/asset para excluir um ativo. Se você tiver apenas permissões de modificação, poderá apenas editar os metadados do ativo e adicionar anotações ao ativo. No entanto, não é possível excluir o ativo ou seus metadados.
+   >Você precisa de permissões de exclusão no dam/asset para poder excluir um ativo. Se você tiver apenas permissões de modificação, poderá apenas editar os metadados do ativo e adicionar anotações ao ativo. No entanto, não é possível excluir o ativo ou seus metadados.
 
    >[!NOTE]
    >
@@ -260,17 +260,17 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    >[!NOTE]
    >
-   >Se a pasta que deseja publicar incluir uma pasta vazia, a pasta vazia não será publicada.
+   >Se a pasta que você deseja publicar incluir uma pasta vazia, a pasta vazia não será publicada.
 
 1. Toque/clique em **[!UICONTROL Publicar]** para confirmar a ativação dos ativos.
 
 >[!CAUTION]
 >
->Se você publicar ativos que estão sendo processados, somente o conteúdo original será publicado. As execuções estão faltando. Aguarde a conclusão do processamento e publique ou republique o ativo quando o processamento for concluído.
+>Se você publicar um ativo que está sendo processado, somente o conteúdo original será publicado. As execuções estão faltando. Aguarde a conclusão do processamento e publique ou republique o ativo quando o processamento for concluído.
 
 ## Cancelar publicação de ativos {#unpublishing-assets}
 
-1. Navegue até o local da pasta de ativos/ativos que deseja remover do ambiente de publicação (cancelar publicação).
+1. Navegue até o local da pasta de ativos/ativos que deseja remover do ambiente de publicação (cancelar a publicação).
 
 1. Selecione o ativo/pasta para cancelar a publicação e toque/clique no ícone **[!UICONTROL Gerenciar publicação]** na barra de ferramentas.
 
@@ -315,7 +315,7 @@ Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você tam
 
 ## Pesquisar ativos {#search-assets}
 
-Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos pelos usuários e comerciantes de negócios ou para administração por administradores de DAM.
+Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos por parte de usuários e comerciantes, ou para administração por administradores de DAM.
 
 Para obter pesquisas simples, avançadas e personalizadas para descobrir e usar os ativos mais apropriados, consulte Ativos de [pesquisa no AEM](/help/assets/search-assets.md).
 
@@ -324,11 +324,11 @@ Para obter pesquisas simples, avançadas e personalizadas para descobrir e usar 
 Os ícones de ação rápida estão disponíveis para um único ativo por vez. Dependendo do seu dispositivo, execute as seguintes ações para exibir os ícones de ação rápida:
 
 * Dispositivos de toque: Toque e segure. Por exemplo, em um iPad, é possível tocar e segurar um ativo para que as ações rápidas sejam exibidas.
-* Dispositivos não sensíveis ao toque: Ponteiro do mouse. Por exemplo, em um dispositivo desktop, a barra de ação rápida é exibida se você passar o ponteiro do mouse sobre a miniatura do ativo.
+* Dispositivos não sensíveis ao toque: Passe o ponteiro do mouse. Por exemplo, em um dispositivo de desktop, a barra de ação rápida é exibida se você passar o ponteiro do mouse sobre a miniatura do ativo.
 
 ## Editar imagens {#editing-images}
 
-As ferramentas de edição na interface do AEM Assets permitem executar pequenos trabalhos de edição em ativos de imagem. Você pode cortar, girar, virar e executar outras tarefas de edição em imagens. Também é possível adicionar mapas de imagem a ativos.
+As ferramentas de edição na interface do AEM Assets permitem executar pequenos trabalhos de edição em ativos de imagem. É possível recortar, girar, virar e executar outras tarefas de edição em imagens. Também é possível adicionar mapas de imagem a ativos.
 
 >[!NOTE]
 >
@@ -372,7 +372,7 @@ As ferramentas de edição na interface do AEM Assets permitem executar pequenos
 
 >[!NOTE]
 >
->A edição de imagens é compatível com os formatos BMP, GIF, PNG e JPEG.
+>A edição de imagens é compatível com os formatos de arquivos BMP, GIF, PNG e JPEG.
 
 <!-- You can also add image maps using the image editor. For details, see [Adding Image Maps](/help/assets/image-maps.md). -->
 
@@ -398,13 +398,13 @@ A linha do tempo permite exibir vários eventos de um item selecionado, como flu
 
 Anotações são comentários ou notas explicativas adicionadas a imagens ou vídeos. As anotações fornecem aos comerciantes a capacidade de colaborar e deixar feedback sobre os ativos.
 
-As anotações de vídeo são compatíveis apenas em navegadores com formatos de vídeo compatíveis com HTML5. Os formatos de vídeo suportados pelo AEM Assets dependem do navegador.
+As anotações de vídeo são compatíveis apenas em navegadores com formatos de vídeo compatíveis com HTML5. Os formatos de vídeo compatíveis com o AEM Assets dependem do navegador.
 
 >[!NOTE]
 >
 >Para Fragmentos de conteúdo, [as anotações são criadas no editor](content-fragments/content-fragments.md)de fragmentos.
 
-1. Navegue até o local do ativo ao qual deseja adicionar anotações.
+1. Navegue até o local do ativo ao qual você deseja adicionar anotações.
 1. Toque/clique no ícone **[!UICONTROL Anotar]** de um dos seguintes:
 
    * [Ações rápidas](#quick-actions)
@@ -415,78 +415,79 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
-1. Para notificar um usuário sobre uma anotação, especifique o endereço de email do usuário e adicione o comentário. Por exemplo, para notificar Aaron MacDonald sobre uma anotação, digite @aa. As dicas para todos os usuários correspondentes são exibidas em uma lista. Selecione o endereço de email do Aaron na lista para marcá-la com o comentário. Da mesma forma, você pode marcar mais usuários em qualquer lugar dentro da anotação ou antes ou depois dela.
+<!--
+1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
 
    >[!NOTE]
    >
-   >Para um usuário que não seja administrador, as sugestões serão exibidas somente se o usuário tiver permissões de Leitura em */home* no Crx-de.
+   >For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. Depois de adicionar a anotação, clique em **[!UICONTROL Adicionar]** para salvá-la. Uma notificação para a anotação é enviada para Aaron.
+1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
    >[!NOTE]
    >
-   >É possível adicionar várias anotações antes de salvá-las.
+   >You can add multiple annotations, before you save them.
 
-1. Toque/clique em **[!UICONTROL Fechar]** para sair do modo Anotar.
-1. Para exibir a notificação, faça logon nos ativos AEM com as credenciais do Aaron MacDonald e clique no ícone **[!UICONTROL Notificações]** para exibir a notificação.
+1. Tap/click **[!UICONTROL Close]** to exit from the Annotation mode.
+1. To view the notification, log in to AEM Assets with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
 
    >[!NOTE]
    >
-   >As anotações também podem ser adicionadas aos ativos de vídeo. Ao anotar vídeos, o player pausa para permitir que você anote em um quadro. Para obter detalhes, consulte [Gerenciamento de ativos](manage-video-assets.md)de vídeo.
+   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](manage-video-assets.md).
 
-1. Para escolher uma cor diferente para diferenciar os usuários, clique/toque no ícone Perfil e clique/toque em **[!UICONTROL Minhas preferências]**.
+1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   Especifique a cor desejada na caixa **[!UICONTROL Cor da anotação]** e clique/toque em **[!UICONTROL Aceitar]**.
+   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
 >[!NOTE]
 >
->Também é possível adicionar anotações a uma coleção. No entanto, se uma coleção contiver coleções secundárias, você poderá adicionar anotações/comentários somente à coleção pai. A opção Anotar não está disponível para coleções secundárias.
+>You can also add annotations to a collection. However, if a collection contains child collections, you can add annotations/comments to the parent collection only. The Annotate option is not available for child collections.
 
-### Exibir anotações salvas {#viewing-saved-annotations}
+### View saved annotations {#viewing-saved-annotations}
 
-1. Para exibir anotações salvas para um ativo, navegue até o local do ativo e abra a página do ativo para o ativo.
+1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
-1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** na lista.
+1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. Na lista **[!UICONTROL Exibir todos]** na linha do tempo, selecione **[!UICONTROL Comentários]** para filtrar os resultados com base em anotações.
+1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   Toque/clique em um comentário no painel **[!UICONTROL Linha]** do tempo para exibir a anotação correspondente na imagem.
+   Tap/click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   Toque/clique em **[!UICONTROL Excluir]** para excluir um comentário específico.
+   Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
 
-### Imprimir anotações {#printing-annotations}
+### Print annotations {#printing-annotations}
 
-Se um ativo tiver anotações ou tiver sido submetido a um fluxo de trabalho de revisão, você poderá imprimir o ativo junto com anotações e revisar o status como um arquivo PDF para revisão offline.
+If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
 
-Você também pode imprimir somente as anotações ou o status da revisão.
+You can also choose to print only the annotations or review status.
 
-Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICONTROL Imprimir]** e siga as instruções do assistente. O ícone **[!UICONTROL Imprimir]** aparece na barra de ferramentas somente quando o ativo tem pelo menos uma anotação ou status de revisão atribuídos a ele.
+To print the annotations and review status, tap/click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
 
-1. Na interface do usuário Ativos, abra a página de visualização de um ativo.
-1. Faça uma das seguintes opções:
+1. From the Assets UI, open the preview page for an asset.
+1. Do one of the following:
 
-   * Para imprimir todas as anotações e o status da revisão, pule a etapa 3 e vá diretamente para a etapa 4.
-   * Para imprimir anotações específicas e revisar o status, abra a [linha do tempo](/help/assets/manage-digital-assets.md#timeline) e vá para a etapa 3.
+    * To print all the annotations and the review status, skip step 3 and directly go to step 4.
+    * To print specific annotations and review status, open the [timeline](/help/assets/manage-digital-assets.md#timeline) and then go to step 3.
 
-1. Para imprimir anotações específicas, selecione as anotações na linha do tempo.
+1. To print specific annotations, select the annotations from the timeline.
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-   Para imprimir somente o status da revisão, selecione-o na linha do tempo.
+   To print the review status only, select it from the timeline.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -494,100 +495,100 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. Na caixa de diálogo Imprimir, escolha a posição que deseja que o status de anotações/revisão seja exibido no PDF. Por exemplo, se desejar que as anotações/status sejam impressas na parte superior direita da página que contém a imagem impressa, use a configuração **Superior esquerda** . Está selecionado por padrão.
+1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   É possível escolher outras configurações, dependendo da posição em que deseja que as anotações/status apareçam no PDF impresso. Se desejar que as anotações/status apareçam em uma página separada do ativo impresso, escolha **[!UICONTROL Próxima página]**.
+   You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
    >[!NOTE]
    >
-   >Anotações extensas podem não ser renderizadas corretamente no arquivo PDF. Para uma renderização ideal, a Adobe recomenda que você limite as anotações a 50 palavras.
+   >Lengthy annotations may not render properly in the PDF file. For optimal rendering, Adobe recommends that you limit annotations to 50 words.
 
-1. Toque/clique em **[!UICONTROL Imprimir]**. Dependendo da opção escolhida na etapa 2, o PDF gerado exibirá as anotações/os status na posição especificada. Por exemplo, se optar por imprimir as anotações e o status da revisão usando a configuração **Superior esquerdo**, o resultado será semelhante ao arquivo PDF mostrado aqui.
+1. Tap/click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Baixe ou imprima o PDF usando as opções na parte superior direita.
+1. Download or print the PDF using the options at the top-right.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor, o tamanho e o estilo da fonte, a cor de plano de fundo dos comentários e status, abra a configuração **[!UICONTROL do PDF de]** anotação no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/manage-digital-assets.md#annotating).
+   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
-   Retorne ao arquivo PDF renderizado e atualize-o. O PDF atualizado reflete as alterações feitas.
+   Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 
-## Controle de versão de ativos {#asset-versioning}
+## Asset versioning {#asset-versioning}
 
-O controle de versão cria um instantâneo de ativos digitais em um ponto específico do tempo. O controle de versão ajuda a restaurar ativos para um estado anterior posteriormente. Por exemplo, se você deseja desfazer uma alteração feita em um ativo, restaure a versão não editada do ativo.
+Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
 
-A seguir estão os cenários nos quais você cria versões:
+The following are scenarios where you create versions:
 
-* Você modifica uma imagem em um aplicativo diferente e faz upload para os ativos AEM. Uma versão da imagem é criada para que sua imagem original não seja substituída.
-* Edite os metadados de um ativo.
-* Use o aplicativo de desktop AEM para fazer check-out de um ativo existente e salvar as alterações. Uma nova versão é criada sempre que o ativo é salvo.
+* You modify an image in a different application and upload to AEM Assets. A version of the image is created so your original image is not overwritten.
+* You edit the metadata of an asset.
+* You use AEM desktop app to checkout an existing asset and save your changes. A new version is created everytime the asset is saved.
 
-Você também pode ativar o controle automático de versão por meio de um fluxo de trabalho. Quando você cria uma versão para um ativo, os metadados e as execuções são salvos junto com a versão. As execuções são alternativas renderizadas das mesmas imagens, por exemplo, uma execução PNG de um arquivo JPEG carregado.
+You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 
-A funcionalidade de controle de versão permite fazer o seguinte:
+The versioning functionality lets you do the following:
 
-* Criar uma versão de um ativo.
-* Exibir a revisão atual de um ativo.
-* Restaure o ativo para uma versão anterior.
+* Create a version of an asset.
+* View the current revision for an asset.
+* Restore the asset to a previous version.
 
-1. Navegue até o local do ativo para o qual deseja criar uma versão e toque/clique nele para abrir sua página de ativo.
+1. Navigate to the location of the asset for which you want to create a version, and tap/click it to open its asset page.
 
-1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** no menu.
+1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu.
 
-   ![linha do tempo](assets/timeline.png)
+   ![timeline](assets/timeline.png)
 
-1. Toque/clique no ícone **[!UICONTROL Ações]** (seta) na parte inferior para exibir as ações disponíveis que podem ser executadas no ativo.
+1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to view the available actions you can perform on the asset.
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. Toque/clique em **[!UICONTROL Salvar como versão]** para criar uma versão para o ativo.
+1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Adicione um rótulo e um comentário e clique em **[!UICONTROL Criar]** para criar uma versão. Como alternativa, toque/clique em **Cancelar** para sair da operação.
+1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Para exibir a nova versão, abra a lista **[!UICONTROL Mostrar tudo]** na linha do tempo da página Detalhes do ativo ou na interface do usuário do Assets e escolha **[!UICONTROL Versões]**. Todas as versões criadas para um ativo são listadas na guia Linha do tempo. Filtre a lista para mostrar Versões ao clicar na seta suspensa e selecionar **[!UICONTROL Versões]** na lista.
+1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
 
-   ![version_option](assets/versions_option.png)
+   ![versions_option](assets/versions_option.png)
 
-1. Selecione uma versão específica do ativo para visualizá-lo ou permitir que ele apareça na interface do usuário do Assets.
+1. Select a specific version for the asset to preview it or enable it to appear in the Assets UI.
 
    ![select_version](assets/select_version.png)
 
-1. Adicione um rótulo e um comentário para a versão para reverter para a versão específica na interface do usuário do Assets.
+1. Add a label and comment for the version to revert to the particular version in the Assets UI.
 
    ![save_version](assets/save_version.png)
 
-1. Para gerar uma visualização da versão, toque/clique em **[!UICONTROL Visualizar versão]**.
-1. Para exibir essa versão na interface do usuário do Assets, selecione **[!UICONTROL Reverter para esta versão]**.
-1. Para comparar entre duas versões, vá para a página de ativos do ativo e toque/clique na versão a ser comparada com a versão atual.
+1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
+1. To display this version in the Assets UI, select **[!UICONTROL Revert to this Version]**.
+1. To compare between two versions, go to asset page of the asset and tap/click the version to be compared with the current version.
 
-   ![select_version_to-compare](assets/select_version_tocompare.png)
+   ![select_version_tocompare](assets/select_version_tocompare.png)
 
-1. Na linha do tempo, selecione a versão que deseja comparar e arraste o controle deslizante para a esquerda para sobrepor essa versão à versão atual e compare.
+1. From the timeline, select the version you want to compare and drag the slider to the left to superimpose this version over the current version and compare.
 
-   ![compare_Versões](assets/compare_versions.png)
+   ![compare_versions](assets/compare_versions.png)
 
-### Iniciar um fluxo de trabalho em um ativo {#starting-a-workflow-on-an-asset}
+### Starte a workflow on an asset {#starting-a-workflow-on-an-asset}
 
-1. Navegue até o local do ativo para o qual você deseja iniciar um fluxo de trabalho e toque/clique no ativo para abrir a página do ativo.
-1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha]** do tempo no menu para exibir a linha do tempo.
+1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
+1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
 
-   ![linha do tempo 1](assets/timeline-1.png)
+   ![timeline-1](assets/timeline-1.png)
 
-1. Toque/clique no ícone **[!UICONTROL Ações]** (seta) na parte inferior para abrir a lista de ações disponíveis para o ativo.
+1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. Toque/clique em **[!UICONTROL Iniciar fluxo de trabalho]** na lista.
+1. Tap/click **[!UICONTROL Start Workflow]** from the list.
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
@@ -595,19 +596,19 @@ A funcionalidade de controle de versão permite fazer o seguinte:
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. (Opcional) Especifique um título para o fluxo de trabalho, que pode ser usado para fazer referência à instância do fluxo de trabalho.
+1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Toque/clique em **[!UICONTROL Iniciar]** e em **[!UICONTROL Prosseguir]** na caixa de diálogo para confirmar. Cada etapa do fluxo de trabalho é exibida na linha do tempo como um evento.
+1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-## Coleções {#collections}
+## Collections {#collections}
 
-Uma coleção é um conjunto ordenado de ativos. Use coleções para compartilhar ativos entre usuários.
+A collection is an ordered set of assets. Use collections to share assets between users.
 
-* Uma coleção pode incluir ativos de diferentes locais, pois eles só contêm referências a esses ativos. Cada coleção mantém a integridade referencial dos ativos.
-* Você pode compartilhar coleções com vários usuários com diferentes níveis de privilégio, incluindo edição, visualização e assim por diante.
+* A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
+* You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
-Consulte [Gerenciamento de coleções](/help/assets/manage-collections.md) para obter detalhes sobre o gerenciamento de coleções.
+See [Managing Collections](/help/assets/manage-collections.md) for details on collection management.
