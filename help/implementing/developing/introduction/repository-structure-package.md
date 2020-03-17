@@ -1,13 +1,13 @@
 ---
-title: 'Desenvolver um pacote de estrutura do repositório   '
-description: O Adobe Experience Manager como um projeto do Cloud Service Maven requer uma definição do Subpacote da estrutura do repositório cujo único objetivo é definir as raízes do repositório JCR nas quais os subpacotes de código do projeto são implantados.
+title: 'Pacote de estrutura do repositório de projetos do AEM  '
+description: O Adobe Experience Manager como um projeto do Cloud Service Maven requer uma definição do Subpacote da Estrutura do Repositório cujo único objetivo é definir as raízes do repositório JCR nas quais os subpacotes de Código do projeto são implantados.
 translation-type: tm+mt
-source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
 
-# Desenvolver um pacote de estrutura do repositório
+# Pacote de estrutura do repositório de projetos do AEM
 
 Os projetos Maven para o Adobe Experience Manager como um serviço em nuvem exigem uma definição de subpacote de estrutura de repositório cujo único objetivo é definir as raízes do repositório JCR nas quais os subpacotes de código do projeto são implantados. Isso garante que a instalação de pacotes no Experience Manager como um serviço em nuvem seja automaticamente solicitada pelas dependências de recursos do JCR. As dependências em falta podem levar a cenários em que as subestruturas seriam instaladas antes das suas estruturas principais e, por conseguinte, seriam removidas inesperadamente, quebrando a implantação.
 
@@ -97,7 +97,7 @@ Certifique-se de adicionar esse novo subprojeto Maven à `<modules>` lista de pr
 
 Para usar o pacote de estrutura do repositório, consulte-o por meio de todos os pacotes de código (os subpacotes que implantam em `/apps`) projetos Maven por meio da configuração de plug-ins Maven do pacote de conteúdo FileVault `<repositoryStructurePackage>` .
 
-No `ui.apps/pom.xml`, e em qualquer outro pacote `pom.xml`de códigos, adicione uma referência à configuração do pacote de estrutura do repositório (#repository-structure-package) ao plug-in FileVault package Maven.
+No `ui.apps/pom.xml`, e em qualquer outro pacote `pom.xml`de códigos, adicione uma referência à configuração do pacote de estrutura de repositório (#repository-structure-package) do projeto ao plug-in FileVault package Maven.
 
 ```xml
 ...
