@@ -1,21 +1,21 @@
 ---
-title: Consoles de ferramentas
-description: Saiba mais sobre os diferentes consoles de ferramentas em todo o AEM.
-translation-type: tm+mt
+title: Consoles Ferramentas
+description: Saiba mais sobre os diferentes consoles Ferramentas em todo o AEM.
+translation-type: ht
 source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 ---
 
 
-# Consoles de ferramentas{#tools-consoles}
+# Consoles Ferramentas{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository.
+Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo.
 
-Esses consoles podem ser acessados no Painel [Ferramentas da Navegação](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel)global.
+Esses consoles podem ser acessados no Painel [Ferramentas da Navegação global](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel).
 
 >[!NOTE]
 >
->Como os cartões na interface do usuário fornecem detalhes sobre a finalidade de cada opção, esta tabela simplesmente fornece uma referência rápida sobre a localização dos recursos no painel Ferramentas.
+>Como os cartões na interface do usuário fornecem detalhes sobre a finalidade de cada opção, esta tabela fornece apenas uma referência rápida sobre a localização dos recursos no painel Ferramentas.
 
 <table>
  <tbody>
@@ -189,7 +189,7 @@ Esses consoles podem ser acessados no Painel [Ferramentas da Navegação](/help/
   </tr>
   <tr>
    <td> </td>
-   <td>Permissões </td>
+   <td>Permissões  </td>
   </tr>
   <tr>
    <td> </td>
@@ -213,11 +213,11 @@ Esses consoles podem ser acessados no Painel [Ferramentas da Navegação](/help/
   </tr>
   <tr>
    <td> </td>
-   <td>Serviços na nuvem herdados</td>
+   <td>Cloud Services herdados</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Serviços de tradução na nuvem</td>
+   <td>Cloud Services de tradução</td>
   </tr>
   <tr>
    <td> </td>
