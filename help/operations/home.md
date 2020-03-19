@@ -28,7 +28,7 @@ Esta página lista os recursos de autoajuda sobre operações e manutenção do 
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
 | [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário de sites](/help/sites-cloud/home.md) | Entenda como administrar os sites do Experience Manager as a Cloud Service. |
-| [Guia do usuário de ativos](/help/assets/home.md) | Entenda como administrar os ativos do Experience Manager as a Cloud Service. |
+| [Guia do usuário de ativos](/help/assets/home.md) | Entenda como administrar o Experience Manager Assets as a Cloud Service. |
 | [Implementação do guia do usuário](/help/implementing/home.md) | Saiba como personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação do desenvolvimento. |
 | [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar soluções ao Experience Manager as a Cloud Service. |
 
