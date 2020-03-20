@@ -2,7 +2,7 @@
 title: Integração com o Adobe Target
 description: 'Integração com o Adobe Target '
 translation-type: tm+mt
-source-git-commit: 94ba99acf2d14219d63485e3443b7080b8ba32bd
+source-git-commit: ed8cfc564e198552ae4efabee1ff48950470790a
 
 ---
 
@@ -42,7 +42,7 @@ Para integrar-se ao Target, execute as seguintes tarefas:
 
 >[!CAUTION]
 >
->No AEM como um serviço em nuvem, o agente de replicação que sincroniza ofertas e atividades do AEM com o Adobe Target é desativado por padrão. Entre em contato com o suporte [da](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) Adobe se precisar reativar o agente de replicação.
+>No AEM como um serviço em nuvem, o agente de replicação que sincroniza ofertas e atividades do AEM com o Adobe Target é desativado por padrão. Entre em contato com a equipe de suporte [da](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) Adobe se precisar reativar o agente de replicação.
 
 >[!NOTE]
 >
