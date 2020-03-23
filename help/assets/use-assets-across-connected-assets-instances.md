@@ -3,7 +3,7 @@ title: Use o Connected Assets para compartilhar ativos do DAM no fluxo de trabal
 description: Use os ativos disponíveis em uma implantação remota do Adobe Experience Manager Assets ao criar suas páginas da Web em outra implantação do Experience Manager Site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e3835cd4363a01fdf773831aa6f145a62dda6ae3
+source-git-commit: 77494565596f3d7ac04613c057f0fccc8be71eab
 
 ---
 
@@ -18,7 +18,7 @@ O AEM Sites oferece recursos para criar páginas da Web e o AEM Assets é o sist
 
 Ao editar páginas no Editor de páginas, os autores podem pesquisar, procurar e incorporar facilmente ativos de uma implantação diferente do AEM Assets. Para fazer um administrador do AEM, faça uma integração única de uma implantação local do AEM Sites com uma implantação diferente (remota) do AEM Assets.
 
-Para os autores do Sites, os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e uso ininterruptos de alguns ativos remotos de cada vez. Para disponibilizar muitos ativos remotos em uma única implantação local, considere migrar os ativos em massa.
+Para os autores do Sites, os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e uso ininterruptos de alguns ativos remotos de cada vez. Para disponibilizar muitos ativos remotos em uma implantação local de uma só vez, você pode migrá-los em massa.
 
 ### Pré-requisitos e implantações compatíveis {#prerequisites}
 
@@ -153,7 +153,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
 Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se os metadados associados não puderem ser editados.
 
-## Limitações     {#limitations}
+## Limitações      {#limitations}
 
 **Permissões e gerenciamento de ativos**
 
@@ -164,7 +164,7 @@ Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se o
 * Os esquemas de metadados não são buscados.
 * Todos os Autores do Sites têm permissões de leitura nas cópias buscadas, mesmo que não tenham acesso à implantação remota do DAM.
 * Não há suporte de API para personalizar a integração.
-* A funcionalidade suporta pesquisa e uso ininterruptos de ativos remotos. Para disponibilizar muitos ativos remotos em uma única implantação local, considere migrar os ativos. Consulte [guia de migração de Ativos](assets-migration-guide.md).
+* A funcionalidade suporta pesquisa e uso ininterruptos de ativos remotos. Para disponibilizar muitos ativos remotos em uma única implantação local, considere migrar os ativos.
 * Não é possível usar um ativo remoto como miniatura de uma página da Web na guia [!UICONTROL Miniatura], em [!UICONTROL Propriedades da página], clicando em [!UICONTROL Selecionar imagem].
 
 **Configuração e licenciamento**
