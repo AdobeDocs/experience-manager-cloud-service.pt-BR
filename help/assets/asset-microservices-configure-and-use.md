@@ -1,9 +1,9 @@
 ---
-title: Configurar e usar microserviços de ativos para processamento de ativos
+title: Configurar e usar os microserviços de ativos para processamento de ativos
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 45810a3bc5bb333b03d63d56e170388f0a1c082e
 
 ---
 
@@ -48,7 +48,7 @@ Para os requisitos específicos de geração de representação ou processamento
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 
 Para alterar o perfil existente, consulte [Configurações para microserviços](#configure-asset-microservices)de ativos.
-Para criar perfis de processamento personalizados específicos às suas necessidades personalizadas, digamos para integração com outros sistemas, consulte fluxos de trabalho [de](#post-processing-workflows)pós-processamento.
+Para criar perfis de processamento personalizados específicos às suas necessidades personalizadas, digamos para integração com outros sistemas, consulte Fluxos de trabalho [de](#post-processing-workflows)pós-processamento.
 
 ## Configurações para microserviços de ativos {#configure-asset-microservices}
 
@@ -56,20 +56,20 @@ Para configurar os microserviços de ativos, os administradores podem usar a int
 
 ### Configuração padrão {#default-config}
 
-Com a configuração padrão, somente o perfil de processamento [!UICONTROL padrão] é configurado. É uma versão integrada e não pode ser modificada. É sempre executado para garantir que todo o processamento exigido pelo aplicativo ocorra.
+Com a configuração padrão, somente o perfil de processamento padrão é configurado. O perfil de processamento padrão não está visível na interface do usuário e você não pode modificá-lo. Ele sempre é executado para processar ativos carregados. Um perfil de processamento padrão garante que todo o processamento básico exigido pelo Experience Manager seja concluído em todos os ativos.
 
-![perfis de processamento-padrão](assets/processing-profiles-standard.png)
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
 O perfil de processamento padrão fornece a seguinte configuração de processamento:
 
-* Miniaturas padrão usadas pela interface do usuário do ativo (48, 140 e 319 px)
+* Miniaturas padrão usadas pela interface do usuário do Ativo (48, 140 e 319 px)
 * Visualização grande (execução da Web - 1280 px)
 * Extração de metadados
 * Extração de texto
 
 ### Formatos de arquivo não suportados {#supported-file-formats}
 
-Os microserviços de ativos oferecem suporte para uma grande variedade de formatos de arquivo em termos da capacidade de gerar execuções ou extrair metadados. Consulte formatos [de arquivo](file-format-support.md) suportados para obter a lista completa.
+Os microserviços de ativos oferecem suporte para uma grande variedade de formatos de arquivo em termos da capacidade de gerar execuções ou extrair metadados. Consulte os formatos [de arquivo](file-format-support.md) suportados para obter a lista completa.
 
 ### Adicionar perfis de processamento adicionais {#processing-profiles}
 
@@ -103,13 +103,13 @@ Caso contrário, o tipo MIME será verificado em relação ao tipo MIME incluíd
 
 #### Representação especial do FPO {#special-fpo-rendition}
 
-O perfil de processamento pode incluir uma &quot;representação FPO&quot; especial, que é usada quando o [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) é usado com o Adobe InDesign para colocar links diretos a ativos do Experience Manager em documentos do InDesign.
+Ao colocar ativos de grande porte do AEM em documentos do Adobe InDesign, um profissional criativo deve aguardar por um tempo significativo depois de [colocar um ativo](https://helpx.adobe.com/indesign/using/placing-graphics.html). Enquanto isso, o usuário é impedido de usar o InDesign. Isso interrompe o fluxo criativo e afeta negativamente a experiência do usuário. A Adobe permite que execuções de pequeno porte sejam colocadas temporariamente em documentos do InDesign para começar, o que pode ser substituído por ativos de resolução completa sob demanda posteriormente. O Experience Manager fornece execuções que são usadas apenas para posicionamento (FPO). Essas renderizações FPO têm um tamanho de arquivo pequeno, mas têm a mesma proporção.
 
-Consulte a [documentação](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) do Adobe Asset Link para saber se você precisa ativá-lo para seu perfil de processamento.
+O perfil de processamento pode incluir uma execução FPO (Somente para disposição). Consulte a [documentação](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) do Adobe Asset Link para saber se você precisa ativá-lo para seu perfil de processamento. Para obter mais informações, consulte a documentação [completa do Link de ativos](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)da Adobe.
 
 ## Usar microserviços de ativos para processar ativos {#use-asset-microservices}
 
-Depois que mais perfis de processamento forem criados, eles precisarão ser aplicados a pastas específicas para que o Experience Manager os use no processamento de ativos para ativos carregados ou atualizados nessas pastas. O perfil de processamento padrão incorporado é sempre executado.
+Crie e aplique perfis de processamento adicionais e personalizados a pastas específicas para que o Experience Manager processe o processamento de ativos carregados ou atualizados nessas pastas. O perfil padrão de processamento padrão incorporado é sempre executado, mas não é visível na interface do usuário. Se você adicionar um perfil personalizado, ambos os perfis serão usados para processar os ativos carregados.
 
 Há duas maneiras de aplicar perfis de processamento às pastas:
 
@@ -142,26 +142,26 @@ Os exemplos incluem:
 * integrações para adicionar metadados ou propriedades a ativos de sistemas externos, por exemplo, informações sobre produtos ou processos.
 * processamento adicional feito por serviços externos
 
-A adição de uma configuração de fluxo de trabalho pós-processamento ao Experience Manager é composta das seguintes etapas:
+A adição de uma configuração de fluxo de trabalho de pós-processamento ao Experience Manager é composta das seguintes etapas:
 
 * Criação de um ou mais modelos de fluxo de trabalho. Chamaremos a eles &quot;modelos de fluxo de trabalho de pós-processamento&quot;, mas eles são modelos de fluxo de trabalho AEM comuns.
 * Adicionando etapas específicas do fluxo de trabalho a esses modelos. Essas etapas serão executadas nos ativos com base na configuração do modelo de fluxo de trabalho.
 * O último passo desse modelo deve ser o `DAM Update Asset Workflow Completed Process` passo. Isso é necessário para garantir que o AEM saiba que o processamento terminou e que o ativo pode ser marcado como processado (&quot;Novo&quot;)
 * Criando uma configuração para o Serviço do Executador de Fluxo de Trabalho Personalizado, que permite configurar a execução de um modelo de fluxo de trabalho de pós-processamento por caminho (localização da pasta) ou expressão regular
 
-### Criação de modelos de fluxo de trabalho de pós-processamento
+### Criar modelos de fluxo de trabalho de pós-processamento {#create-post-processing-workflow-models}
 
-Os modelos de fluxo de trabalho de pós-processamento são modelos de fluxo de trabalho AEM comuns. Crie outros se precisar de processamento diferente para locais de repositório ou tipos de ativos diferentes.
+Os modelos de fluxo de trabalho de pós-processamento são modelos de fluxo de trabalho AEM comuns. Crie modelos diferentes se precisar de processamento diferente para locais de repositório ou tipos de ativos diferentes.
 
-As etapas de processamento devem ser adicionadas com base nas necessidades. Você pode usar todas as etapas prontas para uso compatíveis disponíveis, bem como quaisquer etapas de fluxo de trabalho implementadas personalizadas.
+As etapas de processamento devem ser adicionadas com base nas necessidades. Você pode usar quaisquer etapas compatíveis disponíveis, bem como quaisquer etapas de fluxo de trabalho implementadas por personalização.
 
-A última etapa de cada fluxo de trabalho pós-processamento precisa ser a `DAM Update Asset Workflow Completed Process`. Isso garante que o ativo esteja marcado corretamente como &quot;processamento concluído&quot;.
+Verifique se a última etapa de cada fluxo de trabalho de pós-processamento está `DAM Update Asset Workflow Completed Process`. A última etapa ajuda a garantir que o Experience Manager saiba quando o processamento de ativos é concluído.
 
-### Configuração da execução do fluxo de trabalho pós-processamento
+### Configurar a execução do fluxo de trabalho pós-processamento {#configure-post-processing-workflow-execution}
 
 Para configurar os modelos de fluxo de trabalho de pós-processamento a serem executados para ativos carregados ou atualizados no sistema após a conclusão do processamento dos microserviços de ativos, o serviço do Custom Workflow Runner precisa ser configurado.
 
-O serviço Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) é um serviço OSGi e fornece duas opções para configuração:
+O serviço de Executador de Fluxo de Trabalho Personalizado (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) é um serviço OSGi e fornece duas opções para configuração:
 
 * Fluxos de trabalho de pós-processamento por caminho (`postProcWorkflowsByPath`): Vários modelos de fluxo de trabalho podem ser listados, com base em diferentes caminhos de repositório. Caminhos e modelos devem ser separados por dois pontos. Caminhos de repositório simples são suportados e devem ser mapeados para um modelo de fluxo de trabalho no `/var` caminho. Por exemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Fluxos de trabalho de pós-processamento por expressão (`postProcWorkflowsByExpression`): Vários modelos de fluxo de trabalho podem ser listados, com base em diferentes expressões regulares. Expressões e modelos devem ser separados por dois pontos. A expressão regular deve apontar para o nó Ativo diretamente, e não para uma das execuções ou arquivos. Por exemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
@@ -169,6 +169,6 @@ O serviço Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow
 >[!NOTE]
 >
 >A configuração do Custom Workflow Runner é uma configuração de um serviço OSGi. Consulte [implantar no Experience Manager](/help/implementing/deploying/overview.md) para obter informações sobre como implantar uma configuração OSGi.
-> O console da Web OSGi, ao contrário das implantações de serviços locais e gerenciados do AEM, não está disponível diretamente nas implantações de serviços em nuvem.
+> O console da Web do OSGi, ao contrário das implantações de serviços locais e gerenciados do AEM, não está disponível diretamente nas implantações de serviços em nuvem.
 
-Para obter detalhes, sobre quais etapas padrão do fluxo de trabalho podem ser usadas no fluxo de trabalho de pós-processamento, consulte Etapas do [fluxo de trabalho no fluxo de trabalho](developer-reference-material-apis.md#post-processing-workflows-steps) de pós-processamento na referência do desenvolvedor.
+Para obter detalhes sobre qual etapa de fluxo de trabalho padrão pode ser usada no fluxo de trabalho de pós-processamento, consulte as etapas do [fluxo de trabalho no fluxo de trabalho](developer-reference-material-apis.md#post-processing-workflows-steps) de pós-processamento na referência do desenvolvedor.
