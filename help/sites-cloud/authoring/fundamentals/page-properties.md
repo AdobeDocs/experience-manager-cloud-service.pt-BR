@@ -1,8 +1,8 @@
 ---
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
 
@@ -159,7 +159,7 @@ Exibe a imagem de miniatura da página. É possível:
 
 * **Compartilhamento em rede social**
 
-   Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente de compartilhamento principal](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/sharing.html).
+   Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente de compartilhamento principal](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
 
    * **Permitir o compartilhamento de usuário para Facebook**
    * **Permitir o compartilhamento de usuário para Pinterest**
@@ -181,6 +181,8 @@ Exibe a imagem de miniatura da página. É possível:
 * **Configuração de direcionamento**
 
    * Selecione uma [Marca para especificar um escopo para a segmentação](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   >[!NOTE]
+   >Essa opção exige que a conta de usuário esteja no `Target Adminstrators`grupo.
 
 ### Permissões   {#permissions}
 
@@ -215,7 +217,7 @@ Exibe a imagem de miniatura da página. É possível:
    * Ao clicar ou tocar em **Propriedades**
       * Para uma página única
       * Para várias páginas (apenas um subconjunto das propriedades está disponível para edição em massa)
-* No editor de página:
+* No editor de páginas:
    * Ao usar **Informações da página** (em seguida, **Abrir propriedades**)
 
 ### No console Sites - Página única {#from-the-sites-console-single-page}
@@ -243,7 +245,7 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 
 ### No console Sites - Várias páginas {#from-the-sites-console-multiple-pages}
 
-No console **Sites** é possível selecionar várias páginas, em seguida, use a opção **Propriedades da exibição** para visualizar e/ou editar as propriedades da página. Isso refere-se à edição de itens em massa das propriedades da página.
+No console **Sites**, é possível selecionar várias páginas e usar **Propriedades de exibição** para exibir e/ou editar as propriedades da página. Isso é conhecido como edição em massa das propriedades da página.
 
 >[!NOTE]
 >
