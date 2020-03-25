@@ -1,13 +1,13 @@
 ---
-title: Estrutura do projeto do AEM
+title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
+source-git-commit: 36860ba390b1ba695188746ba9659b920191026b
 
 ---
 
 
-# Estrutura do projeto do AEM
+# Estrutura de projetos do AEM
 
 >[!TIP]
 >
@@ -43,7 +43,7 @@ Este diagrama fornece uma visão geral da estrutura do projeto e dos artefatos d
 
 A estrutura de implantação do aplicativo recomendada é a seguinte:
 
-+ O `ui.apps` pacote, ou Pacote de conteúdo, contém todo o código a ser implantado e só é implantado `/apps`. Os elementos comuns do `ui.apps` pacote incluem, mas não se limitam a:
++ O `ui.apps` pacote, ou Pacote de código, contém todo o código a ser implantado e só é implantado `/apps`. Os elementos comuns do `ui.apps` pacote incluem, mas não se limitam a:
    + Pacotes OSGi
       + `/apps/my-app/install`
    + Configurações do OSGi
@@ -69,7 +69,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
          + Grupos
          + ACLs (permissões)
             + Qualquer `rep:policy` caminho (mutável ou imutável)
-+ O `ui.content` pacote, ou Pacote de código, contém todo o conteúdo e a configuração. Os elementos comuns do `ui.content` pacote incluem, mas não se limitam a:
++ O `ui.content` pacote, ou Pacote de conteúdo, contém todo o conteúdo e a configuração. Os elementos comuns do `ui.content` pacote incluem, mas não se limitam a:
    + Configurações sensíveis ao contexto
       + `/conf`
    + Estruturas de conteúdo necessárias e complexas (ou seja, Compilação de conteúdo que é criada e estende além das estruturas de conteúdo da Linha de base definidas no Repo Init.
@@ -84,7 +84,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
 
    Os pacotes agora são incluídos usando a configuração [incorporada do plug-in Maven](#embeddeds)FileVault Package Maven, em vez da `<subPackages>` configuração.
 
-   Para implantações complexas do Experience Manager, pode ser desejável criar vários projetos `ui.apps` e `ui.content` pacotes que representem sites ou locatários específicos no AEM. Se isso for feito, verifique se a divisão entre conteúdo mutável e imutável é respeitada e se os pacotes de conteúdo necessários são adicionados como subpacotes no pacote de conteúdo do `all` contêiner.
+   Para implantações complexas do Experience Manager, pode ser desejável criar vários projetos `ui.apps` e `ui.content` pacotes que representem sites ou locatários específicos no AEM. Se isso for feito, verifique se a divisão entre conteúdo mutável e imutável é respeitada e se os pacotes de conteúdo necessários são adicionados como subpacotes no pacote de conteúdo do `all` container.
 
    Por exemplo, uma estrutura complexa de pacote de conteúdo de implantação pode ter a seguinte aparência:
 
@@ -99,7 +99,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
 
 As embalagens devem ser marcadas com o tipo de embalagem declarado.
 
-+ Os pacotes de contêiner não devem ter um `packageType` conjunto.
++ Os pacotes de Container não devem ter um `packageType` conjunto.
 + Os pacotes de código (imutáveis) devem definir seus `packageType` como `application`.
 + Os pacotes de conteúdo (mutável) devem definir `packageType` como `content`.
 
@@ -160,19 +160,19 @@ Observe que os pacotes de conteúdo (`<packageType>content</packageType>`) **nã
 >
 >Consulte a seção Trechos [XML](#xml-repository-structure-package) POM abaixo para obter um trecho completo.
 
-## Como incorporar subpacotes no pacote de contêiner{#embeddeds}
+## Incorporação de subpacotes no pacote de Container{#embeddeds}
 
 Os pacotes de conteúdo ou código são colocados em uma pasta especial &quot;carro lateral&quot; e podem ser direcionados para instalação no autor do AEM, na publicação do AEM ou em ambos, usando a `<embeddeds>` configuração do plug-in FileVault Maven. Observe que a `<subPackages>` configuração não deve ser usada.
 
 Os casos de uso frequentes incluem:
 
 + ACLs/permissões diferentes entre usuários do autor de AEM e usuários de publicação de AEM
-+ Configurações usadas para suportar atividades somente no autor do AEM
++ Configurações usadas para suportar atividade somente no autor do AEM
 + Códigos como integrações com sistemas de back-office, necessários apenas para execução no autor de AEM
 
 ![Incorporação de pacotes](assets/embeddeds.png)
 
-Para direcionar o autor do AEM, a publicação do AEM ou ambos, o pacote é incorporado no pacote do `all` contêiner em um local de pasta especial, no seguinte formato:
+Para público alvo do autor do AEM, da publicação do AEM ou de ambos, o pacote é incorporado no pacote do `all` container em um local de pasta especial, no seguinte formato:
 
 `/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
 
@@ -194,11 +194,11 @@ Detalhando a estrutura desta pasta:
 + A pasta de 4º nível contém os pacotes secundários e deve ser uma das seguintes:
    + `install` para instalar no autor do AEM **e** na publicação do AEM
    + `install.author` para instalar **somente** no autor do AEM
-   + `install.publish` para instalar **somente** no AEM publishObserve que somente `install.author` e `install.publish` são alvos suportados. Outros modos de execução **não são** compatíveis.
+   + `install.publish` para instalar **somente** no AEM publishObserve que somente `install.author` e `install.publish` são públicos alvos suportados. Outros modos de execução **não são** compatíveis.
 
 Por exemplo, uma implantação que contenha o autor do AEM e publique pacotes específicos pode ser semelhante ao seguinte:
 
-+ `all` O pacote de contêiner incorpora os seguintes pacotes, para criar um artefato de implantação singular
++ `all` O pacote de Container incorpora os seguintes pacotes para criar um artefato de implantação singular
    + `ui.apps` incorporado em `/apps/my-app-packages/application/install` implanta o código para o autor do AEM e para a publicação do AEM
    + `ui.apps.author` incorporado em `/apps/my-app-packages/application/install.author` implanta código somente para autor de AEM
    + `ui.content` incorporado na implantação `/apps/my-app-packages/content/install` do conteúdo e da configuração para o autor do AEM e para a publicação do AEM
@@ -208,9 +208,9 @@ Por exemplo, uma implantação que contenha o autor do AEM e publique pacotes es
 >
 >Consulte a seção Trechos [XML](#xml-embeddeds) POM abaixo para obter um trecho completo.
 
-### Definição de filtro do pacote de contêiner {#container-package-filter-definition}
+### Definição de Filtro do Pacote de Container {#container-package-filter-definition}
 
-Devido à incorporação dos subpacotes de código e conteúdo no pacote do contêiner, os caminhos de destino incorporados devem ser adicionados ao projeto do contêiner `filter.xml` para garantir que os pacotes incorporados sejam incluídos no pacote do contêiner quando criados.
+Devido à incorporação dos subpacotes de código e conteúdo no pacote de container, os caminhos de públicos alvos incorporados devem ser adicionados ao projeto do container `filter.xml` para garantir que os pacotes incorporados sejam incluídos no pacote do container quando criados.
 
 Basta adicionar as `<filter root="/apps/<my-app>-packages"/>` entradas para qualquer pasta de segundo nível que contenha subpacotes a serem implantados.
 
@@ -275,9 +275,9 @@ A seguir estão trechos `pom.xml` de configuração Maven que podem ser adiciona
 
 Os pacotes de código e conteúdo, que são implantados como pacotes secundários, devem declarar um tipo de pacote de **aplicativo** ou **conteúdo**, dependendo do que eles contêm.
 
-#### Tipos de encapsulamento do contêiner {#container-package-types}
+#### Tipos de encapsulamento de Container {#container-package-types}
 
-O projeto de `all/pom.xml` contêiner **não** declara um `<packageType>`.
+O projeto container `all/pom.xml` não **declara um** `<packageType>`.
 
 #### Tipos de encapsulamento de código (imutável) {#immutable-package-types}
 
@@ -403,7 +403,7 @@ No `ui.apps/pom.xml` e em qualquer outra `pom.xml` que declare um pacote de cód
     ...
 ```
 
-### Como incorporar subpacotes no pacote de contêiner {#xml-embeddeds}
+### Incorporação de subpacotes no pacote de Container {#xml-embeddeds}
 
 Na `all/pom.xml`, adicione as seguintes `<embeddeds>` diretivas à declaração de `filevault-package-maven-plugin` plug-in. Lembre-se de **não** usar a `<subPackages>` configuração, pois isso incluirá os subpacotes em `/etc/packages` vez de `/apps/my-app-packages/<application|content>/install(.author|.publish)?`.
 
@@ -474,7 +474,7 @@ Na `all/pom.xml`, adicione as seguintes `<embeddeds>` diretivas à declaração 
 ...
 ```
 
-### Definição de filtro do pacote de contêiner {#xml-container-package-filters}
+### Definição de Filtro do Pacote de Container {#xml-container-package-filters}
 
 No `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`) do projeto `all`, **inclua** as pastas `-packages` que contêm pacotes secundários a serem implantados:
 
@@ -482,7 +482,7 @@ No `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter
 <filter root="/apps/my-app-packages"/>
 ```
 
-Se vários `/apps/*-packages` forem usados nos destinos incorporados, todos eles deverão ser enumerados aqui.
+Se vários `/apps/*-packages` forem usados nos públicos alvos incorporados, todos devem ser enumerados aqui.
 
 ### Repositórios Maven de terceiros {#xml-3rd-party-maven-repositories}
 
@@ -536,9 +536,9 @@ Na `ui.content/pom.xml`, adicione as seguintes `<dependencies>` diretivas à dec
 ...
 ```
 
-### Limpando a pasta de destino do projeto do contêiner {#xml-clean-container-package}
+### Limpando a pasta de Públicos alvos do projeto do Container {#xml-clean-container-package}
 
-Na página `all/pom.xml` , adicione o plug- `maven-clean-plugin` in que limpará o diretório de destino antes de uma compilação Maven.
+Na página `all/pom.xml` , adicione o plug- `maven-clean-plugin` in que limpará o diretório do público alvo antes das compilações do Maven.
 
 ```xml
 <plugins>
