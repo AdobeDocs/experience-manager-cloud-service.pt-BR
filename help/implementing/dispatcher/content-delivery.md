@@ -1,15 +1,15 @@
 ---
-title: Entrega de conteúdo
-description: 'Entrega de conteúdo '
+title: Delivery de conteúdo
+description: 'Delivery de conteúdo '
 translation-type: tm+mt
-source-git-commit: d1c953e1caf440f18e488f07a32bcf5bc3880f67
+source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
 
 ---
 
 
-# Entrega de conteúdo no AEM como um serviço em nuvem {#content-delivery}
+# Delivery de conteúdo no AEM como um serviço em nuvem {#content-delivery}
 
-A entrega de conteúdo do serviço de publicação inclui:
+Os detalhes da página atual publicam o delivery de conteúdo do serviço no AEM como um serviço em nuvem. O delivery de conteúdo do serviço de publicação inclui:
 
 * CDN (normalmente gerenciado pela Adobe)
 * Despachante do AEM
@@ -27,7 +27,7 @@ O fluxo de dados é o seguinte:
 
 O tipo de conteúdo HTML/texto é definido para expirar após 300s (5 minutos) na camada do dispatcher, um limite que tanto o cache do dispatcher quanto o CDN respeitam. Durante as reimplantações do serviço de publicação, o cache do dispatcher é limpo e aquecido posteriormente antes que os novos nós de publicação aceitem o tráfego.
 
-As seções abaixo fornecem mais detalhes sobre a entrega de conteúdo, incluindo configuração CDN e cache do dispatcher.
+As seções abaixo fornecem mais detalhes sobre o delivery de conteúdo, incluindo configuração CDN e cache do dispatcher.
 
 Informações sobre replicação do serviço de autor para o serviço de publicação estão disponíveis [aqui](/help/operations/replication.md).
 
@@ -36,7 +36,7 @@ Informações sobre replicação do serviço de autor para o serviço de publica
 
 ## CDN {#cdn}
 
-O AEM oferece três opções:
+AEM oferta três opções:
 
 1. Adobe Managed CDN - CDN predefinido do AEM. Essa é a opção recomendada, pois está completamente integrada.
 1. A CDN do cliente aponta para a CDN gerenciada da Adobe - o cliente aponta seu próprio CDN para a CDN predefinida do AEM. Se a primeira opção não for viável, essa será a próxima opção preferencial, pois ainda potencializa a integração do AEM com seu CDN padrão. Os clientes ainda serão responsáveis pelo gerenciamento de seu próprio CDN.
@@ -49,14 +49,14 @@ A segunda e a terceira opções serão permitidas caso a caso. Isso envolve aten
 
 ### CDN gerenciada da Adobe {#adobe-managed-cdn}
 
-A preparação para a entrega de conteúdo usando a CDN predefinida da Adobe é simples, como descrito abaixo:
+A preparação para o delivery de conteúdo usando o CDN predefinido da Adobe é simples, como descrito abaixo:
 
 1. Você fornecerá o certificado SSL assinado e a chave secreta para a Adobe compartilhando um link para um formulário seguro contendo essas informações. Coordene-se com o suporte ao cliente nesta tarefa.
 Observação: O Aem como um serviço em nuvem não oferece suporte a certificados DV (Domain Validated, Domínio validado).
 1. O suporte ao cliente coordenará com você o tempo de um registro DNS CNAME, apontando para o FQDN `adobe-aem.map.fastly.net`.
 1. Você será notificado quando os certificados SSL estiverem expirando, para que possa reenviar os novos certificados SSL.
 
-Por padrão, para uma configuração de CDN gerenciada da Adobe, todo o tráfego público pode chegar ao serviço de publicação, tanto para ambientes de produção quanto de não produção (desenvolvimento e estágio). Se você deseja limitar o tráfego ao serviço de publicação para um determinado ambiente (por exemplo, limitar o armazenamento temporário por uma faixa de endereços IP), é necessário trabalhar com o suporte ao cliente para configurar essas restrições.
+Por padrão, para uma configuração de CDN gerenciada da Adobe, todo o tráfego público pode chegar ao serviço de publicação, tanto para ambientes de produção quanto de não produção (desenvolvimento e estágio). Se você deseja limitar o tráfego ao serviço de publicação de um determinado ambiente (por exemplo, limitando o armazenamento temporário por uma faixa de endereços IP), é necessário trabalhar com o suporte ao cliente para configurar essas restrições.
 
 ### O CDN do cliente aponta para o CDN gerenciado da Adobe {#point-to-point-CDN}
 
@@ -95,7 +95,7 @@ Instruções de configuração:
 
 1. Forneça a lista de permissões do fornecedor de CDN para a Adobe chamando a API de criação/atualização do ambiente com uma lista de CIDRs para a lista de permissões.
 1. Defina o `X-Forwarded-Host` cabeçalho com o nome do domínio.
-1. Defina o cabeçalho Host com o domínio de origem, que é o Aem como uma entrada do serviço em nuvem. O valor deve vir da Adobe.
+1. Defina o cabeçalho Host com o domínio de origem, que é o Aem como uma entrada do serviço de nuvem. O valor deve vir da Adobe.
 1. Envie o cabeçalho SNI para a origem. O cabeçalho SNI deve ser o domínio de origem.
 1. Defina o `X-Edge-Key` que é necessário para rotear o tráfego corretamente para os servidores AEM. O valor deve vir da Adobe.
 
@@ -183,7 +183,7 @@ Antes do AEM como um serviço em nuvem, havia duas maneiras de invalidar o cache
 
 A `invalidate.cache` abordagem não será mais suportada, pois ela aborda somente um nó de dispatcher específico.
 O AEM como um serviço em nuvem opera no nível de serviço, não no nível de nó individual e, portanto, as instruções de invalidação na página [Invalidar páginas em cache do AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) não são válidas para o AEM como um serviço em nuvem.
-Em vez disso, o agente de liberação de replicação deve ser usado. Isso pode ser feito usando a API de replicação. A documentação da API de replicação está disponível [aqui](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) e, para obter um exemplo de como limpar o cache, consulte a página [de exemplo da](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API especificamente o `CustomStep` exemplo que emite uma ação de replicação do tipo ATIVATE para todos os agentes disponíveis. O ponto de extremidade do agente de liberação não é configurável, mas pré-configurado para apontar para o dispatcher, correspondente ao serviço de publicação que executa o agente de liberação. O agente de descarga normalmente pode ser acionado por eventos ou fluxos de trabalho OSGi.
+Em vez disso, o agente de liberação de replicação deve ser usado. Isso pode ser feito usando a API de replicação. A documentação da API de replicação está disponível [aqui](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) e, para obter um exemplo de como limpar o cache, consulte a página [de exemplo da](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API especificamente o `CustomStep` exemplo que emite uma ação de replicação do tipo ATIVATE para todos os agentes disponíveis. O ponto de extremidade do agente de liberação não é configurável, mas pré-configurado para apontar para o dispatcher, correspondente ao serviço de publicação que executa o agente de liberação. O agente de descarga normalmente pode ser acionado por eventos ou workflows OSGi.
 
 O diagrama abaixo ilustra isso.
 
@@ -217,7 +217,7 @@ Quando o controle de versão restrito do clientlib está ativado, uma chave hash
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.lc-7c8c5d228445ff48ab49a8e3c865c562-lc.css" type="text/css">
 ```
 
-Por padrão, o controle de versão restrito do clientlib é ativado em todos os ambientes AEM como um serviço em nuvem.
+Por padrão, o controle de versão restrito do clientlib é ativado em todo o AEM como ambientes de serviço em nuvem.
 
 Para ativar o controle de versão restrito do clientlib no Início rápido do SDK local, execute as seguintes ações:
 
