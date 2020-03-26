@@ -1,7 +1,7 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
 
 ---
@@ -40,8 +40,8 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [Digital Rights Management para ativos](drm.md)
 + Configurar, administrar e estender ativos {#admin}
    + [APIs e material de referência](developer-reference-material-apis.md)
-   + [Esquema de metadados de pasta](folder-metadata-schema.md)
-   + [Processando perfis](/help/assets/dynamic-media/processing-profiles.md)
+   + [Esquema de metadados de pastas](folder-metadata-schema.md)
+   + [Processamento de perfis](/help/assets/dynamic-media/processing-profiles.md)
    + [Ativos multilíngues e tradução de ativos](translate-assets.md)
    + [Pesquisar aspectos](search-facets.md)
    + [Estender editor de ativos](extend-asset-editor.md)
