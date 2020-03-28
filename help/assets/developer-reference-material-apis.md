@@ -3,12 +3,12 @@ title: 'APIs de ativos para gerenciamento de ativos digitais no Adobe Experience
 description: As APIs de ativos permitem operações básicas de criação-leitura-atualização-exclusão (CRUD) para gerenciar ativos, incluindo binários, metadados, representações, comentários e Fragmentos de conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
 
 ---
 
 
-# Ativos como APIs de serviço em nuvem {#assets-cloud-service-apis}
+# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -20,7 +20,7 @@ Give a list of and overview of all reference information available.
 
 ## Carregamento de ativos {#asset-upload-technical}
 
-O Experience Manager como um serviço em nuvem fornece uma nova maneira de fazer upload de ativos no repositório - fazer upload binário direto para o armazenamento em nuvem binária. Esta seção fornece uma visão geral técnica.
+O Experience Manager como um serviço em nuvem fornece uma nova maneira de fazer upload de ativos no repositório - fazer upload binário direto para o armazenamento da nuvem binária. Esta seção fornece uma visão geral técnica.
 
 ### Visão geral do upload binário direto {#overview-binary-upload}
 
@@ -34,8 +34,8 @@ O algoritmo de alto nível para carregar um binário é:
 
 As diferenças importantes comparadas às versões anteriores do AEM incluem:
 
-* Os binários não passam pelo AEM, que agora está apenas coordenando o processo de upload com o armazenamento em nuvem binário configurado para a implantação
-* O armazenamento em nuvem binário é fornecido pela Rede de entrega de conteúdo (CDN, Edge Network), que aproxima o terminal de upload do cliente, ajudando a melhorar o desempenho do upload e a experiência do usuário, especialmente para equipes distribuídas que carregam ativos
+* Os binários não passam pelo AEM, que agora está apenas coordenando o processo de upload com o armazenamento da nuvem binária configurado para a implantação
+* O armazenamento em nuvem binário é fornecido por uma Rede de Delivery de Conteúdo (CDN, Edge Network), que aproxima o terminal de upload do cliente, ajudando, assim, a melhorar o desempenho de upload e a experiência do usuário, especialmente para equipes distribuídas que carregam ativos
 
 Essa abordagem deve proporcionar uma manipulação mais escalável e eficiente dos uploads de ativos.
 
@@ -76,9 +76,9 @@ Se bem-sucedida, a solicitação responderá com um código de status 201 e um c
 }
 ````
 
-* `(string) completeURI`: O URI que deve ser chamado quando o binário terminar de carregar. Isso pode ser um URI absoluto ou relativo, e os clientes devem ser capazes de lidar com qualquer um. Ou seja, o valor pode ser `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` (consulte [Carregamento](#complete-upload)completo).
+* `(string) completeURI`: O URI que deve ser chamado quando o binário terminar de carregar. Isso pode ser um URI absoluto ou relativo, e os clientes devem ser capazes de lidar com qualquer um deles. Ou seja, o valor pode ser `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` (consulte [Carregamento](#complete-upload)completo).
 * `(string) folderPath`: Caminho completo para a pasta onde o binário está sendo carregado.
-* `(array) (files)`: Uma lista de elementos cujo comprimento e ordem corresponderão ao comprimento e à ordem da lista de informações binárias fornecida na solicitação inicial.
+* `(array) (files)`: Uma lista de elementos cujo comprimento e ordem corresponderão ao comprimento e à ordem da lista de informações binárias fornecidas na solicitação inicial.
 * `(string) fileName`: O nome do binário correspondente, conforme fornecido na solicitação de início. Esse valor deve ser incluído na solicitação completa.
 * `(string) mimeType`: O tipo mime do binário correspondente, conforme fornecido na solicitação de início. Esse valor deve ser incluído na solicitação completa.
 * `(string) uploadToken`: Um token de carregamento para o binário correspondente. Esse valor deve ser incluído na solicitação completa.
@@ -108,7 +108,7 @@ Quando todas as partes de um binário forem carregadas, a etapa final será envi
 * `(bool) createVersion`: Opcional. Se true e um ativo com o nome especificado já existir, a instância criará uma nova versão do ativo.
 * `(string) versionLabel`: Opcional. Se uma nova versão for criada, o rótulo que será associado à versão.
 * `(string) versionComment`: Opcional. Se uma nova versão for criada, os comentários que serão associados à versão.
-* `(bool) replace`:Opcional: Se verdadeiro e um ativo com o nome especificado já existir, a instância excluirá o ativo e o recriará.
+* `(bool) replace`: Opcional: Se verdadeiro e um ativo com o nome especificado já existir, a instância excluirá o ativo e o recriará.
 
 >!![NOTE]
 >
@@ -129,7 +129,7 @@ Para saber mais sobre os algoritmos de upload ou para criar seus próprios scrip
 
 ### APIs de upload de ativos obsoletos {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 Para o Experience Manager como um serviço em nuvem, somente as novas APIs de upload são compatíveis. As APIs do Experience Manager 6.5 estão obsoletas.
@@ -144,18 +144,18 @@ Os métodos relacionados ao upload ou atualização de ativos ou execuções (qu
 * [Ferramenta de linha de comando open source](https://github.com/adobe/aio-cli-plugin-aem)
 
 
-## Fluxos de trabalho de processamento de ativos e pós-processamento {#post-processing-workflows}
+## Processamento de ativos e workflows pós-processamento {#post-processing-workflows}
 
-A maioria do processamento de ativos é executado com base na configuração de Perfis **[!UICONTROL de]** processamento por microserviços [de](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)ativos e não requer extensões de desenvolvedor.
+A maior parte do processamento de ativos é executada com base na configuração de Perfis **[!UICONTROL de]** processamento por microserviços [de](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)ativos e não requer extensões de desenvolvedor.
 
-Para a configuração do fluxo de trabalho de pós-processamento, fluxos de trabalho padrão do AEM com extensões (por exemplo, etapas personalizadas podem ser usadas). Revise a subseção a seguir para entender quais etapas do fluxo de trabalho podem ser usadas nos fluxos de trabalho de pós-processamento do ativo.
+Para a configuração do fluxo de trabalho de pós-processamento, Workflows AEM padrão com extensões (por exemplo, etapas personalizadas podem ser usadas). Revise a subseção a seguir para entender quais etapas do fluxo de trabalho podem ser usadas nos workflows de pós-processamento do ativo.
 
 ### Etapas do fluxo de trabalho no fluxo de trabalho de pós-processamento {#post-processing-workflows-steps}
 
 >[!NOTE]
 Esta seção se aplica principalmente aos clientes que atualizam para o AEM como um serviço em nuvem de versões anteriores do AEM.
 
-Devido a um novo modelo de implantação introduzido com o Experience Manager como um serviço em nuvem, certas etapas do fluxo de trabalho usadas no fluxo de trabalho `DAM Update Asset` antes da introdução dos microserviços de ativos podem não ser mais suportadas para fluxos de trabalho de pós-processamento. Observe que a maioria deles é substituída por um muito mais simples para configurar e usar os microserviços de ativos.
+Devido a um novo modelo de implantação introduzido com o Experience Manager como um serviço em nuvem, certas etapas do fluxo de trabalho usadas no `DAM Update Asset` fluxo de trabalho antes da introdução dos microserviços de ativos podem não ser mais suportadas por workflows de pós-processamento. Observe que a maioria deles é substituída por um muito mais simples para configurar e usar os microserviços de ativos.
 
 Esta é uma lista de modelos de fluxo de trabalho técnico e seu nível de suporte no AEM como um serviço em nuvem:
 
