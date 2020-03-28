@@ -2,7 +2,7 @@
 title: Adicionar seus ativos digitais ao Adobe Experience Manager
 description: Adicione seus ativos digitais ao Adobe Experience Manager como um serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -11,11 +11,11 @@ source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 Carregar seus arquivos digitais no Adobe Experience Manager enriquece o conteúdo binário do arquivo com metadados ricos, tags inteligentes, execuções e outros serviços de Gerenciamento de ativos digitais (DAM). Você pode carregar vários tipos de arquivos (incluindo imagens, arquivos PDF, arquivos brutos etc.) da pasta local ou de uma unidade de rede para os ativos do Experience Manager.
 
-Vários métodos de upload são fornecidos. Além do upload de navegador mais usado, existem outros métodos de adicionar ativos ao repositório do Experience Manager, incluindo clientes desktop, como o aplicativo Adobe Asset Link ou o aplicativo de desktop Experience Manager, scripts de upload e ingestão que os clientes criariam e integrações de ingestão automatizadas adicionadas como extensões AEM.
+Vários métodos de upload são fornecidos. Além do upload de navegador mais usado, existem outros métodos de adicionar ativos ao repositório do Experience Manager, incluindo clientes de desktop, como o aplicativo Adobe Asset Link ou o aplicativo de desktop Experience Manager, scripts de upload e ingestão que os clientes criariam e integrações de ingestão automatizadas adicionadas como extensões AEM.
 
-Vamos nos concentrar nos métodos de upload para usuários finais aqui e fornecer links para artigos que descrevem aspectos técnicos do upload e ingestão de ativos usando APIs e SDKs do Experience Manager.
+Faremos o upload de métodos para usuários finais aqui e forneceremos links para artigos que descrevem aspectos técnicos do upload e ingestão de ativos usando APIs e SDKs do Experience Manager.
 
-Embora você possa carregar e gerenciar qualquer arquivo binário no Experience Manager, os formatos de arquivo mais usados têm suporte para serviços adicionais, como extração de metadados ou geração de visualização/execução. Consulte os formatos [de arquivo](file-format-support.md) suportados para obter detalhes.
+Embora você possa carregar e gerenciar qualquer arquivo binário no Experience Manager, os formatos de arquivo mais usados têm suporte para serviços adicionais, como extração de metadados ou geração de pré-visualização/execução. Consulte os formatos [de arquivo](file-format-support.md) suportados para obter detalhes.
 
 Você também pode optar por fazer um processamento adicional nos ativos carregados. Vários perfis de processamento de ativos podem ser configurados na pasta, na qual os ativos são carregados, para adicionar metadados específicos, representações ou serviços de processamento de imagens. Consulte Processamento [](#additional-processing) adicional abaixo para obter mais informações.
 
@@ -27,10 +27,10 @@ Você também pode optar por fazer um processamento adicional nos ativos carrega
 
 ## Upload assets {#upload-assets}
 
-Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na área de trabalho e arrastar e soltar na interface do usuário (navegador da Web) na pasta de destino. Como alternativa, você pode iniciar o upload da interface do usuário.
+Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na área de trabalho e arrastar e soltar na interface do usuário (navegador da Web) na pasta de destino. Como alternativa, você pode iniciar o upload a partir da interface do usuário.
 
 1. Na interface do usuário do Assets, navegue até o local onde deseja adicionar ativos digitais.
-1. Para carregar os ativos, execute um dos procedimentos a seguir:
+1. Para fazer upload dos ativos, execute um dos procedimentos a seguir:
 
    * Na barra de ferramentas, toque no ícone **[!UICONTROL Criar]** . Em seguida, no menu, toque em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
    * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface do usuário dos Ativos. A caixa de diálogo para renomear o arquivo não é exibida.
@@ -64,7 +64,7 @@ Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na ár
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ Além disso, a interface do usuário Ativos exibe o ativo mais recente que você
 
 > [!NOTE]
 >
-> Se precisar carregar hierarquias de pastas aninhadas para o AEM, consulte [Carregamento em massa de ativos](#bulk-upload)
+> Para fazer upload de hierarquias de pastas aninhadas para o AEM, consulte o upload [em massa de ativos](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -100,7 +100,7 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 
 ### Manuseio de uploads quando o ativo já existe {#handling-upload-existing-file}
 
-Se você carregar um ativo com o mesmo nome de um ativo já disponível no local em que você está fazendo upload do ativo, uma caixa de diálogo de aviso será exibida.
+Se você fizer upload de um ativo com o mesmo nome de um ativo já disponível no local em que você está fazendo upload do ativo, uma caixa de diálogo de aviso será exibida.
 
 Você pode optar por substituir um ativo existente, criar outra versão ou manter ambos renomeando o novo ativo que é carregado. Se você substituir um ativo existente, os metadados do ativo e quaisquer modificações anteriores (por exemplo, anotações, recortes e assim por diante) que você fez no ativo existente serão excluídos. Se você optar por manter ambos os ativos, o novo ativo será renomeado com o número `1` anexado ao seu nome.
 
@@ -110,7 +110,7 @@ Você pode optar por substituir um ativo existente, criar outra versão ou mante
 >
 >Se o Asset Insights estiver habilitado para rastrear impressões/cliques com o Adobe Analytics, a ID de ativo regenerada invalida os dados capturados para o ativo no Analytics.
 
-Para manter o ativo duplicado nos ativos AEM, toque/clique em **[!UICONTROL Manter]**. Para excluir o ativo duplicado carregado, toque/clique em **[!UICONTROL Excluir]**.
+Para manter o ativo do duplicado nos ativos AEM, toque/clique em **[!UICONTROL Manter]**. Para excluir o ativo de duplicado carregado, toque/clique em **[!UICONTROL Excluir]**.
 
 ### Tratamento de nomes de arquivos e caracteres proibidos {#filename-handling}
 
@@ -136,32 +136,32 @@ Para carregar um número maior de arquivos, especialmente se eles existirem em u
 
 ## Fazer upload de ativos usando clientes desktop {#upload-assets-desktop-clients}
 
-Além da interface de usuário do navegador da Web, o Experience Manager oferece suporte a outros clientes no desktop. Eles também fornecem experiência de upload sem a necessidade de acessar o navegador da Web.
+Além da interface do usuário do navegador da Web, o Experience Manager oferece suporte a outros clientes no desktop. Eles também fornecem experiência de upload sem a necessidade de acessar o navegador da Web.
 
 * [O Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) fornece acesso a ativos do AEM em aplicativos de desktop do Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Você pode fazer upload do documento aberto no momento para o AEM diretamente da interface do usuário do Adobe Asset Link nesses aplicativos de desktop.
 * [O aplicativo](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) de desktop Experience Manager simplifica o trabalho com ativos no desktop, independentemente do tipo de arquivo ou do aplicativo nativo que os manipula. É particularmente útil fazer upload de arquivos nas hierarquias de pastas aninhadas a partir do sistema de arquivos local, já que o upload do navegador suporta apenas o upload de listas de arquivos simples.
 
 ## Processamento adicional {#additional-processing}
 
-Para fazer um processamento adicional nos ativos carregados, você pode usar perfis de processamento de ativos na pasta, na qual os ativos são carregados. Eles estão disponíveis na caixa de diálogo **[!UICONTROL Propriedades]** da pasta.
+Para fazer um processamento adicional nos ativos carregados, você pode usar perfis de perfis de processamento de ativos na pasta, na qual os ativos são carregados. Eles estão disponíveis na caixa de diálogo **[!UICONTROL Propriedades]** da pasta.
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
 Os seguintes perfis estão disponíveis:
 
-* [Os perfis](metadata-profiles.md) de metadados permitem aplicar propriedades de metadados padrão a ativos carregados nessa pasta
-* [O processamento de perfis](asset-microservices-configure-and-use.md#processing-profiles) permite aplicar processamento de representação e gerar execuções além das padrão
+* [perfis](metadata-profiles.md) de metadados permitem aplicar propriedades de metadados padrão a ativos carregados nessa pasta
+* [perfis](asset-microservices-configure-and-use.md#processing-profiles) de processamento permitem aplicar processamento de representação e gerar execuções além das padrão
 
-Além disso, se o Dynamic Media estiver ativado em seu ambiente:
+Além disso, se o Dynamic Media estiver ativado no seu ambiente:
 
-* [Os perfis](dynamic-media/image-profiles.md) de imagem permitem aplicar recortes específicos (recorte **** inteligente e recorte de pixels) e configuração de nitidez aos ativos carregados
-* [Os perfis](dynamic-media/video-profiles.md) de vídeo permitem aplicar perfis de codificação de vídeo específicos (resolução, formato, parâmetros)
+* Os [perfis de imagem](dynamic-media/image-profiles.md) permitem aplicar cortes específicos (**[!UICONTROL Corte inteligente]** e corte de pixels) e configuração de nitidez aos ativos carregados
+* [perfis](dynamic-media/video-profiles.md) de vídeo permitem aplicar perfis de codificação de vídeo específicos (resolução, formato, parâmetros)
 
 > [!NOTE]
 >
 > O corte do Dynamic Media e outras operações em ativos não são destrutivas, ou seja, não alteram o original carregado, mas fornecem parâmetros para o corte ou transformação de mídia a ser feito ao entregar os ativos
 
-Para pastas com um perfil de processamento atribuído, o nome do perfil aparece na miniatura na exibição de cartão. Na exibição de lista, o nome do perfil aparece na coluna Perfil **[!UICONTROL de]** processamento.
+Para pastas com um perfil de processamento atribuído, o nome do perfil aparece na miniatura na visualização do cartão. Na visualização da lista, o nome do perfil é exibido na coluna Perfil **[!UICONTROL de]** processamento.
 
 ## Fazer upload ou assimilar ativos usando APIs {#upload-using-apis}
 
