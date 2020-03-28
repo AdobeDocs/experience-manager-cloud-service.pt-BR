@@ -1,9 +1,9 @@
 ---
 title: API HTTP de ativos
-description: Saiba mais sobre a implementação, o modelo de dados e os recursos da API HTTP do Assets. Use a API HTTP Assets para executar várias tarefas em torno dos ativos.
+description: Saiba mais sobre a implementação, o modelo de dados e os recursos da API HTTP do Assets. Use a API HTTP Assets para executar várias tarefas sobre ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -16,7 +16,7 @@ A API HTTP Assets permite operações de criação-leitura-atualização-exclus�
 
 Para acessar a API:
 
-1. Abra o documento do serviço API em `https://[hostname]:[port]/api.json`.
+1. Abra o documento de serviço da API em `https://[hostname]:[port]/api.json`.
 1. Siga o link de serviço Ativos à esquerda para `https://[hostname]:[server]/api/assets.json`.
 
 A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resposta para todos os tipos MIME. A resposta JSON é opcional e pode não estar disponível, por exemplo, para arquivos PDF. Confie no código de resposta para obter mais análises ou ações.
@@ -41,7 +41,7 @@ Além disso, expõe elementos mais detalhados para os modelos de dados personali
 
 ### Pastas {#folders}
 
-As pastas são como diretórios em sistemas de arquivos tradicionais. São contêineres para outras pastas ou asserções. As pastas têm os seguintes componentes:
+As pastas são como diretórios em sistemas de arquivos tradicionais. São container para outras pastas ou asserções. As pastas têm os seguintes componentes:
 
 **Entidades**: As entidades de uma pasta são seus elementos filho, que podem ser pastas e ativos.
 
@@ -76,7 +76,7 @@ No AEM, uma pasta tem os seguintes componentes:
 
 A API HTTP Assets fornece os seguintes recursos:
 
-* Recuperar uma lista de pastas
+* Recuperar uma listagem de pastas
 * Criar uma pasta
 * Criar um ativo (obsoleto)
 * Atualizar binário de ativo (obsoleto)
@@ -101,7 +101,7 @@ A API HTTP Assets fornece os seguintes recursos:
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 -->
 
-## Recuperar uma lista de pastas {#retrieve-a-folder-listing}
+## Recuperar uma listagem de pastas {#retrieve-a-folder-listing}
 
 Recupera uma representação Siren de uma pasta existente e de suas entidades filhas (subpastas ou ativos).
 
@@ -127,7 +127,7 @@ As propriedades de entidades contidas são um subconjunto do conjunto completo d
 
 ## Criar uma pasta {#create-a-folder}
 
-Cria um novo `sling`: `OrderedFolder` no caminho determinado. Se um * for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação SIREEN da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de consulta de URL.
+Cria um novo `sling`: `OrderedFolder` no caminho determinado. Se um * for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação SIREEN da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de query de URL.
 
 A operação falhará com um código de `500` resposta se o nó pai do caminho especificado não existir. Se a pasta já existir, um código de `409` resposta será retornado.
 
