@@ -1,13 +1,13 @@
 ---
-title: AEM como um SDK do serviço em nuvem
+title: SDK do AEM as a Cloud Service
 description: 'A completar '
 translation-type: tm+mt
-source-git-commit: a7dc007230632bf8343004794b2bc4c5baaf4e05
+source-git-commit: 2142bce6296e671fd1039dec8b0686c609611d98
 
 ---
 
 
-# O AEM como um SDK do serviço em nuvem {#aem-as-a-cloud-service-sdk}
+# The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
 O AEM como um SDK de serviço em nuvem é composto pelos seguintes artefatos:
 
@@ -24,7 +24,7 @@ Além disso, alguns clientes que foram implantados anteriormente com o AEM 6.5 o
 ## Acessar o AEM como um SDK de serviço em nuvem {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * Você pode verificar o ícone **Sobre o Adobe Experience Manager** do Admin Console do AEM para descobrir a versão do AEM que você está executando na produção.
-* As Ferramentas QuickStart jar e Dispatcher podem ser baixadas como um arquivo zip do portal [de Distribuição de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)software. Observe que o acesso às listagens do SDK é limitado àquelas com os serviços gerenciados do AEM ou o AEM como ambientes de serviço em nuvem.
+* As Ferramentas QuickStart jar e Dispatcher podem ser baixadas como um arquivo zip do portal [de Distribuição de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)software. Observe que o acesso às listagens do SDK é limitado àquelas com os serviços gerenciados do AEM ou o AEM como ambientes de serviço em nuvem.
 * O Java API Jar e o Javadoc Jar podem ser baixados por meio da ferramenta maven, linha de comando ou com seu IDE preferencial.
 * Os poms do projeto maven devem fazer referência ao seguinte pacote de API Jar. Essa dependência também deve ser referenciada em quaisquer salas de subpacotes.
 
@@ -62,35 +62,35 @@ Quando é recomendado atualizar o projeto local com um novo SDK?
 
 É *recomendável* atualizá-la pelo menos após uma versão de manutenção mensal.
 
-É *opcional* atualizá-lo após qualquer versão de manutenção diária. Os clientes serão informados quando sua instância de produção for atualizada com êxito para uma nova versão do AEM. Para as versões de manutenção diárias, não é de se esperar que o novo SDK tenha mudado significativamente, se é que isso aconteceu. Mesmo assim, é recomendável atualizar ocasionalmente o ambiente local de desenvolvedor do AEM com o SDK mais recente, em seguida, recriar e testar o aplicativo personalizado. A versão de manutenção mensal normalmente inclui alterações mais impactantes e, portanto, os desenvolvedores devem atualizar, reconstruir e testar imediatamente.
+É *opcional* atualizá-lo após qualquer versão de manutenção diária. Os clientes serão informados quando sua instância de produção for atualizada com êxito para uma nova versão do AEM. Para as versões de manutenção diárias, não é de se esperar que o novo SDK tenha mudado significativamente, se é que isso aconteceu. No entanto, é recomendável atualizar ocasionalmente o ambiente de desenvolvedor do AEM local com o SDK mais recente, em seguida, recriar e testar o aplicativo personalizado. A versão de manutenção mensal normalmente inclui alterações mais impactantes e, portanto, os desenvolvedores devem atualizar, reconstruir e testar imediatamente.
 
 Abaixo está o procedimento recomendado para atualizar um ambiente local:
 
 1. Certifique-se de que qualquer conteúdo útil seja enviado para o projeto no controle de origem ou esteja disponível em um pacote de conteúdo mutável para importação posterior
 1. O conteúdo do teste de desenvolvimento local precisa ser armazenado separadamente para que não seja implantado como parte da compilação do pipeline do Gerenciador de nuvem. Isso porque só precisa ser usado para o desenvolvimento local
 1. Parar o início rápido atualmente em execução
-1. Mova a `crx-quickstart` pasta para outra pasta para manter a segurança
-1. Observe a nova versão do AEM, que é anotada no Gerenciador de nuvem (isso será usado para identificar a nova versão do QuickStart Jar para fazer download posteriormente)
+1. Mova a `crx-quickstart` pasta para uma pasta diferente para manter a segurança
+1. Observe a nova versão do AEM, que é anotada no Gerenciador de nuvem (isso será usado para identificar a nova versão do QuickStart Jar para fazer download mais adiante)
 1. Baixe o JAR QuickStart cuja versão corresponda à versão do Production AEM do Portal de distribuição de software
 1. Crie uma nova pasta e insira o novo QuickStart Jar dentro
-1. Inicie o novo QuickStart com os modos de execução desejados (renomeando o arquivo ou transmitindo os modos de execução via `-r`).
+1. Start o novo QuickStart com os modos de execução desejados (renomeando o arquivo ou transmitindo os modos de execução via `-r`).
    * Certifique-se de que não há vestígios do arranque rápido antigo na pasta.
 1. Criar seu aplicativo AEM
 1. Implantar seu aplicativo AEM no AEM local via PackageManager
-1. Instale todos os pacotes de conteúdo mutável necessários para testes de ambiente local via PackageManager
+1. Instale todos os pacotes de conteúdo mutável necessários para teste de ambiente local via PackageManager
 1. Continuar o desenvolvimento e implantar as alterações conforme necessário
 
 Se houver conteúdo que deva ser instalado com cada nova versão de início rápido do AEM, inclua-o em um pacote de conteúdo e no controle de origem do projeto. Em seguida, instale-o sempre.
 
 A recomendação é atualizar o SDK frequentemente (por exemplo, bisemanalmente) e descartar o estado local completo diariamente para não depender acidentalmente dos dados de estado no aplicativo.
 
-Caso você dependa do CryptoSupport ([pela configuração das credenciais do Cloudservices ou do serviço de Email SMTP no AEM ou pelo uso da API CryptoSupport no aplicativo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), as propriedades criptografadas serão criptografadas por uma chave gerada automaticamente na primeira inicialização de um ambiente AEM. Enquanto a configuração de nuvem cuida da reutilização automática da CryptoKey específica do ambiente, é necessário injetar a chave de criptografia no ambiente de desenvolvimento local.
+Caso você dependa do CryptoSupport ([pela configuração das credenciais do Cloudservices ou do serviço de Email SMTP no AEM ou pelo uso da API CryptoSupport no aplicativo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), as propriedades criptografadas serão criptografadas por uma chave gerada automaticamente no primeiro start de um ambiente AEM. Enquanto a configuração de nuvem cuida da reutilização automática da CryptoKey específica do ambiente, é necessário injetar a chave de criptografia no ambiente de desenvolvimento local.
 
 Por padrão, o AEM está configurado para armazenar os dados principais na pasta de dados de uma pasta, mas para facilitar a reutilização no desenvolvimento, o processo do AEM pode ser inicializado na primeira inicialização com &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Isso gerará os dados de criptografia em &quot;`/etc/key`&quot;.
 
 Para poder reutilizar pacotes de conteúdo contendo os valores criptografados, siga estas etapas:
 
-* Ao iniciar o quickstart.jar local, adicione o parâmetro abaixo: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. É recomendado, mas opcional, sempre adicioná-lo.
-* A primeira vez que você iniciou uma instância cria um pacote que contém um filtro para a raiz &quot;`/etc/key`&quot;. Isso manterá o segredo a ser reutilizado em todos os ambientes para os quais você deseja que eles sejam reutilizados
+* Ao start inicial do quickstart.jar local, adicione o parâmetro abaixo: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. É recomendável, mas opcional, sempre adicioná-lo.
+* A primeira vez que você iniciou uma instância cria um pacote que contém um filtro para a raiz &quot;`/etc/key`&quot;. Isso manterá o segredo a ser reutilizado em todos os ambientes para os quais você gostaria que fossem reutilizados
 * Exporte qualquer conteúdo silencioso que contenha segredos ou procure os valores criptografados por meio `/crx/de` do para adicioná-lo ao pacote que será reutilizado em instalações
 * Sempre que você gira uma nova instância (para substituir por uma nova versão ou como vários ambientes dev devem compartilhar as credenciais para teste), instale o pacote produzido nas etapas 2 e 3 para poder reutilizar o conteúdo sem a necessidade de reconfigurar manualmente. Isso porque agora a chave de criptografia está sincronizada.
