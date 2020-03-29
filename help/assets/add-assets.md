@@ -2,14 +2,14 @@
 title: Adicionar seus ativos digitais ao Adobe Experience Manager
 description: Adicione seus ativos digitais ao Adobe Experience Manager como um serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Adicionar ativos digitais ao Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Carregar seus arquivos digitais no Adobe Experience Manager enriquece o conteúdo binário do arquivo com metadados ricos, tags inteligentes, execuções e outros serviços de Gerenciamento de ativos digitais (DAM). Você pode carregar vários tipos de arquivos (incluindo imagens, arquivos PDF, arquivos brutos etc.) da pasta local ou de uma unidade de rede para os ativos do Experience Manager.
+O Adobe Experience Manager enriquece o conteúdo binário dos arquivos digitais carregados com metadados avançados, tags inteligentes, execuções e outros serviços de Gerenciamento de ativos digitais (DAM). É possível carregar vários tipos de arquivos, como imagens, documentos e arquivos de imagem brutos, da pasta local ou de uma unidade de rede para os ativos do Experience Manager.
 
 Vários métodos de upload são fornecidos. Além do upload de navegador mais usado, existem outros métodos de adicionar ativos ao repositório do Experience Manager, incluindo clientes de desktop, como o aplicativo Adobe Asset Link ou o aplicativo de desktop Experience Manager, scripts de upload e ingestão que os clientes criariam e integrações de ingestão automatizadas adicionadas como extensões AEM.
 
