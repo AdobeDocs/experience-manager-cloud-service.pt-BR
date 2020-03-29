@@ -3,24 +3,24 @@ title: Compartilhar ativos, pastas e coleções como um link
 description: Este artigo descreve como compartilhar ativos, pastas e coleções nos ativos do Experience Manager como um hiperlink.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Compartilhar e distribuir ativos gerenciados no Experience Manager {#share-assets-from-aem}
 
-Os ativos Adobe Experience Manager (AEM) permitem que você compartilhe ativos, pastas e coleções com membros de sua organização e entidades externas, incluindo parceiros e fornecedores. Você pode usar os seguintes métodos para compartilhar ativos dos Ativos do Experience Manager como um Serviço em nuvem:
+Os ativos Adobe Experience Manager (AEM) permitem que você compartilhe ativos, pastas e coleções com membros de sua organização e entidades externas, incluindo parceiros e fornecedores. Use os seguintes métodos para compartilhar ativos dos Ativos do Experience Manager como um Serviço em nuvem:
 
-* Compartilhar como um link
-* Baixar ativos
-* Compartilhar via aplicativo de desktop do AEM
-* Compartilhar via Adobe Asset Link
-* (Funcionalidade futura) Compartilhar usando o Brand Portal
+* Compartilhar como um link.
+* Baixe ativos e compartilhe separadamente.
+* Compartilhe por meio do aplicativo de desktop do AEM.
+* Compartilhe por meio do Adobe Asset Link.
+* (Funcionalidade futura) Compartilhe usando o Brand Portal.
 
 ## Compartilhar ativos como um link {#sharelink}
 
-Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caixa de diálogo Compartilhamento de links. Os usuários com privilégios de administrador ou com permissões de leitura no `/var/dam/share` local podem exibir os links compartilhados com eles. Compartilhar ativos por meio de um link é uma maneira conveniente de disponibilizar recursos para terceiros sem que eles precisem primeiro fazer logon nos ativos AEM.
+Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caixa de diálogo Compartilhamento de links. Os usuários com privilégios de administrador ou com permissões de leitura no `/var/dam/share` local podem visualização os links compartilhados com eles. Compartilhar ativos por meio de um link é uma maneira conveniente de disponibilizar recursos para terceiros sem que eles precisem primeiro fazer logon nos ativos AEM.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
 
    >[!NOTE]
    >
-   >Se um ativo compartilhado for movido para um local diferente, seu link para de funcionar. Recrie o link e compartilhe-o novamente com os usuários.
+   >Se um ativo compartilhado for movido para um local diferente, seu link para de funcionar. Recriar o link e compartilhar novamente com os usuários.
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -110,17 +110,19 @@ Os usuários podem baixar alguns ativos e compartilhá-los fora do Experience Ma
 
 Os profissionais de marketing e os usuários de linha de negócios podem facilmente compartilhar ativos aprovados com seus profissionais criativos usando,
 
-* **Aplicativo** para desktop AEM: O aplicativo funciona no Windows e no Mac. Consulte Visão geral [do aplicativo para](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)desktop. Para saber como qualquer usuário autorizado da área de trabalho pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e visualizar ativos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Os usuários da área de trabalho podem criar novos ativos e compartilhá-los de volta com seus colegas que são usuários do AEM, por exemplo, fazendo upload de novas imagens. Consulte [fazer upload de ativos usando o aplicativo](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)para desktop.
+* **Aplicativo** para desktop AEM: O aplicativo funciona no Windows e no Mac. Consulte Visão geral [do aplicativo para](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)desktop. Para saber como qualquer usuário autorizado do desktop pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e pré-visualização dos ativos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Os usuários da área de trabalho podem criar ativos e compartilhá-los de volta com seus colegas que são usuários do AEM, por exemplo, fazendo upload de novas imagens. Consulte [fazer upload de ativos usando o aplicativo](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)para desktop.
 
 * **Link** do ativo da Adobe: Os profissionais criativos podem pesquisar e usar ativos diretamente do Adobe InDesign, Adobe Illustrator e Adobe Photoshop.
 
 ## Configurar compartilhamento de ativos {#configure-sharing}
 
+As diferentes opções para compartilhar os ativos exigem configuração específica e têm pré-requisitos específicos.
+
 ### Configurar compartilhamento de links de ativos {#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caixa de diálogo Compartilhamento de links. Os usuários com privilégios de administrador ou com permissões de leitura no `/var/dam/share` local podem exibir os links compartilhados com eles. Compartilhar ativos por meio de um link é uma maneira conveniente de disponibilizar recursos para terceiros sem que eles precisem primeiro fazer logon nos ativos AEM.
+Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caixa de diálogo Compartilhamento de links. Os usuários com privilégios de administrador ou com permissões de leitura no `/var/dam/share` local podem visualização os links compartilhados com eles. Compartilhar ativos por meio de um link é uma maneira conveniente de disponibilizar recursos para terceiros sem que eles precisem primeiro fazer logon nos ativos AEM.
 
 >[!NOTE]
 >
@@ -162,7 +164,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Ativar ações de área de trabalho para usar com o aplicativo de área de trabalho {#desktop-actions}
 
-Na interface do usuário Ativos em um navegador, você pode explorar os locais dos ativos ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas de Ações da área de trabalho e, se não estiverem ativadas, consulte [Ativar ações da área de trabalho na interface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)da Web do AEM.
+Na interface do usuário Ativos em um navegador, você pode explorar os locais dos ativos ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas de ações da área de trabalho e, para ativá-las, consulte [Ativar ações da área de trabalho na interface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)da Web do AEM.
 
 ![Ativar ações da área de trabalho para usar como atalho ao trabalhar com o aplicativo da área de trabalho](assets/enable_desktop_actions.png)
 
