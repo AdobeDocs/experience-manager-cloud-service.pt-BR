@@ -2,7 +2,7 @@
 title: Delivery de conteúdo
 description: 'Delivery de conteúdo '
 translation-type: tm+mt
-source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
+source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
 
 ---
 
@@ -187,7 +187,7 @@ Em vez disso, o agente de liberação de replicação deve ser usado. Isso pode 
 
 O diagrama apresentado abaixo ilustra isso.
 
-![](assets/cdnc.png "CDN")
+![](assets/cdnd.png "CDN")
 
 Se houver uma preocupação de que o cache do dispatcher não esteja sendo apagado, entre em contato com o suporte [ao](https://helpx.adobe.com/support.ec.html) cliente que pode liberar o cache do dispatcher, se necessário.
 
