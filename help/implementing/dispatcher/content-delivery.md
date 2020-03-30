@@ -2,7 +2,7 @@
 title: Delivery de conteúdo
 description: 'Delivery de conteúdo '
 translation-type: tm+mt
-source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
+source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
 
 ---
 
@@ -221,7 +221,7 @@ Por padrão, o controle de versão restrito do clientlib é ativado em todo o AE
 
 Para ativar o controle de versão restrito do clientlib no Início rápido do SDK local, execute as seguintes ações:
 
-1. Navegue até o Gerenciador de configuração do OSGi <host>/system/console/configMgr
+1. Navegue até o Gerenciador de configuração do OSGi `<host>/system/console/configMgr`
 1. Localize o Gerenciador de biblioteca HTML da configuração OSGi para o Adobe Granite:
    * Marque a caixa de seleção para ativar o Controle de versão restrito
    * No campo rotulado Chave de cache do lado do cliente de longo prazo, digite o valor de /.*;hash
