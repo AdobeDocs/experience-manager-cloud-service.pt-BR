@@ -2,7 +2,7 @@
 title: Delivery de conteúdo
 description: 'Delivery de conteúdo '
 translation-type: tm+mt
-source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
+source-git-commit: b1666e7715e8f5715be7a88001869c1042c6c994
 
 ---
 
@@ -101,14 +101,6 @@ O armazenamento em cache no CDN pode ser configurado usando as regras do dispatc
 
 * por padrão, armazenado em cache pelo navegador por cinco minutos, com base no cabeçalho de controle de cache emitido pela camada de cache. O CDN também respeita esse valor.
 * pode ser substituída para todo o conteúdo HTML/Texto definindo a `EXPIRATION_TIME` variável em `global.vars` usando o AEM como ferramentas do Dispatcher do SDK do serviço em nuvem.
-
-Você deve garantir que um arquivo em `src/conf.dispatcher.d/cache` que tenha a seguinte regra:
-
-```
-/0000
-{ /glob "*" /type "allow" }
-```
-
 * pode ser substituído em um nível de granulado mais fino pelas seguintes diretivas apache mod_headers:
 
 ```
