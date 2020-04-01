@@ -3,14 +3,14 @@ title: Use o Connected Assets para compartilhar ativos do DAM no fluxo de trabal
 description: Use os ativos disponíveis em uma implantação remota do Adobe Experience Manager Assets ao criar suas páginas da Web em outra implantação do Experience Manager Site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77494565596f3d7ac04613c057f0fccc8be71eab
+source-git-commit: 0b197a318e696df5b3502de5ce634e9990ab1032
 
 ---
 
 
 # Use o Connected Assets para compartilhar ativos do DAM no AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-Em grandes empresa, a infraestrutura necessária para criar sites pode ser distribuída. Às vezes, os recursos de criação de sites e os ativos digitais usados para criar esses sites podem residir em diferentes implantações. Alguns motivos podem incluir: implantações geograficamente distribuídas, necessárias para trabalhar em conjunto, aquisições que levam à infraestrutura heterogênea que a matriz deseja consolidar, crescimento que leva a tal escala que uma instância dedicada é necessária para o gerenciamento de ativos.
+Em grandes empresa, a infraestrutura necessária para criar sites pode ser distribuída. Às vezes, os recursos de criação de sites e os ativos digitais usados para criar esses sites podem residir em diferentes implantações. Algumas razões podem ser distribuídas geograficamente por implantações existentes que são necessárias para trabalhar em paralelo ou em aquisições que levam a uma infraestrutura heterogênea que a empresa pai deseja usar em conjunto.
 
 O AEM Sites oferece recursos para criar páginas da Web e o AEM Assets é o sistema de gerenciamento de ativos digitais (DAM) que fornece os ativos necessários para sites. O AEM agora dá suporte ao caso de uso acima integrando o AEM Sites e o AEM Assets.
 
