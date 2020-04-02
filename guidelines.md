@@ -1,9 +1,9 @@
 ---
-source-git-commit: 3162a65d19d5ccba5671c40f5184ab4882f77ecb
+source-git-commit: b5380858e0887da017657c653b05529066d95fd8
 translation-type: tm+mt
 
 ---
-# Diretrizes para contribuir com a documentação do AEM
+# Diretrizes para contribuir com a documentação do Adobe Experience Manager
 
 ## Filosofia da documentação do AEM
 
@@ -35,9 +35,9 @@ As exceções a essa regra se aplicam às notas de versão onde os problemas con
 
 Quaisquer ideias que você precisar melhorar a documentação do AEM são bem-vindas como contribuições. No entanto, comentários, problemas e solicitações de baixa automática são destinados apenas a *contribuições* . Eles não devem ser usados para responder suas perguntas sobre como usar o AEM, implementar seu projeto do AEM ou resolver problemas técnicos.
 
-Quaisquer dúvidas sobre o uso do AEM ou erros técnicos que possam ter sido relatados por meio do processo de suporte normal pelo Portal [de suporte do](https://daycare.day.com/home.html) Experience Manager ou discutidos na comunidade [](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)Experience Manager.
+Quaisquer dúvidas sobre o uso do AEM ou erros técnicos que possam ter sido relatados por meio do processo de suporte normal por meio do portal [de suporte corporativo da](https://helpx.adobe.com/contact/enterprise-support.ec.html) Experience Cloud ou discutidos na comunidade [do](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)Experience Manager.
 
-***As contribuições de documentação do AEM não são uma substituição do suporte da Adobe*** e quaisquer contribuições que buscam respostas para perguntas relacionadas ao suporte serão rejeitadas.
+***As contribuições para a documentação do AEM não são uma substituição do Atendimento*** ao cliente da Adobe, e qualquer contribuição que buscar respostas para perguntas relacionadas ao suporte será rejeitada.
 
 ### As contribuições devem mencionar claramente as páginas de documentação afetadas.
 
