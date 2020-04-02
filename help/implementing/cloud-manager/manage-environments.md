@@ -1,53 +1,55 @@
 ---
-title: Gerenciar ambientes - Serviço em nuvem
-description: Gerenciar ambientes - Serviço em nuvem
+title: Gerenciar Ambientes - Serviço em nuvem
+description: Gerenciar Ambientes - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
 
 ---
 
 
 # Gerenciamento de ambientes {#manage-environments}
 
-A seção a seguir descreve os tipos de ambiente que um usuário pode criar e como ele pode criar um ambiente.
+A seção a seguir descreve os tipos de ambientes que um usuário pode criar e como ele pode criar um ambiente.
 
-## Tipos de ambiente {#environment-types}
+## Tipos de Ambientes {#environment-types}
 
-Um usuário com as permissões necessárias pode criar os seguintes tipos de ambiente (dentro dos limites do que está disponível para o locatário específico).
+Um usuário com as permissões necessárias pode criar os seguintes tipos de ambientes (dentro dos limites do que está disponível para o locatário específico).
 
-* **Ambiente**de produção e estágio:
+* **Produção e Ambiente**de estágio:
 A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para fins de teste e produção.
 
-* **Desenvolvimento**: Um ambiente de desenvolvimento pode ser criado para fins de desenvolvimento e teste e será associado apenas a gasodutos de não produção.
+* **Desenvolvimento**: Um ambiente de desenvolvimento pode ser criado para fins de desenvolvimento e teste e será associado apenas a pipelines de não-produção.
 
    >[!NOTE]
-   >Um ambiente de desenvolvimento criado automaticamente em um programa Sandbox será configurado para incluir soluções Sites e Ativos.
+   >Um ambiente de desenvolvimento criado automaticamente em um programa Sandbox será configurado para incluir as soluções Sites e Ativos.
 
-   A tabela a seguir resume os tipos de Ambiente e seus atributos:
+   A tabela a seguir resume os tipos de Ambientes e seus atributos:
 
-   | Nome | Camada do autor | Publicar camada | O usuário pode criar | O usuário pode excluir | Gasoduto que pode ser associado ao ambiente |
+   | Nome | Camada do autor | Publicar camada | O usuário pode criar | O usuário pode excluir | Pipeline que pode ser associado ao ambiente |
    |--- |--- |--- |--- |---|---|
    | Produção | Sim | Sim se os sites estiverem incluídos | Sim | Não | Gasoduto de produção |
    | Estágio | Sim | Sim se os sites estiverem incluídos | Sim | Não | Gasoduto de produção |
    | Desenvolvimento | Sim | Sim se os sites estiverem incluídos | Sim | Sim | Gasoduto de não produção |
 
    >[!NOTE]
-   >
-A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para fins de teste e produção.  O usuário não poderá criar somente o Stage ou somente o ambiente Production.
+   >A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para fins de teste e produção.  O usuário não poderá criar apenas o Estágio ou somente o ambiente de Produção.
 
-## Adicionar um ambiente {#adding-environments}
+## Adicionar um Ambiente {#adding-environments}
 
 
 1. O usuário clica no botão **Adicionar ambiente** para adicionar um ambiente.
 
+   >[!NOTE]
+   >Esse botão também pode ser acessado da página Ambientes ou do cartão Ambientes. Como usuário, essa opção será exibida somente se você tiver a permissão necessária. Entre em contato com seu representante da Adobe em caso de dúvidas.
+
    ![](assets/add-environment.png)
 
-1. A caixa de diálogo **Adicionar ambiente** é exibida. O usuário precisa enviar detalhes como tipo **de** Ambiente e nome **do** Ambiente e descrição **do** Ambiente (dependendo do objetivo do usuário em criar o ambiente dentro dos limites do que está disponível para o locatário específico).
+1. A caixa de diálogo **Adicionar ambiente** é exibida. O usuário precisa enviar detalhes como **Tipo de ambiente** e **Nome do ambiente** e **Descrição do ambiente** (dependendo do objetivo do usuário ao criar o ambiente dentro dos limites do que está disponível para o locatário específico).
 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Ao criar um ambiente, uma ou mais *integrações* são criadas na E/S da Adobe. Eles estão visíveis para usuários clientes que têm acesso ao console de E/S da Adobe e não devem ser excluídos. Isso é descartado na descrição no console de E/S da Adobe.
+   >Ao criar um ambiente, uma ou mais *integrações* são criadas em E/S da Adobe. Eles estão visíveis para usuários clientes que têm acesso ao console de E/S da Adobe e não devem ser excluídos. Isso é descartado na descrição no console de E/S da Adobe.
 
    ![](assets/add-environment-image1.png)
 
@@ -57,16 +59,16 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
    >Caso ainda não tenha configurado o pipeline de não-produção, a tela *Visão geral* exibe o cartão de onde você pode criar o pipeline de não-produção.
 
 
-## Atualização do ambiente {#updating-dev-environment}
+## Atualização do Ambiente {#updating-dev-environment}
 
-As atualizações dos ambientes Stage e Production são gerenciadas automaticamente pela Adobe.
+As atualizações de ambientes de Estágio e Produção são gerenciadas automaticamente pela Adobe.
 
-Os usuários do programa gerenciam atualizações para ambientes de desenvolvimento. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status no Cartão do ambiente na tela inicial mostrará **ATUALIZAÇÃO DISPONÍVEL**.
+As atualizações dos ambientes de desenvolvimento são gerenciadas pelos usuários do programa. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status na placa de Ambientes na tela inicial mostrará **ATUALIZAÇÃO DISPONÍVEL**.
 
 ![](assets/manage-environments2.png)
 )
 
-Quando esse status for exibido, a opção **Atualizar** estará disponível no menu suspenso, tanto no Cartão de ambiente quanto no menu **Gerenciar** , se você clicar em **Detalhes** no cartão **AMBIENTES** .
+Quando esse status for exibido, a opção **Atualizar** estará disponível no menu suspenso, tanto no Cartão de ambientes quanto no menu **Gerenciar**, se você clicar em **Detalhes** no cartão **AMBIENTES**.
 
 ![](assets/add-environment4.png)
 
