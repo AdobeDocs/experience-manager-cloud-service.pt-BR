@@ -2,14 +2,14 @@
 title: Conjuntos de imagem
 description: Saiba como trabalhar com conjuntos de imagens no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 8c7338110bb6d673bf80f274ff886539aead2847
+source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
 
 # Conjuntos de imagem {#image-sets}
 
-Os Conjuntos de imagens fornecem aos usuários uma experiência de visualização integrada, na qual eles podem ver diferentes visualizações de um item clicando em uma imagem em miniatura. Os Conjuntos de imagens permitem que você apresente exibições alternativas de um item e o visualizador oferece ferramentas de zoom para examinar as imagens de perto.
+Os Conjuntos de imagens fornecem aos usuários uma experiência de visualização integrada, na qual eles podem ver visualizações diferentes de um item clicando em uma imagem em miniatura. Os Conjuntos de imagens permitem que você apresente visualizações alternativas de um item e as ferramentas de zoom do visualizador de ofertas para examinar as imagens de perto.
 
 Os conjuntos de imagens são designados por um banner com a palavra `IMAGESET`. Além disso, se o Conjunto de imagens for publicado, a data de publicação, indicada pelo ícone **[!UICONTROL Mundo]**, estará no banner junto com a última data de modificação, indicada pelo ícone **[!UICONTROL Lápis]**.
 
@@ -25,13 +25,13 @@ Por exemplo, suponha que você queira apresentar imagens de maiúsculas com dife
 >
 >Para obter informações sobre a interface do usuário Ativos, consulte [Gerenciamento de ativos com a interface do usuário](/help/assets/manage-digital-assets.md)de toque.
 
-## Início rápido: Conjuntos de imagens {#quick-start-image-sets}
+## Start rápido: Conjuntos de imagens {#quick-start-image-sets}
 
 Para começar a trabalhar rapidamente:
 
-1. [Carregue suas imagens mestre para várias exibições.](#uploading-assets-in-image-sets)
+1. [Carregue suas imagens mestre para várias visualizações.](#uploading-assets-in-image-sets)
 
-   Comece carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. O AEM Assets suporta vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
+   Start carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. O AEM Assets suporta vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
 
 1. [Criar conjuntos de imagens.](#creating-image-sets)
 
@@ -56,31 +56,29 @@ Para começar a trabalhar rapidamente:
    Consulte **[!UICONTROL Ferramentas > Ativos > Predefinições]** do visualizador para criar ou editar predefinições do visualizador.
 
 1. (Opcional) [Visualizando Conjuntos](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) de Imagens que foram criados usando predefinições de conjuntos de lotes.
-1. [Visualizar conjuntos de imagens.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Conjuntos de imagens de Pré-visualização.](/help/assets/dynamic-media/previewing-assets.md)
 
-   Selecione o Conjunto de imagens e você pode visualizá-lo. Clique nos ícones de miniatura para examinar seu Conjunto de imagens no Visualizador selecionado. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]** , disponível no menu suspenso do painel esquerdo.
+   Selecione o Conjunto de imagens e você pode pré-visualização-lo. Clique nos ícones de miniatura para examinar seu Conjunto de imagens no Visualizador selecionado. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]** , disponível no menu suspenso do painel esquerdo.
 
 1. [Publicar conjuntos de imagens.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
    A publicação de um conjunto de imagens ativa o URL e a string Incorporada. Além disso, você deve [publicar qualquer predefinição](/help/assets/dynamic-media/managing-viewer-presets.md) do visualizador personalizado que tenha criado. As predefinições do visualizador predefinidas já estão publicadas.
 
-1. [Vincule URLs ao aplicativo](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) da Web ou [Incorpore o visualizador](/help/assets/dynamic-media/embed-code.md)de vídeo ou imagem.
+1. [Vincule URLs à sua Aplicação web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [Incorpore o visualizador](/help/assets/dynamic-media/embed-code.md)de vídeo ou imagem.
 
-   Os ativos AEM criam chamadas de URL para Conjuntos de imagens e as ativam depois que você publica os conjuntos de imagens. Você pode copiar esses URLs ao visualizar ativos. Como alternativa, você pode incorporá-los ao seu site.
+   Os ativos AEM criam chamadas de URL para Conjuntos de imagens e as ativam depois que você publica os conjuntos de imagens. Você pode copiar esses URLs ao pré-visualização de ativos. Como alternativa, você pode incorporá-los ao seu site.
 
    Selecione o Conjunto de imagens e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores]**.
 
    Consulte [Vincular um conjunto de imagens a uma página da Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) e [Incorporar o visualizador de vídeo ou imagem](/help/assets/dynamic-media/embed-code.md).
 
-Para editar Conjuntos de imagens, consulte [edição de Conjuntos de imagens.](#editing-image-sets) Além disso, é possível exibir e editar as propriedades [do Conjunto de](/help/assets/manage-digital-assets.md#editing-properties)imagens.
+Para editar Conjuntos de imagens, consulte [edição de Conjuntos de imagens.](#editing-image-sets) Além disso, você pode visualização e editar as propriedades [do Conjunto de](/help/assets/manage-digital-assets.md#editing-properties)imagens.
 
 Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos na [solução de problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
 ## Fazer upload de ativos em conjuntos de imagens {#uploading-assets-in-image-sets}
 
-Comece carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão para obter detalhes ideais de zoom. O Dynamic Media pode renderizar imagens de até 25 megapixels cada. Por exemplo, você pode usar uma imagem de 5000 x 5000 megapixels ou qualquer outra combinação de tamanho até 25 megapixels.
-
-Os Conjuntos de imagens são compatíveis com vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS são recomendadas sem perdas.
+Start carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. Os Conjuntos de imagens são compatíveis com vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS são recomendadas sem perdas.
 
 Você pode carregar imagens para Conjuntos de imagens da mesma forma que faria [upload de qualquer outro ativo em Ativos](/help/assets/manage-digital-assets.md#uploading-assets).
 
@@ -88,7 +86,7 @@ Você pode carregar imagens para Conjuntos de imagens da mesma forma que faria [
 
 Antes de criar Conjuntos de imagens, verifique se as imagens têm o tamanho e o formato corretos.
 
-Para criar um Conjunto de imagens de várias exibições, você precisa de imagens que mostrem um item de diferentes pontos de vista ou mostrem diferentes aspectos do mesmo item. O objetivo é destacar os recursos importantes de um item para que os visualizadores tenham uma imagem completa de como ele se parece ou faz.
+Para criar um Conjunto de imagens de várias visualizações, é necessário que as imagens mostrem um item de diferentes pontos de visualização ou mostrem diferentes aspectos do mesmo item. O objetivo é destacar os recursos importantes de um item para que os visualizadores tenham uma imagem completa de como ele se parece ou faz.
 
 Como os usuários podem aplicar zoom em Conjuntos de imagens, verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. Os ativos oferecem suporte para vários formatos de arquivo de imagem, mas são recomendadas imagens TIFF, PNG e EPS sem perdas.
 
@@ -169,7 +167,7 @@ Você pode criar conjuntos de imagens na interface do usuário ou automaticament
 >
 >Batch sets are created by the IPS [Image Production System] as part of asset ingestion.
 
-No entanto, os conjuntos criados usando predefinições de conjuntos de lotes *não* são exibidos na interface do usuário. Você pode ver esses conjuntos de três maneiras diferentes. (Esses métodos estão disponíveis mesmo se você tiver criado os conjuntos de imagens na interface do usuário).
+No entanto, os conjuntos criados usando predefinições de conjuntos de lotes *não* são exibidos na interface do usuário. Você pode visualização esses conjuntos de três maneiras diferentes. (Esses métodos estão disponíveis mesmo se você tiver criado os conjuntos de imagens na interface do usuário).
 
 * Abra as propriedades de um ativo individual. As propriedades indicam quais conjuntos o ativo selecionado é referenciado ou um membro do. Clique no nome do conjunto para ver o conjunto inteiro.
 
@@ -181,17 +179,17 @@ No entanto, os conjuntos criados usando predefinições de conjuntos de lotes *n
 
 * Na pesquisa, você pode selecionar **[!UICONTROL Filtro**, expandir **[!UICONTROL Dynamic Media** e selecionar **[!UICONTROL Conjuntos]**.
 
-   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjuntos de lotes. Para conjuntos automatizados, a consulta de pesquisa é realizada usando critérios de pesquisa &quot;Começa com&quot; diferentes da pesquisa do AEM, que se baseia no uso de critérios de pesquisa &quot;Contém&quot;. Definir o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
+   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjuntos de lotes. Para conjuntos automatizados, o query de pesquisa é realizado usando critérios de pesquisa &quot;Start com&quot; diferentes da pesquisa do AEM, que é baseada no uso de critérios de pesquisa &quot;Contém&quot;. Definir o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
->É possível exibir os conjuntos por meio da interface do usuário, conforme descrito em [Edição de conjuntos](#editing-image-sets)de imagens.
+>Você pode visualização os conjuntos por meio da interface do usuário, conforme descrito em [Edição de conjuntos](#editing-image-sets)de imagens.
 
 ## Edição de conjuntos de imagens {#editing-image-sets}
 
-Você pode executar várias tarefas de edição em Conjuntos de imagens, como:
+É possível executar várias tarefas de edição em Conjuntos de imagens, como:
 
 * Adicione imagens ao conjunto de imagens.
 * Reordene as imagens no Conjunto de imagens.
