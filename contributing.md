@@ -1,11 +1,11 @@
 ---
-source-git-commit: 3dd012e70e467be458523ad4a2be4610743e9980
+source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
 translation-type: tm+mt
 
 ---
 # Contribuição para a documentação do serviço da Adobe Experience Manager Cloud
 
-Obrigado por escolher contribuir com a documentação do Adobe Experience Manager Cloud Service! Saudamos as contribuições de conteúdo de toda nossa comunidade de leitores, bem como de outros funcionários da Adobe.
+Agradecemos por ter optado por contribuir com a documentação do [!UICONTROL Adobe Experience Manager] Cloud Service! Saudamos as contribuições de conteúdo de nossa comunidade e funcionários da Adobe fora das equipes de documentação.
 
 Este arquivo descreve como você pode contribuir, além de apontar as diretrizes a serem seguidas ao fazer suas contribuições.
 
@@ -13,47 +13,73 @@ Este arquivo descreve como você pode contribuir, além de apontar as diretrizes
 
 Este projeto adotou o Código de Conduta [de Código Aberto da](code-of-conduct.md)Adobe. Ao contribuir para a documentação do AEM, você concorda em seguir este código de conduta. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Diretrizes para contribuir
+## Diretrizes para contribuir com a documentação do AEM
 
-Embora nos congratulemos com quaisquer contribuições para melhorar a documentação do AEM, pedimos que as contribuições sigam, sempre que possível, determinadas diretrizes e normas. Consulte as [Diretrizes para contribuir para a documentação](guidelines.md) do AEM para obter mais informações.
+Embora seja bem-vindo qualquer contribuição para melhorar a documentação do serviço da AEM Cloud, pedimos que as contribuições sigam determinadas diretrizes e padrões. Consulte as [Diretrizes para contribuir para a documentação](guidelines.md) do AEM para obter mais informações.
 
 ## Como contribuir
 
-Queremos facilitar ao máximo a apresentação das suas contribuições. Você pode contribuir de duas formas:
+A forma como você contribui depende de quem você é e do tipo de mudanças que você gostaria de contribuir:
 
-* [Criar um problema](#create-an-issue)
-* [Criar uma solicitação de baixa automática](#create-a-pull-request)
+<!--
+We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
+--- master
+-->
 
-Qual método você escolhe depende de quão confortável você está editando a documentação no GitHub.
+### Criar um problema
 
->[!NOTE]
->
->As contribuições enviadas são cobertas pelos termos de uso da [Adobe.](https://www.adobe.com/legal/terms.html)
+Você tem uma sugestão, uma observação sobre os documentos atuais, ou pergunta como algo é descrito? Registre um problema. Os problemas também são excelentes se você tiver algo para contribuir, mas não se sinta confortável em editar os documentos ou fazer uma solicitação pull sozinho.
 
-### Criar um problema {#create-an-issue}
+### Alterações menores
 
-Você tem uma sugestão, uma observação sobre os documentos atuais, ou pergunta como algo é descrito? Em seguida, crie um problema. Os problemas também são excelentes se você tiver algo para contribuir, mas não se sinta confortável em editar os documentos ou fazer uma solicitação por push.
+Para enviar atualizações secundárias, clique no link **Editar** em um artigo, que abre o artigo de origem no GitHub. Use a interface do usuário do GitHub para fazer suas atualizações. Consulte o guia [geral do colaborador do](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) Adobe Docs para obter mais informações.
 
-Os problemas permitem que você descreva facilmente sua ideia para melhorar os documentos e um membro da equipe de documentos do AEM pode analisá-la. Basta clicar no link **Registrar um problema** na parte superior do painel de navegação direito em qualquer página para criar um problema.
+Pequenas correções ou esclarecimentos que você envia para documentação e exemplos de código neste acordo de recompra são cobertos pelos termos de uso da Adobe.
 
-### Criar uma solicitação de recebimento {#create-a-pull-request}
+### Alterações importantes ou novos artigos de membros da comunidade
 
-Se você vir um problema e souber exatamente como corrigi-lo, considere criar uma solicitação de baixa automática. As solicitações de recebimento permitem que você faça suas próprias edições na documentação, que são então revisadas para inclusão por um membro da equipe de documentos do AEM. Basta clicar no link **Editar esta página** na parte superior do painel de navegação direito em qualquer página para fazer as alterações sugeridas e criar a solicitação de baixa automática.
+Se fizer parte da comunidade Adobe e quiser criar um artigo ou enviar alterações importantes, clique na guia **Problemas** no repositório do GitHub para enviar um problema. Este envio inicia uma conversa com a equipe de documentação. Você precisará trabalhar com o gravador (ou outro funcionário da Adobe) para publicar novo conteúdo.
 
-Todas as solicitações pull devem ser acompanhadas por um contrato de licença de [contribuinte assinado ou CLA.](https://opensource.adobe.com/cla.html)  Isso dá à Adobe a permissão de redistribuir suas contribuições como parte do projeto. Você só precisa enviar um Adobe CLA uma vez, portanto, se você já enviou um anteriormente, você pode ir!
+Se você enviar uma solicitação pull com alterações significativas na documentação e exemplos de código, verá uma mensagem na solicitação pull solicitando que você envie um contrato de licença de contribuição online (CLA). Você deve preencher o formulário on-line antes de podermos revisar sua solicitação de recebimento.
 
-### Introdução rápida ao vídeo
+<!--
+If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click on the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
+--master
+-->
 
-Assista ao vídeo a seguir para obter uma rápida visão geral de como criar problemas e solicitações.
+### Principais alterações dos funcionários da Adobe
 
->[!VIDEO](https://video.tv.adobe.com/v/27069)
+Se você for um gravador técnico, gerente de programas ou desenvolvedor da equipe de produtos para uma solução da Adobe Experience Cloud e sua tarefa for contribuir ou criar artigos técnicos, você deverá usar o repositório privado em `https://git.corp.adobe.com/AdobeDocs`.
 
-### Contribuições de funcionários da Adobe
+Os funcionários da Adobe de outras partes do mundo da Adobe devem usar o acordo de recompra público para atualizações menores.
 
-Se você for um funcionário da Adobe e tiver uma contribuição, use a `AdobeDocs` organização no git corporativo.
+## Contrato de licença do contribuidor
 
-É claro que estamos satisfeitos com qualquer contribuição e revisaremos sua contribuição se ela for feita no repositório público, no entanto, as solicitações dos funcionários da Adobe são mais fáceis de processar e podem ser aprovadas mais rapidamente no acordo de recompra corporativo. Certifique-se de que qualquer informação proprietária seja apenas discutida no acordo de recompra das empresas.
+Todas as contribuições de terceiros para este projeto devem ser acompanhadas por um contrato de licença de contribuinte assinado. Isso dá à Adobe a permissão de redistribuir suas contribuições como parte do projeto. [Assine nosso CLA.](https://opensource.adobe.com/cla.html) Você só precisa enviar um Adobe CLA uma vez, portanto, se você já enviou um anteriormente, você pode ir!
 
-## Informações adicionais
 
-Consulte o Guia [do colaborador do](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) Adobe Docs para obter mais detalhes sobre como usar a plataforma de criação do GitHub.
+## Ferramentas e configuração
+
+Os contribuidores comunitários podem usar a interface do usuário do GitHub para a edição básica ou garfo do acordo de recompra para dar contribuições importantes.
+
+<!--
+If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
+We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
+---master
+-->
+
+Consulte o Guia [do colaborador do](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) Adobe Docs para obter uma visão geral de como usar a plataforma de criação do GitHub.
+
+## Como usar a marcação para formatar seu tópico
+
+Todos os artigos neste repositório usam a marcação com sabor do GitHub. Se não estiver familiarizado com a redução, consulte:
+
+* [Noções básicas de marcação](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Tabuleiro de marcação para impressão](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## Etiquetas
+
+No repositório público, as etiquetas automatizadas são atribuídas para solicitações de baixa automática que nos ajudam a gerenciar o fluxo de trabalho da solicitação de baixa automática e para ajudar você a saber o que está acontecendo com sua solicitação de baixa automática:
+
+* **Alteração enviada ao autor**: O autor foi notificado da solicitação de baixa pendente.
+* **pronto para unir**: Pronto para revisão por nossa equipe de análise de solicitação de baixa automática.
