@@ -3,7 +3,7 @@ title: 'APIs de ativos para gerenciamento de ativos digitais no Adobe Experience
 description: As APIs de ativos permitem operações básicas de criação-leitura-atualização-exclusão (CRUD) para gerenciar ativos, incluindo binários, metadados, representações, comentários e Fragmentos de conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
@@ -55,7 +55,9 @@ O tipo de conteúdo do corpo da solicitação deve ser dados de `application/x-w
 * `(string) fileName`: Obrigatório. O nome do ativo como ele será exibido na instância.
 * `(number) fileSize`: Obrigatório. O comprimento total, em bytes, do binário a ser carregado.
 
-Uma única solicitação pode ser usada para iniciar uploads para vários binários, desde que cada binário contenha os campos obrigatórios. Se bem-sucedida, a solicitação responderá com um código de `201` status e um corpo contendo dados JSON no seguinte formato:
+Observe que uma única solicitação pode ser usada para iniciar uploads para vários binários, desde que cada binário contenha os campos obrigatórios.
+
+Se bem-sucedida, a solicitação responderá com um código de status 201 e um corpo contendo dados JSON no seguinte formato:
 
 ```
 {
@@ -72,17 +74,17 @@ Uma única solicitação pode ser usada para iniciar uploads para vários binár
         }
     ]
 }
-```
+````
 
-* `completeURI` (string): Chame esse URI quando o binário terminar de carregar. O URI pode ser um URI absoluto ou relativo, e os clientes devem ser capazes de lidar com ele. Ou seja, o valor pode ser `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` Ver upload [](#complete-upload)concluído.
-* `folderPath` (string): Caminho completo para a pasta onde o binário está sendo carregado.
-* `(files)` (matriz): Uma lista de elementos cujo comprimento e ordem corresponderão ao comprimento e à ordem da lista de informações binárias fornecidas na solicitação inicial.
-* `fileName` (string): O nome do binário correspondente, conforme fornecido na solicitação de início. Esse valor deve ser incluído na solicitação completa.
-* `mimeType` (string): O tipo mime do binário correspondente, conforme fornecido na solicitação de início. Esse valor deve ser incluído na solicitação completa.
-* `uploadToken` (string): Um token de carregamento para o binário correspondente. Esse valor deve ser incluído na solicitação completa.
-* `uploadURIs` (matriz): Uma lista de strings cujos valores são URIs completos para os quais o conteúdo do binário deve ser carregado (consulte [Carregar binário](#upload-binary)).
-* `minPartSize` (número): O comprimento mínimo, em bytes, dos dados que podem ser fornecidos a qualquer um dos uploadURIs, se houver mais de um URI.
-* `maxPartSize` (número): O comprimento máximo, em bytes, dos dados que podem ser fornecidos a qualquer um dos uploadURIs, se houver mais de um URI.
+* `(string) completeURI`: O URI que deve ser chamado quando o binário terminar de carregar. Isso pode ser um URI absoluto ou relativo, e os clientes devem ser capazes de lidar com qualquer um deles. Ou seja, o valor pode ser `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` (consulte [Carregamento](#complete-upload)completo).
+* `(string) folderPath`: Caminho completo para a pasta onde o binário está sendo carregado.
+* `(array) (files)`: Uma lista de elementos cujo comprimento e ordem corresponderão ao comprimento e à ordem da lista de informações binárias fornecidas na solicitação inicial.
+* `(string) fileName`: O nome do binário correspondente, conforme fornecido na solicitação de início. Esse valor deve ser incluído na solicitação completa.
+* `(string) mimeType`: O tipo mime do binário correspondente, conforme fornecido na solicitação de início. Esse valor deve ser incluído na solicitação completa.
+* `(string) uploadToken`: Um token de carregamento para o binário correspondente. Esse valor deve ser incluído na solicitação completa.
+* `(array) uploadURIs`: Uma lista de strings cujos valores são URIs completos para os quais o conteúdo do binário deve ser carregado (consulte [Carregar binário](#upload-binary)).
+* `(number) minPartSize`: O comprimento mínimo, em bytes, dos dados que podem ser fornecidos a qualquer um dos uploadURIs, se houver mais de um URI.
+* `(number) maxPartSize`: O comprimento máximo, em bytes, dos dados que podem ser fornecidos a qualquer um dos uploadURIs, se houver mais de um URI.
 
 ### Carregar binário {#upload-binary}
 
@@ -127,7 +129,7 @@ Para saber mais sobre os algoritmos de upload ou para criar seus próprios scrip
 
 ### APIs de upload de ativos obsoletos {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 Para o Experience Manager como um serviço em nuvem, somente as novas APIs de upload são compatíveis. As APIs do Experience Manager 6.5 estão obsoletas.
