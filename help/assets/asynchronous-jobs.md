@@ -3,7 +3,7 @@ title: Operações assíncronas
 description: O AEM Assets otimiza o desempenho ao concluir de forma assíncrona algumas tarefas que consomem muitos recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
@@ -21,7 +21,7 @@ Essas operações incluem:
 
 O processamento assíncrono envolve enfileiramento de várias tarefas e, eventualmente, sua execução em série, dependendo da disponibilidade dos recursos do sistema.
 
-Você pode exibir o status de trabalhos assíncronos na página Status **[!UICONTROL do trabalho]** assíncrono.
+Você pode visualização o status de trabalhos assíncronos na página Status **[!UICONTROL do trabalho]** assíncrono.
 
 >[!NOTE]
 >
@@ -29,9 +29,9 @@ Você pode exibir o status de trabalhos assíncronos na página Status **[!UICON
 
 ## Monitoramento do status das operações assíncronas {#monitoring-the-status-of-asynchronous-operations}
 
-Sempre que o AEM Assets processar uma operação de forma assíncrona, você receberá uma notificação na sua caixa de entrada <!-- and through email -->.
+Sempre que o AEM Assets processa uma operação de forma assíncrona, você recebe uma notificação na sua caixa de entrada e por email.
 
-Para exibir o status das operações assíncronas em detalhes, navegue até a página Status **[!UICONTROL do trabalho]** assíncrono.
+Para visualização o status das operações assíncronas em detalhes, navegue até a página Status **[!UICONTROL do trabalho]** assíncrono.
 
 1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ativos]** > **[!UICONTROL Trabalhos]**.
 1. Na página Status **[!UICONTROL do trabalho]** assíncrono, reveja os detalhes das operações.
@@ -52,7 +52,7 @@ Para exibir o status das operações assíncronas em detalhes, navegue até a p�
 
    ![stop_icon](assets/stop_icon.png)
 
-1. Para exibir detalhes adicionais, por exemplo, descrição e registros, selecione a operação e toque/clique no ícone **[!UICONTROL Abrir]** na barra de ferramentas.
+1. Para visualização de detalhes adicionais, por exemplo, descrição e registros, selecione a operação e toque/clique no ícone **[!UICONTROL Abrir]** na barra de ferramentas.
 
    ![open_icon](assets/open_icon.png)
 
