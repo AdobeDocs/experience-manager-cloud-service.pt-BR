@@ -1,8 +1,8 @@
 ---
 title: Guias do usuário do Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação do Adobe Experience Manager as a Cloud Service
-translation-type: ht
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+translation-type: tm+mt
+source-git-commit: 587e60678bf92e2a0124da13d3c7fb492a5a7d4e
 
 ---
 
@@ -20,10 +20,12 @@ Esta página lista os guias do usuário de autoajuda do Experience Manager as a 
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
 | [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário de sites](/help/sites-cloud/home.md) | Entenda como administrar os sites do Experience Manager as a Cloud Service. |
-| [Guia do usuário de ativos](/help/assets/home.md) | Entenda como administrar os ativos do Experience Manager as a Cloud Service. |
+| [Guia do usuário de ativos](/help/assets/home.md) | Entenda como administrar o Experience Manager Assets as a Cloud Service. |
 | [Implementação do guia do usuário](/help/implementing/home.md) | Saiba como personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação do desenvolvimento. |
 | [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar soluções ao Experience Manager as a Cloud Service. |
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção. |
+| [Mover para o AEM como um serviço em nuvem](/help/move-to-cloud-service/home.md) | Saiba mais sobre os recursos e as ferramentas de autoajuda que facilitam a mudança para o AEM como um serviço em nuvem. |
+
 
 ## Outros recursos do Experience Manager {#other-resources}
 
