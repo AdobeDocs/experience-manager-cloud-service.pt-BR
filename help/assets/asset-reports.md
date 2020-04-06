@@ -3,22 +3,22 @@ title: Relatórios de ativos
 description: Este artigo descreve vários relatórios sobre ativos nos ativos AEM e como gerar relatórios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
 # Relatórios dos ativos {#asset-reports}
 
-O relatório de ativos é uma ferramenta essencial para avaliar a utilidade da implantação dos ativos Adobe Experience Manager (AEM). Com os ativos AEM, você pode gerar uma variedade de relatórios em torno de seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com ativos e quais ativos são baixados e compartilhados.
+O relatórios de ativos é uma ferramenta essencial para avaliar a utilidade da implantação dos ativos Adobe Experience Manager (AEM). Com os ativos AEM, você pode gerar uma variedade de relatórios em torno de seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com ativos e quais ativos são baixados e compartilhados.
 
 Use as informações nos relatórios para obter as principais métricas de sucesso para medir a adoção dos ativos AEM na sua empresa e pelos clientes.
 
 A estrutura de relatórios do AEM Assets aproveita os trabalhos Sling para processar de forma assíncrona solicitações de relatório de maneira ordenada. É escalável para repositórios grandes. O processamento assíncrono de relatórios aumenta a eficiência e a velocidade com que os relatórios são gerados.
 
-A interface de gerenciamento de relatórios é intuitiva e inclui opções e controles refinados para acessar relatórios arquivados e exibir status de execução de relatórios (sucesso, falha e enfileirados).
+A interface de gerenciamento de relatórios é intuitiva e inclui opções e controles refinados para acessar relatórios arquivados e status de execução de relatórios de visualização (sucesso, falha e enfileirados).
 
-Quando um relatório é gerado, você é notificado por <!-- through an email (optional) and --> uma notificação de caixa de entrada. Você pode exibir, baixar ou excluir um relatório da página de listagem do relatório, onde todos os relatórios gerados anteriormente são exibidos.
+Quando um relatório é gerado, você é notificado por meio de um email (opcional) e de uma notificação de caixa de entrada. Você pode visualização, baixar ou excluir um relatório da página de listagem do relatório, onde todos os relatórios gerados anteriormente são exibidos.
 
 ## Gerar relatórios {#generate-reports}
 
@@ -79,7 +79,7 @@ Os administradores do AEM podem facilmente gerar e personalizar esses relatório
 
    ![files_report](assets/files_report.png)
 
-   O relatório **[!UICONTROL Compartilhamento de links]** exibe URLs de ativos que são compartilhados com usuários externos a partir do AEM Assets. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> As colunas não são personalizáveis.
+   O relatório **[!UICONTROL Compartilhamento de links]** exibe URLs de ativos que são compartilhados com usuários externos a partir do AEM Assets. Inclui IDs de email do usuário que compartilhou os ativos, IDs de email de usuários com os quais os ativos são compartilhados, data de compartilhamento e data de expiração do link. As colunas não são personalizáveis.
 
    O relatório **[!UICONTROL Compartilhamento de links]** não inclui opções para subpastas e representações porque apenas publica os URLs compartilhados que aparecem em */var/dam/share*.
 
@@ -98,7 +98,7 @@ Os administradores do AEM podem facilmente gerar e personalizar esses relatório
 1. Tap/click **[!UICONTROL Create]** from the toolbar. Uma mensagem notifica que a geração de relatórios foi iniciada.
 1. Na página Relatórios de ativos, o status de geração de relatórios se baseia no estado atual do trabalho de relatório, por exemplo, Sucesso, Falha, Enfileirado ou Agendado. O mesmo status é exibido na caixa de entrada de notificações.
 
-   Para exibir a página do relatório, toque/clique no link do relatório. Como alternativa, selecione o relatório e toque/clique no ícone Exibir na barra de ferramentas.
+   Para visualização na página do relatório, toque/clique no link do relatório. Como alternativa, selecione o relatório e toque/clique no ícone de Visualização na barra de ferramentas.
 
    ![report_page](assets/report_page.png)
 
