@@ -2,14 +2,14 @@
 title: Gerenciar registros - serviço em nuvem
 description: Gerenciar registros - serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
+source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 ---
 
 
 # Acesso e gerenciamento de registros {#manage-logs}
 
-Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado usando o Cartão de Ambiente.  Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
+Os usuários podem acessar uma lista de arquivos de registro disponíveis para o ambiente selecionado usando o Cartão de Ambiente.  Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
 
 Esses arquivos podem ser baixados por meio da interface do usuário, na página **Visão geral** .
 
@@ -29,7 +29,7 @@ Ou a página **Ambientes** :
 
 Além de fazer o download de logs por meio da interface do usuário, os registros estarão disponíveis por meio da API e da interface de linha de comando.
 
-Por exemplo, para baixar os arquivos de log de um ambiente específico, o comando seria algo isolado nas linhas de
+Por exemplo, para baixar os arquivos de registro de um ambiente específico, o comando seria algo isolado nas linhas de
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
@@ -66,10 +66,3 @@ Environment Id Service    Name
 
 >[!Nnota]
 >Embora os **Downloads de registro** estejam disponíveis na interface do usuário e na API, o **Resíduo de registro** é somente API/CLI.
-
-### Additional Resources {#resources}
-
-Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud Manager e a CLI de E/S da Adobe:
-
-* [Documentação da API do Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [CLI de E/S da Adobe](https://github.com/adobe/aio-cli-plugin-cloudmanager)
