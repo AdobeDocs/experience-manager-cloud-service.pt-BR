@@ -2,7 +2,7 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 translation-type: tm+mt
-source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
@@ -13,7 +13,7 @@ Você pode definir as propriedades desejadas para uma página. Eles podem variar
 
 ## Propriedades da página {#page-properties}
 
-As propriedades são distribuídas por meio de várias guias.
+As propriedades são distribuídas por várias guias.
 
 ### Básico {#basic}
 
@@ -80,7 +80,7 @@ As propriedades são distribuídas por meio de várias guias.
 
    * Indica se você deseja que a página use a URL personalizada.
 
-### Avançado   {#advanced}
+### Avançado    {#advanced}
 
 * **Idioma**
 
@@ -135,7 +135,7 @@ As propriedades são distribuídas por meio de várias guias.
 
    * Especifique uma configuração de exportação.
 
-### Miniatura   {#thumbnail}
+### Miniatura    {#thumbnail}
 
 Exibe a imagem de miniatura da página. É possível:
 
@@ -159,7 +159,7 @@ Exibe a imagem de miniatura da página. É possível:
 
 * **Compartilhamento em rede social**
 
-   Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente de compartilhamento principal](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
+   Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente de compartilhamento principal](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/sharing.html).
 
    * **Permitir o compartilhamento de usuário para Facebook**
    * **Permitir o compartilhamento de usuário para Pinterest**
@@ -180,9 +180,7 @@ Exibe a imagem de miniatura da página. É possível:
 
 * **Configuração de direcionamento**
 
-   * Selecione uma [Marca para especificar um escopo para a segmentação](/help/sites-cloud/authoring/personalization/targeted-content.md).
-   >[!NOTE]
-   >Essa opção exige que a conta de usuário esteja no `Target Adminstrators`grupo.
+   * Selecione uma [Marca para especificar um escopo de direcionamento](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
 ### Permissões   {#permissions}
 
@@ -199,14 +197,14 @@ Exibe a imagem de miniatura da página. É possível:
    * Defina as propriedades para uma página do Blueprint no gerenciamento de vários sites. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy    {#live-copy}
 
 * **Live Copy**
 
    * Defina as propriedades para uma página de Live Copy no gerenciamento de vários sites. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site   {#site-structure}
+### Estrutura do site    {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
@@ -230,7 +228,7 @@ Ao clicar ou tocar em **Propriedades** para definir as propriedades da página:
    * [Modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * As propriedades da página serão exibidas usando as guias adequadas.
 1. Exiba ou edite as propriedades conforme necessário.
-1. Em seguida, use **Salvar** para salvar as atualizações, seguido por **Fechar** para retornar ao console.
+1. Em seguida, clique em **Salvar** para salvar as atualizações, e em **Fechar** para retornar ao console.
 
 ### Ao editar uma página {#when-editing-a-page}
 
