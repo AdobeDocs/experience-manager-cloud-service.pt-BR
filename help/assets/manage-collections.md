@@ -4,7 +4,7 @@ description: Entenda o conceito de coleção nos ativos Adobe Experience Manager
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
 
 ---
 
@@ -44,14 +44,14 @@ Você pode criar uma coleção com referências estáticas, por exemplo, uma col
 
    >[!NOTE]
    >
-   >Para permitir que os membros compartilhem coleções com outros usuários, forneça ao `dam-users` grupo permissões de leitura no caminho `home/users`. Conceda permissão aos usuários no `/content/dam/collections` local para permitir que eles visualizem as Coleções nas listas pop-up. Como alternativa, torne o usuário parte do `dam-users` grupo.
+   >Para permitir que os membros compartilhem coleções com outros usuários, forneça ao `dam-users` grupo permissões de leitura no caminho `home/users`. Conceda permissão aos usuários no `/content/dam/collections` local para permitir que eles visualizações as coleções nas listas pop-up. Como alternativa, torne o usuário parte do `dam-users` grupo.
 
 1. (Opcional) Adicione uma imagem em miniatura para a coleção.
 1. Toque/clique em **[!UICONTROL Criar]** e em **[!UICONTROL OK]** para fechar a caixa de diálogo. Uma coleção com o título e as propriedades especificadas é aberta no console Coleções.
 
    >[!NOTE]
    >
-   >Os ativos do Experience Manager permitem que você crie tarefas de revisão para uma coleção semelhantes à maneira como você cria tarefas de revisão para uma pasta de ativos.
+   >Os Ativos do Experience Manager permitem que você crie tarefas de revisão para uma coleção semelhantes à maneira como você cria tarefas de revisão para uma pasta de ativos.
 
    Para adicionar ativos à coleção, navegue até a interface do usuário Ativos. Para obter detalhes, consulte [Adicionar ativos a uma coleção](#add-assets-to-a-collection).
 
@@ -88,7 +88,7 @@ Você pode adicionar ativos a uma coleção que contenha uma lista de ativos ou 
 
 >[!NOTE]
 >
->Coleções inteligentes usam uma consulta de pesquisa para preencher ativos. Portanto, referências estáticas a ativos e pastas não se aplicam a eles.
+>Coleções inteligentes usam um query de pesquisa para preencher ativos. Portanto, referências estáticas a ativos e pastas não se aplicam a eles.
 
 1. Na interface do usuário Ativos, navegue até o local do ativo que deseja adicionar a uma coleção.
 1. Selecione o ativo e toque/clique no ícone **[!UICONTROL Para coleção]** na barra de ferramentas. Como alternativa, você pode arrastar o ativo para a zona **[!UICONTROL Soltar na coleção]** . Solte o botão do mouse quando a zona solta se tornar ativa e seu rótulo se alterar para **[!UICONTROL Soltar para Adicionar]**.
@@ -109,7 +109,7 @@ As coleções inteligentes são criadas salvando uma pesquisa para que você pos
 1. Toque/clique em **[!UICONTROL Substituir]** para substituir a coleção inteligente original pela coleção editada. Como alternativa, selecione **[!UICONTROL Salvar como]** para salvar a coleção editada separadamente.
 1. Na caixa de diálogo de confirmação, toque/clique em **[!UICONTROL Salvar]** para concluir o processo.
 
-## Exibir e editar metadados da coleção {#view-and-edit-collection-metadata}
+## Visualização e edição de metadados da coleção {#view-and-edit-collection-metadata}
 
 Os metadados da coleção incluem dados sobre a coleção, incluindo quaisquer tags adicionadas.
 
@@ -170,7 +170,7 @@ Quando você baixa uma coleção, toda a hierarquia de ativos dentro dela é bai
 
 1. No console Coleções, selecione uma ou mais coleções para baixar.
 1. Na barra de ferramentas, toque/clique no ícone de download.
-1. Na caixa de diálogo **[!UICONTROL Download]** , toque/clique em **[!UICONTROL Download]**. Se desejar baixar as representações dos ativos dentro da coleção, selecione **[!UICONTROL Representações]**. <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
+1. Na caixa de diálogo **[!UICONTROL Download]** , toque/clique em **[!UICONTROL Download]**. Se desejar baixar as representações dos ativos dentro da coleção, selecione **[!UICONTROL Representações]**. Selecione a opção **[!UICONTROL Email]** para enviar uma notificação por email ao proprietário da coleção.
 
    Quando você seleciona uma coleção para download, a hierarquia completa da pasta sob a coleção é baixada. Para incluir cada coleção que você baixa (incluindo ativos em coleções secundárias aninhadas sob a coleção pai) em uma pasta individual, selecione **[!UICONTROL Criar pasta separada para cada ativo]**.
 
@@ -178,7 +178,7 @@ Quando você baixa uma coleção, toda a hierarquia de ativos dentro dela é bai
 
 Os ativos Adobe Enterprise Manager (AEM) permitem que você edite os metadados de muitas coleções em massa. Use a página [!UICONTROL Propriedades] para executar alterações nos metadados em várias coleções, por exemplo, altere as propriedades dos metadados para um valor comum ou adicione ou modifique tags.
 
-Para personalizar a página [!UICONTROL Propriedades] de metadados, incluindo a adição, modificação e exclusão de propriedades de metadados, use o Editor de esquema.
+Para personalizar a página [!UICONTROL Propriedades] de metadados, incluindo adicionar, modificar e excluir propriedades de metadados, use o editor de Schemas.
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ Para personalizar a página [!UICONTROL Propriedades] de metadados, incluindo a 
    >
    >Os metadados adicionados para as coleções selecionadas substituem os metadados anteriores para essas coleções, exceto as tags. Quaisquer tags adicionadas no campo **[!UICONTROL Tags]** serão anexadas à lista existente de tags nos metadados.
 
-1. Para exibir as propriedades de metadados de uma coleção específica, desmarque as coleções restantes na lista de coleções. Os campos do editor de metadados são preenchidos com os metadados da coleção específica.
+1. Para visualização das propriedades de metadados de uma coleção específica, desmarque as coleções restantes na lista de coleções. Os campos do editor de metadados são preenchidos com os metadados da coleção específica.
 
    >[!NOTE]
    >
@@ -213,7 +213,7 @@ Para personalizar a página [!UICONTROL Propriedades] de metadados, incluindo a 
    >
    >A coleção atualizada mais recentemente é selecionada por padrão na página **[!UICONTROL Adicionar à coleção]** .
 
-1. Toque/clique em **[!UICONTROL Adicionar]**. Uma mensagem confirma que a coleção é adicionada à coleção de destino na página **[!UICONTROL Selecionar destino]** . Feche a mensagem para concluir o processo.
+1. Toque/clique em **[!UICONTROL Adicionar]**. Uma mensagem confirma que a coleção é adicionada à coleção de públicos alvos na página **[!UICONTROL Selecionar destino]** . Feche a mensagem para concluir o processo.
 
 >[!NOTE]
 >
@@ -242,16 +242,16 @@ Para excluir pesquisas salvas, siga estas etapas:
 
 ## Executar um fluxo de trabalho em uma coleção {#run-a-workflow-on-a-collection}
 
-Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a coleção contiver coleções aninhadas, o fluxo de trabalho também será executado nos ativos dentro das coleções aninhadas. No entanto, se a coleção e a coleção aninhada contiverem ativos duplicados, o fluxo de trabalho só será executado uma vez para esses ativos.
+Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a coleção contiver coleções aninhadas, o fluxo de trabalho também será executado nos ativos dentro das coleções aninhadas. No entanto, se a coleção e a coleção aninhada contiverem ativos de duplicado, o fluxo de trabalho só será executado uma vez para esses ativos.
 
 1. No console Coleções, selecione uma coleção na qual deseja executar um fluxo de trabalho.
-1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** na lista.
+1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha]** do tempo na lista.
 1. Na linha do tempo, clique ou toque no ícone Cursor na parte inferior e, em seguida, toque/clique em **[!UICONTROL Iniciar fluxo de trabalho]**.
 1. Na seção **[!UICONTROL Iniciar fluxo de trabalho]**, selecione um modelo de fluxo de trabalho da lista. Por exemplo, selecione o modelo **[!UICONTROL Atualizar ativo DAM]**.
-1. Insira um título para o fluxo de trabalho e toque/clique em **[!UICONTROL Iniciar]**.
+1. Insira um título para o fluxo de trabalho e toque/clique em **[!UICONTROL Start]**.
 1. Na caixa de diálogo, toque/clique em **[!UICONTROL Continuar]**. O fluxo de trabalho é executado em todos os ativos na coleção.
 
 >[!MORELIKETHIS]
 >
->* [Criar uma tarefa de revisão para Coleções](/help/assets/bulk-approval.md)
+>* [Criar uma tarefa de revisão para coleções](/help/assets/bulk-approval.md)
 
