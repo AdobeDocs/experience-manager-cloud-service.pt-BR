@@ -1,13 +1,12 @@
 ---
-sub-product: Core Concepts of AEM as a Cloud Service
-user-guide-title: Core Concepts of AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 5a846d34ee094e7d2f7fc71dbeef65f3fa58e86c
+sub-product: Conceitos principais do AEM as a Cloud Service
+user-guide-title: Conceitos principais do AEM as a Cloud Service
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # Conceitos principais {#core-concepts}
 
-+ [Conceitos principais do AEM as a Cloud Service](/help/core-concepts/home.md)
 + [Uma introdução à arquitetura do AEM as a Cloud Service](architecture.md)
