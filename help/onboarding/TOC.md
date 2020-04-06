@@ -1,15 +1,14 @@
 ---
-sub-product: Onboarding to AEM as a Cloud Service
-user-guide-title: Onboarding to AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
+sub-product: Integração ao AEM as a Cloud Service
+user-guide-title: Integração ao AEM as a Cloud Service
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # Integração {#onboarding}
 
-+ [Integração ao AEM as a Cloud Service](/help/onboarding/home.md)
 + O que é obrigatório {#what-is-required}
    + [Direitos de acesso concedidos](what-is-required/access-rights-granted.md)
    + [Adicionar usuários e funções](what-is-required/add-users-roles.md)
