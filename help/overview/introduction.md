@@ -2,14 +2,14 @@
 title: Introdução ao Adobe Experience Manager as a Cloud Service
 description: 'Introdução ao Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: bdda0ab15fa2cac40aefa5f60809ca96302fcabb
+source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 
 ---
 
 
 # Uma introdução ao Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-Agora o [Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM) está disponível como Cloud Service.
+Agora o [Adobe Experience Manager](https://www.adobe.com/br/marketing/experience-manager.html) (AEM) está disponível como Cloud Service.
 
 Adobe Experience Manager as a Cloud Service
 
@@ -18,8 +18,6 @@ Adobe Experience Manager as a Cloud Service
 * Permite proporcionar experiências personalizadas e orientadas por conteúdo aos clientes, combinando a eficiência do Sistema de gerenciamento de conteúdo do AEM com o Gerenciamento de ativos digitais do AEM.
 
 * Fornece Entrega contínua e integração contínua para atualizações sem tempo de inatividade.
-
-* Fornece conteúdo de forma rápida e eficiente, aproveitando uma Rede de Delivery de Conteúdo (CDN) integrada e outras práticas recomendadas de camada de rede.
 
 * É baseado em uma arquitetura dinâmica com dimensionamento automático, eliminando assim as considerações sobre infraestrutura.
 
@@ -75,4 +73,4 @@ O AEM atinge esses objetivos adotando as principais características dos serviç
 * A [Arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager as a Cloud Service
 * [Alterações importantes no AEM Sites no AEM as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Introdução ao Assets as a Cloud Service](/help/assets/overview.md)
-* [Tutoriais do Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutoriais do Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/br/experience-manager-learn/cloud-service/overview.html)
