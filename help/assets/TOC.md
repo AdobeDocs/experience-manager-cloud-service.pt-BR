@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
+source-git-commit: 4206534b0f3020b2136729d866eb753eb06d95b1
 
 ---
 
@@ -53,7 +53,7 @@ source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
    + [Importar e exportar metadados de ativos](metadata-import-export.md)
 + Compartilhar e distribuir ativos {#brandportal}
    + [Configurar ativos AEM com o Portal de marcas](configure-aem-assets-with-brand-portal.md)
-   + [Publicar ativos AEM no Portal de marcas](publish-to-brand-portal.md)
+   + [Publicar ativos no Brand Portal](publish-to-brand-portal.md)
 + Fragmentos de conteúdo {#content-fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
    + [Gerenciamento dos fragmentos de conteúdo](content-fragments/content-fragments-managing.md)
