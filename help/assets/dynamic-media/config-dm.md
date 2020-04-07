@@ -2,7 +2,7 @@
 title: Configuração do serviço Dynamic Media Cloud
 description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: ad621c24e58fba6bcc873e36544505cc50385509
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -65,8 +65,10 @@ Para configurar os serviços de nuvem de mídia dinâmica:
 
    * **[!UICONTROL Caminho da pasta raiz da empresa]**
 
-   * **[!UICONTROL Publicar ativos]** - a opção **[!UICONTROL Imediatamente]** significa que quando os ativos são carregados, o sistema ingere os ativos e fornece o URL/Incorporar instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos. A opção **[!UICONTROL Na Ativação]** (padrão) significa que você precisa publicar o ativo explicitamente primeiro antes que um link URL/Incorporado seja fornecido.
-
+   * **[!UICONTROL Publicar ativos]** - você pode escolher entre as três opções a seguir:
+      * **[!UICONTROL Imediatamente]** significa que quando os ativos são carregados, o sistema ingere os ativos e fornece o URL/Incorporado instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.
+      * **[!UICONTROL Na Ativação]** , significa que você precisa publicar explicitamente o ativo primeiro antes de fornecer um URL/link Incorporado.
+      * **[!UICONTROL Publicação]** seletiva significa que os ativos são publicados automaticamente apenas para pré-visualização segura e podem ser publicados explicitamente no AEM sem publicação no DMS7 para delivery no domínio público. No futuro, a Adobe aprimorará essa opção para publicar ativos no AEM e publicar ativos no Dynamic Media, mutuamente exclusivos entre si. Ou seja, você pode publicar ativos no DMS7 para poder usar recursos como Recorte inteligente ou representações dinâmicas. Ou, você pode publicar ativos exclusivamente no AEM para visualização; esses mesmos ativos não são publicados no DMS7 para delivery no domínio público.
    * **[!UICONTROL Servidor]** de Pré-visualização seguro - permite que você especifique o caminho do URL para o servidor de pré-visualização de representações seguras. Ou seja, depois que as renderizações são geradas, o AEM pode acessar e pré-visualização com segurança as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância do AEM).
 A menos que você tenha uma disposição especial para usar seu próprio servidor empresa ou um servidor especial, a Adobe Systems recomenda deixar essa configuração como especificado.
 
