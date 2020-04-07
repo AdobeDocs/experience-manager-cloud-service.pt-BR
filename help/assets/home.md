@@ -2,34 +2,34 @@
 title: Ativos Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação do Ativos Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# AEM Assets as a Cloud Service {#aem-assets-guide}
+# Ativos Adobe Experience Manager as a Cloud Service {#aem-assets-guide}
 
-Esta página lista os recursos de autoajuda sobre ativos as a Cloud Service.
+A seguir estão os recursos de autoajuda dos ativos Experience Manager como um serviço em nuvem.
 
-## Artigos-chave sobre ativos as a Cloud Service {#key-articles}
+## Artigos principais sobre ativos {#key-articles}
 
 * [Introdução aos ativos as a Cloud Service](overview.md)
 * [Arquitetura de ativos as a Cloud Service](architecture.md)
 
-## Guias do Experience Manager as a Cloud Service {#aem-guides}
+## Guias do Experience Manager {#aem-guides}
 
 | Guia do usuário | Descrição |
 |---|---|
-| [Página inicial do Experience Manager as a Cloud Service](/help/landing/home.md) | Para obter uma visão geral da documentação do Experience Manager as a Cloud Service, comece aqui. |
-| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral introdutória do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, etc. |
-| [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo as novidades dos recursos descontinuados e removidos e problemas conhecidos. |
+| [Página inicial do Experience Manager as a Cloud Service](/help/landing/home.md) | Documentação completa do Experience Manager como um serviço em nuvem. |
+| [Visão geral](/help/overview/home.md) | Visão geral preliminar e glossário do Experience Manager como um serviço da Cloud. |
+| [Notas de versão](/help/release-notes/home.md) | Notas de versão, novidades, recursos obsoletos e removidos e problemas conhecidos. |
 | [Conceitos principais](/help/core-concepts/home.md) | Este guia fornece uma introdução aos conceitos principais do Experience Manager as a Cloud Service, incluindo a arquitetura do novo serviço. |
-| [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
-| [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
-| [Guia do usuário de sites](/help/sites-cloud/home.md) | Entenda como administrar os sites do Experience Manager as a Cloud Service. |
-| [Implementação do guia do usuário](/help/implementing/home.md) | Saiba como personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação do desenvolvimento. |
-| [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar soluções ao Experience Manager as a Cloud Service. |
-| [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção. |
+| [Guia do usuário de segurança](/help/security/home.md) | Tópicos de segurança sobre o Experience Manager como um serviço em nuvem. |
+| [Integração](/help/onboarding/home.md) | Comece a usar o Experience Manager como um serviço em nuvem — obtenha acesso e proteja dados importantes. |
+| [Guia do usuário de sites](/help/sites-cloud/home.md) | Administrar sites do Experience Manager como um serviço em nuvem. |
+| [Guia do usuário de implementação](/help/implementing/home.md) | Personalize, desenvolva e implante o Experience Manager como um serviço em nuvem. |
+| [Guia do usuário de conectores](/help/connectors/home.md) | Integre soluções com o Experience Manager como um serviço em nuvem. |
+| [Guia do usuário de operações](/help/operations/home.md) | Operações de back-end do Experience Manager como um serviço em nuvem, como tarefas de indexação e manutenção. |
 
 ## Outros recursos do Experience Manager {#other-resources}
 
