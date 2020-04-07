@@ -2,7 +2,7 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: 'A completar '
 translation-type: tm+mt
-source-git-commit: 3d2705262d9c82a1486e460247b468259d5ed600
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -83,7 +83,37 @@ O conteúdo é replicado de Autor para Publicar por meio de um mecanismo de sub-
 
 ### Logs {#logs}
 
-Para obter mais informações sobre como trabalhar com registros, consulte a documentação [de](/help/implementing/developing/introduction/logging.md)registro.
+Para desenvolvimento local, as entradas de registros são gravadas em arquivos locais na `/crx-quickstart/logs` pasta.
+
+Nos ambientes da Cloud, os desenvolvedores podem baixar os logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**Configuração do nível de log**
+
+Para alterar os níveis de log dos ambientes do Cloud, a configuração de Sling Logging OSGI deve ser modificada, seguida de uma reimplantação completa. Como isso não é instantâneo, tenha cuidado ao ativar registros detalhados em ambientes de produção que recebem muito tráfego. No futuro, é possível que haja mecanismos para mudar mais rapidamente o nível de log.
+
+> [!NOTE]
+> 
+> Para executar as alterações de configuração listadas abaixo, é necessário criá-las em um ambiente de desenvolvimento local e, em seguida, enviá-las para um AEM como uma instância do Serviço de nuvem. Para obter mais informações sobre como fazer isso, consulte [Implantação no AEM como um serviço](/help/implementing/deploying/overview.md)em nuvem.
+
+**Ativando o nível de log DEBUG**
+
+O nível de log padrão é INFO, ou seja, as mensagens DEBUG não são registradas.
+Para ativar o nível de log DEBUG, defina a variável
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+propriedade para depurar. Não deixe o log no nível de log DEBUG mais tempo do que o necessário, pois ele gera muitos logs.
+Uma linha no arquivo de depuração geralmente é start com DEBUG e, em seguida, fornece o nível de log, a ação do instalador e a mensagem de log. Por exemplo:
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+Os níveis de log são os seguintes:
+
+| 0 | Erro fatal | A ação falhou e o instalador não pode continuar. |
+|---|---|---|
+| 1 | Erro | A ação falhou. A instalação continua, mas uma parte do CRX não foi instalada corretamente e não funcionará. |
+| 2 | Aviso | A ação foi bem-sucedida, mas encontrou problemas. O CRX pode ou não funcionar corretamente. |
+| 3 | Info | A ação foi bem sucedida. |
 
 ### Thread Dumps {#thread-dumps}
 
