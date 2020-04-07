@@ -110,7 +110,7 @@ Quando todas as partes de um binário forem carregadas, a etapa final será envi
 
 >!![NOTE]
 >
-> Se o ativo já existir e não createVersion nem replace for especificado, a instância atualizará a versão atual do ativo com o novo binário.
+> Se o ativo já existir e não for especificado createVersion nem replace, a instância atualizará a versão atual do ativo com o novo binário.
 
 Como o processo de inicialização, os dados de solicitação completos podem conter informações para mais de um arquivo.
 
