@@ -3,7 +3,7 @@ title: Operações assíncronas
 description: O AEM Assets otimiza o desempenho ao concluir de forma assíncrona algumas tarefas que consomem muitos recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -29,7 +29,7 @@ Você pode visualização o status de trabalhos assíncronos na página Status *
 
 ## Monitoramento do status das operações assíncronas {#monitoring-the-status-of-asynchronous-operations}
 
-Sempre que o AEM Assets processa uma operação de forma assíncrona, você recebe uma notificação na sua caixa de entrada e por email.
+Sempre que o AEM Assets processar uma operação de forma assíncrona, você receberá uma notificação na sua caixa de entrada <!-- and through email -->.
 
 Para visualização o status das operações assíncronas em detalhes, navegue até a página Status **[!UICONTROL do trabalho]** assíncrono.
 
