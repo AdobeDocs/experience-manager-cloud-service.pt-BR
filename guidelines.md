@@ -1,9 +1,9 @@
 ---
-source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 translation-type: tm+mt
 
 ---
-# Diretrizes para contribuir com a documentação do Adobe Experience Manager
+# Diretrizes para contribuir com a documentação do AEM
 
 ## Filosofia da documentação do AEM
 
@@ -17,7 +17,7 @@ Para melhorar continuamente a documentação do AEM, a comunidade inteira de usu
 
 ## Normas de documentação
 
-Embora possamos receber contribuições para nossa documentação, qualquer contribuição para a documentação do AEM, seja na forma de solicitação por push ou problema, deve estar em conformidade com os nossos padrões de contribuição e documentação.
+Embora possamos receber contribuições para nossa documentação, qualquer contribuição para a documentação do AEM, seja na forma de solicitação por push ou problema, deve estar em conformidade com nossos padrões de contribuição e documentação.
 
 As contribuições que não cumprem estes padrões podem ser rejeitadas.
 
@@ -33,23 +33,23 @@ As exceções a essa regra se aplicam às notas de versão onde os problemas con
 
 ### As contribuições para a documentação não se destinam a responder a questões técnicas.
 
-Quaisquer ideias que você precisar melhorar a documentação do AEM são bem-vindas como contribuições. No entanto, comentários, problemas e solicitações de baixa automática são destinados apenas a *contribuições* . Eles não devem ser usados para responder suas perguntas sobre como usar o AEM ou resolver problemas técnicos.
+Quaisquer ideias que você precisar melhorar a documentação do AEM são bem-vindas como contribuições. No entanto, comentários, problemas e solicitações de baixa automática são destinados apenas a *contribuições* . Eles não devem ser usados para responder suas perguntas sobre como usar o AEM, implementar seu projeto do AEM ou resolver problemas técnicos.
 
-Quaisquer dúvidas sobre o uso do AEM ou erros técnicos que possam ter sido relatados por meio do processo de suporte normal por meio do portal [de suporte corporativo da](https://helpx.adobe.com/br/contact/enterprise-support.ec.html) Experience Cloud ou discutidos na comunidade [do](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)Experience Manager.
+Quaisquer dúvidas sobre o uso do AEM ou erros técnicos que possam ter sido relatados por meio do processo de suporte normal pelo Portal [de suporte do](https://daycare.day.com/home.html) Experience Manager ou discutidos na comunidade [](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)Experience Manager.
 
-***As contribuições para a documentação do AEM não são uma substituição do Atendimento*** ao cliente da Adobe, e qualquer contribuição que buscar respostas para perguntas relacionadas ao suporte será rejeitada.
+***As contribuições de documentação do AEM não são uma substituição do suporte da Adobe*** e quaisquer contribuições que buscam respostas para perguntas relacionadas ao suporte serão rejeitadas.
 
 ### As contribuições devem mencionar claramente as páginas de documentação afetadas.
 
 Se você criar um problema para sugerir melhorias na documentação, deverá incluir links para as páginas afetadas. Caso crie um problema usando o link **Editar esta página** em uma página de documentação, o problema será criado automaticamente com um link para a página.
 
-Isso não se aplica a solicitações de baixa automática, pois as solicitações de baixa automática incluem as páginas afetadas por definição.
+Isso não se aplica a solicitações de baixa automática, pois as solicitações de baixa automática por sua natureza fazem referência às páginas afetadas.
 
 ## Diretrizes de documentação
 
 Solicitamos que qualquer contribuição para nossa documentação siga determinadas diretrizes de estilo.
 
-Seguir essas diretrizes facilita a revisão de sua contribuição e, portanto, a integração à nossa documentação é mais rápida. No entanto, o incumprimento ou a inobservância incompleta das presentes orientações não significa que a contribuição seja rejeitada.
+Seguir essas diretrizes facilita a revisão de sua contribuição e, portanto, a integração à nossa documentação é mais rápida.
 
 ### Idioma e estilo
 
