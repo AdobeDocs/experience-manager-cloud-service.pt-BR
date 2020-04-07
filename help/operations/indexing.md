@@ -2,7 +2,7 @@
 title: Pesquisa e indexação de conteúdo
 description: 'Pesquisa e indexação de conteúdo '
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -31,7 +31,7 @@ Veja abaixo uma lista das principais alterações em relação ao AEM 6.5 e vers
 
 1. Em um alto nível no AEM como um serviço em nuvem, com a introdução do modelo [de implantação](#index-management-using-blue-green-deployments) Blue-Green, dois conjuntos de índices existirão: um conjunto para a versão antiga (azul) e um conjunto para a nova versão (verde).
 
-A versão do índice usada é configurada usando sinalizadores nas definições de índice por meio do `useIfExist` sinalizador. Um índice pode ser usado em apenas uma versão do aplicativo (por exemplo, apenas azul ou apenas verde), ou em ambas as versões. A documentação detalhada está disponível em Gerenciamento de [índice usando Implantações](#index-management-using-blue-green-deployments)Blue-Green.
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. Os clientes podem ver se o trabalho de indexação foi concluído na página de criação do Cloud Manager e receberão uma notificação quando a nova versão estiver pronta para receber tráfego.
 
@@ -61,7 +61,7 @@ Para ambos os pontos 1 e 2 acima, é necessário criar uma nova definição de �
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-O que então precisa de ir para baixo `ui.content/src/main/content/jcr_root`. As pastas de sub-raiz não são suportadas a partir de agora.
+O que então precisa de ir para baixo `ui.apps/src/main/content/jcr_root`. As pastas de sub-raiz não são suportadas a partir de agora.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -69,11 +69,15 @@ O pacote da amostra acima é construído como `com.adobe.granite:new-index-conte
 
 ### Implantação de definições de índice {#deploying-index-definitions}
 
+> [!NOTE]
+>
+> Há um problema conhecido com o Plug-in do pacote Jackrabbit Filevault Maven versão **1.1.0** que não permite que você adicione `oak:index` aos módulos do `<packageType>application</packageType>`. Para contornar esse problema, use a versão **1.0.4**.
+
 As definições de índice agora são marcadas como personalizadas e com controle de versão:
 
-* A própria definição de índice (por exemplo `/oak:index/ntBaseLucene-custom-1`) que é o conteúdo MUTABLE
+* A própria definição do índice (por exemplo `/oak:index/ntBaseLucene-custom-1`)
 
-Portanto, para implantar um índice, a definição do índice (`/oak:index/definitionname`) deve ser fornecida por meio do pacote **** mutável, normalmente `ui.content` por Git e pelo processo de implantação do Cloud Manager.
+Portanto, para implantar um índice, a definição (`/oak:index/definitionname`) do índice precisa ser fornecida por meio `ui.apps` do processo de implantação Git e do Cloud Manager.
 
 Depois que a nova definição de índice é adicionada, o novo aplicativo precisa ser implantado pelo Cloud Manager. Após a implantação, dois trabalhos são iniciados, responsáveis por adicionar (e mesclar, se necessário) as definições de índice ao MongoDB e ao Azure Segment Store para autor e publicação, respectivamente. Os repositórios subjacentes estão sendo indexados novamente com as novas definições de índice, antes da mudança Blue-Green.
 
