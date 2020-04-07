@@ -3,7 +3,7 @@ title: Processar ativos usando manipuladores de mídia e Workflows
 description: Saiba mais sobre vários manipuladores de mídia e como usá-los em workflows para executar tarefas em ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ Os manipuladores de mídia são serviços dentro dos ativos AEM que executam aç
 
 >[!NOTE]
 >
->Consulte a página de formatos [suportados pelos](file-format-support.md) ativos para obter uma descrição de todos os formatos suportados pelos ativos AEM, bem como dos recursos suportados para cada formato.
+>Consulte o artigo sobre formatos [de arquivo suportados pelo](file-format-support.md) Assets para obter uma descrição de todos os formatos suportados pelo AEM Assets, bem como dos recursos suportados para cada formato.
 
 ## Manipuladores de mídia padrão {#default-media-handlers}
 
@@ -407,7 +407,7 @@ Para fazer isso, você usará o ImageMagick. O ImageMagick é um conjunto de sof
 
 Primeiro instale o ImageMagick no disco que hospeda o servidor AEM:
 
-1. Instale o ImageMagick: consulte a documentação [do](https://www.imagemagick.org/script/download.php)ImageMagick.
+1. Instale o ImageMagick: Consulte a documentação [do](https://www.imagemagick.org/script/download.php)ImageMagick.
 1. Configure a ferramenta para que você possa executar a conversão na linha de comando.
 1. Para ver se a ferramenta está instalada corretamente, execute o seguinte comando `convert -h` na linha de comando.
 
