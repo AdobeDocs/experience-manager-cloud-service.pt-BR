@@ -2,7 +2,7 @@
 title: Gerenciar Ambientes - Serviço em nuvem
 description: Gerenciar Ambientes - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 
 ---
 
@@ -38,9 +38,6 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
 
 
 1. O usuário clica no botão **Adicionar ambiente** para adicionar um ambiente.
-
-   >[!NOTE]
-   >Esse botão também pode ser acessado da página Ambientes ou do cartão Ambientes. Como usuário, essa opção será exibida somente se você tiver a permissão necessária. Entre em contato com seu representante da Adobe em caso de dúvidas.
 
    ![](assets/add-environment.png)
 
