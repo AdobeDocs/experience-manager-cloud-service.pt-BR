@@ -3,14 +3,14 @@ title: Use o Connected Assets para compartilhar ativos do DAM no fluxo de trabal
 description: Use os ativos disponíveis em uma implantação remota do Adobe Experience Manager Assets ao criar suas páginas da Web em outra implantação do Experience Manager Site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 188917fe677a88142c702b9637600db872853974
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Use o Connected Assets para compartilhar ativos do DAM no AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-Em grandes empresa, a infraestrutura necessária para criar sites pode ser distribuída. Às vezes, os recursos de criação de sites e os ativos digitais usados para criar esses sites podem residir em diferentes implantações. Alguns motivos podem incluir: implantações geograficamente distribuídas, necessárias para trabalhar em conjunto, aquisições que levam à infraestrutura heterogênea que a matriz deseja consolidar, crescimento que leva a tal escala que uma instância dedicada é necessária para o gerenciamento de ativos.
+Em grandes empresa, a infraestrutura necessária para criar sites pode ser distribuída. Às vezes, os recursos de criação de sites e os ativos digitais usados para criar esses sites podem residir em diferentes implantações. Algumas razões podem ser distribuídas geograficamente por implantações existentes que são necessárias para trabalhar em paralelo ou em aquisições que levam a uma infraestrutura heterogênea que a empresa pai deseja usar em conjunto.
 
 O AEM Sites oferece recursos para criar páginas da Web e o AEM Assets é o sistema de gerenciamento de ativos digitais (DAM) que fornece os ativos necessários para sites. O AEM agora dá suporte ao caso de uso acima integrando o AEM Sites e o AEM Assets.
 
@@ -18,7 +18,7 @@ O AEM Sites oferece recursos para criar páginas da Web e o AEM Assets é o sist
 
 Ao editar páginas no Editor de páginas, os autores podem pesquisar, procurar e incorporar facilmente ativos de uma implantação diferente do AEM Assets. Para fazer um administrador do AEM, faça uma integração única de uma implantação local do AEM Sites com uma implantação diferente (remota) do AEM Assets.
 
-Para os autores do Sites, os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e uso ininterruptos de alguns ativos remotos de cada vez. Para disponibilizar muitos ativos remotos em uma única implantação local, considere migrar os ativos em massa. Consulte [guia de migração de Ativos](/help/assets/assets-migration-guide.md).
+Para os autores do Sites, os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e uso ininterruptos de alguns ativos remotos de cada vez. Para disponibilizar muitos ativos remotos em uma implantação local de uma só vez, você pode migrá-los em massa.
 
 ### Pré-requisitos e implantações compatíveis {#prerequisites}
 
@@ -164,7 +164,7 @@ Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se o
 * Os esquemas de metadados não são buscados.
 * Todos os Autores do Sites têm permissões de leitura nas cópias buscadas, mesmo que não tenham acesso à implantação remota do DAM.
 * Não há suporte de API para personalizar a integração.
-* A funcionalidade suporta pesquisa e uso ininterruptos de ativos remotos. Para disponibilizar muitos ativos remotos em uma única implantação local, considere migrar os ativos. Consulte [guia de migração de Ativos](assets-migration-guide.md).
+* A funcionalidade suporta pesquisa e uso ininterruptos de ativos remotos. Para disponibilizar muitos ativos remotos em uma só implantação local, você pode migrar os ativos.
 * Não é possível usar um ativo remoto como miniatura de uma página da Web na guia [!UICONTROL Miniatura], em [!UICONTROL Propriedades da página], clicando em [!UICONTROL Selecionar imagem].
 
 **Configuração e licenciamento**
