@@ -2,7 +2,7 @@
 title: Publicação de ativos de mídia dinâmica
 description: Como publicar ativos de mídia dinâmica
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 Você publica seus ativos de Mídia dinâmica selecionando os ativos e tocando em **[!UICONTROL Publicar]**. Depois que seus ativos de mídia dinâmica forem publicados, eles estarão disponíveis para você para inclusão em uma página da Web via URL ou por meio da incorporação.
 
-Você também pode publicar instantaneamente ativos que você carrega, sem nenhuma intervenção do usuário. See [Configuring Dynamic Media](config-dm.md).
+Você também pode publicar instantaneamente ativos que você carrega, sem nenhuma intervenção do usuário. Ou você pode publicar seletivamente esses ativos. See [Configuring Dynamic Media](config-dm.md).
 
 Na **[!UICONTROL Exibição de cartão]**, um pequeno ícone de globo aparece logo abaixo do nome de um ativo para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
 
