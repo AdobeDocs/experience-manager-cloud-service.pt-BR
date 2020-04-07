@@ -254,7 +254,7 @@ Observe que a ferramenta de validação relata somente o uso proibido das direti
 
 Quando nenhuma falha de validação for relatada, sua configuração estará pronta para implantação.
 
-Apresentamos abaixo técnicas de solução de problemas para depurar erros comuns de validação que são exibidos pela ferramenta:
+Abaixo estão apresentadas técnicas de solução de problemas para depurar erros comuns de validação que são exibidos pela ferramenta:
 
 **não é possível localizar uma`conf.dispatcher.d`subpasta no arquivo**
 
@@ -537,7 +537,7 @@ Se você vir erros sobre arquivos include ausentes, verifique se você renomeou 
 
 Se você vir diretivas Apache que não estão na lista de permissões, remova-as.
 
-### Livre-se de todos os farm que não são publicados
+### Eliminar todos os farm que não são publicados
 
 Remova qualquer arquivo de farm em `conf.dispatcher.d/enabled_farms` que tenha `author`, `unhealthy`, `health`ou`lc` `flush` em seu nome. Todos os arquivos de farm nos `conf.dispatcher.d/available_farms` quais não há vínculo também podem ser removidos.
 
