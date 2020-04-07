@@ -52,11 +52,11 @@ source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
    + [Metadados XMP](xmp-metadata.md)
    + [Recursos MediaLibrary](medialibrary.md)
    + [Importar e exportar metadados de ativos](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD=========
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD=========
 + Compartilhar e distribuir ativos {#brandportal}
    + [Configurar ativos AEM com o Portal de marcas](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos AEM no Portal de marcas](publish-to-brand-portal.md)
->>>>>>>>>>pai de 733b637... atualizar toc
+>>>>>>>>>>pai de 733b637... atualizar toc=======pai de da6a8ae.. Configurar o Brand Portal com os ativos AEM na nuvem
 
 
 
