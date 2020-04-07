@@ -3,7 +3,7 @@ title: Saiba como os microserviços de ativos podem processar seus ativos digita
 description: Processar seus ativos digitais usando microserviços de processamento de ativos escaláveis e nativos na nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -13,10 +13,9 @@ source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
-
 -->
 
-O Adobe Experience Manager como um serviço em nuvem oferece uma maneira nativa de aproveitar os aplicativos e os recursos do Experience Manager. Um dos elementos chave dessa nova arquitetura é a ingestão e o processamento de ativos, impulsionados por microserviços de ativos.
+O Adobe Experience Manager como um serviço em nuvem fornece uma maneira nativa de usar a nuvem para aproveitar os aplicativos e os recursos do Experience Manager. Um dos elementos chave dessa nova arquitetura é a ingestão e o processamento de ativos, impulsionados por microserviços de ativos.
 
 Os microserviços de ativos fornecem um processamento escalonável e resiliente de ativos usando serviços em nuvem, que são gerenciados pela Adobe para lidar melhor com diferentes tipos de ativos e opções de processamento. Os principais benefícios são:
 
@@ -51,12 +50,12 @@ As etapas principais da ingestão e processamento usando microserviços de ativo
 * Os resultados do processamento, como execuções, são armazenados no armazenamento da nuvem binária.
 * O Experience Manager é notificado de que o processamento está concluído, juntamente com ponteiros diretos para os binários gerados (execuções), que estão disponíveis no Experience Manager para o ativo carregado
 
-Esse é o fluxo básico de assimilação e processamento de ativos. Se configurado, o Experience Manager também pode start o modelo de fluxo de trabalho do cliente para fazer o pós-processamento do ativo - por exemplo, para executar algumas etapas personalizadas específicas ao ambiente do cliente, como buscar informações dos sistemas corporativos do cliente para adicionar às propriedades do ativo.
+Esse é o fluxo básico de assimilação e processamento de ativos. Se configurado, o Experience Manager também pode start o modelo de fluxo de trabalho do cliente para fazer o pós-processamento do ativo, por exemplo, para executar algumas etapas personalizadas específicas ao ambiente do cliente, como buscar informações dos sistemas corporativos do cliente para adicionar às propriedades do ativo.
 
-O fluxo de ingestão e processamento mostra alguns conceitos-chave alavancados pela arquitetura de microserviços de ativos para o Experience Manager:
+O fluxo de ingestão e processamento são conceitos-chave da arquitetura de microserviços de ativos do Experience Manager.
 
-* **Acesso** binário direto - os ativos são transportados (e carregados) para a Loja binária de nuvem depois de configurados para os ambientes do Experience Manager e, em seguida, o AEM, os microserviços de ativos e, por fim, os clientes obtêm acesso direto a eles para realizar seu trabalho. Isso minimiza a carga nas redes e a duplicação dos binários armazenados
-* **Processamento** externo - o processamento de ativos é feito fora do ambiente AEM e salva seus recursos (CPU, memória) para fornecer as principais funcionalidades do Gerenciamento de ativos digitais e suportar o trabalho interativo com o sistema para usuários finais
+* **Acesso** binário direto: Os ativos são transportados (e carregados) para a loja binária da nuvem uma vez configurados para os ambientes do Experience Manager, e então o AEM, os microserviços de ativos e, por fim, os clientes obtêm acesso direto a eles para realizar seu trabalho. Isso minimiza a carga nas redes e a duplicação dos binários armazenados
+* **Processamento** externo: O processamento de ativos é feito fora do ambiente AEM e salva seus recursos (CPU, memória) para fornecer as principais funcionalidades do Gerenciamento de ativos digitais e suportar o trabalho interativo com o sistema para usuários finais
 
 ## Carregamento de ativos com acesso binário direto {#asset-upload-with-direct-binary-access}
 
@@ -64,10 +63,10 @@ Os clientes do Experience Manager, que fazem parte da oferta de produtos, todos 
 
 Você pode usar ferramentas de upload personalizadas, que funcionam diretamente com APIs HTTP AEM. Você pode usar essas APIs diretamente ou usar e estender os seguintes projetos de código aberto que implementam o protocolo de upload:
 
-* [Abrir biblioteca de upload de origem](https://github.com/adobe/aem-upload)
-* [Ferramenta de linha de comando open source](https://github.com/adobe/aio-cli-plugin-aem)
+* [Biblioteca de upload de código aberto](https://github.com/adobe/aem-upload)
+* [Ferramenta de linha de comando open-source](https://github.com/adobe/aio-cli-plugin-aem)
 
-Para obter mais informações, consulte [upload de ativos](add-assets.md).
+Para obter mais informações, consulte [fazer upload de ativos](add-assets.md).
 
 ## Adicionar pós-processamento de ativos personalizados {#add-custom-asset-post-processing}
 
