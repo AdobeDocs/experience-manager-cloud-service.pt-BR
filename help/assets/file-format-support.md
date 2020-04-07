@@ -3,7 +3,7 @@ title: Formatos de arquivo e tipos MIME suportados pelos ativos Experience Manag
 description: Formatos de arquivo e tipos MIME suportados pelos ativos Experience Manager como um serviço em nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -169,7 +169,7 @@ Os ativos como um serviço em nuvem fornecem suporte a XMP para estes formatos d
 
 ## Formatos de documento suportados {#doc-formats}
 
-Os formatos de Documento suportados para recursos de gerenciamento de ativos são os seguintes.
+Os formatos de Documento suportados para recursos de gerenciamento de ativos são os seguintes:
 
 | Formato de arquivo | Armazenamento | Gerenciamento de metadados | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|
