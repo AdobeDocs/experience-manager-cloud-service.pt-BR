@@ -1,13 +1,13 @@
 ---
-title: Entender a estrutura do pacote de conteúdo de um projeto
-description: Saiba mais sobre como definir adequadamente as estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
+title: Estrutura de projetos do AEM
+description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Entenda a estrutura de um pacote de conteúdo do projeto no serviço da Adobe Experience Manager Cloud {#understand-cloud-service-package-structure}
+# Estrutura de projetos do AEM
 
 >[!TIP]
 >
@@ -29,7 +29,7 @@ A estrutura do pacote descrita neste documento é compatível com **ambas** as i
 
 `/apps` e `/libs` são consideradas áreas **imutáveis** do AEM, pois não podem ser alteradas (criar, atualizar, excluir) após o AEM ser iniciado (isto é, no tempo de execução). Qualquer tentativa de alterar uma área imutável no tempo de execução falhará.
 
-Tudo o resto no repositório, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`etc. são todas áreas **mutáveis** , o que significa que podem ser alteradas em tempo de execução.
+Tudo o resto no repositório, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. são todas áreas **mutáveis** , o que significa que podem ser alteradas em tempo de execução.
 
 >[!WARNING]
 >
@@ -43,7 +43,7 @@ Este diagrama fornece uma visão geral da estrutura do projeto e dos artefatos d
 
 A estrutura de implantação do aplicativo recomendada é a seguinte:
 
-+ O `ui.apps` pacote, ou Pacote de conteúdo, contém todo o código a ser implantado e só é implantado `/apps`. Os elementos comuns do `ui.apps` pacote incluem, mas não se limitam a:
++ O `ui.apps` pacote, ou Pacote de código, contém todo o código a ser implantado e só é implantado `/apps`. Os elementos comuns do `ui.apps` pacote incluem, mas não se limitam a:
    + Pacotes OSGi
       + `/apps/my-app/install`
    + Configurações do OSGi
@@ -58,23 +58,28 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
       + `/apps/settings`
    + ACLs (permissões)
       + Qualquer caminho `rep:policy` sob qualquer `/apps`
-+ O `ui.content` pacote, ou Pacote de código, contém todo o conteúdo e a configuração. Os elementos comuns do `ui.content` pacote incluem, mas não se limitam a:
+   + Diretrizes de configuração do Repo Init OSGi (e scripts correspondentes)
+      + [Inicialização](#repo-init) de repo é a maneira recomendada de implantar conteúdo (mutável) que logicamente faz parte do aplicativo AEM. Deve utilizar - se a opção de recompra para definir:
+         + Estruturas de conteúdo da linha de base
+            + `/conf/my-app`
+            + `/content/my-app`
+            + `/content/dam/my-app`
+         + Usuários
+         + Usuários do serviço
+         + Grupos
+         + ACLs (permissões)
+            + Qualquer `rep:policy` caminho (mutável ou imutável)
++ O `ui.content` pacote, ou Pacote de conteúdo, contém todo o conteúdo e a configuração. Os elementos comuns do `ui.content` pacote incluem, mas não se limitam a:
    + Configurações sensíveis ao contexto
       + `/conf`
-   + Estruturas de conteúdo da linha de base (pastas de ativos, páginas raiz do Sites)
+   + Estruturas de conteúdo necessárias e complexas (ou seja, Compilação de conteúdo que é criada e estende além das estruturas de conteúdo da Linha de base definidas no Repo Init.
       + `/content`, `/content/dam`, etc.
    + Taxonomias de marcação controladas
       + `/content/cq:tags`
-   + Usuários do serviço
-      + `/home/users`
-   + Grupos de usuários
-      + `/home/groups`
    + Índices de Oak
-      + `/oak:indexes`
+      + `/oak:index`
    + Etc. nós herdados
       + `/etc`
-   + ACLs (permissões)
-      + Qualquer `rep:policy` caminho **não** sob `/apps`
 + O pacote `all` é um pacote de contêiner que APENAS inclui os pacotes `ui.apps` e `ui.content` como incorporados. O pacote `all` não deve ter **nenhum conteúdo** próprio, mas deve delegar toda a implantação no repositório em seus pacotes secundários.
 
    Os pacotes agora são incluídos usando a configuração [incorporada do plug-in Maven](#embeddeds)FileVault Package Maven, em vez da `<subPackages>` configuração.
@@ -111,6 +116,35 @@ Por padrão, o Adobe Cloud Manager coleta todos os pacotes produzidos pela compi
 >[!TIP]
 >
 >Consulte a seção Trechos [XML](#pom-xml-snippets) POM abaixo para obter um trecho completo.
+
+## Inicialização do Repo{#repo-init}
+
+A Inicialização do Repo fornece instruções, ou scripts, que definem estruturas JCR, desde estruturas de nós comuns, como árvores de pastas, até usuários, usuários de serviços, grupos e definição de ACL.
+
+Os principais benefícios do Repo Init são ter permissões implícitas para executar todas as ações definidas pelos scripts e serem chamadas no início do ciclo de vida da implantação, garantindo que todas as estruturas JCR necessárias existam até que o código seja executado.
+
+Embora o Repo Init faça scripts em tempo real no `ui.apps` projeto como scripts, eles podem e devem ser usados para definir as seguintes estruturas mutáveis:
+
++ Estruturas de conteúdo da linha de base
+   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
++ Usuários do serviço
++ Usuários
++ Grupos
++ ACLs
+
+Os scripts de Inicialização de Repo são armazenados como entradas de configurações de fábrica do `scripts` `RepositoryInitializer` OSGi e, portanto, podem ser implicitamente direcionados pelo modo de execução, permitindo diferenças entre os scripts de Inicialização de Repo do autor do AEM e dos Serviços de publicação do AEM, ou mesmo entre Envs (Dev, Stage e Prod).
+
+Observe que, ao definir Usuários e Grupos, somente grupos são considerados parte do aplicativo e integrantes de sua função devem ser definidos aqui. Os usuários e grupos da organização ainda devem ser definidos em tempo de execução no AEM; por exemplo, se um fluxo de trabalho personalizado atribuir trabalho a um Grupo nomeado, esse Grupo deverá ser definido por meio da Inicialização de acordo com o AEM no aplicativo AEM, no entanto, se o Agrupamento for meramente organizacional, como &quot;Equipe do Wendy&quot; e &quot;Equipe do Sean&quot;, eles serão melhor definidos e gerenciados em tempo de execução no AEM.
+
+>[!TIP]
+>
+>Os scripts de inicialização de acordo com o repo *devem* ser definidos no campo em linha `scripts` e a `references` configuração não funcionará.
+
+O vocabulário completo para scripts do Repo Init está disponível na documentação [do](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)Apache Sling Repo Init.
+
+>[!TIP]
+>
+>Consulte a seção [Repo Init Snippets](#snippet-repo-init) abaixo para obter um trecho completo.
 
 ## Pacote de estrutura do repositório {#repository-structure-package}
 
@@ -321,6 +355,28 @@ Em todos os projetos que geram um pacote, **exceto** do projeto do contêiner (`
     ...
 ```
 
+### Inicialização do Repo{#snippet-repo-init}
+
+Os scripts de Inicialização do Repo que contêm os scripts de Inicialização do Repo são definidos na configuração de fábrica `RepositoryInitializer` OSGi por meio da `scripts` propriedade. Observe que, como esses scripts são definidos em configurações OSGi, eles podem ser facilmente escopo por modo de execução usando a semântica de `../config.<runmode>` pasta comum.
+
+Observe que, como os scripts normalmente são declarações de várias linhas, é mais fácil defini-los no `.config` arquivo do que no formato de bases XML `sling:OsgiConfig` .
+
+`/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
+
+```plain
+scripts=["
+    create service user my-data-reader-service
+
+    set ACL on /var/my-data
+        allow jcr:read for my-data-reader-service
+    end
+
+    create path (sling:Folder) /conf/my-app/settings
+"]
+```
+
+A propriedade `scripts` OSGi contém diretivas, conforme definido pela linguagem [de Inicialização do](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)Apache Sling.
+
 ### Pacote de estrutura do repositório {#xml-repository-structure-package}
 
 No `ui.apps/pom.xml` e em qualquer outra `pom.xml` que declare um pacote de códigos (`<packageType>application</packageType>`), adicione a seguinte configuração de pacote de estrutura de repositório ao plug-in FileVault Maven. Você pode [criar seu próprio pacote de estrutura de repositório para seu projeto](repository-structure-package.md).
@@ -338,7 +394,7 @@ No `ui.apps/pom.xml` e em qualquer outra `pom.xml` que declare um pacote de cód
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>repository-structure-pkg</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -429,6 +485,9 @@ No `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter
 Se vários `/apps/*-packages` forem usados nos públicos alvos incorporados, todos devem ser enumerados aqui.
 
 ### Repositórios Maven de terceiros {#xml-3rd-party-maven-repositories}
+
+>[!WARNING]
+> A adição de mais repositórios Maven pode estender os tempos de criação de maven, já que repositórios Maven adicionais serão verificados quanto a dependências.
 
 No projeto do reator `pom.xml`, adicione quaisquer diretivas de repositório Maven público de terceiros. A `<repository>` configuração completa deve estar disponível no provedor de repositório de terceiros.
 
