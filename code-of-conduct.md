@@ -1,5 +1,5 @@
 ---
-source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
+source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
 translation-type: tm+mt
 
 ---
@@ -45,5 +45,13 @@ Os mantenedores de projetos que não sigam ou apliquem o Código de Conduta de b
 
 ## Atribuição
 
-Este código de conduta é adaptado do Pacto do [Contribuidor](https://contributor-covenant.org), versão 1.4, disponível em [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADTsEste Código de Conduta é adaptado pelo Pacto de [Colaboradores](https://contributor-covenant.org), versão 1.4, disponível em [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
+=======
+Este Código de Conduta é adaptado do Pacto do [Contribuidor](https://contributor-covenant.org), versão 1.4, disponível em [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+>>>>>>>>>>pai de f6e5291... Mesclar ramificação &#39;preparando&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparo========pai de f6e5291... Mesclar ramificação &quot;preparo&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparo
 
+
+
+
+
+> 
