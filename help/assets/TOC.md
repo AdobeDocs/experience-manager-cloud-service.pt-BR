@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
+source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
 
 ---
 
@@ -52,17 +52,24 @@ source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
    + [Metadados XMP](xmp-metadata.md)
    + [Recursos MediaLibrary](medialibrary.md)
    + [Importar e exportar metadados de ativos](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD=========
-+ Compartilhar e distribuir ativos {#brandportal}
-   + [Configurar ativos AEM com o Portal de marcas](configure-aem-assets-with-brand-portal.md)
-   + [Publicar ativos AEM no Portal de marcas](publish-to-brand-portal.md)
->>>>>>>>>>pai de 733b637... atualizar toc=======pai de da6a8ae.. Configure o Brand Portal com os ativos AEM na nuvem=======pai da6a8ae... Configurar o Brand Portal com os ativos AEM na nuvem
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD===================
+>>>>>>>>>>pai de 733b637... atualizar toc
 
 
 
 
 
 > 
++ Compartilhar e distribuir ativos {#brandportal}
+   + [Configurar ativos AEM com o Portal de marcas](configure-aem-assets-with-brand-portal.md)
+   + [Publicar ativos AEM no Portal de marcas](publish-to-brand-portal.md)
+>>>>>>>pai de 733b637... atualizar toc=======pai de da6a8ae.. Configure o Brand Portal com os ativos AEM na nuvem=======pai da6a8ae... Configurar o Brand Portal com os ativos AEM na nuvem
+
+
+
+
+
+
 + Fragmentos de conteúdo {#content-fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
    + [Gerenciamento dos fragmentos de conteúdo](content-fragments/content-fragments-managing.md)
