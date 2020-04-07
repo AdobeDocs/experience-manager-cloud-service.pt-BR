@@ -2,7 +2,7 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -181,8 +181,10 @@ Exibe a imagem de miniatura da página. É possível:
 * **Configuração de direcionamento**
 
    * Selecione uma [Marca para especificar um escopo de direcionamento](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   >[!NOTE]
+   >Para selecionar essa opção, é necessário que a conta de usuário esteja no `Target Adminstrators`grupo.
 
-### Permissões   {#permissions}
+### Permissões    {#permissions}
 
 * **Permissões**
 
