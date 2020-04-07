@@ -2,14 +2,14 @@
 title: Adicionar seus ativos digitais ao Adobe Experience Manager
 description: Adicione seus ativos digitais ao Adobe Experience Manager como um serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Adicionar ativos digitais ao Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Carregar seus arquivos digitais no Adobe Experience Manager enriquece o conteúdo binário do arquivo com metadados ricos, tags inteligentes, execuções e outros serviços de Gerenciamento de ativos digitais (DAM). Você pode carregar vários tipos de arquivos (incluindo imagens, arquivos PDF, arquivos brutos etc.) da pasta local ou de uma unidade de rede para os ativos do Experience Manager.
+O Adobe Experience Manager enriquece o conteúdo binário dos arquivos digitais carregados com metadados avançados, tags inteligentes, execuções e outros serviços de Gerenciamento de ativos digitais (DAM). É possível carregar vários tipos de arquivos, como imagens, documentos e arquivos de imagem brutos, da pasta local ou de uma unidade de rede para os ativos do Experience Manager.
 
 Vários métodos de upload são fornecidos. Além do upload de navegador mais usado, existem outros métodos de adicionar ativos ao repositório do Experience Manager, incluindo clientes de desktop, como o aplicativo Adobe Asset Link ou o aplicativo de desktop Experience Manager, scripts de upload e ingestão que os clientes criariam e integrações de ingestão automatizadas adicionadas como extensões AEM.
 
@@ -64,7 +64,7 @@ Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na ár
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ Além disso, a interface do usuário Ativos exibe o ativo mais recente que você
 
 > [!NOTE]
 >
-> Se precisar carregar hierarquias de pastas aninhadas para o AEM, consulte [Carregamento em massa de ativos](#bulk-upload)
+> Para fazer upload de hierarquias de pastas aninhadas para o AEM, consulte o upload [em massa de ativos](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
