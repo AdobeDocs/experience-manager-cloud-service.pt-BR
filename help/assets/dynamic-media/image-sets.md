@@ -2,7 +2,7 @@
 title: Conjuntos de imagem
 description: Saiba como trabalhar com conjuntos de imagens no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -78,7 +78,9 @@ Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos na [soluçã
 
 ## Fazer upload de ativos em conjuntos de imagens {#uploading-assets-in-image-sets}
 
-Start carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. Os Conjuntos de imagens são compatíveis com vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS são recomendadas sem perdas.
+Start carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão para obter detalhes ideais de zoom. O Dynamic Media pode renderizar imagens de até 25 megapixels cada. Por exemplo, você pode usar uma imagem de 5000 x 5000 megapixels ou qualquer outra combinação de tamanho até 25 megapixels.
+
+Os Conjuntos de imagens são compatíveis com vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS são recomendadas sem perdas.
 
 Você pode carregar imagens para Conjuntos de imagens da mesma forma que faria [upload de qualquer outro ativo em Ativos](/help/assets/manage-digital-assets.md#uploading-assets).
 
