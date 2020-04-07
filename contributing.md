@@ -19,10 +19,10 @@ Embora nos congratulemos com quaisquer contribuições para melhorar a documenta
 
 ## Como contribuir
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWeDe quer facilitar ao máximo o envio de suas contribuições. Você pode contribuir de duas formas:
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe) querem facilitar ao máximo o envio de suas contribuições. Você pode contribuir de duas formas:
 =======
 =======
->>>>>>>>>>pai de f6e5291... Mesclar &quot;preparo&quot; de ramificação de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparoComo você contribui depende de quem você é e do tipo de alterações que você gostaria de contribuir:
+>>>>>>>>>>pai de f6e5291... Mesclar ramificação &#39;preparando&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparo========pai de f6e5291... Mesclar ramificação &quot;preparo&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparo========pai de 190577c... Mesclar &quot;mestre&quot; de ramificação em preparoComo você contribui depende de quem você é e do tipo de alterações que você gostaria de contribuir:
 
 
 
@@ -55,15 +55,15 @@ Os problemas permitem que você descreva facilmente sua ideia para melhorar os d
 
 ### Criar uma solicitação de recebimento {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIse você vir um problema e souber exatamente como corrigi-lo, considere criar uma solicitação de baixa automática. As solicitações de recebimento permitem que você faça suas próprias edições na documentação, que são então revisadas para inclusão por um membro da equipe de documentos do AEM. Basta clicar no link **Editar esta página** na parte superior do painel de navegação direito em qualquer página para fazer as alterações sugeridas e criar a solicitação de baixa automática.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIfSe vir um problema e souber exatamente como corrigi-lo, considere criar uma solicitação de baixa automática. As solicitações de recebimento permitem que você faça suas próprias edições na documentação, que são então revisadas para inclusão por um membro da equipe de documentos do AEM. Basta clicar no link **Editar esta página** na parte superior do painel de navegação direito em qualquer página para fazer as alterações sugeridas e criar a solicitação de baixa automática.
 =======
-=======
->>>>>>>pai de f6e5291... Mesclar ramificação &quot;preparo&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparo
+>=======>
+>>>>>>>>pai de f6e5291... Mesclar ramificação &#39;preparando&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparo========pai de f6e5291... Mesclar ramificação &quot;preparo&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparo========pai de 190577c... Mesclar ramificação &quot;mestre&quot; em preparo
 
 
 
 
-
+>> 
 
 ### Principais alterações dos funcionários da Adobe
 >>>>>>>pai de f6e5291... Mesclar ramificação &quot;preparo&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparo
@@ -85,17 +85,17 @@ Assista ao vídeo a seguir para obter uma rápida visão geral de como criar pro
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 ### Contribuições de funcionários da Adobe
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIse você é um funcionário da Adobe e tem uma contribuição, use a `AdobeDocs` organização no site corporativo.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIf, se você for um funcionário da Adobe e tiver uma contribuição, use a organização no git corporativo. `AdobeDocs`
 
 É claro que estamos satisfeitos com qualquer contribuição e revisaremos sua contribuição se ela for feita no repositório público, no entanto, as solicitações dos funcionários da Adobe são mais fáceis de processar e podem ser aprovadas mais rapidamente no acordo de recompra corporativo. Certifique-se de que qualquer informação proprietária seja apenas discutida no acordo de recompra das empresas.
 =======
-=======
->>>>>>>pai de f6e5291... Mesclar ramificação &quot;preparo&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparo
+>=======>
+>>>>>>>>pai de f6e5291... Mesclar ramificação &#39;preparando&#39; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparo========pai de f6e5291... Mesclar ramificação &quot;preparo&quot; de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en em preparo========pai de 190577c... Mesclar ramificação &quot;mestre&quot; em preparo
 
 
 
 
-
+>> 
 
 ## Ferramentas e configuração
 
