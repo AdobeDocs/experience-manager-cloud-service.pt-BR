@@ -1,15 +1,15 @@
 ---
 title: Alterações notáveis nos ativos Adobe Experience Manager como um serviço na nuvem
-description: Alterações notáveis nos ativos Adobe Experience Manager no serviço da AEM Cloud em comparação ao Experience Manager 6.5
+description: Alterações notáveis nos ativos Adobe Experience Manager no serviço da AEM Cloud em comparação ao Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-O Adobe Experience Manager como um serviço em nuvem oferece muitos recursos e possibilidades novos para gerenciar seus projetos do AEM. No entanto, há diversas diferenças entre os ativos do Experience Manager no local ou no Adobe Managed Service em comparação ao Experience Manager como um serviço em nuvem. Este documento destaca as diferenças importantes.
+O Adobe Experience Manager como um serviço em nuvem oferece muitos recursos e possibilidades novos para gerenciar seus projetos do AEM. No entanto, há muitas diferenças entre os Ativos do Experience Manager no local ou no Adobe Managed Service em comparação ao Experience Manager como um Serviço em nuvem. Este documento destaca as diferenças importantes.
 
 >[!NOTE]
 >
@@ -22,15 +22,15 @@ As principais diferenças em comparação ao Experience Manager 6.5 estão nas s
 
 ## Inclusão de ativos {#asset-ingestion}
 
-O upload de ativos foi otimizado para ser mais eficiente, permitindo um melhor dimensionamento da inclusão de ativos e uploads mais rápidos. Os recursos do produto (interfaces de usuário da Web, clientes de desktop) foram atualizados. No entanto, isso pode afetar alguns códigos personalizados existentes.
+O upload de ativos foi otimizado para proporcionar eficiência, permitindo um melhor dimensionamento da inclusão de ativos e uploads mais rápidos. Os recursos do produto (interfaces de usuário da Web, clientes de desktop) foram atualizados. No entanto, isso pode afetar algumas personalizações existentes.
 
-* O Experience Manager usa o princípio de acesso binário direto para fazer upload e download e usar microserviços de ativos para processamento de ativos. Consulte [visão geral da ingestão de ativos](/help/assets/asset-microservices-overview.md)
-   * Carregamento de ativos [com acesso binário direto](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)
-   * Para obter detalhes técnicos, consulte o protocolo de upload binário [direto e as APIs](/help/assets/developer-reference-material-apis.md#overview-binary-upload)
-* O fluxo de trabalho padrão **[!UICONTROL DAM Asset Update]** nas versões anteriores do AEM não está mais disponível. Em vez disso, os microserviços de ativos fornecem um serviço dimensionável e prontamente disponível que abrange a maioria do processamento de ativos padrão (execuções, extração de metadados, extração de texto para indexação)
+* O Experience Manager usa o princípio de acesso binário direto para fazer upload e download e usar microserviços de ativos para processamento de ativos. Consulte a [visão geral da ingestão](/help/assets/asset-microservices-overview.md)de ativos.
+   * Carregamento de ativos [com acesso](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)binário direto.
+   * Para obter detalhes técnicos, consulte o protocolo de carregamento binário [direto e as APIs](/help/assets/developer-reference-material-apis.md#overview-binary-upload).
+* O fluxo de trabalho padrão **[!UICONTROL DAM Asset Update]** nas versões anteriores do AEM não está mais disponível. Em vez disso, os microserviços de ativos fornecem um serviço dimensionável e prontamente disponível que abrange a maioria do processamento de ativos padrão (execuções, extração de metadados, extração de texto para indexação).
    * Consulte [configurar e usar microserviços de ativos](/help/assets/asset-microservices-configure-and-use.md)
-   * Para ter etapas personalizadas de fluxo de trabalho no processamento, é possível usar workflows [de](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) pós-processamento
-* Os ativos que entram pelo Gerenciador de pacotes exigem reprocessamento manual usando a ação **[!UICONTROL Reprocessar ativos]** na interface Ativos.
+   * Para ter etapas personalizadas de fluxo de trabalho no processamento, é possível usar workflows [de](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) pós-processamento.
+* Assets that come in via Package Manager require manual reprocessing using the **[!UICONTROL Reprocess Asset]** action in the Assets interface.
 
 As representações padrão geradas com os microserviços de ativos são armazenadas de forma compatível com versões anteriores nos nós do repositório de ativos (mesmas convenções de nomenclatura).
 
