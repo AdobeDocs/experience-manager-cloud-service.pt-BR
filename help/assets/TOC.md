@@ -2,13 +2,14 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 4206534b0f3020b2136729d866eb753eb06d95b1
+source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
 
 ---
 
 
-# Ativos {#assets}
+# Assets {#assets}
 
++ [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Visão geral e novidades](overview.md)
 + [Alterações importantes para AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Arquitetura](architecture.md)
@@ -39,8 +40,8 @@ source-git-commit: 4206534b0f3020b2136729d866eb753eb06d95b1
    + [Digital Rights Management para ativos](drm.md)
 + Configurar, administrar e estender ativos {#admin}
    + [APIs e material de referência](developer-reference-material-apis.md)
-   + [Configurar compartilhamento de ativos](configure-asset-sharing.md)
-   + [Esquema de metadados de pasta](folder-metadata-schema.md)
+   + [Esquema de metadados de pastas](folder-metadata-schema.md)
+   + [Processamento de perfis](/help/assets/dynamic-media/processing-profiles.md)
    + [Ativos multilíngues e tradução de ativos](translate-assets.md)
    + [Pesquisar aspectos](search-facets.md)
    + [Estender editor de ativos](extend-asset-editor.md)
@@ -51,9 +52,17 @@ source-git-commit: 4206534b0f3020b2136729d866eb753eb06d95b1
    + [Metadados XMP](xmp-metadata.md)
    + [Recursos MediaLibrary](medialibrary.md)
    + [Importar e exportar metadados de ativos](metadata-import-export.md)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD=========
 + Compartilhar e distribuir ativos {#brandportal}
    + [Configurar ativos AEM com o Portal de marcas](configure-aem-assets-with-brand-portal.md)
-   + [Publicar ativos no Brand Portal](publish-to-brand-portal.md)
+   + [Publicar ativos AEM no Portal de marcas](publish-to-brand-portal.md)
+>>>>>>>>>>pai de 733b637... atualizar toc
+
+
+
+
+
+> 
 + Fragmentos de conteúdo {#content-fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
    + [Gerenciamento dos fragmentos de conteúdo](content-fragments/content-fragments-managing.md)
