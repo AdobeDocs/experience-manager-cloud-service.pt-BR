@@ -2,7 +2,7 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -104,6 +104,7 @@ As propriedades são distribuídas por várias guias.
    >Por exemplo: se você definir um alias de `latin-lang` para o `/content/we-retail/spanish` nó, essa página poderá ser acessada por meio de `/content/we-retail/latin-language`
    >
    >Para obter mais detalhes, consulte Nomes de página localizados em SEO e Práticas recomendadas de gerenciamento de URL.
+
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -170,13 +171,17 @@ Exibe a imagem de miniatura da página. É possível:
 
 * **Cloud Services**
 
-   * Defina as propriedades para os serviços em nuvem. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * Defina as propriedades para os serviços em nuvem.
+   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  -->
 
 ### Personalização {#personalization}
 
 * **Configurações do ContextHub**
 
-   * Selecione Configuração do ContextHub e Caminho de segmentos. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * Selecione Configuração do ContextHub e Caminho de segmentos.
+   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  -->
 
 * **Configuração de direcionamento**
 
@@ -188,16 +193,24 @@ Exibe a imagem de miniatura da página. É possível:
 
 * **Permissões**
 
-   * Adicionar permissões <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-   * Editar grupo de usuários fechado <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-   * Exibir as permissões efetivas <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * Adicionar permissões
+   * Editar grupo de usuários fechado
+   * Exibir as permissões efetivas
+   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+
+   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+
+   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-   * Defina as propriedades para uma página do Blueprint no gerenciamento de vários sites. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * Defina as propriedades para uma página do Blueprint no gerenciamento de vários sites.
+   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+
    * Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
+
 
 ### Live Copy    {#live-copy}
 
@@ -252,6 +265,7 @@ No console **Sites**, é possível selecionar várias páginas e usar **Propried
 >A edição de itens em massa das propriedades também está disponível para os Ativos. É muito semelhante, mas difere em alguns pontos. Consulte Editar propriedades de vários ativos para obter detalhes.
 >
 >Também existe o Editor de itens em massa, que permite que você pesquise o conteúdo de várias páginas usando o GQL (Google Query Language) e, em seguida, editar o conteúdo diretamente no editor de itens em massa antes de salvar as alterações para as páginas de origem.
+
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -299,6 +313,7 @@ Depois de entrar na edição de itens em massa é possível:
 >[!NOTE]
 >
 >O componente da página pode ser configurado para especificar os campos disponíveis para edição de itens em massa. Consulte Configurar sua página para a edição de itens em massa das propriedades da página.
+
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->
