@@ -3,7 +3,7 @@ title: Publicar ativos, pastas e coleções no Brand Portal
 description: Publique ativos, pastas e coleções no Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4194f089f87deeb62095703614947a295235edbf
+source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 
 ---
 
@@ -21,8 +21,9 @@ Se você fizer modificações subsequentes no ativo, pasta ou coleção original
 * [Publicar coleções no Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
->>A Adobe recomenda uma publicação escalonada, de preferência durante horas que não sejam de pico, para que o autor do AEM não ocupe recursos excessivos.
 >
+>A Adobe recomenda uma publicação escalonada, de preferência durante horas que não sejam de pico, para que o autor do AEM não ocupe recursos excessivos.
+
 
 ## Publish assets to Brand Portal {#publish-assets-to-bp}
 
