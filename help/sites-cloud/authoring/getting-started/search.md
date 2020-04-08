@@ -1,13 +1,13 @@
 ---
-title: Pesquisar
+title: 'Pesquisar  '
 description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
 
-# Pesquisar   {#search-feature}
+# Pesquisar {#search-feature}
 
 O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteúdo, dependendo do tipo de recurso.
 
@@ -65,6 +65,7 @@ Para pesquisar e filtrar os recursos:
    >* Dependendo do tipo de recurso selecionado; por exemplo, os critérios de Ativos e comunidades são compreensivelmente especializados.
    >* Sua instância, como os Formulários de pesquisa, pode ser personalizada (adequada ao local no AEM).
 
+
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
@@ -73,7 +74,7 @@ Para pesquisar e filtrar os recursos:
 
 1. Você também pode adicionar outros termos de pesquisa.
 
-1. Feche a opção **Pesquisar** com o **X** (parte superior direita).
+1. Feche a **Pesquisa** com o **X** (canto superior direito).
 
 >[!NOTE]
 >
@@ -102,6 +103,6 @@ Além de pesquisar por uma grande variedade de aspectos, também é possível sa
    * Use **X** (em comparação ao nome da pesquisa salva) para iniciar uma nova consulta (a própria pesquisa salva não será excluída).
    * **Edite a pesquisa salva**, altere as condições de pesquisa e, em seguida, **Salve** novamente.
 
-Para modificar uma pesquisa salva, selecione-a e clique em **Editar pesquisa alva**, na parte inferior do painel de pesquisa.
+As pesquisas salvas podem ser modificadas ao selecionar a pesquisa salva e clicar em **Editar pesquisa salva** na parte inferior do painel de pesquisa.
 
 ![Modificação de uma pesquisa salva](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
