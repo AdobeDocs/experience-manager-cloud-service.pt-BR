@@ -1,8 +1,8 @@
 ---
 title: Problemas conhecidos
 description: Notas de versão específicas para os problemas conhecidos do Adobe Experience Manager as a Cloud Service
-translation-type: ht
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+translation-type: tm+mt
+source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 ---
 
@@ -25,17 +25,12 @@ Este artigo lista os problemas conhecidos da oferta do Adobe Experience Manager 
 
 Alguns problemas conhecidos são:
 
-* **Esquema de metadados**: o dispositivo de classificação de ativos pode causar erro de compilação de JSP. Uma solução alternativa é remover o componente de classificação de ativos do esquema de metadados. <!-- CQ-4282865 -->
-
-Algumas limitações da funcionalidade do Assets são:
-
-* Com o AEM Assets as a Cloud Service, a funcionalidade Connected Assets funciona quando o AEM 6.5 Sites é implantado no AMS.
+* **Schema** de metadados: Widget de classificação de ativos usado para causar erro de compilação JSP. Foi removido do schema de metadados. <!-- CQ-4282865, CQ-4284633 -->
 
 ### Futuros recursos do Assets {#upcoming-assets-capabilities}
 
 Espera-se que alguns recursos do Adobe Experience Manager Assets que dependem dos recursos básicos, que ainda não estão disponíveis na arquitetura de implantação do Experience Manager as a Cloud Service, sejam ativados posteriormente:
 
-* A publicação no Brand Portal não está ativada no momento. Você pode estender e implantar a implementação do [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) para casos de uso de distribuição de ativos.
 * A funcionalidade aprimorada de marcação inteligente que usa os serviços de IA de E/S da Adobe não está disponível por enquanto.
 * Recursos não ativados no momento devido à dependência das APIs da Estrutura de integração do comércio:
    * Modelos de fluxo de trabalho da sessão de fotos.
