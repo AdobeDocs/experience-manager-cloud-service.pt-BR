@@ -4,7 +4,7 @@ seo-title: Acesso ao Git
 description: Esta página descreve como você pode acessar e gerenciar o repositório Git.
 seo-description: Siga esta página para saber como acessar e gerenciar seu repositório Git.
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -17,13 +17,13 @@ Você pode acessar e gerenciar o Repositório Git usando o Gerenciamento de cont
 
 Use o botão **Gerenciar Git** disponível na interface do usuário do Cloud Manager, mais importante na placa de pipeline.
 
-1. Navegue até a página Visão geral *do seu* programa e até o cartão Pipelines.
+1. Navegue até a página Visão geral *do* Programa e até o cartão Pipelines.
 
-1. Você verá a opção **Gerenciar Git** para acessar e gerenciar seu Repositório Git.
+1. Você visualização a opção **Gerenciar Git** para acessar e gerenciar seu Repositório Git.
 
    ![](assets/manage-git1.png)
 
-   Além disso, se você selecionar a guia pipeline **Não-produção** , também será exibida a opção **Gerenciar Git** .
+   Além disso, se você selecionar a guia de pipeline **Não-produção** , também será visualização a opção **Gerenciar Git** .
 
    ![](assets/manage-git-new2.png)
 
@@ -36,9 +36,10 @@ As considerações importantes para gerenciar seu Git no Cloud Manager são:
 
 * **URL**: O URL do repositório
 * **Nome de usuário**: O nome do usuário
-* **Senha**: O valor exibido quando o botão **Gerar senha** é clicado.
+* **Senha**: o valor exibido quando o botão **Gerar senha** é clicado.
 
 
-> [!NOTE]
-> Um usuário pode fazer check-out de uma cópia de seu código e fazer alterações no repositório de código local. Quando estiver pronto, o usuário poderá confirmar suas alterações de código no repositório de código remoto no Cloud Manager.
+>[!NOTE]
+>
+>Um usuário pode fazer check-out de uma cópia de seu código e fazer alterações no repositório de código local. Quando estiver pronto, o usuário poderá confirmar suas alterações de código de volta para o repositório de código remoto no Cloud Manager.
 
