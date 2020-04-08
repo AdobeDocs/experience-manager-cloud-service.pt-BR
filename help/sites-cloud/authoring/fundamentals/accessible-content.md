@@ -1,8 +1,8 @@
 ---
-title: Criação de conteúdo acessível (Conformidade com o WCAG 2.0)
+title: 'Criação de conteúdo acessível (Conformidade com o WCAG 2.0)  '
 description: Ajuda para tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -18,15 +18,17 @@ O WCAG 2.0 consiste em um conjunto de diretrizes de tecnologia independentes e c
 >* Nosso Guia rápido do WCAG 2.0 para obter mais detalhes
 >* Configurar o Editor de Rich Text para a produção de conteúdo acessível
 
-<!--
->* our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
->* [Configuring the Rich Text Editor for producing accessible content](/help/sites-administering/rte-accessible-content.md)
+
+<!-- 
+>* See our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
+>* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
+
 São classificados de acordo com os três níveis de conformidade: Nível A (o mais baixo), Nível AA e Nível AAA (o mais alto). Resumidamente, os níveis são definidos como apresentado a seguir:
 
-* **Nível A:** o site atinge um nível mínimo e básico de acessibilidade. Para chegar a esse nível, todos os Critérios de sucesso de Nível A precisam ser cumpridos.
+* **Nível A**: o site atinge um nível mínimo básico de acessibilidade. Para atingir esse nível, todos os Critérios de sucesso do Nível A são cumpridos.
 * **Nível AA:** é o nível ideal que deve ser alcançado, no qual o site atinge um nível superior de acessibilidade, para que seja acessível à maioria das pessoas, em grande parte das situações e usando a maioria das tecnologias. Para chegar a esse nível, todos os Critérios de sucesso de Nível A e Nível AA precisam ser cumpridos.
-* **Nível AAA:** o site atinge um nível muito elevado de acessibilidade. Para atender a esse nível, todos os Critérios de sucesso de Nível A, Nível AA e Nível AAA precisam ser cumpridos.
+* **Nível AAA**: o site atinge um nível muito alto de acessibilidade. Para atingir esse nível, todos os Critérios de sucesso do Nível A, Nível AA e Nível AAA são cumpridos.
 
 Ao criar o seu site, é necessário determinar o nível global com o qual você gostaria que ele estivesse em conformidade.
 
@@ -56,7 +58,7 @@ A seção a seguir apresenta as [Diretrizes do WCAG 2.0](https://www.w3.org/TR/W
 
 ### Conteúdo não textual (1.1.1)   {#non-text-content}
 
-* Critério de sucesso 1.1.1
+* Critério de Sucesso 1.1.1
 * Nível A
 * Conteúdo não textual: todo o conteúdo não textual que é apresentado ao usuário tem uma alternativa em texto que serve um propósito equivalente, exceto para as situações indicadas abaixo.
 
@@ -72,7 +74,8 @@ Para gráficos estáticos, o requisito básico é o de proporcionar uma alternat
 
 >[!NOTE]
 >
->Alguns componentes predefinidos, como o **Carrossel** e o **Slideshow** não fornecem um meio de adicionar as descrições dos textos alternativos às imagens. Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte Adicionar suporte para elementos HTML e atributos adicionais).
+>Alguns componentes prontos para uso, como o **Carrossel** e a **Apresentação de slides**, não fornecem um meio de adicionar descrições de texto alternativas a imagens. Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte Adicionar suporte para elementos HTML e atributos adicionais).
+
 <!--
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -207,7 +210,7 @@ Se você precisar usar as legendas abertas, insira o texto na faixa de vídeo. E
 
 ### Descrição de áudio ou alternativa de mídia (pré-gravada) (1.2.3)   {#audio-description-or-media-alternative-pre-recorded}
 
-* Critério de sucesso 1.2.3
+* Critério de Sucesso 1.2.3
 * Nível A
 * Descrição de áudio ou alternativa de mídia (pré-gravada): é fornecida uma descrição de áudio ou uma alternativa para mídia com base no tempo do conteúdo de vídeo pré-gravado para a mídia sincronizada, exceto quando a mídia for uma alternativa para texto e claramente identificada como tal. 
 
@@ -261,7 +264,7 @@ Instruções detalhadas estão além do escopo desse documento, mas os seguintes
 
 ### Descrição de áudio (pré-gravado) (1.2.5)      {#audio-description-pre-recorded}
 
-* Critério de sucesso 1.2.5
+* Critério de Sucesso 1.2.5
 * Nível AA
 * Descrição de áudio (pré-gravado): é fornecida uma descrição de áudio para todos os conteúdos de vídeo pré-gravados em uma mídia sincronizada.
 
@@ -290,7 +293,7 @@ Essa diretriz abrange os requisitos necessários para auxiliar os indivíduos qu
 
 ### Informações e Relações (1.3.1)      {#info-and-relationships}
 
-* Critério de sucesso 1.3.1
+* Critério de Sucesso 1.3.1
 * Nível A
 * Informações e Relações: as informações, a estrutura e as relações transmitidas através de apresentação podem ser determinadas de forma programática ou disponíveis no texto.
 
@@ -306,7 +309,7 @@ O AEM facilita a criação de páginas da Web usando os elementos de HTML adequa
 
 É possível verificar se as suas páginas da Web têm a estrutura adequada através:
 
-* **Utilização de cabeçalhos:**   Desde que você tenha os recursos de acessibilidade do RTE habilitados, o AEM oferece três níveis de cabeçalho de página. Você pode usá-los para identificar as seções e subseções de conteúdo. O Cabeçalho 1 é o de nível mais alto e o Cabeçalho 3 o de nível mais baixo. O administrador do sistema pode configurar o sistema para permitir o uso de mais níveis de cabeçalho.
+* **Uso de cabeçalhos:** desde que tenha os recursos de acessibilidade do RTE ativados, o AEM oferece três níveis de cabeçalho de página. É possível usá-los para identificar seções e subseções de conteúdo. O cabeçalho 1 é o nível mais alto, o Cabeçalho 3 o mais baixo. O administrador do sistema pode configurar o sistema para permitir o uso de mais níveis de cabeçalho.
 * **Texto enfatizado**: use o elemento `<strong>` ou `<em>` para indicar ênfase. Não use os cabeçalhos para destacar o texto dentro dos parágrafos.
    * Destaque o texto que deseja enfatizar;
    * Clique no ícone **B** (para `<strong>`) ou **I** (para `<em>`) exibidos no painel **Propriedades** (verifique se o HTML está selecionado).
@@ -326,7 +329,7 @@ O AEM facilita a criação de páginas da Web usando os elementos de HTML adequa
    * O elemento `<ol>` é usado para as listas *numeradas*. Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista numerada** .
    Caso deseje alterar o conteúdo existente em um tipo de lista específica, destaque o texto e selecione o tipo de lista adequado. Como no exemplo anterior, que mostra como o texto do parágrafo é inserido, os elementos desejados da lista são adicionados automaticamente ao seu HTML.
 
-   No modo tela cheia, os ícones de **Lista de marcadores** e **Lista numerada** ficam visíveis. Fora do modo de tela cheia, as duas opções estão disponíveis atrás do único ícone de **Listas**.
+   No modo de tela cheia, os ícones **Lista com marcadores** e **Lista numerada** ficam visíveis. Quando não estiver no modo de tela cheia, as duas opções estarão disponíveis no ícone **Listas**.
 * **Tabelas de uso**: as tabelas de dados devem ser identificadas usando os elementos da tabela de HTML:
    * um elemento `<table>`
    * um elemento `<tr>` para cada linha da tabela
@@ -340,18 +343,19 @@ O AEM facilita a criação de páginas da Web usando os elementos de HTML adequa
    >[!NOTE]
    >
    >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores na caixa de diálogo **Propriedades da tabela** (consulte Adicionar suporte para outros elementos e atributos de HTML).
-<!--
->By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+
+<!-- removed link syntax for ExL
+>By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
 -->
 
 Para abrir a caixa de diálogo **Tabela** onde é possível selecionar a guia **Propriedades da tabela**:
 
 * Defina uma **legenda** apropriada.
-* Remova qualquer valor padrão para **Largura**, **Altura**, **Borda**, **Preenchimento da célula e** **Espaçamento entre células**. pois essas propriedades podem ser definidas em uma folha de estilo global.
+* Remova qualquer valor padrão para **Largura**, **Altura**, **Borda**, **Preenchimento da célula e** **Espaçamento entre células**. já que essas propriedades podem ser definidas em uma planilha de estilos global.
 
 Em seguida, você pode usar as **Propriedades da célula** para escolher se a célula é uma célula de dados ou de cabeçalho:
 
-* **Tabelas de dados complexos**: em alguns casos, onde há tabelas complexas com dois ou mais níveis de cabeçalhos, as Propriedades da tabela básicas podem não ser suficientes para fornecer toda a informação estrutural necessária. Para esses tipos de tabelas complexas, relações diretas precisam ser criadas entre os cabeçalhos e as suas células relacionadas usando os atributos **cabeçalho** e **id**. Por exemplo, na tabela abaixo os cabeçalhos e ids são combinados para fazer uma associação programática para os usuários de tecnologias de assistência.
+* **Tabelas de dados complexos**: em alguns casos, onde há tabelas complexas com dois ou mais níveis de cabeçalhos, as Propriedades da tabela básicas podem não ser suficientes para fornecer toda a informação estrutural necessária. Para esses tipos de tabelas complexas, relações diretas precisam ser criadas entre os cabeçalhos e as suas células relacionadas usando os atributos **cabeçalho** e **id**. Por exemplo, na tabela abaixo os cabeçalhos e IDs são combinados para fazer uma associação programática para usuários de tecnologia assistiva.
 
    >[!NOTE]
    >
@@ -433,7 +437,7 @@ Certifique-se de que todas as informações baseadas em características visuais
 
 ### Utilização de cor (1.4.1)      {#use-of-color}
 
-* Critério de sucesso 1.4.1
+* Critério de Sucesso 1.4.1
 * Nível A
 * Utilização de cor: a cor não é utilizada como o único meio visual de transmitir informações, indicar uma ação, solicitar uma resposta ou distinguir um elemento visual.
 
@@ -465,7 +469,7 @@ Se a cor for usada como dica para fornecer informações, você deve fornecer um
 
 ### Contraste (Mínimo) (1.4.3)   {#contrast-minimum}
 
-* Critério de sucesso 1.4.3
+* Critério de Sucesso 1.4.3
 * Nível AA
 * Contraste (Mínimo): a apresentação visual e as imagens do texto têm uma relação de contraste de, no mínimo, 4.5:1, exceto para o seguinte:
    * Texto ampliado: o texto ampliado e as imagens compostas por texto ampliado têm uma relação de contraste de, no mínimo, 3:1.
@@ -504,7 +508,7 @@ Se não for possível atender aos níveis de contraste recomendados, será neces
 
 ### Imagens de texto (1.4.5)   {#images-of-text}
 
-* Critério de sucesso 1.4.5
+* Critério de Sucesso 1.4.5
 * Nível AA
 * Imagens de texto: se as tecnologias usadas puderem obter a apresentação visual, o texto será usado para transmitir as informações, em vez das imagens de texto, exceto para o seguinte:
    * Personalizável: a imagem do texto pode ser visualmente personalizada para as necessidades do usuário;
@@ -533,7 +537,7 @@ Se as imagens de texto tiverem que ser utilizadas, use o CSS para substituir as 
 
 ### Pausar, Interromper, Ocultar (2.2.2)      {#pause-stop-hide}
 
-* Critério de sucesso 2.2.2
+* Critério de Sucesso 2.2.2
 * Nível A
 * Pausar, Interromper, Ocultar: para mover, piscar, deslocar ou atualizar automaticamente as informações, as seguintes opções são verdadeiras:
    * Mover, piscar, deslocar: para qualquer movimento, modo intermitente ou deslocamento, que (a) é iniciado automaticamente, (b) dura mais de cinco segundos e (c) seja apresentado em paralelo com outro conteúdo, existe um mecanismo para o usuário pausar, interromper ou ocultar, a menos que o movimento, o modo intermitente ou o deslocamento seja parte fundamental de uma atividade;
@@ -571,7 +575,7 @@ Dependendo da natureza do conteúdo, você pode aplicar uma ou mais das seguinte
 
 ### Três flashes ou abaixo do limite (2.3.1)   {#three-flashes-or-below-threshold}
 
-* Critério de sucesso 2.3.1
+* Critério de Sucesso 2.3.1
 * Nível A
 * Três flashes ou Abaixo do limite: as páginas da Web não incluem qualquer conteúdo com mais de três flashes no período de um segundo ou o flash encontra-se abaixo dos limites de flash universal e flash vermelho.
 
@@ -690,7 +694,7 @@ Alternativamente, scripts podem ser usados &#x200B;&#x200B;de modo que uma quant
 
 ### Idioma da página (3.1.1)   {#language-of-page}
 
-* Critério de sucesso 3.1.1
+* Critério de Sucesso 3.1.1
 * Nível A
 * Idioma da página: o idioma humano predefinido de cada página da Web pode ser determinado de forma programática.
 
@@ -792,9 +796,10 @@ Quando são utilizados botões de imagem (por exemplo, o componente **Botão de 
 
 #### Grupos de campos de formulário {#groups-of-form-fields}
 
-Sempre que houver um grupo de controles relacionados, como **Grupo de opções**, um título pode ser necessário para o grupo, bem como controles individuais. Ao adicionar um conjunto de botões de opção na AEM, o campo **Título** fornece o título do grupo, enquanto os títulos individuais especificados como botões de opção (**Itens**) são criados.
+Se houver um grupo de controles relacionados, como **Grupo de opções**, pode ser necessário um título para o grupo, bem como controles individuais. Ao adicionar um conjunto de botões de opção no AEM, o campo **Título** fornece esse título de grupo, enquanto títulos individuais são especificados conforme os botões de opção (**Itens**) são criados.
 
 Contudo, não existe uma associação programática entre o título do grupo e os próprios botões de opção. Editores de modelo precisam envolver o título nas tags `fieldset` e `legend` necessárias para criar esta associação e isso só pode ser feito através da edição do código fonte da página. Alternativamente, um administrador do sistema pode adicionar suporte a esses elementos para que eles apareçam na janela **Propriedades do Campo** (Consulte Adicionar suporte para elementos e atributos HTML adicionais).
+
 <!--
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -803,7 +808,7 @@ However, there is no programmatic association between the group title and the ra
 
 Se os dados devem ser inseridos em um formato específico, deixe isso claro no texto da etiqueta. Por exemplo, se uma data deve ser inscrita no formato `DD-MM-YYYY`, indique isso especificamente como parte da etiqueta. Isto significa que quando os usuários de leitores de tela encontrarem o campo, a etiqueta será anunciada automaticamente, juntamente com as informações adicionais sobre o formato.
 
-Se a entrada para um campo de formulário é obrigatória, deixe isto claro, usando a palavra “obrigatório” como parte da etiqueta. O AEM adiciona um asterisco quando um campo é obrigatório, mas seria ideal incluir a palavra `required` na própria etiqueta (no campo **Título** na janela de edição).
+Se a entrada de um campo de formulário for obrigatória, deixe isso claro usando a palavra &quot;obrigatório&quot; como parte do rótulo. O AEM adiciona um asterisco quando um campo é obrigatório, mas seria ideal incluir a palavra `required` na própria etiqueta (no campo **Título** na janela de edição).
 
 O posicionamento das etiquetas também é importante, pois ajuda a localizar os campos apropriados. Isto é de especial importância quando o usuário se depara com um formulário complexo. Siga a convenção abaixo:
 
