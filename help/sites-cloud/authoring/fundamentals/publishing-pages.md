@@ -1,8 +1,8 @@
 ---
 title: Publicar páginas
 description: Como publicar e desfazer a publicação de páginas usando o AEM
-translation-type: ht
-source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
+translation-type: tm+mt
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -33,7 +33,7 @@ Você pode encontrar termos diferentes relacionados à publicação enquanto tra
 
 Dependendo da sua localização, você pode publicar:
 
-* [Do editor de páginas](#publishing-from-the-editor)
+* [No editor de páginas](#publishing-from-the-editor)
 * [Do console de sites](#publishing-from-the-console)
 
 >[!NOTE]
@@ -43,6 +43,7 @@ Dependendo da sua localização, você pode publicar:
 >* Um fluxo de trabalho será acionado para notificar a pessoa adequada sobre a sua solicitação para publicação.
 >* Esse fluxo de trabalho pode ter sido personalizado pela sua equipe de desenvolvimento.
 >* Uma mensagem será exibida brevemente para notificar que o fluxo de trabalho foi disparado.
+
 
 <!--
 >* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
@@ -81,8 +82,8 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 No console de sites, existem duas opções para publicação:
 
-* [Publicação rápida](#quick-publish)
-* [Gerenciar publicação](#manage-publication)
+* [Publicação rápida  ](#quick-publish)
+* [Gerenciar publicação  ](#manage-publication)
 
 #### Publicação rápida   {#quick-publish}
 
@@ -182,7 +183,10 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
    Os recursos são agrupados pelos fluxos de trabalho acionados e cada uma das opções especificadas para:
 
    * Definir o título do fluxo de trabalho.
-   * Manter o pacote de fluxo de trabalho, desde que o fluxo de trabalho tenha suporte para vários recursos. <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).-->
+   * Manter o pacote de fluxo de trabalho, desde que o fluxo de trabalho tenha suporte para vários recursos.
+   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+    -->
+
    * Definir um título do pacote de fluxo de trabalho se a opção para manter esse pacote tiver sido escolhida.
    Clique em **Publicar** ou **Publicar mais tarde** para concluir a publicação.
 
@@ -192,7 +196,7 @@ Desfazer a publicação de uma página fará com que ela seja removida do seu am
 
 De uma [maneira semelhante à publicação](#publishing-pages), uma ou mais páginas podem ter a publicação desfeita:
 
-* [Do editor de páginas](#unpublishing-from-the-editor)
+* [No editor de páginas](#unpublishing-from-the-editor)
 * [Do console de sites](#unpublishing-from-the-console)
 
 ### Desfazer publicação por meio do editor   {#unpublishing-from-the-editor}
