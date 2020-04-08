@@ -2,18 +2,18 @@
 title: Aplicação de fluxos de trabalho a páginas
 description: Ao criar, você pode invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
 
 # Aplicação de fluxos de trabalho a páginas {#applying-workflows-to-pages}
 
-Ao criar, você pode chamar fluxos de trabalho para executar ações em suas páginas; também é possível aplicar mais de um fluxo de trabalho.
+Ao criar, você pode chamar workflows para executar ações em suas páginas; também é possível aplicar mais de um fluxo de trabalho.
 
 Ao aplicar o fluxo de trabalho, você especifica as seguintes informações:
 
-* O fluxo de trabalho que será aplicado.
+* O fluxo de trabalho a ser aplicado.
    * É possível aplicar qualquer fluxo de trabalho (ao qual você tenha acesso, conforme atribuído pelo administrador do AEM).
 * Opcionalmente, um título que ajude a identificar a instância de fluxo de trabalho na Caixa de entrada de um usuário..
 * A carga útil do fluxo de trabalho. Pode ser uma ou mais páginas.
@@ -30,7 +30,8 @@ Fluxos de trabalho podem ser iniciados a partir de:
 >* Como aplicar fluxos de trabalho a ativos do DAM.
 >* [Trabalhar com fluxos de trabalho de projeto](/help/sites-cloud/authoring/projects/workflows.md).
 
-<!--
+
+<!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
 >* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 -->
@@ -38,7 +39,8 @@ Fluxos de trabalho podem ser iniciados a partir de:
 >[!NOTE]
 >
 >Os administradores do AEM podem iniciar fluxos de trabalho usando vários outros métodos.
-<!--
+
+<!-- 
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
 -->
 
@@ -101,7 +103,8 @@ Você pode especificar os detalhes:
       * Você pode especificar um título para o pacote, para ajudar na identificação.
    >[!NOTE]
    >
-   >A opção **Manter o pacote do fluxo de trabalho** está disponível quando o fluxo de trabalho foi configurado para Suporte a vários recursos e vários recursos foram selecionados.
+   >A opção **Manter pacote de fluxo de trabalho** estará disponível quando o fluxo de trabalho for configurado para Suporte a vários recursos e vários recursos foram selecionados.
+
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
@@ -129,7 +132,7 @@ Uma caixa de diálogo será aberta, permitindo que você refine a seleção de a
 
    >[!NOTE]
    >
-   >Se você adicionar outros recursos, poderá usar **Voltar** para ajustar a configuração para **Manter o pacote do fluxo de trabalho** na etapa **Propriedades**.
+   >Se você adicionar recursos extras, poderá usar **Voltar** para ajustar a configuração **Manter fluxo de trabalho do pacote** na etapa **Propriedades**.
 
 1. Use **Create** to close the wizard and create the workflow instance. Uma notificação é exibida no console Sites.
 
