@@ -2,7 +2,7 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: 73813dd87e3eebfe26673640125ea64916e14789
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -122,13 +122,13 @@ Os outros pares seguem a configuração padrão:
 
 Para alterar os níveis de log dos ambientes do Cloud, a configuração de Sling Logging OSGI deve ser modificada, seguida de uma reimplantação completa. Como isso não é instantâneo, tenha cuidado ao ativar registros detalhados em ambientes de produção que recebem muito tráfego. No futuro, é possível que haja mecanismos para mudar mais rapidamente o nível de log.
 
-> [!NOTE]
-> 
+>[!NOTE]
+>
 > Para executar as alterações de configuração listadas abaixo, é necessário criá-las em um ambiente de desenvolvimento local e, em seguida, enviá-las para um AEM como uma instância do Serviço de nuvem. Para obter mais informações sobre como fazer isso, consulte [Implantação no AEM como um serviço](/help/implementing/deploying/overview.md)em nuvem.
 
 ### Ativando o nível de log DEBUG {#activating-the-debug-log-level}
 
-> [!WARNING]
+>[!WARNING]
 >
 > A ativação global do nível de log DEBUG gerará uma grande quantidade de informações que será difícil de filtrar. É recomendável ativá-la somente para os serviços que exigem depuração. Para obter mais informações, consulte [Loggers e Writers for Individual Services](logging.md#loggers-and-writers-for-individual-services).
 
