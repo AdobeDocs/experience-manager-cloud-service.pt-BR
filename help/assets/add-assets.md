@@ -2,7 +2,7 @@
 title: Adicionar seus ativos digitais ao Adobe Experience Manager
 description: Adicione seus ativos digitais ao Adobe Experience Manager como um serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -19,7 +19,7 @@ Embora você possa carregar e gerenciar qualquer arquivo binário no Experience 
 
 Você também pode optar por fazer um processamento adicional nos ativos carregados. Vários perfis de processamento de ativos podem ser configurados na pasta, na qual os ativos são carregados, para adicionar metadados específicos, representações ou serviços de processamento de imagens. Consulte Processamento [](#additional-processing) adicional abaixo para obter mais informações.
 
-> [!NOTE]
+>[!NOTE]
 >
 > O Experience Manager como um serviço em nuvem aproveita uma nova maneira de fazer upload de ativos - fazer upload binário direto. Por padrão, ele é suportado pelos recursos e clientes prontos para uso do produto, como a interface do usuário do AEM, o Adobe Asset Link, o aplicativo de desktop do AEM e, portanto, transparente para os usuários finais.
 >
@@ -75,7 +75,7 @@ Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na ár
 
 Além disso, a interface do usuário Ativos exibe o ativo mais recente que você carregou ou a pasta que criou primeiro.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Para fazer upload de hierarquias de pastas aninhadas para o AEM, consulte o upload [em massa de ativos](#bulk-upload).
 
@@ -130,7 +130,7 @@ Para carregar um número maior de arquivos, especialmente se eles existirem em u
 * Use um script de upload personalizado ou uma ferramenta que aproveite as APIs [de upload de](developer-reference-material-apis.md#asset-upload-technical)ativos. Essa ferramenta personalizada pode adicionar a manipulação de ativos (por exemplo, traduzir metadados ou renomear arquivos), se necessário.
 * Use o aplicativo [de desktop do](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) Experience Manager para fazer upload das hierarquias de pastas aninhadas.
 
-> [!NOTE]
+>[!NOTE]
 >
 > O upload em massa como parte da migração de conteúdo de outros sistemas ao configurar e implantar no Experience Manager requer planejamento cuidadoso, consideração e escolha de ferramentas. Consulte o guia [de](/help/implementing/deploying/overview.md) implantação para obter orientação sobre as abordagens de migração de conteúdo.
 
@@ -157,7 +157,7 @@ Além disso, se o Dynamic Media estiver ativado no seu ambiente:
 * Os [perfis de imagem](dynamic-media/image-profiles.md) permitem aplicar cortes específicos (**[!UICONTROL Corte inteligente]** e corte de pixels) e configuração de nitidez aos ativos carregados
 * [perfis](dynamic-media/video-profiles.md) de vídeo permitem aplicar perfis de codificação de vídeo específicos (resolução, formato, parâmetros)
 
-> [!NOTE]
+>[!NOTE]
 >
 > O corte do Dynamic Media e outras operações em ativos não são destrutivas, ou seja, não alteram o original carregado, mas fornecem parâmetros para o corte ou transformação de mídia a ser feito ao entregar os ativos
 
