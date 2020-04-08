@@ -1,8 +1,8 @@
 ---
 title: Suporte IMS do Adobe Experience Manager as a Cloud Service
-description: 'Suporte IMS do Adobe Experience Manager as a Cloud Service '
-translation-type: ht
-source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
+description: Suporte IMS do Adobe Experience Manager as a Cloud Service
+translation-type: tm+mt
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -106,7 +106,7 @@ A API de gerenciamento de usuários usada pela Ferramenta de sincronização de 
 
 ## Configuração do Adobe Experience as a Cloud Service {#aem-configuration}
 
-> [!NOTE]
+>[!NOTE]
 >
 >A configuração do AEM IMS necessária será configurada automaticamente quando os ambientes e as instâncias do AEM forem provisionados. No entanto, o administrador pode modificá-la de acordo com seus requisitos, usando o método descrito [aqui](/help/implementing/deploying/overview.md).
 
