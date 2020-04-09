@@ -3,7 +3,7 @@ title: Configurar o serviço em nuvem do AEM Assets com o Brand Portal
 description: Configure o serviço em nuvem do AEM Assets com o Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -163,7 +163,7 @@ Execute as seguintes etapas para criar a configuração do serviço em nuvem do 
 
 1. Faça logon na instância da nuvem do AEM Assets
 
-1. No painel **Ferramentas** ![Ferramentas](assets/tools.png) , navegue até Serviços **[!UICONTROL em nuvem > Portal]** da marca AEM.
+1. No painel **Ferramentas** ![Ferramentas](assets/tools.png) , navegue até Serviços **[!UICONTROL em]** nuvem > Portal **[!UICONTROL de marcas do]** AEM.
 
    A página Configurações do Portal de Marcas é aberta.
 
@@ -217,7 +217,7 @@ Execute as seguintes etapas para criar a configuração do serviço em nuvem do 
    >Evite desativar o agente de distribuição, pois isso pode causar falha na distribuição dos ativos (em execução na fila).
 
 
-Depois que o Brand Portal for configurado com êxito com sua instância de nuvem do AEM Assets, você poderá:
+A instância da nuvem do AEM Assets foi configurada com êxito com o Brand Portal, agora você pode:
 
 * [Publicar ativos do AEM Assets no Brand Portal](publish-to-brand-portal.md)
 * [Publicar pastas do AEM Assets no Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
@@ -262,8 +262,9 @@ Ao publicar o ativo, os seguintes registros de solicitação e resposta são ger
 No exemplo acima, uma solicitação e uma resposta adicionais são acionadas. O sistema não pôde localizar a pasta pai (ou seja, Adicionar caminho) no Brand Portal porque o ativo foi publicado pela primeira vez, portanto, aciona uma solicitação adicional para criar uma pasta pai com o mesmo nome no Brand Portal onde o ativo é publicado.
 
 >[!NOTE]
->>Solicitação adicional é gerada caso a pasta pai não exista no Brand Portal (no exemplo acima) ou a pasta pai tenha sido modificada nos ativos AEM.
 >
+>Solicitação adicional é gerada caso a pasta pai não exista no Brand Portal (no exemplo acima) ou a pasta pai tenha sido modificada nos ativos AEM.
+
 
 ## Informações adicionais {#additional-information}
 
