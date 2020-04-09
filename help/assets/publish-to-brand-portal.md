@@ -3,7 +3,7 @@ title: Publicar ativos, pastas e coleções no Brand Portal
 description: Publique ativos, pastas e coleções no Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -215,7 +215,7 @@ Veja a seguir as etapas para cancelar a publicação de uma coleção:
 
 1. No console **Coleções** da instância dos ativos AEM, selecione a coleção que deseja cancelar a publicação.
 
-   ![select_collection-1](assets/select_collection-1.png)
+   ![select_collection](assets/select_collection-1.png)
 
 1. Na barra de ferramentas, clique no ícone **[!UICONTROL Remover do Brand Portal]** .
 1. Na caixa de diálogo, clique em **[!UICONTROL Cancelar publicação]**.
