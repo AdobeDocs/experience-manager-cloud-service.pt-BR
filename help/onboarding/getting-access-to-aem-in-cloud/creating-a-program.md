@@ -1,8 +1,8 @@
 ---
-title: Criação de um programa - Serviço em nuvem
-description: Criação de um programa - Serviço em nuvem
+title: Criação de um Programa - Serviço em nuvem
+description: Criação de um Programa - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: b30d9e37bb7de46aa252aa7030ab0c2de8610431
 
 ---
 
@@ -11,41 +11,40 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
 A solução nativa da nuvem fornece ao usuário as permissões necessárias e a capacidade de criar um programa em um modelo de autoatendimento.
 
-Um assistente de criação de programa solicitará que o usuário envie detalhes, dependendo do objetivo do usuário de criar o programa dentro dos limites do que está disponível para o cliente ou organização específica.
+Um assistente de criação de programas solicitará que o usuário envie detalhes, dependendo do objetivo do usuário de criar o programa dentro dos limites do que está disponível para o cliente ou organização específica.
 
-Se o acesso ao Cloud Manager for iniciado pela primeira vez ou se não houver programas no locatário, o usuário verá a tela **Criar seu primeiro programa** . Se o usuário selecionar *Esc* ou clicar fora da caixa de diálogo, a seguinte tela será exibida:
+No evento do primeiro acesso ao Cloud Manager ou se não houver programas no locatário, o usuário visualizará a tela **Criar seu primeiro Programa** . Se o usuário selecionar *Esc* ou clicar fora da caixa de diálogo, a tela a seguir será exibida:
 
 ![](assets/create-program1.png)
 
 
 ## Usando o Assistente para Criar Programa {#using-create-program-wizard}
 
-Dependendo do objetivo do usuário de criar o programa dentro dos limites do que está disponível para o cliente/organização específico, um assistente de criação de programa solicitará que o usuário envie um ou mais detalhes.
+Dependendo do objetivo do usuário de criar o programa dentro dos limites do que está disponível para o cliente/organização específico, um assistente de criação de programas solicitará que o usuário envie um ou mais detalhes.
 
 ![](assets/create-program-2.png)
 
 >[!NOTE]
->Se um programa já existir, você verá **Adicionar programa** na parte superior direita da página de aterrissagem, como mostrado na figura abaixo.
+>If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
 
 ![](assets/create-program-add.png)
 
-## Criação de um programa de demonstração {#create-demo-program}
+## Criação de um Programa de demonstração {#create-demo-program}
 
 >[!NOTE]
->
-Um programa de demonstração é análogo a um programa sandbox na interface do usuário do Cloud Manager.
+>Um programa de demonstração é análogo a um programa sandbox na interface do usuário do Cloud Manager.
 
 Siga as etapas abaixo para criar um programa sandbox:
 
-1. No assistente de criação de programa, selecione **Configurar uma demonstração**. O usuário envia o nome do programa antes de selecionar **Criar**.
+1. No assistente para criação de programas, selecione **Configurar uma demonstração**. O usuário envia o nome do programa antes de selecionar **Criar**.
 
    ![](assets/create-program-setupdemo.png)
 
-1. O usuário visualizará o novo cartão de programa da caixa de proteção na página de aterrissagem e poderá passar o mouse sobre ele para selecionar o ícone do Gerenciador de nuvem para navegar até a página de visão geral do Gerenciador de nuvem. O cartão informará o usuário sobre o status da configuração automática do programa de sandbox recém-criado. O usuário verá a progressão.
+1. O usuário verá o novo cartão de programa da caixa de proteção na landing page e poderá passar o mouse sobre ele para selecionar o ícone do Gerenciador de nuvem para navegar até a página de visão geral do Gerenciador de nuvem. O cartão informará o usuário sobre o status da configuração automática do programa sandbox recém-criado. O usuário verá a progressão.
 
    ![](assets/program-create-setupdemo2.png)
 
-1. Depois que o programa for configurado e a etapa de criação do projeto for concluída, o usuário poderá acessar o link **Gerenciar Git** , como mostra a figura abaixo:
+1. Após a configuração do programa e a etapa de criação do projeto ser concluída, o usuário poderá acessar o link **Gerenciar Git** , como mostra a figura abaixo:
 
    ![](assets/create-program4.png)
 
@@ -62,24 +61,30 @@ Siga as etapas abaixo para criar um programa sandbox:
 
    ![](assets/create-program-setup-deploy.png)
 
+   >[!NOTE]
+   >Você também pode editar, alternar ou adicionar um programa na página Visão geral do Cloud Manager, como mostrado abaixo:
 
-## Criando um programa regular {#create-regular-program}
+   ![](assets/create-program-a1.png)
 
-Um programa *regular* destina-se a um usuário familiarizado com o AEM e o Cloud Manager e está pronto para começar a escrever, criar e testar o código com o objetivo de implantá-lo na Produção.
 
-Siga as etapas abaixo para criar um programa regular:
 
-1. Selecione **Configurar para produção** no assistente Criar programa para criar um programa regular. O usuário pode aceitar o nome padrão do programa ou editá-lo antes de selecionar **Continuar**.
+## Criação de um Programa regular {#create-regular-program}
+
+Um programa *regular* destina-se a um usuário familiarizado com o AEM e o Cloud Manager e que está pronto para o start de escrever, criar e testar o código com o objetivo de implantá-lo na Produção.
+
+Siga as etapas abaixo para criar um programa comum:
+
+1. Selecione **Configurar para produção** no assistente Criar Programa para criar um programa comum. O usuário pode aceitar o nome do programa padrão ou editá-lo antes de selecionar **Continuar**.
 
    ![](assets/set-up-prod1.png)
 
-1. O usuário selecionará as soluções que serão incluídas no programa na tela que serão apresentadas após a tela acima.
+1. O usuário selecionará as soluções a serem incluídas no programa na tela que serão apresentadas após a tela acima.
 
 
 
    >[!NOTE]
    >
-   >A tela abaixo é exibida somente para o segmento de clientes que compraram mais de uma solução. Para clientes que compraram apenas uma solução, a tela de seleção da solução abaixo não será exibida.
+   >A tela abaixo é exibida somente para o segmento de clientes que compraram mais de uma solução. Para os clientes que compraram apenas uma solução, a tela de seleção da solução abaixo não será exibida.
 
    ![](assets/set-up-prod2.png)
 
@@ -87,7 +92,7 @@ Siga as etapas abaixo para criar um programa regular:
 
    ![](assets/set-up-prod3.png)
 
-1. Depois de ver o cartão do programa na página de aterrissagem, passe o mouse sobre ele para selecionar o ícone do Gerenciador de nuvem para navegar até a página **Visão geral** do Gerenciador de nuvem.
+1. Depois de ver seu cartão de programa na landing page, passe o mouse sobre ele para selecionar o ícone do Gerenciador de nuvem para navegar até a página **Visão geral** do Gerenciador de nuvem.
 
    ![](assets/set-up-prod4.png)
 
@@ -97,7 +102,7 @@ Siga as etapas abaixo para criar um programa regular:
 
    >[!NOTE]
    >
-   >Um programa regular não tem o recurso de configuração **automática** .
+   >A regular program does not have **Auto-setup** feature.
 
 
 
