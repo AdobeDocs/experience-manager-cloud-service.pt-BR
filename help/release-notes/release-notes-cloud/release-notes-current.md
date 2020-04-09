@@ -2,7 +2,7 @@
 title: Notas de versão do Adobe Experience Manager como Cloud Service para 2020.4.0
 description: Notas de versão do Experience Manager para 2020.4.0
 translation-type: tm+mt
-source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
+source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
 
 ---
 
@@ -43,3 +43,25 @@ Saiba mais sobre novos recursos, melhorias e correções de erros para [!DNL Exp
 >* [Configurar o Experience Manager para trabalhar com o Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Criar fluxo de trabalho no Experience Manager usando os microserviços de ativos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
+
+## Atualizações do Cloud Manager {#cloud-manager}
+
+## Novidades do Cloud Manager {#whats-new-cloud-manager}
+
+* Os URLs do editor agora estão disponíveis na página do Ambiente na interface do usuário do Cloud Manager.
+* Alterações na navegação para permitir que o usuário edite, alterne ou adicione um programa da página de visão geral do Cloud Manager.
+* Alterações para permitir que o usuário edite o programa do cartão de programa na landing page do Cloud Manager.
+* Novo status de pipeline **Pipeline Running** exibido no ambiente ao qual está associado.
+* Melhorias na compreensão da página de execução de pipeline. Isso inclui a exibição do nome do Pipeline (somente pipeline de não produção) e do tipo e um selo para indicar se o status do pipeline está Em andamento/Cancelado/Com falha.
+* Dicas de ferramentas para melhorar a experiência e a compreensão do usuário sobre por que o botão Adicionar Programa/Ambiente está desativado.
+* Ambientes com falha podem ser excluídos por meio da interface do usuário e da API.
+* O processo usado para gerar senhas git tornou-se mais resiliente a problemas na camada de serviço subjacente.
+
+## Correções de erros {#bug-fixes-cloud-manager}
+
+* Os links para o ambiente stage na página de detalhes de execução do pipeline não navegavam consistentemente para o local correto.
+* As etapas individuais no processo de criação do ambiente atingiriam o tempo limite mais cedo do que o necessário, causando a falha do processo.
+* A configuração Maven usada no container build foi atualizada para evitar bloqueios ao baixar metadados de artefato.
+* Em alguns casos, a etapa Construir imagem falharia ao baixar os pacotes do cliente com êxito.
+* Algumas condições raras impediriam a exclusão de ambientes.
+* As notificações da Experience Cloud não foram recebidas de forma consistente.
