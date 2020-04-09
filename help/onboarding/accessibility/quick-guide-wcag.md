@@ -1,72 +1,68 @@
 ---
-title: Um guia rápido para o WCAG 2.0
-seo-title: Um guia rápido para o WCAG 2.0
+title: Um guia rápido para o WCAG 2.1
+seo-title: Um guia rápido para o WCAG 2.1
 translation-type: tm+mt
-source-git-commit: 039b926ca0775979430c70c96ae77d0eaa5662b3
+source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
 
 ---
 
 
-# Um guia rápido para o WCAG 2.0{#quick-guide-to-wcag}
+# Um guia rápido para o WCAG 2.1{#quick-guide-to-wcag}
 
-O AEM foi desenvolvido para maximizar a conformidade com as Diretrizes de acessibilidade do conteúdo da Web:
+O Adobe Experience Manager (AEM) como um serviço em nuvem foi desenvolvido para maximizar a conformidade com as Diretrizes de acessibilidade do conteúdo da Web.
 
-As [Web Content Accessibility Guidelines versão 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) são um conjunto de diretrizes reconhecidas internacionalmente desenvolvidas pelo [World Wide Web Consortium (W3C)](https://www.w3.org/) sob sua [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+As [Web Content Accessibility Guidelines versão 2.1 (WCAG)](https://www.w3.org/TR/WCAG/) são um conjunto de diretrizes reconhecidas internacionalmente desenvolvidas pelo [World Wide Web Consortium (W3C)](https://www.w3.org/) sob sua [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
-O WCAG 2.0 consiste em um conjunto de diretrizes de tecnologia independentes e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável para pessoas com necessidades especiais. Prestam aconselhamento aos autores, designers e desenvolvedores de conteúdos Web, a fim de garantir que os recursos que produzem sejam o mais acessíveis possível ao maior número possível de pessoas, independentemente de qualquer deficiência que tenham; por exemplo, deficiência visual, perda auditiva, dificuldades de aprendizagem, limitações relacionadas com a idade, entre outras.
+O WCAG 2.1 consiste em um conjunto de diretrizes de tecnologia independentes e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável para pessoas com necessidades especiais. Prestam aconselhamento aos autores, designers e desenvolvedores de conteúdos Web, a fim de garantir que os recursos que produzem sejam o mais acessíveis possível ao maior número possível de pessoas, independentemente de qualquer deficiência que tenham; por exemplo, deficiência visual, perda auditiva, dificuldades de aprendizagem, limitações relacionadas com a idade, entre outras.
 
 Por exemplo, descrever uma imagem (ou qualquer outro conteúdo não textual) usando o `alt` atributo em HTML beneficia muito as pessoas que são cegas ou amblíopes. A descrição textual no `alt` atributo pode ser convertida em saída de fala ou transmitida para exibições em braille eletrônicas atualizáveis.
 
-Além disso, o WCAG 2.0 pode resultar em vantagens para outros beneficiários, incluindo pessoas que podem ser consideradas *com deficiência* situacional. Pessoas que, devido a circunstâncias como a tecnologia de navegação, a velocidade de conexão da rede ou o ambiente de navegação, podem enfrentar barreiras semelhantes às pessoas com deficiências.
+Além disso, o WCAG 2.1 pode resultar em vantagens para outros beneficiários, incluindo pessoas que podem ser consideradas *com deficiência* situacional. Pessoas que, devido a circunstâncias como a tecnologia de navegação, a velocidade de conexão da rede ou o ambiente de navegação, podem enfrentar barreiras semelhantes às pessoas com deficiências.
 
-Usando o Adobe Experience Manager, os autores de conteúdo e/ou proprietários de sites podem criar conteúdo da Web que atenda aos critérios relevantes de sucesso do Nível A e do Nível AA do WCAG 2.0.
+Usando o Adobe Experience Manager, os autores de conteúdo e/ou proprietários de sites podem criar conteúdo da Web que atenda aos critérios de sucesso relevantes do WCAG 2.1 Nível A e Nível AA.
 
-Portanto, entender os objetivos do WCAG 2.0 e como as diretrizes são estruturadas é uma parte importante do entendimento da acessibilidade da Web e como as diretrizes podem ajudar na criação de conteúdo da Web acessível.
+Portanto, entender os objetivos do WCAG 2.1 e como as diretrizes são estruturadas é uma parte importante do entendimento da acessibilidade da Web e como as diretrizes podem ajudar na criação de conteúdo da Web acessível.
 
-A intenção da WCAG 2.0 é fornecer diretrizes que:
+A intenção da WCAG 2.1 é fornecer orientações que:
 
 * São **agnósticos tecnológicos:**
-
-Em outras palavras, orientações que podem ser aplicadas a diversos formatos de conteúdo da Web, não apenas HTML. Assim, o WCAG 2.0 pode abranger o conteúdo gerado ou fornecido em PDF, Flash, JavaScript e outras tecnologias da Web atuais e futuras. O objetivo é resolver uma deficiência reconhecida do WCAG 1.0, na medida em que o foco era no HTML, em detrimento de outros formatos de conteúdo da Web.
+Em outras palavras, orientações que podem ser aplicadas a diversos formatos de conteúdo da Web, não apenas HTML. Assim, o WCAG 2.1 pode abranger o conteúdo gerado ou fornecido em PDF, Flash, JavaScript e outras tecnologias da Web atuais e futuras. <!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
 
 * São **testáveis:**
-
-Cada orientação é redigida de forma a poder ser objetivamente testada, a fim de garantir que um grupo de peritos em matéria de acessibilidade concordasse, de um modo geral, que a orientação foi cumprida. Um dos desafios das orientações em matéria de acessibilidade é que, embora algumas possam ser testadas tecnicamente, outras exigem uma avaliação humana para determinar se a orientação foi ou não cumprida com êxito. O WCAG 2.0 foi escrito com o objetivo de reduzir a subjetividade que estava presente em algumas das diretrizes e pontos de verificação do WCAG 1.0.
+Cada orientação é redigida de forma a poder ser objetivamente testada, a fim de garantir que um grupo de peritos em matéria de acessibilidade concordasse, de um modo geral, que a orientação foi cumprida. Um dos desafios das orientações em matéria de acessibilidade é que, embora algumas possam ser testadas tecnicamente, outras exigem uma avaliação humana para determinar se a orientação foi ou não cumprida com êxito. <!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
 
 * Suporte para implementação **priorizada e contextual:**
+   <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
 
-Tal como acontece com o WCAG 1.0, as orientações do WCAG 2.0 são prioritárias, relacionadas com o impacto provável de não seguir uma orientação para um grupo específico de utilizadores com deficiência. Isto permite aos autores tomar uma decisão informada sobre as orientações mais importantes para a sua situação específica. Além disso, é introduzido o conceito de *acessibilidade suportado* . Isso permite que os autores tomem decisões sobre como usar as tecnologias da Web que podem não ter suporte total à acessibilidade, ou exigir que os usuários tenham tecnologias de assistência e/ou navegadores específicos para se beneficiarem dos recursos de acessibilidade.
-
-Estes objetivos influenciaram significativamente a estrutura da WCAG 2.0.
-
->[!NOTE]
->
->Não é possível criar um site que atenda a qualquer deficiência ou tipo de pessoa possível. O objetivo do WCAG 2.0 é ajudar os autores da Web a criar sites que sejam, na medida do possível, acessíveis em determinadas condições e dentro dos limites da razão.
+Estes objetivos influenciaram significativamente a estrutura da WCAG 2.1.
 
 >[!NOTE]
 >
->Se estiver familiarizado com o WCAG 1.0, você observará algumas alterações no WCAG 2.0. Estes dizem respeito ao âmbito, à organização e ao objetivo.
+>Não é possível criar um site que atenda a qualquer deficiência ou tipo de pessoa possível. O objetivo do WCAG 2.1 é ajudar os autores da Web a criar sites que sejam, na medida do possível, acessíveis em determinadas condições e dentro dos limites da razão.
+
+<!--
+>[!NOTE]
+>
+>If you are familiar with WCAG 1.0, you will notice some changes in WCAG 2.1. These relate to scope, organization and aim.
+-->
 
 ## Estrutura {#structure}
 
-O WCAG 2.0 está estruturado de uma forma que introduz conceitos de criação de conteúdo web acessível de forma progressivamente detalhada. Isso pode dar a impressão de que o WCAG 2.0 é um conjunto muito complexo de documentos interligados, mas o objetivo é (progressivamente) fornecer informações mais detalhadas conforme e quando os autores precisarem - em vez de fornecer tudo isso em um documento muito grande.
+O WCAG 2.1 está estruturado de forma a introduzir conceitos de criação de conteúdo web acessível de forma progressivamente detalhada. Isso pode dar a impressão de que o WCAG 2.1 é um conjunto muito complexo de documentos interligados, mas o objetivo é (progressivamente) fornecer informações mais detalhadas conforme e quando os autores precisarem - em vez de fornecer tudo isso em um documento muito grande.
 
-O WCAG 2.0 consiste em quatro princípios chave para um design acessível. São eles:
+O WCAG 2.1 consiste em quatro princípios chave para o design acessível, às vezes citados pelo acrônimo **POUR**. São eles:
 
 1. **Percebível**: um usuário pode sentir o conteúdo da Web em questão?
 1. **Operável**: um usuário pode navegar, inserir dados ou interagir com o conteúdo da Web?
 1. **Compreendido**: um usuário pode processar e compreender o conteúdo da Web apresentado a ele?
 1. **Robusto**: o conteúdo da Web está disponível da maneira desejada em uma ampla variedade de ambientes de navegação, incluindo ambientes de navegação herdados e emergentes?
 
-Estes princípios são por vezes referidos pela sigla POUR.
-
+Para elaborar:
 * Cada **princípio** consiste numa ou mais **orientações**.
 
 * As diretrizes são escritas como instruções, que são positivas (Faça isso...) ou negativas (Não faça isso...).
 * As orientações são numeradas de 1.1 a 4.1, quando o primeiro número corresponde ao princípio da empresa-mãe.
-
 * Cada orientação consiste em um ou mais critérios **de** sucesso.
-
 * Os critérios de sucesso são escritos como declarações, que são `True` ou `False` para qualquer página da Web.
 * Os critérios de sucesso podem incluir opções ou opções, ou podem incluir exceções; situações em que os critérios de sucesso não têm de ser cumpridos.
 * Os critérios de sucesso são numerados de acordo com a orientação e o princípio da empresa-mãe, de 1.1.1 a 4.1.1. Eles também têm um nome curto resumindo a intenção do critério, para uma referência mais fácil. Por exemplo, o critério de sucesso 1.1.1 é alternativo não textual.
@@ -74,21 +70,32 @@ Estes princípios são por vezes referidos pela sigla POUR.
 
 ## Recursos de suporte {#supporting-resources}
 
-Além dos componentes principais do WCAG 2.0 de Princípios, Diretrizes e Critérios de Sucesso, há uma série de documentos de apoio. Alguns deles fornecem conselhos específicos sobre como cumprir aspectos das diretrizes, outros são referências mais gerais que ajudam autores da Web, designers e desenvolvedores de todas as habilidades a entender e usar o WCAG 2.0 da forma mais eficiente possível.
+Além dos componentes principais do WCAG 2.1 de Princípios, Orientações e Critérios de Sucesso, há uma série de documentos de apoio. Alguns deles fornecem conselhos específicos sobre como cumprir aspectos das diretrizes, outros são referências mais gerais que ajudam autores da Web, designers e desenvolvedores de todas as habilidades a entender e usar o WCAG 2.1 da forma mais eficaz possível.
 
-Embora o WCAG 2.0 seja um documento estável e não mude, a maioria desses recursos de suporte são documentos dinâmicos; eles mudarão e crescerão com o tempo, à medida que novas tecnologias surgirem, e novos exemplos de como a acessibilidade da Web pode ser alcançada.
+Embora o WCAG 2.1 seja um documento estável e não mude, a maioria desses recursos de suporte são documentos dinâmicos; eles mudarão e crescerão com o tempo, à medida que novas tecnologias surgirem, e novos exemplos de como a acessibilidade da Web pode ser alcançada.
 
-### Recursos do WCAG 2.0 {#wcag-resources}
+### Recursos do WCAG 2.1 {#wcag-resources}
 
-* [Um resumo de todos os documentos](https://www.w3.org/WAI/intro/wcag.php)relacionados ao WCAG 2.0;
-* [Explicação da relação entre os diferentes componentes](https://www.w3.org/WAI/intro/wcag20);
-* [Perguntas](https://www.w3.org/WAI/WCAG20/wcag2faq.html)frequentes sobre o WCAG 2.0;
+Esta lista não se destina a ser exaustiva, pois apresenta os recursos disponíveis:
+* [Um resumo de todos os documentos relacionados ao WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
+* [Um resumo dos diferentes documentos](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
+* [Diretrizes de acessibilidade de conteúdo da Web (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
+* [Novidades no WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
+* [Um guia de referência rápida sobre como cumprir o WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
+* [Perguntas frequentes sobre o WCAG 2](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
 
-### Técnicas para WCAG 2.0 {#techniques-for-wcag}
 
-As técnicas para WCAG 2.0 estão disponíveis na página [Técnicas para WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/) .
+### Novidades do WCAG 2.1 {#what-is-new}
 
-**As técnicas** formam o nível abaixo dos critérios de sucesso na hierarquia do WCAG 2.0. Eles são classificados pela WAI como informativos, não normativos. Por outras palavras, não é necessário seguir uma técnica específica para que um recurso esteja em conformidade com o WCAG 2.0.
+[O que há de novo no WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) fornece informações valiosas sobre o delta entre WCAG e 2.0 e WCAG 2.1.
+
+[O WCAG 2.0 e 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) clarifica ainda mais o estado da sua relação.
+
+### Técnicas para WCAG 2.1 {#techniques-for-wcag}
+
+As técnicas para WCAG 2.1 estão disponíveis na página [Técnicas para WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/) .
+
+**As técnicas** formam o nível abaixo dos critérios de sucesso na hierarquia do WCAG 2.1. Eles são classificados pela WAI como informativos, não normativos. Por outras palavras, não é necessário seguir uma técnica específica para que um recurso esteja em conformidade com o WCAG 2.1.
 
 Como as técnicas são muito mais específicas do que os critérios de sucesso, elas geralmente se referem a uma tecnologia ou tipo de conteúdo específico (por exemplo, HTML ou vídeo), ou situação (por exemplo, comércio eletrônico ou aplicativo de e-learning). Você pode considerar técnicas como exemplos comprovados de como diretrizes específicas e critérios de sucesso podem ser cumpridos, de modo que elas são úteis para autores e desenvolvedores que trabalham em contextos específicos.
 
@@ -109,9 +116,9 @@ Os detalhes das técnicas incluem uma descrição, aplicabilidade, exemplos, rec
 
 A lista de técnicas não está completa e a WAI está constantemente atualizando a lista com novos exemplos, refletindo desenvolvimentos na tecnologia da Web, abordagens de design e resultados de pesquisa. Portanto, vale a pena verificar regularmente a lista de técnicas para novas adições.
 
-### Noções básicas sobre o WCAG 2.0 {#understanding-wcag}
+### Noções básicas sobre o WCAG 2.1 {#understanding-wcag}
 
-Trata-se de uma série de documentos, que fornecem conselhos para ajudar os leitores a apreciarem o objetivo de orientações específicas e critérios de sucesso. Você pode [baixar uma introdução, além de links para informações](https://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/Overview.html)mais detalhadas.
+Trata-se de uma série de documentos, que fornecem conselhos para ajudar os leitores a apreciarem o objetivo de orientações específicas e critérios de sucesso. Você pode [baixar uma introdução, além de links para informações](https://www.w3.org/WAI/WCAG21/Understanding/)mais detalhadas.
 
 Cada orientação individual e critério de sucesso tem também a sua própria página &quot;Compreensão&quot;, que fornece informações sobre:
 
@@ -127,11 +134,11 @@ Cada página de &quot;entendimento&quot; individual de cada critério de sucesso
 * Técnicas e falhas: exemplos específicos e detalhados de como o critério de sucesso pode ser atendido (descritos mais detalhadamente abaixo)
 * Termos principais - um glossário de termos importantes para entender o critério de sucesso.
 
-Um exemplo pode ser encontrado em: [Noções sobre o Critério de sucesso 1.1.1 (&quot;Conteúdo não textual&quot;)](https://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/text-equiv-all.html).
+Um exemplo pode ser encontrado em: [Noções sobre o Critério de sucesso 1.1.1 (&quot;Conteúdo não textual&quot;)](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content).
 
-### Como cumprir o WCAG 2.0 {#how-to-meet-wcag}
+### Como cumprir o WCAG 2.1 {#how-to-meet-wcag}
 
-A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir o WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/) . Esta seção fornece uma apresentação alternativa da WCAG, que permite refinar o conteúdo das orientações para os mais relevantes para os interesses ou circunstâncias do próprio leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização especificando tecnologias de conteúdo da Web específicas, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
+A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir o WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) . Esta seção fornece uma apresentação alternativa da WCAG, que permite refinar o conteúdo das orientações para os mais relevantes para os interesses ou circunstâncias do próprio leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização especificando tecnologias de conteúdo da Web específicas, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
 
 Sem filtragem, esse recurso fornece todos os critérios de sucesso agrupados por orientação. Para cada critério de sucesso, é fornecido o seguinte:
 
