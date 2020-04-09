@@ -3,7 +3,7 @@ title: Publicar ativos, pastas e coleções no Brand Portal
 description: Publique ativos, pastas e coleções no Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -221,8 +221,13 @@ Veja a seguir as etapas para cancelar a publicação de uma coleção:
 1. Na caixa de diálogo, clique em **[!UICONTROL Cancelar publicação]**.
 1. Feche a mensagem de confirmação. A coleção é removida da interface do Brand Portal.
 
-Consulte a documentação [do Portal de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) marca para obter mais informações sobre a distribuição de ativos, pastas e coleções para os usuários finais.
+Além do acima, você também pode publicar schemas de metadados, predefinições de imagens, aspectos de pesquisa e tags de AEM Assets para o Brand Portal.
 
+* [Publicar predefinições, schemas e aspectos no Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publicar marcações no Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+Consulte a documentação [do](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal para obter mais informações.
 
 
 <!--
