@@ -3,7 +3,7 @@ title: Configurar o serviço em nuvem do AEM Assets com o Brand Portal
 description: Configure o serviço em nuvem do AEM Assets com o Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -204,8 +204,6 @@ Execute as seguintes etapas para criar a configuração do serviço em nuvem do 
    Um agente de distribuição contém duas filas:
    * Uma fila de processamento para distribuição de ativos ao Brand Portal.
    * Uma fila de erros para os ativos em que a distribuição falhou.
-   Você pode testar filas individuais ou a configuração geral.
-
    ![](assets/test-bpconfig3.png)
 
 1. Para verificar a conexão entre os ativos AEM e o Portal de marcas, clique em **[!UICONTROL Testar conexão]**.
@@ -218,11 +216,20 @@ Execute as seguintes etapas para criar a configuração do serviço em nuvem do 
    >
    >Evite desativar o agente de distribuição, pois isso pode causar falha na distribuição dos ativos (em execução na fila).
 
-O Brand Portal foi configurado com êxito com a instância da nuvem do AEM Assets. Agora você pode:
+
+Depois que o Brand Portal for configurado com êxito com sua instância de nuvem do AEM Assets, você poderá:
 
 * [Publicar ativos do AEM Assets no Brand Portal](publish-to-brand-portal.md)
 * [Publicar pastas do AEM Assets no Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publicar coleções dos ativos AEM no Portal de marcas](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+
+Além do acima, você também pode publicar schemas de metadados, predefinições de imagens, aspectos de pesquisa e tags de AEM Assets para o Brand Portal.
+
+* [Publicar predefinições, schemas e aspectos no Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publicar marcações no Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+Consulte a documentação [do](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal para obter mais informações.
 
 
 ## Logs de distribuição {#distribution-logs}
@@ -233,7 +240,7 @@ Por exemplo, publicamos um ativo do AEM Assets para o Brand Portal para verifica
 
 1. Siga as etapas (Etapa 1 a 4) conforme mostrado em **[!UICONTROL Testar conexão]** e navegue até a página do agente de distribuição.
 
-1. Selecione a fila de distribuição **[!UICONTROL queue-bpdistributionagent0]** e clique em **[!UICONTROL Logs]** para visualização nos logs de distribuição.
+1. Clique em **[!UICONTROL Logs]** para visualização nos registros de distribuição. Você pode ver o processamento e os registros de erros aqui.
 
    ![](assets/test-bpconfig5.png)
 
@@ -254,12 +261,9 @@ Ao publicar o ativo, os seguintes registros de solicitação e resposta são ger
 
 No exemplo acima, uma solicitação e uma resposta adicionais são acionadas. O sistema não pôde localizar a pasta pai (ou seja, Adicionar caminho) no Brand Portal porque o ativo foi publicado pela primeira vez, portanto, aciona uma solicitação adicional para criar uma pasta pai com o mesmo nome no Brand Portal onde o ativo é publicado.
 
-Se a pasta pai com o mesmo nome existir (também conhecida como Adicionar caminho) no Brand Portal, solicitação adicional não é acionada.
-
 >[!NOTE]
+>>Solicitação adicional é gerada caso a pasta pai não exista no Brand Portal (no exemplo acima) ou a pasta pai tenha sido modificada nos ativos AEM.
 >
->Para visualização dos registros de erro, selecione a fila de distribuição **[!UICONTROL error-queue-bpdistributionagent0]** e clique em **[!UICONTROL Logs]**.
-
 
 ## Informações adicionais {#additional-information}
 
@@ -274,6 +278,7 @@ Vá para `/system/console/slingmetrics` para obter estatísticas relacionadas ao
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
+
 
 
 <!--
