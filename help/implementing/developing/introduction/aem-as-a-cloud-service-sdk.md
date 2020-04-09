@@ -2,7 +2,7 @@
 title: SDK do AEM as a Cloud Service
 description: A completar
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
 
 ---
 
@@ -56,7 +56,7 @@ Além disso, alguns clientes que foram implantados anteriormente com o AEM 6.5 o
 </repository>
 ```
 
-## Atualização de um projeto local com uma nova versão do SDK {#refreshing-a-local-prokect-with-a-new-skd-version}
+## Atualização de um projeto local com uma nova versão do SDK {#refreshing-a-local-project-with-a-new-skd-version}
 
 Quando é recomendado atualizar o projeto local com um novo SDK?
 
