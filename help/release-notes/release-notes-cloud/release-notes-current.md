@@ -2,7 +2,7 @@
 title: Notas de versão do Adobe Experience Manager como Cloud Service para 2020.4.0
 description: Notas de versão do Experience Manager para 2020.4.0
 translation-type: tm+mt
-source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
+source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
 
 ---
 
@@ -32,9 +32,10 @@ Saiba mais sobre novos recursos, melhorias e correções de erros para [!DNL Exp
    * A caixa de diálogo de reprocessamento de ativos permite selecionar um perfil de processamento específico e decidir reprocessar em subpastas.
    * [!DNL Dynamic Media]: Adicionada a configuração de publicação seletiva para que os ativos sejam publicados automaticamente apenas para pré-visualização segura. Além disso, os ativos podem ser publicados explicitamente no Experience Manager sem publicação no DMS7 para delivery no domínio público.
 
-* Os seguintes problemas são abordados:
-   * Correções para problemas de processamento de ativos.
-   * Correções em ativos [!DNL Dynamic Media] de configuração e publicação para o serviço [!DNL Dynamic Media] delivery.
+### Correções de erros {#assets-bug-fixes}
+
+* Correções para problemas de processamento de ativos.
+* Correções em ativos [!DNL Dynamic Media] de configuração e publicação para o serviço [!DNL Dynamic Media] delivery.
 
 >[!MORELIKETHIS]
 >
