@@ -2,7 +2,7 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
 
 ---
 
@@ -23,25 +23,22 @@ Nos ambientes da Cloud, os desenvolvedores podem baixar os logs por meio do Clou
 >
 >Fazer logon no AEM como um serviço em nuvem é baseado nos princípios do Sling. Consulte [Sling Logging](https://sling.apache.org/site/logging.html) para obter mais informações.
 
-## Registro global {#global-logging}
+<!-- ## Global Logging {#global-logging}
 
-[A Configuração](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) de registro do Apache Sling é usada para configurar o agente de registro raiz. Isso define as configurações globais para fazer logon no AEM como um serviço em nuvem:
+[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
 
-* nível de registro
-* a localização do ficheiro de registro central
-* o número de versões a conservar
-* rotação de versões; tamanho máximo ou intervalo de tempo
-* o formato a ser usado ao gravar mensagens de registro
+* the logging level
+* the location of the central log file
+* the number of versions to be kept
+* version rotation; either maximum size or a time interval
+* the format to be used when writing the log messages
+-->
 
 ## Registradores e Escritores para Serviços Individuais {#loggers-and-writers-for-individual-services}
 
 Além das configurações globais de registro, o AEM como um serviço em nuvem permite que você defina configurações específicas para um serviço individual:
 
 * o nível de registro específico
-* o local do arquivo de log individual
-* o número de versões a conservar
-* rotação de versões; tamanho máximo ou intervalo de tempo
-* o formato a ser usado ao gravar mensagens de registro
 * o agente de log (o serviço OSGi que fornece as mensagens de log)
 
 Isso permite que você canal mensagens de log de um único serviço em um arquivo separado. Isto pode ser particularmente útil durante o desenvolvimento ou testes; por exemplo, quando você precisa de um nível de log aumentado para um serviço específico.
@@ -158,14 +155,13 @@ Você pode definir seu próprio par de Registrador/Escritor:
 
    1. Especifique o arquivo de log.
    1. Especifique o registrador.
-   1. Configure os outros parâmetros conforme necessário.
 
-1. Crie uma nova instância da Configuração de fábrica Configuração do [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
+<!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
-   1. Especificar o arquivo de log - deve corresponder ao especificado para o Logger.
-   1. Configure os outros parâmetros conforme necessário.
+    1. Specify the Log File - this must match that specified for the Logger.
+    1. Configure the other parameters as required. -->
 
-### Criar um arquivo de log personalizado {#create-a-custom-log-file}
+### Configurar o registro {#configure-logging}
 
 >[!NOTE]
 >
@@ -187,130 +183,172 @@ Em determinadas circunstâncias, você pode querer criar um arquivo de log perso
    >
    >Embora não seja um requisito técnico, é aconselhável tornar `<*identifier*>` único.
 
-1. Defina as seguintes propriedades neste nó:
+<!-- 1. Set the following properties on this node:
 
-   * Nome: `org.apache.sling.commons.log.file`
+    * Name: `org.apache.sling.commons.log.file`
 
-      Tipo: String
+      Type: String
 
-      Valor: especificar o arquivo de log; por exemplo, `logs/myLogFile.log`
+      Value: specify the Log File; for example, `logs/myLogFile.log`
 
-   * Nome: `org.apache.sling.commons.log.names`
+    * Name: `org.apache.sling.commons.log.names`
 
-      Tipo: String[] (String + Multi)
+      Type: String[] (String + Multi)
 
-      Valor: especificar os serviços OSGi para os quais o agente de registro deve registrar as mensagens; por exemplo, todas as seguintes opções:
+      Value: specify the OSGi services for which the Logger is to log messages; for example, all of the following:
 
-      * `org.apache.sling`
-      * `org.apache.felix`
-      * `com.day`
-   * Nome: `org.apache.sling.commons.log.level`
+        * `org.apache.sling`
+        * `org.apache.felix`
+        * `com.day`
 
-      Tipo: String
+    * Name: `org.apache.sling.commons.log.level`
 
-      Valor: especificar o nível de log necessário ( `debug`, `info`, `warn` ou `error`); por exemplo `debug`
+      Type: String
 
-   * Configure os outros parâmetros conforme necessário:
+      Value: specify the log level required ( `debug`, `info`, `warn` or `error`); for example `debug`
 
-      * Nome: `org.apache.sling.commons.log.pattern`
+    * Configure the other parameters as required:
 
-         Tipo: `String`
+        * Name: `org.apache.sling.commons.log.pattern`
 
-         Valor: especificar o padrão da mensagem de registro, conforme necessário; por exemplo,
+          Type: `String`
 
-         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+          Value: specify the pattern of the log message as required; for example,
+
+          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+
    >[!NOTE]
    >
-   >`org.apache.sling.commons.log.pattern` apoia até seis argumentos.
+   >`org.apache.sling.commons.log.pattern` supports up to six arguments.
 
-   >{0} O carimbo de data e hora do tipo `java.util.Date`
    >
-   >{1} o marcador de log{2} o nome do thread atual{3} o nome do registrador{4} o nível de log{5} a mensagem de log
+   >
+   >{0} The timestamp of type `java.util.Date`
+   >{1} the log marker
+   >{2} the name of the current thread
+   >{3} the name of the logger
+   >{4} the log level
+   >{5} the log message
 
-   >Se a chamada de log incluir um rastreamento de pilha, ele será anexado à mensagem. `Throwable`
-
-   >[!CAUTION]
-   org.apache.sling.commons.log.names deve ter um valor.
-
-   >[!NOTE]
-   Os caminhos do gravador de log são relativos ao `crx-quickstart` local.
-   Portanto, um arquivo de log especificado como:
-   `logs/thelog.log`
-
-   >escreve para:
-   `` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
-   E um arquivo de log especificado como:
-   `../logs/thelog.log`
-
-   >grava em um diretório:
-   ` <*cq-installation-dir*>/logs/`
-&quot;(ou seja, ao lado de ` `&lt;*cq-installation-dir*>/`crx-quickstart/`)
-
-1. Essa etapa só é necessária quando um novo Gravador é necessário (isto é, com uma configuração diferente do Gravador padrão).
+   >
+   >
+   >If the log call includes a `Throwable` the stacktrace is appended to the message.
 
    >[!CAUTION]
-   Uma nova Configuração de Gravador de Log é necessária somente quando o padrão existente não é adequado.
+   >
+   >org.apache.sling.commons.log.names must have a value.
 
-   >Se nenhum Escritor explícito estiver configurado, o sistema gerará automaticamente um Escritor implícito com base no padrão.
-
-   Em `/apps/<*project-name*>/config`, crie um nó para a nova `Apache Sling Logging Writer` Configuração:
-
-   * Nome: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (como este é um Escritor)
-
-      Assim como no Logger, `<*identifier*>` é substituído pelo texto livre que você (deve) digitar para identificar a instância (não é possível omitir essas informações). Por exemplo, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
-
-   * Tipo: `sling:OsgiConfig`
    >[!NOTE]
-   Embora não seja um requisito técnico, é aconselhável tornar `<*identifier*>` único.
+   >
+   >Log writer paths are relative to the `crx-quickstart` location.
+   >
+   >
+   >Therefore, a log file specified as:
+   >
+   >
+   >`logs/thelog.log`
 
-   Defina as seguintes propriedades neste nó:
+   >
+   >
+   >writes to:
+   >
+   >
+   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
+   >
+   >
+   >And a log file specified as:
+   >
+   >
+   >`../logs/thelog.log`
 
-   * Nome: `org.apache.sling.commons.log.file`
+   >
+   >
+   >writes to a directory:
+   >
+   >
+   >` <*cq-installation-dir*>/logs/`
+   >``(i.e. next to ` `<*cq-installation-dir*>/`crx-quickstart/`)
+ -->
 
-      Tipo: `String`
+<!-- open question: see if we need to leave the above warning note in place, but adjust it so that it doesn't mention filenames -->
 
-      Valor: especificar o arquivo de log para que ele corresponda ao arquivo especificado no Log;
+<!-- 1. This step is only necessary when a new Writer is required (i.e. with a configuration that is different to the default Writer).
 
-      para este exemplo, `../logs/myLogFile.log`.
+   >[!CAUTION]
+   >
+   >A new Logging Writer Configuration is only required when the existing default is not suitable.
 
-   * Configure os outros parâmetros conforme necessário:
+   >
+   >
+   >If no explicit Writer is configured the system will automatically generate an implicit Writer based on the default.
 
-      * Nome: `org.apache.sling.commons.log.file.number`
+   Under `/apps/<*project-name*>/config`, create a node for the new `Apache Sling Logging Writer` Configuration:
 
-         Tipo: `Long`
+    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)
 
-         Valor: especifique o número de arquivos de log que deseja manter; por exemplo, `5`
+      As with the Logger, `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
-      * Nome: `org.apache.sling.commons.log.file.size`
+    * Type: `sling:OsgiConfig`
 
-         Tipo: `String`
-
-         Valor: especificar, se for caso disso, o controlo da rotação dos ficheiros por dimensão/data; por exemplo, `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` controla a rotação do arquivo de log ao configurar:
-   * um tamanho máximo de arquivo
-   * uma programação de data/hora
-   para indicar quando um novo arquivo será criado (e o arquivo existente será renomeado de acordo com o padrão de nome).
-   * Um limite de tamanho pode ser especificado com um número. Se nenhum indicador de tamanho for fornecido, isso será considerado como o número de bytes, ou você poderá adicionar um dos indicadores de tamanho - `KB`, `MB`ou `GB` (caso seja ignorado).
-   * Uma programação de hora/data pode ser especificada como um `java.util.SimpleDateFormat` padrão. Isso define o período após o qual o arquivo será girado; também o sufixo anexado ao arquivo girado (para identificação).
-   O padrão é &#39;.&#39;aaaa-MM-dd (para rotação diária do log).
-   Assim, por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando a primeira mensagem de registro depois disso ocorrer para ser precisa), ../logs/error.log será renomeado para ../logs/error.log.2010-01-20. O registro para o dia 21 de janeiro será enviado para (um novo e vazio) ../logs/error.log até que seja lançado na próxima mudança de dia.
-       | `&#39;.&#39;aaaa-MM&quot;|Rotação no início de cada mês|
-    |—|—|
-    | &#39;&#39;.&#39;aaaa-ww`|Rotação no primeiro dia de cada semana (depende da localidade). |
-       | `&#39;.&#39;aaaa-MM-dd`|Rotação à meia-noite todos os dias. |
-       | `&#39;.&#39;aaaa-MM-dd-a&quot;|Rotação à meia-noite e ao meio-dia de cada dia. |
-       | `&#39;.&#39;aaaa-MM-dd-HH`|Rotação no topo de cada hora. |
-       | `&#39;.&#39;aaaa-MM-dd-HH-mm&quot;|Rotação no início de cada minuto. |
-     
-     Nota: Ao especificar uma data/hora:
-       1. O texto literal &quot;escape&quot; deve estar dentro de um par de aspas simples ( &quot;&#39;);
-       isso serve para evitar que determinados caracteres sejam interpretados como letras padrão.
-       1. Use somente caracteres permitidos para um nome de arquivo válido em qualquer lugar na opção.
-   
+   >
+   >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
 
-1. Leia seu novo arquivo de log com a ferramenta escolhida.
+   Set the following properties on this node:
 
-   O arquivo de log criado por este exemplo será `../crx-quickstart/logs/myLogFile.log`.
+    * Name: `org.apache.sling.commons.log.file`
+
+      Type: `String`
+
+      Value: specify the Log File so that it matches the file specified in the Logger;
+
+      for this example, `../logs/myLogFile.log`.
+
+    * Configure the other parameters as required:
+
+        * Name: `org.apache.sling.commons.log.file.number`
+
+          Type: `Long`
+
+          Value: specify the number of log files you want kept; for example, `5`
+
+        * Name: `org.apache.sling.commons.log.file.size`
+
+          Type: `String`
+
+          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
+
+   >[!NOTE]
+   >
+   >`org.apache.sling.commons.log.file.size` controls the rotation of the log file by setting either:
+   >
+   >* a maximum file size
+   >* a time/date schedule
+   >
+   >to indicate when a new file will be created (and the existing file renamed according to the name pattern).
+   >
+   >* A size limit can be specified with a number. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   >* A time/date schedule can be specified as a `java.util.SimpleDateFormat` pattern. This defines the time period after which the file will be rotated; also the suffix appended to the rotated file (for identification).
+   >
+   >The default is '.'yyyy-MM-dd (for daily log rotation).
+   >
+   >So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
+   >
+   >      | `'.'yyyy-MM` |Rotation at the beginning of each month |
+   >      |---|---|
+   >      | `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
+   >      | `'.'yyyy-MM-dd` |Rotation at midnight each day. |
+   >      | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
+   >      | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
+   >      | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
+   >
+   >      Note: When specifying a time/date:
+   >      1. You should "escape" literal text within a pair of single quotes (' ');
+   >      this is to avoid certain characters being interpreted as pattern letters.
+   >      1. Only use characters allowed for a valid file name anywhere in the option.
+
+1. Read your new log file with your chosen tool.
+
+   The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
 O Console do Felix também fornece informações sobre o suporte ao Sling Log em `../system/console/slinglog`; por exemplo `https://localhost:4502/system/console/slinglog`.draf
