@@ -2,7 +2,7 @@
 title: Notas de versão do Adobe Experience Manager como Cloud Service para 2020.4.0
 description: Notas de versão do Experience Manager para 2020.4.0
 translation-type: tm+mt
-source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
+source-git-commit: 98de3a6674aaef5228e96e0bf72e67de861f858e
 
 ---
 
@@ -19,8 +19,8 @@ A data de lançamento para [!DNL Experience Manager] o Cloud Service 2020.4.0 é
 
 Saiba mais sobre novos recursos, melhorias e correções de erros para [!DNL Experience Manager Assets] e [!DNL Dynamic Media] na versão atual.
 
-* [O Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) oferece suporte aos casos de uso de distribuição de ativos para os Ativos do Experience Manager. [!DNL Brand Portal]O auxilia as organizações a atender às suas necessidades de marketing, distribuindo com segurança os ativos de marca e produto aprovados a agências externas, parceiros, equipes internas e revendedores para download.
-   * [!DNL Brand Portal] a configuração é concluída pelo [!DNL Adobe I/O] console.
+* [O Brand Portal](https://docs.adobe.com/content/help/pt/experience-manager-brand-portal/using/home.html) oferece suporte aos casos de uso de distribuição de ativos para os Ativos do Experience Manager. [!DNL Brand Portal]O auxilia as organizações a atender às suas necessidades de marketing, distribuindo com segurança os ativos de marca e produto aprovados a agências externas, parceiros, equipes internas e revendedores para download.
+   * [!DNL Brand Portal] a configuração é concluída pelo [!DNL Adobe I/O] console. Consulte [Configuração do Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
    * A origem de ativos em ainda não [!DNL Brand Portal] é suportada [!DNL Experience Manager] como um serviço em nuvem.
 
 * [O Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) v2.0 funciona com [!DNL Experience Manager] um serviço em nuvem. [!DNL Adobe Asset Link] simplifica a colaboração entre criativos e profissionais de marketing no processo de criação de conteúdo, conectando-se [!DNL Experience Manager Assets] aos aplicativos de [!DNL Creative Cloud] desktop [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign] por meio do painel no aplicativo [!DNL Asset Link] .
@@ -29,7 +29,13 @@ Saiba mais sobre novos recursos, melhorias e correções de erros para [!DNL Exp
 
 * Os usuários podem configurar workflows [de](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) pós-processamento para start automático na interface de usuário [!UICONTROL Propriedades] da pasta para as hierarquias de pastas específicas.
    * A interface de usuário [!UICONTROL Propriedades] da pasta é simplificada, com a nova guia Processamento [!UICONTROL de] ativos contendo perfil de metadados, perfil de processamento e a nova configuração de fluxo de trabalho de start automático.
-   * A caixa de diálogo de reprocessamento de ativos permite selecionar um perfil de processamento específico e decidir reprocessar em subpastas.
+
+      ![perfis de processamento podem ser facilmente aplicados a pastas e todos os ativos carregados em pastas estão sendo processados usando esses perfis](/help/assets/assets/asset-processing-folder-properties.png)
+
+   * A opção de reprocessamento de ativos permite selecionar um perfil de processamento específico para reprocessar ativos selecionados pelo usuário em subpastas.
+
+      ![Reprocessar ativos selecionados usando um perfil de processamento específico](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+
    * [!DNL Dynamic Media]: Adicionada a configuração de publicação seletiva para que os ativos sejam publicados automaticamente apenas para pré-visualização segura. Além disso, os ativos podem ser publicados explicitamente no Experience Manager sem publicação no DMS7 para delivery no domínio público.
 
 ### Correções de erros {#assets-bug-fixes}
