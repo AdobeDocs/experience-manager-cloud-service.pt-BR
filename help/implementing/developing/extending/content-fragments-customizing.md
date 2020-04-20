@@ -2,7 +2,7 @@
 title: Personalização e extensão de fragmentos de conteúdo
 description: Um fragmento de conteúdo estende um ativo padrão.
 translation-type: tm+mt
-source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -40,7 +40,7 @@ Dependendo do tipo de fragmento, os modelos ou o modelo de Fragmento **** simple
    * As funções para adicionar novas variações, etc., precisam atualizar o fragmento de acordo.
    >[!NOTE]
    >
-   >Para que você exiba/renderize um Fragmento de conteúdo, sua conta deve ter permissões de leitura para o modelo.
+   >Para que você exiba/renderize um Fragmento de conteúdo, sua conta deve ter `read` permissões para o modelo.
 
    >[!CAUTION]
    >
