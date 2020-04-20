@@ -1,8 +1,8 @@
 ---
 sub-product: Implementação do AEM as a Cloud Service
 user-guide-title: Implementação do AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+translation-type: tm+mt
+source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
 
 ---
 
@@ -32,6 +32,8 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [Entender os resultados de teste](/help/implementing/developing/introduction/understand-test-results.md)
 + Configuração e extensão do AEM as a Cloud Service {#configuring-and-extending}
    + [Extensão de fragmentos de experiência](developing/extending/experience-fragments.md)
+   + [Personalização e extensão de fragmentos de conteúdo](developing/extending/content-fragments-customizing.md)
+   + [Fragmentos de conteúdo Configurando componentes para renderização](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Configuração de formulários de pesquisa](developing/extending/search-forms.md)
 + Implantação do AEM as a Cloud Service {#deploying}
    + [Implantação do AEM as a Cloud Service](deploying/overview.md)
