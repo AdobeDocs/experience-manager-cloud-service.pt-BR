@@ -2,7 +2,7 @@
 title: Fragmentos de conteúdo Configurando componentes para renderização
 description: Fragmentos de conteúdo Configurando componentes para renderização
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -18,7 +18,7 @@ Essas informações são necessárias quando:
 * É necessário implementar seu próprio componente baseado em Fragmento de conteúdo,
 * E precisa usar os serviços avançados.
 
-No entanto, é recomendável usar os Componentes principais.
+É recomendável usar os Componentes principais.
 
 >[!CAUTION]
 >
