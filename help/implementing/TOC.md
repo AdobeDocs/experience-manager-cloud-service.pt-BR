@@ -1,7 +1,7 @@
 ---
-sub-product: Implementação do AEM como um serviço em nuvem
-user-guide-title: Implementação do AEM como um serviço em nuvem
-translation-type: tm+mt
+sub-product: Implementação do AEM as a Cloud Service
+user-guide-title: Implementação do AEM as a Cloud Service
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -28,7 +28,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [Pesquisa e indexação de conteúdo](/help/operations/indexing.md)
    + [Diretrizes de desenvolvimento do AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [API do AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [API do AEM as a Cloud Service](https://docs.adobe.com/content/help/pt/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Entender os resultados de teste](/help/implementing/developing/introduction/understand-test-results.md)
 + Configuração e extensão do AEM as a Cloud Service {#configuring-and-extending}
    + [Extensão de fragmentos de experiência](developing/extending/experience-fragments.md)
@@ -37,4 +37,4 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [Implantação do AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher na nuvem {#dispatcher}
    + [Dispatcher na nuvem](dispatcher/overview.md)
-   + [Delivery de conteúdo no AEM como um serviço em nuvem](dispatcher/content-delivery.md)
+   + [Entrega de conteúdo no AEM as a Cloud Service](dispatcher/content-delivery.md)
