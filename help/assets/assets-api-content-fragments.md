@@ -2,7 +2,7 @@
 title: Suporte a fragmentos de conteúdo do Adobe Experience Manager como serviço em nuvem na API HTTP do Assets
 description: Saiba mais sobre o Adobe Experience Manager como um suporte a fragmentos de conteúdo do serviço em nuvem na API HTTP do Assets.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -32,6 +32,7 @@ Embora os componentes [principais do](https://docs.adobe.com/content/help/br/exp
 É quando a API REST de ativos pode ser usada. Ela permite que os desenvolvedores acessem ativos (por exemplo, imagens e fragmentos de conteúdo) diretamente, sem a necessidade de primeiro incorporá-los em uma página e entregar seu conteúdo em formato JSON serializado.
 
 >[!NOTE]
+>
 >Não é possível personalizar a saída JSON da API REST de ativos.
 
 A API REST de ativos também permite que os desenvolvedores modifiquem o conteúdo - criando novos ativos, atualizando ou excluindo ativos, fragmentos de conteúdo e pastas existentes.
@@ -296,7 +297,7 @@ O uso é feito via:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Limitações       {#limitations}
+## Limitações        {#limitations}
 
 Há algumas limitações:
 
@@ -386,7 +387,7 @@ Consulte aqui para obter referências detalhadas da API:
 
    * [Recursos disponíveis](/help/assets/mac-api-assets.md#available-features)
 
-## Additional Resources {#additional-resources}
+## Recursos adicionais {#additional-resources}
 
 Para obter mais informações, consulte:
 
