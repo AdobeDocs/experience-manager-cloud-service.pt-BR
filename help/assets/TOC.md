@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -40,13 +40,13 @@ source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
    + [Digital Rights Management para ativos](drm.md)
 + Configurar, administrar e estender ativos {#admin}
    + [APIs e material de referência](developer-reference-material-apis.md)
-   + [Suporte a fragmentos de conteúdo na API HTTP do AEM Assets](assets-api-content-fragments.md)
    + [Esquema de metadados de pastas](folder-metadata-schema.md)
    + [Processamento de perfis](/help/assets/dynamic-media/processing-profiles.md)
    + [Ativos multilíngues e tradução de ativos](translate-assets.md)
    + [Pesquisar aspectos](search-facets.md)
    + [Estender editor de ativos](extend-asset-editor.md)
    + [API HTTP de ativos](mac-api-assets.md)
+   + [Suporte a fragmentos de conteúdo na API HTTP do AEM Assets](assets-api-content-fragments.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [Relatórios de ativos](asset-reports.md)
    + [Metadados em cascata](cascading-metadata.md)
