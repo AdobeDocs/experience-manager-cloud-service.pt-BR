@@ -3,7 +3,7 @@ title: API HTTP de ativos
 description: Saiba mais sobre a implementação, o modelo de dados e os recursos da API HTTP do Assets. Use a API HTTP Assets para executar várias tarefas sobre ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## Visão geral {#overview}
 
-A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em Ativos, incluindo binários, metadados, execuções e comentários, juntamente com conteúdo estruturado usando Fragmentos de conteúdo AEM. Ele é exposto em `/api/assets` e é implementado como REST API. Inclui [suporte para Fragmentos](content-fragments/content-fragments.md)de conteúdo.
+A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em Ativos, incluindo binários, metadados, execuções e comentários, juntamente com conteúdo estruturado usando Fragmentos de conteúdo AEM. Ele é exposto em `/api/assets` e é implementado como REST API. Inclui [suporte para Fragmentos](assets-api-content-fragments.md)de conteúdo.
 
 Para acessar a API:
 
@@ -31,13 +31,13 @@ Depois do tempo de [!UICONTROL desligado], um ativo e suas representações não
 
 Um fragmento [de](content-fragments/content-fragments.md) conteúdo é um tipo especial de ativo. Pode ser usado para acessar dados estruturados, como textos, números, datas, entre outros. Como há várias diferenças nos `standard` ativos (como imagens ou documentos), algumas regras adicionais se aplicam ao manuseio de fragmentos de conteúdo.
 
-Para obter mais informações, consulte Suporte a fragmentos [de conteúdo na API](content-fragments/content-fragments.md)HTTP dos ativos AEM.
+Para obter mais informações, consulte Suporte a fragmentos [de conteúdo na API](assets-api-content-fragments.md)HTTP dos ativos AEM.
 
 ## Modelo de dados {#data-model}
 
 A API HTTP Assets expõe dois elementos principais, pastas e ativos (para ativos padrão).
 
-Além disso, expõe elementos mais detalhados para os modelos de dados personalizados que descrevem o conteúdo estruturado em Fragmentos de conteúdo. Consulte Modelos [de dados de fragmento de](content-fragments/content-fragments.md) conteúdo para obter mais informações.
+Além disso, expõe elementos mais detalhados para os modelos de dados personalizados que descrevem o conteúdo estruturado em Fragmentos de conteúdo. Consulte Modelos [de dados de fragmento de](assets-api-content-fragments.md#content-models-and-content-fragments) conteúdo para obter mais informações.
 
 ### Pastas {#folders}
 
@@ -66,7 +66,7 @@ No AEM, um ativo contém os seguintes elementos:
 * Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As execuções adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas do PDF ou do InDesign.
 * Comentários opcionais
 
-Para obter informações sobre elementos em Fragmentos de conteúdo, consulte Suporte a fragmentos de [conteúdo na API](content-fragments/content-fragments.md)HTTP dos ativos AEM.
+Para obter informações sobre elementos em Fragmentos de conteúdo, consulte Suporte a fragmentos de [conteúdo na API](assets-api-content-fragments.md)HTTP dos ativos AEM.
 
 No AEM, uma pasta tem os seguintes componentes:
 
