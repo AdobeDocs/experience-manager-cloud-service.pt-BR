@@ -1,13 +1,13 @@
 ---
-title: Fragmentos de conteúdo - Excluir considerações
-description: Fragmentos de conteúdo - Excluir considerações
+title: Fragmentos de conteúdo - excluir considerações
+description: Fragmentos de conteúdo - excluir considerações
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# Fragmentos de conteúdo - Excluir considerações{#content-fragments-delete-considerations}
+# Fragmentos de conteúdo - excluir considerações{#content-fragments-delete-considerations}
 
 ## Permissões - Excluir ou não excluir {#permissions-delete-or-not-delete}
 
@@ -18,18 +18,18 @@ Em relação às permissões de exclusão, os Fragmentos de conteúdo devem ser 
 1. **O Fragmento do conteúdo como uma única entidade.**
 
    * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo **e excluir um fragmento** inteiro.
-   * **Permissões**: A permissão Excluir pode ser atribuída por meio do Gerenciamento de usuários e/ou grupos.
+   * **Permissões**: A permissão Excluir pode ser atribuída por meio do Gerenciamento de usuários e/ou grupos. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **As várias subentidades que compõem um fragmento de conteúdo; por exemplo, variações, subnós.**
 
    A operação básica do editor de fragmentos de conteúdo requer que esses subelementos transitórios possam ser excluídos. Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
 
    * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo - **sem ter permissão para excluir um fragmento** inteiro.
-   * **Permissões**: Consulte Permissões exigidas apenas para a funcionalidade do editor. <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
+   * **Permissões**: Consulte [Permissões necessárias somente](#permissions-required-for-editor-functionality-only)para a funcionalidade do editor.
 
 >[!NOTE]
 >
->Quando um usuário não tem permissões de exclusão, o editor de Fragmento de conteúdo opera no modo somente ** leitura.
+>When a user does not have any Delete permissions, the Content Fragment editor operates in *read-only* mode. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Em relação às permissões de exclusão, os Fragmentos de conteúdo devem ser 
 
 ## Permissões necessárias somente para a funcionalidade do editor {#permissions-required-for-editor-functionality-only}
 
-Para usuários que precisam editar/atualizar um fragmento de conteúdo, **sem permitir que excluam um fragmento** inteiro, permissões específicas devem ser atribuídas, já que a operação básica do editor de fragmentos de conteúdo requer que subelementos transitórios possam ser excluídos.
+Para usuários que precisam editar/atualizar um fragmento de conteúdo, **sem permitir que excluam um fragmento inteiro**, permissões específicas devem ser atribuídas, já que a operação básica do editor de fragmentos de conteúdo requer que elementos transitórios secundários possam ser excluídos.
 
 Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
 
