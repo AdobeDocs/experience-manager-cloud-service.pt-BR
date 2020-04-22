@@ -2,7 +2,7 @@
 title: Trabalho com fragmentos de conteúdo
 description: Saiba como os Fragmentos de conteúdo permitem projetar, criar, preparar e usar conteúdo independente de página.
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
 
 ---
 
@@ -93,11 +93,19 @@ Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de con
 
 Os fragmentos de conteúdo podem ser:
 
-* Fragmentos simplesEles não têm estrutura predefinida. Elas contêm apenas texto e imagens.
-Eles são baseados no modelo de Fragmento **simples** .
+* Fragmentos simples
 
-* Fragmentos que contêm conteúdo estruturadoBaseiam-se em um Modelo [de fragmento de](/help/assets/content-fragments/content-fragments-models.md)conteúdo, que predefine uma estrutura para o fragmento resultante.
-Eles também podem ser usados para realizar o Content Services usando o Exportador JSON.
+   * Eles não têm estrutura predefinida.
+
+   * Elas contêm apenas texto e imagens.
+
+   * Eles são baseados no modelo de Fragmento **simples** .
+
+* Fragmentos que contêm conteúdo estruturado
+
+   * Eles são baseados em um Modelo [de fragmento de](/help/assets/content-fragments/content-fragments-models.md)conteúdo, que predefine uma estrutura para o fragmento resultante.
+
+   * Eles também podem ser usados para realizar o Content Services usando o Exportador JSON.
 
 ## Tipo de conteúdo {#content-type}
 
