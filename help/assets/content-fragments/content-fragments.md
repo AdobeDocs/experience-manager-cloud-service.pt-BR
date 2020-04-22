@@ -2,7 +2,7 @@
 title: Trabalho com fragmentos de conteúdo
 description: Saiba como os Fragmentos de conteúdo permitem projetar, criar, preparar e usar conteúdo independente de página.
 translation-type: tm+mt
-source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -94,7 +94,7 @@ Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de con
 Os fragmentos de conteúdo podem ser:
 
 * Fragmentos simplesEles não têm estrutura predefinida. Elas contêm apenas texto e imagens.
-Eles são baseados no modelo de Fragmento simples.
+Eles são baseados no modelo de Fragmento **simples** .
 
 * Fragmentos que contêm conteúdo estruturadoBaseiam-se em um Modelo [de fragmento de](/help/assets/content-fragments/content-fragments-models.md)conteúdo, que predefine uma estrutura para o fragmento resultante.
 Eles também podem ser usados para realizar o Content Services usando o Exportador JSON.
@@ -161,7 +161,7 @@ Os ativos do fragmento de conteúdo são compostos pelas seguintes partes (diret
    * Para fragmentos simples:
 
       * O conteúdo é mantido em um (ou mais) campo(s) de texto de várias linhas ou elemento(s).
-      * Os elementos são definidos no modelo de fragmento (não pode ser definido ao criar o fragmento).
+      * Os elementos são definidos no modelo de Fragmento **simples** .
 
 * **Parágrafos de fragmento**
 
@@ -197,7 +197,7 @@ Os ativos do fragmento de conteúdo são compostos pelas seguintes partes (diret
    * Os ativos individuais dentro da coleção estão disponíveis para serem usados com o fragmento no editor de página, quando ele é adicionado a uma página. Isso significa que eles são opcionais, dependendo dos requisitos do canal específico.
    * Os ativos estão [associados a fragmentos por meio de coleções](/help/assets/content-fragments/content-fragments-assoc-content.md); as coleções associadas permitem que o autor decida quais ativos usar ao criar a página.
 
-      * As coleções podem ser associadas a fragmentos por meio de modelos, como conteúdo padrão ou por autores durante a criação de fragmentos.
+      * As coleções podem ser associadas a fragmentos como conteúdo padrão ou por autores durante a criação de fragmentos.
       * [Coleções](/help/assets/manage-collections.md) de ativos (DAM) são a base para o conteúdo associado de fragmentos.
    * Opcionalmente, você também pode adicionar o fragmento em si a uma coleção para ajudar no rastreamento.
 
@@ -229,7 +229,7 @@ Os ativos do fragmento de conteúdo são compostos pelas seguintes partes (diret
 
    * Representações de texto de fragmento específicas para fins editoriais; pode estar relacionado com o canal, mas não é obrigatório, pode também ser feito para modificações locais ad hoc.
    * São criados como cópias do **Master**, mas podem ser editados conforme necessário; normalmente há sobreposição de conteúdo entre as próprias variações.
-   * Pode ser definido durante a criação de fragmentos ou predefinido em modelos de fragmentos.
+   * Pode ser definido durante a criação do fragmento.
    * Armazenado no fragmento, para ajudar a evitar a dispersão de cópias de conteúdo.
    * As variações podem ser [sincronizadas](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) com o Master se o conteúdo mestre tiver sido atualizado.
    * Pode ser [resumido](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) para truncar rapidamente o texto em um comprimento predefinido.
@@ -262,10 +262,8 @@ Para criar, editar e usar fragmentos de conteúdo, você também precisa:
 
 * **Modelo de fragmento**
 
-   * Necessário para [criar um fragmento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)simples.
-   * Geralmente, é desenvolvido durante a implementação do projeto; não pode ser projetado durante a criação.
+   * O modelo de Fragmento **** simples é necessário para [criar um fragmento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)simples.
    * Define as propriedades básicas de um fragmento simples (título, número de elementos de texto, definições de tags).
-   * As definições do modelo exigem um título e um elemento de texto; tudo o resto é opcional. O modelo define um escopo mínimo do fragmento e do conteúdo padrão, se aplicável. Posteriormente, os autores podem estender um fragmento além do que é definido no modelo.
 
 * **Componente do fragmento do conteúdo**
 
