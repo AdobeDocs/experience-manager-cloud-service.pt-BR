@@ -2,7 +2,7 @@
 title: Gerenciamento dos fragmentos de conteúdo
 description: Os Fragmentos de conteúdo são armazenados como Ativos, portanto, são gerenciados principalmente no console Ativos.
 translation-type: tm+mt
-source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -22,10 +22,6 @@ Os Fragmentos de conteúdo são armazenados como **Ativos**, portanto, são gere
 
 [Os modelos](/help/assets/content-fragments/content-fragments-models.md) de fragmento de conteúdo podem ser ativados e criados antes da criação de fragmentos de conteúdo com conteúdo estruturado.
 
->[!NOTE]
->
->Consulte [Desenvolvimento de fragmentos](/help/implementing/developing/extending/content-fragments-customizing.md) de conteúdo para obter mais informações sobre modelos; usado para fragmentos de conteúdo simples.
-
 ### Criação de um fragmento de conteúdo {#creating-a-content-fragment}
 
 O método de criação de um fragmento de conteúdo é (basicamente) o mesmo para fragmentos simples e estruturados:
@@ -36,10 +32,11 @@ O método de criação de um fragmento de conteúdo é (basicamente) o mesmo par
 
    * Isso pode ser:
 
-      * Template - for example **Simple Fragment**
+      * o modelo de Fragmento **** simples
 
       * [Modelo](/help/assets/content-fragments/content-fragments-models.md) - usado para criar um fragmento que requer conteúdo estruturado; por exemplo, o modelo **Airports**
-   * Todos os modelos e modelos disponíveis são exibidos.
+
+         * Todos os modelos disponíveis são exibidos.
    Após a seleção, use **Próximo** para continuar.
 
    ![base do fragmento](assets/cfm-managing-01.png)
