@@ -75,4 +75,4 @@ O AEM atinge esses objetivos adotando as principais características dos serviç
 * A [Arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager as a Cloud Service
 * [Alterações importantes no AEM Sites no AEM as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Introdução ao Assets as a Cloud Service](/help/assets/overview.md)
-* [Tutoriais do Adobe Experience Manager as a Cloud Service](Https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutoriais do Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
