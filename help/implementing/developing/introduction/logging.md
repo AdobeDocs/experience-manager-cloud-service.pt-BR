@@ -2,7 +2,7 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
+source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
 
 ---
 
@@ -88,7 +88,7 @@ Os outros pares seguem a configuração padrão:
 
    * Grava `Warning` mensagens para `../logs/error.log` o serviço `org.apache.pdfbox`.
 
-* Não vincula a um Escritor específico, portanto, criará e usará um Escritor implícito com configuração padrão (rotação diária do log).
+* Não vincula a um Escritor específico, portanto, criará e usará um Escritor implícito com a configuração padrão.
 
 **AEM como um registro de solicitação HTTP de serviço em nuvem**
 
@@ -96,7 +96,7 @@ Todas as solicitações de acesso ao AEM WCM e ao repositório são registradas 
 
 Exemplo de saída:
 
-**Registro de solicitação/acesso de resposta do AEM HTTP**
+**AEM como um serviço em nuvem Solicitação HTTP / Registro de acesso de resposta**
 
 Cada solicitação de acesso é registrada aqui junto com a resposta.
 
@@ -183,7 +183,7 @@ Estes elementos estão ligados pelos seguintes parâmetros para os elementos apr
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-## Configuração do nível de log {#setting-the-log-level}
+### Configuração do nível de log {#setting-the-log-level}
 
 Para alterar os níveis de log dos ambientes do Cloud, a configuração de Sling Logging OSGI deve ser modificada, seguida de uma reimplantação completa. Como isso não é instantâneo, tenha cuidado ao ativar registros detalhados em ambientes de produção que recebem muito tráfego. No futuro, é possível que haja mecanismos para mudar mais rapidamente o nível de log.
 
@@ -191,7 +191,7 @@ Para alterar os níveis de log dos ambientes do Cloud, a configuração de Sling
 >
 > Para executar as alterações de configuração listadas abaixo, é necessário criá-las em um ambiente de desenvolvimento local e, em seguida, enviá-las para um AEM como uma instância do Serviço de nuvem. Para obter mais informações sobre como fazer isso, consulte [Implantação no AEM como um serviço](/help/implementing/deploying/overview.md)em nuvem.
 
-### Ativando o nível de log DEBUG {#activating-the-debug-log-level}
+**Ativando o nível de log DEBUG**
 
 >[!WARNING]
 >
