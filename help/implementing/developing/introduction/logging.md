@@ -2,7 +2,7 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
+source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
 
 ---
 
@@ -90,19 +90,19 @@ Os outros pares seguem a configuração padrão:
 
 * Não vincula a um Escritor específico, portanto, criará e usará um Escritor implícito com configuração padrão (rotação diária do log).
 
-### AEM como um registro de solicitação HTTP de serviço em nuvem {#request-logging}
+**AEM como um registro de solicitação HTTP de serviço em nuvem**
 
 Todas as solicitações de acesso ao AEM WCM e ao repositório são registradas aqui.
 
 Exemplo de saída:
 
-### Registro de Solicitação/Acesso de Resposta HTTP AEM {#access-logging}
+**Registro de Solicitação/Acesso de Resposta HTTP AEM**
 
 Cada solicitação de acesso é registrada aqui junto com a resposta.
 
 Exemplo de saída:
 
-### Apache Web Server / Dispatcher Logging {#dispatcher-logging}
+**Apache Web Server / Dispatcher Logging**
 
 Este é um log para uso na depuração de problemas do Dispatcher. Para obter mais informações, consulte [Depuração da configuração](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)do Apache e do Dispatcher.
 
@@ -113,7 +113,7 @@ leftover text from the last breakaway chunk (re dispatcher) -->
 No que diz respeito às práticas bast, é recomendável que você se alinhe com as configurações que existem atualmente no AEM como um arquétipo do Cloud Service Maven. Estes definem diferentes configurações e níveis de log para tipos de ambientes específicos:
 
 * para `local dev` e `dev` ambientes, defina o logger como **DEBUG** para `error.log`
-* para `stage`, defina o registrador como nível **WARN** para `error.log`
+* para `stage`, defina o logotipo como nível **WARN** para `error.log`
 * para `prod`, defina o logger como nível **ERROR** para `error.log`
 
 Encontre exemplos abaixo para cada configuração:
