@@ -1,8 +1,8 @@
 ---
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
 
 ---
 
@@ -255,19 +255,21 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
    * [Modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e a barra de ferramentas
    E, em seguida, o ícone **Copiar** página:
 
-   ![Botão Copiar](/help/sites-cloud/authoring/assets/copy.png)
+   ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
    >[!NOTE]
    >
    >Caso esteja no modo de seleção, este é encerrado automaticamente assim que a página for copiada.
 
 1. Navegue até o local para a nova cópia da página.
-1. Use o ícone de página **Colar:**
+1. O ícone **Colar** está disponível com uma seta suspensa à direita:
 
-   ![Botão Colar](/help/sites-cloud/authoring/assets/paste.png)
+   ![Colar](/help/sites-cloud/authoring/assets/paste.png)
 
-   Uma cópia da página original e suas respectivas subpáginas será criada neste local.
+   Você pode:
 
+   1. Selecione o próprio ícone **Colar** página: Uma cópia da página original e qualquer página secundária serão criadas neste local.
+   1. Selecione a seta suspensa para revelar a opção **Colar sem filhos** . Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
    >[!NOTE]
    >
    >Se você copiar a página para um local onde uma página com o mesmo nome que a original já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` se tornará `beach1`.
@@ -336,7 +338,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
 >[!NOTE]
 >
->Se a página já tiver sido publicada, movê-la automaticamente removerá a publicação. Por padrão, ela será publicadas novamente quando o movimento for concluído, mas isso pode ser alterado ao desmarcar o campo **Republicar** na etapa **Ajustar/Republicar**.
+>Se a página já tiver sido publicada, movê-la automaticamente desfará a publicação. Por padrão, ela será publicadas novamente quando o movimento for concluído, mas isso pode ser alterado ao desmarcar o campo **Republicar** na etapa **Ajustar/Republicar**.
 
 >[!NOTE]
 >
@@ -362,7 +364,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
    >[!NOTE]
    >
-   >Como precaução de segurança, o ícone de página **Excluir** não está disponível como uma ação rápida.
+   >Como uma precaução de segurança, o ícone de **Excluir página** não está disponível como uma ação rápida.
 
 1. Uma caixa de diálogo irá pedir confirmação, use:
 
