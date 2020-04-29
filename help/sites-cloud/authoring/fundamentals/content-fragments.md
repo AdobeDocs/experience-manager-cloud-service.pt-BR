@@ -1,15 +1,15 @@
 ---
 title: Fragmentos de conteúdo
 description: Os Fragmentos de conteúdo do Adobe Experience Manager as a Cloud Service permitem projetar, criar, selecionar e usar conteúdo independente da página
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # Fragmentos de conteúdo {#content-fragments}
 
-Os fragmentos do conteúdo do Adobe Experience Manager (AEM) [são criados e gerenciados como ativos independentes da página](/help/assets/content-fragments/content-fragments.md).
+Os fragmentos de conteúdo no Adobe Experience Manager (AEM) como um serviço em nuvem são [criados e gerenciados como ativos](/help/assets/content-fragments/content-fragments.md)independentes da página.
 
 Eles permitem criar um conteúdo neutro ao canal, juntamente com variações (possivelmente, específicas do canal). Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo.
 
@@ -90,7 +90,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
    >Os elementos disponíveis dependem do modelo usado.
 
 * **Variação**
-   * O **Mestre** padrão sempre estará disponível.
+   * O padrão **Mestre** sempre estará disponível.
    * Uma seleção ficará disponível se as variações forem criadas para o fragmento.
 * **Parágrafos**: especifique o intervalo de parágrafos a serem incluídos:
    * **Todos**
@@ -143,7 +143,7 @@ Para conteúdo intermediário, você pode:
 
 ### Usar conteúdo associado   {#using-associated-content}
 
-Se você tiver [associado seu conteúdo](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento do conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é efetivamente uma origem especial de conteúdo para [conteúdo intermediário](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Se você tiver [associado o conteúdo](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial de conteúdo do [conteúdo intermediário](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
