@@ -1,8 +1,8 @@
 ---
 title: Consoles Ferramentas
 description: Saiba mais sobre os diferentes consoles Ferramentas em todo o AEM.
-translation-type: ht
-source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
+translation-type: tm+mt
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -18,11 +18,13 @@ Esses consoles podem ser acessados no Painel [Ferramentas da Navegação global]
 >Como os cartões na interface do usuário fornecem detalhes sobre a finalidade de cada opção, esta tabela fornece apenas uma referência rápida sobre a localização dos recursos no painel Ferramentas.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>Seção</td>
    <td>Opção</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Geral</td>
    <td> </td>
