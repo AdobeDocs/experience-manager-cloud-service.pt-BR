@@ -2,7 +2,7 @@
 title: Configuração de formulários de pesquisa
 description: Configuração de formulários de pesquisa para o Adobe Experience Manager como um serviço em nuvem.
 translation-type: tm+mt
-source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -93,7 +93,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Análise</td>
-   <td>Recursos de pesquisa/filtro no navegador Sites ao mostrar dados ativados pelo Analytics. Os filtros de pesquisa do Analytics são carregados para corresponder às colunas de análise personalizadas mapeadas.</td>
+   <td>Recursos de pesquisa/filtro no navegador Sites ao mostrar dados ativados pelo Analytics. Os filtros de pesquisa do Analytics são carregados até corresponder às colunas de análise personalizadas mapeadas.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -157,7 +157,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Intervalo de datas</td>
-   <td>Procure recursos criados em um intervalo especificado para uma propriedade de data. No painel Pesquisar, é possível especificar as datas de início e término.</td>
+   <td>Procure recursos criados em um intervalo especificado para uma propriedade de data. No painel Pesquisar, é possível especificar datas de Start e término.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -359,7 +359,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Intervalo</td>
-   <td>Pesquise os recursos dentro de um intervalo especificado. No painel Pesquisar, você pode especificar valores mínimos e máximos para o intervalo.</td>
+   <td>Pesquise os recursos que estão dentro de um intervalo especificado. No painel Pesquisar, você pode especificar valores mínimos e máximos para o intervalo.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -539,7 +539,7 @@ Dependendo do predicado, uma seleção de configurações está disponível para
 
 * **Caminho de opção**
 
-   O usuário pode selecionar o caminho usando o Navegador de caminhos na guia de configuração de predicado. Após selecionar o ícone **+** , a seleção é usada para adicionar à lista de opções válidas (em seguida, o ícone **-** para remover, se necessário).
+   O usuário pode selecionar o caminho usando o Navegador de caminhos na guia de configuração de predicado. Depois de selecionar o ícone **+** , a seleção é usada para adicionar à lista de opções válidas (em seguida, o ícone **-** para remover, se necessário).
 
    As opções são nós de conteúdo criados pelo usuário, com a seguinte estrutura:
 
@@ -547,7 +547,7 @@ Dependendo do predicado, uma seleção de configurações está disponível para
 
 * **Caminho** do nó OpçõesEfetivamente o mesmo que o Caminho **de** opções, somente isso está no campo predicado comum comum, o outro é específico para ativos.
 
-* **Seleção**&#x200B;única Se marcada, as opções são renderizadas como caixas de seleção que permitem apenas uma seleção. Se estiver selecionado incorretamente, uma caixa de seleção pode ser desmarcada.
+* **Seleção**&#x200B;única Se marcada, as opções são renderizadas como caixas de seleção que permitem apenas uma seleção. Se estiver selecionado por engano, uma caixa de seleção pode ser desmarcada.
 
 * **Nome(s) de propriedade de publicação e Live Copy** Os rótulos das caixas de seleção de publicação e live copy para o predicado específico Sites.
 
@@ -598,15 +598,15 @@ Você pode adicionar ou editar campos e definir/atualizar suas configurações:
 
 ### Pré-visualização da Configuração de Pesquisa {#previewing-the-search-configuration}
 
-1. Selecione o ícone Visualizar:
+1. Selecione o ícone de Pré-visualização:
 
-   ![ícone de visualização](assets/csf-preview-icon.png)
+   ![Ícone pré-visualização](assets/csf-preview-icon.png)
 
 1. Isso exibirá os formulários de pesquisa da forma que eles serão exibidos (totalmente expandidos) na coluna Pesquisar do console apropriado.
 
-   ![formulário de visualização](assets/csf-preview-form.png)
+   ![formulário de pré-visualização](assets/csf-preview-form.png)
 
-1. **Feche** a visualização para retornar e concluir a configuração.
+1. **Feche** a pré-visualização para retornar e concluir a configuração.
 
 ### Excluindo um campo de previsão {#deleting-a-predicate-field}
 
@@ -637,7 +637,7 @@ A exclusão de uma configuração personalizada é feita do console:
 
 ### Adicionando Predicados de Opções {#adding-options-predicates}
 
-Os predicados de opção (Opções, Propriedade de opções) permitem configurar um item a ser pesquisado. Normalmente, são usados para procurar algo diretamente abaixo da página; por exemplo, uma propriedade no nó da página.
+Os predicados de opção (Opções, Propriedade de opções) permitem que você configure um item a ser pesquisado. Normalmente, eles são usados para procurar algo diretamente abaixo da página; por exemplo, uma propriedade no nó da página.
 
 O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma página) ilustra as etapas envolvidas:
 
@@ -647,7 +647,7 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
 
    Os nós das opções individuais precisam das propriedades:
 
-   * `jcr:title` - o rótulo do campo a apresentar no painel de pesquisa
+   * `jcr:title` - o rótulo do campo a ser mostrado no painel de pesquisa
    * `value` - o valor da propriedade a ser pesquisada
    ![Definição de previsão](assets/csf-options-predicate-01.png)
 
@@ -671,7 +671,7 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
 
    * **Nome da Propriedade**
 
-      Específico da propriedade node a ser pesquisada nos nós de destino. Por exemplo:
+      Específico da propriedade node a ser pesquisada nos nós do público alvo. Por exemplo:
 
       `jcr:content/cq:template`
 
@@ -690,14 +690,16 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
 
 ## Permissões de usuário {#user-permissions}
 
-A tabela a seguir lista as permissões necessárias para executar ações de edição, exclusão e visualização em formulários de pesquisa.
+A tabela a seguir lista as permissões necessárias para executar ações de edição, exclusão e pré-visualização em formulários de pesquisa.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td><strong>Ação</strong></td>
-   <td><strong>Permissões </strong></td>
+   <td><strong>Permissões    </strong></td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Editar </td>
    <td>Permissões de leitura e gravação no <code>/apps </code>nó.</td>
@@ -708,7 +710,7 @@ A tabela a seguir lista as permissões necessárias para executar ações de edi
   </tr>
   <tr>
    <td>Visualizar</td>
-   <td>Permissões de leitura, gravação e exclusão no <code>/var/dam/content</code> nó.<br /> Permissões de leitura e gravação no <code>/apps</code> nó.</td>
+   <td>Permissões de Leitura, Gravação e Exclusão no <code>/var/dam/content</code> nó.<br /> Permissões de leitura e gravação no <code>/apps</code> nó.</td>
   </tr>
  </tbody>
 </table>
