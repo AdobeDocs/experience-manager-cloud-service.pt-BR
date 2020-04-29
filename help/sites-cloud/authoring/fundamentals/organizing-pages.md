@@ -2,7 +2,7 @@
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
 translation-type: tm+mt
-source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
+source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
 
 ---
 
@@ -366,8 +366,13 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
    >
    >Como uma precaução de segurança, o ícone de **Excluir página** não está disponível como uma ação rápida.
 
-1. Uma caixa de diálogo irá pedir confirmação, use:
+1. Uma caixa de diálogo pedirá confirmação.
 
+   ![Caixa de diálogo Excluir](/help/sites-cloud/authoring/assets/delete-page.png)
+
+   * **Você deseja arquivar as páginas antes de excluir?** - Se marcada, as versões das páginas selecionadas para exclusão serão criadas após a exclusão.
+      * [As versões podem ser restauradas em uma data posterior.](/help/sites-cloud/authoring/features/page-versions.md)
+      * As páginas excluídas sem versões anteriores não podem ser restauradas.
    * **Cancelar** para suspender a ação
    * **Excluir** para confirmar a ação:
 
