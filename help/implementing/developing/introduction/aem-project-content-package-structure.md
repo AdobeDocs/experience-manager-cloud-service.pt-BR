@@ -2,7 +2,7 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
+source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
 
 ---
 
@@ -69,15 +69,13 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
          + Grupos
          + ACLs (permissões)
             + Qualquer `rep:policy` caminho (mutável ou imutável)
-+ O `ui.content` pacote, ou Pacote de conteúdo, contém todo o conteúdo e a configuração. Os elementos comuns do `ui.content` pacote incluem, mas não se limitam a:
++ O `ui.content` pacote, ou Pacote de conteúdo, contém todo o conteúdo e a configuração. O Pacote de conteúdo, contém tudo que não está no `ui.apps` pacote, ou em outras palavras, nada que não esteja no `/apps` ou `/oak:index`. Os elementos comuns do `ui.content` pacote incluem, mas não se limitam a:
    + Configurações sensíveis ao contexto
       + `/conf`
    + Estruturas de conteúdo necessárias e complexas (ou seja, Compilação de conteúdo que é criada e estende além das estruturas de conteúdo da Linha de base definidas no Repo Init.
       + `/content`, `/content/dam`, etc.
    + Taxonomias de marcação controladas
       + `/content/cq:tags`
-   + Índices de Oak
-      + `/oak:index`
    + Etc. nós herdados
       + `/etc`
 + O pacote `all` é um pacote de contêiner que APENAS inclui os pacotes `ui.apps` e `ui.content` como incorporados. O pacote `all` não deve ter **nenhum conteúdo** próprio, mas deve delegar toda a implantação no repositório em seus pacotes secundários.
