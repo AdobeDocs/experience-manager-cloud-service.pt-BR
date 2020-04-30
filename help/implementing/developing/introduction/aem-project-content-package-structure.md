@@ -2,7 +2,7 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
 
 ---
 
@@ -69,7 +69,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
          + Grupos
          + ACLs (permissões)
             + Qualquer `rep:policy` caminho (mutável ou imutável)
-+ O `ui.apps` pacote, ou Pacote de código, contém todo o código a ser implantado e só é implantado `/apps`. Os elementos comuns do `ui.apps` pacote incluem, mas não se limitam a: <!-- GRANITE-29128 -->
++ O `ui.content` pacote, ou Pacote de conteúdo, contém todo o conteúdo e a configuração. Os elementos comuns do `ui.content` pacote incluem, mas não se limitam a:
    + Configurações sensíveis ao contexto
       + `/conf`
    + Estruturas de conteúdo necessárias e complexas (ou seja, Compilação de conteúdo que é criada e estende além das estruturas de conteúdo da Linha de base definidas no Repo Init.
