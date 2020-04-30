@@ -2,7 +2,7 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
 
 ---
 
@@ -69,7 +69,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
          + Grupos
          + ACLs (permissões)
             + Qualquer `rep:policy` caminho (mutável ou imutável)
-+ O `ui.content` pacote, ou Pacote de conteúdo, contém todo o conteúdo e a configuração. Os elementos comuns do `ui.content` pacote incluem, mas não se limitam a:
++ O `ui.apps` pacote, ou Pacote de código, contém todo o código a ser implantado e só é implantado `/apps`. Os elementos comuns do `ui.apps` pacote incluem, mas não se limitam a: <!-- GRANITE-29128 -->
    + Configurações sensíveis ao contexto
       + `/conf`
    + Estruturas de conteúdo necessárias e complexas (ou seja, Compilação de conteúdo que é criada e estende além das estruturas de conteúdo da Linha de base definidas no Repo Init.
@@ -560,7 +560,7 @@ Na página `all/pom.xml` , adicione o plug- `maven-clean-plugin` in que limpará
 </plugins>
 ```
 
-## Additional Resources {#additional-resources}
+## Recursos adicionais {#additional-resources}
 
 + [Gerenciamento De Pacotes Usando O Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
 + [Plug-in FileVault Content Package Maven](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
