@@ -1,44 +1,44 @@
 ---
-title: Um guia rápido para o WCAG 2.1
-seo-title: Um guia rápido para o WCAG 2.1
+title: Um guia rápido para a WCAG 2.1
+seo-title: Um guia rápido para a WCAG 2.1
 translation-type: tm+mt
-source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
 
-# Um guia rápido para o WCAG 2.1{#quick-guide-to-wcag}
+# Um guia rápido para a WCAG 2.1{#quick-guide-to-wcag}
 
-O Adobe Experience Manager (AEM) como um serviço em nuvem foi desenvolvido para maximizar a conformidade com as Diretrizes de acessibilidade do conteúdo da Web.
+O Adobe Experience Manager (AEM) as a Cloud Service foi desenvolvido para maximizar a conformidade com as Web Content Accessibility Guidelines.
 
-As [Web Content Accessibility Guidelines versão 2.1 (WCAG)](https://www.w3.org/TR/WCAG/) são um conjunto de diretrizes reconhecidas internacionalmente desenvolvidas pelo [World Wide Web Consortium (W3C)](https://www.w3.org/) sob sua [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
-O WCAG 2.1 consiste em um conjunto de diretrizes de tecnologia independentes e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável para pessoas com necessidades especiais. Prestam aconselhamento aos autores, designers e desenvolvedores de conteúdos Web, a fim de garantir que os recursos que produzem sejam o mais acessíveis possível ao maior número possível de pessoas, independentemente de qualquer deficiência que tenham; por exemplo, deficiência visual, perda auditiva, dificuldades de aprendizagem, limitações relacionadas com a idade, entre outras.
+A WCAG 2.1 consiste em um conjunto de diretrizes de tecnologia independentes e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável para pessoas com necessidades especiais. Essas diretrizes fazem aconselhamento aos criadores de conteúdo, designers e desenvolvedores da Web, a fim de garantir que os recursos que produzem sejam o mais acessíveis possível ao maior número de pessoas possível, independentemente de qualquer deficiência que tenham. Por exemplo, deficiência visual, perda auditiva, dificuldades de aprendizado, limitações relacionadas à idade, entre outras.
 
-Por exemplo, descrever uma imagem (ou qualquer outro conteúdo não textual) usando o `alt` atributo em HTML beneficia muito as pessoas que são cegas ou amblíopes. A descrição textual no `alt` atributo pode ser convertida em saída de fala ou transmitida para exibições em braille eletrônicas atualizáveis.
+Por exemplo, descrever uma imagem (ou qualquer outro conteúdo não textual) usando o `alt` atributo em HTML beneficia muito as pessoas que são cegas ou amblíopes. A descrição textual no `alt` atributo pode ser convertida em saída de fala ou transmitida para exibições eletrônicas atualizáveis em braille.
 
-Além disso, o WCAG 2.1 pode resultar em vantagens para outros beneficiários, incluindo pessoas que podem ser consideradas *com deficiência* situacional. Pessoas que, devido a circunstâncias como a tecnologia de navegação, a velocidade de conexão da rede ou o ambiente de navegação, podem enfrentar barreiras semelhantes às pessoas com deficiências.
+Além disso, a WCAG 2.1 pode resultar em vantagens para outros beneficiários, incluindo pessoas que podem ser consideradas *com deficiência situacional*. Pessoas que, devido a circunstâncias como a tecnologia de navegação, a velocidade de conexão da rede ou o ambiente de navegação, podem enfrentar barreiras semelhantes às de pessoas com deficiências.
 
-Usando o Adobe Experience Manager, os autores de conteúdo e/ou proprietários de sites podem criar conteúdo da Web que atenda aos critérios de sucesso relevantes do WCAG 2.1 Nível A e Nível AA.
+Usando o Adobe Experience Manager, os criadores de conteúdo e/ou proprietários de sites podem criar conteúdo na Web que atenda aos critérios de sucesso relevantes de Nível A e de Nível AA da WCAG 2.1:
 
-Portanto, entender os objetivos do WCAG 2.1 e como as diretrizes são estruturadas é uma parte importante do entendimento da acessibilidade da Web e como as diretrizes podem ajudar na criação de conteúdo da Web acessível.
+Portanto, entender os objetivos da WCAG 2.1 e como as diretrizes são estruturadas é uma parte importante da compreensão da acessibilidade da Web e como as diretrizes podem ajudar na criação de conteúdo acessível na Web.
 
-A intenção da WCAG 2.1 é fornecer orientações que:
+A intenção da WCAG 2.1 é fornecer diretrizes que:
 
-* São **agnósticos tecnológicos:**
-Em outras palavras, orientações que podem ser aplicadas a diversos formatos de conteúdo da Web, não apenas HTML. Assim, o WCAG 2.1 pode abranger o conteúdo gerado ou fornecido em PDF, Flash, JavaScript e outras tecnologias da Web atuais e futuras. <!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
+* São **independentes de tecnologia:**
+em outras palavras, diretrizes que podem ser aplicadas a diversos formatos de conteúdo na Web, não apenas HTML. Assim, a WCAG 2.1 pode abranger o conteúdo gerado ou fornecido em PDF, Flash, JavaScript e outras tecnologias atuais e futuras na Web. <!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
 
 * São **testáveis:**
-Cada orientação é redigida de forma a poder ser objetivamente testada, a fim de garantir que um grupo de peritos em matéria de acessibilidade concordasse, de um modo geral, que a orientação foi cumprida. Um dos desafios das orientações em matéria de acessibilidade é que, embora algumas possam ser testadas tecnicamente, outras exigem uma avaliação humana para determinar se a orientação foi ou não cumprida com êxito. <!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
+cada diretriz é redigida de forma que possa ser objetivamente testada, a fim de garantir que um grupo de especialistas em acessibilidade concordasse, de um modo geral, que a diretriz foi cumprida. Um dos desafios das diretrizes de acessibilidade é que, embora algumas possam ser testadas tecnicamente, outras exigem uma avaliação humana para determinar se a diretriz foi ou não cumprida com êxito. <!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
 
-* Suporte para implementação **priorizada e contextual:**
+* Oferecem suporte à **implementação priorizada e contextual:**
    <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
 
-Estes objetivos influenciaram significativamente a estrutura da WCAG 2.1.
+Esses objetivos influenciaram significativamente a estrutura da WCAG 2.1.
 
 >[!NOTE]
 >
->Não é possível criar um site que atenda a qualquer deficiência ou tipo de pessoa possível. O objetivo do WCAG 2.1 é ajudar os autores da Web a criar sites que sejam, na medida do possível, acessíveis em determinadas condições e dentro dos limites da razão.
+>Não é possível criar um site que atenda a todas as deficiências ou tipos de pessoas possíveis. O objetivo da WCAG 2.1 é ajudar os autores da Web a criar sites que sejam, na medida do possível, acessíveis em determinadas condições e dentro dos limites da razão.
 
 <!--
 >[!NOTE]
@@ -48,85 +48,85 @@ Estes objetivos influenciaram significativamente a estrutura da WCAG 2.1.
 
 ## Estrutura {#structure}
 
-O WCAG 2.1 está estruturado de forma a introduzir conceitos de criação de conteúdo web acessível de forma progressivamente detalhada. Isso pode dar a impressão de que o WCAG 2.1 é um conjunto muito complexo de documentos interligados, mas o objetivo é (progressivamente) fornecer informações mais detalhadas conforme e quando os autores precisarem - em vez de fornecer tudo isso em um documento muito grande.
+A WCAG 2.1 está estruturada de forma a introduzir conceitos de criação de conteúdo acessível na Web de forma progressivamente detalhada. Isso pode dar a impressão de que a WCAG 2.1 é um conjunto muito complexo de documentos interligados, mas o objetivo é (progressivamente) fornecer informações mais detalhadas conforme e quando os autores precisarem - em vez de fornecer tudo isso em um documento muito volumoso.
 
-O WCAG 2.1 consiste em quatro princípios chave para o design acessível, às vezes citados pelo acrônimo **POUR**. São eles:
+A WCAG 2.1 consiste em quatro princípios-chave para o design acessível, às vezes referidos pela sigla **POUR**. São eles:
 
-1. **Percebível**: um usuário pode sentir o conteúdo da Web em questão?
+1. **Perceptível**: um usuário pode perceber o conteúdo da Web em questão?
 1. **Operável**: um usuário pode navegar, inserir dados ou interagir com o conteúdo da Web?
-1. **Compreendido**: um usuário pode processar e compreender o conteúdo da Web apresentado a ele?
+1. **Compreensível**: um usuário pode processar e compreender o conteúdo da Web apresentado a ele?
 1. **Robusto**: o conteúdo da Web está disponível da maneira desejada em uma ampla variedade de ambientes de navegação, incluindo ambientes de navegação herdados e emergentes?
 
 Para elaborar:
-* Cada **princípio** consiste numa ou mais **orientações**.
+* Cada **princípio** consiste em uma ou mais **diretrizes**.
 
-* As diretrizes são escritas como instruções, que são positivas (Faça isso...) ou negativas (Não faça isso...).
-* As orientações são numeradas de 1.1 a 4.1, quando o primeiro número corresponde ao princípio da empresa-mãe.
-* Cada orientação consiste em um ou mais critérios **de** sucesso.
-* Os critérios de sucesso são escritos como declarações, que são `True` ou `False` para qualquer página da Web.
-* Os critérios de sucesso podem incluir opções ou opções, ou podem incluir exceções; situações em que os critérios de sucesso não têm de ser cumpridos.
-* Os critérios de sucesso são numerados de acordo com a orientação e o princípio da empresa-mãe, de 1.1.1 a 4.1.1. Eles também têm um nome curto resumindo a intenção do critério, para uma referência mais fácil. Por exemplo, o critério de sucesso 1.1.1 é alternativo não textual.
-* Os critérios de sucesso incluem uma lista de **técnicas** relacionadas (descritas em mais detalhes abaixo).
+* As diretrizes são redigidas como instruções, que são positivas (faça isso...) ou negativas (não faça isso...).
+* As diretrizes são numeradas de 1.1 a 4.1 e o primeiro número corresponde ao princípio principal.
+* Cada diretriz consiste em um ou mais **critérios de sucesso**.
+* Os critérios de sucesso são redigidos como declarações, que são `True` ou `False` para qualquer página da Web.
+* Os critérios de sucesso podem incluir opções ou exceções; situações em que os critérios de sucesso não precisam ser cumpridos.
+* Os critérios de sucesso são numerados de acordo com a diretriz e o princípio principais, de 1.1.1 a 4.1.1. Eles também têm um nome curto que resume a intenção do critério, para uma referência mais fácil. Por exemplo, o critério de sucesso 1.1.1 é alternativo não textual.
+* Os critérios de sucesso incluem uma lista de **técnicas** relacionadas (descritas mais detalhadamente abaixo).
 
 ## Recursos de suporte {#supporting-resources}
 
-Além dos componentes principais do WCAG 2.1 de Princípios, Orientações e Critérios de Sucesso, há uma série de documentos de apoio. Alguns deles fornecem conselhos específicos sobre como cumprir aspectos das diretrizes, outros são referências mais gerais que ajudam autores da Web, designers e desenvolvedores de todas as habilidades a entender e usar o WCAG 2.1 da forma mais eficaz possível.
+Além dos componentes principais de Princípios, Diretrizes e Critérios de sucesso da WCAG 2.1, existe uma série de documentos de suporte. Alguns deles fornecem conselhos específicos sobre como cumprir os aspectos das diretrizes, outros são referências mais gerais que ajudam os autores, designers e desenvolvedores da Web de todas as habilidades a entender e usar a WCAG 2.1 da forma mais eficaz possível.
 
-Embora o WCAG 2.1 seja um documento estável e não mude, a maioria desses recursos de suporte são documentos dinâmicos; eles mudarão e crescerão com o tempo, à medida que novas tecnologias surgirem, e novos exemplos de como a acessibilidade da Web pode ser alcançada.
+Embora a WCAG 2.1 seja um documento estável e não mude, a maioria desses recursos de suporte corresponde a documentos dinâmicos. Eles serão alterados e desenvolvidos com o tempo, à medida que surjam novas tecnologias e sejam encontrados novos exemplos de como a acessibilidade da Web pode ser alcançada.
 
-### Recursos do WCAG 2.1 {#wcag-resources}
+### Recursos da WCAG 2.1 {#wcag-resources}
 
-Esta lista não se destina a ser exaustiva, pois apresenta os recursos disponíveis:
-* [Um resumo de todos os documentos relacionados ao WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
+Esta lista não está completa. Ela apresenta os recursos disponíveis:
+* [Um definição de todos os documentos relacionados à WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [Um resumo dos diferentes documentos](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
-* [Diretrizes de acessibilidade de conteúdo da Web (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
-* [Novidades no WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
-* [Um guia de referência rápida sobre como cumprir o WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
-* [Perguntas frequentes sobre o WCAG 2](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
+* [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
+* [Novidades da WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
+* [Um guia de referência rápida sobre como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
+* [Perguntas frequentes sobre a WCAG 2](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
 
 
-### Novidades do WCAG 2.1 {#what-is-new}
+### Novidades da WCAG 2.1 {#what-is-new}
 
-[O que há de novo no WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) fornece informações valiosas sobre o delta entre WCAG e 2.0 e WCAG 2.1.
+O documento [Novidades da WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) fornece informações importantes sobre o delta entre a WCAG 2.0 e a WCAG 2.1.
 
-As seções [WCAG 2.0 e 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) clarificam ainda mais o estado da sua relação.
+A seção [WCAG 2.0 e 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) clarificam ainda mais o estado da relação entre leas.
 
-### Técnicas para WCAG 2.1 {#techniques-for-wcag}
+### Técnicas da WCAG 2.1 {#techniques-for-wcag}
 
-As técnicas para WCAG 2.1 estão disponíveis na página [Técnicas para WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/) .
+As técnicas da WCAG 2.1 estão disponíveis na página [Técnicas da WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/) .
 
-**As técnicas** formam o nível abaixo dos critérios de sucesso na hierarquia do WCAG 2.1. Eles são classificados pela WAI como informativos, não normativos. Por outras palavras, não é necessário seguir uma técnica específica para que um recurso esteja em conformidade com o WCAG 2.1.
+As **técnicas** formam o nível abaixo dos critérios de sucesso na hierarquia da WCAG 2.1. Elas são classificadas pela WAI como informativas, não normativas. Em outras palavras, não é necessário seguir uma técnica específica para que um recurso esteja em conformidade com a WCAG 2.1.
 
-Como as técnicas são muito mais específicas do que os critérios de sucesso, elas geralmente se referem a uma tecnologia ou tipo de conteúdo específico (por exemplo, HTML ou vídeo), ou situação (por exemplo, comércio eletrônico ou aplicativo de e-learning). Você pode considerar técnicas como exemplos comprovados de como diretrizes específicas e critérios de sucesso podem ser cumpridos, de modo que elas são úteis para autores e desenvolvedores que trabalham em contextos específicos.
+Como as técnicas são muito mais específicas do que os critérios de sucesso, elas geralmente se referem a determinada tecnologia, tipo de conteúdo (por exemplo, HTML ou vídeo) ou situação (por exemplo, comércio eletrônico ou aplicativo de e-learning). Você pode considerar técnicas como exemplos comprovados de como diretrizes e critérios de sucesso específicos podem ser cumpridos, portanto, elas são úteis para autores e desenvolvedores que trabalham em determinados contextos.
 
 As técnicas podem ser acessadas:
 
-* Por coleção (as técnicas podem ser gerais ou estar relacionadas a uma tecnologia ou formato específico - como HTML, CSS ou Scripts do cliente), ou
-* De critérios de sucesso relacionados. As técnicas podem se aplicar a mais de um critério de sucesso.
+* Por coleção (as técnicas podem ser gerais ou estar relacionadas a uma tecnologia ou formato específico - como HTML, CSS ou Scripts do cliente) ou
+* Em critérios de sucesso relacionados. As técnicas podem ser aplicadas a mais de um critério de sucesso.
 
-Cada técnica tem um número exclusivo, que se relaciona à sua coleção. Por exemplo, uma das técnicas ARIA é a *Técnica ARIA2: Identificação de campos obrigatórios com a propriedade*&quot;obrigatório&quot;.
+Cada técnica tem um número exclusivo, que está relacionado à coleção. Por exemplo, uma das técnicas ARIA é a *Técnica ARIA2: identificação de campos obrigatórios com a propriedade &quot;obrigatório&quot;*.
 
 As técnicas podem ser suficientes, consultivas ou uma falha:
 
-* Uma técnica *suficiente* é uma que, se for seguida, será suficiente para satisfazer um critério de sucesso específico.
-* Uma técnica ** consultiva é uma que, se for seguida, terá um impacto positivo na acessibilidade, mas pode não ser suficiente por si só para garantir que um critério específico de sucesso seja cumprido.
-* Uma *falha* é uma técnica que descreve um exemplo específico de onde um critério de sucesso não seria atendido.
+* Uma *Técnica suficiente* é aquela que, se for seguida, será suficiente para cumprir um critério de sucesso específico.
+* Uma *Técnica consultiva* é aquela que, se for seguida, terá um impacto positivo na acessibilidade, mas pode não ser suficiente por si só para garantir que um critério específico de sucesso seja cumprido.
+* Uma *Falha* é uma técnica que descreve um exemplo específico de onde um critério de sucesso não seria atendido.
 
 Os detalhes das técnicas incluem uma descrição, aplicabilidade, exemplos, recursos para obter mais informações e detalhes sobre como os autores podem testar a aplicação bem-sucedida da técnica.
 
-A lista de técnicas não está completa e a WAI está constantemente atualizando a lista com novos exemplos, refletindo desenvolvimentos na tecnologia da Web, abordagens de design e resultados de pesquisa. Portanto, vale a pena verificar regularmente a lista de técnicas para novas adições.
+A lista de técnicas não está completa e a WAI atualiza constantemente a lista com novos exemplos, refletindo os desenvolvimentos na tecnologia da Web, abordagens de design e resultados de pesquisa. Portanto, vale a pena verificar regularmente a lista de técnicas quanto a novas adições.
 
-### Noções básicas sobre o WCAG 2.1 {#understanding-wcag}
+### Noções básicas sobre a WCAG 2.1 {#understanding-wcag}
 
-Trata-se de uma série de documentos, que fornecem conselhos para ajudar os leitores a apreciarem o objetivo de orientações específicas e critérios de sucesso. Você pode [baixar uma introdução, além de links para informações](https://www.w3.org/WAI/WCAG21/Understanding/)mais detalhadas.
+Trata-se de uma série de documentos que fornecem conselhos para ajudar os leitores a compreender o objetivo de diretrizes e critérios de sucesso específicos. Você pode [baixar uma introdução, além de links para informações mais detalhadas](https://www.w3.org/WAI/WCAG21/Understanding/).
 
-Cada orientação individual e critério de sucesso tem também a sua própria página &quot;Compreensão&quot;, que fornece informações sobre:
+Cada diretriz e critério de sucesso tem também sua própria página de &quot;Noções básicas&quot;, que fornece informações sobre:
 
-* A intenção da orientação;
+* A intenção da diretriz;
 * Critérios de sucesso específicos;
-* Técnicas de aconselhamento, que ajudam a cumprir os requisitos da orientação, mas que não se enquadram em nenhum critério específico de sucesso.
+* Técnicas de aconselhamento, que ajudam a cumprir os requisitos da diretriz, mas que não se enquadram em nenhum critério de sucesso específico.
 
-Cada página de &quot;entendimento&quot; individual de cada critério de sucesso fornece informações sobre:
+A página de &quot;noções básicas&quot; de cada critério de sucesso fornece informações sobre:
 
 * A intenção do critério de sucesso;
 * Exemplos gerais de como o critério de sucesso pode ser cumprido;
@@ -134,16 +134,16 @@ Cada página de &quot;entendimento&quot; individual de cada critério de sucesso
 * Técnicas e falhas: exemplos específicos e detalhados de como o critério de sucesso pode ser atendido (descritos mais detalhadamente abaixo)
 * Termos principais - um glossário de termos importantes para entender o critério de sucesso.
 
-Um exemplo pode ser encontrado em: [Noções sobre o Critério de sucesso 1.1.1 (&quot;Conteúdo não textual&quot;)](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content).
+Um exemplo pode ser encontrado em: [Noções sobre o critério de sucesso 1.1.1 (&quot;Conteúdo não textual&quot;)](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content).
 
-### Como cumprir o WCAG 2.1 {#how-to-meet-wcag}
+### Como cumprir a WCAG 2.1 {#how-to-meet-wcag}
 
-A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir o WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) . Esta seção fornece uma apresentação alternativa da WCAG, que permite refinar o conteúdo das orientações para os mais relevantes para os interesses ou circunstâncias do próprio leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização especificando tecnologias de conteúdo da Web específicas, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
+A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) . Esta seção fornece uma apresentação alternativa da WCAG, que permite refinar o conteúdo das diretrizes para os mais relevantes para os próprios interesses ou circunstâncias do leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização, especificando tecnologias específicas de conteúdo na Web, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
 
-Sem filtragem, esse recurso fornece todos os critérios de sucesso agrupados por orientação. Para cada critério de sucesso, é fornecido o seguinte:
+Sem filtragem, esse recurso fornece todos os critérios de sucesso agrupados por diretriz. Para cada critério de sucesso, é fornecido o seguinte:
 
 * O texto do critério de sucesso;
-* Uma ligação ao documento de &quot;compreensão&quot; correspondente;
-* lista de técnicas suficientes relacionadas, ligando aos detalhes de cada técnica;
-* lista de técnicas consultivas conexas, ligando-se aos pormenores de cada técnica (se existir);
-* Uma lista de falhas relacionadas, vinculando aos detalhes de cada falha.
+* Um link para o documento de &quot;noções básicas&quot; correspondente;
+* Uma lista de técnicas suficientes relacionadas, que está associada aos detalhes de cada técnica;
+* Uma lista de técnicas consultivas relacionadas, que está associada aos detalhes de cada técnica (se houver);
+* Uma lista de falhas relacionadas, que está associada aos detalhes de cada falha.
