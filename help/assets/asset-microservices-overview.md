@@ -3,7 +3,7 @@ title: Saiba como os microserviços de ativos podem processar seus ativos digita
 description: Processar seus ativos digitais usando microserviços de processamento de ativos escaláveis e nativos na nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -15,9 +15,7 @@ First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/ma
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
 -->
 
-O Adobe Experience Manager como um serviço em nuvem fornece uma maneira nativa de usar a nuvem para aproveitar os aplicativos e os recursos do Experience Manager. Um dos elementos chave dessa nova arquitetura é a ingestão e o processamento de ativos, impulsionados por microserviços de ativos.
-
-Os microserviços de ativos fornecem um processamento escalonável e resiliente de ativos usando serviços em nuvem, que são gerenciados pela Adobe para lidar melhor com diferentes tipos de ativos e opções de processamento. Os principais benefícios são:
+O Adobe Experience Manager como um serviço em nuvem fornece um método nativo para aproveitar os aplicativos e os recursos do Experience Manager. Um dos elementos chave dessa nova arquitetura é a ingestão e o processamento de ativos, impulsionados por microserviços de ativos. Os microserviços de ativos fornecem um processamento escalonável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços em nuvem para obter o melhor tratamento de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microserviços de ativos nativos na nuvem são:
 
 * Arquitetura escalável que permite um processamento ininterrupto para operações com grande quantidade de recursos.
 * extrações eficientes de indexação e texto que não afetam o desempenho de seus ambientes do Experience Manager.
@@ -28,7 +26,7 @@ Os microserviços de ativos fornecem um processamento escalonável e resiliente 
 * Os serviços nativos de processamento de arquivos da Adobe são usados onde for aplicável, fornecendo saída de alta fidelidade e manuseio [eficiente de formatos](file-format-support.md)proprietários da Adobe.
 * Capacidade de configurar o fluxo de trabalho de pós-processamento para adicionar ações e integrações específicas do usuário.
 
-Os microserviços de ativos ajudam a evitar a necessidade de ferramentas de renderização de terceiros (como o ImageMagick) e a simplificar a configuração do sistema, além de fornecer uma funcionalidade pronta para uso para tipos de arquivos comuns.
+Os microserviços de ativos ajudam a evitar a necessidade de ferramentas e métodos de renderização de terceiros (como a transcodificação de ImageMagick e FFmpeg) e a simplificar as configurações, além de fornecer funcionalidade pronta para uso para tipos de arquivos comuns.
 
 ## Arquitetura de alto nível {#asset-microservices-architecture}
 
@@ -45,12 +43,12 @@ As etapas principais da ingestão e processamento usando microserviços de ativo
 
 * Os clientes, como navegadores da Web ou o Adobe Asset Link, enviam uma solicitação de upload para o Experience Manager e o start faz upload do binário diretamente para o armazenamento da nuvem binária.
 * Quando o upload binário direto for concluído, o cliente notificará o Experience Manager.
-* O Experience Manager envia uma solicitação de processamento para os microserviços de ativos. O conteúdo da solicitação depende da configuração de perfis de processamento no Experience Manager que especifica, quais execuções devem ser geradas
+* O Experience Manager envia uma solicitação de processamento para os microserviços de ativos. O conteúdo da solicitação depende da configuração de perfis de processamento no Experience Manager que especifica, quais execuções serão geradas.
 * O back-end dos microserviços do Assets recebe a solicitação, despacha-a para um ou mais microserviços com base na solicitação. Cada microserviço acessa o binário original diretamente da loja da nuvem binária.
 * Os resultados do processamento, como execuções, são armazenados no armazenamento da nuvem binária.
-* O Experience Manager é notificado de que o processamento está concluído, juntamente com ponteiros diretos para os binários gerados (execuções), que estão disponíveis no Experience Manager para o ativo carregado
+* O Experience Manager é notificado de que o processamento está concluído, juntamente com ponteiros diretos para os binários gerados (execuções). As renderizações geradas estão disponíveis no Experience Manager para o ativo carregado.
 
-Esse é o fluxo básico de assimilação e processamento de ativos. Se configurado, o Experience Manager também pode start o modelo de fluxo de trabalho do cliente para fazer o pós-processamento do ativo, por exemplo, para executar algumas etapas personalizadas específicas ao ambiente do cliente, como buscar informações dos sistemas corporativos do cliente para adicionar às propriedades do ativo.
+Esse é o fluxo básico de assimilação e processamento de ativos. Se configurado, o Experience Manager também pode start o modelo de fluxo de trabalho personalizado para fazer o pós-processamento do ativo. Por exemplo, execute etapas personalizadas específicas ao seu ambiente, como buscar informações de um sistema empresarial e adicionar às propriedades do ativo.
 
 O fluxo de ingestão e processamento são conceitos-chave da arquitetura de microserviços de ativos do Experience Manager.
 
