@@ -3,7 +3,7 @@ title: 'APIs de ativos para gerenciamento de ativos digitais no Adobe Experience
 description: As APIs de ativos permitem operações básicas de criação-leitura-atualização-exclusão (CRUD) para gerenciar ativos, incluindo binários, metadados, representações, comentários e Fragmentos de conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -40,7 +40,7 @@ As diferenças importantes comparadas às versões anteriores do AEM incluem:
 Essa abordagem deve proporcionar uma manipulação mais escalável e eficiente dos uploads de ativos.
 
 > !![NOTE]
-Para revisar o código do cliente que implementa essa abordagem, consulte a biblioteca de upload do [aem de código aberto](https://github.com/adobe/aem-upload)
+Para revisar o código do cliente que implementa essa abordagem, consulte a biblioteca de [upload do aem de código aberto](https://github.com/adobe/aem-upload)
 
 ### Iniciar carregamento {#initiate-upload}
 
@@ -92,25 +92,27 @@ Uma maneira potencial de fazer isso é calcular o tamanho da peça com base no n
 
 * Calcule o tamanho da peça dividindo o tamanho total pelo número de URIs: 20.000 / 2 = 10.000
 * Intervalo de bytes POST de 0 a 9.999 do binário para o primeiro URI na lista de URIs de upload
-* Intervalo de bytes POST de 10.000 a 19.999 do binário para o segundo URI na lista de URIs de upload
+* Intervalo de bytes POST 10.000 - 19.999 do binário para o segundo URI na lista de URIs de upload
 
 Se bem-sucedido, o servidor responde a cada solicitação com um código de `201` status.
 
 ### Carregamento completo {#complete-upload}
 
-Quando todas as partes de um binário forem carregadas, a etapa final será enviar uma solicitação HTTP POST ao URI completo fornecido pelos dados de início. O tipo de conteúdo do corpo da solicitação deve ser dados do aplicativo/`x-www-form-urlencoded` formulário, contendo os seguintes campos:
+Depois que todas as partes de um arquivo binário forem carregadas, envie uma solicitação HTTP POST para o URI completo fornecido pelos dados de início. O tipo de conteúdo do corpo da solicitação deve ser dados de `application/x-www-form-urlencoded` formulário, contendo os seguintes campos.
 
-* `(string) fileName`: Obrigatório. O nome do ativo, conforme fornecido pelos dados de início.
-* `(string) mimeType`: Obrigatório. O tipo de conteúdo HTTP do binário, conforme fornecido pelos dados de iniciação.
-* `(string) uploadToken`: Obrigatório. Faça upload do token para o binário, conforme fornecido pelos dados de início.
-* `(bool) createVersion`: Opcional. Se true e um ativo com o nome especificado já existir, a instância criará uma nova versão do ativo.
-* `(string) versionLabel`: Opcional. Se uma nova versão for criada, o rótulo que será associado à versão.
-* `(string) versionComment`: Opcional. Se uma nova versão for criada, os comentários que serão associados à versão.
-* `(bool) replace`: Opcional: Se verdadeiro e um ativo com o nome especificado já existir, a instância excluirá o ativo e o recriará.
+| Fields | Tipo | Obrigatório ou não | Descrição |
+|---|---|---|---|
+| `fileName` | Sequência de caracteres | Obrigatório | O nome do ativo, conforme fornecido pelos dados de início. |
+| `mimeType` | Sequência de caracteres | Obrigatório | O tipo de conteúdo HTTP do binário, conforme fornecido pelos dados de iniciação. |
+| `uploadToken` | Sequência de caracteres | Obrigatório | Faça upload do token para o binário, conforme fornecido pelos dados de início. |
+| `createVersion` | Booleano | Opcional | Se `True` e um ativo com o nome especificado já existir, o Experience Manager criará uma nova versão do ativo. |
+| `versionLabel` | Sequência de caracteres | Opcional | Se uma nova versão for criada, o rótulo associado à nova versão de um ativo. |
+| `versionComment` | Sequência de caracteres | Opcional | Se uma nova versão for criada, os comentários associados à versão. |
+| `replace` | Booleano | Opcional | Se `True` e um ativo com o nome especificado já existir, o Experience Manager excluirá o ativo e recriá-lo. |
 
 >!![NOTE]
 >
-> Se o ativo já existir e não for especificado createVersion nem replace, a instância atualizará a versão atual do ativo com o novo binário.
+> Se o ativo já existir e nem `createVersion` nem `replace` for especificado, o Experience Manager atualizará a versão atual do ativo com o novo binário.
 
 Como o processo de inicialização, os dados de solicitação completos podem conter informações para mais de um arquivo.
 
@@ -122,44 +124,34 @@ Se bem-sucedido, o servidor responde com um código de `200` status.
 
 Para saber mais sobre os algoritmos de upload ou para criar seus próprios scripts e ferramentas de upload, a Adobe fornece bibliotecas e ferramentas de código aberto como pontos de partida:
 
-* [Abrir biblioteca aem-upload de origem](https://github.com/adobe/aem-upload)
-* [Ferramenta de linha de comando open source](https://github.com/adobe/aio-cli-plugin-aem)
+* [Biblioteca aem-upload de código aberto](https://github.com/adobe/aem-upload)
+* [Ferramenta de linha de comando open-source](https://github.com/adobe/aio-cli-plugin-aem)
 
 ### APIs de upload de ativos obsoletos {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
->[!NOTE]
-Para o Experience Manager como um serviço em nuvem, somente as novas APIs de upload são compatíveis. As APIs do Experience Manager 6.5 estão obsoletas.
-
-Os métodos relacionados ao upload ou atualização de ativos ou execuções (qualquer upload binário) estão obsoletos nas seguintes APIs:
+Para o Adobe Experience Manager como um serviço em nuvem, somente as novas APIs de upload são compatíveis. As APIs do Adobe Experience Manager 6.5 estão obsoletas. Os métodos relacionados ao upload ou atualização de ativos ou execuções (qualquer upload binário) estão obsoletos nas seguintes APIs:
 
 * [API HTTP do AEM Assets](mac-api-assets.md)
 * `AssetManager` API Java, como `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [Abrir biblioteca aem-upload de origem](https://github.com/adobe/aem-upload)
-* [Ferramenta de linha de comando open source](https://github.com/adobe/aio-cli-plugin-aem)
+* [Biblioteca](https://github.com/adobe/aem-upload)de upload de aem de código aberto.
+* [Ferramenta](https://github.com/adobe/aio-cli-plugin-aem)de linha de comando de código aberto.
 
 
 ## Processamento de ativos e workflows pós-processamento {#post-processing-workflows}
 
-A maior parte do processamento de ativos é executada com base na configuração de Perfis **[!UICONTROL de]** processamento por microserviços [de](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)ativos e não requer extensões de desenvolvedor.
+No Experience Manager, o processamento de ativos é baseado na configuração de Perfis **[!UICONTROL de]** processamento que usa os [microserviços](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)de ativos. O processamento não requer extensões de desenvolvedor.
 
-Para a configuração do fluxo de trabalho de pós-processamento, Workflows AEM padrão com extensões (por exemplo, etapas personalizadas podem ser usadas). Revise a subseção a seguir para entender quais etapas do fluxo de trabalho podem ser usadas nos workflows de pós-processamento do ativo.
+Para a configuração do fluxo de trabalho de pós-processamento, use os workflows padrão com extensões com etapas personalizadas.
 
-### Etapas do fluxo de trabalho no fluxo de trabalho de pós-processamento {#post-processing-workflows-steps}
+## Suporte às etapas do fluxo de trabalho no fluxo de trabalho de pós-processamento {#post-processing-workflows-steps}
 
->[!NOTE]
-Esta seção se aplica principalmente aos clientes que atualizam para o AEM como um serviço em nuvem de versões anteriores do AEM.
+Os clientes que atualizam para o Experience Manager como um serviço em nuvem de versões anteriores do Experience Manager podem usar os microserviços de ativos para processamento de ativos. Os microserviços de ativos nativos na nuvem são muito mais simples de configurar e usar. Algumas etapas do fluxo de trabalho usadas no fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM na versão anterior não são suportadas.
 
-Devido a um novo modelo de implantação introduzido com o Experience Manager como um serviço em nuvem, certas etapas do fluxo de trabalho usadas no `DAM Update Asset` fluxo de trabalho antes da introdução dos microserviços de ativos podem não ser mais suportadas por workflows de pós-processamento. Observe que a maioria deles é substituída por um muito mais simples para configurar e usar os microserviços de ativos.
-
-Esta é uma lista de modelos de fluxo de trabalho técnico e seu nível de suporte no AEM como um serviço em nuvem:
-
-### Etapas de fluxo de trabalho suportadas {#supported-workflow-steps}
-
-As etapas de fluxo de trabalho a seguir são compatíveis com o serviço em nuvem.
+As etapas de fluxo de trabalho a seguir são compatíveis com o Experience Manager como um serviço em nuvem.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -170,8 +162,6 @@ As etapas de fluxo de trabalho a seguir são compatíveis com o serviço em nuve
 * `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
 * `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
 * `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
-
-### Modelos não suportados ou substituídos {#unsupported-replaced-models}
 
 Os seguintes modelos de fluxo de trabalho técnico são substituídos por microserviços de ativos ou o suporte não está disponível.
 
