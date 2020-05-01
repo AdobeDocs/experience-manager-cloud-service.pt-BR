@@ -1,8 +1,8 @@
 ---
 title: Recursos obsoletos e removidos
 description: Notas de versão específicas para os recursos obsoletos e removidos do Adobe Experience Manager as a Cloud Service.
-translation-type: ht
-source-git-commit: b31ae32285080075d2531edd2c4976cf801d1c89
+translation-type: tm+mt
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -24,11 +24,12 @@ Esta seção lista os recursos e funcionalidades que foram marcados como obsolet
 
 Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua implementação no momento, bem como a planejar a alteração de sua implementação para usar a alternativa fornecida.
 
-| Área | Recurso | Substituição |
+| Recursos | Recurso obsoleto | Substituição |
 | ------------ | ------------------ | ----------- |
-| Ativos | A assimilação e o processamento de ativos não usam mais o fluxo de trabalho `DAM Asset Update` | A assimilação de ativos usa [microsserviços de ativos](/help/assets/asset-microservices-overview.md) agora. |
-| Ativos | Upload de ativos diretamente no AEM - consulte [APIs de upload de ativos obsoletos](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) | O [upload binário direto](/help/assets/add-assets.md) é usado no Experience Manager as a Cloud Service. Para obter detalhes técnicos, consulte [APIs de upload direto](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
-| Ativos | [Determinadas etapas do fluxo de trabalho](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) `DAM Asset Update` não são compatíveis, incluindo a chamada de ferramentas de linha de comando, como o ImageMagick | Os [microsserviços de ativos](/help/assets/asset-microservices-overview.md) oferecem uma substituição para muitos fluxos de trabalho. Para processamento personalizado, use [fluxos de trabalho de pós-processamento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Ativos | `DAM Asset Update` fluxo de trabalho para processar imagens ingeridas. | A assimilação de ativos usa [microsserviços de ativos](/help/assets/asset-microservices-overview.md) agora. |
+| Ativos | Upload assets directly to AEM. See [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Use o upload [binário](/help/assets/add-assets.md)direto. Para obter detalhes técnicos, consulte [APIs de upload direto](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
+| Ativos | [Determinadas etapas do fluxo de trabalho](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) `DAM Asset Update` não são compatíveis, incluindo a chamada de ferramentas de linha de comando, como o ImageMagick. | Os [microsserviços de ativos](/help/assets/asset-microservices-overview.md) oferecem uma substituição para muitos fluxos de trabalho. Para processamento personalizado, use [fluxos de trabalho de pós-processamento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| Ativos | Transcodificação FFmpeg de vídeos. | Para a geração de miniaturas do FFmpeg, use os microserviços [de](/help/assets/asset-microservices-overview.md)ativos. Para a transcodificação FFmpeg, use o [Dynamic Media](/help/assets/manage-video-assets.md). |
 
 ## Recursos removidos {#removed-features}
 
