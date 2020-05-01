@@ -1,17 +1,17 @@
 ---
-title: Gerenciar metadados para ativos digitais
-description: Saiba mais sobre os tipos de metadados e como os ativos AEM ajudam a gerenciar metadados de ativos para facilitar a categorização e a organização de ativos. Com a capacidade de manter e gerenciar metadados arbitrários com seus ativos, os ativos AEM permitem organizar e processar automaticamente ativos com base em seus metadados.
+title: Gerencie metadados de seus ativos digitais no [!DNL Adobe Experience Manager].
+description: Saiba mais sobre os tipos de metadados e como o [!DNL Adobe Experience Manager Assets] ajuda a gerenciar metadados de ativos para facilitar a categorização e a organização de ativos. O [!DNL Experience Manager] permite organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
 
-# Gerenciar metadados de ativos digitais {#managing-metadata-for-digital-assets}
+# Gerenciar metadados de seus ativos digitais {#managing-metadata-for-digital-assets}
 
-O Adobe Experience Manager (AEM) Assets mantém metadados para cada ativo. Isso permite uma classificação e organização mais fáceis de ativos e ajuda as pessoas que estão procurando um ativo específico. Com a capacidade de extrair metadados de arquivos carregados para ativos AEM, o gerenciamento de metadados se integra ao fluxo de trabalho criativo. Com a capacidade de manter e gerenciar metadados arbitrários com seus ativos, os ativos AEM permitem organizar e processar automaticamente ativos com base em seus metadados.
+[!DNL Adobe Experience Manager Assets] mantém metadados para cada ativo. Isso facilita a categorização e organização de ativos e ajuda as pessoas que estão procurando um ativo específico. Com a capacidade de extrair metadados de arquivos carregados para [!DNL Experience Manager Assets], o gerenciamento de metadados se integra ao fluxo de trabalho criativo. Com a capacidade de manter e gerenciar metadados com seus ativos, [!DNL Experience Manager Assets] torna possível organizar e processar automaticamente ativos com base em seus metadados.
 
 >[!MORELIKETHIS]
 >
@@ -25,101 +25,87 @@ O Adobe Experience Manager (AEM) Assets mantém metadados para cada ativo. Isso 
 
 ## Por que os metadados {#why-metadata}
 
-Metadados significa dados sobre dados. Nesse sentido, os dados se referem ao ativo que você está lidando, por exemplo, uma imagem. Os metadados são importantes porque permitem que os usuários gerenciem ativos com mais eficiência.
+Metadados significa dados sobre dados. Nesse sentido, os dados se referem ao seu ativo digital, digamos uma imagem. Os metadados são essenciais para o gerenciamento eficiente de ativos.
 
-Metadados é a coleção de todos os dados disponíveis para esta imagem, mas isso não está necessariamente contido nessa imagem, por exemplo:
+Metadados é a coleta de todos os dados disponíveis para um ativo, mas não necessariamente contidos nessa imagem. Alguns exemplos de metadados são:
 
-* o nome do ativo
-* a data e hora da última modificação
-* o tamanho da imagem conforme ela foi armazenada no repositório
-* o nome da pasta em que está contido
+* Nome do ativo.
+* Hora e data da última modificação.
+* Tamanho do ativo conforme ele foi armazenado no repositório.
+* Nome da pasta em que está contido.
+* Ativos relacionados ou tags aplicadas.
 
-Essas são as propriedades básicas de metadados que o AEM pode gerenciar para ativos, o que permite que os usuários vejam todos os ativos, por exemplo, solicitados pela última data de modificação - úteis ao tentar descobrir quais ativos foram adicionados recentemente ao repositório.
+Essas são as propriedades básicas de metadados que [!DNL Experience Manager] podem ser gerenciadas para ativos, o que permite que os usuários vejam todos os ativos, por exemplo, ordenados por sua última data de modificação - úteis ao tentar descobrir quais ativos foram adicionados recentemente ao repositório.
 
 Você pode adicionar mais dados de alto nível a ativos digitais, por exemplo:
 
-* o tipo de ativo (é uma imagem, um vídeo, um clipe de áudio ou um documento?)
-* o proprietário do ativo
-* o título do ativo
-* a descrição do ativo
-* as tags que foram atribuídas a um ativo
+* Tipo de ativo (é uma imagem, um vídeo, um clipe de áudio ou um documento?).
+* Proprietário do ativo.
+* Título do ativo.
+* Descrição do ativo.
+* Tags atribuídas a um ativo.
 
-Mais metadados ajudam a categorizar ativos e são úteis à medida que a quantidade de informações digitais cresce. Embora seja possível para uma única pessoa gerenciar uma lista de algumas centenas de arquivos simplesmente com base em seus nomes de arquivo, essa abordagem fica aquém do número de pessoas envolvidas e o número de ativos gerenciados cresce.
+Mais metadados ajudam a categorizar ativos e são úteis à medida que a quantidade de informações digitais cresce. É possível gerenciar algumas centenas de arquivos com base apenas nos nomes dos arquivos. No entanto, essa abordagem não é escalável e rapidamente fica aquém do número de pessoas envolvidas e o número de ativos gerenciados aumenta.
 
-À medida que os metadados são adicionados aos ativos, o valor do ativo cresce, pois o ativo se torna
+Com a adição de metadados, o valor de um ativo digital cresce, pois o ativo se torna,
 
-* mais acessível - as pessoas podem achar muito mais fácil
-* fácil de gerenciar - você pode encontrar ativos com o mesmo conjunto de propriedades mais facilmente e aplicar alterações a eles
-* mais complexo - quanto mais metadados forem adicionados a um ativo, mais importantes serão os metadados de gerenciamento
+* Mais acessível - os sistemas e usuários podem encontrá-lo facilmente.
+* Mais fácil de gerenciar - você pode encontrar ativos com o mesmo conjunto de propriedades mais facilmente e aplicar alterações a eles.
+* Mais completo: quanto mais metadados você adicionar a um ativo, mais informações e contexto serão exibidos.
 
-Por esses motivos, o AEM Assets fornece os meios certos para criar, gerenciar e trocar metadados para seus ativos digitais.
+Por esses motivos, [!DNL Assets] fornece os meios certos de criar, gerenciar e trocar metadados para seus ativos digitais.
 
-## Noções básicas sobre metadados {#metadata-basics}
+## Tipos de metadados {#types-of-metadata}
 
-Os metadados são extraídos dos ativos quando são importados (assimilados). Além disso, adicionar metadados ajuda a categorizar ativos ainda mais.
+Os dois tipos básicos de metadados são metadados técnicos e metadados descritivos.
 
-Esta seção aborda os tipos de metadados e padrões de codificação.
+Os metadados técnicos são úteis para aplicativos de software que lidam com ativos digitais e não devem ser mantidos manualmente. [!DNL Experience Manager Assets] e outros softwares determinam automaticamente os metadados técnicos e os metadados podem mudar quando o ativo é modificado. Os metadados técnicos disponíveis de um ativo dependem em grande parte do tipo de arquivo do ativo. Alguns exemplos de metadados técnicos são:
 
-### Metadados técnicos {#technical-metadata}
+* Tamanho de um arquivo.
+* Dimensões (altura e largura) de uma imagem.
+* Taxa de bits de um arquivo de áudio ou vídeo.
+* Resolução (nível de detalhes) de uma imagem.
 
-Os metadados técnicos são úteis para aplicativos de software que lidam com ativos digitais e não devem ser mantidos manualmente. Os metadados técnicos podem ser determinados automaticamente pelos ativos AEM e outros softwares e podem mudar quando o ativo é modificado. Os metadados técnicos disponíveis de um ativo dependem em grande parte do tipo de arquivo do ativo. Os exemplos de metadados técnicos são os seguintes:
-
-* o tamanho de um arquivo
-* as dimensões (altura e largura) de uma imagem
-* a taxa de bits de um arquivo de áudio ou vídeo
-* a resolução (nível de detalhes) de uma imagem
-
-### Metadados descritivos {#descriptive-metadata}
-
-Metadados descritivos são metadados relacionados ao domínio do aplicativo, por exemplo, o negócio de onde um ativo vem. Metadados descritivos não podem ser determinados automaticamente. Ela deve ser criada manual ou semiautomaticamente. Por exemplo, uma câmera habilitada para GPS pode rastrear automaticamente a latitude e a longitude de uma imagem capturada e adicionar essas informações aos metadados da imagem.
+Metadados descritivos são metadados relacionados ao domínio do aplicativo, por exemplo, o negócio de onde um ativo vem. Metadados descritivos não podem ser determinados automaticamente. É criado manual ou semiautomaticamente. Por exemplo, uma câmera habilitada para GPS pode rastrear automaticamente a latitude e a longitude e adicionar geolocalização da imagem.
 
 Devido ao alto custo do esforço manual necessário para criar informações descritivas de metadados, foram estabelecidos padrões para facilitar a troca de metadados entre sistemas de software e organizações.
 
-O AEM Assets suporta todos os padrões relevantes para o gerenciamento de metadados.
+[!DNL Experience Manager Assets] oferece suporte a todas as normas relevantes para o gerenciamento de metadados.
 
 Devido à importância dos metadados e ao alto envolvimento manual necessário para criar metadados, foram estabelecidas normas que facilitam o intercâmbio.
 
-### Padrões de codificação {#encoding-standards}
+## Padrões de codificação {#encoding-standards}
 
-Há várias maneiras de incorporar metadados aos arquivos. Há suporte para uma seleção de padrões de codificação:
+Há várias maneiras de incorporar metadados em arquivos. Há suporte para uma seleção de padrões de codificação:
 
-* XMP: usado pelo AEM Assets para armazenar os metadados extraídos no repositório.
+* XMP: usado por [!DNL Assets] para armazenar os metadados extraídos no repositório.
 * ID3: para arquivos de áudio e vídeo.
-* EXIF: para arquivos de imagem.
-* Outro/Legado: do Microsoft Word, PowerPoint, Excel e assim por diante.
+* Exif: para arquivos de imagem.
+* Outro/Legado: de [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]e assim por diante.
 
-#### XMP {#xmp}
+### XMP {#xmp}
 
-XMP significa Plataforma de metadados extensível e é o padrão de metadados usado pelo AEM Assets para todo o gerenciamento de metadados. Além de oferecer codificação de metadados universais que podem ser incorporados em todos os formatos de arquivo, o XMP fornece um modelo de conteúdo avançado e é suportado pela Adobe e por outras empresas, de modo que os usuários do XMP em combinação com os ativos AEM tenham uma plataforma poderosa para desenvolver.
+[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por todos [!DNL Experience Manager Assets] o gerenciamento de metadados. A codificação padrão de metadados universais do oferta que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois fornece um modelo de conteúdo avançado. Os usuários do padrão XMP e do [!DNL Experience Manager Assets] têm uma plataforma poderosa para aproveitar. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
-#### ID3 {#id}
+### ID3 {#id}
 
 Os dados armazenados nessas tags ID3 são exibidos quando você reproduz um arquivo de áudio digital em seu computador ou em um player MP3 portátil.
 
 As tags ID3 foram projetadas para o formato de arquivo MP3. Informações adicionais sobre formatos:
 
-* As tags ID3 funcionam em arquivos MP3 e MP3pro.
+* As tags ID3 funcionam em arquivos MP3 e mp3PRO.
 * WAV não tem tags.
 * O WMA tem tags proprietárias que não permitem a implementação de código aberto.
-* Ogg Vorbis usa comentários Xiph incorporados no contêiner OGG.
+* Ogg Vorbis usa Comentários Xiph incorporados ao container Ogg.
 * O AAC usa um formato de marcação proprietário.
 
-#### EXIF {#exif}
+### Exif {#exif}
 
-EXIF significa o formato de arquivo de imagem permutável e é o formato de metadados mais popular usado na fotografia digital. Ele fornece uma forma de incorporar um vocabulário fixo de propriedades de metadados em vários formatos de arquivo, como
+O formato de arquivo de imagem permutável (Exif) é o formato de metadados mais popular usado na fotografia digital. Ele fornece uma maneira de incorporar um vocabulário fixo de propriedades de metadados em muitos formatos de arquivo, como JPEG, TIFF, RIFF e WAV. O Exif armazena metadados como pares de um nome de metadados e um valor de metadados. Esses pares de nome-valor de metadados também são chamados de tags, para não serem confundidos com a marcação em [!DNL Experience Manager]. Como a Exif é criada automaticamente por câmeras digitais modernas e é suportada por software de gráficos modernos, ela pode ser vista como o menor denominador comum para o gerenciamento de metadados.
 
-* JPEG
-* TIFF
-* RIFF
-* WAV
+Uma grande limitação do Exif é que alguns formatos de arquivo de imagem populares, como BMP, GIF ou PNG, não são compatíveis.
 
-Uma grande limitação do EXIF é que ele não é suportado por outros formatos de arquivo de imagem populares, como BMP, GIF ou PNG.
-
-O EXIF armazena metadados como pares de um nome de metadados e um valor de metadados. Esses pares de nome-valor de metadados também são chamados de tags, não devem ser confundidos com a marcação no AEM.
-
-Como o EXIF é criado automaticamente por câmeras digitais modernas e suportado por software de gráficos modernos, ele pode ser visto como o menor denominador comum para o gerenciamento de metadados.
-
-A maioria dos campos de metadados definidos pelo EXIF são de natureza altamente técnica e de uso limitado para o gerenciamento descritivo de metadados. Por esse motivo, o AEM Assets oferece o mapeamento de propriedades EXIF em esquemas [de metadados](metadata-schemas.md) comuns e em [XMP](xmp-metadata.md), o formato de metadados avançado que o AEM Assets usa para gerenciamento de metadados.
+Os campos de metadados normalmente definidos pela Exif são de natureza técnica e são de uso limitado para o gerenciamento descritivo de metadados. Por esse motivo, o [!DNL Experience Manager Assets] oferta mapeia as propriedades Exif em esquemas [de metadados](metadata-schemas.md) comuns e em XMP.
 
 #### Outros metadados {#other-metadata}
 
@@ -127,7 +113,7 @@ Outros metadados que podem ser incorporados de arquivos incluem Microsoft Word, 
 
 ## Gerenciar metadados de seus ativos digitais {#manage-assets-metadata}
 
-Os ativos do Enterprise Manager permitem que você edite os metadados de vários ativos simultaneamente para que possa propagar rapidamente alterações comuns de metadados para ativos em massa. Use a página [!UICONTROL Propriedades] para alterar as propriedades de metadados para um valor comum ou adicionar ou modificar tags. Para personalizar a página Propriedades de metadados, incluindo adicionar, modificar e excluir propriedades de metadados, use o Editor de esquema.
+Os ativos do Enterprise Manager permitem que você edite os metadados de vários ativos simultaneamente para que possa propagar rapidamente alterações comuns de metadados para ativos em massa. Use a página [!UICONTROL Propriedades] para alterar as propriedades de metadados para um valor comum ou adicionar ou modificar tags. Para personalizar a página Propriedades de metadados, incluindo adicionar, modificar e excluir propriedades de metadados, use o editor de Schemas.
 
 >[!NOTE]
 >
@@ -139,23 +125,23 @@ Os ativos do Enterprise Manager permitem que você edite os metadados de vários
 
    >[!NOTE]
    >
-   >Ao selecionar vários ativos, o formulário pai comum mais baixo é selecionado para os ativos. Em outras palavras, a página [!UICONTROL Propriedades] exibe apenas os campos de metadados comuns nas páginas [!UICONTROL Propriedades] de todos os ativos individuais.
+   >Quando você seleciona vários ativos, o formulário pai comum mais baixo é selecionado para os ativos. Em outras palavras, a página [!UICONTROL Propriedades] exibe apenas os campos de metadados comuns nas páginas [!UICONTROL Propriedades] de todos os ativos individuais.
 
 1. Modifique as propriedades de metadados para ativos selecionados nas várias guias.
-1. Para exibir o editor de metadados de um ativo específico, desmarque os ativos restantes na lista. Os campos do editor de metadados são preenchidos com os metadados do ativo específico.
+1. Para visualização do editor de metadados para um ativo específico, desmarque os ativos restantes na lista. Os campos do editor de metadados são preenchidos com os metadados do ativo específico.
 
    >[!NOTE]
    >
-   >* Na página [!UICONTROL Propriedades] , é possível remover ativos da lista de ativos desmarcando-os. A lista de ativos tem todos os ativos selecionados por padrão. Os metadados dos ativos que você remove da lista não são atualizados.
-   >* Na parte superior da lista de ativos, marque a caixa de seleção perto de **[!UICONTROL Título]** para alternar entre a seleção dos ativos e a limpeza da lista.
+   >* Na página [!UICONTROL Propriedades] , é possível remover ativos da lista de ativos desmarcando-os. A lista do ativo tem todos os ativos selecionados por padrão. Os metadados dos ativos que você remove da lista não são atualizados.
+   >* Na parte superior da lista de ativos, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre a seleção dos ativos e a limpeza da lista.
 
 
-1. Para selecionar um esquema de metadados diferente para os ativos, toque/clique em **[!UICONTROL Configurações]** na barra de ferramentas e selecione o esquema desejado. Salve as alterações.
-1. Para anexar os novos metadados aos metadados existentes em campos que contêm vários valores, selecione o modo **** Anexar. Se você não selecionar essa opção, os novos metadados substituirão os metadados existentes nos campos. Toque/clique em **[!UICONTROL Enviar]**.
+1. Para selecionar um schema de metadados diferente para os ativos, toque/clique em **[!UICONTROL Configurações]** na barra de ferramentas e selecione o schema desejado. Salve as alterações.
+1. Para anexar os novos metadados aos existentes em campos que contêm vários valores, selecione o **[!UICONTROL Modo anexar]**. Se você não selecionar essa opção, os novos metadados substituirão os existentes nos campos. Toque/clique em **[!UICONTROL Enviar]**.
 
    >[!CAUTION]
    >
-   >Para campos de valor único, os novos metadados não são anexados ao valor existente no campo mesmo se você selecionar o modo **** Anexar.
+   >Em campos de valor único, os novos metadados não são anexados ao valor existente no campo mesmo se você selecionar o **[!UICONTROL Modo anexar]**.
 
 ## Configurar limite para atualização de metadados em massa {#configlimit}
 
@@ -163,81 +149,74 @@ Para evitar uma situação semelhante ao DOS, o AEM limita o número de parâmet
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Para alterar o limite, acesse o Console da Web ( **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web) e altere o valor de Parâmetros **[!UICONTROL de POST]** Máximo na configuração **[!UICONTROL do OSGi de Tratamento]** de Parâmetro de Solicitação Sling do Apache.
+Para alterar o limite, acesse o Console da Web (**[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**) e altere o valor de **[!UICONTROL Parâmetros de POST máximo]** na configuração OSGi da **[!UICONTROL Manipulação de parâmetro da solicitação do Apache]**.
 
-## Esquema de metadados {#metadata-schemata}
+## Esquemas de metadados {#metadata-schemata}
 
-Os esquemas de metadados são conjuntos predefinidos de definições de propriedade de metadados que podem ser usados em diversos aplicativos. As propriedades estão sempre associadas a um ativo, o que significa que as propriedades são &quot;sobre&quot; o recurso.
+Os schemas de metadados são conjuntos predefinidos de definições de propriedade de metadados que podem ser usados em vários aplicativos. As propriedades estão sempre associadas a um ativo, o que significa que as propriedades são &#39;sobre&#39; o recurso.
 
-Você também pode projetar seus próprios esquemas de metadados se não houver nenhum que atenda às suas necessidades (tenha cuidado, no entanto, para não duplicar algo que já existe). Em uma organização, a separação de esquemas facilita o compartilhamento de metadados entre organizações.
+Você também pode projetar seus próprios esquemas de metadados se não houver nenhum que atenda às suas necessidades. Não duplicado informações existentes. Em uma organização, a separação de esquemas facilita o compartilhamento de metadados. [!DNL Experience Manager] fornece uma lista padrão dos esquemas de metadados mais populares. A lista ajuda você a iniciar rapidamente sua estratégia de metadados e a escolher rapidamente as propriedades de metadados de que você precisa.
 
-O AEM fornece uma lista pronta dos esquemas de metadados mais populares, permitindo que você inicie rapidamente sua estratégia de metadados e escolha as propriedades de metadados de que você precisa em um esquema já definido.
+Os esquemas de metadados suportados estão listados abaixo.
 
-Os esquemas de metadados suportados estão listados na seção a seguir.
+### Metadados padronizados {#standard-metadata}
 
-### Metadados padrão {#standard-metadata}
-
-* dc - Dublin Core - o conjunto de metadados mais importante e amplamente utilizado
-* DICOM - Imagens digitais e comunicações na medicina
-* Iptc4xmpCore &amp; iptc4xmpExt - International Press Communications Standard - muitos metadados específicos do assunto
-* rdf - Estrutura de Descrição de Recurso - para metadados web semânticos genéricos
-* xmp - Plataforma extensível de metadados
-* xmpBJ - Ingresso no serviço básico
+* dc - [!DNL Dublin Core] é o conjunto de metadados mais importante e amplamente utilizado.
+* DICOM - Digital Imaging and Communications in Medicine (Imagem digital e comunicações em medicina).
+* Iptc4xmpCore &amp; iptc4xmpExt - International Press Communications Standard contém muitos metadados específicos para cada assunto.
+* rdf - Estrutura de Descrição do Recurso - para metadados semânticos genéricos da Web.
+* xmp - [!DNL Extensible Metadata Platform].
+* xmpBJ - Ingresso no serviço básico.
 
 ### Metadados específicos do aplicativo {#application-specific-metadata}
 
->[!NOTE]
->
->Metadados específicos do aplicativo incluem metadados técnicos e descritivos. Se você os usar, outros aplicativos talvez não consigam usar os metadados. Por exemplo, se você tiver um ativo com metadados do Adobe Photoshop e outro aplicativo de renderização de imagem tentar acessar os metadados, talvez ele não consiga.
->
->Se você descobrir que tem muitos metadados específicos do aplicativo em seus ativos, poderá criar uma etapa de fluxo de trabalho que altera a propriedade específica do aplicativo para uma padrão.
+Os metadados específicos do aplicativo incluem metadados técnicos e descritivos. Se você os usar, outros aplicativos talvez não consigam usar os metadados. Por exemplo, se você tiver um ativo com [!DNL Adobe Photoshop] metadados e outro aplicativo de renderização de imagem tentar acessar os metadados, talvez ele não consiga acessar os metadados. Se você descobrir que tem muitos metadados específicos do aplicativo em seus ativos, poderá criar uma etapa de fluxo de trabalho que altera uma propriedade específica do aplicativo para uma propriedade padrão.
 
-* acdsee - metadados gerenciados pelo programa ACDSee [www.acdsee.com/](https://www.acdsee.com/)
-* álbum - Adobe Photoshop Album
-* cq - usado pelo AEM Assets
-* dam - usado pelo AEM Assets
-* dex - Optima SC Description Explorer
-* crs - Adobe Photoshop Camera Raw
-* lr - Adobe Lightroom
-* mediapro - IView MediaPro
-* MicrosoftPhoto &amp; MP - Microsoft Photo
-* pdf e pdfx
-* photoshop &amp; psAux - Adobe Photoshop
+* ACDSee - Metadados gerenciados pelo [!DNL ACDSee] programa. Consulte [www.acdsee.com/](https://www.acdsee.com/).
+* álbum - [!DNL Adobe Photoshop Album].
+* cq - Usado por [!DNL Experience Manager Assets].
+* dam - Usado por [!DNL Experience Manager Assets].
+* dex - Optima SC Description Explorer.
+* crs - Adobe Photoshop Camera Raw.
+* - [!DNL Adobe Lightroom].
+* mediapro - IView MediaPro.
+* MicrosoftPhoto &amp; MP - Microsoft Photo.
+* pdf &amp; pdfx.
+* photoshop &amp; psAux - [!DNL Adobe Photoshop].
 
-### Metadados do gerenciamento de direitos digitais {#digital-rights-management-metadata}
+### Metadados do Gerenciamento de direitos digitais {#digital-rights-management-metadata}
 
-* cc - creative commons
-* xmpRights
-* mais - Sistema Universal de Licenciamento de Imagens - https://www.useplus.com/
-* prisma - https://www.idealliance.org/prism-metadata de publicação da DPS para metadados padrão do setor
-* prl - Idioma dos Direitos da Prisma
-* pur - Direitos de uso de prisioneiros
-* xmpPlus - integração de PLUS com XMP
+* CC - [!DNL Creative Commons].
+* [!DNL XMPRights].
+* mais - Sistema [Universal de Licenciamento de](https://www.useplus.com)Imagens.
+* prismo - https://www.idealliance.org/prism-metadata de publicação do iOS para metadados padrão do setor.
+* PRL - Idioma dos Direitos do PRISM.
+* PUR - Direitos de uso do PRISM.
+* xmpPlus - Integração de PLUS com XMP.
 
-### Metadados específicos para fotografia {#photography-specific-metadata}
+### Metadados específicos da fotografia {#photography-specific-metadata}
 
-* exif - muitas informações técnicas da câmera, incluindo a posição GPS
-* crs - Photoshop camera raw
-* Iptc4xmpCore e iptc4xmpExt
-* TIFF - metadados de imagem (não apenas para imagens TIFF)
+* Exif - Informações técnicas da câmera, incluindo a posição GPS.
+* CRS - [!DNL Camera Raw] schema.
+* Iptc4xmpCore e iptc4xmpExt.
+* TIFF - metadados de imagem (não apenas para imagens TIFF).
 
 ### Metadados específicos para impressão {#print-specific-metadata}
 
-* pdf e pdfx - Adobe PDF e aplicativos de terceiros
-* prisma - [www.prismstandard.org](https://www.prismstandard.org) de publicação da DPS para metadados padrão do setor
-* xmp
-* xmpPG - xmp para texto paginado
+* pdf e pdfx - Adobe PDF e aplicativos de terceiros.
+* prismo - [www.prismstandard.org](https://www.prismstandard.org) de publicação da DPS para metadados padrão do setor.
+* XMP.
+* xmpPG - Metadados XMP para texto paginado.
 
 ### Metadados específicos de multimídia {#multimedia-specific-metadata}
 
-* xmpDM - Dynamic Media
-* xmpMM - Gerenciamento de mídia
+* xmpDM - [!DNL Dynamic Media].
+* xmpMM - Gerenciamento de mídia.
 
-## Fluxos de trabalho orientados por metadados {#metadata-driven-workflows}
+## workflows orientados por metadados {#metadata-driven-workflows}
 
-A criação de fluxos de trabalho orientados por metadados ajuda a automatizar alguns processos, o que aumenta a eficiência. Em um fluxo de trabalho controlado por metadados, o sistema de gerenciamento de fluxo de trabalho lê o fluxo de trabalho e, como resultado, executa alguma ação predefinida.
+A criação de workflows orientados por metadados ajuda a automatizar alguns processos, o que aumenta a eficiência. Em um fluxo de trabalho controlado por metadados, o sistema de gerenciamento de fluxo de trabalho lê o fluxo de trabalho e, como resultado, executa alguma ação predefinida. Por exemplo, algumas maneiras de usar workflows orientados por metadados:
 
-Por exemplo, algumas maneiras de usar fluxos de trabalho orientados por metadados:
-
-* O fluxo de trabalho pode verificar se uma imagem tem um título. Caso contrário, o sistema notifica um usuário específico para adicionar um título.
-* O fluxo de trabalho pode verificar se um aviso de direitos autorais em um ativo permite a distribuição. Se isso ocorrer, o sistema enviará o ativo para um servidor. Caso contrário, o sistema enviará o ativo para outro servidor.
+* O fluxo de trabalho pode verificar se uma imagem tem um título ou não. Caso contrário, o sistema notifica para adicionar um título.
+* O fluxo de trabalho pode verificar se um aviso de direitos autorais em um ativo permite distribuição ou não. Assim, o sistema envia o ativo para um servidor ou outro.
+* Um fluxo de trabalho pode verificar ativos sem metadados obrigatórios e predefinidos ou ativos com metadados *inválidos* .
