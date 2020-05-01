@@ -3,7 +3,7 @@ title: Use o Connected Assets para compartilhar ativos do DAM no fluxo de trabal
 description: Use os ativos disponíveis em uma implantação remota do Adobe Experience Manager Assets ao criar suas páginas da Web em outra implantação do Experience Manager Site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7524f6146c33932677b6c8af49d5fe2638a5c02a
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -37,8 +37,8 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 
 Os autores podem pesquisar imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao componente `Download` e as imagens podem ser adicionadas ao componente `Image`. Os autores também podem adicionar os ativos remotos em qualquer componente personalizado do AEM, que estende os componentes padrão `Download` ou `Image`. As listas de formatos compatíveis incluem:
 
-* **Formatos de imagem**: os formatos de imagem compatíveis com o [componente de Imagem](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/image.html) são compatíveis. As imagens da mídia dinâmica não são compatíveis.
-* **Formatos de documento**: consulte [Formatos de documento compatíveis com os Connected Assets](file-format-support.md#doc-formats).
+* **Formatos de imagem**: os formatos de imagem compatíveis com o [componente de Imagem](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) são compatíveis. As imagens da mídia dinâmica não são compatíveis.
+* **Formatos de documento**: consulte [Formatos de documento compatíveis com os Connected Assets](file-format-support.md#document-formats).
 
 ### Usuários e grupos envolvidos {#users-and-groups-involved}
 
@@ -153,7 +153,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
 Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se os metadados associados não puderem ser editados.
 
-## Limitações        {#limitations}
+## Limitações         {#limitations}
 
 **Permissões e gerenciamento de ativos**
 
