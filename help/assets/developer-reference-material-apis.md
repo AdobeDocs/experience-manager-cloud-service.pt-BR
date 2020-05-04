@@ -3,7 +3,7 @@ title: 'APIs de ativos para gerenciamento de ativos digitais no Adobe Experience
 description: As APIs de ativos permitem operações básicas de criação-leitura-atualização-exclusão (CRUD) para gerenciar ativos, incluindo binários, metadados, representações, comentários e Fragmentos de conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
 
 ---
 
@@ -48,7 +48,7 @@ A primeira etapa é enviar uma solicitação HTTP POST para a pasta onde o ativo
 
 ```
 POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-````
+```
 
 O tipo de conteúdo do corpo da solicitação deve ser dados de `application/x-www-form-urlencoded` formulário, contendo os seguintes campos:
 
