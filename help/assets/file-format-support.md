@@ -3,7 +3,7 @@ title: Formatos de arquivo e tipos MIME suportados pelos ativos Experience Manag
 description: Formatos de arquivo e tipos MIME suportados pelos ativos Experience Manager como um serviço em nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4729f0bdd3cf7e2c6fc80e52bf2f70d689956296
+source-git-commit: 2e73a9bba91f15702bdeb1d57e87b688360661bd
 
 ---
 
@@ -32,130 +32,120 @@ Os destaques incluem:
 * Formatos [comuns de](#document-formats)documento, incluindo os formatos Microsoft Office e Open Documento.
 * Grande variedade de formatos de [vídeo](#video-formats) e [áudio.](#audio-formats)
 
-As colunas das tabelas a seguir fornecem as seguintes informações:
-
-| Coluna | Descrição |
-| ------------ | --------------------------------------------------------------- |
-| Formato | Formato de arquivo (extensão de arquivo) do binário original do ativo. |
-| GIF | Formato GIF para geração de representação. |
-| JPEG | Formato JPEG para geração de representação. |
-| PNG | Formato PNG para geração de representação. |
-| Largura/altura | Suporte para definir a largura e a altura de uma representação em pixels. |
-
 ### Formatos da Adobe {#adobe-formats}
 
-| Formato de arquivo | GIF | JPEG | PNG | extração de texto completo | TIFF | Extração de metadados | Largura/altura |
-| ----------- | -------- | -------- | -------- | ------------------- | -------- | ------------------- | ------------ |
-| AI | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
-| COLAGEM | - | - | - | - | - | ✓ | - |
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ |
-| IDEIAS | - | - | - | - | - | ✓ | - |
-| INDD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓* |
-| INDT | - | - | - | - | - | ✓ | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | - | - | - | ✓ | - |
-| PSB | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
-| PSD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
-| XD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| Formato de arquivo | Geração de miniaturas | extração de texto completo | Extração de metadados | Largura/altura |
+| ----------- | -------------------- | ------------------- | ------------------- | ------------ |
+| AI | ✓ | - | ✓ | ✓ |
+| COLAGEM | - | - | ✓ | - |
+| DN | ✓ |  | ✓ | ✓ |
+| IDEIAS | - | - | ✓ | - |
+| INDD | ✓ | - | ✓ | ✓ * |
+| INDT | - | - | ✓ | - |
+| PDF | ✓ | ✓ | ✓ | ✓ |
+| PROTO | - | - | ✓ | - |
+| PSB | ✓ | - | ✓ | ✓ |
+| PSD | ✓ | - | ✓ | ✓ |
+| XD | ✓ | - | ✓ | ✓ |
 
 \* Para INDD (arquivos do InDesign), o tamanho da execução é determinado pela pré-visualização incorporada ao arquivo INDD. Configure as preferências no InDesign (**[!UICONTROL Preferências > Manuseio de arquivo > Sempre salvar imagens de Pré-visualização com Documentos, tamanho]** de Pré-visualização) para incorporar renderização maior.
 
 ### Formatos de imagem {#image-formats}
 
-| Formato de arquivo | GIF | JPEG | PNG | TIFF | Extração de metadados | Largura/altura | Cortar |
-| ----------- | -------- | -------- | -------- | -------- | ------------------- | ------------ | -------- |
-| BMP | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| EPS | - | - | - | - | ✓ | - | - |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | - | - | - | ✓ | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura | Cortar |
+| ----------- | -------------------- | ------------------- | ------------ | -------- |
+| BMP | ✓ | - | ✓ | ✓ |
+| EPS | - | ✓ | - | - |
+| GIF | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ |
+| PNG | ✓ | ✓ | ✓ | ✓ |
+| SVG | - | ✓ | - | - |
+| TIFF | ✓ | ✓ | ✓ | - |
 
 ### Formatos Camera RAW {#camera-raw-formats}
 
-| Formato de arquivo | GIF | JPEG | PNG | TIFF | Extração de metadados | Largura/altura |
-| ----------- | -------- | -------- | -------- | -------- | ------------------- | ------------ |
-| 3FR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ARW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CR2 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CR3 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DCR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ERF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| FFF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GPR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| IIQ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| KDC | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MFW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MOS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| NRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RW2 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RWL | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SRF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| X3F | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
+| ----------- | -------------------- | ------------------- | ------------ |
+| 3FR | ✓ | ✓ | ✓ |
+| ARW | ✓ | ✓ | ✓ |
+| CR2 | ✓ | ✓ | ✓ |
+| CR3 | ✓ | ✓ | ✓ |
+| CRW | ✓ | ✓ | ✓ |
+| DCR | ✓ | ✓ | ✓ |
+| DNG | ✓ | ✓ | ✓ |
+| ERF | ✓ | ✓ | ✓ |
+| FFF | ✓ | ✓ | ✓ |
+| GPR | ✓ | ✓ | ✓ |
+| IIQ | ✓ | ✓ | ✓ |
+| KDC | ✓ | ✓ | ✓ |
+| MEF | ✓ | ✓ | ✓ |
+| MFW | ✓ | ✓ | ✓ |
+| MOS | ✓ | ✓ | ✓ |
+| MRW | ✓ | ✓ | ✓ |
+| NEF | ✓ | ✓ | ✓ |
+| NRW | ✓ | ✓ | ✓ |
+| ORF | ✓ | ✓ | ✓ |
+| PEF | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ |
+| RAW | ✓ | ✓ | ✓ |
+| RW2 | ✓ | ✓ | ✓ |
+| RWL | ✓ | ✓ | ✓ |
+| SRF | ✓ | ✓ | ✓ |
+| SRW | ✓ | ✓ | ✓ |
+| X3F | ✓ | ✓ | ✓ |
 
 ### formatos de Documento {#document-formats}
 
 Os formatos de documento compatíveis com os recursos de gerenciamento de ativos são os seguintes:
 
-|  | GIF | JPEG | PNG | extração de texto completo | TIFF | Largura/altura | Gerenciamento de metadados | [Connected Assets](use-assets-across-connected-assets-instances.md) |
-| ---- | -------- | -------- | -------- | ------------------- | -------- | ------------ | ------------------- | ------------------------------------------------------------------- |
-| PDF | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOC | - | - | - | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLS | - | - | - | - | - | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| OFF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | - | - | ✓ | - | - | - | - |
-| HTML | - | - | - | ✓ | - | - | ✓ | ✓ |
-| PS | - | - | - | - | - | ✓ | - | - |
-| RTF | - | - | - | ✓ | - | - | ✓ | ✓ |
-| TXT | - | - | - | ✓ | - | - | ✓ | ✓ |
-| XML | - | - | - | ✓ | - | - | - | - |
+| Formato de arquivo | Geração de miniaturas | extração de texto completo | Largura/altura | Gerenciamento de metadados | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DOC | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XLS | - | - | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | - | - |
+| OFF | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | ✓ | - | - | - |
+| HTML | - | ✓ | - | ✓ | ✓ |
+| PS | - | - | ✓ | - | - |
+| RTF | - | ✓ | - | ✓ | ✓ |
+| TXT | - | ✓ | - | ✓ | ✓ |
+| XML | - | ✓ | - | - | - |
 
 ### Formatos de vídeo {#video-formats}
 
-| Formato de arquivo | GIF | JPEG | PNG | Extração de metadados | Largura/altura |
-| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
-| 3G2 | - | - | - | ✓ | - |
-| 3GP | - | - | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DIVX | ✓ | ✓ | ✓ |  | ✓ |
-| F4V | ✓ | ✓ | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ | ✓ | ✓ |
-| M2T | ✓ | ✓ | ✓ | - | ✓ |
-| M2TS | ✓ | ✓ | ✓ | - | ✓ |
-| M2V | ✓ | ✓ | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MKV | ✓ | ✓ | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MTS | ✓ | ✓ | ✓ | - | ✓ |
-| OGV | ✓ | ✓ | ✓ | - | ✓ |
-| QT | ✓ | ✓ | ✓ | - | ✓ |
-| R3D | ✓ | ✓ | ✓ | - | ✓ |
-| SWF | ✓ | ✓ | ✓ | - | ✓ |
-| WEBM | ✓ | ✓ | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
+| ----------- | -------------------- | ------------------- | ------------ |
+| 3G2 | - | ✓ | - |
+| 3GP | - | ✓ | - |
+| AVI | ✓ | ✓ | ✓ |
+| DIVX | ✓ |  | ✓ |
+| F4V | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ |
+| M2TS | ✓ | - | ✓ |
+| M2V | ✓ | - | ✓ |
+| M4V | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ |
+| MOV | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ |
+| OGV | ✓ | - | ✓ |
+| QT | ✓ | - | ✓ |
+| R3D | ✓ | - | ✓ |
+| SWF | ✓ | - | ✓ |
+| WEBM | ✓ | - | ✓ |
+| WMV | ✓ | ✓ | ✓ |
 
 ### Formatos de áudio {#audio-formats}
 
