@@ -2,7 +2,7 @@
 sub-product: Criação de conteúdo no AEM como um serviço em nuvem
 user-guide-title: Criação de conteúdo no AEM como um serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
       + [Exportar para CSV](authoring/fundamentals/csv-export.md)
       + [Componentes](authoring/fundamentals/components.md)
       + [Criação para dispositivos móveis](authoring/fundamentals/mobile.md)
-      + [Conteúdo acessível (Conformidade com o WCAG 2.0)](authoring/fundamentals/accessible-content.md)
+      + [Criação de conteúdo acessível (Conformidade com a WCAG 2.1) ](authoring/fundamentals/accessible-content.md)
       + [Resolução de Problemas](authoring/fundamentals/troubleshooting.md)
       + [Atalhos de teclado](authoring/fundamentals/keyboard-shortcuts.md)
    + Recursos de criação {#features}
