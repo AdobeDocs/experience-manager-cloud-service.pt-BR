@@ -1,7 +1,7 @@
 ---
 title: Problemas conhecidos
 description: Notas de versão específicas para os problemas conhecidos do Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 ---
@@ -11,7 +11,7 @@ source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 Este artigo lista os problemas conhecidos da oferta do Adobe Experience Manager as a Cloud Service. A lista é revisada e atualizada a cada versão contínua do Experience Manager.
 
-[Entre em contato com o suporte](https://helpx.adobe.com/support/experience-manager.html) para obter mais informações sobre os problemas conhecidos.
+[Entre em contato com o suporte](https://helpx.adobe.com/br/support/experience-manager.html) para obter mais informações sobre os problemas conhecidos.
 
 <!-- 
 ## Platform {#platform}
@@ -25,7 +25,7 @@ Este artigo lista os problemas conhecidos da oferta do Adobe Experience Manager 
 
 Alguns problemas conhecidos são:
 
-* **Schema** de metadados: Widget de classificação de ativos usado para causar erro de compilação JSP. Foi removido do schema de metadados. <!-- CQ-4282865, CQ-4284633 -->
+* **Esquema de metadados**: o dispositivo de classificação de ativos usado para causar erro de compilação de JSP. Foi removido do esquema de metadados. <!-- CQ-4282865, CQ-4284633 -->
 
 ### Futuros recursos do Assets {#upcoming-assets-capabilities}
 
