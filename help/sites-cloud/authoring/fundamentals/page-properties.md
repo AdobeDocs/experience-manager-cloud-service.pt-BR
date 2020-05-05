@@ -1,7 +1,7 @@
 ---
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
@@ -80,7 +80,7 @@ As propriedades são distribuídas por várias guias.
 
    * Indica se você deseja que a página use a URL personalizada.
 
-### Avançado    {#advanced}
+### Avançado     {#advanced}
 
 * **Idioma**
 
@@ -136,7 +136,7 @@ As propriedades são distribuídas por várias guias.
 
    * Especifique uma configuração de exportação.
 
-### Miniatura    {#thumbnail}
+### Miniatura     {#thumbnail}
 
 Exibe a imagem de miniatura da página. É possível:
 
@@ -189,7 +189,7 @@ Exibe a imagem de miniatura da página. É possível:
    >[!NOTE]
    >Para selecionar essa opção, é necessário que a conta de usuário esteja no `Target Adminstrators`grupo.
 
-### Permissões    {#permissions}
+### Permissões     {#permissions}
 
 * **Permissões**
 
@@ -212,14 +212,14 @@ Exibe a imagem de miniatura da página. É possível:
    * Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
 
-### Live Copy    {#live-copy}
+### Live Copy     {#live-copy}
 
 * **Live Copy**
 
    * Defina as propriedades para uma página de Live Copy no gerenciamento de vários sites. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site    {#site-structure}
+### Estrutura do site     {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
