@@ -1,7 +1,7 @@
 ---
 sub-product: Notas de versão para AEM as a Cloud Service
 user-guide-title: Notas de versão para AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
 
 ---
