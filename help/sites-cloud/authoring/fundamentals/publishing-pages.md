@@ -1,7 +1,7 @@
 ---
 title: Publicar páginas
 description: Como publicar e desfazer a publicação de páginas usando o AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
@@ -11,7 +11,7 @@ source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 Depois de criar (e revisar) seu conteúdo no ambiente de criação, o objetivo é [disponibilizá-lo em seu site público ](/help/sites-cloud/authoring/getting-started/concepts.md)(seu ambiente de publicação).
 
-Isso é referido como a publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer publicação. Ao publicar e desfazer a publicação, a página permanece disponível no ambiente de criação para modificações adicionais até que você a exclua.
+Isso é referido como a publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer a publicação. Ao publicar e desfazer a publicação, a página permanece disponível no ambiente de criação para modificações adicionais até que você a exclua.
 
 Você pode publicar/desfazer a publicação de uma página imediatamente ou em uma data/hora predefinida posteriormente.
 
@@ -19,7 +19,7 @@ Você pode publicar/desfazer a publicação de uma página imediatamente ou em u
 
 Você pode encontrar termos diferentes relacionados à publicação enquanto trabalha com o AEM.
 
-* **Publicar/Desfazer publicação**
+* **Publicar/Desfazer a publicação**
    * Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
    * Esses são os termos usados na documentação do AEM.
 * **Ativar / Desativar**
@@ -82,10 +82,10 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 No console de sites, existem duas opções para publicação:
 
-* [Publicação rápida  ](#quick-publish)
-* [Gerenciar publicação  ](#manage-publication)
+* [Publicação rápida](#quick-publish)
+* [Gerenciar publicação](#manage-publication)
 
-#### Publicação rápida   {#quick-publish}
+#### Publicação rápida    {#quick-publish}
 
 A **Publicação rápida** serve para casos simples e publica as páginas selecionadas imediatamente, sem qualquer outra interação. Por isso, quaisquer referências não publicadas também serão publicadas automaticamente.
 
@@ -105,7 +105,7 @@ Para publicar uma página com a Publicação rápida:
 >
 >A Publicação rápida é uma publicação superficial, ou seja, apenas as páginas selecionadas são publicadas, sem incluir páginas filhas.
 
-#### Gerenciar publicação   {#manage-publication}
+#### Gerenciar publicação    {#manage-publication}
 
 A opção **Gerenciar publicação** oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
 
@@ -190,7 +190,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
    * Definir um título do pacote de fluxo de trabalho se a opção para manter esse pacote tiver sido escolhida.
    Clique em **Publicar** ou **Publicar mais tarde** para concluir a publicação.
 
-## Desfazer publicação de páginas {#unpublishing-pages}
+## Desfazer a publicação de páginas {#unpublishing-pages}
 
 Desfazer a publicação de uma página fará com que ela seja removida do seu ambiente de publicação, deixando de estar disponível aos seus leitores.
 
@@ -199,18 +199,18 @@ De uma [maneira semelhante à publicação](#publishing-pages), uma ou mais pág
 * [No editor de páginas](#unpublishing-from-the-editor)
 * [Do console de sites](#unpublishing-from-the-console)
 
-### Desfazer publicação por meio do editor   {#unpublishing-from-the-editor}
+### Desfazer a publicação por meio do editor    {#unpublishing-from-the-editor}
 
-Ao editar uma página, se quiser desfazer a sua publicação, selecione **Desfazer publicação da página** no menu **Informações da página**, da mesma maneira que faria para [publicar essa página](#publishing-from-the-editor).
+Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a publicação da página** no menu **Informações da página**, da mesma maneira que faria para [publicar essa página](#publishing-from-the-editor).
 
-### Desfazer publicação por meio do console   {#unpublishing-from-the-console}
+### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
 
 Da mesma forma que você [usa a opção Gerenciar publicação para publicar](#manage-publication), também pode usá-la para desfazer a publicação.
 
 1. Selecione as páginas no console Sites e clique no botão **Gerenciar publicação**.
-1. O assistente para **Gerenciar publicação** é iniciado. Na primeira etapa, **Opções**, selecione **Desfazer publicação** em vez da opção padrão **Publicar**.
+1. O assistente para **Gerenciar publicação** é iniciado. Na primeira etapa, **Opções**, selecione **Desfazer a publicação** em vez da opção padrão **Publicar**.
 
-   ![Desfazer publicação](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
+   ![Desfazer a publicação](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
    Da mesma forma que a opção para publicar mais tarde inicia um fluxo de trabalho para publicar essa versão de página no horário especificado, a opção para desativar mais tarde inicia um fluxo de trabalho para desfazer a publicação das páginas selecionadas em um momento específico.
 
@@ -218,7 +218,7 @@ Da mesma forma que você [usa a opção Gerenciar publicação para publicar](#m
 
 1. Para concluir o cancelamento da publicação, prossiga com o assistente como faria para [publicar a página](#manage-publication).
 
-## Publicar e desfazer publicação de uma árvore {#publishing-and-unpublishing-a-tree}
+## Publicar e desfazer a publicação de uma Arvore {#publishing-and-unpublishing-a-tree}
 
 Ao inserir ou atualizar um número considerável de páginas de conteúdo, todas residentes na mesma página raiz, pode ser mais fácil publicar a árvore inteira em uma única ação.
 
@@ -236,7 +236,7 @@ Você pode usar a opção [Gerenciar publicação](#manage-publication) no conso
    * Incluir somente páginas já publicadas
    Essas opções são selecionadas por padrão e, portanto, você deve se lembrar de desmarcá-las. Clique em **Adicionar** para confirmar e adicionar o conteúdo à publicação ou ao cancelamento da publicação.
 
-   ![Inclusão de filhos ao desfazer publicação](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
+   ![Inclusão de filhos ao desfazer a publicação](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
 
 1. O assistente para **Gerenciar publicação** lista o conteúdo da árvore para revisão. Você pode personalizar ainda mais a seleção, adicionando outras páginas ou removendo as selecionadas.
 
