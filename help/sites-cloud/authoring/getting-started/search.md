@@ -1,7 +1,7 @@
 ---
 title: 'Pesquisar  '
 description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
