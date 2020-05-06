@@ -2,12 +2,15 @@
 title: Configuração do OSGi para AEM como um serviço em nuvem
 description: 'Configuração do OSGi com valores secretos e valores específicos do Ambiente '
 translation-type: tm+mt
-source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '2509'
+ht-degree: 0%
 
 ---
 
 
-# Configurações do OSGi {#osgi-configurations}
+# Configuring OSGi for AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [O OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologias do Adobe Experience Manager (AEM). É usado para controlar os pacotes compostos do AEM e suas configurações.
 
@@ -95,7 +98,7 @@ Há três variedades de valores de configuração OSGi que podem ser usadas com 
 
 O caso comum para OSGi usa valores de configuração OSGi em linha. As configurações específicas do Ambiente são usadas apenas para casos de uso específicos em que um valor é diferente entre ambientes dev.
 
-![](assets/choose-configuration-value-type.png)
+![](assets/choose-configuration-value-type_res1.png)
 
 As configurações específicas do Ambiente estendem as configurações OSGi tradicionais e definidas estaticamente que contêm valores em linha, proporcionando a capacidade de gerenciar os valores de configuração OSGi externamente por meio da API do Cloud Manager. É importante entender quando deve ser usada a abordagem comum e tradicional de definir valores em linha e armazená-los em Git, em vez de abstrair os valores em configurações específicas do ambiente.
 
@@ -165,50 +168,19 @@ Para adicionar uma nova configuração ao repositório, é necessário saber o s
 
 Para adicionar a nova configuração ao repositório:
 
-1. Use o CRXDE Lite para navegar até:
+1. No projeto ui.apps, crie uma `/apps/…/config.xxx` pasta conforme necessário com base no modo de execução que você está usando
 
-   ` /apps/<yourProject>`
+1. Crie um novo arquivo JSON com o nome do PID e adicione a `.cfg.json` extensão
 
-1. Se ainda não existir, crie a `config` pasta ( `sling:Folder`):
 
-   * `config` - aplicável a todos os modos de funcionamento
-   * `config.<run-mode>` - específico de um modo de funcionamento específico
+1. Preencha o arquivo JSON com os pares de valores da chave de configuração OSGi
 
-1. Nesta pasta, crie um nó:
-
-   * Tipo: `sling:OsgiConfig`
-   * Nome: a identidade persistente (PID);
-
-      por exemplo, para uso do Gerenciador de versão do AEM WCM `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >Ao fazer uma configuração de fábrica, acrescente `-<identifier>` ao nome.
-   >
-   >Como em: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
-   >
-   >Onde `<identifier>` é substituído pelo texto livre que você (deve) deve digitar para identificar a instância (não é possível omitir essas informações); por exemplo:
-   >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >Se você estiver configurando um serviço OSGi pronto, poderá procurar os nomes de propriedade OSGi por meio de `/system/console/configMgr`
 
-1. Para cada parâmetro que você deseja configurar, crie uma propriedade neste nó:
 
-   * Nome: o nome do parâmetro, conforme mostrado no console da Web; o nome é mostrado entre parênteses no final da descrição do campo. Por exemplo, para `Create Version on Activation` uso `versionmanager.createVersionOnActivation`
-   * Tipo: conforme apropriado.
-   * Valor: conforme necessário.
-   Você só precisa criar propriedades para os parâmetros que deseja configurar, outras pessoas ainda usarão os valores padrão definidos pelo AEM.
-
-1. Salve todas as alterações.
-
-   As alterações são aplicadas assim que o nó é atualizado, reiniciando o serviço (assim como as alterações feitas no console da Web).
-
->[!CAUTION]
->
->Você não deve alterar nada no `/libs` caminho.
-
->[!CAUTION]
->
->O caminho completo de uma configuração deve estar correto para ser lido na inicialização.
-
+1. Salve o arquivo JSON em seu projeto.
 
 ## Formato De Propriedade De Configuração No Controle De Origem {#configuration-property-format-in-source-control}
 
