@@ -2,12 +2,15 @@
 title: Regras de qualidade de código personalizado - Serviços em nuvem
 description: Regras de qualidade de código personalizado - Serviços em nuvem
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+workflow-type: tm+mt
+source-wordcount: '2254'
+ht-degree: 5%
 
 ---
 
 
-# Understanding Custom Code Quality Rules {#custom-code-quality-rules}
+# Noções básicas das regras de qualidade do código personalizado {#custom-code-quality-rules}
 
 
 Esta página descreve as regras de qualidade de código personalizadas executadas pelo Cloud Manager criadas com base nas práticas recomendadas da engenharia do AEM.
@@ -30,7 +33,7 @@ A seção a seguir destaca as regras do SonarQube:
 
 **Desde**: Versão 2018.4.0
 
-Os métodos ***Thread.stop()*** e ***Thread.interrupt()*** podem gerar problemas difíceis de reproduzir e, em alguns casos, vulnerabilidades de segurança. A sua utilização deve ser rigorosamente monitorizada e validada. Em geral, a transmissão de mensagens é uma forma mais segura de atingir objetivos semelhantes.
+Os métodos ***Thread.stop()*** e ***Thread.interrupt()*** podem gerar problemas de difícil reprodução e, em alguns casos, vulnerabilidades de segurança. A utilização deve ser rigorosamente monitorizada e validada. Em geral, a transmissão de mensagens é uma forma mais segura de atingir objetivos semelhantes.
 
 #### Código não compatível {#non-compliant-code}
 
@@ -189,9 +192,9 @@ public void orDoThis() {
 
 **Desde**: Versão 2018.7.0
 
-A API do AEM contém interfaces e classes Java que devem ser usadas apenas, mas não implementadas, pelo código personalizado. Por exemplo, a interface *com.day.cq.wcm.api.Page* foi projetada para ser implementada somente ***pelo*** AEM.
+A API do AEM contém interfaces e classes do Java que devem ser usadas, mas não implementadas, apenas pelo código personalizado. Por exemplo, a interface *com.day.cq.wcm.api.Page* foi projetada para ser implementada ***somente pelo AEM***.
 
-Quando novos métodos são adicionados a essas interfaces, esses métodos adicionais não afetam o código existente que usa essas interfaces e, como resultado, a adição de novos métodos a essas interfaces é considerada retrocompatível. No entanto, se o código personalizado ***implementa*** uma dessas interfaces, ele apresenta um risco de compatibilidade com versões anteriores para o cliente.
+Quando novos métodos são adicionados a essas interfaces, esses métodos adicionais não afetam o código existente que usa essas interfaces e, como resultado, a adição de novos métodos a essas interfaces é considerada compatível com versões anteriores. No entanto, se o código personalizado ***implementa*** uma dessas interfaces, ele apresenta um risco de compatibilidade com versões anteriores para o cliente.
 
 As interfaces (e classes) que só devem ser implementadas pelo AEM são anotadas com *org.osgi.annotation.versioning.ProviderType* (ou, em alguns casos, uma anotação herdada similar *aQute.bnd.annotation.ProviderType*). Essa regra identifica os casos em que tal interface é implementada (ou uma classe é estendida) pelo código personalizado.
 
@@ -217,7 +220,7 @@ public class DontDoThis implements Page {
 
 Os objetos ResourceResolver obtidos a partir do ResourceResolverFactory consomem recursos do sistema. Embora existam medidas para recuperar esses recursos quando um ResourceResolver não estiver mais em uso, é mais eficiente fechar explicitamente quaisquer objetos ResourceResolver abertos chamando o método close().
 
-Um equívoco relativamente comum é que os objetos ResourceResolver criados usando uma Sessão JCR existente não devem ser explicitamente fechados ou que isso fechará a Sessão JCR subjacente. Esse não é o caso - independentemente de como um ResourceResolver é aberto, ele deve ser fechado quando não for mais usado. Como o ResourceResolver implementa a interface Fechável, também é possível usar a sintaxe try-with-resources em vez de chamar explicitamente close().
+Um equívoco relativamente comum é que os objetos ResourceResolver criados usando uma Sessão JCR existente não devem ser explicitamente fechados ou que isso fechará a Sessão JCR subjacente. Esse não é o caso - independentemente de como um ResourceResolver é aberto, ele deve ser fechado quando não for mais usado. Como o ResourceResolver implementa a interface Closeable, também é possível usar a sintaxe try-with-resources em vez de chamar explicitamente close().
 
 #### Código não compatível {#non-compliant-code-4}
 
@@ -260,7 +263,7 @@ public void orDoThis(Session session) throws Exception {
 
 **Desde**: Versão 2018.4.0
 
-Conforme descrito na documentação [do](http://sling.apache.org/documentation/the-sling-engine/servlets.html)Sling, os servlets de vinculação por caminhos são desencorajados. Os servlets vinculados ao caminho não podem usar controles de acesso JCR padrão e, como resultado, exigem rigor de segurança adicional. Em vez de usar servlets vinculados a caminho, é recomendável criar nós no repositório e registrar servlets por tipo de recurso.
+Conforme descrito na documentação [do](http://sling.apache.org/documentation/the-sling-engine/servlets.html)Sling, os servlets de vinculação por caminhos são desencorajados. Servlets com caminho não podem usar controles de acesso JCR padrão e, como resultado, exigem rigor de segurança adicional. Em vez de usar servlets vinculados a caminho, é recomendável criar nós no repositório e registrar servlets por tipo de recurso.
 
 #### Código não compatível {#non-compliant-code-5}
 
@@ -531,7 +534,7 @@ public void doThis() {
 
 **Desde**: Versão 2018.4.0
 
-Em geral, os caminhos que começam com /libs e /apps não devem ser codificados, pois os caminhos aos quais se referem são mais comumente armazenados como caminhos relativos ao caminho de pesquisa Sling (que é definido como /libs,/apps por padrão). O uso do caminho absoluto pode apresentar defeitos sutis que só apareceriam posteriormente no ciclo de vida do projeto.
+Em geral, os caminhos que são start com /libs e /apps não devem ser codificados, pois os caminhos a que se referem são mais comumente armazenados como caminhos relativos ao caminho de pesquisa Sling (que é definido como /libs,/apps por padrão). O uso do caminho absoluto pode apresentar defeitos sutis que só apareceriam posteriormente no ciclo de vida do projeto.
 
 #### Código não compatível {#non-compliant-code-13}
 
@@ -549,6 +552,35 @@ public void doThis(Resource resource) {
 }
 ```
 
+### Scheduler Sling Não Deve Ser Usado {#sonarqube-sling-scheduler}
+
+**Chave**: CQRules:AMSCORE-554
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2020.5.0
+
+O Scheduler Sling não deve ser usado para tarefas que exigem uma execução garantida. As Tarefas Agendadas de Varejo garantem a execução e são mais adequadas para ambientes clusterizados e não clusterizados.
+
+Consulte [Apache Sling Event e Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para saber mais sobre como os Sling Jobs são tratados em ambientes agrupados.
+
+### APIs obsoletas do AEM não devem ser usadas {#sonarqube-aem-deprecated}
+
+**Chave**: AMSCORE-553
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2020.5.0
+
+A superfície da API do AEM está sob revisão constante para identificar APIs para as quais o uso é desencorajado e, portanto, considerado obsoleto.
+
+Em muitos casos, essas APIs são descontinuadas com o uso da anotação padrão Java *@obsoleta* e, como tal, como identificado pela `squid:CallToDeprecatedMethod`.
+
+No entanto, há casos em que uma API está obsoleta no contexto do AEM, mas pode não estar obsoleta em outros contextos. Essa regra identifica essa segunda classe.
 
 ## Regras de conteúdo OakPAL {#oakpal-rules}
 
@@ -567,9 +599,9 @@ Encontre abaixo as verificações do OakPAL executadas pelo Cloud Manager.
 
 **Desde**: Versão 2019.6.0
 
-É uma prática recomendada antiga que a árvore de conteúdo /libs no repositório de conteúdo do AEM seja considerada somente leitura pelos clientes. Modificar nós e propriedades em */libs* cria um risco significativo para atualizações principais e secundárias. As modificações em */libs* só devem ser feitas pela Adobe através de canais oficiais.
+É uma prática recomendada antiga que a árvore de conteúdo /libs no repositório de conteúdo do AEM seja considerada somente leitura pelos clientes. Modificar nós e propriedades em */libs* cria um risco significativo para atualizações principais e secundárias. As modificações em */libs* só devem ser feitas pela Adobe por meio de canais oficiais.
 
-### Os pacotes não devem conter configurações OSGi duplicadas {#oakpal-package-osgi}
+### Os pacotes não devem conter configurações OSGi de Duplicado {#oakpal-package-osgi}
 
 **Chave**: DuplicateOsgiConfigurations
 
@@ -643,4 +675,63 @@ Um problema comum é o uso de nós nomeados `config` nas caixas de diálogo do c
 
 **Desde**: Versão 2019.6.0
 
-Semelhante aos *pacotes não devem conter configurações* OSGi duplicadas, esse é um problema comum em projetos complexos nos quais o mesmo caminho de nó é gravado por vários pacotes de conteúdo separados. Embora seja possível usar dependências de pacote de conteúdo para garantir um resultado consistente, é melhor evitar sobreposições completamente.
+Semelhante aos *pacotes não devem conter configurações* OSGi do Duplicado, esse é um problema comum em projetos complexos nos quais o mesmo caminho de nó é gravado por vários pacotes de conteúdo separados. Embora seja possível usar dependências de pacote de conteúdo para garantir um resultado consistente, é melhor evitar sobreposições completamente.
+
+### O modo de criação padrão não deve ser a interface clássica {#oakpal-default-authoring}
+
+**Chave**: ClassicUIAuthoringMode
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2020.5.0
+
+A configuração do OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` define o modo de criação padrão no AEM. Como a interface clássica está obsoleta desde o AEM 6.4, um problema agora será gerado quando o modo de criação padrão estiver configurado para a interface clássica.
+
+### Os Componentes Com Caixas De Diálogo Devem Ter Caixas De Diálogo De IU De Toque {#oakpal-components-dialogs}
+
+**Chave**: ComponentWithOnlyClassicUIDialog
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2020.5.0
+
+Os componentes do AEM que têm uma caixa de diálogo de interface clássica devem sempre ter uma caixa de diálogo de interface de usuário de toque correspondente para fornecer uma experiência de criação ideal e para serem compatíveis com o modelo de implantação do Serviço de nuvem, onde a interface de usuário clássica não é suportada. Essa regra verifica os seguintes cenários:
+
+* Um componente com uma caixa de diálogo Interface clássica (ou seja, um nó filho da caixa de diálogo) deve ter uma caixa de diálogo Interface do usuário de toque correspondente (ou seja, um nó `cq:dialog` filho).
+* Um componente com uma caixa de diálogo de design da interface clássica (ou seja, um nó design_dialog) deve ter uma caixa de diálogo de design da interface do usuário de toque correspondente (ou seja, um nó `cq:design_dialog` filho).
+* Um componente com uma caixa de diálogo de design de interface clássica e uma caixa de diálogo de design de interface clássica deve ter uma caixa de diálogo de interface de toque correspondente e uma caixa de diálogo de design de interface de toque correspondente.
+
+A documentação das Ferramentas de modernização do AEM fornece documentação e ferramentas para como converter componentes da interface clássica para a interface de usuário de toque. Consulte [as Ferramentas](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) de modernização do AEM para obter mais detalhes.
+
+### Os pacotes não devem misturar conteúdo mutável e imutável {#oakpal-packages-immutable}
+
+**Chave**: ImmutableMutableMixedPackage
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2020.5.0
+
+Para serem compatíveis com o modelo de implantação do serviço em nuvem, os pacotes de conteúdo individuais devem conter conteúdo para as áreas imutáveis do repositório (ou seja, não devem ser modificados pelo código do cliente e causarão uma violação separada) ou a área mutável (ou seja, tudo o mais), mas não ambos. `/apps and /libs, although /libs` Por exemplo, um pacote que inclui ambos não `/apps/myco/components/text and /etc/clientlibs/myco` é compatível com o serviço em nuvem e fará com que um problema seja relatado.
+
+Consulte a Estrutura [do projeto do](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM para obter mais detalhes.
+
+### Os Agentes De Replicação Reversa Não Devem Ser Utilizados {#oakpal-reverse-replication}
+
+**Chave**: ReverseReplication
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2020.5.0
+
+O suporte para Replicação reversa não está disponível nas implantações do Serviço em nuvem, conforme descrito nas Notas de [versão: Remoção dos agentes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)de replicação.
+
+Os clientes que usam replicação reversa devem entrar em contato com a Adobe para obter soluções alternativas.
+
