@@ -2,14 +2,17 @@
 title: Entenda seus resultados de teste - Serviços em nuvem
 description: Entenda os resultados do teste - Serviços em nuvem
 translation-type: tm+mt
-source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
+source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+workflow-type: tm+mt
+source-wordcount: '999'
+ht-degree: 4%
 
 ---
 
 
 # Noções básicas dos resultados de teste {#understand-test-results}
 
-As execuções de pipeline do Cloud Manager for Cloud Services oferecerão suporte à execução de testes executados no ambiente de estágio. Isso contrasta com os testes executados durante a etapa de criação e teste de unidade que são executados offline, sem acesso a qualquer ambiente AEM em execução.
+As execuções de pipeline do Cloud Manager for Cloud Services oferecerão suporte à execução de testes executados em relação ao ambiente stage. Isso contrasta com os testes executados durante a etapa de criação e teste de unidade executados offline, sem acesso a nenhum ambiente AEM em execução.
 Há dois tipos de testes executados neste contexto:
 * Testes escritos pelo cliente
 * Testes escritos pela Adobe
@@ -23,20 +26,21 @@ Como parte do pipeline, o código fonte é verificado para garantir que as impla
 
 | Nome | Definição | Categoria | Limite de falha |
 |--- |--- |--- |--- |
-| Classificação de segurança | A = 0 Vulnerabilidade <br/>B = pelo menos 1 Vulnerabilidade<br/> Menor C = pelo menos 1 Vulnerabilidade Principal <br/>D = pelo menos 1 Vulnerabilidade Crítica <br/>E = pelo menos 1 Vulnerabilidade Bloqueadora |  Crítico | &lt; B |
+| Classificação de segurança | A = 0 Vulnerabilidade <br/>B = pelo menos 1 Vulnerabilidade<br/> Menor C = pelo menos 1 Vulnerabilidade Principal <br/>D = pelo menos 1 Vulnerabilidade Crítica <br/>E = pelo menos 1 Vulnerabilidade Bloqueadora | Crítico | &lt; B |
 | Classificação da confiabilidade | A = 0 Bug <br/>B = pelo menos 1 Bug Menor <br/>C = pelo menos 1 Bug Principal <br/>D = pelo menos 1 Bug Crítico E = pelo menos 1 Bug Bloqueador | Importante | &lt; C |
 | Classificação da manutenção | O custo de correção excepcional para cheiros de código é: <br/><ul><li>&lt;=5% do tempo que já passou para o aplicativo, a classificação é A </li><li>entre 6 e 10%, a classificação é de </li><li>entre 11 e 20% a classificação é de C </li><li>entre 21 e 50% a classificação é um D</li><li>algo acima de 50% é um E</li></ul> | Importante | &lt; A |
-| Cobertura | Uma combinação da cobertura da linha de teste da unidade e da cobertura da condição usando esta fórmula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)` <br/>onde: CT = condições que foram avaliadas como &#39;true&#39; pelo menos uma vez durante a execução de testes de unidade <br/>CF = condições que foram avaliadas como &#39;false&#39; pelo menos uma vez durante a execução de testes de unidade <br/>LC = linhas cobertas = lines_to_cover - uncovered_lines <br/><br/> B = número total de condições <br/>EL = número total de linhas executáveis (lines_to_cover) | Importante | &lt; 50% |
+| Cobertura | Uma combinação da cobertura da linha de teste da unidade e da cobertura da condição usando esta fórmula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>em que: CT = condições que foram avaliadas como &#39;true&#39; pelo menos uma vez durante a execução de testes de unidade <br/>CF = condições que foram avaliadas como &#39;false&#39; pelo menos uma vez durante a execução de testes de unidade <br/>LC = linhas cobertas = lines_to_cover - uncovered_lines <br/><br/> B = número total de condições <br/>EL = número total de linhas executáveis (lines_to_cover) | Importante | &lt; 50% |
 | Testes de unidade ignorados | Número de testes de unidade ignorados. | Informações | > 1 |
-| Problemas em aberto | Tipos de edição geral - Vulnerabilidades, Erros e Cheiros de código | Informações | > 1 |
+| Problemas em aberto | Tipos de edição geral - Vulnerabilidades, Erros e Cheiros de código | Informações | > 0 |
 | Linhas Duplicadas | Número de linhas envolvidas em blocos duplicados. <br/>Para que um bloco de código seja considerado como duplicado: <br/><ul><li>**Projetos não Java:**</li><li>Deve haver pelo menos 100 tokens sucessivos e duplicados.</li><li>Esses tokens devem ser espalhados pelo menos em: </li><li>30 linhas de código para COBOL </li><li>20 linhas de código para ABAP </li><li>10 linhas de código para outras línguas</li><li>**Projetos Java:**</li><li> Deve haver pelo menos 10 declarações sucessivas e duplicadas, independentemente do número de tokens e linhas.</li></ul> <br/>As diferenças no recuo, bem como nos literais de string, são ignoradas ao detectar duplicações. | Informações | > 1% |
+| Compatibilidade do serviço em nuvem | Número de problemas identificados de Compatibilidade do serviço em nuvem. | Informações | > 0 |
 
 
 >[!NOTE]
 >
 >Consulte Definições [de](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) métricas para obter definições mais detalhadas.
 
-Você pode fazer download da lista de regras aqui [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-Rules-new-one.xlsx)
+Você pode fazer download da lista de regras aqui [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -126,7 +130,7 @@ A etapa de teste Funcional personalizada no pipeline está sempre presente e nã
 No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão. Esta etapa é realizada imediatamente após a implantação do estágio.
 
 >[!NOTE]
->O botão **Download Log** permite o acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade normal de Download ou Logs de assinatura. Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
+>O botão **Baixar registro** permite acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade normal de Download ou Logs de assinatura. Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
 
 ## Execução de teste local {#local-test-execution}
 
