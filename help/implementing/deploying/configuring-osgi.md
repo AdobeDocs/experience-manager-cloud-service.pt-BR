@@ -2,9 +2,9 @@
 title: Configuração do OSGi para AEM como um serviço em nuvem
 description: 'Configuração do OSGi com valores secretos e valores específicos do Ambiente '
 translation-type: tm+mt
-source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
+source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2689'
 ht-degree: 0%
 
 ---
@@ -164,41 +164,56 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## Criação da configuração no repositório {#creating-the-configuration-in-the-repository}
+## Criação de configurações OSGi
 
-Para adicionar a nova configuração ao repositório:
+Há duas maneiras de criar novas configurações OSGi, conforme descrito abaixo. A primeira abordagem é normalmente usada para configurar componentes OSGi personalizados que têm propriedades e valores OSGi conhecidos pelo desenvolvedor, e a última para componentes OSGi fornecidos pelo AEM.
 
-1. No projeto ui.apps, crie uma `/apps/…/config.xxx` pasta conforme necessário com base no modo de execução que você está usando
+### Gravando configurações OSGi
 
-1. Crie um novo arquivo JSON com o nome do PID e adicione a `.cfg.json` extensão
+Os arquivos de configuração OSGi formatados JSON podem ser gravados manualmente diretamente no projeto AEM. Geralmente, essa é a maneira mais rápida de criar configurações OSGi para componentes OSGi conhecidos, e especialmente componentes OSGi personalizados que foram projetados e desenvolvidos pelo mesmo desenvolvedor que define as configurações. Essa abordagem também pode ser aproveitada para copiar/colar e atualizar configurações para o mesmo componente OSGi em várias pastas do modo de execução.
+
+1. No IDE, abra o `ui.apps` projeto, localize ou crie a pasta de configuração (`/apps/.../config.<runmode>`) que público alvo os modos de execução que a nova configuração do OSGi deve afetar
+1. Nesta pasta de configuração, crie um novo `<PID>.cfg.json` arquivo. O PID é a Identidade persistente do componente OSGi, geralmente é o nome de classe completo da implementação do componente OSGi. Por exemplo:
+   `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
+Observe que os nomes dos arquivos de fábrica de configuração do OSGi usam a convenção de `<PID>-<factory-name>.cfg.json` nomenclatura
+1. Abra o novo `.cfg.json` arquivo e defina as combinações de chave/valor para a propriedade OSGi e os pares de valores, seguindo o formato [de configuração](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)JSON OSGi.
+1. Salve as alterações no novo `.cfg.json` arquivo
+1. Adicione e confirme seu novo arquivo de configuração OSGi ao Git
+
+### Geração de configurações OSGi usando o Início rápido do SDK do AEM
+
+O console da Web do AEM SDK Quickstart Jar pode ser usado para configurar componentes OSGi e exportar configurações OSGi como JSON. Isso é útil para configurar componentes OSGi fornecidos pelo AEM cujas propriedades OSGi e seus formatos de valor podem não ser bem entendidos pelo desenvolvedor que define as configurações OSGi no projeto do AEM. Observe que usar a interface de usuário de configuração do console da Web do AEM grava `.cfg.json` arquivos no repositório, portanto, esteja ciente disso para evitar um comportamento inesperado durante o desenvolvimento local, quando as configurações de OSGi definidas pelo projeto do AEM podem diferir das configurações geradas.
+
+1. Faça logon no console da Web do AEM SDK Quickstart Jar como o usuário administrador
+1. Navegue até OSGi > Configuração
+1. Localize o componente OSGi a ser configurado e toque em seu título para editar
+   ![Configuração do OSGi](./assets/configuring-osgi/configuration.png)
+1. Edite os valores de propriedade de configuração do OSGi por meio da interface do usuário da Web, conforme necessário
+1. Registrar a Identidade Persistente (PID) em local seguro, isso será usado posteriormente para gerar a configuração JSON da configuração OSGi
+1. Toque em Salvar
+1. Navegue até OSGi > Impressora de configuração do instalador OSGi
+1. Colar no PID copiado na Etapa 5, certifique-se de que o Formato de serialização esteja definido como &quot;OSGi Configurator JSON&quot;
+1. Toque em Imprimir,
+1. A configuração OSGi no formato JSON será exibida na seção Propriedades de configuração serializadas
+   ![Impressora de configuração do instalador OSGi](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
+1. No IDE, abra o `ui.apps` projeto, localize ou crie a pasta de configuração (`/apps/.../config.<runmode>`) que público alvo os modos de execução que a nova configuração do OSGi deve afetar.
+1. Nesta pasta de configuração, crie um novo `<PID>.cfg.json` arquivo. O PID tem o mesmo valor da Etapa 5.
+1. Cole as Propriedades de configuração serializadas da Etapa 10 no `.cfg.json` arquivo.
+1. Salve as alterações no novo `.cfg.json` arquivo.
+1. Adicione e confirme seu novo arquivo de configuração OSGi ao Git.
 
 
-1. Preencha o arquivo JSON com os pares de valores da chave de configuração OSGi
-
-   >[!NOTE]
-   >
-   >Se você estiver configurando um serviço OSGi pronto, poderá procurar os nomes de propriedade OSGi por meio de `/system/console/configMgr`
-
-
-1. Salve o arquivo JSON em seu projeto. -->
-
-## Formato De Propriedade De Configuração No Controle De Origem {#configuration-property-format-in-source-control}
-
-A criação de uma nova propriedade de configuração OSGI está descrita na seção [Adicionar uma nova configuração ao repositório](#creating-the-configuration-in-the-repository) acima.
-
-Siga essas etapas e modifique a sintaxe conforme descrito nas subseções abaixo:
+## Formatos de propriedade de configuração OSGi
 
 ### Valores em linha {#inline-values}
 
 Como seria de esperar, os valores em linha são formatados como pares padrão de nome-valor, seguindo a sintaxe JSON padrão. Por exemplo:
 
 ```json
- {
-
- "my_var1": "val",
- "my_var2": "abc",
- "my_var3": 500
-
+{
+   "my_var1": "val",
+   "my_var2": [ "abc", "def" ],
+   "my_var3": 500
 }
 ```
 
