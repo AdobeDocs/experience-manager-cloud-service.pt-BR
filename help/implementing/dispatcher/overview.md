@@ -2,7 +2,10 @@
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b7bb84b026c9187cb633e9ccfdc17aa5ec930aff
+workflow-type: tm+mt
+source-wordcount: '3916'
+ht-degree: 1%
 
 ---
 
@@ -15,6 +18,9 @@ Esta seção descreve como estruturar o AEM como um Apache de serviço em nuvem 
 
 >[!NOTE]
 >Os usuários do Windows precisarão usar o Windows 10 Professional ou outras distribuições compatíveis com o Docker. Este é um pré-requisito para executar e depurar o Dispatcher em um computador local. As seções abaixo incluem comandos usando as versões Mac ou Linux do SDK, mas o SDK do Windows pode ser usado de maneira semelhante.
+
+>[!WARNING]
+> Usuários do Windows: a versão atual do AEM como uma ferramenta de Dispatcher local do serviço em nuvem (v2.0.20) é incompatível com o Windows. Entre em contato com o suporte [da](https://daycare.day.com/home.html) Adobe para receber atualizações sobre a compatibilidade com o Windows.
 
 ## Ferramentas do Dispatcher {#dispatcher-sdk}
 
@@ -254,7 +260,7 @@ Observe que a ferramenta de validação relata somente o uso proibido das direti
 
 Quando nenhuma falha de validação for relatada, sua configuração estará pronta para implantação.
 
-Abaixo estão apresentadas técnicas de solução de problemas para depurar erros comuns de validação que são exibidos pela ferramenta:
+Apresentamos abaixo técnicas de solução de problemas para depurar erros comuns de validação que são exibidos pela ferramenta:
 
 **não é possível localizar uma`conf.dispatcher.d`subpasta no arquivo**
 
