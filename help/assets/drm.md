@@ -3,9 +3,9 @@ title: O Gerenciamento de Direitos Digitais [!DNL Adobe Experience Manager Asset
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados [!DNL Experience Manager] em um serviço em nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31b8db4403dff1934033e1ed93651a076dba7a1a
+source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1351'
 ht-degree: 7%
 
 ---
@@ -47,7 +47,7 @@ Você pode pesquisar ativos expirados, incluindo subativos expirados no painel P
 
 Quando você escolhe a opção **[!UICONTROL Expirado]** , o [!DNL Assets] console exibe apenas os ativos e subativos expirados que são referenciados pelos ativos compostos. Os ativos compostos que fazem referência a subativos expirados não são exibidos imediatamente após a expiração dos subativos. Em vez disso, eles são exibidos após [!DNL Experience Manager] detectar que fazem referência a subativos expirados na próxima vez que o scheduler for executado.
 
-Se você modificar a data de expiração de um ativo publicado para uma data anterior ao ciclo de scheduleres atual, a programação ainda detectará esse ativo como um ativo expirado na próxima vez que ele for executado e refletirá seu status de acordo.
+Se você modificar a data de expiração de um ativo publicado para uma data anterior ao ciclo de scheduleres atual, a programação ainda detectará esse ativo como um ativo expirado na próxima vez que ele for executado e refletirá seu status de acordo. A data de expiração de um ativo é exibida de forma diferente para usuários em fusos horários diferentes.
 
 Além disso, se uma falha ou erro impedir que o scheduler detecte ativos expirados no ciclo atual, o scheduler examinará novamente esses ativos no ciclo seguinte e detectará seu status expirado.
 
