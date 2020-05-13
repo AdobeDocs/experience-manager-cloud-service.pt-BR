@@ -2,7 +2,10 @@
 title: Um guia rápido para a WCAG 2.1
 seo-title: Um guia rápido para a WCAG 2.1
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 93%
 
 ---
 
@@ -11,13 +14,21 @@ source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 O Adobe Experience Manager (AEM) as a Cloud Service foi desenvolvido para maximizar a conformidade com as Web Content Accessibility Guidelines.
 
-The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+As [Web Content Accessibility Guidelines (WCAG) versão 2.1](https://www.w3.org/TR/WCAG/) são um conjunto de diretrizes reconhecidas internacionalmente, desenvolvidas pelo [World Wide Web Consortium (W3C)](https://www.w3.org/) de acordo com a [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+
+>[!NOTE]
+> 
+> A WCAG 2.1 atualiza a versão anterior, WCAG 2.0, de 2008. Consulte [WCAG 2.1 - Comparação com a WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+
+>[!NOTE]
+> 
+>Uma [versão atualizada das diretrizes, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) está sendo desenvolvida no momento, mas não será considerada a essa altura.
 
 A WCAG 2.1 consiste em um conjunto de diretrizes de tecnologia independentes e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável para pessoas com necessidades especiais. Essas diretrizes fazem aconselhamento aos criadores de conteúdo, designers e desenvolvedores da Web, a fim de garantir que os recursos que produzem sejam o mais acessíveis possível ao maior número de pessoas possível, independentemente de qualquer deficiência que tenham. Por exemplo, deficiência visual, perda auditiva, dificuldades de aprendizado, limitações relacionadas à idade, entre outras.
 
 Por exemplo, descrever uma imagem (ou qualquer outro conteúdo não textual) usando o `alt` atributo em HTML beneficia muito as pessoas que são cegas ou amblíopes. A descrição textual no `alt` atributo pode ser convertida em saída de fala ou transmitida para exibições eletrônicas atualizáveis em braille.
 
-Além disso, a WCAG 2.1 pode resultar em vantagens para outros beneficiários, incluindo pessoas que podem ser consideradas *com deficiência situacional*. Pessoas que, devido a circunstâncias como a tecnologia de navegação, a velocidade de conexão da rede ou o ambiente de navegação, podem enfrentar barreiras semelhantes às de pessoas com deficiências.
+Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. Pessoas que, devido a circunstâncias como a tecnologia de navegação, a velocidade de conexão da rede ou o ambiente de navegação, podem enfrentar barreiras semelhantes às de pessoas com deficiências.
 
 Usando o Adobe Experience Manager, os criadores de conteúdo e/ou proprietários de sites podem criar conteúdo na Web que atenda aos critérios de sucesso relevantes de Nível A e de Nível AA da WCAG 2.1:
 
@@ -65,14 +76,14 @@ Para elaborar:
 * Cada diretriz consiste em um ou mais **critérios de sucesso**.
 * Os critérios de sucesso são redigidos como declarações, que são `True` ou `False` para qualquer página da Web.
 * Os critérios de sucesso podem incluir opções ou exceções; situações em que os critérios de sucesso não precisam ser cumpridos.
-* Os critérios de sucesso são numerados de acordo com a diretriz e o princípio principais, de 1.1.1 a 4.1.1. Eles também têm um nome curto que resume a intenção do critério, para uma referência mais fácil. Por exemplo, o critério de sucesso 1.1.1 é alternativo não textual.
+* Os critérios de sucesso são numerados de acordo com a diretriz e o princípio principais, de 1.1.1 a 4.1.1. Eles também têm um nome curto que resume a intenção do critério, para uma referência mais fácil. Por exemplo, o critério de sucesso 1.1.1 é Conteúdo não textual.
 * Os critérios de sucesso incluem uma lista de **técnicas** relacionadas (descritas mais detalhadamente abaixo).
 
 ## Recursos de suporte {#supporting-resources}
 
 Além dos componentes principais de Princípios, Diretrizes e Critérios de sucesso da WCAG 2.1, existe uma série de documentos de suporte. Alguns deles fornecem conselhos específicos sobre como cumprir os aspectos das diretrizes, outros são referências mais gerais que ajudam os autores, designers e desenvolvedores da Web de todas as habilidades a entender e usar a WCAG 2.1 da forma mais eficaz possível.
 
-Embora a WCAG 2.1 seja um documento estável e não mude, a maioria desses recursos de suporte corresponde a documentos dinâmicos. Eles serão alterados e desenvolvidos com o tempo, à medida que surjam novas tecnologias e sejam encontrados novos exemplos de como a acessibilidade da Web pode ser alcançada.
+Embora o próprio WCAG 2.1 seja um documento estável e não sofra alterações, a maioria desses recursos de suporte são documentos dinâmicos; eles mudarão e crescerão com o tempo, à medida que novas tecnologias surgirem, e novos exemplos de como a acessibilidade da Web pode ser alcançada.
 
 ### Recursos da WCAG 2.1 {#wcag-resources}
 
@@ -87,7 +98,7 @@ Esta lista não está completa. Ela apresenta os recursos disponíveis:
 
 ### Novidades da WCAG 2.1 {#what-is-new}
 
-O documento [Novidades da WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) fornece informações importantes sobre o delta entre a WCAG 2.0 e a WCAG 2.1.
+[O que há de novo no WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) fornece informações valiosas sobre o delta entre o WCAG 2.0 e o WCAG 2.1.
 
 A seção [WCAG 2.0 e 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) clarificam ainda mais o estado da relação entre leas.
 
@@ -138,7 +149,7 @@ Um exemplo pode ser encontrado em: [Noções sobre o critério de sucesso 1.1.1 
 
 ### Como cumprir a WCAG 2.1 {#how-to-meet-wcag}
 
-A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) . Esta seção fornece uma apresentação alternativa da WCAG, que permite refinar o conteúdo das diretrizes para os mais relevantes para os próprios interesses ou circunstâncias do leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização, especificando tecnologias específicas de conteúdo na Web, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
+A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) . Esta seção fornece uma apresentação alternativa da WCAG, permitindo que os leitores refinem o conteúdo das orientações para os mais relevantes para os seus próprios interesses e/ou circunstâncias. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização, especificando tecnologias específicas de conteúdo na Web, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
 
 Sem filtragem, esse recurso fornece todos os critérios de sucesso agrupados por diretriz. Para cada critério de sucesso, é fornecido o seguinte:
 
