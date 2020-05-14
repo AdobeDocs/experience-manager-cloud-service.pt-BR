@@ -2,10 +2,10 @@
 title: Um guia rápido para a WCAG 2.1
 seo-title: Um guia rápido para a WCAG 2.1
 translation-type: tm+mt
-source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 86%
+source-wordcount: '1774'
+ht-degree: 85%
 
 ---
 
@@ -70,7 +70,7 @@ Para elaborar:
 * Cada diretriz consiste em um ou mais **critérios de sucesso**.
 * Os critérios de sucesso são redigidos como declarações, que são `True` ou `False` para qualquer página da Web.
 * Os critérios de sucesso podem incluir opções ou exceções; situações em que os critérios de sucesso não precisam ser cumpridos.
-* Os critérios de sucesso são numerados de acordo com a diretriz e o princípio principais, de 1.1.1 a 4.1.1. Eles também têm um nome curto que resume a intenção do critério, para uma referência mais fácil. Por exemplo, o critério de sucesso 1.1.1 é Conteúdo não textual.
+* Os critérios de sucesso são numerados de acordo com a diretriz e o princípio principais, de 1.1.1 a 4.1.1. Eles também têm um nome curto que resume a intenção do critério, para uma referência mais fácil. For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
 * Os critérios de sucesso incluem uma lista de **técnicas** relacionadas (descritas mais detalhadamente abaixo).
 
 ## Recursos de suporte {#supporting-resources}
@@ -92,9 +92,11 @@ Esta lista não está completa. Ela apresenta os recursos disponíveis:
 
 ### Novidades da WCAG 2.1 {#what-is-new}
 
-[O que há de novo no WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) fornece informações valiosas sobre o delta entre o WCAG 2.0 e o WCAG 2.1.
+As diretrizes fornecem informações sobre as novidades do WCAG 2.1:
 
-A seção [WCAG 2.0 e 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) clarificam ainda mais o estado da relação entre leas.
+* [O que há de novo no WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) fornece informações valiosas sobre o delta entre o WCAG 2.0 e o WCAG 2.1.
+
+* A seção [WCAG 2.0 e 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) clarificam ainda mais o estado da relação entre leas.
 
 ### Técnicas da WCAG 2.1 {#techniques-for-wcag}
 
