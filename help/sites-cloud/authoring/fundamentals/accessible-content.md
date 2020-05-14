@@ -2,10 +2,10 @@
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
 description: Ajuda para tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 translation-type: tm+mt
-source-git-commit: 7d95cf4f25934ea52d4ef5410bbf349f004e5043
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '13874'
-ht-degree: 89%
+source-wordcount: '13873'
+ht-degree: 87%
 
 ---
 
@@ -38,14 +38,14 @@ As diretrizes são classificadas de acordo com os três níveis de conformidade:
 
 Ao criar o seu site, é necessário determinar o nível global com o qual você gostaria que ele estivesse em conformidade.
 
-A seção a seguir apresenta as [Diretrizes da WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) com os critérios de sucesso relacionados aos [níveis de conformidade](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1) A e AA.
+The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
 
 >[!NOTE]
 >
 >Nesse documento são usados:
 >
->* os nomes curtos das [Diretrizes da WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
->* A numeração usada nas [Diretrizes da WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) para auxiliar na referência cruzada com o site da WCAG.
+>* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
+>* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
 
 
 ## Princípio 1: perceptível     {#principle-perceivable}
@@ -133,7 +133,7 @@ O W3C fornece uma série de sugestões, como: cada uma dessas abordagens tem sua
 
 [Diretriz de mídia com base no tempo 1.2: fornece alternativas para a mídia com base no tempo.](https://www.w3.org/TR/WCAG/#time-based-media)
 
-Trata-se de um conteúdo da Web que é *baseado no tempo*. Abrange o conteúdo que o usuário pode reproduzir (como vídeo, áudio e conteúdo animado) e pode ser pré-gravado ou ter transmissão ao vivo.
+This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be prerecorded or a live stream.
 
 ### Apenas áudio e apenas vídeo (pré-gravado) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
@@ -157,10 +157,10 @@ Fornecer essas informações em um formato diferente, como texto (ou áudio para
 
 #### Como cumprir - Apenas áudio e apenas vídeo (pré-gravado) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
-* Se o conteúdo for um áudio pré-gravado sem vídeo (como um podcast):
+* Se o conteúdo for áudio pré-gravado sem vídeo (como um podcast):
    * Forneça um link imediatamente antes ou depois do conteúdo para obter uma transcrição do texto do conteúdo de áudio.
 A transcrição deve ser uma página HTML com um equivalente em texto de todo o conteúdo falado e não-falado importante, além de uma indicação de quem está falando, uma descrição do cenário, expressões vocais e uma descrição de qualquer outro áudio significativo.
-* Se o conteúdo for uma animação ou vídeo pré-gravado sem áudio:
+* Se o conteúdo for uma animação ou um vídeo pré-gravado sem áudio:
    * Forneça um link imediatamente antes ou depois do conteúdo para uma descrição de texto equivalente das informações fornecidas pelo vídeo
    * Ou uma descrição de áudio equivalente em um formato de áudio normalmente utilizado, como MP3.
 
@@ -200,13 +200,13 @@ As legendas podem ser:
 
 Use as legendas ocultas sempre que possível, já que proporcionam ao usuário a escolha de visualizar ou não as legendas. 
 
-Para as legendas ocultas, será necessário criar e fornecer um arquivo de legenda sincronizada em um formato adequado (como [SMIL](https://www.w3.org/AudioVideo/)), junto com o arquivo de vídeo (os detalhes sobre como proceder estão fora do escopo desse guia, mas fornecemos links para alguns tutoriais em [Mais informações - Legendas (pré-gravadas) (1.2.2)](#more-information-captions-pre-recorded)). Certifique-se de fornecer uma nota ou ativar o recurso de legenda no player de vídeo para informar aos usuários que as legendas estão disponíveis para o vídeo.
+For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](https://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Prerecorded) (1.2.2)](#more-information-captions-prerecorded). Certifique-se de fornecer uma nota ou ativar o recurso de legenda no player de vídeo para informar aos usuários que as legendas estão disponíveis para o vídeo.
 
 Se você precisar usar as legendas abertas, insira o texto na faixa de vídeo. Essa ação pode ser realizada utilizando aplicativos de edição de vídeo que permitem a sobreposição de títulos no vídeo.
 
-#### Mais informações - Legendas (pré-gravadas) (1.2.2) {#more-information-captions-prerecorded}
+#### More Information - Captions (Prerecorded) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Noções sobre o Critério de sucesso 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html):
+* [Noções sobre o Critério de sucesso 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [Como cumprir o Critério de sucesso 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
 <!--
@@ -240,9 +240,12 @@ Detalhes exatos de como criar um vídeo descrito por áudio estão fora do escop
 
 #### Mais informações - Descrição de áudio ou alternativa de mídia (pré-gravada) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [Noções sobre o Critério de sucesso 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html):
+* [Noções sobre o Critério de sucesso 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
 * [Como cumprir o Critério de sucesso 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
-* [Adobe Encore](https://www.adobe.com/products/encore.html)
+
+<!--
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+-->
 
 ### Legendas (ao vivo) (1.2.4)          {#captions-live}
 
@@ -252,7 +255,7 @@ Detalhes exatos de como criar um vídeo descrito por áudio estão fora do escop
 
 #### Propósito - Legendas (ao vivo) (1.2.4)     {#purpose-captions-live}
 
-Esse critério de sucesso é idêntico às [Legendas (pré-gravadas)](#captions-pre-recorded), já que aborda as barreiras de acessibilidade enfrentadas pelos indivíduos surdos ou com deficiências auditivas, exceto que esse critério de sucesso lida com as apresentações ao vivo, como webcasts.
+This success criterion is identical to [Captions (Prerecorded)](#captions-prerecorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
 
 #### Como cumprir - Legendas (ao vivo) (1.2.4) {#how-to-meet-captions-live}
 
@@ -363,44 +366,46 @@ O AEM facilita a construção de conteúdo da Web com significado semântico usa
       >Eles são efetivamente os mesmos, mas `<strong>` e `<em>` são preferíveis, pois são html semanticamente corretos. Sua equipe de desenvolvimento pode configurar o RTE para usar `<strong>` e `<em>` (em vez de `<b>` e `<i>`), ao desenvolver a instância do projeto.
 
 
-* **Tabelas de dados complexos**: em alguns casos, onde há tabelas complexas com dois ou mais níveis de cabeçalhos, as Propriedades da tabela básicas podem não ser suficientes para fornecer toda a informação estrutural necessária. Para esses tipos de tabelas complexas, relações diretas precisam ser criadas entre os cabeçalhos e as suas células relacionadas usando os atributos **cabeçalho** e **id**. Por exemplo, na tabela abaixo os cabeçalhos e IDs são combinados para fazer uma associação programática para usuários de tecnologia assistiva.
+* **Tabelas de dados complexos**: em alguns casos, onde há tabelas complexas com dois ou mais níveis de cabeçalhos, as Propriedades da tabela básicas podem não ser suficientes para fornecer toda a informação estrutural necessária. Para esses tipos de tabelas complexas, relações diretas precisam ser criadas entre os cabeçalhos e as suas células relacionadas usando os atributos **cabeçalho** e **id**.
 
    >[!NOTE]
    >
    >O atributo id não está disponível em uma instalação predefinida. Ele pode ser ativado através da configuração de regras de HTML e do serializador no RTE.
 
-```xml
- <table>
-    <tr>
-      <th rowspan="2" id="h">Homework</th>
-      <th colspan="3" id="e">Exams</th>
-      <th colspan="3" id="p">Projects</th>
-    </tr>
-    <tr>
-      <th id="e1" headers="e">1</th>
-      <th id="e2" headers="e">2</th>
-      <th id="ef" headers="e">Final</th>
-      <th id="p1" headers="p">1</th>
-      <th id="p2" headers="p">2</th>
-      <th id="pf" headers="p">Final</th>
-    </tr>
-    <tr>
-     <td headers="h">15%</td>
-     <td headers="e e1">15%</td>
-     <td headers="e e2">15%</td>
-     <td headers="e ef">20%</td>
-     <td headers="p p1">10%</td>
-     <td headers="p p2">10%</td>
-     <td headers="p pf">15%</td>
-    </tr>
-   </table>
-```
+   Por exemplo, na tabela abaixo os cabeçalhos e IDs são combinados para fazer uma associação programática para usuários de tecnologia assistiva.
 
-Para obter isso no AEM você deve adicionar a marcação diretamente, usando o modo de edição da fonte.
+   ```xml
+     <table>
+       <tr>
+         <th rowspan="2" id="h">Homework</th>
+         <th colspan="3" id="e">Exams</th>
+         <th colspan="3" id="p">Projects</th>
+       </tr>
+       <tr>
+         <th id="e1" headers="e">1</th>
+         <th id="e2" headers="e">2</th>
+         <th id="ef" headers="e">Final</th>
+         <th id="p1" headers="p">1</th>
+         <th id="p2" headers="p">2</th>
+         <th id="pf" headers="p">Final</th>
+       </tr>
+       <tr>
+         <td headers="h">15%</td>
+         <td headers="e e1">15%</td>
+         <td headers="e e2">15%</td>
+         <td headers="e ef">20%</td>
+         <td headers="p p1">10%</td>
+         <td headers="p p2">10%</td>
+         <td headers="p pf">15%</td>
+       </tr>
+     </table>
+   ```
 
->[!NOTE]
->
->Essa funcionalidade não está disponível imediatamente em uma instalação padrão. Ela exige uma configuração de RTE; regras de HTML e serializador.
+   Para obter isso no AEM você deve adicionar a marcação diretamente, usando o modo de edição da fonte.
+
+   >[!NOTE]
+   >
+   >Essa funcionalidade não está disponível imediatamente em uma instalação padrão. Ela exige uma configuração de RTE; regras de HTML e serializador.
 
 #### Mais informações - Informações e Relações (1.3.1) {#more-information-info-and-relationships}
 
@@ -495,9 +500,6 @@ Se a cor for usada como dica para fornecer informações, você deve fornecer um
 * [Noções sobre o Critério de sucesso 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [Como cumprir o Critério de sucesso 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-<!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
--->
-
 ### Controle de áudio (1.4.2)  {#audio-control}
 
 * Critério de Sucesso 1.4.2
@@ -562,7 +564,7 @@ Verifique se o texto contrasta o suficiente com o plano de fundo. As relações 
 
 >[!NOTE]
 >
->Para ajudar com conversões para outras unidades:
+>Os seguintes sites podem ajudar com conversões para outras unidades:
 >
 >* [Calculadora Px para Em - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Conversão do tamanho da fonte: pixel-point-em-rem-percentual](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
@@ -874,7 +876,7 @@ John Smith’s publications
 >
 >O snippet acima é uma ilustração; recomenda-se usar o componente **Imagem**.
 
-Embora seja aconselhável fornecer um texto de link que identifique a finalidade do link sem a necessidade de contexto adicional, reconhece-se que isto nem sempre é possível. Link contextuais gratuitos podem ser usados nos casos a seguir, exemplos de HTML que podem ser encontrados em [Como cumprir o Critério de sucesso 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Embora seja aconselhável fornecer um texto de link que identifique a finalidade do link sem a necessidade de contexto adicional, reconhece-se que isso nem sempre é possível. Link contextuais gratuitos podem ser usados nos casos a seguir, exemplos de HTML que podem ser encontrados em [Como cumprir o Critério de sucesso 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Sempre que o texto do link fizer parte de uma lista de links estritamente relacionados e quando um item de lista que delimita o link fornecer contexto suficiente.
 * Sempre que a finalidade de um link puder ser claramente identificada no texto do parágrafo *anterior* (não o seguinte).
