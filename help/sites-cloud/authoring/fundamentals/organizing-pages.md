@@ -1,7 +1,7 @@
 ---
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
 
 ---
@@ -244,7 +244,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 >
 >Navegar para outras páginas do editor de páginas só é possível no modo de visualização, pois os links não estão ativos no modo de Edição...
 
-### Copiar e colar uma página   {#copying-and-pasting-a-page}
+### Copiar e colar uma página    {#copying-and-pasting-a-page}
 
 É possível copiar uma página e todas as respectivas subpáginas para um novo site:
 
@@ -268,8 +268,8 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
    Você pode:
 
-   1. Selecione o próprio ícone **Colar** página: Uma cópia da página original e qualquer página secundária serão criadas neste local.
-   1. Selecione a seta suspensa para revelar a opção **Colar sem filhos** . Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
+   1. Selecionar o próprio ícone **Colar**: uma cópia da página original e qualquer página secundária serão criadas neste local.
+   1. Selecione a seta suspensa para revelar a opção **Colar sem filhos**. Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
    >[!NOTE]
    >
    >Se você copiar a página para um local onde uma página com o mesmo nome que a original já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` se tornará `beach1`.
