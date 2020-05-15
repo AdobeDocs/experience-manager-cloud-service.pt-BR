@@ -1,7 +1,7 @@
 ---
 title: Recursos obsoletos e removidos
 description: Notas de versão específicas para os recursos obsoletos e removidos do Adobe Experience Manager as a Cloud Service.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
@@ -26,10 +26,10 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 
 | Recursos | Recurso obsoleto | Substituição |
 | ------------ | ------------------ | ----------- |
-| Ativos | `DAM Asset Update` fluxo de trabalho para processar imagens ingeridas. | A assimilação de ativos usa [microsserviços de ativos](/help/assets/asset-microservices-overview.md) agora. |
-| Ativos | Upload assets directly to AEM. See [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Use o upload [binário](/help/assets/add-assets.md)direto. Para obter detalhes técnicos, consulte [APIs de upload direto](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
+| Ativos | fluxo de trabalho `DAM Asset Update` para processar imagens ingeridas. | A assimilação de ativos usa [microsserviços de ativos](/help/assets/asset-microservices-overview.md) agora. |
+| Ativos | Upload de ativos diretamente no AEM. Consulte [APIs de upload de ativos obsoletos](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Use [Upload binário direto](/help/assets/add-assets.md). Para obter detalhes técnicos, consulte [APIs de upload direto](/help/assets/developer-reference-material-apis.md#overview-binary-upload). |
 | Ativos | [Determinadas etapas do fluxo de trabalho](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) `DAM Asset Update` não são compatíveis, incluindo a chamada de ferramentas de linha de comando, como o ImageMagick. | Os [microsserviços de ativos](/help/assets/asset-microservices-overview.md) oferecem uma substituição para muitos fluxos de trabalho. Para processamento personalizado, use [fluxos de trabalho de pós-processamento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
-| Ativos | Transcodificação FFmpeg de vídeos. | Para a geração de miniaturas do FFmpeg, use os microserviços [de](/help/assets/asset-microservices-overview.md)ativos. Para a transcodificação FFmpeg, use o [Dynamic Media](/help/assets/manage-video-assets.md). |
+| Ativos | Transcodificação FFmpeg de vídeos. | Para gerar miniaturas do FFmpeg, use os [Microserviços de ativos](/help/assets/asset-microservices-overview.md). Para a transcodificação FFmpeg, use o [Dynamic Media](/help/assets/manage-video-assets.md). |
 
 ## Recursos removidos {#removed-features}
 
@@ -38,7 +38,7 @@ Esta seção lista os recursos e funcionalidades que foram removidos do AEM com 
 | Área | Recurso | Substituição |
 | ------------ | ------------------ | ----------- |
 | Interface | Embora algumas caixas de diálogo da interface do usuário clássica permaneçam por enquanto para alguns recursos selecionados, como o Link Checker, Version Purge e algumas configurações do Cloud Service, o acesso à interface do usuário clássica em geral foi removido na interface do usuário do produto AEM. | Interface do usuário padrão |
-| Mídia dinâmica | As integrações anteriores com os modos [Mídia dinâmica clássica (Scene7)](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/scene7.html) e [Mídia dinâmica híbrida](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html) não estão disponíveis no AEM as a Cloud Service. | Use a [Mídia dinâmica](/help/assets/dynamic-media/dynamic-media.md) fornecida com o Experience Manager as a Cloud Service. |
+| Dynamic Media | As integrações anteriores [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/scene7.html) e do [modo Dynamic Media Hybrid](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html) não estão disponíveis no AEM as a Cloud Service. | Use o [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornecido com o Experience Manager as a Cloud Service. |
 | Sites | Portal Director e Portlet Component | Estes recursos foram descontinuados no AEM 6.4 e foram removidos do AEM. |
 | Sites | Importador de design | Este recurso foi removido, pois seções inalteradas do repositório do AEM não estão acessíveis no tempo de execução. |
 | Ativos | [O compartilhamento do AEM Assets com os serviços Marketing Cloud Assets Core Service e Creative Cloud](https://docs.adobe.com/content/help/br/experience-manager-65/administering/integration/configure-assets-cc-integration.html) não está disponível. | Para integração com a Creative Cloud, use o [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html). |
