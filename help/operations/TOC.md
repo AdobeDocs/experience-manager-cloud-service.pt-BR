@@ -1,7 +1,7 @@
 ---
 sub-product: Operações e manutenção do AEM as a Cloud Service
 user-guide-title: Operações e manutenção do AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
 
 ---
