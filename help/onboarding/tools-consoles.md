@@ -1,7 +1,7 @@
 ---
 title: Consoles Ferramentas
 description: Saiba mais sobre os diferentes consoles Ferramentas em todo o AEM.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
@@ -227,7 +227,7 @@ Esses consoles podem ser acessados no Painel [Ferramentas da Navegação global]
   </tr>
   <tr>
    <td> </td>
-   <td>Configuração da mídia dinâmica</td>
+   <td>Configuração do Dynamic Media</td>
   </tr>
   <tr>
    <td> </td>
