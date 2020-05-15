@@ -4,14 +4,17 @@ description: Saiba mais sobre vários métodos de edição e gerenciamento de at
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+workflow-type: tm+mt
+source-wordcount: '4284'
+ht-degree: 12%
 
 ---
 
 
 # Manage assets {#manage-assets}
 
-Este artigo descreve como gerenciar e editar ativos nos ativos Adobe Experience Manager (AEM). Para gerenciar os Fragmentos de conteúdo, consulte os ativos [Fragmentos](content-fragments/content-fragments.md) de conteúdo.
+Este artigo descreve como gerenciar e editar ativos nos ativos do Adobe Experience Manager. Para gerenciar os Fragmentos de conteúdo, consulte os ativos [Fragmentos](content-fragments/content-fragments.md) de conteúdo.
 
 ## Criar pastas {#creating-folders}
 
@@ -183,7 +186,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    **Excluindo uma representação**
 
-   Selecione uma representação no painel **[!UICONTROL Representações]** e toque/clique no ícone **[!UICONTROL Excluir representação]** da barra de ferramentas.
+   Selecione uma representação no painel **[!UICONTROL Representações]** e toque/clique no ícone **[!UICONTROL Excluir representação]** da barra de ferramentas. As execuções não podem ser excluídas em massa após a conclusão do processamento do ativo. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e fazer upload novamente dos ativos excluídos.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
