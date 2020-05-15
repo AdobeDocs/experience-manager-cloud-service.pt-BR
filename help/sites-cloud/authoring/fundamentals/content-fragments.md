@@ -1,7 +1,7 @@
 ---
 title: Fragmentos de conteúdo
 description: Os Fragmentos de conteúdo do Adobe Experience Manager as a Cloud Service permitem projetar, criar, selecionar e usar conteúdo independente da página
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 # Fragmentos de conteúdo {#content-fragments}
 
-Os fragmentos de conteúdo no Adobe Experience Manager (AEM) como um serviço em nuvem são [criados e gerenciados como ativos](/help/assets/content-fragments/content-fragments.md)independentes da página.
+Os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service são [criados e gerenciados como ativos de página independentes](/help/assets/content-fragments/content-fragments.md).
 
 Eles permitem criar um conteúdo neutro ao canal, juntamente com variações (possivelmente, específicas do canal). Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo.
 
@@ -48,7 +48,7 @@ Os fragmentos do conteúdo permitem:
    * É possível confiar no conteúdo de mídia associado que está sendo preparado para relevância.
    * É possível criar variações de conteúdo ad hoc dinamicamente, ao mesmo tempo, garantir que elas permaneçam gerenciadas centralmente no fragmento.
 
-## Adicionar um fragmento do conteúdo na página   {#adding-a-content-fragment-to-your-page}
+## Adicionar um fragmento do conteúdo na página    {#adding-a-content-fragment-to-your-page}
 
 1. Abra a página para edição. 
 2. Adicione o componente **Fragmento do conteúdo**; do navegador **Componentes** ou **Inserir novo componente**. 
@@ -98,7 +98,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
       * **Tratar cabeçalhos como seus próprios parágrafos**
 * **Tratar cabeçalhos como seus próprios parágrafos**
 
-### Conexão rápida no editor de fragmentos   {#quick-connection-to-fragment-editor}
+### Conexão rápida no editor de fragmentos    {#quick-connection-to-fragment-editor}
 
 É possível abrir a origem do fragmento para edição (o ativo) usando o ícone **Editar** na barra de ferramentas do componente. Isso permitirá que você [edite e gerencie o fragmento do conteúdo](/help/assets/content-fragments/content-fragments.md). 
 
@@ -106,7 +106,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 >
 >Como sempre, editar a origem do fragmento afetará todas as páginas que fazem referência a esse fragmento de conteúdo.
 
-### Adição de conteúdo intermediário   {#adding-in-between-content}
+### Adição de conteúdo intermediário    {#adding-in-between-content}
 
 Quando um fragmento do conteúdo específico for adicionado à página, há um espaço reservado para **Arrastar os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
@@ -141,7 +141,7 @@ Para conteúdo intermediário, você pode:
 >* A menos que as duas estruturas de parágrafo entrem em conflito; nesse caso, o conteúdo intermediário não é exibido (embora ainda esteja presente internamente).
 
 
-### Usar conteúdo associado   {#using-associated-content}
+### Usar conteúdo associado    {#using-associated-content}
 
 Se você tiver [associado o conteúdo](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial de conteúdo do [conteúdo intermediário](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
