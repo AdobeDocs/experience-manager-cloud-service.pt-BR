@@ -2,10 +2,10 @@
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
 description: Ajuda para tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 translation-type: tm+mt
-source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
+source-git-commit: 0f1ef5ab6ebc929ced669e47c8737d7401d5ea35
 workflow-type: tm+mt
-source-wordcount: '13873'
-ht-degree: 87%
+source-wordcount: '13935'
+ht-degree: 86%
 
 ---
 
@@ -70,14 +70,18 @@ Um benefício adicional útil é que as alternativas em texto permitem que o con
 
 #### Como cumprir - Conteúdo não textual (1.1.1)     {#how-to-meet-non-text-content}
 
-Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser realizado no campo **Texto alternativo**:
+Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo Texto **** alternativo; consulte, por exemplo, a **[Imagem](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html)**do componente principal.
 
 >[!NOTE]
 >
->Alguns componentes prontos para uso, como o **Carrossel** e a **Apresentação de slides**, não fornecem um meio de adicionar descrições de texto alternativas a imagens. Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte Adicionar suporte para elementos HTML e atributos adicionais).
+>Alguns Componentes principais predefinidos, como o **[Carrossel](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/carousel.html)**, não fornecem um campo de Texto****alternativo para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo**Rótulo **(guia**[Acessibilidade](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** ) para o componente inteiro.
+>
+>Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte Adicionar suporte para elementos HTML e atributos adicionais).
 
 <!--
->Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
+>
+>When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
 Por padrão, o AEM requer que o campo **Texto alternativo** seja preenchido. If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
@@ -1191,19 +1195,21 @@ Siga as orientações em [Como cumprir o Critério de sucesso 3.3.1](https://www
 
 Fornecer instruções para ajudar as pessoas a preencher formulários é uma parte fundamental das boas práticas de usabilidade da interface. Fazer isso é particularmente útil para pessoas com deficiências visuais ou cognitivas que de outra forma poderiam ter dificuldade para entender o layout de um formulário e o tipo de dados a ser fornecido em um campo de formulário específico.
 
-No AEM, uma etiqueta padrão é adicionada quando você adiciona um componente de formulário, como um **Campo de Texto**, à página. Este título padrão é dependente do tipo de componente. Você pode adicionar seu próprio título na guia **Título e Texto** da janela de edição desse campo. É importante garantir que as etiquetas ajudem os usuários a compreender os dados associados a cada componente do formulário.
+##### Forms
+
+In the AEM WKND demo project a default label is added when you add a form component, such as a **Text Field**, to the page. Este título padrão é dependente do tipo de componente. Você pode adicionar seu próprio título na guia **Título e Texto** da janela de edição desse campo. É importante garantir que as etiquetas ajudem os usuários a compreender os dados associados a cada componente do formulário.
 
 Este campo de **Título** deve ser usado para elementos de campo, pois fornece uma etiqueta que está disponível para tecnologia assistiva. Apenas escrever uma etiqueta no texto ao lado do campo não é suficiente.
 
 Para alguns componentes de formulário, também é possível ocultar as etiquetas visualmente usando a opção **Ocultar Título**. Marcadores ocultos ainda estão disponíveis para a tecnologia assistiva, mas não são exibidos na tela. Embora esta possa ser uma boa abordagem em algumas situações, geralmente é melhor incluir uma etiqueta visual sempre que possível, pois alguns usuários podem estar olhando para uma pequena seção da tela (um campo por vez) e precisam de etiquetas para identificar o campo corretamente.
 
-#### Botões de imagem {#image-buttons}
+###### Botões de imagem {#image-buttons}
 
-Quando são utilizados botões de imagem (por exemplo, o componente **Botão de Imagem**), o campo **Título** na guia **Título e Texto** da janela de edição fornece o texto alternativo para a imagem, em vez da etiqueta. Assim, no exemplo abaixo, a imagem com o texto `Submit`tem o texto alternativo de `Submit`, adicionado usando o campo **Título** na janela de edição.
+Where image buttons are used (for example, the **Image Button** component of the WKND project) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. Assim, no exemplo abaixo, a imagem com o texto `Submit`tem o texto alternativo de `Submit`, adicionado usando o campo **Título** na janela de edição.
 
-#### Grupos de campos de formulário {#groups-of-form-fields}
+###### Grupos de campos de formulário {#groups-of-form-fields}
 
-Se houver um grupo de controles relacionados, como **Grupo de opções**, pode ser necessário um título para o grupo, bem como controles individuais. Ao adicionar um conjunto de botões de opção no AEM, o campo **Título** fornece esse título de grupo, enquanto títulos individuais são especificados conforme os botões de opção (**Itens**) são criados.
+In the WKND project, where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. Ao adicionar um conjunto de botões de opção no AEM, o campo **Título** fornece esse título de grupo, enquanto títulos individuais são especificados conforme os botões de opção (**Itens**) são criados.
 
 Contudo, não existe uma associação programática entre o título do grupo e os próprios botões de opção. Editores de modelo precisam envolver o título nas tags `fieldset` e `legend` necessárias para criar esta associação e isso só pode ser feito através da edição do código fonte da página. Alternativamente, um administrador do sistema pode adicionar suporte a esses elementos para que eles apareçam na janela **Propriedades do Campo** (Consulte Adicionar suporte para elementos e atributos HTML adicionais).
 
@@ -1211,7 +1217,7 @@ Contudo, não existe uma associação programática entre o título do grupo e o
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-#### Considerações adicionais para formulários {#additional-considerations-for-forms}
+###### Considerações adicionais para formulários {#additional-considerations-for-forms}
 
 Se os dados devem ser inseridos em um formato específico, deixe isso claro no texto da etiqueta. Por exemplo, se uma data deve ser inscrita no formato `DD-MM-YYYY`, indique isso especificamente como parte da etiqueta. Isto significa que quando os usuários de leitores de tela encontrarem o campo, a etiqueta será anunciada automaticamente, juntamente com as informações adicionais sobre o formato.
 
