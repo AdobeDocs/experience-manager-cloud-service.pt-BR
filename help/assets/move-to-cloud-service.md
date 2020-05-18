@@ -3,19 +3,21 @@ title: Migrar para o serviço em nuvem do Adobe Experience Manager 6.x
 description: Migrar para o serviço em nuvem do Adobe Experience Manager 6.x
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: e399c9f372aa8995abf5cddfbc41d1cfe2b0aa22
+workflow-type: tm+mt
+source-wordcount: '28'
+ht-degree: 0%
 
 ---
 
 
-# Mover para os ativos Adobe Experience Manager como um serviço em nuvem {#move-to-assets-cloud-service}
+# Move to Adobe Experience Manager Assets as a Cloud Service {#move-to-assets-cloud-service}
 
 <!-- About the need to move from previous AEM deployment to a cloud service deployment. And how does Adobe help do it OOTB?
--->
 
-## Sobre a ferramenta de migração {#migration-tool}
 
-<!-- 
+## About the migration tool {#migration-tool}
+
 Link back to information about the tool in the Experience Manager as a Cloud Service docs if the tool works the same for Sites and Assets. Document the Assets-specific information here.
 
 * What is the migration tool called? Is there a branding term for it?
@@ -23,23 +25,21 @@ Link back to information about the tool in the Experience Manager as a Cloud Ser
 * Before migrating using the tool, is any prepping required?
 * See CQ-4271901
 
--->
 
-A ferramenta de migração ajuda você a obter o seguinte:
+The migration tool helps you achieve the following:
 
-* Converta os modelos de fluxo de trabalho existentes em perfis de processamento que funcionam com o Assets Compute Service.
-* Remova etapas não compatíveis dos modelos de fluxo de trabalho.
-* Desabilitar iniciadores de fluxo de trabalho.
-* Mesclar as configurações, após a confirmação/validação do usuário, no código-fonte existente.
+* Convert the existing workflow models to processing profiles that work with the Assets Compute Service.
+* Remove unsupported steps from the workflow models.
+* Disable workflow launchers.
+* Merge the configurations, after user confirmation/validation, in the existing source code.
 
-A ferramenta de migração cria perfis de processamento em um módulo Maven que os usuários podem usar das duas maneiras a seguir:
+The migration tool creates processing profiles in a Maven module that users can use in the following two ways:
 
-* Mesclar em um dos projetos existentes.
-* Adicione o módulo como novo submódulo.
+* Merge into one of their existing projects.
+* Add the module as new sub-module.
 
-A ferramenta de migração fornece um relatório das alterações feitas e informações sobre elas.
+The migration tool provides a report of the changes it made and information about the changes.
 
-<!--  
 
 What is the output of the tool, besides migrated content.
 
@@ -50,6 +50,7 @@ Give details about reports and logs of the tool.
 * Location of logs. How to read the logs.
 * What common errors to look for. Troubleshooting for these errors.
 
--->
 
-## Migrar conteúdo para uma nova implantação {#content-migration-across-deployments}
+## Migrate content to a new deployment {#content-migration-across-deployments}
+
+-->
