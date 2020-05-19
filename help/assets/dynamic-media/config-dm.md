@@ -2,12 +2,15 @@
 title: Configuração do serviço Dynamic Media Cloud
 description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 73d14016beabfbdb127fe9e4d91fb20d4c17918e
+workflow-type: tm+mt
+source-wordcount: '5120'
+ht-degree: 9%
 
 ---
 
 
-# Configuração da mídia dinâmica {#configuring-dynamic-media-scene-mode}
+# Configuração do Dynamic Media {#configuring-dynamic-media-scene-mode}
 
 Se você usar a configuração do Adobe Experience Manager para ambientes diferentes, como um para desenvolvimento, um para armazenamento temporário e outro para produção ao vivo, precisará configurar os Serviços da Dynamic Media Cloud para cada um desses ambientes.
 
@@ -458,9 +461,24 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
 Para manter o Dynamic Media em execução <!--(with `dynamicmedia_scene7` run mode)--> sem problemas, a Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
 
-* Atualize os processos de trabalho da fila do fluxo de trabalho Granite (ativos de vídeo) predefinidos.
-* Atualize os processos de trabalho de fila de trabalho temporário de Granite predefinidos (imagens e ativos que não sejam de vídeo).
-* Atualize o máximo de conexões de upload para o servidor do Dynamic Media Classic.
+* Atualização dos parâmetros de trabalho predefinidos para processamento de diferentes formatos de arquivo.
+* Atualizando os threads de trabalho de fila do fluxo de trabalho Granite (ativos de vídeo) predefinidos.
+* Atualizando os threads de trabalho de fila de trabalho temporário Granite predefinidos (imagens e ativos que não sejam de vídeo).
+* Atualização das conexões máximas de upload para o servidor do Dynamic Media Classic.
+
+#### Atualização dos parâmetros de trabalho predefinidos para processamento de diferentes formatos de arquivo
+
+Você pode ajustar os parâmetros de trabalho para processamento mais rápido ao carregar arquivos. Por exemplo, se você estiver carregando arquivos PSD, mas não quiser processá-los como modelos, poderá definir a extração de camada como false (desligado). Nesse caso, o parâmetro de trabalho ajustado apareceria como `process=None&createTemplate=false`.
+
+A Adobe recomenda usar os seguintes parâmetros de trabalho &quot;ajustados&quot; para arquivos PDF, Postscript e PSD:
+
+| Tipo de arquivo | Parâmetros de tarefa recomendados |
+| ---| ---|
+| PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
+| Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
+
+Para atualizar qualquer um desses parâmetros, siga as etapas em [Habilitar o suporte](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)ao parâmetro de trabalho de upload do Assets/Dynamic Media Classic baseado no tipo MIME.
 
 #### Atualizando a fila Fluxo de Trabalho Transitório do Granite {#updating-the-granite-transient-workflow-queue}
 
