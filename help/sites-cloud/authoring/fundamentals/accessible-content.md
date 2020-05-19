@@ -2,9 +2,9 @@
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
 description: Usar o AEM como um serviço em nuvem para ajudar a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiências
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
 workflow-type: tm+mt
-source-wordcount: '13943'
+source-wordcount: '13955'
 ht-degree: 86%
 
 ---
@@ -1164,7 +1164,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 3.2.4](https://www
 
 #### Propósito - Identificação de erro (3.3.1) {#purpose-error-identification}
 
-O propósito deste Critério de sucesso é garantir que os usuários estejam cientes de que ocorreu um erro e possam determinar o que está errado. A mensagem de erro deve ser o mais específica possível. No caso de um envio de formulário malsucedido, a reexibição do formulário e a indicação dos campos com erro são insuficientes para que alguns usuários percebam que ocorreu um erro. Os usuários do leitor de tela, por exemplo, não saberão que houve um erro até encontrarem um dos indicadores. Eles podem abandonar o formulário completamente antes de encontrar o indicador de erro, achando que a página simplesmente não está funcionando. De acordo com a definição na WCAG 2.0, um &quot;erro de entrada&quot; é a informação fornecida pelo usuário que não é aceita. Isso inclui:
+O propósito deste Critério de sucesso é garantir que os usuários estejam cientes de que ocorreu um erro e possam determinar o que está errado. A mensagem de erro deve ser o mais específica possível. No caso de um envio de formulário malsucedido, a reexibição do formulário e a indicação dos campos com erro são insuficientes para que alguns usuários percebam que ocorreu um erro. Os usuários do leitor de tela, por exemplo, não saberão que houve um erro até encontrarem um dos indicadores. Eles podem abandonar o formulário completamente antes de encontrar o indicador de erro, achando que a página simplesmente não está funcionando. Per the definition in WCAG, an [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) is information provided by the user that is not accepted. Isso inclui:
 
 informações exigidas pela página da Web, mas omitidas pelo usuário ou informações fornecidas pelo usuário, mas que não estejam no formato de dados necessário ou valores permitidos.
 Por exemplo:
@@ -1245,7 +1245,7 @@ Em formulários simples, com funcionalidade muito limitada, a identificação ad
 
 #### Propósito - Sugestão de erro (3.3.3) {#purpose-error-suggestion}
 
-O propósito deste Critério de sucesso é garantir que os usuários recebam sugestões adequadas para a correção de um erro de entrada, se possível. A definição de &quot;erro de entrada&quot; da WCAG 2.0 diz &quot;informação fornecida pelo usuário que não é aceita&quot; pelo sistema. Alguns exemplos de informações que não são aceitas incluem informações obrigatórias, mas omitidas pelo usuário, e informações fornecidas pelo usuário, mas que não estão no formato de dados necessário ou valores permitidos.
+O propósito deste Critério de sucesso é garantir que os usuários recebam sugestões adequadas para a correção de um erro de entrada, se possível. The WCAG definition of [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) says that it is &quot;information provided by the user that is not accepted&quot; by the system. Alguns exemplos de informações que não são aceitas incluem informações obrigatórias, mas omitidas pelo usuário, e informações fornecidas pelo usuário, mas que não estão no formato de dados necessário ou valores permitidos.
 
 O Critério de sucesso 3.3.1 prevê a notificação de erros. Mas as pessoas com limitações cognitivas podem ter dificuldade para entender como corrigir os erros. Pessoas com deficiências visuais podem não ser capazes de descobrir exatamente como corrigir o erro. No caso de um envio de formulário malsucedido, os usuários podem abandonar o formulário por não ter certeza de como corrigir o erro, mesmo sabendo que ele ocorreu.
 
