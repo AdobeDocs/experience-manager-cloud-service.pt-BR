@@ -1,10 +1,10 @@
 ---
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
-description: Ajuda para tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
+description: Usar o AEM como um serviço em nuvem para ajudar a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiências
 translation-type: tm+mt
-source-git-commit: ad0bceb47a2881ad82af4967b135d2adeff3fbf7
+source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
-source-wordcount: '13936'
+source-wordcount: '13943'
 ht-degree: 86%
 
 ---
