@@ -2,7 +2,10 @@
 title: Implantar seu código - Serviços em nuvem
 description: Implantar seu código - Serviços em nuvem
 translation-type: tm+mt
-source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
+source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 3%
 
 ---
 
@@ -11,16 +14,16 @@ source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ## Implantação de código com o Cloud Manager {#deploying-code-with-cloud-manager}
 
-Depois de configurar seu **Pipeline** (repositório, ambiente e ambiente de teste), você estará pronto para implantar seu código.
+Depois de configurar o **Pipeline** (repositório, ambiente e ambiente de teste), você estará pronto para implantar seu código.
 
-1. Clique em **Implantar** no Gerenciador de nuvem para iniciar o processo de implantação.
+1. Clique em **Implantar** no Gerenciador de nuvem para start do processo de implantação.
 
    ![](assets/deploy-code1.png)
 
 
 1. A tela Execução **do pipeline** é exibida.
 
-   Clique em **Criar** para iniciar o processo.
+   Clique em **Criar** para start do processo.
 
    ![](assets/deploy-code2.png)
 
@@ -35,7 +38,7 @@ Depois de configurar seu **Pipeline** (repositório, ambiente e ambiente de test
    >
    >Além disso, você pode revisar as etapas de vários processos de implantação ao exibir registros ou revisar os resultados para os critérios de teste.
 
-   A implantação **do** estágio envolve as seguintes etapas:
+   A **Implantação do preparo** envolve estas etapas:
 
    * Validação: Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento, por exemplo, que a ramificação configurada exista, os ambientes estarão disponíveis.
    * Compilação e teste de unidade: Esta etapa executa um processo de criação contido. Consulte [Criar um projeto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) de aplicativo AEM para obter detalhes sobre o ambiente de criação.
@@ -44,9 +47,9 @@ Depois de configurar seu **Pipeline** (repositório, ambiente e ambiente de test
    * Implantar no palco
 
       ![](assets/stage-deployment.png)
-   O teste **** Stage envolve as seguintes etapas:
+   O **Teste de preparo** envolve as seguintes etapas:
 
-   * Teste funcional do produto: As execuções de pipeline do Gerenciador de nuvem oferecerão suporte à execução de testes executados no ambiente de estágio. Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
+   * Teste funcional do produto: As execuções de pipeline do Gerenciador de nuvem oferecerão suporte à execução de testes executados em relação ao ambiente stage. Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
    * Teste funcional personalizado: Esta etapa do pipeline está sempre presente e não pode ser ignorada. No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão. Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
 
       ![](assets/stage-testing.png)
@@ -62,14 +65,14 @@ Depois de configurar seu **Pipeline** (repositório, ambiente e ambiente de test
 
 A seção a seguir descreve como os pacotes do AEM e do dispatcher são implantados na fase de estágio e na fase de produção.
 
-O Cloud Manager carrega todos os arquivos target/*.zip produzidos pelo processo de compilação em um local de armazenamento.  Esses artefatos são recuperados desse local durante as fases de implantação do pipeline.
+O Cloud Manager carrega todos os arquivos público alvo/*.zip produzidos pelo processo de compilação para um local do armazenamento.  Esses artefatos são recuperados desse local durante as fases de implantação do pipeline.
 
 Quando o Cloud Manager é implantado em topologias que não sejam de produção, o objetivo é concluir a implantação o mais rápido possível e, portanto, os artefatos são implantados em todos os nós simultaneamente, da seguinte forma:
 
 1. O Cloud Manager determina se cada artefato é um pacote AEM ou dispatcher.
-1. O Cloud Manager remove todos os despachadores do Balanceador de carga para isolar o ambiente durante a implantação.
+1. O Cloud Manager remove todos os despachantes do Balanceador de carga para isolar o ambiente durante a implantação.
 
-   A menos que configurado de outra forma, você pode ignorar as Alterações do Balanceador de Carga nas Implantações de Dev e Stage, ou seja, desanexar e anexar etapas em pipelines de não produção, para ambientes dev e pipeline de produção, para ambientes de estágio.
+   A menos que configurado de outra forma, você pode ignorar as Alterações do Balanceador de Carga nas Implantações de Dev e Stage, ou seja, desanexar e anexar etapas em pipelines de não produção, para ambientes dev e o pipeline de produção, para ambientes de palco.
 
    >[!NOTE]
    >
@@ -98,11 +101,11 @@ Quando o Cloud Manager é implantado em topologias que não sejam de produção,
 
    >[!NOTE]
    >
-   >Você pode ignorar as mudanças de carregamento de lancer nas implantações de desenvolvimento e estágio, ou seja, desanexar e anexar etapas em pipelines de não produção, para ambientes de desenvolvedor e pipeline de produção, para ambientes de estágio.
+   >Você pode ignorar as alterações no balanceador de carga nas implantações de desenvolvimento e estágio, ou seja, desanexar e anexar etapas em pipelines que não sejam de produção, para ambientes de desenvolvedor e pipeline de produção, para ambientes de estágio.
 
 ### Implantação para fase de produção {#deployment-production-phase}
 
-O processo de implantação das topologias de produção é ligeiramente diferente para minimizar o impacto para os visitantes do site do AEM.
+O processo de implantação das topologias de produção é ligeiramente diferente para minimizar o impacto nos visitantes do site do AEM.
 
 As implantações de produção geralmente seguem as mesmas etapas acima, mas de maneira contínua:
 
