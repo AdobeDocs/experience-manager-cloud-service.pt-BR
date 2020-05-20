@@ -2,10 +2,10 @@
 title: Gerenciar Ambientes - Serviço em nuvem
 description: Gerenciar Ambientes - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
+source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 15%
+source-wordcount: '629'
+ht-degree: 9%
 
 ---
 
@@ -44,7 +44,7 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
    ![](assets/no-environment-2.png)
 
 
-   A opção **Adicionar Ambiente** também estará disponível na placa **Ambientes** quando não houver nenhum ambiente no programa.
+   A opção **Adicionar Ambiente** também está disponível na placa **Ambientes** quando não há nenhum ambiente no programa.
 
    ![](assets/no-environments.png)
 
@@ -65,7 +65,6 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
    >[!NOTE]
    >Caso ainda não tenha configurado o pipeline de não-produção, a tela *Visão geral* exibe o cartão de onde você pode criar o pipeline de não-produção.
 
-
 ## Atualização do Ambiente {#updating-dev-environment}
 
 As atualizações de ambientes de Estágio e Produção são gerenciadas automaticamente pela Adobe.
@@ -73,11 +72,12 @@ As atualizações de ambientes de Estágio e Produção são gerenciadas automat
 As atualizações dos ambientes de desenvolvimento são gerenciadas pelos usuários do programa. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status na placa de Ambientes na tela inicial mostrará **ATUALIZAÇÃO DISPONÍVEL**.
 
 ![](assets/manage-environments2.png)
-)
 
-Quando esse status for exibido, a opção **Atualizar** estará disponível no menu suspenso, tanto no Cartão de ambientes quanto no menu **Gerenciar**, se você clicar em **Detalhes** no cartão **AMBIENTES**.
 
-![](assets/add-environment4.png)
+A opção **Atualizar** está disponível no menu suspenso no Cartão de **Ambientes** .
+Essa opção também está disponível no botão **Gerenciar** , se você clicar em **Detalhes** no cartão de **Ambientes** .
+
+![](assets/update-environment2.png)
 
 Selecionar isso no menu suspenso permitirá que um Gerenciador de implantação atualize o pipeline associado a esse ambiente para a versão mais recente e execute o pipeline.
 
@@ -87,10 +87,19 @@ Se o pipeline já tiver sido atualizado, o usuário será solicitado a executar 
 
 O usuário com as permissões necessárias poderá excluir um ambiente de desenvolvimento.
 
-Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+A opção **Excluir** está disponível no menu suspenso no Cartão de **Ambientes** .
+Essa opção também está disponível no botão **Gerenciar** , se você clicar em **Detalhes** no cartão de **Ambientes** .
 
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
 Este recurso não está disponível para ambientes de produção/estágio definidos em uma configuração regular de programa para fins de produção. No entanto, o recurso está disponível para ambientes de produção/estágio em um programa Sandbox.
+
+## Acesso ao Console do desenvolvedor {#accessing-developer-console}
+
+Selecione **Developer Console** no menu suspenso no Cartão de **Ambientes** .
+
+![](assets/dev-console1.png)
+
+Você também pode selecionar essa opção no botão **Gerenciar** , se clicar em **Detalhes** no cartão de **Ambientes** .
 
