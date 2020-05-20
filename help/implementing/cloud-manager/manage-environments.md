@@ -2,7 +2,10 @@
 title: Gerenciar Ambientes - Serviço em nuvem
 description: Gerenciar Ambientes - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
+source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 15%
 
 ---
 
@@ -37,9 +40,16 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
 ## Adicionar um Ambiente {#adding-environments}
 
 
-1. O usuário clica no botão **Adicionar ambiente** para adicionar um ambiente.
+1. Clique em **Adicionar Ambiente** para adicionar um ambiente. Esse botão estará acessível na tela **Ambientes** .
+   ![](assets/no-environment-2.png)
 
-   ![](assets/add-environment.png)
+
+   A opção **Adicionar Ambiente** também estará disponível na placa **Ambientes** quando não houver nenhum ambiente no programa.
+
+   ![](assets/no-environments.png)
+
+   >[!OBSERVAÇÃO)
+   >A opção **Adicionar Ambiente** será desativada com base na falta de permissões ou no que pode ser contratado.
 
 1. A caixa de diálogo **Adicionar ambiente** é exibida. O usuário precisa enviar detalhes como **Tipo de ambiente** e **Nome do ambiente** e **Descrição do ambiente** (dependendo do objetivo do usuário ao criar o ambiente dentro dos limites do que está disponível para o locatário específico).
 
@@ -72,3 +82,15 @@ Quando esse status for exibido, a opção **Atualizar** estará disponível no m
 Selecionar isso no menu suspenso permitirá que um Gerenciador de implantação atualize o pipeline associado a esse ambiente para a versão mais recente e execute o pipeline.
 
 Se o pipeline já tiver sido atualizado, o usuário será solicitado a executar o pipeline.
+
+## Excluindo Ambiente {#deleting-environment}
+
+O usuário com as permissões necessárias poderá excluir um ambiente de desenvolvimento.
+
+Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+
+![](assets/deleting-environment1.png)
+
+>[!NOTE]
+Este recurso não está disponível para ambientes de produção/estágio definidos em uma configuração regular de programa para fins de produção. No entanto, o recurso está disponível para ambientes de produção/estágio em um programa Sandbox.
+
