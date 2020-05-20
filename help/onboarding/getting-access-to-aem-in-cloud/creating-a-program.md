@@ -2,7 +2,10 @@
 title: Criação de um Programa - Serviço em nuvem
 description: Criação de um Programa - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: b30d9e37bb7de46aa252aa7030ab0c2de8610431
+source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 0%
 
 ---
 
@@ -29,10 +32,7 @@ Dependendo do objetivo do usuário de criar o programa dentro dos limites do que
 
 ![](assets/create-program-add.png)
 
-## Criação de um Programa de demonstração {#create-demo-program}
-
->[!NOTE]
->Um programa de demonstração é análogo a um programa sandbox na interface do usuário do Cloud Manager.
+## Criação de um Programa Sandbox {#create-demo-program}
 
 Siga as etapas abaixo para criar um programa sandbox:
 
