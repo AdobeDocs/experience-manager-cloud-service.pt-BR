@@ -2,9 +2,9 @@
 title: Gerenciar Ambientes - Serviço em nuvem
 description: Gerenciar Ambientes - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 15%
 
 ---
@@ -48,7 +48,7 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
 
    ![](assets/no-environments.png)
 
-   >[!OBSERVAÇÃO)
+   >[!NOTE]
    >A opção **Adicionar Ambiente** será desativada com base na falta de permissões ou no que pode ser contratado.
 
 1. A caixa de diálogo **Adicionar ambiente** é exibida. O usuário precisa enviar detalhes como **Tipo de ambiente** e **Nome do ambiente** e **Descrição do ambiente** (dependendo do objetivo do usuário ao criar o ambiente dentro dos limites do que está disponível para o locatário específico).
