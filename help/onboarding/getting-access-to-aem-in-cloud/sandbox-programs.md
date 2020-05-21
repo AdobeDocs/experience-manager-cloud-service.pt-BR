@@ -2,9 +2,9 @@
 title: Programas Sandbox - Serviço em nuvem
 description: Programas Sandbox - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
+source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Uma caixa de proteção é normalmente criada para servir aos propósitos de tre
 
 Os programas Sandbox incluem Sites e Ativos e são preenchidos automaticamente com uma ramificação Git que inclui código de amostra, um ambiente de desenvolvimento e um pipeline de não-produção.
 
-Para obter mais informações sobre tipos de programas, consulte [Entendendo Programas e tipos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html)de Programas.
+Consulte [Como entender Programas e tipos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) de Programas para saber mais sobre os tipos de Programas.
 
 ### Atributos de Programas Sandbox {#attributes-sandbox}
 
@@ -86,9 +86,17 @@ Siga as etapas abaixo para hibernar manualmente os ambientes do Programa Sandbox
 
 1. Navegue até o **Developer Console**.
 Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) para saber como acessar o **Developer Console** a partir da placa de **Ambientes** .
-1. Clique em Hibernar, conforme mostrado na figura abaixo:
-1. Clique em **Hibernar** para confirmar a etapa
-1. Quando a hibernação for bem-sucedida, você verá a seguinte tela.
+
+1. Clique em Hibernar, conforme mostrado na figura abaixo
+
+   ![](assets/hibernate-1.png)
+1. Clique em **Hibernar** para confirmar a etapa.
+
+   ![](assets/hibernate-2.png)
+
+1. Quando a hibernação for bem-sucedida, você verá a notificação de conclusão do processo de hibernação do seu ambiente na tela do Console **do** desenvolvedor.
+
+   ![](assets/hibernate-4.png)
 
 #### Acessar um Ambiente Hibernado {#accessing-hibernated-environment}
 
@@ -134,7 +142,7 @@ Um usuário pode aplicar manualmente as atualizações do AEM aos ambientes em u
 A opção Atualizar está disponível no menu suspenso no Cartão de **Ambientes** . Essa opção também está disponível no botão **Gerenciar** , se você clicar em **Detalhes** no cartão de **Ambientes** .
 
 >[!NOTE]
->É necessário configurar um pipeline de *não produção* que implante no ambiente de desenvolvimento de interesse para que seja iniciado um pipeline de atualização manual.
+>É necessário configurar um pipeline de *não produção* implantando no ambiente de desenvolvimento de interesse para que um pipeline de atualização manual seja iniciado.
 
 >[!NOTE]
 >Um pipeline *de produção* deve ser configurado para que um pipeline de atualização manual seja iniciado para o conjunto de ambientes Production+Stage.
