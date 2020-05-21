@@ -2,9 +2,9 @@
 title: Programas Sandbox - Serviço em nuvem
 description: Programas Sandbox - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
+source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Os Programas Sandbox têm os seguintes atributos:
 
 O assistente de criação de programas permite criar um Programa Sandbox.
 
-Para saber como criar um Programa Sandbox, consulte [Criar um Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program)Sandbox.
+Para saber como criar um Programa Sandbox, consulte [Criar um Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) Sandbox para obter mais detalhes.
 
 ### Criação de Ambientes Sandbox {#creating-sandbox-environments}
 
@@ -51,7 +51,7 @@ O conjunto de ambientes de estágio de produção pode ser adicionado manualment
 
 Para saber como criar manualmente um ambiente, consulte [Adicionar Ambientes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) para obter mais detalhes.
 
-### Excluindo Ambientes do Sandbox  {#deleting-sandbox-environments}
+### Excluindo Ambientes do Sandbox {#deleting-sandbox-environments}
 
 O usuário com as permissões necessárias pode excluir um ou mais conjuntos de ambientes de desenvolvimento ou de produção/estágio.
 
@@ -75,6 +75,9 @@ A hibernação é classificada como:
 
 * **Manual**: Como usuário, você pode hibernar manualmente um ambiente do Programa do Sandbox, embora não haja nenhum requisito para fazer isso, uma vez que a hibernação ocorrerá automaticamente após determinado período (oito horas) de inatividade.
 
+>[!CAUTION]
+>Na versão mais recente, vincular ao Developer Console do Cloud Manager não permitirá que você hiberne o ambiente do Programa Sandbox.
+
 #### Uso da hibernação manual {#using-manual-hibernation}
 
 Você pode hibernar manualmente seu Programa do Sandbox no Developer Console de duas maneiras diferentes, usando:
@@ -87,9 +90,16 @@ Siga as etapas abaixo para hibernar manualmente os ambientes do Programa Sandbox
 1. Navegue até o **Developer Console**.
 Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) para saber como acessar o **Developer Console** a partir da placa de **Ambientes** .
 
-1. Clique em Hibernar, conforme mostrado na figura abaixo
+1. Click **Hibernate**, as shown in the figure below:
 
    ![](assets/hibernate-1.png)
+
+   Ou,
+
+   Clique em **Hibernar** na lista de Ambientes, conforme mostrado na figura abaixo:
+
+   ![](assets/hibernate-1b.png)
+
 1. Clique em **Hibernar** para confirmar a etapa.
 
    ![](assets/hibernate-2.png)
@@ -97,14 +107,6 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
 1. Quando a hibernação for bem-sucedida, você verá a notificação de conclusão do processo de hibernação do seu ambiente na tela do Console **do** desenvolvedor.
 
    ![](assets/hibernate-4.png)
-
-#### Acessar um Ambiente Hibernado {#accessing-hibernated-environment}
-
-Ao fazer solicitações de navegador contra o autor ou a camada de publicação de um ambiente hibernado, o usuário encontrará uma landing page descrevendo o status hibernado do ambiente, como ilustrado abaixo:
-
-Um usuário com o Gerenciador de **nuvem - Função** de desenvolvedor pode clicar no botão Console do desenvolvedor para acessar o console do desenvolvedor e cancelar a hibernação do ambiente. Informações sobre a configuração de funções podem ser encontradas na Documentação do Cloud Manager.
-
-Se um usuário em uma organização não puder clicar no botão do Developer Console para ser direcionado para o Developer Console, é provável que ele precise receber o &quot;Gerenciador de nuvem - Função de desenvolvedor&quot;.
 
 
 ### Deshibernação {#de-hibernation-introduction}
@@ -119,6 +121,13 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
 
    ![](assets/de-hibernation-img1.png)
 
+   Ou,
+
+   Clique em **Cancelar** a hibernação na lista de **Ambientes** , como mostrado na figura abaixo:
+
+   ![](assets/de-hibernate-1b.png)
+
+
 1. Clique em **Deshibernar** para confirmar a etapa.
 
    ![](assets/de-hibernation-img2.png)
@@ -131,24 +140,42 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
 
    ![](assets/de-hibernation-img4.png)
 
+#### Acessar um Ambiente Hibernado {#accessing-hibernated-environment}
+
+Ao fazer solicitações de navegador contra o autor ou a camada de publicação de um ambiente hibernado, o usuário encontrará uma landing page descrevendo o status hibernado do ambiente, como mostrado na figura abaixo:
+
+![](assets/de-hibernation-img5.png)
+
+
+Um usuário com o Gerenciador de **nuvem - Função** de desenvolvedor pode clicar em **Developer Console** para acessar o console do desenvolvedor e cancelar a hibernação do ambiente.
+
+>[!NOTE]
+> Muitos recursos no Cloud Manager exigem permissões específicas para operar. Para saber mais sobre funções para usuários que controlam a disponibilidade de recursos específicos, consulte[Adicionar usuários e funções](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
+
+#### Considerações importantes {#important-considerations}
+
+Poucas considerações importantes relacionadas aos ambientes hibernados e com hibernação são:
+
+* Um usuário pode usar um pipeline para implantar código personalizado em ambientes hibernados. O ambiente permanecerá hibernado e o novo código aparecerá no ambiente depois de ser deshibernado.
+
+* As atualizações do AEM podem ser aplicadas a ambientes hibernados, que os clientes podem acionar manualmente a partir do Cloud Manager. O ambiente permanecerá hibernado e a nova versão aparecerá no ambiente depois de ser deshibernada.
+
+>[!NOTE]
+>Atualmente, o Cloud Manager não indica se um ambiente está hibernado.
 
 ## Atualizações do AEM para Ambientes do Sandbox {#aem-updates-sandbox}
 
-
 Consulte as atualizações [de versão do](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) AEM para obter mais detalhes.
 
-Um usuário pode aplicar manualmente as atualizações do AEM aos ambientes em um Programa Sandbox (veja a figura abaixo). Isso pode ser feito quando o status exibido for **ATUALIZAÇÃO DISPONÍVEL**.
+Um usuário pode aplicar manualmente as atualizações do AEM aos ambientes em um Programa Sandbox.
 
-A opção Atualizar está disponível no menu suspenso no Cartão de **Ambientes** . Essa opção também está disponível no botão **Gerenciar** , se você clicar em **Detalhes** no cartão de **Ambientes** .
-
->[!NOTE]
->É necessário configurar um pipeline de *não produção* implantando no ambiente de desenvolvimento de interesse para que um pipeline de atualização manual seja iniciado.
+Consulte [Atualização do Ambiente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) para saber como atualizar um ambiente.
 
 >[!NOTE]
->Um pipeline *de produção* deve ser configurado para que um pipeline de atualização manual seja iniciado para o conjunto de ambientes Production+Stage.
+>* É necessário configurar um pipeline de *não produção* implantando no ambiente de desenvolvimento de interesse para que um pipeline de atualização manual seja iniciado.
+>* Um pipeline *de produção* deve ser configurado para que um pipeline de atualização manual seja iniciado para o conjunto de ambientes Production+Stage.
+>* A atualização manual para o *Production* ou *Stage* ambiente atualizará automaticamente o outro. O conjunto de ambientes Production+Stage deve estar na mesma versão do AEM.
 
->[!NOTE]
->A atualização manual para o *Production* ou *Stage* ambiente atualizará automaticamente o outro. O conjunto de ambientes Production+Stage deve estar na mesma versão do AEM.
 
 
 
