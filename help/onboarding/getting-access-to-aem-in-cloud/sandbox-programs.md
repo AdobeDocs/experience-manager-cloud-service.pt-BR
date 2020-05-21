@@ -2,9 +2,9 @@
 title: Programas Sandbox - Serviço em nuvem
 description: Programas Sandbox - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Um programa Sandbox é um dos dois tipos de programas disponíveis no serviço A
 
 Uma caixa de proteção é normalmente criada para servir aos propósitos de treinamento, execução de demonstrações, ativação ou Prova de conceito (POC). Eles não são feitos para transportar tráfego ao vivo.
 
-Os programas Sandbox incluem Sites e Ativos e são preenchidos automaticamente com uma ramificação Git que inclui código de amostra, um ambiente de desenvolvimento e um pipeline de não-produção.
+Os programas Sandbox incluem Sites e Ativos e são preenchidos automaticamente com um repositório Git, um ambiente de desenvolvimento e um pipeline de não-produção.  O repositório Git é preenchido com um projeto de amostra baseado no tipo de arquivo do AEM Project.
 
 Consulte [Como entender Programas e tipos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) de Programas para saber mais sobre os tipos de Programas.
 
@@ -41,7 +41,7 @@ Os Programas Sandbox têm os seguintes atributos:
 
 O assistente de criação de programas permite criar um Programa Sandbox.
 
-Para saber como criar um Programa Sandbox, consulte.
+Para saber como criar um Programa Sandbox, consulte [Criar um Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) Sandbox para obter mais detalhes.
 
 ### Criação de Ambientes Sandbox {#creating-sandbox-environments}
 
@@ -74,6 +74,9 @@ A hibernação é classificada como:
 * **Os ambientes de Programa da caixa de proteção automática** são hibernados automaticamente após oito horas de inatividade, o que significa que nem o autor nem os serviços de publicação recebem solicitação.
 
 * **Manual**: Como usuário, você pode hibernar manualmente um ambiente do Programa do Sandbox, embora não haja nenhum requisito para fazer isso, uma vez que a hibernação ocorrerá automaticamente após determinado período (oito horas) de inatividade.
+
+>[!CAUTION]
+>Na versão mais recente, vincular ao Developer Console do Cloud Manager não permitirá que você hiberne o ambiente do Programa Sandbox.
 
 #### Uso da hibernação manual {#using-manual-hibernation}
 
@@ -149,6 +152,17 @@ Um usuário com o Gerenciador de **nuvem - Função** de desenvolvedor pode clic
 >[!NOTE]
 > Muitos recursos no Cloud Manager exigem permissões específicas para operar. Para saber mais sobre funções para usuários que controlam a disponibilidade de recursos específicos, consulte[Adicionar usuários e funções](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
+#### Considerações importantes {#important-considerations}
+
+Poucas considerações importantes relacionadas aos ambientes hibernados e com hibernação são:
+
+* Um usuário pode usar um pipeline para implantar código personalizado em ambientes hibernados. O ambiente permanecerá hibernado e o novo código aparecerá no ambiente depois de ser deshibernado.
+
+* As atualizações do AEM podem ser aplicadas a ambientes hibernados, que os clientes podem acionar manualmente a partir do Cloud Manager. O ambiente permanecerá hibernado e a nova versão aparecerá no ambiente depois de ser deshibernada.
+
+>[!NOTE]
+>Atualmente, o Cloud Manager não indica se um ambiente está hibernado.
+
 ## Atualizações do AEM para Ambientes do Sandbox {#aem-updates-sandbox}
 
 Consulte as atualizações [de versão do](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) AEM para obter mais detalhes.
@@ -158,13 +172,9 @@ Um usuário pode aplicar manualmente as atualizações do AEM aos ambientes em u
 Consulte [Atualização do Ambiente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) para saber como atualizar um ambiente.
 
 >[!NOTE]
->É necessário configurar um pipeline de *não produção* implantando no ambiente de desenvolvimento de interesse para que um pipeline de atualização manual seja iniciado.
+>* Uma atualização manual só pode ser executada quando o ambiente de destino tiver um pipeline configurado corretamente.
+>* Uma atualização manual do *Production* ou do *Stage* ambiente atualizará automaticamente o outro. O conjunto de ambientes Production+Stage deve estar na mesma versão do AEM.
 
->[!NOTE]
->Um pipeline *de produção* deve ser configurado para que um pipeline de atualização manual seja iniciado para o conjunto de ambientes Production+Stage.
-
->[!NOTE]
->A atualização manual para o *Production* ou *Stage* ambiente atualizará automaticamente o outro. O conjunto de ambientes Production+Stage deve estar na mesma versão do AEM.
 
 
 
