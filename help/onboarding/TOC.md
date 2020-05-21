@@ -1,8 +1,11 @@
 ---
 sub-product: Integração ao AEM as a Cloud Service
 user-guide-title: Integração ao AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
+translation-type: tm+mt
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 96%
 
 ---
 
@@ -17,9 +20,11 @@ source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
    + [Repositório de código-fonte](what-is-required/source-code-repository.md)
 + Acesso ao AEM na nuvem {#getting-access}
    + [Acesso ao Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
-   + [Acesso aos programas](getting-access-to-aem-in-cloud/first-time-login.md)
-   + [Noções básicas sobre programas e tipos de programas](getting-access-to-aem-in-cloud/understand-program-types.md)
-   + [Criação de um programa](getting-access-to-aem-in-cloud/creating-a-program.md)
+   + Programas do serviço em nuvem {#cloud-service-programs}
+      + [Acesso aos programas](getting-access-to-aem-in-cloud/first-time-login.md)
+      + [Noções básicas sobre programas e tipos de programas](getting-access-to-aem-in-cloud/understand-program-types.md)
+      + [Criação de um programa](getting-access-to-aem-in-cloud/creating-a-program.md)
+      + [Programas Sandbox](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + [Criação de um projeto de aplicativo AEM](getting-access-to-aem-in-cloud/creating-aem-application-project.md)
 + Disponibilidade para proteção e privacidade de dados {#data-privacy}
    + [Regulamentos de disponibilidade para proteção e privacidade de dados do AEM](data-privacy-and-protection-readiness/aem-readiness.md)
