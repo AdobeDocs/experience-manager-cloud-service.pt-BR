@@ -2,7 +2,7 @@
 title: Criação de um Programa - Serviço em nuvem
 description: Criação de um Programa - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -32,13 +32,13 @@ Dependendo do objetivo do usuário de criar o programa dentro dos limites do que
 
 ![](assets/create-program-add.png)
 
-## Criação de um Programa Sandbox {#create-demo-program}
+## Criação de um Programa Sandbox {#create-sandbox-program}
 
 Siga as etapas abaixo para criar um programa sandbox:
 
 1. No assistente para criação de programas, selecione **Configurar uma demonstração**. O usuário envia o nome do programa antes de selecionar **Criar**.
 
-   ![](assets/create-program-setupdemo.png)
+   ![](assets/create-sandbox.png)
 
 1. O usuário verá o novo cartão de programa da caixa de proteção na landing page e poderá passar o mouse sobre ele para selecionar o ícone do Gerenciador de nuvem para navegar até a página de visão geral do Gerenciador de nuvem. O cartão informará o usuário sobre o status da configuração automática do programa sandbox recém-criado. O usuário verá a progressão.
 
