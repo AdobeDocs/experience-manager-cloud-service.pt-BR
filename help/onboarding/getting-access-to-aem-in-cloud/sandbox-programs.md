@@ -4,7 +4,7 @@ description: Programas Sandbox - Serviço em nuvem
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Um programa Sandbox é um dos dois tipos de programas disponíveis no serviço AEM Cloud, sendo o outro um programa Regular.
 
-Uma caixa de proteção é normalmente criada para servir aos propósitos de treinamento, execução de demonstrações, ativação ou Prova de conceito (POC). Eles não são feitos para transportar tráfego ao vivo. Eles não estão sujeitos aos compromissos [de serviço da nuvem do](https://www.adobe.com/legal/service-commitments.html)AEM.
+Uma caixa de proteção é normalmente criada para servir aos propósitos de treinamento, execução de demonstrações, ativação ou Prova de conceito (POC). Eles não são feitos para transportar tráfego ao vivo. Eles não estão sujeitos ao [AEM como um compromisso](https://www.adobe.com/legal/service-commitments.html)de serviço na nuvem.
 
 Os ambientes criados em uma caixa de proteção não estão configurados para dimensionamento automático. Portanto, não são adequados para testes de desempenho ou de carga.
 
