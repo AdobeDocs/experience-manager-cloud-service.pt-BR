@@ -2,9 +2,9 @@
 title: Programas Sandbox - Serviço em nuvem
 description: Programas Sandbox - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 4539744f8574bfa925d40cf685d02e4bc7ad4416
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -71,12 +71,12 @@ A hibernação pode ocorrer automática ou manualmente. Pode levar alguns minuto
 
 A hibernação é classificada como:
 
-* **Os ambientes de Programa da caixa de proteção automática** são hibernados automaticamente após oito horas de inatividade, o que significa que nem o autor nem os serviços de publicação recebem solicitação.
+* **ambientes automáticos** de Programa Sandbox são hibernados automaticamente após oito horas de inatividade, o que significa que nem o autor nem os serviços de publicação recebem solicitações.
 
-* **Manual**: Como usuário, você pode hibernar manualmente um ambiente do Programa do Sandbox, embora não haja nenhum requisito para fazer isso, uma vez que a hibernação ocorrerá automaticamente após determinado período (oito horas) de inatividade.
+* **Manual**: Como usuário, você pode hibernar manualmente um ambiente do Programa do Sandbox, embora não haja nenhum requisito para fazer isso, uma vez que a hibernação ocorrerá automaticamente após um determinado período (oito horas) de inatividade.
 
 >[!CAUTION]
->Na versão mais recente, vincular ao Developer Console do Cloud Manager não permitirá que você hiberne o ambiente do Programa Sandbox.
+>Na versão mais recente, vincular ao Developer Console diretamente do Cloud Manager não lhe dará a opção de hibernar um ambiente de Programa Sandbox. A solução alternativa é uma vez no Developer Console, adicione o seguinte padrão ao final do url `#release-cm-p1234-e5678 where 1234` 1234 como sua ID *do* Programa e 5678 como sua ID *do* Ambiente.
 
 #### Uso da hibernação manual {#using-manual-hibernation}
 
@@ -89,6 +89,8 @@ Siga as etapas abaixo para hibernar manualmente os ambientes do Programa Sandbox
 
 1. Navegue até o **Developer Console**.
 Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) para saber como acessar o **Developer Console** a partir da placa de **Ambientes** .
+   >[!NOTE]
+   >vincular ao Developer Console diretamente do Cloud Manager não lhe dará a opção de hibernar um ambiente de Programa do Sandbox. A solução alternativa é uma vez no Developer Console, adicione o seguinte padrão ao final do url `#release-cm-p1234-e5678 where 1234` 1234 como sua ID *do* Programa e 5678 como sua ID *do* Ambiente.
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -96,7 +98,7 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
 
    Ou,
 
-   Clique em **Hibernar** na lista de Ambientes, conforme mostrado na figura abaixo:
+   Clique no link **Ambientes** na parte superior esquerda para visualização na lista ambientes e clique em **Hibernar**, como mostrado na figura abaixo:
 
    ![](assets/hibernate-1b.png)
 
@@ -114,6 +116,9 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
 1. Navegue até o **Developer Console**.
 Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) para saber como acessar o **Developer Console** a partir da placa de **Ambientes** .
 
+   >[!NOTE]
+   >Como alternativa, você pode navegar até o **Developer Console** para cancelar a hibernação tentando acessar o serviço de autor ou publicação de um ambiente já hibernado; nesse caso, uma landing page será exibida com um link para o Developer Console. Consulte a seção Acessar um Ambiente hibernado abaixo.
+
    >[!IMPORTANT]
    >O acesso ao Console do desenvolvedor é definido pelo Gerenciador da **nuvem - Função** do desenvolvedor no Console **de** administração. Um usuário com uma permissão de função de desenvolvedor pode cancelar a hibernação de um ambiente do Programa Sandbox.
 
@@ -123,7 +128,7 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
 
    Ou,
 
-   Clique em **Cancelar** a hibernação na lista de **Ambientes** , como mostrado na figura abaixo:
+   Clique no link **Ambientes** na parte superior esquerda para visualização na lista ambientes e clique em **Deshibernar**, como mostrado na figura abaixo
 
    ![](assets/de-hibernate-1b.png)
 
@@ -152,7 +157,7 @@ Um usuário com o Gerenciador de **nuvem - Função** de desenvolvedor pode clic
 >[!NOTE]
 > Muitos recursos no Cloud Manager exigem permissões específicas para operar. Para saber mais sobre funções para usuários que controlam a disponibilidade de recursos específicos, consulte[Adicionar usuários e funções](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
-#### Considerações importantes {#important-considerations}
+### Considerações importantes {#important-considerations}
 
 Poucas considerações importantes relacionadas aos ambientes hibernados e com hibernação são:
 
