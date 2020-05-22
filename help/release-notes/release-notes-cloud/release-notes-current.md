@@ -2,10 +2,10 @@
 title: Notas de versão do Adobe Experience Manager as a Cloud Service para 2020.5.0
 description: Notas de versão do Experience Manager para 2020.5.0
 translation-type: tm+mt
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
+source-git-commit: 8fe1f6f1c7c6a608ee1ca42836ee91e83487428d
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 29%
+source-wordcount: '374'
+ht-degree: 18%
 
 ---
 
@@ -14,7 +14,22 @@ ht-degree: 29%
 
 A seção a seguir descreve as Notas de versão gerais para Experience Manager as a Cloud Service 2020.5.0.
 
-## Cloud Manager {#cloud-manager}
+## Data de lançamento {#release-date}
+
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is May 07, 2020.
+
+## What&#39;s New in AEM Sites {#aem-sites}
+
+Siga esta seção para saber mais sobre as novidades e as atualizações do AEM Sites no AEM como uma versão 2020.5.0 do serviço de nuvem.
+
+* As informações detalhadas sobre a tarefa agora estão disponíveis após o processamento de movimentações e roll-outs de página em massa como trabalhos assíncronos.
+* Ao copiar/colar uma árvore de página, agora você se oferece para escolher entre colar somente a página raiz ou também as subpáginas da árvore.
+* Os Fragmentos de experiência do AEM exportados para espaços de trabalho do Adobe Público alvo agora aparecem como tipos de oferta exclusivos e fontes de oferta no Público alvo.
+* MSM - o uso do acionador de *publicação* agora encerra com êxito eventos de exclusão para componentes na fonte de cópia ativa, ou seja, a exclusão de componentes em uma live copy que foram excluídos na fonte de live copy.
+* MSM - componentes de live copy estão sendo renomeados para *_msm_movidos* após a mesma implementação de componente da fonte de live copy.
+
+
+## Novidades do Cloud Manager {#cloud-manager}
 
 Siga esta seção para saber mais sobre as novidades e atualizações do Cloud Manager no AEM as a Cloud Service versão 2020.5.0.
 
