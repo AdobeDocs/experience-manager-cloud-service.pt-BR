@@ -2,12 +2,15 @@
 title: Delivery de conteúdo
 description: 'Delivery de conteúdo '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a07de761dd9aedb3469f256e08ecf05b2102889d
+workflow-type: tm+mt
+source-wordcount: '2268'
+ht-degree: 1%
 
 ---
 
 
-# Delivery de conteúdo no AEM como um serviço em nuvem {#content-delivery}
+# Entrega de conteúdo no AEM as a Cloud Service {#content-delivery}
 
 Os detalhes da página atual publicam o delivery de conteúdo do serviço no AEM como um serviço em nuvem. O delivery de conteúdo do serviço de publicação inclui:
 
@@ -52,11 +55,11 @@ Apresentada abaixo é uma matriz de decisão para comparar as duas opções. Inf
 | **Pré-requisitos** | Nenhum | CDN existente que é oneroso substituir. Deve demonstrar um teste de carga bem-sucedido antes de entrar em funcionamento. |
 | **Conhecimento do CDN** | Nenhum | Requer pelo menos um recurso de engenharia parcial com conhecimento detalhado de CDN capaz de configurar o CDN do cliente. |
 | **Segurança** | Administrado pela Adobe. | Gerenciado pela Adobe (e opcionalmente pelo cliente em seu próprio CDN). |
-| **Show** | Otimizado pela Adobe. | Se beneficiará de alguns recursos de CDN do AEM, mas possivelmente de uma pequena ocorrência de desempenho devido ao salto extra. **Observação**: Hops da CDN do cliente para a CDN Fastly provavelmente será eficiente). |
+| **Show** | Otimizado pela Adobe. | Se beneficiará de alguns recursos de CDN do AEM, mas possivelmente de uma pequena ocorrência de desempenho devido ao salto extra. **Observação**: Hops da CDN do cliente para a CDN da Adobe pronta para uso (provavelmente será eficiente). |
 | **Cache** | Suporta cabeçalhos de cache aplicados ao dispatcher. | Suporta cabeçalhos de cache aplicados ao dispatcher. |
 | **Recursos de compactação de imagem e vídeo** | Pode trabalhar com o Adobe Dynamic Media. | Pode trabalhar com o Adobe Dynamic Media ou com a solução de imagem/vídeo CDN gerenciada pelo cliente. |
 
-### CDN gerenciado pelo AEM {#aem-managed-cdn}
+### CDN gerenciado pelo AEM  {#aem-managed-cdn}
 
 A preparação para o delivery de conteúdo usando o CDN predefinido da Adobe é simples, como descrito abaixo:
 
@@ -65,7 +68,7 @@ A preparação para o delivery de conteúdo usando o CDN predefinido da Adobe é
 1. Você deve informar o suporte ao cliente:
    * qual domínio personalizado deve ser associado a um determinado ambiente, conforme definido pela ID do programa e pela ID do ambiente.
    * se for necessária alguma listagem de IP para restringir o tráfego a um determinado ambiente.
-1. O suporte ao cliente coordenará com você o tempo de um registro DNS CNAME, apontando para o FQDN `adobe-aem.map.fastly.net`.
+1. O suporte ao cliente coordenará com você o tempo de um registro DNS CNAME, apontando para o FQDN `cdn.adobeaemcloud.com`.
 1. Você será notificado quando os certificados SSL estiverem expirando, para que possa reenviar os novos certificados SSL.
 
 **Restrição de tráfego**
