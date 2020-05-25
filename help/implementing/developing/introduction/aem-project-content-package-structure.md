@@ -2,7 +2,10 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
+source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+workflow-type: tm+mt
+source-wordcount: '2352'
+ht-degree: 18%
 
 ---
 
@@ -188,7 +191,7 @@ Detalhando a estrutura desta pasta:
 + A pasta de terceiro nível deve ser
    `application` ou `content`
    + A `application` pasta contém pacotes de códigos
-   + Os pacotes de conteúdo da pasta `content` douradosEste nome de pasta deve corresponder aos tipos [de](#package-types) pacote dos pacotes que contém.
+   + A `content` pasta contém pacotes de conteúdo. Esse nome de pasta deve corresponder aos tipos [de](#package-types) pacote dos pacotes que contém.
 + A pasta de 4º nível contém os pacotes secundários e deve ser uma das seguintes:
    + `install` para instalar no autor do AEM **e** na publicação do AEM
    + `install.author` para instalar **somente** no autor do AEM
@@ -333,7 +336,7 @@ Na `ui.content/pom.xml`, a diretiva de configuração de `<packageType>content</
 
 ### Implantação de pacotes de marcação para o Adobe Cloud Manager {#cloud-manager-target}
 
-Em todos os projetos que geram um pacote, **exceto** do projeto do contêiner (`all`), adicione `<cloudManagerTarget>none</cloudManagerTarget>` à configuração `<properties>` da declaração do plug-in `filevault-package-maven-plugin` para garantir que eles **não sejam** implantados pelo Adobe Cloud Manager. O pacote (`all`) do contêiner deve ser o único pacote implantado pelo Cloud Manager, que, por sua vez, incorpora todos os pacotes de código e conteúdo necessários.
+Em todos os projetos que geram um pacote, **exceto** do projeto do contêiner (`all`), adicione `<cloudManagerTarget>none</cloudManagerTarget>` à configuração `<properties>` da declaração do plug-in `filevault-package-maven-plugin` para garantir que eles **não sejam** implantados pelo Adobe Cloud Manager. The container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
 
 ```xml
 ...
@@ -485,7 +488,7 @@ Se vários `/apps/*-packages` forem usados nos públicos alvos incorporados, tod
 ### Repositórios Maven de terceiros {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> A adição de mais repositórios Maven pode estender os tempos de criação de maven, já que repositórios Maven adicionais serão verificados quanto a dependências.
+> A adição de mais repositórios Maven pode estender os tempos de criação de maven, já que repositórios Maven adicionais serão verificados quanto às dependências.
 
 No projeto do reator `pom.xml`, adicione quaisquer diretivas de repositório Maven público de terceiros. A `<repository>` configuração completa deve estar disponível no provedor de repositório de terceiros.
 
