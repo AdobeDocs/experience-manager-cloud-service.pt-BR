@@ -2,10 +2,10 @@
 title: Regras de qualidade de código personalizado - Serviços em nuvem
 description: Regras de qualidade de código personalizado - Serviços em nuvem
 translation-type: tm+mt
-source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+source-git-commit: f2fa2adeec74bfa687ed59d3e0847e6246028040
 workflow-type: tm+mt
 source-wordcount: '2254'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -99,7 +99,7 @@ O uso de uma string de formato de uma fonte externa (como um parâmetro de solic
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
-  request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text");
+  request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
   response.sendStatus(HttpServletResponse.SC_OK);
 }
 ```
