@@ -4,7 +4,7 @@ description: Programas Sandbox - Serviço em nuvem
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -91,8 +91,8 @@ Siga as etapas abaixo para hibernar manualmente os ambientes do Programa Sandbox
 
 1. Navegue até o **Developer Console**.
 Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) para saber como acessar o **Developer Console** a partir da placa de **Ambientes** .
-   >[!NOTE]
-   >vincular ao Developer Console diretamente do Cloud Manager não lhe dará a opção de hibernar um ambiente de Programa do Sandbox. A solução alternativa é uma vez no Developer Console, adicione o seguinte padrão ao final do url `#release-cm-p1234-e5678 where 1234` 1234 como sua ID *do* Programa e 5678 como sua ID *do* Ambiente.
+   >[!IMPORTANT]
+   >Vincular ao Console **do** desenvolvedor diretamente do Gerenciador de nuvem não lhe dará a opção de hibernar um ambiente de Programa do Sandbox. A solução alternativa é uma vez no Developer Console, adicione o seguinte padrão ao final do url `#release-cm-p1234-e5678 where 1234` 1234 como sua ID *do* Programa e 5678 como sua ID *do* Ambiente.
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -117,6 +117,9 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
 
 1. Navegue até o **Developer Console**.
 Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) para saber como acessar o **Developer Console** a partir da placa de **Ambientes** .
+
+   >[!IMPORTANT]
+   >Vincular ao Console **do** desenvolvedor diretamente do Gerenciador de nuvem não lhe dará a opção de cancelar a hibernação de um ambiente de Programa do Sandbox. A solução alternativa é uma vez no Developer Console, adicione o seguinte padrão ao final do url `#release-cm-p1234-e5678 where 1234` 1234 como sua ID *do* Programa e 5678 como sua ID *do* Ambiente.
 
    >[!NOTE]
    >Como alternativa, você pode navegar até o **Developer Console** para cancelar a hibernação tentando acessar o serviço de autor ou publicação de um ambiente já hibernado; nesse caso, uma landing page será exibida com um link para o Developer Console. Consulte a seção Acessar um Ambiente hibernado abaixo.
