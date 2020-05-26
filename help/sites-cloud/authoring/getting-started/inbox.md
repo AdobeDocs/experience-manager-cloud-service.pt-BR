@@ -1,8 +1,11 @@
 ---
-title: Sua Caixa de entrada
+title: 'Sua Caixa de entrada  '
 description: Gerenciar suas tarefas com a caixa de entrada
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +50,7 @@ Para abrir a caixa de entrada de notificação do AEM:
 1. Clique/toque no indicador na barra de ferramentas.
 
 1. Selecione **Exibir todos**. A **Caixa de entrada do AEM** será aberta. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
-1. A exibição padrão é a [Exibição de lista](#inbox-list-view), mas você também pode alternar para a [Visualização do calendário](#inbox-calendar-view). Isso é feito com o seletor de exibição (barra de ferramentas, canto superior direito).
+1. A exibição padrão é [Exibição em lista](#inbox-list-view), mas você também pode alternar para [Exibição de calendário](#inbox-calendar-view). Isso é feito com o seletor de visualização (barra de ferramentas, parte superior direita).
 
    Para ambas as exibições você também pode definir [Configurações de exibição](#inbox-view-settings). As opções disponíveis dependem da exibição atual.
 
@@ -105,6 +108,10 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
 ## Realizar ação em um item {#taking-action-on-an-item}
 
+>[!NOTE]
+>
+>Embora seja possível selecionar mais de um item, as ações só podem ser executadas em um item por vez.
+
 1. Para executar uma ação em um item, selecione a miniatura do item apropriado. Os ícones de ações aplicáveis a esse item serão mostrados na barra de ferramentas:
 
    ![Selecionar item da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-select-item.png)
@@ -128,7 +135,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
    >* Itens de fluxo de trabalho - [ participar de fluxos de trabalho](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. Dependendo do item selecionado, uma ação será iniciada, por exemplo:
+2. Dependendo do item selecionado, uma ação será iniciada, por exemplo:
 
    * Uma caixa de diálogo apropriada para a ação será aberta
    * Um assistente de ação será iniciado
