@@ -1,8 +1,11 @@
 ---
 title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+workflow-type: tm+mt
+source-wordcount: '2864'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +62,8 @@ As opções disponíveis nesses painéis estão descritas abaixo.
 O painel de Navegação:
 
 ![Painel Navegação](/help/sites-cloud/authoring/assets/navigation.png)
+
+O título da guia do navegador será atualizado para refletir sua localização à medida que você navega pelos consoles e conteúdo.
 
 Em Navegação, os consoles disponíveis são:
 
@@ -150,6 +155,14 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
    >
    >A opção **Configurações de exibição** só está disponível no modo **Exibição de lista**.
 
+* Navegação no teclado
+
+   Você pode navegar em um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da chave **TAB** (ou **OPT+TAB**) para movê-lo entre elementos na página que são focalizáveis.
+
+   No console **Sites** há a opção adicionada para **Ignorar para o conteúdo** principal. Isso se torna visível à medida que você navega pelas opções de cabeçalho e acelera a navegação, permitindo que você pule os elementos padrão na barra de ferramentas (produto) e o leve diretamente para o conteúdo principal.
+
+   ![Ir para o conteúdo principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+
 ## Acessar ajuda {#accessing-help}
 
 Há vários recursos de ajuda disponíveis:
@@ -228,7 +241,7 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 
 * [Exibição de coluna](#column-view)
 * [Exibição de cartão](#card-view)
-* [Exibição de lista](#list-view)
+* [Exibição de lista  ](#list-view)
 
 >[!NOTE]
 >
