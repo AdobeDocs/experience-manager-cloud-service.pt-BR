@@ -2,9 +2,9 @@
 title: Programas Sandbox - Serviço em nuvem
 description: Programas Sandbox - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
+source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -150,17 +150,17 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
 
    ![](assets/de-hibernation-img4.png)
 
+#### Permissões para hibernar {#permissions-de-hibernate}
+
+Qualquer usuário com um perfil de produto que dê acesso ao AEM como um serviço em nuvem deve poder acessar o **Developer Console**, permitindo que ele hiberne o ambiente.
+
+Consulte [Adicionar usuários e funções](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) no Cloud Manager sobre como configurar permissões de usuário.
+
 #### Acessar um Ambiente Hibernado {#accessing-hibernated-environment}
 
 Ao fazer solicitações de navegador contra o autor ou a camada de publicação de um ambiente hibernado, o usuário encontrará uma landing page descrevendo o status hibernado do ambiente, como mostrado na figura abaixo:
 
 ![](assets/de-hibernation-img5.png)
-
-
-Um usuário com o Gerenciador de **nuvem - Função** de desenvolvedor pode clicar em **Developer Console** para acessar o console do desenvolvedor e cancelar a hibernação do ambiente.
-
->[!NOTE]
-> Muitos recursos no Cloud Manager exigem permissões específicas para operar. Para saber mais sobre funções para usuários que controlam a disponibilidade de recursos específicos, consulte[Adicionar usuários e funções](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ### Considerações importantes {#important-considerations}
 
