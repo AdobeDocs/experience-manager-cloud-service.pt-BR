@@ -2,7 +2,7 @@
 title: Criação de um Programa - Serviço em nuvem
 description: Criação de um Programa - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
+source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -25,7 +25,7 @@ No evento do primeiro acesso ao Cloud Manager ou se não houver programas no loc
 
 Dependendo do objetivo do usuário de criar o programa dentro dos limites do que está disponível para o cliente/organização específico, um assistente de criação de programas solicitará que o usuário envie um ou mais detalhes.
 
-![](assets/create-program-2.png)
+![](assets/create-sandbox.png)
 
 >[!NOTE]
 >If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
@@ -36,7 +36,7 @@ Dependendo do objetivo do usuário de criar o programa dentro dos limites do que
 
 Siga as etapas abaixo para criar um programa sandbox:
 
-1. No assistente para criação de programas, selecione **Configurar uma demonstração**. O usuário envia o nome do programa antes de selecionar **Criar**.
+1. No assistente para criar programas, selecione **Configurar uma caixa de proteção**. O usuário envia o nome do programa antes de selecionar **Criar**.
 
    ![](assets/create-sandbox.png)
 
