@@ -1,9 +1,9 @@
 ---
 title: Notas de versão do Adobe Experience Manager as a Cloud Service para 2020.4.0
 description: Notas de versão do Experience Manager para 2020.4.0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '655'
 ht-degree: 100%
 
@@ -69,7 +69,7 @@ Saiba mais sobre novos recursos, melhorias e correções de erros do [!DNL Exper
 
 * Os links para o ambiente de preparo na página de detalhes de execução do pipeline não estavam navegando consistentemente para o local correto.
 * As etapas individuais no processo de criação do ambiente atingiriam o tempo limite antes do que o necessário, causando a falha do processo.
-* A configuração de Maven usada em Criar container foi atualizada para evitar bloqueios ao baixar metadados de artefato.
+* A configuração de Maven usada em Criar contêiner foi atualizada para evitar bloqueios ao baixar metadados de artefato.
 * Em alguns casos, a etapa Criar imagem não baixaria os pacotes do cliente com êxito.
 * Algumas condições raras impediriam a exclusão de ambientes.
 * As notificações da Experience Cloud não eram recebidas de forma consistente.
