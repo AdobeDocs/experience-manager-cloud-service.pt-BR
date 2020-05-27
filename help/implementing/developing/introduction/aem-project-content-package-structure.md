@@ -2,9 +2,9 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+source-git-commit: 60093232710426d919a45742b1775239944d266d
 workflow-type: tm+mt
-source-wordcount: '2352'
+source-wordcount: '2417'
 ht-degree: 18%
 
 ---
@@ -237,7 +237,9 @@ A adição de dependências Maven segue as práticas padrão de Maven e a incorp
 
 A fim de garantir a instalação correta das embalagens, recomenda-se estabelecer as dependências entre embalagens.
 
-A regra geral é que os pacotes que contêm conteúdo mutável (`ui.content`) devem depender do conteúdo imutável (`ui.apps`) que suporta a renderização e o uso do conteúdo mutável.
+A regra geral é que os pacotes que contêm conteúdo mutável (`ui.content`) devem depender do código imutável (`ui.apps`) que suporta a renderização e o uso do conteúdo mutável.
+
+Uma exceção notável a essa regra geral é se o pacote de código imutável (`ui.apps` ou qualquer outro) __contiver apenas__ pacotes OSGi. Em caso afirmativo, nenhum pacote do AEM deve declarar uma dependência dele. Isso ocorre porque os pacotes de código imutáveis ____ que contêm pacotes OSGi não estão registrados no AEM Package Manager e, portanto, qualquer pacote AEM que dependa dele terá uma dependência insatisfatória e não será instalado.
 
 >[!TIP]
 >
