@@ -3,9 +3,9 @@ title: Configurar o serviço em nuvem do AEM Assets com o Brand Portal
 description: Configurar o serviço em nuvem do AEM Assets com o Brand Portal
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 6627f6454430d25f29bc743ad2f81e89f932219f
+source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1806'
 ht-degree: 38%
 
 ---
@@ -17,7 +17,7 @@ Os ativos Adobe Experience Manager (AEM) são configurados com o Brand Portal po
 
 **Como a configuração funciona?**
 
-A configuração de uma instância da nuvem do AEM Assets com seu locatário do Brand Portal (organização) é um processo de várias etapas que requer configurações tanto na instância da nuvem do AEM Assets quanto no Adobe Developer Console.
+A configuração da instância da nuvem do AEM Assets com um locatário do Brand Portal (organização) requer configurações tanto na instância da nuvem do AEM Assets quanto no Adobe Developer Console.
 
 1. Na instância da nuvem do AEM Assets, crie uma conta IMS e gere um certificado público (chave pública).
 1. No Adobe Developer Console, crie um projeto para seu locatário do Brand Portal (organização).
@@ -28,9 +28,11 @@ A configuração de uma instância da nuvem do AEM Assets com seu locatário do 
 1. Teste a configuração publicando um ativo da instância de nuvem do AEM Assets no Brand Portal.
 
 >[!NOTE]
->>Um locatário do Brand Portal só deve ser configurado com uma instância da nuvem do AEM Assets.
->>Não configure um locatário do Brand Portal com várias instâncias da nuvem do AEM Assets.
 >
+>Um locatário do Brand Portal só deve ser configurado com uma instância da nuvem do AEM Assets.
+>
+>Não configure um locatário do Brand Portal com várias instâncias da nuvem do AEM Assets.
+
 
 ## Pré-requisitos {#prerequisites}
 
