@@ -2,10 +2,10 @@
 title: Gerenciar Ambientes - Serviço em nuvem
 description: Gerenciar Ambientes - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 9%
+source-wordcount: '702'
+ht-degree: 8%
 
 ---
 
@@ -97,7 +97,12 @@ Este recurso não está disponível para ambientes de produção/estágio defini
 
 ## Acesso ao Console do desenvolvedor {#accessing-developer-console}
 
-Selecione **Developer Console** no menu suspenso no Cartão de **Ambientes** .
+Selecione **Developer Console** no menu suspenso no Cartão de **Ambientes** . Isso abrirá uma nova guia no navegador com a página de logon no **Developer Console**.
+
+Somente um usuário na função Desenvolvedor terá acesso ao **Developer Console**. A exceção é para Programas Sandbox, nos quais qualquer usuário com acesso ao Programa Sandbox do Cloud Manager terá acesso ao **Developer Console**.
+
+Consulte [Hibernando e Deshibernando Ambientes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) Sandbox para obter mais detalhes.
+
 
 ![](assets/dev-console1.png)
 
