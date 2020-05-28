@@ -1,8 +1,11 @@
 ---
 title: Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service
 seo-title: Práticas recomendadas de gerenciamento de SEO e URL do Adobe Experience Manager as a Cloud Service
-translation-type: ht
-source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
+translation-type: tm+mt
+source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+workflow-type: tm+mt
+source-wordcount: '3124'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ Há algumas práticas recomendadas geralmente aceitas quando se trata de URLs.
 
 No projeto do AEM, ao avaliar os URLs, faça o seguinte:
 
-&quot;Se um usuário visse esse URL e nenhum conteúdo na página, ele poderia descrever o que era essa página?&quot;
+*&quot;Se um usuário visse esse URL e nenhum conteúdo na página, ele poderia descrever o que era essa página?&quot;*
 
 Se a resposta for sim, então é provável que o URL funcione bem em um mecanismo de pesquisa.
 
