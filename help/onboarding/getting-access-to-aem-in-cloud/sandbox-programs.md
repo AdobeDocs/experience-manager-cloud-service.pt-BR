@@ -2,9 +2,9 @@
 title: Programas Sandbox - Serviço em nuvem
 description: Programas Sandbox - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,9 @@ Você pode hibernar manualmente seu Programa do Sandbox no Developer Console de 
 * Tela de detalhes do Ambiente
 * Tela de listagem do Ambiente
 
+>[!NOTE]
+>O acesso ao Developer Console para um Programa do Sandbox está disponível para qualquer usuário do Cloud Manager.
+
 Siga as etapas abaixo para hibernar manualmente os ambientes do Programa Sandbox:
 
 1. Navegue até o **Developer Console**.
@@ -127,7 +130,7 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
    >[!IMPORTANT]
    >O acesso ao Console do desenvolvedor é definido pelo Gerenciador da **nuvem - Função** do desenvolvedor no Console **de** administração. Um usuário com uma permissão de função de desenvolvedor pode cancelar a hibernação de um ambiente do Programa Sandbox.
 
-1. Clique em **Cancelar hibernação**, como mostrado na figura abaixo:
+1. Clique em **Cancelar hibernação**, conforme mostrado na figura abaixo:
 
    ![](assets/de-hibernation-img1.png)
 
