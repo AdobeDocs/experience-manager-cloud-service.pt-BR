@@ -2,7 +2,7 @@
 title: Criação de um Programa - Serviço em nuvem
 description: Criação de um Programa - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
+source-git-commit: 9dd6cd0661cceb680f36a382aec16fad7c281301
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Siga as etapas abaixo para criar um programa comum:
 
 1. Selecione **Configurar para produção** no assistente Criar Programa para criar um programa comum. O usuário pode aceitar o nome do programa padrão ou editá-lo antes de selecionar **Continuar**.
 
-   ![](assets/set-up-prod1.png)
+   ![](assets/create-prod1.png)
 
 1. O usuário selecionará as soluções a serem incluídas no programa na tela que serão apresentadas após a tela acima.
 
