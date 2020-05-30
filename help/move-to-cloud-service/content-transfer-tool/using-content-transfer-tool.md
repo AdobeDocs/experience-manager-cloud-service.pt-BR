@@ -2,10 +2,10 @@
 title: Uso da ferramenta de transferência de conteúdo
 description: Uso da ferramenta de transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 2%
+source-wordcount: '1527'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +20,8 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Se estiver usando um Ambiente ** Sandbox, verifique se o ambiente foi atualizado para a versão de 29 de maio de 2020 ou posterior. Se você estiver usando um Ambiente *de* produção, ele será atualizado automaticamente.
 
+* Para usar a Ferramenta de transferência de conteúdo, você precisará ser um usuário administrador na instância de origem e pertencer ao grupo de administração na instância do Serviço de nuvem para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão recuperar o token de acesso para usar a Ferramenta de transferência de conteúdo.
+
 * Durante a fase de extração, a Ferramenta de transferência de conteúdo é executada em uma instância de origem AEM ativa.
 
 * A Fase *de* ingestão do autor diminuirá a implantação do autor inteiro. Isso significa que o AEM do autor não estará disponível durante todo o processo de ingestão.
@@ -29,7 +31,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 A Ferramenta de transferência de conteúdo pode ser baixada como um arquivo zip do portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na instância de origem do Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Consulte [Acessar o AEM como um SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#accessing-the-aem-as-a-cloud-service-sdk) de serviço em nuvem para obter mais detalhes.
+>Baixe a Ferramenta de transferência de conteúdo da [Adobe Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Execução da ferramenta de transferência de conteúdo {#running-tool}
 
@@ -120,7 +122,8 @@ Siga as etapas abaixo para extrair seu conjunto de migração da Ferramenta de t
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   > Será necessário atualizar a página para visualização do status atualizado.
+   >Será necessário atualizar a página para visualização do status atualizado.
+   >Quando a fase de extração é iniciada, o bloqueio de gravação é criado e liberado após *60 segundos*. Então, se uma extração for parada, você precisa esperar um minuto para que a fechadura seja liberada antes de iniciar a extração novamente.
 
 #### Extração superior {#top-up-extraction-process}
 
@@ -250,10 +253,12 @@ Os arquivos criados no *OUT_DIR* especificado acima para fins de consistência p
 
 Como usuário, você pode ver as seguintes alterações de comportamento na interface do usuário para a ferramenta de transferência de conteúdo:
 
-1. O usuário cria um conjunto de migração para um URL do autor (Desenvolvimento/Fase/Produção) e executa com êxito a extração e a ingestão.
+* O usuário cria um conjunto de migração para um URL do autor (Desenvolvimento/Fase/Produção) e executa com êxito a extração e a ingestão.
 
-1. Em seguida, o usuário cria um novo conjunto de migração para o mesmo URL do autor e executa extração e ingestão no novo conjunto de migração. A interface do usuário mostra que o status de ingestão do primeiro conjunto de migração muda para **FALHA** e nenhum registro está disponível.
+* Em seguida, o usuário cria um novo conjunto de migração para o mesmo URL do autor e executa extração e ingestão no novo conjunto de migração. A interface do usuário mostra que o status de ingestão do primeiro conjunto de migração muda para **FALHA** e nenhum registro está disponível.
 
-1. Isso não significa que a ingestão do primeiro conjunto de migração falhou. Esse comportamento é visto porque quando um novo trabalho de ingestão é iniciado, ele exclui o trabalho de ingestão anterior. Portanto, o status das alterações no primeiro conjunto de migração deve ser ignorado.
+* Isso não significa que a ingestão do primeiro conjunto de migração falhou. Esse comportamento é visto porque quando um novo trabalho de ingestão é iniciado, ele exclui o trabalho de ingestão anterior. Portanto, o status das alterações no primeiro conjunto de migração deve ser ignorado.
+
+* Os ícones na interface do usuário da Ferramenta de transferência de conteúdo podem parecer diferentes das capturas de tela mostradas neste guia ou podem não aparecer, dependendo da versão da instância do AEM de origem.
 
 
