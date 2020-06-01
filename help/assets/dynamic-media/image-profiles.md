@@ -2,10 +2,10 @@
 title: Perfis de imagem do Dynamic Media
 description: Crie perfis de imagem que contenham configurações para máscara de nitidez e recorte inteligente, ou amostra inteligente, ou ambos, e aplique o perfil a uma pasta de ativos de imagem.
 translation-type: tm+mt
-source-git-commit: 937b06829f290b1e5a2108c456a759100c450a14
+source-git-commit: 16fa9a9783f42d0a9dcf541613aedb890cb41158
 workflow-type: tm+mt
-source-wordcount: '2652'
-ht-degree: 15%
+source-wordcount: '2655'
+ht-degree: 14%
 
 ---
 
@@ -16,11 +16,11 @@ Ao fazer upload de imagens, você pode cortar automaticamente a imagem ao fazer 
 
 ## Crop options {#crop-options}
 
-Você tem duas opções de recorte de imagem para escolher e uma opção para automatizar a criação de amostras de cores e imagens.
+<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
 
->[!IMPORTANT]
->
->Esteja ciente de que cada geração de Recorte inteligente criada requer processamento adicional. Por exemplo, adicionar mais de cinco proporções de Recorte inteligente pode resultar em uma taxa lenta de ingestão de ativos. Ele também pode causar um aumento da carga nos sistemas. Como você pode aplicar o Smart Crop no nível da pasta, a Adobe recomenda usá-lo em pastas *somente* onde for necessário.
+Esteja ciente de que cada geração de Recorte inteligente criada requer processamento extra. Por exemplo, adicionar mais de cinco proporções de Recorte inteligente pode resultar em uma taxa lenta de ingestão de ativos. Ele também pode causar um aumento da carga nos sistemas. Como você pode aplicar o Smart Crop no nível da pasta, a Adobe recomenda usá-lo em pastas *somente* onde for necessário.
+
+Você tem duas opções de recorte de imagem nas quais pode escolher. Você também tem uma opção para automatizar a criação de amostras de cores e imagens.
 
 <table>
  <tbody>
@@ -39,7 +39,7 @@ Você tem duas opções de recorte de imagem para escolher e uma opção para au
      <li>Ponto de partida do corte: A esquerda é X e a parte superior é Y</li>
      <li>Cálculo horizontal: dimensão em pixels horizontais da imagem original menos Esquerda e depois menos Direita.</li>
      <li>Cálculo vertical: altura vertical do pixel menos Superior e depois menos Inferior.</li>
-    </ul> <p>Por exemplo, suponha que você tenha uma imagem de 4000 x 3000 pixels. Você usa valores: Top=250; Inferior=500; Left=300; Right=700.</p> <p>Do canto superior esquerdo (300.250) recorte usando o espaço de preenchimento de (4000-300-700, 3000-250-500 ou 3000.2250).</p> </td>
+    </ul> <p>Por exemplo, suponha que você tenha uma imagem de 4000 x 3000 pixels. Você usa valores: Superior=250, Inferior=500, Esquerda=300, Direita=700.</p> <p>Do canto superior esquerdo (300.250) recorte usando o espaço de preenchimento de (4000-300-700, 3000-250-500 ou 3000.2250).</p> </td>
   </tr>
   <tr>
    <td>Corte inteligente</td>
@@ -62,7 +62,7 @@ Use a **[!UICONTROL Tirar nitidez da máscara]** para ajustar um efeito de filtr
 
 >[!NOTE]
 >
->A máscara de nitidez só é aplicada a representações em baixa dentro do PTIFF (tiff de pirâmide) com resolução reduzida superior a 50%. Isso significa que as renderizações de maior tamanho dentro do ptiff não são afetadas por máscara nítida, enquanto representações de menor tamanho, como miniaturas, são alteradas (e mostrarão a máscara nítida).
+>A máscara de nitidez só é aplicada a representações em baixa dentro do PTIFF (tiff de pirâmide) com resolução reduzida superior a 50%. Isso significa que as renderizações de maior tamanho dentro do ptiff não são afetadas por máscara de nitidez, enquanto representações de menor tamanho, como miniaturas, são alteradas (e mostrarão a máscara de nitidez).
 
 Em Máscara de **[!UICONTROL nitidez]**, você tem as seguintes opções de filtragem:
 
@@ -274,6 +274,6 @@ Remova um perfil de imagem de uma pasta no menu **[!UICONTROL Ferramentas]** ou,
 1. Toque no logotipo do AEM e navegue **[!UICONTROL pelos Ativos]** e, em seguida, até a pasta da qual você deseja remover um perfil de imagem.
 1. Na pasta, toque na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Propriedades]**.
 1. Select the **[!UICONTROL Image Profiles]** tab.
-1. No menu suspenso **[!UICONTROL Nome do perfil]**, selecione **[!UICONTROL Nenhum]** e toque em **[!UICONTROL Salvar e fechar]**.
+1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
 
    As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
