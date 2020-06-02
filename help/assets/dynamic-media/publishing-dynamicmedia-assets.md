@@ -1,19 +1,23 @@
 ---
 title: Publicação de ativos de mídia dinâmica
 description: Como publicar ativos de mídia dinâmica
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 3%
 
 ---
 
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-Você publica seus ativos de Mídia dinâmica selecionando os ativos e tocando em **[!UICONTROL Publicar]**. Depois que seus ativos de mídia dinâmica forem publicados, eles estarão disponíveis para você para inclusão em uma página da Web via URL ou por meio da incorporação.
+Você publica seus ativos de Mídia dinâmica selecionando os ativos que já carregou e tocando em **[!UICONTROL Publicar]** ou Publicar **** rapidamente. Depois que seus ativos de Mídia dinâmica forem publicados, eles estarão disponíveis para você incluir em uma página da Web por meio de um URL ou da incorporação de código na página.
 
 Você também pode publicar instantaneamente ativos que você carrega, sem nenhuma intervenção do usuário. Ou você pode publicar seletivamente esses ativos. See [Configuring Dynamic Media](config-dm.md).
 
-Na **[!UICONTROL Exibição de cartão]**, um pequeno ícone de globo aparece logo abaixo do nome de um ativo para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
+Na Visualização **[!UICONTROL de]** cartão, um pequeno ícone de globo aparece logo abaixo do nome de um ativo e à esquerda da data e hora para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
 
 >[!NOTE]
 >
@@ -23,7 +27,7 @@ Se você pretende publicar ativos de vídeo imediatamente após a codificação,
 
 See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
-Consulte também [Incorporação do visualizador de vídeo em uma página da Web.](embed-code.md)
+Consulte também [Incorporação do visualizador de Vídeo de Mídia Dinâmica ou do Visualizador de Imagem em uma página da Web.](embed-code.md)
 
 >[!NOTE]
 >
