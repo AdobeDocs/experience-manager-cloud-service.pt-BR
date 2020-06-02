@@ -2,25 +2,25 @@
 title: Visualização de ativos 3D
 description: Saiba como pré-visualização ativos 3D
 translation-type: tm+mt
-source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 16%
+source-wordcount: '566'
+ht-degree: 15%
 
 ---
 
 
-# Visualização de ativos 3D{#previewing-3d-assets}
+# Visualização de ativos 3D no AEM{#previewing-3d-assets}
 
-O Experience Manager oferece suporte ao carregamento, delivery e pré-visualização interativa de ativos 3D como parte do processo de criação.
+O Adobe Experience Manager oferece suporte ao carregamento, delivery e pré-visualização interativa de ativos 3D como parte do processo de criação.
 
  O visualizador 3D interativo está disponível na página de detalhes do ativo no AEM. O visualizador inclui, entre outras coisas, uma coleção de controles de câmera interativos que permitem girar, aplicar zoom e deslocar o ativo 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formatos suportados para pré-visualização 3D{#supported-3d-previewing-assets}
+## Formatos suportados para pré-visualização 3D no AEM{#supported-3d-previewing-assets}
 
-A pré-visualização 3D interativa suporta os seguintes formatos de arquivo:
+A pré-visualização 3D interativa no AEM oferece suporte aos seguintes formatos de arquivo:
 
 | extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
 |---|---|---|---|
@@ -40,13 +40,13 @@ A pré-visualização 3D interativa suporta os seguintes formatos de arquivo:
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## Performance considerations when you preview 3D assets{#performance-3d-previewing-assets}
+## Considerações de desempenho ao pré-visualização de ativos 3D no AEM{#performance-3d-previewing-assets}
 
 O tempo necessário para abrir um ativo 3D na página de visualização de detalhes do ativo depende de vários fatores, como largura de banda, complexidade da imagem e latências para o servidor.
 
 Além disso, os recursos do computador cliente, como uma estação de trabalho, um notebook ou um dispositivo de toque móvel, também são importantes de se considerar ao manipular a câmera interativamente. Um sistema bastante eficiente com bons recursos gráficos pode tornar a experiência de visualização interativa em 3D mais fácil e favorável.
 
-**Para pré-visualização de ativos 3D**
+**Para pré-visualização de ativos 3D no AEM**
 
 1. Verifique se você fez upload dos ativos 3D no AEM.
 See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-digital-assets.md#uploading-assets).
