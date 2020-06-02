@@ -2,9 +2,9 @@
 title: Adição de ativos de Mídia dinâmica a páginas
 description: Como adicionar componentes do Dynamic Media a uma página no AEM
 translation-type: tm+mt
-source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '3132'
+source-wordcount: '3137'
 ht-degree: 32%
 
 ---
@@ -22,7 +22,7 @@ Você adiciona ativos do Dynamic Media diretamente à página se estiver usando 
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-Adicionar um componente de Mídia dinâmica, Mídia interativa, Mídia panorâmica ou Mídia de vídeo 360 a uma página é o mesmo que adicionar um componente a qualquer página. Os componentes do Dynamic Media estão descritos nas seções a seguir.
+Adicionar um componente de mídia 3D, Dynamic Media, Interative Media, Panorâmica Media, Smart Crop Video ou Video 360 Media a uma página é o mesmo que adicionar um componente a qualquer página. Os componentes do Dynamic Media estão descritos nas seções a seguir.
 
 **Adicionar um componente de Dynamic Media a uma página**
 
@@ -51,7 +51,7 @@ Adicionar um componente de Mídia dinâmica, Mídia interativa, Mídia panorâmi
 
    O componente Dynamic Media Video 360 Media.
 
-1. Quando terminar, próximo ao canto superior direito da caixa de diálogo, toque na marca de seleção para salvar as alterações.
+1. Quando terminar, no canto superior direito da caixa de diálogo, toque na marca de seleção para salvar as alterações.
 
 ### Ativação de componentes do Dynamic Media {#enabling-dynamic-media-components}
 
@@ -264,7 +264,7 @@ Observe que não há suporte para a atribuição de uma predefinição de visual
 >
 >Entretanto, é possível usar a mesma predefinição do visualizador para todos os componentes de Mídia interativa que usam ativos do mesmo tipo, na página.
 
-![chlimage_1-175](assets/chlimage_1-541.png)
+![chlimage_1-174](assets/chlimage_1-541.png)
 
 You can edit the following **[!UICONTROL General]** settings by tapping **[!UICONTROL Edit]** in the component.
 
