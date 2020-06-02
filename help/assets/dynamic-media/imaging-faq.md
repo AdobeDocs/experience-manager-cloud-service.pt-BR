@@ -2,7 +2,10 @@
 title: Imagens inteligentes
 description: A geração de imagens inteligentes aproveita as características de exibição exclusivas de cada usuário para fornecer automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento.
 translation-type: tm+mt
-source-git-commit: a934f28f74f0ff9ae68d7507290851dc5ca907e5
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '1720'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +20,7 @@ O Smart Imaging também se beneficia do aumento de desempenho ao ser totalmente 
 
 Os exemplos de ativos de imagem a seguir mostram a otimização adicionada de Imagens inteligentes:
 
-| Image<br>(URL) | Miniatura    | Tamanho<br> (JPEG) | Tamanho (WebP)<br> (com Imagem inteligente) | % redução |
+| Image<br>(URL) | Miniatura     | Tamanho<br> (JPEG) | Tamanho (WebP)<br> (com Imagem inteligente) | % redução |
 |---|---|---|---|---|
 | [Imagem 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
 | [Imagem 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
@@ -87,7 +90,7 @@ Não. A Imagem inteligente funciona perfeitamente com os URLs de imagem e as pre
 
 Além disso, consulte [Estou qualificado para usar a Imagem inteligente?](#am-i-eligible-to-use-smart-imaging) para entender os pré-requisitos para o Smart Imaging.
 
-## O Smart Maging está funcionando com HTTPS? Que tal HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
+## A criação de imagens inteligentes funciona com HTTPS? Que tal HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
 O Smart Imaging funciona com imagens entregues por HTTP ou HTTPS. Além disso, também funciona por HTTP/2.
 
