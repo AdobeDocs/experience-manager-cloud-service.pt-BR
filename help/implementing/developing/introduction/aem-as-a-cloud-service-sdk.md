@@ -2,7 +2,10 @@
 title: SDK do AEM as a Cloud Service
 description: A completar
 translation-type: tm+mt
-source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
+source-git-commit: df6e6bc95b5f0489d0da034c27d8f3a4314a6e27
+workflow-type: tm+mt
+source-wordcount: '1027'
+ht-degree: 0%
 
 ---
 
@@ -39,22 +42,6 @@ Além disso, alguns clientes que foram implantados anteriormente com o AEM 6.5 o
 
 >[!NOTE] A entrada da versão do SDK deve corresponder à versão do AEM como um serviço em nuvem. Você pode ver qual versão está usando fazendo logon no AEM, indo para o ponto de interrogação no canto superior direito da tela e selecionando **[!UICONTROL Sobre o Adobe Experience Manager]**
 
-* A coordenada remota para o repositório maven onde o pacote está hospedado deve ser incluída no arquivo pom.
-
-```
-<repository>
-    <id>adobe-aem-releases</id>
-    <name>Adobe AEM Repository</name>
-    <url>https://downloads.experiencecloud.adobe.com/content/maven/public</url>
-    <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-    </releases>
-    <snapshots>
-        <enabled>false</enabled>
-    </snapshots>
-</repository>
-```
 
 ## Atualização de um projeto local com uma nova versão do SDK {#refreshing-a-local-project-with-a-new-skd-version}
 
