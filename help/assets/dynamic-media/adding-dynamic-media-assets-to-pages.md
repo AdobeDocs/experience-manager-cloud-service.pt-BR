@@ -2,9 +2,9 @@
 title: Adição de ativos de Mídia dinâmica a páginas
 description: Como adicionar componentes do Dynamic Media a uma página no AEM
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3124'
 ht-degree: 32%
 
 ---
@@ -34,10 +34,6 @@ Adicionar um componente de mídia 3D, Dynamic Media, Interative Media, Panorâmi
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Arraste um componente de Mídia **** dinâmica e solte-o no local desejado na página.
-
-   No exemplo abaixo, o componente de mídia **** Video 360 está sendo usado.
-
-   ![6_5_360video_wcmcomponentarrastar](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. Passe o ponteiro do mouse diretamente no componente. Quando o componente estiver rodeado por uma caixa azul, toque uma vez para exibir a barra de ferramentas do componente. Toque no ícone **[!UICONTROL Configuração (chave)]** .
 
@@ -121,6 +117,7 @@ O componente Dynamic Media é inteligente. Dependendo de você adicionar uma ima
 >
 >* Várias instâncias do componente Mídia dinâmica sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
+
 >
 >
 Esteja ciente de que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente de Dynamic Media nessa página.
@@ -200,6 +197,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    * Associe um arquivo de legenda a um vídeo: [legenda](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Associe um arquivo de navegação a um vídeo: [navegação](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Title**—Altere o título do vídeo.
@@ -258,6 +256,7 @@ O componente de Mídia interativa é inteligente. Dependendo de você adicionar 
 >
 >* Várias instâncias do componente de Mídia interativa sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
+
 >
 >
 Observe que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente de Mídia interativa nessa página.
@@ -299,6 +298,7 @@ Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos 
 >
 >* Várias instâncias do componente de Mídia **** panorâmica sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
+
 >
 >
 Observe que não há suporte para a atribuição de uma predefinição do visualizador diferente para cada componente de **[!UICONTROL Mídia panorâmica]** nessa página.
