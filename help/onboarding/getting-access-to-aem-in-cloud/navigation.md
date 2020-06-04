@@ -2,10 +2,10 @@
 title: Navegação
 description: Navegação - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 1f084c5f8b218808468ce7984fa0abdac497884f
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,17 +20,20 @@ Após o login bem-sucedido, você será direcionado para a landing page do Cloud
 
 ## SysAdmin Access {#sysadmin-access}
 
-Um usuário na função SysAdmin tem acesso de um clique ao local no Admin Console a partir do qual as funções ou permissões do usuário para o Cloud Manager são gerenciadas.
+Como usuário na função SysAdmin, você tem acesso de um clique ao local no Admin Console a partir do qual as funções ou permissões do usuário para o Cloud Manager são gerenciadas.
 
 ### Gerenciamento de funções {#manage-roles}
 
 Como usuário no SysAdmin, uma opção **Gerenciar funções** está disponível na landing page ao lado de **Adicionar Programa**. Isso fornece acesso de um clique ao local no Admin Console a partir do qual as funções ou permissões do usuário para o Cloud Manager podem ser gerenciadas.
 
-Consulte [Acesso ao Gerenciador](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) da Cloud para obter mais informações sobre como adicionar usuários a um perfil. Consulte Acesso ao Gerenciadorda Cloud
+Consulte [Acessar o Gerenciador](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) da Cloud para obter mais informações sobre como adicionar usuários a um perfil, consulte Acesso ao GerenciadorCloud.
 
 ### Gerenciamento do acesso ao AEM {#manage-access-aem}
 
-Como usuário no SysAdmin, você tem acesso de um clique à instância Autor diretamente do Gerenciador de nuvem.
+Como usuário no SysAdmin, você tem acesso de um clique ao Admin Console a partir do qual você pode navegar diretamente para a instância Autor e gerenciar o acesso.
+
+![](assets/manage-access1.png)
+
 Consulte [Acessar uma instância no AEM como um serviço](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) em nuvem para obter mais detalhes.
 
 ## Para clientes AMS existentes {#existing-aem}
