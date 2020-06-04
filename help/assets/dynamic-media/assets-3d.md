@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: bc0852120580065a93923e7fe730485012afba6e
+source-git-commit: 08736e38f9dde46997484ccd4807de0ba2f67b2f
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2107'
 ht-degree: 4%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 4%
 
 O Dynamic Media permite carregar, gerenciar, visualização e fornecer ativos 3D como experiências imersivas.
 
-* Publicação com um clique (usando a Publicação **** rápida na barra de ferramentas) de imagens 3D para gerar seu URL.
-* Suporte otimizado para exibir ativos 3D com a predefinição do visualizador Dimensional interativo de alta qualidade, capacitado pelo Adobe Dimension. A predefinição do visualizador inclui, entre outras coisas, uma coleção de controles interativos de câmera que permitem a órbita, o zoom e o deslocamento.
+* Publicação com um clique (usando a Publicação **** rápida na barra de ferramentas) de ativos 3D para gerar um URL.
+* Suporte otimizado para exibir ativos 3D com a predefinição do visualizador Dimensional interativo de alta qualidade, capacitado pelo Adobe Dimension.
 * O componente WCM de mídia 3D permite que você adicione facilmente ativos 3D às páginas do AEM Sites.
 
-Não há instalação ou configuração de nenhum tipo para usar ativos 3D no Dynamic Media.
+Não há necessidade de instalação adicional para usar ativos 3D no Dynamic Media.
 
-![sapato em 3d](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2.png)
+![sapato em 3d](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -36,10 +36,10 @@ O Dynamic Media suporta os seguintes formatos de arquivo 3D:
 
 | extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
 |---|---|---|---|
-| GLB | Transmissão binária do GL | model/gltf-binary | Inclui as texturas com o ativo em vez de referenciá-las como imagens externas. |
+| GLB | Transmissão binária do GL | model/gltf-binary | Inclui os materiais e as texturas como um único ativo. |
 | OBJ | Arquivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Estereolitografia | application/vnd.ms-pki.stl |  |
-| USDZ | Arquivo Zip de descrição do Universal Scene | model/vnd.usdz+zip | *Apoio unicamente à ingestão; nenhuma visualização ou interação está disponível.* O USDZ é o formato 3D proprietário da Apple que só pode ser visualização pelo Safari ou iOS. |
+| USDZ | Arquivo Zip de descrição do Universal Scene | model/vnd.usdz+zip | *Apoio unicamente à ingestão; nenhuma visualização ou interação está disponível.* USDZ é um formato 3D proprietário que pode ser visualizado nativamente pelo Safari ou iOS. |
 
 ## Start rápido: Ativos 3D no Dynamic Media {#quick-start-three-d}
 
@@ -144,7 +144,8 @@ Consulte também [Visualizar ativos usando a interface](/help/assets/dynamic-med
 
    * Perto do canto superior direito da página, clique em **[!UICONTROL Pré-visualização]** para entrar no modo **[!UICONTROL Pré-visualização]** .
    * Exclua `/editor.html` do URL da página no navegador.
-   ![Ativo 3D exibido dentro do componente](/help/assets/dynamic-media/assets/3d-asset-in-3d-media.png)Mídia 3D Um ativo 3D totalmente interativo como exibido no modo de **[!UICONTROL Pré-visualização]** .
+
+Um ativo 3D totalmente interativo, conforme exibido em    ![Ativo 3D exibido dentro do componente](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)Mídia 3D Um ativo 3D totalmente interativo como exibido no modo de **[!UICONTROL Pré-visualização]** .
 
 1. No modo de **[!UICONTROL Pré-visualização]** , execute um dos procedimentos a seguir:
 
@@ -180,7 +181,7 @@ O Dynamic Media inclui um componente de Mídia 3D do Dynamic Media que pode ser 
 1. Toque em **[!UICONTROL Editar]** para abrir o modelo.
 1. Próximo ao canto superior direito da página, no menu suspenso, selecione o modo **[!UICONTROL Estrutura]** , se ainda não estiver ativo.
 
-   ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structure.png)
+   ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
 
 1. Toque em uma área vazia na região do Container **** Layout para selecioná-la e abrir a barra de ferramentas associada.
 1. Na barra de ferramentas, toque no ícone **[!UICONTROL Política]** para abrir o Editor **[!UICONTROL de]** políticas.
@@ -198,13 +199,13 @@ See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/addin
 1. Abra o AEM Sites e selecione a página da Web à qual deseja adicionar o componente Mídia 3D do Dynamic Media.
 1. Toque no ícone **[!UICONTROL Editar]** (lápis) para abrir a página no editor de páginas. Verifique se o modo **[!UICONTROL Editar]** está selecionado perto do canto superior direito da página.
 
-   ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edit.png)
+   ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
 
 1. Na barra de ferramentas, toque no ícone Painel lateral para alternar ou &quot;ativar&quot; a exibição do painel.
 
 1. No painel lateral, toque no ícone de sinal de mais para abrir a lista **[!UICONTROL Componentes]** .
 
-   ![3d-media-component-drag-drop](/help/assets/dynamic-media/assets/3d-assets-filter.png)
+   ![3d-media-component-drag-drop](/help/assets/dynamic-media/assets/3d-assets-filtera.png)
 
 1. Arraste o componente de mídia **[!UICONTROL 3D da lista]** Components **** para o local na página onde deseja que o visualizador 3D apareça.
 
@@ -217,11 +218,11 @@ Consulte [Atribuindo um ativo 3D a um componente](#assigning-a-three-d-asset-to-
 1. No editor de páginas do AEM Sites, selecione o componente **[!UICONTROL 3D Media Viewer]** que você adicionou anteriormente à página.
 1. Toque no ícone **[!UICONTROL Configuração]** (chave) para abrir a caixa de diálogo de configuração do componente.
 
-   ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-config.png)
+   ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-configa.png)
 
 1. Na caixa de diálogo Mídia 3D, na lista suspensa Predefinições do visualizador, selecione **[!UICONTROL Dimensionamento]** para atribuir a predefinição do visualizador Dimensional ao componente.
 
-   ![3d-media-component-edit-config](/help/assets/dynamic-media/assets/3d-media-component-edit-config.png)
+   ![3d-media-component-edit-config](/help/assets/dynamic-media/assets/3d-media-component-edit-configa.png)
 
 1. No canto superior direito, toque na marca de seleção para salvar as alterações.
 
@@ -236,7 +237,7 @@ Consulte [Adicionar o componente de mídia 3D a uma página](#adding-the-three-d
 1. No painel lateral, procure ou role até o ativo 3D que você deseja que seja visualização na página que está sendo editada.
 1. Arraste o ativo 3D do painel lateral Ativos e solte-o no componente Mídia **** 3D que você adicionou anteriormente à página.
 
-   ![Atribuir ativo 3d ao componente de mídia 3d](/help/assets/dynamic-media/assets/3d-asset-add.png)
+   ![Atribuir ativo 3d ao componente de mídia 3d](/help/assets/dynamic-media/assets/3d-asset-adda.png)
 
 >[!NOTE]
 >
@@ -263,17 +264,18 @@ Consulte também [Publicar páginas](/help/sites-cloud/authoring/fundamentals/pu
 1. Abra um ativo 3D (formato de arquivo GLB, OBJ ou STL) para visualização na página de detalhes do ativo.
 1. Na barra de ferramentas, toque em Publicação **[!UICONTROL rápida]**.
 
-   ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publish.png)
+   ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
 1. Toque em **[!UICONTROL Fechar]** para sair da caixa de diálogo e retornar à página de detalhes do ativo.
 1. Na lista suspensa à esquerda do nome de arquivo do ativo 3D, toque em **[!UICONTROL Representações]**.
 
-   ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditions.png)
+   ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
 
 1. Toque em **[!UICONTROL original]**. Quando um ativo 3D é publicado (ou &quot;ativado&quot;), o botão URL é exibido próximo ao canto inferior esquerdo da página se todas as seguintes condições de ativo 3D forem atendidas:
    * O ativo 3D é um formato compatível (GLB, OBJ, STL e USDZ).
    * O ativo 3D foi assimilado ao Dynamic Media Image Production System (IPS).
    * O ativo 3D é publicado.
-   ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-url.png)
+
+   ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
 
 1. Toque em **[!UICONTROL URL]** para exibir o URL de produção do ativo 3D.
