@@ -2,30 +2,48 @@
 title: Navegação
 description: Navegação - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 2%
 
 ---
 
 
-# Acessar o Experience Manager como um serviço em nuvem {#navigation}
+# Acesso ao Experience Manager as a Cloud Service {#navigation}
 
-Quando o administrador do sistema conceder acesso ao Cloud Manager, você receberá um email que o levará para a página de logon do Cloud Manager, que também pode ser acessada pela [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
+Depois que o administrador do sistema conceder acesso ao Cloud Manager, você receberá um email que o levará para a página de logon do Cloud Manager, que também pode ser acessada pela [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
 
-Após o login bem-sucedido, você será direcionado para a página de aterrissagem do Cloud Manager, como mostrado abaixo.
+Após o login bem-sucedido, você será direcionado para a landing page do Cloud Manager, como mostrado abaixo.
 
 ![](assets/first_timelogin1.png)
 
+## SysAdmin Access {#sysadmin-access}
+
+Um usuário na função SysAdmin tem acesso de um clique ao local no Admin Console a partir do qual as funções ou permissões do usuário para o Cloud Manager são gerenciadas.
+
+### Gerenciamento de funções {#manage-roles}
+
+Como usuário no SysAdmin, uma opção **Gerenciar funções** está disponível na landing page ao lado de **Adicionar Programa**. Isso fornece acesso de um clique ao local no Admin Console a partir do qual as funções ou permissões do usuário para o Cloud Manager podem ser gerenciadas.
+
+Consulte [Acesso ao Gerenciador](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) da Cloud para obter mais informações sobre como adicionar usuários a um perfil. Consulte Acesso ao Gerenciadorda Cloud
+
+### Gerenciamento do acesso ao AEM {#manage-access-aem}
+
+Como usuário no SysAdmin, você tem acesso de um clique à instância Autor diretamente do Gerenciador de nuvem.
+Consulte [Acessar uma instância no AEM como um serviço](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) em nuvem para obter mais detalhes.
+
 ## Para clientes AMS existentes {#existing-aem}
 
-Se você for um cliente do AMS (Adobe Managed Services) e tiver acesso ao serviço em nuvem, verá os programas existentes e o botão **Adicionar programa** no canto superior direito da página de aterrissagem.
+Se você for um cliente do AMS (Adobe Managed Services) e tiver acesso ao serviço em nuvem, verá os programas existentes e o botão **Adicionar Programa** no canto superior direito da landing page.
 
-Se você não vir o botão **Adicionar programa** e tiver dúvidas sobre o acesso ao serviço em nuvem, entre em contato com seu representante da Adobe.
+Se você não vir o botão **Adicionar Programa** e tiver dúvidas sobre o acesso ao serviço na nuvem, entre em contato com seu representante da Adobe.
 
-Para obter mais detalhes, consulte [Adicionar um novo programa no serviço em nuvem com programas](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) existentes.
+Consulte [Adicionando um novo Programa no serviço em nuvem com Programas](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) existentes para obter mais detalhes.
 
 ## Para novos clientes do serviço da Cloud {#new-cloud-services}
 
-Se você for um novo cliente do Cloud Service, você verá o botão **Adicionar programa** no canto superior direito de uma página de aterrissagem vazia. Você desejará adicionar um novo programa ao Serviço em nuvem.
+Se você for um novo cliente do Serviço em nuvem, você verá o botão **Adicionar Programa** no canto superior direito de uma landing page vazia. Você desejará adicionar um novo programa ao serviço em nuvem.
 
-Para obter mais detalhes, consulte [Adicionar um novo programa no serviço em nuvem sem programas](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) existentes.
+Consulte [Adicionar um novo Programa no serviço da nuvem sem Programas](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) existentes para obter mais detalhes.
 
