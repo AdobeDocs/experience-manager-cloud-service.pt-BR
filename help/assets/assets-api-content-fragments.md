@@ -2,12 +2,15 @@
 title: Suporte a fragmentos de conteúdo do Adobe Experience Manager como serviço em nuvem na API HTTP do Assets
 description: Saiba mais sobre o Adobe Experience Manager como um suporte a fragmentos de conteúdo do serviço em nuvem na API HTTP do Assets.
 translation-type: tm+mt
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+workflow-type: tm+mt
+source-wordcount: '1892'
+ht-degree: 2%
 
 ---
 
 
-# Suporte a fragmentos de conteúdo na API HTTP do AEM Assets{#content-fragments-support-in-aem-assets-http-api}
+# Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets{#content-fragments-support-in-aem-assets-http-api}
 
 ## Visão geral {#overview}
 
@@ -62,8 +65,8 @@ Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, sol
 
 >[!NOTE]
 >Acesso através de:
->* `/api/assets` não **precisa** do uso do `.model` seletor.
->* `/content/assets` **requer** o uso do `.model` seletor.
+>* `/api/assets` **não** necessita do uso do `.model` seletor.
+>* `/content/assets` **não** requer o uso do `.model` seletor.
 
 
 O método HTTP determina a operação a ser executada:
@@ -297,7 +300,7 @@ O uso é feito via:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Limitações        {#limitations}
+## Limitações         {#limitations}
 
 Há algumas limitações:
 
@@ -310,7 +313,7 @@ Há algumas limitações:
 
 Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
 
-1. 200 (OK)
+* **200** (OK)
 
    Retornado quando:
 
@@ -318,19 +321,19 @@ Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
 
    * atualização bem-sucedida de um fragmento de conteúdo por meio de `PUT`
 
-1. 201 (Criado)
+* **201** (Criado)
 
    Retornado quando:
 
    * criação de um fragmento de conteúdo por meio de `POST`
 
-1. 404 (Não encontrado)
+* **404** (Não encontrado)
 
    Retornado quando:
 
    * o fragmento de conteúdo solicitado não existe
 
-1. 500 (Erro interno do servidor)
+* **500** (erro de servidor interno)
 
    >[!NOTE]
    >
