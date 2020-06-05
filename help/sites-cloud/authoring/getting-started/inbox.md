@@ -1,16 +1,16 @@
 ---
-title: 'Sua Caixa de entrada  '
+title: Sua caixa de entrada
 description: Gerenciar suas tarefas com a caixa de entrada
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Sua Caixa de entrada   {#your-inbox}
+# Sua caixa de entrada {#your-inbox}
 
 Você pode receber notificações de diversas áreas do AEM, incluindo fluxos de trabalho e projetos. Por exemplo, você pode receber notificações sobre:
 
@@ -110,7 +110,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
 >[!NOTE]
 >
->Embora seja possível selecionar mais de um item, as ações só podem ser executadas em um item por vez.
+>Embora seja possível selecionar mais de um item, ações só podem ser executadas em um item de cada vez.
 
 1. Para executar uma ação em um item, selecione a miniatura do item apropriado. Os ícones de ações aplicáveis a esse item serão mostrados na barra de ferramentas:
 
