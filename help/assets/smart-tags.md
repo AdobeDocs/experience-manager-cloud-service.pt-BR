@@ -3,15 +3,15 @@ title: Marque imagens com serviços inteligentes artificialmente.
 description: Marque imagens com serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando os serviços do Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2400'
 ht-degree: 5%
 
 ---
 
 
-# Adicione tags às suas imagens usando serviços inteligentes {#smart-tag-assets}
+# Treinar o serviço Smart Tag e marcar suas imagens {#train-service-tag-assets}
 
 As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar seus ativos digitais. Marcar ativos com um vocabulário controlado por taxonomia garante que os ativos possam ser facilmente identificados e recuperados por pesquisas baseadas em tags.
 
@@ -25,7 +25,7 @@ Em segundo plano, as Tags inteligentes usam uma estrutura de inteligência artif
 
 Para usar a marcação inteligente, conclua as seguintes tarefas:
 
-* [Integre o Experience Manager com a E/S](#integrate-aem-with-aio)da Adobe.
+* [Integre o Experience Manager ao Adobe Developer Console](#integrate-aem-with-aio).
 * [Entenda os modelos de tags e as diretrizes](#understand-tag-models-guidelines).
 * [Treinar o modelo](#train-model).
 * [Marque seus ativos](#tag-assets)digitais.
@@ -35,11 +35,11 @@ As Tags inteligentes são aplicáveis somente para [!DNL Adobe Experience Manage
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Integrar [!DNL Experience Manager] com E/S da Adobe {#integrate-aem-with-aio}
+## Integrar [!DNL Experience Manager] ao Adobe Developer Console {#integrate-aem-with-aio}
 
-É possível integrar [!DNL Adobe Experience Manager] com as Tags inteligentes usando a E/S da Adobe. Use essa configuração para acessar o serviço Tags inteligentes de dentro [!DNL Experience Manager].
+É possível integrar [!DNL Adobe Experience Manager] com as Tags inteligentes usando o Adobe Developer Console. Use essa configuração para acessar o serviço Tags inteligentes de dentro [!DNL Experience Manager].
 
-Consulte [configurar o Experience Manager para a marcação inteligente de ativos](smart-tags-configuration.md) para tarefa para configurar as Tags inteligentes. No back end, o [!DNL Experience Manager] servidor autentica suas credenciais de serviço no gateway de E/S da Adobe antes de encaminhar sua solicitação para o serviço de Tags inteligentes.
+Consulte [configurar o Experience Manager para a marcação inteligente de ativos](smart-tags-configuration.md) para tarefa para configurar as Tags inteligentes. No back-end, o [!DNL Experience Manager] servidor autentica suas credenciais de serviço com o gateway do Adobe Developer Console antes de encaminhar sua solicitação para o serviço de Tags inteligentes.
 
 ## Entender os modelos e diretrizes de tags {#understand-tag-models-guidelines}
 
