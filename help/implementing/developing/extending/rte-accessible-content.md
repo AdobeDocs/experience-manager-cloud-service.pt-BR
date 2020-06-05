@@ -3,9 +3,9 @@ title: Configure o RTE para criar páginas da Web e sites acessíveis.
 description: Saiba como configurar o Editor de Rich Text para criar sites acessíveis no Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 78ec0ed2a1473797a07905baa346a83376779419
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -149,4 +149,5 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Um guia rápido para os padrões WCAG](/help/onboarding/accessibility/quick-guide-wcag.md)
+>* [Criação de conteúdo acessível no Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
