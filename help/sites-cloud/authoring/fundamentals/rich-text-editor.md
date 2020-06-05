@@ -1,17 +1,20 @@
 ---
-title: Uso do Editor de rich text para criar conteúdo
-description: Uso do Editor de rich text para criar conteúdo
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+title: Use o Editor de Rich Text no Adobe Experience Manager para criar conteúdo.
+description: Use o Editor de Rich Text do Experience Manager para criar conteúdo.
+translation-type: tm+mt
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 47%
 
 ---
 
 
-# Uso do Editor de rich text para criar conteúdo {#use-rich-text-editor-to-author-content}
+# Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
 
 O Editor de Rich Text (RTE) é um elemento básico fundamental para inserir conteúdo textual no AEM. É a base de vários componentes
 
-## Edição no local {#in-place-editing}
+## In-place editing {#in-place-editing}
 
 Selecionar um componente baseado em texto com um único toque ou clique revelará a [barra de ferramentas de componentes](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) como com qualquer componente.
 
@@ -23,19 +26,17 @@ Tocar/clicar mais uma vez, ou selecionar inicialmente o componente com um toque/
 
 Essa barra de ferramentas fornece as seguintes opções:
 
-* **Formato**: permite que você defina Negrito, Itálico e Sublinhado.
-* **Listas**: com este recurso, você pode criar listas com marcadores ou numeradas, ou definir o recuo.
-* **Hiperlink**
-* **Desvincular**
-* **Tela inteira**
-* **Fechar**
-* **Salvar**
+* **Formato**: Realce o texto como negrito ou itálico ou sublinhe o texto.
+* **Listas**: Crie listas com marcadores ou numeradas e defina o recuo.
+* **Hiperlink**: Criar links.
+* **Desvincular**: Remova o hiperlink.
+* **Tela** inteira: Abra o editor no modo de tela cheia.
+* **Fechar**: Pare de editar.
+* **Salvar**: Salve as alterações.
 
-## Edição de tela cheia {#full-screen-editing}
+## Full screen editing {#full-screen-editing}
 
-Para componentes baseados em texto, tocar no modo de tela cheia na [barra de ferramentas](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) abrirá o editor de rich text e ocultará o restante do conteúdo da página.
-
-![Botão de tela cheia do RTE](/help/sites-cloud/authoring/assets/editing-full-screen.png)
+Para componentes baseados em texto, toque no botão ![de tela cheia do modo de tela cheia do](/help/sites-cloud/authoring/assets/editing-full-screen.png) RTE na [barra](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) de ferramentas para abrir o editor de rich text e ocultar o restante do conteúdo da página.
 
 O modo de tela cheia exibe todas as opções configuradas que podem ser usadas para criação. A disponibilidade das opções depende da configuração. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
@@ -43,15 +44,15 @@ O modo de tela cheia exibe todas as opções configuradas que podem ser usadas p
 
 Outras opções do editor de Rich Text incluem:
 
-* **Âncora**: crie uma âncora no texto para a qual você poderá mais tarde vincular ou fazer referência.
+* **Âncora**: Crie uma âncora no texto para a qual você pode criar ou vincular posteriormente uma referência.
 * **Alinhar texto à esquerda**
 * **Centralizar texto**
 * **Alinhar texto à direita**
 
-Feche o modo de tela cheia clicando no ícone Minimizar.
+Clique em minimizar para fechar o modo de tela cheia.
 
 ![Botão Minimizar RTE](/help/sites-cloud/authoring/assets/rte-minimize.png)
 
->[!NOTE]
+>[!Tip]
 >
->Copiar listas aninhadas do Microsoft Word para o RTE pode gerar resultados inconsistentes e exigir ajuste manual após colar o texto no RTE.
+>Copiar listas aninhadas do Microsoft Word para o RTE pode gerar resultados inconsistentes. Em vez disso, cole como texto e faça o ajuste manual.
