@@ -1,11 +1,11 @@
 ---
 title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2864'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -155,11 +155,11 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
    >
    >A opção **Configurações de exibição** só está disponível no modo **Exibição de lista**.
 
-* Navegação no teclado
+* Navegação pelo teclado
 
-   Você pode navegar em um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da chave **TAB** (ou **OPT+TAB**) para movê-lo entre elementos na página que são focalizáveis.
+   Você pode navegar por um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da tecla **TAB** (ou **OPT+TAB**) para que você possa percorrer os elementos na página que são focalizáveis.
 
-   No console **Sites** há a opção adicionada para **Ignorar para o conteúdo** principal. Isso se torna visível à medida que você navega pelas opções de cabeçalho e acelera a navegação, permitindo que você pule os elementos padrão na barra de ferramentas (produto) e o leve diretamente para o conteúdo principal.
+   No console do **Sites** há a opção adicionada para **Ir para o conteúdo principal**. Isso se torna visível à medida que você navega pelas opções de cabeçalho e acelera a navegação, possibilitando ignorar os elementos padrão na barra de ferramentas (produto) e acessar diretamente o conteúdo principal.
 
    ![Ir para o conteúdo principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
@@ -225,7 +225,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 >
 >Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
-## Ações rápidas   {#quick-actions}
+## Ações rápidas {#quick-actions}
 
 Na [Exibição de cartão](#card-view), determinadas ações estão disponíveis como ícones de ação rápida, além de estarem na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e elimina a necessidade de pré-seleção.
 
