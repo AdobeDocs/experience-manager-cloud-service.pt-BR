@@ -4,9 +4,9 @@ description: Saiba mais sobre vários métodos de edição e gerenciamento de at
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: d262d4493939f0fc60a98ef4ff892fbce5f526ab
 workflow-type: tm+mt
-source-wordcount: '4284'
+source-wordcount: '4396'
 ht-degree: 12%
 
 ---
@@ -37,7 +37,19 @@ Os seguintes caracteres (lista separada por espaços de) não são suportados:
 
 ## Upload assets {#uploading-assets}
 
-Consulte [adicionar ativos digitais ao Experience Manager](add-assets.md)para obter informações detalhadas.
+Consulte [adicionar ativos digitais ao Experience Manager](add-assets.md).
+
+## Detectar ativos do duplicado {#detect-duplicate-assets}
+
+<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
+
+Se um ativo de duplicado existir no repositório DAM, o Assets o detecta e notifica o usuário. A detecção de Duplicados está desativada por padrão. Para ativar o recurso, configure o Detector [!UICONTROL de duplicação de ativos da]Adobe AEM Cloud. Consulte [como executar configurações](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. A detecção de duplicação é baseada no `dam:sha1` valor exclusivo armazenado em `jcr:content/metadata/dam:sha1`. Isso significa que os ativos do duplicado são detectados mesmo se os nomes dos arquivos forem diferentes.
+
+![Detectar a configuração OSGi do ativo do duplicado](assets/duplicate-detection.png)
+
+Depois de habilitado, o Experience Manager envia notificações de ativos do duplicado para a caixa de entrada. É um resultado agregado para vários duplicados. Os usuários podem optar por remover os ativos com base nos resultados.
+
+![Notificação de caixa de entrada para ativos de duplicado](assets/duplicate-detect-inbox-notification.png)
 
 ## Pré-visualizações {#previewing-assets}
 
@@ -89,6 +101,7 @@ Para pré-visualização de um ativo, siga estas etapas.
    * Número de vezes que o ativo foi exibido ou baixado
    * Canais/dispositivos através dos quais o ativo foi usado
    * Soluções criativas onde o ativo foi usado recentemente
+
    Para obter mais detalhes, consulte [Asset Insights](assets-insights.md).
 
 1. Toque/clique em **[!UICONTROL Salvar e fechar]**.
@@ -160,6 +173,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    * Toque/clique em **[!UICONTROL Voltar]** para retornar à tela **[!UICONTROL Selecionar destino]** .
 
    * Toque/clique em **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
+
    Se você não atualizar referências, elas continuarão apontando para o caminho anterior do ativo. Se você ajustar as referências, elas serão atualizadas para o novo caminho do ativo.
 
 ### Gerenciar execuções {#managing-renditions}
@@ -233,6 +247,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
       * Se o ativo não tiver referências, ele será excluído.
       * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são referenciados.** Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
+
    >[!NOTE]
    >
    >Você precisa de permissões de exclusão no dam/asset para poder excluir um ativo. Se você tiver apenas permissões de modificação, poderá apenas editar os metadados do ativo e adicionar anotações ao ativo. No entanto, não é possível excluir o ativo ou seus metadados.
@@ -292,6 +307,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    * **[!UICONTROL Cancelar]** para parar a ação
    * **[!UICONTROL Cancele a publicação]** para confirmar que os ativos não foram publicados (não estão mais disponíveis no ambiente de publicação) na data especificada.
+
    >[!NOTE]
    >
    >Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite cancelar a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
@@ -344,6 +360,7 @@ As ferramentas de edição na interface do AEM Assets permitem executar pequenos
    * Selecione o ativo e clique/toque no ícone **[!UICONTROL Editar]** na barra de ferramentas.
    * Toque/clique no ícone **[!UICONTROL Editar]** que aparece em um ativo na visualização Cartão.
    * Na página do ativo, toque/clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Para recortar a imagem, toque/clique no ícone **Recortar** .
@@ -414,6 +431,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
    * [Ações rápidas](#quick-actions)
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]**.
