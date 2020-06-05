@@ -2,9 +2,9 @@
 title: Criação de um Programa - Serviço em nuvem
 description: Criação de um Programa - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ A opção de exclusão está disponível na landing page, como mostrado abaixo:
 
 Ou,
 
-Selecione **Excluir Programa** na página *Visão geral* para excluir seu Programa Sandbox.
+Selecione **Excluir Programa** na página Visão geral **do** Programa para excluir o Programa Sandbox.
 
 ![](assets/delete-sandbox2.png)
 
