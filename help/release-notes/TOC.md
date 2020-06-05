@@ -1,10 +1,10 @@
 ---
 sub-product: Notas de versão para AEM as a Cloud Service
 user-guide-title: Notas de versão para AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
-workflow-type: ht
-source-wordcount: '49'
+translation-type: tm+mt
+source-git-commit: a898e836ac93a6050a40151c130e2c14d233f733
+workflow-type: tm+mt
+source-wordcount: '52'
 ht-degree: 100%
 
 ---
@@ -14,7 +14,8 @@ ht-degree: 100%
 
 + [Informações da versão](/help/release-notes/home.md)
 + Notas de versão {#release-notes}
-   + [Notas de versão atuais (2020.5.0)](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + [Notas de versão atuais (2020.6.0)](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + [Notas de versão para 2020.5.0](/help/release-notes/release-notes-cloud/release-notes-2020-5-0.md)
    + [Notas de versão para 2020.4.0](/help/release-notes/release-notes-cloud/release-notes-2020-4-0.md)
    + [Notas de versão para 2020.3.0](/help/release-notes/release-notes-cloud/release-notes-2020-3-0.md)
    + [Notas de versão para 2020.2.0](/help/release-notes/release-notes-cloud/release-notes-2020-2-0.md)
