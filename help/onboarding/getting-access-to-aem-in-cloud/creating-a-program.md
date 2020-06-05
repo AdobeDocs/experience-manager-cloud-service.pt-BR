@@ -2,9 +2,9 @@
 title: Criação de um Programa - Serviço em nuvem
 description: Criação de um Programa - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,19 @@ Siga as etapas abaixo para criar um programa sandbox:
 
 Um usuário do Programa Sandbox no Proprietário *do* Negócio ou na função *Gerenciador* de Implantação no Gerenciador de Nuvem pode excluir seu conjunto de ambientes de Produção e Estágio por meio da interface do usuário do Gerenciador de Nuvem.
 
-A opção de exclusão está disponível no cartão de Ambiente na página *Visão geral* e na página **Ambientes** . Selecionar a opção de exclusão em Produção ou Estágio também exclui a outra no conjunto.
+>[!NOTE]
+>Selecionar a opção de exclusão em Produção ou Estágio também exclui a outra no conjunto.
+
+A opção de exclusão está disponível na landing page, como mostrado abaixo:
+
+![](assets/delete-sandbox1.png)
+
+Ou,
+
+Selecione **Excluir Programa** na página *Visão geral* para excluir seu Programa Sandbox.
+
+![](assets/delete-sandbox2.png)
+
 
 ## Criação de um Programa regular {#create-regular-program}
 
