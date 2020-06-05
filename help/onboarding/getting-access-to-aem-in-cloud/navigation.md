@@ -2,7 +2,7 @@
 title: Navegação
 description: Navegação - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
@@ -59,6 +59,8 @@ Consulte [Acessar uma instância no AEM como um serviço](https://docs.adobe.com
    ![](assets/sys-admin4.png)
 
 1. Depois de clicar em **Gerenciar acesso**, você navega até o **Admin Console** de onde tem acesso à instância do autor do ambiente.
+
+   ![](assets/sys-admin-2.png)
 
 ## Para clientes AMS existentes {#existing-aem}
 
