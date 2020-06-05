@@ -1,48 +1,185 @@
 ---
-title: Tags inteligentes aprimoradas
-description: Aplique tags comerciais contextuais e descritivas usando o serviço AI e ML do Adobe Sensei, para melhorar a descoberta de ativos e a velocidade do conteúdo.
+title: Marque imagens com serviços inteligentes artificialmente.
+description: Marque imagens com serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando os serviços do Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+source-git-commit: 53d80f9293f6ff940eb4aede86bcd9375f7e6cce
+workflow-type: tm+mt
+source-wordcount: '2398'
+ht-degree: 7%
 
 ---
 
 
-# Marcar seus ativos com tags inteligentes {#smart-tag-assets}
+# Adicione tags às suas imagens usando serviços inteligentes {#smart-tag-assets}
 
-## Visão geral das tags inteligentes {#overview-of-enhanced-smart-tags}
+As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar seus ativos digitais. Marcar ativos com um vocabulário controlado por taxonomia garante que os ativos possam ser facilmente identificados e recuperados por pesquisas baseadas em tags.
 
-As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar ativos digitais de uma classe específica. Marcar ativos com vocabulário controlado por taxonomia garante que eles possam ser facilmente identificados e recuperados por pesquisas baseadas em tags.
+Comparado aos vocabulários de linguagem natural, a marcação baseada na taxonomia comercial ajuda a alinhar os ativos a uma empresa empresa e garante que os ativos mais relevantes sejam exibidos nas pesquisas. Por exemplo, um fabricante de carros pode marcar imagens de carros com nomes de modelos para que somente as imagens relevantes sejam exibidas quando pesquisadas para projetar uma campanha promocional.
 
-Comparado aos vocabulários de linguagem natural, a marcação de ativos digitais com base na taxonomia comercial ajuda a alinhá-los aos negócios de uma empresa e garante que os ativos mais relevantes sejam exibidos nas pesquisas. Por exemplo, um fabricante de carros pode marcar imagens de carros com nomes de modelos para que somente imagens relevantes sejam exibidas quando imagens de vários modelos forem pesquisadas para projetar uma campanha de promoção.
+Em segundo plano, o Smart Content Service (SCS) usa uma estrutura de inteligência artificial do [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar seu algoritmo de reconhecimento de imagem na estrutura de tags e na taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
-Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura do AI do [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar seu algoritmo de reconhecimento de imagem na estrutura de tags e na taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
+<!-- TBD: Create a similar flowchart for how training works in CS.
+![flowchart](assets/flowchart.gif) 
+-->
+
+Para usar a marcação inteligente, conclua as seguintes tarefas:
+
+* [Integre o Experience Manager com a E/S](#integrate-aem-with-aio)da Adobe.
+* [Entenda os modelos de tags e as diretrizes](#understand-tag-models-guidelines).
+* [Treinar o modelo](#train-model).
+* [Marque seus ativos](#tag-assets)digitais.
+* [Gerencie as tags e pesquisas](#manage-smart-tags-and-searches).
+
+Os Serviços de conteúdo inteligente são aplicáveis somente para [!DNL Adobe Experience Manager Assets] clientes. O Serviço de conteúdo inteligente está disponível para compra como um complemento para [!DNL Experience Manager].
+
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+
+## Integrar [!DNL Experience Manager] com E/S da Adobe {#integrate-aem-with-aio}
+
+Você pode fazer a integração [!DNL Adobe Experience Manager] com o Serviço de conteúdo inteligente usando a E/S da Adobe. Use essa configuração para acessar o Serviço de conteúdo inteligente de dentro [!DNL Experience Manager].
+
+Consulte [configurar o Experience Manager para a marcação inteligente de ativos](smart-tags-configuration.md) para tarefa para configurar o Smart Content Service. No back end, o [!DNL Experience Manager] servidor autentica suas credenciais de serviço no gateway de E/S da Adobe antes de encaminhar sua solicitação ao Serviço de conteúdo inteligente.
+
+## Entender os modelos e diretrizes de tags {#understand-tag-models-guidelines}
+
+Um modelo de tag é um grupo de tags relacionadas que são por um aspecto visual da imagem. Por exemplo, uma coleção de sapatos pode ter tags diferentes, mas todas elas estão relacionadas a sapatos e podem pertencer ao mesmo modelo de etiqueta. As tags podem se relacionar somente com os diferentes aspectos visuais das imagens. Para entender a representação de conteúdo de um modelo de treinamento em [!DNL Experience Manager], visualize um modelo de treinamento como uma entidade de nível superior composta por um grupo de modelos relacionados `cq:tags`. Cada tag pode ser aplicada exclusivamente a uma imagem.
+
+As tags que não podem ser tratadas realisticamente estão relacionadas a:
+
+* Aspectos não visuais e abstratos, como o ano ou a estação de lançamento de um produto, o estado de espírito ou a emoção evocados por uma imagem.
+* Diferenças visuais nuances em produtos como camisas com e sem coleiras ou pequenos logotipos de produtos embutidos em produtos.
+
+Antes de criar um modelo de tag e treinar o serviço, identifique um conjunto de tags exclusivas que descrevam melhor os objetos nas imagens no contexto de sua empresa. Certifique-se de que os ativos no conjunto preparado estejam em conformidade com [as diretrizes](#training-guidelines)de treinamento.
+
+### Diretrizes de treinamento {#training-guidelines}
+
+A formação é um processo irrevogável. As imagens em seu conjunto de treinamento devem estar em conformidade com as seguintes diretrizes:
+
+**Quantidade e tamanho:** mínimo de 10 imagens por tag. Mínimo de 500 pixels no lado maior.
+
+**Coerência**: As imagens de uma tag devem ser visualmente semelhantes. É melhor adicionar as tags sobre os mesmos aspectos visuais (como o mesmo tipo de objetos em uma imagem) juntas em um único modelo de tag. Por exemplo, não é uma boa ideia marcar todas essas imagens como `my-party` (para treinamento) porque elas não são visualmente semelhantes.
+
+![Imagens ilustrativas para exemplificar as diretrizes para treinamento](assets/do-not-localize/coherence.png)
+
+**Cobertura**: Deve haver uma variedade suficiente de imagens no treinamento. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que o AEM aprenda a se concentrar nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo. Por exemplo, para o *modelo de tag-down-pose*, inclua mais imagens de treinamento semelhantes à imagem realçada abaixo para que o serviço identifique imagens semelhantes com mais precisão durante a marcação.
+
+![Imagens ilustrativas para exemplificar as diretrizes para treinamento](assets/do-not-localize/coverage_1.png)
+
+**Desvio/obstrução**: O serviço treina melhor em imagens com menos distração (fundo proeminente, acompanhamento não relacionado, como objetos/pessoas com o assunto principal). Por exemplo, para a tag *casual-shoe*, a segunda imagem não é um bom candidato a treinamento.
+
+![Imagens ilustrativas para exemplificar as diretrizes para treinamento](assets/do-not-localize/distraction.png)
+
+**Integridade:** se uma imagem se qualificar para mais de uma tag, adicione todas as tags aplicáveis antes de incluir a imagem para treinamento. Por exemplo, para tags, como *capa de chuva* e *perfil de modelo*, adicione ambas as tags ao ativo elegível antes de incluí-lo para treinamento.
+
+![Imagens ilustrativas para exemplificar as diretrizes para treinamento](assets/do-not-localize/completeness.png)
+
+**Número de tags**: A Adobe recomenda treinar um modelo usando pelo menos duas tags distintas e pelo menos 10 imagens diferentes para cada tag. Em um único modelo de tag, não adicione mais de 50 tags.
+
+**Número de exemplos**: Para cada tag, adicione pelo menos 10 exemplos. No entanto, a Adobe recomenda cerca de 30 exemplos. Há suporte para um máximo de 50 exemplos por tag.
+
+**Preservar falsos positivos e conflitos**: A Adobe recomendou a criação de um modelo de tag único para um aspecto visual único. Estruturar os modelos de tags de forma a evitar sobreposições de tags entre os modelos. Por exemplo, não use tags comuns como `sneakers` em dois nomes `shoes` e `footwear`modelos de tags diferentes. O processo de treinamento substitui um modelo de tag treinado pelo outro para uma palavra-chave comum.
+
+**Exemplos**: Mais alguns exemplos para orientação são:
+
+* Crie um modelo de tag que inclua,
+   * apenas as etiquetas relacionadas com modelos de automóveis.
+   * somente as marcas relacionadas às cores das camisas.
+   * apenas as etiquetas relacionadas com casacos para mulheres e homens.
+* Não criar,
+   * um modelo de etiqueta que inclui modelos de carro lançados em 2019 e 2020.
+   * vários modelos de tags que incluem os mesmos poucos modelos de carro.
+
+**Imagens usadas para treinar**: Você pode usar as mesmas imagens para treinar diferentes modelos de tags. No entanto, o não associa uma imagem a mais de uma tag em um modelo de tag. Portanto, é possível marcar a mesma imagem com tags diferentes pertencentes a modelos de tags diferentes.
+
+## Treinar o modelo para suas tags personalizadas {#train-model}
+
+<!-- 
+TBD: Use BJ recording https://bluejeans.com/playback/guid/MjI1NTI3NDQ3NDo0MjY4OTItYzNjNmE4MDAtNDAzMC00Y2I5LWFiOGEtN2ViMTgxYmZmZDQ3?s=vl
+-->
+
+Para criar e treinar um modelo para suas tags comerciais específicas, siga estas etapas:
+
+1. Crie as tags necessárias e a estrutura de tags apropriada em `cq:tags`. Carregue as imagens relevantes no repositório do DAM.
+1. Na interface [!DNL Experience Manager] do usuário, acesse **[!UICONTROL Ativos]** > Modelo **** de treinamento.
+1. Clique em **[!UICONTROL Criar]**. Forneça um **[!UICONTROL Título]**, **[!UICONTROL Descrição]**.
+1. Procure e selecione as tags das tags existentes nas `cq:tags` quais você deseja treinar o modelo. Clique em **[!UICONTROL Avançar]**.
+1. Na caixa de diálogo **[!UICONTROL Selecionar ativos]** , clique em **[!UICONTROL Adicionar ativos]** em relação a cada tag. Pesquise no repositório do DAM ou navegue pelo repositório para selecionar pelo menos 10 e no máximo 50 imagens. Selecione os ativos e não a pasta. Depois de selecionar as imagens, clique em **[!UICONTROL Selecionar]**.
+1. Para pré-visualização das miniaturas das imagens selecionadas, clique no acordeão na frente de uma tag . Você pode modificar sua seleção clicando em **[!UICONTROL Adicionar ativos]**. Depois de satisfeito com a seleção, clique em **[!UICONTROL Enviar]**. A interface do usuário exibe uma notificação na parte inferior da página, indicando que o treinamento foi iniciado.
+1. Verifique o status do treinamento na coluna **[!UICONTROL Status]** para cada modelo de tag. Os possíveis status são [!UICONTROL Pendente], [!UICONTROL Treinado]e [!UICONTROL Com falha].
+
+![Fluxo de trabalho para o modelo de marcação para marcação inteligente](assets/smart-tag-model-training-flow.png)
+
+*Figura: Etapas do fluxo de trabalho de treinamento para treinar o modelo de marcação.*
+
+### Status e relatório do treinamento de Visualizações {#training-status}
+
+Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags no conjunto de ativos de treinamento, reveja o relatório de fluxo de trabalho de treinamento no console Relatórios.
+
+1. Na [!DNL Experience Manager] interface, vá para **[!UICONTROL Ferramentas > Ativos > Relatórios]**.
+1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
+1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
+1. Especifique um título e uma descrição para o relatório. Em **[!UICONTROL Agendar relatório]**, deixe a opção **[!UICONTROL Agora]** selecionada. Se desejar agendar o relatório para posteriormente, selecione **[!UICONTROL Posteriormente]** e especifique uma data e hora. Then, click **[!UICONTROL Create]** from the toolbar.
+1. Na página **[!UICONTROL Relatórios de ativos]**, selecione o relatório gerado. To view the report, click **[!UICONTROL View]** from the toolbar.
+1. Revise os detalhes do relatório. O relatório exibe o status do treinamento das tags que você treinou. A cor verde na coluna **[!UICONTROL Status de treinamento]** indica que o Serviço de conteúdo inteligente foi treinado para a tag. A cor amarela indica que o serviço não é completamente treinado para uma tag específica. Nesse caso, adicione mais imagens com a tag específica e execute o fluxo de trabalho de treinamento para treinar o serviço completamente na tag. Se você não vir suas tags neste relatório, execute o fluxo de trabalho de treinamento novamente para essas tags.
+1. Para baixar o relatório, selecione-o na lista e clique em **[!UICONTROL Download]** na barra de ferramentas. O relatório é baixado como uma planilha do Microsoft Excel.
+
+## Adicionar tags aos ativos {#tag-assets}
+
+Depois de ter treinado o Serviço de conteúdo inteligente, é possível acionar o fluxo de trabalho de marcação para aplicar automaticamente as tags apropriadas em um conjunto diferente de ativos semelhantes. Você pode aplicar o fluxo de trabalho de marcação periodicamente ou sempre que necessário. O fluxo de trabalho de marcação se aplica a ativos e pastas.
+
+### Marcar ativos do console de fluxo de trabalho {#tagging-assets-from-the-workflow-console}
+
+1. Na interface do Experience Manager, vá até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
+
+   ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
+
+1. Na caixa de diálogo **[!UICONTROL Executar fluxo de trabalho]** , navegue até a pasta de carga que contém os ativos nos quais você deseja aplicar suas tags automaticamente.
+1. Especifique um título para o fluxo de trabalho e um comentário opcional. Clique em **[!UICONTROL Executar]**.
+
+   ![tagging_dialog](assets/tagging_dialog.png)
+
+   Navegue até a pasta de ativos e reveja as tags para verificar se o Smart Content Service marcou seus ativos corretamente. Para obter detalhes, consulte [gerenciar tags](#manage-smart-tags-and-searches)inteligentes.
+
+### Marcar ativos da linha do tempo {#tagging-assets-from-the-timeline}
+
+1. Na interface do usuário Ativos, selecione a pasta que contém ativos ou ativos específicos aos quais você deseja aplicar tags inteligentes.
+1. No canto superior esquerdo, abra a **[!UICONTROL Linha do tempo]**.
+1. Abra as ações na parte inferior da barra lateral esquerda e clique em Fluxo de trabalho do **[!UICONTROL Start]**.
+
+   ![start_workflow](assets/start_workflow.png)
+
+1. Selecione o fluxo de trabalho dos Ativos **[!UICONTROL de tags inteligentes do]** DAM e especifique um título para o fluxo de trabalho.
+1. Clique em **[!UICONTROL Start]**. O fluxo de trabalho aplica suas tags em ativos. Navegue até a pasta de ativos e reveja as tags para verificar se o Smart Content Service marcou seus ativos corretamente. Para obter detalhes, consulte [gerenciar tags](#manage-smart-tags-and-searches)inteligentes.
 
 >[!NOTE]
 >
->Os Serviços de conteúdo inteligente se aplicam somente aos clientes do Assets. O Serviço de conteúdo inteligente está disponível para compra como um complemento do Experience Manager.
+>Nos ciclos de marcação subsequentes, somente os ativos modificados são marcados novamente com tags treinadas recentemente.No entanto, mesmo ativos inalterados são marcados se a diferença entre os últimos e os atuais ciclos de marcação do fluxo de trabalho de marcação exceder 24 horas. Para workflows de marcação periódica, os ativos inalterados são marcados quando o intervalo de tempo excede 6 meses.
 
-<!-- ![flowchart](assets/flowchart.gif) -->
+### Marcar ativos carregados {#tag-uploaded-assets}
 
-## Gerenciar tags inteligentes e pesquisas {#manage-smart-tags-and-searches}
+O Experience Manager pode marcar automaticamente os ativos que os usuários carregam no DAM. Para fazer isso, os administradores configuram um fluxo de trabalho para adicionar uma etapa disponível do aos ativos de tags inteligentes. Consulte [como ativar a marcação inteligente para ativos](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)carregados.
+
+## Gerenciar tags inteligentes e pesquisas de imagens {#manage-smart-tags-and-searches}
 
 É possível preparar tags inteligentes para remover tags imprecisas que possam ter sido atribuídas às imagens da sua marca, de modo que somente as tags mais relevantes sejam exibidas.
 
-A moderação de tags inteligentes também ajuda a refinar pesquisas baseadas em tags para imagens, garantindo que sua imagem apareça nos resultados da pesquisa para as tags mais relevantes. Essencialmente, ajuda a eliminar as chances de imagens não relacionadas aparecerem nos resultados da pesquisa.
+A moderação de tags inteligentes também ajuda a refinar pesquisas baseadas em tags para imagens, garantindo que sua imagem apareça nos resultados da pesquisa para obter as tags mais relevantes. Essencialmente, ajuda a eliminar as chances de imagens não relacionadas aparecerem nos resultados da pesquisa.
 
 Também é possível atribuir uma classificação mais alta a uma tag para aumentar sua relevância em relação a uma imagem. A promoção de uma tag para uma imagem aumenta as chances de a imagem aparecer nos resultados da pesquisa quando uma pesquisa é realizada com base na tag específica.
 
 1. Na caixa Omnisearch, procure ativos com base em uma tag.
 1. Inspecione os resultados da pesquisa para identificar uma imagem que não seja relevante para a sua pesquisa.
-1. Selecione a imagem e clique/toque no ícone **[!UICONTROL Gerenciar tags]** na barra de ferramentas.
-1. Na página **[!UICONTROL Gerenciar tags]** , inspecione as tags. Se você não quiser que a imagem seja pesquisada com base em uma tag específica, selecione a tag e clique/toque no ícone Excluir da barra de ferramentas. Como alternativa, clique/toque no `X` símbolo que aparece ao lado do rótulo.
-1. Para atribuir uma classificação superior a uma tag, selecione-a e clique/toque no ícone promover na barra de ferramentas. A tag promovida é movida para a seção **[!UICONTROL Tags]** .
-1. Clique/toque em **[!UICONTROL Salvar]** e, em seguida, clique/toque em **[!UICONTROL OK]** para fechar a caixa de diálogo Êxito.
+1. Selecione a imagem e clique no ícone **[!UICONTROL Gerenciar tags]** na barra de ferramentas.
+1. Na página **[!UICONTROL Gerenciar tags]** , inspecione as tags. Se você não quiser que a imagem seja pesquisada com base em uma tag específica, selecione a tag e clique no ícone Excluir na barra de ferramentas. Como alternativa, clique no `X` símbolo que aparece ao lado do rótulo.
+1. Para atribuir uma classificação superior a uma tag, selecione a tag e clique no ícone promover na barra de ferramentas. A tag promovida é movida para a seção **[!UICONTROL Tags]** .
+1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
 1. Navegue até a página de propriedades da imagem. Observe que a tag promovida tem uma relevância alta e, portanto, aparece mais alta nos resultados da pesquisa.
 
 ### Compreender os resultados da pesquisa do AEM com tags inteligentes {#understandsearch}
 
-Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma `AND` cláusula. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma `OR` cláusula adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes aplicadas. For example, consider searching for `woman running`. Por padrão, os ativos com apenas `woman` ou apenas `running` palavras-chave nos metadados não aparecem nos resultados da pesquisa. No entanto, um ativo marcado com tags inteligentes `woman` ou `running` usando tags inteligentes aparece em uma consulta de pesquisa. Então os resultados da pesquisa são uma combinação de...
+Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma `AND` cláusula. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma `OR` cláusula adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes aplicadas. For example, consider searching for `woman running`. Por padrão, os ativos com apenas `woman` ou apenas `running` palavras-chave nos metadados não aparecem nos resultados da pesquisa. No entanto, um ativo marcado com tags inteligentes `woman` ou `running` usando tags inteligentes aparece em um query de pesquisa desse tipo. Então os resultados da pesquisa são uma combinação de...
 
 * ativos com `woman` e `running` palavras-chave nos metadados.
 
@@ -54,151 +191,24 @@ Os resultados da pesquisa que correspondem a todos os termos de pesquisa nos cam
 1. corresponde a `woman running` em tags inteligentes.
 1. correspondências de `woman` ou de `running` em tags inteligentes.
 
-<!-- 
+### Limitações de marcação {#limitations}
 
-## Training the Smart Content Service {#training-the-smart-content-service}
+Tags inteligentes aprimoradas são baseadas em modelos de aprendizado de imagens de marca e suas tags. Esses modelos nem sempre são perfeitos para identificar tags. A versão atual do Serviço de conteúdo inteligente tem as seguintes limitações:
 
-For the Smart Content Service to recognize your business taxonomy, run it on a set of assets that already include tags that are relevant to your business. After training, the service can apply the same taxonomy on a similar set of assets.
+* Incapacidade de reconhecer diferenças sutis nas imagens. Por exemplo, camisas finas versus camisetas comuns.
+* Incapacidade de identificar tags com base em pequenos padrões/partes de uma imagem. Por exemplo, logotipos em camisetas.
+* A marcação é compatível com as localidades nas quais o AEM é compatível. Para obter uma lista de idiomas, consulte Notas [de versão do](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)Smart Content Services.
 
-You can train the service multiple times to improve its ability to apply relevant tags. After each training cycle, run a tagging workflow and check whether your assets are tagged appropriately.
-
-You can train the Smart Content Service periodically or on requirement basis.
-
->[!NOTE]
->
->The training workflow runs on folders only.
-
-### Periodic training {#periodic-training}
-
-You can enable the Smart Content Service to train periodically on the assets and associated tags within a folder. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
-
-Once this option is selected for a folder, AEM runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. By default, the training workflow runs on a weekly basis at 12:30 AM on Saturdays.
-
-### On-demand training {#on-demand-training}
-
-You can train the Smart Content Service whenever required from the Workflow console.
-
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then tap/click **[!UICONTROL Start Workflow]** from the toolbar.
-1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder that includes the tagged assets for training the service.
-1. Specify a title for the workflow and a add a comment. Then, tap/click **[!UICONTROL Run]**. The assets and tags are submitted for training.
+Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use o Assets Omnisearch (pesquisa de texto completo). Não há predicado de pesquisa separado para tags inteligentes.
 
 >[!NOTE]
 >
->Once the assets in a folder are processed for training, only the modified assets are processed in subsequent training cycles.
-
-### Viewing training reports {#viewing-training-reports}
-
-To check whether the Smart Content Service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
-
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets > Reports]**.
-1. In the **[!UICONTROL Asset Reports]** page, tap/click **[!UICONTROL Create]**.
-1. Select the **[!UICONTROL Smart Tags Training]** report, and then tap/click **[!UICONTROL Next]** from the toolbar.
-1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, tap/click **[!UICONTROL Create]** from the toolbar.
-1. In the **[!UICONTROL Asset Reports]** page, select the report you generated. To view the report, tap/click the **[!UICONTROL View]** icon from the toolbar.
-1. Review the details of the report.
-
-   The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Content Service is trained for the tag. Yellow color indicates that the service is not completely trained for a particular tag. In this case, add more images with the particular tag and run the training workflow to train the service completely on the tag.
-
-   If you do not see your tags in this report, run the training workflow again for these tags.
-
-1. To download the report, select it from the list, and tap/click the **[!UICONTROL Download]** icon from the toolbar. The report downloads as an Excel file.
-
-## Tagging assets automatically {#tagging-assets-automatically}
-
-After you have trained the Smart Content Service, you can trigger the tagging workflow to automatically apply appropriate tags on a different set of similar assets.
-
-You can run the tagging workflow periodically or whenever required.
-
->[!NOTE]
+>A capacidade do Serviço de conteúdo inteligente de treinar suas tags e aplicá-las em outras imagens depende da qualidade das imagens usadas para treinamento.
 >
->The tagging workflow runs on both assets and folders.
+>Para obter melhores resultados, a Adobe recomenda usar imagens visualmente semelhantes para treinar o serviço de cada tag.
 
-### Periodic tagging {#periodic-tagging}
-
-You can enable the Smart Content Service to periodically tag assets within a folder. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
-
-Once this option is selected for a folder, the Smart Content Service automatically tags the assets within the folder. By default, the tagging workflow runs every day at 12:00 AM.
-
-### On-demand tagging {#on-demand-tagging}
-
-You can trigger the tagging workflow from the following to instantly tag your assets:
-
-* Workflow console
-* Timeline
-
->[!NOTE]
+>[!MORELIKETHIS]
 >
->If you run the tagging workflow from the timeline, you can apply tags on a maximum of 15 assets at a time.
+>* [Configurar o Experience Manager para marcação inteligente](smart-tags-configuration.md)
+>* [Saiba como as tags inteligentes ajudam a gerenciar ativos](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 
-#### Tagging assets from the Workflow console {#tagging-assets-from-the-workflow-console}
-
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then tap/click **[!UICONTROL Start Workflow]** from the toolbar.
-1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
-1. Specify a title for the workflow and an optional comment. Then, tap/click **[!UICONTROL Run]**.
-
-Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [Managing Smart Tags](manage-smart-tags.md).
-
-#### Tagging assets from the timeline {#tagging-assets-from-the-timeline}
-
-1. From the Assets user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
-1. Tap/click the GlobalNav icon and open the timeline.
-1. Tap/click the arrow at the bottom, and then tap/click **[!UICONTROL Start Workflow]**.
-1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
-1. Tap/click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [Managing Smart Tags](manage-smart-tags.md).
-
->[!NOTE]
->
->In the subsequent tagging cycles, only the modified assets are tagged again with newly-trained tags.
->
->However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours.
->
->For periodic tagging workflows, unaltered assets are tagged when the gap exceeds 6 months.
-
-
-## Smart Content Service Training Guidelines {#smart-content-service-training-guidelines}
-
-To be able to effectively tag your brand images, the Smart Content Service requires that the training images conform to certain guidelines. For best results, images in your training set should conform to the following guidelines:
-
-**Quantity and size:** Minimum 30 images per tag. Minimum of 500 pixels on the longer side.
-
-**Coherence**: Images for a tag should be visually similar.
-
-For example, it is not a good idea to tag all of these images as `my-party` (for training) because they are not visually similar.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/coherence.png)
-
-**Coverage**: There should be sufficient variety in the images in the training. The idea is to supply a few but reasonably diverse examples so that AEM learns to focus on the right things. If you're applying the same tag on visually dissimilar images, include at least five examples of each kind.
-
-For example, for the tag *model-down-pose*, include more training images similar to the highlighted image below for the service to identify similar images more accurately during tagging.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/coverage_1.png)
-
-**Distraction/obstruction**: The service trains better on images that have less distraction (prominent backgrounds, unrelated accompaniments, such as objects/persons with the main subject).
-
-For example, for the tag *casual-shoe*, the second image is not a good training candidate.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/distraction.png)
-
-**Completeness:** If an image qualifies for more than one tag, add all applicable tags before including the image for training. For example, for tags, such as *raincoat* and *model-side-view*, add both the tags on the eligible asset before including it for training.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/completeness.png)
-
-### Training limitations {#limitations}
-
-Enhanced smart tags are based on learning models of brand images and their tags. These models are not always perfect at identifying tags. The current version of the Smart Content Service has the following limitations:
-
-* Inability to recognize subtle differences in images. For example, slim versus regular fitted shirts.
-* Inability to identify tags based on tiny patterns/parts of an image. For example, logos on T-shirts.
-* Tagging is supported in the locales that AEM is supported in. For a list of languages, see [Smart Content Services release notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
-
-To search for assets with smart tags (regular or enhanced), use the Assets Omnisearch (full-text search). There is no separate search predicate for smart tags. 
-
->[!NOTE]
->
->The ability of the Smart Content Service to train on your tags and apply them on other images depends on the quality of images you use for training. 
->
->For best results, Adobe recommends that you use visually similar images to train the service for each tag.
-
--->
