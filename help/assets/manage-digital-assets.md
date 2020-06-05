@@ -4,9 +4,9 @@ description: Saiba mais sobre vários métodos de edição e gerenciamento de at
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d262d4493939f0fc60a98ef4ff892fbce5f526ab
+source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
 workflow-type: tm+mt
-source-wordcount: '4396'
+source-wordcount: '4419'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ Consulte [adicionar ativos digitais ao Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Se um ativo de duplicado existir no repositório DAM, o Assets o detecta e notifica o usuário. A detecção de Duplicados está desativada por padrão. Para ativar o recurso, configure o Detector [!UICONTROL de duplicação de ativos da]Adobe AEM Cloud. Consulte [como executar configurações](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. A detecção de duplicação é baseada no `dam:sha1` valor exclusivo armazenado em `jcr:content/metadata/dam:sha1`. Isso significa que os ativos do duplicado são detectados mesmo se os nomes dos arquivos forem diferentes.
+Se um usuário do DAM fizer upload de um ou mais ativos que já existem no repositório, [!DNL Experience Manager] detectará a duplicação e notificará o usuário. A detecção de Duplicados é desativada por padrão, pois pode ter impacto no desempenho dependendo do tamanho do repositório e do número de ativos carregados. Para ativar o recurso, configure o Detector [!UICONTROL de duplicação de ativos da]Adobe AEM Cloud. Consulte [como executar configurações](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. A detecção de duplicação é baseada no `dam:sha1` valor exclusivo armazenado em `jcr:content/metadata/dam:sha1`. Isso significa que os ativos do duplicado são detectados mesmo se os nomes dos arquivos forem diferentes.
 
 ![Detectar a configuração OSGi do ativo do duplicado](assets/duplicate-detection.png)
 
