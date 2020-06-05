@@ -2,10 +2,10 @@
 title: Navegação
 description: Navegação - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 1f084c5f8b218808468ce7984fa0abdac497884f
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '492'
+ht-degree: 1%
 
 ---
 
@@ -18,23 +18,44 @@ Após o login bem-sucedido, você será direcionado para a landing page do Cloud
 
 ![](assets/first_timelogin1.png)
 
-## SysAdmin Access {#sysadmin-access}
+## Tarefas SysAdmin {#sysadmin-tasks}
 
-Como usuário na função SysAdmin, você tem acesso de um clique ao local no Admin Console a partir do qual as funções ou permissões do usuário para o Cloud Manager são gerenciadas.
+Um usuário na função SysAdmin agora pode acessar diretamente o Admin Console para gerenciar funções e permissões e acesso às instâncias do AEM.
 
 ### Gerenciamento de funções {#manage-roles}
 
-Como usuário no SysAdmin, uma opção **Gerenciar funções** está disponível na landing page ao lado de **Adicionar Programa**. Isso fornece acesso de um clique ao local no Admin Console a partir do qual as funções ou permissões do usuário para o Cloud Manager podem ser gerenciadas.
+Como usuário na função SysAdmin, você tem acesso de um clique ao local no Console **de** administração de onde as funções ou permissões do usuário para o Gerenciador de nuvem são gerenciadas.
 
-Consulte [Acessar o Gerenciador](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) da Cloud para obter mais informações sobre como adicionar usuários a um perfil, consulte Acesso ao GerenciadorCloud.
+Consulte [Acessar o Gerenciador](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) da Cloud para obter mais informações sobre como adicionar usuários a um perfil.
 
-### Gerenciamento do acesso ao AEM {#manage-access-aem}
+>[!NOTE]
+>Para algumas organizações que receberam acesso ao AEM como um serviço em nuvem antes de janeiro de 2020, elas serão levadas para o Adobe Admin Console e o Perfil de produto e Ambiente deverá ser selecionado.
 
-Como usuário no SysAdmin, você tem acesso de um clique ao Admin Console a partir do qual você pode navegar diretamente para a instância Autor e gerenciar o acesso.
+1. Navegue até a landing page do Gerenciador de nuvem e clique em **Gerenciar acesso**.
 
-![](assets/manage-access1.png)
+   ![](assets/sys-admin1.png)
+
+1. Ao clicar em **Gerenciar acesso** , você navega até o **Admin Console** de onde você pode gerenciar as funções ou permissões do usuário para o Cloud Manager.
+
+   ![](assets/sys-admin2.png)
+
+### Gerenciando o acesso à instância do autor {#manage-access-aem}
+
+Como usuário na função SysAdmin, você tem acesso de um clique ao Console **de** administração de onde você pode navegar para a instância de Autor diretamente e gerenciar o acesso.
+
+>[!NOTE]
+>Para algumas organizações que receberam acesso ao AEM como um serviço em nuvem antes de janeiro de 2020, elas serão levadas para o Adobe Admin Console e o Perfil de produto e Ambiente deverá ser selecionado.
 
 Consulte [Acessar uma instância no AEM como um serviço](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) em nuvem para obter mais detalhes.
+
+1. Navegue até o cartão de **Ambientes** na página *Visão geral* ou até a página **Ambientes** para usar a opção **Gerenciar acesso** , conforme mostrado na figura abaixo.
+
+   ![](assets/manage-access1.png)
+
+1. Clicar em **Gerenciar acesso** navega até o **Admin Console** de onde você tem acesso à instância Autor de um ambiente.
+
+   ![](assets/sys-admin3.png)
+
 
 ## Para clientes AMS existentes {#existing-aem}
 
