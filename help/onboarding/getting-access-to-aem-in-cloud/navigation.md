@@ -2,9 +2,9 @@
 title: Navegação
 description: Navegação - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
+source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
@@ -35,28 +35,30 @@ Consulte [Acessar o Gerenciador](https://docs.adobe.com/content/help/en/experien
 
    ![](assets/sys-admin5.png)
 
-1. Ao clicar em **Gerenciar acesso** , você navega até o **Admin Console** de onde você pode gerenciar as funções ou permissões do usuário para o Cloud Manager.
+1. Depois de clicar em **Gerenciar acesso**, você navega até o **Admin Console** de onde pode gerenciar as funções ou permissões do usuário para o Cloud Manager.
+
+   ![](assets/sys-admin1.png)
 
 ### Gerenciando o acesso à instância do autor {#manage-access-aem}
 
-Como usuário na função SysAdmin, você tem acesso de um clique ao Console **de** administração de onde você pode navegar para a instância de Autor diretamente e gerenciar o acesso.
+Como usuário na função SysAdmin, você tem acesso de um clique ao Console **de** administração de onde você pode navegar para a instância do autor diretamente e gerenciar o acesso.
 
 >[!NOTE]
 >Para algumas organizações que receberam acesso ao AEM como um serviço em nuvem antes de janeiro de 2020, elas serão levadas para o Adobe Admin Console e o Perfil de produto e Ambiente deverá ser selecionado.
 
 Consulte [Acessar uma instância no AEM como um serviço](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) em nuvem para obter mais detalhes.
 
-1. Navegue até cartão de **Ambientes** na página Visão geral **do** Programa.
+1. Navegue até cartão de **Ambientes** na página Visão geral **do** Programa e clique em **Gerenciar acesso**.
 
    ![](assets/sys-admin6.png)
 
    Ou,
 
-   Clique em **Detalhes** no cartão de **Ambientes** para abrir a página Ambientes. Clique em **Gerenciar** -> **Gerenciar acesso**.
+   **Gerenciar acesso** também está disponível no botão **Gerenciar** , se você clicar em **Detalhes** no cartão de **Ambientes** .
 
    ![](assets/sys-admin4.png)
 
-1. Clicar em **Gerenciar acesso** navega até o **Admin Console** de onde você tem acesso à instância Autor de um ambiente.
+1. Depois de clicar em **Gerenciar acesso**, você navega até o **Admin Console** de onde tem acesso à instância do autor do ambiente.
 
 ## Para clientes AMS existentes {#existing-aem}
 
