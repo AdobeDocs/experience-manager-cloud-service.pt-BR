@@ -2,9 +2,9 @@
 title: Notas de versão do Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de versão do Experience Manager para 2020.6.0
 translation-type: tm+mt
-source-git-commit: a725e5729d1086aba64ec59ed909577f25219aa9
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1833'
 ht-degree: 7%
 
 ---
@@ -21,6 +21,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is Ju
 ## Novidades no AEM Sites {#aem-sites}
 
 Siga esta seção para saber mais sobre as novidades e atualizações do AEM Sites no AEM as a Cloud Service versão 2020.6.0.
+
+### Novidades {#whats-new-2020.6.0}
+
+A versão 2.9.0 dos Componentes [](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) principais agora está disponível como parte do AEM Sites, incluindo:
+
+* Integração entre a camada [de dados do cliente](https://github.com/adobe/adobe-client-data-layer) Adobe e os componentes principais
+* Atributos de ID HTML configuráveis para todos os componentes
+* Um novo componente de barra de progresso
+* Muitas correções de erros
 
 ### Correções de erros {#sites-bug-fixes}
 
@@ -53,19 +62,27 @@ Siga esta seção para saber mais sobre as novidades e atualizações do Cloud M
 
 * Um usuário na função Proprietário *da* empresa no Cloud Manager agora pode excluir um Programa da caixa de proteção da landing page (por meio do botão de ação rápida no cartão de Programa) ou de dentro do programa.
 
-* Um usuário do Programa Sandbox no Proprietário *do* Negócio ou na função *Gerenciador* de Implantação no Gerenciador de Nuvem agora pode excluir seu conjunto de ambientes de Produção e Estágio por meio da interface do usuário do Gerenciador de Nuvem. A opção de exclusão agora está disponível no cartão do Ambiente na página de visão geral, bem como na página Ambientes. Selecionar a opção de exclusão em Produção ou Estágio também exclui a outra no conjunto.
+   Consulte [Excluindo um Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) Sandbox para obter mais detalhes.
+
+* Um usuário do Programa Sandbox no Proprietário *do* Negócio ou na função *Gerenciador* de Implantação no Gerenciador de Nuvem agora pode excluir seu conjunto de ambientes de Produção e Estágio por meio da interface do usuário do Gerenciador de Nuvem. A opção de exclusão agora está disponível no cartão de Ambiente na página Visão geral **dos** Programas, bem como na página **Ambientes** . Selecionar a opção de exclusão em Produção ou Estágio também exclui a outra no conjunto.
+
+   Consulte [Excluindo um Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) Sandbox para obter mais detalhes.
 
 * O treinador marca na landing page para informar e instruir o usuário sobre a navegação básica.
 
-* O treinador marca a página *Visão geral* para informar e instruir o usuário sobre a navegação básica dentro do Cloud Manager para que ele seja iniciado.
+* O treinador marca a página Visão geral **do** Programa para informar e instruir o usuário sobre a navegação básica dentro do Cloud Manager para que ele seja iniciado.
 
 * Uma página **APRENDIZADO** está disponível no Cloud Manager, acessível por meio da navegação superior. Esta página inclui recursos para ajudar os usuários a saber mais sobre os fluxos de trabalho usados com mais frequência, conforme relevante para suas funções atribuídas no Cloud Manager.
 
-* Os Programas Sandbox agora são identificados por meio de um emblema **Sandbox** que será exibido no cartão do programa na landing page, bem como ao lado do nome do programa na página *Visão geral* .
+* Os Programas Sandbox agora são identificados por meio de um emblema **Sandbox** que será exibido no cartão do programa na landing page, bem como ao lado do nome do programa na página Visão geral **do** Programa.
 
-* Um usuário na função *SysAdmin* agora tem acesso de um clique ao local no Admin Console a partir do qual as funções ou permissões do usuário para o Cloud Manager podem ser gerenciadas. Um botão **Gerenciar funções** estará disponível na landing page ao lado do botão **Adicionar Programa** .
+* Um usuário na função SysAdmin agora tem acesso de um clique ao local no Admin Console a partir do qual as funções ou permissões do usuário para o Cloud Manager podem ser gerenciadas. Um botão **Gerenciar acesso** agora está disponível na landing page ao lado do botão **Adicionar Programa** .
 
-* Um usuário na função SysAdmin agora tem acesso de um clique à instância Autor diretamente do CM.
+   Consulte [SysAdmin Tarefa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) para obter mais detalhes.
+
+* Um usuário na função SysAdmin agora tem acesso de um clique à instância do autor diretamente do Gerenciador de nuvem.
+
+   Consulte [Gerenciamento de acesso à instância](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) do autor para obter mais detalhes.
 
 * O log de compilação agora inclui a lista de artefatos descobertos, incluindo pacotes de conteúdo ignorados.
 
@@ -77,7 +94,7 @@ Siga esta seção para saber mais sobre as novidades e atualizações do Cloud M
 
 * Em determinadas situações, os ícones na caixa de diálogo **Criar Programa** estavam desalinhados.
 
-* O identificador de versão do AEM não era exibido consistentemente na página *Visão geral* .
+* O identificador de versão do AEM não era exibido consistentemente na página Visão geral **dos** Programas.
 
 * Ao configurar o pipeline de produção, a opção Implantação **** agendada não estava visível para alguns clientes.
 
