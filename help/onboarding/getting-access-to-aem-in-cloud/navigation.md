@@ -2,7 +2,7 @@
 title: Navegação
 description: Navegação - Serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 1%
@@ -33,11 +33,9 @@ Consulte [Acessar o Gerenciador](https://docs.adobe.com/content/help/en/experien
 
 1. Navegue até a landing page do Gerenciador de nuvem e clique em **Gerenciar acesso**.
 
-   ![](assets/sys-admin1.png)
+   ![](assets/sys-admin5.png)
 
 1. Ao clicar em **Gerenciar acesso** , você navega até o **Admin Console** de onde você pode gerenciar as funções ou permissões do usuário para o Cloud Manager.
-
-   ![](assets/sys-admin2.png)
 
 ### Gerenciando o acesso à instância do autor {#manage-access-aem}
 
@@ -48,14 +46,17 @@ Como usuário na função SysAdmin, você tem acesso de um clique ao Console **d
 
 Consulte [Acessar uma instância no AEM como um serviço](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) em nuvem para obter mais detalhes.
 
-1. Navegue até o cartão de **Ambientes** na página *Visão geral* ou até a página **Ambientes** para usar a opção **Gerenciar acesso** , conforme mostrado na figura abaixo.
+1. Navegue até cartão de **Ambientes** na página Visão geral **do** Programa.
 
-   ![](assets/manage-access1.png)
+   ![](assets/sys-admin6.png)
+
+   Ou,
+
+   Clique em **Detalhes** no cartão de **Ambientes** para abrir a página Ambientes. Clique em **Gerenciar** -> **Gerenciar acesso**.
+
+   ![](assets/sys-admin4.png)
 
 1. Clicar em **Gerenciar acesso** navega até o **Admin Console** de onde você tem acesso à instância Autor de um ambiente.
-
-   ![](assets/sys-admin3.png)
-
 
 ## Para clientes AMS existentes {#existing-aem}
 
