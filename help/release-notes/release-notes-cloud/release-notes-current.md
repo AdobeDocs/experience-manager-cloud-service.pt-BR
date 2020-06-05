@@ -2,9 +2,9 @@
 title: Notas de versão do Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de versão do Experience Manager para 2020.6.0
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1843'
 ht-degree: 7%
 
 ---
@@ -120,17 +120,12 @@ Treinar Tags inteligentes aprimoradas para obter mais um treinamento intuitivo p
 
 **Suporte para ingestão, pré-visualização e delivery de conteúdo 3D**
 
-As organizações agora podem armazenar e usar arquivos 3D nos ativos AEM. O usuário pode carregar, pré-visualização e aproveitar uma variedade de arquivos 3D principais, incluindo arquivos .obj, .stl, .gltf e .glb. Com a adição de [!DNL Dynamic Media], as experiências 3D podem ser configuradas e entregues por URLs agnósticos ou visualizadores. Isso inclui um Visualizador de experiência [!DNL Dynamic Media] 3D, o componente Visualizador 3D do Sites e a capacidade de fornecer arquivos 3D via [!DNL Dynamic Media] (AR/VR).
-
-<!-- TBD: Add link to the DM help article, if any. -->
+As organizações agora podem armazenar e usar arquivos 3D nos ativos AEM. O usuário pode carregar, pré-visualização e aproveitar uma variedade de arquivos 3D principais, incluindo arquivos .obj, .stl, .gltf e .glb. Com a adição de [!DNL Dynamic Media], as experiências 3D podem ser configuradas e entregues por URLs agnósticos ou visualizadores. Isso inclui um Visualizador de experiência [!DNL Dynamic Media] 3D, o componente Visualizador 3D do Sites e a capacidade de fornecer arquivos 3D via [!DNL Dynamic Media] (AR/VR). Consulte [Trabalhar com ativos 3D no Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 <!-- Hiding this as the GA is at a later date. 
-TBD: Add link to the AAL help article. 
-
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
-
+With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 -->
 
 **Aprimoramentos de acessibilidade**
@@ -141,18 +136,15 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 * Elementos da interface do usuário, controles e campos de formulário de entrada podem ser acessados usando o teclado.
 * Alteração na cor ou contraste de alguns elementos de interface para torná-los mais distinguíveis por usuários com visão limitada e sem percepção de cor. Por exemplo, os ativos agora têm o contraste apropriado nos ícones de classificação de estrelas na página [!UICONTROL Propriedades] e na visualização do cartão.
 
-<!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
-
 **Outras melhorias**
 
 A versão oferece os seguintes aprimoramentos adicionais:
 
-* Aprimoramentos de acessibilidade para a interface do usuário do Assets.
 * Capacidade de reprocessar ativos com perfis de processamento de ativos, dando aos usuários controle total do processo (executar processamento completo de ativos, apenas aplicar perfis de processamento específicos e decidir se o fluxo de trabalho de pós-processamento deve ser executado).
 * Os query de pesquisa retornam os resultados mais rapidamente agora quando a instância de cluster subjacente é reiniciada nos bastidores (a execução de pesquisa inicial pode durar mais tempo nesse caso antes).
-* Classifique por &quot;Nome&quot; ao exibir ativos na visualização de lista na interface Ativos e nos resultados da pesquisa.
-* Classificar em &quot;Criado&quot; (Data) ao exibir ativos na visualização de lista na interface do Assets e nos resultados da pesquisa.
-* Suporte para converter arquivos EPS em imagens.
+* Classifique por &quot;Nome&quot; ao exibir ativos na visualização de lista na interface Ativos e nos resultados da pesquisa. Consulte ativos [de](/help/assets/search-assets.md#sort)pesquisa.
+* Classificar em &quot;Criado&quot; (Data) ao exibir ativos na visualização de lista na interface do Assets e nos resultados da pesquisa. Consulte ativos [de](/help/assets/search-assets.md#sort)pesquisa.
+* Suporte para converter arquivos EPS em imagens usando microserviços de ativos.
 
 ### Correções de erros {#assets-bug-fixes}
 
