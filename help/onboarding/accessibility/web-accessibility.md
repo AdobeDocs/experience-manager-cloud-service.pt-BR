@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service e as diretrizes de acessibilidade na Web
-description: Uma introdução ao Adobe Experience Manager como um serviço em nuvem e as Diretrizes de acessibilidade da Web
-translation-type: tm+mt
+description: Uma introdução ao Adobe Experience Manager as a Cloud Service e às diretrizes de acessibilidade na Web
+translation-type: ht
 source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ O Adobe Experience Manager as a Cloud Service funciona com as [diretrizes](#wcag
 
 >[!NOTE]
 >
-> Consulte os relatórios de Conformidade [para acessibilidade das soluções](https://www.adobe.com/accessibility/compliance.html) da Adobe para obter mais detalhes.
+> Consulte os [Relatórios de conformidade para acessibilidade de soluções da Adobe](https://www.adobe.com/accessibility/compliance.html) para obter mais detalhes.
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
