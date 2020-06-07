@@ -1,11 +1,11 @@
 ---
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
-description: Usar o AEM como um serviço em nuvem para ajudar a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiências
-translation-type: tm+mt
+description: Usar o AEM as a Cloud Service para ajuda a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
+translation-type: ht
 source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '13955'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ Como introdução, o consórcio fornece uma série de seções e documentos de a
 * [Os documentos da WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 Além disso, consulte:
-* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
-* Os relatórios de Conformidade de [acessibilidade para as soluções](https://www.adobe.com/accessibility/compliance.html)da Adobe.
+* Nosso [Guia rápido para a WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
+* Os [Relatórios de conformidade para acessibilidade de soluções da Adobe](https://www.adobe.com/accessibility/compliance.html).
 
 <!-- 
 >* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
@@ -33,30 +33,30 @@ Além disso, consulte:
 As diretrizes são classificadas de acordo com os três níveis de conformidade: Nível A (o mais baixo), Nível AA e Nível AAA (o mais alto). Resumidamente, os níveis são definidos como apresentado a seguir:
 
 * **Nível A**: o site atinge um nível mínimo básico de acessibilidade. Para atingir esse nível, todos os Critérios de sucesso do Nível A são cumpridos.
-* **Nível AA:** Esse é um nível ideal de acessibilidade para se esforçar, no qual seu site atinge um nível básico de acessibilidade, para que seja acessível à maioria das pessoas na maioria das situações usando a maioria das tecnologias. Para atingir esse nível, todos os Critérios de sucesso do Nível A e Nível AA são cumpridos.
+* **Nível AA:** esse é um nível ideal de acessibilidade que você deve almejar, no qual seu site atinge um nível fundamental de acessibilidade, de forma a ser acessível para a maioria das pessoas na maior parte das situações usando a maioria das tecnologias. Para atingir esse nível, todos os Critérios de sucesso do Nível A e Nível AA são cumpridos.
 * **Nível AAA**: o site atinge um nível muito alto de acessibilidade. Para atingir esse nível, todos os Critérios de sucesso do Nível A, Nível AA e Nível AAA são cumpridos.
 
 Ao criar o seu site, é necessário determinar o nível global com o qual você gostaria que ele estivesse em conformidade.
 
-The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
+A seção a seguir apresenta as [camadas das Diretrizes da WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) com os critérios de sucesso relacionados aos [níveis de conformidade](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1) A e AA.
 
 >[!NOTE]
 >
 >Nesse documento são usados:
 >
->* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
->* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
+>* [Os nomes curtos das Diretrizes da WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
+>* [A numeração usada nas Diretrizes da WCAG 2.1](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) para auxiliar na referência cruzada com o site da WCAG.
 
 
-## Princípio 1: perceptível     {#principle-perceivable}
+## Princípio 1: perceptível       {#principle-perceivable}
 
 [Princípio 1: perceptível - As informações e os componentes da interface do usuário têm de ser apresentados aos usuários de formas perceptíveis.](https://www.w3.org/TR/WCAG/#perceivable)
 
-### Alternativas em texto (1.1)     {#text-alternatives}
+### Alternativas em texto (1.1)       {#text-alternatives}
 
 [Diretriz 1.1 Alternativas em texto: fornecer alternativas em texto para qualquer conteúdo não textual, para que seja possível alterá-lo para outras formas mais adequadas à necessidade do indivíduo, como impressão em caracteres ampliados, braille, fala, símbolos ou linguagem mais simples.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
-### Conteúdo não textual (1.1.1)     {#non-text-content}
+### Conteúdo não textual (1.1.1)       {#non-text-content}
 
 * Critério de Sucesso 1.1.1
 * Nível A
@@ -68,13 +68,13 @@ As informações em uma página da Web podem ser fornecidas em vários formatos 
 
 Um benefício adicional útil é que as alternativas em texto permitem que o conteúdo não textual seja indexado pela tecnologia do mecanismo de pesquisa.
 
-#### Como cumprir - Conteúdo não textual (1.1.1)     {#how-to-meet-non-text-content}
+#### Como cumprir - Conteúdo não textual (1.1.1)       {#how-to-meet-non-text-content}
 
-Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo Texto **** alternativo; consulte, por exemplo, a **[Imagem](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html)**do componente principal.
+Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo **Texto alternativo**. Por exemplo, veja o Componente principal **[Imagem](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html)**.
 
 >[!NOTE]
 >
->Alguns Componentes principais predefinidos, como o **[Carrossel](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/carousel.html)**, não fornecem um campo de Texto****alternativo para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo**Rótulo **(guia**[Acessibilidade](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** ) para o componente inteiro.
+>Alguns Componentes principais predefinidos, como **[Carrossel](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/carousel.html)**, não fornecem um campo**Texto alternativo **para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo**Rótulo **(guia**[Acessibilidade](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para o componente inteiro.
 >
 >Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte Adicionar suporte para elementos HTML e atributos adicionais).
 
@@ -84,7 +84,7 @@ Para gráficos estáticos, o requisito básico é o de proporcionar uma alternat
 >When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-Por padrão, o AEM requer que o campo **Texto alternativo** seja preenchido. If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
+Por padrão, o AEM requer que o campo **Texto alternativo** seja preenchido. Se a imagem for meramente decorativa e um texto alternativo não for necessário, será possível marcar a opção **A imagem é decorativa**.
 
 #### Criar boas alternativas de texto {#creating-good-text-alternatives}
 
@@ -97,7 +97,7 @@ Existem várias formas de conteúdo não textual, de modo que o valor da alterna
 * O texto alternativo não deve replicar o conteúdo fornecido no formulário de texto próximo à mesma página. Lembre-se que muitas imagens são ilustrações de pontos já abordados no texto de uma página, então é possível que já exista uma alternativa detalhada em texto.
 * Se o conteúdo não textual for um link para outra página ou documento e não houver nenhum outro texto que faça parte do mesmo link, então o texto alternativo da imagem deve indicar o destino do link e não descrever a imagem.
 * Se o conteúdo não textual estiver em um elemento de botão e não houver nenhum texto que faça parte do mesmo botão, então o texto alternativo da imagem deve indicar a funcionalidade do botão e não descrever a imagem.
-* É perfeitamente aceitável que uma imagem receba um texto alternativo vazio (nulo), mas somente se a imagem não precisar de texto alternativo (por exemplo, se for um gráfico meramente decorativo) ou se o texto equivalente já existir no texto da página.
+* É perfeitamente aceitável disponibilizar para uma imagem um texto alternativo vazio (nulo), mas apenas se ela não precisar de um texto alternativo (por exemplo, ela é um gráfico meramente decorativo) ou se o texto equivalente já existir no texto da página.
 
 <!--
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
@@ -106,11 +106,11 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 Tipos específicos de conteúdo não textual que necessitam de alternativas em texto podem incluir:
 
 * Fotos ilustrativas:
-São imagens de pessoas, objetos ou lugares. É importante pensar na função da foto na página e, geralmente, recomendável descrever o conteúdo da imagem, já que a tecnologia assistiva anunciará o tipo de elemento (por exemplo, `graphic` ou `image`); pode aumentar a clareza para usar `screenshot` ou `illustration` nas descrições de texto alternativo, mas isso depende do contexto. A consistência é um fator importante, uma decisão deve ser tomada para toda a equipe de criação e isso deve ser aplicado em toda a experiência do usuário.
+São imagens de pessoas, objetos ou lugares. É importante pensar na função da foto na página e, em geral, é recomendável descrever o conteúdo da imagem, já que a tecnologia de assistência anunciará o tipo de elemento (por exemplo, `graphic` ou `image`). Pode aumentar a clareza usar `screenshot` ou `illustration` nas descrições de texto alternativo, mas isso depende do contexto. A consistência é um fator importante. Uma decisão deve ser tomada para toda a equipe de criação, e isso deve ser aplicado à toda a experiência do usuário.
 * Ícones:
 São pequenos pictogramas (gráficos) que transmitem informações específicas. Eles devem ser usados de forma consistente em uma página e um site. Todas as instâncias do ícone em uma página ou um site devem ter a mesma alternativa em texto curta e sucinta, a menos que isso resulte em duplicação desnecessária do texto adjacente.
 * Tabelas e gráficos: geralmente representam dados numéricos. Dessa forma, uma opção para fornecer uma alternativa em texto pode ser incluir um breve resumo das principais tendências indicadas na tabela ou gráfico. Se necessário, também forneça uma descrição mais detalhada no texto usando o campo **Descrição** na guia de propriedades de imagem **Avançadas**. Além disso, você pode fornecer os dados de origem em forma de tabela em outro lugar na página ou no site.
-* Mapas, diagramas, fluxogramas: Para gráficos que fornecem dados espaciais (por exemplo, para suportar a descrição das relações entre objetos ou um processo), verifique se a mensagem principal é fornecida em formato de texto e se essa informação sobre o texto está posicionada perto de cada ponto de dados associado. Em mapas, fornecer um equivalente de texto completo provavelmente não será prático, mas se o mapa for fornecido como uma forma de ajudar as pessoas a encontrar o caminho para um determinado local, o texto alternativo da imagem do mapa poderá indicar brevemente o *Mapa de X* e, em seguida, fornecer direções para esse local no texto em outro lugar na página ou por meio do campo **Descrição** na guia **Avançado** do componente **Imagem**.
+* Mapas, diagramas, fluxogramas: para gráficos que fornecem dados espaciais (por exemplo, para suportar a descrição das relações entre objetos ou um processo), verifique se a mensagem principal é fornecida em formato de texto e se essa informação sobre o texto está posicionada perto de cada ponto de dados associado. Em mapas, fornecer um equivalente de texto completo provavelmente não será prático, mas se o mapa for fornecido como uma forma de ajudar as pessoas a encontrar o caminho para um determinado local, o texto alternativo da imagem do mapa poderá indicar brevemente o *Mapa de X* e, em seguida, fornecer direções para esse local no texto em outro lugar na página ou por meio do campo **Descrição** na guia **Avançado** do componente **Imagem**.
 * CAPTCHAs:
 Um CAPTCHA é um *teste de Turing público completamente automatizado para diferenciação entre computadores e humanos*. É uma verificação de segurança usada em páginas da Web para diferenciar os humanos de um software mal-intencionado, mas que pode causar barreiras de acessibilidade. São imagens que exigem que os usuários descrevam o que visualizam, a fim de passar por um teste de segurança. Fornecer uma alternativa em texto para a imagem, obviamente, não é possível, portanto, em vez disso, você terá de considerar as soluções alternativas não gráficas.
 O W3C fornece uma série de sugestões, como: cada uma dessas abordagens tem suas próprias vantagens e desvantagens.
@@ -123,7 +123,7 @@ O W3C fornece uma série de sugestões, como: cada uma dessas abordagens tem sua
 >
 >Deve haver um nível adequado de contraste entre o plano de fundo e o texto de primeiro plano; isso é abordado com mais detalhes na seção [Contraste (Mínimo) (1.4.3)](#contrast-minimum).
 
-#### Mais informações - Conteúdo não contextual (1.1.1)     {#more-information-non-text-content}
+#### Mais informações - Conteúdo não contextual (1.1.1)       {#more-information-non-text-content}
 
 * [Noções sobre o Critério de sucesso 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Como cumprir o Critério de sucesso 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
@@ -133,11 +133,11 @@ O W3C fornece uma série de sugestões, como: cada uma dessas abordagens tem sua
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
 -->
 
-### Mídia com base no tempo (1.2)     {#time-based-media}
+### Mídia com base no tempo (1.2)       {#time-based-media}
 
 [Diretriz de mídia com base no tempo 1.2: fornece alternativas para a mídia com base no tempo.](https://www.w3.org/TR/WCAG/#time-based-media)
 
-This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be prerecorded or a live stream.
+Trata-se de um conteúdo da Web que é *baseado no tempo*. Isso abrange o conteúdo que o usuário pode reproduzir (como vídeo, áudio e conteúdo animado) e pode ser pré-gravado ou ter transmissão ao vivo.
 
 ### Apenas áudio e apenas vídeo (pré-gravado) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
@@ -161,10 +161,10 @@ Fornecer essas informações em um formato diferente, como texto (ou áudio para
 
 #### Como cumprir - Apenas áudio e apenas vídeo (pré-gravado) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
-* Se o conteúdo for áudio pré-gravado sem vídeo (como um podcast):
+* Se o conteúdo for um áudio pré-gravado sem vídeo (como um podcast):
    * Forneça um link imediatamente antes ou depois do conteúdo para obter uma transcrição do texto do conteúdo de áudio.
 A transcrição deve ser uma página HTML com um equivalente em texto de todo o conteúdo falado e não-falado importante, além de uma indicação de quem está falando, uma descrição do cenário, expressões vocais e uma descrição de qualquer outro áudio significativo.
-* Se o conteúdo for uma animação ou um vídeo pré-gravado sem áudio:
+* Se o conteúdo for uma animação ou vídeo pré-gravado sem áudio:
    * Forneça um link imediatamente antes ou depois do conteúdo para uma descrição de texto equivalente das informações fornecidas pelo vídeo
    * Ou uma descrição de áudio equivalente em um formato de áudio normalmente utilizado, como MP3.
 
@@ -172,9 +172,9 @@ A transcrição deve ser uma página HTML com um equivalente em texto de todo o 
 >
 >Se o conteúdo de áudio ou vídeo for fornecido como uma alternativa ao conteúdo que já existe em outro formato na mesma página da Web, talvez não seja necessária uma alternativa adicional.
 >
->As orientações, [que compreendem o WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html), fornecem mais informações.
+>As orientações em [Entenda a WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html) fornecem mais informações.
 
-Inserir multimídia em suas páginas da Web do AEM é semelhante a inserir uma imagem. No entanto, como o conteúdo multimídia é muito maior do que uma imagem estática, há diversas configurações e opções para controlar a forma como a multimídia é reproduzida.
+Inserir multimídia em suas páginas da Web do AEM é semelhante à inserção de uma imagem. No entanto, como o conteúdo multimídia é muito maior do que uma imagem estática, há diversas configurações e opções para controlar a forma como a multimídia é reproduzida.
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ Inserir multimídia em suas páginas da Web do AEM é semelhante a inserir uma i
 
 #### Propósito - Legendas (pré-gravadas) (1.2.2) {#purpose-captions-prerecorded}
 
-As pessoas com deficiência auditiva ou deficiente auditiva não conseguirão ou terão grandes dificuldades para acessar o conteúdo de áudio. As legendas são equivalentes em texto para áudio falado e não falado, exibidas na tela no momento apropriado durante o vídeo. Elas permitem que as pessoas que não conseguem ouvir o áudio entendam o que está acontecendo.
+Os indivíduos surdos ou com deficiência auditiva não conseguirão ou terão grande dificuldade ao acessar o conteúdo de áudio. As legendas são equivalentes em texto para áudio falado e não falado, exibidas na tela no momento adequado durante o vídeo. Elas permitem que os indivíduos que não conseguem ouvir o áudio entendam o que está acontecendo.
 
 #### Como cumprir - Legendas (pré-gravadas) (1.2.2) {#how-to-meet-captions-prerecorded}
 
@@ -204,11 +204,11 @@ As legendas podem ser:
 
 Use as legendas ocultas sempre que possível, já que proporcionam ao usuário a escolha de visualizar ou não as legendas. 
 
-For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](https://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Prerecorded) (1.2.2)](#more-information-captions-prerecorded). Certifique-se de fornecer uma nota ou ativar o recurso de legenda no player de vídeo para informar aos usuários que as legendas estão disponíveis para o vídeo.
+Para as legendas ocultas, será necessário criar e fornecer um arquivo de legenda sincronizada em um formato adequado (como [SMIL](https://www.w3.org/AudioVideo/)), junto com o arquivo de vídeo (os detalhes sobre como proceder estão fora do escopo desse guia, mas fornecemos links para alguns tutoriais em [Mais informações - Legendas (pré-gravadas) (1.2.2)](#more-information-captions-prerecorded). Certifique-se de fornecer uma nota ou ativar o recurso de legenda no player de vídeo para informar aos usuários que legendas estão disponíveis para o vídeo.
 
 Se você precisar usar as legendas abertas, insira o texto na faixa de vídeo. Essa ação pode ser realizada utilizando aplicativos de edição de vídeo que permitem a sobreposição de títulos no vídeo.
 
-#### More Information - Captions (Prerecorded) (1.2.2) {#more-information-captions-prerecorded}
+#### Mais informações - Legendas (pré-gravadas) (1.2.2) {#more-information-captions-prerecorded}
 
 * [Noções sobre o Critério de sucesso 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [Como cumprir o Critério de sucesso 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
@@ -238,7 +238,7 @@ Existem duas abordagens que podem ser adotadas para atender a esse critério de 
       * Isso permite que os usuários alternem entre a faixa de áudio existente (que *não* contém uma descrição de áudio) e a nova faixa de áudio (que *contém* uma descrição de áudio).
       * Isso evita a interrupção para os usuários que não precisam de descrição adicional.
    * Crie uma segunda versão do conteúdo de vídeo para permitir descrições de áudio estendidas. Isso reduz as dificuldades associadas à disponibilização de descrições de áudio detalhadas em lacunas entre o diálogo existente, pausando temporariamente o áudio e o vídeo em pontos adequados. Como resultado, uma descrição de áudio muito maior pode ser disponibilizada, antes que a ação inicie novamente. Como no exemplo anterior, essa é a melhor opção fornecida como uma faixa de áudio extra opcional, a fim de evitar a interrupção para os usuários que não precisam de uma descrição adicional.
-1. Fornecer uma transcrição de texto que seja um equivalente de texto adequado dos elementos visuais e de áudio do vídeo ou animação. Tal deverá incluir, se for caso disso, uma indicação de quem está a falar, uma descrição do cenário, quaisquer eventos ou informações apresentadas visualmente e expressões vocais. Dependendo da extensão, você pode colocar a transcrição na mesma página que o vídeo ou a animação, ou em uma página separada; caso escolha a última opção, forneça um link para a transcrição ao lado do vídeo ou da animação.
+1. Fornecer uma transcrição de texto que seja um equivalente de texto adequado dos elementos visuais e de áudio do vídeo ou animação. Isso deve incluir, conforme o caso, uma indicação de quem está falando, uma descrição do cenário, quaisquer eventos ou informações apresentados visualmente e expressões vocais. Dependendo da extensão, você pode colocar a transcrição na mesma página que o vídeo ou a animação, ou em uma página separada; caso escolha a última opção, forneça um link para a transcrição ao lado do vídeo ou da animação.
 
 Detalhes exatos de como criar um vídeo descrito por áudio estão fora do escopo desse guia. A criação de descrições de vídeo e áudio pode ser demorada, mas outros produtos da Adobe podem ajudar a realizar essas tarefas.
 
@@ -251,15 +251,15 @@ Detalhes exatos de como criar um vídeo descrito por áudio estão fora do escop
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
-### Legendas (ao vivo) (1.2.4)          {#captions-live}
+### Legendas (ao vivo) (1.2.4)              {#captions-live}
 
 * Critério de sucesso 1.2.4
 * Nível AA
 * Legendas (ao vivo): são fornecidas legendas para todo o conteúdo de áudio ao vivo na mídia sincronizada.
 
-#### Propósito - Legendas (ao vivo) (1.2.4)     {#purpose-captions-live}
+#### Propósito - Legendas (ao vivo) (1.2.4)       {#purpose-captions-live}
 
-This success criterion is identical to [Captions (Prerecorded)](#captions-prerecorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
+Esse critério de sucesso é idêntico às [Legendas (pré-gravadas)](#captions-prerecorded), já que aborda as barreiras de acessibilidade enfrentadas pelos indivíduos surdos ou com deficiências auditivas, exceto que esse critério de sucesso lida com as apresentações ao vivo, como webcasts.
 
 #### Como cumprir - Legendas (ao vivo) (1.2.4) {#how-to-meet-captions-live}
 
@@ -269,9 +269,9 @@ Instruções detalhadas estão além do escopo desse documento, mas os seguintes
 
 * [WebAIM: legendagem em tempo real](https://www.webaim.org/techniques/captions/realtime.php)
 
-* [Projeto AccessComputing (Universidade de Washington): As legendas podem ser geradas automaticamente usando o reconhecimento de voz?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
+* [Projeto AccessComputing (University of Washington): as legendas podem ser geradas automaticamente usando reconhecimento de voz?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
-#### Mais informações - Legendas (ao vivo) (1.2.4)     {#more-information-captions-live}
+#### Mais informações - Legendas (ao vivo) (1.2.4)       {#more-information-captions-live}
 
 * [Noções sobre o Critério de sucesso 1.2.4](https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html)
 * [Como cumprir o Critério de sucesso 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/#captions-live)
@@ -295,7 +295,7 @@ Siga as orientações fornecidas para a [Descrição de áudio ou alternativa de
 * [Noções sobre o Critério de sucesso 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [Como cumprir o Critério de sucesso 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### Adaptável (1.3)     {#adaptable}
+### Adaptável (1.3)       {#adaptable}
 
 [Diretriz adaptável 1.3: criar conteúdos que possam ser apresentados de diferentes formas (por exemplo, um layout mais simples) sem perder as informações ou a estrutura.](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -303,36 +303,36 @@ Essa diretriz abrange os requisitos necessários para auxiliar os indivíduos qu
 
 * pode não ser capaz de acessar as informações apresentadas por um autor na apresentação padrão desse conteúdo (por exemplo, um layout de várias colunas ou uma página com uso intenso de cores e/ou imagens).
 
-* pode usar apenas áudio ou exibição visual alternativa, como texto grande ou alto contraste.
+* usam uma exibição visual alternativa ou apenas de áudio, como um texto grande ou contraste alto.
 
-### Informações e Relações (1.3.1)          {#info-and-relationships}
+### Informações e Relações (1.3.1)              {#info-and-relationships}
 
 * Critério de Sucesso 1.3.1
 * Nível A
 * Informações e Relações: as informações, a estrutura e as relações transmitidas através de apresentação podem ser determinadas de forma programática ou disponíveis no texto.
 
-#### Propósito - Informações e Relações (1.3.1)     {#purpose-info-and-relationships}
+#### Propósito - Informações e Relações (1.3.1)       {#purpose-info-and-relationships}
 
-Many assistive technologies used by people with disabilities rely on structural information in order to effectively display or *understand* content. Essas informações estruturais podem assumir a forma de cabeçalhos de página, linha de tabela e cabeçalhos de coluna e tipos de lista. Por exemplo, um leitor de tela pode permitir que um usuário navegue por uma página de um cabeçalho a outro. No entanto, quando o conteúdo da página parece ter a estrutura somente por meio de um estilo visual, em vez do HTML subjacente, então não há informações estruturais disponíveis para as tecnologias de assistência, o que limita a sua capacidade para auxiliar a navegação mais fácil.
+Muitas tecnologias de assistência utilizadas por indivíduos com deficiência contam com informações estruturais, a fim de exibir ou *compreender* o conteúdo de forma eficiente. Essas informações estruturais podem assumir a forma de cabeçalhos de página, linha de tabela e cabeçalhos de coluna e tipos de lista. Por exemplo, um leitor de tela pode permitir que um usuário navegue por uma página de um cabeçalho a outro. No entanto, quando o conteúdo da página parece ter a estrutura somente por meio de um estilo visual, em vez do HTML subjacente, então não há informações estruturais disponíveis para as tecnologias de assistência, o que limita a sua capacidade para auxiliar a navegação mais fácil.
 
-Este critério de sucesso existe para garantir que essas informações estruturais sejam fornecidas de forma programática por meio do HTML ou de outras técnicas de codificação, de modo que os navegadores e as tecnologias de assistência possam acessar e aproveitar as informações.
+Esse critério de sucesso existe para garantir que a informação estrutural seja fornecida programaticamente via HTML, ou outras técnicas de codificação, de modo que os navegadores e as tecnologias de assistência possam acessar e aproveitar as informações.
 
-#### Como cumprir - Informações e Relações (1.3.1)     {#how-to-meet-info-and-relationships}
+#### Como cumprir - Informações e Relações (1.3.1)       {#how-to-meet-info-and-relationships}
 
-O AEM facilita a construção de conteúdo da Web com significado semântico usando os elementos HTML apropriados. Abra o conteúdo da página no RTE (um componente de Texto) e use o menu **Formatar parágrafo** (símbolo de parágrafo) para especificar o elemento estrutural adequado (por exemplo, parágrafo, cabeçalho etc.).
+O AEM facilita a construção de conteúdo da Web semanticamente significativo usando os elementos HTML apropriados. Abra o conteúdo da página no RTE (um componente de Texto) e use o menu **Formatar parágrafo** (símbolo de parágrafo) para especificar o elemento estrutural adequado (por exemplo, parágrafo, cabeçalho etc.).
 
-É possível garantir que as páginas da Web tenham a estrutura apropriada, usando os seguintes elementos, quando aplicável:
+É possível verificar se as suas páginas da Web têm a estrutura adequada, usando os seguintes elementos, quando aplicável:
 
-* **Cabeçalhos:** Desde que você tenha os recursos de acessibilidade do RTE ativados, os níveis de cabeçalho da página do AEM oferta 3. É possível usá-los para identificar seções e subseções de conteúdo. O cabeçalho 1 é o nível mais alto, o Cabeçalho 3 o mais baixo. O administrador do sistema pode configurar o sistema para permitir o uso de mais níveis de cabeçalho.
+* **Cabeçalhos:** desde que você tenha os recursos de acessibilidade do RTE ativados, o AEM oferece três níveis de cabeçalho de página. É possível usá-los para identificar seções e subseções de conteúdo. O cabeçalho 1 é o nível mais alto, o Cabeçalho 3 o mais baixo. O administrador do sistema pode configurar o sistema para permitir o uso de mais níveis de cabeçalho.
 
-* **Listas**: Você pode usar o HTML para especificar três tipos diferentes de listas:
+* **Listas**: você pode usar HTML para especificar três tipos diferentes de listas:
    * O elemento `<ul>` é usado para listas *desordenadas* (com marcadores). Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista de marcadores**.
    * O elemento `<ol>` é usado para as listas *numeradas*. Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista numerada** .
    Caso deseje alterar o conteúdo existente em um tipo de lista específica, destaque o texto e selecione o tipo de lista adequado. Como no exemplo anterior, que mostra como o texto do parágrafo é inserido, os elementos desejados da lista são adicionados automaticamente ao seu HTML.
 
    No modo de tela cheia, os ícones **Lista com marcadores** e **Lista numerada** ficam visíveis. Quando não estiver no modo de tela cheia, as duas opções estarão disponíveis no ícone **Listas**.
 
-* **Tabelas**: Tabelas de dados devem ser identificadas usando elementos de tabela HTML:
+* **Tabelas**: Tabelas de dados devem ser identificadas usando os elementos da tabela de HTML:
    * um elemento `<table>`
    * um elemento `<tr>` para cada linha da tabela
    * um elemento `<th>` para cada linha e cabeçalho da coluna
@@ -435,15 +435,15 @@ Siga as orientações em [Como cumprir o Critério de sucesso 1.3.2](https://www
 * [Noções sobre o Critério de sucesso 1.3.2](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)
 * [Como cumprir o Critério de sucesso 1.3.2](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
 
-### Características sensoriais (1.3.3)          {#sensory-characteristics}
+### Características sensoriais (1.3.3)              {#sensory-characteristics}
 
 * Critério de Sucesso 1.3.3
 * Nível A
 * Características sensoriais: as instruções fornecidas para compreender e utilizar o conteúdo não dependem somente das características sensoriais dos componentes, como forma, tamanho, localização visual, orientação ou som.
 
-#### Propósito - Características sensoriais (1.3.3)     {#purpose-sensory-characteristics}
+#### Propósito - Características sensoriais (1.3.3)       {#purpose-sensory-characteristics}
 
-Os designers muitas vezes se concentram nos recursos de design visual, como cor, forma, estilo de texto ou uma parte da posição absoluta ou relativa do conteúdo ao apresentar as informações. Essas podem ser técnicas de design muito poderosas na transmissão de informações (e podem melhorar a acessibilidade geral para usuários deficientes visuais com necessidades de acessibilidade cognitiva), mas pessoas cegas ou com deficiências visuais podem não conseguir acessar informações que exigem a identificação visual de atributos como posição, cor ou forma.
+Os designers muitas vezes se concentram nos recursos de design visual, como cor, forma, estilo de texto ou uma parte da posição absoluta ou relativa do conteúdo ao apresentar as informações. Estas podem ser técnicas de design muito poderosas na transmissão de informações (e podem melhorar a acessibilidade geral para usuários com necessidades de acessibilidade cognitiva), mas pessoas cegas ou deficientes visuais podem não conseguir acessar informações que exigem a identificação visual de atributos como posição, cor ou forma.
 
 Da mesma forma, as informações que exigem a distinção entre sons diferentes (por exemplo, o conteúdo falado masculino ou feminino) vão apresentar barreiras de acessibilidade para os indivíduos com deficiência auditiva, se não estiverem refletidas em nenhuma alternativa em texto para o conteúdo de áudio.
 
@@ -451,7 +451,7 @@ Da mesma forma, as informações que exigem a distinção entre sons diferentes 
 >
 >Para os requisitos relacionados às alternativas de cor, consulte [Uso de cor](#use-of-color).
 
-#### Como cumprir - Características sensoriais (1.3.3)     {#how-to-meet-sensory-characteristics}
+#### Como cumprir - Características sensoriais (1.3.3)       {#how-to-meet-sensory-characteristics}
 
 Certifique-se de que todas as informações baseadas em características visuais do conteúdo da página também são apresentadas em um formato alternativo.
 
@@ -462,16 +462,16 @@ Certifique-se de que todas as informações baseadas em características visuais
 >
 >A utilização dos termos descritivos será aceitável se estes forem entendidos como relevantes em um contexto não visual. Por exemplo, normalmente é aceitável o uso dos termos *acima* e *abaixo,* já que sugerem, respectivamente, um conteúdo antes e depois de um item específico; isso ainda faria sentido com o conteúdo falado em voz alta.
 
-#### Mais informações - Características sensoriais (1.3.3)     {#more-information-sensory-characteristics}
+#### Mais informações - Características sensoriais (1.3.3)       {#more-information-sensory-characteristics}
 
 * [Noções sobre o Critério de sucesso 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Como cumprir o Critério de sucesso 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### Discernível (1.4)     {#distinguishable}
+### Discernível (1.4)       {#distinguishable}
 
 [Diretriz 1.4 Discernível: facilitar a visualização e a audição de conteúdos aos usuários, incluindo a separação do primeiro plano e do plano de fundo. ](https://www.w3.org/TR/WCAG/#distinguishable)
 
-### Utilização de cor (1.4.1)          {#use-of-color}
+### Utilização de cor (1.4.1)              {#use-of-color}
 
 * Critério de Sucesso 1.4.1
 * Nível A
@@ -481,7 +481,7 @@ Certifique-se de que todas as informações baseadas em características visuais
 >
 >Esse critério de sucesso aborda especificamente a percepção da cor. Outras formas de percepção são abordadas na seção [Adaptável (1.3)](#adaptable); incluindo o acesso programático à cor e outras codificações de apresentação visual.
 
-#### Propósito - Utilização de cor (1.4.1)     {#purpose-use-of-color}
+#### Propósito - Utilização de cor (1.4.1)       {#purpose-use-of-color}
 
 A cor é, obviamente, uma forma eficaz de melhorar o apelo estético das páginas da Web e também é útil na transmissão de informações. No entanto, há uma série de deficiências visuais, da cegueira ao daltonismo, o que significa que algumas pessoas não conseguem distinguir entre certas cores. disponibilizar informações. 
 
@@ -489,15 +489,15 @@ Por exemplo, um indivíduo com daltonismo não conseguirá distinguir entre tons
 
 Além disso, a cor pode não ser percebida por indivíduos que usam navegadores somente de texto, dispositivos com visor monocromático ou que exibem uma impressão em preto e branco da página.
 
-Uma outra consideração é o estado *selecionado* para um elemento de interface (por exemplo, guias, botões de alternância, entre outros), que precisa ser transmitido de alguma forma que não seja apenas com cor e além de apenas uma apresentação visual. Para esses elementos, o uso adicional de padrões, formas e informações programáticas é útil ao criar uma experiência do usuário totalmente inclusiva que não depende de um sentido específico.
+Uma outra consideração é o estado *selecionado* de um elemento de interface (por exemplo, guias, botões de alternância, entre outros), que precisa ser transmitido de alguma forma que não seja apenas com cor e além de apenas uma apresentação visual. Para esses elementos, o uso adicional de padrões, formas e informações programáticas é útil ao criar uma experiência do usuário totalmente inclusiva que não depende de um sentido específico.
 
-#### Como cumprir - Utilização de cor (1.4.1)     {#how-to-meet-use-of-color}
+#### Como cumprir - Utilização de cor (1.4.1)       {#how-to-meet-use-of-color}
 
 Sempre que a cor for usada para transmitir informações, certifique-se de que a informação está disponível, sem a necessidade da visualização das cores.
 
 Por exemplo, verifique se as informações fornecidas através das cores também estão evidentes no texto.
 
-Se a cor for usada como dica para fornecer informações, você deve fornecer uma dica visual adicional, como a alteração do estilo (por exemplo, negrito, itálico) ou da fonte. Isso ajuda as pessoas com pouca visão ou daltonismo a identificar as informações. No entanto, não é possível depender dessas opções completamente, uma vez que isso não ajudará os indivíduos que não conseguem visualizar nada na página. Portanto, é (às vezes) útil fornecer texto oculto ou usar soluções programáticas, como o pacote de padrões [da Web para aplicativos](https://www.w3.org/WAI/standards-guidelines/aria/)acessíveis de Rich Internet (ARIA), para transmitir essas informações a usuários sem visão.
+Se a cor for usada como dica para fornecer informações, você deve fornecer uma dica visual adicional, como a alteração do estilo (por exemplo, negrito, itálico) ou da fonte. Isso ajuda as pessoas com pouca visão ou daltonismo a identificar as informações. No entanto, não é possível depender dessas opções completamente, uma vez que isso não ajudará os indivíduos que não conseguem visualizar nada na página. Portanto, é (às vezes) útil fornecer texto oculto ou usar soluções programáticas, como o [pacote de padrões da Web ARIA (Accessible Rich Internet Applications)](https://www.w3.org/WAI/standards-guidelines/aria/), para transmitir essas informações a usuários sem visão.
 
 #### Mais informações - Utilização de cor (1.4.1) {#more-information-use-of-color}
 
@@ -512,13 +512,13 @@ Se a cor for usada como dica para fornecer informações, você deve fornecer um
 
 #### Propósito - Controle de áudio (1.4.2) {#purpose-audio-control}
 
-Os indivíduos que usam software de leitura de tela podem achar difícil ouvir a saída da fala se houver outra reprodução de áudio ao mesmo tempo. Essa dificuldade é exacerbada quando a saída de voz do leitor de tela é baseada em software (como a maioria é hoje) e é controlada pelo mesmo controle de volume do som. Além disso, algumas pessoas com deficiências cognitivas e pessoas que são neurodivergentes podem ter sensibilidade sonora. Esses indivíduos acharão qualquer incapacidade de alterar o nível de volume no conteúdo de áudio bastante perturbador.
+Os indivíduos que usam software de leitura de tela podem achar difícil ouvir a saída da fala se houver outra reprodução de áudio ao mesmo tempo. Essa dificuldade é exacerbada quando a saída de voz do leitor de tela é baseada em software (como a maioria é hoje) e é controlada pelo mesmo controle de volume do som. Além disso, algumas pessoas com deficiências cognitivas e neurodivergentes podem ter sensibilidade ao som. Essas pessoas considerarão qualquer incapacidade de alterar o nível do volume do conteúdo de áudio bastante perturbadora.
 
 Portanto, é importante que o usuário possa desligar o som de fundo.
 
 >[!NOTE]
 >
->O controle do volume inclui a capacidade de reduzir seu volume para zero.
+>Ter controle do volume inclui a capacidade de reduzir seu volume para zero.
 
 #### Como cumprir - Controle de áudio (1.4.2) {#how-to-meet-audio-control}
 
@@ -529,19 +529,19 @@ Siga as orientações em [Como cumprir o Critério de sucesso 1.4.2](https://www
 * [Noções sobre o Critério de sucesso 1.4.2](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
 * [Como cumprir o Critério de sucesso 1.4.2](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)
 
-### Contraste (Mínimo) (1.4.3)     {#contrast-minimum}
+### Contraste (Mínimo) (1.4.3)       {#contrast-minimum}
 
 * Critério de Sucesso 1.4.3
 * Nível AA
 * Contraste (Mínimo): a apresentação visual e as imagens do texto têm uma relação de contraste de, no mínimo, 4.5:1, exceto para o seguinte:
    * Texto ampliado: o texto ampliado e as imagens compostas por texto ampliado têm uma relação de contraste de, no mínimo, 3:1.
-   * Incidental: Text or images of text that are part of an inactive user interface component, that are [pure decoration](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+   * Incidental: o texto ou as imagens de texto que fazem parte de um componente de interface de usuário inativo, que são [meramente decorativos](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), e não estão visíveis para ninguém ou que são parte de uma imagem que inclui outro conteúdo visual significativo, não têm requisito de contraste.
    * Logotipos: o texto que faz parte de um logotipo ou marca comercial não tem requisito de contraste.
    >[!NOTE]
    >
-   >Consulte [Compreensão do contraste](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) não textual para obter mais informações, para ajudar a garantir que os autores de conteúdo entendam os requisitos adicionais em relação a elementos não textuais (incluindo ícones, elementos de interface, entre outros).
+   >Consulte [Compreensão do contraste não textual](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) para obter mais informações, para ajudar a garantir que os autores de conteúdo entendam os requisitos adicionais sobre elementos não textuais (incluindo ícones, elementos de interface, entre outros).
 
-#### Propósito - Contraste (Mínimo) (1.4.3)     {#purpose-contrast-minimum}
+#### Propósito - Contraste (Mínimo) (1.4.3)       {#purpose-contrast-minimum}
 
 Os indivíduos com certas deficiências visuais podem não conseguir distinguir entre determinados pares de cores com baixo contraste. Problemas de acessibilidade podem ocorrer para esses indivíduos, se:
 
@@ -552,7 +552,7 @@ Os indivíduos com certas deficiências visuais podem não conseguir distinguir 
 >
 >O texto usado exclusivamente para fins decorativos está excluído desse critério de sucesso.
 
-#### Como cumprir - Contraste (Mínimo) (1.4.3)     {#how-to-meet-contrast-minimum}
+#### Como cumprir - Contraste (Mínimo) (1.4.3)       {#how-to-meet-contrast-minimum}
 
 Verifique se o texto contrasta o suficiente com o plano de fundo. As relações de contraste dependem do tamanho e do estilo do texto em questão:
 
@@ -564,15 +564,15 @@ Verifique se o texto contrasta o suficiente com o plano de fundo. As relações 
 >
 >Lembre-se de que as fontes podem diferir na forma como renderizam o tamanho equivalente de PT/PX/EM.
 >
->Recomenda-se usar bom senso e erro ao lado da legibilidade e usabilidade ao selecionar as fontes e o dimensionamento apropriados para o conteúdo da Web.
+>Recomenda-se usar bom senso e pecar a favor da legibilidade e da usabilidade ao selecionar as fontes e o dimensionamento apropriados para o conteúdo da Web.
 
 >[!NOTE]
 >
 >Os seguintes sites podem ajudar com conversões para outras unidades:
 >
->* [Calculadora Px para Em - Omni](https://www.omnicalculator.com/conversion/px-to-em)
->* [Conversão do tamanho da fonte: pixel-point-em-rem-percentual](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: Conversão de PX para EM simplificada](http://pxtoem.com)
+>* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
+>* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
+>* [PMtoEM.com: PX to EM conversion made simple](http://pxtoem.com)
 
 
 Para verificar as relações de contraste, use uma ferramenta de contraste em cores, como o [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) ou o [verificador de contraste em cores do WebAIM](https://www.webaim.org/resources/contrastchecker/). Essas ferramentas permitem que você verifique os pares de cores e informe quaisquer problemas de contraste.
@@ -581,7 +581,7 @@ De forma alternativa, se você estiver menos preocupado sobre como especificar a
 
 Se não for possível atender aos níveis de contraste recomendados, será necessário fornecer um link para uma versão alternativa equivalente da página (que não tenha problemas de contraste de cor), ou permitir que o usuário ajuste o contraste do esquema de cores da página de acordo com as suas próprias necessidades.
 
-#### Mais informações - Contraste (Mínimo) (1.4.3)     {#more-information-contrast-minimum}
+#### Mais informações - Contraste (Mínimo) (1.4.3)       {#more-information-contrast-minimum}
 
 * [Noções sobre o Critério de sucesso 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 * [Como cumprir o Critério de sucesso 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
@@ -598,14 +598,14 @@ O propósito deste Critério de sucesso é garantir que o texto renderizado visu
 
 #### Como cumprir - Redimensionar texto (1.4.4) {#how-to-meet-resize-text}
 
-Além de seguir as diretrizes em [Como cumprir o Critério de sucesso 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) , você pode incentivar os autores de conteúdo a usar larguras e alturas fluidas e flexíveis em seus designs de página e tamanhos de fonte (por exemplo, Web Design responsivo) para permitir que os leitores possam redimensionar o texto.
+Além de seguir as diretrizes em [Como atender ao critério para o sucesso 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text), você pode incentivar os autores de conteúdo a usar larguras e alturas fluidas e flexíveis em seus designs de página e tamanhos de fonte (por exemplo, web design responsivo) para permitir que os leitores possam redimensionar o texto.
 
 #### Mais informações - Redimensionar texto (1.4.4) {#more-information-resize-text}
 
 * [Noções sobre o Critério de sucesso 1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
 * [Como cumprir o Critério de sucesso 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
 
-### Imagens de texto (1.4.5)     {#images-of-text}
+### Imagens de texto (1.4.5)       {#images-of-text}
 
 * Critério de Sucesso 1.4.5
 * Nível AA
@@ -617,20 +617,20 @@ Além de seguir as diretrizes em [Como cumprir o Critério de sucesso 1.4.4](htt
 >
 >Os logotipos (texto que faz parte de um logotipo ou marca comercial) são considerados fundamentais.
 
-#### Propósito - Imagens de texto (1.4.5)     {#purpose-images-of-text}
+#### Propósito - Imagens de texto (1.4.5)       {#purpose-images-of-text}
 
 As imagens de texto são usadas, frequentemente, quando um estilo de texto específico é o preferido; por exemplo, um logotipo ou se o texto foi gerado de uma outra fonte (por exemplo, uma verificação de um documento em papel). No entanto, em comparação com o texto apresentado em HTML e o estilo usando CSS, as imagens de texto não têm flexibilidade para mudar o tamanho ou aparência, o que pode ser necessário para os indivíduos com deficiência visual ou dificuldade de leitura.
 
-#### Como cumprir - Imagens de texto (1.4.5)     {#how-to-meet-images-of-text}
+#### Como cumprir - Imagens de texto (1.4.5)       {#how-to-meet-images-of-text}
 
 Se as imagens de texto tiverem que ser utilizadas, use o CSS para substituir as imagens de texto pelo texto equivalente em HTML, para que o texto seja disponibilizado de forma personalizada. Para ver um exemplo, consulte o [C30: usar o CSS para substituir o texto por imagens de texto e fornecer controles de interface do usuário para fazer a alteração](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
 
-#### Mais informações - Imagens de texto (1.4.5)     {#more-information-images-of-text}
+#### Mais informações - Imagens de texto (1.4.5)       {#more-information-images-of-text}
 
 * [Noções sobre o Critério de sucesso 1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
 * [Como cumprir o Critério de sucesso 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
 
-## Princípio 2: operável     {#principle-operable}
+## Princípio 2: operável       {#principle-operable}
 
 [Princípio 2: operável - os componentes da interface de usuário e a navegação precisam ser operáveis.](https://www.w3.org/TR/WCAG/#operable)
 
@@ -669,7 +669,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 2.1.1](https://www
 
 O propósito deste Critério de sucesso é garantir que o conteúdo não *trava* o foco do teclado em subseções de conteúdo em uma página da Web. Esse é um problema comum quando vários formatos são combinados em uma página e renderizados usando plug-ins ou aplicativos incorporados.
 
-Pode haver momentos em que a funcionalidade da página da Web restrinja o foco a uma subseção do conteúdo (por exemplo, uma caixa de diálogo modal). Nesses casos, você deve fornecer um método para que um usuário possa sair dessa subseção de conteúdo (por exemplo, a tecla ESC fecha a caixa de diálogo modal ou um botão Fechar fecha a caixa de diálogo modal).
+Pode haver momentos em que a funcionalidade da página da Web restringe o foco a uma subseção do conteúdo (por exemplo, uma caixa de diálogo modal). Nesses casos, você deve fornecer um método para que um usuário possa sair dessa subseção de conteúdo (por exemplo, a tecla ESC fecha a caixa de diálogo modal ou um botão Fechar fecha a caixa de diálogo modal).
 
 #### Como cumprir - Nenhuma armadilha de teclado (2.1.2) {#how-to-meet-no-keyboard-trap}
 
@@ -694,7 +694,7 @@ Isso garante que os usuários tenham tempo suficiente para ler e agir.
 
 #### Propósito - Tempo ajustável (2.2.1) {#purpose-timing-adjustable}
 
-O propósito deste Critério de sucesso é garantir que os usuários portadores de deficiência disponham do tempo adequado para interagir com o conteúdo da Web, sempre que possível. Pessoas com deficiências como cegueira, visão baixa, deficiências de destreza e limitações cognitivas podem precisar de mais tempo para ler o conteúdo ou executar funções como preencher formulários online. Se as funções da Web dependerem de tempo, será difícil para alguns usuários executar a ação necessária antes que ocorra um limite de tempo. Isso pode tornar o serviço inacessível para eles. Projetar funções que não dependem do tempo ajudará as pessoas com deficiências a concluírem essas funções. Fornecer opções para desativar os limites de tempo, personalizar a duração dos limites de tempo ou solicitar mais tempo antes de ocorrer um limite de tempo ajuda os usuários que precisam de mais tempo do que o esperado para concluírem com êxito as tarefas. Essas opções são listadas na ordem que será mais útil para o usuário. Desativar os limites de tempo é melhor do que personalizar a duração dos limites de tempo, o que é melhor do que solicitar mais tempo antes que um limite ocorra.
+O propósito deste Critério de sucesso é garantir que os usuários portadores de deficiência disponham do tempo adequado para interagir com o conteúdo da Web, sempre que possível. Pessoas com deficiências como cegueira, visão baixa, deficiências de destreza e limitações cognitivas podem precisar de mais tempo para ler o conteúdo ou executar funções como preencher formulários on-line. Se as funções da Web dependerem de tempo, será difícil para alguns usuários executar a ação necessária antes que ocorra um limite de tempo. Isso pode tornar o serviço inacessível para eles. Projetar funções que não dependem do tempo ajudará as pessoas com deficiências a concluírem essas funções. Fornecer opções para desativar os limites de tempo, personalizar a duração dos limites de tempo ou solicitar mais tempo antes de ocorrer um limite de tempo ajuda os usuários que precisam de mais tempo do que o esperado para concluírem com êxito as tarefas. Essas opções são listadas na ordem que será mais útil para o usuário. Desativar os limites de tempo é melhor do que personalizar a duração dos limites de tempo, o que é melhor do que solicitar mais tempo antes que um limite ocorra.
 
 #### Como cumprir - Tempo ajustável (2.2.1) {#how-to-meet-timing-adjustable}
 
@@ -705,7 +705,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 2.2.1](https://www
 * [Noções sobre o Critério de sucesso 2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [Como cumprir o Critério de sucesso 2.2.1](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
-### Pausar, Interromper, Ocultar (2.2.2)          {#pause-stop-hide}
+### Pausar, Interromper, Ocultar (2.2.2)              {#pause-stop-hide}
 
 * Critério de Sucesso 2.2.2
 * Nível A
@@ -720,21 +720,21 @@ Os pontos para observar são:
 1. O conteúdo que é atualizado periodicamente pelo software ou que é transmitido para o agente de usuário, não é obrigado a preservar ou apresentar as informações geradas ou recebidas entre o início da pausa e a retomada da apresentação, pois isso pode não ser tecnicamente possível e, em muitas situações, pode induzir ao erro. 
 1. Uma animação que ocorre como parte de uma fase de pré-carregamento ou uma situação similar pode ser considerada essencial se a interação não puder ocorrer durante essa fase para todos os usuários, e se não indicar o progresso, poderá confundir os usuários ou levá-los a pensar que o conteúdo foi congelado ou interrompido.
 
-#### Propósito - Pausar, Interromper, Ocultar (2.2.2)     {#purpose-pause-stop-hide}
+#### Propósito - Pausar, Interromper, Ocultar (2.2.2)       {#purpose-pause-stop-hide}
 
-Alguns usuários podem achar que o conteúdo que se move é perturbador, ou até mesmo doloroso fisicamente, dificultando a concentração em outras partes da página. Além disso, esse conteúdo pode ser de difícil leitura para os indivíduos que têm problemas para acompanhar o texto em movimento.
+Alguns usuários podem achar que o conteúdo que se move é perturbador, ou até mesmo fisicamente doloroso, dificultando a concentração em outras partes da página. Além disso, esse conteúdo pode ser de difícil leitura para os indivíduos que têm problemas para acompanhar o texto em movimento.
 
-#### Como cumprir - Pausar, Interromper, Ocultar (2.2.2)     {#how-to-meet-pause-stop-hide}
+#### Como cumprir - Pausar, Interromper, Ocultar (2.2.2)       {#how-to-meet-pause-stop-hide}
 
 Dependendo da natureza do conteúdo, você pode aplicar uma ou mais das seguintes sugestões ao criar as páginas da Web com um conteúdo em movimento, em modo intermitente ou piscante:
 
 * Forneça um meio de pausar o deslocamento do conteúdo para proporcionar aos usuários tempo suficiente para lê-lo. Por exemplo, marcadores de notícias, texto atualizado automaticamente e carrosséis de imagens que avançam automaticamente.
 * Verifique se o conteúdo em modo intermitente é interrompido após cinco segundos.
-* Use as tecnologias apropriadas para exibir conteúdo em movimento ou intermitente que possa ser desativado pelo navegador. Por exemplo, os arquivos Graphics Interchange Format (GIF) ou Animated Portable Network Graphics (APNG).
-* Forneça um controle de formulário na página da Web para permitir que o usuário desative todo o conteúdo em movimento ou piscando na página.
-* Se alguma das opções acima não for possível, forneça um link para uma página que contenha todo o conteúdo, mas sem qualquer movimento ou intermitência.
+* Use as tecnologias adequadas para exibir um conteúdo móvel ou intermitente que possa ser desativado pelo navegador. Por exemplo, os arquivos Graphics Interchange Format (GIF) ou Animated Portable Network Graphics (APNG).
+* Forneça um controle de formulário na página da Web para permitir que o usuário desative todos os conteúdos móveis ou intermitentes da página.
+* Se nenhuma das situações anteriores for possível, forneça um link para uma página que contenha todo o conteúdo móvel ou intermitente.
 
-#### Mais informações - Pausar, Interromper, Ocultar (2.2.2)     {#more-information-pause-stop-hide}
+#### Mais informações - Pausar, Interromper, Ocultar (2.2.2)       {#more-information-pause-stop-hide}
 
 * [Noções sobre o Critério de sucesso 2.2.2](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
 * [Como cumprir o Critério de sucesso 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
@@ -743,7 +743,7 @@ Dependendo da natureza do conteúdo, você pode aplicar uma ou mais das seguinte
 
 [Diretriz 2.3 de convulsões: não crie o conteúdo em uma forma conhecida por causar convulsões ou reações físicas.](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
 
-### Três flashes ou abaixo do limite (2.3.1)     {#three-flashes-or-below-threshold}
+### Três flashes ou abaixo do limite (2.3.1)       {#three-flashes-or-below-threshold}
 
 * Critério de Sucesso 2.3.1
 * Nível A
@@ -757,7 +757,7 @@ Dependendo da natureza do conteúdo, você pode aplicar uma ou mais das seguinte
 
 Em certos casos, os flashes podem causar convulsões fotossensíveis. Este critério de sucesso permite aos usuários acessar e utilizar todo o conteúdo sem se preocupar com o conteúdo com flashes.
 
-#### Como cumprir - Três flashes ou Abaixo do limite (2.3.1)     {#how-to-meet-three-flashes-or-below-threshold}
+#### Como cumprir - Três flashes ou Abaixo do limite (2.3.1)       {#how-to-meet-three-flashes-or-below-threshold}
 
 É necessário adotar algumas medidas para se certificar de que as seguintes técnicas são aplicadas:
 
@@ -783,7 +783,7 @@ Isso garante que o conteúdo seja fácil e direto para os usuários navegarem.
 
 #### Propósito - Ignorar blocos (2.4.1) {#purpose-bypass-blocks}
 
-O propósito deste Critério de sucesso é permitir que as pessoas que navegam sequencialmente pelo conteúdo tenham acesso mais direto ao conteúdo principal da página da Web. Páginas e aplicativos da Web geralmente têm conteúdo que aparece em outras páginas ou telas. Exemplos de blocos repetidos de conteúdo incluem, entre outros, links de navegação, gráficos de cabeçalho, menus e quadros de publicidade. Para efeitos desta disposição, não se consideram blocos pequenas seções repetidas, como palavras individuais, frases ou links únicos.
+O propósito deste Critério de sucesso é permitir que as pessoas que navegam sequencialmente pelo conteúdo tenham acesso mais direto ao conteúdo principal da página da Web. Páginas e aplicativos da Web geralmente têm conteúdo que aparece em outras páginas ou telas. Os exemplos de blocos repetidos de conteúdo incluem, entre outros, links de navegação, gráficos de cabeçalho, menus e quadros de publicidade. Para efeitos desta disposição, não se consideram blocos pequenas seções repetidas, como palavras individuais, frases ou links únicos.
 
 #### Como cumprir - Ignorar blocos (2.4.1) {#how-to-meet-bypass-blocks}
 
@@ -794,19 +794,19 @@ Siga as orientações em [Como cumprir o Critério de sucesso 2.4.1](https://www
 * [Noções sobre o Critério de sucesso 2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
 * [Como cumprir o Critério de sucesso 2.4.1](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
 
-### Página com título (2.4.2)          {#page-titled}
+### Página com título (2.4.2)              {#page-titled}
 
 * Critério de Sucesso 2.4.2
 * Nível A
 * Página com título: as páginas da Web têm títulos que descrevem o tópico ou a finalidade.
 
-#### Finalidade - Página com título (2.4.2)     {#purpose-page-titled}
+#### Finalidade - Página com título (2.4.2)       {#purpose-page-titled}
 
 Este critério de sucesso ajuda as pessoas, independentemente de qualquer incapacidade cognitiva, a identificar o conteúdo de uma página da Web sem precisar ler toda a página. Isso é especialmente útil quando várias páginas da Web estão abertas em abas de navegador, já que o título da página é exibido na aba e, portanto, pode ser localizado rapidamente.
 
-#### Como cumprir - Página com título (2.4.2)     {#how-to-meet-page-titled}
+#### Como cumprir - Página com título (2.4.2)       {#how-to-meet-page-titled}
 
-Quando uma nova página HTML é criada no AEM, é possível especificar o título da página. Certifique-se de que o título descreva adequadamente o conteúdo e a finalidade da página, especialmente quaisquer aspectos únicos, para que os visitantes possam identificar rapidamente se o conteúdo é realmente relevante para suas necessidades.
+Quando uma nova página HTML é criada no AEM, é possível especificar o título da página. Certifique-se de que o título descreva adequadamente o conteúdo e o propósito da página, especialmente quaisquer aspectos únicos, para que os visitantes possam identificar rapidamente se o conteúdo é realmente relevante para suas necessidades.
 
 Ao editar uma página, também é possível editar seu título, que pode ser acessado por meio de **Informações da página** - **Propriedades.**
 
@@ -823,7 +823,7 @@ Ao editar uma página, também é possível editar seu título, que pode ser ace
 
 #### Propósito - Ordem de foco (2.4.3) {#purpose-focus-order}
 
-O propósito desse Critério de sucesso é garantir que, quando os usuários navegarem sequencialmente pelo conteúdo, encontrem informações em uma ordem consistente com o significado do conteúdo e que possa ser operada pelo teclado. Isso reduz a confusão ao permitir que os usuários formem um modelo mental consistente do conteúdo. Pode haver diferentes ordens que refletem relações lógicas no conteúdo. Por exemplo, mover-se pelos componentes em um formulário on-line composto por vários campos e/ou etapas reflete as relações lógicas no conteúdo.
+O propósito desse Critério de sucesso é garantir que, quando os usuários navegarem sequencialmente pelo conteúdo, encontrem informações em uma ordem consistente com o significado do conteúdo e que possa ser operada pelo teclado. Isso reduz a confusão ao permitir que os usuários formem um modelo mental consistente do conteúdo. Pode haver diferentes ordens que refletem relações lógicas no conteúdo. Por exemplo, a movimentação pelos componentes em um formulário on-line composto por vários campos e/ou etapas reflete as relações lógicas no conteúdo.
 
 #### Como cumprir - Ordem de foco (2.4.3) {#how-to-meet-focus-order}
 
@@ -834,17 +834,17 @@ Siga as orientações em [Como cumprir o Critério de sucesso 2.4.3](https://www
 * [Noções sobre o Critério de sucesso 2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
 * [Como cumprir o Critério de sucesso 2.4.3](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
 
-### Finalidade do link (em contexto) (2.4.4)          {#link-purpose-in-context}
+### Finalidade do link (em contexto) (2.4.4)              {#link-purpose-in-context}
 
 * Critério de Sucesso 2.4.4
 * Nível A
 * Finalidade do link (em contexto): a finalidade de cada link pode ser determinada a partir apenas do texto do link ou a partir do texto do link juntamente com o respectivo contexto do link determinado de forma programática, exceto quando a finalidade do link for ambígua para os usuários em geral.
 
-#### Finalidade - Finalidade do link (Em contexto) (2.4.4)     {#purpose-link-purpose-in-context}
+#### Finalidade - Finalidade do link (Em contexto) (2.4.4)       {#purpose-link-purpose-in-context}
 
-Para todos os usuários, independentemente da incapacidade cognitiva, indicar claramente a direção de um link por meio de um texto de link adequado é fundamental. Isso ajuda os usuários a decidir se querem ou não seguir um link. Para usuários deficientes visuais, um texto de link significativo é extremamente útil quando há vários links em uma página (principalmente se a página incluir excesso de texto), já que textos de link significativos fornecem uma indicação mais clara da funcionalidade da página de destino. Os usuários de algumas tecnologias de assistência, que podem gerar uma lista de todos os links em uma única página, podem entender mais facilmente o texto do link fora de contexto se o texto do link for exclusivo e informativo. No entanto, indivíduos com deficiências cognitivas podem se confundir se um link não fornecer informações suficientes para descrever com precisão onde o link os levará.
+Para todos os usuários, independentemente da incapacidade cognitiva, indicar claramente a direção de um link por meio de um texto de link adequado é fundamental. Isso ajuda os usuários a decidir se querem ou não seguir um link. Para usuários deficientes visuais, um texto de link significativo é extremamente útil quando há vários links em uma página (principalmente se a página incluir excesso de texto), já que textos de link significativos fornecem uma indicação mais clara da funcionalidade da página de destino. Os usuários de algumas tecnologias de assistência, que podem gerar uma lista de todos os links em uma única página, poderão entender mais facilmente o texto do link fora do contexto se o texto do link for exclusivo e informativo. No entanto, indivíduos com deficiências cognitivas poderão se confundir se um link não fornecer informações suficientes para descrever com precisão onde o link os levará.
 
-#### Como cumprir - Finalidade do link (Em contexto) (2.4.4)     {#how-to-meet-link-purpose-in-context}
+#### Como cumprir - Finalidade do link (Em contexto) (2.4.4)       {#how-to-meet-link-purpose-in-context}
 
 Acima de tudo, verifique se a finalidade de um link está claramente descrita no texto.
 
@@ -859,7 +859,7 @@ Os links devem ser redigidos de forma consistente ao longo das páginas, princip
 
 No momento da escrita, há algumas questões relacionadas ao uso de atributos de título para garantir que links semelhantes apresentados em uma página forneçam informações exclusivas sobre o destino (por exemplo, &quot;leia mais&quot; se referirá frequentemente a uma variedade de destinos diferentes):
 
-* O texto contido no atributo título geralmente só está disponível para usuários de mouse como um pop-up de dica de ferramenta e não pode ser acessado de forma consistente usando o teclado ou por usuários móveis.
+* O texto contido no atributo de título geralmente está disponível apenas para usuários do mouse como um pop-up de dica de ferramenta e não pode ser acessado de forma consistente usando o teclado ou por usuários móveis.
 * Os leitores de tela podem ler atributos de título, mas essa funcionalidade pode não estar ativada por padrão; assim, os usuários podem não estar cientes de que existe um atributo de título.
 * É difícil alterar a aparência do texto do título, o que significa que algumas pessoas podem ter dificuldade para lê-lo, ou simplesmente não conseguirem ler.
 
@@ -880,7 +880,7 @@ John Smith’s publications
 >
 >O snippet acima é uma ilustração; recomenda-se usar o componente **Imagem**.
 
-Embora seja aconselhável fornecer um texto de link que identifique a finalidade do link sem a necessidade de contexto adicional, reconhece-se que isso nem sempre é possível. Link contextuais gratuitos podem ser usados nos casos a seguir, exemplos de HTML que podem ser encontrados em [Como cumprir o Critério de sucesso 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Embora seja aconselhável fornecer um texto de link que identifique a finalidade do link sem a necessidade de contexto adicional, reconhece-se que isto nem sempre é possível. Link contextuais gratuitos podem ser usados nos casos a seguir, exemplos de HTML que podem ser encontrados em [Como cumprir o Critério de sucesso 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Sempre que o texto do link fizer parte de uma lista de links estritamente relacionados e quando um item de lista que delimita o link fornecer contexto suficiente.
 * Sempre que a finalidade de um link puder ser claramente identificada no texto do parágrafo *anterior* (não o seguinte).
@@ -964,39 +964,39 @@ Siga as orientações em [Como cumprir o Critério de sucesso 2.4.7](https://www
 * [Noções sobre o Critério de sucesso 2.4.7](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)
 * [Como cumprir o Critério de sucesso 2.4.7](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible)
 
-## Princípio 3: compreensível     {#principle-understandable}
+## Princípio 3: compreensível       {#principle-understandable}
 
 [Princípio 3: compreensível - A informação e a operação da interface do usuário devem ser compreensíveis.](https://www.w3.org/TR/WCAG/#understandable)
 
-### Torne o conteúdo do texto legível e compreensível (3.1)     {#make-text-content-readable-and-understandable}
+### Torne o conteúdo do texto legível e compreensível (3.1)       {#make-text-content-readable-and-understandable}
 
 [Diretriz 3.1 Legível: tornar o conteúdo do texto legível e compreensível.](https://www.w3.org/TR/WCAG/#readable)
 
-### Idioma da página (3.1.1)     {#language-of-page}
+### Idioma da página (3.1.1)       {#language-of-page}
 
 * Critério de Sucesso 3.1.1
 * Nível A
 * Idioma da página: o idioma humano predefinido de cada página da Web pode ser determinado de forma programática.
 
-#### Finalidade - Idioma da página (3.1.1)     {#purpose-language-of-page}
+#### Finalidade - Idioma da página (3.1.1)       {#purpose-language-of-page}
 
 A finalidade deste critério de sucesso é garantir que o texto e outro conteúdo linguístico sejam apresentados corretamente. Para leitores de tela, isso garante que o conteúdo seja pronunciado corretamente. Para navegadores visuais, aumenta a probabilidade de apresentar determinados conjuntos de caracteres definidos corretamente.
 
-#### Como cumprir - Idioma da página (3.1.1)     {#how-to-meet-language-of-page}
+#### Como cumprir - Idioma da página (3.1.1)       {#how-to-meet-language-of-page}
 
 Para cumprir este critério de sucesso, o idioma padrão de uma página da Web pode ser identificado usando o atributo `lang`dentro do elemento`<html>` no topo da página. Por exemplo:
 
-* If a page is written in English, the `<html>` element should read:
+* Se uma página for escrita em inglês, o elemento `<html>` deverá informar:
    `<html lang = “en”>`
 
-* Considerando que uma página a ser renderizada em espanhol deve adotar o seguinte padrão:
+* Para processar uma página em espanhol, deve ser adotado o seguinte padrão:
    `<html lang = “es”>`
 
-In AEM, the default language of your page is set when creating the page, but may also be changed when editing [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+No AEM, o idioma padrão da sua página é definido ao criar página, mas também pode ser alterado ao editar as [Propriedades da Página](/help/sites-cloud/authoring/fundamentals/page-properties.md).
 
 >[!NOTE]
 >
->O AEM fornece mais ajuste para variações de um idioma raiz; por exemplo, inglês americano - en-us, inglês britânico - en-gb, e inglês canadense - en-ca. Esse nível de detalhes é geralmente supérfluo para a tecnologia assistiva, embora possa ser usado para variações regionais no conteúdo da página.
+>O AEM fornece mais ajuste para variações de um idioma raiz; por exemplo, inglês americano - en-us, inglês britânico - en-gb, e inglês canadense - en-ca. Esse nível de detalhes é geralmente supérfluo para a tecnologia de assistência, embora possa ser usado para variações regionais no conteúdo da página.
 
 #### Mais Informações - Idioma da Página (3.1.1) {#more-information-language-of-page}
 
@@ -1004,13 +1004,13 @@ In AEM, the default language of your page is set when creating the page, but may
 * [Como cumprir o Critério de sucesso 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
 * Os códigos são baseados em ISO 639-1. Uma lista mais extensa de códigos para cada idioma pode ser encontrada no [site W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
-### Idioma de Partes (3.1.2)          {#language-of-parts}
+### Idioma de Partes (3.1.2)              {#language-of-parts}
 
 * Critério de Sucesso 3.1.2
 * Nível AA
 * Idioma de Partes: o idioma humano de cada passagem ou frase do conteúdo pode ser determinado de forma programática, exceto para os nomes próprios, termos técnicos, palavras de idioma indeterminado e palavras ou frases que se tornaram parte do vernáculo do texto imediatamente circundante.
 
-#### Finalidade - Idioma de Partes (3.1.2)     {#purpose-language-of-parts}
+#### Finalidade - Idioma de Partes (3.1.2)       {#purpose-language-of-parts}
 
 A finalidade deste critério de sucesso é semelhante ao critério de sucesso de [Idioma da Página ](#language-of-page), exceto que se aplica a páginas da Web com conteúdo em múltiplos idiomas em uma única página (por exemplo, devido a citações ou palavras incomuns).
 
@@ -1020,7 +1020,7 @@ As páginas que aplicam este critério de sucesso:
 * Leitores de tela para pronunciar as palavras que têm caracteres especiais ou que não estão no idioma padrão identificado no nível da página.
 * Permitem que as ferramentas de tradução, como o Google Translate, traduzam corretamente o conteúdo de um idioma para outro.
 
-#### Como Cumprir - Idioma de Partes (3.1.2)     {#how-to-meet-language-of-parts}
+#### Como Cumprir - Idioma de Partes (3.1.2)       {#how-to-meet-language-of-parts}
 
 O atributo `lang` pode ser utilizado para identificar alterações no idioma do conteúdo. Por exemplo, uma citação em alemão (ISO 639-1, código “de”) pode ser apresentada da seguinte maneira:
 
@@ -1164,7 +1164,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 3.2.4](https://www
 
 #### Propósito - Identificação de erro (3.3.1) {#purpose-error-identification}
 
-O propósito deste Critério de sucesso é garantir que os usuários estejam cientes de que ocorreu um erro e possam determinar o que está errado. A mensagem de erro deve ser o mais específica possível. No caso de um envio de formulário malsucedido, a reexibição do formulário e a indicação dos campos com erro são insuficientes para que alguns usuários percebam que ocorreu um erro. Os usuários do leitor de tela, por exemplo, não saberão que houve um erro até encontrarem um dos indicadores. Eles podem abandonar o formulário completamente antes de encontrar o indicador de erro, achando que a página simplesmente não está funcionando. Per the definition in WCAG, an [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) is information provided by the user that is not accepted. Isso inclui:
+O propósito deste Critério de sucesso é garantir que os usuários estejam cientes de que ocorreu um erro e possam determinar o que está errado. A mensagem de erro deve ser o mais específica possível. No caso de um envio de formulário malsucedido, a reexibição do formulário e a indicação dos campos com erro são insuficientes para que alguns usuários percebam que ocorreu um erro. Os usuários do leitor de tela, por exemplo, não saberão que houve um erro até encontrarem um dos indicadores. Eles podem abandonar o formulário completamente antes de encontrar o indicador de erro, achando que a página simplesmente não está funcionando. De acordo com a definição na WCAG , um [erro de entrada](https://www.w3.org/TR/WCAG/#dfn-input-error) são informações fornecidas pelo usuário que não são aceitas. Isso inclui:
 
 informações exigidas pela página da Web, mas omitidas pelo usuário ou informações fornecidas pelo usuário, mas que não estejam no formato de dados necessário ou valores permitidos.
 Por exemplo:
@@ -1185,19 +1185,19 @@ Siga as orientações em [Como cumprir o Critério de sucesso 3.3.1](https://www
 * [Noções sobre o Critério de sucesso 3.3.1](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html)
 * [Como cumprir o Critério de sucesso 3.3.1](https://www.w3.org/WAI/WCAG21/quickref/#error-identification)
 
-### Etiquetas ou Instruções (3.3.2)     {#labels-or-instructions}
+### Etiquetas ou Instruções (3.3.2)       {#labels-or-instructions}
 
 * Critério de Sucesso 3.3.2
 * Nível A
 * Etiquetas ou Instruções: as etiquetas ou instruções são fornecidas quando o conteúdo exigir a entrada do usuário.
 
-#### Finalidade - Etiquetas ou Instruções (3.3.2)     {#purpose-labels-or-instructions}
+#### Finalidade - Etiquetas ou Instruções (3.3.2)       {#purpose-labels-or-instructions}
 
 Fornecer instruções para ajudar as pessoas a preencher formulários é uma parte fundamental das boas práticas de usabilidade da interface. Fazer isso é particularmente útil para pessoas com deficiências visuais ou cognitivas que de outra forma poderiam ter dificuldade para entender o layout de um formulário e o tipo de dados a ser fornecido em um campo de formulário específico.
 
 ##### Forms
 
-In the AEM WKND demo project a default label is added when you add a form component, such as a **Text Field**, to the page. Este título padrão é dependente do tipo de componente. Você pode adicionar seu próprio título na guia **Título e Texto** da janela de edição desse campo. É importante garantir que as etiquetas ajudem os usuários a compreender os dados associados a cada componente do formulário.
+No projeto de demonstração WKND do AEM, um rótulo padrão é adicionado quando você adiciona um componente de formulário, como um **Campo de texto**, à página. Este título padrão é dependente do tipo de componente. Você pode adicionar seu próprio título na guia **Título e Texto** da janela de edição desse campo. É importante garantir que as etiquetas ajudem os usuários a compreender os dados associados a cada componente do formulário.
 
 Este campo de **Título** deve ser usado para elementos de campo, pois fornece uma etiqueta que está disponível para tecnologia assistiva. Apenas escrever uma etiqueta no texto ao lado do campo não é suficiente.
 
@@ -1205,11 +1205,11 @@ Para alguns componentes de formulário, também é possível ocultar as etiqueta
 
 ###### Botões de imagem {#image-buttons}
 
-Where image buttons are used (for example, the **Image Button** component of the WKND project) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. Assim, no exemplo abaixo, a imagem com o texto `Submit`tem o texto alternativo de `Submit`, adicionado usando o campo **Título** na janela de edição.
+Quando botões de imagem são usados (por exemplo, o componente **Botão de imagem** do projeto WKND), o campo **Título** na guia **Título e texto** da caixa de diálogo de edição fornece o texto alternativo para a imagem, em vez do rótulo. Assim, no exemplo abaixo, a imagem com o texto `Submit`tem o texto alternativo de `Submit`, adicionado usando o campo **Título** na janela de edição.
 
 ###### Grupos de campos de formulário {#groups-of-form-fields}
 
-In the WKND project, where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. Ao adicionar um conjunto de botões de opção no AEM, o campo **Título** fornece esse título de grupo, enquanto títulos individuais são especificados conforme os botões de opção (**Itens**) são criados.
+No projeto WKND, se houver um grupo de controles relacionados, como **Grupo de opções**, talvez seja necessário um título para o grupo, bem como controles individuais. Ao adicionar um conjunto de botões de opção no AEM, o campo **Título** fornece esse título de grupo, enquanto títulos individuais são especificados conforme os botões de opção (**Itens**) são criados.
 
 Contudo, não existe uma associação programática entre o título do grupo e os próprios botões de opção. Editores de modelo precisam envolver o título nas tags `fieldset` e `legend` necessárias para criar esta associação e isso só pode ser feito através da edição do código fonte da página. Alternativamente, um administrador do sistema pode adicionar suporte a esses elementos para que eles apareçam na janela **Propriedades do Campo** (Consulte Adicionar suporte para elementos e atributos HTML adicionais).
 
@@ -1232,7 +1232,7 @@ As etiquetas são posicionadas imediatamente acima ou à esquerda do campo.
 
 Em formulários simples, com funcionalidade muito limitada, a identificação adequada de um botão `Submit` pode servir como etiqueta para o campo adjacente (por exemplo, `Search`). Isso é útil em situações em que encontrar espaço para o texto da etiqueta pode ser difícil.
 
-#### Mais Informações - Etiquetas ou Instruções (3.3.2)     {#more-information-labels-or-instructions}
+#### Mais Informações - Etiquetas ou Instruções (3.3.2)       {#more-information-labels-or-instructions}
 
 * [Noções sobre o Critério de sucesso 3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
 * [Como cumprir o Critério de sucesso 3.3.2](https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions)
@@ -1245,7 +1245,7 @@ Em formulários simples, com funcionalidade muito limitada, a identificação ad
 
 #### Propósito - Sugestão de erro (3.3.3) {#purpose-error-suggestion}
 
-O propósito deste Critério de sucesso é garantir que os usuários recebam sugestões adequadas para a correção de um erro de entrada, se possível. The WCAG definition of [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) says that it is &quot;information provided by the user that is not accepted&quot; by the system. Alguns exemplos de informações que não são aceitas incluem informações obrigatórias, mas omitidas pelo usuário, e informações fornecidas pelo usuário, mas que não estão no formato de dados necessário ou valores permitidos.
+O propósito deste Critério de sucesso é garantir que os usuários recebam sugestões adequadas para a correção de um erro de entrada, se possível. A definição de [erro de entrada](https://www.w3.org/TR/WCAG/#dfn-input-error) da WCAG diz &quot;informações fornecidas pelo usuário que não são aceitas&quot; pelo sistema. Alguns exemplos de informações que não são aceitas incluem informações obrigatórias, mas omitidas pelo usuário, e informações fornecidas pelo usuário, mas que não estão no formato de dados necessário ou valores permitidos.
 
 O Critério de sucesso 3.3.1 prevê a notificação de erros. Mas as pessoas com limitações cognitivas podem ter dificuldade para entender como corrigir os erros. Pessoas com deficiências visuais podem não ser capazes de descobrir exatamente como corrigir o erro. No caso de um envio de formulário malsucedido, os usuários podem abandonar o formulário por não ter certeza de como corrigir o erro, mesmo sabendo que ele ocorreu.
 
