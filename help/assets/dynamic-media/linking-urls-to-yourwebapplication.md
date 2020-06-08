@@ -3,6 +3,9 @@ title: Vincular URLs ao aplicativo da Web.
 description: Como vincular URLs ao aplicativo da Web em mídia dinâmica
 translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '1270'
+ht-degree: 11%
 
 ---
 
@@ -29,7 +32,7 @@ See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-ass
 
 ## Obter um URL para um ativo {#obtaining-a-url-for-an-asset}
 
-Você pode obter uma string de URL gerada por uma predefinição de imagem ou uma predefinição do visualizador. Depois de copiar o URL, ele aterrissa na Área de transferência para que você possa colá-lo conforme necessário nas páginas do seu site ou aplicativo.
+Você pode obter uma string de URL gerada por uma predefinição de imagem ou por uma predefinição do visualizador. Depois de copiar o URL, ele aterrissa na Área de transferência para que você possa colá-lo conforme necessário nas páginas do seu site ou aplicativo.
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ Existem várias maneiras diferentes de obter uma string de URL. No entanto, as e
 
 1. Navegue até o ativo *publicado* cujo URL predefinido de imagem ou URL predefinido do visualizador você deseja copiar e toque no ativo para abri-lo.
 
-   Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou a predefinição da imagem também devem ser publicadas.
+   Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou da imagem também deve ser publicada.
 
    Consulte [Publicação de ativos.](publishing-dynamicmedia-assets.md)
 
@@ -59,7 +62,7 @@ Existem várias maneiras diferentes de obter uma string de URL. No entanto, as e
 
    * Se você selecionou uma imagem, no menu suspenso, toque em **[!UICONTROL Representações]**.
 
-      No cabeçalho **[!UICONTROL Dinâmico]** , toque em um nome predefinido para exibir sua representação no quadro direito. Talvez seja necessário rolar a lista Representações para ver o cabeçalho Dinâmico.
+      No cabeçalho **[!UICONTROL Dinâmico]** , toque em um nome predefinido para visualização sua execução no quadro direito. Talvez seja necessário rolar a lista Representações para ver o cabeçalho Dinâmico.
 
       Na parte inferior do painel esquerdo, toque em **[!UICONTROL URL]**.
 
@@ -67,24 +70,24 @@ Existem várias maneiras diferentes de obter uma string de URL. No entanto, as e
 
    * Se você selecionou um conjunto de rotação, um conjunto de imagens, um conjunto de carrossel ou um vídeo, no menu suspenso, toque em **[!UICONTROL Visualizadores]**.
 
-      No painel esquerdo, toque no nome predefinido do visualizador. Uma visualização do conjunto ou do vídeo é aberta em uma página separada.
+      No painel esquerdo, toque no nome predefinido do visualizador. Uma pré-visualização do conjunto ou do vídeo é aberta em uma página separada.
 
       No painel esquerdo, na parte inferior, toque em **[!UICONTROL URL]**.
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. Selecione e copie o texto no navegador da Web para visualizar o ativo ou para adicioná-lo à página de conteúdo da Web.
+1. Selecione e copie o texto no navegador da Web para pré-visualização do ativo ou para adicionar à página de conteúdo da Web.
 
    Para sair da janela URL, toque no **[!UICONTROL X]** ou em **[!UICONTROL Fechar]**.
 
 ## Obter um URL para um ativo estático {#obtaining-a-url-for-a-static-asset}
 
-O Dynamic Media suporta a entrega de ativos estáticos, que são ativos adicionais além de imagens e vídeos. Os formatos de ativos estáticos suportados para entrega incluem:
+O Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicionais além de imagens e vídeos. Os formatos de ativos estáticos suportados para o delivery incluem:
 
 * GIF animado
 * Arquivos de áudio
 * CSS
-* JavaScript (quando sua empresa está configurada com seu próprio domínio)
+* JavaScript (quando sua empresa é configurada com seu próprio domínio)
 * PDF
 * SVG
 * XML
@@ -94,7 +97,7 @@ O Dynamic Media suporta a entrega de ativos estáticos, que são ativos adiciona
 
 1. Navegue até o *ativo estático *publicado cujo URL você deseja copiar e toque no ativo para abri-lo.
 
-   Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* o ativo estático pela primeira vez.
+   Remember that URLs are only available to copy *after* you have first *published* the static asset.
 
    Consulte [Publicação de ativos.](publishing-dynamicmedia-assets.md)
 
@@ -113,8 +116,8 @@ O Dynamic Media suporta a entrega de ativos estáticos, que são ativos adiciona
 ## Obter um URL de vídeo para uma execução de vídeo publicada {#obtaining-a-video-url-for-a-published-video-rendition}
 
 1. No AEM, navegue até **[!UICONTROL Ferramentas > Implantação > Nuvem > Serviços]** em nuvem.
-1. Na página Serviços **[!UICONTROL da]** Cloud, role até o cabeçalho Serviços **[!UICONTROL da]** Dynamic Media Cloud e toque em **[!UICONTROL Mostrar configurações]**.
-1. Em Configurações **[!UICONTROL disponíveis]**, toque no nome da configuração desejada.
+1. Na página **[!UICONTROL Serviços da nuvem]**, role até o cabeçalho **[!UICONTROL Serviços de nuvem do Dynamic Media]** e toque em **[!UICONTROL Mostrar configurações]**.
+1. Em **[!UICONTROL Configurações disponíveis]**, toque no nome da configuração desejada.
 
 1. Na página Configurações **[!UICONTROL da]** Dynamic Media Cloud, em URL **[!UICONTROL do serviço de]** vídeo, copie todo o caminho do URL. Você precisará do caminho do URL copiado posteriormente nas etapas.
 
@@ -124,7 +127,7 @@ O Dynamic Media suporta a entrega de ativos estáticos, que são ativos adiciona
 
    (O caminho acima serve apenas para fins ilustrativos; não é o caminho real que você copia.)
 
-1. Em ID **[!UICONTROL de]** registro, copie o nome do cliente encontrado na última parte da ID.
+1. Em **[!UICONTROL ID de registro]**, copie o nome do cliente encontrado na última parte da ID.
 
    Por exemplo, se a ID de registro fosse `87654321|MyCompany`, o nome do cliente seria `MyCompany`.
 
@@ -150,30 +153,31 @@ O Dynamic Media suporta a entrega de ativos estáticos, que são ativos adiciona
 ## Obter um URL de vídeo para transmissão adaptável (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. No AEM, navegue até **[!UICONTROL Ferramentas > Implantação > Nuvem > Serviços]** em nuvem.
-1. Na página Serviços **[!UICONTROL da]** Cloud, role até o cabeçalho Serviços **[!UICONTROL da]** Dynamic Media Cloud e toque em **[!UICONTROL Mostrar configurações]**.
-1. Em Configurações **[!UICONTROL disponíveis]**, toque no nome da configuração desejada.
-1. Na página Configurações **** do Dynamic Media Cloud Services, faça o seguinte:
+1. Na página **[!UICONTROL Serviços da nuvem]**, role até o cabeçalho **[!UICONTROL Serviços de nuvem do Dynamic Media]** e toque em **[!UICONTROL Mostrar configurações]**.
+1. Em **[!UICONTROL Configurações disponíveis]**, toque no nome da configuração desejada.
+1. Na página Configurações **[!UICONTROL do]** Dynamic Media Cloud Services, faça o seguinte:
 
    * Em URL **[!UICONTROL do serviço de]** vídeo, copie o caminho do URL inteiro. Você precisará do caminho do URL copiado posteriormente nessas etapas. Por exemplo, o caminho do URL pode ser exibido da seguinte maneira:
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (O caminho acima serve apenas para fins ilustrativos; não é o caminho real que você copia.)
 
-   * Em ID **[!UICONTROL de]** registro, copie o nome do cliente encontrado na última parte da ID. Você precisará do nome do cliente copiado posteriormente nessas etapas.
+   * Em **[!UICONTROL ID de registro]**, copie o nome do cliente encontrado na última parte da ID. Posteriormente, você precisará do nome do cliente copiado nessas etapas.
 
       Por exemplo, se a ID de registro fosse `87654321|demoCo`o nome do cliente que você copiar seria `demoCo`.
 
 
-1. Com base no protocolo de entrega de vídeo que você está usando, copie o respectivo seletor de protocolo. Você precisará do seletor de protocolo copiado posteriormente nessas etapas.
+1. Com base no protocolo de delivery de vídeo que você está usando, copie o respectivo seletor de protocolo. Você precisará do seletor de protocolo copiado posteriormente nessas etapas.
 
    <table>
     <tbody>
       <tr>
-      <td><strong>Protocolo de entrega de vídeo que você está usando</strong></td>
+      <td><strong>Protocolo de delivery de vídeo que você está usando</strong></td>
       <td><strong>Seletor de protocolo a ser usado</strong></td>
       </tr>
       <tr>
-      <td><p>HTTP</p> <p>Se você estiver usando HTTP (entrega de vídeo não segura), certifique-se de alterar <code>https</code> para <code>http</code> o valor do URL do Serviço de vídeo copiado anteriormente.</p> </td>
+      <td><p>HTTP</p> <p>Se você estiver usando HTTP (delivery de vídeo não seguro), certifique-se de alterar <code>https</code> para <code>http</code> o valor do URL do Serviço de vídeo copiado anteriormente.</p> </td>
       <td><code>public/</code></td>
       </tr>
       <tr>
@@ -203,6 +207,6 @@ O Dynamic Media suporta a entrega de ativos estáticos, que são ativos adiciona
 
 ## Usar HTTP/2 para fornecer seus ativos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. A entrega de ativos de Dynamic Media pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O Delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
-Consulte Entrega [HTTP2 de conteúdo](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
+Consulte Delivery [HTTP2 de conteúdo](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
