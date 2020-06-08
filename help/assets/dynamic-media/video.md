@@ -3,6 +3,9 @@ title: Vídeo
 description: Saiba como trabalhar com vídeo no Dynamic Media
 translation-type: tm+mt
 source-git-commit: acdad463a188387a7c39c1061191c7472e8295dd
+workflow-type: tm+mt
+source-wordcount: '10160'
+ht-degree: 10%
 
 ---
 
@@ -20,6 +23,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi projetada para aju
 >Antes de trabalhar com vídeo no Dynamic Media, verifique se o administrador do AEM já habilitou e configurou os Serviços da Dynamic Media Cloud.
 >
 >* Consulte [Configuração dos serviços](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) da Dynamic Media Cloud em Configuração do Dynamic Media e [Solução de Problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
+
 >
 
 
@@ -469,6 +473,7 @@ Para definir as configurações do Google Cloud:
 
    * No Painel do seu projeto, no cartão Introdução, toque em **[!UICONTROL Explorar e habilitar as APIs]**.
    * No Painel do seu projeto, no cartão de APIs, toque em **[!UICONTROL Ir para a visão geral]** das APIs.
+
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Próximo à parte superior da página APIs e serviços, toque em **[!UICONTROL Ativar APIs e serviços]**.
@@ -488,6 +493,7 @@ Para definir as configurações do Google Cloud:
    * Em **[!UICONTROL Onde você irá chamar a API?]** lista suspensa, selecione Servidor **[!UICONTROL Web (por exemplo, node.js, Tomcat)]**
 
    * From the **[!UICONTROL What data will you be accessing?]** lista suspensa, toque em Dados **** do usuário.
+
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Toque em **[!UICONTROL Quais credenciais eu preciso?]**
@@ -773,7 +779,7 @@ Para publicar vídeos no seu canal do YouTube:
 
 ### (Opcional) Verificação do vídeo publicado no YouTube {#optional-verifying-the-published-video-on-youtube}
 
-Como opção, você pode monitorar o progresso da publicação no YouTube (ou desfazer a publicação).
+Opcionalmente, você pode monitorar o progresso da publicação no YouTube (ou desfazer a publicação).
 
 Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
@@ -833,9 +839,11 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
 1. Progresso da codificação de vídeo de Visualização em sua pasta de ativos:
 
    * Na visualização do cartão, o progresso da codificação de vídeo é exibido no ativo em uma porcentagem. Se houver um erro, essas informações também serão exibidas no ativo.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * In list view, video encoding progress displays in the **[!UICONTROL Processing Status]** column. Se houver um erro, essa mensagem será exibida nessa mesma coluna.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    Essa coluna não é exibida por padrão. Para ativar a coluna, selecione **[!UICONTROL Configurações de exibição]** no menu suspenso de exibições e adicione a coluna **[!UICONTROL Status de processamento]** e toque ou clique em **[!UICONTROL Atualizar]**.
@@ -855,6 +863,7 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
    >    * Configuração da fila de trabalhos do Apache Sling
    >    * Manipulador de trabalho externo do processo de fluxo de trabalho do Adobe Granite
    >    * Fila de Tempo Limite do Fluxo de Trabalho Granite
+
    >
    >Você pode ajustar as **[!UICONTROL tentativas]**, o **[!UICONTROL atraso de repetição]** e as propriedades de **[!UICONTROL tempo limite]** nessas configurações.
 
@@ -889,6 +898,7 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
    >    * Configuração da fila de trabalhos do Apache Sling
    >    * Manipulador de trabalho externo do processo de fluxo de trabalho do Adobe Granite
    >    * Fila de Tempo Limite do Fluxo de Trabalho Granite
+
    >
    >
    >Você pode ajustar as **[!UICONTROL tentativas]**, o **[!UICONTROL atraso de repetição]** e as propriedades de **[!UICONTROL tempo limite]** nessas configurações.
@@ -987,6 +997,7 @@ Você só precisará usar Atualizar se a data final do relatório for o dia atua
 
    * Próximo ao canto superior direito, toque no ícone Seletor **[de datas do]** UICONTROL.
 Especifique o intervalo de datas de início e término para o qual deseja obter dados de vídeo e toque em **[!UICONTROL Executar relatório]**.
+
    A caixa de grupo Principais métricas identifica várias medidas de agregação para todos os *vídeos *publicados em seu site.
 
 1. Na tabela que lista os vídeos publicados principais, toque no nome de um vídeo para reproduzir o vídeo e também veja o relatório de retenção de audiência (suspenso) do vídeo.
