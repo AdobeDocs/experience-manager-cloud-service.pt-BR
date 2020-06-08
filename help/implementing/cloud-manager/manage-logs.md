@@ -3,6 +3,9 @@ title: Gerenciar registros - serviço em nuvem
 description: Gerenciar registros - serviço em nuvem
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 11%
 
 ---
 
@@ -67,7 +70,7 @@ Environment Id Service    Name
 >[!Nnota]
 >Embora os **Downloads de registro** estejam disponíveis na interface do usuário e na API, o **Resíduo de registro** é somente API/CLI.
 
-### Additional Resources {#resources}
+### Recursos adicionais {#resources}
 
 Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud Manager e a CLI de E/S da Adobe:
 
