@@ -1,13 +1,16 @@
 ---
-title: Usar o Quickviews para criar pop-ups personalizados
+title: Uso do Quickviews para criar pop-ups personalizados
 description: A exibição rápida padrão é usada em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para acionar uma compra. Você pode acionar a exibição de conteúdo personalizado nos pop-ups.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 1%
 
 ---
 
 
-# Usar o Quickviews para criar pop-ups personalizados {#using-quickviews-to-create-custom-pop-ups}
+# Uso do Quickviews para criar pop-ups personalizados {#using-quickviews-to-create-custom-pop-ups}
 
 A exibição rápida padrão é usada em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para acionar uma compra. No entanto, é possível acionar a exibição de conteúdo personalizado nos pop-ups. Dependendo do visualizador usado, essa funcionalidade permite que os usuários cliquem em um ponto de acesso ou em uma imagem em miniatura, ou em um mapa de imagem para ver informações ou conteúdo relacionado.
 
@@ -37,10 +40,10 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     </tr>
     <tr>
     <td>Vídeos interativos</td>
-    <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Adicionar interatividade ao vídeo</a>.</td>
+    <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Adicionando interatividade ao vídeo</a>.</td>
     </tr>
     <tr>
-    <td>Banners de carrossel</td>
+    <td>Banners em carrossel</td>
     <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Adicionar pontos de conexão ou mapas de imagem a um banner</a>.<br /> </td>
     </tr>
     </tbody>
@@ -101,7 +104,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
 1. Agora é necessário configurar o `quickViewActivate` manipulador.
 
-   O `quickViewActivate` manipulador controla as exibições rápidas no visualizador. O manipulador contém a lista de variáveis e as chamadas de função para uso com o Quickview. O código incorporado fornece mapeamento para a variável SKU definida no Quickview, bem como uma chamada de `loadQuickView` função de amostra.
+   O `quickViewActivate` manipulador controla as exibições rápidas no visualizador. O manipulador contém a lista variável e as chamadas de função para uso com o Quickview. O código incorporado fornece mapeamento para a variável SKU definida no Quickview, bem como uma chamada de `loadQuickView` função de amostra.
 
    **Variável mapeando variáveis** do mapa para uso na sua página da Web para o valor SKU e variáveis genéricas contidas no Quickview:
 
@@ -132,7 +135,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
 1. Faça o seguinte:
 
-   * Exclua o comentário da seção setHandlers do código incorporado.
+   * Exclua as barras de comentário da seção setHandlers do código incorporado.
    * Mapeie quaisquer variáveis adicionais contidas no Quickview.
 
       * Atualize a `loadQuickView(sku,*var1*,*var2*)` chamada se você estiver adicionando variáveis adicionais.
@@ -194,7 +197,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
    Alguns visualizadores, como o Visualizador de vídeo interativo, suportam a exibição no modo de tela cheia. No entanto, usar o pop-up conforme descrito nas etapas anteriores faz com que ele seja exibido atrás do visualizador no modo de tela cheia.
 
-   Para ter a exibição pop-up nos modos padrão e de tela cheia, anexe a pop-up ao contêiner do visualizador. Para fazer isso, você pode usar um segundo método handler, `initComplete`.
+   Para ter a exibição pop-up nos modos padrão e de tela cheia, anexe a pop-up ao container do visualizador. Para fazer isso, você pode usar um segundo método handler, `initComplete`.
 
    O `initComplete` hander é chamado depois que o visualizador é inicializado.
 
@@ -223,8 +226,8 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
    * Identificado nosso pop-up personalizado.
    * Removido do DOM.
-   * Identificado o contêiner do visualizador.
-   * O pop-up foi anexado ao contêiner do visualizador.
+   * Identificado o container do visualizador.
+   * O pop-up foi anexado ao container do visualizador.
 
 1. O código de setHandlers inteiro agora deve ser semelhante ao seguinte (o visualizador de vídeo interativo foi usado):
 
