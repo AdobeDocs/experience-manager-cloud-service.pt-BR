@@ -3,6 +3,9 @@ title: Conteúdo associado
 description: O conteúdo associado fornece a conexão para que os ativos possam ser (opcionalmente) usados com o fragmento quando ele for adicionado a uma página de conteúdo.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 23%
 
 ---
 
@@ -19,11 +22,11 @@ O conteúdo associado fornece a conexão para que os ativos (isto é,) possam se
 
 Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a uma coleção](/help/assets/manage-collections.md). Depois disso, você pode:
 
-1. Abra o fragmento e selecione Conteúdo **** associado no painel lateral.
+1. Abra o fragmento e selecione **Conteúdo associado** no painel lateral.
 
    ![Conteúdo associado](assets/cfm-assoc-content-01.png)
 
-2. Selecione **Associar conteúdo** ou **Associar coleção** (conforme apropriado, dependendo se alguma coleção já foi associada ou não).
+2. Selecione **Associar conteúdo** ou **Associar coleção** (conforme apropriado, dependendo de alguma coleção já ter sido associada ou não).
 3. Selecione a coleção necessária.
 
    Como opção, é possível adicionar o fragmento à coleção selecionada; isso ajuda a rastrear.
