@@ -3,6 +3,9 @@ title: Trabalhar com conteúdo direcionado em vários sites
 description: Se você precisar gerenciar conteúdo direcionado, como atividades, experiências e ofertas entre seus sites, é possível aproveitar o suporte multisite integrado do AEM para conteúdo direcionado
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2900'
+ht-degree: 88%
 
 ---
 
@@ -49,6 +52,7 @@ Um site ou uma live copy se vincula a uma área que contém as atividades que pr
 >
 >* Quando você usa implantações ou cópias em tempo real, é necessário usar uma licença do MSM.
 >* Quando você usa a sincronização com o Adobe Target, é necessária uma licença do Adobe Target.
+
 >
 
 
@@ -147,11 +151,11 @@ Para conseguir isso no AEM, você faria o seguinte:
 
 >[!NOTE]
 >
->A área padrão, chamada Área mestra, é recolhida por padrão quando você toca ou clica no nome de uma marca **até** criar outra área. Em seguida, quando você selecionar uma marca no console **Atividades** ou **Ofertas**, verá o console **Área.**
+>A área padrão chamada Área mestre é recolhida por padrão ao tocar ou clicar no nome de uma marca **até** criar outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
 
 Para criar uma nova área:
 
-1. Navigate to **Personalization** > **Activities** or **Offers** or and then to your brand.
+1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e, em seguida, acesse sua marca.
 1. Toque ou clique em **Criar área**.
 
    ![Criar área](/help/sites-cloud/authoring/assets/multisite-create-area.png)
@@ -170,7 +174,7 @@ Você cria uma área como uma live copy para herdar o conteúdo direcionado entr
 
 Para criar uma área como uma live copy:
 
-1. Navigate to **Personalization** > **Activities** or **Offers** and then to your brand.
+1. Navegue até **Personalização** > **Atividades** ou **ofertas** e, em seguida, acesse sua marca.
 1. Toque ou clique em **Criar área como Live Copy**.
 
    ![Criar área como live copy](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
@@ -179,7 +183,7 @@ Para criar uma área como uma live copy:
 
    ![Criar live copy](/help/sites-cloud/authoring/assets/multisite-livecopy.png)
 
-1. No campo **Nome**, insira um nome para a live copy. Por padrão, as subpáginas são incluídas. Exclua-as marcando a caixa de seleção **Excluir subpáginas**.
+1. No campo **Nome**, digite um nome para a live copy. Por padrão, as sub páginas são incluídas; exclua-as selecionando a caixa de seleção **Excluir sub páginas**.
 
    ![Criar live copy](/help/sites-cloud/authoring/assets/multisite-create-livecopy.png)
 
@@ -228,7 +232,7 @@ Você pode querer suspender ou desconectar a herança do conteúdo direcionado. 
 
 A suspensão da live copy interrompe temporariamente a herança, mas, no futuro, você poderá restaurar a herança. A desconexão da live copy interrompe permanentemente a herança.
 
-Você suspende ou desconecta a herança do conteúdo direcionado restaurando-o em uma atividade. Se uma página ou site se vincula a uma área que seja uma Live Copy, você poderá exibir o status de herança de uma atividade.
+Você suspende ou desconecta a herança do conteúdo direcionado restaurando-o em uma atividade. Se uma página ou site se vincula a uma área que seja uma Live Copy, você pode visualização um status de herança de atividade.
 
 Uma atividade herdada de outro site é marcada em verde ao lado do seu nome. Uma herança suspensa é marcada em vermelho, e uma atividade criada localmente não tem ícone.
 
@@ -236,6 +240,7 @@ Uma atividade herdada de outro site é marcada em verde ao lado do seu nome. Uma
 >
 >* Apenas é possível suspender ou desconectar cópias em tempo real em uma atividade.
 >* Não é necessário suspender ou desconectar cópias em tempo real para estender uma atividade herdada. Você sempre pode criar **novas** experiências e ofertas locais para essa atividade. Se quiser modificar uma atividade existente, será necessário suspender a herança.
+
 >
 
 
@@ -250,6 +255,7 @@ Para suspender ou desconectar a herança do conteúdo direcionado em uma ativida
 
    1. Selecione um elemento da atividade, como o público-alvo. O AEM exibe automaticamente uma caixa de confirmação Suspender Live Copy. (É possível suspender a cópia ao vivo tocando ou clicando em qualquer elemento por todo o processo de Direcionamento.)
    1. Selecione **Suspender Live Copy** no menu suspenso da barra de ferramentas.
+
    ![Suspender live copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
 1. Tap or click **Suspend** to suspend the activity. Atividades suspensas são marcadas em vermelho.
@@ -262,10 +268,10 @@ Para interromper a herança do conteúdo direcionado em uma atividade:
 
 1. Navegue até a página da qual você deseja desconectar a live copy da mestra e toque ou clique em **Direcionar** no menu suspenso de modo.
 1. Se a sua página estiver vinculada a uma área que é uma live copy, você verá o status da herança. Toque ou clique em **Iniciar o direcionamento**.
-1. Selecione **Destacar Live Copy** no menu suspenso da barra de ferramentas. O AEM confirma se você deseja separar a live copy.
+1. Selecione **Desanexar Live Copy** no menu suspenso na barra de ferramentas. O AEM confirma que você deseja desanexar a live copy.
 1. Toque ou clique em **Destacar** para desconectar a live copy da atividade. Depois que ela é desconectada, o menu suspenso de herança deixa de ser exibido. A atividade agora é local.
 
-   ![Atividade local](/help/sites-cloud/authoring/assets/multisite-winter.png)
+   ![atividade local](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
 ## Restauração da herança do conteúdo direcionado {#restoring-inheritance-of-targeted-content}
 
@@ -275,7 +281,7 @@ Para restaurar a herança do conteúdo direcionado em uma atividade:
 
 1. Navigate to the page where you want to restore inheritance and tap or click **Targeting** in the mode drop-down menu.
 1. Toque ou clique em **Iniciar o direcionamento**.
-1. Select **Resume Live Copy** from the drop-down menu in the toolbar.
+1. Selecione **Retomar Live Copy** no menu suspenso da barra de ferramentas.
 
    ![Retomando cópia online](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
