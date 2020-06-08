@@ -1,13 +1,16 @@
 ---
-title: Perguntas frequentes sobre o DHTML Viewer End-of-Life
+title: 'Perguntas frequentes sobre fim de vida útil de visualizadores DHTML '
 description: A partir de 31 de janeiro de 2014, a plataforma do visualizador DHTML do Scene7 será oficialmente encerrada. Esta notificação fornece respostas para perguntas frequentes para que você possa se preparar para essa transição para a nova plataforma do visualizador HTML5.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 1%
 
 ---
 
 
-# Perguntas frequentes sobre o DHTML Viewer End-of-Life{#dhtml-viewer-end-of-life-faqs}
+# Perguntas frequentes sobre fim de vida útil de visualizadores DHTML {#dhtml-viewer-end-of-life-faqs}
 
 A partir de 31 de janeiro de 2014, a plataforma do visualizador DHTML do Scene7 será oficialmente encerrada. Esta notificação fornece respostas para perguntas frequentes para que você possa se preparar para essa transição para a nova plataforma do visualizador HTML5.
 
@@ -32,13 +35,13 @@ Os padrões da Web estão em constante evolução e o DHTML é uma tecnologia de
 
 Específico à plataforma do visualizador Scene7 DHTML, a solução baseada em JSP e as APIs do Javascript não foram otimizadas para dispositivos móveis para aproveitar os recursos de multitoque e gesto. E mesmo que os visualizadores DHTML lançados em 2011/início de 2012 fossem otimizados para dispositivos móveis, eles eram difíceis de personalizar e manter devido à falta de uma estrutura de desenvolvimento flexível baseada em componentes do SDK.
 
-Orientado por essas limitações no DHTML e pela rápida tração do setor com o HTML5 como um padrão emergente no desktop e no dispositivo móvel, o Scene7 decidiu investir em uma plataforma de visualizador baseada em HTML5. Esse investimento oferecerá aos nossos clientes uma plataforma robusta contra a qual eles podem criar visualizadores interativos mais ricos e mais envolventes, que podem chegar aos usuários em várias telas, incluindo dispositivos desktop, iOS e Android.
+Orientado por essas limitações no DHTML e pela rápida tração do setor com o HTML5 como um padrão emergente no desktop e no dispositivo móvel, o Scene7 decidiu investir em uma plataforma de visualizador baseada em HTML5. Esse investimento irá oferta para nossos clientes uma plataforma robusta contra a qual eles podem criar visualizadores interativos mais ricos e envolventes, que podem atingir os usuários em várias telas, incluindo dispositivos desktop, iOS e Android.
 
 **Como faço para saber se meu visualizador está usando a plataforma DHTML?**
 
 Para determinar se o visualizador que sua empresa está usando é DHTML e, portanto, é afetado por essa alteração, verifique se:
 
-1. Sua empresa está usando um visualizador Scene7 pronto para uso listado nesta tabela onde a &quot;Tecnologia de visualizador&quot; é designada como &quot;DHTML&quot;:
+1. Sua empresa está usando um visualizador Scene7 pronto para uso listado nesta tabela onde a &quot;Tecnologia do visualizador&quot; é designada como &quot;DHTML&quot;:
 
    [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
 
@@ -50,7 +53,7 @@ Para determinar se o visualizador que sua empresa está usando é DHTML e, porta
 
    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference)
 
-1. Sua empresa está usando um visualizador personalizado criado a partir da API Javascript:
+1. Sua empresa está usando um visualizador personalizado criado a partir da API do Javascript:
 
    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference)
 
@@ -58,11 +61,11 @@ Para determinar se o visualizador que sua empresa está usando é DHTML e, porta
 
    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer)
 
-1. Sua empresa está usando um visualizador personalizado criado com a API de flyout de desktop DHTML:
+1. Sua empresa está usando um visualizador personalizado criado com a API de flyout da área de trabalho DHTML:
 
    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer)
 
-1. Sua empresa está usando uma biblioteca de detecção de dispositivos que faz parte do pacote de visualizadores DHTML:
+1. Sua empresa está usando uma biblioteca de detecção de dispositivo que faz parte do pacote de visualizadores DHTML:
 
    Procure por JS incluindo &quot;sj_deviceDetect.js&quot; no código.
 
@@ -75,21 +78,21 @@ A substituição para DHTML é a plataforma do visualizador Scene7 HTML5, que co
 * Visualizadores HTML5 prontos para uso com interações móveis otimizadas em vários tipos de visualizadores, incluindo zoom básico, zoom de deslocamento, conjuntos de imagens, conjuntos de amostras, rotação multidimensional e mídia mista. Para obter exemplos atualizados desses visualizadores, consulte: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
 * O SDK do visualizador HTML5, que permite a personalização abrangente dos visualizadores do Adobe Scene7 para sites e dispositivos compatíveis com HTML5 (como iOS e Android), proporcionando a máxima flexibilidade e criatividade para marcar a aparência e a interatividade do visualizador. A vantagem dos componentes reutilizáveis otimizados para desempenho reduz o custo geral do desenvolvimento do visualizador e acelera o desenvolvimento personalizado.
 
-**Quando a plataforma do visualizador HTML5 terá os recursos necessários para fazer a transição da plataforma do visualizador DHTML?**
+**Quando a plataforma do visualizador HTML5 terá os recursos de que preciso para transição da plataforma do visualizador DHTML?**
 
-O Scene7 lançou o primeiro SDK do visualizador HTML5 no último trimestre de 2011 com o lançamento da versão 5.5. Desde então, adicionamos vários recursos à plataforma e suporte estendido para mais e mais tipos de visualizadores. Para os requisitos mais comuns do visualizador, a plataforma do visualizador HTML5 provavelmente já tem os recursos que você precisa migrar agora. E continuamos a investir agressivamente nesta plataforma de espectadores com lançamentos a cada trimestre.
+O Scene7 lançou o primeiro SDK do visualizador HTML5 no último trimestre de 2011 com o lançamento da versão 5.5. Desde então, adicionamos vários recursos à plataforma e estendemos o suporte para mais e mais tipos de visualizadores. Para os requisitos mais comuns do visualizador, a plataforma do visualizador HTML5 provavelmente já tem os recursos que você precisa migrar agora. E continuamos a investir agressivamente nesta plataforma de espectadores com lançamentos a cada trimestre.
 
 Para determinar se os requisitos do visualizador podem ser atendidos hoje com a plataforma do visualizador HTML5, consulte a seguinte documentação:
 
-[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (para recursos e recursos de personalização de visualizadores prontos para uso)
+[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (para recursos de visualizadores prontos para uso e recursos de personalização)
 
 [https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html) (para acessar a documentação da API do SDK)
 
 Se ainda não tiver certeza se o SDK do visualizador HTML5 atende aos seus requisitos, consulte nossa equipe de serviços profissionais.
 
-**Como transfiro meus visualizadores para a plataforma HTML5?**
+**Como faço para transição meus visualizadores para a plataforma HTML5?**
 
-Para transferir seus visualizadores para a plataforma HTML5, o Scene7 oferece as seguintes opções:
+Para transição dos visualizadores para a plataforma HTML5, o Scene7 oferta as seguintes opções:
 
 1. Use um dos visualizadores HTML5 prontos para uso do Scene7, cujos exemplos podem ser encontrados aqui: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
 1. Configure um dos visualizadores HTML5 prontos para uso do Scene7 na configuração do aplicativo SPS. Isso permitirá que você personalize determinados comportamentos, como tamanho do visualizador, transições, comportamento de zoom etc.: [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
@@ -120,4 +123,4 @@ Embora você ainda possa estar em produção com visualizadores baseados em DHTM
 
 **Com quem posso entrar em contato para obter mais informações?**
 
-Se essas perguntas frequentes não responderem a todas as suas perguntas, entre em contato com o suporte ([s7support@adobe.com](mailto:s7support@adobe.com)) ou com o gerente de conta da Adobe.
+Se essas Perguntas frequentes não responderem todas as suas perguntas, entre em contato com o suporte ([s7support@adobe.com](mailto:s7support@adobe.com)) ou com o gerente de conta da Adobe.
