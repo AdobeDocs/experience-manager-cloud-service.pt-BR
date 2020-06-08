@@ -3,9 +3,9 @@ title: Marque imagens com serviços inteligentes artificialmente.
 description: Marque imagens com serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando os serviços do Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2401'
 ht-degree: 5%
 
 ---
@@ -99,7 +99,7 @@ Não é possível desfazer o treinamento. As diretrizes acima devem ajudá-lo a 
 Para criar e treinar um modelo para suas tags comerciais específicas, siga estas etapas:
 
 1. Crie as tags necessárias e a estrutura de tags apropriada. Carregue as imagens relevantes no repositório do DAM.
-1. Na interface [!DNL Experience Manager] do usuário, acesse **[!UICONTROL Ativos]** > Modelo **** de treinamento.
+1. Na interface [!DNL Experience Manager] do usuário, acesse **[!UICONTROL Ativos]** > Treinamento **[!UICONTROL com tags]** inteligentes.
 1. Clique em **[!UICONTROL Criar]**. Forneça um **[!UICONTROL Título]**, **[!UICONTROL Descrição]**.
 1. Procure e selecione as tags das tags existentes nas `cq:tags` quais você deseja treinar o modelo. Clique em **[!UICONTROL Avançar]**.
 1. Na caixa de diálogo **[!UICONTROL Selecionar ativos]** , clique em **[!UICONTROL Adicionar ativos]** em relação a cada tag. Pesquise no repositório do DAM ou navegue pelo repositório para selecionar pelo menos 10 e no máximo 50 imagens. Selecione os ativos e não a pasta. Depois de selecionar as imagens, clique em **[!UICONTROL Selecionar]**.
