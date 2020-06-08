@@ -1,8 +1,11 @@
 ---
 title: Atalhos de teclado para edição de página
 description: Vários atalhos do teclado estão disponíveis em todo o AEM, inclusive alguns para edição de páginas
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 100%
 
 ---
 
