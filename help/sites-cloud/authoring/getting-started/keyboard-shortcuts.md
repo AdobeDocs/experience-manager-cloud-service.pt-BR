@@ -1,8 +1,11 @@
 ---
 title: Atalhos de teclado para Consoles
 description: Poupe tempo durante a criação usando estes atalhos de teclado
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
 
