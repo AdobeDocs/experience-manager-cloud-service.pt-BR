@@ -1,30 +1,34 @@
 ---
-title: Metadados - Propriedades do fragmento
-description: É possível exibir e editar os metadados (propriedades) dos fragmentos de conteúdo.
+title: Metadados - propriedades dos fragmentos
+description: You can view and edit the metadata (properties) for content fragments.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 12%
 
 ---
 
 
-# Metadados - Propriedades do fragmento{#metadata-fragment-properties}
+# Metadados - propriedades dos fragmentos{#metadata-fragment-properties}
 
-## Editar propriedades/metadados {#editing-properties-meta-data}
+## Editing Properties / Meta data {#editing-properties-meta-data}
 
-É possível exibir e editar os metadados (propriedades) dos fragmentos de conteúdo:
+You can view and edit the metadata (properties) for content fragments:
 
-1. No console **Ativos** , navegue até o local do fragmento de conteúdo.
+1. In the **Assets** console navigate to the location of the content fragment.
 2. Ou:
 
-   * Selecione [**Exibir propriedades **para abrir as caixas de diálogo](/help/assets/manage-digital-assets.md#editing-properties). Uma vez aberto para exibição, você também pode editar.
-   * Abra o fragmento [de conteúdo para Editar](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)e selecione **Metadados** no painel lateral.
+   * Select [**View Properties **to open the dialogs](/help/assets/manage-digital-assets.md#editing-properties). Once open for viewing you can also edit.
+   * Open the [content fragment for Edit](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor), then select **Metadata** from the side panel.
+
    ![metadata](assets/cfm-metadata-01.png)
 
-3. A guia **Básico** fornece opções que podem ser exibidas ou editadas:
+3. The **Basic** tab provides options that you can view or edit:
 
-   * Miniatura, para a qual você pode **carregar a imagem**
+   * Thumbnail, for which you can **Upload Image**
    * **Título**
    * **Descrição**
    * **Tags**
-   * Criado (somente exibição)
+   * Created (display only)
    ![metadata](assets/cfm-metadata-02.png)
