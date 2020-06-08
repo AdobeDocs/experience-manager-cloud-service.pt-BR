@@ -3,6 +3,9 @@ title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
 source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+workflow-type: tm+mt
+source-wordcount: '1097'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ O AEM como serviço em nuvem é uma plataforma para os clientes incluírem códi
 * the format to be used when writing the log messages
 -->
 
-## AEM como registro de serviços em nuvem {#aem-as-a-cloud-service-logging}
+## AEM as a Cloud Service Logging {#aem-as-a-cloud-service-logging}
 
 AEM como um serviço em nuvem oferta a possibilidade de configurar:
 
