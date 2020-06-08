@@ -2,8 +2,11 @@
 title: Publicar ativos, pastas e coleções no Brand Portal
 description: Publicar ativos, pastas e coleções no Brand Portal.
 contentOwner: Vishabh Gupta
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+workflow-type: tm+mt
+source-wordcount: '1160'
+ht-degree: 100%
 
 ---
 
@@ -107,6 +110,7 @@ Você pode publicar ou cancelar a publicação de pastas de ativos imediatamente
          Clique em **Avançar.**
 
       1. Confirme sua seleção no **[!UICONTROL Escopo]** e clique em **[!UICONTROL Publicar no Brand Portal]**.
+
    Será exibida uma mensagem informando que a pasta foi colocada na fila para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver a pasta publicada.
 
 1. **Publicar pastas mais tarde**
