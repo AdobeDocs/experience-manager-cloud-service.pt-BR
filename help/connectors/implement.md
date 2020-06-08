@@ -1,28 +1,31 @@
 ---
-title: Implementação de um conector AEM
-description: Implementação de um conector AEM
+title: Implementação de um conector do AEM
+description: Implementação de um conector do AEM
 translation-type: tm+mt
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+workflow-type: tm+mt
+source-wordcount: '964'
+ht-degree: 9%
 
 ---
 
 
-Implementação de um conector AEM
+Implementação de um conector do AEM
 =============================
 
-As referências úteis para a criação de conectores [](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) AEM são fornecidas a seguir e devem ser lidas em conjunto com orientações sobre [envio](submit.md) e [manutenção](maintain.md) de conectores.
+As referências úteis para a criação de [Conectores do AEM](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) são fornecidas a seguir e devem ser lidas em conjunto com orientações sobre [envio](submit.md) e [manutenção](maintain.md) de conectores.
 
-Observe que uma licença de desenvolvedor para AEM pode ser obtida por meio do [Adobe Exchange Program](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html).
+Observe que uma licença de desenvolvedor para AEM pode ser obtida por meio do Programa [do](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html)Adobe Exchange.
 
 Padrões de integração comuns
 ---------------------------
 
-O AEM é uma solução de gerenciamento de experiência na Web de ponta e oferece muitas áreas potenciais de integração. Padrões comuns de integração incluem:
+O AEM é uma solução de gerenciamento de experiência na Web de ponta e oferta muitas áreas potenciais de integrações. Padrões comuns de integração incluem:
 
-* Como extrair dados de um sistema externo para o AEM. Por exemplo, exportar informações de contato de um CRM para disponibilizá-las a um público maior que visite um site compatível com o AEM.  As implementações devem usar os Serviços [](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs)Programados do Sling, que garantem que a ordem de produção seja executada mesmo que os contêineres fiquem inativos. O código deve ser projetado para supor que a tarefa possa ser acionada mais de uma vez.
-* Exportar dados do AEM para um sistema externo. Por exemplo, as configurações de assinatura de boletins informativos enviadas em um site compatível com AEM para um CRM.
-* Recuperando ativos do AEM. Por exemplo, um Sistema de gerenciamento de conteúdo externo (CMS) que faz referência a um ativo armazenado nos ativos AEM. Ou como outro exemplo, um sistema PIM vinculado a uma imagem nos ativos AEM.
-* Armazenar ativos na infraestrutura do AEM. Por exemplo, um sistema de gerenciamento de recursos de marketing (MRM) armazenando um ativo aprovado nos ativos AEM.
+* Como extrair dados de um sistema externo para o AEM. Por exemplo, exportar informações de contato de um CRM para disponibilizá-las a uma audiência mais ampla visitando um site baseado no AEM.  As implementações devem usar os Serviços [](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs)Agendados do Sling, que garantem que a ordem de produção seja executada mesmo se os container estiverem inativos. O código deve ser projetado para supor que a tarefa possa ser acionada mais de uma vez.
+* Exportar dados do AEM para um sistema externo. Por exemplo, as configurações de subscrição do boletim informativo enviadas em um site compatível com AEM para um CRM.
+* Recuperando ativos do AEM. Por exemplo, um Sistema de Gestão de conteúdo externo (CMS) que faz referência a um ativo armazenado nos ativos AEM. Ou como outro exemplo, um sistema PIM vinculado a uma imagem nos ativos AEM.
+* Armazenar ativos na infraestrutura do AEM. Por exemplo, um sistema de gerenciamento de Recursos de marketing (MRM) armazenando um ativo aprovado nos ativos AEM.
 * Configuração e renderização de um componente de interface personalizada. Por exemplo, permita que um autor arraste e solte um componente de vídeo e configure um vídeo específico para ser reproduzido no site ativo.
 * Agir em um ativo com um serviço de parceiro. Por exemplo, enviar um ativo para uma plataforma de vídeo quando uma página é publicada.
 * Analisar um site, página ou ativo no console de administração do AEM. Por exemplo, fazer recomendações de SEO para uma página existente ou não publicada.
@@ -41,16 +44,16 @@ O Experience Manager como uma [documentação](../overview/introduction.md) do s
 Recursos da comunidade
 --------------------
 
-Além da documentação estática acima, a Adobe e a comunidade do AEM oferecem recursos para ajudar a colocar um conector no mercado:
+Além da documentação estática acima, a Adobe e os recursos de oferta da comunidade do AEM ajudam a colocar um conector no mercado:
 
 * O Fórum [do](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) AEM da Comunidade Adobe é um site ativo no qual seus colegas fazem perguntas e respondem a perguntas
-* Recursos técnicos adicionais da Adobe estão disponíveis para determinados níveis de parceiros. Saiba mais sobre o Programa [Adobe Exchange](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html).
-* Se sua organização deseja obter ajuda de implementação, considere a equipe de Serviços [](http://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) profissionais da Adobe ou consulte o Localizador [de Parceiros de](https://solutionpartners.adobe.com/home/partnerFinder.html) soluções para obter uma lista de parceiros da Adobe em todo o mundo
+* Recursos técnicos adicionais da Adobe estão disponíveis para determinados níveis de parceiros. Saiba mais sobre o Programa [do](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html)Adobe Exchange.
+* Se sua organização deseja obter ajuda de implementação, considere a equipe de [Serviços profissionais](http://www.adobe.com/br/experience-cloud/consulting-services.html) da Adobe ou consulte o [Localizador de parceiros de soluções](https://solutionpartners.adobe.com/home/partnerFinder.html) para obter uma lista de parceiros da Adobe em todo o mundo
 
 Regras de estrutura do pacote
 -----------------------
 
-Para oferecer suporte a implantações contínuas, o AEM como pacotes de serviço em nuvem, dos quais os conectores são exemplos, tem uma separação estrita entre conteúdo &quot;mutável&quot; e &quot;mutável&quot;. Os pacotes devem ser cuidadosamente separados entre os que incluem:
+Para oferecer suporte a implantações contínuas, o AEM como pacotes de serviço em nuvem, dos quais os conectores são exemplos, tem uma separação estrita entre conteúdo &quot;mutável&quot; e &quot;mutável&quot;. Os pacotes devem ser limpos e separados entre os que incluem:
 
 * `/apps`
 * `/content` e `/conf`
@@ -74,7 +77,7 @@ Configurações sensíveis ao contexto
 
 [As Configurações](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) sensíveis ao contexto permitem colocar a configuração em camadas em diferentes pastas, incluindo `/libs`, `/apps`e subpastas em `/conf` `/conf`. Suporta herança para que um cliente possa configurar a configuração global e fazer alterações específicas para cada microsite. Como é possível aproveitar esse recurso para Configurações de serviços em nuvem, o código do conector deve fazer referência à configuração usando a API de configuração sensível ao contexto em vez de fazer referência a um nó de configuração específico.
 
-Se configurações modificadas forem usadas no Conector, arquive o Conector para lidar com a inclusão/união de futuras atualizações nas configurações padrão fornecidas pelo Conector com quaisquer configurações do cliente. Lembre-se de que alterar o conteúdo personalizado (como alterado pelo cliente) ou a configuração sem aviso e consentimento do cliente pode quebrar (ou criar um comportamento inesperado) com seu Conector.
+Se configurações modificadas forem usadas no Conector, arquitete o Conector para lidar com a inclusão/união de futuras atualizações nas configurações padrão fornecidas pelo Conector com quaisquer configurações do cliente. Lembre-se de que alterar o conteúdo personalizado (como alterado pelo cliente) ou a configuração sem aviso e consentimento do cliente pode quebrar (ou criar um comportamento inesperado) com seu Conector.
 
 Práticas recomendadas de codificação
 ----------------------
@@ -84,4 +87,4 @@ Como o AEM como serviço em nuvem é uma solução nativa da nuvem, há algumas 
 Teste do conector AEM
 -------------------------
 
-Novos conectores devem ser criados (ou conectores existentes modificados) usando técnicas locais de desenvolvimento ambiental. A equipe do parceiro fornecerá aos parceiros ISV um ambiente de caixa de proteção onde eles poderão implantar seu conector AEM em um aplicativo baunilha para garantir que ele funcione.
+Novos conectores devem ser criados (ou conectores existentes modificados) usando técnicas locais de desenvolvimento de ambientes. A equipe do parceiro fornecerá aos parceiros ISV um ambiente de caixa de proteção onde eles poderão implantar seu conector AEM em um aplicativo baunilha para garantir que ele funcione.
