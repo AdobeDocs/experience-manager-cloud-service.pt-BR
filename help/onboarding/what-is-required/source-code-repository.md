@@ -3,6 +3,9 @@ title: Repositório de código-fonte - Serviços em nuvem
 description: Repositório de código-fonte - Serviços em nuvem
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
