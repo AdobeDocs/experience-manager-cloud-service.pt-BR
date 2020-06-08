@@ -4,6 +4,9 @@ description: Saiba como o recurso Asset Insights permite rastrear as classifica�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 10%
 
 ---
 
@@ -40,6 +43,7 @@ Você pode visualização as pontuações do Asset Insights na página de metada
    * **[!UICONTROL Web e dispositivos móveis]**: O número de vezes que o ativo fez parte de sites e aplicativos.
    * **[!UICONTROL Social]**: O número de vezes que o ativo foi usado em soluções, como o Adobe Social e o Adobe Campaign.
    * **[!UICONTROL Email]**: O número de vezes que o ativo foi usado em campanhas de email.
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
