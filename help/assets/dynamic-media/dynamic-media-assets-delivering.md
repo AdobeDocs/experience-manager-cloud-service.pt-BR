@@ -1,13 +1,16 @@
 ---
-title: Fornecer ativos do Dynamic Media
+title: Entrega de ativos do Dynamic Media
 description: Com a Mídia dinâmica, você tem várias opções para fornecer ativos de mídia dinâmica (vídeo e imagens) ao seu site.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 81%
 
 ---
 
 
-# Delivering Dynamic Media assets{#delivering-dynamic-media-assets}
+# Entrega de ativos do Dynamic Media{#delivering-dynamic-media-assets}
 
 A forma como você pode fornecer seus ativos de Mídia dinâmica - vídeo e imagens - depende de como seu site é implementado.
 
@@ -18,5 +21,5 @@ Com a Mídia dinâmica, você tem várias opções:
 
 Para obter mais informações, consulte os seguintes tópicos:
 
-* [Adicionar ativos do Dynamic Media às páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Adição de ativos do Dynamic Media a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
