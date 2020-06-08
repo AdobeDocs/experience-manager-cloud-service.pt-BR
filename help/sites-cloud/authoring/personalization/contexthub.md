@@ -3,6 +3,9 @@ title: Visualização de páginas usando dados do ContextHub
 description: A barra de ferramentas do ContextHub exibe os dados dos armazenamentos do ContextHub, permite alterar esses dados e é útil para visualizar o conteúdo
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +29,7 @@ A barra de ferramentas do ContextHub está disponível no modo de Visualização
 
 1. Com a página aberta para edição, clique ou toque em Visualizar na barra de ferramentas.
 
-   ![O botão Visualizar](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
+   ![Botão Pré-visualização](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
 1. Para exibir a barra de ferramentas, clique ou toque no ícone ContextHub.
 
@@ -46,7 +49,7 @@ Os módulos de interface podem exibir dados de um ou mais armazenamentos do Cont
 
 Alguns módulos de interface exibem uma sobreposição de pop-up quando clicados ou tocados. Normalmente, o pop-up contém mais informações do que o que aparece na barra de ferramentas.
 
-![Informações de perfil do ContextHub](/help/sites-cloud/authoring/assets/contexthub-profile.png)
+![Informações do perfil ContextHub](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### Formulários pop-up {#popup-forms}
 
