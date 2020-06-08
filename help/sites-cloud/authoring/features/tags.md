@@ -1,8 +1,11 @@
 ---
-title: Uso de tags
+title: 'Uso de tags  '
 description: Tags são um método rápido e fácil de classificar o conteúdo em um site
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 100%
 
 ---
 
