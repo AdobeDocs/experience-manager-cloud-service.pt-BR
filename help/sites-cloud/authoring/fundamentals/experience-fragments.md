@@ -1,8 +1,11 @@
 ---
 title: Fragmentos de experiência
 description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+workflow-type: tm+mt
+source-wordcount: '1492'
+ht-degree: 100%
 
 ---
 
@@ -226,6 +229,7 @@ Você pode criar variações de seu fragmento de experiência, de acordo com sua
    * **Nome** - se deixado em branco, ele será derivado do Título
    * **Descrição**
    * **Tags de variação**
+
    Por exemplo:
 
    ![Propriedades de variação](/help/sites-cloud/authoring/assets/xf-07.png)
@@ -244,6 +248,7 @@ Agora você pode usar o Fragmento de experiência ao criar suas páginas:
 
    * Arraste o fragmento necessário do Navegador de Ativos e solte no componente.
    * Selecione **Configurar** na barra de ferramentas do componente e especifique o fragmento a ser usado, confirme com **Concluído**.
+
    >[!NOTE]
    >
    >Editar, na barra de ferramentas do componente, opera como um atalho para abrir o fragmento no editor de fragmentos.
