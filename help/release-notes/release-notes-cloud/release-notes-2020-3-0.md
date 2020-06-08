@@ -1,8 +1,11 @@
 ---
 title: Notas de versão para 2020.3.0
 description: Notas de versão para 2020.3.0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 27225bf4b918f39892ac9ab6f46deb97479f08e8
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 100%
 
 ---
 
