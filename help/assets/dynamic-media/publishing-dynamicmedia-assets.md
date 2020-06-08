@@ -33,6 +33,7 @@ Consulte também [Incorporação do visualizador de Vídeo de Mídia Dinâmica o
 >
 >* Os ativos devem ser publicados para usar o URL. Se os ativos não forem publicados, copiar e colar o URL em um navegador da Web não funcionará.
 >* As predefinições de imagens e as predefinições do visualizador devem ser ativadas e publicadas para o delivery ao vivo.
+
 >
 
 
