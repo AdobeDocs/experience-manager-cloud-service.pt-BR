@@ -1,8 +1,11 @@
 ---
 title: Editar conteúdo da página
 description: Uma vez que a sua página é criada, você poderá editar o conteúdo para fazer atualizações necessárias
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2974'
+ht-degree: 100%
 
 ---
 
@@ -229,6 +232,7 @@ As ações reais disponíveis para o usuário serão mostradas conforme apropria
    * Você pode colar na mesma página ou em uma diferente.
    * O item colado será colocado acima do item no qual você seleciona a ação de colar.
    * A ação de Colar será mostrada somente se houver conteúdo na área de transferência.
+
    ![Botão Colar](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
@@ -288,7 +292,7 @@ As opções de edição exatas dependerão do componente. Para alguns componente
 
 * Componente de imagem- tela cheia
 
-   [Entrar no modo de tela cheia](#edit-content-full-screen-mode) para o componente de imagem permite mais espaço para editar a imagem, bem como mostrar opções de edição adicionais como **Inicializar mapa** e **Restaurar zoom**. Além disso, a tela cheia permite a seleção de predefinições de corte.
+   [Entrar no modo de tela cheia](#edit-content-full-screen-mode) para o componente de imagem permite mais espaço para editar a imagem, bem como mostrar opções de edição adicionais como **Inicializar mapa** e **Restaurar zoom**. Além disso, a tela cheia permite selecionar predefinições de corte.
 
    ![Modo de tela cheia do Componente de imagem](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -344,6 +348,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
    * As alças de redimensionamento do componente são exibidas.
    * A barra de ferramentas do emulador é exibida na parte superior da tela.
    * As ações de Layout são exibidas na barra de ferramentas do componente no lugar das ações padrão de edição.
+
    ![Um componente no modo de layout](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
    Agora é possível modificar o layout do componente da mesma maneira que você faria no [modo de layout](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
@@ -438,7 +443,7 @@ Ao criar, o modo de visualização estará disponível utilizando o ícone no ca
 
 A opção **Exibir como publicada** está disponível no menu [Informações da página](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information). Isto abre a página em uma nova guia, atualiza o conteúdo e mostra as páginas exatamente como elas aparecerão no ambiente de publicação.
 
-## Bloquear uma página   {#locking-a-page}
+## Bloquear uma página {#locking-a-page}
 
 O AEM permite bloquear uma página, de modo que ninguém mais possa modificar o conteúdo. Isso é útil quando você está fazendo diversas edições para uma página específica ou quando precisa congelar uma página por pouco tempo.
 
