@@ -1,8 +1,11 @@
 ---
 title: Adição de anotações de página
 description: Muitos componentes diretamente relacionados ao conteúdo permitem que você adicione uma anotação
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 100%
 
 ---
 
