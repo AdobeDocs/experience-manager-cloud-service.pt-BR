@@ -4,6 +4,9 @@ description: Este artigo descreve como compartilhar ativos, pastas e coleções 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '906'
+ht-degree: 5%
 
 ---
 
@@ -172,7 +175,7 @@ Na interface do usuário Ativos em um navegador, você pode explorar os locais d
 
 O Adobe Asset Link simplifica a colaboração entre criadores e comerciantes no processo de criação de conteúdo. Ele conecta os ativos Adobe Experience Manager (AEM) aos aplicativos de desktop da Creative Cloud, Adobe InDesign, Adobe Photoshop e Adobe Illustrator. O painel Adobe Asset Link permite que os criadores acessem e modifiquem o conteúdo armazenado nos ativos AEM sem deixar os aplicativos criativos com os quais estão mais familiarizados.
 
-Consulte [como configurar o AEM para usar com o Adobe Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+Consulte [como configurar o AEM para usar com o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 ## Best practices and troubleshooting {#bestpractices}
 
