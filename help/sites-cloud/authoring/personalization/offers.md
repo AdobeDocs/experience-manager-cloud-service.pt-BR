@@ -3,6 +3,9 @@ title: Criação e gerenciamento de ofertas
 description: Use o console Ofertas para criar ofertas que você pode usar em experiências de atividades
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +27,7 @@ Quando você cria uma marca usando o console Ofertas, ela também aparece no [co
 
 1. No console Navegação, clique ou toque em **Personalização** > **Ofertas**.
 
-   ![Navegar até o console Ofertas](/help/sites-cloud/authoring/assets/offers-navigation.png)
+   ![Navegar até o console do Oferta](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
 1. Click or tap **Create** and then **Create** **Brand**.
 1. Selecione o modelo da marca e clique ou toque em **Próximo**.
@@ -91,7 +94,7 @@ Você pode excluir uma oferta enquanto visualiza o conteúdo de uma pasta em uma
 
 Procure ofertas de qualquer marca usando palavras-chave para correspondência do título.
 
-![Procurando uma oferta](/help/sites-cloud/authoring/assets/offers-search.png)
+![Procurando por uma oferta](/help/sites-cloud/authoring/assets/offers-search.png)
 
 Os critérios de pesquisa atuais aparecem ao lado dos resultados da pesquisa. Você também pode classificar os resultados por coluna em ordem crescente ou decrescente. É possível realizar uma pesquisa em qualquer pasta de qualquer biblioteca de ofertas. Os resultados da pesquisa serão os mesmos, independentemente da pasta atual.
 
