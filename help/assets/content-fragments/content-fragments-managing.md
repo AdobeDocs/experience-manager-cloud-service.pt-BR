@@ -3,6 +3,9 @@ title: Gerenciamento dos fragmentos de conteúdo
 description: Os Fragmentos de conteúdo são armazenados como Ativos, portanto, são gerenciados principalmente no console Ativos.
 translation-type: tm+mt
 source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+workflow-type: tm+mt
+source-wordcount: '1470'
+ht-degree: 11%
 
 ---
 
@@ -37,6 +40,7 @@ O método de criação de um fragmento de conteúdo é (basicamente) o mesmo par
       * [Modelo](/help/assets/content-fragments/content-fragments-models.md) - usado para criar um fragmento que requer conteúdo estruturado; por exemplo, o modelo **Airports**
 
          * Todos os modelos disponíveis são exibidos.
+
    Após a seleção, use **Próximo** para continuar.
 
    ![base do fragmento](assets/cfm-managing-01.png)
@@ -124,6 +128,7 @@ Para abrir o fragmento para edição:
 
    * Clicar/tocar no fragmento ou link do fragmento (isso depende da visualização do console).
    * Selecionando o fragmento, em seguida, **Editar** na barra de ferramentas.
+
    O editor de fragmentos abrirá:
 
    ![editor de fragmentos](assets/cfm-managing-03.png)
@@ -145,6 +150,7 @@ Para abrir o fragmento para edição:
    * [Anotações](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Conteúdo associado](#associating-content-with-your-fragment)
    * [Metadados](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![modos](assets/cfm-managing-04.png)
 
 4. Depois de fazer as alterações, use **Salvar** ou **Cancelar** , conforme necessário.
