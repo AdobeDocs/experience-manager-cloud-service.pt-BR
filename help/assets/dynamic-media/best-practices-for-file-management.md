@@ -1,17 +1,20 @@
 ---
-title: Práticas recomendadas para organizar seus ativos digitais para usar perfis
+title: Práticas recomendadas para organizar seus ativos digitais para usar Perfis
 description: Dicas e práticas recomendadas para nomear, organizar e gerenciar metadados para arquivos de ativos digitais.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 0%
 
 ---
 
 
 # Práticas recomendadas para organizar ativos digitais para usar perfis {#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-Um conceito importante sobre o uso de perfis nos ativos AEM é que eles estão atribuídos às pastas. Dentro de um perfil estão as configurações na forma de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil.
+Um conceito importante sobre o uso de perfis nos ativos AEM é que eles estão atribuídos a pastas. Dentro de um perfil estão as configurações na forma de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil.
 
-Usando estratégias de nomeação de arquivos e pastas consistentes e apropriadas, juntamente com boas práticas de metadados, você pode aproveitar ao máximo sua coleção de ativos digitais e garantir que os arquivos corretos sejam processados pelo perfil correto.
+Usando estratégias de nomenclatura de arquivos e pastas consistentes e apropriadas, juntamente com boas práticas de metadados, você pode aproveitar ao máximo sua coleção de ativos digitais e garantir que os arquivos corretos sejam processados pelo perfil certo.
 
 Consulte [Perfis para processamento de vídeo, metadados e imagens](processing-profiles.md).
 
@@ -22,7 +25,7 @@ Veja a seguir dicas de práticas recomendadas para organizar seus arquivos de at
    * Consulte Perfis [de metadados.](/help/assets/metadata-profiles.md)
    * Consulte [Metadados para gerenciamento](/help/assets/manage-metadata.md)de ativos digitais.
 
-* Na maioria dos casos, sua coleção de ativos digitais está sempre crescendo. Portanto, é importante, mais cedo, formalizar o uso de metadados, a estrutura de pastas e a nomenclatura de arquivos entre todos os ativos carregados. Padronizar com base nesses itens garante que, à medida que o pool de ativos digitais cresce, você aplique perfis de processamento a pastas com maior precisão e consistência.
+* Na maioria dos casos, sua coleção de ativos digitais está sempre crescendo. Portanto, é importante, mais cedo, formalizar o uso de metadados, a estrutura de pastas e a nomenclatura de arquivos entre todos os ativos carregados. Padronizar com base nesses itens garante que, à medida que o seu pool de ativos digitais cresce, você possa aplicar perfis de processamento a pastas com maior precisão e consistência.
 * Use pastas somente para impor uma estrutura de armazenamento consistente para seus ativos digitais. Por exemplo, as estruturas de pastas que podem ajudá-lo a refinar quais perfis atribuir podem incluir o seguinte:
 
    * **Pastas** de desenvolvimento - contém ativos digitais em que você está trabalhando no momento.
@@ -35,6 +38,6 @@ Veja a seguir dicas de práticas recomendadas para organizar seus arquivos de at
    * **Arquivar pastas** - contém ativos digitais desativados.
    * **Pastas** baseadas em datas - contém ativos digitais com base em uma data de criação ou em uma data de última modificação.
 
-* Crie um diretório de pastas que provavelmente não serão alteradas para que os perfis atribuídos não sejam quebrados.
+* Crie um diretório de pastas que provavelmente não serão alteradas para que qualquer perfil atribuído não seja quebrado.
 * Se um ativo já tiver sido publicado, você usará o AEM para mover o ativo para outra pasta e republicar de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-publicado. O ativo publicado original, no entanto, é &quot;perdido&quot; para o AEM e não pode ser despublicado. Portanto, como prática recomendada, cancele a publicação de ativos primeiro antes de movê-los para uma pasta diferente.
 
