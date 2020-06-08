@@ -3,6 +3,9 @@ title: Integração com o Adobe Target
 description: 'Integração com o Adobe Target '
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 4%
 
 ---
 
@@ -50,6 +53,7 @@ Para integrar ao Público alvo, execute as seguintes tarefas:
 >
 >* 3.x é configurado com [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x é configurado com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -82,6 +86,7 @@ A integração do AEM como um serviço em nuvem com o Público alvo da Adobe exi
 >* 2.000 experiências
 >* 50 métricas
 >* 50 segmentos de relatórios
+
 >
 
 
