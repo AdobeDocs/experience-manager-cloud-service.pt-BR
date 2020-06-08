@@ -3,6 +3,9 @@ title: Integração com o Git
 description: Integração com o Git - Serviços em nuvem
 translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 2%
 
 ---
 
@@ -23,11 +26,11 @@ Esta série de vídeos explora vários casos de uso quando se trata de integrar 
 * [Implantação de produção](#production-deployment)
 * [Sincronizando tags de versão](#sync-tags)
 
-A série de vídeos assume um conhecimento básico sobre gerenciamento de git e controle de origem. Consulte os recursos [adicionais abaixo](#additional-resources) para obter mais detalhes sobre git.
+A série de vídeos assume um conhecimento básico sobre gerenciamento de git e controle de origem. Consulte os recursos [adicionais abaixo](#additional-resources) para obter mais detalhes sobre o git.
 
 >[!NOTE]
 >
-> As etapas e convenções de nomenclatura descritas nesta série de vídeo representam algumas práticas recomendadas para trabalhar com um repositório git gerenciado pelo cliente e o Cloud Manager. Espera-se que as convenções e os fluxos de trabalho descritos sejam adaptados a equipes de desenvolvimento individuais.
+> As etapas e convenções de nomenclatura descritas nesta série de vídeo representam algumas práticas recomendadas para trabalhar com um repositório git gerenciado pelo cliente e o Cloud Manager. Espera-se que as convenções e os workflows representados sejam adaptados às equipes de desenvolvimento individuais.
 
 ## Sincronização inicial {#initial-sync}
 
@@ -55,11 +58,11 @@ Prepare o código para uma versão de produção em um repositório git gerencia
 
 ## Sincronizando tags de versão {#sync-tags}
 
-Sincronize as tags de versão de um repositório git do Cloud Manager em um repositório git gerenciado pelo cliente para fornecer visibilidade sobre qual código foi implantado nos ambientes de estágio e produção.
+Sincronize as tags de versão de um repositório de git do Cloud Manager em um repositório de git gerenciado pelo cliente para fornecer visibilidade sobre qual código foi implantado para ambientes de estágio e produção.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 
-## Additional Resources {#additional-resources}
+## Recursos adicionais {#additional-resources}
 
 * [Recursos do GitHub](https://try.github.io)
 * [Tutoriais do Git Atlassiano](https://www.atlassian.com/git/tutorials/what-is-version-control)
