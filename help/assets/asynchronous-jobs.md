@@ -1,35 +1,38 @@
 ---
 title: Operações assíncronas
-description: O AEM Assets otimiza o desempenho ao concluir de forma assíncrona algumas tarefas que consomem muitos recursos.
+description: AEM Assets optimizes performance by asynchronously completing some resource-intensive tasks.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '677'
+ht-degree: 9%
 
 ---
 
 
 # Operações assíncronas {#asynchronous-operations}
 
-Para reduzir o impacto negativo no desempenho, o Adobe Experience Manager (AEM) Assets processa de modo assíncrono determinadas operações de ativos de longa duração e com uso intenso de recursos.
+To reduce adverse impact on performance, Adobe Experience Manger (AEM) Assets processes certain long-running and resource-intensive asset operations asynchronously.
 
-Essas operações incluem:
+These operations include:
 
-* Excluindo muitos ativos
+* Deleting many assets
 * Movimentação de muitos ativos ou ativos com muitas referências
 * Exportar/importar metadados de ativos em massa.
-* Buscando ativos, que estão acima do limite definido, de uma implantação remota do AEM.
+* Fetching assets, that are above the threshold limit set, from a remote AEM deployment.
 
-O processamento assíncrono envolve enfileiramento de várias tarefas e, eventualmente, sua execução em série, dependendo da disponibilidade dos recursos do sistema.
+Asynchronous processing involves enqueuing multiple jobs and eventually running them in a serial manner subject to the availability of system resources.
 
 Você pode visualização o status de trabalhos assíncronos na página Status **[!UICONTROL do trabalho]** assíncrono.
 
 >[!NOTE]
 >
->Por padrão, os trabalhos no AEM Assets são executados em paralelo. Se N for o número de núcleos da CPU, os trabalhos N/2 poderão ser executados em paralelo, por padrão. Para usar configurações personalizadas para a fila de trabalhos, modifique a configuração da Fila **padrão de operação** assíncrona do console da Web. Para obter mais informações, consulte Configurações [de](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations)fila.
+>By default, jobs in AEM Assets run in parallel. If N is the number of CPU cores, N/2 jobs can run in parallel, by default. Para usar configurações personalizadas para a fila de trabalhos, modifique a configuração da Fila **padrão de operação** assíncrona do console da Web. For more information, see [Queue Configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## Monitoramento do status das operações assíncronas {#monitoring-the-status-of-asynchronous-operations}
+## Monitoring the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
-Sempre que o AEM Assets processar uma operação de forma assíncrona, você receberá uma notificação na sua caixa de entrada <!-- and through email -->.
+Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox <!-- and through email -->.
 
 Para visualização o status das operações assíncronas em detalhes, navegue até a página Status **[!UICONTROL do trabalho]** assíncrono.
 
@@ -56,7 +59,7 @@ Para visualização o status das operações assíncronas em detalhes, navegue a
 
    ![open_icon](assets/open_icon.png)
 
-   A página de detalhes da tarefa é exibida.
+   The job details page is displayed.
 
    ![job_details](assets/job_details.png)
 
@@ -87,24 +90,24 @@ Você pode configurar o número limite de ativos ou referências para que os ati
 
 ### Configurar limites para operações de exclusão assíncronas {#configuring-thresholds-for-asynchronous-delete-operations}
 
-Se o número de ativos ou pastas a serem excluídos exceder o número limite, a operação de exclusão será executada de forma assíncrona.
+If the number of assets or folders to be deleted exceed the threshold number, the delete operation is performed asynchronously.
 
 1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-1. No console da Web, abra a configuração **[!UICONTROL Async Delete Operation Job Processing]** .
-1. Na caixa Número **[!UICONTROL limite de ativos]** , especifique o número limite de ativos/pastas para o processamento assíncrono de operações de exclusão.
+1. From the web console, open the **[!UICONTROL Async Delete Operation Job Processing]** configuration.
+1. In the **[!UICONTROL Threshold number of assets]** box, specify the threshold number of assets/folders for asynchronous processing of delete operations.
 
-   ![delete_limit](assets/delete_threshold.png)
+   ![delete_threshold](assets/delete_threshold.png)
 
 1. Salve as alterações.
 
-### Configurar limites para operações de movimentação assíncronas {#configuring-thresholds-for-asynchronous-move-operations}
+### Configuring thresholds for asynchronous move operations {#configuring-thresholds-for-asynchronous-move-operations}
 
-Se o número de ativos/pastas ou referências a serem movidos exceder o número limite, a operação de movimentação será executada de forma assíncrona.
+If the number of assets/folders or references to be moved exceed the threshold number, the move operation is performed asynchronously.
 
 1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-1. No console da Web, abra a configuração Processamento **[!UICONTROL de Trabalho da Operação de Movimentação]** Assíncrona.
-1. Na caixa Número **[!UICONTROL limite de ativos/referências]** , especifique o número limite de ativos/pastas ou referências para o processamento assíncrono de operações de movimentação.
+1. From the web console, open the **[!UICONTROL Async Move Operation Job Processing]** configuration.
+1. In the **[!UICONTROL Threshold number of assets/references]** box, specify the threshold number of assets/folders or references for asynchronous processing of move operations.
 
-   ![move_limit](assets/move_threshold.png)
+   ![move_threshold](assets/move_threshold.png)
 
 1. Salve as alterações.
