@@ -4,6 +4,9 @@ description: Este artigo descreve como importar e exportar metadados em massa.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 10%
 
 ---
 
@@ -33,7 +36,7 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
    | Inicializar fluxos de trabalho | False por padrão. Quando definidas como `true` e as configurações padrão do Iniciador estiverem em vigor para o fluxo de trabalho WriteBack de metadados DAM (que grava metadados nos dados binários XMP). Habilitar workflows de inicialização retarda o sistema. |
    | Nome de coluna do caminho do ativo | Define o nome da coluna para o arquivo CSV com ativos. |
 
-1. Toque/clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é enviada para sua caixa de entrada de Notificação. Navegue até a página de propriedades do ativo e verifique se os valores de metadados foram importados corretamente para ativos.
+1. Toque/clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é enviada para sua caixa de entrada de Notificação. Navegue até a página de propriedade do ativo e verifique se os valores de metadados foram importados corretamente para ativos.
 
 Para adicionar data e carimbo de data e hora ao importar metadados, use o `YYYY-MM-DDThh:mm:ss.fff-00:00` formato para data e hora. A data e a hora são separadas por `T`, `hh` é horas no formato de 24 horas, `fff` é nanossegundos e `-00:00` é deslocamento de fuso horário. Por exemplo, `2020-03-26T11:26:00.000-07:00` é 26 de março de 2020 às 11:26:00.000 da hora PST.
 
