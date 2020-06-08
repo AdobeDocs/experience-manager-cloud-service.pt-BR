@@ -3,6 +3,9 @@ title: Projetos
 description: Projetos permitem agrupar recursos em uma única entidade, cujo ambiente comum e compartilhado facilita o gerenciamento dos seus projetos
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1269'
+ht-degree: 81%
 
 ---
 
@@ -32,7 +35,7 @@ Consulte os seguintes tópicos adicionais:
 
 O console Projetos é onde você acessa e gerencia seus projetos no AEM.
 
-![O console Projetos](/help/sites-cloud/authoring/assets/projects-console.png)
+![The Projects console](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Selecione **Linha do tempo** e, em seguida, um projeto para visualizar sua linha do tempo.
 * Clique/toque em **Selecionar** para entrar no modo de seleção.
@@ -57,7 +60,7 @@ Você pode ter os seguintes blocos associados ao seu projeto. Cada um está desc
 * Lançamentos
 * Tarefas
 
-### Assets {#assets}
+### Ativos {#assets}
 
 No bloco **Assets**, você pode reunir todos os ativos que você usa para um projeto específico.
 
@@ -81,7 +84,7 @@ O bloco **Experiências** permite adicionar um aplicativo para dispositivos móv
 
 ![Experiências](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Os ícones indicam que tipo de experiência é representada: um site, um aplicativo para dispositivos móveis ou uma publicação. Adicione experiências clicando no sinal de + ou em **Adicionar experiência** e selecionando o tipo de experiência.
+Os ícones indicam que tipo de experiência é representada: site, aplicativo móvel ou publicação. Adicione experiências ao clicar no sinal + ou em **Adicionar experiência** e selecionar o tipo de experiência.
 
 ![Adicionar uma experiência](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -168,12 +171,12 @@ As diferentes funções de usuário são definidas em um modelo de Projeto e sã
 
 Todos os projetos oferecem suporte às seguintes funções padrão, para permitir que você administre permissões de segurança e controle:
 
-| Função | Descrição | Permissões | Associação de Grupo |
+| Função | Descrição | Permissões     | Associação de Grupo |
 |---|---|---|---|
 | Observador | Um usuário nessa função pode visualizar detalhes do projeto, incluindo seu status. | Permissões somente leitura em um projeto | `workflow-users` grupo |
-| Editor | Um usuário nessa função pode fazer o upload e a edição do conteúdo de um projeto. | Acesso de leitura e gravação em um projeto, metadados associados e ativos relacionados; privilégios para fazer upload de uma lista de captura, captura de fotos e revisar e aprovar ativos; permissão de gravação em /etc/commerce; modificar permissão em um projeto específico | grupo de usuários de fluxo de trabalho |
+| Editor | Um usuário nessa função pode fazer o upload e a edição do conteúdo de um projeto. | Acesso de leitura e gravação em um projeto, metadados associados e ativos relacionados; privilégios para fazer upload de uma lista fotográfica, fotografar e revisar e aprovar ativos; permissão de gravação em /etc/commerce; modificar permissão em um projeto específico | grupo de usuários de fluxo de trabalho |
 | Proprietário | Um usuário nessa função pode iniciar um projeto. Um proprietário pode criar um projeto, iniciar um trabalho em um projeto e também mover ativos aprovados para a pasta Produção. Além disso, todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Write permission on `/etc/commerce` | `dam-users` grupo (para poder criar um projeto) grupo de administradores de projeto (para poder mover ativos) |
 
 >[!NOTE]
 >
->Quando você cria o projeto e adiciona usuários às diferentes funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas. Por exemplo, um projeto chamado Myproject teria três grupos **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**. No entanto, se o projeto for excluído, esses grupos não serão excluídos automaticamente. Um administrador precisa excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.
+>Ao criar o projeto e adicionar usuários às várias funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas. Por exemplo, um projeto chamado Myproject teria três grupos: **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**. No entanto, se o projeto for excluído, esses grupos não serão excluídos automaticamente. Um administrador precisa excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.
