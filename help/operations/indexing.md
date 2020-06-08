@@ -3,6 +3,9 @@ title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 translation-type: tm+mt
 source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+workflow-type: tm+mt
+source-wordcount: '1430'
+ht-degree: 3%
 
 ---
 
@@ -142,7 +145,7 @@ Quando a Adobe altera um índice predefinido como &quot;damAssetLucene&quot; ou 
 | /oak:index/cqPageLucene | Sim | Sim | Não |
 | /oak:index/cqPageLucene-2 | Sim | Não | Sim |
 
-### Limitações        {#limitations}
+### Limitações         {#limitations}
 
 Atualmente, o gerenciamento de índice é compatível apenas com índices do tipo `lucene`.
 
