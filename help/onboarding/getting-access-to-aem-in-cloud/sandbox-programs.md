@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Programas Sandbox {#sandbox-programs}
+# Programas do Sandbox {#sandbox-programs}
 
 ## Introdução {#introduction}
 
@@ -130,7 +130,7 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
    >[!IMPORTANT]
    >O acesso ao Console do desenvolvedor é definido pelo Gerenciador da **nuvem - Função** do desenvolvedor no Console **de** administração. Um usuário com uma permissão de função de desenvolvedor pode cancelar a hibernação de um ambiente do Programa Sandbox.
 
-1. Clique em **Cancelar hibernação**, conforme mostrado na figura abaixo:
+1. Clique em **Cancelar hibernação**, como mostrado na figura abaixo:
 
    ![](assets/de-hibernation-img1.png)
 
