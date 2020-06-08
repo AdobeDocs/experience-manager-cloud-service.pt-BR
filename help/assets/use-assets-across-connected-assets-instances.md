@@ -1,9 +1,12 @@
 ---
-title: Use os ativos conectados para compartilhar ativos DAM no fluxo de trabalho de criação do [!DNL Adobe Experience Manager Sites].
-description: Use ativos disponíveis em uma implantação remota [!DNL Adobe Experience Manager Assets] ao criar suas páginas da Web em outra implantação do [!DNL Adobe Experience Manager Sites].
+title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+description: Use ativos disponíveis em uma implantação [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5e89a44cb727547af9db783662e035c4e2102a4e
+workflow-type: tm+mt
+source-wordcount: '2049'
+ht-degree: 53%
 
 ---
 
@@ -89,6 +92,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. Selecione o iniciador do fluxo de trabalho e clique em **[!UICONTROL Propriedades]** na barra de ações.
 
    1. In the [!UICONTROL Properties] wizard, change the **[!UICONTROL Path]** fields as the following mappings to update their regular expressions to exclude the mount point **[!UICONTROL connectedassets]**.
+
    | Antes | Depois |
    | ------------------------------------------------------- | -------------------------------------------------------------------------- |
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
