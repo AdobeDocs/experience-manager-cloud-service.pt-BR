@@ -243,12 +243,14 @@ Você pode executar novamente o recorte inteligente para gerar as colheitas adic
 
       * Se a imagem tiver apenas um recorte inteligente ou uma amostra inteligente, arraste na imagem a alça do canto da caixa de recorte para ajustar o tamanho da área visível do recorte.
       * Se a imagem tiver um recorte inteligente e uma amostra inteligente, arraste a alça do canto da caixa de recorte para ajustar o tamanho da área visível do recorte. Ou, toque ou clique na amostra inteligente abaixo da imagem (as amostras de cores são estáticas), em seguida, arraste a alça do canto da caixa de corte para ajustar o tamanho da área visível da amostra.
+
       ![Redimensionamento do recorte inteligente de uma imagem.](assets/edit_smart_crops-resize.png)
 
    * Mova a caixa de recorte inteligente. Execute um dos procedimentos a seguir:
 
       * Se a imagem tiver apenas um recorte inteligente ou uma amostra inteligente, arraste a caixa de recorte para um novo local.
       * Se a imagem tiver um recorte inteligente e uma amostra inteligente, arraste a caixa de recorte inteligente para um novo local. Ou, toque ou clique na amostra inteligente abaixo da imagem (as amostras de cores são estáticas) e arraste a caixa de recorte de amostra inteligente para um novo local.
+
       ![edit_smart_ches-move](assets/edit_smart_crops-move.png)
 
    * Desfaça todas as edições e restaure o recorte inteligente ou a amostra inteligente original (aplica-se somente à sessão de edição atual).
