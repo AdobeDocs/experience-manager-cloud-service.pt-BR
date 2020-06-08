@@ -1,8 +1,11 @@
 ---
-title: Configurar o ambiente da sua conta
-description: O AEM fornece a você a capacidade de configurar a sua conta e certos aspectos do ambiente do autor
-translation-type: ht
+title: 'Configurar o ambiente da sua conta  '
+description: O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 100%
 
 ---
 
@@ -82,6 +85,7 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
    * [Atalhos de teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Atalhos de teclado para consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+
    Essa opção ativa atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados, por exemplo, caso um usuário tenha determinados requisitos de acessibilidade.
 
 * **Ativar a Página inicial dos ativos**
