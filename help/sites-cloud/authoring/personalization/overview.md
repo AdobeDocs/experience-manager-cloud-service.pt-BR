@@ -3,6 +3,9 @@ title: Personalização e direcionamento de conteúdo
 description: Saiba como o AEM pode criar conteúdo personalizado
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 83%
 
 ---
 
@@ -41,7 +44,7 @@ Você define experiências para uma atividade. É possível usar o [console Ativ
 
 Uma oferta é um conteúdo que aparece em uma localização em uma página para uma experiência. Use ofertas diferentes para experiências diferentes para maximizar a eficácia do conteúdo para os seus públicos.
 
-Por exemplo, a página de mulheres de um site de amostra pode usar ofertas como a imagem do teaser que aparece na parte superior da página. Uma oferta diferente é usada como teaser para a experiência Mulheres acima de 30 anos e para a experiência Mulheres com menos de 30 anos.
+Por exemplo, a página de mulheres de um site de amostra pode usar o oferta como a imagem do teaser que aparece na parte superior da página. Uma oferta diferente é usada como teaser para a experiência Mulheres acima de 30 anos e para a experiência Mulheres com menos de 30 anos.
 
 Use o [console Ofertas](/help/sites-cloud/authoring/personalization/offers.md) para criar ofertas que você possa usar em várias experiências. Crie ofertas de uso único ou adicione ofertas de uma biblioteca de ofertas ao [criar conteúdo direcionado](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
