@@ -1,8 +1,11 @@
 ---
 title: 'Criação de uma página para dispositivos móveis  '
 description: Ao criar em dispositivos móveis, você pode alternar entre vários emuladores para ver o que o usuário final vê
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 100%
 
 ---
 
