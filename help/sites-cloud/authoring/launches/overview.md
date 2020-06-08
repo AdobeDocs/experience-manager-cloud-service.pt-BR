@@ -3,6 +3,9 @@ title: Lançamentos
 description: Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma versão futura. Eles permitem que você faça alterações prontas para publicação futura, mantendo ao mesmo tempo suas páginas atuais
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 91%
 
 ---
 
@@ -37,15 +40,16 @@ Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma 
 
 Lançamentos permitem que você:
 
-* Crie uma cópia das suas páginas de origem:
-   * A cópia é o seu lançamento.
+* Crie uma cópia das páginas de origem:
+   * A cópia é sua inicialização.
    * As páginas de origem de nível superior são conhecidas como **Produção**.
       * As páginas de origem podem ser obtidas de várias ramificações (separadas).
+
    ![Ordem de funcionamento das inicializações](/help/sites-cloud/authoring/assets/launches-order.png)
 
-* Edite a configuração de lançamento:
+* Edite a configuração de inicialização:
    * Adicione ou remova páginas e/ou ramificações ao/do lançamento.
-   * Edite propriedades de lançamento, como **Título**, **Data de lançamento**, sinalizador de **Pronto para produção**.
+   * Edite as propriedades de inicialização; como **Título**, **Data de inicialização**, sinalizador **Pronto para produção**.
 * Você pode promover e publicar o conteúdo manual ou automaticamente:
    * Manualmente:
       * Promova seu conteúdo de lançamento de volta ao **Destino** (páginas de origem) quando ele estiver pronto para ser publicado.
@@ -59,11 +63,13 @@ Lançamentos permitem que você:
 * Atualize suas páginas de origem e de lançamento em paralelo:
    * As alterações nas páginas de origem são implementadas automaticamente na cópia de lançamento (se configurada como herança, ou seja, como uma live copy).
    * As alterações na sua cópia de lançamento podem ser feitas sem interromper essas atualizações automáticas ou as páginas de origem.
+
    ![Ações paralelas](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [Crie um lançamento aninhado](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - um lançamento dentro de outro:
    * A origem é um lançamento existente.
    * Você pode [promover um lançamento ](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch)aninhado para qualquer destino. Esse destino pode ser um lançamento pai ou as páginas de origem de nível superior (Produção).
+
    ![Uma inicialização aninhada](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
