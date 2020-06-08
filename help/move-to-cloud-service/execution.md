@@ -49,19 +49,19 @@ Consulte a Ferramenta [de transferência de](/help/move-to-cloud-service/content
 
 ## Refatoração de código {#code-refactor}
 
-Desenvolver e executar o código no AEM como um serviço de nuvem requer uma alteração no conjunto de ideias. Observe que o código deve ser resiliente, especialmente porque uma instância pode ser interrompida a qualquer momento. O código em execução no serviço de nuvem deve estar ciente de que ele está sempre em execução em um cluster. Isso significa que há sempre mais de uma instância em execução.
+Desenvolver e executar o código no AEM como um serviço de nuvem requer uma alteração no conjunto de ideias. It should be noted that code must be resilient, especially as an instance might be stopped at any time. Code running in Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running.
 
-Determinadas alterações são necessárias para que os projetos do AEM Maven sejam compatíveis com o AEM como um serviço em nuvem. O AEM como um serviço em nuvem exige uma separação de *conteúdo* e *código* em pacotes separados para implantação no AEM.
+Certain changes are required to AEM Maven projects to be compatible with AEM as a Cloud Service. AEM as a Cloud Service requires a separation of *content* and *code* into discrete packages for deployment into AEM.
 
 * `/apps` e `/libs` são consideradas áreas imutáveis do AEM, pois não podem ser alteradas (criar, atualizar, excluir) após o AEM ser iniciado (isto é, no tempo de execução). Qualquer tentativa de alterar uma área imutável no tempo de execução falhará.
 
-* Tudo o resto no repositório, `/content` , `/conf` , `/var` , `/home` , `/etc` , `/oak:index` , `/system` , `/tmp` , etc. são todas áreas mutáveis, o que significa que podem ser alteradas em tempo de execução.
+* Everything else in the repository, `/content` , `/conf` , `/var` , `/home` , `/etc` , `/oak:index` , `/system` , `/tmp` , etc. are all mutable areas, meaning they can be changed at runtime.
 
 Consulte a Estrutura [do pacote](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure) recomendada para obter mais detalhes.
 
-Há algumas diretrizes de desenvolvimento adicionais que você precisa conhecer ao desenvolver no AEM como um serviço em nuvem. Consulte [AEM como Diretrizes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) de desenvolvimento de serviços em nuvem para saber mais.
+There are some additional development guidelines that you need to be aware of when developing on AEM as a Cloud Service. Consulte [AEM como Diretrizes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) de desenvolvimento de serviços em nuvem para saber mais.
 
-Na fase de planejamento, você deve ter uma lista de áreas que precisam ser refatorizadas para serem compatíveis com o serviço em nuvem. Você também deve revisar as Diretrizes [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) desenvolvimento para obter mais detalhes sobre como redimensionar e otimizar o código para ir para o Serviço de nuvem.
+From your Planning phase, you should have a list of areas that need to be refactored to be compatible with Cloud Service. Você também deve revisar as Diretrizes [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) desenvolvimento para obter mais detalhes sobre como redimensionar e otimizar o código para ir para o Serviço de nuvem.
 
 Para ajudar a acelerar algumas de suas tarefas de refatoração de código, você pode usar as seguintes ferramentas:
 
@@ -83,7 +83,7 @@ Alguns recursos adicionais estão listados abaixo:
 
    > [!VIDEO](https://video.tv.adobe.com/v/30602)
 
-* Consulte a documentação Configuração [de desenvolvimento](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) local para configurar um ambiente de desenvolvimento local
+* Review [Local Development Setup](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) documentation to set up a local development environment
 
 
 Para gerenciar o desenvolvimento contínuo do código no AEM ativo, juntamente com a tarefa de refatoração de código como parte da jornada de transição, é recomendável programar um período de congelamento de código até concluir a reestruturação do projeto Maven para ser compatível com o AEM como um serviço em nuvem.
