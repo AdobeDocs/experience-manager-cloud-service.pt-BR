@@ -1,8 +1,11 @@
 ---
 title: Markdown
-description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você grave conteúdo facilmente.
+description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você escreva conteúdo facilmente.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 4%
 
 ---
 
@@ -89,7 +92,7 @@ A sintaxe inclui:
 
 * Um ponto de exclamação: !;
 * seguido de um conjunto de colchetes, que contém o texto alternativo do atributo da imagem;
-* seguido por um conjunto de parênteses, contendo o URL ou o caminho para a imagem, e um atributo de título opcional entre aspas duplas ou simples.
+* seguido por um conjunto de parênteses, contendo o URL ou o caminho para a imagem, e um atributo de título opcional incluído entre duplos ou aspas simples.
 
 Uma imagem de estilo de referência tem a seguinte sintaxe:
 
@@ -133,7 +136,7 @@ Para criar uma lista não ordenada, use o &amp;ast; antes dos itens na lista. Po
 
     `* item in list`
 
-Para criar uma lista ordenada, adicione os números, seguidos de um ponto, antes de cada item da lista. Por exemplo:
+Para criar uma lista ordenada, adicione os números, seguidos de um ponto, antes de cada item na lista. Por exemplo:
 
     `1. First item in list.`
 
@@ -177,7 +180,7 @@ Blocos de código geralmente são usados para ilustrar o código-fonte. É poss�
 
 ## A barra invertida escapa {#backslash-escapes}
 
-Você pode usar escape de barra invertida para gerar caracteres literais com significado especial na formatação da sintaxe. Por exemplo, se você quiser circundar uma palavra com asteriscos literais (em vez de uma tag HTML &lt;em>), você pode usar barras invertidas antes dos asteriscos, como em:
+Você pode usar escape de barra invertida para gerar caracteres literais que têm um significado especial na formatação da sintaxe. Por exemplo, se você quiser circundar uma palavra com asteriscos literais (em vez de uma tag HTML &lt;em>), você pode usar barras invertidas antes dos asteriscos, como em:
 
     `\\*literal asterisks\\*`
 
