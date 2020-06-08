@@ -3,6 +3,9 @@ title: Promoção de lançamentos
 description: 'Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar. '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 83%
 
 ---
 
@@ -36,6 +39,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 >
 >* [Promover um lançamento aninhado](#promoting-a-nested-launch) quando há mais de um lançamento na estrutura.
 >* [Lançamentos - a ordem dos eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) para obter mais detalhes sobre promoção e publicação automática.
+
 >
 
 
@@ -59,6 +63,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
       * **Divulgar as páginas modificadas**
       * **Divulgar a página atual**
       * **Divulgar página atual e subpáginas**
+
       Por exemplo, ao selecionar para promover somente as páginas modificadas:
 
       ![Iniciar promoção](/help/sites-cloud/authoring/assets/launches-promote.png)
@@ -93,13 +98,14 @@ Depois de criar uma inicialização aninhada, é possível promovê-la para qual
 1. Selecione **Promover lançamento** para abrir o assistente.
 1. Insira os detalhes necessários:
    * **Target**
-      * **Objetivo** de promoção - Você pode promover para qualquer uma das fontes.
+      * **público alvo** de promoção - você pode promover para qualquer uma das fontes.
       * **Excluir inicialização após promoção** - Após a promoção, a inicialização selecionada e todas as inicializações aninhadas dentro dela serão excluídas.
    * **Escopo** - Aqui você pode selecionar se deseja promover a inicialização inteira ou somente as páginas que foram realmente editadas. Nesse último caso, é possível incluir/excluir as subpáginas. A configuração padrão é promover apenas as alterações da página atual:
       * **Promover lançamento completo**
       * **Divulgar as páginas modificadas**
       * **Divulgar a página atual**
       * **Divulgar página atual e subpáginas**
+
    ![Promover configurações de inicialização](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
 1. Selecione **Próximo**.
@@ -115,7 +121,7 @@ Depois de criar uma inicialização aninhada, é possível promovê-la para qual
 
    ![No console de inicialização](/help/sites-cloud/authoring/assets/launches-console.png)
 
-## Processamento de páginas promovidas usando o fluxo de trabalho do AEM {#processing-promoted-pages-using-aem-workflow}
+## Processamento de Páginas promovidas usando o fluxo de trabalho do AEM {#processing-promoted-pages-using-aem-workflow}
 
 Use modelos de fluxo de trabalho para realizar o processamento em massa de páginas de Lançamentos promovidos:
 
