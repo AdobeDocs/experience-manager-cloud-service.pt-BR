@@ -1,8 +1,11 @@
 ---
-title: Como trabalhar com seletores
+title: Trabalho com seletores
 description: Selecionar ativos para imagens interativas, vídeo interativo e banners de carrossel
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 18%
 
 ---
 
@@ -15,19 +18,19 @@ Este tópico aborda como usar os seletores Produto, Site e Ativo, incluindo a ca
 
 Você acessa os seletores ao criar conjuntos de carrossel, adicionar pontos de acesso e mapas de imagem, criar vídeos e imagens interativos.
 
-Por exemplo, neste banner de carrossel, você usa o seletor Produto se estiver vinculando um ponto de acesso ou mapa de imagem a uma página do Quickview; use o seletor de Site se estiver vinculando um ponto de acesso ou mapa de imagem a um Hiperlink; use o seletor de Ativos ao criar um novo slide.
+Por exemplo, neste banner de carrossel, você usa o seletor de Produto se estiver vinculando um ponto de acesso ou mapa de imagem a uma página do Quickview; use o seletor de Site se estiver vinculando um ponto de acesso ou mapa de imagem a um Hiperlink; use o seletor de Ativos ao criar um novo slide.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
 Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou os mapas de imagem vão, você está usando o seletor. O seletor de Site só funciona se você for um cliente do AEM Sites. O seletor de produtos também exige o AEM Commerce.
 
-## Selecionar produtos no Dynamic Media {#selecting-products}
+## Seleção de produtos no Dynamic Media {#selecting-products}
 
 Use o seletor de Produto para escolher um produto quando quiser que um ponto de acesso ou mapa de imagem forneça uma visualização rápida para um produto específico no catálogo de produtos.
 
-1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se você tiver definido um ponto de acesso ou mapa de imagem).
+1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
 
-   O seletor de Produto está na área **[!UICONTROL Action Type** .
+   The Product selector is in the **[!UICONTROL Action Type** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -47,7 +50,7 @@ Use o seletor de Produto para escolher um produto quando quiser que um ponto de 
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Toque em **[!UICONTROL Exibir como]** alterar a forma como você visualiza os produtos - Visualização **[!UICONTROL de]** lista ou Visualização **[!UICONTROL de]** cartão.
+   Toque em **[!UICONTROL Visualizar como]** para alterar a exibição de produtos - **[!UICONTROL Exibição em lista]** ou **[!UICONTROL Exibição de cartão]**.
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -55,21 +58,21 @@ Use o seletor de Produto para escolher um produto quando quiser que um ponto de 
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. Quando estiver no modo de **[!UICONTROL Visualização]** , você pode tocar no ponto de acesso ou no mapa de imagens e ver a aparência do Quickview.
+1. Quando estiver no modo de **[!UICONTROL Pré-visualização]** , você pode tocar no ponto de acesso ou no mapa de imagens e ver a aparência do Quickview.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Selecionar sites no Dynamic Media {#selecting-sites}
+## Seleção de sites no Dynamic Media {#selecting-sites}
 
 Use o seletor de site para escolher uma página da Web quando quiser que um ponto de acesso ou mapa de imagem vincule-se a uma página da Web gerenciada em sites do AEM.
 
-1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se você tiver definido um ponto de acesso ou mapa de imagem).
+1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
 
-   O Seletor de site está na área Tipo **[!UICONTROL de]** ação.
+   O Seletor de site está na área **[!UICONTROL Tipo de ação]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Toque no ícone do Seletor **[!UICONTROL de]** site (pasta com lupa) e navegue até uma página nos sites do AEM à qual você deseja vincular o ponto de acesso ou mapa de imagem.
+1. Toque no ícone do **[!UICONTROL Seletor de sites]** (pasta com lupa) e navegue até uma página no AEM Sites a qual você deseja vincular o ponto de acesso ou mapa de imagem.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -77,7 +80,7 @@ Use o seletor de site para escolher uma página da Web quando quiser que um pont
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Quando no modo de **[!UICONTROL Visualização]** , se você tocar no ponto de acesso ou no mapa de imagem, você navega até a página do site do AEM especificada.
+1. Quando no modo de **[!UICONTROL Pré-visualização]** , se você tocar no ponto de acesso ou no mapa de imagem, você navega até a página do site do AEM especificada.
 
 ## Selecionar ativos no Dynamic Media {#selecting-assets}
 
@@ -86,7 +89,7 @@ Use este seletor para escolher imagens para usar em um banner de carrossel, um v
 Consulte também Seletor [de ativos](/help/assets/search-assets.md#assetselector) para obter mais informações.
 
 1. Navegue até o Conjunto de carrossel e crie um novo slide. Ou navegue até o vídeo interativo, vá até a guia **[!UICONTROL Conteúdo]** e selecione ativos. Ou crie um Conjunto de mídia mista, um Conjunto de imagens ou um Conjunto de rotação.
-1. Toque no ícone Seletor **[!UICONTROL de ativos]** (pasta com lupa) e navegue até um ativo.
+1. Toque no ícone **[!UICONTROL Seletor de ativos]** (pasta com uma lupa) e navegue até um ativo.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
@@ -100,7 +103,7 @@ Consulte também Seletor [de ativos](/help/assets/search-assets.md#assetselector
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Toque em **[!UICONTROL Visualizar como]** alterar a exibição de produtos - Visualização **[!UICONTROL de]** lista, Visualização **[!UICONTROL de]** coluna ou Visualização **[!UICONTROL de]** cartão.
+   Toque em **[!UICONTROL Visualizar como]** para alterar a exibição de produtos - **[!UICONTROL Exibição em lista]**, **[!UICONTROL Exibição em coluna]** ou **[!UICONTROL Exibição de cartão]**.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
