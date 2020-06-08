@@ -1,8 +1,11 @@
 ---
 title: Trabalhar com versões de páginas
 description: Criar, comparar e restaurar versões de uma página
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 100%
 
 ---
 
@@ -71,7 +74,7 @@ Para reverter para uma versão anterior:
 
 1. Navegue para mostrar a página para a qual você deseja reverter para uma versão anterior.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra a coluna **Linha do tempo** e selecione **Exibir todas** ou **Versões**. As versões de página da página selecionada serão listadas.
+1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**. As versões de página da página selecionada serão listadas.
 1. Selecione a versão para a qual você deseja reverter. As opções possíveis serão mostradas:
 
    ![Reverter versão](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -84,7 +87,7 @@ Para reverter para uma versão anterior:
 
 1. Navegue para mostrar a página que você deseja comparar.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra a coluna **Linha do tempo** e selecione **Exibir todas** ou **Versões**.
+1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**.
 1. As versões de página serão listadas. Selecione a versão que você deseja visualizar:
 
    ![Versão de visualização](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -103,7 +106,7 @@ Para comparar uma versão anterior com a página atual:
 
 1. Navegue para mostrar a página que você deseja comparar.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra a coluna **Linha do tempo** e selecione **Exibir todas** ou **Versões**.
+1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**.
 1. As versões de página serão listadas. Selecione a versão que você deseja comparar:
 
    ![Comparar versões](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -131,7 +134,7 @@ O Timewarp é um [modo](/help/sites-cloud/authoring/fundamentals/environment-too
 
    ![Modo Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. Na caixa de diálogo, defina uma data e hora de destino e clique ou toque em **Definir data**. Se você não selecionar uma hora, a hora atual será usada como padrão.
+1. Na caixa de diálogo, defina uma data e hora de destino e clique ou toque em **Definir data**. Se você não selecionar uma hora, a hora atual será padrão.
 
    ![Data de destino do Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
