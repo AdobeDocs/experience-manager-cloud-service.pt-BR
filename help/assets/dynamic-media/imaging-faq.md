@@ -26,7 +26,7 @@ Os exemplos de ativos de imagem a seguir mostram a otimização adicionada de Im
 | [Imagem 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
 | [Imagem 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
 | [Imagem 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
-|  |  |  |  | Média = 51% |
+|  |  |  |  | Average = 51% |
 
 Semelhante ao acima, a Adobe também executou um teste com 7009 URLs de sites de clientes ao vivo, e conseguiu uma média de 38% de otimização de tamanho de arquivo adicional para JPEG e 31% de otimização de tamanho de arquivo adicional para PNG com formato WebP, devido à capacidade de criação de imagens inteligentes.
 
