@@ -1,8 +1,11 @@
 ---
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2163'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ Você pode editar uma página com o editor de páginas. Por exemplo:
 >
 >Ignore o tour, se desejar, e repita-o a qualquer momento selecionando o menu **Informações da página.**
 
-## Acessar ajuda   {#accessing-help}
+## Acessar ajuda {#accessing-help}
 
 Ao editar uma página, a **Ajuda** pode ser acessada de:
 
@@ -79,10 +82,12 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
    * Ícone ou abreviação
       * Os ícones dos componentes padrão são monocromáticos.
       * As abreviações são sempre os dois primeiros caracteres do nome do componente.
+
    Na barra de ferramentas superior, no navegador **Componentes**, é possível:
 
    * Filtrar componentes por nome.
    * Limitar a exibição para um grupo específico usando a seleção suspensa.
+
    Para obter uma descrição mais detalhada do componente, clique ou toque no ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Fragmento de conteúdo**:
 
    ![Informações do navegador de componentes](/help/sites-cloud/authoring/assets/component-browser-information.png)
@@ -278,6 +283,7 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 >* O acesso a alguns modos exige permissões/privilégios adequados.
 >* O modo Desenvolvedor não está disponível em dispositivos móveis devido a restrições de espaço.
 >* Existe um [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre o modo de **Visualização** e o atualmente selecionado (por exemplo, **Editar**, **Layout** etc).
+
 >
 
 
