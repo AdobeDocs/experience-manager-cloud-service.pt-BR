@@ -1,13 +1,16 @@
 ---
-title: Fragmentos de conteúdo Configurando componentes para renderização
-description: Fragmentos de conteúdo Configurando componentes para renderização
+title: Fragmentos de conteúdo configuram componentes para renderização
+description: Fragmentos de conteúdo configuram componentes para renderização
 translation-type: tm+mt
 source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 6%
 
 ---
 
 
-# Fragmentos de conteúdo Configurando componentes para renderização{#content-fragments-configuring-components-for-rendering}
+# Fragmentos de conteúdo configuram componentes para renderização{#content-fragments-configuring-components-for-rendering}
 
 Há vários serviços [](#definition-of-advanced-services-that-need-configuration) avançados relacionados à renderização de fragmentos de conteúdo. Para usar esses serviços, os tipos de recursos desses componentes devem se tornar conhecidos pela estrutura de fragmentos de conteúdo.
 
