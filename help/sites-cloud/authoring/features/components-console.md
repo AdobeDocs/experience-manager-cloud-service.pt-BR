@@ -1,8 +1,11 @@
 ---
 title: Console de componentes
 description: O console Componentes permite navegar por todos os componentes definidos para a instância
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 100%
 
 ---
 
@@ -40,6 +43,7 @@ Para exibir detalhes sobre um componente específico, toque/clique no recurso de
       * Clicar na origem do ícone levará você até esse componente.
    * Visualizar o **Tipo de recurso** e o **Supertipo do recurso** (se definido) para o componente.
       * Clicar no Supertipo do recurso levará você até esse componente.
+
    >[!NOTE]
    >
    >Como `/apps` não pode ser editado no tempo de execução, o console Componentes fica somente leitura.
