@@ -2,9 +2,9 @@
 title: Uso da ferramenta de transferência de conteúdo
 description: Uso da ferramenta de transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
+source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1538'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Siga esta seção para saber como usar a Ferramenta de transferência de conteú
    1. **Token de acesso**: Insira o token de acesso.
 
       >[!NOTE]
-      >Você pode recuperar o token de acesso da instância do autor navegando até `/libs/granite/migration/token.json`.
+      >Você pode recuperar o token de acesso da instância do autor navegando até `/libs/granite/migration/token.json`. O token de acesso é recuperado da instância do autor do Serviço em nuvem.
 
    1. **Parâmetros**: Selecione os seguintes parâmetros para criar o conjunto de migração:
 
