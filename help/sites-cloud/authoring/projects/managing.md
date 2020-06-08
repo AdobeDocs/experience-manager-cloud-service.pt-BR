@@ -3,6 +3,9 @@ title: Gerenciamento de projetos
 description: Os projetos permitem que você organize seu projeto agrupando recursos em uma entidade que pode ser acessada e gerenciada no console Projetos
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 80%
 
 ---
 
@@ -17,7 +20,7 @@ No console **Projetos**, você acessa e toma medidas nos seus projetos:
 
 Em Projetos, é possível criar um projeto, associar recursos ao projeto e também excluir um projeto ou vínculos de recursos. Você pode querer abrir um mosaico para exibir seu conteúdo, bem como adicionar itens a um mosaico. Este tópico descreve esses procedimentos.
 
-## Criação de um projeto {#creating-a-project}
+## Criação de um projeto   {#creating-a-project}
 
 Pronto para uso, o AEM permite escolher os seguintes modelos ao criar um projeto:
 
@@ -26,7 +29,7 @@ Pronto para uso, o AEM permite escolher os seguintes modelos ao criar um projeto
 * Projeto de sessão fotográfica do produto
 * Projeto de tradução
 
-O procedimento de criação é o mesmo para todos os projetos. A diferença entre os tipos de projetos inclui as [funções de usuário](/help/sites-cloud/authoring/projects/overview.md) e os [fluxos de trabalho](/help/sites-cloud/authoring/projects/workflows.md) disponíveis.  Para criar um novo projeto:
+O procedimento de criação de um projeto é o mesmo em todos os projetos. A diferença entre os tipos de projetos inclui [funções de usuário](/help/sites-cloud/authoring/projects/overview.md) e [fluxos de trabalho](/help/sites-cloud/authoring/projects/workflows.md) disponíveis.  Para criar um novo projeto:
 
 1. Em **Projetos**, toque/clique em **Criar** para abrir o assistente **Criar projeto**:
 1. Select a template and click **Next**.
@@ -72,7 +75,7 @@ O mesmo método é usado para excluir um projeto do console ou um recurso vincul
 
 >[!NOTE]
 >
->Quando você cria o projeto e adiciona usuários às diferentes funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas. Por exemplo, um projeto chamado Myproject teria três grupos **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**. No entanto, se o projeto for excluído, esses grupos não serão excluídos automaticamente. Um administrador precisa excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.
+>Ao criar o projeto e adicionar usuários às várias funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas. Por exemplo, um projeto chamado Myproject teria três grupos: **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**. No entanto, se o projeto for excluído, esses grupos não serão excluídos automaticamente. Um administrador precisa excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.
 
 ### Adicionar itens a um mosaico {#adding-items-to-a-tile}
 
@@ -116,7 +119,7 @@ A linha do tempo do projeto fornece informações sobre quando os ativos do proj
 
 ### Exibir projetos ativos/inativos {#viewing-active-inactive-projects}
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. Se o ícone tiver uma marca de seleção ao lado dele, ele exibirá os projetos ativos.
+To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. If the icon has a check mark next to it, it is displaying the active projects.
 
 ![Botão Alternar projetos ativos](/help/sites-cloud/authoring/assets/projects-active.png)
 
