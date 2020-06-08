@@ -3,6 +3,9 @@ title: Edição de lançamentos
 description: 'Depois de criar um lançamento para a sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de lançamento da(s) página(s). '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 93%
 
 ---
 
@@ -23,18 +26,18 @@ Se o seu lançamento se basear em uma live copy, você: <!--If your launch is ba
 * Consulte Bloquear símbolos (pequenos cadeados) ao editar um componente (conteúdo e/ou propriedades).
 * See the **Live Copy** tab in **Page Properties**
 
-Uma live copy é usada para sincronizar o conteúdo *da* ramificação de origem *com* a ramificação de lançamento (para manter seu lançamento atualizado com as alterações feitas na fonte).
+Uma livecopy é usada para sincronizar o conteúdo da *ramificação de origem* para a *ramificação de inicialização* (para manter a inicialização atualizada com as alterações feitas na origem).
 
 Você pode fazer alterações da mesma forma como pode editar uma live copy padrão, por exemplo:
 
 * Clicar em um cadeado fechado interromperá essa sincronização e permitirá que você faça novas atualizações no conteúdo do seu lançamento. Após o desbloqueio (cadeado aberto), suas alterações não serão substituídas por quaisquer alterações feitas no mesmo local na ramificação de origem.
-* **Suspender** (e **Retomar**) herança para uma página específica.
+* **Suspender** (e **Retomar**) herança de uma página específica.
 
 Consulte Alteração do conteúdo da live copy para obter mais informações. <!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
 
 ## Comparação de uma página de lançamento com sua página de origem {#comparing-a-launch-page-to-its-source-page}
 
-Para acompanhar as alterações feitas, você pode visualizar o lançamento em **Referências** e comparar a página de lançamento com sua página de origem:
+Para rastrear as alterações feitas, é possível exibir a inicialização em **Referências** e comparar a página de inicialização com a página de origem:
 
 1. No console **Sites**, [navegue até a página de origem do seu lançamento e selecione-a](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**e selecione **Lançamentos**.
