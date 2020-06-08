@@ -1,8 +1,11 @@
 ---
 title: Fragmentos de experiência
-description: Estende o Adobe Experience Manager como um fragmento de experiência do serviço em nuvem.
+description: Extend Adobe Experience Manager as a Cloud Service Experience Fragments.
 translation-type: tm+mt
 source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 2%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
 
 Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é um grupo de um ou mais componentes, incluindo o conteúdo e o layout que podem ser referenciados nas páginas.
 
-Um fragmento de experiência mestre e/ou variável usa:
+An Experience Fragment Master and/or Variant uses:
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
@@ -23,7 +26,7 @@ Como não há `/libs/cq/experience-fragments/components/xfpage/xfpage.html` ele 
 
 ## A representação HTML simples {#the-plain-html-rendition}
 
-Usando o `.plain.` seletor no URL, você pode acessar a execução HTML simples.
+Using the `.plain.` selector in the URL, you can access the plain HTML rendition.
 
 Isso está disponível no navegador, mas seu objetivo principal é permitir que outros aplicativos (por exemplo, aplicativos da Web de terceiros, implementações móveis personalizadas) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL.
 
@@ -31,7 +34,7 @@ A execução HTML simples adiciona o protocolo, o host e o caminho de contexto a
 
 * do tipo: `src`, `href`ou `action`
 
-* ou terminar com: `-src`, ou `-href`
+* or end with: `-src`, or `-href`
 
 Por exemplo:
 
@@ -43,38 +46,38 @@ Por exemplo:
 
 ![Execução HTML simples](assets/xf-14.png)
 
-O seletor de representação simples usa um transformador em vez de scripts adicionais; o [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) é usado como o transformador. Isso está configurado em
+O seletor de representação simples usa um transformador em vez de scripts adicionais; o [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) é usado como o transformador. This is configured at
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
 ## Variações sociais {#social-variations}
 
-As variantes sociais podem ser postadas em redes sociais (texto e imagem). No AEM, essas variantes sociais podem conter componentes; por exemplo, componentes de texto, componentes de imagem.
+Social variants can be posted on social media (text and image). In AEM these social variants can contain components; for example, text components, image components.
 
-A imagem e o texto da publicação social podem ser obtidos de qualquer tipo de recurso de imagem ou de recurso de texto em qualquer nível de profundidade (no bloco de construção ou no contêiner de layout).
+The image and text for the social post can be taken from any image resource type or text resource type at any level of depth (in either the building block or layout container).
 
-As variações sociais também permitem blocos de construção e os consideram ao realizar ações sociais (no ambiente de publicação).
+Social variations also allow building blocks and take them into consideration when making social actions (on the publish environment).
 
-Para publicar o texto e a imagem corretos na rede de mídia social, algumas convenções precisam ser respeitadas se você estiver desenvolvendo seus próprios componentes personalizados.
+To post the correct text and image to the social media network, some conventions need to be respected if you are developing your own customized components.
 
-Para isso, as seguintes propriedades devem ser usadas:
+For this, the following properties must be used:
 
-* Para extrair a imagem
+* For extracting the image
 
    * `fileReference`
    * `fileName`
 
-* Para extrair o texto
+* For extracting the text
 
    * `text`
 
-Os componentes que não usam esta convenção não serão considerados.
+Components that do not use this convention, will not be taken into consideration.
 
 ## Modelos para fragmentos de experiência {#templates-for-experience-fragments}
 
 >[!CAUTION]
 >
->***Somente*** modelos editáveis são suportados em Fragmentos de experiência.
+>***Only*** editable templates are supported for Experience Fragments.
 
 <!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->
@@ -95,7 +98,7 @@ Para criar um modelo de fragmento de experiência detectado pelo assistente **Cr
       `experience-fragments`
 Isso permite que os usuários criem fragmentos de experiência em /content/experience-fragments, já que a `cq:allowedTemplates` propriedade dessa pasta inclui todos os modelos que têm nomes começando com `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seus próprios esquemas de nomeação ou locais de modelo.
 
-1. [Modelos](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) permitidos podem ser configurados no console Fragmentos de experiência.
+1. [Os modelos](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) permitidos podem ser configurados no console Fragmentos de experiência.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -123,38 +126,38 @@ The only additional configuration is to ensure that the components are [allowed 
 No AEM, você tem a possibilidade de criar Fragmentos de experiência. Um fragmento de experiência:
 
 * consista num grupo de componentes e num esquema,
-* pode existir independentemente de uma página do AEM.
+* can exist independently of an AEM page.
 
-Um dos casos de uso desses grupos é para incorporar conteúdo em pontos de contato de terceiros, como o Adobe Target.
+Um dos casos de uso desses grupos é para a incorporação de conteúdo em pontos de contato de terceiros, como o Público alvo da Adobe.
 
-### Regravação de link padrão {#default-link-rewriting}
+### Default Link Rewriting {#default-link-rewriting}
 
 <!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
 
-Usando o recurso Exportar para o Target, é possível:
+Usando o recurso Exportar para Público alvo, é possível:
 
 * criar um fragmento de experiência,
-* adicionar componentes a ele,
-* e, em seguida, exporte-o como uma oferta do Adobe Target, em Formato HTML ou Formato JSON.
+* add components to it,
+* e, em seguida, exporte-o como uma Oferta de Público alvo da Adobe, em Formato HTML ou Formato JSON.
 
-Esse recurso pode ser ativado em uma instância do autor do AEM. Ela requer uma Configuração válida do Adobe Target e configurações para o Externalizador de links.
+This feature can be enabled on an author instance of AEM. It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 
 <!--
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-O Externalizador de links é usado para determinar os URLs corretos necessários ao criar a versão HTML da oferta do Target, que é enviada subsequentemente ao Adobe Target. Isso é necessário, pois o Adobe Target exige que todos os links dentro da oferta HTML do Target possam ser acessados publicamente; isso significa que todos os recursos que os links referenciam e o próprio Fragmento de experiência devem ser publicados antes de serem usados.
+The Link Externalizer is used to determine the correct URLs needed when creating the HTML version of the Target Offer, which is subsequently sent to Adobe Target. This is necessary as Adobe Target requires that all links inside the Target HTML Offer can be publicly accessed; this means that any resources the links reference, and the Experience Fragment itself, must be published before they can be used.
 
-Por padrão, quando você cria uma oferta HTML do Target, uma solicitação é enviada para um seletor Sling personalizado no AEM. Este seletor é chamado `.nocloudconfigs.html`. Como seu nome implica, cria uma renderização em HTML simples de um Fragmento de experiência, mas não inclui configurações em nuvem (que seriam informações supérfluas).
+By default, when you construct a Target HTML Offer, a request is sent to a custom Sling selector in AEM. This selector is called `.nocloudconfigs.html`. As its name implies, it creates a plain HTML rendering of an Experience Fragment, but does not include cloud configurations (which would be superfluous information).
 
-Depois de gerar a página HTML, o pipeline do Sling Rewriter faz modificações na saída:
+After you generate the HTML page, the Sling Rewriter pipeline makes modifications to the output:
 
-1. Os elementos `html`, `head`e `body` são substituídos por `div` elementos. Os elementos `meta`, `noscript` e `title` são removidos (são elementos filho do `head` elemento original e não são considerados quando este é substituído pelo `div` elemento).
+1. The `html`, `head`, and `body` elements are replaced with `div` elements. The `meta`, `noscript` and `title` elements are removed (they are child elements of the original `head` element, and are not considered when this is replaced by the `div` element).
 
-   Isso é feito para garantir que a oferta do Target HTML possa ser incluída nas atividades do Target.
+   This is done to ensure that the HTML Target Offer can be included in Target Activities.
 
-2. O AEM modifica todos os links internos presentes no HTML para que apontem para um recurso publicado.
+2. AEM modifies any internal links present in the HTML, so that they point to a published resource.
 
    Para determinar os links a serem modificados, o AEM segue este padrão para atributos de elementos HTML:
 
@@ -164,11 +167,11 @@ Depois de gerar a página HTML, o pipeline do Sling Rewriter faz modificações 
    4. `*-href` atributos (como `data-href`, `custom-href`, `img-href`etc)
    >[!NOTE]
    >
-   >Na maioria dos casos, os links internos no HTML são links relativos, mas pode haver casos em que componentes personalizados fornecem URLs completos no HTML. Por padrão, o AEM ignora esses URLs completos e não faz modificações.
+   >Na maioria dos casos, os links internos no HTML são links relativos, mas pode haver casos em que os componentes personalizados fornecem URLs completos no HTML. Por padrão, o AEM ignora esses URLs completos e não faz modificações.
 
    Os links nesses atributos são executados pelo Externalizador de links do AEM `publishLink()` para recriar o URL como se ele estivesse em uma instância publicada e, como tal, disponível ao público.
 
-Ao usar uma implementação predefinida, o processo descrito acima deve ser suficiente para gerar a oferta do Target a partir do Fragmento de experiência e exportá-la para o Adobe Target. No entanto, existem alguns casos de utilização que não são contabilizados neste processo; eles incluem:
+Ao usar uma implementação predefinida, o processo descrito acima deve ser suficiente para gerar a Oferta do Público alvo a partir do Fragmento de experiência e exportá-la para o Público alvo da Adobe. No entanto, existem alguns casos de utilização que não são tidos em conta neste processo; eles incluem:
 
 * Mapeamento Sling disponível somente na instância de publicação
 * Redirecionamentos do Dispatcher
@@ -177,19 +180,19 @@ Para esses casos de uso, o AEM fornece a Interface do provedor de regravação d
 
 ### Interface do provedor de regravador de links {#link-rewriter-provider-interface}
 
-Para casos mais complicados, não cobertos pelo [padrão](#default-link-rewriting), o AEM oferece a Interface do provedor de regravação de links. Esta é uma `ConsumerType` interface que você pode implementar em seus pacotes, como um serviço. Ele ignora as modificações que o AEM realiza em links internos de uma oferta HTML como renderizado de um Fragmento de experiência. Essa interface permite que você personalize o processo de regravação de links HTML internos para se alinhar às suas necessidades comerciais.
+For more complicated cases, not covered by the [default](#default-link-rewriting), AEM offers the Link Rewriter Provider Interface. Esta é uma `ConsumerType` interface que você pode implementar em seus pacotes, como um serviço. It bypasses the modifications AEM performs on internal links of an HTML offer as rendered from an Experience Fragment. This interface allows you to customize the process of rewriting internal HTML links to align with your business needs.
 
-Exemplos de casos de uso para implementar essa interface como um serviço incluem:
+Examples of use cases for implementing this interface as a service include:
 
-* Mapeamentos Sling são ativados nas instâncias de publicação, mas não na instância do autor
-* Um dispatcher ou uma tecnologia semelhante é usada para redirecionar URLs internamente
-* Existem recursos `sling:alias mechanisms` disponíveis
+* Sling Mappings are enabled on the publish instances, but not on the author instance
+* A dispatcher or similar technology is used to redirect URLs internally
+* There are `sling:alias mechanisms` in place for resources
 
 >[!NOTE]
 >
->Essa interface só processa os links HTML internos da Oferta do Target gerada.
+>This interface only processes the internal HTML links from the generated Target Offer.
 
-A Interface do provedor de regravação de links ( `ExperienceFragmentLinkRewriterProvider`) é a seguinte:
+The Link Rewriter Provider Interface ( `ExperienceFragmentLinkRewriterProvider`) is as follows:
 
 ```java
 public interface ExperienceFragmentLinkRewriterProvider {
@@ -203,11 +206,11 @@ public interface ExperienceFragmentLinkRewriterProvider {
 }
 ```
 
-### Como usar a interface do provedor de regravação de links {#how-to-use-the-link-rewriter-provider-interface}
+### How to use the Link Rewriter Provider Interface {#how-to-use-the-link-rewriter-provider-interface}
 
-Para usar a interface, primeiro é necessário criar um pacote contendo um novo componente de serviço que implemente a interface do provedor de regravação de links.
+To use the interface you first need to create a bundle containing a new service component that implements the Link Rewriter Provider interface.
 
-Esse serviço será usado para conectar-se à regravação Exportar fragmento de experiência para o Target para ter acesso aos vários links.
+This service will be used to plug into the Experience Fragment Export to Target rewriting in order to have access to the various links.
 
 Por exemplo, `ComponentService`:
 
@@ -239,7 +242,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 }
 ```
 
-Para que o serviço funcione, há agora três métodos que precisam ser implementados dentro do serviço:
+For the service to work, there are now three methods that need to be implemented inside the service:
 
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
@@ -250,7 +253,7 @@ Para que o serviço funcione, há agora três métodos que precisam ser implemen
 
 #### shouldRewrite {#shouldrewrite}
 
-É necessário indicar ao sistema se ele precisa regravar os links quando uma chamada é feita para Exportar para o Target em uma certa variação do Fragmento de experiência. Você faz isso implementando o método:
+You need to indicate to the system whether it needs to rewrite the links when a call is made for Export to Target on a certain Experience Fragment variation. You do this by implementing the method:
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
@@ -263,37 +266,37 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 }
 ```
 
-Esse método recebe, como parâmetro, a Variação do fragmento de experiência que o sistema Exportar para o Target está reescrevendo no momento.
+This method receives, as a parameter, the Experience Fragment Variation that the Export to Target system is currently rewriting.
 
-No exemplo acima, gostaríamos de reescrever:
+In the example above, we would like to rewrite:
 
 * links presentes em `src`
 
-* `href` somente atributos
+* `href` attributes only
 
-* para um fragmento de experiência específico:
+* for a specific Experience Fragment:
    `/content/experience-fragment/master`
 
-Quaisquer outros Fragmentos de experiência que passarem pelo sistema Exportar para o Target são ignorados e não são afetados pelas alterações implementadas neste Serviço.
+Any other Experience Fragments that pass through the Export to Target system are ignored and not affected by changes implemented in this Service.
 
 #### rewriteLink {#rewritelink}
 
-Para a variação do Fragmento de experiência impactada pelo processo de regravação, ele continuará permitindo que o serviço controle a regravação do link. Sempre que um link é encontrado no HTML interno, o seguinte método é chamado:
+For the Experience Fragment variation impacted by the rewriting process, it will then proceed to let the service handle the link rewriting. Everytime a link is encountered in the internal HTML, the following method is invoked:
 
 `rewriteLink(String link, String tag, String attribute)`
 
-Como entrada, o método recebe os parâmetros:
+As input, the method receives the parameters:
 
 * `link`
-A `String` representação do link que está sendo processado no momento. Normalmente, é um URL relativo que aponta para o recurso na instância do autor.
+The `String` representation of the link that is currently being processed. This is usually a relative URL pointing to the resource on the author instance.
 
 * `tag`
-O nome do elemento HTML que está sendo processado no momento.
+The name of the HTML element that is currently being processed.
 
 * `attribute`
-O nome exato do atributo.
+The exact attribute name.
 
-Se, por exemplo, o sistema Exportar para o Target estiver processando esse elemento no momento, você pode definir `CSSInclude` como:
+Se, por exemplo, o sistema Exportar para Público alvo estiver processando esse elemento no momento, você pode definir `CSSInclude` como:
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
@@ -344,14 +347,14 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->Se o método acima retornar `null`, o sistema Exportar para o Target deixará o link como está, um link relativo para um recurso.
+>If the above method returns `null`, then the Export to Target system will leave the link as it is, a relative link to a resource.
 
-#### Prioridades - getPriority {#priorities-getpriority}
+#### Priorities - getPriority {#priorities-getpriority}
 
-Não é incomum precisar de vários serviços para atender a diferentes tipos de Fragmentos de experiência, ou mesmo para ter um Serviço genérico que lida com a externalização e o mapeamento de todos os Fragmentos de experiência. Nesses casos, surgem conflitos sobre qual serviço usar, de modo que o AEM oferece a possibilidade de definir **Prioridades** para diferentes serviços. As prioridades são especificadas usando o método:
+It is not uncommon to need several services to cater for different kinds of Experience Fragments, or even to have a Generic Service that handles externalizing and mapping for all Experience Fragments. In these cases, conflicts about which service to use might arise, so AEM provides the possibility to define **Priorities** for different services. The priorities are specified by using the method:
 
 * `getPriority()`
 
 Esse método permite o uso de vários serviços nos quais o `shouldRewrite()` método retorna true para o mesmo Fragmento de experiência. O serviço que retorna o maior número de seu `getPriority()`método é o serviço que lida com a Variação do fragmento de experiência.
 
-Por exemplo, você pode ter uma regra `GenericLinkRewriterProvider` que manipula o mapeamento básico de todos os Fragmentos de experiência e quando o `shouldRewrite()` método retorna `true` para todas as Variações de fragmento de experiência. Para vários Fragmentos de experiência específicos, talvez você queira manuseio especial, portanto, nesse caso, você pode fornecer um método `SpecificLinkRewriterProvider` para o qual o `shouldRewrite()` método retorna verdadeiro somente para algumas Variações de fragmento de experiência. Para garantir que `SpecificLinkRewriterProvider` seja escolhido para lidar com essas variações do fragmento de experiência, ele deve retornar em seu `getPriority()` método um número maior que `GenericLinkRewriterProvider.`
+As an example, you can have a `GenericLinkRewriterProvider` that handles the basic mapping for all Experience Fragments and when the `shouldRewrite()` method returns `true` for all Experience Fragment Variations. For several specific Experience Fragments, you may want special handling, so in this case, you can provide a `SpecificLinkRewriterProvider` for which the `shouldRewrite()` method returns true only for some Experience Fragment Variations. Para garantir que `SpecificLinkRewriterProvider` seja escolhido para lidar com essas Variações de fragmento de experiência, ele deve retornar em seu `getPriority()` método um número maior que `GenericLinkRewriterProvider.`
