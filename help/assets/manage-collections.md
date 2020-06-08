@@ -1,19 +1,22 @@
 ---
 title: Gerenciar coleções de ativos digitais
-description: Entenda o conceito de coleção nos ativos Adobe Experience Manager. Saiba como gerenciar, editar e criar coleções com outros usuários.
+description: Understand the concept of collection in Adobe Experience Manager Assets. Saiba como gerenciar, editar e criar coleções com outros usuários.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '2381'
+ht-degree: 20%
 
 ---
 
 
 # Gerenciar coleções {#manage-collections}
 
-Uma coleção é um conjunto de ativos nos ativos Adobe Experience Manager. Use coleções para compartilhar ativos entre usuários. O conjunto pode ser uma coleção estática ou uma coleção dinâmica baseada nos resultados da pesquisa.
+A collection is a set of assets within Adobe Experience Manager Assets. Use coleções para compartilhar ativos entre usuários. The set can be static collection or a dynamic collection that is based on search results.
 
-Diferentemente das pastas, uma coleção pode incluir ativos de diferentes locais. Você pode compartilhar coleções com vários usuários aos quais são atribuídos diferentes níveis de privilégios, incluindo exibição, edição e assim por diante.
+Unlike folders, a collection can include assets from different locations. Você pode compartilhar coleções com vários usuários aos quais são atribuídos diferentes níveis de privilégios, incluindo exibição, edição e assim por diante.
 
 Você pode compartilhar várias coleções com um usuário. Cada coleção contém referências a ativos. A integridade referencial dos ativos é mantida nas coleções.
 
@@ -23,89 +26,89 @@ As coleções são dos seguintes tipos, com base na maneira como elas coletam at
 
 * Uma coleção inteligente que inclui dinamicamente ativos com base em critérios de pesquisa.
 
-## Acesse o console de coleções {#navigate-the-collections-console}
+## Access the collections console {#navigate-the-collections-console}
 
 Para abrir o console **[!UICONTROL Coleções]** :
 
-Para abrir as **[!UICONTROL Coleções]**, toque ou clique no logotipo do Experience Manager. From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+To open the **[!UICONTROL Collections]**, tap or click the Experience Manager logo. From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Criar uma coleção {#create-a-collection}
 
-Você pode criar uma coleção com referências [](#create-a-collection-with-static-references) estáticas ou com base em um filtro [baseado em critérios de](#create-a-smart-collection)pesquisa. Você também pode criar uma coleção a partir de um lightbox.
+You can create a collection either with [static references](#create-a-collection-with-static-references) or based on a [search criteria-based filter](#create-a-smart-collection). You can also create a collection from a lightbox.
 
-### Criar uma coleção com referências estáticas {#create-a-collection-with-static-references}
+### Create a collection with static references {#create-a-collection-with-static-references}
 
-Você pode criar uma coleção com referências estáticas, por exemplo, uma coleção com referências a ativos, pastas, coleções, conjuntos de rotação e conjuntos de imagens.
+You can create a collection with static references, for example a collection with references to assets, folders, collections, spin sets, and image sets.
 
-1. Navegue até o console **[!UICONTROL Coleções]** .
-1. Na barra de ferramentas, toque/clique em **[!UICONTROL Criar]**.
+1. Navigate to the **[!UICONTROL Collections]** console.
+1. From the toolbar, tap/click **[!UICONTROL Create]**.
 1. Na página **[!UICONTROL Criar coleção]** , digite um título e uma descrição opcional para a coleção.
 1. Adicione membros à coleção e atribua as permissões apropriadas. Como alternativa, selecione **[!UICONTROL Coleção pública]** para permitir que todos os usuários acessem a coleção.
 
    >[!NOTE]
    >
-   >Para permitir que os membros compartilhem coleções com outros usuários, forneça ao `dam-users` grupo permissões de leitura no caminho `home/users`. Conceda permissão aos usuários no `/content/dam/collections` local para permitir que eles visualizações as coleções nas listas pop-up. Como alternativa, torne o usuário parte do `dam-users` grupo.
+   >To enable the members to share collections with other users, provide the `dam-users` group read permissions at the path `home/users`. Give permission to the users at `/content/dam/collections` location to allow the users to view the Collections in pop up lists. Alternatively, make the user a part of `dam-users` group.
 
-1. (Opcional) Adicione uma imagem em miniatura para a coleção.
+1. (Optional) Add a thumbnail image for the collection.
 1. Toque/clique em **[!UICONTROL Criar]** e em **[!UICONTROL OK]** para fechar a caixa de diálogo. Uma coleção com o título e as propriedades especificadas é aberta no console Coleções.
 
    >[!NOTE]
    >
-   >Os Ativos do Experience Manager permitem que você crie tarefas de revisão para uma coleção semelhantes à maneira como você cria tarefas de revisão para uma pasta de ativos.
+   >Experience Manager Assets lets you create review tasks for a collection similar to the way you create review tasks for an assets folder.
 
-   Para adicionar ativos à coleção, navegue até a interface do usuário Ativos. Para obter detalhes, consulte [Adicionar ativos a uma coleção](#add-assets-to-a-collection).
+   To add assets to the collection, navigate to the Assets user interface. For details, see [Add assets to a collection](#add-assets-to-a-collection).
 
-### Criar coleções usando o dropzone {#create-collections-using-dropzone}
+### Create collections using dropzone {#create-collections-using-dropzone}
 
-Você pode arrastar ativos da interface do usuário Ativos para uma coleção. Você também pode criar uma cópia de uma coleção e arrastar os ativos para lá.
+You can drag assets from the Assets UI to a collection. You can also create a copy of a collection and drag the assets there.
 
-1. Na interface do usuário Ativos, selecione os ativos que deseja adicionar a uma coleção.
-1. Arraste os ativos até a zona **[!UICONTROL Soltar na coleção]** . Como alternativa, toque/clique no ícone **[!UICONTROL Para coleção]** na barra de ferramentas.
+1. From the Assets user interface, select the assets you want to add to a collection.
+1. Arraste os ativos até a zona **[!UICONTROL Soltar na coleção]** . Alternatively, tap/click the **[!UICONTROL To Collection]** icon from the toolbar.
 1. Na página **[!UICONTROL Adicionar à coleção]**, toque/clique no ícone **[!UICONTROL Criar coleção]** na barra de ferramentas. Se desejar adicionar os ativos a uma coleção existente, selecione-a na página e toque/clique em **[!UICONTROL Adicionar]**. Por padrão, a coleção atualizada mais recentemente é selecionada.
 1. Na caixa de diálogo **[!UICONTROL Criar nova coleção]**, especifique o nome da coleção. Se quiser que a coleção seja acessível a todos os usuários, selecione **[!UICONTROL Coleção pública]**.
-1. Toque/clique em **[!UICONTROL Continuar]** para criar a coleção.
+1. Tap/click **[!UICONTROL Continue]** to create the collection.
 
 ### Criar uma coleção inteligente {#create-a-smart-collection}
 
-Uma coleção inteligente usa um critério de pesquisa para preencher dinamicamente ativos. Você pode criar uma coleção inteligente usando apenas arquivos e não pastas ou arquivos e pastas.
+A Smart Collection uses a search criteria to dynamically populate assets. Você pode criar uma coleção inteligente usando apenas arquivos e não pastas ou arquivos e pastas.
 
 1. Navegue até a interface do usuário do Assets e toque/clique no ícone **[!UICONTROL Pesquisar]**.
-1. Digite a palavra-chave de pesquisa na caixa Pesquisa Omni e pressione Enter. Toque/clique no ícone GlobalNav para exibir o painel Filtros e aplicar um filtro de pesquisa do painel Pesquisar.
+1. Enter search keyword in the Omni Search box and press Enter. Tap/click the GlobalNav icon to display the Filters panel and apply a search filter from the Search panel.
 1. Na lista **[!UICONTROL Arquivos e pastas]** , selecione **[!UICONTROL Arquivos]**.
-1. Toque/clique em **[!UICONTROL Salvar coleção]** inteligente.
-1. Especifique um nome para a coleção. Selecione **[!UICONTROL Público]** para adicionar o grupo Usuários DAM com a função Visualizador à coleção inteligente.
+1. Tap/click **[!UICONTROL Save Smart Collection]**.
+1. Specify a name for the collection. Select **[!UICONTROL Public]** to add the DAM Users group with the Viewer role to the smart collection.
 
    >[!NOTE]
    >
-   >Se você selecionar **[!UICONTROL Público]**, a coleção inteligente ficará disponível para todos com a função Proprietário após criá-la. Se você desmarcar a opção **[!UICONTROL Público]** , o grupo de usuários do DAM não estará mais associado à coleção inteligente.
+   >If you select **[!UICONTROL Public]**, the smart collection becomes available to everyone with the Owner role after you create it. Se você desmarcar a opção **[!UICONTROL Público]** , o grupo de usuários do DAM não estará mais associado à coleção inteligente.
 
 1. Toque/clique em **[!UICONTROL Salvar]** para criar a coleção inteligente e feche a caixa de mensagem para concluir o processo. A nova coleção inteligente também é adicionada à lista **[!UICONTROL Pesquisas salvas]**.
 O rótulo do botão **[!UICONTROL Criar seleção inteligente]** muda para **[!UICONTROL Editar seleção inteligente]**. Para editar as configurações da coleção inteligente, selecione **[!UICONTROL Arquivos]** na lista **[!UICONTROL Arquivos e pastas]**. Em seguida, toque/clique no botão **[!UICONTROL Editar seleção inteligente]**.
 
-## Adicionar ativos a uma coleção {#add-assets-to-a-collection}
+## Add assets to a collection {#add-assets-to-a-collection}
 
 Você pode adicionar ativos a uma coleção que contenha uma lista de ativos ou pastas referenciados.
 
 >[!NOTE]
 >
->Coleções inteligentes usam um query de pesquisa para preencher ativos. Portanto, referências estáticas a ativos e pastas não se aplicam a eles.
+>Smart collections use a search query to populate assets. Therefore, static references to assets and folders are not applicable to them.
 
-1. Na interface do usuário Ativos, navegue até o local do ativo que deseja adicionar a uma coleção.
-1. Selecione o ativo e toque/clique no ícone **[!UICONTROL Para coleção]** na barra de ferramentas. Como alternativa, você pode arrastar o ativo para a zona **[!UICONTROL Soltar na coleção]** . Solte o botão do mouse quando a zona solta se tornar ativa e seu rótulo se alterar para **[!UICONTROL Soltar para Adicionar]**.
+1. In the Assets UI, navigate to the location of the asset that you want to add to a collection.
+1. Select the asset and tap/click the **[!UICONTROL To Collection]** icon from the toolbar. Alternatively, you can drag the asset to the **[!UICONTROL Drop in Collection]** zone. Solte o botão do mouse quando a zona solta se tornar ativa e seu rótulo se alterar para **[!UICONTROL Soltar para Adicionar]**.
 1. Na página **[!UICONTROL Adicionar à coleção]** , selecione a coleção à qual deseja adicionar o ativo.
 1. Toque/clique em **[!UICONTROL Adicionar]** e feche a mensagem de confirmação. O ativo é adicionado à coleção.
 
 ## Editar uma coleção inteligente {#edit-a-smart-collection}
 
-As coleções inteligentes são criadas salvando uma pesquisa para que você possa alterar seu conteúdo modificando os parâmetros de pesquisa da pesquisa [](#saved-searches)salva.
+Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
-1. Na interface do usuário do Assets, toque/clique no ícone **[!UICONTROL Pesquisar]** na barra de ferramentas.
-1. Com o cursor na caixa Omnisearch, pressione a tecla Enter.
-1. Toque/clique no ícone GlobalNav para exibir o painel Filtros.
+1. In the Assets user interface, tap/click the **[!UICONTROL Search]** icon from the toolbar.
+1. With the cursor in the Omnisearch box, press the Enter key.
+1. Tap/click the GlobalNav icon to display the Filters panel.
 1. Na lista **[!UICONTROL Pesquisas salvas]**, selecione a coleção inteligente que deseja modificar. O painel Pesquisar exibe os filtros configurados para a pesquisa salva.
 1. Na lista **[!UICONTROL Arquivos e pastas]** , selecione **[!UICONTROL Arquivos]**.
 1. Modifique um ou mais filtros, conforme necessário. Toque/clique em **[!UICONTROL Editar coleção]** inteligente. Você também pode editar o nome da coleção inteligente.
-1. Tap/click **[!UICONTROL Save]**. A caixa de diálogo **[!UICONTROL Editar coleção]** inteligente é exibida.
+1. Tap/click **[!UICONTROL Save]**. The **[!UICONTROL Edit Smart Collection]** dialog appears.
 1. Toque/clique em **[!UICONTROL Substituir]** para substituir a coleção inteligente original pela coleção editada. Como alternativa, selecione **[!UICONTROL Salvar como]** para salvar a coleção editada separadamente.
 1. Na caixa de diálogo de confirmação, toque/clique em **[!UICONTROL Salvar]** para concluir o processo.
 
