@@ -3,6 +3,9 @@ title: Regulamentos de proteção de dados e privacidade de dados - Adobe Experi
 description: 'Saiba mais sobre o Adobe Experience Manager como suporte da Cloud Service Foundation para as várias regulamentações de proteção de dados e privacidade de dados; incluindo o Regulamento geral da UE sobre proteção de dados (RGPD), a Lei da Privacidade do Consumidor da Califórnia e como cumprir a implementação de um novo AEM como um projeto de serviço em nuvem. '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 5%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 >
 >O conteúdo deste documento não constitui um aconselhamento jurídico e não substitui o aconselhamento jurídico.
 >
->Consulte o departamento jurídico da sua empresa para obter conselhos sobre as regulamentações de Proteção de Dados e Privacidade de Dados.
+>Consulte o departamento jurídico da sua empresa para obter informações sobre as regulamentações de Proteção de Dados e Privacidade de Dados.
 
 >[!NOTE]
 >
@@ -21,9 +24,9 @@ source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 
 ## Suporte para proteção e privacidade de dados do AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
-No nível do AEM Foundation, os Dados pessoais armazenados são mantidos no Perfil do usuário. Portanto, as informações neste artigo abordam principalmente como acessar e excluir perfis de usuário, para atender às solicitações de acesso e exclusão, respectivamente.
+No nível do AEM Foundation, os Dados pessoais armazenados são mantidos no Perfil Usuário. Portanto, as informações neste artigo tratam principalmente de como acessar e excluir perfis de usuários, para atender às solicitações de acesso e exclusão, respectivamente.
 
-## Acessar um perfil de usuário {#accessing-a-user-profile}
+## Acessar um Perfil de usuário {#accessing-a-user-profile}
 
 ### Etapas manuais {#manual-steps}
 
@@ -39,7 +42,7 @@ No nível do AEM Foundation, os Dados pessoais armazenados são mantidos no Perf
 
 1. Por fim, abra o perfil do usuário clicando nele e, em seguida, marque na guia **[!UICONTROL Detalhes]** .
 
-   ![perfil de usuário](assets/dpp-foundation-02.png)
+   ![perfil do usuário](assets/dpp-foundation-02.png)
 
 ### API HTTP {#http-api}
 
@@ -72,7 +75,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## Desabilitando um usuário e excluindo os perfis associados {#disabling-a-user-and-deleting-the-associated-profiles}
+## Desabilitar um usuário e Excluir os Perfis associados {#disabling-a-user-and-deleting-the-associated-profiles}
 
 ### Desativar usuário {#disable-user}
 
@@ -85,11 +88,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 4. Por último, confirme a ação.
 
-   A interface do usuário indicará que a conta do usuário foi desativada ao ficar acinzentada e adicionar um bloqueio à placa de perfil:
+   A interface do usuário indicará que a conta de usuário foi desativada ao ficar acinzentada e adicionar um bloqueio à placa de perfil:
 
    ![conta desativada](assets/dpp-foundation-04.png)
 
-### Excluir informações de perfil do usuário {#delete-user-profile-information}
+### Excluir informações do Perfil do usuário {#delete-user-profile-information}
 
 >[!NOTE]
 >
@@ -97,7 +100,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### API HTTP {#http-api-1}
 
-Os procedimentos a seguir usam a ferramenta de linha de `curl` comando para ilustrar como desativar o usuário com a **[!UICONTROL função]** `userId` e excluir seus perfis disponíveis no local padrão.
+Os procedimentos a seguir usam a ferramenta de linha de comando `curl` para ilustrar como desativar o usuário com a **[!UICONTROL cavery]** `userId` e excluir seus perfis disponíveis no local padrão.
 
 **Descobrindo a página inicial do usuário:**
 
@@ -116,7 +119,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 **Excluindo perfis de usuário**
 
-Usando o caminho do nó da propriedade home da carga JSON retornada do comando descoberta de conta e os locais conhecidos do nó do perfil de caixa:
+Usando o caminho do nó da propriedade home da carga JSON retornada do comando descoberta de conta e os locais conhecidos do nó do perfil out da caixa:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
