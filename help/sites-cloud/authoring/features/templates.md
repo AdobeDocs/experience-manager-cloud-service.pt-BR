@@ -1,8 +1,11 @@
 ---
-title: Criação de modelos de páginas
+title: 'Criação de modelos de páginas  '
 description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa apenas do desenvolvedor
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '4554'
+ht-degree: 100%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 Ao criar uma página, você deve selecionar um modelo, que será usado como a base de criação da nova página. O modelo define a estrutura da página resultante, qualquer conteúdo inicial e os componentes que podem ser usados.
 
-Com o **Editor de modelo**, criar e manter modelos não é mais uma tarefa apenas do desenvolvedor. Um tipo de usuário avançado, chamado de **autor do modelo**, também pode participar. Os desenvolvedores ainda devem configurar o ambiente, criar bibliotecas do cliente e os componentes a serem usados, mas, uma vez que essas noções básicas estiverem em vigor, o **autor do modelo** tem a flexibilidade para criar e configurar modelos sem um projeto de desenvolvimento.
+Com o **Editor de modelos**, criar e manter modelos não é mais uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de **autor de modelo**, também pode ser envolvido. Os desenvolvedores ainda são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas uma vez que essas noções básicas estejam em vigor, o **autor do modelo** terá a flexibilidade de criar e configurar modelos sem um projeto de desenvolvimento.
 
 O **console Modelos** permite que os autores do modelo:
 
@@ -30,7 +33,7 @@ Para obter informações detalhadas sobre como os modelos editáveis funcionam a
 
 >[!NOTE]
 >
->O **Editor de modelo** não é compatível com direcionamento diretamente no nível do modelo. As páginas criadas com base em um modelo editável podem ser direcionadas, mas os modelos em si não podem.
+>O **Editor de modelos** não oferece suporte para direcionamento diretamente no nível do modelo. As páginas criadas com base em um modelo editável podem ser direcionadas, mas os modelos em si não podem.
 
 ## Antes de começar {#before-you-start}
 
@@ -42,7 +45,7 @@ Antes de começar, é importante considerar que a criação de um novo modelo re
 
 ### Funções {#roles}
 
-Criar um novo modelo usando o **console Modelos** e o **Editor de modelo** requer colaboração entre as seguintes funções:
+A criação de um novo modelo usando o **Console de modelos** e o **Editor de modelos** exige a colaboração entre as seguintes funções:
 
 * **Admin**:
    * Cria uma nova pasta de modelos requer direitos de `admin`.
@@ -455,7 +458,7 @@ Na guia **Componentes padrão**, você define quais componentes são associados 
 
 Clique ou toque em **Adicionar mapeamento** para adicionar um componente totalmente novo e o tipo de mapeamento MIME.
 
-Selecione um componente na lista e clique ou toque em **Adicionar tipo** para adicionar um tipo MIME adicional a um componente já mapeado. Clique no ícone **Excluir** para remover a um tipo MIME.
+Selecione um componente na lista e clique ou toque em **Adicionar tipo** para adicionar outro tipo MIME a um componente já mapeado. Clique no ícone **Excluir** para remover a um tipo MIME.
 
 ![Guia Componentes padrão](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -477,13 +480,13 @@ Quando um componente é desbloqueado:
 
 ![Botão Bloquear componente](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Isso inclui o desbloqueio de componentes do contêiner, de modo que os componentes futuros possam ser adicionados tanto no modo **Conteúdo inicial** quanto nas páginas resultantes. Caso já tenha adicionado componentes/conteúdo ao contêiner antes de desbloqueá-lo, eles não serão mais mostrados no modo **estrutura**, mas serão exibidos no modo **Conteúdo inicial**. No **modo Estrutura**, apenas o componente do contêiner será mostrado com sua lista de **Componentes permitidos**.
+Isso inclui desbloquear componentes de contêiner para que outros componentes possam ser adicionados, no modo **Conteúdo inicial** ou nas páginas resultantes. Se você já tiver adicionado componentes/conteúdo ao contêiner antes de desbloqueá-lo, eles não serão mais exibidos quando estiverem no modo **Estrutura**, mas serão exibidos no modo **Conteúdo inicial**. No **modo Estrutura**, apenas o componente do contêiner será mostrado com sua lista de **Componentes permitidos**.
 
 ![Componentes permitidos](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
 Para economizar espaço, o contêiner de layout não é expandido para acomodar a lista de componentes permitidos. Em vez disso, o contêiner se torna uma lista rolável.
 
-Os componentes configuráveis são mostrados com um ícone de **Política**, o qual você pode tocar ou clicar para editar a política e as propriedades desse componente.
+Os componentes configuráveis são mostrados com um ícone de **Política**, que pode ser tocado ou clicado para editar a política e as propriedades desse componente.
 
 ![Ícone Componente configurável](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
@@ -547,6 +550,7 @@ Para acessar a caixa de diálogo **Política da página**:
 
    * A metade esquerda define as [políticas da página](#page-policies)
    * A metade direita define as [propriedades da página](#page-properties)
+
    ![Design da página](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
 #### Políticas da página {#page-policies}
@@ -635,6 +639,7 @@ Ao criar modelos você deve considerar:
 
       * Apenas da estrutura - aplicada instantaneamente
       * Contém conteúdo inicial - somente nas páginas criadas após a alteração
+
    Tome cuidado especial ao:
 
    * Bloquear ou desbloquear componentes em modelos permitidos.
@@ -642,6 +647,7 @@ Ao criar modelos você deve considerar:
 
       * Desbloquear componentes (que foram bloqueados) ficará ausente nas páginas existentes.
       * Bloquear componentes (que eram editáveis) ocultará esse conteúdo nas páginas.
+
    >[!NOTE]
    >
    >O AEM dá avisos explícitos ao alterar o status de bloqueio de componentes nos modelos que não são mais rascunhos.
