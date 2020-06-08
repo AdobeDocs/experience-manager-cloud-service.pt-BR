@@ -1,9 +1,9 @@
 ---
 title: Sua caixa de entrada
 description: Gerenciar suas tarefas com a caixa de entrada
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -92,6 +92,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
    * **Agrupar por**
    * **Agendamento** ou **Nenhum**
    * **Tamanho do cartão**
+
    ![Configurações de exibição do calendário da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Exibição de lista**
@@ -100,6 +101,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
    * **Classificar por**
    * **Ordem de classificação**
+
    ![Configurações de exibição da lista da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
    Você também pode delegar o calendário a outros usuários, além de solicitar a delegação de outros usuários e gerenciar as delegações.
@@ -128,6 +130,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
    * **Recuar** para uma etapa anterior
    * Visualizar a carga de um fluxo de trabalho
    * Criar um projeto a partir do item
+
    >[!NOTE]
    >
    >Para obter mais informações, consulte:
@@ -140,6 +143,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
    * Uma caixa de diálogo apropriada para a ação será aberta
    * Um assistente de ação será iniciado
    * Uma página de documentação será aberta
+
    Por exemplo, **Delegar** abrirá uma caixa de diálogo:
 
    ![Delegar tarefa da caixa de entrada](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
@@ -168,11 +172,13 @@ Na caixa de entrada, você pode criar tarefas:
       * **Prioridade da tarefa**
       * **Data inicial**
       * **Data de vencimento**
+
    ![Tarefa Adicionar caixa de entrada](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **Avançado**
 
       * **Nome**: isso será usado para formar o URL e, se estiver vazio, será baseado no **Título**.
+
    ![Opções avançadas da tarefa Adicionar caixa de entrada](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. Selecione **Enviar**.
