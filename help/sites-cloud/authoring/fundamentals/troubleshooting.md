@@ -1,8 +1,11 @@
 ---
-title: Solucionar problemas do AEM durante a criação
+title: 'Solucionar problemas do AEM durante a criação  '
 description: Alguns problemas que podem ocorrer quando você usa o AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 100%
 
 ---
 
