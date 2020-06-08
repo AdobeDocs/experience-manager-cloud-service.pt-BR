@@ -5,6 +5,9 @@ description: Esta página descreve como você pode acessar e gerenciar o reposit
 seo-description: Siga esta página para saber como acessar e gerenciar seu repositório Git.
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 7%
 
 ---
 
