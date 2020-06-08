@@ -1,6 +1,6 @@
 ---
 title: Crie e gerencie ativos digitais em vários idiomas e execute workflows de tradução
-description: Saiba como automatizar workflows para traduzir ativos, incluindo binários, metadados e tags em vários idiomas.
+description: Learn how to automate workflows for translating assets, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
@@ -13,13 +13,13 @@ ht-degree: 23%
 
 # Ativos multilíngues {#multilingual-assets}
 
-Ativos multilíngues são ativos com binários, metadados e tags em vários idiomas. Geralmente, binários, metadados e tags para ativos existem em um idioma, que são traduzidos para outros idiomas para uso em projetos multilíngues. Os ativos Adobe Experience Manager (AEM) permitem que você automatize workflows de tradução em ativos (incluindo binários, metadados e tags) para gerar ativos em outros idiomas para uso em projetos multilíngues.
+Multilingual assets means assets with binaries, metadata, and tags in multiple languages. Generally, binaries, metadata, and tags for assets exist in one language, which are then translated to other languages for use in multilingual projects. Adobe Experience Manager (AEM) Assets lets you automate translation workflows on assets (including binaries, metadata, and tags) to generate assets in other languages for use in multilingual projects.
 
-Para automatizar workflows de tradução, você integra provedores de serviço de tradução ao AEM e cria projetos para traduzir ativos em vários idiomas. O AEM suporta workflows de tradução automática e humana.
+To automate translation workflows, you integrate translation service providers with AEM and create projects for translating assets into multiple languages. AEM supports human and machine translation workflows.
 
-Tradução humana: Os ativos convertidos são devolvidos e importados para o AEM. Quando seu provedor de tradução está integrado ao AEM, os ativos são automaticamente enviados entre o AEM e o provedor de tradução.
+Human translation: The translated assets are returned and imported into AEM. When your translation provider is integrated with AEM, assets are automatically sent between AEM and the translation provider.
 
-Tradução automática: O serviço de tradução automática traduz imediatamente os metadados e as tags dos ativos.
+Machine translation: The machine translation service immediately translates the metadata and tags for assets.
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only 1 master article.
@@ -49,13 +49,13 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ## Preparar ativos para tradução {#prepare-assets-for-translation}
 
-Ativos multilíngues são ativos com binários, metadados e tags em vários idiomas. Geralmente, binários, metadados e tags para ativos existem em um idioma, que são traduzidos para outros idiomas para uso em projetos multilíngues.
+Multilingual assets means assets with binaries, metadata, and tags in multiple languages. Generally, binaries, metadata, and tags for assets exist in one language, which are then translated to other languages for use in multilingual projects.
 
-Nos ativos Adobe Experience Manager (AEM), ativos multilíngues são incluídos em pastas, onde cada pasta contém os ativos em um idioma diferente.
+In Adobe Experience Manager (AEM) Assets, multilingual assets are included in folders, where each folder contains the assets in a different language.
 
-Cada pasta de idioma é chamada de cópia de idioma. A pasta raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/dam/it` é a raiz do idioma italiano para a cópia em italiano. As cópias de idioma devem usar uma raiz [de idioma configurada](#create-a-language-root) corretamente para que o idioma correto seja direcionado quando as traduções dos ativos de origem forem executadas.
+Cada pasta de idioma é chamada de cópia de idioma. The root folder of a language copy, known as the language root, identifies the language of the content in the language copy. For example, `/content/dam/it` is the Italian language root for the Italian language copy. Language copies must use a [correctly-configured language root](#create-a-language-root) so that the correct language is targeted when translations of source assets are performed.
 
-A cópia de idioma para a qual você adicionou ativos originalmente é o idioma mestre. O mestre de idioma é a fonte que é traduzida para outros idiomas. Uma hierarquia de pastas de amostra inclui várias raízes de idioma:
+The language copy for which you originally add assets is the language master. O mestre de idioma é a fonte que é traduzida para outros idiomas. Uma hierarquia de pastas de amostra inclui várias raízes de idioma:
 
 ```shell
 /content
