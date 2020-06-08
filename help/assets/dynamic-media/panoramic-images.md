@@ -3,11 +3,14 @@ title: Imagens panorâmicas
 description: Saiba como trabalhar com imagens panorâmicas no Dynamic Media.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 2%
 
 ---
 
 
-# Imagens panorâmicas{#panoramic-images}
+# Panoramic images{#panoramic-images}
 
 Esta seção descreve como trabalhar com o visualizador Imagem panorâmica para renderizar imagens panorâmicas esféricas para uma experiência de visualização de 360° imersiva de uma sala, propriedade, local ou paisagem.
 
@@ -20,13 +23,14 @@ See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-pr
 Para um ativo carregado se qualificar como uma imagem de panorama esférica que você pretende usar com o visualizador de Imagem panorâmica, o ativo deve ter um ou ambos os seguintes itens:
 
 * Uma proporção largura/altura de 2.
+
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
 * Marcado com as palavras-chave `equirectangular`, ou `spherical`e `panorama`, ou `spherical` e `panoramic`. Consulte [Uso de tags](/help/sites-cloud/authoring/features/tags.md).
 
-Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos panorâmicos para a página de detalhes do ativo e o componente `Panoramic Media` WCM.
+Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
 
-Para fazer upload de ativos para uso com o Visualizador de imagem panorâmica, consulte [Fazer upload de ativos](/help/assets/manage-digital-assets.md#uploading-assets).
+Para fazer upload de ativos para uso com o visualizador de Imagem panorâmica, consulte [Fazer upload de ativos](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
