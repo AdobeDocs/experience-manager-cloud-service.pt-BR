@@ -150,6 +150,7 @@ Para configurar quais formatos são permitidos ao colar texto no AEM a partir de
    * **Nome** `underline`
    * **Nome** `anchor` (para links e âncoras nomeadas)
    * **Nome** `image`
+
    Todas as propriedades são do **Tipo** , portanto, no `Boolean`Valor **** apropriado, você pode selecionar ou remover a marca de seleção para ativar ou desativar a funcionalidade.
 
    >[!NOTE]
@@ -271,6 +272,7 @@ Em seguida, especifique os locais das folhas de estilos que deseja referenciar:
    * **Nome** `externalStyleSheets`
    * **Tipo** `String[]` (multistring; clique em **Vários** no CRXDE)
    * **Valor(es)** O caminho e o nome de arquivo de cada folha de estilos que você deseja incluir. Use caminhos do repositório.
+
    >[!NOTE]
    >
    >É possível adicionar referências a folhas de estilos adicionais a qualquer momento.
@@ -348,9 +350,10 @@ Para criar o estilo que os autores podem aplicar ao texto em japonês, siga esta
 1. Adicione o texto da propriedade ao mesmo nó. O valor é o nome do estilo que os autores veem ao selecionar o estilo.
    * Nome: `text`
 *Tipo: `String`
-   * Valor: `Japanese word-wrap`
+Valor: `Japanese word-wrap`
+   * Crie uma folha de estilos e especifique seu caminho. Consulte [especificar o local da folha de estilos](#locationofstylesheet). Adicione o seguinte conteúdo à folha de estilos. Altere a cor do plano de fundo conforme desejado.
 
-1. Crie uma folha de estilos e especifique seu caminho. Consulte [especificar o local da folha de estilos](#locationofstylesheet). Adicione o seguinte conteúdo à folha de estilos. Altere a cor do plano de fundo conforme desejado.
+1. ![Folha de estilos para disponibilizar o recurso de quebra automática de texto em japonês aos autores](assets/rte_jpwordwrap_stylesheet.jpg)
 
    ```css
    .text span.jpn-word-wrap {
@@ -361,154 +364,151 @@ Para criar o estilo que os autores podem aplicar ao texto em japonês, siga esta
    }
    ```
 
-   ![Folha de estilos para disponibilizar o recurso de quebra automática de texto em japonês aos autores](assets/rte_jpwordwrap_stylesheet.jpg)
+   Configurar os formatos de parágrafo {#paraformats}](assets/rte_jpwordwrap_stylesheet.jpg)
 
-## Configurar os formatos de parágrafo {#paraformats}
+## Qualquer texto criado no RTE é colocado dentro de uma tag de bloco, sendo o padrão `<p>`. Ao ativar o `paraformat` plug-in, você especifica tags de bloco adicionais que podem ser atribuídas a parágrafos, usando uma lista de seleção suspensa. Os formatos de parágrafo determinam o tipo de parágrafo atribuindo a tag de bloco correta. O autor pode selecioná-los e atribuí-los usando o seletor de Formato. As tags de bloco de exemplo incluem, entre outras, o parágrafo padrão &lt;p> e os cabeçalhos &lt;h1>, &lt;h2> e assim por diante.
 
-Qualquer texto criado no RTE é colocado dentro de uma tag de bloco, sendo o padrão `<p>`. Ao ativar o `paraformat` plug-in, você especifica tags de bloco adicionais que podem ser atribuídas a parágrafos, usando uma lista de seleção suspensa. Os formatos de parágrafo determinam o tipo de parágrafo atribuindo a tag de bloco correta. O autor pode selecioná-los e atribuí-los usando o seletor de Formato. As tags de bloco de exemplo incluem, entre outras, o parágrafo padrão &lt;p> e os cabeçalhos &lt;h1>, &lt;h2> e assim por diante.
+[!CAUTION]`paraformat`
 
->[!CAUTION]
+>[!CAUTION]Esse plug-in não é adequado para conteúdo com estrutura complexa, como listas ou tabelas.
 >
->Esse plug-in não é adequado para conteúdo com estrutura complexa, como listas ou tabelas.
-
 >[!NOTE]
+
+>[!NOTE]Se uma tag de bloco, por exemplo, uma tag &lt;hr>, não puder ser atribuída a um parágrafo, não será um caso de uso válido para um plug-in paraformat.
 >
->Se uma tag de bloco, por exemplo, uma tag &lt;hr>, não puder ser atribuída a um parágrafo, não será um caso de uso válido para um plug-in paraformat.
+>Quando o plug-in Formatos de parágrafo estiver ativado pela primeira vez, nenhum Formato de parágrafo padrão estará disponível. A lista pop-up está vazia. Para fornecer aos autores Formatos de parágrafo, faça o seguinte:
 
-Quando o plug-in Formatos de parágrafo estiver ativado pela primeira vez, nenhum Formato de parágrafo padrão estará disponível. A lista pop-up está vazia. Para fornecer aos autores Formatos de parágrafo, faça o seguinte:
+Ative a lista do seletor suspenso Formato.
 
-* Ative a lista do seletor suspenso Formato.
 * Especifique as tags de bloco que podem ser selecionadas como formatos de parágrafo no menu suspenso.
+* Para configurações posteriores (re)digamos para adicionar mais formatos, siga somente a parte relevante das instruções.
 
-Para configurações posteriores (re)digamos para adicionar mais formatos, siga somente a parte relevante das instruções.
+Ativar o seletor suspenso Formato {#formatselectorlist}
 
-### Ativar o seletor suspenso Formato {#formatselectorlist}
+### Primeiro, ative o plug-in paraformat:{#formatselectorlist}
 
-Primeiro, ative o plug-in paraformat:
+Em seu componente, navegue até o nó `<rtePlugins-node>/paraformat`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 
-1. Em seu componente, navegue até o nó `<rtePlugins-node>/paraformat`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. Crie a `features` propriedade no `paraformat` nó:
+1. Crie a `features` propriedade no `paraformat` nó:](#activateplugin)
+1. **Nome** `features`
 
-   * **Nome** `features`
    * **Tipo** `String`
    * **Valor** `*` (asterisco)
+   * [!NOTE]**`*`
 
->[!NOTE]
-Se o plug-in não for configurado mais, os seguintes formatos padrão serão ativados:
-* Parágrafo ( `<p>`)
+>[!NOTE]Se o plug-in não for configurado mais, os seguintes formatos padrão serão ativados:
+Parágrafo ( `<p>`)
 * Cabeçalho 1 ( `<h1>`)
 * Cabeçalho 2 ( `<h2>`)
 * Cabeçalho 3 ( `<h3>`)
+* [!CAUTION]
 
 
 
->[!CAUTION]
-Ao configurar os formatos de parágrafo do RTE, não remova a tag de parágrafo &lt;p> como uma opção de formatação. Se a `<p>` tag for removida, o autor do conteúdo não poderá selecionar a opção Formatos **de** parágrafo mesmo se houver outros formatos configurados.
+>Ao configurar os formatos de parágrafo do RTE, não remova a tag de parágrafo &lt;p> como uma opção de formatação. Se a `<p>` tag for removida, o autor do conteúdo não poderá selecionar a opção Formatos **de** parágrafo mesmo se houver outros formatos configurados.
+Especificar os formatos de parágrafo disponíveis {#paraformatsindropdown}****
 
-### Especificar os formatos de parágrafo disponíveis {#paraformatsindropdown}
+### Os formatos de parágrafo podem ser disponibilizados para seleção por meio de:{#paraformatsindropdown}
 
-Os formatos de parágrafo podem ser disponibilizados para seleção por meio de:
+Na definição do componente, navegue até o nó `<rtePlugins-node>/paraformat`, conforme criado em [Ativando o seletor](#styleselectorlist)suspenso de formato.
 
-1. Na definição do componente, navegue até o nó `<rtePlugins-node>/paraformat`, conforme criado em [Ativando o seletor](#styleselectorlist)suspenso de formato.
-1. No `paraformat` nó, crie um novo nó para manter a lista de formatos:
+1. No `paraformat` nó, crie um novo nó para manter a lista de formatos:[](#styleselectorlist)
+1. **Nome** `formats`
 
-   * **Nome** `formats`
    * **Tipo** `cq:WidgetCollection`
+   * Crie um novo nó sob o `formats` nó, que contém detalhes para um formato individual:**`cq:WidgetCollection`
 
-1. Crie um novo nó sob o `formats` nó, que contém detalhes para um formato individual:
+1. **Nome**, você pode especificar o nome, mas ele deve ser adequado para o formato (por exemplo, myparágrafo, myheader1).
 
-   * **Nome**, você pode especificar o nome, mas ele deve ser adequado para o formato (por exemplo, myparágrafo, myheader1).
    * **Tipo** `nt:unstructured`
+   * **Para esse nó, adicione a propriedade para definir a tag de bloco usada:**`nt:unstructured`
 
-1. Para esse nó, adicione a propriedade para definir a tag de bloco usada:
+1. **Nome** `tag`
 
-   * **Nome** `tag`
    * **Tipo** `String`
-   * **Valor** A tag de bloco para o formato; por exemplo: p, h1, h2, etc.
+   * **Valor** A tag de bloco para o formato; por exemplo: p, h1, h2, etc.`String`
+   * **Não é necessário digitar as chaves delimitadoras.**
 
-      Não é necessário digitar as chaves delimitadoras.
+      Para que o mesmo nó adicione outra propriedade, para que o texto descritivo apareça na lista suspensa:
 
-1. Para que o mesmo nó adicione outra propriedade, para que o texto descritivo apareça na lista suspensa:
+1. **Nome** `description`
 
-   * **Nome** `description`
    * **Tipo** `String`
-   * **Valor** O texto descritivo para este formato; por exemplo, Parágrafo, Cabeçalho 1, Cabeçalho 2 e assim por diante. Esse texto é exibido na lista de seleção de Formato.
+   * **Valor** O texto descritivo para este formato; por exemplo, Parágrafo, Cabeçalho 1, Cabeçalho 2 e assim por diante. Esse texto é exibido na lista de seleção de Formato.`String`
+   * **Salve as alterações.**
 
-1. Salve as alterações.
+1. Repita as etapas para cada formato necessário.
 
-   Repita as etapas para cada formato necessário.
+   [!CAUTION]
 
->[!CAUTION]
-Se você definir formatos personalizados, os formatos padrão (`<p>`, `<h1>`, `<h2>`e `<h3>`) serão removidos. Recrie o `<p>` formato, pois ele é o formato padrão.
+>Se você definir formatos personalizados, os formatos padrão (`<p>`, `<h1>`, `<h2>`e `<h3>`) serão removidos. Recrie o `<p>` formato, pois ele é o formato padrão.
+Configurar caracteres especiais {#spchar}`<h1>``<h2>``<h3>``<p>`
 
-## Configurar caracteres especiais {#spchar}
+## Em uma instalação padrão do AEM, quando o `misctools` plug-in está ativado para caracteres especiais (`specialchars`) uma seleção padrão está imediatamente disponível para uso; por exemplo, os símbolos de direitos autorais e marcas registradas.
 
-Em uma instalação padrão do AEM, quando o `misctools` plug-in está ativado para caracteres especiais (`specialchars`) uma seleção padrão está imediatamente disponível para uso; por exemplo, os símbolos de direitos autorais e marcas registradas.
+Você pode configurar o RTE para disponibilizar sua própria seleção de caracteres; definindo caracteres distintos ou uma sequência inteira.`misctools``specialchars`
 
-Você pode configurar o RTE para disponibilizar sua própria seleção de caracteres; definindo caracteres distintos ou uma sequência inteira.
+[!CAUTION]
 
->[!CAUTION]
-Adicionar seus próprios caracteres especiais substitui a seleção padrão. Se necessário, (re)defina esses caracteres em sua própria seleção.
+>[!CAUTION]Adicionar seus próprios caracteres especiais substitui a seleção padrão. Se necessário, (re)defina esses caracteres em sua própria seleção.
+Definir um único caractere {#definesinglechar}
 
-### Definir um único caractere {#definesinglechar}
+### Em seu componente, navegue até o nó `<rtePlugins-node>/misctools`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 
-1. Em seu componente, navegue até o nó `<rtePlugins-node>/misctools`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. Crie a `features` propriedade no `misctools` nó:
+1. Crie a `features` propriedade no `misctools` nó:](#activateplugin)
+1. **Nome** `features`
 
-   * **Nome** `features`
    * **Tipo** `String[]`
    * **Valor** `specialchars`
+   *     (ou `String / *` se estiver aplicando todos os recursos para este plug-in)**`specialchars`
 
-          (ou `String / *` se estiver aplicando todos os recursos para este plug-in)
+      Em `misctools` criar um nó para manter as configurações de caracteres especiais:
 
-1. Em `misctools` criar um nó para manter as configurações de caracteres especiais:
+1. **Nome** `specialCharsConfig`
 
-   * **Nome** `specialCharsConfig`
    * **Tipo** `nt:unstructured`
+   * Em `specialCharsConfig` criar outro nó para manter a lista de caracteres:**`nt:unstructured`
 
-1. Em `specialCharsConfig` criar outro nó para manter a lista de caracteres:
+1. **Nome** `chars`
 
-   * **Nome** `chars`
    * **Tipo** `nt:unstructured`
+   * Em `chars` Adicionar um novo nó para manter uma definição de caractere individual:**`nt:unstructured`
 
-1. Em `chars` Adicionar um novo nó para manter uma definição de caractere individual:
+1. **Nome** que você pode especificar, mas que deve refletir o caractere; por exemplo, metade.
 
-   * **Nome** que você pode especificar, mas que deve refletir o caractere; por exemplo, metade.
    * **Tipo** `nt:unstructured`
+   * **Para esse nó, adicione a seguinte propriedade:**`nt:unstructured`
 
-1. Para esse nó, adicione a seguinte propriedade:
+1. **Nome** `entity`
 
-   * **Nome** `entity`
    * **Tipo** `String`
    * **Valor** da representação HTML do caractere desejado; por exemplo, `&189;` para a fração metade.
+   * **Salve as alterações.**`&189;`
 
-1. Salve as alterações.
-
-No CRXDE, depois que a propriedade é salva, o caractere representado é exibido. Veja abaixo o exemplo da metade. Repita as etapas acima para disponibilizar caracteres mais especiais para os autores.
+1. No CRXDE, depois que a propriedade é salva, o caractere representado é exibido. Veja abaixo o exemplo da metade. Repita as etapas acima para disponibilizar caracteres mais especiais para os autores.
 
 ![No CRXDE, adicione um único caractere a ser disponibilizado na](assets/chlimage_1-106.png "barra de ferramentas do RTEno CRXDE, adicione um único caractere a ser disponibilizado na barra de ferramentas do RTE")
 
-### Definir um intervalo de caracteres {#definerangechar}
+Definir um intervalo de caracteres {#definerangechar}](assets/chlimage_1-106.png "")
 
-1. Use as etapas de 1 a 3 de [Definição de um caractere](#definingasinglecharacter)único.
-1. Em `chars` Adicionar um novo nó para manter a definição do intervalo de caracteres:
+### Use as etapas de 1 a 3 de [Definição de um caractere](#definingasinglecharacter)único.
 
-   * **Nome** que você pode especificar, mas deve refletir o intervalo de caracteres; por exemplo, lápis.
+1. Em `chars` Adicionar um novo nó para manter a definição do intervalo de caracteres:](#definingasinglecharacter)
+1. **Nome** que você pode especificar, mas deve refletir o intervalo de caracteres; por exemplo, lápis.
+
    * **Tipo** `nt:unstructured`
+   * **Neste nó (nomeado de acordo com seu intervalo de caracteres especial), adicione as duas propriedades a seguir:**`nt:unstructured`
 
-1. Neste nó (nomeado de acordo com seu intervalo de caracteres especial), adicione as duas propriedades a seguir:
+1. **Nome** `rangeStart`
 
-   * **Nome** `rangeStart`
-      **Tipo** `Long`
-      **Valor** da representação [Unicode](https://unicode.org/) (decimal) do primeiro caractere no intervalo
 
-   * **Nome** `rangeEnd`
-      **Tipo** `Long`
-      **Valor** da representação [Unicode](https://unicode.org/) (decimal) do último caractere no intervalo
+   * **Tipo** `Long`
+      **Valor** da representação [Unicode[#$tu253] (decimal) do primeiro caractere no intervalo      
 
-1. Salve as alterações.
+   * **Tipo** `Long`
+      **Valor** da representação [Unicode[#$tu257] (decimal) do último caractere no intervalo      
 
-   Por exemplo, definir um intervalo de 9998 - 10000 fornece os seguintes caracteres.
+1. Por exemplo, definir um intervalo de 9998 - 10000 fornece os seguintes caracteres.
 
    ![No CRXDE, defina um intervalo de caracteres a ser disponibilizado no RTE](assets/chlimage_1-107.png)
 
@@ -516,254 +516,261 @@ No CRXDE, depois que a propriedade é salva, o caractere representado é exibido
 
    ![Caracteres especiais disponíveis no RTE são exibidos aos autores em uma](assets/rtepencil.png "janela pop-upCaracteres especiais disponíveis no RTE são exibidos aos autores em uma janela pop-up")
 
-## Configurar estilos de tabela {#tablestyles}
+   Configurar estilos de tabela {#tablestyles}](assets/rtepencil.png "")
 
-Os estilos são normalmente aplicados no texto, mas um conjunto separado de Estilos também pode ser aplicado em uma tabela ou em algumas células da tabela. Esses Estilos estão disponíveis para os autores na caixa do seletor Estilo na caixa de diálogo Propriedades da célula ou Propriedades da tabela. Os estilos estão disponíveis ao editar uma tabela em um componente de Texto (ou derivado) e não no componente de Tabela padrão.
+## Os estilos são normalmente aplicados no texto, mas um conjunto separado de Estilos também pode ser aplicado em uma tabela ou em algumas células da tabela. Esses Estilos estão disponíveis para os autores na caixa do seletor Estilo na caixa de diálogo Propriedades da célula ou Propriedades da tabela. Os estilos estão disponíveis ao editar uma tabela em um componente de Texto (ou derivado) e não no componente de Tabela padrão.{#tablestyles}
 
->[!NOTE]
-Você pode definir estilos para tabelas e células somente para a interface clássica.
+[!NOTE]
 
->[!NOTE]
-A cópia e colagem de tabelas no componente RTE ou a partir dele depende do navegador. Não há suporte imediato para todos os navegadores. Você pode obter resultados variados dependendo da estrutura da tabela e do navegador. Por exemplo, ao copiar e colar uma tabela em um componente RTE no Mozilla Firefox na interface clássica e na interface de usuário de toque, o layout da tabela não é preservado.
+>[!NOTE]Você pode definir estilos para tabelas e células somente para a interface clássica.
+[!NOTE]
 
-1. No componente, navegue até o nó `<rtePlugins-node>/table`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. Crie a `features` propriedade no `table` nó:
+>[!NOTE]A cópia e colagem de tabelas no componente RTE ou a partir dele depende do navegador. Não há suporte imediato para todos os navegadores. Você pode obter resultados variados dependendo da estrutura da tabela e do navegador. Por exemplo, ao copiar e colar uma tabela em um componente RTE no Mozilla Firefox na interface clássica e na interface de usuário de toque, o layout da tabela não é preservado.
+No componente, navegue até o nó `<rtePlugins-node>/table`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 
-   * **Nome** `features`
+1. Crie a `features` propriedade no `table` nó:](#activateplugin)
+1. **Nome** `features`
+
    * **Tipo** `String`
    * **Valor** `*`
-   >[!NOTE]
-   Se você não quiser ativar todos os recursos da tabela, poderá criar a `features` propriedade como:
-   * **Tipo** `String[]`
+   * [!NOTE]**`*`
 
-   * **Valor**(s) um ou ambos, do seguinte, conforme necessário:
-      * `table` permitir a edição de propriedades de tabelas; incluindo os estilos.
+   >Se você não quiser ativar todos os recursos da tabela, poderá criar a `features` propriedade como:
+   **Tipo** `String[]`
+   * **Valor**(s) um ou ambos, do seguinte, conforme necessário:`String[]`
+
+   * `table` permitir a edição de propriedades de tabelas; incluindo os estilos.**
       * `cellprops` para permitir a edição de propriedades de células, incluindo os estilos.
+      * Defina o local das folhas de estilos CSS para referenciá-las. Consulte [Especificação do local da folha](#locationofstylesheet) de estilos, pois é o mesmo que ao definir [estilos para o texto](#textstyles). O local pode ser definido se você tiver definido outros estilos.
 
 
-1. Defina o local das folhas de estilos CSS para referenciá-las. Consulte [Especificação do local da folha](#locationofstylesheet) de estilos, pois é o mesmo que ao definir [estilos para o texto](#textstyles). O local pode ser definido se você tiver definido outros estilos.
-1. No `table` nó, crie os seguintes novos nós (conforme necessário):
+1. No `table` nó, crie os seguintes novos nós (conforme necessário):](#locationofstylesheet)[](#textstyles)
+1. Para definir estilos para a tabela inteira (disponível nas propriedades **da** tabela):
 
-   * Para definir estilos para a tabela inteira (disponível nas propriedades **da** tabela):
+   * **Nome** `tableStyles`
 
-      * **Nome** `tableStyles`
       * **Tipo** `cq:WidgetCollection`
-   * Para definir estilos para células individuais (disponíveis nas propriedades **da** Célula):
+      * Para definir estilos para células individuais (disponíveis nas propriedades **da** Célula):`cq:WidgetCollection`
+   * **Nome** `cellStyles`
 
-      * **Nome** `cellStyles`
       * **Tipo** `cq:WidgetCollection`
+      * Crie um novo nó (sob o `tableStyles` ou `cellStyles` nó, conforme o caso) para representar um estilo individual:`cq:WidgetCollection`
 
 
-1. Crie um novo nó (sob o `tableStyles` ou `cellStyles` nó, conforme o caso) para representar um estilo individual:
+1. **Nome** que você pode especificar, mas deve refletir o estilo.
 
-   * **Nome** que você pode especificar, mas deve refletir o estilo.
    * **Tipo** `nt:unstructured`
+   * **Neste nó, crie as propriedades:**`nt:unstructured`
 
-1. Neste nó, crie as propriedades:
+1. Definição do estilo CSS a ser referenciado
 
-   * Definição do estilo CSS a ser referenciado
+   * **Nome** `cssName`
 
-      * **Nome** `cssName`
       * **Tipo** `String`
       * **Valor** do nome da classe CSS (sem um nome anterior `.`, por exemplo, `cssClass` em vez de `.cssClass`)
-   * Definição de um texto descritivo a ser exibido no seletor suspenso
+      * **Definição de um texto descritivo a ser exibido no seletor suspenso**`.``cssClass``.cssClass`
+   * **Nome** `text`
 
-      * **Nome** `text`
       * **Tipo** `String`
-      * **Valor** do texto a ser exibido na lista de seleção
+      * **Valor** do texto a ser exibido na lista de seleção`String`
+      * **Salve todas as alterações.**
 
 
-1. Salve todas as alterações.
+1. Repita as etapas acima para cada estilo necessário.
 
-Repita as etapas acima para cada estilo necessário.
+Configurar cabeçalhos ocultos em tabelas para acessibilidade {#hiddenheader}
 
-### Configurar cabeçalhos ocultos em tabelas para acessibilidade {#hiddenheader}
-
-Às vezes, você pode criar tabelas de dados sem texto visual em um cabeçalho de coluna, assumindo que a finalidade do cabeçalho é implícita pela relação visual da coluna com outras colunas. Nesse caso, é necessário fornecer texto interno oculto dentro da célula do cabeçalho para permitir que leitores de tela e outras tecnologias de assistência ajudem os leitores com várias necessidades a compreender a finalidade da coluna.
+### Às vezes, você pode criar tabelas de dados sem texto visual em um cabeçalho de coluna, assumindo que a finalidade do cabeçalho é implícita pela relação visual da coluna com outras colunas. Nesse caso, é necessário fornecer texto interno oculto dentro da célula do cabeçalho para permitir que leitores de tela e outras tecnologias de assistência ajudem os leitores com várias necessidades a compreender a finalidade da coluna.{#hiddenheader}
 
 Para melhorar a acessibilidade em tais cenários, o RTE suporta células de cabeçalho ocultas. Além disso, fornece configurações relacionadas a cabeçalhos ocultos em tabelas. Essas configurações permitem aplicar estilos CSS em cabeçalhos ocultos nos modos de edição e pré-visualização. Para ajudar os autores a identificar cabeçalhos ocultos no modo de edição, inclua os seguintes parâmetros no código:
 
-* `hiddenHeaderEditingCSS`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculto, quando o RTE é editado.
+`hiddenHeaderEditingCSS`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculto, quando o RTE é editado.
+
 * `hiddenHeaderEditingStyle`: Especifica uma string de estilo que é aplicada na célula de cabeçalho oculto quando o RTE é editado.
+* `hiddenHeaderEditingStyle`Se você especificar o CSS e a string de estilo no código, a classe CSS terá precedência sobre a string de estilo e poderá substituir quaisquer alterações de configuração feitas pela string de estilo.
 
-Se você especificar o CSS e a string de estilo no código, a classe CSS terá precedência sobre a string de estilo e poderá substituir quaisquer alterações de configuração feitas pela string de estilo.
+Para ajudar os autores a aplicar CSS em cabeçalhos ocultos no modo de pré-visualização, você pode incluir os seguintes parâmetros no código:
 
-Para ajudar os autores a aplicar o CSS em cabeçalhos ocultos no modo de pré-visualização, você pode incluir os seguintes parâmetros no código:
+`hiddenHeaderClassName`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculta no modo de pré-visualização.
 
-* `hiddenHeaderClassName`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculta no modo de pré-visualização.
 * `hiddenHeaderStyle`: Especifica uma string de estilo que é aplicada na célula de cabeçalho oculto no modo de pré-visualização.
+* `hiddenHeaderStyle`Se você especificar o CSS e a string de estilo no código, a classe CSS terá precedência sobre a string de estilo e poderá substituir quaisquer alterações de configuração feitas pela string de estilo.
 
-Se você especificar o CSS e a string de estilo no código, a classe CSS terá precedência sobre a string de estilo e poderá substituir quaisquer alterações de configuração feitas pela string de estilo.
+Adicionar dicionários para o verificador ortográfico {#adddict}
 
-## Adicionar dicionários para o verificador ortográfico {#adddict}
+## Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionários para cada idioma apropriado. Estes são então selecionados de acordo com o idioma do site, tirando a propriedade de idioma da subárvore ou extraindo o idioma do URL; por exemplo. a `/en/` sucursal é verificada em inglês, a `/de/` sucursal em alemão.
 
-Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionários para cada idioma apropriado. Estes são então selecionados de acordo com o idioma do site, tirando a propriedade de idioma da subárvore ou extraindo o idioma do URL; por exemplo. a `/en/` sucursal é verificada em inglês, a `/de/` sucursal em alemão.
+[!NOTE]`/de/`
 
->[!NOTE]
-A mensagem &quot;Falha na verificação ortográfica&quot;. é exibido se uma verificação for feita para um idioma que não está instalado.
-
+>[!NOTE]A mensagem &quot;Falha na verificação ortográfica&quot;. é exibido se uma verificação for feita para um idioma que não está instalado.
 Uma instalação padrão do AEM inclui os dicionários para:
 
-* Inglês Americano (pt_br)
+Inglês Americano (pt_br)
+
 * Inglês britânico (en_gb)
+* [!NOTE]
 
->[!NOTE]
-Os dicionários padrão estão localizados em `/libs/cq/spellchecker/dictionaries`, juntamente com os arquivos readme apropriados. Não modifique os arquivos.
+>Os dicionários padrão estão localizados em `/libs/cq/spellchecker/dictionaries`, juntamente com os arquivos readme apropriados. Não modifique os arquivos.
+Para adicionar mais dicionários, se necessário, siga estas etapas.`/libs/cq/spellchecker/dictionaries`
 
-Para adicionar mais dicionários, se necessário, siga estas etapas.
+Navegue até a página [https://extensions.openoffice.org/[#$tu323].
 
-1. Navegue até a página [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
-1. Selecione o idioma necessário e baixe o arquivo ZIP com as definições de ortografia. Extraia o conteúdo do arquivo em seu sistema de arquivos.
+1. 
+1. [!CAUTION]
 
-   >[!CAUTION]
-   Somente os dicionários no `MySpell` formato para OpenOffice.org v2.0.1 ou anterior são suportados. Como os dicionários agora são arquivos de arquivamento, recomenda-se verificar o arquivo após o download.
+   >Somente os dicionários no `MySpell` formato para OpenOffice.org v2.0.1 ou anterior são suportados. Como os dicionários agora são arquivos de arquivamento, recomenda-se verificar o arquivo após o download.
+   Localize os arquivos .aff e .dic. Mantenha o nome do arquivo em minúsculas. Por exemplo, `de_de.aff` e `de_de.dic`.
 
-1. Localize os arquivos .aff e .dic. Mantenha o nome do arquivo em minúsculas. Por exemplo, `de_de.aff` e `de_de.dic`.
-1. Carregue os arquivos .aff e .dic no repositório em `/apps/cq/spellchecker/dictionaries`.
+1. Carregue os arquivos .aff e .dic no repositório em `/apps/cq/spellchecker/dictionaries`.`de_de.dic`
+1. [!NOTE]
 
->[!NOTE]
-O verificador ortográfico do RTE está disponível sob demanda. Ele não é executado automaticamente à medida que você start digitar um texto.
+>[!NOTE]O verificador ortográfico do RTE está disponível sob demanda. Ele não é executado automaticamente à medida que você start digitar um texto.
 Para executar o verificador ortográfico, toque/clique no botão Verificador ortográfico da barra de ferramentas. O RTE verifica a ortografia de palavras e realça palavras com ortografia incorreta.
 Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto muda e as palavras com ortografia incorreta não são mais destacadas. Para executar o verificador ortográfico, toque/clique novamente no botão Verificador ortográfico.
+Configurar o tamanho do histórico para ações de desfazer e refazer {#undohistory}
 
-## Configurar o tamanho do histórico para ações de desfazer e refazer {#undohistory}
+## O RTE permite que os autores desfaçam ou refaçam algumas últimas edições. Por padrão, 50 edições são armazenadas no histórico. Você pode configurar esse valor conforme necessário.{#undohistory}
 
-O RTE permite que os autores desfaçam ou refaçam algumas últimas edições. Por padrão, 50 edições são armazenadas no histórico. Você pode configurar esse valor conforme necessário.
+No componente, navegue até o nó `<rtePlugins-node>/undo`. Crie esses nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 
-1. No componente, navegue até o nó `<rtePlugins-node>/undo`. Crie esses nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. No `undo` nó, crie a propriedade:
+1. No `undo` nó, crie a propriedade:[](#activateplugin)
+1. **Nome** `maxUndoSteps`
 
-   * **Nome** `maxUndoSteps`
    * **Tipo** `Long`
    * **Valor** do número de etapas de desfazer que você deseja salvar no histórico. O padrão é 50. Use `0` para desativar completamente o comando desfazer/refazer.
+   * **Salve as alterações.**`0`
 
-1. Salve as alterações.
+1. Configurar o tamanho da guia {#tabsize}
 
-## Configurar o tamanho da guia {#tabsize}
-
-Quando o caractere de tabulação é pressionado dentro de qualquer texto, é inserido um número predefinido de espaços; por padrão, são três espaços sem quebra e um espaço.
+## Quando o caractere de tabulação é pressionado dentro de qualquer texto, é inserido um número predefinido de espaços; por padrão, são três espaços sem quebra e um espaço.{#tabsize}
 
 Para definir o tamanho da guia:
 
-1. Em seu componente, navegue até o nó `<rtePlugins-node>/keys`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. No `keys` nó, crie a propriedade:
+Em seu componente, navegue até o nó `<rtePlugins-node>/keys`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 
-   * **Nome** `tabSize`
+1. No `keys` nó, crie a propriedade:[](#activateplugin)
+1. **Nome** `tabSize`
+
    * **Tipo** `String`
-   * **Valor** do número de caracteres de espaço a serem usados para o tabulador.
+   * **Valor** do número de caracteres de espaço a serem usados para o tabulador.`String`
+   * **Salve as alterações.**
 
-1. Salve as alterações.
+1. Definir margem de recuo {#indentmargin}
 
-## Definir margem de recuo {#indentmargin}
+## Quando o recuo está ativado (padrão), é possível definir o tamanho do recuo:{#indentmargin}
 
-Quando o recuo está ativado (padrão), é possível definir o tamanho do recuo:
+[!NOTE]
 
->[!NOTE]
-O tamanho do travessão só é aplicado aos parágrafos (blocos) do texto; não afeta o recuo das listas reais.
+>[!NOTE]O tamanho do travessão só é aplicado aos parágrafos (blocos) do texto; não afeta o recuo das listas reais.
+No componente, navegue até o nó `<rtePlugins-node>/lists`. Crie esses nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 
-1. No componente, navegue até o nó `<rtePlugins-node>/lists`. Crie esses nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. No `lists` nó, crie o `identSize` parâmetro:
+1. No `lists` nó, crie o `identSize` parâmetro:](#activateplugin)
+1. **Nome**: `identSize`
 
-   * **Nome**: `identSize`
    * **Tipo**: `Long`
-   * **Valor**: número de pixels necessários para a margem de recuo.
+   * **Valor**: número de pixels necessários para a margem de recuo.`Long`
+   * Configurar a altura do espaço editável {#editablespace}**
 
-## Configurar a altura do espaço editável {#editablespace}
+## [!NOTE]
 
->[!NOTE]
-Isso só se aplica ao uso do RTE em uma caixa de diálogo (não na edição no local na interface clássica).
-
+>[!NOTE]Isso só se aplica ao uso do RTE em uma caixa de diálogo (não na edição no local na interface clássica).
 Você pode definir a altura do espaço editável mostrado na caixa de diálogo do componente:
 
-1. No `../items/text` nó na definição de diálogo do componente, crie uma nova propriedade:
+No `../items/text` nó na definição de diálogo do componente, crie uma nova propriedade:
 
-   * **Nome** `height`
+1. **Nome** `height`
+
    * **Tipo** `Long`
-   * **Valor** da altura da tela de edição em pixels.
-   >[!NOTE]
-   Isso não altera a altura da janela de diálogo.
+   * **Valor** da altura da tela de edição em pixels.`Long`
+   * [!NOTE]**
 
-1. Salve as alterações.
+   >[!NOTE]Isso não altera a altura da janela de diálogo.
+   Salve as alterações.
 
-## Configurar estilos e protocolos para links {#linkstyles}
+1. Configurar estilos e protocolos para links {#linkstyles}
 
-Ao adicionar links no AEM, você pode definir:
+## Ao adicionar links no AEM, você pode definir:{#linkstyles}
 
-* Os estilos CSS a serem usados
+Os estilos CSS a serem usados
+
 * Os protocolos aceitos automaticamente
+* Para configurar como os links são adicionados no AEM a partir de outro programa, defina as regras HTML.
 
-Para configurar como os links são adicionados no AEM a partir de outro programa, defina as regras HTML.
+Usando o CRXDE Lite, localize o componente de texto para seu projeto.
 
-1. Usando o CRXDE Lite, localize o componente de texto para seu projeto.
 1. Crie um novo nó no mesmo nível `<rtePlugins-node>`, ou seja, crie o nó sob o nó pai de `<rtePlugins-node>`:
+1. **Nome** `htmlRules`
 
-   * **Nome** `htmlRules`
    * **Tipo** `nt:unstructured`
-   >[!NOTE]
-   O `../items/text` nó tem a propriedade:
-   * **Nome** `xtype`
+   * [!NOTE]**`nt:unstructured`
+
+   >O `../items/text` nó tem a propriedade:
+   **Nome** `xtype`
    * **Tipo** `String`
    * **Valor** `richtext`
-   O local do `../items/text` nó pode variar, dependendo da estrutura da caixa de diálogo; dois exemplos incluem:
-   * `/apps/myProject>/components/text/dialog/items/text`
+   * O local do `../items/text` nó pode variar, dependendo da estrutura da caixa de diálogo; dois exemplos incluem:**`richtext`
+
+   `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
+   * Em `htmlRules`, crie um novo nó.
 
 
-1. Em `htmlRules`, crie um novo nó.
+1. **Nome** `links`
 
-   * **Nome** `links`
    * **Tipo** `nt:unstructured`
+   * No `links` nó, defina as propriedades conforme necessário:**`nt:unstructured`
 
-1. No `links` nó, defina as propriedades conforme necessário:
+1. Estilo CSS para links internos:`links`
 
-   * Estilo CSS para links internos:
+   * **Nome** `cssInternal`
 
-      * **Nome** `cssInternal`
       * **Tipo** `String`
       * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
-   * Estilo CSS para links externos
+      * **Estilo CSS para links externos**`cssClass``.cssClass`
+   * **Nome** `cssExternal`
 
-      * **Nome** `cssExternal`
       * **Tipo** `String`
       * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
-   * Matriz de **protocolos** válidos (incluindo https://, https:// file://, mailto:, entre outros)
+      * Matriz de **protocolos** válidos (incluindo https://, https:// file://, mailto:, entre outros)`cssClass``.cssClass`
+   * **Nome** `protocols`
 
-      * **Nome** `protocols`
       * **Tipo** `String[]`
-      * **Valor**(s) um ou mais protocolos
-   * **defaultProtocol** (propriedade do tipo **String**): Protocolo a ser usado se o usuário não especificou um explicitamente.
+      * **Valor**(s) um ou mais protocolos`String[]`
+      * **defaultProtocol** (propriedade do tipo **String**): Protocolo a ser usado se o usuário não especificou um explicitamente.
+   * **Nome** `defaultProtocol`**
 
-      * **Nome** `defaultProtocol`
       * **Tipo** `String`
-      * **Valores** de um ou mais protocolos padrão
-   * Definição de como tratar o atributo de público alvo de um link. Criar um novo nó:
+      * **Valores** de um ou mais protocolos padrão`String`
+      * **Definição de como tratar o atributo de público alvo de um link. Criar um novo nó:**
+   * **Nome** `targetConfig`
 
-      * **Nome** `targetConfig`
       * **Tipo** `nt:unstructured`
-      No nó `targetConfig`: defina as propriedades necessárias:
+      * No nó `targetConfig`: defina as propriedades necessárias:**`nt:unstructured`
 
-      * Especifique o modo de público alvo:
+      Especifique o modo de público alvo:`targetConfig`
 
-         * **Nome** `mode`
+      * **Nome** `mode`
+
          * **Tipo** `String`)
-         * **Valor**(es) :
+         * **Valor**(es) :`String`
+         * `auto`: significa que é escolhido um público alvo automático**
 
-            * `auto`: significa que é escolhido um público alvo automático
+            * (especificado pela `targetExternal` propriedade para links externos ou `targetInternal` para links internos).
 
-               (especificado pela `targetExternal` propriedade para links externos ou `targetInternal` para links internos).
+               `manual`: não aplicável neste contexto`targetInternal`
 
-            * `manual`: não aplicável neste contexto
             * `blank`: não aplicável neste contexto
-      * O público alvo para links internos:
+            * `blank`O público alvo para links internos:
+      * **Nome** `targetInternal`
 
-         * **Nome** `targetInternal`
          * **Tipo** `String`
          * **Valor** do público alvo para links internos (use apenas quando &quot;mode is `auto`)
-      * O público alvo para links externos:
+         * **O público alvo para links externos:**`auto`
+      * **Nome** `targetExternal`
 
-         * **Nome** `targetExternal`
          * **Tipo** `String`
          * **Valor** do público alvo para links externos (usado apenas quando o modo está `auto`).
+         * **Salve todas as alterações.**`auto`
 
 
 
@@ -772,4 +779,4 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
 
 
 
-1. Salve todas as alterações.
+1. Save all changes.
