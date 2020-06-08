@@ -4,6 +4,9 @@ description: Saiba como fazer check-out dos ativos para edição e check-in dele
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 4%
 
 ---
 
@@ -14,7 +17,7 @@ Os ativos Adobe Experience Manager (AEM) permitem que você faça check-out dos 
 
 Para poder fazer check-out/check-in de ativos, você precisa ter acesso de gravação neles.
 
-Esse recurso ajuda a impedir que outros usuários substituam as alterações feitas por um autor, onde vários usuários colaboram na edição de fluxos de trabalho entre equipes.
+Esse recurso ajuda a impedir que outros usuários substituam as alterações feitas por um autor, onde vários usuários colaboram na edição de workflows entre equipes.
 
 ## Fazendo check-out de ativos {#checking-out-assets}
 
@@ -38,7 +41,7 @@ Esse recurso ajuda a impedir que outros usuários substituam as alterações fei
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   No entanto, você pode clicar/tocar no ícone **[!UICONTROL Exibir propriedades]** para editar os metadados do ativo bloqueado.
+   No entanto, você pode clicar/tocar no ícone Propriedades **[!UICONTROL da]** Visualização para editar os metadados do ativo bloqueado.
 
 1. Clique/toque no ícone Editar para abrir o ativo no modo de edição.
 
@@ -50,7 +53,7 @@ Esse recurso ajuda a impedir que outros usuários substituam as alterações fei
 
    Você também pode optar por anotar ou publicar o ativo.
 
-1. Selecione o ativo editado na interface do usuário Ativos e clique/toque no ícone **[!UICONTROL Checkin]** da barra de ferramentas.
+1. Selecione o ativo editado na interface do usuário do Assets e clique/toque no ícone **[!UICONTROL Check-in]**, da barra de ferramentas.
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
