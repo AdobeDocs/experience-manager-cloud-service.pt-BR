@@ -4,13 +4,16 @@ description: Perguntas frequentes sobre os ativos AEM e outros. Biblioteca de m�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 3%
 
 ---
 
 
 # Perguntas frequentes sobre os ativos AEM versus o AEM MediaLibrary {#aem-assets-vs-aem-medialibrary}
 
-Os ativos Adobe Experience Manager (AEM) são parte integrante da plataforma AEM. Essa integração suave é considerada uma grande vantagem do AEM e garante consistência no gerenciamento de conteúdo e alta produtividade para os autores de conteúdo.
+Os ativos Adobe Experience Manager (AEM) são parte integrante da plataforma AEM. Essa integração suave é considerada uma grande vantagem do AEM e garante consistência na gestão de conteúdo e alta produtividade para os autores de conteúdo.
 
 ## O que é o AEM Assets? {#what-is-aem-assets}
 
@@ -26,7 +29,7 @@ Os recursos exclusivos que estão disponíveis somente para clientes do AEM Asse
 
 1. a capacidade de extrair e editar metadados diferentes de título, tags e descrição.
 1. o Admin do AEM Assets, disponível na tela de boas-vindas, clicando no segundo botão ao lado do siteadmin.
-1. Todas as etapas do fluxo de trabalho relacionadas ao Gerenciamento de ativos digitais, a ingestão de ativos AEM, exclusão de ativos AEM, tratamento de subativos de ativos AEM e extração de metadados de ativos AEM.
+1. Todas as etapas do fluxo de trabalho relacionadas ao Gerenciamento de ativos digitais, a ingestão de ativos AEM, exclusão de ativos AEM, tratamento de subativos do AEM Assets, extração de metadados do AEM Assets.
 1. bibliotecas incluindo o espaço do pacote &quot;dam&quot; im.
 
 O uso desses recursos requer uma licença válida dos ativos AEM.
@@ -53,7 +56,7 @@ O componente de imagem faz parte do AEM WCM. A biblioteca de gráficos que está
 
 ## Como impedir que meus usuários usem ativos AEM se eu não licenciei ativos AEM? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-Você pode remover do AEM todos os fluxos de trabalho, componentes, taxonomias, opções e o administrador do AEM Assets específicos. Isso impede que os usuários usem acidentalmente os recursos do AEM Assets que você não licenciou.
+Você pode remover do AEM todos os workflows, componentes, taxonomias, opções e o administrador do AEM Assets específicos. Isso impede que os usuários usem acidentalmente os recursos do AEM Assets que você não licenciou.
 
 ## Quero adicionar imagens a uma página e cortar e redimensionar essas imagens. Preciso dos ativos AEM? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
@@ -67,7 +70,7 @@ Para esse caso de uso, não é necessário comprar ativos AEM, nem mesmo o uso d
 * Propriedades e gerenciamento de metadados avançados
 * Adobe Asset Link (conectar-se à Creative Cloud para empresas)
 * Aplicativo de desktop do AEM
-* Processando perfis
+* Processamento de perfis
 * Integração do servidor InDesign
 * Modelos de ativos e estrutura de produtores de catálogos
 * Ativos vinculados do Adobe Photoshop, Illustrator e InDesign
@@ -76,8 +79,8 @@ Para esse caso de uso, não é necessário comprar ativos AEM, nem mesmo o uso d
 * Gerenciamento de direitos
 * Suporte a Camera RAW
 * Gerenciamento e configuração de aspectos de pesquisa
-* Fluxos de trabalho de DAM pré-criados (por exemplo, fotografar)
-* Relatórios e análises de ativos: Insights de ativos
+* workflows DAM pré-criados (por exemplo, fotografar)
+* Relatórios de ativos e Analytics: Insights de ativos
 * Gerenciamento de ativos 3D
 * Connected Assets
 * Brand Portal
@@ -95,9 +98,9 @@ Para esse caso de uso, não é necessário comprar ativos AEM, nem mesmo o uso d
 * Gerenciamento de tags
 * Controle da versão
 * Representações estáticas
-* Projetos, Tarefas, Criação de Fluxo de Trabalho
-* Fluxo de atividade (linha do tempo)
-* Query Builder (API)
+* Projetos, Tarefas, Criação de fluxo de trabalho
+* Fluxo de Atividade (linha do tempo)
+* Construtor de Query (API)
 * Integração da Marketing Cloud
 * Personalização e extensão da interface do usuário
 * Comentários e anotações
