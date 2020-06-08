@@ -1,13 +1,16 @@
 ---
 title: Conceitos de criação
 description: Conceitos de criação no AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 100%
 
 ---
 
 
-# Criação   Conceitos {#authoring-concepts}
+# Conceitos de criação {#authoring-concepts}
 
 Uma instalação do AEM geralmente consiste em pelo menos dois ambientes:
 
