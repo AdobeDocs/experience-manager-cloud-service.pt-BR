@@ -3,6 +3,9 @@ title: Aplicação de fluxos de trabalho a páginas
 description: Ao criar, você pode invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
 translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 81%
 
 ---
 
@@ -95,6 +98,7 @@ Você pode especificar os detalhes:
    * **Título do fluxo de trabalho**
 
       * Você pode especificar um título para essa instância, para que ele possa ser identificado em um estágio posterior.
+
    Dependendo do modelo de fluxo de trabalho, as seguintes opções também estão disponíveis. Isso permite que o pacote criado como carga seja mantido após a conclusão do fluxo de trabalho.
 
    * **Manter o pacote do fluxo de trabalho**
@@ -125,9 +129,11 @@ Uma caixa de diálogo será aberta, permitindo que você refine a seleção de a
          * Incluir somente filhos imediatos.
          * Incluir somente as páginas modificadas.
          * Incluir somente páginas já publicadas.
+
          Qualquer filho especificado é adicionado à lista de recursos aos quais o fluxo de trabalho será aplicado.
 
       * **Remover seleção** para remover esse recurso do fluxo de trabalho.
+
    ![Definir escopo do fluxo de trabalho](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
    >[!NOTE]
