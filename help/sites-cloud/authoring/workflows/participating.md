@@ -3,6 +3,9 @@ title: Participar de fluxos de trabalho
 description: Fluxos de trabalho geralmente incluem etapas que exigem que uma pessoa realize uma atividade em uma página ou ativo.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 75%
 
 ---
 
@@ -20,7 +23,7 @@ Fluxos de trabalho geralmente incluem etapas que exigem que uma pessoa realize u
 
 ## Notificações de ações de fluxo de trabalho disponíveis {#notifications-of-available-workflow-actions}
 
-Quando você recebe um item de trabalho (por exemplo, **Aprovar conteúdo**), vários alertas e/ou notificações são exibidos:
+Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteúdo**), vários alertas e/ou notificações são exibidos:
 
 * Seu indicador de [notificação](/help/sites-cloud/authoring/getting-started/inbox.md) (barra de ferramentas) será incrementado:
 
@@ -36,7 +39,8 @@ Quando você recebe um item de trabalho (por exemplo, **Aprovar conteúdo**), v�
    * O número de fluxos de trabalho aos quais a página está sujeita. É possível:
       * usar as setas para a esquerda/direita para navegar pelas informações de status dos vários fluxos de trabalho.
       * clicar/tocar no número real para abrir uma lista suspensa de todos os fluxos de trabalho aplicáveis e, em seguida, selecionar o fluxo de trabalho que deseja exibir na barra de status.
-   ![Página com vários fluxos de trabalho](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+
+   ![Página com vários workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
    >
