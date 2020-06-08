@@ -3,6 +3,9 @@ title: O que é diferente e o que há de novo - Adobe Experience Manager como um
 description: 'O que é diferente e o que há de novo - Adobe Experience Manager (AEM) como um serviço em nuvem. '
 translation-type: tm+mt
 source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
+workflow-type: tm+mt
+source-wordcount: '1724'
+ht-degree: 7%
 
 ---
 
@@ -42,7 +45,7 @@ Há diferenças intrínsecas entre essas abordagens anteriores e o AEM como um s
 >
 >Para obter mais detalhes, consulte [Arquitetura](/help/core-concepts/architecture.md).
 
-O AEM como Cloud Service agora tem:
+O AEM as a Cloud Service agora tem:
 
 * Uma arquitetura dinâmica com diversas imagens do AEM.
 
@@ -69,7 +72,7 @@ Isso permite o dimensionamento automático para vários padrões de uso:
 >
 >Para obter mais detalhes, consulte a Introdução à [implantação](/help/implementing/deploying/overview.md).
 
-O AEM como serviço em nuvem agora usa a integração contínua e a entrega contínua (CI/CD) para garantir que seus projetos estejam totalmente atualizados. Isso significa que todas as operações de atualização são totalmente automatizadas, portanto, não é necessário interromper o serviço para os usuários.
+O AEM como serviço em nuvem agora usa a Integração contínua e o Delivery contínuo (CI/CD) para garantir que seus projetos estejam totalmente atualizados. Isso significa que todas as operações de atualização são totalmente automatizadas, portanto, não é necessário interromper o serviço para os usuários.
 
 A Adobe cuida proativamente da atualização de todas as instâncias operacionais do serviço para a versão mais recente da base de código do AEM:
 
@@ -97,7 +100,7 @@ As atualizações podem ser acionadas pela Adobe quando uma nova versão do serv
 
 O Cloud Manager é:
 
-* usado para gerenciar programas e ambientes AEM,
+* usado para gerenciar programas e ambientes do AEM,
 
 * um componente essencial do AEM como um serviço em nuvem; cada novo inquilino é provisionado pela primeira vez para acesso ao Cloud Manager,
 
@@ -115,7 +118,7 @@ O Cloud Manager evoluiu como um portal de autoatendimento no qual os principais 
 
 * Criação e gerenciamento de novos programas.
 
-* Criar e gerenciar os ambientes AEM dentro desses programas.
+* Criar e gerenciar os ambientes do AEM nesses programas.
 
 * Criação e gerenciamento de pipelines para a implantação do código do cliente e da configuração relacionada a um ambiente específico.
 
@@ -139,7 +142,7 @@ Iniciar e gerenciar um projeto do AEM é simples ao usar o AEM como um serviço 
 
 * As imagens do AEM de linha de base são otimizadas para casos de uso específicos.
 
-* Muitas das tarefas de configuração manual foram redundantes.
+* Muitas das tarefas de configuração manuais foram redundantes.
 
 Também é significativamente diferente, já que agora existe:
 
@@ -161,7 +164,7 @@ Também é significativamente diferente, já que agora existe:
 
 >[!NOTE]
 >
->Para obter mais detalhes, você pode começar com as Diretrizes [de](/help/implementing/developing/introduction/development-guidelines.md) desenvolvimento e [Desenvolvimento - O tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)da WKND.
+>Para obter mais detalhes, você pode start com as diretrizes [de](/help/implementing/developing/introduction/development-guidelines.md) desenvolvimento e [desenvolvimento - o tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)da WKND.
 
 A nova arquitetura que suporta o AEM como um serviço em nuvem envolve algumas alterações importantes na experiência geral do desenvolvedor. Um dos principais objetivos do AEM como serviço em nuvem é permitir que clientes experientes (que usaram o AEM no local ou no contexto dos serviços gerenciados da Adobe) migrem para o AEM como um serviço em nuvem o mais rápido possível, sem precisar reescrever a maior parte do código personalizado. No entanto, poderão ainda ser necessários alguns ajustamentos.
 
@@ -187,7 +190,7 @@ Outro requisito comum para desenvolvedores é o acesso rápido aos arquivos de r
 
 Devido à clara separação de código e conteúdo, os desenvolvedores podem usar um processo específico para atualizar o conteúdo como parte de uma implantação. Os casos de uso típicos para conteúdo mutável são:
 
-* Conteúdo *padrão* que faz parte do projeto do cliente (por exemplo, pastas, modelos, fluxos de trabalho etc.)
+* Conteúdo *padrão* que faz parte do projeto do cliente (por exemplo, pastas, modelos, workflows etc.)
 
 * Definições de índice de pesquisa
 
@@ -205,7 +208,7 @@ Para suportar iterações e desenvolvimento rápidos, também é possível desen
 
 >[!NOTE]
 >
->Observe que o QuickStart da Cloud não permite todas as funcionalidades do AEM Sites e do AEM Assets. Consiste em um ambiente simples de criação, onde a maioria das extensões pode ser desenvolvida e testada.
+>Observe que o QuickStart da Cloud não permite todas as funcionalidades do AEM Sites e do AEM Assets. Consiste num simples ambiente de autor, no qual a maioria das extensões pode ser desenvolvida e testada.
 
 ## Operações e desempenho {#operations-and-performance}
 
@@ -221,9 +224,9 @@ Nestas áreas:
 
 * As topologias são otimizadas para a máxima resistência e eficiência; por exemplo, a replicação sem binários é o padrão.
 
-* Tarefas de carga intensa, como filas, trabalhos e tarefas de processamento em massa, foram removidas da instância principal do AEM para serem tratadas por microserviços compartilhados e dedicados.
+* tarefas de carga pesada, como filas, trabalhos e tarefas de processamento em massa, foram removidas da instância principal do AEM para serem tratadas por microserviços compartilhados e dedicados.
 
-As operações do AEM como um serviço em nuvem também são suportadas por uma nova infraestrutura de monitoramento, relatórios e alertas. Isso permite que os Adobe SREs (Site Reliability Engineers, engenheiros de confiabilidade do site) mantenham o serviço saudável de forma proativa. Os vários elementos da arquitetura estão equipados com uma variedade de controlos sanitários. Se, por algum motivo, um nó específico da arquitetura for considerado insalubre, ele será removido do serviço e silenciosamente substituído por um novo nó saudável.
+As operações do AEM como um serviço em nuvem também são suportadas por uma nova infraestrutura de monitoramento, relatórios e alerta. Isso permite que os Adobe SREs (Site Reliability Engineers, engenheiros de confiabilidade do site) mantenham o serviço saudável de forma proativa. Os vários elementos da arquitetura estão equipados com uma variedade de controlos sanitários. Se, por algum motivo, um nó específico da arquitetura for considerado insalubre, ele será removido do serviço e silenciosamente substituído por um novo nó saudável.
 
 ## Gerenciamento de identidade {#identity-management}
 
@@ -233,7 +236,7 @@ As operações do AEM como um serviço em nuvem também são suportadas por uma 
 
 Uma grande mudança no AEM como um serviço em nuvem é o uso totalmente integrado das Adobe IDs para acessar a camada do autor.
 
-Isso requer o uso do console [de administração da](https://helpx.adobe.com/enterprise/using/admin-console.html) Adobe para gerenciar usuários e grupos de usuários. As contas de usuário permitem que seus usuários acessem produtos e serviços da Adobe, já que as informações de perfil do usuário estão centralizadas no Adobe Identity Management System (IMS) para serem compartilhadas em todos os serviços em nuvem. Depois que o acesso ao AEM é atribuído, as contas de usuário podem ser referenciadas no AEM como um serviço em nuvem (como antes); por exemplo, para definir funções e permissões das interfaces de usuário do AEM Security.
+Isso requer o uso do console [de administração da](https://helpx.adobe.com/br/enterprise/using/admin-console.html) Adobe para gerenciar usuários e grupos de usuários. As contas de usuário permitem que seus usuários acessem produtos e serviços da Adobe, já que as informações sobre o perfil do usuário estão centralizadas no Adobe Identity Management System (IMS) para serem compartilhadas em todos os serviços em nuvem. Depois que o acesso ao AEM é atribuído, as contas de usuário podem ser referenciadas no AEM como um serviço em nuvem (como antes); por exemplo, para definir funções e permissões das interfaces de usuário do AEM Security.
 
 Isso combina os benefícios de:
 
@@ -253,13 +256,13 @@ A principal diferença é que a interface do usuário está habilitada para toqu
 
 ## AEM Sites {#aem-sites}
 
-O Adobe Experience Manager Sites como um serviço em nuvem permite que você forneça aos clientes experiências personalizadas e orientadas por conteúdo, combinando o poder do AEM Content Management System com o AEM Digital Asset Management.
+O Adobe Experience Manager Sites como um serviço em nuvem permite que você forneça aos clientes experiências personalizadas e orientadas por conteúdo, combinando o poder do sistema de Gestão de conteúdo AEM com o gerenciamento de ativos digitais AEM.
 
 Para obter detalhes, consulte a visão geral de [Alterações em sites](/help/sites-cloud/sites-cloud-changes.md).
 
 ## Ativos AEM {#aem-assets}
 
-Os ativos Adobe Experience Manager como um serviço em nuvem oferecem uma solução SaaS nativa para as empresas não apenas executarem suas operações de Gerenciamento de ativos digitais e Mídia dinâmica com velocidade e impacto, mas também usarem recursos inteligentes da próxima geração, como o AI/ML, de dentro de um sistema que está sempre atualizado, sempre disponível e sempre aprendendo.
+Os ativos Adobe Experience Manager como um serviço em nuvem oferta uma solução SaaS nativa na nuvem para que as empresas executem não apenas as operações de Gerenciamento de ativos digitais e Mídia dinâmica com velocidade e impacto, mas também usem recursos inteligentes da próxima geração, como o AI/ML, de dentro de um sistema que está sempre atualizado, sempre disponível e sempre aprendendo.
 
 A oferta de ativos inclui o processamento de ativos da próxima geração na nuvem e a inclusão e pesquisa de ativos de alto desempenho.
 
