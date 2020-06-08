@@ -134,7 +134,7 @@ Execute as seguintes etapas para gerar as credenciais da conta de serviço e a c
 
 1. Verifique o certificado público e clique em **[!UICONTROL Avançar]**.
 
-1. Selecione o perfil de produto padrão Portal **[!UICONTROL de marcas de]** Ativos de marca e clique em **[!UICONTROL Salvar configuração]**.
+1. Selecione o perfil de produto padrão Portal **[!UICONTROL de marca de]** Ativos de marca e clique em **[!UICONTROL Salvar configuração]**.
 
    <!-- 
    In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
