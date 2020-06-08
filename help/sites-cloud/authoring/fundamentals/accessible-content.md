@@ -1,9 +1,9 @@
 ---
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
 description: Usar o AEM as a Cloud Service para ajuda a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '13955'
 ht-degree: 100%
 
@@ -328,6 +328,7 @@ O AEM facilita a construção de conteúdo da Web semanticamente significativo u
 * **Listas**: você pode usar HTML para especificar três tipos diferentes de listas:
    * O elemento `<ul>` é usado para listas *desordenadas* (com marcadores). Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista de marcadores**.
    * O elemento `<ol>` é usado para as listas *numeradas*. Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista numerada** .
+
    Caso deseje alterar o conteúdo existente em um tipo de lista específica, destaque o texto e selecione o tipo de lista adequado. Como no exemplo anterior, que mostra como o texto do parágrafo é inserido, os elementos desejados da lista são adicionados automaticamente ao seu HTML.
 
    No modo de tela cheia, os ícones **Lista com marcadores** e **Lista numerada** ficam visíveis. Quando não estiver no modo de tela cheia, as duas opções estarão disponíveis no ícone **Listas**.
@@ -337,11 +338,13 @@ O AEM facilita a construção de conteúdo da Web semanticamente significativo u
    * um elemento `<tr>` para cada linha da tabela
    * um elemento `<th>` para cada linha e cabeçalho da coluna
    * um elemento `<td>` para cada célula de dados
+
    Além disso, as tabelas acessíveis usam os seguintes elementos e atributos:
 
    * O elemento `<caption>` é usado para fornecer uma legenda visível para a tabela. As legendas por padrão são exibidas de forma centralizada acima da tabela, mas podem ser posicionadas adequadamente usando o CSS. A legenda é associada à tabela de forma programada, portanto, é um método útil para fornecer uma introdução ao conteúdo.
    * O elemento `<summary>` auxilia os usuários com deficiências visuais a compreender de forma mais fácil as informações apresentadas em uma tabela, fornecendo um resumo do que pode ser visto. Isso é particularmente útil quando layouts complexos ou não convencionais são usados (esse atributo não é exibido no navegador, somente é lido nas tecnologias de assistência).
    * O `scope` atributo do elemento `<th>` é usado para indicar se uma célula representa um cabeçalho de uma linha ou de uma coluna específica. Uma abordagem semelhante é a de usar o cabeçalho e os atributos de id em tabelas complexas, onde as células de dados podem ser associadas a um ou mais cabeçalhos.
+
    >[!NOTE]
    >
    >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores na caixa de diálogo **Propriedades da tabela** (consulte Adicionar suporte para outros elementos e atributos de HTML).
@@ -354,6 +357,7 @@ O AEM facilita a construção de conteúdo da Web semanticamente significativo u
 
    * Defina uma **legenda** apropriada.
    * Remova qualquer valor padrão para **Largura**, **Altura**, **Borda**, **Preenchimento da célula e** **Espaçamento entre células**. já que essas propriedades podem ser definidas em uma planilha de estilos global.
+
    Em seguida, você pode usar as **Propriedades da célula** para escolher se a célula é uma célula de dados ou de cabeçalho:
 
 * **Ênfase**: Use o elemento `<strong>` ou `<em>` para indicar ênfase. Não use os cabeçalhos para destacar o texto dentro dos parágrafos.
@@ -366,6 +370,7 @@ O AEM facilita a construção de conteúdo da Web semanticamente significativo u
       >
       >* `<b>` para `<strong>`
       >* `<i>` para `<em>`
+
       >
       >Eles são efetivamente os mesmos, mas `<strong>` e `<em>` são preferíveis, pois são html semanticamente corretos. Sua equipe de desenvolvimento pode configurar o RTE para usar `<strong>` e `<em>` (em vez de `<b>` e `<i>`), ao desenvolver a instância do projeto.
 
@@ -537,6 +542,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 1.4.2](https://www
    * Texto ampliado: o texto ampliado e as imagens compostas por texto ampliado têm uma relação de contraste de, no mínimo, 3:1.
    * Incidental: o texto ou as imagens de texto que fazem parte de um componente de interface de usuário inativo, que são [meramente decorativos](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), e não estão visíveis para ninguém ou que são parte de uma imagem que inclui outro conteúdo visual significativo, não têm requisito de contraste.
    * Logotipos: o texto que faz parte de um logotipo ou marca comercial não tem requisito de contraste.
+
    >[!NOTE]
    >
    >Consulte [Compreensão do contraste não textual](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) para obter mais informações, para ajudar a garantir que os autores de conteúdo entendam os requisitos adicionais sobre elementos não textuais (incluindo ícones, elementos de interface, entre outros).
