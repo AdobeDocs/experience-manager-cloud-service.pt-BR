@@ -3,6 +3,9 @@ title: Trabalhar com tarefas
 description: As tarefas representam itens de trabalho a serem realizados no conteúdo e são usadas nos projetos para determinar o nível de integridade das tarefas atuais
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 93%
 
 ---
 
@@ -17,9 +20,9 @@ Tarefas também são usadas em projetos para determinar o nível de integridade 
 
 É possível monitorar o andamento do projeto por meio da análise de tarefas ativas/concluídas dentro de um projeto representado pelo mosaico de **Tarefas**. O andamento do projeto pode ser determinado por:
 
-* **** Bloco de tarefas: Um progresso geral do projeto é representado no bloco de tarefas disponível na página de detalhes do projeto.
+* **Bloco de tarefas:** um progresso geral do projeto é representado no Bloco de tarefas disponível na página Detalhes do projeto.
 
-* **** Lista de tarefas: Ao clicar no bloco Tarefa, uma lista de tarefas é exibida. Essa lista contém informações detalhadas sobre todas as tarefas relacionadas ao projeto.
+* **Lista de tarefas:** ao clicar no bloco Tarefa, uma lista de tarefas é exibida. Essa lista contém informações detalhadas sobre todas as tarefas relacionadas ao projeto.
 
 Ambos listam as tarefas do fluxo de trabalho e as tarefas criadas diretamente no Mosaico de **tarefas**.
 
@@ -31,7 +34,7 @@ Se um projeto estiver relacionado a alguma tarefa, um Mosaico de tarefas será e
 * Porcentagem de tarefas ativas
 * Porcentagem de tarefas vencidas
 
-![Bloco de tarefas](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![mosaico de Tarefa](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
 ### Visualizar ou modificar as tarefas de um projeto {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -45,9 +48,9 @@ Clique nas reticências (...) no Mosaico de tarefas para exibir a lista de taref
 
 #### Detalhes da tarefa {#task-details}
 
-Para obter mais informações sobre uma tarefa específica, na Lista de Tarefas, toque/clique na tarefa e **Detalhes da Tarefa **abrir.
+Para obter mais informações sobre uma tarefa específica, na Lista da Tarefa, toque/clique na tarefa e **detalhes da Tarefa **abra.
 
-![Detalhes da tarefa](/help/sites-cloud/authoring/assets/projects-task-details.png)
+![Detalhes da Tarefa](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
 ### Visualizar e modificar comentários da tarefa {#viewing-and-modifying-task-comments}
 
@@ -61,7 +64,7 @@ Nos detalhes da Tarefa, é possível editar ou adicionar comentários. Além dis
 
 Para adicionar uma tarefa:
 
-1. No projeto, toque/clique no ícone + no Mosaico de **tarefas**. A janela **Adicionar tarefa** é aberta.
+1. No projeto, no bloco **Tarefas**, toque/clique no ícone +. A janela **Adicionar tarefa** é aberta.
 1. Insira as informações sobre a tarefa. O título da tarefa e o grupo ao qual ela foi atribuída são obrigatórios. Informações adicionais como o caminho do conteúdo, a descrição, a prioridade da tarefa e o prazo são opcionais. Além disso, é possível selecionar a guia **Avançado** para inserir o nome da tarefa, que será usado para nomear o URL.
 
    ![Adicionar uma tarefa](/help/sites-cloud/authoring/assets/projects-add-task.png)
@@ -76,4 +79,4 @@ Também é possível acessar as tarefas na Caixa de entrada. Na caixa de entrada
 
 Para concluir a tarefa, selecione-a e clique em **Concluído**. Adicione as informações à tarefa e clique em **Concluído**. Consulte [Sua caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obter mais informações.
 
-![Notificações de tarefa](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
+![Notificações de Tarefa](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
