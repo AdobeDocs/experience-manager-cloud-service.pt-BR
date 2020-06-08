@@ -1,16 +1,16 @@
 ---
-title: Configuração do OSGi para AEM como um serviço em nuvem
+title: Configuração do OSGi para o AEM as a Cloud Service
 description: 'Configuração do OSGi com valores secretos e valores específicos do Ambiente '
 translation-type: tm+mt
 source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
 source-wordcount: '2689'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Configuring OSGi for AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
+# Configuração do OSGi para o AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [O OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologias do Adobe Experience Manager (AEM). É usado para controlar os pacotes compostos do AEM e suas configurações.
 
@@ -401,7 +401,7 @@ config.dev
 </tr>
 </table>
 
-Outra maneira de fazer isso seria definir um valor padrão para o token de substituição na pasta config.dev de modo que ele tenha o mesmo valor que na pasta **config** .
+Another way to accomplish this would be to set a default value for the replacement token in the config.dev folder such that it&#39;s the same value as in the **config** folder.
 
 <table>
 <tr>
@@ -515,13 +515,13 @@ Até 20 variáveis podem ser declaradas.
 
 Como os valores de configuração secretos e específicos do ambiente permanecem fora do Git e, portanto, não fazem parte do AEM formal como um mecanismo de implantação do Serviço em nuvem, o cliente deve gerenciar, administrar e integrar o AEM como um processo de implantação do Serviço em nuvem.
 
-Como mencionado acima, chamar a API implantará as novas variáveis e valores em ambientes da Cloud, de modo semelhante a um pipeline de implantação de código do cliente típico. Os serviços de autor e publicação serão reiniciados e farão referência aos novos valores, normalmente demorando alguns minutos. Observe que as portas de qualidade e os testes executados pelo Gerenciador de nuvem durante uma implantação regular de código não são executados durante esse processo.
+Como mencionado acima, chamar a API implantará as novas variáveis e valores em ambientes da Cloud, de modo semelhante a um pipeline de implantação de código do cliente típico. Os serviços de autor e publicação serão reiniciados e farão referência aos novos valores, normalmente demorando alguns minutos. Note that the quality gates and tests that are executed by Cloud Manager during a regular code deployment are not performed during this process.
 
 Normalmente, os clientes ligam para a API para definir variáveis de ambiente antes de implantar um código que depende deles no Cloud Manager. Em algumas situações, é possível modificar uma variável existente após a implantação do código.
 
-Observe que a API pode não ter êxito quando um pipeline está em uso, seja uma atualização do AEM ou implantação do cliente, dependendo de qual parte do pipeline de fim a fim está sendo executada no momento. A resposta ao erro indicará que a solicitação não foi bem-sucedida, embora não indique o motivo específico.
+Observe que a API pode não ter êxito quando um pipeline está em uso, seja uma atualização do AEM ou implantação do cliente, dependendo de qual parte do pipeline de fim a fim está sendo executada no momento. The error response will indicate that the request was not successful, although it will not indicate the specific reason.
 
-Pode haver situações em que uma implantação programada de código de cliente dependa de variáveis existentes para ter novos valores, o que não seria apropriado com o código atual. Se isso for uma preocupação, é recomendável fazer modificações variáveis de uma forma aditiva. Para fazer isso, crie novos nomes de variáveis em vez de apenas alterar o valor de variáveis antigas para que o código antigo nunca faça referência ao novo valor. Em seguida, quando a nova versão do cliente parecer estável, é possível optar por remover os valores mais antigos.
+There may be scenarios where a scheduled customer code deployment relies on existing variables to have new values, which would not be appropriate with the current code. Se isso for uma preocupação, é recomendável fazer modificações variáveis de uma forma aditiva. Para fazer isso, crie novos nomes de variáveis em vez de apenas alterar o valor de variáveis antigas para que o código antigo nunca faça referência ao novo valor. Em seguida, quando a nova versão do cliente parecer estável, é possível optar por remover os valores mais antigos.
 
 Da mesma forma, como os valores de uma variável não têm controle de versão, uma reversão do código pode fazer com que ele faça referência a valores mais recentes que causam problemas. A estratégia de variáveis aditivas acima mencionada também ajudaria neste caso.
 
