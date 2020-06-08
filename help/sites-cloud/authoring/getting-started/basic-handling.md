@@ -1,9 +1,9 @@
 ---
 title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 100%
 
@@ -195,6 +195,7 @@ Há vários recursos de ajuda disponíveis:
 
    * **Documentação** - exibir a documentação do Adobe® Experience Manager
    * **Recursos do desenvolvedor** - recursos e downloads do desenvolvedor
+
    >[!NOTE]
    >
    >É possível acessar uma visão geral das teclas de atalho disponíveis a qualquer momento, usando a tecla de atalho `?` (ponto de interrogação) em um console.
@@ -309,6 +310,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * Quando essa opção for selecionada, uma marca de seleção será sobreposta à miniatura, e o nome do recurso também será destacado.
    * Os detalhes do recurso selecionado serão mostrados na coluna final.
    * A barra de ferramentas de ação ficará disponível.
+
    Quando uma página é selecionada na exibição de coluna, a página selecionada é exibida na coluna final junto com os seguintes detalhes:
 
    * Título da página
