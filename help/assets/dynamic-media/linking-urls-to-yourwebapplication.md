@@ -2,9 +2,9 @@
 title: Vincular URLs ao aplicativo da Web.
 description: Como vincular URLs ao aplicativo da Web em mídia dinâmica
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1272'
 ht-degree: 11%
 
 ---
@@ -22,13 +22,13 @@ Para colocar essas strings de URL em suas páginas da Web e aplicativos, copie-a
 >
 >As strings de URL estão disponíveis somente para representações dinâmicas de ativos. No momento, eles não estão disponíveis para ativos estáticos que residem no DAM e não no servidor de mídia dinâmica. O botão URL não é exibido para execuções estáticas.
 
-See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-See also [Linking YouTube URLs to your Web Application.](video.md)
+See also [Linking YouTube URLs to your Web Application](video.md).
 
-See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
-See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-assets)
+See also [Uploading Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ## Obter um URL para um ativo {#obtaining-a-url-for-an-asset}
 
@@ -52,7 +52,7 @@ Existem várias maneiras diferentes de obter uma string de URL. No entanto, as e
 
    Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou da imagem também deve ser publicada.
 
-   Consulte [Publicação de ativos.](publishing-dynamicmedia-assets.md)
+   Consulte [Publicação de ativos](publishing-dynamicmedia-assets.md).
 
    See [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -84,6 +84,7 @@ Existem várias maneiras diferentes de obter uma string de URL. No entanto, as e
 
 O Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicionais além de imagens e vídeos. Os formatos de ativos estáticos suportados para o delivery incluem:
 
+* arquivos 3D
 * GIF animado
 * Arquivos de áudio
 * CSS
@@ -99,7 +100,7 @@ O Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
 
    Remember that URLs are only available to copy *after* you have first *published* the static asset.
 
-   Consulte [Publicação de ativos.](publishing-dynamicmedia-assets.md)
+   Consulte [Publicação de ativos](publishing-dynamicmedia-assets.md).
 
 1. Use qualquer um dos seguintes métodos para obter o URL do ativo estático publicado:
 
@@ -108,7 +109,7 @@ O Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          Por exemplo, `https://aem.com/is/content/adobe/image.gif`.
-   * clique em **[!UICONTROL Ativo > Representações]** dinâmicas e, em seguida, toque em uma representação dinâmica do ativo estático e copie o URL.
+   * Toque em **[!UICONTROL Ativo > Representações]** dinâmicas e, em seguida, toque em uma representação dinâmica do ativo estático e copie o URL.
 
       Altere o URL copiado para usar `is/content` no caminho em vez de `is/image/`.
 
@@ -158,7 +159,6 @@ O Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
 1. Na página Configurações **[!UICONTROL do]** Dynamic Media Cloud Services, faça o seguinte:
 
    * Em URL **[!UICONTROL do serviço de]** vídeo, copie o caminho do URL inteiro. Você precisará do caminho do URL copiado posteriormente nessas etapas. Por exemplo, o caminho do URL pode ser exibido da seguinte maneira:
-
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (O caminho acima serve apenas para fins ilustrativos; não é o caminho real que você copia.)
