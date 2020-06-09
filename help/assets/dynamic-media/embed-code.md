@@ -2,15 +2,15 @@
 title: Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web
 description: Saiba como incorporar vídeos ou imagens do Dynamic Media em uma página da Web
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '371'
 ht-degree: 22%
 
 ---
 
 
-# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Incorporar o vídeo de Dynamic Media, o visualizador de imagens ou o visualizador de dimensões em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]**.
 
