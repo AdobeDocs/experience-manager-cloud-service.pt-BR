@@ -64,7 +64,7 @@ Siga esta seção para saber mais sobre as novidades e atualizações do Cloud M
 
    Consulte [Excluindo um Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) Sandbox para obter mais detalhes.
 
-* Um usuário do Programa Sandbox no Proprietário *do* Negócio ou na função *Gerenciador* de Implantação no Gerenciador de Nuvem agora pode excluir seu conjunto de ambientes de Produção e Estágio por meio da interface do usuário do Gerenciador de Nuvem. A opção de exclusão agora está disponível no cartão do Ambiente na página Visão geral **dos** Programas, bem como na página **Ambientes** . Selecionar a opção de exclusão em Produção ou Estágio também exclui a outra no conjunto.
+* Um usuário do Programa Sandbox no Proprietário *do* Negócio ou na função *Gerenciador* de Implantação no Gerenciador de Nuvem agora pode excluir seu conjunto de ambientes de Produção e Estágio por meio da interface do usuário do Gerenciador de Nuvem. A opção de exclusão agora está disponível no cartão de Ambiente na página Visão geral **dos** Programas, bem como na página **Ambientes** . Selecionar a opção de exclusão em Produção ou Estágio também exclui a outra no conjunto.
 
    Consulte [Excluindo um Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) Sandbox para obter mais detalhes.
 
