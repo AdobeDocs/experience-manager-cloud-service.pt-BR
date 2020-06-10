@@ -2,7 +2,7 @@
 title: Visão geral da ferramenta de transferência de conteúdo
 description: Visão geral da ferramenta de transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
