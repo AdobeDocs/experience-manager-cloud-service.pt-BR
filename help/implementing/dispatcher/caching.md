@@ -2,9 +2,9 @@
 title: Armazenamento em cache no AEM como um serviço em nuvem
 description: 'Armazenamento em cache no AEM como um serviço em nuvem '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1358'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,10 @@ ht-degree: 0%
 
 # Introdução {#intro}
 
-O armazenamento em cache no CDN pode ser configurado usando as regras do dispatcher. Observe que o dispatcher também respeita os cabeçalhos de expiração do cache resultante se `enableTTL` estiverem ativados na configuração do dispatcher, o que significa que ele atualizará conteúdo específico mesmo fora do conteúdo que está sendo republicado.
+O tráfego passa pelo CDN para uma camada do servidor da Web apache, que suporta módulos incluindo o dispatcher. Para aumentar o desempenho, o dispatcher é usado principalmente como cache para limitar o processamento nos nós de publicação.
+As regras podem ser aplicadas à configuração do despachante para modificar qualquer configuração de expiração de cache padrão, resultando em cache no CDN. Observe que o dispatcher também respeita os cabeçalhos de expiração do cache resultante se `enableTTL` estiverem ativados na configuração do dispatcher, o que significa que ele atualizará conteúdo específico mesmo fora do conteúdo que está sendo republicado.
+
+Esta página também descreve como o cache do dispatcher é invalidado, bem como como o cache funciona no nível do navegador em relação às bibliotecas do lado do cliente.
 
 ## Cache {#caching}
 
@@ -33,6 +36,14 @@ Você deve garantir que um arquivo em `src/conf.dispatcher.d/cache` tem a seguin
 ```
 /0000
 { /glob "*" /type "allow" }
+```
+
+* Para impedir que o conteúdo específico seja armazenado em cache, defina o cabeçalho Cache-Control como &quot;particular&quot;. Por exemplo, o seguinte impediria que o conteúdo html em um diretório chamado &quot;myfolder&quot; fosse armazenado em cache:
+
+```
+<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+    Header set Cache-Control “private”
+</LocationMatch>
 ```
 
 * Observe que outros métodos, incluindo o projeto [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS Commons, não substituirão valores com êxito.
@@ -70,13 +81,9 @@ Certifique-se de que os ativos destinados a serem mantidos privados em vez de ar
 * o padrão não pode ser definido com a `EXPIRATION_TIME` variável usada para tipos de arquivos html/text
 * a expiração do cache pode ser definida com a mesma estratégia LocationMatch descrita na seção html/texto especificando o regex apropriado
 
-## Dispatcher {#disp}
+## Invalidação do Cache do Dispatcher {#disp}
 
-O tráfego passa por um servidor da Web apache, que suporta módulos incluindo o dispatcher. O dispatcher é usado principalmente como cache para limitar o processamento nos nós de publicação, a fim de aumentar o desempenho.
-
-Conforme descrito na seção de cache do CDN, as regras podem ser aplicadas à configuração do dispatcher para modificar quaisquer configurações padrão de expiração do cache.
-
-O restante desta seção descreve as considerações relacionadas à invalidação do cache do dispatcher. Para a maioria dos clientes, não deve ser necessário invalidar o cache do dispatcher, em vez de confiar na atualização do cache pelo dispatcher após a republicação do conteúdo e no CDN que respeita os cabeçalhos de expiração do cache.
+Em geral, não deve ser necessário invalidar o cache do dispatcher. Em vez disso, você deve confiar no dispatcher atualizando seu cache quando o conteúdo estiver sendo republicado e no CDN respeitando os cabeçalhos de expiração do cache.
 
 ### Invalidação do Cache do Dispatcher durante Ativação/Desativação {#cache-activation-deactivation}
 
