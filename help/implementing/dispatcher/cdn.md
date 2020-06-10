@@ -2,9 +2,9 @@
 title: CDN no AEM como um serviço em nuvem
 description: CDN no AEM como um serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '889'
 ht-degree: 2%
 
 ---
@@ -37,14 +37,16 @@ Apresentada abaixo é uma matriz de decisão para comparar as duas opções. Inf
 
 ## CDN gerenciado pelo AEM  {#aem-managed-cdn}
 
-A preparação para o delivery de conteúdo usando o CDN predefinido da Adobe é simples, como descrito abaixo:
+Siga estas etapas para se preparar para o delivery de conteúdo usando o CDN pronto para uso da Adobe:
 
 1. Você fornecerá o certificado SSL assinado e a chave secreta para a Adobe compartilhando um link para um formulário seguro contendo essas informações. Coordene-se com o suporte ao cliente nesta tarefa.
    **Observação:** O Aem como um serviço em nuvem não oferece suporte a certificados DV (Domain Validated, Domínio validado).
 1. Você deve informar o suporte ao cliente:
-   * qual domínio personalizado deve ser associado a um determinado ambiente, conforme definido pela ID do programa e pela ID do ambiente.
+   * qual domínio personalizado deve ser associado a um determinado ambiente, conforme definido pela ID do programa e pela ID do ambiente. Observe que domínios personalizados no lado do autor não são suportados.
    * se for necessária alguma listagem de IP para restringir o tráfego a um determinado ambiente.
-1. O suporte ao cliente coordenará com você o tempo de um registro DNS CNAME, apontando para o FQDN `cdn.adobeaemcloud.com`.
+1. Você deve coordenar com o suporte ao cliente sobre o tempo das alterações necessárias nos registros de DNS. As instruções são diferentes com base na necessidade ou não de um registro de ápice:
+   * se um registro de ápice não for necessário, os clientes devem definir o registro de DNS CNAME para apontar para o FQDN `cdn.adobeaemcloud.com`.
+   * se for necessário um registro anexado, crie um registro A apontando para os seguintes IPs: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Os clientes precisam de um registro de vértice se o FQDN desejado corresponder à Zona DNS. Isso pode ser testado usando o comando Unix dig para verificar se o valor SOA da saída corresponde ao domínio. Por exemplo, o comando `dig anything.dev.adobeaemcloud.com` retorna um SOA (Start de Autoridade, ou seja, a zona) de `dev.adobeaemcloud.com` modo que não seja um registro APEX, enquanto `dig dev.adobeaemcloud.com` retorna um SOA de `dev.adobeaemcloud.com` modo que seja um registro anexado.
 1. Você será notificado quando os certificados SSL estiverem expirando, para que possa reenviar os novos certificados SSL.
 
 **Restrição de tráfego**
