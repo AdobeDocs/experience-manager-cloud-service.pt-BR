@@ -2,9 +2,9 @@
 description: 'A newsletter Dynamic Media da Experience League é uma newsletter mensal. Ele foi projetado para ajudá-lo a se atualizar com o Dynamic Media e o Dynamic Media Classic, para que você possa start imediatamente para obter valor. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim de balcão único, incluindo vídeos, visões gerais de soluções e apresentações para alguns dos principais recursos e recursos, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais. '
 title: Newsletter do Dynamic Media
 translation-type: tm+mt
-source-git-commit: 1ee8cd31a83850d0d6c90cb5452015a57ee728ef
+source-git-commit: 6eb9f2fd6f692df26e4bd1b56cbc18db84b2f53f
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,21 @@ Neste boletim de balcão único, descubra recursos valiosos para a criação de 
 [Inscreva-se](https://www.adobe.com/subscription/dynamic-media-newsletter.html) para receber a newsletter do Dynamic Media mensalmente na sua caixa de entrada.
 
 ## Ocorreu um problema com a newsletter do Dynamic Media?
+
+* **[Maio de 2020, edição 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+   Nesta edição:
+
+   * O que a continuidade de negócios significa em tempos incertos.
+   * Os principais recursos do primeiro Adobe Summit totalmente digital.
+   * Sessões de sessão de grupo do Experience Manager devem ser monitoradas.
+   * Destaque do cliente Summit: Sob Armor.
+   * Nunca perca um webinar do Experience Insider.
+   * Destaque do setor público: A necessidade urgente de inscrição digital.
+   * Veja as novidades da inovação do Experience Manager.
+   * Crie suas habilidades do Experience Manager ao *vivo* com os profissionais da Adobe.
+   * Conecte-se com a Comunidade do Adobe Experience Manager.
+   * Acompanhe rapidamente sua experiência da Adobe com a Adobe Experience League.
 
 * **[Abril de 2020, Edição 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
