@@ -2,7 +2,7 @@
 title: Armazenamento em cache no AEM como um serviço em nuvem
 description: 'Armazenamento em cache no AEM como um serviço em nuvem '
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Certifique-se de que os ativos destinados a serem mantidos privados em vez de ar
 
 ## Invalidação do Cache do Dispatcher {#disp}
 
-Em geral, não deve ser necessário invalidar o cache do dispatcher. Em vez disso, você deve confiar no dispatcher atualizando seu cache quando o conteúdo estiver sendo republicado e no CDN respeitando os cabeçalhos de expiração do cache.
+Em geral, não será necessário invalidar o cache do dispatcher. Em vez disso, você deve confiar no dispatcher atualizando seu cache quando o conteúdo estiver sendo republicado e o CDN respeitar os cabeçalhos de expiração do cache.
 
 ### Invalidação do Cache do Dispatcher durante Ativação/Desativação {#cache-activation-deactivation}
 
