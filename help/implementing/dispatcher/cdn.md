@@ -2,10 +2,10 @@
 title: CDN no AEM como um serviço em nuvem
 description: CDN no AEM como um serviço em nuvem
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: a9bf697f65febcd9ba99539d8baa46f7a8d165e3
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 2%
+source-wordcount: '646'
+ht-degree: 1%
 
 ---
 
@@ -14,37 +14,18 @@ ht-degree: 2%
 
 O AEM como Cloud Service é enviado com um CDN integrado. O principal objetivo é reduzir a latência, fornecendo conteúdo armazenável nos nós CDN na borda, perto do navegador. Ele é totalmente gerenciado e configurado para obter o desempenho ideal dos aplicativos AEM.
 
-No total, o AEM oferta duas opções:
-
-1. CDN gerenciado pelo AEM - CDN predefinido do AEM. É uma opção totalmente integrada e não exige um grande investimento do cliente no suporte à integração do CDN com o AEM.
-1. A CDN gerenciada pelo cliente aponta para a CDN gerenciada pelo AEM - o cliente aponta seu próprio CDN para a CDN predefinida do AEM. O cliente ainda precisará gerenciar seu próprio CDN, mas o investimento na integração com o AEM é moderado.
-
-A primeira opção deve atender à maioria dos requisitos de desempenho e segurança do cliente. Além disso, requer um mínimo de esforço do cliente.
-
-A segunda opção será permitida caso a caso. A decisão se baseia em atender a determinados pré-requisitos, incluindo, mas não se limitando a, o cliente que possui uma integração herdada com seu fornecedor de CDN que é difícil de abandonar.
-
-Apresentada abaixo é uma matriz de decisão para comparar as duas opções. Informações mais detalhadas podem ser encontradas nas seções a seguir.
-
-| Detalhes | CDN gerenciado pelo AEM | O CDN gerenciado pelo cliente aponta para o AEM CDN |
-|---|---|---|
-| **Esforço do cliente** | Nenhum, está totalmente integrado. Somente é necessário apontar CNAME para o CDN gerenciado pelo AEM. | Modere o investimento do cliente. O cliente deve gerenciar seu próprio CDN. |
-| **Pré-requisitos** | Nenhum | CDN existente que é oneroso substituir. Deve demonstrar um teste de carga bem-sucedido antes de entrar em funcionamento. |
-| **Conhecimento do CDN** | Nenhum | Requer pelo menos um recurso de engenharia parcial com conhecimento detalhado de CDN capaz de configurar o CDN do cliente. |
-| **Segurança** | Administrado pela Adobe. | Gerenciado pela Adobe (e opcionalmente pelo cliente em seu próprio CDN). |
-| **Show** | Otimizado pela Adobe. | Se beneficiará de alguns recursos de CDN do AEM, mas possivelmente de uma pequena ocorrência de desempenho devido ao salto extra. **Observação**: Hops da CDN do cliente para a CDN da Adobe pronta para uso (provavelmente será eficiente). |
-| **Cache** | Suporta cabeçalhos de cache aplicados ao dispatcher. | Suporta cabeçalhos de cache aplicados ao dispatcher. |
-| **Recursos de compactação de imagem e vídeo** | Pode trabalhar com o Adobe Dynamic Media. | Pode trabalhar com o Adobe Dynamic Media ou com a solução de imagem/vídeo CDN gerenciada pelo cliente. |
+A CDN gerenciada pelo AEM atenderá aos requisitos de desempenho e segurança da maioria dos clientes. Como opção, os clientes podem apontar para ele a partir de seu próprio CDN, que precisarão gerenciar. Isso será permitido caso a caso, com base no atendimento de determinados pré-requisitos, incluindo, mas não se limitando a, o cliente que possui uma integração herdada com seu fornecedor de CDN difícil de abandonar.
 
 ## CDN gerenciado pelo AEM  {#aem-managed-cdn}
 
 Siga estas etapas para se preparar para o delivery de conteúdo usando o CDN pronto para uso da Adobe:
 
-1. Você fornecerá o certificado SSL assinado e a chave secreta para a Adobe compartilhando um link para um formulário seguro contendo essas informações. Coordene-se com o suporte ao cliente nesta tarefa.
+1. Forneça o certificado SSL assinado e a chave secreta para a Adobe compartilhando um link para um formulário seguro que contém essas informações. Coordene-se com o suporte ao cliente nesta tarefa.
    **Observação:** O Aem como um serviço em nuvem não oferece suporte a certificados DV (Domain Validated, Domínio validado).
-1. Você deve informar o suporte ao cliente:
+1. Informe o suporte ao cliente:
    * qual domínio personalizado deve ser associado a um determinado ambiente, conforme definido pela ID do programa e pela ID do ambiente. Observe que domínios personalizados no lado do autor não são suportados.
    * se for necessária alguma listagem de IP para restringir o tráfego a um determinado ambiente.
-1. Você deve coordenar com o suporte ao cliente sobre o tempo das alterações necessárias nos registros de DNS. As instruções são diferentes com base na necessidade ou não de um registro de ápice:
+1. Coordene com o suporte ao cliente a temporização das alterações necessárias nos registros DNS. As instruções são diferentes com base na necessidade ou não de um registro de ápice:
    * se um registro de ápice não for necessário, os clientes devem definir o registro de DNS CNAME para apontar para o FQDN `cdn.adobeaemcloud.com`.
    * se for necessário um registro anexado, crie um registro A apontando para os seguintes IPs: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Os clientes precisam de um registro de vértice se o FQDN desejado corresponder à Zona DNS. Isso pode ser testado usando o comando Unix dig para verificar se o valor SOA da saída corresponde ao domínio. Por exemplo, o comando `dig anything.dev.adobeaemcloud.com` retorna um SOA (Start de Autoridade, ou seja, a zona) de `dev.adobeaemcloud.com` modo que não seja um registro APEX, enquanto `dig dev.adobeaemcloud.com` retorna um SOA de `dev.adobeaemcloud.com` modo que seja um registro anexado.
 1. Você será notificado quando os certificados SSL estiverem expirando, para que possa reenviar os novos certificados SSL.
@@ -55,15 +36,13 @@ Por padrão, para uma configuração de CDN gerenciada da Adobe, todo o tráfego
 
 ## CDN do cliente aponta para o CDN gerenciado pelo AEM {#point-to-point-CDN}
 
-Suportado se você quiser usar seu CDN existente, mas não puder atender aos requisitos de um CDN gerenciado pelo cliente. Nesse caso, você gerencia seu próprio CDN, mas aponta para o CDN gerenciado da Adobe.
+Se um cliente precisar usar seu CDN existente, ele poderá gerenciá-lo e apontá-lo para o CDN gerenciado da Adobe, desde que:
 
-Esteja ciente de que:
-
-1. Você deve ter um CDN existente.
-1. Você deve gerenciá-la.
-1. Você deve ser capaz de configurar o CDN para trabalhar com o Aem como um serviço de nuvem - consulte as instruções de configuração abaixo.
-1. Você deve ter especialistas em engenharia de CDN que estejam em contato caso surjam problemas relacionados.
-1. Você deve executar e passar com êxito em um teste de carga antes de ir para a produção.
+* O cliente deve ter um CDN existente que seria oneroso substituí-lo.
+* O cliente deve gerenciá-lo.
+* O cliente deve ser capaz de configurar o CDN para trabalhar com o AEM como um serviço em nuvem - consulte as instruções de configuração abaixo.
+* O cliente deve ter especialistas em engenharia de CDN que estejam em contato caso surjam problemas relacionados.
+* O cliente deve executar e passar com êxito em um teste de carga antes de ir para a produção.
 
 Instruções de configuração:
 
@@ -73,3 +52,5 @@ Instruções de configuração:
 1. Defina o `X-Edge-Key`, que é necessário para rotear o tráfego corretamente para os servidores AEM. O valor deve vir da Adobe.
 
 Antes de aceitar o tráfego ao vivo, você deve validar com o suporte ao cliente da Adobe que o roteamento de tráfego completo está funcionando corretamente.
+
+Observe que há uma pequena ocorrência de desempenho devido ao salto extra, embora o salto da CDN do cliente para a CDN gerenciada da Adobe provavelmente será eficiente.
