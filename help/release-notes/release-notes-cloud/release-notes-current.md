@@ -2,9 +2,9 @@
 title: Notas de versão do Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de versão do Experience Manager para 2020.6.0
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: 972e6322a313c9e6afcf09262290992272406491
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1922'
 ht-degree: 7%
 
 ---
@@ -122,11 +122,11 @@ Treinar Tags inteligentes aprimoradas para obter mais um treinamento intuitivo p
 
 As organizações agora podem armazenar e usar arquivos 3D nos ativos AEM. O usuário pode carregar, pré-visualização e aproveitar uma variedade de arquivos 3D principais, incluindo arquivos .obj, .stl, .gltf e .glb. Com a adição de [!DNL Dynamic Media], as experiências 3D podem ser configuradas e entregues por URLs agnósticos ou visualizadores. Isso inclui um Visualizador de experiência [!DNL Dynamic Media] 3D, o componente Visualizador 3D do Sites e a capacidade de fornecer arquivos 3D via [!DNL Dynamic Media] (AR/VR). Consulte [Trabalhar com ativos 3D no Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
-<!-- Hiding this as the GA is at a later date. 
-**Adobe Asset Link support for Adobe XD**
+**Suporte do Adobe Asset Link para Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
--->
+Com a versão mais recente, [!DNL Experience Manager Assets] fornece suporte para um novo [!DNL Adobe Asset Link] plug-in lançado com a [!DNL Adobe XD] v29.3. A integração permite que os designers acessem e usem ativos de [!DNL Experience Manager] seus projetos, sem a necessidade de deixar o [!DNL Adobe XD] aplicativo. Consulte [Adobe Asset Link para a documentação](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)do Adobe XD.
+
+Com esta versão, os usuários e designers criativos agora podem trabalhar com ativos gerenciados no [!DNL AEM Assets] uso [!DNL Adobe Asset Link] em diversos aplicativos de desktop da Creative Cloud, incluindo [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator]e [!DNL InDesign].
 
 **Aprimoramentos de acessibilidade**
 
