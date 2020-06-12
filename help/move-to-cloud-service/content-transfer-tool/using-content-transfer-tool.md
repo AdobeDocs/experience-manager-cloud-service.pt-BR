@@ -2,9 +2,9 @@
 title: Uso da ferramenta de transferência de conteúdo
 description: Uso da ferramenta de transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1582'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * O requisito mínimo do sistema para a Ferramenta de transferência de conteúdo é AEM 6.3 + e JAVA 8. Se você estiver em uma versão inferior do AEM, precisará atualizar seu repositório de conteúdo para o AEM 6.5 para usar a Ferramenta de transferência de conteúdo.
 
-* Se você estiver usando um Ambiente ** Sandbox , certifique-se de que seu ambiente foi atualizado para a versão de 10 de junho de 2020 ou posterior. Se você estiver usando um Ambiente *de* produção, ele será atualizado automaticamente.
+* Se estiver usando um Ambiente ** Sandbox, verifique se o ambiente foi atualizado para a versão de 10 de junho de 2020 ou posterior. Se você estiver usando um Ambiente *de* produção, ele será atualizado automaticamente.
 
 * Para usar a Ferramenta de transferência de conteúdo, você precisará ser um usuário administrador na instância de origem e pertencer ao grupo de administradores do AEM na instância do Serviço de nuvem para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão recuperar o token de acesso para usar a Ferramenta de transferência de conteúdo.
 
@@ -26,9 +26,11 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * A Fase *de* ingestão do autor diminuirá a implantação do autor inteiro. Isso significa que o AEM do autor não estará disponível durante todo o processo de ingestão.
 
+* O limite máximo recomendado para o tamanho do repositório que a Ferramenta de transferência de conteúdo pode suportar por vez é de 20 GB.
+
 ## Disponibilidade {#availability}
 
-A Ferramenta de transferência de conteúdo pode ser baixada como um arquivo zip (Content Transfer Tool v1.0.0) do portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na instância de origem do Adobe Experience Manager (AEM).
+A Ferramenta de transferência de conteúdo pode ser baixada como um arquivo zip (Content Transfer Tool v1.0.0) do Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na instância de origem do Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >Baixe a Ferramenta de transferência de conteúdo do Portal [de distribuição de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)software.
@@ -207,6 +209,8 @@ Siga as etapas abaixo:
    Você também pode visualização logs para seu conjunto de migração na tela *Visão geral* . Selecione o conjunto de migração e clique no status no campo **EXTRAÇÃO** . Nesse caso, clique em **CONCLUÍDO** para fazer a visualização dos registros em uma nova guia.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+
+1. Para rastrear os registros sem usar a interface do usuário, você pode SSH no ambiente AEM de origem e rastrear o conteúdo `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
 
 ### Excluindo um Conjunto de Migrações {#deleting-migration-set}
 
