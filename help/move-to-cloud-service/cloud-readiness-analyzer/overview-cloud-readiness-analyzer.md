@@ -2,9 +2,9 @@
 title: Visão geral do Cloud Readiness Analyzer
 description: Visão geral do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
+source-git-commit: 64b685a7c9fbb105ed66dc4b3212b2bf91dee4af
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -12,21 +12,25 @@ ht-degree: 0%
 
 # Visão geral {#overview-cloud-readiness-analyzer}
 
-O Cloud Readiness Analyzer auxilia na avaliação da prontidão para mudar de uma instância do AEM existente para o AEM como um serviço de nuvem.
+O Cloud Readiness Analyzer ajuda a acelerar os processos de avaliação da prontidão para passar de uma implantação existente do Adobe Experience Manager (AEM) para o AEM como um serviço em nuvem.
 
-Essa ferramenta determina as áreas que exigem refatoração, que é a primeira etapa na jornada de transição para o AEM como um serviço de nuvem.
-
-O CRA detecta e relata padrões que:
-
-* Usar um recurso do AEM 6.x que não é suportado no momento no AEM como um serviço em nuvem
-
-* Violar determinadas regras, configurações ou uso que serão afetados pela mudança para o AEM como um serviço em nuvem
+Essa ferramenta gera um relatório que identifica áreas de potencial refatoração, que é o primeiro passo na jornada de transição para o AEM como um serviço em nuvem.
 
 ## Relatório de resumo no Cloud Readiness Analyzer {#summary-report}
 
-O Cloud Readiness Analyzer gera um relatório de resumo que pode ser usado para obter um alto nível de compreensão da disponibilidade geral de atualização.
+O relatório resumido do Analisador de disponibilidade em nuvem é usado para obter um alto nível de compreensão da disponibilidade geral de atualização. O relatório consiste em descobertas em categorias de problemas que devem ser solucionados antes de uma implantação bem-sucedida no AEM como um serviço em nuvem.
 
-O relatório organiza as conclusões por categorias e subtipos dentro dessas categorias. Informações adicionais sobre as categorias e possíveis implicações e soluções associadas a essas categorias são fornecidas por meio de links no relatório resumido.
+O relatório de resumo inclui as seguintes categorias:
+
+* Funcionalidade do aplicativo que deve ser refatorizada
+* Itens do repositório que devem ser movidos para um local suportado
+* Diálogos e componentes herdados da interface do usuário que devem ser modernizados
+* Problemas de implantação e configuração
+* Recursos do AEM 6.x que foram substituídos por novas funcionalidades ou que não são suportados no momento no AEM como um serviço em nuvem
+
+Informações adicionais sobre as categorias e possíveis implicações e soluções associadas a essas categorias são fornecidas por meio de links no relatório resumido.
 
 >[!NOTE]
->O resultado do Cloud Readiness Analyzer ajuda a acelerar o processo de estimativa de tempo e custo necessário para a transição para o AEM como um serviço em nuvem.
+>O relatório do Analisador de prontidão da nuvem acelera o processo de estimar o tempo e o custo necessários para a transição ao AEM como um serviço da nuvem, fornecendo informações que, de outra forma, precisariam ser coletadas e avaliadas manualmente.
+
+O relatório de resumo está disponível na interface do usuário do AEM. Existe uma opção para baixar o relatório completo em um formato CSV (valores separados por vírgula) que é útil durante o processo de refatoração.
