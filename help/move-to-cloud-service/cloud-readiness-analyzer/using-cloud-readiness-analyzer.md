@@ -2,9 +2,9 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: d72f02f76f9be61ef4c3eefd790ff8abbb23a3d8
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1768'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar o
 
 * O relatório CRA é criado usando a saída do Detector de [padrões](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)do Adobe Experience Manager (AEM). A versão do Detector de padrão usada pelo CRA está incluída no pacote de instalação do CRA.
 
-* A CRA só pode ser executada pelo `admin` usuário ou por um usuário no `Administrators` grupo.
+* O CRA só pode ser executado pelo usuário *administrador* ou por um usuário no grupo **Administradores** .
 
 * O CRA é compatível com instâncias do AEM com a versão 6.1 e superior.
 
@@ -57,30 +57,47 @@ Siga esta seção para saber como executar o Cloud Readiness Analyzer:
 
 Para o AEM 6.3 e superior, a principal maneira de executar o Cloud Readiness Analyzer é:
 
-1. Use a interface de usuário do Adobe Experience Manager para navegar até Ferramentas -> **Operações** -> Analisador **de disponibilidade da** Cloud.
+1. Selecione a instância do Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador **de prontidão da** nuvem.
 
    >[!NOTE]
    >O CRA iniciará um processo em segundo plano para gerar o relatório assim que a ferramenta for aberta. Ele exibe uma indicação de que a geração do relatório está em andamento até que o relatório esteja pronto. Você pode fechar a guia do navegador e retornar posteriormente para visualização do relatório quando ele for concluído.
 
-Depois que o relatório CRA for gerado e exibido, você terá a opção de baixar o relatório em um formato CSV (valores separados por vírgula) clicando no botão **CSV** no canto superior direito da página de ferramenta.
+1. Depois que o relatório CRA for gerado e exibido, você terá a opção de baixar o relatório em um CSV (valores separados por vírgula). Clique em **CSV** para baixar o relatório de resumo completo no formato CSV (valores separados por vírgula), como mostrado na figura abaixo.
 
-Você pode forçar o CRA a limpar seu cache e gerar novamente o relatório clicando no botão &quot;Atualizar relatório&quot; no canto superior esquerdo.
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
+   >[!NOTE]
+   >Você pode forçar o CRA a limpar seu cache e gerar novamente o relatório clicando no botão **Atualizar relatório** no canto superior esquerdo.
 
 ### AEM 6.2 e 6.1 {#aem-specific-versions}
 
-A interface do usuário CRA está limitada no AEM 6.2 a um link que gera e baixa o relatório CSV. Para o AEM 6.1, a interface do usuário não está funcional e somente a interface HTTP pode ser usada.
+A interface do usuário do Cloud Readiness Analyzer é limitada no AEM 6.2 a um link que gera e baixa o relatório CSV. Para o AEM 6.1, a interface do usuário não está funcional e somente a interface HTTP pode ser usada.
 
 Em todas as versões, o Detector de padrão incluído pode ser executado independentemente.
 
+Siga as etapas abaixo para baixar o relatório CSV do Adobe Experience Manager (AEM) 6.1 e 6.2:
+
+1. Navegue até **Adobe Experience Manager Web ConsoleConfiguração** usando `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Selecione a guia **Status** e procure **Pattern Detector** na lista suspensa, como mostrado na figura abaixo.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Você pode baixar o relatório de resumo em uma pasta zip ou em um formato JSON.
+
 ## Relatório de resumo da CRA {#cra-summary-report}
 
-Quando o CRA é executado na interface do usuário do AEM, o relatório é exibido como resultados na janela da ferramenta. O formato do relatório é:
+Quando o Cloud Readiness Analyzer é executado na interface do usuário do AEM, o relatório é exibido como resultados na janela da ferramenta.
 
-* Visão geral do relatório: Informações sobre o próprio relatório, incluindo quando foi gerado.
-* Visão geral do sistema: Informações sobre o sistema AEM no qual o CRA foi executado.
-* Categorias de descoberta: Várias seções que abordam uma ou mais descobertas da mesma categoria. Cada seção inclui o seguinte: Nome da Categoria, subtipos, contagem e importância da descoberta, resumo, link para a documentação da categoria e informações de localização individual.
+O formato do relatório é:
 
-A cada descoberta é atribuído um nível de importância para indicar uma prioridade aproximada para a ação. Os níveis de importância utilizados são os seguintes:
+* *Visão geral* do relatório: Informações sobre o próprio relatório, incluindo quando foi gerado.
+* *Visão geral* do sistema: Informações sobre o sistema AEM no qual o CRA foi executado.
+* *Encontrando Categorias*: Várias seções que abordam uma ou mais descobertas da mesma categoria. Cada seção inclui o seguinte: Nome da Categoria, subtipos, contagem e importância da descoberta, resumo, link para a documentação da categoria e informações de localização individual.
+
+A cada descoberta é atribuído um nível de importância para indicar uma prioridade aproximada para a ação.
+
+Siga a tabela abaixo para entender os níveis de importância:
 
 | Importância | Descrição |
 |--- |--- |
@@ -91,16 +108,7 @@ A cada descoberta é atribuído um nível de importância para indicar uma prior
 
 ## Relatório CSV CRA {#crs-csv-report}
 
-Quando o botão &quot;CSV&quot; é pressionado, o formato CSV do relatório CRA é criado a partir do cache de resultados e retornado ao seu navegador. Dependendo das configurações do navegador, este relatório será baixado automaticamente como um arquivo com o nome padrão de `results.csv`. Se o cache tiver expirado, o relatório será gerado novamente antes que o arquivo CSV seja criado e baixado.
-
-Siga as etapas abaixo para gerar um formato CSV do relatório de resumo a partir de sua instância do AEM:
-
-1. 
-   1. Selecione o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador de prontidão da **nuvem**.
-
-1. Quando o relatório estiver disponível, clique em **CSV** para baixar o relatório de resumo completo no formato CSV (valores separados por vírgula), como mostrado na figura abaixo.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+Quando você clica na opção **CSV** da sua instância do AEM, o formato CSV do relatório do Analisador de prontidão da nuvem é criado a partir do cache de resultados e retornado ao seu navegador. Dependendo das configurações do navegador, este relatório será baixado automaticamente como um arquivo com o nome padrão de `results.csv`. Se o cache tiver expirado, o relatório será gerado novamente antes que o arquivo CSV seja criado e baixado.
 
 O formato CSV do relatório inclui informações geradas a partir da saída do Detector de padrão, classificadas e organizadas por tipo de categoria, subtipo e nível de importância. Seu formato é adequado para exibição e edição em um aplicativo como o Microsoft Excel. O objetivo é fornecer todas as informações de localização em um formato repetível que possam ser úteis ao comparar relatórios ao longo do tempo para medir o progresso.
 
@@ -133,8 +141,10 @@ A interface HTTP pode ser usada em diversos métodos.
 
 Uma maneira simples é abrir uma guia do navegador no mesmo navegador no qual você já fez logon no AEM como administrador. Você pode digitar o URL na guia do navegador e fazer com que os resultados sejam exibidos ou baixados pelo navegador.
 
-Você também pode usar uma ferramenta de linha de comando, como `curl` ou `wget` qualquer aplicativo cliente HTTP. Quando não estiver usando uma guia do navegador com uma sessão autenticada, você deverá fornecer um nome de usuário administrativo e uma senha como parte do comentário. Este é um exemplo de como isso pode ser feito:
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`
+Você também pode usar uma ferramenta de linha de comando, como `curl` ou `wget` qualquer aplicativo cliente HTTP. Quando não estiver usando uma guia do navegador com uma sessão autenticada, você deverá fornecer um nome de usuário administrativo e uma senha como parte do comentário.
+
+Este é um exemplo de como isso pode ser feito:
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
 
 ### Cabeçalhos e parâmetros {#http-headers-and-parameters}
 
@@ -151,7 +161,7 @@ Os seguintes parâmetros de query HTTP estão disponíveis como conveniência pa
 Quando um cabeçalho HTTP e um parâmetro de query correspondente estiverem presentes, o parâmetro query terá prioridade.
 
 Uma maneira simples de iniciar a geração do relatório por meio da interface HTTP é com o seguinte comando:
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
 Depois que uma solicitação é feita, o cliente não precisa permanecer ativo para que o relatório seja gerado. A geração de relatórios pode ser iniciada com um cliente usando uma solicitação HTTP GET e, depois que o relatório for gerado, visualizado do cache em outro cliente ou ferramenta CSV na interface do usuário do AEM.
 
@@ -175,16 +185,7 @@ O valor do tempo de vida do cache é armazenado como a `maxCacheAge` propriedade
 
 O valor dessa propriedade é a duração do cache em segundos. Um administrador pode ajustar a duração do cache usando a interface CRX/DE Lite para o AEM.
 
-## Exibição do relatório em instâncias do AEM 6.1 {#aem-instances-report}
 
-Siga as etapas abaixo para baixar o relatório CSV do Adobe Experience Manager (AEM) 6.1:
 
-1. Navegue até **Adobe Experience Manager Web ConsoleConfiguração** usando `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Selecione a guia **Status** e procure **Pattern Detector** na lista suspensa, como mostrado na figura abaixo.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. Você pode baixar o relatório de resumo em uma pasta zip ou em um formato JSON.
 
 
