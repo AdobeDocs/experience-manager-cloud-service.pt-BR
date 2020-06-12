@@ -2,10 +2,10 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: 1739f81d4894f3e04cc4119f344a3bea5bd042d8
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 0%
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Siga esta seção para saber como executar o Cloud Readiness Analyzer:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Após clicar em **Cloud Readiness Analyzer**, os start de ferramenta que geram o relatório e, após alguns minutos, você verá o relatório gerado.
+1. Após clicar em **Cloud Readiness Analyzer**, os start de ferramenta que geram o relatório e, após alguns minutos, o relatório de resumo estará disponível na sua instância do AEM.
 
    >[!NOTE]
    >Será necessário rolar a página para baixo para visualização do relatório completo.
@@ -77,12 +77,21 @@ Siga as etapas abaixo para gerar um formato CSV do seu relatório de resumo:
 1. 
    1. Selecione o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador de prontidão da **nuvem**.
 
-1. Depois que seu relatório for gerado, clique em **CSV** para baixar o relatório de resumo completo no formato CSV (valores separados por vírgula), como mostrado na figura abaixo.
+1. Quando o relatório estiver disponível, clique em **CSV** para baixar o relatório de resumo completo no formato CSV (valores separados por vírgula), como mostrado na figura abaixo.
 
 ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
 
 #### Exibição do relatório em instâncias do AEM 6.1 {#aem-instances-report}
 
-Você pode baixar o relatório csv para o AEM 6.1.Isso está pendente.
+Siga as etapas abaixo para baixar o relatório CSV do Adobe Experience Manager (AEM) 6.1:
+
+1. Navegue até **Adobe Experience Manager Web ConsoleConfiguração** usando `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Selecione a guia **Status** e procure **Pattern Detector** na lista suspensa, como mostrado na figura abaixo.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Você pode baixar o relatório de resumo em uma pasta zip ou em um formato JSON.
+
 
