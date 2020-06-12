@@ -2,9 +2,9 @@
 title: Visão geral da ferramenta de transferência de conteúdo
 description: Visão geral da ferramenta de transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -57,8 +57,8 @@ Siga a seção abaixo para entender as diretrizes e as práticas recomendadas pa
 
 * Antes de executar a Ferramenta de transferência de conteúdo, verifique se há espaço em disco suficiente no `crx-quickstart` subdiretório da instância de origem do AEM. Isso ocorre porque a Ferramenta de transferência de conteúdo cria uma cópia local do repositório que é carregada posteriormente no conjunto de migração.
 A fórmula geral para calcular o espaço livre em disco necessário é a seguinte:
-   *tamanho do armazenamento de dados + tamanho do armazenamento de nó * 1.5*
+   `data store size + node store size * 1.5`
 
-   * Para o tamanho *do armazenamento de* dados, a Ferramenta de transferência de conteúdo usa 64 GB, mesmo se o armazenamento de dados real for maior.
-   * O tamanho *do armazenamento do* nó é o tamanho do diretório do armazenamento do segmento ou o tamanho do banco de dados MongoDB.
+   * *tamanho* do armazenamento de dados: a Ferramenta de transferência de conteúdo usa 64 GB, mesmo se o armazenamento de dados real for maior.
+   * *tamanho*do armazenamento de nó: tamanho do diretório do repositório de segmentos ou tamanho do banco de dados MongoDB.
 Assim, para um tamanho de armazenamento de segmento de 20 GB, o espaço livre em disco necessário seria de 94 GB.
