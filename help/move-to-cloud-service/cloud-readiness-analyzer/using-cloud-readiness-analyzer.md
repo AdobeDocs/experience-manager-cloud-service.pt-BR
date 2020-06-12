@@ -2,9 +2,9 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -35,42 +35,54 @@ Siga esta seção para saber como executar o Cloud Readiness Analyzer:
 
 1. Selecione o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador de prontidão da **nuvem**.
 
-### Exibição dos resultados {#viewing-the-results}
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+
+1. Após clicar em **Cloud Readiness Analyzer**, os start de ferramenta que geram o relatório e, após alguns minutos, você verá o relatório gerado.
+
+   >[!NOTE]
+   >Será necessário rolar a página para baixo para visualização do relatório completo.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
+
+### Exibição dos resultados no relatório resumido {#viewing-the-results}
 
 >[!IMPORTANT]
 >Os relatórios gerados pelo Cloud Readiness Analyzer são baseados nos Detectores de padrão. Consulte Detectores de [padrões](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) para obter mais detalhes.
 
-Há duas maneiras de visualização da saída do Analisador de prontidão da nuvem:
+Depois de rolar a página para baixo para visualização do relatório de resumo completo, você poderá ver as seguintes informações para cada categoria realçada no relatório:
 
-1. **Usando o Relatório Organizado**
+1. **Nível de importância**
 
-   >[!NOTE]
-   >O relatório organizado está disponível no AEM versão 6.3 e superior.
+   A tabela a seguir descreve o significado dos vários níveis de importância do Detector de padrões e do Analisador de prontidão da nuvem.
 
-   Ou,
+   | Nível de importância | Descrição |
+   |--- |--- |
+   | INFORMAÇÃO/0 | Esta constatação é fornecida para fins informativos. |
+   | CONSULTIVO/1 | Essa descoberta pode ser um problema de atualização. Recomenda-se uma investigação mais aprofundada. |
+   | MAJOR/2 | Essa descoberta provavelmente será um problema de atualização que deve ser resolvido. |
+   | CRÍTICO/3 | Essa descoberta provavelmente será um problema de atualização que deve ser resolvido para evitar perda de função ou desempenho. |
 
-1. **Visualização da saída do CRA**
+1. **Descrição** A descrição fornece informações sobre a categoria reportada.
 
-   Siga as etapas abaixo para visualização da saída do Analisador de prontidão da nuvem:
+1. **URL** da documentação O URL da documentação permite que você visualização a documentação técnica do tipo associado.
 
-   >[!NOTE]
-   >As etapas abaixo são aplicáveis ao AEM versão 6.1 e superior.
+1. **Mensagem** Uma descrição da descoberta em uma única mensagem.
 
-   1. Navegue até **AEM Web Console** usando `https://serveraddress:serverport/system/console/configMgr`.
+### Exibição dos resultados em um formato CSV {#viewing-the-results-csv}
 
-   1. Select **Status (Selecionar status) - Detector** de padrões, conforme mostrado na figura abaixo.
+O relatório de resumo está disponível na interface do usuário do AEM. Você pode baixar o relatório completo em um formato CSV (valores separados por vírgula) que seja útil durante o processo de refatoração.
+
+Siga as etapas abaixo para gerar um formato CSV do seu relatório de resumo:
+
+1. 
+   1. Selecione o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador de prontidão da **nuvem**.
+
+1. Depois que seu relatório for gerado, clique em **CSV** para baixar o relatório de resumo completo no formato CSV (valores separados por vírgula), como mostrado na figura abaixo.
+
+![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
 
 #### Exibição do relatório em instâncias do AEM 6.1 {#aem-instances-report}
 
 Você pode baixar o relatório csv para o AEM 6.1.Isso está pendente.
 
-#### Como entender os níveis de importância no relatório {#importance-levels}
-
-A tabela a seguir descreve o significado dos vários níveis de importância do Detector de padrões e do Analisador de prontidão da nuvem.
-
-| Nível de importância | Descrição |
-|--- |--- |
-| INFORMAÇÃO/0 | Esta constatação é fornecida para fins informativos. |
-| CONSULTIVO/1 | Essa descoberta pode ser um problema de atualização. Recomenda-se uma investigação mais aprofundada. |
-| MAJOR/2 | Essa descoberta provavelmente será um problema de atualização que deve ser resolvido. |
-| CRÍTICO/3 | Essa descoberta provavelmente será um problema de atualização que deve ser resolvido para evitar perda de função ou desempenho. |
