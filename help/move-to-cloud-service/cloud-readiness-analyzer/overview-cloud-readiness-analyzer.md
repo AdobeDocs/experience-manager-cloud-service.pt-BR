@@ -2,9 +2,9 @@
 title: Visão geral do Cloud Readiness Analyzer
 description: Visão geral do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 64b685a7c9fbb105ed66dc4b3212b2bf91dee4af
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Informações adicionais sobre as categorias e possíveis implicações e soluç
 >[!NOTE]
 >O relatório do Analisador de prontidão da nuvem acelera o processo de estimar o tempo e o custo necessários para a transição ao AEM como um serviço da nuvem, fornecendo informações que, de outra forma, precisariam ser coletadas e avaliadas manualmente.
 
-O relatório de resumo está disponível na interface do usuário do AEM. Existe uma opção para baixar o relatório completo em um formato CSV (valores separados por vírgula) que é útil durante o processo de refatoração.
+Você também pode baixar o relatório de resumo da interface do usuário do AEM. Consulte **Visualização dos resultados em um formato** CSV para obter mais detalhes pendentes.
