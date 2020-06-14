@@ -3,9 +3,9 @@ title: Configure o Editor de Rich Text para criar conteúdo no Adobe Experience 
 description: Configure o Editor de Rich Text para criar conteúdo no Adobe Experience Manager como um Serviço em nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ Os autores podem criar e editar conteúdo textual no Experience Manager usando o
 | Modo de edição | Área de edição | Recursos recomendados a serem ativados |
 |--- |--- |--- |
 | Inline | Edição no local para edições rápidas e secundárias; Formatar sem abrir uma caixa de diálogo | Recursos mínimos do RTE |
-| RTE tela cheia | Cobre a página inteira | Todos os recursos RTE necessários |
+| RTE em tela cheia | Cobre a página inteira | Todos os recursos RTE necessários |
 | Caixa de diálogo | Caixa de diálogo sobre o conteúdo da página, mas não cobre a página inteira | Ativar recursos de forma judicial |
-| Tela cheia da caixa de diálogo | Igual ao modo de tela cheia; contém campos da caixa de diálogo ao lado do RTE | Todos os recursos RTE necessários |
+| Diálogo em tela cheia | Igual ao modo de tela cheia; contém campos da caixa de diálogo ao lado do RTE | Todos os recursos RTE necessários |
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Quando aberto (com um clique de duplo lento), o conteúdo pode ser editado dentr
 
 *Figura: Edição embutida com opções básicas na barra de ferramentas.*
 
-### Full screen editing {#full-screen-editing}
+### Full-screen editing {#full-screen-editing}
 
 Os componentes do Experience Manager podem ser abertos na visualização de tela cheia que oculta o conteúdo da página e ocupa a tela disponível. Considere a edição em tela cheia de uma versão detalhada da edição em linha, já que ela oferta mais opções de edição. Para abri-lo, clique em ![rte_fullscreen](assets/rte_fullscreen.png), na barra de ferramentas compacta, ao usar o modo de edição em linha.
 
@@ -131,7 +131,6 @@ O [modo de edição do RTE (e a interface do usuário)](#editingmodes) que você
 >* **Nome**: `configPath`
 >* **Tipo**: `String`
 >* **Valor**: caminho do nó que contém a configuração real
-
 >
 >
 Não nomeie o nó de configuração RTE como `config`. Caso contrário, as configurações do RTE terão efeito apenas para os administradores e não para os usuários do grupo `content-author`.
@@ -165,7 +164,6 @@ O componente [de texto Componentes](https://docs.adobe.com/content/help/en/exper
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >
 Para criar seu próprio componente de texto, copie o componente acima em vez de editar esses componentes.
@@ -215,13 +213,13 @@ Para configurar a barra de ferramentas para `dialogFullScreen`, use a seguinte c
 </uiSettings>
 ```
 
-Diferentes configurações de interface são usadas para o modo em linha e para o modo de tela cheia. A propriedade da barra de ferramentas é usada para especificar os botões da barra de ferramentas.
+Diferentes configurações da interface do usuário são usadas para o modo em linha e para o modo de tela cheia. A propriedade da barra de ferramentas especifica a opção da barra de ferramentas.
 
-Por exemplo, se o botão for um recurso (por exemplo, `Bold`), ele será especificado como `PluginName#FeatureName` (por exemplo, `links#modifylink`).
+Por exemplo, se a opção for ela mesma um recurso (por exemplo, `Bold`), ela será especificada como `PluginName#FeatureName` (por exemplo, `links#modifylink`).
 
-Se o botão for um pop-up (contendo alguns recursos de um plug-in), ele será especificado como `#PluginName` (por exemplo, `#format`).
+Se a opção for um provedor (contendo alguns recursos de um plug-in), ela será especificada como `#PluginName` (por exemplo, `#format`).
 
-Os separadores (`|`) entre um grupo de botões podem ser especificados com `-`.
+Os separadores (`|`) entre um grupo de opções podem ser especificados com `-`.
 
 O nó pop-up no modo em linha ou em tela cheia contém uma lista das opções que estão sendo usadas. Cada nó filho sob o nó &#39;propovers&#39; é nomeado após o plug-in (por exemplo, format). Ele tem uma propriedade &quot;items&quot; que contém uma lista de recursos do plug-in (por exemplo, format#bold).
 
