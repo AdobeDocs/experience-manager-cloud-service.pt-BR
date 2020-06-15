@@ -2,9 +2,9 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: daa281745540e6446adecd2501e26135d6000844
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -46,14 +46,14 @@ Siga esta seção para saber como executar o Cloud Readiness Analyzer:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Após clicar em **Cloud Readiness Analyzer**, os start de ferramenta que geram o relatório e, após alguns minutos, o relatório de resumo estará disponível na sua instância do AEM.
+1. Após clicar em **Cloud Readiness Analyzer**, os start de ferramenta que geram o relatório e, após alguns minutos, o relatório CRA estará disponível na instância do AEM.
 
    >[!NOTE]
    >Será necessário rolar a página para baixo para visualização do relatório completo.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-## Interpretação do relatório organizado do Analisador de disponibilidade em nuvem {#organized-report}
+## Interpretação do relatório do Analisador de disponibilidade da nuvem {#cra-report}
 
 Quando o Analisador de prontidão da nuvem é executado na instância do AEM, o relatório é exibido como resultados na janela da ferramenta.
 
@@ -83,7 +83,7 @@ Para o AEM 6.3 e superior, a principal maneira de executar o Cloud Readiness Ana
    >[!NOTE]
    >O CRA iniciará um processo em segundo plano para gerar o relatório assim que a ferramenta for aberta. Ele exibe uma indicação de que a geração do relatório está em andamento até que o relatório esteja pronto. Você pode fechar a guia do navegador e retornar posteriormente para visualização do relatório quando ele for concluído.
 
-1. Depois que o relatório CRA for gerado e exibido, você terá a opção de baixar o relatório em um CSV (valores separados por vírgula). Clique em **CSV** para baixar o relatório de resumo completo no formato CSV (valores separados por vírgula), como mostrado na figura abaixo.
+1. Depois que o relatório CRA for gerado e exibido, você terá a opção de baixar o relatório em um CSV (valores separados por vírgula). Clique em **CSV** para baixar o relatório CRA completo no formato CSV (valores separados por vírgula), como mostrado na figura abaixo.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
@@ -92,31 +92,20 @@ Para o AEM 6.3 e superior, a principal maneira de executar o Cloud Readiness Ana
 
 ### Adobe Experience Manager 6.2 e 6.1 {#aem-specific-versions}
 
-O Cloud Readiness Analyzer é limitado no Adobe Experience Manager (AEM) 6.2 a um link que gera e baixa o relatório CSV.
+O Cloud Readiness Analyzer é limitado na Adobe Experience Manager 6.2 a um link que gera e baixa o relatório CSV.
+
+Para o Adobe Experience Manager 6.1, a ferramenta não está funcionando e somente a interface HTTP pode ser usada.
 
 >[!NOTE]
->
->* Para o Adobe Experience Manager 6.1, a ferramenta não está funcionando e somente a interface HTTP pode ser usada.
-   >
-   >
-* Em todas as versões, o Detector de padrão incluído pode ser executado independentemente.
+>Em todas as versões, o Detector de padrão incluído pode ser executado independentemente.
 
+## Interpretação do relatório CSV do Analisador de prontidão para nuvem {#cra-csv-report}
 
-Siga as etapas abaixo para baixar o relatório CSV para Adobe Experience Manager (AEM) 6.1 e 6.2:
+Quando você clica na opção **CSV** da sua instância do AEM, o formato CSV do relatório do Analisador de prontidão da nuvem é criado a partir do cache de resultados e retornado ao seu navegador. Dependendo das configurações do navegador, este relatório será baixado automaticamente como um arquivo com o nome padrão de `results.csv`.
 
-1.Navegue até **Adobe Experience Manager Web ConsoleConfiguração** usando `https://serveraddress:serverport/system/console/configMgr`.
+Se o cache tiver expirado, o relatório será gerado novamente antes que o arquivo CSV seja criado e baixado.
 
-1. Selecione a guia **Status** e procure **Pattern Detector** na lista suspensa, como mostrado na figura abaixo.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. Você pode baixar o relatório de resumo em uma pasta zip ou em um formato JSON.
-
-## Interpretação do relatório CSV do Analisador de prontidão para nuvem {#crs-csv-report}
-
-Quando você clica na opção **CSV** da sua instância do AEM, o formato CSV do relatório do Analisador de prontidão da nuvem é criado a partir do cache de resultados e retornado ao seu navegador. Dependendo das configurações do navegador, este relatório será baixado automaticamente como um arquivo com o nome padrão de `results.csv`. Se o cache tiver expirado, o relatório será gerado novamente antes que o arquivo CSV seja criado e baixado.
-
-O formato CSV do relatório inclui informações geradas a partir da saída do Detector de padrão, classificadas e organizadas por tipo de categoria, subtipo e nível de importância. Seu formato é adequado para exibição e edição em um aplicativo como o Microsoft Excel. O objetivo é fornecer todas as informações de localização em um formato repetível que possa ser útil ao comparar relatórios ao longo do tempo para medir o progresso.
+O formato CSV do relatório inclui informações geradas a partir da saída do Detector de padrão, classificadas e organizadas por tipo de categoria, subtipo e nível de importância. Seu formato é adequado para exibição e edição em um aplicativo como o Microsoft Excel. O objetivo é fornecer todas as informações de localização em um formato repetível que possam ser úteis ao comparar relatórios ao longo do tempo para medir o progresso.
 
 As colunas do relatório de formato CSV são:
 
@@ -189,7 +178,7 @@ A duração padrão do cache CRA é de 24 horas. Com a opção de atualizar um r
 O valor do tempo de vida do cache é armazenado como a `maxCacheAge` propriedade no seguinte nó do repositório:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-O valor dessa propriedade é a duração do cache em segundos. Um administrador pode ajustar a duração do cache usando o CRX/DE Lite.
+O valor dessa propriedade é a duração do cache em segundos. Um administrador pode ajustar a duração do cache usando o **CRXDE Lite**.
 
 
 
