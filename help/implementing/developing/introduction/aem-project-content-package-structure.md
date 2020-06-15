@@ -2,10 +2,10 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 60093232710426d919a45742b1775239944d266d
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 18%
+source-wordcount: '2522'
+ht-degree: 17%
 
 ---
 
@@ -37,6 +37,16 @@ Tudo o resto no repositório, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`,
 >[!WARNING]
 >
 > Como nas versões anteriores do AEM, não `/libs` deve ser modificado. Somente o código de produto AEM pode ser implantado em `/libs`.
+
+### Índices de Oak {#oak-indexes}
+
+Os índices de Oak (`/oak:index`) são gerenciados especificamente pelo processo de implantação do AEM Cloud Service. Isso ocorre porque o Gerenciador de nuvem deve aguardar até que qualquer novo índice seja implantado e totalmente indexado novamente antes de alternar para a nova imagem de código.
+
+Por isso, embora os índices Oak sejam mutáveis em tempo de execução, eles devem ser implantados como código para que possam ser instalados antes que qualquer pacote mutável seja instalado. Portanto, `/oak:index` as configurações fazem parte do Pacote de código e não fazem parte do Pacote de conteúdo, [conforme descrito abaixo.](#recommended-package-structure)
+
+>[!TIP]
+>
+>Para obter mais detalhes sobre a indexação no AEM como um serviço em nuvem, consulte a Pesquisa e indexação de [conteúdo do documento.](/help/operations/indexing.md)
 
 ## Estrutura do pacote recomendada {#recommended-package-structure}
 
