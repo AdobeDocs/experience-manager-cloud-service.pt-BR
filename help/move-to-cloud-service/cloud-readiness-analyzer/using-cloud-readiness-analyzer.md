@@ -2,9 +2,9 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
+source-git-commit: daa281745540e6446adecd2501e26135d6000844
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Siga a seção abaixo para entender as considerações importantes ao executar o CRA (Cloud Readiness Analyzer):
 
-* O relatório CRA é criado usando a saída do Detector de [padrões](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)do Adobe Experience Manager (AEM). A versão do Detector de padrão usada pelo CRA está incluída no pacote de instalação do CRA.
+* O relatório CRA é criado usando a saída do [Detector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)de padrão do Adobe Experience Manager (AEM). A versão do Detector de padrão usada pelo CRA está incluída no pacote de instalação do CRA.
 
 * O CRA só pode ser executado pelo usuário *administrador* ou por um usuário no grupo **Administradores** .
 
@@ -25,7 +25,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar o
 * O CRA pode ser executado em qualquer ambiente, mas é preferível executá-lo em um ambiente *Stage* .
 
    >[!NOTE]
-   >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o CRA em um ambiente de preparo de *Autor* o mais próximo possível do ambiente de produção nas áreas de personalizações, configurações, conteúdo e aplicativos de usuário. Como alternativa, ele pode ser executado em um clone do ambiente do *Autor* de produção.
+   >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o CRA em um ambiente de preparo de autor o mais próximo possível do ambiente de produção nas áreas de personalizações, configurações, conteúdo e aplicativos de usuário. Como alternativa, pode ser executado em um clone do ambiente do autor da produção.
 
 * A geração de relatórios CRA pode levar um tempo significativo, de vários minutos a algumas horas. O tempo necessário depende muito do tamanho e da natureza do conteúdo do repositório do AEM, da versão do AEM e de outros fatores.
 
@@ -33,7 +33,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar o
 
 ## Disponibilidade {#availability}
 
-O Cloud Readiness Analyzer pode ser baixado como um arquivo zip do Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na instância de origem do Adobe Experience Manager (AEM).
+O Cloud Readiness Analyzer pode ser baixado como um arquivo zip do Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na instância do Adobe Experience Manager de origem (AEM).
 
 >[!NOTE]
 >Baixe o Cloud Readiness Analyzer do Portal de distribuição de software *pendente*.
@@ -42,7 +42,7 @@ O Cloud Readiness Analyzer pode ser baixado como um arquivo zip do Portal de dis
 
 Siga esta seção para saber como executar o Cloud Readiness Analyzer:
 
-1. Selecione o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador de prontidão da **nuvem**.
+1. Selecione o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador **de prontidão da** nuvem.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
@@ -53,41 +53,9 @@ Siga esta seção para saber como executar o Cloud Readiness Analyzer:
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-### AEM 6.3 e posterior {#aem-older-version}
+## Interpretação do relatório organizado do Analisador de disponibilidade em nuvem {#organized-report}
 
-Para o AEM 6.3 e superior, a principal maneira de executar o Cloud Readiness Analyzer é:
-
-1. Selecione a instância do Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador **de prontidão da** nuvem.
-
-   >[!NOTE]
-   >O CRA iniciará um processo em segundo plano para gerar o relatório assim que a ferramenta for aberta. Ele exibe uma indicação de que a geração do relatório está em andamento até que o relatório esteja pronto. Você pode fechar a guia do navegador e retornar posteriormente para visualização do relatório quando ele for concluído.
-
-1. Depois que o relatório CRA for gerado e exibido, você terá a opção de baixar o relatório em um CSV (valores separados por vírgula). Clique em **CSV** para baixar o relatório de resumo completo no formato CSV (valores separados por vírgula), como mostrado na figura abaixo.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
-
-   >[!NOTE]
-   >Você pode forçar o CRA a limpar seu cache e gerar novamente o relatório clicando no botão **Atualizar relatório** no canto superior esquerdo.
-
-### AEM 6.2 e 6.1 {#aem-specific-versions}
-
-A interface do usuário do Cloud Readiness Analyzer é limitada no AEM 6.2 a um link que gera e baixa o relatório CSV. Para o AEM 6.1, a interface do usuário não está funcional e somente a interface HTTP pode ser usada.
-
-Em todas as versões, o Detector de padrão incluído pode ser executado independentemente.
-
-Siga as etapas abaixo para baixar o relatório CSV do Adobe Experience Manager (AEM) 6.1 e 6.2:
-
-1. Navegue até **Adobe Experience Manager Web ConsoleConfiguração** usando `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Selecione a guia **Status** e procure **Pattern Detector** na lista suspensa, como mostrado na figura abaixo.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. Você pode baixar o relatório de resumo em uma pasta zip ou em um formato JSON.
-
-## Relatório de resumo da CRA {#cra-summary-report}
-
-Quando o Cloud Readiness Analyzer é executado na interface do usuário do AEM, o relatório é exibido como resultados na janela da ferramenta.
+Quando o Analisador de prontidão da nuvem é executado na instância do AEM, o relatório é exibido como resultados na janela da ferramenta.
 
 O formato do relatório é:
 
@@ -106,11 +74,49 @@ Siga a tabela abaixo para entender os níveis de importância:
 | MAIOR | Essa descoberta provavelmente será um problema de atualização que deve ser resolvido. |
 | CRÍTICO | Essa descoberta provavelmente será um problema de atualização que deve ser resolvido para evitar perda de função ou desempenho. |
 
-## Relatório CSV CRA {#crs-csv-report}
+### Adobe Experience Manager 6.3 and later {#aem-older-version}
+
+Para o AEM 6.3 e superior, a principal maneira de executar o Cloud Readiness Analyzer é:
+
+1. Selecione a instância do Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador de prontidão da **nuvem**.
+
+   >[!NOTE]
+   >O CRA iniciará um processo em segundo plano para gerar o relatório assim que a ferramenta for aberta. Ele exibe uma indicação de que a geração do relatório está em andamento até que o relatório esteja pronto. Você pode fechar a guia do navegador e retornar posteriormente para visualização do relatório quando ele for concluído.
+
+1. Depois que o relatório CRA for gerado e exibido, você terá a opção de baixar o relatório em um CSV (valores separados por vírgula). Clique em **CSV** para baixar o relatório de resumo completo no formato CSV (valores separados por vírgula), como mostrado na figura abaixo.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
+   >[!NOTE]
+   >Você pode forçar o CRA a limpar seu cache e gerar novamente o relatório clicando no botão **Atualizar relatório** no canto superior esquerdo.
+
+### Adobe Experience Manager 6.2 e 6.1 {#aem-specific-versions}
+
+O Cloud Readiness Analyzer é limitado no Adobe Experience Manager (AEM) 6.2 a um link que gera e baixa o relatório CSV.
+
+>[!NOTE]
+>
+>* Para o Adobe Experience Manager 6.1, a ferramenta não está funcionando e somente a interface HTTP pode ser usada.
+   >
+   >
+* Em todas as versões, o Detector de padrão incluído pode ser executado independentemente.
+
+
+Siga as etapas abaixo para baixar o relatório CSV para Adobe Experience Manager (AEM) 6.1 e 6.2:
+
+1.Navegue até **Adobe Experience Manager Web ConsoleConfiguração** usando `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Selecione a guia **Status** e procure **Pattern Detector** na lista suspensa, como mostrado na figura abaixo.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Você pode baixar o relatório de resumo em uma pasta zip ou em um formato JSON.
+
+## Interpretação do relatório CSV do Analisador de prontidão para nuvem {#crs-csv-report}
 
 Quando você clica na opção **CSV** da sua instância do AEM, o formato CSV do relatório do Analisador de prontidão da nuvem é criado a partir do cache de resultados e retornado ao seu navegador. Dependendo das configurações do navegador, este relatório será baixado automaticamente como um arquivo com o nome padrão de `results.csv`. Se o cache tiver expirado, o relatório será gerado novamente antes que o arquivo CSV seja criado e baixado.
 
-O formato CSV do relatório inclui informações geradas a partir da saída do Detector de padrão, classificadas e organizadas por tipo de categoria, subtipo e nível de importância. Seu formato é adequado para exibição e edição em um aplicativo como o Microsoft Excel. O objetivo é fornecer todas as informações de localização em um formato repetível que possam ser úteis ao comparar relatórios ao longo do tempo para medir o progresso.
+O formato CSV do relatório inclui informações geradas a partir da saída do Detector de padrão, classificadas e organizadas por tipo de categoria, subtipo e nível de importância. Seu formato é adequado para exibição e edição em um aplicativo como o Microsoft Excel. O objetivo é fornecer todas as informações de localização em um formato repetível que possa ser útil ao comparar relatórios ao longo do tempo para medir o progresso.
 
 As colunas do relatório de formato CSV são:
 
@@ -128,7 +134,7 @@ Um valor de &quot;\N&quot; em uma coluna para uma descoberta individual indica q
 
 ## Interface HTTP {#http-interface}
 
-O CRA fornece uma interface HTTP que pode ser usada como uma alternativa à interface do usuário do AEM. A interface suporta comandos HEAD e GET. Ele pode ser usado para gerar o relatório CRA e retorná-lo em um dos três formatos: JSON, CSV e valores separados por tabulação (TSV).
+O CRA fornece uma interface HTTP que pode ser usada como uma alternativa à instância do AEM. A interface suporta comandos HEAD e GET. Ele pode ser usado para gerar o relatório CRA e retorná-lo em um dos três formatos: JSON, CSV e valores separados por tabulação (TSV).
 
 Os seguintes URLs estão disponíveis para acesso HTTP, onde `<host>` é o nome do host e a porta, se necessário, do servidor no qual o CRA está instalado:
 * `http://<host>/apps/readiness-analyzer/analysis/result.json` para formato JSON
@@ -163,7 +169,7 @@ Quando um cabeçalho HTTP e um parâmetro de query correspondente estiverem pres
 Uma maneira simples de iniciar a geração do relatório por meio da interface HTTP é com o seguinte comando:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Depois que uma solicitação é feita, o cliente não precisa permanecer ativo para que o relatório seja gerado. A geração de relatórios pode ser iniciada com um cliente usando uma solicitação HTTP GET e, depois que o relatório for gerado, visualizado do cache em outro cliente ou ferramenta CSV na interface do usuário do AEM.
+Depois que uma solicitação é feita, o cliente não precisa permanecer ativo para que o relatório seja gerado. A geração de relatórios pode ser iniciada com um cliente usando uma solicitação HTTP GET e, depois que o relatório for gerado, visualizado do cache em outro cliente ou na ferramenta CSV na instância do AEM.
 
 ### Respostas (#http-response)
 
@@ -178,12 +184,12 @@ Os seguintes valores de resposta são possíveis:
 
 ## Ajuste da duração do cache {#cache-adjustment}
 
-A duração padrão do cache CRA é de 24 horas. Com a opção de atualizar um relatório e gerar novamente o cache, tanto na interface do usuário quanto na interface HTTP, esse valor padrão provavelmente será apropriado para a maioria dos usos do CRA. Se o tempo de geração do relatório for particularmente longo para a sua instância do AEM, você pode desejar ajustar a duração do cache para minimizar a regeneração do relatório.
+A duração padrão do cache CRA é de 24 horas. Com a opção de atualizar um relatório e gerar novamente o cache, tanto na instância do AEM quanto na interface HTTP, esse valor padrão provavelmente será apropriado para a maioria dos usos do CRA. Se o tempo de geração do relatório for particularmente longo para a sua instância do AEM, você pode desejar ajustar a duração do cache para minimizar a regeneração do relatório.
 
 O valor do tempo de vida do cache é armazenado como a `maxCacheAge` propriedade no seguinte nó do repositório:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-O valor dessa propriedade é a duração do cache em segundos. Um administrador pode ajustar a duração do cache usando a interface CRX/DE Lite para o AEM.
+O valor dessa propriedade é a duração do cache em segundos. Um administrador pode ajustar a duração do cache usando o CRX/DE Lite.
 
 
 
