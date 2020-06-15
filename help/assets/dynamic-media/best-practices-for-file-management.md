@@ -2,9 +2,9 @@
 title: Práticas recomendadas para organizar seus ativos digitais para usar Perfis
 description: Dicas e práticas recomendadas para nomear, organizar e gerenciar metadados para arquivos de ativos digitais.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Práticas recomendadas para organizar ativos digitais para usar perfis {#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-Um conceito importante sobre o uso de perfis nos ativos AEM é que eles estão atribuídos a pastas. Dentro de um perfil estão as configurações na forma de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil.
+Um conceito importante em relação ao uso de perfis em AEM Assets é que eles são atribuídos a pastas. Dentro de um perfil estão as configurações na forma de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil.
 
 Usando estratégias de nomenclatura de arquivos e pastas consistentes e apropriadas, juntamente com boas práticas de metadados, você pode aproveitar ao máximo sua coleção de ativos digitais e garantir que os arquivos corretos sejam processados pelo perfil certo.
 
@@ -30,7 +30,7 @@ Veja a seguir dicas de práticas recomendadas para organizar seus arquivos de at
 
    * **Pastas** de desenvolvimento - contém ativos digitais em que você está trabalhando no momento.
    * **Pastas** do cliente - contém ativos digitais com base em clientes ou nomes de projetos.
-   * **Pastas** mestras - contém ativos digitais originais de origem.
+   * **Pastas** de origem primária - contém ativos digitais de origem original.
    * **Pastas** de execução - contém execuções e cópias dos ativos digitais originais de origem.
    * **Pastas** de tamanho de arquivo - contém ativos digitais com base em arquivos de tamanho pequeno, médio ou grande.
    * **Pastas** de preparo - contém ativos digitais que estão prontos para publicar ao vivo em seu site.
