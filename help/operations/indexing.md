@@ -2,9 +2,9 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 translation-type: tm+mt
-source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1450'
 ht-degree: 3%
 
 ---
@@ -83,6 +83,10 @@ As definições de índice agora são marcadas como personalizadas e com control
 Portanto, para implantar um índice, a definição (`/oak:index/definitionname`) do índice precisa ser fornecida por meio `ui.apps` do processo de implantação Git e do Cloud Manager.
 
 Depois que a nova definição de índice é adicionada, o novo aplicativo precisa ser implantado pelo Cloud Manager. Após a implantação, dois trabalhos são iniciados, responsáveis por adicionar (e mesclar, se necessário) as definições de índice ao MongoDB e ao Azure Segment Store para autor e publicação, respectivamente. Os repositórios subjacentes estão sendo indexados novamente com as novas definições de índice, antes da mudança Blue-Green.
+
+>[!TIP]
+>
+>Para obter mais detalhes sobre a estrutura do pacote necessária para o AEM como um serviço em nuvem, consulte a Estrutura do projeto do [AEM do documento.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## Gerenciamento de índice usando implantações Blue-Green {#index-management-using-blue-green-deployments}
 
