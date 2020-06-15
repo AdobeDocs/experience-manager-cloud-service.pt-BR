@@ -2,9 +2,9 @@
 title: Conjuntos de imagem
 description: Saiba como trabalhar com conjuntos de imagens no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '2049'
+source-wordcount: '2050'
 ht-degree: 20%
 
 ---
@@ -32,9 +32,9 @@ Por exemplo, suponha que você queira apresentar imagens de maiúsculas com dife
 
 Para começar a trabalhar rapidamente:
 
-1. [Carregue suas imagens mestre para várias visualizações.](#uploading-assets-in-image-sets)
+1. [Carregue as imagens de origem primária para várias visualizações.](#uploading-assets-in-image-sets)
 
-   Start carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. O AEM Assets suporta vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
+   Start carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. O AEM Assets suporta muitos formatos de arquivo de imagem, mas são recomendadas imagens TIFF, PNG e EPS sem perdas.
 
 1. [Criar conjuntos de imagens.](#creating-image-sets)
 
@@ -69,7 +69,7 @@ Para começar a trabalhar rapidamente:
 
 1. [Vincule URLs à sua Aplicação web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [Incorpore o visualizador](/help/assets/dynamic-media/embed-code.md)de vídeo ou imagem.
 
-   Os ativos AEM criam chamadas de URL para Conjuntos de imagens e as ativam depois que você publica os conjuntos de imagens. Você pode copiar esses URLs ao pré-visualização de ativos. Como alternativa, você pode incorporá-los ao seu site.
+   O AEM Assets cria chamadas de URL para Conjuntos de imagens e as ativa após a publicação dos conjuntos de imagens. Você pode copiar esses URLs ao pré-visualização de ativos. Como alternativa, você pode incorporá-los ao seu site.
 
    Selecione o Conjunto de imagens e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores]**.
 
@@ -77,7 +77,7 @@ Para começar a trabalhar rapidamente:
 
 Para editar Conjuntos de imagens, consulte [edição de Conjuntos de imagens.](#editing-image-sets) Além disso, você pode visualização e editar as propriedades [do Conjunto de](/help/assets/manage-digital-assets.md#editing-properties)imagens.
 
-Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos na [solução de problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
+Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos na [Solução de problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
 ## Fazer upload de ativos em conjuntos de imagens {#uploading-assets-in-image-sets}
 
@@ -215,7 +215,6 @@ No entanto, os conjuntos criados usando predefinições de conjuntos de lotes *n
    * Para reorganizar ativos, arraste uma imagem para um novo local (selecione o ícone de reordenação para mover itens).
    * Para classificar itens em ordem crescente ou decrescente, clique no cabeçalho da coluna.
    * Para adicionar um ativo ou atualizar um ativo existente, clique em **[!UICONTROL Adicionar ativo]**. Navegue até um ativo, selecione-o e, em seguida, toque em **[!UICONTROL Selecionar]** próximo ao canto superior direito da página.
-
       >[!NOTE]
       >
       >Se você excluir a imagem que o AEM usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.
@@ -223,7 +222,6 @@ No entanto, os conjuntos criados usando predefinições de conjuntos de lotes *n
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
    * Para adicionar ou alterar uma miniatura, selecione o ícone de miniatura ao lado direito do ativo. Navegue até a nova miniatura ou ativo de amostra, selecione-o e toque em **[!UICONTROL Selecionar]**.
    * Para excluir um conjunto de imagens inteiro, navegue até o conjunto de imagens, selecione-o e toque em **[!UICONTROL Excluir]**.
-
    >[!NOTE]
    >
    >Edite as imagens em um Conjunto de imagens ao navegar até o conjunto, tocar em **[!UICONTROL Definir membros]** no painel à esquerda e tocar no ícone Lápis em um ativo individual para abrir a janela de edição.
