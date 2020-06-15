@@ -2,9 +2,9 @@
 title: Gerenciamento de atividades
 description: O console Atividades permite criar, organizar e gerenciar as atividades de marketing das suas marcas
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '2002'
 ht-degree: 86%
 
 ---
@@ -50,7 +50,7 @@ As atividades são exibidas com um rótulo descrevendo o tipo de atividade defin
 >
 >You must secure the activity settings node `cq:ActivitySettings` on the publish instance so that it is inaccessible to normal users. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
 >
->Consulte Pré-requisitos para integração com o Público alvo da Adobe para obter informações detalhadas.
+>Consulte Pré-requisitos para integração com o Adobe Target para obter informações detalhadas.
 <!--
 >See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) for detailed information.
 -->
@@ -130,7 +130,7 @@ Se estiver usando a opção Teste A/B do Adobe Target:
 
 >[!NOTE]
 >
->Ao cancelar a publicação de uma atividade,
+>Ao cancelar a publicação de uma atividade, o status da atividade não é alterado a menos que você atualize a página.
 
 Para publicar ou cancelar a publicação de atividades:
 
@@ -166,6 +166,7 @@ Para visualizar o desempenho da atividade e converter experiências vencedoras:
 
    * Desativa a atividade atual
    * Modifica todas as páginas e substitui o conteúdo segmentado pelo conteúdo real da experiência vencedora. The content of the winning experience becomes part of the normal page **without** targeting.
+
    ![Conversão do vencedor](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    Uma experiência vencedora é a experiência que gera mais Incentivo nos relatórios, que se baseia na taxa de conversão.
@@ -187,7 +188,7 @@ Quando uma atividade é sincronizada, uma campanha correspondente é criada no A
 * As atividades na instância de publicação têm o mesmo nome que a campanha do Adobe Target correspondente.
 * Activities on the author instance correspond with Target campaigns of the same name with the `_author` suffix.
 
-![Sincronização com o Adobe Público alvo](/help/sites-cloud/authoring/assets/activities-synch.png)
+![Sincronização com o Adobe Target](/help/sites-cloud/authoring/assets/activities-synch.png)
 
 As atividades do autor são sincronizadas imediatamente quando a atividade é modificada. A sincronização imediata permite a simulação do atividade com o ContextHub.
 
