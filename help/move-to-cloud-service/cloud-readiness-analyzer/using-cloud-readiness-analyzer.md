@@ -2,9 +2,9 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ Quando um cabeçalho HTTP e um parâmetro de query correspondente estiverem pres
 Uma maneira simples de iniciar a geração do relatório por meio da interface HTTP é com o seguinte comando:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Depois que uma solicitação é feita, o cliente não precisa permanecer ativo para que o relatório seja gerado. A geração de relatórios pode ser iniciada com um cliente usando uma solicitação HTTP GET e, depois que o relatório for gerado, visualizado do cache em outro cliente ou na ferramenta CSV na instância do AEM.
+Depois que uma solicitação é feita, o cliente não precisa permanecer ativo para que o relatório seja gerado. A geração de relatórios pode ser iniciada com um cliente usando uma solicitação HTTP GET e, depois que o relatório for gerado, visualizado do cache em outro cliente ou na ferramenta CSV na interface do usuário no AEM.
 
 ### Respostas (#http-response)
 
