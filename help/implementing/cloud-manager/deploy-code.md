@@ -1,10 +1,10 @@
 ---
-title: Implantar seu código - Serviços em nuvem
-description: Implantar seu código - Serviços em nuvem
+title: Implantar seu código - Cloud Service
+description: Implantar seu código - Cloud Service
 translation-type: tm+mt
-source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '912'
 ht-degree: 3%
 
 ---
@@ -34,6 +34,7 @@ Depois de configurar o **Pipeline** (repositório, ambiente e ambiente de teste)
    1. Implantação do estágio
    1. Teste de estágio
    1. Implantação de produção
+
    >[!NOTE]
    >
    >Além disso, você pode revisar as etapas de vários processos de implantação ao exibir registros ou revisar os resultados para os critérios de teste.
@@ -58,8 +59,8 @@ Depois de configurar o **Pipeline** (repositório, ambiente e ambiente de teste)
 
 
 
->Atenção:
->As seções a seguir precisam ser atualizadas para o Cloud Manager para serviços da AEM Cloud e estão em andamento.
+>[!IMPORTANT]:
+>As seções a seguir precisam ser atualizadas para o Cloud Manager para AEM cloud services e estão em andamento.
 
 ## Processo de implantação {#deployment-process}
 
@@ -89,10 +90,11 @@ Quando o Cloud Manager é implantado em topologias que não sejam de produção,
 1. O artefato do dispatcher é implantado em cada dispatcher da seguinte maneira:
 
    1. O backup das configurações atuais é feito e copiado para um local temporário
-   1. Todas as configurações são excluídas, exceto os arquivos imutáveis. Consulte Gerenciar configurações do Dispatcher para obter mais detalhes. Isso limpa os diretórios para garantir que nenhum arquivo órfão seja deixado para trás.
+   1. Todas as configurações são excluídas, exceto os arquivos imutáveis. Consulte Gerenciar suas configurações do Dispatcher para obter mais detalhes. Isso limpa os diretórios para garantir que nenhum arquivo órfão seja deixado para trás.
    1. O artefato é extraído para o diretório httpd.  Arquivos imutáveis não são substituídos. Quaisquer alterações feitas em arquivos imutáveis no repositório git serão ignoradas no momento da implantação.  Esses arquivos são fundamentais para a estrutura do despachante do AMS e não podem ser alterados.
    1. O Apache realiza um teste de configuração. Se nenhum erro for encontrado, o serviço será recarregado. Se ocorrer um erro, as configurações serão restauradas a partir do backup, o serviço será recarregado e o erro será reportado de volta ao Cloud Manager.
    1. Cada caminho especificado na configuração do pipeline é invalidado ou liberado do cache do dispatcher.
+
    >[!NOTE]
    >
    >O Cloud Manager espera que o artefato do dispatcher contenha o conjunto de arquivos completo.  Todos os arquivos de configuração do dispatcher devem estar presentes no repositório git. Arquivos ou pastas ausentes resultarão em falha de implantação.
