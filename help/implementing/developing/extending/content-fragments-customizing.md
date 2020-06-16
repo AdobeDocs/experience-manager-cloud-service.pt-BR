@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Personalização e extensão de fragmentos de conteúdo{#customizing-and-extending-content-fragments}
 
-No Adobe Experience Manager como um serviço em nuvem, um fragmento de conteúdo estende um ativo padrão; consulte:
+Em Adobe Experience Manager como um fragmento de conteúdo Cloud Service a estende um ativo padrão; consulte:
 
 * [Criação e gerenciamento de fragmentos](/help/assets/content-fragments/content-fragments.md) de conteúdo e criação de [páginas com fragmentos](/help/sites-cloud/authoring/fundamentals/content-fragments.md) de conteúdo para obter mais informações sobre fragmentos de conteúdo.
 
@@ -66,7 +66,7 @@ Dependendo do tipo de fragmento, os modelos ou o modelo de Fragmento **** simple
 
 ### Integração de sites com ativos {#integration-of-sites-with-assets}
 
-O Gerenciamento de fragmentos de conteúdo (CFM) faz parte dos ativos AEM como:
+O Gerenciamento de fragmentos de conteúdo (CFM) faz parte dos AEM Assets como:
 
 * Fragmentos de conteúdo são ativos.
 * Eles usam a funcionalidade Ativos existente.
