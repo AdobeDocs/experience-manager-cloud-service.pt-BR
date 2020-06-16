@@ -1,6 +1,6 @@
 ---
 title: Configuração de formulários de pesquisa
-description: Configuração de formulários de pesquisa para o Adobe Experience Manager como um serviço em nuvem.
+description: Configuração de formulários de pesquisa para Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 16%
 
 # Configuração de formulários de pesquisa {#configuring-search-forms}
 
-O Adobe Experience Manager como um serviço em nuvem é fornecido com um poderoso mecanismo de [pesquisa](/help/sites-cloud/authoring/getting-started/search.md) .
+Adobe Experience Manager como Cloud Service, vem com um poderoso mecanismo de [pesquisa](/help/sites-cloud/authoring/getting-started/search.md) .
 
 Em combinação com isso, também há um conjunto de opções predefinidas para ajudar a filtrar o conteúdo. Eles possuem aspectos predefinidos, como Data **** Modificada, Status **de** Publicação ou Status **do** Livecopy, para ajudá-lo a detalhar rapidamente os recursos necessários.
 
@@ -96,7 +96,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Análise</td>
-   <td>Recursos de pesquisa/filtro no navegador Sites ao mostrar dados ativados pelo Analytics. Os filtros de pesquisa do Analytics são carregados até corresponder às colunas de análise personalizadas mapeadas.</td>
+   <td>Recursos de pesquisa/filtro no navegador Sites ao mostrar dados ativados pelo Analytics. Os filtros de pesquisa do Analytics são carregados para corresponder às colunas de análise personalizadas mapeadas.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
