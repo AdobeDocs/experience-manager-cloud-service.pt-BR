@@ -2,9 +2,9 @@
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 translation-type: tm+mt
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
+source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3914'
 ht-degree: 1%
 
 ---
@@ -236,7 +236,7 @@ A tabela abaixo mostra os módulos de cache suportados:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Os clientes não podem adicionar módulos arbitrários, no entanto, módulos adicionais podem ser considerados para inclusão no produto no futuro. Os clientes podem encontrar a lista de diretivas disponíveis para uma determinada versão do Dispatcher executando a &quot;lista de permissões do validador&quot; no SDK, conforme descrito acima.
+Os clientes não podem adicionar módulos arbitrários, no entanto, módulos adicionais podem ser considerados para inclusão no produto no futuro. Os clientes podem encontrar a lista de diretivas disponíveis para uma determinada versão do Dispatcher executando o comando allow list do validador no SDK, conforme descrito acima.
 
 A lista de permissões contém uma lista de diretivas do Apache que são permitidas em uma configuração do cliente. Se uma diretiva não for permitida, a ferramenta registrará um erro e retornará um código de saída diferente de zero. Se nenhuma lista permitida for fornecida na linha de comando (que é a forma como ela deve ser chamada), a ferramenta usará uma lista de permissões padrão que o Cloud Manager usará para validação antes de implantar em ambientes da Cloud.
 
@@ -260,7 +260,7 @@ Observe que a ferramenta de validação relata somente o uso proibido das direti
 
 Quando nenhuma falha de validação for relatada, sua configuração estará pronta para implantação.
 
-Abaixo estão apresentadas técnicas de solução de problemas para depurar erros comuns de validação que são exibidos pela ferramenta:
+Apresentamos abaixo técnicas de solução de problemas para depurar erros comuns de validação que são exibidos pela ferramenta:
 
 **não é possível localizar uma`conf.dispatcher.d`subpasta no arquivo**
 
