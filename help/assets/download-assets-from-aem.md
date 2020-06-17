@@ -3,7 +3,7 @@ title: Baixar ativos no AEM
 description: Saiba como baixar ativos do AEM e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
+source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 4%
@@ -29,7 +29,7 @@ Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de m�
 1. Selecione a pasta ou selecione um ou mais ativos na pasta.
 1. Na barra de ferramentas, toque em **[!UICONTROL Download]**.
 
-   ![Opções disponíveis ao baixar ativos dos ativos Experience Manager](/help/assets/assets/asset-download.png)
+   ![Opções disponíveis ao baixar ativos dos ativos Experience Manager](/help/assets/assets/asset-download1.png)
 
    *Opções da caixa de diálogo de download.*
 
