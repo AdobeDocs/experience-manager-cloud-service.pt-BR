@@ -2,9 +2,9 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
+source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ O Cloud Readiness Analyzer pode ser baixado como um arquivo zip do Portal de dis
 
 ## Visualizando o relatório do Analisador de disponibilidade da nuvem {#viewing-report}
 
-### Adobe Experience Manager 6.3 and later {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 and later {#aem-later-versions}
 
 Siga esta seção para saber como visualização o relatório do Analisador de prontidão da nuvem:
 
@@ -64,7 +64,7 @@ Siga esta seção para saber como visualização o relatório do Analisador de p
 
 ### Adobe Experience Manager 6.2 e 6.1 {#aem-specific-versions}
 
-O Cloud Readiness Analyzer é limitado na Adobe Experience Manager 6.2 a um link que gera e baixa o relatório CSV.
+A ferramenta Cloud Readiness Analyzer é limitada na Adobe Experience Manager 6.2 a um link que gera e baixa o relatório CSV.
 
 Para o Adobe Experience Manager 6.1, a ferramenta não está funcionando e somente a interface HTTP pode ser usada.
 
@@ -77,11 +77,11 @@ Quando a ferramenta Cloud Readiness Analyzer é executada na instância do AEM, 
 
 O formato do relatório é:
 
-* **Visão geral** do relatório: Informações sobre o próprio relatório e informações como:
-   * *Tempo* do relatório: Quando o conteúdo do relatório foi gerado e disponibilizado pela primeira vez.
-   * *Tempo* de expiração: Quando o cache do conteúdo do relatório expirar.
-   * *Período* de Geração: O tempo gasto pelo processo de geração de conteúdo do relatório.
-   * *Contagem* de descoberta: O número total de constatações incluídas no relatório.
+* **Visão geral** do relatório: Informações sobre o próprio relatório e inclui as seguintes informações:
+   * **Tempo** do relatório: Quando o conteúdo do relatório foi gerado e disponibilizado pela primeira vez.
+   * **Tempo** de expiração: Quando o cache do conteúdo do relatório expirar.
+   * **Período** de Geração: O tempo gasto pelo processo de geração de conteúdo do relatório.
+   * **Contagem** de descoberta: O número total de constatações incluídas no relatório.
 * **Visão geral** do sistema: Informações sobre o sistema AEM no qual o CRA foi executado.
 * **Encontrando Categorias**: Várias seções que abordam uma ou mais descobertas da mesma categoria. Cada seção inclui o seguinte: Nome da Categoria, subtipos, contagem e importância da descoberta, resumo, link para a documentação da categoria e informações de localização individual.
 
