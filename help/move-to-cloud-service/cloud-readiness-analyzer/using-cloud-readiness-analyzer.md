@@ -2,9 +2,9 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,13 @@ Siga a seção abaixo para entender as considerações importantes ao executar o
 O Cloud Readiness Analyzer pode ser baixado como um arquivo zip do Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na instância do Adobe Experience Manager de origem (AEM).
 
 >[!NOTE]
->Baixe o Cloud Readiness Analyzer do Portal de distribuição de software *pendente*.
+>Baixe o Cloud Readiness Analyzer do portal de distribuição de software.
 
-## Execução do Analisador de disponibilidade da nuvem {#running-tool}
+## Visualizando o relatório do Analisador de disponibilidade da nuvem {#viewing-report}
 
-Siga esta seção para saber como executar o Cloud Readiness Analyzer:
+### Adobe Experience Manager 6.3 and later {#aem-later-versions}
+
+Siga esta seção para saber como visualização o relatório do Analisador de prontidão da nuvem:
 
 1. Selecione Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador **de prontidão da** nuvem.
 
@@ -51,41 +53,11 @@ Siga esta seção para saber como executar o Cloud Readiness Analyzer:
    >[!NOTE]
    >Será necessário rolar a página para baixo para visualização do relatório completo.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
-
-## Interpretação do relatório do Analisador de disponibilidade da nuvem {#cra-report}
-
-Quando o Analisador de prontidão da nuvem é executado na instância do AEM, o relatório é exibido como resultados na janela da ferramenta.
-
-O formato do relatório é:
-
-* *Visão geral* do relatório: Informações sobre o próprio relatório, incluindo quando foi gerado.
-* *Visão geral* do sistema: Informações sobre o sistema AEM no qual o CRA foi executado.
-* *Encontrando Categorias*: Várias seções que abordam uma ou mais descobertas da mesma categoria. Cada seção inclui o seguinte: Nome da Categoria, subtipos, contagem e importância da descoberta, resumo, link para a documentação da categoria e informações de localização individual.
-
-A cada descoberta é atribuído um nível de importância para indicar uma prioridade aproximada para a ação.
-
-Siga a tabela abaixo para entender os níveis de importância:
-
-| Importância | Descrição |
-|--- |--- |
-| INFO | Esta constatação é fornecida para fins informativos. |
-| CONSULTORIA | Essa descoberta pode ser um problema de atualização. Recomenda-se uma investigação mais aprofundada. |
-| MAIOR | Essa descoberta provavelmente será um problema de atualização que deve ser resolvido. |
-| CRÍTICO | Essa descoberta provavelmente será um problema de atualização que deve ser resolvido para evitar perda de função ou desempenho. |
-
-### Adobe Experience Manager 6.3 and later {#aem-older-version}
-
-Para o AEM 6.3 e superior, a principal maneira de executar o Cloud Readiness Analyzer é:
-
-1. Selecione a instância do Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador de prontidão da **nuvem**.
-
-   >[!NOTE]
-   >O CRA iniciará um processo em segundo plano para gerar o relatório assim que a ferramenta for aberta. Ele exibe uma indicação de que a geração do relatório está em andamento até que o relatório esteja pronto. Você pode fechar a guia do navegador e retornar posteriormente para visualização do relatório quando ele for concluído.
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
 1. Depois que o relatório CRA for gerado e exibido, você terá a opção de baixar o relatório em um CSV (valores separados por vírgula). Clique em **CSV** para baixar o relatório CRA completo no formato CSV (valores separados por vírgula), como mostrado na figura abaixo.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
    >Você pode forçar o CRA a limpar seu cache e gerar novamente o relatório clicando em **Atualizar relatório**.
@@ -98,6 +70,32 @@ Para o Adobe Experience Manager 6.1, a ferramenta não está funcionando e somen
 
 >[!NOTE]
 >Em todas as versões, o Detector de padrão incluído pode ser executado independentemente.
+
+## Interpretação do relatório do Analisador de disponibilidade da nuvem {#cra-report}
+
+Quando a ferramenta Cloud Readiness Analyzer é executada na instância do AEM, o relatório é exibido como resultados na janela da ferramenta.
+
+O formato do relatório é:
+
+* **Visão geral** do relatório: Informações sobre o próprio relatório e informações como:
+   * *Tempo* do relatório: Quando o conteúdo do relatório foi gerado e disponibilizado pela primeira vez.
+   * *Tempo* de expiração: Quando o cache do conteúdo do relatório expirar.
+   * *Período* de Geração: O tempo gasto pelo processo de geração de conteúdo do relatório.
+   * *Contagem* de descoberta: O número total de constatações incluídas no relatório.
+* **Visão geral** do sistema: Informações sobre o sistema AEM no qual o CRA foi executado.
+* **Encontrando Categorias**: Várias seções que abordam uma ou mais descobertas da mesma categoria. Cada seção inclui o seguinte: Nome da Categoria, subtipos, contagem e importância da descoberta, resumo, link para a documentação da categoria e informações de localização individual.
+
+A cada descoberta é atribuído um nível de importância para indicar uma prioridade aproximada para a ação.
+
+Siga a tabela abaixo para entender os níveis de importância:
+
+| Importância | Descrição |
+|--- |--- |
+| INFO | Esta constatação é fornecida para fins informativos. |
+| CONSULTORIA | Essa descoberta pode ser um problema de atualização. Recomenda-se uma investigação mais aprofundada. |
+| MAIOR | Essa descoberta provavelmente será um problema de atualização que deve ser resolvido. |
+| CRÍTICO | Essa descoberta provavelmente será um problema de atualização que deve ser resolvido para evitar perda de função ou desempenho. |
+
 
 ## Interpretação do relatório CSV do Analisador de prontidão para nuvem {#cra-csv-report}
 
