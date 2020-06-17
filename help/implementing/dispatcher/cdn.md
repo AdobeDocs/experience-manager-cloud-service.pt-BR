@@ -1,8 +1,8 @@
 ---
-title: CDN no AEM como um serviço em nuvem
-description: CDN no AEM como um serviço em nuvem
+title: CDN no AEM como um Cloud Service
+description: CDN no AEM como um Cloud Service
 translation-type: tm+mt
-source-git-commit: a9bf697f65febcd9ba99539d8baa46f7a8d165e3
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# CDN no AEM como um serviço em nuvem {#cdn}
+# CDN no AEM como um Cloud Service {#cdn}
 
 O AEM como Cloud Service é enviado com um CDN integrado. O principal objetivo é reduzir a latência, fornecendo conteúdo armazenável nos nós CDN na borda, perto do navegador. Ele é totalmente gerenciado e configurado para obter o desempenho ideal dos aplicativos AEM.
 
@@ -21,10 +21,10 @@ A CDN gerenciada pelo AEM atenderá aos requisitos de desempenho e segurança da
 Siga estas etapas para se preparar para o delivery de conteúdo usando o CDN pronto para uso da Adobe:
 
 1. Forneça o certificado SSL assinado e a chave secreta para a Adobe compartilhando um link para um formulário seguro que contém essas informações. Coordene-se com o suporte ao cliente nesta tarefa.
-   **Observação:** O Aem como um serviço em nuvem não oferece suporte a certificados DV (Domain Validated, Domínio validado).
+   **Observação:** O Aem como Cloud Service não oferece suporte a certificados de Domínio Validado (DV).
 1. Informe o suporte ao cliente:
    * qual domínio personalizado deve ser associado a um determinado ambiente, conforme definido pela ID do programa e pela ID do ambiente. Observe que domínios personalizados no lado do autor não são suportados.
-   * se for necessária alguma listagem de IP para restringir o tráfego a um determinado ambiente.
+   * se for necessário algum IP que permita listagem para restringir o tráfego a um determinado ambiente.
 1. Coordene com o suporte ao cliente a temporização das alterações necessárias nos registros DNS. As instruções são diferentes com base na necessidade ou não de um registro de ápice:
    * se um registro de ápice não for necessário, os clientes devem definir o registro de DNS CNAME para apontar para o FQDN `cdn.adobeaemcloud.com`.
    * se for necessário um registro anexado, crie um registro A apontando para os seguintes IPs: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Os clientes precisam de um registro de vértice se o FQDN desejado corresponder à Zona DNS. Isso pode ser testado usando o comando Unix dig para verificar se o valor SOA da saída corresponde ao domínio. Por exemplo, o comando `dig anything.dev.adobeaemcloud.com` retorna um SOA (Start de Autoridade, ou seja, a zona) de `dev.adobeaemcloud.com` modo que não seja um registro APEX, enquanto `dig dev.adobeaemcloud.com` retorna um SOA de `dev.adobeaemcloud.com` modo que seja um registro anexado.
@@ -40,7 +40,7 @@ Se um cliente precisar usar seu CDN existente, ele poderá gerenciá-lo e apont�
 
 * O cliente deve ter um CDN existente que seria oneroso substituí-lo.
 * O cliente deve gerenciá-lo.
-* O cliente deve ser capaz de configurar o CDN para trabalhar com o AEM como um serviço em nuvem - consulte as instruções de configuração abaixo.
+* O cliente deve ser capaz de configurar o CDN para trabalhar com o AEM como Cloud Service - consulte as instruções de configuração abaixo.
 * O cliente deve ter especialistas em engenharia de CDN que estejam em contato caso surjam problemas relacionados.
 * O cliente deve executar e passar com êxito em um teste de carga antes de ir para a produção.
 
