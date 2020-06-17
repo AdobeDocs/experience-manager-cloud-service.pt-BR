@@ -2,9 +2,9 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
+source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 0%
 
 ## Considerações importantes sobre o uso do Cloud Readiness Analyzer {#imp-considerations}
 
-Siga a seção abaixo para entender as considerações importantes ao executar o CRA (Cloud Readiness Analyzer):
+Siga a seção abaixo para entender as considerações importantes para executar o CRA (Cloud Readiness Analyzer):
 
 * O relatório CRA é criado usando a saída do [Detector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)de padrão do Adobe Experience Manager (AEM). A versão do Detector de padrão usada pelo CRA está incluída no pacote de instalação do CRA.
 
-* O CRA só pode ser executado pelo usuário **administrador** ou por um usuário nos **Administradores**.
+* O CRA só pode ser executado pelo usuário **administrador** ou por um usuário no grupo **Administradores** .
 
 * O CRA é compatível com instâncias do AEM com a versão 6.1 e superior.
 
 * O CRA pode ser executado em qualquer ambiente, mas é preferível executá-lo em um ambiente *Stage* .
 
    >[!NOTE]
-   >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o CRA em um ambiente *Autor* o mais próximo possível do ambiente *Produção* nas áreas de personalizações, configurações, conteúdo e aplicativos de usuário. Como alternativa, ele pode ser executado em um clone do ambiente do *Autor* de produção.
+   >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar a CRA em um ambiente *Autor* o mais próximo possível do ambiente *Produção* nas áreas de personalizações, configurações, conteúdo e aplicativos de usuário. Como alternativa, ele pode ser executado em um clone do ambiente do *Autor* de produção.
 
 * A geração de conteúdo do relatório CRA pode levar um tempo significativo, de vários minutos a algumas horas. O tempo necessário depende muito do tamanho e da natureza do conteúdo do repositório do AEM, da versão do AEM e de outros fatores.
 
@@ -55,7 +55,7 @@ Siga esta seção para saber como visualização o relatório do Analisador de p
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. Depois que o relatório CRA for gerado e exibido, você terá a opção de baixar o relatório em um CSV (valores separados por vírgula). Clique em **CSV** para baixar o relatório CRA completo no formato CSV (valores separados por vírgula), como mostrado na figura abaixo.
+1. Depois que o relatório CRA é gerado e exibido, você tem a opção de baixar o relatório em um formato CSV (valores separados por vírgula) clicando em **CSV**, como mostrado na figura abaixo.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
@@ -77,7 +77,7 @@ Quando a ferramenta Cloud Readiness Analyzer é executada na instância do AEM, 
 
 O formato do relatório é:
 
-* **Visão geral** do relatório: Informações sobre o próprio relatório e inclui as seguintes informações:
+* **Visão geral** do relatório: Informações sobre o próprio relatório que incluem as seguintes informações:
    * **Tempo** do relatório: Quando o conteúdo do relatório foi gerado e disponibilizado pela primeira vez.
    * **Tempo** de expiração: Quando o cache do conteúdo do relatório expirar.
    * **Período** de Geração: O tempo gasto pelo processo de geração de conteúdo do relatório.
@@ -176,7 +176,7 @@ A duração padrão do cache CRA é de 24 horas. Com a opção de atualizar um r
 O valor do tempo de vida do cache é armazenado como a `maxCacheAge` propriedade no seguinte nó do repositório:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-O valor dessa propriedade é a duração do cache em segundos. Um administrador pode ajustar a duração do cache usando o CRXDE Lite.
+O valor dessa propriedade é a duração do cache em segundos. Um administrador pode ajustar a duração do cache usando o CRX/DE Lite.
 
 
 
