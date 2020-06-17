@@ -1,18 +1,18 @@
 ---
-sub-product: Mover para o AEM como um serviço em nuvem
-user-guide-title: Mover para o AEM como um serviço em nuvem
+sub-product: Mover para o AEM como um Cloud Service
+user-guide-title: Mover para o AEM como um Cloud Service
 translation-type: tm+mt
-source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
+source-git-commit: 3ad0b34d4804baa9605f13e2e4f4533399e1cb64
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 1%
+source-wordcount: '68'
+ht-degree: 2%
 
 ---
 
 
 # Moving to AEM as a Cloud Service Guide {#moving}
 
-+ [Mover para o AEM como um serviço em nuvem](/help/move-to-cloud-service/home.md)
++ [Mudar para o AEM como um Cloud Service](/help/move-to-cloud-service/home.md)
 + Fases da Transição {#phases}
    + [Planejamento](/help/move-to-cloud-service/planning.md)
    + [Execução](/help/move-to-cloud-service/execution.md)
@@ -21,7 +21,10 @@ ht-degree: 1%
    + Ferramenta de transferência de conteúdo {#content-transfer-tool}
       + [Visão geral](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [Uso da ferramenta de transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
+   + Analisador de disponibilidade da nuvem {#cloud-readiness-analyzer}
+      + [Visão geral](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
+      + [Uso do Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
 + Ferramentas de refatoração de código {#refactoring-tools}
    + [Migração do fluxo de trabalho do ativo](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-   + [Conversor do Dispatcher AEM](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
+   + [AEM Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [Ferramentas de modernização do AEM](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
