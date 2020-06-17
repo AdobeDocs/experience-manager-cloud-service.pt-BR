@@ -1,9 +1,9 @@
 ---
-title: Configurar e administrar os ativos Adobe Experience Manager como um serviço em nuvem
-description: Saiba mais sobre as tarefas de configuração e administração necessárias para os Ativos como um serviço em nuvem
+title: Configure e administre ativos Adobe Experience Manager como um Cloud Service
+description: Saiba mais sobre as tarefas de configuração e administração necessárias para os Ativos como Cloud Service
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# Configurar e administrar ativos como um serviço em nuvem {#config-administer-assets-cloud-service}
+# Configurar e administrar ativos como um Cloud Service {#config-administer-assets-cloud-service}
 
-O artigo lista as tarefas de configuração ou administração de nível superior necessárias para começar a usar os ativos Adobe Experience Manager como um serviço em nuvem.
+O artigo lista as tarefas de configuração ou administração de nível superior necessárias para começar a usar os Adobe Experience Manager Assets como Cloud Service.
 
 <!-- SCOPE 
 
@@ -24,7 +24,7 @@ Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/asse
 * How to monitor health of services
 * How to see the running statuses
 * How to get service-level reports like usage, performance, uptime, etc.
-* Enable asset download by configuring the download servlet. It is disbaled to prevent DDOS kind of situations.
+* Enable asset download by configuring the download servlet. It is disabled to prevent DDOS kind of situations.
 * Configure SMTP to enable email notifications.
 * Configure search index and visual search's separate index.
 * Cloud Manager usage, if any that’s relevant here.
