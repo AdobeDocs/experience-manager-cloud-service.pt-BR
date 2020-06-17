@@ -2,9 +2,9 @@
 title: Visão geral do Cloud Readiness Analyzer
 description: Visão geral do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Informações adicionais sobre as categorias e possíveis implicações e soluç
 >[!NOTE]
 >O Relatório do Analisador de disponibilidade da nuvem acelera o processo de estimativa do tempo e custo necessários para a transição do AEM como Cloud Service, fornecendo informações que, de outra forma, precisariam ser coletadas e avaliadas manualmente.
 
-Você também pode baixar o relatório do Analisador de prontidão da nuvem de sua instância do AEM. Consulte **Visualização dos resultados em um formato** CSV para obter mais detalhes pendentes.
+Você também pode baixar o relatório do Analisador de prontidão da nuvem de sua instância do AEM. Consulte [Visualização do relatório](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) do Analisador de prontidão da nuvem para obter mais detalhes.
