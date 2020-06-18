@@ -2,7 +2,7 @@
 title: Uso da ferramenta de transferência de conteúdo
 description: Uso da ferramenta de transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Se estiver usando um Ambiente ** Sandbox, verifique se o ambiente foi atualizado para a versão de 10 de junho de 2020 ou posterior. Se você estiver usando um Ambiente *de* produção, ele será atualizado automaticamente.
 
-* Para usar a Ferramenta de transferência de conteúdo, você precisará ser um usuário administrador na instância de origem e pertencer ao grupo de administradores do AEM na instância do Serviço de nuvem para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão recuperar o token de acesso para usar a Ferramenta de transferência de conteúdo.
+* Para usar a Ferramenta de transferência de conteúdo, você precisará ser um usuário administrador na instância de origem e pertencer ao grupo de administradores do AEM na instância do Cloud Service para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão recuperar o token de acesso para usar a Ferramenta de transferência de conteúdo.
 
 * Durante a fase de extração, a Ferramenta de transferência de conteúdo é executada em uma instância de origem AEM ativa.
 
@@ -30,14 +30,14 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 ## Disponibilidade {#availability}
 
-A Ferramenta de transferência de conteúdo pode ser baixada como um arquivo zip (Content Transfer Tool v1.0.0) do Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na instância de origem do Adobe Experience Manager (AEM).
+A Ferramenta de transferência de conteúdo pode ser baixada como um arquivo zip (Content Transfer Tool v1.0.0) do Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na instância do Adobe Experience Manager de origem (AEM).
 
 >[!NOTE]
->Baixe a Ferramenta de transferência de conteúdo do Portal [de distribuição de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)software.
+>Baixe a Ferramenta de transferência de conteúdo, no portal de distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) software.
 
 ## Execução da ferramenta de transferência de conteúdo {#running-tool}
 
-Siga esta seção para saber como usar a Ferramenta de transferência de conteúdo para migrar o conteúdo para o AEM como um serviço em nuvem (Autor/Publicação):
+Siga esta seção para saber como usar a Ferramenta de transferência de conteúdo para migrar o conteúdo para o AEM como Cloud Service (Autor/Publicação):
 
 1. Selecione o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Transferência **** de conteúdo.
 
@@ -59,7 +59,7 @@ Siga esta seção para saber como usar a Ferramenta de transferência de conteú
       >[!NOTE]
       >Nenhum caractere especial é permitido para o nome do conjunto de migração.
 
-   1. **Configuração** do serviço em nuvem: Insira o AEM de destino como um URL do autor do serviço em nuvem.
+   1. **Configuração** de Cloud Service: Insira o AEM de destino como um URL de autor de Cloud Service.
 
       >[!NOTE]
       >Você pode criar e manter no máximo quatro conjuntos de migração por vez durante a atividade de transferência de conteúdo.
@@ -68,7 +68,7 @@ Siga esta seção para saber como usar a Ferramenta de transferência de conteú
    1. **Token de acesso**: Insira o token de acesso.
 
       >[!NOTE]
-      >Você pode recuperar o token de acesso da instância do autor navegando até `/libs/granite/migration/token.json`. O token de acesso é recuperado da instância do autor do Serviço em nuvem.
+      >Você pode recuperar o token de acesso da instância do autor navegando até `/libs/granite/migration/token.json`. O token de acesso é recuperado da instância do autor do Cloud Service.
 
    1. **Parâmetros**: Selecione os seguintes parâmetros para criar o conjunto de migração:
 
@@ -132,7 +132,7 @@ Siga as etapas abaixo para extrair seu conjunto de migração da Ferramenta de t
 A Ferramenta de transferência de conteúdo tem um recurso que oferece suporte ao conteúdo diferencial de complementos, onde é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior.
 
 >[!NOTE]
->Após a transferência inicial de conteúdo, é recomendável fazer atualizações frequentes de conteúdo diferencial para reduzir o período de congelamento de conteúdo para a transferência final de conteúdo diferencial antes de entrar em funcionamento no Cloud Service.
+>Após a transferência inicial do conteúdo, é recomendável fazer flexões frequentes no conteúdo diferencial para reduzir o período de congelamento do conteúdo para a transferência final do conteúdo diferencial antes de entrar em funcionamento no Cloud Service.
 
 Quando o processo de extração estiver concluído, você poderá transferir o conteúdo delta usando o método de extração superior. Siga as etapas abaixo:
 
@@ -177,7 +177,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da Ferramenta de
 A Ferramenta de transferência de conteúdo tem um recurso que oferece suporte ao conteúdo diferencial *adicional* , onde é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior.
 
 >[!NOTE]
->Após a transferência inicial de conteúdo, é recomendável fazer atualizações frequentes de conteúdo diferencial para reduzir o período de congelamento de conteúdo para a transferência final de conteúdo diferencial antes de entrar em funcionamento no Cloud Service.
+>Após a transferência inicial do conteúdo, é recomendável fazer flexões frequentes no conteúdo diferencial para reduzir o período de congelamento do conteúdo para a transferência final do conteúdo diferencial antes de entrar em funcionamento no Cloud Service.
 
 Quando o processo de ingestão estiver concluído, você poderá usar o conteúdo delta, usando o método de ingestão topo a topo. Siga as etapas abaixo:
 
