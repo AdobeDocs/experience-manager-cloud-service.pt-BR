@@ -96,7 +96,8 @@ Para criar um modelo de fragmento de experiência detectado pelo assistente **Cr
 
    1. E o nome do modelo deve começar com:
       `experience-fragments`
-Isso permite que os usuários criem fragmentos de experiência em /content/experience-fragments, já que a `cq:allowedTemplates` propriedade dessa pasta inclui todos os modelos que têm nomes começando com `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seus próprios esquemas de nomeação ou locais de modelo.
+Isso permite que os usuários criem fragmentos de experiência em /content/experience-fragments como a variável 
+`cq:allowedTemplates` a propriedade desta pasta inclui todos os modelos que têm nomes começando com `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seus próprios esquemas de nomeação ou locais de modelo.
 
 1. [Os modelos](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) permitidos podem ser configurados no console Fragmentos de experiência.
 
@@ -165,6 +166,7 @@ Depois de gerar a página HTML, o pipeline do Sling Rewriter faz modificações 
    2. `href` atributos
    3. `*-src` atributos (como data-src, custom-src etc)
    4. `*-href` atributos (como `data-href`, `custom-href`, `img-href`etc)
+
    >[!NOTE]
    >
    >Na maioria dos casos, os links internos no HTML são links relativos, mas pode haver casos em que os componentes personalizados fornecem URLs completos no HTML. Por padrão, o AEM ignora esses URLs completos e não faz modificações.
@@ -288,7 +290,8 @@ Para a variação do Fragmento de experiência impactada pelo processo de regrav
 Como entrada, o método recebe os parâmetros:
 
 * `link`
-A `String` representação do link que está sendo processado no momento. Normalmente, é um URL relativo que aponta para o recurso na instância do autor.
+A 
+`String` representação do link que está sendo processado no momento. Normalmente, é um URL relativo que aponta para o recurso na instância do autor.
 
 * `tag`
 O nome do elemento HTML que está sendo processado no momento.
