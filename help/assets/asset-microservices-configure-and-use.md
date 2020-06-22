@@ -3,9 +3,9 @@ title: Configurar e usar os microserviços de ativos para processamento de ativo
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1875'
 ht-degree: 3%
 
 ---
@@ -126,7 +126,7 @@ Depois que um perfil de processamento é aplicado a uma pasta, todos os novos at
 
 >[!NOTE]
 >
->Quando os ativos são carregados em uma pasta, o Experience Manager verifica as propriedades da pasta que os contém em busca de um perfil de processamento. Se nenhum for aplicado, ele sobe na árvore de pastas até encontrar um perfil de processamento aplicado e o usa para o ativo. Isso significa que um perfil de processamento aplicado a uma pasta funciona para a árvore inteira, mas pode ser substituído por outro perfil aplicado a uma subpasta.
+>Quando os ativos são carregados em uma pasta, o Experience Manager verifica as propriedades da pasta que os contém para verificar se há um perfil de processamento. Se nenhum for aplicado, ele sobe na árvore de pastas até encontrar um perfil de processamento aplicado e o usa para o ativo. Isso significa que um perfil de processamento aplicado a uma pasta funciona para a árvore inteira, mas pode ser substituído por outro perfil aplicado a uma subpasta.
 
 Os usuários podem verificar se o processamento realmente ocorreu abrindo um ativo recém-carregado para o qual o processamento foi concluído, abrindo a pré-visualização de ativos e clicando na visualização **[!UICONTROL Representações]** do painel esquerdo. As representações específicas no perfil de processamento, para as quais o tipo de ativo específico corresponde às regras de inclusão do tipo MIME, devem estar visíveis e acessíveis.
 
@@ -136,20 +136,18 @@ Os usuários podem verificar se o processamento realmente ocorreu abrindo um ati
 
 Para situações em que é necessário um processamento adicional de ativos que não pode ser obtido usando os perfis de processamento, workflows adicionais pós-processamento podem ser adicionados à configuração. Isso permite adicionar processamento totalmente personalizado sobre o processamento configurável usando os microserviços de ativos.
 
-Os workflows de pós-processamento, se configurados, são executados automaticamente pelo AEM após a conclusão do processamento dos microserviços. Não há necessidade de adicionar iniciadores de fluxo de trabalho manualmente para acioná-los.
+Os workflows de pós-processamento, se configurados, são executados automaticamente pelo AEM após a conclusão do processamento dos microserviços. Não há necessidade de adicionar iniciadores de fluxo de trabalho manualmente para acioná-los. Os exemplos incluem:
 
-Os exemplos incluem:
-
-* etapas de fluxo de trabalho personalizadas para processar ativos, por exemplo, código Java para gerar representações de formatos de arquivo proprietários.
-* integrações para adicionar metadados ou propriedades a ativos de sistemas externos, por exemplo, informações sobre produtos ou processos.
-* processamento adicional feito por serviços externos
+* Etapas de fluxo de trabalho personalizadas para processar ativos.
+* Integrações para adicionar metadados ou propriedades a ativos de sistemas externos, por exemplo, informações sobre produtos ou processos.
+* Processamento adicional feito por serviços externos.
 
 A adição de uma configuração de fluxo de trabalho de pós-processamento ao Experience Manager é composta das seguintes etapas:
 
-* Criação de um ou mais modelos de fluxo de trabalho. Chamaremos a eles &quot;modelos de fluxo de trabalho de pós-processamento&quot;, mas eles são modelos de fluxo de trabalho AEM comuns.
-* Adicionando etapas específicas do fluxo de trabalho a esses modelos. Essas etapas serão executadas nos ativos com base na configuração do modelo de fluxo de trabalho.
-* O último passo desse modelo deve ser o `DAM Update Asset Workflow Completed Process` passo. Isso é necessário para garantir que o AEM saiba que o processamento terminou e que o ativo pode ser marcado como processado (&quot;Novo&quot;)
-* Criando uma configuração para o Serviço do Executador de Fluxo de Trabalho Personalizado, que permite configurar a execução de um modelo de fluxo de trabalho de pós-processamento por caminho (localização da pasta) ou expressão regular
+* Crie um ou mais modelos de fluxo de trabalho. Os documentos o mencionam como modelos *de fluxo de trabalho de* pós-processamento, mas esses são modelos comuns de fluxo de trabalho de Experience Manager.
+* Adicione etapas específicas do fluxo de trabalho a esses modelos. As etapas são executadas nos ativos com base em uma configuração de modelo de fluxo de trabalho.
+* Adicione a etapa Processo [!UICONTROL Concluído do Fluxo de Trabalho de Atualização de Ativo do] DAM no final. Adicionar essa etapa garante que o Experience Manager saiba quando o processamento termina e que o ativo pode ser marcado como processado, ou seja, *Novo* é exibido no ativo.
+* Crie uma configuração para o Serviço de Execução de Fluxo de Trabalho Personalizado que permita configurar a execução de um modelo de fluxo de trabalho de pós-processamento por um caminho (localização da pasta) ou por uma expressão regular.
 
 ### Criar modelos de fluxo de trabalho de pós-processamento {#create-post-processing-workflow-models}
 
