@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 98%
    + [Imagem inteligente](dynamic-media/imaging-faq.md)
    + [Entrega de ativos do Dynamic Media](dynamic-media/delivering-dynamic-media-assets.md)
    + [Ativação da proteção de hotlink no Dynamic Media](dynamic-media/hotlink-protection.md)
-   + [Suporte 3D](dynamic-media/assets-3d.md)
+   + [Suporte para 3D](dynamic-media/assets-3d.md)
    + [Conjuntos de imagem](dynamic-media/image-sets.md)
    + [Imagens panorâmicas](dynamic-media/panoramic-images.md)
    + [Conjuntos de mídia mista](dynamic-media/mixed-media-sets.md)
@@ -102,7 +102,7 @@ ht-degree: 98%
    + [Entrega de imagens otimizadas para um site responsivo](dynamic-media/responsive-site.md)
    + [Visualização de ativos do Dynamic Media](dynamic-media/previewing-assets.md)
    + [Adição de ativos do Dynamic Media a páginas](dynamic-media/adding-dynamic-media-assets-to-pages.md)
-   + [Incorporação do visualizador do Dynamic Video ou Image em uma página da Web](dynamic-media/embed-code.md)
+   + [Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web](dynamic-media/embed-code.md)
    + [Vincular URLs ao aplicativo da Web.](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Uso de conjuntos de regras para transformar URLs](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Publicação de ativos do Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
