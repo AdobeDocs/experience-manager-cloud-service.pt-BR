@@ -1,22 +1,22 @@
 ---
-title: Práticas recomendadas para organizar seus ativos digitais para usar Perfis
-description: Dicas e práticas recomendadas para nomear, organizar e gerenciar metadados para arquivos de ativos digitais.
+title: Práticas recomendadas para organizar ativos digitais para usar Perfis de imagem Dynamic Media ou Perfis de vídeo
+description: Dicas e práticas recomendadas para nomear, organizar e gerenciar arquivos de ativos de imagem e vídeo da Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 
-# Práticas recomendadas para organizar ativos digitais para usar perfis {#best-practices-for-organizing-your-digital-assets-for-using-profiles}
+# Práticas recomendadas para organizar ativos digitais para uso de perfis de imagem ou perfis de vídeo{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-Um conceito importante em relação ao uso de perfis em AEM Assets é que eles são atribuídos a pastas. Dentro de um perfil estão as configurações na forma de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil.
+Um conceito importante em relação ao uso de Perfis de imagem Dynamic Media ou Perfis de vídeo é que eles são atribuídos a pastas. Dentro de um perfil estão as configurações de uma imagem ou vídeo. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados pelo perfil.
 
 Usando estratégias de nomenclatura de arquivos e pastas consistentes e apropriadas, juntamente com boas práticas de metadados, você pode aproveitar ao máximo sua coleção de ativos digitais e garantir que os arquivos corretos sejam processados pelo perfil certo.
 
-Consulte [Perfis para processamento de vídeo, metadados e imagens](processing-profiles.md).
+Consulte [Sobre o Perfil de imagem Dynamic Media e Perfis](about-image-video-profiles.md)de vídeo.
 
 Veja a seguir dicas de práticas recomendadas para organizar seus arquivos de ativos digitais.
 
