@@ -3,7 +3,7 @@ title: Configurar o serviço em nuvem do AEM Assets com o Brand Portal
 description: Configurar o serviço em nuvem do AEM Assets com o Brand Portal
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: f54f5bbd5de76c3507d86b92255f1d4713e717fc
+source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 36%
@@ -25,13 +25,13 @@ A configuração da instância da nuvem do AEM Assets com um locatário do Brand
 1. Obtenha as credenciais da conta de serviço e as informações de carga JWT.
 1. Na instância da nuvem do AEM Assets, configure a conta IMS usando as credenciais da conta de serviço e a carga JWT.
 1. Na instância da nuvem do AEM Assets, configure o serviço em nuvem do Brand Portal usando a conta IMS e o terminal do Brand Portal (URL da organização).
-1. Teste a configuração publicando um ativo da instância de nuvem do AEM Assets no Brand Portal.
+1. Teste a configuração publicando um ativo da instância da nuvem do AEM Assets para o Brand Portal.
 
 >[!NOTE]
 >
->Um locatário do Brand Portal só deve ser configurado com uma instância da nuvem do AEM Assets.
+>Um locatário do Brand Portal só deve ser configurado com uma instância da nuvem de AEM Assets.
 >
->Não configure um locatário do Brand Portal com várias instâncias da nuvem do AEM Assets.
+>Não configure um locatário do Brand Portal com várias instâncias da nuvem de AEM Assets.
 
 
 ## Pré-requisitos {#prerequisites}
@@ -56,7 +56,7 @@ Execute as seguintes etapas na sequência especificada para configurar a instân
 
 ### Criar configuração IMS {#create-ims-configuration}
 
-A configuração do IMS autentica seu locatário do Brand Portal com a instância da nuvem AEM Assets.
+A configuração IMS autentica seu locatário do Brand Portal com a instância da nuvem do AEM Assets.
 
 A configuração IMS inclui duas etapas:
 
@@ -99,7 +99,7 @@ O certificado público permite autenticar seu perfil no Adobe Developer Console.
 
 ### Criar conexão de conta de serviço (JWT) {#createnewintegration}
 
-No Adobe Developer Console, os projetos e as APIs são configurados no nível da organização (locatário do Brand Portal). Configurar uma API cria uma conexão de conta de serviço (JWT) no Adobe Developer Console. Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Para configurar a instância da nuvem do AEM Assets com o Brand Portal, você deve gerar um certificado público (chave pública) na instância da nuvem do AEM Assets e criar credenciais no Adobe Developer Console fazendo upload da chave pública. Essa chave pública é usada para configurar a API para a organização selecionada do Brand Portal e gera as credenciais e a carga JWT para a conta de serviço. Essas credenciais são usadas ainda mais para configurar a conta IMS na instância da nuvem do AEM Assets. Depois que a conta IMS for configurada, você poderá configurar o serviço em nuvem do Brand Portal na instância em nuvem do AEM Assets.
+No Adobe Developer Console, os projetos e as APIs são configurados no nível da organização (locatário do Brand Portal). Configurar uma API cria uma conexão de conta de serviço (JWT) no Adobe Developer Console. Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Para configurar a instância da nuvem do AEM Assets com o Brand Portal, você deve gerar um certificado público (chave pública) na instância da nuvem do AEM Assets e criar credenciais no Adobe Developer Console, carregando a chave pública. Essa chave pública é usada para configurar a API para a organização selecionada do Brand Portal e gera as credenciais e a carga JWT para a conta de serviço. Essas credenciais são usadas para configurar a conta IMS na instância da nuvem do AEM Assets. Depois que a conta IMS for configurada, você poderá configurar o serviço de nuvem do Brand Portal na instância da nuvem do AEM Assets.
 
 Execute as seguintes etapas para gerar as credenciais da conta de serviço e a carga JWT:
 
@@ -317,7 +317,7 @@ Você pode verificar os registros para obter informações detalhadas sobre as a
 
 Por exemplo, publicamos um ativo do AEM Assets para o Brand Portal para validar a configuração.
 
-1. Follow the steps (from 1 to 4) as shown in the [test connection](#test-configuration) section and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 
 1. Clique em **[!UICONTROL Registros]** para exibir os registros de distribuição. Você pode ver o processamento e os registros de erros aqui.
 
