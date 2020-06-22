@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 81%
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 81%
    + [Gerenciamento de ambientes](cloud-manager/manage-environments.md)
    + [Configuração do pipeline de CI/CD](cloud-manager/configure-pipeline.md)
    + [Implantação do código](cloud-manager/deploy-code.md)
-   + [Noções básicas das regras de qualidade do código personalizado](cloud-manager/custom-code-quality-rules.md)
+   + [Noções básicas sobre regras de qualidade de código personalizadas](cloud-manager/custom-code-quality-rules.md)
    + [Acesso e gerenciamento de registros](cloud-manager/manage-logs.md)
    + [Noções básicas das notificações](cloud-manager/notifications.md)
 + Gerenciamento do código {#managing-code}
@@ -46,8 +46,8 @@ ht-degree: 81%
 + Author Tier {#author-tier}
    + [Acessar a camada do autor](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [Protegendo a camada do autor](/help/implementing/author-tier/securing-the-author-tier.md)
-+ Visão geral do Delivery de conteúdo {#content-delivery}
-   + [Fluxo de Delivery de conteúdo](dispatcher/overview.md)
++ Visão geral da entrega de conteúdo {#content-delivery}
+   + [Fluxo de entrega de conteúdo](dispatcher/overview.md)
    + [Dispatcher na nuvem](dispatcher/disp-overview.md)
-   + [CDN no AEM como um serviço em nuvem](dispatcher/cdn.md)
-   + [Armazenamento em cache no AEM como um serviço em nuvem](dispatcher/caching.md)
+   + [CDN no AEM as a Cloud Service](dispatcher/cdn.md)
+   + [Armazenamento em cache no AEM as a Cloud Service](dispatcher/caching.md)
