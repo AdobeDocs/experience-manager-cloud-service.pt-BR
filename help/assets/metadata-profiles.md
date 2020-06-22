@@ -3,7 +3,7 @@ title: Perfis de metadados
 description: Saiba mais sobre perfis de metadados para ativos. Saiba como criar um perfil de metadados e aplicá-lo aos ativos da pasta.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 23%
@@ -15,12 +15,6 @@ ht-degree: 23%
 
 Um Perfil de Metadados permite aplicar metadados padrão a ativos em uma pasta. Crie um Perfil de Metadados e aplique-o a uma pasta. Qualquer ativo carregado posteriormente para a pasta herda os metadados padrão configurados no Perfil Metadados.
 
-<!-- See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
-
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
-
--->
-
 ## Adicionar um perfil de metadados {#adding-a-metadata-profile}
 
 1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis]** de metadados e, em seguida, toque em **[!UICONTROL Criar]**.
@@ -31,7 +25,7 @@ Edite as seguintes propriedades para o componente **[!UICONTROL Descrição]** :
    * **[!UICONTROL Rótulo]** do campo - o nome de exibição da propriedade de metadados. É apenas para a referência do usuário.
    * **[!UICONTROL Mapear para propriedade]** - o valor dessa propriedade fornece o caminho/nome relativo para o nó do ativo no qual ele é salvo no repositório. O valor deve sempre ser start `./` porque indica que o caminho está sob o nó do ativo.
 
-      The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Por exemplo, se você especificar . `/jcr:content/metadata/dc:desc` como o nome do **[!UICONTROL Mapa para a propriedade]**, os ativos AEM armazenam o valor `dc:desc` no nó de metadados do ativo.
+      The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Por exemplo, se você especificar . `/jcr:content/metadata/dc:desc` como o nome do **[!UICONTROL Mapa para a propriedade]**, o AEM Assets armazena o valor `dc:desc` no nó de metadados do ativo.
 
    * **[!UICONTROL Valor]** padrão - Use essa propriedade para adicionar um valor padrão para o componente de metadados. Por exemplo, se você especificar &quot;Minha descrição&quot;, esse valor será atribuído à propriedade `dc:desc` no nó de metadados do ativo.
 
