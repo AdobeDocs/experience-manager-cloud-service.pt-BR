@@ -1,10 +1,10 @@
 ---
-title: Suporte a fragmentos de conteúdo do Adobe Experience Manager como serviço em nuvem na API HTTP do Assets
-description: Saiba mais sobre o Adobe Experience Manager como um suporte a fragmentos de conteúdo do serviço em nuvem na API HTTP do Assets.
+title: Adobe Experience Manager como suporte a fragmentos de conteúdo do Cloud Service na API HTTP Assets
+description: Saiba mais sobre o Adobe Experience Manager como suporte a fragmentos de conteúdo do Cloud Service na API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1891'
 ht-degree: 2%
 
 ---
@@ -20,13 +20,14 @@ ht-degree: 2%
 >
 >* API REST de ativos
 >* incluindo suporte para fragmentos de conteúdo
+
 >
 >
 A implementação atual da API HTTP Assets baseia-se no estilo de arquitetura [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) .
 
-A API [REST de](/help/assets/mac-api-assets.md) ativos permite que os desenvolvedores do Adobe Experience Manager como um serviço em nuvem acessem o conteúdo (armazenado no AEM) diretamente pela API HTTP, por meio de operações CRUD (Criar, Ler, Atualizar, Excluir).
+A API [REST de](/help/assets/mac-api-assets.md) ativos permite que os desenvolvedores do Adobe Experience Manager como Cloud Service acessem o conteúdo (armazenado no AEM) diretamente pela API HTTP, por meio de operações CRUD (Criar, Ler, Atualizar, Excluir).
 
-A API permite que você opere o Adobe Experience Manager como um serviço em nuvem como um CMS (Sistema de Gestão de conteúdo) sem cabeçalho, fornecendo Serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON.
+A API permite que você opere o Adobe Experience Manager como um Cloud Service como um CMS sem cabeçalho (Gestão de conteúdo System), fornecendo Serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON.
 
 Por exemplo, aplicativos de página única (SPA), baseados em estrutura ou personalizados, exigem conteúdo fornecido pela API HTTP, geralmente no formato JSON.
 
@@ -48,7 +49,7 @@ A API REST de ativos:
 
 ## Pré-requisitos {#prerequisites}
 
-A API REST de ativos está disponível em cada instalação predefinida de uma versão recente do Adobe Experience Manager como uma versão do Cloud Service.
+A API REST de ativos está disponível em cada instalação predefinida de um Adobe Experience Manager recente como uma versão de Cloud Service.
 
 ## Principais conceitos {#key-concepts}
 
@@ -74,7 +75,7 @@ O método HTTP determina a operação a ser executada:
 * **GET** - para recuperar uma representação JSON de um ativo ou pasta
 * **POST** - para criar novos ativos ou pastas
 * **PUT** - para atualizar as propriedades de um ativo ou pasta
-* **EXCLUIR** - para excluir um ativo ou pasta
+* **DELETE** - para excluir um ativo ou pasta
 
 >[!NOTE]
 >
@@ -147,6 +148,7 @@ Se a API REST de ativos for usada dentro de um ambiente sem requisitos específi
 >
 >* [Explicação do CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vídeo - Desenvolvimento para CORS com AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -300,7 +302,7 @@ O uso é feito via:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Limitações         {#limitations}
+## Limitações          {#limitations}
 
 Há algumas limitações:
 
@@ -346,11 +348,10 @@ Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
    O seguinte lista cenários comuns quando esse status de erro é retornado, juntamente com a mensagem de erro (monospace) gerada:
 
    * A pasta pai não existe (ao criar um fragmento de conteúdo via `POST`)
-   * Nenhum modelo de fragmento de conteúdo é fornecido (cq:model está ausente), não pode ser lido (devido a um caminho inválido ou a um problema de permissão) ou não há modelo/modelo de fragmento válido:
+   * Nenhum modelo de fragmento de conteúdo é fornecido (cq:model está ausente), não pode ser lido (devido a um caminho inválido ou a um problema de permissão) ou não há um modelo de fragmento válido:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
-      * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
    * Não foi possível criar o fragmento do conteúdo (possivelmente um problema de permissão):
 
       * `Could not create content fragment`
@@ -364,6 +365,7 @@ Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    As mensagens de erro detalhadas normalmente são retornadas da seguinte maneira:
 
    ```xml
