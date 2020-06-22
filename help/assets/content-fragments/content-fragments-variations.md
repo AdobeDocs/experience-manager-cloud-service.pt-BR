@@ -2,10 +2,10 @@
 title: Variações - Criação dos fragmentos de conteúdo
 description: As variações permitem que você crie conteúdo para o fragmento e, em seguida, crie variações desse conteúdo de acordo com a finalidade (se necessário).
 translation-type: tm+mt
-source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 19%
+source-wordcount: '1686'
+ht-degree: 20%
 
 ---
 
@@ -50,12 +50,6 @@ Quando você abre seu fragmento de conteúdo para edição, a guia **Variações
    * acessar uma variedade de [ações](#actions)
 
 Por exemplo:
-
-* Edição de um fragmento simples
-
-   Um fragmento simples consiste em um campo de texto de várias linhas (ativos visuais podem ser adicionados pelo editor de tela cheia).
-
-   ![fragmento simples](assets/cfm-variations-01.png)
 
 * Editar um fragmento com conteúdo estruturado
 
