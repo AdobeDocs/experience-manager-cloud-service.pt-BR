@@ -2,9 +2,9 @@
 title: Notas de versão do Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de versão do Experience Manager para 2020.6.0
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: fcae90c8e24dbd2994e8700daf22f5dff039b299
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1942'
 ht-degree: 7%
 
 ---
@@ -109,16 +109,16 @@ Siga esta seção para saber mais sobre as novidades e atualizações do Cloud M
 
 As Tags inteligentes aprimoradas permitem que as organizações treinem modelos de marcação inteligentes para reconhecer imagens com base em tags comerciais específicas do cliente, além de tags inteligentes genéricas.
 
-Com esta versão, há uma nova experiência guiada do usuário que ajuda a configurar o treinamento de tags inteligentes para conjuntos de tags específicas do cliente e treiná-las com ativos, que devem ser reconhecidos e marcados com eles no futuro. Esta é uma experiência mais intuitiva.
+Com esta versão, há uma nova experiência guiada do usuário que ajuda a configurar o treinamento de tags inteligentes para conjuntos de tags específicas do cliente e treiná-las com ativos, que devem ser reconhecidos e marcados com eles no futuro. A experiência é mais intuitiva agora.
 Treinar Tags inteligentes aprimoradas para obter mais um treinamento intuitivo para Tags inteligentes. Consulte [como adicionar tags inteligentes a ativos](/help/assets/smart-tags.md) e [configurar tags](/help/assets/smart-tags-configuration.md)inteligentes.
 
 **Suporte para ingestão, pré-visualização e delivery de conteúdo 3D**
 
-As organizações agora podem armazenar e usar arquivos 3D em AEM Assets. O usuário pode carregar, pré-visualização e aproveitar uma variedade de arquivos 3D principais, incluindo arquivos .obj, .stl, .gltf e .glb. Com a adição de [!DNL Dynamic Media], as experiências 3D podem ser configuradas e entregues por URLs agnósticos ou visualizadores. Isso inclui um Visualizador de experiência [!DNL Dynamic Media] 3D, o componente Visualizador 3D do Sites e a capacidade de fornecer arquivos 3D via [!DNL Dynamic Media] (AR/VR). Consulte [Trabalhar com ativos 3D no Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+As organizações agora podem armazenar e usar arquivos 3D em AEM Assets. O usuário pode carregar, pré-visualização e usar vários arquivos 3D principais, incluindo arquivos OBJ, STL, GLTF e GLB. Com a adição de [!DNL Dynamic Media], você pode configurar e fornecer experiências 3D usando URLs agnósticos ou visualizadores. Isso inclui um Visualizador de experiência [!DNL Dynamic Media] 3D, o componente Visualizador 3D do Sites e a capacidade de fornecer arquivos 3D via [!DNL Dynamic Media] (AR/VR). Consulte [Trabalhar com ativos 3D no Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Suporte do Adobe Asset Link para Adobe XD**
 
-Com a versão mais recente, [!DNL Experience Manager Assets] fornece suporte para um novo [!DNL Adobe Asset Link] plug-in lançado com a [!DNL Adobe XD] v29.3. A integração permite que os designers acessem e usem ativos de [!DNL Experience Manager] seus projetos, sem a necessidade de deixar o [!DNL Adobe XD] aplicativo. Consulte [Adobe Asset Link para a documentação](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)do Adobe XD.
+Com a versão mais recente, [!DNL Experience Manager Assets] é compatível com um novo [!DNL Adobe Asset Link] plug-in lançado com a [!DNL Adobe XD] v29.3. A integração permite que os designers acessem e usem ativos de [!DNL Experience Manager] seus projetos, sem a necessidade de deixar o [!DNL Adobe XD] aplicativo. Consulte [Adobe Asset Link para a documentação](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)do Adobe XD.
 
 Com esta versão, os usuários e designers criativos agora podem trabalhar com ativos gerenciados no [!DNL AEM Assets] uso [!DNL Adobe Asset Link] em diversos aplicativos de desktop da Creative Cloud, incluindo [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator]e [!DNL InDesign].
 
@@ -128,17 +128,17 @@ Com esta versão, os usuários e designers criativos agora podem trabalhar com a
 
 Os elementos da interface do usuário são amigáveis ao leitor de tela, são acessíveis usando um teclado e têm melhor contraste. Veja a seguir uma lista detalhada de melhorias:
 
-* Os indicadores de progresso [!UICONTROL Opções], [!UICONTROL Escopo]e [!UICONTROL Workflows] na página [!UICONTROL Gerenciar publicação] não são lidos pelo leitor de tela como indicadores de progresso. Em vez disso, os usuários de leitores de tela percebem esses indicadores de status como uma lista de guia. (CQ-4273015)
+* As barras de progresso [!UICONTROL Opções], [!UICONTROL Escopo]e [!UICONTROL Workflows] na página [!UICONTROL Gerenciar publicação] não são lidas pelo leitor de tela como barra de progresso. Em vez disso, os usuários de leitores de tela percebem esses indicadores de status como uma lista de guia. (CQ-4273015)
 
 * Ao adicionar tags na página [!UICONTROL Propriedades] de um ativo, os usuários navegam por uma estrutura em árvore de tags. A estrutura em árvore não é acessível, pois os usuários do leitor de tela não ouvem nada ao navegarem por ela. (CQ-4272964)
 
 * Na caixa de diálogo de compartilhamento de links, ao navegar no modo de navegação, o leitor de tela,
 
-   * narra as informações da tabela assim que a caixa de diálogo é carregada.
-   * não é possível navegar para todas as sugestões automáticas listadas.
-   * não narra as sugestões automáticas exibidas para a caixa de combinação [!UICONTROL Adicionar endereço de email/Pesquisar] . (CQ-4294232)
+   * Narrará as informações da tabela imediatamente quando a caixa de diálogo for carregada.
+   * Não é possível navegar até todas as sugestões automáticas listadas.
+   * Não narra as sugestões automáticas exibidas para a caixa de combinação [!UICONTROL Adicionar endereço de email/Pesquisar] . (CQ-4294232)
 
-* A página Editor [!UICONTROL de Schemas de] Metadados e seus elementos agora são acessíveis e amigáveis para o leitor de tela. As opções podem ser usadas usando um teclado. (CQ-4272953) Os usuários podem arrastar os componentes usando o teclado no modo de navegação NVDA. (CQ-4296326)
+* A página Editor [!UICONTROL de Schemas de] Metadados e seus elementos agora estão acessíveis usando um teclado e são compatíveis com o leitor de tela. (CQ-4272953) Os usuários podem arrastar os componentes usando o teclado no modo de navegação NVDA. (CQ-4296326)
 
 * Na interface do usuário do Assets, as configurações de visualização não podem ser acessadas pelo teclado. (CQ-4289038)
 
@@ -146,17 +146,17 @@ Os elementos da interface do usuário são amigáveis ao leitor de tela, são ac
 
 * A cor e o contraste de alguns elementos da interface do usuário são atualizados para que os usuários com visão limitada ou usuários sem percepção de cor possam distinguir esses elementos da interface do usuário. Por exemplo, a cor dos ícones de classificação de estrelas na seção [!UICONTROL Classificação] da guia [!UICONTROL Avançado] em [!UICONTROL Propriedades] de um ativo e em visualização de cartão é alterada para contraste apropriado. (CQ-4295106)
 
-* O menu pop-up Caixa de lista da caixa de combinação (em vários campos em páginas diferentes) agora exibe as entradas como uma lista de opções que podem ser anunciadas pelos leitores de tela. (CQ-4294017)
+* Os leitores de tela agora podem ler as entradas do menu pop-up da caixa de lista da caixa de combinação (em vários campos em páginas diferentes) como uma lista de opções. (CQ-4294017)
 
 * Para aplicar um fluxo de trabalho a um ativo, a seta de divisas na [!UICONTROL Linha do tempo] pode ser acessada usando um teclado. (CQ-4289268)
 
-* Os usuários podem remover tags selecionadas no campo [!UICONTROL Tags] na guia [!UICONTROL Básico] da página [!UICONTROL Propriedades] de um ativo usando `x` símbolo. Sua finalidade agora é anunciada pelos leitores de tela, juntamente com o número de tags selecionadas (CQ-4273033).
+* Os usuários podem remover tags selecionadas no campo [!UICONTROL Tags] na guia [!UICONTROL Básico] da página [!UICONTROL Propriedades] de um ativo usando `x` símbolo. Os leitores de tela agora anunciam a finalidade e o número de tags selecionadas (CQ-4273033).
 
 * Os campos de formulário somente leitura podem ser focalizados no uso de um teclado. Por exemplo, os campos desativados na guia [!UICONTROL Básico] na página [!UICONTROL Propriedades] de um ativo. (CQ-4273031)
 
 * Acesse as opções para filtrar ativos na barra lateral esquerda usando um teclado agora. (CQ-4273018)
 
-* A finalidade de vários elementos da caixa de combinação, como o campo Caminho e a opção de abrir a caixa de diálogo Seleção na guia [!UICONTROL Básico] da página [!UICONTROL Propriedades] de um ativo, agora são anunciados corretamente pelos leitores de tela. (CQ-4273016)
+* O leitor de tela anuncia a finalidade de vários elementos da caixa de combinação, como o campo Caminho e a opção de abrir a caixa de diálogo Seleção na guia [!UICONTROL Básica] da página [!UICONTROL Propriedades] de um ativo. (CQ-4273016)
 
 * Os controles de volume para vídeos são acessíveis usando um teclado. (CQ-4272696)
 
@@ -172,7 +172,7 @@ Os elementos da interface do usuário são amigáveis ao leitor de tela, são ac
 
 **Outras melhorias**
 
-A versão oferece os seguintes aprimoramentos adicionais:
+A versão oferece os seguintes outros aprimoramentos:
 
 * Capacidade de reprocessar ativos com perfis de processamento de ativos, dando aos usuários controle total do processo (executar processamento completo de ativos, apenas aplicar perfis de processamento específicos e decidir se o fluxo de trabalho de pós-processamento deve ser executado).
 * Os query de pesquisa retornam os resultados mais rapidamente agora quando a instância de cluster subjacente é reiniciada nos bastidores (a execução de pesquisa inicial pode durar mais tempo nesse caso antes).
@@ -191,7 +191,7 @@ Além dos novos recursos acima, a versão atual fornece as seguintes correções
 
 * Para arquivos de música MP3, o botão reproduzir exibido na miniatura na pré-visualização DAM não funciona. (CQ-4294731)
 * Passar o ponteiro sobre a visualização do cartão faz com que a tela role como resultado do foco (automático) nas ações rápidas disponíveis no cartão. (GRANITE-26895)
-* A exibição de muitas imagens após a rolagem de um grande número de resultados de pesquisa resulta em falha do navegador. (GRANITE-26432)
+* A exibição de muitas imagens após a rolagem de muitos resultados de pesquisa leva a uma falha no navegador. (GRANITE-26432)
 * Ao baixar um ativo, se a opção de email estiver selecionada e mesmo se uma ID de email válida for fornecida, a opção de download não estará disponível. (CQ-4296535)
 * filtros personalizados salvos como coleções inteligentes não são aplicados corretamente a ativos. (CQ-4294942)
 * Vários aprimoramentos de pesquisa e indexação e correções de erros para melhorar o desempenho. (CQ-4286373)
