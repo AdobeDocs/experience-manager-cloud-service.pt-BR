@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,6 +39,10 @@ As propriedades são distribuídas por várias guias.
 * **Ocultar na navegação**
 
    * Indica se a página está visível ou oculta na navegação de página do site resultante.
+
+* **ID HTML**
+
+   * ID HTML a ser aplicada ao componente.
 
 * **Título da página**
 
@@ -97,6 +101,10 @@ As propriedades são distribuídas por várias guias.
 
    * Indique a página de redirecionamento automático.
 
+* **Design**
+
+   * Indica se a página está visível ou oculta na navegação de página do site resultante.
+
 * **Alias**
 
    * Especifique um alias a ser usado com esta página.
@@ -112,9 +120,11 @@ As propriedades são distribuídas por várias guias.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Herdado de &lt;*path*>**
+<!--
+* **Inherited from &lt;*path*&gt;**
 
-   * Indica se a página é herdada. e de onde.
+  * Indicates whether the page is inherited. and where from.
+-->
 
 * **Configuração na nuvem**
 
@@ -172,7 +182,7 @@ Exibe a imagem de miniatura da página. É possível:
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Services**
+* **Configurações do Cloud Service**
 
    * Defina as propriedades para os serviços em nuvem.
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
