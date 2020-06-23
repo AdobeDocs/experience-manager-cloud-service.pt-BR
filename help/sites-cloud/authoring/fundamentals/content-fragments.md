@@ -2,10 +2,10 @@
 title: Fragmentos de conteúdo
 description: Os Fragmentos de conteúdo do Adobe Experience Manager as a Cloud Service permitem projetar, criar, selecionar e usar conteúdo independente da página
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -72,8 +72,8 @@ Os fragmentos do conteúdo permitem:
    >
    >Para mais informações sobre outras funcionalidades de edição, consulte também:
    >
-   >    * [Layout responsivo](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [Editar conteúdo da página](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Layout responsivo](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [Editar conteúdo da página](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Selecionar o elemento ou a variação {#selecting-the-element-or-variation}
@@ -88,8 +88,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
    * **Elemento de texto simples**
    * **Vários elementos**
 * **Elemento**
-   * O **Principal** padrão sempre estará disponível.
-   * Uma seleção estará disponível se o fragmento tiver sido criado com um modelo adequado. 
+   * Uma seleção estará disponível dependendo do modelo usado.
 
    >[!NOTE]
    >
@@ -98,11 +97,10 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 * **Variação**
    * O padrão **Mestre** sempre estará disponível.
    * Uma seleção ficará disponível se as variações forem criadas para o fragmento.
-* **Parágrafos**: especifique o intervalo de parágrafos a serem incluídos:
-   * **Todos**
-   * **Intervalo**: por exemplo, `1`, `3-5`, `9-*`
-      * **Tratar cabeçalhos como seus próprios parágrafos**
-* **Tratar cabeçalhos como seus próprios parágrafos**
+
+* **ID**
+
+   * **Atributo da ID HTML a ser aplicado ao componente.**
 
 ### Conexão rápida no editor de fragmentos    {#quick-connection-to-fragment-editor}
 
