@@ -2,9 +2,9 @@
 title: Vídeo
 description: Saiba como trabalhar com vídeo no Dynamic Media
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '10169'
+source-wordcount: '10146'
 ht-degree: 10%
 
 ---
@@ -23,6 +23,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi projetada para aju
 >Antes de trabalhar com vídeo no Dynamic Media, verifique se o administrador do AEM já habilitou e configurou Cloud Service Dynamic Media.
 >
 >* Consulte [Configuração de Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) Dynamic Media em Configuração do Dynamic Media e [Solução de problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
+
 >
 
 
@@ -144,7 +145,7 @@ Para gerenciar um único vídeo e Conjuntos de vídeos adaptáveis, há suporte 
 * Organize, navegue e pesquise vídeos com suporte total a metadados para o gerenciamento eficiente dos ativos de vídeo.
 * Forneça Conjuntos de vídeo adaptáveis para a Web, desktops e dispositivos móveis, incluindo iPhone, iPad, Android, Blackberry e telefone Windows.
 
-O streaming de vídeo adaptativo é suportado em várias plataformas iOS. Consulte Guia [de referência do](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_reference.html)Scene7 Viewers.
+O streaming de vídeo adaptativo é suportado em várias plataformas iOS. Consulte Guia [de referência do](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)Scene7 Viewers.
 
 A Dynamic Media oferece suporte à reprodução de vídeo móvel para vídeo MP4 H.264. Você pode encontrar dispositivos Blackberry compatíveis com este formato de vídeo no seguinte endereço: [Formatos de vídeo suportados no Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -160,7 +161,7 @@ Você pode encontrar dispositivos Windows compatíveis com este formato de víde
 
 Consulte Exemplo de reprodução [](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) de vídeo dinâmica.
 
-Consulte também [Visualizadores do AEM e Scene7](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) e [Visualizadores para ativos AEM somente](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_asset_viewers.html) no Guia de referência do Adobe Scene7 Viewers.
+Consulte também [Visualizadores do AEM e Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) e [Visualizadores para ativos AEM somente](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) no Guia de referência do Adobe Scene7 Viewers.
 
 ## Melhores práticas: Uso do visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -172,7 +173,7 @@ No lado da reprodução do visualizador, ele detecta automaticamente a capacidad
 
 Ao combinar em um único player a capacidade de projetar os componentes de reprodução usando HTML5 e CSS, ter reprodução integrada e usar streaming adaptável e progressivo dependendo da capacidade do navegador, você estende o alcance do conteúdo de mídia avançada para usuários de desktop e móveis e garante uma experiência de vídeo otimizada.
 
-Consulte também [Sobre visualizadores](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html) HTML5 no Guia de referência do Adobe Scene7 Viewers.
+Consulte também [Sobre visualizadores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) HTML5 no Guia de referência do Adobe Scene7 Viewers.
 
 ### Reprodução de vídeo em computadores desktop e dispositivos móveis usando o visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -338,7 +339,7 @@ Use o CBR se o vídeo contiver um nível de movimento semelhante em todo o víde
 O VBR demora mais para codificar, mas produz os resultados mais favoráveis; a qualidade do arquivo de mídia é superior. O VBR é usado com mais frequência para o delivery progressivo http do conteúdo de vídeo.
 
 Quando você deve usar VBR versus CRB?
-Quando se trata de selecionar VBR versus CBR, é quase sempre recomendável usar VBR para seus arquivos de mídia. O VBR fornece arquivos de maior qualidade a taxas de bits competitivas. Ao usar o VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima como 1,5x a taxa de bits de vídeo do público alvo.
+Quando se trata de selecionar VBR versus CBR, é quase sempre recomendável usar VBR para seus arquivos de mídia. O VBR fornece arquivos de maior qualidade a taxas de bits competitivas. Ao usar VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima para 1,5x a taxa de bits do vídeo do público alvo.
 
 Ao escolher uma predefinição de codificação de vídeo, considere a velocidade de conexão do usuário final do público alvo. Escolha uma predefinição com uma taxa de dados que seja 80% dessa velocidade. Por exemplo, se a velocidade de conexão do usuário final do público alvo for de 1000 Kbps, a melhor predefinição será aquela com uma taxa de dados de vídeo de 800 Kbps.
 
@@ -472,6 +473,7 @@ Para definir as configurações do Google Cloud:
 
    * No Painel do seu projeto, no cartão Introdução, toque em **[!UICONTROL Explorar e habilitar as APIs]**.
    * No Painel do seu projeto, no cartão de APIs, toque em **[!UICONTROL Ir para a visão geral]** das APIs.
+
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Próximo à parte superior da página APIs e serviços, toque em **[!UICONTROL Ativar APIs e serviços]**.
@@ -491,6 +493,7 @@ Para definir as configurações do Google Cloud:
    * Em **[!UICONTROL Onde você irá chamar a API?]** lista suspensa, selecione Servidor **[!UICONTROL Web (por exemplo, node.js, Tomcat)]**
 
    * From the **[!UICONTROL What data will you be accessing?]** lista suspensa, toque em Dados **** do usuário.
+
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Toque em **[!UICONTROL Quais credenciais eu preciso?]**
@@ -836,9 +839,11 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
 1. Progresso da codificação de vídeo de Visualização em sua pasta de ativos:
 
    * Na visualização do cartão, o progresso da codificação de vídeo é exibido no ativo em uma porcentagem. Se houver um erro, essas informações também serão exibidas no ativo.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * In list view, video encoding progress displays in the **[!UICONTROL Processing Status]** column. Se houver um erro, essa mensagem será exibida nessa mesma coluna.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    Essa coluna não é exibida por padrão. Para ativar a coluna, selecione **[!UICONTROL Configurações de exibição]** no menu suspenso de exibições e adicione a coluna **[!UICONTROL Status de processamento]** e toque ou clique em **[!UICONTROL Atualizar]**.
@@ -858,6 +863,7 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
    >    * Configuração da fila de trabalhos do Apache Sling
    >    * Manipulador de trabalho externo do processo de fluxo de trabalho do Adobe Granite
    >    * Fila de Tempo Limite do Fluxo de Trabalho Granite
+
    >
    >Você pode ajustar as **[!UICONTROL tentativas]**, o **[!UICONTROL atraso de repetição]** e as propriedades de **[!UICONTROL tempo limite]** nessas configurações.
 
@@ -892,6 +898,7 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
    >    * Configuração da fila de trabalhos do Apache Sling
    >    * Manipulador de trabalho externo do processo de fluxo de trabalho do Adobe Granite
    >    * Fila de Tempo Limite do Fluxo de Trabalho Granite
+
    >
    >
    >Você pode ajustar as **[!UICONTROL tentativas]**, o **[!UICONTROL atraso de repetição]** e as propriedades de **[!UICONTROL tempo limite]** nessas configurações.
@@ -990,6 +997,7 @@ Você só precisará usar Atualizar se a data final do relatório for o dia atua
 
    * Próximo ao canto superior direito, toque no ícone Seletor **[de datas do]** UICONTROL.
 Especifique o intervalo de datas de início e término para o qual deseja obter dados de vídeo e toque em **[!UICONTROL Executar relatório]**.
+
    A caixa de grupo Principais métricas identifica várias medidas de agregação para todos os *vídeos *publicados em seu site.
 
 1. Na tabela que lista os vídeos publicados principais, toque no nome de um vídeo para reproduzir o vídeo e também veja o relatório de retenção de audiência (suspenso) do vídeo.
@@ -1000,7 +1008,7 @@ Se você estiver usando um visualizador de vídeo predefinido fornecido pela Dyn
 
 Use a Referência dos visualizadores do Scene7 e o Scene7 HTML5 Viewers SDK para criar seus próprios visualizadores de vídeo.
 
-Consulte Guia [de referência do](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html)Scene7 Viewers.
+Consulte Guia [de referência do](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)Scene7 Viewers.
 
 <!-- 
 
@@ -1073,7 +1081,7 @@ A legendagem também permite maior acessibilidade ao usar legendagem para pessoa
 
 A Dynamic Media tem a capacidade de converter arquivos de legenda em formato JSON (JavaScript Object Notation). Essa conversão significa que você pode incorporar o texto JSON em uma página da Web como uma transcrição oculta, mas completa, do vídeo. Os mecanismos de pesquisa podem rastrear e indexar o conteúdo para tornar os vídeos mais facilmente detectáveis e fornecer aos clientes detalhes adicionais sobre o conteúdo do vídeo.
 
-Consulte [Servindo conteúdo](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) estático (não imagem) na Ajuda *da API de disponibilização de imagem do* Scene7 para obter mais informações sobre como usar a função JSON em um URL.
+Consulte [Servindo conteúdo](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) estático (não imagem) na Ajuda *da API de disponibilização de imagem do* Scene7 para obter mais informações sobre como usar a função JSON em um URL.
 
 **Para adicionar legendas ou legendas ao vídeo**
 
