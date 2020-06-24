@@ -1,10 +1,10 @@
 ---
-title: Managing Image Presets
+title: Gerenciamento de predefinições de imagens
 description: Entender predefinições de imagens e aprender como criar, modificar e gerenciar predefinições de imagens
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '3657'
+source-wordcount: '3651'
 ht-degree: 11%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 11%
 
 # Managing Image Presets{#managing-image-presets}
 
-As predefinições de imagens permitem que os ativos AEM forneçam dinamicamente imagens de tamanhos diferentes, formatos diferentes ou com outras propriedades de imagem geradas dinamicamente. Cada predefinição de imagem representa uma coleção predefinida de comandos de tamanho e formato para a exibição de imagens. Ao criar uma predefinição de imagem, escolha um tamanho para o delivery de imagem. Você também escolhe comandos de formatação para que a aparência da imagem seja otimizada quando a imagem for entregue para exibição.
+As predefinições de imagens permitem que os AEM Assets forneçam dinamicamente imagens de tamanhos diferentes, formatos diferentes ou com outras propriedades de imagem geradas dinamicamente. Cada predefinição de imagem representa uma coleção predefinida de comandos de tamanho e formato para a exibição de imagens. Ao criar uma predefinição de imagem, escolha um tamanho para o delivery de imagem. Você também escolhe comandos de formatação para que a aparência da imagem seja otimizada quando a imagem for entregue para exibição.
 
 Os administradores podem criar predefinições para exportar ativos. Os usuários podem escolher uma predefinição ao exportar imagens, o que também reformata as imagens de acordo com as especificações especificadas pelo administrador.
 
@@ -56,7 +56,7 @@ Você gerencia as predefinições de imagens no AEM tocando ou clicando no logot
 
 Se você pretende oferecer suporte à ingestão de arquivos AI, EPS e PDF para que você possa gerar representações dinâmicas desses formatos de arquivo, talvez você queira revisar as seguintes informações antes de criar predefinições de imagem.
 
-O formato de arquivo do Adobe Illustrator é uma variante do PDF. As principais diferenças, no contexto dos ativos AEM, são as seguintes:
+O formato de arquivo do Adobe Illustrator é uma variante do PDF. As principais diferenças, no contexto dos AEM Assets, são as seguintes:
 
 * Os documentos do Adobe Illustrator consistem em uma única página com várias camadas. Cada camada é extraída como um subativo PNG sob o ativo principal do Illustrator.
 * documentos PDF consistem em uma ou mais páginas. Cada página é extraída como um subativo PDF de página única sob o documento PDF de várias páginas principal.
@@ -67,7 +67,7 @@ Os subativos são criados pelo `Create Sub Asset process` componente dentro do `
 
 Você pode visualização os subativos ou as páginas ao abrir o ativo, tocar no menu Conteúdo e selecionar **[!UICONTROL Subativos]** ou **[!UICONTROL Páginas]**. Os subativos são ativos reais. Ou seja, as páginas de PDF são extraídas pelo componente de `Create Sub Asset` fluxo de trabalho. Eles são armazenados como `page1.pdf`, `page2.pdf`e assim por diante, abaixo do ativo principal. Depois de armazenados, o fluxo de trabalho os processa. `DAM Update Asset`
 
-Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos AI, EPS ou PDF, as seguintes etapas de processamento são necessárias:
+Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos AI, EPS ou PDF, são necessárias as seguintes etapas de processamento:
 
 1. No `DAM Update Asset` fluxo de trabalho, o componente de `Rasterize PDF/AI Image Preview Rendition` processo rasteriza a primeira página do ativo original - usando a resolução configurada - em uma `cqdam.preview.png` representação.
 
@@ -86,7 +86,7 @@ Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâ
 
 Você acessa as opções de componentes do `Rasterize PDF/AI Image Preview Rendition` processo por meio do fluxo de `DAM Update Asset` trabalho.
 
-Toque em Adobe Experience Manager no canto superior esquerdo e navegue até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**. Na página Modelos de fluxo de trabalho, selecione Ativo **[!UICONTROL de atualização de]** DAM e, na barra de ferramentas, toque em **[!UICONTROL Editar]**. Na página de fluxo de trabalho Atualizar ativo do DAM, toque no duplo do componente de `Rasterize PDF/AI Image Preview Rendition` processo para abrir a caixa de diálogo Propriedades da etapa.
+Toque em Adobe Experience Manager no canto superior esquerdo, navegue até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**. Na página Modelos de fluxo de trabalho, selecione Ativo **[!UICONTROL de atualização de]** DAM e, na barra de ferramentas, toque em **[!UICONTROL Editar]**. Na página de fluxo de trabalho Atualizar ativo do DAM, toque no duplo do componente de `Rasterize PDF/AI Image Preview Rendition` processo para abrir a caixa de diálogo Propriedades da etapa.
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -173,7 +173,7 @@ Os seguintes scripts são usados pela integração do Dynamic Media:
 
 ### Configuração do tamanho da miniatura da imagem {#configuring-image-thumbnail-size}
 
-Você pode configurar o tamanho das miniaturas configurando essas configurações no fluxo de trabalho do Ativo **[!UICONTROL de atualização do]** DAM. Há duas etapas no fluxo de trabalho nas quais você pode configurar o tamanho da miniatura dos ativos de imagem. Embora um (Ativos **[!UICONTROL de Imagem do Processo de Mídia]** Dinâmica) seja usado para ativos de imagem dinâmica e o outro (Miniaturas **[!UICONTROL do]** Processo) para geração de miniaturas estáticas ou quando todos os outros processos não geram miniaturas, *ambos* devem ter as mesmas configurações.
+Você pode configurar o tamanho das miniaturas configurando essas configurações no fluxo de trabalho do Ativo **[!UICONTROL de atualização do]** DAM. Há duas etapas no fluxo de trabalho nas quais você pode configurar o tamanho da miniatura dos ativos de imagem. Embora um (**[!UICONTROL Dynamic Media Process Image Assets]**) seja usado para ativos de imagem dinâmica e o outro (**[!UICONTROL Processar miniaturas]**) para geração de miniaturas estáticas ou quando todos os outros processos não geram miniaturas, *ambos* devem ter as mesmas configurações.
 
 Com a etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]**, as miniaturas são geradas pelo servidor de imagem e essa configuração é independente da configuração aplicada à etapa **[!UICONTROL Processar miniaturas]**. Gerar miniaturas por meio da etapa **[!UICONTROL Processar miniaturas]** é a maneira mais lenta e intensiva de memória para criar miniaturas.
 
@@ -193,7 +193,7 @@ O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL w
 **Para configurar o tamanho da miniatura da imagem**
 
 1. Toque em **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos > Ativo de atualização do DAM > Editar]**.
-1. Toque na etapa Ativos **[!UICONTROL de imagem do processo de mídia]** dinâmica e toque na guia **[!UICONTROL Miniaturas]** . Altere o tamanho da miniatura, conforme necessário, e toque em **[!UICONTROL OK]**.
+1. Toque na etapa **[!UICONTROL Dynamic Media Process Image Assets]** e toque na guia **[!UICONTROL Miniaturas]** . Altere o tamanho da miniatura, conforme necessário, e toque em **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -394,7 +394,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
   </tr>
   <tr>
    <td><strong>Modificador de imagem</strong></td>
-   <td><p>Além das configurações comuns de imagem disponíveis na interface do usuário, o Dynamic Media suporta inúmeras modificações avançadas de imagem que você pode especificar no campo Modificadores de <strong>imagem</strong> . Esses parâmetros são definidos na referência <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">de comando do protocolo do servidor de</a>imagens.</p> <p>Importante: A seguinte funcionalidade listada na API não é suportada:</p>
+   <td><p>Além das configurações comuns de imagem disponíveis na interface do usuário, a Dynamic Media oferece suporte a inúmeras modificações avançadas de imagem que você pode especificar no campo Modificadores de <strong>imagem</strong> . Esses parâmetros são definidos na referência <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">de comando do protocolo do servidor de</a>imagens.</p> <p>Importante: A seguinte funcionalidade listada na API não é suportada:</p>
     <ul>
      <li>Comandos básicos de formatação e renderização de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandos de Localização: <code>locale=</code> e <code>req=xlate</code></li>
@@ -403,7 +403,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Serviços de Dynamic Media não principais: SVG, renderização de imagem e Web para impressão</li>
+     <li>Serviços Dynamic Media não principais: SVG, renderização de imagem e Web para impressão</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -475,4 +475,4 @@ As predefinições de imagens são publicadas automaticamente para você.
 ### Excluindo predefinições de imagens {#deleting-image-presets}
 
 1. No AEM, toque no logotipo do AEM para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos > Predefinições]** de imagem.
-1. Selecione uma predefinição e clique em **[!UICONTROL Excluir**. O Dynamic Media confirma que você deseja excluí-lo. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
+1. Selecione uma predefinição e clique em **[!UICONTROL Excluir**. A Dynamic Media confirma que você deseja excluí-lo. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
