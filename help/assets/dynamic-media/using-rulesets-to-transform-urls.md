@@ -1,10 +1,10 @@
 ---
 title: Uso de conjuntos de regras para transformar URLs
-description: É possível implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições.
+description: Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '797'
 ht-degree: 5%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Uso de conjuntos de regras para transformar URLs {#using-rulesets-to-transform-urls}
 
-É possível implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. Cada regra consiste em pelo menos uma condição e pelo menos uma ação. Uma regra avalia os dados XML em relação às condições e, se uma condição for atendida, ela executará a ação apropriada. Exemplos de conjuntos de regras incluem:
+Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. Cada regra consiste em pelo menos uma condição e pelo menos uma ação. Uma regra avalia os dados XML em relação às condições e, se uma condição for atendida, ela executará a ação apropriada. Exemplos de conjuntos de regras incluem:
 
 * Adicionando um sufixo de tipo MIME. Muitos serviços e sites exigem sufixos de imagem, como adicionar `.jpg` a um URL.
 * Criando um caminho de pasta para o URL para fins de SEO (Search Engine Otimization).
@@ -30,14 +30,14 @@ ht-degree: 5%
 
    Consulte [Remoção de caracteres especiais de URLs](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-No contexto do Dynamic Media, os sites que usam um sistema baseado em XML para gerenciar informações de ativos podem carregar arquivos XML para o Dynamic Media. Você pode designar um desses arquivos como o arquivo de conjunto de regras de pré-processamento para servir aos ativos do Dynamic Media. Esse arquivo reestrutura o formato de protocolo URL padrão para atender à lógica comercial dos sistemas que estão sendo integrados ao Dynamic Media. Especifique um arquivo XML para servir como o caminho de arquivo de definições de conjuntos de regras.
+No contexto da Dynamic Media, os sites que usam um sistema baseado em XML para gerenciar informações de ativos podem carregar arquivos XML para a Dynamic Media. Você pode designar um desses arquivos como o arquivo de conjunto de regras de pré-processamento para servir ativos Dynamic Media. Esse arquivo reestrutura o formato padrão do protocolo URL para atender à lógica comercial dos sistemas que estão sendo integrados à Dynamic Media. Especifique um arquivo XML para servir como o caminho de arquivo de definições de conjuntos de regras.
 
 >[!CAUTION]
 >
 >Tenha cuidado ao usar conjuntos de regras; eles podem impedir que o conteúdo do Dynamic Media seja exibido em seu site.
 
 Existem conjuntos de regras de amostra disponíveis que podem ajudar a criar seu próprio conjunto de regras.
-Consulte Referência [do conjunto de](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/c_rule_set_reference.html)regras.
+Consulte Referência [do conjunto de](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)regras.
 
 Como ocorre com a criação de todo o conjunto de regras, verifique se o arquivo XML é válido antes de carregá-lo usando um programa validador XML, como xmlvalid.
 Consulte também [Solução de problemas de conjuntos](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)de regras.
@@ -76,7 +76,7 @@ Consulte também [Usar a imagem &#39;asset&#39; em vez de &#39;is&#39; em um con
 1. In the lower-right corner of the Setup page, click **[!UICONTROL Close]**.
 1. Execute um trabalho de publicação do Image Server.
 
-   As condições do conjunto de regras são aplicadas às solicitações dos Servidores de Imagem de Mídia Dinâmica ativos.
+   As condições do conjunto de regras são aplicadas às solicitações dos Dynamic Media Image Servers ativos.
 
    Se você fizer alterações no arquivo do conjunto de regras, as alterações serão aplicadas imediatamente quando você fizer upload e publicar novamente o arquivo atualizado do conjunto de regras.
 
