@@ -1,16 +1,16 @@
 ---
-title: Regulamentos de proteção de dados e privacidade de dados - Adobe Experience Manager como uma disponibilidade para sites de serviços na nuvem
-description: 'Saiba mais sobre o Adobe Experience Manager como um suporte dos Sites de serviço em nuvem para os vários Regulamentos de proteção de dados e privacidade de dados; incluindo o Regulamento geral da UE sobre proteção de dados (RGPD), a Lei da Privacidade do Consumidor da Califórnia e como cumprir a implementação de um novo AEM como um projeto de serviço em nuvem. '
+title: Proteção de dados e regulamentos de privacidade de dados - Adobe Experience Manager como disponibilidade para sites de Cloud Service
+description: 'Saiba mais sobre o Adobe Experience Manager como suporte aos Cloud Service Sites para as várias regulamentações de proteção de dados e privacidade de dados; incluindo o Regulamento geral da UE sobre proteção de dados (RGPD), a Lei da Privacidade do Consumidor da Califórnia e como cumprir ao implementar um novo AEM como um projeto Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 1130e8a07bc3826380483a7560ebda7e8a17e238
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1038'
 ht-degree: 1%
 
 ---
 
 
-# Adobe Experience Manager como um serviço em nuvem Sites prontos para proteção de dados e regulamentos de privacidade de dados {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager como uma disponibilidade para Cloud Service Sites para proteção de dados e regulamentos de privacidade de dados {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -22,13 +22,13 @@ ht-degree: 1%
 >
 >Para obter mais informações sobre a resposta da Adobe a problemas de privacidade e o que isso significa para você como cliente da Adobe, consulte o Centro [de privacidade da](https://www.adobe.com/privacy.html)Adobe.
 
-O Adobe Experience Manager como um Sites de serviço em nuvem está pronto para ajudar os clientes a cumprir suas obrigações de privacidade e proteção de dados. Esta página orienta os clientes pelos procedimentos para lidar com essas solicitações no AEM Sites. Ela descreve a localização dos dados privados armazenados e como removê-los manualmente ou com código.
+O Adobe Experience Manager como Cloud Service Sites está pronto para ajudar os clientes a cumprir suas obrigações de privacidade e proteção de dados. Esta página orienta os clientes pelos procedimentos para lidar com essas solicitações no AEM Sites. Ela descreve a localização dos dados privados armazenados e como removê-los manualmente ou com código.
 
 Para obter mais informações, consulte o Centro [de privacidade da](https://www.adobe.com/privacy.html)Adobe.
 
 >[!NOTE]
 >
->Consulte [Adobe Experience Manager como um serviço em nuvem pronto para proteção de dados e regulamentos](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) de privacidade de dados para obter mais detalhes.
+>Consulte [Adobe Experience Manager como Cloud Service para obter mais detalhes sobre a proteção de dados e os regulamentos](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) de privacidade de dados.
 
 ## Nível de criação do AEM {#aem-author-tier}
 
@@ -53,7 +53,7 @@ Para recusar:
 1. Vá até:
    [Adobe Privacy Center - Recusa](https://www.adobe.com/privacy/opt-out.html)
 
-1. Role para baixo até **Serviços** - Dados **de uso do serviço da** Experience Cloud.
+1. Role para baixo até **Serviços** - Dados **de uso do serviço** Experience Cloud.
 
 1. Selecione o link referenciado; atualmente intitulado **aqui**.
 
@@ -68,21 +68,25 @@ Para recusar:
       Inclusão - Inclua-me na agregação e análise da sessão do visitante (não instale o cookie de `amcglobal.sc.omtrdc.net` opção de não participação) - Clique aqui.
    Siga as etapas acima para acessar os links reais.
 
+   <!--
+    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
+    -->
+
    >[!NOTE]
    >
    > Há uma descrição adicional na seção Política **de** privacidade dos [Termos de uso](https://marketing.adobe.com/resources/help/pt_BR/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
-O AEM Sites inclui uma integração opcional com o Analytics Foundation que usa funcionalidade no serviço sob demanda do Adobe Analytics.
+O AEM Sites inclui uma integração opcional com o Analytics Foundation que usa funcionalidade no Adobe Analytics On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de pessoas relacionadas ao Adobe Analytics, consulte [Adobe Analytics e Privacidade](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)de dados.
+Para obter mais informações sobre como gerenciar solicitações de assunto de dados relacionadas ao Adobe Analytics, consulte [Adobe Analytics e Privacidade](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)de dados.
 
 ## Fundação de personalização por Público alvo {#personalization-foundation-by-target}
 
-O AEM Sites inclui uma integração opcional com a Fundação de personalização por Público alvo que usa funcionalidade no serviço sob demanda do Público alvo Adobe.
+O AEM Sites inclui uma integração opcional com a Fundação de personalização por Público alvo que usa funcionalidade no Adobe Target On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de pessoas relacionadas ao Público alvo da Adobe, consulte [Público alvo da Adobe - Privacidade e Regulamento](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)geral de proteção de dados.
+Para obter mais informações sobre como gerenciar solicitações de pessoas relacionadas ao Adobe Target, consulte [Adobe Target - Privacidade e Regulamento](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)geral de proteção de dados.
 
 ## ContextHub {#contexthub}
 
