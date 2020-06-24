@@ -2,10 +2,10 @@
 title: Criação de conteúdo direcionado usando o modo Direcionar
 description: O modo de Direcionamento e o componente de Direcionamento fornecem ferramentas para criar o conteúdo das experiências
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '5351'
-ht-degree: 78%
+source-wordcount: '5348'
+ht-degree: 77%
 
 ---
 
@@ -440,7 +440,7 @@ Se estiver usando o AEM como o mecanismo de direcionamento:
 
 Se estiver usando o Adobe Target como mecanismo de direcionamento:
 
-![Adobe Público alvo como mecanismo de público alvo](/help/sites-cloud/authoring/assets/targeted-engine.png)
+![motor Adobe Target como público alvo](/help/sites-cloud/authoring/assets/targeted-engine.png)
 
 Se estiver usando o Adobe Target como mecanismo de direcionamento e tiver o A4T Analytics configurado para a conta, terá um menu suspenso **Fonte de relatórios** adicional:
 
@@ -464,7 +464,7 @@ Use as configurações avançadas para determinar o que acontece **depois** que 
 | Aumentar contagem, liberar usuário e permitir reentrada | Selecione a experiência que o visitante vê se ele entrar novamente na atividade: Mesma experiência, experiência aleatória, experiência não vista |
 | Aumentar contagem, liberar usuário e reentrada de barra | Determine o que o usuário vê em vez do conteúdo da atividade: Mesma experiência, sem rastreamento, conteúdo padrão ou outro conteúdo de atividade |
 
-Consulte a [documentação do Adobe Target](https://marketing.adobe.com/resources/help/pt_BR/target/target/r_success_metrics.html) para obter mais informações sobre a métrica de sucesso.
+Consulte a [documentação do Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) para obter mais informações sobre a métrica de sucesso.
 
 ### Definição das configurações (direcionamento do AEM) {#configuring-settings-aem-targeting}
 
@@ -503,13 +503,13 @@ Para definir metas e configurações usando o Adobe Target:
 
    ![Fonte do Relatórios](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. Na área **Métrica de meta**, em **Meu objetivo principal**, selecione a métrica de sucesso que deseja rastrear - Conversão, Receita, Participação - e insira como essa métrica é medida (ou que ação o público-alvo executa para indicar que um objetivo foi atingido). Consulte a definição das métricas de objetivo na tabela anterior e consulte a [documentação do Adobe Target](https://marketing.adobe.com/resources/help/pt_BR/target/target/r_success_metrics.html) sobre métricas de sucesso.
+1. Na área **Métrica de meta**, em **Meu objetivo principal**, selecione a métrica de sucesso que deseja rastrear - Conversão, Receita, Participação - e insira como essa métrica é medida (ou que ação o público-alvo executa para indicar que um objetivo foi atingido). Consulte a definição das métricas de objetivo na tabela anterior e consulte a [documentação do Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) sobre métricas de sucesso.
 
    Você pode renomear a meta ao clicar nos três pontos no canto superior direito e selecionar **Renomear**.
 
    Se precisar limpar todos os campos, clique nos três pontos no canto superior direito e selecione **Limpar todos os campos**.
 
-   Todas as métricas também possuem configurações avançadas que você pode definir. Selecione **Configurações avançadas** para acessá-las. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://marketing.adobe.com/resources/help/pt_BR/target/target/r_success_metrics.html).
+   Todas as métricas também possuem configurações avançadas que você pode definir. Selecione **Configurações avançadas** para acessá-las. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    >
@@ -595,7 +595,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
 | Opção | Descrição |
 |---|---|
 | Local | O local é uma string que dá um nome ao local do conteúdo direcionado e conecta as ofertas a locais (ou locais ou componentes) na página onde essas ofertas devem ser colocadas. Este campo é um valor genérico. Se você adicionar uma oferta a um componente, ela se lembrará da ID de localização. Quando a página é executada, o mecanismo avalia os segmentos do usuário e, com base nisso, resolve as experiências a partir das campanhas ativas que devem ser exibidas. Em seguida, verifica as IDs de localização na página e tenta corresponder ofertas com essas IDs de localização. |
-| Mecanismo | Selecione entre Regras do lado do cliente (sem rastreamento), Público alvo da Adobe, ContextHub e Adobe Campaign, dependendo do mecanismo que você deseja usar. |
+| Mecanismo | Selecione entre Regras do lado do cliente (sem rastreamento), Adobe Target, ContextHub e Adobe Campaign, dependendo do mecanismo que você deseja usar. |
 
 Se você selecionar Adobe Target como mecanismo:
 
@@ -603,9 +603,9 @@ Se você selecionar Adobe Target como mecanismo:
 
 | Opção | Descrição |
 |---|---|
-| Destinação exata | Habilitar a definição de metas precisa indica ao componente que aguarde até que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para o Público alvo da Adobe. Pode aumentar o tempo de carregamento. Ao criar, o direcionamento preciso está sempre ativado. Se você marcar a caixa de seleção Definição precisa de metas, a mbox executa um mboxDefine primeiro e um mboxUpdate posteriormente, resultando em uma solicitação do Ajax assim que os dados estiverem disponíveis. Se você não marcar a caixa de seleção Segmentação precisa, a mbox executa uma mboxCreate resultando em uma solicitação síncrona imediatamente (nesse caso, nem todos os dados de contexto podem estar disponíveis ainda). Observação: A ativação ou desativação de direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente. |
+| Destinação exata | Habilitar a definição de metas precisa indica ao componente que aguarde até que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para o Adobe Target. Pode aumentar o tempo de carregamento. Ao criar, o direcionamento preciso está sempre ativado. Se você marcar a caixa de seleção Definição precisa de metas, a mbox executa um mboxDefine primeiro e um mboxUpdate posteriormente, resultando em uma solicitação do Ajax assim que os dados estiverem disponíveis. Se você não marcar a caixa de seleção Segmentação precisa, a mbox executa uma mboxCreate resultando em uma solicitação síncrona imediatamente (nesse caso, nem todos os dados de contexto podem estar disponíveis ainda). Observação: A ativação ou desativação de direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente. |
 | Incluir segmentos resolvidos | Marcar essa caixa de seleção inclui todos os segmentos resolvidos na chamada da mbox e quaisquer parâmetros configurados na página e na estrutura. Somente funciona em situações com a API XML na qual você está sincronizando os segmentos do AEM. Se tiver segmentos no AEM que não são manipulados pelo Adobe Target (como segmentos de script), essa opção permite resolver o segmento no AEM e enviar informações para o Adobe Target de que o segmento está ativo. |
-| Parâmetros herdados de contexto | Parâmetros de contexto do Lista herdados da estrutura do Público alvo da Adobe, se houver, associados à página selecionada. |
+| Parâmetros herdados de contexto | Parâmetros de contexto do Lista herdados da estrutura Adobe Target, se houver, associados à página selecionada. |
 | Parâmetros de contexto | Clique ou toque no campo Adicionar para configurar parâmetros de contexto adicionais (o mesmo que está disponível na estrutura do Público alvo). Os parâmetros de contexto adicionados ao componente aplicam-se somente ao componente e não a outro componente, como seria o caso se você adicionasse parâmetros de contexto diretamente à estrutura. |
 | Params estáticos | Clique ou toque no campo Adicionar para configurar parâmetros estáticos adicionais (o mesmo que está disponível na estrutura do Público alvo). Parâmetros estáticos adicionados ao componente aplicam-se somente ao componente e não a outro componente, como seria o caso se você adicionasse parâmetros estáticos diretamente à estrutura. Os parâmetros estáticos não provêm do contexto (contexto do cliente do content hub). |
 
