@@ -1,18 +1,18 @@
 ---
 title: Gerenciamento de públicos
-description: O console do Audiência permite que você crie, organize e gerencie o audiência para sua conta do Público alvo da Adobe ou gerencie segmentos do ContextHub
+description: O console do Audiência permite que você crie, organize e gerencie o audiência para sua conta Adobe Target ou gerencie segmentos do ContextHub
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 60%
+source-wordcount: '975'
+ht-degree: 61%
 
 ---
 
 
 # Gerenciamento de públicos{#managing-audiences}
 
-O console do Audiência permite que você crie, organize e gerencie o audiência para sua conta do Público alvo da Adobe ou gerencie segmentos do ContextHub:
+O console do Audiência permite que você crie, organize e gerencie o audiência para sua conta Adobe Target ou gerencie segmentos para o ContextHub:
 
 * Adicionar públicos-alvo: públicos-alvo do Adobe Target ou segmentos do ContextHub.
 * Gerenciar públicos-alvo.
@@ -82,13 +82,13 @@ Você pode criar regras de direcionamento para cada um dos seguintes atributos:
 
 | **Atributo** | **Descrição** | **Para obter mais informações** |
 |---|---|---|
-| **Móvel** | Dispositivos móveis de Público alvo com base em parâmetros como dispositivo móvel, tipo de dispositivo, fornecedor do dispositivo, dimensões de tela (por pixels) e muito mais. | Consulte a documentação [do](https://marketing.adobe.com/resources/help/en_US/target/target/c_mobile.html) Mobile no Público alvo da Adobe. |
-| **Personalizado** | Parâmetros personalizados são parâmetros de mbox. Se você passar algum parâmetro de mbox para mboxes, ou usar a função targetPageParams, esses parâmetros aparecerão aqui para uso em públicos-alvo. | Consulte a documentação [Parâmetros](https://marketing.adobe.com/resources/help/en_US/target/target/c_custom_parameters.html) personalizados no Público alvo da Adobe. |
+| **Móvel** | Dispositivos móveis de Público alvo com base em parâmetros como dispositivo móvel, tipo de dispositivo, fornecedor do dispositivo, dimensões de tela (por pixels) e muito mais. | Consulte a documentação [do](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) Mobile em Adobe Target. |
+| **Personalizado** | Parâmetros personalizados são parâmetros de mbox. Se você passar algum parâmetro de mbox para mboxes, ou usar a função targetPageParams, esses parâmetros aparecerão aqui para uso em públicos-alvo. | Consulte a documentação [Parâmetros](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) personalizados em Adobe Target. |
 | **OS** | Você pode público alvo visitantes que usam um determinado sistema operacional. | Direcionado a usuários que estejam usando Linux, Macintosh ou Windows. |
-| **Páginas do site** | visitantes de Público alvo que estão em uma página específica ou têm um parâmetro de mbox específico. | Consulte a documentação [de Páginas](https://marketing.adobe.com/resources/help/en_US/target/target/c_site_pages.html) do site no Público alvo da Adobe. |
-| **Navegador** | Você pode público alvo usuários que usam um navegador específico ou opções específicas de navegador quando visitam sua página. | Consulte [Documentação de opções](https://marketing.adobe.com/resources/help/en_US/target/target/c_browser_options.html)do navegador no Público alvo da Adobe. |
-| **Perfil do visitante** | visitantes de Público alvo que atendem a parâmetros de perfil específicos. | Consulte a documentação [do Perfil do](https://marketing.adobe.com/resources/help/en_US/target/target/c_visitor_profile.html) Visitante no Público alvo da Adobe. |
-| **Fontes de tráfego** | visitantes de Público alvo com base no mecanismo de pesquisa ou na landing page que os referenciam ao site. | Consulte a documentação [Fontes de](https://marketing.adobe.com/resources/help/en_US/target/target/c_traffic_sources.html) tráfego no Público alvo da Adobe. |
+| **Páginas do site** | visitantes de Público alvo que estão em uma página específica ou têm um parâmetro de mbox específico. | Consulte a documentação [de Páginas](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) do site na Adobe Target. |
+| **Navegador** | Você pode público alvo usuários que usam um navegador específico ou opções específicas de navegador quando visitam sua página. | Consulte a documentação [de opções do](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html) navegador no Adobe Target. |
+| **Perfil do visitante** | visitantes de Público alvo que atendem a parâmetros de perfil específicos. | Consulte a documentação [do Perfil do](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) Visitante. |
+| **Fontes de tráfego** | visitantes de Público alvo com base no mecanismo de pesquisa ou na landing page que os referenciam ao site. | Consulte a documentação [Fontes](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) de tráfego no Adobe Target. |
 
 ## Modificação de um público-alvo no console Públicos-alvo {#modifying-an-audience-in-the-audiences-console}
 
@@ -96,7 +96,7 @@ Você pode criar regras de direcionamento para cada um dos seguintes atributos:
 >
 >Apenas é possível editar públicos-alvo do Adobe Target que tenham sido criados na mesma instância do AEM em que você está editando. Públicos-alvo criados em diferentes ambientes do AEM não podem ser editados.
 
-É possível editar qualquer audiência do ContextHub no console do Audiência. Você também pode editar audiências do Adobe Público alvo, mas somente aquelas que foram criadas no AEM:
+É possível editar qualquer audiência do ContextHub no console do Audiência. Você também pode editar audiências Adobe Target, mas somente aquelas que foram criadas no AEM:
 
 1. No console Navegação, clique ou toque em **Personalização**. Click or tap **Audiences**.
 1. Tap or click the icon next to the ContextHub segment you want to edit, and tap or click **Edit**.
