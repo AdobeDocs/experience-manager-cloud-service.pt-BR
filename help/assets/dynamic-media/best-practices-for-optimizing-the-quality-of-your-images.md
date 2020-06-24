@@ -1,8 +1,8 @@
 ---
 title: Práticas recomendadas para otimização da qualidade de imagens
-description: Saiba mais sobre as práticas recomendadas para otimizar a qualidade de imagem no Dynamic Media
+description: Conheça as práticas recomendadas para otimizar a qualidade de imagem no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 5%
@@ -19,7 +19,7 @@ O AEM inclui mais de 100 comandos de delivery de imagem do Dynamic Media para aj
 ## Práticas recomendadas para o formato de imagem (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG ou PNG são as melhores opções para fornecer imagens em boa qualidade e com tamanho e peso gerenciáveis.
-* Se nenhum comando format for fornecido no URL, o Delivery de Imagem de Dynamic Media assumirá como padrão o JPG para o delivery.
+* Se nenhum comando format for fornecido no URL, o Delivery de Imagem Dynamic Media assumirá como padrão o JPG para o delivery.
 * O JPG compacta com uma proporção de 10:1 e geralmente produz arquivos de imagem menores. O PNG compacta com uma proporção de aproximadamente 2:1, exceto em alguns casos, como quando imagens contêm um fundo branco. Normalmente, porém, os tamanhos de arquivo PNG são maiores que os arquivos JPG.
 * O JPG usa compactação com perdas, o que significa que os elementos da imagem (pixels) são descartados durante a compactação. Por outro lado, o PNG usa compactação sem perdas.
 * Muitas vezes, o JPG compacta imagens fotográficas com melhor fidelidade do que imagens sintéticas com bordas e contraste nítidos.
@@ -65,7 +65,7 @@ Existem dois métodos de nitidez de imagem que você pode usar:
 
       Tópico da Ajuda do AEM sobre como aumentar a nitidez de uma imagem.
 
-      White paper de práticas recomendadas [Compartilhando imagens no Adobe Scene7 Publishing System e no Image Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf).
+      White paper de práticas recomendadas [Compartilhando imagens no Adobe Scene7 Publishing System e no Image Server.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
    * O AEM também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
 
