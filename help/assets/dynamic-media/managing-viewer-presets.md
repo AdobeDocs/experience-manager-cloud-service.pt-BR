@@ -2,10 +2,10 @@
 title: Gerenciar predefinições do visualizador
 description: Como criar e gerenciar predefinições do visualizador
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '4284'
-ht-degree: 19%
+source-wordcount: '4263'
+ht-degree: 18%
 
 ---
 
@@ -150,7 +150,7 @@ Os administradores podem adicionar e personalizar os seguintes tipos de mídia a
 
 A tabela a seguir identifica todas as predefinições de visualizador predefinidas e predefinidas que vêm com o Dynamic Media.
 
-Consulte também [Exemplos de biblioteca de referência de visualizadores](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) e [Demonstrações em tempo real](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+Consulte também:<!-- KEEP REFERENCE [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [Demonstrações](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)ao vivo.
 
 Para obter informações sobre o navegador da Web e as versões do sistema operacional compatíveis para visualizadores, consulte as Notas de versão dos visualizadores.
 
@@ -158,7 +158,7 @@ Consulte &quot;Notas de versão dos visualizadores&quot; no sumário do Guia [de
 
 >[!NOTE]
 >
->Todas as predefinições do visualizador predefinidas no Dynamic Media já estão ativadas (ativadas), mas é necessário publicá-las.
+>Todas as predefinições de visualizador prontas para uso no Dynamic Media já estão ativadas (ativadas), mas é necessário publicá-las.
 >See [Publishing Viewer Presets](#publishing-viewer-presets).
 >
 >Todas as novas predefinições do visualizador que você criar e adicionar devem estar ativadas *e *publicadas.
@@ -233,7 +233,7 @@ Consulte &quot;Notas de versão dos visualizadores&quot; no sumário do Guia [de
   </tr>
   <tr>
    <td>PanorâmicaImage</td>
-   <td>Panoramic_Image</td>
+   <td>Panorâmico_Imagem</td>
    <td><code>html5_panoramicimage.css</code></td>
   </tr>
   <tr>
@@ -387,9 +387,9 @@ O AEM mostra uma grande variedade de predefinições do visualizador ao exibir a
 
 ## Criação de uma predefinição do visualizador {#creating-a-new-viewer-preset}
 
-A criação de predefinições do visualizador permite que você aplique várias configurações à visualização e interaja com ativos. No entanto, não é necessário criar novas predefinições do visualizador. Se preferir, você pode usar as predefinições padrão e predefinidas do visualizador que já vêm com os ativos AEM.
+A criação de predefinições do visualizador permite que você aplique várias configurações à visualização e interaja com ativos. No entanto, não é necessário criar novas predefinições do visualizador. Se preferir, você pode usar as predefinições padrão e predefinidas do visualizador que já vêm com AEM Assets.
 
-Se você optar por criar uma nova predefinição do visualizador, depois de salvá-la, o estado do visualizador será ativado automaticamente (definido como **[!UICONTROL Ligado]**) na página Predefinições do visualizador. Esse estado significa que está visível no componente Mídia dinâmica e no componente Mídia interativa e sempre que você pré-visualização uma imagem ou vídeo.
+Se você optar por criar uma nova predefinição do visualizador, depois de salvá-la, o estado do visualizador será ativado automaticamente (definido como **[!UICONTROL Ligado]**) na página Predefinições do visualizador. Esse estado significa que é visível no componente Dynamic Media e no componente de Mídia interativa e sempre que você pré-visualização uma imagem ou vídeo.
 
 Algumas predefinições do visualizador têm configurações exclusivas que podem afetar o uso e o comportamento geral do visualizador. Dependendo da predefinição do visualizador que você estiver criando, talvez você queira estar ciente dessas considerações especiais.
 
@@ -419,13 +419,13 @@ Consulte Considerações [especiais para criar uma predefinição](#special-cons
 
       O editor visual permite que você veja qual o efeito que determinada propriedade tem em um estilo. Basta definir ou ajustar qualquer propriedade para ver instantaneamente o efeito que ela tem no visualizador usando a amostra à esquerda do editor.
 
-      As propriedades de estilização de CSS para cada tipo de predefinição do visualizador são descritas no tópico da Ajuda &quot;Personalizando o *`<viewer name>`* visualizador&quot; no Guia [de Referência dos](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/)visualizadores. Por exemplo, se você estiver criando uma predefinição do visualizador do tipo `Mixed_Media`, consulte [Personalizar o visualizador](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) de mídia mista para obter uma lista e uma descrição de cada propriedade.
+      As propriedades de estilização de CSS para cada tipo de predefinição do visualizador são descritas no tópico da Ajuda &quot;Personalizando o *`<viewer name>`* visualizador&quot; no Guia [de Referência dos](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)visualizadores. Por exemplo, se você estiver criando uma predefinição do visualizador do tipo `Mixed_Media`, consulte [Personalizar o visualizador](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) de mídia mista para obter uma lista e uma descrição de cada propriedade.
 
    * Se você tiver definido as configurações de estilo em um arquivo CSS separado, é possível fazer upload do arquivo CSS para o AEM Assets. Tap **[!UICONTROL Import CSS]** below the **[!UICONTROL Selected Type]** pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.
 
       Ao importar um arquivo CSS, o editor visual verifica se o CSS usa os marcadores do visualizador corretos. Por exemplo, se você estiver criando um visualizador de zoom, todas as regras de CSS que importar deverão ser definidas usando seu nome de classe do visualizador `.s7mixedmediaviewer` definido em um elemento do visualizador pai.
 
-      É possível importar CSS arbitrário e feito à mão, desde que ele defina corretamente os marcadores CSS para um determinado visualizador. (Os marcadores de CSS são descritos em qualquer tópico da Ajuda &quot;Personalizando *&lt;nome do visualizador>* &quot; no Guia [de referência](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/)dos visualizadores. Por exemplo, se você quiser ler sobre marcadores CSS para o Visualizador de zoom, consulte [Personalização do Visualizador](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)de zoom.) É possível, no entanto, que o editor visual não entenda alguns valores de CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda funcione.
+      É possível importar CSS arbitrário e feito à mão, desde que ele defina corretamente os marcadores CSS para um determinado visualizador. (Os marcadores de CSS são descritos em qualquer tópico da Ajuda &quot;Personalizando *&lt;nome do visualizador>* &quot; no Guia [de referência](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)dos visualizadores. Por exemplo, se você quiser ler sobre marcadores CSS para o Visualizador de zoom, consulte [Personalização do Visualizador](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)de zoom.) É possível, no entanto, que o editor visual não entenda alguns valores de CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda funcione.
    >[!NOTE]
    >
    >Se preferir editar o CSS diretamente em sua forma bruta, toque em **[!UICONTROL Mostrar/Ocultar CSS]** abaixo do menu suspenso Tipo selecionado (talvez seja necessário rolar o editor visual para cima para vê-lo).
@@ -441,7 +441,7 @@ Consulte Considerações [especiais para criar uma predefinição](#special-cons
 
    Muitos componentes no editor visual têm uma descrição detalhada associada. Essas descrições aparecem em caixas azuis quando você expande um componente para revelar seus parâmetros associados.
 
-   Alguns tipos de Visualizador têm componentes que permitem especificar comandos do Servidor de imagens em um campo de texto **[!UICONTROL Comando IS]**. Para obter uma lista de comandos que podem ser usados, consulte a [Referência da API de disponibilização de imagens](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/image_serving_api_ref.html).
+   Alguns tipos de Visualizador têm componentes que permitem especificar comandos do Servidor de imagens em um campo de texto **[!UICONTROL Comando IS]**. Para obter uma lista de comandos que podem ser usados, consulte a [Referência da API de disponibilização de imagens](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html).
 
    >[!NOTE]
    >
@@ -530,7 +530,7 @@ As predefinições do visualizador que estão disponíveis na interface do usuá
 
 ## Predefinições do Visualizador de Publicação {#publishing-viewer-presets}
 
-Ativar (ou ativar) o estado de uma predefinição do visualizador significa que ela está visível no componente Mídia dinâmica, no componente Mídia interativa e sempre que você visualização um ativo.
+Ativar (ou ativar) o estado de uma predefinição do visualizador significa que ela está visível no componente Dynamic Media, no componente Mídia interativa e sempre que você visualização um ativo.
 
 Entretanto, para fornecer* *um ativo com uma predefinição do visualizador, a predefinição do visualizador também deve ser publicada. Todas as predefinições do visualizador devem ser ativadas *e *publicadas para obter o URL ou código incorporado de um ativo. Ative e publique todas as predefinições do visualizador prontas para uso que acompanham o Dynamic Media. As predefinições do visualizador personalizado criadas e adicionadas são ativadas automaticamente, mas também devem ser publicadas.
 
