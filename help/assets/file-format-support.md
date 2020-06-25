@@ -3,7 +3,7 @@ title: Formatos de arquivo e tipos MIME suportados pelo Experience Manager Asset
 description: Formatos de arquivo e tipos MIME suportados pelo Experience Manager Assets como Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
+source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 9%
@@ -87,11 +87,11 @@ Os seguintes subtipos de formatos de arquivo de imagem rasterizada que não são
 * Arquivos TIFF com dados de ponto flutuante.
 * Arquivos TIFF com espaço de cor Lab.
 
-## Formatos 3D suportados {#support-3d-formats}
+## Formatos 3D {#support-3d-formats}
 
 A seguinte lista de formatos 3D é suportada.
 
-Consulte [Trabalhar com ativos 3D no Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+Consulte também [Trabalhar com ativos 3D na Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
 | Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | pré-visualização em miniatura | pré-visualização 3D | delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
