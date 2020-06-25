@@ -1,11 +1,11 @@
 ---
-title: Formatos de arquivo e tipos MIME suportados pelos ativos Experience Manager como um serviço em nuvem
-description: Formatos de arquivo e tipos MIME suportados pelos ativos Experience Manager como um serviço em nuvem.
+title: Formatos de arquivo e tipos MIME suportados pelo Experience Manager Assets como Cloud Service
+description: Formatos de arquivo e tipos MIME suportados pelo Experience Manager Assets como Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
+source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '821'
 ht-degree: 9%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 9%
 
 # Assets supported file formats {#supported-file-formats}
 
-O Adobe Experience Manager como um serviço em nuvem oferece suporte aos recursos básicos de gestão de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download e assim por diante — para qualquer arquivo binário, independentemente de seu formato. Os ativos Adobe Experience Manager oferecem suporte a uma grande variedade de formatos de arquivo e cada recurso de produto tem suporte variado para formatos diferentes.
+Adobe Experience Manager como Cloud Service suporta capacidades de gestão de conteúdo básicas — armazenamento, gerenciamento de metadados online, controle de versão, upload e download e assim por diante — para qualquer arquivo binário, independentemente de seu formato. O Adobe Experience Manager Assets oferece suporte para diversos formatos de arquivo e cada recurso de produto tem suporte variado para formatos diferentes.
 
-Além disso, os ativos Experience Manager fornecem suporte estendido para gerar pré-visualizações e execuções e extrair metadados e texto para indexação de texto completo. Esse suporte estendido é fornecido usando microserviços [de](asset-microservices-configure-and-use.md)ativos.
+Além disso, o Experience Manager Assets oferece suporte estendido para gerar pré-visualizações e execuções e extrair metadados e texto para indexação de texto completo. Esse suporte estendido é fornecido usando microserviços [de](asset-microservices-configure-and-use.md)ativos.
 
 Os destaques da conversão de ativos usando microserviços de ativos incluem:
 
@@ -86,6 +86,21 @@ Os seguintes subtipos de formatos de arquivo de imagem rasterizada que não são
 * Arquivos PSD com uma profundidade de bits superior a 16.
 * Arquivos TIFF com dados de ponto flutuante.
 * Arquivos TIFF com espaço de cor Lab.
+
+## Formatos 3D suportados {#support-3d-formats}
+
+A seguinte lista de formatos 3D é suportada.
+
+Consulte [Trabalhar com ativos 3D no Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+
+| Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | pré-visualização em miniatura | pré-visualização 3D | delivery Dynamic Media |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
 ## [!DNL Camera RAW] formatos {#camera-raw-formats}
 
@@ -203,7 +218,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 ## Formatos de áudio {#audio-formats}
 
-Os ativos como um serviço em nuvem fornecem suporte à extração de metadados XMP para os formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
+Os ativos como Cloud Service fornecem suporte de extração de metadados XMP para os formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
 
 >[!MORELIKETHIS]
 >
