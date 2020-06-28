@@ -2,10 +2,10 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: a0e58c626f94b778017f700426e960428b657806
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 0%
+source-wordcount: '1871'
+ht-degree: 1%
 
 ---
 
@@ -18,9 +18,12 @@ Siga a seção abaixo para entender as considerações importantes para executar
 
 * O relatório CRA é criado usando a saída do [Detector](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)de padrão do Adobe Experience Manager (AEM). A versão do Detector de padrão usada pelo CRA está incluída no pacote de instalação do CRA.
 
-* O CRA só pode ser executado pelo usuário **administrador** ou por um usuário no grupo **Administradores** .
+* O CRA só pode ser executado pelo usuário **administrador** ou por um usuário no grupo de **administradores** .
 
 * O CRA é compatível com instâncias do AEM com a versão 6.1 e superior.
+
+   >[!NOTE]
+   > Consulte [Instalação no AEM 6.1](#installing-on-aem61) para obter os requisitos especiais para instalar o CRA no AEM 6.1.
 
 * O CRA pode ser executado em qualquer ambiente, mas é preferível executá-lo em um ambiente *Stage* .
 
@@ -33,7 +36,7 @@ Siga a seção abaixo para entender as considerações importantes para executar
 
 ## Disponibilidade {#availability}
 
-O Cloud Readiness Analyzer pode ser baixado como um arquivo zip do Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na instância do Adobe Experience Manager de origem (AEM).
+O Cloud Readiness Analyzer pode ser baixado como um arquivo zip do portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >Baixe o Cloud Readiness Analyzer do portal de distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) software.
@@ -46,18 +49,18 @@ Siga esta seção para saber como visualização o relatório do Analisador de p
 
 1. Selecione Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> Analisador **de prontidão da** nuvem.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
 1. Após clicar em **Cloud Readiness Analyzer**, os start de ferramenta que geram o relatório serão exibidos quando estiverem disponíveis.
 
    >[!NOTE]
    >Será necessário rolar a página para baixo para visualização do relatório completo.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
+   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
 1. Depois que o relatório CRA é gerado e exibido, você tem a opção de baixar o relatório em um formato CSV (valores separados por vírgula) clicando em **CSV**, como mostrado na figura abaixo.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
+   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
    >Você pode forçar o CRA a limpar seu cache e gerar novamente o relatório clicando em **Atualizar relatório**.
@@ -169,7 +172,9 @@ Os seguintes valores de resposta são possíveis:
 * `500 Internal Server Error`: Indica que ocorreu um erro de servidor interno. Uma mensagem no formato Detalhes do problema fornece mais detalhes.
 * `503 Service Unavailable`: Indica que o servidor está ocupado com outra resposta e não pode atender essa solicitação em tempo hábil. Isso provavelmente ocorrerá somente quando forem feitas solicitações síncronas. Uma mensagem no formato Detalhes do problema fornece mais detalhes.
 
-## Ajuste da duração do cache {#cache-adjustment}
+## Informações do administrador
+
+### Ajuste da duração do cache {#cache-adjustment}
 
 A duração padrão do cache CRA é de 24 horas. Com a opção de atualizar um relatório e gerar novamente o cache, tanto na instância do AEM quanto na interface HTTP, esse valor padrão provavelmente será apropriado para a maioria dos usos do CRA. Se o tempo de geração do relatório for particularmente longo para a sua instância do AEM, você pode desejar ajustar a duração do cache para minimizar a regeneração do relatório.
 
@@ -178,7 +183,12 @@ O valor do tempo de vida do cache é armazenado como a `maxCacheAge` propriedade
 
 O valor dessa propriedade é a duração do cache em segundos. Um administrador pode ajustar a duração do cache usando o CRX/DE Lite.
 
+### Instalação no AEM 6.1 {#installing-on-aem61}
 
+O CRA utiliza uma conta de usuário do serviço do sistema chamada `repository-reader-service` para executar o Detector de padrão. Esta conta está disponível no AEM 6.2 e posterior. No AEM 6.1, essa conta deve ser criada *antes* da instalação do CRA, executando as seguintes etapas:
 
+1. Siga as instruções em [Criar um novo usuário](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) de serviço para criar um usuário. Defina UserID como Caminho intermediário `repository-reader-service` e deixe-o vazio e clique na marca de seleção verde.
 
+2. Siga as instruções em [Gerenciar usuários e grupos](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), especificamente as instruções para Adicionar usuários a um grupo para adicionar o `repository-reader-service` usuário ao `administrators` grupo.
 
+3. Instale o pacote CRA via Gerenciador de pacotes na instância AEM de origem. (Isso adicionará a emenda de configuração necessária à configuração ServiceUserMapper para o usuário do serviço do `repository-reader-service` sistema.)
