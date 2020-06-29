@@ -2,10 +2,10 @@
 title: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 description: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 translation-type: tm+mt
-source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '861'
+ht-degree: 99%
 
 ---
 
@@ -15,21 +15,31 @@ ht-degree: 100%
 O AEM Cloud Service oferece muitos novos recursos e possibilidades para gerenciar os projetos do AEM. No entanto, existem várias diferenças entre o AEM Sites no local ou no Adobe Managed Services, em comparação ao AEM Cloud Service. Este documento destaca as diferenças importantes.
 
 >[!NOTE]
->Este documento destaca as alterações importantes no AEM como um todo. Para ver as alterações específicas da solução, consulte:
+>Este documento destaca as alterações importantes no AEM como um todo. Para obter mais informações e alterações específicas da solução, consulte:
 >
->* [Alterações importantes do AEM Sites no AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Alterações importantes do AEM Assets no AEM Cloud Service](/help/assets/assets-cloud-changes.md)
+>* [Uma introdução ao Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* [Novidades e diferenças](/help/overview/what-is-new-and-different.md) entre o Adobe Experience Manager as a Cloud Service e as versões anteriores
+>* A [Arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager as a Cloud Service
+>* [Alterações importantes no Sites as a AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Alterações importantes no AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
 
 As principais diferenças encontram-se nas seguintes áreas:
 
 * [/apps e /libs não mudam no tempo de execução](#apps-libs-immutable)
+
 * [Pacotes e configurações de OSGi devem ser baseados em repositório](#osgi)
+
 * [Não são permitidas alterações no repositório de publicação](#changes-to-publish-repo)
+
 * [Não são permitidos modos de execução personalizados](#custom-runmodes)
+
 * [Remoção dos agentes de replicação](#replication-agents)
+
 * [Remoção da interface do usuário clássica](#classic-ui)
+
 * [Entrega do lado da publicação](#publish-side-delivery)
+
 * [Manuseio e entrega de ativos](#asset-handling)
 
 ## /apps e /libs não mudam no tempo de execução {#apps-libs-immutable}
