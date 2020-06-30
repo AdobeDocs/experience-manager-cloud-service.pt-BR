@@ -2,10 +2,10 @@
 sub-product: Implementação do AEM as a Cloud Service
 user-guide-title: Implementação do AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 90%
+source-wordcount: '231'
+ht-degree: 92%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 90%
    + [SDK do AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Diretrizes de desenvolvimento do AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
+   + [Sobreposições no AEM como um Cloud Service](developing/introduction/overlays.md)
+   + [Uso da fusão de recursos Sling no AEM como Cloud Service](developing/introduction/sling-resource-merger.md)
    + [API do AEM as a Cloud Service](https://docs.adobe.com/content/help/pt/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Entender os resultados de teste](/help/implementing/developing/introduction/understand-test-results.md)
 + Configuração e extensão do AEM as a Cloud Service {#configuring-and-extending}
@@ -38,14 +40,14 @@ ht-degree: 90%
    + [Fragmentos de conteúdo configuram componentes para renderização](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Configuração de formulários de pesquisa](developing/extending/search-forms.md)
    + [Configurar o editor de rich text](/help/implementing/developing/extending/rich-text-editor.md)
-   + [Configurar os plug-ins RTE](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [Configurar os plug-ins do RTE](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [Configurar o RTE para criar sites acessíveis](/help/implementing/developing/extending/rte-accessible-content.md)
 + Implantação do AEM as a Cloud Service {#deploying}
    + [Implantação do AEM as a Cloud Service](deploying/overview.md)
    + [Configuração do OSGi para o AEM as a Cloud Service](deploying/configuring-osgi.md)
-+ Author Tier {#author-tier}
-   + [Acessar a camada do autor](/help/implementing/author-tier/accessing-the-author-tier.md)
-   + [Protegendo a camada do autor](/help/implementing/author-tier/securing-the-author-tier.md)
++ Camada do autor {#author-tier}
+   + [Acesso à camada do autor](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [Proteção da camada do autor](/help/implementing/author-tier/securing-the-author-tier.md)
 + Visão geral da entrega de conteúdo {#content-delivery}
    + [Fluxo de entrega de conteúdo](dispatcher/overview.md)
    + [Dispatcher na nuvem](dispatcher/disp-overview.md)
