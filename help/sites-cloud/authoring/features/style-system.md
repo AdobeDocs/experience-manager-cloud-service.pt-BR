@@ -2,10 +2,10 @@
 title: Sistema de estilos
 description: O Sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente, de modo que o autor de conteúdo possa selecioná-los ao editar o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 translation-type: tm+mt
-source-git-commit: e7efa3739ef386fdff9c86de238c64df09fb845f
+source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
 workflow-type: tm+mt
-source-wordcount: '1310'
-ht-degree: 100%
+source-wordcount: '1329'
+ht-degree: 93%
 
 ---
 
@@ -100,7 +100,6 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
    * **Estilos podem ser combinados:** permite a seleção simultânea de vários estilos desse grupo.
    * **Nome do estilo:** a descrição do estilo que será exibida para o autor do conteúdo ao configurar o estilo do componente.
    * **Classes de CSS:** o nome real da classe CSS associada ao estilo.
-
    Use as alças de arrastar para organizar a ordem dos grupos e dos estilos nos grupos. Use os ícones Adicionar ou Excluir para adicionar ou remover grupos ou estilos nos grupos.
 
 >[!CAUTION]
@@ -117,21 +116,27 @@ As etapas a seguir são necessárias apenas para ativar o Sistema de estilos par
 
 ### Habilitar guia Estilo na caixa de diálogo Design {#enable-styles-tab-design}
 
-Para que um componente funcione com o Sistema de estilos do AEM e mostre a guia Estilo na caixa de diálogo Design, o desenvolvedor do componente deve incluir essa guia com as seguintes configurações no componente:
+Para que um componente funcione com o Sistema de estilo do AEM e mostre a guia de estilo em sua caixa de diálogo de design, o desenvolvedor do componente deve incluir a guia de estilo com as seguintes configurações no componente:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>Isso usa [sobreposições](/help/implementing/developing/introduction/overlays.md), por meio da Fusão [de Recursos de](/help/implementing/developing/introduction/sling-resource-merger.md)Sling.
 
 Com o componente configurado, os estilos configurados pelos autores da página serão inseridos automaticamente pelo AEM no elemento de decoração que o AEM adiciona ao redor de cada componente editável. O componente não precisa fazer mais nada para que isso ocorra.
 
 ### Habilitar a guia Estilos na caixa de diálogo Editar {#enable-styles-tab-edit}
 
-Uma guia Estilos opcional na caixa de diálogo Editar também está disponível. Diferentemente da guia da caixa de diálogo Design, a guia na caixa de diálogo Editar não é essencial para o funcionamento do Sistema de estilos, mas é uma interface alternativa opcional para um autor de conteúdo definir estilos.
+Uma guia Estilos opcional na caixa de diálogo Editar também está disponível. Diferentemente da guia Caixa de diálogo de design, a guia na caixa de diálogo Editar não é essencial para o funcionamento do Sistema de estilo, mas é uma interface alternativa opcional para um autor de conteúdo definir estilos.
 
 A guia da caixa de diálogo Editar pode ser incluída de maneira semelhante na guia da caixa de diálogo Design:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>Isso usa [sobreposições](/help/implementing/developing/introduction/overlays.md), por meio da Fusão [de Recursos de](/help/implementing/developing/introduction/sling-resource-merger.md)Sling.
 
 >[!NOTE]
 >
@@ -152,7 +157,6 @@ Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 >1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
 >1. Por fim, a `cq:tagName`/ `cq:htmlTag` do componente será considerada como um valor de fallback.
-
 >
 
 
