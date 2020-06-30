@@ -2,9 +2,9 @@
 title: Sobreposições para Adobe Experience Manager como Cloud Service
 description: O AEM como Cloud Service usa o princípio de sobreposições para permitir que você estenda e personalize os consoles e outras funcionalidades
 translation-type: tm+mt
-source-git-commit: e9fa89753289563edd59e3d75413c90efe3ff0b2
+source-git-commit: 58440cb565039becd5b08333994b70f2ea77cc99
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Em uma instância padrão, a funcionalidade predefinida é mantida em `/libs` e 
 
       * Reconstrua a `/libs` estrutura apropriada em `/apps`.
 
-         Isso não requer uma cópia 1:1, a Fusão [de recursos de](/help/implementing/developing/introduction/sling-resource-merger.md) Sling é usada para fazer referência cruzada às definições originais necessárias. A fusão Sling Resource presta serviços de acesso e fusão de recursos através de mecanismos de diferenciação (diferenciação).
+         Isso não requer uma cópia 1:1, pois a Fusão [de recursos de](/help/implementing/developing/introduction/sling-resource-merger.md) Sling é usada para fazer referência cruzada às definições originais necessárias. A fusão Sling Resource presta serviços de acesso e fusão de recursos através de mecanismos de diferenciação (diferenciação).
 
       * Faça quaisquer alterações em `/apps`.
    * Vantagens
