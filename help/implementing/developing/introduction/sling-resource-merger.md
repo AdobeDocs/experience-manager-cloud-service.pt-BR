@@ -2,9 +2,9 @@
 title: Usando a fusão de recursos Sling em Adobe Experience Manager como Cloud Service
 description: A fusão Sling Resource presta serviços de acesso e fusão de recursos
 translation-type: tm+mt
-source-git-commit: 987d2cd91e0d1ab604ea7de755c5568e0c0a4295
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,9 @@ Com a Fusão de recursos Sling, os recursos de sobreposição/sobreposição e/o
 
 >[!CAUTION]
 >
->A fusão de recursos Sling e os métodos relacionados só podem ser utilizados com [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Isso também significa que ele é apropriado apenas para a interface padrão e habilitada para toque; em particular, as substituições definidas dessa maneira são aplicáveis somente à caixa de diálogo habilitada para toque de um componente.
+>A fusão de recursos Sling e os métodos relacionados só podem ser utilizados com [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Isso também significa que ele é apropriado apenas para a interface de usuário padrão habilitada para toque; em particular, as substituições definidas dessa maneira são aplicáveis somente à caixa de diálogo habilitada para toque de um componente.
 >
->As sobreposições/substituições para outras áreas (incluindo outros aspectos de um componente ativado por toque ou da interface clássica) envolvem a cópia do nó e da estrutura apropriados do original para onde a personalização será definida.
+>As sobreposições/substituições para outras áreas (incluindo outros aspectos de um componente ativado por toque) envolvem a cópia do nó e da estrutura apropriados do original para onde a personalização será definida.
 
 ### Metas do AEM {#goals-for-aem}
 
@@ -61,6 +61,7 @@ Os objetivos para usar a fusão de recursos Sling no AEM são:
    >
    >
 1. Faça quaisquer alterações em `/apps`
+
 >
 
 
@@ -209,6 +210,7 @@ Eles, juntamente com a funcionalidade padrão, permitem que você:
 
       * tipo: `String[]`
       * valor: uma lista dos nós secundários (conforme definido em `/libs`) para ocultar/ignorar
+
       O caractere curinga &amp;ast; pode ser usado para ocultar/ignorar todos os nós filhos.
 
 
