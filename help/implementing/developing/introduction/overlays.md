@@ -2,9 +2,9 @@
 title: Sobreposições para Adobe Experience Manager como Cloud Service
 description: O AEM como Cloud Service usa o princípio de sobreposições para permitir que você estenda e personalize os consoles e outras funcionalidades
 translation-type: tm+mt
-source-git-commit: 58440cb565039becd5b08333994b70f2ea77cc99
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Experience Manager as a Cloud Service uses the principle of overlays to al
 
 A sobreposição é um termo que pode ser usado em muitos contextos. Neste contexto (estender o AEM como um Cloud Service), uma sobreposição significa usar a funcionalidade predefinida e impor suas próprias definições sobre isso (para personalizar a funcionalidade padrão).
 
-Em uma instância padrão, a funcionalidade predefinida é mantida em `/libs` e é recomendável definir sua sobreposição (personalizações) sob a `/apps` ramificação. O AEM usa um caminho de pesquisa para localizar um recurso, pesquisando primeiro a `/apps` ramificação e, em seguida, a `/libs` ramificação (o caminho [de pesquisa pode ser configurado](#configuring-the-search-paths)). Esse mecanismo significa que sua sobreposição (e as personalizações definidas ali) terão prioridade.
+Em uma instância padrão, a funcionalidade predefinida é mantida em `/libs` e é recomendável definir sua sobreposição (personalizações) sob a `/apps` ramificação (usando um caminho [de](#search-paths) pesquisa para resolver os recursos).
 
 * A interface habilitada para toque usa sobreposições relacionadas ao [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html):
 
@@ -49,38 +49,15 @@ As sobreposições são o método recomendado para muitas alterações, como con
 Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
 -->
 
-* Você não ****deve fazer alterações na`/libs`ramificação **Qualquer alteração feita pode ser perdida, pois essa ramificação está sujeita a alterações sempre que você:
-
-   * atualização em sua instância
-   * aplicar uma correção
-   * instalar um pacote de recursos
+* Você não ****deve fazer alterações na`/libs`ramificação **Qualquer alteração feita pode ser perdida, pois essa ramificação está sujeita a alterações sempre que as atualizações forem aplicadas à sua instância.
 
 * Eles concentram suas alterações em um local; tornando mais fácil para você rastrear, migrar, fazer backup e/ou depurar as alterações conforme necessário.
 
-## Configuração dos caminhos de pesquisa {#configuring-the-search-paths}
+## Caminhos de pesquisa {#search-paths}
 
-Para sobreposições, o recurso fornecido é uma agregação dos recursos e propriedades recuperados, dependendo dos caminhos de pesquisa que podem ser definidos:
+O AEM usa um caminho de pesquisa para localizar um recurso, pesquisando (por padrão) primeiro a `/apps` ramificação e, em seguida, a `/libs` ramificação. Esse mecanismo significa que sua sobreposição `/apps` (e as personalizações definidas) terão prioridade.
 
-* O Caminho **de pesquisa do** Resolvedor de recursos, conforme definido na configuração [do](/help/implementing/deploying/configuring-osgi.md) OSGi para a Fábrica **do Resolvedor de Recursos do Sling do** Apache.
-
-   * A ordem de cima para baixo dos caminhos de pesquisa indica suas respectivas prioridades.
-   * Em uma instalação padrão, os padrões principais são `/apps`, `/libs` - portanto, o conteúdo de `/apps` tem uma prioridade mais alta do que o de `/libs` (isto é, ele *sobrepõe* -o).
-
-* Dois usuários do serviço precisam de acesso JCR:READ ao local onde os scripts estão armazenados. Esses usuários são: components-search-service (usado pelos componentes com.day.cq.wcm.coreto access/cache) e sling-scripting (usado por org.apache.sling.servlets.resolver para localizar servlets).
-* A configuração a seguir também deve ser configurada de acordo com o local onde você coloca seus scripts (neste exemplo, em /etc, /libs ou /apps).
-
-   ```
-   PID = org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl
-   resource.resolver.searchpath=["/etc","/apps","/libs"]
-   resource.resolver.vanitypath.whitelist=["/etc/","/apps/","/libs/","/content/"]
-   ```
-
-* Finalmente, o Servlet Resolver também deve ser configurado (neste exemplo, para adicionar /etc também)
-
-   ```
-   PID = org.apache.sling.servlets.resolver.SlingServletResolver
-   servletresolver.paths=["/bin/","/libs/","/apps/","/etc/","/system/","/index.servlet","/login.servlet","/services/"]
-   ```
+Para sobreposições, o recurso fornecido é uma agregação dos recursos e propriedades recuperados, dependendo dos caminhos de pesquisa definidos na configuração do OSGi.
 
 <!--
 ## Example of Usage {#example-of-usage}
