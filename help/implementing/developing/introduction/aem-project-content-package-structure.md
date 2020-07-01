@@ -2,9 +2,9 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2530'
 ht-degree: 17%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 17%
 >
 >Familiarize-se com o uso [básico do](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM Project Archetype e com o plug-in [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) FileVault Content Maven, pois este artigo se baseia nesses aprendizados e conceitos.
 
-Este artigo descreve as alterações necessárias para que os projetos do Adobe Experience Manager Maven sejam compatíveis com o AEM Cloud Service, garantindo que eles respeitem a divisão de conteúdo mutável e imutável. que sejam estabelecidas as dependências necessárias para criar implantações determinísticas e não conflitantes; E que eles são empacotados numa estrutura implantável.
+Este artigo descreve as alterações necessárias para que os projetos de Adobe Experience Manager Maven sejam compatíveis com o AEM Cloud Service, garantindo que respeitem a divisão de conteúdos mutáveis e imutáveis. que sejam estabelecidas as dependências necessárias para criar implantações determinísticas e não conflitantes; E que eles são empacotados numa estrutura implantável.
 
 As implantações de aplicativos AEM devem ser compostas por um único pacote AEM. Este pacote deve, por sua vez, conter subpacotes que contêm tudo o que o aplicativo exige para funcionar, incluindo código, configuração e qualquer conteúdo básico de suporte.
 
@@ -30,9 +30,9 @@ A estrutura do pacote descrita neste documento é compatível com **ambas** as i
 
 ## Áreas mutáveis vs. imutáveis do repositório {#mutable-vs-immutable}
 
-`/apps` e `/libs` são consideradas áreas **imutáveis** do AEM, pois não podem ser alteradas (criar, atualizar, excluir) após o AEM ser iniciado (isto é, no tempo de execução). Qualquer tentativa de alterar uma área imutável no tempo de execução falhará.
+`/apps` e `/libs`**são consideradas áreas imutáveis do AEM, pois não podem ser alteradas (criar, atualizar, excluir) após o AEM ser iniciado (isto é, no tempo de execução).** Qualquer tentativa de alterar uma área imutável no tempo de execução falhará.
 
-Tudo o resto no repositório, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. são todas áreas **mutáveis** , o que significa que podem ser alteradas em tempo de execução.
+Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
 >[!WARNING]
 >
@@ -46,11 +46,11 @@ Por isso, embora os índices Oak sejam mutáveis em tempo de execução, eles de
 
 >[!TIP]
 >
->Para obter mais detalhes sobre a indexação no AEM como um serviço em nuvem, consulte a Pesquisa e indexação de [conteúdo do documento.](/help/operations/indexing.md)
+>Para obter mais detalhes sobre a indexação no AEM como um Cloud Service, consulte a Pesquisa e indexação de [conteúdo do documento.](/help/operations/indexing.md)
 
 ## Estrutura do pacote recomendada {#recommended-package-structure}
 
-![Estrutura do pacote de projetos do Experience Manager](assets/content-package-organization.png)
+![Estrutura do Pacote do Projeto Experience Manager](assets/content-package-organization.png)
 
 Este diagrama fornece uma visão geral da estrutura do projeto e dos artefatos de implantação do pacote recomendados.
 
@@ -59,13 +59,13 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
 + O `ui.apps` pacote, ou Pacote de código, contém todo o código a ser implantado e só é implantado `/apps`. Os elementos comuns do `ui.apps` pacote incluem, mas não se limitam a:
    + Pacotes OSGi
       + `/apps/my-app/install`
-   + Configurações do OSGi
+   + [Configurações do OSGi](/help/implementing/deploying/configuring-osgi.md)
       + `/apps/my-app/config`
-   + Scripts HTL
+   + [Scripts HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
    + JavaScript e CSS (por meio das bibliotecas do cliente)
       + `/apps/my-app/clientlibs`
-   + Sobreposições de /libs
+   + [Sobreposições](/help/implementing/developing/introduction/overlays.md) de /libs
       + `/apps/cq`, `/apps/dam/`, etc.
    + Configurações com reconhecimento de contexto de fallback
       + `/apps/settings`
@@ -95,7 +95,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
 
    Os pacotes agora são incluídos usando a configuração [incorporada do plug-in Maven](#embeddeds)FileVault Package Maven, em vez da `<subPackages>` configuração.
 
-   Para implantações complexas do Experience Manager, pode ser desejável criar vários projetos `ui.apps` e `ui.content` pacotes que representem sites ou locatários específicos no AEM. Se isso for feito, verifique se a divisão entre conteúdo mutável e imutável é respeitada e se os pacotes de conteúdo necessários são adicionados como subpacotes no pacote de conteúdo do `all` container.
+   Para implantações complexas de Experience Manager, pode ser desejável criar vários projetos `ui.apps` e `ui.content` pacotes que representem sites ou locatários específicos no AEM. Se isso for feito, verifique se a divisão entre conteúdo mutável e imutável é respeitada e se os pacotes de conteúdo necessários são adicionados como subpacotes no pacote de conteúdo do `all` container.
 
    Por exemplo, uma estrutura complexa de pacote de conteúdo de implantação pode ter a seguinte aparência:
 
@@ -143,7 +143,7 @@ Embora o Repo Init faça scripts em tempo real no `ui.apps` projeto como scripts
 + Grupos
 + ACLs
 
-Os scripts de Inicialização de Repo são armazenados como entradas de configurações de fábrica do `scripts` `RepositoryInitializer` OSGi e, portanto, podem ser implicitamente direcionados pelo modo de execução, permitindo diferenças entre os scripts de Inicialização de Repo do autor do AEM e dos Serviços de publicação do AEM, ou mesmo entre Envs (Dev, Stage e Prod).
+Os scripts de Inicialização do Repo são armazenados como entradas de configurações de fábrica `scripts` `RepositoryInitializer` OSGi e, portanto, podem ser implicitamente direcionados pelo modo de execução, permitindo diferenças entre os scripts de Inicialização do Repo dos Serviços de AEM Author e AEM Publish, ou mesmo entre Envs (Dev, Stage e Prod).
 
 Observe que, ao definir Usuários e Grupos, somente grupos são considerados parte do aplicativo e integrantes de sua função devem ser definidos aqui. Os usuários e grupos da organização ainda devem ser definidos em tempo de execução no AEM; por exemplo, se um fluxo de trabalho personalizado atribuir trabalho a um Grupo nomeado, esse Grupo deverá ser definido por meio da Inicialização de acordo com o AEM no aplicativo AEM, no entanto, se o Agrupamento for meramente organizacional, como &quot;Equipe do Wendy&quot; e &quot;Equipe do Sean&quot;, eles serão melhor definidos e gerenciados em tempo de execução no AEM.
 
