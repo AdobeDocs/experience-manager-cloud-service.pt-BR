@@ -2,9 +2,9 @@
 title: Usando a fusão de recursos Sling em Adobe Experience Manager como Cloud Service
 description: A fusão Sling Resource presta serviços de acesso e fusão de recursos
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1160'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 A fusão Sling Resource presta serviços de acesso e fusão de recursos. Fornece mecanismos de diferenciação (diferenciação) para ambos:
 
-* **[Sobreposições](/help/implementing/developing/introduction/overlays.md)**de recursos usando os caminhos[de pesquisa](/help/implementing/developing/introduction/overlays.md#configuring-the-search-paths)configurados.
+* **[Sobreposições](/help/implementing/developing/introduction/overlays.md)**de recursos usando os caminhos[de](/help/implementing/developing/introduction/overlays.md#search-paths)pesquisa.
 
 * **Substituições** de caixas de diálogo de componentes para a interface habilitada para toque (`cq:dialog`), usando a hierarquia de tipo de recurso (por meio da propriedade `sling:resourceSuperType`).
 
@@ -30,9 +30,7 @@ Com a Fusão de recursos Sling, os recursos de sobreposição/sobreposição e/o
 
 >[!CAUTION]
 >
->A fusão de recursos Sling e os métodos relacionados só podem ser utilizados com [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Isso também significa que ele é apropriado apenas para a interface de usuário padrão habilitada para toque; em particular, as substituições definidas dessa maneira são aplicáveis somente à caixa de diálogo habilitada para toque de um componente.
->
->As sobreposições/substituições para outras áreas (incluindo outros aspectos de um componente ativado por toque) envolvem a cópia do nó e da estrutura apropriados do original para onde a personalização será definida.
+>A fusão de recursos Sling e os métodos relacionados podem ser usados somente com a interface habilitada para toque (que é a única interface disponível para o AEM como Cloud Service).
 
 ### Metas do AEM {#goals-for-aem}
 
@@ -43,27 +41,17 @@ Os objetivos para usar a fusão de recursos Sling no AEM são:
 
    Ao usar a Fusão de recursos Sling, não é recomendável copiar toda a estrutura do, pois isso resultaria em informações demais mantidas na personalização (normalmente `/libs` `/apps`). A duplicação de informações aumenta desnecessariamente a chance de problemas quando o sistema é atualizado de alguma forma.
 
->[!NOTE]
->
->As substituições não dependem dos caminhos de pesquisa, elas usam a propriedade `sling:resourceSuperType` para fazer a conexão.
->
->No entanto, as substituições são frequentemente definidas em `/apps`, já que a prática recomendada no AEM é definir personalizações em `/apps`; isso porque você não pode mudar nada debaixo `/libs`.
-
 >[!CAUTION]
 >
 >Você não ***deve*** alterar nada no `/libs` caminho.
 >
->Isso ocorre porque o conteúdo do é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos). `/libs`
+>Isso ocorre porque o conteúdo de `/libs` pode ser substituído a qualquer momento em que as atualizações forem aplicadas à sua instância.
 >
->O método recomendado para configuração e outras alterações é:
->
->1. Recriar o item desejado (isto é, como ele existe em `/libs`) em `/apps`
+>* As sobreposições dependem dos caminhos [de](/help/implementing/developing/introduction/overlays.md#search-paths)pesquisa.
    >
    >
-1. Faça quaisquer alterações em `/apps`
-
->
-
+* As substituições não dependem dos caminhos de pesquisa, elas usam a propriedade `sling:resourceSuperType` para fazer a conexão.
+   >  No entanto, as substituições são frequentemente definidas em `/apps`, já que a prática recomendada no AEM como Cloud Service é definir personalizações em `/apps`; isso porque você não pode mudar nada debaixo `/libs`.
 
 
 ### Propriedades {#properties}
