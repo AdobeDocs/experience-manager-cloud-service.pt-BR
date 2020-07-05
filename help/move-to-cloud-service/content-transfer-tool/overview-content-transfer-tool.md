@@ -1,11 +1,11 @@
 ---
 title: Visão geral da ferramenta Transferência de conteúdo
 description: Visão geral da ferramenta Transferência de conteúdo
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -47,18 +47,18 @@ Na fase de assimilação, para aplicar o conteúdo delta sobre o conteúdo atual
 
 Siga a seção abaixo para entender as diretrizes e práticas recomendadas de uso da ferramenta Transferência de conteúdo:
 
-* É aconselhável executar a Limpeza [de](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) revisão e as verificações [de consistência do armazenamento](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) de dados no repositório de **origem** para identificar possíveis problemas e reduzir o tamanho do repositório.
+* É aconselhável executar a [Limpeza de revisão](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/deploying/deploying/revision-cleanup.html) e as [verificações de consistência do armazenamento de dados](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) no repositório de **origem** para identificar possíveis problemas e reduzir o tamanho do repositório.
 
-* Se a configuração da Rede do Delivery de conteúdo do autor da AEM Cloud (CDN) estiver configurada para ter uma lista de permissões de IPs, verifique se os IPs do ambiente de origem também são adicionados à lista de permissões para que o ambiente de origem e o ambiente da AEM Cloud possam se comunicar entre si.
+* Se a Rede de entrega de conteúdo (CDN) do Autor da AEM Cloud estiver configurada para ter uma lista de permissões de IPs, será necessário garantir que os IPs do ambiente de origem também sejam adicionados à lista de permissões para que o ambiente de origem e o ambiente da AEM Cloud possam se comunicar.
 
 * Na fase de assimilação, é recomendável executar a assimilação usando o modo de *limpeza* ativado, no qual o repositório existente (autor ou publicação) no ambiente de serviço do AEM Cloud Service será completamente excluído e depois atualizado com os dados do conjunto de migração. Esse modo é muito mais rápido que o modo sem limpeza, no qual o conjunto de migração é aplicado sobre o conteúdo atual.
 
 * Após a conclusão da atividade de transferência de conteúdo, a estrutura correta do projeto é necessária no ambiente do Cloud Service para garantir que o conteúdo seja renderizado com êxito no ambiente do Cloud Service.
 
-* Antes de executar a Ferramenta de transferência de conteúdo, verifique se há espaço em disco suficiente no `crx-quickstart` subdiretório da instância de origem do AEM. Isso ocorre porque a Ferramenta de transferência de conteúdo cria uma cópia local do repositório que é carregada posteriormente no conjunto de migração.
+* Antes de executar a ferramenta Transferência de conteúdo, verifique se há espaço em disco suficiente no subdiretório `crx-quickstart` da instância de origem do AEM. Isso ocorre porque a ferramenta Transferência de conteúdo cria uma cópia local do repositório que depois é carregada no conjunto de migração.
 A fórmula geral para calcular o espaço livre em disco necessário é a seguinte:
    `data store size + node store size * 1.5`
 
-   * *tamanho* do armazenamento de dados: a Ferramenta de transferência de conteúdo usa 64 GB, mesmo se o armazenamento de dados real for maior.
-   * *tamanho*do armazenamento de nó: tamanho do diretório do repositório de segmentos ou tamanho do banco de dados MongoDB.
-Assim, para um tamanho de armazenamento de segmento de 20 GB, o espaço livre em disco necessário seria de 94 GB.
+   * *tamanho do armazenamento de dados*: a ferramenta Transferência de conteúdo usa 64 GB, mesmo que o armazenamento de dados real seja maior.
+   * *tamanho do armazenamento do nó*: tamanho do diretório do repositório de segmentos ou tamanho do banco de dados MongoDB.
+Assim, para um tamanho de armazenamento de segmentos de 20 GB, o espaço livre em disco necessário seria de 94 GB.
