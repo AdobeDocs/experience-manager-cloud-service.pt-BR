@@ -1,11 +1,11 @@
 ---
 sub-product: Migrar para o AEM as a Cloud Service
 user-guide-title: Migrar para o AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe2c098b55bf501dc0ae68d01139b828d92d90f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '68'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
    + [Execução](/help/move-to-cloud-service/execution.md)
    + [Pós-ativação](/help/move-to-cloud-service/post-go-live.md)
 + Ferramentas de transição para a nuvem {#cloud-migration}
-   + Analisador de disponibilidade da nuvem {#cloud-readiness-analyzer}
+   + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
       + [Visão geral](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
       + [Uso do Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
    + Ferramenta Transferência de conteúdo {#content-transfer-tool}
