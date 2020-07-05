@@ -1,11 +1,11 @@
 ---
 title: Fase Pós-ativação
 description: Fase Pós-ativação
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '242'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -30,19 +30,18 @@ Consulte [Implementação do AEM as a Cloud Service](https://docs.adobe.com/cont
 
 ## CRX/DE Lite {#crxde-lite}
 
-Como usuário, você pode acessar o CRX/DE Lite no ambiente de desenvolvimento, mas não no estágio ou na produção.
+Como usuário, você pode acessar o CRX/DE Lite no ambiente de desenvolvimento, mas não no ambiente de preparo ou produção.
 
 >[IMPORTANTE]
 >A gravação em repositórios imutáveis, como `/libs` e `/apps` em tempo de execução, resultará em erros. Além disso, como cliente, você não terá acesso a ferramentas de desenvolvedor para ambientes de preparação e produção.
 
-Refer to [Developing with CRX/DE Lite](https://docs.adobe.com/help/pt-BR/experience-manager-65/developing/devtools/developing-with-crxde-lite.translate.html) to learn how to develop your AEM application using CRX/DE Lite.
+Consulte [Desenvolvimento com o CRX/DE Lite](https://docs.adobe.com/help/pt-BR/experience-manager-65/developing/devtools/developing-with-crxde-lite.translate.html) para saber como desenvolver seu aplicativo do AEM usando o CRX/DE Lite.
 
 ## Gerenciamento de logs {#managing-logs}
 
 Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
 
-Consulte [Acessar e gerenciar logs](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.translate.html
-) para saber como acessar e gerenciar logs por meio da interface do usuário ou da API via Cloud Manager.
+Consulte [Acessar e gerenciar logs](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.translate.html) para saber como acessar e gerenciar logs por meio da interface do usuário ou da API via Cloud Manager.
 
 ### Suporte adicional {#additional-support}
 
