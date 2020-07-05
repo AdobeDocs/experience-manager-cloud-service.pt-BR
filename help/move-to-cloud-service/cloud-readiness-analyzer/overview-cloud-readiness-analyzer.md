@@ -1,36 +1,36 @@
 ---
 title: Visão geral do Cloud Readiness Analyzer
 description: Visão geral do Cloud Readiness Analyzer
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Visão geral {#overview-cloud-readiness-analyzer}
 
-O Cloud Readiness Analyzer ajuda a acelerar os processos de avaliação da prontidão para passar de uma implantação existente do Adobe Experience Manager (AEM) para o AEM como Cloud Service.
+O Cloud Readiness Analyzer ajuda a acelerar os processos de avaliação da possibilidade de mover uma implantação existente do Adobe Experience Manager (AEM) para o AEM as a Cloud Service.
 
-Essa ferramenta gera um relatório que identifica áreas de potencial refatoração, que é o primeiro passo na jornada da transição para o AEM como Cloud Service.
+Essa ferramenta gera um relatório que identifica áreas de refatoração potencial, que é o primeiro passo na jornada da transição para o AEM as a Cloud Service.
 
-## Relatório do Analisador de disponibilidade da nuvem {#cra-report}
+## Relatório do Cloud Readiness Analyzer {#cra-report}
 
-O relatório do Analisador de disponibilidade em nuvem é usado para obter um alto nível de compreensão da disponibilidade geral de atualização. O relatório consiste em conclusões de categorias de problemas que devem ser abordados antes de uma implantação bem-sucedida no AEM como Cloud Service.
+O relatório do Cloud Readiness Analyzer é usado para obter um alto nível de compreensão da disponibilidade geral de atualização. O relatório consiste em conclusões em categorias de problemas que devem ser abordados antes de uma implantação bem-sucedida no AEM as a Cloud Service.
 
-O relatório do Analisador de disponibilidade de nuvem inclui as seguintes categorias:
+O relatório do Cloud Readiness Analyzer inclui as seguintes categorias:
 
-* Funcionalidade do aplicativo que deve ser refatorizada
-* Itens do repositório que devem ser movidos para um local suportado
-* Diálogos e componentes herdados da interface do usuário que devem ser modernizados
+* Funcionalidade do aplicativo que deve ser refatorado
+* Itens do repositório que devem ser movidos para um local com suporte
+* Caixas de diálogos e componentes herdados da interface do usuário que devem ser modernizados
 * Problemas de implantação e configuração
-* Recursos do AEM 6.x que foram substituídos por novas funcionalidades ou que não são suportados no momento no AEM como Cloud Service
+* Recursos do AEM 6.x que foram substituídos por novas funcionalidades ou que atualmente não têm suporte no AEM as a Cloud Service
 
-Informações adicionais sobre as categorias e possíveis implicações e soluções associadas a essas categorias são fornecidas por meio de links no Relatório do Analisador de prontidão da nuvem.
+Informações adicionais sobre as categorias e possíveis implicações e soluções associadas a essas categorias são fornecidas por meio de links do Relatório do Cloud Readiness Analyzer.
 
 >[!NOTE]
->O Relatório do Analisador de disponibilidade da nuvem acelera o processo de estimativa do tempo e custo necessários para a transição do AEM como Cloud Service, fornecendo informações que, de outra forma, precisariam ser coletadas e avaliadas manualmente.
+>O Relatório do Cloud Readiness Analyzer acelera o processo de estimativa do tempo e o custo necessário para a transição para o AEM as a Cloud Service, fornecendo informações que de outra forma precisariam ser coletadas e avaliadas manualmente.
 
-Você também pode baixar o relatório do Analisador de prontidão da nuvem de sua instância do AEM. Consulte [Visualização do relatório](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) do Analisador de prontidão da nuvem para obter mais detalhes.
+Você também pode baixar o relatório do Cloud Readiness Analyzer na sua instância do AEM. Consulte [Visualização do relatório do Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) para obter mais detalhes.
