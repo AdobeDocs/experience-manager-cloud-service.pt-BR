@@ -1,26 +1,26 @@
 ---
-title: Notas de versão do Adobe Experience Manager as a Cloud Service para 2020.5.0
+title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.5.0
 description: Notas de versão do Experience Manager para 2020.5.0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06a56b0ca8000a41fe4e492206459b1525aae59d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
 ht-degree: 100%
 
 ---
 
 
-# Notas de versão para AEM as a Cloud Service 2020.5.0{#release-notes}
+# Notas de versão do AEM as a Cloud Service 2020.5.0{#release-notes}
 
-A seção a seguir descreve as Notas de versão gerais para Experience Manager as a Cloud Service 2020.5.0.
+A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.5.0.
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Experience Manager] as a Cloud Service 2020.5.0 é 07 de maio de 2020.
+A data de lançamento do [!DNL Experience Manager] as a Cloud Service 2020.5.0 é quinta-feira, 7 de maio de 2020.
 
 ## Novidades no AEM Sites {#aem-sites}
 
-Siga esta seção para saber mais sobre as novidades e atualizações do AEM Sites no AEM as a Cloud Service versão 2020.5.0.
+Consulte esta seção para saber mais sobre as novidades e atualizações do AEM Sites no AEM as a Cloud Service, versão 2020.5.0.
 
 * Informações detalhadas sobre trabalhos agora estão disponíveis após o processamento de movimentações e implantações de página em massa como trabalhos assíncronos.
 * Ao copiar/colar uma árvore de páginas, agora é possível optar entre colar somente a página raiz ou também as subpáginas da árvore.
@@ -31,7 +31,7 @@ Siga esta seção para saber mais sobre as novidades e atualizações do AEM Sit
 
 ## Novidades do Cloud Manager {#cloud-manager}
 
-Siga esta seção para saber mais sobre as novidades e atualizações do Cloud Manager no AEM as a Cloud Service versão 2020.5.0.
+Consulte esta seção para saber mais sobre as novidades e atualizações do Cloud Manager no AEM as a Cloud Service, versão 2020.5.0.
 
 ### Novidades {#what-is-new}
 
