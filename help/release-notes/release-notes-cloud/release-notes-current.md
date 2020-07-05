@@ -1,184 +1,184 @@
 ---
-title: Notas de versão do Adobe Experience Manager as a Cloud Service para 2020.6.0
+title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Notas de versão do Experience Manager para 2020.6.0
 translation-type: tm+mt
 source-git-commit: fcae90c8e24dbd2994e8700daf22f5dff039b299
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 7%
+ht-degree: 85%
 
 ---
 
 
-# Notas de versão para AEM as a Cloud Service 2020.6.0{#release-notes}
+# Notas de versão do AEM as a Cloud Service 2020.6.0{#release-notes}
 
-A seção a seguir descreve as Notas de versão gerais para Experience Manager as a Cloud Service 2020.6.0.
+A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.6.0.
 
 ## Data de lançamento {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is June 04, 2020.
+A data de lançamento do [!DNL Experience Manager] as a Cloud Service 2020.6.0 é 4 de junho de 2020.
 
 ## Novidades no AEM Sites {#aem-sites}
 
-Siga esta seção para saber mais sobre as novidades e atualizações do AEM Sites no AEM as a Cloud Service versão 2020.6.0.
+Consulte esta seção para saber mais sobre as novidades e atualizações do AEM Sites no AEM as a Cloud Service, versão 2020.6.0.
 
 ### Novidades {#whats-new-2020.6.0}
 
-A versão 2.9.0 dos Componentes [](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) principais agora está disponível como parte dos AEM Sites, incluindo:
+A versão 2.9.0 dos [Componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) agora está disponível como parte do AEM Sites, incluindo:
 
-* Integração entre a camada [de dados do cliente](https://github.com/adobe/adobe-client-data-layer) Adobe e os componentes principais
+* Integração entre a [Camada de dados do cliente Adobe](https://github.com/adobe/adobe-client-data-layer) e os Componentes principais
 * Atributos de ID HTML configuráveis para todos os componentes
-* Um novo componente de barra de progresso
+* Um novo componente da Barra de progresso
 * Muitas correções de erros
 
 ### Correções de erros {#sites-bug-fixes}
 
-* Os componentes dentro do container de layout não ficam visíveis quando o container Layout é copiado e colado novamente em uma página.
+* Os componentes dentro do container de layout não ficam visíveis quando o container de layout é copiado e colado novamente em uma página.
 
-* Corrigido o problema com o redimensionamento do componente de layout.
+* Corrigido um problema com o redimensionamento do componente de layout.
 
-* Foi adicionada a capacidade de gerenciar somente páginas Angular de roteamentos e páginas AEM/Angular.
+* Foi adicionada a capacidade de gerenciar o roteamento de páginas exclusivas do Angular e de páginas do AEM/Angular.
 
 ### Acessibilidade {#accessibility}
 
-* A função e o estado de narração agora são possíveis para os itens de alvenaria na caixa de diálogo **Criar página** ao navegar no modo de navegação usando a seta para baixo.
+* A narrativa de funções e estados agora são possíveis para os itens de Alvenaria na caixa de diálogo **Criar página** ao navegar no modo de navegação usando a seta para baixo.
 
 * Foi adicionado um link na navegação para permitir que os usuários pulem para o conteúdo principal.
 
-* Melhorias no leitor de tela.
+* Melhorias em leitores de tela.
 
-## Novidades do AEM como Cloud Service {#foundations}
+## Novidades nos componentes de base do AEM as a Cloud Service {#foundations}
 
-Os tempos de criação do projeto AEM melhorarão com a remoção de todas as referências no pom.xml do projeto AEM para o repositório remoto `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+Os tempos de compilação de um projeto do AEM melhorarão com a remoção de todas as referências ao repositório remoto no pom.xml do projeto AEM `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-O AEM como um Cloud Service SDK API Jar, que anteriormente estava hospedado nesse local, agora está localizado no Maven Central, que é o repositório de artefatos padrão do Maven.
+O JAR da API do SDK do AEM as a Cloud Service, que anteriormente estava hospedado nesse local, agora está localizado no Maven Central, que é o repositório de artefatos padrão do Maven.
 
 ## Novidades do Cloud Manager {#cloud-manager}
 
-Siga esta seção para saber mais sobre as novidades e atualizações do Cloud Manager no AEM as a Cloud Service versão 2020.6.0.
+Consulte esta seção para saber mais sobre as novidades e atualizações do Cloud Manager no AEM as a Cloud Service, versão 2020.6.0.
 
 ### Novidades {#what-is-new-cloud-manager}
 
-* Um usuário na função Proprietário *da* empresa no Cloud Manager agora pode excluir um Programa da caixa de proteção da landing page (por meio do botão de ação rápida no cartão de Programa) ou de dentro do programa.
+* Os usuários que estiverem exercendo a função de *Proprietário comercial* no Cloud Manager agora podem excluir um Programa de sandbox a partir da página de aterrissagem (com o botão de ação rápida no cartão Programa) ou dentro do programa.
 
-   Consulte [Excluindo um Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) Sandbox para obter mais detalhes.
+   Consulte [Exclusão de um programa de sandbox](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obter mais detalhes.
 
-* Um usuário do Programa Sandbox no Proprietário *do* Negócio ou na função *Gerenciador* de Implantação no Gerenciador de Nuvem agora pode excluir seu conjunto de ambientes de Produção e Estágio por meio da interface do usuário do Gerenciador de Nuvem. A opção de exclusão agora está disponível no cartão de Ambiente na página Visão geral **dos** Programas, bem como na página **Ambientes** . Selecionar a opção de exclusão em Produção ou Estágio também exclui a outra no conjunto.
+* Os usuários de programas de sandbox que estiverem exercendo a função de *Proprietário comercial* ou *Gerente de implantação* no Cloud Manager agora podem excluir seu conjunto de ambientes de produção e preparo na interface do Cloud Manager. A opção de exclusão agora está disponível no cartão Ambiente da página **Visão geral de programas**, bem como na página **Ambientes**. Selecionar a opção de exclusão no ambiente de produção também exclui o ambiente de preparo no mesmo conjunto, e vice-versa.
 
-   Consulte [Excluindo um Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) Sandbox para obter mais detalhes.
+   Consulte [Exclusão de um programa de sandbox](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obter mais detalhes.
 
-* O treinador marca na landing page para informar e instruir o usuário sobre a navegação básica.
+* Há notas explicativas na página de aterrissagem para informar e instruir o usuário sobre a navegação básica.
 
-* O treinador marca a página Visão geral **do** Programa para informar e instruir o usuário sobre a navegação básica dentro do Cloud Manager para que ele seja iniciado.
+* Há notas explicativas na página **Visão geral de programas** para informar e instruir o usuário sobre a navegação básica dentro do Cloud Manager.
 
-* Uma página **APRENDIZADO** está disponível no Cloud Manager, acessível por meio da navegação superior. Esta página inclui recursos para ajudar os usuários a saber mais sobre os fluxos de trabalho usados com mais frequência, conforme relevante para suas funções atribuídas no Cloud Manager.
+* Agora há uma página **Saiba mais** na área de navegação superior do Cloud Manager. Essa página inclui recursos para ajudar os usuários a saber mais sobre os fluxos de trabalho usados com mais frequência, conforme a relevância para as suas funções atribuídas no Cloud Manager.
 
-* Os Programas Sandbox agora são identificados por meio de um emblema **Sandbox** que será exibido no cartão do programa na landing page, bem como ao lado do nome do programa na página Visão geral **do** Programa.
+* Os Programas de sandbox agora são identificados por meio de um selo **Sandbox**, que será exibido no cartão do programa na página de aterrissagem e também ao lado do nome do programa na página **Visão geral de programas**.
 
-* Um usuário na função SysAdmin agora tem acesso de um clique ao local no Admin Console de onde as funções ou permissões do usuário para o Cloud Manager podem ser gerenciadas. Um botão **Gerenciar acesso** agora está disponível na landing page ao lado do botão **Adicionar Programa** .
+* Os usuários que estiverem exercendo a função SysAdmin agora têm acesso com um só clique ao local do Admin Console onde podem gerenciar funções ou permissões de usuários para o Cloud Manager. Agora há um botão **Gerenciar acesso** na página de aterrissagem, ao lado do botão **Adicionar programa**.
 
-   Consulte [SysAdmin Tarefa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) para obter mais detalhes.
+   Consulte [Tarefas de SysAdmin](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) para saber mais.
 
-* Um usuário na função SysAdmin agora tem acesso de um clique à instância do autor diretamente do Gerenciador de nuvem.
+* Agora os usuários que estiverem exercendo a função SysAdmin têm acesso à instância do autor diretamente do Cloud Manager, com um só clique.
 
-   Consulte [Gerenciamento de acesso à instância](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) do autor para obter mais detalhes.
+   Consulte [Gerenciar o acesso à instância do autor](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) para saber mais.
 
-* O log de compilação agora inclui a lista de artefatos descobertos, incluindo pacotes de conteúdo ignorados.
+* O log da etapa Criar agora inclui a lista de artefatos descobertos, incluindo pacotes de conteúdo ignorados.
 
-* A etapa Criar agora valida que todos os pacotes de conteúdo gerados incluem todas as propriedades obrigatórias - nome, grupo e versão.
+* A etapa Criar agora verifica a inclusão das propriedades obrigatórias — nome, grupo e versão — em todos os pacotes de conteúdo gerados.
 
-* A etapa de compilação agora valida que a compilação produziu pelo menos um pacote de conteúdo.
+* A etapa Criar agora verifica se a criação produziu pelo menos um pacote de conteúdo.
 
 ### Correções de erros {#bug-fixes-cm}
 
-* Em determinadas situações, os ícones na caixa de diálogo **Criar Programa** estavam desalinhados.
+* Em determinadas situações, os ícones na caixa de diálogo **Criar programa** estavam desalinhados.
 
-* O identificador de versão do AEM não era exibido consistentemente na página Visão geral **dos** Programas.
+* O identificador de versão do AEM não era exibido de maneira consistente na página **Visão geral de programas**.
 
-* Ao configurar o pipeline de produção, a opção Implantação **** agendada não estava visível para alguns clientes.
+* Ao configurar o pipeline de produção, a opção **Implantação agendada** não estava visível para alguns clientes.
 
 ### Problemas conhecidos {#known-issues-cm}
 
-* Ambientes em um programa Sandbox serão hibernados quando nenhuma atividade for detectada por um determinado período. Esse status não será observado no Cloud Manager. No entanto, o status pode ser observado pelo Console do desenvolvedor. Isso será abordado em uma versão futura.
+* Os ambientes do programa de sandbox hibernam quando não é detectada nenhuma atividade por um determinado período. Isso não ocorre no Cloud Manager, mas pode ocorrer por meio do Console do desenvolvedor. O problema será resolvido em uma versão futura.
 
-* O link para o Console do desenvolvedor diretamente do Gerenciador de nuvem não exibirá a opção de cancelar a hibernação/hibernar um ambiente do Programa do Sandbox. Para resolver isso, uma vez no Console do desenvolvedor, adicione o padrão `#release-cm-p1234-e5678` ao final do url, onde *1234* é a ID do Programa e *5678* é a ID do Ambiente. Isso será abordado em uma versão futura.
+* O link direto do Cloud Manager para o Console do desenvolvedor não exibe a opção de desibernar/hibernar o ambiente de um Programa de sandbox. Para resolver isso, uma vez no Console do desenvolvedor, adicione o padrão `#release-cm-p1234-e5678` ao final do URL, em que *1234* é a ID do programa e *5678* é a ID do ambiente. O problema será resolvido em uma versão futura.
 
 ## Novidades da versão [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-**Experiência do usuário guiada para Tags inteligentes aprimoradas, capacitada pelo Adobe Sensei**
+**Experiência do usuário guiada para tags inteligentes aprimoradas, viabilizada pelo Adobe Sensei**
 
-As Tags inteligentes aprimoradas permitem que as organizações treinem modelos de marcação inteligentes para reconhecer imagens com base em tags comerciais específicas do cliente, além de tags inteligentes genéricas.
+As tags inteligentes aprimoradas permitem que as organizações treinem modelos de marcação inteligente para reconhecer imagens com base em tags comerciais específicas de clientes, além de tags inteligentes genéricas.
 
-Com esta versão, há uma nova experiência guiada do usuário que ajuda a configurar o treinamento de tags inteligentes para conjuntos de tags específicas do cliente e treiná-las com ativos, que devem ser reconhecidos e marcados com eles no futuro. A experiência é mais intuitiva agora.
-Treinar Tags inteligentes aprimoradas para obter mais um treinamento intuitivo para Tags inteligentes. Consulte [como adicionar tags inteligentes a ativos](/help/assets/smart-tags.md) e [configurar tags](/help/assets/smart-tags-configuration.md)inteligentes.
+Esta versão oferece uma experiência do usuário nova e guiada que ajuda a configurar o treinamento de tags inteligentes para conjuntos de tags específicos do cliente e treiná-las com ativos que devem ser reconhecidos e marcados no futuro. A experiência é mais intuitiva agora.
+Treinar Tags inteligentes aprimoradas para obter mais um treinamento intuitivo para Tags inteligentes. Consulte [Como adicionar tags inteligentes a ativos](/help/assets/smart-tags.md) e [Configurar a marcação inteligente](/help/assets/smart-tags-configuration.md).
 
 **Suporte para ingestão, pré-visualização e delivery de conteúdo 3D**
 
-As organizações agora podem armazenar e usar arquivos 3D em AEM Assets. O usuário pode carregar, pré-visualização e usar vários arquivos 3D principais, incluindo arquivos OBJ, STL, GLTF e GLB. Com a adição de [!DNL Dynamic Media], você pode configurar e fornecer experiências 3D usando URLs agnósticos ou visualizadores. Isso inclui um Visualizador de experiência [!DNL Dynamic Media] 3D, o componente Visualizador 3D do Sites e a capacidade de fornecer arquivos 3D via [!DNL Dynamic Media] (AR/VR). Consulte [Trabalhar com ativos 3D no Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Agora, as organizações podem armazenar e usar arquivos 3D no AEM Assets. O usuário pode carregar, pré-visualização e usar vários arquivos 3D principais, incluindo arquivos OBJ, STL, GLTF e GLB. Com a adição de [!DNL Dynamic Media], você pode configurar e fornecer experiências 3D usando URLs agnósticos ou visualizadores. Isso inclui um visualizador 3D do [!DNL Dynamic Media], um componente de visualizador 3D do Sites e a capacidade de fornecer arquivos 3D pelo [!DNL Dynamic Media] (RA/RV). Consulte [Trabalho com ativos 3D no Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
-**Suporte do Adobe Asset Link para Adobe XD**
+**Suporte do Adobe Asset Link para o Adobe XD**
 
-Com a versão mais recente, [!DNL Experience Manager Assets] é compatível com um novo [!DNL Adobe Asset Link] plug-in lançado com a [!DNL Adobe XD] v29.3. A integração permite que os designers acessem e usem ativos de [!DNL Experience Manager] seus projetos, sem a necessidade de deixar o [!DNL Adobe XD] aplicativo. Consulte [Adobe Asset Link para a documentação](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)do Adobe XD.
+With the latest release, [!DNL Experience Manager Assets] supports a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29.3. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. Consulte a [documentação do Adobe Asset Link para o Adobe XD](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
 
-Com esta versão, os usuários e designers criativos agora podem trabalhar com ativos gerenciados no [!DNL AEM Assets] uso [!DNL Adobe Asset Link] em diversos aplicativos de desktop da Creative Cloud, incluindo [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator]e [!DNL InDesign].
+Com esse lançamento, usuários criativos e designers agora podem trabalhar com ativos gerenciados no [!DNL AEM Assets], usando o [!DNL Adobe Asset Link] em diversos aplicativos para desktop da Creative Cloud, incluindo [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator] e [!DNL InDesign].
 
 **Aprimoramentos de acessibilidade**
 
-[!DNL Adobe Experience Manager Assets] agora está mais acessível em conformidade com as diretrizes de acessibilidade de conteúdo da Web (WCAG) v2.1. A acessibilidade melhorou nos seguintes casos de uso ou interfaces:
+Agora, o [!DNL Adobe Experience Manager Assets] está mais acessível, em conformidade com as diretrizes da Web Content Accessibility Guidelines (WCAG) v2.1. A acessibilidade melhorou nos seguintes casos de uso ou interfaces:
 
-Os elementos da interface do usuário são amigáveis ao leitor de tela, são acessíveis usando um teclado e têm melhor contraste. Veja a seguir uma lista detalhada de melhorias:
+Os elementos da interface do usuário são amigáveis para leitores de tela, são acessíveis por teclado e têm melhor contraste. Veja a seguir uma lista detalhada das melhorias:
 
-* As barras de progresso [!UICONTROL Opções], [!UICONTROL Escopo]e [!UICONTROL Workflows] na página [!UICONTROL Gerenciar publicação] não são lidas pelo leitor de tela como barra de progresso. Em vez disso, os usuários de leitores de tela percebem esses indicadores de status como uma lista de guia. (CQ-4273015)
+* The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress bars on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress bar. Em vez disso, os usuários de leitores de tela percebem esses indicadores de status como uma lista de guias. (CQ-4273015)
 
-* Ao adicionar tags na página [!UICONTROL Propriedades] de um ativo, os usuários navegam por uma estrutura em árvore de tags. A estrutura em árvore não é acessível, pois os usuários do leitor de tela não ouvem nada ao navegarem por ela. (CQ-4272964)
+* Ao adicionar tags na página [!UICONTROL Propriedades] de um ativo, os usuários navegam por uma estrutura em árvore de tags. A estrutura em árvore não é acessível, pois os usuários de leitores de tela não ouvem nada ao navegarem por ela. (CQ-4272964)
 
-* Na caixa de diálogo de compartilhamento de links, ao navegar no modo de navegação, o leitor de tela,
+* Na caixa de diálogo de compartilhamento de links, no modo de navegação, o leitor de tela
 
    * Narrará as informações da tabela imediatamente quando a caixa de diálogo for carregada.
    * Não é possível navegar até todas as sugestões automáticas listadas.
-   * Não narra as sugestões automáticas exibidas para a caixa de combinação [!UICONTROL Adicionar endereço de email/Pesquisar] . (CQ-4294232)
+   * Does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. (CQ-4294232)
 
-* A página Editor [!UICONTROL de Schemas de] Metadados e seus elementos agora estão acessíveis usando um teclado e são compatíveis com o leitor de tela. (CQ-4272953) Os usuários podem arrastar os componentes usando o teclado no modo de navegação NVDA. (CQ-4296326)
+* The [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using a keyboard and are screen reader friendly. (CQ-4272953) Os usuários podem arrastar os componentes usando o teclado no modo de navegação NVDA. (CQ-4296326)
 
-* Na interface do usuário do Assets, as configurações de visualização não podem ser acessadas pelo teclado. (CQ-4289038)
+* Na interface do Assets, as configurações de visualização não podem ser acessadas pelo teclado. (CQ-4289038)
 
-* A relação de luminosidade é inferior a 3:1 para os ícones de notação de cor amarela. Não é útil para usuários com visão limitada e sem percepção de cor. As estrelas de avaliação são exibidas na guia no ativo ou na visualização do cartão
+* A relação de luminosidade é inferior a 3:1 para os ícones de classificação de cor amarela. Isso não é útil para usuários com visão limitada e sem percepção de cor. As estrelas de classificação são exibidas na guia no modo de visualização de ativos ou cartões
 
-* A cor e o contraste de alguns elementos da interface do usuário são atualizados para que os usuários com visão limitada ou usuários sem percepção de cor possam distinguir esses elementos da interface do usuário. Por exemplo, a cor dos ícones de classificação de estrelas na seção [!UICONTROL Classificação] da guia [!UICONTROL Avançado] em [!UICONTROL Propriedades] de um ativo e em visualização de cartão é alterada para contraste apropriado. (CQ-4295106)
+* A cor e o contraste de alguns elementos da interface do usuário são atualizados para que os usuários com visão limitada ou usuários sem percepção de cor possam distinguir esses elementos da interface do usuário. Por exemplo, a cor dos ícones de classificação de estrelas na seção [!UICONTROL Classificação] da guia [!UICONTROL Avançado], em [!UICONTROL Propriedades] de um ativo e em uma visualização de cartão é alterada para obter o contraste apropriado. (CQ-4295106)
 
 * Os leitores de tela agora podem ler as entradas do menu pop-up da caixa de lista da caixa de combinação (em vários campos em páginas diferentes) como uma lista de opções. (CQ-4294017)
 
-* Para aplicar um fluxo de trabalho a um ativo, a seta de divisas na [!UICONTROL Linha do tempo] pode ser acessada usando um teclado. (CQ-4289268)
+* Para aplicar um fluxo de trabalho a um ativo, a seta de divisa na [!UICONTROL Linha do tempo] pode ser acessada pelo teclado. (CQ-4289268)
 
-* Os usuários podem remover tags selecionadas no campo [!UICONTROL Tags] na guia [!UICONTROL Básico] da página [!UICONTROL Propriedades] de um ativo usando `x` símbolo. Os leitores de tela agora anunciam a finalidade e o número de tags selecionadas (CQ-4273033).
+* Os usuários podem remover tags selecionadas no campo [!UICONTROL Tags] da guia [!UICONTROL Básico] da página [!UICONTROL Propriedades] de um ativo usando o símbolo `x`. Os leitores de tela agora anunciam a finalidade e o número de tags selecionadas (CQ-4273033).
 
-* Os campos de formulário somente leitura podem ser focalizados no uso de um teclado. Por exemplo, os campos desativados na guia [!UICONTROL Básico] na página [!UICONTROL Propriedades] de um ativo. (CQ-4273031)
+* Os campos de formulário somente leitura podem ser focalizados com teclado. Um exemplo são os campos desativados na guia [!UICONTROL Básico] da página [!UICONTROL Propriedades] de um ativo. (CQ-4273031)
 
-* Acesse as opções para filtrar ativos na barra lateral esquerda usando um teclado agora. (CQ-4273018)
+* Agora é possível acessar as opções para filtrar ativos na barra lateral esquerda usando um teclado. (CQ-4273018)
 
 * O leitor de tela anuncia a finalidade de vários elementos da caixa de combinação, como o campo Caminho e a opção de abrir a caixa de diálogo Seleção na guia [!UICONTROL Básica] da página [!UICONTROL Propriedades] de um ativo. (CQ-4273016)
 
-* Os controles de volume para vídeos são acessíveis usando um teclado. (CQ-4272696)
+* Os controles de volume para vídeos são acessíveis através do teclado. (CQ-4272696)
 
-* Muitas opções acionáveis na interface do usuário do Assets não indicam foco ao usar o teclado. (CQ-4272694)
+* Muitas opções acionáveis na interface do Assets não indicam o foco quando se usa o teclado. (CQ-4272694)
 
-* Os usuários do leitor de tela agora sabem quando as linhas na visualização da lista são selecionáveis usando um teclado. As informações são anunciadas quando o ponteiro é posicionado sobre as linhas. (CQ-4271824)
+* Agora, os usuários de leitores de tela sabem quando as linhas em uma exibição em lista são selecionáveis através de um teclado. As informações são anunciadas quando o ponteiro é posicionado sobre as linhas. (CQ-4271824)
 
 * Alguns campos de formulário, como o nome de usuário e os campos de senha na página de logon, dependem dos valores de espaço reservado para fornecer um rótulo acessível. (CQ-4271716)
 
-* Elementos interativos da interface do usuário, como links e opções, como opções de cabeçalho e zoom de página de ativos ou navegação de pastas, agora podem ser acessados usando um teclado. (CQ-4271412)
+* Alguns elementos interativos da interface do usuário, como links, e algumas opções, como opções de cabeçalho e zoom de página de ativos ou navegação de pastas, agora podem ser acessados com teclado. (CQ-4271412)
 
-* Os títulos de todas as páginas navegadas em [!DNL Adobe Experience Manager] Ativos agora são exclusivos. (CQ-4271409)
+* Os títulos de todas as páginas do [!DNL Adobe Experience Manager] Assets agora são exclusivos. (CQ-4271409)
 
 **Outras melhorias**
 
 A versão oferece os seguintes outros aprimoramentos:
 
-* Capacidade de reprocessar ativos com perfis de processamento de ativos, dando aos usuários controle total do processo (executar processamento completo de ativos, apenas aplicar perfis de processamento específicos e decidir se o fluxo de trabalho de pós-processamento deve ser executado).
-* Os query de pesquisa retornam os resultados mais rapidamente agora quando a instância de cluster subjacente é reiniciada nos bastidores (a execução de pesquisa inicial pode durar mais tempo nesse caso antes).
-* Classifique por &quot;Nome&quot; ao exibir ativos na visualização de lista na interface Ativos e nos resultados da pesquisa. Consulte ativos [de](/help/assets/search-assets.md#sort)pesquisa.
-* Classificar em &quot;Criado&quot; (Data) ao exibir ativos na visualização de lista na interface do Assets e nos resultados da pesquisa. Consulte ativos [de](/help/assets/search-assets.md#sort)pesquisa.
-* Suporte para converter arquivos EPS em imagens usando microserviços de ativos.
+* Capacidade de reprocessar ativos com perfis de processamento de ativos, dando aos usuários controle total sobre o processo (basta executar o processamento completo de ativos, aplicar perfis de processamento específicos e decidir se o fluxo de trabalho de pós-processamento deve ser executado).
+* Agora, as consultas de pesquisa dão resultados com mais rapidez quando a instância de cluster subjacente é reiniciada nos bastidores (antes, a execução de pesquisa inicial podia durar mais tempo nesse caso).
+* Classifique por &quot;Nome&quot; ao visualizar ativos na exibição em lista da interface do Assets e em resultados de pesquisa. Consulte [pesquisar ativos](/help/assets/search-assets.md#sort).
+* Classifique por &quot;Criação&quot; (Data) ao visualizar ativos na exibição em lista da interface do Assets e em resultados de pesquisa. Consulte [pesquisar ativos](/help/assets/search-assets.md#sort).
+* Suporte para converter arquivos EPS em imagens usando microsserviços de ativos.
 
 ### Correções de erros {#assets-bug-fixes}
 
@@ -187,11 +187,11 @@ Seek DM bug fixes if any.
 Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
 -->
 
-Além dos novos recursos acima, a versão atual fornece as seguintes correções de erros com base no feedback do cliente para [!DNL Assets].
+Além dos novos recursos acima, a versão atual fornece as seguintes correções de erros com base no feedback de clientes para o [!DNL Assets].
 
-* Para arquivos de música MP3, o botão reproduzir exibido na miniatura na pré-visualização DAM não funciona. (CQ-4294731)
-* Passar o ponteiro sobre a visualização do cartão faz com que a tela role como resultado do foco (automático) nas ações rápidas disponíveis no cartão. (GRANITE-26895)
+* Para arquivos de música MP3, o botão Reproduzir exibido na miniatura na pré-visualização do DAM não funciona. (CQ-4294731)
+* Passar o ponteiro sobre a exibição de cartão faz com que a tela role como resultado do foco (automático) nas ações rápidas disponíveis no cartão. (GRANITE-26895)
 * A exibição de muitas imagens após a rolagem de muitos resultados de pesquisa leva a uma falha no navegador. (GRANITE-26432)
-* Ao baixar um ativo, se a opção de email estiver selecionada e mesmo se uma ID de email válida for fornecida, a opção de download não estará disponível. (CQ-4296535)
-* filtros personalizados salvos como coleções inteligentes não são aplicados corretamente a ativos. (CQ-4294942)
-* Vários aprimoramentos de pesquisa e indexação e correções de erros para melhorar o desempenho. (CQ-4286373)
+* Ao baixar um ativo, se a opção de email estiver selecionada e mesmo se uma ID de email válida for fornecida, a opção de download não fica disponível. (CQ-4296535)
+* Filtros personalizados salvos como coleções inteligentes não são aplicados corretamente a ativos. (CQ-4294942)
+* Várias melhorias de pesquisa e indexação e correções de erros para melhorar o desempenho. (CQ-4286373)
