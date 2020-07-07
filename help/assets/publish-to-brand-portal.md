@@ -3,7 +3,7 @@ title: Publicar ativos, pastas e coleções no Brand Portal
 description: Publicar ativos, pastas e coleções no Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
@@ -26,7 +26,6 @@ Se fizer modificações subsequentes no ativo, pasta ou coleção original no AE
 >[!NOTE]
 >
 >A Adobe recomenda uma publicação escalonada, de preferência durante horários que não sejam de pico, para que o autor do AEM não ocupe recursos excessivos.
-
 
 ## Publicar ativos no Brand Portal{#publish-assets-to-bp}
 
@@ -187,7 +186,6 @@ Você pode publicar ou cancelar a publicação de coleções da instância da nu
 >Os fragmentos de conteúdo não podem ser publicados no Brand Portal. Portanto, se selecionar fragmentos de conteúdo no AEM Assets, a ação **[!UICONTROL Publicar no Brand Portal]** não estará disponível.
 >
 >Se as coleções que contêm fragmentos de conteúdo forem publicadas do AEM Assets no Brand Portal, todo o conteúdo da pasta, exceto fragmentos de conteúdo, será replicado para a interface do Brand Portal.
-
 
 ### Publicar coleções {#publish-collections}
 
