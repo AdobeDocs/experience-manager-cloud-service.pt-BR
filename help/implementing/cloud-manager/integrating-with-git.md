@@ -1,8 +1,8 @@
 ---
 title: Integração com o Git
-description: Integração com o Git - Serviços em nuvem
+description: Integração com Git - Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 2%
@@ -30,7 +30,7 @@ A série de vídeos assume um conhecimento básico sobre gerenciamento de git e 
 
 >[!NOTE]
 >
-> As etapas e convenções de nomenclatura descritas nesta série de vídeo representam algumas práticas recomendadas para trabalhar com um repositório git gerenciado pelo cliente e o Cloud Manager. Espera-se que as convenções e os workflows representados sejam adaptados às equipes de desenvolvimento individuais.
+>As etapas e convenções de nomenclatura descritas nesta série de vídeo representam algumas práticas recomendadas para trabalhar com um repositório git gerenciado pelo cliente e o Cloud Manager. Espera-se que as convenções e os workflows representados sejam adaptados às equipes de desenvolvimento individuais.
 
 ## Sincronização inicial {#initial-sync}
 
