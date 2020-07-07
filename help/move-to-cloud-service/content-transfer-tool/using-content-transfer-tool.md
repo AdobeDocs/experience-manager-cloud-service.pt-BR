@@ -1,9 +1,9 @@
 ---
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
-translation-type: ht
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ A ferramenta Transferência de conteúdo pode ser baixada como um arquivo zip (C
 
 ## Execução da ferramenta Transferência de conteúdo {#running-tool}
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 Siga esta seção para saber como usar a ferramenta Transferência de conteúdo para migrar o conteúdo para o AEM as a Cloud Service (Autor/Publicação):
 
@@ -238,7 +238,8 @@ Se houver IDs de blob ausentes reportados, como mencionado abaixo, será necess�
 O seguinte comando é executado
 
 >[!NOTE]
-> `--verbose` o sinalizador é necessário para relatar os caminhos de nó de onde os blobs são referenciados.
+>
+>`--verbose` o sinalizador é necessário para relatar os caminhos de nó de onde os blobs são referenciados.
 
 **Para repositórios AEM 6.5 (Oak 1.8 e inferior)**
 
