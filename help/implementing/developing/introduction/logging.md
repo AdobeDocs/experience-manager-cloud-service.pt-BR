@@ -2,17 +2,17 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1097'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 
 # Registro{#logging}
 
-O AEM como serviço em nuvem é uma plataforma para os clientes incluírem código personalizado para criar experiências exclusivas para a base de clientes. Com isso em mente, o registro em log é uma função essencial para depurar o código personalizado em ambientes na nuvem e, mais especificamente, para ambientes de desenvolvimento locais.
+O AEM como Cloud Service é uma plataforma para os clientes incluírem código personalizado para criar experiências exclusivas para sua base de clientes. Com isso em mente, o registro em log é uma função essencial para depurar o código personalizado em ambientes na nuvem e, mais especificamente, para ambientes de desenvolvimento locais.
 
 
 <!-- ## Global Logging {#global-logging}
@@ -26,9 +26,9 @@ O AEM como serviço em nuvem é uma plataforma para os clientes incluírem códi
 * the format to be used when writing the log messages
 -->
 
-## AEM as a Cloud Service Logging {#aem-as-a-cloud-service-logging}
+## AEM como registro de Cloud Service {#aem-as-a-cloud-service-logging}
 
-AEM como um serviço em nuvem oferta a possibilidade de configurar:
+O AEM como Cloud Service oferta permite configurar:
 
 * parâmetros globais para o serviço central de registro
 * solicitar o registro de dados; uma configuração de registro especializada para informações de solicitação
@@ -40,16 +40,17 @@ Nos ambientes da Cloud, os desenvolvedores podem baixar os logs por meio do Clou
 
 >[!NOTE]
 >
->Fazer logon no AEM como um serviço em nuvem é baseado nos princípios do Sling. Consulte [Sling Logging](https://sling.apache.org/site/logging.html) para obter mais informações.
+>Fazer logon no AEM como um Cloud Service é baseado nos princípios Sling. Consulte [Sling Logging](https://sling.apache.org/site/logging.html) para obter mais informações.
 
-## AEM como registro Java do serviço em nuvem {#aem-as-a-cloud-service-java-logging}
+## AEM como registro em Java de Cloud Service {#aem-as-a-cloud-service-java-logging}
 
 ### Registradores e escritores padrão {#standard-loggers-and-writers}
 
-> [!IMPORTANT]
-> Eles podem ser personalizados se necessário, embora a configuração padrão seja adequada para a maioria das instalações. No entanto, se você precisar personalizar as configurações de registro padrão, certifique-se de fazer isso somente em `dev` ambientes.
+>[!IMPORTANT]
+>
+>Eles podem ser personalizados se necessário, embora a configuração padrão seja adequada para a maioria das instalações. No entanto, se você precisar personalizar as configurações de registro padrão, certifique-se de fazer isso somente em `dev` ambientes.
 
-Determinados registradores e gravadores estão incluídos em um AEM padrão como uma instalação do serviço em nuvem.
+Alguns registradores e gravadores estão incluídos em um AEM padrão como uma instalação de Cloud Service.
 
 O primeiro é um caso especial, pois controla tanto os registros `request` quanto os `access` logs:
 
@@ -93,19 +94,19 @@ Os outros pares seguem a configuração padrão:
 
 * Não vincula a um Escritor específico, portanto, criará e usará um Escritor implícito com a configuração padrão.
 
-**AEM como um registro de solicitação HTTP de serviço em nuvem**
+**AEM como um registro de solicitação Cloud Service HTTP**
 
 Todas as solicitações de acesso ao AEM WCM e ao repositório são registradas aqui.
 
 Exemplo de saída:
 
-**AEM como um serviço em nuvem Solicitação HTTP / Registro de acesso de resposta**
+**AEM como um registro de solicitação HTTP Cloud Service / acesso de resposta**
 
 Cada solicitação de acesso é registrada aqui junto com a resposta.
 
 Exemplo de saída:
 
-**Apache Web Server / Dispatcher Logging**
+**Apache Web Server / Registro no Dispatcher**
 
 Este é um log para uso na depuração de problemas do Dispatcher. Para obter mais informações, consulte [Depuração da configuração](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)do Apache e do Dispatcher.
 
@@ -113,7 +114,7 @@ Este é um log para uso na depuração de problemas do Dispatcher. Para obter ma
 
 leftover text from the last breakaway chunk (re dispatcher) -->
 
-No que diz respeito às práticas bast, é recomendável que você se alinhe com as configurações que existem atualmente no AEM como um arquétipo do Cloud Service Maven. Estes definem diferentes configurações e níveis de log para tipos de ambientes específicos:
+No que diz respeito às práticas bast, é recomendável alinhar com as configurações que existem atualmente no AEM como um arquétipo Cloud Service Maven. Estes definem diferentes configurações e níveis de log para tipos de ambientes específicos:
 
 * para `local dev` e `dev` ambientes, defina o logger como **DEBUG** para `error.log`
 * para `stage`, defina o registrador como nível **WARN** para `error.log`
@@ -154,14 +155,14 @@ Encontre exemplos abaixo para cada configuração:
 
 ### Registradores e Escritores para Serviços Individuais {#loggers-and-writers-for-individual-services}
 
-Além das configurações globais de registro, o AEM como um serviço em nuvem permite que você defina configurações específicas para um serviço individual:
+Além das configurações globais de registro, o AEM como Cloud Service permite que você defina configurações específicas para um serviço individual:
 
 * o nível de registro específico
 * o agente de log (o serviço OSGi que fornece as mensagens de log)
 
 Isso permite que você canal mensagens de log de um único serviço em um arquivo separado. Isto pode ser particularmente útil durante o desenvolvimento ou testes; por exemplo, quando você precisa de um nível de log aumentado para um serviço específico.
 
-O AEM como um serviço em nuvem usa o seguinte para gravar mensagens de registro no arquivo:
+O AEM como Cloud Service usa o seguinte para gravar mensagens de registro no arquivo:
 
 1. Um serviço **** OSGi (logger) grava uma mensagem de registro.
 1. Um **Logging Logger** pega essa mensagem e a formata de acordo com sua especificação.
@@ -192,13 +193,13 @@ Para alterar os níveis de log dos ambientes do Cloud, a configuração de Sling
 
 >[!NOTE]
 >
-> Para executar as alterações de configuração listadas abaixo, é necessário criá-las em um ambiente de desenvolvimento local e, em seguida, enviá-las para um AEM como uma instância do Serviço de nuvem. Para obter mais informações sobre como fazer isso, consulte [Implantação no AEM como um serviço](/help/implementing/deploying/overview.md)em nuvem.
+>Para executar as alterações de configuração listadas abaixo, é necessário criá-las em um ambiente de desenvolvimento local e depois enviá-las para um AEM como uma instância Cloud Service. Para obter mais informações sobre como fazer isso, consulte [Implantação no AEM como Cloud Service](/help/implementing/deploying/overview.md).
 
 **Ativando o nível de log DEBUG**
 
 >[!WARNING]
 >
-> A ativação global do nível de log DEBUG gerará uma grande quantidade de informações que será difícil de filtrar. É recomendável ativá-la somente para os serviços que exigem depuração. Para obter mais informações, consulte [Loggers e Writers for Individual Services](logging.md#loggers-and-writers-for-individual-services).
+>A ativação global do nível de log DEBUG gerará uma grande quantidade de informações que será difícil de filtrar. É recomendável ativá-la somente para os serviços que exigem depuração. Para obter mais informações, consulte [Loggers e Writers for Individual Services](logging.md#loggers-and-writers-for-individual-services).
 
 O nível de log padrão é INFO, ou seja, as mensagens DEBUG não são registradas.
 Para ativar o nível de log DEBUG, defina a variável
@@ -235,7 +236,7 @@ Você pode definir seu próprio par de Registrador/Escritor:
 
 >[!NOTE]
 >
->Ao trabalhar com o Adobe Experience Manager, há vários métodos de gerenciar as configurações desses serviços.
+>Ao trabalhar com o Adobe Experience Manager, existem vários métodos de gerenciamento das configurações desses serviços.
 
 Em determinadas circunstâncias, você pode querer criar um log personalizado com um nível de log diferente. Você pode fazer isso no repositório:
 
