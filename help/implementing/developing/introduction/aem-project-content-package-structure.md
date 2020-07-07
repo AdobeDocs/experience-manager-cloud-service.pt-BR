@@ -2,7 +2,7 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2530'
 ht-degree: 17%
@@ -36,7 +36,7 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 >[!WARNING]
 >
-> Como nas versões anteriores do AEM, não `/libs` deve ser modificado. Somente o código de produto AEM pode ser implantado em `/libs`.
+>Como nas versões anteriores do AEM, não `/libs` deve ser modificado. Somente o código de produto AEM pode ser implantado em `/libs`.
 
 ### Índices de Oak {#oak-indexes}
 
@@ -194,7 +194,6 @@ Detalhando a estrutura desta pasta:
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
-
    >[!WARNING]
    >
    >Por convenção, as pastas incorporadas do pacote secundário são nomeadas com o sufixo `-packages`. Isso garante que o código de implantação e os pacotes de conteúdo **não** sejam implantados nas pastas de destino de qualquer pacote secundário `/apps/<app-name>/...` que resulte em comportamento de instalação destrutivo e cíclico.
@@ -501,7 +500,8 @@ Se vários `/apps/*-packages` forem usados nos públicos alvos incorporados, tod
 ### Repositórios Maven de terceiros {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> A adição de mais repositórios Maven pode estender os tempos de criação de maven, já que repositórios Maven adicionais serão verificados quanto às dependências.
+>
+>A adição de mais repositórios Maven pode estender os tempos de criação de maven, já que repositórios Maven adicionais serão verificados quanto às dependências.
 
 No projeto do reator `pom.xml`, adicione quaisquer diretivas de repositório Maven público de terceiros. A `<repository>` configuração completa deve estar disponível no provedor de repositório de terceiros.
 
