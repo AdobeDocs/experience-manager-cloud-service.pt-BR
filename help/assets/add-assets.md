@@ -2,7 +2,7 @@
 title: Adicione seus ativos digitais ao Adobe Experience Manager
 description: Adicione seus ativos digitais ao Adobe Experience Manager como Cloud Service
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 2%
@@ -24,9 +24,9 @@ Você também pode optar por fazer um processamento adicional nos ativos carrega
 
 >[!NOTE]
 >
-> O Experience Manager como um Cloud Service utiliza uma nova maneira de fazer upload de ativos - fazer upload binário direto. Por padrão, ele é suportado pelos recursos e clientes prontos para uso do produto, como a interface do usuário do AEM, o Adobe Asset Link, o aplicativo de desktop do AEM e, portanto, transparente para os usuários finais.
+>O Experience Manager como um Cloud Service utiliza uma nova maneira de fazer upload de ativos - fazer upload binário direto. Por padrão, ele é suportado pelos recursos e clientes prontos para uso do produto, como a interface do usuário do AEM, o Adobe Asset Link, o aplicativo de desktop do AEM e, portanto, transparente para os usuários finais.
 >
-> O código de upload personalizado ou estendido pelas equipes técnicas dos clientes precisa usar as novas APIs e protocolos de upload.
+>O código de upload personalizado ou estendido pelas equipes técnicas dos clientes precisa usar as novas APIs e protocolos de upload.
 
 ## Upload assets {#upload-assets}
 
@@ -81,7 +81,7 @@ Além disso, a interface do usuário Ativos exibe o ativo mais recente que você
 
 >[!NOTE]
 >
-> Para fazer upload de hierarquias de pastas aninhadas para o AEM, consulte o upload [em massa de ativos](#bulk-upload).
+>Para fazer upload de hierarquias de pastas aninhadas para o AEM, consulte o upload [em massa de ativos](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -136,7 +136,7 @@ Para carregar um número maior de arquivos, especialmente se eles existirem em u
 
 >[!NOTE]
 >
-> O upload em massa como parte da migração de conteúdo de outros sistemas durante a configuração e implantação para o Experience Manager requer planejamento cuidadoso, consideração e escolha de ferramentas. Consulte o guia [de](/help/implementing/deploying/overview.md) implantação para obter orientação sobre as abordagens de migração de conteúdo.
+>O upload em massa como parte da migração de conteúdo de outros sistemas durante a configuração e implantação para o Experience Manager requer planejamento cuidadoso, consideração e escolha de ferramentas. Consulte o guia [de](/help/implementing/deploying/overview.md) implantação para obter orientação sobre as abordagens de migração de conteúdo.
 
 ## Fazer upload de ativos usando clientes desktop {#upload-assets-desktop-clients}
 
@@ -163,7 +163,7 @@ Além disso, se o Dynamic Media estiver habilitado no seu ambiente:
 
 >[!NOTE]
 >
-> As operações de recorte da Dynamic Media e outras operações em ativos não são destrutivas, ou seja, elas não alteram o original carregado, mas fornecem parâmetros para o recorte ou a transformação de mídia a ser feita ao entregar os ativos
+>As operações de recorte da Dynamic Media e outras operações em ativos não são destrutivas, ou seja, elas não alteram o original carregado, mas fornecem parâmetros para o recorte ou a transformação de mídia a ser feita ao entregar os ativos
 
 Para pastas com um perfil de processamento atribuído, o nome do perfil aparece na miniatura na visualização do cartão. Na visualização da lista, o nome do perfil é exibido na coluna Perfil **[!UICONTROL de]** processamento.
 
