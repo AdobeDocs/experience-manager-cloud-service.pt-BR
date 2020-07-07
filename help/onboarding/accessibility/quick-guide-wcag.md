@@ -2,7 +2,7 @@
 title: Um guia rápido para a WCAG 2.1
 description: Um guia rápido para a WCAG 2.1
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 100%
@@ -17,11 +17,11 @@ O Adobe Experience Manager (AEM) as a Cloud Service foi desenvolvido para maximi
 As [Web Content Accessibility Guidelines (WCAG) versão 2.1](https://www.w3.org/TR/WCAG/) são um conjunto de diretrizes reconhecidas internacionalmente, desenvolvidas pelo [World Wide Web Consortium (W3C)](https://www.w3.org/) de acordo com a [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
 >[!NOTE]
-> 
-> A WCAG 2.1 atualiza a versão anterior, WCAG 2.0, de 2008. Consulte [WCAG 2.1 - Comparação com a WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+>
+>A WCAG 2.1 atualiza a versão anterior, WCAG 2.0, de 2008. Consulte [WCAG 2.1 - Comparação com a WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
 
 >[!NOTE]
-> 
+>
 >Uma [versão atualizada das diretrizes, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) está sendo desenvolvida no momento, mas não será considerada a essa altura.
 
 A WCAG 2.1 consiste em um conjunto de diretrizes de tecnologia independentes e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável para pessoas com necessidades especiais. Essas diretrizes fazem aconselhamento aos criadores de conteúdo, designers e desenvolvedores da Web, a fim de garantir que os recursos que produzem sejam o mais acessíveis possível ao maior número de pessoas possível, independentemente de qualquer deficiência que tenham. Por exemplo, deficiência visual, perda auditiva, dificuldades de aprendizado, limitações relacionadas à idade, entre outras.
