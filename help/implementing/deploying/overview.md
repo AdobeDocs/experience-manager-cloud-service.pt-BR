@@ -2,7 +2,7 @@
 title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3523'
 ht-degree: 1%
@@ -34,7 +34,7 @@ O restante desse documento descreverá como os desenvolvedores devem adaptar sua
 
 >[!NOTE]
 >
-> Se o código personalizado foi enviado para o armazenamento temporário e depois rejeitado por você, a próxima atualização do AEM removerá essas alterações para refletir a tag git da última versão do cliente bem-sucedida para a produção.
+>Se o código personalizado foi enviado para o armazenamento temporário e depois rejeitado por você, a próxima atualização do AEM removerá essas alterações para refletir a tag git da última versão do cliente bem-sucedida para a produção.
 
 Em uma frequência regular, uma versão de recurso ocorrerá, com foco em adições de recursos e aprimoramentos que afetarão mais substancialmente a experiência do usuário em comparação às versões diárias. Uma versão de recurso é acionada não pela implantação de um grande conjunto de alterações, mas pelo giro de uma alternância de versão, ativando o código que vem se acumulando ao longo de dias ou semanas pelas atualizações diárias.
 
@@ -133,8 +133,11 @@ Para os seguintes casos, é preferível seguir a abordagem de codificação manu
 * Criar/excluir grupos
 * Criar/excluir usuários
 * Adicionar ACLs
-   > [!NOTE]
+
+   >[!NOTE]
+   >
    >A definição de ACLs exige que as estruturas de nó já estejam presentes. Portanto, as declarações de criação de caminho anteriores podem ser necessárias.
+
 * Adicionar caminho (por exemplo, para estruturas de pastas raiz)
 * Adicionar CNDs (definições de tipo de nó)
 
