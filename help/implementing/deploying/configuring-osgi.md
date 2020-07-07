@@ -2,7 +2,7 @@
 title: Configuração do OSGi para o AEM as a Cloud Service
 description: 'Configuração do OSGi com valores secretos e valores específicos do Ambiente '
 translation-type: tm+mt
-source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Configuração do OSGi para o AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[O OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologias do Adobe Experience Manager (AEM). É usado para controlar os pacotes compostos do AEM e suas configurações.
+[O OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologia do Adobe Experience Manager (AEM). É usado para controlar os pacotes compostos do AEM e suas configurações.
 
 O OSGi fornece as primitivas padronizadas que permitem que aplicativos sejam construídos a partir de componentes pequenos, reutilizáveis e colaborativos. Esses componentes podem ser compostos em um aplicativo e implantados. Isso permite o gerenciamento fácil de pacotes OSGi, pois eles podem ser interrompidos, instalados e iniciados individualmente. As interdependências são tratadas automaticamente. Cada componente OSGi está contido em um dos vários pacotes. Para obter mais informações, consulte a especificação [do](https://www.osgi.org/Specifications/HomePage)OSGi.
 
@@ -36,9 +36,9 @@ um arquivo de configuração OSGi é definido em:
 
 seguindo o formato de configuração cfg.json OSGi.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Versões anteriores de arquivos de configuração OSGi com suporte do AEM usando diferentes formatos de arquivo, como .cfg., .config e como definições de recurso XML sling:OsgiConfig. Esses formatos são substituídos pelo formato de configuração cfg.json OSGi.
+>Versões anteriores de arquivos de configuração OSGi com suporte do AEM usando diferentes formatos de arquivo, como .cfg., .config e como definições de recurso XML sling:OsgiConfig. Esses formatos são substituídos pelo formato de configuração cfg.json OSGi.
 
 ## Resolução do modo de execução {#runmode-resolution}
 
@@ -58,7 +58,7 @@ Ao desenvolver localmente, um parâmetro de inicialização do modo de execuçã
 
 ## Tipos de valores de configuração OSGi {#types-of-osgi-configuration-values}
 
-Há três variedades de valores de configuração OSGi que podem ser usadas com o AEM como um serviço em nuvem.
+Há três variedades de valores de configuração OSGi que podem ser usadas com o AEM como Cloud Service.
 
 1. **Valores** em linha, que são valores codificados permanentemente na configuração OSGi e armazenados em Git. Por exemplo:
 
@@ -76,7 +76,7 @@ Há três variedades de valores de configuração OSGi que podem ser usadas com 
    } 
    ```
 
-1. **Valores** específicos do Ambiente, que são valores que variam entre ambientes de desenvolvimento e, portanto, não podem ser direcionados com precisão pelo modo de execução (pois há um único `dev` modo de execução no AEM como um serviço de nuvem). Por exemplo:
+1. **Valores** específicos do Ambiente, que são valores que variam entre ambientes de desenvolvimento e, portanto, não podem ser direcionados com precisão pelo modo de execução (já que há um único `dev` modo de execução no AEM como Cloud Service). Por exemplo:
 
    ```json
    {
@@ -116,16 +116,16 @@ Sempre que definir um valor de configuração OSGi, start com valores em linha, 
 
 ### Quando usar valores de configuração não secretos específicos para Ambientes {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Use apenas configurações específicas do ambiente (`$[env:ENV_VAR_NAME]`) para valores de configuração não secretos quando os valores variarem entre ambientes de desenvolvimento. Isso inclui instâncias de desenvolvimento local e qualquer AEM como ambientes de desenvolvimento de serviços em nuvem. Evite usar configurações não secretas específicas de ambientes para o AEM como um Palco de serviço em nuvem ou ambientes de produção.
+Use apenas configurações específicas do ambiente (`$[env:ENV_VAR_NAME]`) para valores de configuração não secretos quando os valores variarem entre ambientes de desenvolvimento. Isso inclui instâncias de desenvolvimento local e qualquer AEM como ambientes de desenvolvimento de Cloud Service. Evite usar configurações não secretas específicas de ambientes para o AEM como um Cloud Service Stage ou ambientes de produção.
 
 * Use apenas configurações não secretas específicas do ambiente para valores de configuração que diferem entre ambientes de desenvolvimento, incluindo instâncias de desenvolvimento local.
 * Em vez disso, use os valores em linha padrão nas configurações OSGi para valores não secretos de Fase e Produção.  Neste contexto, não é recomendável usar configurações específicas do ambiente para facilitar as alterações de configuração no tempo de execução para o Palco e ambientes de Produção; estas alterações devem ser introduzidas através da gestão do código fonte.
 
 ### Quando usar valores de configuração secretos específicos do ambiente {#when-to-use-secret-environment-specific-configuration-values}
 
-O AEM como um serviço em nuvem exige o uso de configurações específicas do ambiente (`$[secret:SECRET_VAR_NAME]`) para quaisquer valores secretos de configuração OSGi, como senhas, chaves de API privadas ou quaisquer outros valores que não possam ser armazenados no Git por motivos de segurança.
+O AEM como Cloud Service requer o uso de configurações específicas do ambiente (`$[secret:SECRET_VAR_NAME]`) para quaisquer valores secretos de configuração OSGi, como senhas, chaves de API privadas ou quaisquer outros valores que não possam ser armazenados no Git por motivos de segurança.
 
-Use configurações secretas específicas ao ambiente para armazenar o valor dos segredos em todo o AEM como ambientes de serviço em nuvem, incluindo o Palco e a Produção.
+Use configurações secretas específicas ao ambiente para armazenar o valor dos segredos em todo o AEM como ambientes Cloud Service, incluindo o Palco e a Produção.
 
 <!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
@@ -401,7 +401,7 @@ config.dev
 </tr>
 </table>
 
-Another way to accomplish this would be to set a default value for the replacement token in the config.dev folder such that it&#39;s the same value as in the **config** folder.
+Outra maneira de fazer isso seria definir um valor padrão para o token de substituição na pasta config.dev de modo que ele tenha o mesmo valor que na pasta **config** .
 
 <table>
 <tr>
@@ -503,9 +503,9 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
 ```
 
-> [!NOTE]
+>[!NOTE]
 >
-> Consulte [esta página](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) para obter mais informações sobre como configurar valores usando o plug-in do Gerenciador de nuvem para a CLI de E/S da Adobe.
+>Consulte [esta página](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) para obter mais informações sobre como configurar valores usando o plug-in do Gerenciador de nuvem para a CLI de E/S da Adobe.
 
 ### Número de variáveis {#number-of-variables}
 
@@ -513,15 +513,15 @@ Até 20 variáveis podem ser declaradas.
 
 ## Considerações de implantação para valores de configuração secretos e específicos do Ambiente {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-Como os valores de configuração secretos e específicos do ambiente permanecem fora do Git e, portanto, não fazem parte do AEM formal como um mecanismo de implantação do Serviço em nuvem, o cliente deve gerenciar, administrar e integrar o AEM como um processo de implantação do Serviço em nuvem.
+Como os valores de configuração secretos e específicos do ambiente vivem fora do Git e, portanto, não fazem parte do AEM formal como um mecanismo de implantação do Cloud Service, o cliente deve gerenciar, administrar e integrar o AEM como um processo de implantação do Cloud Service.
 
-Como mencionado acima, chamar a API implantará as novas variáveis e valores em ambientes da Cloud, de modo semelhante a um pipeline de implantação de código do cliente típico. Os serviços de autor e publicação serão reiniciados e farão referência aos novos valores, normalmente demorando alguns minutos. Note that the quality gates and tests that are executed by Cloud Manager during a regular code deployment are not performed during this process.
+Como mencionado acima, chamar a API implantará as novas variáveis e valores em ambientes da Cloud, de modo semelhante a um pipeline de implantação de código do cliente típico. Os serviços de autor e publicação serão reiniciados e farão referência aos novos valores, normalmente demorando alguns minutos. Observe que as portas de qualidade e os testes executados pelo Gerenciador de nuvem durante uma implantação regular de código não são executados durante esse processo.
 
 Normalmente, os clientes ligam para a API para definir variáveis de ambiente antes de implantar um código que depende deles no Cloud Manager. Em algumas situações, é possível modificar uma variável existente após a implantação do código.
 
-Observe que a API pode não ter êxito quando um pipeline está em uso, seja uma atualização do AEM ou implantação do cliente, dependendo de qual parte do pipeline de fim a fim está sendo executada no momento. The error response will indicate that the request was not successful, although it will not indicate the specific reason.
+Observe que a API pode não ter êxito quando um pipeline está em uso, seja uma atualização do AEM ou implantação do cliente, dependendo de qual parte do pipeline de fim a fim está sendo executada no momento. A resposta ao erro indicará que a solicitação não foi bem-sucedida, embora não indique o motivo específico.
 
-There may be scenarios where a scheduled customer code deployment relies on existing variables to have new values, which would not be appropriate with the current code. Se isso for uma preocupação, é recomendável fazer modificações variáveis de uma forma aditiva. Para fazer isso, crie novos nomes de variáveis em vez de apenas alterar o valor de variáveis antigas para que o código antigo nunca faça referência ao novo valor. Em seguida, quando a nova versão do cliente parecer estável, é possível optar por remover os valores mais antigos.
+Pode haver situações em que uma implantação programada de código de cliente dependa de variáveis existentes para ter novos valores, o que não seria apropriado com o código atual. Se isso for uma preocupação, é recomendável fazer modificações variáveis de uma forma aditiva. Para fazer isso, crie novos nomes de variáveis em vez de apenas alterar o valor de variáveis antigas para que o código antigo nunca faça referência ao novo valor. Em seguida, quando a nova versão do cliente parecer estável, é possível optar por remover os valores mais antigos.
 
 Da mesma forma, como os valores de uma variável não têm controle de versão, uma reversão do código pode fazer com que ele faça referência a valores mais recentes que causam problemas. A estratégia de variáveis aditivas acima mencionada também ajudaria neste caso.
 
