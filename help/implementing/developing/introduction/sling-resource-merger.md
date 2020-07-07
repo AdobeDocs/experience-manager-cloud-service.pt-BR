@@ -2,7 +2,7 @@
 title: Usando a fusão de recursos Sling em Adobe Experience Manager como Cloud Service
 description: A fusão Sling Resource presta serviços de acesso e fusão de recursos
 translation-type: tm+mt
-source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 1%
@@ -51,8 +51,9 @@ Os objetivos para usar a fusão de recursos Sling no AEM são:
    >
    >
 * As substituições não dependem dos caminhos de pesquisa, elas usam a propriedade `sling:resourceSuperType` para fazer a conexão.
-   >  No entanto, as substituições são frequentemente definidas em `/apps`, já que a prática recomendada no AEM como Cloud Service é definir personalizações em `/apps`; isso porque você não pode mudar nada debaixo `/libs`.
-
+>
+>
+No entanto, as substituições são frequentemente definidas em `/apps`, já que a prática recomendada no AEM como Cloud Service é definir personalizações em `/apps`; isso porque você não pode mudar nada debaixo `/libs`.
 
 ### Propriedades {#properties}
 
