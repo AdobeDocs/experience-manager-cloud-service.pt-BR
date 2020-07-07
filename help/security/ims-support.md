@@ -2,7 +2,7 @@
 title: Suporte IMS do Adobe Experience Manager as a Cloud Service
 description: Suporte IMS do Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
@@ -91,7 +91,7 @@ A Ferramenta de sincronização de usuários é distribuída pelo repositório d
 
 >[!NOTE]
 >
-> Uma versão de pré-lançamento **2.4RC1** está disponível com suporte à criação de grupos dinâmicos e pode ser encontrada [aqui](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
+>Uma versão de pré-lançamento **2.4RC1** está disponível com suporte à criação de grupos dinâmicos e pode ser encontrada [aqui](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
 
 Os principais recursos desta versão são a capacidade de mapear dinamicamente novos grupos LDAP para associação de usuários no Admin Console, bem como a criação dinâmica de grupos de usuários.
 
@@ -159,7 +159,8 @@ Para outros usuários, o logon baseado no IMS pode ser usado assim que o IMS for
 
 
 >[!NOTE]
-> Qualquer usuário criado no IMS pode ser criado usando a Adobe ID ou a Federated ID. Se um usuário for configurado usando a Adobe ID, ele será autenticado usando o Provedor de identidade da Empresa para fazer logon.
+>
+>Qualquer usuário criado no IMS pode ser criado usando a Adobe ID ou a Federated ID. Se um usuário for configurado usando a Adobe ID, ele será autenticado usando o Provedor de identidade da Empresa para fazer logon.
 
 Eles serão redirecionados para a tela de logon do IMS e precisarão digitar as credenciais:
 
