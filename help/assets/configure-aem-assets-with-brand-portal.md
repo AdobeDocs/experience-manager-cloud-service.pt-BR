@@ -3,7 +3,7 @@ title: Configurar o serviço em nuvem do AEM Assets com o Brand Portal
 description: Configurar o serviço em nuvem do AEM Assets com o Brand Portal
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 36%
@@ -32,7 +32,6 @@ A configuração da instância da nuvem do AEM Assets com um locatário do Brand
 >Um locatário do Brand Portal só deve ser configurado com uma instância da nuvem de AEM Assets.
 >
 >Não configure um locatário do Brand Portal com várias instâncias da nuvem de AEM Assets.
-
 
 ## Pré-requisitos {#prerequisites}
 
@@ -134,7 +133,7 @@ Execute as seguintes etapas para gerar as credenciais da conta de serviço e a c
 
 1. Verifique o certificado público e clique em **[!UICONTROL Avançar]**.
 
-1. Selecione o perfil de produto padrão Portal **[!UICONTROL de marca de]** Ativos de marca e clique em **[!UICONTROL Salvar configuração]**.
+1. Selecione o perfil de produto padrão Portal **[!UICONTROL de marcas de]** Ativos de marca e clique em **[!UICONTROL Salvar configuração]**.
 
    <!-- 
    In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
@@ -230,8 +229,6 @@ Execute as seguintes etapas para configurar a conta IMS que você criou na [obte
 >Você deve ter apenas uma configuração IMS. Não crie várias configurações IMS.
 >
 >A configuração IMS deve ser aprovada na verificação de integridade. Se a configuração não for aprovada na verificação de integridade, ela será inválida. Você deve excluí-la e criar uma configuração nova e válida.
-
-
 
 ### Configurar o serviço em nuvem {#configure-the-cloud-service}
 
@@ -343,8 +340,6 @@ No exemplo acima, uma solicitação e uma resposta adicionais são acionadas. O 
 >[!NOTE]
 >
 >A solicitação adicional é gerada caso a pasta principal não exista no Brand Portal (no exemplo acima) ou a pasta principal tenha sido modificada no AEM Assets.
-
-
 
 <!--
 
