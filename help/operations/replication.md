@@ -2,7 +2,7 @@
 title: Replicação
 description: Distribuição e Solução de problemas de replicação.
 translation-type: tm+mt
-source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 3%
@@ -12,17 +12,17 @@ ht-degree: 3%
 
 # Replicação {#replication}
 
-O Adobe Experience Manager como um serviço em nuvem usa o recurso [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover o conteúdo para replicar para um serviço de pipeline executado em E/S da Adobe fora do tempo de execução do AEM.
+O Adobe Experience Manager como Cloud Service usa o recurso [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover o conteúdo para replicar para um serviço de pipeline executado em E/S da Adobe fora do tempo de execução do AEM.
 
 >[!NOTE]
 >
-> Leia [Distribuição](/help/core-concepts/architecture.md#content-distribution) para obter mais informações.
+>Leia [Distribuição](/help/core-concepts/architecture.md#content-distribution) para obter mais informações.
 
 ## Métodos de publicação de conteúdo {#methods-of-publishing-content}
 
 ### Desfazer/publicar rapidamente - Desfazer/publicar planejado {#publish-unpublish}
 
-Essas funcionalidades padrão do AEM para os autores não são alteradas com o serviço da AEM Cloud.
+Essas funcionalidades padrão do AEM para os autores não mudam com o AEM Cloud Service.
 
 ### Ativação de árvore {#tree-activation}
 
@@ -37,7 +37,7 @@ Para executar uma ativação em árvore:
 
 ## Resolução de Problemas{#troubleshooting}
 
-Para solucionar problemas de replicação, navegue até as Filas de Replicação na interface do usuário da Web do Serviço de Autor de AEM:
+Para solucionar problemas de replicação, navegue até Filas de Replicação na interface do usuário do AEM Author Service:
 
 1. No menu Start AEM, navegue até **Ferramentas > Implantação > Distribuição**
 2. Selecione o cartão **forwardPublisher**
@@ -48,5 +48,5 @@ Para solucionar problemas de replicação, navegue até as Filas de Replicação
 
 ![](assets/logs.png "LogsLogs")
 
-Se o conteúdo não puder ser publicado, toda a publicação será revertida do Serviço de publicação de AEM.
+Se o conteúdo não puder ser publicado, toda a publicação será revertida do Serviço de AEM Publish.
 Nesse caso, as filas de espera devem ser revistas a fim de identificar quais os itens que causaram o cancelamento da publicação. Ao clicar em uma fila mostrando um status vermelho, a fila com itens pendentes apareceria, a partir da qual um ou todos os itens podem ser apagados, se necessário.
