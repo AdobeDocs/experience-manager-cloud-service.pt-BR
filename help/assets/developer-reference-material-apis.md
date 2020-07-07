@@ -1,9 +1,9 @@
 ---
-title: 'APIs de ativos para gerenciamento de ativos digitais no Adobe Experience Manager como um serviço em nuvem '
+title: 'APIs de ativos para gerenciamento de ativos digitais no Adobe Experience Manager como Cloud Service '
 description: As APIs de ativos permitem operações básicas de criação-leitura-atualização-exclusão (CRUD) para gerenciar ativos, incluindo binários, metadados, representações, comentários e Fragmentos de conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
+# Ativos como APIs de Cloud Service {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -42,8 +42,9 @@ As diferenças importantes comparadas às versões anteriores do AEM incluem:
 
 Essa abordagem deve proporcionar uma manipulação mais escalável e eficiente dos uploads de ativos.
 
-> !![NOTE]
-Para revisar o código do cliente que implementa essa abordagem, consulte a biblioteca de [upload do aem de código aberto](https://github.com/adobe/aem-upload)
+>[!NOTE]
+>
+>Para revisar o código do cliente que implementa essa abordagem, consulte a biblioteca de [upload do aem de código aberto](https://github.com/adobe/aem-upload)
 
 ### Iniciar carregamento {#initiate-upload}
 
@@ -111,11 +112,10 @@ Depois que todas as partes de um arquivo binário forem carregadas, envie uma so
 | `createVersion` | Booleano | Opcional | Se `True` e um ativo com o nome especificado já existir, o Experience Manager criará uma nova versão do ativo. |
 | `versionLabel` | Sequência de caracteres | Opcional | Se uma nova versão for criada, o rótulo associado à nova versão de um ativo. |
 | `versionComment` | Sequência de caracteres | Opcional | Se uma nova versão for criada, os comentários associados à versão. |
-| `replace` | Booleano | Opcional | Se `True` e um ativo com o nome especificado já existir, o Experience Manager excluirá o ativo e recriá-lo. |
+| `replace` | Booleano | Opcional | Se `True` e um ativo com o nome especificado já existir, o Experience Manager excluirá o ativo e, em seguida, recriá-lo. |
 
 >!![NOTE]
->
-> Se o ativo já existir e nem `createVersion` nem `replace` for especificado, o Experience Manager atualizará a versão atual do ativo com o novo binário.
+Se o ativo já existir e nem `createVersion` nem `replace` for especificado, o Experience Manager atualizará a versão atual do ativo com o novo binário.
 
 Como o processo de inicialização, os dados de solicitação completos podem conter informações para mais de um arquivo.
 
@@ -134,7 +134,7 @@ Para saber mais sobre os algoritmos de upload ou para criar seus próprios scrip
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Para o Adobe Experience Manager como um serviço em nuvem, somente as novas APIs de upload são compatíveis. As APIs do Adobe Experience Manager 6.5 estão obsoletas. Os métodos relacionados ao upload ou atualização de ativos ou execuções (qualquer upload binário) estão obsoletos nas seguintes APIs:
+Somente as novas APIs de carregamento são suportadas para Adobe Experience Manager como Cloud Service. As APIs do Adobe Experience Manager 6.5 estão obsoletas. Os métodos relacionados ao upload ou atualização de ativos ou execuções (qualquer upload binário) estão obsoletos nas seguintes APIs:
 
 * [API HTTP do AEM Assets](mac-api-assets.md)
 * `AssetManager` API Java, como `AssetManager.createAsset(..)`
@@ -152,9 +152,9 @@ Para a configuração do fluxo de trabalho de pós-processamento, use os workflo
 
 ## Suporte às etapas do fluxo de trabalho no fluxo de trabalho de pós-processamento {#post-processing-workflows-steps}
 
-Os clientes que atualizam para o Experience Manager como um serviço em nuvem de versões anteriores do Experience Manager podem usar os microserviços de ativos para processamento de ativos. Os microserviços de ativos nativos na nuvem são muito mais simples de configurar e usar. Algumas etapas do fluxo de trabalho usadas no fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM na versão anterior não são suportadas.
+Os clientes que atualizam para o Experience Manager como Cloud Service das versões anteriores do Experience Manager podem usar os microserviços de ativos para o processamento de ativos. Os microserviços de ativos nativos na nuvem são muito mais simples de configurar e usar. Algumas etapas do fluxo de trabalho usadas no fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM na versão anterior não são suportadas.
 
-As etapas de fluxo de trabalho a seguir são compatíveis com o Experience Manager como um serviço em nuvem.
+As etapas de fluxo de trabalho a seguir são suportadas no Experience Manager como um Cloud Service.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
