@@ -2,17 +2,17 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: A completar
 translation-type: tm+mt
-source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
+source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 1%
+source-wordcount: '1631'
+ht-degree: 2%
 
 ---
 
 
 # Diretrizes de desenvolvimento do AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
-O código em execução no AEM como um Cloud Service deve estar ciente do fato de que ele está sempre em execução em um cluster. Isso significa que há sempre mais de uma instância em execução. O código deve ser resiliente, especialmente porque uma instância pode ser interrompida em qualquer momento.
+O código em execução no AEM como um Cloud Service deve estar ciente do fato de que ele está sempre em execução em um cluster. Isso significa que sempre há mais de uma instância em execução. O código deve ser resiliente, especialmente porque uma instância pode ser interrompida em qualquer momento.
 
 Durante a atualização do AEM como Cloud Service, haverá instâncias com o código novo e antigo em execução em paralelo. Portanto, o código antigo não deve quebrar com o conteúdo criado pelo novo código e o novo código deve ser capaz de lidar com o conteúdo antigo.
 <!--
@@ -160,8 +160,7 @@ Também útil para depuração, o console Desenvolvedor tem um link para a ferra
 
 ![Console de desenvolvedor 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Para programas regulares, o acesso ao Console do desenvolvedor é definido pelo &quot;Gerenciador de nuvem - Função do desenvolvedor&quot; no Admin Console, enquanto para programas de caixa de proteção, o Console do desenvolvedor está disponível para qualquer usuário com um perfil de produto que lhe dá acesso ao AEM como Cloud Service. Para obter mais informações sobre como configurar permissões de usuário, consulte Documentação [do](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
-
+Para programas regulares, o acesso ao Console do desenvolvedor é definido pelo &quot;Gerenciador de nuvem - Função do desenvolvedor&quot; no Admin Console, enquanto para programas de caixa de proteção, o Console do desenvolvedor está disponível para qualquer usuário com um perfil de produto que lhe dá acesso ao AEM como Cloud Service. Para todos os programas, &quot;Gerenciador de nuvem - Função do desenvolvedor&quot; é necessário para os despejos de status e os usuários também devem ser definidos no Perfil de produtos Usuários do AEM ou Administradores do AEM nos serviços de autor e publicação para que os dados de despejo de status sejam visualizações de ambos os serviços. Para obter mais informações sobre como configurar permissões de usuário, consulte Documentação [do](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
 
 
 ### Serviço de armazenamento temporário e produção do AEM {#aem-staging-and-production-service}
