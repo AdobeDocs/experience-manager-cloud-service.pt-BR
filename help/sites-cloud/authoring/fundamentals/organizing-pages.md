@@ -2,10 +2,10 @@
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
 translation-type: tm+mt
-source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 100%
+source-wordcount: '2550'
+ht-degree: 92%
 
 ---
 
@@ -186,6 +186,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
    * Selecionar o modelo que deseja usar para criar a nova página, em seguida, clicar/tocar em **Próximo** para prosseguir.
 
    * **Cancelar** para suspender o processo.
+
    ![Seleção de um modelo para uma nova página](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. A partir do último estágio do assistente, você pode:
@@ -193,6 +194,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
    * Usar as três guias para inserir as [propriedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md) que deseja atribuir à nova página, em seguida, clicar/tocar em **Criar** para realmente criar a página.
 
    * Usar **Voltar** para voltar à seleção do modelo.
+
    Os campos principais são:
 
    * **Título**:
@@ -203,6 +205,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
       * Usado para gerar o URI. Se não for especificado, o nome é derivado do título.
       * Se você fornecer um **Nome** de página ao criar uma nova página, o AEM vai validar o nome de acordo com as convenções impostas pelo AEM e JCR. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * **Não é possível enviar caracteres inválidos** no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo será destacado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
+
    >[!TIP]
    >
    >Consulte [Convenções de nomenclatura da página](#page-naming-conventions).
@@ -237,6 +240,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
    * [Ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e a barra de ferramentas
+
    E, em seguida, selecione o ícone **Editar**:
 
    ![Botão Editar](/help/sites-cloud/authoring/assets/edit.png)
@@ -256,6 +260,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
    * [Ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e a barra de ferramentas
+
    E, em seguida, o ícone **Copiar** página:
 
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
@@ -273,6 +278,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
    1. Selecionar o próprio ícone **Colar**: uma cópia da página original e qualquer página secundária serão criadas neste local.
    1. Selecione a seta suspensa para revelar a opção **Colar sem filhos**. Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
+
    >[!NOTE]
    >
    >Se você copiar a página para um local onde uma página com o mesmo nome que a original já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` se tornará `beach1`.
@@ -292,6 +298,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
    * [Ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) e a barra de ferramentas
+
    E, em seguida, selecione o ícone **Mover** página:
 
    ![Botão Mover](/help/sites-cloud/authoring/assets/move.png)
@@ -302,6 +309,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
    * Especifique o nome que deseja para a página após movê-la, em seguida, clique/toque em **Próximo** para prosseguir.
    * **Cancelar** para suspender o processo.
+
    ![Mover e renomear página](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
    O nome da página pode permanecer o mesmo se você estiver somente movendo a página.
@@ -317,6 +325,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
       * Para selecionar o destino, clique em sua miniatura.
       * Clique em **Avançar** para continuar.
    * Use **Voltar** para voltar às especificações do nome de página.
+
    >[!NOTE]
    >
    >Por padrão, o pai da página que você está movendo/renomeando será selecionado como o destino.
@@ -357,6 +366,27 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 <!--
 >A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
 -->
+
+#### Ações assíncronas {#asynchronous-actions}
+
+Normalmente, uma ação de mover ou renomear página é executada imediatamente. Isso é considerado um processamento síncrono e outras ações na interface do usuário são bloqueadas até que a ação seja concluída.
+
+No entanto, se o número de páginas afetadas estiver acima de um limite definido, a ação será processada de forma assíncrona, permitindo que o usuário continue a criação na interface do usuário desimpedida pela ação de mover ou renomear página.
+
+* Ao clicar em **Mover** na última etapa acima, o AEM verifica o limite configurado.
+* Se o número de páginas afetadas estiver abaixo do limite, ele executará uma operação síncrona.
+* Se o número de páginas afetadas estiver acima do limite, ele executará uma operação assíncrona.
+   * O usuário deve definir quando a operação assíncrona deve ser executada
+      * **Agora** começa a execução do trabalho assíncrono imediatamente.
+      * **Mais tarde** permite que o usuário defina quando o trabalho assíncrono será start.
+
+         ![Mover página assíncrona](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+
+O status de trabalhos assíncronos pode ser verificado no painel [**Status **de Trabalhos](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)assíncronos na Navegação****global ->** Ferramentas **->** Operações **->** Tarefas **
+
+>[!NOTE]
+>
+>Para obter mais informações sobre o processamento assíncrono de tarefas e como configurar o limite para ações de movimentação/renomeação de páginas, consulte o documento de Tarefas [](/help/operations/asynchronous-jobs.md) assíncronas no guia do usuário Operações.
 
 ### Excluir uma página {#deleting-a-page}
 
