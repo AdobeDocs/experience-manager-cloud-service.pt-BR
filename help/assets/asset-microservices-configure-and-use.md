@@ -3,7 +3,7 @@ title: Configurar e usar os microserviços de ativos para processamento de ativo
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1875'
 ht-degree: 3%
@@ -38,7 +38,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> O processamento de ativos descrito aqui substitui o modelo de `DAM Update Asset` fluxo de trabalho existente nas versões anteriores do Experience Manager. A maioria das etapas padrão de geração de representação e relacionadas a metadados são substituídas pelo processamento de microserviços de ativos, e as etapas restantes, se houver, podem ser substituídas pela configuração do fluxo de trabalho de pós-processamento.
+>O processamento de ativos descrito aqui substitui o modelo de `DAM Update Asset` fluxo de trabalho existente nas versões anteriores do Experience Manager. A maioria das etapas padrão de geração de representação e relacionadas a metadados são substituídas pelo processamento de microserviços de ativos, e as etapas restantes, se houver, podem ser substituídas pela configuração do fluxo de trabalho de pós-processamento.
 
 ## Introdução ao processamento de ativos {#get-started}
 
@@ -99,9 +99,9 @@ Um valor vazio significa que o processamento de ativos assume a dimensão em pix
 
 #### Regras de inclusão de tipo MIME {#mime-type-inclusion-rules}
 
-Quando um ativo com um tipo MIME específico é processado, o tipo MIME é verificado pela primeira vez em relação ao valor de tipos MIME excluídos para a especificação de representação. Se corresponder a essa lista, essa representação específica não será gerada para o ativo (lista bloqueada).
+Quando um ativo com um tipo MIME específico é processado, o tipo MIME é verificado pela primeira vez em relação ao valor de tipos MIME excluídos para a especificação de representação. Se corresponder a essa lista, essa representação específica não será gerada para o ativo (lista de bloqueios).
 
-Caso contrário, o tipo MIME será verificado em relação ao tipo MIME incluído e, se ele corresponder à lista, a representação será gerada (lista permitida).
+Caso contrário, o tipo MIME será verificado em relação ao tipo MIME incluído e, se ele corresponder à lista, a representação será gerada (lista de permissões).
 
 #### Representação especial do FPO {#special-fpo-rendition}
 
@@ -169,7 +169,7 @@ O serviço de Executador de Fluxo de Trabalho Personalizado (`com.adobe.cq.dam.p
 >[!NOTE]
 >
 >A configuração do Custom Workflow Runner é uma configuração de um serviço OSGi. Consulte [implantar no Experience Manager](/help/implementing/deploying/overview.md) para obter informações sobre como implantar uma configuração OSGi.
-> O console da Web do OSGi, ao contrário das implantações de serviços locais e gerenciados do AEM, não está disponível diretamente nas implantações de serviços em nuvem.
+>O console da Web do OSGi, ao contrário das implantações de serviços locais e gerenciados do AEM, não está disponível diretamente nas implantações de serviços em nuvem.
 
 Para obter detalhes sobre qual etapa de fluxo de trabalho padrão pode ser usada no fluxo de trabalho de pós-processamento, consulte as etapas do [fluxo de trabalho no fluxo de trabalho](developer-reference-material-apis.md#post-processing-workflows-steps) de pós-processamento na referência do desenvolvedor.
 
