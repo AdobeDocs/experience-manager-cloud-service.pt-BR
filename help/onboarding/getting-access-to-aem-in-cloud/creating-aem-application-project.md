@@ -2,10 +2,10 @@
 title: Projeto de aplicativo AEM - Cloud Service
 description: Projeto de aplicativo AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 3979cad8f9e51756113971c81a601e8cba21c8a2
+source-git-commit: 528873fec97958646b2a0d7d64281c76ee1d021d
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 10%
+source-wordcount: '1120'
+ht-degree: 11%
 
 ---
 
@@ -125,31 +125,6 @@ Para suportar isso, o Cloud Manager adiciona essas variáveis de ambiente padrã
 | CM_PROGRAMA_NAME | O nome do programa |
 | ARTIFTS_VERSION | Para um pipeline de estágio ou produção, a versão sintética gerada pelo Cloud Manager |
 | CM_AEM_PRODUCT_VERSION | O nome da versão |
-
-
-### Variáveis de Ambiente personalizadas {#custom-environ-variables}
-
-Em alguns casos, o processo de compilação de um cliente pode depender de variáveis de configuração específicas que não seriam adequadas para serem inseridas no repositório git. O Cloud Manager permite que essas variáveis sejam configuradas por um representante da Adobe, cliente a cliente. Essas variáveis são armazenadas em um local de armazenamento seguro e são visíveis apenas no container build do cliente específico. Os clientes que desejarem usar esse recurso precisam entrar em contato com o representante da Adobe para configurar suas variáveis.
-
-Depois de configuradas, essas variáveis estarão disponíveis como variáveis de ambiente. Para usá-las como propriedades Maven, é possível referenciá-las no arquivo pom.xml, possivelmente em um perfil, conforme descrito acima:
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                  <property>
-                        <name>env.CM_BUILD</name>
-                  </property>
-            </activation>
-            <properties>
-                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
-            </properties>
-        </profile>
-```
-
->[!NOTE]
->
->Os nomes das variáveis do Ambiente só podem conter caracteres alfanuméricos e sublinhado (_). Por convenção, os nomes devem ser todos maiúsculos.
 
 ## Ativar Perfis Maven no Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
