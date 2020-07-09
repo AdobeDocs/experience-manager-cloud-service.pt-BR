@@ -1,10 +1,10 @@
 ---
-title: Gerenciar Ambientes - Serviço em nuvem
-description: Gerenciar Ambientes - Serviço em nuvem
+title: Gerenciar Ambientes - Cloud Service
+description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '695'
 ht-degree: 8%
 
 ---
@@ -41,8 +41,7 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
 
 
 1. Clique em **Adicionar Ambiente** para adicionar um ambiente. Esse botão estará acessível na tela **Ambientes** .
-   ![](assets/no-environment-2.png)
-
+   ![](assets/environments-tab.png)
 
    A opção **Adicionar Ambiente** também está disponível na placa **Ambientes** quando não há nenhum ambiente no programa.
 
@@ -74,12 +73,12 @@ As atualizações dos ambientes de desenvolvimento são gerenciadas pelos usuár
 ![](assets/manage-environments2.png)
 
 
-A opção **Atualizar** está disponível no menu suspenso no Cartão de **Ambientes** .
+A opção **Atualizar** está disponível no Cartão de **Ambientes** .
 Essa opção também está disponível no botão **Gerenciar** , se você clicar em **Detalhes** no cartão de **Ambientes** .
 
-![](assets/update-environment2.png)
+![](assets/environments-screen-update.png)
 
-Selecionar isso no menu suspenso permitirá que um Gerenciador de implantação atualize o pipeline associado a esse ambiente para a versão mais recente e execute o pipeline.
+Selecionar essa opção permitirá que um Gerenciador de implantação atualize o pipeline associado a esse ambiente para a versão mais recente e execute o pipeline.
 
 Se o pipeline já tiver sido atualizado, o usuário será solicitado a executar o pipeline.
 
