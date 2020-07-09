@@ -1,11 +1,11 @@
 ---
-title: Projeto de aplicativo AEM - Serviço em nuvem
-description: Projeto de aplicativo AEM - Serviço em nuvem
+title: Projeto de aplicativo AEM - Cloud Service
+description: Projeto de aplicativo AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 11%
+source-wordcount: '1255'
+ht-degree: 10%
 
 ---
 
@@ -48,7 +48,7 @@ Para ser criado e implantado com êxito com o Cloud Manager, os projetos AEM exi
 * Você pode adicionar referências a repositórios de artefatos Maven adicionais em seus arquivos *pom.xml* . No entanto, o acesso a repositórios de artefatos protegidos por senha ou pela rede não é suportado.
 * Os pacotes de conteúdo implantáveis são detectados ao verificar se há arquivos *zip* do pacote de conteúdo contidos em um diretório chamado *público alvo*. Qualquer número de submódulos pode produzir pacotes de conteúdo.
 
-* Os artefatos do Dispatcher que podem ser implantados são descobertos pela varredura de arquivos *zip* (novamente, contidos em um diretório chamado *público alvo*) que têm diretórios chamados *conf* e *conf.d*.
+* Os artefatos implantáveis do Dispatcher são descobertos pela verificação de arquivos *zip* (novamente, contidos em um diretório chamado *público alvo*) que têm diretórios chamados *conf* e *conf.d*.
 
 * Se houver mais de um pacote de conteúdo, a ordem de implantações de pacote não é garantida. Se uma ordem específica for necessária, as dependências do pacote de conteúdo poderão ser usadas para definir a ordem. Os pacotes podem ser [ignorados](#skipping-content-packages) da implantação.
 
@@ -59,7 +59,7 @@ O Cloud Manager cria e testa seu código usando um ambiente de compilação espe
 
 * O ambiente build é baseado no Linux, derivado do Ubuntu 18.04.
 * O Apache Maven 3.6.0 está instalado.
-* A versão do Java instalada é o Oracle JDK 8u202.
+* A versão Java instalou o Oracle JDK 8u202 e 11.0.2.
 * Existem outros pacotes de sistema instalados que são necessários:
 
    * bzip2
@@ -73,6 +73,37 @@ O Cloud Manager cria e testa seu código usando um ambiente de compilação espe
 * Maven é sempre executado com o comando: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * O Maven é configurado no nível do sistema com um arquivo settings.xml que inclui automaticamente o repositório público do Adobe **Artifato** . (Consulte o Repositório [do](https://repo.adobe.com/) Adobe Public Maven para obter mais detalhes).
 
+### Uso do Java 11 {#using-java-11}
+
+O Cloud Manager agora é compatível com a criação de projetos de clientes com Java 8 e Java 11. Por padrão, os projetos são criados usando o Java 8. Os clientes que pretendem usar o Java 11 em seus projetos podem fazer isso usando o plug-in [](https://maven.apache.org/plugins/maven-toolchains-plugin/)Apache Maven Toolchain.
+
+Para fazer isso, no arquivo pom.xml, adicione uma `<plugin>` entrada com a seguinte aparência:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>Os Fornecedores Suportados são Oracle e Sun Microsystems e as Versões Suportadas são 1.8, 1.11 e 11.
 
 ## Variáveis de Ambiente {#environment-variables}
 
