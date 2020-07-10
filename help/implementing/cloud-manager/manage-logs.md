@@ -1,11 +1,11 @@
 ---
-title: Gerenciar registros - serviço em nuvem
-description: Gerenciar registros - serviço em nuvem
+title: Gerenciar registros - Cloud Service
+description: Gerenciar registros - Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 11%
+ht-degree: 17%
 
 ---
 
@@ -20,7 +20,7 @@ Esses arquivos podem ser baixados por meio da interface do usuário, na página 
 
 Ou a página **Ambientes** :
 
-![](assets/manage-logs2.png)
+![](assets/download-logs.png)
 
 >[!Nnota]
 >Independentemente de onde ele esteja aberto, a mesma caixa de diálogo é exibida e permite que um arquivo de log individual seja baixado.
