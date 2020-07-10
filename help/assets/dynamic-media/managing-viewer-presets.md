@@ -2,7 +2,7 @@
 title: Gerenciar predefinições do visualizador
 description: Como criar e gerenciar predefinições do visualizador
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
 source-wordcount: '4263'
 ht-degree: 18%
@@ -150,7 +150,7 @@ Os administradores podem adicionar e personalizar os seguintes tipos de mídia a
 
 A tabela a seguir identifica todas as predefinições de visualizador predefinidas e predefinidas que vêm com o Dynamic Media.
 
-Consulte também:<!-- KEEP REFERENCE [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [Demonstrações](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)ao vivo.
+Consulte também Demos [ao](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)vivo.
 
 Para obter informações sobre o navegador da Web e as versões do sistema operacional compatíveis para visualizadores, consulte as Notas de versão dos visualizadores.
 
@@ -519,7 +519,7 @@ Ao criar predefinições do visualizador de banner do carrossel, a alteração d
 
 ## Ativar ou desativar as predefinições do visualizador {#activating-or-deactivating-viewer-presets}
 
-As predefinições do visualizador que estão disponíveis na interface do usuário dependem de quais estão ativas no modo Autor. Por padrão, uma predefinição do visualizador é &quot;Ligado&quot; depois que você a cria. Se você alternar a predefinição para desativada, ela não será exibida no modo Autor. Se a predefinição for publicada. será sempre publicada independentemente de ser ativada ou desativada. Talvez você queira desativar as predefinições do visualizador se a lista ficar muito fraca ou se não quiser que uma predefinição do visualizador seja disponibilizada para uso.
+As predefinições do visualizador que estão disponíveis na interface do usuário dependem de quais estão ativas no modo Autor. Por padrão, uma predefinição do visualizador é &quot;Ligado&quot; depois que você a cria. Se você alternar a predefinição para desativada, ela não será exibida no modo Autor. Se a predefinição for publicada. será sempre publicada independentemente de ser ativada ou desativada. Talvez você queira desativar as predefinições do visualizador se a lista se tornar muito difícil ou se não quiser que uma predefinição do visualizador seja disponibilizada para uso.
 
 **Para ativar ou desativar as predefinições do visualizador**
 
