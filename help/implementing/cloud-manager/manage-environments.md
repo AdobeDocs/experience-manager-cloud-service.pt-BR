@@ -2,9 +2,9 @@
 title: Gerenciar Ambientes - Cloud Service
 description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '702'
 ht-degree: 8%
 
 ---
@@ -70,7 +70,7 @@ As atualizações de ambientes de Estágio e Produção são gerenciadas automat
 
 As atualizações dos ambientes de desenvolvimento são gerenciadas pelos usuários do programa. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status na placa de Ambientes na tela inicial mostrará **ATUALIZAÇÃO DISPONÍVEL**.
 
-![](assets/manage-environments2.png)
+![](assets/update-environ-1.png)
 
 
 A opção **Atualizar** está disponível no Cartão de **Ambientes** .
@@ -86,10 +86,14 @@ Se o pipeline já tiver sido atualizado, o usuário será solicitado a executar 
 
 O usuário com as permissões necessárias poderá excluir um ambiente de desenvolvimento.
 
-A opção **Excluir** está disponível no menu suspenso no Cartão de **Ambientes** .
-Essa opção também está disponível no botão **Gerenciar** , se você clicar em **Detalhes** no cartão de **Ambientes** .
+A opção **Excluir** está disponível no menu suspenso no Cartão de **Ambientes** . Clique em **...** para um ambiente de desenvolvimento que você deseja excluir.
 
-![](assets/deleting-environment1.png)
+![](assets/environ-delete.png)
+
+Você também pode excluir um ambiente se clicar em **Detalhes** no cartão de **Ambientes** .
+
+![](assets/environ-delete-2.png)
+
 
 >[!NOTE]
 Este recurso não está disponível para ambientes de produção/estágio definidos em uma configuração regular de programa para fins de produção. No entanto, o recurso está disponível para ambientes de produção/estágio em um programa Sandbox.
@@ -103,7 +107,7 @@ Somente um usuário na função Desenvolvedor terá acesso ao **Developer Consol
 Consulte [Hibernando e Deshibernando Ambientes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) Sandbox para obter mais detalhes.
 
 
-![](assets/dev-console1.png)
+![](assets/environ-dev-console.png)
 
 Você também pode selecionar essa opção no botão **Gerenciar** , se clicar em **Detalhes** no cartão de **Ambientes** .
 
