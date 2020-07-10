@@ -2,9 +2,9 @@
 title: Gerenciar Ambientes - Cloud Service
 description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '753'
 ht-degree: 8%
 
 ---
@@ -74,7 +74,7 @@ As atualizações dos ambientes de desenvolvimento são gerenciadas pelos usuár
 
 
 A opção **Atualizar** está disponível no Cartão de **Ambientes** .
-Essa opção também está disponível no botão **Gerenciar** , se você clicar em **Detalhes** no cartão de **Ambientes** .
+Essa opção também está disponível se você clicar em **Detalhes** no cartão de **Ambientes** . A página **Ambientes** é aberta e, depois que você selecionar o ambiente de desenvolvimento, clique em **...** e selecione **Atualizar**, conforme mostrado na figura abaixo:
 
 ![](assets/environments-screen-update.png)
 
@@ -90,7 +90,7 @@ A opção **Excluir** está disponível no menu suspenso no Cartão de **Ambient
 
 ![](assets/environ-delete.png)
 
-Você também pode excluir um ambiente se clicar em **Detalhes** no cartão de **Ambientes** .
+A opção de exclusão também estará disponível se você clicar em **Detalhes** no cartão de **Ambientes** . A página **Ambientes** é aberta e, depois que você selecionar o ambiente de desenvolvimento, clique em **...** e selecione **Excluir**, conforme mostrado na figura abaixo:
 
 ![](assets/environ-delete-2.png)
 
@@ -109,5 +109,5 @@ Consulte [Hibernando e Deshibernando Ambientes](https://docs.adobe.com/content/h
 
 ![](assets/environ-dev-console.png)
 
-Você também pode selecionar essa opção no botão **Gerenciar** , se clicar em **Detalhes** no cartão de **Ambientes** .
+Essa opção também está disponível se você clicar em **Detalhes** no cartão de **Ambientes** . A página **Ambientes** é aberta e, depois que você selecionar um ambiente, clique em **...** e selecione **Developer Console**.
 
