@@ -2,7 +2,7 @@
 title: Vídeo
 description: Saiba como trabalhar com vídeo no Dynamic Media
 translation-type: tm+mt
-source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
+source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
 workflow-type: tm+mt
 source-wordcount: '10058'
 ht-degree: 10%
@@ -339,7 +339,7 @@ Use o CBR se o vídeo contiver um nível de movimento semelhante em todo o víde
 O VBR demora mais para codificar, mas produz os resultados mais favoráveis; a qualidade do arquivo de mídia é superior. O VBR é usado com mais frequência para o delivery progressivo http do conteúdo de vídeo.
 
 Quando você deve usar VBR versus CRB?
-Quando se trata de selecionar VBR versus CBR, é quase sempre recomendável usar VBR para seus arquivos de mídia. O VBR fornece arquivos de maior qualidade a taxas de bits competitivas. Ao usar VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima para 1,5x a taxa de bits do vídeo do público alvo.
+Quando se trata de selecionar VBR versus CBR, é quase sempre recomendável usar VBR para seus arquivos de mídia. O VBR fornece arquivos de maior qualidade a taxas de bits competitivas. Ao usar o VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima como 1,5x a taxa de bits de vídeo do público alvo.
 
 Ao escolher uma predefinição de codificação de vídeo, considere a velocidade de conexão do usuário final do público alvo. Escolha uma predefinição com uma taxa de dados que seja 80% dessa velocidade. Por exemplo, se a velocidade de conexão do usuário final do público alvo for de 1000 Kbps, a melhor predefinição será aquela com uma taxa de dados de vídeo de 800 Kbps.
 
@@ -567,7 +567,7 @@ Ou, se você pretende usar as tags padrão no AEM, ignore essa tarefa e vá para
 
 >[!NOTE]
 >
->Depois que o serviço de nuvem é configurado, não é necessária uma configuração adicional para habilitar o agente de replicação de Publicação do YouTube como esse ponto. O motivo é que ela foi ativada quando a configuração do serviço de nuvem foi salva.
+>Depois que o serviço de nuvem é configurado, não é necessária uma configuração adicional para ativar o agente de replicação de Publicação do YouTube neste momento. O motivo é que ela foi ativada quando a configuração do serviço de nuvem foi salva.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -777,7 +777,7 @@ Para obter informações mais detalhadas sobre o progresso, você pode monitorar
 
 ### (Opcional) Verificação do vídeo publicado no YouTube {#optional-verifying-the-published-video-on-youtube}
 
-Opcionalmente, você pode monitorar o progresso da publicação no YouTube (ou desfazer a publicação).
+Como opção, você pode monitorar o progresso da publicação no YouTube (ou desfazer a publicação).
 
 Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
