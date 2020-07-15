@@ -2,9 +2,9 @@
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.7.0
 description: Notas de versão do Experience Manager para 2020.7.0
 translation-type: tm+mt
-source-git-commit: 22a025b49444e08d014e0459443751b5a3cfc7bf
+source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '365'
 ht-degree: 20%
 
 ---
@@ -52,7 +52,7 @@ A data de lançamento da versão 2020.7.0 do [!UICONTROL Cloud Manager] é 9 de 
 
 ## Novidades do Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-Siga esta seção para saber mais sobre as novidades e as atualizações do Cloud Readiness Analyzer.
+Siga esta seção para saber mais sobre as novidades e as atualizações do Cloud Readiness Analyzer Versão v1.0.2.
 
 ### Correções de erros {#cra-bug-fixes}
 
