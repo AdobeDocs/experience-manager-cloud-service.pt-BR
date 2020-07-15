@@ -2,7 +2,7 @@
 title: Uso de adaptadores Sling
 description: Como deslizar o oferta e o padrão do adaptador para converter convenientemente objetos que implementam a interface adaptável
 translation-type: tm+mt
-source-git-commit: 24e75871113d3dae903911cc28c0c2c8a994a04e
+source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
 workflow-type: tm+mt
 source-wordcount: '2083'
 ht-degree: 1%
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# Uso de adaptadores Sling{#using-sling-adapters}
+# Uso de adaptadores Sling {#using-sling-adapters}
 
 [Sling](https://sling.apache.org) oferta um padrão [](https://sling.apache.org/site/adapters.html) Adaptador para converter convenientemente objetos que implementam a interface [Adaptável](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) . Essa interface fornece um método genérico [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) que traduzirá o objeto para o tipo de classe que está sendo passado como argumento.
 
