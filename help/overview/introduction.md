@@ -1,20 +1,20 @@
 ---
 title: Introdução ao Adobe Experience Manager as a Cloud Service
 description: 'Introdução ao Adobe Experience Manager (AEM) as a Cloud Service. '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Uma introdução ao Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
+# Introdução ao Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
 Agora o [Adobe Experience Manager](https://www.adobe.com/br/marketing/experience-manager.html) (AEM) está disponível como Cloud Service.
 
-Adobe Experience Manager as a Cloud Service
+Adobe Experience Manager as a Cloud Service:
 
 * É a maneira nativa em nuvem de aproveitar os aplicativos do AEM.
 
@@ -76,8 +76,8 @@ O AEM atinge esses objetivos adotando as principais características dos serviç
 
 * [Novidades e diferenças](/help/overview/what-is-new-and-different.md) entre o Adobe Experience Manager as a Cloud Service e as versões anteriores
 * A [Arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager as a Cloud Service
-* [Alterações notáveis no AEM como Cloud Service (Notas de versão)](/help/release-notes/aem-cloud-changes.md)
-* [Alterações importantes no Sites as a AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Alterações importantes no AEM as a Cloud Service (notas de versão)](/help/release-notes/aem-cloud-changes.md)
+* [Alterações importantes no AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Alterações importantes no AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 * [Introdução ao Assets as a Cloud Service](/help/assets/overview.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
