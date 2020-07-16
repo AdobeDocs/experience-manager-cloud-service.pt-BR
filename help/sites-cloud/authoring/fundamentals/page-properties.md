@@ -1,11 +1,11 @@
 ---
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1538'
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,8 @@ As propriedades são distribuídas por várias guias.
 * **URL personalizada**
 
    * Permite que você insira uma vanity URL para esta página, o que pode permitir que você tenha um URL menor e/ou mais expressivo.
-   * Por exemplo, se o URL personalizado estiver definido como `welcome` para a página identificada pelo caminho `/v1.0/startpage` para o site `http://example.com`, em seguida, `http://example.com/welcome`será o URL personalizado de `http://example.com/content/v1.0/startpage`
+   * Por exemplo, se o URL personalizado estiver definido como `welcome` para a página identificada pelo caminho`/v1.0/startpage` para o site `http://example.com`, em seguida, `http://example.com/welcome`será o URL personalizado de `http://example.com/content/v1.0/startpage`
+
    >[!CAUTION]
    >
    >URLs personalizadas:
@@ -87,7 +88,7 @@ As propriedades são distribuídas por várias guias.
 
    * Indica se você deseja que a página use a URL personalizada.
 
-### Avançado     {#advanced}
+### Avançado  {#advanced}
 
 * **Idioma**
 
@@ -149,7 +150,7 @@ As propriedades são distribuídas por várias guias.
 
    * Especifique uma configuração de exportação.
 
-### Miniatura     {#thumbnail}
+### Miniatura  {#thumbnail}
 
 Exibe a imagem de miniatura da página. É possível:
 
@@ -185,6 +186,7 @@ Exibe a imagem de miniatura da página. É possível:
 * **Configurações do Cloud Service**
 
    * Defina as propriedades para os serviços em nuvem.
+
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -193,6 +195,7 @@ Exibe a imagem de miniatura da página. É possível:
 * **Configurações do ContextHub**
 
    * Selecione Configuração do ContextHub e Caminho de segmentos.
+
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -202,13 +205,14 @@ Exibe a imagem de miniatura da página. É possível:
    >[!NOTE]
    >Para selecionar essa opção, é necessário que a conta de usuário esteja no `Target Adminstrators`grupo.
 
-### Permissões     {#permissions}
+### Permissões  {#permissions}
 
 * **Permissões**
 
    * Adicionar permissões
    * Editar grupo de usuários fechado
    * Exibir as permissões efetivas
+
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -220,19 +224,20 @@ Exibe a imagem de miniatura da página. É possível:
 * **Blueprint**
 
    * Defina as propriedades para uma página do Blueprint no gerenciamento de vários sites.
+
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
 
-### Live Copy     {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
    * Defina as propriedades para uma página de Live Copy no gerenciamento de vários sites. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site     {#site-structure}
+### Estrutura do site  {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
@@ -264,7 +269,7 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 
 1. Abra a página na qual deseja editar as propriedades.
 1. Selecione o ícone **Informações da página** para abrir o menu de seleção:
-1. Selecione a opção **Abrir propriedades** e uma caixa de diálogo será aberta permitindo que você edite as propriedades, escolhidas através da guia adequada. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
+1. Selecione a opção **Abrir propriedades** e será exibida uma caixa de diálogo para você editar as propriedades classificadas por guia. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
    * **Cancelar**
    * **Salvar e fechar**
 1. Use o botão **Salvar e fechar** para salvar as alterações.
@@ -275,7 +280,7 @@ No console **Sites**, é possível selecionar várias páginas e usar **Propried
 
 >[!NOTE]
 >
->A edição de itens em massa das propriedades também está disponível para os Ativos. É muito semelhante, mas difere em alguns pontos. Consulte Editar propriedades de vários ativos para obter detalhes.
+>A edição em massa de propriedades também está disponível no Assets. É muito semelhante, mas difere em alguns pontos. Consulte Editar propriedades de vários ativos para obter detalhes.
 >
 >Também existe o Editor de itens em massa, que permite que você pesquise o conteúdo de várias páginas usando o GQL (Google Query Language) e, em seguida, editar o conteúdo diretamente no editor de itens em massa antes de salvar as alterações para as páginas de origem.
 
