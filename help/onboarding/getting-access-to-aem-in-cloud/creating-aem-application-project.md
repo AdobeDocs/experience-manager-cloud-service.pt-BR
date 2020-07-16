@@ -2,9 +2,9 @@
 title: Projeto de aplicativo AEM - Cloud Service
 description: Projeto de aplicativo AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 528873fec97958646b2a0d7d64281c76ee1d021d
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1138'
 ht-degree: 11%
 
 ---
@@ -72,6 +72,9 @@ O Cloud Manager cria e testa seu código usando um ambiente de compilação espe
 * Cada obra é feita com um ambiente intocado; o container build não mantém nenhum estado entre as execuções.
 * Maven é sempre executado com o comando: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * O Maven é configurado no nível do sistema com um arquivo settings.xml que inclui automaticamente o repositório público do Adobe **Artifato** . (Consulte o Repositório [do](https://repo.adobe.com/) Adobe Public Maven para obter mais detalhes).
+
+>[!NOTE]
+>Embora o Gerenciador de nuvem não defina uma versão específica do `jacoco-maven-plugin`, a versão usada deve ser pelo menos `0.7.5.201505241946`.
 
 ### Uso do Java 11 {#using-java-11}
 
