@@ -1,22 +1,22 @@
 ---
 title: Sistema de estilos
-description: O Sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente, de modo que o autor de conteúdo possa selecioná-los ao editar o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
-translation-type: tm+mt
+description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
+translation-type: ht
 source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1329'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # Sistema de estilos{#style-system}
 
-O Sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente, de modo que o autor de conteúdo possa selecioná-los ao editar o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando esse componente mais flexível.
+O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando esse componente mais flexível.
 
 Isso elimina a necessidade de desenvolver um componente personalizado para cada estilo ou personalizar a caixa de diálogo do componente para permitir essa funcionalidade de estilo. Isso resulta em componentes mais reutilizáveis, que podem ser adaptados de forma rápida e fácil às necessidades dos autores de conteúdo, sem exigir uma implantação de back-end no AEM.
 
-## Caso de uso    {#use-case}
+## Caso de uso  {#use-case}
 
 Os autores de modelos precisam ter a capacidade de configurar a forma como os componentes funcionam para os autores de conteúdo, bem como configurar algumas variações visuais alternativas de um componente.
 
@@ -67,7 +67,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 1. Configure as classes CSS que deseja disponibilizar para os autores de conteúdo, conforme descrito na seção [Como um autor de modelo](#as-a-template-author).
 1. Os autores de conteúdo podem usar os estilos conforme descrito na seção [Como um autor de conteúdo](#as-a-content-author).
 
-### Como um autor de conteúdo    {#as-a-content-author}
+### Como autor de conteúdo  {#as-a-content-author}
 
 1. Depois de instalar o projeto WKND, navegue até a página inicial principal no idioma inglês da WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e edite a página.
 1. Selecione um componente de **Título** mais abaixo da página
@@ -82,7 +82,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
    >
    >Neste exemplo, os estilos de **Cores** (**Preto**, **Branco** e **Cinza**) são mutuamente exclusivos, enquanto as opções de **Estilo** (**Sublinhado**, **Alinhar à direita** e **Miniespaçamento**) podem ser combinadas. Isso pode ser [configurado no modelo como o autor do modelo](#as-a-template-author).
 
-### Como um autor de modelo    {#as-a-template-author}
+### Como autor de modelo  {#as-a-template-author}
 
 1. Ao editar a página inicial mestre em inglês do WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite o modelo da página em **Informações da página -> Editar modelo**.
 
@@ -100,6 +100,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
    * **Estilos podem ser combinados:** permite a seleção simultânea de vários estilos desse grupo.
    * **Nome do estilo:** a descrição do estilo que será exibida para o autor do conteúdo ao configurar o estilo do componente.
    * **Classes de CSS:** o nome real da classe CSS associada ao estilo.
+
    Use as alças de arrastar para organizar a ordem dos grupos e dos estilos nos grupos. Use os ícones Adicionar ou Excluir para adicionar ou remover grupos ou estilos nos grupos.
 
 >[!CAUTION]
@@ -116,33 +117,33 @@ As etapas a seguir são necessárias apenas para ativar o Sistema de estilos par
 
 ### Habilitar guia Estilo na caixa de diálogo Design {#enable-styles-tab-design}
 
-Para que um componente funcione com o Sistema de estilo do AEM e mostre a guia de estilo em sua caixa de diálogo de design, o desenvolvedor do componente deve incluir a guia de estilo com as seguintes configurações no componente:
+Para que um componente funcione com o sistema de estilos do AEM e mostre a guia Estilo na caixa de diálogo Design, o desenvolvedor do componente deve incluir essa guia com as seguintes configurações no componente:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Isso usa [sobreposições](/help/implementing/developing/introduction/overlays.md), por meio da Fusão [de Recursos de](/help/implementing/developing/introduction/sling-resource-merger.md)Sling.
+>Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Com o componente configurado, os estilos configurados pelos autores da página serão inseridos automaticamente pelo AEM no elemento de decoração que o AEM adiciona ao redor de cada componente editável. O componente não precisa fazer mais nada para que isso ocorra.
 
 ### Habilitar a guia Estilos na caixa de diálogo Editar {#enable-styles-tab-edit}
 
-Uma guia Estilos opcional na caixa de diálogo Editar também está disponível. Diferentemente da guia Caixa de diálogo de design, a guia na caixa de diálogo Editar não é essencial para o funcionamento do Sistema de estilo, mas é uma interface alternativa opcional para um autor de conteúdo definir estilos.
+Uma guia Estilos opcional na caixa de diálogo Editar também está disponível. Diferentemente da guia Design, a guia Editar não é essencial para o funcionamento do sistema de estilos, mas é uma interface alternativa e opcional para um autor de conteúdo definir estilos.
 
-A guia da caixa de diálogo Editar pode ser incluída de maneira semelhante na guia da caixa de diálogo Design:
+A guia Editar pode ser incluída de maneira semelhante na guia Design:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Isso usa [sobreposições](/help/implementing/developing/introduction/overlays.md), por meio da Fusão [de Recursos de](/help/implementing/developing/introduction/sling-resource-merger.md)Sling.
+>Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
 >A guia Estilos na caixa de diálogo Editar não está habilitada por padrão.
 
-### Estilos com nomes de elemento    {#styles-with-element-names}
+### Estilos com nomes de elemento  {#styles-with-element-names}
 
 Um desenvolvedor também pode configurar uma lista de nomes de elementos permitidos para os estilos no componente por meio da propriedade de matriz da sequência `cq:styleElements`. Na guia Estilos da política na caixa de diálogo de design, o autor do modelo também pode escolher um nome de elemento para definir cada estilo. Isso definirá o nome de elemento do wrapper.
 
@@ -156,11 +157,12 @@ Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 >
 >1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
->1. Por fim, a `cq:tagName`/ `cq:htmlTag` do componente será considerada como um valor de fallback.
+>1. Por fim, a `cq:htmlTag`/ `cq:tagName` do componente será considerada um valor de fallback.
+
 >
 
 
 
-Essa capacidade de definir nomes de estilo é útil para componentes muito genéricos, como o Contêiner de layout ou o componente de Fragmento do conteúdo, para oferecer-lhes significado adicional.
+Essa capacidade de definir nomes de estilo é útil para componentes muito genéricos, como o Contêiner de layout ou o componente de Fragmento de conteúdo, para oferecer-lhes significado adicional.
 
 Por exemplo, permite que um Contêiner de layout receba uma semântica como `<main>`, `<aside>`, `<nav>`, etc.
