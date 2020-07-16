@@ -1,11 +1,11 @@
 ---
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a0e58c626f94b778017f700426e960428b657806
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1871'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,12 +18,12 @@ Consulte a seção abaixo para entender considerações importantes na execuçã
 
 * O relatório do CRA é criado usando a saída do [Detector de padrões](https://docs.adobe.com/content/help/br/experience-manager-65/deploying/upgrading/pattern-detector.html) do Adobe Experience Manager (AEM). A versão do Detector de padrões usada pelo CRA está incluída no pacote de instalação do CRA.
 
-* CRA may only be run by the **admin** user or a user in the **administrators** group.
+* O CRA só pode ser executado pelo usuário **administrador** ou por um usuário do grupo **de administradores**.
 
-* O CRA tem suporte em instâncias do AEM com a versão 6.1 e superior.
+* As instâncias do AEM suportam o CRA nas versões 6.1 e superiores.
 
    >[!NOTE]
-   > Consulte [Instalação no AEM 6.1](#installing-on-aem61) para obter os requisitos especiais para instalar o CRA no AEM 6.1.
+   > Consulte [Instalação no AEM 6.1](#installing-on-aem61) para conhecer os requisitos especiais de instalação do CRA no AEM 6.1.
 
 * O CRA pode ser executado em qualquer ambiente, mas é preferível executá-lo em um ambiente de *Preparo*.
 
@@ -36,7 +36,7 @@ Consulte a seção abaixo para entender considerações importantes na execuçã
 
 ## Disponibilidade {#availability}
 
-O Cloud Readiness Analyzer pode ser baixado como um arquivo zip do portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM).
+É possível baixar o arquivo ZIP do Cloud Readiness Analyzer no Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >Baixe o Cloud Readiness Analyzer no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
@@ -185,10 +185,10 @@ O valor dessa propriedade é o tempo de vida do cache em segundos. Um administra
 
 ### Instalação no AEM 6.1 {#installing-on-aem61}
 
-O CRA utiliza uma conta de usuário do serviço do sistema chamada `repository-reader-service` para executar o Detector de padrão. Esta conta está disponível no AEM 6.2 e posterior. No AEM 6.1, essa conta deve ser criada *antes* da instalação do CRA, executando as seguintes etapas:
+O CRA usa uma conta de usuário do serviço do sistema chamada `repository-reader-service` para executar o Detector de padrões. Essa conta está disponível no AEM 6.2 e nas versões posteriores. No AEM 6.1, essa conta deve ser criada *antes* da instalação do CRA, com a execução as seguintes etapas:
 
-1. Siga as instruções em [Criar um novo usuário](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) de serviço para criar um usuário. Defina UserID como Caminho intermediário `repository-reader-service` e deixe-o vazio e clique na marca de seleção verde.
+1. Siga as instruções em [Criar um novo usuário de serviço](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/administering/security/security-service-users.translate.html#creating-a-new-service-user) para criar um usuário. Defina a UserID como `repository-reader-service`, deixe o Caminho intermediário vazio e clique na marca de seleção verde.
 
-2. Siga as instruções em [Gerenciar usuários e grupos](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), especificamente as instruções para Adicionar usuários a um grupo para adicionar o `repository-reader-service` usuário ao `administrators` grupo.
+2. Siga as instruções em [Gerenciar usuários e grupos](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/administering/security/security.translate.html#managing-users-and-groups), especificamente as instruções para adicionar usuários a um grupo, para adicionar o usuário `repository-reader-service` ao grupo `administrators`.
 
-3. Instale o pacote CRA via Gerenciador de pacotes na instância AEM de origem. (Isso adicionará a emenda de configuração necessária à configuração ServiceUserMapper para o usuário do serviço do `repository-reader-service` sistema.)
+3. Instale o pacote do CRA por meio do Gerenciador de pacotes na instância do AEM de origem. (Essa etapa adiciona a alteração de configuração necessária à configuração ServiceUserMapper do usuário de serviço do sistema `repository-reader-service`.)
