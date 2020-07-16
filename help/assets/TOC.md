@@ -1,11 +1,11 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 + [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [Visão geral e novidades](overview.md)
-+ [Alterações importantes para AEM Assets as a Cloud Service](assets-cloud-changes.md)
++ [Alterações importantes no AEM Assets as a Cloud Service](assets-cloud-changes.md)
 + [Arquitetura](architecture.md)
 + [Formatos de arquivo não suportados](file-format-support.md)
 + [Visão geral dos microsserviços de ativos](asset-microservices-overview.md)
@@ -44,7 +44,7 @@ ht-degree: 98%
 + Configurar, administrar e estender ativos {#admin}
    + [APIs e material de referência](developer-reference-material-apis.md)
    + [Esquema de metadados de pastas](folder-metadata-schema.md)
-   + [Sobre como trabalhar com perfis de imagem e perfis de vídeo](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [Trabalhar com perfis de imagem e perfis de vídeo](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [Configurar tags inteligentes](smart-tags-configuration.md)
    + [Ativos multilíngues e tradução de ativos](translate-assets.md)
    + [Pesquisar aspectos](search-facets.md)
