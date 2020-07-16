@@ -2,11 +2,11 @@
 title: Tags inteligentes aprimoradas
 description: Aplique tags comerciais contextuais e descritivas usando o serviço de IA e aprendizado de máquina do Adobe Sensei para melhorar a descoberta de ativos e a velocidade do conteúdo.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ A funcionalidade Tag inteligentes está disponível para compra como suplemento 
 
 Antes de marcar as imagens usando o SCS, integre o [!DNL Adobe Experience Manager] ao serviço de Tags inteligentes usando o Console do desenvolvedor. No back-end, o servidor do [!DNL Experience Manager] autentica suas credenciais de serviço no gateway do Console do desenvolvedor antes de encaminhar sua solicitação ao serviço.
 
-* Crie uma configuração no [!DNL Experience Manager] para gerar uma chave pública. [Obtenha um certificado público para a integração com o OAuth.](#obtain-public-certificate)
-* [Crie uma integração no Console do desenvolvedor e faça upload da chave pública gerada.](#create-aio-integration)
-* [Configure Tags](#configure-smart-content-service) inteligentes em sua [!DNL Experience Manager] instância usando a chave da API e outras credenciais do Adobe Developer Console.
+* Crie uma configuração no [!DNL Experience Manager] para gerar uma chave pública. [Obtenha um certificado público](#obtain-public-certificate) para a integração OAuth.
+* [Crie uma integração no Console do desenvolvedor](#create-aio-integration) e faça upload da chave pública gerada.
+* [Configure tags inteligentes](#configure-smart-content-service) na sua instância do [!DNL Experience Manager] usando a chave da API e outras credenciais do Console do desenvolvedor.
 * [Teste a configuração](#validate-the-configuration).
-* [Reconfigure após a expiração](#certrenew)do certificado.
+* [Reconfigure após a expiração do certificado](#certrenew).
 
 ### Pré-requisitos para a integração com o Console do desenvolvedor {#prerequisite-for-aio-integration}
 
