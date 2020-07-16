@@ -1,11 +1,11 @@
 ---
 title: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 description: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 99%
 O AEM Cloud Service oferece muitos novos recursos e possibilidades para gerenciar os projetos do AEM. No entanto, existem várias diferenças entre o AEM Sites no local ou no Adobe Managed Services, em comparação ao AEM Cloud Service. Este documento destaca as diferenças importantes.
 
 >[!NOTE]
->Este documento destaca as alterações importantes no AEM como um todo. Para obter mais informações e alterações específicas da solução, consulte:
+>Este documento destaca as alterações importantes no AEM como um todo. Para obter mais informações e conhecer as alterações específicas de cada solução, consulte:
 >
->* [Uma introdução ao Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
+>* [Introdução ao Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Novidades e diferenças](/help/overview/what-is-new-and-different.md) entre o Adobe Experience Manager as a Cloud Service e as versões anteriores
 >* A [Arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager as a Cloud Service
->* [Alterações importantes no Sites as a AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Alterações importantes no AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 >* [Alterações importantes no AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
 
@@ -44,7 +44,7 @@ As principais diferenças encontram-se nas seguintes áreas:
 
 ## /apps e /libs não mudam no tempo de execução {#apps-libs-immutable}
 
-O conteúdo e as subpastas em `/apps` e `/libs` são somente leitura. Qualquer recurso ou código personalizado que espere fazer alterações nesse local falhará. Será retornado um erro de que esse conteúdo é somente leitura e que não foi possível concluir a operação de gravação. Isso tem impacto em várias áreas do AEM:
+O conteúdo e as subpastas em `/apps` e `/libs` são somente leitura. Não é possível fazer alterações nesses locais com recursos ou códigos personalizados. As tentativas de alteração recebem uma mensagem de erro com um aviso de que o conteúdo é do tipo somente leitura e não foi possível concluir a operação. Isso tem impacto em várias áreas do AEM:
 
 * Não são permitidas alterações em `/libs` de forma alguma.
    * Essa não é uma regra nova, no entanto, não foi aplicada nas versões anteriores do AEM no local.
