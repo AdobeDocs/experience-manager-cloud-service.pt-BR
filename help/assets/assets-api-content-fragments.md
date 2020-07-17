@@ -2,7 +2,7 @@
 title: Adobe Experience Manager como suporte a fragmentos de conteúdo do Cloud Service na API HTTP Assets
 description: Saiba mais sobre o Adobe Experience Manager como suporte a fragmentos de conteúdo do Cloud Service na API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -211,7 +211,7 @@ A API REST de ativos expõe o acesso às propriedades de uma pasta; por exemplo,
 
 Se um ativo for solicitado, a resposta retornará seus metadados; como título, nome e outras informações, conforme definido pelo respectivo schema de ativos.
 
-Os dados binários de um ativo são expostos como um link SIREN do tipo `content` (também conhecido como o `rel attribute`).
+Os dados binários de um ativo são expostos como um link SIREN do tipo `content`.
 
 Os ativos podem ter várias representações. Normalmente, são expostos como entidades filhas, uma exceção é uma execução em miniatura, que é exposta como um link do tipo `thumbnail` ( `rel="thumbnail"`).
 
@@ -244,7 +244,7 @@ O conteúdo associado não está exposto no momento.
 
 O uso pode ser diferente se você estiver usando um autor ou ambiente de publicação do AEM, juntamente com seu caso de uso específico.
 
-* A criação é estritamente vinculada a uma instância do autor ([e atualmente não há como replicar um fragmento para publicação usando essa API](/help/assets/assets-api-content-fragments.md#limitations)).
+* É altamente recomendável que a criação seja vinculada a uma instância do autor ([e atualmente não há como replicar um fragmento para publicação usando essa API](/help/assets/assets-api-content-fragments.md#limitations)).
 * O Delivery é possível de ambos, pois o AEM serve o conteúdo solicitado somente no formato JSON.
 
    * O Armazenamento e o delivery de uma instância de autor de AEM devem ser suficientes para aplicativos de biblioteca de mídia atrás do firewall.
