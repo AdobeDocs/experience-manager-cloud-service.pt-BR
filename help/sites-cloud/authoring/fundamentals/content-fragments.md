@@ -2,10 +2,10 @@
 title: Fragmentos de conteúdo
 description: Os Fragmentos de conteúdo do Adobe Experience Manager as a Cloud Service permitem projetar, criar, selecionar e usar conteúdo independente da página
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 94%
 
 ---
 
@@ -80,6 +80,10 @@ Os fragmentos do conteúdo permitem:
 
 Abra a caixa de diálogo **Configuração** do fragmento para configurar o fragmento para o uso na página atual. A caixa de diálogo pode depender do componente usado.
 
+>[!NOTE]
+>
+>Consulte também Componentes [principais, o Componente de fragmento de conteúdo](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/content-fragment-component.html)
+
 Na caixa de diálogo de configuração apropriada, você pode selecionar os parâmetros disponíveis, incluindo:
 
 * **Fragmento de conteúdo**
@@ -132,7 +136,7 @@ Para conteúdo intermediário, você pode:
 >
 >Você também pode [inserir ativos visuais (imagens) ao fragmento propriamente dito](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Os ativos visuais inseridos no fragmento propriamente dito são anexados ao parágrafo anterior no fragmento. Isso significa que não é possível posicionar conteúdo intermediário entre um ativo visual e o parágrafo anterior.
+>Os ativos visuais inseridos no fragmento propriamente dito são anexados ao parágrafo anterior no fragmento. Isso significa que não é possível posicionar conteúdo intermediário entre um ativo visual e o parágrafo anterior. Se você precisar desse nível de conexão, poderá adicionar a imagem ao fragmento (como um fragmento [de mídia](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)mista).
 
 >[!CAUTION]
 >
@@ -149,7 +153,7 @@ Isso causa a impressão de que o posicionamento relativo mudou, pois os parágra
 
 ### Usar conteúdo associado  {#using-associated-content}
 
-Se você tiver [associado o conteúdo](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial de conteúdo do [conteúdo intermediário](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Se você tiver [associado o conteúdo](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -167,7 +171,7 @@ Aqui, é possível arrastar os ativos para o local desejado (para um componente 
 
 ### Ativos inseridos no fragmento {#assets-inserted-into-the-fragment}
 
-Se os ativos (por exemplo, imagens) tiverem sido inseridos no próprio fragmento, as opções para editar esses ativos no editor de páginas serão limitadas.
+If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
 
 Por exemplo, para uma imagem, é possível
 
