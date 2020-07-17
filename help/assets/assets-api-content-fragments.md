@@ -2,7 +2,7 @@
 title: Adobe Experience Manager como suporte a fragmentos de conteúdo do Cloud Service na API HTTP Assets
 description: Saiba mais sobre o Adobe Experience Manager como suporte a fragmentos de conteúdo do Cloud Service na API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -67,7 +67,7 @@ Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, sol
 >[!NOTE]
 >Acesso através de:
 >* `/api/assets` **não** necessita do uso do `.model` seletor.
->* `/content/assets` **não** requer o uso do `.model` seletor.
+>* `/content/path/to/page` **não** requer o uso do `.model` seletor.
 
 
 O método HTTP determina a operação a ser executada:
@@ -207,7 +207,7 @@ A API REST de ativos expõe o acesso às propriedades de uma pasta; por exemplo,
 >
 >Dependendo do tipo de ativo dos ativos e pastas filho, a lista de entidades filhas já pode conter o conjunto completo de propriedades que define a respectiva entidade-filho. Como alternativa, apenas um conjunto reduzido de propriedades pode ser exposto para uma entidade nesta lista de entidades-filho.
 
-### Ativos {#assets}
+### Assets {#assets}
 
 Se um ativo for solicitado, a resposta retornará seus metadados; como título, nome e outras informações, conforme definido pelo respectivo schema de ativos.
 
@@ -302,7 +302,7 @@ O uso é feito via:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Limitações          {#limitations}
+## Limitações           {#limitations}
 
 Há algumas limitações:
 
