@@ -2,7 +2,7 @@
 title: Trabalho com fragmentos de conteúdo
 description: Saiba como os Fragmentos de conteúdo no Adobe Experience Manager (AEM) como Cloud Service permitem que você crie, crie, prepare e use conteúdo independente de página.
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: a5b0d8789a50974c5b633feb5a84824b5999916c
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 6%
@@ -249,7 +249,7 @@ Para criar, editar e usar fragmentos de conteúdo, você também precisa:
    * As definições dos modelos de conteúdo exigem um título e um elemento de dados; tudo o resto é opcional.
    * O modelo pode definir o conteúdo padrão - se aplicável.
    * Os autores não podem alterar a estrutura definida ao criar o conteúdo do fragmento.
-   * As alterações feitas em um modelo após a criação de fragmentos de conteúdo dependentes afetarão esses fragmentos de conteúdo.
+   * As alterações feitas em um modelo após a criação de fragmentos de conteúdo dependentes podem afetar esses fragmentos de conteúdo.
 
 * **Componente do fragmento do conteúdo**
 
