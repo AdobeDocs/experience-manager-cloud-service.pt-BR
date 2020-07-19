@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Use ativos disponíveis em uma implantação [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
+source-git-commit: 97830590ba66e90c324770fa57b3ff11a760677f
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 53%
+source-wordcount: '2082'
+ht-degree: 44%
 
 ---
 
@@ -38,10 +38,10 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 
 ### Formatos de arquivo não suportados {#mimetypes}
 
-Os autores podem pesquisar imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao componente `Download` e as imagens podem ser adicionadas ao componente `Image`. Authors can also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Os formatos suportados são:
+Os autores pesquisam por imagens e pelos seguintes tipos de documentos no Localizador de conteúdo e usam os ativos pesquisados no Editor de páginas. Documentos são adicionados ao `Download` componente e às imagens ao `Image` componente. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Os formatos suportados são:
 
 * **Formatos** de imagem: Os formatos suportados pelo componente [](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) de Imagem. [!DNL Dynamic Media] as imagens não são compatíveis.
-* **Formatos de documento**: consulte [Formatos de documento compatíveis com os Connected Assets](file-format-support.md#document-formats).
+* **Formatos** de Documento: Consulte os formatos [de documento](file-format-support.md#document-formats)suportados.
 
 ### Usuários e grupos envolvidos {#users-and-groups-involved}
 
@@ -58,9 +58,9 @@ As várias funções envolvidas para configurar e usar o recurso e seus grupos d
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
-An [!DNL Experience Manager] administrator can create this integration. Once created, the permissions required to use it are established via user groups that are defined on the [!DNL Sites] deployment and on the DAM deployment.
+An [!DNL Experience Manager] administrator can create this integration. Depois de criadas, as permissões necessárias para usá-las são estabelecidas por meio de grupos de usuários. Os grupos de usuários são definidos na [!DNL Sites] implantação e na implantação do DAM.
 
-To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps.
+To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps:
 
 1. Access an existing [!DNL Sites] deployment or create a deployment using the following command:
 
@@ -75,13 +75,14 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
    1. [!DNL Assets] o local é `https://[assets_servername_ams]:[port]`.
    1. Credenciais de um distribuidor do DAM (usuário técnico).
-   1. No campo **[!UICONTROL Ponto de montagem]**, insira o caminho do local onde o busca os ativos. [!DNL Experience Manager][!DNL Experience Manager] Por exemplo, pasta `remoteassets`.
+   1. In the **[!UICONTROL Mount Point]** field, enter the local [!DNL Experience Manager] path where [!DNL Experience Manager] fetches the assets. Por exemplo, pasta `remoteassets`.
 
    1. Ajuste os valores do **[!UICONTROL Limite de otimização da transferência do binário original]**, dependendo da sua rede. Uma representação de ativos maior que esse limite é transferida de forma assíncrona.
    1. Selecione **[!UICONTROL Datastore compartilhado com o Connected Assets]**, se você usar um datastore para armazenar seus ativos e se o Datastore for o armazenamento comum entre as duas implantações do Nesse caso, o limite não importa, pois os binários de ativos reais residem no datastore e não são transferidos.
-      ![Uma configuração normal do Connected Assets](assets/connected-assets-typical-config.png)
 
-      *Figura: uma configuração normal do Connected Assets.*
+   ![Uma configuração normal do Connected Assets](assets/connected-assets-typical-config.png)
+
+   *Figura: uma configuração normal do Connected Assets.*
 
 1. Como os ativos já são processados e as representações são buscadas, desative os inicializadores do fluxo de trabalho. Adjust the launcher configurations on the local ([!DNL Sites]) deployment to exclude the `connectedassets` folder, in which the remote assets are fetched.
 
@@ -103,28 +104,28 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    >
    >Todas as representações disponíveis na implantação remota do são buscadas, quando os autores buscam um ativo. Se você quiser criar mais representações de um ativo buscado, pule esta etapa de configuração. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
-1. Add the [!DNL Sites] instance as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Assets'] CORS configuration.
+1. Add the [!DNL Sites] deployment as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Assets'] CORS configuration.
 
    1. Faça logon usando as credenciais de administrador. Pesquisar `Cross-Origin`. Acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
 
-   1. To create a CORS configuration for [!DNL Sites] instance, click ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) icon next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+   1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. Salve a configuração.
 
 ## Use ativos remotos {#use-remote-assets}
 
-Os autores do site usam o Localizador de conteúdo para se conectar à instância do DAM. Os autores podem procurar, buscar e arrastar os ativos remotos em um componente. Para autenticar no DAM remoto, mantenha acessíveis as credenciais do usuário do DAM fornecidas pelo administrador.
+Os autores do site usam o Localizador de conteúdo para se conectar à implantação do DAM. Os autores podem procurar, buscar e arrastar os ativos remotos em um componente. Para autenticar no DAM remoto, mantenha acessíveis as credenciais do usuário do DAM fornecidas pelo administrador.
 
-Os autores podem usar os ativos disponíveis nas instâncias de DAM local e DAM remota, em uma única página da Web. Use o Localizador de conteúdo para alternar entre a pesquisa no DAM local ou a pesquisa no DAM remoto.
+Os autores podem usar os ativos disponíveis no DAM local e a implantação remota do DAM, em uma única página da Web. Use o Localizador de conteúdo para alternar entre a pesquisa no DAM local ou a pesquisa no DAM remoto.
 
-Only those tags of remote assets are fetched that have an exact corresponding tag along with the same taxonomy hierarchy, available on the local [!DNL Sites] instance. Quaisquer outras tags são descartadas. Authors can search for remote assets using all the tags present on the remote [!DNL Experience Manager] deployment, as it offers a full-text search.
+Somente as tags de ativos remotos que têm uma tag correspondente exata junto com a mesma hierarquia de taxonomia, estão disponíveis na [!DNL Sites] implantação local. Quaisquer outras tags são descartadas. Authors can search for remote assets using all the tags present on the remote [!DNL Experience Manager] deployment, as it offers a full-text search.
 
 ### Apresentação do uso {#walk-through-of-usage}
 
 Use a configuração acima para ter uma experiência de criação a fim de entender a funcionalidade. Use documentos ou imagens de sua escolha na implantação remota do DAM.
 
 1. Navigate to the [!DNL Assets] interface on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from [!DNL Experience Manager] workspace. Como alternativa, acesse `https://[assets_servername_ams]:[port]/assets.html/content/dam` em um navegador. Carregue os ativos de sua escolha.
-1. On the [!DNL Sites] instance, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Forneça `ksaner` como nome de usuário, selecione a opção fornecida e clique em **[!UICONTROL OK]**.
+1. On the [!DNL Sites] deployment, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Forneça `ksaner` como nome de usuário, selecione a opção fornecida e clique em **[!UICONTROL OK]**.
 1. Abra uma página do site We.Retail em **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL br]** > **[!UICONTROL pt]**. Edite a página. Como alternativa, acesse `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` em um navegador para editar uma página.
 
    Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo da página.
@@ -145,7 +146,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
    *Figura: notificação sobre a busca assíncrona de ativos que ocorre em segundo plano.*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. Verifique se os ativos remotos foram buscados com êxito no momento da publicação. Para verificar o status de cada ativo buscado, consulte a interface do usuário de [trabalhos assíncronos](/help/operations/asynchronous-jobs.md).
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used on the page. Verifique se os ativos remotos foram buscados com êxito no momento da publicação. Para verificar o status de cada ativo buscado, consulte a interface do usuário de [trabalhos assíncronos](/help/operations/asynchronous-jobs.md).
 
    >[!NOTE]
    >
@@ -153,7 +154,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
 >[!CAUTION]
 >
->Uma vez usados em uma página da Web, os ativos remotos buscados podem ser pesquisados e usados por qualquer pessoa com permissões para acessar a pasta local em que os ativos buscados são armazenados (`connectedassets` na apresentação acima). Os ativos também podem ser pesquisados e visualizados no repositório local por meio do [!UICONTROL Localizador de conteúdo].
+>Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder. The fetched assets are stored (`connectedassets` in the above walk-through). Os ativos também podem ser pesquisados e visualizados no repositório local por meio do [!UICONTROL Localizador de conteúdo].
 
 Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se os metadados associados não puderem ser editados.
 
@@ -166,7 +167,7 @@ Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se o
 * Os ativos buscados localmente estão disponíveis apenas para fins de criação. Os fluxos de trabalho de atualização de ativos não podem ser aplicados e os metadados não podem ser editados.
 * Somente as imagens e os formatos de documento listados são compatíveis. [!DNL Dynamic Media] ativos, Fragmentos de conteúdo e Fragmentos de experiência não são suportados.
 * Os esquemas de metadados não são buscados.
-* All [!DNL Sites] authors have read permissions on the fetched copies, even if authors do not have access to the remote DAM deployment.
+* Todos os [!DNL Sites] autores têm permissões de leitura nas cópias buscadas, mesmo se os autores não puderem acessar a implantação remota do DAM.
 * Não há suporte de API para personalizar a integração.
 * A funcionalidade suporta pesquisa e uso ininterruptos de ativos remotos. Para disponibilizar muitos ativos remotos em uma só implantação local, você pode migrar os ativos.
 * Não é possível usar um ativo remoto como uma miniatura de página na interface do usuário Propriedades [!UICONTROL da] página. Você pode definir uma miniatura de uma página da Web na interface do usuário Propriedades [!UICONTROL da] página na [!UICONTROL miniatura] clicando em [!UICONTROL Selecionar imagem].
@@ -180,13 +181,14 @@ Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se o
 
 ### Uso {#usage}
 
-* A única funcionalidade compatível é pesquisar ativos remotos e arrastar os ativos remotos na página local para criar conteúdo.
+* Os usuários podem pesquisar ativos remotos e arrastá-los na página local durante a criação. Nenhuma outra funcionalidade é suportada.
 * A operação de busca expira após 5 segundos. Os autores podem ter problemas ao buscar ativos, digamos se houver problemas de rede. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
 * Edições simples que não são destrutivas e a edição compatível por meio do componente `Image` do podem ser realizadas nos ativos buscados. Os ativos são somente leitura.
+* O único método para recuperar o ativo é arrastá-lo para uma página. Não há suporte a API ou outros métodos para recuperar um ativo para atualizá-lo.
 
 ## Solução de problemas {#troubleshoot}
 
-Siga estas etapas para solucionar problemas de cenários de erro comuns:
+Para solucionar problemas do cenário de erro comum, siga estas etapas:
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* Um ativo buscado em um DAM remoto pode não ser publicado em uma página da Web pelos motivos a seguir: ele não existe no local remoto, falta de permissões adequadas para buscá-lo e falha de rede. Verifique se o ativo não foi removido do DAM remoto ou se as permissões não foram alteradas. Verifique se os pré-requisitos apropriados foram atendidos. Tente adicionar o ativo novamente à página e publique-o novamente. Verifique a [lista de trabalhos assíncronos](/help/operations/asynchronous-jobs.md) quanto a erros na busca de ativos.
+* If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
+* Um ativo obtido da barragem remota pode não ser publicado em uma página da Web por um ou mais motivos. Ele não existe no servidor remoto, falta de permissões apropriadas para buscá-lo ou falha na rede pode ser o motivo. Verifique se o ativo não foi removido do DAM remoto. Verifique se as permissões apropriadas estão em vigor e se os pré-requisitos foram atendidos. Tente adicionar o ativo novamente à página e publique-o novamente. Verifique a [lista de trabalhos assíncronos](/help/operations/asynchronous-jobs.md) quanto a erros na busca de ativos.
