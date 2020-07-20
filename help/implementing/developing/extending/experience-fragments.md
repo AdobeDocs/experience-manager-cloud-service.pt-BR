@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é um grupo de um ou mais componentes, incluindo o conteúdo e o layout que podem ser referenciados nas páginas.
 
-Um fragmento de experiência mestre e/ou variável usa:
+Um Fragmento de experiência Principal e/ou uma Variante usa:
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
