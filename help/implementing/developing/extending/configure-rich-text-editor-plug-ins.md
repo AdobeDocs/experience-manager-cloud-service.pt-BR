@@ -545,7 +545,7 @@ Para melhorar a acessibilidade em tais cenários, o RTE suporta células de cabe
 
 Se você especificar o CSS e a string de estilo no código, a classe CSS terá precedência sobre a string de estilo e poderá substituir quaisquer alterações de configuração feitas pela string de estilo.
 
-Para ajudar os autores a aplicar CSS em cabeçalhos ocultos no modo de pré-visualização, você pode incluir os seguintes parâmetros no código:
+Para ajudar os autores a aplicar o CSS em cabeçalhos ocultos no modo de pré-visualização, você pode incluir os seguintes parâmetros no código:
 
 * `hiddenHeaderClassName`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculta no modo de pré-visualização.
 * `hiddenHeaderStyle`: Especifica uma string de estilo que é aplicada na célula de cabeçalho oculto no modo de pré-visualização.
