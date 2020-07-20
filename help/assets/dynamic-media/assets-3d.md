@@ -16,7 +16,7 @@ ht-degree: 5%
 ---
 
 
-# Trabalhar com ativos 3D na Dynamic Media {#working-with-three-d-assets-dm}
+# Working with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}
 
 A Dynamic Media permite que você carregue, gerencie, visualização e entregue ativos 3D como experiências imersivas.
 
