@@ -2,9 +2,9 @@
 title: Adicione seus ativos digitais ao Adobe Experience Manager
 description: Adicione seus ativos digitais ao Adobe Experience Manager como Cloud Service
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1356'
 ht-degree: 2%
 
 ---
@@ -81,7 +81,7 @@ Além disso, a interface do usuário Ativos exibe o ativo mais recente que você
 
 >[!NOTE]
 >
->Para fazer upload de hierarquias de pastas aninhadas para o AEM, consulte o upload [em massa de ativos](#bulk-upload).
+>Para fazer upload de hierarquias de pastas aninhadas para o AEM, consulte [Fazer upload de ativos](#bulk-upload)em massa.
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -127,7 +127,7 @@ No entanto, os seguintes caracteres (lista separada por espaços de) não são s
 * o nome do arquivo de ativo não deve conter `* / : [ \\ ] | # % { } ? &`
 * o nome da pasta de ativos não deve conter `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Upload em massa de ativos {#bulk-upload}
+## Ativos de upload em massa {#bulk-upload}
 
 Para carregar um número maior de arquivos, especialmente se eles existirem em uma hierarquia de pastas aninhadas no disco, as seguintes abordagens podem ser usadas:
 
