@@ -2,7 +2,7 @@
 title: Aplicação de fluxos de trabalho a páginas
 description: Ao criar, você pode invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 81%
@@ -23,8 +23,8 @@ Ao aplicar o fluxo de trabalho, você especifica as seguintes informações:
 
 Fluxos de trabalho podem ser iniciados a partir de:
 
-* [o console **Sites**.](#starting-a-workflow-from-the-sites-console)
-* [ao editar uma página, em **Informações da página **](#starting-a-workflow-from-the-page-editor).
+* [o console Sites.](#starting-a-workflow-from-the-sites-console)
+* [ao editar uma página, em Informações da página](#starting-a-workflow-from-the-page-editor).
 
 >[!NOTE]
 >
@@ -51,8 +51,8 @@ Fluxos de trabalho podem ser iniciados a partir de:
 
 Você pode iniciar um fluxo de trabalho com:
 
-* [a opção **Criar** da barra de ferramentas Sites](#starting-a-workflow-from-the-sites-toolbar).
-* [o painel **Linha do tempo** do console Sites](#starting-a-workflow-from-the-timeline).
+* [a opção Criar da barra de ferramentas Sites](#starting-a-workflow-from-the-sites-toolbar).
+* [o painel Linha do tempo do console Sites](#starting-a-workflow-from-the-timeline).
 
 Em ambos os casos, é necessário:
 
@@ -87,8 +87,8 @@ O assistente **Criar fluxo de trabalho** ajudará você a selecionar o fluxo de 
 
 Depois de abrir o assistente **Criar fluxo de trabalho** em um destes locais:
 
-* [a opção **Criar** da barra de ferramentas Sites](#starting-a-workflow-from-the-sites-toolbar).
-* [o painel **Linha do tempo** do console Sites](#starting-a-workflow-from-the-timeline).
+* [a opção Criar da barra de ferramentas Sites](#starting-a-workflow-from-the-sites-toolbar).
+* [o painel Linha do tempo do console Sites](#starting-a-workflow-from-the-timeline).
 
 Você pode especificar os detalhes:
 
