@@ -1,11 +1,12 @@
 ---
 sub-product: Implementação do AEM as a Cloud Service
 user-guide-title: Implementação do AEM as a Cloud Service
+user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +25,13 @@ ht-degree: 97%
    + [Manuseio da versão do projeto Maven](cloud-manager/project-version-handling.md)
    + [Acesso ao Git](cloud-manager/accessing-git.md)
    + [Integração do Git com o Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
-+ Desenvolvimento do AEM as a Cloud Service{#developing}
++ Desenvolvimento do AEM as a Cloud Service {#developing}
    + [Estrutura de projetos do AEM](developing/introduction/aem-project-content-package-structure.md)
    + [Pacote de estrutura do repositório de projetos do AEM](developing/introduction/repository-structure-package.md)
    + [SDK do AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Diretrizes de desenvolvimento do AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [Folha de Características](developing/introduction/sling-cheatsheet.md)
+   + [Folha de características do Sling](developing/introduction/sling-cheatsheet.md)
    + [Uso de adaptadores Sling](developing/introduction/sling-adapters.md)
    + [Uso do Sling Resource Merger no AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
    + [Sobreposições no AEM as a Cloud Service](developing/introduction/overlays.md)
