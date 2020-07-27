@@ -1,11 +1,11 @@
 ---
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2550'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -251,7 +251,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 >
 >Navegar para outras páginas do editor de páginas só é possível no modo de visualização, pois os links não estão ativos no modo de Edição...
 
-### Copiar e colar uma página    {#copying-and-pasting-a-page}
+### Copiar e colar uma página      {#copying-and-pasting-a-page}
 
 É possível copiar uma página e todas as respectivas subpáginas para um novo site:
 
@@ -369,24 +369,24 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
 #### Ações assíncronas {#asynchronous-actions}
 
-Normalmente, uma ação de mover ou renomear página é executada imediatamente. Isso é considerado um processamento síncrono e outras ações na interface do usuário são bloqueadas até que a ação seja concluída.
+Normalmente, uma ação de mover ou renomear página é executada imediatamente. Essa ação é considerada um processamento síncrono e outras ações na interface do usuário são bloqueadas até que a ação seja concluída.
 
-No entanto, se o número de páginas afetadas estiver acima de um limite definido, a ação será processada de forma assíncrona, permitindo que o usuário continue a criação na interface do usuário desimpedida pela ação de mover ou renomear página.
+No entanto, se o número de páginas afetadas estiver acima de um limite definido, a ação será processada de modo assíncrono, permitindo que o usuário continue a criação na interface do usuário desimpedida pela ação de mover ou renomear página.
 
 * Ao clicar em **Mover** na última etapa acima, o AEM verifica o limite configurado.
 * Se o número de páginas afetadas estiver abaixo do limite, ele executará uma operação síncrona.
 * Se o número de páginas afetadas estiver acima do limite, ele executará uma operação assíncrona.
    * O usuário deve definir quando a operação assíncrona deve ser executada
-      * **Agora** começa a execução do trabalho assíncrono imediatamente.
-      * **Mais tarde** permite que o usuário defina quando o trabalho assíncrono será start.
+      * **Agora** a execução do trabalho assíncrono começa imediatamente.
+      * **Mais tarde** permite que o usuário defina quando o trabalho assíncrono será iniciado.
 
          ![Mover página assíncrona](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-O status de trabalhos assíncronos pode ser verificado no painel [**Status **de Trabalhos](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)assíncronos na Navegação****global ->** Ferramentas **->** Operações **->** Tarefas **
+O status de trabalhos assíncronos pode ser verificado no painel [**Status de trabalhos assíncronos **](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)em** Navegação global **->** Ferramentas **->** Operações **->** Trabalhos **
 
 >[!NOTE]
 >
->Para obter mais informações sobre o processamento assíncrono de tarefas e como configurar o limite para ações de movimentação/renomeação de páginas, consulte o documento de Tarefas [](/help/operations/asynchronous-jobs.md) assíncronas no guia do usuário Operações.
+>Para obter mais informações sobre o processamento assíncrono de trabalhos e como configurar o limite para ações de movimentação/renomeação de páginas, consulte o documento [Trabalhos assíncronos](/help/operations/asynchronous-jobs.md) no guia do usuário para Operações.
 
 ### Excluir uma página {#deleting-a-page}
 
