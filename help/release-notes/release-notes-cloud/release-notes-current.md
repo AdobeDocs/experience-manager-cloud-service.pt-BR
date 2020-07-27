@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 17%
+ht-degree: 87%
 
 ---
 
 
-# Notas de versão do AEM as a Cloud Service 2020.7.0{#release-notes}
+# Notas de versão do AEM as a Cloud Service 2020.7.0 {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.7.0.
 
@@ -24,34 +24,34 @@ A data de lançamento da versão 2020.7.0 do [!UICONTROL Cloud Manager] é 9 de 
 
 ### Novidades {#what-is-new-cloud-manager}
 
-* A página ambientes foi reprojetada.
+* A página de ambientes foi renovada.
 
-* ambientes hibernados agora mostram um status discreto no Cloud Manager quando hibernados.
+* A página de ambientes hibernados agora mostra um status discreto no Cloud Manager.
 
-* O número de variáveis de ambiente por ambiente aumentou para 200.
+* O número de variáveis por ambiente aumentou para 200.
 
-* O container de criação do Cloud Manager agora é compatível com Java 8 e Java 11.
+* O container de build do Cloud Manager agora é compatível com Java 8 e Java 11.
 
 * Os pipelines do Cloud Manager agora oferecem suporte a variáveis e segredos definidos pelo cliente.
 Consulte Variáveis [de](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) pipeline para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-cm}
 
-* O link do Gerenciador de nuvem para o Console do desenvolvedor estava incorretamente ativo antes dos ambientes serem totalmente criados.
+* Devido a um erro, o link do Cloud Manager para o Console do desenvolvedor estava ativo antes dos ambientes serem totalmente criados.
 
-* O link para o Console do desenvolvedor diretamente do Gerenciador de nuvem não exibia a opção de cancelar a hibernação/hibernar um ambiente do Programa do Sandbox.
+* O link direto do Cloud Manager para o Console do desenvolvedor não exibia a opção de desibernar/hibernar para ambientes do Programa de sandbox.
 
-* As opções **Cancelar** e **Salvar** na página de edição do Pipeline de não produção nem sempre estavam visíveis.
+* As opções **Cancelar** e **Salvar** nem sempre estavam visíveis na página de edição do pipeline de não produção.
 
-* Certas falhas no processo de qualidade do código podem resultar na não geração correta do arquivo de log.
+* Certas falhas no processo de qualidade do código podiam resultar na geração incorreta do arquivo de log.
 
-* Ao criar um novo programa, o nome sugerido às vezes retornaria um duplicado de um nome de programa existente.
+* Às vezes, o nome sugerido na criação de um novo programa retornava um duplicado de um nome de programa existente.
 
-* Alguns grandes logs de etapas de pipeline não puderam ser baixados consistentemente pela interface do usuário.
+* Grandes logs de etapas de pipeline não podiam ser baixados consistentemente pela interface do usuário.
 
-* A validação de nomes de ambientes apresentou um erro &quot;off-by-one&quot;.
+* A validação de nomes de ambientes apresentava um erro off-by-one.
 
-* A página Ambientes às vezes mostrava segmentos de publicação e despachante quando nenhum estava presente.
+* A página Ambientes às vezes mostrava segmentos do Publish e do Dispatcher sem que estivessem presentes.
 
 ### Problemas conhecidos {#known-issues}
 
@@ -59,17 +59,17 @@ Consulte Variáveis [de](/help/onboarding/getting-access-to-aem-in-cloud/creatin
 
 ## Novidades do Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-Siga esta seção para saber mais sobre as novidades e as atualizações do Cloud Readiness Analyzer Versão v1.0.2.
+Siga esta seção para saber mais sobre as novidades e as atualizações do Cloud Readiness Analyzer versão v1.0.2.
 
 ### Correções de erros {#cra-bug-fixes}
 
-* Não foi possível executar a versão anterior do CRA no Adobe Experience Manager (AEM) 6.1. Foi adicionado suporte explícito para permitir usuários no grupo de administradores.
+* Não foi possível executar a versão anterior do CRA no Adobe Experience Manager (AEM) 6.1. Foi adicionado suporte direto para permitir usuários no grupo de administradores.
 
    Consulte [Instalação do CRA no AEM 6.1](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) para obter mais detalhes.
 
 * O carimbo de data e hora de expiração exibido no relatório de resumo estava incorreto.
 
-* O CRA estava detectando componentes personalizados do duplicado.
+* O CRA estava detectando componentes personalizados duplicados.
 
-* No AEM 6.1, a inspeção de conteúdo era encerrada antes de concluir a inspeção completa. Foi adicionada a manipulação de exceções para permitir que o inspetor pule e continue até que a inspeção completa seja concluída.
+* No AEM 6.1, a inspeção de conteúdo era encerrada antes de concluir a inspeção completa. Adição de um gerenciamento de exceções para permitir que o inspetor pule e continue até que a inspeção completa seja concluída.
 
