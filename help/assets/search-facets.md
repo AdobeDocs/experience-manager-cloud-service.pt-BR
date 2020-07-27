@@ -1,18 +1,16 @@
 ---
-title: Pesquisar aspectos
+title: Pesquisar aspectos.
 description: Este artigo descreve como criar, modificar e usar aspectos de pesquisa no AEM.
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2371'
 ht-degree: 23%
 
 ---
 
 
 # Pesquisar aspectos {#search-facets}
-
-Saiba como criar, modificar e usar aspectos de pesquisa no AEM.
 
 Uma implantação corporativa dos ativos Adobe Experience Manager (AEM) tem a capacidade de armazenar muitos ativos. Às vezes, encontrar o ativo certo pode ser árduo e demorado se você usar apenas os recursos de pesquisa genéricos do AEM.
 
@@ -35,34 +33,30 @@ Para pesquisas de texto completo, adicione o `Fulltext` predicado ao formulário
 
 1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Por exemplo, arraste o Predicado **[!UICONTROL de propriedade]**.
 
-   ![Arraste e solte um predicado para personalizar os filtros de pesquisa](assets/drag_predicate.png)
+   ![Pressione e mova um predicado para personalizar os filtros de pesquisa](assets/drag_predicate.png)
 
-   Arraste e solte um predicado para personalizar os filtros de pesquisa
+   *Figura: Pressione e mova um predicado para personalizar os filtros de pesquisa.*
 
-1. Na guia Configurações, digite um rótulo de campo, um texto de espaço reservado e uma descrição para o predicado. Especifique um nome válido para a propriedade de metadados que deseja associar ao predicado.
-
-   O rótulo do cabeçalho na guia Configurações identifica o tipo do predicado selecionado.
+1. Na guia Configurações, digite um rótulo de campo, um texto de espaço reservado e uma descrição para o predicado. Especifique um nome válido para a propriedade de metadados que deseja associar ao predicado. O rótulo do cabeçalho na guia Configurações identifica o tipo do predicado selecionado.
 
    ![Use a guia Configurações para fornecer as opções necessárias de um predicado](assets/settings.png)
 
-   Use a guia Configurações para fornecer as opções necessárias de um predicado
+   *Figura: Use a guia Configurações para fornecer as opções necessárias de um predicado.*
 
-1. No campo **[!UICONTROL Nome da propriedade]**, especifique um nome válido para a propriedade de metadados que deseja associar ao predicado. É o nome com base no qual a pesquisa é realizada. Por exemplo, insira `jcr:content/metadata/dc:description` ou `./jcr:content/metadata/dc:description`.
-
-   Você também pode selecionar um nó existente na caixa de diálogo de seleção.
+1. No campo **[!UICONTROL Nome da propriedade]**, especifique um nome válido para a propriedade de metadados que deseja associar ao predicado. É o nome com base no qual a pesquisa é realizada. Por exemplo, insira `jcr:content/metadata/dc:description` ou `./jcr:content/metadata/dc:description`. Você também pode selecionar um nó existente na caixa de diálogo de seleção.
 
    ![Associar uma propriedade de metadados a um predicado no campo Nome da propriedade](assets/property_settings.png)
 
-   Associar uma propriedade de metadados a um predicado no campo Nome da propriedade
+   *Figura: Associe uma propriedade de metadados a um predicado no campo Nome da propriedade.*
 
-1. Toque/clique na **[!UICONTROL Pré-visualização]** da ![pré-visualização](assets/preview.png) para gerar uma pré-visualização do painel Filtros como ela aparece depois de adicionar o predicado.
+1. Clique na **[!UICONTROL Pré-visualização]** da ![pré-visualização](assets/preview.png) para gerar uma pré-visualização do painel Filtros como ela aparece depois de adicionar o predicado.
 1. Revise o layout do predicado no modo de Pré-visualização.
 
    ![Pré-visualização o formulário de pesquisa antes de enviar as alterações](assets/preview-1.png)
 
    Pré-visualização o formulário de pesquisa antes de enviar as alterações
 
-1. Para fechar a pré-visualização, toque/clique em **[!UICONTROL Fechar]** ![feche](assets/do-not-localize/close_icon.png) no canto superior direito da pré-visualização.
+1. Para fechar a pré-visualização, clique em **[!UICONTROL Fechar]** ![fechando](assets/do-not-localize/close_icon.png) no canto superior direito da pré-visualização.
 1. Toque em **[!UICONTROL Concluído]** para salvar as configurações.
 1. Navegue até o painel Pesquisar na interface do usuário Ativos. O predicado Propriedade é adicionado ao painel.
 1. Insira uma descrição para o ativo a ser pesquisado na caixa de texto. Por exemplo, digite &quot;Adobe&quot;. Quando você realiza uma pesquisa, os ativos com a descrição correspondente a &quot;Adobe&quot; são listados nos resultados da pesquisa.
@@ -121,7 +115,7 @@ Se desejar usar um nó existente, especifique-o usando a caixa de diálogo de se
 
 ## Adicionar um predicado de propriedade de vários valores {#adding-a-multi-value-property-predicate}
 
-O `Multi Value Property` predicado permite pesquisar ativos para vários valores. Considere um cenário em que você tem imagens de vários produtos nos ativos AEM e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar esse predicado para procurar imagens de produtos com base em vários números de SKU.
+O `Multi Value Property` predicado permite pesquisar ativos para vários valores. Considere um cenário em que você tem imagens de vários produtos em AEM Assets e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar esse predicado para procurar imagens de produtos com base em vários números de SKU.
 
 1. Clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar formulários]**.
 1. Na página Pesquisar formulários, selecione Painel **[!UICONTROL de pesquisa do administrador de]** ativos, toque em **Editar** ![ativos_editar](assets/aemassets_edit.png).
@@ -134,18 +128,16 @@ O `Multi Value Property` predicado permite pesquisar ativos para vários valores
 
 ## Adicionar um predicado de tags {#adding-a-tags-predicate}
 
-O `Tags` predicado permite que você realize pesquisas baseadas em tags para ativos. Por padrão, o AEM Assets pesquisa ativos por uma ou mais correspondências de tags com base nas tags especificadas. Em outras palavras, o query de pesquisa executa uma operação OU usando as tags especificadas. No entanto, você pode usar a opção de correspondência de todas as tags para pesquisar ativos que incluem todas as tags especificadas.
+O `Tags` predicado permite que você realize pesquisas baseadas em tags para ativos. Por padrão, o AEM Assets pesquisa ativos por uma ou mais marcas de correspondência com base nas tags especificadas. Em outras palavras, o query de pesquisa executa uma operação OU usando as tags especificadas. No entanto, você pode usar a opção de correspondência de todas as tags para pesquisar ativos que incluem todas as tags especificadas.
 
 1. Clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar formulários]**.
 1. Na página Pesquisar formulários, selecione Painel **[!UICONTROL de pesquisa do administrador de]** ativos e toque em **Editar** ![ativos_editar](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
-1. Na guia Configurações, insira um texto de espaço reservado para o predicado. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. Como alternativa, você pode selecionar um nó no CRXDE na caixa de diálogo de seleção.
+1. Na guia Configurações, insira um texto de espaço reservado para o predicado. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/cq:tags`. Como alternativa, você pode selecionar um nó no CRXDE na caixa de diálogo de seleção.
 1. Configure a propriedade de caminho de tags raiz desse predicado para preencher várias tags na lista Tags.
 1. Selecione a opção **[!UICONTROL Mostrar correspondência de todas as tags]** para procurar ativos que incluem todas as tags especificadas.
 
    ![Configurações típicas do predicado Tags](assets/tags_predicate.png)
-
-   Configurações típicas do predicado Tags
 
 1. No campo **[!UICONTROL Descrição]** , insira uma descrição opcional e clique/toque em **[!UICONTROL Concluído]**.
 1. Navegue até o painel Pesquisar. O predicado **[!UICONTROL Tags]** é adicionado ao painel Pesquisar.
@@ -330,28 +322,13 @@ Para restaurar o aspecto de pesquisa padrão, execute estas etapas:
 
 Se você não tiver uma função de administrador atribuída, esta é uma lista de permissões necessárias para executar ações de edição, exclusão e pré-visualização envolvendo aspectos de pesquisa.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Ação</strong></td>
-   <td><strong>Permissões    </strong></td>
-  </tr>
-  <tr>
-   <td>Editar </td>
-   <td>Permissões de leitura e gravação no <code>/apps</code> nó no CRX<br /> </td>
-  </tr>
-  <tr>
-   <td>Excluir</td>
-   <td>Permissões de leitura, gravação e exclusão no <code>/apps</code> nó no CRX</td>
-  </tr>
-  <tr>
-   <td>Visualizar</td>
-   <td>Permissões de Leitura, Gravação e Exclusão no <code>/var/dam/content</code> nó no CRX. Além disso, permissões de leitura e gravação no <code>/apps</code> nó.</td>
-  </tr>
- </tbody>
-</table>
+| Ação | Permissão |
+|---|---|
+| Editar | Permissões de leitura e gravação no `/apps` nó no CRX. |
+| Excluir | Permissões de leitura, gravação e exclusão no `/apps` nó no CRX. |
+| Visualizar | Permissões de leitura, gravação e exclusão no `/var/dam/content` nó no CRX. Além disso, permissões de leitura e gravação no `/apps` nó. |
 
 >[!MORELIKETHIS]
 >
->* [Pesquisar ativos digitais](search-assets.md)
+>* [Pesquise ativos](search-assets.md)digitais.
 
