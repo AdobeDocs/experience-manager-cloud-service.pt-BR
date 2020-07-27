@@ -2,10 +2,10 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: A completar
 translation-type: tm+mt
-source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
+source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 2%
+source-wordcount: '1940'
+ht-degree: 1%
 
 ---
 
@@ -170,3 +170,45 @@ Os clientes não terão acesso à ferramenta para desenvolvedores para ambientes
 ### Monitoramento de desempenho {#performance-monitoring}
 
 A Adobe monitora o desempenho do aplicativo e toma medidas para resolver se a deterioração é observada. No momento, as métricas do aplicativo não podem ser observadas.
+
+## Endereço IP de saída dedicado
+
+Mediante solicitação, o AEM como Cloud Service fornecerá um endereço IP estático e dedicado para HTTP (porta 80) e HTTPS (porta 443) de saída programado no código Java.
+
+### Benefícios
+
+Esse endereço IP dedicado pode melhorar a segurança ao integrar fornecedores SaaS (como um fornecedor de CRM) ou outras integrações fora do AEM como Cloud Service que oferta uma lista de permissões de endereços IP. Ao adicionar o endereço IP dedicado à lista de permissões, ele garante que somente o tráfego do Cloud Service AEM do cliente possa fluir para o serviço externo. Além do tráfego de outros IPs permitidos.
+
+Sem o recurso de endereço IP dedicado ativado, o tráfego que sai do AEM como Cloud Service flui por meio de um conjunto de IPs compartilhados com outros clientes.
+
+### Configuração
+
+Para ativar um endereço IP dedicado, envie uma solicitação ao Suporte ao cliente, que fornecerá as informações do endereço IP. Uma solicitação deve ser feita para cada ambiente, incluindo quaisquer novos ambientes criados após a solicitação inicial.
+
+### Uso de recursos
+
+O recurso é compatível com código Java ou bibliotecas que resultam em tráfego externo, desde que usem propriedades padrão do sistema Java para configurações de proxy. Na prática, isso deveria incluir a maioria das bibliotecas comuns.
+
+Abaixo está uma amostra de código:
+
+```
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+  URLConnection connection = finalUrl.openConnection();
+  connection.addRequestProperty("Accept", "application/json");
+  connection.addRequestProperty("X-API-KEY", apiKey);
+
+  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
+    return new JSONObject(new JSONTokener(responseReader));
+  }
+}
+```
+
+O mesmo IP dedicado é aplicado a todos os programas de um cliente em sua organização da Adobe e a todos os ambientes em cada um de seus programas. Isso se aplica tanto aos serviços de autor quanto aos serviços de publicação.
+
+Somente as portas HTTP e HTTPS são suportadas. Isso inclui HTTP/1.1, bem como HTTP/2 quando criptografado.
+
+### Considerações sobre depuração
+
+Para validar se o tráfego está de fato saindo no endereço IP dedicado esperado, verifique os logs no serviço de destino, se disponível. Caso contrário, pode ser útil chamar um serviço de depuração como [https://ifconfig.me/ip](https://ifconfig.me/ip), que retornará o endereço IP de chamada.
