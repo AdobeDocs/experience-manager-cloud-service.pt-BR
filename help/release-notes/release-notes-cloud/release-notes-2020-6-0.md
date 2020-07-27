@@ -10,7 +10,7 @@ ht-degree: 99%
 ---
 
 
-# Notas de versão do AEM as a Cloud Service 2020.6.0{#release-notes}
+# Notas de versão do AEM as a Cloud Service 2020.6.0 {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.6.0.
 
