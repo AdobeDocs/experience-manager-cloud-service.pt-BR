@@ -3,23 +3,23 @@ title: Organizar ativos digitais
 description: Organize seus ativos digitais usando vários métodos fornecidos nos ativos Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
 
 
-# Organizar ativos digitais{#organize-digital-assets}
+# Organizar ativos digitais {#organize-digital-assets}
 
 Todos os ativos digitais, metadados e conteúdo de documentos do Microsoft Office e PDF são extraídos e tornados pesquisáveis. A pesquisa permite a filtragem sofisticada de ativos e respeita totalmente as permissões adequadas. Os metadados são abordados detalhadamente em Metadados no Gerenciamento de ativos digitais.
 
-O AEM Assets oferece suporte a várias formas de organização de conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de maneira não ordenada e ad hoc, usando, por exemplo, tags. Os usuários podem editar tags no DAM Asset Editor, onde subativos, representações e metadados são exibidos.
+O AEM Assets oferece suporte a várias maneiras de organizar o conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de maneira não ordenada e ad hoc, usando, por exemplo, tags. Os usuários podem editar tags no DAM Asset Editor, onde subativos, representações e metadados são exibidos.
 
 ## Criar pastas {#create-folders}
 
-Ao organizar uma coleção de ativos, por exemplo, todas as imagens da *Nature* , você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. Os ativos AEM não exigem que você organize ativos em pastas para trabalhar melhor.
+Ao organizar uma coleção de ativos, por exemplo, todas as imagens da *Nature* , você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. O AEM Assets não exige que você organize ativos em pastas para trabalhar melhor.
 
 >[!NOTE]
 >
@@ -44,5 +44,5 @@ Você pode limitar quem pode acessar determinadas pastas no Assets, tornando a p
 Você pode usar pastas ou tags ou ambas para organizar ativos. A adição de tags a ativos facilita sua recuperação durante uma pesquisa. Para adicionar tags a um ativo, siga estas etapas:
 
 1. No Digital Asset Manager, clique com o duplo do mouse no ativo para abri-lo.
-1. Na área **Tags** , clique no botão suspenso para revelar as tags disponíveis. Selecione as tags conforme apropriado para adicionar uma tag. Para excluir uma tag, passe o mouse sobre ela e clique no **x** para excluí-la.
+1. Na área **Tags** , abra o menu para revelar as tags disponíveis. Selecione as tags conforme apropriado. Para excluir uma tag, passe o ponteiro do mouse sobre ela e clique `X` para excluí-la.
 1. Clique em **Salvar** para salvar quaisquer tags adicionadas.
