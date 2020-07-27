@@ -3,10 +3,10 @@ title: Configurar e usar os microserviços de ativos para processamento de ativo
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 3%
+source-wordcount: '1861'
+ht-degree: 1%
 
 ---
 
@@ -113,24 +113,26 @@ O perfil de processamento pode incluir uma execução FPO (Somente para disposi�
 
 Crie e aplique perfis de processamento adicionais e personalizados a pastas específicas para que o Experience Manager processe o processamento de ativos carregados ou atualizados nessas pastas. O perfil padrão de processamento padrão incorporado é sempre executado, mas não é visível na interface do usuário. Se você adicionar um perfil personalizado, ambos os perfis serão usados para processar os ativos carregados.
 
-Há duas maneiras de aplicar perfis de processamento a pastas:
+Aplique perfis de processamento a pastas usando um dos seguintes métodos:
 
 * Os administradores podem selecionar uma definição de perfil de processamento em **[!UICONTROL Ferramentas > Ativos > Perfis]** de processamento e usar a ação **[!UICONTROL Aplicar Perfil às pastas]** . Ele abre um navegador de conteúdo que permite navegar para pastas específicas, selecioná-las e confirmar o aplicativo do perfil.
-* Os usuários podem selecionar uma pasta na interface do usuário do Assets, usar a ação **[!UICONTROL Propriedades]** para abrir a tela de propriedades da pasta, clicar na guia **[!UICONTROL Perfis de processamento]** e, na lista suspensa, selecionar o perfil de processamento correto para essa pasta. A escolha será salva após a ação **[!UICONTROL Salvar e fechar]**.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Para salvar as alterações, clique em **[!UICONTROL Salvar e fechar]**.
 
 >[!NOTE]
 >
->Somente um perfil de processamento pode ser aplicado a uma pasta específica. Se você precisar de mais execuções geradas, é possível adicionar mais definições de execução ao perfil de processamento.
+>Somente um perfil de processamento pode ser aplicado a uma pasta específica. Para gerar mais execuções, adicione mais definições de execução ao perfil de processamento existente.
 
-Depois que um perfil de processamento é aplicado a uma pasta, todos os novos ativos carregados (ou atualizados) nessa pasta ou em qualquer subpasta dela são processados usando o perfil de processamento adicional configurado. Esse processamento adicional é adicionado ao perfil padrão. Se você aplicar vários perfis a uma pasta, os ativos carregados ou atualizados serão processados usando cada um desses perfis.
+Depois que um perfil de processamento é aplicado a uma pasta, todos os novos ativos carregados (ou atualizados) nessa pasta ou em qualquer subpasta dela são processados usando o perfil de processamento adicional configurado. Esse processamento é adicionado ao perfil padrão. Se você aplicar vários perfis a uma pasta, os ativos carregados ou atualizados serão processados usando cada um desses perfis.
 
 >[!NOTE]
 >
->Quando os ativos são carregados em uma pasta, o Experience Manager verifica as propriedades da pasta que os contém para verificar se há um perfil de processamento. Se nenhum for aplicado, ele sobe na árvore de pastas até encontrar um perfil de processamento aplicado e o usa para o ativo. Isso significa que um perfil de processamento aplicado a uma pasta funciona para a árvore inteira, mas pode ser substituído por outro perfil aplicado a uma subpasta.
+>Um perfil de processamento aplicado a uma pasta funciona para a árvore inteira, mas pode ser substituído por outro perfil aplicado a uma subpasta. Quando os ativos são carregados em uma pasta, o Experience Manager verifica as propriedades da pasta que os contém para verificar se há um perfil de processamento. Se nenhum for aplicado, uma pasta pai na hierarquia será verificada para que um perfil de processamento seja aplicado.
 
 Os usuários podem verificar se o processamento realmente ocorreu abrindo um ativo recém-carregado para o qual o processamento foi concluído, abrindo a pré-visualização de ativos e clicando na visualização **[!UICONTROL Representações]** do painel esquerdo. As representações específicas no perfil de processamento, para as quais o tipo de ativo específico corresponde às regras de inclusão do tipo MIME, devem estar visíveis e acessíveis.
 
-![execuções adicionais](assets/renditions-additional-renditions.png)*Figura: Exemplo de duas execuções adicionais geradas por um perfil de processamento aplicado à pasta pai*
+![execuções adicionais](assets/renditions-additional-renditions.png)
+
+*Figura: Exemplo de duas execuções adicionais geradas por um perfil de processamento aplicado à pasta pai.*
 
 ## workflows de pós-processamento {#post-processing-workflows}
 
