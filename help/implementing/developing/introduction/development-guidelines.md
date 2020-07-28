@@ -2,7 +2,7 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: A completar
 translation-type: tm+mt
-source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
+source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 1%
@@ -171,21 +171,21 @@ Os clientes não terão acesso à ferramenta para desenvolvedores para ambientes
 
 O Adobe monitora o desempenho do aplicativo e toma medidas para resolver se a deterioração é observada. No momento, as métricas do aplicativo não podem ser observadas.
 
-## Endereço IP de saída dedicado
+## Endereço IP de saída dedicado {#dedicated-egress-ip-address}
 
 Mediante solicitação, o AEM como Cloud Service fornecerá um endereço IP estático e dedicado para HTTP (porta 80) e HTTPS (porta 443) de saída programado no código Java.
 
-### Benefícios
+### Benefícios {#benefits}
 
 Esse endereço IP dedicado pode melhorar a segurança ao integrar-se com fornecedores SaaS (como um fornecedor de CRM) ou outras integrações fora do AEM como uma Cloud Service que oferta uma lista de permissões de endereços IP. Ao adicionar o endereço IP dedicado à lista de permissões, ele garante que somente o tráfego do Cloud Service do cliente AEM possa fluir para o serviço externo. Além do tráfego de outros IPs permitidos.
 
 Sem o recurso de endereço IP dedicado ativado, o tráfego que sai do AEM como Cloud Service continua por meio de um conjunto de IPs compartilhados com outros clientes.
 
-### Configuração
+### Configuração {#configuration}
 
 Para ativar um endereço IP dedicado, envie uma solicitação ao Suporte ao cliente, que fornecerá as informações do endereço IP. A solicitação deve especificar cada ambiente e solicitações adicionais devem ser feitas se novos ambientes precisarem do recurso após a solicitação inicial. ambientes de programa Sandbox não são suportados.
 
-### Uso de recursos
+### Uso de recursos {#feature-usage}
 
 O recurso é compatível com código Java ou bibliotecas que resultam em tráfego externo, desde que usem propriedades padrão do sistema Java para configurações de proxy. Na prática, isso deveria incluir a maioria das bibliotecas comuns.
 
@@ -209,6 +209,6 @@ O mesmo IP dedicado é aplicado a todos os programas de um cliente em sua Organi
 
 Somente as portas HTTP e HTTPS são suportadas. Isso inclui HTTP/1.1, bem como HTTP/2 quando criptografado.
 
-### Considerações sobre depuração
+### Considerações sobre depuração {#debugging-considerations}
 
 Para validar se o tráfego está de fato saindo no endereço IP dedicado esperado, verifique os logs no serviço de destino, se disponível. Caso contrário, pode ser útil chamar um serviço de depuração como [https://ifconfig.me/ip](https://ifconfig.me/ip), que retornará o endereço IP de chamada.
