@@ -2,7 +2,7 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: a7c8e1ab8e0196a3a79d8e0963192775e64a2400
+source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -34,48 +34,62 @@ Observe que as solicitações HTTP fornecidas pelo cache do Dispatcher da camada
 AEM como um Cloud Service fornece acesso às instruções do log Java Os desenvolvedores de aplicativos para AEM devem seguir as práticas recomendadas gerais de registro em Java, registrando declarações pertinentes sobre a execução do código personalizado, nos seguintes níveis de registro:
 
 <table>
-<tbody>
 <tr>
-<td> <b>Ambiente AEM</b></td>
-<td> <b>Nível de registro</b></td>
-<td> <b>Descrição</b></td>
-<td> <b>Disponibilidade do demonstrativo de registro</b></td>
+<td>
+<b>Ambiente AEM</b></td>
+<td>
+<b>Nível de registro</b></td>
+<td>
+<b>Descrição</b></td>
+<td>
+<b>Disponibilidade do demonstrativo de registro</b></td>
 </tr>
 <tr>
-<td> Desenvolvimento</td>
-<td> DEPURAR</td>
-<td> Descreve o que está acontecendo no aplicativo.
+<td>
+Desenvolvimento</td>
+<td>
+DEPURAR</td>
+<td>
+Descreve o que está acontecendo no aplicativo.<br>
 
 Quando o registro DEBUG estiver ativo, as declarações que fornecem uma imagem clara do que ocorre com as atividades, bem como quaisquer parâmetros chave que afetam o processamento, são registradas em log.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Desenvolvimento local</li>
 <li>Desenvolvimento</li>
 </ul></td>
 </tr>
 <tr>
-<td> Estágio</td>
-<td> AVISO</td>
-<td> Descreve as condições que podem se tornar erros.
+<td>
+Estágio</td>
+<td>
+AVISO</td>
+<td>
+Descreve as condições que podem se tornar erros.<br>
 
 Quando o registro em log do WARN estiver ativo, somente as declarações indicando os condicionais que estão se aproximando da subotimização serão registradas.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Desenvolvimento local</li>
 <li>Desenvolvimento</li>
 <li>Estágio</li>
 </ul></td>
 </tr>
 <tr>
-<td> Produção</td>
-<td> ERRO</td>
-<td> Descreve as condições que indicam uma falha e que precisam ser resolvidas.
+<td>
+Produção</td>
+<td>
+ERRO</td>
+<td>
+Descreve as condições que indicam uma falha e que precisam ser resolvidas.<br>
 
 Quando o registro em log ERROR está ativo, somente as declarações que indicam falhas são registradas em log. Declarações de log de ERROS indicam um problema grave que deve ser resolvido o mais rápido possível.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Desenvolvimento local</li>
 <li>Desenvolvimento</li>
 <li>Estágio</li>
 <li>Produção</li>
 </ul></td>
 </tr>
-</tbody>
 </table>
