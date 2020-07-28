@@ -2,428 +2,80 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: a7c8e1ab8e0196a3a79d8e0963192775e64a2400
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 1%
+source-wordcount: '386'
+ht-degree: 3%
 
 ---
 
 
-# Registro{#logging}
-
-O AEM como Cloud Service é uma plataforma para os clientes incluírem código personalizado para criar experiências exclusivas para sua base de clientes. Com isso em mente, o registro em log é uma função essencial para depurar o código personalizado em ambientes na nuvem e, mais especificamente, para ambientes de desenvolvimento locais.
-
-
-<!-- ## Global Logging {#global-logging}
-
-[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
-
-* the logging level
-* the location of the central log file
-* the number of versions to be kept
-* version rotation; either maximum size or a time interval
-* the format to be used when writing the log messages
--->
-
-## AEM como registro de Cloud Service {#aem-as-a-cloud-service-logging}
-
-O AEM como Cloud Service oferta permite configurar:
-
-* parâmetros globais para o serviço central de registro
-* solicitar o registro de dados; uma configuração de registro especializada para informações de solicitação
-* configurações específicas para os serviços individuais
-
-Para desenvolvimento local, as entradas de registros são gravadas em arquivos locais na `/crx-quickstart/logs` pasta.
-
-Nos ambientes da Cloud, os desenvolvedores podem baixar os logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs.
-
->[!NOTE]
->
->Fazer logon no AEM como um Cloud Service é baseado nos princípios Sling. Consulte [Sling Logging](https://sling.apache.org/site/logging.html) para obter mais informações.
-
-## AEM como registro em Java de Cloud Service {#aem-as-a-cloud-service-java-logging}
-
-### Registradores e escritores padrão {#standard-loggers-and-writers}
-
->[!IMPORTANT]
->
->Eles podem ser personalizados se necessário, embora a configuração padrão seja adequada para a maioria das instalações. No entanto, se você precisar personalizar as configurações de registro padrão, certifique-se de fazer isso somente em `dev` ambientes.
-
-Alguns registradores e gravadores estão incluídos em um AEM padrão como uma instalação de Cloud Service.
-
-O primeiro é um caso especial, pois controla tanto os registros `request` quanto os `access` logs:
-
-* O Registrador:
-
-   * Registrador de Dados de Solicitação Personalizável do Apache Sling
-
-      (org.apache.sling.engine.impl.log.RequestLoggerService)
-
-   * Gravar mensagens sobre o conteúdo da solicitação para `request.log`.
-
-* Links para:
-
-   * Registro de solicitação Sling do Apache
-
-      (org.apache.sling.engine.impl.log.RequestLogger)
-
-   * Grava as mensagens em `request.log` ou `access.log`.
-
-Os outros pares seguem a configuração padrão:
-
-* O Registrador:
-
-   * Configuração do Apache Sling Logging Logger
-
-      (org.apache.sling.commons.log.LogManager.fatory.config)
-
-   * Grava `Information` mensagens em `logs/error.log`.
-
-* Links para o Escritor:
-
-   * Configuração do Apache Sling Logging Writer
-
-      (org.apache.sling.commons.log.LogManager.fatory.writer)
-
-* O Registrador:
-
-   * Configuração do Apache Sling Logging Logger (org.apache.sling.commons.log.LogManager.fatory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
-
-   * Grava `Warning` mensagens para `../logs/error.log` o serviço `org.apache.pdfbox`.
-
-* Não vincula a um Escritor específico, portanto, criará e usará um Escritor implícito com a configuração padrão.
-
-**AEM como um registro de solicitação Cloud Service HTTP**
-
-Todas as solicitações de acesso ao AEM WCM e ao repositório são registradas aqui.
-
-Exemplo de saída:
-
-**AEM como um registro de solicitação HTTP Cloud Service / acesso de resposta**
-
-Cada solicitação de acesso é registrada aqui junto com a resposta.
-
-Exemplo de saída:
-
-**Apache Web Server / Registro no Dispatcher**
-
-Este é um log para uso na depuração de problemas do Dispatcher. Para obter mais informações, consulte [Depuração da configuração](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)do Apache e do Dispatcher.
-
-<!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
-
-leftover text from the last breakaway chunk (re dispatcher) -->
-
-No que diz respeito às práticas bast, é recomendável alinhar com as configurações que existem atualmente no AEM como um arquétipo Cloud Service Maven. Estes definem diferentes configurações e níveis de log para tipos de ambientes específicos:
-
-* para `local dev` e `dev` ambientes, defina o logger como **DEBUG** para `error.log`
-* para `stage`, defina o registrador como nível **WARN** para `error.log`
-* para `prod`, defina o logger como nível **ERROR** para `error.log`
-
-Encontre exemplos abaixo para cada configuração:
-
-* `dev` ambientes:
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.level="debug"
-    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
-```
-
-
-* `stage` ambientes:
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.level="warn"
-    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
-```
-
-* `prod` ambientes:
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.level="error"
-    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
-```
-
-### Registradores e Escritores para Serviços Individuais {#loggers-and-writers-for-individual-services}
-
-Além das configurações globais de registro, o AEM como Cloud Service permite que você defina configurações específicas para um serviço individual:
-
-* o nível de registro específico
-* o agente de log (o serviço OSGi que fornece as mensagens de log)
-
-Isso permite que você canal mensagens de log de um único serviço em um arquivo separado. Isto pode ser particularmente útil durante o desenvolvimento ou testes; por exemplo, quando você precisa de um nível de log aumentado para um serviço específico.
-
-O AEM como Cloud Service usa o seguinte para gravar mensagens de registro no arquivo:
-
-1. Um serviço **** OSGi (logger) grava uma mensagem de registro.
-1. Um **Logging Logger** pega essa mensagem e a formata de acordo com sua especificação.
-1. Um Gravador **de** log grava todas essas mensagens no arquivo físico que você definiu.
-
-Estes elementos estão ligados pelos seguintes parâmetros para os elementos apropriados:
-
-* **Logger (Logging Logger)**
-
-   Defina os serviços que geram as mensagens.
-
-<!-- * **Log File (Logging Logger)**
-
-  Define the physical file for storing the log messages.
-
-  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
-
-* **Log File (Logging Writer)**
-
-  Define the physical file that the log messages will be written to.
-
-  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
--->
-
-### Configuração do nível de log {#setting-the-log-level}
-
-Para alterar os níveis de log dos ambientes do Cloud, a configuração de Sling Logging OSGI deve ser modificada, seguida de uma reimplantação completa. Como isso não é instantâneo, tenha cuidado ao ativar registros detalhados em ambientes de produção que recebem muito tráfego. No futuro, é possível que haja mecanismos para mudar mais rapidamente o nível de log.
-
->[!NOTE]
->
->Para executar as alterações de configuração listadas abaixo, é necessário criá-las em um ambiente de desenvolvimento local e depois enviá-las para um AEM como uma instância Cloud Service. Para obter mais informações sobre como fazer isso, consulte [Implantação no AEM como Cloud Service](/help/implementing/deploying/overview.md).
-
-**Ativando o nível de log DEBUG**
-
->[!WARNING]
->
->A ativação global do nível de log DEBUG gerará uma grande quantidade de informações que será difícil de filtrar. É recomendável ativá-la somente para os serviços que exigem depuração. Para obter mais informações, consulte [Loggers e Writers for Individual Services](logging.md#loggers-and-writers-for-individual-services).
-
-O nível de log padrão é INFO, ou seja, as mensagens DEBUG não são registradas.
-Para ativar o nível de log DEBUG, defina a variável
-
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
-
-propriedade para depurar. Não deixe o log no nível de log DEBUG mais tempo do que o necessário, pois ele gera muitos logs.
-Uma linha no arquivo de depuração geralmente é start com DEBUG e, em seguida, fornece o nível de log, a ação do instalador e a mensagem de log. Por exemplo:
-
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
-
-Os níveis de log são os seguintes:
-
-| 0 | Erro fatal | A ação falhou e o instalador não pode continuar. |
-|---|---|---|
-| 1 | Erro | A ação falhou. A instalação continua, mas uma parte do CRX não foi instalada corretamente e não funcionará. |
-| 2 | Aviso | A ação foi bem-sucedida, mas encontrou problemas. O CRX pode ou não funcionar corretamente. |
-| 3 | Info | A ação foi bem sucedida. |
-
-### Criando seus próprios registradores e escritores {#creating-your-own-loggers-and-writers}
-
-Você pode definir seu próprio par de Registrador/Escritor:
-
-1. Crie uma nova instância da Configuração de fábrica Configuração do [Apache Sling Logging Logger Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
-
-   1. Especifique o registrador.
-
-<!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
-
-    1. Specify the Log File - this must match that specified for the Logger.
-    1. Configure the other parameters as required. -->
-
-### Configurar o registro {#configure-logging}
-
->[!NOTE]
->
->Ao trabalhar com o Adobe Experience Manager, existem vários métodos de gerenciamento das configurações desses serviços.
-
-Em determinadas circunstâncias, você pode querer criar um log personalizado com um nível de log diferente. Você pode fazer isso no repositório:
-
-1. Se ainda não existir, crie uma nova pasta de configuração ( `sling:Folder`) para o seu projeto `/apps/<*project-name*>/config`.
-1. Em `/apps/<*project-name*>/config`, crie um nó para a nova configuração do Apache Sling Logging Logger:
-
-   * Nome: `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (como este é um Logger)
-
-      Onde `<*identifier*>` é substituído pelo texto livre que você (deve) deve digitar para identificar a instância (não é possível omitir essas informações).
-
-      Por exemplo, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
-
-   * Tipo: `sling:OsgiConfig`
-   >[!NOTE]
-   >
-   >Embora não seja um requisito técnico, é aconselhável tornar `<*identifier*>` único.
-
-<!-- 1. Set the following properties on this node:
-
-    * Name: `org.apache.sling.commons.log.file`
-
-      Type: String
-
-      Value: specify the Log File; for example, `logs/myLogFile.log`
-
-    * Name: `org.apache.sling.commons.log.names`
-
-      Type: String[] (String + Multi)
-
-      Value: specify the OSGi services for which the Logger is to log messages; for example, all of the following:
-
-        * `org.apache.sling`
-        * `org.apache.felix`
-        * `com.day`
-
-    * Name: `org.apache.sling.commons.log.level`
-
-      Type: String
-
-      Value: specify the log level required ( `debug`, `info`, `warn` or `error`); for example `debug`
-
-    * Configure the other parameters as required:
-
-        * Name: `org.apache.sling.commons.log.pattern`
-
-          Type: `String`
-
-          Value: specify the pattern of the log message as required; for example,
-
-          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
-
-   >[!NOTE]
-   >
-   >`org.apache.sling.commons.log.pattern` supports up to six arguments.
-
-   >
-   >
-   >{0} The timestamp of type `java.util.Date`
-   >{1} the log marker
-   >{2} the name of the current thread
-   >{3} the name of the logger
-   >{4} the log level
-   >{5} the log message
-
-   >
-   >
-   >If the log call includes a `Throwable` the stacktrace is appended to the message.
-
-   >[!CAUTION]
-   >
-   >org.apache.sling.commons.log.names must have a value.
-
-   >[!NOTE]
-   >
-   >Log writer paths are relative to the `crx-quickstart` location.
-   >
-   >
-   >Therefore, a log file specified as:
-   >
-   >
-   >`logs/thelog.log`
-
-   >
-   >
-   >writes to:
-   >
-   >
-   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
-   >
-   >
-   >And a log file specified as:
-   >
-   >
-   >`../logs/thelog.log`
-
-   >
-   >
-   >writes to a directory:
-   >
-   >
-   >` <*cq-installation-dir*>/logs/`
-   >``(i.e. next to ` `<*cq-installation-dir*>/`crx-quickstart/`)
- -->
-
-<!-- open question: see if we need to leave the above warning note in place, but adjust it so that it doesn't mention filenames -->
-
-<!-- 1. This step is only necessary when a new Writer is required (i.e. with a configuration that is different to the default Writer).
-
-   >[!CAUTION]
-   >
-   >A new Logging Writer Configuration is only required when the existing default is not suitable.
-
-   >
-   >
-   >If no explicit Writer is configured the system will automatically generate an implicit Writer based on the default.
-
-   Under `/apps/<*project-name*>/config`, create a node for the new `Apache Sling Logging Writer` Configuration:
-
-    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)
-
-      As with the Logger, `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
-
-    * Type: `sling:OsgiConfig`
-
-   >[!NOTE]
-   >
-   >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
-
-   Set the following properties on this node:
-
-    * Name: `org.apache.sling.commons.log.file`
-
-      Type: `String`
-
-      Value: specify the Log File so that it matches the file specified in the Logger;
-
-      for this example, `../logs/myLogFile.log`.
-
-    * Configure the other parameters as required:
-
-        * Name: `org.apache.sling.commons.log.file.number`
-
-          Type: `Long`
-
-          Value: specify the number of log files you want kept; for example, `5`
-
-        * Name: `org.apache.sling.commons.log.file.size`
-
-          Type: `String`
-
-          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
-
-   >[!NOTE]
-   >
-   >`org.apache.sling.commons.log.file.size` controls the rotation of the log file by setting either:
-   >
-   >* a maximum file size
-   >* a time/date schedule
-   >
-   >to indicate when a new file will be created (and the existing file renamed according to the name pattern).
-   >
-   >* A size limit can be specified with a number. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
-   >* A time/date schedule can be specified as a `java.util.SimpleDateFormat` pattern. This defines the time period after which the file will be rotated; also the suffix appended to the rotated file (for identification).
-   >
-   >The default is '.'yyyy-MM-dd (for daily log rotation).
-   >
-   >So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
-   >
-   >      | `'.'yyyy-MM` |Rotation at the beginning of each month |
-   >      |---|---|
-   >      | `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
-   >      | `'.'yyyy-MM-dd` |Rotation at midnight each day. |
-   >      | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
-   >      | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
-   >      | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
-   >
-   >      Note: When specifying a time/date:
-   >      1. You should "escape" literal text within a pair of single quotes (' ');
-   >      this is to avoid certain characters being interpreted as pattern letters.
-   >      1. Only use characters allowed for a valid file name anywhere in the option.
-
-1. Read your new log file with your chosen tool.
-
-   The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
-
-O Console do Felix também fornece informações sobre o suporte ao Sling Log em `../system/console/slinglog`; por exemplo `https://localhost:4502/system/console/slinglog`.draf
-
-## Acesso e gerenciamento de registros {#manage-logs}
-
-Para obter informações sobre como acessar e gerenciar registros, consulte a documentação [do](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
+# Registro {#logging}
+
+AEM como um Cloud Service é uma plataforma para os clientes incluírem código personalizado para criar experiências exclusivas para sua base de clientes. Com isso em mente, o registro em log é uma função essencial para depurar e entender a execução do código no desenvolvimento local, e ambientes em nuvem, especialmente o AEM como ambientes Cloud Service Dev.
+
+Os níveis de registro e registro AEM são gerenciados em arquivos de configuração armazenados como parte do projeto AEM no Git e implantados como parte do projeto AEM pelo Cloud Manager. Fazer logon AEM como um Cloud Service pode ser dividido em dois conjuntos lógicos:
+
+* AEM registro, que executa o registro em log no nível do aplicativo AEM
+* Apache HTTPD Web Server/Dispatcher logging, que executa o log do servidor da Web e do Dispatcher na camada Publicar.
+
+## Registro de AEM {#aem-loggin}
+
+O registro no nível do aplicativo AEM é realizado por três registros:
+
+1. AEM registros Java, que renderizam declarações de registro Java para o aplicativo AEM.
+1. Registros de solicitação HTTP, que registram informações sobre solicitações HTTP e suas respostas fornecidas por AEM
+1. Registros de acesso HTTP, que registram informações resumidas e solicitações HTTP fornecidas por AEM
+
+Observe que as solicitações HTTP fornecidas pelo cache do Dispatcher da camada de publicação ou pelo CDN upstream não são refletidas nesses logs.
+
+### AEM registro em Java {#aem-java-logging}
+
+AEM como um Cloud Service fornece acesso às instruções do log Java Os desenvolvedores de aplicativos para AEM devem seguir as práticas recomendadas gerais de registro em Java, registrando declarações pertinentes sobre a execução do código personalizado, nos seguintes níveis de registro:
+
+<table>
+<tbody>
+<tr>
+<td> <b>Ambiente AEM</b></td>
+<td> <b>Nível de registro</b></td>
+<td> <b>Descrição</b></td>
+<td> <b>Disponibilidade do demonstrativo de registro</b></td>
+</tr>
+<tr>
+<td> Desenvolvimento</td>
+<td> DEPURAR</td>
+<td> Descreve o que está acontecendo no aplicativo.
+
+Quando o registro DEBUG estiver ativo, as declarações que fornecem uma imagem clara do que ocorre com as atividades, bem como quaisquer parâmetros chave que afetam o processamento, são registradas em log.</td>
+<td> <ul>
+<li> Desenvolvimento local</li>
+<li>Desenvolvimento</li>
+</ul></td>
+</tr>
+<tr>
+<td> Estágio</td>
+<td> AVISO</td>
+<td> Descreve as condições que podem se tornar erros.
+
+Quando o registro em log do WARN estiver ativo, somente as declarações indicando os condicionais que estão se aproximando da subotimização serão registradas.</td>
+<td> <ul>
+<li> Desenvolvimento local</li>
+<li>Desenvolvimento</li>
+<li>Estágio</li>
+</ul></td>
+</tr>
+<tr>
+<td> Produção</td>
+<td> ERRO</td>
+<td> Descreve as condições que indicam uma falha e que precisam ser resolvidas.
+
+Quando o registro em log ERROR está ativo, somente as declarações que indicam falhas são registradas em log. Declarações de log de ERROS indicam um problema grave que deve ser resolvido o mais rápido possível.</td>
+<td> <ul>
+<li> Desenvolvimento local</li>
+<li>Desenvolvimento</li>
+<li>Estágio</li>
+<li>Produção</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
