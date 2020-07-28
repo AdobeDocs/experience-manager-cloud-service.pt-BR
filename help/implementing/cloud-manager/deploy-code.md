@@ -2,7 +2,7 @@
 title: Implantar seu código - Cloud Service
 description: Implantar seu código - Cloud Service
 translation-type: tm+mt
-source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
+source-git-commit: 164d2d3b4dabfa2b06da245dc33ef90b5b77192b
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 3%
@@ -10,7 +10,7 @@ ht-degree: 3%
 ---
 
 
-# Implantação do código {#deploy-your-code}
+# Implantação dor seu  código {#deploy-your-code}
 
 ## Implantação de código com o Cloud Manager {#deploying-code-with-cloud-manager}
 
@@ -59,7 +59,8 @@ Depois de configurar o **Pipeline** (repositório, ambiente e ambiente de teste)
 
 
 
->[!IMPORTANT]:
+>[!IMPORTANT]
+>
 >As seções a seguir precisam ser atualizadas para o Cloud Manager para AEM cloud services e estão em andamento.
 
 ## Processo de implantação {#deployment-process}
