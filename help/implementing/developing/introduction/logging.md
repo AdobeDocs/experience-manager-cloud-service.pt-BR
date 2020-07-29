@@ -2,9 +2,9 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
+source-git-commit: c7100f53ce38cb8120074ec4eb9677fb7303d007
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '873'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ O registro no nível do aplicativo AEM é realizado por três registros:
 
 Observe que as solicitações HTTP fornecidas pelo cache do Dispatcher da camada de publicação ou pelo CDN upstream não são refletidas nesses logs.
 
-### AEM registro em Java {#aem-java-logging}
+## AEM registro em Java {#aem-java-logging}
 
 AEM como um Cloud Service fornece acesso às instruções do log Java Os desenvolvedores de aplicativos para AEM devem seguir as práticas recomendadas gerais de registro em Java, registrando declarações pertinentes sobre a execução do código personalizado, nos seguintes níveis de registro:
 
@@ -91,3 +91,105 @@ Quando o registro em log ERROR está ativo, somente as declarações que indicam
 </ul></td>
 </tr>
 </table>
+
+Embora o registro em log do Java suporte vários outros níveis de granularidade de registro em log, AEM como um Cloud Service recomenda o uso dos três níveis descritos acima.
+
+Os níveis de registro de AEM são definidos por tipo de ambiente pela configuração OSGi, que por sua vez são comprometidos com Git, e implantados pelo Gerenciador de nuvem para AEM como Cloud Service. Por isso, é melhor manter as declarações de log consistentes e bem conhecidas para tipos de ambientes, para garantir que os registros disponíveis via AEM como Cloud Service estejam disponíveis no nível de log ideal sem a necessidade de reimplantação do aplicativo com a configuração atualizada do nível de log.
+
+### Formato de registro {#log-format}
+
+| Data e hora | AEM como uma ID de código de Cloud Service | Nível de registro | Thread | Classe Java | Mensagem de registro |
+|---|---|---|---|---|---|
+| 29.04.2020 21:50:13.398 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*` | qtp2130572036-1472 | com.example.approval.workflow.impl.CustomApprovalWorkflow | Nenhum aprovador especificado, como padrão para o grupo de usuários [ Creative Aprovers ] |
+
+**Exemplo de saída de registro**
+
+`22.06.2020 18:33:30.120 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *ERROR* [qtp501076283-1809] io.prometheus.client.dropwizard.DropwizardExports Failed to get value from Gauge`
+`22.06.2020 18:33:30.229 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [qtp501076283-1805] org.apache.sling.auth.core.impl.SlingAuthenticator getAnonymousResolver: Anonymous access not allowed by configuration - requesting credentials`
+`22.06.2020 18:33:30.370 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] org.apache.sling.i18n.impl.JcrResourceBundle Finished loading 0 entries for 'en_US' (basename: <none>) in 4ms`
+`22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED`
+`22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring`
+
+### Registradores de configuração {#configuration-loggers}
+
+AEM logs Java são definidos como configuração OSGi e, portanto, AEM específicos do público alvo como ambientes de Cloud Service usando pastas de modo de execução.
+
+Configure o registro java para pacotes Java personalizados por meio de configurações OSGi para a fábrica do Sling LogManager. Há duas propriedades de configuração compatíveis:
+
+| Propriedade Configuração OSGi | Descrição |
+|---|---|
+| org.apache.sling.commons.log.names | Os pacotes Java para os quais coletar declarações de log. |
+| org.apache.sling.commons.log.level | O nível de log no qual os pacotes Java serão registrados, especificado por org.apache.sling.commons.log.names |
+
+Alterar outras propriedades de configuração do LogManager OSGi pode resultar em problemas de disponibilidade no AEM como Cloud Service.
+
+A seguir estão exemplos das configurações de registro recomendadas (usando o pacote Java de espaço reservado `com.example`) para os três AEM como tipos de ambientes Cloud Service.
+
+### Desenvolvimento {#development}
+
+/apps/my-app/config/org.apache.sling.commons.log.LogManager.fatory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "debug"
+}
+```
+
+### Estágio {#stage}
+
+/apps/my-app/config.stage/org.apache.sling.commons.log.LogManager.fatory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "warn"
+}
+```
+
+### Produção {#productiomn}
+
+/apps/my-app/config.prod/org.apache.sling.commons.log.LogManager.fatory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "error"
+}
+```
+
+## Registro de solicitação HTTP AEM {#aem-http-request-logging}
+
+AEM como um Cloud Service de registro de solicitação HTTP fornece informações sobre as solicitações HTTP feitas para AEM suas respostas HTTP em tempo hábil. Esse log é útil para entender as Solicitações HTTP feitas para AEM e a ordem em que são processadas e respondidas.
+
+A chave para entender esse log é mapear os pares de solicitação HTTP e resposta por suas IDs, denotadas pelo valor numérico entre colchetes. Observe que frequentemente as solicitações e suas respostas correspondentes têm outras solicitações HTTP e respostas interjetadas entre elas no log.
+
+### Formato de registro {#http-request-logging-format}
+
+| Data e hora | ID do Par de Solicitação/Resposta |  | Método HTTP | URL | Protocolo | AEM como uma ID de nó Cloud Service |
+|---|---|---|---|---|---|---|
+| 29/Abr/2020:19:14:21 +0000 | `[137]` | -> | POST | /conf/global/settings/dam/adminui-extension/metadataprofile/ | HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` |
+
+**Exemplo de registro**
+
+```
+29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+```
+
+### Configuração do registro {#configuring-the-log}
+
+O registro de Solicitação HTTP AEM não é configurável em AEM como um Cloud Service.
+
+## Registro de acesso HTTP AEM {#aem-http-access-logging}
+
+AEM como registro de acesso HTTP Cloud Service mostra solicitações HTTP em ordem de tempo. Cada entrada de registro representa a Solicitação HTTP que acessa AEM.
+
+Esse log é útil para entender rapidamente quais solicitações HTTP estão sendo feitas para AEM, se forem bem-sucedidas ao observar o código de status de resposta HTTP associado e quanto tempo a solicitação HTTP demorou para ser concluída. Esse log também pode ser útil para depurar uma atividade específica do usuário ao filtrar entradas de log por usuários.
+
+### Formato de registro {#access-log-format}
