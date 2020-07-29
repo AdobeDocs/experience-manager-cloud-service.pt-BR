@@ -2,9 +2,9 @@
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 translation-type: tm+mt
-source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
+source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3824'
 ht-degree: 9%
 
 ---
@@ -189,6 +189,7 @@ Parte da estrutura base, esse arquivo é gerado na inicialização. É **necess�
 Globalização de host padrão adequada para um projeto padrão. Se você precisar de personalização, modifique `virtualhosts.any`. Na personalização, você não deve incluir a globalização padrão do host, pois ela corresponde a **cada** solicitação recebida.
 
 >[!NOTE]
+>
 >O AEM como um arquétipo de Cloud Service maven gerará a mesma estrutura do arquivo de configuração do dispatcher.
 
 As seções abaixo descrevem como validar a configuração localmente para que ela possa passar pela porta de qualidade associada no Cloud Manager ao implantar uma versão interna.
@@ -262,7 +263,7 @@ Observe que a ferramenta de validação relata somente o uso proibido das direti
 
 Quando nenhuma falha de validação for relatada, sua configuração estará pronta para implantação.
 
-Apresentamos abaixo técnicas de solução de problemas para depurar erros comuns de validação que são exibidos pela ferramenta:
+Abaixo estão apresentadas técnicas de solução de problemas para depurar erros comuns de validação que são exibidos pela ferramenta:
 
 **não é possível localizar uma`conf.dispatcher.d`subpasta no arquivo**
 
@@ -372,37 +373,7 @@ Isso fará com que o dispatcher seja start em um container com seu backend apont
 
 ## Depuração da configuração do Apache e do Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-A estratégia a seguir pode ser usada para aumentar a saída do log para o módulo do dispatcher e ver o resultado da `RewriteRule` avaliação em ambientes locais e em nuvem.
-
-Os níveis de log desses módulos são definidos pelas variáveis `DISP_LOG_LEVEL` e `REWRITE_LOG_LEVEL`. Eles podem ser definidos no arquivo `conf.d/variables/global.vars`. A sua parte relevante é a seguinte:
-
-```
-# Log level for the dispatcher
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
-#
-# Define DISP_LOG_LEVEL Warn
- 
-# Log level for mod_rewrite
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
-#
-# To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
-#
-# More information can be found at:
-# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
-#
-# Define REWRITE_LOG_LEVEL Warn
-```
-
-Ao executar o Dispatcher localmente, os registros também são impressos diretamente na saída do terminal. Na maioria das vezes, esses registros devem estar em DEBUG, o que pode ser feito transmitindo o nível de Depuração como parâmetro ao executar o Docker. Por exemplo:
-
-`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
-
-Os registros de ambientes na nuvem serão expostos por meio do serviço de registro disponível no Cloud Manager.
+Os níveis de log são definidos pelas variáveis `DISP_LOG_LEVEL` e `REWRITE_LOG_LEVEL` em `conf.d/variables/global.var`s&quot;. See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
 
 ## Diferentes configurações de Dispatcher por ambiente {#different-dispatcher-configurations-per-environment}
 
