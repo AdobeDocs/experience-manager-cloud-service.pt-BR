@@ -2,7 +2,7 @@
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 translation-type: tm+mt
-source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
+source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
 workflow-type: tm+mt
 source-wordcount: '3824'
 ht-degree: 9%
@@ -373,7 +373,7 @@ Isso fará com que o dispatcher seja start em um container com seu backend apont
 
 ## Depuração da configuração do Apache e do Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-Os níveis de log são definidos pelas variáveis `DISP_LOG_LEVEL` e `REWRITE_LOG_LEVEL` em `conf.d/variables/global.var`s&quot;. See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
+Os níveis de log são definidos pelas variáveis `DISP_LOG_LEVEL` e `REWRITE_LOG_LEVEL` em `conf.d/variables/global.var`s&quot;. See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
 
 ## Diferentes configurações de Dispatcher por ambiente {#different-dispatcher-configurations-per-environment}
 
