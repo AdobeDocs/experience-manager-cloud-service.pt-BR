@@ -2,7 +2,7 @@
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 9%
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 ## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
 
-Esta seção descreve como estruturar o AEM como um Cloud Service Apache e configurações do Dispatcher, bem como como como validá-lo e executá-lo localmente antes de implantá-lo em ambientes do Cloud. Também descreve a depuração em ambientes da Cloud. Para obter informações adicionais sobre o Dispatcher, consulte a documentação [do](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.translate.html)AEM Dispatcher.
+Esta seção descreve como estruturar o AEM como um Cloud Service Apache e configurações do Dispatcher, bem como como como validá-lo e executá-lo localmente antes de implantá-lo em ambientes do Cloud. Também descreve a depuração em ambientes da Cloud. Para obter informações adicionais sobre o Dispatcher, consulte a documentação [do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.translate.html)AEM.
 
 >[!NOTE]
 >
@@ -22,11 +22,11 @@ Esta seção descreve como estruturar o AEM como um Cloud Service Apache e confi
 
 >[!WARNING]
 >
->Usuários do Windows: a versão atual do AEM como um Cloud Service Dispatcher Tools local (v2.0.20) é incompatível com o Windows. Entre em contato com o suporte [da](https://daycare.day.com/home.html) Adobe para receber atualizações sobre a compatibilidade com o Windows.
+>Usuários do Windows: a versão atual do AEM como um Cloud Service local Dispatcher Tools (v2.0.20) é incompatível com o Windows. Entre em contato com o Suporte [ao](https://daycare.day.com/home.html) Adobe para receber atualizações sobre a compatibilidade com o Windows.
 
 ## Ferramentas Dispatcher {#dispatcher-sdk}
 
-As Ferramentas do Dispatcher fazem parte do AEM geral como um SDK de Cloud Service e fornecem:
+As Ferramentas Dispatcher fazem parte do AEM geral como um SDK Cloud Service e fornecem:
 
 * Uma estrutura de arquivos baunilha contendo os arquivos de configuração a serem incluídos em um projeto maven para o dispatcher;
 * Ferramentas para que os clientes validem uma configuração do dispatcher localmente;
@@ -34,7 +34,7 @@ As Ferramentas do Dispatcher fazem parte do AEM geral como um SDK de Cloud Servi
 
 ## Download e extração das ferramentas {#extracting-the-sdk}
 
-As Ferramentas Dispatcher podem ser baixadas de um arquivo zip no portal de distribuição [de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) software. Observe que o acesso às listagens do SDK é limitado àquelas com os serviços gerenciados do AEM ou o AEM como ambientes de Cloud Service. Qualquer nova configuração disponível na nova versão das Ferramentas do dispatcher pode ser usada para implantar em ambientes da Cloud que executam essa versão do AEM na Cloud ou posterior.
+As Ferramentas Dispatcher podem ser baixadas de um arquivo zip no portal de distribuição [de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) software. Observe que o acesso às listagens do SDK é limitado àquelas com AEM Managed Services ou AEM como ambientes Cloud Service. Qualquer nova configuração disponível na nova versão das Ferramentas do dispatcher pode ser usada para implantar em ambientes da Cloud que executam essa versão do AEM na Cloud ou superior.
 
 **Para macOS e Linux**, baixe o script de shell para uma pasta em seu computador, torne-o executável e execute-o. Ele extrairá os arquivos das Ferramentas do Dispatcher sob o diretório no qual você os armazenou (onde `version` está a versão das Ferramentas do dispatcher).
 
@@ -253,9 +253,9 @@ Quando executado em seu artefato maven ou em seu `dispatcher/src` subdiretório,
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
 2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
- conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
+  conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
- conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
+  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
 Observe que a ferramenta de validação relata somente o uso proibido das diretivas Apache que não foram incluído na lista de permissões. Ele não relata problemas sintáticos ou semânticos com a configuração do Apache, pois essas informações só estão disponíveis para os módulos do Apache em um ambiente em execução.
@@ -368,7 +368,7 @@ Starting httpd server
 ...
 ```
 
-Isso start o dispatcher em um container com seu backend apontando para uma instância do AEM em execução em sua máquina local do Mac OS na porta 4503.
+Isso fará com que o dispatcher seja start em um container com seu backend apontando para uma instância AEM em execução em sua máquina local do Mac OS na porta 4503.
 
 ## Depuração da configuração do Apache e do Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
@@ -406,7 +406,7 @@ Os registros de ambientes na nuvem serão expostos por meio do serviço de regis
 
 ## Diferentes configurações de Dispatcher por ambiente {#different-dispatcher-configurations-per-environment}
 
-No momento, a mesma configuração do despachante é aplicada a todo o AEM como um ambiente Cloud Service. O tempo de execução terá uma variável de ambiente `ENVIRONMENT_TYPE` que contém o modo de execução atual (dev, stage ou prod), bem como uma definição. A definição pode ser `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` ou `ENVIRONMENT_PROD`. Na configuração do Apache, a variável pode ser usada diretamente em uma expressão. Como alternativa, a definição pode ser usada para construir lógica:
+No momento, a mesma configuração do dispatcher é aplicada a todos os AEM como ambientes Cloud Service. O tempo de execução terá uma variável de ambiente `ENVIRONMENT_TYPE` que contém o modo de execução atual (dev, stage ou prod), bem como uma definição. A definição pode ser `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` ou `ENVIRONMENT_PROD`. Na configuração do Apache, a variável pode ser usada diretamente em uma expressão. Como alternativa, a definição pode ser usada para construir lógica:
 
 ```
 # Simple usage of the environment variable
@@ -465,15 +465,15 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Principais diferenças entre o AMS Dispatcher e o AEM como Cloud Service {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
-Conforme descrito na página de referência acima, a configuração do Apache e do Dispatcher no AEM como um Cloud Service é bastante semelhante à do AMS. As principais diferenças são:
+Conforme descrito na página de referência acima, a configuração do Apache e do Dispatcher em AEM como um Cloud Service é bastante semelhante à do AMS. As principais diferenças são:
 
-* No AEM como Cloud Service, algumas diretivas do Apache não podem ser usadas (por exemplo `Listen` ou `LogLevel`)
-* No AEM como um Cloud Service, somente algumas partes da configuração do Dispatcher podem ser colocadas em arquivos de inclusão e sua nomeação é importante. Por exemplo, regras de filtragem que você deseja reutilizar em diferentes hosts devem ser colocadas em um arquivo chamado `filters/filters.any`. Consulte a página de referência para obter mais informações.
-* No AEM como Cloud Service, há validação extra para proibir regras de filtro gravadas usando `/glob` o para evitar problemas de segurança. Como `deny *` serão usados em vez de `allow *` (que não podem ser usados), os clientes se beneficiarão com a execução local do Dispatcher e com erros, observando os registros para saber exatamente quais caminhos os filtros Dispatcher estão bloqueando para que eles possam ser adicionados.
+* Em AEM como Cloud Service, algumas diretivas do Apache não podem ser usadas (por exemplo `Listen` ou `LogLevel`)
+* No AEM como um Cloud Service, apenas algumas partes da configuração do Dispatcher podem ser colocadas em arquivos de inclusão e sua nomeação é importante. Por exemplo, regras de filtragem que você deseja reutilizar em diferentes hosts devem ser colocadas em um arquivo chamado `filters/filters.any`. Consulte a página de referência para obter mais informações.
+* Em AEM como Cloud Service, há validação extra para proibir regras de filtro gravadas usando `/glob` o para evitar problemas de segurança. Como `deny *` serão usados em vez de `allow *` (que não podem ser usados), os clientes se beneficiarão com a execução local do Dispatcher e com erros, observando os registros para saber exatamente quais caminhos os filtros Dispatcher estão bloqueando para que eles possam ser adicionados.
 
 ## Diretrizes para migrar a configuração do dispatcher do AMS para o AEM como Cloud Service
 
-A estrutura de configuração do dispatcher tem diferenças entre os Serviços gerenciados e o AEM como Cloud Service. Apresentado abaixo, é um guia passo a passo sobre como migrar da configuração 2 do AMS Dispatcher para o AEM como Cloud Service.
+A estrutura de configuração do dispatcher tem diferenças entre o Managed Services e o AEM como um Cloud Service. Apresentado abaixo, é um guia passo a passo sobre como migrar da configuração AMS Dispatcher versão 2 para AEM como Cloud Service.
 
 ## Como converter um AMS em um AEM como uma configuração de despachante de serviço da Cloud
 
