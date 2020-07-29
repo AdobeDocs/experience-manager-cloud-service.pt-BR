@@ -2,9 +2,9 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
+source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1081'
 ht-degree: 3%
 
 ---
@@ -195,9 +195,41 @@ Esse log é útil para entender rapidamente quais solicitações HTTP estão sen
 
 ### Formato de registro {#access-log-format}
 
-| AEM como uma ID de nó Cloud Service | Endereço IP do cliente | Usuário |  | Data e hora |  | Método HTTP | URL | Protocolo |  | Resposta HTTP | Tempo de solicitação HTTP em milissegundos | Referenciador | Agente do usuário |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 | - | `myuser@adobe.com` | 30/Abr/2020:17:37:14 +0000 | &quot; | GET | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |  | HTTP/1.1 | &quot; | 200 | 1141 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` | &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/81.0.4044.122 Safari/537.36&quot; |
+<table>
+<tbody>
+<tr>
+<td><b>AEM como uma ID de nó Cloud Service</b></td>
+<td><b>Endereço IP do cliente</b></td>
+<td><b>Usuário</b></td>
+<td><b>Data e hora</b></td>
+<td><b>Em branco</b></td>
+<td><b>Método HTTP</b></td>
+<td><b>URL</b></td>
+<td><b>Protocolo</b></td>
+<td><b>Em branco</b></td>
+<td><b>Status de resposta HTTP</b></td>
+<td><b>Tempo de resposta HTTP em milissegundos</b></td>
+<td><b>Referenciador</b></td>
+<td><b>Agente do usuário</b></td>
+</tr>
+<tr>
+<td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
+<td>-</td>
+<td>myuser@adobe.com</td>
+<td>30/Abr/2020:17:37:14 +0000</td>
+<td>"</td>
+<td>GET</td>
+<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
+<td>HTTP/1.1</td>
+<td>"</td>
+<td>200</td>
+<td>1141</td>
+<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+</tr>
+</tbody>
+</table>
+
 
 **Exemplo**
 
