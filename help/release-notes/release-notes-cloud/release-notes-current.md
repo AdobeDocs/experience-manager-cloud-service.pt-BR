@@ -2,9 +2,9 @@
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.7.0
 description: Notas de versão do Experience Manager para 2020.7.0
 translation-type: tm+mt
-source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
+source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '409'
 ht-degree: 87%
 
 ---
@@ -29,8 +29,6 @@ A data de lançamento da versão 2020.7.0 do [!UICONTROL Cloud Manager] é 9 de 
 * A página de ambientes hibernados agora mostra um status discreto no Cloud Manager.
 
 * O número de variáveis por ambiente aumentou para 200.
-
-* O container de build do Cloud Manager agora é compatível com Java 8 e Java 11.
 
 * Os pipelines do Cloud Manager agora oferecem suporte a variáveis e segredos definidos pelo cliente.
 Consulte Variáveis [de](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) pipeline para obter mais detalhes.
