@@ -2,10 +2,10 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
+source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 2%
+source-wordcount: '2212'
+ht-degree: 3%
 
 ---
 
@@ -97,8 +97,6 @@ Embora o registro em log do Java suporte vários outros níveis de granularidade
 
 Os níveis de registro de AEM são definidos por tipo de ambiente pela configuração OSGi, que por sua vez são comprometidos com Git, e implantados pelo Gerenciador de nuvem para AEM como Cloud Service. Por isso, é melhor manter as declarações de log consistentes e bem conhecidas para tipos de ambientes, para garantir que os registros disponíveis via AEM como Cloud Service estejam disponíveis no nível de log ideal sem a necessidade de reimplantação do aplicativo com a configuração atualizada do nível de log.
 
-### Formato de registro {#log-format}
-
 **Exemplo de saída de registro**
 
 ```
@@ -108,6 +106,8 @@ Os níveis de registro de AEM são definidos por tipo de ambiente pela configura
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+**Formato de registro**
 
 <table>
 <tbody>
@@ -192,8 +192,6 @@ AEM como um Cloud Service de registro de solicitação HTTP fornece informaçõe
 
 A chave para entender esse log é mapear os pares de solicitação HTTP e resposta por suas IDs, denotadas pelo valor numérico entre colchetes. Observe que frequentemente as solicitações e suas respostas correspondentes têm outras solicitações HTTP e respostas interjetadas entre elas no log.
 
-### Formato de registro {#http-request-logging-format}
-
 **Exemplo de registro**
 
 ```
@@ -205,6 +203,8 @@ A chave para entender esse log é mapear os pares de solicitação HTTP e respos
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+**Formato de registro**
 
 <table>
 <tbody>
@@ -246,15 +246,15 @@ AEM como registro de acesso HTTP Cloud Service mostra solicitações HTTP em ord
 
 Esse log é útil para entender rapidamente quais solicitações HTTP estão sendo feitas para AEM, se forem bem-sucedidas ao observar o código de status de resposta HTTP associado e quanto tempo a solicitação HTTP demorou para ser concluída. Esse log também pode ser útil para depurar uma atividade específica do usuário ao filtrar entradas de log por usuários.
 
-### Formato de registro {#access-log-format}
-
-**Exemplo**
+**Exemplo de saída de registro**
 
 ```
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css HTTP/1.1" 200 1141 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+**Formato de registro**
 
 <table>
 <tbody>
@@ -327,11 +327,7 @@ O log de acesso do Apache HTTP Web Server fornece instruções para cada solicit
 
 Consulte as informações sobre o formato do log de erros na documentação [do cache](https://httpd.apache.org/docs/2.4/logs.html#accesslog)oficial.
 
-**Formato de registro**
-
-<!--blank until prod build finishes-->
-
-**Exemplo**
+**Exemplo de saída de registro**
 
 ```
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
@@ -339,27 +335,101 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET 
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 ```
 
+**Formato de registro**
+
+<table>
+<tbody>
+<tr>
+<td>AEM como uma ID de nó do serviço Cloud</td>
+<td>cm-p1234-e26813-aem-publish-5c787687c-lqlxr</td>
+</tr>
+<tr>
+<td>Endereço IP do cliente</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Usuário</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Data e hora</td>
+<td>01/maio/2020:00:09:46 +0000</td>
+</tr>
+<tr>
+<td>Método HTTP</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/content/example.html</td>
+</tr>
+<tr>
+<td>Protocolo</td>
+<td>HTTP/1.1</td>
+</tr>
+<tr>
+<td>Status da resposta HTTP</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Tamanho</td>
+<td>310</td>
+</tr>
+<tr>
+<td>Referenciador</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Agente do usuário</td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+</tr>
+</tbody>
+</table>
+
 ### Configurando o log de acesso do servidor Web Apache HTTPD {#configuring-the-apache-httpd-webs-server-access-log}
 
 Este registro não é configurável em AEM como um Cloud Service.
 
-## Log de erros do Apache HTTPD Web Server {#apache-httpd-web-server-error-log}
+## Log de Erros do Servidor Web HTTPD Apache {#apache-httpd-web-server-error-log}
 
 O log de erros do Apache HTTP Web Server fornece instruções para cada erro no servidor Web/Dispatcher da camada de publicação.
 
 Consulte as informações sobre o formato do log de erros na documentação [do cache](https://httpd.apache.org/docs/2.4/logs.html#errorlog)oficial.
 
-**Formato de registro**
-
-<!--placeholder-->
-
-**Exemplo**
+**Exemplo de saída de registro**
 
 ```
 Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
 Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
 Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
 ```
+
+**Formato de registro**
+
+<table>
+<tbody>
+<tr>
+<td>Data e hora</td>
+<td>17 de julho de 2020:16:42.608913 2020</td>
+</tr>
+<tr>
+<td>Nível do Evento</td>
+<td>[mpm_worker:notice]</td>
+</tr>
+<tr>
+<td>ID do processo</td>
+<td>[pid 1:tid 140715149343624]</td>
+</tr>
+<tr>
+<td>Nome do pod</td>
+<td>[cm-p1234-e56789-aem-publish-b86c6b466-qpfvp]</td>
+</tr>
+<tr>
+<td>Mensagem</td>
+<td>AH00094: Linha de comando: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
+</tr>
+</tbody>
+</table>
 
 ### Configurando o registro de erros do servidor Web Apache HTTPD {#configuring-the-apache-httpd-web-server-error-log}
 
@@ -388,8 +458,6 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Log do Dispatcher {#dispatcher-log}
 
-<!--de completat-->
-
 **Exemplo**
 
 ```
@@ -398,7 +466,48 @@ Define REWRITE_LOG_LEVEL Debug
 [17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
 ```
 
-### Formato de registro {#dispatcher-log-format}
+**Formato de registro**
+
+<table>
+<tbody>
+<tr>
+<td>Data e hora</td>
+<td>[17/jul/2020:23:48:16 +0000]</td>
+</tr>
+<tr>
+<td>Nome do pod</td>
+<td>[cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr]</td>
+</tr>
+<tr>
+<td>Protocolo</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
+</tr>
+<tr>
+<td>Código de status de resposta do Dispatcher</td>
+<td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
+</tr>
+<tr>
+<td>Duração</td>
+<td>1949ms</td>
+</tr>
+<tr>
+<td>Exploração</td>
+<td>[publishfarm/0]</td>
+</tr>
+<tr>
+<td>Status do cache</td>
+<td>[falha de ação]</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>"publish-p12904-e25628.adobeaemcloud.com"</td>
+</tr>
+</tbody>
+</table>
 
 ### Configuração do registro de erros da Dispatcher {#configuring-the-dispatcher-error-log}
 
