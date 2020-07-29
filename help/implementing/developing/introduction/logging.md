@@ -2,10 +2,10 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: 1cee93310d84ea21b626f456163de6855056db5b
+source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 4%
+source-wordcount: '1077'
+ht-degree: 3%
 
 ---
 
@@ -51,7 +51,6 @@ Desenvolvimento</td>
 DEPURAR</td>
 <td>
 Descreve o que está acontecendo no aplicativo.<br>
-
 Quando o registro DEBUG estiver ativo, as declarações que fornecem uma imagem clara do que ocorre com as atividades, bem como quaisquer parâmetros chave que afetam o processamento, são registradas em log.</td>
 <td>
 <ul>
@@ -207,3 +206,19 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+### Configuração do registro de acesso HTTP {#configuring-the-http-access-log}
+
+O registro de Acesso HTTP não é configurável em AEM como um Cloud Service.
+
+## Apache Web Server / Registro no Dispatcher {#dispatcher-logging}
+
+AEM como Cloud Service, fornece três registros para os servidores Web Apache e a camada de despachante no Publish:
+
+* Log de acesso do servidor Web Apache HTTPD
+* Log de erro do servidor Web Apache HTTPD
+* Log do Dispatcher
+
+Observe que esses logs estão disponíveis somente para a camada de Publicação.
+
+Esse conjunto de registros fornece insights sobre solicitações HTTP para o AEM como uma camada de publicação de Cloud Service antes que essas solicitações cheguem ao aplicativo AEM. Isso é importante para entender, já que, idealmente, a maioria das solicitações HTTP para os servidores da camada de publicação são fornecidas por conteúdo armazenado em cache pelo Apache HTTPD Web Server e AEM Dispatcher, e nunca chegam ao aplicativo AEM propriamente dito, portanto, não há instruções de registro para essas solicitações em registros AEM Java, Solicitação ou Acesso.
