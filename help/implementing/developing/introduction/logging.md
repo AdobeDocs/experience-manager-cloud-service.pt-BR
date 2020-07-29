@@ -2,7 +2,7 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
+source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -66,7 +66,6 @@ Estágio</td>
 AVISO</td>
 <td>
 Descreve as condições que podem se tornar erros.<br>
-
 Quando o registro em log do WARN estiver ativo, somente as declarações indicando os condicionais que estão se aproximando da subotimização serão registradas.</td>
 <td>
 <ul>
@@ -82,7 +81,6 @@ Produção</td>
 ERRO</td>
 <td>
 Descreve as condições que indicam uma falha e que precisam ser resolvidas.<br>
-
 Quando o registro em log ERROR está ativo, somente as declarações que indicam falhas são registradas em log. Declarações de log de ERROS indicam um problema grave que deve ser resolvido o mais rápido possível.</td>
 <td>
 <ul>
