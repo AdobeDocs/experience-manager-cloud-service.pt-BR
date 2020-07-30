@@ -2,9 +2,9 @@
 title: Adicione seus ativos digitais [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1324'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 [!DNL Adobe Experience Manager] enriquece o conteúdo binário dos arquivos digitais carregados com metadados ricos, tags inteligentes, execuções e outros serviços de Gerenciamento de ativos digitais (DAM). É possível carregar vários tipos de arquivos, como imagens, documentos e arquivos de imagem brutos, da pasta local ou de uma unidade de rede para [!DNL Experience Manager Assets].
 
-Vários métodos de upload são fornecidos. Além do upload mais usado do navegador, existem outros métodos de adicionar ativos ao repositório do Experience Manager, incluindo clientes desktop, como o Adobe Asset Link ou o aplicativo desktop Experience Manager, scripts de upload e ingestão que os clientes criariam e integrações de ingestão automatizadas adicionadas como extensões do Experience Manager.
+Vários métodos de upload são fornecidos. Além do upload mais usado do navegador, existem outros métodos de adicionar ativos ao repositório do Experience Manager, incluindo clientes desktop, como o Adobe Asset Link ou o aplicativo para desktop Experience Manager, scripts de upload e ingestão que os clientes criariam e integrações de ingestão automatizadas adicionadas como extensões do Experience Manager.
 
 Faremos o upload de métodos para usuários finais aqui e forneceremos links para artigos que descrevem aspectos técnicos do upload e ingestão de ativos usando APIs e SDKs de Experience Manager.
 
@@ -24,7 +24,7 @@ Você também pode optar por fazer um processamento adicional nos ativos carrega
 
 >[!NOTE]
 >
->O Experience Manager como um Cloud Service utiliza uma nova maneira de fazer upload de ativos - fazer upload binário direto. Por padrão, ele é suportado pelos recursos e clientes prontos para uso do produto, como a interface do usuário do Experience Manager, o Adobe Asset Link, o aplicativo de desktop do Experience Manager e, portanto, transparente para os usuários finais.
+>O Experience Manager como um Cloud Service utiliza uma nova maneira de fazer upload de ativos - fazer upload binário direto. Por padrão, ele é suportado pelos recursos e clientes prontos para uso do produto, como interface de usuário do Experience Manager, link do ativo do Adobe, aplicativo para desktop do Experience Manager e, portanto, transparente para os usuários finais.
 >
 >O código de upload personalizado ou estendido pelas equipes técnicas dos clientes precisa usar as novas APIs e protocolos de upload.
 
@@ -63,7 +63,6 @@ Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na ár
 
    Se você cancelar a operação de upload antes que os arquivos sejam carregados, [!DNL Assets] interromperá o upload do arquivo atual e atualizará o conteúdo. No entanto, os arquivos que já foram carregados não são excluídos.
 
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -74,14 +73,13 @@ Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na ár
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-
 1. A caixa de diálogo de progresso do upload em [!DNL Assets] exibe a contagem de arquivos carregados com êxito e os arquivos que não foram carregados.
 
 Além disso, a interface do usuário Ativos exibe o ativo mais recente que você carregou ou a pasta que criou primeiro.
 
 >[!NOTE]
 >
->Para fazer upload de hierarquias de pastas aninhadas para o AEM, consulte [Fazer upload de ativos](#bulk-upload)em massa.
+>Para fazer upload de hierarquias de pastas aninhadas para AEM, consulte itens [de upload em](#bulk-upload)massa.
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -112,7 +110,7 @@ Você pode optar por substituir um ativo existente, criar outra versão ou mante
 >
 >Quando você seleciona **[!UICONTROL Substituir]** na caixa de diálogo Conflito [!UICONTROL de] nomes, a ID do ativo é regenerada para o novo ativo. Essa ID é diferente da ID do ativo anterior.
 >
->Se o Asset Insights estiver habilitado para rastrear impressões/cliques com o Adobe Analytics, a ID de ativo regenerada invalida os dados capturados para o ativo no Analytics.
+>Se o Asset Insights estiver habilitado para rastrear impressões/cliques com a Adobe Analytics, a ID de ativo regenerada invalida os dados capturados para o ativo no Analytics.
 
 Para reter o ativo do duplicado em [!DNL Assets], clique em **[!UICONTROL Manter]**. Para excluir o ativo de duplicado carregado, toque/clique em **[!UICONTROL Excluir]**.
 
@@ -142,7 +140,7 @@ Para carregar um número maior de arquivos, especialmente se eles existirem em u
 
 Além da interface do usuário do navegador da Web, o Experience Manager oferece suporte a outros clientes no desktop. Eles também fornecem experiência de upload sem a necessidade de acessar o navegador da Web.
 
-* [O Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) fornece acesso a ativos [!DNL Experience Manager] no Adobe Photoshop, Adobe Illustrator e aplicativos de desktop do Adobe InDesign. Você pode fazer upload do documento aberto no momento [!DNL Experience Manager] diretamente da interface do usuário do Adobe Asset Link nesses aplicativos de desktop.
+* [O Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) fornece acesso a ativos [!DNL Experience Manager] em aplicativos de desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Você pode fazer upload do documento atualmente aberto [!DNL Experience Manager] diretamente da interface do usuário do Adobe Asset Link nesses aplicativos de desktop.
 * [O aplicativo](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) para desktop Experience Manager simplifica o trabalho com ativos no desktop, independentemente do tipo de arquivo ou do aplicativo nativo que os manipula. É particularmente útil fazer upload de arquivos nas hierarquias de pastas aninhadas a partir do sistema de arquivos local, já que o upload do navegador suporta apenas o upload de listas de arquivos simples.
 
 ## Processamento adicional {#additional-processing}
@@ -154,7 +152,7 @@ Para fazer um processamento adicional nos ativos carregados, você pode usar per
 Os seguintes perfis estão disponíveis:
 
 * [perfis](metadata-profiles.md) de metadados permitem aplicar propriedades de metadados padrão a ativos carregados nessa pasta
-* [perfis](asset-microservices-configure-and-use.md#processing-profiles) de processamento permitem aplicar processamento de representação e gerar execuções além das padrão
+* [perfis](asset-microservices-configure-and-use.md) de processamento permitem gerar mais execuções do que as possíveis por padrão.
 
 Além disso, se o Dynamic Media estiver habilitado no seu ambiente:
 
@@ -175,6 +173,6 @@ Detalhes técnicos das APIs e protocolo de upload, além de links para SDK de c�
 >
 >* [Aplicativo de desktop do Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Documentação do Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
+>* [Documentação do link do ativo do Adobe](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
 >* [Referência técnica para upload de ativos](developer-reference-material-apis.md#asset-upload-technical)
 
