@@ -1,24 +1,69 @@
 ---
-title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.7.0
-description: Notas de versão do Experience Manager para 2020.7.0
+title: Notas de versão da versão 2020.7.0 [!DNL Adobe Experience Manager] como Cloud Service.
+description: '[!DNL Adobe Experience Manager] como notas de versão do Cloud Service para 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
+source-git-commit: 5103d54bcb71d6c78894a30edafccf288a51368f
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 87%
+source-wordcount: '925'
+ht-degree: 37%
 
 ---
 
 
-# Notas de versão do AEM as a Cloud Service 2020.7.0 {#release-notes}
+# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.7.0.
 
-## Novidades do Cloud Manager {#cloud-manager}
+## Data de lançamento {#release-date}
 
-Consulte esta seção para saber mais sobre as novidades e atualizações do Cloud Manager no AEM as a Cloud Service, versão 2020.7.0.
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
 
-### Data de lançamento {#release-date}
+## Adobe Experience Manager Sites como Cloud Service {#cloud-services-sites}
+
+### Novidades {#what-is-new-sites}
+
+[!DNL Experience Manager] como conectores Cloud Service para [!DNL Adobe Target] e [!DNL Adobe Analytics] são aprimorados das seguintes maneiras:
+
+* Uma nova implementação da interface do usuário substitui a implementação com base na interface clássica.
+
+* Diálogos simplificados da interface do usuário, deixando a criação da estrutura para mapeamento variável e outras configurações para [!DNL Adobe Launch].
+
+* As configurações agora são armazenadas no repositório `/conf` , e não `/etc/cloudsettings` no repositório Experience Manager.
+
+## Adobe Experience Manager Assets as a Cloud Service {#assets}
+
+>[!NOTE]
+>Os AEM Assets como recursos de Cloud Service serão lançados nos próximos dias.
+
+### Novidades {#what-is-new-assets}
+
+* [!DNL Asset Compute Service] é um serviço dimensionável e extensível para processar ativos. Os administradores podem configurar o Experience Manager para chamar o trabalhador personalizado criado usando o [!DNL Asset Compute Service]. Os desenvolvedores podem usar o serviço para criar funcionários personalizados especializados que atendam a casos de uso complexos. Esse serviço da Web pode gerar miniaturas para diferentes tipos de arquivos, renderizações de imagem de alta qualidade de formatos de arquivo Adobe, codificar vídeos (futuros), extrair metadados, extrair texto completo como precursor para indexação e executar um ativo por meio de todos os serviços do Sensei disponíveis. consulte [Usar microserviços de ativos e perfis](/help/assets/asset-microservices-configure-and-use.md)de processamento.
+
+* A configuração inicial do [!DNL Dynamic Media] in [!DNL Experience Manager] como um Cloud Service é aprimorada para ser mais robusta. Agora, ele fornece o progresso dos processos aos administradores.
+
+* A publicação de ativos para [!DNL Dynamic Media] é simplificada e tornada mais robusta, tornando-a parte integrante do pipeline de processamento de ativos global usando microserviços de ativos e melhorando o backend de publicação em lote.
+
+* As etapas de fluxo de trabalho que não são compatíveis com uma implantação de Cloud Service agora são marcadas com um aviso no editor de modelo [!UICONTROL de] fluxo de trabalho. Além disso, ao executar os workflows existentes no ambiente, as etapas do fluxo de trabalho incompatíveis são ignoradas.
+
+* Os modelos de fluxo de trabalho criados pelos clientes implantados `/conf/global` no projeto Git associado ao ambiente no Cloud Manager são implantados automaticamente no Experience Manager `/var` e, portanto, disponibilizados. Os modelos de fluxo de trabalho do produto em `/libs` que foram alterados pelo cliente não são implantados automaticamente para `/var`.
+
+## Componentes principais {#core-components}
+
+### Novidades {#what-is-new-core-components}
+
+A versão 2.11.0 dos [Componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) agora está disponível como parte do AEM Sites, incluindo:
+
+* Introdução ao novo componente Visualizador de [PDF](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)
+
+* [O suporte a Accelerated Mobile Pages (AMP) dos Componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/developing/amp.html) principais ajuda a produzir experiências mais rápidas do cliente, tornando a página transição instantaneamente ao entrar no site a partir de um resultado de pesquisa móvel do Google, o que melhora a participação do usuário e a SEO.
+
+* Compatibilidade com a versão 1.0.2 da camada de dados do cliente [Adobe](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+
+* Correções de erros e melhorias na qualidade do código
+
+## Cloud Manager {#cloud-manager}
+
+### Data de lançamento {#release-date-cm}
 
 A data de lançamento da versão 2020.7.0 do [!UICONTROL Cloud Manager] é 9 de julho de 2020.
 
@@ -31,7 +76,8 @@ A data de lançamento da versão 2020.7.0 do [!UICONTROL Cloud Manager] é 9 de 
 * O número de variáveis por ambiente aumentou para 200.
 
 * Os pipelines do Cloud Manager agora oferecem suporte a variáveis e segredos definidos pelo cliente.
-Consulte Variáveis [de](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) pipeline para obter mais detalhes.
+
+   Consulte Variáveis [de](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) pipeline para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-cm}
 
@@ -53,9 +99,22 @@ Consulte Variáveis [de](/help/onboarding/getting-access-to-aem-in-cloud/creatin
 
 ### Problemas conhecidos {#known-issues}
 
-* Devido a uma mudança na forma como a cobertura de código é calculada, a versão _mínima_ do plug-in Jacoco agora é 0.7.5.201505241946 (lançado em maio de 2015). Os clientes que referenciarem explicitamente uma versão mais antiga receberão uma mensagem de erro no processo de qualidade do código.
+* Devido a uma mudança na forma como a cobertura de código é calculada, a versão *mínima* do plug-in Jacoco agora é 0.7.5.201505241946 (lançado em maio de 2015). Os clientes que referenciam explicitamente uma versão mais antiga recebem uma mensagem de erro no processo de qualidade do código.
 
-## Novidades do Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+
+## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
+
+### Novidades {#what-is-new-foundations}
+
+* [Os registros podem ser encaminhados para contas](/help/implementing/developing/introduction/logging.md#splunk-logs)de partes separadas, o que permite que as organizações aproveitem seu investimento de partes.
+
+* [Um endereço](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) IP de saída estático e dedicado pode ser atribuído para tráfego externo programado no código Java, que pode ser útil para algumas integrações.
+
+* AEM interface do usuário do serviço de nuvem do Analytics da interface clássica para a nova interface do usuário AEM. Também foi movida a localização do serviço de nuvem da Analytics em AEM repositório de `/etc` para `/conf`, para alinhar com outros AEM cloud services.
+
+* AEM interface do usuário do serviço em nuvem do Público alvo da interface clássica para a nova interface do usuário AEM. Também foi movida a localização do serviço de nuvem de Público alvo em AEM repositório de `/etc` para `/conf`, para alinhar com outros AEM cloud services.
+
+## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
 Siga esta seção para saber mais sobre as novidades e as atualizações do Cloud Readiness Analyzer versão v1.0.2.
 
@@ -70,4 +129,3 @@ Siga esta seção para saber mais sobre as novidades e as atualizações do Clou
 * O CRA estava detectando componentes personalizados duplicados.
 
 * No AEM 6.1, a inspeção de conteúdo era encerrada antes de concluir a inspeção completa. Adição de um gerenciamento de exceções para permitir que o inspetor pule e continue até que a inspeção completa seja concluída.
-
