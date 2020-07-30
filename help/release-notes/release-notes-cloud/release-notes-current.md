@@ -2,10 +2,10 @@
 title: Notas de versão da versão 2020.7.0 [!DNL Adobe Experience Manager] como Cloud Service.
 description: '[!DNL Adobe Experience Manager] como notas de versão do Cloud Service para 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 5103d54bcb71d6c78894a30edafccf288a51368f
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 37%
+source-wordcount: '918'
+ht-degree: 36%
 
 ---
 
@@ -51,15 +51,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### Novidades {#what-is-new-core-components}
 
-A versão 2.11.0 dos [Componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) agora está disponível como parte do AEM Sites, incluindo:
+Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
-* Introdução ao novo componente Visualizador de [PDF](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)
+* Introdução de um novo componente [do visualizador de](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)PDF.
 
-* [O suporte a Accelerated Mobile Pages (AMP) dos Componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/developing/amp.html) principais ajuda a produzir experiências mais rápidas do cliente, tornando a página transição instantaneamente ao entrar no site a partir de um resultado de pesquisa móvel do Google, o que melhora a participação do usuário e a SEO.
+* O suporte a Accelerated Mobile Pages (AMP) dos Componentes principais ajuda a produzir experiências mais rápidas do cliente, tornando a página transição instantaneamente ao entrar no site a partir de um resultado de pesquisa móvel do Google, o que melhora a participação do usuário e a SEO.
 
-* Compatibilidade com a versão 1.0.2 da camada de dados do cliente [Adobe](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* Compatibilidade com a versão 1.0.2 da Camada [de dados do cliente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)Adobe.
 
-* Correções de erros e melhorias na qualidade do código
+* Correções de erros e melhorias na qualidade do código.
 
 ## Cloud Manager {#cloud-manager}
 
