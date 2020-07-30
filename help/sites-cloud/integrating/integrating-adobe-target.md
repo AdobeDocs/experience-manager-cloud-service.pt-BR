@@ -2,9 +2,9 @@
 title: Integração com o Adobe Target
 description: 'Integração com o Adobe Target '
 translation-type: tm+mt
-source-git-commit: 8063a41d079b8b959b903aa0f97068a42a22d840
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -17,18 +17,18 @@ Como parte do Adobe Marketing Cloud, o Adobe Target permite aumentar a relevânc
 * usando a interface de usuário para toque para criar uma configuração Analytics em AEM como Cloud Service (configuração IMS necessária).
 * adicionar e configurar o Adobe Analytics como uma extensão no [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-A integração com o Launch é necessária para &quot;direcionamento de experiência&quot;. Para que os Fragmentos de experiência exportem para o Público alvo, você precisa apenas da Configuração do Adobe Target e IMS.
+O Adobe Launch é necessário para gerenciar as propriedades do cliente para o Analytics e o Público alvo em páginas AEM (bibliotecas/tags do JS). Dito isso, a integração com o Launch é necessária para a &quot;definição de metas de experiência&quot;. Para que os Fragmentos de experiência exportem para o Público alvo, você precisa apenas da Configuração do Adobe Target e IMS.
 
 >[!NOTE]
 >
->Adobe Experience Manager como clientes Cloud Service que não têm uma conta de Público alvo existente, podem solicitar acesso ao Target Foundation Pack para Experience Cloud.  O Foundation Pack fornece utilização limitada em volume do Público alvo.
+>Adobe Experience Manager como clientes Cloud Service que não têm uma conta de Público alvo existente, podem solicitar acesso ao Target Foundation Pack para Experience Cloud. O Foundation Pack fornece utilização limitada em volume do Público alvo.
 
 ## Criação da configuração do Adobe Target {#create-configuration}
 
 1. Navegue até **Ferramentas** → **Cloud Service**.
    ![](assets/cloudservice.png "Navegação")
 2. Selecione **Adobe Target**.
-3. Clique no botão **Criar** .
+3. Selecione o botão **Criar** .
    ![](assets/tenant.png "CriarCriar")
 4. Preencha os detalhes (veja abaixo) e selecione **Connect (Conectar**).
    ![](assets/open_screen.png "Connect")
@@ -59,10 +59,6 @@ AEM oferta uma integração pronta para uso com o Experience Platform Launch. Ao
 >
 >As estruturas existentes (herdadas) ainda funcionam, mas não podem ser configuradas na interface do usuário para toque. É aconselhável recriar as configurações de mapeamento de variáveis no Launch.
 
->[!NOTE]
->
->As estruturas existentes (herdadas) ainda funcionam, mas não podem ser configuradas na interface do usuário para toque. É aconselhável recriar as configurações de mapeamento de variáveis no Launch.
-
 Como uma visão geral, as etapas de integração são:
 
 1. Criar uma propriedade de inicialização
@@ -83,7 +79,7 @@ Uma propriedade é um container que será preenchido com extensões, regras e el
 
 ### Adicionar as extensões necessárias {#add-extension}
 
-Extensões é o container que gerencia as configurações principais da biblioteca. A extensão Adobe Target suporta implementações do lado do cliente usando o Target JavaScript SDK para a Web moderna, o at.js. É necessário adicionar as extensões **Adobe Target** e **Adobe ContextHub** .
+**Extensões** é o container que gerencia as configurações principais da biblioteca. A extensão Adobe Target suporta implementações do lado do cliente usando o Target JavaScript SDK para a Web moderna, o at.js. É necessário adicionar as extensões **Adobe Target** e **Adobe ContextHub** .
 
 1. Selecione a opção Catálogo de extensão e procure o Público alvo no filtro.
 2. Selecione **Adobe Target** at.js e clique na opção Instalar.
@@ -95,7 +91,7 @@ Extensões é o container que gerencia as configurações principais da bibliote
 
 ### Criação de um elemento de dados {#data-element}
 
-Os elementos de dados são os espaços reservados para os quais você pode mapear os parâmetros do hub de contexto.
+**Os elementos** de dados são os espaços reservados para os quais você pode mapear os parâmetros do hub de contexto.
 
 1. Selecione Elementos **de dados**.
 2. Selecione **Adicionar elemento** de dados.
@@ -105,7 +101,7 @@ Os elementos de dados são os espaços reservados para os quais você pode mapea
 
 ### Criação de uma regra de página {#page-rule}
 
-Em Regra, definimos e ordenamos uma sequência de ações, que serão executadas no site, para atingir a definição de metas.
+Em **Regra** , definimos e ordenamos uma sequência de ações, que serão executadas no site, para atingir a definição de metas.
 
 1. Adicione um conjunto de ações como exemplificado na captura de tela.
    ![](assets/rules.png "AçõesAções")
