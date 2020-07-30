@@ -3,15 +3,15 @@ title: Configurar e usar os microserviços de ativos para processamento de ativo
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '2246'
 ht-degree: 1%
 
 ---
 
 
-# Introdução ao uso dos microsserviços de ativos {#get-started-using-asset-microservices}
+# Usar microserviços e perfis de processamento de ativos {#get-started-using-asset-microservices}
 
 <!--
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
@@ -23,7 +23,7 @@ ht-degree: 1%
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
 -->
 
-Os microserviços de ativos fornecem um processamento escalonável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços para a melhor manipulação de diferentes tipos de ativos e opções de processamento.
+Os microserviços de ativos fornecem processamento escalonável e resiliente de ativos usando serviços em nuvem. O Adobe gerencia os serviços para uma manipulação otimizada de diferentes tipos de ativos e opções de processamento.
 
 O processamento de ativos depende da configuração em Perfis **[!UICONTROL de]** processamento, que fornecem uma configuração padrão e permitem que um administrador adicione uma configuração de processamento de ativos mais específica. Os administradores podem criar e manter as configurações de workflows de pós-processamento, incluindo personalização opcional. Personalizar workflows permite extensibilidade e personalização completa.
 
@@ -38,78 +38,116 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
->O processamento de ativos descrito aqui substitui o modelo de `DAM Update Asset` fluxo de trabalho existente nas versões anteriores do Experience Manager. A maioria das etapas padrão de geração de representação e relacionadas a metadados são substituídas pelo processamento de microserviços de ativos, e as etapas restantes, se houver, podem ser substituídas pela configuração do fluxo de trabalho de pós-processamento.
+>O processamento de ativos descrito aqui substitui o modelo de `DAM Update Asset` fluxo de trabalho existente nas versões anteriores do [!DNL Experience Manager]. A maioria das etapas padrão de geração de representação e relacionadas a metadados são substituídas pelo processamento de microserviços de ativos, e as etapas restantes, se houver, podem ser substituídas pela configuração do fluxo de trabalho de pós-processamento.
 
-## Introdução ao processamento de ativos {#get-started}
+## Compreender as opções de processamento de ativos {#get-started}
 
-O processamento de ativos com microserviços de ativos é pré-configurado com uma configuração padrão, garantindo que as execuções padrão exigidas pelo sistema estejam disponíveis. Ela também garante que as operações de extração de metadados e extração de texto estejam disponíveis. Os usuários podem fazer upload ou atualizar ativos imediatamente e o processamento básico está disponível por padrão.
+Experience Manager permite os seguintes níveis de processamento.
 
-Para os requisitos específicos de geração de representação ou processamento de ativos, um administrador do AEM pode criar Perfis [!UICONTROL de]processamento adicionais. Os usuários podem atribuir um ou mais perfis disponíveis a pastas específicas para realizar um processamento adicional. Por exemplo, para gerar execuções específicas para Web, dispositivos móveis e tablets. O vídeo a seguir ilustra como criar e aplicar Perfis [!UICONTROL de] processamento e como acessar as execuções criadas.
+| Configuração | Descrição | Casos de uso cobertos |
+|---|---|---|
+| [Configuração padrão](#default-config) | Está disponível como está e não pode ser modificado. Essa configuração fornece recursos de geração de execução muito básicos. | Miniaturas padrão usadas pela interface [!DNL Assets] do usuário (48, 140 e 319 px); pré-visualização grande (execução na Web - 1280 px); Metadados e extração de texto. |
+| [Configuração padrão](#standard-config) | Configurado pelos administradores somente pela interface do usuário. Fornece mais opções para a geração de representação do que a configuração padrão acima. | Alterar o formato e a resolução das imagens; gerar execuções FPO. |
+| [Configuração personalizada](#custom-config) | Configurado pelos administradores por meio da interface do usuário para chamar trabalhadores personalizados que suportam requisitos mais complexos. Aproveita uma nuvem nativa [!DNL Asset Compute Service]. | Consulte casos [de uso](#custom-config)permitidos. |
 
->[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
-
-Para alterar o perfil existente, consulte [Configurações para os microserviços](#configure-asset-microservices)de ativos.
 Para criar perfis de processamento personalizados específicos às suas necessidades personalizadas, considere integrar-se a outros sistemas, consulte workflows [de](#post-processing-workflows)pós-processamento.
 
-## Configurações para microserviços de ativos {#configure-asset-microservices}
-
-Para configurar os microserviços de ativos, os administradores podem usar a interface de usuário de configuração em **[!UICONTROL Ferramentas > Ativos > Perfis]** de processamento.
-
-### Configuração padrão {#default-config}
-
-Com a configuração padrão, somente o perfil de processamento padrão é configurado. O perfil de processamento padrão não está visível na interface do usuário e você não pode modificá-lo. Ele sempre é executado para processar ativos carregados. Um perfil de processamento padrão garante que todo o processamento básico exigido pelo Experience Manager seja concluído em todos os ativos.
-
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
-
-O perfil de processamento padrão fornece a seguinte configuração de processamento:
-
-* Miniaturas padrão usadas pela interface do usuário do Ativo (48, 140 e 319 px)
-* pré-visualização grande (execução na Web - 1280 px)
-* Extração de metadados
-* extração de texto
-
-### Formatos de arquivo não suportados {#supported-file-formats}
+## Formatos de arquivo não suportados {#supported-file-formats}
 
 Os microserviços de ativos oferecem suporte para uma grande variedade de formatos de arquivo em termos da capacidade de gerar execuções ou extrair metadados. Consulte os formatos [de arquivo](file-format-support.md) suportados para obter a lista completa.
 
-### Adicionar perfis de processamento adicionais {#processing-profiles}
+## Configuração padrão {#default-config}
 
-perfis de processamento adicionais podem ser adicionados usando a ação **[!UICONTROL Criar]** .
+Alguns padrões são pré-configurados para garantir que as execuções padrão necessárias no Experience Manager estejam disponíveis. A configuração padrão também garante que as operações de extração de metadados e extração de texto estejam disponíveis. Os usuários podem fazer upload ou atualizar ativos imediatamente e o processamento básico está disponível por padrão.
 
-Cada configuração de perfil de processamento inclui uma lista de execuções. Para cada representação, você pode especificar o seguinte:
+Com a configuração padrão, somente o perfil de processamento mais básico é configurado. Esse perfil de processamento não é visível na interface do usuário e você não pode modificá-lo. Ele sempre é executado para processar ativos carregados. Esse perfil de processamento padrão garante que o processamento básico exigido por [!DNL Experience Manager] ele seja concluído em todos os ativos.
 
-* Nome da representação.
-* Formato de representação compatível, como JPEG, PNG ou GIF.
-* Largura e altura da representação em pixels. Se não for especificado, o tamanho total de pixel da imagem original será usado.
-* Qualidade de execução de JPEG em porcentagem.
-* Tipos MIME incluídos e excluídos para definir a aplicabilidade de um perfil.
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
+-->
+
+## perfil padrão {#standard-config}
+
+[!DNL Experience Manager] forneça recursos para gerar renderizações mais específicas para formatos comuns, de acordo com as necessidades do usuário. Um administrador pode criar Perfis  de processamento adicionais para facilitar a criação dessa execução. Em seguida, os usuários atribuem um ou mais dos perfis disponíveis a pastas específicas para concluir o processamento adicional. Por exemplo, o processamento adicional pode gerar representações para Web, dispositivos móveis e tablets. O vídeo a seguir ilustra como criar e aplicar Perfis [!UICONTROL de] processamento e como acessar as execuções criadas.
+
+* **Largura e altura** da representação: A especificação de largura e altura da representação fornece tamanhos máximos da imagem de saída gerada. Os microserviços de ativos tentam produzir a maior representação possível, que a largura e a altura não são maiores que a largura e a altura especificadas, respectivamente. A proporção é preservada, é a mesma do original. Um valor vazio significa que o processamento de ativos assume a dimensão em pixels do original.
+
+* **Regras** de inclusão de tipo MIME: Quando um ativo com um tipo MIME específico é processado, o tipo MIME é verificado pela primeira vez em relação ao valor de tipos MIME excluídos para a especificação de representação. Se corresponder a essa lista, essa representação específica não será gerada para o ativo (lista de bloqueios). Caso contrário, o tipo MIME será verificado em relação ao tipo MIME incluído e, se ele corresponder à lista, a representação será gerada (lista de permissões).
+
+* **Representação** especial do FPO: Ao colocar ativos de grande porte de [!DNL Experience Manager] dentro de [!DNL Adobe InDesign] documentos, um profissional criativo espera por um tempo substancial depois de [colocar um ativo](https://helpx.adobe.com/indesign/using/placing-graphics.html). Enquanto isso, o usuário está impedido de usar [!DNL InDesign]. Isso interrompe o fluxo criativo e afeta negativamente a experiência do usuário. O Adobe permite que as execuções de pequeno porte sejam colocadas temporariamente em [!DNL InDesign] documentos para começar, o que pode ser substituído por ativos de resolução completa sob demanda posteriormente. [!DNL Experience Manager] fornece execuções que são usadas apenas para posicionamento (FPO). Essas renderizações FPO têm um tamanho de arquivo pequeno, mas têm a mesma proporção.
+
+O perfil de processamento pode incluir uma execução FPO (Somente para disposição). Consulte a [!DNL Adobe Asset Link] documentação [](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) para saber se você precisa ativá-la para o perfil de processamento. Para obter mais informações, consulte a documentação [completa do Link de ativo do](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)Adobe.
+
+### Criar perfil padrão {#create-standard-profile}
+
+Para criar um perfil de processamento padrão, siga estas etapas:
+
+1. Os administradores acessam **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Perfis **** de processamento. Clique em **[!UICONTROL Criar]**.
+1. Forneça um nome que o ajude a identificar exclusivamente o perfil ao se inscrever em uma pasta.
+1. Para gerar execuções de FPO, na guia **[!UICONTROL Padrão]** , ative **[!UICONTROL Criar representação]** de FPO. Insira um valor de **[!UICONTROL Qualidade]** entre 1 e 100.
+1. Para gerar outras representações, clique em **[!UICONTROL Adicionar novo]** e forneça as seguintes informações:
+
+   * Nome de arquivo de cada representação.
+   * Formato de arquivo (PNG, JPEG ou GIF) de cada execução.
+   * Largura e altura em pixels de cada representação. Se os valores não forem especificados, o tamanho total de pixel da imagem original será usado.
+   * Qualidade em porcentagem de cada execução JPEG.
+   * Tipos MIME incluídos e excluídos para definir a aplicabilidade de um perfil.
 
 ![adição de perfis de processamento](assets/processing-profiles-adding.png)
 
-Quando você cria e salva um novo perfil de processamento, ele é adicionado à lista dos perfis de processamento configurados. Você pode aplicar esses perfis de processamento a pastas na hierarquia de pastas para torná-las eficazes para uploads de ativos e processamento de ativos.
+1. Clique em **[!UICONTROL Salvar]**.
+
+O vídeo a seguir demonstra a utilidade e o uso do perfil padrão.
+
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 
 <!-- Removed per cqdoc-15624 request by engineering.
- ![processing-profiles-list](assets/processing-profiles-list.png) -->
+ ![processing-profiles-list](assets/processing-profiles-list.png) 
+ -->
 
-#### Largura e altura da representação {#rendition-width-height}
+## perfil personalizado e casos de uso {#custom-config}
 
-A especificação de largura e altura da representação fornece tamanhos máximos da imagem de saída gerada. O microserviço de ativos tenta produzir a maior representação possível, que a largura e a altura não são maiores que a largura e a altura especificadas, respectivamente. A proporção é preservada, é a mesma do original.
+**Itens** TBD:
 
-Um valor vazio significa que o processamento de ativos assume a dimensão em pixels do original.
+* Vinculação geral ao conteúdo de extensibilidade.
+* Mencione como obter o URL do trabalhador. URL do trabalhador para ambientes de desenvolvimento, estágio e produção.
+* Mapeamento de menção de parâmetros de serviço. Link para o artigo sobre serviços de computação.
+* Revisão da perspectiva de fluxo compartilhada no tíquete Jira.
 
-#### Regras de inclusão de tipo MIME {#mime-type-inclusion-rules}
+Alguns casos complexos de uso do processamento de ativos não podem ser realizados usando configurações padrão, pois as necessidades das organizações são variadas. Adobe ofertas [!DNL Asset Compute Service] para esses casos de uso. É um serviço escalonável e extensível para processar ativos digitais. Ele pode transformar imagens, vídeos, documentos e outros formatos de arquivo em diferentes representações, incluindo miniaturas, texto extraído e metadados e arquivos.
 
-Quando um ativo com um tipo MIME específico é processado, o tipo MIME é verificado pela primeira vez em relação ao valor de tipos MIME excluídos para a especificação de representação. Se corresponder a essa lista, essa representação específica não será gerada para o ativo (lista de bloqueios).
+Os desenvolvedores podem usar o Asset Compute Service para criar funcionários personalizados especializados que atendam a casos de uso complexos e predefinidos. [!DNL Experience Manager] pode chamar esses funcionários personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] suporta os seguintes casos de uso:
 
-Caso contrário, o tipo MIME será verificado em relação ao tipo MIME incluído e, se ele corresponder à lista, a representação será gerada (lista de permissões).
+* Gere tags inteligentes aprimoradas personalizadas para ativos digitais usando o Adobe Sensei.
+* Gere uma máscara de recorte de um assunto usando o Adobe Sensei.
+* Recupere informações de metadados do produto do sistema PIM e torne os metadados parte do binário do ativo durante a ingestão do ativo.
+* Altere a cor de plano de fundo de uma imagem transparente usando a [!DNL Adobe Photoshop] API.
+* Retoque uma imagem usando a [!DNL Photoshop] API.
+* Endireite uma imagem usando a [!DNL Adobe Lightroom] API.
 
-#### Representação especial do FPO {#special-fpo-rendition}
+>[!NOTE]
+>
+>Não é possível editar os metadados padrão usando os trabalhadores personalizados. Você só pode modificar metadados personalizados.
 
-Ao colocar ativos de grande porte do AEM em documentos do Adobe InDesign, um profissional criativo deve aguardar por um tempo significativo depois de [colocar um ativo](https://helpx.adobe.com/indesign/using/placing-graphics.html). Enquanto isso, o usuário é impedido de usar o InDesign. Isso interrompe o fluxo criativo e afeta negativamente a experiência do usuário. A Adobe permite que execuções de pequeno porte sejam temporariamente colocadas em documentos do InDesign, que podem ser substituídas por ativos de resolução completa sob demanda posteriormente. O Experience Manager fornece execuções que são usadas apenas para posicionamento (FPO). Essas renderizações FPO têm um tamanho de arquivo pequeno, mas têm a mesma proporção.
+### Criar um perfil personalizado {#create-custom-profile}
 
-O perfil de processamento pode incluir uma execução FPO (Somente para disposição). Consulte a [documentação](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) do Adobe Asset Link para saber se você precisa ativá-lo para o perfil de processamento. Para obter mais informações, consulte a documentação [completa do Link de ativos](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)da Adobe.
+Para criar um perfil personalizado, siga estas etapas:
 
-## Usar microserviços de ativos para processar ativos {#use-asset-microservices}
+1. Os administradores acessam **[!UICONTROL Ferramentas > Ativos > Perfis]** de processamento. Clique em **[!UICONTROL Criar]**.
+1. Click on **[!UICONTROL Custom]** tab. Clique em **[!UICONTROL Adicionar novo]**. Forneça o nome de arquivo desejado para a representação.
+1. Forneça as seguintes informações e clique em **[!UICONTROL Salvar]**.
+
+   * Nome de arquivo de cada execução e extensão de arquivo compatível.
+   * URL de ponto final de um aplicativo personalizado Firefly. O aplicativo deve ser da mesma organização que a conta Experience Manager.
+   * Adicione parâmetros de serviço, conforme necessário.
+   * Tipos MIME incluídos e excluídos para definir a aplicabilidade de um perfil.
+
+![perfil de processamento personalizado](assets/custom-processing-profile.png)
+
+>[!CAUTION]
+>
+>Se o aplicativo Firefly e a [!DNL Experience Manager] conta não forem da mesma organização, a integração não funcionará.
+
+## Usar perfis de processamento para processar ativos {#use-profiles}
 
 Crie e aplique perfis de processamento adicionais e personalizados a pastas específicas para que o Experience Manager processe o processamento de ativos carregados ou atualizados nessas pastas. O perfil padrão de processamento padrão incorporado é sempre executado, mas não é visível na interface do usuário. Se você adicionar um perfil personalizado, ambos os perfis serão usados para processar os ativos carregados.
 
@@ -138,7 +176,7 @@ Os usuários podem verificar se o processamento realmente ocorreu abrindo um ati
 
 Para situações em que é necessário um processamento adicional de ativos que não pode ser obtido usando os perfis de processamento, workflows adicionais pós-processamento podem ser adicionados à configuração. Isso permite adicionar processamento totalmente personalizado sobre o processamento configurável usando os microserviços de ativos.
 
-Os workflows de pós-processamento, se configurados, são executados automaticamente pelo AEM após a conclusão do processamento dos microserviços. Não há necessidade de adicionar iniciadores de fluxo de trabalho manualmente para acioná-los. Os exemplos incluem:
+Os workflows de pós-processamento, se configurados, são executados automaticamente por AEM após a conclusão do processamento dos microserviços. Não há necessidade de adicionar iniciadores de fluxo de trabalho manualmente para acioná-los. Os exemplos incluem:
 
 * Etapas de fluxo de trabalho personalizadas para processar ativos.
 * Integrações para adicionar metadados ou propriedades a ativos de sistemas externos, por exemplo, informações sobre produtos ou processos.
@@ -153,7 +191,7 @@ A adição de uma configuração de fluxo de trabalho de pós-processamento ao E
 
 ### Criar modelos de fluxo de trabalho de pós-processamento {#create-post-processing-workflow-models}
 
-Os modelos de fluxo de trabalho de pós-processamento são modelos de fluxo de trabalho AEM comuns. Crie modelos diferentes se precisar de processamento diferente para locais de repositório ou tipos de ativos diferentes.
+Os modelos de fluxo de trabalho de pós-processamento são modelos regulares de fluxo de trabalho AEM. Crie modelos diferentes se precisar de processamento diferente para locais de repositório ou tipos de ativos diferentes.
 
 As etapas de processamento devem ser adicionadas com base nas necessidades. Você pode usar quaisquer etapas compatíveis disponíveis, bem como quaisquer etapas de fluxo de trabalho implementadas por personalização.
 
@@ -171,7 +209,7 @@ O serviço de Executador de Fluxo de Trabalho Personalizado (`com.adobe.cq.dam.p
 >[!NOTE]
 >
 >A configuração do Custom Workflow Runner é uma configuração de um serviço OSGi. Consulte [implantar no Experience Manager](/help/implementing/deploying/overview.md) para obter informações sobre como implantar uma configuração OSGi.
->O console da Web do OSGi, ao contrário das implantações de serviços locais e gerenciados do AEM, não está disponível diretamente nas implantações de serviços em nuvem.
+>O console da Web OSGi, ao contrário das implantações de serviços no local e gerenciados de AEM, não está disponível diretamente nas implantações de serviços em nuvem.
 
 Para obter detalhes sobre qual etapa de fluxo de trabalho padrão pode ser usada no fluxo de trabalho de pós-processamento, consulte as etapas do [fluxo de trabalho no fluxo de trabalho](developer-reference-material-apis.md#post-processing-workflows-steps) de pós-processamento na referência do desenvolvedor.
 
