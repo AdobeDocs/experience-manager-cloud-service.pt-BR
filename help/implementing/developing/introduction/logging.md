@@ -2,7 +2,7 @@
 title: Registro
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
+source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
 workflow-type: tm+mt
 source-wordcount: '2212'
 ht-degree: 3%
@@ -27,9 +27,9 @@ O registro no nível do aplicativo AEM é realizado por três registros:
 1. Registros de solicitação HTTP, que registram informações sobre solicitações HTTP e suas respostas fornecidas por AEM
 1. Registros de acesso HTTP, que registram informações resumidas e solicitações HTTP fornecidas por AEM
 
-> [!NOTE]
-> 
-> As solicitações HTTP fornecidas pelo cache do Dispatcher da camada de publicação ou pelo CDN upstream não são refletidas nesses logs.
+>[!NOTE]
+>
+>As solicitações HTTP fornecidas pelo cache do Dispatcher da camada de publicação ou pelo CDN upstream não são refletidas nesses logs.
 
 ## AEM registro em Java {#aem-java-logging}
 
@@ -595,9 +595,9 @@ Na solicitação de suporte, os clientes devem indicar:
 
 As propriedades acima devem ser especificadas para cada combinação de tipo de programa/ambiente relevante.  Por exemplo, se um cliente deseja ambientes de desenvolvimento, armazenamento temporário e produção, ele deve fornecer três conjuntos de informações, conforme indicado abaixo.
 
-> [!NOTE]
+>[!NOTE]
 >
-> O encaminhamento de segmentos para ambientes de programas sandbox não é suportado.
+>O encaminhamento de segmentos para ambientes de programas sandbox não é suportado.
 
 Abaixo você encontrará um exemplo de solicitação de suporte ao cliente:
 
