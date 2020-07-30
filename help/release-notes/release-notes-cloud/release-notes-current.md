@@ -2,10 +2,10 @@
 title: Notas de versão da versão 2020.7.0 [!DNL Adobe Experience Manager] como Cloud Service.
 description: '[!DNL Adobe Experience Manager] como notas de versão do Cloud Service para 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: ffde99214fecb151408500c6ba315f55aa28e57d
+source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 35%
+source-wordcount: '968'
+ht-degree: 34%
 
 ---
 
@@ -26,7 +26,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Uma nova implementação da interface do usuário substitui a implementação com base na interface clássica.
 
-* Diálogos simplificados da interface do usuário, deixando a criação da estrutura para mapeamento variável e outras configurações para [!DNL Adobe Launch].
+* Diálogos simplificados da interface do usuário, deixando a criação da estrutura para mapeamento variável e outras configurações para [!DNL Adobe Launch]. Consulte [Integração do Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) e [integração do Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
 
 * As configurações agora são armazenadas no repositório `/conf` , e não `/etc/cloudsettings` no repositório Experience Manager.
 
