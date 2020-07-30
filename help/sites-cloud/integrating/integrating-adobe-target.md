@@ -2,7 +2,7 @@
 title: Integração com o Adobe Target
 description: 'Integração com o Adobe Target '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -26,12 +26,12 @@ O Adobe Launch é necessário para gerenciar as propriedades do cliente para o A
 ## Criação da configuração do Adobe Target {#create-configuration}
 
 1. Navegue até **Ferramentas** → **Cloud Service**.
-   ![](assets/cloudservice.png "Navegação")
+   ![](assets/cloudservice1.png "Navegação")
 2. Selecione **Adobe Target**.
 3. Selecione o botão **Criar** .
-   ![](assets/tenant.png "CriarCriar")
+   ![](assets/tenant1.png "CriarCriar")
 4. Preencha os detalhes (veja abaixo) e selecione **Connect (Conectar**).
-   ![](assets/open_screen.png "Connect")
+   ![](assets/open_screen1.png "Connect")
 
 ### Configuração IMS
 
@@ -44,7 +44,7 @@ Para editar a configuração do Público alvo, siga estas etapas:
 1. Selecione uma configuração existente e clique em **Propriedades**.
 2. Edite as propriedades.
 3. Select **Re-connect to Adobe Target**.
-   ![Reconecte-](assets/edit_config_page.png "se")
+   ![Reconecte-](assets/edit_config_page1.png "se")
 4. Selecione **Salvar e fechar**.
 
 ### Adicionar uma configuração a um site {#add-configuration}
@@ -75,7 +75,7 @@ Uma propriedade é um container que será preenchido com extensões, regras e el
 2. Forneça um nome para sua propriedade.
 3. Conforme o domínio, digite o IP/host no qual você deseja carregar a biblioteca de inicialização.
 4. Selecione o botão **Salvar** .
-   ![](assets/properties_newproperty.png "LaunchpropertyLaunchproperty")
+   ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
 
 ### Adicionar as extensões necessárias {#add-extension}
 
@@ -83,10 +83,10 @@ Uma propriedade é um container que será preenchido com extensões, regras e el
 
 1. Selecione a opção Catálogo de extensão e procure o Público alvo no filtro.
 2. Selecione **Adobe Target** at.js e clique na opção Instalar.
-   ![Pesquisa](assets/search_ext.png "do Público alvo SearchTarget")
+   ![Pesquisa](assets/search_ext1.png "do Público alvo SearchTarget")
 3. Select the **Configure** button. Observe a janela de configuração com as credenciais de conta de Público alvo importadas e a versão at.js para essa extensão.
 4. Selecione **Salvar** para adicionar a Extensão do target à propriedade Iniciar. Você pode ver a Extensão do target listada na lista **Installed Extensions (Extensões** instaladas).
-   ![Salvar extensão](assets/configure_extension.png "ExtensionSave")
+   ![Salvar extensão](assets/configure_extension1.png "ExtensionSave")
 5. Repita as etapas acima para pesquisar a extensão **Adobe ContextHub** e instalá-la (isso é necessário para a integração com parâmetros contextuais, com base nos quais a definição de metas será feita).
 
 ### Criação de um elemento de dados {#data-element}
@@ -97,16 +97,16 @@ Uma propriedade é um container que será preenchido com extensões, regras e el
 2. Selecione **Adicionar elemento** de dados.
 3. Forneça o nome do elemento de dados e mapeie-o para um parâmetro de hub de contexto.
 4. select **Save**.
-   ![Elemento](assets/data_elem.png "de dados")
+   ![Elemento](assets/data_elem1.png "de dados")
 
 ### Criação de uma regra de página {#page-rule}
 
 Em **Regra** , definimos e ordenamos uma sequência de ações, que serão executadas no site, para atingir a definição de metas.
 
 1. Adicione um conjunto de ações como exemplificado na captura de tela.
-   ![](assets/rules.png "AçõesAções")
+   ![](assets/rules1.png "AçõesAções")
 2. Em Adicionar parâmetros a todas as mboxes, adicione o elemento de dados configurado anteriormente (consulte o elemento de dados acima) ao parâmetro que será enviado na chamada da mbox.
-   ![](assets/map_data.png "MboxActions")
+   ![](assets/map_data1.png "MboxActions")
 
 ### Criar e publicar {#build-publish}
 
