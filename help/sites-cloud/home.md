@@ -1,9 +1,9 @@
 ---
 title: Sites do Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação dos sites do Adobe Experience Manager as a Cloud Service
-translation-type: ht
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 85398c51f2ce7931039a9771661c9ba7edb30d08
+workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 100%
 
@@ -24,8 +24,8 @@ Esta página lista os recursos de autoajuda sobre sites no Experience Manager as
 * [Uso de Fragmentos de experiência](authoring/fundamentals/experience-fragments.md)
 * [Uso de lançamentos](authoring/launches/overview.md)
 * [Personalização de conteúdo com o ContextHub](authoring/personalization/contexthub.md)
-* [Integração ao Adobe Analytics](integrating/adobe-analytics.md)
-* [Integração com o Adobe Target](integrating/adobe-target.md)
+* [Integração ao Adobe Analytics](integrating/integrating-adobe-analytics.md)
+* [Integração com o Adobe Target](integrating/integrating-adobe-target.md)
 
 ## Guias do Experience Manager as a Cloud Service {#aem-guides}
 
