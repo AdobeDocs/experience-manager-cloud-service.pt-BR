@@ -3,9 +3,9 @@ title: Configurar e usar os microserviços de ativos para processamento de ativo
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
+source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2208'
 ht-degree: 1%
 
 ---
@@ -92,7 +92,7 @@ Para criar um perfil de processamento padrão, siga estas etapas:
    * Qualidade em porcentagem de cada execução JPEG.
    * Tipos MIME incluídos e excluídos para definir a aplicabilidade de um perfil.
 
-![adição de perfis de processamento](assets/processing-profiles-adding.png)
+   ![adição de perfis de processamento](assets/processing-profiles-adding.png)
 
 1. Clique em **[!UICONTROL Salvar]**.
 
@@ -106,23 +106,22 @@ O vídeo a seguir demonstra a utilidade e o uso do perfil padrão.
 
 ## perfil personalizado e casos de uso {#custom-config}
 
-**Itens** TBD:
+<!-- **TBD items**:
 
-* Vinculação geral ao conteúdo de extensibilidade.
-* Mencione como obter o URL do trabalhador. URL do trabalhador para ambientes de desenvolvimento, estágio e produção.
-* Mapeamento de menção de parâmetros de serviço. Link para o artigo sobre serviços de computação.
-* Revisão da perspectiva de fluxo compartilhada no tíquete Jira.
+* Overall cross-linking with the extensibility content.
+* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention mapping of service parameters. Link to compute service article.
+* Review from flow perspective shared in Jira ticket.
+-->
 
 Alguns casos complexos de uso do processamento de ativos não podem ser realizados usando configurações padrão, pois as necessidades das organizações são variadas. Adobe ofertas [!DNL Asset Compute Service] para esses casos de uso. É um serviço escalonável e extensível para processar ativos digitais. Ele pode transformar imagens, vídeos, documentos e outros formatos de arquivo em diferentes representações, incluindo miniaturas, texto extraído e metadados e arquivos.
 
-Os desenvolvedores podem usar o Asset Compute Service para criar funcionários personalizados especializados que atendam a casos de uso complexos e predefinidos. [!DNL Experience Manager] pode chamar esses funcionários personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] suporta os seguintes casos de uso:
+Os desenvolvedores podem usar o Asset Compute Service para criar funcionários personalizados especializados que atendam a casos de uso complexos e predefinidos. [!DNL Experience Manager] pode chamar esses funcionários personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] apoia os seguintes casos de utilização de serviços externos:
 
-* Gere tags inteligentes aprimoradas personalizadas para ativos digitais usando o Adobe Sensei.
-* Gere uma máscara de recorte de um assunto usando o Adobe Sensei.
-* Recupere informações de metadados do produto do sistema PIM e torne os metadados parte do binário do ativo durante a ingestão do ativo.
-* Altere a cor de plano de fundo de uma imagem transparente usando a [!DNL Adobe Photoshop] API.
-* Retoque uma imagem usando a [!DNL Photoshop] API.
-* Endireite uma imagem usando a [!DNL Adobe Lightroom] API.
+* Chame [!DNL Adobe Photoshop] a API de recorte de imagem e salve o resultado como execução.
+* Chame sistemas de terceiros para atualizar dados, por exemplo, um sistema PIM.
+* Use a [!DNL Photoshop] API para gerar várias execuções com base no modelo da Photoshop.
+* Use a [!DNL Adobe Lightroom] API para otimizar os ativos assimilados e salvá-los como execuções.
 
 >[!NOTE]
 >
@@ -216,3 +215,4 @@ Para obter detalhes sobre qual etapa de fluxo de trabalho padrão pode ser usada
 ## Práticas recomendadas e limitações {#best-practices-limitations-tips}
 
 * Considere suas necessidades para todos os tipos de execuções ao projetar workflows. Se você não prever a necessidade de uma representação no futuro, remova a etapa de criação do fluxo de trabalho. As execuções não podem ser excluídas em massa depois. As representações indesejadas podem ocupar muito espaço no armazenamento após uso prolongado de [!DNL Experience Manager]. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e carregá-los novamente.
+* Atualmente, o suporte está limitado à geração de execuções. Não há suporte para a geração de novo ativo.
