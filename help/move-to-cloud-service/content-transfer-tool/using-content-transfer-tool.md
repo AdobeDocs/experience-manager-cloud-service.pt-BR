@@ -2,9 +2,9 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 1a2172a35c3409dd98f4ce93d621762b935d122f
+source-git-commit: 01ffc349891ac1e11af4f4bc8a539069b8f6cd5e
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1617'
 ht-degree: 97%
 
 ---
@@ -18,7 +18,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * O requisito mínimo do sistema para a ferramenta Transferência de conteúdo é o AEM 6.3 + e o JAVA 8. Se você estiver em uma versão inferior do AEM, precisará atualizar seu repositório de conteúdo para o AEM 6.5 para usar a ferramenta Transferência de conteúdo.
 
-* A Ferramenta de transferência de conteúdo pode ser usada com os seguintes tipos de armazenamento de dados: Armazenamento de dados de arquivo, armazenamento de dados S3 e armazenamento de dados S3 compartilhado. Atualmente, não suporta o Azure Blob Store Data Store.
+* A Ferramenta de transferência de conteúdo pode ser usada com os seguintes tipos de armazenamento de dados: Armazenamento de dados de arquivo, armazenamento de dados S3 e armazenamento de dados S3 compartilhado. No momento, ele não suporta o Armazenamento de Dados do Azure Blob Store.
 
 * Se você estiver usando um *Ambiente de sandbox*, certifique-se de que ele seja atualizado para a versão de 10 de junho de 2020 ou posterior. Se você estiver usando um *Ambiente de produção*, ele será atualizado automaticamente.
 
