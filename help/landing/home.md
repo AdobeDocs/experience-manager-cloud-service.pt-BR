@@ -1,11 +1,11 @@
 ---
 title: Guias do usuário do Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação do Adobe Experience Manager as a Cloud Service
-translation-type: ht
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 92%
 
 ---
 
@@ -25,10 +25,12 @@ Esta página lista os guias do usuário de autoajuda do Experience Manager as a 
 | [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service. |
+| [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Entenda como usar e administrar o Experience Manager Commerce como Cloud Service. |
 | [Migração para o AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Entenda a jornada de transição para o Cloud Service. |
 | [Implementação do Guia do usuário](/help/implementing/home.md) | Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento. |
 | [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar conectores ao Experience Manager as a Cloud Service. |
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção. |
+| [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework em AEM como Cloud Service. |
 
 ## Outros recursos do Experience Manager {#other-resources}
 
