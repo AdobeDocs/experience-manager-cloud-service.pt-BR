@@ -2,10 +2,10 @@
 title: Notas de versão da versão 2020.7.0 [!DNL Adobe Experience Manager] como Cloud Service.
 description: '[!DNL Adobe Experience Manager] como notas de versão do Cloud Service para 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
+source-git-commit: af6603725ff42583e01c62eb8e8cf11aaea41437
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 34%
+source-wordcount: '952'
+ht-degree: 38%
 
 ---
 
@@ -31,9 +31,6 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * As configurações agora são armazenadas no repositório `/conf` , e não `/etc/cloudsettings` no repositório Experience Manager.
 
 ## Adobe Experience Manager Assets as a Cloud Service {#assets}
-
->[!NOTE]
->Os AEM Assets como recursos de Cloud Service serão lançados nos próximos dias.
 
 ### Novidades {#what-is-new-assets}
 
@@ -78,7 +75,7 @@ A data de lançamento da versão 2020.7.0 do [!UICONTROL Cloud Manager] é 9 de 
 
 * Os pipelines do Cloud Manager agora oferecem suporte a variáveis e segredos definidos pelo cliente.
 
-   Consulte Variáveis [de](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) pipeline para obter mais detalhes.
+   Consulte [Variáveis de pipeline](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) para saber mais.
 
 ### Correções de erros {#bug-fixes-cm}
 
@@ -100,7 +97,7 @@ A data de lançamento da versão 2020.7.0 do [!UICONTROL Cloud Manager] é 9 de 
 
 ### Problemas conhecidos {#known-issues}
 
-* Devido a uma mudança na forma como a cobertura de código é calculada, a versão *mínima* do plug-in Jacoco agora é 0.7.5.201505241946 (lançado em maio de 2015). Os clientes que referenciam explicitamente uma versão mais antiga recebem uma mensagem de erro no processo de qualidade do código.
+* Devido a uma mudança na forma como a cobertura de código é calculada, a versão *mínima* do plug-in Jacoco agora é a 0.7.5.201505241946 (lançada em maio de 2015). Os clientes que referenciam explicitamente uma versão mais antiga recebem uma mensagem de erro no processo de qualidade do código.
 
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
