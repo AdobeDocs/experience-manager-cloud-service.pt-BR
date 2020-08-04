@@ -2,7 +2,7 @@
 title: Gerenciamento dos fragmentos de conteúdo
 description: Os Fragmentos de conteúdo são armazenados como Ativos, portanto, são gerenciados principalmente no console Ativos.
 translation-type: tm+mt
-source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
+source-git-commit: bb664c48c31aa19f71e881d31fcde5fdc3bb35a1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 11%
@@ -131,9 +131,7 @@ Para abrir o fragmento para edição:
    >[!NOTE]
    >
    >1. Uma mensagem será exibida quando o fragmento já estiver referenciado em uma página de conteúdo.
-      >
-      >
-   2. O painel lateral pode ser oculto/exibido usando o ícone **Alternar painel** lateral.
+   >2. O painel lateral pode ser oculto/exibido usando o ícone **Alternar painel** lateral.
 
 
 3. Navegue pelos três modos usando os ícones no painel lateral:
