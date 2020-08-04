@@ -2,7 +2,7 @@
 title: Personalizar componentes principais CIF
 description: Personalizar componentes principais CIF
 translation-type: tm+mt
-source-git-commit: dd6973085ae34dd6ea7296c36d0a14f699440269
+source-git-commit: c3cf472f5e207e7ca0788dc3e42105868d9bdf00
 workflow-type: tm+mt
 source-wordcount: '2520'
 ht-degree: 1%
@@ -352,7 +352,7 @@ Os Modelos Sling são implementados como Java e podem ser encontrados no módulo
    -  data-sly-use.product="com.adobe.cq.commerce.core.components.models.productteaser.ProductTeaser"
    +  data-sly-use.product="com.acme.cif.core.models.MyProductTeaser"
       data-sly-use.actionsTpl="actions.html">
-       ...
+      ...
    ```
 
    Salve as alterações em `productteaser.html`.
