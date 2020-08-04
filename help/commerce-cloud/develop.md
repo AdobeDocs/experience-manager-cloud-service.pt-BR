@@ -2,7 +2,7 @@
 title: Desenvolver comércio AEM para AEM como Cloud Service
 description: Desenvolver comércio AEM para AEM como Cloud Service
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 10%
@@ -67,13 +67,13 @@ Para o desenvolvimento local CIF Add-on usando o AEM como SDK de Cloud Service:
 
    ```bash
    export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    Janelas de exemplo:
 
    ```bash
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    Essa variável também deve ser configurada para o AEM como um ambiente Cloud Service.
 
