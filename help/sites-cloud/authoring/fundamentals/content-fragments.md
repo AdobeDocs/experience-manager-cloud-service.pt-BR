@@ -1,11 +1,11 @@
 ---
 title: Fragmentos de conteúdo
 description: Os Fragmentos de conteúdo do Adobe Experience Manager as a Cloud Service permitem projetar, criar, selecionar e usar conteúdo independente da página
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Os fragmentos do conteúdo permitem:
    * É possível confiar no conteúdo de mídia associado que está sendo preparado para relevância.
    * É possível criar variações de conteúdo ad hoc dinamicamente, ao mesmo tempo, garantir que elas permaneçam gerenciadas centralmente no fragmento.
 
-## Adicionar um fragmento de conteúdo à sua página  {#adding-a-content-fragment-to-your-page}
+## Adicionar um fragmento de conteúdo à sua página     {#adding-a-content-fragment-to-your-page}
 
 1. Abra a página para edição. 
 2. Adicione o componente **Fragmento de conteúdo**; do navegador **Componentes** ou **Inserir novo componente**. 
@@ -82,7 +82,7 @@ Abra a caixa de diálogo **Configuração** do fragmento para configurar o fragm
 
 >[!NOTE]
 >
->Consulte também Componentes [principais, o Componente de fragmento de conteúdo](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/content-fragment-component.html)
+>Consulte também [Componentes principais, Componente do fragmento de conteúdo](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html)
 
 Na caixa de diálogo de configuração apropriada, você pode selecionar os parâmetros disponíveis, incluindo:
 
@@ -106,7 +106,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 
    * **Atributo da ID HTML a ser aplicada ao componente.**
 
-### Conexão rápida ao editor de fragmentos  {#quick-connection-to-fragment-editor}
+### Conexão rápida ao editor de fragmentos     {#quick-connection-to-fragment-editor}
 
 É possível abrir a origem do fragmento para edição (o ativo) usando o ícone **Editar** na barra de ferramentas do componente. Assim, você pode [editar e gerenciar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md).
 
@@ -114,7 +114,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 >
 >Como sempre, editar a origem do fragmento afetará todas as páginas que fazem referência a esse fragmento de conteúdo.
 
-### Adicionar conteúdo intermediário  {#adding-in-between-content}
+### Adicionar conteúdo intermediário     {#adding-in-between-content}
 
 Quando um fragmento de conteúdo específico for adicionado à página, há um espaço reservado para **Arrastar os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
@@ -136,7 +136,7 @@ Para conteúdo intermediário, você pode:
 >
 >Você também pode [inserir ativos visuais (imagens) ao fragmento propriamente dito](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Os ativos visuais inseridos no fragmento propriamente dito são anexados ao parágrafo anterior no fragmento. Isso significa que não é possível posicionar conteúdo intermediário entre um ativo visual e o parágrafo anterior. Se você precisar desse nível de conexão, poderá adicionar a imagem ao fragmento (como um fragmento [de mídia](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)mista).
+>Os ativos visuais inseridos no fragmento propriamente dito são anexados ao parágrafo anterior no fragmento. Isso significa que não é possível posicionar conteúdo intermediário entre um ativo visual e o parágrafo anterior. Se você precisar desse nível de conexão, pode adicionar a imagem ao fragmento (como [fragmento de mídia mista](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
@@ -151,9 +151,9 @@ Isso causa a impressão de que o posicionamento relativo mudou, pois os parágra
 >* A menos que as duas estruturas de parágrafo entrem em conflito; nesse caso, o conteúdo intermediário não é exibido (embora ainda esteja presente internamente).
 
 
-### Usar conteúdo associado  {#using-associated-content}
+### Usar conteúdo associado     {#using-associated-content}
 
-Se você tiver [associado o conteúdo](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Se você tiver [conteúdo associado ](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial para [conteúdo intermediário](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Aqui, é possível arrastar os ativos para o local desejado (para um componente 
 
 ### Ativos inseridos no fragmento {#assets-inserted-into-the-fragment}
 
-If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
+Se os ativos (por exemplo, imagens) tiverem sido inseridos no próprio fragmento (como [fragmentos de mídia mista](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), as opções para editar esses ativos no editor de páginas serão limitadas.
 
 Por exemplo, para uma imagem, é possível
 
