@@ -3,9 +3,9 @@ title: Configurar e usar os microserviços de ativos para processamento de ativo
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
+source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2501'
 ht-degree: 1%
 
 ---
@@ -146,8 +146,8 @@ Para criar um perfil personalizado, siga estas etapas:
 1. Forneça as seguintes informações.
 
    * Nome de arquivo de cada execução e extensão de arquivo compatível.
-   * URL de ponto final de um aplicativo personalizado Firefly. O aplicativo deve ser da mesma organização que a conta Experience Manager.
-   * Adicione Parâmetros [!UICONTROL de] Serviço para transmitir informações ou parâmetros adicionais ao trabalhador personalizado.
+   * [URL de ponto final de um aplicativo](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)personalizado Firefly. O aplicativo deve ser da mesma organização que a conta Experience Manager.
+   * Adicione Parâmetros de Serviço para [passar informações adicionais ou parâmetros ao trabalhador](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)personalizado.
    * Tipos MIME incluídos e excluídos para definir a aplicabilidade de um perfil.
 
    Clique em **[!UICONTROL Salvar]**.
