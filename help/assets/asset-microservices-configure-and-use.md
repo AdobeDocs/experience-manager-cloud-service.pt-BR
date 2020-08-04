@@ -3,9 +3,9 @@ title: Configurar e usar os microserviços de ativos para processamento de ativo
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
+source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2482'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Experience Manager permite os seguintes níveis de processamento.
 |---|---|---|
 | [Configuração padrão](#default-config) | Está disponível como está e não pode ser modificado. Essa configuração fornece recursos de geração de execução muito básicos. | <ul> <li>Miniaturas padrão usadas pela interface [!DNL Assets] do usuário (48, 140 e 319 px) </li> <li> pré-visualização grande (execução na Web - 1280 px) </li><li> Metadados e extração de texto.</li></ul> |
 | [Configuração personalizada](#standard-config) | Configurado pelos administradores por meio da interface do usuário. Fornece mais opções para a geração de representação estendendo a opção padrão. Estenda o trabalhador predefinido para fornecer diferentes formatos e execuções. | <ul><li>Execução FPO. </li> <li>Alterar o formato e a resolução das imagens</li> <li> Aplica-se condicionalmente aos tipos de arquivos configurados. </li> </ul> |
-| [perfil personalizado](#custom-config) | Configurado pelos administradores por meio da interface do usuário para usar o código personalizado por meio de funcionários personalizados para chamar [!DNL Asset Compute Service]. Suporta requisitos mais complexos em um método nativo de nuvem e dimensionável. | Consulte casos [de uso](#custom-config)permitidos. |
+| [perfil personalizado](#custom-config) | Configurado pelos administradores por meio da interface do usuário para usar o código personalizado por meio de funcionários personalizados para chamar o Serviço [de Computação de](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Ativos. Suporta requisitos mais complexos em um método nativo de nuvem e dimensionável. | Consulte casos [de uso](#custom-config)permitidos. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -118,7 +118,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 * Review from flow perspective shared in Jira ticket.
 -->
 
-O [!DNL Asset Compute Service] oferece suporte a uma variedade de casos de uso, como processamento padrão, formatos específicos de Adobe como arquivos Photoshop e implementação de processamento personalizado ou específico da organização. A personalização do fluxo de trabalho do Ativo de atualização do DAM necessária no passado é feita por padrão ou pela configuração de perfis de processamento na interface do usuário. Se as necessidades da empresa não forem atendidas por esse processamento, a Adobe recomenda desenvolver e usar o Asset Compute Service para estender os recursos padrão.
+O [!DNL Asset Compute Service] oferece suporte a uma variedade de casos de uso, como processamento padrão, formatos específicos de Adobe como arquivos Photoshop e implementação de processamento personalizado ou específico da organização. A personalização do fluxo de trabalho do Ativo de atualização do DAM necessária no passado é feita automaticamente ou pela configuração de perfis de processamento. Se as necessidades da empresa não forem atendidas por essas opções de processamento, a Adobe recomenda desenvolver e usar [!DNL Asset Compute Service] para estender os recursos padrão. Para obter uma visão geral, consulte [entender a extensibilidade e quando usá-la](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ O [!DNL Asset Compute Service] oferece suporte a uma variedade de casos de uso, 
 
 Ele pode transformar imagens, vídeos, documentos e outros formatos de arquivo em diferentes representações, incluindo miniaturas, texto extraído e metadados e arquivos.
 
-Os desenvolvedores podem usar o para [!DNL Asset Compute Service] criar funcionários personalizados especializados que atendam a casos de uso predefinidos. [!DNL Experience Manager] pode chamar esses funcionários personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] apoia os seguintes casos de utilização de serviços externos:
+Os desenvolvedores podem usar o para [!DNL Asset Compute Service] criar funcionários [](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) personalizados que atendam aos casos de uso suportados. [!DNL Experience Manager] pode chamar esses funcionários personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] apoia os seguintes casos de utilização de serviços externos:
 
 * Use [!DNL Adobe Photoshop]a API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ImageCutout da e salve o resultado como execução.
 * Chame sistemas de terceiros para atualizar dados, por exemplo, um sistema PIM.
@@ -238,3 +238,10 @@ Para obter detalhes sobre qual etapa de fluxo de trabalho padrão pode ser usada
 
 * Considere suas necessidades para todos os tipos de execuções ao projetar workflows. Se você não prever a necessidade de uma representação no futuro, remova a etapa de criação do fluxo de trabalho. As execuções não podem ser excluídas em massa depois. As representações indesejadas podem ocupar muito espaço no armazenamento após uso prolongado de [!DNL Experience Manager]. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e carregá-los novamente.
 * Atualmente, o suporte está limitado à geração de execuções. Não há suporte para a geração de novo ativo.
+
+>[!MORELIKETHIS]
+>
+>* [Introdução ao Serviço](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)de Computação de Ativos.
+>* [Entenda a extensibilidade e quando usá-la](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
+>* [Como criar trabalhadores](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)personalizados.
+
