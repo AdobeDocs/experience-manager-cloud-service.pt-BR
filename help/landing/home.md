@@ -2,9 +2,9 @@
 title: Guias do usuário do Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação do Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
+source-git-commit: 3f8c56cfbb7d1eb17b6b7356108652e82c3b54d3
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '386'
 ht-degree: 92%
 
 ---
@@ -38,7 +38,7 @@ Esta página lista os guias do usuário de autoajuda do Experience Manager as a 
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentação HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
 * [Documentação dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
-* [Documentação do Cloud Manager](https://docs.adobe.com/content/help/br/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Documentação do Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/getting-access/navigation.html)
 * [Disponibilidade do GDPR](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
