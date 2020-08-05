@@ -2,7 +2,7 @@
 title: Integração com o Adobe Target
 description: 'Integração com o Adobe Target '
 translation-type: tm+mt
-source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
+source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -12,20 +12,20 @@ ht-degree: 2%
 
 # Integração com o Adobe Target{#integrating-with-adobe-target}
 
-Como parte do Adobe Marketing Cloud, o Adobe Target permite aumentar a relevância do conteúdo por meio da definição de metas e medição em todos os canais. Integrar Adobe Target e AEM como Cloud Service exige:
+Como parte do Adobe Marketing Cloud, a Adobe Target permite aumentar a relevância do conteúdo por meio da definição de metas e medição em todos os canais. A integração do Adobe Target e do AEM como Cloud Service exige:
 
-* usando a interface de usuário para toque para criar uma configuração Analytics em AEM como Cloud Service (configuração IMS necessária).
+* usando a interface de usuário para toque para criar uma Configuração de Público alvo em AEM como Cloud Service (configuração IMS necessária).
 * adicionar e configurar o Adobe Target como uma extensão no [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-O Adobe Launch é necessário para gerenciar as propriedades do cliente para o Analytics e o Público alvo em páginas AEM (bibliotecas/tags do JS). Dito isso, a integração com o Launch é necessária para a &quot;definição de metas de experiência&quot;. Para que os Fragmentos de experiência exportem para o Público alvo, você precisa apenas da Configuração do Adobe Target e IMS.
+O Adobe Launch é necessário para gerenciar as propriedades do cliente para o Analytics e o Público alvo em páginas AEM (bibliotecas/tags do JS). Dito isso, a integração com o Launch é necessária para a &quot;definição de metas de experiência&quot;. Para que os Fragmentos de experiência exportem para o Público alvo, você precisa apenas da Configuração Adobe Target e IMS.
 
 >[!NOTE]
 >
->Adobe Experience Manager como clientes Cloud Service que não têm uma conta de Público alvo existente, podem solicitar acesso ao Target Foundation Pack para Experience Cloud. O Foundation Pack fornece utilização limitada em volume do Público alvo.
+>A Adobe Experience Manager como cliente Cloud Service que não tem uma conta de Público alvo existente pode solicitar acesso ao Público alvo Foundation Pack para Experience Cloud. O Foundation Pack fornece utilização limitada em volume do Público alvo.
 
-## Criação da configuração do Adobe Target {#create-configuration}
+## Criando a configuração do Adobe Target {#create-configuration}
 
-1. Navegue até **Ferramentas** → **Cloud Service**.
+1. Navegue até **Ferramentas** → **Cloud Services**.
    ![](assets/cloudservice1.png "Navegação")
 2. Selecione **Adobe Target**.
 3. Selecione o botão **Criar** .
@@ -35,7 +35,7 @@ O Adobe Launch é necessário para gerenciar as propriedades do cliente para o A
 
 ### Configuração IMS
 
-Uma configuração IMS para o Launch e o Target é necessária para integrar corretamente o Público alvo ao AEM e ao Launch. Embora a configuração IMS para Inicialização seja pré-configurada em AEM como um Cloud Service, a configuração IMS do Público alvo deve ser criada (após o Público alvo ser provisionado). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [esta página](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) para saber como criar a configuração IMS do Público alvo.
+Uma configuração IMS para o Launch e o Público alvo é necessária para integrar corretamente o Público alvo ao AEM e ao Launch. Embora a configuração IMS para Inicialização seja pré-configurada em AEM como um Cloud Service, a configuração IMS do Público alvo deve ser criada (após o Público alvo ser provisionado). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [esta página](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) para saber como criar a configuração IMS do Público alvo.
 
 ### Edição da configuração do Público alvo {#edit-target-configuration}
 
@@ -51,9 +51,9 @@ Para editar a configuração do Público alvo, siga estas etapas:
 
 Para aplicar uma configuração de interface de usuário de toque a um site, vá para: **Sites** → **Selecione qualquer página** do site → **Propriedades** → **Avançado** → **Configuração** → Selecione o locatário da configuração.
 
-## Integração do Adobe Target em sites AEM usando o Adobe Launch {#integrate-target-launch}
+## Integração da Adobe Target em sites AEM usando o Adobe Launch {#integrate-target-launch}
 
-AEM oferta uma integração pronta para uso com o Experience Platform Launch. Ao adicionar a extensão Adobe Target ao Experience Platform Launch, você pode usar os recursos do Adobe Target em AEM página(s) da Web.As bibliotecas de Públicos alvos só serão renderizadas usando o Launch.
+AEM oferta uma integração pronta para uso com o Experience Platform Launch. Ao adicionar a extensão do Adobe Target ao Experience Platform Launch, você pode usar os recursos do Adobe Target em AEM página(s) da Web.As bibliotecas de Públicos alvos só serão renderizadas usando o Launch.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Uma propriedade é um container que será preenchido com extensões, regras e el
 
 ### Adicionar as extensões necessárias {#add-extension}
 
-**Extensões** é o container que gerencia as configurações principais da biblioteca. A extensão Adobe Target suporta implementações do lado do cliente usando o Target JavaScript SDK para a Web moderna, o at.js. É necessário adicionar as extensões **Adobe Target** e **Adobe ContextHub** .
+**Extensões** é o container que gerencia as configurações principais da biblioteca. A extensão do Adobe Target suporta implementações do lado do cliente usando o Público alvo JavaScript SDK para a Web moderna, o at.js. É necessário adicionar as extensões **Adobe Target** e **Adobe ContextHub** .
 
 1. Selecione a opção Catálogo de extensão e procure o Público alvo no filtro.
 2. Selecione **Adobe Target** at.js e clique na opção Instalar.
