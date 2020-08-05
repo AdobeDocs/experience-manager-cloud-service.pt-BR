@@ -1,21 +1,21 @@
 ---
-title: Configurar o pipeline de CI/CD - Serviços em nuvem
-description: Configurar o pipeline de CI/CD - Serviços em nuvem
+title: Configurar pipeline de CI/CD - Cloud Services
+description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 3%
+source-wordcount: '578'
+ht-degree: 1%
 
 ---
 
 
-# Configuração do seu pipeline CI-CD {#configure-ci-cd-pipeline}
+# Configurar seu pipeline de CI-CDConfiguração do seu pipeline CI-CD {#configure-ci-cd-pipeline}
 
 
 ## Como entender o fluxo {#understanding-the-flow}
 
-Você pode configurar o pipeline no bloco **Configurações de pipeline** na interface do usuário do [!UICONTROL Cloud Manager].
+You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
 
 O Gerenciador de implantação é responsável pela configuração do pipeline. Ao fazer isso, selecione primeiro uma ramificação do Repositório **Git**.
 
