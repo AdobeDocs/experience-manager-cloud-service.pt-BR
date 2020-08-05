@@ -2,9 +2,9 @@
 sub-product: Integração ao AEM as a Cloud Service
 user-guide-title: Integração ao AEM as a Cloud Service
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '133'
 ht-degree: 100%
 
@@ -34,6 +34,6 @@ ht-degree: 100%
 + Acessibilidade {#accessibility}
    + [AEM as a Cloud Service e diretrizes de acessibilidade da Web](accessibility/web-accessibility.md)
    + [Um guia rápido para a WCAG 2.1](accessibility/quick-guide-wcag.md)
-+ Práticas recomendadas    {#best-practices}
++ Práticas recomendadas     {#best-practices}
    + [Gerenciamento de SEO e URL](best-practices/seo-and-url-management.md)
 + [Visão geral dos consoles Ferramentas](tools-consoles.md)
