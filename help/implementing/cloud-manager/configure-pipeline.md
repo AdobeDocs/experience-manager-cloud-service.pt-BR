@@ -2,10 +2,10 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 2%
+source-wordcount: '772'
+ht-degree: 0%
 
 ---
 
@@ -14,35 +14,31 @@ ht-degree: 2%
 
 No Cloud Manager, há dois tipos de Pipeline:
 
-* **Condutores** de produção:
+* **Pipeline** de produção:
 
-   Um pipeline de produção só pode ser adicionado depois que um ambiente de produção e estágio é criado.
+   Um pipeline de produção só pode ser adicionado depois que um conjunto de ambientes de produção e estágio é criado.
 
-   Consulte [Configuração do pipeline](configure-pipeline.md#setting-up-the-pipeline) para obter mais detalhes.
+   Consulte [Configurando o pipeline](configure-pipeline.md#setting-up-the-pipeline) de produção para obter mais detalhes.
 
-* **Pipelines** de não produção:
+* **Pipeline** de não produção:
 
    Um Pipeline de não produção pode ser adicionado na página **Visão geral** da interface do usuário do Gerenciador de nuvem.
 
    Para obter mais detalhes, consulte [Não-produção e somente qualidade de código](configure-pipeline.md#non-production-pipelines) .
 
-## Como entender o fluxo {#understanding-the-flow}
+>[!NOTE]
+>Para configurar seu pipeline, você deve:
+> * defina o acionador que start o pipeline.
+> * defina os parâmetros que controlam a implantação de produção.
+> * configure os parâmetros de teste de desempenho.
 
-Você pode configurar o pipeline no bloco **Configurações de pipeline** na interface do usuário do [!UICONTROL Cloud Manager].
 
-O Gerenciador de implantação é responsável pela configuração do pipeline. Ao fazer isso, selecione primeiro uma ramificação do Repositório **Git**.
+## Configuração do pipeline de produção {#setting-up-production-pipeline}
 
-Para configurar seu pipeline, o usuário deve:
+O Gerenciador de implantação é responsável pela configuração do pipeline de produção.
 
-* defina o acionador que start o pipeline.
-* defina os parâmetros que controlam a implantação de produção.
-* configure os parâmetros de teste de desempenho.
-
-## Configuração do gasoduto {#setting-up-the-pipeline}
-
->[!CAUTION]
->
->O pipeline não pode ser configurado até que uma criação de programa seja concluída e o repositório Git tenha pelo menos uma ramificação.
+>[!NOTE]
+>Um pipeline de produção não pode ser configurado até que uma criação de programa seja concluída, o repositório Git tenha pelo menos uma ramificação e um conjunto de ambientes de Produção e Estágio seja criado.
 
 Antes de start para implantar seu código, você deve definir as configurações de pipeline do Gerenciador [!UICONTROL da]nuvem.
 
