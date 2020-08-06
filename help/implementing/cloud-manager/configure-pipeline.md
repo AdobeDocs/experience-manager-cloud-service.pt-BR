@@ -2,20 +2,28 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
+source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 1%
+source-wordcount: '770'
+ht-degree: 2%
 
 ---
 
 
 # Configurar seu pipeline de CI-CDConfiguração do seu pipeline CI-CD {#configure-ci-cd-pipeline}
 
+No Cloud Manager, há dois tipos de Pipeline:
+
+* **Condutores**de produção:
+Um pipeline de produção só pode ser adicionado depois que um ambiente de produção e estágio é criado. Consulte a seção [Configuração do pipeline](configure-pipeline.md#setting-up-the-pipeline) para obter mais detalhes.
+
+* **Pipelines** de não produção:
+
+   Um Pipeline de não produção pode ser adicionado na página **Visão geral** da interface do usuário do Gerenciador de nuvem. Para obter mais detalhes, consulte [Não-produção e somente qualidade de código](configure-pipeline.md#non-production-pipelines) .
 
 ## Como entender o fluxo {#understanding-the-flow}
 
-You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+Você pode configurar o pipeline no bloco **Configurações de pipeline** na interface do usuário do [!UICONTROL Cloud Manager].
 
 O Gerenciador de implantação é responsável pela configuração do pipeline. Ao fazer isso, selecione primeiro uma ramificação do Repositório **Git**.
 
@@ -49,11 +57,11 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
 
 1. A tela **Setup Pipeline (Instalar pipeline** ) é exibida. Select the branch and click **Next**.
 
-   ![](assets/set-up-pipeline2.png)
+   ![](assets/setup-pipeline-1.png)
 
 1. Configure suas opções de implantação.
 
-   ![](assets/set-up-pipeline3.png)
+   ![](assets/setup-pipeline-2.png)
 
    Você pode definir o acionador para start do pipeline:
 
@@ -69,16 +77,27 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
    * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é essencialmente emular um usuário que aprova manualmente cada falha.
 
 
-1. Clique em **Avançar** para acessar a guia **Teste** para definir seus critérios de teste para o seu programa.
+1. As configurações de pipeline de produção incluem uma terceira guia rotulada como Auditoria **de** conteúdo.
 
-   ![](assets/set-up-pipeline4.png)
+   Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de conteúdo. O usuário pode inserir manualmente um caminho de URL a ser incluído. É possível incluir no máximo 25 linhas. Se não houver páginas enviadas pelo usuário nesta seção, a página inicial do site será incluída na auditoria de conteúdo como padrão.
 
-1. Clique em **Salvar**. A página *Visão geral* agora exibe a opção **Implantar seu cartão de Programa** . Clique no botão **Implantar** para implantar seu programa.
+   >[!NOTE]
+   > As páginas configuradas serão enviadas ao serviço e avaliadas de acordo com os testes de desempenho, acessibilidade, SEO (Search Engine Otimization), práticas recomendadas e PWA (Progressive Web App).
+
+   Consulte [Entendendo os resultados](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) da auditoria de conteúdo para obter mais detalhes.
+
+   ![](assets/content-audit-1.png)
+
+   Clique em **Adicionar nova substituição** de página para fornecer um caminho de URL a ser incluído na Auditoria de conteúdo. Depois de adicionar o caminho, clique em **Salvar**.
+
+   ![](assets/content-audit-2.png)
+
+1. Clique em **Salvar** na tela **Editar Pipeline** . A página **Visão geral** agora exibe a opção **Implantar seu cartão de Programa** . Clique no botão **Implantar** para implantar seu programa.
 
    ![](assets/configure-pipeline5.png)
 
 
-## Pipelines que não são de produção e qualidade de código
+## Pipelines que não são de produção e qualidade de código {#non-production-pipelines}
 
 Para além do principal gasoduto que vai para a fase de construção e de produção, os clientes estão em condições de instalar gasodutos adicionais, denominados &quot;gasodutos **não produtivos&quot;**. Esses pipelines sempre executam as etapas de qualidade de compilação e código. Como opção, eles também podem implantar no ambiente Adobe Managed Services.
 
