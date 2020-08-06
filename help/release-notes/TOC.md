@@ -2,10 +2,10 @@
 sub-product: Notas de versão do AEM as a Cloud Service
 user-guide-title: Notas de versão do AEM as a Cloud Service
 user-guide-description: This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.
-translation-type: ht
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: ht
-source-wordcount: '55'
+translation-type: tm+mt
+source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+workflow-type: tm+mt
+source-wordcount: '58'
 ht-degree: 100%
 
 ---
@@ -15,7 +15,8 @@ ht-degree: 100%
 
 + [Informações da versão](/help/release-notes/home.md)
 + Notas de versão {#release-notes}
-   + [Notas de versão atuais (2020.7.0)](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + [Notas de versão atuais (2020.8.0)](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + [Notas da versão 2020.7.0](/help/release-notes/release-notes-cloud/release-notes-2020-7-0.md)
    + [Notas da versão 2020.6.0](/help/release-notes/release-notes-cloud/release-notes-2020-6-0.md)
    + [Notas da versão 2020.5.0](/help/release-notes/release-notes-cloud/release-notes-2020-5-0.md)
    + [Notas da versão 2020.4.0](/help/release-notes/release-notes-cloud/release-notes-2020-4-0.md)
