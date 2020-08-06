@@ -171,10 +171,13 @@ O valor da métrica Alterar pode ser um dos seguintes:
 
 * **N/D** - não havia pontuação anterior disponível para comparação
 
+   ![](assets/content-audit-test1.png)
+
 #### Pontuações no nível da página {#page-level-scores}
 
 Ao analisar qualquer um dos testes, é possível visualizar uma pontuação mais detalhada no nível da página. O usuário poderá ver a pontuação das páginas individuais do teste específico junto com a alteração da hora anterior em que o teste foi executado.
 Clicar nos Detalhes de qualquer página individual fornecerá informações sobre os elementos da página que foram avaliados e orientações para corrigir problemas se as oportunidades de melhoria forem detectadas. Os detalhes dos testes e as orientações associadas são fornecidos pelo Google Lighthouse.
+![](assets/page-level-scores.png)
 
 ## Execução de teste local {#local-test-execution}
 
