@@ -3,9 +3,9 @@ title: Configurar e usar os microserviços de ativos para processamento de ativo
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2522'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 # Usar microserviços e perfis de processamento de ativos {#get-started-using-asset-microservices}
 
 <!--
-* Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
+* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/workers process.
+* Detailed list of what file formats and what processing is supported by which workflows/application process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
 
@@ -47,8 +47,8 @@ Experience Manager permite os seguintes níveis de processamento.
 | Opção | Descrição | Casos de uso cobertos |
 |---|---|---|
 | [Configuração padrão](#default-config) | Está disponível como está e não pode ser modificado. Essa configuração fornece recursos de geração de execução muito básicos. | <ul> <li>Miniaturas padrão usadas pela interface [!DNL Assets] do usuário (48, 140 e 319 px) </li> <li> pré-visualização grande (execução na Web - 1280 px) </li><li> Metadados e extração de texto.</li></ul> |
-| [Configuração personalizada](#standard-config) | Configurado pelos administradores por meio da interface do usuário. Fornece mais opções para a geração de representação estendendo a opção padrão. Estenda o trabalhador predefinido para fornecer diferentes formatos e execuções. | <ul><li>Execução FPO. </li> <li>Alterar o formato e a resolução das imagens</li> <li> Aplica-se condicionalmente aos tipos de arquivos configurados. </li> </ul> |
-| [perfil personalizado](#custom-config) | Configurado pelos administradores por meio da interface do usuário para usar o código personalizado por meio de funcionários personalizados para chamar o Serviço [de Computação de](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Ativos. Suporta requisitos mais complexos em um método nativo de nuvem e dimensionável. | Consulte casos [de uso](#custom-config)permitidos. |
+| [Configuração personalizada](#standard-config) | Configurado pelos administradores por meio da interface do usuário. Fornece mais opções para a geração de representação estendendo a opção padrão. Estenda a opção predefinida para fornecer diferentes formatos e execuções. | <ul><li>Execução FPO. </li> <li>Alterar o formato e a resolução das imagens</li> <li> Aplica-se condicionalmente aos tipos de arquivos configurados. </li> </ul> |
+| [perfil personalizado](#custom-config) | Configurado pelos administradores por meio da interface do usuário para usar o código personalizado por meio de aplicativos personalizados para chamar o Serviço [de Computação de](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Ativos. Suporta requisitos mais complexos em um método nativo de nuvem e dimensionável. | Consulte casos [de uso](#custom-config)permitidos. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -113,7 +113,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 <!-- **TBD items**:
 
 * Overall cross-linking with the extensibility content.
-* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
 * Mention mapping of service parameters. Link to compute service article.
 * Review from flow perspective shared in Jira ticket.
 -->
@@ -122,11 +122,11 @@ O [!DNL Asset Compute Service] oferece suporte a uma variedade de casos de uso, 
 
 >[!NOTE]
 >
->A Adobe recomenda usar um trabalhador personalizado somente quando não for possível realizar a empresa usando as configurações padrão ou o perfil padrão.
+>A Adobe recomenda usar um aplicativo personalizado somente quando os requisitos comerciais não podem ser cumpridos usando as configurações padrão ou o perfil padrão.
 
-Ele pode transformar imagens, vídeos, documentos e outros formatos de arquivo em diferentes representações, incluindo miniaturas, texto extraído e metadados e arquivos.
+Ele pode transformar imagens, vídeos, documentos e outros formatos de arquivo em diferentes representações, incluindo miniaturas, texto e metadados extraídos e arquivos.
 
-Os desenvolvedores podem usar o para [!DNL Asset Compute Service] criar funcionários [](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) personalizados que atendam aos casos de uso suportados. [!DNL Experience Manager] pode chamar esses funcionários personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] apoia os seguintes casos de utilização de serviços externos:
+Os desenvolvedores podem usar o para [!DNL Asset Compute Service] criar aplicativos [](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) personalizados que atendam aos casos de uso suportados. [!DNL Experience Manager] pode chamar esses aplicativos personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] apoia os seguintes casos de utilização de serviços externos:
 
 * Use [!DNL Adobe Photoshop]a API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ImageCutout da e salve o resultado como execução.
 * Chame sistemas de terceiros para atualizar dados, por exemplo, um sistema PIM.
@@ -135,22 +135,24 @@ Os desenvolvedores podem usar o para [!DNL Asset Compute Service] criar funcion�
 
 >[!NOTE]
 >
->Não é possível editar os metadados padrão usando os trabalhadores personalizados. Você só pode modificar metadados personalizados.
+>Não é possível editar os metadados padrão usando os aplicativos personalizados. Você só pode modificar metadados personalizados.
 
 ### Criar um perfil personalizado {#create-custom-profile}
 
 Para criar um perfil personalizado, siga estas etapas:
 
 1. Os administradores acessam **[!UICONTROL Ferramentas > Ativos > Perfis]** de processamento. Clique em **[!UICONTROL Criar]**.
-1. Click on **[!UICONTROL Custom]** tab. Clique em **[!UICONTROL Adicionar novo]**. Forneça o nome de arquivo desejado para a representação.
+1. Clique na guia **[!UICONTROL Personalizado]** . Clique em **[!UICONTROL Adicionar novo]**. Forneça o nome de arquivo desejado para a representação.
 1. Forneça as seguintes informações.
 
    * Nome de arquivo de cada execução e extensão de arquivo compatível.
-   * [URL de ponto final de um aplicativo](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)personalizado Firefly. O aplicativo deve ser da mesma organização que a conta Experience Manager.
-   * Adicione Parâmetros de Serviço para [passar informações adicionais ou parâmetros ao trabalhador](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)personalizado.
+   * [URL de ponto final de um aplicativo](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)personalizado Firefly. O aplicativo deve ser da mesma organização que a conta Experience Manager.
+   * Adicione Parâmetros de Serviço para [passar informações ou parâmetros adicionais para o aplicativo](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)personalizado.
    * Tipos MIME incluídos e excluídos para definir a aplicabilidade de um perfil.
 
    Clique em **[!UICONTROL Salvar]**.
+
+O aplicativo personalizado obtém todos os arquivos fornecidos se eles estiverem configurados com um perfil de processamento. O aplicativo deve filtrar os arquivos.
 
 >[!CAUTION]
 >
@@ -160,11 +162,11 @@ Para criar um perfil personalizado, siga estas etapas:
 
 Para ilustrar o uso personalizado de perfis, considere um caso de uso para aplicar algum texto personalizado a imagens de campanha. Você pode criar um perfil de processamento que aproveita a API do Photoshop para editar as imagens.
 
-A integração do Asset Compute Service permite que o Experience Manager passe esses parâmetros para o trabalhador personalizado usando o campo Parâmetros  de Serviço. O trabalhador personalizado então chama a API do Photoshop e transmite esses valores para a API. Por exemplo, é possível passar o nome da fonte, a cor do texto, o peso do texto e o tamanho do texto para adicionar o texto personalizado às imagens de campanha.
+A integração do Asset Compute Service permite que o Experience Manager passe esses parâmetros para o aplicativo personalizado usando o campo Parâmetros  de serviço. O aplicativo personalizado então chama a API do Photoshop e transmite esses valores para a API. Por exemplo, é possível passar o nome da fonte, a cor do texto, o peso do texto e o tamanho do texto para adicionar o texto personalizado às imagens de campanha.
 
 ![perfil de processamento personalizado](assets/custom-processing-profile.png)
 
-*Figura: Use o campo Parâmetros[!UICONTROL de]serviço para passar informações adicionadas para parâmetros predefinidos incorporados ao trabalhador personalizado.*
+*Figura: Use o campo Parâmetros[!UICONTROL de]serviço para passar informações adicionadas para parâmetros predefinidos criados no aplicativo personalizado.*
 
 Quando imagens de campanha são carregadas na pasta na qual o perfil de processamento é aplicado, as imagens são atualizadas com `Jumanji` texto na `Arial-BoldMT` fonte.
 
@@ -243,5 +245,5 @@ Para obter detalhes sobre qual etapa de fluxo de trabalho padrão pode ser usada
 >
 >* [Introdução ao Serviço](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)de Computação de Ativos.
 >* [Entenda a extensibilidade e quando usá-la](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
->* [Como criar trabalhadores](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)personalizados.
+>* [Como criar aplicativos](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)personalizados.
 
