@@ -1,10 +1,10 @@
 ---
-title: Entenda seus resultados de teste - Serviços em nuvem
-description: Entenda os resultados do teste - Serviços em nuvem
+title: Entenda seus resultados de teste - Cloud Services
+description: Entenda os resultados do teste - Cloud Services
 translation-type: tm+mt
-source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1486'
 ht-degree: 4%
 
 ---
@@ -12,12 +12,14 @@ ht-degree: 4%
 
 # Noções básicas dos resultados de teste {#understand-test-results}
 
-As execuções de pipeline do Cloud Manager for Cloud Services oferecerão suporte à execução de testes executados em relação ao ambiente stage. Isso contrasta com os testes executados durante a etapa de criação e teste de unidade executados offline, sem acesso a nenhum ambiente AEM em execução.
+As execuções de pipeline do Cloud Manager para o Cloud Services oferecerão suporte à execução de testes que são executados no ambiente de preparo. Isso contrasta com os testes executados durante a etapa Build and Unit Testing, que são executados offline, sem acesso a nenhum ambiente AEM em execução.
 Há dois tipos de testes executados neste contexto:
 * Testes escritos pelo cliente
-* Testes escritos pela Adobe
+* testes por Adobe
+* Ferramenta de código aberto fornecida pelo Farol do Google
 
-Ambos os tipos de testes são executados em uma infraestrutura de contêiner projetada para executar esses tipos de testes.
+   >[!NOTE]
+   > Os testes escritos pelo cliente e os testes por Adobe são executados em uma infraestrutura de contêiner projetada para executar esses tipos de testes.
 
 
 ## Teste de qualidade de código {#code-quality-testing}
@@ -33,7 +35,7 @@ Como parte do pipeline, o código fonte é verificado para garantir que as impla
 | Testes de unidade ignorados | Número de testes de unidade ignorados. | Informações | > 1 |
 | Problemas em aberto | Tipos de edição geral - Vulnerabilidades, Erros e Cheiros de código | Informações | > 0 |
 | Linhas Duplicadas | Número de linhas envolvidas em blocos duplicados. <br/>Para que um bloco de código seja considerado como duplicado: <br/><ul><li>**Projetos não Java:**</li><li>Deve haver pelo menos 100 tokens sucessivos e duplicados.</li><li>Esses tokens devem ser espalhados pelo menos em: </li><li>30 linhas de código para COBOL </li><li>20 linhas de código para ABAP </li><li>10 linhas de código para outras línguas</li><li>**Projetos Java:**</li><li> Deve haver pelo menos 10 declarações sucessivas e duplicadas, independentemente do número de tokens e linhas.</li></ul> <br/>As diferenças no recuo, bem como nos literais de string, são ignoradas ao detectar duplicações. | Informações | > 1% |
-| Compatibilidade do serviço em nuvem | Número de problemas identificados de Compatibilidade do serviço em nuvem. | Informações | > 0 |
+| Compatibilidade com Cloud Service | Número de problemas de compatibilidade de Cloud Service identificados. | Informações | > 0 |
 
 
 >[!NOTE]
@@ -52,7 +54,7 @@ O processo de verificação da qualidade não é perfeito e, por vezes, identifi
 
 Nesses casos, o código fonte pode ser anotado com a `@SuppressWarnings` anotação padrão Java que especifica a ID da regra como o atributo de anotação. Por exemplo, um problema comum é que a regra SonarQube para detectar senhas codificadas pode ser agressiva sobre como uma senha codificada é identificada.
 
-Para ver um exemplo específico, esse código seria bastante comum em um projeto do AEM que tem código para se conectar a algum serviço externo:
+Para ver um exemplo específico, esse código seria bastante comum em um projeto AEM que tem código para se conectar a algum serviço externo:
 
 ```java
 @Property(label = "Service Password")
@@ -132,6 +134,51 @@ No entanto, se nenhum JAR de teste for produzido pela compilação, o teste ser�
 >[!NOTE]
 >O botão **Baixar registro** permite acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade normal de Download ou Logs de assinatura. Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
 
+## Teste de auditoria de conteúdo {#content-audit-testing}
+
+A auditoria de conteúdo é um recurso disponível nos pipelines de produção do Cloud Manager que é acionado pelo Lighthouse, uma ferramenta de código aberto do Google. Esse recurso é ativado em todos os pipelines de produção do Cloud Manager.
+
+Ele valida o processo de implantação e ajuda a garantir que as alterações implantadas:
+
+1. Atenda aos padrões básicos de desempenho, acessibilidade, práticas recomendadas, SEO (Search Engine Otimization) e PWA (Progressive Web App).
+
+1. Não inclua regressões nessas dimensões.
+
+A auditoria de conteúdo no Cloud Manager garante que a experiência digital dos usuários finais no site seja mantida com os mais altos padrões. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
+
+### Como entender os resultados da auditoria de conteúdo {#understanding-content-audit-results}
+
+A Auditoria de conteúdo fornece resultados de testes em nível de página e agregação por meio da página de execução do pipeline de produção.
+
+* As métricas de nível de Agregação medem a pontuação média nas páginas que foram auditadas.
+* As pontuações de nível de página individuais também estão disponíveis por meio da busca detalhada.
+* Detalhes das pontuações estão disponíveis para ver quais são os resultados dos testes individuais, juntamente com orientações sobre como corrigir quaisquer problemas identificados durante a auditoria de conteúdo.
+* Um histórico dos resultados do teste é persistente no Cloud Manager para que os clientes possam ver se as alterações que estão sendo introduzidas na execução do pipeline incluem quaisquer regressões da execução anterior.
+
+#### Pontuações de Agregação {#aggregate-scores}
+
+Há uma pontuação de nível de agregação para cada tipo de teste (desempenho, acessibilidade, SEO, práticas recomendadas e PWA).
+
+A pontuação do nível de agregação obtém a pontuação média das páginas que estão incluídas na execução. A alteração no nível da agregação representa a pontuação média das páginas na execução atual em comparação com a média das pontuações da execução anterior, mesmo se a coleção de páginas configuradas a serem incluídas tiver sido alterada entre as execuções.
+
+O valor da métrica Alterar pode ser um dos seguintes:
+
+* **Valor** positivo - as páginas melhoraram no teste selecionado desde a última execução do pipeline de produção
+
+* **Valor** negativo - as páginas regrediram no teste selecionado desde a última execução do pipeline de produção
+
+* **Sem alteração** - as páginas tiveram a mesma pontuação desde a última execução do pipeline de produção
+
+* **N/D** - não havia pontuação anterior disponível para comparação
+
+   ![](assets/content-audit-test1.png)
+
+#### Pontuações no nível da página {#page-level-scores}
+
+Ao analisar qualquer um dos testes, é possível visualizar uma pontuação mais detalhada no nível da página. O usuário poderá ver a pontuação das páginas individuais do teste específico junto com a alteração da hora anterior em que o teste foi executado.
+Clicar nos Detalhes de qualquer página individual fornecerá informações sobre os elementos da página que foram avaliados e orientações para corrigir problemas se as oportunidades de melhoria forem detectadas. Os detalhes dos testes e as orientações associadas são fornecidos pelo Google Lighthouse.
+![](assets/page-level-scores.png)
+
 ## Execução de teste local {#local-test-execution}
 
 Como as classes de teste são testes JUnit, elas podem ser executadas a partir de Java IDEs comuns como Eclipse, IntelliJ, NetBeans e assim por diante.
@@ -149,3 +196,4 @@ As propriedades do sistema são as seguintes:
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
