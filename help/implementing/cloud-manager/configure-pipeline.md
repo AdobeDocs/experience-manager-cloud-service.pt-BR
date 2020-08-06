@@ -2,7 +2,7 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
+source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 2%
@@ -15,11 +15,15 @@ ht-degree: 2%
 No Cloud Manager, há dois tipos de Pipeline:
 
 * **Condutores**de produção:
-Um pipeline de produção só pode ser adicionado depois que um ambiente de produção e estágio é criado. Consulte a seção [Configuração do pipeline](configure-pipeline.md#setting-up-the-pipeline) para obter mais detalhes.
+Um pipeline de produção só pode ser adicionado depois que um ambiente de produção e estágio é criado.
+
+   Consulte a seção [Configuração do pipeline](configure-pipeline.md#setting-up-the-pipeline) para obter mais detalhes.
 
 * **Pipelines** de não produção:
 
-   Um Pipeline de não produção pode ser adicionado na página **Visão geral** da interface do usuário do Gerenciador de nuvem. Para obter mais detalhes, consulte [Não-produção e somente qualidade de código](configure-pipeline.md#non-production-pipelines) .
+   Um Pipeline de não produção pode ser adicionado na página **Visão geral** da interface do usuário do Gerenciador de nuvem.
+
+   Para obter mais detalhes, consulte [Não-produção e somente qualidade de código](configure-pipeline.md#non-production-pipelines) .
 
 ## Como entender o fluxo {#understanding-the-flow}
 
@@ -90,7 +94,7 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
 
    Clique em **Adicionar nova substituição** de página para fornecer um caminho de URL a ser incluído na Auditoria de conteúdo. Depois de adicionar o caminho, clique em **Salvar**.
 
-   ![](assets/content-audit-2.png)
+   ![](assets/content-audit2.png)
 
 1. Clique em **Salvar** na tela **Editar Pipeline** . A página **Visão geral** agora exibe a opção **Implantar seu cartão de Programa** . Clique no botão **Implantar** para implantar seu programa.
 
