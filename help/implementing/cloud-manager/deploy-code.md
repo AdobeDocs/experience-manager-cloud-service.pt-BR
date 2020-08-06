@@ -2,9 +2,9 @@
 title: Implantar seu código - Cloud Services
 description: Implantar seu código - Cloud Services
 translation-type: tm+mt
-source-git-commit: ebab226b7d45994cc00c1abe42d84dab47391f5d
+source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '994'
 ht-degree: 3%
 
 ---
@@ -50,8 +50,14 @@ Depois de configurar o **Pipeline** (repositório, ambiente e ambiente de teste)
       ![](assets/stage-deployment.png)
    O **Teste de preparo** envolve as seguintes etapas:
 
-   * Teste funcional do produto: As execuções de pipeline do Gerenciador de nuvem oferecerão suporte à execução de testes executados em relação ao ambiente stage. Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
-   * Teste funcional personalizado: Esta etapa do pipeline está sempre presente e não pode ser ignorada. No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão. Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
+   * Teste funcional do produto: As execuções de pipeline do Gerenciador de nuvem oferecerão suporte à execução de testes executados em relação ao ambiente stage.
+Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
+
+   * Teste funcional personalizado: Esta etapa do pipeline está sempre presente e não pode ser ignorada. No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão.\
+      Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
+
+   * Auditoria de conteúdo: Esta etapa do pipeline está sempre presente e não pode ser ignorada. Como um pipeline de produção é executado, uma etapa de auditoria de conteúdo é incluída após testes funcionais personalizados que executarão as verificações. As páginas configuradas serão enviadas ao serviço e avaliadas. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
+Consulte [Compreensão dos resultados](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) da auditoria de conteúdo para obter mais detalhes.
 
       ![](assets/stage-testing.png)
 
