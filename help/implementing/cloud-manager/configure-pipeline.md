@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '793'
 ht-degree: 2%
 
 ---
@@ -14,10 +14,11 @@ ht-degree: 2%
 
 No Cloud Manager, há dois tipos de Pipeline:
 
-* **Condutores**de produção:
-Um pipeline de produção só pode ser adicionado depois que um ambiente de produção e estágio é criado.
+* **Condutores** de produção:
 
-   Consulte a seção [Configuração do pipeline](configure-pipeline.md#setting-up-the-pipeline) para obter mais detalhes.
+   Um pipeline de produção só pode ser adicionado depois que um ambiente de produção e estágio é criado.
+
+   Consulte [Configuração do pipeline](configure-pipeline.md#setting-up-the-pipeline) para obter mais detalhes.
 
 * **Pipelines** de não produção:
 
@@ -83,6 +84,8 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
 
 1. As configurações de pipeline de produção incluem uma terceira guia rotulada como Auditoria **de** conteúdo.
 
+   ![](assets/content-audit-1.png)
+
    Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de conteúdo. O usuário pode inserir manualmente um caminho de URL a ser incluído. É possível incluir no máximo 25 linhas. Se não houver páginas enviadas pelo usuário nesta seção, a página inicial do site será incluída na auditoria de conteúdo como padrão.
 
    >[!NOTE]
@@ -90,9 +93,10 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
 
    Consulte [Entendendo os resultados](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) da auditoria de conteúdo para obter mais detalhes.
 
-   ![](assets/content-audit-1.png)
-
    Clique em **Adicionar nova substituição** de página para fornecer um caminho de URL a ser incluído na Auditoria de conteúdo. Depois de adicionar o caminho, clique em **Salvar**.
+
+   >[!NOTE]
+   >Para ativar a etapa Auditoria de conteúdo, os usuários devem editar o pipeline e, opcionalmente, adicionar páginas. Consulte Problemas [conhecidos](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) para obter mais detalhes.
 
    ![](assets/content-audit2.png)
 
