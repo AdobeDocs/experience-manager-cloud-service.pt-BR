@@ -2,9 +2,9 @@
 title: Notas de versão da versão 2020.8.0 [!DNL Adobe Experience Manager] como Cloud Service.
 description: '[!DNL Adobe Experience Manager] como notas de versão do Cloud Service para 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '438'
 ht-degree: 6%
 
 ---
@@ -13,6 +13,14 @@ ht-degree: 6%
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.8.0.
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### Novidades {#what-is-new-commerce}
+
+* O recurso Console do produto agora está disponível. Isso permite que os profissionais de marketing/autores em AEM visualizações e naveguem por categorias e produtos armazenados no backend de comércio. Também é fornecido suporte para propriedades de categorias e produtos no console de produtos.
+
+* Os seletores de produto e Categoria foram aprimorados para permitir que os profissionais de marketing selecionem o produto por SKU ou selecionem a categoria por meio da ID da categoria.
 
 ## Cloud Manager {#cloud-manager}
 
