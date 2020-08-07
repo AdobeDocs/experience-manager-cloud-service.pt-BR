@@ -2,10 +2,10 @@
 title: Conceitos principais do Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação dos conceitos principais do Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 96%
+source-wordcount: '384'
+ht-degree: 93%
 
 ---
 
@@ -41,7 +41,7 @@ Esta página lista os recursos de autoajuda que apresentam os conceitos principa
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentação HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
 * [Documentação dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
-* [Documentação do Cloud Manager](https://docs.adobe.com/content/help/br/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Documentação do Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Disponibilidade do GDPR](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
