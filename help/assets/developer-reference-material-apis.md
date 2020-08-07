@@ -3,9 +3,9 @@ title: 'APIs de ativos para gerenciamento de ativos digitais no Adobe Experience
 description: As APIs de ativos permitem operações básicas de criação-leitura-atualização-exclusão (CRUD) para gerenciar ativos, incluindo binários, metadados, representações, comentários e Fragmentos de conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
@@ -29,13 +29,13 @@ O Experience Manager como um serviço em nuvem fornece uma nova maneira de fazer
 
 O algoritmo de alto nível para carregar um binário é:
 
-1. Envie uma solicitação HTTP informando o AEM sobre a intenção de carregar um novo binário.
-1. Publique o conteúdo do binário em um ou mais URIs fornecidos pelo pedido de início.
+1. Envie uma solicitação HTTP informando AEM sobre a intenção de fazer upload de um novo binário.
+1. POST o conteúdo do binário para um ou mais URIs fornecidos pelo pedido de início.
 1. Envie uma solicitação HTTP para informar ao servidor que o conteúdo do binário foi carregado com êxito.
 
 ![Visão geral do protocolo de carregamento binário direto](assets/add-assets-technical.png)
 
-As diferenças importantes comparadas às versões anteriores do AEM incluem:
+As diferenças importantes em relação às versões anteriores do AEM incluem:
 
 * Os binários não passam pelo AEM, que agora está apenas coordenando o processo de upload com o armazenamento da nuvem binária configurado para a implantação
 * O armazenamento em nuvem binário é fornecido por uma Rede de Delivery de Conteúdo (CDN, Edge Network), que aproxima o terminal de upload do cliente, ajudando, assim, a melhorar o desempenho de upload e a experiência do usuário, especialmente para equipes distribuídas que carregam ativos
@@ -48,11 +48,7 @@ Essa abordagem deve proporcionar uma manipulação mais escalável e eficiente d
 
 ### Iniciar carregamento {#initiate-upload}
 
-A primeira etapa é enviar uma solicitação HTTP POST para a pasta onde o ativo deve ser criado ou atualizado; inclua o seletor `.initiateUpload.json` para indicar que a solicitação deve iniciar um upload binário. Por exemplo, o caminho para a pasta onde o ativo deve ser criado é `/assets/folder`:
-
-```
-POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-```
+A primeira etapa é enviar uma solicitação POST HTTP para a pasta onde o ativo deve ser criado ou atualizado; inclua o seletor `.initiateUpload.json` para indicar que a solicitação deve iniciar um upload binário. Por exemplo, o caminho para a pasta onde o ativo deve ser criado é `/assets/folder`. A solicitação de POST é `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 O tipo de conteúdo do corpo da solicitação deve ser dados de `application/x-www-form-urlencoded` formulário, contendo os seguintes campos:
 
@@ -61,7 +57,7 @@ O tipo de conteúdo do corpo da solicitação deve ser dados de `application/x-w
 
 Uma única solicitação pode ser usada para iniciar uploads para vários binários, desde que cada binário contenha os campos obrigatórios. Se bem-sucedida, a solicitação responderá com um código de `201` status e um corpo contendo dados JSON no seguinte formato:
 
-```
+```json
 {
     "completeURI": "(string)",
     "folderPath": (string)",
@@ -90,19 +86,19 @@ Uma única solicitação pode ser usada para iniciar uploads para vários binár
 
 ### Carregar binário {#upload-binary}
 
-A saída do início de um upload incluirá um ou mais valores de URI de upload. Se mais de um URI for fornecido, é responsabilidade do cliente &quot;dividir&quot; o binário em partes e executar o POST em cada parte, em ordem, para cada URI, em ordem. Todos os URIs devem ser usados e cada parte deve ser maior que o tamanho mínimo e menor que o tamanho máximo especificado na resposta de início. Essas solicitações serão encaminhadas por nós de borda CDN para acelerar o upload de binários.
+A saída do início de um upload incluirá um ou mais valores de URI de upload. Se mais de um URI for fornecido, é responsabilidade do cliente &quot;dividir&quot; o binário em partes e POST cada parte, em ordem, para cada URI, em ordem. Todos os URIs devem ser usados e cada parte deve ser maior que o tamanho mínimo e menor que o tamanho máximo especificado na resposta de início. Essas solicitações serão encaminhadas por nós de borda CDN para acelerar o upload de binários.
 
 Uma maneira potencial de fazer isso é calcular o tamanho da peça com base no número de URIs de upload fornecidos pela API. Exemplo, considerando que o tamanho total do binário é de 20.000 bytes e o número de URIs de upload é de 2:
 
 * Calcule o tamanho da peça dividindo o tamanho total pelo número de URIs: 20.000 / 2 = 10.000
-* Intervalo de bytes POST de 0 a 9.999 do binário para o primeiro URI na lista de URIs de upload
-* Intervalo de bytes POST 10.000 - 19.999 do binário para o segundo URI na lista de URIs de upload
+* POST no intervalo de 0 a 9.999 do binário para o primeiro URI na lista de URIs de carregamento
+* Intervalo de POST 10.000 - 19.999 do URI binário para o segundo URI na lista de URIs de carregamento
 
 Se bem-sucedido, o servidor responde a cada solicitação com um código de `201` status.
 
 ### Carregamento completo {#complete-upload}
 
-Depois que todas as partes de um arquivo binário forem carregadas, envie uma solicitação HTTP POST para o URI completo fornecido pelos dados de início. O tipo de conteúdo do corpo da solicitação deve ser dados de `application/x-www-form-urlencoded` formulário, contendo os seguintes campos.
+Depois que todas as partes de um arquivo binário forem carregadas, envie uma solicitação POST HTTP para o URI completo fornecido pelos dados de início. O tipo de conteúdo do corpo da solicitação deve ser dados de `application/x-www-form-urlencoded` formulário, contendo os seguintes campos.
 
 | Fields | Tipo | Obrigatório ou não | Descrição |
 |---|---|---|---|
@@ -125,7 +121,7 @@ Se bem-sucedido, o servidor responde com um código de `200` status.
 
 ### Biblioteca de upload de código aberto {#open-source-upload-library}
 
-Para saber mais sobre os algoritmos de upload ou para criar seus próprios scripts e ferramentas de upload, a Adobe fornece bibliotecas e ferramentas de código aberto como pontos de partida:
+Para saber mais sobre os algoritmos de upload ou para criar seus próprios scripts e ferramentas de upload, o Adobe oferece bibliotecas e ferramentas de código aberto como pontos de partida:
 
 * [Biblioteca aem-upload de código aberto](https://github.com/adobe/aem-upload)
 * [Ferramenta de linha de comando open-source](https://github.com/adobe/aio-cli-plugin-aem)
@@ -134,9 +130,9 @@ Para saber mais sobre os algoritmos de upload ou para criar seus próprios scrip
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Somente as novas APIs de carregamento são suportadas para Adobe Experience Manager como Cloud Service. As APIs do Adobe Experience Manager 6.5 estão obsoletas. Os métodos relacionados ao upload ou atualização de ativos ou execuções (qualquer upload binário) estão obsoletos nas seguintes APIs:
+Somente as novas APIs de upload são compatíveis para Adobe Experience Manager como Cloud Service. As APIs do Adobe Experience Manager 6.5 estão obsoletas. Os métodos relacionados ao upload ou atualização de ativos ou execuções (qualquer upload binário) estão obsoletos nas seguintes APIs:
 
-* [API HTTP do AEM Assets](mac-api-assets.md)
+* [API HTTP AEM Assets](mac-api-assets.md)
 * `AssetManager` API Java, como `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
