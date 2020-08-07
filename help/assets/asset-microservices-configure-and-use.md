@@ -3,9 +3,9 @@ title: Configurar e usar os microserviços de ativos para processamento de ativo
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2537'
 ht-degree: 1%
 
 ---
@@ -46,9 +46,9 @@ Experience Manager permite os seguintes níveis de processamento.
 
 | Opção | Descrição | Casos de uso cobertos |
 |---|---|---|
-| [Configuração padrão](#default-config) | Está disponível como está e não pode ser modificado. Essa configuração fornece recursos de geração de execução muito básicos. | <ul> <li>Miniaturas padrão usadas pela interface [!DNL Assets] do usuário (48, 140 e 319 px) </li> <li> pré-visualização grande (execução na Web - 1280 px) </li><li> Metadados e extração de texto.</li></ul> |
+| [Configuração padrão](#default-config) | Está disponível como está e não pode ser modificado. Essa configuração fornece recursos de geração de execução muito básicos. | <ul> <li>Miniaturas padrão usadas pela interface [!DNL Assets] do usuário (48, 140 e 319 px) </li> <li> Pré-visualização grande (execução na Web - 1280 px) </li><li> Metadados e extração de texto.</li></ul> |
 | [Configuração personalizada](#standard-config) | Configurado pelos administradores por meio da interface do usuário. Fornece mais opções para a geração de representação estendendo a opção padrão. Estenda a opção predefinida para fornecer diferentes formatos e execuções. | <ul><li>Execução FPO. </li> <li>Alterar o formato e a resolução das imagens</li> <li> Aplica-se condicionalmente aos tipos de arquivos configurados. </li> </ul> |
-| [perfil personalizado](#custom-config) | Configurado pelos administradores por meio da interface do usuário para usar o código personalizado por meio de aplicativos personalizados para chamar o Serviço [de Computação de](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Ativos. Suporta requisitos mais complexos em um método nativo de nuvem e dimensionável. | Consulte casos [de uso](#custom-config)permitidos. |
+| [Perfil personalizado](#custom-config) | Configurado pelos administradores por meio da interface do usuário para usar o código personalizado por meio de aplicativos personalizados para chamar o Serviço [de Computação de](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Ativos. Suporta requisitos mais complexos em um método nativo de nuvem e dimensionável. | Consulte casos [de uso](#custom-config)permitidos. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -108,15 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
-## perfil personalizado e casos de uso {#custom-config}
-
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
+## Perfil personalizado e casos de uso {#custom-config}
 
 O [!DNL Asset Compute Service] oferece suporte a uma variedade de casos de uso, como processamento padrão, formatos específicos de Adobe como arquivos Photoshop e implementação de processamento personalizado ou específico da organização. A personalização do fluxo de trabalho do Ativo de atualização do DAM necessária no passado é feita automaticamente ou pela configuração de perfis de processamento. Se as necessidades da empresa não forem atendidas por essas opções de processamento, a Adobe recomenda desenvolver e usar [!DNL Asset Compute Service] para estender os recursos padrão. Para obter uma visão geral, consulte [entender a extensibilidade e quando usá-la](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
@@ -148,11 +140,11 @@ Para criar um perfil personalizado, siga estas etapas:
    * Nome de arquivo de cada execução e extensão de arquivo compatível.
    * [URL de ponto final de um aplicativo](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)personalizado Firefly. O aplicativo deve ser da mesma organização que a conta Experience Manager.
    * Adicione Parâmetros de Serviço para [passar informações ou parâmetros adicionais para o aplicativo](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)personalizado.
-   * Tipos MIME incluídos e excluídos para definir a aplicabilidade de um perfil.
+   * Tipos MIME incluídos e excluídos para limitar o processamento a alguns formatos de arquivo específicos.
 
    Clique em **[!UICONTROL Salvar]**.
 
-O aplicativo personalizado obtém todos os arquivos fornecidos se eles estiverem configurados com um perfil de processamento. O aplicativo deve filtrar os arquivos.
+Os aplicativos personalizados são aplicativos [do Project Firefly](https://github.com/AdobeDocs/project-firefly) sem cabeçalho. O aplicativo personalizado obtém todos os arquivos fornecidos se eles estiverem configurados com um perfil de processamento. O aplicativo deve filtrar os arquivos.
 
 >[!CAUTION]
 >
@@ -195,7 +187,7 @@ Todas as execuções geradas estão disponíveis na visualização [!UICONTROL R
 
 *Figura: Exemplo de duas execuções adicionais geradas por um perfil de processamento aplicado à pasta pai.*
 
-## workflows de pós-processamento {#post-processing-workflows}
+## Workflows de pós-processamento {#post-processing-workflows}
 
 Para situações em que é necessário um processamento adicional de ativos que não pode ser obtido usando os perfis de processamento, workflows adicionais pós-processamento podem ser adicionados à configuração. Isso permite adicionar processamento totalmente personalizado sobre o processamento configurável usando os microserviços de ativos.
 
@@ -226,8 +218,8 @@ Para configurar os modelos de fluxo de trabalho de pós-processamento a serem ex
 
 O serviço de Executador de Fluxo de Trabalho Personalizado (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) é um serviço OSGi e fornece duas opções para configuração:
 
-* workflows de pós-processamento por caminho (`postProcWorkflowsByPath`): Vários modelos de fluxo de trabalho podem ser listados, com base em diferentes caminhos de repositório. Caminhos e modelos devem ser separados por dois pontos. Caminhos de repositório simples são suportados e devem ser mapeados para um modelo de fluxo de trabalho no `/var` caminho. Por exemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* workflows de pós-processamento por expressão (`postProcWorkflowsByExpression`): Vários modelos de fluxo de trabalho podem ser listados, com base em diferentes expressões regulares. Expressões e modelos devem ser separados por dois pontos. A expressão regular deve apontar diretamente para o nó Ativo, e não para uma das execuções ou arquivos. Por exemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* Workflows de pós-processamento por caminho (`postProcWorkflowsByPath`): Vários modelos de fluxo de trabalho podem ser listados, com base em diferentes caminhos de repositório. Caminhos e modelos devem ser separados por dois pontos. Caminhos de repositório simples são suportados e devem ser mapeados para um modelo de fluxo de trabalho no `/var` caminho. Por exemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Workflows de pós-processamento por expressão (`postProcWorkflowsByExpression`): Vários modelos de fluxo de trabalho podem ser listados, com base em diferentes expressões regulares. Expressões e modelos devem ser separados por dois pontos. A expressão regular deve apontar diretamente para o nó Ativo, e não para uma das execuções ou arquivos. Por exemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
