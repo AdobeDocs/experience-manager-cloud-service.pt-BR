@@ -2,9 +2,9 @@
 title: Notas de versão da versão 2020.8.0 [!DNL Adobe Experience Manager] como Cloud Service.
 description: '[!DNL Adobe Experience Manager] como notas de versão do Cloud Service para 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '440'
 ht-degree: 6%
 
 ---
@@ -34,9 +34,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
    Refer to [Content Audit Testing](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
-* ambientes recém-criados em programas do Assets agora serão configurados automaticamente com o Smart Content Services.
+* Ambientes recém-criados em programas do Assets agora serão configurados automaticamente com o Smart Content Services.
 
-* ambientes hibernados podem ser removidos da hibernação na página **Visão geral** do Gerenciador de nuvem.
+* Ambientes hibernados podem ser removidos da hibernação na página **Visão geral** do Gerenciador de nuvem.
 
 * Agora há suporte para Repositórios de Maven Privado com vínculo de autenticação.
 
@@ -48,7 +48,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * Em alguns casos, as execuções de pipeline concluídas não foram registradas com êxito como tendo sido concluídas, impedindo assim novas execuções do pipeline.
 
-* Ocasionalmente, as execuções de pipeline ficariam &quot;emperradas&quot; devido a problemas de comunicação interna.
+* Ocasionalmente, as execuções de tubulação ficariam *presas* devido a problemas de comunicação interna.
 
 * Ao provisionar uma nova organização, alguns usuários com funções administrativas diferentes dos administradores de sistema receberam erroneamente acesso ao Cloud Manager.
 
@@ -58,7 +58,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * A interface do usuário permitia erroneamente que as operações fossem tentadas em um ambiente durante sua exclusão.
 
-* Houve uma incompatibilidade de cores na página de visão geral.
+* Ocorreu uma incompatibilidade de cores na página **Visão geral** do Gerenciador de nuvem.
 
 ### Problemas conhecidos {#known-issues-cm}
 
