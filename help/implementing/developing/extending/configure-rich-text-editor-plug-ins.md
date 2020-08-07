@@ -4,7 +4,7 @@ description: Saiba como configurar [!DNL Adobe Experience Manager] os plug-ins d
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
 source-wordcount: '4301'
 ht-degree: 3%
@@ -32,7 +32,7 @@ Por padrão, `format`, `link`, `list`e `justify``control` plug-ins e todos os se
 >
 >O respectivo `rtePlugins` nó é chamado `<rtePlugins-node>` para evitar a duplicação neste artigo.
 
-1. Usando o CRXDE Lite, localize o componente de texto para seu projeto.
+1. Usando o CRXDE Lite, localize o componente de texto para o seu projeto.
 1. Crie o nó pai de `<rtePlugins-node>` se ele não existir, antes de configurar qualquer plug-in RTE:
 
    * Dependendo do seu componente, os nós principais são:
@@ -641,7 +641,7 @@ O tamanho do travessão só é aplicado aos parágrafos (blocos) do texto; não 
 
 Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos CSS a serem usados e os protocolos a serem aceitos automaticamente. Para configurar como os links são adicionados a [!DNL Experience Manager] partir de outro programa, defina as regras HTML.
 
-1. Usando o CRXDE Lite, localize o componente de texto para seu projeto.
+1. Usando o CRXDE Lite, localize o componente de texto para o seu projeto.
 1. Crie um nó no mesmo nível `<rtePlugins-node>`, ou seja, crie o nó sob o nó pai de `<rtePlugins-node>`:
 
    * **Nome** `htmlRules`
@@ -705,7 +705,7 @@ Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos C
 
          * **Nome** `targetInternal`
          * **Tipo** `String`
-         * **Valor** do público alvo para links internos (use apenas quando &quot;mode is `auto`)
+         * **Valor** do público alvo para links internos (use somente quando o modo estiver `auto`)
       * O público alvo para links externos:
 
          * **Nome** `targetExternal`
