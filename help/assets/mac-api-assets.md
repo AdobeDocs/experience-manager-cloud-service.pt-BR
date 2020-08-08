@@ -3,9 +3,9 @@ title: API HTTP de ativos em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b96e976b5a2aaff90d7317360b0325dcae21ff26
+source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1476'
 ht-degree: 1%
 
 ---
@@ -28,13 +28,13 @@ Após o Tempo [!UICONTROL desligado], um ativo e suas representações não est�
 
 >[!NOTE]
 >
->Todas as chamadas de API relacionadas ao upload ou atualização de ativos ou binários em geral (como execuções) são representadas para o AEM como uma implantação do Serviço de nuvem. Para fazer upload de binários, use APIs [de upload binário](developer-reference-material-apis.md#asset-upload-technical) direto.
+>Todas as chamadas de API relacionadas ao upload ou atualização de ativos ou binários em geral (como execuções) são representadas para AEM como uma implantação de Cloud Service. Para fazer upload de binários, use APIs [de upload binário](developer-reference-material-apis.md#asset-upload-technical) direto.
 
 ## Fragmentos de conteúdo {#content-fragments}
 
 Um fragmento [de](/help/assets/content-fragments/content-fragments.md) conteúdo é um tipo especial de ativo. Pode ser usado para acessar dados estruturados, como textos, números, datas, entre outros. Como há várias diferenças nos `standard` ativos (como imagens ou documentos), algumas regras adicionais se aplicam ao manuseio de fragmentos de conteúdo.
 
-Para obter mais informações, consulte Suporte a fragmentos [de conteúdo na API](/help/assets/assets-api-content-fragments.md)HTTP dos ativos do Experience Manager.
+Para obter mais informações, consulte Suporte a fragmentos [de conteúdo na API](/help/assets/assets-api-content-fragments.md)HTTP dos ativos Experience Manager.
 
 ## Modelo de dados {#data-model}
 
@@ -63,21 +63,23 @@ As pastas são como diretórios em sistemas de arquivos tradicionais. São conta
 * `parent`: Link para a pasta pai.
 * `thumbnail`: (Opcional) link para uma imagem em miniatura da pasta.
 
-### Ativos {#assets}
+### Assets {#assets}
 
 Em [!DNL Experience Manager] um ativo contém os seguintes elementos:
 
 * As propriedades e os metadados do ativo.
-* Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As execuções adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou Adobe InDesign.
+* Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As representações adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou Adobe InDesign.
 * Comentários opcionais.
 
-Para obter informações sobre elementos em Fragmentos de conteúdo, consulte Suporte a fragmentos de [conteúdo na API](/help/assets/assets-api-content-fragments.md)HTTP dos ativos do Experience Manager.
+Para obter informações sobre elementos em Fragmentos de conteúdo, consulte Suporte a fragmentos de [conteúdo na API](/help/assets/assets-api-content-fragments.md)HTTP dos ativos de Experience Manager.
 
 Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
 
 * Entidades: Os filhos dos ativos são suas representações.
 * Propriedades.
 * Links.
+
+## Recursos disponíveis {#available-features}
 
 A API HTTP Assets inclui os seguintes recursos:
 
