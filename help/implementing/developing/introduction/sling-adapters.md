@@ -2,9 +2,9 @@
 title: Uso de adaptadores Sling
 description: Como deslizar o oferta e o padrão do adaptador para converter convenientemente objetos que implementam a interface adaptável
 translation-type: tm+mt
-source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
+source-git-commit: 88d18d0fbfa83243f7fb02e67e8b7d171f019a34
 workflow-type: tm+mt
-source-wordcount: '2083'
+source-wordcount: '2333'
 ht-degree: 1%
 
 ---
@@ -137,12 +137,36 @@ No primeiro caso, os javadocs podem dizer o que `adaptTo-targets` é possível. 
    <td>Se este for um recurso baseado em nó JCR.</td>
   </tr>
   <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html">Página</a></td>
+   <td>Se este for um recurso baseado em nó JCR e o nó for um <code>cq:Page</code> (ou <code>cq:PseudoPage</code>).</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html">Componente</a></td>
+   <td>Se este for um recurso de <code>cq:Component</code> nó.</td>
+  </tr>  
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Design.html">Design</a></td>
+   <td>Se este for um nó de design (<code>cq:Page</code>).</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html">Modelo</a></td>
+   <td>Se este for um recurso de <code>cq:Template</code> nó.</td>
+  </tr>  
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blueprint</a></td>
+   <td>Se este for um recurso de <code>cq:Template</code> nó.</td>
+  </tr>
+  <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html">Ativo</a></td>
    <td>Se este for um recurso de nó dam:Asset.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Rendition.html">Execução</a></td>
    <td>Se for um dam:representação de ativo (nt:file na pasta de renderização de um dam:Assert)</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
+   <td>Se este for um recurso de <code>cq:Tag</code> nó.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
@@ -192,7 +216,23 @@ No primeiro caso, os javadocs podem dizer o que `adaptTo-targets` é possível. 
    <td>A sessão JCR da solicitação, se for um resolvedor de recursos baseado em JCR (padrão).</td>
   </tr>
   <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/ComponentManager.html">ComponentManager</a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
+   <td> </td>
+  </tr>
+  <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
+   <td>Com base na sessão do JCR, se for um resolvedor de recursos baseado em JCR.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
    <td>Com base na sessão do JCR, se for um resolvedor de recursos baseado em JCR.</td>
   </tr>
   <tr>
@@ -236,7 +276,7 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
 
 #### WCM {#wcm}
 
-**A página** se adapta a:
+**[A página](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)**se adapta a:
 
 <table>
  <tbody>
@@ -259,7 +299,7 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
  </tbody>
 </table>
 
-**O componente** adapta-se a:
+**[O componente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)**adapta-se a:
 
 | [Recurso](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso do componente. |
 |---|---|
@@ -267,7 +307,7 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
 | [Nó](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nó do componente. |
 | ... | Tudo ao qual o recurso do componente pode ser adaptado. |
 
-**O modelo** adapta-se a:
+**[O modelo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)**adapta-se a:
 
 <table>
  <tbody>
