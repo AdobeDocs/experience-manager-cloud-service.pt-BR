@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Como publicar e desfazer a publicação de páginas usando o AEM
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 100%
+source-wordcount: '1717'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Você pode publicar/desfazer a publicação de uma página imediatamente ou em u
 
 ## Terminologia {#terminology}
 
-Você pode encontrar termos diferentes relacionados à publicação enquanto trabalha com o AEM.
+Você pode encontrar termos diferentes relacionados à publicação enquanto trabalha com o Adobe Experience Manager (AEM) como Cloud Service.
 
 * **Publicar/Desfazer a publicação**
    * Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
@@ -52,6 +52,10 @@ Dependendo da sua localização, você pode publicar:
 >* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 -->
+
+>[!NOTE]
+>
+> Para obter outras possibilidades, consulte Tempo **ligado** e Tempo **desligado** na guia [Básico das Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Publicação por meio do Editor {#publishing-from-the-editor}
 
@@ -140,7 +144,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    Clicar no botão Adicionar conteúdo inicia o [navegador de caminho](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) para permitir a seleção de conteúdo.
 
-   Escolha as páginas necessárias e clique em **Selecionar** para adicionar o conteúdo ao assistente ou em **Cancelar** para cancelar a seleção e retornar ao assistente.
+   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
 
    De volta ao assistente, é possível selecionar um item na lista para configurar suas opções adicionais, como:
 
