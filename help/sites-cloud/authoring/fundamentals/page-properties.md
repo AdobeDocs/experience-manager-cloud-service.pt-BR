@@ -1,11 +1,11 @@
 ---
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
-translation-type: ht
-source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: ht
-source-wordcount: '1538'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+workflow-type: tm+mt
+source-wordcount: '1675'
+ht-degree: 88%
 
 ---
 
@@ -62,13 +62,21 @@ As propriedades são distribuídas por várias guias.
 
 * **Hora de ligar**
 
-   * A data e a hora em que a página publicada será ativada. Caso seja publicada, esta página será mantida inativa até o tempo especificado.
-   * Deixe estes campos vazios para as páginas que deseja publicar imediatamente (o cenário normal).
+   * A data e a hora em que a página publicada ficará visível (renderizada) no ambiente de publicação. A página deve ser publicada manualmente ou por replicação automática pré-configurada.
+
+      >[!NOTE]
+      >
+      > Consulte [Tempos ligado e desligado - Configuração](/help/operations/replication.md#on-and-off-times-trigger-configuration) do acionador para obter detalhes sobre como configurar a replicação automática relacionada.
+
+      * Se já tiver sido [publicada (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , essa página será mantida em espera (oculta) até a renderização no horário especificado.
+      * Se não for publicada e configurada para replicação automática, a página será publicada automaticamente e renderizada no momento especificado.
+      * Se não for publicada e não estiver configurada para replicação automática, a página não será publicada automaticamente, portanto, um 404 será visto quando uma tentativa de acessar a página for feita.
+   * Deixe esses campos (Tempo **** ligado e Tempo **** desligado) vazios para as páginas que deseja publicar imediatamente e que estão disponíveis no ambiente de publicação até que sejam desativados (o cenário normal).
 
 * **Hora de desligar**
 
-   * A hora em que a página publicada será desativada.
-   * Deixe esses campos em branco para ação imediata.
+   * Em paralelo ao Tempo **ligado** , isso define o horário em que a página publicada ficará oculta no ambiente de publicação.
+   * Deixe esses campos (Tempo **** ligado e Tempo **** desligado) vazios para as páginas que deseja publicar imediatamente e que estão disponíveis no ambiente de publicação até que sejam desativados (o cenário normal).
 
 * **URL personalizada**
 
