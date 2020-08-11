@@ -2,7 +2,7 @@
 title: Entenda seus resultados de teste - Cloud Services
 description: Entenda os resultados do teste - Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 # Noções básicas dos resultados de teste {#understand-test-results}
 
 As execuções de pipeline do Cloud Manager para o Cloud Services oferecerão suporte à execução de testes que são executados no ambiente de preparo. Isso contrasta com os testes executados durante a etapa Build and Unit Testing, que são executados offline, sem acesso a nenhum ambiente AEM em execução.
-Há dois tipos de testes executados neste contexto:
+Há três tipos de testes executados neste contexto:
 * Testes escritos pelo cliente
 * testes por Adobe
 * Ferramenta de código aberto fornecida pelo Farol do Google
@@ -150,12 +150,12 @@ A auditoria de conteúdo no Cloud Manager garante que a experiência digital dos
 
 A Auditoria de conteúdo fornece resultados de testes em nível de página e agregação por meio da página de execução do pipeline de produção.
 
-* As métricas de nível de Agregação medem a pontuação média nas páginas que foram auditadas.
+* As métricas de nível de agregação medem a pontuação média nas páginas que foram auditadas.
 * As pontuações de nível de página individuais também estão disponíveis por meio da busca detalhada.
 * Detalhes das pontuações estão disponíveis para ver quais são os resultados dos testes individuais, juntamente com orientações sobre como corrigir quaisquer problemas identificados durante a auditoria de conteúdo.
 * Um histórico dos resultados do teste é persistente no Cloud Manager para que os clientes possam ver se as alterações que estão sendo introduzidas na execução do pipeline incluem quaisquer regressões da execução anterior.
 
-#### Pontuações de Agregação {#aggregate-scores}
+#### Pontuações de agregação {#aggregate-scores}
 
 Há uma pontuação de nível de agregação para cada tipo de teste (desempenho, acessibilidade, SEO, práticas recomendadas e PWA).
 
