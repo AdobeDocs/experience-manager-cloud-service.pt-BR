@@ -2,17 +2,17 @@
 title: Replicação
 description: Distribuição e Solução de problemas de replicação.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 3%
+source-wordcount: '303'
+ht-degree: 2%
 
 ---
 
 
 # Replicação {#replication}
 
-O Adobe Experience Manager como Cloud Service usa o recurso [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover o conteúdo para replicar para um serviço de pipeline executado em E/S da Adobe fora do tempo de execução do AEM.
+A Adobe Experience Manager como Cloud Service usa o recurso de Distribuição [de conteúdo](https://sling.apache.org/documentation/bundles/content-distribution.html) Sling para mover o conteúdo para replicar para um serviço de pipeline executado em E/S de Adobe fora do tempo de execução AEM.
 
 >[!NOTE]
 >
@@ -22,7 +22,15 @@ O Adobe Experience Manager como Cloud Service usa o recurso [Sling Content Distr
 
 ### Desfazer/publicar rapidamente - Desfazer/publicar planejado {#publish-unpublish}
 
-Essas funcionalidades padrão do AEM para os autores não mudam com o AEM Cloud Service.
+Essas funcionalidades padrão de AEM para os autores não mudam com AEM Cloud Service.
+
+### Tempos ligado e desligado - Configuração do acionador {#on-and-off-times-trigger-configuration}
+
+As possibilidades adicionais de Tempo **ligado** e Tempo **desligado** estão disponíveis na guia [Básico das Propriedades](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)da página.
+
+Para realizar a replicação automática para isso, é necessário ativar a Replicação **** automática na configuração [](/help/implementing/deploying/configuring-osgi.md) OSGi **Configuração** do acionador desligado:
+
+![Configuração do Acionador Desligado do OSGi](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Ativação de árvore {#tree-activation}
 
@@ -37,7 +45,7 @@ Para executar uma ativação em árvore:
 
 ## Resolução de Problemas{#troubleshooting}
 
-Para solucionar problemas de replicação, navegue até Filas de Replicação na interface do usuário do AEM Author Service:
+Para solucionar problemas de replicação, navegue até as Filas de Replicação na interface do usuário da Web do Serviço de Autor de AEM:
 
 1. No menu Start AEM, navegue até **Ferramentas > Implantação > Distribuição**
 2. Selecione o cartão **forwardPublisher**
@@ -48,5 +56,5 @@ Para solucionar problemas de replicação, navegue até Filas de Replicação na
 
 ![](assets/logs.png "LogsLogs")
 
-Se o conteúdo não puder ser publicado, toda a publicação será revertida do Serviço de AEM Publish.
+Se o conteúdo não puder ser publicado, toda a publicação será revertida do Serviço de publicação de AEM.
 Nesse caso, as filas de espera devem ser revistas a fim de identificar quais os itens que causaram o cancelamento da publicação. Ao clicar em uma fila mostrando um status vermelho, a fila com itens pendentes apareceria, a partir da qual um ou todos os itens podem ser apagados, se necessário.
