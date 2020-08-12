@@ -2,9 +2,9 @@
 title: Entenda seus resultados de teste - Cloud Services
 description: Entenda os resultados do teste - Cloud Services
 translation-type: tm+mt
-source-git-commit: f878421950bac58702f9d4b418fbcc2dc3e397b2
+source-git-commit: 65c9446dc3c70ce593512e2358f23368f7c97f89
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1598'
 ht-degree: 3%
 
 ---
@@ -104,7 +104,7 @@ Os ensaios funcionais são classificados em dois tipos:
 
 Os testes funcionais do produto são um conjunto de testes estáveis de integração HTTP (TIs) sobre a funcionalidade principal em AEM (por exemplo, criação e replicação) que impedem que as alterações do cliente em seu código de aplicativo sejam implantadas se quebrar essa funcionalidade principal.
 
-Elas são executadas automaticamente sempre que um cliente implanta um novo código no Cloud Manager.
+Os testes funcionais do produto são executados automaticamente sempre que um cliente implanta um novo código no Cloud Manager.
 
 ### Teste funcional personalizado {#custom-functional-testing}
 
