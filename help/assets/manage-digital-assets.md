@@ -1,12 +1,12 @@
 ---
-title: Gerenciar seus ativos digitais no Experience Manager
+title: Gerencie seus ativos digitais no Experience Manager
 description: Saiba mais sobre vários métodos de edição e gerenciamento de ativos.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
+source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
 workflow-type: tm+mt
-source-wordcount: '4419'
+source-wordcount: '4435'
 ht-degree: 12%
 
 ---
@@ -14,20 +14,20 @@ ht-degree: 12%
 
 # Manage assets {#manage-assets}
 
-Este artigo descreve como gerenciar e editar ativos nos ativos do Adobe Experience Manager. Para gerenciar os Fragmentos de conteúdo, consulte os ativos [Fragmentos](content-fragments/content-fragments.md) de conteúdo.
+Este artigo descreve como gerenciar e editar ativos no Adobe Experience Manager Assets. Para gerenciar os Fragmentos de conteúdo, consulte os ativos [Fragmentos](content-fragments/content-fragments.md) de conteúdo.
 
 ## Criar pastas {#creating-folders}
 
-Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. Os ativos AEM não exigem que você organize ativos em pastas para trabalhar melhor.
+Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. A AEM Assets não exige que você organize ativos em pastas para trabalhar melhor.
 
 >[!NOTE]
 >
->* O compartilhamento de uma pasta Ativos do tipo `sling:OrderedFolder`não é suportado ao compartilhar com a Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
->* O Experience Manager não permite o uso de `subassets` word como o nome de uma pasta. É uma palavra-chave reservada para nós que contêm subativos para ativos compostos
+>* O compartilhamento de uma pasta Assets do tipo `sling:OrderedFolder`não é suportado ao compartilhar com o Marketing Cloud. Se desejar compartilhar uma pasta, não selecione [!UICONTROL Solicitado] ao criar uma pasta.
+>* Experience Manager não permite o uso de `subassets` word como o nome de uma pasta. É uma palavra-chave reservada para nós que contêm subativos para ativos compostos
 
 
 1. Navegue até o local na pasta de ativos digitais onde deseja criar uma nova pasta. No menu, clique em **[!UICONTROL Criar]**. Selecione **[!UICONTROL Nova pasta]**.
-1. No campo **[!UICONTROL Título]** , forneça um nome de pasta. By default, DAM uses the title that you provided as the folder name. Depois que a pasta for criada, você poderá substituir o padrão e especificar outro nome de pasta.
+1. No campo **[!UICONTROL Título]** , forneça um nome de pasta. Por padrão, o DAM usa o título fornecido como o nome da pasta. Depois que a pasta for criada, você poderá substituir o padrão e especificar outro nome de pasta.
 1. Clique em **[!UICONTROL Criar]**. Sua pasta é exibida na pasta de ativos digitais.
 
 Os seguintes caracteres (lista separada por espaços de) não são suportados:
@@ -37,15 +37,24 @@ Os seguintes caracteres (lista separada por espaços de) não são suportados:
 
 ## Upload assets {#uploading-assets}
 
-Consulte [adicionar ativos digitais ao Experience Manager](add-assets.md).
+Consulte [Adicionar ativos digitais ao Experience Manager](add-assets.md).
 
 ## Detectar ativos do duplicado {#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Se um usuário do DAM fizer upload de um ou mais ativos que já existem no repositório, [!DNL Experience Manager] detectará a duplicação e notificará o usuário. A detecção de Duplicados é desativada por padrão, pois pode ter impacto no desempenho dependendo do tamanho do repositório e do número de ativos carregados. To enable the feature, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Consulte [como executar configurações](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. A detecção de duplicação é baseada no `dam:sha1` valor exclusivo armazenado em `jcr:content/metadata/dam:sha1`. Isso significa que os ativos do duplicado são detectados mesmo se os nomes dos arquivos forem diferentes.
+Se um usuário do DAM fizer upload de um ou mais ativos que já existem no repositório, [!DNL Experience Manager] detectará a duplicação e notificará o usuário. A detecção de duplicados é desativada por padrão, pois pode ter impacto no desempenho dependendo do tamanho do repositório e do número de ativos carregados. Para ativar o recurso, configure o [!UICONTROL Adobe AEM Detector]de Duplicação de Ativos da Nuvem. Consulte [como executar configurações](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. A detecção de duplicação é baseada no `dam:sha1` valor exclusivo armazenado em `jcr:content/metadata/dam:sha1`. Isso significa que os ativos do duplicado são detectados mesmo se os nomes dos arquivos forem diferentes.
 
 ![Detectar a configuração OSGi do ativo do duplicado](assets/duplicate-detection.png)
+
+Você pode adicionar o arquivo de configuração `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` no código personalizado e o arquivo pode conter o seguinte:
+
+```json
+{
+  "enabled":true,
+  "detectMetadataField":"dam:sha1"
+}
+```
 
 Depois de habilitado, o Experience Manager envia notificações de ativos do duplicado para a caixa de entrada. É um resultado agregado para vários duplicados. Os usuários podem optar por remover os ativos com base nos resultados.
 
@@ -58,9 +67,9 @@ Para pré-visualização de um ativo, siga estas etapas.
 1. Na interface do usuário Ativos, navegue até o local do ativo que deseja pré-visualização.
 1. Toque no ativo desejado para abri-lo.
 
-1. In the preview mode, zoom options are available for [supported Image types](/help/assets/file-format-support.md) (with interactive editing).
+1. No modo de pré-visualização, as opções de zoom estão disponíveis para os tipos [de imagem](/help/assets/file-format-support.md) suportados (com edição interativa).
 
-   Para aplicar zoom em um ativo, toque/clique `+` (ou toque/clique na lupa do ativo). Para diminuir o zoom, toque/clique em `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
+   Para aplicar zoom em um ativo, toque/clique `+` (ou toque/clique na lupa do ativo). Para diminuir o zoom, toque/clique em `-`. Ao ampliar, você pode observar cuidadosamente qualquer área da imagem ao deslocar o panorama. A seta de redefinição de zoom leva você de volta à visualização original.
 
    Toque em **[!UICONTROL Redefinir]** para redefinir a visualização para o tamanho original.
 
@@ -68,11 +77,11 @@ Para pré-visualização de um ativo, siga estas etapas.
 
 1. Navegue até o local do ativo cujos metadados você deseja editar.
 
-1. Select the asset, and tap/click **[!UICONTROL Properties]** from the toolbar to view asset properties. Como alternativa, escolha a ação rápida **[!UICONTROL Propriedades]** no cartão de ativos.
+1. Selecione o ativo e toque/clique em **[!UICONTROL Propriedades]** na barra de ferramentas para visualização das propriedades do ativo. Como alternativa, escolha a ação rápida **[!UICONTROL Propriedades]** no cartão de ativos.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. In the [!UICONTROL Properties] page, edit the metadata properties under various tabs. Por exemplo, na guia **[!UICONTROL Básico]** , edite o título, a descrição e assim por diante.
+1. Na página [!UICONTROL Propriedades] , edite as propriedades de metadados em várias guias. Por exemplo, na guia **[!UICONTROL Básico]** , edite o título, a descrição e assim por diante.
 
    >[!NOTE]
    >
@@ -82,7 +91,7 @@ Para pré-visualização de um ativo, siga estas etapas.
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado do campo Tempo de **[!UICONTROL desativação]** . A data de desativação deve ser posterior à data de ativação de um ativo. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
+1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado do campo Tempo de **[!UICONTROL desativação]** . A data de desativação deve ser posterior à data de ativação de um ativo. Depois do tempo de [!UICONTROL desligado], um ativo e suas representações não estão disponíveis por meio da interface da Web Ativos ou por meio da API HTTP.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
@@ -96,13 +105,13 @@ Para pré-visualização de um ativo, siga estas etapas.
 
 1. Para obter estatísticas de uso de visualização para o ativo, clique/toque na guia **[!UICONTROL Insights]** .
 
-   Usage statistics include the following:
+   As estatísticas de uso incluem o seguinte:
 
    * Número de vezes que o ativo foi exibido ou baixado
    * Canais/dispositivos através dos quais o ativo foi usado
    * Soluções criativas onde o ativo foi usado recentemente
 
-   For more details, see [Asset Insights](assets-insights.md).
+   Para obter mais detalhes, consulte [Asset Insights](assets-insights.md).
 
 1. Tap/click **[!UICONTROL Save &amp; Close]**.
 
@@ -116,11 +125,11 @@ Alguns atributos exclusivos a uma cópia específica de um ativo não são trans
 
 * ID do ativo, data e hora de criação e versões e histórico de versões. Algumas dessas propriedades são indicadas pelas propriedades `jcr:uuid`, `jcr:created`e `cq:name`.
 
-* Creation time and referenced paths are unique for each asset and each of its rendition.
+* O tempo de criação e os caminhos referenciados são exclusivos para cada ativo e cada uma de suas execuções.
 
 As outras propriedades e informações de metadados são mantidas. Uma cópia parcial não é criada ao copiar um ativo.
 
-1. Na interface do usuário do Assets, selecione um ou mais ativos e, em seguida, toque/clique no ícone **[!UICONTROL Copiar]** na barra de ferramentas. Alternatively, select the **[!UICONTROL Copy]** ![copy_icon](assets/copy_icon.png) quick action from the asset card.
+1. Na interface do usuário do Assets, selecione um ou mais ativos e, em seguida, toque/clique no ícone **[!UICONTROL Copiar]** na barra de ferramentas. Como alternativa, selecione a ação rápida **[!UICONTROL Copiar]** ![copy_icon](assets/copy_icon.png) no cartão de ativos.
 
    >[!NOTE]
    >
@@ -130,7 +139,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    >[!NOTE]
    >
-   >Se você copiar um ativo no mesmo local, o AEM gera automaticamente uma variação do nome. Por exemplo, se você copiar um ativo intitulado `Square`, o AEM gera automaticamente o título para sua cópia como `Square1`.
+   >Se você copiar um ativo no mesmo local, AEM gera automaticamente uma variação do nome. Por exemplo, se você copiar um ativo com título `Square`, AEM gera automaticamente o título para sua cópia como `Square1`.
 
 1. Clique no ícone **[!UICONTROL Colar]** ativo na barra de ferramentas. Os ativos são copiados para este local.
 
@@ -153,7 +162,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    * Toque/clique em **[!UICONTROL Cancelar]** para interromper o processo.
    >[!NOTE]
    >
-   >* Você pode especificar o mesmo nome para o ativo se não houver um ativo com esse nome no novo local. No entanto, você deve usar um nome diferente se mover o ativo para um local onde um ativo com o mesmo nome exista. Se você usar o mesmo nome, o sistema gera automaticamente uma variação do nome. For example if your asset has the name Square, the system generates the name Square1 for its copy.
+   >* Você pode especificar o mesmo nome para o ativo se não houver um ativo com esse nome no novo local. No entanto, você deve usar um nome diferente se mover o ativo para um local onde um ativo com o mesmo nome exista. Se você usar o mesmo nome, o sistema gera automaticamente uma variação do nome. Por exemplo, se seu ativo tiver o nome Quadrado, o sistema gera o nome Quadrado1 para sua cópia.
    >* Ao renomear, o espaço em branco não é permitido no nome do arquivo.
 
 
@@ -170,7 +179,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    * Especifique as referências a serem ajustadas com base nos novos detalhes e toque/clique em **[!UICONTROL Mover]** para continuar.
 
    * Na coluna **[!UICONTROL Ajustar]** , selecione/desmarque referências aos ativos.
-   * Tap/click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
+   * Toque/clique em **[!UICONTROL Voltar]** para retornar à tela **[!UICONTROL Selecionar destino]** .
 
    * Toque/clique em **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
 
@@ -194,7 +203,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    >[!NOTE]
    >
-   >Por padrão, os ativos AEM não exibem a representação original do ativo no modo de pré-visualização. Se você for um administrador, poderá usar sobreposições para configurar os ativos AEM para exibir as representações originais no modo de pré-visualização.
+   >Por padrão, a AEM Assets não exibe a representação original do ativo no modo de pré-visualização. Se você for um administrador, poderá usar sobreposições para configurar o AEM Assets para exibir as representações originais no modo de pré-visualização.
 
 1. Selecione uma representação para visualização ou exclua a representação.
 
@@ -214,7 +223,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    >
    >Se você selecionar uma representação no painel **[!UICONTROL Representações]**, a barra de ferramentas alterará o contexto e exibirá somente as ações relevantes para a representação. As opções, como o ícone Fazer upload da representação, não são exibidas. Para exibir essas opções na barra de ferramentas, navegue até a página de detalhes do ativo.
 
-   Você pode configurar as dimensões para a representação que deseja exibir na página de detalhes de um ativo de imagem ou vídeo. Com base nas dimensões especificadas, os ativos AEM exibem a representação com as dimensões exatas ou mais próximas.
+   Você pode configurar as dimensões para a representação que deseja exibir na página de detalhes de um ativo de imagem ou vídeo. Com base nas dimensões especificadas, o AEM Assets exibe a representação com as dimensões exatas ou mais próximas.
 
    Para configurar as dimensões de representação de uma imagem no nível de detalhes do ativo, sobreponha o nó `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configure o valor da propriedade largura. Configure o **[!UICONTROL tamanho (Longo) em KB]** da propriedade no lugar da largura para personalizar a representação na página Detalhes do ativo com base no tamanho da imagem. Para personalização baseada em tamanho, a propriedade `preferOriginal` atribui preferência ao original se o tamanho da representação correspondente for maior que o original.
 
@@ -246,7 +255,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
    * **[!UICONTROL Excluir]** para confirmar a ação:
 
       * Se o ativo não tiver referências, ele será excluído.
-      * If the asset has references, an error-message informs you that **One or more assets are referenced.** Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
+      * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são referenciados.** Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
 
    >[!NOTE]
    >
@@ -274,7 +283,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. Navegue até o local dos ativos/pastas que deseja publicar.
 
 1. Selecione a ação rápida **[!UICONTROL Publicar]** no cartão de ativos ou selecione o ativo e toque/clique no ícone **[!UICONTROL Publicação rápida]** na barra de ferramentas.
-1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Only references that are either unpublished or modified since they were last published/unpublished are displayed. Escolha as referências que deseja publicar.
+1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas/não foram publicadas são exibidas. Escolha as referências que deseja publicar.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
@@ -310,15 +319,15 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    >[!NOTE]
    >
-   >Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Avoid un-publishing the references because they may be referenced by other published assets.
+   >Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite cancelar a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
 
 ## Closed user group {#closed-user-group}
 
-Um grupo de usuários fechado (CUG) é usado para limitar o acesso a pastas de ativos específicas publicadas do AEM. Se você criar um CUG para uma pasta, o acesso à pasta (incluindo os ativos e as subpastas da pasta) será restrito somente aos membros ou grupos atribuídos. Para acessar a pasta, eles devem fazer logon usando suas credenciais de segurança.
+Um grupo de usuários fechado (CUG) é usado para limitar o acesso a pastas de ativos específicas publicadas da AEM. Se você criar um CUG para uma pasta, o acesso à pasta (incluindo os ativos e as subpastas da pasta) será restrito somente aos membros ou grupos atribuídos. Para acessar a pasta, eles devem fazer logon usando suas credenciais de segurança.
 
 Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você também pode configurar uma página de logon para a pasta.
 
-1. Select a folder from the Assets UI, and tap/click the Properties icon from the toolbar to display the properties page.
+1. Selecione uma pasta na interface do usuário do Assets e toque/clique no ícone Propriedades na barra de ferramentas para exibir a página de propriedades.
 1. Na guia **[!UICONTROL Permissões]** , adicione membros ou grupos em Grupo **[!UICONTROL de usuários]** fechado.
 
    ![add_user](assets/add_user.png)
@@ -329,16 +338,16 @@ Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você tam
 
    >[!NOTE]
    >
-   >Se você não especificar o caminho para uma página de logon, o AEM exibirá a página de logon padrão na instância de publicação.
+   >Se você não especificar o caminho para uma página de logon, AEM exibirá a página de logon padrão na instância de publicação.
 
 1. Publique a pasta e tente acessá-la da instância de publicação. Uma tela de login é exibida.
-1. Se você for um membro do CUG, insira suas credenciais de segurança. A pasta é exibida depois que o AEM o autentica.
+1. Se você for um membro do CUG, insira suas credenciais de segurança. A pasta é exibida depois que AEM o autentica.
 
 ## Pesquisar ativos {#search-assets}
 
 Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos por parte de usuários e comerciantes, ou para administração por administradores de DAM.
 
-Para obter pesquisas simples, avançadas e personalizadas para descobrir e usar os ativos mais apropriados, consulte Ativos de [pesquisa no AEM](/help/assets/search-assets.md).
+Para pesquisas simples, avançadas e personalizadas para descobrir e usar os ativos mais apropriados, consulte os ativos [de pesquisa no AEM](/help/assets/search-assets.md).
 
 ## Ações rápidas {#quick-actions}
 
@@ -363,7 +372,7 @@ As ferramentas de edição na interface do AEM Assets permitem executar pequenos
 
    ![edit_icon](assets/edit_icon.png)
 
-1. To crop the image, tap/click the **Crop** icon.
+1. Para recortar a imagem, toque/clique no ícone **Recortar** .
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
@@ -384,11 +393,11 @@ As ferramentas de edição na interface do AEM Assets permitem executar pequenos
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
+1. Toque/clique no ícone Virar apropriado para virar a imagem na horizontal ou na vertical.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. Tap/click the **Finish** icon to save the changes.
+1. Toque/clique no ícone **Concluir** para salvar as alterações.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
@@ -406,8 +415,7 @@ As ferramentas de edição na interface do AEM Assets permitem executar pequenos
 
 A linha do tempo permite que você visualização vários eventos para um item selecionado, como workflows ativos para um ativo, comentários/anotações, registros de atividades e versões.
 
-![Sort timeline entries for an asset](assets/sort_timeline.gif)
-*Figure: Sort timeline entries for an asset*
+![Classificar as entradas da linha do tempo de um ativo](assets/sort_timeline.gif)*Figura: Classificar entradas de linha do tempo de um ativo*
 
 >[!NOTE]
 >
@@ -421,14 +429,14 @@ A linha do tempo permite que você visualização vários eventos para um item s
 
 Anotações são comentários ou notas explicativas adicionadas a imagens ou vídeos. As anotações fornecem aos comerciantes a capacidade de colaborar e deixar feedback sobre os ativos.
 
-Video annotations are only supported on browsers with HTML5-compatible video formats. Video formats that AEM Assets supports depend on the browser.
+As anotações de vídeo são compatíveis apenas em navegadores com formatos de vídeo compatíveis com HTML5. Os formatos de vídeo suportados pela AEM Assets dependem do navegador.
 
 >[!NOTE]
 >
 >Para Fragmentos de conteúdo, [as anotações são criadas no editor](content-fragments/content-fragments.md)de fragmentos.
 
 1. Navegue até o local do ativo ao qual você deseja adicionar anotações.
-1. Tap/click the **[!UICONTROL Annotate]** icon from one of the following:
+1. Toque/clique no ícone **[!UICONTROL Anotar]** de um dos seguintes:
 
    * [Ações rápidas](#quick-actions)
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
@@ -458,7 +466,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
    >É possível adicionar várias anotações antes de salvá-las.
 
 1. Toque/clique em **[!UICONTROL Fechar]** para sair do modo Anotar.
-1. Para visualização da notificação, faça logon nos ativos AEM com as credenciais do Aaron MacDonald e clique no ícone **[!UICONTROL Notificações]** para visualização da notificação.
+1. Para visualização da notificação, faça logon no AEM Assets com as credenciais do Aaron MacDonald e clique no ícone **[!UICONTROL Notificações]** para visualização da notificação.
 
    >[!NOTE]
    >
@@ -474,9 +482,9 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 >[!NOTE]
 >
->You can also add annotations to a collection. However, if a collection contains child collections, you can add annotations/comments to the parent collection only. The Annotate option is not available for child collections.
+>Também é possível adicionar anotações a uma coleção. No entanto, se uma coleção contiver coleções-filho, você poderá adicionar anotações/comentários somente à coleção-pai. A opção Anotar não está disponível para coleções filhas.
 
-### Anotações salvas da Visualização {#viewing-saved-annotations}
+### Anotações salvas da visualização {#viewing-saved-annotations}
 
 1. Para visualização de anotações salvas para um ativo, navegue até o local do ativo e abra a página do ativo para o ativo.
 
@@ -520,7 +528,7 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status de anotações/revisão seja exibido no PDF. Por exemplo, se desejar que as anotações/status sejam impressas na parte superior direita da página que contém a imagem impressa, use a configuração **Superior esquerda** . It is selected by default.
+1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status de anotações/revisão seja exibido no PDF. Por exemplo, se desejar que as anotações/status sejam impressas na parte superior direita da página que contém a imagem impressa, use a configuração **Superior esquerda** . Está selecionado por padrão.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -528,7 +536,7 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
    >[!NOTE]
    >
-   >Lengthy annotations may not render properly in the PDF file. For optimal rendering, Adobe recommends that you limit annotations to 50 words.
+   >Anotações extensas podem não ser renderizadas corretamente no arquivo PDF. Para uma renderização ideal, o Adobe recomenda que você limite as anotações a 50 palavras.
 
 1. Toque/clique em **[!UICONTROL Imprimir]**. Dependendo da opção escolhida na etapa 2, o PDF gerado exibirá as anotações/os status na posição especificada. Por exemplo, se optar por imprimir as anotações e o status da revisão usando a configuração **Superior esquerdo**, o resultado será semelhante ao arquivo PDF mostrado aqui.
 
@@ -538,11 +546,11 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor, o tamanho e o estilo da fonte, a cor de plano de fundo dos comentários e status, abra a configuração **[!UICONTROL do PDF de]** anotação no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
+   Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor, o tamanho e o estilo da fonte, a cor de plano de fundo dos comentários e status, abra a configuração **[!UICONTROL do PDF de]** anotação no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
-   Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
+   Retorne ao arquivo PDF renderizado e atualize-o. O PDF atualizado reflete as alterações feitas.
 
 ## Controle de versão de ativos {#asset-versioning}
 
@@ -550,21 +558,21 @@ O controle de versão cria um instantâneo de ativos digitais em um ponto espec�
 
 A seguir estão os cenários nos quais você cria versões:
 
-* You modify an image in a different application and upload to AEM Assets. A version of the image is created so your original image is not overwritten.
-* You edit the metadata of an asset.
-* Use o aplicativo de desktop AEM para fazer check-out de um ativo existente e salvar as alterações. Uma nova versão é criada sempre que o ativo é salvo.
+* Você modifica uma imagem em um aplicativo diferente e faz upload para a AEM Assets. Uma versão da imagem é criada para que sua imagem original não seja substituída.
+* Edite os metadados de um ativo.
+* Use AEM aplicativo de desktop para fazer check-out de um ativo existente e salvar suas alterações. Uma nova versão é criada sempre que o ativo é salvo.
 
 Você também pode ativar o controle automático de versão por meio de um fluxo de trabalho. Quando você cria uma versão para um ativo, os metadados e as execuções são salvos junto com a versão. As execuções são alternativas renderizadas das mesmas imagens, por exemplo, uma execução PNG de um arquivo JPEG carregado.
 
-The versioning functionality lets you do the following:
+A funcionalidade de controle de versão permite fazer o seguinte:
 
-* Create a version of an asset.
+* Criar uma versão de um ativo.
 * Visualização da revisão atual de um ativo.
-* Restore the asset to a previous version.
+* Restaure o ativo para uma versão anterior.
 
 1. Navegue até o local do ativo para o qual deseja criar uma versão e toque/clique nele para abrir sua página de ativo.
 
-1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu.
+1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** no menu.
 
    ![linha do tempo](assets/timeline.png)
 
@@ -572,11 +580,11 @@ The versioning functionality lets you do the following:
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
+1. Toque/clique em **[!UICONTROL Salvar como versão]** para criar uma versão para o ativo.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
+1. Adicione um rótulo e um comentário e clique em **[!UICONTROL Criar]** para criar uma versão. Como alternativa, toque/clique em **Cancelar** para sair da operação.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
@@ -584,7 +592,7 @@ The versioning functionality lets you do the following:
 
    ![version_option](assets/versions_option.png)
 
-1. Select a specific version for the asset to preview it or enable it to appear in the Assets UI.
+1. Selecione uma versão específica para o ativo a ser pré-visualização ou permita que ele apareça na interface do usuário do Assets.
 
    ![select_version](assets/select_version.png)
 
@@ -594,9 +602,9 @@ The versioning functionality lets you do the following:
 
 1. Para gerar uma visualização da versão, toque/clique em **[!UICONTROL Visualizar versão]**.
 1. Para exibir essa versão na interface do usuário do Assets, selecione **[!UICONTROL Reverter para esta versão]**.
-1. To compare between two versions, go to asset page of the asset and tap/click the version to be compared with the current version.
+1. Para comparar entre duas versões, vá para a página de ativos do ativo e toque/clique na versão a ser comparada com a versão atual.
 
-   ![select_version_tocompare](assets/select_version_tocompare.png)
+   ![select_version_to-compare](assets/select_version_tocompare.png)
 
 1. Na linha do tempo, selecione a versão que deseja comparar e arraste o controle deslizante para a esquerda para sobrepor essa versão à versão atual e compare.
 
