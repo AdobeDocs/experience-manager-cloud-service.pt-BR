@@ -2,9 +2,9 @@
 title: Implantar seu código - Cloud Services
 description: Implantar seu código - Cloud Services
 translation-type: tm+mt
-source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 3%
 
 ---
@@ -51,10 +51,10 @@ Depois de configurar o **Pipeline** (repositório, ambiente e ambiente de teste)
    O **Teste de preparo** envolve as seguintes etapas:
 
    * Teste funcional do produto: As execuções de pipeline do Gerenciador de nuvem oferecerão suporte à execução de testes executados em relação ao ambiente stage.
-Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
+Consulte Teste [funcional do](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) produto para obter detalhes sobre o processo de teste.
 
    * Teste funcional personalizado: Esta etapa do pipeline está sempre presente e não pode ser ignorada. No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão.\
-      Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
+      Consulte Teste [funcional](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) personalizado para obter detalhes sobre o processo de teste.
 
    * Auditoria de conteúdo: Esta etapa do pipeline está sempre presente e não pode ser ignorada. Como um pipeline de produção é executado, uma etapa de auditoria de conteúdo é incluída após testes funcionais personalizados que executarão as verificações. As páginas configuradas serão enviadas ao serviço e avaliadas. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
 Consulte [Compreensão dos resultados](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) da auditoria de conteúdo para obter mais detalhes.
