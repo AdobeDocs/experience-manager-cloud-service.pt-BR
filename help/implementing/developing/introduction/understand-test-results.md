@@ -2,9 +2,9 @@
 title: Entenda seus resultados de teste - Cloud Services
 description: Entenda os resultados do teste - Cloud Services
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1614'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Esses testes podem ser:
 
 * Escrito pelo cliente
 * Adobe
-* Ferramenta de código aberto fornecida pelo Farol do Google
+* Acionado pelo Lighthouse do Google como uma ferramenta de código aberto
 
    >[!NOTE]
    > Os testes escritos pelo cliente e os testes por Adobe são executados em uma infraestrutura de contêiner projetada para executar esses tipos de testes.
@@ -90,6 +90,9 @@ Em seguida, a solução correta é remover a senha codificada.
 >
 >Embora seja uma prática recomendada tornar a `@SuppressWarnings` anotação o mais específica possível, ou seja, anotar somente a declaração específica ou o bloco que está causando o problema, é possível fazer anotações em nível de classe.
 
+>[!NOTE]
+>Embora não haja nenhuma etapa explícita de Teste de segurança, ainda existem regras de qualidade de código relacionadas à segurança avaliadas durante a etapa de qualidade do código. Consulte Visão geral [de segurança para obter AEM como Cloud Service](/help/security/cloud-service-security-overview.md) para obter mais detalhes.
+
 ## Teste funcional {#functional-testing}
 
 Os ensaios funcionais são classificados em dois tipos:
@@ -111,7 +114,7 @@ A etapa de teste Funcional personalizada no pipeline está sempre presente e nã
 No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão.
 
 >[!NOTE]
->O botão **Baixar registro** permite acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade normal de Download ou Logs de assinatura. Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
+>O botão **Baixar registro** permite acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade normal de Download ou Logs de assinatura. Consulte [Acessar e gerenciar registros](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
 
 
 #### Gravação de testes funcionais {#writing-functional-tests}
