@@ -2,11 +2,11 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
-translation-type: ht
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: ht
-source-wordcount: '406'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 5fa5dbd664d4b1e1c93ca03037b8c8340ba6e96f
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 97%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 100%
    + [Vincular URLs ao aplicativo da Web.](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Uso de conjuntos de regras para transformar URLs](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Publicação de ativos do Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [Invalidação do conteúdo em cache do CDN](dynamic-media/invalidate-cdn-cached-content.md)
+   + [Como invalidar o cache CDN por meio do Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Trabalho com seletores](dynamic-media/working-with-selectors.md)
    + [Perguntas frequentes sobre fim de vida útil de visualizadores DHTML ](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Aviso de fim de vida útil de visualizadores Flash](dynamic-media/flash-viewers-eol.md)
