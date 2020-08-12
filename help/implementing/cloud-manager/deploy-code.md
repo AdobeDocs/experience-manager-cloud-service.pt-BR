@@ -2,9 +2,9 @@
 title: Implantar seu código - Cloud Services
 description: Implantar seu código - Cloud Services
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '983'
 ht-degree: 3%
 
 ---
@@ -42,8 +42,8 @@ Depois de configurar o **Pipeline** (repositório, ambiente e ambiente de teste)
    A **Implantação do preparo** envolve estas etapas:
 
    * Validação: Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento, por exemplo, que a ramificação configurada exista, os ambientes estarão disponíveis.
-   * Compilação e teste de unidade: Esta etapa executa um processo de criação contido. Consulte [Criar um projeto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) de aplicativo AEM para obter detalhes sobre o ambiente de criação.
-   * Digitalização de código: Esta etapa avalia a qualidade do código do aplicativo. Consulte [Entender os resultados](/help/implementing/developing/introduction/understand-test-results.md) do teste para obter detalhes sobre o processo de teste.
+   * Compilação e teste de unidade: Esta etapa executa um processo de criação contido. Consulte [Criar detalhes](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) do Ambiente para obter detalhes sobre o ambiente de criação.
+   * Digitalização de código: Esta etapa avalia a qualidade do código do aplicativo. Consulte Teste [de qualidade de](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) código para obter detalhes sobre o processo de teste.
    * Criar imagens: Esta etapa tem um arquivo de log do processo usado para criar imagens. Esse processo é responsável por transformar os pacotes de conteúdo e despachante produzidos pela etapa de compilação em imagens Docker e configurações de Kubernetes.
    * Implantar no palco
 
