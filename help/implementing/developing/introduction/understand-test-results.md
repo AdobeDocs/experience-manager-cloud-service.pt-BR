@@ -2,9 +2,9 @@
 title: Entenda seus resultados de teste - Cloud Services
 description: Entenda os resultados do teste - Cloud Services
 translation-type: tm+mt
-source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1620'
 ht-degree: 3%
 
 ---
@@ -91,7 +91,7 @@ Em seguida, a solução correta é remover a senha codificada.
 >Embora seja uma prática recomendada tornar a `@SuppressWarnings` anotação o mais específica possível, ou seja, anotar somente a declaração específica ou o bloco que está causando o problema, é possível fazer anotações em nível de classe.
 
 >[!NOTE]
->Embora não haja nenhuma etapa explícita de Teste de segurança, ainda existem regras de qualidade de código relacionadas à segurança avaliadas durante a etapa de qualidade do código. Consulte Visão geral [de segurança para obter AEM como Cloud Service](/help/security/cloud-service-security-overview.md) para obter mais detalhes.
+>Embora não haja nenhuma etapa explícita de Teste de segurança, ainda existem regras de qualidade de código relacionadas à segurança avaliadas durante a etapa de qualidade do código. Consulte Visão geral [de segurança para obter AEM como Cloud Service](/help/security/cloud-service-security-overview.md) para saber mais sobre segurança no Cloud Service.
 
 ## Teste funcional {#functional-testing}
 
@@ -104,7 +104,9 @@ Os ensaios funcionais são classificados em dois tipos:
 
 Os testes funcionais do produto são um conjunto de testes estáveis de integração HTTP (TIs) sobre a funcionalidade principal em AEM (por exemplo, criação e replicação) que impedem que as alterações do cliente em seu código de aplicativo sejam implantadas se quebrar essa funcionalidade principal.
 
-Os testes funcionais do produto são executados automaticamente sempre que um cliente implanta um novo código no Cloud Manager.
+Os testes funcionais do produto são executados automaticamente sempre que um cliente implanta um novo código no Cloud Manager e não pode ser ignorado.
+
+Consulte os testes [de funcionalidade do](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) produto para obter exemplos de testes.
 
 ### Teste funcional personalizado {#custom-functional-testing}
 
