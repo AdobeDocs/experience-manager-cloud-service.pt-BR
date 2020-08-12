@@ -2,9 +2,9 @@
 title: Entenda seus resultados de teste - Cloud Services
 description: Entenda os resultados do teste - Cloud Services
 translation-type: tm+mt
-source-git-commit: 65c9446dc3c70ce593512e2358f23368f7c97f89
+source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1596'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Esses testes podem ser:
 
 * Escrito pelo cliente
 * Adobe
-* Acionado pelo Lighthouse do Google como uma ferramenta de código aberto
+* Ferramenta de código aberto (alimentada pelo Farol do Google)
 
    >[!NOTE]
    > Os testes escritos pelo cliente e os testes por Adobe são executados em uma infraestrutura de contêiner projetada para executar esses tipos de testes.
