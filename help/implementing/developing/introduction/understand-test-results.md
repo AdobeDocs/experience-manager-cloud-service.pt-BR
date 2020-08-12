@@ -2,10 +2,10 @@
 title: Entenda seus resultados de teste - Cloud Services
 description: Entenda os resultados do teste - Cloud Services
 translation-type: tm+mt
-source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 4%
+source-wordcount: '1578'
+ht-degree: 3%
 
 ---
 
@@ -13,9 +13,17 @@ ht-degree: 4%
 # Noções básicas dos resultados de teste {#understand-test-results}
 
 As execuções de pipeline do Cloud Manager para o Cloud Services oferecerão suporte à execução de testes que são executados no ambiente de preparo. Isso contrasta com os testes executados durante a etapa Build and Unit Testing, que são executados offline, sem acesso a nenhum ambiente AEM em execução.
-Há três tipos de testes executados neste contexto:
-* Testes escritos pelo cliente
-* testes por Adobe
+
+Há três categorias amplas de testes suportadas pelo Cloud Manager para Cloud Services Pipeline:
+
+1. [Teste de qualidade de código](#code-quality-testing)
+1. [Teste funcional](#functional-testing)
+1. [Teste de auditoria de conteúdo](#content-audit-testing)
+
+Esses testes podem ser:
+
+* Escrito pelo cliente
+* Adobe
 * Ferramenta de código aberto fornecida pelo Farol do Google
 
    >[!NOTE]
@@ -82,7 +90,31 @@ Em seguida, a solução correta é remover a senha codificada.
 >
 >Embora seja uma prática recomendada tornar a `@SuppressWarnings` anotação o mais específica possível, ou seja, anotar somente a declaração específica ou o bloco que está causando o problema, é possível fazer anotações em nível de classe.
 
-## Gravação de testes funcionais {#writing-functional-tests}
+## Teste funcional {#functional-testing}
+
+Os ensaios funcionais são classificados em dois tipos:
+
+* Teste funcional do produto
+* Teste funcional personalizado
+
+### Teste funcional do produto {#product-functional-testing}
+
+Os testes funcionais do produto são um conjunto de testes estáveis de integração HTTP (TIs) sobre criação, replicação, que impedem que as alterações do cliente em seu código de aplicativo sejam implantadas se isso interromper a funcionalidade principal no AEM.
+Elas são executadas automaticamente sempre que um cliente implanta um novo código no Cloud Manager.
+
+A etapa de teste Funcional do Produto no pipeline está sempre presente e não pode ser ignorada. Essa etapa é realizada imediatamente após a implantação do estágio.
+
+### Teste funcional personalizado {#custom-functional-testing}
+
+A etapa de teste Funcional personalizada no pipeline está sempre presente e não pode ser ignorada.
+
+No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão.
+
+>[!NOTE]
+>O botão **Baixar registro** permite acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade normal de Download ou Logs de assinatura. Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
+
+
+#### Gravação de testes funcionais {#writing-functional-tests}
 
 Os testes funcionais escritos pelo cliente devem ser empacotados como um arquivo JAR separado produzido pela mesma compilação Maven que os artefatos a serem implantados no AEM. Geralmente, este seria um módulo Maven separado. O arquivo JAR resultante deve conter todas as dependências necessárias e geralmente seria criado usando o plug-in maven-assembly usando o descritor jar com dependências.
 
@@ -124,15 +156,6 @@ Neste arquivo JAR, os nomes de classe dos testes reais a serem executados devem 
 Por exemplo, uma classe chamada `com.myco.tests.aem.ExampleIT` seria executada, mas uma classe chamada não `com.myco.tests.aem.ExampleTest` seria.
 
 As classes de teste precisam ser testes JUnit normais. A infraestrutura de teste é projetada e configurada para ser compatível com as convenções usadas pela biblioteca de testes aem-testing-customers. Os desenvolvedores são fortemente incentivados a usar essa biblioteca e seguir suas práticas recomendadas. Consulte [Git Link](https://github.com/adobe/aem-testing-clients) para obter mais detalhes.
-
-## Teste funcional personalizado {#custom-functional-test}
-
-A etapa de teste Funcional personalizada no pipeline está sempre presente e não pode ser ignorada.
-
-No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão. Esta etapa é realizada imediatamente após a implantação do estágio.
-
->[!NOTE]
->O botão **Baixar registro** permite acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade normal de Download ou Logs de assinatura. Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
 
 ## Teste de auditoria de conteúdo {#content-audit-testing}
 
