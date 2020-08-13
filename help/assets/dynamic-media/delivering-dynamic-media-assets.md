@@ -2,9 +2,9 @@
 title: Entrega de ativos de Mídia dinâmica
 description: Saiba como fornecer ativos de mídia dinâmica
 translation-type: tm+mt
-source-git-commit: ea6a1bddaab6819d1f89268ceba3c4d4981729a2
+source-git-commit: a09e82278df1adfb225a01e60ae7ef188375b800
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 15%
 
 ---
@@ -35,7 +35,6 @@ Para obter mais informações, consulte os seguintes tópicos:
 * [Vincular URLs à sua Aplicação web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Fornecer imagens otimizadas para um site responsivo](/help/assets/dynamic-media/responsive-site.md)
 * [DELIVERY HTTP2 do conteúdo](/help/assets/dynamic-media/http2faq.md)
-* [Como invalidar o cache CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [Como invalidar o cache CDN por meio do Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [Uso de conjuntos de regras para transformar URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
