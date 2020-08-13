@@ -2,9 +2,9 @@
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Notas de versão do Experience Manager para 2020.6.0
 translation-type: tm+mt
-source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
 workflow-type: tm+mt
-source-wordcount: '1948'
+source-wordcount: '1955'
 ht-degree: 98%
 
 ---
@@ -190,4 +190,4 @@ Além dos novos recursos acima, a versão atual fornece as seguintes correções
 * Ao baixar um ativo, se a opção de email estiver selecionada e mesmo se uma ID de email válida for fornecida, a opção de download não fica disponível. (CQ-4296535)
 * Filtros personalizados salvos como coleções inteligentes não são aplicados corretamente a ativos. (CQ-4294942)
 * Várias melhorias de pesquisa e indexação e correções de erros para melhorar o desempenho. (CQ-4286373)
-* As propriedades da pasta exibem um erro de servidor interno de 500. (CQ-4295701)
+* A guia de propriedades da pasta não pode ser acessada em Ativos e retorna um erro 500. (CQ-4295701)
