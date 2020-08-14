@@ -2,11 +2,11 @@
 title: Tags inteligentes aprimoradas
 description: Aplique tags comerciais contextuais e descritivas usando o serviço de IA e aprendizado de máquina do Adobe Sensei para melhorar a descoberta de ativos e a velocidade do conteúdo.
 contentOwner: AG
-translation-type: ht
-source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
-workflow-type: ht
-source-wordcount: '1009'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 97%
 
 ---
 
@@ -22,6 +22,10 @@ A funcionalidade Tag inteligentes está disponível para compra como suplemento 
 2. Is there a link to buy SCS or initiate a sales call.
 3. Keystroke all steps and check all screenshots.
 -->
+
+>[!IMPORTANT]
+>
+>Por padrão, as novas [!DNL Experience Manager Assets] implantações são integradas [!DNL Adobe Developer Console] ao. Ajuda a configurar a funcionalidade de tags inteligentes mais rapidamente. Nas implantações existentes, os administradores seguem estas etapas para configurá-las.
 
 ## Integração com o Console do desenvolvedor {#aio-integration}
 
