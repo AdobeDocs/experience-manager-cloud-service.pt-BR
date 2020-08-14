@@ -1,23 +1,23 @@
 ---
 title: Marque imagens com serviços inteligentes artificialmente.
-description: Marque imagens com serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando os serviços do Adobe Sensei.
+description: Marque imagens com serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando os serviços Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
+source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 5%
+source-wordcount: '2425'
+ht-degree: 6%
 
 ---
 
 
 # Treinar o serviço Smart Tag e marcar suas imagens {#train-service-tag-assets}
 
-As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar seus ativos digitais. Marcar ativos com um vocabulário controlado por taxonomia garante que os ativos possam ser facilmente identificados e recuperados por pesquisas baseadas em tags.
+As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar seus ativos digitais. Marcar ativos com um vocabulário controlado por taxonomia garante que esses ativos possam ser facilmente identificados e recuperados por pesquisas baseadas em tags.
 
 Comparado aos vocabulários de linguagem natural, a marcação baseada na taxonomia comercial ajuda a alinhar os ativos a uma empresa empresa e garante que os ativos mais relevantes sejam exibidos nas pesquisas. Por exemplo, um fabricante de carros pode marcar imagens de carros com nomes de modelos para que somente as imagens relevantes sejam exibidas quando pesquisadas para projetar uma campanha promocional.
 
-Em segundo plano, as Tags inteligentes usam uma estrutura de inteligência artificial do [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar seu algoritmo de reconhecimento de imagem na estrutura de tags e na taxonomia de negócios. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
+In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
 <!-- TBD: Create a similar flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -25,21 +25,23 @@ Em segundo plano, as Tags inteligentes usam uma estrutura de inteligência artif
 
 Para usar a marcação inteligente, conclua as seguintes tarefas:
 
-* [Integre o Experience Manager ao Adobe Developer Console](#integrate-aem-with-aio).
+* [Integre o Experience Manager ao Console](#integrate-aem-with-aio)do desenvolvedor do Adobe.
 * [Entenda os modelos de tags e as diretrizes](#understand-tag-models-guidelines).
 * [Treinar o modelo](#train-model).
 * [Marque seus ativos](#tag-assets)digitais.
 * [Gerencie as tags e pesquisas](#manage-smart-tags-and-searches).
 
-As Tags inteligentes são aplicáveis somente para [!DNL Adobe Experience Manager Assets] clientes. As Tags inteligentes estão disponíveis para compra como um complemento para [!DNL Experience Manager].
+As Tags inteligentes são aplicáveis somente para [!DNL Adobe Experience Manager Assets] clientes. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Integrar [!DNL Experience Manager] ao Adobe Developer Console {#integrate-aem-with-aio}
+## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
-É possível integrar [!DNL Adobe Experience Manager] com as Tags inteligentes usando o Adobe Developer Console. Use essa configuração para acessar o serviço Tags inteligentes de dentro [!DNL Experience Manager].
+>[!IMPORTANT]
+>
+>Por padrão, as novas [!DNL Experience Manager Assets] implantações são integradas [!DNL Adobe Developer Console] ao. Ajuda a configurar a funcionalidade de tags inteligentes mais rapidamente. Nas implantações existentes, os administradores podem [configurar manualmente a integração](/help/assets/smart-tags-configuration.md#aio-integration)de tags inteligentes.
 
-Consulte [configurar o Experience Manager para a marcação inteligente de ativos](smart-tags-configuration.md) para tarefa para configurar as Tags inteligentes. No back-end, o [!DNL Experience Manager] servidor autentica suas credenciais de serviço com o gateway do Adobe Developer Console antes de encaminhar sua solicitação para o serviço de Tags inteligentes.
+É possível integrar [!DNL Adobe Experience Manager] com as Tags inteligentes usando [!DNL Adobe Developer Console]. Use essa configuração para acessar o serviço Tags inteligentes de dentro [!DNL Experience Manager]. Consulte [configurar o Experience Manager para a marcação inteligente de ativos](smart-tags-configuration.md) para tarefa para configurar as Tags inteligentes. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
 ## Entender os modelos e diretrizes de tags {#understand-tag-models-guidelines}
 
@@ -62,7 +64,7 @@ As imagens em seu conjunto de treinamento devem estar em conformidade com as seg
 
 ![Imagens ilustrativas para exemplificar as diretrizes para treinamento](assets/do-not-localize/coherence.png)
 
-**Cobertura**: Deve haver uma variedade suficiente de imagens no treinamento. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que o AEM aprenda a se concentrar nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo. Por exemplo, para o *modelo de tag-down-pose*, inclua mais imagens de treinamento semelhantes à imagem realçada abaixo para que o serviço identifique imagens semelhantes com mais precisão durante a marcação.
+**Cobertura**: Deve haver uma variedade suficiente de imagens no treinamento. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que AEM aprenda a focar-se nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo. Por exemplo, para o *modelo de tag-down-pose*, inclua mais imagens de treinamento semelhantes à imagem realçada abaixo para que o serviço identifique imagens semelhantes com mais precisão durante a marcação.
 
 ![Imagens ilustrativas para exemplificar as diretrizes para treinamento](assets/do-not-localize/coverage_1.png)
 
@@ -74,11 +76,11 @@ As imagens em seu conjunto de treinamento devem estar em conformidade com as seg
 
 ![Imagens ilustrativas para exemplificar as diretrizes para treinamento](assets/do-not-localize/completeness.png)
 
-**Número de tags**: A Adobe recomenda treinar um modelo usando pelo menos duas tags distintas e pelo menos 10 imagens diferentes para cada tag. Em um único modelo de tag, não adicione mais de 50 tags.
+**Número de tags**: O Adobe recomenda que você treine um modelo usando pelo menos duas tags distintas e pelo menos 10 imagens diferentes para cada tag. Em um único modelo de tag, não adicione mais de 50 tags.
 
 **Número de exemplos**: Para cada tag, adicione pelo menos 10 exemplos. No entanto, a Adobe recomenda cerca de 30 exemplos. Há suporte para um máximo de 50 exemplos por tag.
 
-**Evitar falsos positivos e conflitos**: A Adobe recomenda criar um modelo de tag único para um aspecto visual único. Estruturar os modelos de tags de forma a evitar sobreposições de tags entre os modelos. Por exemplo, não use tags comuns como `sneakers` em dois nomes `shoes` e `footwear`modelos de tags diferentes. O processo de treinamento substitui um modelo de tag treinado pelo outro para uma palavra-chave comum.
+**Evitar falsos positivos e conflitos**: O Adobe recomenda criar um modelo de tag único para um aspecto visual único. Estruturar os modelos de tags de forma a evitar sobreposições de tags entre os modelos. Por exemplo, não use tags comuns como `sneakers` em dois nomes `shoes` e `footwear`modelos de tags diferentes. O processo de treinamento substitui um modelo de tag treinado pelo outro para uma palavra-chave comum.
 
 **Exemplos**: Mais alguns exemplos para orientação são:
 
@@ -110,7 +112,7 @@ Para criar e treinar um modelo para suas tags comerciais específicas, siga esta
 
 *Figura: Etapas do fluxo de trabalho de treinamento para treinar o modelo de marcação.*
 
-### Status e relatório do treinamento de Visualizações {#training-status}
+### Status e relatório do treinamento de visualizações {#training-status}
 
 Para verificar se o serviço de Tags inteligentes é treinado em suas tags no conjunto de ativos de treinamento, reveja o relatório de fluxo de trabalho de treinamento no console Relatórios.
 
@@ -128,7 +130,7 @@ Depois de ter treinado o serviço de Tags inteligentes, é possível acionar o f
 
 ### Marcar ativos do console de fluxo de trabalho {#tagging-assets-from-the-workflow-console}
 
-1. Na interface do Experience Manager, vá até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. Na interface do Experience Manager, vá para **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
@@ -168,16 +170,16 @@ A moderação de tags inteligentes também ajuda a refinar pesquisas baseadas em
 Também é possível atribuir uma classificação mais alta a uma tag para aumentar sua relevância em relação a uma imagem. A promoção de uma tag para uma imagem aumenta as chances de a imagem aparecer nos resultados da pesquisa quando uma pesquisa é realizada com base na tag específica.
 
 1. Na caixa Omnisearch, procure ativos com base em uma tag.
-1. Inspecione os resultados da pesquisa para identificar uma imagem que não seja relevante para a sua pesquisa.
+1. Inspect os resultados da pesquisa para identificar uma imagem que você não acha relevante para sua pesquisa.
 1. Selecione a imagem e clique no ícone **[!UICONTROL Gerenciar tags]** na barra de ferramentas.
 1. Na página **[!UICONTROL Gerenciar tags]** , inspecione as tags. Se você não quiser que a imagem seja pesquisada com base em uma tag específica, selecione a tag e clique no ícone Excluir na barra de ferramentas. Como alternativa, clique no `X` símbolo que aparece ao lado do rótulo.
 1. Para atribuir uma classificação superior a uma tag, selecione a tag e clique no ícone promover na barra de ferramentas. A tag promovida é movida para a seção **[!UICONTROL Tags]** .
 1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
 1. Navegue até a página de propriedades da imagem. Observe que a tag promovida tem uma relevância alta e, portanto, aparece mais alta nos resultados da pesquisa.
 
-### Compreender os resultados da pesquisa do AEM com tags inteligentes {#understandsearch}
+### Compreender AEM resultados de pesquisa com tags inteligentes {#understandsearch}
 
-Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma `AND` cláusula. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma `OR` cláusula adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes aplicadas. For example, consider searching for `woman running`. Por padrão, os ativos com apenas `woman` ou apenas `running` palavras-chave nos metadados não aparecem nos resultados da pesquisa. No entanto, um ativo marcado com tags inteligentes `woman` ou `running` usando tags inteligentes aparece em um query de pesquisa desse tipo. Então os resultados da pesquisa são uma combinação de...
+Por padrão, AEM pesquisa combina os termos de pesquisa com uma `AND` cláusula. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma `OR` cláusula adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes aplicadas. For example, consider searching for `woman running`. Por padrão, os ativos com apenas `woman` ou apenas `running` palavras-chave nos metadados não aparecem nos resultados da pesquisa. No entanto, um ativo marcado com tags inteligentes `woman` ou `running` usando tags inteligentes aparece em um query de pesquisa desse tipo. Então os resultados da pesquisa são uma combinação de...
 
 * ativos com `woman` e `running` palavras-chave nos metadados.
 
@@ -195,17 +197,17 @@ Tags inteligentes aprimoradas são baseadas em modelos de aprendizado de imagens
 
 * Incapacidade de reconhecer diferenças sutis nas imagens. Por exemplo, camisas finas versus camisetas comuns.
 * Incapacidade de identificar tags com base em pequenos padrões/partes de uma imagem. Por exemplo, logotipos em camisetas.
-* A marcação é compatível com as localidades nas quais o AEM é compatível. Para obter uma lista de idiomas, consulte Notas [de versão de Tags](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)inteligentes.
+* A marcação é suportada nas localidades em que AEM é suportado. Para obter uma lista de idiomas, consulte Notas [de versão de Tags](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)inteligentes.
 
 Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use o Assets Omnisearch (pesquisa de texto completo). Não há predicado de pesquisa separado para tags inteligentes.
 
 >[!NOTE]
 >
 >A capacidade das Tags inteligentes de treinar em suas tags e aplicá-las em outras imagens depende da qualidade das imagens usadas para treinamento.
->Para obter melhores resultados, a Adobe recomenda usar imagens visualmente semelhantes para treinar o serviço de cada tag.
+>Para obter melhores resultados, o Adobe recomenda usar imagens visualmente semelhantes para treinar o serviço de cada tag.
 
 >[!MORELIKETHIS]
 >
->* [Configurar o Experience Manager para marcação inteligente](smart-tags-configuration.md)
+>* [Configurar Experience Manager para marcação inteligente](smart-tags-configuration.md)
 >* [Saiba como as tags inteligentes ajudam a gerenciar ativos](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 
