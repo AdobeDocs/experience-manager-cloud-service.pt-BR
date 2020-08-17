@@ -2,9 +2,9 @@
 title: AEM Application Project - Cloud Service
 description: AEM Application Project - Cloud Service
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2a89c8039f3d2135d8944822d3a4381142bbdb75
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1543'
 ht-degree: 9%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 ## Usando o Assistente para Criar um Projeto de Aplicativo AEM {#using-wizard-to-create-an-aem-application-project}
 
-Para ajudar a iniciar novos clientes, o Cloud Manager agora pode criar um projeto de AEM mínimo como ponto de partida. Esse processo se baseia no [**AEM Project Archetype **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+Para ajudar a iniciar novos clientes, o Cloud Manager agora pode criar um projeto de AEM mínimo como ponto de partida. Esse processo se baseia no [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
 Siga as etapas abaixo para criar um projeto de aplicativo AEM no Cloud Manager:
@@ -59,6 +59,7 @@ O Cloud Manager cria e testa seu código usando um ambiente de compilação espe
 
 * O ambiente build é baseado no Linux, derivado do Ubuntu 18.04.
 * O Apache Maven 3.6.0 está instalado.
+* As versões do Java instaladas são o Oracle JDK 8u202 e 11.0.2.
 * Existem outros pacotes de sistema instalados que são necessários:
 
    * bzip2
@@ -75,6 +76,38 @@ O Cloud Manager cria e testa seu código usando um ambiente de compilação espe
 >[!NOTE]
 >Embora o Gerenciador de nuvem não defina uma versão específica do `jacoco-maven-plugin`, a versão usada deve ser pelo menos `0.7.5.201505241946`.
 
+### Uso do suporte ao Java 11 {#using-java-support}
+
+O Cloud Manager agora é compatível com a criação de projetos de clientes com Java 8 e Java 11. Por padrão, os projetos são criados usando o Java 8. Os clientes que desejam usar o Java 11 em seus projetos podem fazer isso usando o plug-in Maven Toolchain.
+
+Para fazer isso, no arquivo pom.xml, adicione uma `<plugin>` entrada com a seguinte aparência:
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-toolchains-plugin</artifactId>
+    <version>1.1</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>toolchain</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <toolchains>
+            <jdk>
+                <version>11</version>
+                <vendor>oracle</vendor>
+           </jdk>
+        </toolchains>
+    </configuration>
+</plugin>
+```
+
+>[!NOTE]
+>Os valores de fornecedor suportados são `oracle` e `sun`.
+>Os valores de versão suportados são `1.8`, `1.11`e `11`.
 
 ## Variáveis de ambiente {#environment-variables}
 
