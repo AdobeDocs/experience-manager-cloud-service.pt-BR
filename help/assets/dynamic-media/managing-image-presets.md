@@ -2,9 +2,9 @@
 title: Gerenciamento de predefinições de imagens
 description: Entender predefinições de imagens e aprender como criar, modificar e gerenciar predefinições de imagens
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
-source-wordcount: '3651'
+source-wordcount: '3649'
 ht-degree: 11%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 11%
 
 # Managing Image Presets{#managing-image-presets}
 
-As predefinições de imagens permitem que os AEM Assets forneçam dinamicamente imagens de tamanhos diferentes, formatos diferentes ou com outras propriedades de imagem geradas dinamicamente. Cada predefinição de imagem representa uma coleção predefinida de comandos de tamanho e formato para a exibição de imagens. Ao criar uma predefinição de imagem, escolha um tamanho para o delivery de imagem. Você também escolhe comandos de formatação para que a aparência da imagem seja otimizada quando a imagem for entregue para exibição.
+As predefinições de imagens permitem que o AEM Assets forneça dinamicamente imagens de tamanhos diferentes, formatos diferentes ou com outras propriedades de imagem geradas dinamicamente. Cada predefinição de imagem representa uma coleção predefinida de comandos de tamanho e formato para a exibição de imagens. Ao criar uma predefinição de imagem, escolha um tamanho para o delivery de imagem. Você também escolhe comandos de formatação para que a aparência da imagem seja otimizada quando a imagem for entregue para exibição.
 
 Os administradores podem criar predefinições para exportar ativos. Os usuários podem escolher uma predefinição ao exportar imagens, o que também reformata as imagens de acordo com as especificações especificadas pelo administrador.
 
@@ -28,7 +28,7 @@ Esta seção descreve como criar, modificar e gerenciar predefinições de image
 
 Como uma macro, uma predefinição de imagem é uma coleção predefinida de comandos de dimensionamento e formatação salvos com um nome. Para entender como as predefinições de imagens funcionam, suponha que seu site exija que cada imagem de produto apareça em tamanhos diferentes, formatos diferentes e taxas de compactação para desktop e delivery móvel.
 
-É possível criar duas predefinições de imagens: uma com 500 x 500 pixels para a versão para desktop e 150 x 150 pixels para a versão para dispositivos móveis. Você cria duas predefinições de imagens, uma chamada `Enlarge` para exibir imagens a 500 x 500 pixels e outra chamada `Thumbnail` para exibir imagens a 150 x 150 pixels. Para fornecer imagens no `Enlarge` e no `Thumbnail` tamanho, o AEM procura a definição de Predefinição de ampliação de imagem e Predefinição de miniatura. Em seguida, o AEM gera dinamicamente uma imagem no tamanho e nas especificações de formatação de cada predefinição de imagem.
+É possível criar duas predefinições de imagens: uma com 500 x 500 pixels para a versão para desktop e 150 x 150 pixels para a versão para dispositivos móveis. Você cria duas predefinições de imagens, uma chamada `Enlarge` para exibir imagens a 500 x 500 pixels e outra chamada `Thumbnail` para exibir imagens a 150 x 150 pixels. Para fornecer imagens no `Enlarge` e no `Thumbnail` tamanho, AEM a definição de Predefinição de ampliação de imagem e Predefinição de imagem em miniatura. Em seguida, AEM gera dinamicamente uma imagem no tamanho e nas especificações de formatação de cada predefinição de imagem.
 
 As imagens que são reduzidas em tamanho quando entregues dinamicamente podem perder nitidez e detalhes. Por esse motivo, cada predefinição de imagem contém controles de formatação para otimizar uma imagem quando ela é entregue em um tamanho específico. Esses controles garantem que suas imagens sejam nítidas e claras quando forem entregues ao seu site ou aplicativo.
 
@@ -36,7 +36,7 @@ Os administradores podem criar predefinições de imagens. Para criar uma predef
 
 ## Managing Image Presets {#managing-image-presets-1}
 
-Você gerencia as predefinições de imagens no AEM tocando ou clicando no logotipo do AEM para acessar o console de navegação global e, em seguida, tocando ou clicando no ícone Ferramentas e navegando até **[!UICONTROL Ativos > Predefinições]** de imagem.
+Você gerencia as predefinições de imagens em AEM tocando ou clicando no logotipo AEM para acessar o console de navegação global e, em seguida, tocando ou clicando no ícone Ferramentas e navegando até **[!UICONTROL Ativos > Predefinições]** de imagem.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -56,10 +56,10 @@ Você gerencia as predefinições de imagens no AEM tocando ou clicando no logot
 
 Se você pretende oferecer suporte à ingestão de arquivos AI, EPS e PDF para que você possa gerar representações dinâmicas desses formatos de arquivo, talvez você queira revisar as seguintes informações antes de criar predefinições de imagem.
 
-O formato de arquivo do Adobe Illustrator é uma variante do PDF. As principais diferenças, no contexto dos AEM Assets, são as seguintes:
+O formato de arquivo Adobe Illustrator é uma variante do PDF. As principais diferenças, no contexto da AEM Assets, são as seguintes:
 
-* Os documentos do Adobe Illustrator consistem em uma única página com várias camadas. Cada camada é extraída como um subativo PNG sob o ativo principal do Illustrator.
-* documentos PDF consistem em uma ou mais páginas. Cada página é extraída como um subativo PDF de página única sob o documento PDF de várias páginas principal.
+* Os documentos Adobe Illustrator consistem em uma única página com várias camadas. Cada camada é extraída como um subativo PNG sob o ativo principal da Illustrator.
+* DOCUMENTOS PDF consistem em uma ou mais páginas. Cada página é extraída como um subativo PDF de página única sob o documento PDF de várias páginas principal.
 
 Os subativos são criados pelo `Create Sub Asset process` componente dentro do `DAM Update Asset` fluxo de trabalho geral. Para ver esse componente de processo no fluxo de trabalho, toque em **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos > Atualizar ativo DAM > Editar]**.
 
@@ -67,7 +67,7 @@ Os subativos são criados pelo `Create Sub Asset process` componente dentro do `
 
 Você pode visualização os subativos ou as páginas ao abrir o ativo, tocar no menu Conteúdo e selecionar **[!UICONTROL Subativos]** ou **[!UICONTROL Páginas]**. Os subativos são ativos reais. Ou seja, as páginas de PDF são extraídas pelo componente de `Create Sub Asset` fluxo de trabalho. Eles são armazenados como `page1.pdf`, `page2.pdf`e assim por diante, abaixo do ativo principal. Depois de armazenados, o fluxo de trabalho os processa. `DAM Update Asset`
 
-Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos AI, EPS ou PDF, são necessárias as seguintes etapas de processamento:
+Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos AI, EPS ou PDF, as seguintes etapas de processamento são necessárias:
 
 1. No `DAM Update Asset` fluxo de trabalho, o componente de `Rasterize PDF/AI Image Preview Rendition` processo rasteriza a primeira página do ativo original - usando a resolução configurada - em uma `cqdam.preview.png` representação.
 
@@ -81,8 +81,8 @@ Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâ
 
 | **Propriedade Metadata** | **Descrição** |
 |---|---|
-| dam:Physicalwidthininches | Largura do Documento em polegadas. |
-| dam:Physicalheightininches | Altura do Documento em polegadas. |
+| dam:Physicalwidthininches | Largura do documento em polegadas. |
+| dam:Physicalheightininches | Altura do documento em polegadas. |
 
 Você acessa as opções de componentes do `Rasterize PDF/AI Image Preview Rendition` processo por meio do fluxo de `DAM Update Asset` trabalho.
 
@@ -104,7 +104,7 @@ Argumentos para rasterizar o fluxo de trabalho de PDF ou AI
   <tr>
    <td>Tipos de mime</td>
    <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td>
-   <td>Lista de tipos MIME de documentos considerados documentos PDF ou do Illustrator.<br /> </td>
+   <td>Lista de tipos MIME de documentos considerados documentos PDF ou Illustrator.<br /> </td>
   </tr>
   <tr>
    <td>Largura máxima</td>
@@ -130,17 +130,17 @@ Largura máxima e Altura máxima limitam a resolução na qual rasterizar. Por e
 
 O componente de `Rasterize PDF/AI Image Preview Rendition` processo tem um máximo definido para garantir que não crie imagens excessivamente grandes na memória. Essas imagens grandes podem estender a memória fornecida para a JVM (Java Virtual Machine). É necessário ter cuidado para fornecer à JVM memória suficiente para gerenciar o número configurado de workflows paralelos, cada um com potencial para criar uma imagem no tamanho máximo configurado.
 
-### Formato de arquivo do InDesign (INDD) {#indesign-indd-file-format}
+### Formato de arquivo INDD (InDesign) {#indesign-indd-file-format}
 
 Se você pretende oferecer suporte à ingestão de arquivos INDD para que possa gerar a representação dinâmica desse formato de arquivo, reveja as seguintes informações antes de criar predefinições de imagem.
 
-Para arquivos do InDesign, os subativos são extraídos somente se o servidor do Adobe InDesign estiver integrado ao AEM. Os ativos referenciados são vinculados com base em seus metadados. O InDesign Server não é necessário para vinculação. No entanto, os ativos referenciados devem estar presentes no AEM antes que os arquivos do InDesign sejam processados para que os links sejam criados entre os arquivos do InDesign e os ativos referenciados.
+Para arquivos de InDesign, os subativos são extraídos somente se o servidor Adobe InDesign estiver integrado ao AEM. Os ativos referenciados são vinculados com base em seus metadados. InDesign Server não é necessário para vinculação. No entanto, os ativos referenciados devem estar presentes no AEM antes que os arquivos de InDesign sejam processados para que os links sejam criados entre os arquivos de InDesign e os ativos referenciados.
 
 <!-- See [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md). -->
 
-O componente de processo de Extração de mídia no fluxo de trabalho `DAM Update Asset` executa vários Scripts estendidos pré-configurados para processar arquivos do InDesign.
+O componente de processo de Extração de mídia no fluxo de trabalho `DAM Update Asset` executa vários Scripts Estendidos pré-configurados para processar arquivos de InDesign.
 
-![Os caminhos ExtendScript nos argumentos do processo de Extração de mídia](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![Os caminhos do ExtendScript nos argumentos do processo de Extração de mídia](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
 Os caminhos do ExtendScript nos argumentos do componente de processo de Extração de mídia no fluxo de trabalho do Ativo de atualização do DAM.
 
@@ -173,7 +173,7 @@ Os seguintes scripts são usados pela integração do Dynamic Media:
 
 ### Configuração do tamanho da miniatura da imagem {#configuring-image-thumbnail-size}
 
-Você pode configurar o tamanho das miniaturas configurando essas configurações no fluxo de trabalho do Ativo **[!UICONTROL de atualização do]** DAM. Há duas etapas no fluxo de trabalho nas quais você pode configurar o tamanho da miniatura dos ativos de imagem. Embora um (**[!UICONTROL Dynamic Media Process Image Assets]**) seja usado para ativos de imagem dinâmica e o outro (**[!UICONTROL Processar miniaturas]**) para geração de miniaturas estáticas ou quando todos os outros processos não geram miniaturas, *ambos* devem ter as mesmas configurações.
+Você pode configurar o tamanho das miniaturas configurando essas configurações no fluxo de trabalho do Ativo **[!UICONTROL de atualização do]** DAM. Há duas etapas no fluxo de trabalho nas quais você pode configurar o tamanho da miniatura dos ativos de imagem. Embora um (Ativos **[!UICONTROL de Imagem do Processo de Mídia]** Dinâmica) seja usado para ativos de imagem dinâmica e o outro (Miniaturas **[!UICONTROL do]** Processo) para geração de miniaturas estáticas ou quando todos os outros processos não geram miniaturas, *ambos* devem ter as mesmas configurações.
 
 Com a etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]**, as miniaturas são geradas pelo servidor de imagem e essa configuração é independente da configuração aplicada à etapa **[!UICONTROL Processar miniaturas]**. Gerar miniaturas por meio da etapa **[!UICONTROL Processar miniaturas]** é a maneira mais lenta e intensiva de memória para criar miniaturas.
 
@@ -193,7 +193,7 @@ O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL w
 **Para configurar o tamanho da miniatura da imagem**
 
 1. Toque em **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos > Ativo de atualização do DAM > Editar]**.
-1. Toque na etapa **[!UICONTROL Dynamic Media Process Image Assets]** e toque na guia **[!UICONTROL Miniaturas]** . Altere o tamanho da miniatura, conforme necessário, e toque em **[!UICONTROL OK]**.
+1. Toque na etapa Ativos **[!UICONTROL de imagem do processo de mídia]** dinâmica e toque na guia **[!UICONTROL Miniaturas]** . Altere o tamanho da miniatura, conforme necessário, e toque em **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -207,7 +207,7 @@ O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL w
 
 ### Aumentar ou diminuir o número de predefinições de imagens exibidas {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-As predefinições de imagens criadas estão disponíveis como representações dinâmicas quando você pré-visualização ativos. O AEM mostra uma variedade de representações dinâmicas ao exibir ativos de Visualização de **[!UICONTROL detalhes > Representações]**. Você pode aumentar ou diminuir o limite de representações exibidas.
+As predefinições de imagens criadas estão disponíveis como representações dinâmicas quando você pré-visualização ativos. AEM mostra uma variedade de representações dinâmicas ao exibir ativos de Visualização **[!UICONTROL Detalhada > Representações]**. Você pode aumentar ou diminuir o limite de representações exibidas.
 
 **Para aumentar ou diminuir o número de predefinições de imagens exibidas**
 
@@ -235,8 +235,8 @@ Criar uma predefinição de imagem permite aplicar essas configurações a qualq
 Se você pretende oferecer suporte à inclusão de arquivos AI, PDF e EPS para que possa gerar a representação dinâmica desses formatos de arquivo, é recomendável revisar as seguintes informações antes de criar predefinições de imagem.
 Consulte [Adobe Illustrator (AI), Postscript (EPS) e formatos](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)de arquivo PDF.
 
-Se você pretende oferecer suporte à ingestão de arquivos INDD para que possa gerar a renderização dinâmica desse formato de arquivo, é recomendável revisar as seguintes informações antes de criar predefinições de imagem.
-Consulte Formato [de arquivo do](#indesign-indd-file-format)InDesign (INDD).
+Se você pretende oferecer suporte à ingestão de arquivos INDD para que possa gerar a representação dinâmica desse formato de arquivo, reveja as seguintes informações antes de criar predefinições de imagem.
+Consulte o formato [de arquivo](#indesign-indd-file-format)InDesign (INDD).
 
 **Para criar uma predefinição de imagem**
 
@@ -259,7 +259,7 @@ Consulte Formato [de arquivo do](#indesign-indd-file-format)InDesign (INDD).
 
 Para criar uma predefinição de imagem responsiva, execute as etapas em [Criação de predefinições](#creating-image-presets)de imagem. Ao digitar a altura e a largura na janela **[!UICONTROL Editar predefinição]** de imagem, apague os valores e deixe-os em branco.
 
-Deixar em branco informa ao AEM que essa predefinição de imagem é responsiva. Você pode ajustar os outros valores conforme apropriado.
+Deixá-los em branco informa AEM que essa predefinição de imagem é responsiva. Você pode ajustar os outros valores conforme apropriado.
 
 >[!NOTE]
 >
@@ -271,9 +271,9 @@ Deixar em branco informa ao AEM que essa predefinição de imagem é responsiva.
 
 ### Opções de predefinição de imagem {#image-preset-options}
 
-Ao criar ou editar predefinições de imagens, você tem as opções descritas nesta seção. Além disso, a Adobe recomenda estas opções de &quot;prática recomendada&quot; para o start:
+Ao criar ou editar predefinições de imagens, você tem as opções descritas nesta seção. Além disso, o Adobe recomenda essas opções de &quot;práticas recomendadas&quot; para o start:
 
-* **[!UICONTROL Formatar** (guia **[!UICONTROL Básico]**) - Selecione **[!UICONTROL JPEG]** ou outro formato que atenda aos requisitos. Todos os navegadores da Web são compatíveis com o formato de imagem JPEG; ele oferece um bom equilíbrio entre arquivos pequenos e qualidade de imagem. No entanto, as imagens no formato JPEG usam um esquema de compactação com perdas que pode apresentar artefatos de imagem indesejados se a configuração de compactação for muito baixa. Por esse motivo, a Adobe recomenda definir a qualidade de compactação como 75. Essa configuração oferece um bom equilíbrio entre a qualidade da imagem e o tamanho pequeno de arquivo.
+* **[!UICONTROL Formatar]** (guia **[!UICONTROL Básico]**) - Selecione **[!UICONTROL JPEG]** ou outro formato que atenda aos requisitos. Todos os navegadores da Web são compatíveis com o formato de imagem JPEG; ele oferece um bom equilíbrio entre arquivos pequenos e qualidade de imagem. No entanto, as imagens no formato JPEG usam um esquema de compactação com perdas que pode apresentar artefatos de imagem indesejados se a configuração de compactação for muito baixa. Por esse motivo, a Adobe recomenda definir a qualidade de compactação como 75. Essa configuração oferece um bom equilíbrio entre a qualidade da imagem e o tamanho pequeno de arquivo.
 
 * **[!UICONTROL Ativar nitidez simples]** - Não selecione **[!UICONTROL Ativar nitidez simples]** (este filtro de nitidez oferece menos controle do que as configurações Tirar nitidez da máscara).
 
@@ -384,7 +384,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
      <li><strong>Bi-Linear</strong> - o método de reamostragem mais rápido. Alguns artefatos de aliasing são perceptíveis.</li>
      <li><strong>Bi-Cubic</strong> - aumenta o uso da CPU, mas produz imagens mais nítidas com artefatos de aliasing menos visíveis.</li>
      <li><strong>Sharp2</strong> - pode produzir resultados ligeiramente mais nítidos que o Bi-Cubic, mas com um custo de CPU ainda maior.</li>
-     <li><strong>Bi-Sharp</strong> - Seleciona o resamplador padrão do Photoshop para reduzir o tamanho da imagem, que é chamado de <strong>bicúbico mais nítido</strong> no Adobe Photoshop.</li>
+     <li><strong>Bi-Sharp</strong> - Seleciona o resamplador padrão Photoshop para reduzir o tamanho da imagem, que é chamado de <strong>bicubic Sharper</strong> no Adobe Photoshop.</li>
      <li><strong>Cada cor</strong> e <strong>brilho</strong> - cada método pode ser baseado na cor ou no brilho. Por padrão, <strong>Cada cor</strong> é selecionada.</li>
     </ul> </td>
   </tr>
@@ -394,16 +394,16 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
   </tr>
   <tr>
    <td><strong>Modificador de imagem</strong></td>
-   <td><p>Além das configurações comuns de imagem disponíveis na interface do usuário, a Dynamic Media oferece suporte a inúmeras modificações avançadas de imagem que você pode especificar no campo Modificadores de <strong>imagem</strong> . Esses parâmetros são definidos na referência <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">de comando do protocolo do servidor de</a>imagens.</p> <p>Importante: A seguinte funcionalidade listada na API não é suportada:</p>
+   <td><p>Além das configurações comuns de imagem disponíveis na interface do usuário, o Dynamic Media suporta inúmeras modificações avançadas de imagem que você pode especificar no campo Modificadores de <strong>imagem</strong> . Esses parâmetros são definidos na referência <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">de comando do protocolo do servidor de</a>imagens.</p> <p>Importante: A seguinte funcionalidade listada na API não é suportada:</p>
     <ul>
      <li>Comandos básicos de formatação e renderização de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
-     <li>Comandos de Localização: <code>locale=</code> e <code>req=xlate</code></li>
+     <li>Comandos de localização: <code>locale=</code> e <code>req=xlate</code></li>
      <li><code>req=set</code> não está disponível para uso geral.</li>
      <li><code>req=mbrset</code></li>
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Serviços Dynamic Media não principais: SVG, renderização de imagem e Web para impressão</li>
+     <li>Serviços de Dynamic Media não principais: SVG, renderização de imagem e Web para impressão</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -411,13 +411,13 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
 
 ### Definição de opções de predefinição de imagem com modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
 
-Além das opções disponíveis nas guias Básico e Avançado, é possível definir modificadores de imagem para fornecer mais opções ao definir predefinições de imagem. A renderização de imagem depende da API de renderização de imagem do Scene7 e é definida em detalhes na Referência [do protocolo](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html)HTTP.
+Além das opções disponíveis nas guias Básico e Avançado, é possível definir modificadores de imagem para fornecer mais opções ao definir predefinições de imagem. A renderização de imagem depende da API de renderização de imagem da Scene7 e é definida em detalhes na Referência [do protocolo](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html)HTTP.
 
 Estes são alguns exemplos básicos do que você pode fazer com modificadores de imagem.
 
 >[!NOTE]
 >
->Alguns modificadores de imagem [não podem ser usados no AEM](#advanced-tab-options).
+>Alguns modificadores de imagem [não podem ser usados em AEM](#advanced-tab-options).
 
 * [op_invert](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_invert.html) - Inverte cada componente de cor para obter um efeito de imagem negativo.
 
@@ -474,5 +474,5 @@ As predefinições de imagens são publicadas automaticamente para você.
 
 ### Excluindo predefinições de imagens {#deleting-image-presets}
 
-1. No AEM, toque no logotipo do AEM para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos > Predefinições]** de imagem.
-1. Selecione uma predefinição e clique em **[!UICONTROL Excluir**. A Dynamic Media confirma que você deseja excluí-lo. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
+1. Em AEM, toque no logotipo AEM para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos > Predefinições]** de imagem.
+1. Selecione uma predefinição e clique em **[!UICONTROL Excluir]**. O Dynamic Media confirma que você deseja excluí-lo. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
