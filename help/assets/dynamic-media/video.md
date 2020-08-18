@@ -2,9 +2,9 @@
 title: Vídeo
 description: Saiba como trabalhar com vídeo no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
-source-wordcount: '10058'
+source-wordcount: '10057'
 ht-degree: 10%
 
 ---
@@ -16,13 +16,13 @@ Esta seção descreve como trabalhar com vídeo no Dynamic Media.
 
 ## Start rápido: Vídeos {#quick-start-videos}
 
-A seguinte descrição passo a passo do fluxo de trabalho foi projetada para ajudá-lo a começar a usar rapidamente os conjuntos de vídeo adaptáveis no Dynamic Media. Depois de cada etapa, há referências cruzadas a cabeçalhos de tópicos nos quais você pode encontrar mais informações.
+A seguinte descrição passo a passo do fluxo de trabalho foi projetada para ajudá-lo a começar a funcionar rapidamente com conjuntos de vídeo adaptáveis no Dynamic Media. Depois de cada etapa, há referências cruzadas a cabeçalhos de tópicos nos quais você pode encontrar mais informações.
 
 >[!NOTE]
 >
->Antes de trabalhar com vídeo no Dynamic Media, verifique se o administrador do AEM já habilitou e configurou Cloud Service Dynamic Media.
+>Antes de trabalhar com vídeo no Dynamic Media, verifique se o administrador do AEM já habilitou e configurou os Cloud Services do Dynamic Media.
 >
->* Consulte [Configuração de Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) Dynamic Media em Configuração do Dynamic Media e [Solução de problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
+>* Consulte [Configuração de Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) de Dynamic Media em Configuração de Dynamic Media e [Solução de Problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 
 >
 
@@ -118,11 +118,11 @@ A seguinte descrição passo a passo do fluxo de trabalho foi projetada para aju
 
 ## Trabalhar com vídeo no Dynamic Media {#working-with-video-in-dynamic-media}
 
-O vídeo no Dynamic Media é uma solução completa que facilita a publicação de vídeo adaptativo de alta qualidade para transmissão em várias telas, incluindo dispositivos móveis desktop, iOS, Android, Blackberry e Windows. Um Conjunto de vídeos adaptáveis agrupa versões do mesmo vídeo que são codificadas em diferentes taxas de bits e formatos, como 400 kbps, 800 kbps e 1000 kbps. O computador desktop ou dispositivo móvel detecta a largura de banda disponível.
+O vídeo no Dynamic Media é uma solução completa que facilita a publicação de vídeo adaptável de alta qualidade para streaming em várias telas, incluindo dispositivos móveis desktop, iOS, Android, Blackberry e Windows. Um Conjunto de vídeos adaptáveis agrupa versões do mesmo vídeo que são codificadas em diferentes taxas de bits e formatos, como 400 kbps, 800 kbps e 1000 kbps. O computador desktop ou dispositivo móvel detecta a largura de banda disponível.
 
 Por exemplo, em um dispositivo móvel iOS, ele detecta uma largura de banda como 3G, 4G ou Wi-Fi. Em seguida, seleciona automaticamente o vídeo codificado direito entre as várias taxas de bits de vídeo no Conjunto de vídeos adaptáveis. O vídeo é transmitido para desktops, dispositivos móveis ou tablets.
 
-Além disso, a qualidade do vídeo é automaticamente alternada se as condições da rede mudarem no desktop ou no dispositivo móvel. Além disso, se um cliente entrar no modo de tela cheia em um desktop, o Conjunto de vídeos adaptáveis responderá usando uma resolução melhor, melhorando assim a experiência de visualização do cliente. O uso de Conjuntos de vídeo adaptativos oferece a melhor reprodução possível para clientes que reproduzem vídeo Dynamic Media em várias telas e dispositivos.
+Além disso, a qualidade do vídeo é automaticamente alternada se as condições da rede mudarem no desktop ou no dispositivo móvel. Além disso, se um cliente entrar no modo de tela cheia em um desktop, o Conjunto de vídeos adaptáveis responderá usando uma resolução melhor, melhorando assim a experiência de visualização do cliente. O uso de Conjuntos de vídeo adaptáveis oferece a melhor reprodução possível para clientes que reproduzem vídeo de Mídia dinâmica em várias telas e dispositivos.
 
 A lógica que um player de vídeo usa para determinar qual vídeo codificado reproduzir ou selecionar durante a reprodução é baseada no seguinte algoritmo:
 
@@ -145,13 +145,13 @@ Para gerenciar um único vídeo e Conjuntos de vídeos adaptáveis, há suporte 
 * Organize, navegue e pesquise vídeos com suporte total a metadados para o gerenciamento eficiente dos ativos de vídeo.
 * Forneça Conjuntos de vídeo adaptáveis para a Web, desktops e dispositivos móveis, incluindo iPhone, iPad, Android, Blackberry e telefone Windows.
 
-O streaming de vídeo adaptativo é suportado em várias plataformas iOS. Consulte Guia [de referência do](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)Scene7 Viewers.
+O streaming de vídeo adaptativo é suportado em várias plataformas iOS. Consulte Guia [de referência dos visualizadores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)Scene7.
 
-A Dynamic Media oferece suporte à reprodução de vídeo móvel para vídeo MP4 H.264. Você pode encontrar dispositivos Blackberry compatíveis com este formato de vídeo no seguinte endereço: [Formatos de vídeo suportados no Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+O Dynamic Media suporta reprodução de vídeo móvel para vídeo MP4 H.264. Você pode encontrar dispositivos Blackberry compatíveis com este formato de vídeo no seguinte endereço: [Formatos de vídeo suportados no Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 Você pode encontrar dispositivos Windows compatíveis com este formato de vídeo no seguinte endereço: [Formatos de vídeo suportados no Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
-* Reproduza o vídeo usando as predefinições do Dynamic Media Video Viewer, incluindo:
+* Reproduza o vídeo usando as predefinições do visualizador de vídeo do Dynamic Media, incluindo:
 
    * Visualizadores de vídeo individuais.
    * Visualizadores de mídia mista que combinam conteúdo de vídeo e imagem.
@@ -161,11 +161,11 @@ Você pode encontrar dispositivos Windows compatíveis com este formato de víde
 
 Consulte Exemplo de reprodução [](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) de vídeo dinâmica.
 
-Consulte também [Visualizadores do AEM e Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) e [Visualizadores para ativos AEM somente](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) no Guia de referência do Adobe Scene7 Viewers.
+Consulte também [Visualizadores para AEM e Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) e [Visualizadores para AEM ativos somente](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) no Guia de referência do Adobe Scene7 Viewers.
 
 ## Melhores práticas: Uso do visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
-As predefinições do visualizador de vídeo HTML5 da Dynamic Media são players de vídeo robustos. Você pode usá-los para evitar muitos problemas comuns associados à reprodução de vídeo HTML5 e problemas associados a dispositivos móveis, como falta de delivery de transmissão adaptável e alcance limitado do navegador do desktop.
+As predefinições do visualizador de vídeo HTML5 do Dynamic Media são players de vídeo robustos. Você pode usá-los para evitar muitos problemas comuns associados à reprodução de vídeo HTML5 e problemas associados a dispositivos móveis, como falta de delivery de transmissão adaptável e alcance limitado do navegador do desktop.
 
 No lado do design do player, é possível projetar toda a funcionalidade do player de vídeo usando ferramentas padrão de desenvolvimento da Web. Por exemplo, você pode projetar botões, controles e imagens de fundo de pôster personalizadas usando HTML5 e CSS para ajudá-lo a alcançar seus clientes com uma aparência personalizada.
 
@@ -173,7 +173,7 @@ No lado da reprodução do visualizador, ele detecta automaticamente a capacidad
 
 Ao combinar em um único player a capacidade de projetar os componentes de reprodução usando HTML5 e CSS, ter reprodução integrada e usar streaming adaptável e progressivo dependendo da capacidade do navegador, você estende o alcance do conteúdo de mídia avançada para usuários de desktop e móveis e garante uma experiência de vídeo otimizada.
 
-Consulte também [Sobre visualizadores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) HTML5 no Guia de referência do Adobe Scene7 Viewers.
+Consulte também [Sobre visualizadores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) HTML5 no Guia de referência de visualizadores do Adobe Scene7.
 
 ### Reprodução de vídeo em computadores desktop e dispositivos móveis usando o visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -181,7 +181,7 @@ Para streaming de vídeo adaptável para desktop e dispositivos móveis, os víd
 
 A reprodução do vídeo ocorre usando HLS ou download progressivo de vídeo. Em versões anteriores do AEM, como 6.0, 6.1 e 6.2, os vídeos eram transmitidos via HTTP.
 
-No entanto, no AEM 6.3 e em diante, os vídeos agora são transmitidos por HTTPS (ou seja, HLS), pois o URL do serviço de gateway DM sempre usa HTTPS também. Observe que não há impacto do cliente neste comportamento padrão. Ou seja, o streaming de vídeo sempre ocorrerá em HTTPS, a menos que não seja suportado pelo navegador. (consulte a tabela a seguir). Portanto,
+No entanto, no AEM 6.3 e em diante, os vídeos agora são transmitidos por HTTPS (ou seja, HLS), pois o URL do serviço de gateway de DM sempre usa HTTPS também. Observe que não há impacto do cliente neste comportamento padrão. Ou seja, o streaming de vídeo sempre ocorrerá em HTTPS, a menos que não seja suportado pelo navegador. (consulte a tabela a seguir). Portanto,
 
 * Se você tiver um site HTTPS com streaming de vídeo HTTPS, o streaming está funcionando bem.
 * Se você tiver um site HTTP com streaming de vídeo HTTPS, o streaming estará correto e não haverá problemas de conteúdo misto no navegador da Web.
@@ -264,7 +264,7 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
 
 ## Arquitetura da solução de vídeo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
-O gráfico a seguir mostra o fluxo de trabalho de criação geral de vídeos que são carregados e codificados por meio do DMGGateway (no modo Dynamic Media Hybrid) e disponibilizados para consumo público.
+O gráfico a seguir mostra o fluxo de trabalho de criação geral de vídeos que são carregados e codificados por meio do DMGGateway (no modo Híbrido de Dynamic Media) e disponibilizados para consumo público.
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -408,17 +408,17 @@ Por exemplo, suponha que o vídeo de origem seja 1920 x 1080. Na tabela a seguir
 
 ### Formato de arquivo de vídeo codificado {#encoded-video-file-format}
 
-A Dynamic Media recomenda usar predefinições de codificação de vídeo MP4 H.264. Como os arquivos MP4 usam o codec de vídeo H.264, ele fornece vídeo de alta qualidade, mas em um tamanho de arquivo compactado.
+O Dynamic Media recomenda o uso de predefinições de codificação de vídeo MP4 H.264. Como os arquivos MP4 usam o codec de vídeo H.264, ele fornece vídeo de alta qualidade, mas em um tamanho de arquivo compactado.
 
 ## Publicar vídeos no YouTube {#publishing-videos-to-youtube}
 
-Você pode publicar ativos de vídeo do AEM local diretamente em um canal do YouTube que você criou anteriormente.
+Você pode publicar ativos de vídeo no local AEM diretamente em um canal do YouTube criado anteriormente.
 
-Para publicar ativos de vídeo no YouTube, configure AEM Assets com tags. Você associa essas tags a um canal do YouTube. Se a tag de um ativo de vídeo corresponder à tag de um canal do YouTube, o vídeo será publicado no YouTube. A publicação no YouTube ocorre junto com uma publicação normal do vídeo, desde que uma tag associada seja usada.
+Para publicar ativos de vídeo no YouTube, configure o AEM Assets com tags. Você associa essas tags a um canal do YouTube. Se a tag de um ativo de vídeo corresponder à tag de um canal do YouTube, o vídeo será publicado no YouTube. A publicação no YouTube ocorre junto com uma publicação normal do vídeo, desde que uma tag associada seja usada.
 
-O YouTube faz sua própria codificação. Dessa forma, o arquivo de vídeo original que foi carregado no AEM é publicado no YouTube em vez de qualquer execução de vídeo que a codificação do Dynamic Media tenha criado. Embora não seja necessário processar vídeos usando o Dynamic Media, espera-se que eles o façam caso uma predefinição do visualizador seja necessária para a reprodução.
+O YouTube faz sua própria codificação. Dessa forma, o arquivo de vídeo original que foi carregado no AEM é publicado no YouTube em vez de qualquer execução de vídeo criada pela codificação do Dynamic Media. Embora não seja necessário processar vídeos usando o Dynamic Media, espera-se que eles o façam caso uma predefinição do visualizador seja necessária para a reprodução.
 
-Quando você ignora o perfil de processamento de vídeo e publica diretamente no YouTube, isso significa apenas que seu ativo de vídeo no AEM Asset pode não obter uma miniatura visível. Isso também significa que os vídeos não codificados não funcionarão com nenhum dos tipos de ativos da Dynamic Media.
+Quando você ignora o perfil de processamento de vídeo e publica diretamente no YouTube, isso significa apenas que o ativo de vídeo AEM Ativo pode não obter uma miniatura visível. Isso também significa que os vídeos que não estão codificados não funcionarão com nenhum dos tipos de ativos de Mídia dinâmica.
 
 A publicação de ativos de vídeo em servidores do YouTube envolve a conclusão das seguintes tarefas para garantir a autenticação segura e segura de servidor para servidor com o YouTube:
 
@@ -457,14 +457,14 @@ Para definir as configurações do Google Cloud:
 
    Se necessário, talvez seja necessário fazer **[!UICONTROL logon]** usando suas credenciais de conta do Google para ver a opção **[!UICONTROL Console]** .
 
-1. Na página Painel, à direita do **[!UICONTROL Google Cloud Platform]**, clique na lista suspensa Projeto para abrir a caixa de diálogo Selecionar um projeto.
+1. Na página Painel, à direita de Plataforma **[!UICONTROL do]** Google Cloud, clique na lista suspensa Projeto para abrir a caixa de diálogo Selecionar um projeto.
 1. Na caixa de diálogo Selecionar um projeto, toque em **[!UICONTROL Novo projeto]**.
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
 1. Na caixa de diálogo Novo projeto, no campo Nome do projeto, digite o nome do novo projeto.
 
-   Observe que a ID do projeto se baseia no nome do projeto. Como tal, escolha cuidadosamente o nome do projeto; ele não pode ser alterado após ser criado. Além disso, você precisará digitar a mesma ID de projeto novamente quando configurar o YouTube no AEM posteriormente; talvez você queira anotar.
+   Observe que a ID do projeto se baseia no nome do projeto. Como tal, escolha cuidadosamente o nome do projeto; ele não pode ser alterado após ser criado. Além disso, você precisará digitar a mesma ID de projeto novamente quando configurar o YouTube AEM posteriormente; talvez você queira anotar.
 
 1. Clique em **[!UICONTROL Criar]**.
 
@@ -522,7 +522,7 @@ Para definir as configurações do Google Cloud:
 
 1. No cabeçalho Nome do **[!UICONTROL produto exibido aos usuários]** , no campo de texto, digite o que deseja mostrar na tela de consentimento.
 
-   A tela de consentimento é exibida para o administrador do AEM quando eles são autenticados no YouTube; O AEM entrará em contato com o YouTube para obter permissão.
+   A tela de consentimento é exibida ao administrador do AEM quando eles são autenticados no YouTube; AEM entrará em contato com o YouTube para obter permissão.
 
 1. Clique em **[!UICONTROL Continuar]**.
 1. Na página Adicionar credenciais ao projeto, etapa 4, no cabeçalho **[!UICONTROL Baixar credenciais]**, toque em **[!UICONTROL Download]**.
@@ -531,7 +531,7 @@ Para definir as configurações do Google Cloud:
 
 1. Salve o `client_id.json` arquivo.
 
-   Você precisará desse arquivo json baixado ao configurar o YouTube no Adobe Experience Manager posteriormente.
+   Você precisará desse arquivo json baixado ao configurar o YouTube no Adobe Experience Manager mais tarde.
 
 1. Clique em **[!UICONTROL Concluído]**.
 
@@ -561,7 +561,7 @@ Para criar um canal do YouTube:
 
 ### Adicionar tags para publicação {#adding-tags-for-publishing}
 
-Para publicar em seus vídeos no YouTube, o AEM associa tags a um ou mais canais do YouTube. Para adicionar tags para publicação, consulte [Administração de tags](/help/sites-cloud/authoring/features/tags.md).
+Para publicar em seus vídeos no YouTube, AEM associa tags a um ou mais canais do YouTube. Para adicionar tags para publicação, consulte [Administração de tags](/help/sites-cloud/authoring/features/tags.md).
 
 Ou, se você pretende usar as tags padrão no AEM, ignore essa tarefa e vá para [Configuração do YouTube no AEM](#setting-up-youtube-in-aem).
 
@@ -588,7 +588,7 @@ A partir do AEM 6.4, um novo método de interface do usuário de toque foi intro
 
 #### Configuração do YouTube no AEM 6.4 e posterior {#setting-up-youtube-in-aem-and-later}
 
-1. Certifique-se de fazer logon na sua instância do Dynamic Media como um Administrador.
+1. Certifique-se de fazer logon na sua instância do Dynamic Media como um administrador.
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]**(ícone de martelo) > **[!UICONTROL Serviços da nuvem]** > **[!UICONTROL Configuração de publicação no YouTube]**.
 1. Toque em **[!UICONTROL global]** (não o selecione).
 
@@ -605,7 +605,7 @@ Deixe a página Criar configuração do YouTube aberta; você voltará a isso em
 1. Retorne à caixa de diálogo Configurações da conta do YouTube. No campo **[!UICONTROL Configuração JSON]**, cole o texto JSON.
 1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
 
-   Agora você configurará canais do YouTube no AEM.
+   Agora você irá configurar canais do YouTube no AEM.
 
 1. Toque em **[!UICONTROL Adicionar Canal]**.
 1. In the Channel Name field, enter the name of the channel that you created in the task **[!UICONTROL Adding one or more channels to YouTube]** earlier.
@@ -623,8 +623,8 @@ Deixe a página Criar configuração do YouTube aberta; você voltará a isso em
 
    Agora, você configurará tags para publicação.
 
-1. **[!UICONTROL Configuração de tags para publicação]** - Na página Cloud Service > YouTube, toque no ícone de lápis para editar a lista de tags que deseja usar.
-1. Toque no ícone de lista suspensa (sinal invertido) para exibir a lista de tags disponíveis no AEM.
+1. **[!UICONTROL Configuração de tags para publicação]** - Na página Cloud Services > YouTube, toque no ícone de lápis para editar a lista de tags que deseja usar.
+1. Toque no ícone de lista suspensa (sinal invertido) para exibir a lista das tags disponíveis no AEM.
 1. Toque em uma ou mais tags para adicioná-las.
 
    Para excluir uma tag adicionada, selecione-a e toque em **[!UICONTROL X]**.
@@ -633,9 +633,9 @@ Deixe a página Criar configuração do YouTube aberta; você voltará a isso em
 
    Agora você publica vídeos no seu canal do YouTube.
 
-#### Configuração do YouTube no AEM antes da versão 6.4 {#setting-up-youtube-in-aem-before}
+#### Configuração do YouTube no AEM antes de 6.4 {#setting-up-youtube-in-aem-before}
 
-1. Certifique-se de fazer logon na sua instância do Dynamic Media como um Administrador.
+1. Certifique-se de fazer logon na sua instância do Dynamic Media como um administrador.
 
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Implantação]** > **[!UICONTROL Serviços da nuvem]**.
 1. No cabeçalho Third Party Services (Serviços de terceiros), em YouTube, toque em **[!UICONTROL Configure now (Configurar agora]**).
@@ -651,7 +651,7 @@ Deixe a caixa de diálogo Configuração de conta do YouTube aberta; você volta
 1. Retorne à caixa de diálogo Configurações da conta do YouTube. No campo **[!UICONTROL Configuração JSON]**, cole o texto JSON.
 1. Toque em **[!UICONTROL OK]**.
 
-   Agora você configurará canais do YouTube no AEM.
+   Agora você irá configurar canais do YouTube no AEM.
 
 1. À direita de **[!UICONTROL Canais disponíveis]**, toque em **+** (ícone de adição).
 1. Na caixa de diálogo Configurações do canal do YouTube, no campo Título, digite o nome do canal criado na tarefa **[!UICONTROL Adicionar um ou mais canais ao YouTube]** anteriormente.
@@ -669,8 +669,8 @@ Deixe a caixa de diálogo Configuração de conta do YouTube aberta; você volta
 
    Agora, você configurará tags para publicação.
 
-1. **[!UICONTROL Configuração de tags para publicação]** - Na página Cloud Service > YouTube, toque no ícone de lápis para editar a lista de tags que deseja usar.
-1. Toque no ícone de lista suspensa (sinal invertido) para exibir a lista de tags disponíveis no AEM.
+1. **[!UICONTROL Configuração de tags para publicação]** - Na página Cloud Services > YouTube, toque no ícone de lápis para editar a lista de tags que deseja usar.
+1. Toque no ícone de lista suspensa (sinal invertido) para exibir a lista das tags disponíveis no AEM.
 1. Toque em uma ou mais tags para adicioná-las.
 
    Para excluir uma tag adicionada, selecione-a e toque em **X**.
@@ -744,22 +744,22 @@ Cole o valor copiado no editor de texto aberto. Você precisará desse valor pos
 
 ### Publicar vídeos no canal do YouTube {#publishing-videos-to-your-youtube-channel}
 
-Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse processo permite que o AEM saiba quais ativos publicar no seu canal do YouTube.
+Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse processo permite AEM quais ativos publicar em seu canal do YouTube.
 
 >[!NOTE]
 >
 >Observe que publicar imediatamente não publica automaticamente no YouTube. Quando o Dynamic Media estiver configurado, há duas opções de publicação para escolher: **[!UICONTROL Imediatamente]** ou **[!UICONTROL Após ativação]**.
 >
->**[!UICONTROL Publicar imediatamente]** significa que o ativo carregado - após ser sincronizado com o IPS - é publicado automaticamente no sistema do delivery. Embora isso seja verdade para o Dynamic Media, não é verdade para o YouTube. Para publicar no YouTube, você deve publicar por meio de AEM Author.
+>**[!UICONTROL Publicar imediatamente]** significa que o ativo carregado - após ser sincronizado com o IPS - é publicado automaticamente no sistema do delivery. Embora isso seja verdade para o Dynamic Media, não é verdade para o YouTube. Para publicar no YouTube, você deve publicar por meio do AEM Author.
 
 >[!NOTE]
-Para publicar conteúdo do YouTube, o AEM usa o fluxo de trabalho **[!UICONTROL Publicar no YouTube]** , que permite que você monitore o progresso e visualização de quaisquer informações de falha.
+Para publicar conteúdo do YouTube, AEM usa o fluxo de trabalho **[!UICONTROL Publicar no YouTube]** , que permite que você monitore o progresso e visualização de quaisquer informações de falha.
 Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 Para obter informações mais detalhadas sobre o progresso, você pode monitorar o log do YouTube em replicação. No entanto, lembre-se de que essa monitoração requer acesso de Administrador.
 
-**Para publicar vídeos no seu canal** do YouTube:
+**Para publicar vídeos no canal** do YouTube:
 
-1. No AEM, navegue até um ativo de vídeo que você deseja publicar no seu canal do YouTube.
+1. Em AEM, navegue até um ativo de vídeo que você deseja publicar no seu canal do YouTube.
 1. Selecione o ativo de vídeo (o conjunto de vídeos adaptáveis).
 1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades]**.
 1. Na guia Básico, no cabeçalho Metadados, clique em **[!UICONTROL Abrir caixa de diálogo]** de seleção à direita do campo Tags.
@@ -771,7 +771,7 @@ Para obter informações mais detalhadas sobre o progresso, você pode monitorar
 1. No canto superior direito da página de propriedades do vídeo, clique em **[!UICONTROL Salvar e fechar]**.
 1. Na barra de ferramentas, clique em Publicação **[!UICONTROL rápida]**.
 
-   Consulte também [Uso do Gerenciamento de publicação com AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   Consulte também [Uso do gerenciamento de publicação com a AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
 
    Como opção, você pode verificar o vídeo publicado no seu canal do YouTube.
 
@@ -787,7 +787,7 @@ Após oito horas, se você ainda vir uma mensagem de status **[!UICONTROL Carreg
 
 ### Linking YouTube URLs to your Web Application {#linking-youtube-urls-to-your-web-application}
 
-Você pode obter uma string de URL do YouTube que é gerada pela Dynamic Media depois de publicar o vídeo. Quando você copia o URL do YouTube, ele aterrissa na Área de transferência para que você possa colá-lo conforme necessário nas páginas do seu site ou aplicativo.
+Você pode obter uma string de URL do YouTube gerada pelo Dynamic Media após publicar o vídeo. Quando você copia o URL do YouTube, ele aterrissa na Área de transferência para que você possa colá-lo conforme necessário nas páginas do seu site ou aplicativo.
 
 >[!NOTE]
 O URL do YouTube não estará disponível para cópia até que você tenha publicado o ativo de vídeo no YouTube.
@@ -807,10 +807,10 @@ Para vincular URLs do YouTube ao seu aplicativo da Web:
 Quando você cancela a publicação de um ativo de vídeo no AEM, o vídeo será removido do YouTube.
 
 >[!CAUTION]
-Se você remover um vídeo diretamente do YouTube, o AEM desconhece e continua a se comportar como se o vídeo ainda fosse publicado no YouTube. Sempre cancele a publicação de um ativo de vídeo do YouTube por meio do AEM.
+Se você remover um vídeo diretamente do YouTube, AEM desconhece e continua a se comportar como se o vídeo ainda fosse publicado no YouTube. Sempre cancele a publicação de um ativo de vídeo do YouTube por meio de AEM.
 
 >[!NOTE]
-Para remover o conteúdo do YouTube, o AEM usa o fluxo de trabalho **[!UICONTROL Desfazer a publicação do YouTube]** , que permite que você monitore o progresso e visualização de quaisquer informações de falha.
+Para remover o conteúdo do YouTube, AEM usa o fluxo de trabalho **[!UICONTROL Desfazer a publicação do YouTube]** , que permite que você monitore o progresso e visualização de quaisquer informações de falha.
 Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 Para cancelar a publicação de vídeos para removê-los do YouTube:
@@ -830,7 +830,7 @@ Ao carregar um novo vídeo para uma pasta que tenha a codificação de vídeo ap
 
 Para monitorar o progresso (incluindo a codificação com falha/publicação do YouTube):
 
-1. Progresso da codificação de vídeo de Visualização em sua pasta de ativos:
+1. Progresso da codificação de vídeo de visualização em sua pasta de ativos:
 
    * Na visualização do cartão, o progresso da codificação de vídeo é exibido no ativo em uma porcentagem. Se houver um erro, essas informações também serão exibidas no ativo.
 
@@ -844,7 +844,7 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
 
    ![chlimage_1-431](/help/assets/dynamic-media/assets/chlimage_1-431.png)
 
-1. Progresso da Visualização nos detalhes do ativo. Ao tocar ou clicar em um ativo, abra o menu suspenso e selecione **[!UICONTROL Linha do tempo]**. Para limitar a atividades de fluxo de trabalho, como codificação ou publicação no YouTube, selecione **[!UICONTROL Workflows]**.
+1. Progresso da visualização nos detalhes do ativo. Ao tocar ou clicar em um ativo, abra o menu suspenso e selecione **[!UICONTROL Linha do tempo]**. Para limitar a atividades de fluxo de trabalho, como codificação ou publicação no YouTube, selecione **[!UICONTROL Workflows]**.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -853,7 +853,7 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
    >[!NOTE]
    Pode levar muito tempo para que as mensagens de erro/falha sejam gravadas, devido a várias configurações de fluxo de trabalho em **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]** e **[!UICONTROL tempo limite]** em [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por exemplo:
    * Configuração da fila de trabalhos do Apache Sling
-   * Manipulador de trabalho externo do processo de fluxo de trabalho do Adobe Granite
+   * Processador de Trabalho de Processo Externo do Fluxo de Trabalho do Adobe Granite
    * Fila de Tempo Limite do Fluxo de Trabalho Granite
 
    Você pode ajustar as **[!UICONTROL tentativas]**, o **[!UICONTROL atraso de repetição]** e as propriedades de **[!UICONTROL tempo limite]** nessas configurações.
@@ -881,7 +881,7 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
    >[!NOTE]
    Pode levar muito tempo para que a mensagem de erro seja gravada devido a várias configurações de fluxo de trabalho em **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]** e **[!UICONTROL tempo limite]** em [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por exemplo:
    * Configuração da fila de trabalhos do Apache Sling
-   * Manipulador de trabalho externo do processo de fluxo de trabalho do Adobe Granite
+   * Processador de Trabalho de Processo Externo do Fluxo de Trabalho do Adobe Granite
    * Fila de Tempo Limite do Fluxo de Trabalho Granite
 
    Você pode ajustar as **[!UICONTROL tentativas]**, o **[!UICONTROL atraso de repetição]** e as propriedades de **[!UICONTROL tempo limite]** nessas configurações.
@@ -944,7 +944,7 @@ For YouTube publishing jobs, do the following:
 ## Exibição de relatórios de vídeo {#viewing-video-reports}
 
 >[!NOTE]
-Os relatórios de vídeo só estão disponíveis quando você executa o Dynamic Media - modo híbrido.
+Os relatórios de vídeo só estão disponíveis quando você executa o Dynamic Media - modo Híbrido.
 
 Os Relatórios de vídeo exibem várias métricas de agregação em um período de tempo especificado para ajudar você a monitorar se os vídeos *publicados *individuais e de agregação estão funcionando como esperado. Os seguintes dados de métricas principais são agregados para todos os vídeos publicados em todo o seu site:
 
@@ -961,11 +961,11 @@ Quando você toca no nome de um vídeo na lista, ele mostra o relatório de rete
 Se o vídeo foi codificado fora do Adobe Experience Manager Dynamic Media, o gráfico de retenção de audiência (suspenso) e os dados de Porcentagem de reprodução na tabela não estão disponíveis.
 
 >[!NOTE]
-Os dados de rastreamento e relatórios se baseiam exclusivamente no uso do próprio player de vídeo da Dynamic Media e da predefinição associada do player de vídeo. Dessa forma, não é possível rastrear e relatar vídeos que são reproduzidos por meio de outros players de vídeo.
+Os dados de rastreamento e relatórios são baseados exclusivamente no uso do próprio player de vídeo do Dynamic Media e da predefinição associada do player de vídeo. Dessa forma, não é possível rastrear e relatar vídeos que são reproduzidos por meio de outros players de vídeo.
 
 Por padrão, na primeira vez que você digita Relatórios de vídeo, o relatório exibe os dados de vídeo que começam no primeiro dia do mês atual e terminam com a data do mês atual. No entanto, você pode substituir o intervalo de datas padrão especificando seu próprio intervalo de datas. Na próxima vez que você inserir os Relatórios de vídeo, o intervalo de datas especificado será usado.
 
-Para que os relatórios de vídeo funcionem corretamente, uma ID de conjunto de relatórios é criada automaticamente quando os Cloud Service Dynamic Media são configurados. Ao mesmo tempo, a ID do conjunto de relatórios é encaminhada para o servidor de publicação para que esteja disponível para o recurso Copiar URL quando você pré-visualização ativos. No entanto, isso requer que o servidor de publicação já esteja configurado. Se o servidor de publicação não estiver configurado, você ainda poderá publicar para ver o relatório de vídeo, no entanto, será necessário retornar à Configuração da Dynamic Media Cloud e tocar em **[!UICONTROL OK]**.
+Para que os relatórios de vídeo funcionem corretamente, uma ID de conjunto de relatórios é criada automaticamente quando o Dynamic Media Cloud Services é configurado. Ao mesmo tempo, a ID do conjunto de relatórios é encaminhada para o servidor de publicação para que esteja disponível para o recurso Copiar URL quando você pré-visualização ativos. No entanto, isso requer que o servidor de publicação já esteja configurado. Se o servidor de publicação não estiver configurado, você ainda poderá publicar para ver o relatório de vídeo, no entanto, será necessário retornar à Configuração da Dynamic Media Cloud e tocar em **[!UICONTROL OK]**.
 
 Para visualização de relatórios de vídeo:
 
@@ -982,13 +982,13 @@ Especifique o intervalo de datas de início e término para o qual deseja obter 
 
 1. Na tabela que lista os vídeos publicados principais, toque no nome de um vídeo para reproduzir o vídeo e também veja o relatório de retenção de audiência (suspenso) do vídeo.
 
-### Exibição de relatórios de vídeo com base em um visualizador de vídeo criado usando o SDK do visualizador Scene7 HMTL5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Exibição de relatórios de vídeo com base em um visualizador de vídeo criado usando o SDK do visualizador do Scene7 HMTL5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Se você estiver usando um visualizador de vídeo predefinido fornecido pela Dynamic Media, ou se tiver criado uma predefinição de visualizador personalizado com base em um visualizador de vídeo predefinido, não serão necessárias mais etapas para visualização de relatórios de vídeo. Entretanto, se você tiver criado seu próprio visualizador de vídeo com base no Scene7 HTML5 Viewer SDK, use as seguintes etapas para garantir que o visualizador de vídeo esteja enviando eventos de rastreamento para o Dynamic Media Video Reports.
+Se você estiver usando um visualizador de vídeo pronto para uso fornecido pelo Dynamic Media, ou se tiver criado uma predefinição de visualizador personalizado com base em um visualizador de vídeo pronto para uso, nenhuma etapa adicional será necessária para visualização de relatórios de vídeo. Entretanto, se você tiver criado seu próprio visualizador de vídeo com base no SDK do visualizador HTML5 da Scene7, use as seguintes etapas para garantir que o visualizador de vídeo esteja enviando eventos de rastreamento para os Relatórios de vídeo do Dynamic Media.
 
-Use a Referência dos visualizadores do Scene7 e o Scene7 HTML5 Viewers SDK para criar seus próprios visualizadores de vídeo.
+Use a Referência de visualizadores do Scene7 e o SDK de visualizadores do Scene7 HTML5 para criar seus próprios visualizadores de vídeo.
 
-Consulte Guia [de referência do](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)Scene7 Viewers.
+Consulte Guia [de referência dos visualizadores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)Scene7.
 
 <!-- 
 
@@ -1000,7 +1000,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 -->
 
-Para visualização de relatórios de vídeo com base em um visualizador de vídeo criado usando o SDK do visualizador HTML5 Scene7:
+Para visualização de relatórios de vídeo com base em um visualizador de vídeo criado usando o Scene7 HTML5 Viewer SDK:
 
 1. Navegue até qualquer ativo de vídeo publicado.
 1. Próximo ao canto superior esquerdo da página do ativo, na lista suspensa, selecione **[!UICONTROL Visualizadores]**.
@@ -1009,7 +1009,7 @@ Para visualização de relatórios de vídeo com base em um visualizador de víd
 
    `videoViewer.setParam("config2", "<value>");`
 
-   O `config2` parâmetro ativa o rastreamento em Visualizadores HTML5. Também é uma predefinição específica da empresa que contém as informações de configuração para o Relatórios Vídeo e para configurações do Analytics específicas do cliente.
+   O `config2` parâmetro ativa o rastreamento em Visualizadores HTML5. Também é uma predefinição específica da empresa que contém as informações de configuração para o Relatórios Vídeo e para configurações do Adobe Analytics específicas do cliente.
 
    O valor correto do parâmetro config2 é encontrado tanto no **[!UICONTROL Código incorporado]** quanto na função de cópia **[UICONTROL URL]**. No URL do comando de cópia **[UICONTROL URL]**, procure pelo parâmetro `&config2=<value>`. O valor é quase sempre `companypreset`, mas em algumas instâncias também pode ser `companypreset-1`, `companypreset-2` e assim por diante.
 
@@ -1047,7 +1047,7 @@ para anexar o componente ao trackingManager. Para rastrear vários visualizadore
       ```
    O objeto appMeasurementBridge tem uma função de rastreamento integrada. No entanto, você pode fornecer seu próprio suporte para vários sistemas de rastreamento ou outras funcionalidades.
 
-   Para obter mais informações, consulte *Uso do componente* TrackingManager no Guia *do usuário SDK do* Scene7 HTML5 Viewer disponível para download no [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+   Para obter mais informações, consulte *Uso do componente* TrackingManager no Guia *do usuário do SDK do* Scene7 HTML5 Viewer disponível para download no [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
 ## Adicionar legendas ao vídeo {#adding-captions-to-video}
 
@@ -1058,9 +1058,9 @@ A legendagem também permite maior acessibilidade ao usar legendagem para pessoa
 >[!NOTE]
 O player de vídeo que você usa deve suportar a exibição de legendas.
 
-A Dynamic Media tem a capacidade de converter arquivos de legenda em formato JSON (JavaScript Object Notation). Essa conversão significa que você pode incorporar o texto JSON em uma página da Web como uma transcrição oculta, mas completa, do vídeo. Os mecanismos de pesquisa podem rastrear e indexar o conteúdo para tornar os vídeos mais facilmente detectáveis e fornecer aos clientes detalhes adicionais sobre o conteúdo do vídeo.
+O Dynamic Media tem a capacidade de converter arquivos de legenda em formato JSON (JavaScript Object Notation). Essa conversão significa que você pode incorporar o texto JSON em uma página da Web como uma transcrição oculta, mas completa, do vídeo. Os mecanismos de pesquisa podem rastrear e indexar o conteúdo para tornar os vídeos mais facilmente detectáveis e fornecer aos clientes detalhes adicionais sobre o conteúdo do vídeo.
 
-Consulte [Servindo conteúdo](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) estático (não imagem) na Ajuda *da API de disponibilização de imagem do* Scene7 para obter mais informações sobre como usar a função JSON em um URL.
+Consulte [Servindo conteúdo](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) estático (não imagem) na Ajuda *da API de disponibilização de imagens da* Scene7 para obter mais informações sobre como usar a função JSON em um URL.
 
 **Para adicionar legendas ou legendas ao vídeo**
 
@@ -1076,7 +1076,7 @@ Consulte [Servindo conteúdo](https://docs.adobe.com/content/help/en/dynamic-med
 
    Para obter melhores resultados, use a ferramenta no Internet Explorer 9 ou superior, Google Chrome ou Safari.
 
-   Na ferramenta, no campo **[!UICONTROL Inserir URL do arquivo de vídeo]**, cole o URL copiado do arquivo de vídeo e clique em **[!UICONTROL Carregar**. Consulte [Obter um URL de um ativo](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) para obter o URL para o próprio arquivo de vídeo, o qual você pode colar no campo **[!UICONTROL Inserir URL]** do arquivo de vídeo. O Internet Explorer, o Chrome ou o Safari podem reproduzir nativamente o vídeo.
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. Consulte [Obter um URL de um ativo](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) para obter o URL para o próprio arquivo de vídeo, o qual você pode colar no campo **[!UICONTROL Inserir URL]** do arquivo de vídeo. O Internet Explorer, o Chrome ou o Safari podem reproduzir nativamente o vídeo.
 
    Siga as instruções na tela do site para criar e salvar seu arquivo WebVTT. Quando terminar, copie o conteúdo do arquivo de legenda e cole-o em um editor de texto simples e salve-o com uma extensão de nome de arquivo .vtt.
 
@@ -1085,7 +1085,7 @@ Consulte [Servindo conteúdo](https://docs.adobe.com/content/help/en/dynamic-med
 
    Geralmente, você deseja nomear o arquivo VTT da legenda com o mesmo nome do arquivo de vídeo e anexá-lo à localidade do idioma, como -EN, ou -FR, ou -DE e assim por diante. Ao fazer isso, ele pode ajudá-lo a automatizar a geração de URLs de vídeo usando seu sistema de gestão de conteúdo da Web existente.
 
-1. No AEM, carregue seu arquivo de legenda WebVTT no DAM.
+1. Em AEM, carregue seu arquivo de legenda WebVTT no DAM.
 1. Navegue até o ativo de vídeo *publicado* que você deseja associar ao arquivo de legenda que você carregou.
 
    Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez.
@@ -1111,9 +1111,9 @@ Consulte [Servindo conteúdo](https://docs.adobe.com/content/help/en/dynamic-med
 Você pode facilitar a visualização e navegação de seus vídeos de formulário longos adicionando marcadores de capítulo a vídeos únicos ou a Conjuntos de vídeos adaptáveis. Quando um usuário reproduz o vídeo, ele pode clicar nos marcadores de capítulo na linha do tempo do vídeo (também conhecido como depurador de vídeo) para navegar facilmente até seu ponto de interesse ou imediatamente pular para novo conteúdo, demonstrações, tutoriais e assim por diante.
 
 >[!NOTE]
-O player de vídeo usado deve suportar o uso de marcadores de capítulo. Os players de vídeo Dynamic Media oferecem suporte a marcadores de capítulo, mas o uso de players de vídeo de terceiros pode não oferecer suporte.
+O player de vídeo usado deve suportar o uso de marcadores de capítulo. Os players de vídeo do Dynamic Media são compatíveis com marcadores de capítulo, mas o uso de players de vídeo de terceiros pode não ser compatível.
 
-Se desejar, você pode criar e marcar seu próprio visualizador de vídeo personalizado com capítulos em vez de usar uma predefinição do visualizador de vídeo. Para obter instruções sobre como criar seu próprio visualizador HTML5 com navegação de capítulo, no guia do Adobe Scene7 Viewer SDK para HTML5, consulte o cabeçalho &quot;Personalizando comportamento usando modificadores&quot; nas classes `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. O SDK do Adobe Scene7 Viewer está disponível como download no [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+Se desejar, você pode criar e marcar seu próprio visualizador de vídeo personalizado com capítulos em vez de usar uma predefinição do visualizador de vídeo. Para obter instruções sobre como criar seu próprio visualizador HTML5 com navegação de capítulo, no guia do Adobe Scene7 Viewer SDK para HTML5, consulte o cabeçalho &quot;Personalizando comportamento usando modificadores&quot; nas classes `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. O Adobe Scene7 Viewer SDK está disponível como download do [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
 Você cria uma lista de capítulo para o seu vídeo da mesma forma que cria legendas. Ou seja, você cria um arquivo WebVTT. Observe, no entanto, que esse arquivo deve ser separado de qualquer arquivo de legenda WebVTT que você também esteja usando; não é possível combinar legendas e capítulos em um arquivo WebVTT.
 
@@ -1148,7 +1148,7 @@ Consulte [WebVTT: O formato de Rastreamento de texto de vídeo da Web](https://d
 1. Salve o arquivo .vtt na codificação UTF8 para evitar problemas com renderização de caracteres no texto do título do capítulo.
 
    Geralmente, você deseja nomear o arquivo VTT do capítulo com o mesmo nome do arquivo de vídeo e anexá-lo aos capítulos. Ao fazer isso, ele pode ajudá-lo a automatizar a geração de URLs de vídeo usando seu sistema de gestão de conteúdo da Web existente.
-1. No AEM, carregue seu arquivo de capítulo WebVTT.
+1. Em AEM, carregue seu arquivo de capítulo WebVTT.
 
    Consulte [Upload de ativos](/help/assets/manage-digital-assets.md#uploading-assets).
 
