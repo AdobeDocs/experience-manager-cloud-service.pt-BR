@@ -2,10 +2,10 @@
 title: Visualizar ativos
 description: Saiba como pré-visualização ativos no Dynamic Media
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 4%
+source-wordcount: '1213'
+ht-degree: 3%
 
 ---
 
@@ -29,7 +29,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
 
 **Para pré-visualização de ativos**
 
-1. No **[!UICONTROL Adobe Experience Manager**, na página **[!UICONTROL Navegação**, toque em **[!UICONTROL Ativos]** e em **[!UICONTROL Arquivos]** para acessar os ativos.
+1. From **[!UICONTROL Adobe Experience Manager]**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
 1. (Opcional) Use a coluna **[!UICONTROL Tipo]** para classificar os ativos pelo tipo que deseja pré-visualização.
 1. Na coluna **[!UICONTROL Título]** , clique no nome do título (não na imagem em miniatura) do ativo que deseja pré-visualização.
@@ -57,7 +57,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <li><p><strong>Rode sua câmera</strong> 3D - Orbite sua visualização em torno da cena 3D e dos objetos.</p> Rato: Clique com o botão esquerdo + Arraste. </p> Tela sensível ao toque: Pressione + Arraste.</p></li>
       <li><p><strong>Deslocar sua câmera</strong> - Desloce sua visualização para a esquerda, direita, para cima e para baixo.</p> Rato: Clique com o botão direito do mouse + Arraste. </p> Tela sensível ao toque: Pressione com dois dedos + Arraste.</p></li>
       <li><p><strong>Zoom na sua câmera</strong> - Zoom na câmera para mover para dentro e para fora de áreas na cena 3D.</p> Rato: Roda de rolagem. </p> Tela sensível ao toque: Dedo apertado.</p></li>
-      <li><p><strong>Recenter your camera</strong> - Faça a órbita de sua visualização em torno da cena 3D e dos objetos.</p> Rato: Duplo-clique. </p> Tela sensível ao toque: Toque em Duplo.</li></ul></td>
+      <li><p><strong>Recenter your camera</strong> - Faça a órbita de sua visualização em torno da cena 3D e dos objetos.</p> Rato: Duplo-clique. </p> Tela sensível ao toque: Toque em duplo.</li></ul></td>
       </tr>
       <tr>
       <td><p>Imagem</p> </td>
