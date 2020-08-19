@@ -2,9 +2,9 @@
 title: Entenda seus resultados de teste - Cloud Services
 description: Entenda os resultados do teste - Cloud Services
 translation-type: tm+mt
-source-git-commit: bf0ecdfa4685d7ce9b26266e19af71199dd117a4
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1702'
 ht-degree: 3%
 
 ---
@@ -169,6 +169,25 @@ Por exemplo, uma classe chamada `com.myco.tests.aem.ExampleIT` seria executada, 
 
 As classes de teste precisam ser testes JUnit normais. A infraestrutura de teste é projetada e configurada para ser compatível com as convenções usadas pela biblioteca de testes aem-testing-customers. Os desenvolvedores são fortemente incentivados a usar essa biblioteca e seguir suas práticas recomendadas. Consulte [Git Link](https://github.com/adobe/aem-testing-clients) para obter mais detalhes.
 
+#### Execução de teste local {#local-test-execution}
+
+Como as classes de teste são testes JUnit, elas podem ser executadas a partir de Java IDEs comuns como Eclipse, IntelliJ, NetBeans e assim por diante.
+
+No entanto, ao executar esses testes, será necessário definir uma variedade de propriedades do sistema esperadas pelos aem-testing-customers (e os clientes de teste Sling subjacentes).
+
+As propriedades do sistema são as seguintes:
+
+* `sling.it.instances - should be set to 2`
+* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
+* `sling.it.instance.runmode.1 - should be set to author`
+* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
+* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
+* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
+* `sling.it.instance.runmode.2 - should be set to publish`
+* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
+* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
+
 ## Teste de auditoria de conteúdo {#content-audit-testing}
 
 A auditoria de conteúdo é um recurso disponível nos pipelines de produção do Cloud Manager que é acionado pelo Lighthouse, uma ferramenta de código aberto do Google. Esse recurso é ativado em todos os pipelines de produção do Cloud Manager.
@@ -215,22 +234,4 @@ Ao analisar qualquer um dos testes, é possível visualizar uma pontuação mais
 Clicar nos detalhes de qualquer página individual fornecerá informações sobre os elementos da página que foram avaliados e orientações para corrigir problemas se as oportunidades de aprimoramento forem detectadas. Os detalhes dos testes e as orientações associadas são fornecidos pelo Google Lighthouse.
 
 ![](assets/page-level-scores.png)
-
-## Execução de teste local {#local-test-execution}
-
-Como as classes de teste são testes JUnit, elas podem ser executadas a partir de Java IDEs comuns como Eclipse, IntelliJ, NetBeans e assim por diante.
-
-No entanto, ao executar esses testes necessariamente, será necessário definir uma variedade de propriedades do sistema esperadas pelos aem-testing-customers (e os clientes de teste Sling subjacentes).
-
-As propriedades do sistema são as seguintes:
-
-* `sling.it.instances - should be set to 2`
-* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
-* `sling.it.instance.runmode.1 - should be set to author`
-* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
-* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
-* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
-* `sling.it.instance.runmode.2 - should be set to publish`
-* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
-* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
 
