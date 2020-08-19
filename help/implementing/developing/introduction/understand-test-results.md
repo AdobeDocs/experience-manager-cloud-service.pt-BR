@@ -2,9 +2,9 @@
 title: Entenda seus resultados de teste - Cloud Services
 description: Entenda os resultados do teste - Cloud Services
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1700'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,13 @@ Esses testes podem ser:
 
 ## Teste de qualidade de código {#code-quality-testing}
 
-Como parte do pipeline, o código fonte é verificado para garantir que as implantações atendam a determinados critérios de qualidade. Atualmente, esta ação é implementada através de uma combinação de SonarQube e exame de nível de pacote de conteúdo utilizando OakPAL. Há mais de 100 regras que combinam regras genéricas do Java e regras específicas do AEM. A tabela a seguir resume a classificação dos critérios de teste:
+Esta etapa avalia a qualidade do código do aplicativo. É o objetivo principal de um gasoduto de qualidade-código e é executado imediatamente após a etapa de construção em todos os gasodutos de não-produção e de produção.
+
+Consulte [Configuração do seu pipeline](/help/implementing/cloud-manager/configure-pipeline.md) CI-CD para saber mais sobre diferentes tipos de pipeline.
+
+Em Teste de qualidade de código, o código fonte é verificado para garantir que as implantações atendam a determinados critérios de qualidade. Atualmente, esta ação é implementada através de uma combinação de SonarQube e exame de nível de pacote de conteúdo utilizando OakPAL. Há mais de 100 regras que combinam regras genéricas do Java e regras específicas do AEM. Algumas das regras específicas do AEM são criadas com base nas práticas recomendadas AEM engenharia e são chamadas de Regras [de qualidade de código](/help/implementing/cloud-manager/custom-code-quality-rules.md)personalizado.
+
+Os resultados desta etapa são fornecidos como *Classificação*. A tabela abaixo resume as classificações de vários critérios de teste:
 
 | Nome | Definição | Categoria | Limite de falha |
 |--- |--- |--- |--- |
@@ -46,11 +52,12 @@ Como parte do pipeline, o código fonte é verificado para garantir que as impla
 | Compatibilidade com Cloud Service | Número de problemas de compatibilidade de Cloud Service identificados. | Informações | > 0 |
 
 
+Você pode fazer download da lista de regras aqui [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
+
 >[!NOTE]
 >
 >Consulte Definições [de](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) métricas para obter definições mais detalhadas.
 
-Você pode fazer download da lista de regras aqui [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
