@@ -2,10 +2,10 @@
 title: Implantar seu código - Cloud Services
 description: Implantar seu código - Cloud Services
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 3%
+source-wordcount: '984'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 ## Implantação de código com o Cloud Manager {#deploying-code-with-cloud-manager}
 
-Depois de configurar o **Pipeline** (repositório, ambiente e ambiente de teste), você estará pronto para implantar seu código.
+Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
 
 1. Clique em **Implantar** no Gerenciador de nuvem para start do processo de implantação.
 
