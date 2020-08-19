@@ -2,9 +2,9 @@
 title: Implantar seu código - Cloud Services
 description: Implantar seu código - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '983'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ Quando o Cloud Manager é implantado em topologias que não sejam de produção,
 
    1. O backup das configurações atuais é feito e copiado para um local temporário
    1. Todas as configurações são excluídas, exceto os arquivos imutáveis. Consulte Gerenciar configurações do Dispatcher para obter mais detalhes. Isso limpa os diretórios para garantir que nenhum arquivo órfão seja deixado para trás.
-   1. O artefato é extraído para o diretório httpd.  Arquivos imutáveis não são substituídos. Quaisquer alterações feitas em arquivos imutáveis no repositório git serão ignoradas no momento da implantação.  Esses arquivos são fundamentais para a estrutura do despachante do AMS e não podem ser alterados.
+   1. O artefato é extraído para o `httpd` diretório.  Arquivos imutáveis não são substituídos. Quaisquer alterações feitas em arquivos imutáveis no repositório git serão ignoradas no momento da implantação.  Esses arquivos são fundamentais para a estrutura do despachante do AMS e não podem ser alterados.
    1. O Apache realiza um teste de configuração. Se nenhum erro for encontrado, o serviço será recarregado. Se ocorrer um erro, as configurações serão restauradas a partir do backup, o serviço será recarregado e o erro será reportado de volta ao Cloud Manager.
    1. Cada caminho especificado na configuração do pipeline é invalidado ou liberado do cache do dispatcher.
 
