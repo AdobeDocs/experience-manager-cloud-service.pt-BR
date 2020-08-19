@@ -2,7 +2,7 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
+source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
    >[!NOTE]
    > As páginas configuradas serão enviadas ao serviço e avaliadas de acordo com os testes de desempenho, acessibilidade, SEO (Search Engine Otimization), práticas recomendadas e PWA (Progressive Web App).
 
-   Consulte [Entendendo os resultados](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) da auditoria de conteúdo para obter mais detalhes.
+   Consulte [Entendendo os resultados](/help/implementing/cloud-manager/content-audit-testing.md) da auditoria de conteúdo para obter mais detalhes.
 
    Clique em **Adicionar nova substituição** de página para fornecer um caminho de URL a ser incluído na Auditoria de conteúdo. Depois de adicionar o caminho, clique em **Salvar**.
 
