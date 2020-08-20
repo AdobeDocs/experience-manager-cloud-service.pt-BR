@@ -2,28 +2,40 @@
 title: Teste de qualidade de código - Cloud Services
 description: Teste de qualidade de código - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 3%
+source-wordcount: '831'
+ht-degree: 2%
 
 ---
 
 
 # Teste de qualidade de código {#code-quality-testing}
 
-O teste de qualidade de código avalia a qualidade do código do aplicativo. É o objetivo principal de um gasoduto de qualidade-código apenas e é executado imediatamente após a etapa de construção em todos os gasodutos de não produção e de produção.
+O teste de qualidade de código avalia a qualidade do código do aplicativo. É o objetivo principal de um gasoduto de qualidade-código e é executado imediatamente após a etapa de construção em todos os gasodutos de não-produção e de produção.
 
 Consulte [Configuração do seu pipeline](/help/implementing/cloud-manager/configure-pipeline.md) CI-CD para saber mais sobre diferentes tipos de pipeline.
 
-## Noções básicas sobre regras de qualidade de código personalizadas {#understanding-code-quality-rules}
+## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
 Em Teste de qualidade de código, o código fonte é verificado para garantir que ele atenda a determinados critérios de qualidade. Atualmente, esta ação é implementada através de uma combinação de SonarQube e exame de nível de pacote de conteúdo utilizando OakPAL. Há mais de 100 regras que combinam regras genéricas do Java e regras específicas do AEM. Algumas das regras específicas do AEM são criadas com base nas práticas recomendadas AEM engenharia e são chamadas de Regras [de qualidade de código](/help/implementing/cloud-manager/custom-code-quality-rules.md)personalizado.
 
 >[!NOTE]
 >Você pode baixar a lista completa de regras [aqui](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
-Os resultados desta etapa são fornecidos como *Classificação*. A tabela a seguir resume a classificação dos critérios de teste:
+**Porta de três níveis**
+
+Há uma estrutura em três níveis nesta etapa de teste de qualidade de código para os problemas identificados:
+
+* **Crítico**: Estes são problemas identificados pela porta que causam uma falha imediata do pipeline.
+
+* **Importante**: Esses são problemas identificados pela porta que fazem com que o pipeline entre em um estado de pausa. Um gerente de implantação, gerente de projeto ou proprietário de negócios pode substituir os problemas, caso em que o pipeline continua, ou pode aceitar os problemas, caso em que o pipeline pára com uma falha.
+
+* **Informações**: Trata-se de questões identificadas pela porta, que são fornecidas apenas para fins informativos e não têm impacto na execução do gasoduto
+
+Os resultados desta etapa são fornecidos como *Classificações*.
+
+A tabela a seguir resume as classificações e os limiares de falha para cada uma das categorias Críticas, Importantes e de Informações:
 
 | Nome | Definição | Categoria | Limite de falha |
 |--- |--- |--- |--- |
