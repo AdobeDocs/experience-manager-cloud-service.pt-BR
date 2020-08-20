@@ -3,7 +3,7 @@ title: Configurar e usar os microserviços de ativos para processamento de ativo
 description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
+source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
 workflow-type: tm+mt
 source-wordcount: '2537'
 ht-degree: 1%
