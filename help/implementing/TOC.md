@@ -3,9 +3,9 @@ sub-product: Implementação do AEM as a Cloud Service
 user-guide-title: Implementação do AEM as a Cloud Service
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '245'
 ht-degree: 96%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 96%
    + Noções básicas dos resultados de teste {#test-results}
       + [Visão geral](/help/implementing/cloud-manager/overview-test-results.md)
       + [Teste de qualidade de código](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [Regras de qualidade do código personalizado](cloud-manager/custom-code-quality-rules.md)
       + [Teste funcional](/help/implementing/cloud-manager/functional-testing.md)
       + [Teste de auditoria de conteúdo](/help/implementing/cloud-manager/content-audit-testing.md)
-   + [Noções básicas sobre regras de qualidade de código personalizadas](cloud-manager/custom-code-quality-rules.md)
    + [Acesso e gerenciamento de registros](cloud-manager/manage-logs.md)
    + [Noções básicas das notificações](cloud-manager/notifications.md)
 + Gerenciamento do código {#managing-code}
@@ -40,7 +40,7 @@ ht-degree: 96%
    + [Uso de adaptadores Sling](developing/introduction/sling-adapters.md)
    + [Uso do Sling Resource Merger no AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
    + [Sobreposições no AEM as a Cloud Service](developing/introduction/overlays.md)
-   + [Registro](developing/introduction/logging.md)
+   + [Logs](developing/introduction/logging.md)
    + [API do AEM as a Cloud Service](https://docs.adobe.com/content/help/pt/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
 + Configuração e extensão do AEM as a Cloud Service {#configuring-and-extending}
    + [Extensão de fragmentos de experiência](developing/extending/experience-fragments.md)
