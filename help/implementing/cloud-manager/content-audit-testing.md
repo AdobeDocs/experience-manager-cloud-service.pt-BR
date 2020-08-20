@@ -2,9 +2,9 @@
 title: Teste de auditoria de conteúdo - Cloud Services
 description: Teste de auditoria de conteúdo - Cloud Services
 translation-type: tm+mt
-source-git-commit: ce25ec1472dc349937fdbd5f7265d4295fe111e8
+source-git-commit: 4c4e0724185695279801c55db1b6874f351805a4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Teste de auditoria de conteúdo {#content-audit-testing}
 
-A auditoria de conteúdo é um recurso disponível nos pipelines de produção do Cloud Manager que é acionado pelo Lighthouse, uma ferramenta de código aberto do Google. Esse recurso é ativado em todos os pipelines de produção do Cloud Manager.
+A auditoria de conteúdo é um recurso disponível nos pipelines de produção do Cloud Manager Sites, uma ferramenta de código aberto do Google. Esse recurso é ativado em todos os pipelines de produção do Cloud Manager.
 
 Ele valida o processo de implantação e ajuda a garantir que as alterações implantadas:
 
