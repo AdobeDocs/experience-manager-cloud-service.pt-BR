@@ -2,15 +2,15 @@
 title: Adicione seus ativos digitais [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
+source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1320'
 ht-degree: 2%
 
 ---
 
 
-# Adicionar ativos digitais ao Adobe Experience Manager {#add-assets-to-experience-manager}
+# Adicionar ativos digitais à Adobe Experience Manager {#add-assets-to-experience-manager}
 
 [!DNL Adobe Experience Manager] enriquece o conteúdo binário dos arquivos digitais carregados com metadados ricos, tags inteligentes, execuções e outros serviços de Gerenciamento de ativos digitais (DAM). É possível carregar vários tipos de arquivos, como imagens, documentos e arquivos de imagem brutos, da pasta local ou de uma unidade de rede para [!DNL Experience Manager Assets].
 
@@ -151,17 +151,17 @@ Para fazer um processamento adicional nos ativos carregados, você pode usar per
 
 Os seguintes perfis estão disponíveis:
 
-* [perfis](metadata-profiles.md) de metadados permitem aplicar propriedades de metadados padrão a ativos carregados nessa pasta
-* [perfis](asset-microservices-configure-and-use.md) de processamento permitem gerar mais execuções do que as possíveis por padrão.
+* [Perfis](metadata-profiles.md) de metadados permitem aplicar propriedades de metadados padrão a ativos carregados nessa pasta
+* [Perfis](asset-microservices-configure-and-use.md) de processamento permitem gerar mais execuções do que as possíveis por padrão.
 
-Além disso, se o Dynamic Media estiver habilitado no seu ambiente:
+Além disso, se o Dynamic Media estiver ativado no seu ambiente:
 
-* [Os perfis](dynamic-media/image-profiles.md) de imagem Dynamic Media permitem aplicar recortes específicos (recorte **** inteligente e recorte de pixels) e configurações de nitidez aos ativos carregados.
-* [Os perfis](dynamic-media/video-profiles.md) Dynamic Media Video permitem aplicar perfis de codificação de vídeo específicos (resolução, formato, parâmetros).
+* [Os perfis](dynamic-media/image-profiles.md) de Imagem de Mídia Dinâmica permitem aplicar recortes específicos (recorte **** inteligente e recorte de pixels) e configurações de nitidez aos ativos carregados.
+* [Os perfis](dynamic-media/video-profiles.md) de vídeo do Dynamic Media permitem aplicar perfis de codificação de vídeo específicos (resolução, formato, parâmetros).
 
 >[!NOTE]
 >
->As operações de recorte da Dynamic Media e outras operações em ativos não são destrutivas, ou seja, elas não alteram o original carregado, mas fornecem parâmetros para o recorte ou a transformação de mídia a ser feita ao entregar os ativos
+>O corte do Dynamic Media e outras operações em ativos não são destrutivas, ou seja, não alteram o original carregado, mas fornecem parâmetros para o corte ou transformação de mídia a ser feito ao entregar os ativos
 
 Para pastas com um perfil de processamento atribuído, o nome do perfil aparece na miniatura na visualização do cartão. Na visualização da lista, o nome do perfil é exibido na coluna Perfil **[!UICONTROL de]** processamento.
 
