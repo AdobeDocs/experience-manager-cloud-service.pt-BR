@@ -3,7 +3,7 @@ title: Perfis de metadados
 description: Saiba mais sobre perfis de metadados para ativos. Saiba como criar um perfil de metadados e aplicá-lo aos ativos da pasta.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 23%
@@ -17,7 +17,7 @@ Um Perfil de Metadados permite aplicar metadados padrão a ativos em uma pasta. 
 
 ## Adicionar um perfil de metadados {#adding-a-metadata-profile}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis]** de metadados e, em seguida, toque em **[!UICONTROL Criar]**.
+1. Toque no logotipo AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis]** de metadados e, em seguida, toque em **[!UICONTROL Criar]**.
 1. Digite um título para o Perfil de Metadados, por exemplo Metadados de amostra, e toque em **[!UICONTROL Enviar]**. O formulário Editar para o Perfil de Metadados é exibido.
 1. Clique em um componente e configure suas propriedades na guia **[!UICONTROL Configurações]** . Por exemplo, clique no componente **[!UICONTROL Descrição]** e edite suas propriedades.
 Edite as seguintes propriedades para o componente **[!UICONTROL Descrição]** :
@@ -25,7 +25,7 @@ Edite as seguintes propriedades para o componente **[!UICONTROL Descrição]** :
    * **[!UICONTROL Rótulo]** do campo - o nome de exibição da propriedade de metadados. É apenas para a referência do usuário.
    * **[!UICONTROL Mapear para propriedade]** - o valor dessa propriedade fornece o caminho/nome relativo para o nó do ativo no qual ele é salvo no repositório. O valor deve sempre ser start `./` porque indica que o caminho está sob o nó do ativo.
 
-      The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Por exemplo, se você especificar . `/jcr:content/metadata/dc:desc` como o nome do **[!UICONTROL Mapa para a propriedade]**, o AEM Assets armazena o valor `dc:desc` no nó de metadados do ativo.
+      The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Por exemplo, se você especificar . `/jcr:content/metadata/dc:desc` como o nome do **[!UICONTROL Mapa para a propriedade]**, a AEM Assets armazena o valor `dc:desc` no nó de metadados do ativo.
 
    * **[!UICONTROL Valor]** padrão - Use essa propriedade para adicionar um valor padrão para o componente de metadados. Por exemplo, se você especificar &quot;Minha descrição&quot;, esse valor será atribuído à propriedade `dc:desc` no nó de metadados do ativo.
 
@@ -89,11 +89,11 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. No painel esquerdo, toque em **[!UICONTROL Ativos]** e navegue até a pasta à qual deseja aplicar um perfil de metadados.
 1. Na pasta, toque ou clique na marca de seleção para selecioná-la e, em seguida, toque ou clique em **Propriedades**.
-1. Selecione a guia **[!UICONTROL Perfis de metadados]**, selecione o perfil no menu suspenso e toque em **Salvar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+1. Selecione a guia **[!UICONTROL Perfis de metadados]**, selecione o perfil no menu suspenso e toque em **[Salvar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
 ### Aplicar um perfil de metadados globalmente {#applying-a-metadata-profile-globally}
 
-Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente para que qualquer conteúdo carregado em ativos AEM em qualquer pasta tenha o perfil selecionado aplicado.
+Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente para que qualquer conteúdo carregado AEM ativos em qualquer pasta tenha o perfil selecionado aplicado.
 
 You can reprocess assets in a folder that already has an existing metadata profile that you later changed. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
@@ -111,7 +111,7 @@ Remova um perfil de metadados a uma pasta do menu **Ferramentas** ou, se estiver
 
 ### Remoção de perfis de metadados de pastas por meio da interface do usuário de Perfis {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Toque ou clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis]** de metadados.
+1. Toque ou clique no logotipo AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis]** de metadados.
 1. Selecione o perfil de metadados que deseja remover de uma pasta ou de várias pastas.
 1. Toque em **[!UICONTROL Remover perfil de metadados das pastas]**, selecione uma ou várias pastas que deseja usar para remover um perfil e toque em **[!UICONTROL Concluído]**.
 
@@ -119,6 +119,6 @@ Remova um perfil de metadados a uma pasta do menu **Ferramentas** ou, se estiver
 
 ### Remoção de perfis de metadados de pastas por meio de Propriedades {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Toque no logotipo do AEM e navegue **[!UICONTROL pelos Ativos]** e, em seguida, até a pasta da qual você deseja remover um perfil de metadados.
+1. Toque no logotipo AEM, navegue **[!UICONTROL pelos Ativos]** e, em seguida, até a pasta da qual você deseja remover um perfil de metadados.
 1. Na pasta, toque na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Propriedades]**.
 1. Selecione a guia **[!UICONTROL Perfis de metadados]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e clique em **[!UICONTROL Salvar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
