@@ -2,9 +2,9 @@
 title: Adição de ativos de Mídia dinâmica a páginas
 description: Como adicionar componentes do Dynamic Media a uma página no AEM
 translation-type: tm+mt
-source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '3124'
+source-wordcount: '3121'
 ht-degree: 32%
 
 ---
@@ -70,7 +70,7 @@ Se nenhum componente do Dynamic Media estiver disponível para adicionar a uma p
 1. Role até ver **[!UICONTROL Dynamic Media]**.
 1. Toque no ícone > à esquerda de **[!UICONTROL Dynamic Media]** para expandir a lista e selecione os componentes de Dynamic Media que deseja ativar.
 
-   ![lista de componentes do Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
+   ![Lista de componentes do Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
 1. Perto do canto superior direito da página Container **[!UICONTROL de]** layout, toque no ícone Concluído (marca de seleção).
 
@@ -189,9 +189,9 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 >
 >Por padrão, o componente de vídeo Mídia dinâmica é adaptável. If you want to make it a fixed size, set it in the component with the **[!UICONTROL Width]** and **[!UICONTROL Height]** in the **[!UICONTROL Advanced]** tab.
 
-* **[!UICONTROL Viewer predefinido**— Selecione uma predefinição existente do visualizador de vídeo no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador.
+* **[!UICONTROL Predefinição]** do visualizador — Selecione uma predefinição existente do visualizador de vídeo no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador.
 
-* **Os modificadores** do [!UICONTROL Viewer—Os modificadores do visualizador assumem a forma de par nome=valor com um &amp; delimitador e permitem que você altere os visualizadores conforme descrito no Guia de Referência do Adobe Viewers. Um exemplo de um modificador do visualizador é `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Modificadores]** do visualizador—Os modificadores do visualizador assumem a forma de par nome=valor com um &amp; delimitador e permitem alterar os visualizadores, conforme descrito no Guia de Referência dos Visualizadores de Adobe. Um exemplo de um modificador do visualizador é `posterimage=img.jpg&caption=text.vtt,1`
 
    Com modificadores do visualizador, você pode, por exemplo, fazer o seguinte:
 
@@ -200,7 +200,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Title**—Altere o título do vídeo.
+* **[!UICONTROL Título]**—Altere o título do vídeo.
 
 * **[!UICONTROL Largura]**—Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
 
@@ -210,7 +210,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
 Use o componente Mídia dinâmica para adicionar ativos de imagem de Recorte inteligente às suas páginas da Web. Ao editar o componente, você pode optar por usar uma predefinição de visualizador de vídeo predefinida para reproduzir o vídeo na página.
 
-Consulte [Usar o Smart Crop com o AEM Assets Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+Consulte [Uso do Smart Crop com o AEM Assets Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 Consulte também Perfis [de](/help/assets/dynamic-media/image-profiles.md)imagem.
 
@@ -331,16 +331,16 @@ Se a predefinição do visualizador que você está procurando não estiver vis�
 
 ### Usar HTTP/2 para delivery de ativos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O Delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
 Consulte Delivery [HTTP2 de conteúdo](/help/assets/dynamic-media/http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
 
 >[!MORELIKETHIS]
 >
->* [Usar o player de vídeo no AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Usar vídeo interativo com o AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Noções básicas sobre o Visualizador de ativos com o AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Usar miniatura de vídeo personalizada com o AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Como entender o gerenciamento de cores com o AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [Usar o ajuste de nitidez de imagem com o AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Uso do reprodutor de vídeo no AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [Uso de vídeo interativo com AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Como entender o Asset Viewer com AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Usando a miniatura de vídeo personalizada com AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Como entender o gerenciamento de cores com AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Usando o ajuste de nitidez de imagem com AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
