@@ -2,9 +2,9 @@
 title: Trabalho com seletores
 description: Selecionar ativos para imagens interativas, vídeo interativo e banners de carrossel
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 18%
 
 ---
@@ -22,7 +22,7 @@ Por exemplo, neste banner de carrossel, você usa o seletor de Produto se estive
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou os mapas de imagem vão, você está usando o seletor. O seletor de Site só funciona se você for um cliente do AEM Sites. O seletor de produtos também exige o AEM Commerce.
+Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou os mapas de imagem vão, você está usando o seletor. O seletor de Site só funciona se você for um cliente da AEM Sites. O seletor de produtos também exige Comércio AEM.
 
 ## Seleção de produtos no Dynamic Media {#selecting-products}
 
@@ -30,7 +30,7 @@ Use o seletor de Produto para escolher um produto quando quiser que um ponto de 
 
 1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
 
-   The Product selector is in the **[!UICONTROL Action Type** area.
+   The Product selector is in the **[!UICONTROL Action Type]** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -42,11 +42,11 @@ Use o seletor de Produto para escolher um produto quando quiser que um ponto de 
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Você pode alterar o local em que o AEM procura dados do produto tocando em **[!UICONTROL Procurar]** e navegando para outra pasta.
+   Você pode alterar o local em que AEM navegar pelos dados do produto tocando em **[!UICONTROL Procurar]** e navegando para outra pasta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Toque em **[!UICONTROL Classificar]** por para alterar se o AEM classifica pelo mais recente para o mais antigo ou pelo mais antigo para o mais recente.
+   Toque em **[!UICONTROL Classificar]** por para alterar se AEM classifica pelo mais recente para o mais antigo ou o mais antigo para o mais recente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ Use o seletor de Produto para escolher um produto quando quiser que um ponto de 
 
 ## Seleção de sites no Dynamic Media {#selecting-sites}
 
-Use o seletor de site para escolher uma página da Web quando quiser que um ponto de acesso ou mapa de imagem vincule-se a uma página da Web gerenciada em sites do AEM.
+Use o seletor de site para escolher uma página da Web quando quiser que um ponto de acesso ou mapa de imagem vincule-se a uma página da Web gerenciada dentro AEM sites.
 
 1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
 
@@ -80,7 +80,7 @@ Use o seletor de site para escolher uma página da Web quando quiser que um pont
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Quando no modo de **[!UICONTROL Pré-visualização]** , se você tocar no ponto de acesso ou no mapa de imagem, você navega até a página do site do AEM especificada.
+1. Quando no modo de **[!UICONTROL Pré-visualização]** , se você tocar no ponto de acesso ou no mapa de imagem, você navega até a página do site AEM especificada.
 
 ## Selecionar ativos no Dynamic Media {#selecting-assets}
 
@@ -97,7 +97,7 @@ Consulte também Seletor [de ativos](/help/assets/search-assets.md#assetselector
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Você pode alterar o local em que o AEM procura ativos navegando até outra pasta no campo **[!UICONTROL Caminho]** .
+   Você pode alterar o local em que AEM procura ativos navegando até outra pasta no campo **[!UICONTROL Caminho]** .
 
    Toque em **[!UICONTROL Coleção]** para pesquisar apenas ativos dentro de coleções.
 
