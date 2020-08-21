@@ -2,7 +2,7 @@
 title: Conjuntos de mídia mista
 description: Saiba como trabalhar com conjuntos de mídia mista no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 28%
@@ -54,7 +54,7 @@ Para iniciá-lo e executá-lo rapidamente com Conjuntos de mídia mista, siga es
 
 1. [Vincule URLs à sua Aplicação web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [Incorpore o visualizador](/help/assets/dynamic-media/embed-code.md)de vídeo ou imagem.
 
-   Os ativos AEM criam chamadas de URL para Conjuntos de mídia mista e as ativam após a publicação dos conjuntos de mídia mista. Você pode copiar esses URLs ao pré-visualização de ativos. Como alternativa, você pode incorporá-los ao seu site.
+   A AEM Assets cria chamadas de URL para Conjuntos de mídia mista e as ativa após a publicação dos conjuntos de mídia mista. Você pode copiar esses URLs ao pré-visualização de ativos. Como alternativa, você pode incorporá-los ao seu site.
 
    Select the Mixed Media Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
 
@@ -74,7 +74,7 @@ Além disso, se você quiser adicionar conjuntos de rotação ou conjuntos de im
 
 ## Criação de conjuntos de mídia mista {#creating-mixed-media-sets}
 
-Você pode adicionar imagens, Conjuntos de imagens, Conjuntos de rotação e vídeos ao seu Conjunto de mídia mista. Verifique se os arquivos, os conjuntos de imagens e os conjuntos de rotação estão prontos para publicação antes de adicioná-los ao Conjunto de Mídia Mista.
+Você pode adicionar imagens, Conjuntos de imagens, Conjuntos de rotação e vídeos ao seu Conjunto de mídias mistas. Verifique se os arquivos, os conjuntos de imagens e os conjuntos de rotação estão prontos para publicação antes de adicioná-los ao Conjunto de Mídia Mista.
 
 Quando você adiciona ativos ao seu conjunto, eles são adicionados automaticamente em ordem alfanumérica. Você pode reordenar ou classificar manualmente os ativos depois de adicionados.
 
@@ -90,7 +90,7 @@ Quando você adiciona ativos ao seu conjunto, eles são adicionados automaticame
 
    >[!NOTE]
    >
-   >Ao criar o conjunto de mídias mistas, você pode alterar a miniatura do conjunto de mídias mistas ou permitir que o AEM selecione a miniatura automaticamente com base nos ativos do conjunto de mídias mistas. Para selecionar uma miniatura, clique em **[!UICONTROL Alterar miniatura]** e selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **[!UICONTROL Switch to Automatic thumbnail]**.
+   >Ao criar o conjunto de mídias mistas, você pode alterar a miniatura do conjunto de mídias mistas ou permitir que AEM selecione a miniatura automaticamente com base nos ativos do conjunto de mídias mistas. Para selecionar uma miniatura, clique em **[!UICONTROL Alterar miniatura]** e selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **[!UICONTROL Switch to Automatic thumbnail]**.
 
 1. Toque no Seletor de ativos para selecionar os ativos que deseja incluir no Conjunto de mídias mistas. Selecione-os e clique em **[!UICONTROL Selecionar]**.
 
@@ -140,35 +140,35 @@ Você pode executar várias tarefas de edição em ativos em Conjuntos de mídia
 
    * Para excluir um ativo - no painel esquerdo, toque em **[!UICONTROL Ativos]** (ícone de imagem) e selecione o ativo. Na barra de ferramentas, toque em **[!UICONTROL Excluir ativo]**.
 
-   * Para classificar os ativos pelo nome em ordem crescente ou decrescente, no painel esquerdo, toque em **[!UICONTROL Ativos]** (ícone de imagem). To the right of the **[!UICONTROL Assets]** heading, tap the up or down caret icons.
+   * Para classificar os ativos pelo nome em ordem crescente ou decrescente, no painel esquerdo, toque em **[!UICONTROL Ativos]** (ícone de imagem). À direita do cabeçalho **[!UICONTROL Ativos]** , toque nos ícones de cursor para cima ou para baixo.
 
       >[!NOTE]
       >
-      >    * To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Passe o cursor sobre o ativo e toque no ícone de marca de seleção para selecioná-lo. Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**.
+      >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Passe o cursor sobre o ativo e toque no ícone de marca de seleção para selecioná-lo. Press **[!UICONTROL Backspace]** on the keyboard, or click **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**.
          >
-         >    
-      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
+         >
+      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **[Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
-1. Tap **[!UICONTROL Save]** when you are done editing.
+1. Toque em **[!UICONTROL Salvar]** quando terminar a edição.
 
    >[!NOTE]
    >
    >* Para editar os ativos em um Conjunto de mídias mistas - Navegue até o Conjunto de mídias mistas. Toque (não selecione) no conjunto para abri-lo na página Visualização do conjunto do AEM. In the left rail, click the down caret to open the drop-down list, then tap **[!UICONTROL Set Members]**. In the Set Members page, hover on an asset, then tap **[!UICONTROL Edit]** (pencil icon) to open the editing page.
       >
       >
-   * Para excluir um conjunto de mídia mista inteiro - A partir de qualquer modo de exibição (como a Exibição de cartão ou em Coluna), navegue até o conjunto de mídias mistas. Hover on the set, then tap **Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete]**.
+   * Para excluir um conjunto de mídia mista inteiro - A partir de qualquer modo de exibição (como a Exibição de cartão ou em Coluna), navegue até o conjunto de mídias mistas. Hover on the set, then tap **[Select]** (checkmark icon). Press **[!UICONTROL Backspace]** on your keyboard, or tap **[!UICONTROL More]** (row of three dots), then tap **[!UICONTROL Delete]**.
 
 
-## Previewing Mixed Media Sets {#previewing-mixed-media-sets}
+## Visualização de conjuntos de mídia mista {#previewing-mixed-media-sets}
 
-See [Previewing Assets](/help/assets/dynamic-media/previewing-assets.md) for details on how to preview Mixed Media Sets.
+Consulte [Visualização de ativos](/help/assets/dynamic-media/previewing-assets.md) para obter detalhes sobre como pré-visualização Conjuntos de mídia mista.
 
-## Publishing Mixed Media Sets {#publishing-mixed-media-sets}
+## Publicação de conjuntos de mídia mista {#publishing-mixed-media-sets}
 
-See [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) for details on how to publish Mixed Media Sets.
+Consulte [Publicação de ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar Conjuntos de mídia mista.
 
 >[!NOTE]
 >
->If the mixed media set does not fully end up in the delivery service the first time you publish it, you may need to publish the mixed media set a second time.
+>Se o conjunto de mídias mistas não terminar totalmente no serviço de delivery na primeira vez que você o publicar, talvez seja necessário publicar o conjunto de mídias mistas uma segunda vez.
 
