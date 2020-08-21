@@ -1,9 +1,9 @@
 ---
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
-translation-type: ht
-source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ Este documento descreve como criar e gerenciar páginas com o Adobe Experience M
 
 >[!NOTE]
 >
->Sua conta precisa de direitos de acesso apropriados e permissões para realizar ações nas páginas, como criar, copiar, mover, editar, excluir.
+>Sua conta precisa de direitos de acesso apropriados  e permissões para realizar ações nas páginas, como criar, copiar, mover, editar, excluir.
 >
 >Caso encontre algum problema, sugerimos que você entre em contato com o administrador do sistema.
 
@@ -382,7 +382,7 @@ No entanto, se o número de páginas afetadas estiver acima de um limite definid
 
          ![Mover página assíncrona](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-O status de trabalhos assíncronos pode ser verificado no painel [**Status de trabalhos assíncronos **](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)em** Navegação global **->** Ferramentas **->** Operações **->** Trabalhos **
+O status de trabalhos assíncronos pode ser verificado no painel [**Status de trabalhos assíncronos** ](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** -> **Ferramentas** -> **Operações** -> **Trabalhos**
 
 >[!NOTE]
 >
