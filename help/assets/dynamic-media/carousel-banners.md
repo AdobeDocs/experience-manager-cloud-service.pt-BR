@@ -2,10 +2,10 @@
 title: Banners em carrossel
 description: Saiba como trabalhar com banners de carrossel no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '4606'
-ht-degree: 5%
+source-wordcount: '4605'
+ht-degree: 4%
 
 ---
 
@@ -36,7 +36,7 @@ Assista a uma caminhada de 10 minutos e 33 segundos sobre [como os banners de ca
 
 >[!NOTE]
 >
->Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do ]**dam.
+>Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** dam.
 
 ## Start rápido: Banners de carrossel {#quick-start-carousel-banners}
 
@@ -44,7 +44,7 @@ Para começar a trabalhar rapidamente:
 
 1. [Identificar as variáveis](#identifying-hotspot-and-image-map-variables) de hotspot e mapa de imagem (somente para clientes que usam AEM Assets + Dynamic Media)
 
-   Start identificando variáveis dinâmicas usadas pela implementação de visualização rápida existente para que você possa inserir os pontos de conexão e os dados do mapa de imagem corretamente durante o processo de criação do banner do carrossel nos ativos AEM.
+   Start identificando variáveis dinâmicas usadas pela implementação de visualização rápida existente para que você possa inserir os pontos de conexão e os dados do mapa de imagem corretamente durante o processo de criação do banner do carrossel no AEM Assets.
 
 <!-- LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
 
@@ -83,21 +83,19 @@ Para começar a trabalhar rapidamente:
 
 1. Faça uma das seguintes opções:
 
-   * [Adicionar um banner de carrossel à página do site
-      ](#adding-a-carousel-banner-to-your-website-page)Você pode adicionar o URL do banner do carrossel ou incorporar o código copiado na página do site.
+   * [Adicione um banner de carrossel à](#adding-a-carousel-banner-to-your-website-page)página do siteVocê pode adicionar o URL do banner de carrossel ou incorporar o código que você copiou na página do site.
 
       * [Integre o banner do carrossel a um Quickview](#integrating-the-carousel-banner-with-an-existing-quickview)existente. Se você estiver usando um sistema de gestão de conteúdo da Web de terceiros, precisará integrar o novo banner do carrossel com a implementação do Quickview existente em seu site.
-   * [Adicionar um banner de carrossel ao seu site no AEM
-      ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)Se você for um cliente do AEM Sites, poderá adicionar o carrossel definido diretamente à página no AEM, usando o componente de Mídia interativa.
+   * [Adicione um banner de carrossel ao seu site no](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)AEMIse você for um cliente da AEM Sites, poderá adicionar o conjunto de carrossel diretamente à página no AEM, usando o componente de Mídia interativa.
 
 
 Se precisar editar Conjuntos de carrossel, consulte [edição de Conjuntos de carrossel.](#editing-carousel-sets) Além disso, você pode visualização e editar as propriedades [do Conjunto de](/help/assets/manage-digital-assets.md#editing-properties)carrossel.
 
 ## Como identificar as variáveis de hotspot e mapa de imagem {#identifying-hotspot-and-image-map-variables}
 
-Start identificando variáveis dinâmicas usadas pela implementação de visualização rápida existente para que você possa inserir os pontos de acesso ou dados do mapa de imagem corretamente durante o processo de criação do conjunto de carrossel nos ativos AEM.
+Start identificando variáveis dinâmicas usadas pela implementação de visualização rápida existente para que você possa digitar os pontos de acesso ou os dados do mapa de imagem corretamente durante o processo de criação do conjunto de carrossel no AEM Assets.
 
-Quando você adiciona pontos de acesso ou mapas de imagem a uma imagem de banner nos ativos AEM, é necessário atribuir um SKU e variáveis adicionais opcionais a cada ponto de acesso ou mapa de imagem. Essas variáveis são usadas posteriormente para corresponder a pontos de acesso ou mapas de imagem com conteúdo de visualização rápida.
+Quando você adiciona pontos de acesso ou mapas de imagem a uma imagem de banner no AEM Assets, é necessário atribuir um SKU e variáveis adicionais opcionais a cada ponto de acesso ou mapa de imagem. Essas variáveis são usadas posteriormente para corresponder a pontos de acesso ou mapas de imagem com conteúdo de visualização rápida.
 
 <!-- LEAVE; COMMERCE BEING ADDED LATER
 
@@ -201,8 +199,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
    * Perto do canto superior esquerdo da página, toque no ícone **[!UICONTROL Adicionar slide]** .
 
    * Próximo ao meio da página, toque em **[!UICONTROL Tocar para abrir o Seletor]** de ativos.
-
-   Toque para selecionar os ativos que deseja incluir ao Conjunto de carrossel. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, toque em **[!UICONTROL Selecionar**.
+   Toque para selecionar os ativos que deseja incluir ao Conjunto de carrossel. Os ativos selecionados têm um ícone de marca de seleção sobre eles. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
    Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar ou clicar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e toque no ícone **[!UICONTROL Filtro]**, na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista]**.
 
@@ -294,7 +291,7 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
          * Consulte [Trabalhar com seletores](/help/assets/dynamic-media/working-with-selectors.md) para obter mais informações.
    * Toque em **[!UICONTROL Hiperlink]**.
 
-      * Se você for um cliente do AEM Sites, toque no ícone Seletor de site (pasta) para navegar até um URL.
+      * Se você for um cliente AEM Sites, toque no ícone Seletor de site (pasta) para navegar até um URL.
          >[!NOTE]
          O método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
 
@@ -306,7 +303,7 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
 
    * Tap **[!UICONTROL Experience Fragment]**.
 
-      * Se você for um cliente do AEM Sites, toque no ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Toque ou clique no Fragmento de experiência que você deseja usar e, em seguida, toque em Selecionar no canto superior direito da página para retornar à página de gerenciamento do Hotspot.
+      * Se você for um cliente AEM Sites, toque no ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Toque ou clique no Fragmento de experiência que você deseja usar e, em seguida, toque em Selecionar no canto superior direito da página para retornar à página de gerenciamento do Hotspot.
 Consulte Fragmentos [de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Especifique a largura e a altura do Fragmento de experiência como ele aparecerá no banner.
@@ -319,7 +316,7 @@ Para contornar isso, você pode usar ou criar predefinições do visualizador qu
    Você também pode pré-visualização como será o banner do carrossel. Consulte [(Opcional) Visualização de banners](#optional-previewing-carousel-banners)de carrossel.
 
 1. Toque em **[!UICONTROL Salvar]**.
-1. Publique o conjunto de carrossel. A publicação cria o código incorporado ou o URL que você pode usar na página do site. Se você for um cliente do AEM Sites, poderá adicionar o conjunto de carrossel diretamente à sua página da Web.
+1. Publique o conjunto de carrossel. A publicação cria o código incorporado ou o URL que você pode usar na página do site. Se você for um cliente da AEM Sites, poderá adicionar o conjunto de carrossel diretamente à sua página da Web.
 
    Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
@@ -381,7 +378,7 @@ Você pode pré-visualização banners de carrossel no Editor de carrossel (mét
 
    ![experience_fragment-carouselbanner-viewerlista suspensa](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Toque em **Pré-visualização]**.
+1. Toque em **[Pré-visualização]**.
 1. Toque nos pontos de acesso ou mapas de imagem na imagem para testar suas ações associadas.
 
 **Para pré-visualização de banners de carrossel da lista Visualizadores**
@@ -406,19 +403,19 @@ Consulte [Publicação de ativos](/help/assets/dynamic-media/publishing-dynamicm
 Depois de fazer upload de imagens de banner para criar um carrossel, adicionar pontos de acesso e/ou mapas de imagem ao banner e publicar o conjunto de carrossel, você estará pronto para adicioná-lo à página existente do site.
 
 >[!NOTE]
-Se você for um cliente do AEM Sites, poderá adicionar o banner do carrossel diretamente à sua página arrastando o componente de Mídia interativa para a página. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se você for um cliente da AEM Sites, poderá adicionar o banner do carrossel diretamente à sua página arrastando o componente de Mídia interativa para a página. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-Entretanto, se você for um cliente independente de ativos AEM, poderá adicionar manualmente o banner do carrossel à landing page do site, conforme descrito nesta seção.
+No entanto, se você for um cliente AEM ativos independentes, poderá adicionar manualmente o banner do carrossel à landing page do site, conforme descrito nesta seção.
 
 1. Copie o código incorporado do conjunto de carrossel publicado.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
 
-1. Adicione o código incorporado que você copiou dos ativos AEM à sua página da Web.
+1. Adicione o código incorporado que você copiou do AEM Assets à sua página da Web.
 O código incorporado copiado é responsivo, portanto, deve ajustar-se automaticamente à área de incorporação da página.
 
 ## Integração do banner do carrossel com uma exibição rápida existente {#integrating-the-carousel-banner-with-an-existing-quickview}
 
-Observação: esta etapa se aplica somente se você for um cliente independente dos ativos AEM.
+Observação: esta etapa se aplica somente se você for um cliente independente da AEM Assets.
 
 A última etapa desse processo é integrar o banner do carrossel a uma implementação de visualização rápida existente em seu site. Toda implementação de visualização rápida é única e é necessária uma abordagem específica que provavelmente envolva a assistência de uma pessoa de TI de front-end.
 
@@ -442,7 +439,7 @@ Nesse manipulador de eventos, o código front-end faz o seguinte:
 * Constrói um URL de visualização rápido com base no ponto de acesso ou nos dados do mapa de imagem.
 * Aciona o processo de carregamento da visualização rápida do backend e renderização na tela para exibição.
 
-O código incorporado retornado pelos ativos AEM já tem um manipulador de eventos pronto para uso no lugar, que é comentado.
+O código incorporado retornado pela AEM Assets já tem um manipulador de eventos pronto para uso no lugar que é comentado.
 
 Portanto, é necessário remover as barras de comentário do código e substituir o corpo do manipulador de simulação pelo código específico da página da Web em particular.
 
