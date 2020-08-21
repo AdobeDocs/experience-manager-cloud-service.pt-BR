@@ -2,10 +2,10 @@
 title: Conjuntos de imagem
 description: Saiba como trabalhar com conjuntos de imagens no Dynamic Media
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '2050'
-ht-degree: 20%
+source-wordcount: '2047'
+ht-degree: 19%
 
 ---
 
@@ -34,7 +34,7 @@ Para começar a trabalhar rapidamente:
 
 1. [Carregue as imagens de origem primária para várias visualizações.](#uploading-assets-in-image-sets)
 
-   Start carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. O AEM Assets suporta muitos formatos de arquivo de imagem, mas são recomendadas imagens TIFF, PNG e EPS sem perdas.
+   Start carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. A AEM Assets oferece suporte a vários formatos de arquivo de imagem, mas são recomendadas imagens TIFF, PNG e EPS sem perdas.
 
 1. [Criar conjuntos de imagens.](#creating-image-sets)
 
@@ -59,7 +59,7 @@ Para começar a trabalhar rapidamente:
    Consulte **[!UICONTROL Ferramentas > Ativos > Predefinições]** do visualizador para criar ou editar predefinições do visualizador.
 
 1. (Opcional) [Visualizando Conjuntos](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) de Imagens que foram criados usando predefinições de conjuntos de lotes.
-1. [Conjuntos de imagens de Pré-visualização.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Conjuntos de imagens de pré-visualização.](/help/assets/dynamic-media/previewing-assets.md)
 
    Selecione o Conjunto de imagens e você pode pré-visualização-lo. Clique nos ícones de miniatura para examinar seu Conjunto de imagens no Visualizador selecionado. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]** , disponível no menu suspenso do painel esquerdo.
 
@@ -69,7 +69,7 @@ Para começar a trabalhar rapidamente:
 
 1. [Vincule URLs à sua Aplicação web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [Incorpore o visualizador](/help/assets/dynamic-media/embed-code.md)de vídeo ou imagem.
 
-   O AEM Assets cria chamadas de URL para Conjuntos de imagens e as ativa após a publicação dos conjuntos de imagens. Você pode copiar esses URLs ao pré-visualização de ativos. Como alternativa, você pode incorporá-los ao seu site.
+   A AEM Assets cria chamadas de URL para Conjuntos de imagens e as ativa depois que você publica os conjuntos de imagens. Você pode copiar esses URLs ao pré-visualização de ativos. Como alternativa, você pode incorporá-los ao seu site.
 
    Selecione o Conjunto de imagens e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores]**.
 
@@ -77,7 +77,7 @@ Para começar a trabalhar rapidamente:
 
 Para editar Conjuntos de imagens, consulte [edição de Conjuntos de imagens.](#editing-image-sets) Além disso, você pode visualização e editar as propriedades [do Conjunto de](/help/assets/manage-digital-assets.md#editing-properties)imagens.
 
-Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos na [Solução de problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
+Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos na [solução de problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
 ## Fazer upload de ativos em conjuntos de imagens {#uploading-assets-in-image-sets}
 
@@ -112,7 +112,7 @@ Você pode criar Conjuntos de imagens pela interface do usuário ou pela API. Es
 >[!NOTE]
 >
 >You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
->**Importante:**os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da ingestão de ativos.
+>**Importante:** os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da ingestão de ativos.
 
 Quando você adiciona ativos ao seu conjunto, eles são adicionados automaticamente em ordem alfanumérica. Você pode reordenar ou classificar manualmente os ativos depois de adicionados.
 
@@ -178,13 +178,13 @@ No entanto, os conjuntos criados usando predefinições de conjuntos de lotes *n
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
-* A partir de uma imagem de membro de qualquer conjunto. Selecione o menu **[!UICONTROL Conjuntos** para exibir os conjuntos dos quais o ativo é membro.
+* A partir de uma imagem de membro de qualquer conjunto. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Na pesquisa, você pode selecionar **[!UICONTROL Filtro**, expandir **[!UICONTROL Dynamic Media** e selecionar **[!UICONTROL Conjuntos]**.
+* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
 
-   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjuntos de lotes. Para conjuntos automatizados, o query de pesquisa é realizado usando critérios de pesquisa &quot;Start com&quot; diferentes da pesquisa do AEM, que é baseada no uso de critérios de pesquisa &quot;Contém&quot;. Definir o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
+   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjuntos de lotes. Para conjuntos automatizados, o query de pesquisa é realizado usando critérios de pesquisa &quot;Start com&quot; diferentes de AEM pesquisa que se baseia no uso de critérios de pesquisa &quot;Contém&quot;. Definir o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -215,13 +215,15 @@ No entanto, os conjuntos criados usando predefinições de conjuntos de lotes *n
    * Para reorganizar ativos, arraste uma imagem para um novo local (selecione o ícone de reordenação para mover itens).
    * Para classificar itens em ordem crescente ou decrescente, clique no cabeçalho da coluna.
    * Para adicionar um ativo ou atualizar um ativo existente, clique em **[!UICONTROL Adicionar ativo]**. Navegue até um ativo, selecione-o e, em seguida, toque em **[!UICONTROL Selecionar]** próximo ao canto superior direito da página.
+
       >[!NOTE]
       >
-      >Se você excluir a imagem que o AEM usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.
+      >Se você excluir a imagem que AEM usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.
    * Para excluir um ativo, selecione-o e toque ou clique em **[!UICONTROL Excluir ativo]**.
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
    * Para adicionar ou alterar uma miniatura, selecione o ícone de miniatura ao lado direito do ativo. Navegue até a nova miniatura ou ativo de amostra, selecione-o e toque em **[!UICONTROL Selecionar]**.
    * Para excluir um conjunto de imagens inteiro, navegue até o conjunto de imagens, selecione-o e toque em **[!UICONTROL Excluir]**.
+
    >[!NOTE]
    >
    >Edite as imagens em um Conjunto de imagens ao navegar até o conjunto, tocar em **[!UICONTROL Definir membros]** no painel à esquerda e tocar no ícone Lápis em um ativo individual para abrir a janela de edição.
