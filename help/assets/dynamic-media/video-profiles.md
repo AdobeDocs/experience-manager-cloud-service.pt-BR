@@ -1,8 +1,8 @@
 ---
 title: Perfis de vídeo do Dynamic Media
-description: A Dynamic Media já vem com um perfil adaptável de codificação de vídeo predefinido. As configurações neste perfil predefinido são otimizadas para oferecer aos clientes a melhor experiência de visualização possível. Você também pode adicionar recorte inteligente aos vídeos.
+description: O Dynamic Media já vem com um perfil Adaptive Video Encoding predefinido. As configurações neste perfil predefinido são otimizadas para oferecer aos clientes a melhor experiência de visualização possível. Você também pode adicionar recorte inteligente aos vídeos.
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '3682'
 ht-degree: 17%
@@ -12,7 +12,7 @@ ht-degree: 17%
 
 # Perfis de vídeo do Dynamic Media{#video-profiles}
 
-A Dynamic Media já vem com um perfil adaptável de codificação de vídeo predefinido. As configurações neste perfil predefinido são otimizadas para oferecer aos clientes a melhor experiência de visualização possível. Quando você codifica seus vídeos de origem primária usando o perfil Adaptive Video Encoding, durante a reprodução o player de vídeo ajusta automaticamente a qualidade do fluxo de vídeo com base na velocidade de conexão com a Internet de seus clientes. Isso é conhecido como streaming adaptável.
+O Dynamic Media já vem com um perfil Adaptive Video Encoding predefinido. As configurações neste perfil predefinido são otimizadas para oferecer aos clientes a melhor experiência de visualização possível. Quando você codifica seus vídeos de origem primária usando o perfil Adaptive Video Encoding, durante a reprodução o player de vídeo ajusta automaticamente a qualidade do fluxo de vídeo com base na velocidade de conexão com a Internet de seus clientes. Isso é conhecido como streaming adaptável.
 
 Estes são outros fatores que determinam a qualidade de seus vídeos:
 
@@ -32,7 +32,7 @@ Consulte também Práticas [recomendadas para organizar seus ativos digitais par
 >
 >Para gerar os metadados de um vídeo e as miniaturas de imagem de vídeo associadas, o próprio vídeo precisa passar pelo processo de codificação no Dynamic Media. No AEM, o fluxo de trabalho **[!UICONTROL Codificação de vídeo do Dynamic Media]** codifica o vídeo se você tiver ativado a mídia dinâmica e configurado os serviços da nuvem de vídeo. Esse fluxo de trabalho captura o histórico do processo de fluxo de trabalho e as informações de falha. Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Se você tiver ativado a mídia dinâmica e configurado os serviços da nuvem de vídeo, o fluxo de trabalho **[!UICONTROL Codificação de vídeo do Dynamic Media]** será aplicado automaticamente ao carregar um vídeo. (Se você não estiver usando mídia dinâmica, o fluxo de trabalho **[!UICONTROL Atualizar ativo do DAM]** entrará em vigor.)
 >
->Os metadados são úteis quando você está procurando ativos. As miniaturas são imagens de vídeo estáticas geradas durante a codificação. Elas são exigidas pelo sistema AEM e usadas na interface do usuário para ajudar a identificar visualmente os vídeos na visualização Cartões, na visualização Resultados da pesquisa e na visualização Lista Ativos. É possível ver as miniaturas geradas ao tocar no ícone Representações (paleta do pintor) de um vídeo codificado.
+>Os metadados são úteis quando você está procurando ativos. As miniaturas são imagens de vídeo estáticas geradas durante a codificação. Eles são exigidos pelo sistema de AEM e usados na interface do usuário para ajudá-lo a identificar visualmente os vídeos na visualização Cartões, na visualização Resultados da pesquisa e na visualização Lista Ativos. É possível ver as miniaturas geradas ao tocar no ícone Representações (paleta do pintor) de um vídeo codificado.
 
 Quando terminar de criar o Perfil Vídeo, aplique-o a uma pasta ou várias pastas. See [Applying a Video Profile to folders.](#applying-a-video-profile-to-folders)
 
@@ -91,7 +91,7 @@ A tabela a seguir identifica perfis de codificação de práticas recomendadas p
 
 ## Sobre o uso do recorte inteligente em Perfis de vídeo {#about-smart-crop-video}
 
-Recorte inteligente para vídeo e recurso opcional disponível em Perfis de vídeo - é uma ferramenta que usa o poder da inteligência artificial no Adobe Sensei para detectar e recortar automaticamente o ponto focal em qualquer vídeo adaptável ou progressivo que você tenha carregado, independentemente do tamanho.
+Recorte inteligente para vídeo e recurso opcional disponível em Perfis de vídeo - é uma ferramenta que usa o poder da inteligência artificial no Adobe Sensei para detectar e recortar automaticamente o ponto focal em qualquer vídeo adaptável ou vídeo progressivo que você tenha carregado, independentemente do tamanho.
 
 Os formatos de vídeo suportados para recorte inteligente incluem MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -101,7 +101,7 @@ O tamanho máximo de arquivo de vídeo compatível para o recorte inteligente é
 * 30 quadros por segundo (FPS).
 * 300 MB de tamanho de arquivo.
 
-Observe que o Adobe Sensei está atualmente limitado a 9000 quadros. Ou seja, cinco minutos a 30 QPS. Se o vídeo tiver um FPS maior, a duração máxima do vídeo compatível diminuirá. Por exemplo, um vídeo de 60 FPS deve demorar dois minutos e meio para ser suportado pelo Adobe Sensai e recorte inteligente.
+Observe que o Adobe Sensei está atualmente limitado a 9000 quadros. Ou seja, cinco minutos a 30 QPS. Se o vídeo tiver um FPS maior, a duração máxima do vídeo compatível diminuirá. Por exemplo, um vídeo de 60 FPS deve ter dois minutos e meio para ser suportado pelo Adobe Sensai e recorte inteligente.
 
 ![Recorte inteligente para vídeo](assets/smart-crop-video.png)
 
@@ -123,7 +123,7 @@ Consulte também Recorte [inteligente para imagens](image-profiles.md).
 
 ## Criação de um Perfil de vídeo para streaming adaptável {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-A Dynamic Media já vem com um perfil adaptável de codificação de vídeo predefinido - um grupo de configurações de upload de vídeo para MP4 H.264 - que é otimizado para a melhor experiência de visualização. Você pode usar esse perfil ao carregar seus vídeos.
+O Dynamic Media já vem com um perfil Adaptive Video Encoding predefinido - um grupo de configurações de upload de vídeo para MP4 H.264 - que é otimizado para a melhor experiência de visualização. Você pode usar esse perfil ao carregar seus vídeos.
 
 No entanto, se esse perfil predefinido não atender às suas necessidades, você pode optar por criar seu próprio perfil adaptável de codificação de vídeo. Ao usar a configuração **[!UICONTROL Codificar para streaming]** adaptável - como prática recomendada - todas as predefinições de codificação adicionadas ao perfil são validadas para garantir que todos os vídeos tenham a mesma proporção. Além disso, os vídeos codificados são tratados como uma taxa de bits múltipla definida para streaming.
 
@@ -309,7 +309,7 @@ Você pode editar um perfil de codificação de vídeo existente para aproveitar
 
 Você pode editar qualquer Perfil de vídeo criado para adicionar, editar ou excluir predefinições de vídeo dentro desse perfil.
 
-Por padrão, não é possível editar o perfil predefinido e pronto para uso da codificação **[!UICONTROL de vídeo]** adaptável que veio com o Dynamic Media. Em vez disso, você pode copiar facilmente o perfil e salvá-lo com um novo nome. Em seguida, é possível editar as predefinições desejadas no perfil copiado.
+Por padrão, não é possível editar o perfil predefinido e predefinido de codificação **[!UICONTROL de vídeo]** adaptável que veio com o Dynamic Media. Em vez disso, você pode copiar facilmente o perfil e salvá-lo com um novo nome. Em seguida, é possível editar as predefinições desejadas no perfil copiado.
 
 Consulte também Práticas [recomendadas para codificação](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)de vídeo.
 
@@ -337,7 +337,7 @@ Toque no ícone de informações para obter uma descrição da transmissão adap
 1. Na página Perfil de codificação de vídeo, digite um novo nome para o perfil.
 1. Como prática recomendada, verifique se a caixa de seleção **[!UICONTROL Codificar para transmissão adaptável]** está selecionada. Toque no ícone de informações para obter uma descrição da transmissão adaptável. (Se você estiver copiando um Perfil de vídeo progressivo, não marque a caixa de seleção.)
 
-   No Dynamic Media - Modo híbrido, se uma predefinição de vídeo WebM fizer parte do Perfil Vídeo, então a opção **[!UICONTROL Codificar para transmissão]** adaptável não é possível porque todas as predefinições devem ser MP4.
+   No modo Dynamic Media - Híbrido, se uma predefinição de vídeo WebM fizer parte do Perfil Vídeo, então a opção **[!UICONTROL Codificar para transmissão]** adaptável não é possível porque todas as predefinições devem ser MP4.
 1. No cabeçalho Predefinições de codificação de vídeo, adicione, edite ou exclua predefinições de codificação de vídeo que compõem o perfil.
 
    Toque no ícone de informações ao lado de cada opção nas guias Básico e Avançado para obter as configurações e descrições recomendadas.
@@ -382,7 +382,7 @@ Você pode [monitorar o progresso de um trabalho](#monitoring-the-progress-of-an
 
 #### Aplicar um Perfil de vídeo a pastas a partir de Propriedades {#applying-video-profiles-to-folders-from-properties}
 
-1. Toque ou clique no logotipo do AEM e navegue até **[!UICONTROL Assets]** e, em seguida, para a pasta à qual deseja aplicar um Perfil de vídeo.
+1. Toque ou clique no logotipo AEM e navegue até **[!UICONTROL Assets]** e, em seguida, para a pasta à qual deseja aplicar um Perfil de vídeo.
 1. Na pasta, toque na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Propriedades]**.
 1. Selecione a guia **[!UICONTROL Perfis de vídeo]**, selecione o perfil no menu suspenso e clique em **[!UICONTROL Salvar e fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
@@ -390,7 +390,7 @@ Você pode [monitorar o progresso de um trabalho](#monitoring-the-progress-of-an
 
 ### Aplicar um Perfil de vídeo globalmente {#applying-a-video-profile-globally}
 
-Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente para que qualquer conteúdo carregado em ativos AEM em qualquer pasta tenha o perfil selecionado aplicado.
+Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente para que qualquer conteúdo carregado AEM ativos em qualquer pasta tenha o perfil selecionado aplicado.
 
 Consulte também [Reprocessar ativos em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
@@ -405,7 +405,7 @@ Consulte também [Reprocessar ativos em uma pasta](/help/assets/dynamic-media/ab
 
 Um indicador de processamento (ou barra de progresso) é exibido para que você possa monitorar visualmente o progresso de um trabalho de processamento de Perfil de vídeo.
 
-Você também pode visualização o `error.log` arquivo para monitorar o progresso de um trabalho de codificação, para ver se a codificação foi concluída ou para ver quaisquer erros de trabalho. O `error.log` está localizado na `logs` pasta onde sua instância do AEM está instalada.
+Você também pode visualização o `error.log` arquivo para monitorar o progresso de um trabalho de codificação, para ver se a codificação foi concluída ou para ver quaisquer erros de trabalho. O `error.log` está localizado na `logs` pasta onde a instância do AEM está instalada.
 
 ## Remoção de um Perfil de vídeo de pastas {#removing-a-video-profile-from-folders}
 
@@ -423,7 +423,7 @@ You can remove a Video Profile from a folder from within the **[!UICONTROL Tools
 
 ### Remoção de um Perfil de vídeo de pastas por meio de Propriedades {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. Toque ou clique no logotipo do AEM e navegue até **[!UICONTROL Assets]** e, em seguida, para a pasta da qual deseja remover um Perfil de vídeo.
-1. Na pasta, toque ou clique na marca de seleção para selecioná-la e, em seguida, toque ou clique em **Propriedades]**.
+1. Toque ou clique no logotipo AEM e navegue até **[!UICONTROL Assets]** e, em seguida, para a pasta da qual deseja remover um Perfil de vídeo.
+1. Na pasta, toque ou clique na marca de seleção para selecioná-la e, em seguida, toque ou clique em **[Propriedades]**.
 1. Selecione a guia **[!UICONTROL Perfis de vídeo]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e clique em **[!UICONTROL Salvar e fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
