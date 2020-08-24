@@ -1,19 +1,19 @@
 ---
-title: Regras de qualidade de código personalizado - Serviços em nuvem
-description: Regras de qualidade de código personalizado - Serviços em nuvem
+title: Regras de qualidade de código personalizado - Cloud Services
+description: Regras de qualidade de código personalizado - Cloud Services
 translation-type: tm+mt
-source-git-commit: f2fa2adeec74bfa687ed59d3e0847e6246028040
+source-git-commit: 437652f9ed5d0fc4abae22e470b650bd1c2bedb6
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2253'
 ht-degree: 6%
 
 ---
 
 
-# Noções básicas das regras de qualidade do código personalizado {#custom-code-quality-rules}
+# Regras de qualidade do código personalizado {#custom-code-quality-rules}
 
 
-Esta página descreve as regras de qualidade de código personalizadas executadas pelo Cloud Manager criadas com base nas práticas recomendadas da engenharia do AEM.
+Esta página descreve as regras de qualidade de código personalizadas executadas pelo Cloud Manager criadas com base nas práticas recomendadas da AEM Engineering.
 
 >[!NOTE]
 >
@@ -196,7 +196,7 @@ A API do AEM contém interfaces e classes do Java que devem ser usadas, mas não
 
 Quando novos métodos são adicionados a essas interfaces, esses métodos adicionais não afetam o código existente que usa essas interfaces e, como resultado, a adição de novos métodos a essas interfaces é considerada compatível com versões anteriores. No entanto, se o código personalizado ***implementa*** uma dessas interfaces, ele apresenta um risco de compatibilidade com versões anteriores para o cliente.
 
-As interfaces (e classes) que só devem ser implementadas pelo AEM são anotadas com *org.osgi.annotation.versioning.ProviderType* (ou, em alguns casos, uma anotação herdada similar *aQute.bnd.annotation.ProviderType*). Essa regra identifica os casos em que tal interface é implementada (ou uma classe é estendida) pelo código personalizado.
+As interfaces (e classes) que só devem ser implementadas por AEM são anotadas com *org.osgi.annotation.versioning.ProviderType* (ou, em alguns casos, uma anotação herdada similar *aQute.bnd.annotation.ProviderType*). Essa regra identifica os casos em que tal interface é implementada (ou uma classe é estendida) pelo código personalizado.
 
 #### Código não compatível {#non-compliant-code-3}
 
@@ -350,7 +350,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### Evite fazer logon em INFO ao manipular solicitações GET ou HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Evite o registro em INFO ao manipular solicitações de GET ou HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Chave**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
@@ -358,7 +358,7 @@ public void doThis() throws Exception {
 
 **Gravidade**: Menor
 
-Em geral, o nível de log INFO deve ser usado para demarcar ações importantes e, por padrão, o AEM está configurado para fazer logon no nível INFO ou acima. Os métodos GET e HEAD só devem ser operações somente leitura e, portanto, não constituem ações importantes. O registro no nível INFO em resposta às solicitações GET ou HEAD provavelmente criará um ruído significativo no registro, dificultando a identificação de informações úteis em arquivos de registro. O registro ao lidar com solicitações GET ou HEAD deve estar nos níveis de WARN ou ERROR quando algo deu errado ou nos níveis de DEBUG ou TRACE se informações mais detalhadas sobre solução de problemas forem úteis.
+Em geral, o nível de log INFO deve ser usado para demarcar ações importantes e, por padrão, AEM configurado para fazer logon no nível INFO ou acima. Os métodos de GET e de HEAD só devem ser operações só de leitura e, por conseguinte, não constituem ações importantes. É provável que o registro no nível INFO em resposta a solicitações de GET ou HEAD crie um ruído significativo no registro, dificultando a identificação de informações úteis em arquivos de registro. O registro ao lidar com solicitações de GET ou HEAD deve estar nos níveis de WARN ou ERROR quando algo deu errado ou nos níveis de DEBUG ou TRACE se informações mais detalhadas sobre solução de problemas forem úteis.
 
 >[!CAUTION]
 >
@@ -462,7 +462,7 @@ public void doThis() {
 
 **Desde**: Versão 2018.4.0
 
-Como mencionado, o contexto é crítico ao entender as mensagens de log. O uso de Exception.printStackTrace() faz com que **somente** o rastreamento da pilha seja enviado para o fluxo de erro padrão, perdendo todo o contexto. Além disso, em um aplicativo de vários processos, como o AEM, se várias exceções forem impressas usando esse método em paralelo, seus traços de pilha podem se sobrepor, o que gera confusão significativa. As exceções devem ser registradas somente pela estrutura de registro.
+Como mencionado, o contexto é crítico ao entender as mensagens de log. O uso de Exception.printStackTrace() faz com que **somente** o rastreamento da pilha seja enviado para o fluxo de erro padrão, perdendo todo o contexto. Além disso, em um aplicativo de vários processos, como AEM se várias exceções forem impressas usando esse método em paralelo, seus traços de pilha podem se sobrepor, o que gera confusão significativa. As exceções devem ser registradas somente pela estrutura de registro.
 
 #### Código não compatível {#non-compliant-code-11}
 
@@ -498,7 +498,7 @@ public void doThis() {
 
 **Desde**: Versão 2018.4.0
 
-O logon no AEM deve ser sempre feito por meio da estrutura de registro (SLF4J). A saída diretamente para a saída padrão ou fluxos de erro padrão perde as informações estruturais e contextuais fornecidas pela estrutura de registro e pode, em alguns casos, causar problemas de desempenho.
+O logon do AEM deve ser sempre feito por meio da estrutura de registro (SLF4J). A saída diretamente para a saída padrão ou fluxos de erro padrão perde as informações estruturais e contextuais fornecidas pela estrutura de registro e pode, em alguns casos, causar problemas de desempenho.
 
 #### Código não compatível {#non-compliant-code-12}
 
@@ -566,7 +566,7 @@ O Scheduler Sling não deve ser usado para tarefas que exigem uma execução gar
 
 Consulte [Apache Sling Event e Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para saber mais sobre como os Sling Jobs são tratados em ambientes agrupados.
 
-### APIs obsoletas do AEM não devem ser usadas {#sonarqube-aem-deprecated}
+### AEM APIs obsoletas não devem ser usadas {#sonarqube-aem-deprecated}
 
 **Chave**: AMSCORE-553
 
@@ -576,18 +576,18 @@ Consulte [Apache Sling Event e Job Handling](https://sling.apache.org/documentat
 
 **Desde**: Versão 2020.5.0
 
-A superfície da API do AEM está sob revisão constante para identificar APIs para as quais o uso é desencorajado e, portanto, considerado obsoleto.
+A superfície da API AEM está em revisão constante para identificar APIs para as quais o uso é desencorajado e, portanto, considerado obsoleto.
 
 Em muitos casos, essas APIs são descontinuadas com o uso da anotação padrão Java *@obsoleta* e, como tal, como identificado pela `squid:CallToDeprecatedMethod`.
 
-No entanto, há casos em que uma API está obsoleta no contexto do AEM, mas pode não estar obsoleta em outros contextos. Essa regra identifica essa segunda classe.
+No entanto, há casos em que uma API é obsoleta no contexto de AEM, mas pode não ser obsoleta em outros contextos. Essa regra identifica essa segunda classe.
 
 ## Regras de conteúdo OakPAL {#oakpal-rules}
 
 Encontre abaixo as verificações do OakPAL executadas pelo Cloud Manager.
 
 >[!NOTE]
->O OakPAL é uma estrutura desenvolvida por um parceiro AEM (e vencedor do AEM Rockstar North America 2019) que valida pacotes de conteúdo usando um repositório Oak independente.
+>OakPAL é uma estrutura desenvolvida por um parceiro AEM (e vencedor de 2019 AEM Rockstar North America) que valida pacotes de conteúdo usando um repositório Oak independente.
 
 ### Os pacotes do cliente não devem criar ou modificar nós em /libs {#oakpal-customer-package}
 
@@ -599,7 +599,7 @@ Encontre abaixo as verificações do OakPAL executadas pelo Cloud Manager.
 
 **Desde**: Versão 2019.6.0
 
-É uma prática recomendada antiga que a árvore de conteúdo /libs no repositório de conteúdo do AEM seja considerada somente leitura pelos clientes. Modificar nós e propriedades em */libs* cria um risco significativo para atualizações principais e secundárias. As modificações em */libs* só devem ser feitas pela Adobe por meio de canais oficiais.
+É uma prática recomendada antiga que a árvore de conteúdo /libs no repositório de conteúdo AEM seja considerada somente leitura pelos clientes. Modificar nós e propriedades em */libs* cria um risco significativo para atualizações principais e secundárias. As modificações a */libs* só devem ser efetuadas por Adobe através de canais oficiais.
 
 ### Os pacotes não devem conter configurações OSGi de Duplicado {#oakpal-package-osgi}
 
@@ -642,7 +642,7 @@ Um problema comum que ocorre em projetos complexos é onde o mesmo componente OS
 
 **Desde**: Versão 2019.6.0
 
-Por motivos de segurança, os caminhos que contêm */config/ e /install/* só podem ser lidos por usuários administrativos no AEM e devem ser usados apenas para configuração do OSGi e pacotes OSGi. Colocar outros tipos de conteúdo em caminhos que contêm esses segmentos resulta em comportamento de aplicativo que varia involuntariamente entre usuários administrativos e não administrativos.
+Por motivos de segurança, os caminhos que contêm */config/ e /install/* só podem ser lidos por usuários administrativos no AEM e devem ser usados apenas para configuração OSGi e pacotes OSGi. Colocar outros tipos de conteúdo em caminhos que contêm esses segmentos resulta em comportamento de aplicativo que varia involuntariamente entre usuários administrativos e não administrativos.
 
 Um problema comum é o uso de nós nomeados `config` nas caixas de diálogo do componente ou ao especificar a configuração do editor de rich text para edição em linha. Para resolver isso, o nó que está causando a ofensa deve ser renomeado para um nome compatível. Para a configuração do editor de Rich Text, use a `configPath` propriedade no `cq:inplaceEditing` nó para especificar o novo local.
 
@@ -675,7 +675,7 @@ Um problema comum é o uso de nós nomeados `config` nas caixas de diálogo do c
 
 **Desde**: Versão 2019.6.0
 
-Semelhante aos *pacotes não devem conter configurações* OSGi de Duplicado, esse é um problema comum em projetos complexos nos quais o mesmo caminho de nó é gravado por vários pacotes de conteúdo separados. Embora seja possível usar dependências de pacote de conteúdo para garantir um resultado consistente, é melhor evitar sobreposições completamente.
+Semelhante aos *pacotes não devem conter configurações* OSGi do Duplicado, esse é um problema comum em projetos complexos nos quais o mesmo caminho de nó é gravado por vários pacotes de conteúdo separados. Embora seja possível usar dependências de pacote de conteúdo para garantir um resultado consistente, é melhor evitar sobreposições completamente.
 
 ### O modo de criação padrão não deve ser a interface clássica {#oakpal-default-authoring}
 
@@ -699,13 +699,13 @@ A configuração do OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` d
 
 **Desde**: Versão 2020.5.0
 
-Os componentes do AEM que têm uma caixa de diálogo de interface clássica devem sempre ter uma caixa de diálogo de interface de usuário de toque correspondente para fornecer uma experiência de criação ideal e para serem compatíveis com o modelo de implantação do Serviço de nuvem, onde a interface de usuário clássica não é suportada. Essa regra verifica os seguintes cenários:
+AEM Os componentes que têm uma caixa de diálogo de interface clássica devem ter sempre uma caixa de diálogo de interface de usuário de toque correspondente, tanto para fornecer uma experiência de criação ideal quanto para serem compatíveis com o modelo de implantação de Cloud Service, onde a interface de usuário clássica não é suportada. Essa regra verifica os seguintes cenários:
 
 * Um componente com uma caixa de diálogo Interface clássica (ou seja, um nó filho da caixa de diálogo) deve ter uma caixa de diálogo Interface do usuário de toque correspondente (ou seja, um nó `cq:dialog` filho).
 * Um componente com uma caixa de diálogo de design da interface clássica (ou seja, um nó design_dialog) deve ter uma caixa de diálogo de design da interface do usuário de toque correspondente (ou seja, um nó `cq:design_dialog` filho).
 * Um componente com uma caixa de diálogo de design de interface clássica e uma caixa de diálogo de design de interface clássica deve ter uma caixa de diálogo de interface de toque correspondente e uma caixa de diálogo de design de interface de toque correspondente.
 
-A documentação das Ferramentas de modernização do AEM fornece documentação e ferramentas para como converter componentes da interface clássica para a interface de usuário de toque. Consulte [as Ferramentas](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) de modernização do AEM para obter mais detalhes.
+A documentação das Ferramentas de modernização AEM fornece documentação e ferramentas para converter componentes da interface clássica para a interface de usuário de toque. Consulte [as Ferramentas](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) de Modernização AEM para obter mais detalhes.
 
 ### Os pacotes não devem misturar conteúdo mutável e imutável {#oakpal-packages-immutable}
 
@@ -717,9 +717,9 @@ A documentação das Ferramentas de modernização do AEM fornece documentação
 
 **Desde**: Versão 2020.5.0
 
-Para serem compatíveis com o modelo de implantação do serviço em nuvem, os pacotes de conteúdo individuais devem conter conteúdo para as áreas imutáveis do repositório (ou seja, não devem ser modificados pelo código do cliente e causarão uma violação separada) ou a área mutável (ou seja, tudo o mais), mas não ambos. `/apps and /libs, although /libs` Por exemplo, um pacote que inclui ambos não `/apps/myco/components/text and /etc/clientlibs/myco` é compatível com o serviço em nuvem e fará com que um problema seja relatado.
+Para serem compatíveis com o modelo de implantação do Cloud Service, os pacotes de conteúdo individuais devem conter conteúdo para as áreas imutáveis do repositório (ou seja, não devem ser modificados pelo código do cliente e causarão uma violação separada) ou a área silenciosa (ou seja, tudo o mais), mas não ambos. `/apps and /libs, although /libs` Por exemplo, um pacote que inclui ambos `/apps/myco/components/text and /etc/clientlibs/myco` não é compatível com o Cloud Service e fará com que um problema seja relatado.
 
-Consulte a Estrutura [do projeto do](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM para obter mais detalhes.
+Refer to [AEM Project Structure](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html) for more details.
 
 ### Os Agentes De Replicação Reversa Não Devem Ser Utilizados {#oakpal-reverse-replication}
 
@@ -731,7 +731,7 @@ Consulte a Estrutura [do projeto do](https://docs.adobe.com/content/help/en/expe
 
 **Desde**: Versão 2020.5.0
 
-O suporte para Replicação reversa não está disponível nas implantações do Serviço em nuvem, conforme descrito nas Notas de [versão: Remoção dos agentes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)de replicação.
+O suporte para replicação reversa não está disponível em implantações de Cloud Service, conforme descrito nas Notas de [versão: Remoção dos agentes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)de replicação.
 
 Os clientes que usam replicação reversa devem entrar em contato com a Adobe para obter soluções alternativas.
 
