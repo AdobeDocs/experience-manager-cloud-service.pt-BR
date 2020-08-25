@@ -1,42 +1,42 @@
 ---
-title: Integração de AEM e Magento usando o Commerce Integration Framework
-description: Integração de AEM e Magento usando o Commerce Integration Framework
-translation-type: tm+mt
+title: Integração do AEM e da Magento usando a Commerce Integration Framework
+description: Integração do AEM e da Magento usando a Commerce Integration Framework
+translation-type: ht
 source-git-commit: 48805b21500ff3f2629efd6aecb40bb1cdc38cd6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '347'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# AEM and Magento Integration using Commerce Integration Framework {#aem-magento-framework}
+# Integração do AEM e da Magento usando a Commerce Integration Framework {#aem-magento-framework}
 
-AEM e Magento são perfeitamente integrados usando o Commerce Integration Framework (CIF). O CIF permite que AEM acesse uma instância de Magento e comunique-se com o Magento via GraphQL. Ele também permite que os AEM Author usem Seletores de produtos e Categorias e o Console de produtos para navegar pelos dados de produtos e categorias obtidos por demanda do Magento. Além disso, o CIF fornece uma vitrine pronta para uso que pode acelerar projetos de comércio.
+O AEM e a Magento se integram perfeitamente usando a Commerce Integration Framework (CIF). A CIF permite que o AEM acesse uma instância da Magento e estabeleça uma comunicação via GraphQL. Ela também permite que os autores do AEM usem seletores de produtos e categorias e o console de produtos para navegar pelos dados de produto e categoria obtidos da Magento sob demanda. Além disso, a CIF fornece uma loja pronta para uso que agiliza projetos de comércio.
 
 ## Visão geral da arquitetura {#overview}
 
-A arquitetura geral é a seguinte:
+Esta é a arquitetura geral:
 
-![Visão geral da arquitetura CIF](../assets/AEM_Magento_Architecture.JPG)
+![Visão geral da arquitetura da CIF](../assets/AEM_Magento_Architecture.JPG)
 
-CIF baseia-se no suporte ao GraphQL. O principal canal de comunicação entre AEM e Magento é a API API Magento [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/) do. Há diferentes maneiras de configurar a comunicação entre AEM como Cloud Service e Magento, consulte a página [Introdução](../getting-started.md) para obter detalhes.
+A CIF tem como base o suporte para GraphQL. O principal canal de comunicação entre o AEM e a Magento é a [API GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) da Magento. Há diferentes maneiras de configurar a comunicação entre o AEM as a Cloud Service e a Magento. Consulte a página [Introdução](../getting-started.md) para obter detalhes.
 
-Dentro do CIF há suporte para padrões de comunicação do lado do servidor e do cliente.
-As chamadas de APIs do lado do servidor são implementadas usando o cliente [GraphQL](https://github.com/adobe/commerce-cif-graphql-client) integrado e genérico em combinação com um [conjunto de modelos](https://github.com/adobe/commerce-cif-magento-graphql) de dados gerados para o schema GraphQL do Magento. Além disso, qualquer query ou mutação GraphQL no formato GQL pode ser usado.
+A CIF oferece suporte para padrões de comunicação do lado do servidor e do lado do cliente.
+As chamadas de API do lado do servidor são implementadas usando o [cliente GraphQL](https://github.com/adobe/commerce-cif-graphql-client) integrado e genérico junto com um [conjunto de modelos de dados gerados](https://github.com/adobe/commerce-cif-magento-graphql) para o esquema GraphQL da Magento. Além disso, podem ser usados qualquer consulta ou mutação GraphQL no formato GQL.
 
-Para os componentes do cliente, que são criados usando o [React](https://reactjs.org/), o [Apollo Client](https://www.apollographql.com/docs/react/) é usado.
+Para os componentes do lado do cliente, que são criados usando o [React](https://reactjs.org/), o [cliente Apollo](https://www.apollographql.com/docs/react/) é usado.
 
-## Arquitetura de componentes principais AEM CIF {#cif-core-components}
+## Arquitetura dos Componentes principais da CIF do AEM {#cif-core-components}
 
-![Arquitetura de componentes principais AEM CIF](../assets/cif-component-architecture.jpg)
+![Arquitetura dos Componentes principais da CIF do AEM](../assets/cif-component-architecture.jpg)
 
-[AEM CIF Componentes](https://github.com/adobe/aem-core-cif-components) principais seguem padrões de design e práticas recomendadas muito semelhantes aos [AEM componentes](https://github.com/adobe/aem-core-wcm-components)principais do WCM.
+Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) seguem padrões de design e práticas recomendadas muito semelhantes aos dos [Componentes principais do WCM no AEM](https://github.com/adobe/aem-core-wcm-components).
 
-A lógica comercial e a comunicação de backend com o Magento para os componentes principais AEM CIF são implementadas nos Modelos Sling. Caso seja necessário personalizar essa lógica para atender aos requisitos específicos do projeto, o Padrão de delegação para Modelos Sling pode ser usado.
+A lógica de negócios e a comunicação de back-end com a Magento para os Componentes principais da CIF do AEM são implementadas nos Modelos do Sling. Caso seja necessário personalizar essa lógica para atender aos requisitos específicos do projeto, o padrão de delegação para Modelos do Sling pode ser usado.
 
 >[!TIP]
 >
->A página [Personalizar AEM componentes](../customizing/customize-cif-components.md) principais CIF contém um exemplo detalhado e uma prática recomendada de como personalizar os componentes principais CIF.
+>A página [Personalizar os Componentes principais da CIF do AEM](../customizing/customize-cif-components.md) tem um exemplo detalhado e oferece as práticas recomendadas para personalizar os componentes principais da CIF.
 
-Em projetos, AEM componentes principais CIF e componentes de projeto personalizados podem recuperar facilmente o cliente configurado para uma loja de Magento associados a uma página AEM por meio da configuração Sling Context-Aware.
+Nos projetos, os Componentes principais da CIF do AEM e os componentes do projeto personalizado podem recuperar facilmente o cliente configurado para uma loja da Magento associada a uma página do AEM por meio da configuração com reconhecimento de contexto do Sling.
