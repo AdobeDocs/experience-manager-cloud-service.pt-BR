@@ -2,9 +2,9 @@
 title: Personalização e extensão de fragmentos de conteúdo
 description: Um fragmento de conteúdo estende um ativo padrão.
 translation-type: tm+mt
-source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
+source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 3%
 
 ---
@@ -12,11 +12,15 @@ ht-degree: 3%
 
 # Personalização e extensão de fragmentos de conteúdo{#customizing-and-extending-content-fragments}
 
-Em Adobe Experience Manager como um fragmento de conteúdo Cloud Service a estende um ativo padrão; consulte:
+No Adobe Experience Manager como Cloud Service, um fragmento de conteúdo estende um ativo padrão; consulte:
 
 * [Criação e gerenciamento de fragmentos](/help/assets/content-fragments/content-fragments.md) de conteúdo e criação de [páginas com fragmentos](/help/sites-cloud/authoring/fundamentals/content-fragments.md) de conteúdo para obter mais informações sobre fragmentos de conteúdo.
 
-* [Gerenciamento de ativos](/help/assets/manage-digital-assets.md) e [personalização e extensão do Editor](/help/assets/extend-asset-editor.md) de ativos para obter mais informações sobre ativos padrão.
+* [Gerenciamento de ativos](/help/assets/manage-digital-assets.md) para obter mais informações sobre ativos padrão.
+
+<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
+* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
+-->
 
 ## Arquitetura {#architecture}
 
@@ -43,7 +47,7 @@ Os Fragmentos de conteúdo individuais têm por base os Modelos de fragmento de 
 
 ### Integração de sites com ativos {#integration-of-sites-with-assets}
 
-O Gerenciamento de fragmentos de conteúdo (CFM) faz parte dos AEM Assets como:
+O Gerenciamento de fragmentos de conteúdo (CFM) faz parte do AEM Assets como:
 
 * Fragmentos de conteúdo são ativos.
 * Eles usam a funcionalidade Ativos existente.
@@ -97,9 +101,9 @@ Para integrar com o núcleo Ativos:
 
 >[!CAUTION]
 >
->O componente Fragmento [do conteúdo faz parte dos Componentes](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/content-fragment-component.html)principais. Consulte [Desenvolvimento de componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) principais para obter mais detalhes.
+>O componente Fragmento [do conteúdo faz parte dos Componentes](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html)principais. Consulte [Desenvolvimento de componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) principais para obter mais detalhes.
 
-Os fragmentos de conteúdo podem ser referenciados em páginas AEM, assim como qualquer outro tipo de ativo. O AEM fornece o componente **[principal do Fragmento](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/content-fragment-component.html)**de conteúdo - um[componente que permite incluir fragmentos de conteúdo em suas páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Você também pode estender esse componente principal do Fragmento**[](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** de conteúdo.
+Os fragmentos de conteúdo podem ser referenciados AEM páginas, assim como qualquer outro tipo de ativo. AEM fornece o componente **[principal do Fragmento](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html)** de conteúdo - um [componente que permite incluir fragmentos de conteúdo em suas páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Você também pode estender esse componente principal do Fragmento **[](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** de conteúdo.
 
 * O componente usa a `fragmentPath` propriedade para fazer referência ao fragmento de conteúdo real. A `fragmentPath` propriedade é tratada da mesma forma que as propriedades semelhantes de outros tipos de ativos; por exemplo, quando o fragmento de conteúdo é movido para outro local.
 
@@ -123,7 +127,7 @@ Os fragmentos de conteúdo podem ser referenciados em páginas AEM, assim como q
 >
 >Quando um fragmento de conteúdo é usado em uma página, o modelo de fragmento de conteúdo no qual ele se baseia é referenciado.
 >
->Isso significa que, se o modelo não tiver sido publicado no momento em que você publicar a página, ele será sinalizado e o modelo será adicionado aos recursos a serem publicados com a página.
+>Isso significa que, se o modelo não tiver sido publicado no momento em que você publicar a página, ele será sinalizado e o modelo adicionado aos recursos a serem publicados com a página.
 
 ### Integração com outros quadros {#integration-with-other-frameworks}
 
@@ -131,7 +135,7 @@ Os fragmentos de conteúdo podem ser integrados com:
 
 * **Traduções**
 
-   Fragmentos de conteúdo são totalmente integrados ao fluxo de trabalho de tradução do AEM. Em nível arquitetônico, isso significa:
+   Fragmentos de conteúdo são totalmente integrados ao fluxo de trabalho de tradução AEM. Em nível arquitetônico, isso significa:
 
    * As traduções individuais de um fragmento de conteúdo são, na verdade, fragmentos separados; por exemplo:
 
@@ -145,7 +149,7 @@ Os fragmentos de conteúdo podem ser integrados com:
    * Além dos caminhos baseados em regras, não há mais conexão entre as diferentes versões linguísticas de um fragmento de conteúdo; são manipulados como dois fragmentos separados, embora a interface do usuário forneça os meios de navegação entre as variantes de idioma.
    >[!NOTE]
    >
-   >O fluxo de trabalho de tradução do AEM funciona com `/content`:
+   >O fluxo de trabalho de tradução AEM funciona com `/content`:
    >
    >* Como os modelos de fragmento de conteúdo residem em `/conf`, eles não são incluídos nessas traduções. Você pode internacionalizar as strings da interface do usuário.
 
@@ -186,16 +190,16 @@ As três interfaces a seguir podem servir como pontos de entrada:
    * Acessar metadados
    * Elementos de acesso:
 
-      * Elementos de Lista
+      * Elementos de lista
       * Obter elementos por nome
       * Criar novos elementos (consulte [Avisos](#caveats))
 
       * Dados do elemento de acesso (consulte `ContentElement`)
-   * variações de Lista definidas para o fragmento
+   * variações de lista definidas para o fragmento
    * Criar novas variações globalmente
    * Gerenciar conteúdo associado:
 
-      * Coleções de Lista
+      * Coleções de lista
       * Adicionar coleções
       * Remover coleções
    * Acessar o modelo do fragmento
@@ -208,7 +212,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
       * Obter/definir conteúdo
       * Variações de acesso de um elemento:
 
-         * variações de Lista
+         * variações de lista
          * Obter variações por nome
          * Criar novas variações (consulte [Avisos](#caveats))
          * Remover variações (consulte [Avisos](#caveats))
@@ -223,7 +227,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
    Todas as três interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation``Versionable` ) estendem a interface, que adiciona recursos de controle de versão, necessários para fragmentos de conteúdo:
 
    * Criar nova versão do elemento
-   * Versões de Lista do elemento
+   * Versões de lista do elemento
    * Obter o conteúdo de uma versão específica do elemento com versão
 
 
@@ -284,11 +288,11 @@ Consulte o link a seguir:
 >
 >Considere estas informações de fundo. Você não deve mudar nada aqui (pois está marcado como uma área ** privada no repositório), mas isso pode ajudar em alguns casos a entender como as coisas funcionam debaixo do capô.
 
-A edição de um fragmento de conteúdo, que pode abranger várias visualizações (= páginas HTML), é atômica. Como esses recursos atômicos de edição de várias visualizações não são um conceito típico do AEM, os fragmentos de conteúdo usam o que é chamado de sessão *de* edição.
+A edição de um fragmento de conteúdo, que pode abranger várias visualizações (= páginas HTML), é atômica. Como esses recursos de edição de várias visualizações atômicas não são um conceito típico de AEM, os fragmentos de conteúdo usam o que é chamado de sessão *de* edição.
 
 Uma sessão de edição é iniciada quando o usuário abre um fragmento de conteúdo no editor. A sessão de edição é concluída quando o usuário sai do editor selecionando **Salvar** ou **Cancelar**.
 
-Tecnicamente, todas as edições são feitas em conteúdo *ativo* , assim como em todas as outras edições do AEM. Quando a sessão de edição é iniciada, uma versão do status atual não editado é criada. Se um usuário cancelar uma edição, essa versão será restaurada. Se o usuário clicar em **Salvar**, nada específico será feito, pois toda a edição foi executada em conteúdo *ativo* , portanto, todas as alterações já são mantidas. Além disso, clicar em **Salvar** acionará algum processamento em segundo plano (como criar informações de pesquisa de texto completo e/ou manipular ativos de mídia mista).
+Tecnicamente, todas as edições são feitas em conteúdo *ativo* , assim como em todas as outras edições AEM. Quando a sessão de edição é iniciada, uma versão do status atual não editado é criada. Se um usuário cancelar uma edição, essa versão será restaurada. Se o usuário clicar em **Salvar**, nada específico será feito, pois toda a edição foi executada em conteúdo *ativo* , portanto, todas as alterações já são mantidas. Além disso, clicar em **Salvar** acionará algum processamento em segundo plano (como criar informações de pesquisa de texto completo e/ou manipular ativos de mídia mista).
 
 Existem algumas medidas de segurança para casos de borda; por exemplo, se o usuário tentar sair do editor sem salvar ou cancelar a sessão de edição. Além disso, um salvamento automático periódico está disponível para evitar perda de dados.
 Observe que dois usuários podem editar o mesmo fragmento de conteúdo ao mesmo tempo e, portanto, podem substituir as alterações entre si. Para evitar isso, o fragmento de conteúdo precisa ser bloqueado aplicando a ação de *Check-out* da administração do DAM no fragmento.
@@ -348,4 +352,4 @@ Se você quiser definir um intervalo de salvamento automático de 5 minutos, é 
 
 Para obter mais informações, consulte
 
-* [Componentes principais - Componente](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/content-fragment-component.html) de fragmento do conteúdo (recomendado)
+* [Componentes principais - Componente](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html) de fragmento do conteúdo (recomendado)
