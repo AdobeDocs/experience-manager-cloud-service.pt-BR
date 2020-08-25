@@ -1,11 +1,11 @@
 ---
 title: Ferramenta Migração de fluxo de trabalho de ativos
 description: 'Ferramenta Migração de fluxo de trabalho de ativos '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3a438de3c460d4dc5a8b8617f0ec0eefc56f1665
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -20,19 +20,19 @@ Esta seção descreve os recursos e os detalhes de implementação sobre a ferra
 
 Esse utilitário permite que os desenvolvedores do AEM migrem fluxos de trabalho de processamento de ativos do AEM existentes para o AEM as a Cloud Service.
 
-## workflows suportados {#migration-support-for-workflows}
+## Fluxos de trabalho compatíveis {#migration-support-for-workflows}
 
-Os workflows têm um nível variável de suporte à migração. Veja esta [lista de workflows](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties)específicos. Os workflows são classificados nas categorias a seguir, com base no suporte fornecido. O Adobe oferece suporte à migração dos workflows listados no `SUPPORTED`, `REQUIRED`ou no `OPTIONAL` categoria. As etapas de fluxo de trabalho mencionadas nas outras categorias não são suportadas.
+Os fluxos de trabalho têm um nível variável de suporte à migração. Consulte esta [lista de fluxos de trabalho específicos](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties). Os fluxos de trabalho são classificados nas seguintes categorias de acordo com o suporte fornecido. A Adobe oferece suporte à migração dos fluxos de trabalho listados nas categorias `SUPPORTED`, `REQUIRED` ou `OPTIONAL`. Não há suporte para as etapas de fluxo de trabalho mencionadas nas outras categorias.
 
-* `SUPPORTED`: Funcionalidade suportada em [!DNL Experience Manager Assets] como um Cloud Service.
-* `OPTIONAL`: Funcionalidade opcional em [!DNL Experience Manager Assets] como um Cloud Service.
-* `REQUIRED`: Uma etapa necessária que é adicionada ao fluxo de trabalho.
-* `UNNECESSARY`: A funcionalidade não é necessária como Cloud Service [!DNL Experience Manager Assets] .
-* `NUI_OOTB`: Funcionalidade fornecida pelo [Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
-* `DMS7_OOTB`: Funcionalidade fornecida pelos [!DNL Dynamic Media] conectores padrão.
-* `NUI_MIGRATED`: Migrado para um perfil [de processamento do Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
-* `UNSUPPORTED`: Atualmente não é suportado em [!DNL Experience Manager Assets] como um Cloud Service.
+* `SUPPORTED`: funcionalidade com suporte no [!DNL Experience Manager Assets] as a Cloud Service.
+* `OPTIONAL`: funcionalidade opcional no [!DNL Experience Manager Assets] as a Cloud Service.
+* `REQUIRED`: uma etapa necessária adicionada ao fluxo de trabalho.
+* `UNNECESSARY`: a funcionalidade não é necessária no [!DNL Experience Manager Assets] as a Cloud Service.
+* `NUI_OOTB`: funcionalidade fornecida pelo [Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
+* `DMS7_OOTB`: funcionalidade fornecida pelos conectores padrão do [!DNL Dynamic Media].
+* `NUI_MIGRATED`: movido para um [perfil de processamento do Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
+* `UNSUPPORTED`: no momento não há suporte no [!DNL Experience Manager Assets] as a Cloud Service.
 
 ## Instalação da ferramenta Migração de fluxo de trabalho de ativos{#installing-tool}
 
-Consulte **[Recurso do Git: AEM Assets as a Cloud Service - Migração de fluxos de trabalho](https://github.com/adobe/aem-cloud-migration)**para saber mais sobre como instalar e desenvolver o código a partir da fonte.
+Consulte **[Recurso do Git: AEM Assets as a Cloud Service - Migração de fluxos de trabalho](https://github.com/adobe/aem-cloud-migration)** para saber mais sobre como instalar e desenvolver o código a partir da fonte.
