@@ -1,21 +1,21 @@
 ---
-title: Criação de várias páginas de Categorias e produtos
-description: Criação de várias páginas de Categorias e produtos
-translation-type: tm+mt
+title: Criação de várias categorias e páginas de produto
+description: Criação de várias categorias e páginas de produto
+translation-type: ht
 source-git-commit: d79ac17a2282f2c08b69fae24e672bf17ddf8dc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Criação de várias páginas de Categorias e produtos
+# Criação de várias categorias e páginas de produto
 
-[AEM CIF Componentes](https://github.com/adobe/aem-core-cif-components) principais fornece aos autores de conteúdo a capacidade de criar páginas adicionais de categorias e produtos. Essas páginas podem ser enriquecidas com conteúdo de marketing adicional e configuradas para categorias e produtos específicos do público alvo. O vídeo a seguir acompanha a configuração desse recurso.
+Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) dão aos autores de conteúdo a capacidade de criar páginas adicionais de categoria e do produto. Essas páginas podem ser enriquecidas com conteúdo de marketing adicional e configuradas para direcionar categorias e produtos específicos. O vídeo a seguir apresenta a configuração desse recurso.
 
->[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12&captions=por_br)
 
-Você pode encontrar mais informações sobre este tópico a partir dos seguintes recursos:
+Você pode encontrar mais informações sobre esse tópico nos seguintes recursos:
 
-- [AEM CIF Componentes principais - Configuração de página de vários catálogos](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+- [Componentes principais da CIF do AEM — Configuração de página de vários catálogos](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
