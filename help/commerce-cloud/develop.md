@@ -26,7 +26,7 @@ Um ambiente de desenvolvimento local é recomendado para trabalhar com projetos 
 
 O complemento CIF é fornecido como um arquivo de recursos Sling. O arquivo zip disponível no Portal de distribuição de software inclui dois arquivos de recursos Sling, um para o autor no AEM e outro para instâncias de publicação do AEM.
 
-**Novo no AEM as a Cloud Service?** Check out [a more detailed guide to setting up a local development environment using the AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**Novo no AEM as a Cloud Service?** Consulte [um guia mais detalhado para configurar um ambiente de desenvolvimento local usando o AEM como um SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)Cloud Service.
 
 ### Software necessário
 
