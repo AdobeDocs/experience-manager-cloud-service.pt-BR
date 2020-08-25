@@ -1,99 +1,99 @@
 ---
-title: AEM - Integração do Magento usando Perguntas frequentes sobre a estrutura de integração do Commerce
-description: AEM - Integração do Magento usando Perguntas frequentes sobre a estrutura de integração do Commerce
-translation-type: tm+mt
+title: Perguntas frequentes sobre a integração AEM–Magento usando a Commerce Integration Framework
+description: Perguntas frequentes sobre a integração AEM–Magento usando a Commerce Integration Framework
+translation-type: ht
 source-git-commit: cafe8825fe34f158c74b94b95b7252394de26e4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# AEM - Integração do Magento usando Perguntas frequentes sobre a estrutura de integração do Commerce
+# Perguntas frequentes sobre a integração AEM–Magento usando a Commerce Integration Framework
 
 
-## 1. O GraphQL é usado apenas para Magento ou estará disponível para consultar conteúdo criado AEM JCR?
+## 1. O GraphQL é usado apenas para a Magento ou será disponibilizado para consultar conteúdo criado no JCR do AEM?
 
-A Adobe adotou as APIs GraphQL da Magento como sua API de comércio oficial para todos os dados relacionados ao comércio. Portanto, AEM usa o GraphQL para trocar dados de comércio com o Magento e com qualquer mecanismo de comércio por meio do I/O Runtime.
+A Adobe adotou as APIs GraphQL da Magento como a API oficial para todos os dados relacionados ao comércio. Portanto, o AEM usa GraphQL para trocar dados de comércio com a Magento e com qualquer mecanismo de comércio por meio da I/O Runtime.
 
-## 2. Como a E/S do Adobe entra em jogo? AEM fala diretamente com a Magento?
+## 2. Como o Adobe I/O entra em jogo? O AEM se comunica diretamente com a Magento?
 
-AEM pode se conectar diretamente ao Magento sem uma camada de tempo de execução de E/S. Se houver necessidade de integrar um backend de comércio não-Magento (solução de terceiros) ao AEM, a plataforma I/O Runtime poderá ser usada para hospedar a camada de mapeamento para conectar as APIs Magento GraphQL a qualquer APIs de soluções de terceiros. Para obter mais detalhes, consulte esta implementação [de](https://github.com/adobe/commerce-cif-graphql-integration-reference)referência. Para soluções que não sejam de Magento, AEM seria configurado para apontar para o ponto final de I/O Runtime.
+O AEM pode se conectar diretamente à Magento sem uma camada de I/O Runtime. Se for preciso integrar um back-end de comércio que não seja a Magento (solução de terceiros) ao AEM, a plataforma I/O Runtime poderá ser usada para hospedar a camada de mapeamento para conectar as APIs GraphQL da Magento a qualquer API de soluções de terceiros. Para obter mais detalhes, consulte esta [implementação de referência](https://github.com/adobe/commerce-cif-graphql-integration-reference). Para soluções que não sejam a Magento, o AEM seria configurado para indicar o ponto de extremidade da plataforma I/O Runtime.
 
-A plataforma I/O Runtime também pode ser usada para estender ou personalizar os serviços de comércio. Para esses casos de uso, você chamaria o terminal I/O Runtime que hospedará uma implementação personalizada do respectivo serviço. Casos de uso de integração e extensão podem ser combinados.
+A plataforma I/O Runtime também pode ser usada para estender ou personalizar os serviços de comércio. Para esses casos de uso, você chamaria o ponto de extremidade da I/O Runtime, que hospeda uma implementação personalizada do serviço respectivo. Casos de uso de integração e extensão podem ser combinados.
 
-## 3. Os ativos do Produto (imagens) podem ser armazenados e referenciados a partir de AEM via Magento admin? Como os ativos da Dynamic Media podem ser consumidos?
+## 3. Os ativos do produto (imagens) podem ser armazenados e referenciados pelo AEM via administração da Magento? Como os ativos do Dynamic Media podem ser consumidos?
 
-Não há atualmente um AEM Assets - integração Magento. Como solução, você pode armazenar ativos de produtos (imagens) em AEM Assets, mas precisará armazenar manualmente os URLs de ativos no Magento. A Dynamic Media agora faz parte dos AEM Assets e vai funcionar da mesma maneira.
+Atualmente, não existe uma integração entre o AEM Assets e a Magento. Como solução, você pode armazenar ativos de produtos (imagens) no AEM Assets, mas terá que armazenar manualmente os URLs de ativos na Magento. O Dynamic Media agora faz parte do AEM Assets e funcionará da mesma maneira.
 
-## 4. Importa onde o Magento é implantado? (No local ou na nuvem)
+## 4. O local de implantação (no local ou na nuvem) da Magento é importante? 
 
-Não importa onde o Magento é implantado. A integração e a nova loja AEM Venia funcionarão independentemente do modelo de implantação. No entanto, se for implantado com base na arquitetura de referência E2E aprovada, os testes E2E serão executados em relação aos KPIs de desempenho coletados que representam o perfil de um cliente da empresa. Portanto, isso fornecerá a você informações adicionais que você pode usar como referência.
+Não importa onde a Magento é implantada. A integração e a nova loja de referência AEM Venia funcionarão independentemente do modelo de implantação. No entanto, se for implantada com base na arquitetura de referência E2E aprovada, serão executados testes E2E com KPIs de desempenho coletados que representam o perfil de um cliente corporativo. Portanto, haverá informações adicionais que você pode usar como referencial.
 
-## 5. Como as páginas de catálogo ou de produto são criadas no AEM? Como eles persistem em AEM?
+## 5. Como as páginas de catálogo ou de produto são criadas no AEM? Como elas continuam a existir no AEM?
 
-Páginas de catálogo e páginas de produto são criadas e armazenadas em cache dinamicamente em AEM com base em catálogos genéricos e modelos de página de produto. Nenhum dado de Produto ou Catálogo é importado e armazenado em AEM.
+Páginas de catálogo e páginas de produto são criadas e armazenadas em cache dinamicamente no AEM com base em catálogos genéricos e modelos de página de produto. Nenhum dado de produto ou catálogo é importado e armazenado no AEM.
 
-## 6. Você também armazena o preço em cache e outros dados via Dispatcher. Isso levanta um desafio frequente de invalidação do cache?
+## 6. Também é possível armazenar preços e outros dados em cache por meio do Dispatcher? Esse armazenamento gera um desafio frequente de invalidação de cache?
 
-Dados dinâmicos, como preço ou inventário, não são armazenados em cache no Dispatcher. Os dados dinâmicos são obtidos no cliente com componentes da Web diretamente por meio de APIs GraphQL. Somente dados estáticos (como dados de produto ou categoria) são armazenados em cache no Dispatcher. Se os dados do produto forem alterados, haverá necessidade de invalidação do cache.
+Dados dinâmicos, como preço ou inventário, não são armazenados em cache no Dispatcher. Os dados dinâmicos são obtidos por via direta no lado do cliente com componentes da Web usando APIs GraphQL. Somente dados estáticos (como dados de produto ou categoria) são armazenados em cache no Dispatcher. Se os dados do produto forem alterados, será preciso invalidar o cache.
 
-## 7. Como a invalidação de cache para AEM Dispatcher funciona com AEM-Magento?
+## 7. Como a invalidação de cache para o AEM Dispatcher funciona com a integração AEM–Magento?
 
-Recomendamos configurar a invalidação de cache baseada em TTL para páginas armazenadas em cache no Dispatcher. Para obter informações dinâmicas, como preço ou ações, recomendamos renderizar a data no cliente. Para obter mais informações sobre a invalidação do cache baseado em TTL, consulte [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+Recomendamos configurar a invalidação do cache com base em TTL para páginas armazenadas em cache no Dispatcher. Para obter informações dinâmicas, como preço ou estoque, recomendamos renderizar a data no lado do cliente. Para obter mais informações sobre a invalidação do cache com base em TTL, consulte [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
-## 8. Por que você não está usando We.Retail?
+## 8. Por que o We.Retail não está sendo usado?
 
-O tema Venia (desenvolvido por Magento) é utilizado, primeiro móvel e alinhado com o PWA de Magento. O tema Venia representa os mais recentes termos de estilo CSS e componentes principais AEM.
+O tema Venia (desenvolvido pela Magento) é orientado para dispositivos móveis e está alinhado com o PWA da Magento. O tema Venia é o mais atual em termos de estilo CSS e componentes principais do AEM.
 
-## 9. Quando você atualiza os dados do produto no Magento, isso é um push em tempo real para AEM? Ou é um processo em lote?
+## 9. A atualização dos dados do produto na Magento é um push em tempo real para o AEM? Ou é um processo em lote?
 
-O complemento CIF usado com AEM Cloud Service permite que os dados fluam de Magento para AEM sob demanda. Portanto, este não é um processo de push em tempo real ou em lote quando há uma atualização no Magento.
+O complemento CIF usado com o AEM Cloud Service permite que os dados fluam da Magento para o AEM sob demanda. Portanto, as atualizações na Magento não implicam um processo de push em tempo real ou em lote.
 
-## 10. Há alguma recomendação sobre a pesquisa unificada AEM conteúdo com Comércio?
+## 10. Há alguma recomendação sobre a pesquisa unificada de conteúdo no AEM com o Commerce?
 
-Uma implementação de referência de pesquisa de produto é fornecida, mas não há pesquisa unificada com conteúdo. Esse recurso é geralmente muito específico do cliente e melhor resolvido em um nível específico do projeto.
+É fornecida uma implementação de referência de pesquisa de produto, mas não de pesquisa unificada com conteúdo. Geralmente, esse recurso depende muito do cliente e é melhor encontrar uma solução para cada projeto.
 
-## 11. Como o Search funciona com o AEM-Magento usando o CIF?
+## 11. Como a pesquisa funciona com a integração AEM–Magento usando a CIF?
 
-O CIF fornece a barra de pesquisa e os componentes de Resultados da pesquisa. O componente da barra de pesquisa envia uma solicitação GraphQL com o termo de pesquisa para Magento. O Magento retorna uma lista de produto que inclui nome de produto, preço, SLUG etc. O componente de Resultado da pesquisa exibe os resultados da pesquisa em uma visualização da galeria em uma página de resultados da pesquisa criada no AEM. A Pesquisa suporta pesquisa básica de texto completo. Usamos a chave SLUG/url para criar uma referência ao PDP.
+A CIF fornece os componentes Barra de pesquisa e Resultado da pesquisa. O componente Barra de pesquisa envia uma solicitação GraphQL com o termo de pesquisa para a Magento. A Magento retorna uma lista de produto que inclui nome do produto, preço, SLUG, etc. O componente Resultado da pesquisa exibe os resultados da pesquisa em uma visualização de galeria em uma página de resultados da pesquisa criada no AEM. A Pesquisa aceita pesquisa básica de texto completo. Usamos a chave SLUG/URL para criar uma referência ao PDP.
 
 ## 11. Como os dados do produto podem ser usados em MSM ou traduções?
 
-Os dados do produto geralmente já são traduzidos no PIM ou no Magento. A integração AEM - Magento suporta a conexão com várias visualizações de Magento e loja. Em uma configuração de MSM, normalmente um site AEM está vinculado a uma visualização da loja de Magento.
+Os dados do produto geralmente já são traduzidos no PIM ou na Magento. A integração AEM–Magento suporta a conexão com várias lojas e visualizações de loja da Magento. Geralmente, em uma configuração MSM um site do AEM está vinculado a uma visualização da loja da Magento.
 
-## 13. Como o CIF funciona com outras plataformas comerciais?
+## 13. Como a CIF funciona com outras plataformas de comércio?
 
-A integração com soluções de terceiros, como outras soluções de comércio (não-Magento), é feita por meio da plataforma I/O Runtime.  Criámos uma implementação [de](https://github.com/adobe/commerce-cif-graphql-integration-reference) referência para demonstrar como é que isto é feito. Isso permite a reutilização do [AEM CIF Cloud Connector](https://github.com/adobe/commerce-cif-connector) e dos componentes [principais CIF](https://github.com/adobe/aem-core-cif-components) AEM expondo a API Magento GraphQL sobre qualquer plataforma de comércio de terceiros. Para oferta da máxima flexibilidade e escalabilidade, essa camada de integração é implantada na plataforma [](https://www.adobe.io/apis/experienceplatform/runtime.html)Adobe I/O Runtime sem servidor.
+A integração com soluções de terceiros, como outras soluções de comércio (diferentes da Magento), é feita por meio da plataforma I/O Runtime. Criamos uma [implementação de referência](https://github.com/adobe/commerce-cif-graphql-integration-reference) para demonstrar como isso é feito. Você pode reutilizar o [Conector de nuvem CIF do AEM](https://github.com/adobe/commerce-cif-connector) e os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) indicando a API GraphQL da Magento em qualquer plataforma de comércio de terceiros. Para oferecer o máximo de flexibilidade e escalabilidade, essa camada de integração é implantada na plataforma sem servidor [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html).
 
-## 14. Há alguma maneira de aprimorar os dados do produto com o texto comercial? Onde você faz isso? No AEM ou no Magento?
+## 14. Há alguma maneira de aprimorar os dados do produto com texto comercial? Onde é possível fazer isso? No AEM ou na Magento?
 
-Existem várias maneiras de conseguir isso e isso dependerá do caso de uso. Uma maneira seria trabalhar com atributos personalizados. Permita que os autores AEM alterem esses campos no editor de produtos AEM e sincronizem os dados de volta ao PIM. Outra opção seria aproveitar AEM Fragmentos de experiência que são inseridos nas páginas do produto.
+Existem várias maneiras e depende do caso de uso. Uma maneira seria trabalhar com atributos personalizados. Permita que os autores do AEM alterem esses campos no editor de produtos do AEM e sincronizem os dados no PIM. Outra opção seria aproveitar os Fragmentos de experiência do AEM que são inseridos nas páginas do produto.
 
-## 15. A integração entre AEM-Magento muda quando a plataforma Adobe I/O Runtime é usada?
+## 15. A integração AEM–Magento muda quando a plataforma Adobe I/O Runtime é usada?
 
-Os clientes que desejam estender os serviços de comércio podem usar as mesmas sequências de ação de integração e gravação hospedadas na plataforma I/O Runtime para injetar a lógica comercial e enriquecer os serviços de comércio.
+Os clientes que desejam estender os serviços de comércio podem usar as mesmas sequências de ação de integração e gravação hospedadas na plataforma I/O Runtime para injetar a lógica de negócios e enriquecer os serviços de comércio.
 
-## 16. Como AEM cria páginas de produtos e catálogos dinamicamente com base em um modelo genérico em AEM, o que eu veria se fosse abrir o CRXDE Lite e verificar o conteúdo? Eu veria uma árvore de produtos inteira baseada nos produtos em Magento? Em caso negativo, como um autor melhoraria essas páginas?
+## 16. Já que o AEM cria páginas de produtos e catálogos dinamicamente com base em um modelo genérico no AEM, o que eu veria se abrisse o CRXDE Lite e verificasse o conteúdo? Eu veria uma árvore de produtos inteira baseada nos produtos na Magento? Em caso negativo, como um autor melhoraria essas páginas?
 
-Não há mais páginas de produtos ou catálogos JCR. Ver pergunta 12.
+Não há mais páginas de produtos ou catálogos JCR. Confira a pergunta 12.
 
-## 17. A SPA armazenará o trabalho principal com AEM editor SPA?
+## 17. A loja do aplicativo de página única funcionará com o editor de aplicativo de página única do AEM?
 
-AEM pode ser usado como uma ferramenta de criação para qualquer tipo de frente de loja. Atualmente, a renderização híbrida é usada para a nova frente de loja. No futuro, AEM será usado para criação com SPA e PWA.
+O AEM pode ser usado como ferramenta de criação para qualquer tipo de loja. Atualmente, a renderização híbrida é usada para a nova loja. No futuro, o AEM será usado para criações com aplicativo de página única e PWA.
 
 ## 18. Como o PIM atua nessa estrutura?
 
-Os dados do PIM são expostos a AEM e clientes por meio de solicitações do GraphQL. Nossa recomendação é integrar o PIM ao mecanismo de comércio (Magento ou outro) para que os dados do PIM possam ser recuperados do mecanismo de comércio.
+Os dados do PIM são expostos ao AEM e aos clientes por meio de solicitações de GraphQL. Nossa recomendação é integrar o PIM ao mecanismo de comércio (Magento ou outro) para que os dados do PIM possam ser recuperados do mecanismo de comércio.
 
-## 19. Como podemos garantir a conformidade do PCI ao usar AEM para a camada de apresentação inteira?
+## 19. Como podemos garantir a conformidade com o PCI ao usar o AEM para a camada de apresentação inteira?
 
-Ao usar AEM na implantação da nuvem do AMS e do Magento, é obrigatório usar métodos de pagamento abstratos. Isso coloca o cliente do navegador em comunicação direta com o provedor do gateway de pagamento para que nenhuma nuvem de Adobe ou Magento segure ou passe os dados do titular do cartão. Esta abordagem oferece cobertura para a conformidade PCI para pilhas técnicas e data centers. No entanto, há outros aspectos que devem ser considerados como totalmente compatíveis com a PCI, como o modo como os funcionários interagem com o sistema e os dados. Para obter mais informações sobre a conformidade com PCI Magento, consulte https://magento.com/pci-compliance
+Ao usar o AEM na implantação da nuvem do AMS e da Magento, é obrigatório usar métodos de pagamento abstratos. Assim, o cliente do navegador estabelece comunicação direta com o provedor do gateway de pagamento para que nem a nuvem da Adobe nem a da Magento retenham ou transmitam os dados do titular do cartão. Essa abordagem está em conformidade com o PCI para pilhas de tecnologia e data centers. No entanto, há outros aspectos que devem ser considerados em termos de conformidade com o PCI, como o modo como os funcionários interagem com o sistema e os dados. Para obter mais informações sobre a conformidade da Magento com o PCI, consulte https://magento.com/pci-compliance
 
-## 20. Como posso solicitar uma licença de avaliação de I/O Runtime?
+## 20. Como posso solicitar uma licença de avaliação da I/O Runtime?
 
-Você pode solicitar uma licença de avaliação para usar o I/O Runtime [aqui](https://github.com/AdobeDocs/adobeio-runtime/blob/master/overview/request_a_trial.md).
+Você pode solicitar uma licença de avaliação para usar a I/O Runtime [aqui](https://github.com/AdobeDocs/adobeio-runtime/blob/master/overview/request_a_trial.md).
 
 
 
