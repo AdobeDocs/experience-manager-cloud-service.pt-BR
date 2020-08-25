@@ -1,117 +1,117 @@
 ---
-title: Introdução ao comércio AEM como Cloud Service
-description: O que há de novo AEM Comércio como Cloud Service.
-translation-type: tm+mt
+title: Introdução ao AEM Commerce as a Cloud Service
+description: Novidades no AEM Commerce as a Cloud Service.
+translation-type: ht
 source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1331'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Apresentando AEM comércio como Cloud Service {#commerce-intro}
+# Apresentação do AEM Commerce as a Cloud Service {#commerce-intro}
 
-O Experience Manager Commerce como Cloud Service consiste em Commerce Integration Framework (CIF), que é o padrão recomendado para integrar e estender os serviços de comércio do Magento e outras soluções de comércio de terceiros ao Experience Cloud. Isso permite que os clientes do Adobe ofereçam uma experiência extraordinária e personalizada de compras em canais globais, com base na tecnologia mais avançada.
+O Experience Manager Commerce as a Cloud Service consiste na Commerce Integration Framework (CIF), que é o padrão recomendado da Adobe para integrar e estender os serviços de comércio da Magento e outras soluções comerciais de terceiros com a Experience Cloud. Ele permite que os clientes da Adobe ofereçam uma experiência de compra omnicanal extraordinária e personalizada com base em tecnologia de ponta.
 
-A Commerce Integration Framework é um módulo complementar para o Experience Manager como Cloud Service e fornece um conjunto de ferramentas de criação, componentes e uma vitrine de referência para acelerar o desenvolvimento de integrações entre o Experience Manager como Cloud Service e soluções de comércio.
+A Commerce Integration Framework é um módulo complementar para o Experience Manager as a Cloud Service e fornece um conjunto de ferramentas de criação, componentes e uma loja de referência para acelerar o desenvolvimento de integrações entre o Experience Manager as a Cloud Service e soluções comerciais.
 
-## Benefícios CIF {#cif-benefits}
+## Vantagens da CIF {#cif-benefits}
 
-Os principais benefícios são:
+Estas são as principais vantagens:
 
 * A integração é uma camada de abstração para padronizar e encapsular integrações com vários sistemas.
 
-* O CIF oferece suporte a experiências sem cabeça/em canais móveis:
+* A CIF é compatível com experiências headless/omnicanais.
 
-   * Aplicativos de página única e aplicativos de várias páginas
-   * Pontos finais GraphQL
+   * Aplicativos de página única e aplicativos de várias páginas.
+   * Pontos de extremidade GraphQL.
 
-* O CIF fornece processos sem servidor e baseados em microserviços e camada lógica comercial para personalização e extensão de serviços comerciais.
+* A CIF oferece processos sem servidor e com base em microsserviços e camada de lógica de negócios para personalização e extensão de serviços comerciais.
 
-* CIF fornece integrações prontas para uso com soluções de Adobe, como AEM e Magento
+* A CIF fornece integrações prontas para uso com soluções da Adobe, como AEM e Magento.
 
-## CIF Elementos {#cif-elements}
+## Elementos da CIF {#cif-elements}
 
-![CIF Elementos](/help/commerce-cloud/assets/cif-overview1.jpg)
+![Elementos da CIF](/help/commerce-cloud/assets/cif-overview1.jpg)
 
 
-### add-on CIF para ferramentas de criação {#add-on-authoring-tools}
+### Complemento CIF para ferramentas de criação {#add-on-authoring-tools}
 
-O add-on CIF fornece acesso às ferramentas de criação de comércio, como Console do produto, Seletores de produto e Categoria ou pesquisa de produtos para autores, para capacitá-los a criar experiências avançadas com conteúdo de marketing e comércio. O add-on também gerencia a conexão de backend com Magento (ou sistema de comércio alternativo) via GraphQL. Depois que o complemento é provisionado, ele é implantado automaticamente em AEM como ambientes Cloud Service.
+O complemento CIF fornece acesso a ferramentas de criação para o comércio, como console do produto, seletores de produto e de categoria ou pesquisa de produtos para autores com o objetivo de capacitá-los a criar experiências avançadas com conteúdo de marketing e comércio. O complemento também gerencia a conexão de back-end com a Magento (ou sistema de comércio alternativo) via GraphQL. Depois de provisionado, o complemento é implantado automaticamente em ambientes do AEM as a Cloud Service.
 
-### Componentes principais CIF AEM {#aem-cif-core}
+### Componentes principais da CIF do AEM {#aem-cif-core}
 
-Os componentes principais CIF AEM são componentes renderizados do lado do servidor e do cliente com suporte a Magento GraphQL. Eles são usados para criar um armazenamento de comércio estático, acessível e compatível com SEO baseado em tecnologias AEM.
+Os Componentes principais da CIF do AEM são componentes renderizados do lado do servidor e do lado do cliente com suporte da Magento para GraphQL. Eles são utilizados para criar lojas estáticas e otimizadas para SEO que podem ser armazenadas em cache com base em tecnologias do AEM.
 
-Os componentes básicos são fornecidos, comuns em implementações comerciais, como Detalhes do produto, Lista do produto, Navegação, Pesquisa etc. Eles podem ser usados como estão ou podem ser estendidos.
+São fornecidos componentes básicos, comuns em implementações de comércio, como detalhes do produto, lista de produtos, navegação, pesquisa, etc. Eles podem ser utilizados como estão ou podem ser estendidos.
 
-Os Componentes [principais CIF](https://github.com/adobe/aem-core-cif-components) AEM funcionam como os Componentes [principais dos](https://github.com/adobe/aem-core-wcm-components) AEM Sites, mas são dedicados a casos de uso específicos do comércio.
+Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) funcionam como os [Componentes principais do AEM Sites](https://github.com/adobe/aem-core-wcm-components), mas são dedicados a casos de uso específicos do comércio.
 
-Esses componentes são os principais benefícios:
+Estas são as principais vantagens desses componentes:
 
-* Eles são fáceis de usar em seus projetos.
-* Eles podem ser usados no estado em que se encontram ou com modificações muito mínimas.
-* Elas fornecem as práticas recomendadas para a conexão com o Magento por meio de APIs GraphQL ou REST APIs
+* São fáceis de usar nos projetos.
+* Podem ser utilizados como estão ou com poucas modificações.
+* Fornecem práticas recomendadas para a conexão com a Magento por meio de APIs GraphQL ou APIs REST
 
-Componentes como o Teaser de produto e o Carrossel de produto são fornecidos para permitir que os AEM Author criem páginas de experiência em AEM, combinando o conteúdo de marketing e comércio. Esses componentes podem ser facilmente arrastados e soltos em uma página de conteúdo criada no AEM e vinculada a produtos ou categorias específicos usando as ferramentas de criação CIF, como o Seletor de produto ou de Categoria no Cloud Service.
+Componentes como o Teaser do produto e o Carrossel de produtos são fornecidos para permitir que os autores do AEM criem páginas de experiência no AEM, combinando conteúdo de marketing e comércio. Esses componentes podem ser facilmente arrastados e soltos em uma página de conteúdo criada no AEM e vinculada a produtos ou categorias específicos utilizando as ferramentas de criação da CIF, como o seletor de produto ou de categoria no Cloud Service.
 
-Todos os componentes são de fonte aberta no [GitHub](https://github.com/adobe/aem-core-cif-components). Isso mostra total transparência nas mudanças feitas em frente e permite que você obtenha a versão mais recente muito facilmente. Você também pode fornecer solicitações pull para melhorias e correções de bugs que podem ser incorporadas.
+Todos os componentes são de código aberto no [GitHub](https://github.com/adobe/aem-core-cif-components), o que revela total transparência nas mudanças feitas e permite que você obtenha a versão mais recente com facilidade. Você também pode fornecer solicitações de pull para melhorias e correções de erros que podem ser incorporadas.
 
-### AEM Venia Storefront {#aem-venia-storefront}
+### Loja AEM Venia {#aem-venia-storefront}
 
-A Venia Storefront [](https://github.com/adobe/aem-cif-guides-venia) AEM é uma loja de referência moderna, pronta para produção, que exibe uma jornada básica de comércio B2C. Ele pode ser usado para iniciar projetos de comércio e acelerar projetos usando AEM, CIF e Magento. Ele demonstra as práticas recomendadas para a integração de AEM e Magento e mostra como usar os componentes [principais CIF e os componentes](https://github.com/adobe/aem-core-cif-components) principais [AEM Sites e suporta os endpoints](https://github.com/adobe/aem-core-wcm-components) GraphQL do Adobe Commerce. Ele também fornece um site de referência para pré-vendas para demonstrar a integração entre AEM e Magento.
+A [Loja AEM Venia](https://github.com/adobe/aem-cif-guides-venia) é uma vitrine de referência moderna e pronta para produção com uma jornada básica de comércio B2C. Ela pode ser utilizada para iniciar projetos comerciais e acelerar projetos usando o AEM, a CIF e a Magento. Inclui práticas recomendadas para a integração do AEM e da Magento e mostra como utilizar os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) e os [Componentes principais do AEM Sites](https://github.com/adobe/aem-core-wcm-components), além de ser compatível com os pontos de extremidade GraphQL do Adobe Commerce. Ela também fornece um site de referência para pré-vendas que demonstra a integração entre o AEM e a Magento.
 
-A Venia Storefront AEM é uma aplicação de página mista na qual AEM possui o vidro e o Magento alimenta o backend do comércio de uma forma ininterrupta. A renderização do lado do servidor e a renderização do lado do cliente são usadas na vitrine. A renderização no servidor é usada para fornecer conteúdo estático e a renderização no cliente é usada para fornecer conteúdo dinâmico.
+A loja AEM Venia é um aplicativo de página mista em que o AEM oferece a loja e a Magento alimenta o back-end comercial com uma estrutura headless. A renderização do lado do servidor e do lado do cliente são utilizadas na loja. A renderização do lado do servidor é utilizada para fornecer conteúdo estático e a renderização do lado do cliente é utilizada para fornecer conteúdo dinâmico.
 
-As páginas de produtos e catálogos são relativamente estáticas e são renderizadas no lado do servidor usando AEM componentes principais CIF, como Detalhes do produto e Lista do produto, em modelos genéricos criados em AEM. Esses componentes obtêm dados do Magento por meio de APIs GraphQL.
-Essas páginas são criadas dinamicamente, renderizadas no servidor, armazenadas em cache no AEM dispatcher e, em seguida, entregues no navegador.
-Para atributos mais dinâmicos, como inventário ou preço, por outro lado, componentes do lado do cliente são usados. Componentes do cliente ou componentes da Web buscam dados diretamente do Magento por meio de APIs GraphQL e o conteúdo é renderizado no navegador.
+As páginas de produtos e de catálogos são relativamente estáticas e são renderizadas no lado do servidor utilizando os Componentes principais da CIF do AEM, como Detalhes do produto e Lista do produto em modelos genéricos criados no AEM. Esses componentes obtêm dados da Magento por meio de APIs GraphQL.
+Essas páginas são criadas dinamicamente, renderizadas no servidor, armazenadas em cache no AEM Dispatcher e, em seguida, entregues no navegador.
+Para atributos mais dinâmicos, como inventário ou preço, são usados componentes do lado do cliente. Componentes do lado cliente ou componentes da Web buscam dados diretamente da Magento por meio de APIs GraphQL e o conteúdo é renderizado no navegador.
 
 #### Check-out {#checkout}
 
-Este vitrine de referência usa o componente Carrinho do lado do cliente que renderiza o carrinho de compras e o formulário de checkout para demonstrar um padrão de integração de experiência completa, onde você pode fornecer experiências comerciais com o Magento funcionando de forma completamente sem cabeça e AEM possuindo o vidro. Recomenda - se a utilização dos métodos de pagamento abstratos fornecidos. Isso coloca o cliente do navegador em comunicação direta com o provedor do gateway de pagamento para que nem as nuvens de Adobe nem Magento sejam seguras ou passem os dados confidenciais da PCI.
+Essa loja de referência utiliza o componente Carrinho do lado do cliente, que renderiza o carrinho de compras e o formulário de check-out para demonstrar um padrão de integração de experiência completa. Você pode fornecer experiências comerciais com a Magento funcionando com arquitetura headless, sendo o AEM responsável pela loja. É recomendado usar os métodos de pagamento abstratos disponibilizados. Dessa forma, o cliente do navegador estabelece comunicação direta com o provedor do gateway de pagamento para que nem a nuvem da Adobe nem a da Magento armazenem ou passem dados confidenciais nos termos do PCI.
 
 #### Gerenciamento de contas {#account-management}
 
-O gerenciamento de contas é realizado pela Magento e o armazenamento de referência utiliza componentes baseados no React do lado do cliente para permitir que AEM renderize a experiência para as seguintes funcionalidades: Crie atos, faça logon e esquece a senha.
+O gerenciamento de contas é feito pela Magento e a loja de referência utiliza componentes do React do lado do cliente para permitir que o AEM renderize a experiência para as seguintes funcionalidades: Criar conta, Fazer logon e Esqueci a senha.
 
-O projeto Venia Storefront AEM é open source e para obter mais detalhes, consulte [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia).
+O projeto da loja AEM Venia é de código aberto. Para obter mais detalhes, consulte [Loja AEM Venia](https://github.com/adobe/aem-cif-guides-venia).
 
-### AEM Project Archetype {#aem-project-archtype}
+### Arquétipo de projeto do AEM{#aem-project-archtype}
 
-The [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) can be used to create a minimal, best-practices-based Adobe Experience Manager project as a starting point for your own AEM projects. Opcionalmente, [AEM os Componentes](https://github.com/adobe/aem-core-cif-components) principais CIF podem ser incluídos em um projeto recém-gerado.
+O [Arquétipo de projeto do AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html) pode ser usado para criar um projeto pequeno do Adobe Experience Manager com base em práticas recomendadas como ponto de partida para seus próprios projetos do AEM. Opcionalmente, os [Componentes principais da CIF do AEM ](https://github.com/adobe/aem-core-cif-components) podem ser incluídos em um novo projeto.
 
-### Camada de extensão CIF {#cif-extension}
+### Camada de extensão da CIF {#cif-extension}
 
-A camada de extensão CIF é uma camada intermediária para hospedar uma lógica comercial complexa. Ele executa a plataforma Adobe I/O Runtime que é a plataforma sem servidor Adobe. Ele permite estender chamadas de serviço completas, injetando lógica de negócios e de processo em um nível de microserviço. A lógica comercial seria, por exemplo, usar localização e canal para determinar uma estratégia de inventário. A lógica do processo seria, por exemplo, recuperar informações personalizadas.
+A camada de extensão da CIF é uma camada intermediária para hospedar uma lógica de negócios complexa. Ela executa a plataforma Adobe I/O Runtime, que é a plataforma sem servidor da Adobe. Injetando lógica de negócios e de processos em um nível de microsserviço, ela permite estender chamadas de serviço completas. A lógica de negócios seria, por exemplo, utilizar localização e canal para definir uma estratégia de inventário. A lógica do processo seria, por exemplo, recuperar informações personalizadas.
 
-### Camada de integração CIF {#cif-integration-layer}
+### Camada de integração da CIF {#cif-integration-layer}
 
-A camada de integração CIF é usada para padronizar integrações com outras soluções de comércio. Ele executa a plataforma Adobe I/O Runtime que é a plataforma sem servidor Adobe e permite integrações em um microserviço mapeando APIs de terceiros em relação às APIs de Comércio Adobe. Para ajudá-lo a começar a criar integrações de terceiros com AEM, criamos uma implementação [de](https://github.com/adobe/commerce-cif-graphql-integration-reference) referência para demonstrar como um backend de comércio não-Magento pode ser integrado por meio de APIs de Comércio de Adobe (APIs de GraphQL de Magento).
+A camada de integração da CIF é utilizada para padronizar integrações com outras soluções comerciais. Ela executa a plataforma Adobe I/O Runtime, a plataforma sem servidor da Adobe, e permite integrações em nível de microsserviço com o mapeamento entre APIs de terceiros e as APIs do Adobe Commerce. Para ajudar você a começar a criar integrações de terceiros com o AEM, criamos uma [implementação de referência](https://github.com/adobe/commerce-cif-graphql-integration-reference) para demonstrar como um back-end comercial, que não seja a Magento, pode ser integrado por meio de APIs do Adobe Commerce (APIs GraphQL da Magento).
 
-## Padrões de integração de comércio AEM {#aem-commerce-integration}
+## Padrões de integração do AEM Commerce {#aem-commerce-integration}
 
-Alguns dos padrões de integração do AEM Commerce implementados com frequência são mostrados abaixo.
+Veja abaixo alguns dos padrões de integração do AEM Commerce implementados com frequência.
 
-![AEM padrões de integração CIF](/help/commerce-cloud/assets/aem-cif-integration-patterns-updated.JPG)
+![Padrões de integração da CIF do AEM](/help/commerce-cloud/assets/aem-cif-integration-patterns-updated.JPG)
 
 
 ### Padrão de integração 1 {#integration-pattern-one}
 
-Este é nosso padrão de integração recomendado onde AEM possui o vidro inteiro e integra serviços de comércio por meio de APIs GraphQL do Adobe Commerce. Esse padrão libera AEM flexibilidade total para adaptar designs de sites de mídia avançada em dispositivos. Esse padrão de integração é suportado pelo CIF como uma solução pronta para uso.
+Este é o nosso padrão de integração recomendado, em que o AEM oferece a loja e integra serviços comerciais por meio de APIs GraphQL do Adobe Commerce. Com esse padrão, o AEM oferece flexibilidade total para adaptar designs de sites de mídia avançada entre dispositivos. Esse padrão de integração é uma solução pronta para uso da CIF.
 
 
 ### Padrão de integração 2 {#integration-pattern-two}
 
-Este padrão descreve uma maneira totalmente impensável de fornecer conteúdo e comércio. O delivery é totalmente do lado do cliente. Neste padrão, o conteúdo é fornecido por API e os dados de HTML e Comércio são fornecidos por GraphQL. No momento, esse padrão não é suportado pelo CIF out-of-the-box.
+Este padrão descreve uma maneira de fornecer conteúdo e soluções de comércio com arquitetura totalmente headless. A entrega é feita totalmente no lado do cliente. Nesse padrão, o conteúdo é fornecido pela API e os dados de HTML. Já os dados do Commerce são fornecidos por GraphQL. No momento, esse padrão não conta com suporte pronto para uso da CIF.
 
 
 ### Padrão de integração 3 {#integration-pattern-three}
 
-Neste padrão, Magento possui o vidro e incorpora AEM conteúdo de autoria. O conteúdo de criação AEM pode ser entregue por Fragmentos de experiência ou Fragmentos de conteúdo. Este padrão de integração exigirá trabalho específico do projeto e não pode ser implementado prontamente com o CIF.
+Neste padrão, a Magento oferece a loja e incorpora o conteúdo criado no AEM. O conteúdo do AEM pode ser entregue via Fragmentos de experiência ou Fragmentos de conteúdo. Esse padrão de integração exige trabalho específico do projeto e não pode ser implementado com solução pronta para uso da CIF.
 
 
 ### Padrão de integração 4 {#integration-pattern-four}
 
-Este é um padrão de integração comum em que a camada de vidro ou apresentação é dividida entre AEM e uma solução de Comércio. Normalmente, a solução Commerce fornece as páginas que não são de marketing, como check-out e minha conta, e AEM fornece as páginas de marketing e a experiência do catálogo de frente de loja. Neste padrão, é necessário garantir que os carrinhos e as sessões do usuário sejam tratados corretamente entre os dois sistemas para evitar uma experiência desarticulada do usuário. Por exemplo, o Magento armazena a sessão do carrinho e do usuário em um cookie, que pode ser compartilhado entre AEM e Magento. Este padrão exigirá trabalho específico do projeto e não pode ser implementado out-of-the-box com CIF.
+Este é um padrão de integração comum em que a camada da loja ou de apresentação é dividida entre o AEM e uma solução comercial. Normalmente, a solução comercial fornece as páginas que não são de marketing, como check-out e conta, e o AEM fornece as páginas de marketing e a experiência de catálogo da loja. Nesse padrão, é necessário garantir que os carrinhos e as sessões do usuário sejam manipulados corretamente entre os dois sistemas para evitar uma experiência de usuário desarticulada. Por exemplo, a Magento armazena a sessão do carrinho e do usuário em um cookie, que pode ser compartilhado entre o AEM e a Magento. Esse padrão exige trabalho específico do projeto e não pode ser implementado com solução pronta para uso da CIF.
