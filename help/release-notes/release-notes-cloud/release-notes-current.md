@@ -51,7 +51,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * Em alguns casos, as execuções de pipeline concluídas não foram registradas com êxito como tendo sido concluídas, impedindo assim novas execuções do pipeline.
 
-* Ocasionalmente, as execuções de tubulação ficariam *presas* devido a problemas de comunicação interna.
+* Ocasionalmente, as execuções de pipeline ficariam *presas* devido a problemas de comunicação interna.
 
 * Ao provisionar uma nova organização, alguns usuários com funções administrativas diferentes dos administradores de sistema receberam erroneamente acesso ao Cloud Manager.
 
