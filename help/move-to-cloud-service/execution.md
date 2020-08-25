@@ -1,9 +1,9 @@
 ---
 title: Fase de execução
 description: Fase de execução
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -79,11 +79,11 @@ Alguns recursos adicionais estão listados abaixo:
 
 * Assista Instalar o SDK do Dispatcher para entender como instalar o SDK do Dispatcher:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601?captions=por_br)
 
 * Assista Configurar o SDK do Dispatcher para entender como configurar o SDK do Dispatcher:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602?captions=por_br)
 
 * Consulte a documentação de [Configuração de desenvolvimento local](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) para configurar um ambiente de desenvolvimento local
 
@@ -113,7 +113,7 @@ Siga os recursos abaixo para saber como usar o Cloud Manager para gerenciar e im
 
 * [Configurar seu pipeline de CI-CDConfiguração do seu pipeline CI-CD](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.translate.html)
 
-* [Implantação dor seu  código](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.translate.htmll)
+* [Implantação do código](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.translate.htmll)
 
 ## Práticas recomendadas de preparação para ativação {#go-live}
 
