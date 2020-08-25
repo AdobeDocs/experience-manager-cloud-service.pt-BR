@@ -1,11 +1,11 @@
 ---
 title: Conectores do Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação dos Conectores do Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '393'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,15 +35,15 @@ Esta página lista os recursos de autoajuda sobre Conectores do Experience Manag
 | [Migração para o AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Entenda a jornada de transição para o Cloud Service. |
 | [Implementação do Guia do usuário](/help/implementing/home.md) | Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento. |
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção. |
-| [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework em AEM como Cloud Service. |
+| [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM as a Cloud Service. |
 
 ## Outros recursos do Experience Manager {#other-resources}
 
 * [Atualizações recentes na documentação](https://helpx.adobe.com/br/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
-* [Documentação HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
-* [Documentação dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
-* [Documentação do Cloud Manager](https://docs.adobe.com/content/help/br/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Documentação HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
+* [Documentação dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+* [Documentação do Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Disponibilidade do GDPR](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
