@@ -3,9 +3,9 @@ sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
+source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '409'
 ht-degree: 96%
 
 ---
@@ -49,7 +49,6 @@ ht-degree: 96%
    + [Configurar tags inteligentes](smart-tags-configuration.md)
    + [Ativos multilíngues e tradução de ativos](translate-assets.md)
    + [Pesquisar aspectos](search-facets.md)
-   + [Estender editor de ativos](extend-asset-editor.md)
    + [API HTTP de ativos](mac-api-assets.md)
    + [Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets](assets-api-content-fragments.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
