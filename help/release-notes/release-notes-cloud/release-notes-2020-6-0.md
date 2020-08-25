@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
 workflow-type: tm+mt
 source-wordcount: '1955'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 
 # Notas de versão do AEM as a Cloud Service 2020.6.0 {#release-notes}
 
-Esta página descreve as Notas de versão gerais do Experience Manager como Cloud Service 2020.6.0.
+Esta página descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.6.0.
 
 ## Data de lançamento {#release-date}
 
@@ -24,7 +24,7 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do AEM
 
 ### Novidades {#whats-new-2020.6.0}
 
-A versão 2.9.0 dos [Componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) agora está disponível como parte do AEM Sites, incluindo:
+A versão 2.9.0 dos [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) agora está disponível como parte do AEM Sites, incluindo:
 
 * Integração entre a [Camada de dados do cliente Adobe](https://github.com/adobe/adobe-client-data-layer) e os Componentes principais
 * Atributos de ID HTML configuráveis para todos os componentes
