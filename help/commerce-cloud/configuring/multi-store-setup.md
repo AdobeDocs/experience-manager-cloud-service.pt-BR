@@ -1,54 +1,54 @@
 ---
 title: Configuração de várias lojas
 description: Configuração de várias lojas
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 94c6abef36b6add300ba3b24855ebf3edf10e1ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Configuração de várias lojas {#multi-store}
 
-Os componentes principais CIF AEM podem ser usados em várias estruturas AEM do site e a implementação subjacente do cliente GraphQL pode se conectar a diferentes Magento stores / visualizações de loja. Isso permite que os projetos implementem configurações complexas de várias lojas/vários sites.
+Os Componentes principais da CIF do AEM podem ser usados em várias estruturas de site do AEM e a implementação de cliente GraphQL subjacente pode se conectar a diferentes lojas/visualizações de loja da Magento. Assim, os projetos podem implementar configurações complexas de várias lojas/vários sites.
 
-Uma apresentação de vídeo detalhando opções para integrar várias Visualizações da Magento Store ao Adobe Experience Manager Sites.
+Veja abaixo um vídeo que detalha passo a passo as opções para integrar várias visualizações da loja da Magento ao Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12&captions=por_br)
 
-AEM recursos de Gerenciamento de vários sites do Live Copy e do Language Copy são usados em conjunto com a Commerce Integration Framework para gerenciar globalmente sites em regiões e localidades.
+Os recursos de gerenciamento de vários sites do AEM para Live Copy e Language Copy são usados junto com a Commerce Integration Framework para gerenciar sites em várias regiões e locales.
 
-A configuração recomendada é usar uma relação 1:1 entre AEM site e visualização store.
+A configuração recomendada é usar uma relação 1:1 entre um site do AEM e uma visualização de loja da Magento.
 
-Para conectar um site AEM e AEM componentes principais CIF, de modo que também a uma visualização de loja dedicada, siga as etapas abaixo:
+Para conectar um site do AEM e os Componentes principais da CIF do AEM a uma visualização de loja dedicada, siga as etapas abaixo:
 
 ## Configuração {#configuration}
 
-1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em Sites do [Magento, Lojas e Visualizações](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações da Magento](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
-2. Verifique se a conexão entre AEM e Magento está funcionando.
+2. Verifique se a conexão entre o AEM e a Magento está funcionando.
 
-3. Crie uma configuração filho da configuração CIF Cloud Service, seguindo estas etapas:
+3. Crie uma configuração secundária da configuração do CIF Cloud Service seguindo estas etapas:
 
-   * AEM vá para Ferramentas -> Geral -> Navegador de configuração
-   * Selecione a configuração básica criada
-   * Criar uma nova configuração utilizando as etapas descritas no ponto 2 acima
+   * No AEM, acesse Ferramentas -> Geral -> Navegador de configuração
+   * Selecione a configuração básica que você criou
+   * Criar uma nova configuração usando as etapas descritas no ponto 2 acima
 
-   Esta nova configuração será criada como uma configuração secundária da base. Agora você pode acessar Ferramentas -> Geral -> Navegador de configuração e criar as configurações.
+   Essa nova configuração será criada como uma configuração secundária da base. Agora você pode acessar Ferramentas -> Geral -> Navegador de configuração e criar as configurações.
 
-4. Atribuir a configuração secundária a um site AEM
+4. Atribua a configuração secundária a um site do AEM
 
-   * Ir para o console AEM Sites
-   * Navegue até a região ou raiz de idioma da estrutura do site, por exemplo, /content/venia/us __ ou /content/venia/us/en para a página de amostra de Venia
-   * Selecionar a página e abrir as propriedades da página
+   * Acesse o console do AEM Sites
+   * Acesse a raiz de região ou idioma da estrutura do site, por exemplo, /content/venia/us _ou_ /content/venia/us/en para a página de exemplo Venia.
+   * Selecione a página e abra as propriedades da página
    * Selecione a guia Avançado
-   * Na `Configuration` seção selecione a configuração que você criou na etapa
+   * Na seção `Configuration` selecione a configuração que você criou na etapa 3
 
 ## Recursos adicionais
 
-* [Sites Magento, Lojas e Visualizações](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
-* [Componentes principais CIF AEM - Configuração de várias lojas/locais](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
-* [Uso do Multi-Site Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [Reutilizando conteúdo: Multi Site Manager e Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
+* [Sites, lojas e visualizações da Magento](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+* [Componentes principais da CIF do AEM — Configuração de várias lojas/sites](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
+* [Usar o gerenciamento de vários sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
