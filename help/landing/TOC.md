@@ -1,11 +1,11 @@
 ---
 sub-product: Ajuda do Adobe Experience Manager as a Cloud Service
 user-guide-title: Ajuda do Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 93%
 + [Conceitos principais do AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/home.html)
 + [Segurança do AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/home.html)
 + [Integração ao AEM as a Cloud Service](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/home.html)
-+ [AEM Sites as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html)
++ [AEM Sites as a Cloud Service](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/sites/home.html)
 + [AEM Assets as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
-+ [Comércio AEM como um Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/home.html)
-+ [Migrar para o AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html)
++ [AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/home.html)
++ [Migração para o AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html)
 + [Implementação de aplicativos do AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/home.html)
 + [Implementação de conectores do AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/connectors/home.html)
 + [Operações e manutenção do AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/operations/home.html)
