@@ -1,18 +1,18 @@
 ---
 title: Notas de versão para 2020.3.0
 description: Notas de versão para 2020.3.0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Notas de versão para AEM as a Cloud Service 2020.3.0{#release-notes}
 
-Esta página descreve as Notas de versão gerais do Experience Manager como Cloud Service 2020.3.0.
+Esta página descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.3.0.
 
 ## Data de lançamento {#release-date}
 
