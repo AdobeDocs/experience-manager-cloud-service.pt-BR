@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 3f8c56cfbb7d1eb17b6b7356108652e82c3b54d3
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,19 +25,19 @@ Esta página lista os guias do usuário de autoajuda do Experience Manager as a 
 | [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service. |
-| [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Entenda como usar e administrar o Experience Manager Commerce como Cloud Service. |
+| [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Aprenda a usar e administrar o Experience Manager Commerce as a Cloud Service. |
 | [Migração para o AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Entenda a jornada de transição para o Cloud Service. |
 | [Implementação do Guia do usuário](/help/implementing/home.md) | Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento. |
 | [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar conectores ao Experience Manager as a Cloud Service. |
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção. |
-| [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework em AEM como Cloud Service. |
+| [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM as a Cloud Service. |
 
 ## Outros recursos do Experience Manager {#other-resources}
 
 * [Atualizações recentes na documentação](https://helpx.adobe.com/br/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
-* [Documentação HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
-* [Documentação dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
+* [Documentação HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
+* [Documentação dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
 * [Documentação do Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/getting-access/navigation.html)
 * [Disponibilidade do GDPR](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
