@@ -1,20 +1,20 @@
 ---
-title: Alterações notáveis nos ativos Adobe Experience Manager como um Cloud Service
-description: Alterações notáveis nos ativos Adobe Experience Manager no Cloud Service de AEM em comparação ao Adobe Experience Manager 6.5.
+title: Alterações notáveis no Adobe Experience Manager Assets como um Cloud Service
+description: Mudanças notáveis nos Adobe Experience Manager Assets no Cloud Service AEM em comparação ao Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 60f11cd86ecfeb47a46f9809d8ae9f1c45a4a25f
+source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 15%
+ht-degree: 20%
 
 ---
 
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-O Adobe Experience Manager como Cloud Service oferece muitos novos recursos e possibilidades para gerenciar seus projetos de AEM. No entanto, há muitas diferenças entre os ativos Experience Manager no local ou no serviço gerenciado pelo Adobe em comparação ao Experience Manager como Cloud Service. Este documento destaca as diferenças importantes para os recursos do Assets.
+O Adobe Experience Manager as a Cloud Service oferece muitos novos recursos e possibilidades para gerenciar projetos do AEM. No entanto, há muitas diferenças entre os ativos Experience Manager no local ou no serviço gerenciado pelo Adobe em comparação ao Experience Manager como Cloud Service. Este documento destaca as diferenças importantes para os recursos do Assets.
 
-As principais diferenças em relação ao Experience Manager 6.5 são as seguintes:
+Estas são as principais diferenças em relação ao Experience Manager 6.5:
 
 * [Inclusão e upload](#asset-ingestion)de ativos.
 * [Microserviços de ativos para processamento](#asset-microservices)nativo na nuvem.
@@ -22,7 +22,7 @@ As principais diferenças em relação ao Experience Manager 6.5 são as seguint
 
 >[!NOTE]
 >
->Este documento destaca as mudanças notáveis nos AEM Assets. Para obter as alterações gerais para AEM como Cloud Service, e outros módulos, consulte:
+>Este documento destaca as mudanças notáveis no AEM Assets. Para obter as alterações gerais para AEM como Cloud Service, e outros módulos, consulte:
 >
 >* [Introdução ao Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* a [Visão geral do AEM as a Cloud Service: novidades e diferenças](/help/overview/what-is-new-and-different.md)
@@ -38,7 +38,7 @@ O upload de ativos foi otimizado para proporcionar eficiência, permitindo um me
 
 * O Experience Manager usa o princípio de acesso binário direto para fazer upload e download e para fazer o processamento de ativos em microserviços. Consulte a [visão geral da ingestão](/help/assets/asset-microservices-overview.md)de ativos.
    * Carregamento de ativos [com acesso](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)binário direto.
-   * Para obter detalhes técnicos, consulte o protocolo de carregamento binário [direto e as APIs](/help/assets/developer-reference-material-apis.md#overview-binary-upload).
+   * Para obter detalhes técnicos, consulte o protocolo de carregamento binário [direto e as APIs](/help/assets/developer-reference-material-apis.md#upload-binary).
 * O fluxo de trabalho padrão **[!UICONTROL DAM Asset Update]** nas versões anteriores do AEM não está mais disponível. Em vez disso, os microserviços de ativos fornecem um serviço dimensionável e prontamente disponível que abrange a maioria do processamento de ativos padrão (execuções, extração de metadados, extração de texto para indexação).
    * Consulte [configurar e usar microserviços de ativos](/help/assets/asset-microservices-configure-and-use.md)
    * Para ter etapas personalizadas de fluxo de trabalho no processamento, é possível usar workflows [de](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) pós-processamento.
