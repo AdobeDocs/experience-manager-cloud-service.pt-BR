@@ -2,9 +2,9 @@
 title: Experiência unificada para ferramentas de refatoração de código
 description: Experiência unificada para ferramentas de refatoração de código
 translation-type: tm+mt
-source-git-commit: c00b10b4d564e05099740b9ff991624db4f37a3d
+source-git-commit: c554506aea99518c94666f5d2e6151a3dce3b91e
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,9 @@ ht-degree: 0%
 
 # Experiência unificada para ferramentas de refatoração de código {#unified-experience}
 
-Várias ferramentas com diferentes pontos de interação para os clientes criam uma experiência desarticulada e aumentam a complexidade do uso de ferramentas, com cada uma tendo diferentes requisitos de execução em termos de instalação, configuração e execução.
+A Experiência unificada para ferramentas de refatoração de código unifica a experiência para execução de AEM como ferramentas de refatoração de código de Cloud Service que operam em arquivos, código e repositórios do dispatcher.
+
+Essa ferramenta reduz a complexidade do uso de ferramentas de refatoração de código, com cada uma tendo diferentes requisitos de execução em termos de instalação, configuração e execução.
 
 ## Benefits {#benefits}
 
@@ -26,9 +28,12 @@ A Experiência unificada para ferramentas de refatoração de código junto com 
 
 * Simplifique a futura adição de novas ferramentas, como a adição de uma nova ferramenta ao plug-in, deve simplesmente exigir a adição de um novo comando para o desenvolvedor e uma simples atualização do plug-in para o usuário, de modo que a experiência permaneça consistente com mais valor agregado.
 
-### Como entender o design do aplicativo
+## Como entender o plug-in {#understanding-plugin}
 
-Essas ferramentas unificam todas as ferramentas de refatoração de código em um aplicativo node.js exposto `aio-cli plugin` para fornecer uma experiência consistente ao usuário.
+O `aio-cli-plugin-aem-cloud-service-migration` reformata o código do cliente, a estrutura do repositório ou as configurações na máquina local do cliente. Esta página captura os requisitos detalhados e as decisões de design para a experiência unificada.
+Está disponível como um código aberto para a comunidade se estender para casos de uso personalizados.
+
+Essas ferramentas unificam todas as ferramentas de refatoração de código em um aplicativo node.js exposto `aio-cli plugin` para fornecer uma experiência consistente ao usuário. O plug-in verifica a base de código local do cliente e produz AEM como um código compatível com Cloud Service, configurações e pacotes que podem ser implantados em ambientes Cloud Service.
 
 O plug-in consiste em duas partes principais:
 
@@ -44,16 +49,12 @@ O plug-in consiste em duas partes principais:
 
    * Gravando as operações executadas durante a migração, em uma ordem consistente para produzir um relatório de resumo.
 
-## Uso do plug-in {#using-plugin}
-
-O `aio-cli-plugin-aem-cloud-service-migration` reformata o código do cliente, a estrutura do repositório ou as configurações na máquina local do cliente. Esta página captura os requisitos detalhados e as decisões de design para a experiência unificada.
-Está disponível como um código aberto para a comunidade se estender para casos de uso personalizados.
-
 ## Disponibilidade {#availability}
 
-Você pode instalar e usar o `aio-cli-plugin-aem-cloud-service-migration` via `aio-cli` (atualmente integrado apenas ao conversor de despachante).
+Você pode instalar e usar o `aio-cli-plugin-aem-cloud-service-migration` via `aio-cli`.
 
-Consulte Recurso [Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para saber mais sobre o uso e como você pode contribuir para essa ferramenta.
+>[!NOTE]
+>Atualmente, essa ferramenta só está integrada ao Dispatcher Converter.
 
-O código de plug-in foi aberto e está disponível no Github.
+Consulte Recurso [Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para saber mais sobre o uso e como você pode contribuir para esse código de plug-in que é open-source no GitHub.
 
