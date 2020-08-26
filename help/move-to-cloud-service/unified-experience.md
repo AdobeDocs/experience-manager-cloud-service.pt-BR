@@ -2,9 +2,9 @@
 title: Experiência unificada para ferramentas de refatoração de código
 description: Experiência unificada para ferramentas de refatoração de código
 translation-type: tm+mt
-source-git-commit: c554506aea99518c94666f5d2e6151a3dce3b91e
+source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -14,19 +14,21 @@ ht-degree: 0%
 
 A Experiência unificada para ferramentas de refatoração de código unifica a experiência para execução de AEM como ferramentas de refatoração de código de Cloud Service que operam em arquivos, código e repositórios do dispatcher.
 
-Essa ferramenta reduz a complexidade do uso de ferramentas de refatoração de código, com cada uma tendo diferentes requisitos de execução em termos de instalação, configuração e execução.
+Essa ferramenta reduz a complexidade do uso de ferramentas de refatoração de código, com cada uma tendo requisitos de execução diferentes em termos de instalação, configuração e execução.
+
+![imagem](/help/move-to-cloud-service/assets/unified-1.png)
 
 ## Benefits {#benefits}
 
-A Unified Experience for Code Refactoring Tools chama e executa todas as ferramentas de refatoração de código que funcionam no código-fonte a partir do mesmo local.
+As ferramentas Unified Experience for Code Refactoring invocam e executam todas as ferramentas de refatoração de código que funcionam no código-fonte a partir do mesmo local.
 
-A Experiência unificada para ferramentas de refatoração de código junto com os repositórios companheiros permite:
+Essas ferramentas, juntamente com os repositórios complementares, permitem:
 
-* Unifique todas as ferramentas que funcionam na migração de código-fonte em um único `node.js` aplicativo exposto `aio-cli plugin` para fornecer uma experiência do usuário consistente.
+* Unificar todas as ferramentas que funcionam na migração de código-fonte em um único `node.js` aplicativo exposto `aio-cli plugin` para fornecer uma experiência do usuário consistente.
 
-* Provisionamento para executar a migração geral por meio de um único comando, além de oferecer flexibilidade para executar uma ferramenta específica conforme o requisito.
+* Provisionamento para executar a migração geral por meio de um único comando, além de oferecer flexibilidade para executar uma ferramenta específica conforme necessário.
 
-* Simplifique a futura adição de novas ferramentas, como a adição de uma nova ferramenta ao plug-in, deve simplesmente exigir a adição de um novo comando para o desenvolvedor e uma simples atualização do plug-in para o usuário, de modo que a experiência permaneça consistente com mais valor agregado.
+* Simplificar a futura adição de novas ferramentas, como adicionar uma nova ferramenta ao plug-in, deve simplesmente exigir a adição de um novo comando para o desenvolvedor e uma atualização simples do plug-in para o usuário, de modo que a experiência permaneça consistente com mais valor agregado.
 
 ## Como entender o plug-in {#understanding-plugin}
 
