@@ -2,7 +2,7 @@
 title: Experiência unificada para ferramentas de refatoração de código
 description: Experiência unificada para ferramentas de refatoração de código
 translation-type: tm+mt
-source-git-commit: 03434343829e1a1fb95256a607619b55626c6afc
+source-git-commit: ae60d0b472ed6368aeb5806329ff1d5c689e0827
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -30,8 +30,8 @@ O `aio-cli-plugin-aem-cloud-service-migration` plug-in consiste em duas partes p
 
 * **Interface do usuário**
 
-   * `aio-cli` comandos para executar uma ou mais ferramentas de refatoração de código (por meio do encadeamento das ferramentas a serem executadas sequencialmente)
-   * `config.yaml` que utiliza os parâmetros de entrada necessários
+   * `aio-cli` para executar uma ou mais ferramentas de refatoração de código (por meio do encadeamento das ferramentas a serem executadas sequencialmente).
+   * `config.yaml` que utiliza os parâmetros de entrada necessários.
 
 * **Conjunto de ferramentas de refatoração de código subjacente**
 
