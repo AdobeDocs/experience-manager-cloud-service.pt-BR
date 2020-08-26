@@ -2,7 +2,7 @@
 title: Experiência unificada para ferramentas de refatoração de código
 description: Experiência unificada para ferramentas de refatoração de código
 translation-type: tm+mt
-source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
+source-git-commit: 9ef0681f93c8c25a1e5115cccb987d2db32c318e
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -16,7 +16,7 @@ A Experiência unificada para ferramentas de refatoração de código unifica a 
 
 Essa ferramenta reduz a complexidade do uso de ferramentas de refatoração de código, com cada uma tendo requisitos de execução diferentes em termos de instalação, configuração e execução.
 
-![imagem](/help/move-to-cloud-service/assets/unified-1.png)
+![imagem](/help/move-to-cloud-service/assets/unified-one.png)
 
 ## Benefits {#benefits}
 
