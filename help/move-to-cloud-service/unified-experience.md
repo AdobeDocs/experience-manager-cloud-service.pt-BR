@@ -2,61 +2,48 @@
 title: Experiência unificada para ferramentas de refatoração de código
 description: Experiência unificada para ferramentas de refatoração de código
 translation-type: tm+mt
-source-git-commit: 9ef0681f93c8c25a1e5115cccb987d2db32c318e
+source-git-commit: 03434343829e1a1fb95256a607619b55626c6afc
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 0%
+source-wordcount: '262'
+ht-degree: 1%
 
 ---
 
 
 # Experiência unificada para ferramentas de refatoração de código {#unified-experience}
 
-A Experiência unificada para ferramentas de refatoração de código unifica a experiência para execução de AEM como ferramentas de refatoração de código de Cloud Service que operam em arquivos, código e repositórios do dispatcher.
-
-Essa ferramenta reduz a complexidade do uso de ferramentas de refatoração de código, com cada uma tendo requisitos de execução diferentes em termos de instalação, configuração e execução.
-
-![imagem](/help/move-to-cloud-service/assets/unified-one.png)
+Desenvolvemos ferramentas para automatizar algumas das tarefas de refatoração de código necessárias para serem compatíveis com AEM como Cloud Service. Para reduzir a complexidade associada à instalação e configuração de diferentes ferramentas de refatoração de código, desenvolvemos um plug-in para unificar as ferramentas que operam em código e repositórios.
 
 ## Benefits {#benefits}
 
-As ferramentas Unified Experience for Code Refactoring invocam e executam todas as ferramentas de refatoração de código que funcionam no código-fonte a partir do mesmo local.
+O plug-in Experiência unificada oferece os seguintes benefícios:
 
-Essas ferramentas, juntamente com os repositórios complementares, permitem:
+* Unifica as ferramentas que funcionam no código fonte em um `node.js` aplicativo exposto como `aio-cli ` plug-in para fornecer uma experiência do usuário consistente ao usuário.
 
-* Unificar todas as ferramentas que funcionam na migração de código-fonte em um único `node.js` aplicativo exposto `aio-cli plugin` para fornecer uma experiência do usuário consistente.
+* Fornece a capacidade de executar todas as ferramentas por meio de um único comando, além de fornecer a flexibilidade para executar ferramentas específicas, conforme necessário.
 
-* Provisionamento para executar a migração geral por meio de um único comando, além de oferecer flexibilidade para executar uma ferramenta específica conforme necessário.
-
-* Simplificar a futura adição de novas ferramentas, como adicionar uma nova ferramenta ao plug-in, deve simplesmente exigir a adição de um novo comando para o desenvolvedor e uma atualização simples do plug-in para o usuário, de modo que a experiência permaneça consistente com mais valor agregado.
+* Fornece extensibilidade para simplificar a adição de novas ferramentas, além de manter a experiência consistente.
 
 ## Como entender o plug-in {#understanding-plugin}
 
-O `aio-cli-plugin-aem-cloud-service-migration` reformata o código do cliente, a estrutura do repositório ou as configurações na máquina local do cliente. Esta página captura os requisitos detalhados e as decisões de design para a experiência unificada.
-Está disponível como um código aberto para a comunidade se estender para casos de uso personalizados.
-
-Essas ferramentas unificam todas as ferramentas de refatoração de código em um aplicativo node.js exposto `aio-cli plugin` para fornecer uma experiência consistente ao usuário. O plug-in verifica a base de código local do cliente e produz AEM como um código compatível com Cloud Service, configurações e pacotes que podem ser implantados em ambientes Cloud Service.
-
-O plug-in consiste em duas partes principais:
+O `aio-cli-plugin-aem-cloud-service-migration` plug-in consiste em duas partes principais:
 
 * **Interface do usuário**
 
-   `aio-cli` comandos para executar uma ou mais ferramentas de migração (por meio do encadeamento das ferramentas a serem executadas sequencialmente)`config.yaml` que utilizam os parâmetros de entrada necessários
+   * `aio-cli` comandos para executar uma ou mais ferramentas de refatoração de código (por meio do encadeamento das ferramentas a serem executadas sequencialmente)
+   * `config.yaml` que utiliza os parâmetros de entrada necessários
 
-* **Conjunto de ferramentas de migração subjacente**
+* **Conjunto de ferramentas de refatoração de código subjacente**
 
-   As ferramentas de migração executam suas funcionalidades:
+   As ferramentas de refatoração de código executam suas funcionalidades:
 
-   * Analisar a seção respectiva do código do cliente e executar a migração (com base na implementação do código para práticas recomendadas) para produzir a saída que pode ser validada e implantada.
+   * Analisar a seção respectiva do código do cliente e manipular o código (com base na implementação do código para as práticas recomendadas) para produzir a saída que pode ser validada e implantada.
 
-   * Gravando as operações executadas durante a migração, em uma ordem consistente para produzir um relatório de resumo.
+   * Produzir um relatório de resumo para registrar as operações executadas durante a execução.
 
 ## Disponibilidade {#availability}
 
-Você pode instalar e usar o `aio-cli-plugin-aem-cloud-service-migration` via `aio-cli`.
-
->[!NOTE]
->Atualmente, essa ferramenta só está integrada ao Dispatcher Converter.
-
 Consulte Recurso [Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para saber mais sobre o uso e como você pode contribuir para esse código de plug-in que é open-source no GitHub.
 
+>[!NOTE]
+>Atualmente, apenas o Dispatcher Converter está integrado ao plug-in.
