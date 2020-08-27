@@ -4,10 +4,10 @@ description: Saiba mais sobre os tipos de metadados e [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 5%
+source-wordcount: '1933'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 >[!MORELIKETHIS]
 >
 >* [Metadados XMP](xmp-metadata.md)
->* [How to edit or add metadata](meta-edit.md)
+>* [Como editar ou adicionar metadados](meta-edit.md)
 
 
 <!-- 
@@ -28,13 +28,13 @@ ht-degree: 5%
 
 ## Por que precisamos de metadados {#why-metadata}
 
-Metadados significa dados sobre dados. Nesse sentido, os dados se referem ao seu ativo digital, digamos uma imagem. Metadata is critical for efficient asset management.
+Metadados significa dados sobre dados. Nesse sentido, os dados se referem ao seu ativo digital, digamos uma imagem. Os metadados são essenciais para o gerenciamento eficiente de ativos.
 
-Metadados é a coleta de todos os dados disponíveis para um ativo, mas não necessariamente contidos nessa imagem. Some examples of metadata are:
+Metadados é a coleta de todos os dados disponíveis para um ativo, mas não necessariamente contidos nessa imagem. Alguns exemplos de metadados são:
 
 * Nome do ativo.
 * Hora e data da última modificação.
-* Size of the asset as it was stored in the repository.
+* Tamanho do ativo conforme ele foi armazenado no repositório.
 * Nome da pasta em que está contido.
 * Ativos relacionados ou tags aplicadas.
 
@@ -65,7 +65,7 @@ Os dois tipos básicos de metadados são metadados técnicos e metadados descrit
 Os metadados técnicos são úteis para aplicativos de software que lidam com ativos digitais e não devem ser mantidos manualmente. [!DNL Experience Manager Assets] e outros softwares determinam automaticamente os metadados técnicos e os metadados podem mudar quando o ativo é modificado. Os metadados técnicos disponíveis de um ativo dependem em grande parte do tipo de arquivo do ativo. Alguns exemplos de metadados técnicos são:
 
 * Tamanho de um arquivo.
-* Dimensões (altura e largura) de uma imagem.
+* Dimension (altura e largura) de uma imagem.
 * Taxa de bits de um arquivo de áudio ou vídeo.
 * Resolução (nível de detalhes) de uma imagem.
 
@@ -84,7 +84,7 @@ Há várias maneiras de incorporar metadados em arquivos. Há suporte para uma s
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por todos [!DNL Experience Manager Assets] o gerenciamento de metadados. A codificação padrão de metadados universais do oferta que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois fornece um modelo de conteúdo avançado. Os usuários do padrão XMP e do [!DNL Experience Manager Assets] têm uma plataforma poderosa para aproveitar. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por [!DNL Experience Manager Assets] todos os gerenciamento de metadados. A codificação padrão de metadados universais do oferta que pode ser incorporada em todos os formatos de arquivo. Adobe e outras empresas oferecem suporte XMP padrão, pois oferecem um modelo de conteúdo avançado. Os usuários XMP padrão e de [!DNL Experience Manager Assets] uma plataforma poderosa para aproveitar. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -142,9 +142,19 @@ Os ativos do Enterprise Manager permitem que você edite os metadados de vários
    >
    >Em campos de valor único, os novos metadados não são anexados ao valor existente no campo mesmo se você selecionar o **[!UICONTROL Modo anexar]**.
 
+## Metadados personalizados usando o perfil de processamento {#metadata-compute-service}
+
+Os ativos como Cloud Service podem gerar metadados personalizados para um ativo usando serviços nativos na nuvem. Configure um perfil de processamento para gerar metadados personalizados. Consulte [como usar o perfil](/help/assets/asset-microservices-configure-and-use.md#use-profiles)de processamento.
+
+![Execução de metadados no perfil de processamento](assets/processing-profile-metadata.png)
+
+>[!TIP]
+>
+>Somente um perfil de processamento pode ser aplicado a uma pasta. Para aplicar vários processos a ativos em uma pasta, adicione mais opções a um único perfil de processamento. Por exemplo, um único perfil pode gerar representações, transcodificar ativos, gerar metadados personalizados e assim por diante. Você pode aplicar filtros de tipo MIME para cada tarefa para que a tarefa apropriada seja acionada para o formato de arquivo necessário.
+
 ## Configurar limite para atualização de metadados em massa {#configlimit}
 
-Para evitar uma situação semelhante ao DOS, o AEM limita o número de parâmetros suportados em uma solicitação Sling. Ao atualizar metadados de muitos ativos de uma só vez, você pode atingir o limite e os metadados não são atualizados para mais ativos. O AEM gera o seguinte aviso nos registros:
+Para evitar uma situação semelhante ao DOS, AEM limita o número de parâmetros suportados em uma solicitação Sling. Ao atualizar metadados de muitos ativos de uma só vez, você pode atingir o limite e os metadados não são atualizados para mais ativos. AEM gera o seguinte aviso nos registros:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
@@ -183,7 +193,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PDF e PDF/X.
 * Photoshop e psAux - [!DNL Adobe Photoshop].
 
-### Metadados do Gerenciamento de direitos digitais {#digital-rights-management-metadata}
+### Metadados de Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -191,7 +201,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PRISM - Requisitos de [publicação para metadados](https://www.idealliance.org/prism-metadata)padrão do setor.
 * PRL - Idioma dos Direitos do PRISM.
 * PUR - Direitos de uso do PRISM.
-* `xmpPlus` - Integração da PLUS com a XMP.
+* `xmpPlus` - Integração do PLUS com o XMP.
 
 ### Metadados específicos da fotografia {#photography-specific-metadata}
 
@@ -205,14 +215,14 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PDF e PDF/X - Adobe PDF e aplicativos de terceiros.
 * PRISM - Requisitos de [publicação para metadados](https://www.prismstandard.org)padrão do setor.
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - Metadados XMP para texto paginado.
+* `xmpPG` - XMP metadados para texto paginado.
 
 ### Metadados específicos de multimídia {#multimedia-specific-metadata}
 
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM` - Gerenciamento de mídia.
 
-## workflows orientados por metadados {#metadata-driven-workflows}
+## Workflows orientados por metadados {#metadata-driven-workflows}
 
 A criação de workflows orientados por metadados ajuda a automatizar alguns processos, o que aumenta a eficiência. Em um fluxo de trabalho controlado por metadados, o sistema de gerenciamento de fluxo de trabalho lê o fluxo de trabalho e, como resultado, executa alguma ação predefinida. Por exemplo, algumas maneiras de usar workflows orientados por metadados:
 
