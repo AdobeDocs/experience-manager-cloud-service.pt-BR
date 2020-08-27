@@ -2,10 +2,10 @@
 title: Trabalhar com versões de páginas
 description: Criar, comparar e restaurar versões de uma página
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 2d5c7ee7866f8334e67a36b120fdb8ad7a34e7f1
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 100%
+source-wordcount: '1510'
+ht-degree: 67%
 
 ---
 
@@ -15,8 +15,14 @@ ht-degree: 100%
 O controle de versão cria um “instantâneo” de uma página em um ponto no tempo específico. Com o controle de versão, você pode executar as seguintes ações:
 
 * Criar uma versão de uma página.
-* Restaurar uma página para uma versão anterior, por exemplo, para desfazer uma alteração feita em uma página.
-* Comparar a versão atual de uma página com uma versão anterior, com diferenças no texto e nas imagens realçadas.
+* Reinstale uma versão anterior de uma ou mais páginas para:
+   * Desfazer alterações feitas nas páginas.
+   * Restaurar páginas que foram excluídas.
+   * Restaure uma árvore (como em uma data e hora especificadas).
+* Pré-visualização uma versão.
+* Compare a versão atual de uma página com uma versão anterior.
+   * As diferenças no texto e nas imagens são destacadas.
+* O Timewarp usa as versões de página para determinar o estado do ambiente de publicação.
 
 ## Criar uma nova versão   {#creating-a-new-version}
 
@@ -53,33 +59,104 @@ O controle de versão cria um “instantâneo” de uma página em um ponto no t
 
 A linha do tempo será aberta com as informações atualizadas para indicar a nova versão.
 
-## Reverter para uma versão da página {#reverting-to-a-page-version}
+## Reinstalação de versões {#reinstating-versions}
 
-Após a criação de uma versão, você poderá reverter para a versão se necessário.
+Depois de criar uma versão da página, há vários métodos de reinstalação de uma versão anterior:
+
+* a opção **Reverter para esta versão** no painel [Linha](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) do tempo
+
+   Reinstale uma versão anterior de uma página selecionada.
+
+* as opções **Restaurar** na barra de ferramentas de [ações superiores](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+
+   * **Restaurar versão**
+
+      Reinstalar versões de páginas especificadas na pasta atualmente selecionada; isso também pode incluir a restauração de páginas que foram excluídas anteriormente.
+
+   * **Restaurar árvore**
+
+      Reinstale uma versão de uma árvore inteira como em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente.
 
 >[!NOTE]
 >
->Ao restaurar uma página, a versão criada é parte da nova ramificação.
+>Ao reinstalar uma página, a versão criada fará parte de uma nova ramificação.
 >
 >Para ilustrar:
 >
 >1. Crie versões de qualquer página.
 >1. Os nomes dos rótulos iniciais e do nó da versão serão 1.0, 1.1, 1.2 e assim por diante.
->1. Restaure a primeira versão; isto é, 1.0.
+>1. Reinstale a primeira versão; ou seja, 1.0.
 >1. Crie novas versões novamente.
 >1. Os rótulos e os nomes de nó gerados agora serão 1.0.0, 1.0.1, 1.0.2 etc.
 
 
-Para reverter para uma versão anterior:
+### Reverter para uma versão {#revert-to-a-version}
+
+Para **Reverter** a página selecionada para uma versão anterior:
 
 1. Navegue para mostrar a página para a qual você deseja reverter para uma versão anterior.
 1. Selecione a página no [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**. As versões de página da página selecionada serão listadas.
 1. Selecione a versão para a qual você deseja reverter. As opções possíveis serão mostradas:
 
-   ![Reverter versão](/help/sites-cloud/authoring/assets/versions-revert.png)
+   ![Reverter para essa versão](/help/sites-cloud/authoring/assets/versions-revert.png)
 
 1. Selecione **Reverter para esta versão**. A versão selecionada será restaurada e as informações na linha do tempo serão atualizadas.
+
+### Restaurar versão {#restore-version}
+
+Este método pode ser usado para restaurar versões de páginas especificadas na pasta atual; isso também pode incluir a restauração de páginas que foram excluídas anteriormente:
+
+1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+
+1. Selecione **Restaurar** e, em seguida, **Restaurar versão** na barra de ferramentas de [ações superiores](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar).
+
+   >[!NOTE]
+   >
+   >Se, faça o seguinte:
+   >* você selecionou uma única página que nunca teve nenhuma página secundária.
+   >* ou nenhuma das páginas da pasta tem versões,
+
+   >
+   >Em seguida, a exibição estará vazia, pois não há versões aplicáveis.
+
+1. As versões disponíveis serão listadas:
+
+   ![Restaurar versão - Lista de todas as páginas na pasta](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
+
+1. Para uma página específica, use o seletor suspenso em **RESTORE TO VERSION** (RESTAURAR PARA VERSÃO) para selecionar a versão necessária para essa página.
+
+   ![Restaurar versão - Selecionar versão](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
+
+1. Na exibição principal, selecione a página desejada a ser restaurada:
+
+   ![Restaurar versão - Selecionar página](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
+
+1. Selecione **Restaurar** para a versão selecionada, da página selecionada, a ser restaurada como a versão *atual* .
+
+>[!NOTE]
+>
+>A ordem na qual você seleciona uma página obrigatória e a versão relacionada é intercambiável.
+
+### Restaurar árvore {#restore-tree}
+
+Este método pode ser usado para restaurar uma versão de uma árvore em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente:
+
+1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+
+1. Selecione **Restaurar** e, em seguida, **Restaurar árvore** na barra de ferramentas de [ações superiores](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). A versão mais recente da árvore será exibida:
+
+   ![Restaurar árvore](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
+
+1. Use o seletor de data e hora em Versões **mais recentes na Data** para selecionar outra versão da árvore - a que será restaurada.
+
+1. Defina o sinalizador Páginas **sem controle de versão** Preservadas, conforme necessário:
+
+   * Se ativo (selecionado), quaisquer páginas sem controle de versão serão mantidas e não serão afetadas pela restauração.
+
+   * Se inativo (não selecionado), quaisquer páginas sem controle de versão serão removidas, pois não existiam na árvore com controle de versão.
+
+1. Selecione **Restaurar** para a versão selecionada da árvore a ser restaurada como a versão *atual* .
 
 ## Visualização de uma versão   {#previewing-a-version}
 
