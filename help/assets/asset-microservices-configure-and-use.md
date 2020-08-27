@@ -1,33 +1,23 @@
 ---
-title: Configurar e usar os microserviços de ativos para processamento de ativos
-description: Saiba como configurar e usar os microserviços de ativos nativos na nuvem para processar ativos em escala.
+title: Configure e use microserviços de ativos para processamento de ativos.
+description: Configure e use os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
+source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2530'
 ht-degree: 1%
 
 ---
 
 
-# Usar microserviços e perfis de processamento de ativos {#get-started-using-asset-microservices}
+# Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
-<!--
-* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
-* How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/application process.
-* How/where can admins check what's already configured and provisioned.
-* How to create new config or request for new provisioning/purchase.
+Os microserviços de ativos fornecem processamento escalonável e resiliente de ativos usando aplicativos nativos na nuvem (também chamados de trabalhadores). O Adobe gerencia os serviços para uma manipulação otimizada de diferentes tipos de ativos e opções de processamento.
 
-* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
--->
+Os microserviços de ativos permitem que você processe uma [ampla variedade de tipos](/help/assets/file-format-support.md) de arquivos que abrangem mais formatos prontos para uso do que o que é possível com versões anteriores do [!DNL Experience Manager]. Por exemplo, a extração em miniatura dos formatos PSD e PSB agora é possível e exigia soluções de terceiros como o ImageMagick.
 
-Os microserviços de ativos fornecem processamento escalonável e resiliente de ativos usando serviços em nuvem. O Adobe gerencia os serviços para uma manipulação otimizada de diferentes tipos de ativos e opções de processamento.
-
-O processamento de ativos depende da configuração em Perfis **[!UICONTROL de]** processamento, que fornecem uma configuração padrão, e permitem que um administrador adicione uma configuração de processamento de ativos mais específica. Os administradores podem criar e manter as configurações de workflows de pós-processamento, incluindo personalização opcional. Personalizar workflows permite extensibilidade e personalização completa.
-
-Os microserviços de ativos permitem que você processe uma [ampla variedade de tipos](/help/assets/file-format-support.md) de arquivos que abrangem mais formatos prontos para uso do que o que é possível com as versões anteriores do Experience Manager. Por exemplo, a extração em miniatura dos formatos PSD e PSB agora é possível e exigia soluções de terceiros como o ImageMagick.
+O processamento de ativos depende da configuração em Perfis **[!UICONTROL de]** processamento. O Experience Manager fornece uma configuração padrão básica e permite que os administradores adicionem configurações mais específicas de processamento de ativos. Os administradores criam, mantêm e modificam as configurações de workflows de pós-processamento, incluindo personalização opcional. Personalizar os workflows permite que os desenvolvedores estendam a oferta padrão.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -93,7 +83,7 @@ Para criar um perfil de processamento padrão, siga estas etapas:
    * Qualidade em porcentagem de cada execução JPEG.
    * Tipos MIME incluídos e excluídos para definir a aplicabilidade de um perfil.
 
-   ![adição de perfis de processamento](assets/processing-profiles-adding.png)
+   ![adição de perfis de processamento](assets/processing-profiles-image.png)
 
 1. Clique em **[!UICONTROL Salvar]**.
 
@@ -158,9 +148,7 @@ A integração do Asset Compute Service permite que o Experience Manager passe e
 
 ![perfil de processamento personalizado](assets/custom-processing-profile.png)
 
-*Figura: Use o campo Parâmetros[!UICONTROL de]serviço para passar informações adicionadas para parâmetros predefinidos criados no aplicativo personalizado.*
-
-Quando imagens de campanha são carregadas na pasta na qual o perfil de processamento é aplicado, as imagens são atualizadas com `Jumanji` texto na `Arial-BoldMT` fonte.
+*Figura: Use o campo Parâmetros[!UICONTROL de]serviço para passar informações adicionadas para parâmetros predefinidos criados no aplicativo personalizado. Neste exemplo, quando imagens de campanha são carregadas, as imagens são atualizadas com`Jumanji`texto na`Arial-BoldMT`fonte.*
 
 ## Usar perfis de processamento para processar ativos {#use-profiles}
 
@@ -169,19 +157,20 @@ Crie e aplique perfis de processamento adicionais e personalizados a pastas espe
 Aplique perfis de processamento a pastas usando um dos seguintes métodos:
 
 * Os administradores podem selecionar uma definição de perfil de processamento em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Processamento de Perfis]** e usar a ação **[!UICONTROL Aplicar Perfil às pastas]** . Ele abre um navegador de conteúdo que permite navegar para pastas específicas, selecioná-las e confirmar o aplicativo do perfil.
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Para salvar as alterações, clique em **[!UICONTROL Salvar e fechar]**.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the appropriate processing profile for that folder. Para salvar as alterações, clique em **[!UICONTROL Salvar e fechar]**.
+   ![Aplicar o perfil de processamento a uma pasta na guia Propriedades do ativo](assets/folder-properties-processing-profile.png)
 
->[!NOTE]
+>[!TIP]
 >
->Somente um perfil de processamento pode ser aplicado a uma pasta específica. Para gerar mais execuções, adicione mais definições de execução ao perfil de processamento existente.
+>Somente um perfil de processamento pode ser aplicado a uma pasta. Para gerar mais execuções, adicione mais definições de execução ao perfil de processamento existente.
 
-Depois que um perfil de processamento é aplicado a uma pasta, todos os novos ativos carregados (ou atualizados) nessa pasta ou em qualquer subpasta dela são processados usando o perfil de processamento adicional configurado. Esse processamento é adicionado ao perfil padrão. Se você aplicar vários perfis a uma pasta, os ativos carregados ou atualizados serão processados usando cada um desses perfis.
+Depois que um perfil de processamento é aplicado a uma pasta, todos os novos ativos carregados (ou atualizados) nessa pasta ou em qualquer subpasta dela são processados usando o perfil de processamento adicional configurado. Esse processamento é adicionado ao perfil padrão.
 
 >[!NOTE]
 >
 >Um perfil de processamento aplicado a uma pasta funciona para a árvore inteira, mas pode ser substituído por outro perfil aplicado a uma subpasta. Quando os ativos são carregados em uma pasta, o Experience Manager verifica as propriedades da pasta que os contém para verificar se há um perfil de processamento. Se nenhum for aplicado, uma pasta pai na hierarquia será verificada para que um perfil de processamento seja aplicado.
 
-Todas as execuções geradas estão disponíveis na visualização [!UICONTROL Representações] no painel esquerdo. Abra a pré-visualização de ativos e abra o painel esquerdo para acessar a visualização **[!UICONTROL Representações]** . As representações específicas no perfil de processamento, para as quais o tipo de ativo específico corresponde às regras de inclusão do tipo MIME, devem estar visíveis e acessíveis.
+Para verificar se os ativos são processados, pré-visualização as representações geradas na visualização [!UICONTROL Representações] no painel esquerdo. Abra a pré-visualização de ativos e abra o painel esquerdo para acessar a visualização **[!UICONTROL Representações]** . As representações específicas no perfil de processamento, para as quais o tipo de ativo específico corresponde às regras de inclusão do tipo MIME, devem estar visíveis e acessíveis.
 
 ![execuções adicionais](assets/renditions-additional-renditions.png)
 
@@ -238,4 +227,10 @@ Para obter detalhes sobre qual etapa de fluxo de trabalho padrão pode ser usada
 >* [Introdução ao Serviço](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)de Computação de Ativos.
 >* [Entenda a extensibilidade e quando usá-la](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 >* [Como criar aplicativos](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)personalizados.
+>* [Tipos MIME suportados para vários casos](/help/assets/file-format-support.md)de uso.
 
+
+<!-- TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
