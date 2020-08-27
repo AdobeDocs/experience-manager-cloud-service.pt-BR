@@ -2,9 +2,9 @@
 title: Invalidar o cache CDN por meio do Dynamic Media
 description: A invalidação do conteúdo em cache CDN (Content Delivery Network) permite que você atualize rapidamente os ativos entregues pelo Dynamic Media, em vez de aguardar a expiração do cache.
 translation-type: tm+mt
-source-git-commit: 5549f7ea40f13b9fa47abb81ddb0b9a1175b041d
+source-git-commit: fa86e005a44600fe2ff856a137c6de21a263689e
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1310'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Os ativos de Mídia dinâmica são armazenados em cache pelo CDN (Content Delive
 
 >[!IMPORTANT]
 >
->As etapas a seguir se aplicam somente ao Dynamic Media em AEM como Cloud Service. Você também deve usar o CDN predefinido que está fornecido com AEM Dynamic Media. Nenhum outro CDN personalizado é suportado por este recurso. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>As etapas a seguir se aplicam somente ao Dynamic Media em AEM como Cloud Service. Este recurso também exige que você use o CDN predefinido que está fornecido com AEM Dynamic Media; nenhum outro CDN personalizado é suportado. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 Consulte também Visão geral do [cache no Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
