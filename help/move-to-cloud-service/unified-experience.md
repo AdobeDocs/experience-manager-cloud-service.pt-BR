@@ -2,7 +2,7 @@
 title: Experiência unificada para ferramentas de refatoração de código
 description: Experiência unificada para ferramentas de refatoração de código
 translation-type: tm+mt
-source-git-commit: ae60d0b472ed6368aeb5806329ff1d5c689e0827
+source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -16,7 +16,7 @@ Desenvolvemos ferramentas para automatizar algumas das tarefas de refatoração 
 
 ## Benefits {#benefits}
 
-O plug-in Experiência unificada oferece os seguintes benefícios:
+O plug-in Unified Experience oferece os seguintes benefícios:
 
 * Unifica as ferramentas que funcionam no código fonte em um `node.js` aplicativo exposto como `aio-cli ` plug-in para fornecer uma experiência do usuário consistente ao usuário.
 
