@@ -2,9 +2,9 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 translation-type: tm+mt
-source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
+source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1521'
 ht-degree: 2%
 
 ---
@@ -92,7 +92,7 @@ Depois que a nova definição de índice é adicionada, o novo aplicativo precis
 
 O gerenciamento de índice trata de adicionar, remover e alterar índices. A alteração da *definição* de um índice é rápida, mas a aplicação da alteração (muitas vezes chamada de &quot;criação de um índice&quot; ou, para índices existentes, &quot;reindexação&quot;) requer tempo. Não é instantâneo: o repositório deve ser verificado para que os dados sejam indexados.
 
-### O que é a implantação do Blue-Green {#what-is-blue-green-deployment}
+### O que é implantação da Blue-Green {#what-is-blue-green-deployment}
 
 A implantação Blue-Green pode reduzir o tempo de inatividade. Também permite upgrades sem tempo de inatividade e reversões rápidas. A versão antiga do aplicativo (azul) é executada ao mesmo tempo que a nova versão do aplicativo (verde).
 
@@ -138,7 +138,7 @@ O número da versão é incrementado sempre que o índice é alterado. Para evit
 
 ### Alterações nos índices prontos para uso {#changes-to-out-of-the-box-indexes}
 
-Depois que o Adobe altera um índice predefinido como &quot;damAssetLucene&quot; ou &quot;cqPageLucene&quot;, um novo índice chamado `damAssetLucene-2` ou `cqPageLucene-2` é criado ou, se o índice já foi personalizado, a definição de índice personalizado é unida às alterações no índice predefinido, como mostrado abaixo. A mesclagem de alterações ocorre automaticamente. Isso significa que você não precisa fazer nada se um índice predefinido for alterado. No entanto, é possível personalizar o índice novamente mais tarde.
+Quando o Adobe altera um índice predefinido como &quot;damAssetLucene&quot; ou &quot;cqPageLucene&quot;, um novo índice chamado `damAssetLucene-2` ou `cqPageLucene-2` é criado ou, se o índice já foi personalizado, a definição de índice personalizado é unida às alterações no índice predefinido, como mostrado abaixo. A mesclagem de alterações ocorre automaticamente. Isso significa que você não precisa fazer nada se um índice predefinido for alterado. No entanto, é possível personalizar o índice novamente mais tarde.
 
 | Índice | Índice predefinido | Usar na versão 2 | Usar na versão 3 |
 |---|---|---|---|
@@ -176,3 +176,7 @@ A versão antiga do aplicativo usa a seguinte configuração:
 A nova versão do aplicativo usa a seguinte configuração (alterada):
 
 `/oak:index/acme.product-custom-2`
+
+### Disponibilidade de índice/tolerância a falhas {#index-availability}
+
+É recomendável criar índices de duplicado para recursos que sejam extremamente importantes (tendo em mente a convenção de nomenclatura para os índices mencionados acima), de modo que, no caso de corrupção de índice ou qualquer evento imprevisto, haja um índice de fallback disponível para responder a query.
