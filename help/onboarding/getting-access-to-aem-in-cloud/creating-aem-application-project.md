@@ -2,10 +2,10 @@
 title: AEM Application Project - Cloud Service
 description: AEM Application Project - Cloud Service
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 1af31272f0052c557206c82a7e6c7480abca1024
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 9%
+source-wordcount: '1675'
+ht-degree: 8%
 
 ---
 
@@ -118,7 +118,7 @@ Para fazer isso, no arquivo pom.xml, adicione uma `<plugin>` entrada com a segui
 
 Em alguns casos, os clientes acham necessário variar o processo de criação com base nas informações sobre o programa ou pipeline.
 
-Por exemplo, se a miniificação do JavaScript em tempo de criação estiver sendo feita, por meio de uma ferramenta como gulp, pode haver um desejo de usar um nível de miniificação diferente ao criar um ambiente dev em vez de construir para o palco e a produção.
+Por exemplo, se a miniificação do JavaScript em tempo de criação estiver sendo feita, por meio de uma ferramenta como gulp, pode haver um desejo de usar um nível de miniificação diferente ao criar um ambiente dev em vez de construir para estágio e produção.
 
 Para suportar isso, o Cloud Manager adiciona essas variáveis de ambiente padrão ao container build para cada execução.
 
@@ -246,6 +246,9 @@ E se você quiser enviar uma mensagem simples somente quando a criação for exe
 
 ## Suporte ao repositório Maven protegido por senha {#password-protected-maven-repositories}
 
+>[!NOTE]
+>Os artefatos de um repositório Maven protegido por senha devem ser usados com muito cuidado, pois o código implantado por esse mecanismo não é executado atualmente pelos portões de qualidade do Cloud Manager. Portanto, deve ser utilizado apenas em casos raros e para códigos não ligados à AEM. Recomenda-se também implantar as fontes Java e todo o código fonte do projeto junto com o binário.
+
 Para usar um repositório Maven protegido por senha do Gerenciador de nuvem, especifique a senha (e, opcionalmente, o nome de usuário) como uma Variável [secreta do](#pipeline-variables) Pipeline e faça referência a esse segredo em um arquivo chamado `.cloudmanager/maven/settings.xml` no repositório git. Esse arquivo segue o [schema de Arquivo](https://maven.apache.org/settings.html) de Configurações Maven. Quando os start de processo de criação do Gerenciador de nuvem, o `<servers>` elemento nesse arquivo será mesclado no arquivo padrão `settings.xml` fornecido pelo Gerenciador de nuvem. As IDs de servidor que começam com `adobe` e `cloud-manager` são consideradas reservadas e não devem ser usadas por servidores personalizados. As IDs de servidor **que não** correspondem a um desses prefixos ou a ID padrão nunca `central` serão espelhadas pelo Gerenciador de nuvem. Com esse arquivo no lugar, a ID do servidor seria referenciada de dentro de um `<repository>` e/ou `<pluginRepository>` elemento dentro do `pom.xml` arquivo. Geralmente, esses `<repository>` e/ou `<pluginRepository>` elementos estariam contidos em um perfil [específico do](#activating-maven-profiles-in-cloud-manager)Cloud Manager, embora isso não seja estritamente necessário.
 
 Por exemplo, digamos que o repositório esteja em https://repository.myco.com/maven2, o usuário que o Gerenciador da Cloud deve usar é `cloudmanager` e a senha é `secretword`.
@@ -311,6 +314,54 @@ Por fim, consulte a ID do servidor dentro do `pom.xml` arquivo:
         </build>
     </profile>
 </profiles>
+```
+
+### Implantação de fontes {#deploying-sources}
+
+É uma boa prática implantar as fontes Java junto com o binário em um repositório Maven.
+
+Configure o plug-in maven-source em seu projeto:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>attach-sources</id>
+                    <goals>
+                        <goal>jar-no-fork</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+```
+
+### Implantação de fontes de projeto {#deploying-project-sources}
+
+É uma boa prática implantar toda a fonte do projeto junto com o binário em um repositório Maven - isso permite reconstruir o artefato exato.
+
+Configure o plug-in maven-assembly em seu projeto:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>project-assembly</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                    <configuration>
+                        <descriptorRefs>
+                            <descriptorRef>project</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 ```
 
 ## Instalação de pacotes adicionais do sistema {#installing-additional-system-packages}
