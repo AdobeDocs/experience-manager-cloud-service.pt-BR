@@ -3,10 +3,10 @@ title: Configure o AEM Assets como um Cloud Service com o Brand Portal
 description: Configurar o AEM Assets com o Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 830fd3a61d479a47b03cffc117f7192dd2c740cc
+source-git-commit: 96a084dd0e8f250b343b616573aeedb2b83682e4
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 20%
+source-wordcount: '1653'
+ht-degree: 19%
 
 ---
 
@@ -17,9 +17,9 @@ A configuração do Portal de marcas dos ativos Adobe Experience Manager permite
 
 **Fluxo de trabalho de configuração**
 
-A AEM Assets como Cloud Service é configurada com o Brand Portal via Adobe Developer Console, que obtém um token IMS para autorização do locatário do Brand Portal. Requer configurações tanto no AEM Assets quanto no Adobe Developer Console.
+A AEM Assets como Cloud Service é configurada com o Brand Portal via Adobe Developer Console, que obtém um token de conta Adobe Identity Management Services (IMS) para autorização do locatário do Brand Portal. Requer configurações tanto no AEM Assets quanto no Adobe Developer Console.
 
-1. No AEM Assets, crie uma conta Adobe Identity Management Services (IMS) e gere uma chave pública (certificado).
+1. No AEM Assets, crie uma conta IMS e gere uma chave pública (certificado).
 1. No Console do desenvolvedor do Adobe, crie um projeto para seu locatário do Brand Portal (organização).
 1. No projeto, configure uma API usando a chave pública para criar uma conexão de conta de serviço.
 1. Obtenha as credenciais da conta de serviço e as informações de carga do JSON Web Token (JWT).
@@ -29,7 +29,7 @@ A AEM Assets como Cloud Service é configurada com o Brand Portal via Adobe Deve
 
 >[!NOTE]
 >
->Uma instância do AEM Assets só deve ser configurada com um locatário do Brand Portal.
+>Uma instância AEM Assets como Cloud Service só deve ser configurada com um locatário do Brand Portal.
 
 
 ## Pré-requisitos {#prerequisites}
@@ -52,7 +52,7 @@ Execute as seguintes etapas na sequência especificada para configurar o AEM Ass
 
 ### Criar configuração IMS {#create-ims-configuration}
 
-A configuração IMS autentica seu locatário do Brand Portal com a AEM Assets.
+A configuração IMS autentica seu AEM Assets como uma instância Cloud Service com o locatário do Brand Portal.
 
 A configuração IMS inclui duas etapas:
 
@@ -61,7 +61,7 @@ A configuração IMS inclui duas etapas:
 
 ### Obter certificado público {#public-certificate}
 
-O certificado público permite que você autentique seu perfil no Adobe Developer Console.
+A chave pública (certificado) autentica seu perfil no Adobe Developer Console.
 
 1. Faça logon no AEM Assets.
 
@@ -70,17 +70,17 @@ O certificado público permite que você autentique seu perfil no Adobe Develope
 
 1. Na página Configurações de Adobe IMS, clique em **[!UICONTROL Criar]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
 
-1. Selecione a solução em nuvem Portal **[!UICONTROL da marca do]** Adobe.
+1. Selecione **[!UICONTROL Adobe Brand Portal]** na lista suspensa **[!UICONTROL Cloud Solution]** .
 
-1. Ative a caixa de seleção **[!UICONTROL Criar novo certificado]** e especifique um **alias** para a chave pública. O alias serve como nome da chave pública.
+1. Marque a caixa de seleção **[!UICONTROL Criar novo certificado]** e especifique um **alias** para a chave pública. O alias serve como nome da chave pública.
 
 1. Clique em **[!UICONTROL Criar certificado]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![Criar certificado](assets/ims-config2.png)
 
-1. Click **[!UICONTROL Download Public Key]** and save the certificate (.crt) file on your machine.
+1. Clique no ícone **[!UICONTROL Baixar chave]** pública e salve o arquivo de chave pública (.crt) em seu computador.
 
-   O arquivo de certificado será usado posteriormente para configurar a API para o locatário do Brand Portal e gerar credenciais de conta de serviço no Console do desenvolvedor do Adobe.
+   A chave pública será usada posteriormente para configurar a API para o locatário do Brand Portal e gerar credenciais de conta de serviço no Console do desenvolvedor do Adobe.
 
    ![Baixar certificado](assets/ims-config3.png)
 
@@ -92,7 +92,7 @@ O certificado público permite que você autentique seu perfil no Adobe Develope
 
 ### Criar conexão de conta de serviço (JWT) {#createnewintegration}
 
-No Console do desenvolvedor do Adobe, os projetos e as APIs são configurados no nível locatário (organização) do Brand Portal. Configurar uma API cria uma conexão de conta de serviço (JWT). Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Para configurar o AEM Assets com o Brand Portal, você deve gerar um certificado público (chave pública) no AEM Assets e criar credenciais no Adobe Developer Console fazendo upload da chave pública. Essa chave pública é usada para configurar a API para o locatário do Brand Portal selecionado e gera as credenciais e a carga JWT para a conta de serviço. Essas credenciais são necessárias para configurar a conta IMS no AEM Assets. Depois que a conta IMS for configurada, você poderá configurar o serviço em nuvem do Brand Portal no AEM Assets.
+No Console do desenvolvedor do Adobe, os projetos e as APIs são configurados no nível locatário (organização) do Brand Portal. Configurar uma API cria uma conexão de conta de serviço (JWT). Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Para configurar o AEM Assets com o Brand Portal, você deve gerar uma chave pública (certificado) no AEM Assets e criar credenciais no Adobe Developer Console fazendo upload da chave pública. Essas credenciais são necessárias para configurar a conta IMS no AEM Assets. Depois que a conta IMS for configurada, você poderá configurar o serviço em nuvem do Brand Portal no AEM Assets.
 
 Execute as seguintes etapas para gerar as credenciais da conta de serviço e a carga JWT:
 
@@ -103,7 +103,7 @@ Execute as seguintes etapas para gerar as credenciais da conta de serviço e a c
    >
    >Verifique se você selecionou a organização IMS correta (locatário do Brand Portal) na lista suspensa (organização) localizada no canto superior direito.
 
-1. Click **[!UICONTROL Create new project]**. Um projeto em branco é criado para sua organização.
+1. Click **[!UICONTROL Create new project]**. Um projeto em branco com um nome gerado pelo sistema é criado para sua organização.
 
    Clique em **[!UICONTROL Editar projeto]** para atualizar o Título **[!UICONTROL e a]** Descrição **[!UICONTROL do]** projeto e clique em **[!UICONTROL Salvar]**.
 
@@ -113,15 +113,15 @@ Execute as seguintes etapas para gerar as credenciais da conta de serviço e a c
 
    Verifique se você tem acesso ao serviço Portal de marcas AEM.
 
-1. Na janela **[!UICONTROL Configurar API]** , clique em **[!UICONTROL Carregar sua chave]** pública. Em seguida, clique em **[!UICONTROL Selecionar um arquivo]** e faça upload do certificado público (arquivo .crt) que você baixou na seção [obter certificado](#public-certificate) público.
+1. Na janela **[!UICONTROL Configurar API]** , clique em **[!UICONTROL Carregar sua chave]** pública. Em seguida, clique em **[!UICONTROL Selecionar um arquivo]** e carregue a chave pública (arquivo .crt) que você baixou na seção [obter certificado](#public-certificate) público.
 
    Clique em **[!UICONTROL Avançar]**.
 
    ![Carregar chave pública](assets/service-account3.png)
 
-1. Verifique o certificado público e clique em **[!UICONTROL Avançar]**.
+1. Verifique a chave pública e clique em **[!UICONTROL Avançar]**.
 
-1. Selecione o portal **[!UICONTROL de marcas dos]** ativos de perfil do produto padrão e clique em **[!UICONTROL Salvar API]** configurada.
+1. Selecione **[!UICONTROL Assets Brand Portal]** como o perfil de produto padrão e clique em **[!UICONTROL Salvar API]** configurada.
 
    <!-- 
    In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
@@ -129,7 +129,7 @@ Execute as seguintes etapas para gerar as credenciais da conta de serviço e a c
 
    ![Selecionar Perfil do produto](assets/service-account4.png)
 
-1. Depois que a API for configurada, você será redirecionado para a página de visão geral da API. Na navegação à esquerda em **[!UICONTROL Credenciais]**, clique em **[!UICONTROL Service Account (JWT)]**.
+1. Depois que a API for configurada, você será redirecionado para a página de visão geral da API. Na navegação à esquerda em **[!UICONTROL Credenciais]**, clique na opção **[!UICONTROL Service Account (JWT)]** .
 
    >[!NOTE]
    >
@@ -141,7 +141,7 @@ Execute as seguintes etapas para gerar as credenciais da conta de serviço e a c
 
    ![Credenciais da Conta de Serviço](assets/service-account5.png)
 
-1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]**.
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information.
 
 Agora você pode usar a ID do cliente (chave da API), o segredo do cliente e a carga JWT para [configurar a conta](#create-ims-account-configuration) IMS no AEM Assets.
 
@@ -226,7 +226,7 @@ Execute as seguintes etapas para configurar o serviço em nuvem do Brand Portal:
 
 1. Faça logon no AEM Assets.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Na página Configurações do Brand Portal, clique em **[!UICONTROL Criar]**.
 
@@ -256,9 +256,6 @@ Execute as seguintes etapas para validar a configuração:
 
    ![](assets/test-bpconfig2.png)
 
-   >[!NOTE]
-   >
-   >Por padrão, um agente de distribuição é criado para um locatário do Brand Portal.
 
 1. Clique em **[!UICONTROL Publicar no Brand Portal]** para abrir o agente de distribuição.
 
@@ -310,7 +307,7 @@ Por exemplo, publicamos um ativo do AEM Assets para o Brand Portal para validar 
 
    ![](assets/test-bpconfig5.png)
 
-O agente de distribuição gera os seguintes registros:
+O agente de distribuição gerou os seguintes registros:
 
 * INFORMAÇÕES: Este é um log gerado pelo sistema que aciona uma configuração bem-sucedida do agente de distribuição.
 * DSTRQ1 (Solicitação 1): acionado na conexão de teste.
