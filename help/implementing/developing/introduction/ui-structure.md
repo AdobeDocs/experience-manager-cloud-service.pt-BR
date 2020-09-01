@@ -2,9 +2,9 @@
 title: Estrutura da IU AEM
 description: A interface do usuário AEM tem vários princípios subjacentes e é composta por vários elementos chave
 translation-type: tm+mt
-source-git-commit: 0ae4a4695f3d869b9372694396711ca8626e1df1
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '915'
 ht-degree: 2%
 
 ---
@@ -169,4 +169,4 @@ Dependendo do espaço disponível, as barras de ferramentas do componente são p
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Para obter mais informações técnicas, consulte a documentação [JS definida](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de página habilitado para toque.
+Para obter mais informações técnicas, consulte a documentação [JS definida](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de páginas.
