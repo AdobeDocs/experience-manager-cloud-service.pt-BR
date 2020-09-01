@@ -2,9 +2,9 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1687'
 ht-degree: 88%
 
 ---
@@ -66,7 +66,7 @@ As propriedades são distribuídas por várias guias.
 
       >[!NOTE]
       >
-      > Consulte [Tempos ligado e desligado - Configuração](/help/operations/replication.md#on-and-off-times-trigger-configuration) do acionador para obter detalhes sobre como configurar a replicação automática relacionada.
+      > Consulte [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obter detalhes sobre como configurar a replicação automática relacionada.
 
       * Se já tiver sido [publicada (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , essa página será mantida em espera (oculta) até a renderização no horário especificado.
       * Se não for publicada e configurada para replicação automática, a página será publicada automaticamente e renderizada no momento especificado.
@@ -129,11 +129,9 @@ As propriedades são distribuídas por várias guias.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-<!--
-* **Inherited from &lt;*path*&gt;**
+* **Herdado de &lt;path>**
 
-  * Indicates whether the page is inherited. and where from.
--->
+   * Indica se a página é herdada. e de onde.
 
 * **Configuração na nuvem**
 
