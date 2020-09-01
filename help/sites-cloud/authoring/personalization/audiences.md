@@ -1,18 +1,18 @@
 ---
 title: Gerenciamento de públicos
-description: O console do Audiência permite que você crie, organize e gerencie o audiência para sua conta Adobe Target ou gerencie segmentos do ContextHub
+description: O console do Audiência permite que você crie, organize e gerencie o audiência para sua conta do Adobe Target ou gerencie segmentos do ContextHub
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '975'
-ht-degree: 61%
+ht-degree: 62%
 
 ---
 
 
 # Gerenciamento de públicos{#managing-audiences}
 
-O console do Audiência permite que você crie, organize e gerencie o audiência para sua conta Adobe Target ou gerencie segmentos para o ContextHub:
+O console do Audiência permite que você crie, organize e gerencie o audiência para sua conta do Adobe Target ou gerencie segmentos do ContextHub:
 
 * Adicionar públicos-alvo: públicos-alvo do Adobe Target ou segmentos do ContextHub.
 * Gerenciar públicos-alvo.
@@ -65,7 +65,7 @@ Para criar um público-alvo do Adobe Target:
 
    ![Navegar para o audiência](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. In the Audiences console, tap or click **Create** and then** Create Target Audience**.
+1. No console Públicos-alvo, toque ou clique em **Criar** e, em seguida, em **Criar público-alvo**.
 
    ![Criação de uma audiência de Público alvo](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
@@ -82,13 +82,13 @@ Você pode criar regras de direcionamento para cada um dos seguintes atributos:
 
 | **Atributo** | **Descrição** | **Para obter mais informações** |
 |---|---|---|
-| **Móvel** | Dispositivos móveis de Público alvo com base em parâmetros como dispositivo móvel, tipo de dispositivo, fornecedor do dispositivo, dimensões de tela (por pixels) e muito mais. | Consulte a documentação [do](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) Mobile em Adobe Target. |
-| **Personalizado** | Parâmetros personalizados são parâmetros de mbox. Se você passar algum parâmetro de mbox para mboxes, ou usar a função targetPageParams, esses parâmetros aparecerão aqui para uso em públicos-alvo. | Consulte a documentação [Parâmetros](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) personalizados em Adobe Target. |
+| **Móvel** | Dispositivos móveis de público alvo com base em parâmetros como dispositivo móvel, tipo de dispositivo, fornecedor do dispositivo, dimensões de tela (por pixels) e muito mais. | Consulte a documentação [do](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) Mobile na Adobe Target. |
+| **Personalizado** | Parâmetros personalizados são parâmetros de mbox. Se você passar algum parâmetro de mbox para mboxes, ou usar a função targetPageParams, esses parâmetros aparecerão aqui para uso em públicos-alvo. | Consulte a documentação [Parâmetros](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) personalizados na Adobe Target. |
 | **OS** | Você pode público alvo visitantes que usam um determinado sistema operacional. | Direcionado a usuários que estejam usando Linux, Macintosh ou Windows. |
-| **Páginas do site** | visitantes de Público alvo que estão em uma página específica ou têm um parâmetro de mbox específico. | Consulte a documentação [de Páginas](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) do site na Adobe Target. |
-| **Navegador** | Você pode público alvo usuários que usam um navegador específico ou opções específicas de navegador quando visitam sua página. | Consulte a documentação [de opções do](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html) navegador no Adobe Target. |
-| **Perfil do visitante** | visitantes de Público alvo que atendem a parâmetros de perfil específicos. | Consulte a documentação [do Perfil do](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) Visitante. |
-| **Fontes de tráfego** | visitantes de Público alvo com base no mecanismo de pesquisa ou na landing page que os referenciam ao site. | Consulte a documentação [Fontes](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) de tráfego no Adobe Target. |
+| **Páginas do site** | Visitantes de público alvo que estão em uma página específica ou têm um parâmetro de mbox específico. | Consulte a documentação [de Páginas](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) do site na Adobe Target. |
+| **Navegador** | Você pode público alvo usuários que usam um navegador específico ou opções específicas de navegador quando visitam sua página. | Consulte a documentação [de opções do](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html) navegador na Adobe Target. |
+| **Perfil do visitante** | Visitantes de público alvo que atendem a parâmetros de perfil específicos. | Consulte a documentação [do Perfil do](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) Visitante na Adobe Target. |
+| **Fontes de tráfego** | Visitantes de público alvo com base no mecanismo de pesquisa ou na landing page que os referenciam ao site. | Consulte a documentação [Fontes de](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) tráfego na Adobe Target. |
 
 ## Modificação de um público-alvo no console Públicos-alvo {#modifying-an-audience-in-the-audiences-console}
 
