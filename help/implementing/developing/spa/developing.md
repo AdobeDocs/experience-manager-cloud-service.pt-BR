@@ -2,9 +2,9 @@
 title: Desenvolvimento de SPAs para AEM
 description: Este artigo apresenta questões importantes a serem consideradas ao envolver um desenvolvedor front-end para desenvolver um SPA para AEM, além de fornecer uma visão geral da arquitetura do AEM em relação aos SPAs para ter em mente ao implantar um SPA desenvolvido em AEM.
 translation-type: tm+mt
-source-git-commit: d0685af8b05d5491debf7bad99b5c8f111808f26
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2078'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ No entanto, podem existir casos em que tal não seja inteiramente necessário. A
    <th><strong>Desvantagens</strong></th>
   </tr>
   <tr>
-   <td>AEM é usado como um CMS sem cabeçalho sem usar a estrutura SDK do Editor <a href="https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-reference-materials.html">SPA.</a></td>
+   <td>AEM é usado como um CMS sem cabeçalho sem usar a estrutura SDK do Editor <a href="/help/implementing/developing/spa/reference-materials.md">SPA.</a></td>
    <td>O desenvolvedor front-end tem controle total sobre o aplicativo.</td>
    <td><p>Os autores de conteúdo não podem aproveitar AEM experiência de criação de conteúdo.</p> <p>O código não é portátil nem reutilizável se contiver referências estáticas ou roteamento.</p> <p>Não permite o uso do editor de modelo, portanto, o desenvolvedor front-end deve manter modelos editáveis por meio do JCR.</p> </td>
   </tr>
