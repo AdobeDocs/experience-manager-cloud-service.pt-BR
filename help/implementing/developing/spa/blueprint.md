@@ -2,7 +2,7 @@
 title: Blueprint do SPA
 description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura de SPA deve cumprir para implementar componentes de SPA editáveis dentro do AEM.
 translation-type: tm+mt
-source-git-commit: f7d90d9cb41077a3a510f97a9f9f89f4b2b13cd9
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Para permitir que o autor use o Editor SPA AEM para editar o conteúdo de um SPA, há requisitos que o SPA deve atender.
 
-## Introdução {#introdcution}
+## Introdução {#introduction}
 
 Este documento descreve o contrato geral que qualquer estrutura SPA deve cumprir (isto é, o tipo de camada de suporte AEM) para implementar componentes SPA editáveis dentro da AEM.
 
@@ -283,4 +283,3 @@ Veja como um SPA simples funciona e experimente com um SPA você mesmo, seguindo
 Para obter mais informações sobre SPAs em AEM, consulte os seguintes documentos:
 
 * [Visão geral](editor-overview.md) do editor SPA para obter uma visão geral dos SPAs no AEM e no modelo de comunicação
-
