@@ -2,7 +2,7 @@
 title: 'Configurar o ambiente da sua conta  '
 description: O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
@@ -94,4 +94,4 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Configuração do Stock**
 
-   Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver habilitado a integração com o Adobe Stock. <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
+   Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver habilitado a [integração com o Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
