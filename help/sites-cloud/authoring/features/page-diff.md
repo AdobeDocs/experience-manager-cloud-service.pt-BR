@@ -2,7 +2,7 @@
 title: 'Diferencial de páginas  '
 description: O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 100%
@@ -22,7 +22,7 @@ O recurso de diferencial de página permite a comparação lado a lado convenien
 >
 >O usuário deve ter a permissão de **Modificar/Criar/Excluir** no nó `/content/versionhistory` para usar o recurso.
 >
->Consulte Desenvolvimento e diff de página para obter mais detalhes técnicos sobre este recurso. <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+>Consulte [Desenvolvimento e diff de página](/help/implementing/developing/introduction/page-diff.md#operation-details) para obter mais detalhes técnicos sobre este recurso.
 
 ## Uso {#use}
 
@@ -105,4 +105,4 @@ Existem algumas situações em que o recurso de diferencial de páginas pode nã
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre a operação do mecanismo diff da página, bem como limitações que podem afetar o diff da página, consulte a documentação do desenvolvedor desse recurso. <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
+>Para obter mais detalhes sobre a operação do mecanismo diff da página, bem como limitações que podem afetar o diff da página, consulte a [documentação do desenvolvedor](/help/implementing/developing/introduction/page-diff.md) desse recurso.
