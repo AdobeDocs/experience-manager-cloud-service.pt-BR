@@ -2,10 +2,10 @@
 title: 'Criação de modelos de páginas  '
 description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa apenas do desenvolvedor
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '4554'
-ht-degree: 100%
+source-wordcount: '4551'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ O **Editor de modelo** permite que os autores do modelo:
 
 Este documento explica como um **autor de modelo** pode usar o console e o editor de modelo para criar e gerenciar modelos editáveis.
 
-Para obter informações detalhadas sobre como os modelos editáveis funcionam a um nível técnico, consulte o documento do desenvolvedor Modelos de página - Editáveis para obter mais informações. <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Ao criar um novo modelo editável:
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
-Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. Trata-se de uma tarefa de administrador e está descrita no documento Modelos de página - Editáveis. <!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
 
 ### Criação de um novo modelo - Autor do modelo {#creating-a-new-template-template-author}
 
@@ -106,7 +106,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
    >
    >Em uma instância padrão do AEM, a pasta **global** já existe no console modelo. Isso mantém modelos padrão e atua como um fallback se nenhuma política e/ou tipo de modelo for localizado na pasta atual.
    >
-   >É uma prática recomendada usar uma pasta de modelo criada para o seu projeto. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >É uma prática recomendada usar uma [pasta de modelo criada para o seu projeto](/help/implementing/developing/components/templates.md#template-folders).
 
 1. Selecione **Criar**, em seguida **Criar modelo** para abrir o assistente.
 
@@ -114,7 +114,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
 
    >[!NOTE]
    >
-   >Os tipos de modelo são layouts predefinidos e podem ser considerados modelos de um modelo. Eles são predefinidos pelos desenvolvedores ou pelo administrador do sistema. Encontre mais informações podem ser encontradas no documento do desenvolvedor Modelos de página - Editáveis. <!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >Os tipos de modelo são layouts predefinidos e podem ser considerados modelos de um modelo. Eles são predefinidos pelos desenvolvedores ou pelo administrador do sistema. More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
 
 1. Preencha os **detalhes do modelo**:
 
@@ -204,7 +204,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
    >Se a lista **Modelos permitidos** de for deixada em branco, a árvore será crescente até que um valor/lista seja encontrado.
    >
    >
-   >Consulte Disponibilidade do modelo - as noções básicas dos modelos permitidos permanecem inalteradas. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
 
 1. Clique em **Salvar** para salvar as alterações nas propriedades da página.
 
@@ -265,7 +265,7 @@ Quando um componente tiver sido desbloqueado, é possível definir o [conteúdo 
 
 #### Layout {#template-layout}
 
-Com o [layout](#editing-a-template-layout-template-author), é possível predefinir o layout do modelo para os formatos de dispositivo necessários. O modo **Layout** de criação do modelo tem a mesma funcionalidade que o modo[** Layout **da criação de página](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+Com o [layout](#editing-a-template-layout-template-author), é possível predefinir o layout do modelo para os formatos de dispositivo necessários. O modo **Layout** de criação do modelo tem a mesma funcionalidade que o modo [**Layout** da criação de página](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Políticas da página {#template-page-policies}
 
@@ -414,7 +414,7 @@ Por exemplo, para um componente de imagem, é possível definir as proporções 
 
 >[!NOTE]
 >
->As políticas de conteúdo para componentes que implementam o editor de rich text só podem ser definidas para opções disponibilizadas pelo RTE pelas configurações da interface do usuário. <!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
+>[](/help/implementing/developing/extending/rich-text-editor.md)As políticas de conteúdo para componentes que implementam o editor de rich text só podem ser definidas para opções disponibilizadas pelo RTE pelas configurações da interface do usuário.
 
 #### Política e propriedades (contêiner de layout) {#policy-and-properties-layout-container}
 
@@ -504,7 +504,7 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 
 >[!NOTE]
 >
->O modo **Conteúdo inicial** pode ser visto como um modo de edição para páginas criadas com esse modelo. Sendo assim, as políticas não estão definidas no modo **Conteúdo inicial**, mas no modo [**Estrutura **](#editing-a-template-structure-template-author).
+>O modo **Conteúdo inicial** pode ser visto como um modo de edição para páginas criadas com esse modelo. Sendo assim, as políticas não estão definidas no modo **Conteúdo inicial**, mas no modo [**Estrutura**](#editing-a-template-structure-template-author).
 
 * Os componentes desbloqueados disponíveis para edição são marcados. Quando selecionados, apresentam uma borda azul:
 
