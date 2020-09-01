@@ -2,7 +2,7 @@
 title: Tag de decoração
 description: Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro dele mesmo. Para desenvolvedores, AEM lógica simples e clara do oferta controlando as tags de decoração que envolvem componentes incluídos.
 translation-type: tm+mt
-source-git-commit: 78afd53eaa4945e4933ef80a175fdf97c63b388e
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Para obter mais informações sobre o desenvolvimento em HTL, consulte a documen
 
 Essa árvore decisória resume a lógica que determina o comportamento das tags de invólucro.
 
-![Árvore de decisão](/help/implementing/developing/introduction/assets/decoration-tag-decision-tree.png)
+![Árvore de decisão](assets/decoration-tag-decision-tree.png)
 
 ### Use Cases {#use-cases}
 
