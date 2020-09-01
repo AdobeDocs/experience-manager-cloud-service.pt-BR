@@ -2,7 +2,7 @@
 title: Projetos
 description: Projetos permitem agrupar recursos em uma única entidade, cujo ambiente comum e compartilhado facilita o gerenciamento dos seus projetos
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 81%
@@ -35,7 +35,7 @@ Consulte os seguintes tópicos adicionais:
 
 O console Projetos é onde você acessa e gerencia seus projetos no AEM.
 
-![The Projects console](/help/sites-cloud/authoring/assets/projects-console.png)
+![O console Projetos](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Selecione **Linha do tempo** e, em seguida, um projeto para visualizar sua linha do tempo.
 * Clique/toque em **Selecionar** para entrar no modo de seleção.
@@ -60,7 +60,7 @@ Você pode ter os seguintes blocos associados ao seu projeto. Cada um está desc
 * Lançamentos
 * Tarefas
 
-### Ativos {#assets}
+### Assets {#assets}
 
 No bloco **Assets**, você pode reunir todos os ativos que você usa para um projeto específico.
 
@@ -72,7 +72,7 @@ Você faz o upload de recursos diretamente no bloco. Além disso, é possível c
 
 ### Coleções de ativos {#asset-collections}
 
-Semelhante a ativos, você pode adicionar coleções de ativos diretamente ao seu projeto. Você define coleções no Assets. <!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
+Semelhante a ativos, você pode adicionar [coleções de ativos](/help/assets/manage-collections.md) diretamente ao seu projeto. Você define coleções no Assets.
 
 ![Coleta de ativos](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -112,7 +112,7 @@ Os membros da equipe podem ser atribuídos a esse bloco e excluídos dele (ou te
 
 ### Tarefa de tradução {#translation-job}
 
-O bloco Tarefa de tradução é onde você inicia uma tradução e visualiza o status das suas traduções. Para configurar sua tradução, consulte Criação de projetos de tradução. <!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
+O bloco Tarefa de tradução é onde você inicia uma tradução e visualiza o status das suas traduções. Para configurar sua tradução, consulte [Criação de projetos de tradução](/help/assets/translate-assets.md).
 
 ![Trabalho de tradução](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
@@ -171,7 +171,7 @@ As diferentes funções de usuário são definidas em um modelo de Projeto e sã
 
 Todos os projetos oferecem suporte às seguintes funções padrão, para permitir que você administre permissões de segurança e controle:
 
-| Função | Descrição | Permissões     | Associação de Grupo |
+| Função | Descrição | Permissões  | Associação de Grupo |
 |---|---|---|---|
 | Observador | Um usuário nessa função pode visualizar detalhes do projeto, incluindo seu status. | Permissões somente leitura em um projeto | `workflow-users` grupo |
 | Editor | Um usuário nessa função pode fazer o upload e a edição do conteúdo de um projeto. | Acesso de leitura e gravação em um projeto, metadados associados e ativos relacionados; privilégios para fazer upload de uma lista fotográfica, fotografar e revisar e aprovar ativos; permissão de gravação em /etc/commerce; modificar permissão em um projeto específico | grupo de usuários de fluxo de trabalho |
