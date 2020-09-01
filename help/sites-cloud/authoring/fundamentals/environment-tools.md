@@ -2,7 +2,7 @@
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 100%
@@ -40,7 +40,7 @@ Você pode editar uma página com o editor de páginas. Por exemplo:
 
 Ao editar uma página, a **Ajuda** pode ser acessada de:
 
-* O seletor [**Informações da página **](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)que mostra os slides de introdução (como na primeira vez que você acessa o editor)
+* O seletor [**Informações da página**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties) que mostra os slides de introdução (como na primeira vez que você acessa o editor)
 * A caixa de diálogo [Configuração](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) para componentes específicos (usando o ícone ? na barra de ferramentas da caixa de diálogo), que mostra a ajuda sensível ao contexto
 
 Mais [recursos relacionados à ajuda estão disponíveis nos consoles](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
@@ -100,7 +100,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
 ## Navegador de ativos {#assets-browser}
 
-O navegador de ativos mostra todos os ativos disponíveis para o uso direto na sua página atual. <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+O navegador de ativos mostra todos os [ativos](/help/assets/home.md) disponíveis para o uso direto na sua página atual.
 
 O navegador de ativos é um guia no painel lateral juntamente com o [navegador de componentes](#components-browser) e a [árvore de conteúdo](#content-tree). Para abrir ou fechar o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
 
@@ -155,7 +155,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 >
 >Um dispositivo móvel é detectado quando a largura é menor do que 1024px; ou seja, também está em uma janela de desktop pequena.
 
-Se você precisar fazer uma alteração rápida em um ativo, pode iniciar o editor de ativos diretamente do navegador de ativos, clicando no ícone de edição mostrado ao lado do nome do ativo. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+Se você precisar fazer uma alteração rápida em um ativo, pode iniciar o [editor de ativos](/help/assets/manage-digital-assets.md) diretamente do navegador de ativos, clicando no ícone de edição mostrado ao lado do nome do ativo.
 
 ![Botão Editar ativos](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
