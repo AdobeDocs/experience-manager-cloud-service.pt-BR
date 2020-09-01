@@ -2,7 +2,7 @@
 title: Modelos de páginas
 description: Modelos de página são usados ao criar uma página que será usada como a base para a nova página
 translation-type: tm+mt
-source-git-commit: 0508311b997789ada07856a73d29e38d1b735979
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 8%
@@ -512,7 +512,7 @@ Páginas criadas a partir de modelos editáveis:
 
    * `cq:templateType` - Fornece uma referência ao tipo de modelo.
 
-![Como os modelos, o conteúdo e os componentes se interrelacionam](/help/implementing/developing/introduction/assets/templates-content-components.png)
+![Como os modelos, o conteúdo e os componentes se interrelacionam](assets/templates-content-components.png)
 
 O diagrama acima mostra como os modelos, o conteúdo e os componentes se interrelacionam:
 
@@ -565,7 +565,7 @@ A avaliação funciona do seguinte modo:
 
 O diagrama a seguir descreve o processo de avaliação do modelo:
 
-![Processo de avaliação de modelo](/help/implementing/developing/introduction/assets/template-evaluation.png)
+![Processo de avaliação do modelo](assets/template-evaluation.png)
 
 >[!CAUTION]
 >
