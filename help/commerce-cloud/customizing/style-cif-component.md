@@ -10,10 +10,10 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: d17aadfa60e2e13487d937c0630181beb7370328
+source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
 workflow-type: tm+mt
-source-wordcount: '2604'
-ht-degree: 35%
+source-wordcount: '2620'
+ht-degree: 34%
 
 ---
 
@@ -28,7 +28,7 @@ O [CIF Projeto](https://github.com/adobe/aem-cif-guides-venia) Venia é uma base
 
 ## O que você vai criar
 
-Será implementado um novo estilo no componente Teaser do produto que se assemelha a um cartão.
+Neste tutorial, um novo estilo será implementado para o componente Teaser do produto que se assemelha a uma placa. As lições aprendidas no tutorial podem ser aplicadas a outros componentes principais CIF.
 
 ![O que você vai criar](../assets/style-cif-component/what-you-will-build.png)
 
