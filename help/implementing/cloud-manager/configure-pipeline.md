@@ -2,7 +2,7 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -58,11 +58,11 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
 
 1. A tela **Setup Pipeline (Instalar pipeline** ) é exibida. Select the branch and click **Next**.
 
-   ![](assets/setup-pipeline-1.png)
+   ![](assets/setup-1.png)
 
 1. Configure suas opções de implantação.
 
-   ![](assets/setup-pipeline-2.png)
+   ![](assets/setup-2.png)
 
    Você pode definir o acionador para start do pipeline:
 
@@ -80,7 +80,7 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
 
 1. As configurações de pipeline de produção incluem uma terceira guia rotulada como **Experience Audit**.
 
-   ![](assets/content-audit-1.png)
+   ![](assets/setup-3.png)
 
    Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência. O usuário pode inserir manualmente um caminho de URL a ser incluído. É possível incluir no máximo 25 linhas. Se não houver páginas enviadas pelo usuário nesta seção, a página inicial do site será incluída na auditoria de experiência como padrão.
 
@@ -94,7 +94,7 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
    >[!NOTE]
    >Para ativar a etapa Auditoria de experiência, os usuários devem editar o pipeline e, opcionalmente, adicionar páginas. Consulte Problemas [conhecidos](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) para obter mais detalhes.
 
-   ![](assets/content-audit2.png)
+   ![](assets/exp-audit2.png)
 
 1. Clique em **Salvar** na tela **Editar Pipeline** . A página **Visão geral** agora exibe a opção **Implantar seu cartão de Programa** . Clique no botão **Implantar** para implantar seu programa.
 
