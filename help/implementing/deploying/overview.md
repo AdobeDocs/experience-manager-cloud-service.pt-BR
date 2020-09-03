@@ -2,7 +2,7 @@
 title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: bb810684a513718ddb7232f1a2da725b2df7f36c
+source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
 workflow-type: tm+mt
 source-wordcount: '3537'
 ht-degree: 1%
@@ -183,7 +183,7 @@ Todos os pacotes de conteúdo instalados pelo Cloud Manager (mutáveis e imutáv
 
 ### Incluindo pacotes de terceiros {#including-third-party}
 
-É comum que os clientes incluam pacotes pré-criados de fontes terceirizadas, como fornecedores de software como parceiros de tradução Adobe. A recomendação é hospedar esses pacotes em um repositório remoto e referenciá-los no `pom.xml`. Isso é possível para repositórios públicos e também para repositórios privados com proteção por senha, conforme descrito em repositórios maven protegidos por [senha](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#password-protected-maven-repositories).
+É comum que os clientes incluam pacotes pré-criados de fontes terceirizadas, como fornecedores de software como parceiros de tradução Adobe. A recomendação é hospedar esses pacotes em um repositório remoto e referenciá-los no `pom.xml`. Isso é possível para repositórios públicos e também para repositórios privados com proteção por senha, conforme descrito em repositórios maven protegidos por [senha](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 Se o armazenamento do pacote em um repositório remoto não for possível, os clientes poderão colocar em um repositório Maven local baseado em sistema de arquivos, que é enviado para SCM como parte do projeto e referenciado pelo que depender dele. O repositório seria declarado nos exemplos de projeto a seguir:
 
