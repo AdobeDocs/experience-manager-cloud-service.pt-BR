@@ -2,7 +2,7 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -78,21 +78,21 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
    * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é essencialmente emular um usuário que aprova manualmente cada falha.
 
 
-1. As configurações de pipeline de produção incluem uma terceira guia rotulada como Auditoria **de** conteúdo.
+1. As configurações de pipeline de produção incluem uma terceira guia rotulada como **Experience Audit**.
 
    ![](assets/content-audit-1.png)
 
-   Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de conteúdo. O usuário pode inserir manualmente um caminho de URL a ser incluído. É possível incluir no máximo 25 linhas. Se não houver páginas enviadas pelo usuário nesta seção, a página inicial do site será incluída na auditoria de conteúdo como padrão.
+   Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência. O usuário pode inserir manualmente um caminho de URL a ser incluído. É possível incluir no máximo 25 linhas. Se não houver páginas enviadas pelo usuário nesta seção, a página inicial do site será incluída na auditoria de experiência como padrão.
 
    >[!NOTE]
    > As páginas configuradas serão enviadas ao serviço e avaliadas de acordo com os testes de desempenho, acessibilidade, SEO (Search Engine Otimization), práticas recomendadas e PWA (Progressive Web App).
 
-   Consulte [Entendendo os resultados](/help/implementing/cloud-manager/content-audit-testing.md) da auditoria de conteúdo para obter mais detalhes.
+   Consulte [Entendendo os resultados](/help/implementing/cloud-manager/experience-audit-testing.md) da auditoria de experiência para obter mais detalhes.
 
-   Clique em **Adicionar nova substituição** de página para fornecer um caminho de URL a ser incluído na Auditoria de conteúdo. Depois de adicionar o caminho, clique em **Salvar**.
+   Clique em **Adicionar nova substituição** de página para fornecer um caminho de URL a ser incluído na auditoria de experiência. Depois de adicionar o caminho, clique em **Salvar**.
 
    >[!NOTE]
-   >Para ativar a etapa Auditoria de conteúdo, os usuários devem editar o pipeline e, opcionalmente, adicionar páginas. Consulte Problemas [conhecidos](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) para obter mais detalhes.
+   >Para ativar a etapa Auditoria de experiência, os usuários devem editar o pipeline e, opcionalmente, adicionar páginas. Consulte Problemas [conhecidos](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) para obter mais detalhes.
 
    ![](assets/content-audit2.png)
 
