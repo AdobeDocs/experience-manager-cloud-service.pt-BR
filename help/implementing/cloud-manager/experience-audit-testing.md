@@ -2,9 +2,9 @@
 title: Teste de auditoria de experiência - Cloud Services
 description: Teste de auditoria de experiência - Cloud Services
 translation-type: tm+mt
-source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
+source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,18 @@ O Experience Audit no Cloud Manager garante que a experiência digital dos usuá
 
 A auditoria de experiência fornece resultados de teste em nível de página agregações e detalhados por meio da página de execução do pipeline de produção.
 
-* As métricas de nível de agregação medem a pontuação média nas páginas que foram auditadas.
+* As métricas de nível de agregação medem a pontuação média nas páginas que foram auditadas para obter desempenho, acessibilidade, práticas recomendadas, SEO (Search Engine Otimization, Otimização do mecanismo de pesquisa).
+   >[!NOTE]
+   >A pontuação progressiva do aplicativo da Web (PWA) não está incluída na pontuação de resumo e será exibida somente na tela de detalhes do relatório no nível da página.
 * As pontuações de nível de página individuais também estão disponíveis por meio da busca detalhada.
 * Detalhes das pontuações estão disponíveis para ver quais são os resultados dos testes individuais, juntamente com orientações sobre como corrigir quaisquer problemas identificados durante a auditoria de conteúdo.
 * Um histórico dos resultados do teste é persistente no Cloud Manager para que os clientes possam ver se as alterações que estão sendo introduzidas na execução do pipeline incluem quaisquer regressões da execução anterior.
 
 ### Pontuações de agregação {#aggregate-scores}
 
-Há uma pontuação de nível de agregação para cada tipo de teste (desempenho, acessibilidade, SEO, práticas recomendadas e PWA).
+Há uma pontuação de nível de agregação para cada tipo de teste, como desempenho, acessibilidade, SEO e práticas recomendadas.
+>[!NOTE]
+>A pontuação progressiva do aplicativo da Web (PWA) não está incluída na pontuação de resumo e será exibida somente na tela de detalhes do relatório no nível da página.
 
 A pontuação do nível de agregação obtém a pontuação média das páginas que estão incluídas na execução. A alteração no nível da agregação representa a pontuação média das páginas na execução atual em comparação com a média das pontuações da execução anterior, mesmo se a coleção de páginas configuradas a serem incluídas tiver sido alterada entre as execuções.
 
