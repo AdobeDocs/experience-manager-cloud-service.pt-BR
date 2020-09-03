@@ -2,7 +2,7 @@
 title: Envio de um conector do AEM
 description: Envio de um conector do AEM
 translation-type: tm+mt
-source-git-commit: d9c87b1c63274dfae81a8e3b96d9c4009b569236
+source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 11%
@@ -22,7 +22,7 @@ Nas soluções AEM anteriores, o Package Manager era usado para instalar conecto
 Há várias opções de como os pacotes podem ser incluídos em um projeto:
 
 1. Repositório público do parceiro - um parceiro hospedaria o pacote de conteúdo em um repositório maven acessível ao público
-1. Repositório protegido por senha do parceiro - um parceiro hospedaria o pacote de conteúdo em um repositório maven protegido por senha. Consulte repositórios maven protegidos por [senha em](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#password-protected-maven-repositories) para obter instruções.
+1. Repositório protegido por senha do parceiro - um parceiro hospedaria o pacote de conteúdo em um repositório maven protegido por senha. Consulte repositórios maven protegidos por [senha em](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories) para obter instruções.
 1. Artefato embutido - nesse caso, o pacote do conector é incluído localmente no projeto maven do cliente.
 
 Independentemente de onde eles estejam hospedados, os pacotes precisam ser referenciados como dependências no pom.xml, conforme fornecido pelo fornecedor.
