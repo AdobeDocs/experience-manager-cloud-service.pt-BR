@@ -2,7 +2,7 @@
 title: Visão geral dos resultados do teste - Cloud Services
 description: Visão geral dos resultados do teste - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Há três categorias amplas de testes suportadas pelo Cloud Manager para Cloud S
 
    O Teste Funcional faz parte da fase de teste de uma tubulação de produção.
 
-1. [Teste de auditoria de conteúdo](/help/implementing/cloud-manager/content-audit-testing.md)
+1. [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   O Teste de auditoria de conteúdo está ativado em todos os Pipelines de produção do Cloud Manager e não pode ser ignorado.
+   O Teste de auditoria de experiência está ativado em todos os Pipelines de produção do Cloud Manager e não pode ser ignorado.
 
 Esses testes podem ser:
 
