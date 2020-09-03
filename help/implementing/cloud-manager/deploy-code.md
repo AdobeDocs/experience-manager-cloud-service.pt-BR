@@ -2,15 +2,15 @@
 title: Implantar seu código - Cloud Services
 description: Implantar seu código - Cloud Services
 translation-type: tm+mt
-source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
 
 
-# Implantação dor seu  código {#deploy-your-code}
+# Implantação do código {#deploy-your-code}
 
 ## Implantação de código com o Cloud Manager {#deploying-code-with-cloud-manager}
 
@@ -42,7 +42,7 @@ Depois de configurar seu pipeline de produção (repositório, ambiente e ambien
    A **Implantação do preparo** envolve estas etapas:
 
    * Validação: Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento, por exemplo, que a ramificação configurada exista, os ambientes estarão disponíveis.
-   * Compilação e teste de unidade: Esta etapa executa um processo de criação contido. Consulte [Criar detalhes](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) do Ambiente para obter detalhes sobre o ambiente de criação.
+   * Compilação e teste de unidade: Esta etapa executa um processo de criação contido. Consulte [Criar detalhes](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) do Ambiente para obter detalhes sobre o ambiente de criação.
    * Digitalização de código: Esta etapa avalia a qualidade do código do aplicativo. Consulte Teste [de qualidade de](/help/implementing/cloud-manager/code-quality-testing.md) código para obter detalhes sobre o processo de teste.
    * Criar imagens: Esta etapa tem um arquivo de log do processo usado para criar imagens. Esse processo é responsável por transformar os pacotes de conteúdo e despachante produzidos pela etapa de compilação em imagens Docker e configurações de Kubernetes.
    * Implantar no palco
@@ -56,8 +56,8 @@ Consulte Teste [funcional do](/help/implementing/cloud-manager/functional-testin
    * Teste funcional personalizado: Esta etapa do pipeline está sempre presente e não pode ser ignorada. No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão.\
       Consulte Teste [funcional](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) personalizado para obter mais detalhes.
 
-   * Auditoria de conteúdo: Esta etapa do pipeline está sempre presente e não pode ser ignorada. Como um pipeline de produção é executado, uma etapa de auditoria de conteúdo é incluída após testes funcionais personalizados que executarão as verificações. As páginas configuradas serão enviadas ao serviço e avaliadas. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
-Consulte [Compreensão dos resultados](/help/implementing/cloud-manager/content-audit-testing.md) da auditoria de conteúdo para obter mais detalhes.
+   * Auditoria de experiência: Esta etapa do pipeline está sempre presente e não pode ser ignorada. Como um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após testes funcionais personalizados que executarão as verificações. As páginas configuradas serão enviadas ao serviço e avaliadas. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
+Consulte [Compreensão dos resultados](/help/implementing/cloud-manager/experience-audit-testing.md) da auditoria de experiência para obter mais detalhes.
 
       ![](assets/testing-tab.png)
 
@@ -88,7 +88,7 @@ Quando o Cloud Manager é implantado em topologias que não sejam de produção,
 
    >[!NOTE]
    >
-   >Todos os artefatos AEM são implantados no autor e nos editores. Os modos de execução devem ser utilizados quando configurações específicas do nó forem necessárias. Para saber mais sobre como os modos de execução permitem que você ajuste sua instância de AEM para uma finalidade específica, consulte Modos de execução.
+   >Todos os artefatos AEM são implantados no autor e nos editores. Os modos de execução devem ser utilizados quando configurações específicas do nó forem necessárias. Para saber mais sobre como os modos Executar permitem que você ajuste sua instância de AEM para uma finalidade específica, consulte os modos Executar.
 
 1. O artefato do dispatcher é implantado em cada dispatcher da seguinte maneira:
 
