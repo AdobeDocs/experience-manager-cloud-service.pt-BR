@@ -2,7 +2,7 @@
 title: Criar detalhes do Ambiente
 description: Detalhes do Ambiente de compilação - Cloud Services
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -30,6 +30,7 @@ O Cloud Manager cria e testa seu código usando um ambiente de compilação espe
 * Outros pacotes podem ser instalados no momento da criação, conforme descrito [abaixo](#installing-additional-system-packages).
 * Cada obra é feita com um ambiente intocado; o container build não mantém nenhum estado entre as execuções.
 * O Maven é sempre executado com os três comandos a seguir:
+
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
