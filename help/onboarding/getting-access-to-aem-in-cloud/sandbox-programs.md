@@ -1,10 +1,10 @@
 ---
-title: Programas Sandbox - Serviço em nuvem
-description: Programas Sandbox - Serviço em nuvem
+title: Programas Sandbox - Cloud Service
+description: Programas Sandbox - Cloud Service
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Um programa Sandbox é um dos dois tipos de programas disponíveis no serviço AEM Cloud, sendo o outro um programa Regular.
+Um programa Sandbox é um dos dois tipos de programas disponíveis AEM Cloud Service, sendo o outro um programa Regular.
 
-Uma caixa de proteção é normalmente criada para servir aos propósitos de treinamento, execução de demonstrações, ativação ou Prova de conceito (POC). Eles não são feitos para transportar tráfego ao vivo. Eles não estão sujeitos ao [AEM como um compromisso](https://www.adobe.com/legal/service-commitments.html)de serviço na nuvem.
+Uma caixa de proteção é normalmente criada para servir aos propósitos de treinamento, execução de demonstrações, ativação ou Prova de conceito (POC). Eles não são feitos para transportar tráfego ao vivo. Eles não estão sujeitos aos [AEM como compromissos](https://www.adobe.com/legal/service-commitments.html)Cloud Service.
 
-Os ambientes criados em uma caixa de proteção não estão configurados para dimensionamento automático. Portanto, não são adequados para testes de desempenho ou de carga.
+Os ambientes criados em uma caixa de proteção não são configurados para dimensionamento automático. Portanto, não são adequados para testes de desempenho ou de carga.
 
-Os programas Sandbox incluem Sites e Ativos e são preenchidos automaticamente com um repositório Git, um ambiente de desenvolvimento e um pipeline de não-produção.  O repositório Git é preenchido com um projeto de amostra baseado no tipo de arquivo do AEM Project.
+Os programas Sandbox incluem Sites e Ativos e são preenchidos automaticamente com um repositório Git, um ambiente de desenvolvimento e um pipeline de não-produção.  O repositório Git é preenchido com uma amostra de projeto com base no arquétipo de projeto AEM.
 
 Consulte [Como entender Programas e tipos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) de Programas para saber mais sobre os tipos de Programas.
 
@@ -28,16 +28,16 @@ Consulte [Como entender Programas e tipos](https://docs.adobe.com/content/help/e
 
 Os Programas Sandbox têm os seguintes atributos:
 
-1. **Criação de Programas:** A criação do programa Sandbox inclui o recurso automático:
+1. **Criação de programas:** A criação do programa Sandbox inclui o recurso automático:
    * configuração de projeto com código de amostra e conteúdo
    * criação de ambientes de desenvolvimento
-   * criação de pipeline de não produção implantando no ambiente de desenvolvimento (ramo mestre implantando no ambiente de desenvolvimento)
+   * criação de pipeline de não produção implantando no ambiente de desenvolvimento (implantação de ramificação principal no ambiente de desenvolvimento)
 
-1. **Soluções:** Os programas da caixa de proteção incluem AEM Sites e Assets.
+1. **Soluções:** Os programas Sandbox incluem AEM Sites e Assets.
 
-1. **Atualizações do AEM:** As atualizações do AEM podem ser aplicadas manualmente a ambientes em um programa Sandbox e não são enviadas automaticamente.
+1. **Atualizações de AEM:** AEM atualizações podem ser aplicadas manualmente a ambientes em um programa Sandbox e não são automaticamente enviadas.
 
-1. **Hibernação:** Ambientes em um programa Sandbox serão automaticamente hibernados se nenhuma atividade for detectada por um determinado período de tempo. ambientes hibernados podem ser removidos manualmente.
+1. **Hibernação:** Ambientes em um programa Sandbox serão automaticamente hibernados se nenhuma atividade for detectada por um determinado período de tempo. Ambientes hibernados podem ser removidos manualmente.
 
 ### Criação de um Programa Sandbox {#creating-sandbox-program}
 
@@ -62,10 +62,10 @@ Para excluir um ambiente, consulte [Excluir Ambientes](https://docs.adobe.com/co
 
 ## Hibernando e removendo Ambientes do Sandbox {#hibernating-introduction}
 
-ambientes de Programa da caixa de proteção entram em um modo *de* hibernação se nenhuma atividade for detectada por um determinado período de tempo.
+Ambientes de Programa da caixa de proteção entram em um modo *de* hibernação se nenhuma atividade for detectada por um determinado período de tempo.
 
 >[!NOTE]
->A hibernação é exclusiva aos ambientes de Programa Sandbox. ambientes comuns não hibernam.
+>A hibernação é exclusiva aos ambientes de Programa Sandbox. Ambientes comuns não hibernam.
 
 ### Hibernação {#hibernation-introduction}
 
@@ -73,7 +73,7 @@ A hibernação pode ocorrer automática ou manualmente. Pode levar alguns minuto
 
 A hibernação é classificada como:
 
-* **ambientes automáticos** de Programa Sandbox são hibernados automaticamente após oito horas de inatividade, o que significa que nem o autor nem os serviços de publicação recebem solicitações.
+* **Ambientes automáticos** de Programa Sandbox são hibernados automaticamente após oito horas de inatividade, o que significa que os serviços de autor e publicação não recebem solicitações.
 
 * **Manual**: Como usuário, você pode hibernar manualmente um ambiente do Programa do Sandbox, embora não haja nenhum requisito para fazer isso, uma vez que a hibernação ocorrerá automaticamente após um determinado período (oito horas) de inatividade.
 
@@ -84,8 +84,8 @@ A hibernação é classificada como:
 
 Você pode hibernar manualmente seu Programa do Sandbox no Developer Console de duas maneiras diferentes, usando:
 
-* Tela de detalhes do Ambiente
-* Tela de listagem do Ambiente
+* Tela de detalhes do ambiente
+* Tela de listagem do ambiente
 
 >[!NOTE]
 >O acesso ao Developer Console para um Programa do Sandbox está disponível para qualquer usuário do Cloud Manager.
@@ -128,9 +128,9 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
    >Como alternativa, você pode navegar até o **Developer Console** para cancelar a hibernação tentando acessar o serviço de autor ou publicação de um ambiente já hibernado; nesse caso, uma landing page será exibida com um link para o Developer Console. Consulte a seção Acessar um Ambiente hibernado abaixo.
 
    >[!IMPORTANT]
-   >O acesso ao Console do desenvolvedor é definido pelo Gerenciador da **nuvem - Função** do desenvolvedor no Console **de** administração. Um usuário com uma permissão de função de desenvolvedor pode cancelar a hibernação de um ambiente do Programa Sandbox.
+   >O acesso ao Console do desenvolvedor é definido pelo Gerenciador da **nuvem - Função** do desenvolvedor no **Admin Console**. Um usuário com uma permissão de função de desenvolvedor pode cancelar a hibernação de um ambiente do Programa Sandbox.
 
-1. Clique em **Cancelar hibernação**, como mostrado na figura abaixo:
+1. Clique em **Cancelar hibernação**, conforme mostrado na figura abaixo:
 
    ![](assets/de-hibernation-img1.png)
 
@@ -155,7 +155,7 @@ Consulte [Acessar o Developer Console](https://docs.adobe.com/content/help/en/ex
 
 #### Permissões para hibernar {#permissions-de-hibernate}
 
-Qualquer usuário com um perfil de produto que dê acesso ao AEM como um serviço em nuvem deve poder acessar o **Developer Console**, permitindo que ele hiberne o ambiente.
+Qualquer usuário com um perfil de produto que dê acesso ao AEM como Cloud Service deve poder acessar o Console **do** desenvolvedor, permitindo que ele hiberne o ambiente.
 
 Consulte [Adicionar usuários e funções](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) no Cloud Manager sobre como configurar permissões de usuário.
 
@@ -171,22 +171,22 @@ Poucas considerações importantes relacionadas aos ambientes hibernados e com h
 
 * Um usuário pode usar um pipeline para implantar código personalizado em ambientes hibernados. O ambiente permanecerá hibernado e o novo código aparecerá no ambiente depois de ser deshibernado.
 
-* As atualizações do AEM podem ser aplicadas a ambientes hibernados, que os clientes podem acionar manualmente a partir do Cloud Manager. O ambiente permanecerá hibernado e a nova versão aparecerá no ambiente depois de ser deshibernada.
+* As atualizações AEM podem ser aplicadas a ambientes hibernados, que os clientes podem acionar manualmente a partir do Cloud Manager. O ambiente permanecerá hibernado e a nova versão aparecerá no ambiente depois de ser deshibernada.
 
 >[!NOTE]
 >Atualmente, o Cloud Manager não indica se um ambiente está hibernado.
 
-## Atualizações do AEM para Ambientes do Sandbox {#aem-updates-sandbox}
+## Atualizações de AEM para Ambientes do Sandbox {#aem-updates-sandbox}
 
-Consulte as atualizações [de versão do](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) AEM para obter mais detalhes.
+Consulte [AEM atualizações](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) de versão para obter mais detalhes.
 
-Um usuário pode aplicar manualmente as atualizações do AEM aos ambientes em um Programa Sandbox.
+Um usuário pode aplicar manualmente AEM atualizações aos ambientes em um Programa Sandbox.
 
 Consulte [Atualização do Ambiente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) para saber como atualizar um ambiente.
 
 >[!NOTE]
 >* Uma atualização manual só pode ser executada quando o ambiente de destino tiver um pipeline configurado corretamente.
->* Uma atualização manual do *Production* ou do *Stage* ambiente atualizará automaticamente o outro. O conjunto de ambientes Production+Stage deve estar na mesma versão do AEM.
+>* Uma atualização manual do *Production* ou do *Stage* ambiente atualizará automaticamente o outro. O conjunto de ambientes Production+Stage deve estar na mesma versão AEM.
 
 
 
