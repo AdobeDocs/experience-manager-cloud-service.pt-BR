@@ -2,7 +2,7 @@
 title: Teste de qualidade de código - Cloud Services
 description: Teste de qualidade de código - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: ba20916bf6048cb7dff054d9c10f6e1606ae8506
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -59,7 +59,7 @@ A tabela a seguir resume as classificações e os limiares de falha para cada um
 
 ## Lidar com falsos positivos {#dealing-with-false-positives}
 
-O processo de verificação da qualidade não é perfeito e, por vezes, identificará incorretamente questões que não são realmente problemáticas. Isso é conhecido como &quot;falso positivo&quot;.
+O processo de verificação da qualidade não é perfeito e, por vezes, identificará incorretamente questões que não são realmente problemáticas. Isso é chamado de *falso positivo*.
 
 Nesses casos, o código fonte pode ser anotado com a `@SuppressWarnings` anotação padrão Java que especifica a ID da regra como o atributo de anotação. Por exemplo, um problema comum é que a regra SonarQube para detectar senhas codificadas pode ser agressiva sobre como uma senha codificada é identificada.
 
