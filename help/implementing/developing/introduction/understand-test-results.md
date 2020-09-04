@@ -2,7 +2,7 @@
 title: Entenda seus resultados de teste - Cloud Services
 description: Entenda os resultados do teste - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: 736a7c8d56a957e511451b0ba06affd9643f75e5
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 3%
@@ -225,7 +225,7 @@ O valor da métrica Alterar pode ser um dos seguintes:
 
 * **N/D** - não havia pontuação anterior disponível para comparação
 
-   ![](assets/content-audit-test1.png)
+   <!-- ![](assets/content-audit-test1.png) -->
 
 #### Pontuações no nível da página {#page-level-scores}
 
@@ -233,5 +233,5 @@ Ao analisar qualquer um dos testes, é possível visualizar uma pontuação mais
 
 Clicar nos detalhes de qualquer página individual fornecerá informações sobre os elementos da página que foram avaliados e orientações para corrigir problemas se as oportunidades de aprimoramento forem detectadas. Os detalhes dos testes e as orientações associadas são fornecidos pelo Google Lighthouse.
 
-![](assets/page-level-scores.png)
+<!-- ![](assets/page-level-scores.png) -->
 
