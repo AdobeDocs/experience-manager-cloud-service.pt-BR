@@ -2,9 +2,9 @@
 title: CDN no AEM as a Cloud Service
 description: CDN no AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 38b69b96011b7920adaf7f6cca0edff10f387b41
+source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '689'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ A CDN gerenciada AEM atenderá aos requisitos de desempenho e segurança da maio
 Siga estas etapas para preparar o delivery do conteúdo usando o Adobe Offline CDN:
 
 1. Forneça o certificado SSL assinado e a chave secreta para o Adobe, compartilhando um link para um formulário seguro contendo essas informações. Coordene-se com o suporte ao cliente nesta tarefa.
-   **Observação:** O Aem como Cloud Service não oferece suporte a certificados de Domínio Validado (DV).
+   **Observação:** O Aem como Cloud Service não oferece suporte a certificados de Domínio Validado (DV). Além disso, deve ser um certificado TLS X.509 de uma autoridade de certificação (CA) confiável com uma chave privada RSA de 2048 bits correspondente.
 1. Informe o suporte ao cliente:
    * qual domínio personalizado deve ser associado a um determinado ambiente, conforme definido pela ID do programa e pela ID do ambiente. Observe que domínios personalizados no lado do autor não são suportados.
    * se for necessário algum incluir na lista de permissões IP para restringir o tráfego a um determinado ambiente.
