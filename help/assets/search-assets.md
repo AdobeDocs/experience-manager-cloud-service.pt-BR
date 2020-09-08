@@ -4,9 +4,9 @@ description: Saiba como localizar os ativos necessários no AEM usando o painel 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 88b845f3749ad5c362216c8988e9e12ba511eb35
+source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
 workflow-type: tm+mt
-source-wordcount: '4529'
+source-wordcount: '4525'
 ht-degree: 7%
 
 ---
@@ -106,13 +106,13 @@ Você pode melhorar a relevância das palavras-chave de ativos específicos para
 
 1. Na interface do usuário do Assets, abra a página de propriedades do ativo. Clique em **[!UICONTROL Avançado]** e clique/toque em **[!UICONTROL Adicionar]**, em **[!UICONTROL Elevar para palavras-chave de pesquisa]**.
 1. Na caixa **[!UICONTROL Pesquisar promoção]** , especifique uma palavra-chave para a qual deseja aumentar a pesquisa da imagem e clique/toque em **[!UICONTROL Adicionar]**. É possível especificar várias palavras-chave da mesma maneira.
-1. Click/tap **[!UICONTROL Save &amp; Close]**. O ativo que você promoveu para essa palavra-chave aparece entre os principais resultados da pesquisa.
+1. Clique em **[!UICONTROL Salvar e fechar]**. O ativo que você promoveu para essa palavra-chave aparece entre os principais resultados da pesquisa.
 
 Você pode usar isso em sua vantagem ao aumentar a classificação de alguns ativos nos resultados da pesquisa para a palavra-chave direcionada. Veja o exemplo de vídeo abaixo. Para obter informações detalhadas, consulte [pesquisar em AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*Entenda como os resultados da pesquisa são classificados e como a classificação pode ser influenciada.*
+*Vídeo: Entenda como os resultados da pesquisa são classificados e como a classificação pode ser influenciada.*
 
 ## Advanced search {#scope}
 
@@ -241,7 +241,7 @@ Para acessar a interface do seletor de ativos, acesse `https://[AEM server]:[por
 
 ![Procurar e selecionar ativo no seletor de ativos](assets/assetpicker.png)
 
-Procurar e selecionar ativo no seletor de ativos
+*Figura: Procure e selecione o ativo no seletor de ativos.*
 
 ## Limitações           {#limitations}
 
@@ -263,8 +263,8 @@ Pesquisa visual ou pesquisa de semelhança tem as seguintes limitações:
 * Use o predicado Insights para pesquisar ativos suportados com base em suas estatísticas de uso obtidas de vários aplicativos Creative. Os dados de uso são agrupados em Pontuação de uso, Impressões, Cliques e canais de mídia nos quais os ativos aparecem categorias.
 * Use a caixa de seleção para selecionar todos os resultados de pesquisa ou os resultados de pesquisa filtrados para operar na seleção. Seleciona todos os ativos pesquisados independentemente de quantos ativos são exibidos na visualização do usuário atual. Por exemplo, você pode baixar todos os ativos selecionados, atualizar as propriedades de metadados em massa para todos os ativos selecionados ou adicionar ativos selecionados a uma coleção.
 * Para pesquisar ativos que não contenham os metadados obrigatórios, consulte os metadados [](#mandatorymetadata)obrigatórios.
-* A pesquisa usa todos os campos de metadados. Uma pesquisa genérica, como a pesquisa por 12, geralmente retorna muitos resultados. Para obter melhores resultados, use aspas de duplo (não simples) ou certifique-se de que o número seja contíguo a uma palavra sem um caractere especial (por exemplo, *shoe12*).
-* A pesquisa de texto completo oferece suporte a operadores como -, ^ e assim por diante. Para pesquisar essas letras como literais de string, coloque a expressão de pesquisa entre aspas duplos. Por exemplo, use &quot;Notebook - Beauty&quot; em vez de Notebook - Beauty.
+* A pesquisa usa todos os campos de metadados. Uma pesquisa genérica, como a pesquisa por 12, geralmente retorna muitos resultados. Para obter melhores resultados, use aspas de duplo (não simples) ou verifique se o número está contíguo a uma palavra sem um caractere especial (por exemplo, `shoe12`).
+* A pesquisa de texto completo oferece suporte a operadores como `-` e `^`. Para pesquisar essas letras como literais de string, coloque a expressão de pesquisa entre aspas duplos. Por exemplo, use `"Notebook - Beauty"` em vez de `Notebook - Beauty`.
 * Se os resultados da pesquisa forem demais, limite o [escopo da pesquisa](#scope) para zero nos ativos desejados. Funciona melhor quando você tem alguma ideia de como procurar melhor os ativos desejados, por exemplo, tipo de arquivo específico, local específico, metadados específicos e assim por diante.
 
 * **Marcação**: As tags ajudam a categorizar ativos que podem ser pesquisados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e workflows. AEM métodos do oferta para marcar automaticamente ativos usando serviços inteligentes e artificiais da Adobe Sensei que continuam melhorando a identificação dos ativos com o uso e o treinamento. Quando você pesquisa ativos, as tags inteligentes são fatoradas se o recurso estiver ativado em sua conta. Funciona juntamente com a funcionalidade de pesquisa incorporada. Consulte Comportamento [da](#searchbehavior)pesquisa. Para otimizar a ordem na qual os resultados da pesquisa são exibidos, é possível [aumentar a classificação](#searchrank) de pesquisa de alguns ativos selecionados.
@@ -277,7 +277,7 @@ Use aspas de duplo em torno de palavras-chave para localizar ativos que contenha
 
 ![Comportamento de pesquisa com e sem aspas](assets/search_with_quotes.gif)
 
-Comportamento de pesquisa com e sem aspas
+*Figura: Comportamento de pesquisa com e sem aspas.*
 
 **Pesquisar com o curinga** de asterisco: Para ampliar a pesquisa, use um asterisco antes ou depois da palavra de pesquisa para corresponder a qualquer número de caracteres. Por exemplo, a pesquisa por executar sem um asterisco não retorna ativos que contenham qualquer variação da palavra (incluindo nos metadados). Um asterisco substitui qualquer número de caracteres. Por exemplo,
 
@@ -288,7 +288,7 @@ Comportamento de pesquisa com e sem aspas
 
 ![Ilustrando o uso do curinga de asterisco na pesquisa de Ativos usando um exemplo](assets/search_with_asterisk_run.gif)
 
-Ilustrando o uso do curinga de asterisco na pesquisa de Ativos usando um exemplo
+*Figura: Ilustrando o uso de um asterisco curinga na pesquisa Ativos usando um exemplo.*
 
 **Pesquisa com curinga de ponto de interrogação**: Para ampliar a pesquisa, use um ou mais &#39;?&#39; caracteres para corresponder ao número exato de caracteres. Por exemplo, na ilustração a seguir,
 
@@ -300,7 +300,7 @@ Ilustrando o uso do curinga de asterisco na pesquisa de Ativos usando um exemplo
 
 ![Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo](assets/search_with_questionmark_run.gif)
 
-Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo
+*Figura: Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo.*
 
 **Excluir uma palavra-chave**: Use o traço para procurar ativos que não contêm uma palavra-chave. Por exemplo, `running -shoe` o query retorna ativos que contêm `running`, mas não `shoe`. Da mesma forma, `camp -night` o query retorna ativos que contêm `camp` , mas não `night`. Observe que `camp-night` o query retorna ativos que contêm `camp` e `night`.
 
@@ -312,6 +312,7 @@ Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de 
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
+-->
 
 <!--
 ### Visual or similarity search {#configvisualsearch}
@@ -346,7 +347,6 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
-
 -->
 
 <!--
@@ -361,8 +361,9 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 ### Extract text when uploading assets {#extracttextupload}
 
 You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
+-->
 
-<!-- Check with gklebus if this customization is possible in AEM now.
+<!-- TBD: Check with gklebus and engineering if these customization are possible in CS.
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -372,20 +373,20 @@ You can search for digital assets based on one or more of the following properti
 
 | Search field | Search property values |
 |---|---|
-| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
-| Last Modified | Hour, Day, Week, Month, or Year. |
-| File Size | Small, Medium, or Large. |
-| Publish Status | Published or Unpublished. |
 | Approved Status | Approved or Rejected. |
+| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
+| File Size | Small, Medium, or Large. |
+| Last Modified | Hour, Day, Week, Month, or Year. |
+| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
 | Orientation | Horizontal, Vertical, or Square. |
+| Publish Status | Published or Unpublished. |
 | Style | Color, or Black & White. |
+| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Video Codec | x264. Value is stored in the metadata of video renditions only. |
+| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
 | Video Height | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 | Video Width | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Video Codec | x264. Value is stored in the metadata of video renditions only. |
-| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 
 -->
 
@@ -463,6 +464,9 @@ Você pode criar coleções inteligentes com base nos critérios de pesquisa. No
 **O filtro/predicado de pesquisa não está disponível**: Se uma personalização esperada para pesquisar filtros não estiver disponível na interface do usuário, entre em contato com o administrador para verificar se a personalização foi implementada para todos os autores e no servidor de produção que você está usando. É possível que a configuração esteja incorreta.
 
 ## Solução de problemas relacionados à pesquisa {#troubleshoot}
+
+<!-- TBD: Expand this section.
+-->
 
 Veja abaixo os problemas e a possível linha de ação:
 
