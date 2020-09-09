@@ -2,7 +2,7 @@
 title: Notificações - Cloud Service
 description: Notificações - Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
@@ -37,5 +37,4 @@ Isso levará o usuário para a tela Preferências de notificações no Adobe [!U
 Os usuários podem ativar as notificações por email e (opcionalmente) selecionar os tipos de notificações que desejam receber por email.
 
 >[!NOTE]
->
 >Você também pode habilitar a digestão a partir do Adobe [!UICONTROL Experience Cloud].
