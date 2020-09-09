@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
+source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -78,27 +78,23 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
    * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é essencialmente emular um usuário que aprova manualmente cada falha.
 
 
-1. As configurações de pipeline de produção incluem uma terceira guia rotulada como **Experience Audit**.
+1. As configurações de pipeline de produção incluem uma terceira guia rotulada como **Experience Audit**. Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência. O usuário deve concluir o campo de entrada para definir seu próprio link personalizado.
 
    ![](assets/setup-3.png)
 
-   Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência. O usuário deve concluir o campo de entrada para definir seu próprio link personalizado.
+   Clique em **Adicionar nova substituição** de página para fornecer um caminho de URL a ser incluído na Auditoria de experiência.
 
    Por exemplo, se você deseja incluir `https://wknd.site/us/en/about-us.html` na Auditoria de experiência, informe o caminho `us/en/about-us.html` neste campo.
 
-   ![](assets/set-up-5.png)
+   ![](assets/exp-audit4.png)
 
-   O URL que aparece na tabela será `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`.
+   O URL que aparece na tabela será `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`.
 
-   ![](assets/set-up-4.png)
+   ![](assets/exp-audit5.png)
 
    É possível incluir no máximo 25 linhas. Se não houver páginas enviadas pelo usuário nesta seção, a página inicial do site será incluída na Auditoria de experiência por padrão.
 
    Consulte [Entendendo os resultados](/help/implementing/cloud-manager/experience-audit-testing.md) da auditoria de experiência para obter mais detalhes.
-
-   Clique em **Adicionar nova substituição** de página para fornecer um caminho de URL a ser incluído na Auditoria de experiência. Depois de adicionar o caminho, clique em **Salvar**.
-
-   ![](assets/exp-audit2.png)
 
    >[!NOTE]
    > As páginas configuradas serão enviadas ao serviço e avaliadas de acordo com os testes de desempenho, acessibilidade, SEO (Search Engine Otimization), práticas recomendadas e PWA (Progressive Web App).
