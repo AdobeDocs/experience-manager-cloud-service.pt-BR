@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
+source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -82,9 +82,9 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
 
    ![](assets/setup-3.png)
 
-   Clique em **Adicionar nova substituição** de página para fornecer um caminho de URL a ser incluído na Auditoria de experiência.
+   Clique em **Adicionar nova página** para fornecer um caminho de URL a ser incluído na Auditoria de experiência.
 
-   Por exemplo, se você deseja incluir `https://wknd.site/us/en/about-us.html` na Auditoria de experiência, informe o caminho `us/en/about-us.html` neste campo.
+   Por exemplo, se você deseja incluir `https://wknd.site/us/en/about-us.html` na Auditoria de experiência, insira o caminho `us/en/about-us.html` neste campo e clique em **Salvar**.
 
    ![](assets/exp-audit4.png)
 
