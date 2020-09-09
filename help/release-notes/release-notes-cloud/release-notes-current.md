@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0.
 description: 'Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 '
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: a2037fb3a315db801423c33671e1885a0b655391
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 44%
+source-wordcount: '235'
+ht-degree: 26%
 
 ---
 
@@ -13,6 +13,24 @@ ht-degree: 44%
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.9.0.
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### Novidades {#what-is-new-commerce}
+
+* Componentes principais CIF lançados v1.3.0. Consulte os Componentes [principais](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) CIF para obter mais detalhes.
+
+* A capacidade de pré-visualização com produto/categoria para modelos de produto e categoria já está disponível. Isso permite que os usuários/profissionais de marketing AEM visualizações os modelos de produto/categoria com dados reais.
+
+* A página Propriedades foi adicionada aos produtos e categorias para permitir que os usuários corporativos visualizações detalhes associados ao SKU do produto/ID da categoria.
+
+* Recurso de classificação adicionado ao Console do produto para permitir a classificação de produtos/categorias por nome ou atributos de preço.
+
+* Funcionalidade de pesquisa do produto adicionada ao Console do produto.
+
+### Correções de erros {#bug-fixes-commerce}
+
+* As configurações de Commerce Cloud não respeitavam a herança. Isso foi corrigido para garantir que a configuração herde valores.
 
 
 ## Cloud Manager {#cloud-manager}
