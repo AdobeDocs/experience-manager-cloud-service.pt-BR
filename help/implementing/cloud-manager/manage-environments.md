@@ -2,10 +2,10 @@
 title: Gerenciar Ambientes - Cloud Service
 description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 8%
+source-wordcount: '791'
+ht-degree: 7%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 A seção a seguir descreve os tipos de ambientes que um usuário pode criar e como ele pode criar um ambiente.
 
-## Tipos de Ambientes {#environment-types}
+## Tipos de ambientes {#environment-types}
 
 Um usuário com as permissões necessárias pode criar os seguintes tipos de ambientes (dentro dos limites do que está disponível para o locatário específico).
 
@@ -55,7 +55,7 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Ao criar um ambiente, uma ou mais *integrações* são criadas em E/S da Adobe. Eles estão visíveis para usuários clientes que têm acesso ao console de E/S da Adobe e não devem ser excluídos. Isso é descartado na descrição no console de E/S da Adobe.
+   >Ao criar um ambiente, uma ou mais *integrações* são criadas na E/S do Adobe. Eles estão visíveis para usuários clientes que têm acesso ao Console de E/S do Adobe e não devem ser excluídos. Isso é descartado na descrição no Console de E/S do Adobe.
 
    ![](assets/add-environment-image1.png)
 
@@ -66,9 +66,9 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
 
 ## Atualização do Ambiente {#updating-dev-environment}
 
-As atualizações de ambientes de Estágio e Produção são gerenciadas automaticamente pela Adobe.
+As atualizações de ambientes de Estágio e Produção são gerenciadas automaticamente pelo Adobe.
 
-As atualizações dos ambientes de desenvolvimento são gerenciadas pelos usuários do programa. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status na placa de Ambientes na tela inicial mostrará **ATUALIZAÇÃO DISPONÍVEL**.
+As atualizações dos ambientes de desenvolvimento são gerenciadas pelos usuários do programa. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status na placa Ambientes na tela inicial mostrará **ATUALIZAÇÃO DISPONÍVEL**.
 
 ![](assets/update-environ-1.png)
 
@@ -97,6 +97,15 @@ A opção de exclusão também estará disponível se você clicar em **Detalhes
 
 >[!NOTE]
 Este recurso não está disponível para ambientes de produção/estágio definidos em uma configuração regular de programa para fins de produção. No entanto, o recurso está disponível para ambientes de produção/estágio em um programa Sandbox.
+
+## Gerenciamento do acesso {#managing-access}
+
+Selecione **Gerenciar acesso** no menu suspenso no Cartão de **Ambientes** . Você pode navegar para a instância do autor diretamente e gerenciar o acesso do seu ambiente.
+
+Consulte [Gerenciamento do acesso à instância](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) do autor para saber mais.
+
+![](assets/environ-manage-access.png)
+
 
 ## Acesso ao Console do desenvolvedor {#accessing-developer-console}
 
