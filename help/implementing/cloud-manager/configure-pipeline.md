@@ -2,7 +2,7 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
+source-git-commit: 044d3498749ea79bbf920e7eb6354750a626ffc7
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
@@ -88,7 +88,9 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
 
    ![](assets/exp-audit4.png)
 
-   O URL que aparece na tabela será `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`.
+   O URL que aparece na tabela será:
+
+   `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
    ![](assets/exp-audit5.png)
 
