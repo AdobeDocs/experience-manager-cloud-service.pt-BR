@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 translation-type: tm+mt
-source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
+source-git-commit: 4d5ad99e44446ac40d9798df1c7fabb862065495
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,10 @@ Siga estas etapas para configurar o comportamento e as preferências do seu pipe
    * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é essencialmente emular um usuário que aprova manualmente cada falha.
 
 
-1. As configurações de pipeline de produção incluem uma terceira guia rotulada como **Experience Audit**. Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência. O usuário deve clicar em **Adicionar nova página** para definir seu próprio link personalizado.
+1. As configurações de pipeline de produção incluem uma terceira guia rotulada como **Experience Audit**. Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência.
+
+   >[!NOTE]
+   >Você deve clicar em **Adicionar nova página** para definir seu próprio link personalizado.
 
    ![](assets/setup-3.png)
 
