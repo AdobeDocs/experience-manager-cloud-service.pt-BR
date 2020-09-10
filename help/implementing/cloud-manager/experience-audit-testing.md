@@ -2,9 +2,9 @@
 title: Teste de auditoria de experiência - Cloud Services
 description: Teste de auditoria de experiência - Cloud Services
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Teste de auditoria de experiência {#experience-audit-testing}
 
-A Experience Audit é um recurso disponível nos pipelines de produção do Cloud Manager Sites, uma ferramenta de código aberto do Google. Esse recurso é ativado em todos os pipelines de produção do Cloud Manager.
+A Experience Audit é um recurso disponível nos pipelines de produção do Cloud Manager Sites, desenvolvido pelo Google Lighthouse, uma ferramenta de código aberto da Google. Esse recurso é ativado em todos os pipelines de produção do Cloud Manager.
 
 Ele valida o processo de implantação e ajuda a garantir que as alterações implantadas:
 
