@@ -3,7 +3,7 @@ title: API HTTP de ativos em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
+source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, execuções e comentários, juntamente com conteúdo estruturado usando Fragmentos [!DNL Experience Manager] de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API. Inclui [suporte para Fragmentos](/help/assets/assets-api-content-fragments.md)de conteúdo.
+A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, execuções e comentários, juntamente com conteúdo estruturado usando Fragmentos [!DNL Experience Manager] de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API. Inclui [suporte para Fragmentos](/help/assets/content-fragments/assets-api-content-fragments.md)de conteúdo.
 
 Para acessar a API:
 
@@ -34,13 +34,13 @@ Após o Tempo [!UICONTROL desligado], um ativo e suas representações não est�
 
 Um fragmento [de](/help/assets/content-fragments/content-fragments.md) conteúdo é um tipo especial de ativo. Pode ser usado para acessar dados estruturados, como textos, números, datas, entre outros. Como há várias diferenças nos `standard` ativos (como imagens ou documentos), algumas regras adicionais se aplicam ao manuseio de fragmentos de conteúdo.
 
-Para obter mais informações, consulte Suporte a fragmentos [de conteúdo na API](/help/assets/assets-api-content-fragments.md)HTTP dos ativos Experience Manager.
+Para obter mais informações, consulte Suporte a fragmentos [de conteúdo na API](/help/assets/content-fragments/assets-api-content-fragments.md)HTTP dos ativos Experience Manager.
 
 ## Modelo de dados {#data-model}
 
 A API HTTP Assets expõe dois elementos principais, pastas e ativos (para ativos padrão).
 
-Além disso, expõe elementos mais detalhados para os modelos de dados personalizados que descrevem o conteúdo estruturado em Fragmentos de conteúdo. Consulte Modelos [de dados de fragmento de](/help/assets/assets-api-content-fragments.md#content-models-and-content-fragments) conteúdo para obter mais informações.
+Além disso, expõe elementos mais detalhados para os modelos de dados personalizados que descrevem o conteúdo estruturado em Fragmentos de conteúdo. Consulte Modelos [de dados de fragmento de](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) conteúdo para obter mais informações.
 
 ### Pastas {#folders}
 
@@ -71,7 +71,7 @@ Em [!DNL Experience Manager] um ativo contém os seguintes elementos:
 * Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As representações adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou Adobe InDesign.
 * Comentários opcionais.
 
-Para obter informações sobre elementos em Fragmentos de conteúdo, consulte Suporte a fragmentos de [conteúdo na API](/help/assets/assets-api-content-fragments.md)HTTP dos ativos de Experience Manager.
+Para obter informações sobre elementos em Fragmentos de conteúdo, consulte Suporte a fragmentos de [conteúdo na API](/help/assets/content-fragments/assets-api-content-fragments.md)HTTP dos ativos de Experience Manager.
 
 Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
 
@@ -122,7 +122,7 @@ Recupera uma representação Siren de uma pasta existente e de suas entidades fi
 
 **Resposta**: A classe da entidade retornada é um ativo ou uma pasta. As propriedades de entidades contidas são um subconjunto do conjunto completo de propriedades de cada entidade. Para obter uma representação completa da entidade, os clientes devem recuperar o conteúdo do URL apontado pelo link com um `rel` de `self`.
 
-## Criar uma pasta {#create-a-folder}
+## Crie uma pasta {#create-a-folder}
 
 Cria um novo `sling`: `OrderedFolder` no caminho determinado. Se um nome `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação SIREEN da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de query de URL.
 
