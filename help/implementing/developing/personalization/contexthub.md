@@ -1,0 +1,50 @@
+---
+title: ContextHub
+description: O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto
+translation-type: tm+mt
+source-git-commit: 75d6b51c0148a21ca401d98a5eaf644fc6b0e8cc
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 1%
+
+---
+
+
+# ContextHub {#contexthub}
+
+O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto. O principal recurso é oferecer a capacidade de [visualização de dados de contexto ao simular e alternar entre várias personas.](/help/sites-cloud/authoring/personalization/contexthub.md)
+
+O ContextHub permite:
+
+* [Apresentar, visualização, alternar personas e simular a experiência](#presentation) do usuário ao criar páginas usando dados de contexto.
+* [Persistir em dados](#persistence) de contexto em seu site como uma representação de camada de dados.
+* [Gerenciar segmentos](#segmentation) para o contexto selecionado.
+
+A API Javascript do cliente permite acessar os dados para personalizar o conteúdo.
+
+## Apresentação {#presentation}
+
+A barra de ferramentas [do](/help/sites-cloud/authoring/personalization/contexthub.md) ContextHub permite que profissionais de marketing e autores vejam e manipulem dados de armazenamento para simular a experiência do usuário ao criar páginas. A barra de ferramentas consiste em grupos de módulos de interface que fornecem acesso aos armazenamentos do [ContextHub,](#persistence) que persistem nos dados do ContextHub no cliente.
+
+Cada módulo de interface do usuário do ContextHub é uma instância de um tipo de módulo predefinido:
+
+* O ContextHub fornece vários tipos [de módulo de](sample-modules.md)amostra.
+* Use AEM consoles para [adicionar módulos](configuring-contexthub.md#adding-a-ui-module)de interface e [agrupá-los em modos](configuring-contexthub.md#adding-a-ui-mode)de interface.
+* Os desenvolvedores podem [criar tipos](extending-contexthub.md#creating-contexthub-ui-module-types)de módulo personalizados.
+
+Os desenvolvedores precisam [adicionar o componente ContextHub à página](configuring-contexthub.md).
+
+## Persistência {#persistence}
+
+O ContextHub armazena dados de contexto persistentes no cliente. A API Javascript do ContextHub permite acessar lojas para criar, atualizar e excluir dados, conforme necessário. Dessa forma, o ContextHub representa uma camada de dados em suas páginas.
+
+Cada armazenamento ContextHub é uma instância de um tipo de armazenamento predefinido:
+
+* O ContextHub fornece vários tipos [de armazenamento de](sample-stores.md)amostra.
+* Use AEM consoles para [criar lojas](configuring-contexthub.md#creating-a-contexthub-store).
+* Os desenvolvedores podem [criar tipos](extending-contexthub.md#creating-custom-store-candidates)de loja personalizados.
+* Os desenvolvedores podem [acessar dados](configuring-contexthub.md#interacting-with-contexthub-stores) do armazenamento por meio do Javascript.
+
+## Segmentação {#segmentation}
+
+O ContextHub inclui um mecanismo de segmentação que gerencia segmentos e determina quais segmentos são resolvidos para o contexto atual. Vários segmentos são definidos. Você pode usar a API Javascript para [determinar segmentos](configuring-contexthub.md#determining-resolved-contexthub-segments)resolvidos.
