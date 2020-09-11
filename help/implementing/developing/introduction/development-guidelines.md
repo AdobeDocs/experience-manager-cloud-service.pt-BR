@@ -1,11 +1,11 @@
 ---
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
-description: A completar
+description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
+source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 1%
+source-wordcount: '1953'
+ht-degree: 2%
 
 ---
 
@@ -88,7 +88,7 @@ O conteúdo é replicado de Autor para Publicar por meio de um mecanismo de sub-
 
 Para desenvolvimento local, as entradas de registros são gravadas em arquivos locais na `/crx-quickstart/logs` pasta.
 
-Nos ambientes da Cloud, os desenvolvedores podem baixar os logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+Em ambientes da Cloud, os desenvolvedores podem baixar os logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **Configuração do nível de log**
 
@@ -146,7 +146,7 @@ Consulte [esta página](/help/release-notes/home.md) para obter mais informaçõ
 
 Os desenvolvedores podem gerar informações de status e resolver vários recursos.
 
-Conforme ilustrado abaixo, as informações de status disponíveis incluem o estado de pacotes, componentes, configurações OSGI, índices de carvalho, serviços OSGI e trabalhos Sling.
+Como ilustrado abaixo, as informações de status disponíveis incluem o estado de pacotes, componentes, configurações OSGI, índices de carvalho, serviços OSGI e trabalhos Sling.
 
 ![Console de desenvolvedor 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -175,15 +175,15 @@ O Adobe monitora o desempenho do aplicativo e toma medidas para resolver se a de
 
 Mediante solicitação, o AEM como Cloud Service fornecerá um endereço IP estático e dedicado para HTTP (porta 80) e HTTPS (porta 443) de saída programado no código Java.
 
-### Benefícios {#benefits}
+### Benefits {#benefits}
 
 Esse endereço IP dedicado pode melhorar a segurança ao integrar-se com fornecedores SaaS (como um fornecedor de CRM) ou outras integrações fora do AEM como uma Cloud Service que oferta uma lista de permissões de endereços IP. Ao adicionar o endereço IP dedicado à lista de permissões, ele garante que somente o tráfego do Cloud Service do cliente AEM possa fluir para o serviço externo. Além do tráfego de outros IPs permitidos.
 
-Sem o recurso de endereço IP dedicado ativado, o tráfego que sai do AEM como Cloud Service continua por meio de um conjunto de IPs compartilhados com outros clientes.
+Sem o recurso de endereço IP dedicado ativado, o tráfego que sai do AEM como um Cloud Service continua por meio de um conjunto de IPs compartilhados com outros clientes.
 
 ### Configuração {#configuration}
 
-Para ativar um endereço IP dedicado, envie uma solicitação ao Suporte ao cliente, que fornecerá as informações do endereço IP. A solicitação deve especificar cada ambiente e solicitações adicionais devem ser feitas se novos ambientes precisarem do recurso após a solicitação inicial. ambientes de programa Sandbox não são suportados.
+Para ativar um endereço IP dedicado, envie uma solicitação ao Suporte ao cliente, que fornecerá as informações do endereço IP. A solicitação deve especificar cada ambiente e solicitações adicionais devem ser feitas se novos ambientes precisarem do recurso após a solicitação inicial. Ambientes de programa Sandbox não são suportados.
 
 ### Uso de recursos {#feature-usage}
 
