@@ -2,7 +2,7 @@
 title: Introdução aos SPAs em AEM usando React
 description: Este artigo apresenta um aplicativo SPA de amostra, explica como ele é colocado junto e permite que você entre em operação com seu próprio SPA rapidamente usando a estrutura React.
 translation-type: tm+mt
-source-git-commit: 4652ab5a064d1ad397eb8eebd9dd92f7c8bb1c21
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 1%
@@ -48,9 +48,9 @@ O `package.json` arquivo define os requisitos do pacote SPA geral. As dependênc
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
@@ -123,7 +123,7 @@ O ponto de entrada no SPA é, claro, o `index.js` arquivo mostrado aqui simplifi
 ```
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -148,7 +148,7 @@ Quando o componente é instanciado estaticamente usando o modelo de componente (
 Ao renderizar o aplicativo, `index.js` as chamadas `App.js`, que são mostradas aqui em uma versão simplificada para focar no conteúdo importante.
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -166,7 +166,7 @@ export default withModel(App);
 Ao renderizar a página, `App.js` as chamadas `Page.js` listadas aqui em uma versão simplificada.
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -187,7 +187,7 @@ Com a página renderizada, os componentes, como `Image.js` mostrado aqui, podem 
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -230,7 +230,7 @@ Você pode exportar um componente e mantê-lo editável.
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 
