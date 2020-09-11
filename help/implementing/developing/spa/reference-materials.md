@@ -2,17 +2,17 @@
 title: Materiais de referência SPA
 description: Uma visão geral das referências da API de aplicativo de página única e dos repositórios de código fonte
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: ef3e40c22264e96253dc1ff322a667b4b2432450
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '127'
 ht-degree: 0%
 
 ---
 
 
-# Referências da API Javascript do SPA{#spa-javascript-api-references}
+# Materiais de referência SPA {#spa-reference-materials}
 
-## Referências de API para módulos NMP {#api-references}
+## Referências de API Javascript SPA para módulos NMP {#api-references}
 
 Veja a seguir as referências da API JavaScript disponíveis dos módulos NPM para a estrutura SDK do Editor SPA AEM.
 
