@@ -2,7 +2,7 @@
 title: Visão geral do editor SPA
 description: Este artigo fornece uma visão geral abrangente do Editor SPA e de como ele funciona, incluindo workflows detalhados de interação do Editor SPA dentro do AEM.
 translation-type: tm+mt
-source-git-commit: 9b52d94b9f00be30c21dece9b34b0b56056dcbd6
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 0%
@@ -36,7 +36,7 @@ O componente de página de um SPA não fornece os elementos HTML de seus compone
 
 ### Gerenciamento do modelo de página {#page-model-management}
 
-A resolução e o gerenciamento do modelo de página são delegados em uma `PageModel` biblioteca fornecida. O SPA deve usar a biblioteca do Modelo de página para ser inicializado e criado pelo Editor SPA. A biblioteca do Modelo de página foi fornecida indiretamente para o componente Página AEM por meio do `cq-react-editable-components` npm. O Modelo de página é um intérprete entre o AEM e o SPA e, portanto, sempre deve estar presente. Quando a página é criada, uma biblioteca adicional `cq.authoring.pagemodel.messaging` deve ser adicionada para permitir a comunicação com o editor de página.
+A resolução e o gerenciamento do modelo de página são delegados em uma `PageModel` biblioteca fornecida. O SPA deve usar a biblioteca do Modelo de página para ser inicializado e criado pelo Editor SPA. A biblioteca do Modelo de página foi fornecida indiretamente para o componente Página AEM por meio do `aem-react-editable-components` npm. O Modelo de página é um intérprete entre o AEM e o SPA e, portanto, sempre deve estar presente. Quando a página é criada, uma biblioteca adicional `cq.authoring.pagemodel.messaging` deve ser adicionada para permitir a comunicação com o editor de página.
 
 Se o componente de página SPA herdar do componente principal da página, há duas opções para disponibilizar a categoria da biblioteca do `cq.authoring.pagemodel.messaging` cliente:
 
