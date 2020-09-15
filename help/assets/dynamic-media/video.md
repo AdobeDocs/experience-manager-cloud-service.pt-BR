@@ -2,9 +2,9 @@
 title: Vídeo
 description: Saiba como trabalhar com vídeo no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
+source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
 workflow-type: tm+mt
-source-wordcount: '10052'
+source-wordcount: '10056'
 ht-degree: 10%
 
 ---
@@ -339,7 +339,7 @@ Use o CBR se o vídeo contiver um nível de movimento semelhante em todo o víde
 O VBR demora mais para codificar, mas produz os resultados mais favoráveis; a qualidade do arquivo de mídia é superior. O VBR é usado com mais frequência para o delivery progressivo http do conteúdo de vídeo.
 
 Quando você deve usar VBR versus CRB?
-Quando se trata de selecionar VBR versus CBR, é quase sempre recomendável usar VBR para seus arquivos de mídia. O VBR fornece arquivos de maior qualidade a taxas de bits competitivas. Ao usar VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima para 1,5x a taxa de bits do vídeo do público alvo.
+Quando se trata de selecionar VBR versus CBR, é quase sempre recomendável usar VBR para seus arquivos de mídia. O VBR fornece arquivos de maior qualidade a taxas de bits competitivas. Ao usar o VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima como 1,5x a taxa de bits de vídeo do público alvo.
 
 Ao escolher uma predefinição de codificação de vídeo, considere a velocidade de conexão do usuário final do público alvo. Escolha uma predefinição com uma taxa de dados que seja 80% dessa velocidade. Por exemplo, se a velocidade de conexão do usuário final do público alvo for de 1000 Kbps, a melhor predefinição será aquela com uma taxa de dados de vídeo de 800 Kbps.
 
@@ -412,9 +412,9 @@ O Dynamic Media recomenda o uso de predefinições de codificação de vídeo MP
 
 ## Publicar vídeos no YouTube {#publishing-videos-to-youtube}
 
-Você pode publicar ativos de vídeo no local AEM diretamente em um canal do YouTube criado anteriormente.
+Você pode publicar ativos de vídeo gerenciados no AEM Assets diretamente em um canal do YouTube criado anteriormente.
 
-Para publicar ativos de vídeo no YouTube, configure o AEM Assets com tags. Você associa essas tags a um canal do YouTube. Se a tag de um ativo de vídeo corresponder à tag de um canal do YouTube, o vídeo será publicado no YouTube. A publicação no YouTube ocorre junto com uma publicação normal do vídeo, desde que uma tag associada seja usada.
+Para publicar ativos de vídeo no YouTube, adicione tags a ativos de vídeo no AEM Assets. Você associa essas tags a um canal do YouTube. Se a tag de um ativo de vídeo corresponder à tag de um canal do YouTube, o vídeo será publicado no YouTube. A publicação no YouTube ocorre junto com uma publicação normal do vídeo, desde que uma tag associada seja usada.
 
 O YouTube faz sua própria codificação. Dessa forma, o arquivo de vídeo original que foi carregado no AEM é publicado no YouTube em vez de qualquer execução de vídeo criada pela codificação do Dynamic Media. Embora não seja necessário processar vídeos usando o Dynamic Media, espera-se que eles o façam caso uma predefinição do visualizador seja necessária para a reprodução.
 
