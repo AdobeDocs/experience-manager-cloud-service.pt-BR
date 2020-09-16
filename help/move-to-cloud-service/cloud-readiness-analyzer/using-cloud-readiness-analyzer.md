@@ -1,11 +1,11 @@
 ---
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
-translation-type: ht
-source-git-commit: a0e58c626f94b778017f700426e960428b657806
-workflow-type: ht
-source-wordcount: '1871'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
+workflow-type: tm+mt
+source-wordcount: '2091'
+ht-degree: 77%
 
 ---
 
@@ -146,29 +146,33 @@ Este é um exemplo de como isso pode ser feito:
 
 Os seguintes cabeçalhos HTTP são usados por essa interface:
 
-* `Cache-Control: max-age=<seconds>`: especifique o tempo de vida da atualização do cache em segundos. (Consulte [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
-* `Prefer: respond-async`: indica que o servidor deve responder de forma assíncrona. (Consulte [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
+* `Cache-Control: max-age=<seconds>`: Especifica a duração da frescura do cache em segundos. (Consulte [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
+* `Prefer: respond-async`: Especifica que o servidor deve responder de forma assíncrona. (Consulte [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1).)
+* `Prefer: return=minimal`: Especifica que o servidor deve retornar uma resposta mínima. (Consulte [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2).)
 
 Os seguintes parâmetros de consulta HTTP estão disponíveis como conveniência para quando cabeçalhos HTTP não puderem ser usados com facilidade:
 
-* `max-age` (número, opcional): especifique o tempo de vida da atualização do cache em segundos. Esse número deve ser 0 ou maior. O tempo de vida da atualização padrão é de 86.400 segundos, o que significa que, sem esse parâmetro ou o cabeçalho correspondente, um novo cache será usado para atender a solicitações 24 horas antes de o relatório ser regenerado. O uso de `max-age=0` força a limpeza do cache e inicia a regeneração do relatório. Imediatamente após essa solicitação, o tempo de vida da atualização será redefinido para o valor diferente de zero anterior.
-* `respond-async` (booleano, opcional): especifique que a resposta deve ser fornecida de forma assíncrona. Usar `respond-async=true` quando o cache estiver obsoleto faz com que o servidor retorne uma resposta de `202 Accepted, processing cache` sem esperar que o relatório seja gerado e o cache seja atualizado. Se o cache estiver atualizado, esse parâmetro não terá efeito. O valor padrão é `false`, o que significa que, sem esse parâmetro ou o cabeçalho correspondente, o servidor responde de forma síncrona, o que pode exigir uma quantidade significativa de tempo e um ajuste ao tempo máximo de resposta do cliente HTTP.
+* `max-age` (número, opcional): Especifica a duração da frescura do cache em segundos. Esse número deve ser 0 ou maior. A duração padrão de frescura é de 86400 segundos. Sem esse parâmetro ou o cabeçalho correspondente, um novo cache será usado para atender solicitações por 24 horas, e nesse ponto o cache deverá ser regenerado. O uso `max-age=0` forçará a limpeza do cache e iniciará a regeneração do relatório, usando a duração de frescura diferente de zero anterior para o cache recém-gerado.
+* `respond-async` (booleano, opcional): Especifica que a resposta deve ser fornecida de forma assíncrona. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. Se o cache estiver atualizado, esse parâmetro não terá efeito. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
+* `may-refresh-cache` (booleano, opcional): Especifica que o servidor pode atualizar o cache em resposta a uma solicitação se o cache atual estiver vazio, obsoleto ou em breve obsoleto. Se `may-refresh-cache=true`ou se não for especificado, o servidor poderá iniciar uma tarefa em segundo plano que chamará o Detector de padrão e atualizará o cache. Se `may-refresh-cache=false` isso acontecer, o servidor não iniciará nenhuma tarefa de atualização que, de outra forma, teria sido feita se o cache estivesse vazio ou obsoleto, caso em que o relatório estará vazio. Qualquer tarefa de atualização que já esteja em andamento não será afetada por esse parâmetro.
+* `return-minimal` (booleano, opcional): Especifica que a resposta do servidor deve incluir apenas o status que contém a indicação de progresso e o status do cache no formato JSON. Se `return-minimal=true`, o corpo da resposta será limitado ao objeto de status. Se `return-minimal=false`, ou se não for especificado, será fornecida uma resposta completa.
+* `log-findings` (booleano, opcional): Especifica que o servidor deve registrar o conteúdo do cache quando ele for criado ou atualizado pela primeira vez. Cada descoberta do cache será registrada como uma string JSON. Este registro só ocorrerá se `log-findings=true` e a solicitação gerar um novo cache.
 
 Quando um cabeçalho HTTP e um parâmetro de consulta correspondente estiverem presentes, o parâmetro de consulta terá prioridade.
 
 Uma maneira simples de iniciar a geração do relatório por meio da interface HTTP é com o seguinte comando:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Depois que uma solicitação é feita, o cliente não precisa permanecer ativo para que o relatório seja gerado. A geração de relatórios pode ser iniciada com um cliente usando uma solicitação GET HTTP e, depois que o relatório for gerado, visualizada do cache em outro cliente ou na ferramenta CSV na interface do usuário no AEM.
+Depois que uma solicitação é feita, o cliente não precisa permanecer ativo para que o relatório seja gerado. A geração de relatórios pode ser iniciada com um cliente usando uma solicitação de GET HTTP e, depois que o relatório for gerado, visualizado do cache com outro cliente ou com a ferramenta CRA na interface do usuário AEM.
 
 ### Respostas {#http-responses}
 
 Os seguintes valores de resposta são possíveis:
 
-* `200 OK`: a resposta contém conclusões do Detector de padrões que foram geradas dentro do tempo de vida da atualização do cache.
-* `202 Accepted, processing cache`: fornecido para respostas assíncronas para indicar que o cache estava obsoleto e que uma atualização estava em andamento.
-* `400 Bad Request`: indica que houve um erro com a solicitação. Uma mensagem no formato de Detalhes do problema (consulte [RFC 7807](https://tools.ietf.org/html/rfc7807)) com mais detalhes.
-* `401 Unauthorized`: a solicitação não foi autorizada.
+* `200 OK`: Indica que a resposta contém descobertas do Detector de padrão que foram geradas dentro do tempo de vida útil do cache.
+* `202 Accepted`: Usado para indicar que o cache está obsoleto. Quando `respond-async=true` e `may-refresh-cache=true` essa resposta indica que uma tarefa de atualização está em andamento. Quando `may-refresh-cache=false` essa resposta simplesmente indica que o cache está obsoleto.
+* `400 Bad Request`: indica que houve um erro com a solicitação. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `401 Unauthorized`: Indica que a solicitação não foi autorizada.
 * `500 Internal Server Error`: indica que ocorreu um erro de servidor interno. Uma mensagem no formato de Detalhes do problema fornece mais detalhes.
 * `503 Service Unavailable`: indica que o servidor está ocupado com outra resposta e não pode atender a essa solicitação em tempo hábil. Isso só pode ocorrer quando forem feitas solicitações síncronas. Uma mensagem no formato de Detalhes do problema fornece mais detalhes.
 
