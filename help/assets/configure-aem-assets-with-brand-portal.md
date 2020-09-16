@@ -3,9 +3,9 @@ title: Configure o AEM Assets como um Cloud Service com o Brand Portal
 description: Configurar o AEM Assets com o Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 96a084dd0e8f250b343b616573aeedb2b83682e4
+source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1647'
 ht-degree: 19%
 
 ---
@@ -275,7 +275,7 @@ Execute as seguintes etapas para validar a configuração:
 
    ![](assets/test-bpconfig4.png)
 
-   A message appears at the bottom of the page that your *test package is successfully delivered*.
+   Será exibida uma mensagem informando que o pacote de *teste foi entregue* com êxito.
 
    >[!NOTE]
    >
