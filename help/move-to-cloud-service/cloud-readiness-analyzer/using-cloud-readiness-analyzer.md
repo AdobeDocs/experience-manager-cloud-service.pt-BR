@@ -2,7 +2,7 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: b0ea504fe9b1f2d8eadb9fd263c983dae090cd1a
+source-git-commit: b15969e7cdbd8c3affc6a51b0bc0b0f3f5fdb0f0
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 70%
@@ -64,9 +64,9 @@ Consulte esta seção para saber como visualizar o relatório do Cloud Readiness
 
    ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
 
-A ação acima percorrerá automaticamente o local da descoberta no relatório.
+   A ação acima percorrerá automaticamente o local da descoberta no relatório.
 
-![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
