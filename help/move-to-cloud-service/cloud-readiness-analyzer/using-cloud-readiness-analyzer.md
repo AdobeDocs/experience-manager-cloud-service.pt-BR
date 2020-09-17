@@ -2,7 +2,7 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
+source-git-commit: 99e721e373f34d72f75393b0771a069b9c1f8631
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 70%
@@ -106,7 +106,7 @@ O formato do relatório é:
 * **Visão geral do sistema**: informações sobre o sistema AEM no qual o CRA foi executado.
 * **Categorias de conclusão**: várias seções que abordam uma ou mais conclusões da mesma categoria. Cada seção inclui o seguinte: nome da categoria, subtipos, contagem e importância das conclusões, resumo, link para a documentação da categoria e informações de conclusões individuais.
 
-Um nível de importância é atribuído a cada conclusão para indicar uma prioridade aproximada de ação. Para saber mais sobre cada Categoria de descoberta, consulte as Categorias do [Detector de padrões](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)
+Um nível de importância é atribuído a cada conclusão para indicar uma prioridade aproximada de ação. Para saber mais sobre cada Categoria de descoberta, consulte Categorias [do Detector de](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)padrões.
 
 Siga a tabela abaixo para entender os níveis de importância:
 
