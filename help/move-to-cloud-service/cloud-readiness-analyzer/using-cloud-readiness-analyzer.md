@@ -2,7 +2,7 @@
 title: Uso do Cloud Readiness Analyzer
 description: Uso do Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: b15969e7cdbd8c3affc6a51b0bc0b0f3f5fdb0f0
+source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 70%
@@ -62,20 +62,20 @@ Consulte esta seção para saber como visualizar o relatório do Cloud Readiness
 
 1. Depois que o relatório CRA é gerado, ele exibe um resumo e o número de conclusões em um formato de tabela organizado pelo tipo de descoberta e o nível de importância. Para obter mais detalhes sobre uma determinada descoberta, clique no número que corresponde ao tipo de descoberta na tabela.
 
-   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
 
    A ação acima percorrerá automaticamente o local da descoberta no relatório.
 
-   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
+   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
 
    >[!NOTE]
    >Você pode forçar o CRA a limpar seu cache e gerar novamente o relatório, clicando em **Atualizar relatório**.
 
-   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+   ![imagem](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
 
    >[!NOTE]
    >Enquanto o relatório está sendo regenerado, ele exibe o progresso em termos de porcentagem concluída, como mostrado na imagem abaixo.
