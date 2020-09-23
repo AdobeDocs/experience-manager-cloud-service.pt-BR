@@ -2,7 +2,7 @@
 title: Administração de instâncias de fluxo de trabalho
 description: Saiba como administrar instâncias de fluxo de trabalho
 translation-type: tm+mt
-source-git-commit: 85e4104c3c2dbe4b67005bab52edb7ab90767406
+source-git-commit: c19079b1be36c4e87962491f263ddf97ab98f831
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 0%
@@ -40,16 +40,16 @@ Vários consoles estão disponíveis para administrar seus workflows. Use a nave
 
 1. Na caixa de diálogo Filtro, selecione os critérios de pesquisa do fluxo de trabalho. Você pode pesquisar com base nessas entradas:
 
-* Caminho da carga: Selecione um caminho específico
-* Modelo de fluxo de trabalho: Selecionar um modelo de fluxo de trabalho
-* Destinatário: Selecionar um Destinatário do fluxo de trabalho
-* Tipo: Tarefa, item de fluxo de trabalho ou falha de fluxo de trabalho
-* Status da tarefa: Ativo, concluído ou finalizado
-* Onde estou: Proprietário E Destinatário, somente Proprietário, Somente Destinatário
-* Data do start: Data do start antes ou depois de uma data especificada
-* Data final: Data final antes ou depois de uma data especificada
-* Data de Vencimento: Data de vencimento antes ou depois de uma data especificada
-* Data de atualização: Data de atualização antes ou depois de uma data especificada
+   * Caminho da carga: Selecione um caminho específico
+   * Modelo de fluxo de trabalho: Selecionar um modelo de fluxo de trabalho
+   * Destinatário: Selecionar um Destinatário do fluxo de trabalho
+   * Tipo: Tarefa, item de fluxo de trabalho ou falha de fluxo de trabalho
+   * Status da tarefa: Ativo, concluído ou finalizado
+   * Onde estou: Proprietário E Destinatário, somente Proprietário, Somente Destinatário
+   * Data do start: Data do start antes ou depois de uma data especificada
+   * Data final: Data final antes ou depois de uma data especificada
+   * Data de Vencimento: Data de vencimento antes ou depois de uma data especificada
+   * Data de atualização: Data de atualização antes ou depois de uma data especificada
 
 ## Suspendendo, Retomando e Encerrando uma Instância de Fluxo de Trabalho {#suspending-resuming-and-terminating-a-workflow-instance}
 
@@ -65,12 +65,12 @@ Vários consoles estão disponíveis para administrar seus workflows. Use a nave
 ## Exibição de Workflows arquivados {#viewing-archived-workflows}
 
 1. Usando Navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
+
 1. Selecione **Arquivar** para exibir a lista de instâncias de fluxo de trabalho concluídas com êxito.
 
    ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
 
    >[!NOTE]
-   >
    >O status de anulação é considerado como uma terminação bem-sucedida, pois ocorre como resultado da ação do usuário; por exemplo:
    >
    >* utilização da ação **Terminar**
@@ -91,12 +91,13 @@ Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas** para permi
 * **Abrir histórico** Mostra detalhes do histórico de fluxo de trabalho.
 
 * **Etapa** de nova tentativa Executa a instância do componente Etapa de script novamente. Use o comando Repetir etapa depois de corrigir a causa do erro original. Por exemplo, repita a etapa depois de corrigir um bug no script que a Etapa do processo executa.
-* **Encerrar** o fluxo de trabalho se o erro tiver causado uma situação irrevogável para o fluxo de trabalho. Por exemplo, o fluxo de trabalho pode depender de condições ambientais, como informações no repositório que não são mais válidas para a instância do fluxo de trabalho.
+* **Encerrar** Encerra o fluxo de trabalho se o erro tiver causado uma situação inconciliável para o fluxo de trabalho. Por exemplo, o fluxo de trabalho pode depender de condições ambientais, como informações no repositório que não são mais válidas para a instância do fluxo de trabalho.
 * **Encerrar e tentar novamente** Semelhante a **Encerrar** , exceto que uma nova instância do fluxo de trabalho é iniciada usando a carga, o título e a descrição originais.
 
 Para investigar falhas, retome ou encerre o fluxo de trabalho depois, use as seguintes etapas:
 
 1. Usando Navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
+
 1. Selecione **Falhas** para exibir a lista de instâncias de fluxo de trabalho que não foram concluídas com êxito.
 1. Selecione um item específico e, em seguida, a ação apropriada:
 
@@ -110,16 +111,12 @@ Configure a Configuração **de Expurgação do Fluxo de Trabalho do** Adobe Gra
 
 Você também pode criar várias configurações do serviço para expurgar instâncias de fluxo de trabalho que atendam a critérios diferentes. Por exemplo, crie uma configuração que elimine as instâncias de um modelo de fluxo de trabalho específico quando elas estiverem em execução por muito mais tempo do que o esperado. Crie outra configuração que elimine todos os workflows concluídos após um determinado número de dias para minimizar o tamanho do repositório.
 
-Para configurar o serviço, você pode configurar os Arquivos de configuração do OSGI e ver os arquivos [de configuração do](/help/implementing/deploying/configuring-osgi.md)OSGi. A tabela a seguir descreve as propriedades necessárias para qualquer um dos métodos.
+Para configurar o serviço, você pode configurar os Arquivos de configuração do OSGi e ver os arquivos [de configuração do](/help/implementing/deploying/configuring-osgi.md)OSGi. A tabela a seguir descreve as propriedades necessárias para qualquer um dos métodos.
 
 >[!NOTE]
->
 >Para adicionar a configuração ao repositório, o PID do serviço é:
->
 >`com.adobe.granite.workflow.purge.Scheduler`
->
 >Como o serviço é de fábrica, o nome do `sling:OsgiConfig` nó requer um sufixo identificador, por exemplo:
->
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
 <table>
@@ -161,9 +158,7 @@ Para configurar o serviço, você pode configurar os Arquivos de configuração 
 Você pode definir o tamanho máximo da caixa de entrada configurando o Serviço **de Fluxo de Trabalho** Granite, consulte [adicionar uma configuração OSGi ao repositório](/help/implementing/deploying/configuring-osgi.md). A tabela a seguir descreve a propriedade que você configura.
 
 >[!NOTE]
->
 >Para adicionar a configuração ao repositório, o PID do serviço é:
->
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
 | Nome da propriedade (Console da Web) | Nome da propriedade OSGi |
