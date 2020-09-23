@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
+source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
 workflow-type: tm+mt
-source-wordcount: '1640'
-ht-degree: 97%
+source-wordcount: '1667'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * O requisito mínimo do sistema para a ferramenta Transferência de conteúdo é o AEM 6.3 + e o JAVA 8. Se você estiver em uma versão inferior do AEM, precisará atualizar seu repositório de conteúdo para o AEM 6.5 para usar a ferramenta Transferência de conteúdo.
 
-* A Ferramenta de transferência de conteúdo pode ser usada com os seguintes tipos de armazenamento de dados: Armazenamento de dados de arquivo, Armazenamento de dados S3 e Armazenamento de dados S3 compartilhado. No momento, não há suporte para o Armazenamento de dados Azure Blob Store.
+* A Ferramenta de transferência de conteúdo pode ser usada com os seguintes tipos de armazenamento de dados: Arquivo Data Store, S3 Data Store, Compartilhado S3 Data Store e Azure Blob Store Data Store.
 
 * Se você estiver usando um *Ambiente de sandbox*, certifique-se de que ele seja atualizado para a versão de 10 de junho de 2020 ou posterior. Se você estiver usando um *Ambiente de produção*, ele será atualizado automaticamente.
 
@@ -47,16 +47,16 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
-1. Clique em **Criar conjunto de migração** para criar um novo conjunto de migração. A tela **Detalhes do conjunto de migração de conteúdo** é exibida.
+1. O console abaixo é exibido quando você cria o primeiro conjunto de migração. Clique em **Criar conjunto de migração** para criar um novo conjunto de migração.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
 
    >[!NOTE]
-   >Você visualizará os conjuntos de migração existentes nessa tela com seu status atual.
-
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   >Se você tiver conjuntos de migração existentes, o console exibirá a lista dos conjuntos de migração existentes com seu status atual.
 
 1. Preencha os campos na tela **Detalhes do conjunto de migração de conteúdo**, conforme descrito abaixo.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/content-3.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
 
 
    1. **Nome**: insira o nome do conjunto de migração.
@@ -72,13 +72,13 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
    1. **Token de acesso**: insira o token de acesso.
 
       >[!NOTE]
-      >Você pode recuperar o token de acesso da instância do autor acessando `/libs/granite/migration/token.json`. O token de acesso é recuperado da instância de autor do Cloud Service.
+      >Você pode recuperar o token de acesso usando o botão **Abrir token de acesso** . É necessário garantir que você pertença ao grupo de administradores AEM na instância do Cloud Service do público alvo.
 
    1. **Parâmetros**: selecione os seguintes parâmetros para criar o conjunto de migração:
 
       1. **Incluir versão**: selecione conforme necessário.
 
-      1. **Caminhos a serem incluídos**: use o navegador de caminhos para selecionar os caminhos que precisam ser migrados.
+      1. **Caminhos a serem incluídos**: use o navegador de caminhos para selecionar os caminhos que precisam ser migrados. O seletor de caminho aceita entrada digitando ou por seleção.
 
          >[!IMPORTANT]
          >Os seguintes caminhos estão restritos ao criar um conjunto de migração:
@@ -92,43 +92,40 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
 
 1. Você visualizará seu conjunto de migração na página *Visão geral*.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Todos os conjuntos de migração existentes nessa tela serão exibidos na página *Visão geral* com suas informações de status atuais.
+   Todos os conjuntos de migração existentes nessa tela serão exibidos na página *Visão geral* com suas informações de status atuais. Podem ver alguns destes ícones descritos abaixo.
 
    * Uma *nuvem vermelha* indica que não é possível concluir o processo de extração.
    * Uma *nuvem verde* indica que você pode concluir o processo de extração.
    * Um *ícone amarelo* indica que você não criou o conjunto de migração existente e o específico é criado por algum outro usuário na mesma instância.
 
-1. Selecione um conjunto de migração na página de visão geral e clique em **Propriedades** para visualização ou editar as propriedades desse conjunto de migração.
+1. Selecione um conjunto de migração na página de visão geral e clique em **Propriedades** para visualização ou editar as propriedades desse conjunto de migração. Ao editar as propriedades, não é possível alterar o nome do container ou o URL do serviço.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
+
 
 ### Processo de extração na transferência de conteúdo {#extraction-process}
 
 Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Transferência de conteúdo:
 
-1. Selecione um conjunto de migração na página *Visão geral* e clique em **Extrair** para iniciar a extração.
+1. Selecione um conjunto de migração na página *Visão geral* e clique em **Extrair** para iniciar a extração. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. A caixa de diálogo **Extração do conjunto de migração** é exibida. Clique em **Extrair** para concluir a fase de extração.
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
    >[!NOTE]
    >Você tem a opção de substituir o containercontêiner de preparação durante a fase de extração.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/extract-2.png)
 
-1. O campo **EXTRAÇÃO** agora exibe o status **EM EXECUÇÃO** para o processo de extração em andamento.
+1. O campo **EXTRAÇÃO** agora exibe o status **EM EXECUÇÃO** para indicar que a extração está em andamento.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
    Quando a extração for concluída, o status do conjunto de migração será atualizado para **CONCLUÍDO**, e um ícone de nuvem *verde sólido* será exibido abaixo do campo **INFO** .
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
 
    >[!NOTE]
-   >Será necessário atualizar a página para visualizar o status atualizado.
+   >A interface do usuário tem um recurso de recarregamento automático que recarrega a página de visão geral a cada 30 segundos.
    >Quando a fase de extração for iniciada, o bloqueio de gravação é criado e liberado após *60 segundos*. Em seguida, se uma extração for interrompida, você precisará esperar um minuto até que o bloqueio seja liberado antes de reiniciar a extração.
 
 #### Extração complementar {#top-up-extraction-process}
@@ -140,41 +137,25 @@ A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a at
 
 Quando o processo de extração estiver concluído, você poderá transferir o conteúdo delta usando o método de extração complementar. Siga as etapas abaixo:
 
-1. Navegue até a página *Visão geral* e selecione o conjunto de migração para o qual você deseja realizar a extração complementar.
-
-1. Clique em **Extrair** para iniciar a extração complementar.
-
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. A caixa de diálogo **Extração do conjunto de migração** é exibida.
+1. Navegue até a página *Visão geral* e selecione o conjunto de migração para o qual você deseja realizar a extração complementar. Clique em **Extrair** para iniciar a extração complementar. A caixa de diálogo **Extração do conjunto de migração** é exibida.
 
    >[!IMPORTANT]
    >Você deve desativar a opção **Substituir containercontêiner de preparação durante a extração**.
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### Processo de assimilação na transferência de conteúdo {#ingestion-process}
 
 Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Transferência de conteúdo:
 
-1. Selecione um conjunto de migração na página *Visão geral* e clique em **Assimilar** para iniciar a extração.
+1. Selecione um conjunto de migração na página *Visão geral* e clique em **Assimilar** para iniciar a extração. A caixa de diálogo **Assimilação do conjunto de migração** é exibida. Click on **Ingest** to start the ingestion phase. Para fins de demonstração, a opção **Assimilar conteúdo na instância do autor** do autor está desativada. É possível assimilar conteúdo para Autor e Publicação ao mesmo tempo.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. A caixa de diálogo **Assimilação do conjunto de migração** é exibida.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
+1. Quando a ingestão estiver completa, o status no campo **PUBLISH INGESTION** é atualizado para **FINISHED**.
 
-   Para fins de demonstração, a opção **Assimilar conteúdo na instância do autor** do autor está desativada. É possível assimilar conteúdo para Autor e Publicação ao mesmo tempo.
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
-
-   Clique em **Assimilar** para concluir a fase de assimilação.
-
-1. Quando a assimilação estiver concluída, o status no campo **ASSIMILAÇÃO DO AUTOR** será atualizado para **CONCLUÍDO**, e um ícone de nuvem verde sólido será exibido abaixo do campo **INFO**.
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-4.png)
-
-   >[!NOTE]
-   > Será necessário atualizar a página para visualizar o status atualizado.
 
 #### Ingestão complementar {#top-up-ingestion-process}
 
@@ -185,17 +166,11 @@ A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a *a
 
 Quando o processo de assimilação estiver concluído, você poderá usar o conteúdo delta por meio do método de ingestão complementar. Siga as etapas abaixo:
 
-1. Navegue até a página *Visão geral* e selecione o conjunto de migração para o qual você deseja realizar a assimilação complementar.
+1. Navegue até a página *Visão geral* e selecione o conjunto de migração para o qual você deseja realizar a assimilação complementar. Clique em **Assimilar** para iniciar a extração complementar. A caixa de diálogo **Assimilação do conjunto de migração** é exibida.
 
-1. Clique em **Assimilar** para iniciar a extração complementar.
-
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
-
-1. A caixa de diálogo **Assimilação do conjunto de migração** é exibida.
-
-   >[!NOTE]
-   >Você deve desativar a opção *Varrer* para evitar que o conteúdo existente seja excluído da atividade de assimilação anterior.
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
+   >[!IMPORTANT]
+   >Você deve desativar a opção **Limpar o conteúdo existente na instância do Cloud antes da ingestão** , para evitar que o conteúdo existente seja excluído da atividade de ingestão anterior.
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### Visualização de logs para um conjunto de migração {#viewing-logs-migration-set}
 
