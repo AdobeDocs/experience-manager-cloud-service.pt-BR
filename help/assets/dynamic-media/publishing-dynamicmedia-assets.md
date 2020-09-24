@@ -3,7 +3,7 @@ title: Publicação de ativos de mídia dinâmica
 description: Como publicar ativos de mídia dinâmica
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 9a4f8b4470a0850f4044f799b2af6cf836fd402d
+source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Você publica seus ativos de Mídia dinâmica selecionando os ativos que já carregou e tocando em **[!UICONTROL Publicar]** ou Publicar **** rapidamente. Depois que seus ativos de Mídia dinâmica forem publicados, eles estarão disponíveis para você incluir em uma página da Web por meio de um URL ou da incorporação de código na página.
 
-Você também pode publicar instantaneamente ativos que você carrega, sem nenhuma intervenção do usuário. Ou você pode publicar seletivamente esses ativos. See [Configuring Dynamic Media](config-dm.md). Ou você pode publicar seletivamente ativos no Dynamic Media ou AEM, mutuamente exclusivos entre si, usando Publicação **** seletiva no nível da pasta. See [Working with Selective Publish in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)
+Você também pode publicar instantaneamente ativos que você carrega, sem nenhuma intervenção do usuário. Ou você pode publicar seletivamente esses ativos. See [Configuring Dynamic Media.](config-dm.md) Ou você pode publicar seletivamente ativos no Dynamic Media ou AEM, mutuamente exclusivos entre si, usando Publicação **** seletiva no nível da pasta. See [Working with Selective Publish in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)
 
 Na Visualização **[!UICONTROL de]** cartão, um pequeno ícone de globo aparece logo abaixo do nome de um ativo e à esquerda da data e hora para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
 
@@ -25,7 +25,7 @@ Na Visualização **[!UICONTROL de]** cartão, um pequeno ícone de globo aparec
 
 Se você pretende publicar ativos de vídeo imediatamente após a codificação, certifique-se de que a codificação esteja concluída. Quando os vídeos ainda estão sendo codificados, o sistema permite que você saiba que um fluxo de trabalho de processamento de vídeo está em andamento. Quando a codificação de vídeo estiver concluída, você poderá pré-visualização as execuções de vídeo. Nesse ponto, é seguro publicar os vídeos sem incorrer em erros de publicação.
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
 Consulte também [Incorporação do visualizador de Vídeo de Mídia Dinâmica ou do Visualizador de Imagem em uma página da Web.](embed-code.md)
 
