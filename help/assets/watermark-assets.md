@@ -3,7 +3,7 @@ title: Marque com água seus ativos
 description: Adicione uma marca d'água aos seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a9ebb97541b44140d0155bcfa5d0228c79dbffec
+source-git-commit: f1fcddf196a1a2bfa2629dbd6a8fe0ac057a3d07
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Para configurar ativos de Experience Manager para marca d&#39;água, siga estas 
 
 1. [Crie um perfil](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) de processamento para aproveitar os microserviços de ativos para aplicar a marca d&#39;água.
 
-![Perfil de processamento de ativos para criar marca d&#39;água](assets/watermark-processing-profile.png)
+   ![Perfil de processamento de ativos para criar marca d&#39;água](assets/watermark-processing-profile.png)
 
 1. [Aplique os perfis de processamento a uma pasta](/help/assets/asset-microservices-configure-and-use.md#use-profiles) para criar ativos com marca d&#39;água.
 
