@@ -2,9 +2,9 @@
 title: Adicione seus ativos digitais [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
+source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1318'
 ht-degree: 2%
 
 ---
@@ -30,18 +30,6 @@ Você também pode optar por fazer um processamento adicional nos ativos carrega
 
 ## Upload assets {#upload-assets}
 
-Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na área de trabalho e arrastar a interface do usuário (navegador da Web) para a pasta de destino. Como alternativa, você pode iniciar o upload a partir da interface do usuário.
-
-1. Na interface do [!DNL Assets] usuário, navegue até o local onde deseja adicionar ativos digitais.
-1. Para fazer upload dos ativos, execute um dos procedimentos a seguir:
-
-   * Na barra de ferramentas, toque no ícone **[!UICONTROL Criar]** . Em seguida, no menu, toque em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
-   * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface do [!DNL Assets] usuário. A caixa de diálogo para renomear o arquivo não é exibida.
-
-   ![create_menu](assets/create_menu.png)
-
-   Para selecionar vários arquivos, pressione a tecla Ctrl ou Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
@@ -59,10 +47,6 @@ Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na ár
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. Para cancelar um upload em andamento, clique em Fechar (`X`) ao lado da barra de progresso. Quando você cancela a operação de upload, [!DNL Assets] exclui a parte parcialmente carregada do ativo.
-
-   Se você cancelar a operação de upload antes que os arquivos sejam carregados, [!DNL Assets] interromperá o upload do arquivo atual e atualizará o conteúdo. No entanto, os arquivos que já foram carregados não são excluídos.
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -73,13 +57,29 @@ Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na ár
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
+Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na área de trabalho e arrastar a interface do usuário (navegador da Web) para a pasta de destino. Como alternativa, você pode iniciar o upload a partir da interface do usuário.
+
+1. Na interface do [!DNL Assets] usuário, navegue até o local onde deseja adicionar ativos digitais.
+1. Para fazer upload dos ativos, execute um dos procedimentos a seguir:
+
+   * Na barra de ferramentas, toque no ícone **[!UICONTROL Criar]** . Em seguida, no menu, toque em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
+   * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface do [!DNL Assets] usuário. A caixa de diálogo para renomear o arquivo não é exibida.
+
+   ![create_menu](assets/create_menu.png)
+
+   Para selecionar vários arquivos, pressione a tecla Ctrl ou Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
+
+1. Para cancelar um upload em andamento, clique em Fechar (`X`) ao lado da barra de progresso. Quando você cancela a operação de upload, [!DNL Assets] exclui a parte parcialmente carregada do ativo.
+
+   Se você cancelar a operação de upload antes que os arquivos sejam carregados, [!DNL Assets] interromperá o upload do arquivo atual e atualizará o conteúdo. No entanto, os arquivos que já foram carregados não são excluídos.
+
 1. A caixa de diálogo de progresso do upload em [!DNL Assets] exibe a contagem de arquivos carregados com êxito e os arquivos que não foram carregados.
 
-Além disso, a interface do usuário Ativos exibe o ativo mais recente que você carregou ou a pasta que criou primeiro.
+   Além disso, a interface do usuário Ativos exibe o ativo mais recente que você carregou ou a pasta que criou primeiro.
 
 >[!NOTE]
 >
->Para fazer upload de hierarquias de pastas aninhadas para AEM, consulte itens [de upload em](#bulk-upload)massa.
+>Para fazer upload de hierarquias de pastas aninhadas, consulte [Fazer upload de ativos](#bulk-upload)em massa.
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
