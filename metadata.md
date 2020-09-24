@@ -1,22 +1,25 @@
 ---
-product: adobe experience manager
-git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
+product: Adobe Experience Manager
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.pt-BR
 index: y
-solution-title: Adobe Experience Manager como um serviço em nuvem
+solution-title: Adobe Experience Manager as a Cloud Service
 solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
 getting-started-title: Introdução
 getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/overview/home.html
 tutorials-title: Tutoriais
 tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+workflow-type: tm+mt
+source-wordcount: '138'
+ht-degree: 20%
 
 ---
 
 
 # Metadados para uso interno
 
-Os metadados no sistema de criação do GitHub são hierárquicos e são definidos como os seguintes níveis crescentes de precedente.
+Os metadados no sistema de criação do GitHub são hierárquicos e são definidos como os seguintes níveis crescentes de precedência.
 
 1. metadata.md
 1. ToC
