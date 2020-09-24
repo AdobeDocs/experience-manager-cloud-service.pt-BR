@@ -2,10 +2,10 @@
 title: Modernizador do repositório
 description: Modernizador do repositório
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 3%
+source-wordcount: '301'
+ht-degree: 4%
 
 ---
 
@@ -26,6 +26,9 @@ O Modernizador do Repositório cria uma estrutura de projeto AEM Cloud Service c
 
 * `all` package é um container package que contém os sub-packages `ui.apps` e `ui.content`.
 
+>[!NOTE]
+>A estrutura do projeto se baseia no *Archetype 24* para pacotes e seus `pom.xml/filter.xml files`pacotes. Consulte o [Archetype 24](https://github.com/adobe/aem-project-archetype) para obter mais detalhes.
+
 ## Usando o Modernizador do Repositório {#using-repo-modernizer}
 
 * Através da CLI de E/S de Adobe: É recomendável usar o Repository Modernizer via `aio-cli-plugin-aem-cloud-service-migration` (AEM como um plug-in de refatoração de código de Cloud Service para a CLI de E/S do Adobe).
@@ -36,5 +39,5 @@ O Modernizador do Repositório cria uma estrutura de projeto AEM Cloud Service c
 
    Consulte Recurso **[Git: Modernizador](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** do repositório para aprender como usar essa ferramenta.
 
->[!NOTE]
->O Repository Modernizer é desenvolvido usando NodeJS. É recomendável ter o NodeJS 10.0+ instalado.
+   >[!NOTE]
+   >O Modernizador do Repositório é desenvolvido com o NodeJS. É recomendável ter o NodeJS 10.0+ instalado.
