@@ -2,7 +2,7 @@
 title: Teste de auditoria de experiência - Cloud Services
 description: Teste de auditoria de experiência - Cloud Services
 translation-type: tm+mt
-source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
+source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -30,7 +30,7 @@ A auditoria de experiência fornece resultados de teste em nível de página agr
    >[!NOTE]
    >A pontuação progressiva do aplicativo da Web (PWA) não está incluída na pontuação de resumo e será exibida somente na tela de detalhes do relatório no nível da página.
 * As pontuações de nível de página individuais também estão disponíveis por meio da busca detalhada.
-* Detalhes das pontuações estão disponíveis para ver quais são os resultados dos testes individuais, juntamente com orientações sobre como corrigir quaisquer problemas identificados durante a auditoria de conteúdo.
+* Os detalhes das pontuações estão disponíveis para ver quais são os resultados dos testes individuais, juntamente com orientações sobre como corrigir quaisquer problemas identificados durante a auditoria da experiência.
 * Um histórico dos resultados do teste é persistente no Cloud Manager para que os clientes possam ver se as alterações que estão sendo introduzidas na execução do pipeline incluem quaisquer regressões da execução anterior.
 
 ### Pontuações de agregação {#aggregate-scores}
