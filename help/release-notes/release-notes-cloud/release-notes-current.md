@@ -2,17 +2,17 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0.
 description: 'Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 '
 translation-type: tm+mt
-source-git-commit: 9d73b8339a327643be9f2ea674857b401346087a
+source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 15%
+source-wordcount: '730'
+ht-degree: 13%
 
 ---
 
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.9.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
 ## Data de lançamento {#release-date}
 
@@ -28,12 +28,12 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* A marcação em água de uma imagem PNG é compatível com renderizações geradas com microserviços de ativos. Ele pode ser configurado como um Perfil de processamento.
+* Arquivos de imagem de marca d&#39;água são suportados para representações geradas com microserviços de ativos. Ele pode ser configurado como um Perfil de processamento e usa um arquivo PNG como uma marca d&#39;água. Consulte [marca d&#39;água de seus ativos](/help/assets/watermark-assets.md).
 
 * Aprimoramentos em [!DNL Dynamic Media]
 
-   * Publicação seletiva - agora é possível para uma equipe de marketing acessar imagens de corte inteligente e representações dinâmicas que são sincronizadas para [!DNL Dynamic Media] que possam criar materiais promocionais, tudo isso sem a necessidade de publicar esses ativos [!DNL Dynamic Media] [!DNL Dynamic Media] para o delivery global. A AEM e [!DNL Dynamic Media] a publicação são dissociadas e podem ser realizadas separadamente para o conseguir.
-   * Os administradores podem redefinir a senha do [!DNL Dynamic Media] Cloud Service recebida no provisionamento diretamente na interface AEM, sem a necessidade de usar o aplicativo de [!DNL Dynamic Media Classic] desktop.
+   * Publicação seletiva - agora é possível para uma equipe de marketing acessar imagens de corte inteligente e representações dinâmicas que são sincronizadas para [!DNL Dynamic Media] que possam criar materiais promocionais, tudo isso sem a necessidade de publicar esses ativos [!DNL Dynamic Media] [!DNL Dynamic Media] para o delivery global. [!DNL Experience Manager] e a [!DNL Dynamic Media] publicação é dissociada e pode ocorrer separadamente para alcançar isso. Consulte publicação [seletiva](/help/assets/dynamic-media/selective-publishing.md).
+   * Os administradores agora podem redefinir a senha do [!DNL Dynamic Media] Cloud Service recebida no provisionamento. A redefinição pode ser feita na interface [!DNL Experience Manager] do usuário, sem a necessidade de usar o aplicativo de [!DNL Dynamic Media Classic] desktop.
 
 * Para saber mais sobre os seguintes aprimoramentos, consulte [o que há de novo no Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
 
