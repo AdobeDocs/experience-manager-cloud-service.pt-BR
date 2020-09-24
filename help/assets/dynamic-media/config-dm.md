@@ -2,7 +2,7 @@
 title: Configuração do Cloud Service de Dynamic Media
 description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 9b2095594432dbf8479c7b3ac482a62fc6672cab
+source-git-commit: 4b967e8b738171f0997df7cd433e1d7a418751e8
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 9%
@@ -167,7 +167,6 @@ Para abrir a página Configurações gerais do aplicativo, na barra de navegaç�
 
 * **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão]** do ativo básico - Requer que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, President.jpg deve substituir President.jpg, não President.tif). No entanto, é possível carregar a imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original.
 * **[!UICONTROL Substituir em qualquer pasta, o mesmo nome do ativo básico independentemente da extensão]** - Essa opção é a regra de substituição mais inclusiva. Você pode carregar uma imagem de substituição para uma pasta diferente da original, carregar um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição residirá na nova pasta para a qual foi carregada.
-
 * **[!UICONTROL Perfis]** de cor padrão - Consulte [Configuração do gerenciamento](#configuring-color-management) de cores para obter mais informações.
 
    >[!NOTE]
