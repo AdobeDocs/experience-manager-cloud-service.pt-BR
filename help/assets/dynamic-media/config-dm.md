@@ -2,7 +2,7 @@
 title: Configuração do Cloud Service de Dynamic Media
 description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: ed904a95768fb1965506187932d4f9d6464ed190
+source-git-commit: 9b2095594432dbf8479c7b3ac482a62fc6672cab
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 9%
@@ -77,7 +77,7 @@ A menos que você tenha uma disposição especial para usar seu próprio servido
 
    * **[!UICONTROL Sincronizar todo o conteúdo]** - Selecionado por padrão. Desmarque essa opção se desejar incluir ou excluir seletivamente ativos da sincronização para o Dynamic Media. Desmarcar essa opção permite escolher entre os dois modos de sincronização de Dynamic Media a seguir:
 
-   * **[!UICONTROL Modo de sincronização de Mídia dinâmica]**
+   * **[!UICONTROL Modo de sincronização do Dynamic Media]**
       * **[!UICONTROL Ativado por padrão]** - a configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Desativado por padrão]** - a configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.
 Para marcar uma pasta selecionada para sincronização com o Dynamic Media, abra a página Propriedades da pasta de ativos. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
@@ -158,24 +158,21 @@ A tela Servidor de imagens estabelece as configurações padrão para a entrega 
 Para abrir a página Configurações gerais do aplicativo, na barra de navegação global do Dynamic Media Classic, clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações]** gerais.
 
 * **[!UICONTROL Servidores]** - no provisionamento de conta, o Dynamic Media fornece automaticamente os servidores atribuídos para a sua empresa. Esses servidores são usados para construir strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas para sua conta. Não altere nenhum nome de servidor, a menos que seja explicitamente instruído a fazê-lo pelo suporte AEM.
-
 * **[!UICONTROL Substituir imagens]** - o Dynamic Media não permite que dois arquivos tenham o mesmo nome. A ID do URL de cada item (o nome do arquivo menos a extensão) deve ser exclusiva. Essas opções especificam como os ativos de substituição são carregados: se eles substituem o original ou se tornam duplicados. Os ativos do duplicado são renomeados com um &quot;-1&quot; (por exemplo, o nome &quot;President.tif&quot; é renomeado como President-1.tif). Essas opções afetam os ativos carregados em uma pasta diferente do original ou os ativos com uma extensão de nome de arquivo diferente do original (como JPG, TIF ou PNG).
-
 * **[!UICONTROL Substituir na pasta atual, mesmo nome/extensão]** da imagem base - Essa opção é a regra mais estrita para substituição. Ele requer que você carregue a imagem de substituição na mesma pasta que a original e que a imagem de substituição tenha a mesma extensão de nome de arquivo que a original. Se esses requisitos não forem atendidos, um duplicado será criado.
 
    >[!NOTE]
    >
    >Para manter a consistência com AEM, sempre escolha essa configuração: **Substituir na pasta atual, mesmo nome/extensão da imagem base**
 
-* **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão]** do ativo básico - Requer que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, President.jpg deve substituir President.jpg, não President.tif). No entanto, é possível carregar a imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original
+* **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão]** do ativo básico - Requer que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, President.jpg deve substituir President.jpg, não President.tif). No entanto, é possível carregar a imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original.
 * **[!UICONTROL Substituir em qualquer pasta, o mesmo nome do ativo básico independentemente da extensão]** - Essa opção é a regra de substituição mais inclusiva. Você pode carregar uma imagem de substituição para uma pasta diferente da original, carregar um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição residirá na nova pasta para a qual foi carregada.
 
 * **[!UICONTROL Perfis]** de cor padrão - Consulte [Configuração do gerenciamento](#configuring-color-management) de cores para obter mais informações.
 
->[!NOTE]
->
->Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Representações]** e 15 predefinições do visualizador ao selecionar **[!UICONTROL Visualizadores]** na exibição detalhada do ativo. Você pode aumentar esse limite. Consulte [Aumentar ou diminuir o número de predefinições de imagens exibidas](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Aumentar ou diminuir o número de predefinições do visualizador exibidas](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
-
+   >[!NOTE]
+   >
+   >Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Representações]** e 15 predefinições do visualizador ao selecionar **[!UICONTROL Visualizadores]** na exibição detalhada do ativo. Você pode aumentar esse limite. Consulte [Aumentar ou diminuir o número de predefinições de imagens exibidas](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Aumentar ou diminuir o número de predefinições do visualizador exibidas](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Configuração do gerenciamento de cores {#configuring-color-management}
 
@@ -189,10 +186,10 @@ Para configurar as propriedades de cor padrão para ativar a correção de cores
 
    É possível definir as seguintes propriedades de correção de cores:
 
-   * **[!UICONTROL Espaço]** de cor padrão CMYK - Nome do perfil de cor padrão CMYK
-   * **[!UICONTROL Espaço]** de cor padrão em escala de cinza - Nome do perfil de cor cinza padrão
-   * **[!UICONTROL Espaço]** de cor padrão RGB - Nome do perfil de cor RGB padrão
-   * **[!UICONTROL Propósito]** de renderização da conversão de cores - Especifica o propósito de renderização. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]** as the default.
+   * **[!UICONTROL Espaço]** de cor padrão CMYK - Nome do perfil de cor padrão CMYK.
+   * **[!UICONTROL Espaço]** de cor padrão em escala de cinza - Nome do perfil de cor cinza padrão.
+   * **[!UICONTROL Espaço]** de cor padrão RGB - Nome do perfil de cor RGB padrão.
+   * **[!UICONTROL Propósito]** de renderização da conversão de cores - Especifica o propósito de renderização. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe recomenda **[!UICONTROL relativo]** como padrão.
 
 1. Toque em **[!UICONTROL Salvar]**.
 
