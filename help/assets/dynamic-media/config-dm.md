@@ -2,7 +2,7 @@
 title: Configuração do Cloud Service de Dynamic Media
 description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
+source-git-commit: c5c2f5d9f0fd539591972382f197cb83b3d7e60e
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 9%
@@ -158,7 +158,9 @@ A tela Servidor de imagens estabelece as configurações padrão para a entrega 
 Para abrir a página Configurações gerais do aplicativo, na barra de navegação global do Dynamic Media Classic, clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais.]**
 
 * **[!UICONTROL Servidores]** - no provisionamento de conta, o Dynamic Media fornece automaticamente os servidores atribuídos para a sua empresa. Esses servidores são usados para construir strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas para sua conta. Não altere nenhum nome de servidor, a menos que seja explicitamente instruído a fazê-lo pelo suporte AEM.
+
 * **[!UICONTROL Substituir imagens]** - o Dynamic Media não permite que dois arquivos tenham o mesmo nome. A ID do URL de cada item (o nome do arquivo menos a extensão) deve ser exclusiva. Essas opções especificam como os ativos de substituição são carregados: se eles substituem o original ou se tornam duplicados. Os ativos do duplicado são renomeados com um &quot;-1&quot; (por exemplo, o nome &quot;President.tif&quot; é renomeado como President-1.tif). Essas opções afetam os ativos carregados em uma pasta diferente do original ou os ativos com uma extensão de nome de arquivo diferente do original (como JPG, TIF ou PNG).
+
 * **[!UICONTROL Substituir na pasta atual, mesmo nome/extensão]** da imagem base - Essa opção é a regra mais estrita para substituição. Ele requer que você carregue a imagem de substituição na mesma pasta que a original e que a imagem de substituição tenha a mesma extensão de nome de arquivo que a original. Se esses requisitos não forem atendidos, um duplicado será criado.
 
    >[!NOTE]
@@ -166,7 +168,9 @@ Para abrir a página Configurações gerais do aplicativo, na barra de navegaç�
    >Para manter a consistência com AEM, sempre escolha essa configuração: **Substituir na pasta atual, mesmo nome/extensão da imagem base**
 
 * **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão]** do ativo básico - Requer que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, President.jpg deve substituir President.jpg, não President.tif). No entanto, é possível carregar a imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original.
+
 * **[!UICONTROL Substituir em qualquer pasta, o mesmo nome do ativo básico independentemente da extensão]** - Essa opção é a regra de substituição mais inclusiva. Você pode carregar uma imagem de substituição para uma pasta diferente da original, carregar um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição residirá na nova pasta para a qual foi carregada.
+
 * **[!UICONTROL Perfis]** de cor padrão - Consulte [Configuração do gerenciamento](#configuring-color-management) de cores para obter mais informações.
 
    >[!NOTE]
@@ -213,7 +217,7 @@ Você pode definir quais tipos de ativos devem ser processados pelo Dynamic Medi
 
 Consulte [Upload de ativos](/help/assets/add-assets.md).
 
-**Para configurar o processamento de ativos**
+Para configurar o processamento de ativos:
 
 1. Em AEM, clique no logotipo AEM para acessar o console de navegação global e clique em **[!UICONTROL Geral > CRXDE Lite]**.
 1. No painel esquerdo, navegue até o seguinte:
@@ -230,7 +234,6 @@ Consulte [Upload de ativos](/help/assets/add-assets.md).
    * duplo-clique em **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte Tipos [Mime](/help/assets/file-format-support.md) suportados para obter uma lista de valores de parâmetro de processamento permitidos que você pode usar para um determinado tipo mime.
 
 1. Faça uma das seguintes opções:
-
    * Repita as etapas de 3 a 4 para editar tipos MIME adicionais.
    * Na barra de menus da página CRXDE Lite, clique em **[!UICONTROL Salvar tudo.]**
 
@@ -240,7 +243,7 @@ Consulte [Upload de ativos](/help/assets/add-assets.md).
 
 Adicione tipos MIME personalizados para formatos não compatíveis com o AEM Assets. Para garantir que qualquer novo nó adicionado no CRXDE Lite não seja excluído pelo AEM, certifique-se mover o tipo MIME antes de `image_` e que seu valor ativado seja definido como **[!UICONTROL false]**.
 
-**Para adicionar tipos MIME personalizados para formatos não suportados**
+Para adicionar tipos MIME personalizados para formatos não suportados:
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -306,7 +309,7 @@ Como alternativa, observe que você pode usar o Código **[!UICONTROL de]** Visu
 
 Dois elementos estão disponíveis para definição, Correspondência e Nome básico. Esses campos permitem que você defina todos os elementos de uma convenção de nomenclatura e identifique a parte da convenção usada para nomear o conjunto no qual eles estão contidos. A convenção de nomenclatura individual de uma empresa pode utilizar uma ou mais linhas de definição para cada um desses elementos. Você pode usar quantas linhas desejar para sua definição exclusiva e agrupá-las em elementos distintos, como para a Imagem principal, o elemento Cor, o elemento Visualização alternativa e o elemento Amostra.
 
-**Para configurar a nomeação padrão**
+Para configurar a nomeação padrão:
 
 1. Faça logon em sua conta do Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -340,7 +343,7 @@ Você pode criar, editar e gerenciar predefinições de conjuntos de lotes. Exis
 
 Você pode usar o método de campo de formulário para definir uma predefinição de conjunto de lotes ou o método de código, que permite usar expressões regulares. Como em Nomenclatura padrão, você pode escolher Código de Visualização ao mesmo tempo que está definindo na Visualização de formulário e usar expressões comuns para criar suas definições. Como alternativa, você pode desmarcar qualquer visualização para usar uma ou a outra exclusivamente.
 
-**Para criar uma predefinição de conjunto de lotes**
+Para criar uma predefinição de conjunto de lotes:
 
 1. Faça logon em sua conta do Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -503,7 +506,7 @@ A fila Fluxo de trabalho de trânsito Granite é usada para o fluxo de trabalho 
 
 A fila Fluxo de trabalho Granite é usada para workflows não transitórios. No Dynamic Media, costumava processar vídeos com o fluxo de trabalho **[!UICONTROL Dynamic Media Encode Video]** .
 
-**Para atualizar a fila Fluxo de Trabalho de Granite**
+Para atualizar a fila do Fluxo de Trabalho de Granite:
 
 1. Navegue até `https://<server>/system/console/configMgr` e pesquise por **Fila: Fila** de Fluxo de Trabalho Granite.
 
@@ -525,7 +528,7 @@ A fila Fluxo de trabalho Granite é usada para workflows não transitórios. No 
 
 A configuração Scene7 Upload Connection sincroniza AEM ativos aos servidores do Dynamic Media Classic.
 
-**Para atualizar a conexão de upload do Scene7**
+Para atualizar a conexão de upload do Scene7:
 
 1. Vá até `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. No campo **[!UICONTROL Número de conexões]** e/ou no campo Tempo limite **[!UICONTROL do trabalho]** Ativo, altere o número conforme desejado.
@@ -538,7 +541,7 @@ A configuração Scene7 Upload Connection sincroniza AEM ativos aos servidores d
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Toque em **[!UICONTROL Salvar]**.
+1. Toque em **[!UICONTROL Salvar.]**
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
