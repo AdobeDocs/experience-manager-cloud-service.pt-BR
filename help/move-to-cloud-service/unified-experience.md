@@ -2,9 +2,9 @@
 title: Experiência unificada para ferramentas de refatoração de código
 description: Experiência unificada para ferramentas de refatoração de código
 translation-type: tm+mt
-source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -46,4 +46,4 @@ O `aio-cli-plugin-aem-cloud-service-migration` plug-in consiste em duas partes p
 Consulte Recurso [Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para saber mais sobre o uso e como você pode contribuir para esse código de plug-in que é open-source no GitHub.
 
 >[!NOTE]
->Atualmente, apenas o Dispatcher Converter está integrado ao plug-in.
+>Atualmente, o plug-in está integrado ao Dispatcher Converter e ao Repository Modernizer AEM.
