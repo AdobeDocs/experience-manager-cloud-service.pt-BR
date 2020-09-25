@@ -2,7 +2,7 @@
 title: Blueprint do SPA
 description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura de SPA deve cumprir para implementar componentes de SPA editáveis dentro do AEM.
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -164,7 +164,7 @@ O componente SPA é mapeado para um container gráfico, como a Grade responsiva,
 
 Por exemplo:
 
-```
+```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>
 ```
 
@@ -183,7 +183,7 @@ Por exemplo:
 
 A [`Component Mapping`](#componentmapping) biblioteca subjacente e sua `MapTo` função podem ser encapsuladas e estendidas para fornecer as funcionalidades relativas à configuração de edição fornecida ao lado da classe de componente atual.
 
-```
+```javascript
 const EditConfig = {
 
     emptyLabel: 'My Component',
@@ -205,7 +205,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 Na implementação acima, o componente do projeto é estendido com a funcionalidade vazia antes de ser realmente registrado na loja Mapeamento [de](#componentmapping) componentes. Isso é feito encapsulando e estendendo a [`ComponentMapping`](#componentmapping) biblioteca para introduzir o suporte do objeto de `EditConfig` configuração:
 
-```
+```javascript
 /**
  * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
  *
@@ -245,9 +245,9 @@ O fragmento a seguir ilustra a representação HTML típica de uma estrutura de 
 * O elemento de grade responsivo contém nomes de classe prefixados com `aem-Grid--`
 * O elemento de coluna responsiva contém nomes de classe prefixados com `aem-GridColumn--`
 * Uma grade responsiva que também é a coluna de uma grade pai está encapsulada, como os dois prefixos anteriores não aparecem no mesmo elemento
-* Os elementos correspondentes a recursos editáveis possuem uma `data-cq-data-path` propriedade. Consulte a seção [Contrato com o editor](#contract-wtih-the-page-editor) de páginas deste documento.
+* Os elementos correspondentes a recursos editáveis possuem uma `data-cq-data-path` propriedade. Consulte a seção [Contrato com o editor](#contract-with-the-page-editor) de páginas deste documento.
 
-```
+```javascript
 <div data-cq-data-path="/content/page">
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
         <div class="aem-container aem-GridColumn aem-GridColumn--default--12" data-cq-data-path="/content/page/jcr:content/root/responsivegrid">
