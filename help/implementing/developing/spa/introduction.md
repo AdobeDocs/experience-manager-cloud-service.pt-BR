@@ -2,7 +2,7 @@
 title: Introdução ao SPA e Walkthrough
 description: Este artigo apresenta os conceitos de um SPA e avança usando um aplicativo SPA básico para criação, mostrando como ele se relaciona ao Editor SPA AEM subjacente.
 translation-type: tm+mt
-source-git-commit: 78ce5113d97b0fa2e0172598d374c924f4306395
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 0%
@@ -151,7 +151,7 @@ Então, se a página não é recarregada ao navegar pelas páginas secundárias,
 
 A próxima seção, [Carregando um aplicativo](#loading-a-spa-application)SPA, aprofunda os mecanismos de carregamento do SPA e como o conteúdo pode ser carregado de forma síncrona e assíncrona.
 
-### Carregando um aplicativo SPA {#loading-an-spa-application}
+### Carregando um aplicativo SPA {#loading-a-spa-application}
 
 1. Se ainda não tiver sido carregado, carregue o aplicativo Journal We.Retail no servidor de publicação ou usando a opção **Visualização como Publicado** no menu Informações **da** página no editor de páginas.
 
