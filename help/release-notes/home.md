@@ -2,10 +2,10 @@
 title: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 description: 'Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
+source-git-commit: 0fa6d88b4df97b17256f42ad2eb1752c141e02a2
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 | Produto | Adobe Experience Manager as a Cloud Service |
 |---|---|
 | Versão | 2020.9.0 |
-| Tipo | Atualização contínua |
+| Tipo | Atualizações contínuas |
 | Data de disponibilidade | Atualização contínua |
 
 ## Informações-chave sobre versão {#key-articles}
