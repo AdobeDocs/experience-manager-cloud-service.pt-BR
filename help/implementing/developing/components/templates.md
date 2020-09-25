@@ -2,9 +2,9 @@
 title: Modelos de páginas
 description: Modelos de página são usados ao criar uma página que será usada como a base para a nova página
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3221'
 ht-degree: 8%
 
 ---
@@ -292,7 +292,7 @@ Ao criar um novo modelo, é necessário especificar um tipo de modelo:
 
    * O tipo de recurso do componente de página.
    * A política do nó raiz, que define os componentes permitidos no editor de modelo.
-   * É recomendável definir os pontos de interrupção para a grade responsiva e a configuração do emulador móvel no tipo de modelo. Isso é opcional, pois a configuração também pode ser definida no modelo individual (consulte a seção Tipo de [modelo e Grupos](#p-template-type-and-mobile-device-groups-br-p)de dispositivos móveis).
+   * É recomendável definir os pontos de interrupção para a grade responsiva e a configuração do emulador móvel no tipo de modelo.
 
 * AEM fornece uma pequena seleção de tipos de modelo prontos para uso, como Página HTML5 e Página de formulário adaptável.
 
@@ -476,7 +476,7 @@ As políticas de página permitem que você defina a política [de](#content-pol
 
    Antes que um modelo possa ser usado, ele deve ser habilitado por:
 
-   * [Habilitando o modelo](/help/sites-cloud/authoring/features/templates.md#enablingatemplateauthor) do console **Modelos** .
+   * [Habilitando o modelo](/help/sites-cloud/authoring/features/templates.md) do console **Modelos** .
 
    * Definindo a propriedade status no `jcr:content` nó.
 
