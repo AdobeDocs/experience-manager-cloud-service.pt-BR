@@ -2,9 +2,9 @@
 title: Exemplos de tipos de módulos de interface do usuário do ContextHub
 description: O ContextHub fornece vários módulos de UI de amostra que você pode usar em suas soluções
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ As instâncias do módulo de interface contexthub.browserinfo não exigem um val
 
 ## tipo de módulo de interface do usuário context.datetime {#contexthub-datetime-ui-module-type}
 
-O módulo de `contexthub.datetime` interface exibe a data e a hora armazenadas em uma loja chamada datetime que é baseada no candidato a armazenamento [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) .
+O módulo da `contexthub.datetime` interface exibe a data e a hora armazenadas em uma loja chamada datetime, que é baseada no candidato da `contexthub.datetime` loja.
 
 ![módulo contexthub.datetime](assets/datetime-module.png)
 
@@ -187,7 +187,7 @@ As instâncias do módulo de `contexthub.screen-orientation` interface não exig
 
 ## tipo de módulo de interface do usuário do contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-O módulo `contexthub.tagcloud` da interface exibe informações sobre tags. Na barra de ferramentas, o módulo da interface mostra o número de tags. O pop-up revela uma tagcloud e uma caixa de texto para adicionar novas tags. O módulo da interface do usuário obtém informações de uma loja do ContextHub chamada tagcloud, com base no candidato à loja [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) .
+O módulo `contexthub.tagcloud` da interface exibe informações sobre tags. Na barra de ferramentas, o módulo da interface mostra o número de tags. O pop-up revela uma tagcloud e uma caixa de texto para adicionar novas tags. O módulo da interface do usuário obtém informações de uma loja do ContextHub chamada tagcloud, com base no candidato à `contexthub.tagcloud` loja.
 
 ![módulo contexthub.tagcloud](assets/tagcloud-module.png)
 
