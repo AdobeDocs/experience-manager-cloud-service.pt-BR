@@ -2,7 +2,7 @@
 title: ContextHub
 description: O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto
 translation-type: tm+mt
-source-git-commit: 75d6b51c0148a21ca401d98a5eaf644fc6b0e8cc
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 1%
@@ -43,8 +43,8 @@ Cada armazenamento ContextHub é uma instância de um tipo de armazenamento pred
 * O ContextHub fornece vários tipos [de armazenamento de](sample-stores.md)amostra.
 * Use AEM consoles para [criar lojas](configuring-contexthub.md#creating-a-contexthub-store).
 * Os desenvolvedores podem [criar tipos](extending-contexthub.md#creating-custom-store-candidates)de loja personalizados.
-* Os desenvolvedores podem [acessar dados](configuring-contexthub.md#interacting-with-contexthub-stores) do armazenamento por meio do Javascript.
+* Os desenvolvedores podem [acessar dados](adding-contexthub.md#interacting-with-contexthub-stores) do armazenamento por meio do Javascript.
 
 ## Segmentação {#segmentation}
 
-O ContextHub inclui um mecanismo de segmentação que gerencia segmentos e determina quais segmentos são resolvidos para o contexto atual. Vários segmentos são definidos. Você pode usar a API Javascript para [determinar segmentos](configuring-contexthub.md#determining-resolved-contexthub-segments)resolvidos.
+O ContextHub inclui um mecanismo de segmentação que gerencia segmentos e determina quais segmentos são resolvidos para o contexto atual. Vários segmentos são definidos. Você pode usar a API Javascript para [determinar segmentos](adding-contexthub.md#determining-resolved-contexthub-segments)resolvidos.
