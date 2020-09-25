@@ -2,7 +2,7 @@
 title: Referência da API JavaScript do ContextHub
 description: A API JavaScript do ContextHub está disponível para seus scripts quando o componente do ContextHub foi adicionado à página
 translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+source-git-commit: 3277d7470c1abdcc1f759c87e2c1a7ffb3390f47
 workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Referência da API JavaScript do ContextHub {#contexthub-javascript-api-reference}
 
-A API Javascript do ContextHub está disponível para seus scripts quando o componente [ContextHub foi adicionado à página](configuring-contexthub.md#adding-contexthub-to-a-page-component).
+A API Javascript do ContextHub está disponível para seus scripts quando o componente [ContextHub foi adicionado à página](adding-contexthub.md).
 
 ## Constantes do ContextHub {#contexthub-constants}
 
@@ -20,7 +20,7 @@ Valores constantes que a API Javascript do ContextHub define.
 
 ### Constantes do evento {#event-constants}
 
-A tabela a seguir lista os eventos de nomes que ocorrem nas Lojas do ContextHub. Consulte também [ContextHub.Utils.Eventing](contexthub-api.md#contexthub-utils-eventing).
+A tabela a seguir lista os eventos de nomes que ocorrem nas Lojas do ContextHub. Consulte também [ContextHub.Utils.Eventing](#contexthub-utils-eventing).
 
 | Constante | Descrição | Valor |
 |---|---|---|
@@ -482,7 +482,7 @@ Resolve o parâmetro especificado.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` estende o [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) para herdar todas as funções dessa classe. No entanto, os dados recuperados do serviço JSONP são persistentes de acordo com a configuração de persistência do ContextHub. (Consulte Modos de [persistência:](configuring-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` estende o [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) para herdar todas as funções dessa classe. No entanto, os dados recuperados do serviço JSONP são persistentes de acordo com a configuração de persistência do ContextHub. (Consulte Modos de [persistência:](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
