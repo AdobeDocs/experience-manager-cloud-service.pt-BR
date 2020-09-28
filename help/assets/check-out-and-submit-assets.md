@@ -1,11 +1,11 @@
 ---
-title: Fazer check-in e check-out de arquivos em ativos
+title: Fazer check-in e check-out de arquivos em [!DNL Assets]
 description: Saiba como fazer check-out dos ativos para edição e check-in deles novamente após a conclusão das alterações.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 4%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Arquivos de check-in e check-out em Ativos {#check-in-and-check-out-files-in-assets}
 
-Os ativos Adobe Experience Manager (AEM) permitem que você faça check-out dos ativos para edição e check-in deles novamente após concluir as alterações. Depois de fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo. Outros usuários não podem executar nenhuma dessas operações no ativo até que você faça check-in do ativo novamente nos ativos AEM. No entanto, eles ainda podem alterar os metadados do ativo bloqueado.
+Os ativos Adobe Experience Manager (AEM) permitem que você faça check-out dos ativos para edição e check-in deles novamente após concluir as alterações. Depois de fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo. Outros usuários não podem executar nenhuma dessas operações no ativo até que você faça check-in do ativo novamente no AEM Assets. No entanto, eles ainda podem alterar os metadados do ativo bloqueado.
 
 Para poder fazer check-out/check-in de ativos, você precisa ter acesso de gravação neles.
 
@@ -57,13 +57,13 @@ Esse recurso ajuda a impedir que outros usuários substituam as alterações fei
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   O ativo modificado é feito check-in nos ativos AEM e está disponível para outros usuários para edição.
+   O ativo modificado é feito check-in no AEM Assets e está disponível para outros usuários para edição.
 
 ## Entrada forçada {#forced-check-in}
 
 Os administradores podem fazer check-in de ativos cujo check-out foi feito por outros usuários.
 
-1. Faça logon nos ativos AEM como administrador.
+1. Faça logon na AEM Assets como administrador.
 1. Na interface do usuário do Assets, selecione um ou mais ativos cujo check-out foi feito por outros usuários.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
