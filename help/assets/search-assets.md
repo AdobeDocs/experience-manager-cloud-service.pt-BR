@@ -1,12 +1,12 @@
 ---
-title: Pesquisar ativos digitais e imagens em AEM
+title: Pesquisar ativos digitais
 description: Saiba como localizar os ativos necessários no AEM usando o painel Filtros e como usar os ativos exibidos na pesquisa.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4525'
+source-wordcount: '4521'
 ht-degree: 7%
 
 ---
