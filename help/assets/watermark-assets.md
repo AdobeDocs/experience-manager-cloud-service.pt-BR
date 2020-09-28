@@ -1,9 +1,9 @@
 ---
-title: Marque com água seus ativos
+title: Marcar os ativos
 description: Adicione uma marca d'água aos seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1fcddf196a1a2bfa2629dbd6a8fe0ac057a3d07
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
