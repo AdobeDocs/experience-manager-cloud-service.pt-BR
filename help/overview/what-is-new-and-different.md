@@ -2,10 +2,10 @@
 title: O que é diferente e o que é novo - Adobe Experience Manager como Cloud Service
 description: 'O que é diferente e o que é novo - Adobe Experience Manager (AEM) como Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 9882c95972675ee1e0af5de30119d764638f53f3
+source-git-commit: 338f4b8d291bd0dca1c2f0de7bd6f721156d8df9
 workflow-type: tm+mt
-source-wordcount: '1856'
-ht-degree: 10%
+source-wordcount: '2154'
+ht-degree: 9%
 
 ---
 
@@ -72,25 +72,40 @@ Isso permite o dimensionamento automático para vários padrões de uso:
 >
 >Para obter mais detalhes, consulte a Introdução à [implantação](/help/implementing/deploying/overview.md).
 
-AEM como Cloud Service agora usa a Integração contínua e o Delivery contínuo (CI/CD) para garantir que seus projetos estejam totalmente atualizados. Isso significa que todas as operações de atualização são totalmente automatizadas, portanto, não é necessário interromper o serviço para os usuários.
-
-O Adobe toma cuidado de atualizar proativamente todas as instâncias operacionais do serviço para a versão mais recente da base de código AEM:
-
-* Correções de erros:
-
-   * Pode ser lançado diariamente.
-
-   * As instâncias são atualizadas com frequência com as correções de erros mais recentes. Como as mudanças são aplicadas regularmente, o impacto é incremental, reduzindo o impacto sobre seu serviço.
-
-   * A maioria das atualizações é feita por motivos de manutenção e segurança.
-
-* Novos recursos:
-
-   * Será lançado por meio de uma programação mensal previsível.
+AEM como Cloud Service agora usa a Integração contínua e o Delivery contínuo (CI/CD) para garantir que seus projetos estejam na versão mais recente do AEM. Isso significa que todas as operações de atualização são totalmente automatizadas, portanto, não é necessário interromper o serviço para os usuários.
 
 >[!NOTE]
->
->Para obter mais detalhes, consulte Arquitetura [de implantação](/help/core-concepts/architecture.md#deployment-architecture).
+>Se a atualização do ambiente de produção falhar, o Cloud Manager reverterá automaticamente o ambiente stage. Isso é feito automaticamente para garantir que, após a conclusão de uma atualização, os ambientes de estágio e de produção estejam na mesma versão AEM.
+
+AEM atualizações de versão são de dois tipos:
+
+* **Atualizações por push**
+
+   * Pode ser lançado diariamente.
+   * A maioria da manutenção, incluindo as últimas correções de erros e atualizações de segurança.
+
+   Como as mudanças são aplicadas regularmente, o impacto é incremental, reduzindo o impacto sobre seu serviço.
+
+>[!NOTE]
+>Para saber mais sobre AEM atualizações por push, consulte a publicação técnica no [Adobe Experience Manager como um Modelo de Delivery contínuo Cloud Service](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+
+* **Atualizações de novos recursos**
+
+   * Lançado por meio de uma programação mensal previsível.
+
+AEM atualizações passam por um pipeline de validação de produto intenso e totalmente automatizado, que envolve várias etapas, garantindo que o serviço não seja interrompido em nenhum sistema em produção. Os controlos de saúde são utilizados para monitorizar a saúde da aplicação. Se essas verificações falharem durante um AEM como uma atualização de Cloud Service, o lançamento não prosseguirá e o Adobe investigará por que a atualização causou esse comportamento inesperado.
+
+[Os testes do produto e os testes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) funcionais do Cliente, que impedem que upgrades de produtos e empurramentos de código do cliente quebrem a produção, também são validados durante uma atualização da versão AEM.
+
+>[OBSERVAÇÃO]
+>Se o código personalizado foi enviado para o armazenamento temporário e depois rejeitado por você, a próxima atualização AEM removerá essas alterações para refletir a tag git da última versão do cliente bem-sucedido para produção.
+
+
+### Armazenamento de nós composto {#composite-node-structure}
+
+Como mencionado acima, as atualizações na maioria dos casos resultarão em tempo de inatividade zero, inclusive para o autor, que é um cluster de nós.
+
+As atualizações contínuas são possíveis devido ao recurso de armazenamento *de nós* compostos no Oak. Esse recurso permite que AEM faça referência a vários repositórios simultaneamente. Em uma implantação contínua, a nova versão do Green AEM contém seu próprio repositório, ou seja, o TarMK (repositório imutável baseado em TarMK), distinto da versão mais antiga do Blue AEM, embora ambos referenciem um repositório mutável baseado em DocumentMK compartilhado que contém áreas como `/libs`, `/content` , `/conf` `/etc` e outras. Como o Azul e o Verde têm suas próprias versões do `/libs`, ambos podem estar ativos durante a atualização do acumulado, ambos assumindo o tráfego até que o azul seja totalmente substituído pelo verde.
 
 ## Cloud Manager {#cloud-manager}
 
