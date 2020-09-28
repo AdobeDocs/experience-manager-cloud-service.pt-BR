@@ -1,20 +1,20 @@
 ---
-title: Práticas recomendadas de integração do Adobe Experience Manager e da Adobe Creative Cloud
+title: Práticas recomendadas para integração com [!DNL Adobe Creative Cloud]
 description: As práticas recomendadas integram uma implantação de Experience Manager com a Adobe Creative Cloud para simplificar os workflows de transferência de ativos e alcançar a máxima eficiência.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '3302'
+source-wordcount: '3297'
 ht-degree: 18%
 
 ---
 
 
-# Práticas recomendadas de integração do AEM e da Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
+# Práticas recomendadas de integração de AEM e Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
 
-O Adobe Experience Manager (AEM) Assets é uma solução de gerenciamento de ativos digitais (DAM) que pode se integrar com a Adobe Creative Cloud para ajudar usuários do DAM a trabalharem em conjunto com equipes de criação, simplificando a colaboração no processo de criação de conteúdo.
+O Adobe Experience Manager (AEM) Assets é uma solução de gerenciamento de ativos digitais (DAM) que pode se integrar à Adobe Creative Cloud para ajudar os usuários do DAM a trabalharem em conjunto com as equipes de criação, simplificando a colaboração no processo de criação de conteúdo.
 
 A Adobe Creative Cloud fornece às equipes criativas um ecossistema de soluções e serviços para ajudá-las a criar ativos digitais. Inclui aplicativos para desktop e dispositivos móveis, serviços em nuvem, como armazenamento com sincronização de desktop ou experiência na Web, bem como mercados como o Adobe Stock.
 
@@ -22,47 +22,47 @@ Leia para saber quais integrações escolher entre desktop e DAM de nível corpo
 
 >[!NOTE]
 >
->O compartilhamento de pastas do AEM para a Creative Cloud agora está obsoleto e não é mais abordado abaixo. A Adobe recomenda recursos mais recentes, como o Adobe Asset Link ou o aplicativo de desktop do AEM, para fornecer aos usuários criativos acesso aos ativos gerenciados no AEM.
+>O compartilhamento de pasta AEM para Creative Cloud agora está obsoleto e não é mais abordado abaixo. A Adobe recomenda recursos mais recentes, como o Adobe Asset Link ou AEM aplicativo de desktop para fornecer aos usuários criativos acesso aos ativos gerenciados na AEM.
 
 ## Necessidade de colaboração de criativos, profissionais de marketing e usuários de DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
 
 
-| Requisitos | Caso de uso | Superfícies envolvidas |
+| Introdução | Caso de uso | Superfícies envolvidas |
 |---|---|---|
-| Simplifique a experiência de profissionais de criação em desktop | Simplifique o acesso a ativos de um DAM (AEM Assets) para profissionais criativos, ou, mais amplamente, para usuários de desktop que trabalham em aplicativos nativos de criação de ativos. Eles precisam de uma maneira fácil e direta de descobrir, usar (abrir), editar e salvar alterações no AEM, bem como fazer upload de novos arquivos. | Ambiente de trabalho Win ou Mac; Aplicativos da Creative Cloud |
-| Fornecer ativos de alta qualidade e prontos para uso do Adobe Stock | Os profissionais de marketing ajudam a acelerar o processo de criação de conteúdo auxiliando na seleção de fontes e na descoberta de ativos. Profissionais criativos usam os ativos aprovados diretamente de suas ferramentas criativas. | AEM Assets; Mercado do Adobe Stock; campos de metadados |
+| Simplifique a experiência de profissionais de criação em desktop | Simplifique o acesso a ativos de um DAM (AEM Assets) para profissionais criativos, ou, mais amplamente, para usuários de desktop que trabalham em aplicativos nativos de criação de ativos. Eles precisam de uma maneira fácil e direta de descobrir, usar (abrir), editar e salvar alterações em AEM, bem como fazer upload de novos arquivos. | Ambiente de trabalho Win ou Mac; aplicativos Creative Cloud |
+| Fornecer ativos de alta qualidade e prontos para uso da Adobe Stock | Os profissionais de marketing ajudam a acelerar o processo de criação de conteúdo auxiliando na seleção de fontes e na descoberta de ativos. Profissionais criativos usam os ativos aprovados diretamente de suas ferramentas criativas. | AEM Assets; Mercado Adobe Stock; campos de metadados |
 | Distribuir e compartilhar ativos por organizações | Os departamentos internos/locais e parceiros externos, distribuidores e agências usam os ativos aprovados compartilhados pela organização-mãe. A organização deseja compartilhar com segurança e facilidade os ativos criados para uma reutilização mais ampla. | Portal de marcas, Commons de compartilhamento de ativos |
 
-## Ofertas da Adobe para dar suporte à necessidade de colaboração {#adobe-offerings-to-support-the-collaboration-need}
+## Ofertas de Adobe para dar suporte à necessidade de colaboração {#adobe-offerings-to-support-the-collaboration-need}
 
-| Proposta de valor para as pessoas envolvidas | Oferta da Adobe | Superfícies envolvidas |
+| Proposta de valor para as pessoas envolvidas | oferta de Adobe | Superfícies envolvidas |
 |---|---|---|
-| Os usuários criativos descobrem ativos do AEM, os abrem e usam, editam e carregam alterações no AEM, bem como carregam novos arquivos no AEM, sem sair dos aplicativos da Creative Cloud. | [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign |
-| Os usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações para o AEM e o upload de novos arquivos para o AEM a partir do ambiente para desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo de desktop nativo, incluindo os que não são da Adobe. | [Aplicativo de desktop do AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | Aplicativo de desktop AEM no desktop Win e Mac |
-| Os profissionais de marketing e usuários comerciais descobrem, pré-visualizações, licenciam e salvam e gerenciam os ativos do Adobe Stock no AEM. Os ativos licenciados e salvos fornecem metadados selecionados do Adobe Stock para melhor governança. | [Integração com o Experience Manager e o Adobe Stock](aem-assets-adobe-stock.md) | Interface da Web do AEM |
+| Os usuários criativos descobrem ativos de AEM, os abrem e usam, editam e carregam alterações em AEM, bem como carregam novos arquivos em AEM, sem sair dos aplicativos Creative Cloud. | [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign |
+| Os usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações em AEM e o upload de novos arquivos em AEM do ambiente para desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo desktop nativo, incluindo os não-Adobe. | [Aplicativo de desktop do AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM aplicativo de desktop no desktop Win e Mac |
+| Os profissionais de marketing e usuários comerciais descobrem, pré-visualizações, licenciam e salvam e gerenciam os ativos da Adobe Stock de dentro do AEM. Os ativos licenciados e salvos fornecem metadados Adobe Stock selecionados para melhor governança. | [Integração com Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | interface da Web AEM |
 
 Este artigo foca principalmente nos dois primeiros aspectos das necessidades de colaboração. A distribuição e o fornecimento de ativos em escala são brevemente mencionadas como um caso de uso. Para essas necessidades, considere o Adobe Brand Portal ou o Asset Share Commons. Soluções alternativas, como o [Brand Portal do AEM Assets](https://helpx.adobe.com/br/experience-manager/brand-portal/user-guide.html), soluções que podem ser criadas com base nos componentes do [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Compartilhamento de links](share-assets.md), usando a [interface do usuário na Web do AEM Assets](/help/assets/manage-digital-assets.md) devem ser revisadas com base em requisitos específicos.
 
-![Conexões da Creative Cloud para o AEM: Decidir qual capacidade usar](assets/creative-connections-aem.png)
+![Conexões de Creative Cloud para AEM: Decidir qual capacidade usar](assets/creative-connections-aem.png)
 
 Decidir sobre qual capacidade usar
 
-### Mapeamento de casos de uso e soluções da Adobe {#mapping-of-use-cases-and-adobe-solutions}
+### Mapeamento de casos de uso e soluções de Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
 | Caso de uso | Adobe Asset Link | Aplicativo de desktop do AEM | Observações ou métodos alternativos |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Discover - procurar pastas do AEM | Sim | AEM Web UI + ações da área de trabalho | Ao navegar pelo compartilhamento de rede, desative as miniaturas para evitar o download de arquivos binários de ativos. |
-| Discover - acessar coleções do AEM | Sim | AEM Web UI + ações da área de trabalho |  |
+| Discover - procurar AEM pastas | Sim | AEM Web UI + ações da área de trabalho | Ao navegar pelo compartilhamento de rede, desative as miniaturas para evitar o download de arquivos binários de ativos. |
+| Discover - acesso AEM coleções | Sim | AEM Web UI + ações da área de trabalho |  |
 | Discover - pesquisar ativos do AEM | Sim | AEM Web UI + ações da área de trabalho |  |
 | Usar - ativo aberto | Sim | Sim - para qualquer aplicativo | [Abrir da interface](/help/assets/manage-digital-assets.md#previewing-assets) da Web ou do Finder |
-| Usar - colocar o ativo do AEM em um documento | Sim - incorporação | Sim - vinculação ou incorporação | O aplicativo de desktop AEM dá acesso aos ativos como arquivos no sistema de arquivos local. Esses links nos aplicativos nativos são representados por caminhos locais. |
-| Editar - abrir para edição | Sim - Ação de check-out | Sim - ação de abertura (no compartilhamento de rede) | [O check-out no AAL](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) salva o ativo na conta do armazenamento da Creative Cloud do usuário (sincronizada pelo aplicativo da Creative Cloud) por padrão. |
-| Editar - trabalho em andamento fora do AEM | Sim - Ativo disponível na conta do armazenamento da Creative Cloud do usuário sincronizada ao desktop. | Sim |  |
+| Usar - colocar ativo de AEM em um documento | Sim - incorporação | Sim - vinculação ou incorporação | AEM aplicativo de desktop dá acesso aos ativos como arquivos no sistema de arquivos local. Esses links nos aplicativos nativos são representados por caminhos locais. |
+| Editar - abrir para edição | Sim - Ação de check-out | Sim - ação de abertura (no compartilhamento de rede) | [O check-out no AAL](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) salva o ativo na conta do armazenamento da Creative Cloud do usuário (sincronizada pelo aplicativo Creative Cloud) por padrão. |
+| Editar - trabalho em andamento fora do AEM | Sim - ativo disponível na conta do armazenamento do Creative Cloud do usuário sincronizado com o desktop. | Sim |  |
 | Editar - carregar alterações | Sim - ação [de](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) check-in com comentário opcional | Sim |  |
 | Carregar - único arquivo | Sim - carrega o documento ativo atual | Sim | [Fazer upload por meio da interface da Web](/help/assets/manage-digital-assets.md#uploading-assets) |
 | Carregar - vários arquivos / estruturas hierárquicas de pastas | Não | Sim | [Fazer upload via interface](/help/assets/manage-digital-assets.md#uploading-assets)da Web; Script ou ferramenta personalizados |
-| Misc - usuário e login | O usuário da Creative Cloud conectado ao aplicativo de desktop da Creative Cloud é reconhecido (SSO) | Usuário/logon do AEM | Os usuários de ambas as soluções contam com a cota de usuários do AEM. |
-| Diversos - rede e acesso | Exige acesso da área de trabalho do usuário à implantação do AEM pela rede | Exige acesso da área de trabalho do usuário à implantação do AEM pela rede | O Adobe Asset Link não compartilha o ambiente proxy de rede. |
+| Misc - usuário e login | O usuário Creative Cloud conectado ao aplicativo de desktop Creative Cloud é reconhecido (SSO) | Usuário AEM / login | Os usuários de ambas as soluções contam com a cota de usuários AEM. |
+| Diversos - rede e acesso | Requer acesso da área de trabalho do usuário para AEM implantação pela rede | Requer acesso da área de trabalho do usuário para AEM implantação pela rede | O Link de ativo do Adobe não compartilha o ambiente proxy da rede. |
 
 
 <!-- Removing this row from table as migration guide is not yet final.
@@ -71,11 +71,11 @@ Decidir sobre qual capacidade usar
 
 Para suportar casos de uso de distribuição de ativos, outras soluções devem ser consideradas:
 
-* [Portal](https://helpx.adobe.com/br/experience-manager/brand-portal/user-guide.html) de marcas do AEM Assets para um complemento SaaS configurável para AEM Assets para publicar ativos.
+* [Portal](https://helpx.adobe.com/br/experience-manager/brand-portal/user-guide.html) de marcas da AEM Assets para um complemento SaaS configurável para a AEM Assets publicar ativos.
 
 * As soluções personalizadas são criadas com base na base de código [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) .
-* Compartilhamento [de](/help/assets/share-assets.md) link AEM para compartilhar ativos ad hoc usando links.
-* [Interface](/help/assets/manage-digital-assets.md) da Web do AEM Assets com áreas para terceiros externos protegidas pela configuração do Controle de acesso AEM e com os ajustes necessários de configuração de TI/rede, dando a esses usuários externos acesso ao AEM.
+* AEM compartilhamento [](/help/assets/share-assets.md) de links para compartilhar ativos ad hoc usando links.
+* [Interface](/help/assets/manage-digital-assets.md) da Web da AEM Assets com áreas para terceiros protegidos pela configuração AEM Controle de acesso e com os ajustes necessários de configuração de TI/rede, dando a esses usuários externos acesso à AEM.
 
 ## Conceitos-chave e casos de uso {#key-concepts-and-use-cases}
 
@@ -93,7 +93,7 @@ Para suportar casos de uso de distribuição de ativos, outras soluções devem 
 * **Usuário criativo**: um profissional criativo, que cria ativos digitais usando aplicativos e serviços da Creative Cloud. Em alguns casos, um usuário criativo pode ser membro de uma equipe criativa que pode usar a Creative Cloud, mas não cria ativos digitais (como um diretor criativo ou gerente de equipe criativa).
 * **Usuário do DAM:** um usuário típico de um sistema DAM. Dependendo da organização, um usuário do DAM pode ser um usuário de marketing ou não, por exemplo, um usuário de Linha de Negócios (LOB), um bibliotecário, um vendedor e assim por diante.
 
-### Considerações ao usar a integração do AEM e da Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
+### Considerações ao usar a integração AEM e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
 <!--incomplete and TBD: 
 
@@ -104,7 +104,7 @@ Para suportar casos de uso de distribuição de ativos, outras soluções devem 
 
 -->
 
-Este é um breve resumo das práticas recomendadas para a integração do AEM e da Creative Cloud. Leia o resto deste documento para entender os detalhes.
+Este é um breve resumo das práticas recomendadas para a integração entre AEM e Creative Cloud. Leia o resto deste documento para entender os detalhes.
 
 * **Para usuários criativos, que trabalham no Photoshop, InDesign ou Illustrator:** o do Adobe Asset Link fornece a melhor experiência do usuário, incluindo a manipulação limpa do Trabalho em andamento em ativos tirados do AEM
 * **Para simplificar o acesso a ativos do desktop para qualquer formato de arquivo ou aplicativo genérico:** use o aplicativo de desktop do AEM
@@ -113,18 +113,18 @@ Este é um breve resumo das práticas recomendadas para a integração do AEM e 
 * **Entenda o ciclo de vida do ativo:** saiba como os ativos são manipulados em sua organização por equipes diferentes
 * **Lidar com salvamentos frequentes em ativos com cuidado:** o Adobe Asset Link cuida disso para você com PS, AI, ID. Em outros aplicativos, não realize tarefas em andamento na pasta mapeada/compartilhada, a menos que precise de todas as alterações no DAM
 
-### Acesso aos ativos do Adobe Stock por parte de AEM Assets {#access-to-adobe-stock-assets-from-aem-assets}
+### Acesso aos ativos Adobe Stock da AEM Assets {#access-to-adobe-stock-assets-from-aem-assets}
 
-[A integração](/help/assets/aem-assets-adobe-stock.md) do AEM e do Adobe Stock fornece aos usuários do AEM a capacidade de pesquisar, pré-visualização, licenciar e salvar ativos do Adobe Stock no AEM. Os ativos licenciados e salvos do Adobe Stock selecionaram metadados do Stock, que podem ser usados para pesquisá-los com filtros adicionais.
+[A integração](/help/assets/aem-assets-adobe-stock.md) do AEM e do Adobe Stock fornece aos usuários AEM a capacidade de pesquisar, pré-visualização, licenciar e salvar ativos da Adobe Stock em AEM. Os ativos Adobe Stock licenciados e salvos selecionaram os metadados do Stock, que podem ser usados para pesquisá-los com filtros extras.
 
 Alguns pontos importantes sobre essa integração:
 
-* Quando os ativos do Adobe Stock são salvos no AEM, eles se tornam AEM Assets regulares, com o binário salvo no repositório do AEM. Alguns metadados relacionados ao Adobe Stock são salvos para o ativo no AEM, caso contrário, o processo de ingestão terá a mesma aparência de qualquer outro arquivo. Por exemplo, se as Tags inteligentes estiverem ativas, as tags serão adicionadas a esses ativos ao salvar.
-* O ativo salvo no AEM é uma cópia, não um link de volta ao Adobe Stock.
+* Quando os ativos do Adobe stock são salvos em AEM, eles se tornam um AEM Assets comum, com um binário salvo no repositório AEM. Alguns metadados relacionados ao Adobe Stock são salvos para o ativo no AEM, caso contrário, o processo de ingestão terá a mesma aparência de qualquer outro arquivo. Por exemplo, se as Tags inteligentes estiverem ativas, as tags serão adicionadas a esses ativos ao salvar.
+* O ativo salvo no AEM é uma cópia, não um link de volta para o Adobe Stock.
 
-**Trabalhar com ativos salvos do Adobe Stock no AEM na Creative Cloud**. Essa integração é independente do Adobe Asset Link, mas o Adobe Asset Link reconhece esses ativos salvos do Stock dessa forma e exibe metadados adicionais e ícones do Stock nesses ativos na interface de extensão do Adobe Asset Link no Photoshop, Illustrator ou InDesign. Os arquivos estão disponíveis para navegação, abertura e assim por diante - porque são ativos AEM comuns quando salvos no AEM.
-Os usuários da Creative Cloud que trabalham em aplicativos da Creative Cloud com extensão do Adobe Asset Link presentes, além de terem acesso a ativos já licenciados do Adobe Stock ao AEM, também podem usar o painel Bibliotecas da Creative Cloud para pesquisar, pré-visualização e licenciar ativos do Adobe Stock.
-Os ativos do Adobe Stock licenciados e salvos no AEM tornam-se disponíveis para equipes mais amplas que acessam a implantação de AEM Assets, enquanto os ativos de licenciamento do Adobe Stock por meio do painel Bibliotecas da Creative Cloud os os tornam disponíveis somente para si mesmos por padrão em sua conta da Creative Cloud.
+**Trabalhar com ativos salvos da Adobe Stock em AEM no Creative Cloud**. Essa integração é independente do Link do ativo do Adobe, mas o Link do ativo do Adobe reconhece esses ativos salvos do Stock dessa forma e exibe metadados adicionais e o ícone do Stock nesses ativos na interface do usuário da extensão do Link do ativo do Adobe no Photoshop, Illustrator ou InDesign. Os arquivos estão disponíveis para navegação, abertura e assim por diante - porque são ativos comuns AEM quando salvos em AEM.
+Os usuários criativos que trabalham em aplicativos Creative Cloud com a extensão do Link de ativos Adobe, além de terem acesso a ativos já licenciados da Adobe Stock no AEM, também podem usar o painel Bibliotecas Creative Cloud para pesquisar, pré-visualização e licenciar ativos da Adobe Stock.
+Os ativos da Adobe Stock licenciados e salvos em AEM tornam-se disponíveis para equipes mais amplas que acessam a implantação da AEM Assets, enquanto os ativos de licenciamento da Adobe Stock por meio do painel Bibliotecas Creative Cloud disponibilizam-nos somente por padrão em suas contas Creative Cloud.
 
 ## Sobre o armazenamento de ativos em um DAM {#about-storing-assets-in-a-dam}
 
@@ -134,7 +134,7 @@ Para projetar um fluxo de trabalho eficiente entre equipes de criação e market
 
 Armazenar ativos no DAM os torna facilmente acessíveis e acessíveis. Ela garante que os ativos possam ser aproveitados por vários usuários em toda a organização ou ecossistema, o que inclui parceiros, clientes e assim por diante.
 
-A maioria das organizações escolhe armazenar apenas ativos relevantes para os processos de marketing/LOB de downstream (publicação em canais como canais da Web por meio de AEM Sites ou outros canais fornecidos pela Adobe Experience Cloud - Marketing Cloud, Advertising Cloud e medidos pela Analytics Cloud, fornecendo a usuários/parceiros e assim por diante). Além disso, as organizações armazenam ativos que podem estar sujeitos a um processo de revisão/aprovação no DAM. Dessa forma, o DAM armazena principalmente ativos que têm grandes chances de serem aproveitados e evita armazenar ativos ociosos.
+A maioria das organizações escolhe armazenar apenas ativos relevantes para os processos de marketing/LOB a jusante (publicação em canais como canal da Web via AEM Sites ou outros canais servidos pela Adobe Experience Cloud - Marketing Cloud, Advertising Cloud e medidos pela Analytics Cloud, fornecendo a usuários/parceiros e assim por diante). Além disso, as organizações armazenam ativos que podem estar sujeitos a um processo de revisão/aprovação no DAM. Dessa forma, o DAM armazena principalmente ativos que têm grandes chances de serem aproveitados e evita armazenar ativos ociosos.
 
 Armazenar ativos também está sujeito a considerações técnicas e de utilização de recursos. O DAM fornece serviços adicionais sobre ativos armazenados, incluindo extração de metadados, controle de versão, geração de pré-visualizações/transcodificação, gerenciamento de referências e adição de informações de controle de acesso. Esses serviços consomem mais tempo e recursos de infraestrutura.
 
@@ -169,13 +169,13 @@ A seguir estão exemplos de atualizações que normalmente não são relevantes:
 
 ### Acesso do usuário ao DAM {#user-access-to-dam}
 
-O AEM Assets oferece suporte a dois tipos de usuários com base em seu acesso à implantação do AEM Assets. Normalmente, os usuários dentro da rede corporativa (firewall) têm acesso direto ao DAM. Outros usuários fora da rede corporativa não teriam acesso direto. O tipo de usuário determina quais integrações podem ser usadas do ponto de vista técnico.
+A AEM Assets oferece suporte a dois tipos de usuários com base em seu acesso à implantação do AEM Assets. Normalmente, os usuários dentro da rede corporativa (firewall) têm acesso direto ao DAM. Outros usuários fora da rede corporativa não teriam acesso direto. O tipo de usuário determina quais integrações podem ser usadas do ponto de vista técnico.
 
 #### Usuários criativos com acesso direto ao DAM {#creative-users-with-direct-access-to-dam}
 
-Normalmente, equipes de criação interna ou agências/profissionais de criação integrados à rede interna têm acesso à instância do DAM, incluindo o logon do AEM. O AEM e a infraestrutura de rede podem ser configurados para permitir o acesso direto a terceiros - normalmente organizações confiáveis, como agências que trabalham para um cliente - para ter acesso ao AEM pela rede, por exemplo, via VPN ou lista de permissões IP.
+Geralmente, equipes de criação interna ou agências/profissionais de criação integrados à rede interna têm acesso à instância do DAM, incluindo logon AEM. A infraestrutura de rede e AEM pode ser configurada para permitir o acesso direto a terceiros - normalmente organizações confiáveis, como agências que trabalham para um cliente - para ter acesso a AEM pela rede, por exemplo, via VPN ou lista de permissões IP.
 
-Nesses casos, o Adobe Asset Link ou o aplicativo de desktop AEM fornece acesso fácil aos ativos finais/aprovados e permite salvar ativos prontos para criação no DAM.
+Nesses casos, o Adobe Asset Link ou AEM aplicativo de desktop fornece acesso fácil aos ativos finais/aprovados e permite salvar ativos prontos para criação no DAM.
 
 #### Usuários criativos sem acesso ao DAM {#creative-users-without-access-to-dam}
 
@@ -184,25 +184,25 @@ Agências externas e freelancers sem acesso direto à instância do DAM podem ex
 Use as seguintes estratégias para fornecer acesso aos ativos finais/aprovados:
 
 * Use o aplicativo desktop se o Link de ativo não funcionar.
-* Use o Portal [da Marca do](https://helpx.adobe.com/br/experience-manager/brand-portal/user-guide.html) AEM Assets para distribuir ativos com segurança para parceiros externos
+* Use o Portal [de Marcas da](https://helpx.adobe.com/br/experience-manager/brand-portal/user-guide.html) AEM Assets para distribuir ativos com segurança a parceiros externos
 * Usar uma implementação personalizada de um portal de distribuição e seleção de fornecedor com base no [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Use a configuração de Controles de acesso no AEM e a infraestrutura de rede necessária (por exemplo, VPN e IP com listagem permitida) para dar a terceiros acesso a uma área de conteúdo dedicada no DAM. Eles podem usar a interface do usuário da Web do AEM para obter ativos e carregar novo conteúdo no DAM.
+* Use a configuração de Controles de acesso em AEM e infraestrutura de rede necessária (por exemplo, VPN e listagem IP permitida) para dar a terceiros acesso a uma área de conteúdo dedicada no seu DAM. Eles podem usar AEM interface do usuário para obter ativos e carregar novo conteúdo no DAM.
 
-#### Trabalho em andamento em ativos do AEM {#work-in-progress-on-assets-from-aem}
+#### Trabalho em andamento em ativos de AEM {#work-in-progress-on-assets-from-aem}
 
-Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalhos em andamento, sem ter todas as edições salvas no arquivo local carregadas também no AEM como alterações. Isso acelera o trabalho de um usuário do desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpos e focados em atualizações importantes e controladas.
+Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalhos em andamento, sem ter todas as edições salvas no arquivo local também carregadas para AEM como alterações. Isso acelera o trabalho de um usuário do desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpos e focados em atualizações importantes e controladas.
 
-O Adobe Asset Link oferta um bom suporte para este caso de uso:
+Adobe Asset Link oferta um bom suporte para este caso de uso:
 
-* Quando os usuários do Photoshop, InDesign ou Illustrator pretendem editar um arquivo, eles executam uma operação de Check-out no ativo em questão
-* O ativo é baixado em segundo plano, colocado em uma conta da Creative Cloud de usuários sincronizada ao disco pelo aplicativo de desktop da Creative Cloud e o sinalizador de check-out é alternado no AEM no ativo para minimizar conflitos de edição
+* Quando os usuários no Photoshop, InDesign ou Illustrator pretendem editar um arquivo, eles executam uma operação de Check-out no ativo em questão
+* O ativo é baixado em segundo plano, colocado na conta Creative Cloud dos usuários sincronizada ao disco pelo aplicativo de desktop Creative Cloud e o sinalizador de check-out é alternado no AEM do ativo para minimizar conflitos de edição
 * A partir daí, o usuário trabalha em um arquivo armazenado localmente no local sincronizado e pode continuar trabalhando e salvando as alterações necessárias a qualquer frequência necessária
-* Além disso, como o ativo está na conta da Creative Cloud, ele também está disponível em outros dispositivos que o usuário pode ter (por exemplo, pode ser aberto ou editado em um aplicativo dedicado da Creative Cloud para dispositivos móveis) e pode ser compartilhado com outros usuários da Creative Cloud para fins de colaboração.
-* Quando o usuário criativo terminar com as alterações, ele poderá executar uma operação de Check-in no arquivo em seu aplicativo da Creative Cloud, com um comentário opcional. O ativo correspondente no AEM tem controle de versão e é atualizado com o novo binário. Usuários do AEM, como comerciantes ou LOB, têm acesso às principais alterações de ativos, ou marcos, por meio da interface do usuário da linha do tempo do ativo do AEM.
+* Além disso, como o ativo está na conta do Creative Cloud, ele também está disponível em outros dispositivos que o usuário pode ter (por exemplo, pode ser aberto ou editado em um aplicativo móvel dedicado do Creative Cloud) e pode ser compartilhado com outros usuários do Creative Cloud para fins de colaboração.
+* Quando o usuário criativo terminar com as alterações, ele poderá executar uma operação de Check-in no arquivo em seu aplicativo Creative Cloud, com um comentário opcional. O ativo correspondente no AEM é controlado com versão e atualizado com o novo binário. AEM usuários como comerciantes ou LOB têm acesso às principais alterações de ativos, ou marcos, por meio AEM interface do usuário da linha do tempo do ativo.
 
-O aplicativo de desktop AEM fornece um compartilhamento de rede para ativos abertos no aplicativo nativo. Por padrão, todas as alterações feitas localmente são carregadas automaticamente no AEM depois de um breve período. Com tal configuração, salvas frequentes durante a fase de trabalho em andamento seriam carregadas para o AEM e controle de versão, criando muito tráfego de rede e possíveis desafios de escalabilidade - para não mencionar versões desnecessárias no AEM.
+AEM aplicativo desktop fornece um compartilhamento de rede para ativos abertos no aplicativo nativo. Por padrão, todas as alterações feitas localmente são carregadas para AEM automaticamente após um breve período. Com tal configuração, salvas frequentes durante a fase de trabalho em andamento seriam carregadas para AEM e controle de versão, criando muito tráfego de rede e possíveis desafios de escalabilidade - para não mencionar versões desnecessárias na AEM.
 
-A abordagem recomendada aqui é usar uma opção no aplicativo de desktop do AEM para desativar atualizações automatizadas e fazer upload de alterações em ativos para o AEM manualmente, aproveitando a ação de upload de alterações na interface do usuário do Status do ativo do aplicativo.
+A abordagem recomendada aqui é usar uma opção AEM aplicativo de desktop para desativar atualizações automatizadas e fazer upload de alterações em ativos para AEM manualmente, aproveitando a ação de upload de alterações na interface do usuário de status do ativo do aplicativo.
 
 #### Carregamento em massa para DAM {#bulk-upload-to-dam}
 
@@ -216,15 +216,15 @@ Observe que essa descrição se refere ao carregamento de arquivos operacionalme
 
 Você pode aproveitar os seguintes recursos de upload:
 
-* Para fazer upload de pastas grandes/hierárquicas em massa, use o aplicativo de desktop AEM que oferece a funcionalidade de upload [de](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload) pastas. Você também pode carregar estruturas hierárquicas de pastas. Os ativos são carregados em segundo plano e, portanto, não são vinculados a uma sessão do navegador da Web
+* Para fazer upload de pastas grandes/hierárquicas em massa, use AEM aplicativo de desktop que oferece funcionalidade de upload [de](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload) pastas. Você também pode carregar estruturas hierárquicas de pastas. Os ativos são carregados em segundo plano e, portanto, não são vinculados a uma sessão do navegador da Web
 * Para carregar alguns arquivos de uma única pasta, arraste os arquivos diretamente para a interface da Web ou use a opção Criar na interface da Web do AEM Assets.
 * Dependendo dos requisitos de sua empresa, você também pode usar o carregador personalizado.
 
 #### Gerenciamento de ativos digitais diretamente do desktop {#managing-digital-assets-directly-from-desktop}
 
-Se você usar Compartilhamentos de arquivos de rede para gerenciar ativos digitais, o uso do compartilhamento de rede mapeado pelo aplicativo de desktop AEM pode ser visto como um substituto conveniente. Ao fazer a transição dos compartilhamentos de arquivos de rede, a interface da Web do AEM fornece um conjunto avançado de recursos de Gerenciamento de ativos digitais que vão muito além do que é possível em um compartilhamento de rede (pesquisa, coleções, metadados, colaboração, pré-visualizações e assim por diante), e o aplicativo de desktop do AEM fornece um link útil para conectar o repositório DAM do lado do servidor ao trabalho no desktop.
+Se você usar Compartilhamentos de arquivos de rede para gerenciar ativos digitais, o uso do compartilhamento de rede mapeado por AEM aplicativo desktop pode ser visto como um substituto conveniente. Durante a transição dos compartilhamentos de arquivos de rede, AEM interface da Web fornece um conjunto avançado de recursos de Gerenciamento de ativos digitais que vão muito além do que é possível em um compartilhamento de rede (pesquisa, coleções, metadados, colaboração, pré-visualizações e assim por diante) e AEM aplicativo de desktop fornece um link útil para conectar o repositório DAM do lado do servidor ao trabalho no desktop.
 
-Evite usar o aplicativo de desktop do AEM para gerenciar ativos diretamente no compartilhamento de rede dos AEM Assets. Por exemplo, evite usar o aplicativo de desktop do AEM para mover/copiar vários arquivos. Em vez disso, use a interface do usuário da Web do AEM Assets para arrastar pastas do Finder/Explorer para o compartilhamento de rede ou use o recurso Carregamento de pasta do AEM Assets.
+Evite usar AEM aplicativo de desktop para gerenciar ativos diretamente no compartilhamento de rede da AEM Assets. Por exemplo, evite usar AEM aplicativo de desktop para mover/copiar vários arquivos. Em vez disso, use a interface do usuário da Web do AEM Assets para arrastar pastas do Finder/Explorer para o compartilhamento de rede ou use o recurso AEM Assets Folder Upload.
 
 <!-- 
 #### Asset migration {#asset-migration}
