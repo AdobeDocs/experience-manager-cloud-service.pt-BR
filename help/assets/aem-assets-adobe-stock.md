@@ -1,9 +1,9 @@
 ---
-title: Gerenciar [!DNL Adobe Stock] ativos [!DNL Adobe Experience Manager Assets].
+title: Gerenciar [!DNL Adobe Stock] ativos [!DNL Assets].
 description: Pesquise, busque, licencie e [!DNL Adobe Stock] gerencie ativos de dentro [!DNL Adobe Experience Manager]. Use os ativos licenciados como qualquer outro ativo digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 453a8459e042f57820c10fb90f30c2016aa0f5d0
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 5%
