@@ -1,11 +1,11 @@
 ---
-title: Formatos de arquivo e tipos MIME suportados pelo Experience Manager Assets como Cloud Service
+title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados pelo Experience Manager Assets como Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '813'
 ht-degree: 9%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 9%
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager como Cloud Service suporta capacidades de gestão de conteúdo básicas — armazenamento, gerenciamento de metadados online, controle de versão, upload e download e assim por diante — para qualquer arquivo binário, independentemente de seu formato. O Adobe Experience Manager Assets oferece suporte para diversos formatos de arquivo e cada recurso de produto tem suporte variado para formatos diferentes.
+A Adobe Experience Manager como Cloud Service suporta recursos básicos de gestão de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download e assim por diante — para qualquer arquivo binário, independentemente de seu formato. O Adobe Experience Manager Assets oferece suporte para diversos formatos de arquivo e cada recurso de produto tem suporte variado para formatos diferentes.
 
 Além disso, o Experience Manager Assets oferece suporte estendido para gerar pré-visualizações e execuções e extrair metadados e texto para indexação de texto completo. Esse suporte estendido é fornecido usando microserviços [de](asset-microservices-configure-and-use.md)ativos.
 
 Os destaques da conversão de ativos usando microserviços de ativos incluem:
 
-* Formatos [de arquivo principais da](#adobe-formats) Adobe produzidos por aplicativos e serviços da Adobe, incluindo Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension e Adobe Acrobat ou PDF.
+* Formatos [de arquivos principais de](#adobe-formats) Adobe produzidos por aplicativos e serviços de Adobe, incluindo Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension e Adobe Acrobat ou PDF.
 * Formatos [de arquivo de](#image-formats)imagem principais.
-* [Formatos](#camera-raw-formats) de arquivo Camera Raw para uma grande variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (capacitados pelo Adobe Camera Raw).
+* [Formatos](#camera-raw-formats) de arquivos Camera Raw para uma grande variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (alimentados pela Adobe Camera Raw).
 * Formatos [comuns de](#document-formats)documento, incluindo os formatos Microsoft Office e Open Documento.
 * Grande variedade de formatos de [vídeo](#video-formats) e [áudio.](#audio-formats)
 
@@ -33,9 +33,9 @@ A legenda a seguir descreve o nível de suporte.
 | * | Ver observações abaixo do quadro |
 | - | Não aplicável |
 
-## Formatos da Adobe {#adobe-formats}
+## formatos Adobe {#adobe-formats}
 
-| Formato de arquivo | Geração de miniaturas | extração de texto completo | Extração de metadados | Largura/altura |
+| Formato de arquivo | Geração de miniaturas | Extração de texto completo | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
 | COLAGEM | - | - | ✓ | - |
@@ -65,7 +65,7 @@ A legenda a seguir descreve o nível de suporte.
 
 ## Formatos de imagem em [!DNL Dynamic Media] {#image-support-dynamic-media}
 
-| Formato | Carregar (formato de entrada) | Criar predefinição de imagem (formato de saída) | Execução dinâmica de Pré-visualização | Fornecer representação dinâmica | Baixar representação dinâmica |
+| Formato | Carregar (formato de entrada) | Criar predefinição de imagem (formato de saída) | Execução dinâmica de pré-visualização | Fornecer representação dinâmica | Baixar representação dinâmica |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -91,9 +91,9 @@ Os seguintes subtipos de formatos de arquivo de imagem rasterizada que não são
 
 A seguinte lista de formatos 3D é suportada.
 
-Consulte também [Trabalhar com ativos 3D na Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
-| Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | pré-visualização em miniatura | pré-visualização 3D | delivery Dynamic Media |
+| Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Pré-visualização em miniatura | pré-visualização 3D | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -134,11 +134,11 @@ Consulte também [Trabalhar com ativos 3D na Dynamic Media.](/help/assets/dynami
 | SRW | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ |
 
-## formatos de Documento {#document-formats}
+## formatos de documento {#document-formats}
 
 Os formatos de documento compatíveis com os recursos de gerenciamento de ativos são os seguintes:
 
-| Formato de arquivo | Geração de miniaturas | extração de texto completo | Largura/altura | Gerenciamento de metadados | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| Formato de arquivo | Geração de miniaturas | Extração de texto completo | Largura/altura | Gerenciamento de metadados | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -160,9 +160,9 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | TXT | - | ✓ | - | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## formatos de Documento em [!DNL Dynamic Media] {#document-support-dynamic-media}
+## formatos de documento em [!DNL Dynamic Media] {#document-support-dynamic-media}
 
-| Formato | Carregar (formato de entrada) | Criar predefinição de imagem (formato de saída) | Execução dinâmica de Pré-visualização | Fornecer representação dinâmica | Baixar representação dinâmica |
+| Formato | Carregar (formato de entrada) | Criar predefinição de imagem (formato de saída) | Execução dinâmica de pré-visualização | Fornecer representação dinâmica | Baixar representação dinâmica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -201,7 +201,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 |------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | MP4 | MPEG-4 | H264/AVC (todos os perfis) |  |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animação da Apple |
-| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação vetorial) |
+| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação vetorial) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
 | M4V | Apple iTunes | H264/AVC |  |
@@ -218,7 +218,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 ## Formatos de áudio {#audio-formats}
 
-Os ativos como Cloud Service fornecem suporte de extração de metadados XMP para os formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
+Os ativos como Cloud Service fornecem suporte XMP extração de metadados para os formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
 
 >[!MORELIKETHIS]
 >
