@@ -1,11 +1,11 @@
 ---
-title: Saiba como os microserviços de ativos podem processar seus ativos digitais na nuvem
+title: Processar ativos usando microserviços de ativos
 description: Processar seus ativos digitais usando microserviços de processamento de ativos escaláveis e nativos na nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '838'
 ht-degree: 3%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 3%
 
 # Visão geral da assimilação e processamento de ativos com microserviços de ativos {#asset-microservices-overview}
 
-O Adobe Experience Manager como Cloud Service fornece um método nativo de nuvem para aproveitar os aplicativos e os recursos do Experience Manager. Um dos elementos chave dessa nova arquitetura é a ingestão e o processamento de ativos, impulsionados por microserviços de ativos. Os microserviços de ativos fornecem um processamento escalonável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços em nuvem para obter o melhor tratamento de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microserviços de ativos nativos na nuvem são:
+A Adobe Experience Manager como Cloud Service fornece um método nativo de nuvem para aproveitar os aplicativos e os recursos do Experience Manager. Um dos elementos chave dessa nova arquitetura é a ingestão e o processamento de ativos, impulsionados por microserviços de ativos. Os microserviços de ativos fornecem um processamento escalonável e resiliente de ativos usando serviços em nuvem. O Adobe gerencia os serviços em nuvem para uma manipulação ideal de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microserviços de ativos nativos na nuvem são:
 
 * Arquitetura escalável que permite um processamento ininterrupto para operações com grande quantidade de recursos.
 * Indexação eficiente e extrações de texto que não afetam o desempenho dos ambientes de Experience Manager.
-* Minimize a necessidade de workflows para lidar com o processamento de ativos no ambiente Experience Manager. Isso libera recursos, minimiza a carga no Experience Manager e proporciona escalabilidade.
+* Minimize a necessidade de workflows para lidar com o processamento de ativos no ambiente Experience Manager. Isso libera recursos, minimiza a carga no Experience Manager e oferece escalabilidade.
 * Maior capacidade de resistência do processamento de ativos. Os possíveis problemas ao lidar com arquivos atípicos, como arquivos corrompidos ou arquivos extremamente grandes, não afetam mais o desempenho da implantação.
 * Configuração simplificada do processamento de ativos para os administradores.
-* A configuração de processamento de ativos é gerenciada e mantida pela Adobe para fornecer a melhor configuração conhecida para lidar com execuções, metadados e extração de texto para vários tipos de arquivos
-* Os serviços nativos de processamento de arquivos da Adobe são usados onde for aplicável, fornecendo saída de alta fidelidade e manuseio [eficiente de formatos](file-format-support.md)proprietários da Adobe.
+* A configuração de processamento de ativos é gerenciada e mantida pelo Adobe para fornecer a melhor configuração conhecida para lidar com execuções, metadados e extração de texto para vários tipos de arquivos
+* Os serviços nativos de processamento de arquivos de Adobe são usados quando aplicável, proporcionando saída de alta fidelidade e manuseio [eficiente de formatos](file-format-support.md)proprietários de Adobe.
 * Capacidade de configurar o fluxo de trabalho de pós-processamento para adicionar ações e integrações específicas do usuário.
 
 Os microserviços de ativos ajudam a evitar a necessidade de ferramentas e métodos de renderização de terceiros (como a transcodificação de ImageMagick e FFmpeg) e a simplificar as configurações, além de fornecer funcionalidade pronta para uso para tipos de arquivos comuns.
@@ -39,7 +39,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 As etapas principais da ingestão e processamento usando microserviços de ativos são:
 
-* Os clientes, como navegadores da Web ou o Adobe Asset Link, enviam uma solicitação de upload para o Experience Manager e o start que carregam o binário diretamente no armazenamento da nuvem binária.
+* Os clientes, como os navegadores da Web ou o Link de ativo do Adobe, enviam uma solicitação de upload para o Experience Manager e o start que carregam o binário diretamente para o armazenamento da nuvem binária.
 * Quando o carregamento binário direto é concluído, o cliente notifica Experience Manager.
 * A Experience Manager envia uma solicitação de processamento para os microserviços do ativo. O conteúdo da solicitação depende da configuração dos perfil de processamento no Experience Manager que especifica, quais execuções serão geradas.
 * O back-end dos microserviços do Assets recebe a solicitação, despacha-a para um ou mais microserviços com base na solicitação. Cada microserviço acessa o binário original diretamente da loja da nuvem binária.
@@ -50,14 +50,14 @@ Esse é o fluxo básico de assimilação e processamento de ativos. Se configura
 
 O fluxo de ingestão e processamento são conceitos-chave da arquitetura de microserviços do ativo para o Experience Manager.
 
-* **Acesso** binário direto: Os ativos são transportados (e carregados) para a loja binária da nuvem uma vez configurados para ambientes Experience Manager, e então o AEM, os microserviços de ativos e, por fim, os clientes obtêm acesso direto a eles para realizar seu trabalho. Isso minimiza a carga nas redes e a duplicação dos binários armazenados
-* **Processamento** externo: O processamento de ativos é feito fora do ambiente AEM e salva seus recursos (CPU, memória) para fornecer as principais funcionalidades do Gerenciamento de ativos digitais e suportar o trabalho interativo com o sistema para usuários finais
+* **Acesso** binário direto: Os ativos são transportados (e carregados) para a Loja binária de nuvem uma vez configurados para ambientes Experience Manager e, em seguida, AEM, microserviços de ativos e, por fim, os clientes obtêm acesso direto a eles para realizar seu trabalho. Isso minimiza a carga nas redes e a duplicação dos binários armazenados
+* **Processamento** externo: O processamento de ativos é feito fora AEM ambiente e salva seus recursos (CPU, memória) para fornecer as principais funcionalidades do Gerenciamento de ativos digitais e suportar o trabalho interativo com o sistema para usuários finais
 
 ## Carregamento de ativos com acesso binário direto {#asset-upload-with-direct-binary-access}
 
-Os clientes Experience Manager, que fazem parte da oferta de produtos, todos suportam upload com acesso binário direto por padrão. Eles incluem carregar usando a interface da Web, o Adobe Asset Link e o aplicativo de desktop do AEM.
+Os clientes Experience Manager, que fazem parte da oferta de produtos, todos suportam upload com acesso binário direto por padrão. Eles incluem upload usando a interface da Web, Adobe Asset Link e AEM aplicativo de desktop.
 
-Você pode usar ferramentas de upload personalizadas, que funcionam diretamente com APIs HTTP AEM. Você pode usar essas APIs diretamente ou usar e estender os seguintes projetos de código aberto que implementam o protocolo de upload:
+Você pode usar ferramentas de upload personalizadas, que funcionam diretamente com AEM APIs HTTP. Você pode usar essas APIs diretamente ou usar e estender os seguintes projetos de código aberto que implementam o protocolo de upload:
 
 * [Biblioteca de upload de código aberto](https://github.com/adobe/aem-upload)
 * [Ferramenta de linha de comando open-source](https://github.com/adobe/aio-cli-plugin-aem)
@@ -68,7 +68,7 @@ Para obter mais informações, consulte [fazer upload de ativos](add-assets.md).
 
 Embora a maioria dos clientes deva obter todas as suas necessidades de processamento de ativos dos microserviços de ativos configuráveis, alguns podem precisar de processamento de ativos adicionais. Isso é especialmente verdadeiro se os ativos precisarem ser processados com base em informações provenientes de outros sistemas por meio de integrações. Em casos como esse, workflows de pós-processamento personalizados podem ser usados.
 
-Os workflows de pós-processamento são modelos regulares de fluxo de trabalho do AEM, criados e gerenciados no editor de fluxo de trabalho do AEM. Os clientes podem configurar os workflows para realizar etapas de processamento adicionais em um ativo, incluindo o uso de etapas de fluxo de trabalho prontas e workflows personalizados disponíveis.
+Os workflows de pós-processamento são modelos regulares de fluxo de trabalho AEM, criados e gerenciados AEM editor de fluxo de trabalho. Os clientes podem configurar os workflows para realizar etapas de processamento adicionais em um ativo, incluindo o uso de etapas de fluxo de trabalho prontas e workflows personalizados disponíveis.
 
 O Adobe Experience Manager pode ser configurado para acionar automaticamente os workflows de pós-processamento após a conclusão do processamento do ativo.
 
