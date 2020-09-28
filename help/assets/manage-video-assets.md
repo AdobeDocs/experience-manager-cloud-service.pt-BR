@@ -1,12 +1,12 @@
 ---
-title: Gerencie ativos de vídeo no [!DNL Adobe Experience Manager].
+title: Gerenciar ativos de vídeo
 description: Faça upload, pré-visualização, anote e publique ativos de vídeo em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 6%
+source-wordcount: '539'
+ht-degree: 7%
 
 ---
 
