@@ -1,11 +1,11 @@
 ---
-title: O Gerenciamento de Direitos Digitais [!DNL Adobe Experience Manager Assets] é um serviço em nuvem.
-description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados [!DNL Experience Manager] em um serviço em nuvem.
+title: Digital Rights Management em [!DNL Assets]
+description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados [!DNL Experience Manager] em um Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1347'
 ht-degree: 7%
 
 ---
@@ -21,8 +21,8 @@ A expiração do ativo é uma maneira eficaz de aplicar os requisitos de licenç
 
 Você pode visualização o status de expiração de um ativo nos seguintes locais:
 
-* **visualização** da placa: Para um ativo expirado, um sinalizador no cartão indica que ele expirou.
-* **visualização** da Lista: Para ativos expirados, a coluna **[!UICONTROL Status]** exibe o banner **[!UICONTROL Expirado]** .
+* **Visualização** da placa: Para um ativo expirado, um sinalizador no cartão indica que ele expirou.
+* **Visualização** da lista: Para ativos expirados, a coluna **[!UICONTROL Status]** exibe o banner **[!UICONTROL Expirado]** .
 * **Linha do tempo**: Você pode visualização o status de expiração de um ativo na linha do tempo. Selecione o ativo e escolha Linha do tempo.
 * **Painel** de referências: Você também pode visualização o status de expiração dos ativos no painel **[!UICONTROL Referências]** . Ele gerencia os status e as relações de expiração de ativos entre ativos compostos e subativos, coleções e projetos referenciados.
 
@@ -54,7 +54,7 @@ Além disso, se uma falha ou erro impedir que o scheduler detecte ativos expirad
 To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. Abra o [!DNL Experience Manager] Configuration Manager.
-1. Escolha **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Por padrão, o Scheduler **[!UICONTROL com base em]** tempo é selecionado, o que agenda uma tarefa para verificar em um horário específico se um ativo expirou subativos. Após a conclusão da tarefa, os ativos que têm subativos expirados e ativos referenciados são exibidos como expirados nos resultados da pesquisa.
+1. Escolha Notificação **[!UICONTROL de expiração do]** Adobe CQ DAM. Por padrão, o Scheduler **[!UICONTROL com base em]** tempo é selecionado, o que agenda uma tarefa para verificar em um horário específico se um ativo expirou subativos. Após a conclusão da tarefa, os ativos que têm subativos expirados e ativos referenciados são exibidos como expirados nos resultados da pesquisa.
 
 1. Para executar o trabalho periodicamente, desmarque o campo **[!UICONTROL Regra do agendador com base na hora]** e modifique o tempo em segundos no campo **[!UICONTROL Agendador periódico]**. Por exemplo, a expressão de exemplo &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; aciona o trabalho às 00 horas.
 
@@ -77,7 +77,7 @@ O [!DNL Assets] console pode exibir vários estados para ativos. Dependendo do e
 
 1. Na interface do [!DNL Assets] usuário, selecione um ativo.
 
-1. Clique em **[!UICONTROL Publicar]** na barra de ferramentas. Se você não vir **Publicar** na barra de ferramentas, clique em **[!UICONTROL Mais]** na barra de ferramentas e localize a opção **[!UICONTROL Publicar]** .
+1. Click **[!UICONTROL Publish]** from the toolbar. Se você não vir **Publicar** na barra de ferramentas, clique em **[!UICONTROL Mais]** na barra de ferramentas e localize a opção **[!UICONTROL Publicar]** .
 
 1. Escolha **[!UICONTROL Publicar]** no menu e feche a caixa de diálogo de confirmação.
 1. Saia do modo de seleção. O status de publicação do ativo aparece na parte inferior da miniatura do ativo na visualização do cartão. Na visualização da lista, a coluna Publicado exibe a hora em que o ativo foi publicado.
@@ -104,7 +104,7 @@ O [!DNL Assets] console pode exibir vários estados para ativos. Dependendo do e
 
 1. Você também pode pesquisar ativos com base em uma combinação de status em várias facetas de pesquisa. Por exemplo, você pode pesquisar ativos publicados que foram aprovados em uma tarefa de revisão e ainda não expiraram selecionando as opções apropriadas nas facetas de pesquisa.
 
-## Gerenciamento de direitos digitais em [!DNL Assets] {#digital-rights-management-in-assets-1}
+## Digital Rights Management em [!DNL Assets] {#digital-rights-management-in-assets-1}
 
 Este recurso impõe a aceitação do contrato de licença antes que você possa baixar um ativo licenciado de [!DNL Adobe Experience Manager Assets].
 
@@ -121,7 +121,7 @@ Um ativo é considerado protegido se uma dessas condições for cumprida:
 >
 >O local `/etc/dam/drm/licences` usado para armazenar licenças em versões anteriores de [!DNL Experience Manager] está obsoleto.
 >
->Se você criar ou modificar páginas de licença ou as portar de [!DNL Experience Manager] versões anteriores, a Adobe recomenda armazená-las em `/apps/settings/dam/drm/licenses` ou `/conf/*/settings/dam/drm/licenses`.
+>Se você criar ou modificar páginas de licença ou as portar de [!DNL Experience Manager] versões anteriores, o Adobe recomenda armazená-las em `/apps/settings/dam/drm/licenses` ou `/conf/*/settings/dam/drm/licenses`.
 
 ### Baixar ativos protegidos por DRM {#downloading-drm-assets}
 
