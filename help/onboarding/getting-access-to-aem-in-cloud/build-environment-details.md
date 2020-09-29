@@ -2,9 +2,9 @@
 title: Criar detalhes do Ambiente
 description: Detalhes do Ambiente de compilação - Cloud Services
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,10 @@ Para fazer isso, no arquivo pom.xml, adicione uma `<plugin>` entrada com a segui
 ```
 
 >[!NOTE]
->Os valores de fornecedor suportados são `oracle` e `sun`.
->
->Os valores de versão suportados são `1.8`, `1.11`e `11`.
+>Os valores de fornecedor suportados são `oracle` e `sun`os valores de versão suportados são `1.8`, `1.11`e `11`.
+
+>[!NOTE]
+>A compilação do projeto do Gerenciador de nuvem ainda está usando o Java 8 para chamar o Maven, portanto, verificar ou impor a versão do Java configurada no plug-in da cadeia de ferramentas por meio de plug-ins como o Plug-in [](https://maven.apache.org/enforcer/maven-enforcer-plugin/) Apache Maven Execcer não funciona e esses plug-ins não devem ser usados.
 
 ## Variáveis de ambiente {#environment-variables}
 
