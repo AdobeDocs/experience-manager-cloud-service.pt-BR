@@ -2,7 +2,7 @@
 title: Atualizações da versão AEM
 description: 'Atualizações da versão AEM '
 translation-type: tm+mt
-source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
+source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -24,6 +24,7 @@ AEM atualizações de versão são de dois tipos:
 * **Atualizações de envio de AEM**
 
    * Pode ser lançado diariamente.
+
    * A maioria da manutenção, incluindo as últimas correções de erros e atualizações de segurança.
 
       Como as mudanças são aplicadas regularmente, o impacto é incremental, reduzindo o impacto sobre seu serviço.
