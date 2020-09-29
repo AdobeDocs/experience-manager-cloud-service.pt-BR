@@ -2,9 +2,9 @@
 title: Atualizações da versão AEM
 description: 'Atualizações da versão AEM '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,12 @@ AEM como Cloud Service agora usa a Integração contínua e o Delivery contínuo
 
 AEM atualizações de versão são de dois tipos:
 
-* **Atualizações por push**
+* **Atualizações de envio de AEM**
 
    * Pode ser lançado diariamente.
    * A maioria da manutenção, incluindo as últimas correções de erros e atualizações de segurança.
 
-   Como as mudanças são aplicadas regularmente, o impacto é incremental, reduzindo o impacto sobre seu serviço.
-
->[!NOTE]
->Para saber mais sobre AEM atualizações por push, consulte a publicação técnica no [Adobe Experience Manager como um Modelo de Delivery contínuo Cloud Service](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+      Como as mudanças são aplicadas regularmente, o impacto é incremental, reduzindo o impacto sobre seu serviço.
 
 * **Atualizações de novos recursos**
 
@@ -37,7 +34,7 @@ AEM atualizações de versão são de dois tipos:
 
 AEM atualizações passam por um pipeline de validação de produto intenso e totalmente automatizado, que envolve várias etapas, garantindo que o serviço não seja interrompido em nenhum sistema em produção. Os controlos de saúde são utilizados para monitorizar a saúde da aplicação. Se essas verificações falharem durante um AEM como uma atualização de Cloud Service, o lançamento não prosseguirá e o Adobe investigará por que a atualização causou esse comportamento inesperado.
 
-[Os testes do produto e os testes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) funcionais do Cliente, que impedem que upgrades do produto e empurramentos de código do cliente quebrem a produção, também são validados durante uma atualização da versão AEM.
+[Os testes do produto e os testes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) funcionais do Cliente, que impedem que upgrades de produtos e empurramentos de código do cliente quebrem a produção, também são validados durante uma atualização da versão AEM.
 
 >[OBSERVAÇÃO]
 >Se o código personalizado foi enviado para o armazenamento temporário e depois rejeitado por você, a próxima atualização AEM removerá essas alterações para refletir a tag git da última versão do cliente bem-sucedido para produção.
