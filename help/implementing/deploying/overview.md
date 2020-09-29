@@ -2,9 +2,9 @@
 title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3210'
 ht-degree: 1%
 
 ---
@@ -16,8 +16,7 @@ ht-degree: 1%
 
 Os fundamentos do desenvolvimento de código são semelhantes em AEM em comparação às soluções AEM no local e Managed Services. Os desenvolvedores gravam o código e o testam localmente, que é então enviado para o AEM remoto como um ambiente Cloud Service. O Cloud Manager, que era uma ferramenta de delivery de conteúdo opcional para Managed Services, é necessário. Esse agora é o único mecanismo para implantar código para AEM como ambientes Cloud Service.
 
-A atualização da versão [](/help/implementing/deploying/aem-version-updates.md) AEM é sempre um evento de implantação separado do código [](#customer-releases)personalizado. De outra forma, as versões de código personalizadas devem ser testadas em relação à versão AEM que está em produção, já que isso é o que será implantado no topo. AEM atualizações de versão que ocorrem depois disso, que serão frequentes e automaticamente aplicadas. Eles devem ser compatíveis com o código do cliente já implantado.
-
+A atualização da versão [](/help/implementing/deploying/aem-version-updates.md) AEM é sempre um evento de implantação separado do código [](#customer-releases)personalizado. De outra forma, as versões de código personalizadas devem ser testadas em relação à versão AEM que está em produção, já que isso é o que será implantado no topo. AEM atualizações de versão que ocorrem depois disso, que serão frequentes e automaticamente aplicadas. Eles são compatíveis com o código do cliente já implantado.
 
 O restante desse documento descreverá como os desenvolvedores devem adaptar suas práticas para que trabalhem com as atualizações de versão do Cloud Service e com as atualizações do cliente.
 
@@ -236,19 +235,19 @@ Como as atualizações AEM, as versões de clientes são implantadas usando uma 
 
 ## Índices {#indexes}
 
-Índices novos ou modificados causarão uma etapa adicional de indexação ou reindexação antes que a nova versão (verde) possa entrar no tráfego. Detalhes sobre o gerenciamento de índice no Skyline podem ser encontrados [neste artigo](/help/operations/indexing.md). Você pode verificar o status do trabalho de indexação na página de criação do Cloud Manager e receberá uma notificação quando a nova versão estiver pronta para receber tráfego.
+Índices novos ou modificados causarão uma etapa adicional de indexação ou reindexação antes que a nova versão (verde) possa entrar no tráfego. Detalhes sobre o gerenciamento de índice em AEM como Cloud Service podem ser encontrados [neste artigo](/help/operations/indexing.md). Você pode verificar o status do trabalho de indexação na página de criação do Cloud Manager e receberá uma notificação quando a nova versão estiver pronta para receber tráfego.
 
 >[!NOTE]
 >
 >O tempo necessário para uma implantação contínua varia dependendo do tamanho do índice, já que a versão em verde não pode aceitar tráfego até que o novo índice seja gerado.
 
-No momento, o Skyline não funciona com ferramentas de gerenciamento de índice, como a ferramenta ACS Commons Assurance Index.
+No momento, a AEM como Cloud Service não funciona com ferramentas de gerenciamento de índice, como a ferramenta ACS Commons Garanta índice de carvalho.
 
 ## Replicação {#replication}
 
 O mecanismo de publicação é compatível com as APIs [Java de replicação de](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html)AEM.
 
-Para desenvolver e testar a replicação com a nuvem pronta AEM Quickstart, os recursos de replicação clássicos precisam ser usados com uma configuração de Autor/Publicação. No caso de o ponto de entrada da interface do usuário no AEM Author ter sido removido para a nuvem, os usuários acessariam `http://localhost:4502/etc/replication` a configuração.
+Para desenvolver e testar a replicação com a nuvem pronta AEM início rápido, os recursos de replicação clássicos precisam ser usados com uma configuração de Autor/Publicação. No caso de o ponto de entrada da interface do usuário no AEM Author ter sido removido para a nuvem, os usuários acessariam `http://localhost:4502/etc/replication` a configuração.
 
 ## Código compatível com versões anteriores para implantações contínuas {#backwards-compatible-code-for-rolling-deployments}
 
