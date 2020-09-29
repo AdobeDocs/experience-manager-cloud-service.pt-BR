@@ -4,9 +4,9 @@ user-guide-title: Guia de ativos como Cloud Service
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 0f3f34d8871462bf94f596d04c04c99db6488fa5
+source-git-commit: cea753a0783397c7fd9b757b2246c87ffa698f82
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 90%
 
 ---
@@ -36,7 +36,6 @@ ht-degree: 90%
    + [Como adicionar ou editar metadados](meta-edit.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
    + [Usar e configurar o Assets Insights](assets-insights.md)
-   + [Trabalhos assíncronos](asynchronous-jobs.md)
    + [Perfis de metadados](metadata-profiles.md)
    + [Esquema de metadados](metadata-schemas.md)
    + [Gerenciar ativos de vídeo](manage-video-assets.md)
