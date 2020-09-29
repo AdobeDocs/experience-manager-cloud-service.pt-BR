@@ -2,9 +2,9 @@
 title: Atualizações da versão AEM
 description: 'Atualizações da versão AEM '
 translation-type: tm+mt
-source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
+source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-AEM como Cloud Service agora usa a Integração contínua e o Delivery contínuo (CI/CD) para garantir que seus projetos estejam na versão mais recente do AEM. Isso significa que todas as operações de atualização são totalmente automatizadas, portanto, não é necessário interromper o serviço para os usuários.
+AEM como Cloud Service agora usa a Integração contínua e o Delivery contínuo (CI/CD) para garantir que seus projetos estejam na versão mais recente do AEM. Isso significa que as instâncias de Produção e Estágio são atualizadas para a versão mais recente AEM, sem interrupção do serviço para os usuários.
 
 >[!NOTE]
 >Se a atualização do ambiente de produção falhar, o Cloud Manager reverterá automaticamente o ambiente stage. Isso é feito automaticamente para garantir que, após a conclusão de uma atualização, os ambientes de estágio e de produção estejam na mesma versão AEM.
