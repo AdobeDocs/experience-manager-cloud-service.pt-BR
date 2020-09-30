@@ -3,7 +3,7 @@ title: Acessibilidade [!DNL Experience Manager Assets].
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0bb58d910fed91e4627e1fd8e1f9af47a1b2f4df
+source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
 workflow-type: tm+mt
 source-wordcount: '1823'
 ht-degree: 2%
@@ -172,7 +172,7 @@ Para operações de metadados que normalmente são feitas por funções como com
 * A funcionalidade de arrastar usando o teclado funciona corretamente no Editor de Schemas de Metadados no modo de navegação do leitor de tela.
 * Um usuário pode mover o foco usando o teclado para o campo Adicionar usuário ou grupo, em Grupo de usuários fechado, na guia Permissões das Propriedades da pasta.
 
-## Pesquisar ativos digitais {#search}
+## Pesquisar ativos digitais {#search-assets}
 
 Uma experiência de pesquisa rápida e contínua de ativos aumenta a velocidade do conteúdo. Os casos de uso da velocidade de conteúdo são parte da [!DNL Assets] funcionalidade principal. Para start de uma pesquisa na barra Omnisearch, os usuários podem usar o atalho do teclado `/` ou usar `Tab` junto com os leitores de tela para localizar rapidamente a opção de pesquisa. O leitor de tela narrará o nome da opção como Botão [!UICONTROL de] pesquisa quando o foco estiver na opção ![de](assets/do-not-localize/search_icon.png)pesquisa de opção de pesquisa. Os usuários podem pressionar `Return` para abrir a caixa Omnisearch. O leitor de tela não apenas narra a palavra-chave digitada na caixa de pesquisa, como também narra as sugestões de preenchimento automático oferecidas pelo [!DNL Experience Manager Assets]. Os usuários podem usar uma combinação de teclas de seta `Return`e acessar `Tab` as várias opções para acionar uma pesquisa.
 
