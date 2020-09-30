@@ -4,24 +4,24 @@ user-guide-title: Guia de ativos como Cloud Service
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 942eb1424af119c4dda6b8286a20ff030c807802
+source-git-commit: 1f575a2bc844e108477a86d4f653928442165c8e
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 90%
+source-wordcount: '406'
+ht-degree: 77%
 
 ---
 
 
-# Guia de ativos {#assets}
+# [!DNL Assets] Guia {#assets}
 
-+ [AEM Assets as a Cloud Service](/help/assets/home.md)
++ [[!DNL Assets] como um Cloud Service](/help/assets/home.md)
 + [Visão geral e novidades](overview.md)
-+ [Alterações importantes no AEM Assets as a Cloud Service](assets-cloud-changes.md)
-+ [Arquitetura](architecture.md)
++ [Alterações notáveis [!DNL Assets] como um Cloud Service](assets-cloud-changes.md)
++ [[!DNL Assets] arquitetura](architecture.md)
 + [Formatos de arquivo não suportados](file-format-support.md)
 + [Visão geral dos microsserviços de ativos](asset-microservices-overview.md)
 + [Acessibilidade em [!DNL Assets]](accessibility.md)
-+ Gerenciar ativos digitais usando o AEM {#manage}
++ Gerenciar ativos digitais {#manage}
    + [Compartilhar ativos](share-assets.md)
    + [Monitorar atividades e tarefas do DAM](assets-activity-history.md)
    + [Introdução ao uso dos microsserviços de ativos](asset-microservices-configure-and-use.md)
@@ -30,29 +30,29 @@ ht-degree: 90%
    + [Tarefas comuns do gerenciamento de ativos](manage-digital-assets.md)
    + [Tags inteligentes](smart-tags.md)
    + [Como organizar ativos](organize-assets.md)
-   + [Usar ativos do Adobe Stock no AEM](aem-assets-adobe-stock.md)
+   + [ [!DNL Adobe Stock] Usar ativos em AEM](aem-assets-adobe-stock.md)
    + [Gerenciar coleções](manage-collections.md)
    + [Visão geral dos metadados](manage-metadata.md)
-   + [Integrar à Adobe Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Integrar com [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [Como adicionar ou editar metadados](meta-edit.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
    + [Usar e configurar o Assets Insights](assets-insights.md)
    + [Perfis de metadados](metadata-profiles.md)
    + [Esquema de metadados](metadata-schemas.md)
    + [Gerenciar ativos de vídeo](manage-video-assets.md)
-   + [Baixar ativos no AEM](download-assets-from-aem.md)
+   + [Baixar ativos](download-assets-from-aem.md)
    + [Ativos de check-in e check-out para edição](check-out-and-submit-assets.md)
    + [Digital Rights Management para ativos](drm.md)
    + [Ativos de marca d&#39;água](watermark-assets.md)
-+ Configurar, administrar e estender ativos {#admin}
++ Configure, administer and extend [!DNLAssets] {#admin}
    + [Documentos do desenvolvedor e referências de APIs](developer-reference-material-apis.md)
    + [Esquema de metadados de pastas](folder-metadata-schema.md)
-   + [Trabalhar com perfis de imagem e perfis de vídeo](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [Trabalhar com perfis de imagem e vídeo](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [Configurar tags inteligentes](smart-tags-configuration.md)
-   + [Ativos multilíngues e tradução de ativos](translate-assets.md)
+   + [Ativos multilíngue e tradução](translate-assets.md)
    + [Pesquisar aspectos](search-facets.md)
    + [API HTTP de ativos](mac-api-assets.md)
-   + [Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets](content-fragments/assets-api-content-fragments.md)
+   + [Suporte a fragmentos de conteúdo na API HTTP de ativos](content-fragments/assets-api-content-fragments.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [Relatórios de ativos](asset-reports.md)
    + [Metadados em cascata](cascading-metadata.md)
@@ -60,8 +60,8 @@ ht-degree: 90%
    + [Recursos MediaLibrary](medialibrary.md)
    + [Importar e exportar metadados de ativos](metadata-import-export.md)
 + Compartilhar e distribuir ativos {#brand-portal}
-   + [Configurar o AEM Assets com o Brand Portal](configure-aem-assets-with-brand-portal.md)
-   + [Publicar ativos no Brand Portal](publish-to-brand-portal.md)
+   + [ [!DNL Assets] Configurar com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Publicar ativos em [!DNL Brand Portal]](publish-to-brand-portal.md)
 + Fragmentos de conteúdo {#content-fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
    + [Gerenciamento dos fragmentos de conteúdo](content-fragments/content-fragments-managing.md)
