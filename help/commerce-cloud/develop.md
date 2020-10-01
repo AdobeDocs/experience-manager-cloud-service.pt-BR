@@ -2,10 +2,10 @@
 title: Desenvolver o AEM Commerce para o AEM as a Cloud Service
 description: Desenvolver o AEM Commerce para o AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
+source-git-commit: 1c39ddefbeceb52e6a7adefe1d32d4cef164ef3b
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 95%
+source-wordcount: '962'
+ht-degree: 80%
 
 ---
 
@@ -80,6 +80,34 @@ Para o desenvolvimento local do complemento CIF usando o AEM as a Cloud Service,
    Essa variável também deve ser configurada para o ambiente do AEM as a Cloud Service.
 
 6. Inicie o SDK do AEM as a Cloud Service
+
+7. Start do servidor proxy GraphQL local
+
+   Para disponibilizar o ponto de extremidade Magento GraphQL localmente para o suplemento CIF e os componentes CIF, use o seguinte comando. O endpoint GraphQL estará disponível em `http://localhost:3002/graphql`.
+Exemplo para Mac OSX:
+
+   ```bash
+   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial ''
+   ```
+
+   Exemplo para Windows:
+
+   ```bash
+   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
+   ```
+   O argumento `--proxyPartial` precisa receber uma string vazia.
+
+   Você pode testar o proxy GraphQL local apontando uma ferramenta de query GraphQL para `http://localhost:3002/graphql` e testando alguns query.
+
+8. Faça logon no AEM SDK e configure o CIF para usar o servidor proxy GraphQL local
+
+   Navegue até a configuração CIF Cloud Service (Ferramentas > Cloud Services > Configuração CIF). Abra a visualização de propriedades da configuração usada pelo seu projeto.
+
+   Para a `GraphQL Proxy Path` propriedade, use o terminal do servidor proxy local `http://localhost:3002/graphql`. Salve a configuração.
+
+>[!NOTE]
+>
+>Não empurre a configuração da etapa 8 para o repo do projeto. Essa configuração só é necessária para uma configuração de desenvolvimento local. AEM como ambientes Cloud Service já estão configurados com o proxy GraphQL durante a integração.
 
 Verifique a configuração por meio do console OSGI: `http://localhost:4502/system/console/osgi-installer`. A lista deve incluir os pacotes relacionados ao complemento CIF, o pacote de conteúdo e as configurações OSGI, conforme definido no arquivo de modelo de recurso.
 
