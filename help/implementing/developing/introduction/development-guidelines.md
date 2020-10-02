@@ -2,7 +2,7 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
+source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -232,9 +232,9 @@ O serviço [OSGI do Serviço de Correio CQ de](https://docs.adobe.com/content/he
 
 AEM CS requer que o correio seja enviado pela porta 465. Se um servidor de correio não suportar a porta 465, a porta 587 poderá ser usada, desde que a opção TLS esteja ativada.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Observe que o Adobe não oferece suporte para o agrupamento SMTP em um endereço IP exclusivo.
+>Observe que o Adobe não oferece suporte para o agrupamento SMTP em um endereço IP exclusivo.
 
 ### Configuração {#email-configuration}
 
