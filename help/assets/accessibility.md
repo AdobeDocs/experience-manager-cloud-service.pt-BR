@@ -1,11 +1,11 @@
 ---
-title: Acessibilidade [!DNL Experience Manager Assets].
+title: Acessibilidade em [!DNL Experience Manager Assets]
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
+source-git-commit: a277d647e3ae95ab18cf13b76ceaaeef6d64cc26
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1841'
 ht-degree: 2%
 
 ---
@@ -43,11 +43,12 @@ Para acessar o relatório detalhando os níveis de conformidade, consulte a pág
 
 ## Tecnologias de assistência {#at-support}
 
-Os usuários portadores de deficiências dependem frequentemente de hardware e software para acessar conteúdo da Web. Essas ferramentas são conhecidas como tecnologias de assistência. [!DNL Adobe Experience Manager Assets] trabalhe com as seguintes tecnologias de assistência para permitir que os usuários usem as principais funcionalidades:
+Os usuários portadores de deficiências dependem frequentemente de hardware e software para acessar conteúdo da Web. Essas ferramentas são conhecidas como tecnologias de assistência. [!DNL Adobe Experience Manager Assets] trabalhe com os seguintes tipos de tecnologias de assistência para fornecer suporte aos usuários ao usar as principais funcionalidades do software:
 
 * Leitores de tela.
 * Software de reconhecimento de voz.
 * Uso do teclado - navegação e atalhos.
+* Hardware de assistência, incluindo controles de comutador, exibições em Braille atualizáveis e outros dispositivos de entrada de computador.
 * Ferramentas de aumento da interface do usuário.
 
 ## [!DNL Experience Manager Assets] casos de uso acessíveis {#accessible-assets-use-cases}
