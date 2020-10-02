@@ -2,10 +2,10 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
+source-git-commit: 90c3fd9a4293821568700148eb8d186b929988a1
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 2%
+source-wordcount: '2237'
+ht-degree: 1%
 
 ---
 
@@ -88,7 +88,7 @@ O conteúdo é replicado de Autor para Publicar por meio de um mecanismo de sub-
 
 Para desenvolvimento local, as entradas de registros são gravadas em arquivos locais na `/crx-quickstart/logs` pasta.
 
-Em ambientes da Cloud, os desenvolvedores podem baixar os logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+Nos ambientes da Cloud, os desenvolvedores podem baixar os logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **Configuração do nível de log**
 
@@ -184,6 +184,47 @@ Sem o recurso de endereço IP dedicado ativado, o tráfego que sai do AEM como u
 ### Configuração {#configuration}
 
 Para ativar um endereço IP dedicado, envie uma solicitação ao Suporte ao cliente, que fornecerá as informações do endereço IP. A solicitação deve especificar cada ambiente e solicitações adicionais devem ser feitas se novos ambientes precisarem do recurso após a solicitação inicial. Ambientes de programa Sandbox não são suportados.
+
+### Envio de email {#sending-email}
+
+AEM como Cloud Service requer que o correio externo seja criptografado. As seções abaixo descrevem como solicitar, configurar e enviar emails.
+
+**Solicitando acesso**
+
+Por padrão, o email de saída está desativado. Para ativá-lo, envie um ticket de suporte com:
+
+1. O nome de domínio totalmente qualificado para o servidor de email (por exemplo `smtp.sendgrid.net`)
+1. A porta a ser usada. Deve ser a porta 465 se for suportada pelo servidor de correio; caso contrário, a porta 587 Observe que a porta 587 só pode ser usada se o servidor de correio exigir e impor o TLS nessa porta
+1. A ID do programa e a ID do ambiente dos ambientes dos quais eles gostariam de enviar emails
+1. Se o acesso SMTP é necessário para o autor, publicação ou ambos.
+
+**Envio de emails**
+
+O serviço [OSGI do Serviço de Correio CQ de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) Dia deve ser usado e os e-mails devem ser enviados para o servidor de e-mail indicado na solicitação de suporte, em vez de diretamente para os recipient.
+
+AEM CS requer que o correio seja enviado pela porta 465. Se um servidor de correio não suportar a porta 465, a porta 587 poderá ser usada, desde que a opção TLS esteja ativada.
+
+> [!NOTE]
+>
+> Observe que o Adobe não oferece suporte para o agrupamento SMTP em um endereço IP exclusivo.
+
+**Configuração**
+
+Os emails no AEM devem ser enviados usando o serviço OSGi do [Day CQ Mail Service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+
+Consulte a documentação [](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) AEM 6.5 para obter detalhes sobre como configurar as configurações de e-mail. Para AEM CS, devem ser feitos os seguintes ajustes ao `com.day.cq.mailer.DefaultMailService OSGI` serviço:
+
+Se a porta 465 tiver sido solicitada:
+
+* definir `smtp.port` para `465`
+* definir `smtp.ssl` para `true`
+* definir `smtp.starttls` para `false`
+
+Se a porta 587 tiver sido solicitada (somente permitida se o servidor de email não suportar a porta 465):
+
+* definir `smtp.port` para `587`
+* definir `smtp.ssl` para `false`
+* definir `smtp.starttls` para `true`
 
 ### Uso de recursos {#feature-usage}
 
