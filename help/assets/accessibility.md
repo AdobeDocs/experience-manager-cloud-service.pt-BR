@@ -3,9 +3,9 @@ title: Acessibilidade em [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade [!DNL Adobe Experience Manager] ajudam os usuários portadores de deficiências.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
+source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 2%
 
 ---
@@ -175,7 +175,7 @@ Para operações de metadados que normalmente são feitas por funções como com
 
 ## Pesquisar ativos digitais {#search-assets}
 
-Uma experiência de pesquisa rápida e contínua de ativos aumenta a velocidade do conteúdo. Os casos de uso da velocidade de conteúdo são parte da [!DNL Assets] funcionalidade principal. Para start de uma pesquisa na barra Omnisearch, os usuários podem usar o atalho do teclado `/` ou usar `Tab` junto com os leitores de tela para localizar rapidamente a opção de pesquisa. O leitor de tela narrará o nome da opção como Botão [!UICONTROL de] pesquisa quando o foco estiver na opção ![de](assets/do-not-localize/search_icon.png)pesquisa de opção de pesquisa. Os usuários podem pressionar `Return` para abrir a caixa Omnisearch. O leitor de tela não apenas narra a palavra-chave digitada na caixa de pesquisa, como também narra as sugestões de preenchimento automático oferecidas pelo [!DNL Experience Manager Assets]. Os usuários podem usar uma combinação de teclas de seta `Return`e acessar `Tab` as várias opções para acionar uma pesquisa.
+Uma experiência de pesquisa rápida e contínua de ativos aumenta a velocidade do conteúdo. Os casos de uso da velocidade de conteúdo são parte da [!DNL Assets] funcionalidade principal. Para start de uma pesquisa na barra Omnisearch, os usuários podem usar o atalho do teclado `/` ou usar `Tab` junto com os leitores de tela para localizar rapidamente a opção de pesquisa. O leitor de tela narrará o nome da opção como Botão [!UICONTROL de] pesquisa quando o foco estiver na opção ![de](assets/do-not-localize/search_icon.png)pesquisa de opção de pesquisa. Os usuários podem pressionar `Return` para abrir a caixa Omnisearch. O leitor de tela não apenas narra a palavra-chave digitada na caixa de pesquisa, como também narra as sugestões oferecidas por [!DNL Experience Manager Assets]. Os usuários podem usar uma combinação de teclas de seta `Return`e acessar `Tab` as várias opções para acionar uma pesquisa.
 
 A funcionalidade de pesquisa fica mais acessível pela seguinte funcionalidade:
 
@@ -187,7 +187,7 @@ A funcionalidade de pesquisa fica mais acessível pela seguinte funcionalidade:
 
 Ao filtrar os resultados da pesquisa:
 
-* A página de resultados da pesquisa tem títulos informativos para melhor compreensão dos usuários de leitores de tela.
+* A página de resultados da pesquisa tem um título informativo para melhor compreensão dos usuários do leitor de tela.
 * Um leitor de tela anuncia as opções no filtro de pesquisa como acordeões expansíveis.
 * Os predicados com botões de estado misto são anunciados pelos leitores de tela.
 
@@ -203,8 +203,8 @@ Ao compartilhar ativos, as seguintes funcionalidades melhoram a acessibilidade:
 * Na caixa de diálogo de compartilhamento de links, ao navegar no modo de navegação, os leitores de tela,
 
    * Não narre as informações da tabela assim que a caixa de diálogo for carregada.
-   * Pode navegar até todas as sugestões automáticas listadas.
-   * Restrinja as sugestões automáticas exibidas para os campos Adicionar endereço de email e Pesquisar.
+   * Pode navegar até todas as sugestões listadas.
+   * Restrinja as sugestões exibidas para os campos Adicionar endereço de email e Pesquisar.
 
 ## Acessibilidade em [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
