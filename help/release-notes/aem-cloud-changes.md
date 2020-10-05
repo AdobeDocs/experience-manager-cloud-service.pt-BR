@@ -1,11 +1,11 @@
 ---
 title: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 description: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
-translation-type: ht
-source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
-workflow-type: ht
-source-wordcount: '861'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+workflow-type: tm+mt
+source-wordcount: '863'
+ht-degree: 96%
 
 ---
 
@@ -109,7 +109,7 @@ Para a transição de projetos do AMS ou de uma instalação local, a Adobe reco
 
 ## Manuseio e entrega de ativos {#asset-handling}
 
-O upload, tratamento e download de ativos foram otimizados no AEM Cloud Service para serem mais eficientes, permitindo melhor dimensionamento e uploads e downloads mais rápidos. No entanto, isso pode afetar alguns códigos personalizados existentes.
+O upload, o tratamento e o download de ativos foram otimizados no Assets como Cloud Service para serem mais eficientes, permitindo um melhor dimensionamento e downloads mais rápidos. No entanto, isso pode afetar alguns códigos personalizados existentes.
 
 * O fluxo de trabalho padrão **DAM Asset Update** nas versões anteriores do AEM não está mais disponível.
 * Os componentes do site que fornecem um binário **sem transformação** devem usar o download direto.
