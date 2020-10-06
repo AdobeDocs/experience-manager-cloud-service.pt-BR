@@ -2,10 +2,10 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: d0e63184d229e52b949d0f24660121e3417912be
+source-git-commit: 51e9a9a8c9d63583a5dc116f886d878d3f849687
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2828'
+ht-degree: 13%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Familiarize-se com o uso [básico do](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html)AEM Project Archetype e com o plug-in [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) FileVault Content Maven, já que este artigo se baseia nesses aprendizados e conceitos.
 
-Este artigo descreve as mudanças necessárias para que os projetos Adobe Experience Manager Maven sejam AEM compatíveis, garantindo que respeitem a divisão de conteúdos mutáveis e imutáveis. que sejam estabelecidas as dependências necessárias para criar implantações determinísticas e não conflitantes; E que eles são empacotados numa estrutura implantável.
+Este artigo descreve as mudanças necessárias para que os projetos do Adobe Experience Manager Maven sejam AEM como Cloud Service compatíveis, garantindo que eles respeitem a divisão de conteúdo mutável e imutável, as dependências são estabelecidas para criar implantações determinísticas e não conflitantes e que sejam compactadas em uma estrutura implantável.
 
 AEM implantações de aplicativos devem ser compostas por um único pacote AEM. Este pacote deve, por sua vez, conter subpacotes que contêm tudo o que o aplicativo exige para funcionar, incluindo código, configuração e qualquer conteúdo básico de suporte.
 
@@ -26,7 +26,7 @@ A estrutura do pacote descrita neste documento é compatível com **ambas** as i
 
 >[!TIP]
 >
->As configurações descritas neste documento são fornecidas pelo [AEM Project Maven Archetype 21 ou posterior](https://github.com/adobe/aem-project-archetype/releases).
+>As configurações descritas neste documento são fornecidas pelo [AEM Project Maven Archetype 24 ou posterior](https://github.com/adobe/aem-project-archetype/releases).
 
 ## Áreas mutáveis vs. imutáveis do repositório {#mutable-vs-immutable}
 
@@ -40,13 +40,13 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 ### Índices de Oak {#oak-indexes}
 
-Os índices Oak (`/oak:index`) são gerenciados especificamente pelo processo de implantação do AEM Cloud Service. Isso ocorre porque o Gerenciador de nuvem deve aguardar até que qualquer novo índice seja implantado e totalmente indexado novamente antes de alternar para a nova imagem de código.
+Os índices Oak (`/oak:index`) são gerenciados especificamente pelo AEM como um processo de implantação do Cloud Service. Isso ocorre porque o Gerenciador de nuvem deve aguardar até que qualquer novo índice seja implantado e completamente indexado novamente antes de alternar para a nova imagem de código.
 
-Por isso, embora os índices Oak sejam mutáveis em tempo de execução, eles devem ser implantados como código para que possam ser instalados antes que qualquer pacote mutável seja instalado. Portanto, `/oak:index` as configurações fazem parte do Pacote de código e não fazem parte do Pacote de conteúdo, [conforme descrito abaixo.](#recommended-package-structure)
+Por isso, embora os índices Oak sejam mutáveis em tempo de execução, eles devem ser implantados como código para que possam ser instalados antes que qualquer pacote mutável seja instalado. Portanto, `/oak:index` as configurações fazem parte do Pacote de código e não fazem parte do Pacote de conteúdo, [conforme descrito abaixo](#recommended-package-structure).
 
 >[!TIP]
 >
->Para obter mais detalhes sobre a indexação em AEM como Cloud Service, consulte a Pesquisa e indexação de [conteúdo do documento.](/help/operations/indexing.md)
+>Para obter mais detalhes sobre a indexação em AEM como Cloud Service, consulte a Pesquisa e indexação de [conteúdo do documento](/help/operations/indexing.md).
 
 ## Estrutura do pacote recomendada {#recommended-package-structure}
 
@@ -56,63 +56,89 @@ Este diagrama fornece uma visão geral da estrutura do projeto e dos artefatos d
 
 A estrutura de implantação do aplicativo recomendada é a seguinte:
 
-+ O `ui.apps` pacote, ou Pacote de código, contém todo o código a ser implantado e só é implantado `/apps`. Os elementos comuns do `ui.apps` pacote incluem, mas não se limitam a:
-   + Pacotes OSGi
-      + `/apps/my-app/install`
-   + [Configurações do OSGi](/help/implementing/deploying/configuring-osgi.md)
-      + `/apps/my-app/config`
-   + [Scripts HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
+### Pacotes de código / Pacotes OSGi
+
++ O arquivo Jar do pacote OSGi é gerado e incorporado diretamente no projeto inteiro.
+
++ O `ui.apps` pacote contém todo o código a ser implantado e só é implantado `/apps`. Os elementos comuns do `ui.apps` pacote incluem, mas não se limitam a:
+   + [Definições de componentes e scripts HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
    + JavaScript e CSS (por meio das bibliotecas do cliente)
       + `/apps/my-app/clientlibs`
-   + [Sobreposições](/help/implementing/developing/introduction/overlays.md) de /libs
+   + [Sobreposições](/help/implementing/developing/introduction/overlays.md) de `/libs`
       + `/apps/cq`, `/apps/dam/`, etc.
    + Configurações com reconhecimento de contexto de fallback
       + `/apps/settings`
    + ACLs (permissões)
       + Qualquer caminho `rep:policy` sob qualquer `/apps`
-   + Diretrizes de configuração do Repo Init OSGi (e scripts correspondentes)
-      + [Inicialização](#repo-init) do Repo é a maneira recomendada de implantar conteúdo (mutável) que logicamente faz parte do aplicativo AEM. Deve utilizar - se a opção de recompra para definir:
+
++ O `ui.config` pacote contém todas as configurações [](/help/implementing/deploying/configuring-osgi.md)OSGi:
+   + Pasta organizacional contendo definições de configuração OSGi específicas para modo de execução
+      + `/apps/my-app/osgiconfig`
+   + Pasta de configuração OSGi comum contendo configurações OSGi padrão que se aplicam a todos os AEM de público alvo
+      + `/apps/my-app/osgiconfig/config`
+   + Executar pastas de configuração OSGi específicas do modo que contêm configurações OSGi padrão que se aplicam a todos os AEM de público alvo
+      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
+   + Repo Init Scripts de configuração OSGi
+      + [Inicialização](#repo-init) do Repo é a maneira recomendada de implantar conteúdo (mutável) que logicamente faz parte do aplicativo AEM. As configurações de OSGi de inicialização do Repo devem estar localizadas na `config.<runmode>` pasta apropriada, conforme descrito acima, e ser usadas para definir:
          + Estruturas de conteúdo da linha de base
-            + `/conf/my-app`
-            + `/content/my-app`
-            + `/content/dam/my-app`
          + Usuários
          + Usuários do serviço
          + Grupos
          + ACLs (permissões)
-            + Qualquer `rep:policy` caminho (mutável ou imutável)
-+ O `ui.content` pacote, ou Pacote de conteúdo, contém todo o conteúdo e a configuração. O Pacote de conteúdo, contém tudo que não está no `ui.apps` pacote, ou em outras palavras, nada que não esteja no `/apps` ou `/oak:index`. Os elementos comuns do `ui.content` pacote incluem, mas não se limitam a:
+
+### Pacotes de conteúdo
+
++ O `ui.content` pacote contém todo o conteúdo e a configuração. O Pacote de conteúdo contém todas as definições de nó que não estão nos pacotes `ui.apps` ou `ui.config` ou, em outras palavras, nada que não esteja em `/apps` ou `/oak:index`. Os elementos comuns do `ui.content` pacote incluem, mas não se limitam a:
    + Configurações sensíveis ao contexto
       + `/conf`
-   + Estruturas de conteúdo necessárias e complexas (ou seja, Compilação de conteúdo que é criada e estende além das estruturas de conteúdo da Linha de base definidas no Repo Init.
+   + Estruturas de conteúdo necessárias e complexas (ou seja, Compilação de conteúdo que é criada e estende além das estruturas de conteúdo da Linha de base definidas no Repo Init.)
       + `/content`, `/content/dam`, etc.
    + Taxonomias de marcação controladas
       + `/content/cq:tags`
-   + Etc. nós herdados
+   + Nós herdados etc (idealmente, migre-os para locais diferentes/etc)
       + `/etc`
-+ O pacote `all` é um pacote de contêiner que APENAS inclui os pacotes `ui.apps` e `ui.content` como incorporados. O pacote `all` não deve ter **nenhum conteúdo** próprio, mas deve delegar toda a implantação no repositório em seus pacotes secundários.
+
+### Pacotes de container
+
++ O `all` pacote é um pacote de container que APENAS inclui artefatos implantáveis, o arquivo de Jar de pacote OSGI `ui.apps`e os pacotes como `ui.config` `ui.content` incorporados. The `all` package must not have **any content or code** of its own, but rather delegate all deployment to the repository to its sub-packages or OSGi bundle Jar files.
 
    Os pacotes agora são incluídos usando a configuração [incorporada do plug-in Maven](#embeddeds)FileVault Package Maven, em vez da `<subPackages>` configuração.
 
-   Para implantações complexas de Experience Manager, pode ser desejável criar vários projetos `ui.apps` e `ui.content` pacotes que representem sites ou locatários específicos no AEM. Se isso for feito, verifique se a divisão entre conteúdo mutável e imutável é respeitada e se os pacotes de conteúdo necessários são adicionados como subpacotes no pacote de conteúdo do `all` container.
+   Para implantações complexas de Experience Manager, pode ser desejável criar vários projetos `ui.apps`, `ui.config` e `ui.content` pacotes que representem sites ou locatários específicos no AEM. Se isso for feito, verifique se a divisão entre conteúdo mutável e imutável é respeitada e se os pacotes de conteúdo e arquivos Jar de pacote OSGi são incorporados como subpacotes no pacote de conteúdo do `all` container.
 
    Por exemplo, uma estrutura complexa de pacote de conteúdo de implantação pode ter a seguinte aparência:
 
    + `all` o pacote de conteúdo incorpora os seguintes pacotes para criar um artefato de implantação singular
-      + `ui.apps.common` implanta o código necessário para **ambos** os locais A e B
-      + `ui.apps.site-a` implanta o código exigido pelo site A
-         + `core.site-a` Jar de pacote OSGi incorporado em `ui.apps.site-a`
-      + `ui.content.site-a` implanta o conteúdo e a configuração necessários para o site A
-      + `ui.apps.site-b` implanta o código exigido pelo site B
-         + `core.site-b` Jar de pacote OSGi incorporado em `ui.apps.site-b`
-      + `ui.content.site-b` implanta o conteúdo e a configuração necessários para o site B
+      + `common.ui.apps` implanta o código necessário para **ambos** os locais A e B
+      + `site-a.core` Jar de pacote OSGi exigido pelo site A
+      + `site-a.ui.apps` implanta o código exigido pelo site A
+      + `site-a.ui.config` implanta configurações OSGi exigidas pelo Site A
+      + `site-a.ui.content` implanta o conteúdo e a configuração necessários para o site A
+      + `site-b.core` Jar de pacote OSGi exigido pelo site B
+      + `site-b.ui.apps` implanta o código exigido pelo site B
+      + `site-b.ui.config` implanta configurações OSGi exigidas pelo site B
+      + `site-b.ui.content` implanta o conteúdo e a configuração necessários para o site B
+
+### Pacotes de aplicativos extras{#extra-application-packages}
+
+Se outros projetos AEM, que são eles mesmos compostos de seus próprios pacotes de código e conteúdo, forem usados pela implantação AEM, seus pacotes de container deverão ser incorporados no `all` pacote do projeto.
+
+Por exemplo, um projeto AEM que inclui dois aplicativos AEM de fornecedor pode ter a seguinte aparência:
+
++ `all` o pacote de conteúdo incorpora os seguintes pacotes para criar um artefato de implantação singular
+   + `core` Jar de pacote OSGi exigido pelo aplicativo AEM
+   + `ui.apps` implanta o código exigido pelo aplicativo AEM
+   + `ui.config` implanta configurações OSGi exigidas pelo aplicativo AEM
+   + `ui.content` implanta o conteúdo e a configuração necessários para o aplicativo AEM
+   + `vendor-x.all` implanta tudo (código e conteúdo) exigido pelo aplicativo X do fornecedor
+   + `vendor-y.all` implanta tudo (código e conteúdo) exigido pelo aplicativo Y do fornecedor
 
 ## Tipos de encapsulamento {#package-types}
 
 As embalagens devem ser marcadas com o tipo de embalagem declarado.
 
-+ Os pacotes de container não devem ter um `packageType` conjunto.
++ Os pacotes de container devem definir `packageType` como `container`.
 + Os pacotes de código (imutáveis) devem definir seus `packageType` como `application`.
 + Os pacotes de conteúdo (mutável) devem definir `packageType` como `content`.
 
@@ -136,16 +162,17 @@ A Inicialização do Repo fornece instruções, ou scripts, que definem estrutur
 
 Os principais benefícios do Repo Init são ter permissões implícitas para executar todas as ações definidas pelos scripts e serem chamadas no início do ciclo de vida da implantação, garantindo que todas as estruturas JCR necessárias existam até que o código seja executado.
 
-Embora o Repo Init faça scripts em tempo real no `ui.apps` projeto como scripts, eles podem e devem ser usados para definir as seguintes estruturas mutáveis:
+Embora o Repo Init faça scripts em tempo real no `ui.config` projeto como scripts, eles podem e devem ser usados para definir as seguintes estruturas mutáveis:
 
 + Estruturas de conteúdo da linha de base
-   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
 + Usuários do serviço
 + Usuários
 + Grupos
 + ACLs
 
-Os scripts de Inicialização de Repo são armazenados como entradas de configurações de fábrica do `scripts` `RepositoryInitializer` OSGi e, portanto, podem ser implicitamente direcionados pelo modo de execução, permitindo diferenças entre os scripts de Inicialização de Repo do autor do AEM e dos Serviços de publicação do AEM, ou mesmo entre Envs (Dev, Stage e Prod).
+Os scripts de Inicialização de Acordos são armazenados como entradas de configurações de fábrica `scripts` `RepositoryInitializer` OSGi e, portanto, podem ser implicitamente direcionados pelo modo de execução, permitindo diferenças entre os scripts de Inicialização de Acordos de AEM Author e AEM Publish Services, ou mesmo entre ambientes (Dev, Stage e Prod).
+
+As configurações de OSGi de inicialização de acordo com o acordo de recompra são escritas melhor no formato [`.config` de configuração OSGi, pois oferecem suporte a várias linhas, o que é uma exceção às práticas recomendadas de uso](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) para definir configurações [`.cfg.json`](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)de OSGi.
 
 Observe que, ao definir Usuários e Grupos, somente grupos são considerados parte do aplicativo e integrantes de sua função devem ser definidos aqui. Os utilizadores e grupos da organização devem ainda ser definidos em tempo de execução no AEM; por exemplo, se um fluxo de trabalho personalizado atribuir trabalho a um Grupo nomeado, esse Grupo deverá ser definido por meio da Inicialização de Repo no aplicativo AEM, no entanto, se o Agrupamento for meramente organizacional, como &quot;Equipe de Wendy&quot; e &quot;Equipe de Sean&quot;, eles serão melhor definidos e gerenciados no tempo de execução em AEM.
 
@@ -187,7 +214,7 @@ Os casos de uso frequentes incluem:
 
 Para criar AEM público alvo, AEM publicar ou ambos, o pacote é incorporado no pacote do `all` container em um local de pasta especial, no seguinte formato:
 
-`/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
+`/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
 Detalhando a estrutura desta pasta:
 
@@ -202,9 +229,11 @@ Detalhando a estrutura desta pasta:
    >Por convenção, as pastas incorporadas do pacote secundário são nomeadas com o sufixo `-packages`. Isso garante que o código de implantação e os pacotes de conteúdo **não** sejam implantados nas pastas de destino de qualquer pacote secundário `/apps/<app-name>/...` que resulte em comportamento de instalação destrutivo e cíclico.
 
 + A pasta de terceiro nível deve ser
-   `application` ou `content`
+   `application`, `content` ou `container`
    + A `application` pasta contém pacotes de códigos
-   + A `content` pasta contém pacotes de conteúdo. Esse nome de pasta deve corresponder aos tipos [de](#package-types) pacote dos pacotes que contém.
+   + A `content` pasta contém pacotes de conteúdo
+   + A `container` pasta contém todos os pacotes [de aplicativos](#extra-application-packages) extras que podem ser incluídos pelo aplicativo AEM.
+Esse nome de pasta corresponde aos tipos [de](#package-types) pacote dos pacotes que ele contém.
 + A pasta de 4º nível contém os pacotes secundários e deve ser uma das seguintes:
    + `install` para instalar no autor do AEM **e** na publicação do AEM
    + `install.author` para instalar **somente** no autor do AEM
@@ -238,7 +267,9 @@ Todos os pacotes devem estar disponíveis por meio do repositório [](https://re
 
 Se os pacotes de terceiros estiverem no **repositório público de artefatos Maven da Adobe**, nenhuma configuração adicional será necessária para o Adobe Cloud Manager resolver os artefatos.
 
-Se os pacotes de terceiros estiverem em um **repositório de artefatos Maven de terceiros público**, esse repositório deverá ser registrado no `pom.xml` do projeto e incorporado de acordo com o método [descrito acima](#embeddeds). Se o aplicativo/conector de terceiros exigir pacotes de código e conteúdo, cada um deles deve ser incorporado aos locais corretos no pacote do contêiner (`all`).
+Se os pacotes de terceiros estiverem em um **repositório de artefatos Maven de terceiros público**, esse repositório deverá ser registrado no `pom.xml` do projeto e incorporado de acordo com o método [descrito acima](#embeddeds).
+
+Aplicativos/conectores de terceiros devem ser incorporados usando seu `all` pacote como um container no pacote de container (`all`) do seu projeto.
 
 A adição de dependências Maven segue as práticas padrão de Maven e a incorporação de artefatos de terceiros (pacotes de código e conteúdo) são [descritas acima](#embedding-3rd-party-packages).
 
@@ -273,11 +304,11 @@ O caso simples define o pacote de conteúdo `ui.content` mutável para depender 
 Implantações complexas se expandem no caso simples e definem dependências entre o conteúdo mutável correspondente e os pacotes de código imutáveis. Conforme necessário, as dependências também podem ser estabelecidas entre pacotes de código imutáveis.
 
 + `all` não possui dependências
-   + `ui.apps.common` não possui dependências
-   + `ui.apps.site-a` depende de `ui.apps.common`
-   + `ui.content.site-a` depende de `ui.apps.site-a`
-   + `ui.apps.site-b` depende de `ui.apps.common`
-   + `ui.content.site-b` depende de `ui.apps.site-b`
+   + `common.ui.apps.common` não possui dependências
+   + `site-a.ui.apps` depende de `common.ui.apps`
+   + `site-a.ui.content` depende de `site-a.ui.apps`
+   + `site-b.ui.apps` depende de `common.ui.apps`
+   + `site-b.ui.content` depende de `site-b.ui.apps`
 
 ## Desenvolvimento local e implantação {#local-development-and-deployment}
 
@@ -311,7 +342,7 @@ Na `ui.apps/pom.xml`, as diretivas de configuração de `<packageType>applicatio
       <extensions>true</extensions>
       <configuration>
         <group>${project.groupId}</group>
-        <name>${my-app.ui.apps}</name>
+        <name>my-app.ui.apps</name>
         <packageType>application</packageType>
         <accessControlHandling>merge</accessControlHandling>
         <properties>
@@ -338,7 +369,7 @@ Na `ui.content/pom.xml`, a diretiva de configuração de `<packageType>content</
       <extensions>true</extensions>
       <configuration>
         <group>${project.groupId}</group>
-        <name>${my-app.ui.content}</name>
+        <name>my-app.ui.content</name>
         <packageType>content</packageType>
         <accessControlHandling>merge</accessControlHandling>
         <properties>
@@ -375,7 +406,7 @@ Em todos os projetos que geram um pacote, **exceto** do projeto do contêiner (`
 
 Os scripts de Inicialização do Repo que contêm os scripts de Inicialização do Repo são definidos na configuração de fábrica `RepositoryInitializer` OSGi por meio da `scripts` propriedade. Observe que, como esses scripts são definidos em configurações OSGi, eles podem ser facilmente escopo por modo de execução usando a semântica de `../config.<runmode>` pasta comum.
 
-Observe que, como os scripts normalmente são declarações de várias linhas, é mais fácil defini-los no `.config` arquivo do que no formato de bases XML `sling:OsgiConfig` .
+Observe que, como os scripts normalmente são declarações de várias linhas, é mais fácil defini-los no `.config` arquivo do que no `.cfg.json` formato baseado em JSON.
 
 `/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
 
@@ -421,7 +452,7 @@ No `ui.apps/pom.xml` e em qualquer outra `pom.xml` que declare um pacote de cód
 
 ### Incorporação de subpacotes no pacote de Container {#xml-embeddeds}
 
-Na `all/pom.xml`, adicione as seguintes `<embeddeds>` diretivas à declaração de `filevault-package-maven-plugin` plug-in. Lembre-se de **não** usar a `<subPackages>` configuração, pois isso incluirá os subpacotes em `/etc/packages` vez de `/apps/my-app-packages/<application|content>/install(.author|.publish)?`.
+Na `all/pom.xml`, adicione as seguintes `<embeddeds>` diretivas à declaração de `filevault-package-maven-plugin` plug-in. Lembre-se de **não** usar a `<subPackages>` configuração, pois isso incluirá os subpacotes em `/etc/packages` vez de `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
 
 ```xml
 ...
@@ -436,10 +467,26 @@ Na `all/pom.xml`, adicione as seguintes `<embeddeds>` diretivas à declaração 
           <!-- Include the application's ui.apps and ui.content packages -->
           <!-- Ensure the artifactIds are correct -->
 
+          <!-- OSGi Bundle Jar file that deploys to BOTH AEM Author and AEM Publish -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.core</artifactId>
+              <type>jar</type>
+              <target>/apps/my-app-packages/application/install</target>
+          </embedded>
+
           <!-- Code package that deploys to BOTH AEM Author and AEM Publish -->
           <embedded>
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.apps</artifactId>
+              <type>zip</type>
+              <target>/apps/my-app-packages/application/install</target>
+          </embedded>
+
+           <!-- OSGi configuration code package that deploys to BOTH AEM Author and AEM Publish -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.ui.config</artifactId>
               <type>zip</type>
               <target>/apps/my-app-packages/application/install</target>
           </embedded>
@@ -468,21 +515,12 @@ Na `all/pom.xml`, adicione as seguintes `<embeddeds>` diretivas à declaração 
               <target>/apps/my-app-packages/content/install.publish</target>
           </embedded>
 
-          <!-- Include any other extra packages such as AEM WCM Core Components -->
+          <!-- Include any other extra packages  -->
           <embedded>
-              <groupId>com.adobe.cq</groupId>
-              <!-- Not to be confused; WCM Core Components' Code package's artifact is named `.content` -->
-              <artifactId>core.wcm.components.content</artifactId>
+              <groupId>com.vendor.x</groupId>
+              <artifactId>vendor.plug-in.all</artifactId>
               <type>zip</type>
-              <target>/apps/vendor-packages/application/install</target>
-          </embedded>
-
-          <embedded>
-              <groupId>com.adobe.cq</groupId>
-              <!-- Not to be confused; WCM Core Components' Content package's artifact is named `.conf` -->
-              <artifactId>core.wcm.components.conf</artifactId>
-              <type>zip</type>
-              <target>/apps/vendor-packages/content/install</target>
+              <target>/apps/vendor-packages/container/install</target>
           </embedded>
       <embeddeds>
   </configuration>
