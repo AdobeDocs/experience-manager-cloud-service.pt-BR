@@ -1,16 +1,16 @@
 ---
-title: Registro
+title: Logs
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
+source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2219'
 ht-degree: 3%
 
 ---
 
 
-# Registro {#logging}
+# Logs {#logging}
 
 AEM como um Cloud Service é uma plataforma para os clientes incluírem código personalizado para criar experiências exclusivas para sua base de clientes. Com isso em mente, o registro em log é uma função essencial para depurar e entender a execução do código no desenvolvimento local, e ambientes em nuvem, especialmente o AEM como ambientes Cloud Service Dev.
 
@@ -25,7 +25,7 @@ O registro no nível do aplicativo AEM é realizado por três registros:
 
 1. AEM registros Java, que renderizam declarações de registro Java para o aplicativo AEM.
 1. Registros de solicitação HTTP, que registram informações sobre solicitações HTTP e suas respostas fornecidas por AEM
-1. Registros de acesso HTTP, que registram informações resumidas e solicitações HTTP fornecidas por AEM
+1. Registros de acesso HTTP, que registram informações resumidas e solicitações HTTP enviadas por AEM
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ AEM como um Cloud Service fornece acesso às instruções do log Java Os desenvo
 <table>
 <tr>
 <td>
-<b>Ambiente AEM</b></td>
+<b>ambiente AEM</b></td>
 <td>
 <b>Nível de registro</b></td>
 <td>
@@ -413,7 +413,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <td>17 de julho de 2020:16:42.608913 2020</td>
 </tr>
 <tr>
-<td>Nível do Evento</td>
+<td>Nível do evento</td>
 <td>[mpm_worker:notice]</td>
 </tr>
 <tr>
@@ -509,13 +509,13 @@ Define REWRITE_LOG_LEVEL Debug
 </tbody>
 </table>
 
-### Configuração do registro de erros da Dispatcher {#configuring-the-dispatcher-error-log}
+### Configurando o log de erros do Dispatcher {#configuring-the-dispatcher-error-log}
 
 Os níveis de log do dispatcher são definidos pela variável DISP_LOG_LEVEL no arquivo `conf.d/variables/global.var`.
 
 Ele pode ser definido como Erro, Aviso, Informações, Depuração e Trace1, com um valor padrão de Aviso.
 
-Embora o registro em log da Dispatcher suporte vários outros níveis de granularidade de registro em log, o AEM como Cloud Service recomenda o uso dos níveis descritos abaixo.
+Embora o registro do Dispatcher suporte vários outros níveis de granularidade de registro, o AEM como Cloud Service recomenda o uso dos níveis descritos abaixo.
 
 Para definir o nível de log por ambiente, use a ramificação condicional apropriada no `global.var` arquivo, conforme descrito abaixo:
 
@@ -550,7 +550,7 @@ AEM logs estão localizados na pasta `crx-quickstart/logs`, onde os seguintes lo
 * AEM registro de solicitação HTTP: `request.log`
 * Log de acesso HTTP AEM: `access.log`
 
-Os registros de camada do Apache, incluindo o dispatcher, estão no container Docker que contém o Dispatcher. Consulte a documentação [da](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher para obter informações sobre como start o Dispatcher.
+Os registros de camada do Apache, incluindo o dispatcher, estão no container Docker que contém o Dispatcher. Consulte a documentação [do](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher para obter informações sobre como start o Dispatcher.
 
 Para recuperar os logs:
 
@@ -571,7 +571,7 @@ Os registros também são impressos diretamente na saída do terminal. Na maiori
 
 Em circunstâncias excepcionais, os níveis de log precisam ser alterados para registrar uma granularidade mais fina em ambientes de estágio ou produção.
 
-Embora isso seja possível, requer alterações nos níveis de log nos arquivos de configuração no Git de Aviso e Erro para Depuração, e uma implantação para AEM como Cloud Service para registrar essas alterações de configuração nos ambientes.
+Embora isso seja possível, requer alterações nos níveis de log nos arquivos de configuração no Git de Aviso e Erro para Depuração e uma implantação para AEM como Cloud Service para registrar essas alterações de configuração nos ambientes.
 
 Dependendo do tráfego e da quantidade de declarações de log gravadas pela Depuração, isso pode resultar em um impacto negativo no desempenho do ambiente, portanto, recomenda-se que as alterações nos níveis de depuração de Stage e Production sejam:
 
@@ -588,7 +588,7 @@ A largura de banda de rede associada aos logs enviados ao Splunk é considerada 
 
 Na solicitação de suporte, os clientes devem indicar:
 
-* O host Splunk
+* Endereço de ponto de extremidade HEC de divisão
 * O índice Splunk
 * A porta Splunk
 * O token Splunk HEC. Consulte [esta página](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) para obter mais informações.
@@ -603,26 +603,26 @@ Abaixo você encontrará um exemplo de solicitação de suporte ao cliente:
 
 Programa 123, Production Env
 
-* Host dividido: `splunk-hec-ext.acme.com`
+* Endereço do ponto de extremidade HEC de divisão: `splunk-hec-ext.acme.com`
 * Índice de partes divididas: acme_123prod (o cliente pode escolher qualquer convenção de nomenclatura que desejar)
 * Porta dividida: 443
 * Token HEC do bloco: ABC123
 
 Programa 123, Stage Env
 
-* Host dividido: `splunk-hec-ext.acme.com`
+* Endereço do ponto de extremidade HEC de divisão: `splunk-hec-ext.acme.com`
 * Índice de partes divididas: acme_123stage
 * Porta dividida: 443
 * Token HEC do bloco: ABC123
 
-Programa 123, Envs. Desenvolvedores
+Programa 123, Envs. Desenvolvedor
 
-* Host dividido: `splunk-hec-ext.acme.com`
+* Endereço do ponto de extremidade HEC de divisão: `splunk-hec-ext.acme.com`
 * Índice de partes divididas: acme_123dev
 * Porta dividida: 443
 * Token HEC do bloco: ABC123
 
-Pode ser suficiente para que o mesmo índice Splunk seja usado para cada ambiente, nesse caso, o `aem_env_type` campo pode ser usado para diferenciar com base nos valores dev, stage e prod. Se houver vários ambientes dev, o `aem_env_id` campo também poderá ser usado. Algumas organizações podem escolher um índice separado para os registros de ambientes de produção se o índice associado limitar o acesso a um conjunto reduzido de usuários do Splunk.
+Pode ser suficiente que o mesmo índice Splunk seja usado para cada ambiente, caso em que o `aem_env_type` campo pode ser usado para diferenciar com base nos valores dev, stage e prod. Se houver vários ambientes dev, o `aem_env_id` campo também poderá ser usado. Algumas organizações podem escolher um índice separado para os registros de ambientes de produção se o índice associado limitar o acesso a um conjunto reduzido de usuários do Splunk.
 
 Esta é uma entrada de registro de exemplo:
 
