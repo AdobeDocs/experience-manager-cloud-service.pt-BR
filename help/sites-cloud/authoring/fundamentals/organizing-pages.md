@@ -2,7 +2,7 @@
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 98%
@@ -363,7 +363,6 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 >[!NOTE]
 >
 >Uma página só pode ser movida para um local onde o modelo no qual a página se baseia está permitido. See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
--->
 
 #### Ações assíncronas {#asynchronous-actions}
 
