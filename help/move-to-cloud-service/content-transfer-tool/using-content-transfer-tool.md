@@ -2,7 +2,7 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 79%
@@ -140,8 +140,10 @@ Quando o processo de extração estiver concluído, você poderá transferir o c
 1. Navegue até a página *Visão geral* e selecione o conjunto de migração para o qual você deseja realizar a extração complementar. Clique em **Extrair** para iniciar a extração complementar. A caixa de diálogo **Extração do conjunto de migração** é exibida.
 
    >[!IMPORTANT]
+   >
    >Você deve desativar a opção **Substituir containercontêiner de preparação durante a extração**.
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+   >
+   >![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### Processo de assimilação na transferência de conteúdo {#ingestion-process}
 
@@ -151,17 +153,16 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-
 1. Quando a ingestão estiver completa, o status no campo **PUBLISH INGESTION** é atualizado para **FINISHED**.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
-
 
 #### Ingestão complementar {#top-up-ingestion-process}
 
 A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a *atualizações complementares* de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior.
 
 >[!NOTE]
+>
 >Após a transferência inicial do conteúdo, é recomendável fazer atualizações complementares frequentes de conteúdo diferencial para reduzir o período de congelamento de conteúdo para a transferência final de conteúdo diferencial antes de entrar online no Cloud Service.
 
 Quando o processo de assimilação estiver concluído, você poderá usar o conteúdo delta por meio do método de ingestão complementar. Siga as etapas abaixo:
@@ -169,8 +170,10 @@ Quando o processo de assimilação estiver concluído, você poderá usar o cont
 1. Navegue até a página *Visão geral* e selecione o conjunto de migração para o qual você deseja realizar a assimilação complementar. Clique em **Assimilar** para iniciar a extração complementar. A caixa de diálogo **Assimilação do conjunto de migração** é exibida.
 
    >[!IMPORTANT]
+   >
    >Você deve desativar a opção **Limpar o conteúdo existente na instância do Cloud antes da ingestão** , para evitar que o conteúdo existente seja excluído da atividade de ingestão anterior.
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+   >
+   >![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### Visualização de logs para um conjunto de migração {#viewing-logs-migration-set}
 
