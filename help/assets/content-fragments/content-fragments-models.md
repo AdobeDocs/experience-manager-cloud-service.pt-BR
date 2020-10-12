@@ -93,12 +93,13 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
    ![propriedades do campo](assets/cfm-models-05.png)
 
    >[!NOTE]
-   No tipo de dados **Texto de várias linhas**, é possível definir o **Tipo padrão** como:
-   * **Texto formatado**
-   * **Markdown**
-   * **Texto sem formatação**
-   Se não for especificado, o valor padrão **Rich Text** será usado para esse campo.
-   Alterar o **Tipo padrão** em um modelo de fragmento de conteúdo só terá efeito em um fragmento de conteúdo existente relacionado depois que esse fragmento for aberto no editor e salvo.
+   >
+   >No tipo de dados **Texto de várias linhas**, é possível definir o **Tipo padrão** como:
+   >* **Texto formatado**
+   >* **Markdown**
+   >* **Texto sem formatação**
+   >Se não for especificado, o valor padrão **Rich Text** será usado para esse campo.
+   >Alterar o **Tipo padrão** em um modelo de fragmento de conteúdo só terá efeito em um fragmento de conteúdo existente relacionado depois que esse fragmento for aberto no editor e salvo.
 
 1. **Como remover um campo**
 
@@ -113,7 +114,8 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 ## Excluindo um modelo de fragmento de conteúdo {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
-A exclusão de um modelo de fragmento de conteúdo pode afetar fragmentos dependentes.
+>
+>A exclusão de um modelo de fragmento de conteúdo pode afetar fragmentos dependentes.
 
 Para excluir um modelo de fragmento de conteúdo:
 
@@ -123,7 +125,8 @@ Para excluir um modelo de fragmento de conteúdo:
 1. Selecione seu modelo, seguido por **Excluir** na barra de ferramentas.
 
    >[!NOTE]
-   Se o modelo for referenciado, um aviso será dado. Agir adequadamente.
+   >
+   >Se o modelo for referenciado, um aviso será dado. Agir adequadamente.
 
 ## Publicar um modelo de fragmento de conteúdo {#publishing-a-content-fragment-model}
 
@@ -137,4 +140,5 @@ Para publicar um modelo de fragmento de conteúdo:
 1. Selecione seu modelo, seguido por **Publicar** na barra de ferramentas.
 
    >[!NOTE]
-   Se você publicar um fragmento de conteúdo para o qual o modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
+   >
+   >Se você publicar um fragmento de conteúdo para o qual o modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.

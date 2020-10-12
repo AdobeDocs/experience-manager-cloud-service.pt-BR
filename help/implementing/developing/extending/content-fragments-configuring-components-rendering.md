@@ -26,15 +26,13 @@ Essas informações são necessárias quando:
 >[!CAUTION]
 >
 >* **Se não precisar dos serviços[](#definition-of-advanced-services-that-need-configuration)**avançados descritos abaixo, ignore essa configuração.
-   >
-   >
-* **Ao estender ou usar os componentes prontos para uso**, não é recomendável alterar a configuração do OSGi.
-   >
-   >
-* **Você pode gravar um componente do zero que usa somente a API Fragmentos de conteúdo, sem serviços** avançados. No entanto, nesse caso, você terá que desenvolver seu componente para que ele lide com o processamento apropriado.
+>
+>* **Ao estender ou usar os componentes prontos para uso**, não é recomendável alterar a configuração do OSGi.
+>
+>* **Você pode gravar um componente do zero que usa somente a API Fragmentos de conteúdo, sem serviços** avançados. No entanto, nesse caso, você terá que desenvolver seu componente para que ele lide com o processamento apropriado.
 >
 >
-Portanto, é recomendável usar os Componentes principais.
+>Portanto, é recomendável usar os Componentes principais.
 
 ## Definição de serviços avançados que precisam de configuração {#definition-of-advanced-services-that-need-configuration}
 

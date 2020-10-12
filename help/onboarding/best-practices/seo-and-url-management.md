@@ -364,8 +364,8 @@ Para gerar um mapa de site programaticamente, registre uma escuta Sling Servlet 
 >
 >Registre um Sling Servlet para ouvir o seletor `sitemap` com a extensão `xml`. Isso fará com que o servlet processe a solicitação sempre que um URL for solicitado e terminar em:
 >    `/<path-to>/page.sitemap.xml`
-Obtenha o recurso solicitado da solicitação e gere um mapa de site a partir desse ponto na árvore de conteúdo usando as APIs JCR.
-O benefício desse tipo de abordagem é quando você tem vários sites sendo distribuídos a partir da mesma instância. Uma solicitação de `/content/siteA.sitemap.xml` geraria um mapa de site do `siteA`, enquanto uma solicitação de `/content/siteB.sitemap.xml` geraria um mapa de site do `siteB` sem a necessidade de gravar o código adicional.
+>Obtenha o recurso solicitado da solicitação e gere um mapa de site a partir desse ponto na árvore de conteúdo usando as APIs JCR.
+>O benefício desse tipo de abordagem é quando você tem vários sites sendo distribuídos a partir da mesma instância. Uma solicitação de `/content/siteA.sitemap.xml` geraria um mapa de site do `siteA`, enquanto uma solicitação de `/content/siteB.sitemap.xml` geraria um mapa de site do `siteB` sem a necessidade de gravar o código adicional.
 
 ### Criar redirecionamentos 301 para URLs herdados {#creating-redirects-for-legacy-urls}
 

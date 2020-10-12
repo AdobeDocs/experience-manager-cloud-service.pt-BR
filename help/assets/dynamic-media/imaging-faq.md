@@ -146,7 +146,8 @@ Você deve iniciar a solicitação para usar a geração inteligente de imagens;
 As solicitações são processadas na ordem em que são recebidas pelo Suporte Técnico, de acordo com a Lista de Espera.
 
 >[!NOTE]
-Pode ser que haja um longo lead time, pois a habilitação da Imagem inteligente envolve a limpeza do cache pela Adobe. Portanto, apenas algumas transições de clientes podem ser tratadas a qualquer momento.
+>
+>Pode ser que haja um longo lead time, pois a habilitação da Imagem inteligente envolve a limpeza do cache pela Adobe. Portanto, apenas algumas transições de clientes podem ser tratadas a qualquer momento.
 
 ## Quais são os riscos com a alternância para usar o Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -168,7 +169,8 @@ Durante a transição inicial, as imagens não armazenadas em cache acessam dire
 1. Repita esse teste em navegadores e condições de usuário diferentes.
 
 >[!NOTE]
-Nem todas as imagens são convertidas. O Smart Imaging decide se a conversão é necessária para melhorar o desempenho. Em alguns casos, quando não há ganho de desempenho esperado ou o formato não é JPEG ou PNG, a imagem não é convertida.
+>
+>Nem todas as imagens são convertidas. O Smart Imaging decide se a conversão é necessária para melhorar o desempenho. Em alguns casos, quando não há ganho de desempenho esperado ou o formato não é JPEG ou PNG, a imagem não é convertida.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 

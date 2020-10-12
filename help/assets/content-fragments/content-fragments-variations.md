@@ -182,12 +182,13 @@ O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
-O inglês está disponível prontamente.
-Outros idiomas estão disponíveis como Pacotes de modelo de idioma no Compartilhamento de pacotes:
-* [Francês (França)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Alemão (Alemanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italiano (Itália)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Espanhol (Espanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
+>O inglês está disponível prontamente.
+>Outros idiomas estão disponíveis como Pacotes de modelo de idioma no Compartilhamento de pacotes:
+>* [Francês (França)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Alemão (Alemanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (Itália)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espanhol (Espanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
 
@@ -229,7 +230,8 @@ Anotações:
 * São indicados pelo realce do texto, em tela cheia e no modo normal do editor. Os detalhes completos de uma anotação podem ser exibidos, editados e/ou excluídos clicando-se no texto realçado, que reabrirá a caixa de diálogo.
 
    >[!NOTE]
-   Um seletor suspenso é fornecido se várias anotações tiverem sido aplicadas a uma parte do texto.
+   >
+   >Um seletor suspenso é fornecido se várias anotações tiverem sido aplicadas a uma parte do texto.
 
 * Quando você exclui o texto inteiro ao qual a anotação foi aplicada, a anotação também é excluída.
 
@@ -246,11 +248,13 @@ Para facilitar o processo de criação de fragmentos de conteúdo, é possível 
 Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer formatação; a formatação pode ser feita quando o [fragmento é usado/referenciado em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
-Esses ativos não podem ser movidos ou excluídos em uma página de referência, isso deve ser feito no editor de fragmentos.
-No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita no editor [de](/help/sites-cloud/authoring/fundamentals/content-fragments.md)páginas. A representação do ativo no editor de fragmentos é apenas para a criação do fluxo de conteúdo.
+>
+>Esses ativos não podem ser movidos ou excluídos em uma página de referência, isso deve ser feito no editor de fragmentos.
+>No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita no editor [de](/help/sites-cloud/authoring/fundamentals/content-fragments.md)páginas. A representação do ativo no editor de fragmentos é apenas para a criação do fluxo de conteúdo.
 
 >[!NOTE]
-There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>
+>There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 1. Posicione o cursor na posição que deseja adicionar a imagem.
 2. Use o ícone **Inserir ativo** para abrir a caixa de diálogo de pesquisa.
@@ -266,9 +270,10 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 4. Use **Selecionar** para adicionar o ativo ao sistema de parágrafo do fragmento de conteúdo no local atual.
 
    >[!CAUTION]
-   Se, após adicionar um ativo, você alterar o formato para:
-   * **Texto simples:** o ativo será completamente perdido do fragmento.
-   * **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
+   >
+   >Se, após adicionar um ativo, você alterar o formato para:
+   >* **Texto simples:** o ativo será completamente perdido do fragmento.
+   >* **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
 
 
 ## Gerenciamento de variações {#managing-variations}
@@ -286,7 +291,8 @@ Para criar uma nova variação:
 1. Selecione **Adicionar**; o fragmento **Mestre** será copiado para a nova variação, que agora está aberta para [edição](#editing-a-variation).
 
    >[!NOTE]
-   Ao criar uma nova variação, é sempre o **Mestre** que é copiado, não a variação que está aberta no momento.
+   >
+   >Ao criar uma nova variação, é sempre o **Mestre** que é copiado, não a variação que está aberta no momento.
 
 ### Edição de uma variação {#editing-a-variation}
 
@@ -310,7 +316,8 @@ Para renomear uma variação existente:
 1. Confirme a ação **Renomear** .
 
 >[!NOTE]
-Isso só afeta a variação **Título**.
+>
+>Isso só afeta a variação **Título**.
 
 ### Excluindo uma variação {#deleting-a-variation}
 
@@ -323,7 +330,8 @@ Para excluir uma variação existente:
 1. Confirme a ação **Excluir** na caixa de diálogo.
 
 >[!NOTE]
-Não é possível excluir o **Master**.
+>
+>Não é possível excluir o **Master**.
 
 ### Sincronizar com o Mestre {#synchronizing-with-master}
 
@@ -332,10 +340,11 @@ Não é possível excluir o **Master**.
 Ao editar uma variação, você tem acesso à ação para sincronizar o elemento atual da variação com Mestre. Isso permite que você copie automaticamente as alterações feitas no Mestre para a variação necessária.
 
 >[!CAUTION]
-A sincronização só está disponível para copiar alterações *do **Master**para a variação*.
-Somente o elemento atual da variação será sincronizado.
-A sincronização só funciona no tipo de dados **Texto de várias linhas**.
-A transferência de alterações *de uma variação para **Mestre ***não está disponível como uma opção.
+>
+>A sincronização só está disponível para copiar alterações *do **Master**para a variação*.
+>Somente o elemento atual da variação será sincronizado.
+>A sincronização só funciona no tipo de dados **Texto de várias linhas**.
+>A transferência de alterações *de uma variação para **Mestre ***não está disponível como uma opção.
 
 1. Abra o fragmento do conteúdo no editor de fragmentos. Certifique-se de que o **Mestre** foi editado.
 1. Selecione uma variação específica e, em seguida, a ação de sincronização apropriada de:
