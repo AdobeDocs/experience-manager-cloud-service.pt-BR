@@ -2,7 +2,7 @@
 title: Extensão do ContextHub
 description: Definir novos tipos de armazenamentos e módulos do ContextHub quando os fornecidos não atenderem aos requisitos da solução
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -18,9 +18,7 @@ Defina novos tipos de armazenamentos e módulos do ContextHub quando os fornecid
 
 As lojas do ContextHub são criadas de candidatos a lojas registradas. Para criar uma loja personalizada, é necessário criar e registrar um candidato de loja.
 
-<!--The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-O arquivo javascript que inclui o código que cria e registra o candidato da loja deve ser incluído em uma pasta da biblioteca do cliente. A categoria da pasta deve corresponder ao seguinte padrão:
+O arquivo javascript que inclui o código que cria e registra o candidato da loja deve ser incluído em uma pasta [da biblioteca do](/help/implementing/developing/introduction/clientlibs.md)cliente. A categoria da pasta deve corresponder ao seguinte padrão:
 
 ```xml
 contexthub.store.[storeType]
@@ -101,9 +99,7 @@ Crie e registre a classe renderizadora em uma função anônima autoexecutável.
 }());
 ```
 
-<!--The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-O arquivo javascript que inclui o código que cria e registra o renderizador deve ser incluído em uma pasta da biblioteca do cliente. A categoria da pasta deve corresponder ao seguinte padrão:
+O arquivo javascript que inclui o código que cria e registra o renderizador deve ser incluído em uma pasta [da biblioteca do](/help/implementing/developing/introduction/clientlibs.md)cliente. A categoria da pasta deve corresponder ao seguinte padrão:
 
 ```javascript
 contexthub.module.[moduleType]
