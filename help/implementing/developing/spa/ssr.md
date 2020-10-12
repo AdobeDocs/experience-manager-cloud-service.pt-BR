@@ -1,8 +1,8 @@
 ---
-title: Renderização do SPA e do servidor
+title: Renderização do servidor e do SPA
 description: O uso da renderização do lado do servidor (SSR) em seu SPA pode acelerar a carga inicial da página e passar a renderização para o cliente.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -10,15 +10,15 @@ ht-degree: 0%
 ---
 
 
-# Renderização do SPA e do servidor{#spa-and-server-side-rendering}
+# Renderização do servidor e do SPA{#spa-and-server-side-rendering}
 
-Aplicativos de página única (SPAs) podem oferta ao usuário uma experiência rica e dinâmica que reage e se comporta de maneiras familiares, geralmente como um aplicativo nativo. [Isso é feito contando com o cliente para carregar o conteúdo antecipadamente e, em seguida, fazer um pesado levantamento da manipulação da interação](introduction.md#how-does-a-spa-work) do usuário, minimizando a quantidade de comunicação necessária entre o cliente e o servidor, tornando o aplicativo mais reativo.
+Aplicativos de página única (SPA) podem oferta ao usuário uma experiência rica e dinâmica que reage e se comporta de maneiras familiares, normalmente como um aplicativo nativo. [Isso é feito contando com o cliente para carregar o conteúdo antecipadamente e, em seguida, fazer um pesado levantamento da manipulação da interação](introduction.md#how-does-a-spa-work) do usuário, minimizando a quantidade de comunicação necessária entre o cliente e o servidor, tornando o aplicativo mais reativo.
 
 No entanto, isso pode levar a tempos de carregamento iniciais mais longos, especialmente se o SPA for grande e rico em seu conteúdo. Para otimizar o tempo de carregamento, parte do conteúdo pode ser renderizada no lado do servidor. O uso da renderização no lado do servidor (SSR) pode acelerar a carga inicial da página e passar a renderização para o cliente.
 
 ## Quando usar o SSR {#when-to-use-ssr}
 
-A SSR não é necessária em todos os projetos. Embora AEM suporte total a JS SSR para SPA, o Adobe não recomenda implementá-lo sistematicamente para cada projeto.
+A SSR não é necessária em todos os projetos. Embora AEM suporte total ao JS SSR para SPA, o Adobe não recomenda implementá-lo sistematicamente para cada projeto.
 
 Ao decidir implementar a SSR, você deve primeiro estimar o que a complexidade adicional, o esforço e a adição de custo representa realisticamente para o projeto, incluindo a manutenção de longo prazo. Uma arquitetura de SSR só deve ser escolhida se o valor acrescentado exceder claramente os custos estimados.
 
@@ -74,7 +74,7 @@ Os seguintes campos estão disponíveis para a configuração:
 
 ## Fluxo de comunicação orientado por AEM {#aem-driven-communication-flow}
 
-Ao usar o SSR, o fluxo de trabalho [de interação de](introduction.md#interaction-with-the-spa-editor) componentes dos SPAs no AEM inclui uma fase na qual o conteúdo inicial do aplicativo é gerado no Adobe I/O Runtime.
+Ao usar o SSR, o fluxo de trabalho [de interação do](introduction.md#interaction-with-the-spa-editor) componente do SPA no AEM inclui uma fase na qual o conteúdo inicial do aplicativo é gerado no Adobe I/O Runtime.
 
 1. O navegador solicita o conteúdo SSR da AEM.
 1. AEM publica o modelo no Adobe I/O Runtime.
@@ -85,7 +85,7 @@ Ao usar o SSR, o fluxo de trabalho [de interação de](introduction.md#interacti
 
 ## Fluxo de comunicação orientado pela Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
 
-A seção anterior descreve a implementação padrão e recomendada da renderização do lado do servidor em relação aos SPAs no AEM, onde o AEM executa o carregamento automático e a disponibilização de conteúdo.
+A seção anterior descreve a implementação padrão e recomendada da renderização do lado do servidor no que diz respeito ao SPA no AEM, onde o AEM executa o carregamento automático e a disponibilização de conteúdo.
 
 Como alternativa, a SSR pode ser implementada para que a Adobe I/O Runtime seja responsável pela inicialização, revertendo efetivamente o fluxo de comunicação.
 
@@ -107,18 +107,18 @@ Ambos os modelos são válidos e suportados pela AEM. No entanto, é preciso con
     </ul> </td>
    <td>
     <ul>
-     <li>Possivelmente estranho para o desenvolvedor SPA<br /> </li>
+     <li>Possivelmente estranho ao desenvolvedor SPA<br /> </li>
     </ul> </td>
   </tr>
   <tr>
    <th><strong>via Adobe I/O Runtime<br /> </strong></th>
    <td>
     <ul>
-     <li>Mais familiar para desenvolvedores de SPA<br /> </li>
+     <li>Mais familiar para desenvolvedores SPA<br /> </li>
     </ul> </td>
    <td>
     <ul>
-     <li>Os recursos clientlib exigidos pelo aplicativo, como CSS e JavaScript, precisarão ser disponibilizados pelo desenvolvedor AEM por meio da <code>allowProxy</code> propriedade<br /> </li>
+     <li>Os recursos clientlib exigidos pelo aplicativo, como CSS e JavaScript, precisarão ser disponibilizados pelo desenvolvedor AEM por meio da <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> propriedade<br /> </li>
      <li>Os recursos devem ser sincronizados entre o AEM e o Adobe I/O Runtime<br /> </li>
      <li>Para habilitar a criação do SPA, pode ser necessário um servidor proxy para Adobe I/O Runtime</li>
     </ul> </td>
@@ -130,23 +130,23 @@ Ambos os modelos são válidos e suportados pela AEM. No entanto, é preciso con
 
 Geralmente, apenas parte de um aplicativo precisa ser renderizada no lado do servidor. O exemplo comum é o conteúdo que será exibido acima da dobra na carga inicial da página que é renderizada no lado do servidor. Isso economiza tempo fornecendo ao cliente conteúdo já renderizado. Conforme o usuário interage com o SPA, o conteúdo adicional é renderizado pelo cliente.
 
-Ao considerar implementar a renderização do lado do servidor para o SPA, é necessário verificar quais partes do aplicativo serão necessárias.
+Ao considerar a implementação da renderização do lado do servidor para seu SPA, é necessário verificar quais partes do aplicativo serão necessárias.
 
-## Desenvolvimento de um SPA usando SSR {#developing-an-spa-using-ssr}
+## Desenvolver um SPA usando a SSR {#developing-an-spa-using-ssr}
 
-Os componentes SPA podem ser renderizados pelo cliente (no navegador) ou pelo servidor. Quando o servidor renderizado, as propriedades do navegador, como tamanho e localização da janela, não estão presentes. Por conseguinte, os componentes do SPA devem ser isomórficos, não assumindo qualquer hipótese quanto ao local em que serão apresentados.
+SPA componentes podem ser renderizados pelo cliente (no navegador) ou pelo servidor. Quando o servidor renderizado, as propriedades do navegador, como tamanho e localização da janela, não estão presentes. Por conseguinte, os componentes SPA devem ser isomórficos, não assumindo qualquer hipótese quanto ao local em que serão apresentados.
 
 Para aproveitar o SSR, será necessário implantar seu código no AEM e no Adobe I/O Runtime, que é responsável pela renderização no servidor. A maioria do código será o mesmo, no entanto, tarefas específicas do servidor serão diferentes.
 
-## SSR para SPAs em AEM {#ssr-for-spas-in-aem}
+## SSR para SPA em AEM {#ssr-for-spas-in-aem}
 
-A SSR para SPAs em AEM exige a Adobe I/O Runtime, que é chamada para a renderização do lado do servidor de conteúdo do aplicativo. No HTL do aplicativo, um recurso no Adobe I/O Runtime é chamado para renderizar o conteúdo.
+A SSR para SPA em AEM exige a Adobe I/O Runtime, que é chamada para a renderização do lado do servidor de conteúdo do aplicativo. No HTL do aplicativo, um recurso no Adobe I/O Runtime é chamado para renderizar o conteúdo.
 
-Da mesma forma que o AEM suporta as estruturas SPA Angular e React prontas, a renderização no lado do servidor também é compatível com aplicativos Angular e React. Consulte a documentação do NPM para obter mais detalhes sobre ambas as estruturas.
+Da mesma forma que o AEM suporta as estruturas Angular e React SPA predefinidas, a renderização do lado do servidor também é suportada para aplicativos Angular e React. Consulte a documentação do NPM para obter mais detalhes sobre ambas as estruturas.
 
 ## Renderizador de conteúdo remoto {#remote-content-renderer}
 
-A Configuração [do renderizador de conteúdo](#remote-content-renderer-configuration) remoto necessária para usar o SSR com seu SPA AEM toca em um serviço de renderização mais generalizado que pode ser estendido e personalizado para atender às suas necessidades.
+A Configuração [do renderizador de conteúdo](#remote-content-renderer-configuration) remoto necessária para usar o SSR com seu SPA em AEM é tocada em um serviço de renderização mais generalizado que pode ser estendido e personalizado para atender às suas necessidades.
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
