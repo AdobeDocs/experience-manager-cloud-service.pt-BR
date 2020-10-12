@@ -1,12 +1,12 @@
 ---
 sub-product: Implementação do AEM as a Cloud Service
 user-guide-title: Implementação do AEM as a Cloud Service
-breadcrumb-title: Implementing Guide
-user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
+breadcrumb-title: Guia de implementação
+user-guide-description: Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento.
 translation-type: tm+mt
-source-git-commit: fa7d271a047277afe0a4bad709d1223224c92fb8
+source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '420'
 ht-degree: 66%
 
 ---
@@ -42,6 +42,7 @@ ht-degree: 66%
    + [Uso de adaptadores Sling](developing/introduction/sling-adapters.md)
    + [Uso do Sling Resource Merger no AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
    + [Sobreposições no AEM as a Cloud Service](developing/introduction/overlays.md)
+   + [Usando bibliotecas do lado do cliente](developing/introduction/clientlibs.md)
    + [Logs](developing/introduction/logging.md)
    + [API do AEM as a Cloud Service](https://docs.adobe.com/content/help/pt/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Diferencial de páginas](/help/implementing/developing/introduction/page-diff.md)
@@ -61,20 +62,20 @@ ht-degree: 66%
    + [Sem cabeça e Híbrido com AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Ativando a exportação JSON para um componente](developing/components/enabling-json-exporter.md)
    + Aplicativos de página única {#spa}
-      + [Introdução ao SPA e Walkthrough](developing/spa/introduction.md)
-      + [Tutorial WKND do SPA](developing/spa/wknd-tutorial.md)
+      + [Introdução SPA e Walkthrough](developing/spa/introduction.md)
+      + [Tutorial SPA WKND](developing/spa/wknd-tutorial.md)
       + [Introdução usando React](developing/spa/getting-started-react.md)
       + [Introdução ao uso do Angular](developing/spa/getting-started-angular.md)
       + [SPA Deep Dives](developing/spa/deep-dives.md)
-      + [Desenvolvimento de SPAs para AEM](developing/spa/developing.md)
-      + [Visão geral do editor SPA](developing/spa/editor-overview.md)
-      + [Blueprint do SPA](developing/spa/blueprint.md)
-      + [Componente de página do SPA](developing/spa/page-component.md)
+      + [Desenvolver SPA para AEM](developing/spa/developing.md)
+      + [Visão geral do editor de SPA](developing/spa/editor-overview.md)
+      + [SPA Blueprint](developing/spa/blueprint.md)
+      + [Componente da página SPA](developing/spa/page-component.md)
       + [Modelo dinâmico para mapeamento de componentes](developing/spa/model-to-component-mapping.md)
       + [Roteamento de modelo](developing/spa/routing.md)
       + [Iniciar integração](developing/spa/launch-integration.md)
       + [Renderização do lado do servidor](developing/spa/ssr.md)
-      + [Documentos de referência do SPA](developing/spa/reference-materials.md)
+      + [documentos de referência SPA](developing/spa/reference-materials.md)
 + Personalização {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configuração do ContextHub](developing/personalization/configuring-contexthub.md)
