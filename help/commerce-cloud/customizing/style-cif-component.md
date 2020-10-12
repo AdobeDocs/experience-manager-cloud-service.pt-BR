@@ -10,10 +10,10 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
-source-wordcount: '2620'
-ht-degree: 34%
+source-wordcount: '2592'
+ht-degree: 33%
 
 ---
 
@@ -67,7 +67,7 @@ Vamos clonar o Projeto [](https://github.com/adobe/aem-cif-guides-venia) Venia e
 
 ## Bibliotecas do cliente e módulo ui.frontenda {#introduction-to-client-libraries}
 
-O CSS e o JavaScript responsáveis pela renderização de temas/estilos da loja são gerenciados no AEM por uma [biblioteca do cliente](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/developing/introduction/clientlibs.translate.html) ou, abreviando, clientlibs. As bibliotecas de clientes fornecem um mecanismo para organizar o CSS e o Javascript no código de um projeto e, em seguida, na página.
+O CSS e o JavaScript responsáveis pela renderização de temas/estilos da loja são gerenciados no AEM por uma [biblioteca do cliente](/help/implementing/developing/introduction/clientlibs.md) ou, abreviando, clientlibs. As bibliotecas de clientes fornecem um mecanismo para organizar o CSS e o Javascript no código de um projeto e, em seguida, na página.
 
 Os estilos específicos da marca podem ser aplicados AEM componentes principais CIF adicionando e substituindo o CSS gerenciado por essas bibliotecas clientes. Entender como as bibliotecas de clientes são estruturadas e incluídas na página é essencial.
 
@@ -77,7 +77,7 @@ O `ui.frontend` módulo também é um módulo Maven e integrado ao projeto maior
 
 ![ui.frontende à arquitetura ui.apps](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*CSS e Javascript compilados são copiados do`ui.frontend`módulo para o`ui.apps`módulo como uma biblioteca de cliente durante uma compilação Maven*
+*CSS e Javascript compilados são copiados do `ui.frontend` módulo para o `ui.apps` módulo como uma biblioteca de cliente durante uma compilação Maven*
 
 ## Atualizar o estilo do Teaser {#ui-frontend-module}
 
@@ -249,7 +249,7 @@ Em seguida, verifique a inclusão das bibliotecas clientes na página.
    </html>
    ```
 
-   As bibliotecas de clientes quando entregues à página recebem o prefixo `/etc.clientlibs` e são fornecidas por meio de um [proxy](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/developing/introduction/clientlibs.translate.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) para evitar expor qualquer coisa sensível no `/apps` ou `/libs`.
+   As bibliotecas de clientes quando entregues à página recebem o prefixo `/etc.clientlibs` e são fornecidas por meio de um [proxy](/help/implementing/developing/introduction/clientlibs.md) para evitar expor qualquer coisa sensível no `/apps` ou `/libs`.
 
    Aviso `venia/clientlibs/clientlib-site.min.css` e `venia/clientlibs/clientlib-site.min.js`. Estes são os arquivos CSS e Javascript compilados derivados do `ui.frontend` módulo.
 
@@ -482,6 +482,6 @@ Utilize o [Sistema de estilo do AEM](https://docs.adobe.com/content/help/pt-BR/e
 * [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype)
 * [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
 * [Configurar um Ambiente de desenvolvimento do AEM local](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [Bibliotecas do lado do cliente](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/developing/introduction/clientlibs.translate.html)
+* [Bibliotecas do lado do cliente](/help/implementing/developing/introduction/clientlibs.md)
 * [Introdução ao AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [Desenvolvimento com o sistema de estilo](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
