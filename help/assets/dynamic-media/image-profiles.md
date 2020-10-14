@@ -2,9 +2,9 @@
 title: Perfis de imagem do Dynamic Media
 description: Crie Perfis de Imagem de Mídia Dinâmica que contenham configurações para máscara de nitidez e recorte inteligente, ou amostra inteligente, ou ambos, e aplique o perfil a uma pasta de ativos de imagem.
 translation-type: tm+mt
-source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
+source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2738'
 ht-degree: 11%
 
 ---
@@ -16,7 +16,7 @@ Ao fazer upload de imagens, você pode cortar automaticamente a imagem ao fazer 
 
 >[!IMPORTANT]
 >
->Perfis de imagem não se aplicam a arquivos PDF, GIF ou INDD (Adobe InDesign).
+>Perfis de imagem não se aplicam a arquivos PDF, GIF animado ou INDD (Adobe InDesign).
 
 ## Crop options {#crop-options}
 
