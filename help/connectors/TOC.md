@@ -1,12 +1,12 @@
 ---
 sub-product: Conectores do AEM as a Cloud Service
 user-guide-title: Conectores do AEM as a Cloud Service
-breadcrumb-title: Connectors Guide
-user-guide-description: Learn how to integrate Connectors into Experience Manager as a Cloud Service.
+breadcrumb-title: Guia de conectores
+user-guide-description: Saiba como integrar conectores ao Experience Manager as a Cloud Service.
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '35'
+source-wordcount: '49'
 ht-degree: 100%
 
 ---
