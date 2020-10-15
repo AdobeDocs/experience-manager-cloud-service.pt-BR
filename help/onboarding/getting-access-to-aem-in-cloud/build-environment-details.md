@@ -2,9 +2,9 @@
 title: Criar detalhes do Ambiente
 description: Detalhes do Ambiente de compilação - Cloud Services
 translation-type: tm+mt
-source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
+source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ As variáveis atuais podem ser listadas:
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-Os nomes de variáveis podem conter somente caracteres alfanuméricos e sublinhado (_). Por convenção, os nomes devem ser todos maiúsculos. Há um limite de 200 variáveis por pipeline, cada nome deve ter menos de 100 caracteres e cada valor deve ter menos de 2048 caracteres.
+Os nomes de variáveis podem conter somente caracteres alfanuméricos e sublinhado (_). Por convenção, os nomes devem ser todos maiúsculos. Há um limite de 200 variáveis por pipeline, cada nome deve ter menos de 100 caracteres e cada valor deve ter menos de 2048 caracteres no caso de variáveis de tipo de string e 500 caracteres no caso de variáveis de tipo secretString.
 
 Quando usado em um `Maven pom.xml` arquivo, é útil mapear essas variáveis para as propriedades do Maven usando uma sintaxe semelhante a esta:
 
@@ -187,5 +187,4 @@ Algumas compilações exigem a instalação de pacotes adicionais do sistema par
 Essa mesma técnica pode ser usada para instalar pacotes específicos de idioma, ou seja, usar `gem` para RubyGems ou `pip` para pacotes Python.
 
 >[!NOTE]
->
 >Instalar um pacote do sistema desta maneira **não** o instala no ambiente de tempo de execução usado para executar o Adobe Experience Manager. Se precisar de um pacote do sistema instalado no ambiente AEM, entre em contato com o representante do Adobe.
