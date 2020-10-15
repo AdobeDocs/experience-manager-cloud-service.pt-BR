@@ -3,10 +3,10 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5a21785883d652508b9fc12c14ff1884e358115f
+source-git-commit: 2ef262dc8ac3b1c0ae2ac9e77d18664eb83270f7
 workflow-type: tm+mt
-source-wordcount: '2136'
-ht-degree: 43%
+source-wordcount: '2201'
+ht-degree: 42%
 
 ---
 
@@ -33,8 +33,8 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
    |  | [!DNL Sites] como um Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] no AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] local |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]como um Cloud Service** | Compatível | Compatível | Compatível |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]no AMS** | Compatível | Compatível | Compatível |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]local** | Incompatível | Incompatível | Incompatível |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] no AMS** | Compatível | Compatível | Compatível |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] local** | Incompatível | Incompatível | Incompatível |
 
 ### Formatos de arquivo não suportados {#mimetypes}
 
@@ -195,3 +195,4 @@ Para solucionar problemas do cenário de erro comum, siga estas etapas:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * Um ativo obtido da barragem remota pode não ser publicado em uma página da Web por um ou mais motivos. Ele não existe no servidor remoto, falta de permissões apropriadas para buscá-lo ou falha na rede pode ser o motivo. Verifique se o ativo não foi removido do DAM remoto. Verifique se as permissões apropriadas estão em vigor e se os pré-requisitos foram atendidos. Tente adicionar o ativo novamente à página e publique-o novamente. Verifique a [lista de trabalhos assíncronos](/help/operations/asynchronous-jobs.md) quanto a erros na busca de ativos.
+* Se você não conseguir acessar a implantação remota do DAM a partir da [!DNL Sites] implantação local, verifique se os cookies entre sites são permitidos. Se os cookies entre sites estiverem bloqueados, as duas implantações do podem não [!DNL Experience Manager] ser autenticadas. Por exemplo, [!DNL Google Chrome] no modo Incognito pode bloquear cookies de terceiros. Em [!DNL Chrome], clique no ícone &#39;olho&#39; na barra de endereços para permitir cookies ou consulte a ajuda sobre [como ativar cookies](https://support.google.com/chrome/answer/95647)de terceiros.
