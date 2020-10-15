@@ -1,9 +1,9 @@
 ---
 sub-product: Ajuda do Adobe Experience Manager as a Cloud Service
 user-guide-title: Ajuda do Adobe Experience Manager as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
 
