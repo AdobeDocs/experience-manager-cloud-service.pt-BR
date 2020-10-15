@@ -1,12 +1,12 @@
 ---
 sub-product: Notas de versão do AEM as a Cloud Service
 user-guide-title: Notas de versão do AEM as a Cloud Service
-breadcrumb-title: Release Notes
-user-guide-description: This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.
+breadcrumb-title: Notas de versão
+user-guide-description: Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo novidades, problemas conhecidos e recursos obsoletos e removidos.
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '61'
+source-wordcount: '90'
 ht-degree: 100%
 
 ---
