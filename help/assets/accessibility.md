@@ -3,10 +3,10 @@ title: Acessibilidade em [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade [!DNL Adobe Experience Manager] ajudam os usuários portadores de deficiências.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 2%
+source-wordcount: '1904'
+ht-degree: 1%
 
 ---
 
@@ -30,22 +30,24 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 # Accessibility in [!DNL Adobe Experience Manager Assets] as a Cloud Service {#accessibility-in-aem-assets}
 
-A Adobe está comprometida em fazer produtos para todos os usuários, inclusive pessoas com deficiências. [!DNL Adobe Experience Manager] é aprimorada continuamente para atender às necessidades de todos os tipos de usuários. [!DNL Experience Manager] publica informações de conformidade que detalham os padrões que seguem, descrevem os recursos de acessibilidade do produto e descrevem o nível de conformidade. Ajuda os usuários a entender a extensão da adesão.
+[!DNL Adobe Experience Manager] permite que criadores de conteúdo e editores sirvam experiências incríveis na Web. A Adobe esforça-se para incluir os criadores com deficiências, melhorando a acessibilidade de [!DNL Experience Manager]. O software é continuamente aprimorado para atender às necessidades de todos os tipos de usuários e para atender aos padrões mundiais que incluem indivíduos com deficiências visuais, auditivas, de mobilidade ou outras.
 
-[!DNL Adobe Experience Manager] fornece níveis variáveis de suporte para os seguintes padrões:
+[!DNL Experience Manager] publica informações de conformidade que descrevem os padrões aos quais ele obedece, descreve os recursos de acessibilidade do produto e descreve o nível de conformidade. Esses relatórios de conformidade de acessibilidade ajudam [!DNL Experience Manager] os usuários a entender a extensão da aderência. Os aprimoramentos feitos em [!DNL Assets] permite que todos os usuários usem as interfaces facilmente via teclado, leitor de tela, ampliadores e outras tecnologias de assistência.
+
+[!DNL Experience Manager] fornece níveis variáveis de suporte para os seguintes padrões:
 
 * [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
-* [Seção 508](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)revista.
-* [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/).
+* [Revisão da seção 508 da Lei](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)de Reabilitação.
+* [Iniciativa de acessibilidade - Aplicativos de Internet ricos acessíveis (WAI-ARIA) por W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [PT 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-Para acessar o relatório detalhando os níveis de conformidade, consulte a página Relatórios de conformidade de [acessibilidade ](https://www.adobe.com/accessibility/compliance.html) (ACR) para todas as soluções de Adobe.
+Para acessar o relatório detalhando os níveis de conformidade, consulte a página Relatórios [de conformidade de](https://www.adobe.com/accessibility/compliance.html) acessibilidade (ACR) para todas as soluções de Adobe.
 
 ## Tecnologias de assistência {#at-support}
 
-Os usuários portadores de deficiências dependem frequentemente de hardware e software para acessar conteúdo da Web. Essas ferramentas são conhecidas como tecnologias de assistência. [!DNL Adobe Experience Manager Assets] trabalhe com os seguintes tipos de tecnologias de assistência para fornecer suporte aos usuários ao usar as principais funcionalidades do software:
+Os usuários portadores de deficiências dependem frequentemente de hardware e software para acessar conteúdo da Web. Essas ferramentas são conhecidas como tecnologias de assistência. [!DNL Experience Manager Assets] pode trabalhar com os seguintes tipos de tecnologias de assistência (AT) ao usar as funcionalidades principais do software:
 
-* Leitores de tela.
+* Leitores de tela e lente de aumento de tela.
 * Software de reconhecimento de voz.
 * Uso do teclado - navegação e atalhos.
 * Hardware de assistência, incluindo controles de comutador, exibições em Braille atualizáveis e outros dispositivos de entrada de computador.
@@ -75,8 +77,7 @@ Muitos elementos da interface do usuário que podem ser clicados ou ativados com
 
 ### Atalhos de teclado em ativos {#keyboard-shortcuts}
 
-<!-- TBD: Add here only those keyboard shortcuts that work for/with Assets. Do with Oct release.
--->
+As ações a seguir no Assets funcionam com os atalhos de teclado listados. A maioria dos atalhos de teclado que se aplicam a [!DNL Experience Manager] Consoles também se aplicam a Ativos. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). Consulte como [ativar ou desativar os atalhos](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)do teclado.
 
 | Interface do usuário ou cenário | Atalho de teclado | Ação |
 |---|---|---|
@@ -84,38 +85,37 @@ Muitos elementos da interface do usuário que podem ser clicados ou ativados com
 | Visualização de colunas na interface do usuário do Assets | Teclas de seta para a esquerda e para a direita | Navegue até arquivos e pastas acima ou abaixo da pasta atual. |
 | Procurar pastas em ativos | `/` | Chame a pesquisa abrindo a caixa Omnisearch. |
 | Console de ativos | ` | Alternar painéis laterais |
-| Console de ativos | Alt + 1 | Abra a árvore de conteúdo. |
-| Console de ativos | Alt + 2 | Abra [!UICONTROL Navegação] sideral. |
-| Console de ativos | Alt + 3 | Exibir [!UICONTROL Linha do tempo] de um ativo selecionado. |
-| Console de ativos | Alt + 4 | Abrir referências de Live Copy do ativo selecionado. |
-| Console de ativos | Alt + 5 | Chame pesquisa e pesquisa dentro da pasta selecionada. |
+| Console de ativos | `Alt + 1` | Abra a árvore de conteúdo. |
+| Console de ativos | `Alt + 2` | Abra o painel esquerdo [!UICONTROL Navegação] . |
+| Console de ativos | `Alt + 3` | Exibir [!UICONTROL Linha do tempo] de um ativo selecionado. |
+| Console de ativos | `Alt + 4` | Abrir referências de Live Copy do ativo selecionado. |
+| Console de ativos | `Alt + 5` | Chame pesquisa e pesquisa dentro da pasta selecionada. |
 | Ativo ou pasta selecionado | Backspace | Exclua o ativo ou pasta selecionado. |
 | Ativo ou pasta selecionado | `p` | Abra a página Propriedades do ativo selecionado. |
 | Ativo ou pasta selecionado | `e` | Editar o ativo selecionado. |
 | Ativo ou pasta selecionado | `m` | Mover o ativo selecionado. |
-| Ativo ou pasta selecionado | Ctrl+c | Copie o ativo selecionado. |
-| Ativo ou pasta selecionado | Esc | Desmarque a seleção. |
-| A caixa de diálogo é aberta e está em foco | Esc | Caixa de diálogo Fechar. |
-| Dentro de uma pasta no DAM | Ctrl+v | Cole o ativo copiado. |
-| Console de ativos | Ctrl+A | Selecione todos os ativos. |
-| Páginas de propriedades do ativo | Ctrl + S | Salve as alterações. |
+| Ativo ou pasta selecionado | `Ctrl + c` | Copie o ativo selecionado. |
+| Ativo ou pasta selecionado | `Esc` | Desmarque a seleção. |
+| A caixa de diálogo é aberta e está em foco | `Esc` | Caixa de diálogo Fechar. |
+| Dentro de uma pasta no DAM | `Ctrl + v` | Cole o ativo copiado. |
+| Console de ativos | `Ctrl + A` | Selecione todos os ativos. |
+| Páginas de propriedades do ativo | `Ctrl + S` | Salve as alterações. |
 | Console de ativos | `?` | Consulte uma lista de atalhos do teclado. |
-
-A maioria dos atalhos de teclado que se aplicam a [!DNL Experience Manager] Consoles também se aplicam a Ativos. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). Consulte como [ativar ou desativar os atalhos](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)do teclado.
 
 ## Fazer logon e navegar na interface [!DNL Assets] do usuário {#login}
 
 Os usuários podem usar o teclado para navegar e preencher o campo de logon para fazer logon. As mensagens de erro devido a combinações incorretas de nome de usuário e senha na página de logon são anunciadas pelos leitores de tela sempre que o erro ocorrer.
 
-Depois de fazer logon, os usuários do DAM podem navegar até a interface [!DNL Assets] do usuário usando o teclado. A ordem de navegação do teclado é da esquerda para a direita e de cima para baixo. Ao navegar usando um teclado, qualquer opção acionável focalizada é realçada com melhor contraste de cor e é narrada por um leitor de tela. O estado - expandido ou recolhido - das opções focalizadas no menu é anunciado por um leitor de tela.
+Depois de fazer logon, os usuários do DAM podem navegar na interface [!DNL Assets] do usuário usando o teclado. Os elementos da interface do usuário, como o painel esquerdo, menus, perfil do usuário, barra de pesquisa, arquivos e pastas e configurações de administração e configuração são navegáveis usando o teclado. A ordem de navegação do teclado é da esquerda para a direita e de cima para baixo. Ao navegar usando um teclado, uma opção acionável quando focalizada é realçada com melhor contraste de cor e é narrada por um leitor de tela. Quando apropriado, o estado — por exemplo, expandido, recolhido e em estado misto — das opções focadas no menu é anunciado por um leitor de tela. Além disso, a finalidade da opção acionável é anunciada por um leitor de tela, em vez de, digamos, a aparência ou o posicionamento da interface do usuário.
 
-Se um usuário expandir a opção de ajuda ou perfil do usuário no menu, a opção ou o status apropriado serão anunciados pelo leitor de tela. Se um usuário expandir a opção perfil do usuário, as opções disponíveis poderão ser selecionadas usando um teclado. Por exemplo, um usuário pode representar um usuário diferente. A opção da interface do usuário e a mensagem de erro
+Se um usuário expandir a opção de ajuda ou perfil do usuário no menu, a opção ou o status apropriado serão anunciados pelo leitor de tela. Se um usuário expandir a opção perfil do usuário, as opções disponíveis poderão ser selecionadas usando um teclado. Por exemplo, um administrador pode representar um usuário diferente. Se um usuário pesquisar por uma string na opção [!UICONTROL Ajuda] , um narrador anuncia &quot;Procurando ajuda&quot; para indicar que uma pesquisa está em andamento.
 
-![Navegação no teclado das principais opções na interface do usuário do Experience Manager](assets/keyboard-navigation-in-aem.gif)
+<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
-*Figura: Navegar pelas opções na parte superior da interface do usuário do Experience Manager usando a`Tab`tecla.*
+![Keyboard navigation of top options in Experience Manager user interface](assets/keyboard-navigation-in-aem.gif)
 
-Se um usuário pesquisar por uma string na opção [!UICONTROL Ajuda] , um narrador anuncia &quot;Procurando ajuda&quot; para indicar que uma pesquisa está em andamento.
+*Figure: Navigating through the options at the top of Experience Manager user interface using `Tab` key.*
+-->
 
 ## Procurar ativos existentes e informações relacionadas à visualização {#browse}
 
@@ -143,9 +143,9 @@ Ao navegar pelo repositório de ativos, a seguinte funcionalidade melhora a aces
 * O foco do usuário ao navegar usando a `Tab` tecla pode ser movido para a opção Fechar na pré-visualização da versão.
 * Ao usar o teclado para navegar, as opções destacadas da interface do usuário acionável têm foco visual mais destacado com contraste aprimorado. Isso torna a área focada mais identificável para o usuário.
 * O uso da `Esc` tecla para remover os ícones de ação rápida da visualização em miniatura não remove o foco do teclado do último item focalizado.
-* Com um ativo selecionado, pressionar Alt + 4 atalho de teclado abre a lista Referências. Usando a `Tab` chave, os usuários podem navegar pelas entradas de referência zero.
-* Os comentários em um ativo estão disponíveis na linha do tempo do ativo. É acessível pelo teclado.
-* As configurações de visualização no Experience Manager podem ser acessadas pelo teclado. O usuário pode navegar pelos tamanhos de cartão disponíveis usando as teclas de seta e selecionar e percorrer para navegar e definir outros elementos na visualização de Configurações de Visualização existente.
+* Com um ativo selecionado, pressionar o atalho do `Alt + 4` teclado abre a lista [!UICONTROL Referências] no painel esquerdo. Usando a `Tab` chave, os usuários podem navegar pelas entradas de referência diferentes de zero. Navegar apenas pelas entradas de referência diferentes de zero também economiza esforço e pressionamentos de teclas.
+* Os comentários em um ativo estão disponíveis na linha do tempo do ativo. É acessível se o painel esquerdo for acessado usando um teclado ou um atalho do teclado.
+* [!UICONTROL As configurações] de visualização em [!DNL Experience Manager] estão acessíveis usando um teclado. Os usuários podem navegar pelos tamanhos de cartão disponíveis usando as teclas de seta e selecionar e percorrer para navegar e definir outros elementos na visualização de Configurações de Visualização existente.
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -156,7 +156,6 @@ Ao navegar pelo repositório de ativos, a seguinte funcionalidade melhora a aces
 * List the a11y fixes in workflows to configure and administer [!DNL Experience Manager Assets]?
 * Some enhancements in Processing profiles creation or application to a folder?
 * Some enhancements to metadata properties UI?
-
 -->
 
 ## Gerenciar ativos digitais {#manage-assets}
@@ -169,7 +168,7 @@ Para operações de metadados que normalmente são feitas por funções como com
 
 * [!UICONTROL A opção Salvar e fechar] na página Propriedades do ativo agora pode ser acessada usando o teclado.
 * Os leitores de tela anunciam as opções para excluir as tags selecionadas na guia Básico dos botões Propriedades do ativo para excluir as tags selecionadas.
-* A caixa de diálogo pop-up do seletor de datas pode ser usada usando um teclado. O Datepicker é usado para definir tempos de ativação e de desativação.
+* A caixa de diálogo pop-up do seletor de datas pode ser usada usando um teclado. O elemento da interface do usuário do Datepicker é usado para definir tempos de ativação e de desativação.
 * A funcionalidade de arrastar usando o teclado funciona corretamente no Editor de Schemas de Metadados no modo de navegação do leitor de tela.
 * Um usuário pode mover o foco usando o teclado para o campo Adicionar usuário ou grupo, em Grupo de usuários fechado, na guia Permissões das Propriedades da pasta.
 
@@ -206,11 +205,14 @@ Ao compartilhar ativos, as seguintes funcionalidades melhoram a acessibilidade:
    * Pode navegar até todas as sugestões listadas.
    * Restrinja as sugestões exibidas para os campos Adicionar endereço de email e Pesquisar.
 
-## Acessibilidade em [!DNL Dynamic Media] {#dynamic-media-accessibility}
+<!-- TBD: With more info from the DM team. A few Sev1 issues are fixed and if those are shipped, then mention those here.
 
-Ao usar o Dynamic Media, a seguinte funcionalidade ajuda a torná-lo acessível:
+## Accessibility in [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
-* Um usuário pode se concentrar nas `Flyout`, `InlineZoom`, `Shoppable_Banner`, `Zoom_dark`, `Zoom_light`e `ZoomVertical_dark`opções usando a `ZoomVertical_light` chave nos detalhes do ativo nos Visualizadores `Tab` [!DNL Dynamic Media].
+When using Dynamic Media, the following functionality helps make it accessible:
+
+* A user can focus to `Flyout`, `InlineZoom`, `Shoppable_Banner`, `Zoom_dark`, `Zoom_light`, `ZoomVertical_dark`, and `ZoomVertical_light` options using `Tab` key in asset details Viewers in [!DNL Dynamic Media].
+-->
 
 ## Documentação acessível {#accessible-docs}
 
@@ -224,15 +226,12 @@ Ao usar o Dynamic Media, a seguinte funcionalidade ajuda a torná-lo acessível:
 <!-- 
 ## More resources for accessibility {#a11y-resources}
 
-TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share or leave a link here.
+TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share a reference with asgupta@adobe.com.
 -->
-
-## Aprimoramentos em [!DNL Experience Manager Assets] versões {#rn-fixes}
-
-Para obter uma lista de aprimoramentos específicos feitos em cada versão individual, consulte as notas [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html) versão das respectivas versões.
 
 >[!MORELIKETHIS]
 >
->* [Orientação sobre acessibilidade AEM](/help/onboarding/accessibility/web-accessibility.md)
->* [Relatórios de conformidade para soluções de Adobe](https://www.adobe.com/accessibility/compliance.html)
+>* [Notas de versão de aprimoramentos específicos feitos em cada versão](/help/release-notes/release-notes-cloud/release-notes-current.md)individual.
+>* [AEM orientação](/help/onboarding/accessibility/web-accessibility.md)de acessibilidade.
+>* [Relatórios de conformidade para soluções](https://www.adobe.com/accessibility/compliance.html)de Adobe.
 
