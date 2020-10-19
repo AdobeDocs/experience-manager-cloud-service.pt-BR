@@ -3,9 +3,9 @@ title: Acessibilidade em [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade [!DNL Adobe Experience Manager] ajudam os usuários portadores de deficiências.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Muitos elementos da interface do usuário que podem ser clicados ou ativados com
 
 ### Atalhos de teclado em ativos {#keyboard-shortcuts}
 
-As ações a seguir no Assets funcionam com os atalhos de teclado listados. A maioria dos atalhos de teclado que se aplicam a [!DNL Experience Manager] Consoles também se aplicam a Ativos. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). Consulte como [ativar ou desativar os atalhos](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)do teclado.
+As ações a seguir no Assets funcionam com os atalhos de teclado listados. A maioria dos atalhos de teclado que se aplicam a [!DNL Experience Manager] Consoles também se aplicam a Ativos. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Consulte como [ativar ou desativar os atalhos](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)do teclado.
 
 | Interface do usuário ou cenário | Atalho de teclado | Ação |
 |---|---|---|
@@ -192,7 +192,7 @@ Ao filtrar os resultados da pesquisa:
 
 ## Compartilhar ativos {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 Ao compartilhar ativos, as seguintes funcionalidades melhoram a acessibilidade:
