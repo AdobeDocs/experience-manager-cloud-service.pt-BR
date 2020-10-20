@@ -2,7 +2,7 @@
 title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
+source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
 workflow-type: tm+mt
 source-wordcount: '3210'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Assim como para versões AEM não-na-nuvem existentes, um desenvolvimento local 
 >[!NOTE]
 >Existem diferenças operacionais sutis entre o comportamento do aplicativo em uma máquina local e a Adobe Cloud. Essas diferenças arquitetônicas devem ser respeitadas durante o desenvolvimento local e podem levar a um comportamento diferente ao implantar na infraestrutura de nuvem. Devido a essas diferenças, é importante executar testes exaustivos em ambientes dev e stage antes de implantar o novo código personalizado na produção.
 
-Para desenvolver um código personalizado para uma versão interna, a versão relevante do [AEM como um SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) Cloud Service deve ser baixada e instalada. Para obter informações adicionais sobre como usar o AEM como ferramentas do Dispatcher para Cloud Service, consulte [esta página](/help/implementing/dispatcher/overview.md).
+Para desenvolver um código personalizado para uma versão interna, a versão relevante do [AEM como um SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) Cloud Service deve ser baixada e instalada. Para obter informações adicionais sobre como usar o AEM como ferramentas do Dispatcher para Cloud Service, consulte [esta página](/help/implementing/dispatcher/disp-overview.md).
 
 O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar o código em AEM como um Cloud Service:
 
