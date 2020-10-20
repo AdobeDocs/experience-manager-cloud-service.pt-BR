@@ -2,7 +2,7 @@
 title: Modelos de páginas
 description: Modelos de página são usados ao criar uma página que será usada como a base para a nova página
 translation-type: tm+mt
-source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 8%
@@ -156,7 +156,7 @@ Uma lista de todas as entradas permitidas é criada. Se qualquer configuração 
 Para criar uma nova pasta, você pode:
 
 * Programaticamente ou com CRXDE Lite
-* Usando o navegador de configuração
+* Usando o navegador [de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Uso do CRXDE Lite {#using-crxde-lite}
 
@@ -189,7 +189,7 @@ Para criar uma nova pasta, você pode:
 
 ### Usando o navegador de configuração {#using-the-configuration-browser}
 
-1. Vá para Navegação **** global -> **Ferramentas** > Navegador **de** configuração.
+1. Vá para Navegação **** global -> **Ferramentas** > Navegador [**de** configuração.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    As pastas existentes são listadas à esquerda, incluindo a `global` pasta.
 
@@ -203,7 +203,7 @@ Para criar uma nova pasta, você pode:
 
 >[!NOTE]
 >
->No Navegador de configuração, você pode editar a pasta global e ativar a opção Modelos **** editáveis se desejar criar modelos dentro dessa pasta, no entanto, essa não é a prática recomendada.
+>No Navegador [de configuração,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) você pode editar a pasta global e ativar a opção Modelos **** editáveis se desejar criar modelos dentro dessa pasta, no entanto, essa não é a prática recomendada.
 
 ### ACLs e grupos {#acls-and-groups}
 
