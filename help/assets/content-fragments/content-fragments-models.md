@@ -2,7 +2,7 @@
 title: Modelos de fragmentos do conteúdo
 description: Modelos de fragmento de conteúdo são usados para criar fragmentos de conteúdo com conteúdo estruturado.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 22%
@@ -22,12 +22,12 @@ Modelos de fragmento de conteúdo definem a estrutura do conteúdo para seus fra
 
 Para ativar os modelos de fragmento de conteúdo, é necessário:
 
-* Habilitar o uso de modelos de fragmento de conteúdo no gerenciador de configurações
+* Habilitar o uso de modelos de fragmento de conteúdo no navegador de configuração
 * Aplicar a configuração à pasta Ativos
 
-### Ativar modelos de fragmento de conteúdo no Configuration Manager {#enable-content-fragment-models-in-configuration-manager}
+### Ativar modelos de fragmento de conteúdo no navegador de configuração {#enable-content-fragment-models-in-configuration-browser}
 
-Para [criar um novo Modelo](#creating-a-content-fragment-model) de fragmento de conteúdo, é **necessário** primeiro ativá-los usando o Configuration Manager:
+Para [criar um novo Modelo](#creating-a-content-fragment-model) de fragmento de conteúdo, você **deve** primeiro ativá-los usando o Navegador [de configuração:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 1. Navegue até **Ferramentas**, **Gerale** abra o **Navegador de configuração**.
 2. Selecione o local apropriado para seu site.
@@ -35,7 +35,8 @@ Para [criar um novo Modelo](#creating-a-content-fragment-model) de fragmento de 
 
    1. Especifique um **Título**.
    2. Selecione Modelos **de fragmento de** conteúdo para permitir o uso.
-   ![configuration](assets/cfm-models-01.png)
+
+   ![configuração](assets/cfm-models-01.png)
 
 4. Selecione **Criar** para salvar a definição.
 
@@ -78,6 +79,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
    * esquerda: campos já definidos
    * direito: **Tipos de dados** disponíveis para criar campos (e **Propriedades** para uso depois que os campos forem criados)
+
    >[!NOTE]
    >
    >Quando um campo é **Obrigatório**, o **Rótulo** indicado no painel à esquerda é marcado com um asterisco (*****).
@@ -87,19 +89,21 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 1. **Para adicionar um campo**
 
    * Arraste um tipo de dados necessário para o local necessário para um campo:
+
    ![tipo de dados para campo](assets/cfm-models-04.png)
 
    * Depois que um campo for adicionado ao modelo, o painel direito mostrará as **Propriedades** que podem ser definidas para esse tipo de dados específico. Aqui você pode definir o que é necessário para esse campo. Por exemplo:
+
    ![propriedades do campo](assets/cfm-models-05.png)
 
    >[!NOTE]
-   >
-   >No tipo de dados **Texto de várias linhas**, é possível definir o **Tipo padrão** como:
-   >* **Texto formatado**
-   >* **Markdown**
-   >* **Texto sem formatação**
-   >Se não for especificado, o valor padrão **Rich Text** será usado para esse campo.
-   >Alterar o **Tipo padrão** em um modelo de fragmento de conteúdo só terá efeito em um fragmento de conteúdo existente relacionado depois que esse fragmento for aberto no editor e salvo.
+   No tipo de dados **Texto de várias linhas**, é possível definir o **Tipo padrão** como:
+   * **Texto formatado**
+   * **Markdown**
+   * **Texto sem formatação**
+
+   Se não for especificado, o valor padrão **Rich Text** será usado para esse campo.
+   Alterar o **Tipo padrão** em um modelo de fragmento de conteúdo só terá efeito em um fragmento de conteúdo existente relacionado depois que esse fragmento for aberto no editor e salvo.
 
 1. **Como remover um campo**
 
@@ -114,8 +118,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 ## Excluindo um modelo de fragmento de conteúdo {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->A exclusão de um modelo de fragmento de conteúdo pode afetar fragmentos dependentes.
+A exclusão de um modelo de fragmento de conteúdo pode afetar fragmentos dependentes.
 
 Para excluir um modelo de fragmento de conteúdo:
 
@@ -125,8 +128,7 @@ Para excluir um modelo de fragmento de conteúdo:
 1. Selecione seu modelo, seguido por **Excluir** na barra de ferramentas.
 
    >[!NOTE]
-   >
-   >Se o modelo for referenciado, um aviso será dado. Agir adequadamente.
+   Se o modelo for referenciado, um aviso será dado. Agir adequadamente.
 
 ## Publicar um modelo de fragmento de conteúdo {#publishing-a-content-fragment-model}
 
@@ -140,5 +142,4 @@ Para publicar um modelo de fragmento de conteúdo:
 1. Selecione seu modelo, seguido por **Publicar** na barra de ferramentas.
 
    >[!NOTE]
-   >
-   >Se você publicar um fragmento de conteúdo para o qual o modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
+   Se você publicar um fragmento de conteúdo para o qual o modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
