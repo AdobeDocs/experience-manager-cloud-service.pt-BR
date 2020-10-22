@@ -1,11 +1,11 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0.
-description: 'Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 '
+description: '[!DNL Adobe Experience Manager] como notas de versão de Cloud Service para 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 5fb87f82c092552aa5e1c4b569399ec0bbc0da3b
+source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 12%
+source-wordcount: '781'
+ht-degree: 11%
 
 ---
 
@@ -87,7 +87,7 @@ Siga esta seção para saber mais sobre as novidades e as atualizações do Clou
 
 ### Novidades {#what-is-new-cra}
 
-* O CRA (Cloud Readiness Analyzer) tem um console de estado de start que exibe um botão **Gerar relatório** explícito para que o usuário clique em para executar o CRA.
+* O [Cloud Readiness Analyzer (CRA)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) tem um console de estado de start que exibe um botão **Gerar relatório** explícito para que o usuário clique em para executar o CRA.
 
 * A interface do usuário CRA exibe o progresso enquanto está em execução. Exibe itens que estão sendo analisados e descobertas encontradas durante a execução.
 
@@ -103,7 +103,7 @@ Siga esta seção para saber mais sobre as novidades e as atualizações da Cont
 
 ### Novidades {#what-is-new-ctt}
 
-* A Ferramenta de Transferência de Conteúdo (CTT) suporta o Armazenamento de Dados do Azure Blob Store.
+* A Ferramenta de Transferência de [Conteúdo (CTT)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) oferece suporte ao Armazenamento de Dados do Azure Blob Store.
 
 * A interface do usuário CTT tem um recurso de recarregamento automático que recarrega a página de visão geral a cada 30 segundos.
 
