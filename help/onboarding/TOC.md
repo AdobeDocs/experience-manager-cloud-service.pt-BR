@@ -4,10 +4,10 @@ user-guide-title: Integração ao AEM as a Cloud Service
 breadcrumb-title: Guia de integração
 user-guide-description: Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 61fa965f14e566976db8ac6475553b9a9d3ed43a
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 93%
+source-wordcount: '209'
+ht-degree: 90%
 
 ---
 
@@ -27,6 +27,18 @@ ht-degree: 93%
       + [Noções básicas sobre programas e tipos de programas](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [Criação de um programa](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [Programas do Sandbox](getting-access-to-aem-in-cloud/sandbox-programs.md)
+   + Uso do Cloud Manager {#using-cloud-manager}
+      + [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md)
+      + [Configuração do pipeline de CI/CD](/help/implementing/cloud-manager/configure-pipeline.md)
+      + [Implantação do código](/help/implementing/cloud-manager/deploy-code.md)
+   + Noções básicas dos resultados de teste {#test-results}
+      + [Visão geral](/help/implementing/cloud-manager/overview-test-results.md)
+      + [Teste de qualidade de código](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [Regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md)
+      + [Teste funcional](/help/implementing/cloud-manager/functional-testing.md)
+      + [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
+   + [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md)
+   + [Noções básicas das notificações](/help/implementing/cloud-manager/notifications.md)
    + Criação de um projeto de aplicativo AEM {#create-application-project}
       + [Uso do Assistente](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Configuração do projeto](getting-access-to-aem-in-cloud/setting-up-project.md)
