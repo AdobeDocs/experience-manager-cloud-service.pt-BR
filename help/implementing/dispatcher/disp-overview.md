@@ -2,9 +2,9 @@
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 translation-type: tm+mt
-source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
+source-git-commit: 95e89bc665ee228da0a25a57a3a917a6b4c379ad
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4073'
 ht-degree: 9%
 
 ---
@@ -35,7 +35,8 @@ As Ferramentas do Dispatcher fazem parte do AEM geral como um SDK do Cloud Servi
 ## Download e extração das ferramentas {#extracting-the-sdk}
 
 As Ferramentas do Dispatcher, parte do [AEM como SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)do Cloud Service, podem ser baixadas de um arquivo zip no portal de Distribuição [de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) software. Qualquer nova configuração disponível na nova versão das Ferramentas do dispatcher pode ser usada para implantar em ambientes da Cloud que executam essa versão do AEM na Cloud ou superior.
-/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdDescompacte o SDK, que agrupa as Ferramentas do Dispatcher para macOS/Linux e Windows.
+
+Descompacte o SDK, que agrupa as Ferramentas do Dispatcher para macOS/Linux e Windows.
 
 **Para macOS/Linux**, torne o artefato da ferramenta dispatcher executável e execute-o. Ele extrairá automaticamente os arquivos das Ferramentas do Dispatcher abaixo do diretório no qual você os armazenou (onde `version` é a versão das Ferramentas do dispatcher).
 
