@@ -3,9 +3,9 @@ title: Acessibilidade em [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade [!DNL Adobe Experience Manager] ajudam os usuários portadores de deficiências.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
+source-git-commit: 726c63a9bb3426bea324abec87b5e9f7d5e9e755
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Os recursos principais em [!DNL Assets] são mais acessíveis do que antes e sã
 
 ## Suporte para uso do teclado {#keyboard-use}
 
-Muitos elementos da interface do usuário que podem ser clicados ou ativados com um ponteiro também podem ser envolvidos com o uso do teclado. Usando um teclado, os usuários podem se concentrar nos elementos da interface do usuário e realizar uma ação apropriada. Os usuários podem usar atalhos do teclado diretamente para acionar um comando ou uma ação sem precisar se concentrar nos elementos da interface e acioná-la usando o teclado. Por exemplo, os usuários podem abrir a linha do tempo de um ativo no lado esquerdo navegando até o controle da interface do usuário usando um teclado e pressionando a tecla Return e pressionando o atalho do `alt + 2` teclado.
+Muitos elementos da interface do usuário que podem ser clicados ou ativados com um ponteiro também podem ser envolvidos com o uso do teclado. Usando um teclado, os usuários podem se concentrar nos elementos da interface do usuário e realizar uma ação apropriada. Os usuários podem usar atalhos do teclado diretamente para acionar um comando ou uma ação sem precisar se concentrar nos elementos da interface e acioná-la usando o teclado. Por exemplo, os usuários podem abrir a linha do tempo de um ativo no lado esquerdo navegando até o controle da interface do usuário usando um teclado, pressionando `Return` e pressionando o atalho do `Alt + 2` teclado.
 
 <!-- TBD items:
 
