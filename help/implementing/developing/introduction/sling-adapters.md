@@ -2,9 +2,9 @@
 title: Uso de adaptadores Sling
 description: Como deslizar o oferta e o padrão do adaptador para converter convenientemente objetos que implementam a interface adaptável
 translation-type: tm+mt
-source-git-commit: 4201207acb48ab61892f4dd5de05d7f5f9f7ba83
+source-git-commit: 8826fde91a2ab0be0fe7850ae20f46ba023cdf55
 workflow-type: tm+mt
-source-wordcount: '2437'
+source-wordcount: '2442'
 ht-degree: 1%
 
 ---
@@ -358,4 +358,4 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
 
 #### Outro {#other}
 
-Além disso, Sling / JCR / COM também fornece um ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` para objetos MAC personalizados ([Object Content Mapping](https://jackrabbit.apache.org/object-content-mapping.html)).
+Além disso, Sling / JCR / COM também fornece um [`AdapterFactory`](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory) para objetos MAC personalizados ([Object Content Mapping](https://jackrabbit.apache.org/object-content-mapping.html)).
