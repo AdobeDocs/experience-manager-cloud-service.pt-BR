@@ -2,9 +2,9 @@
 title: Gerenciar Ambientes - Cloud Service
 description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: c015c631f6ad988b1482b45281a2ed9840e6af45
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '830'
 ht-degree: 7%
 
 ---
@@ -63,6 +63,16 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
 
    >[!NOTE]
    >Caso ainda não tenha configurado o pipeline de não-produção, a tela *Visão geral* exibe o cartão de onde você pode criar o pipeline de não-produção.
+
+
+### Exibição dos Ambientes {#viewing-environment}
+
+O cartão de **Ambientes** na página Visão geral lista até três ambientes.
+
+O usuário pode selecionar o botão **Mostrar tudo** para navegar até a página de resumo do **Ambiente** para visualização de uma tabela com uma lista completa de ambientes.
+
+![](assets/environment-view1.png)
+
 
 ## Atualização do Ambiente {#updating-dev-environment}
 
