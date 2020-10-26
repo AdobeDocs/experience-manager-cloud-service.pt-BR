@@ -2,9 +2,9 @@
 title: Configurações e o navegador de configuração
 description: Entenda AEM configurações e como elas gerenciam as configurações de espaço de trabalho em AEM.
 translation-type: tm+mt
-source-git-commit: 174648c78b71ef60d2d2507c3c4fbf18bbdac647
+source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1496'
 ht-degree: 2%
 
 ---
@@ -19,13 +19,13 @@ AEM configurações servem para gerenciar configurações em AEM e servir como e
 Uma configuração pode ser considerada de dois pontos de vista diferentes.
 
 * [Um administrador](#configurations-administrator) usa configurações como espaços de trabalho no AEM para definir e gerenciar grupos de configurações.
-* [Um desenvolvedor](#configurations-developer) usa o mecanismo de configuração subjacente que implementa Sling Context-Aware Configurations para persistir e procurar configurações em AEM.
+* [Um desenvolvedor](#configurations-developer) usa o mecanismo de configuração subjacente que implementa configurações para persistir e procurar configurações no AEM.
 
-Simplificando, do ponto de visualização de um administrador, as configurações são a forma como você cria espaços de trabalho para gerenciar configurações no AEM, enquanto o desenvolvedor deve entender como AEM persiste e procura essas configurações no repositório.
+Em resumo: do ponto de visualização de um administrador, as configurações são a forma como você cria espaços de trabalho para gerenciar as configurações no AEM, enquanto o desenvolvedor deve entender como o AEM usa e gerencia essas configurações no repositório.
 
 Independentemente da sua perspectiva, as configurações servem dois objetivos principais em AEM:
 
-* As configurações permitem determinados recursos para grupos de usuários.
+* As configurações permitem determinados recursos para determinados grupos de usuários.
 * As configurações definem direitos de acesso para esses recursos.
 
 ## Configurações como administrador {#configurations-administrator}
@@ -38,6 +38,8 @@ As configurações podem ser criadas para vários recursos diferentes dentro do 
 * [Segmentos do Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Modelos editáveis](/help/sites-cloud/authoring/features/templates.md)
+
+### Exemplo {#administrator-example}
 
 Por exemplo, um administrador pode criar duas configurações para Modelos editáveis.
 
@@ -122,7 +124,7 @@ Embora o [administrador e os usuários possam considerar as configurações como
 
 O conteúdo faz referência à configuração associada por meio de uma `cq:conf` propriedade. AEM realiza uma pesquisa com base no conteúdo e é uma `cq:conf` propriedade contextual localizar a configuração apropriada.
 
-### Um exemplo simples {#example}
+### Exemplo {#developer-example}
 
 Neste exemplo, vamos supor que você tenha algum código de aplicativo que esteja interessado nas configurações de DAM.
 
@@ -193,7 +195,7 @@ Para suportar isso, a pesquisa de configuração no AEM tem o mecanismo de heran
 
 ### Usando configurações {#using-configurations}
 
-As configurações no AEM são baseadas em Configurações Sling sensíveis ao contexto. Os pacotes Sling fornecem uma API de serviço que pode ser usada para obter configurações sensíveis ao contexto. Configurações sensíveis ao contexto são configurações relacionadas a um recurso de conteúdo ou a uma árvore de recursos, conforme [descrito no exemplo anterior.](#example)
+As configurações no AEM são baseadas em Configurações Sling sensíveis ao contexto. Os pacotes Sling fornecem uma API de serviço que pode ser usada para obter configurações sensíveis ao contexto. Configurações sensíveis ao contexto são configurações relacionadas a um recurso de conteúdo ou a uma árvore de recursos, conforme [descrito no exemplo anterior.](#developer-example)
 
 Para obter mais detalhes sobre Configurações sensíveis ao contexto, exemplos e como usá-las, [consulte a documentação Sling.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
