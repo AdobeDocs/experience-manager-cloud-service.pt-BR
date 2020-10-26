@@ -2,7 +2,7 @@
 title: Desenvolvendo e comparação de páginas
 description: Entenda como o recurso Diferença de página funciona e como ele pode afetar um desenvolvedor
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 11%
@@ -30,7 +30,7 @@ Quando o conteúdo é comparado, a árvore inteira até a página a ser comparad
 
 Uma tarefa de limpeza é executada automaticamente para limpar esse conteúdo temporário.
 
-## Permissões  {#permissions}
+## Limitações           {#limitations}
 
 O diff ocorre no cliente por meio da comparação DOM, tornando o processo diff simples, no entanto, há várias limitações que precisam ser consideradas pelo desenvolvedor.
 
