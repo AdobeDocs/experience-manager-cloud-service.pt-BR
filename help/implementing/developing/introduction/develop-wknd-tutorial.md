@@ -1,11 +1,11 @@
 ---
 title: Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND
-description: Novo no desenvolvimento do AEM? Precisa de uma atualização das práticas recomendadas? Este é o lugar para o start! O objetivo deste tutorial multiparte é ensinar um desenvolvedor novo no AEM a implementar um site no AEM usando os padrões e as tecnologias mais recentes.
+description: Novo no desenvolvimento de AEM? Precisa de uma atualização das práticas recomendadas? Este é o lugar para o start! A meta para este tutorial de várias partes é ensinar um desenvolvedor que é novo em AEM como implementar um site na AEM usando os mais recentes padrões e tecnologias.
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 20a19c558be17631889f0253b3ad4e5a71ebcce2
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 21%
+source-wordcount: '254'
+ht-degree: 22%
 
 ---
 
@@ -14,23 +14,23 @@ ht-degree: 21%
 
 ## Visão geral {#overview}
 
-Novidade para desenvolver o Adobe Experience Manager como um serviço em nuvem? Precisa de uma atualização das práticas mais recentes? Este é o lugar para o start!
+Novo no desenvolvimento do Adobe Experience Manager como Cloud Service? Precisa de uma atualização das práticas mais recentes? Este é o lugar para o start!
 
-O objetivo deste tutorial multiparte é ensinar um desenvolvedor novo no AEM a implementar um site no AEM usando os padrões e as tecnologias mais recentes. A esperança é que no final deste tutorial você compreenda a base básica da plataforma do AEM e o conhecimento de alguns padrões de design comuns.
+A meta para este tutorial de várias partes é ensinar um desenvolvedor que é novo em AEM como implementar um site na AEM usando os mais recentes padrões e tecnologias. A esperança é que no final deste tutorial você entenda a base básica da plataforma AEM e o conhecimento de alguns dos padrões de design comuns.
 
 ## Tutorial do WKND Developer {#wknd-developer-tutorial}
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[O Tutorial do desenvolvedor da WKND está disponível aqui](https://docs.adobe.com/content/help/br/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) e o orienta a criar um projeto do AEM usando as tecnologias mais recentes e as práticas recomendadas.
+[O Tutorial do desenvolvedor da WKND está disponível aqui](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) e o orienta a criar um projeto AEM usando as tecnologias mais recentes e as práticas recomendadas.
 
 ## Conceitos principais {#core-concepts}
 
-A implementação do tutorial aproveita muitos recursos avançados do AEM. O site será implementado usando:
+A implementação do tutorial aproveita muitos recursos avançados da AEM. O site será implementado usando:
 
-* [Arquivo de projeto do AEM Maven](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
-* [Componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
+* [Arquétipo de Projeto Maven AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
 * [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)
-* Modelos Sling
+* [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Modelos editáveis](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
 * [Sistema de estilos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
