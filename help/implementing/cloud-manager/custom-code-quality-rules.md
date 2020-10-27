@@ -2,9 +2,9 @@
 title: Regras de qualidade de código personalizado - Cloud Services
 description: Regras de qualidade de código personalizado - Cloud Services
 translation-type: tm+mt
-source-git-commit: 457ee90f0c0eeb9325cab0c66694862772390611
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2285'
 ht-degree: 6%
 
 ---
@@ -555,7 +555,7 @@ public void doThis(Resource resource) {
 
 **Chave**: CQRules:AMSCORE-554
 
-**Tipo**: Cheiro de código
+**Tipo**: Compatibilidade entre código e Cloud Service
 
 **Gravidade**: Menor
 
@@ -569,7 +569,7 @@ Consulte [Apache Sling Event e Job Handling](https://sling.apache.org/documentat
 
 **Chave**: AMSCORE-553
 
-**Tipo**: Cheiro de código
+**Tipo**: Compatibilidade entre código e Cloud Service
 
 **Gravidade**: Menor
 
@@ -680,7 +680,7 @@ Semelhante aos *pacotes não devem conter configurações* OSGi do Duplicado, es
 
 **Chave**: ClassicUIAuthoringMode
 
-**Tipo**: Cheiro de código
+**Tipo**: Compatibilidade entre código e Cloud Service
 
 **Gravidade**: Menor
 
@@ -692,7 +692,7 @@ A configuração do OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` d
 
 **Chave**: ComponentWithOnlyClassicUIDialog
 
-**Tipo**: Cheiro de código
+**Tipo**: Compatibilidade entre código e Cloud Service
 
 **Gravidade**: Menor
 
@@ -710,7 +710,7 @@ A documentação das Ferramentas de modernização AEM fornece documentação e 
 
 **Chave**: ImmutableMutableMixedPackage
 
-**Tipo**: Cheiro de código
+**Tipo**: Compatibilidade entre código e Cloud Service
 
 **Gravidade**: Menor
 
@@ -724,7 +724,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/pt-BR/exper
 
 **Chave**: ReverseReplication
 
-**Tipo**: Cheiro de código
+**Tipo**: Compatibilidade entre código e Cloud Service
 
 **Gravidade**: Menor
 
