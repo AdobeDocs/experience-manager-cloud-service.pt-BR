@@ -2,9 +2,9 @@
 title: Gerenciar Ambientes - Cloud Service
 description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '850'
 ht-degree: 7%
 
 ---
@@ -68,9 +68,17 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
 
 O cartão de **Ambientes** na página Visão geral lista até três ambientes.
 
-O usuário pode selecionar o botão **Mostrar tudo** para navegar até a página de resumo do **Ambiente** para visualização de uma tabela com uma lista completa de ambientes.
+1. Selecione o botão **Mostrar tudo** para navegar até a página de resumo do **Ambiente** para visualização de uma tabela com uma lista completa de ambientes.
 
-![](assets/environment-view1.png)
+   ![](assets/environment-view-1.png)
+
+1. A página **Ambientes** exibe a lista de todos os ambientes existentes.
+
+   ![](assets/environment-view-2.png)
+
+1. Selecione qualquer um dos ambientes da lista para visualização dos detalhes do ambiente.
+
+   ![](assets/environment-view-3.png)
 
 
 ## Atualização do Ambiente {#updating-dev-environment}
