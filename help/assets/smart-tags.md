@@ -1,17 +1,17 @@
 ---
-title: Marcar imagens com serviços inteligentes
-description: Marque imagens com serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando os serviços Adobe Sensei.
+title: Marcar imagens automaticamente com tags geradas por AI
+description: Marque imagens usando serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas [!DNL Adobe Sensei] usando serviços.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
 workflow-type: tm+mt
-source-wordcount: '2424'
+source-wordcount: '2433'
 ht-degree: 6%
 
 ---
 
 
-# Treinar o serviço Smart Tag e marcar suas imagens {#train-service-tag-assets}
+# Treinar o Serviço de conteúdo inteligente e marcar automaticamente suas imagens {#train-service-tag-assets}
 
 As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar seus ativos digitais. Marcar ativos com um vocabulário controlado por taxonomia garante que esses ativos possam ser facilmente identificados e recuperados por pesquisas baseadas em tags.
 
@@ -19,7 +19,7 @@ Comparado aos vocabulários de linguagem natural, a marcação baseada na taxono
 
 In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
-<!-- TBD: Create a similar flowchart for how training works in CS.
+<!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
@@ -33,13 +33,13 @@ Para usar a marcação inteligente, conclua as seguintes tarefas:
 
 As Tags inteligentes são aplicáveis somente para [!DNL Adobe Experience Manager Assets] clientes. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
-<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
 ## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
 >
->Por padrão, as novas [!DNL Experience Manager Assets] implantações são integradas [!DNL Adobe Developer Console] ao. Ajuda a configurar a funcionalidade de tags inteligentes mais rapidamente. Nas implantações existentes, os administradores podem [configurar manualmente a integração](/help/assets/smart-tags-configuration.md#aio-integration)de tags inteligentes.
+>Por padrão, as novas [!DNL Experience Manager Assets] implantações são integradas [!DNL Adobe Developer Console] ao. Ajuda a configurar a funcionalidade de tags inteligentes mais rapidamente. Nas implantações mais antigas, os administradores podem [configurar manualmente a integração](/help/assets/smart-tags-configuration.md#aio-integration)de tags inteligentes.
 
 É possível integrar [!DNL Adobe Experience Manager] com as Tags inteligentes usando [!DNL Adobe Developer Console]. Use essa configuração para acessar o serviço Tags inteligentes de dentro [!DNL Experience Manager]. Consulte [configurar o Experience Manager para a marcação inteligente de ativos](smart-tags-configuration.md) para tarefa para configurar as Tags inteligentes. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
@@ -154,28 +154,36 @@ Depois de ter treinado o serviço de Tags inteligentes, é possível acionar o f
 1. Clique em **[!UICONTROL Start]**. O fluxo de trabalho aplica suas tags em ativos. Navegue até a pasta de ativos e reveja as tags para verificar se seus ativos estão marcados corretamente. Para obter detalhes, consulte [gerenciar tags](#manage-smart-tags-and-searches)inteligentes.
 
 >[!NOTE]
->
+
 >Nos ciclos de marcação subsequentes, somente os ativos modificados são marcados novamente com tags treinadas recentemente.No entanto, mesmo ativos inalterados são marcados se a diferença entre os últimos e os atuais ciclos de marcação do fluxo de trabalho de marcação exceder 24 horas. Para workflows de marcação periódica, os ativos inalterados são marcados quando o intervalo de tempo excede 6 meses.
 
 ### Marcar ativos carregados {#tag-uploaded-assets}
 
 O Experience Manager pode marcar automaticamente os ativos que os usuários carregam no DAM. Para fazer isso, os administradores configuram um fluxo de trabalho para adicionar uma etapa disponível de aos ativos de tags inteligentes. Consulte [como ativar a marcação inteligente para ativos](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)carregados.
 
-## Gerenciar tags inteligentes e pesquisas de imagens {#manage-smart-tags-and-searches}
+## Gerenciar tags inteligentes e pesquisas de ativos {#manage-smart-tags-and-searches}
 
-É possível preparar tags inteligentes para remover tags imprecisas que possam ter sido atribuídas às imagens da sua marca, de modo que somente as tags mais relevantes sejam exibidas.
+É possível preparar tags inteligentes para remover tags imprecisas que possam ter sido atribuídas aos ativos da sua marca, para que somente as tags mais relevantes sejam exibidas.
 
-A moderação de tags inteligentes também ajuda a refinar pesquisas baseadas em tags para imagens, garantindo que sua imagem apareça nos resultados da pesquisa para obter as tags mais relevantes. Essencialmente, ajuda a eliminar as chances de imagens não relacionadas aparecerem nos resultados da pesquisa.
+A moderação de tags inteligentes também ajuda a refinar pesquisas baseadas em tags para ativos, garantindo que seus ativos sejam exibidos nos resultados da pesquisa para obter as tags mais relevantes. Essencialmente, ajuda a eliminar as chances de ativos não relacionados aparecerem nos resultados da pesquisa.
 
-Também é possível atribuir uma classificação mais alta a uma tag para aumentar sua relevância em relação a uma imagem. A promoção de uma tag para uma imagem aumenta as chances de a imagem aparecer nos resultados da pesquisa quando uma pesquisa é realizada com base na tag específica.
+Você também pode atribuir uma classificação mais alta a uma tag para aumentar sua relevância em relação a um ativo. A promoção de uma tag para um ativo aumenta as chances de o ativo aparecer nos resultados da pesquisa quando uma pesquisa é realizada com base na tag específica.
 
-1. Na caixa Omnisearch, procure ativos com base em uma tag.
-1. Inspect os resultados da pesquisa para identificar uma imagem que você não acha relevante para sua pesquisa.
-1. Selecione a imagem e clique no ícone **[!UICONTROL Gerenciar tags]** na barra de ferramentas.
-1. Na página **[!UICONTROL Gerenciar tags]** , inspecione as tags. Se você não quiser que a imagem seja pesquisada com base em uma tag específica, selecione a tag e clique no ícone Excluir na barra de ferramentas. Como alternativa, clique no `X` símbolo que aparece ao lado do rótulo.
-1. Para atribuir uma classificação superior a uma tag, selecione a tag e clique no ícone promover na barra de ferramentas. A tag promovida é movida para a seção **[!UICONTROL Tags]** .
-1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
-1. Navegue até a página de propriedades da imagem. Observe que a tag promovida tem uma relevância alta e, portanto, aparece mais alta nos resultados da pesquisa.
+Para moderar as tags inteligentes de seus ativos:
+
+1. No campo Omnisearch, procure ativos com base em uma tag.
+
+1. Inspect os resultados da pesquisa para identificar os ativos que você não considera relevantes para a sua pesquisa.
+
+1. Selecione o ativo e, em seguida, selecione o ícone ![](assets/do-not-localize/manage-tags-icon.png) Gerenciar tags na barra de ferramentas.
+
+1. Na página **[!UICONTROL Gerenciar tags]** , inspecione as tags. Se você não quiser que o ativo seja pesquisado com base em uma tag específica, selecione a tag e selecione o ícone ![](assets/do-not-localize/delete-icon.png) Excluir na barra de ferramentas. Como alternativa, selecione `X` o símbolo ao lado do rótulo.
+
+1. Para atribuir uma classificação superior a uma tag, selecione a tag e o ícone ![](assets/do-not-localize/promote-icon.png) Promover na barra de ferramentas. A tag promovida é movida para a seção **[!UICONTROL Tags]** .
+
+1. Selecione **[!UICONTROL Salvar]** e, em seguida, selecione **[!UICONTROL OK]** para fechar a caixa de diálogo [!UICONTROL Êxito] .
+
+1. Navegue até a página [!UICONTROL Propriedades] do ativo. Observe que a tag promovida tem uma relevância alta e, portanto, aparece mais alta nos resultados da pesquisa.
 
 ### Compreender AEM resultados de pesquisa com tags inteligentes {#understandsearch}
 
@@ -210,4 +218,5 @@ Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use o As
 >
 >* [Configurar Experience Manager para marcação inteligente](smart-tags-configuration.md)
 >* [Saiba como as tags inteligentes ajudam a gerenciar ativos](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Marcação inteligente de ativos de vídeo](smart-tags-video-assets.md)
 
