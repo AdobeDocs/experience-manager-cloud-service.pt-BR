@@ -2,9 +2,9 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0.
 description: '[!DNL Adobe Experience Manager] como notas de versão de Cloud Service para 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
+source-git-commit: 12883e87d4aee796b23c366e77651134dafb8f4c
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '855'
 ht-degree: 23%
 
 ---
@@ -66,7 +66,7 @@ Content to come
 
 * CIF Cloud config UI exibiu os botões &quot;Salvar e fechar&quot; para configurações em /lib e /apps/. Mas essas são somente leitura, portanto, a interface do usuário foi corrigida para exibir somente o botão &quot;Fechar&quot;.
 
-### Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 * A página Ambientes foi reprojetada.
 
@@ -76,8 +76,8 @@ Content to come
 
 * O número de variáveis por ambiente aumentou para 200.
 
-* A placa de Ambiente na página Visão geral agora lista até três ambientes. Os usuários podem selecionar o botão **Mostrar todos** para navegar até a página de resumo do Ambiente para visualização de uma tabela com uma lista completa de ambientes.
-
+* A placa de Ambiente na página Visão geral agora lista até três ambientes. Os usuários podem selecionar o botão **Mostrar tudo** para navegar até a página de resumo do Ambiente para visualização de uma tabela com uma lista completa de ambientes.
+Consulte [Visualizando Ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-cloud-manager}
 
