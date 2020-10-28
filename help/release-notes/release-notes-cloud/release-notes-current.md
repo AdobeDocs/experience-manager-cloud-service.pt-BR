@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0.
 description: '[!DNL Adobe Experience Manager] como notas de versão de Cloud Service para 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 12883e87d4aee796b23c366e77651134dafb8f4c
+source-git-commit: 4cbee57ff2490802bb473279a37fe6c539a4f44b
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 23%
+source-wordcount: '869'
+ht-degree: 22%
 
 ---
 
@@ -102,7 +102,7 @@ Consulte [Visualizando Ambiente](/help/implementing/cloud-manager/manage-environ
 
 ### Fluxos de trabalhos {#workflows}
 
-* Suporte adicionado para pesquisar instâncias do fluxo de trabalho com base em Título do fluxo de trabalho, Modelo do fluxo de trabalho, Status, Iniciador, Caminho da carga e Data do Start.
+* Foi adicionado suporte para pesquisar instâncias de fluxo de trabalho com base em Título do fluxo de trabalho, Modelo do fluxo de trabalho, Status, Iniciador, Caminho da carga e Data do Start. Consulte Instâncias [do fluxo de trabalho de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)pesquisa.
 
 ## Ferramenta Transferência de conteúdo {#content-transfer-tool}
 
