@@ -2,9 +2,9 @@
 title: Configuração da segmentação com o ContextHub
 description: Saiba como configurar a segmentação usando o ContextHub.
 translation-type: tm+mt
-source-git-commit: 82ad2cda70dd664ac9456a04f34e2d5831687fc1
+source-git-commit: c9c7176f6c3bf70529b761183341a2490d4ecbfc
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1692'
 ht-degree: 2%
 
 ---
@@ -26,14 +26,14 @@ O console do [Audiência](audiences.md) é usado para gerenciar segmentos para o
 
 Para acessar seus segmentos, na navegação global, selecione **Navegação > Personalização > Audiências**.
 
-![Gerenciamento de audiências](/help/sites-cloud/authoring/assets/contexthub-segmentation-audiences.png)
+![Gerenciamento de audiências](../assets/contexthub-segmentation-audiences.png)
 
 ## Editor do segmento {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
 O Editor **de** segmentos permite que você modifique facilmente um segmento. Para editar um segmento, selecione-o na lista de segmentos e clique no botão **Editar** .
 
-![Editor de segmentos](/help/sites-cloud/authoring/assets/contexthub-segment-editor.png)
+![Editor de segmentos](../assets/contexthub-segment-editor.png)
 
 Usando o navegador de componentes, você pode adicionar container **AND** e **OR** para definir a lógica do segmento, em seguida, adicionar componentes adicionais para comparar propriedades e valores ou scripts de referência e outros segmentos para definir os critérios de seleção (consulte [Criação de um novo segmento](#creating-a-new-segment)) para definir o cenário exato para a seleção do segmento.
 
@@ -87,13 +87,15 @@ As referências a seguir estão disponíveis prontamente para vinculação diret
 
 Para definir seu novo segmento:
 
-1. Depois de [acessar os segmentos](#accessing-segments), clique ou toque no botão Criar e selecione **Criar segmento** do ContextHub.
+1. Depois de [acessar os segmentos](#accessing-segments), [navegue até a pasta](#organizing-segments) onde deseja criar o segmento ou deixe-o na raiz.
 
-   ![Adicionar segmento](/help/sites-cloud/authoring/assets/contexthub-create-segment.png)
+1. Toque ou clique no botão **Criar** e selecione **Criar segmento** do ContextHub.
+
+   ![Adicionar segmento](../assets/contexthub-create-segment.png)
 
 1. No **Novo segmento** ContextHub, digite um título para o segmento, bem como um valor de aumento, se necessário, e toque ou clique em **Criar**.
 
-   ![Novo segmento](/help/sites-cloud/authoring/assets/contexthub-new-segment.png)
+   ![Novo segmento](../assets/contexthub-new-segment.png)
 
    Cada segmento tem um parâmetro de aumento que é usado como fator de ponderação. Um número mais alto indica que o segmento será selecionado de preferência a um segmento com um número menor em instâncias onde vários segmentos são válidos.
 
@@ -104,7 +106,7 @@ Para definir seu novo segmento:
 1. Arraste uma comparação ou referência para o editor de segmentos que aparecerá no container AND padrão.
 1. Clique com o duplo ou toque na opção de configuração da nova referência ou segmento para editar os parâmetros específicos. Neste exemplo, estamos a testar pessoas em Basileia.
 
-   ![Teste para pessoas em Basileia](/help/sites-cloud/authoring/assets/contexthub-comparing-property-value.png)
+   ![Teste para pessoas em Basileia](../assets/contexthub-comparing-property-value.png)
 
    Sempre defina um Tipo **de** dados, se possível, para garantir que suas comparações sejam avaliadas corretamente. Consulte [Comparações](#comparisons) para obter mais informações.
 
@@ -130,7 +132,7 @@ O exemplo a seguir é usado para selecionar visitantes considerados em nosso gru
 
 Você start colocando um componente OU container dentro do container AND padrão. No container OR, é possível adicionar a propriedade ou os componentes de referência.
 
-![Segmentar com operador OU](/help/sites-cloud/authoring/assets/contexthub-or-operator.png)
+![Segmentar com operador OU](../assets/contexthub-or-operator.png)
 
 É possível aninhar vários operadores E e OU, conforme necessário.
 
@@ -186,6 +188,75 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Adicione o componente de referência **de** script no local desejado do segmento.
 1. Abra a caixa de diálogo de edição do componente de Referência **de** script. Se [corretamente configurado](#defining-a-script-to-reference), o script deverá estar disponível no menu suspenso de nome **do** Script.
 
+## Organização de segmentos {#organizing-segments}
+
+Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar como uma lista simples. Nesses casos, pode ser útil criar pastas para gerenciar seus segmentos.
+
+### Create a New Folder {#create-folder}
+
+1. Depois de [acessar os segmentos](#accessing-segments), clique ou toque no botão **Criar** e selecione **Pasta**.
+
+   ![Adicionar pasta](../assets/contexthub-create-segment.png)
+
+1. Forneça um **Título** e um **Nome** para sua pasta.
+   * O **Título** deve ser descritivo.
+   * O **Nome** se tornará o nome do nó no repositório.
+      * Será gerado automaticamente com base no título e ajustado de acordo com as convenções de nomenclatura [AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Pode ser ajustado, se necessário.
+
+   ![Criar pasta](../assets/contexthub-create-folder.png)
+
+1. Toque ou clique em **Criar**.
+
+   ![Confirmar pasta](../assets/contexthub-confirm-folder.png)
+
+1. A pasta será exibida na lista de segmentos.
+   * A forma como você classifica as colunas afetará o local em que a nova pasta será exibida na lista.
+   * Você pode tocar ou clicar nos cabeçalhos das colunas para ajustar sua classificação.
+      ![A nova pasta](../assets/contexthub-folder.png)
+
+### Modificar Pastas Existentes {#modify-folders}
+
+1. Depois de [acessar os segmentos](#accessing-segments), clique ou toque na pasta que deseja modificar para selecioná-la.
+
+   ![Selecionar pasta](../assets/contexthub-select-folder.png)
+
+1. Toque ou clique em **Renomear** na barra de ferramentas para renomear a pasta.
+
+1. Forneça um novo Título **da** pasta e toque ou clique em **Salvar**.
+
+   ![Renomear pasta](../assets/contexthub-rename-folder.png)
+
+>[!NOTE]
+>
+>Ao renomear pastas, somente o título pode ser alterado. O nome não pode ser alterado.
+
+### Excluir uma pasta
+
+1. Depois de [acessar os segmentos](#accessing-segments), clique ou toque na pasta que deseja modificar para selecioná-la.
+
+   ![Selecionar pasta](../assets/contexthub-select-folder.png)
+
+1. Toque ou clique em **Excluir** na barra de ferramentas para excluir a pasta.
+
+1. Uma caixa de diálogo apresenta uma lista de pastas selecionadas para exclusão.
+
+   ![Confirmar exclusão](../assets/contexthub-confirm-segment-delete.png)
+
+   * Toque ou clique em **Excluir** para confirmar.
+   * Toque ou clique em **Cancelar** para abortar.
+
+1. Se alguma das pastas selecionadas contiver subpastas ou segmentos, sua exclusão deverá ser confirmada.
+
+   ![Confirmar exclusão de filhos](../assets/contexthub-confirm-segment-child-delete.png)
+
+   * Toque ou clique em **Forçar exclusão** para confirmar.
+   * Toque ou clique em **Cancelar** para abortar.
+
+>[!NOTE]
+>
+> Não é possível mover um segmento de uma pasta para outra.
+
 ## Teste da aplicação de um segmento {#testing-the-application-of-a-segment}
 
 Depois que o segmento é definido, os resultados potenciais podem ser testados com a ajuda do **[ContextHub](contexthub.md).**
@@ -197,11 +268,11 @@ Depois que o segmento é definido, os resultados potenciais podem ser testados c
 
 Por exemplo, nossa definição de segmento simples para identificar usuários em Basel é baseada na localização do usuário. O carregamento de uma pessoa específica que corresponde a esses critérios mostra se o segmento foi resolvido com êxito:
 
-![Segmento que resolve](/help/sites-cloud/authoring/assets/contexthub-segment-resolve.png)
+![Segmento que resolve](../assets/contexthub-segment-resolve.png)
 
 Ou se não for resolvido:
 
-![Segmento que não resolve](/help/sites-cloud/authoring/assets/contexthub-segment-doesnt-resolve.png)
+![Segmento que não resolve](../assets/contexthub-segment-doesnt-resolve.png)
 
 >[!NOTE]
 >
