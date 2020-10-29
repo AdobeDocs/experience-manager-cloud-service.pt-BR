@@ -1,11 +1,11 @@
 ---
 title: Armazenamento em cache e desempenho
-description: Armazenamento em cache e desempenho
-translation-type: ht
-source-git-commit: 2997a28e79b51e88ececbd46c81dbc6a6c443e68
-workflow-type: ht
-source-wordcount: '830'
-ht-degree: 100%
+description: Saiba mais sobre as diferentes configurações disponíveis para permitir que o GraphQL e o armazenamento em cache de conteúdo otimizem o desempenho da implementação de seu comércio.
+translation-type: tm+mt
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+workflow-type: tm+mt
+source-wordcount: '848'
+ht-degree: 97%
 
 ---
 
