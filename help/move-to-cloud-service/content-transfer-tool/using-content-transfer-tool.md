@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
+source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 78%
+source-wordcount: '1855'
+ht-degree: 71%
 
 ---
 
@@ -26,11 +26,18 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Para usar a Ferramenta de transferência de conteúdo, você precisará ser um usuário administrador na instância de origem e pertencer ao grupo de administradores de AEM local na instância de Cloud Service para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão recuperar o token de acesso para usar a ferramenta Transferência de conteúdo.
 
+* Atualmente, o tamanho padrão de MongoDB para um AEM como uma instância de autor de Cloud Service é de 32 GB. É recomendável que, para um tamanho de armazenamento de segmentos maior que 20 GB, você envie um ticket de suporte para aumentar o tamanho do MongoDB.
+
 * Durante a fase de extração, a ferramenta Transferência de conteúdo é executada em uma instância de origem do AEM ativa.
 
-* A *Fase de assimilação* do autor diminuirá a implantação do autor inteiro. Isso significa que o AEM do autor não estará disponível durante todo o processo de ingestão.
+* Depois de concluir a fase de *Extração* do processo de transferência de conteúdo e antes de iniciar a Fase *de* ingestão para ingerir conteúdo em seu AEM como um Cloud Service *Stage* ou instâncias de *produção* , você precisará registrar um ticket de suporte para notificar o Adobe da sua intenção de executar a *ingestão* ** para que o Adobe possa garantir que não ocorram interrupções durante o processo deingestão. Você precisará registrar o ticket de suporte 1 semana antes da data de *ingestão* planejada. Depois que você enviar o ticket de suporte, a equipe de suporte fornecerá orientações sobre as próximas etapas.
+   * Registre um ticket de suporte com os seguintes detalhes:
+   1. Data exata e hora estimada (com o seu fuso horário) quando planeja start da fase de *ingestão* .
+   2. Tipo de ambiente (Estágio ou Produção) no qual você planeja assimilar dados.
+   3. ID do programa
 
-* Atualmente, o tamanho padrão de MongoDB para um AEM como uma instância de autor de Cloud Service é de 32 GB. É recomendável que, para um tamanho de armazenamento de segmentos maior que 20 GB, você envie um ticket de suporte para aumentar o tamanho do MongoDB.
+* A *Fase de assimilação* do autor diminuirá a implantação do autor inteiro. Isso significa que o AEM do autor não estará disponível durante todo o processo de ingestão. Certifique-se também de que nenhum pipeline do Cloud Manager seja executado durante a fase de *ingestão* .
+
 
 ## Disponibilidade {#availability}
 
