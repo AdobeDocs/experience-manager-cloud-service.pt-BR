@@ -2,10 +2,10 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0.
 description: '[!DNL Adobe Experience Manager] como notas de versão de Cloud Service para 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 95a5c9ad098a3670221847b9c45cdf6c6e22192f
+source-git-commit: a544acab6f79fa60990bfc3915a5a664befb8b09
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 22%
+source-wordcount: '882'
+ht-degree: 21%
 
 ---
 
@@ -19,7 +19,7 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
 A seguinte versão (2020.11.0) será lançada em 1º de dezembro de 2020.
 
-## [!DNL Adobe Experience Manager Sites] como um Cloud Service {#sitess}
+## [!DNL Adobe Experience Manager Sites] como um Cloud Service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
@@ -72,7 +72,7 @@ Content to come
 
 * A página de ambientes hibernados agora mostra um status discreto no Cloud Manager.
 
-* O container de build do Cloud Manager agora é compatível com Java 8 e Java 11.
+* O container de compilação do Cloud Manager agora oferece suporte à compilação de projetos usando Java 8 ou Java 11. O suporte para Java 11 é fornecido pelo sistema de cadeias de ferramentas Maven.
 
 * O número de variáveis por ambiente aumentou para 200.
 
