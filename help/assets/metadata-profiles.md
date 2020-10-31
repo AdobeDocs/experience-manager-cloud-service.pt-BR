@@ -3,7 +3,7 @@ title: Perfis de metadados
 description: Saiba mais sobre perfis de metadados para ativos. Saiba como criar um perfil de metadados e aplicá-lo aos ativos da pasta.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 23%
@@ -89,7 +89,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. No painel esquerdo, toque em **[!UICONTROL Ativos]** e navegue até a pasta à qual deseja aplicar um perfil de metadados.
 1. Na pasta, toque ou clique na marca de seleção para selecioná-la e, em seguida, toque ou clique em **Propriedades**.
-1. Selecione a guia **[!UICONTROL Perfis de metadados]**, selecione o perfil no menu suspenso e toque em **[Salvar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+1. Selecione a guia **[!UICONTROL Perfis de metadados]**, selecione o perfil no menu suspenso e toque em **[!UICONTROL Salvar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
 ### Aplicar um perfil de metadados globalmente {#applying-a-metadata-profile-globally}
 
