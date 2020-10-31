@@ -2,9 +2,9 @@
 title: Perfis de vídeo do Dynamic Media
 description: O Dynamic Media já vem com um perfil Adaptive Video Encoding predefinido. As configurações neste perfil predefinido são otimizadas para oferecer aos clientes a melhor experiência de visualização possível. Você também pode adicionar recorte inteligente aos vídeos.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3680'
 ht-degree: 17%
 
 ---
@@ -300,10 +300,10 @@ Você pode editar um perfil de codificação de vídeo existente para aproveitar
 1. Próximo ao canto inferior direito da página, toque em **[!UICONTROL Adicionar]**.
 1. Faça uma das seguintes opções:
 
-   * Repita as etapas 3 e 4 para adicionar outro parâmetro ao seu perfil de codificação de vídeo.
+   * Repita as etapas 3 e 4 para adicionar outro parâmetro ao perfil de codificação de vídeo.
    * Perto do canto superior esquerdo da página, toque em **[!UICONTROL Salvar tudo]**.
 
-1. No canto superior esquerdo da página CRXDE Lite, toque no ícone Início **[!UICONTROL traseiro]** para retornar ao AEM.
+1. No canto superior esquerdo da página CRXDE Lite, toque no ícone **[!UICONTROL Voltar para a página inicial]** para retornar ao AEM.
 
 ### Edição de um Perfil de vídeo {#editing-a-video-encoding-profile}
 
@@ -424,6 +424,6 @@ You can remove a Video Profile from a folder from within the **[!UICONTROL Tools
 ### Remoção de um Perfil de vídeo de pastas por meio de Propriedades {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Toque ou clique no logotipo AEM e navegue até **[!UICONTROL Assets]** e, em seguida, para a pasta da qual deseja remover um Perfil de vídeo.
-1. Na pasta, toque ou clique na marca de seleção para selecioná-la e, em seguida, toque ou clique em **[Propriedades]**.
+1. Na pasta, toque ou clique na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Propriedades]**.
 1. Selecione a guia **[!UICONTROL Perfis de vídeo]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e clique em **[!UICONTROL Salvar e fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
