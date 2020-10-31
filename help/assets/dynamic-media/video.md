@@ -2,7 +2,7 @@
 title: Vídeo
 description: Saiba como trabalhar com vídeo no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '10056'
 ht-degree: 10%
@@ -689,7 +689,7 @@ Para automatizar a configuração das propriedades padrão do YouTube para os v�
 
 1. No canto superior esquerdo do AEM, clique no logotipo do AEM e, no painel à esquerda, clique em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**.
 1. Click **[!UICONTROL default]**. (Não adicione uma marca de seleção à caixa de seleção à esquerda de &quot;padrão&quot;.)
-1. Na página **[!UICONTROL padrão]**, marque a caixa à esquerda do **[!UICONTROL vídeo]** e clique em **[Editar]**.
+1. Na página **[!UICONTROL padrão]**, marque a caixa à esquerda do **[!UICONTROL vídeo]** e clique em **[!UICONTROL Editar]**.
 1. Na página Editor de Schemas de metadados, clique na guia **[!UICONTROL Avançado]** .
 1. No cabeçalho Publicação no YouTube, clique em **[!UICONTROL Categoria do YouTube]**.
 1. No lado direito da página, na guia **[!UICONTROL Configurações]** , faça o seguinte:
