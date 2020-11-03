@@ -3,9 +3,9 @@ title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados pelo Experience Manager Assets como Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '812'
 ht-degree: 9%
 
 ---
@@ -60,7 +60,6 @@ A legenda a seguir descreve o nível de suporte.
 | GIF | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | ✓ | - | - |
 | TIFF | ✓ | ✓ | ✓ | - |
 
 ## Formatos de imagem em [!DNL Dynamic Media] {#image-support-dynamic-media}
