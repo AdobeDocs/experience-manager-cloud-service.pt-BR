@@ -2,9 +2,9 @@
 title: Personalização e extensão de fragmentos de conteúdo
 description: Um fragmento de conteúdo estende um ativo padrão.
 translation-type: tm+mt
-source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
+source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1818'
 ht-degree: 3%
 
 ---
@@ -123,11 +123,11 @@ Os fragmentos de conteúdo podem ser referenciados AEM páginas, assim como qual
 
 >[!NOTE]
 >
->**Modelo de fragmentos do conteúdo:**
+>**Modelo de fragmentos de conteúdo:**
 >
 >Quando um fragmento de conteúdo é usado em uma página, o modelo de fragmento de conteúdo no qual ele se baseia é referenciado.
 >
->Isso significa que, se o modelo não tiver sido publicado no momento em que você publicar a página, ele será sinalizado e o modelo adicionado aos recursos a serem publicados com a página.
+>Isso significa que se o modelo não foi publicado no momento em que você publica a página, ele será sinalizado e o modelo será adicionado aos recursos a serem publicados com a página.
 
 ### Integração com outros quadros {#integration-with-other-frameworks}
 
@@ -170,7 +170,7 @@ Os fragmentos de conteúdo podem ser integrados com:
 
 Você pode usar a API do lado do servidor para acessar seus fragmentos de conteúdo; consulte:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -180,7 +180,7 @@ Você pode usar a API do lado do servidor para acessar seus fragmentos de conte�
 
 As três interfaces a seguir podem servir como pontos de entrada:
 
-* **Fragmento** do conteúdo ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Fragmento** do conteúdo ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    Essa interface permite que você trabalhe com um fragmento de conteúdo de forma abstrata.
 
@@ -206,7 +206,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
 
    As interfaces que representam os principais elementos de um fragmento são:
 
-   * **Elemento** de conteúdo ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Elemento** de conteúdo ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Obter dados básicos (nome, título, descrição)
       * Obter/definir conteúdo
@@ -218,7 +218,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
          * Remover variações (consulte [Avisos](#caveats))
          * Dados de variação de acesso (consulte `ContentVariation`)
       * Atalho para resolver variações (aplicando alguma lógica de fallback adicional e específica da implementação se a variação especificada não estiver disponível para um elemento)
-   * **Variação** de conteúdo ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Variação** de conteúdo ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Obter dados básicos (nome, título, descrição)
       * Obter/definir conteúdo
@@ -248,9 +248,9 @@ Podem ser adaptados:
 
 * `ContentElement` pode ser adaptado para:
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - para aceder às informações estruturais do elemento.
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - para aceder às informações estruturais do elemento.
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` pode ser adaptado para:
 
