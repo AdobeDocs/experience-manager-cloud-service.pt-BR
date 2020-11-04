@@ -1,10 +1,10 @@
 ---
 title: Pesquisar aspectos.
-description: Este artigo descreve como criar, modificar e usar aspectos de pesquisa no AEM.
+description: Este artigo descreve como criar, modificar e usar aspectos de pesquisa em AEM.
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2377'
 ht-degree: 23%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 23%
 
 # Pesquisar aspectos {#search-facets}
 
-Uma implantação corporativa dos ativos Adobe Experience Manager (AEM) tem a capacidade de armazenar muitos ativos. Às vezes, encontrar o ativo certo pode ser árduo e demorado se você usar apenas os recursos de pesquisa genéricos do AEM.
+Uma implantação corporativa do Adobe Experience Manager (AEM) Assets tem a capacidade de armazenar muitos ativos. Às vezes, encontrar o ativo certo pode ser árduo e demorado se você usar apenas os recursos de pesquisa genéricos do AEM.
 
 Use aspectos de pesquisa no painel Filtros para adicionar mais granularidade à sua experiência de pesquisa e tornar a funcionalidade de pesquisa mais eficiente e versátil. Os aspectos de pesquisa adicionam várias dimensões (predicados) que permitem executar pesquisas mais complexas. O painel Filtros inclui algumas facetas padrão. Você também pode adicionar aspectos de pesquisa personalizados.
 
@@ -73,7 +73,7 @@ Quando você seleciona uma opção, a pesquisa é executada com base na `value` 
 
 Por exemplo, se você selecionar &quot;Imagens&quot; para tipos de arquivos, a consulta de pesquisa dos ativos será criada ao combinar a propriedade `value` usando uma operação OR. Por exemplo, a consulta de pesquisa de imagens é construída combinando os resultados correspondentes de *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* e *image/tiff* da propriedade `jcr:content/metadata/dc:format` usando uma operação OR.
 
-A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para query de pesquisa funcionarem
+A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para que query de pesquisa funcionem
 
 Em vez de criar manualmente uma estrutura de nó para as opções no repositório CRX, defina as opções em um arquivo JSON especificando pares de valores chave correspondentes. Especifique o caminho do arquivo JSON no campo **[!UICONTROL Nome da propriedade]**. Por exemplo, defina os pares de valores chave, `image/bmp`, `image/gif`, `image/jpeg` e `image/png` e especifique os valores, como mostrado no seguinte arquivo JSON de amostra. No campo **[!UICONTROL Nome da propriedade]**, especifique o caminho CRX desse arquivo.
 
@@ -102,7 +102,7 @@ Se desejar usar um nó existente, especifique-o usando a caixa de diálogo de se
 1. Faça uma das seguintes opções:
 
    * In the **[!UICONTROL Property Name]** field, mention the path of the JSON file where you define the nodes for the options and specify corresponding key-value pairs.
-   * Toque ![](assets/do-not-localize/aem_assets_add_icon.png) ao lado do campo Opções para especificar o texto e o valor de exibição para as opções que deseja fornecer no painel Filtros. Para adicionar outra opção, toque/clique ![](assets/do-not-localize/aem_assets_add_icon.png) e repita a etapa.
+   * Toque no ícone ![Adicionar](assets/do-not-localize/aem_assets_add_icon.png) ativos ao lado do campo Opções para especificar o texto e o valor de exibição para as opções que deseja fornecer no painel Filtros. Para adicionar outra opção, toque/clique em ![Ativos, adicione o ícone](assets/do-not-localize/aem_assets_add_icon.png) e repita a etapa.
 
 1. Certifique-se de que **[!UICONTROL Seleção única]** esteja desmarcada para permitir que o usuário selecione várias opções para tipos de arquivos de cada vez (por exemplo, Imagens, Documentos, Multimídia e Arquivos). Se você marcar **[!UICONTROL Seleção única]**, o usuário poderá selecionar apenas uma opção para tipos de arquivo por vez.
 
@@ -115,10 +115,10 @@ Se desejar usar um nó existente, especifique-o usando a caixa de diálogo de se
 
 ## Adicionar um predicado de propriedade de vários valores {#adding-a-multi-value-property-predicate}
 
-O `Multi Value Property` predicado permite pesquisar ativos para vários valores. Considere um cenário em que você tem imagens de vários produtos em AEM Assets e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar esse predicado para procurar imagens de produtos com base em vários números de SKU.
+O `Multi Value Property` predicado permite pesquisar ativos para vários valores. Considere um cenário em que você tem imagens de vários produtos no AEM Assets e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar esse predicado para procurar imagens de produtos com base em vários números de SKU.
 
 1. Clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar formulários]**.
-1. Na página Pesquisar formulários, selecione Painel **[!UICONTROL de pesquisa do administrador de]** ativos, toque em **Editar** ![ativos_editar](assets/aemassets_edit.png).
+1. Na página Pesquisar no Forms, selecione **[!UICONTROL Assets Admin Search Rail]**, toque em **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. Na página Editar formulário de pesquisa, arraste um **[!UICONTROL Predicado de propriedades de vários valores]** da guia **[!UICONTROL Selecionar predicado]** para o painel principal.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. Você também pode usar a caixa de diálogo de seleção para selecionar um nó.
 1. Verifique se a opção **[!UICONTROL Suporte a delimitadores]** está selecionada. No campo **[!UICONTROL Delimitadores de entrada]**, especifique delimitadores para separar valores individuais. Por padrão, a vírgula é especificada como delimitador. É possível especificar um delimitador diferente.
@@ -128,10 +128,10 @@ O `Multi Value Property` predicado permite pesquisar ativos para vários valores
 
 ## Adicionar um predicado de tags {#adding-a-tags-predicate}
 
-O `Tags` predicado permite que você realize pesquisas baseadas em tags para ativos. Por padrão, o AEM Assets pesquisa ativos por uma ou mais marcas de correspondência com base nas tags especificadas. Em outras palavras, o query de pesquisa executa uma operação OU usando as tags especificadas. No entanto, você pode usar a opção de correspondência de todas as tags para pesquisar ativos que incluem todas as tags especificadas.
+O `Tags` predicado permite que você realize pesquisas baseadas em tags para ativos. Por padrão, a AEM Assets pesquisa ativos por uma ou mais tags correspondentes com base nas tags especificadas. Em outras palavras, o query de pesquisa executa uma operação OU usando as tags especificadas. No entanto, você pode usar a opção de correspondência de todas as tags para pesquisar ativos que incluem todas as tags especificadas.
 
 1. Clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar formulários]**.
-1. Na página Pesquisar formulários, selecione Painel **[!UICONTROL de pesquisa do administrador de]** ativos e toque em **Editar** ![ativos_editar](assets/aemassets_edit.png).
+1. Na página Pesquisar no Forms, selecione Painel **[!UICONTROL de pesquisa do administrador de]** ativos e toque em **Editar** ![ativos_editar](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. Na guia Configurações, insira um texto de espaço reservado para o predicado. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/cq:tags`. Como alternativa, você pode selecionar um nó no CRXDE na caixa de diálogo de seleção.
 1. Configure a propriedade de caminho de tags raiz desse predicado para preencher várias tags na lista Tags.
@@ -306,13 +306,13 @@ Semelhante à forma como você adiciona um predicado de Propriedade ou um predic
 
 ## Redefinir aspectos de pesquisa padrão {#restoring-default-search-facets}
 
-Por padrão, um ícone Bloquear é exibido antes do Painel **[!UICONTROL de pesquisa do administrador de]** ativos na página Formulários **[!UICONTROL de]** pesquisa. O ícone Bloquear desaparece se você adicionar aspectos de pesquisa ao formulário, indicando que o formulário padrão foi modificado.
+Por padrão, um ícone Bloquear é exibido antes do Painel **[!UICONTROL de pesquisa do administrador de]** ativos na página **[!UICONTROL Pesquisar no Forms]** . O ícone Bloquear desaparece se você adicionar aspectos de pesquisa ao formulário, indicando que o formulário padrão foi modificado.
 
-O ícone de bloqueio em relação a uma opção na página Pesquisar formulários indica que as configurações padrão estão intactas e não são personalizadas.
+O ícone de bloqueio em relação a uma opção na página Pesquisar Forms indica que as configurações padrão estão intactas e não são personalizadas.
 
 Para restaurar o aspecto de pesquisa padrão, execute estas etapas:
 
-1. Selecione **[!UICONTROL Assets Admin Search Rail]** na página **[!UICONTROL Pesquisar formulários]** .
+1. Selecione **[!UICONTROL Assets Admin Search Rail]** na página **[!UICONTROL Pesquisar no Forms]** .
 1. Toque em **[!UICONTROL Excluir]** ícone ![de](assets/do-not-localize/deleteoutline.png) exclusão na barra de ferramentas.
 1. Na caixa de diálogo de confirmação, toque em **[!UICONTROL Excluir]** para remover as alterações personalizadas.
 
