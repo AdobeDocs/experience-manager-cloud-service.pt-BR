@@ -2,9 +2,9 @@
 title: Vídeos interativos
 description: Saiba como trabalhar com vídeo interativo e vídeos que podem ser comprados no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
 workflow-type: tm+mt
-source-wordcount: '6010'
+source-wordcount: '6016'
 ht-degree: 5%
 
 ---
@@ -88,7 +88,7 @@ Consulte [Publicação de ativos](/help/assets/dynamic-media/publishing-dynamicm
 1. **Adicionando um vídeo interativo ao seu site ou ao seu site em AEM** Se você usar o AEM Sites ou AEM eCommerce, ou ambos, você pode adicionar o vídeo interativo diretamente a uma página da Web em AEM arrastando o componente de Mídia interativa para a página. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 Use o código incorporado ou URL para integrar seu vídeo interativo com as experiências do site. Consulte [Integrar um vídeo interativo ao seu site](#integrating-an-interactive-video-with-your-website).
 Se você estiver usando um WCM de terceiros (Web Content Manager), é necessário integrar o novo vídeo interativo com a implementação existente do Quickview usada em seu site. Consulte [Integrar um vídeo interativo a um Quickview](#integrating-an-interactive-video-with-an-existing-quickview)existente.
-   [](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   [Adição de ativos de Mídia dinâmica a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 ## (Opcional) Como identificar variáveis do Quickview {#optional-identifying-quickview-variables}
 
@@ -222,7 +222,7 @@ Você pode ignorar essa tarefa e continuar para a próxima se pretender usar um 
 
 Quando uma miniatura é clicada no ambiente de criação, uma pré-visualização da caixa de diálogo do Quickview é exibida.
 
-![chlimage_1-29](assets/chlimage_1-127.png)
+![chlimage_1-21](assets/chlimage_1-127.png)
 
 Como opção, você pode criar sua própria predefinição personalizada do visualizador de vídeo interativo. Você pode determinar, entre outras coisas, o estilo do player de vídeo, as miniaturas interativas e a visualização da grade de miniaturas que aparece no final do vídeo.
 
