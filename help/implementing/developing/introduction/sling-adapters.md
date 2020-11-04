@@ -2,9 +2,9 @@
 title: Uso de adaptadores Sling
 description: Como deslizar o oferta e o padrão do adaptador para converter convenientemente objetos que implementam a interface adaptável
 translation-type: tm+mt
-source-git-commit: 8826fde91a2ab0be0fe7850ae20f46ba023cdf55
+source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2234'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Há os seguintes casos de uso:
 
 * Criação de atalhos de objetos que exigem a transmissão de objetos de contexto internos.
 
-   Por exemplo, o JCR [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) contém uma referência ao [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)da solicitação, que por sua vez é necessária para muitos objetos que funcionarão com base na sessão da solicitação, como o [`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/PageManager.html) ou [`UserManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/security/UserManager.html).
+   Por exemplo, o JCR [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) contém uma referência ao [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)da solicitação, que por sua vez é necessária para muitos objetos que funcionarão com base na sessão da solicitação, como o [`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) ou [`UserManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html).
 
 * Atalho para serviços.
 
@@ -64,7 +64,7 @@ Há várias maneiras de `Adaptable.adaptTo()` serem implementadas:
 * Pelo próprio objeto; implementação do próprio método e mapeamento para certos objetos.
 * Por um [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), que pode mapear objetos arbitrários.
 
-   Os objetos ainda devem implementar a `Adaptable` interface e ser estendidos [`SlingAdaptable`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (o que passa a `adaptTo` chamada para um gerenciador central do adaptador).
+   Os objetos ainda devem implementar a `Adaptable` interface e ser estendidos [`SlingAdaptable`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/adapter/SlingAdaptable.html) (o que passa a `adaptTo` chamada para um gerenciador central do adaptador).
 
    Isso permite que os ganchos entrem no `adaptTo` mecanismo para classes existentes, como `Resource`.
 
@@ -76,7 +76,7 @@ No primeiro caso, os javadocs podem dizer o que `adaptTo-targets` é possível. 
 
 ### Sling {#sling}
 
-[**O recurso**](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/Resource.html) se adapta a:
+[**O recurso**](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) se adapta a:
 
 <table>
  <tbody>
@@ -97,16 +97,16 @@ No primeiro caso, os javadocs podem dizer o que `adaptTo-targets` é possível. 
    <td>Retorna um mapa das propriedades, se este for um recurso baseado em nós JCR (ou outros mapas de valor de suporte de recursos).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>Retorna um mapa conveniente das propriedades, se for um recurso baseado em nós JCR (ou outros mapas de valor de suporte de recursos). Também pode ser obtido (mais simples) usando<br /> <code><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> (manipula letras maiúsculas e minúsculas, etc.).</td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
+   <td>Retorna um mapa conveniente das propriedades, se for um recurso baseado em nós JCR (ou outros mapas de valor de suporte de recursos). Também pode ser obtido (mais simples) usando<br /> <code><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> (manipula letras maiúsculas e minúsculas, etc.).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
-   <td>Extensão do <a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> que permite que a hierarquia de recursos seja considerada ao procurar propriedades.</td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
+   <td>Extensão do <a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> que permite que a hierarquia de recursos seja considerada ao procurar propriedades.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModificávelValueMap</a></td>
-   <td>Uma extensão do <a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, que permite modificar as propriedades nesse nó.</td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModificávelValueMap</a></td>
+   <td>Uma extensão do <a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>, que permite modificar as propriedades nesse nó.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
@@ -133,81 +133,81 @@ No primeiro caso, os javadocs podem dizer o que `adaptTo-targets` é possível. 
    <td>Retorna os valores se este for um recurso baseado em propriedade JCR (e o valor se ajustar).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>Se este for um recurso baseado em nó JCR.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/Page.html">Página</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">Página</a></td>
    <td>Se este for um recurso baseado em nó JCR e o nó for um <code>cq:Page</code> (ou <code>cq:PseudoPage</code>).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/components/Component.html">Componente</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html">Componente</a></td>
    <td>Se este for um recurso de <code>cq:Component</code> nó.</td>
   </tr>  
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/designer/Design.html">Design</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Design.html">Design</a></td>
    <td>Se este for um nó de design (<code>cq:Page</code>).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/Template.html">Modelo</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html">Modelo</a></td>
    <td>Se este for um recurso de <code>cq:Template</code> nó.</td>
   </tr>  
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blueprint</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blueprint</a></td>
    <td>Se este for um recurso de <code>cq:Template</code> nó.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/dam/api/Asset.html">Ativo</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Asset.html">Ativo</a></td>
    <td>Se este for um recurso de nó dam:Asset.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/dam/api/Rendition.html">Execução</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Rendition.html">Execução</a></td>
    <td>Se for um dam:representação de ativo (nt:file na pasta de renderização de um dam:Assert)</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
    <td>Se este for um recurso de <code>cq:Tag</code> nó.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
    <td>Com base na sessão do JCR se este for um recurso baseado em JCR e o usuário tiver permissões para acessar o UserManager.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Autorizável</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Autorizável</a></td>
    <td>A opção Autorizável é a interface base comum para Usuário e Grupo.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/jackrabbit/api/security/user/User.html">Usuário</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">Usuário</a></td>
    <td>O usuário é um Autorizável especial que pode ser autenticado e representado.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
    <td>Pesquisa abaixo do recurso (ou use setSearchIn()) se este for um recurso baseado em JCR.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
    <td>Status do fluxo de trabalho para o nó de carga de página/fluxo de trabalho especificado.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/replication/ReplicationStatus.html">ReplicationStatus</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html">ReplicationStatus</a></td>
    <td>Status de replicação para o recurso fornecido ou seu subnó jcr:content (marcado primeiro).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
    <td>Retorna um recurso de conector adaptado para certos tipos, se for um recurso baseado em nó JCR.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/contentsync/config/package-summary.html">Configuração</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">Configuração</a></td>
    <td>Se este for um recurso de <code>cq:ContentSyncConfig</code> nó.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
    <td>Se estiver abaixo de um recurso de <code>cq:ContentSyncConfig</code> nó.</td>
   </tr>
  </tbody>
 </table>
 
-[**O ResourceResolver**](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/ResourceResolver.html) adapta-se a:
+[**O ResourceResolver**](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceResolver.html) adapta-se a:
 
 <table>
  <tbody>
@@ -216,54 +216,54 @@ No primeiro caso, os javadocs podem dizer o que `adaptTo-targets` é possível. 
    <td>A sessão JCR da solicitação, se for um resolvedor de recursos baseado em JCR (padrão).</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/components/ComponentManager.html">ComponentManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/ComponentManager.html">ComponentManager</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
    <td>Com base na sessão do JCR, se for um resolvedor de recursos baseado em JCR.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
    <td>Com base na sessão do JCR, se for um resolvedor de recursos baseado em JCR.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
    <td>O UserManager fornece acesso e meios para manter objetos autorizados, ou seja, usuários e grupos. O UserManager está vinculado a uma sessão específica.
    </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Autorizável</a> </td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Autorizável</a> </td>
    <td>O usuário atual.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/jackrabbit/api/security/user/User.html">Usuário</a><br /> </td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">Usuário</a><br /> </td>
    <td>O usuário atual.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/commons/Externalizer.html">Externalizador</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html">Externalizador</a></td>
    <td>Para externalizar URLs absolutos, mesmo sem o objeto de solicitação.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-[**SlingHttpServletRequest**](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) adapta-se a:
+[**SlingHttpServletRequest**](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletRequest.html) adapta-se a:
 
 Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como fonte em um AdapterFactory personalizado.
 
-[**SlingHttpServletResponse**](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) adapta-se a:
+[**SlingHttpServletResponse**](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletResponse.html) adapta-se a:
 
 <table>
  <tbody>
@@ -276,16 +276,16 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
 
 #### WCM {#wcm}
 
-**[A página](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/Page.html)** se adapta a:
+**[A página](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html)** se adapta a:
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/Resource.html">Recurso</a><br /> </td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">Recurso</a><br /> </td>
    <td>Recurso da página.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>Recurso rotulado (== this).</td>
   </tr>
   <tr>
@@ -299,24 +299,24 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
  </tbody>
 </table>
 
-**[O componente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/components/Component.html)** adapta-se a:
+**[O componente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html)** adapta-se a:
 
-| [Recurso](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso do componente. |
+| [Recurso](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Recurso do componente. |
 |---|---|
-| [LabeledResource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/commons/LabeledResource.html) | Recurso rotulado (== this). |
+| [LabeledResource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html) | Recurso rotulado (== this). |
 | [Nó](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nó do componente. |
 | ... | Tudo ao qual o recurso do componente pode ser adaptado. |
 
-**[O modelo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/Template.html)** adapta-se a:
+**[O modelo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html)** adapta-se a:
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/Resource.html">Recurso</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">Recurso</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
    <td>Recurso do modelo.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>Recurso rotulado (== this).</td>
   </tr>
   <tr>
@@ -336,13 +336,13 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
 
 | [Nó](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Retorna o nó inicial do usuário/grupo. |
 |---|---|
-| [ReplicationStatus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/replication/ReplicationStatus.html) | Retorna o status de replicação do nó inicial do usuário/grupo. |
+| [ReplicationStatus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | Retorna o status de replicação do nó inicial do usuário/grupo. |
 
 #### DAM {#dam}
 
 **O ativo** se adapta a:
 
-| [Recurso](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso do ativo. |
+| [Recurso](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Recurso do ativo. |
 |---|---|
 | [Nó](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nó do ativo. |
 | ... | Tudo ao qual o recurso do ativo pode ser adaptado. |
@@ -351,7 +351,7 @@ Nenhum público alvo ainda, mas implementa Adaptável e pode ser usado como font
 
 **A tag** se adapta a:
 
-| [Recurso](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso da tag . |
+| [Recurso](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | Recurso da tag . |
 |---|---|
 | [Nó](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nó da tag . |
 | ... | Tudo ao qual o recurso da tag pode ser adaptado. |
