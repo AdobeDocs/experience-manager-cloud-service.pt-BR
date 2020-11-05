@@ -2,9 +2,9 @@
 title: Invalidar o cache CDN por meio do Dynamic Media
 description: A invalidação do conteúdo em cache CDN (Content Delivery Network) permite que você atualize rapidamente os ativos entregues pelo Dynamic Media, em vez de aguardar a expiração do cache.
 translation-type: tm+mt
-source-git-commit: 30c7dddb52a6012d3c55cdb66ae0c9b1a3588fa3
+source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1300'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ Os ativos de Mídia dinâmica são armazenados em cache pelo CDN (Content Delive
 
 >[!IMPORTANT]
 >
->As etapas a seguir se aplicam somente ao Dynamic Media em AEM como Cloud Service. Este recurso também exige que você use o CDN predefinido que está fornecido com AEM Dynamic Media; nenhum outro CDN personalizado é suportado. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>Este recurso exige que você use o CDN predefinido que está fornecido com AEM Dynamic Media; nenhum outro CDN personalizado é suportado. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 Consulte também Visão geral do [cache no Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**Para invalidar o cache CDN por meio da mídia dinâmica**
+**Para invalidar o cache CDN por meio do Dynamic Media**
 
 *Parte 1 de 2: Criando um modelo de Invalidação CDN*
 
@@ -37,7 +37,9 @@ Consulte também Visão geral do [cache no Dynamic Media](https://helpx.adobe.co
 
    ![Modelo de Invalidação CDN - Criar](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. No canto superior direito da página de modelo **[!UICONTROL de Invalidação de]** CDN, toque em **[!UICONTROL Salvar]** e, em seguida, em **[!UICONTROL OK.]**<br>   *Parte 2 de 2: Definindo opções de invalidação de CDN*
+1. No canto superior direito da página de modelo **[!UICONTROL de Invalidação de]** CDN, toque em **[!UICONTROL Salvar]** e, em seguida, em **[!UICONTROL OK.]**<br>
+
+   *Parte 2 de 2: Definindo opções de invalidação de CDN*
    <br>
 
 1. Em AEM como um Cloud Service, toque em **[!UICONTROL Ferramentas > Ativos > Invalidação de CDN.]**
