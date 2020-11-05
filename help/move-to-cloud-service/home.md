@@ -2,7 +2,7 @@
 title: Migração para o AEM as a Cloud Service
 description: 'Recursos de autoajuda e links de documentação referentes à migração para o AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 98%
@@ -41,7 +41,7 @@ Saiba mais sobre as diferentes fases envolvidas na jornada de transição para o
 |---|---|
 | [Página inicial do Experience Manager as a Cloud Service](/help/landing/home.md) | Comece por aqui para ter uma visão geral da documentação do Experience Manager as a Cloud Service. |
 | [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, etc. |
-| [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo as novidades dos recursos obsoletos e removidos e problemas conhecidos. |
+| [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo novidades, problemas conhecidos e recursos obsoletos e removidos. |
 | [Conceitos principais](/help/core-concepts/home.md) | Este guia fornece uma introdução aos conceitos principais do Experience Manager as a Cloud Service, incluindo a arquitetura do novo serviço. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
 | [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
