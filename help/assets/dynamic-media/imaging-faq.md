@@ -2,9 +2,9 @@
 title: Imagens inteligentes
 description: A geração de imagens inteligentes aproveita as características de exibição exclusivas de cada usuário para fornecer automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento.
 translation-type: tm+mt
-source-git-commit: 8040cd38bb01296ed89d44c707ca1e759489eb7b
+source-git-commit: e4d75f8bb783df57705bcaa6483bcb0ac6ec7ead
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2085'
 ht-degree: 2%
 
 ---
@@ -105,8 +105,6 @@ Além disso, consulte [Estou qualificado para usar a Imagem inteligente?](#am-i-
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
-
-Além disso, consulte [Estou qualificado para usar a Imagem inteligente?](#am-i-eligible-to-use-smart-imaging) para entender os pré-requisitos para o Smart Imaging.
 
 ## A criação de imagens inteligentes funciona com HTTPS? Que tal HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
