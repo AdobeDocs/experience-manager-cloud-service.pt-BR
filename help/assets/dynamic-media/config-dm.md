@@ -2,9 +2,9 @@
 title: Configuração do Cloud Service de Dynamic Media
 description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
+source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5598'
 ht-degree: 8%
 
 ---
@@ -82,7 +82,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | Caminho da pasta raiz da empresa | O caminho da pasta raiz do empresa. |
    | Publicar ativos | Você pode escolher entre as três opções a seguir:<br>**[!UICONTROL Imediatamente ]**: Quando os ativos são carregados, o sistema recebe os ativos e fornece o URL/Incorporado instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.<br>**[!UICONTROL Na Ativação]**: É necessário publicar explicitamente o ativo primeiro antes que um link URL/Incorporado seja fornecido.<br>**[!UICONTROL Publicação ]**seletiva: Os ativos são publicados automaticamente apenas para pré-visualização segura e podem ser publicados explicitamente em AEM sem publicação no DMS7 para delivery no domínio público. No futuro, o Adobe aprimorará essa opção para publicar ativos para AEM e publicar ativos no Dynamic Media, mutuamente exclusivos entre si. Ou seja, você pode publicar ativos no DMS7 para poder usar recursos como Recorte inteligente ou representações dinâmicas. Ou, você pode publicar ativos exclusivamente em AEM para visualização; esses mesmos ativos não são publicados no DMS7 para delivery no domínio público. |
    | Servidor de visualização seguro | Permite que você especifique o caminho do URL para o servidor de pré-visualização de representações seguras. Ou seja, depois que as renderizações são geradas, AEM podem acessar e pré-visualização com segurança as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta à instância AEM).<br>A menos que você tenha uma disposição especial para usar seu próprio servidor empresa ou um servidor especial, a Adobe Systems recomenda deixar essa configuração como especificado. |
-   | Sincronizar todo o conteúdo | Selecionado por padrão. Desmarque essa opção se desejar incluir ou excluir seletivamente ativos da sincronização para o Dynamic Media. Desmarcar essa opção permite escolher entre os dois modos de sincronização de Dynamic Media a seguir:<br>**[!UICONTROL modo de sincronização de Dynamic MediaHabilitar por padrão]**<br>****: A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Desativado por padrão]**: A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.<br>Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, toque em **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Detalhes]** , na lista suspensa Modo **[!UICONTROL de sincronização do]** Dynamic Media, escolha uma das três opções a seguir. Quando terminar, toque em **[!UICONTROL Salvar]**. *Lembre-se: essas três opções não estarão disponíveis se você tiver selecionado **Sincronizar todo o conteúdo**anteriormente.* Consulte também [Trabalhar com publicação seletiva no nível de pasta no Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Herdado ]**: Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração da nuvem. O status detalhado para herdado é exibido por meio de uma dica de ferramenta.<br>**[!UICONTROL Ativar para subpastas]**: Inclua tudo nesta subárvore para sincronizar com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.<br>**[!UICONTROL Desativado para subpastas ]**: Exclua toda a sub-árvore da sincronização para o Dynamic Media. |
+   | Sincronizar todo o conteúdo | Selecionado por padrão. Desmarque essa opção se desejar incluir ou excluir seletivamente ativos da sincronização para o Dynamic Media. Desmarcar essa opção permite escolher entre os dois modos de sincronização de Dynamic Media a seguir:<br>**[!UICONTROL modo de sincronização de Dynamic MediaHabilitar por padrão]**<br>****: A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Desativado por padrão]**: A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.<br>Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, toque em **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Detalhes]** , na lista suspensa Modo **[!UICONTROL de sincronização do]** Dynamic Media, escolha uma das três opções a seguir. Quando terminar, toque em **[!UICONTROL Salvar]**. *Lembre-se: essas três opções não estarão disponíveis se você tiver selecionado **Sincronizar todo o conteúdo**anteriormente.* Consulte também [Trabalhar com publicação seletiva no nível de pasta no Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Herdado ]**: Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração da nuvem. O status detalhado para herdado é exibido por meio de uma dica de ferramenta.<br>**[!UICONTROL Ativar para subpastas]**: Inclua tudo nesta subárvore para sincronizar com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.<br>**[!UICONTROL Desativado para subpastas ]**: Exclua toda a sub-árvore da sincronização para o Dynamic Media. |
 
    >[!NOTE]
    >
@@ -254,14 +254,14 @@ Isso faria o seguinte:
 * As renderizações dinâmicas que retornam a saída RGB retornarão no espaço de cores *sRGB* .
 * As renderizações dinâmicas que retornam a saída CMYK retornarão no espaço de cores *WebCoated* .
 
-#### Configurar o processamento de ativos {#configuring-asset-processing}
+#### Edição de tipos MIME para formatos suportados {#configuring-asset-processing}
 
-Você pode definir quais tipos de ativos devem ser processados pelo Dynamic Media e personalizar parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
+Você pode definir quais tipos de ativos são processados pelo Dynamic Media e personalizar parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
 
 * Converter um Adobe PDF em um ativo eCatalog.
 * Converta um Documento Adobe Photoshop (.PSD) em um ativo de modelo de banner para personalização.
 * Rasterize um arquivo Adobe Illustrator (.AI) ou um arquivo Adobe Photoshop Encapsulated Postscript (.EPS).
-* Observação: Perfis de vídeo e Perfis de imagem podem ser usados para definir o processamento de vídeos e imagens, respectivamente.
+* [Perfis](/help/assets/dynamic-media/video-profiles.md) de vídeo e Perfis [de](/help/assets/dynamic-media/image-profiles.md) imagem podem ser usados para definir o processamento de vídeos e imagens, respectivamente.
 
 Consulte [Upload de ativos](/help/assets/add-assets.md).
 
@@ -279,7 +279,7 @@ Para configurar o processamento de ativos:
 
    * Clique com o duplo no campo **[!UICONTROL ativado]** . Por padrão, todos os tipos MIME de ativos estão ativados (definidos como **[!UICONTROL true]**), o que significa que os ativos serão sincronizados com o Dynamic Media para processamento. Se desejar excluir esse tipo MIME de ativo do processamento, altere essa configuração para **[!UICONTROL false]**.
 
-   * duplo-clique em **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte Tipos [Mime](/help/assets/file-format-support.md) suportados para obter uma lista de valores de parâmetro de processamento permitidos que você pode usar para um determinado tipo mime.
+   * Duplo-clique em **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte Tipos [Mime](/help/assets/file-format-support.md) suportados para obter uma lista de valores de parâmetro de processamento permitidos que você pode usar para um determinado tipo mime.
 
 1. Faça uma das seguintes opções:
    * Repita as etapas de 3 a 4 para editar tipos MIME adicionais.
@@ -287,11 +287,11 @@ Para configurar o processamento de ativos:
 
 1. No canto superior esquerdo da página, toque em **[!UICONTROL CRXDE Lite]** para retornar ao AEM.
 
-#### Adicionar tipos MIME personalizados para formatos não suportados {#adding-custom-mime-types-for-unsupported-formats}
+#### Adicionar tipos MIME para formatos não suportados {#adding-custom-mime-types-for-unsupported-formats}
 
 Adicione tipos MIME personalizados para formatos não compatíveis com o AEM Assets. Para garantir que qualquer novo nó adicionado no CRXDE Lite não seja excluído pelo AEM, certifique-se mover o tipo MIME antes de `image_` e que seu valor ativado seja definido como **[!UICONTROL false]**.
 
-Para adicionar tipos MIME personalizados para formatos não suportados:
+Para adicionar tipos MIME para formatos não suportados:
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -453,7 +453,7 @@ Para criar uma predefinição de conjunto de lotes para a geração automática 
 
    Suas credenciais e logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
 
-1. Na barra de navegação próxima à parte superior da página, clique em **[!UICONTROL Configuração > Configuração]do aplicativo > Predefinições[!UICONTROL do conjunto]de lotes > Predefinição[!UICONTROL do conjunto de]** lotes.
+1. Na barra de navegação próxima à parte superior da página, clique em **[!UICONTROL Configuração > Configuração] do aplicativo > Predefinições [!UICONTROL do conjunto] de lotes > Predefinição [!UICONTROL do conjunto de]** lotes.
 
    Observe que o Formulário **[!UICONTROL de]** Visualização, conforme definido no canto superior direito da página Detalhes, é a visualização padrão.
 
