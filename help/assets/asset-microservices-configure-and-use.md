@@ -3,9 +3,9 @@ title: Configurar e usar microserviços de ativos
 description: Configure e use os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2530'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Experience Manager permite os seguintes níveis de processamento.
 
 | Opção | Descrição | Casos de uso cobertos |
 |---|---|---|
-| [Configuração padrão](#default-config) | Está disponível como está e não pode ser modificado. Essa configuração fornece recursos de geração de execução muito básicos. | <ul> <li>Miniaturas padrão usadas pela interface [!DNL Assets] do usuário (48, 140 e 319 px) </li> <li> Pré-visualização grande (execução na Web - 1280 px) </li><li> Metadados e extração de texto.</li></ul> |
+| [Configuração padrão](#default-config) | Está disponível como está e não pode ser modificado. Essa configuração fornece recursos de geração de execução muito básicos. | <ul> <li>Miniaturas padrão usadas pela interface [!DNL Assets] do usuário (48, 140 e 319 pixels) </li> <li> Pré-visualização grande (execução na Web - 1280 pixels) </li><li> Metadados e extração de texto.</li></ul> |
 | [Configuração personalizada](#standard-config) | Configurado pelos administradores por meio da interface do usuário. Fornece mais opções para a geração de representação estendendo a opção padrão. Estenda a opção predefinida para fornecer diferentes formatos e execuções. | <ul><li>Execução FPO. </li> <li>Alterar o formato e a resolução das imagens</li> <li> Aplica-se condicionalmente aos tipos de arquivos configurados. </li> </ul> |
 | [Perfil personalizado](#custom-config) | Configurado pelos administradores por meio da interface do usuário para usar o código personalizado por meio de aplicativos personalizados para chamar o Serviço [de Computação de](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Ativos. Suporta requisitos mais complexos em um método nativo de nuvem e dimensionável. | Consulte casos [de uso](#custom-config)permitidos. |
 
@@ -78,9 +78,9 @@ Para criar um perfil de processamento padrão, siga estas etapas:
 1. Para gerar outras representações, clique em **[!UICONTROL Adicionar novo]** e forneça as seguintes informações:
 
    * Nome de arquivo de cada representação.
-   * Formato de arquivo (PNG, JPEG ou GIF) de cada execução.
+   * Formato de arquivo (PNG, JPEG, GIF ou WebP) de cada execução.
    * Largura e altura em pixels de cada representação. Se os valores não forem especificados, o tamanho total de pixel da imagem original será usado.
-   * Qualidade em porcentagem de cada execução JPEG.
+   * Qualidade em porcentagem de cada execução JPEG e WebP.
    * Tipos MIME incluídos e excluídos para definir a aplicabilidade de um perfil.
 
    ![adição de perfis de processamento](assets/processing-profiles-image.png)
@@ -148,7 +148,7 @@ A integração do Asset Compute Service permite que o Experience Manager passe e
 
 ![perfil de processamento personalizado](assets/custom-processing-profile.png)
 
-*Figura: Use o campo Parâmetros[!UICONTROL de]serviço para passar informações adicionadas para parâmetros predefinidos criados no aplicativo personalizado. Neste exemplo, quando imagens de campanha são carregadas, as imagens são atualizadas com`Jumanji`texto na`Arial-BoldMT`fonte.*
+*Figura: Use o campo Parâmetros [!UICONTROL de] serviço para passar informações adicionadas para parâmetros predefinidos criados no aplicativo personalizado. Neste exemplo, quando imagens de campanha são carregadas, as imagens são atualizadas com `Jumanji` texto na `Arial-BoldMT` fonte.*
 
 ## Usar perfis de processamento para processar ativos {#use-profiles}
 
