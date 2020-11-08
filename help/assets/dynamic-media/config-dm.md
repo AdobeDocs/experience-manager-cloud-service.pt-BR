@@ -2,9 +2,9 @@
 title: Configuração do Cloud Service de Dynamic Media
 description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
+source-git-commit: 9719a440a85b150599efa3eb9dc2bd443a917217
 workflow-type: tm+mt
-source-wordcount: '5598'
+source-wordcount: '5619'
 ht-degree: 8%
 
 ---
@@ -193,8 +193,8 @@ As tarefas de configuração incluem:
 * [Configuração de publicação para o Image Server](#publishing-setup-for-image-server)
 * [Definição das configurações gerais do aplicativo](#configuring-application-general-settings)
 * [Configuração do gerenciamento de cores](#configuring-color-management)
-* [Configurar o processamento de ativos](#configuring-asset-processing)
-* [Adicionar tipos MIME personalizados para formatos não suportados](#adding-custom-mime-types-for-unsupported-formats)
+* [Edição de tipos MIME para formatos suportados](#editing-mime-types-for-supported-formats)
+* [Adicionar tipos MIME para formatos não suportados](#adding-mime-types-for-unsupported-formats)
 * [Criando predefinições de conjuntos de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Configuração de publicação para o Image Server {#publishing-setup-for-image-server}
@@ -217,7 +217,7 @@ A tela Servidor de imagens estabelece as configurações padrão para a entrega 
 
 Para abrir a página Configurações gerais do aplicativo, na barra de navegação global do Dynamic Media Classic, clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais.]**
 
-**[!UICONTROL Servidores]** - no provisionamento de conta, o Dynamic Media fornece automaticamente os servidores atribuídos para a sua empresa. Esses servidores são usados para construir strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas para sua conta. Não altere nenhum nome de servidor, a menos que seja explicitamente instruído a fazê-lo pelo suporte AEM.
+**[!UICONTROL Servidores]** - no provisionamento de conta, o Dynamic Media fornece automaticamente os servidores atribuídos para sua empresa. Esses servidores são usados para construir strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas para sua conta. Não altere nenhum nome de servidor, a menos que seja explicitamente instruído a fazê-lo pelo suporte AEM.
 **[!UICONTROL Substituir imagens]** - o Dynamic Media não permite que dois arquivos tenham o mesmo nome. A ID do URL de cada item (o nome do arquivo menos a extensão) deve ser exclusiva. Essas opções especificam como os ativos de substituição são carregados: se eles substituem o original ou se tornam duplicados. Os ativos do duplicado são renomeados com um &quot;-1&quot; (por exemplo, o nome &quot;President.tif&quot; é renomeado como President-1.tif). Essas opções afetam os ativos carregados em uma pasta diferente do original ou os ativos com uma extensão de nome de arquivo diferente do original (como JPG, TIF ou PNG).
 **[!UICONTROL Substituir na pasta atual, mesmo nome/extensão]** da imagem base - Essa opção é a regra mais estrita para substituição. Ele requer que você carregue a imagem de substituição na mesma pasta que a original e que a imagem de substituição tenha a mesma extensão de nome de arquivo que a original. Se esses requisitos não forem atendidos, um duplicado será criado. Para manter a consistência com AEM, sempre escolha **[!UICONTROL Substituir na pasta atual, mesmo nome/extensão]**da imagem base.
 **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão]** do ativo básico - Requer que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, President.jpg deve substituir President.jpg, não President.tif). No entanto, é possível carregar a imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original.
@@ -254,7 +254,7 @@ Isso faria o seguinte:
 * As renderizações dinâmicas que retornam a saída RGB retornarão no espaço de cores *sRGB* .
 * As renderizações dinâmicas que retornam a saída CMYK retornarão no espaço de cores *WebCoated* .
 
-#### Edição de tipos MIME para formatos suportados {#configuring-asset-processing}
+#### Edição de tipos MIME para formatos suportados {#editing-mime-types-for-supported-formats}
 
 Você pode definir quais tipos de ativos são processados pelo Dynamic Media e personalizar parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
 
@@ -265,7 +265,7 @@ Você pode definir quais tipos de ativos são processados pelo Dynamic Media e p
 
 Consulte [Upload de ativos](/help/assets/add-assets.md).
 
-Para configurar o processamento de ativos:
+**Para editar os tipos MIME para formatos suportados**
 
 1. Em AEM, clique no logotipo AEM para acessar o console de navegação global e clique em **[!UICONTROL Geral > CRXDE Lite]**.
 1. No painel esquerdo, navegue até o seguinte:
@@ -287,11 +287,11 @@ Para configurar o processamento de ativos:
 
 1. No canto superior esquerdo da página, toque em **[!UICONTROL CRXDE Lite]** para retornar ao AEM.
 
-#### Adicionar tipos MIME para formatos não suportados {#adding-custom-mime-types-for-unsupported-formats}
+#### Adicionar tipos MIME para formatos não suportados {#adding-mime-types-for-unsupported-formats}
 
 Adicione tipos MIME personalizados para formatos não compatíveis com o AEM Assets. Para garantir que qualquer novo nó adicionado no CRXDE Lite não seja excluído pelo AEM, certifique-se mover o tipo MIME antes de `image_` e que seu valor ativado seja definido como **[!UICONTROL false]**.
 
-Para adicionar tipos MIME para formatos não suportados:
+**Para adicionar tipos MIME para formatos não suportados**
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -357,7 +357,7 @@ Como alternativa, observe que você pode usar o Código **[!UICONTROL de]** Visu
 
 Dois elementos estão disponíveis para definição, Correspondência e Nome básico. Esses campos permitem que você defina todos os elementos de uma convenção de nomenclatura e identifique a parte da convenção usada para nomear o conjunto no qual eles estão contidos. A convenção de nomenclatura individual de uma empresa pode utilizar uma ou mais linhas de definição para cada um desses elementos. Você pode usar quantas linhas desejar para sua definição exclusiva e agrupá-las em elementos distintos, como para a Imagem principal, o elemento Cor, o elemento Visualização alternativa e o elemento Amostra.
 
-Para configurar a nomeação padrão:
+**Para configurar a nomeação padrão**
 
 1. Faça logon em sua conta do Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -391,7 +391,7 @@ Você pode criar, editar e gerenciar predefinições de conjuntos de lotes. Exis
 
 Você pode usar o método de campo de formulário para definir uma predefinição de conjunto de lotes ou o método de código, que permite usar expressões regulares. Como em Nomenclatura padrão, você pode escolher Código de Visualização ao mesmo tempo que está definindo na Visualização de formulário e usar expressões comuns para criar suas definições. Como alternativa, você pode desmarcar qualquer visualização para usar uma ou a outra exclusivamente.
 
-Para criar uma predefinição de conjunto de lotes:
+**Para criar uma predefinição de conjunto de lotes**
 
 1. Faça logon em sua conta do Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -447,7 +447,7 @@ O agrupamento para a parte do nome do ativo compartilhado do conjunto de rotaç�
 
 Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome da fórmula do Conjunto de rotação 2D que está listada em **Predefinições de conjunto de lote** na caixa de diálogo **Opções de trabalho de upload**.
 
-Para criar uma predefinição de conjunto de lotes para a geração automática de um conjunto de rotação 2D:
+**Para criar uma predefinição de conjunto de lotes para a geração automática de um conjunto de rotação 2D**
 
 1. Faça logon em sua conta do Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -542,11 +542,13 @@ A fila Fluxo de trabalho de trânsito Granite é usada para o fluxo de trabalho 
 
 1. No campo **[!UICONTROL Máximo de trabalhos]** paralelos, altere o número para o valor desejado.
 
-   Por padrão, o número máximo de trabalhos paralelos depende do número de núcleos de CPU disponíveis. Por exemplo, em um servidor de 4 núcleos, atribui 2 processos de trabalho. (Um valor entre 0,0 e 1,0 é baseado em relação, ou qualquer número maior que 1 atribuirá o número de threads de trabalho.)
+   Você pode aumentar **[!UICONTROL Máximo de trabalhos]** paralelos para suportar adequadamente o carregamento pesado de arquivos para o Dynamic Media. O valor exato depende da capacidade do hardware. Em certos cenários, ou seja, uma migração inicial ou um carregamento em massa único, é possível usar um valor grande. No entanto, esteja ciente de que o uso de um valor grande (como duas vezes o número de núcleos) pode ter efeitos negativos em outras atividades simultâneas. Dessa forma, você deve testar e ajustar o valor com base no seu caso de uso específico.
 
-   A Adobe recomenda que 32 **[!UICONTROL Máximo de tarefas]** paralelas sejam configuradas para suportar adequadamente o carregamento pesado de arquivos para o Dynamic Media Classic (Scene7).
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Toque em **[!UICONTROL Salvar]**.
 
