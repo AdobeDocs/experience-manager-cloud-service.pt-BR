@@ -2,9 +2,9 @@
 title: CDN no AEM as a Cloud Service
 description: CDN no AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
+source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '713'
 ht-degree: 4%
 
 ---
@@ -20,10 +20,10 @@ A CDN gerenciada AEM atenderá aos requisitos de desempenho e segurança da maio
 
 Siga estas etapas para preparar o delivery do conteúdo usando o Adobe Offline CDN:
 
-1. Forneça o certificado SSL assinado e a chave secreta para o Adobe, compartilhando um link para um formulário seguro contendo essas informações. Coordene-se com o suporte ao cliente nesta tarefa.
+1. Forneça o certificado SSL assinado e a chave secreta para o Adobe, compartilhando um link para um formulário seguro contendo essas informações. Coordene-se com o suporte ao cliente nesta tarefa. O Adobe suporta até 10 certificados SSL para um programa.
    **Observação:** O Aem como Cloud Service não oferece suporte a certificados de Domínio Validado (DV). Além disso, deve ser um certificado TLS X.509 de uma autoridade de certificação (CA) confiável com uma chave privada RSA de 2048 bits correspondente.
 1. Informe o suporte ao cliente:
-   * qual domínio personalizado deve ser associado a um determinado ambiente, conforme definido pela ID do programa e pela ID do ambiente. Observe que domínios personalizados no lado do autor não são suportados.
+   * quais domínios personalizados devem ser associados a um determinado ambiente, conforme definido pela ID do programa e pela ID do ambiente. Até 100 domínios são suportados para um determinado ambiente e domínios não podem conter curingas. Observe que domínios personalizados no lado do autor não são suportados.
    * se for necessário algum incluir na lista de permissões IP para restringir o tráfego a um determinado ambiente.
 1. Coordene com o suporte ao cliente a temporização das alterações necessárias nos registros DNS. As instruções são diferentes com base na necessidade ou não de um registro de ápice:
    * se um registro de ápice não for necessário, os clientes devem definir o registro de DNS CNAME para apontar para o FQDN `cdn.adobeaemcloud.com`.
