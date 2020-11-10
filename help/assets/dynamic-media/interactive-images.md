@@ -2,9 +2,9 @@
 title: Imagens interativas
 description: Saiba como trabalhar com imagens interativas no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '4238'
+source-wordcount: '4253'
 ht-degree: 2%
 
 ---
@@ -256,10 +256,10 @@ Consulte [(Opcional) Visualização de imagens](#optional-previewing-interactive
 1. Próximo ao canto superior esquerdo da página, toque em **[!UICONTROL Adicionar ponto de acesso]** (ícone de toque com o dedo) para abrir a página Gerenciamento de ponto de acesso.
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
 
-1. Perto do canto superior esquerdo da página Gerenciamento de hotspots, toque em **[!UICONTROL Hotspot]**.
-1.  Na imagem, toque em um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização.
-1. Adicione outros pontos de conexão, conforme necessário, repetindo as etapas a e b.
-1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e toque em **[!UICONTROL Excluir]** (ícone de lixeira) no cabeçalho **[!UICONTROL Pontos de acesso]** .
+   1. Perto do canto superior esquerdo da página Gerenciamento de hotspots, toque em **[!UICONTROL Hotspot]**.
+   1.  Na imagem, toque em um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização. Ou use as teclas de seta do teclado para controlar a posição de um ponto ativo selecionado.
+   1. Adicione outros pontos de conexão, conforme necessário, repetindo as etapas a e b.
+   1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e toque em **[!UICONTROL Excluir]** (ícone de lixeira) no cabeçalho **[!UICONTROL Pontos de acesso]** .
 
 1. No campo de texto Nome, digite o nome do ponto de acesso. Esse nome também aparece na lista suspensa Ponto de acesso selecionado.
 1. Faça uma das seguintes opções:
