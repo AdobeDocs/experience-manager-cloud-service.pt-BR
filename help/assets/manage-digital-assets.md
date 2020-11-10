@@ -4,9 +4,9 @@ description: Saiba mais sobre vários métodos de edição e gerenciamento de at
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '4431'
+source-wordcount: '4429'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ Consulte [Adicionar ativos digitais ao Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Se um usuário do DAM fizer upload de um ou mais ativos que já existem no repositório, [!DNL Experience Manager] detectará a duplicação e notificará o usuário. A detecção de duplicados é desativada por padrão, pois pode ter impacto no desempenho dependendo do tamanho do repositório e do número de ativos carregados. Para ativar o recurso, configure o [!UICONTROL Adobe AEM Detector]de Duplicação de Ativos da Nuvem. Consulte [como executar configurações](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. A detecção de duplicação é baseada no `dam:sha1` valor exclusivo armazenado em `jcr:content/metadata/dam:sha1`. Isso significa que os ativos do duplicado são detectados mesmo se os nomes dos arquivos forem diferentes.
+Se um usuário do DAM fizer upload de um ou mais ativos que já existem no repositório, [!DNL Experience Manager] detectará a duplicação e notificará o usuário. A detecção de duplicados é desativada por padrão, pois pode ter impacto no desempenho dependendo do tamanho do repositório e do número de ativos carregados. Para ativar o recurso, configure o [!UICONTROL Adobe AEM Detector]de Duplicação de Ativos da Nuvem. Consulte [como executar configurações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)OSGi. A detecção de duplicação é baseada no `dam:sha1` valor exclusivo armazenado em `jcr:content/metadata/dam:sha1`. Isso significa que os ativos do duplicado são detectados mesmo se os nomes dos arquivos forem diferentes.
 
 ![Detectar a configuração OSGi do ativo do duplicado](assets/duplicate-detection.png)
 
@@ -544,7 +544,7 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
 1. Baixe ou imprima o PDF usando as opções na parte superior direita.
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor, o tamanho e o estilo da fonte, a cor de plano de fundo dos comentários e status, abra a configuração **[!UICONTROL do PDF de]** anotação no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/manage-digital-assets.md#annotating).
 
