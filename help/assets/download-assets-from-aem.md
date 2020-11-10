@@ -3,9 +3,9 @@ title: Baixar ativos
 description: Baixe ativos [!DNL Adobe Experience Manager Assets] para ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '885'
 ht-degree: 4%
 
 ---
@@ -26,16 +26,16 @@ Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 * [interface do usuário Experience Manager](#download-in-aem)
 * Interface do usuário do compartilhamento do link de ativo
 * [Commons de compartilhamento de ativos](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [Aplicativo para desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [Aplicativo para desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## Baixar ativos usando AEM interface {#download-in-aem}
 
-O serviço de download assíncrono fornece uma estrutura para o download ininterrupto de ativos de grande porte. Arquivos menores são baixados da interface do usuário em tempo real. Os arquivos grandes são baixados de forma assíncrona e os usuários são informados da conclusão por meio de notificações de Experience Manager na Caixa de entrada. Consulte [Entendendo a caixa de entrada](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)do Experience Manager.
+O serviço de download assíncrono fornece uma estrutura para o download ininterrupto de ativos de grande porte. Arquivos menores são baixados da interface do usuário em tempo real. Os arquivos grandes são baixados de forma assíncrona e os usuários são informados da conclusão por meio de notificações de Experience Manager na Caixa de entrada. Consulte [Entendendo a caixa de entrada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)do Experience Manager.
 
 ![Notificação de download](assets/download-notification.png)
 
-*Figura: Baixar notificação via[!DNL Experience Manager]Caixa de entrada.*
+*Figura: Baixar notificação via [!DNL Experience Manager] Caixa de entrada.*
 
 Os downloads assíncronos são acionados em um dos seguintes casos:
 
@@ -86,7 +86,7 @@ Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Sha
 
 O `Asset Download Servlet` pode ser desativado em instâncias de [!DNL Experience Manager] Publicação atualizando a configuração do dispatcher para bloquear quaisquer solicitações de download de ativos. O servlet também pode ser desabilitado manualmente por meio do console OSGi diretamente.
 
-1. Para bloquear solicitações de download de ativos por meio de uma configuração do dispatcher, edite a `dispatcher.any` configuração e adicione uma nova regra à seção [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro.
+1. Para bloquear solicitações de download de ativos por meio de uma configuração do dispatcher, edite a `dispatcher.any` configuração e adicione uma nova regra à seção [de](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)filtro.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
