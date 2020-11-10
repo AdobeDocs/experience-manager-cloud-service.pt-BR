@@ -3,10 +3,10 @@ title: Processar ativos usando microserviços de ativos
 description: Processar seus ativos digitais usando microserviços de processamento de ativos escaláveis e nativos na nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 3%
+source-wordcount: '835'
+ht-degree: 1%
 
 ---
 
@@ -80,6 +80,6 @@ O Adobe Experience Manager pode ser configurado para acionar automaticamente os 
 >* [Introdução ao uso dos microsserviços de ativos](asset-microservices-configure-and-use.md)
 >* [Formatos de arquivo não suportados](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
->* [Aplicativo de desktop do AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Experience Manager] aplicativo para desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Documentação do Apache Oak sobre acesso binário direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
