@@ -4,9 +4,9 @@ description: As práticas recomendadas integram uma implantação de Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3296'
 ht-degree: 18%
 
 ---
@@ -26,8 +26,7 @@ Leia para saber quais integrações escolher entre desktop e DAM de nível corpo
 
 ## Necessidade de colaboração de criativos, profissionais de marketing e usuários de DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-
-| Introdução | Caso de uso | Superfícies envolvidas |
+| Requisitos | Caso de uso | Superfícies envolvidas |
 |---|---|---|
 | Simplifique a experiência de profissionais de criação em desktop | Simplifique o acesso a ativos de um DAM (AEM Assets) para profissionais criativos, ou, mais amplamente, para usuários de desktop que trabalham em aplicativos nativos de criação de ativos. Eles precisam de uma maneira fácil e direta de descobrir, usar (abrir), editar e salvar alterações em AEM, bem como fazer upload de novos arquivos. | Ambiente de trabalho Win ou Mac; aplicativos Creative Cloud |
 | Fornecer ativos de alta qualidade e prontos para uso da Adobe Stock | Os profissionais de marketing ajudam a acelerar o processo de criação de conteúdo auxiliando na seleção de fontes e na descoberta de ativos. Profissionais criativos usam os ativos aprovados diretamente de suas ferramentas criativas. | AEM Assets; Mercado Adobe Stock; campos de metadados |
@@ -38,7 +37,7 @@ Leia para saber quais integrações escolher entre desktop e DAM de nível corpo
 | Proposta de valor para as pessoas envolvidas | oferta de Adobe | Superfícies envolvidas |
 |---|---|---|
 | Os usuários criativos descobrem ativos de AEM, os abrem e usam, editam e carregam alterações em AEM, bem como carregam novos arquivos em AEM, sem sair dos aplicativos Creative Cloud. | [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign |
-| Os usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações em AEM e o upload de novos arquivos em AEM do ambiente para desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo desktop nativo, incluindo os não-Adobe. | [Aplicativo de desktop do AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM aplicativo de desktop no desktop Win e Mac |
+| Os usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações em AEM e o upload de novos arquivos em AEM do ambiente para desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo desktop nativo, incluindo os não-Adobe. | [[!DNL Experience Manager] aplicativo para desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | AEM aplicativo de desktop no desktop Win e Mac |
 | Os profissionais de marketing e usuários comerciais descobrem, pré-visualizações, licenciam e salvam e gerenciam os ativos da Adobe Stock de dentro do AEM. Os ativos licenciados e salvos fornecem metadados Adobe Stock selecionados para melhor governança. | [Integração com Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | interface da Web AEM |
 
 Este artigo foca principalmente nos dois primeiros aspectos das necessidades de colaboração. A distribuição e o fornecimento de ativos em escala são brevemente mencionadas como um caso de uso. Para essas necessidades, considere o Adobe Brand Portal ou o Asset Share Commons. Soluções alternativas, como o [Brand Portal do AEM Assets](https://helpx.adobe.com/br/experience-manager/brand-portal/user-guide.html), soluções que podem ser criadas com base nos componentes do [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Compartilhamento de links](share-assets.md), usando a [interface do usuário na Web do AEM Assets](/help/assets/manage-digital-assets.md) devem ser revisadas com base em requisitos específicos.
