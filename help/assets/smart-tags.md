@@ -3,9 +3,9 @@ title: Marcar imagens automaticamente com tags geradas por AI
 description: Marque imagens usando serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas [!DNL Adobe Sensei] usando serviços.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 6%
 
 ---
@@ -205,7 +205,7 @@ Tags inteligentes aprimoradas são baseadas em modelos de aprendizado de imagens
 
 * Incapacidade de reconhecer diferenças sutis nas imagens. Por exemplo, camisas finas versus camisetas comuns.
 * Incapacidade de identificar tags com base em pequenos padrões/partes de uma imagem. Por exemplo, logotipos em camisetas.
-* A marcação é suportada nas localidades em que AEM é suportado. Para obter uma lista de idiomas, consulte Notas [de versão de Tags](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)inteligentes.
+* A marcação é suportada nos idiomas suportados pelo Experience Manager. Para obter uma lista de idiomas, consulte Notas [de versão do Serviço de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)inteligente.
 
 Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use o Assets Omnisearch (pesquisa de texto completo). Não há predicado de pesquisa separado para tags inteligentes.
 
