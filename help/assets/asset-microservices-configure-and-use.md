@@ -3,9 +3,9 @@ title: Configurar e usar microserviços de ativos
 description: Configure e use os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2514'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Experience Manager permite os seguintes níveis de processamento.
 |---|---|---|
 | [Configuração padrão](#default-config) | Está disponível como está e não pode ser modificado. Essa configuração fornece recursos de geração de execução muito básicos. | <ul> <li>Miniaturas padrão usadas pela interface [!DNL Assets] do usuário (48, 140 e 319 pixels) </li> <li> Pré-visualização grande (execução na Web - 1280 pixels) </li><li> Metadados e extração de texto.</li></ul> |
 | [Configuração personalizada](#standard-config) | Configurado pelos administradores por meio da interface do usuário. Fornece mais opções para a geração de representação estendendo a opção padrão. Estenda a opção predefinida para fornecer diferentes formatos e execuções. | <ul><li>Execução FPO. </li> <li>Alterar o formato e a resolução das imagens</li> <li> Aplica-se condicionalmente aos tipos de arquivos configurados. </li> </ul> |
-| [Perfil personalizado](#custom-config) | Configurado pelos administradores por meio da interface do usuário para usar o código personalizado por meio de aplicativos personalizados para chamar o Serviço [de Computação de](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)Ativos. Suporta requisitos mais complexos em um método nativo de nuvem e dimensionável. | Consulte casos [de uso](#custom-config)permitidos. |
+| [Perfil personalizado](#custom-config) | Configurado pelos administradores por meio da interface do usuário para usar o código personalizado por meio de aplicativos personalizados para chamar o Serviço [de](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)Asset computes. Suporta requisitos mais complexos em um método nativo de nuvem e dimensionável. | Consulte casos [de uso](#custom-config)permitidos. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -100,7 +100,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Perfil personalizado e casos de uso {#custom-config}
 
-O [!DNL Asset Compute Service] oferece suporte a uma variedade de casos de uso, como processamento padrão, formatos específicos de Adobe como arquivos Photoshop e implementação de processamento personalizado ou específico da organização. A personalização do fluxo de trabalho do Ativo de atualização do DAM necessária no passado é feita automaticamente ou pela configuração de perfis de processamento. Se as necessidades da empresa não forem atendidas por essas opções de processamento, a Adobe recomenda desenvolver e usar [!DNL Asset Compute Service] para estender os recursos padrão. Para obter uma visão geral, consulte [entender a extensibilidade e quando usá-la](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
+O [!DNL Asset Compute Service] oferece suporte a uma variedade de casos de uso, como processamento padrão, formatos específicos de Adobe como arquivos Photoshop e implementação de processamento personalizado ou específico da organização. A personalização do fluxo de trabalho do Ativo de atualização do DAM necessária no passado é feita automaticamente ou pela configuração de perfis de processamento. Se as necessidades da empresa não forem atendidas por essas opções de processamento, a Adobe recomenda desenvolver e usar [!DNL Asset Compute Service] para estender os recursos padrão. Para obter uma visão geral, consulte [entender a extensibilidade e quando usá-la](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ O [!DNL Asset Compute Service] oferece suporte a uma variedade de casos de uso, 
 
 Ele pode transformar imagens, vídeos, documentos e outros formatos de arquivo em diferentes representações, incluindo miniaturas, texto e metadados extraídos e arquivos.
 
-Os desenvolvedores podem usar o para [!DNL Asset Compute Service] criar aplicativos [](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) personalizados que atendam aos casos de uso suportados. [!DNL Experience Manager] pode chamar esses aplicativos personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] apoia os seguintes casos de utilização de serviços externos:
+Os desenvolvedores podem usar o para [!DNL Asset Compute Service] criar aplicativos [](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) personalizados que atendam aos casos de uso suportados. [!DNL Experience Manager] pode chamar esses aplicativos personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] apoia os seguintes casos de utilização de serviços externos:
 
 * Use [!DNL Adobe Photoshop]a API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ImageCutout da e salve o resultado como execução.
 * Chame sistemas de terceiros para atualizar dados, por exemplo, um sistema PIM.
@@ -128,8 +128,8 @@ Para criar um perfil personalizado, siga estas etapas:
 1. Forneça as seguintes informações.
 
    * Nome de arquivo de cada execução e extensão de arquivo compatível.
-   * [URL de ponto final de um aplicativo](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)personalizado Firefly. O aplicativo deve ser da mesma organização que a conta Experience Manager.
-   * Adicione Parâmetros de Serviço para [passar informações ou parâmetros adicionais para o aplicativo](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)personalizado.
+   * [URL de ponto final de um aplicativo](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html)personalizado Firefly. O aplicativo deve ser da mesma organização que a conta Experience Manager.
+   * Adicione Parâmetros de Serviço para [passar informações ou parâmetros adicionais para o aplicativo](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend)personalizado.
    * Tipos MIME incluídos e excluídos para limitar o processamento a alguns formatos de arquivo específicos.
 
    Clique em **[!UICONTROL Salvar]**.
@@ -144,7 +144,7 @@ Os aplicativos personalizados são aplicativos [do Project Firefly](https://gith
 
 Para ilustrar o uso personalizado de perfis, considere um caso de uso para aplicar algum texto personalizado a imagens de campanha. Você pode criar um perfil de processamento que aproveita a API do Photoshop para editar as imagens.
 
-A integração do Asset Compute Service permite que o Experience Manager passe esses parâmetros para o aplicativo personalizado usando o campo Parâmetros  de serviço. O aplicativo personalizado então chama a API do Photoshop e transmite esses valores para a API. Por exemplo, é possível passar o nome da fonte, a cor do texto, o peso do texto e o tamanho do texto para adicionar o texto personalizado às imagens de campanha.
+A integração com o Serviço de asset compute permite que o Experience Manager passe esses parâmetros para o aplicativo personalizado usando o campo Parâmetros  de serviço. O aplicativo personalizado então chama a API do Photoshop e transmite esses valores para a API. Por exemplo, é possível passar o nome da fonte, a cor do texto, o peso do texto e o tamanho do texto para adicionar o texto personalizado às imagens de campanha.
 
 ![perfil de processamento personalizado](assets/custom-processing-profile.png)
 
@@ -224,9 +224,9 @@ Para obter detalhes sobre qual etapa de fluxo de trabalho padrão pode ser usada
 
 >[!MORELIKETHIS]
 >
->* [Introdução ao Serviço](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)de Computação de Ativos.
->* [Entenda a extensibilidade e quando usá-la](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
->* [Como criar aplicativos](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)personalizados.
+>* [Introdução ao Serviço](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)de Asset computes.
+>* [Entenda a extensibilidade e quando usá-la](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
+>* [Como criar aplicativos](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)personalizados.
 >* [Tipos MIME suportados para vários casos](/help/assets/file-format-support.md)de uso.
 
 
