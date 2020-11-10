@@ -3,10 +3,10 @@ title: Compartilhar ativos, pastas e coleções como um link
 description: Este artigo descreve como compartilhar ativos, pastas e coleções dentro dos Ativos do Experience Manager como um hiperlink.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f13a884d16dd5695a0acd456bea143591fd0d822
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 4%
+source-wordcount: '898'
+ht-degree: 3%
 
 ---
 
@@ -113,7 +113,7 @@ Users can download the required assets and share these outside of [!DNL Experien
 
 Os profissionais de marketing e os usuários de linha de negócios podem facilmente compartilhar ativos aprovados com seus profissionais criativos usando,
 
-* **AEM aplicativo** para desktop: O aplicativo funciona no Windows e no Mac. Consulte Visão geral [do aplicativo para](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)desktop. Para saber como qualquer usuário autorizado do desktop pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e pré-visualização dos ativos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Os usuários da área de trabalho podem criar ativos e compartilhá-los de volta com seus colegas que são usuários AEM, por exemplo, fazendo upload de novas imagens. Consulte [fazer upload de ativos usando o aplicativo](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)para desktop.
+* **AEM aplicativo** para desktop: O aplicativo funciona no Windows e no Mac. Consulte Visão geral [do aplicativo para](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)desktop. Para saber como qualquer usuário autorizado do desktop pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e pré-visualização dos ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Os usuários da área de trabalho podem criar ativos e compartilhá-los de volta com seus colegas que são usuários AEM, por exemplo, fazendo upload de novas imagens. Consulte [fazer upload de ativos usando o aplicativo](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)para desktop.
 
 * **Link** do ativo Adobe: Os profissionais criativos podem pesquisar e usar ativos diretamente do Adobe InDesign, Adobe Illustrator e Adobe Photoshop.
 
@@ -167,7 +167,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Ativar ações de área de trabalho para usar com o aplicativo de área de trabalho {#desktop-actions}
 
-Na interface do usuário Ativos em um navegador, você pode explorar os locais dos ativos ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas de ações da área de trabalho e, para ativá-las, consulte [Ativar ações da área de trabalho em AEM interface](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)da Web.
+Na interface do usuário Ativos em um navegador, você pode explorar os locais dos ativos ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas de ações da área de trabalho e, para ativá-las, consulte [Ativar ações da área de trabalho em AEM interface](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)da Web.
 
 ![Ativar ações da área de trabalho para usar como atalho ao trabalhar com o aplicativo da área de trabalho](assets/enable_desktop_actions.png)
 
