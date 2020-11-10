@@ -2,9 +2,9 @@
 title: Perfis de imagem do Dynamic Media
 description: Crie Perfis de Imagem de Mídia Dinâmica que contenham configurações para máscara de nitidez e recorte inteligente, ou amostra inteligente, ou ambos, e aplique o perfil a uma pasta de ativos de imagem.
 translation-type: tm+mt
-source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2754'
 ht-degree: 11%
 
 ---
@@ -195,7 +195,7 @@ Você pode executar novamente o recorte inteligente para gerar as colheitas adic
 
 Consulte também [Edição do recorte inteligente ou da amostra inteligente de várias imagens](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**Para editar o recorte inteligente ou a amostra inteligente de uma única imagem**:
+**Para editar o recorte inteligente ou a amostra inteligente de uma única imagem**
 
 1. Toque no logotipo AEM e navegue até **[!UICONTROL Assets]**, em seguida, até a pasta que possui um recorte inteligente ou um Perfil de imagem de amostra inteligente aplicado.
 
@@ -209,6 +209,7 @@ Consulte também [Edição do recorte inteligente ou da amostra inteligente de v
    * Na imagem, arraste uma alça de canto para ajustar o tamanho da área visível do corte ou da amostra.
    * Na imagem, arraste a caixa/amostra até um novo local. Você só pode editar amostras de imagem; as amostras de cores são estáticas.
    * Acima da imagem, toque em **[!UICONTROL Reverter]** para desfazer todas as edições e restaurar o recorte ou a amostra original.
+   * Use as teclas de seta do teclado para cortar o tamanho do quadro, reposicionar a imagem ou ambas.
 
 1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Salvar]** e, em seguida, em **[!UICONTROL Fechar]** para retornar à pasta de ativos.
 
@@ -220,7 +221,7 @@ Depois de editar um recorte inteligente e salvar, a alteração é propagada em 
 
 Você pode executar novamente o recorte inteligente para gerar as colheitas adicionais novamente, se necessário.
 
-**Para editar o recorte inteligente ou a amostra inteligente de várias imagens**:
+**Para editar o recorte inteligente ou a amostra inteligente de várias imagens**
 
 1. Toque no logotipo AEM e navegue até **[!UICONTROL Assets]**, em seguida, para uma pasta que tenha um recorte inteligente ou um Perfil de imagem de amostra inteligente aplicado a ele.
 1. Na pasta, toque no ícone **[!UICONTROL Mais ações]** (...) e, em seguida, em **[!UICONTROL Recortar]** inteligente.
