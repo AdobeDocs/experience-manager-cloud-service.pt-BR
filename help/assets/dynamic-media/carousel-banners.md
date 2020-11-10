@@ -2,9 +2,9 @@
 title: Banners em carrossel
 description: Saiba como trabalhar com banners de carrossel no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '4605'
+source-wordcount: '4620'
 ht-degree: 4%
 
 ---
@@ -187,7 +187,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
 
 >[!NOTE]
 >
->Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** dam.
+>Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** DAM.
 
 **Para criar um conjunto de carrossel**
 
@@ -273,7 +273,7 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
    * Para pontos de conexão: Na imagem, toque em um local onde deseja que o ponto de acesso apareça.
    * Para mapas de imagem: Na imagem, clique em e arraste da parte superior esquerda para a parte inferior direita para criar a área do mapa de imagem. É possível ajustar o tamanho do mapa de imagem arrastando os cantos.
 
-   Se necessário, arraste o ponto de acesso ou o mapa de imagem para um novo local. Adicione outros pontos de acesso ou mapas de imagem, conforme necessário.
+   Se necessário, arraste o ponto de acesso ou o mapa de imagem para um novo local. Ou use as teclas de seta do teclado para controlar a posição de um ponto ativo selecionado. Adicione outros pontos de acesso ou mapas de imagem, conforme necessário.
 
    Para excluir um ponto de acesso ou mapa de imagem, toque na guia **[!UICONTROL Ações]**. No cabeçalho **[!UICONTROL Mapas e pontos de acesso]**, no menu suspenso **[!UICONTROL Tipo selecionado]**, selecione o nome do ponto de acesso ou mapa de imagem que deseja remover. Toque no ícone **[!UICONTROL Lixeira]**, ao lado do menu, e toque em **[!UICONTROL Excluir]**.
 
@@ -327,7 +327,7 @@ Consulte Fragmentos [de experiência](/help/sites-cloud/authoring/fundamentals/e
 ## Edição de conjuntos de carrossel {#editing-carousel-sets}
 
 >[!NOTE]
-Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** dam.
+Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** DAM.
 
 É possível executar várias tarefas de edição em Conjuntos de carrossel, como:
 
