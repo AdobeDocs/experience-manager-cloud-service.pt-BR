@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 7af8ddda4aee093b22147db9be9f65cd0c131c04
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 
 O Dynamic Media suporta o controle de teclado e tecnologias de assistência, como leitores de tela JAWS e NVDA, na interface do usuário de criação.
 
+
+
 ## Suporte de acessibilidade de teclado no Dynamic Media
 
 Os pressionamentos de teclas suportados por elementos individuais da interface do usuário são, na maioria dos casos, óbvios e fáceis de descobrir. O controle de teclado no Dynamic Media é sobre o seguinte:
@@ -25,8 +27,8 @@ Os pressionamentos de teclas suportados por elementos individuais da interface d
 O uso `Tab` avança o foco de entrada para o próximo elemento da interface do usuário na ordem de tabulação; o uso `Shift+Tab` traz o foco de entrada de volta ao elemento anterior da interface do usuário.
 O foco transversal segue a localização do elemento natural da interface do usuário na tela e se move de esquerda para direita e de cima para baixo.
 * Capacidade de usar a tecla `Spacebar` e `Enter` para ativar elementos padrão da interface do usuário, como botões, lista suspensa e assim por diante.
-* Capacidade de usar alguns pressionamentos de teclas personalizados para interagir com elementos complexos da interface do usuário, como teclas de seta no Editor de ponto de acesso.
 * A capacidade de ver o foco do teclado é realçada no elemento ativo. O elemento da interface do usuário que tem foco de entrada pode receber uma indicação de foco visual como uma borda renderizada ao redor do elemento da interface do usuário.
+* Capacidade de usar alguns pressionamentos de teclas personalizados para interagir com elementos complexos da interface do usuário, como teclas de seta no Editor de ponto de acesso. No Editor de recorte de imagem/recorte inteligente, você pode usar as teclas de seta para recortar o tamanho do quadro ou reposicionar a imagem, ou ambos.
 
 Como o Dynamic Media é um plug-in para AEM Assets, a maioria do comportamento de controle do teclado é exatamente o mesmo do AEM Assets. Por exemplo, o `Cancel` botão no Dynamic Media tem o mesmo realce de foco do AEM Assets e reage à `Spacebar` tecla do AEM Assets. Consulte Atalhos de [teclado em Ativos](/help/assets/accessibility.md#keyboard-shortcuts). As exceções são o editor de Hotspot e os editores de Recorte de imagem/Recorte inteligente.
 
