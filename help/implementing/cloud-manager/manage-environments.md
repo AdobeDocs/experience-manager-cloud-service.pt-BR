@@ -2,9 +2,9 @@
 title: Gerenciar Ambientes - Cloud Service
 description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
+source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '870'
 ht-degree: 7%
 
 ---
@@ -137,4 +137,10 @@ Consulte [Hibernando e Deshibernando Ambientes](https://docs.adobe.com/content/h
 ![](assets/environ-dev-console.png)
 
 Essa opção também está disponível se você clicar em **Detalhes** no cartão de **Ambientes** . A página **Ambientes** é aberta e, depois que você selecionar um ambiente, clique em **...** e selecione **Developer Console**.
+
+## Logon local {#login-locally}
+
+Selecione Logon **** local no menu suspenso no Cartão de **Ambientes** para fazer login localmente no Adobe Experience Manager
+
+![](assets/environ-login.png)
 
