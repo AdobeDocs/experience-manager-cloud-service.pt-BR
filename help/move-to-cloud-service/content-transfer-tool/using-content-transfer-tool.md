@@ -2,7 +2,7 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
+source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 70%
@@ -34,9 +34,9 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Depois de concluir a fase de *Extração* do processo de transferência de conteúdo e antes de iniciar a Fase *de* ingestão para ingerir conteúdo em seu AEM como um Cloud Service *Stage* ou instâncias de *produção* , você precisará registrar um ticket de suporte para notificar o Adobe da sua intenção de executar a *ingestão* ** para que o Adobe possa garantir que não ocorram interrupções durante o processo deingestão. Você precisará registrar o ticket de suporte 1 semana antes da data de *ingestão* planejada. Depois que você enviar o ticket de suporte, a equipe de suporte fornecerá orientações sobre as próximas etapas.
    * Registre um ticket de suporte com os seguintes detalhes:
-   1. Data exata e hora estimada (com o seu fuso horário) quando planeja start da fase de *ingestão* .
-   2. Tipo de ambiente (Estágio ou Produção) no qual você planeja assimilar dados.
-   3. ID do programa
+      * Data exata e hora estimada (com o seu fuso horário) quando planeja start da fase de *ingestão* .
+      * Tipo de ambiente (Estágio ou Produção) no qual você planeja assimilar dados.
+      * ID do programa.
 
 * A *Fase de assimilação* do autor diminuirá a implantação do autor inteiro. Isso significa que o AEM do autor não estará disponível durante todo o processo de ingestão. Certifique-se também de que nenhum pipeline do Cloud Manager seja executado durante a fase de *ingestão* .
 
