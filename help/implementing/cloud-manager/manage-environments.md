@@ -2,7 +2,7 @@
 title: Gerenciar Ambientes - Cloud Service
 description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 6%
@@ -140,7 +140,7 @@ Essa opção também está disponível se você clicar em **Detalhes** no cartã
 
 ## Logon local {#login-locally}
 
-Selecione Logon **** local no menu suspenso no Cartão de **Ambientes** para fazer login localmente no Adobe Experience Manager
+Selecione Logon **** local no menu suspenso no Cartão de **Ambientes** para fazer login localmente no Adobe Experience Manager.
 
 ![](assets/environ-login-locally.png)
 
