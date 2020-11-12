@@ -1,0 +1,53 @@
+---
+title: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2020.10.0
+description: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2020.10.0
+translation-type: tm+mt
+source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 48%
+
+---
+
+
+# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes}
+
+Esta página descreve as Notas de versão do Cloud Manager em AEM como Cloud Service 2020.10.0.
+
+## Data de lançamento {#release-date}
+
+A data de lançamento do Cloud Manager no AEM como Cloud Service 2020.10.0 é 1 de outubro de 2020.
+
+## Cloud Manager {#cloud-manager}
+
+### Novidades {#what-is-new}
+
+* A página Ambientes foi reprojetada.
+
+* A página de ambientes hibernados agora mostra um status discreto no Cloud Manager.
+
+* O container de compilação do Cloud Manager agora oferece suporte à compilação de projetos usando Java 8 ou Java 11. O suporte para Java 11 é fornecido pelo sistema de cadeias de ferramentas Maven.
+
+* O número de variáveis por ambiente aumentou para 200.
+
+* A placa de Ambiente na página Visão geral agora lista até três ambientes. Os usuários podem selecionar o botão **Mostrar tudo** para navegar até a página de resumo do Ambiente para visualização de uma tabela com uma lista completa de ambientes.
+Consulte [Visualizando Ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
+
+
+### Correções de erros {#bug-fixes-cloud-manager}
+
+* Devido a um erro, o link do Cloud Manager para o Console do desenvolvedor estava ativo antes dos ambientes serem totalmente criados.
+
+* O link direto do Cloud Manager para o Console do desenvolvedor não exibia a opção de desibernar/hibernar para ambientes do Programa de sandbox.
+
+* Os botões Cancelar e Salvar na página Edição de Pipeline de Não Produção nem sempre estavam visíveis.
+
+* Certas falhas no processo de qualidade do código podiam resultar na geração incorreta do arquivo de log.
+
+* Às vezes, o nome sugerido na criação de um novo programa retornava um duplicado de um nome de programa existente.
+
+* Grandes logs de etapas de pipeline não podiam ser baixados consistentemente pela interface do usuário.
+
+* A validação de nomes de ambientes apresentava um erro off-by-one.
+
+* A página Ambientes às vezes mostrava segmentos do Publish e do Dispatcher sem que estivessem presentes.
