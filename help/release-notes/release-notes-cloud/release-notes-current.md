@@ -1,18 +1,18 @@
 ---
-title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0.
-description: '[!DNL Adobe Experience Manager] como notas de versão de Cloud Service para 2020.10.0.'
+title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: d8cb22a5597e95bf4c74233b48553bb67bca09cb
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 21%
+source-wordcount: '785'
+ht-degree: 5%
 
 ---
 
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
 
 ## Data de lançamento {#release-date}
 
@@ -60,37 +60,25 @@ A seguinte versão (2020.11.0) será lançada em 1º de dezembro de 2020.
 
 * CIF Cloud config UI exibiu os botões &quot;Salvar e fechar&quot; para configurações em /lib e /apps/. Mas essas são somente leitura, portanto, a interface do usuário foi corrigida para exibir somente o botão &quot;Fechar&quot;.
 
+
 ## Cloud Manager {#cloud-manager}
 
-* A página Ambientes foi reprojetada.
+### Data de lançamento {#release-date-cm}
 
-* A página de ambientes hibernados agora mostra um status discreto no Cloud Manager.
+A data de lançamento do Cloud Manager no AEM como Cloud Service 2020.11.0 é 12 de novembro de 2020.
 
-* O container de compilação do Cloud Manager agora oferece suporte à compilação de projetos usando Java 8 ou Java 11. O suporte para Java 11 é fornecido pelo sistema de cadeias de ferramentas Maven.
+### Novidades {#what-is-new}
 
-* O número de variáveis por ambiente aumentou para 200.
+* Uma nova opção de menu Logon **** local agora está disponível para os usuários nas opções do menu ambiente nas páginas Cartão do Ambiente e Resumo dos Ambientes.
 
-* A placa de Ambiente na página Visão geral agora lista até três ambientes. Os usuários podem selecionar o botão **Mostrar tudo** para navegar até a página de resumo do Ambiente para visualização de uma tabela com uma lista completa de ambientes.
-Consulte [Visualizando Ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
+* A guia **Aprendizagem** no Gerenciador de nuvem foi atualizada com novas imagens na interface do usuário.
 
 ### Correções de erros {#bug-fixes-cloud-manager}
 
-* Devido a um erro, o link do Cloud Manager para o Console do desenvolvedor estava ativo antes dos ambientes serem totalmente criados.
-
-* O link direto do Cloud Manager para o Console do desenvolvedor não exibia a opção de desibernar/hibernar para ambientes do Programa de sandbox.
-
-* Os botões Cancelar e Salvar na página Edição de Pipeline de Não Produção nem sempre estavam visíveis.
-
-* Certas falhas no processo de qualidade do código podiam resultar na geração incorreta do arquivo de log.
-
-* Às vezes, o nome sugerido na criação de um novo programa retornava um duplicado de um nome de programa existente.
-
-* Grandes logs de etapas de pipeline não podiam ser baixados consistentemente pela interface do usuário.
-
-* A validação de nomes de ambientes apresentava um erro off-by-one.
-
-* A página Ambientes às vezes mostrava segmentos do Publish e do Dispatcher sem que estivessem presentes.
-
+* O carregamento de dependências feitas antes da execução da compilação exigia o download de um plug-in Maven.
+* O link do rodapé do Gerenciador de nuvem para selecionar um idioma agora navegará até o local correto.
+* Às vezes, durante a digitalização do código, o processo SonarQube não era start. Isso será detectado automaticamente e uma tentativa de reinicialização será feita.
+* Todos os pipelines de produção existentes serão ativados automaticamente com a etapa Auditoria de experiência.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
