@@ -2,7 +2,7 @@
 title: Gerenciar Ambientes - Cloud Service
 description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
+source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 6%
@@ -87,13 +87,13 @@ As atualizações de ambientes de Estágio e Produção são gerenciadas automat
 
 As atualizações dos ambientes de desenvolvimento são gerenciadas pelos usuários do programa. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status na placa Ambientes na tela inicial mostrará **ATUALIZAÇÃO DISPONÍVEL**.
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 A opção **Atualizar** está disponível no Cartão de **Ambientes** .
 Essa opção também está disponível se você clicar em **Detalhes** no cartão de **Ambientes** . A página **Ambientes** é aberta e, depois que você selecionar o ambiente de desenvolvimento, clique em **...** e selecione **Atualizar**, conforme mostrado na figura abaixo:
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 Selecionar essa opção permitirá que um Gerenciador de implantação atualize o pipeline associado a esse ambiente para a versão mais recente e execute o pipeline.
 
@@ -109,7 +109,7 @@ A opção **Excluir** está disponível no menu suspenso no Cartão de **Ambient
 
 A opção de exclusão também estará disponível se você clicar em **Detalhes** no cartão de **Ambientes** . A página **Ambientes** é aberta e, depois que você selecionar o ambiente de desenvolvimento, clique em **...** e selecione **Excluir**, conforme mostrado na figura abaixo:
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
@@ -122,7 +122,7 @@ Selecione **Gerenciar acesso** no menu suspenso no Cartão de **Ambientes** . Vo
 
 Consulte [Gerenciamento do acesso à instância](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) do autor para saber mais.
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## Acesso ao Console do desenvolvedor {#accessing-developer-console}
@@ -134,7 +134,7 @@ Somente um usuário na função Desenvolvedor terá acesso ao **Developer Consol
 Consulte [Hibernando e Deshibernando Ambientes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) Sandbox para obter mais detalhes.
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 Essa opção também está disponível se você clicar em **Detalhes** no cartão de **Ambientes** . A página **Ambientes** é aberta e, depois que você selecionar um ambiente, clique em **...** e selecione **Developer Console**.
 
