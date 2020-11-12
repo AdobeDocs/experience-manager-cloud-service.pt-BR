@@ -1,57 +1,59 @@
 ---
-title: Pesquisar ativos digitais
-description: Saiba como localizar os ativos necessários no AEM usando o painel Filtros e como usar os ativos exibidos na pesquisa.
+title: Pesquise ativos digitais e imagens [!DNL Adobe Experience Manager].
+description: Saiba como localizar os ativos necessários [!DNL Adobe Experience Manager] usando o painel Filtros e como usar os ativos exibidos na pesquisa.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 7f9384b08df70aac2f425b830337e97d711b709e
 workflow-type: tm+mt
-source-wordcount: '4523'
-ht-degree: 7%
+source-wordcount: '4743'
+ht-degree: 5%
 
 ---
 
 
-# Pesquisar ativos no AEM {#search-assets-in-aem}
+# Pesquisar ativos em [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
-Você pode alcançar uma velocidade de conteúdo maior usando opções de descoberta de ativos amigáveis no Experience Manager. Suas equipes podem reduzir o tempo de comercialização com uma experiência de pesquisa inteligente e perfeita usando recursos prontos para uso e métodos personalizados. Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos por parte de usuários e comerciantes, ou para administração por administradores de DAM. Pesquisas simples, avançadas e personalizadas que podem ser realizadas pela interface do usuário do AEM Assets ou outros aplicativos e superfícies ajudam a atender a esses casos de uso.
+[!DNL Adobe Experience Manager Assets] fornece métodos robustos de descoberta de ativos que ajudam você a atingir uma velocidade de conteúdo mais alta. Suas equipes podem reduzir o tempo de comercialização com uma experiência de pesquisa inteligente e perfeita usando recursos prontos para uso e métodos personalizados. Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos por parte de usuários e comerciantes, ou para administração por administradores de DAM. Pesquisas simples, avançadas e personalizadas que podem ser realizadas pela interface do [!DNL Assets] usuário ou outros aplicativos e superfícies ajudam a atender a esses casos de uso.
 
-AEM suporta os seguintes casos de uso e este artigo descreve o uso, os conceitos, as configurações, as limitações e a solução de problemas desses casos de uso.
+[!DNL Experience Manager Assets] suporta os seguintes casos de uso e este artigo descreve o uso, os conceitos, as configurações, as limitações e a solução de problemas para esses casos de uso.
 
 | Pesquisar ativos | Configuração e administração | Trabalhar com resultados de pesquisa |
-|--- |--- |--- |
+|---|---|---|
 | [Pesquisas básicas](#searchbasics) | [Índice de pesquisa](#searchindex) | [Classificar resultados](#sort) |
 | [Compreender a interface de usuário de pesquisa](#searchui) |  | [Verificar propriedades e metadados de um ativo](#checkinfo) |
 | [Sugestões de pesquisa](#searchsuggestions) | [Metadados obrigatórios](#mandatorymetadata) | [Download](#download) |
 | [Compreender os resultados e o comportamento da pesquisa](#searchbehavior) | [Modificar aspectos de pesquisa](#searchfacets) | [Atualizações de metadados em massa](#metadataupdates) |
 | [Classificação de pesquisa e aumento](#searchrank) | [Extração de texto](#extracttextupload) | [Coleções inteligentes](#collections) |
-| [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) | [Previsões personalizadas](#custompredicates) | [Entenda os resultados](#unexpectedresults) inesperados e [solucione problemas](#troubleshoot) |
-| [Pesquise de outras soluções e aplicativos](#beyondomnisearch): <br />     [Aplicativo de link](#aal) de ativo para <br />[desktop](#desktopapp) <br />     [Imagens do Adobe Stock](#adobestock) <br />     [Ativos do Dynamic Media](#dynamicmedia) |  |  |
-| [Seletor/seletor de ativos](#assetselector) |  |  |
+| [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) | [Previsões personalizadas](#custompredicates) | [Entender e solucionar problemas de resultados inesperados](#unexpectedresults) |
+| [Pesquise de outras soluções e aplicativos](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[aplicativo de desktop Experience Manager](#desktopapp)</li><li>[Imagens do Adobe Stock](#adobestock)</li><li>[Ativos do Dynamic Media](#dynamicmedia)</li></ul> |  |  |
+| [Seletor de ativos](#assetselector) |  |  |
 | [Limitações](#tips) e [dicas](#limitations) |  |  |
 | [Exemplos ilustrados](#samples) |  |  |
 
-Pesquise ativos usando o campo Omnisearch na parte superior da interface da Web AEM. Vá para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]** no AEM, clique em ![search_icon](assets/do-not-localize/search_icon.png) na barra superior, digite a palavra-chave de pesquisa e pressione return. Como alternativa, use o atalho de palavra-chave `/` (barra) para abrir o campo Omnisearch. `Location:Assets` é pré-selecionada para limitar as pesquisas aos ativos DAM. É possível fazer pesquisas avançadas para aumentar ou limitar o [escopo da pesquisa](#scope).
+Pesquise ativos usando o campo Omnisearch na parte superior da interface da [!DNL Experience Manager] Web. Vá para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]** em [!DNL Experience Manager], clique em ![search_icon](assets/do-not-localize/search_icon.png) na barra superior, digite a palavra-chave de pesquisa e pressione return. Como alternativa, use o atalho de palavra-chave `/` (barra) para abrir o campo Omnisearch. `Location:Assets` é pré-selecionada para limitar as pesquisas aos ativos DAM. [!DNL Experience Manager] fornece sugestões enquanto seu start digita uma palavra-chave de pesquisa.
 
-Use o painel **[!UICONTROL Filtros]** para procurar ativos, pastas, tags e metadados. Você pode filtrar os resultados da pesquisa com base nas várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados de insights e licenciamento da Adobe Stock. Você pode personalizar o painel Filtros e adicionar/remover predicados de pesquisa usando aspectos [de](/help/assets/search-facets.md)pesquisa.
+Use o painel **[!UICONTROL Filtros]** para procurar ativos, pastas, tags e metadados. Você pode filtrar os resultados da pesquisa com base nas várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados de insights e licenciamento da Adobe Stock. Você pode personalizar o painel Filtros e adicionar ou remover predicados de pesquisa usando aspectos [de](/help/assets/search-facets.md)pesquisa. O filtro Tipo [!UICONTROL de] arquivo no painel [!UICONTROL Filtros] tem caixas de seleção de estado misto. Portanto, a menos que você selecione todos os predicados aninhados (ou formatos), as caixas de seleção de primeiro nível estarão parcialmente marcadas.
 
-AEM recurso de pesquisa suporta a pesquisa por coleções e a pesquisa por ativos dentro de uma coleção. Consulte Coleções [de pesquisa](/help/assets/manage-collections.md).
+[!DNL Experience Manager] o recurso de pesquisa suporta a pesquisa por coleções e a pesquisa por ativos dentro de uma coleção. Consulte Coleções [de pesquisa](/help/assets/manage-collections.md).
 
 ## Compreender a interface de pesquisa {#searchui}
 
 Familiarize-se com a interface de pesquisa e as ações disponíveis.
 
-![Noções básicas sobre partes da interface](assets/aem_search_results.png)de resultados de pesquisa do Assets *Figura:* Noções básicas da interface de resultados da pesquisa de Ativos
+![Compreender a interface de resultados de pesquisa do Experience Manager Assets](assets/aem_search_results.png)
 
-**A.** Salve a pesquisa como uma coleção inteligente. **B.** Filtros (predicados) para limitar os resultados da pesquisa. **C.** Exiba arquivos, pastas ou ambos nos resultados da pesquisa. **D.** Clique em Filtros para abrir ou fechar o painel à esquerda. **E.** O local de pesquisa é DAM. **F.** Campo Omnisearch com a palavra-chave de pesquisa fornecida pelo usuário **G.** Marque a caixa para selecionar todos os resultados de pesquisa **H.** Quantidade de resultados de pesquisa exibidos do total de resultados de pesquisa **I.** Feche a pesquisa **J.** Alterne entre a exibição Cartão e a exibição em Lista
+*Figura: Entenda a interface dos resultados da [!DNL Experience Manager Assets] pesquisa.*
+
+**A.** Salve a pesquisa como uma coleção inteligente. **B.** Filtros ou previsões para restringir os resultados da pesquisa. **C.** Exibir arquivos, pastas ou ambos. **D.** Clique em Filtros para abrir ou fechar o painel à esquerda. **E.** O local de pesquisa é DAM. **F.** Campo Omnisearch com palavra-chave de pesquisa fornecida pelo usuário. **G.** Selecione os resultados de pesquisa carregados. **H.** Número de resultados de pesquisa exibidos fora do total de resultados de pesquisa. **Eu.** Feche a pesquisa. **J.** Alterne entre a visualização da placa e a visualização da lista.
 
 ### Aspectos de pesquisa dinâmica {#dynamicfacets}
 
-Você pode descobrir os ativos desejados mais rapidamente a partir da página de resultados da pesquisa usando o número atualizado dinamicamente dos resultados de pesquisa esperados nas facetas de pesquisa. O número esperado de ativos é atualizado mesmo antes de aplicar o filtro de pesquisa. Ver a contagem esperada em relação ao filtro ajuda a navegar pelos resultados da pesquisa de forma rápida e eficiente. Para obter mais informações, consulte [Pesquisar ativos em AEM](/help/assets/search-assets.md).
+Você pode descobrir os ativos desejados mais rapidamente a partir da página de resultados da pesquisa usando o número atualizado dinamicamente dos resultados de pesquisa esperados nas facetas de pesquisa. O número esperado de ativos é atualizado mesmo antes de aplicar o filtro de pesquisa. Ver a contagem esperada em relação ao filtro ajuda a navegar pelos resultados da pesquisa de forma rápida e eficiente.
 
 ![Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.](assets/asset_search_results_in_facets_filters.png)
 
-Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.
+*Figura: Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.*
 
 ## Search suggestions as you type {#searchsuggestions}
 
@@ -67,11 +69,13 @@ Ao digitar uma palavra-chave com start, AEM sugere as possíveis palavras-chave 
 
 ### Termos e resultados básicos da pesquisa {#searchbasics}
 
-Você pode executar pesquisas de palavras-chave a partir do campo OmniSearch. A pesquisa de palavra-chave não diferencia maiúsculas de minúsculas e é uma pesquisa de texto completo (nos campos de metadados populares). Se mais de uma palavra-chave for usada, `AND` será o operador padrão entre as palavras-chave. Os resultados são classificados por relevância, começando com correspondências mais próximas. Para várias palavras-chave, os resultados mais relevantes são os ativos que contêm ambos os termos em seus metadados. Nos metadados, as palavras-chave que aparecem como tags inteligentes são classificadas mais alto do que as palavras-chave que aparecem em outros campos de metadados.
+Você pode executar pesquisas de palavras-chave a partir do campo OmniSearch. A pesquisa de palavra-chave não diferencia maiúsculas de minúsculas e é uma pesquisa de texto completo (nos campos de metadados populares). Se mais de uma palavra-chave for usada, `AND` será o operador padrão entre as palavras-chave.
 
-AEM permite que um termo de pesquisa específico tenha peso superior. Além disso, é possível aumentar a classificação de alguns ativos direcionados para termos de pesquisa específicos. AEM administradores podem executar essas configurações conforme descrito abaixo.
+Os resultados são classificados por relevância, começando com correspondências mais próximas. Para várias palavras-chave, os resultados mais relevantes são os ativos que contêm ambos os termos em seus metadados. Nos metadados, as palavras-chave que aparecem como tags inteligentes são classificadas mais alto do que as palavras-chave que aparecem em outros campos de metadados. [!DNL Experience Manager] permite fornecer um termo de pesquisa específico com maior peso. Além disso, é possível [aumentar a classificação](#searchrank) de alguns ativos direcionados para termos de pesquisa específicos.
 
 Para encontrar rapidamente os ativos relevantes, a interface avançada fornece mecanismos de filtragem, classificação e seleção. Você pode filtrar os resultados com base em vários critérios e ver o número de ativos pesquisados para vários filtros. Como alternativa, você pode executar novamente a pesquisa alterando o query no campo Omnisearch. Quando você altera seus termos ou filtros de pesquisa, os outros filtros permanecem aplicados para preservar o contexto da pesquisa.
+
+Quando os resultados forem muitos ativos, [!DNL Experience Manager] exibirá os primeiros 100 na visualização do cartão e 200 na visualização da lista. À medida que os usuários rolam, mais ativos são carregados. Isso é para melhorar o desempenho. Assista a uma demonstração em vídeo do [número de ativos exibidos](https://www.youtube.com/watch?v=LcrGPDLDf4o).
 
 Às vezes, você pode ver alguns ativos inesperados nos resultados da pesquisa. Para obter mais informações, consulte resultados [](#unexpectedresults)inesperados.
 
@@ -104,11 +108,11 @@ Os resultados da pesquisa que correspondem a todos os termos de pesquisa nos cam
 
 Você pode melhorar a relevância das palavras-chave de ativos específicos para ajudar a aumentar as pesquisas com base nas palavras-chave. Em outras palavras, as imagens para as quais você promove palavras-chave específicas aparecem na parte superior dos resultados da pesquisa quando você pesquisa com base nessas palavras-chave.
 
-1. Na interface do usuário do Assets, abra a página de propriedades do ativo. Clique em **[!UICONTROL Avançado]** e clique/toque em **[!UICONTROL Adicionar]**, em **[!UICONTROL Elevar para palavras-chave de pesquisa]**.
-1. Na caixa **[!UICONTROL Pesquisar promoção]** , especifique uma palavra-chave para a qual deseja aumentar a pesquisa da imagem e clique/toque em **[!UICONTROL Adicionar]**. É possível especificar várias palavras-chave da mesma maneira.
+1. From the [!DNL Assets] user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
+1. Na caixa **[!UICONTROL Pesquisar promoção]** , especifique uma palavra-chave para a qual deseja aumentar a pesquisa da imagem e clique em **[!UICONTROL Adicionar]**. É possível especificar várias palavras-chave da mesma maneira.
 1. Clique em **[!UICONTROL Salvar e fechar]**. O ativo que você promoveu para essa palavra-chave aparece entre os principais resultados da pesquisa.
 
-Você pode usar isso em sua vantagem ao aumentar a classificação de alguns ativos nos resultados da pesquisa para a palavra-chave direcionada. Veja o exemplo de vídeo abaixo. Para obter informações detalhadas, consulte [pesquisar em AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html).
+Você pode usar isso em sua vantagem ao aumentar a classificação de alguns ativos nos resultados da pesquisa para a palavra-chave direcionada. Veja o exemplo de vídeo abaixo. Para obter informações detalhadas, consulte [pesquisa no Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -195,11 +199,11 @@ Usando o Adobe Asset Link, os profissionais criativos agora podem acessar o cont
 
 ### Pesquisar ativos no aplicativo AEM desktop {#desktopapp}
 
-Profissionais criativos usam o aplicativo de desktop para tornar o AEM Assets facilmente pesquisável e disponível em seu desktop local (Win ou Mac). Os profissionais de criação podem revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas em AEM com uma nova versão criada no repositório. O aplicativo suporta pesquisas básicas usando uma ou mais palavras-chave, * e ? curingas e operador E. Consulte [Pesquisar, pesquisar e pré-visualização ativos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) no aplicativo de desktop.
+Profissionais criativos usam o aplicativo de desktop para tornar o AEM Assets facilmente pesquisável e disponível em seu desktop local (Win ou Mac). Os profissionais de criação podem revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas em AEM com uma nova versão criada no repositório. O aplicativo suporta pesquisas básicas usando uma ou mais palavras-chave, * e ? curingas e operador E. Consulte [Pesquisar, pesquisar e pré-visualização ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) no aplicativo de desktop.
 
 ### Search assets in Brand Portal {#brandportal}
 
-Usuários e comerciantes de linha de negócios usam o Brand Portal para compartilhar de forma eficiente e segura os ativos digitais aprovados com suas equipes internas, parceiros e revendedores estendidos. See [search assets on Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
+Usuários e comerciantes de linha de negócios usam o Brand Portal para compartilhar de forma eficiente e segura os ativos digitais aprovados com suas equipes internas, parceiros e revendedores estendidos. See [search assets on Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
 ### Pesquisar imagens do Adobe Stock {#adobestock-1}
 
@@ -237,7 +241,7 @@ Você pode passar os seguintes parâmetros de solicitação em um URL para inici
 | tipo de ativo (S) | imagens, documentos, multimídia, arquivos | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Use essa opção para filtrar os tipos de ativos com base no valor passado. |
 | root | &lt;caminho_da_pasta> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Use essa opção para especificar a pasta raiz do seletor de ativos. Nesse caso, o seletor de ativos permite que você selecione apenas ativos secundários (diretos/indiretos) na pasta raiz. |
 
-Para acessar a interface do seletor de ativos, acesse `https://[AEM server]:[port]/aem/assetpicker`. Navegue até a pasta desejada e selecione um ou mais ativos. Como alternativa, procure o ativo desejado na caixa Omnisearch, aplique o filtro conforme necessário e selecione-o.
+Para acessar a interface do seletor de ativos, acesse `https://[aem_server]:[port]/aem/assetpicker`. Navegue até a pasta desejada e selecione um ou mais ativos. Como alternativa, procure o ativo desejado na caixa Omnisearch, aplique o filtro conforme necessário e selecione-o.
 
 ![Procurar e selecionar ativo no seletor de ativos](assets/assetpicker.png)
 
@@ -245,29 +249,33 @@ Para acessar a interface do seletor de ativos, acesse `https://[AEM server]:[por
 
 ## Limitações           {#limitations}
 
-O recurso de pesquisa no AEM Assets tem as seguintes limitações:
+O recurso de pesquisa no tem [!DNL Experience Manager Assets] as seguintes limitações:
 
 * Não insira um espaço à esquerda no query de pesquisa; caso contrário, a pesquisa não funcionará.
-* AEM pode continuar a mostrar o termo de pesquisa depois que você seleciona as propriedades de um ativo dos resultados pesquisados e cancela a pesquisa (CQ-4273540).
+* [!DNL Experience Manager] pode continuar a mostrar o termo de pesquisa depois de selecionar as propriedades de um ativo dos resultados pesquisados e cancelar a pesquisa. <!-- (CQ-4273540) -->
 * Ao procurar pastas ou arquivos e pastas, os resultados da pesquisa não podem ser classificados em nenhum parâmetro.
-* Se você pressionar return sem vincular nada na barra Omnisearch, AEM retornará uma lista de apenas arquivos e não pastas. Se você pesquisar especificamente por pastas sem usar uma palavra-chave, AEM não retornará nenhum resultado.
+* Se você pressionar Return sem digitar na barra Omnisearch, [!DNL Experience Manager] retornará uma lista de apenas arquivos e não pastas. Se você pesquisar especificamente por pastas sem usar uma palavra-chave, [!DNL Experience Manager] não retornará nenhum resultado.
 
 Pesquisa visual ou pesquisa de semelhança tem as seguintes limitações:
 
 * A pesquisa visual funciona melhor com repositórios maiores. Embora não haja um número mínimo de imagens necessário para bons resultados, a qualidade das correspondências com algumas imagens pode não ser tão boa quanto as correspondências de um repositório grande.
-* Não é possível alterar o modelo ou treinar AEM para encontrar imagens semelhantes. Por exemplo, adicionar ou remover tags inteligentes a alguns ativos não altera o modelo. Os ativos são excluídos dos resultados de pesquisa visualmente semelhantes.
+* Não é possível alterar o modelo ou o trem [!DNL Experience Manager] para encontrar imagens semelhantes. Por exemplo, adicionar ou remover tags inteligentes a alguns ativos não altera o modelo. Os ativos são excluídos dos resultados de pesquisa visualmente semelhantes.
+
+A funcionalidade de pesquisa pode ter limitações de desempenho nos seguintes cenários:
+
+* A visualização de cartão tem um tempo de carregamento mais rápido do que a visualização de lista para exibir os resultados da pesquisa.
 
 ## Dicas de pesquisa {#tips}
 
 * Ao monitorar o status da revisão de ativos, use a opção apropriada para descobrir quais ativos estão aprovados ou quais ativos estão pendentes de aprovação.
 * Use o predicado Insights para pesquisar ativos suportados com base em suas estatísticas de uso obtidas de vários aplicativos Creative. Os dados de uso são agrupados em Pontuação de uso, Impressões, Cliques e canais de mídia nos quais os ativos aparecem categorias.
-* Use a caixa de seleção para selecionar todos os resultados de pesquisa ou os resultados de pesquisa filtrados para operar na seleção. Seleciona todos os ativos pesquisados independentemente de quantos ativos são exibidos na visualização do usuário atual. Por exemplo, você pode baixar todos os ativos selecionados, atualizar as propriedades de metadados em massa para todos os ativos selecionados ou adicionar ativos selecionados a uma coleção.
+* Use a caixa de seleção **[!UICONTROL Selecionar tudo]** para selecionar os ativos pesquisados. [!DNL Experience Manager] exibe inicialmente 100 ativos na visualização do cartão e 200 ativos na visualização da lista. Mais ativos são carregados à medida que você percorre os resultados da pesquisa. Você pode selecionar mais ativos do que os ativos carregados. A contagem dos ativos selecionados é exibida no canto superior direito da página de resultados da pesquisa. Você pode operar na seleção, por exemplo, baixar os ativos selecionados, atualizar as propriedades de metadados em massa para os ativos selecionados ou adicionar os ativos selecionados a uma Coleção. Quando mais ativos são selecionados do que exibidos, uma ação é aplicada em todos os ativos selecionados ou uma caixa de diálogo exibe o número de ativos nos quais ela é aplicada. Para aplicar uma ação aos ativos que não foram carregados, verifique se todos os ativos estão selecionados explicitamente.
 * Para pesquisar ativos que não contenham os metadados obrigatórios, consulte os metadados [](#mandatorymetadata)obrigatórios.
 * A pesquisa usa todos os campos de metadados. Uma pesquisa genérica, como a pesquisa por 12, geralmente retorna muitos resultados. Para obter melhores resultados, use aspas de duplo (não simples) ou verifique se o número está contíguo a uma palavra sem um caractere especial (por exemplo, `shoe12`).
 * A pesquisa de texto completo oferece suporte a operadores como `-` e `^`. Para pesquisar essas letras como literais de string, coloque a expressão de pesquisa entre aspas duplos. Por exemplo, use `"Notebook - Beauty"` em vez de `Notebook - Beauty`.
 * Se os resultados da pesquisa forem demais, limite o [escopo da pesquisa](#scope) para zero nos ativos desejados. Funciona melhor quando você tem alguma ideia de como procurar melhor os ativos desejados, por exemplo, tipo de arquivo específico, local específico, metadados específicos e assim por diante.
 
-* **Marcação**: As tags ajudam a categorizar ativos que podem ser pesquisados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e workflows. AEM métodos do oferta para marcar automaticamente ativos usando serviços inteligentes e artificiais da Adobe Sensei que continuam melhorando a identificação dos ativos com o uso e o treinamento. Quando você pesquisa ativos, as tags inteligentes são fatoradas se o recurso estiver ativado em sua conta. Funciona juntamente com a funcionalidade de pesquisa incorporada. Consulte Comportamento [da](#searchbehavior)pesquisa. Para otimizar a ordem na qual os resultados da pesquisa são exibidos, é possível [aumentar a classificação](#searchrank) de pesquisa de alguns ativos selecionados.
+* **Marcação**: As tags ajudam a categorizar ativos que podem ser pesquisados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e workflows. [!DNL Experience Manager] Métodos do oferta para marcar automaticamente ativos usando serviços inteligentes e artificialmente Adobe Sensei que continuam melhorando ao marcar seus ativos com uso e treinamento. Quando você pesquisa ativos, as tags inteligentes são fatoradas se o recurso estiver ativado em sua conta. Funciona juntamente com a funcionalidade de pesquisa incorporada. Consulte Comportamento [da](#searchbehavior)pesquisa. Para otimizar a ordem na qual os resultados da pesquisa são exibidos, é possível [aumentar a classificação](#searchrank) de pesquisa de alguns ativos selecionados.
 
 * **Indexação**: Somente metadados indexados e ativos são retornados nos resultados da pesquisa. Para melhor cobertura e desempenho, assegure a indexação correta e siga as práticas recomendadas. Consulte [indexação](#searchindex).
 
@@ -302,9 +310,11 @@ Use aspas de duplo em torno de palavras-chave para localizar ativos que contenha
 
 *Figura: Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo.*
 
-**Excluir uma palavra-chave**: Use o traço para procurar ativos que não contêm uma palavra-chave. Por exemplo, `running -shoe` o query retorna ativos que contêm `running`, mas não `shoe`. Da mesma forma, `camp -night` o query retorna ativos que contêm `camp` , mas não `night`. Observe que `camp-night` o query retorna ativos que contêm `camp` e `night`.
+**Excluir uma palavra-chave**: Use o traço para procurar ativos que não contêm uma palavra-chave. Por exemplo, `running -shoe` o query retorna ativos que contêm `running`, mas não `shoe`. Da mesma forma, `camp -night` o query retorna ativos que contêm `camp` , mas não `night`. O query `camp-night` retorna ativos que contêm `camp` e `night`.
 
-![Uso do traço para pesquisar ativos que não contenham uma palavra-chave](assets/search_dash_exclude_keyword.gif)excluída *Figura: Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída*
+![Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída](assets/search_dash_exclude_keyword.gif)
+
+*Figura: Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída.*
 
 <!--
 ## Configuration and administration tasks related to search functionality {#configadmin}
@@ -317,7 +327,7 @@ Asset discovery relies on indexing of DAM contents, including the metadata. Fast
 <!--
 ### Visual or similarity search {#configvisualsearch}
 
-Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After configuring smart tagging functionality, follow these steps.
+Visual search uses smart tags. After configuring smart tagging functionality, follow these steps.
 
 1. In AEM CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
 
@@ -342,7 +352,7 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
    Save the changes.
 
 1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your AEM repository. See [how to configure smart tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html).
+1. Apply Smart Tags to the assets in your AEM repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
@@ -392,7 +402,7 @@ You can search for digital assets based on one or more of the following properti
 
 ## Trabalhar com resultados de pesquisa de ativos {#aftersearch}
 
-Depois de ver alguns ativos pesquisados que correspondem aos seus critérios, você pode fazer as seguintes tarefas típicas ou realizar as seguintes ações nestes resultados de pesquisa:
+Você pode fazer o seguinte com os ativos que pesquisou [!DNL Experience Manager]:
 
 * Propriedades de metadados de visualização e outras informações.
 * Baixe um ou mais ativos.
@@ -401,7 +411,7 @@ Depois de ver alguns ativos pesquisados que correspondem aos seus critérios, vo
 
 ### Classificar resultados da pesquisa {#sort}
 
-A classificação dos resultados de pesquisa ajuda a descobrir o ativo necessário mais rapidamente. A classificação dos resultados de pesquisa funciona na exibição de lista e somente ao selecionar **[[!UICONTROL Arquivos]](#searchui)** no painel **[!UICONTROL Filtros]**. [!DNL Assets]O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
+Classifique os resultados da pesquisa para descobrir os ativos necessários mais rapidamente. You can sort the search results in list view and only when you select **[[!UICONTROL Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Assets]O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
 
 Na visualização da lista, você pode classificar os resultados da pesquisa da mesma forma que pode classificar os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimension, Tamanho, Classificação, Uso, (Data) Criado, (Data) Modificado, (Data) Publicado, Fluxo de trabalho e Finalizado.
 
@@ -417,7 +427,7 @@ Para verificar os comentários em um ativo ou histórico de versão de um ativo,
 
 ![Classificar entradas de linha do tempo para um ativo de pesquisa](assets/sort_timeline_search_results.gif)
 
-Classificar entradas de linha do tempo para um ativo de pesquisa
+*Figura: Classificar entradas de linha do tempo para um ativo de pesquisa.*
 
 ### Baixar ativos pesquisados {#download}
 
@@ -427,7 +437,7 @@ Você pode baixar os ativos pesquisados e suas representações da mesma forma q
 
 É possível fazer atualizações em massa nos campos de metadados comuns de vários ativos. Nos resultados da pesquisa, selecione um ou mais ativos. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas e atualize os metadados conforme necessário. Clique em **[!UICONTROL Salvar e fechar]** quando terminar. Os metadados existentes anteriormente nos campos atualizados são substituídos.
 
-Para os ativos que estão disponíveis em uma única pasta ou coleção, é mais fácil [atualizar os metadados em massa](/help/assets/manage-metadata.md#manage-assets-metadata). Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é mais rápido atualizar os metadados em massa por meio da pesquisa.
+Para os ativos que estão disponíveis em uma única pasta ou coleção, é mais fácil [atualizar os metadados em massa](/help/assets/manage-metadata.md#manage-assets-metadata) sem usar a funcionalidade de pesquisa. Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é mais rápido atualizar os metadados em massa por meio da pesquisa.
 
 ### Coleções inteligentes {#collections-1}
 
@@ -438,38 +448,27 @@ Uma coleção é um conjunto ordenado de ativos que podem incluir ativos de loca
 
 Você pode criar coleções inteligentes com base nos critérios de pesquisa. No painel **[!UICONTROL Filtros]**, selecione **[!UICONTROL Arquivos]** e clique em **[!UICONTROL Salvar coleção inteligente]**. Consulte [gerenciar coleções](/help/assets/manage-collections.md).
 
-## Resultados de pesquisa inesperados {#unexpectedresults}
-
-**Procurar metadados** ausentes: Ao pesquisar ativos que não têm os metadados obrigatórios, AEM pode exibir alguns ativos que têm metadados válidos. Metadados ausentes são detectados e reportados com base na propriedade de metadados indexados. Mesmo se os metadados do ativo forem fixos, eles continuarão a mostrar como metadados ausentes até que ocorra a reindexação. Consulte metadados [](/help/assets/metadata-schemas.md#defining-mandatory-metadata)obrigatórios.
-
-**Muitos resultados** de pesquisa: Para evitar obter muitos resultados de pesquisa, considere limitar os resultados da pesquisa. Por exemplo, para pesquisar ativos no DAM, selecione `Location:Assets` na barra do Omnisearch. Para obter mais filtros de pesquisa, consulte o [escopo da pesquisa](#scope).
-
-<!-- Another reason to get more than expected search results can be use of smarts tags. See [search behavior with smart tags](#withsmarttags). 
--->
+## Resultados e problemas de pesquisa inesperados {#unexpectedresults}
 
 <!--
 **Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
 -->
 
-**Nenhuma sugestão de preenchimento automático para ativos** carregados recentemente: Os metadados (títulos, tags e assim por diante) dos ativos carregados recentemente não estão disponíveis imediatamente como sugestões quando você start digitar uma palavra-chave de pesquisa na barra Omnisearch. A AEM Assets aguarda até a expiração de um período de tempo limite (uma hora por padrão) antes de executar um trabalho em segundo plano para indexar os metadados de todos os ativos recentemente carregados ou atualizados e, em seguida, adiciona os metadados à lista de sugestões.
+| Erro, problemas, sintomas | Possível motivo | Possível correção ou compreensão do problema |
+|---|---|---|
+| Resultados incorretos ao procurar ativos com metadados ausentes. | Ao pesquisar ativos que não têm os metadados obrigatórios, [!DNL Experience Manager] é possível exibir alguns ativos que têm metadados válidos. Os resultados são baseados na propriedade de metadados indexados. | Após a atualização dos metadados, a reindexação é necessária para refletir o estado correto dos metadados dos ativos. Consulte metadados [](metadata-schemas.md#define-mandatory-metadata)obrigatórios. |
+| Muitos resultados de pesquisa. | Parâmetro de pesquisa abrangente. | Considere limitar o [escopo da pesquisa](#scope). O uso de tags inteligentes pode fornecer mais resultados de pesquisa do que o esperado. Consulte Comportamento [de pesquisa com tags](#withsmarttags)inteligentes. |
+| Resultados de pesquisa não relacionados ou parcialmente relacionados. | Alterações no comportamento da pesquisa com marcação inteligente. | Entenda [como a pesquisa muda após a marcação](#withsmarttags)inteligente. |
+| Nenhuma sugestão de preenchimento automático para ativos. | Os ativos carregados recentemente ainda não estão indexados. Os metadados não estão disponíveis imediatamente como sugestões quando você start digitar uma palavra-chave de pesquisa na barra Omnisearch. | [!DNL Assets] aguarda até a expiração de um período de tempo limite (uma hora por padrão) antes de executar um trabalho em segundo plano para indexar os metadados de todos os ativos recentemente carregados ou atualizados e, em seguida, adiciona os metadados à lista de sugestões. |
+| Nenhum resultado de pesquisa. | <ul><li>Os ativos correspondentes ao seu query não existem. </li><li> Espaço em branco adicionado antes do query de pesquisa. </li><li> O campo de metadados não suportados contém a palavra-chave que você pesquisou.</li><li> Pesquisa feita durante o tempo de inatividade de um ativo. </li></ul> | <ul><li>Pesquise usando uma palavra-chave diferente. Como alternativa, use a marcação inteligente ou a pesquisa de semelhança para melhorar os resultados da pesquisa. </li><li>[Limitação](#limitations)conhecida.</li><li>Nem todos os campos de metadados são considerados para pesquisas. Consulte [escopo](#scope).</li><li>Pesquise mais tarde ou modifique os ativos necessários em tempo real e inativo.</li></ul> |
+| O filtro de pesquisa ou um predicado não está disponível. | <ul><li>O filtro de pesquisa não está configurado.</li><li>Ele não está disponível para seu logon.</li><li>(Menos provável) As opções de pesquisa não são personalizadas na implantação que você está usando.</li></ul> | <ul><li>Entre em contato com o administrador para verificar se as personalizações de pesquisa estão disponíveis ou não.</li><li>Entre em contato com o administrador para verificar se sua conta tem o privilégio/permissões para usar a personalização.</li><li>Entre em contato com o administrador e verifique as personalizações disponíveis para a [!DNL Assets] implantação que você está usando.</li></ul> |
+| Ao procurar imagens visualmente semelhantes, uma imagem esperada está ausente. | <ul><li>A imagem não está disponível em [!DNL Experience Manager].</li><li>A imagem não está indexada. Normalmente, quando é carregado recentemente.</li><li>A imagem não está com tags inteligentes.</li></ul> | <ul><li>Adicione a imagem a [!DNL Assets].</li><li>Entre em contato com o administrador para indexar novamente o repositório. Além disso, verifique se você está usando o índice apropriado.</li><li>Entre em contato com o administrador para obter uma tag inteligente dos ativos relevantes.</li></ul> |
+| Ao procurar imagens visualmente semelhantes, uma imagem irrelevante é exibida. | Comportamento da pesquisa visual. | [!DNL Experience Manager] exibe quantos ativos potencialmente relevantes forem possíveis. Imagens menos relevantes, se houver, são adicionadas aos resultados, mas com uma classificação de pesquisa mais baixa. A qualidade das correspondências e a relevância dos ativos pesquisados diminuem à medida que você percorre os resultados da pesquisa. |
+| Ao selecionar e operar nos resultados da pesquisa, todos os ativos pesquisados não são operados. | A opção [!UICONTROL Selecionar tudo] seleciona apenas os primeiros 100 resultados de pesquisa na visualização do cartão e os primeiros 200 resultados de pesquisa na visualização da lista. |  |
 
-**Nenhum resultado** de pesquisa: Se AEM e exibir uma página vazia para um query de pesquisa, os seguintes motivos podem ser:
+>[!MORELIKETHIS]
+>
+>* [[!DNL Experience Manager] guia de implementação de pesquisa](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Configuração avançada para aumentar os resultados da pesquisa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+>* [Configurar pesquisa de tradução inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
-* Não existem ativos que correspondam ao seu query.
-* Você adiciona um espaço em branco antes do query de pesquisa. É uma limitação [](#limitations)conhecida.
-
-* Um campo de metadados não suportado contém a palavra-chave que você pesquisa. Nem todos os campos de metadados são considerados para pesquisas. Consulte [escopo](#scope).
-* O tempo de ativação e de desativação é configurado para o ativo e a pesquisa é feita durante o tempo de inatividade do ativo.
-
-**O filtro/predicado de pesquisa não está disponível**: Se uma personalização esperada para pesquisar filtros não estiver disponível na interface do usuário, entre em contato com o administrador para verificar se a personalização foi implementada para todos os autores e no servidor de produção que você está usando. É possível que a configuração esteja incorreta.
-
-## Solução de problemas relacionados à pesquisa {#troubleshoot}
-
-<!-- TBD: Expand this section.
--->
-
-Veja abaixo os problemas e a possível linha de ação:
-
-* Se um filtro/predicado de pesquisa esperado não estiver visível, entre em contato com o administrador.
-* Ao pesquisar por imagens visualmente semelhantes, às vezes uma imagem esperada pode estar ausente dos resultados da pesquisa. Verifique se esses ativos estão indexados e com tags inteligentes.
-* Ao pesquisar por imagens visualmente semelhantes, às vezes uma imagem aparentemente irrelevante pode ser exibida nos resultados da pesquisa. AEM exibe quantos ativos potencialmente relevantes forem possíveis. Imagens menos relevantes, se houver, são adicionadas aos resultados, mas com uma classificação de pesquisa mais baixa. A qualidade das correspondências e a relevância dos ativos pesquisados diminuem à medida que você percorre os resultados da pesquisa.
