@@ -4,9 +4,9 @@ user-guide-title: Integração ao AEM as a Cloud Service
 breadcrumb-title: Guia de integração
 user-guide-description: Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 90%
 
 ---
@@ -44,7 +44,8 @@ ht-degree: 90%
       + [Configuração do projeto](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Noções básicas sobre o Ambiente Build](getting-access-to-aem-in-cloud/build-environment-details.md)
    + Notas de versão do Cloud Manager {#release-notes-cloud-manager}
-      + [Notas de versão atuais (2020.10.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notas de versão atuais (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notas da versão 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [Notas da versão 2020.9.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
       + [Notas da versão 2020.8.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
       + [Notas da versão 2020.7.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
