@@ -4,10 +4,10 @@ user-guide-title: Migrar para o AEM as a Cloud Service
 breadcrumb-title: Guia de migração
 user-guide-description: Entenda a jornada de transição para o Cloud Service.
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 95%
+ht-degree: 86%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 95%
    + [Execução](/help/move-to-cloud-service/execution.md)
    + [Pós-ativação](/help/move-to-cloud-service/post-go-live.md)
 + Ferramentas de transição para a nuvem {#cloud-migration}
-   + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
-      + [Visão geral](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
-      + [Uso do Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
+   + Analisador de práticas recomendadas {#best-practices-analyzer}
+      + [Visão geral](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
+      + [Uso do Analisador de práticas recomendadas](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Ferramenta Transferência de conteúdo {#content-transfer-tool}
       + [Visão geral](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [Usar a ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
