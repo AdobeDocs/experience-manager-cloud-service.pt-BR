@@ -2,10 +2,10 @@
 title: Fase de planejamento
 description: Fase de planejamento
 translation-type: tm+mt
-source-git-commit: fdcad36713cdcd766d7d698a2e6c017dad1b03a0
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 91%
+source-wordcount: '420'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ A primeira etapa da Fase de planejamento é avaliar sua prontidão para migrar d
 
 Será necessário fazer uma avaliação abrangente do código-fonte atual do AEM em relação às alterações notáveis e aos recursos obsoletos para determinar o nível de esforço esperado na jornada de transição.
 
-Você pode acelerar a etapa de avaliação executando o CRA (Cloud Readiness Analyzer) na versão atual do AEM. Para obter mais detalhes, consulte Visão geral [do](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html)CRA.
+Você pode acelerar a etapa de avaliação executando o Analisador de práticas recomendadas na versão atual do AEM. Para obter mais detalhes, consulte o [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Se você já tem acesso ao Cloud Manager e a um ambiente do Cloud Service, é recomendável executar seu código atual em um pipeline de qualidade de código do Cloud Manager para avaliar as alterações de código necessárias para compatibilidade com o Cloud Service.
