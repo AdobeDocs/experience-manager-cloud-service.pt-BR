@@ -2,7 +2,7 @@
 title: Gerenciar registros - Cloud Service
 description: Gerenciar registros - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 22%
@@ -14,9 +14,9 @@ ht-degree: 22%
 
 Os usuários podem acessar uma lista de arquivos de registro disponíveis para o ambiente selecionado usando o Cartão de Ambiente.  Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
 
-Esses arquivos podem ser baixados por meio da interface do usuário, na página **Visão geral** .
+Esses arquivos podem ser baixados por meio da interface do usuário, na página **Visão geral** :
 
-![](assets/manage-logs1.png)
+![](assets/download-logs1.png)
 
 Ou a página **Ambientes** :
 
@@ -25,7 +25,7 @@ Ou a página **Ambientes** :
 >[!NOTE]
 >Independentemente de onde ele esteja aberto, a mesma caixa de diálogo é exibida e permite que um arquivo de log individual seja baixado.
 
-![](assets/manage-logs3.png)
+![](assets/download-logs2.png)
 
 
 ## Faz logon por meio da API {#logs-thorugh-api}
