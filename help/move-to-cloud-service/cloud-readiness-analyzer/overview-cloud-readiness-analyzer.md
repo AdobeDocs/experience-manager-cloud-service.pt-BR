@@ -1,26 +1,26 @@
 ---
-title: Visão geral do Cloud Readiness Analyzer
-description: Visão geral do Cloud Readiness Analyzer
-translation-type: ht
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+title: Visão geral do Analisador de práticas recomendadas
+description: Visão geral do Analisador de práticas recomendadas
+translation-type: tm+mt
+source-git-commit: 61be08b5cbee6c389f3878ef9d9f7ea9167b1dce
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 35%
 
 ---
 
 
-# Visão geral {#overview-cloud-readiness-analyzer}
+# Visão geral {#overview-best-practices-analyzer}
 
-O Cloud Readiness Analyzer ajuda a acelerar os processos de avaliação da possibilidade de mover uma implantação existente do Adobe Experience Manager (AEM) para o AEM as a Cloud Service.
+O Analisador de práticas recomendadas fornece uma avaliação da implementação atual de AEM, indicando áreas que não estão seguindo AEM práticas recomendadas. Fornece também orientações sobre as próximas etapas para adotar AEM práticas recomendadas. Além disso, ajuda a acelerar os processos de avaliação da prontidão para mudar de uma implantação existente da Adobe Experience Manager (AEM) para a AEM como Cloud Service.
 
 Essa ferramenta gera um relatório que identifica áreas de refatoração potencial, que é o primeiro passo na jornada da transição para o AEM as a Cloud Service.
 
-## Relatório do Cloud Readiness Analyzer {#cra-report}
+## Relatório do Analisador de práticas recomendadas {#bpa-report}
 
-O relatório do Cloud Readiness Analyzer é usado para obter um alto nível de compreensão da disponibilidade geral de atualização. O relatório consiste em conclusões em categorias de problemas que devem ser abordados antes de uma implantação bem-sucedida no AEM as a Cloud Service.
+O Relatório do Analisador de práticas recomendadas é usado para obter um alto nível de compreensão da disponibilidade geral de atualização. O relatório consiste em conclusões em categorias de problemas que devem ser abordados antes de uma implantação bem-sucedida no AEM as a Cloud Service.
 
-O relatório do Cloud Readiness Analyzer inclui as seguintes categorias:
+O relatório do Analisador de práticas recomendadas inclui as seguintes categorias:
 
 * Funcionalidade do aplicativo que deve ser refatorado
 * Itens do repositório que devem ser movidos para um local com suporte
@@ -28,9 +28,9 @@ O relatório do Cloud Readiness Analyzer inclui as seguintes categorias:
 * Problemas de implantação e configuração
 * Recursos do AEM 6.x que foram substituídos por novas funcionalidades ou que atualmente não têm suporte no AEM as a Cloud Service
 
-Informações adicionais sobre as categorias e possíveis implicações e soluções associadas a essas categorias são fornecidas por meio de links do Relatório do Cloud Readiness Analyzer.
+Informações adicionais sobre as categorias e possíveis implicações e soluções associadas a essas categorias são fornecidas por meio de links no Relatório do Analisador de práticas recomendadas.
 
 >[!NOTE]
->O Relatório do Cloud Readiness Analyzer acelera o processo de estimativa do tempo e o custo necessário para a transição para o AEM as a Cloud Service, fornecendo informações que de outra forma precisariam ser coletadas e avaliadas manualmente.
+>O Relatório do Analisador de Práticas Recomendadas acelera o processo de estimativa do tempo e custo necessários para a transição, fornecendo informações que, de outra forma, precisariam ser coletadas e avaliadas manualmente.
 
-Você também pode baixar o relatório do Cloud Readiness Analyzer na sua instância do AEM. Consulte [Visualização do relatório do Cloud Readiness Analyzer](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) para obter mais detalhes.
+Você também pode baixar o relatório do Analisador de práticas recomendadas da sua instância AEM. Refer to [Viewing the Best Practices Analyzer Report](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) for more details.
