@@ -2,9 +2,9 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
+source-git-commit: 8a7dd4059a200e82b6cb385acc5dcb174aa50938
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '886'
 ht-degree: 5%
 
 ---
@@ -98,3 +98,19 @@ Follow this section to learn about what is new and the updates for [Content Tran
 ### Correções de erros {#ctt-bug-fixes}
 
 * A Ferramenta de transferência de conteúdo ignorava os arquivos de conteúdo se o conjunto de migração contivesse caminhos que tivessem nomes de arquivos parcialmente semelhantes. Isso foi corrigido.
+
+## Analisador de práticas recomendadas {#best-practices-analyzer}
+
+### Data de lançamento {#release-date-bpa}
+
+A data de lançamento do Analisador de práticas recomendadas é 13 de novembro de 2020.
+
+### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+
+* O Cloud Readiness Analyzer agora é BPA (Best Practices Analyzer). O BPA fornece uma avaliação de práticas recomendadas da sua implementação AEM atual e ajuda a avaliar a prontidão para mudar de uma instância AEM existente para AEM como Cloud Service.
+
+* Foi adicionado um novo detector para detectar o uso de `java.io.InputStream`, o que pode causar problemas se usado em AEM como Cloud Service.
+
+### Correções de erros {#bpa-bug-fixes}
+
+* Foi corrigido o erro que causava os positivos relacionados ao componente de base ** textfield.
