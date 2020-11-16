@@ -3,7 +3,7 @@ title: Marcar imagens automaticamente com tags geradas por AI
 description: Marque imagens usando serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas [!DNL Adobe Sensei] usando serviços.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2432'
 ht-degree: 6%
@@ -154,7 +154,7 @@ Depois de ter treinado o serviço de Tags inteligentes, é possível acionar o f
 1. Clique em **[!UICONTROL Start]**. O fluxo de trabalho aplica suas tags em ativos. Navegue até a pasta de ativos e reveja as tags para verificar se seus ativos estão marcados corretamente. Para obter detalhes, consulte [gerenciar tags](#manage-smart-tags-and-searches)inteligentes.
 
 >[!NOTE]
-
+>
 >Nos ciclos de marcação subsequentes, somente os ativos modificados são marcados novamente com tags treinadas recentemente.No entanto, mesmo ativos inalterados são marcados se a diferença entre os últimos e os atuais ciclos de marcação do fluxo de trabalho de marcação exceder 24 horas. Para workflows de marcação periódica, os ativos inalterados são marcados quando o intervalo de tempo excede 6 meses.
 
 ### Marcar ativos carregados {#tag-uploaded-assets}
