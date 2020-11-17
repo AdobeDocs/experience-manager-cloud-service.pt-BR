@@ -2,9 +2,9 @@
 title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+source-git-commit: 0d01dc2cfed88a1b610a929d26ff4b144626a0e3
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1483'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,16 @@ Esta página também descreve como o cache do dispatcher é invalidado, bem como
 ```
 <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Age 0
+</LocationMatch>
+```
+
+Tenha cuidado ao definir cabeçalhos de controle de cache global ou aqueles que correspondem a um regex amplo, de modo que não sejam aplicados ao conteúdo que você deseja manter privado. Considere o uso de várias diretivas para garantir que as regras sejam aplicadas de forma refinada. Dito isso, AEM como um Cloud Service removerá o cabeçalho do cache se ele detectar que foi aplicado ao que detecta ser inatingível pelo dispatcher, conforme descrito na documentação do dispatcher. Para forçar o AEM a sempre aplicar o cache, é possível adicionar a opção &quot;sempre&quot; da seguinte maneira:
+
+```
+<LocationMatch "\.(html)$">
+        Header always set Cache-Control "max-age=200"
+        Header set Age 0
 </LocationMatch>
 ```
 
@@ -41,7 +51,7 @@ Você deve garantir que um arquivo em `src/conf.dispatcher.d/cache` tem a seguin
 * Para impedir que o conteúdo específico seja armazenado em cache, defina o cabeçalho Cache-Control como &quot;particular&quot;. Por exemplo, o seguinte impediria que o conteúdo html em um diretório chamado &quot;myfolder&quot; fosse armazenado em cache:
 
 ```
-<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
     Header set Cache-Control “private”
 </LocationMatch>
 ```
@@ -59,10 +69,13 @@ Você deve garantir que um arquivo em `src/conf.dispatcher.d/cache` tem a seguin
 * pode ser definido em um nível de granulado mais fino pelas seguintes `mod_headers` diretivas de cache:
 
 ```
-<LocationMatch "^.*.jpeg$">
+<LocationMatch "^\.*.(jpeg|jpg)$">
     Header set Cache-Control "max-age=222"
+    Header set Age 0
 </LocationMatch>
 ```
+
+Consulte a discussão na seção html/texto acima para ter cuidado para não armazenar em cache muito grande e também para forçar a AEM a sempre aplicar o cache com a opção &quot;sempre&quot;.
 
 É necessário garantir que um arquivo em src/conf.dispatcher.d/cache tenha a seguinte regra (que está na configuração padrão):
 
