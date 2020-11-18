@@ -2,7 +2,7 @@
 title: Programas Sandbox - Cloud Service
 description: Programas Sandbox - Cloud Service
 translation-type: tm+mt
-source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
+source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 0%
@@ -51,13 +51,13 @@ Os Programas do Sandbox são entregues a um ambiente de desenvolvimento no momen
 
 O conjunto de ambientes de estágio de produção pode ser adicionado manualmente ao Programa Sandbox, quando o usuário estiver pronto para configurar um pipeline de produção.
 
-Para saber como criar manualmente um ambiente, consulte [Adicionar Ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais detalhes.
+Para saber como criar manualmente um ambiente, consulte [Adicionar Ambiente](/help/implementing/cloud-manager/manage-environments.md) para obter mais detalhes.
 
 ### Excluindo Ambientes do Sandbox {#deleting-sandbox-environments}
 
 O usuário com as permissões necessárias pode excluir um ou mais conjuntos de ambientes de desenvolvimento ou de produção/estágio.
 
-Para excluir um ambiente, consulte [Excluir Ambientes](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) para obter mais detalhes.
+Para excluir um ambiente, consulte [Excluir Ambiente](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) para obter mais detalhes.
 
 
 ## Hibernando e removendo Ambientes do Sandbox {#hibernating-introduction}
@@ -176,7 +176,7 @@ Poucas considerações importantes relacionadas aos ambientes hibernados e com h
 
 ## Atualizações de AEM para Ambientes do Sandbox {#aem-updates-sandbox}
 
-Consulte [AEM atualizações](/help/implementing/deploying/overview.md#version-updates) de versão para obter mais detalhes.
+Consulte [AEM atualizações](/help/implementing/deploying/aem-version-updates.md) de versão para obter mais detalhes.
 
 Um usuário pode aplicar manualmente AEM atualizações aos ambientes em um Programa Sandbox.
 
