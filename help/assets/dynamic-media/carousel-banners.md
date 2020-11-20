@@ -2,7 +2,7 @@
 title: Banners em carrossel
 description: Saiba como trabalhar com banners de carrossel no Dynamic Media
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 98a005dacc0bce0c03f0a58c50c6e85f12b1197f
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 4%
@@ -254,8 +254,7 @@ Consulte [(Opcional) Visualização de banners de carrossel.](#optional-previewi
 >[!NOTE]
 >
 >Quando você adiciona pontos de acesso a uma imagem em uma Imagem [](/help/assets/dynamic-media/interactive-images.md) interativa ou em um banner de carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados, em relação ao local da imagem e ao mdashtag, independentemente de ser uma Imagem interativa ou um banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem, juntamente com seus dados de ponto de conexão definidos, em qualquer um dos visualizadores.
-
->Esteja ciente, no entanto, de que os Carousel Banners oferecem suporte para mapas de imagem em imagens que também podem conter pontos de conexão; uma imagem interativa não. Lembre-se disso se você pretende criar uma imagem interativa ou um banner de carrossel que use a mesma imagem. Você pode criar Imagens interativas e Banners de carrossel usando cópias separadas da mesma imagem.
+Esteja ciente, no entanto, de que os Carousel Banners oferecem suporte para mapas de imagem em imagens que também podem conter pontos de conexão; uma imagem interativa não. Lembre-se disso se você pretende criar uma imagem interativa ou um banner de carrossel que use a mesma imagem. Você pode criar Imagens interativas e Banners de carrossel usando cópias separadas da mesma imagem.
 
 >[!NOTE]
 Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, seus pontos de acesso serão removidos.
