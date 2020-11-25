@@ -3,10 +3,10 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0fb84bb88e42f92e335460edca5041a0878f9dca
+source-git-commit: 79c8b5e038a58821b76da665f9342214312008e8
 workflow-type: tm+mt
-source-wordcount: '2228'
-ht-degree: 41%
+source-wordcount: '2244'
+ht-degree: 40%
 
 ---
 
@@ -19,7 +19,7 @@ Os usuários podem criar páginas da Web em [!DNL Experience Manager Sites]. [!D
 
 ## Visão geral do Connected Assets {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. Os administradores criam uma integração única de uma implantação do [!DNL Sites] com uma implantação diferente (remota) do [!DNL Assets].
+Ao editar páginas no Editor [!UICONTROL de] páginas como destino de públicos alvos, os autores podem pesquisar, navegar e incorporar facilmente ativos de uma [!DNL Assets] implantação diferente que atua como uma fonte de ativos. Os administradores criam uma integração única de uma implantação de [!DNL Experience Manager] com [!DNL Sites] capacidade com outra implantação de [!DNL Experience Manager] com [!DNL Assets] capacidade.
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. A funcionalidade suporta pesquisa e uso ininterruptos de alguns ativos remotos de cada vez. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk.
 
@@ -154,7 +154,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
 >[!CAUTION]
 >
->Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder. The fetched assets are stored (`connectedassets` in the above walk-through). Os ativos também podem ser pesquisados e visualizados no repositório local por meio do [!UICONTROL Localizador de conteúdo].
+>Depois de usados em uma página da Web, os ativos remotos obtidos são pesquisáveis e utilizáveis por qualquer pessoa que tenha permissões para acessar a pasta local. Os ativos buscados são armazenados na pasta local (`connectedassets` na apresentação acima). Os ativos também podem ser pesquisados e visualizados no repositório local por meio do [!UICONTROL Localizador de conteúdo].
 
 Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se os metadados associados não puderem ser editados.
 
