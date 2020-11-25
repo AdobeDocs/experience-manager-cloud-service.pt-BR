@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2ac87c5356579ea650cd3d34219e75eb1940f24b
+source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '221'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 | Produção | Estágio |
 |---|---|
 | [![Status da compilação](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/lastBuild) | [![Status da compilação](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/lastBuild) |
-| [Prod. de saída](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) | [Etapa de saída](https://docs-stg.corp.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) |
+| [Prod. de saída](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) | [Etapa de saída](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/landing/home.html) |
 
 Este é o repositório da documentação do Adobe Experience Manager Cloud Service. Esta documentação cobre a instalação, administração, criação e como personalizar AEM usando o Cloud Service.
 
