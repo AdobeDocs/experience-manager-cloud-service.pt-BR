@@ -3,9 +3,9 @@ title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados [!DNL Experience Manager Assets] por um Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bafcf005a2264b96caa3d59c478aa57fb38b2a4c
+source-git-commit: a2d858e1cddc67d07dd26dc40663cb4ed2197b02
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '789'
 ht-degree: 10%
 
 ---
@@ -61,6 +61,10 @@ A legenda a seguir descreve o nível de suporte.
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
+| SVG | ✓ | - | ✓ | ✓ |
+| SGI | ✓ | ✓ | ✓ | ✓ |
+| RGB | ✓ | ✓ | ✓ | ✓ |
+| RGBA | ✓ | ✓ | ✓ | ✓ |
 
 ## Formatos de imagem em [!DNL Dynamic Media] {#image-support-dynamic-media}
 
@@ -191,7 +195,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | QT | ✓ | - | ✓ |
 | R3D | ✓ | - | ✓ |
 | SWF | ✓ | - | ✓ |
-| WEBM | ✓ | - | ✓ |
+| WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
 ## Formatos de vídeo em [!DNL Dynamic Media] para transcodificação {#video-dynamic-media-transcoding}
