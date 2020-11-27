@@ -2,15 +2,22 @@
 title: Migração para o AEM as a Cloud Service
 description: 'Recursos de autoajuda e links de documentação referentes à migração para o AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
+source-git-commit: 80aa4881bf3e6ee01e84eb4096d24fcb749419c6
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 98%
+source-wordcount: '578'
+ht-degree: 91%
 
 ---
 
 
 # Migração para o AEM as a Cloud Service {#aem-moving-to-aem-guide}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_overview"
+>title="Sobre o Cloud Acceleration Manager"
+>abstract="O Cloud Acceleration Manager é seu próprio guia pessoal durante todo o processo de mudança para AEM como Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Alterações importantes no AEM Sites as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#how-to-use" text="Configurar o pipeline de CI/CD"
 
 ## Benefícios da migração para o AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
