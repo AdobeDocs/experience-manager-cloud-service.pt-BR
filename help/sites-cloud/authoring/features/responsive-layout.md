@@ -14,7 +14,7 @@ ht-degree: 99%
 
 O AEM permite ter um layout responsivo em suas páginas usando o componente **Contêiner de layout.**
 
-Este componente fornece um sistema de parágrafo que permite posicionar os componentes dentro de uma grade responsiva. Esta grade pode reorganizar o layout de acordo com o dispositivo/tamanho e formato da janela. O componente é utilizado em conjunto com o modo de [**Layout **,](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)que permite criar e editar o seu layout responsivo dependendo do dispositivo.
+Este componente fornece um sistema de parágrafo que permite posicionar os componentes dentro de uma grade responsiva. Esta grade pode reorganizar o layout de acordo com o dispositivo/tamanho e formato da janela. O componente é utilizado em conjunto com o modo de [**Layout**,](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) que permite criar e editar o seu layout responsivo dependendo do dispositivo.
 
 O contêiner de layout:
 
@@ -27,15 +27,16 @@ O usuário pode então ver como o conteúdo será processado para dispositivos e
 
 O AEM permite um layout responsivo para suas páginas usando uma combinação de mecanismos:
 
-* Componente [**Contêiner de layout **](#adding-a-layout-container-and-its-content-edit-mode)
+* Componente [**Contêiner de layout**](#adding-a-layout-container-and-its-content-edit-mode)
 
    Este componente está disponível no [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) e fornece um sistema de parágrafo de grade para que você possa adicionar e posicionar componentes em uma grade responsiva. Ele também pode ser definido como o sistema de parágrafos padrão na sua página.
 
-* [**Modo de layout **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+* [**Modo de layout**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
    Depois que o contêiner de layout é posicionado na página, você pode usar o modo **Layout** para posicionar conteúdo na grade responsiva.
 
-* [**Emulador **](#selecting-a-device-to-emulate)Permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode observar como o conteúdo será renderizado utilizando o Emulador.
+* [**Emulador**](#selecting-a-device-to-emulate)
+Permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode observar como o conteúdo será renderizado utilizando o Emulador.
 
 Com estes mecanismos de grade responsivos você pode:
 
