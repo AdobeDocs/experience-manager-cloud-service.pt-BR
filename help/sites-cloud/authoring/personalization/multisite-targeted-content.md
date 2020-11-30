@@ -44,7 +44,7 @@ You manage this in an **Area**. Áreas separam o conteúdo direcionado (atividad
 
 Em uma área, apenas as atividades vinculadas a essa área são enviadas para cópias em tempo real. Por padrão, a Área mestra é selecionada. Depois de criar áreas adicionais, você pode vinculá-las a seus sites ou páginas para indicar qual conteúdo direcionado é enviado.
 
-Um site ou uma live copy se vincula a uma área que contém as atividades que precisam estar disponíveis nesse site ou nessa live copy. Por padrão, o site ou a live copy vincula à área mestre, mas você pode vincular outras áreas além das áreas mestre.
+Um site ou uma live copy se vincula a uma área que contém as atividades que precisam estar disponíveis nesse site ou nessa live copy. Por padrão, o site ou a live copy vincula à área principal, mas você pode vincular outras áreas além das principais.
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Existem quatro versões do mesmo site com base na região:
 Cada site compartilha conteúdo personalizado em regiões geográficas:
 
 * Canadá compartilha a área mestra com os Estados Unidos.
-* A Grã-Bretanha está ligada ao espaço europeu e herda da zona principal.
+* A Grã-Bretanha está ligada ao espaço europeu e herda da principal região.
 * Austrália, por estar no hemisfério sul e não ser aplicável para produtos sazonais, tem seu próprio conteúdo personalizado.
 
 ![Diagrama de vários sites](/help/sites-cloud/authoring/assets/multisite-diagram.png)
@@ -271,7 +271,7 @@ Para interromper a herança do conteúdo direcionado em uma atividade:
 1. Selecione **Desanexar Live Copy** no menu suspenso na barra de ferramentas. O AEM confirma que você deseja desanexar a live copy.
 1. Toque ou clique em **Destacar** para desconectar a live copy da atividade. Depois que ela é desconectada, o menu suspenso de herança deixa de ser exibido. A atividade agora é local.
 
-   ![atividade local](/help/sites-cloud/authoring/assets/multisite-winter.png)
+   ![Atividade local](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
 ## Restauração da herança do conteúdo direcionado {#restoring-inheritance-of-targeted-content}
 
@@ -289,7 +289,7 @@ Para restaurar a herança do conteúdo direcionado em uma atividade:
 
 ## Exclusão de áreas {#deleting-areas}
 
-Ao excluir uma área, você exclui todas as atividades nessa área. O AEM avisa antes que você possa excluir uma área. Se você excluir uma área à qual um site está vinculado, o mapeamento para essa marca será automaticamente mapeado para a área mestre.
+Ao excluir uma área, você exclui todas as atividades nessa área. O AEM avisa antes que você possa excluir uma área. Se você excluir uma área à qual um site está vinculado, o mapeamento dessa marca será automaticamente mapeado para a área principal.
 
 Para excluir uma área:
 
