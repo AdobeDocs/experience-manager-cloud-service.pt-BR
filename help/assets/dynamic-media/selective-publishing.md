@@ -212,8 +212,8 @@ Como opção, você pode usar essas caixas de seleção juntamente com o predica
    | --- | --- | --- |
    | Publicação | Imediatamente ou na Ativação | Publicado no AEM e no Dynamic Media. |
    | Publicação | Publicação seletiva | Publicado somente em AEM. |
-   | Cancelar publicação | Imediatamente ou na Ativação | Não publicado do AEM e do Dynamic Media. |
-   | Cancelar publicação | Publicação seletiva | Não publicado somente no AEM. |
+   | Desfazer publicação | Imediatamente ou na Ativação | Não publicado do AEM e do Dynamic Media. |
+   | Desfazer publicação | Publicação seletiva | Não publicado somente no AEM. |
    | Publicar no Dynamic Media | Imediatamente ou na Ativação | Não publicado no AEM, no Dynamic Media ou em ambos. |
    | Publicar no Dynamic Media | Publicação seletiva | Publicado somente no Dynamic Media. |
    | Desfazer publicação no Dynamic Media | Imediatamente ou na Ativação | Não publicado do AEM, do Dynamic Media ou de ambos. |
@@ -235,9 +235,9 @@ Como opção, você pode usar essas caixas de seleção juntamente com o predica
    | Imediatamente ou <br>na Ativação | Publicar no Dynamic Media | Nenhum |
    | Publicação seletiva | Publicação | AEM |
    | Publicação seletiva | Publicar no Dynamic Media | Dynamic Media |
-   | Imediatamente ou <br>na Ativação | Cancelar publicação | AEM e Dynamic Media |
+   | Imediatamente ou <br>na Ativação | Desfazer publicação | AEM e Dynamic Media |
    | Imediatamente ou <br>na Ativação | Desfazer publicação no Dynamic Media | Nenhum |
-   | Publicação seletiva | Cancelar publicação | AEM |
+   | Publicação seletiva | Desfazer publicação | AEM |
    | Publicação seletiva | Desfazer publicação no Dynamic Media | Dynamic Media |
 
 1. Na página **[!UICONTROL Gerenciar publicação - Escopo]** , execute um dos procedimentos a seguir:
