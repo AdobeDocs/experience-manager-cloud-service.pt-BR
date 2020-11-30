@@ -30,26 +30,27 @@ As atividades são exibidas com um rótulo descrevendo o tipo de atividade defin
 
 * XT - Direcionamento de experiência do Adobe Target
 * A/B - Testes A/B do Adobe Target
-* AEM - Segmentação do Adobe Experience Manager (ou seja, orientada pelo ContextHub)
+* AEM - Direcionamento do Adobe Experience Manager (ou seja, controlado pelo ContextHub)
 
-![Tipos de Atividade](/help/sites-cloud/authoring/assets/activities-types.png)
+![Tipos de atividade](/help/sites-cloud/authoring/assets/activities-types.png)
 
 >[!NOTE]
 >
 >Os tipos de atividades disponíveis são determinados pelo seguinte:
 >
 >* Se a opção `xt_only` estiver ativada no locatário do Adobe Target (clientcode) usado no AEM para conectar-se ao Adobe Target, você poderá criar **somente** atividades XT no AEM.
+   >
+   >
+* Se as opções `xt_only` **não** estiverem ativadas no locatário do Adobe Target (clientcode), você poderá criar atividades XT **e** A/B no AEM.
 >
->* Se as opções `xt_only` **não** estiverem ativadas no locatário do Adobe Target (clientcode), você poderá criar atividades XT **e** A/B no AEM.
 >
->
->**Nota adicional:** a opção `xt_only` é uma configuração aplicada em um determinado locatário do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
+**Nota adicional:** a opção `xt_only` é uma configuração aplicada em um determinado locatário do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
 
 >[!CAUTION]
 >
 >You must secure the activity settings node `cq:ActivitySettings` on the publish instance so that it is inaccessible to normal users. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
 >
->Consulte Pré-requisitos para integração com o Adobe Target para obter informações detalhadas.
+>Consulte Pré-requisitos para integração com a Adobe Target para obter informações detalhadas.
 <!--
 >See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) for detailed information.
 -->
@@ -76,7 +77,7 @@ Adicione uma atividade ou edite uma atividade existente para concentrar seus esf
 * **Nome:** o nome da atividade.
 * **Mecanismo de definição de metas:** o [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) ou o [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) como mecanismo de conteúdo direcionado.
 * **Selecionar uma configuração de destino:** (somente no Adobe Target) a configuração em nuvem que essa atividade deve usar para se conectar ao Adobe Target. Essa opção aparece somente quando o Adobe Target é selecionado para o Mecanismo de direcionamento.
-* **Tipo** de Atividade: O tipo de atividade - teste A/B ou direcionamento de experiência
+* **Tipo** de atividade: O tipo de atividade - teste A/B ou direcionamento de experiência
 * **Objetivo:** (opcional) uma descrição da atividade.
 * **Experiências:** mapeamentos entre os nomes de público-alvo e os segmentos de marketing que você está direcionando.
 * **Porcentagens de tráfego:** se o teste A/B for selecionado, você poderá alterar a quantidade de tráfego (em porcentagem) de cada experiência.
