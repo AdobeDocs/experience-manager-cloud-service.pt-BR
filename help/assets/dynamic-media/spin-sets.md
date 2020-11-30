@@ -62,7 +62,7 @@ Para colocar você em funcionamento rapidamente com Conjuntos de rotação, siga
 
 1. [Vincule URLs à sua Aplicação web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [Incorpore o visualizador](/help/assets/dynamic-media/embed-code.md)de vídeo ou imagem.
 
-   A AEM Assets cria chamadas de URL para Conjuntos de rotação e as ativa após a publicação dos conjuntos de rotação. Você pode copiar esses URLs ao pré-visualização de ativos. Como alternativa, você pode incorporá-los ao seu site.
+   A AEM Assets cria chamadas de URL para Conjuntos de rotação e as ativa depois que você publica os conjuntos de rotação. Você pode copiar esses URLs ao pré-visualização de ativos. Como alternativa, você pode incorporá-los ao seu site.
 
    Selecione o Conjunto de rotação e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores]**.
 
