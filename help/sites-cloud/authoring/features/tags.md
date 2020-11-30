@@ -2,10 +2,10 @@
 title: 'Uso de tags  '
 description: Tags são um método rápido e fácil de classificar o conteúdo em um site
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 96bde8b7f169256b352c1663f902b874afd6a73b
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
 
 * Consulte Administração de tags para obter informações sobre como criar e gerenciar tags e sobre quais tags de conteúdo foram aplicadas. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* Consulte Marcação para desenvolvedores para obter informações sobre a estrutura de marcação e sobre como incluir e estender tags em aplicativos personalizados. <!-- See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.-->
+* See [Tagging for Developers](/help/implementing/developing/introduction/tagging-framework.md) for information about the tagging framework as well as including and extending tags in custom applications.
 
 ## Dez razões para usar marcação {#ten-reasons-to-use-tagging}
 
