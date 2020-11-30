@@ -81,7 +81,7 @@ Ao usar o SSR, o fluxo de trabalho [de interação do](introduction.md#interacti
 1. A Adobe I/O Runtime retorna o conteúdo gerado.
 1. AEM serve o HTML retornado pela Adobe I/O Runtime por meio do modelo HTL do componente de página de backend.
 
-![E/S de Adobe de AEM orientada por SSE CMS](assets/ssr-cms-drivenaemnode-adobeio.png)
+![Adobe I/O AEM controlado por SSE CMS](assets/ssr-cms-drivenaemnode-adobeio.png)
 
 ## Fluxo de comunicação orientado pela Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
 
@@ -150,7 +150,7 @@ A Configuração [do renderizador de conteúdo](#remote-content-renderer-configu
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` é um serviço OSGi para recuperar conteúdo renderizado em um servidor remoto, como de E/S de Adobe. O conteúdo enviado para o servidor remoto é baseado no parâmetro de solicitação passado.
+`RemoteContentRenderingService` é um serviço OSGi para recuperar conteúdo renderizado em um servidor remoto, como da Adobe I/O. O conteúdo enviado para o servidor remoto é baseado no parâmetro de solicitação passado.
 
 `RemoteContentRenderingService` pode ser inserido por inversão de dependência em um modelo Sling personalizado ou servlet quando for necessária manipulação de conteúdo adicional.
 
