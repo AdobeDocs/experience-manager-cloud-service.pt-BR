@@ -1,6 +1,6 @@
 ---
-title: Modelo dinâmico para mapeamento de componentes para SPAs
-description: Este artigo descreve como o modelo dinâmico para mapeamento de componentes ocorre no SDK do Javascript SPA para AEM.
+title: Modelo dinâmico para mapeamento de componentes para SPA
+description: Este artigo descreve como o modelo dinâmico para mapeamento de componentes ocorre no Javascript SPA SDK para AEM.
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
@@ -10,9 +10,9 @@ ht-degree: 0%
 ---
 
 
-# Modelo dinâmico para mapeamento de componentes para SPAs {#dynamic-model-to-component-mapping-for-spas}
+# Modelo dinâmico para mapeamento de componentes para SPA {#dynamic-model-to-component-mapping-for-spas}
 
-Este documento descreve como o modelo dinâmico para mapeamento de componentes ocorre no SDK do Javascript SPA para AEM.
+Este documento descreve como o modelo dinâmico para mapeamento de componentes ocorre no Javascript SPA SDK para AEM.
 
 ## Módulo ComponentMapping {#componentmapping-module}
 
@@ -20,7 +20,7 @@ O `ComponentMapping` módulo é fornecido como um pacote NPM para o projeto fron
 
 Cada item presente no modelo contém um `:type` campo que expõe um tipo de recurso AEM. Quando montado, o componente front-end pode se renderizar usando o fragmento do modelo recebido das bibliotecas subjacentes.
 
-Consulte o documento [SPA Blueprint](blueprint.md) para obter mais informações sobre a análise do modelo e o acesso do componente front-end ao modelo.
+Consulte o documento [SPA Blueprint](blueprint.md) para obter mais informações sobre a análise do modelo e o acesso do componente de front-end ao modelo.
 
 Consulte também o pacote npm: [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
