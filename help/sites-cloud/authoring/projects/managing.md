@@ -119,7 +119,7 @@ A linha do tempo do projeto fornece informações sobre quando os ativos do proj
 
 ### Exibir projetos ativos/inativos {#viewing-active-inactive-projects}
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. If the icon has a check mark next to it, it is displaying the active projects.
+To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. Se o ícone tiver uma marca de seleção ao lado dele, ele exibirá os projetos ativos.
 
 ![Botão Alternar projetos ativos](/help/sites-cloud/authoring/assets/projects-active.png)
 
@@ -136,8 +136,7 @@ Para tornar um projeto inativo (ou ativo):
 1. No console **Projetos**, abra o projeto e, em seguida, localize o mosaico **Informações do projeto**.
 
    >[!NOTE]
-   >
-   >Talvez seja necessário adicionar este mosaico se ele ainda não estiver no seu projeto. Consulte [Adicionar mosaico](#adding-items-to-a-tile).
+   Talvez seja necessário adicionar este mosaico se ele ainda não estiver no seu projeto. Consulte [Adicionar mosaico](#adding-items-to-a-tile).
 
 1. Tap/click **Edit**.
 1. Altere o seletor de **Ativo** para **Inativo** (ou vice-versa).
