@@ -18,7 +18,7 @@ Fragmentos de conteúdo contêm conteúdo estruturado:
 
 * Eles são baseados em um Modelo [de fragmento de](/help/assets/content-fragments/content-fragments-models.md)conteúdo, que predefine uma estrutura para o fragmento resultante.
 
-Os fragmentos de conteúdo também podem ser entregues no formato JSON, usando os recursos de exportação do Modelo Sling (JSON) dos componentes principais do AEM. Esta forma de delivery:
+Os fragmentos de conteúdo também podem ser entregues no formato JSON, usando os recursos de exportação do Modelo Sling (JSON) dos componentes principais AEM. Esta forma de delivery:
 
 * permite que você use o componente para gerenciar quais elementos de um fragmento fornecer
 * permite delivery em massa, adicionando vários componentes do fragmento do conteúdo na página que está sendo usada para o delivery da API
@@ -38,7 +38,7 @@ Esta e as seguintes páginas cobrem as tarefas para criar, configurar e manter s
 
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo do delivery, como:
 
-* canal físico; por exemplo, desktop, móvel.
+* Canal físico; por exemplo, desktop, móvel.
 * Forma de delivery num canal físico; Por exemplo, &quot;página de detalhes do produto&quot;, &quot;página de categoria do produto&quot; para desktop ou &quot;Web móvel&quot;, &quot;aplicativo móvel&quot; para dispositivos móveis.
 
 No entanto, você (provavelmente) não deseja usar exatamente o mesmo conteúdo para todos os canais - é necessário otimizar o conteúdo de acordo com o canal específico.
@@ -55,23 +55,23 @@ Esses fragmentos de conteúdo podem ser montados para fornecer experiências em 
 
 ## Fragmentos de conteúdo e serviços de conteúdo {#content-fragments-and-content-services}
 
-Os serviços de conteúdo do AEM foram criados para generalizar a descrição e o delivery do conteúdo de/para o AEM, além do foco nas páginas da Web.
+AEM Content Services foram criados para generalizar a descrição e o delivery do conteúdo de/para AEM além de um foco nas páginas da Web.
 
-Eles fornecem o delivery do conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente. Esses canais podem incluir:
+Eles fornecem o delivery do conteúdo para canais que não são tradicionais AEM páginas da Web, usando métodos padronizados que podem ser consumidos por qualquer cliente. Esses canais podem incluir:
 
 * Aplicativos de página única
 * Aplicativos móveis nativos
 * outros canais e pontos de contato externos ao AEM
 
-O Delivery é feito no formato JSON usando o Exportador JSON.
+O delivery é feito no formato JSON usando o Exportador JSON.
 
-Fragmentos de conteúdo do AEM podem ser usados para descrever e gerenciar conteúdo estruturado. O conteúdo estruturado é definido em modelos que podem conter diversos tipos de conteúdo; incluindo texto, dados numéricos, booleano, data e hora e muito mais.
+AEM Fragmentos de conteúdo podem ser usados para descrever e gerenciar conteúdo estruturado. O conteúdo estruturado é definido em modelos que podem conter diversos tipos de conteúdo; incluindo texto, dados numéricos, booleano, data e hora e muito mais.
 
-Junto com os recursos de exportação JSON dos componentes principais do AEM, esse conteúdo estruturado pode ser usado para fornecer conteúdo do AEM a canais diferentes das páginas do AEM.
+Junto com os recursos de exportação JSON dos componentes principais AEM, esse conteúdo estruturado pode ser usado para fornecer conteúdo AEM a canais que não sejam páginas AEM.
 
 >[!NOTE]
 >
->**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**são recursos diferentes no AEM:
+>**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** são recursos diferentes no AEM:
 >* **Fragmentos** de conteúdo são conteúdos editoriais, que podem ser usados para acessar dados estruturados, incluindo textos, números e datas, entre outros. Eles são conteúdo puro, com definição e estrutura, mas sem design visual e/ou layout adicionais.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 
@@ -79,11 +79,11 @@ Junto com os recursos de exportação JSON dos componentes principais do AEM, es
 >
 Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 >
->Para obter mais informações, consulte também [Compreensão de fragmentos de conteúdo e fragmentos de experiência no AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
+>Para obter mais informações, consulte também [Entendendo fragmentos de conteúdo e fragmentos de experiência em AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
 >[!NOTE]
 >
->O AEM também oferece suporte à tradução do conteúdo do fragmento.
+>AEM também suporta a tradução do conteúdo do fragmento.
 
 <!--
 >[!NOTE]
@@ -265,6 +265,6 @@ Um fragmento, com seus elementos e variações, pode ser usado para criar conte�
 
 ### Amostra de WKND {#wknd-sample}
 
-As amostras do site [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKND são fornecidas para ajudá-lo a saber mais sobre o AEM como Cloud Service. Inclui fragmentos de amostra, que podem ser vistos em:
+As amostras do site [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKND são fornecidas para ajudá-lo a saber mais sobre AEM como Cloud Service. Inclui fragmentos de amostra, que podem ser vistos em:
 
 `hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
