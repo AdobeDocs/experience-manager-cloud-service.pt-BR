@@ -1,6 +1,6 @@
 ---
-title: Proteção de dados e regulamentos de privacidade de dados - Adobe Experience Manager como disponibilidade para a base de Cloud Service
-description: 'Saiba mais sobre o Adobe Experience Manager como um suporte da Cloud Service Foundation para as várias regulamentações de proteção de dados e privacidade de dados; incluindo o Regulamento geral da UE sobre proteção de dados (RGPD), a Lei da Privacidade do Consumidor da Califórnia e como cumprir ao implementar um novo AEM como um projeto Cloud Service. '
+title: Regulamentos de proteção de dados e privacidade de dados - Adobe Experience Manager como uma base Cloud Service
+description: 'Saiba mais sobre a Adobe Experience Manager como um suporte da Cloud Service Foundation para as várias regulamentações de proteção de dados e privacidade de dados; incluindo o Regulamento Geral da UE sobre Proteção de Dados (RGPD), a Lei da Privacidade do Consumidor da Califórnia e como cumprir ao implementar um novo AEM como um projeto Cloud Service. '
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Adobe Experience Manager como uma tecnologia Cloud Service Foundation Prontidão para Proteção de Dados e Regulamentos de Privacidade de Dados {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager como uma base Cloud Service para a preparação para a proteção de dados e para os regulamentos de privacidade de dados {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,11 +20,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Para obter mais informações sobre a resposta da Adobe a problemas de privacidade e o que isso significa para você como cliente da Adobe, consulte o Centro [de privacidade da](https://www.adobe.com/privacy.html)Adobe.
+>Para obter mais informações sobre o que isso significa em relação a problemas de privacidade, consulte o Centro de privacidade do [Adobe](https://www.adobe.com/privacy.html).
 
-## Suporte para proteção e privacidade de dados do AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
+## Suporte à privacidade e proteção de dados da AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
-No nível do AEM Foundation, os Dados pessoais armazenados são mantidos no Perfil Usuário. Portanto, as informações neste artigo tratam principalmente de como acessar e excluir perfis de usuários, para atender às solicitações de acesso e exclusão, respectivamente.
+No nível AEM Foundation, os Dados pessoais armazenados são mantidos no Perfil Usuário. Portanto, as informações neste artigo tratam principalmente de como acessar e excluir perfis de usuários, para atender às solicitações de acesso e exclusão, respectivamente.
 
 ## Acessar um Perfil de usuário {#accessing-a-user-profile}
 
@@ -46,7 +46,7 @@ No nível do AEM Foundation, os Dados pessoais armazenados são mantidos no Perf
 
 ### API HTTP {#http-api}
 
-Conforme mencionado, a Adobe fornece APIs para acessar dados do usuário, a fim de facilitar a automação. Existem vários tipos de APIs que você pode usar:
+Como mencionado, o Adobe fornece APIs para acessar dados do usuário, a fim de facilitar a automação. Existem vários tipos de APIs que você pode usar:
 
 **API UserProperties**
 
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->Para o AEM como Cloud Service, não há nenhum procedimento manual disponível na interface do usuário para a exclusão de um perfil do usuário, pois o CRXDE não está acessível.
+>Para AEM como Cloud Service, não há nenhum procedimento manual disponível na interface do usuário para a exclusão de um perfil do usuário, pois o CRXDE não está acessível.
 
 ### API HTTP {#http-api-1}
 
