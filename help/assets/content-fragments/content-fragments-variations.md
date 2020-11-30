@@ -12,12 +12,12 @@ ht-degree: 20%
 
 # Variações - Criação dos fragmentos de conteúdo{#variations-authoring-fragment-content}
 
-[As variações](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) são um recurso significativo de fragmentos de conteúdo, pois permitem criar e editar cópias do conteúdo mestre para uso em canais específicos e/ou cenários.
+[As variações](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) são um recurso significativo de fragmentos de conteúdo, pois permitem criar e editar cópias do conteúdo principal para uso em canais específicos e/ou cenários.
 
 Na guia **Variações** , é possível:
 
 * [Insira o conteúdo](#authoring-your-content) do fragmento
-* [Criar e gerenciar variações](#managing-variations) do conteúdo **mestre**
+* [Criar e gerenciar variações](#managing-variations) do conteúdo **Principal**
 
 Executar várias outras ações, dependendo do tipo de dados que está sendo editado; por exemplo:
 
@@ -27,19 +27,19 @@ Executar várias outras ações, dependendo do tipo de dados que está sendo edi
 
 * [Fazer upload de conteúdo](#uploading-content)
 
-* [Estatísticas](#viewing-key-statistics) de chave de Visualização (sobre texto de várias linhas)
+* [Estatísticas](#viewing-key-statistics) de chave de visualização (sobre texto de várias linhas)
 
 * [Resumir texto](#summarizing-text)
 
-* [Sincronizar variações com conteúdo mestre](#synchronizing-with-master)
+* [Sincronizar variações com conteúdo Principal](#synchronizing-with-master)
 
 >[!CAUTION]
 >
->Depois que um fragmento é publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
+>Depois que um fragmento é publicado e/ou referenciado, AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
 ## Criação de seu conteúdo {#authoring-your-content}
 
-Quando você abre seu fragmento de conteúdo para edição, a guia **Variações** será aberta por padrão. Aqui você pode criar o conteúdo, para Mestre ou quaisquer variações que tenha. É possível:
+Quando você abre seu fragmento de conteúdo para edição, a guia **Variações** será aberta por padrão. Aqui você pode criar o conteúdo, para obter variações Principais ou possíveis. É possível:
 
 * faça edições diretamente na guia **Variações**
 * abra o editor [de tela](#full-screen-editor) cheia para:
@@ -82,7 +82,7 @@ As seguintes ações também estão disponíveis (para todos os [formatos](#form
 
 * [Mostrar estatísticas de texto](#viewing-key-statistics)
 
-* [Sincronizar com Mestre](#synchronizing-with-master) (ao editar uma variação)
+* [Sincronizar com Principal](#synchronizing-with-master) (ao editar uma variação)
 
 * [Resumir texto](#summarizing-text)
 
@@ -104,8 +104,8 @@ A edição de rich text permite formatar:
 * Itálico
 * Sublinhado
 * Alinhamento: esquerda, centro, direita
-* lista com marcadores
-* lista numerada
+* Lista com marcadores
+* Lista numerada
 * Recuo: aumento, diminuição
 * Criar/Quebrar hiperlinks
 * Abra o editor de tela cheia, onde as seguintes opções de formatação estão disponíveis:
@@ -182,17 +182,16 @@ O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
->
->O inglês está disponível prontamente.
->Outros idiomas estão disponíveis como Pacotes de modelo de idioma no Compartilhamento de pacotes:
->* [Francês (França)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Alemão (Alemanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (Itália)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espanhol (Espanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+O inglês está disponível prontamente.
+Outros idiomas estão disponíveis como Pacotes de modelo de idioma no Compartilhamento de pacotes:
+* [Francês (França)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [Alemão (Alemanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
+* [Italiano (Itália)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
+* [Espanhol (Espanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
 
-1. Selecione **Mestre** ou a variação necessária.
+1. Selecione **Principal** ou a variação necessária.
 2. Abra o editor de tela cheia.
 
 3. Selecione **Resumir texto** na barra de ferramentas.
@@ -205,6 +204,7 @@ O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento
    * Todas as frases a serem eliminadas são destacadas em vermelho, com greve.
    * Clique em qualquer frase destacada para mantê-la no conteúdo resumido.
    * Clique em qualquer frase não realçada para eliminá-la.
+
    ![comparação de resumo](assets/cfm-variations-06.png)
 
 6. Selecione **Resumir** para confirmar as alterações.
@@ -213,7 +213,7 @@ O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento
 
 Para anotar um fragmento:
 
-1. Selecione **Mestre** ou a variação necessária.
+1. Selecione **Principal** ou a variação necessária.
 1. Abra o editor de tela cheia.
 1. Selecione algum texto. O ícone **Anotar** fica disponível.
 
@@ -230,8 +230,7 @@ Anotações:
 * São indicados pelo realce do texto, em tela cheia e no modo normal do editor. Os detalhes completos de uma anotação podem ser exibidos, editados e/ou excluídos clicando-se no texto realçado, que reabrirá a caixa de diálogo.
 
    >[!NOTE]
-   >
-   >Um seletor suspenso é fornecido se várias anotações tiverem sido aplicadas a uma parte do texto.
+   Um seletor suspenso é fornecido se várias anotações tiverem sido aplicadas a uma parte do texto.
 
 * Quando você exclui o texto inteiro ao qual a anotação foi aplicada, a anotação também é excluída.
 
@@ -248,13 +247,11 @@ Para facilitar o processo de criação de fragmentos de conteúdo, é possível 
 Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer formatação; a formatação pode ser feita quando o [fragmento é usado/referenciado em uma página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
->
->Esses ativos não podem ser movidos ou excluídos em uma página de referência, isso deve ser feito no editor de fragmentos.
->No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita no editor [de](/help/sites-cloud/authoring/fundamentals/content-fragments.md)páginas. A representação do ativo no editor de fragmentos é apenas para a criação do fluxo de conteúdo.
+Esses ativos não podem ser movidos ou excluídos em uma página de referência, isso deve ser feito no editor de fragmentos.
+No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita no editor [de](/help/sites-cloud/authoring/fundamentals/content-fragments.md)páginas. A representação do ativo no editor de fragmentos é apenas para a criação do fluxo de conteúdo.
 
 >[!NOTE]
->
->There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 1. Posicione o cursor na posição que deseja adicionar a imagem.
 2. Use o ícone **Inserir ativo** para abrir a caixa de diálogo de pesquisa.
@@ -265,22 +262,22 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
 
    * navegue até o ativo necessário no DAM
    * procurar o ativo no DAM
+
    Depois de localizado, selecione o ativo desejado clicando na miniatura.
 
 4. Use **Selecionar** para adicionar o ativo ao sistema de parágrafo do fragmento de conteúdo no local atual.
 
    >[!CAUTION]
-   >
-   >Se, após adicionar um ativo, você alterar o formato para:
-   >* **Texto simples:** o ativo será completamente perdido do fragmento.
-   >* **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
+   Se, após adicionar um ativo, você alterar o formato para:
+   * **Texto simples:** o ativo será completamente perdido do fragmento.
+   * **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
 
 
 ## Gerenciamento de variações {#managing-variations}
 
 ### Criação de uma variação {#creating-a-variation}
 
-As variações permitem que você pegue o conteúdo **mestre** e varie de acordo com a finalidade (se necessário).
+As variações permitem que você pegue o conteúdo **Principal** e o varie de acordo com a finalidade (se necessário).
 
 Para criar uma nova variação:
 
@@ -291,8 +288,7 @@ Para criar uma nova variação:
 1. Selecione **Adicionar**; o fragmento **Mestre** será copiado para a nova variação, que agora está aberta para [edição](#editing-a-variation).
 
    >[!NOTE]
-   >
-   >Ao criar uma nova variação, é sempre o **Mestre** que é copiado, não a variação que está aberta no momento.
+   Ao criar uma nova variação, é sempre **Principal** copiar, não a variação que está aberta no momento.
 
 ### Edição de uma variação {#editing-a-variation}
 
@@ -316,8 +312,7 @@ Para renomear uma variação existente:
 1. Confirme a ação **Renomear** .
 
 >[!NOTE]
->
->Isso só afeta a variação **Título**.
+Isso só afeta a variação **Título**.
 
 ### Excluindo uma variação {#deleting-a-variation}
 
@@ -330,34 +325,33 @@ Para excluir uma variação existente:
 1. Confirme a ação **Excluir** na caixa de diálogo.
 
 >[!NOTE]
->
->Não é possível excluir o **Master**.
+Não é possível excluir o **Principal**.
 
-### Sincronizar com o Mestre {#synchronizing-with-master}
+### Sincronização com Principal {#synchronizing-with-master}
 
-**Master** é parte integrante de um fragmento de conteúdo e, por definição, contém a cópia mestre do conteúdo, enquanto as variações contêm as versões individuais atualizadas e personalizadas desse conteúdo. Quando o Master é atualizado, é possível que essas alterações também sejam relevantes para as variações e, portanto, precisem ser propagadas para elas.
+**Principal** é parte integrante de um fragmento de conteúdo e, por definição, contém a cópia principal do conteúdo, enquanto as variações retêm as versões individuais atualizadas e personalizadas desse conteúdo. Quando for Principal, é possível que estas alterações sejam igualmente relevantes para as variações e, por conseguinte, tenham de ser propagadas para elas.
 
-Ao editar uma variação, você tem acesso à ação para sincronizar o elemento atual da variação com Mestre. Isso permite que você copie automaticamente as alterações feitas no Mestre para a variação necessária.
+Ao editar uma variação, você tem acesso à ação para sincronizar o elemento atual da variação com o Principal. Isso permite que você copie automaticamente as alterações feitas no Principal para a variação necessária.
 
 >[!CAUTION]
->
->A sincronização só está disponível para copiar alterações *do **Master**para a variação*.
->Somente o elemento atual da variação será sincronizado.
->A sincronização só funciona no tipo de dados **Texto de várias linhas**.
->A transferência de alterações *de uma variação para **Mestre ***não está disponível como uma opção.
+A sincronização só está disponível para copiar alterações *do **Master**para a variação*.
+Somente o elemento atual da variação será sincronizado.
+A sincronização só funciona no tipo de dados **Texto de várias linhas**.
+A transferência de alterações *de uma variação para **Mestre*** não está disponível como uma opção.
 
-1. Abra o fragmento do conteúdo no editor de fragmentos. Certifique-se de que o **Mestre** foi editado.
+1. Abra o fragmento do conteúdo no editor de fragmentos. Verifique se o **Principal** foi editado.
 1. Selecione uma variação específica e, em seguida, a ação de sincronização apropriada de:
 
-   * o seletor suspenso **Ações** - **Sincronizar o elemento atual com o mestre**
+   * o seletor suspenso **Ações** - **Sincronizar elemento atual com principal**
 
-   * a barra de ferramentas do editor de tela cheia - **Sincronizar com o mestre**
+   * a barra de ferramentas do editor de tela cheia - **Sincronizar com o principal**
 
-1. O capitão e a variação serão apresentados lado a lado:
+1. Principal e a variação será mostrada lado a lado:
 
    * verde indica o conteúdo adicionado (à variação)
    * vermelho indica o conteúdo removido (da variação)
    * azul indica texto substituído
-   ![sincronização com o mestre](assets/cfm-variations-11.png)
+
+   ![sincronização com principal](assets/cfm-variations-11.png)
 
 1. Selecione **Sincronizar**, a variação será atualizada e mostrada.
