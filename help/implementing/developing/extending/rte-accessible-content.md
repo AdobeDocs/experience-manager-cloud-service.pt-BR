@@ -6,12 +6,12 @@ translation-type: tm+mt
 source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Configure RTE to create accessible sites {#configure-rte-accessible-sites}
+# Configurar o RTE para criar sites acessíveis {#configure-rte-accessible-sites}
 
 [!DNL Adobe Experience Manager] suporta recursos de acessibilidade padrão, como texto alternativo para imagens, e recursos adicionais que podem ser acessados ao criar conteúdo. Os autores de conteúdo usam esses recursos com componentes que usam o editor de Rich Text (RTE). Os recursos incluem a adição de texto alternativo, informações estruturais por meio de cabeçalhos e elementos de parágrafo, e assim por diante.
 
