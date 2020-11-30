@@ -242,7 +242,7 @@ Este é um exemplo de como esse problema ocorre:
 
 1. O dispatcher armazena a resposta em cache no `/my-page.html` e retorna a resposta ao usuário.
 1. Um autor de conteúdo faz uma alteração nessa página e a ativa.
-1. O agente de liberação do dispatcher envia uma solicitação de invalidação para o `/content/my-brand/my-page`**.**Como o dispatcher não tem uma página em cache nesse caminho, o conteúdo antigo permanece em cache e será obsoleto.
+1. O agente de liberação do dispatcher envia uma solicitação de invalidação para o `/content/my-brand/my-page`**.** Como o dispatcher não tem uma página em cache nesse caminho, o conteúdo antigo permanece em cache e será obsoleto.
 
 Há maneiras de configurar regras de liberação do dispatcher personalizadas que mapearão o URL mais curto até o URL mais longo para fins de invalidação de cache.
 
@@ -364,8 +364,8 @@ Para gerar um mapa de site programaticamente, registre uma escuta Sling Servlet 
 >
 >Registre um Sling Servlet para ouvir o seletor `sitemap` com a extensão `xml`. Isso fará com que o servlet processe a solicitação sempre que um URL for solicitado e terminar em:
 >    `/<path-to>/page.sitemap.xml`
->Obtenha o recurso solicitado da solicitação e gere um mapa de site a partir desse ponto na árvore de conteúdo usando as APIs JCR.
->O benefício desse tipo de abordagem é quando você tem vários sites sendo distribuídos a partir da mesma instância. Uma solicitação de `/content/siteA.sitemap.xml` geraria um mapa de site do `siteA`, enquanto uma solicitação de `/content/siteB.sitemap.xml` geraria um mapa de site do `siteB` sem a necessidade de gravar o código adicional.
+Obtenha o recurso solicitado da solicitação e gere um mapa de site a partir desse ponto na árvore de conteúdo usando as APIs JCR.
+O benefício desse tipo de abordagem é quando você tem vários sites sendo distribuídos a partir da mesma instância. Uma solicitação de `/content/siteA.sitemap.xml` geraria um mapa de site do `siteA`, enquanto uma solicitação de `/content/siteB.sitemap.xml` geraria um mapa de site do `siteB` sem a necessidade de gravar o código adicional.
 
 ### Criar redirecionamentos 301 para URLs herdados {#creating-redirects-for-legacy-urls}
 
