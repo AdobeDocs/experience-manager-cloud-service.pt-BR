@@ -1,6 +1,6 @@
 ---
 title: Configuração de formulários de pesquisa
-description: Configuração de formulários de pesquisa para Adobe Experience Manager como Cloud Service.
+description: Configuração do Search Forms for Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 16%
 
 # Configuração de formulários de pesquisa {#configuring-search-forms}
 
-Adobe Experience Manager como Cloud Service, vem com um poderoso mecanismo de [pesquisa](/help/sites-cloud/authoring/getting-started/search.md) .
+O Adobe Experience Manager como Cloud Service vem com um poderoso mecanismo de [pesquisa](/help/sites-cloud/authoring/getting-started/search.md) .
 
 Em combinação com isso, também há um conjunto de opções predefinidas para ajudar a filtrar o conteúdo. Eles possuem aspectos predefinidos, como Data **** Modificada, Status **de** Publicação ou Status **do** Livecopy, para ajudá-lo a detalhar rapidamente os recursos necessários.
 
@@ -38,9 +38,9 @@ O **Search Forms** fornece uma seleção predefinida de [predicados](#predicates
 
       * **Formulários de pesquisa**
 
-## Formulários padrão {#default-forms}
+## Forms padrão {#default-forms}
 
-Ao acessar o console **Pesquisar formulários** pela primeira vez, é possível ver que todas as configurações têm um símbolo de cadeado. Isso indica que a configuração correspondente é a configuração padrão (out-of-the-box) e não pode ser excluída. Depois que você tiver personalizado e salvo, uma configuração do bloqueio desaparecerá. Ele será reexibido quando você [excluir sua configuração](#deleting-a-configuration-to-reinstate-the-default)personalizada; nesse caso, o padrão (e o indicador de cadeado) será reinstalado.
+Ao acessar o console do **Search Forms** pela primeira vez, você pode ver que todas as configurações têm um símbolo de cadeado. Isso indica que a configuração correspondente é a configuração padrão (out-of-the-box) e não pode ser excluída. Depois que você tiver personalizado e salvo, uma configuração do bloqueio desaparecerá. Ele será reexibido quando você [excluir sua configuração](#deleting-a-configuration-to-reinstate-the-default)personalizada; nesse caso, o padrão (e o indicador de cadeado) será reinstalado.
 
 ![configuração da visão geral dos formulários de pesquisa](assets/csf-overview.png)
 
@@ -96,7 +96,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Análise</td>
-   <td>Recursos de pesquisa/filtro no navegador Sites ao mostrar dados ativados pelo Analytics. Os filtros de pesquisa do Analytics são carregados para corresponder às colunas de análise personalizadas mapeadas.</td>
+   <td>Recursos de pesquisa/filtro no navegador Sites ao mostrar dados ativados pelo Analytics. Os filtros de pesquisa do Analytics são carregados até corresponder às colunas de análise personalizadas mapeadas.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -556,11 +556,11 @@ Dependendo do predicado, uma seleção de configurações está disponível para
 
 * O &amp;ast; nos rótulos de campo na guia **Configurações** significa que os campos são obrigatórios e, se deixados em branco, uma mensagem de erro será exibida.
 
-## Configuração dos formulários de pesquisa {#configuring-your-search-forms}
+## Configurando seu Forms de pesquisa {#configuring-your-search-forms}
 
 ### Criando/Abrindo uma Configuração Personalizada {#creating-opening-a-customized-configuration}
 
-1. Navegue até **Ferramentas**, **Geral**, **Pesquisar formulários**.
+1. Navegue até **Ferramentas**, **Geral**, **Pesquisar no Forms**.
 
 1. Selecione a configuração que deseja personalizar.
 1. Use o ícone **Editar** para abrir a configuração para atualização.
@@ -668,7 +668,7 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
    >1. Faça quaisquer alterações em `/apps.`
 
 
-1. Abra o console **Pesquisar formulários** e selecione a configuração que deseja atualizar. Por exemplo, Painel **de pesquisa do administrador de** sites. Em seguida, selecione **Editar**.
+1. Abra o console do **Search Forms** e selecione a configuração que deseja atualizar. Por exemplo, Painel **de pesquisa do administrador de** sites. Em seguida, selecione **Editar**.
 
 1. Dependendo da configuração, adicione uma Propriedade **Options** ou **Options** à configuração.
 1. Atualize os campos, em especial:
