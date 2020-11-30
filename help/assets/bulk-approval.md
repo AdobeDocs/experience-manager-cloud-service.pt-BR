@@ -47,7 +47,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
    ![review_name](assets/review_name.png)
 
 1. Toque/clique em **[!UICONTROL Enviar]** e em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
-1. Faça logon nos ativos AEM como aprovador e navegue até a interface do usuário dos ativos. Para aprovar ativos, clique/toque no ícone **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
+1. Faça logon na AEM Assets como Aprovador e navegue até a interface do usuário do Assets. Para aprovar ativos, clique/toque no ícone **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
 
    ![notificação](assets/notification.png)
 
@@ -91,7 +91,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
    ![tarefa_details-collection](assets/task_details-collection.png)
 
 1. Toque/clique em **[!UICONTROL Enviar]** e em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
-1. Faça logon nos ativos AEM como aprovador e navegue até o console Ativos. Para aprovar ativos, toque/clique no ícone **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
+1. Faça logon no AEM Assets como Aprovador e navegue até o console Ativos. Para aprovar ativos, toque/clique no ícone **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
 1. Na página **[!UICONTROL Tarefa de revisão]**, examine os detalhes da tarefa de revisão e toque/clique em **[!UICONTROL Revisar]**.
 1. Todos os ativos na coleção estão visíveis na página de revisão. Selecione os ativos e toque/clique no ícone **[!UICONTROL Aprovar/Rejeitar]** para aprovar ou rejeitar ativos, conforme apropriado.
 
