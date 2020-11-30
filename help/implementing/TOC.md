@@ -4,10 +4,10 @@ user-guide-title: Implementação do AEM as a Cloud Service
 breadcrumb-title: Guia de implementação
 user-guide-description: Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento.
 translation-type: tm+mt
-source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
+source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 62%
+source-wordcount: '436'
+ht-degree: 61%
 
 ---
 
@@ -48,6 +48,9 @@ ht-degree: 62%
    + [Diferencial de páginas](/help/implementing/developing/introduction/page-diff.md)
    + [Limitações do editor](/help/implementing/developing/introduction/editor-limitations.md)
    + [Convenções de nomenclatura](/help/implementing/developing/introduction/naming-conventions.md)
+   + [Estrutura de marcação AEM](/help/implementing/developing/introduction/tagging-framework.md)
+   + [Criação de tags em aplicativos AEM](/help/implementing/developing/introduction/tagging-applications.md)
+   + [Fundamentos técnicos AEM](/help/implementing/developing/introduction/aem-technologies.md)
 + Ferramentas do desenvolvedor {#developer-tools}
    + [Ferramentas de desenvolvedor AEM para Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Plug-in Content Package Maven](/help/implementing/developing/tools/maven-plugin.md)
