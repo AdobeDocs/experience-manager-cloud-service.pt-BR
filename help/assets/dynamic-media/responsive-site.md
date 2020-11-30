@@ -14,7 +14,7 @@ ht-degree: 13%
 
 Use o recurso de código responsivo quando quiser compartilhar o código para serviço responsivo com seu desenvolvedor da Web. Você copia o código responsivo (**[!UICONTROL RESS]**) para a área de transferência para que possa compartilhá-lo com o desenvolvedor da Web.
 
-Esse recurso faz sentido se o site estiver em um WCM de terceiros. No entanto, se seu site estiver no AEM, um servidor de imagem externo renderizará a imagem e a fornecerá à página da Web.
+Esse recurso faz sentido se o site estiver em um WCM de terceiros. No entanto, se seu site estiver AEM, um servidor de imagem externo renderizará a imagem e a fornecerá à página da Web.
 
 Consulte também [Incorporação do visualizador de vídeo em uma página da Web.](embed-code.md)
 
@@ -45,6 +45,6 @@ See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplicat
 
 ## Usar HTTP/2 para delivery de ativos de Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O Delivery de ativos de Dynamic Media é suportado usando o HTTP/2, que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O delivery de ativos de Dynamic Media é suportado usando o HTTP/2, que oferece melhor resposta e tempo de carregamento.
 
 Consulte Delivery [HTTP2 de conteúdo](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
