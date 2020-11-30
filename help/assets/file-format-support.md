@@ -3,7 +3,7 @@ title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados [!DNL Experience Manager Assets] por um Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2d858e1cddc67d07dd26dc40663cb4ed2197b02
+source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 10%
@@ -193,7 +193,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | MTS | ✓ | - | ✓ |
 | OGV | ✓ | - | ✓ |
 | QT | ✓ | - | ✓ |
-| R3D | ✓ | - | ✓ |
+| R3D | - | ✓ | ✓ |
 | SWF | ✓ | - | ✓ |
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
