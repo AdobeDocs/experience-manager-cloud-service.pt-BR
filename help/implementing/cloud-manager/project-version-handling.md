@@ -1,6 +1,6 @@
 ---
 title: Manuseio da versão do projeto Maven
-description: Manipulação de versão do projeto Maven - Serviços em nuvem
+description: Manipulação de versão do projeto Maven - Cloud Services
 translation-type: tm+mt
 source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
 workflow-type: tm+mt
