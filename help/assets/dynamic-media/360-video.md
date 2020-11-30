@@ -12,28 +12,27 @@ ht-degree: 0%
 
 # 360/VR Video {#vr-video}
 
-Vídeos de 360 graus gravam uma visualização em todas as direções ao mesmo tempo. They are shot using an omnidirectional camera or a collection of cameras. Durante a reprodução num visor plano, o utilizador controla o ângulo de visualização; a reprodução em dispositivos móveis normalmente aproveita seus controles giroscópicos incorporados.
+Vídeos de 360 graus gravam uma visualização em todas as direções ao mesmo tempo. Eles são filmados usando uma câmera onidirecional ou uma coleção de câmeras. Durante a reprodução num visor plano, o utilizador controla o ângulo de visualização; a reprodução em dispositivos móveis normalmente aproveita seus controles giroscópicos incorporados.
 
 O Dynamic Media inclui suporte nativo para o delivery de 360 ativos de vídeo. Por padrão, nenhuma configuração adicional é necessária para exibir ou reproduzir. Você fornece 360 vídeos usando extensões de vídeo padrão, como .mp4, .mkv e .mov. O codec mais comum é H.264.
 
-This section describes working with the 360/VR Video viewer to render equirectangular video for an immersive viewing experience of a room, property, location, landscape, medical procedure, and so on.
+Esta seção descreve como trabalhar com o visualizador de vídeo 360/VR para renderizar vídeos necessários para uma experiência de visualização imersiva de uma sala, propriedade, local, paisagem, procedimento médico e assim por diante.
 
-Spatial audio is not currently supported; if audio is mixed in stereo, the balance (L/R) does not change as the customer changes the camera viewing angle.
+Não há suporte para áudio espacial no momento; se o áudio estiver misturado em estéreo, o equilíbrio (L/R) não é alterado à medida que o cliente altera o ângulo de visualização da câmera.
 
-See [Using Dynamic Media 360 Videos and Custom Video thumbnail with AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
+Consulte [Uso de vídeos do Dynamic Media 360 e miniatura de vídeo personalizado com o AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
 
 See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-## 360 Video in action {#video-in-action}
+## 360 Vídeo em ação {#video-in-action}
 
-Tap [Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) to open a browser window and watch a 360-degree video. During video playback, drag the mouse pointer to a new location to change the viewing angle.
+Toque em [Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir uma janela do navegador e assistir a um vídeo de 360 graus. Durante a reprodução do vídeo, arraste o ponteiro do mouse para um novo local para alterar o ângulo de visualização.
 
-![360 Video sample](assets/6_5_360videoiss_simplified.png)
-*Video frame from Space Station 360*
+![360 Exemplo](assets/6_5_360videoiss_simplified.png)de quadro de *vídeo da Estação Espacial 360*
 
-## 360/VR Video and Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
+## Vídeo 360/VR e Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-You can use Adobe Premier Pro to view and edit 360/VR footage. For example, you can place logos and text properly in a scene and apply effects and transitions that are designed specifically for equirectangular media.
+Você pode usar o Adobe Premier Pro para visualização e editar a gravação 360/VR. Por exemplo, você pode colocar logotipos e texto corretamente em uma cena e aplicar efeitos e transições projetados especificamente para mídia retangular.
 
 Consulte [Editar vídeo](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)360/VR.
 
@@ -55,15 +54,15 @@ Os ativos de vídeo 360 que são carregados no AEM são rotulados como **Multim�
    * Idealmente, seu conteúdo original de vídeo 360 deve ter uma das seguintes resoluções:
 
       * 1080p - 1920 x 1080, conhecida como resolução Full HD ou FHD ou
-      * 2160p - 3840 x 2160, conhecida como resolução 4K, UHD ou Ultra HD. Essa resolução de tela muito grande é encontrada na maioria das vezes em televisores premium e monitores de computador. The 2160p resolution is often called &quot;4K&quot; because the width is close to 4000 pixels. In other words, it offers four times the pixels of 1080p.
-   * [Create a custom Adaptive Video Profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) with higher quality renditions. For example, you may want to create an Adaptive Video Profile that contains the following three settings:
+      * 2160p - 3840 x 2160, conhecida como resolução 4K, UHD ou HD Ultra. Essa resolução de tela muito grande é encontrada na maioria das vezes em televisores premium e monitores de computador. A resolução 2160p é frequentemente chamada de &quot;4K&quot; porque a largura é próxima a 4000 pixels. Em outras palavras, ele oferta quatro vezes mais pixels do que 1080p.
+   * [Crie um Perfil](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) Adaptive Video personalizado com execuções de qualidade superior. Por exemplo, você pode criar um Perfil de vídeo adaptativo que contenha as três configurações a seguir:
 
       * width=auto; height=720; bitrate=2500 kbps
       * width=auto; height=1080; bitrate=5000 kbps
       * width=auto; height=1440; bitrate=6600 kbps
-   * Process 360 video content in a folder that is dedicated exclusively to 360 video assets.
+   * Processa o conteúdo de vídeo 360 em uma pasta dedicada exclusivamente a 360 ativos de vídeo.
 
-   Be aware that this approach will also place greater demands on the network and CPU of the end user.
+   Esteja ciente de que essa abordagem também exigirá mais demandas na rede e na CPU do usuário final.
 
 1. [Carregue seu vídeo na pasta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
@@ -90,7 +89,7 @@ Start by uploading 360 Videos.
 
 ## Previewing 360 Video {#previewing-video}
 
-You can use Preview to see what your 360 Video looks like to customers and ensure it is behaving as expected.
+Você pode usar a Pré-visualização para ver a aparência do seu vídeo 360 para os clientes e garantir que ele esteja se comportando como esperado.
 
 Consulte também [Edição de predefinições](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets)do visualizador.
 
