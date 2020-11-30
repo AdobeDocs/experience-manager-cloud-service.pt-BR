@@ -1,6 +1,6 @@
 ---
 title: Integração com o Git
-description: Integração com Git - Cloud Service
+description: Integração com Git - Cloud Services
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -65,5 +65,5 @@ Sincronize as tags de versão de um repositório de git do Cloud Manager em um r
 ## Recursos adicionais {#additional-resources}
 
 * [Recursos do GitHub](https://try.github.io)
-* [Tutoriais do Git Atlassiano](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [Tutorials de Git Atlassiano](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
