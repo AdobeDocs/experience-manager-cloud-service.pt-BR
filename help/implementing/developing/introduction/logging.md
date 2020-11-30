@@ -538,7 +538,7 @@ Define DISP_LOG_LEVEL Debug
 
 ### Ambientes em nuvem {#cloud-environments}
 
-AEM como um Cloud Service para os serviços em nuvem pode ser acessado baixando-se pela interface do Gerenciador de nuvem ou ajustando os registros na linha de comando usando-se a interface de linha de comando de E/S do Adobe. Para obter mais informações, consulte a documentação [de registro do Gerenciador de](/help/implementing/cloud-manager/manage-logs.md)nuvem.
+AEM como um Cloud Service para os serviços em nuvem podem ser acessados por meio do download pela interface do Gerenciador de nuvem ou do direcionamento de registros na linha de comando usando a interface de linha de comando do Adobe I/O. Para obter mais informações, consulte a documentação [de registro do Gerenciador de](/help/implementing/cloud-manager/manage-logs.md)nuvem.
 
 ### SDK local {#local-sdk}
 
