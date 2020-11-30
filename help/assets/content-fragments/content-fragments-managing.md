@@ -220,12 +220,12 @@ Também é possível [associar conteúdo](/help/assets/content-fragments/content
 
 Além das opções padrão, a [Linha do tempo](/help/assets/manage-digital-assets.md#timeline) fornece informações e ações específicas para fragmentos de conteúdo:
 
-* Informações de Visualização sobre versões, comentários e anotações
+* Informações de visualização sobre versões, comentários e anotações
 * Ações para versões
 
-   * **[Reverter para esta versão](#reverting-to-a-version)**(selecione um fragmento existente e, em seguida, uma versão específica)
+   * **[Reverter para esta versão](#reverting-to-a-version)** (selecione um fragmento existente e, em seguida, uma versão específica)
 
-   * **[Comparar com Atual](#comparing-fragment-versions)**(selecione um fragmento existente e, em seguida, uma versão específica)
+   * **[Comparar com Atual](#comparing-fragment-versions)** (selecione um fragmento existente e, em seguida, uma versão específica)
 
    * Adicionar um **Rótulo** e/ou **Comentário** (selecione um fragmento existente e, em seguida, uma versão específica)
 
@@ -236,11 +236,10 @@ Além das opções padrão, a [Linha do tempo](/help/assets/manage-digital-asset
    * **Excluir**
 
 >[!NOTE]
->
->Os comentários são:
->* Funcionalidade padrão para todos os ativos
->* Feito na Linha do tempo
->* Relacionado ao ativo de fragmento
+Os comentários são:
+* Funcionalidade padrão para todos os ativos
+* Feito na Linha do tempo
+* Relacionado ao ativo de fragmento
 
 As anotações (para Fragmentos de conteúdo) são:
 * Inserido no editor de fragmentos
@@ -275,8 +274,7 @@ Elas serão mostradas lado a lado, onde:
 * **Concluído** retornará ao console
 
 >[!NOTE]
->
->Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
+Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
 
 ![comparação](assets/cfm-managing-06.png)
 
@@ -293,9 +291,8 @@ Elas serão mostradas lado a lado, onde:
 ## Publicação e referência de um fragmento {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->
->Se o fragmento for baseado em um modelo, verifique se o [modelo foi publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
->Se você publicar um fragmento de conteúdo para o qual o modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
+Se o fragmento for baseado em um modelo, verifique se o [modelo foi publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Se você publicar um fragmento de conteúdo para o qual o modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
 
 Fragmentos de conteúdo devem ser publicados para uso no ambiente de publicação. Podem ser publicados:
 
@@ -303,8 +300,7 @@ Fragmentos de conteúdo devem ser publicados para uso no ambiente de publicaçã
 * Ao [publicar uma página que usa o fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); o fragmento será listado nas referências de página.
 
 >[!CAUTION]
->
->Depois que um fragmento é publicado e/ou referenciado, AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
+Depois que um fragmento é publicado e/ou referenciado, AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
 ## Excluir um fragmento {#deleting-a-fragment}
 
@@ -314,12 +310,10 @@ Para excluir um fragmento:
 2. Selecione o fragmento.
 
    >[!NOTE]
-   >
-   >The **Delete** action is not available as a quick action.
+   The **Delete** action is not available as a quick action.
 
 3. Select **Delete** from the toolbar.
 4. Confirme a ação **Excluir** .
 
    >[!CAUTION]
-   >
-   >Se o fragmento já estiver referenciado em uma página, você verá uma mensagem de aviso e será solicitado a confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.
+   Se o fragmento já estiver referenciado em uma página, você verá uma mensagem de aviso e será solicitado a confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.
