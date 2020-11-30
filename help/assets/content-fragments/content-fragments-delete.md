@@ -36,7 +36,7 @@ Em relação às permissões de exclusão, os Fragmentos de conteúdo devem ser 
 
 >[!NOTE]
 >
->Consulte também Como auditar operações de gerenciamento de usuários no AEM. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
+>Consulte também Como auditar operações de gerenciamento de usuários em AEM. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
 ## Permissões necessárias somente para a funcionalidade do editor {#permissions-required-for-editor-functionality-only}
 
