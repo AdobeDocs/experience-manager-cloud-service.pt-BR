@@ -28,7 +28,7 @@ Consulte Extensão [do](https://docs.adobe.com/content/help/en/launch/using/exte
 * A integração do Adobe Launch para visualizadores do Dynamic Media não é compatível com o modo de operação &quot;pop-up&quot;, onde o URL do visualizador é obtido usando o botão &quot;URL&quot; na página Detalhes do ativo.
 * A integração do Adobe Launch não pode ser usada simultaneamente com a integração do Analytics de visualizadores herdados (por meio do `config2=` parâmetro).
 * O suporte para rastreamento de vídeo está limitado somente ao rastreamento de reprodução principal, conforme descrito em Visão geral [do](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html)rastreamento. Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é suportado.
-* A configuração de Duração do Armazenamento para Elementos de dados não é compatível com Elementos de dados que usam a extensão Visualizadores *de mídia* dinâmica. A Duração do Armazenamento deve ser definida como **[!UICONTROL Nenhum]**.
+* A configuração de Duração do armazenamento para Elementos de dados não é compatível com Elementos de dados que usam a extensão Visualizadores *de mídia* dinâmica. A Duração do armazenamento deve ser definida como **[!UICONTROL Nenhum]**.
 
 ### Casos de uso para a integração {#use-cases-for-the-integration}
 
@@ -68,7 +68,7 @@ Consulte Elementos [de](https://docs.adobe.com/content/help/pt-BR/launch/using/r
 
 Uma regra no Adobe Launch é uma configuração agnóstica que define três áreas que compõem uma regra: *Eventos*, *condições* e *ações*:
 
-* *Os Eventos* (se) informam Adobe Launch quando disparar uma regra.
+* *Os eventos* (se) informam Adobe Launch quando disparar uma regra.
 * *As condições* (se) indicam ao Adobe Launch quais restrições adicionais serão permitidas ou não quando uma Regra for acionada.
 * *As ações* (em seguida) informam ao Adobe Launch o que fazer quando uma Regra é acionada.
 
@@ -116,7 +116,7 @@ A seguinte configuração de exemplo na inicialização de Adobe demonstra como 
 
    ![image2019-4](assets/image2019-4.png)
 
-### Sobre o Adobe Analytics para áudio e vídeo {#about-adobe-analytics-for-audio-and-video}
+### About Adobe Analytics for Audio and Video {#about-adobe-analytics-for-audio-and-video}
 
 Quando uma conta de Experience Cloud é assinada para usar o Adobe Analytics para áudio e vídeo, é suficiente para ativar o rastreamento de vídeo nas configurações de extensão do *Dynamic Media Viewers* . As métricas de vídeo tornam-se disponíveis no Adobe Analytics. O rastreamento de vídeo depende da presença da extensão Adobe Media Analytics para áudio e vídeo.
 
@@ -223,9 +223,9 @@ A atividade do usuário final resulta nas duas chamadas de rastreamento a seguir
 * A primeira chamada ocorre porque a Regra **[!UICONTROL TrackPan]** é acionada quando o usuário entra em *exibição1*. Essa chamada envia 50% como um valor do Elemento de Dados **[!UICONTROL ZoomScale]** , pois o Elemento de Dados saberá que a Regra é acionada pelo *visualizador1* e busca o valor de escala correspondente;
 * A segunda chamada ocorre porque a Regra **[!UICONTROL TrackKey]** é acionada quando o usuário pressiona uma tecla no teclado. Essa chamada envia 25% como um valor do Elemento de dados **[!UICONTROL ZoomScale]** porque a Regra não foi acionada pelo visualizador. Dessa forma, o Elemento de dados retorna o valor mais atualizado.
 
-A amostra configurada acima também afeta a duração do valor do Elemento de dados. O valor do Elemento de dados gerenciado pelo Visualizador de mídia dinâmica é armazenado no código da biblioteca de inicialização de Adobe, mesmo depois que o próprio visualizador é descartado na página da Web. Isso significa que, se houver uma Regra acionada por uma extensão que não seja o Visualizador de mídia dinâmica e fizer referência a esse Elemento de dados, o Elemento de dados retornará o último valor conhecido, mesmo que o visualizador não esteja mais presente na página da Web.
+A amostra configurada acima também afeta a duração do valor do Elemento de dados. O valor do Elemento de dados gerenciado pelo Visualizador de mídia dinâmica é armazenado no código da biblioteca de inicialização do Adobe, mesmo depois que o próprio visualizador é descartado na página da Web. Isso significa que, se houver uma Regra acionada por uma extensão que não seja o Visualizador de mídia dinâmica e fizer referência a esse Elemento de dados, o Elemento de dados retornará o último valor conhecido, mesmo que o visualizador não esteja mais presente na página da Web.
 
-Em qualquer caso, os valores dos elementos de dados controlados pelos visualizadores de mídia dinâmica não são armazenados no armazenamento local ou no servidor; em vez disso, eles são mantidos somente na biblioteca de inicialização de Adobe do cliente. Os valores desse Elemento de dados desaparecem quando a página da Web é recarregada.
+Em qualquer caso, os valores dos Elementos de dados controlados pelos Visualizadores de Mídia Dinâmica não são armazenados no armazenamento local ou no servidor; em vez disso, eles são mantidos somente na biblioteca de inicialização de Adobe do cliente. Os valores desse Elemento de dados desaparecem quando a página da Web é recarregada.
 
 Geralmente, o editor de Elementos de dados oferece suporte à seleção [da duração do](https://docs.adobe.com/content/help/pt-BR/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)armazenamento. No entanto, os Elementos de dados que usam a extensão Visualizadores de mídia dinâmica só suportam a opção de duração do armazenamento de **[!UICONTROL Nenhum]**. A definição de qualquer outro valor é possível na interface do usuário, mas o comportamento do Elemento de dados não é definido nesse caso. A extensão gerencia o valor do Elemento de dados sozinho: o elemento de dados que mantém o valor do argumento do evento do visualizador durante todo o ciclo de vida do visualizador.
 
@@ -408,7 +408,7 @@ Você configurará a integração nos seguintes produtos de Adobe:
 
 Além disso, se essa solução de integração for usada com a AEM Sites, a seguinte configuração também precisará ser feita:
 
-* Console de E/S do Adobe - a integração é criada para o Adobe Launch.
+* Adobe I/O Console - a integração é criada para o Adobe Launch.
 * AEM nó do autor - configuração IMS e configuração da nuvem Adobe Launch.
 
 Como parte da configuração, verifique se você tem acesso a uma empresa no Adobe Experience Cloud que já tenha o Adobe Analytics e o Adobe Launch habilitados.
@@ -472,7 +472,7 @@ Consulte também Guia [de implementação do](https://docs.adobe.com/content/hel
 
 1. Geralmente, a configuração de um Relatório no Adobe Analytics é orientada por necessidades específicas do projeto. Dessa forma, a configuração detalhada do relatório está além do escopo dessa integração.
 
-   No entanto, basta saber que os relatórios de Tráfego personalizado ficam automaticamente disponíveis no Adobe Analytics depois que você configura as variáveis de Tráfego personalizado na **[configuração das variáveis](#setting-up-adobe-analytics-variables)**do Adobe Analytics.
+   No entanto, basta saber que os relatórios de Tráfego personalizado ficam automaticamente disponíveis no Adobe Analytics depois que você configura as variáveis de Tráfego personalizado na **[configuração das variáveis](#setting-up-adobe-analytics-variables)** do Adobe Analytics.
 
    Por exemplo, o relatório da variável **[!UICONTROL Ativo do visualizador (prop 30)]** está disponível no menu Relatórios, em **[!UICONTROL Tráfego personalizado > Tráfego personalizado 21-30 > Ativo do visualizador (prop 30)]**.
 
@@ -620,7 +620,7 @@ A publicação de uma biblioteca envolve as duas etapas a seguir:
    >
    >Na tela de publicação da biblioteca, clique em **[!UICONTROL Adicionar todos os recursos]** alterados e, em seguida, clique em **[!UICONTROL Salvar e construir para desenvolvimento]**.
 
-#### Mover uma biblioteca para cima em níveis de ambiente {#moving-a-library-up-through-environment-levels}
+#### Como mover uma biblioteca para cima pelos níveis de ambiente {#moving-a-library-up-through-environment-levels}
 
 1. Depois que uma nova biblioteca é adicionada, ela está localizada inicialmente no ambiente de desenvolvimento. Para movê-lo para o nível do ambiente de preparo (que corresponde à coluna Enviado), no menu suspenso da biblioteca, clique em **[!UICONTROL Enviar para aprovação]**.
 
@@ -685,9 +685,9 @@ A configuração AEM consiste nas duas etapas principais a seguir:
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. Em uma nova guia do navegador, navegue até o Console [de E/S do](https://console.adobe.io/integrations)Adobe.
+1. Em uma nova guia do navegador, navegue até o Console [do](https://console.adobe.io/integrations)Adobe I/O.
 
-1. Na página Integrações **[!UICONTROL do console de E/S do]** Adobe, perto do canto superior direito, clique em **[!UICONTROL Nova integração]**.
+1. Na página Integrações **[!UICONTROL do Console do]** Adobe I/O, próximo ao canto superior direito, clique em **[!UICONTROL Nova integração]**.
 1. Na caixa de diálogo **[!UICONTROL Criar uma nova integração]**, verifique se o botão de opção **[!UICONTROL Acessar uma API]** está selecionado e clique em **[!UICONTROL Continuar]**.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
@@ -823,7 +823,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`(o nome do servidor de exemplo é 
 1. Na página **[!UICONTROL Produção]** (3/3 páginas) da janela **[!UICONTROL Criar configuração do Adobe Launch]**, se necessário, corrija o URI de produção preenchido automaticamente de modo semelhante ao que foi feito na página **[!UICONTROL Preparação]** anterior.
 1. Perto do canto superior direito, clique em **[!UICONTROL Criar]**.
 
-   Sua nova configuração da Adobe Launch Cloud agora é criada e listada ao lado do seu site.
+   Sua nova Configuração da Adobe Launch Cloud agora é criada e listada ao lado do seu site.
 
 1. Selecione sua nova Adobe para Iniciar a configuração da nuvem (uma marca de seleção é exibida à esquerda do título da configuração quando ela é selecionada). Na barra de ferramentas, clique em **[!UICONTROL Publicar]**.
 
@@ -835,4 +835,4 @@ No entanto, ele é suportado no nó de publicação AEM. Usando as configuraçõ
 
 É possível contornar essa limitação especificando o URL de desenvolvimento ou armazenamento temporário da biblioteca de inicialização do Adobe na configuração da Adobe Launch Cloud para AEM publicação acima. Isso faz com que o nó de publicação AEM use a versão de Desenvolvimento ou Preparação da biblioteca de Adobe Launch.
 
-Consulte [Integrar AEM com o Adobe Launch via E/S](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) Adobe para obter mais informações sobre como configurar a Configuração da Adobe Launch Cloud.
+Consulte [Integrar AEM ao Adobe Launch via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) para obter mais informações sobre como configurar a Configuração da Adobe Launch Cloud.
