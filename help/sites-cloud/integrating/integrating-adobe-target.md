@@ -83,7 +83,7 @@ Uma propriedade é um container que será preenchido com extensões, regras e el
 
 1. Selecione a opção Catálogo de extensão e procure o Público alvo no filtro.
 2. Selecione **Adobe Target** at.js e clique na opção Instalar.
-   ![Pesquisa](assets/search_ext1.png "do Público alvo SearchTarget")
+   ![Pesquisa](assets/search_ext1.png "do público alvo SearchTarget")
 3. Select the **Configure** button. Observe a janela de configuração com as credenciais de conta de Público alvo importadas e a versão at.js para essa extensão.
 4. Selecione **Salvar** para adicionar a Extensão do target à propriedade Iniciar. Você pode ver a Extensão do target listada na lista **Installed Extensions (Extensões** instaladas).
    ![Salvar extensão](assets/configure_extension1.png "ExtensionSave")
