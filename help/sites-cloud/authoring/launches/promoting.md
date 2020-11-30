@@ -98,7 +98,7 @@ Depois de criar uma inicialização aninhada, é possível promovê-la para qual
 1. Selecione **Promover lançamento** para abrir o assistente.
 1. Insira os detalhes necessários:
    * **Target**
-      * **público alvo** de promoção - você pode promover para qualquer uma das fontes.
+      * **Público alvo** de promoção - você pode promover para qualquer uma das fontes.
       * **Excluir inicialização após promoção** - Após a promoção, a inicialização selecionada e todas as inicializações aninhadas dentro dela serão excluídas.
    * **Escopo** - Aqui você pode selecionar se deseja promover a inicialização inteira ou somente as páginas que foram realmente editadas. Nesse último caso, é possível incluir/excluir as subpáginas. A configuração padrão é promover apenas as alterações da página atual:
       * **Promover lançamento completo**
