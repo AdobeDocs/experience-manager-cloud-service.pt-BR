@@ -103,7 +103,7 @@ Quando o certificado expira, ele deixa de ser confiável. Para adicionar um novo
 
    ![Exclua a entrada similaritysearch existente no Armazenamento de chaves para adicionar um novo certificado de segurança](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Figura: exclua a entrada`similaritysearch`existente no Armazenamento de chaves para adicionar um novo certificado de segurança.*
+   *Figura: exclua a entrada `similaritysearch` existente no Armazenamento de chaves para adicionar um novo certificado de segurança.*
 
 1. Na interface do [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**. Abra a configuração disponível de Tags inteligentes. Para baixar um certificado público, clique em **[!UICONTROL Baixar certificado público]**.
 
