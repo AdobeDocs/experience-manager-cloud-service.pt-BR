@@ -288,7 +288,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
 Para criar uma [versão](/help/sites-cloud/authoring/features/page-versions.md) da página:
 
-1. Para abrir o painel Linha do tempo, selecione **[Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**usando o ícone da barra de ferramentas (antes ou depois de[selecionar a página](#selecting-your-page-for-further-action)):
+1. Para abrir o painel Linha do tempo, selecione **[Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** usando o ícone da barra de ferramentas (antes ou depois de [selecionar a página](#selecting-your-page-for-further-action)): 
 
    ![Opção Exibir linha do tempo](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -302,7 +302,7 @@ Para criar uma [versão](/help/sites-cloud/authoring/features/page-versions.md) 
 
 O mesmo mecanismo básico é usado ao restaurar e/ou comparar as versões da sua página:
 
-1. Selecione a **[Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**usando o ícone da barra de ferramentas (antes ou depois de[selecionar a página](#selecting-your-page-for-further-action)):
+1. Selecione a **[Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** usando o ícone da barra de ferramentas (antes ou depois de [selecionar a página](#selecting-your-page-for-further-action)): 
 
    ![Opção Exibir linha do tempo](/help/sites-cloud/authoring/assets/timeline.png)
 
