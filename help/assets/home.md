@@ -1,6 +1,6 @@
 ---
 title: Guia do Assets as a Cloud Service
-description: Recursos de autoajuda e links de documentação do Adobe Experience Manager Assets as a Cloud Service
+description: Recursos de autoajuda e links de documentação do Ativos Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
 source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
