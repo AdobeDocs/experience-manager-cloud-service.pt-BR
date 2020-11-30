@@ -1,24 +1,24 @@
 ---
-title: Sobreposições para Adobe Experience Manager como Cloud Service
-description: O AEM como Cloud Service usa o princípio de sobreposições para permitir que você estenda e personalize os consoles e outras funcionalidades
+title: Overlays para Adobe Experience Manager como Cloud Service
+description: AEM como Cloud Service usa o princípio de sobreposições para permitir que você estenda e personalize os consoles e outras funcionalidades
 translation-type: tm+mt
 source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Sobreposições no AEM como um Cloud Service {#overlays-in-aem}
+# Sobreposições no AEM as a Cloud Service {#overlays-in-aem}
 
-O Adobe Experience Manager como Cloud Service usa o princípio de sobreposições para permitir que você estenda e personalize os consoles e outras funcionalidades (por exemplo, criação de página).
+A Adobe Experience Manager como Cloud Service usa o princípio de sobreposições para permitir que você estenda e personalize os consoles e outras funcionalidades (por exemplo, criação de página).
 
 <!--
 Adobe Experience Manager as a Cloud Service uses the principle of overlays to allow you to extend and customize the [consoles](/help/sites-developing/customizing-consoles-touch.md) and other functionality (for example, [page authoring](/help/sites-developing/customizing-page-authoring-touch.md)).
 -->
 
-A sobreposição é um termo que pode ser usado em muitos contextos. Neste contexto (estender o AEM como um Cloud Service), uma sobreposição significa usar a funcionalidade predefinida e impor suas próprias definições sobre isso (para personalizar a funcionalidade padrão).
+A sobreposição é um termo que pode ser usado em muitos contextos. Neste contexto (estender AEM como um Cloud Service), uma sobreposição significa usar a funcionalidade predefinida e impor suas próprias definições sobre isso (para personalizar a funcionalidade padrão).
 
 Em uma instância padrão, a funcionalidade predefinida é mantida em `/libs` e é recomendável definir sua sobreposição (personalizações) sob a `/apps` ramificação (usando um caminho [de](#search-paths) pesquisa para resolver os recursos).
 
@@ -49,13 +49,13 @@ As sobreposições são o método recomendado para muitas alterações, como con
 Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
 -->
 
-* Você não ****deve fazer alterações na`/libs`ramificação **Qualquer alteração feita pode ser perdida, pois essa ramificação está sujeita a alterações sempre que as atualizações forem aplicadas à sua instância.
+* Você não **** deve fazer alterações na `/libs` ramificação **Qualquer alteração feita pode ser perdida, pois essa ramificação está sujeita a alterações sempre que as atualizações forem aplicadas à sua instância.
 
 * Eles concentram suas alterações em um local; tornando mais fácil para você rastrear, migrar, fazer backup e/ou depurar as alterações conforme necessário.
 
 ## Caminhos de pesquisa {#search-paths}
 
-O AEM usa um caminho de pesquisa para localizar um recurso, pesquisando (por padrão) primeiro a `/apps` ramificação e, em seguida, a `/libs` ramificação. Esse mecanismo significa que sua sobreposição `/apps` (e as personalizações definidas) terão prioridade.
+AEM usa um caminho de pesquisa para localizar um recurso, pesquisando (por padrão) primeiro a `/apps` ramificação e, em seguida, a `/libs` ramificação. Esse mecanismo significa que sua sobreposição `/apps` (e as personalizações definidas) terão prioridade.
 
 Para sobreposições, o recurso fornecido é uma agregação dos recursos e propriedades recuperados, dependendo dos caminhos de pesquisa definidos na configuração do OSGi.
 
