@@ -14,9 +14,9 @@ ht-degree: 78%
 
 Os fluxos de trabalho de projeto disponíveis para uso imediato incluem os seguintes:
 
-* **Project Approval Workflow** - This workflow allows you to assign content to a user, review, then approve.
+* **Fluxo de trabalho** de aprovação de projeto - Esse fluxo de trabalho permite que você atribua conteúdo a um usuário, revise e aprove.
 * **Solicitar lançamento** - um fluxo de trabalho que solicita uma inicialização.
-* **Request Landing Page** - This workflow requests a landing page.
+* **Landing page** de solicitação - esse fluxo de trabalho solicita uma landing page.
 * **Solicitar email** - Fluxo de trabalho para solicitar um email.
 * **Criar e traduzir cópia DAM e Criar cópia de idioma DAM** - Cria binários, metadados e tags traduzidos para ativos e pastas.
 
@@ -44,7 +44,7 @@ As etapas para iniciar e concluir fluxos de trabalho são as mesmas, independent
 
 Você inicia um fluxo de trabalho diretamente em Projetos (exceto para Criar cópia de idioma DAM ou Criação e tradução DAM da cópia de idioma). Informações sobre quaisquer tarefas pendentes em um projeto são listadas no bloco **Tarefas**. Notificações de tarefas que precisam ser concluídas aparecem ao lado do ícone de usuário.
 
-For more information on working with workflows in AEM, see the following:
+Para obter mais informações sobre como trabalhar com workflows em AEM, consulte:
 
 * [Participar de fluxos de trabalho](/help/sites-cloud/authoring/workflows/participating.md)
 * [Aplicação de fluxos de trabalho a páginas](/help/sites-cloud/authoring/workflows/applying.md)
