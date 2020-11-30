@@ -1,6 +1,6 @@
 ---
 title: Personalização e direcionamento de conteúdo
-description: Saiba como o AEM pode criar conteúdo personalizado
+description: Saiba como AEM criar conteúdo personalizado
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
