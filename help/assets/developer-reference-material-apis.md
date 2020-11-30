@@ -1,11 +1,11 @@
 ---
 title: Referências do desenvolvedor para [!DNL Assets]
-description: As APIs do [!DNL Assets] e o conteúdo de referência do desenvolvedor permitem gerenciar ativos, incluindo arquivos binários, metadados, representações, comentários e [!DNL Content Fragments].
+description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1218'
 ht-degree: 1%
 
 ---
