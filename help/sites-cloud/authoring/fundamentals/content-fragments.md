@@ -4,8 +4,8 @@ description: Os Fragmentos de conteúdo do Adobe Experience Manager as a Cloud S
 translation-type: tm+mt
 source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1165'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Juntamente com o exportador JSON atualizado, os fragmentos de conteúdo estrutur
 
 >[!NOTE]
 >
->**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**são recursos diferentes no AEM:
+>**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** são recursos diferentes no AEM:
 >
 >* **Fragmentos de conteúdo** são conteúdos editoriais, principalmente texto e imagens relacionadas. Eles são puro conteúdo, sem design e layout.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado e, portanto, fragmentos de uma página da Web.
