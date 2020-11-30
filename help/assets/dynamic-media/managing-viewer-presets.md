@@ -39,7 +39,7 @@ Consulte também [Acessibilidade e navegação](https://docs.adobe.com/content/h
 
 ## Managing Viewer Presets {#managing-viewer-presets-1}
 
-You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -47,7 +47,7 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM
 >
 >Por padrão, o sistema mostra 15 predefinições do visualizador quando você seleciona Visualizadores na visualização detalhada de um ativo. Você pode aumentar esse limite. Consulte [Aumentar o número de predefinições do visualizador exibidas](#increasing-the-number-of-viewer-presets-that-display).
 
-### Suporte do visualizador para páginas da Web responsivas projetadas {#viewer-support-for-responsive-designed-web-pages}
+### Suporte do visualizador para páginas da Web com design responsivo {#viewer-support-for-responsive-designed-web-pages}
 
 Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes você deseja uma página da Web que forneça um link que abra o Visualizador HTML5 em uma janela separada do navegador. Em outros casos, pode ser necessário incorporar o Visualizador HTML5 diretamente na página de hospedagem. No último caso, a página da Web pode ter um layout estático. Ou pode ser &quot;responsivo&quot; e exibido de forma diferente em dispositivos diferentes ou para tamanhos diferentes de janelas do navegador. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos para uso que acompanham o Dynamic Media suportam páginas da Web estáticas e páginas da Web responsivas projetadas.
 
@@ -399,7 +399,7 @@ Consulte Considerações [especiais para criar uma predefinição](#special-cons
 
 **Para criar uma predefinição do visualizador**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
@@ -523,7 +523,7 @@ As predefinições do visualizador que estão disponíveis na interface do usuá
 
 **Para ativar ou desativar as predefinições do visualizador**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. Na página Predefinição do visualizador, no cabeçalho da coluna **[!UICONTROL Estado]** , toque na alternância para ativar ou desativar uma predefinição do visualizador.
 
    As predefinições do visualizador ativadas têm a alternância exibida à direita, dentro de uma caixa azul; as predefinições do visualizador desativado exibem a alternância à esquerda, dentro de uma caixa cinza-clara.
@@ -540,13 +540,13 @@ Consulte também [Visualizar ativos](/help/assets/dynamic-media/previewing-asset
 
 **Para publicar predefinições do visualizador**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. Selecione uma ou mais predefinições do visualizador que deseja publicar.
 1. Na barra de ferramentas, toque no ícone **[!UICONTROL Publicar]** .
 
 ## Predefinições do visualizador de classificação {#sorting-viewer-presets}
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. Clique em **[!UICONTROL Título da predefinição]**, **[!UICONTROL Tipo]**, **[!UICONTROL Publicado]** ou **[!UICONTROL Estado]** para classificar pelo cabeçalho da coluna. Por exemplo, clique em **[!UICONTROL Tipo]** para classificar os tipos de predefinição do visualizador em ordem alfabética ou não.
 
 ## Edição de predefinições do visualizador {#editing-viewer-presets}
@@ -555,7 +555,7 @@ Observe que a edição de predefinições ** predefinidas e predefinidas do visu
 
 **Para editar predefinições do visualizador**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset] > [!UICONTROL Viewer Presets]**.
 1. Selecione uma predefinição marcando a caixa à esquerda do título predefinido do visualizador.
 1. Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
 1. Na página do **[!UICONTROL Editor de predefinições do visualizador]**, faça as alterações desejadas na predefinição do visualizador, usando as opções encontradas nas guias **[!UICONTROL Aparência]** e **[!UICONTROL Comportamento]**.
@@ -573,7 +573,7 @@ Observe que a edição de predefinições ** predefinidas e predefinidas do visu
 
 **Para excluir predefinições do visualizador personalizado**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets] > [!UICONTROL Viewer Presets]**.
 1. Na página Predefinições do visualizador, marque um Título predefinido e toque no ícone **[!UICONTROL Lixeira]** .
 1. Toque em **[!UICONTROL Excluir]**.
 
