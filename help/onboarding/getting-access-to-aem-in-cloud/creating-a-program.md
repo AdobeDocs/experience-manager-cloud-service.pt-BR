@@ -1,11 +1,11 @@
 ---
-title: Criação de um Programa - Serviço em nuvem
-description: Criação de um Programa - Serviço em nuvem
+title: Criação de um Programa - Cloud Service
+description: Criação de um Programa - Cloud Service
 translation-type: tm+mt
 source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -53,7 +53,7 @@ Siga as etapas abaixo para criar um programa sandbox:
    >Para saber mais sobre como acessar e gerenciar o Repositório Git usando o Gerenciamento de Conta Git de Autoatendimento na interface do usuário do Cloud Manager, consulte [Acesso ao Git](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. Depois que o ambiente de desenvolvimento é criado, o usuário pode **acessar o link AEM** , como mostrado na figura abaixo:
+1. Depois que o ambiente de desenvolvimento é criado, o usuário pode **acessar AEM** link, como mostrado na figura abaixo:
 
    ![](assets/create-program-5.png)
 
@@ -68,10 +68,10 @@ Siga as etapas abaixo para criar um programa sandbox:
 
 ## Excluindo um Programa Sandbox {#delete-sandbox-program}
 
-Um usuário do Programa Sandbox no Proprietário *do* Negócio ou na função *Gerenciador* de Implantação no Gerenciador de Nuvem pode excluir seu conjunto de ambientes de Produção e Estágio por meio da interface do usuário do Gerenciador de Nuvem.
+A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
 
 >[!NOTE]
->Selecionar a opção de exclusão em Produção ou Estágio também exclui a outra no conjunto.
+>Selecionar a opção de exclusão no ambiente de produção também exclui o ambiente de preparo no mesmo conjunto, e vice-versa.
 
 A opção de exclusão está disponível na landing page, como mostrado abaixo:
 
@@ -86,7 +86,7 @@ Selecione **Excluir Programa** na página Visão geral **do** Programa para excl
 
 ## Criação de um Programa regular {#create-regular-program}
 
-Um programa *regular* destina-se a um usuário familiarizado com o AEM e o Cloud Manager e que está pronto para o start de escrever, criar e testar o código com o objetivo de implantá-lo na Produção.
+Um programa *regular* destina-se a um usuário familiarizado com o AEM e o Cloud Manager e que esteja pronto para o start de escrever, criar e testar o código com o objetivo de implantá-lo na Produção.
 
 Siga as etapas abaixo para criar um programa comum:
 
