@@ -24,13 +24,13 @@ Muitos recursos no [!UICONTROL Cloud Manager] exigem permissões específicas pa
 
 >[!CAUTION]
 >
->Para usar o [!UICONTROL Cloud Manager], é necessário ter uma Adobe ID e o Contexto de produto dos serviços gerenciados da Adobe.
+>Para usar o [!UICONTROL Cloud Manager], é necessário ter um Contexto de produto Adobe ID e o do Adobe Managed Services.
 
 ## Definições de função {#role-definitions}
 
 >[!NOTE]
 >
->A função Desenvolvedor no Admin Console não está relacionada à função Desenvolvedor no [!UICONTROL Cloud Manager].
+>A função Desenvolvedor no Admin Console não está relacionada à função Desenvolvedor no Gerenciador [!UICONTROL da]Cloud.
 
 A tabela a seguir resume as funções:
 
@@ -40,4 +40,4 @@ A tabela a seguir resume as funções:
 | Gerenciador de programas | Usa o [!UICONTROL Cloud Manager] para executar a configuração da equipe, verificar o status e KPIs de visualização. Pode aprovar falhas importantes de 3 níveis. |
 | Gerenciador de implantação | Gerencia operações de implantação. Usa o [!UICONTROL Cloud Manager] para executar implantações de estágio/produção. É possível editar Pipelines de CI/CD. Pode aprovar falhas importantes de 3 níveis. Pode obter acesso ao repositório Git. |
 | Desenvolvedor | Desenvolve e testa o código personalizado do aplicativo. Usa principalmente o [!UICONTROL Cloud Manager] para status de visualização. Pode obter acesso ao repositório Git para confirmação de código. |
-| Autor de conteúdo | Geralmente não interage com o [!UICONTROL Cloud Manager]. Pode usar o [!UICONTROL Cloud Manager] Programa Switcher (navegando da [!UICONTROL Experience Cloud]) para acessar o AEM. |
+| Autor de conteúdo | Geralmente não interage com o [!UICONTROL Cloud Manager]. Pode usar o [!UICONTROL Cloud Manager] Programa Switcher (navegando do [!UICONTROL Experience Cloud]) para acessar AEM. |
