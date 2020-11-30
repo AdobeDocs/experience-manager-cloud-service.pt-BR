@@ -1,22 +1,22 @@
 ---
-title: Usando a fusão de recursos Sling em Adobe Experience Manager como Cloud Service
+title: Usando a fusão de recursos Sling no Adobe Experience Manager como Cloud Service
 description: A fusão Sling Resource presta serviços de acesso e fusão de recursos
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Uso da fusão de recursos Sling no AEM como Cloud Service {#using-the-sling-resource-merger-in-aem}
+# Uso do Sling Resource Merger no AEM as a Cloud Service {#using-the-sling-resource-merger-in-aem}
 
 ## Propósito {#purpose}
 
 A fusão Sling Resource presta serviços de acesso e fusão de recursos. Fornece mecanismos de diferenciação (diferenciação) para ambos:
 
-* **[Sobreposições](/help/implementing/developing/introduction/overlays.md)**de recursos usando os caminhos[de](/help/implementing/developing/introduction/overlays.md#search-paths)pesquisa.
+* **[Sobreposições](/help/implementing/developing/introduction/overlays.md)** de recursos usando os caminhos [de](/help/implementing/developing/introduction/overlays.md#search-paths)pesquisa.
 
 * **Substituições** de caixas de diálogo de componentes para a interface habilitada para toque (`cq:dialog`), usando a hierarquia de tipo de recurso (por meio da propriedade `sling:resourceSuperType`).
 
@@ -30,11 +30,11 @@ Com a Fusão de recursos Sling, os recursos de sobreposição/sobreposição e/o
 
 >[!CAUTION]
 >
->A fusão de recursos Sling e os métodos relacionados podem ser usados somente com a interface habilitada para toque (que é a única interface disponível para o AEM como Cloud Service).
+>A fusão de recursos Sling e os métodos relacionados só podem ser usados com a interface habilitada para toque (que é a única interface disponível para AEM como Cloud Service).
 
-### Metas do AEM {#goals-for-aem}
+### Objetivos para AEM {#goals-for-aem}
 
-Os objetivos para usar a fusão de recursos Sling no AEM são:
+Os objetivos da utilização da fusão Sling Resource em AEM são os seguintes:
 
 * verifique se as alterações de personalização não foram feitas em `/libs`.
 * reduzir a estrutura da qual é replicada `/libs`.
@@ -48,11 +48,12 @@ Os objetivos para usar a fusão de recursos Sling no AEM são:
 >Isso ocorre porque o conteúdo de `/libs` pode ser substituído a qualquer momento em que as atualizações forem aplicadas à sua instância.
 >
 >* As sobreposições dependem dos caminhos [de](/help/implementing/developing/introduction/overlays.md#search-paths)pesquisa.
+   >
+   >
+* As substituições não dependem dos caminhos de pesquisa, elas usam a propriedade `sling:resourceSuperType` para fazer a conexão.
 >
->* As substituições não dependem dos caminhos de pesquisa, elas usam a propriedade `sling:resourceSuperType` para fazer a conexão.
 >
->
->No entanto, as substituições são frequentemente definidas em `/apps`, já que a prática recomendada no AEM como Cloud Service é definir personalizações em `/apps`; isso porque você não pode mudar nada debaixo `/libs`.
+No entanto, as substituições são muitas vezes definidas em `/apps`, uma vez que a prática recomendada no AEM como Cloud Service é definir personalizações em `/apps`; isso porque você não pode mudar nada debaixo `/libs`.
 
 ### Propriedades {#properties}
 
