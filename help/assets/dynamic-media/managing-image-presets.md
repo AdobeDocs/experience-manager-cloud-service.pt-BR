@@ -132,7 +132,7 @@ O componente de `Rasterize PDF/AI Image Preview Rendition` processo tem um máxi
 
 ### Formato de arquivo INDD (InDesign) {#indesign-indd-file-format}
 
-Se você pretende oferecer suporte à ingestão de arquivos INDD para que possa gerar a representação dinâmica desse formato de arquivo, reveja as seguintes informações antes de criar predefinições de imagem.
+Se você pretende suportar a ingestão de arquivos INDD para que possa gerar a representação dinâmica desse formato de arquivo, é recomendável revisar as seguintes informações antes de criar predefinições de imagem.
 
 Para arquivos de InDesign, os subativos são extraídos somente se o servidor Adobe InDesign estiver integrado ao AEM. Os ativos referenciados são vinculados com base em seus metadados. InDesign Server não é necessário para vinculação. No entanto, os ativos referenciados devem estar presentes no AEM antes que os arquivos de InDesign sejam processados para que os links sejam criados entre os arquivos de InDesign e os ativos referenciados.
 
@@ -235,7 +235,7 @@ Criar uma predefinição de imagem permite aplicar essas configurações a qualq
 Se você pretende oferecer suporte à inclusão de arquivos AI, PDF e EPS para que possa gerar a representação dinâmica desses formatos de arquivo, é recomendável revisar as seguintes informações antes de criar predefinições de imagem.
 Consulte [Adobe Illustrator (AI), Postscript (EPS) e formatos](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)de arquivo PDF.
 
-Se você pretende oferecer suporte à ingestão de arquivos INDD para que possa gerar a representação dinâmica desse formato de arquivo, reveja as seguintes informações antes de criar predefinições de imagem.
+Se você pretende suportar a ingestão de arquivos INDD para que possa gerar a representação dinâmica desse formato de arquivo, é recomendável revisar as seguintes informações antes de criar predefinições de imagem.
 Consulte o formato [de arquivo](#indesign-indd-file-format)InDesign (INDD).
 
 **Para criar uma predefinição de imagem**
