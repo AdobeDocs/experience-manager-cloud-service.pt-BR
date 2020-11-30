@@ -1,6 +1,6 @@
 ---
 title: Fragmentos de experiência
-description: Estenda o Adobe Experience Manager como fragmentos de experiência Cloud Service.
+description: Estenda o Adobe Experience Manager como um fragmento de experiência do Cloud Service.
 translation-type: tm+mt
 source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
 workflow-type: tm+mt
@@ -44,7 +44,7 @@ Por exemplo:
 >
 >Os links sempre fazem referência à instância de publicação. Eles devem ser consumidos por terceiros, de modo que o link sempre será chamado da instância de publicação, não do autor.
 
-![Execução HTML simples](assets/xf-14.png)
+![Execução HTML sem formatação](assets/xf-14.png)
 
 O seletor de representação simples usa um transformador em vez de scripts adicionais; o [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) é usado como o transformador. Isso está configurado em
 
@@ -52,7 +52,7 @@ O seletor de representação simples usa um transformador em vez de scripts adic
 
 ## Variações sociais {#social-variations}
 
-As variantes sociais podem ser postadas em redes sociais (texto e imagem). No AEM, essas variantes sociais podem conter componentes; por exemplo, componentes de texto, componentes de imagem.
+As variantes sociais podem ser postadas em redes sociais (texto e imagem). AEM estas variantes sociais podem conter componentes; por exemplo, componentes de texto, componentes de imagem.
 
 A imagem e o texto da publicação social podem ser obtidos de qualquer tipo de recurso de imagem ou de recurso de texto em qualquer nível de profundidade (no bloco de construção ou no container de layout).
 
@@ -124,10 +124,10 @@ The only additional configuration is to ensure that the components are [allowed 
 
 ## O provedor de regravação do link do fragmento de experiência - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
-No AEM, você tem a possibilidade de criar Fragmentos de experiência. Um fragmento de experiência:
+AEM você tem a possibilidade de criar Fragmentos de experiência. Um fragmento de experiência:
 
 * consista num grupo de componentes e num esquema,
-* pode existir independentemente de uma página do AEM.
+* pode existir independentemente de uma página AEM.
 
 Um dos casos de uso desses grupos é para a incorporação de conteúdo em pontos de contato de terceiros, como o Adobe Target.
 
@@ -140,15 +140,15 @@ Usando o recurso Exportar para Público alvo, é possível:
 
 * criar um fragmento de experiência,
 * adicionar componentes a ele,
-* e depois exporte-o como uma Oferta Adobe Target, em Formato HTML ou Formato JSON.
+* e, em seguida, exporte-o como uma Oferta Adobe Target, em Formato HTML ou Formato JSON.
 
-Esse recurso pode ser ativado em uma instância do autor do AEM. Requer uma configuração de Adobe Target válida e configurações para o Externalizador de links.
+Esse recurso pode ser ativado em uma instância do autor do AEM. Requer uma Configuração Adobe Target válida e configurações para o Externalizador de links.
 
 <!--
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-O Externalizador de links é usado para determinar os URLs corretos necessários ao criar a versão HTML da Oferta do Público alvo, que é enviada subsequentemente para o Adobe Target. Isso é necessário, pois o Adobe Target exige que todos os links dentro da Oferta HTML do Público alvo possam ser acessados publicamente; isso significa que todos os recursos que os links referenciam e o próprio Fragmento de experiência devem ser publicados antes que possam ser usados.
+O Externalizador de links é usado para determinar os URLs corretos necessários ao criar a versão HTML da Oferta do Público alvo, que é enviada subsequentemente à Adobe Target. Isso é necessário, pois a Adobe Target exige que todos os links dentro da Oferta HTML do Público alvo possam ser acessados publicamente; isso significa que todos os recursos que os links referenciam e o próprio Fragmento de experiência devem ser publicados antes que possam ser usados.
 
 Por padrão, quando você constrói uma Oferta HTML de Público alvo, uma solicitação é enviada para um seletor Sling personalizado no AEM. Este seletor é chamado `.nocloudconfigs.html`. Como seu nome implica, cria uma renderização em HTML simples de um Fragmento de experiência, mas não inclui configurações em nuvem (que seriam informações supérfluas).
 
@@ -156,11 +156,11 @@ Depois de gerar a página HTML, o pipeline do Sling Rewriter faz modificações 
 
 1. Os elementos `html`, `head`e `body` são substituídos por `div` elementos. Os elementos `meta`, `noscript` e `title` são removidos (são elementos filho do `head` elemento original e não são considerados quando este é substituído pelo `div` elemento).
 
-   Isso é feito para garantir que a Oferta Público alvo HTML possa ser incluída nas Atividades do Target.
+   Isso é feito para garantir que a Oferta Público alvo HTML possa ser incluída nas Atividades do Público alvo.
 
-2. O AEM modifica todos os links internos presentes no HTML para que apontem para um recurso publicado.
+2. AEM modifica todos os links internos presentes no HTML, de modo que apontem para um recurso publicado.
 
-   Para determinar os links a serem modificados, o AEM segue este padrão para atributos de elementos HTML:
+   Para determinar os links a serem modificados, AEM este padrão para os atributos de elementos HTML:
 
    1. `src` atributos
    2. `href` atributos
@@ -171,18 +171,18 @@ Depois de gerar a página HTML, o pipeline do Sling Rewriter faz modificações 
    >
    >Na maioria dos casos, os links internos no HTML são links relativos, mas pode haver casos em que os componentes personalizados fornecem URLs completos no HTML. Por padrão, o AEM ignora esses URLs completos e não faz modificações.
 
-   Os links nesses atributos são executados pelo Externalizador de links do AEM `publishLink()` para recriar o URL como se ele estivesse em uma instância publicada e, como tal, disponível ao público.
+   Os links nesses atributos são executados pelo AEM Link Externalizer `publishLink()` para recriar o URL como se ele estivesse em uma instância publicada e, como tal, disponível ao público.
 
-Ao usar uma implementação predefinida, o processo descrito acima deve ser suficiente para gerar a Oferta do Público alvo a partir do Fragmento de experiência e exportá-la para o Adobe Target. No entanto, existem alguns casos de utilização que não são tidos em conta neste processo; eles incluem:
+Ao usar uma implementação predefinida, o processo descrito acima deve ser suficiente para gerar a Oferta do Público alvo a partir do Fragmento de experiência e exportá-la para a Adobe Target. No entanto, existem alguns casos de utilização que não são tidos em conta neste processo; eles incluem:
 
 * Mapeamento Sling disponível somente na instância de publicação
 * Redirecionamentos do Dispatcher
 
-Para esses casos de uso, o AEM fornece a Interface do provedor de regravação de links.
+Para esses casos de uso, AEM fornece a Interface do provedor de regravação de links.
 
 ### Interface do provedor de regravador de links {#link-rewriter-provider-interface}
 
-Para casos mais complicados, não abordados pelo [padrão](#default-link-rewriting), o AEM oferta a interface do provedor de regravação de links. Esta é uma `ConsumerType` interface que você pode implementar em seus pacotes, como um serviço. Ele ignora as modificações que o AEM realiza em links internos de uma oferta HTML como renderizado de um Fragmento de experiência. Essa interface permite que você personalize o processo de regravação de links HTML internos para alinhar-se às suas necessidades comerciais.
+Para casos mais complicados, não abordados pelo [padrão](#default-link-rewriting), AEM a Interface do provedor de regravação de links. Esta é uma `ConsumerType` interface que você pode implementar em seus pacotes, como um serviço. Ele ignora as modificações AEM executadas em links internos de uma oferta HTML como renderizado de um Fragmento de experiência. Essa interface permite que você personalize o processo de regravação de links HTML internos para alinhar-se às suas necessidades comerciais.
 
 Exemplos de casos de uso para implementar essa interface como um serviço incluem:
 
@@ -317,7 +317,7 @@ Para nosso exemplo, gostaríamos de remover a parte `/etc.clientlibs` do URL e a
 
 >[!NOTE]
 >
->Para obter mais informações sobre como obter um resolvedor de recursos por meio de um usuário de serviço, consulte Usuários de serviço no AEM.
+>Para obter mais informações sobre como obter um resolvedor de recursos por meio de um usuário de serviço, consulte Usuários do serviço em AEM.
 
 <!--
 >For more information on how to get a resource resolver through a service user see [Service Users in AEM](/help/sites-administering/security-service-users.md).
@@ -354,7 +354,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 #### Prioridades - getPriority {#priorities-getpriority}
 
-Não é incomum precisar de vários serviços para atender a diferentes tipos de Fragmentos de experiência, ou mesmo para ter um Serviço genérico que lida com a externalização e o mapeamento de todos os Fragmentos de experiência. Nesses casos, surgem conflitos sobre qual serviço usar, de modo que o AEM oferece a possibilidade de definir **Prioridades** para diferentes serviços. As prioridades são especificadas usando o método:
+Não é incomum precisar de vários serviços para atender a diferentes tipos de Fragmentos de experiência, ou mesmo para ter um Serviço genérico que lida com a externalização e o mapeamento de todos os Fragmentos de experiência. Nestes casos, surgem conflitos sobre qual serviço usar, por isso AEM a possibilidade de definir **prioridades** para diferentes serviços. As prioridades são especificadas usando o método:
 
 * `getPriority()`
 
