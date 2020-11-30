@@ -1,6 +1,6 @@
 ---
 title: 'Pacote de estrutura do repositório de projetos do AEM  '
-description: O Adobe Experience Manager como um projeto do Cloud Service Maven requer uma definição do Subpacote da Estrutura do Repositório cujo único objetivo é definir as raízes do repositório do JCR nas quais os subpacotes do Código do projeto são implantados.
+description: A Adobe Experience Manager como um projeto do Cloud Service Maven requer uma definição do Subpacote da Estrutura do Repositório cujo único objetivo é definir as raízes do repositório do JCR nas quais os subpacotes de Código do projeto são implantados.
 translation-type: tm+mt
 source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 9%
 
 # Pacote de estrutura do repositório de projetos do AEM
 
-Os projetos Maven para o Adobe Experience Manager como um Cloud Service exigem uma definição de subpacote de estrutura de repositório cujo único objetivo é definir as raízes do repositório JCR nas quais os subpacotes de código do projeto são implantados. Isso garante que a instalação de pacotes no Experience Manager como Cloud Service seja automaticamente ordenada pelas dependências de recursos do JCR. As dependências em falta podem levar a cenários em que as subestruturas seriam instaladas antes das suas estruturas principais e, por conseguinte, seriam removidas inesperadamente, quebrando a implantação.
+Os projetos Maven para Adobe Experience Manager como Cloud Service exigem uma definição de subpacote de estrutura de repositório cujo único objetivo é definir as raízes do repositório JCR nas quais os subpacotes de código do projeto são implantados. Isso garante que a instalação de pacotes no Experience Manager como Cloud Service seja automaticamente ordenada pelas dependências de recursos do JCR. As dependências em falta podem levar a cenários em que as subestruturas seriam instaladas antes das suas estruturas principais e, por conseguinte, seriam removidas inesperadamente, quebrando a implantação.
 
 Se o pacote de código for implantado em um local **não coberto** pelo pacote de código, quaisquer recursos ancestrais (recursos JCR mais próximos à raiz JCR) deverão ser enumerados no pacote de estrutura do repositório para estabelecer essas dependências.
 
