@@ -18,7 +18,7 @@ O Cloud Manager cria e testa seu código usando um ambiente de compilação espe
 
 * O ambiente build é baseado no Linux, derivado do Ubuntu 18.04.
 * O Apache Maven 3.6.0 está instalado.
-* As versões do Java instaladas são o Oracle JDK 8u202 e 11.0.2.
+* As versões do Java instaladas são Oracle JDK 8u202 e 11.0.2.
 * Existem outros pacotes de sistema instalados que são necessários:
 
    * bzip2
