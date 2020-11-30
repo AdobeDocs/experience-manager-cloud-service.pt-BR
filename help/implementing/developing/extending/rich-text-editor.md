@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
 source-wordcount: '1981'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -56,7 +56,7 @@ Para editar o conteúdo em uma página, abra o conteúdo com um duplo lento e cl
 
 *Figura: Edição embutida com opções básicas na barra de ferramentas.*
 
-### Full-screen editing {#full-screen-editing}
+### Edição em tela cheia {#full-screen-editing}
 
 [!DNL Experience Manager] os componentes podem ser abertos na visualização de tela cheia que oculta o conteúdo da página e ocupa a tela disponível. Considere a edição em tela cheia de uma versão detalhada da edição em linha, já que ela oferta mais opções de edição. Para abri-lo, clique em ![Ícone para abrir o RTE em tela](assets/rte_fullscreen.png)cheia, na barra de ferramentas compacta, ao usar o modo de edição em linha.
 
