@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ cada diretriz é redigida de forma que possa ser objetivamente testada, a fim de
 
 * Suporte para **implementação priorizada e contextual:**
 As orientações da WCAG 2.1 recebem prioridade, relacionadas com o impacto provável de não seguir uma orientação para um grupo específico de utilizadores com deficiência. Isso permite que os autores tomem uma decisão bem informada sobre as orientações mais importantes para suas situações específicas. Além disso, o conceito de 
-*a acessibilidade suportada* é introduzida. Isso permite que os autores tomem decisões sobre como usar tecnologias da Web que possam não ter suporte total para acessibilidade ou exigir que os usuários tenham tecnologias de assistência e/ou navegadores específicos para se beneficiarem dos recursos de acessibilidade.
+*acessibilidade compatível* foi introduzido. Isso permite que os autores tomem decisões sobre como usar tecnologias da Web que possam não ter suporte total para acessibilidade ou exigir que os usuários tenham tecnologias de assistência e/ou navegadores específicos para se beneficiarem dos recursos de acessibilidade.
 
 Esses objetivos influenciaram significativamente a estrutura da WCAG 2.1.
 
