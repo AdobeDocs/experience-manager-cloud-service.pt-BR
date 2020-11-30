@@ -61,6 +61,7 @@ Para pesquisar e filtrar os recursos:
    * Diretório de pesquisa
    * Tags
    * Critérios de pesquisa, por exemplo, datas modificadas, status de publicação, status da Live Copy.
+
    >[!NOTE]
    >
    >O critério de pesquisa pode variar:
