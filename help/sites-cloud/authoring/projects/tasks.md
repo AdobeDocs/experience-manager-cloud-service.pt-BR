@@ -34,7 +34,7 @@ Se um projeto estiver relacionado a alguma tarefa, um Mosaico de tarefas será e
 * Porcentagem de tarefas ativas
 * Porcentagem de tarefas vencidas
 
-![mosaico de Tarefa](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![mosaico de tarefa](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
 ### Visualizar ou modificar as tarefas de um projeto {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -50,7 +50,7 @@ Clique nas reticências (...) no Mosaico de tarefas para exibir a lista de taref
 
 Para obter mais informações sobre uma tarefa específica, na Lista da Tarefa, toque/clique na tarefa e **detalhes da Tarefa **abra.
 
-![Detalhes da Tarefa](/help/sites-cloud/authoring/assets/projects-task-details.png)
+![Detalhes da tarefa](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
 ### Visualizar e modificar comentários da tarefa {#viewing-and-modifying-task-comments}
 
@@ -79,4 +79,4 @@ Também é possível acessar as tarefas na Caixa de entrada. Na caixa de entrada
 
 Para concluir a tarefa, selecione-a e clique em **Concluído**. Adicione as informações à tarefa e clique em **Concluído**. Consulte [Sua caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obter mais informações.
 
-![Notificações de Tarefa](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
+![Notificações de tarefa](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
