@@ -81,8 +81,8 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 
    Se retornar ao console (com a opção **Concluído**), poderá visualizar (e acessar) seu lançamento:
 
-   * The [**Launches **console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * The [**References **in the** Sites **console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * The [**Launches** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * The [**References** in the **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### Criar lançamento com o novo modelo {#create-launch-with-new-template}
 
