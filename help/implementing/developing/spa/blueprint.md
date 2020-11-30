@@ -1,6 +1,6 @@
 ---
-title: Blueprint do SPA
-description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura de SPA deve cumprir para implementar componentes de SPA editáveis dentro do AEM.
+title: SPA Blueprint
+description: Este documento descreve o contrato geral, independente de estrutura, que qualquer quadro SPA deve cumprir para implementar componentes SPA editáveis dentro do AEM.
 translation-type: tm+mt
 source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
@@ -10,13 +10,13 @@ ht-degree: 0%
 ---
 
 
-# Blueprint do SPA {#spa-blueprint}
+# SPA Blueprint {#spa-blueprint}
 
-Para permitir que o autor use o Editor SPA AEM para editar o conteúdo de um SPA, há requisitos que o SPA deve atender.
+Para permitir que o autor use o AEM SPA Editor para editar o conteúdo de um SPA, há requisitos que o SPA deve atender.
 
 ## Introdução {#introduction}
 
-Este documento descreve o contrato geral que qualquer estrutura SPA deve cumprir (isto é, o tipo de camada de suporte AEM) para implementar componentes SPA editáveis dentro da AEM.
+Este documento descreve o contrato geral que qualquer estrutura SPA deve cumprir (isto é, o tipo de camada de suporte AEM) para implementar componentes SPA editáveis dentro do AEM.
 
 Para permitir que o autor use o Editor de páginas AEM para editar os dados expostos por uma estrutura de aplicativo de página única, um projeto deve ser capaz de interpretar a estrutura do modelo que representa a semântica dos dados armazenados para um aplicativo no repositório AEM. Para atingir esse objetivo, são fornecidas duas bibliotecas agnósticas de estrutura: o `PageModelManager` e o `ComponentMapping`.
 
@@ -32,9 +32,9 @@ Para permitir que o autor use o Editor de páginas AEM para editar os dados expo
 
 ## PageModelManager {#pagemodelmanager}
 
-A `PageModelManager` biblioteca é fornecida como um pacote NPM a ser usado por um projeto SPA. Ele acompanha o SPA e atua como um gerenciador de modelo de dados.
+A `PageModelManager` biblioteca é fornecida como um pacote NPM a ser usado por um projeto SPA. Acompanha o SPA e atua como um gerenciador de modelo de dados.
 
-Em nome da ZPE, abstrai a recuperação e a gestão da estrutura JSON que representa a estrutura real do conteúdo. Também é responsável por sincronizar com o SPA para informá-lo quando ele precisa renderizar novamente seus componentes.
+Em nome do SPA, abstrai a recuperação e o gerenciamento da estrutura JSON que representa a estrutura de conteúdo real. Também é responsável por sincronizar com o SPA para informá-lo quando ele precisa renderizar novamente seus componentes.
 
 Consulte o pacote NPM [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
@@ -44,13 +44,13 @@ Ao inicializar o aplicativo, `PageModelManager`a biblioteca primeiro carrega o m
 
 ### ComponentMapping {#componentmapping}
 
-O `ComponentMapping` módulo é fornecido como um pacote NPM para o projeto front-end. Ele armazena componentes de front-end e fornece uma maneira para o SPA mapear componentes de front-end para tipos de recursos AEM. Isso permite uma resolução dinâmica de componentes ao analisar o modelo JSON do aplicativo.
+O `ComponentMapping` módulo é fornecido como um pacote NPM para o projeto front-end. Ele armazena componentes de front-end e fornece uma maneira para o SPA mapear componentes de front-end para AEM tipos de recursos. Isso permite uma resolução dinâmica de componentes ao analisar o modelo JSON do aplicativo.
 
 Cada item presente no modelo contém um `:type` campo que expõe um tipo de recurso AEM. Quando montado, o componente front-end pode se renderizar usando o fragmento do modelo recebido das bibliotecas subjacentes.
 
 #### Modelo dinâmico para mapeamento de componentes {#dynamic-model-to-component-mapping}
 
-Para obter detalhes sobre como o modelo dinâmico para mapeamento de componentes ocorre no SDK do Javascript SPA para AEM, consulte o artigo Modelo [dinâmico para mapeamento de componentes para SPAs](model-to-component-mapping.md).
+Para obter detalhes sobre como o modelo dinâmico para mapeamento de componentes ocorre no Javascript SPA SDK para AEM, consulte o artigo Modelo [dinâmico para mapeamento de componentes para SPA](model-to-component-mapping.md).
 
 ### Camada específica da estrutura {#framework-specific-layer}
 
@@ -62,9 +62,9 @@ O restante deste documento descreve os requisitos desta camada específica do qu
 
 ### Modelo de página {#page-model}
 
-A estrutura de conteúdo da página é armazenada em AEM. O modelo da página é usado para mapear e instanciar componentes do SPA. Os desenvolvedores do SPA criam componentes do SPA que mapeiam para AEM componentes. Para fazer isso, eles usam o tipo de recurso (ou caminho para o componente AEM) como uma chave exclusiva.
+A estrutura de conteúdo da página é armazenada em AEM. O modelo da página é usado para mapear e instanciar componentes SPA. Os desenvolvedores SPA criam componentes SPA que mapeiam para AEM componentes. Para fazer isso, eles usam o tipo de recurso (ou caminho para o componente AEM) como uma chave exclusiva.
 
-Os componentes do SPA devem estar em sincronia com o modelo de página e ser atualizados com quaisquer alterações em seu conteúdo de acordo. Um padrão que potencialize componentes dinâmicos deve ser usado para instanciar componentes dinamicamente após a estrutura do modelo de página fornecida.
+Os componentes SPA devem estar em sincronia com o modelo de página e ser atualizados com quaisquer alterações em seu conteúdo de acordo. Um padrão que potencialize componentes dinâmicos deve ser usado para instanciar componentes dinamicamente após a estrutura do modelo de página fornecida.
 
 ### Campos de meta {#meta-fields}
 
@@ -269,17 +269,17 @@ A [`PageModelManager`](#pagemodelmanager) biblioteca subjacente e seu [`ModelRou
 
 As duas entidades se relacionam à noção de roteamento, mas o usuário só [`ModelRouter`](routing.md) é responsável por carregar o [`PageModelManager`](#pagemodelmanager) com um modelo de dados estruturado em sincronia com o estado atual do aplicativo.
 
-Consulte o artigo [SPA Model Roteamento](routing.md) para obter mais informações.
+Consulte o artigo [SPA Modelo de Roteamento](routing.md) para obter mais informações.
 
 ## SPA em ação {#spa-in-action}
 
-Veja como um SPA simples funciona e experimente com um SPA você mesmo, seguindo para os seguintes documentos:
+Veja como um SPA simples funciona e experimente um SPA você mesmo continuando com os seguintes documentos:
 
-* [Introdução aos SPAs em AEM usando React](getting-started-react.md).
-* [Introdução aos SPAs em AEM usando Angular](getting-started-angular.md).
+* [Introdução ao SPA em AEM usando React](getting-started-react.md).
+* [Introdução ao SPA em AEM usando Angular](getting-started-angular.md).
 
 ## Leitura adicional {#further-reading}
 
-Para obter mais informações sobre SPAs em AEM, consulte os seguintes documentos:
+Para obter mais informações sobre SPA em AEM, consulte os seguintes documentos:
 
-* [Visão geral](editor-overview.md) do editor SPA para obter uma visão geral dos SPAs no AEM e no modelo de comunicação
+* [Visão geral](editor-overview.md) do editor SPA para obter uma visão geral do SPA no AEM e do modelo de comunicação
