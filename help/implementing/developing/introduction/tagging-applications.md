@@ -75,7 +75,7 @@ Resource node = tag.adaptTo(Resource.class);
 
 >[!NOTE]
 >
->Não é possível adaptar diretamente de `Node` para, porque `Tag` não implementa o `Node` `Adaptable.adaptTo(Class)` método Sling.
+>Não é possível adaptar diretamente `Node` de para, porque `Tag` não implementa o `Node` `Adaptable.adaptTo(Class)` método Sling.
 
 ### Obtendo e configurando tags {#getting-and-setting-tags}
 
