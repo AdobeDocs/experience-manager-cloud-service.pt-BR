@@ -1,6 +1,6 @@
 ---
-title: Práticas recomendadas para organizar ativos digitais para usar Perfis de imagem Dynamic Media ou Perfis de vídeo
-description: Dicas e práticas recomendadas para nomear, organizar e gerenciar arquivos de ativos de imagem e vídeo da Dynamic Media.
+title: Práticas recomendadas para organizar ativos digitais para usar Perfis de imagem do Dynamic Media ou Perfis de vídeo
+description: Dicas e práticas recomendadas para nomear, organizar e gerenciar arquivos de imagem e de ativos de vídeo do Dynamic Media.
 translation-type: tm+mt
 source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Práticas recomendadas para organizar ativos digitais para uso de perfis de imagem ou perfis de vídeo{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-Um conceito importante em relação ao uso de Perfis de imagem Dynamic Media ou Perfis de vídeo é que eles são atribuídos a pastas. Dentro de um perfil estão as configurações de uma imagem ou vídeo. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados pelo perfil.
+Um conceito importante em relação ao uso de Perfis de imagem de mídia dinâmica ou Perfis de vídeo é que eles estão atribuídos a pastas. Dentro de um perfil estão as configurações de uma imagem ou vídeo. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados pelo perfil.
 
 Usando estratégias de nomenclatura de arquivos e pastas consistentes e apropriadas, juntamente com boas práticas de metadados, você pode aproveitar ao máximo sua coleção de ativos digitais e garantir que os arquivos corretos sejam processados pelo perfil certo.
 
-Consulte [Sobre o Perfil de imagem Dynamic Media e Perfis](about-image-video-profiles.md)de vídeo.
+Consulte [Sobre o Perfil de imagem de mídia dinâmica e Perfis](about-image-video-profiles.md)de vídeo.
 
 Veja a seguir dicas de práticas recomendadas para organizar seus arquivos de ativos digitais.
 
@@ -39,5 +39,5 @@ Veja a seguir dicas de práticas recomendadas para organizar seus arquivos de at
    * **Pastas** baseadas em datas - contém ativos digitais com base em uma data de criação ou em uma data de última modificação.
 
 * Crie um diretório de pastas que provavelmente não serão alteradas para que qualquer perfil atribuído não seja quebrado.
-* Se um ativo já tiver sido publicado, você usará o AEM para mover o ativo para outra pasta e republicar de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-publicado. O ativo publicado original, no entanto, é &quot;perdido&quot; para o AEM e não pode ser despublicado. Portanto, como prática recomendada, cancele a publicação de ativos primeiro antes de movê-los para uma pasta diferente.
+* Se um ativo já estiver publicado, você usará AEM para mover o ativo para outra pasta e republicar de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-publicado. O ativo publicado original, no entanto, é &quot;perdido&quot; para AEM e não pode ser despublicado. Portanto, como prática recomendada, cancele a publicação de ativos primeiro antes de movê-los para uma pasta diferente.
 
