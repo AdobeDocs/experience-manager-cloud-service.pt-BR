@@ -52,8 +52,8 @@ Você pode fechar o painel de navegação global clicando ou tocando em **Fechar
 
 A navegação global possui dois painéis, representados por ícones na margem esquerda da tela:
 
-* **[Navegação](#navigation-panel)**- Representado por uma bússola   e o painel padrão ao fazer logon no AEM
-* **[Ferramentas](#tools-panel)**- Representado por um martelo
+* **[Navegação](#navigation-panel)** - Representado por uma bússola   e o painel padrão ao fazer logon no AEM
+* **[Ferramentas](#tools-panel)** - Representado por um martelo
 
 As opções disponíveis nesses painéis estão descritas abaixo.
 
@@ -187,7 +187,7 @@ Há vários recursos de ajuda disponíveis:
 
    Navegue por essa visão geral como faria com a [visão geral de navegação do produto](#product-navigation) ao acessar qualquer console pela primeira vez.
 
-   No menu [**Informações da página,**é possível selecionar** Ajuda **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)para exibir isso novamente, a qualquer momento.
+   No menu [**Informações da página,** é possível selecionar **Ajuda**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) para exibir isso novamente, a qualquer momento.
 
 * **Console Ferramentas**
 
