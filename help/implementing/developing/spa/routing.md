@@ -1,5 +1,5 @@
 ---
-title: Roteamento de modelo SPA
+title: roteamento Modelo SPA
 description: Para aplicativos de página única em AEM, o aplicativo é responsável pelo roteamento. Este documento descreve o mecanismo do roteamento, o contrato e as opções disponíveis.
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Roteamento de modelo SPA{#spa-model-routing}
+# roteamento Modelo SPA{#spa-model-routing}
 
 Para aplicativos de página única em AEM, o aplicativo é responsável pelo roteamento. Este documento descreve o mecanismo do roteamento, o contrato e as opções disponíveis.
 
@@ -28,7 +28,7 @@ O `ModelRouter` - quando ativado - encapsula as funções da API do histórico H
 
 ## Roteamento de modelo manual vs automático {#manual-vs-automatic-model-routing}
 
-A `ModelRouter` automatiza a busca de fragmentos do modelo. Mas como qualquer ferramenta automática, ela traz limitações. Quando necessário, o `ModelRouter` pode ser desativado ou configurado para ignorar caminhos usando metapropriedades (consulte a seção Metpropriedades do documento do componente [da página](page-component.md) SPA). Os desenvolvedores front-end podem então implementar sua própria camada de roteamento de modelo, solicitando que `PageModelManager` o carregue qualquer fragmento específico do modelo usando a `getData()` função.
+A `ModelRouter` automatiza a busca de fragmentos do modelo. Mas como qualquer ferramenta automática, ela traz limitações. Quando necessário, o `ModelRouter` pode ser desativado ou configurado para ignorar caminhos usando metapropriedades (consulte a seção Metpropriedades do [SPA documento de Componente](page-component.md) de página). Os desenvolvedores front-end podem então implementar sua própria camada de roteamento de modelo, solicitando que `PageModelManager` o carregue qualquer fragmento específico do modelo usando a `getData()` função.
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ A `ModelRouter` automatiza a busca de fragmentos do modelo. Mas como qualquer fe
 
 ## Contrato de roteamento {#routing-contract}
 
-A implementação atual baseia-se na suposição de que o projeto SPA usa a API do histórico HTML5 para roteamento para as diferentes páginas do aplicativo.
+A implementação atual baseia-se na premissa de que o projeto SPA usa a API do histórico HTML5 para roteamento para as diferentes páginas do aplicativo.
 
 ### Configuração {#configuration}
 
