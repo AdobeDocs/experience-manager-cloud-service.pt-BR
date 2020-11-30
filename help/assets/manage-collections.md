@@ -1,6 +1,6 @@
 ---
 title: Gerenciar coleções de ativos digitais
-description: Entenda o conceito de coleção nos ativos Adobe Experience Manager. Saiba como gerenciar, editar e criar coleções com outros usuários.
+description: Entenda o conceito de coleção no Adobe Experience Manager Assets. Saiba como gerenciar, editar e criar coleções com outros usuários.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 20%
 
 # Gerenciar coleções {#manage-collections}
 
-Uma coleção é um conjunto de ativos nos Ativos do Adobe Experience Manager. Use coleções para compartilhar ativos entre usuários. O conjunto pode ser uma coleção estática ou uma coleção dinâmica baseada nos resultados da pesquisa.
+Uma coleção é um conjunto de ativos no Adobe Experience Manager Assets. Use coleções para compartilhar ativos entre usuários. O conjunto pode ser uma coleção estática ou uma coleção dinâmica baseada nos resultados da pesquisa.
 
 Diferentemente das pastas, uma coleção pode incluir ativos de diferentes locais. Você pode compartilhar coleções com vários usuários aos quais são atribuídos diferentes níveis de privilégios, incluindo exibição, edição e assim por diante.
 
@@ -80,7 +80,7 @@ Uma coleção inteligente usa um critério de pesquisa para preencher dinamicame
 
    >[!NOTE]
    >
-   >Se você selecionar **[!UICONTROL Público]**, a coleção inteligente ficará disponível para todos com a função Proprietário depois que você a criar. Se você desmarcar a opção **[!UICONTROL Público]** , o grupo de usuários do DAM não estará mais associado à coleção inteligente.
+   >Se você selecionar **[!UICONTROL Público]**, a coleção inteligente ficará disponível para todos com a função Proprietário após criá-la. Se você desmarcar a opção **[!UICONTROL Público]** , o grupo de usuários do DAM não estará mais associado à coleção inteligente.
 
 1. Toque/clique em **[!UICONTROL Salvar]** para criar a coleção inteligente e feche a caixa de mensagem para concluir o processo. A nova coleção inteligente também é adicionada à lista **[!UICONTROL Pesquisas salvas]**.
 O rótulo do botão **[!UICONTROL Criar seleção inteligente]** muda para **[!UICONTROL Editar seleção inteligente]**. Para editar as configurações da coleção inteligente, selecione **[!UICONTROL Arquivos]** na lista **[!UICONTROL Arquivos e pastas]**. Em seguida, toque/clique no botão **[!UICONTROL Editar seleção inteligente]**.
@@ -140,7 +140,7 @@ O recurso Pesquisar em coleções oferece suporte à [Pesquisa por coleções](#
 
 ### Pesquisar coleções {#search-collections}
 
-Você pode pesquisar coleções no console Coleções. Quando você pesquisa com palavras-chave na caixa Omnisearch, o AEM Assets pesquisa nomes de coleção, metadados e as tags adicionadas às coleções.
+Você pode pesquisar coleções no console Coleções. Quando você pesquisa com palavras-chave na caixa Omnisearch, a AEM Assets pesquisa nomes de coleção, metadados e as tags adicionadas às coleções.
 
 Se você pesquisar por coleções do nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. Os ativos ou pastas dentro das coleções são excluídos. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pastas), todos os ativos, pastas e coleções relevantes são retornados.
 
@@ -148,7 +148,7 @@ Se você pesquisar por coleções do nível superior, somente coleções individ
 
 No console Coleções, toque/clique em uma coleção para abri-la.
 
-Em uma coleção, a pesquisa do AEM Asset está restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
+Em uma coleção, AEM pesquisa de ativos está restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
 
 ## Editar configurações de coleção {#edit-collection-settings}
 
