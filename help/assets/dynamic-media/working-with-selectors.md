@@ -82,7 +82,7 @@ Use o seletor de site para escolher uma página da Web quando quiser que um pont
 
 1. Quando no modo de **[!UICONTROL Pré-visualização]** , se você tocar no ponto de acesso ou no mapa de imagem, você navega até a página do site AEM especificada.
 
-## Selecionar ativos no Dynamic Media {#selecting-assets}
+## Selecting assets in Dynamic Media {#selecting-assets}
 
 Use este seletor para escolher imagens para usar em um banner de carrossel, um vídeo interativo, conjuntos de imagens, conjuntos de mídia mista e conjuntos de rotação. Em Vídeo interativo, o seletor de ativos fica disponível quando você toca em **[!UICONTROL Selecionar ativos]** na guia **[!UICONTROL Conteúdo]** . Em Conjuntos de carrossel, o seletor de ativos fica disponível quando você cria um novo slide. Em Conjuntos de imagens, Conjuntos de mídia mista e Conjuntos de rotação, o seletor de ativos fica disponível quando você cria um novo Conjunto de imagens, Conjunto de mídia mista ou Conjunto de rotação, respectivamente.
 
