@@ -1,6 +1,6 @@
 ---
 title: Como entender os tipos de Programas e Programas
-description: Entendendo os tipos de Programa e Programa - Serviços em nuvem
+description: Como entender os tipos de Programas e Programas - Cloud Services
 translation-type: tm+mt
 source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 workflow-type: tm+mt
@@ -16,9 +16,9 @@ No Cloud Manager, você tem a entidade Inquilino na parte superior, que pode ter
 
 O diagrama a seguir mostra a hierarquia de entidades no Gerenciador de nuvem.
 
-![image](assets/program-types1.png)
+![imagem](assets/program-types1.png)
 
-## Tipos de Programas {#program-types}
+## Tipos de programas {#program-types}
 
 Um usuário pode criar um **Sandbox** ou um programa **regular** .
 
