@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Replicação {#replication}
 
-A Adobe Experience Manager como Cloud Service usa o recurso de Distribuição [de conteúdo](https://sling.apache.org/documentation/bundles/content-distribution.html) Sling para mover o conteúdo para replicar para um serviço de pipeline executado em E/S de Adobe fora do tempo de execução AEM.
+A Adobe Experience Manager como Cloud Service usa o recurso de Distribuição [de conteúdo](https://sling.apache.org/documentation/bundles/content-distribution.html) Sling para mover o conteúdo para replicar para um serviço de pipeline executado no Adobe I/O que está fora do tempo de execução AEM.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Para executar uma ativação em árvore:
    ![](assets/distribute.png "DistribuirDistribuir")
 4. Selecione o caminho no navegador de caminho, escolha adicionar um nó, árvore ou excluir conforme necessário e selecione **Enviar**
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 Para solucionar problemas de replicação, navegue até as Filas de Replicação na interface do usuário da Web do Serviço de Autor de AEM:
 
