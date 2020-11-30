@@ -1,6 +1,6 @@
 ---
-title: Repositório de código fonte - Cloud Service
-description: Repositório de código fonte - Cloud Service
+title: Repositório de código fonte - Cloud Services
+description: Repositório de código fonte - Cloud Services
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -18,7 +18,7 @@ Para que um usuário acesse o repositório git do Cloud Manager, os usuários pr
 
 Depois que um cliente Git é configurado, você pode gerenciar seu repositório git na interface do usuário do Cloud Manager. Para saber mais sobre como gerenciar o Git usando a interface do usuário do Cloud Manager, consulte [Acesso ao Git](/help/implementing/cloud-manager/accessing-git.md).
 
-Para começar a desenvolver o aplicativo da AEM Cloud, é necessário fazer uma cópia local do código do aplicativo, fazendo o check-out do repositório do Cloud Manager para um local em seu computador local onde deseje criar seu repositório.
+Para começar a desenvolver o aplicativo AEM Cloud, é necessário fazer uma cópia local do código do aplicativo, fazendo o check-out do repositório do Cloud Manager para um local em seu computador local onde deseje criar seu repositório.
 
 ```java
 $ git clone {URL}
