@@ -45,7 +45,7 @@ A landing page direciona você para criar seu primeiro programa, como mostrado n
 ## Adicionando um novo Programa ao Cloud Service com Programas existentes {#existing-program}
 
 
-1. Faça logon no **Adobe[!UICONTROL Experience Cloud]** e você verá a lista de **Programas e produtos**.
+1. Faça logon no **Adobe [!UICONTROL Experience Cloud]** e você verá a lista de **Programas e produtos**.
 
    ![](assets/first_timelogin1.png)
 
