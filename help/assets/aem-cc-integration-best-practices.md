@@ -189,7 +189,7 @@ Use as seguintes estratégias para fornecer acesso aos ativos finais/aprovados:
 
 #### Trabalho em andamento em ativos de AEM {#work-in-progress-on-assets-from-aem}
 
-Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalhos em andamento, sem ter todas as edições salvas no arquivo local também carregadas para AEM como alterações. Isso acelera o trabalho de um usuário do desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpos e focados em atualizações importantes e controladas.
+Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalhos em andamento, sem ter todas as edições salvas no arquivo local também carregadas para AEM como alterações. Isso acelera o trabalho de um usuário de desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpos e focados em atualizações importantes e controladas.
 
 Adobe Asset Link oferta um bom suporte para este caso de uso:
 
