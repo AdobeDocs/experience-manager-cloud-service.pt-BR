@@ -1,9 +1,9 @@
 ---
 title: Problemas conhecidos
 description: Notas de versão específicas para os problemas conhecidos do Adobe Experience Manager as a Cloud Service
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 100%
 
