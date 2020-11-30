@@ -40,7 +40,7 @@ Consulte Alteração do conteúdo da live copy para obter mais informações. <!
 Para rastrear as alterações feitas, é possível exibir a inicialização em **Referências** e comparar a página de inicialização com a página de origem:
 
 1. No console **Sites**, [navegue até a página de origem do seu lançamento e selecione-a](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**e selecione **Lançamentos**.
+1. Abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e selecione **Lançamentos**.
 1. Selecione seu lançamento específico e depois **Comparar com a origem**:
 
    ![Comparação entre inicialização e origem](/help/sites-cloud/authoring/assets/launches-compare.png)
