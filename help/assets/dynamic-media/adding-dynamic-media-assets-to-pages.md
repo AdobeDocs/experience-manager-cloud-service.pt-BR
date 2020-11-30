@@ -259,7 +259,7 @@ O componente de Mídia interativa é inteligente. Dependendo de você adicionar 
 
 >
 >
-Observe que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente de Mídia interativa nessa página.
+Esteja ciente de que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente de Mídia interativa nessa página.
 >
 >Entretanto, é possível usar a mesma predefinição do visualizador para todos os componentes de Mídia interativa que usam ativos do mesmo tipo, na página.
 
