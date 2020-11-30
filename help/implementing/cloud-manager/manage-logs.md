@@ -72,7 +72,7 @@ Environment Id Service    Name
 
 ### Recursos adicionais {#resources}
 
-Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud Manager e a CLI de E/S do Adobe:
+Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud Manager e a CLI da Adobe I/O:
 
 * [Documentação da API do Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [CLI de E/S de Adobe](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [CLI Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
