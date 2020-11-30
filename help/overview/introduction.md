@@ -1,9 +1,9 @@
 ---
 title: Introdução ao Adobe Experience Manager as a Cloud Service
 description: 'Introdução ao Adobe Experience Manager (AEM) as a Cloud Service. '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Introdução ao Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-Agora o [Adobe Experience Manager](https://www.adobe.com/br/marketing/experience-manager.html) (AEM) está disponível como Cloud Service.
+Agora o [Adobe Experience Manager](https://www.adobe.com/br/marketing/experience-manager.html) (AEM) está disponível as a Cloud Service.
 
 Adobe Experience Manager as a Cloud Service:
 
@@ -52,7 +52,7 @@ Tudo isso ajuda no seguinte:
 >
 >Consulte [Terminologia](terminology.md) para obter alguns dos novos termos que foram introduzidos no AEM as a Cloud Service.
 
-## Valor agregado como Cloud Service {#value-added-as-a-cloud-service}
+## Valor agregado as a Cloud Service {#value-added-as-a-cloud-service}
 
 O AEM atinge esses objetivos adotando as principais características dos serviços em nuvem modernos:
 
@@ -77,7 +77,7 @@ O AEM atinge esses objetivos adotando as principais características dos serviç
 * [Novidades e diferenças](/help/overview/what-is-new-and-different.md) entre o Adobe Experience Manager as a Cloud Service e as versões anteriores
 * A [Arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager as a Cloud Service
 * [Alterações importantes no AEM as a Cloud Service (notas de versão)](/help/release-notes/aem-cloud-changes.md)
-* [Alterações importantes no AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Alterações importantes no AEM Sites as a  Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 * [Alterações importantes no AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
-* [Introdução ao Assets as a Cloud Service](/help/assets/overview.md)
+* [Introdução aos Assets as a Cloud Service](/help/assets/overview.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
