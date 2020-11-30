@@ -31,7 +31,7 @@ A API permite que você opere o Adobe Experience Manager como um Cloud Service c
 
 Por exemplo, aplicativos de página única (SPA), baseados em estrutura ou personalizados, exigem conteúdo fornecido pela API HTTP, geralmente no formato JSON.
 
-Embora [AEM componentes](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) principais ofereçam uma API abrangente, flexível e personalizável que possa servir as operações de Leitura necessárias para essa finalidade, e cuja saída JSON possa ser personalizada, eles exigem AEM know-how WCM (Gestão de conteúdo da Web) para implementação, pois devem ser hospedados em páginas que se baseiam em modelos de AEM dedicados. Nem todas as organizações de desenvolvimento da ZPE têm acesso direto a esses conhecimentos.
+Embora [AEM componentes](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) principais ofereçam uma API abrangente, flexível e personalizável que possa servir as operações de Leitura necessárias para essa finalidade, e cuja saída JSON possa ser personalizada, eles exigem AEM know-how WCM (Gestão de conteúdo da Web) para implementação, pois devem ser hospedados em páginas que se baseiam em modelos de AEM dedicados. Nem todas as organizações de desenvolvimento SPA têm acesso direto a esse conhecimento.
 
 É quando a API REST de ativos pode ser usada. Ela permite que os desenvolvedores acessem ativos (por exemplo, imagens e fragmentos de conteúdo) diretamente, sem a necessidade de primeiro incorporá-los em uma página e entregar seu conteúdo em formato JSON serializado.
 
