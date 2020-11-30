@@ -10,17 +10,17 @@ ht-degree: 15%
 ---
 
 
-# Visualização de ativos 3D no AEM{#previewing-3d-assets}
+# Visualização de ativos 3D em AEM{#previewing-3d-assets}
 
-O Adobe Experience Manager oferece suporte ao carregamento, delivery e pré-visualização interativa de ativos 3D como parte do processo de criação.
+A Adobe Experience Manager oferece suporte para upload, delivery e pré-visualização interativa de ativos 3D como parte do processo de criação.
 
  O visualizador 3D interativo está disponível na página de detalhes do ativo no AEM. O visualizador inclui, entre outras coisas, uma coleção de controles de câmera interativos que permitem girar, aplicar zoom e deslocar o ativo 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formatos suportados para pré-visualização 3D no AEM{#supported-3d-previewing-assets}
+## Formatos suportados para pré-visualização 3D em AEM{#supported-3d-previewing-assets}
 
-A pré-visualização 3D interativa no AEM oferece suporte aos seguintes formatos de arquivo:
+A pré-visualização 3D interativa em AEM suporta os seguintes formatos de arquivo:
 
 | extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
 |---|---|---|---|
@@ -40,17 +40,17 @@ A pré-visualização 3D interativa no AEM oferece suporte aos seguintes formato
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## Considerações de desempenho ao pré-visualização de ativos 3D no AEM{#performance-3d-previewing-assets}
+## Considerações de desempenho ao pré-visualização de ativos 3D em AEM{#performance-3d-previewing-assets}
 
 O tempo necessário para abrir um ativo 3D na página de visualização de detalhes do ativo depende de vários fatores, como largura de banda, complexidade da imagem e latências para o servidor.
 
 Além disso, os recursos do computador cliente, como uma estação de trabalho, um notebook ou um dispositivo de toque móvel, também são importantes de se considerar ao manipular a câmera interativamente. Um sistema bastante eficiente com bons recursos gráficos pode tornar a experiência de visualização interativa em 3D mais fácil e favorável.
 
-**Para pré-visualização de ativos 3D no AEM**
+**Para pré-visualização de ativos 3D em AEM**
 
 1. Verifique se você fez upload dos ativos 3D no AEM.
 See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-digital-assets.md#uploading-assets).
-1. No AEM, na página **[!UICONTROL Navegação]** , toque em **[!UICONTROL Ativos > Arquivos]**.
+1. Em AEM, na página **[!UICONTROL Navegação]** , toque em **[!UICONTROL Ativos > Arquivos]**.
 
    ![Página de navegação](/help/assets/dynamic-media/assets/navigation-assets.png)
 
@@ -61,8 +61,8 @@ See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Upl
 
 1. Toque no cartão do ativo 3D para abri-lo na página de visualização de detalhes do ativo.
 
-   ![pré-visualização 3D interativa](/help/assets/dynamic-media/assets/3d-preview.png)
-   _pré-visualização interativa de um ativo 3D na página de visualização de detalhes do ativo._
+   ![Pré-visualização 3D interativa](/help/assets/dynamic-media/assets/3d-preview.png)
+   _Pré-visualização interativa de um ativo 3D na página de visualização de detalhes do ativo._
 1. Na página de visualização de detalhes do ativo 3D, execute um dos procedimentos a seguir:
    * **Vire sua câmera**—Orbite sua visualização em torno da cena 3D e dos objetos.
       * _Mouse_: Clique com o botão esquerdo + arraste.
@@ -75,7 +75,7 @@ See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Upl
       * _Tela_ sensível ao toque: Pinça com dois dedos.
    * **Recenter your camera**— Recenter your camera to a point on a object in a 3D scenation (Recentro em cena sua câmera, insira novamente sua câmera em um ponto de um objeto na cena 3D).
       * _Mouse_: Duplo-clique.
-      * _Tela_ sensível ao toque: Toque em Duplo.
+      * _Tela_ sensível ao toque: Toque em duplo.
    * **Redefinir**— próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de público alvo da visualização para o centro do ativo 3D. A redefinição também aproxima a câmera ou afasta-a para mostrar o ativo na totalidade e em um tamanho de visualização razoável.
    * **Modo** de tela cheia — Para entrar no modo de tela cheia, no canto inferior direito da página, toque no ícone Tela cheia.
 
