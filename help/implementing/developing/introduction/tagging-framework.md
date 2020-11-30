@@ -175,7 +175,7 @@ Quando a tag A é movida ou unida na tag B em `/content/cq:tags`:
 
       >[!NOTE]
       >
-      >A propriedade `cq:movedTo` só será adicionada à tag movida ou unida se uma dessas condições for atendida:
+      >A `cq:movedTo` propriedade só será adicionada à tag movida ou unida se uma dessas condições for atendida:
       >
       > 1. A tag é usada no conteúdo (o que significa que ela tem uma referência). OU
       > 1. A tag tem filhos que já foram movidos.
@@ -187,7 +187,7 @@ Quando a tag A é movida ou unida na tag B em `/content/cq:tags`:
 
       >[!NOTE]
       >
-      >A `cq:backlinks` propriedade só será adicionada à tag movida ou unida se uma dessas condições for atendida:
+      >A propriedade `cq:backlinks` só será adicionada à tag movida ou unida se uma dessas condições for atendida:
       >
       > 1. A tag é usada no conteúdo (o que significa que ela tem uma referência). OU
       > 1. A tag tem filhos que já foram movidos.
