@@ -1,9 +1,9 @@
 ---
 title: Introdução ao Adobe Experience Manager as a Cloud Service - Terminologia
 description: 'Introdução ao Adobe Experience Manager as a Cloud Service - Terminologia. '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 465172db5bbc3b1dc3b42164d759a45e0ff13a8e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Os termos a seguir são usados em relação ao Adobe Experience Manager (AEM) as
 | Produto | Descrição |
 |---|---|
 | AEM as a Cloud Service | A forma nativa de nuvem de aproveitar os aplicativos do AEM |
-| AEM Assets as a Cloud Service | Recursos do Gerenciamento de ativos digitais (DAM) como uma solução escalável nativa em nuvem para assimilar, processar e gerenciar seus ativos digitais e, ao mesmo tempo, integrar ao ecossistema mais amplo da Adobe Experience Cloud e da Adobe Creative Cloud. |
+| Ativos AEM as a Cloud Service | Recursos do Gerenciamento de ativos digitais (DAM) como uma solução escalável nativa em nuvem para assimilar, processar e gerenciar seus ativos digitais e, ao mesmo tempo, integrar ao ecossistema mais amplo da Adobe Experience Cloud e da Adobe Creative Cloud. |
 | AEM Sites as a Cloud Service | Uma instância do AEM as a Cloud Service com o aplicativo do AEM Sites. |
 
 ## Instâncias e pipelines {#instances-and-pipelines}
