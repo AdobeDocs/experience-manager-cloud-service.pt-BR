@@ -26,7 +26,7 @@ Estes são alguns casos de uso para os quais você pode definir metadados em cas
 * Opções de alteração exibidas para um campo específico com base no valor especificado em outro campo.
 * Defina o valor de metadados padrão em um campo específico com base no valor especificado em outro campo.
 
-## Configurar metadados em cascata no AEM {#configure-cascading-metadata-in-aem}
+## Configurar metadados em cascata em AEM {#configure-cascading-metadata-in-aem}
 
 Considere um cenário em que você deseja exibir metadados em cascata com base no tipo de ativo selecionado. Alguns exemplos
 
@@ -54,7 +54,8 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar manualmente]**, toque/clique em **[!UICONTROL Adicionar escolha]** e especifique o texto e o valor da opção. Por exemplo, especifique os tipos de ativos Vídeo, PDF, Word e Imagem.
 
-   * Para obter os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar pelo caminho]** JSON e forneça o caminho do arquivo JSON. O AEM obtém os pares de valor chave em tempo real quando o formulário é apresentado ao usuário.
+   * Para obter os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar pelo caminho]** JSON e forneça o caminho do arquivo JSON. AEM os pares de valores chave em tempo real quando o formulário é apresentado ao usuário.
+
    Ambas as opções são mutuamente exclusivas. Não é possível importar as opções de um arquivo JSON e editá-las manualmente.
 
    ![add_choice](assets/add_choice.png)
