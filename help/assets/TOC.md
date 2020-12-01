@@ -5,10 +5,10 @@ breadcrumb-title: Guia do Assets
 user-guide-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 302830f46f5a0cedcb717b4ab2e2d95f1c9904d4
+source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 76%
+source-wordcount: '471'
+ht-degree: 71%
 
 ---
 
@@ -55,6 +55,8 @@ ht-degree: 76%
    + [Pesquisar aspectos](search-facets.md)
    + [API HTTP de ativos](mac-api-assets.md)
    + [Suporte a fragmentos de conteúdo na API HTTP de ativos](content-fragments/assets-api-content-fragments.md)
+   + [AEM API GraphQL para fragmentos de conteúdo](content-fragments/graphql-api-content-fragments.md)
+   + [AEM API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e Query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [Relatórios de ativos](asset-reports.md)
    + [Metadados em cascata](cascading-metadata.md)
@@ -66,13 +68,17 @@ ht-degree: 76%
    + [Publicar ativos em [!DNL Brand Portal]](publish-to-brand-portal.md)
 + Fragmentos de conteúdo {#content-fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
+   + [Delivery sem cabeçalho com Fragmentos de conteúdo e GraphQL](content-fragments/content-fragments-graphql.md)
    + [Gerenciamento dos fragmentos de conteúdo](content-fragments/content-fragments-managing.md)
+   + [Ativar a funcionalidade de fragmento de conteúdo para sua instância](content-fragments/content-fragments-configuration-browser.md)
    + [Modelos de fragmentos do conteúdo](content-fragments/content-fragments-models.md)
    + [Variações - Criação dos fragmentos de conteúdo](content-fragments/content-fragments-variations.md)
    + [Conteúdo associado aos fragmentos de conteúdo](content-fragments/content-fragments-assoc-content.md)
    + [Metadados - propriedades dos fragmentos](content-fragments/content-fragments-metadata.md)
    + [Fragmentos de conteúdo - excluir considerações](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
+   + [Árvore de estrutura](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [Pré-visualização - Representação JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Informativo do Dynamic Media por Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Configuração do Dynamic Media](dynamic-media/administering-dynamic-media.md)
