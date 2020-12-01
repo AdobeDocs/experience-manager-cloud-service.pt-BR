@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0.
 description: '[!DNL Adobe Experience Manager] como notas de versão de Cloud Service para 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: db5ca67c583166f4ecb09884a064dfc1378f436e
+source-git-commit: 701d9ff3c9553c28bce0ef417487facedb22373f
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 11%
@@ -12,30 +12,30 @@ ht-degree: 11%
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+A seção a seguir descreve as Notas de versão gerais de [!DNL Experience Manager] como um Cloud Service 2020.9.0.
 
 ## Data de lançamento {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+A data de lançamento de [!DNL Adobe Experience Manager] como Cloud Service 2020.9.0 é 24 de setembro de 2020.
 
-## [!DNL Adobe Experience Manager Sites] como um Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] como um Cloud Service  {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### Novidades em [!DNL Sites] {#what-is-new-sites}
 
-* O SDK do JavaScript do Editor do aplicativo de página única (SPA) agora [é open source.](/help/implementing/developing/spa/reference-materials.md)
+* O SDK JavaScript do Editor de aplicativos de página única (SPA) [agora é open source.](/help/implementing/developing/hybrid/reference-materials.md)
 
-## [!DNL Adobe Experience Manager Assets] como um Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] como um Cloud Service  {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### Novidades em [!DNL Assets] {#what-is-new-assets}
 
-* Arquivos de imagem de marca d&#39;água são suportados para representações geradas com microserviços de ativos. Ele pode ser configurado como um Perfil de processamento e usa um arquivo PNG como uma marca d&#39;água. Consulte [marca d&#39;água de seus ativos](/help/assets/watermark-assets.md).
+* Arquivos de imagem de marca d&#39;água são suportados para representações geradas com microserviços de ativos. Ele pode ser configurado como um Perfil de processamento e usa um arquivo PNG como uma marca d&#39;água. Consulte [marca d&#39;água em seus ativos](/help/assets/watermark-assets.md).
 
-* Aprimoramentos em [!DNL Dynamic Media]
+* Melhorias em [!DNL Dynamic Media]
 
-   * Publicação seletiva - agora é possível para uma equipe de marketing acessar imagens de corte inteligente e representações dinâmicas que são sincronizadas para [!DNL Dynamic Media] que possam criar materiais promocionais, tudo isso sem a necessidade de publicar esses ativos [!DNL Dynamic Media] [!DNL Dynamic Media] para o delivery global. [!DNL Experience Manager] e a [!DNL Dynamic Media] publicação é dissociada e pode ocorrer separadamente para alcançar isso. Consulte publicação [seletiva](/help/assets/dynamic-media/selective-publishing.md).
-   * Os administradores agora podem redefinir a senha do [!DNL Dynamic Media] Cloud Service recebida no provisionamento. A redefinição pode ser feita na interface [!DNL Experience Manager] do usuário, sem a necessidade de usar o aplicativo de [!DNL Dynamic Media Classic] desktop.
+   * Publicação seletiva - agora é possível para uma equipe de marketing acessar [!DNL Dynamic Media] imagens de recorte inteligente e representações dinâmicas que são sincronizadas com [!DNL Dynamic Media] para que possam criar materiais promocionais, tudo isso sem a necessidade de publicar esses ativos em [!DNL Dynamic Media] para o delivery global. [!DNL Experience Manager] e a  [!DNL Dynamic Media] publicação é dissociada e pode ocorrer separadamente para alcançar isso. Consulte [publicação seletiva](/help/assets/dynamic-media/selective-publishing.md).
+   * Os administradores agora podem redefinir a senha [!DNL Dynamic Media] Cloud Service recebida no provisionamento. A redefinição pode ser feita na [!DNL Experience Manager] interface do usuário, sem a necessidade de usar o [!DNL Dynamic Media Classic] aplicativo de desktop.
 
-* Para saber mais sobre os seguintes aprimoramentos, consulte [o que há de novo no Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
+* Para saber mais sobre os seguintes aprimoramentos, consulte [Novidades do Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
 
    * Pré-visualização de PDF aprimorada com a integração do SDK da Visualização Adobe Document Cloud.
    * Funcionalidade de download de clique único.
@@ -51,7 +51,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Novidades {#what-is-new-commerce}
 
-* Componentes principais CIF lançados v1.3.0. Consulte os Componentes [principais](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) CIF para obter mais detalhes.
+* Componentes principais CIF lançados v1.3.0. Consulte [CIF Componentes principais](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) para obter mais detalhes.
 
 * A capacidade de pré-visualização com produto/categoria para modelos de produto e categoria já está disponível. Isso permite que os usuários/profissionais de marketing AEM visualizações os modelos de produto/categoria com dados reais.
 
@@ -69,7 +69,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Data de lançamento {#release-date-cm}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03, 2020.
+A data de lançamento da versão 2020.9.0 [!UICONTROL Cloud Manager] é 3 de setembro de 2020.
 
 ### Novidades {#what-is-new-cloud-manager}
 
@@ -107,9 +107,9 @@ Siga esta seção para saber mais sobre as novidades e as atualizações da Cont
 
 * A interface do usuário CTT tem um recurso de recarregamento automático que recarrega a página de visão geral a cada 30 segundos.
 
-* Botão adicionado à interface do usuário CTT para recuperar facilmente o *Token de acesso* .
+* Botão adicionado à interface do usuário CTT para recuperar *Token de acesso* facilmente.
 
-* Mensagem de validação descritiva adicionada para *URL* e Nome *do conjunto* de migração.
+* Mensagem de validação descritiva adicionada para *URL* e *Nome do Conjunto de Migrações*.
 
 ## Ferramentas de refatoração de código {#code-refactoring}
 
@@ -119,9 +119,9 @@ Siga esta seção para saber mais sobre as novidades e as atualizações das Fer
 
 * O plug-in AIO-CLI suporta o Repository Modernizer e permite que os usuários executem a ferramenta usando o plug-in.
 
-   Consulte Recurso [Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obter mais detalhes.
+   Consulte [Recurso Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obter mais detalhes.
 
 * O utilitário Repository Modernizer pode ser usado para reestruturar pacotes de projetos existentes em pacotes compatíveis com a estrutura do projeto definida para AEM como um Cloud Service.
 
-   Consulte Recurso [Git: Modernizador](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) do repositório para obter mais detalhes.
+   Consulte [Recurso Git: Modernizador do repositório](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obter mais detalhes.
 
