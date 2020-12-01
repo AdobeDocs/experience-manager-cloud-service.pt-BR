@@ -5,10 +5,10 @@ user-guide-title: Criação de conteúdo no AEM as a Cloud Service
 breadcrumb-title: Guia de criação
 user-guide-description: Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 97%
+source-wordcount: '236'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,9 @@ ht-degree: 97%
    + Lançamentos {#launches}
       + [Trabalho com lançamentos](authoring/launches/overview.md)
       + [Criação de lançamentos](authoring/launches/creating.md)
+      + [Gerenciamento de páginas em inicializações](authoring/launches/managing-pages.md)
       + [Edição de lançamentos](authoring/launches/editing.md)
+      + [Visualização de inicializações com o Timewarp](authoring/launches/preview.md)
       + [Promoção de lançamentos](authoring/launches/promoting.md)
    + Fluxos de trabalhos {#workflows}
       + [Trabalhar com fluxos de trabalho](authoring/workflows/overview.md)
@@ -75,6 +77,7 @@ ht-degree: 97%
       + [Criação e gerenciamento de ofertas](authoring/personalization/offers.md)
       + [Noções sobre segmentação](authoring/personalization/segmentation.md)
       + [Configuração da segmentação com o ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+      + [Registro, login e Perfil do usuário](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Administração {#administering}
    + [Administração de Workflows](administering/workflows-administering.md)
 + Integração ao AEM as a Cloud Service {#integrations}
