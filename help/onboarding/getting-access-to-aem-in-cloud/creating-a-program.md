@@ -16,7 +16,7 @@ A solução nativa da nuvem fornece ao usuário as permissões necessárias e a 
 
 Um assistente de criação de programas solicitará que o usuário envie detalhes, dependendo do objetivo do usuário de criar o programa dentro dos limites do que está disponível para o cliente ou organização específica.
 
-No evento do primeiro acesso ao Cloud Manager ou se não houver programas no locatário, o usuário visualizará a tela **Criar seu primeiro Programa** . Se o usuário selecionar *Esc* ou clicar fora da caixa de diálogo, a tela a seguir será exibida:
+No evento do primeiro acesso ao Cloud Manager ou se não houver programas no locatário, o usuário verá a tela **Criar seu primeiro Programa**. Se o usuário selecionar *Esc* ou clicar fora da caixa de diálogo, a seguinte tela será exibida:
 
 ![](assets/create-program1.png)
 
@@ -28,15 +28,15 @@ Dependendo do objetivo do usuário de criar o programa dentro dos limites do que
 ![](assets/create-sandbox.png)
 
 >[!NOTE]
->If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
+>Se um programa já existir, você verá **Adicionar Programa** na parte superior direita da landing page, como mostrado na figura abaixo.
 
 ![](assets/create-program-add.png)
 
-## Criação de um Programa Sandbox {#create-sandbox-program}
+## Criando um Programa Sandbox {#create-sandbox-program}
 
 Siga as etapas abaixo para criar um programa sandbox:
 
-1. No assistente para criar programas, selecione **Configurar uma caixa de proteção**. O usuário envia o nome do programa antes de selecionar **Criar**.
+1. No assistente de criação de programas, selecione **Configurar uma caixa de proteção**. O usuário envia o nome do programa antes de selecionar **Create**.
 
    ![](assets/create-sandbox.png)
 
@@ -44,16 +44,16 @@ Siga as etapas abaixo para criar um programa sandbox:
 
    ![](assets/program-create-setupdemo2.png)
 
-1. Após a configuração do programa e a etapa de criação do projeto ser concluída, o usuário poderá acessar o link **Gerenciar Git** , como mostra a figura abaixo:
+1. Após a configuração do programa e a etapa de criação do projeto ser concluída, o usuário poderá acessar o link **Gerenciar Git**, conforme mostrado na figura abaixo:
 
    ![](assets/create-program4.png)
 
    >[!NOTE]
    >
-   >Para saber mais sobre como acessar e gerenciar o Repositório Git usando o Gerenciamento de Conta Git de Autoatendimento na interface do usuário do Cloud Manager, consulte [Acesso ao Git](/help/implementing/cloud-manager/accessing-git.md).
+   >Para saber mais sobre como acessar e gerenciar o Repositório Git usando o Gerenciamento de Conta Git de Autoatendimento da interface do usuário do Cloud Manager, consulte [Acessando o Git](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. Depois que o ambiente de desenvolvimento é criado, o usuário pode **acessar AEM** link, como mostrado na figura abaixo:
+1. Depois que o ambiente de desenvolvimento é criado, o usuário pode **Acessar o link AEM**, conforme mostrado na figura abaixo:
 
    ![](assets/create-program-5.png)
 
@@ -68,7 +68,7 @@ Siga as etapas abaixo para criar um programa sandbox:
 
 ## Excluindo um Programa Sandbox {#delete-sandbox-program}
 
-A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
+Um usuário do Programa Sandbox na função *Proprietário comercial* ou *Gerenciador de implantação* no Gerenciador de nuvem pode excluir seu conjunto de ambientes de produção e de estágio por meio da interface do usuário do Gerenciador de nuvem.
 
 >[!NOTE]
 >Selecionar a opção de exclusão no ambiente de produção também exclui o ambiente de preparo no mesmo conjunto, e vice-versa.
@@ -79,18 +79,18 @@ A opção de exclusão está disponível na landing page, como mostrado abaixo:
 
 Ou,
 
-Selecione **Excluir Programa** na página Visão geral **do** Programa para excluir o Programa Sandbox.
+Selecione **Eliminar Programa** na página **Visão Geral do Programa** para eliminar o Programa Sandbox.
 
 ![](assets/delete-sandbox2.png)
 
 
-## Criação de um Programa regular {#create-regular-program}
+## Criando um Programa regular {#create-regular-program}
 
-Um programa *regular* destina-se a um usuário familiarizado com o AEM e o Cloud Manager e que esteja pronto para o start de escrever, criar e testar o código com o objetivo de implantá-lo na Produção.
+Um programa *Regular* destina-se a um usuário familiarizado com o AEM e o Cloud Manager e que esteja pronto para o start de escrever, criar e testar o código com o objetivo de implantá-lo na Produção.
 
 Siga as etapas abaixo para criar um programa comum:
 
-1. Selecione **Configurar para produção** no assistente Criar Programa para criar um programa comum. O usuário pode aceitar o nome do programa padrão ou editá-lo antes de selecionar **Continuar**.
+1. Selecione **Configurar para Produção** no assistente Criar Programa para criar um programa regular. O usuário pode aceitar o nome do programa padrão ou editá-lo antes de selecionar **Continuar**.
 
    ![](assets/create-prod1.png)
 
@@ -108,7 +108,7 @@ Siga as etapas abaixo para criar um programa comum:
 
    ![](assets/set-up-prod3.png)
 
-1. Depois de ver seu cartão de programa na landing page, passe o mouse sobre ele para selecionar o ícone do Gerenciador de nuvem para navegar até a página **Visão geral** do Gerenciador de nuvem.
+1. Depois de ver o cartão de programa na landing page, passe o mouse sobre ele para selecionar o ícone do Gerenciador de nuvem para navegar até a página **Visão geral** do Gerenciador de nuvem.
 
    ![](assets/set-up-prod4.png)
 
@@ -118,7 +118,7 @@ Siga as etapas abaixo para criar um programa comum:
 
    >[!NOTE]
    >
-   >A regular program does not have **Auto-setup** feature.
+   >Um programa regular não tem o recurso **Configuração automática**.
 
 
 
