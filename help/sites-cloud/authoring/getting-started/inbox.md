@@ -43,7 +43,7 @@ De qualquer um dos consoles, o número atual de itens em sua caixa de entrada é
 >
 >Algumas ações também serão mostradas na [exibição de cartão do recurso apropriado](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## Abrir a Caixa de entrada   {#opening-the-inbox}
+## Abrir a Caixa de entrada    {#opening-the-inbox}
 
 Para abrir a caixa de entrada de notificação do AEM:
 
@@ -183,7 +183,7 @@ Na caixa de entrada, você pode criar tarefas:
 
 1. Selecione **Enviar**.
 
-## Criação de um projeto   {#creating-a-project}
+## Criação de um projeto    {#creating-a-project}
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-cloud/authoring/projects/overview.md) com base nessa tarefa:
 
