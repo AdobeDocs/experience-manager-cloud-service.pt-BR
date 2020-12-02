@@ -10,13 +10,13 @@ ht-degree: 13%
 ---
 
 
-# About managing Dynamic Media assets {#managing-assets}
+# Sobre o gerenciamento de ativos do Dynamic Media {#managing-assets}
 
 O gerenciamento de ativos do Dynamic Media - imagens, vídeos e ativos interativos - após serem carregados - envolve muitas tarefas, incluindo a visualização, download ou publicação dos mesmos.
 
-Ao visualizar, você também pode aplicar predefinições de imagens (somente para imagens) ou predefinições do visualizador (para vídeo e imagens). Não é possível aplicar ambos a um ativo. Consulte [Aplicar predefinições](viewer-presets.md) do visualizador e [Aplicar predefinições](image-presets.md)de imagens.
+Ao visualizar, você também pode aplicar predefinições de imagens (somente para imagens) ou predefinições do visualizador (para vídeo e imagens). Não é possível aplicar ambos a um ativo. Consulte [Aplicar predefinições do visualizador](viewer-presets.md) e [Aplicar predefinições de imagens](image-presets.md).
 
-Informações gerais sobre o gerenciamento de ativos estão disponíveis em [Gerenciamento de ativos com a interface de usuário](/help/assets/manage-digital-assets.md)sensível ao toque.
+Informações gerais sobre o gerenciamento de ativos estão disponíveis em [Gerenciar ativos com a interface de usuário de toque](/help/assets/manage-digital-assets.md).
 
 Os tópicos a seguir descrevem o que você precisa fazer para gerenciar ativos do Dynamic Media:
 
