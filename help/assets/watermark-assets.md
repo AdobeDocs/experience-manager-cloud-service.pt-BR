@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Marque com água seus ativos {#watermark-assets}
+# Marque seus ativos com uma marca d’água {#watermark-assets}
 
 [!DNL Adobe Experience Manager Assets] permite que você adicione uma marca d&#39;água digital a imagens. [!DNL Assets] suporta a aplicação de uma imagem como uma marca d&#39;água a outros arquivos de imagem. As marcas d&#39;água podem ajudar os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. Além disso, uma marca d&#39;água pode ser usada para indicar um documento como confidencial, rascunho, validade e assim por diante.
 
@@ -19,7 +19,7 @@ Para configurar [!DNL Experience Manager] para itens de marca d&#39;água, siga 
 
 1. Um arquivo PNG é aplicado como uma marca d&#39;água. Carregue esse arquivo no repositório DAM.
 
-1. Acesse o repositório [!DNL Cloud Manager] Git associado ao seu ambiente. Confirme um arquivo nomeado `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` no repositório com o seguinte conteúdo. Para obter instruções, consulte [como fazer a configuração OSGi em [!DNL Experience Manager] um Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+1. Acesse o repositório Git [!DNL Cloud Manager] associado ao seu ambiente. Confirme um arquivo chamado `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` no repositório com o seguinte conteúdo. Para obter instruções, consulte [como fazer a configuração OSGi em [!DNL Experience Manager] como um Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {
@@ -28,11 +28,11 @@ Para configurar [!DNL Experience Manager] para itens de marca d&#39;água, siga 
    }
    ```
 
-1. [Crie um perfil](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) de processamento para aproveitar os microserviços de ativos para aplicar a marca d&#39;água.
+1. [Crie um ](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) perfil de processamento para aproveitar os microserviços de ativos para aplicar a marca d&#39;água.
 
    ![Perfil de processamento de ativos para criar marca d&#39;água](assets/watermark-processing-profile.png)
 
-1. [Aplique os perfis de processamento a uma pasta](/help/assets/asset-microservices-configure-and-use.md#use-profiles) para criar ativos com marca d&#39;água.
+1. [Aplique os perfis de processamento a uma ](/help/assets/asset-microservices-configure-and-use.md#use-profiles) pasta para criar ativos com marca d&#39;água.
 
 ## Dicas e limitações {#tips-limitations-bestpractices}
 
@@ -42,6 +42,6 @@ Para configurar [!DNL Experience Manager] para itens de marca d&#39;água, siga 
 
 >[!MORELIKETHIS]
 >
->* [Visão geral](/help/assets/asset-microservices-overview.md)dos microserviços de ativos.
->* [Use microserviços de ativos com perfis](/help/assets/asset-microservices-configure-and-use.md)de processamento.
+>* [Visão geral](/help/assets/asset-microservices-overview.md) dos microserviços de ativos.
+>* [Use microserviços de ativos com perfis](/help/assets/asset-microservices-configure-and-use.md) de processamento.
 
