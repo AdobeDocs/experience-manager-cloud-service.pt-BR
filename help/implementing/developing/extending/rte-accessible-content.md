@@ -1,6 +1,6 @@
 ---
 title: Configure o RTE para criar páginas da Web e sites acessíveis.
-description: Saiba como configurar o Editor de Rich Text para criar sites acessíveis no [!DNL Adobe Experience Manager].
+description: Saiba como configurar o Editor de Rich Text para criar sites acessíveis em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
@@ -15,26 +15,26 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager] suporta recursos de acessibilidade padrão, como texto alternativo para imagens, e recursos adicionais que podem ser acessados ao criar conteúdo. Os autores de conteúdo usam esses recursos com componentes que usam o editor de Rich Text (RTE). Os recursos incluem a adição de texto alternativo, informações estruturais por meio de cabeçalhos e elementos de parágrafo, e assim por diante.
 
-Para obter uma compreensão das configurações típicas do RTE, consulte [configurar o RTE](rich-text-editor.md) e [configurar plug-ins RTE para uma funcionalidade](configure-rich-text-editor-plug-ins.md)específica.
+Para obter uma compreensão das configurações típicas do RTE, consulte [configurar o RTE](rich-text-editor.md) e [configurar plug-ins RTE para uma funcionalidade específica](configure-rich-text-editor-plug-ins.md).
 
-Use a configuração dos plug-ins RTE para configurar e personalizar os recursos relacionados à acessibilidade. Por exemplo, use `paraformat` para adicionar elementos semânticos de nível de bloco extra, incluindo a extensão do número de níveis de cabeçalho suportados além do básico `H1`, `H2` e `H3` fornecidos por padrão. A edição de rich text é possível usando muitos componentes da interface do usuário de criação. Os componentes mais usados são texto, imagem, download e assim por diante.
+Use a configuração dos plug-ins RTE para configurar e personalizar os recursos relacionados à acessibilidade. Por exemplo, use `paraformat` para adicionar elementos semânticos de nível de bloco extra, incluindo a extensão do número de níveis de cabeçalho suportados além dos `H1` básicos, `H2` e `H3` fornecidos por padrão. A edição de rich text é possível usando muitos componentes da interface do usuário de criação. Os componentes mais usados são texto, imagem, download e assim por diante.
 
-A funcionalidade RTE pode ser disponibilizada em muitos componentes. O componente principal é o `Text` componente.
+A funcionalidade RTE pode ser disponibilizada em muitos componentes. O componente principal é o componente `Text`.
 
-Para o `Text` componente em [!DNL Experience Manager], a seguinte captura de tela exibe o editor de rich text com uma gama de plug-ins ativados, incluindo `paraformat`:
+Para o componente `Text` em [!DNL Experience Manager], a seguinte captura de tela exibe o editor de rich text com uma gama de plug-ins ativados, incluindo `paraformat`:
 
 ![Componente de texto RTE em modo de tela cheia](assets/rte-toolbar-full-screen-mode.png)
 
 ## Configurar os recursos do plug-in {#configuring-the-plugin-features}
 
-Para obter instruções para configurar o RTE, consulte [configurar a página Editor](rich-text-editor.md) de Rich Text. O artigo abrange:
+Para obter instruções para configurar o RTE, consulte [configurar a página Editor de Rich Text](rich-text-editor.md). O artigo abrange:
 
 * [Plug-ins e seus recursos](rich-text-editor.md#aboutplugins)
 * [Locais de configuração](rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [Ativar um plug-in e configurar a propriedade features](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configurar outras funcionalidades do RTE](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Para ativar alguns ou todos os recursos de um plug-in, configure o plug-in dentro da `rtePlugins` subramificação apropriada no CRXDE Lite.
+Para ativar alguns ou todos os recursos de um plug-in, configure o plug-in dentro da sub-ramificação `rtePlugins` apropriada no CRXDE Lite.
 
 ![CRXDE Lite mostrando um exemplo de rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
@@ -42,20 +42,20 @@ Para ativar alguns ou todos os recursos de um plug-in, configure o plug-in dentr
 
 Novos formatos de bloco semântico são disponibilizados para seleção.
 
-1. Dependendo do RTE, determine e navegue até o local [da](rich-text-editor.md#understand-the-configuration-paths-and-locations)configuração.
-1. [Ative o campo](rich-text-editor.md) de seleção de parágrafos [ativando o plug-in](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-1. [Especifique os formatos que deseja que estejam disponíveis no campo](rich-text-editor.md)de seleção de parágrafos.
+1. Dependendo do RTE, determine e navegue até [o local de configuração](rich-text-editor.md#understand-the-configuration-paths-and-locations).
+1. [Ative o ](rich-text-editor.md) campo de seleção de parágrafos  [ativando o plug-in](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Especifique os formatos que deseja que estejam disponíveis no campo](rich-text-editor.md) de seleção de parágrafos.
 1. Os formatos de parágrafo ficam disponíveis para o autor do conteúdo nos campos de seleção no RTE.
 
 Com elementos estruturais disponíveis no RTE por meio das opções de formato de parágrafo, [!DNL Experience Manager] fornece uma boa base para o desenvolvimento de conteúdo acessível. Os autores de conteúdo não podem usar o RTE para formatar tamanho de fonte ou cores ou outros atributos relacionados, impedindo a criação de formatação em linha. Em vez disso, os autores podem selecionar os elementos estruturais apropriados, como cabeçalhos e usar os estilos globais escolhidos na opção Estilos para garantir a marcação limpa e opções maiores para usuários que navegam com suas próprias folhas de estilos e conteúdo estruturado corretamente.
 
-## Uso do recurso Edição de origem {#use-of-the-source-edit-feature}
+## Uso do recurso Editar fonte {#use-of-the-source-edit-feature}
 
-Em alguns casos, os autores de conteúdo acharão necessário examinar e ajustar o código fonte HTML criado usando o RTE. Por exemplo, um conteúdo criado no RTE pode exigir mais marcação para garantir a conformidade com o WCAG 2.0. Isso pode ser feito com a opção de edição [de](rich-text-editor.md#aboutplugins) origem do RTE. Você pode especificar o [`sourceedit` recurso no `misctools` plug-in](rich-text-editor.md#aboutplugins).
+Em alguns casos, os autores de conteúdo acharão necessário examinar e ajustar o código fonte HTML criado usando o RTE. Por exemplo, um conteúdo criado no RTE pode exigir mais marcação para garantir a conformidade com o WCAG 2.0. Isso pode ser feito com a opção [source edit](rich-text-editor.md#aboutplugins) do RTE. Você pode especificar o recurso [`sourceedit` no plug-in `misctools`](rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->Use o `sourceedit` recurso com cuidado. Quaisquer erros de digitação e os recursos não suportados podem apresentar problemas.
+>Use o recurso `sourceedit` com cuidado. Quaisquer erros de digitação e os recursos não suportados podem apresentar problemas.
 
 <!--
 TBD ENGREVIEW: Is this only applicable to Classic UI? 
