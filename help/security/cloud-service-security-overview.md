@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Security Overview for AEM as a Cloud Service {#cloud-service-security-overview}
+# Visão geral de segurança para AEM como Cloud Service {#cloud-service-security-overview}
 
 ## Introdução {#introduction}
 
