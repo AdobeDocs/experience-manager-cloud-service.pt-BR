@@ -65,7 +65,7 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 
 * Os usuários de programas de sandbox que estiverem exercendo a função de *Proprietário comercial* ou *Gerente de implantação* no Cloud Manager agora podem excluir seu conjunto de ambientes de produção e preparo na interface do Cloud Manager. A opção de exclusão agora está disponível no cartão Ambiente da página **Visão geral de programas**, bem como na página **Ambientes**. Selecionar a opção de exclusão no ambiente de produção também exclui o ambiente de preparo no mesmo conjunto, e vice-versa.
 
-   Consulte [Exclusão de um programa de sandbox](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obter mais detalhes.
+   Consulte [Exclusão de um programa de sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obter mais detalhes.
 
 * Há notas explicativas na página de aterrissagem para informar e instruir o usuário sobre a navegação básica.
 
