@@ -13,7 +13,7 @@ ht-degree: 6%
 # Manuseio da versão do projeto Maven {#maven-project-version-handling}
 
 
-## Understanding Maven Project Version Handling {#understanding-project-version}
+## Noções Gerais do Processamento de Versão do Projeto Maven {#understanding-project-version}
 
 Para implantações de estágio e de produção, o Cloud Manager gera uma versão única, que aumenta.
 
@@ -25,9 +25,9 @@ Se a versão original atender a esses critérios, a versão gerada será anexada
 
 | **Versão** | **versão em pom.xml** | **Comentário** |
 |---|---|---|
-| 1.0.0 | 1.0.0.2019_0926_121356_0000020490 | Versão original corretamente formada |
-| 1.0.0-SNAPSHOT | 2019.926.121356.0000020490 | Versão do instantâneo, substituída |
-| 1 | 2019.926.121356.0000020490 | Versão incompleta, substituída |
+| 1.0.0 | 1.0.0.2019_0926_121356_000020490 | Versão original corretamente formada |
+| 1.0.0-SNAPSHOT | 2019.926.121356.000020490 | Versão do instantâneo, substituída |
+| 1 | 2019.926.121356.000020490 | Versão incompleta, substituída |
 
 >[!NOTE]
 >
