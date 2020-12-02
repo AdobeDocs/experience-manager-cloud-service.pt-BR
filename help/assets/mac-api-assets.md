@@ -15,32 +15,32 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, execuções e comentários, juntamente com conteúdo estruturado usando Fragmentos [!DNL Experience Manager] de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API. Inclui [suporte para Fragmentos](/help/assets/content-fragments/assets-api-content-fragments.md)de conteúdo.
+A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, execuções e comentários, juntamente com conteúdo estruturado usando [!DNL Experience Manager] Fragmentos de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API. Inclui [suporte para Fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 Para acessar a API:
 
 1. Abra o documento de serviço da API em `https://[hostname]:[port]/api.json`.
-1. Siga o link de serviço Ativos à esquerda para `https://[hostname]:[server]/api/assets.json`.
+1. Siga o link de serviço Ativos que leva a `https://[hostname]:[server]/api/assets.json`.
 
 A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resposta para todos os tipos MIME. A resposta JSON é opcional e pode não estar disponível, por exemplo, para arquivos PDF. Confie no código de resposta para obter mais análises ou ações.
 
-Após o Tempo [!UICONTROL desligado], um ativo e suas representações não estão disponíveis por meio da interface da [!DNL Assets] Web e da API HTTP. A API retornará uma mensagem de erro 404 se o Tempo [!UICONTROL ligado] estiver no futuro ou Tempo [!UICONTROL desligado] estiver no passado.
+Depois do [!UICONTROL Tempo desligado], um ativo e suas representações não estão disponíveis por meio da interface da Web [!DNL Assets] e por meio da API HTTP. A API retornará uma mensagem de erro 404 se [!UICONTROL On Time] estiver no futuro ou [!UICONTROL Off Time] estiver no passado.
 
 >[!NOTE]
 >
->Todas as chamadas de API relacionadas ao upload ou atualização de ativos ou binários em geral (como execuções) são representadas para AEM como uma implantação de Cloud Service. Para fazer upload de binários, use APIs [de upload binário](developer-reference-material-apis.md#asset-upload-technical) direto.
+>Todas as chamadas de API relacionadas ao upload ou atualização de ativos ou binários em geral (como execuções) são representadas para AEM como uma implantação de Cloud Service. Para fazer upload de binários, use [APIs de upload binário direto](developer-reference-material-apis.md#asset-upload-technical).
 
 ## Fragmentos de conteúdo {#content-fragments}
 
-Um fragmento [de](/help/assets/content-fragments/content-fragments.md) conteúdo é um tipo especial de ativo. Pode ser usado para acessar dados estruturados, como textos, números, datas, entre outros. Como há várias diferenças nos `standard` ativos (como imagens ou documentos), algumas regras adicionais se aplicam ao manuseio de fragmentos de conteúdo.
+Um [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md) é um tipo especial de ativo. Pode ser usado para acessar dados estruturados, como textos, números, datas, entre outros. Como há várias diferenças nos ativos `standard` (como imagens ou documentos), algumas regras adicionais se aplicam ao manuseio de fragmentos de conteúdo.
 
-Para obter mais informações, consulte Suporte a fragmentos [de conteúdo na API](/help/assets/content-fragments/assets-api-content-fragments.md)HTTP dos ativos Experience Manager.
+Para obter mais informações, consulte [Suporte a fragmentos de conteúdo na API HTTP do Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Modelo de dados {#data-model}
 
 A API HTTP Assets expõe dois elementos principais, pastas e ativos (para ativos padrão).
 
-Além disso, expõe elementos mais detalhados para os modelos de dados personalizados que descrevem o conteúdo estruturado em Fragmentos de conteúdo. Consulte Modelos [de dados de fragmento de](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) conteúdo para obter mais informações.
+Além disso, expõe elementos mais detalhados para os modelos de dados personalizados que descrevem o conteúdo estruturado em Fragmentos de conteúdo. Consulte [Modelos de dados do fragmento de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obter mais informações.
 
 ### Pastas {#folders}
 
@@ -55,9 +55,9 @@ As pastas são como diretórios em sistemas de arquivos tradicionais. São conta
 
 >[!NOTE]
 >
->Algumas propriedades da pasta ou do ativo são mapeadas para um prefixo diferente. O `jcr` prefixo de `jcr:title`, `jcr:description`e `jcr:language` é substituído pelo `dc` prefixo. Daí no JSON retornado, `dc:title` e `dc:description` contém os valores de `jcr:title` e `jcr:description`, respectivamente.
+>Algumas propriedades da pasta ou do ativo são mapeadas para um prefixo diferente. O prefixo `jcr` de `jcr:title`, `jcr:description` e `jcr:language` são substituídos pelo prefixo `dc`. Assim, no JSON retornado, `dc:title` e `dc:description` contêm os valores de `jcr:title` e `jcr:description`, respectivamente.
 
-**As Pastas de links** expõem três links:
+**** LinksFolders expõe três links:
 
 * `self`: Vincule-se a si mesmo.
 * `parent`: Link para a pasta pai.
@@ -71,9 +71,9 @@ Em [!DNL Experience Manager] um ativo contém os seguintes elementos:
 * Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As representações adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou Adobe InDesign.
 * Comentários opcionais.
 
-Para obter informações sobre elementos em Fragmentos de conteúdo, consulte Suporte a fragmentos de [conteúdo na API](/help/assets/content-fragments/assets-api-content-fragments.md)HTTP dos ativos de Experience Manager.
+Para obter informações sobre elementos em Fragmentos de conteúdo, consulte [Suporte a fragmentos de conteúdo na API HTTP do Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
 
-Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
+Em [!DNL Experience Manager] uma pasta tem os seguintes componentes:
 
 * Entidades: Os filhos dos ativos são suas representações.
 * Propriedades.
@@ -97,7 +97,7 @@ A API HTTP Assets inclui os seguintes recursos:
 
 >[!NOTE]
 >
->Para facilitar a leitura, os seguintes exemplos omitem a notação cURL completa. Na verdade, a notação correlaciona-se com o [Resty](https://github.com/micha/resty) , que é um invólucro de scripts para `cURL`.
+>Para facilitar a leitura, os seguintes exemplos omitem a notação cURL completa. Na verdade, a notação correlaciona-se com [Resty](https://github.com/micha/resty), que é um invólucro de script para `cURL`.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -108,11 +108,11 @@ A API HTTP Assets inclui os seguintes recursos:
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 -->
 
-## Recuperar uma listagem de pastas {#retrieve-a-folder-listing}
+## Recuperar uma lista de pastas {#retrieve-a-folder-listing}
 
 Recupera uma representação Siren de uma pasta existente e de suas entidades filhas (subpastas ou ativos).
 
-**Solicitação**: `GET /api/assets/myFolder.json`
+**Solicitação**:  `GET /api/assets/myFolder.json`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -124,11 +124,11 @@ Recupera uma representação Siren de uma pasta existente e de suas entidades fi
 
 ## Crie uma pasta {#create-a-folder}
 
-Cria um novo `sling`: `OrderedFolder` no caminho determinado. Se um nome `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação SIREEN da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de query de URL.
+Cria um novo `sling`: `OrderedFolder` no caminho especificado. Se um `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação Siren da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de query de URL.
 
-Uma chamada de API falhará com um código de `500` resposta se o nó pai do caminho fornecido não existir. Uma chamada retornará um código de resposta `409` se a pasta já existir.
+Uma chamada de API falha com um código de resposta `500` se o nó pai do caminho fornecido não existir. Uma chamada retornará um código de resposta `409` se a pasta já existir.
 
-**Parâmetros**: `name` é o nome da pasta.
+**Parâmetros**:  `name` é o nome da pasta.
 
 **Solicitar**
 
@@ -144,17 +144,17 @@ Uma chamada de API falhará com um código de `500` resposta se o nó pai do cam
 
 ## Criar um ativo {#create-an-asset}
 
-Consulte upload [](developer-reference-material-apis.md) de ativos para obter informações sobre como criar um ativo usando APIs. A criação de um ativo usando a API HTTP está obsoleta.
+Consulte [upload de ativos](developer-reference-material-apis.md) para obter informações sobre como criar um ativo usando APIs. A criação de um ativo usando a API HTTP está obsoleta.
 
 ## Atualizar um binário de ativo {#update-asset-binary}
 
-Consulte upload [](developer-reference-material-apis.md) de ativos para obter informações sobre como atualizar binários de ativos usando APIs. A atualização de um binário de ativo usando a API HTTP está obsoleta.
+Consulte [upload de ativos](developer-reference-material-apis.md) para obter informações sobre como atualizar binários de ativos usando APIs. A atualização de um binário de ativo usando a API HTTP está obsoleta.
 
 ## Atualizar metadados de um ativo {#update-asset-metadata}
 
-Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer propriedade na `dc:` namespace, a API atualizará a mesma propriedade na `jcr` namespace. A API não sincroniza as propriedades nas duas namespaces.
+Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer propriedade na namespace `dc:`, a API atualizará a mesma propriedade na namespace `jcr`. A API não sincroniza as propriedades nas duas namespaces.
 
-**Solicitação**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Solicitação**:  `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -167,7 +167,7 @@ Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer prop
 
 Crie uma nova representação de ativo para um ativo. Se o nome do parâmetro de solicitação não for fornecido, o nome do arquivo será usado como nome de execução.
 
-**Parâmetros**: Os parâmetros são `name` para o nome da representação e `file` como uma referência de arquivo.
+**Parâmetros**: Os parâmetros são  `name` para o nome da representação e  `file` como uma referência de arquivo.
 
 **Solicitar**
 
@@ -185,7 +185,7 @@ Crie uma nova representação de ativo para um ativo. Se o nome do parâmetro de
 
 As atualizações substituem respectivamente uma representação de ativo pelos novos dados binários.
 
-**Solicitação**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
+**Solicitação**:  `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -198,9 +198,9 @@ As atualizações substituem respectivamente uma representação de ativo pelos 
 
 Cria um novo comentário de ativo.
 
-**Parâmetros**: Os parâmetros são `message` para o corpo da mensagem do comentário e `annotationData` para os dados de anotação no formato JSON.
+**Parâmetros**: Os parâmetros são  `message` para o corpo da mensagem do comentário e  `annotationData` para os dados de anotação no formato JSON.
 
-**Solicitação**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
+**Solicitação**:  `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -216,10 +216,10 @@ Copia uma pasta ou ativo disponível no caminho fornecido para um novo destino.
 **Cabeçalhos** de solicitação: Os parâmetros são:
 
 * `X-Destination` - um novo URI de destino dentro do escopo da solução de API para copiar o recurso.
-* `X-Depth` - quer `infinity` quer `0`. O uso `0` só copia o recurso e suas propriedades, e não seus filhos.
-* `X-Overwrite` - Use `F` para evitar a substituição de um ativo no destino existente.
+* `X-Depth` - quer  `infinity` quer  `0`. Usar `0` copia somente o recurso e suas propriedades, e não seus filhos.
+* `X-Overwrite` - Use  `F` para evitar a substituição de um ativo no destino existente.
 
-**Solicitação**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
+**Solicitação**:  `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
@@ -235,10 +235,10 @@ Move uma pasta ou um ativo no caminho fornecido para um novo destino.
 **Cabeçalhos** de solicitação: Os parâmetros são:
 
 * `X-Destination` - um novo URI de destino dentro do escopo da solução de API para copiar o recurso.
-* `X-Depth` - quer `infinity` quer `0`. O uso `0` só copia o recurso e suas propriedades, e não seus filhos.
-* `X-Overwrite` - Use `T` para forçar a exclusão de um recurso existente ou `F` para evitar a substituição de um recurso existente.
+* `X-Depth` - quer  `infinity` quer  `0`. Usar `0` copia somente o recurso e suas propriedades, e não seus filhos.
+* `X-Overwrite` - Use  `T` para forçar a exclusão de um recurso existente ou  `F` para evitar a substituição de um recurso existente.
 
-**Solicitação**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+**Solicitação**:  `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
