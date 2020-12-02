@@ -2,9 +2,9 @@
 title: Adicione seus ativos digitais a [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais a [!DNL Adobe Experience Manager] como a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -178,10 +178,6 @@ Para configurar a ferramenta, siga estas etapas:
    * [!UICONTROL Parar]: Encerre uma configuração ativa.
    * [!UICONTROL Status] do trabalho: Visualização do status da configuração quando ela é usada em um trabalho de importação em andamento ou usada para um trabalho concluído.
    * [!UICONTROL Ativos] de visualização: Visualização a pasta público alvo, se ela existir.
-
->[!NOTE]
->
->O upload em massa como parte da migração de conteúdo de outros sistemas ao configurar e implantar [!DNL Experience Manager] requer planejamento, consideração e escolha cuidadosa de ferramentas. Consulte o [guia de implantação](/help/implementing/deploying/overview.md) para obter orientação sobre as abordagens de migração de conteúdo.
 
 ## Fazer upload de ativos usando clientes desktop {#upload-assets-desktop-clients}
 
