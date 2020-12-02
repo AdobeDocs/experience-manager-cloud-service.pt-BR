@@ -63,7 +63,7 @@ Consulte [Estrutura de pacotes recomendada](https://docs.adobe.com/content/help/
 
 Existem algumas diretrizes de desenvolvimento adicionais que você precisa conhecer ao desenvolver no AEM as a Cloud Service. Para saber mais, consulte [Diretrizes de desenvolvimento do AEM as a Cloud Service](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/development-guidelines.translate.html).
 
-Na fase de Planejamento, você deve ter uma lista de áreas que precisam ser refatoradas para serem compatíveis com o Cloud Service. Você também deve rever as [Diretrizes de desenvolvimento](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/development-guidelines.translate.html) para obter mais detalhes sobre como refatorar e otimizar o código para migrar para o Cloud Service.
+Na fase de Planejamento, você deve ter uma lista de áreas que precisam ser refatoradas para serem compatíveis com o Cloud Service. Você também deve rever as [Diretrizes de desenvolvimento](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) para obter mais detalhes sobre como refatorar e otimizar o código para migrar para o Cloud Service.
 
 Para ajudar a acelerar algumas das tarefas de refatoração de código, você pode usar as seguintes ferramentas:
 
