@@ -15,8 +15,8 @@ ht-degree: 8%
 Ao criar uma página, é necessário selecionar um modelo. O modelo de página é usado como a base para a nova página. O modelo define a estrutura da página resultante, qualquer conteúdo inicial e os componentes que podem ser usados (propriedades de design). Isso tem várias vantagens:
 
 * Os Modelos de página permitem que autores especializados [criem e editem modelos](/help/sites-cloud/authoring/features/templates.md).
-   * Esses autores especializados são chamados de autores **modelo**
-   * Os autores do modelo devem ser membros do `template-authors` grupo.
+   * Esses autores especializados são chamados de **autores de modelo**
+   * Os autores de modelo devem ser membros do grupo `template-authors`.
 * Os Modelos de página retêm uma conexão dinâmica com quaisquer páginas criadas a partir deles. Isso garante que quaisquer alterações no modelo sejam refletidas nas próprias páginas.
 * Os Modelos de página tornam o componente de página mais genérico para que o componente de página principal possa ser usado sem personalização.
 
@@ -31,24 +31,24 @@ Este documento:
 
 >[!NOTE]
 >
->Este documento supõe que você já esteja familiarizado com a criação e edição de modelos. Consulte o documento de criação [Criando modelos](/help/sites-cloud/authoring/features/templates.md)de página, que detalha os recursos de modelos editáveis como expostos ao autor do modelo.
+>Este documento supõe que você já esteja familiarizado com a criação e edição de modelos. Consulte o documento de criação [Criação de modelos de página](/help/sites-cloud/authoring/features/templates.md), que detalha os recursos de modelos editáveis como expostos ao autor do modelo.
 
 >[!TIP]
 >
->[O tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md) da WKND detalha como usar os Modelos de página implementando um exemplo e é útil para entender como configurar um modelo em um novo projeto
+>[O ](/help/implementing/developing/introduction/develop-wknd-tutorial.md) tutorial da WKND aborda detalhadamente como usar os Modelos de página implementando um exemplo e é bastante útil para entender como configurar um modelo em um novo projeto
 
-## Creating a New Template {#creating-a-new-template}
+## Criando um Novo Modelo {#creating-a-new-template}
 
-A criação de Modelos de página é feita principalmente com o console de [modelo e o editor](/help/sites-cloud/authoring/features/templates.md) de modelo por um autor de modelo. Esta seção apresenta uma visão geral deste processo e apresenta uma descrição do que ocorre a nível técnico.
+A criação de Modelos de página é feita principalmente com o console [modelo e o editor](/help/sites-cloud/authoring/features/templates.md) de modelo por um autor de modelo. Esta seção apresenta uma visão geral deste processo e apresenta uma descrição do que ocorre a nível técnico.
 
 Ao criar um novo modelo editável:
 
-1. Crie uma [pasta para os modelos](#template-folders). Isso não é obrigatório, mas é uma prática recomendada.
-1. Selecione um tipo [de](#template-type)modelo. Isso é copiado para criar a definição [do](#template-definitions)modelo.
+1. Crie uma pasta [para os modelos](#template-folders). Isso não é obrigatório, mas é uma prática recomendada.
+1. Selecione um tipo de modelo [a1/>. ](#template-type) Isso é copiado para criar a definição do modelo [a1/>.](#template-definitions)
 
    >[!NOTE]
    >
-   >Uma seleção de tipos de modelo é fornecida prontamente. Você também pode [criar seus próprios tipos](#creating-template-types) de modelo específicos do site, se necessário.
+   >Uma seleção de tipos de modelo é fornecida prontamente. Você também pode [criar seus próprios tipos de modelo específicos do site](#creating-template-types), se necessário.
 
 1. Configure a estrutura, as políticas de conteúdo, o conteúdo inicial e o layout do novo modelo.
 
@@ -59,7 +59,7 @@ Ao criar um novo modelo editável:
    * Se desejar que os autores da página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.
 
-   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criação de modelos](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author)de página.
+   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criação de modelos de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
    Para obter detalhes técnicos da estrutura, consulte [Estrutura](#structure) neste documento.
 
@@ -70,25 +70,25 @@ Ao criar um novo modelo editável:
       * Por exemplo, os componentes disponíveis ou as dimensões mínimas/máximas.
    * Eles são aplicáveis ao modelo (e às páginas criadas com o modelo).
 
-   Para obter detalhes sobre como um autor de modelo define políticas, consulte [Criação de modelos](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author)de página.
+   Para obter detalhes sobre como um autor de modelo define políticas, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   Para obter detalhes técnicos das políticas, consulte Políticas [de](#content-policies) conteúdo neste documento.
+   Para obter detalhes técnicos das políticas, consulte [Políticas de conteúdo](#content-policies) neste documento.
 
    **Conteúdo inicial**
 
    * O Conteúdo inicial define o conteúdo que será exibido quando uma página for criada pela primeira vez com base no modelo.
    * O conteúdo inicial pode ser editado pelos autores da página.
 
-   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criação de modelos](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author)de página.
+   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criação de modelos de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author).
 
-   Para obter detalhes técnicos sobre o conteúdo inicial, consulte Conteúdo [](#initial-content) inicial neste documento.
+   Para obter detalhes técnicos sobre o conteúdo inicial, consulte [Conteúdo inicial](#initial-content) neste documento.
 
    **Layout**
 
    * É possível definir o layout do modelo para um intervalo de dispositivos.
    * O Layout responsivo para modelos funciona como na criação de página.
 
-   Para obter detalhes sobre como um autor de modelo define o layout do modelo, consulte [Criação de modelos](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author)de página.
+   Para obter detalhes sobre como um autor de modelo define o layout do modelo, consulte [Criação de modelos de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
 
    Para obter detalhes técnicos sobre o layout do modelo, consulte [Layout](#layout) neste documento.
 
@@ -97,9 +97,9 @@ Ao criar um novo modelo editável:
    * Um modelo pode ser ativado ou desativado para torná-lo disponível ou indisponível para autores de página.
    * Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramificações de página.
 
-   Para obter detalhes sobre como um autor de modelo ativa um modelo, consulte [Criação de modelos](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author)de página.
+   Para obter detalhes sobre como um autor de modelo ativa um modelo, consulte [Criação de modelos de página](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Para obter detalhes técnicos sobre como habilitar um modelo, consulte [Habilitar e permitir um modelo para](#enabling-and-allowing-a-template-for-use)uso neste documento
+   Para obter detalhes técnicos sobre como ativar um modelo, consulte [Ativar e Permitir um Modelo para Us](#enabling-and-allowing-a-template-for-use)e neste documento
 
 1. Use-o para criar páginas de conteúdo.
 
@@ -108,21 +108,21 @@ Ao criar um novo modelo editável:
 
    Para obter detalhes sobre como um autor de página usa modelos para criar uma página, consulte [Criação e organização de páginas](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
 
-   Para obter detalhes técnicos sobre como criar páginas com modelos editáveis, consulte Páginas [de conteúdo](#resultant-content-pages) resultante neste documento.
+   Para obter detalhes técnicos sobre como criar páginas com modelos editáveis, consulte [Páginas de conteúdo resultante](#resultant-content-pages) neste documento.
 
 >[!NOTE]
 >
->A biblioteca do cliente do editor assume a presença da `cq.shared` namespace nas páginas de conteúdo e, se ela não estiver presente, o erro do JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` resultará.
+>A biblioteca do cliente do editor assume a presença da namespace `cq.shared` nas páginas de conteúdo e, se ela não estiver presente, o erro do JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` resultará.
 >
->Todas as páginas de conteúdo de amostra contêm `cq.shared`, portanto, qualquer conteúdo baseado nelas inclui automaticamente `cq.shared`. No entanto, se você decidir criar suas próprias páginas de conteúdo do zero sem baseá-las no conteúdo de amostra, deverá incluir a `cq.shared` namespace.
+>Todas as páginas de conteúdo de amostra contêm `cq.shared`, portanto, qualquer conteúdo baseado nelas inclui automaticamente `cq.shared`. No entanto, se você decidir criar suas próprias páginas de conteúdo do zero sem baseá-las no conteúdo de amostra, deverá incluir a namespace `cq.shared`.
 >
->Consulte [Uso de bibliotecas](/help/implementing/developing/introduction/clientlibs.md) do lado do cliente para obter mais informações.
+>Consulte [Usando bibliotecas do lado do cliente](/help/implementing/developing/introduction/clientlibs.md) para obter mais informações.
 
 >[!CAUTION]
 >
 >Nunca insira qualquer informação que precise ser internacionalizada em um modelo.
 
-## Pastas de modelo {#template-folders}
+## Pastas de Modelo {#template-folders}
 
 Para organizar seus modelos, você pode usar as seguintes pastas:
 
@@ -131,17 +131,17 @@ Para organizar seus modelos, você pode usar as seguintes pastas:
 
 >[!NOTE]
 >
->Mesmo que você possa aninhar suas pastas, quando o usuário as visualização no console **Modelos** , elas são apresentadas como uma estrutura simples.
+>Mesmo que você possa aninhar suas pastas, quando o usuário as visualização no console **Modelos**, elas são apresentadas como uma estrutura simples.
 
 Em uma instância padrão do AEM, a pasta `global` já existe no console modelo. Isso mantém modelos padrão e atua como um fallback se nenhuma política e/ou tipo de modelo for localizado na pasta atual. Você pode adicionar seus modelos padrão a esta pasta ou criar uma nova pasta (recomendado).
 
 >[!NOTE]
 >
->É prática recomendada criar uma nova pasta para manter seus modelos personalizados e não usar a `global` pasta.
+>É prática recomendada criar uma nova pasta para manter seus modelos personalizados e não usar a pasta `global`.
 
 >[!CAUTION]
 >
->As pastas devem ser criadas por um usuário com `admin` direitos.
+>As pastas devem ser criadas por um usuário com direitos `admin`.
 
 Os tipos de modelo e as políticas são herdados em todas as pastas de acordo com a seguinte ordem de precedência:
 
@@ -151,14 +151,14 @@ Os tipos de modelo e as políticas são herdados em todas as pastas de acordo co
 1. `/apps`
 1. `/libs`
 
-Uma lista de todas as entradas permitidas é criada. Se qualquer configuração se sobrepuser ( `path`/ `label`), somente a instância mais próxima à pasta atual será apresentada ao usuário.
+Uma lista de todas as entradas permitidas é criada. Se qualquer configuração se sobrepuser ( `path`/ `label`), somente a instância mais próxima da pasta atual será apresentada ao usuário.
 
 Para criar uma nova pasta, você pode:
 
 * Programaticamente ou com CRXDE Lite
-* Usando o navegador [de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+* Usando o [Navegador de Configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
-## Uso do CRXDE Lite {#using-crxde-lite}
+## Usando CRXDE Lite {#using-crxde-lite}
 
 1. Uma nova pasta (em /conf) pode ser criada para sua instância de forma programática ou com CRXDE Lite.
 
@@ -179,22 +179,22 @@ Para criar uma nova pasta, você pode:
 
    * Nome: `jcr:title`
    * Tipo: `String`
-   * Valor: O título (para a pasta) que você deseja exibir no console **Modelos** .
+   * Valor: O título (para a pasta) que você deseja exibir no console **Modelos**.
 
-1. Além das permissões e privilégios de criação padrão (por exemplo, `content-authors`), agora é necessário atribuir grupos e definir os direitos de acesso (ACLs) necessários para que seus autores possam criar modelos na nova pasta.
+1. Além das permissões e privilégios de criação padrão (por exemplo, `content-authors`) agora é necessário atribuir grupos e definir os direitos de acesso (ACLs) necessários para que seus autores possam criar modelos na nova pasta.
 
-   O `template-authors` grupo é o grupo padrão que precisa ser atribuído. Consulte a seção [ACLs e grupos](#acls-and-groups) para obter detalhes.
+   O grupo `template-authors` é o grupo padrão que precisa ser atribuído. Consulte a seção [ACLs e grupos](#acls-and-groups) para obter detalhes.
 
    <!--See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.-->
 
 ### Usando o navegador de configuração {#using-the-configuration-browser}
 
-1. Vá para Navegação **** global -> **Ferramentas** > Navegador [**de** configuração.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+1. Vá para **Navegação Global** -> **Ferramentas** > [**Navegador de Configuração**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
-   As pastas existentes são listadas à esquerda, incluindo a `global` pasta.
+   As pastas existentes são listadas à esquerda, incluindo a pasta `global`.
 
 1. Clique em **Criar**.
-1. Na caixa de diálogo **Criar configuração** , os seguintes campos precisam ser configurados:
+1. Na caixa de diálogo **Criar configuração**, os seguintes campos precisam ser configurados:
 
    * **Título**: Fornecer um título para a pasta de configuração
    * **Modelos** editáveis: Clique para permitir modelos editáveis nesta pasta
@@ -203,21 +203,21 @@ Para criar uma nova pasta, você pode:
 
 >[!NOTE]
 >
->No Navegador [de configuração,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) você pode editar a pasta global e ativar a opção Modelos **** editáveis se desejar criar modelos dentro dessa pasta, no entanto, essa não é a prática recomendada.
+>No [Navegador de configuração,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) você pode editar a pasta global e ativar a opção **Modelos editáveis** se desejar criar modelos dentro dessa pasta, no entanto, essa não é a prática recomendada.
 
 ### ACLs e grupos {#acls-and-groups}
 
 Depois que as pastas de modelo são criadas (via CRXDE ou com o Navegador de configuração), as ACLs devem ser definidas para os grupos apropriados para as pastas de modelo para garantir a segurança adequada.
 
-As pastas de modelo para o tutorial [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKND podem ser usadas como exemplo.
+As pastas de modelo para o tutorial [WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) podem ser usadas como exemplo.
 
-#### O Grupo de autores-modelo {#the-template-authors-group}
+#### O Grupo de autores de modelo {#the-template-authors-group}
 
-O `template-authors` grupo é o grupo usado para gerenciar o acesso aos modelos e vem como padrão com AEM, mas está vazio. Os usuários devem ser adicionados ao grupo para o projeto/site.
+O grupo `template-authors` é o grupo usado para gerenciar o acesso aos modelos e vem como padrão com AEM, mas está vazio. Os usuários devem ser adicionados ao grupo para o projeto/site.
 
 >[!CAUTION]
 >
->O `template-authors` grupo é apenas para usuários que precisam criar novos modelos.
+>O grupo `template-authors` é somente para usuários que precisam criar novos modelos.
 >
 >A edição de modelos é muito poderosa e, se não for feita corretamente, os modelos existentes podem ser quebrados. Portanto, essa função deve ser focada e incluir apenas usuários qualificados.
 
@@ -235,7 +235,7 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelos
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
    <td>Autores do modelo<br /> </td>
    <td>ler, escrever, replicar</td>
-   <td>Criadores de modelos que criam, leem, atualizam, excluem e replicam modelos em um <code>/conf</code> espaço específico do site</td>
+   <td>Criadores de modelos que criam, leem, atualizam, excluem e replicam modelos em espaço <code>/conf</code> específico do site</td>
   </tr>
   <tr>
    <td>Usuário da Web anônimo</td>
@@ -251,7 +251,7 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelos
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td>
    <td><code>Template Author</code></td>
    <td>ler, escrever, replicar</td>
-   <td>Criadores de modelos que criam, leem, atualizam, excluem e replicam modelos em um <code>/conf</code> espaço específico do site</td>
+   <td>Criadores de modelos que criam, leem, atualizam, excluem e replicam modelos em espaço <code>/conf</code> específico do site</td>
   </tr>
   <tr>
    <td>Usuário da Web anônimo</td>
@@ -277,9 +277,9 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelos
  </tbody>
 </table>
 
-Este `template-authors` grupo padrão cobre apenas as configurações do projeto, onde todos os `template-authors` membros têm permissão para acessar e criar todos os modelos. Para configurações mais complexas, onde vários grupos de autores de modelo são necessários para separar o acesso a modelos, mais grupos de autores de modelo personalizados devem ser criados. No entanto, as permissões para os grupos de autores de modelo ainda seriam as mesmas.
+Este grupo padrão `template-authors` abrange apenas as configurações do projeto, onde todos os membros `template-authors` têm permissão para acessar e criar todos os modelos. Para configurações mais complexas, onde vários grupos de autores de modelo são necessários para separar o acesso a modelos, mais grupos de autores de modelo personalizados devem ser criados. No entanto, as permissões para os grupos de autores de modelo ainda seriam as mesmas.
 
-## Template Type {#template-type}
+## Tipo de Modelo {#template-type}
 
 Ao criar um novo modelo, é necessário especificar um tipo de modelo:
 
@@ -306,13 +306,13 @@ Os tipos de modelo predefinidos são armazenados em:
 
 >[!CAUTION]
 >
->Você não deve alterar nada no `/libs` caminho. Isso ocorre porque o conteúdo do `/libs` pode ser substituído a qualquer momento por uma atualização para AEM.
+>Você não deve alterar nada no caminho `/libs`. Isso ocorre porque o conteúdo de `/libs` pode ser substituído a qualquer momento por uma atualização para AEM.
 
 Os tipos de modelo específicos do site devem ser armazenados no local comparável de:
 
 * `/apps/settings/wcm/template-types`
 
-As definições para seus tipos de modelos personalizados devem ser armazenadas em pastas definidas pelo usuário (recomendado) ou, alternativamente, em `global`. Por exemplo:
+As definições para seus tipos de modelos personalizados devem ser armazenadas em pastas definidas pelo usuário (recomendado) ou alternativamente em `global`. Por exemplo:
 
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/template-types`
 * `/conf/<my-folder>/settings/wcm/template-types`
@@ -347,10 +347,10 @@ When creating a new editable template, the value is copied from the template typ
 
 Se você tiver criado um modelo que possa servir como a base de outros modelos, poderá copiar esse modelo como um tipo de modelo.
 
-1. Crie um modelo como faria com qualquer Modelo de página [como documentado aqui](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), que servirá de base para o seu tipo de modelo.
-1. Usando o CRXDE Lite, copie o modelo recém-criado do `templates` nó para o `template-types` nó na pasta [](#template-folders)template.
-1. Exclua o modelo do `templates` nó na pasta [](#template-folders)de modelo.
-1. Na cópia do modelo que está sob o `template-types` nó, exclua todas as `cq:template` propriedades e `cq:templateType``jcr:content` .
+1. Crie um modelo como faria com qualquer Modelo de página [conforme documentado aqui](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), que servirá de base para o seu tipo de modelo.
+1. Usando o CRXDE Lite, copie o modelo recém-criado do nó `templates` para o nó `template-types` na pasta de modelo [](#template-folders).
+1. Exclua o modelo do nó `templates` na pasta de modelo [](#template-folders).
+1. Na cópia do modelo que está sob o nó `template-types`, exclua todas as propriedades `cq:template` e `cq:templateType` `jcr:content`.
 
 Você também pode desenvolver seu próprio tipo de modelo usando um modelo editável de exemplo como base, disponível no GitHub.
 
@@ -359,11 +359,11 @@ CÓDIGO NO GITHUB
 Você pode encontrar o código desta página no GitHub
 
 * [Abrir um projeto aem-sites-example-custom-template-type no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
-* Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)
+* Baixe o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)
 
-## Definições de modelo {#template-definitions}
+## Definições de Modelo {#template-definitions}
 
-As definições para modelos editáveis são pastas [armazenadas definidas pelo](#template-folders) usuário (recomendado) ou, alternativamente, em `global`. Por exemplo:
+As definições para modelos editáveis são armazenadas [pastas definidas pelo usuário](#template-folders) (recomendado) ou alternativamente em `global`. Por exemplo:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
@@ -418,7 +418,7 @@ Este nó contém propriedades para o modelo:
 * **Nome**: `jcr:title`
 * **Nome**: `status`
    * ``**Tipo**: `String`
-   * **Valor**: `draft`, `enabled` ou `disabled`
+   * **Valor**:  `draft`,  `enabled` ou  `disabled`
 
 ### Estrutura {#structure}
 
@@ -426,38 +426,38 @@ Define a estrutura da página resultante:
 
 * É unido ao conteúdo inicial ( `/initial`) ao criar uma nova página.
 * As alterações feitas na estrutura serão refletidas em qualquer página criada com o modelo.
-* O nó `root` ( `structure/jcr:content/root`) define a lista dos componentes que estarão disponíveis na página resultante.
+* O nó `root` ( `structure/jcr:content/root`) define a lista de componentes que estarão disponíveis na página resultante.
    * Os componentes definidos na estrutura do modelo não podem ser movidos para nenhuma página resultante ou excluídos dela.
-   * Quando um componente é desbloqueado, a `editable` propriedade é definida como `true`.
-   * Quando um componente que já contém conteúdo for desbloqueado, esse conteúdo será movido para a `initial` ramificação.
+   * Depois que um componente é desbloqueado, a propriedade `editable` é definida como `true`.
+   * Quando um componente que já contém conteúdo for desbloqueado, esse conteúdo será movido para a ramificação `initial`.
 
-* O `cq:responsive` nó contém definições para o layout responsivo.
+* O nó `cq:responsive` contém definições para o layout responsivo.
 
 ### Conteúdo inicial {#initial-content}
 
 Define o conteúdo inicial que uma nova página terá na criação:
 
-* Contém um `jcr:content` nó que é copiado para qualquer página nova.
+* Contém um nó `jcr:content` que é copiado para qualquer nova página.
 * É unida à estrutura ( `/structure`) ao criar uma nova página.
 * Nenhuma página existente será atualizada se o conteúdo inicial for alterado após a criação.
-* O `root` nó contém uma lista de componentes para definir o que estará disponível na página resultante.
+* O nó `root` contém uma lista de componentes para definir o que estará disponível na página resultante.
 * Se o conteúdo for adicionado a um componente no modo de estrutura e esse componente for desbloqueado posteriormente (ou vice-versa), esse conteúdo será usado como conteúdo inicial.
 
 ### Layout {#layout}
 
-Ao [editar um modelo, você pode definir o layout](/help/sites-cloud/authoring/features/templates.md), isso usa o layout [responsivo](/help/sites-cloud/authoring/features/responsive-layout.md)padrão.
+Quando [editar um modelo você pode definir o layout](/help/sites-cloud/authoring/features/templates.md), isso usa [layout responsivo padrão](/help/sites-cloud/authoring/features/responsive-layout.md).
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
-### Content Policies {#content-policies}
+### Políticas de conteúdo {#content-policies}
 
 As políticas de conteúdo definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínimas/máximas. Eles são aplicáveis ao modelo (e às páginas criadas com o modelo). As políticas de conteúdo podem ser criadas e selecionadas no editor de modelos.
 
-* A propriedade `cq:policy`, no `root` nó
+* A propriedade `cq:policy`, no nó `root`
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Fornece uma referência relativa à política de conteúdo para o sistema de parágrafo da página.
 
-* A propriedade `cq:policy`, nos nós explícitos do componente em `root`, fornece links para as políticas dos componentes individuais.
+* A propriedade `cq:policy`, nos nós explícitos de componentes em `root`, fornece links para as políticas dos componentes individuais.
 
 * As definições de política reais são armazenadas em:
    `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
@@ -468,17 +468,17 @@ Fornece uma referência relativa à política de conteúdo para o sistema de par
 
 ### Políticas da página {#page-policies}
 
-As políticas de página permitem que você defina a política [de](#content-policies) conteúdo para a página (parsys principal), no modelo ou nas páginas resultantes.
+As políticas de página permitem que você defina a [política de conteúdo](#content-policies) para a página (parsys principal), no modelo ou nas páginas resultantes.
 
-### Habilitar e permitir um modelo para uso {#enabling-and-allowing-a-template-for-use}
+### Ativando e permitindo um modelo para uso {#enabling-and-allowing-a-template-for-use}
 
 1. **Ativar o modelo**
 
    Antes que um modelo possa ser usado, ele deve ser habilitado por:
 
-   * [Habilitando o modelo](/help/sites-cloud/authoring/features/templates.md) do console **Modelos** .
+   * [Habilitando o ](/help/sites-cloud/authoring/features/templates.md) modelo do console  **** Modelos.
 
-   * Definindo a propriedade status no `jcr:content` nó.
+   * Definindo a propriedade status no nó `jcr:content`.
 
       * Por exemplo, em:
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
@@ -491,7 +491,7 @@ As políticas de página permitem que você defina a política [de](#content-pol
 
 1. **Modelos permitidos**
 
-   * [Defina os caminhos de modelo permitidos nas Propriedades **da**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) página da página ou da página raiz apropriada de uma subramificação.
+   * [Defina os caminhos de modelo permitidos nas Propriedades da  **página**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) da página ou da página raiz apropriada de uma subramificação.
    * Defina a propriedade:
       `cq:allowedTemplates`
 Na 
@@ -500,13 +500,13 @@ Na
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-## Páginas de conteúdo resultantes {#resultant-content-pages}
+## Páginas de conteúdo resultante {#resultant-content-pages}
 
 Páginas criadas a partir de modelos editáveis:
 
 * São criados com uma subárvore que é unida de `structure` e `initial` no modelo
 
-* Ter referências às informações contidas no modelo e no tipo de modelo. Isso é obtido com um `jcr:content` nó com as propriedades:
+* Ter referências às informações contidas no modelo e no tipo de modelo. Isso é obtido com um nó `jcr:content` com as propriedades:
 
    * `cq:template` - Fornece a referência dinâmica ao modelo real; permite que as alterações no modelo sejam refletidas nas páginas reais.
 
@@ -516,50 +516,50 @@ Páginas criadas a partir de modelos editáveis:
 
 O diagrama acima mostra como os modelos, o conteúdo e os componentes se interrelacionam:
 
-* Controller - `/content/<my-site>/<my-page>` - a página resultante que faz referência ao modelo. O conteúdo controla todo o processo. De acordo com as definições, acessa o modelo e os componentes apropriados.
-* Configuração - `/conf/<my-folder>/settings/wcm/templates/<my-template>` - O [modelo e as políticas](#template-definitions) de conteúdo relacionadas definem a configuração da página.
-* Modelo - pacotes OSGi - Os pacotes [OSGI](/help/implementing/deploying/configuring-osgi.md) implementam a funcionalidade.
+* Controller - `/content/<my-site>/<my-page>` - A página resultante que faz referência ao modelo. O conteúdo controla todo o processo. De acordo com as definições, acessa o modelo e os componentes apropriados.
+* Configuração - `/conf/<my-folder>/settings/wcm/templates/<my-template>` - O modelo [e as políticas de conteúdo relacionadas](#template-definitions) definem a configuração da página.
+* Modelo - pacotes OSGi - Os [pacotes OSGI](/help/implementing/deploying/configuring-osgi.md) implementam a funcionalidade.
 * Visualização - `/apps/<my-site>/components` - nos ambientes de autor e publicação, o conteúdo é renderizado pelos componentes.
 
 Ao renderizar uma página:
 
 * **Modelos**:
 
-   * A `cq:template` propriedade de seu `jcr:content` nó será referenciada para acessar o modelo que corresponde a essa página.
+   * A propriedade `cq:template` do nó `jcr:content` será referenciada para acessar o modelo que corresponde a essa página.
 
 * **Componentes**:
 
-   * O componente de página mesclará a `structure/jcr:content` árvore do modelo com a `jcr:content` árvore da página.
+   * O componente de página unirá a árvore `structure/jcr:content` do modelo à árvore `jcr:content` da página.
       * O componente de página permitirá que o autor edite apenas os nós da estrutura do modelo que foram sinalizados como editáveis (bem como quaisquer filhos).
-      * Ao renderizar um componente em uma página, o caminho relativo desse componente será retirado do `jcr:content` nó; o mesmo caminho sob o `policies/jcr:content` nó do modelo será então pesquisado.
-         * A `cq:policy` propriedade desse nó aponta para a política de conteúdo real (isto é, ela contém a configuração de design desse componente).
+      * Ao renderizar um componente em uma página, o caminho relativo desse componente será retirado do nó `jcr:content`; o mesmo caminho sob o nó `policies/jcr:content` do modelo será então pesquisado.
+         * A propriedade `cq:policy` desse nó aponta para a política de conteúdo real (isto é, ela contém a configuração de design desse componente).
             * Isso permite que você tenha vários modelos que reusam as mesmas configurações de política de conteúdo.
 
 ### Disponibilidade do modelo {#template-availability}
 
 Ao criar uma nova página na interface do administrador do site, a lista de modelos disponíveis depende do local da nova página e das restrições de posicionamento especificadas em cada modelo.
 
-As propriedades a seguir determinam se um modelo `T` pode ser usado para uma nova página ser colocada como um filho da página `P`. Cada uma dessas propriedades é uma string de vários valores contendo zero ou mais Expressões Regulares usadas para correspondência com caminhos:
+As propriedades a seguir determinam se um modelo `T` tem permissão para ser usado para uma nova página ser colocada como um filho da página `P`. Cada uma dessas propriedades é uma string de vários valores contendo zero ou mais Expressões Regulares usadas para correspondência com caminhos:
 
-* A `cq:allowedTemplates` propriedade do `jcr:content` subnó de `P` ou um ancestral de `P`.
+* A propriedade `cq:allowedTemplates` do subnó `jcr:content` de `P` ou um ancestral de `P`.
 
-* A `allowedPaths` propriedade de `T`.
+* A propriedade `allowedPaths` de `T`.
 
-* A `allowedParents` propriedade de `T`.
+* A propriedade `allowedParents` de `T`.
 
-* A `allowedChildren` propriedade do modelo de `P`.
+* A propriedade `allowedChildren` do modelo de `P`.
 
 A avaliação funciona do seguinte modo:
 
-* A primeira propriedade não vazia encontrada ao aumentar a hierarquia da página que começa com `cq:allowedTemplates` corresponde ao caminho de `P` `T`. Se nenhum dos valores corresponder, `T` será rejeitado.
+* A primeira propriedade `cq:allowedTemplates` não vazia encontrada ao ascender à hierarquia de páginas começando com `P` é comparada com o caminho de `T`. Se nenhum dos valores corresponder, `T` será rejeitado.
 
-* Se `T` tiver uma `allowedPaths` propriedade não vazia, mas nenhum dos valores corresponder ao caminho de `P`, `T` será rejeitado.
+* Se `T` tiver uma propriedade `allowedPaths` não vazia, mas nenhum dos valores corresponder ao caminho de `P`, `T` será rejeitado.
 
-* Se ambas as propriedades acima estiverem vazias ou inexistentes, `T` será rejeitado, a menos que pertença ao mesmo aplicativo `P`. `T` pertence ao mesmo aplicativo como `P` se e somente se o nome do segundo nível do caminho `T` for o mesmo do nome do segundo nível do caminho `P`. Por exemplo, o modelo `/apps/geometrixx/templates/foo` pertence ao mesmo aplicativo que a página `/content/geometrixx`.
+* Se ambas as propriedades acima estiverem vazias ou inexistentes, `T` será rejeitado, a menos que pertença ao mesmo aplicativo que `P`. `T` pertence ao mesmo aplicativo como  `P` se e somente se o nome do segundo nível do caminho  `T` for igual ao nome do segundo nível do caminho  `P`. Por exemplo, o modelo `/apps/geometrixx/templates/foo` pertence ao mesmo aplicativo que a página `/content/geometrixx`.
 
-* Se `T` tiver uma `allowedParents` propriedade não vazia, mas nenhum dos valores corresponder ao caminho de `P`, `T` será rejeitado.
+* Se `T` tiver uma propriedade `allowedParents` não vazia, mas nenhum dos valores corresponder ao caminho de `P`, `T` será rejeitado.
 
-* Se o modelo de `P` tiver uma `allowedChildren` propriedade não vazia, mas nenhum dos valores corresponder ao caminho de `T`, `T` será rejeitado.
+* Se o modelo de `P` tiver uma propriedade `allowedChildren` não vazia, mas nenhum dos valores corresponder ao caminho de `T`, `T` será rejeitado.
 
 * Em todos os outros casos, `T` é permitido.
 
@@ -573,22 +573,22 @@ O diagrama a seguir descreve o processo de avaliação do modelo:
 >
 >Portanto, o Adobe recomenda que você start de forma simples, definindo:
 >
->* somente a `cq:allowedTemplates` propriedade
+>* somente a propriedade `cq:allowedTemplates`
    >
    >
 * somente na raiz do site
 >
 >
-Para ver um exemplo, consulte o conteúdo do tutorial [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKND: `/content/wknd/jcr:content`
+Para ver um exemplo, consulte o tutorial [WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) conteúdo: `/content/wknd/jcr:content`
 >
->As propriedades `allowedPaths`, `allowedParents`e `allowedChildren` também podem ser colocadas nos modelos para definir regras mais sofisticadas. No entanto, quando possível, é *muito* mais simples definir outras `cq:allowedTemplates` propriedades em subseções do site se houver necessidade de restringir ainda mais os modelos permitidos.
+>As propriedades `allowedPaths`, `allowedParents` e `allowedChildren` também podem ser colocadas nos modelos para definir regras mais sofisticadas. No entanto, quando possível, é *muito* mais simples definir outras propriedades `cq:allowedTemplates` nas subseções do site, caso haja necessidade de restringir ainda mais os modelos permitidos.
 >
->Uma vantagem adicional é que as `cq:allowedTemplates` propriedades podem ser atualizadas por um autor na guia **Avançado** das Propriedades **da** página. As outras propriedades do modelo não podem ser atualizadas usando a interface do usuário (padrão), portanto, seria necessário um desenvolvedor para manter as regras e uma implantação de código para cada alteração.
+>Uma vantagem adicional é que as propriedades `cq:allowedTemplates` podem ser atualizadas por um autor na guia **Avançado** das **Propriedades da página**. As outras propriedades do modelo não podem ser atualizadas usando a interface do usuário (padrão), portanto, seria necessário um desenvolvedor para manter as regras e uma implantação de código para cada alteração.
 
 #### Limitação de modelos usados em páginas secundárias {#limiting-templates-used-in-child-pages}
 
-Para limitar quais modelos podem ser usados para criar páginas secundárias em uma determinada página, use a `cq:allowedTemplates` propriedade do nó `jcr:content` da página para especificar a lista de modelos a serem permitidos como páginas secundárias. Cada valor na lista deve ser um caminho absoluto para um modelo para uma página secundária permitida, por exemplo `/apps/wknd/templates/page-content`.
+Para limitar quais modelos podem ser usados para criar páginas secundárias em uma determinada página, use a propriedade `cq:allowedTemplates` do nó `jcr:content` da página para especificar a lista de modelos a serem permitidos como páginas secundárias. Cada valor na lista deve ser um caminho absoluto para um modelo para uma página secundária permitida, por exemplo `/apps/wknd/templates/page-content`.
 
-Você pode usar a `cq:allowedTemplates` propriedade no `jcr:content` nó do modelo para aplicar essa configuração a todas as páginas recém-criadas que usam esse modelo.
+Você pode usar a propriedade `cq:allowedTemplates` no nó `jcr:content` do modelo para aplicar essa configuração a todas as páginas recém-criadas que usam esse modelo.
 
-Se desejar adicionar mais restrições, por exemplo, em relação à hierarquia do modelo, você pode usar as `allowedParents/allowedChildren` propriedades no modelo. Você pode especificar explicitamente que as páginas criadas a partir de um modelo T devem ser pais/filhos de páginas criadas a partir de um modelo T.
+Se desejar adicionar mais restrições, por exemplo, em relação à hierarquia do modelo, você pode usar as propriedades `allowedParents/allowedChildren` no modelo. Você pode especificar explicitamente que as páginas criadas a partir de um modelo T devem ser pais/filhos de páginas criadas a partir de um modelo T.
