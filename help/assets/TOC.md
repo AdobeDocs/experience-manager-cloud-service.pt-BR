@@ -5,19 +5,19 @@ breadcrumb-title: Guia do Assets
 user-guide-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 71%
+source-wordcount: '467'
+ht-degree: 72%
 
 ---
 
 
 # [!DNL Assets] Guia  {#assets}
 
-+ [[!DNL Assets] como um Cloud Service](/help/assets/home.md)
++ [[!DNL Assets] como uma [!DNL Cloud Service]](/help/assets/home.md)
 + [Visão geral e novidades](overview.md)
-+ [Alterações notáveis  [!DNL Assets] como um Cloud Service](assets-cloud-changes.md)
++ [Alterações notáveis  [!DNL Assets] como uma [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] arquitetura](architecture.md)
 + [Formatos de arquivo não suportados](file-format-support.md)
 + [Visão geral dos microsserviços de ativos](asset-microservices-overview.md)
