@@ -231,8 +231,9 @@ No modo de layout, é possível executar várias ações em uma grade:
    >
    >No exemplo acima, as ações flutuar e ocultar estão disponíveis porque este Contêiner de layout está aninhado em um Contêiner de layout pai.
 
-   * **Mostrar componentes** Selecione os componentes principais para mostrar a barra de ferramentas de ação com o 
-**Mostrar opção de componentes** ocultos. Neste exemplo, dois componentes estão ocultos.
+   * **Mostrar**
+componentesSelecione os componentes principais para mostrar a barra de ferramentas de ação com o 
+**Mostrar** opção de componentes ocultos. Neste exemplo, dois componentes estão ocultos.
 
       ![Mostrar componentes](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Selecionar a opção **Mostrar componentes ocultos** exibirá em azul os componentes que estão ocultos no momento em suas posições originais.
