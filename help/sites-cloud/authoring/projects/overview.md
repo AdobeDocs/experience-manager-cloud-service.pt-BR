@@ -12,11 +12,11 @@ ht-degree: 81%
 
 # Projetos {#projects}
 
-Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Os blocos podem incluir informações do projeto e da equipe, ativos, workflows e outros tipos de informações, conforme descrito detalhadamente em [Blocos de projeto.](#project-tiles)
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on `/home/users` and `/home/groups`. The easiest way to implement this is to give the **projects-users** group read access to `/home/users` and `/home/groups`.
+>Para que os usuários em projetos vejam outros usuários/grupos ao usar a funcionalidade Projetos, como criar projetos, criar tarefas/workflows, ver e gerenciar a equipe, esses usuários precisam ter acesso de leitura em `/home/users` e `/home/groups`. A maneira mais fácil de implementar isso é dar ao grupo **projects-users** acesso de leitura a `/home/users` e `/home/groups`.
 
 Como usuário, você pode fazer o seguinte:
 
@@ -78,7 +78,7 @@ Semelhante a ativos, você pode adicionar [coleções de ativos](/help/assets/ma
 
 Adicione uma coleção clicando em **Adicionar coleção** e selecionando a coleção apropriada na lista.
 
-### Experiências {#experiences}
+### Experiências  {#experiences}
 
 O bloco **Experiências** permite adicionar um aplicativo para dispositivos móveis, um site ou uma publicação ao projeto.
 
@@ -116,7 +116,7 @@ O bloco Tarefa de tradução é onde você inicia uma tradução e visualiza o s
 
 ![Trabalho de tradução](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
+Clique nas reticências na parte inferior do cartão **Trabalho de tradução** para visualização dos ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
 
 ![Detalhe da tarefa de tradução](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
@@ -148,7 +148,7 @@ O bloco Lançamentos mostra todos os lançamentos que foram solicitados com um [
 
 ### Tarefas {#tasks}
 
-Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. Tasks are covered in detail at [Working with Tasks](/help/sites-cloud/authoring/projects/tasks.md).
+Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. As tarefas são abordadas detalhadamente em [Trabalhar com Tarefa](/help/sites-cloud/authoring/projects/tasks.md).
 
 ![Tarefas](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
@@ -162,7 +162,7 @@ O AEM acompanha três modelos diferentes prontos para uso:
 
 Com base no modelo selecionado, você tem diferentes opções disponíveis, principalmente em relação a funções de usuário e fluxos de trabalho.
 
-## Funções de usuário em um projeto {#user-roles-in-a-project}
+## Funções de usuário em um projeto  {#user-roles-in-a-project}
 
 As diferentes funções de usuário são definidas em um modelo de Projeto e são usadas por dois motivos principais:
 
@@ -175,7 +175,7 @@ Todos os projetos oferecem suporte às seguintes funções padrão, para permiti
 |---|---|---|---|
 | Observador | Um usuário nessa função pode visualizar detalhes do projeto, incluindo seu status. | Permissões somente leitura em um projeto | `workflow-users` grupo |
 | Editor | Um usuário nessa função pode fazer o upload e a edição do conteúdo de um projeto. | Acesso de leitura e gravação em um projeto, metadados associados e ativos relacionados; privilégios para fazer upload de uma lista fotográfica, fotografar e revisar e aprovar ativos; permissão de gravação em /etc/commerce; modificar permissão em um projeto específico | grupo de usuários de fluxo de trabalho |
-| Proprietário | Um usuário nessa função pode iniciar um projeto. Um proprietário pode criar um projeto, iniciar um trabalho em um projeto e também mover ativos aprovados para a pasta Produção. Além disso, todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Write permission on `/etc/commerce` | `dam-users` grupo (para poder criar um projeto) grupo de administradores de projeto (para poder mover ativos) |
+| Proprietário | Um usuário nessa função pode iniciar um projeto. Um proprietário pode criar um projeto, iniciar um trabalho em um projeto e também mover ativos aprovados para a pasta Produção. Além disso, todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Permissão de gravação em `/etc/commerce` | `dam-users` grupo (para poder criar um projeto) grupo de administradores de projeto (para poder mover ativos) |
 
 >[!NOTE]
 >
