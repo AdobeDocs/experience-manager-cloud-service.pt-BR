@@ -11,7 +11,7 @@ ht-degree: 13%
 ---
 
 
-# Cascading Metadata {#cascading-metadata}
+# Metadados em cascata {#cascading-metadata}
 
 Ao capturar as informações de metadados de um ativo, os usuários fornecem informações nos vários campos disponíveis. É possível exibir campos de metadados específicos ou valores de campos que dependem das opções selecionadas nos outros campos. Essa exibição condicional de metadados é chamada de metadados em cascata. Em outras palavras, é possível criar uma dependência entre um campo/valor de metadados específico e um ou mais campos e/ou seus valores.
 
@@ -40,21 +40,21 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    ![select_form](assets/select_form.png)
 
-1. (Opcional) No editor de schemas de metadados, crie um novo campo para condicionalizar. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Configurações]** .
+1. (Opcional) No editor de schemas de metadados, crie um novo campo para condicionalizar. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Settings]**.
 
-   Para criar uma nova guia, toque/clique `+` para adicionar uma guia e, em seguida, adicionar um campo de metadados.
+   Para criar uma nova guia, toque/clique em `+` para adicionar uma guia e, em seguida, adicione um campo de metadados.
 
    ![add_tab](assets/add_tab.png)
 
-1. Adicionar um campo Suspenso para o tipo de ativo. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Configurações]** . Adicione uma descrição opcional.
+1. Adicionar um campo Suspenso para o tipo de ativo. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Settings]**. Adicione uma descrição opcional.
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. Os pares de valores-chave são as opções fornecidas a um usuário de formulário. Você pode fornecer os pares de valor chave manualmente ou de um arquivo JSON.
 
-   * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar manualmente]**, toque/clique em **[!UICONTROL Adicionar escolha]** e especifique o texto e o valor da opção. Por exemplo, especifique os tipos de ativos Vídeo, PDF, Word e Imagem.
+   * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar Manualmente]** e toque/clique em **[!UICONTROL Adicionar Escolha]** e especifique o texto e o valor da opção. Por exemplo, especifique os tipos de ativos Vídeo, PDF, Word e Imagem.
 
-   * Para obter os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar pelo caminho]** JSON e forneça o caminho do arquivo JSON. AEM os pares de valores chave em tempo real quando o formulário é apresentado ao usuário.
+   * Para obter os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar pelo caminho JSON]** e forneça o caminho do arquivo JSON. AEM os pares de valores chave em tempo real quando o formulário é apresentado ao usuário.
 
    Ambas as opções são mutuamente exclusivas. Não é possível importar as opções de um arquivo JSON e editá-las manualmente.
 
@@ -74,11 +74,11 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    ![video_dependence_fields](assets/video_dependent_fields.png)
 
-1. Para criar uma dependência entre o campo de tipo de ativo e outros campos, escolha o campo dependente e abra a guia **[!UICONTROL Regras]** .
+1. Para criar uma dependência entre o campo de tipo de ativo e outros campos, escolha o campo dependente e abra a guia **[!UICONTROL Regras]**.
 
    ![select_depenentfield](assets/select_dependentfield.png)
 
-1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
+1. Em **[!UICONTROL Requisito]**, escolha a opção **[!UICONTROL Obrigatório, com base na nova regra]**.
 1. Toque/clique em **[!UICONTROL Adicionar regra]** e escolha o campo **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Toque/clique em **[!UICONTROL Concluído]** para salvar as alterações.
 
    ![define_rule](assets/define_rule.png)
@@ -102,7 +102,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
    >É possível aplicar as condições de **[!UICONTROL Requisito]** e **[!UICONTROL Visibilidade]** independentemente umas das outras.
 
 1. Da mesma forma, crie uma dependência entre o valor Vídeo no campo Tipo de ativo e outros campos, como Codec e Duração.
-1. Repita as etapas para criar dependência entre os ativos do documento (PDF e Word) no campo Tipo [!UICONTROL de] ativo e campos como Contagem [!UICONTROL de] página e [!UICONTROL Autor].
+1. Repita as etapas para criar dependência entre os ativos do documento (PDF e Word) no campo [!UICONTROL Tipo de ativo] e campos como [!UICONTROL Contagem de páginas] e [!UICONTROL Autor].
 1. Clique em **[!UICONTROL Salvar]**. Aplique o schema de metadados a uma pasta.
 
 1. Navegue até a pasta na qual você aplicou o Schema Metadados e abra a página de propriedades de um ativo. Dependendo de sua escolha no campo Tipo de ativo, os campos de metadados em cascata pertinentes são exibidos.
