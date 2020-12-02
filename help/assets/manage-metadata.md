@@ -4,9 +4,9 @@ description: Saiba mais sobre os tipos de metadados e como [!DNL Adobe Experienc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1930'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Os ativos do Enterprise Manager permitem que você edite os metadados de vários
 
 ## Metadados personalizados usando o perfil de processamento {#metadata-compute-service}
 
-Os ativos como Cloud Service podem gerar metadados personalizados para um ativo usando serviços nativos na nuvem. Configure um perfil de processamento para gerar metadados personalizados. Consulte [como usar o perfil de processamento](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Os ativos como [!DNL Cloud Service] podem gerar metadados personalizados para um ativo usando serviços nativos na nuvem. Configure um perfil de processamento para gerar metadados personalizados. Consulte [como usar o perfil de processamento](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Execução de metadados no perfil de processamento](assets/processing-profile-metadata.png)
 
