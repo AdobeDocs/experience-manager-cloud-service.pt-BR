@@ -20,21 +20,21 @@ Um Fragmento de experiência Principal e/ou uma Variante usa:
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
-Como não há `/libs/cq/experience-fragments/components/xfpage/xfpage.html` ele volta para
+Como não há `/libs/cq/experience-fragments/components/xfpage/xfpage.html`, ele reverte para
 
-* `sling:resourceSuperType` : `wcm/foundation/components/page`
+* `sling:resourceSuperType` :  `wcm/foundation/components/page`
 
 ## A representação HTML simples {#the-plain-html-rendition}
 
-Using the `.plain.` selector in the URL, you can access the plain HTML rendition.
+Usando o seletor `.plain.` no URL, você pode acessar a execução HTML simples.
 
 Isso está disponível no navegador, mas seu objetivo principal é permitir que outros aplicativos (por exemplo, aplicativos da Web de terceiros, implementações móveis personalizadas) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL.
 
 A execução HTML simples adiciona o protocolo, o host e o caminho de contexto aos caminhos que são:
 
-* do tipo: `src`, `href`ou `action`
+* do tipo: `src`, `href` ou `action`
 
-* ou terminar com: `-src`ou `-href`
+* ou terminar com: `-src`, ou `-href`
 
 Por exemplo:
 
@@ -77,7 +77,7 @@ Os componentes que não usam esta convenção não serão considerados.
 
 >[!CAUTION]
 >
->***Somente*** modelos editáveis são suportados em Fragmentos de experiência.
+>***Somente modelos*** editáveis são suportados em Fragmentos de experiência.
 
 <!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->
@@ -87,7 +87,7 @@ Ao desenvolver um novo modelo para Fragmentos de experiência, você pode seguir
 <!-- When developing a new template for Experience Fragments you can follow follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
-Para criar um modelo de fragmento de experiência detectado pelo assistente **Criar fragmento** de experiência, siga um destes conjuntos de regras:
+Para criar um modelo de fragmento de experiência detectado pelo assistente **Criar fragmento de experiência**, siga um destes conjuntos de regras:
 
 1. Ambos:
 
@@ -97,9 +97,9 @@ Para criar um modelo de fragmento de experiência detectado pelo assistente **Cr
    1. E o nome do modelo deve começar com:
       `experience-fragments`
 Isso permite que os usuários criem fragmentos de experiência em /content/experience-fragments como a variável 
-`cq:allowedTemplates` a propriedade desta pasta inclui todos os modelos que têm nomes começando com `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seus próprios esquemas de nomeação ou locais de modelo.
+`cq:allowedTemplates` a propriedade desta pasta inclui todos os modelos que têm nomes começando com  `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seus próprios esquemas de nomeação ou locais de modelo.
 
-1. [Os modelos](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) permitidos podem ser configurados no console Fragmentos de experiência.
+1. [Os ](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) modelos permitidos podem ser configurados no console Fragmentos de experiência.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -154,18 +154,18 @@ Por padrão, quando você constrói uma Oferta HTML de Público alvo, uma solici
 
 Depois de gerar a página HTML, o pipeline do Sling Rewriter faz modificações na saída:
 
-1. Os elementos `html`, `head`e `body` são substituídos por `div` elementos. Os elementos `meta`, `noscript` e `title` são removidos (são elementos filho do `head` elemento original e não são considerados quando este é substituído pelo `div` elemento).
+1. Os elementos `html`, `head` e `body` são substituídos pelos elementos `div`. Os elementos `meta`, `noscript` e `title` são removidos (são elementos filho do elemento `head` original e não são considerados quando este é substituído pelo elemento `div`).
 
    Isso é feito para garantir que a Oferta Público alvo HTML possa ser incluída nas Atividades do Público alvo.
 
-2. AEM modifica todos os links internos presentes no HTML, de modo que apontem para um recurso publicado.
+2. AEM modifica todos os links internos presentes no HTML para que apontem para um recurso publicado.
 
    Para determinar os links a serem modificados, AEM este padrão para os atributos de elementos HTML:
 
    1. `src` atributos
    2. `href` atributos
    3. `*-src` atributos (como data-src, custom-src etc)
-   4. `*-href` atributos (como `data-href`, `custom-href`, `img-href`etc)
+   4. `*-href` atributos (como  `data-href`,  `custom-href`,  `img-href`etc)
 
    >[!NOTE]
    >
@@ -180,21 +180,21 @@ Ao usar uma implementação predefinida, o processo descrito acima deve ser sufi
 
 Para esses casos de uso, AEM fornece a Interface do provedor de regravação de links.
 
-### Interface do provedor de regravador de links {#link-rewriter-provider-interface}
+### Interface do provedor de regravação de links {#link-rewriter-provider-interface}
 
-Para casos mais complicados, não abordados pelo [padrão](#default-link-rewriting), AEM a Interface do provedor de regravação de links. Esta é uma `ConsumerType` interface que você pode implementar em seus pacotes, como um serviço. Ele ignora as modificações AEM executadas em links internos de uma oferta HTML como renderizado de um Fragmento de experiência. Essa interface permite que você personalize o processo de regravação de links HTML internos para alinhar-se às suas necessidades comerciais.
+Para casos mais complicados, não abordados pelo [default](#default-link-rewriting), AEM a Interface do provedor de regravação de links. Esta é uma interface `ConsumerType` que você pode implementar em seus pacotes, como um serviço. Ele ignora as modificações AEM executadas em links internos de uma oferta HTML como renderizado de um Fragmento de experiência. Essa interface permite que você personalize o processo de regravação de links HTML internos para alinhar-se às suas necessidades comerciais.
 
 Exemplos de casos de uso para implementar essa interface como um serviço incluem:
 
 * Mapeamentos Sling são ativados nas instâncias de publicação, mas não na instância do autor
 * Um dispatcher ou uma tecnologia semelhante é usada para redirecionar URLs internamente
-* Existem recursos `sling:alias mechanisms` disponíveis
+* Há `sling:alias mechanisms` no lugar para recursos
 
 >[!NOTE]
 >
 >Essa interface só processa os links HTML internos da Oferta de Público alvo gerada.
 
-A Interface do provedor de regravação de links ( `ExperienceFragmentLinkRewriterProvider`) é a seguinte:
+A Interface do provedor do regrador de links ( `ExperienceFragmentLinkRewriterProvider`) é a seguinte:
 
 ```java
 public interface ExperienceFragmentLinkRewriterProvider {
@@ -208,7 +208,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 }
 ```
 
-### Como usar a interface do provedor de regravação de links {#how-to-use-the-link-rewriter-provider-interface}
+### Como usar a Interface do provedor de regravação de links {#how-to-use-the-link-rewriter-provider-interface}
 
 Para usar a interface, primeiro é necessário criar um pacote contendo um novo componente de serviço que implemente a interface do provedor de regravação de links.
 
@@ -299,13 +299,13 @@ O nome do elemento HTML que está sendo processado no momento.
 * `attribute`
 O nome exato do atributo.
 
-Se, por exemplo, o sistema Exportar para Público alvo estiver processando esse elemento no momento, você pode definir `CSSInclude` como:
+Se, por exemplo, o sistema Exportar para Público alvo estiver processando atualmente esse elemento, você pode definir `CSSInclude` como:
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
 ```
 
-A chamada para o `rewriteLink()` método é feita usando estes parâmetros:
+A chamada para o método `rewriteLink()` é feita usando estes parâmetros:
 
 ```java
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
@@ -313,7 +313,7 @@ rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", a
 
 Ao criar o serviço, você pode tomar decisões com base na entrada fornecida e, em seguida, reescrever o link de acordo.
 
-Para nosso exemplo, gostaríamos de remover a parte `/etc.clientlibs` do URL e adicionar o domínio externo apropriado. Para simplificar, consideraremos que temos acesso a um Resolvedor de recursos para seu serviço, como em `rewriteLinkExample2`:
+Para nosso exemplo, gostaríamos de remover a parte `/etc.clientlibs` do URL e adicionar o domínio externo apropriado. Para simplificar, consideraremos que temos acesso a um Resolvedor de Recursos para seu serviço, como em `rewriteLinkExample2`:
 
 >[!NOTE]
 >
@@ -350,14 +350,14 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->Se o método acima retornar `null`, o sistema Exportar para Público alvo deixará o link como ele está, um link relativo para um recurso.
+>Se o método acima retornar `null`, o sistema Exportar para o Público alvo deixará o link como está, um link relativo para um recurso.
 
 #### Prioridades - getPriority {#priorities-getpriority}
 
-Não é incomum precisar de vários serviços para atender a diferentes tipos de Fragmentos de experiência, ou mesmo para ter um Serviço genérico que lida com a externalização e o mapeamento de todos os Fragmentos de experiência. Nestes casos, surgem conflitos sobre qual serviço usar, por isso AEM a possibilidade de definir **prioridades** para diferentes serviços. As prioridades são especificadas usando o método:
+Não é incomum precisar de vários serviços para atender a diferentes tipos de Fragmentos de experiência, ou mesmo para ter um Serviço genérico que lida com a externalização e o mapeamento de todos os Fragmentos de experiência. Nesses casos, surgem conflitos sobre qual serviço usar, portanto AEM a possibilidade de definir **Prioridades** para diferentes serviços. As prioridades são especificadas usando o método:
 
 * `getPriority()`
 
-Esse método permite o uso de vários serviços nos quais o `shouldRewrite()` método retorna true para o mesmo Fragmento de experiência. O serviço que retorna o maior número de seu `getPriority()`método é o serviço que lida com a Variação do fragmento de experiência.
+Este método permite o uso de vários serviços nos quais o método `shouldRewrite()` retorna verdadeiro para o mesmo Fragmento de experiência. O serviço que retorna o maior número de seu método `getPriority()`é o serviço que lida com a Variação do fragmento de experiência.
 
-Por exemplo, você pode ter uma regra `GenericLinkRewriterProvider` que manipula o mapeamento básico de todos os Fragmentos de experiência e quando o `shouldRewrite()` método retorna `true` para todas as Variações de fragmento de experiência. Para vários Fragmentos de experiência específicos, talvez você queira manuseio especial, portanto, nesse caso, você pode fornecer um método `SpecificLinkRewriterProvider` para o qual o `shouldRewrite()` método retorna verdadeiro somente para algumas Variações de fragmento de experiência. Para garantir que `SpecificLinkRewriterProvider` seja escolhido para lidar com essas Variações de fragmento de experiência, ele deve retornar em seu `getPriority()` método um número maior que `GenericLinkRewriterProvider.`
+Como exemplo, você pode ter um `GenericLinkRewriterProvider` que manipula o mapeamento básico de todos os Fragmentos de experiência e quando o método `shouldRewrite()` retorna `true` para todas as Variações de fragmento de experiência. Para vários Fragmentos de experiência específicos, talvez você queira manuseio especial, portanto, nesse caso, você pode fornecer um `SpecificLinkRewriterProvider` para o qual o método `shouldRewrite()` retorna verdadeiro somente para algumas Variações de fragmento de experiência. Para garantir que `SpecificLinkRewriterProvider` seja escolhido para lidar com essas Variações de fragmento de experiência, ele deve retornar em seu método `getPriority()` um número maior que `GenericLinkRewriterProvider.`
