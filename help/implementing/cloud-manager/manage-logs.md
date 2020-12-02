@@ -14,11 +14,11 @@ ht-degree: 22%
 
 Os usuários podem acessar uma lista de arquivos de registro disponíveis para o ambiente selecionado usando o Cartão de Ambiente.  Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
 
-Esses arquivos podem ser baixados por meio da interface do usuário, na página **Visão geral** :
+Esses arquivos podem ser baixados por meio da interface do usuário, na página **Visão geral**:
 
 ![](assets/download-logs1.png)
 
-Ou a página **Ambientes** :
+Ou a página **Ambientes**:
 
 ![](assets/download-logs.png)
 
@@ -28,7 +28,7 @@ Ou a página **Ambientes** :
 ![](assets/download-logs2.png)
 
 
-## Faz logon por meio da API {#logs-through-api}
+## Faz logon pela API {#logs-through-api}
 
 Além de fazer o download de logs por meio da interface do usuário, os registros estarão disponíveis por meio da API e da interface de linha de comando.
 
