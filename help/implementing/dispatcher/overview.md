@@ -32,4 +32,4 @@ Por padrão, o tipo de conteúdo HTML/texto é definido para expirar depois de 3
 
 As seções abaixo fornecem mais detalhes sobre o delivery de conteúdo, incluindo configuração e cache de CDN.
 
-Informações sobre replicação do serviço de autor para o serviço de publicação estão disponíveis [aqui](/help/operations/replication.md).
+As informações sobre replicação do serviço de autor para o serviço de publicação estão disponíveis [aqui](/help/operations/replication.md).
