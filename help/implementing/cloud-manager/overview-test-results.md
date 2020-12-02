@@ -18,7 +18,7 @@ Há três categorias amplas de testes suportadas pelo Cloud Manager para Cloud S
 
    O teste de qualidade de código avalia a qualidade do código do aplicativo. O pipeline Code-Quality é executado imediatamente após a etapa de construção em todos os gasodutos de não-produção e de produção.
 
-   As Regras [de qualidade de código](/help/implementing/cloud-manager/custom-code-quality-rules.md) personalizadas executadas pelo Gerenciador de nuvem são criadas com base nas práticas recomendadas da AEM Engenharia.
+   As [Regras de qualidade de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md) executadas pelo Gerenciador de nuvem são criadas com base nas práticas recomendadas AEM engenharia.
 
 1. [Teste funcional](/help/implementing/cloud-manager/functional-testing.md)
 
