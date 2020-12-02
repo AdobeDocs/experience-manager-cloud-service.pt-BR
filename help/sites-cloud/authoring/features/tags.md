@@ -15,7 +15,7 @@ ht-degree: 96%
 Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
 
 * Consulte Administração de tags para obter informações sobre como criar e gerenciar tags e sobre quais tags de conteúdo foram aplicadas. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* See [Tagging for Developers](/help/implementing/developing/introduction/tagging-framework.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* Consulte [Marcação para desenvolvedores](/help/implementing/developing/introduction/tagging-framework.md) para obter informações sobre a estrutura de marcação, bem como sobre como incluir e estender tags em aplicativos personalizados.
 
 ## Dez razões para usar marcação {#ten-reasons-to-use-tagging}
 
@@ -32,7 +32,7 @@ Tags são um método rápido e fácil de classificar o conteúdo em um site. Tag
 
 Ao projetar a estrutura de conteúdo de um site e o esquema de metadados para ativos, considere a abordagem leve e acessível de tags.
 
-## Aplicação de tags   {#applying-tags}
+## Aplicação de tags    {#applying-tags}
 
 No ambiente de criação, os autores podem aplicar tags acessando as propriedades da página e digitando uma ou mais tags no campo **Tags/Palavras-chave**.
 
