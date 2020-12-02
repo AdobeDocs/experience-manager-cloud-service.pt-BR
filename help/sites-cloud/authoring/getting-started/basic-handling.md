@@ -57,7 +57,7 @@ A navegação global possui dois painéis, representados por ícones na margem e
 
 As opções disponíveis nesses painéis estão descritas abaixo.
 
-### Painel Navegação   {#navigation-panel}
+### Painel Navegação    {#navigation-panel}
 
 O painel de Navegação:
 
@@ -226,7 +226,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 >
 >Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
-## Ações rápidas {#quick-actions}
+## Ações rápidas  {#quick-actions}
 
 Na [Exibição de cartão](#card-view), determinadas ações estão disponíveis como ícones de ação rápida, além de estarem na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e elimina a necessidade de pré-seleção.
 
@@ -248,7 +248,7 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 >
 >Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
 
-### Seleção de recursos   {#selecting-resources}
+### Seleção de recursos    {#selecting-resources}
 
 Selecionar um recurso específico depende de uma combinação da exibição e do dispositivo:
 
@@ -340,7 +340,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 * É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar as ações rápidas) ou para cima novamente usando a [navegação estrutural no cabeçalho](#the-header).
 
-### Exibição de lista   {#list-view}
+### Exibição de lista    {#list-view}
 
 ![Exibição de lista](/help/sites-cloud/authoring/assets/list-view.png)
 
