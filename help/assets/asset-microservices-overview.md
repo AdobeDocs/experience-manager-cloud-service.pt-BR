@@ -3,9 +3,9 @@ title: Processar ativos usando microserviços de ativos
 description: Processar seus ativos digitais usando microserviços de processamento de ativos escaláveis e nativos na nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Visão geral da ingestão e processamento de ativos com microserviços de ativos {#asset-microservices-overview}
 
-A Adobe Experience Manager como Cloud Service fornece um método nativo de nuvem para aproveitar os aplicativos e os recursos do Experience Manager. Um dos elementos chave dessa nova arquitetura é a ingestão e o processamento de ativos, impulsionados por microserviços de ativos. Os microserviços de ativos fornecem um processamento escalonável e resiliente de ativos usando serviços em nuvem. O Adobe gerencia os serviços em nuvem para uma manipulação ideal de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microserviços de ativos nativos na nuvem são:
+A Adobe Experience Manager como [!DNL Cloud Service] fornece um método nativo de nuvem para aproveitar os aplicativos e os recursos do Experience Manager. Um dos elementos chave dessa nova arquitetura é a ingestão e o processamento de ativos, impulsionados por microserviços de ativos. Os microserviços de ativos fornecem um processamento escalonável e resiliente de ativos usando serviços em nuvem. O Adobe gerencia os serviços em nuvem para uma manipulação ideal de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microserviços de ativos nativos na nuvem são:
 
 * Arquitetura escalável que permite um processamento ininterrupto para operações com grande quantidade de recursos.
 * Indexação eficiente e extrações de texto que não afetam o desempenho dos ambientes de Experience Manager.
