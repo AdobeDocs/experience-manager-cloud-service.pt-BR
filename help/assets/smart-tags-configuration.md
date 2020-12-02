@@ -25,7 +25,7 @@ A funcionalidade Tag inteligentes está disponível para compra como suplemento 
 
 >[!IMPORTANT]
 >
->Por padrão, as novas [!DNL Experience Manager Assets] implantações são integradas [!DNL Adobe Developer Console] ao. Ajuda a configurar a funcionalidade de tags inteligentes mais rapidamente. Nas implantações existentes, os administradores seguem estas etapas para configurá-las.
+>As novas implantações [!DNL Experience Manager Assets] são integradas com [!DNL Adobe Developer Console] por padrão. Ajuda a configurar a funcionalidade de tags inteligentes mais rapidamente. Nas implantações existentes, os administradores seguem estas etapas para configurá-las.
 
 ## Integração com o Console do desenvolvedor {#aio-integration}
 
