@@ -14,7 +14,7 @@ ht-degree: 86%
 
 O diagrama a seguir mostra como o suporte multisite para conteúdo direcionado está estruturado.
 
-Areas appear underneath **/content/campaigns/&lt;brand>** and by default each brand has a master area, which is created automatically. Cada área contém seu próprio conjunto de atividades, experiências e ofertas.
+As áreas aparecem abaixo de **/content/campanha/&lt;brand>** e, por padrão, cada marca tem uma área principal, que é criada automaticamente. Cada área contém seu próprio conjunto de atividades, experiências e ofertas.
 
 ![Estrutura de vários sites](/help/sites-cloud/authoring/assets/multisite-structure.png)
 
