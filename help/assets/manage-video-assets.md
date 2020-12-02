@@ -3,9 +3,9 @@ title: Gerenciar ativos de vídeo
 description: Carregue, pré-visualização, anote e publique ativos de vídeo em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ Após a publicação, você pode incluir os ativos de vídeo em uma página da W
 
 ## Transcodificação usando o Perfil de processamento {#transcode-video}
 
-[!DNL Experience Manager] como um Cloud Service, você pode fazer a transcodificação básica de arquivos de vídeo MP4 usando Perfis de processamento. A funcionalidade permite que você não apenas carregue, mas também pré-visualização e dimensione um arquivo de vídeo MP4.
+[!DNL Experience Manager] como um recurso,  [!DNL Cloud Service] permite a transcodificação básica de arquivos de vídeo MP4 usando Perfis de processamento. A funcionalidade permite que você não apenas carregue, mas também pré-visualização e dimensione um arquivo de vídeo MP4.
 
 ![Criar Perfil de processamento para transcodificação de vídeo no Experience Manager](assets/video-processing-profile-for-mp4.png)
 
