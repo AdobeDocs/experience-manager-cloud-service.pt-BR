@@ -2,9 +2,9 @@
 title: Adicione seus ativos digitais a [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais a [!DNL Adobe Experience Manager] como a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1972'
+source-wordcount: '1930'
 ht-degree: 1%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager] enriquece o conteúdo binário dos arquivos digitais carregados com metadados ricos, tags inteligentes, execuções e outros serviços de Gerenciamento de ativos digitais (DAM). Você pode carregar vários tipos de arquivos, como imagens, documentos e arquivos de imagem brutos, da pasta local ou de uma unidade de rede para [!DNL Experience Manager Assets].
 
-Vários métodos de upload são fornecidos. Além do upload mais usado do navegador, existem outros métodos de adicionar ativos ao repositório do Experience Manager, incluindo clientes desktop, como o Adobe Asset Link ou o aplicativo para desktop Experience Manager, scripts de upload e ingestão que os clientes criariam e integrações de ingestão automatizadas adicionadas como extensões do Experience Manager.
+Vários métodos de upload são fornecidos. Além do upload mais usado do navegador, existem outros métodos de adicionar ativos ao repositório [!DNL Experience Manager], incluindo clientes desktop, como o Adobe Asset Link ou [!DNL Experience Manager] aplicativo desktop, scripts de upload e ingestão que os clientes criariam e integrações de ingestão automatizadas adicionadas como extensões [!DNL Experience Manager].
 
-Faremos o upload de métodos para usuários finais aqui e forneceremos links para artigos que descrevem aspectos técnicos do upload e ingestão de ativos usando APIs e SDKs de Experience Manager.
+Vamos nos concentrar nos métodos de upload para usuários finais aqui e fornecer links para artigos que descrevem aspectos técnicos do upload e ingestão de ativos usando [!DNL Experience Manager] APIs e SDKs.
 
-Embora seja possível carregar e gerenciar qualquer arquivo binário no Experience Manager, os formatos de arquivo mais usados têm suporte para serviços adicionais, como extração de metadados ou geração de pré-visualização/execução. Consulte [formatos de arquivo suportados](file-format-support.md) para obter detalhes.
+Embora seja possível carregar e gerenciar qualquer arquivo binário em [!DNL Experience Manager], os formatos de arquivo mais usados têm suporte para serviços adicionais, como extração de metadados ou geração de pré-visualização/execução. Consulte [formatos de arquivo suportados](file-format-support.md) para obter detalhes.
 
 Você também pode optar por fazer um processamento adicional nos ativos carregados. Vários perfis de processamento de ativos podem ser configurados na pasta, na qual os ativos são carregados, para adicionar metadados específicos, representações ou serviços de processamento de imagens. Consulte [processar ativos quando carregados](#process-when-uploaded).
 
 >[!NOTE]
 >
->O Experience Manager como [!DNL Cloud Service] aproveita uma nova maneira de fazer upload de ativos - fazer upload binário direto. Por padrão, ele é suportado pelos recursos e clientes prontos para uso do produto, como interface de usuário do Experience Manager, link do ativo do Adobe, aplicativo para desktop do Experience Manager e, portanto, transparente para os usuários finais.
+>[!DNL Experience Manager] como um  [!DNL Cloud Service] aproveitador de uma nova maneira de fazer upload de ativos - fazer upload binário direto. Por padrão, ele é suportado pelos recursos e clientes prontos para uso do produto, como [!DNL Experience Manager] interface do usuário, [!DNL Adobe Asset Link], [!DNL Experience Manager] aplicativo desktop e, portanto, transparente para os usuários finais.
 >
 >O código de upload personalizado ou estendido pelas equipes técnicas dos clientes precisa usar as novas APIs e protocolos de upload.
 
@@ -35,7 +35,7 @@ Os ativos como [!DNL Cloud Service] fornecem os seguintes métodos de upload. O 
 | [Interface do usuário do console Ativos](#upload-assets) | Carregamento ocasional, facilidade de pressionar e arrastar, carregamento do localizador. Não use para carregar um grande número de ativos. | Todos os usuários |
 | [Carregar API](#upload-using-apis) | Para decisões dinâmicas durante o upload. | Desenvolvedor |
 | [[!DNL Experience Manager] aplicativo para desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Entrada de ativos de baixo volume, mas para migração. | Administrador, Marketer |
-| [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Útil quando criativos e profissionais de marketing trabalham em ativos de dentro dos [!DNL Creative Cloud] aplicativos de desktop compatíveis. | Creative, Marketer |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Útil quando criativos e profissionais de marketing trabalham em ativos de dentro dos [!DNL Creative Cloud] aplicativos de desktop compatíveis. | Creative, Marketer |
 | [Adquirente em massa do ativo](#asset-bulk-ingestor) | Recomendado para migrações em grande escala e ingestões ocasionais em massa. Somente para armazenamentos de dados suportados. | Administrador, Desenvolvedor |
 
 ## Carregar ativos {#upload-assets}
@@ -144,7 +144,7 @@ O incorporador de ativos em massa pode lidar com milhares de ativos com eficiên
 Para carregar um número maior de arquivos, use uma das seguintes abordagens. Além disso, consulte os [casos de uso e métodos](#upload-methods-comparison)
 
 * [APIs](developer-reference-material-apis.md#asset-upload-technical) de upload de ativos: Use um script de upload personalizado ou uma ferramenta que aproveite as APIs para adicionar manuseio adicional de ativos (por exemplo, traduzir metadados ou renomear arquivos), se necessário.
-* [Aplicativo](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) para desktop Experience Manager: Útil para profissionais de criação e profissionais de marketing que carregam ativos de seu sistema de arquivos local. Use-o para carregar pastas aninhadas disponíveis localmente.
+* [[!DNL Experience Manager] aplicativo](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) para desktop: Útil para profissionais de criação e profissionais de marketing que carregam ativos de seu sistema de arquivos local. Use-o para carregar pastas aninhadas disponíveis localmente.
 * [Ferramenta](#asset-bulk-ingestor) de ingestão em massa: Use para a ingestão de grandes quantidades de ativos ocasionalmente ou inicialmente durante a implantação  [!DNL Experience Manager].
 
 ### Ferramenta de assimilação de itens em massa {#asset-bulk-ingestor}
@@ -181,14 +181,14 @@ Para configurar a ferramenta, siga estas etapas:
 
 >[!NOTE]
 >
->O upload em massa como parte da migração de conteúdo de outros sistemas durante a configuração e implantação para o Experience Manager requer planejamento cuidadoso, consideração e escolha de ferramentas. Consulte o [guia de implantação](/help/implementing/deploying/overview.md) para obter orientação sobre as abordagens de migração de conteúdo.
+>O upload em massa como parte da migração de conteúdo de outros sistemas ao configurar e implantar [!DNL Experience Manager] requer planejamento, consideração e escolha cuidadosa de ferramentas. Consulte o [guia de implantação](/help/implementing/deploying/overview.md) para obter orientação sobre as abordagens de migração de conteúdo.
 
 ## Fazer upload de ativos usando clientes desktop {#upload-assets-desktop-clients}
 
-Além da interface do usuário do navegador da Web, o Experience Manager oferece suporte a outros clientes no desktop. Eles também fornecem experiência de upload sem a necessidade de acessar o navegador da Web.
+Além da interface de usuário do navegador da Web, [!DNL Experience Manager] oferece suporte a outros clientes no desktop. Eles também fornecem experiência de upload sem a necessidade de acessar o navegador da Web.
 
-* [Adobe Asset ](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) Linkings fornece acesso a ativos  [!DNL Experience Manager] em aplicativos de desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Você pode fazer upload do documento atualmente aberto para [!DNL Experience Manager] diretamente da interface do usuário do Adobe Asset Link a partir desses aplicativos de desktop.
-* [O aplicativo de desktop Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifica o trabalho com ativos no desktop, independentemente do tipo de arquivo ou do aplicativo nativo que os manipula. É particularmente útil fazer upload de arquivos nas hierarquias de pastas aninhadas a partir do sistema de arquivos local, já que o upload do navegador suporta apenas o upload de listas de arquivos simples.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) fornece acesso a ativos  [!DNL Experience Manager] em aplicativos de desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Você pode fazer upload do documento atualmente aberto para [!DNL Experience Manager] diretamente da interface do usuário do Adobe Asset Link a partir desses aplicativos de desktop.
+* [[!DNL Experience Manager] o aplicativo desktop ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifica o trabalho com ativos no desktop, independentemente do tipo de arquivo ou do aplicativo nativo que os manipula. É particularmente útil fazer upload de arquivos nas hierarquias de pastas aninhadas a partir do sistema de arquivos local, já que o upload do navegador suporta apenas o upload de listas de arquivos simples.
 
 ## Processar ativos quando carregados {#process-when-uploaded}
 
@@ -218,8 +218,8 @@ Detalhes técnicos das APIs e protocolo de upload, além de links para SDK de c�
 
 >[!MORELIKETHIS]
 >
->* [Aplicativo de desktop do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Sobre o Adobe Asset Link](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Documentação do link do ativo do Adobe](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Experience Manager] aplicativo para desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [About [!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] documentação](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Referência técnica para upload de ativos](developer-reference-material-apis.md#asset-upload-technical)
 
