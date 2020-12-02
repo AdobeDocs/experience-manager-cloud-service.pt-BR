@@ -17,4 +17,4 @@ Você pode comprar um nome de domínio de um registrador de nomes de domínio, u
 >[!NOTE]
 >O Cloud Manager não é um registrador de nomes de domínio e não fornece serviços DNS.
 
-O DNS é o que nos permite ter domínios personalizados e de marca conectados a sites, traduzindo endereços de computador legíveis por computador, como endereços memoráveis, como `184.33.123.64` endereços `www.wknd.com`.
+O DNS é o que nos permite ter domínios personalizados e de marca conectados a sites, traduzindo endereços de computador legíveis por computador, como `184.33.123.64` para endereços memoráveis, como `www.wknd.com`.
