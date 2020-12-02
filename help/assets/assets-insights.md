@@ -19,7 +19,7 @@ O Assets Insights captura detalhes da atividade do usuário, como o número de v
 
 Para que o Assets Insights capture as estatísticas de uso de imagens de um site, você deve incluir o código incorporado da imagem no código do site.
 
-Para permitir que o Asset Insights exiba estatísticas de uso de ativos, configure primeiro o recurso para buscar dados de relatórios da Adobe Analytics. Para obter detalhes, consulte [Configurar insights](#configure-asset-insights)de ativos.
+Para permitir que o Asset Insights exiba estatísticas de uso de ativos, configure primeiro o recurso para buscar dados de relatórios da Adobe Analytics. Para obter detalhes, consulte [Configurar Insights de Ativos](#configure-asset-insights).
 
 >[!NOTE]
 >
@@ -31,13 +31,13 @@ Você pode visualização as pontuações do Asset Insights na página de metada
 
 1. Na interface do usuário do Assets (UI), selecione a imagem e toque em **[!UICONTROL Propriedades]** na barra de ferramentas.
 1. Na página Propriedades, toque em **[!UICONTROL Insights]**.
-1. Revise os detalhes de uso do ativo na guia **[!UICONTROL Insights]** . A seção **[!UICONTROL Pontuação]** descreve o uso total de ativos e as funções de desempenho de um ativo.
+1. Revise os detalhes de uso do ativo na guia **[!UICONTROL Insights]**. A seção **[!UICONTROL Pontuação]** descreve o uso total de ativos e as funções de desempenho de um ativo.
 
    A pontuação de uso descreve o número de vezes que o ativo é usado em várias soluções.
 
-   A pontuação de **[!UICONTROL impressões]** é o número de vezes que o ativo é carregado no site. O número exibido em **[!UICONTROL Cliques]** é o número de vezes que o ativo é clicado.
+   A pontuação **[!UICONTROL Impressões]** é o número de vezes que o ativo é carregado no site. O número exibido em **[!UICONTROL Cliques]** é o número de vezes que o ativo é clicado.
 
-1. Revise a seção Estatísticas **[!UICONTROL de]** uso para saber de quais entidades o ativo fazia parte e quais soluções criativas o utilizaram recentemente. Quanto maior o uso, maiores as chances de que o ativo seja popular entre os usuários. Os dados de uso são exibidos sob os seguintes cabeçalhos:
+1. Revise a seção **[!UICONTROL Estatísticas de uso]** para saber de quais entidades o ativo fazia parte e quais soluções criativas o utilizaram recentemente. Quanto maior o uso, maiores as chances de que o ativo seja popular entre os usuários. Os dados de uso são exibidos sob os seguintes cabeçalhos:
 
    * **[!UICONTROL Ativo]**: O número de vezes que o ativo fez parte de uma coleção ou de um ativo composto.
    * **[!UICONTROL Web e dispositivos móveis]**: O número de vezes que o ativo fez parte de sites e aplicativos.
@@ -58,30 +58,30 @@ Você pode visualização as pontuações do Asset Insights na página de metada
    >
    >Ao contrário dos dados na seção Soluções, a seção Estatísticas de desempenho exibe os dados mais recentes.
 
-1. Para obter o código incorporado para o ativo que você inclui em sites para obter dados de desempenho, toque/clique em **[!UICONTROL Obter código]** incorporado abaixo da miniatura do ativo. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. Para obter o código incorporado para o ativo que você inclui em sites para obter dados de desempenho, toque/clique em **[!UICONTROL Obter código incorporado]** abaixo da miniatura do ativo. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-## Estatísticas de agregação de visualizações para imagens {#viewing-aggregate-statistics-for-images}
+## Estatísticas de agregação de visualização para imagens {#viewing-aggregate-statistics-for-images}
 
 Exiba pontuações de todos os ativos em uma pasta simultaneamente usando a **[!UICONTROL Exibição do Insights]**.
 
 1. Na interface do usuário Ativos, navegue até a pasta que contém os ativos para os quais você deseja visualização insights.
-1. Toque/clique no ícone Layout na barra de ferramentas e escolha **[!UICONTROL Visualização]** Insights.
+1. Toque/clique no ícone Layout na barra de ferramentas e escolha **[!UICONTROL Visualização do Insights]**.
 1. A página exibe as pontuações de uso dos ativos. Compare as classificações dos vários ativos e obtenha insights.
 
 ## Agendar tarefa em segundo plano {#scheduling-background-job}
 
-O Asset Insights busca dados de uso de ativos de conjuntos de relatórios da Adobe Analytics de forma periódica. Por padrão, o Asset Insights executa uma tarefa em segundo plano a cada 24 horas às 2 horas da manhã para obter dados. No entanto, você pode modificar a frequência e a hora configurando o serviço Trabalho **[!UICONTROL de sincronização de relatório de desempenho de ativos do]** Adobe CQ DAM no console da Web.
+O Asset Insights busca dados de uso de ativos de conjuntos de relatórios da Adobe Analytics de forma periódica. Por padrão, o Asset Insights executa uma tarefa em segundo plano a cada 24 horas às 2 horas da manhã para obter dados. No entanto, você pode modificar a frequência e a hora configurando o serviço **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** do console da Web.
 
 1. Toque no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-1. Abra a configuração do serviço **[!UICONTROL Adobe CQ DAM Asset Performance Sync Job]** .
+1. Abra a configuração do serviço **[!UICONTROL Trabalho de sincronização de relatório de desempenho de ativos do Adobe CQ DAM]**.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
 1. Especifique a frequência de scheduler desejada e a hora de start para o trabalho na expressão de scheduler de propriedade. Salve as alterações.
 
-## Configurar insights de ativos {#configure-asset-insights}
+## Configurar Insights de Ativos {#configure-asset-insights}
 
 O Adobe Experience Manager (AEM) Assets obtém dados de uso AEM ativos usados por sites de terceiros da Adobe Analytics. Para permitir que o Asset Insights recupere esses dados e gere insights, configure primeiro o recurso para integrar-se à Adobe Analytics.
 
@@ -100,10 +100,10 @@ O Adobe Experience Manager (AEM) Assets obtém dados de uso AEM ativos usados po
 
    *Figura: Configurar o Adobe Analytics para insights do Assets em AEM*
 
-1. Clique/toque em **[!UICONTROL Autenticar]**. Depois que AEM autenticar suas credenciais, na lista **[!UICONTROL Report Suite]** , escolha um conjunto de relatórios da Adobe Analytics de onde deseja que o Asset Insights busque dados. Clique em **[!UICONTROL Adicionar]**.
+1. Clique/toque em **[!UICONTROL Autenticar]**. Depois que AEM autenticar suas credenciais, na lista **[!UICONTROL Report Suite]**, escolha um conjunto de relatórios da Adobe Analytics de onde deseja que o Asset Insights busque dados. Clique em **[!UICONTROL Adicionar]**.
 1. Depois de AEM configurar seu conjunto de relatórios, toque em **[!UICONTROL Concluído]**.
 
-### Rastreador de página {#page-tracker}
+### Rastreador de páginas {#page-tracker}
 
 Depois de configurar sua conta do Adobe Analytics, o código do rastreador de páginas é gerado para você. Para permitir que o Assets Insights rastreie ativos AEM usados em sites de terceiros, inclua o código do rastreador de página no código do site. Use o utilitário do rastreador de páginas no AEM Assets para gerar o código do rastreador de páginas. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
@@ -112,7 +112,7 @@ Depois de configurar sua conta do Adobe Analytics, o código do rastreador de p�
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Na página **[!UICONTROL Navegação]**, clique no cartão do **[!UICONTROL Rastreador de páginas do Insights]**.
-1. Clique em **[!UICONTROL Download]** para baixar o código do rastreador de página.
+1. Clique em **[!UICONTROL Baixar]** para baixar o código do rastreador de página.
 
 <!--
 
