@@ -1,11 +1,11 @@
 ---
 title: Digital Rights Management em [!DNL Assets]
-description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager] como um Cloud Service.
+description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager] como a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1345'
 ht-degree: 7%
 
 ---
