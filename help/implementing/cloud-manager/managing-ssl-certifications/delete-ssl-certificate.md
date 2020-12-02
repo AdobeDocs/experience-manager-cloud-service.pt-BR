@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Excluindo um certificado SSL {#deleting-an-ssl-certificate}
+# Excluindo um Certificado SSL {#deleting-an-ssl-certificate}
 
 >[!IMPORTANT]
 >Remover certificados do Gerenciador de nuvem é uma ação permanente que não pode ser desfeita. A prática recomendada é salvar os arquivos SSL necessários localmente antes de excluí-los na interface do usuário do Cloud Manager.
@@ -22,6 +22,6 @@ Siga as etapas abaixo para excluir um certificado SSL:
 
 1. Navegue até a tela Certificados SSL na página Ambientes
 1. Identifique a linha na qual o nome do certificado SSL que você deseja excluir está listado
-1. Selecionar o **...** na extremidade direita extrema da linha
-1. Selecionar **Excluir**
+1. Selecione **...** a partir da extremidade direita da linha
+1. Selecione **Eliminar**
 1. Confirmar o envio
