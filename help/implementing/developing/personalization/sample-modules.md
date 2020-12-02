@@ -18,7 +18,7 @@ O ContextHub fornece vários módulos de UI de amostra que você pode usar em su
 * Onde encontrar o código fonte para que você possa abri-lo para fins de aprendizado.
 * Como configurar o módulo da interface do usuário.
 
-Para obter informações sobre como adicionar módulos de interface ao ContextHub, consulte [Adicionar um módulo](configuring-contexthub.md#adding-a-ui-module)de interface. Para obter informações sobre o desenvolvimento de módulos de interface do usuário, consulte [Criação de tipos](extending-contexthub.md#creating-contexthub-ui-module-types)de módulos de interface do usuário do ContextHub.
+Para obter informações sobre como adicionar módulos de interface ao ContextHub, consulte [Adicionar um módulo de interface](configuring-contexthub.md#adding-a-ui-module). Para obter informações sobre o desenvolvimento de módulos de interface, consulte [Criação de tipos de módulos de interface do usuário do ContextHub](extending-contexthub.md#creating-contexthub-ui-module-types).
 
 ## tipo de módulo de interface do usuário do contexthub.base {#contexthub-base-ui-module-type}
 
@@ -26,38 +26,38 @@ O tipo de módulo da interface do usuário contexthub.base é o tipo básico par
 
 Os seguintes recursos estão disponíveis:
 
-* **Título e ícone:** Especifique um título para o módulo da interface do usuário e um ícone. O ícone pode ser referenciado usando um URL ou a partir da biblioteca de ícones da interface do Coral.
+* **Título e ícone:** especifique um título para o módulo da interface do usuário e um ícone. O ícone pode ser referenciado usando um URL ou a partir da biblioteca de ícones da interface do Coral.
 * **Armazenar dados:** Identifique um ou mais armazenamentos dos quais recuperar dados.
-* **Conteúdo:** Especifique o conteúdo que aparece no módulo da interface como ele aparece na barra de ferramentas do ContextHub.
-* **Conteúdo do pai:** Especifique o conteúdo que aparece em uma janela pop-up quando o módulo da interface do usuário é clicado ou tocado.
-* **Modo de tela cheia:** Controle se o modo de tela cheia é permitido.
+* **Conteúdo:** especifique o conteúdo que aparece no módulo da interface como ele aparece na barra de ferramentas do ContextHub.
+* **Conteúdo de publicação:** especifique o conteúdo que aparece em uma publicação quando o módulo da interface do usuário é clicado ou tocado.
+* **Modo de tela cheia:** controle se o modo de tela cheia é permitido.
 
-O código-fonte está localizado em `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.
+O código fonte está localizado em `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.
 
 ### Configuração {#configuration}
 
 Configure o módulo de interface do usuário contexthub.base usando um objeto Javascript no formato JSON. Inclua qualquer uma das seguintes propriedades para configurar os recursos do módulo de interface:
 
-* **imagem:** Um URL para uma imagem a ser exibida como o ícone.
-* **ícone:** O nome de uma classe de ícone [da interface do](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral. Se você especificar um valor para as propriedades de ícone e imagem, a imagem será usada.
+* **image:** um URL para uma imagem a ser exibida como o ícone.
+* **ícone:** O nome de uma interface do usuário  [Coral ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) iconclass. Se você especificar um valor para as propriedades de ícone e imagem, a imagem será usada.
 * **título:** Um título para o módulo da interface do usuário. O título é exibido quando o ponteiro é pausado sobre o ícone do módulo da interface do usuário.
 * **tela cheia:** Um valor booliano que indica se o módulo da interface suporta o modo de tela cheia. Use `true` para suportar tela cheia e `false` para impedir o modo de tela cheia.
-* **modelo:** Um modelo [Handlebars](https://handlebarsjs.com/) que especifica o conteúdo a ser renderizado na barra de ferramentas do ContextHub. Use no máximo duas `<p>` tags.
-* **storeMapping:** Um mapeamento de chave/loja. Use a tecla nos modelos de Handlebar para acessar os dados de armazenamento do ContextHub associados.
-* **lista:** Uma matriz de itens a serem exibidos como uma lista em um módulo quando o módulo da interface é clicado. Se você incluir esse item, não inclua propoverTemplate. O valor é uma matriz de objetos com as seguintes teclas:
+* **modelo:** Um modelo  [](https://handlebarsjs.com/) Handlebarstemplate que especifica o conteúdo a ser renderizado na barra de ferramentas do ContextHub. Use no máximo duas tags `<p>`.
+* **storeMapping:** um mapeamento de chave/armazenamento. Use a tecla nos modelos de Handlebar para acessar os dados de armazenamento do ContextHub associados.
+* **lista:** uma matriz de itens a serem exibidos como uma lista em uma portagem quando o módulo da interface é clicado. Se você incluir esse item, não inclua propoverTemplate. O valor é uma matriz de objetos com as seguintes teclas:
    * título: O texto a ser exibido para este item
    * imagem: (Opcional) Um URL para uma imagem que deve ser exibida à esquerda
    * ícone: (Opcional) Uma classe de ícone CUI que deve ser exibida à esquerda; ignorado se uma imagem for especificada
-   * selecionados: (Opcional) Um valor booliano que especifica se este item deve ser exibido como selecionado (true=selecionado). Por padrão, os itens selecionados aparecem usando uma fonte em negrito. Use uma `listType` propriedade para configurar outras aparências (consulte abaixo).
-* **listType:** O estilo a ser usado para itens de lista de entrega. Use um dos seguintes valores:
+   * selecionados: (Opcional) Um valor booliano que especifica se este item deve ser exibido como selecionado (true=selecionado). Por padrão, os itens selecionados aparecem usando uma fonte em negrito. Use uma propriedade `listType` para configurar outras aparências (consulte abaixo).
+* **listType:** o estilo a ser usado para itens de lista de entrega. Use um dos seguintes valores:
    * marca
    * caixa de seleção
    * rádio
-* **poverTemplate:** Um modelo de handlebars que especifica o conteúdo a ser renderizado no pop-up quando o módulo de interface é clicado. Se você incluir este item, não inclua o `list` item.
+* **poverTemplate:** Um modelo de handlebars que especifica o conteúdo a ser renderizado no pop-up quando o módulo de interface é clicado. Se você incluir este item, não inclua o item `list`.
 
 ### Exemplo {#example}
 
-O exemplo a seguir configura um módulo de interface de usuário c`ontexthub.base` para exibir informações de uma loja [contexthub.emulators](sample-stores.md#granite-emulators-sample-store-candidate) . O `template` item demonstra como obter dados da loja usando a chave que o `storeMapping` item estabelece.
+O exemplo a seguir configura um módulo de interface de usuário c`ontexthub.base` para exibir informações de uma loja [contexthub.emulators](sample-stores.md#granite-emulators-sample-store-candidate). O item `template` demonstra como obter dados da loja usando a chave estabelecida pelo item `storeMapping`.
 
 ```javascript
 {
@@ -74,11 +74,11 @@ O exemplo a seguir configura um módulo de interface de usuário c`ontexthub.bas
 
 ## tipo de módulo de interface do usuário context.browserinfo {#contexthub-browserinfo-ui-module-type}
 
-O módulo de `contexthub.browserinfo` interface exibe informações sobre o navegador da Web do cliente e o sistema operacional. As informações são obtidas da loja surferinfo, com base no candidato da loja [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) .
+O módulo de interface do usuário `contexthub.browserinfo` exibe informações sobre o navegador da Web do cliente e o sistema operacional. As informações são obtidas da loja surferinfo, com base no candidato da loja [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate).
 
 ![módulo contexthub.browserinfo](assets/browserinfo-module.png)
 
-O código-fonte do módulo da interface está localizado em `/libs/granite/contexthub/components/modules/browserinfo`. Embora `contexthub.browserinfo` estenda o módulo da `contexthub.base` interface do usuário, ele não substitui nem fornece funções adicionais. A implementação fornece uma configuração padrão para renderizar informações do navegador.
+O código-fonte do módulo de interface está localizado em `/libs/granite/contexthub/components/modules/browserinfo`. Embora `contexthub.browserinfo` estenda o módulo `contexthub.base` da interface do usuário, ele não substitui nem fornece funções adicionais. A implementação fornece uma configuração padrão para renderizar informações do navegador.
 
 ### Configuração {#configuration-1}
 
@@ -93,15 +93,15 @@ As instâncias do módulo de interface contexthub.browserinfo não exigem um val
 }
 ```
 
-## tipo de módulo de interface do usuário context.datetime {#contexthub-datetime-ui-module-type}
+## tipo de módulo de interface contexthub.datetime {#contexthub-datetime-ui-module-type}
 
-O módulo da `contexthub.datetime` interface exibe a data e a hora armazenadas em uma loja chamada datetime, que é baseada no candidato da `contexthub.datetime` loja.
+O módulo de interface do usuário `contexthub.datetime` exibe a data e a hora armazenadas em uma loja chamada datetime, que é baseada no candidato de armazenamento `contexthub.datetime`.
 
 ![módulo contexthub.datetime](assets/datetime-module.png)
 
 O módulo fornece um formulário de entrega que permite alterar a data e a hora na loja.
 
-A fonte do módulo da `contexthub.datetime` interface está localizada em `/libs/granite/contexthub/components/modules/datetime`.
+A fonte do módulo de interface `contexthub.datetime` está localizada em `/libs/granite/contexthub/components/modules/datetime`.
 
 ### Configuração {#configuration-2}
 
@@ -118,9 +118,9 @@ As instâncias do módulo de interface contexthub.datetime não exigem um valor 
 }
 ```
 
-## tipo de módulo de interface do usuário context.location {#contexthub-location-ui-module-type}
+## tipo de módulo de interface do usuário do contexthub.location {#contexthub-location-ui-module-type}
 
-O módulo da `contexthub.location` interface exibe a longitude e a latitude do cliente. O módulo fornece um provedor que exibe um mapa do Google no qual você pode clicar para alterar o local atual. O módulo obtém informações de uma loja do ContextHub chamada geolocation baseada no candidato da loja [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) .
+O módulo de interface do usuário `contexthub.location` exibe a longitude e a latitude do cliente. O módulo fornece um provedor que exibe um mapa do Google no qual você pode clicar para alterar o local atual. O módulo obtém informações de uma loja do ContextHub chamada geolocation baseada no candidato da loja [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate).
 
 ![módulo contexthub.location](assets/location-module.png)
 
@@ -161,9 +161,9 @@ As instâncias do módulo de interface contexthub.location não exigem um valor 
 }
 ```
 
-## tipo de módulo de interface de usuário contexthub.screen-orientation {#contexthub-screen-orientation-ui-module-type}
+## tipo {#contexthub-screen-orientation-ui-module-type} de módulo de interface de usuário contexthub.screen-orientation
 
-O módulo da `contexthub.screen-orientation` interface exibe a orientação de tela atual do cliente. Embora desativado por padrão, o módulo fornece um provedor que permite selecionar uma orientação. O módulo obtém informações de uma loja do ContextHub chamada emuladores, com base no candidato à loja do [granite.emuladores](sample-stores.md#granite-emulators-sample-store-candidate) .
+O módulo de interface do usuário `contexthub.screen-orientation` exibe a orientação de tela atual do cliente. Embora desativado por padrão, o módulo fornece um provedor que permite selecionar uma orientação. O módulo obtém informações de uma loja do ContextHub chamada emuladores, que é baseada no candidato da loja [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate).
 
 ![módulo contexthub.screen-orientation](assets/screen-orientation-module.png)
 
@@ -171,7 +171,7 @@ A fonte do módulo da interface está localizada em `/libs/granite/contexthub/co
 
 ### Configuração {#configuration-5}
 
-As instâncias do módulo de `contexthub.screen-orientation` interface não exigem um valor para a Configuração de detalhes. O seguinte texto JSON representa a configuração padrão do módulo. Observe que a `clickable` propriedade é `false` por padrão. Se você substituir a configuração padrão definida `clickable` como `true`, clicar no módulo revelará um pop-up onde você pode selecionar a orientação.
+As instâncias do módulo de interface do usuário `contexthub.screen-orientation` não exigem um valor para a Configuração de detalhes. O seguinte texto JSON representa a configuração padrão do módulo. Observe que a propriedade `clickable` é `false` por padrão. Se você substituir a configuração padrão para definir `clickable` como `true`, clicar no módulo revelará um pop-up no qual é possível selecionar a orientação.
 
 ```javascript
 {
@@ -187,7 +187,7 @@ As instâncias do módulo de `contexthub.screen-orientation` interface não exig
 
 ## tipo de módulo de interface do usuário do contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-O módulo `contexthub.tagcloud` da interface exibe informações sobre tags. Na barra de ferramentas, o módulo da interface mostra o número de tags. O pop-up revela uma tagcloud e uma caixa de texto para adicionar novas tags. O módulo da interface do usuário obtém informações de uma loja do ContextHub chamada tagcloud, com base no candidato à `contexthub.tagcloud` loja.
+O módulo de interface do usuário `contexthub.tagcloud` exibe informações sobre tags. Na barra de ferramentas, o módulo da interface mostra o número de tags. O pop-up revela uma tagcloud e uma caixa de texto para adicionar novas tags. O módulo da interface do usuário obtém informações de uma loja do ContextHub chamada tagcloud, com base no candidato da loja `contexthub.tagcloud`.
 
 ![módulo contexthub.tagcloud](assets/tagcloud-module.png)
 
@@ -195,7 +195,7 @@ A fonte do módulo da interface está localizada em `/libs/granite/contexthub/co
 
 ### Configuração {#configuration-6}
 
-As instâncias do módulo de `contexthub.tagcloud` interface não exigem um valor para a Configuração de detalhes. O seguinte texto JSON representa a configuração padrão do módulo.
+As instâncias do módulo de interface do usuário `contexthub.tagcloud` não exigem um valor para a Configuração de detalhes. O seguinte texto JSON representa a configuração padrão do módulo.
 
 ```javascript
 {
@@ -211,15 +211,15 @@ As instâncias do módulo de `contexthub.tagcloud` interface não exigem um valo
 
 ## tipo de módulo de interface do usuário granite.perfil {#granite-profile-ui-module-type}
 
-O módulo de interface do usuário do `granite.profile` ContextHub exibe o nome de exibição do usuário atual. O pop-up revela o nome de logon do usuário e permite que você altere o valor do nome de exibição. O módulo de interface do usuário obtém informações de uma loja do ContextHub chamada perfil que é baseado no candidato à loja [granite.perfil](sample-stores.md#granite-profile-sample-store-candidate) .
+O módulo `granite.profile` da interface do usuário do ContextHub exibe o nome de exibição do usuário atual. O pop-up revela o nome de logon do usuário e permite que você altere o valor do nome de exibição. O módulo de interface do usuário obtém informações de uma loja do ContextHub chamada perfil que é baseado no candidato da loja [granite.perfil](sample-stores.md#granite-profile-sample-store-candidate).
 
 ![módulo granite.perfil](assets/profile-module.png)
 
-A fonte do módulo de interface está em `/libs/granite/contexthub/components/modules/profile`.
+A fonte do módulo da interface está em `/libs/granite/contexthub/components/modules/profile`.
 
 ### Configuração {#configuration-7}
 
-As instâncias do módulo de `granite.profile` interface não exigem um valor para a Configuração de detalhes. O seguinte texto JSON representa a configuração padrão do módulo.
+As instâncias do módulo de interface do usuário `granite.profile` não exigem um valor para a Configuração de detalhes. O seguinte texto JSON representa a configuração padrão do módulo.
 
 ```javascript
 {
