@@ -19,13 +19,13 @@ No Dynamic Media, você pode criar dois tipos de perfis, que são abordados deta
 * [Perfis de imagem do Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
 * [Perfis de vídeo do Dynamic Media](/help/assets/dynamic-media/video-profiles.md)
 
-Consulte também perfis [de metadados](/help/assets/metadata-profiles.md).
+Consulte também [perfis de metadados](/help/assets/metadata-profiles.md).
 
 Você deve ter direitos de Administrador para criar, editar e excluir Perfis de Imagem de Mídia Dinâmica ou Perfis de Vídeo de Mídia Dinâmica.
 
 Depois de criar o Perfil de imagem ou o Perfil de vídeo, atribua-o a uma ou mais pastas usadas como destino para os ativos de Mídia dinâmica carregados recentemente.
 
-Consulte também Práticas [recomendadas para organizar seus ativos digitais para usar Perfis de imagem ou Perfis](/help/assets/dynamic-media/best-practices-for-file-management.md)de vídeo.
+Consulte também [Práticas recomendadas para organizar seus ativos digitais para usar Perfis de imagem ou Perfis de vídeo](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
 >[!NOTE]
 >
@@ -37,13 +37,13 @@ Consulte também Práticas [recomendadas para organizar seus ativos digitais par
 
 Você pode reprocessar ativos em uma pasta que já tenha um Perfil de Imagem do Dynamic Media ou um Perfil de Vídeo do Dynamic Media que tenha sido alterado posteriormente.
 
-Por exemplo, suponha que você criou um Perfil de Imagem de Mídia Dinâmica e o atribuiu a uma pasta. Todos os ativos de imagem carregados na pasta tinham automaticamente o Perfil de imagem aplicado aos ativos. No entanto, depois você decide adicionar uma nova proporção de recorte inteligente ao Perfil de imagem. Agora, em vez de ter selecionado e carregado novamente os ativos para a pasta, basta executar o *Scene7: Reprocessar fluxo de trabalho de Ativos* .
+Por exemplo, suponha que você criou um Perfil de Imagem de Mídia Dinâmica e o atribuiu a uma pasta. Todos os ativos de imagem carregados na pasta tinham automaticamente o Perfil de imagem aplicado aos ativos. No entanto, depois você decide adicionar uma nova proporção de recorte inteligente ao Perfil de imagem. Agora, em vez de ter selecionado e carregado novamente os ativos para a pasta, basta executar o *Scene7: Reprocessar o fluxo de trabalho Ativos*.
 
 Você pode executar o fluxo de trabalho de reprocessamento em um ativo cujo processamento falhou na primeira vez. Assim, mesmo se você não tiver editado um Perfil de imagem ou um perfil de vídeo, ou se já tiver aplicado um Perfil de imagem ou um Perfil de vídeo, ainda poderá executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
 
-Como opção, você pode ajustar o tamanho do lote do fluxo de trabalho de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Ao executar o _Scene7: Reprocessar o fluxo de trabalho dos Ativos_ em uma pasta, os ativos são agrupados em lotes e enviados para o servidor de Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados em AEM. Se o tamanho do lote for muito grande, pode ocorrer um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta ao servidor de Dynamic Media.
+Como opção, você pode ajustar o tamanho do lote do fluxo de trabalho de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Quando você executa o _Scene7: Reprocessar o fluxo de trabalho dos Ativos_ em uma pasta, os ativos são agrupados em lotes e, em seguida, enviados para o servidor do Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados em AEM. Se o tamanho do lote for muito grande, pode ocorrer um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta ao servidor de Dynamic Media.
 
-Consulte [Ajustar o tamanho do lote do fluxo de trabalho](#adjusting-load)de reprocessamento.
+Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#adjusting-load).
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Para reprocessar ativos do Dynamic Media em uma pasta**:
-1. Em AEM, na página Ativos, navegue até uma pasta de ativos de Mídia dinâmica que tenha um Perfil de Imagem ou um Perfil de Vídeo atribuído a ele e para o qual você deseja aplicar o **Scene7: Reprocessar fluxo de trabalho de ativos** ,
+1. Em AEM, na página Ativos, navegue até uma pasta de ativos de Mídia dinâmica que tenha um Perfil de Imagem ou um Perfil de Vídeo atribuído a ele e para a qual você deseja aplicar o Scene7 **: Reprocessar o fluxo de trabalho do Asset**,
 
    As pastas que tiverem um Perfil de imagem ou um Perfil de vídeo já atribuídos a ele serão indicadas pela exibição do nome do perfil logo abaixo do nome da pasta na Visualização de placa.
 
@@ -73,9 +73,9 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![Reprocessar fluxo de trabalho de ativos 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. Clique em Fluxo de trabalho do **[!UICONTROL Start]**.
-1. Na lista suspensa Fluxo de trabalho **[!UICONTROL do]** Start, escolha **[!UICONTROL Scene7: Reprocessar ativos]**.
-1. (Opcional) No campo **Inserir título do campo de texto do fluxo de trabalho** , insira um nome para o fluxo de trabalho. Você pode usar o nome para fazer referência à instância do fluxo de trabalho, se necessário.
+1. Clique em **[!UICONTROL Fluxo de trabalho do Start]**.
+1. Na lista suspensa **[!UICONTROL Fluxo de trabalho do Start]**, escolha **[!UICONTROL Scene7: Reprocessar ativos]**.
+1. (Opcional) No campo de texto **Insira o título do fluxo de trabalho**, digite um nome para o fluxo de trabalho. Você pode usar o nome para fazer referência à instância do fluxo de trabalho, se necessário.
 
    ![Reprocessar ativos 2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
@@ -90,7 +90,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 **Como opção, ajuste o tamanho do lote do fluxo de trabalho de reprocessamento**
 
 1. No Experience Manager, toque em **[!UICONTROL Adobe Experience Manager]** para acessar o console de navegação global e, em seguida, toque no ícone **[!UICONTROL Ferramentas]** (martelo) > **[!UICONTROL Fluxo de trabalho > Modelos]**.
-1. Na página Modelos de fluxo de trabalho, em Visualização de cartão ou Visualização de Lista, selecione **[!UICONTROL Scene7: Reprocessar ativos]**.
+1. Na página Modelos de fluxo de trabalho, em Visualização de cartão ou Visualização de Lista, selecione **[!UICONTROL Scene7: Reprocessar Ativos]**.
 
    ![Página Modelos de fluxo de trabalho com a Scene7: Reprocessar fluxo de trabalho de Ativos selecionado na Visualização de Cartão](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
@@ -100,19 +100,19 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![Componente Scene7 Batch Upload](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
-1. Na caixa de diálogo Carregamento **[!UICONTROL em lote para o Scene7—Step Properties]** , defina o seguinte:
-   * In the **[!UICONTROL Title]** and **[!UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
-   * Selecione **[!UICONTROL Manipulador avançado]** se o seu manipulador avançar para a próxima etapa.
-   * No campo **[!UICONTROL Tempo limite]** , informe o tempo limite do processo externo (segundos).
-   * No campo **[!UICONTROL Período]** , informe um intervalo de polling (segundos) para testar a conclusão do processo externo.
-   * In the **[!UICONTROL Batch field]**, enter the maximum number of assets (50-1000) to process in a Dynamic Media server batch processing upload job.
+1. Na caixa de diálogo **[!UICONTROL Carregamento em lote para o Scene7—Step Properties]**, defina o seguinte:
+   * Nos campos de texto **[!UICONTROL Título]** e **[!UICONTROL Descrição]**, digite um novo título e descrição para o trabalho, se desejado.
+   * Selecione **[!UICONTROL Handler Advance]** se o seu manipulador avançar para a próxima etapa.
+   * No campo **[!UICONTROL Tempo limite]**, digite o tempo limite do processo externo (segundos).
+   * No campo **[!UICONTROL Period]**, digite um intervalo de sondagem (segundos) para testar a conclusão do processo externo.
+   * No campo **[!UICONTROL Lote]**, digite o número máximo de ativos (50-1000) a serem processados em um trabalho de upload de processamento em lote do servidor do Dynamic Media.
    * Selecione **[!UICONTROL Avançar no tempo limite]** se desejar avançar quando o tempo limite for atingido. Desmarque se deseja continuar com a caixa de entrada quando o tempo limite for atingido.
 
    ![Caixa de diálogo Propriedades](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. No canto superior direito da caixa de diálogo Carregar em **[!UICONTROL lote no Scene7 - Propriedades]** da etapa, toque em **[!UICONTROL Concluído]**.
+1. No canto superior direito da caixa de diálogo **[!UICONTROL Carregamento em lote para Scene7 - Propriedades da etapa]**, toque em **[!UICONTROL Concluído]**.
 
-1. No canto superior direito do Scene7: Reprocessar a página de modelo de fluxo de trabalho do Assets, toque em **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do fluxo de trabalho é sincronizado e pronto para reprocessar ativos em uma pasta.
+1. No canto superior direito do Scene7: Reprocessar a página de modelo de fluxo de trabalho do Assets, toque em **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do fluxo de trabalho é sincronizado com êxito e pronto para reprocessar ativos em uma pasta.
 
    ![Sincronizar o modelo de fluxo de trabalho](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
