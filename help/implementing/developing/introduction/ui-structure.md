@@ -10,7 +10,7 @@ ht-degree: 2%
 ---
 
 
-# Estrutura da IU AEM {#structure-of-the-aem-ui}
+# Estrutura da interface do usuário AEM {#structure-of-the-aem-ui}
 
 A interface do usuário AEM tem vários princípios subjacentes e é composta de vários elementos chave:
 
@@ -65,7 +65,7 @@ O painel esquerdo pode ser aberto/oculto, conforme necessário, para mostrar:
 * **Referências**
 * **Filtro**
 
-O padrão é Somente **** conteúdo (painel oculto).
+O padrão é **Somente conteúdo** (painel oculto).
 
 ![Painel esquerdo](assets/ui-left-rail.png)
 
@@ -96,7 +96,7 @@ O quadro do editor é um container (abstrato) para todos os elementos de criaç�
 
 ### Painel lateral {#side-panel}
 
-Isso contém três guias padrão. As guias **Ativos** e **Componentes** permitem selecionar esses elementos e arrastá-los do painel e soltá-los na página. A guia **Árvore** de conteúdo permite inspecionar a hierarquia de conteúdo na página.
+Isso contém três guias padrão. As guias **Ativos** e **Componentes** permitem selecionar esses elementos e arrastá-los do painel e soltá-los na página. A guia **Árvore de conteúdo** permite inspecionar a hierarquia de conteúdo na página.
 
 O painel lateral está oculto por padrão. Quando selecionada, esta opção será mostrada no lado esquerdo ou deslizará para cobrir a janela inteira quando o tamanho da janela estiver abaixo de uma largura de 1024px; como, por exemplo, em um dispositivo móvel.
 
@@ -149,7 +149,7 @@ AEM vem com várias camadas já implementadas para a criação de páginas; incl
 >
 >As camadas são um conceito poderoso que afeta a visualização do usuário e a interação com o conteúdo da página. Ao desenvolver suas próprias camadas, é necessário garantir que a camada seja limpa quando ela for fechada.
 
-### Comutador de camada {#layer-switcher}
+### Comutador de Camada {#layer-switcher}
 
 O alternador de camadas permite que você escolha a camada que deseja usar. Quando fechada, indica a camada que está sendo usada no momento.
 
@@ -169,4 +169,4 @@ Dependendo do espaço disponível, as barras de ferramentas do componente são p
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Para obter mais informações técnicas, consulte a documentação [JS definida](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de páginas.
+Para obter mais informações técnicas, consulte o [conjunto de documentação JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de páginas.
