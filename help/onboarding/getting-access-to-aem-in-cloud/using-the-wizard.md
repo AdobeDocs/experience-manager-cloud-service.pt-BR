@@ -10,7 +10,7 @@ ht-degree: 41%
 ---
 
 
-# Uso do Assistente {#using-wizard-to-create-an-aem-application-project}
+# Usando o Assistente {#using-wizard-to-create-an-aem-application-project}
 
 Para ajudar a iniciar novos clientes, o Cloud Manager agora pode criar um projeto de AEM mínimo como ponto de partida. Esse processo se baseia no [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
@@ -25,11 +25,11 @@ Siga as etapas abaixo para criar um projeto de aplicativo AEM no Cloud Manager u
 
    ![](assets/create-wizard2.png)
 
-1. O bloco Criação **do projeto em andamento** é exibido na tela Visão geral *do* Programa.
+1. O bloco **Criação do projeto em andamento** é exibido na tela *Visão geral do Programa*.
 
    ![](assets/create-wizard3.png)
 
 1. Quando a criação do programa for concluída, o bloco **Adicionar ambiente** aparecerá na página *Visão geral do programa*.
    ![](assets/create-wizard4.png)
 
-   Consulte [Gerenciamento de Ambientes](/help/implementing/cloud-manager/manage-environments.md) para saber como adicionar ou gerenciar ambientes.
+   Consulte [Gerenciar seus Ambientes](/help/implementing/cloud-manager/manage-environments.md) para saber como adicionar ou gerenciar ambientes.
