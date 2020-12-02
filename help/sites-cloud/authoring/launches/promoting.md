@@ -25,7 +25,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 
 >[!CAUTION]
 >
->Um único lançamento não pode ser promovido simultaneamente. This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>Um único lançamento não pode ser promovido simultaneamente. Isso significa que duas ações de promoção na mesma inicialização ao mesmo tempo podem resultar em um erro - `Launch could not be promoted` (juntamente com erros de conflito no log).
 
 >[!CAUTION]
 >
@@ -47,12 +47,12 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 É possível promover os lançamentos no console de **Sites** ou de **Lançamentos**:
 
 1. Abrir:
-   * The **Sites** console:
-      1. Open the [references rail](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) and select the required source page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md) (or select and open the references rail, the order is not important). Todas as referências serão exibidas.
+   * O console **Sites**:
+      1. Abra o painel [referências](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) e selecione a página de origem necessária usando [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou selecione e abra o painel de referências, a ordem não é importante). Todas as referências serão exibidas.
       1. Selecione **Lançamentos** (por exemplo, Lançamentos [1]) para exibir uma lista de lançamentos específica.
       1. Selecione o lançamento específico para mostrar as ações disponíveis.
       1. Selecione **Promover lançamento** para abrir o assistente.
-   * The **Launches** console:
+   * O console **Inicializa**:
       1. Selecione seu lançamento (toque/clique na miniatura).
       1. Selecione **Promover**.
 1. No primeiro Etapa, é possível especificar:
@@ -78,7 +78,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 
 1. Selecione **Promover**.
 
-## Promover páginas de lançamento ao editar {#promoting-launch-pages-when-editing}
+## Promover páginas de lançamento ao editar  {#promoting-launch-pages-when-editing}
 
 Ao editar uma página de lançamento, a ação **Promover lançamento** também está disponível nas **Informações de página**. Isso abrirá o assistente para coletar as informações necessárias.
 
@@ -88,7 +88,7 @@ Ao editar uma página de lançamento, a ação **Promover lançamento** também 
 >
 >Está disponível para [lançamentos aninhados](#promoting-a-nested-launch) e individuais.
 
-## Promover um lançamento aninhado {#promoting-a-nested-launch}
+## Promover um lançamento aninhado  {#promoting-a-nested-launch}
 
 Depois de criar uma inicialização aninhada, é possível promovê-la para qualquer uma das origens, incluindo a origem raiz (produção).
 
@@ -97,10 +97,10 @@ Depois de criar uma inicialização aninhada, é possível promovê-la para qual
 1. Da mesma forma que ao Criar um lançamento aninhado, navegue e selecione o lançamento necessário no console **Lançamentos** ou no painel **Referências**.
 1. Selecione **Promover lançamento** para abrir o assistente.
 1. Insira os detalhes necessários:
-   * **Target**
-      * **Público alvo** de promoção - você pode promover para qualquer uma das fontes.
-      * **Excluir inicialização após promoção** - Após a promoção, a inicialização selecionada e todas as inicializações aninhadas dentro dela serão excluídas.
-   * **Escopo** - Aqui você pode selecionar se deseja promover a inicialização inteira ou somente as páginas que foram realmente editadas. Nesse último caso, é possível incluir/excluir as subpáginas. A configuração padrão é promover apenas as alterações da página atual:
+   * **Público alvo**
+      * **Público alvo**  de promoção - você pode promover para qualquer uma das fontes.
+      * **Excluir inicialização após promoção**  - Após a promoção, a inicialização selecionada e todas as inicializações aninhadas dentro dela serão excluídas.
+   * **Escopo**  - Aqui você pode selecionar se deseja promover a inicialização inteira ou somente as páginas que foram realmente editadas. Nesse último caso, é possível incluir/excluir as subpáginas. A configuração padrão é promover apenas as alterações da página atual:
       * **Promover lançamento completo**
       * **Divulgar as páginas modificadas**
       * **Divulgar a página atual**
