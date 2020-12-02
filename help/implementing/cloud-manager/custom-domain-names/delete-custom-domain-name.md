@@ -19,7 +19,7 @@ ht-degree: 0%
 
 1. Navegue até a página Configurações de domínio na tela Ambientes
 1. Identifique a linha na qual o nome de domínio personalizado que você deseja excluir está listado
-1. Selecionar o **...** na extremidade direita extrema da linha
+1. Selecione **...** a partir da extremidade direita da linha
 1. Selecione a opção Excluir
 1. Confirmar o envio
 
@@ -28,6 +28,6 @@ ht-degree: 0%
 
 1. Na página Ambientes, navegue até a tela de detalhes do Ambiente do ambiente de interesse
 1. Na tabela Nomes de Domínio, identifique a linha na qual o nome de domínio personalizado que deseja excluir está listado
-1. Selecionar o **...** na extremidade direita extrema da linha
+1. Selecione **...** a partir da extremidade direita da linha
 1. Selecione a opção Excluir
 1. Confirmar o envio
