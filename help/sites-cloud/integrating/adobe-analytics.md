@@ -26,7 +26,7 @@ Os dados incluem dados de página e do usuário, por exemplo:
 
 As páginas listadas abaixo podem ajudá-lo a configurar a integração. Observe que a Launch by Adobe é a ferramenta de fato para instrumentar um site AEM com recursos do Analytics (bibliotecas JS). Portanto, a integração do AEM como Cloud Service com o Launch e o Adobe Analytics está de mãos dadas.
 
-* [Conexão com a Adobe Analytics e Criação de Estruturas](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-connect.html) - Observe que &quot;Estruturas do Analytics&quot; são herdadas em AEM e sua criação não funciona em AEM como Cloud Service porque requer a interface clássica. Em vez disso, o Launch by Adobe deve ser usado tanto para mapeamento de variável quanto para implantação de bibliotecas JS em páginas.
+* [Conexão com a Adobe Analytics e Criação de Estruturas](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-connect.html)  - Observe que &quot;Estruturas do Analytics&quot; são herdadas em AEM e sua criação não funciona em AEM como Cloud Service porque requer a interface clássica. Em vez disso, o Launch by Adobe deve ser usado tanto para mapeamento de variável quanto para implantação de bibliotecas JS em páginas.
 * [Integrar Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
 * [Integrar AEM com o lançamento do Adobe via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
 * [Como entender AEM integração com Launch by Adobe, Analytics e Públicos alvos](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
@@ -47,8 +47,8 @@ As páginas listadas abaixo podem ajudá-lo a configurar a integração. Observe
 
 Consulte:
 
-* [Estendendo a integração](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) Adobe Analytics para obter informações sobre o desenvolvimento de componentes que coletam dados de usuários e personalizam a estrutura do Adobe Analytics. Observe que &quot;Estruturas do Analytics&quot; são herdadas em AEM, e sua criação não funciona em AEM como Cloud Service porque requer a interface clássica. Em vez disso, o Launch by Adobe deve ser usado tanto para mapeamento de variável quanto para implantação de bibliotecas JS em páginas.
-* O artigo da base de conhecimento, Integração com o [Adobe Analytics - solução de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obter informações sobre como solucionar problemas da integração com o Adobe Analytics.
+* [Estendendo a ](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) integração do Adobe Analytics para obter informações sobre o desenvolvimento de componentes que coletam dados de usuários e personalizam a estrutura do Adobe Analytics. Observe que &quot;Estruturas do Analytics&quot; são herdadas em AEM, e sua criação não funciona em AEM como Cloud Service porque requer a interface clássica. Em vez disso, o Launch by Adobe deve ser usado tanto para mapeamento de variável quanto para implantação de bibliotecas JS em páginas.
+* O artigo da base de conhecimento, [Integração com o Adobe Analytics - solução de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obter informações sobre como solucionar problemas da integração com o Adobe Analytics.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Consulte:
    >  por exemplo, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Configuração** de proxy de componentes HTTP do Apache para configurar a API 4.x;
+* **Configuração de proxy de componentes HTTP do Apache** para configurar a API 4.x;
    >  por exemplo, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
 >
