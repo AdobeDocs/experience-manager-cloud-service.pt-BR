@@ -66,17 +66,17 @@ As propriedades são distribuídas por várias guias.
 
       >[!NOTE]
       >
-      > Consulte [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obter detalhes sobre como configurar a replicação automática relacionada.
+      > Consulte [Tempos ligado e desligado - Configuração do acionador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obter detalhes sobre como configurar a replicação automática relacionada.
 
-      * Se já tiver sido [publicada (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , essa página será mantida em espera (oculta) até a renderização no horário especificado.
+      * Se já [publicada (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) esta página será mantida em repouso (oculta) até a renderização no horário especificado.
       * Se não for publicada e configurada para replicação automática, a página será publicada automaticamente e renderizada no momento especificado.
       * Se não for publicada e não estiver configurada para replicação automática, a página não será publicada automaticamente, portanto, um 404 será visto quando uma tentativa de acessar a página for feita.
-   * Deixe esses campos (Tempo **** ligado e Tempo **** desligado) vazios para as páginas que deseja publicar imediatamente e que estão disponíveis no ambiente de publicação até que sejam desativados (o cenário normal).
+   * Deixe esses campos (**No tempo** e **Tempo desligado**) vazios para as páginas que deseja publicar imediatamente e que estão disponíveis no ambiente de publicação até que sejam desativadas (o cenário normal).
 
 * **Hora de desligar**
 
-   * Em paralelo ao Tempo **ligado** , isso define o horário em que a página publicada ficará oculta no ambiente de publicação.
-   * Deixe esses campos (Tempo **** ligado e Tempo **** desligado) vazios para as páginas que deseja publicar imediatamente e que estão disponíveis no ambiente de publicação até que sejam desativados (o cenário normal).
+   * Em paralelo a **No tempo**, isso define o horário em que a página publicada ficará oculta no ambiente de publicação.
+   * Deixe esses campos (**No tempo** e **Tempo desligado**) vazios para as páginas que deseja publicar imediatamente e que estão disponíveis no ambiente de publicação até que sejam desativadas (o cenário normal).
 
 * **URL personalizada**
 
@@ -156,7 +156,7 @@ As propriedades são distribuídas por várias guias.
 
    * Especifique uma configuração de exportação.
 
-### Miniatura  {#thumbnail}
+### Miniatura   {#thumbnail}
 
 Exibe a imagem de miniatura da página. É possível:
 
@@ -211,7 +211,7 @@ Exibe a imagem de miniatura da página. É possível:
    >[!NOTE]
    >Para selecionar essa opção, é necessário que a conta de usuário esteja no `Target Adminstrators`grupo.
 
-### Permissões  {#permissions}
+### Permissões   {#permissions}
 
 * **Permissões**
 
@@ -236,14 +236,14 @@ Exibe a imagem de miniatura da página. É possível:
    * Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
 
-### Live Copy  {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    * Defina as propriedades para uma página de Live Copy no gerenciamento de vários sites. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site  {#site-structure}
+### Estrutura do site   {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
