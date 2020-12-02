@@ -14,11 +14,11 @@ ht-degree: 1%
 
 Desenvolvemos ferramentas para automatizar algumas das tarefas de refatoração de código necessárias para serem compatíveis com AEM como Cloud Service. Para reduzir a complexidade associada à instalação e configuração de diferentes ferramentas de refatoração de código, desenvolvemos um plug-in para unificar as ferramentas que operam em código e repositórios.
 
-## Benefits {#benefits}
+## Benefícios {#benefits}
 
 O plug-in Unified Experience oferece os seguintes benefícios:
 
-* Unifica as ferramentas que funcionam no código fonte em um `node.js` aplicativo exposto como `aio-cli ` plug-in para fornecer uma experiência do usuário consistente ao usuário.
+* Unifica as ferramentas que funcionam no código fonte em um aplicativo `node.js` exposto como `aio-cli ` plug-in para fornecer uma experiência consistente ao usuário.
 
 * Fornece a capacidade de executar todas as ferramentas por meio de um único comando, além de fornecer a flexibilidade para executar ferramentas específicas, conforme necessário.
 
@@ -26,7 +26,7 @@ O plug-in Unified Experience oferece os seguintes benefícios:
 
 ## Como entender o plug-in {#understanding-plugin}
 
-O `aio-cli-plugin-aem-cloud-service-migration` plug-in consiste em duas partes principais:
+O plug-in `aio-cli-plugin-aem-cloud-service-migration` consiste em duas partes principais:
 
 * **Interface do usuário**
 
@@ -43,7 +43,7 @@ O `aio-cli-plugin-aem-cloud-service-migration` plug-in consiste em duas partes p
 
 ## Disponibilidade {#availability}
 
-Consulte Recurso [Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para saber mais sobre o uso e como você pode contribuir para esse código de plug-in que é open-source no GitHub.
+Consulte [Recurso Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para saber mais sobre o uso e como você pode contribuir para esse código de plug-in que é open source no GitHub.
 
 >[!NOTE]
 >Atualmente, o plug-in está integrado ao Dispatcher Converter e ao Repository Modernizer AEM.
