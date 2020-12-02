@@ -24,8 +24,10 @@ Juntamente com o exportador JSON atualizado, os fragmentos de conteúdo estrutur
 >
 >* **Fragmentos de conteúdo** são conteúdos editoriais, principalmente texto e imagens relacionadas. Eles são puro conteúdo, sem design e layout.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado e, portanto, fragmentos de uma página da Web.
+
 >
->Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
+>
+Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 
 >[!CAUTION]
 >
@@ -104,7 +106,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 
    * **Atributo da ID HTML a ser aplicada ao componente.**
 
-### Conexão rápida ao editor de fragmentos     {#quick-connection-to-fragment-editor}
+### Conexão rápida ao editor de fragmentos      {#quick-connection-to-fragment-editor}
 
 É possível abrir a origem do fragmento para edição (o ativo) usando o ícone **Editar** na barra de ferramentas do componente. Assim, você pode [editar e gerenciar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md).
 
@@ -112,7 +114,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 >
 >Como sempre, editar a origem do fragmento afetará todas as páginas que fazem referência a esse fragmento de conteúdo.
 
-### Adicionar conteúdo intermediário     {#adding-in-between-content}
+### Adicionar conteúdo intermediário      {#adding-in-between-content}
 
 Quando um fragmento de conteúdo específico for adicionado à página, há um espaço reservado para **Arrastar os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
@@ -144,11 +146,12 @@ Para conteúdo intermediário, você pode:
 >
 >* Os componentes intermediários têm uma posição absoluta na sequência de componentes do fluxo de fragmentos. Essa posição não muda, mesmo quando o conteúdo dos parágrafos no fragmento sofre alteração.
 >
->  Isso causa a impressão de que o posicionamento relativo mudou, pois os parágrafos intermediários não têm relacionamento contextual com os parágrafos (fragmento) ao lado dos quais estão posicionados.
+>  
+Isso causa a impressão de que o posicionamento relativo mudou, pois os parágrafos intermediários não têm relacionamento contextual com os parágrafos (fragmento) ao lado dos quais estão posicionados.
 >* A menos que as duas estruturas de parágrafo entrem em conflito; nesse caso, o conteúdo intermediário não é exibido (embora ainda esteja presente internamente).
 
 
-### Usar conteúdo associado     {#using-associated-content}
+### Usar conteúdo associado      {#using-associated-content}
 
 Se você tiver [conteúdo associado ](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial para [conteúdo intermediário](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
