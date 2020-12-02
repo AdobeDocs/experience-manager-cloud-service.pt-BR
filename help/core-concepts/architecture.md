@@ -71,7 +71,7 @@ Há três tipos de ambiente disponíveis com AEM como Cloud Service:
 
 * **Ambiente de desenvolvimento**: permite que os desenvolvedores implementem os aplicativos do AEM nas mesmas condições de tempo de execução que os ambientes de preparo e produção.
 
-   Consulte [Gerenciamento de Ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) para obter mais detalhes.
+   Consulte [Gerenciando Ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) para obter mais detalhes.
 
 ## Programas {#programs}
 
