@@ -40,7 +40,7 @@ Para conectar um site do AEM e os Componentes principais da CIF do AEM a uma vis
 
 3. Crie uma configuração secundária da configuração do CIF Cloud Service seguindo estas etapas:
 
-   * In AEM go to Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * AEM vá para Ferramentas -> Geral -> [Navegador de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Selecione a configuração básica que você criou
    * Criar uma nova configuração usando as etapas descritas no ponto 2 acima
 
