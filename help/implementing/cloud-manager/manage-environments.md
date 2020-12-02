@@ -18,8 +18,7 @@ A seção a seguir descreve os tipos de ambientes que um usuário pode criar e c
 
 Um usuário com as permissões necessárias pode criar os seguintes tipos de ambientes (dentro dos limites do que está disponível para o locatário específico).
 
-* **Produção e Ambiente**de estágio:
-A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para fins de teste e produção.
+* **Produção e Ambiente** de estágio: A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para fins de teste e produção.
 
 * **Desenvolvimento**: Um ambiente de desenvolvimento pode ser criado para fins de desenvolvimento e teste e será associado apenas a pipelines de não-produção.
 
@@ -39,10 +38,10 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
 
 ## Adicionando Ambiente {#adding-environments}
 
-1. Clique em **Adicionar Ambiente** para adicionar um ambiente. Esse botão estará acessível na tela **Ambientes** .
+1. Clique em **Adicionar Ambiente** para adicionar um ambiente. Este botão estará acessível na tela **Ambientes**.
    ![](assets/environments-tab.png)
 
-   A opção **Adicionar Ambiente** também está disponível na placa **Ambientes** quando não há nenhum ambiente no programa.
+   A opção **Adicionar Ambiente** também está disponível no cartão **Ambientes** quando não há nenhum ambiente no programa.
 
    ![](assets/no-environments.png)
 
@@ -61,14 +60,14 @@ A Produção e a Fase estão disponíveis como uma dupla e são utilizadas para 
 1. Clique em **Salvar** para adicionar um ambiente com os critérios preenchidos.  Agora a tela *Visão geral* exibe o cartão de onde você pode configurar seu pipeline.
 
    >[!NOTE]
-   >Caso ainda não tenha configurado o pipeline de não-produção, a tela *Visão geral* exibe o cartão de onde você pode criar o pipeline de não-produção.
+   >Caso ainda não tenha configurado o pipeline de não-produção, a tela *Visão Geral* exibirá o cartão de onde você pode criar o pipeline de não-produção.
 
 
 ## Visualizando Ambiente {#viewing-environment}
 
-O cartão de **Ambientes** na página Visão geral lista até três ambientes.
+A placa **Ambientes** na página Visão geral lista até três ambientes.
 
-1. Selecione o botão **Mostrar tudo** para navegar até a página de resumo do **Ambiente** para visualização de uma tabela com uma lista completa de ambientes.
+1. Selecione o botão **Mostrar tudo** para navegar até a página de resumo **Ambiente** para visualização de uma tabela com uma lista completa de ambientes.
 
    ![](assets/environment-view-1.png)
 
@@ -85,13 +84,13 @@ O cartão de **Ambientes** na página Visão geral lista até três ambientes.
 
 As atualizações de ambientes de Estágio e Produção são gerenciadas automaticamente pelo Adobe.
 
-As atualizações dos ambientes de desenvolvimento são gerenciadas pelos usuários do programa. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status na placa Ambientes na tela inicial mostrará **ATUALIZAÇÃO DISPONÍVEL**.
+As atualizações dos ambientes de desenvolvimento são gerenciadas pelos usuários do programa. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status no Cartão de Ambientes na tela inicial mostrará **ATUALIZAR DISPONÍVEL**.
 
 ![](assets/environ-update.png)
 
 
-A opção **Atualizar** está disponível no Cartão de **Ambientes** .
-Essa opção também está disponível se você clicar em **Detalhes** no cartão de **Ambientes** . A página **Ambientes** é aberta e, depois que você selecionar o ambiente de desenvolvimento, clique em **...** e selecione **Atualizar**, conforme mostrado na figura abaixo:
+A opção **Update** está disponível no cartão **Ambientes**.
+Essa opção também está disponível se você clicar em **Detalhes** no cartão **Ambientes**. A página **Ambientes** é aberta e, depois que você selecionar o ambiente de desenvolvimento, clique em **...** e selecione **Atualizar**, conforme mostrado na figura abaixo:
 
 ![](assets/environ-update2.png)
 
@@ -103,11 +102,11 @@ Se o pipeline já tiver sido atualizado, o usuário será solicitado a executar 
 
 O usuário com as permissões necessárias poderá excluir um ambiente de desenvolvimento.
 
-A opção **Excluir** está disponível no menu suspenso no Cartão de **Ambientes** . Clique em **...** para um ambiente de desenvolvimento que você deseja excluir.
+A opção **Delete** está disponível no menu suspenso no cartão **Ambientes**. Clique em **...** para um ambiente de desenvolvimento que você deseja excluir.
 
 ![](assets/environ-delete.png)
 
-A opção de exclusão também estará disponível se você clicar em **Detalhes** no cartão de **Ambientes** . A página **Ambientes** é aberta e, depois que você selecionar o ambiente de desenvolvimento, clique em **...** e selecione **Excluir**, conforme mostrado na figura abaixo:
+A opção de exclusão também estará disponível se você clicar em **Detalhes** no cartão **Ambientes**. A página **Ambientes** é aberta e, depois que você selecionar o ambiente de desenvolvimento, clique em **...** e selecione **Delete**, conforme mostrado na figura abaixo:
 
 ![](assets/environ-delete2.png)
 
@@ -116,35 +115,35 @@ A opção de exclusão também estará disponível se você clicar em **Detalhes
 >
 >Este recurso não está disponível para ambientes de produção/estágio definidos em uma configuração regular de programa para fins de produção. No entanto, o recurso está disponível para ambientes de produção/estágio em um programa Sandbox.
 
-## Gerenciamento do acesso {#managing-access}
+## Gerenciando o Acesso {#managing-access}
 
-Selecione **Gerenciar acesso** no menu suspenso no Cartão de **Ambientes** . Você pode navegar para a instância do autor diretamente e gerenciar o acesso do seu ambiente.
+Selecione **Gerenciar acesso** no menu suspenso no cartão **Ambientes**. Você pode navegar para a instância do autor diretamente e gerenciar o acesso do seu ambiente.
 
-Consulte [Gerenciamento do acesso à instância](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) do autor para saber mais.
+Consulte [Gerenciando o Acesso à Instância do Autor](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) para saber mais.
 
 ![](assets/environ-access.png)
 
 
-## Acesso ao Console do desenvolvedor {#accessing-developer-console}
+## Acessar o Console do desenvolvedor {#accessing-developer-console}
 
-Selecione **Developer Console** no menu suspenso no Cartão de **Ambientes** . Isso abrirá uma nova guia no navegador com a página de logon no **Developer Console**.
+Selecione **Console do desenvolvedor** no menu suspenso no cartão **Ambientes**. Isso abrirá uma nova guia no seu navegador com a página de logon em **Developer Console**.
 
-Somente um usuário na função Desenvolvedor terá acesso ao **Developer Console**. A exceção é para Programas Sandbox, nos quais qualquer usuário com acesso ao Programa Sandbox do Cloud Manager terá acesso ao **Developer Console**.
+Somente um usuário na função de Desenvolvedor terá acesso ao **Developer Console**. A exceção é para Programas Sandbox, nos quais qualquer usuário com acesso ao Programa Sandbox do Cloud Manager terá acesso ao **Developer Console**.
 
-Consulte [Hibernando e Deshibernando Ambientes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) Sandbox para obter mais detalhes.
+Consulte [Hibernando e Deshibernando Ambientes Sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) para obter mais detalhes.
 
 
 ![](assets/environ-devconsole.png)
 
-Essa opção também está disponível se você clicar em **Detalhes** no cartão de **Ambientes** . A página **Ambientes** é aberta e, depois que você selecionar um ambiente, clique em **...** e selecione **Developer Console**.
+Essa opção também está disponível se você clicar em **Detalhes** no cartão **Ambientes**. A página **Ambientes** é aberta e, depois que você selecionar um ambiente, clique em **...** e selecione **Console do desenvolvedor**.
 
-## Logon local {#login-locally}
+## Fazer logon localmente {#login-locally}
 
-Selecione Logon **** local no menu suspenso no Cartão de **Ambientes** para fazer login localmente no Adobe Experience Manager.
+Selecione **Logon local** no menu suspenso no cartão **Ambientes** para efetuar login localmente no Adobe Experience Manager.
 
 ![](assets/environ-login-locally.png)
 
-Além disso, você pode fazer logon localmente na página de resumo de **Ambientes** .
+Além disso, você pode fazer logon localmente na página de resumo **Ambientes**.
 
 ![](assets/environ-login-locally-2.png)
 
