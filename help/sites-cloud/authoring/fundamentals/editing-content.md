@@ -270,7 +270,7 @@ Existem dois métodos de adição e/ou edição do conteúdo dos componentes:
 * Abra a caixa de diálogo de [componentes para editar](#component-edit-dialog).
 * [Arraste e solte um ativo](#drag-and-drop-assets-into-component) do navegador de ativos para adicionar diretamente o conteúdo.
 
-### Caixa de diálogo de edição de componente   {#component-edit-dialog}
+### Caixa de diálogo de edição de componente    {#component-edit-dialog}
 
 Você pode abrir um componente para editar o conteúdo usando o [ícone Editar (lápis) na barra de ferramentas do componente](#component-toolbar).
 
@@ -394,7 +394,7 @@ Você pode alternar facilmente para o [editor de modelo](/help/sites-cloud/autho
 
 É possível ver em qual modelo a página é baseada ao selecionar a página na [Exibição de coluna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) ou na [Exibição de lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
 
-## Status da Live Copy   {#live-copy-status}
+## Status da Live Copy    {#live-copy-status}
 
 O modo de página [Status da Live Copy](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) permite ter uma visão geral rápida do status da live copy e quais componentes são/não são herdados:
 
@@ -409,7 +409,7 @@ Por exemplo:
 
 As [anotações ](/help/sites-cloud/authoring/fundamentals/annotations.md) permitem que revisores e outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
 
-## Visualizar páginas   {#previewing-pages}
+## Visualizar páginas    {#previewing-pages}
 
 Existem duas opções para a visualização de uma página:
 
