@@ -3,9 +3,9 @@ title: Referências de desenvolvedor para [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1208'
 ht-degree: 1%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # [!DNL Assets] APIs e material de referência do desenvolvedor  {#assets-cloud-service-apis}
 
-O artigo contém material de referência e recursos para desenvolvedores de [!DNL Assets] como um Cloud Service. Inclui novo método de upload, referência de API e informações sobre o suporte fornecido em workflows de pós-processamento.
+O artigo contém material de referência e recursos para desenvolvedores de [!DNL Assets] como um [!DNL Cloud Service]. Inclui novo método de upload, referência de API e informações sobre o suporte fornecido em workflows de pós-processamento.
 
 ## Carregamento de ativos {#asset-upload-technical}
 
-[!DNL Experience Manager] como Cloud Service, fornece um novo método para carregar ativos no repositório. Os usuários podem carregar diretamente os ativos no armazenamento da nuvem usando a API HTTP. As etapas para carregar um arquivo binário são:
+[!DNL Experience Manager] como um  [!DNL Cloud Service] fornece um novo método para carregar ativos no repositório. Os usuários podem carregar diretamente os ativos no armazenamento da nuvem usando a API HTTP. As etapas para carregar um arquivo binário são:
 
 1. [Envie uma solicitação](#initiate-upload) HTTP. Informa [!DNL Experience Manage]ou a implementação da sua intenção de carregar um novo binário.
 1. [POST do conteúdo do binário para um ou mais URIs ](#upload-binary) fornecidos pelo pedido de início.
@@ -118,7 +118,7 @@ Para saber mais sobre os algoritmos de upload ou para criar seus próprios scrip
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-O novo método de carregamento só é suportado para [!DNL Adobe Experience Manager] como um Cloud Service. As APIs de [!DNL Adobe Experience Manager] 6.5 estão obsoletas. Os métodos relacionados ao upload ou atualização de ativos ou execuções (qualquer upload binário) estão obsoletos nas seguintes APIs:
+O novo método de carregamento só é suportado para [!DNL Adobe Experience Manager] como um [!DNL Cloud Service]. As APIs de [!DNL Adobe Experience Manager] 6.5 estão obsoletas. Os métodos relacionados ao upload ou atualização de ativos ou execuções (qualquer upload binário) estão obsoletos nas seguintes APIs:
 
 * [API HTTP do Experience Manager Assets](mac-api-assets.md)
 * `AssetManager` API Java, como  `AssetManager.createAsset(..)`
@@ -138,7 +138,7 @@ Para a configuração do fluxo de trabalho de pós-processamento, use os workflo
 
 Os clientes que atualizam de versões anteriores do [!DNL Experience Manager] podem usar os microserviços de ativos para processar ativos. Os microserviços de ativos nativos na nuvem são muito mais simples de configurar e usar. Algumas etapas do fluxo de trabalho usadas no fluxo de trabalho [!UICONTROL DAM Update Asset] na versão anterior não são suportadas.
 
-[!DNL Experience Manager] como Cloud Service, suporte as seguintes etapas do fluxo de trabalho:
+[!DNL Experience Manager] como  [!DNL Cloud Service] suporte para as seguintes etapas do fluxo de trabalho:
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -193,5 +193,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [O Experience Cloud como um SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) Cloud Service.
+* [O Experience Cloud como  [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
