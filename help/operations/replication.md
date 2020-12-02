@@ -12,23 +12,23 @@ ht-degree: 2%
 
 # Replicação {#replication}
 
-A Adobe Experience Manager como Cloud Service usa o recurso de Distribuição [de conteúdo](https://sling.apache.org/documentation/bundles/content-distribution.html) Sling para mover o conteúdo para replicar para um serviço de pipeline executado no Adobe I/O que está fora do tempo de execução AEM.
+A Adobe Experience Manager como Cloud Service usa o recurso [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover o conteúdo para replicar para um serviço de pipeline executado no Adobe I/O que está fora do tempo de execução AEM.
 
 >[!NOTE]
 >
->Leia [Distribuição](/help/core-concepts/architecture.md#content-distribution) para obter mais informações.
+>Leia [Distribution](/help/core-concepts/architecture.md#content-distribution) para obter mais informações.
 
 ## Métodos de publicação de conteúdo {#methods-of-publishing-content}
 
-### Desfazer/publicar rapidamente - Desfazer/publicar planejado {#publish-unpublish}
+### Publicação/Cancelamento Rápido - Desativado/Planejado {#publish-unpublish}
 
 Essas funcionalidades padrão de AEM para os autores não mudam com AEM Cloud Service.
 
-### Tempos ligado e desligado - Configuração do acionador {#on-and-off-times-trigger-configuration}
+### Tempos ligado e desligado - Acionar a configuração {#on-and-off-times-trigger-configuration}
 
-As possibilidades adicionais de Tempo **ligado** e Tempo **desligado** estão disponíveis na guia [Básico das Propriedades](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)da página.
+As possibilidades adicionais de **Tempo ligado** e **Tempo desligado** estão disponíveis na guia [Básico de Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
-Para realizar a replicação automática para isso, é necessário ativar a Replicação **** automática na configuração [](/help/implementing/deploying/configuring-osgi.md) OSGi **Configuração** do acionador desligado:
+Para realizar a replicação automática para isso, é necessário ativar **Replicação automática** na [configuração do OSGi](/help/implementing/deploying/configuring-osgi.md) **Configuração do acionador ativado**:
 
 ![Configuração do Acionador Desligado do OSGi](/help/operations/assets/replication-on-off-trigger.png)
 
@@ -38,7 +38,7 @@ Para executar uma ativação em árvore:
 
 1. No menu Start AEM, navegue até **Ferramentas > Implantação > Distribuição**
 2. Selecione o cartão **forwardPublisher**
-3. Uma vez na interface do console da Web do forwardPublisher, **selecione Distribuir**
+3. Uma vez na interface do console da Web do ForwardPublisher, **selecione Distribute**
 
    ![](assets/distribute.png "DistribuirDistribuir")
 4. Selecione o caminho no navegador de caminho, escolha adicionar um nó, árvore ou excluir conforme necessário e selecione **Enviar**
