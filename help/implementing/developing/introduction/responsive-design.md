@@ -38,7 +38,7 @@ Consulte os seguintes tópicos para obter informações sobre como implementar o
 
 Ao projetar, use a barra de ferramentas **Emulador** para pré-visualização das páginas para vários tamanhos de tela.
 
-## Antes de você se desenvolver {#before-you-develop}
+## Antes de desenvolver {#before-you-develop}
 
 Antes de desenvolver o aplicativo AEM que suporta suas páginas da Web, várias decisões de design devem ser tomadas. Por exemplo, você precisa ter as seguintes informações:
 
@@ -50,25 +50,25 @@ Antes de desenvolver o aplicativo AEM que suporta suas páginas da Web, várias 
 
 A estrutura típica do aplicativo AEM suporta todas as implementações responsivas de design:
 
-* Os componentes da página residem abaixo `/apps/<application_name>/components`
-* Os modelos residem abaixo `/apps/<application_name>/templates`
+* Os componentes da página ficam abaixo de `/apps/<application_name>/components`
+* Os modelos residem abaixo de `/apps/<application_name>/templates`
 
-## Uso de Query de mídia {#using-media-queries}
+## Usando Query de mídia {#using-media-queries}
 
 Os query de mídia permitem o uso seletivo de estilos CSS para renderização de página. AEM ferramentas e recursos de desenvolvimento permitem implementar query de mídia em seus aplicativos de modo eficiente e eficiente.
 
-O grupo W3C fornece a recomendação de Query [de](https://www.w3.org/TR/css3-mediaqueries/) mídia que descreve esse recurso CSS3 e a sintaxe.
+O grupo W3C fornece a recomendação [Query de mídia](https://www.w3.org/TR/css3-mediaqueries/) que descreve esse recurso CSS3 e a sintaxe.
 
 ### Criação do arquivo CSS {#creating-the-css-file}
 
 No arquivo CSS, defina query de mídia com base nas propriedades dos dispositivos que você está definindo como meta. A seguinte estratégia de implementação é eficaz para gerenciar estilos para cada query de mídia:
 
-* Use uma pasta [Biblioteca de](clientlibs.md) clientes para definir o CSS que é montado quando a página é renderizada.
+* Use uma [pasta Biblioteca do cliente](clientlibs.md) para definir o CSS que é montado quando a página é renderizada.
 * Defina cada query de mídia e os estilos associados em arquivos CSS separados. É útil usar nomes de arquivos que representem os recursos do dispositivo do query de mídia.
 * Defina estilos comuns a todos os dispositivos em um arquivo CSS separado.
 * No arquivo css.txt da pasta Client Library, solicite os arquivos CSS de lista, conforme necessário, no arquivo CSS montado.
 
-O tutorial [](develop-wknd-tutorial.md) WKND usa essa estratégia para definir estilos no design do site. O arquivo CSS usado pelo WKND está localizado em `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+O tutorial [WKND](develop-wknd-tutorial.md) usa essa estratégia para definir estilos no design do site. O arquivo CSS usado pelo WKND está localizado em `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
 <!--
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
