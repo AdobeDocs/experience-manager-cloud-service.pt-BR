@@ -33,4 +33,4 @@ Informações adicionais sobre as categorias e possíveis implicações e soluç
 >[!NOTE]
 >O Relatório do Analisador de Práticas Recomendadas acelera o processo de estimativa do tempo e custo necessários para a transição, fornecendo informações que, de outra forma, precisariam ser coletadas e avaliadas manualmente.
 
-Você também pode baixar o relatório do Analisador de práticas recomendadas da sua instância AEM. Refer to [Viewing the Best Practices Analyzer Report](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) for more details.
+Você também pode baixar o relatório do Analisador de práticas recomendadas da sua instância AEM. Consulte [Visualizando o Relatório do Analisador de Práticas Recomendadas](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obter mais detalhes.
