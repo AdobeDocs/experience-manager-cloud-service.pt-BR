@@ -35,9 +35,9 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
 | Remoção da versão | Adobe | Totalmente pertencente à Adobe, mas no futuro os clientes poderão configurar determinados parâmetros. |
 | Expurgação do Log de Auditoria | Adobe | Totalmente pertencente à Adobe, mas no futuro os clientes poderão configurar determinados parâmetros. |
 | Limpeza de binários do Lucene | Adobe | Não utilizado e, portanto, desativado pelo Adobe. |
-| Expurgação de Tarefa ad-hoc | Cliente | Deve ser feito de presente. <br> Substitua o nó de configuração predefinido da janela Manutenção em `/libs` criando propriedades na pasta `/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o `granite_TaskPurgeTask`) com as propriedades apropriadas. <br> Configure as propriedades do OSGI para ver a documentação da Tarefa de manutenção [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Remoção do fluxo de trabalho | Cliente | Deve ser feito de presente. <br> Substitua o nó de configuração predefinido da janela Manutenção em `/libs` criando propriedades na pasta`/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o `granite_WorkflowPurgeTask`) com as propriedades apropriadas. <br> Configure as propriedades do OSGI consulte a documentação da Tarefa de manutenção [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Remoção do projeto | Cliente | Deve ser feito de presente. <br> Substitua o nó de configuração predefinido da janela Manutenção em `/libs` criando propriedades na pasta `/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando um nó sob o nó acima (nomeie-o `granite_ProjectPurgeTask`) com as propriedades apropriadas. <br> Configurar propriedades OSGI consulte a documentação da Tarefa de manutenção [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Expurgação de Tarefa ad-hoc | Cliente | Deve ser feito de presente. <br> Substitua o nó de configuração predefinido da janela Manutenção em  `/libs` criando propriedades na pasta  `/apps/settings/granite/operations/maintenance/granite_weekly` ou  `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o  `granite_TaskPurgeTask`) com as propriedades apropriadas. <br> Configure as propriedades do OSGI para ver a documentação da Tarefa de manutenção  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Remoção do fluxo de trabalho | Cliente | Deve ser feito de presente. <br> Substitua o nó de configuração predefinido da janela Manutenção em  `/libs` criando propriedades sob a `/apps/settings/granite/operations/maintenance/granite_weekly` pasta  `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o  `granite_WorkflowPurgeTask`) com as propriedades apropriadas. <br> Configure as propriedades do OSGI consulte a documentação da Tarefa de manutenção  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Remoção do projeto | Cliente | Deve ser feito de presente. <br> Substitua o nó de configuração predefinido da janela Manutenção em  `/libs` criando propriedades na pasta  `/apps/settings/granite/operations/maintenance/granite_weekly` ou  `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando um nó sob o nó acima (nomeie-o  `granite_ProjectPurgeTask`) com as propriedades apropriadas. <br> Configurar propriedades OSGI consulte a documentação da Tarefa de manutenção  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 Os clientes podem programar cada uma das tarefas de Expurgação do Fluxo de Trabalho, Expurgação de Tarefa Ad-hoc e Manutenção de Expurgação do Projeto para serem executadas durante as janelas de manutenção diária, semanal ou mensal. Essas configurações devem ser editadas diretamente no controle de origem. A tabela abaixo descreve os parâmetros de configuração disponíveis para cada janela.
 
@@ -58,7 +58,7 @@ Os clientes podem programar cada uma das tarefas de Expurgação do Fluxo de Tra
     <td>Consulte a amostra de código 1 abaixo</td>
    <td>
     <ul>
-    <li><strong>windowSchedule</strong> = diário (este valor não deve ser alterado)</li>
+    <li><strong>windowSchedule</strong> = diariamente (este valor não deve ser alterado)</li>
     <li><strong>windowStartTime</strong> = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem começar a ser executadas.</li>
     <li><strong>windowEndTime</strong> = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem parar de ser executadas se ainda não tiverem sido concluídas.</li>
     </ul> </td> 
@@ -71,7 +71,7 @@ Os clientes podem programar cada uma das tarefas de Expurgação do Fluxo de Tra
     <td>Consulte o código exemplo 2 abaixo</td>
      <td>
     <ul>
-    <li><strong>windowSchedule</strong> = semanal (este valor não deve ser alterado)</li>
+    <li><strong>windowSchedule</strong> = week (este valor não deve ser alterado)</li>
     <li><strong>windowStartTime</strong> = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de manutenção associadas à Janela de manutenção semanal devem começar a ser executadas.</li>
     <li><strong>windowEndTime</strong> = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Semanal devem parar de ser executadas se ainda não tiverem sido concluídas.</li>
     <li><strong>windowScheduleWeekdays = Matriz de 2 valores de 1 a 7. por exemplo, [5,5].</strong> O primeiro valor da matriz é o dia de start quando a tarefa é programada e o segundo valor é o dia de término quando a tarefa seria interrompida. A hora exata do start e do fim é regida por windowStartTime e windowEndTime, respectivamente.</li>
@@ -85,7 +85,7 @@ Os clientes podem programar cada uma das tarefas de Expurgação do Fluxo de Tra
     <td>Consulte o código exemplo 3 abaixo</td>
      <td>
     <ul>
-    <li><strong>windowSchedule</strong> = diário (este valor não deve ser alterado)</li>
+    <li><strong>windowSchedule</strong> = diariamente (este valor não deve ser alterado)</li>
     <li><strong>windowStartTime</strong> = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de manutenção associadas à Janela de manutenção mensal devem começar a ser executadas.</li>
     <li><strong>windowEndTime</strong> = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem parar de ser executadas se ainda não tiverem sido concluídas.</li>
     <li><strong>windowScheduleWeekdays = Matriz de 2 valores de 1 a 7. por exemplo, [5,5].</strong> O primeiro valor da matriz é o dia de start quando a tarefa é programada e o segundo valor é o dia de término quando a tarefa seria interrompida. A hora exata do start e do fim é regida por windowStartTime e windowEndTime, respectivamente.</li>
