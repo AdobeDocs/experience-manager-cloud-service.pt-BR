@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Noções básicas sobre o Ambiente Build {#understanding-build-environment}
+# Noções básicas sobre o Ambiente de compilação {#understanding-build-environment}
 
 ## Criar detalhes do Ambiente {#build-environment-details}
 
@@ -34,18 +34,18 @@ O Cloud Manager cria e testa seu código usando um ambiente de compilação espe
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* O Maven é configurado no nível do sistema com um arquivo settings.xml que inclui automaticamente o repositório público do **Artefato** de Adobe. (Consulte Repositório [Adobe Public Maven](https://repo.adobe.com/) para obter mais detalhes).
+* O Maven é configurado no nível do sistema com um arquivo settings.xml que inclui automaticamente o repositório Adobe público **Artifato**. (Consulte [Repositório Maven Público do Adobe](https://repo.adobe.com/) para obter mais detalhes).
 
 >[!NOTE]
->Embora o Gerenciador de nuvem não defina uma versão específica do `jacoco-maven-plugin`, a versão usada deve ser pelo menos `0.7.5.201505241946`.
+>Embora o Cloud Manager não defina uma versão específica de `jacoco-maven-plugin`, a versão usada deve ser pelo menos `0.7.5.201505241946`.
 
 ### Uso do suporte ao Java 11 {#using-java-support}
 
 O Cloud Manager agora é compatível com a criação de projetos de clientes com Java 8 e Java 11. Por padrão, os projetos são criados usando o Java 8.
 
-Os clientes que desejam usar o Java 11 em seus projetos podem fazer isso usando o plug-in [](https://maven.apache.org/plugins/maven-toolchains-plugin/)Apache Maven Toolchain.
+Os clientes que desejam usar o Java 11 em seus projetos podem fazer isso usando o [Plug-in Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
 
-Para fazer isso, no arquivo pom.xml, adicione uma `<plugin>` entrada com a seguinte aparência:
+Para fazer isso, no arquivo pom.xml, adicione uma entrada `<plugin>` com a seguinte aparência:
 
 ```
 <plugin>
@@ -71,10 +71,10 @@ Para fazer isso, no arquivo pom.xml, adicione uma `<plugin>` entrada com a segui
 ```
 
 >[!NOTE]
->Os valores de fornecedor suportados são `oracle` e `sun`os valores de versão suportados são `1.8`, `1.11`e `11`.
+>Os valores de fornecedor suportados são `oracle` e `sun`e os valores de versão suportados são `1.8`, `1.11` e `11`.
 
 >[!NOTE]
->A compilação do projeto do Gerenciador de nuvem ainda está usando o Java 8 para chamar o Maven, portanto, verificar ou impor a versão do Java configurada no plug-in da cadeia de ferramentas por meio de plug-ins como o Plug-in [](https://maven.apache.org/enforcer/maven-enforcer-plugin/) Apache Maven Execcer não funciona e esses plug-ins não devem ser usados.
+>A compilação do projeto do Gerenciador de nuvem ainda está usando o Java 8 para chamar o Maven, portanto, verificar ou impor a versão do Java configurada no plug-in da cadeia de ferramentas por meio de plug-ins como o [Plug-in do Apache Maven Execcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) não funciona e esses plug-ins não devem ser usados.
 
 ## Variáveis de ambiente {#environment-variables}
 
@@ -101,7 +101,7 @@ Para suportar isso, o Cloud Manager adiciona essas variáveis de ambiente padrã
 
 Em alguns casos, o processo de compilação de um cliente pode depender de variáveis de configuração específicas que não seriam adequadas para serem colocadas no repositório Git ou que precisariam variar entre execuções de pipeline usando a mesma ramificação.
 
-O Cloud Manager permite que essas variáveis sejam configuradas por meio da API do Cloud Manager ou da CLI do Cloud Manager por pipeline. As variáveis podem ser armazenadas como texto sem formatação ou como criptografadas em repouso. Em ambos os casos, as variáveis são disponibilizadas dentro do ambiente build como uma variável de ambiente que pode ser referenciada dentro do `pom.xml` arquivo ou de outros scripts de compilação.
+O Cloud Manager permite que essas variáveis sejam configuradas por meio da API do Cloud Manager ou da CLI do Cloud Manager por pipeline. As variáveis podem ser armazenadas como texto sem formatação ou como criptografadas em repouso. Em ambos os casos, as variáveis são disponibilizadas no ambiente build como uma variável de ambiente que pode ser referenciada no arquivo `pom.xml` ou em outros scripts build.
 
 Para definir uma variável usando a CLI, execute um comando como:
 
@@ -113,7 +113,7 @@ As variáveis atuais podem ser listadas:
 
 Os nomes de variáveis podem conter somente caracteres alfanuméricos e sublinhado (_). Por convenção, os nomes devem ser todos maiúsculos. Há um limite de 200 variáveis por pipeline, cada nome deve ter menos de 100 caracteres e cada valor deve ter menos de 2048 caracteres no caso de variáveis de tipo de string e 500 caracteres no caso de variáveis de tipo secretString.
 
-Quando usado em um `Maven pom.xml` arquivo, é útil mapear essas variáveis para as propriedades do Maven usando uma sintaxe semelhante a esta:
+Quando usado dentro de um arquivo `Maven pom.xml`, é útil mapear essas variáveis para as propriedades Maven usando uma sintaxe semelhante a esta:
 
 ```xml
         <profile>
@@ -131,7 +131,7 @@ Quando usado em um `Maven pom.xml` arquivo, é útil mapear essas variáveis par
 
 ## Instalação de pacotes adicionais do sistema {#installing-additional-system-packages}
 
-Algumas compilações exigem a instalação de pacotes adicionais do sistema para funcionar totalmente. Por exemplo, uma compilação pode chamar um script Python ou ruby e, como resultado, precisa ter um interpretador de idioma apropriado instalado. Isso pode ser feito chamando o plug-in [exec-maven](https://www.mojohaus.org/exec-maven-plugin/) para chamar a APT. Essa execução geralmente deve estar envolvida em um perfil Maven específico do Cloud Manager. Por exemplo, para instalar o python:
+Algumas compilações exigem a instalação de pacotes adicionais do sistema para funcionar totalmente. Por exemplo, uma compilação pode chamar um script Python ou ruby e, como resultado, precisa ter um interpretador de idioma apropriado instalado. Isso pode ser feito chamando [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) para chamar a APT. Essa execução geralmente deve estar envolvida em um perfil Maven específico do Cloud Manager. Por exemplo, para instalar o python:
 
 ```xml
         <profile>
