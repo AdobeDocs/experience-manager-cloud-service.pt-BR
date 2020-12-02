@@ -55,7 +55,7 @@ Dependendo da sua localização, você pode publicar:
 
 >[!NOTE]
 >
-> Para obter outras possibilidades, consulte Tempo **ligado** e Tempo **desligado** na guia [Básico das Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> Para obter outras possibilidades, consulte **Tempo ligado** e **Tempo desligado** na guia [Básico das Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Publicação por meio do Editor {#publishing-from-the-editor}
 
@@ -113,7 +113,7 @@ Para publicar uma página com a Publicação rápida:
 >
 >A Publicação rápida é uma publicação superficial, ou seja, apenas as páginas selecionadas são publicadas, sem incluir páginas filhas.
 
-#### Gerenciar publicação    {#manage-publication}
+#### Gerenciar publicação     {#manage-publication}
 
 A opção **Gerenciar publicação** oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
 
@@ -144,7 +144,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    Clicar no botão Adicionar conteúdo inicia o [navegador de caminho](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) para permitir a seleção de conteúdo.
 
-   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
+   Selecione as páginas necessárias e clique em **Selecione** para adicionar o conteúdo ao assistente ou em **Cancelar** para cancelar a seleção e voltar ao assistente.
 
    De volta ao assistente, é possível selecionar um item na lista para configurar suas opções adicionais, como:
 
@@ -212,11 +212,11 @@ De uma [maneira semelhante à publicação](#publishing-pages), uma ou mais pág
 * [No editor de páginas](#unpublishing-from-the-editor)
 * [Do console de sites](#unpublishing-from-the-console)
 
-### Desfazer a publicação por meio do editor    {#unpublishing-from-the-editor}
+### Desfazer a publicação por meio do editor     {#unpublishing-from-the-editor}
 
 Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a publicação da página** no menu **Informações da página**, da mesma maneira que faria para [publicar essa página](#publishing-from-the-editor).
 
-### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
+### Desfazer a publicação por meio do Console   {#unpublishing-from-the-console}
 
 Da mesma forma que você [usa a opção Gerenciar publicação para publicar](#manage-publication), também pode usá-la para desfazer a publicação.
 
