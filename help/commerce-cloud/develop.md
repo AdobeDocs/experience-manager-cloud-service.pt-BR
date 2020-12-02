@@ -32,7 +32,7 @@ Um ambiente de desenvolvimento local é recomendado para trabalhar com projetos 
 
 O complemento CIF é fornecido como um arquivo de recursos Sling. O arquivo zip disponível no Portal de distribuição de software inclui dois arquivos de recursos Sling, um para o autor no AEM e outro para instâncias de publicação do AEM.
 
-**Novo no AEM as a Cloud Service?** Consulte [um guia mais detalhado para configurar um ambiente de desenvolvimento local usando o AEM como um SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)Cloud Service.
+**Novo no AEM as a Cloud Service?** Consulte  [um guia mais detalhado para configurar um ambiente de desenvolvimento local usando o AEM como um SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) Cloud Service.
 
 ### Software necessário
 
@@ -47,7 +47,7 @@ Devem ser instalados:
 
 ### Acesso ao complemento CIF
 
-É possível baixar o complemento CIF como um arquivo zip no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). The zip file contains the CIF add-on as **Sling Feature archive**, it is not an AEM package. Observe que o acesso às listagens do SDK está limitado aos que têm uma licença do AEM as a Cloud Service.
+É possível baixar o complemento CIF como um arquivo zip no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). O arquivo zip contém o suplemento CIF como **Arquivo de recursos Sling**, ele não é um pacote AEM. Observe que o acesso às listagens do SDK está limitado aos que têm uma licença do AEM as a Cloud Service.
 
 >[!TIP]
 >
@@ -103,13 +103,13 @@ Exemplo para Mac OSX:
    ```
    O argumento `--proxyPartial` precisa receber uma string vazia.
 
-   Você pode testar o proxy GraphQL local apontando uma ferramenta de query GraphQL para `http://localhost:3002/graphql` e testando alguns query.
+   Você pode testar o proxy GraphQL local apontando uma ferramenta de query GraphQL para `http://localhost:3002/graphql` e testar alguns query.
 
 8. Faça logon no AEM SDK e configure o CIF para usar o servidor proxy GraphQL local
 
    Navegue até a configuração CIF Cloud Service (Ferramentas > Cloud Services > Configuração CIF). Abra a visualização de propriedades da configuração usada pelo seu projeto.
 
-   Para a `GraphQL Proxy Path` propriedade, use o terminal do servidor proxy local `http://localhost:3002/graphql`. Salve a configuração.
+   Para a propriedade `GraphQL Proxy Path`, use o terminal do servidor proxy local `http://localhost:3002/graphql`. Salve a configuração.
 
 >[!NOTE]
 >
