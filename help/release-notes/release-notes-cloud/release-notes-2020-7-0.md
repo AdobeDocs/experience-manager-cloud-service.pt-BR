@@ -30,11 +30,11 @@ Os conectores do [!DNL Experience Manager] as a Cloud Service para o [!DNL Adobe
 
 * As configurações agora são armazenadas em `/conf` e não em `/etc/cloudsettings` no repositório do Experience Manager.
 
-## [!DNL Adobe Experience Manager Assets] como um Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] como um Cloud Service  {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### Novidades em [!DNL Assets] {#what-is-new-assets}
 
-* O [!DNL Asset Compute Service] é um serviço dimensionável e extensível para processar ativos. Administrators can configure [!DNL Experience Manager] to invoke custom applications created using the [!DNL Asset Compute Service]. Os desenvolvedores podem usar o serviço para criar aplicativos personalizados especializados que atendam a casos de uso complexos. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available [!DNL Sensei] services. see [use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
+* O [!DNL Asset Compute Service] é um serviço dimensionável e extensível para processar ativos. Os administradores podem configurar [!DNL Experience Manager] para chamar aplicativos personalizados criados usando [!DNL Asset Compute Service]. Os desenvolvedores podem usar o serviço para criar aplicativos personalizados especializados que atendam a casos de uso complexos. Esse serviço da Web pode gerar miniaturas para diferentes tipos de arquivos, renderizações de imagem de alta qualidade de formatos de arquivo Adobe, codificar vídeos (futuros), extrair metadados, extrair texto completo como precursor para indexação e executar um ativo por meio de todos os serviços [!DNL Sensei] disponíveis. consulte [usar microserviços de ativos e perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).
 
 * A configuração inicial do [!DNL Dynamic Media] no [!DNL Experience Manager] as a Cloud Service foi aprimorada para ficar mais robusta. Agora, ela informa o progresso dos processos aos administradores.
 
@@ -94,7 +94,7 @@ A data de lançamento da versão 2020.7.0 do [!UICONTROL Cloud Manager] é 9 de 
 * Agora há suporte para Repositórios de Maven Privado com vínculo de autenticação.
 
 * O container de build do Cloud Manager agora é compatível com Java 8 e Java 11.
-Consulte [Uso do suporte](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) Java 11 para obter mais detalhes.
+Consulte [Usando o suporte Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-cm}
 
