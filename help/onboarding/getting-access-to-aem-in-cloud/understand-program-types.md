@@ -20,8 +20,8 @@ O diagrama a seguir mostra a hierarquia de entidades no Gerenciador de nuvem.
 
 ## Tipos de programas {#program-types}
 
-Um usuário pode criar um **Sandbox** ou um programa **regular** .
+Um usuário pode criar um programa **Sandbox** ou **Regular**.
 
-Geralmente, uma *caixa de proteção* é criada para servir aos propósitos de treinamento, execução de demonstração, ativação, POC ou documentação. Não se trata de transportar tráfego em direto e de ter restrições que um programa regular não irá impor. Ele incluirá Sites e Ativos e será entregue automaticamente preenchido com uma ramificação Git que inclui código de amostra, um ambiente Dev e um pipeline de não produção.
+Uma *caixa de proteção* é normalmente criada para servir os propósitos de treinamento, execução de demonstração, ativação, POC&#39;s ou documentação. Não se trata de transportar tráfego em direto e de ter restrições que um programa regular não irá impor. Ele incluirá Sites e Ativos e será entregue automaticamente preenchido com uma ramificação Git que inclui código de amostra, um ambiente Dev e um pipeline de não produção.
 
-Um programa ** regular é criado para ativar o tráfego ao vivo no momento apropriado no futuro.
+Um *programa regular* é criado para ativar o tráfego ao vivo no momento apropriado no futuro.
