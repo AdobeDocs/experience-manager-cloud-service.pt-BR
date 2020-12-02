@@ -20,27 +20,27 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Para obter mais informações sobre o que isso significa em relação a problemas de privacidade, consulte o Centro de privacidade do [Adobe](https://www.adobe.com/privacy.html).
+>Para obter mais informações sobre o que isso significa em relação a problemas de privacidade, consulte [Centro de Privacidade do Adobe](https://www.adobe.com/privacy.html)Adobe.
 
 A Adobe Experience Manager como Cloud Service Sites está pronta para ajudar os clientes com suas obrigações de privacidade de dados e conformidade de proteção. Esta página orienta os clientes pelos procedimentos para lidar com essas solicitações no AEM Sites. Ela descreve a localização dos dados privados armazenados e como removê-los manualmente ou com código.
 
-Para obter mais informações, consulte o Centro [de privacidade do](https://www.adobe.com/privacy.html)Adobe.
+Para obter mais informações, consulte o [Centro de privacidade do Adobe](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->Consulte a [Adobe Experience Manager como uma Prontidão para proteção de dados e regulamentos](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) de privacidade de dados para obter mais detalhes.
+>Consulte [Adobe Experience Manager como Cloud Service para Prontidão para Proteção de Dados e Regulamentos de Privacidade de Dados](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) para obter mais detalhes.
 
 ## Nível de criação do AEM {#aem-author-tier}
 
-As contas de usuário e o conteúdo UGC no servidor do autor são abordados na documentação [do](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
+As contas de usuário e o conteúdo UGC no servidor do autor são abordados na [AEM documentação do Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 ## Nível de publicação do AEM {#aem-publish-tier}
 
-As contas de usuário usadas para autenticar visitantes no site e o conteúdo UGC no servidor de publicação são abordados na documentação [do](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
+As contas de usuário usadas para autenticar visitantes no site e o conteúdo UGC no servidor de publicação são abordados na [documentação AEM Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 Por padrão, os componentes da AEM Sites não armazenam dados de formulário inseridos por visitantes no servidor de publicação. É recomendável encaminhar os dados para um sistema de terceiros, ou para a Adobe Campaign, para processamento adicional.
 
-## Inclusão/recusa {#opt-in-opt-out}
+## Inclusão/exclusão {#opt-in-opt-out}
 
 <!--
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
@@ -53,9 +53,9 @@ Para recusar:
 1. Vá até:
    [Centro de privacidade do Adobe - Recusar](https://www.adobe.com/privacy/opt-out.html)
 
-1. Role para baixo até **Serviços** - Dados **de uso do serviço** Experience Cloud.
+1. Role para baixo até **Services** - **dados de uso do serviço Experience Cloud**.
 
-1. Selecione o link referenciado; atualmente intitulado **aqui**.
+1. Selecione o link referenciado; atualmente denominado **here**.
 
 1. Você receberá os seguintes detalhes, juntamente com as opções para opt out ou em:
 
@@ -63,26 +63,26 @@ Para recusar:
 
       Se você excluir o cookie de opção de não participação, ou se você alterar computadores ou navegadores da Web, precisará recusar novamente.
 
-      Recusar - Excluir-me da agregação e análise da sessão do visitante (instalar o cookie de `amcglobal.sc.omtrdc.net` recusa) - Clique aqui.
+      Recusar - exclua-me da agregação e análise da sessão do visitante (instale o cookie de `amcglobal.sc.omtrdc.net` opção de não participação) - Clique aqui.
 
-      Inclusão - Inclua-me na agregação e análise da sessão do visitante (não instale o cookie de `amcglobal.sc.omtrdc.net` opção de não participação) - Clique aqui.
+      Inclusão - Inclua-me na agregação e análise da sessão do visitante (não instale o `amcglobal.sc.omtrdc.net` cookie de opção de não participação) - Clique aqui.
    Siga as etapas acima para acessar os links reais.
 
    >[!NOTE]
    >
-   > Há uma outra descrição no **2. Privacidade.** dos Termos de uso [gerais do](https://www.adobe.com/legal/terms.html)Adobe.
+   > Há uma descrição adicional em **2. Privacidade.** dos Termos de uso [ gerais do ](https://www.adobe.com/legal/terms.html)Adobe.
 
 ## Analytics Foundation {#analytics-foundation}
 
 A AEM Sites inclui uma integração opcional com a Analytics Foundation que usa funcionalidade no Adobe Analytics On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de pessoas relacionadas ao Adobe Analytics, consulte [Adobe Analytics e Privacidade](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)de dados.
+Para obter mais informações sobre como gerenciar solicitações de pessoas relacionadas ao Adobe Analytics, consulte [Adobe Analytics e Privacidade de dados](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
 
 ## Fundação de personalização por Público alvo {#personalization-foundation-by-target}
 
 A AEM Sites inclui uma integração opcional com a Personalization Foundation por Público alvo que usa funcionalidade no Adobe Target On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de pessoas relacionadas à Adobe Target, consulte [Adobe Target - Privacidade e Regulamento](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)Geral de Proteção de Dados.
+Para obter mais informações sobre como gerenciar solicitações de pessoas relacionadas à Adobe Target, consulte [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -199,7 +199,7 @@ Para que a persistência da pré-visualização seja usada pelo ContextHub, o us
 
    * O ContextHub fornece as seguintes camadas de persistência de dados:
 
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
+      * `ContextHub.Utils.Persistence.Modes.LOCAL` (padrão)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
@@ -244,7 +244,7 @@ Para limpar a persistência do ContextHub:
 
 * Para limpar todas as camadas de persistência do ContextHub, o código apropriado deve ser chamado para todas as camadas:
 
-   * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
+   * `ContextHub.Utils.Persistence.Modes.LOCAL` (padrão)
    * `ContextHub.Utils.Persistence.Modes.SESSION`
    * `ContextHub.Utils.Persistence.Modes.COOKIE`
    * `ContextHub.Utils.Persistence.Modes.WINDOW`
