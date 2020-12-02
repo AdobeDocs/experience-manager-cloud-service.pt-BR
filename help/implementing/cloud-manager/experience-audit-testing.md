@@ -22,7 +22,7 @@ Ele valida o processo de implantação e ajuda a garantir que as alterações im
 
 O Experience Audit no Cloud Manager garante que a experiência digital dos usuários finais no site possa ser mantida com os mais altos padrões. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
 
-## Como entender os resultados da auditoria de experiência {#understanding-experience-audit-results}
+## Compreensão dos resultados da auditoria de experiência {#understanding-experience-audit-results}
 
 A auditoria de experiência fornece resultados de teste em nível de página agregações e detalhados por meio da página de execução do pipeline de produção.
 
@@ -43,18 +43,18 @@ A pontuação do nível de agregação obtém a pontuação média das páginas 
 
 O valor da métrica Alterar pode ser um dos seguintes:
 
-* **Valor** positivo - as páginas melhoraram no teste selecionado desde a última execução do pipeline de produção
+* **Valor**  positivo - as páginas melhoraram no teste selecionado desde a última execução do pipeline de produção
 
-* **Valor** negativo - as páginas regrediram no teste selecionado desde a última execução do pipeline de produção
+* **Valor**  negativo - as páginas regrediram no teste selecionado desde a última execução do pipeline de produção
 
-* **Sem alteração** - as páginas tiveram a mesma pontuação desde a última execução do pipeline de produção
+* **Sem alteração**  - as páginas tiveram a mesma pontuação desde a última execução do pipeline de produção
 
 * **N/D** - não havia pontuação anterior disponível para comparação
 
    ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
 
 
-### Pontuações no nível da página {#page-level-scores}
+### Pontuações em nível de página {#page-level-scores}
 
 Ao analisar qualquer um dos testes, é possível visualizar uma pontuação mais detalhada no nível da página. O usuário poderá ver a pontuação das páginas individuais do teste específico junto com a alteração da hora anterior em que o teste foi executado.
 
