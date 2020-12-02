@@ -16,8 +16,11 @@ O status dos certificados SSL pode ser entendido rapidamente na página de certi
 
 Você pode identificar o status de um certificado SSL dos seguintes esquemas de cores:
 
-* **Verde** Indica que seu certificado é válido por pelo menos 60 dias no futuro.
+* ****
+VerdeIndica que seu certificado é válido por pelo menos 60 dias no futuro.
 
-* **Laranja** Indica que seu certificado deve expirar em menos de 60 dias. É hora de garantir que você tenha um plano para renovar seu certificado e substituí-lo pela interface do usuário do Cloud Manager, a fim de evitar possíveis acessos ou interrupções no site. O Cloud Manager enviará notificações regulares na interface do usuário para alertá-lo sobre uma expiração iminente do certificado.
+* ****
+LaranjaIndica que seu certificado deve expirar em menos de 60 dias. É hora de garantir que você tenha um plano para renovar seu certificado e substituí-lo pela interface do usuário do Cloud Manager, a fim de evitar possíveis acessos ou interrupções no site. O Cloud Manager enviará notificações regulares na interface do usuário para alertá-lo sobre uma expiração iminente do certificado.
 
-* **Vermelho** Indica que, apesar de várias notificações, seu certificado SSL expirou.
+* ****
+VermelhoIndica que, apesar de várias notificações, seu certificado SSL expirou.
