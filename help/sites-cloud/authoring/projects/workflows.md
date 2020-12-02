@@ -14,9 +14,9 @@ ht-degree: 78%
 
 Os fluxos de trabalho de projeto disponíveis para uso imediato incluem os seguintes:
 
-* **Fluxo de trabalho** de aprovação de projeto - Esse fluxo de trabalho permite que você atribua conteúdo a um usuário, revise e aprove.
-* **Solicitar lançamento** - um fluxo de trabalho que solicita uma inicialização.
-* **Landing page** de solicitação - esse fluxo de trabalho solicita uma landing page.
+* **Fluxo de trabalho**  de aprovação de projeto - Esse fluxo de trabalho permite que você atribua conteúdo a um usuário, revise e aprove.
+* **Solicitar lançamento**  - um fluxo de trabalho que solicita uma inicialização.
+* **Solicitar Landing page**  - esse fluxo de trabalho solicita uma landing page.
 * **Solicitar email** - Fluxo de trabalho para solicitar um email.
 * **Criar e traduzir cópia DAM e Criar cópia de idioma DAM** - Cria binários, metadados e tags traduzidos para ativos e pastas.
 
@@ -35,7 +35,7 @@ Dependendo de qual modelo de projeto você selecionar, certos fluxos de trabalho
 
 >[!NOTE]
 >
->&amp;ast; These workflows are not started from the **Workflow** tile in Projects. Consulte Criação de cópias de idioma para ativos.
+>&amp;ast; Esses workflows não são iniciados a partir do bloco **Workflow** em Projetos. Consulte Criação de cópias de idioma para ativos.
 <!--
 >&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
 -->
@@ -69,7 +69,7 @@ Esse fluxo de trabalho permite solicitar um manuscrito de um usuário e depois a
 
 No fluxo de trabalho Aprovação de projeto, você atribui conteúdo a um usuário e depois revisa e aprova esse conteúdo.
 
-1. In your Simple project, select the **`+`** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. No projeto Simples, selecione o sinal **`+`** no bloco **Workflows** e selecione **Fluxo de Trabalho de Aprovação de Projeto**.
 1. Insira um título e selecione a quem ele deve ser atribuído na lista Equipe. Se aplicável, insira uma descrição, um caminho de conteúdo, uma prioridade de tarefa e uma data de vencimento.
 
    ![Solicitar aprovação](/help/sites-cloud/authoring/assets/projects-approval.png)
@@ -87,7 +87,7 @@ Esse fluxo de trabalho permite solicitar um lançamento.
 
    ![Solicitar inicialização](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. Clique em **Criar**. O fluxo de trabalho é iniciado. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
+1. Clique em **Criar**. O fluxo de trabalho é iniciado. O fluxo de trabalho é exibido na lista **Workflows** (clique em elipses **...** no bloco **Workflows** para acessar esta lista).
 
 ## Criar (e Traduzir) fluxo de trabalho de cópia de idioma para ativos {#create-and-translate-language-copy-workflow-for-assets}
 
