@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Adobe Experience Manager como uma base Cloud Service para a preparação para a proteção de dados e para os regulamentos de privacidade de dados {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# A Adobe Experience Manager como uma Cloud Service Foundation Readiness para Proteção de Dados e Regulamentos de Privacidade de Dados {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Para obter mais informações sobre o que isso significa em relação a problemas de privacidade, consulte o Centro de privacidade do [Adobe](https://www.adobe.com/privacy.html).
+>Para obter mais informações sobre o que isso significa em relação a problemas de privacidade, consulte [Centro de Privacidade do Adobe](https://www.adobe.com/privacy.html)Adobe.
 
 ## Suporte à privacidade e proteção de dados da AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
@@ -28,7 +28,7 @@ No nível AEM Foundation, os Dados pessoais armazenados são mantidos no Perfil 
 
 ## Acessar um Perfil de usuário {#accessing-a-user-profile}
 
-### Etapas manuais {#manual-steps}
+### Etapas Manuais {#manual-steps}
 
 1. Abra o console Administração do usuário, navegando até **[!UICONTROL Ferramentas - Segurança - Usuários]** ou navegando diretamente para `https://<serveraddress>:<serverport>/security/users.html`
 
@@ -40,7 +40,7 @@ No nível AEM Foundation, os Dados pessoais armazenados são mantidos no Perfil 
 
    ![procurar conta](assets/dpp-foundation-01.png)
 
-1. Por fim, abra o perfil do usuário clicando nele e, em seguida, marque na guia **[!UICONTROL Detalhes]** .
+1. Por fim, abra o perfil do usuário clicando nele e, em seguida, marque a guia **[!UICONTROL Detalhes]**.
 
    ![perfil do usuário](assets/dpp-foundation-02.png)
 
@@ -75,14 +75,14 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## Desabilitar um usuário e Excluir os Perfis associados {#disabling-a-user-and-deleting-the-associated-profiles}
+## Desabilitando um usuário e excluindo os Perfis associados {#disabling-a-user-and-deleting-the-associated-profiles}
 
-### Desativar usuário {#disable-user}
+### Desabilitar Usuário {#disable-user}
 
 1. Abra o console Administração do usuário e procure o usuário em questão, conforme descrito acima.
 2. Passe o mouse sobre o usuário e clique no ícone de seleção. O perfil ficará cinza, indicando que está selecionado.
 
-3. Pressione o botão **Desativar** no menu superior para desativar o usuário:
+3. Pressione o botão **Disable** no menu superior para desativar o usuário:
 
    ![desativar conta](assets/dpp-foundation-03.png)
 
@@ -92,7 +92,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![conta desativada](assets/dpp-foundation-04.png)
 
-### Excluir informações do Perfil do usuário {#delete-user-profile-information}
+### Excluir informações de Perfil do usuário {#delete-user-profile-information}
 
 >[!NOTE]
 >
