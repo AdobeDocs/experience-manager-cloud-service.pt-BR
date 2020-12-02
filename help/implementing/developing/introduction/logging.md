@@ -19,7 +19,7 @@ Os níveis de registro e registro AEM são gerenciados em arquivos de configura�
 * AEM registro, que executa o registro em log no nível do aplicativo AEM
 * Apache HTTPD Web Server/Dispatcher logging, que executa o log do servidor da Web e do Dispatcher na camada Publicar.
 
-## Registro de AEM {#aem-loggin}
+## AEM Registrando {#aem-loggin}
 
 O registro no nível do aplicativo AEM é realizado por três registros:
 
@@ -186,7 +186,7 @@ A seguir estão exemplos das configurações de registro recomendadas (usando o 
 }
 ```
 
-## Registro de solicitação HTTP AEM {#aem-http-request-logging}
+## AEM Registro de Solicitação HTTP {#aem-http-request-logging}
 
 AEM como um Cloud Service de registro de solicitação HTTP fornece informações sobre as solicitações HTTP feitas para AEM suas respostas HTTP em tempo hábil. Esse log é útil para entender as Solicitações HTTP feitas para AEM e a ordem em que são processadas e respondidas.
 
@@ -325,7 +325,7 @@ Esse conjunto de registros fornece insights sobre solicitações HTTP para o AEM
 
 O log de acesso do Apache HTTP Web Server fornece instruções para cada solicitação HTTP que chega ao servidor Web/Dispatcher da camada de publicação. Observe que as solicitações que são atendidas a partir de um CDN upstream não são refletidas nesses logs.
 
-Consulte as informações sobre o formato do log de erros na documentação [do cache](https://httpd.apache.org/docs/2.4/logs.html#accesslog)oficial.
+Consulte as informações sobre o formato do log de erros na [documentação do cache oficial](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
 **Exemplo de saída de registro**
 
@@ -390,11 +390,11 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 
 Este registro não é configurável em AEM como um Cloud Service.
 
-## Log de Erros do Servidor Web HTTPD Apache {#apache-httpd-web-server-error-log}
+## Log de erros do servidor Web Apache HTTPD {#apache-httpd-web-server-error-log}
 
 O log de erros do Apache HTTP Web Server fornece instruções para cada erro no servidor Web/Dispatcher da camada de publicação.
 
-Consulte as informações sobre o formato do log de erros na documentação [do cache](https://httpd.apache.org/docs/2.4/logs.html#errorlog)oficial.
+Consulte as informações sobre o formato do log de erros na [documentação do cache oficial](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
 **Exemplo de saída de registro**
 
@@ -437,7 +437,7 @@ Os níveis de log mod_rewrite são definidos pela variável REWRITE_LOG_LEVEL no
 
 Ele pode ser definido como Erro, Aviso, Informações, Depuração e Trace1 - Trace8, com um valor padrão de Aviso. Para depurar RewriteRules, é recomendável elevar o nível de log para Trace2.
 
-Consulte a documentação [do módulo](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) mod_rewrite para obter mais informações.
+Consulte a documentação do módulo [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) para obter mais informações.
 
 Para definir o nível de log por ambiente, use a ramificação condicional apropriada no arquivo global.var, conforme descrito abaixo:
 
@@ -492,7 +492,7 @@ Define REWRITE_LOG_LEVEL Debug
 </tr>
 <tr>
 <td>Duração</td>
-<td>1949ms</td>
+<td>1949 ms</td>
 </tr>
 <tr>
 <td>Exploração</td>
@@ -517,7 +517,7 @@ Ele pode ser definido como Erro, Aviso, Informações, Depuração e Trace1, com
 
 Embora o registro do Dispatcher suporte vários outros níveis de granularidade de registro, o AEM como Cloud Service recomenda o uso dos níveis descritos abaixo.
 
-Para definir o nível de log por ambiente, use a ramificação condicional apropriada no `global.var` arquivo, conforme descrito abaixo:
+Para definir o nível de log por ambiente, use a ramificação condicional apropriada no arquivo `global.var`, conforme descrito abaixo:
 
 ```
 Define DISP_LOG_LEVEL Debug
@@ -538,7 +538,7 @@ Define DISP_LOG_LEVEL Debug
 
 ### Ambientes em nuvem {#cloud-environments}
 
-AEM como um Cloud Service para os serviços em nuvem podem ser acessados por meio do download pela interface do Gerenciador de nuvem ou do direcionamento de registros na linha de comando usando a interface de linha de comando do Adobe I/O. Para obter mais informações, consulte a documentação [de registro do Gerenciador de](/help/implementing/cloud-manager/manage-logs.md)nuvem.
+AEM como um Cloud Service para os serviços em nuvem podem ser acessados por meio do download pela interface do Gerenciador de nuvem ou do direcionamento de registros na linha de comando usando a interface de linha de comando do Adobe I/O. Para obter mais informações, consulte a [documentação de registro do Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
 
 ### SDK local {#local-sdk}
 
@@ -550,12 +550,12 @@ AEM logs estão localizados na pasta `crx-quickstart/logs`, onde os seguintes lo
 * AEM registro de solicitação HTTP: `request.log`
 * Log de acesso HTTP AEM: `access.log`
 
-Os registros de camada do Apache, incluindo o dispatcher, estão no container Docker que contém o Dispatcher. Consulte a documentação [do](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher para obter informações sobre como start o Dispatcher.
+Os registros de camada do Apache, incluindo o dispatcher, estão no container Docker que contém o Dispatcher. Consulte a [documentação do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) para obter informações sobre como start o Dispatcher.
 
 Para recuperar os logs:
 
 1. Na linha de comando, digite `docker ps` para lista dos container
-1. Para efetuar logon no container, digite &quot;`docker exec -it <container> /bin/sh`&quot;, onde `<container>` está a ID do container do dispatcher da etapa anterior
+1. Para efetuar logon no container, digite &quot;`docker exec -it <container> /bin/sh`&quot;, onde `<container>` é a id do container do dispatcher da etapa anterior
 1. Navegue até a raiz do cache em `/mnt/var/www/html`
 1. Os registros estão em `/etc/httpd/logs`
 1. Inspect os registros: eles podem ser acessados na pasta XYZ, onde os seguintes registros podem ser exibidos:
@@ -578,13 +578,13 @@ Dependendo do tráfego e da quantidade de declarações de log gravadas pela Dep
 * Feito judiciosamente e apenas quando absolutamente necessário
 * Revertido para os níveis apropriados e reimplantado o mais rápido possível
 
-## Logs de partes divididas {#splunk-logs}
+## Logs de tronco {#splunk-logs}
 
 Os clientes que têm contas Splunk podem solicitar, por meio do ticket de suporte ao cliente, que seus registros de Cloud Service AEM sejam encaminhados ao índice apropriado. Os dados de registro equivalem ao que está disponível por meio dos downloads de log do Cloud Manager, mas os clientes podem achar conveniente aproveitar os recursos do query disponíveis no Splunk product.
 
 A largura de banda de rede associada aos logs enviados ao Splunk é considerada parte do uso de E/S de rede do cliente.
 
-### Ativação do encaminhamento de partes {#enabling-splunk-forwarding}
+### Habilitando o encaminhamento de partes divididas {#enabling-splunk-forwarding}
 
 Na solicitação de suporte, os clientes devem indicar:
 
@@ -622,7 +622,7 @@ Programa 123, Envs. Desenvolvedor
 * Porta dividida: 443
 * Token HEC do bloco: ABC123
 
-Pode ser suficiente que o mesmo índice Splunk seja usado para cada ambiente, caso em que o `aem_env_type` campo pode ser usado para diferenciar com base nos valores dev, stage e prod. Se houver vários ambientes dev, o `aem_env_id` campo também poderá ser usado. Algumas organizações podem escolher um índice separado para os registros de ambientes de produção se o índice associado limitar o acesso a um conjunto reduzido de usuários do Splunk.
+Pode ser suficiente que o mesmo índice Splunk seja usado para cada ambiente, nesse caso, o campo `aem_env_type` pode ser usado para diferenciar com base nos valores dev, stage e prod. Se houver vários ambientes dev, o campo `aem_env_id` também poderá ser usado. Algumas organizações podem escolher um índice separado para os registros de ambientes de produção se o índice associado limitar o acesso a um conjunto reduzido de usuários do Splunk.
 
 Esta é uma entrada de registro de exemplo:
 
