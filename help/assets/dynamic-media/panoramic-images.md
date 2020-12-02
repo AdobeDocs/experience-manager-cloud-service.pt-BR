@@ -10,13 +10,13 @@ ht-degree: 2%
 ---
 
 
-# Panoramic images{#panoramic-images}
+# Imagens panorâmicas{#panoramic-images}
 
 Esta seção descreve como trabalhar com o visualizador Imagem panorâmica para renderizar imagens panorâmicas esféricas para uma experiência de visualização de 360° imersiva de uma sala, propriedade, local ou paisagem.
 
-See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
+Consulte também [Gerenciar predefinições do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![panoramic-image2](assets/panoramic-image2.png)
+![panorâmica-image2](assets/panoramic-image2.png)
 
 ## Fazer upload de ativos para uso com o Visualizador de imagem panorâmica {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
@@ -26,9 +26,9 @@ Para um ativo carregado se qualificar como uma imagem de panorama esférica que 
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Marcado com as palavras-chave `equirectangular`, ou `spherical`e `panorama`, ou `spherical` e `panoramic`. Consulte [Uso de tags](/help/sites-cloud/authoring/features/tags.md).
+* Marcado com as palavras-chave `equirectangular`, ou `spherical` e `panorama`, ou `spherical` e `panoramic`. Consulte [Usando tags](/help/sites-cloud/authoring/features/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
+Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos panorâmicos para a página de detalhes do ativo e o componente `Panoramic Media` WCM.
 
 Para fazer upload de ativos para uso com o visualizador de Imagem panorâmica, consulte [Fazer upload de ativos](/help/assets/manage-digital-assets.md#uploading-assets).
 
@@ -79,6 +79,6 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 Consulte [Visualizar ativos](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publicação de imagens panorâmicas {#publishing-panoramic-images}
+## Publicar imagens panorâmicas {#publishing-panoramic-images}
 
-Consulte [Publicação de ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
