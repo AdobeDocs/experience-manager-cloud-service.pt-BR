@@ -34,7 +34,7 @@ Veja abaixo os diferentes modelos de implantação da Commerce Integration Frame
 
 >[!NOTE]
 >
->Para obter documentação adicional sobre como usar o CIF com AEM Managed Service ou AEM On-premise, consulte a [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Para obter documentação adicional sobre como usar CIF com AEM Managed Service ou AEM On-premise, consulte [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
 
 >[!NOTE]
 >
