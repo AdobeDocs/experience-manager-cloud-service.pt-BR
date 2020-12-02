@@ -67,7 +67,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 1. Configure as classes CSS que deseja disponibilizar para os autores de conteúdo, conforme descrito na seção [Como um autor de modelo](#as-a-template-author).
 1. Os autores de conteúdo podem usar os estilos conforme descrito na seção [Como um autor de conteúdo](#as-a-content-author).
 
-### Como autor de conteúdo  {#as-a-content-author}
+### Como autor de conteúdo   {#as-a-content-author}
 
 1. Depois de instalar o projeto WKND, navegue até a página inicial principal no idioma inglês da WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e edite a página.
 1. Selecione um componente de **Título** mais abaixo da página
@@ -82,7 +82,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
    >
    >Neste exemplo, os estilos de **Cores** (**Preto**, **Branco** e **Cinza**) são mutuamente exclusivos, enquanto as opções de **Estilo** (**Sublinhado**, **Alinhar à direita** e **Miniespaçamento**) podem ser combinadas. Isso pode ser [configurado no modelo como o autor do modelo](#as-a-template-author).
 
-### Como autor de modelo  {#as-a-template-author}
+### Como autor de modelo   {#as-a-template-author}
 
 1. Ao editar a página inicial mestre em inglês do WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite o modelo da página em **Informações da página -> Editar modelo**.
 
@@ -105,7 +105,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) in order to work.
+>As classes CSS (bem como qualquer Javascript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas do cliente](/help/implementing/developing/introduction/clientlibs.md) para funcionarem.
 
 ## Configurar {#setup}
 
@@ -141,7 +141,7 @@ A guia Editar pode ser incluída de maneira semelhante na guia Design:
 >
 >A guia Estilos na caixa de diálogo Editar não está habilitada por padrão.
 
-### Estilos com nomes de elemento  {#styles-with-element-names}
+### Estilos com nomes de elemento   {#styles-with-element-names}
 
 Um desenvolvedor também pode configurar uma lista de nomes de elementos permitidos para os estilos no componente por meio da propriedade de matriz da sequência `cq:styleElements`. Na guia Estilos da política na caixa de diálogo de design, o autor do modelo também pode escolher um nome de elemento para definir cada estilo. Isso definirá o nome de elemento do wrapper.
 
