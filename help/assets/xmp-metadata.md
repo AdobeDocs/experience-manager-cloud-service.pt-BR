@@ -15,7 +15,7 @@ ht-degree: 21%
 
 XMP (Plataforma de metadados extensível) é o padrão de metadados usado pela AEM Assets para todo o gerenciamento de metadados. XMP fornece um formato padrão para a criação, o processamento e o intercâmbio de metadados para uma grande variedade de aplicativos.
 
-Além de oferecer codificação de metadados universais que podem ser incorporados em todos os formatos de arquivo, XMP fornece um modelo [de](#xmp-core-concepts) conteúdo avançado e é [suportado pelo Adobe](#advantages-of-xmp) e outras empresas, para que os usuários de XMP em combinação com a AEM Assets tenham uma plataforma poderosa para desenvolver.
+Além de oferecer codificação de metadados universais que podem ser incorporados em todos os formatos de arquivo, XMP fornece um [modelo de conteúdo](#xmp-core-concepts) rico e é [suportado pelo Adobe](#advantages-of-xmp) e outras empresas, para que os usuários de XMP em combinação com a AEM Assets tenham uma plataforma poderosa para desenvolver.
 
 ## Visão geral XMP e ecossistema {#xmp-ecosystem}
 
@@ -52,7 +52,8 @@ O padrão XMP foi projetado para ser extensível, permitindo que você adicione 
 
 **Namespaces e esquemas**
 
-Um schema XMP é um conjunto de nomes de propriedade em uma namespace XML comum que inclui o tipo de dados e as informações descritivas. Um schema XMP é identificado por seu URI de namespace XML. O uso do namespace evita conflitos entre propriedades em schemas diferentes que tenham o mesmo nome, mas um significado diferente.
+Um schema XMP é um conjunto de nomes de propriedade em uma namespace XML comum que inclui
+o tipo de dados e as informações descritivas. Um schema XMP é identificado por seu URI de namespace XML. O uso do namespace evita conflitos entre propriedades em schemas diferentes que tenham o mesmo nome, mas um significado diferente.
 
 Por exemplo, a propriedade **Creator** em dois schemas projetados de forma independente pode significar a pessoa que criou o ativo ou o aplicativo que criou o ativo (por exemplo, Adobe Photoshop).
 
@@ -67,7 +68,7 @@ XMP pode incluir propriedades de um ou mais schemas. Por exemplo, um subconjunto
 
 **Alternativas linguísticas**
 
-XMP oferta a capacidade de adicionar uma `xml:lang` propriedade às propriedades do texto para especificar o idioma do texto.
+XMP oferta a capacidade de adicionar uma propriedade `xml:lang` às propriedades de texto para especificar o idioma do texto.
 
 ## Write-back de XMP a execuções {#xmp-writeback-to-renditions}
 
@@ -77,11 +78,11 @@ Quando você altera os metadados de um ativo no AEM Assets ou durante o upload d
 
 O recurso XMP write-back propaga as alterações nos metadados para todas as representações ou para as representações específicas do ativo.
 
-Considere um cenário em que você modifica a propriedade [!UICONTROL Título] do ativo com título `Classic Leather` para `Nylon`.
+Considere um cenário em que você modifica a propriedade [!UICONTROL Title] do ativo intitulado `Classic Leather` para `Nylon`.
 
 ![metadata](assets/metadata.png)
 
-Nesse caso, o AEM Assets salva as alterações na propriedade **[!UICONTROL Title]** no `dc:title` parâmetro para os metadados do ativo armazenados na hierarquia do ativo.
+Nesse caso, o AEM Assets salva as alterações na propriedade **[!UICONTROL Title]** no parâmetro `dc:title` para os metadados de ativos armazenados na hierarquia de ativos.
 
 ![metadata_storage](assets/metadata_stored.png)
 
@@ -89,28 +90,28 @@ No entanto, a AEM Assets não propaga automaticamente quaisquer alterações de 
 
 O recurso XMP write-back permite que você propague as alterações nos metadados para todas as representações ou para as representações específicas do ativo. No entanto, as alterações não são armazenadas no nó de metadados na hierarquia do ativo. Em vez disso, esse recurso incorpora as alterações nos arquivos binários das execuções.
 
-### Habilitar gravação XMP {#enable-xmp-writeback}
+### Habilitar XMP write-back {#enable-xmp-writeback}
 
 <!-- asgupta, Engg: Need attention here to update the configuration manager changes.
 -->
 
-Para permitir que as alterações de metadados sejam propagadas para as representações do ativo ao carregá-lo, modifique a configuração do **[!UICONTROL Adobe CQ DAM Rendition Maker]** no Configuration Manager.
+Para permitir que as alterações de metadados sejam propagadas para as representações do ativo ao carregá-lo, modifique a configuração **[!UICONTROL Adobe CQ DAM Rendition Maker]** no Configuration Manager.
 
 1. Para abrir o Configuration Manager, acesse `https://[aem_server]:[port]/system/console/configMgr`.
-1. Abra a configuração do **[!UICONTROL Adobe CQ DAM Rendition Maker]** .
+1. Abra a configuração **[!UICONTROL Adobe CQ DAM Rendition Maker]**.
 1. Selecione a opção **[!UICONTROL Propagar XMP]** e salve as alterações.
 
 ### Habilitar XMP write-back para execuções específicas {#enable-xmp-writeback-for-specific-renditions}
 
-Para permitir que o recurso de gravação XMP propague alterações de metadados para selecionar execuções, especifique essas execuções para a etapa de fluxo de trabalho do Processo  de gravação do fluxo de trabalho WriteBack de metadados de DAM. Por padrão, essa etapa é configurada com a representação original.
+Para permitir que o recurso de gravação de XMP propague alterações de metadados para selecionar execuções, especifique essas execuções para a etapa de fluxo de trabalho [!UICONTROL XMP Writeback Process] do fluxo de trabalho WriteBack de metadados DAM. Por padrão, essa etapa é configurada com a representação original.
 
 Para o recurso de gravação de XMP para propagar metadados para as miniaturas de execução 140.100.png e 319.319.png, execute estas etapas.
 
 1. Toque/clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
-1. Na página Modelos, abra o modelo de fluxo de trabalho Writeback **[!UICONTROL de metadados]** DAM.
+1. Na página Modelos, abra o modelo de fluxo de trabalho **[!UICONTROL DAM Metadata Writeback]**.
 1. Na página de propriedades **[!UICONTROL DAM Metadata Writeback]**, abra a etapa **[!UICONTROL Processo de Writeback XMP]**.
 1. Na caixa de diálogo **[!UICONTROL Propriedades da etapa]**, toque/clique na guia **[!UICONTROL Processo]**.
-1. Na caixa **[!UICONTROL Argumentos]** , adicione `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`e toque/clique em **[!UICONTROL OK]**.
+1. Na caixa **[!UICONTROL Argumentos]**, adicione `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` e toque/clique em **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
