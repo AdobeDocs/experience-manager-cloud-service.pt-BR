@@ -53,7 +53,7 @@ Ativos multilíngues são ativos com binários, metadados e tags em vários idio
 
 Nos ativos Adobe Experience Manager (AEM), os ativos multilíngues são incluídos nas pastas, onde cada pasta contém os ativos em um idioma diferente.
 
-Cada pasta de idioma é chamada de cópia de idioma. A pasta raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/dam/it` é a raiz do idioma italiano para a cópia em italiano. As cópias de idioma devem usar uma raiz [de idioma configurada](#create-a-language-root) corretamente para que o idioma correto seja direcionado quando as traduções dos ativos de origem forem executadas.
+Cada pasta de idioma é chamada de cópia de idioma. A pasta raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/dam/it` é a raiz do idioma italiano para a cópia em italiano. As cópias de idioma devem usar uma [raiz de idioma configurada corretamente](#create-a-language-root) para que o idioma correto seja direcionado quando as traduções dos ativos de origem forem executadas.
 
 A cópia de idioma para a qual você adicionou ativos originalmente é o idioma principal. O idioma principal é a fonte traduzida para outros idiomas. Uma hierarquia de pastas de amostra inclui várias raízes de idioma:
 
@@ -71,7 +71,7 @@ A cópia de idioma para a qual você adicionou ativos originalmente é o idioma 
 
 Execute as seguintes etapas para preparar seus ativos para tradução:
 
-1. Crie a raiz do idioma do idioma principal. Por exemplo, a raiz do idioma da cópia em inglês na hierarquia da pasta de amostra é `/content/dam/en`. Verifique se a raiz do idioma está configurada corretamente de acordo com as informações em [Criar uma raiz](#create-a-language-root)de idioma.
+1. Crie a raiz do idioma do idioma principal. Por exemplo, a raiz do idioma da cópia em inglês na hierarquia da pasta de amostra é `/content/dam/en`. Verifique se a raiz do idioma está configurada corretamente de acordo com as informações em [Criar uma raiz do idioma](#create-a-language-root).
 
 1. Adicione ativos ao seu idioma principal.
 1. Crie a raiz do idioma de cada idioma do público alvo para o qual você precisa de uma cópia do idioma.
@@ -80,19 +80,19 @@ Execute as seguintes etapas para preparar seus ativos para tradução:
 
 Para criar a raiz do idioma, crie uma pasta e use um código de idioma ISO como o valor da propriedade Name. Depois de criar a raiz do idioma, é possível criar uma cópia do idioma em qualquer nível na raiz do idioma.
 
-Por exemplo, a página raiz da cópia em idioma italiano da hierarquia de amostra tem `it` a propriedade Name. A propriedade Name é usada como o nome do nó do ativo no repositório e, portanto, determina o caminho dos ativos. (*&lt;servidor>:&lt;porta>/assets.html/content/dam/it/*)
+Por exemplo, a página raiz da cópia de idioma italiano da hierarquia de amostra tem `it` como a propriedade Name. A propriedade Name é usada como o nome do nó do ativo no repositório e, portanto, determina o caminho dos ativos. (*&lt;servidor>:&lt;porta>/assets.html/content/dam/it/*)
 
 1. No console Assets, clique/toque em **[!UICONTROL Criar]** e escolha **[!UICONTROL Pasta]** no menu.
-1. No campo Nome, digite o código do país no formato de `<language-code>`.
+1. No campo Nome, digite o código do país no formato `<language-code>`.
 1. Clique ou toque em **[!UICONTROL Criar]**. A raiz do idioma é criada no console Ativos.
 
-### raízes da língua visualização {#view-language-roots}
+### Raízes de linguagem de visualização {#view-language-roots}
 
 A interface otimizada para toque fornece um painel Referências que mostra uma lista de raízes de idioma que foram criadas no AEM Assets.
 
 1. No console Ativos, selecione o idioma principal para o qual deseja criar cópias de idioma.
 1. Clique ou toque no ícone GlobalNav e escolha **[!UICONTROL Referências]** para abrir o painel Referência.
-1. No painel Referências, clique ou toque em Cópias **[!UICONTROL de idioma]**. O painel Cópias de idioma mostra as cópias de idioma dos ativos.
+1. No painel Referências, clique ou toque em **[!UICONTROL Cópias de Idioma]**. O painel Cópias de idioma mostra as cópias de idioma dos ativos.
 
 ### Criar um novo projeto de tradução {#create-a-new-translation-project}
 
@@ -102,21 +102,21 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 1. Abra o painel **[!UICONTROL Referências]** e clique/toque em **[!UICONTROL Cópias de idioma]**, em **[!UICONTROL Cópias]**.
 1. Clique/toque em **[!UICONTROL Criar e traduzir]** na parte inferior.
 1. Na lista **[!UICONTROL Idiomas de destino]**, selecione os idiomas para os quais deseja criar uma estrutura de pastas.
-1. Na lista **[!UICONTROL Projeto]** , selecione **[!UICONTROL Criar um novo projeto]** de tradução.
+1. Na lista **[!UICONTROL Project]**, selecione **[!UICONTROL Criar um novo projeto de tradução]**.
 1. No campo **[!UICONTROL Título do projeto]**, informe um título para o projeto.
-1. Click/tap on **[!UICONTROL Create]**. Os ativos da pasta de origem são copiados para as pastas de públicos alvos para as localidades selecionadas na etapa 4.
+1. Clique/toque em **[!UICONTROL Criar]**. Os ativos da pasta de origem são copiados para as pastas de públicos alvos para as localidades selecionadas na etapa 4.
 1. Para navegar até a pasta, selecione a cópia de idioma e clique em **[!UICONTROL Revelar em Ativos]**.
 1. Navegue até o console Projetos. A pasta de tradução é copiada para o console Projetos.
 1. Abra a pasta para visualização do projeto de tradução.
 1. Clique/toque no projeto para abrir a página de detalhes.
-1. Para visualização do status do trabalho de tradução, clique nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução. <!-- For more details around job statuses, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
+1. Para visualização do status do trabalho de tradução, clique nas reticências na parte inferior do bloco **[!UICONTROL Trabalho de tradução]**. <!-- For more details around job statuses, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. Na interface do usuário Ativos, abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
 
 >[!NOTE]
 >
 >Este recurso está disponível para ativos e pastas. Quando um ativo é selecionado em vez de uma pasta, toda a hierarquia de pastas até a raiz do idioma é copiada para criar uma cópia do idioma para o ativo.
 
-### Add to an existing translation project {#add-to-existing-translation-project}
+### Adicionar a um projeto de tradução existente {#add-to-existing-translation-project}
 
 Se você usar essa opção, o fluxo de trabalho de tradução será executado para os ativos adicionados à pasta de origem após executar um fluxo de trabalho de tradução anterior. Somente os ativos recém-adicionados são copiados para a pasta do público alvo que contém ativos convertidos anteriormente. Nenhum novo projeto de tradução é criado neste caso.
 
@@ -128,12 +128,12 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
 1. Na lista **[!UICONTROL Projeto]**, selecione **[!UICONTROL Adicionar ao projeto de tradução existente]** para executar o fluxo de trabalho de tradução na pasta.
    >[!NOTE]
    >
-   >Se você escolher a opção **[!UICONTROL Adicionar ao projeto]** de tradução existente, seu projeto de tradução será adicionado a um projeto pré-existente somente se as configurações do projeto corresponderem exatamente às configurações do projeto pré-existente. Caso contrário, um novo projeto será criado.
-1. Na lista do projeto **[!UICONTROL de tradução]** existente, selecione um projeto para adicionar o ativo para conversão.
+   >Se você escolher a opção **[!UICONTROL Adicionar ao projeto de tradução existente]**, seu projeto de tradução será adicionado a um projeto pré-existente somente se as configurações do projeto corresponderem exatamente às configurações do projeto pré-existente. Caso contrário, um novo projeto será criado.
+1. Na lista **[!UICONTROL Projeto de tradução existente]**, selecione um projeto para adicionar o ativo para conversão.
 1. Clique/toque em **[!UICONTROL Criar]**. Os ativos que serão traduzidos são adicionados à pasta de destino. A pasta atualizada está listada na seção **[!UICONTROL Cópias de idioma]**.
 1. Navegue até o console Projetos e abra o projeto de tradução existente ao qual você adicionou.
 1. Clique/toque na visualização do projeto de tradução na página de detalhes do projeto.
-1. Click/tap the ellipsis at the bottom of the **Translation Job** tile to view the assets in the translation workflow. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
+1. Clique/toque nas reticências na parte inferior do bloco **Trabalho de tradução** para visualização dos ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
 
    >[!NOTE]
    >
@@ -142,8 +142,8 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
    >* Se o ativo adicionado ao trabalho de tradução incluir subativos, selecione os subativos e remova-os para que a tradução continue sem falhas.
 
 
-1. Para start da tradução dos ativos, clique/toque na seta no bloco Trabalho **[!UICONTROL de]** tradução e selecione **[!UICONTROL Start]** na lista. Uma mensagem notifica o início do trabalho de tradução.
-1. Para visualização do status do trabalho de tradução, clique/toque nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
+1. Para start da tradução dos ativos, clique/toque na seta no bloco **[!UICONTROL Trabalho de tradução]** e selecione **[!UICONTROL Start]** da lista. Uma mensagem notifica o início do trabalho de tradução.
+1. Para visualização do status do trabalho de tradução, clique/toque nas reticências na parte inferior do bloco **[!UICONTROL Trabalho de tradução]**. <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. Após a conclusão da tradução, o status é alterado para Pronto para Revisão. Navegue até a interface do usuário Ativos e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
 
 ### Atualizar cópias de idioma {#update-language-copies}
@@ -160,22 +160,22 @@ Se você usar essa opção, o conjunto de ativos será adicionado a um projeto d
 1. Na interface do usuário Ativos, selecione a pasta de origem na qual você adicionou uma pasta de ativos.
 1. Abra o painel **[!UICONTROL Referências]** e clique/toque em **[!UICONTROL Cópias de idioma]** em **[!UICONTROL Cópias]** para exibir a lista de cópias de idioma.
 1. Marque a caixa de seleção ao lado de **[!UICONTROL Cópias de idioma]**, que seleciona todas as cópias de idioma. Desmarque as outras cópias, exceto a cópia de idioma (cópias) correspondente às localidades para as quais você deseja traduzir.
-1. Clique/toque em **[!UICONTROL Atualizar cópias]** de idioma na parte inferior.
-1. Na lista **[!UICONTROL Projeto]** , escolha **[!UICONTROL Adicionar ao projeto]** de tradução existente.
-1. Na lista do projeto **[!UICONTROL de tradução]** existente, selecione um projeto para adicionar o ativo para conversão.
+1. Clique/toque em **[!UICONTROL Atualizar cópias de idioma]** na parte inferior.
+1. Na lista **[!UICONTROL Project]**, escolha **[!UICONTROL Adicionar ao projeto de tradução existente]**.
+1. Na lista **[!UICONTROL Projeto de tradução existente]**, selecione um projeto para adicionar o ativo para conversão.
 1. Clique/toque em **[!UICONTROL Iniciar]**.
-1. Consulte as etapas 9 a 14 de [Adicionar ao projeto](#add-to-existing-translation-project) de tradução existente para concluir o restante do procedimento.
+1. Consulte as etapas 9 a 14 de [Adicionar ao projeto de tradução existente](#add-to-existing-translation-project) para concluir o restante do procedimento.
 
-### Criar cópias de idioma temporárias {#creating-temporary-language-copies}
+### Criar cópias temporárias de idioma {#creating-temporary-language-copies}
 
 Quando você executa um fluxo de trabalho de tradução para atualizar uma cópia de idioma com versões editadas dos ativos originais, a cópia de idioma existente é preservada até que você aprove os ativos convertidos. A AEM Assets armazena o(s) ativo(s) recém-traduzido(s) em um local temporário e atualiza a cópia de idioma existente após você aprovar explicitamente o(s) ativo(s). Se você rejeitar o(s) ativo(s), a cópia de idioma permanecerá inalterada.
 
 1. Clique/toque na pasta raiz de origem, em **[!UICONTROL Cópias de idioma]** para as quais você já criou uma cópia de idioma e clique/toque em **[!UICONTROL Revelar no Assets]** para abrir a pasta no AEM Assets.
 1. Na interface do usuário do Assets, selecione um ativo que já tenha sido convertido e clique/toque no ícone **[!UICONTROL Editar]** na barra de ferramentas para abrir o ativo no modo de edição.
 1. Edite o ativo e salve as alterações.
-1. Execute as etapas 2 a 14 do procedimento [Adicionar ao projeto](#add-to-existing-translation-project) de tradução existente para atualizar a cópia de idioma.
-1. Clique/toque nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução. Na lista de ativos na página Trabalho **[!UICONTROL de]** tradução, é possível visualização claramente o local temporário onde a versão traduzida do ativo é armazenada.
-1. Marque a caixa de seleção ao lado de **[!UICONTROL Título]**.
+1. Execute as etapas de 2 a 14 do procedimento [Adicionar ao projeto de tradução existente](#add-to-existing-translation-project) para atualizar a cópia de idioma.
+1. Clique/toque nas reticências na parte inferior do bloco **[!UICONTROL Trabalho de tradução]**. Na lista de ativos na página **[!UICONTROL Trabalho de tradução]**, é possível visualização claramente o local temporário onde a versão traduzida do ativo é armazenada.
+1. Marque a caixa de seleção ao lado de **[!UICONTROL Title]**.
 1. Na barra de ferramentas, clique/toque em **[!UICONTROL Aceitar tradução]** e em **[!UICONTROL Aceitar]** na caixa de diálogo para substituir o ativo traduzido na pasta de destino pela versão traduzida do ativo editado.
 
    >[!NOTE]
@@ -186,7 +186,7 @@ Quando você executa um fluxo de trabalho de tradução para atualizar uma cópi
 
 1. Navegue até o console Ativos e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
 
-Para obter dicas sobre como traduzir metadados para ativos com eficiência, consulte [5 etapas para traduzir metadados](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)com eficiência.
+Para obter dicas sobre a tradução eficiente de metadados para ativos, consulte [5 Etapas para traduzir com eficiência os metadados](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
 
 ## Criar projetos de tradução {#creating-translation-projects}
 
@@ -223,12 +223,12 @@ Use a opção **Somente criar estrutura** para criar uma hierarquia de pasta de 
 1. Na interface do usuário do Assets, selecione a pasta de origem para a qual deseja criar uma estrutura na raiz do idioma do público alvo.
 1. Abra o painel **[!UICONTROL Referências]** e clique/toque em **[!UICONTROL Cópias de idioma]**, em **[!UICONTROL Cópias]**.
 1. Clique/toque em **[!UICONTROL Criar e traduzir]** na parte inferior.
-1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
+1. Na lista **[!UICONTROL Idiomas do Público alvo]**, selecione o idioma para o qual deseja criar uma estrutura de pastas.
 1. Na lista **[!UICONTROL Projeto]**, escolha **[!UICONTROL Somente criar estrutura]**.
-1. Clique/toque em **[!UICONTROL Criar]**. A nova estrutura para o idioma do público alvo é listada em Cópias **[!UICONTROL de idiomas]**.
-1. Clique/toque na estrutura da lista e, em seguida, clique/toque em **[!UICONTROL Revelar nos ativos]** para navegar até a estrutura da pasta no idioma do público alvo.
+1. Clique/toque em **[!UICONTROL Criar]**. A nova estrutura do idioma do público alvo é listada em **[!UICONTROL Cópias de idioma]**.
+1. Clique/toque na estrutura da lista e, em seguida, clique/toque em **[!UICONTROL Revelar em Ativos]** para navegar até a estrutura de pastas no idioma do público alvo.
 
-## Aplicar serviços da nuvem de tradução a pastas {#applying-translation-cloud-services-to-folders}
+## Aplicar serviços de conversão em nuvem a pastas {#applying-translation-cloud-services-to-folders}
 
 A Adobe Experience Manager (AEM) permite que você utilize serviços de tradução baseados em nuvem do provedor de tradução de sua escolha para garantir que seus ativos sejam traduzidos com base em suas necessidades.
 
@@ -264,7 +264,7 @@ Se quiser aplicar um conector personalizado para os serviços de tradução que 
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Clique/toque no link **[!UICONTROL Configurar agora]** para abrir a caixa de diálogo **[!UICONTROL Criar configuração]** .
+1. Clique/toque no link **[!UICONTROL Configurar agora]** para abrir a caixa de diálogo **[!UICONTROL Criar configuração]**.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
