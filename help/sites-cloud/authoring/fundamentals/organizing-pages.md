@@ -93,7 +93,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs de até um determinado comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
+Ao criar uma nova página, AEM irá [validar o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pela AEM e pelo JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -362,7 +362,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
 >[!NOTE]
 >
->Uma página só pode ser movida para um local onde o modelo no qual a página se baseia está permitido. See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
+>Uma página só pode ser movida para um local onde o modelo no qual a página se baseia está permitido. Consulte [Disponibilidade do modelo](/help/implementing/developing/components/templates.md#template-availability) para obter mais informações.
 
 #### Ações assíncronas {#asynchronous-actions}
 
