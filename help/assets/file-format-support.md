@@ -1,6 +1,6 @@
 ---
 title: Formatos de arquivo suportados e tipos MIME
-description: Formatos de arquivo e tipos MIME suportados [!DNL Experience Manager Assets] por um Cloud Service.
+description: Formatos de arquivo e tipos MIME suportados por [!DNL Experience Manager Assets] como um Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
@@ -11,25 +11,25 @@ ht-degree: 10%
 ---
 
 
-# [!DNL Assets] formatos de arquivo suportados {#supported-file-formats}
+# [!DNL Assets] formatos de arquivo suportados  {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] como um Cloud Service suporta recursos básicos de gestão de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download e assim por diante — para qualquer arquivo binário, independentemente de seu formato. [!DNL Adobe Experience Manager Assets] oferece suporte para uma grande variedade de formatos de arquivos e cada recurso de produto tem suporte variado para formatos diferentes.
 
-Além disso, [!DNL Experience Manager Assets] oferece suporte estendido para gerar pré-visualizações e execuções e extrair metadados e texto para indexação de texto completo. Esse suporte estendido é fornecido usando microserviços [de](asset-microservices-configure-and-use.md)ativos.
+Além disso, [!DNL Experience Manager Assets] oferece suporte estendido para gerar pré-visualizações e execuções e extrair metadados e texto para indexação de texto completo. Este suporte estendido é fornecido usando [ativos microservices](asset-microservices-configure-and-use.md).
 
 Os destaques da conversão de ativos usando microserviços de ativos incluem:
 
-* Formatos [de arquivos principais do](#adobe-formats) Adobe produzidos por aplicativos e serviços do Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension]e [!DNL Adobe Acrobat] ou PDF.
-* Formatos [de arquivo de](#image-formats)imagem principais.
-* [Formatos](#camera-raw-formats) de arquivos Camera Raw para uma grande variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (alimentados pela Adobe Camera Raw).
-* Formatos [comuns de](#document-formats)documento, incluindo os formatos Microsoft Office e Open Documento.
+* As teclas [formatos de arquivo Adobe](#adobe-formats) produzidas por aplicativos e serviços Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] ou PDF.
+* Tecla [formatos de arquivo de imagem](#image-formats).
+* [Camera Raw ](#camera-raw-formats) formatos de arquivos para uma grande variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (alimentados pela Adobe Camera Raw).
+* Formatos comuns de [documento](#document-formats), incluindo os formatos Microsoft Office e Open Documento.
 * Grande variedade de formatos de [vídeo](#video-formats) e [áudio.](#audio-formats)
 
 A legenda a seguir descreve o nível de suporte.
 
 | Nível de suporte | Descrição |
 | ------------- | --------------------------- |
-| ✓ | Compatível |
+| Satélite | Compatível |
 | * | Ver observações abaixo do quadro |
 | - | Não aplicável |
 
@@ -37,47 +37,47 @@ A legenda a seguir descreve o nível de suporte.
 
 | Formato de arquivo | Geração de miniaturas | Extração de texto completo | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | ✓ | - | ✓ | ✓ |
-| COLAGEM | - | - | ✓ | - |
-| DN | ✓ | - | ✓ | ✓ |
-| IDEIAS | - | - | ✓ | - |
-| INDD | ✓ | - | ✓ | ✓ * |
-| INDT | - | - | ✓ | - |
-| PDF | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | ✓ | - |
-| PSB | ✓ | - | ✓ | ✓ |
-| PSD | ✓ | - | ✓ | ✓ |
-| XD | ✓ | - | ✓ | ✓ |
+| AI | Satélite | - | Satélite | Satélite |
+| COLAGEM | - | - | Satélite | - |
+| DN | Satélite | - | Satélite | Satélite |
+| IDEIAS | - | - | Satélite | - |
+| INDD | Satélite | - | Satélite | * |
+| INDT | - | - | Satélite | - |
+| PDF | Satélite | Satélite | Satélite | Satélite |
+| PROTO | - | - | Satélite | - |
+| PSB | Satélite | - | Satélite | Satélite |
+| PSD | Satélite | - | Satélite | Satélite |
+| XD | Satélite | - | Satélite | Satélite |
 
-\* Para [!DNL Adobe InDesign] arquivos (INDD), o tamanho da representação é determinado pela pré-visualização incorporada ao arquivo INDD. Configure as preferências em [!DNL InDesign] (**[!UICONTROL Preferências > Manuseio de arquivo > Sempre salvar imagens de Pré-visualização com Documentos, tamanho]** de Pré-visualização) para incorporar renderizações maiores.
+\* Para arquivos [!DNL Adobe InDesign] (INDD), o tamanho da representação é determinado pela pré-visualização incorporada no arquivo INDD. Configure as preferências em [!DNL InDesign] (**[!UICONTROL Preferências > Manuseio de arquivos > Sempre salvar imagens de Pré-visualização com Documentos, Tamanho de Pré-visualização]**) para incorporar renderização maior.
 
 ## Formatos de imagem {#image-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura | Cortar |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | ✓ | - | ✓ | ✓ |
-| EPS | - | ✓ | - | - |
-| GIF | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ |
-| PNG | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | - |
-| SVG | ✓ | - | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
-| RGB | ✓ | ✓ | ✓ | ✓ |
-| RGBA | ✓ | ✓ | ✓ | ✓ |
+| BMP | Satélite | - | Satélite | Satélite |
+| EPS | - | Satélite | - | - |
+| GIF | Satélite | Satélite | Satélite | Satélite |
+| JPEG | Satélite | Satélite | Satélite | Satélite |
+| PNG | Satélite | Satélite | Satélite | Satélite |
+| TIFF | Satélite | Satélite | Satélite | - |
+| SVG | Satélite | - | Satélite | Satélite |
+| SGI | Satélite | Satélite | Satélite | Satélite |
+| RGB | Satélite | Satélite | Satélite | Satélite |
+| RGBA | Satélite | Satélite | Satélite | Satélite |
 
 ## Formatos de imagem em [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | Formato | Carregar (formato de entrada) | Criar predefinição de imagem (formato de saída) | Execução dinâmica de pré-visualização | Fornecer representação dinâmica | Baixar representação dinâmica |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | - | - | - | - |
-| PSD ‡ | ✓ | - | - | - | - |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ | - | - | - | - |
+| PNG | Satélite | Satélite | Satélite | Satélite | Satélite |
+| GIF | Satélite | Satélite | Satélite | Satélite | Satélite |
+| TIFF | Satélite | Satélite | Satélite | Satélite | Satélite |
+| JPEG | Satélite | Satélite | Satélite | Satélite | Satélite |
+| BMP | Satélite | - | - | - | - |
+| PSD   ‡ | Satélite | - | - | - | - |
+| EPS | Satélite | Satélite | Satélite | Satélite | Satélite |
+| PICT | Satélite | - | - | - | - |
 
 ‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada por [!DNL Adobe Photoshop] e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
@@ -94,109 +94,109 @@ Os seguintes subtipos de formatos de arquivo de imagem rasterizada que não são
 
 A seguinte lista de formatos 3D é suportada.
 
-See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+Consulte também [Trabalhar com ativos 3D no Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
 | Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Pré-visualização em miniatura | pré-visualização 3D | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| DN | Satélite | Satélite | Satélite | - | Satélite | Satélite | - | - |
+| gLB | Satélite | Satélite | Satélite | Satélite | Satélite | - | Satélite | Satélite |
+| gLTF | Satélite | Satélite | Satélite | - | Satélite | - | Satélite | - |
+| OBJ | Satélite | Satélite | Satélite | Satélite | Satélite | - | Satélite | Satélite |
+| STL | Satélite | Satélite | Satélite | Satélite | Satélite | - | Satélite | Satélite |
+| USDz | Satélite | Satélite | Satélite | Satélite | Satélite | - | - | Satélite |
 
-## [!DNL Camera RAW] formatos {#camera-raw-formats}
+## [!DNL Camera RAW] formatos  {#camera-raw-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | ✓ | ✓ | ✓ |
-| ARW | ✓ | ✓ | ✓ |
-| CR2 | ✓ | ✓ | ✓ |
-| CR3 | ✓ | ✓ | ✓ |
-| CRW | ✓ | ✓ | ✓ |
-| DCR | ✓ | ✓ | ✓ |
-| DNG | ✓ | ✓ | ✓ |
-| ERF | ✓ | ✓ | ✓ |
-| FFF | ✓ | ✓ | ✓ |
-| GPR | ✓ | ✓ | ✓ |
-| IIQ | ✓ | ✓ | ✓ |
-| KDC | ✓ | ✓ | ✓ |
-| MEF | ✓ | ✓ | ✓ |
-| MFW | ✓ | ✓ | ✓ |
-| MOS | ✓ | ✓ | ✓ |
-| MRW | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ |
-| NRW | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ |
-| PEF | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ |
-| RW2 | ✓ | ✓ | ✓ |
-| RWL | ✓ | ✓ | ✓ |
-| SRF | ✓ | ✓ | ✓ |
-| SRW | ✓ | ✓ | ✓ |
-| X3F | ✓ | ✓ | ✓ |
+| 3FR | Satélite | Satélite | Satélite |
+| ARW | Satélite | Satélite | Satélite |
+| CR2 | Satélite | Satélite | Satélite |
+| CR3 | Satélite | Satélite | Satélite |
+| CRW | Satélite | Satélite | Satélite |
+| DCR | Satélite | Satélite | Satélite |
+| DNG | Satélite | Satélite | Satélite |
+| ERF | Satélite | Satélite | Satélite |
+| FFF | Satélite | Satélite | Satélite |
+| GPR | Satélite | Satélite | Satélite |
+| IIQ | Satélite | Satélite | Satélite |
+| KDC | Satélite | Satélite | Satélite |
+| MEF | Satélite | Satélite | Satélite |
+| MFW | Satélite | Satélite | Satélite |
+| MOS | Satélite | Satélite | Satélite |
+| MRW | Satélite | Satélite | Satélite |
+| NEF | Satélite | Satélite | Satélite |
+| NRW | Satélite | Satélite | Satélite |
+| ORF | Satélite | Satélite | Satélite |
+| PEF | Satélite | Satélite | Satélite |
+| RAF | Satélite | Satélite | Satélite |
+| RAW | Satélite | Satélite | Satélite |
+| RW2 | Satélite | Satélite | Satélite |
+| RWL | Satélite | Satélite | Satélite |
+| SRF | Satélite | Satélite | Satélite |
+| SRW | Satélite | Satélite | Satélite |
+| X3F | Satélite | Satélite | Satélite |
 
-## formatos de documento {#document-formats}
+## Formatos de documento {#document-formats}
 
 Os formatos de documento compatíveis com os recursos de gerenciamento de ativos são os seguintes:
 
 | Formato de arquivo | Geração de miniaturas | Extração de texto completo | Largura/altura | Gerenciamento de metadados | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOC | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLS | - | - | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | - | - |
-| OFF | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
-| HTML | - | ✓ | - | ✓ | ✓ |
-| PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | - | ✓ | - | ✓ | ✓ |
-| XML | - | ✓ | - | - | - |
+| PDF | Satélite | Satélite | Satélite | Satélite | Satélite |
+| DOCX | Satélite | Satélite | Satélite | Satélite | Satélite |
+| DOC | - | - | - | Satélite | Satélite |
+| PPTX | Satélite | Satélite | Satélite | Satélite | Satélite |
+| PPT | - | - | - | Satélite | Satélite |
+| XLSX | Satélite | Satélite | Satélite | Satélite | Satélite |
+| XLS | - | - | - | Satélite | Satélite |
+| ODF | Satélite | Satélite | Satélite | - | - |
+| OFF | Satélite | Satélite | Satélite | - | - |
+| ODM | Satélite | Satélite | Satélite | - | - |
+| ODP | Satélite | Satélite | Satélite | - | - |
+| ODS | Satélite | Satélite | Satélite | - | - |
+| ODT | Satélite | Satélite | Satélite | Satélite | Satélite |
+| EPUB | - | Satélite | - | - | - |
+| HTML | - | Satélite | - | Satélite | Satélite |
+| PS | - | - | Satélite | - | - |
+| RTF | - | Satélite | - | Satélite | Satélite |
+| TXT | - | Satélite | - | Satélite | Satélite |
+| XML | - | Satélite | - | - | - |
 
 ## formatos de documento em [!DNL Dynamic Media] {#document-support-dynamic-media}
 
 | Formato | Carregar (formato de entrada) | Criar predefinição de imagem (formato de saída) | Execução dinâmica de pré-visualização | Fornecer representação dinâmica | Baixar representação dinâmica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| INDD | ✓ | - | - | - | - |
+| AI | Satélite | - | - | - | - |
+| PDF | Satélite | Satélite | Satélite | Satélite | Satélite |
+| INDD | Satélite | - | - | - | - |
 
 ## Formatos de vídeo {#video-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| 3G2 | - | Satélite | - |
+| 3GP | - | Satélite | - |
+| AVI | Satélite | Satélite | Satélite |
+| DIVX | Satélite | - | Satélite |
+| F4V | Satélite | Satélite | Satélite |
+| FLV | Satélite | Satélite | Satélite |
+| M2T | Satélite | - | Satélite |
+| M2TS | Satélite | - | Satélite |
+| M2V | Satélite | - | Satélite |
+| M4V | Satélite | Satélite | Satélite |
+| MKV | Satélite | - | Satélite |
+| MOV | Satélite | Satélite | Satélite |
+| MP4 | Satélite | Satélite | Satélite |
+| MPEG | Satélite | Satélite | Satélite |
+| MPG | Satélite | Satélite | Satélite |
+| MTS | Satélite | - | Satélite |
+| OGV | Satélite | - | Satélite |
+| QT | Satélite | - | Satélite |
+| R3D | - | Satélite | Satélite |
+| SWF | Satélite | - | Satélite |
+| WebM | Satélite | - | Satélite |
+| WMV | Satélite | Satélite | Satélite |
 
 ## Formatos de vídeo em [!DNL Dynamic Media] para transcodificação {#video-dynamic-media-transcoding}
 
