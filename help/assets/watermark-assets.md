@@ -3,9 +3,9 @@ title: Marcar os ativos
 description: Adicione uma marca d'água aos seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: af27295b618fb3909d43ed94a74148f7c4f59c10
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Para configurar [!DNL Experience Manager] para itens de marca d&#39;água, siga 
 
 1. Um arquivo PNG é aplicado como uma marca d&#39;água. Carregue esse arquivo no repositório DAM.
 
-1. Acesse o repositório Git [!DNL Cloud Manager] associado ao seu ambiente. Confirme um arquivo chamado `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` no repositório com o seguinte conteúdo. Para obter instruções, consulte [como fazer a configuração OSGi em [!DNL Experience Manager] como um Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+1. Acesse o repositório Git [!DNL Cloud Manager] associado ao seu ambiente. Confirme um arquivo chamado `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` no repositório com o seguinte conteúdo. Para obter instruções, consulte [como fazer a configuração OSGi em [!DNL Experience Manager] como a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {
