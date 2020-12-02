@@ -351,7 +351,7 @@ Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML 
 >
 >Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações móveis personalizadas) para acessar o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
-## Exportar fragmentos de experiência   {#exporting-experience-fragments}
+## Exportar fragmentos de experiência    {#exporting-experience-fragments}
 
 Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado pelo AEM e por canais de terceiros.
 
