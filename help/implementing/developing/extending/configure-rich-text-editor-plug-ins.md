@@ -1,6 +1,6 @@
 ---
-title: Configure os plug-ins do Editor de Rich Text [!DNL Adobe Experience Manager].
-description: Saiba como configurar [!DNL Adobe Experience Manager] os plug-ins do Editor de Rich Text.
+title: Configure os plug-ins do Editor de Rich Text em [!DNL Adobe Experience Manager].
+description: 'Saiba como configurar os plug-ins do Editor de Rich Text. [!DNL Adobe Experience Manager] '
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
@@ -12,25 +12,25 @@ ht-degree: 3%
 ---
 
 
-# Configurar os plug-ins do Editor de Rich Text {#configure-the-rich-text-editor-plug-ins}
+# Configure os plug-ins do Editor de Rich Text {#configure-the-rich-text-editor-plug-ins}
 
 As funcionalidades do RTE são disponibilizadas por meio de uma série de plug-ins, cada um com a propriedade features. Você pode configurar a propriedade features para ativar ou desativar um ou mais recursos do RTE. Este artigo descreve como configurar especificamente os plug-ins RTE.
 
-Para obter detalhes sobre as outras configurações do RTE, consulte [configurar o Editor](/help/implementing/developing/extending/rich-text-editor.md)de Rich Text.
+Para obter detalhes sobre as outras configurações do RTE, consulte [configurar o Editor de Rich Text](/help/implementing/developing/extending/rich-text-editor.md).
 
 >[!NOTE]
 >
->Ao trabalhar com o CRXDE Lite, é recomendável salvar as alterações regularmente usando a opção [!UICONTROL Salvar tudo] .
+>Ao trabalhar com o CRXDE Lite, é recomendável salvar as alterações regularmente usando a opção [!UICONTROL Salvar tudo].
 
-## Ativar um plug-in e configurar a propriedade features {#activateplugin}
+## Ative um plug-in e configure a propriedade features {#activateplugin}
 
 Para ativar um plug-in, siga estas etapas. Algumas etapas são necessárias somente quando você configura um plug-in pela primeira vez, pois os nós correspondentes não existem.
 
-Por padrão, `format`, `link`, `list`e `justify``control` plug-ins e todos os seus recursos estão habilitados no RTE.
+Por padrão, os plug-ins `format`, `link`, `list`, `justify` e `control` e todos os seus recursos estão habilitados no RTE.
 
 >[!NOTE]
 >
->O respectivo `rtePlugins` nó é chamado `<rtePlugins-node>` para evitar a duplicação neste artigo.
+>O nó `rtePlugins` respectivo é conhecido como `<rtePlugins-node>` para evitar a duplicação neste artigo.
 
 1. Usando o CRXDE Lite, localize o componente de texto para o seu projeto.
 1. Crie o nó pai de `<rtePlugins-node>` se ele não existir, antes de configurar qualquer plug-in RTE:
@@ -58,33 +58,33 @@ Por padrão, `format`, `link`, `list`e `justify``control` plug-ins e todos os se
    * **Tipo** `nt:unstructured`
    * **Nomeie** a ID do plug-in necessário
 
-Depois de ativar um plug-in, siga estas diretrizes para configurar a `features` propriedade.
+Depois de ativar um plug-in, siga estas diretrizes para configurar a propriedade `features`.
 
 |  | Ativar todos os recursos | Ative alguns recursos específicos. | Desative todos os recursos. |
 |---|---|---|---|
 | Nome | feições | feições | feições |
-| Tipo | Sequência de caracteres | `String` (multistring; defina Tipo como `String` e clique `Multi` no CRXDE Lite) | Sequência de caracteres |
+| Tipo | Sequência de caracteres | `String` (multistring; defina Tipo como  `String` e clique  `Multi` no CRXDE Lite) | Sequência de caracteres |
 | Valor | `*` (um asterisco) | Defina para um ou mais valores de recurso. | - |
 
 ## Entenda o plug-in findreplace {#findreplace}
 
-O plug- `findreplace` -in não precisa de nenhuma configuração. Funciona fora da caixa.
+O plug-in `findreplace` não precisa de nenhuma configuração. Funciona fora da caixa.
 
 Ao usar a funcionalidade de substituição, a string de substituição a ser substituída deve ser inserida ao mesmo tempo que a string de localização. No entanto, você ainda pode clicar em localizar para procurar a string antes de substituí-la. Se a string de substituição for inserida após clicar em Localizar, a pesquisa será redefinida para o início do texto.
 
 A caixa de diálogo localizar e substituir fica transparente quando a localização é clicada e se torna opaca quando a substituição é clicada. O comportamento permite que o autor reveja o texto a ser substituído. Se os usuários clicarem em substituir tudo, a caixa de diálogo será fechada e exibirá o número de substituições feitas.
 
-## Configurar os modos de colagem {#pastemodes}
+## Configure os modos de colagem {#pastemodes}
 
 Ao usar o RTE, os autores podem colar o conteúdo em um dos três modos a seguir:
 
 * **Modo** de navegador: Cole o texto usando a implementação de colagem padrão do navegador. Não é um método recomendado, pois pode introduzir marcações indesejadas.
 
-* **Modo** de texto simples: Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no [!DNL Experience Manager] componente.
+* **Modo** de texto simples: Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no componente [!DNL Experience Manager].
 
 * **Modo** MS Word: Cole o texto, incluindo tabelas, com a formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS Excel, e a formatação apenas parcial é mantida.
 
-### Configure as opções de Colagem disponíveis na barra de ferramentas do RTE  {#configure-paste-options-available-on-the-rte-toolbar}
+### Configure as opções de Colagem disponíveis na barra de ferramentas do RTE {#configure-paste-options-available-on-the-rte-toolbar}
 
 Você pode fornecer alguns, todos ou nenhum desses três ícones aos seus autores na barra de ferramentas do RTE:
 
@@ -98,32 +98,32 @@ Para configurar o RTE para exibir os ícones necessários, siga estas etapas.
 
 1. Navegue até o seu componente, por exemplo `/apps/<myProject>/components/text`.
 1. Navegue até o nó `rtePlugins/edit`. Consulte [ativar um plug-in](#activateplugin) se o nó não existir.
-1. Crie a `features` propriedade no `edit` nó e adicione um ou mais dos recursos. Salve todas as alterações.
+1. Crie a propriedade `features` no nó `edit` e adicione um ou mais dos recursos. Salve todas as alterações.
 
-### Configurar o comportamento do ícone e do atalho Colar (Ctrl+V) {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
+### Configure o comportamento do ícone e do atalho Colar (Ctrl+V) {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
-Você pode pré-configurar o comportamento do ícone **[!UICONTROL Colar (Ctrl+V)]** , usando as seguintes etapas. Essa configuração também define o comportamento do atalho de teclado Ctrl+V que os Autores usam para colar o conteúdo.
+Você pode pré-configurar o comportamento do ícone **[!UICONTROL Colar (Ctrl+V)]**, usando as seguintes etapas. Essa configuração também define o comportamento do atalho de teclado Ctrl+V que os Autores usam para colar o conteúdo.
 
 A configuração permite os três tipos de casos de uso a seguir:
 
 * Cole o texto usando a implementação de colagem padrão do navegador. Não é um método recomendado, pois pode introduzir marcações indesejadas. Configurado usando `browser` abaixo.
 
-* Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no [!DNL Experience Manager] componente. Configurado usando `plaintext` abaixo.
+* Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no componente [!DNL Experience Manager]. Configurado usando `plaintext` abaixo.
 
 * Cole o texto, incluindo tabelas, com a formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS Excel, e a formatação apenas parcial é mantida. Configurado usando `wordhtml` abaixo.
 
-1. Em seu componente, navegue até o `<rtePlugins-node>/edit` nó. Crie os nós se eles não existirem. Para obter mais informações, consulte [ativar um plug-in](#activateplugin).
-1. No `edit` nó, crie uma propriedade usando os seguintes detalhes:
+1. No componente, navegue até o nó `<rtePlugins-node>/edit`. Crie os nós se eles não existirem. Para obter mais informações, consulte [ativar um plug-in](#activateplugin).
+1. No nó `edit` crie uma propriedade usando os seguintes detalhes:
 
    * **Nome** `defaultPasteMode`
    * **Tipo** `String`
-   * **O valor** é um dos modos de colagem `browser`, `plaintext`ou `wordhtml` necessários.
+   * **O** Valor é um dos modos de colagem necessários de  `browser`,  `plaintext`ou  `wordhtml` modos.
 
 ### Configurar os formatos permitidos ao colar conteúdo {#pasteformats}
 
-O modo colar como Microsoft Word (`paste-wordhtml`) pode ser configurado ainda mais para que você possa permitir explicitamente alguns estilos ao colar em outro programa, como [!DNL Experience Manager] [!DNL Microsoft Word].
+O modo colar como Microsoft Word (`paste-wordhtml`) pode ser configurado ainda mais para que você possa permitir explicitamente alguns estilos ao colar em [!DNL Experience Manager] de outro programa, como [!DNL Microsoft Word].
 
-Por exemplo, se apenas formatos em negrito e listas forem permitidos ao colar em, [!DNL Experience Manager]você poderá filtrar os outros formatos. Isso é chamado de filtragem de colagem configurável, que pode ser feita para ambos:
+Por exemplo, se apenas formatos em negrito e listas forem permitidos ao colar em [!DNL Experience Manager], você poderá filtrar os outros formatos. Isso é chamado de filtragem de colagem configurável, que pode ser feita para ambos:
 
 * [Texto](#pastemodes)
 * [Links](#linkstyles)
@@ -132,8 +132,8 @@ Para links, também é possível definir os protocolos que são automaticamente 
 
 Para configurar quais formatos são permitidos ao colar texto em [!DNL Experience Manager] de outro programa:
 
-1. Em seu componente, navegue até o nó `<rtePlugins-node>/edit`. Crie os nós se o nó não existir. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. Crie um nó sob o `edit` nó para manter as regras de colagem HTML:
+1. No componente, navegue até o nó `<rtePlugins-node>/edit`. Crie os nós se o nó não existir. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
+1. Crie um nó no nó `edit` para manter as regras de colagem HTML:
 
    * **Nome** `htmlPasteRules`
    * **Tipo** `nt:unstructured`
@@ -143,30 +143,30 @@ Para configurar quais formatos são permitidos ao colar texto em [!DNL Experienc
    * **Nome** `allowBasics`
    * **Tipo** `nt:unstructured`
 
-1. Para controlar os formatos individuais aceitos, crie uma ou mais das seguintes propriedades no `allowBasics` nó:
+1. Para controlar os formatos individuais aceitos, crie uma ou mais das seguintes propriedades no nó `allowBasics`:
 
    * **Nome** `bold`
    * **Nome** `italic`
    * **Nome** `underline`
-   * **Nome** `anchor` (para links e âncoras nomeadas)
+   * **Nome** `anchor`  (para links e âncoras nomeadas)
    * **Nome** `image`
 
-   Todas as propriedades são do **Tipo** , portanto, no `Boolean`Valor **** apropriado, você pode selecionar ou remover a marca de seleção para ativar ou desativar a funcionalidade.
+   Todas as propriedades são de **Type** `Boolean`, portanto, no **Valor** apropriado, você pode selecionar ou remover a marca de seleção para ativar ou desativar a funcionalidade.
 
    >[!NOTE]
    >
    >Se não estiver explicitamente definido, o valor padrão de true será usado e o formato será aceito.
 
-1. Outros formatos também podem ser definidos usando uma variedade de outras propriedades ou nós, também aplicados ao `htmlPasteRules` nó:
+1. Outros formatos também podem ser definidos usando uma variedade de outras propriedades ou nós, também aplicados ao nó `htmlPasteRules`:
 
 | Propriedade | Tipo | Descrição |
 |--- |--- |--- |
 | `allowBlockTags` | `String` | Define a lista de tags de bloqueio permitidas. Algumas tags de bloco possíveis incluem títulos (h1, h2, h3), parágrafos (p), listas (ol, ul), tabelas (tabela). |
-| `fallbackBlockTag` | `String` | Define a tag de bloco usada para qualquer bloco que tenha uma tag de bloco não incluída em `allowBlockTags`. Normalmente, `p` basta. |
-| `table` | `nt:unstructured` | Define o comportamento ao colar tabelas. Esse nó deve ter a propriedade que permite (digite Booliano) para definir se a colagem de tabelas é permitida. Se allow estiver definido como false, você deverá especificar a propriedade ignoreMode (tipo String) para definir como o conteúdo da tabela colada é tratado. Valores válidos para ignoreMode são `remove` para remover o conteúdo da tabela e `paragraph` transformar as células da tabela em parágrafos. |
-| `list` | `nt:unstructured` | Define o comportamento ao colar listas. É necessário ter a propriedade `allow` (tipo Booliano) para definir se a colagem de listas é permitida. Se `allow` estiver definido como `false`, especifique a propriedade `ignoreMode` (tipo `String`) para definir como lidar com qualquer conteúdo de lista colado. Os valores válidos para ignoreMode são `remove` que remove o conteúdo da lista e `paragraph` transforma os itens da lista em parágrafos. |
+| `fallbackBlockTag` | `String` | Define a tag de bloqueio usada para qualquer bloco que tenha uma tag de bloco não incluída em `allowBlockTags`. Geralmente, `p` é suficiente. |
+| `table` | `nt:unstructured` | Define o comportamento ao colar tabelas. Esse nó deve ter a propriedade que permite (digite Booliano) para definir se a colagem de tabelas é permitida. Se allow estiver definido como false, você deverá especificar a propriedade ignoreMode (tipo String) para definir como o conteúdo da tabela colada é tratado. Valores válidos para ignoreMode são `remove` para remover o conteúdo da tabela e `paragraph` para transformar células da tabela em parágrafos. |
+| `list` | `nt:unstructured` | Define o comportamento ao colar listas. Deve ter a propriedade `allow` (tipo Boolean) para definir se a colagem de listas é permitida. Se `allow` estiver definido como `false`, especifique a propriedade `ignoreMode` (digite `String`) para definir como lidar com qualquer conteúdo de lista colado. Os valores válidos para ignoreMode são `remove` que remove o conteúdo da lista e `paragraph` que transforma os itens da lista em parágrafos. |
 
-Um exemplo de uma `htmlPasteRules` estrutura válida está abaixo:
+Um exemplo de uma estrutura válida `htmlPasteRules` está abaixo:
 
 ```xml
 "htmlPasteRules": {
@@ -192,7 +192,7 @@ Um exemplo de uma `htmlPasteRules` estrutura válida está abaixo:
 
 ## Configurar estilos de texto {#textstyles}
 
-Os autores podem aplicar estilos para alterar a aparência de uma parte do texto. Os estilos são baseados em classes CSS pré-definidas na folha de estilos CSS. O conteúdo estilizado é delimitado por `span` tags que usam o `class` atributo para fazer referência à classe CSS. Por exemplo:
+Os autores podem aplicar estilos para alterar a aparência de uma parte do texto. Os estilos são baseados em classes CSS pré-definidas na folha de estilos CSS. O conteúdo estilizado é delimitado por tags `span` que usam o atributo `class` para fazer referência à classe CSS. Por exemplo:
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
@@ -206,14 +206,14 @@ Para reconfigurações posteriores, digamos para adicionar mais estilos, siga ap
 
 >[!NOTE]
 >
->Os estilos também podem ser definidos para [tabelas ou células](configure-rich-text-editor-plug-ins.md#tablestyles)de tabela. Essas configurações exigem procedimentos separados.
+>Os estilos também podem ser definidos para [tabelas ou células de tabela](configure-rich-text-editor-plug-ins.md#tablestyles). Essas configurações exigem procedimentos separados.
 
-### Ativar a lista do seletor suspenso Estilo {#styleselectorlist}
+### Ative a lista do seletor suspenso Estilo {#styleselectorlist}
 
 Isso é feito ao ativar o plug-in de estilos.
 
-1. Em seu componente, navegue até o nó `<rtePlugins-node>/styles`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. Crie a `features` propriedade no `styles` nó:
+1. No componente, navegue até o nó `<rtePlugins-node>/styles`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
+1. Crie a propriedade `features` no nó `styles`:
 
    * **Nome** `features`
    * **Tipo** `String`
@@ -225,7 +225,7 @@ Isso é feito ao ativar o plug-in de estilos.
 >
 >Quando o plug-in Estilos estiver ativado, a lista suspensa Estilo será exibida na caixa de diálogo de edição. No entanto, a lista está vazia, pois nenhum Estilo está configurado.
 
-### Especificar o local da folha de estilos {#locationofstylesheet}
+### Especificar a localização da folha de estilos {#locationofstylesheet}
 
 Em seguida, especifique os locais das folhas de estilos que deseja referenciar:
 
@@ -233,7 +233,7 @@ Em seguida, especifique os locais das folhas de estilos que deseja referenciar:
 1. Adicione a propriedade `externalStyleSheets` ao nó pai de `<rtePlugins-node>`:
 
    * **Nome** `externalStyleSheets`
-   * **Tipo** `String[]` (multistring; clique em **Vários** no CRXDE)
+   * **Type** `String[]` (multi-string; clique em  **** Multiin CRXDE)
    * **Valor(es)** O caminho e o nome de arquivo de cada folha de estilos que você deseja incluir. Use caminhos do repositório.
 
    >[!NOTE]
@@ -258,15 +258,15 @@ O Editor de Rich Text usa um elemento DOM de container com uma ID `CQrte` que fo
  }
 ```
 
-### Especificar os Estilos disponíveis na lista pop-up {#stylesindropdown}
+### Especifique os Estilos disponíveis na lista pop-up {#stylesindropdown}
 
-1. Na definição do componente, navegue até o nó `<rtePlugins-node>/styles`, conforme criado em [Ativando o seletor](#styleselectorlist)suspenso de estilo.
+1. Na definição do componente, navegue até o nó `<rtePlugins-node>/styles`, conforme criado em [Ativando o seletor suspenso de estilo](#styleselectorlist).
 1. No nó `styles`, crie um nó (também chamado `styles`) para manter a lista disponível:
 
    * **Nome** `styles`
    * **Tipo** `cq:WidgetCollection`
 
-1. Crie um nó sob o `styles` nó para representar um estilo individual:
+1. Crie um nó no nó `styles` para representar um estilo individual:
 
    * **Nome**, você pode especificar o nome, mas ele deve ser adequado para o estilo
    * **Tipo** `nt:unstructured`
@@ -275,13 +275,13 @@ O Editor de Rich Text usa um elemento DOM de container com uma ID `CQrte` que fo
 
    * **Nome** `cssName`
    * **Tipo** `String`
-   * **Valor** O nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
+   * **** ValorO nome da classe CSS (sem um &#39;.&#39; anterior; por exemplo, `cssClass` em vez de `.cssClass`)
 
 1. Adicione a propriedade `text` ao mesmo nó; isso define o texto mostrado na caixa de seleção:
 
    * **Nome** `text`
    * **Tipo** `String`
-   * **Valor** Descrição do estilo; é exibida na caixa de seleção suspensa Estilo.
+   * **** ValorDescrição do estilo; é exibida na caixa de seleção suspensa Estilo.
 
 1. Salve as alterações.
 
@@ -300,7 +300,7 @@ Para criar o estilo que os autores podem aplicar ao texto em japonês, siga esta
 1. Adicione a propriedade `cssName` ao nó para referenciar a classe CSS. Este nome de classe é um nome reservado para o recurso de quebra automática de texto em japonês.
    * Nome: `cssName`
    * Tipo: `String`
-   * Valor: `jpn-word-wrap` (sem precedentes `.`)
+   * Valor: `jpn-word-wrap` (sem um `.` anterior)
 
 1. Adicione o texto da propriedade ao mesmo nó. O valor é o nome do estilo que os autores veem ao selecionar o estilo.
    * Nome: `text`
@@ -323,7 +323,7 @@ Para criar o estilo que os autores podem aplicar ao texto em japonês, siga esta
 
 ## Configurar os formatos de parágrafo {#paraformats}
 
-Qualquer texto criado no RTE é colocado dentro de uma tag de bloco, sendo o padrão `<p>`. Ao ativar o `paraformat` plug-in, você especifica tags de bloco adicionais que podem ser atribuídas a parágrafos, usando uma lista de seleção suspensa. Os formatos de parágrafo determinam o tipo de parágrafo atribuindo a tag de bloco correta. O autor pode selecioná-los e atribuí-los usando o seletor de Formato. As tags de bloco de exemplo incluem, entre outras, o parágrafo padrão &lt;p> e os cabeçalhos &lt;h1>, &lt;h2> e assim por diante.
+Qualquer texto criado no RTE é colocado dentro de uma tag de bloco, sendo o padrão `<p>`. Ao ativar o plug-in `paraformat`, você especifica tags de bloco adicionais que podem ser atribuídas a parágrafos, usando uma lista de seleção suspensa. Os formatos de parágrafo determinam o tipo de parágrafo atribuindo a tag de bloco correta. O autor pode selecioná-los e atribuí-los usando o seletor de Formato. As tags de bloco de exemplo incluem, entre outras, o parágrafo padrão &lt;p> e os cabeçalhos &lt;h1>, &lt;h2> e assim por diante.
 
 >[!CAUTION]
 >
@@ -331,21 +331,21 @@ Qualquer texto criado no RTE é colocado dentro de uma tag de bloco, sendo o pad
 
 >[!NOTE]
 >
->Se uma tag block, por exemplo, uma `<hr>` tag, não puder ser atribuída a um parágrafo, não será um caso de uso válido para um `paraformat` plug-in.
+>Se uma tag de bloco, por exemplo, uma tag `<hr>`, não puder ser atribuída a um parágrafo, não será um caso de uso válido para um plug-in `paraformat`.
 
 Quando o plug-in Formatos de parágrafo estiver ativado pela primeira vez, nenhum Formato de parágrafo padrão estará disponível. A lista pop-up está vazia. Para fornecer aos autores formatos de parágrafo, faça o seguinte:
 
-* Ative a lista do seletor pop-up [!UICONTROL Formatar] .
+* Ative a lista do seletor pop-up [!UICONTROL Format].
 * Especifique as tags de bloco que podem ser selecionadas como formatos de parágrafo no menu pop-up.
 
 Para reconfigurações posteriores, digamos para adicionar mais formatos, siga somente a parte relevante das instruções.
 
-### Ativar o seletor suspenso Formato {#formatselectorlist}
+### Ative o seletor suspenso Formato {#formatselectorlist}
 
-Para ativar o `paraformat` plug-in, siga estas etapas:
+Para ativar o plug-in `paraformat`, siga estas etapas:
 
-1. Em seu componente, navegue até o nó `<rtePlugins-node>/paraformat`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. Crie a `features` propriedade no `paraformat` nó:
+1. No componente, navegue até o nó `<rtePlugins-node>/paraformat`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
+1. Crie a propriedade `features` no nó `paraformat`:
 
    * **Nome** `features`
    * **Tipo** `String`
@@ -357,19 +357,19 @@ Para ativar o `paraformat` plug-in, siga estas etapas:
 
 >[!CAUTION]
 >
->Ao configurar os formatos de parágrafo do RTE, não remova a tag de parágrafo &lt;p> como uma opção de formatação. Se a `<p>` tag for removida, o autor do conteúdo não poderá selecionar a opção Formatos [!UICONTROL de] parágrafo mesmo se houver outros formatos configurados.
+>Ao configurar os formatos de parágrafo do RTE, não remova a tag de parágrafo &lt;p> como uma opção de formatação. Se a tag `<p>` for removida, o autor do conteúdo não poderá selecionar a opção [!UICONTROL Formatos de parágrafo], mesmo que haja outros formatos configurados.
 
-### Especificar os formatos de parágrafo disponíveis {#paraformatsindropdown}
+### Especificar os Formatos de parágrafo disponíveis {#paraformatsindropdown}
 
 Os formatos de parágrafo são disponibilizados para seleção por:
 
-1. Na definição do componente, navegue até o nó `<rtePlugins-node>/paraformat`, conforme criado em [Ativando o seletor](#styleselectorlist)suspenso de formato.
-1. No `paraformat` nó, crie um nó para manter a lista de formatos:
+1. Na definição do componente, navegue até o nó `<rtePlugins-node>/paraformat`, conforme criado em [Ativando o seletor suspenso de formato](#styleselectorlist).
+1. No nó `paraformat`, crie um nó para manter a lista de formatos:
 
    * **Nome** `formats`
    * **Tipo** `cq:WidgetCollection`
 
-1. Crie um nó sob o `formats` nó, isso contém detalhes para um formato individual:
+1. Crie um nó no nó `formats`, isso contém detalhes para um formato individual:
 
    * **Nome**, você pode especificar o nome, mas ele deve ser adequado para o formato (por exemplo, myparágrafo, myheader1).
    * **Tipo** `nt:unstructured`
@@ -378,7 +378,7 @@ Os formatos de parágrafo são disponibilizados para seleção por:
 
    * **Nome** `tag`
    * **Tipo** `String`
-   * **Valor** A tag de bloco para o formato; por exemplo: p, h1, h2, etc.
+   * **** ValorA tag de bloco para o formato; por exemplo: p, h1, h2, etc.
 
       Não é necessário digitar as chaves delimitadoras.
 
@@ -386,18 +386,18 @@ Os formatos de parágrafo são disponibilizados para seleção por:
 
    * **Nome** `description`
    * **Tipo** `String`
-   * **Valor** O texto descritivo para este formato; por exemplo, Parágrafo, Cabeçalho 1, Cabeçalho 2 e assim por diante. Esse texto é exibido na lista de seleção de Formato.
+   * **** ValorO texto descritivo para este formato; por exemplo, Parágrafo, Cabeçalho 1, Cabeçalho 2 e assim por diante. Esse texto é exibido na lista de seleção de Formato.
 
 1. Salve as alterações.
 
    Repita as etapas para cada formato necessário.
 
 >[!CAUTION]
-Se você definir formatos personalizados, os formatos padrão (`<p>`, `<h1>`, `<h2>`e `<h3>`) serão removidos. Recrie o `<p>` formato, pois ele é o formato padrão.
+Se você definir formatos personalizados, os formatos padrão (`<p>`, `<h1>`, `<h2>` e `<h3>`) serão removidos. Recrie o formato `<p>`, pois ele é o formato padrão.
 
 ## Configurar caracteres especiais {#spchar}
 
-Em uma [!DNL Experience Manager] instalação padrão, quando o `misctools` plug-in está ativado para caracteres especiais (`specialchars`) uma seleção padrão está imediatamente disponível para uso; por exemplo, os símbolos de direitos autorais e marcas registradas.
+Em uma instalação padrão [!DNL Experience Manager], quando o plug-in `misctools` estiver ativado para caracteres especiais (`specialchars`), uma seleção padrão estará disponível imediatamente para uso; por exemplo, os símbolos de direitos autorais e marcas registradas.
 
 Você pode configurar o RTE para disponibilizar sua seleção de caracteres; definindo caracteres distintos ou uma sequência inteira.
 
@@ -406,8 +406,8 @@ A adição de caracteres especiais substitui a seleção padrão. Se necessário
 
 ### Definir um único caractere {#definesinglechar}
 
-1. Em seu componente, navegue até o nó `<rtePlugins-node>/misctools`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. Crie a `features` propriedade no `misctools` nó:
+1. No componente, navegue até o nó `<rtePlugins-node>/misctools`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
+1. Crie a propriedade `features` no nó `misctools`:
 
    * **Nome** `features`
    * **Tipo** `String[]`
@@ -415,39 +415,39 @@ A adição de caracteres especiais substitui a seleção padrão. Se necessário
 
           (ou `String / *` se estiver aplicando todos os recursos para este plug-in)
 
-1. Em `misctools` criar um nó para manter as configurações de caracteres especiais:
+1. Em `misctools` crie um nó para manter as configurações de caracteres especiais:
 
    * **Nome** `specialCharsConfig`
    * **Tipo** `nt:unstructured`
 
-1. Em `specialCharsConfig` criar outro nó para manter a lista de caracteres:
+1. Em `specialCharsConfig`, crie outro nó para manter a lista de caracteres:
 
    * **Nome** `chars`
    * **Tipo** `nt:unstructured`
 
-1. Em `chars` Adicionar um nó para manter uma definição de caractere individual:
+1. Em `chars`, adicione um nó para manter uma definição de caractere individual:
 
-   * **Nome** que você pode especificar, mas que deve refletir o caractere; por exemplo, metade.
+   * **O** nome pode ser especificado, mas deve refletir o caractere; por exemplo, metade.
    * **Tipo** `nt:unstructured`
 
 1. Para esse nó, adicione a seguinte propriedade:
 
    * **Nome** `entity`
    * **Tipo** `String`
-   * **Valor** da representação HTML do caractere desejado; por exemplo, `&189;` para a fração metade.
+   * **** Valorizar a representação HTML do caractere desejado; por exemplo,  `&189;` para a fração metade.
 
 1. Salve as alterações.
 
 No CRXDE, depois que a propriedade é salva, o caractere representado é exibido. Veja abaixo o exemplo da metade. Repita as etapas acima para disponibilizar caracteres mais especiais para os autores.
 
-![No CRXDE, adicione um único caractere a ser disponibilizado na](assets/chlimage_1-106.png "barra de ferramentas do RTEno CRXDE, adicione um único caractere a ser disponibilizado na barra de ferramentas do RTE")
+![No CRXDE, adicione um único caractere a ser disponibilizado na ](assets/chlimage_1-106.png "barra de ferramentas do RTEno CRXDE, adicione um único caractere a ser disponibilizado na barra de ferramentas do RTE")
 
 ### Definir um intervalo de caracteres {#definerangechar}
 
-1. Use as etapas de 1 a 3 de [Definir um único caractere](#definesinglechar).
-1. Em `chars` Adicionar um nó para manter a definição do intervalo de caracteres:
+1. Use as etapas de 1 a 3 de [Defina um único caractere](#definesinglechar).
+1. Em `chars`, adicione um nó para manter a definição do intervalo de caracteres:
 
-   * **Nome** que você pode especificar, mas deve refletir o intervalo de caracteres; por exemplo, lápis.
+   * **Nome:** você pode especificar o nome, mas deve refletir o intervalo de caracteres; por exemplo, lápis.
    * **Tipo** `nt:unstructured`
 
 1. Neste nó (nomeado de acordo com seu intervalo de caracteres especial), adicione as duas propriedades a seguir:
@@ -455,12 +455,12 @@ No CRXDE, depois que a propriedade é salva, o caractere representado é exibido
    * **Nome** `rangeStart`
 
       **Tipo** `Long`
-      **Valor** da representação [Unicode](https://unicode.org/) (decimal) do primeiro caractere no intervalo
+      **Avalie** a apresentação  [](https://unicode.org/) Unicode (decimal) do primeiro caractere no intervalo
 
    * **Nome** `rangeEnd`
 
       **Tipo** `Long`
-      **Valor** da representação [Unicode](https://unicode.org/) (decimal) do último caractere no intervalo
+      **Avalie** a apresentação  [](https://unicode.org/) Unicode (decimal) do último caractere no intervalo
 
 1. Salve as alterações.
 
@@ -470,7 +470,7 @@ No CRXDE, depois que a propriedade é salva, o caractere representado é exibido
 
    *Figura: No CRXDE, defina um intervalo de caracteres a ser disponibilizado no RTE*
 
-   ![Caracteres especiais disponíveis no RTE são exibidos aos autores em uma](assets/rtepencil.png "janela pop-upCaracteres especiais disponíveis no RTE são exibidos aos autores em uma janela pop-up")
+   ![Caracteres especiais disponíveis no RTE são exibidos aos autores em uma ](assets/rtepencil.png "janela pop-upCaracteres especiais disponíveis no RTE são exibidos aos autores em uma janela pop-up")
 
 ## Configurar estilos de tabela {#tablestyles}
 
@@ -483,14 +483,14 @@ Você pode definir estilos para tabelas e células somente para a interface clá
 A cópia e colagem de tabelas no componente RTE ou a partir dele depende do navegador. Não há suporte imediato para todos os navegadores. Você pode obter resultados variados dependendo da estrutura da tabela e do navegador. Por exemplo, ao copiar e colar uma tabela em um componente RTE no Mozilla Firefox na interface clássica e na interface de usuário de toque, o layout da tabela não é preservado.
 
 1. No componente, navegue até o nó `<rtePlugins-node>/table`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. Crie a `features` propriedade no `table` nó:
+1. Crie a propriedade `features` no nó `table`:
 
    * **Nome** `features`
    * **Tipo** `String`
    * **Valor** `*`
 
    >[!NOTE]
-   Se você não quiser ativar todos os recursos da tabela, poderá criar a `features` propriedade como:
+   Se você não quiser ativar todos os recursos da tabela, poderá criar a propriedade `features` como:
    * **Tipo** `String[]`
 
    * **Valor**(s) um ou ambos, do seguinte, conforme necessário:
@@ -498,22 +498,22 @@ A cópia e colagem de tabelas no componente RTE ou a partir dele depende do nave
       * `cellprops` para permitir a edição de propriedades de células, incluindo os estilos.
 
 
-1. Defina o local das folhas de estilos CSS para referenciá-las. Consulte [Especificação do local da folha](#locationofstylesheet) de estilos, pois é o mesmo que ao definir [estilos para o texto](#textstyles). O local pode ser definido se você tiver definido outros estilos.
-1. No `table` nó, crie os seguintes nós, conforme necessário:
+1. Defina o local das folhas de estilos CSS para referenciá-las. Consulte [Especificar o local da folha de estilos](#locationofstylesheet), pois é o mesmo que ao definir [estilos para texto](#textstyles). O local pode ser definido se você tiver definido outros estilos.
+1. No nó `table`, crie os seguintes nós, conforme necessário:
 
-   * Para definir estilos para a tabela inteira (disponível nas propriedades **[!UICONTROL da]** tabela):
+   * Para definir estilos para a tabela inteira (disponível em **[!UICONTROL Propriedades da tabela]**):
 
       * **Nome** `tableStyles`
       * **Tipo** `cq:WidgetCollection`
-   * Para definir estilos para células individuais (disponíveis nas propriedades **[!UICONTROL da]** Célula),
+   * Para definir estilos para células individuais (disponível em **[!UICONTROL Propriedades da célula]**),
 
       * **Nome** `cellStyles`
       * **Tipo** `cq:WidgetCollection`
 
 
-1. Crie um nó (sob o `tableStyles` ou `cellStyles` nó, conforme o caso) para representar um estilo individual,
+1. Crie um nó (sob o nó `tableStyles` ou `cellStyles` conforme apropriado) para representar um estilo individual,
 
-   * **Nome** que você pode especificar, mas deve refletir o estilo.
+   * **Nome** você pode especificar o nome, mas ele deve refletir o estilo.
    * **Tipo** `nt:unstructured`
 
 1. Neste nó, crie as propriedades:
@@ -522,12 +522,12 @@ A cópia e colagem de tabelas no componente RTE ou a partir dele depende do nave
 
       * **Nome** `cssName`
       * **Tipo** `String`
-      * **Valor** do nome da classe CSS (sem um nome anterior `.`, por exemplo, `cssClass` em vez de `.cssClass`)
+      * **** Valorizar o nome da classe CSS (sem um nome anterior, por exemplo,  `.`em vez de  `cssClass`   `.cssClass`)
    * Para definir um texto descritivo a ser exibido no seletor pop-up,
 
       * **Nome** `text`
       * **Tipo** `String`
-      * **Valor** do texto a ser exibido na lista de seleção
+      * **Avalie** o texto a ser exibido na lista de seleção
 
 
 1. Salve todas as alterações.
@@ -554,7 +554,7 @@ Se você especificar o CSS e a string de estilo no código, a classe CSS terá p
 
 ## Adicionar dicionários para o verificador ortográfico {#adddict}
 
-Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionários para cada idioma apropriado. Estes são então selecionados de acordo com o idioma do site, tirando a propriedade de idioma da subárvore ou extraindo o idioma do URL; por exemplo. a `/en/` sucursal é verificada em inglês, a `/de/` sucursal em alemão.
+Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionários para cada idioma apropriado. Estes são então selecionados de acordo com o idioma do site, tirando a propriedade de idioma da subárvore ou extraindo o idioma do URL; por exemplo. a ramificação `/en/` é verificada como inglês, a ramificação `/de/` como alemão.
 
 >[!NOTE]
 A mensagem &quot;Falha na verificação ortográfica&quot;. é exibido se uma verificação for feita para um idioma que não está instalado.
@@ -573,7 +573,7 @@ Para adicionar mais dicionários, se necessário, siga estas etapas.
 1. Selecione o idioma necessário e baixe o arquivo ZIP com as definições de ortografia. Extraia o conteúdo do arquivo em seu sistema de arquivos.
 
    >[!CAUTION]
-   Somente os dicionários no `MySpell` formato para OpenOffice.org v2.0.1 ou anterior são suportados. Como os dicionários agora são arquivos de arquivamento, recomenda-se verificar o arquivo após o download.
+   Somente os dicionários no formato `MySpell` para OpenOffice.org v2.0.1 ou anterior são suportados. Como os dicionários agora são arquivos de arquivamento, recomenda-se verificar o arquivo após o download.
 
 1. Localize os arquivos .aff e .dic. Mantenha o nome do arquivo em minúsculas. Por exemplo, `de_de.aff` e `de_de.dic`.
 1. Carregue os arquivos .aff e .dic no repositório em `/apps/cq/spellchecker/dictionaries`.
@@ -583,31 +583,31 @@ O verificador ortográfico do RTE está disponível sob demanda. Ele não é exe
 Para executar o verificador ortográfico, toque/clique no botão Verificador ortográfico da barra de ferramentas. O RTE verifica a ortografia de palavras e realça palavras com ortografia incorreta.
 Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto muda e as palavras com ortografia incorreta não são mais destacadas. Para executar o verificador ortográfico, toque/clique novamente no botão Verificador ortográfico.
 
-## Configurar o tamanho do histórico para ações de desfazer e refazer {#undohistory}
+## Configure o tamanho do histórico para desfazer e refazer ações {#undohistory}
 
 O RTE permite que os autores desfaçam ou refaçam algumas últimas edições. Por padrão, 50 edições são armazenadas no histórico. Você pode configurar esse valor conforme necessário.
 
 1. No componente, navegue até o nó `<rtePlugins-node>/undo`. Crie esses nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. No `undo` nó, crie a propriedade:
+1. No nó `undo`, crie a propriedade:
 
    * **Nome** `maxUndoSteps`
    * **Tipo** `Long`
-   * **Valor** do número de etapas de desfazer que você deseja salvar no histórico. O padrão é 50. Use `0` para desativar completamente o comando desfazer/refazer.
+   * **Avalie** o número de etapas de desfazer que você deseja salvar no histórico. O padrão é 50. Use `0` para desativar completamente o comando desfazer/refazer.
 
 1. Salve as alterações.
 
-## Configurar o tamanho da guia {#tabsize}
+## Configure o tamanho da guia {#tabsize}
 
 Quando o caractere de tabulação é pressionado dentro de qualquer texto, é inserido um número predefinido de espaços; por padrão, são três espaços sem quebra e um espaço.
 
 Para definir o tamanho da guia:
 
-1. Em seu componente, navegue até o nó `<rtePlugins-node>/keys`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. No `keys` nó, crie a propriedade:
+1. No componente, navegue até o nó `<rtePlugins-node>/keys`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
+1. No nó `keys`, crie a propriedade:
 
    * **Nome** `tabSize`
    * **Tipo** `String`
-   * **Valor** do número de caracteres de espaço a serem usados para o tabulador.
+   * **Avalie** o número de caracteres de espaço a serem usados para o tabulador.
 
 1. Salve as alterações.
 
@@ -619,7 +619,7 @@ Quando o recuo está ativado (padrão), é possível definir o tamanho do recuo:
 O tamanho do travessão só é aplicado aos parágrafos (blocos) do texto; não afeta o recuo das listas reais.
 
 1. No componente, navegue até o nó `<rtePlugins-node>/lists`. Crie esses nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. No `lists` nó, crie o `identSize` parâmetro:
+1. No nó `lists` crie o parâmetro `identSize`:
 
    * **Nome**: `identSize`
    * **Tipo**: `Long`
@@ -629,55 +629,55 @@ O tamanho do travessão só é aplicado aos parágrafos (blocos) do texto; não 
 
 É possível definir a altura do espaço editável mostrado na caixa de diálogo do componente. A configuração só é aplicável ao usar o RTE em uma caixa de diálogo. A configuração não altera a altura da janela de diálogo.
 
-1. No `../items/text` nó, na definição da caixa de diálogo do componente, crie uma propriedade:
+1. No nó `../items/text`, na definição da caixa de diálogo do componente, crie uma propriedade:
 
    * **Nome** `height`
    * **Tipo** `Long`
-   * **Valor** da altura da tela de edição em pixels.
+   * **Avalie** a altura da tela de edição em pixels.
 
 1. Salve as alterações.
 
 ## Configurar estilos e protocolos para links {#linkstyles}
 
-Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos CSS a serem usados e os protocolos a serem aceitos automaticamente. Para configurar como os links são adicionados a [!DNL Experience Manager] partir de outro programa, defina as regras HTML.
+Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos CSS a serem usados e os protocolos a serem aceitos automaticamente. Para configurar como os links são adicionados em [!DNL Experience Manager] a partir de outro programa, defina as regras HTML.
 
 1. Usando o CRXDE Lite, localize o componente de texto para o seu projeto.
-1. Crie um nó no mesmo nível `<rtePlugins-node>`, ou seja, crie o nó sob o nó pai de `<rtePlugins-node>`:
+1. Crie um nó no mesmo nível de `<rtePlugins-node>`, ou seja, crie o nó sob o nó pai de `<rtePlugins-node>`:
 
    * **Nome** `htmlRules`
    * **Tipo** `nt:unstructured`
 
    >[!NOTE]
-   O `../items/text` nó tem a propriedade:
+   O nó `../items/text` tem a propriedade:
    * **Nome** `xtype`
    * **Tipo** `String`
    * **Valor** `richtext`
 
-   O local do `../items/text` nó pode variar, dependendo da estrutura da caixa de diálogo. Dois exemplos são `/apps/myProject>/components/text/dialog/items/text` e `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
+   A localização do nó `../items/text` pode variar, dependendo da estrutura da caixa de diálogo. Dois exemplos são `/apps/myProject>/components/text/dialog/items/text` e `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Em `htmlRules`, crie um nó.
 
    * **Nome** `links`
    * **Tipo** `nt:unstructured`
 
-1. No `links` nó, defina as propriedades conforme necessário:
+1. No nó `links`, defina as propriedades conforme necessário:
 
    * Estilo CSS para links internos:
 
       * **Nome** `cssInternal`
       * **Tipo** `String`
-      * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
+      * **Avalie** o nome da classe CSS (sem um &#39;.&#39; anterior; por exemplo, `cssClass` em vez de `.cssClass`)
    * Estilo CSS para links externos
 
       * **Nome** `cssExternal`
       * **Tipo** `String`
-      * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
-   * Matriz de **[!UICONTROL protocolos]** válidos, incluindo `https://`, `https://`, `file://``mailto:`e outros,
+      * **Avalie** o nome da classe CSS (sem um &#39;.&#39; anterior; por exemplo, `cssClass` em vez de `.cssClass`)
+   * Matriz de **[!UICONTROL protocolos]** válidos, incluindo `https://`, `https://`, `file://`, `mailto:` e outros,
 
       * **Nome** `protocols`
       * **Tipo** `String[]`
       * **Valor**(s) um ou mais protocolos
-   * **defaultProtocol** (propriedade do tipo **String**): Protocolo a ser usado se o usuário não especificou um explicitamente.
+   * **defaultProtocol** (propriedade do tipo  **String**): Protocolo a ser usado se o usuário não especificou um explicitamente.
 
       * **Nome** `defaultProtocol`
       * **Tipo** `String`
@@ -697,7 +697,7 @@ Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos C
 
             * `auto`: significa que é escolhido um público alvo automático
 
-               (especificado pela `targetExternal` propriedade para links externos ou `targetInternal` para links internos).
+               (especificado pela propriedade `targetExternal` para links externos ou `targetInternal` para links internos).
 
             * `manual`: não aplicável neste contexto
             * `blank`: não aplicável neste contexto
@@ -705,12 +705,12 @@ Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos C
 
          * **Nome** `targetInternal`
          * **Tipo** `String`
-         * **Valor** do público alvo para links internos (use somente quando o modo estiver `auto`)
+         * **** Valorizar o público alvo para links internos (use somente quando o modo estiver  `auto`)
       * O público alvo para links externos:
 
          * **Nome** `targetExternal`
          * **Tipo** `String`
-         * **Valor** do público alvo para links externos (usado apenas quando o modo está `auto`).
+         * **Valorize** o público alvo para links externos (usado apenas quando o modo está  `auto`).
 
 
 
