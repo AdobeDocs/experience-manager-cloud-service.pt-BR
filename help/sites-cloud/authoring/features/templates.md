@@ -29,7 +29,7 @@ O **Editor de modelo** permite que os autores do modelo:
 
 Este documento explica como um **autor de modelo** pode usar o console e o editor de modelo para criar e gerenciar modelos editáveis.
 
-For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
+Para obter informações detalhadas sobre como os modelos editáveis funcionam em nível técnico, consulte o documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md) para obter mais informações.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Ao criar um novo modelo editável:
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
-Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
+Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. Esta é uma tarefa de administrador e está descrita no documento [Modelos de página](/help/implementing/developing/components/templates.md#template-folders).—>
 
 ### Criação de um novo modelo - Autor do modelo {#creating-a-new-template-template-author}
 
@@ -114,7 +114,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
 
    >[!NOTE]
    >
-   >Os tipos de modelo são layouts predefinidos e podem ser considerados modelos de um modelo. Eles são predefinidos pelos desenvolvedores ou pelo administrador do sistema. More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
+   >Os tipos de modelo são layouts predefinidos e podem ser considerados modelos de um modelo. Eles são predefinidos pelos desenvolvedores ou pelo administrador do sistema. Mais informações podem ser encontradas no documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md#template-type).—>
 
 1. Preencha os **detalhes do modelo**:
 
@@ -127,7 +127,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
    >
    >Quando um modelo novo for criado, ele será marcado como **Rascunho** no console. Isso indica que ainda não está disponível para uso por autores da página.
 
-### Definir propriedades do modelo - Autor do modelo   {#defining-template-properties-template-author}
+### Definir propriedades do modelo - Autor do modelo    {#defining-template-properties-template-author}
 
 Um modelo pode ter as seguintes propriedades:
 
@@ -162,7 +162,7 @@ Para definir a miniatura do modelo:
    * Se não for satisfatório, clique ou toque em **Limpar** para fazer o upload de outra imagem ou para gerar a miniatura novamente.
 1. Quando estiver satisfeito com a miniatura, clique ou toque em **Salvar e fechar**.
 
-### Ativar e permitir um modelo - Autor do modelo   {#enabling-and-allowing-a-template-template-author}
+### Ativar e permitir um modelo - Autor do modelo    {#enabling-and-allowing-a-template-template-author}
 
 Para poder usar um modelo ao criar uma página é necessário:
 
@@ -204,7 +204,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
    >Se a lista **Modelos permitidos** de for deixada em branco, a árvore será crescente até que um valor/lista seja encontrado.
    >
    >
-   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >Consulte [Disponibilidade do modelo](/help/implementing/developing/components/templates.md#template-availability) - os princípios para os modelos permitidos permanecem os mesmos.
 
 1. Clique em **Salvar** para salvar as alterações nas propriedades da página.
 
@@ -221,7 +221,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 1. Selecione as **Políticas do conteúdo** para ser publicado em tandem.
 1. Selecione **Publicar** na barra de ferramentas para concluir a ação.
 
-## Editar modelos - Autores do modelo   {#editing-templates-template-authors}
+## Editar modelos - Autores do modelo    {#editing-templates-template-authors}
 
 Ao criar ou editar um modelo há vários aspectos que podem ser definidos. A edição modelos é semelhante à criação de página.
 
@@ -527,7 +527,7 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 >
 >O conteúdo inicial destina-se a preparar componentes e o layout de página que servem como ponto de partida para a criação do conteúdo. Não se destina a ser o conteúdo real que permaneceria intacto. Por esse motivo, o conteúdo inicial não pode ser traduzido.
 >
->Se você precisar incluir texto traduzível no modelo, como em cabeçalhos ou rodapés, poderá usar os recursos de [localização dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/get-started/localization.html).
+>Se você precisar incluir texto traduzível no modelo, como em cabeçalhos ou rodapés, poderá usar os recursos de [localização dos componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
 
 ### Editar um modelo - Layout - Autor do modelo {#editing-a-template-layout-template-author}
 
@@ -616,7 +616,7 @@ Usando a opção **Propriedades da página inicial**, é possível definir as [p
 
 1. Confirme suas definições em **Concluído**.
 
-## Práticas recomendadas   {#best-practices}
+## Práticas recomendadas    {#best-practices}
 
 Ao criar modelos você deve considerar:
 
