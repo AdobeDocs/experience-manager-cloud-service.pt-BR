@@ -16,7 +16,7 @@ Esta página descreve os parâmetros configuráveis presentes na janela HTTP do 
 
 ## Parâmetros {#parameters}
 
-![Público alvo HTTP](assets/httpwindow.png "WindowTarget Janela HTTP")
+![Público alvo HTTP ](assets/httpwindow.png "WindowTarget Janela HTTP")
 
 A janela contém os seguintes parâmetros configuráveis:
 
