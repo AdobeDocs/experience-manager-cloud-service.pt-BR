@@ -22,7 +22,7 @@ A meta para este tutorial de várias partes é ensinar um desenvolvedor que é n
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[O Tutorial do desenvolvedor da WKND está disponível aqui](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) e o orienta a criar um projeto AEM usando as tecnologias mais recentes e as práticas recomendadas.
+[O Tutorial do desenvolvedor da WKND está disponível ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) aqui e o orienta a criar um projeto AEM usando as tecnologias mais recentes e as práticas recomendadas.
 
 ## Conceitos principais {#core-concepts}
 
