@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Integração do Git com o Adobe Cloud Manager {#git-integration}
 
-O Adobe Cloud Manager é fornecido com um único repositório git usado para implantar código usando os pipelines CI/CD do Cloud Manager. Os clientes podem usar o repositório git do Gerenciador de nuvem imediatamente. Os clientes também têm a opção de integrar um repositório git no local ou gerenciado pelo **cliente** com o Cloud Manager.
+O Adobe Cloud Manager é fornecido com um único repositório git usado para implantar código usando os pipelines CI/CD do Cloud Manager. Os clientes podem usar o repositório git do Gerenciador de nuvem imediatamente. Os clientes também têm a opção de integrar um repositório git no local ou **gerenciado pelo cliente** com o Cloud Manager.
 
 ## Visão geral da integração do Git {#git-integration-overview}
 
@@ -26,7 +26,7 @@ Esta série de vídeos explora vários casos de uso quando se trata de integrar 
 * [Implantação de produção](#production-deployment)
 * [Sincronizando tags de versão](#sync-tags)
 
-A série de vídeos assume um conhecimento básico sobre gerenciamento de git e controle de origem. Consulte os recursos [adicionais abaixo](#additional-resources) para obter mais detalhes sobre o git.
+A série de vídeos assume um conhecimento básico sobre gerenciamento de git e controle de origem. Consulte os [recursos adicionais abaixo](#additional-resources) para obter mais detalhes sobre git.
 
 >[!NOTE]
 >
