@@ -46,7 +46,7 @@ A primeira etapa da Fase de planejamento é avaliar sua prontidão para migrar d
 
 Será necessário fazer uma avaliação abrangente do código-fonte atual do AEM em relação às alterações notáveis e aos recursos obsoletos para determinar o nível de esforço esperado na jornada de transição.
 
-Você pode acelerar a etapa de avaliação executando o Analisador de práticas recomendadas na versão atual do AEM. Para obter mais detalhes, consulte o [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+Você pode acelerar a etapa de avaliação executando o Analisador de práticas recomendadas na versão atual do AEM. Para obter mais detalhes, consulte [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Se você já tem acesso ao Cloud Manager e a um ambiente do Cloud Service, é recomendável executar seu código atual em um pipeline de qualidade de código do Cloud Manager para avaliar as alterações de código necessárias para compatibilidade com o Cloud Service.
