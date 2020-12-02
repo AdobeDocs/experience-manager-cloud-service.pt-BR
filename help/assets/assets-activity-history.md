@@ -11,7 +11,7 @@ ht-degree: 36%
 ---
 
 
-# Registros de operações de ativos de visualização no fluxo de atividades {#activity-stream-in-timeline}
+# Logs de operação de ativos de visualização no fluxo de atividade {#activity-stream-in-timeline}
 
 Este recurso exibe registros de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas a ativos no Adobe Experience Manager (AEM) Assets, o recurso de fluxo de Atividade atualizará a linha do tempo para refletir a atividade.
 
@@ -32,7 +32,7 @@ Os registros de atividades a serem exibidos na linha do tempo são obtidos do lo
 >
 >Workflows transitórios não são exibidos na linha do tempo, pois nenhuma informação de histórico é salva para esses workflows.
 
-Para visualização do fluxo de atividade, execute uma ou mais operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha]** do tempo na lista GlobalNav.
+Para visualização do fluxo de atividade, execute uma ou mais operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha do tempo]** na lista GlobalNav.
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
