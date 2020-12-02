@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8ee5f7c0c5690dd21291261e5e2ad01599c0c174
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1234'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ A seguinte versão (2020.12.0) será lançada em 17 de dezembro de 2020
 
 ### Novidades em [!DNL Assets] e [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Inclusão** de ativos em massa: Ofereça aos clientes um serviço de ingestão escalável e nativo de nuvem que aproveita  [!DNL Experience Manager] como uma arquitetura de Cloud Service, incluindo microserviços de ativos. Os principais casos de uso incluem ingestão em escala com monitoramento, relatórios e agendamento, enquanto permitem a transferência inicial de ativos para armazenamentos de dados em nuvem usando ferramentas comuns de upload em nuvem. Consulte [ferramenta de importação em massa](/help/assets/add-assets.md#bulk-ingestion-tool).
+* **Inclusão** de ativos em massa: Ofereça aos clientes um serviço de ingestão escalável e nativo de nuvem que aproveita  [!DNL Experience Manager] como uma arquitetura de Cloud Service, incluindo microserviços de ativos. Os principais casos de uso incluem ingestão em escala com monitoramento, relatórios e agendamento, enquanto permitem a transferência inicial de ativos para armazenamentos de dados em nuvem usando ferramentas comuns de upload em nuvem. Consulte [ferramenta de assimilação em massa de ativos](/help/assets/add-assets.md#asset-bulk-ingestor).
 Esta ferramenta destina-se a administradores do sistema, consultores ou parceiros de implementação. Este recurso permite a ingestão em grande escala e é usado idealmente durante a ingestão inicial ou a ingestão ocasional em grande escala. Para tarefas de ingestão menores, use o [[!DNL Experience Manager] aplicativo desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) ou [upload usando a interface de usuário do Assets](/help/assets/add-assets.md#upload-assets).
 
    ![Configuração do importador a granel](/help/assets/assets/bulk-import-config-low-res.png)
