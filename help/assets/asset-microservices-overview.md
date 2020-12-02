@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# Visão geral da assimilação e processamento de ativos com microserviços de ativos {#asset-microservices-overview}
+# Visão geral da ingestão e processamento de ativos com microserviços de ativos {#asset-microservices-overview}
 
 A Adobe Experience Manager como Cloud Service fornece um método nativo de nuvem para aproveitar os aplicativos e os recursos do Experience Manager. Um dos elementos chave dessa nova arquitetura é a ingestão e o processamento de ativos, impulsionados por microserviços de ativos. Os microserviços de ativos fornecem um processamento escalonável e resiliente de ativos usando serviços em nuvem. O Adobe gerencia os serviços em nuvem para uma manipulação ideal de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microserviços de ativos nativos na nuvem são:
 
@@ -21,7 +21,7 @@ A Adobe Experience Manager como Cloud Service fornece um método nativo de nuvem
 * Maior capacidade de resistência do processamento de ativos. Os possíveis problemas ao lidar com arquivos atípicos, como arquivos corrompidos ou arquivos extremamente grandes, não afetam mais o desempenho da implantação.
 * Configuração simplificada do processamento de ativos para os administradores.
 * A configuração de processamento de ativos é gerenciada e mantida pelo Adobe para fornecer a melhor configuração conhecida para lidar com execuções, metadados e extração de texto para vários tipos de arquivos
-* Os serviços nativos de processamento de arquivos de Adobe são usados quando aplicável, proporcionando saída de alta fidelidade e manuseio [eficiente de formatos](file-format-support.md)proprietários de Adobe.
+* Os serviços nativos de processamento de arquivos de Adobe são usados quando aplicável, fornecendo saída de alta fidelidade e [manuseio eficiente dos formatos proprietários de Adobe](file-format-support.md).
 * Capacidade de configurar o fluxo de trabalho de pós-processamento para adicionar ações e integrações específicas do usuário.
 
 Os microserviços de ativos ajudam a evitar a necessidade de ferramentas e métodos de renderização de terceiros (como a transcodificação de ImageMagick e FFmpeg) e a simplificar as configurações, além de fornecer funcionalidade pronta para uso para tipos de arquivos comuns.
@@ -35,7 +35,7 @@ Um diagrama de arquitetura de alto nível descreve os principais elementos de as
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![Inclusão e processamento de ativos com](assets/asset-microservices-overview.png "microserviços de ativosingestão e processamento de ativos com microserviços de ativos")
+![Inclusão e processamento de ativos com ](assets/asset-microservices-overview.png "microserviços de ativosingestão e processamento de ativos com microserviços de ativos")
 
 As etapas principais da ingestão e processamento usando microserviços de ativos são:
 
