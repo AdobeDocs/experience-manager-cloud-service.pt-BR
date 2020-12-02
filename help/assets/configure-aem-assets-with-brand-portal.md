@@ -1,23 +1,23 @@
 ---
-title: Configure o AEM Assets como um Cloud Service com o Brand Portal
+title: Configure o AEM Assets como  [!DNL Cloud Service] com o Brand Portal
 description: Configurar o AEM Assets com o Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 19%
+source-wordcount: '1629'
+ht-degree: 20%
 
 ---
 
 
-# Configure o AEM Assets como um Cloud Service com o Brand Portal {#configure-aem-assets-with-brand-portal}
+# Configure o AEM Assets como [!DNL Cloud Service] com o Brand Portal {#configure-aem-assets-with-brand-portal}
 
-A configuração do Portal de marcas dos ativos Adobe Experience Manager permite que você publique ativos de marca aprovados dos ativos Adobe Experience Manager como uma instância Cloud Service para o Portal de marcas e distribua-os para os usuários do Portal de marcas.
+A configuração do Portal de marcas dos ativos Adobe Experience Manager permite que você publique ativos de marca aprovados dos ativos Adobe Experience Manager como uma instância [!DNL Cloud Service] no Portal de marcas e os distribua aos usuários do Portal de marcas.
 
 **Fluxo de trabalho de configuração**
 
-A AEM Assets como Cloud Service é configurada com o Brand Portal via Adobe Developer Console, que obtém um token de conta Adobe Identity Management Services (IMS) para autorização do locatário do Brand Portal. Requer configurações tanto no AEM Assets quanto no Adobe Developer Console.
+A AEM Assets como [!DNL Cloud Service] é configurada com o Brand Portal via Adobe Developer Console, que obtém um token de conta Adobe Identity Management Services (IMS) para autorização do locatário do Brand Portal. Requer configurações tanto no AEM Assets quanto no Adobe Developer Console.
 
 1. No AEM Assets, crie uma conta IMS e gere uma chave pública (certificado).
 1. No Console do desenvolvedor do Adobe, crie um projeto para seu locatário do Brand Portal (organização).
@@ -29,13 +29,13 @@ A AEM Assets como Cloud Service é configurada com o Brand Portal via Adobe Deve
 
 >[!NOTE]
 >
->Uma instância AEM Assets como Cloud Service só deve ser configurada com um locatário do Brand Portal.
+>Uma instância do AEM Assets como [!DNL Cloud Service] só deve ser configurada com um locatário do Brand Portal.
 
 ## Pré-requisitos {#prerequisites}
 
 Você precisa do seguinte para configurar o AEM Assets com o Brand Portal:
 
-* Um AEM Assets ativo e em execução como uma instância Cloud Service
+* Um AEM Assets ativo e em execução como uma instância [!DNL Cloud Service]
 * Um URL de locatário do Brand Portal
 * Um usuário com privilégios de administrador do sistema na organização IMS do locatário do Brand Portal
 
@@ -51,7 +51,7 @@ Execute as seguintes etapas na sequência especificada para configurar o AEM Ass
 
 ### Criar configuração IMS {#create-ims-configuration}
 
-A configuração IMS autentica seu AEM Assets como uma instância Cloud Service com o locatário do Brand Portal.
+A configuração do IMS autentica seu AEM Assets como uma instância [!DNL Cloud Service] com o locatário do Brand Portal.
 
 A configuração IMS inclui duas etapas:
 
@@ -231,7 +231,7 @@ Execute as seguintes etapas para configurar o serviço em nuvem do Brand Portal:
 
 1. Clique em **[!UICONTROL Salvar e fechar]**. A configuração da nuvem é criada.
 
-   Seu AEM Assets como uma instância Cloud Service agora está configurado com o locatário do Brand Portal.
+   Seu AEM Assets como uma instância [!DNL Cloud Service] agora está configurado com o locatário do Brand Portal.
 
 ### Testar configuração{#test-configuration}
 
@@ -262,7 +262,7 @@ Execute as seguintes etapas para validar a configuração:
 
    ![](assets/test-bpconfig3.png)
 
-1. Para verificar a conexão entre o AEM Assets como Cloud Service e o Portal de marca, clique no ícone **[!UICONTROL Testar conexão]**.
+1. Para verificar a conexão entre a AEM Assets como um [!DNL Cloud Service] e o Brand Portal, clique no ícone **[!UICONTROL Testar conexão]**.
 
    ![](assets/test-bpconfig4.png)
 
