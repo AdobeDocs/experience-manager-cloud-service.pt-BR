@@ -10,7 +10,7 @@ ht-degree: 14%
 ---
 
 
-# Naming Conventions{#naming-conventions}
+# Nomeando Convenções{#naming-conventions}
 
 Os nós no repositório estão sujeitos às convenções de nomenclatura do Java Content Repository. No entanto, AEM impõem outras convenções para o nome dos nós de página.
 
@@ -18,13 +18,13 @@ Os nós no repositório estão sujeitos às convenções de nomenclatura do Java
 
 Essas convenções de nomenclatura são implementadas em vários níveis:
 
-* JcrUtil: a implementação AEM dos serviços de [JCR](#jcr-utilities).
+* JcrUtil: a implementação AEM de [utilitários JCR](#jcr-utilities).
 * PageManager: o [Page Manager](#page-manager) fornece métodos para operações de nível de página.
 * Na interface do usuário AEM {#ui-behavior}
 
 ### Utilitários JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) é a implementação AEM dos utilitários JCR. De especial interesse para validar nomes são os mapeamentos de caracteres que ele controla e as seguintes validações:
+[O ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis é a implementação AEM dos utilitários do JCR. De especial interesse para validar nomes são os mapeamentos de caracteres que ele controla e as seguintes validações:
 
 * `isValidName`
    * Verifica se o nome não está vazio e contém apenas caracteres válidos.
@@ -35,7 +35,7 @@ Essas convenções de nomenclatura são implementadas em vários níveis:
 
 ### Gerenciador de páginas {#page-manager}
 
-[O PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) fornece métodos para operações de nível de página, com base em [JCRUtil](#jcr-utilities).
+[O ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager fornece métodos para operações de nível de página, com base em  [JCRUtil](#jcr-utilities).
 
 ### Comportamento da interface do usuário AEM {#ui-behavior}
 
