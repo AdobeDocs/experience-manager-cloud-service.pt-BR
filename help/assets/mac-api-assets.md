@@ -3,9 +3,9 @@ title: API HTTP de ativos
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1473'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Depois do [!UICONTROL Tempo desligado], um ativo e suas representações não es
 
 >[!NOTE]
 >
->Todas as chamadas de API relacionadas ao upload ou atualização de ativos ou binários em geral (como execuções) são representadas para AEM como uma implantação de Cloud Service. Para fazer upload de binários, use [APIs de upload binário direto](developer-reference-material-apis.md#asset-upload-technical).
+>Todas as chamadas de API relacionadas ao upload ou atualização de ativos ou binários em geral (como execuções) estão obsoletas para AEM como uma implantação [!DNL Cloud Service]. Para fazer upload de binários, use [APIs de upload binário direto](developer-reference-material-apis.md#asset-upload-technical).
 
 ## Fragmentos de conteúdo {#content-fragments}
 
