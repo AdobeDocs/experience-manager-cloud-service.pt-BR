@@ -26,17 +26,17 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. (Opcional) Na lista **[!UICONTROL Projeto]** , selecione o projeto ao qual deseja associar a tarefa de revisão. Por padrão, a opção **[!UICONTROL Nenhum]** está selecionada. Se você não quiser associar qualquer projeto à tarefa de revisão, mantenha essa seleção.
+1. (Opcional) Na lista **[!UICONTROL Project]**, selecione o projeto ao qual deseja associar a tarefa de revisão. Por padrão, a opção **[!UICONTROL None]** está selecionada. Se você não quiser associar qualquer projeto à tarefa de revisão, mantenha essa seleção.
 
    >[!NOTE]
    >
-   >Somente os projetos para os quais você tem permissões no nível do Editor (ou superior) estão visíveis na lista **[!UICONTROL Projetos]** .
+   >Somente os projetos para os quais você tem permissões no nível do Editor (ou superiores) estão visíveis na lista **[!UICONTROL Projects]**.
 
-1. Insira um nome para a tarefa de revisão e selecione um aprovador na lista **[!UICONTROL Atribuir]** .
+1. Insira um nome para a tarefa de revisão e selecione um aprovador na lista **[!UICONTROL Atribuir a]**.
 
    >[!NOTE]
    >
-   >Os membros/grupos do projeto selecionado estão disponíveis como aprovadores na lista **[!UICONTROL Atribuir]** .
+   >Os membros/grupos do projeto selecionado estão disponíveis como aprovadores na lista **[!UICONTROL Atribuir a]**.
 
 1. Informe uma descrição, a prioridade da tarefa e a data de vencimento da tarefa de revisão.
 
@@ -74,17 +74,17 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
-1. (Opcional) Na lista **[!UICONTROL Projeto]** , selecione o projeto ao qual deseja associar a tarefa de revisão. Por padrão, a opção **[!UICONTROL Nenhum]** está selecionada. Se você não quiser associar qualquer projeto à tarefa de revisão, mantenha essa seleção.
+1. (Opcional) Na lista **[!UICONTROL Project]**, selecione o projeto ao qual deseja associar a tarefa de revisão. Por padrão, a opção **[!UICONTROL None]** está selecionada. Se você não quiser associar qualquer projeto à tarefa de revisão, mantenha essa seleção.
 
    >[!NOTE]
    >
-   >Somente os projetos para os quais você tem permissões no nível do Editor (ou superior) estão visíveis na lista **[!UICONTROL Projetos]** .
+   >Somente os projetos para os quais você tem permissões no nível do Editor (ou superiores) estão visíveis na lista **[!UICONTROL Projects]**.
 
-1. Insira um nome para a tarefa de revisão e selecione um aprovador na lista **[!UICONTROL Atribuir]** .
+1. Insira um nome para a tarefa de revisão e selecione um aprovador na lista **[!UICONTROL Atribuir a]**.
 
    >[!NOTE]
    >
-   >Os membros/grupos do projeto selecionado estão disponíveis como aprovadores na lista **[!UICONTROL Atribuir]** .
+   >Os membros/grupos do projeto selecionado estão disponíveis como aprovadores na lista **[!UICONTROL Atribuir a]**.
 
 1. Informe uma descrição, a prioridade da tarefa e a data de vencimento da tarefa de revisão.
 
