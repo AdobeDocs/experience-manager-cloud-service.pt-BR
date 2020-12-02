@@ -12,9 +12,9 @@ ht-degree: 6%
 
 # Fragmentos de conteúdo configuram componentes para renderização{#content-fragments-configuring-components-for-rendering}
 
-Há vários serviços [](#definition-of-advanced-services-that-need-configuration) avançados relacionados à renderização de fragmentos de conteúdo. Para usar esses serviços, os tipos de recursos desses componentes devem se tornar conhecidos pela estrutura de fragmentos de conteúdo.
+Há vários [serviços avançados](#definition-of-advanced-services-that-need-configuration) relacionados à renderização de fragmentos de conteúdo. Para usar esses serviços, os tipos de recursos desses componentes devem se tornar conhecidos pela estrutura de fragmentos de conteúdo.
 
-Isso é feito configurando o serviço [OSGi - Configuração](#osgi-service-content-fragment-component-configuration)do componente de fragmento de conteúdo.
+Isso é feito configurando o [Serviço OSGi - Configuração do componente de fragmento de conteúdo](#osgi-service-content-fragment-component-configuration).
 
 Essas informações são necessárias quando:
 
@@ -25,7 +25,7 @@ Essas informações são necessárias quando:
 
 >[!CAUTION]
 >
->* **Se não precisar dos serviços [](#definition-of-advanced-services-that-need-configuration)** avançados descritos abaixo, ignore essa configuração.
+>* **Se você não precisar dos serviços  [avançados](#definition-of-advanced-services-that-need-configuration)** descritos abaixo, ignore essa configuração.
    >
    >
 * **Ao estender ou usar os componentes prontos para uso**, não é recomendável alterar a configuração do OSGi.
@@ -36,14 +36,14 @@ Essas informações são necessárias quando:
 >
 Portanto, é recomendável usar os Componentes principais.
 
-## Definição de serviços avançados que precisam de configuração {#definition-of-advanced-services-that-need-configuration}
+## Definição dos Serviços Avançados que precisam de Configuração {#definition-of-advanced-services-that-need-configuration}
 
 Os serviços que exigem o registro de um componente são:
 
 * Determinar as dependências corretamente durante a publicação (isto é, garantir que os fragmentos e modelos possam ser publicados automaticamente com uma página se tiverem sido alterados desde a última publicação).
 * Suporte para fragmentos de conteúdo na pesquisa de texto completo.
-* Gerenciamento/tratamento de conteúdo *intermediário.*
-* A gestão/tratamento de ativos de *meios de comunicação mistos.*
+* O gerenciamento/tratamento de *conteúdo intermediário.*
+* O gerenciamento de *ativos de mídia mista.*
 * O Dispatcher libera fragmentos referenciados (se uma página que contém um fragmento for republicada).
 * Uso de renderização baseada em parágrafo.
 
@@ -51,13 +51,13 @@ Se você precisar de um ou mais desses recursos, então (normalmente) é mais f�
 
 ## Serviço OSGi - Configuração do componente de fragmento de conteúdo {#osgi-service-content-fragment-component-configuration}
 
-A configuração precisa estar vinculada à Configuração **do componente de fragmento de** conteúdo do serviço OSGi:
+A configuração precisa estar vinculada ao serviço OSGi **Configuração do componente de fragmento de conteúdo**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->Consulte Configuração [do](/help/implementing/deploying/overview.md#osgi-configuration) OSGi para obter mais detalhes.
+>Consulte [Configuração do OSGi](/help/implementing/deploying/overview.md#osgi-configuration) para obter mais detalhes.
 
 Por exemplo:
 
@@ -82,7 +82,7 @@ A configuração do OSGi é:
   <tr>
    <td><strong>Propriedade de referência</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>O nome da propriedade que contém a referência ao fragmento; por exemplo <code>fragmentPath</code> ou <code>fileReference</code></td>
+   <td>O nome da propriedade que contém a referência ao fragmento; por exemplo, <code>fragmentPath</code> ou <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Propriedade do(s) elemento(s)</strong></td>
@@ -97,7 +97,7 @@ A configuração do OSGi é:
  </tbody>
 </table>
 
-Para algumas funcionalidades, seu componente terá que aderir às convenções predefinidas. A tabela a seguir detalha as propriedades que precisam ser definidas, pelo seu componente, para cada parágrafo (isto é, `jcr:paragraph` para cada instância do componente) para que os serviços possam detectá-las e processá-las corretamente.
+Para algumas funcionalidades, seu componente terá que aderir às convenções predefinidas. A tabela a seguir detalha as propriedades que precisam ser definidas, pelo seu componente, para cada parágrafo (ou seja, `jcr:paragraph` para cada instância do componente) para que os serviços possam detectá-los e processá-los corretamente.
 
 <table>
  <thead>
@@ -109,7 +109,7 @@ Para algumas funcionalidades, seu componente terá que aderir às convenções p
  <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Uma propriedade de string que define como os parágrafos devem ser exibidos se estiverem no modo <em>de renderização de</em>um único elemento.</p> <p>Valores:</p>
+   <td><p>Uma propriedade de string que define como os parágrafos devem ser exibidos se em <em>modo de renderização de elemento único</em>.</p> <p>Valores:</p>
     <ul>
      <li><code>all</code> : para renderizar todos os parágrafos</li>
      <li><code>range</code> : para renderizar o intervalo de parágrafos fornecido por <code>paragraphRange</code></li>
@@ -117,7 +117,7 @@ Para algumas funcionalidades, seu componente terá que aderir às convenções p
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Uma propriedade de string que define o intervalo de parágrafos a serem enviados se estiver no modo <em>de renderização de um elemento</em>único.</p> <p>Formato:</p>
+   <td><p>Uma propriedade de string que define o intervalo de parágrafos a serem enviados se estiver em <em>modo de renderização de elemento único</em>.</p> <p>Formato:</p>
     <ul>
      <li><code>1</code> ou <code>1-3</code> ou <code>1-3;6;7-8</code> ou <code>*-3;5-*</code>
      <ul>
