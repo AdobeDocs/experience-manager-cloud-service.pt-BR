@@ -12,7 +12,7 @@ ht-degree: 23%
 
 # Permissões baseadas em função {#role-based-permissions}
 
-[!UICONTROL O Cloud Manager tem funções pré-configuradas com permissões apropriadas.] Por exemplo, um desenvolvedor desenvolve código e tem permissão para enviar o código para o Repositório **Git**. Como alternativa, um proprietário de negócios tem permissões diferentes que permitem definir os Indicadores-chave de desempenho (KPIs) e aprovar implantações.
+[!UICONTROL O Cloud Manager tem funções pré-configuradas com permissões apropriadas.] Por exemplo, um desenvolvedor desenvolve código e tem permissão para enviar o código para o **Repositório Git**. Como alternativa, um proprietário de negócios tem permissões diferentes que permitem definir os Indicadores-chave de desempenho (KPIs) e aprovar implantações.
 
 ## Permissões de usuário {#user-permissions}
 
