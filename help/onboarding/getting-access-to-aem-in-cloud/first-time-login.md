@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # Acesso aos programas {#first-time-login}
 
-Depois de fazer logon com êxito no [!UICONTROL Cloud Manager], você estará pronto para usar a interface do usuário (UI).
+Depois que você fizer logon com êxito no [!UICONTROL Cloud Manager], estará pronto para usar a interface de usuário (UI).
 
 >[!NOTE]
 >
->Dependendo das funções atribuídas no [!UICONTROL Cloud Manager] e do estado do aplicativo, você verá telas diferentes ao usar a interface do usuário do [!UICONTROL Cloud Manager] .
+>Dependendo das funções atribuídas no [!UICONTROL Gerenciador de nuvem] e do estado do aplicativo, você verá telas diferentes ao usar a interface do usuário [!UICONTROL Gerenciador de nuvem].
 
 ## Landing page do Cloud Manager {#landing-page}
 
-Depois de fazer logon com êxito no [!UICONTROL Cloud Manager], você verá a landing page como mostrado na figura abaixo.
+Depois de efetuar login com êxito no [!UICONTROL Cloud Manager], você verá a landing page como mostrado na figura abaixo.
 
 >[!NOTE]
 >
->Os programas que estão no Cloud Service são indicados pela legenda **Experience Manager Cloud** (em oposição ao **Experience Manager** para programas AMS), como mostrado abaixo.
+>Os programas que estão no Cloud Service são indicados pelo subtítulo **Experience Manager Cloud** (em oposição a **Experience Manager** para programas AMS), conforme mostrado abaixo.
 
 ![](assets/first_timelogin1.png)
 
@@ -42,17 +42,17 @@ A landing page direciona você para criar seu primeiro programa, como mostrado n
 ![](assets/first_timelogin0.png)
 
 
-## Adicionando um novo Programa ao Cloud Service com Programas existentes {#existing-program}
+## Adicionar um novo Programa no Cloud Service com Programas existentes {#existing-program}
 
 
-1. Faça logon no **Adobe [!UICONTROL Experience Cloud]** e você verá a lista de **Programas e produtos**.
+1. Efetue login no **Adobe [!UICONTROL Experience Cloud]** e você verá a lista de **Programas e produtos**.
 
    ![](assets/first_timelogin1.png)
 
-   Os programas que estão no Cloud Service são indicados pela legenda **Experience Manager Cloud** (em vez de **Experience Manager** para programas AMS).
+   Os programas que estão no Cloud Service são indicados pelo subtítulo **Experience Manager Cloud** (em oposição a **Experience Manager** para programas AMS).
 
    >[!NOTE]
-   >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
+   >Por exemplo, na figura acima, **We.Retail Global** é um programa AMS e **We.Retail-Prod Programa - Prod** é um programa disponível via Cloud Service.
 
 1. Para saber como adicionar um programa da tela **Programas e produtos** para criar um novo programa no Cloud Service, consulte [Criar um Programa](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
 
