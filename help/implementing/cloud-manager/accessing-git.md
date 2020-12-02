@@ -16,17 +16,17 @@ ht-degree: 7%
 
 Você pode acessar e gerenciar o Repositório Git usando o Gerenciamento de conta Git de Autoatendimento da interface do usuário do Cloud Manager.
 
-## Usando Gerenciamento De Conta De Git De Autoatendimento {#self-service-git}
+## Usando o Gerenciamento de Conta Git Self-Service {#self-service-git}
 
 Use o botão **Gerenciar Git** disponível na interface do usuário do Cloud Manager, mais importante na placa de pipeline.
 
-1. Navegue até a página Visão geral *do* Programa e até o cartão Pipelines.
+1. Navegue até a página *Visão geral do Programa* e até o cartão Pipelines.
 
 1. Você visualização a opção **Gerenciar Git** para acessar e gerenciar seu Repositório Git.
 
    ![](assets/manage-git1.png)
 
-   Além disso, se você selecionar a guia de pipeline **Não-produção** , também será visualização a opção **Gerenciar Git** .
+   Além disso, se você selecionar a guia de pipeline **Non-Production**, também visualização a opção **Gerenciar Git**.
 
    ![](assets/manage-git-new2.png)
 
