@@ -17,19 +17,19 @@ ht-degree: 7%
 Para ser criado e implantado com êxito com o Cloud Manager, os projetos AEM existentes precisam seguir algumas regras básicas:
 
 * Os projetos devem ser construídos com o Apache Maven.
-* Deve haver um arquivo *pom.xml* na raiz do repositório Git. Esse arquivo *pom.xml* pode fazer referência a quantos submódulos (que por sua vez podem ter outros submódulos etc.) conforme necessário.
+* Deve haver um arquivo *pom.xml* na raiz do repositório Git. Esse arquivo *pom.xml* pode se referir a quantos submódulos (que por sua vez podem ter outros submódulos etc.) conforme necessário.
 
-* Você pode adicionar referências a repositórios de artefatos Maven adicionais em seus arquivos *pom.xml* . O acesso a repositórios [de artefatos protegidos por](#password-protected-maven-repositories) senha é suportado quando configurado. No entanto, o acesso a repositórios de artefatos protegidos pela rede não é suportado.
-* Os pacotes de conteúdo implantáveis são detectados ao verificar se há arquivos *zip* do pacote de conteúdo contidos em um diretório chamado *público alvo*. Qualquer número de submódulos pode produzir pacotes de conteúdo.
+* Você pode adicionar referências a repositórios de artefatos Maven adicionais nos arquivos *pom.xml*. O acesso a [repositórios de artefatos protegidos por senha](#password-protected-maven-repositories) é suportado quando configurado. No entanto, o acesso a repositórios de artefatos protegidos pela rede não é suportado.
+* Os pacotes de conteúdo implantáveis são descobertos pela verificação de arquivos *zip* do pacote de conteúdo que estão contidos em um diretório chamado *público alvo*. Qualquer número de submódulos pode produzir pacotes de conteúdo.
 
-* Os artefatos do Dispatcher que podem ser implantados são descobertos pela varredura de arquivos *zip* (novamente, contidos em um diretório chamado *público alvo*) que têm diretórios chamados *conf* e *conf.d*.
+* Os artefatos do Dispatcher que podem ser implantados são descobertos ao verificar se há arquivos *zip* (novamente, contidos em um diretório chamado *público alvo*) que têm diretórios chamados *conf* e *conf.d*.
 
-* Se houver mais de um pacote de conteúdo, a ordem de implantações de pacote não é garantida. Se uma ordem específica for necessária, as dependências do pacote de conteúdo poderão ser usadas para definir a ordem. Os pacotes podem ser [ignorados](#skipping-content-packages) da implantação.
+* Se houver mais de um pacote de conteúdo, a ordem de implantações de pacote não é garantida. Se uma ordem específica for necessária, as dependências do pacote de conteúdo poderão ser usadas para definir a ordem. Os pacotes podem ser [ignorados](#skipping-content-packages) da implementação.
 
 
 ## Ativar Perfis Maven no Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
-Em alguns casos limitados, pode ser necessário variar um pouco o processo de compilação ao ser executado no Gerenciador de nuvem em vez de quando é executado em estações de trabalho de desenvolvedor. Nesses casos, os Perfis [](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) Maven podem ser usados para definir como a compilação deve ser diferente em ambientes diferentes, incluindo o Cloud Manager.
+Em alguns casos limitados, pode ser necessário variar um pouco o processo de compilação ao ser executado no Gerenciador de nuvem em vez de quando é executado em estações de trabalho de desenvolvedor. Para esses casos, [Perfis Maven](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) podem ser usados para definir como a compilação deve ser diferente em ambientes diferentes, incluindo o Cloud Manager.
 
 A ativação de um Perfil Maven dentro do ambiente de compilação do Cloud Manager deve ser feita procurando a variável de ambiente CM_BUILD descrita acima. Por outro lado, um perfil destinado a ser usado somente fora do ambiente de criação do Gerenciador de nuvem deve ser feito procurando pela ausência dessa variável.
 
@@ -105,20 +105,20 @@ E se você quiser enviar uma mensagem simples somente quando a criação for exe
         </profile>
 ```
 
-## Suporte ao repositório Maven protegido por senha {#password-protected-maven-repositories}
+## Suporte a repositório Maven protegido por senha {#password-protected-maven-repositories}
 
 >[!NOTE]
 >Os artefatos de um repositório Maven protegido por senha devem ser usados com muito cuidado, pois o código implantado por esse mecanismo não é executado atualmente pelos portões de qualidade do Cloud Manager. Portanto, deve ser utilizado apenas em casos raros e para códigos não ligados à AEM. Recomenda-se também implantar as fontes Java e todo o código fonte do projeto junto com o binário.
 
-Para usar um repositório Maven protegido por senha do Gerenciador de nuvem, especifique a senha (e, opcionalmente, o nome de usuário) como uma Variável [secreta do](#pipeline-variables) Pipeline e faça referência a esse segredo em um arquivo chamado `.cloudmanager/maven/settings.xml` no repositório git. Esse arquivo segue o [schema de Arquivo](https://maven.apache.org/settings.html) de Configurações Maven. Quando os start de processo de criação do Gerenciador de nuvem, o `<servers>` elemento nesse arquivo será mesclado no arquivo padrão `settings.xml` fornecido pelo Gerenciador de nuvem. As IDs de servidor que começam com `adobe` e `cloud-manager` são consideradas reservadas e não devem ser usadas por servidores personalizados. As IDs de servidor **que não** correspondem a um desses prefixos ou a ID padrão nunca `central` serão espelhadas pelo Gerenciador de nuvem. Com esse arquivo no lugar, a ID do servidor seria referenciada de dentro de um `<repository>` e/ou `<pluginRepository>` elemento dentro do `pom.xml` arquivo. Geralmente, esses `<repository>` e/ou `<pluginRepository>` elementos estariam contidos em um perfil [específico do](#activating-maven-profiles-in-cloud-manager)Cloud Manager, embora isso não seja estritamente necessário.
+Para usar um repositório Maven protegido por senha do Gerenciador de nuvem, especifique a senha (e, opcionalmente, o nome de usuário) como uma [Variável de pipeline](#pipeline-variables) secreta e faça referência a esse segredo em um arquivo chamado `.cloudmanager/maven/settings.xml` no repositório git. Esse arquivo segue o schema [Maven Settings File](https://maven.apache.org/settings.html). Quando os start de processo de criação do Gerenciador de nuvem, o elemento `<servers>` nesse arquivo será unido ao arquivo padrão `settings.xml` fornecido pelo Gerenciador de nuvem. As IDs de servidor que começam com `adobe` e `cloud-manager` são consideradas reservadas e não devem ser usadas por servidores personalizados. As IDs de servidor **que não** correspondem a um desses prefixos ou a ID padrão `central` nunca serão espelhadas pelo Cloud Manager. Com esse arquivo no lugar, a id do servidor seria referenciada de dentro de um elemento `<repository>` e/ou `<pluginRepository>` dentro do arquivo `pom.xml`. Geralmente, esses elementos `<repository>` e/ou `<pluginRepository>` ficariam contidos em um [perfil específico do Cloud Manager](#activating-maven-profiles-in-cloud-manager), embora isso não seja estritamente necessário.
 
-Por exemplo, digamos que o repositório esteja em https://repository.myco.com/maven2, o usuário que o Gerenciador da Cloud deve usar é `cloudmanager` e a senha é `secretword`.
+Por exemplo, digamos que o repositório esteja em https://repository.myco.com/maven2, o usuário do Gerenciador da Cloud deve usar `cloudmanager` e a senha é `secretword`.
 
 Primeiro, defina a senha como um segredo no pipeline:
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
 
-Em seguida, consulte-o no `.cloudmanager/maven/settings.xml` arquivo:
+Em seguida, consulte-o no arquivo `.cloudmanager/maven/settings.xml`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -134,7 +134,7 @@ Em seguida, consulte-o no `.cloudmanager/maven/settings.xml` arquivo:
 </settings>
 ```
 
-Por fim, consulte a ID do servidor dentro do `pom.xml` arquivo:
+Por fim, consulte a ID do servidor dentro do arquivo `pom.xml`:
 
 ```xml
 <profiles>
