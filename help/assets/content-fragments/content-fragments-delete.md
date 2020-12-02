@@ -12,7 +12,7 @@ ht-degree: 12%
 
 # Fragmentos de conteúdo - excluir considerações{#content-fragments-delete-considerations}
 
-## Permissões - Excluir ou não excluir {#permissions-delete-or-not-delete}
+## Permissões - Excluir ou Não Excluir {#permissions-delete-or-not-delete}
 
 A capacidade de excluir conteúdo é poderosa, mas potencialmente sensível, com muitos setores precisando restringir e controlar como esses privilégios são distribuídos.
 
@@ -20,19 +20,19 @@ Em relação às permissões de exclusão, os Fragmentos de conteúdo devem ser 
 
 1. **O Fragmento do conteúdo como uma única entidade.**
 
-   * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo **e excluir um fragmento** inteiro.
-   * **Permissões**: A permissão Excluir pode ser atribuída por meio do Gerenciamento de usuários e/ou grupos. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo  **e excluir um fragmento** inteiro.
+   * **Permissões**: A permissão Excluir pode ser atribuída por meio do Gerenciamento de usuários e/ou grupos.  <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **As várias subentidades que compõem um fragmento de conteúdo; por exemplo, variações, subnós.**
 
    A operação básica do editor de fragmentos de conteúdo requer que esses subelementos transitórios possam ser excluídos. Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
 
-   * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo - **sem ter permissão para excluir um fragmento** inteiro.
-   * **Permissões**: Consulte [Permissões necessárias somente](#permissions-required-for-editor-functionality-only)para a funcionalidade do editor.
+   * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo -  **sem ter permissão para excluir um fragmento** inteiro.
+   * **Permissões**: Consulte  [Permissões necessárias somente](#permissions-required-for-editor-functionality-only) para a funcionalidade do editor.
 
 >[!NOTE]
 >
->When a user does not have any Delete permissions, the Content Fragment editor operates in *read-only* mode. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>Quando um usuário não tem permissões de exclusão, o editor de Fragmento de conteúdo opera no modo *somente leitura*. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar 
 >
 >As permissões de exclusão, necessárias para editar/atualizar um Fragmento de conteúdo, estão incluídas na permissão Excluir atribuída por meio do Gerenciamento de usuários e/ou grupos. <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-As permissões necessárias para editar/atualizar um fragmento precisam ser aplicadas ao nó que contém o fragmento do conteúdo ou a um nó pai apropriado (em qualquer nível abaixo `/content/dam`). Quando atribuídas a esse nó pai, as permissões serão aplicadas a todos os nós dentro desse ramo.
+As permissões necessárias para editar/atualizar um fragmento precisam ser aplicadas ao nó que contém o fragmento de conteúdo ou a um nó pai apropriado (em qualquer nível em `/content/dam`). Quando atribuídas a esse nó pai, as permissões serão aplicadas a todos os nós dentro desse ramo.
 
 Por exemplo, uma pasta que manterá todos os fragmentos de conteúdo, como:
 
@@ -56,9 +56,9 @@ Por exemplo, uma pasta que manterá todos os fragmentos de conteúdo, como:
 
 >[!CAUTION]
 >
->A configuração de permissões ativada também `/content/dam` é possível, pois todos os fragmentos de conteúdo são armazenados aqui.
+>A configuração das permissões em `/content/dam` também é possível, pois todos os fragmentos de conteúdo são armazenados aqui.
 >
->No entanto, essa ação aplica as mesmas permissões de exclusão a *todos* os outros tipos de ativos também.
+>No entanto, essa ação aplica as mesmas permissões de exclusão a *todos* outros tipos de ativos também.
 
 Os pré-requisitos de permissões para permitir que um usuário e/ou grupo específico edite/atualize um fragmento de conteúdo são:
 
@@ -70,13 +70,13 @@ Os pré-requisitos de permissões para permitir que um usuário e/ou grupo espec
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* Para o `jcr:content`nó de todos os Fragmentos de conteúdo:
+* Para o nó `jcr:content`de todos os Fragmentos de conteúdo:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`
+   * `jcr:addChildNodes`,  `jcr:modifyProperties` e  `jcr:removeChildNodes`
 
-* Para todos os nós abaixo `jcr:content` de todos os Fragmentos de conteúdo:
+* Para todos os nós abaixo de `jcr:content` de todos os Fragmentos de conteúdo:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
+   * `jcr:addChildNodes`,  `jcr:modifyProperties` e  `jcr:removeChildNodes`,  `jcr:removeNode`
 
 <!-- There is no CRXDE Lite -->
 
