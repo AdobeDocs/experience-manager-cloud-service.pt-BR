@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Exibindo a Atualização e Substituição de um Nome de Domínio Personalizado  {#view-update-replace-cdn}
+# Exibindo a Atualização e Substituição de um Nome de Domínio Personalizado {#view-update-replace-cdn}
 
 Use o menu Visualização e Atualização para simplesmente visualização os detalhes de um ou mais nomes de Domínio Personalizado.
 Como alternativa, você pode alterar o certificado SSL a ser usado para o nome de Domínio Personalizado.
@@ -25,7 +25,7 @@ A ação de atualização pode ser executada em dois locais diferentes na interf
 1. Navegue até a página Configurações de domínio na tela Ambientes.
 1. Como alternativa, navegue até a página Detalhes do Ambiente específica na tela Ambientes e navegue até a tabela Nomes de Domínio.
 Identifique a linha na qual o nome de domínio personalizado que você deseja que seja visualização/atualizado está listado
-1. Selecionar o **...** na extremidade direita extrema da linha
+1. Selecione **...** a partir da extremidade direita da linha
 1. Selecione a opção Visualização e Atualizar
 1. Faça alterações no certificado SSL conforme necessário e Confirme seu envio
 
