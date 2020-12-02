@@ -3,9 +3,9 @@ title: Compartilhar ativos, pastas e coleções como um link
 description: Este artigo descreve como compartilhar ativos, pastas e coleções dentro dos Ativos do Experience Manager como um hiperlink.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Compartilhe e distribua ativos gerenciados no Experience Manager {#share-assets-from-aem}
 
-Os ativos Adobe Experience Manager (AEM) permitem que você compartilhe ativos, pastas e coleções com membros de sua organização e entidades externas, incluindo parceiros e fornecedores. Use os seguintes métodos para compartilhar ativos dos Ativos do Experience Manager como Cloud Service:
+Os ativos Adobe Experience Manager (AEM) permitem que você compartilhe ativos, pastas e coleções com membros de sua organização e entidades externas, incluindo parceiros e fornecedores. Use os seguintes métodos para compartilhar ativos de Ativos do Experience Manager como [!DNL Cloud Service]:
 
 * Compartilhar como um link.
 * Baixe ativos e compartilhe separadamente.
@@ -187,6 +187,5 @@ Consulte [como configurar AEM para usar com o Link de ativo do Adobe](https://he
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
