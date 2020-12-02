@@ -2,9 +2,9 @@
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 translation-type: tm+mt
-source-git-commit: aae587109d1f8764ac535b316a2a7d05fd7179fe
+source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
 workflow-type: tm+mt
-source-wordcount: '4059'
+source-wordcount: '4082'
 ht-degree: 9%
 
 ---
@@ -382,6 +382,8 @@ O script faz o seguinte:
 
 1. Ele executa o validador da seção anterior para garantir que somente as diretivas suportadas sejam incluídas. Se a configuração não for válida, o script falhará.
 2. Ele executa `httpd -t command` para testar se a sintaxe está correta, de modo que apache httpd possa ser start. Se a configuração for bem-sucedida, deverá estar pronta para implantação
+
+Durante a implantação do Cloud Manager, a verificação `httpd -t syntax` também será executada e todos os erros serão incluídos no log `Build Images step failure` do Cloud Manager.
 
 ## Testando a configuração do Apache e do Dispatcher localmente {#testing-apache-and-dispatcher-configuration-locally}
 
