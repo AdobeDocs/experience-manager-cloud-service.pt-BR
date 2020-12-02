@@ -16,12 +16,12 @@ ht-degree: 1%
 
 Depois de configurar seu pipeline de produção (repositório, ambiente e ambiente de teste), você estará pronto para implantar seu código.
 
-1. Clique em **Implantar** no Gerenciador de nuvem para start do processo de implantação.
+1. Clique em **Implantar** do Gerenciador de nuvem para start do processo de implantação.
 
    ![](assets/deploy-code1.png)
 
 
-1. A tela Execução **do pipeline** é exibida.
+1. A tela **Execução do pipeline** é exibida.
 
    Clique em **Criar** para start do processo.
 
@@ -42,8 +42,8 @@ Depois de configurar seu pipeline de produção (repositório, ambiente e ambien
    A **Implantação do preparo** envolve estas etapas:
 
    * Validação: Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento, por exemplo, que a ramificação configurada exista, os ambientes estarão disponíveis.
-   * Compilação e teste de unidade: Esta etapa executa um processo de criação contido. Consulte [Criar detalhes](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) do Ambiente para obter detalhes sobre o ambiente de criação.
-   * Digitalização de código: Esta etapa avalia a qualidade do código do aplicativo. Consulte Teste [de qualidade de](/help/implementing/cloud-manager/code-quality-testing.md) código para obter detalhes sobre o processo de teste.
+   * Compilação e teste de unidade: Esta etapa executa um processo de criação contido. Consulte [Build Ambiente Details](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) para obter detalhes sobre o ambiente build.
+   * Digitalização de código: Esta etapa avalia a qualidade do código do aplicativo. Consulte [Teste de qualidade de código](/help/implementing/cloud-manager/code-quality-testing.md) para obter detalhes sobre o processo de teste.
    * Criar imagens: Esta etapa tem um arquivo de log do processo usado para criar imagens. Esse processo é responsável por transformar os pacotes de conteúdo e despachante produzidos pela etapa de compilação em imagens Docker e configurações de Kubernetes.
    * Implantar no palco
 
@@ -51,13 +51,13 @@ Depois de configurar seu pipeline de produção (repositório, ambiente e ambien
    O **Teste de preparo** envolve as seguintes etapas:
 
    * Teste funcional do produto: As execuções de pipeline do Gerenciador de nuvem oferecerão suporte à execução de testes executados em relação ao ambiente stage.
-Consulte Teste [funcional do](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) produto para obter mais detalhes.
+Consulte [Teste funcional do produto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) para obter mais detalhes.
 
    * Teste funcional personalizado: Esta etapa do pipeline está sempre presente e não pode ser ignorada. No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão.\
-      Consulte Teste [funcional](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) personalizado para obter mais detalhes.
+      Consulte [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obter mais detalhes.
 
    * Auditoria de experiência: Esta etapa do pipeline está sempre presente e não pode ser ignorada. Como um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após testes funcionais personalizados que executarão as verificações. As páginas configuradas serão enviadas ao serviço e avaliadas. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
-Consulte [Compreensão dos resultados](/help/implementing/cloud-manager/experience-audit-testing.md) da auditoria de experiência para obter mais detalhes.
+Consulte [Entendendo os resultados da auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
 
       ![](assets/testing-tab.png)
 
@@ -94,7 +94,7 @@ Quando o Cloud Manager é implantado em topologias que não sejam de produção,
 
    1. O backup das configurações atuais é feito e copiado para um local temporário
    1. Todas as configurações são excluídas, exceto os arquivos imutáveis. Consulte Gerenciar configurações do Dispatcher para obter mais detalhes. Isso limpa os diretórios para garantir que nenhum arquivo órfão seja deixado para trás.
-   1. O artefato é extraído para o `httpd` diretório.  Arquivos imutáveis não são substituídos. Quaisquer alterações feitas em arquivos imutáveis no repositório git serão ignoradas no momento da implantação.  Esses arquivos são fundamentais para a estrutura do despachante do AMS e não podem ser alterados.
+   1. O artefato é extraído para o diretório `httpd`.  Arquivos imutáveis não são substituídos. Quaisquer alterações feitas em arquivos imutáveis no repositório git serão ignoradas no momento da implantação.  Esses arquivos são fundamentais para a estrutura do despachante do AMS e não podem ser alterados.
    1. O Apache realiza um teste de configuração. Se nenhum erro for encontrado, o serviço será recarregado. Se ocorrer um erro, as configurações serão restauradas a partir do backup, o serviço será recarregado e o erro será reportado de volta ao Cloud Manager.
    1. Cada caminho especificado na configuração do pipeline é invalidado ou liberado do cache do dispatcher.
 
@@ -108,7 +108,7 @@ Quando o Cloud Manager é implantado em topologias que não sejam de produção,
    >
    >Você pode ignorar as alterações no balanceador de carga nas implantações de desenvolvimento e estágio, ou seja, desanexar e anexar etapas em pipelines que não sejam de produção, para ambientes de desenvolvedor e pipeline de produção, para ambientes de estágio.
 
-### Implantação para fase de produção {#deployment-production-phase}
+### Implantação para a fase de produção {#deployment-production-phase}
 
 O processo de implantação das topologias de produção difere um pouco para minimizar o impacto nos visitantes AEM Site.
 
