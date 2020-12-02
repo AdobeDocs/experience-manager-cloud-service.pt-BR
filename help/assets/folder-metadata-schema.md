@@ -15,7 +15,7 @@ ht-degree: 10%
 
 Os ativos Adobe Experience Manager (AEM) permitem que você crie schemas de metadados para pastas de ativos, que definem o layout e os metadados exibidos nas páginas de propriedades da pasta.
 
-## Adicionar um formulário de schema de metadados de pasta {#add-a-folder-metadata-schema-form}
+## Adicionar um schema de metadados de pasta {#add-a-folder-metadata-schema-form}
 
 Use o editor do Forms Schema de Metadados da Pasta para criar e editar schemas de metadados para pastas.
 
@@ -23,7 +23,7 @@ Use o editor do Forms Schema de Metadados da Pasta para criar e editar schemas d
 1. Na página do Forms Schema de metadados da pasta, toque/clique em **[!UICONTROL Criar]**.
 1. Especifique um nome para o formulário e toque/clique em **[!UICONTROL Criar]**. O novo formulário de schema é listado na página Forms do Schema.
 
-## Edit folder metadata schema forms {#edit-folder-metadata-schema-forms}
+## Editar formulários de schema de metadados da pasta {#edit-folder-metadata-schema-forms}
 
 É possível editar um formulário de schema de metadados recém-adicionado ou existente, que inclui o seguinte:
 
@@ -32,22 +32,22 @@ Use o editor do Forms Schema de Metadados da Pasta para criar e editar schemas d
 
 Você pode mapear/configurar esses itens de formulário em um campo dentro de um nó de metadados no repositório CRX. É possível adicionar novas guias ou itens de formulário ao formulário de schema de metadados.
 
-1. Na página Forms do Schema, selecione o formulário criado e, em seguida, toque/clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
-1. Na página Editor de Schemas de Metadados de Pastas, toque/clique no ícone **[!UICONTROL +]** para adicionar uma guia ao formulário. Para renomear a guia, toque/clique no nome padrão e especifique o novo nome em **[!UICONTROL Configurações]**.
+1. Na página Forms do Schema, selecione o formulário criado e toque/clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
+1. Na página Editor de Schemas de Metadados de Pastas, toque/clique no ícone **[!UICONTROL +]** para adicionar uma guia ao formulário. Para renomear a guia, toque/clique no nome padrão e especifique o novo nome em **[!UICONTROL Settings]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   Para adicionar mais guias, toque/clique no ícone **[!UICONTROL +]** . Toque/clique em **[!UICONTROL X]** para excluir uma guia.
+   Para adicionar mais guias, toque/clique no ícone **[!UICONTROL +]**. Toque/clique em **[!UICONTROL X]** para excluir uma guia.
 
-1. Na guia ativa, adicione um ou mais componentes da guia **[!UICONTROL Criar formulário]** .
+1. Na guia ativa, adicione um ou mais componentes da guia **[!UICONTROL Criar formulário]**.
 
    ![add_components](assets/adding_components.png)
 
    Se você criar várias guias, toque/clique em uma guia específica para adicionar componentes.
 
-1. Para configurar um componente, selecione-o e modifique suas propriedades na guia **[!UICONTROL Configurações]** .
+1. Para configurar um componente, selecione-o e modifique suas propriedades na guia **[!UICONTROL Configurações]**.
 
-   Se necessário, exclua um componente da guia **[!UICONTROL Configurações]** .
+   Se necessário, exclua um componente da guia **[!UICONTROL Settings]**.
 
    ![configure_properties](assets/configure_properties.png)
 
@@ -55,7 +55,7 @@ Você pode mapear/configurar esses itens de formulário em um campo dentro de um
 
 ### Componentes para criar formulários {#components-to-build-forms}
 
-A guia **[!UICONTROL Criar formulário]** lista itens de formulário que você usa no formulário de schema de metadados da pasta. A guia **[!UICONTROL Configurações]** exibe os atributos para cada item selecionado na guia **[!UICONTROL Criar formulário]** . Esta é uma lista dos itens de formulário disponíveis na guia **[!UICONTROL Criar formulário]** :
+A guia **[!UICONTROL Criar formulário]** lista itens de formulário que você usa no formulário de schema de metadados da pasta. A guia **[!UICONTROL Configurações]** exibe os atributos para cada item selecionado na guia **[!UICONTROL Criar formulário]**. Esta é uma lista dos itens de formulário disponíveis na guia **[!UICONTROL Criar formulário]**:
 
 <table>
  <tbody>
@@ -100,7 +100,7 @@ A guia **[!UICONTROL Criar formulário]** lista itens de formulário que você u
 
 ### Editar itens de formulário {#editing-form-items}
 
-Para editar as propriedades dos itens de formulário, toque/clique no componente e edite todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Configurações]** .
+Para editar as propriedades dos itens de formulário, toque/clique no componente e edite todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Configurações]**.
 
 **[!UICONTROL Rótulo]** do campo: O nome da propriedade de metadados que é exibida na página de propriedades da pasta.
 
@@ -108,9 +108,9 @@ Para editar as propriedades dos itens de formulário, toque/clique no componente
 
 Estes são os valores válidos para esta propriedade:
 
-* `./jcr:content/metadata/dc:title`: Armazena o valor no nó de metadados da pasta como a propriedade `dc:title`.
+* `./jcr:content/metadata/dc:title`: Armazena o valor no nó de metadados da pasta como a propriedade  `dc:title`.
 
-* `./jcr:created`: Armazena a data e a hora de criação de um ativo. É uma propriedade protegida. Se você configurar essas propriedades, o Adobe recomenda marcá-las como [!UICONTROL Desativar edição].
+* `./jcr:created`: Armazena a data e a hora de criação de um ativo. É uma propriedade protegida. Se você configurar essas propriedades, o Adobe recomenda marcá-las como [!UICONTROL Desativar Editar].
 
 Para garantir que o componente seja exibido corretamente no formulário de schema de metadados, não inclua um espaço no caminho da propriedade.
 
@@ -124,7 +124,7 @@ Para garantir que o componente seja exibido corretamente no formulário de schem
 
 **[!UICONTROL Classe]**: Classe de objeto à qual a propriedade está associada.
 
-## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
+## Excluir formulários de schema de metadados da pasta {#delete-folder-metadata-schema-forms}
 
 Você pode excluir formulários de schema de metadados de pasta da página Forms do Schema Metadados de pasta. Para excluir um formulário, selecione-o e toque/clique no ícone Excluir da barra de ferramentas.
 
@@ -136,7 +136,7 @@ Você pode atribuir um schema de metadados de pasta a uma pasta na página Forms
 
 Se você configurar um schema de metadados para uma pasta, o caminho para o formulário de schema será armazenado na propriedade `folderMetadataSchema` do nó de pasta em .*/jcr:content*.
 
-### Atribuir a um schema da página Schema Metadados da pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+### Atribua a um schema da página Schema Metadados da Pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]**> **[!UICONTROL Esquemas de metadados de pasta]**.
 1. Na página do Forms Schema de metadados da pasta, selecione o formulário de schema que deseja aplicar a uma pasta.
@@ -151,20 +151,20 @@ Se você configurar um schema de metadados para uma pasta, o caminho para o form
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
-### Atribuir um schema ao criar uma pasta {#assign-a-schema-when-creating-a-folder}
+### Atribua um schema ao criar uma pasta {#assign-a-schema-when-creating-a-folder}
 
-Você pode atribuir um schema de metadados de pasta ao criar uma pasta. Se pelo menos um schema de metadados de pasta existir no sistema, uma lista extra será exibida na caixa de diálogo **[!UICONTROL Criar pasta]** . Você pode selecionar o schema desejado. Por padrão, nenhum schema é selecionado.
+Você pode atribuir um schema de metadados de pasta ao criar uma pasta. Se pelo menos um schema de metadados de pasta existir no sistema, uma lista extra será exibida na caixa de diálogo **[!UICONTROL Criar pasta]**. Você pode selecionar o schema desejado. Por padrão, nenhum schema é selecionado.
 
 1. Na interface do usuário do AEM Assets, toque/clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. Especifique um título e nome para a pasta.
-1. Na lista Schema Metadados da pasta, selecione o schema desejado. Then, tap/click **[!UICONTROL Create]**.
+1. Na lista Schema Metadados da pasta, selecione o schema desejado. Em seguida, toque/clique em **[!UICONTROL Criar]**.
 
    ![select_schema](assets/select_schema.png)
 
 1. Abra as propriedades de metadados da pasta na qual você aplicou o schema de metadados.
 1. Para exibir os campos de metadados da pasta, toque/clique na guia **[!UICONTROL Metadados da pasta]**.
 
-## Usar o schema de metadados da pasta {#use-the-folder-metadata-schema}
+## Use o schema de metadados da pasta {#use-the-folder-metadata-schema}
 
 Abra as propriedades de uma pasta configurada com um esquema de metadados de pasta. Uma guia **[!UICONTROL Metadados da pasta]** é exibida na página Propriedades da pasta. Para exibir o formulário de esquema de metadados da pasta, selecione essa guia.
 
