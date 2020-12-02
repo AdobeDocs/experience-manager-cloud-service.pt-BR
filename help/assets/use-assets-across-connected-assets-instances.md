@@ -3,9 +3,9 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 79c8b5e038a58821b76da665f9342214312008e8
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '2244'
+source-wordcount: '2240'
 ht-degree: 40%
 
 ---
@@ -30,9 +30,9 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 * Os usuários fazem parte dos grupos de usuários apropriados em cada implantação.
 * Para [!DNL Adobe Experience Manager] tipos de implantação, um dos critérios suportados é atendido. Para obter mais informações sobre como essa funcionalidade funciona em [!DNL Experience Manager] 6.5, consulte [Ativos conectados no Experience Manager 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] como um Cloud Service | [!DNL Experience Manager] 6.5  [!DNL Sites] no AMS | [!DNL Experience Manager] 6.5  [!DNL Sites] local |
+   |  | [!DNL Sites] como uma  [!DNL Cloud Service] | [!DNL Experience Manager] 6.5  [!DNL Sites] no AMS | [!DNL Experience Manager] 6.5  [!DNL Sites] local |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]como um Cloud Service** | Compatível | Compatível | Compatível |
+   | **[!DNL Experience Manager Assets]como uma[!DNL Cloud Service]** | Compatível | Compatível | Compatível |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] no AMS** | Compatível | Compatível | Compatível |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] local** | Incompatível | Incompatível | Incompatível |
 
