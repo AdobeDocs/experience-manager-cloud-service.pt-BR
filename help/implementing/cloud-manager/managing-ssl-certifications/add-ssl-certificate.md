@@ -33,7 +33,7 @@ Siga as etapas abaixo para converter o formato dos arquivos SSL em PEM:
 
 `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
-## Adicionar seu certificado {#adding-certificate}
+## Adicionando seu Certificado {#adding-certificate}
 
 >[!NOTE]
 >* Um usuário deve estar na função Proprietário de Negócios ou Gerenciador de Implantação para instalar um certificado SSL no Cloud Manager.
@@ -55,22 +55,22 @@ Siga as etapas abaixo para converter o formato dos arquivos SSL em PEM:
 
 ## Erros de certificado {#certificate-errors}
 
-### Correção da ordem do certificado {#correct-certificate-order}
+### Ordem de certificado correta {#correct-certificate-order}
 
-O motivo mais comum para uma implantação de certificado falhar é que os certificados intermediários ou de cadeia não estão na ordem correta. Especificamente, os arquivos de certificado intermediários devem terminar com o certificado raiz ou o certificado mais próximo da raiz e estar em ordem decrescente do `main/server` certificado para a raiz.
+O motivo mais comum para uma implantação de certificado falhar é que os certificados intermediários ou de cadeia não estão na ordem correta. Especificamente, os arquivos de certificado intermediários devem terminar com o certificado raiz ou mais próximo à raiz e estar em ordem decrescente do certificado `main/server` até a raiz.
 
 Você pode determinar a ordem dos arquivos intermediários usando o seguinte comando:
 
 `openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout`
 
-Você pode verificar se a chave privada e o `main/server` certificado correspondem usando os seguintes comandos:
+Você pode verificar se a chave privada e o certificado `main/server` correspondem usando os seguintes comandos:
 
 `openssl x509 -noout -modulus -in certificate.pem | openssl md5`
 
 `openssl rsa -noout -modulus -in ssl.key | openssl md5`
 
 >[!NOTE]
->A saída desses dois comandos deve ser exatamente a mesma. Se você não conseguir localizar uma chave privada correspondente ao seu `main/server` certificado, será necessário alterar a chave do certificado gerando um novo CSR e/ou solicitando um certificado atualizado do seu fornecedor SSL.
+>A saída desses dois comandos deve ser exatamente a mesma. Se não conseguir localizar uma chave privada correspondente ao seu certificado `main/server`, será necessário recodificar o certificado gerando um novo CSR e/ou solicitando um certificado atualizado do seu fornecedor SSL.
 
 ### Datas de validade do certificado {#certificate-validity-dates}
 
