@@ -62,7 +62,7 @@ Você pode remover todos os workflows, componentes, taxonomias, opções e o adm
 
 Nesse caso de uso, não é necessário comprar o AEM Assets, nem mesmo o uso da Biblioteca de mídia é necessário para usar imagens em um site, já que o componente de imagem inteligente permite o upload de imagens diretamente na página.
 
-## Uma lista detalhada dos recursos disponíveis no AEM Assets vs Biblioteca de mídia {#listoffeatures}
+## Uma lista detalhada dos recursos disponíveis no AEM Assets vs Media Library {#listoffeatures}
 
 **Ativos AEM**
 
