@@ -23,11 +23,11 @@ Crie conteúdo direcionado usando o modo Direcionar do AEM. O modo Direcionar e 
 * Simule a experiência do usuário.
 * Para mais customização, configure o componente do Target.
 
-Você pode usar o AEM ou o Adobe Target como o mecanismo de direcionamento (é necessário ter uma conta válida do Adobe Target para usá-lo). Se você estiver usando o Adobe Target, é necessário configurar a integração primeiro. See the instructions for integrating with Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
+Você pode usar o AEM ou o Adobe Target como o mecanismo de direcionamento (é necessário ter uma conta válida do Adobe Target para usá-lo). Se você estiver usando o Adobe Target, é necessário configurar a integração primeiro. Consulte as instruções para integração com a Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
 
 ![Direcionamento de conteúdo](../assets/targeted-content.png)
 
-The activities and experiences that you see in Target mode reflect the [Activities console](/help/sites-cloud/authoring/personalization/activities.md):
+As atividades e experiências que você vê no modo Público alvo refletem o [console do Atividade](/help/sites-cloud/authoring/personalization/activities.md):
 
 * As alterações feitas nas atividades e experiências usando o modo de Direcionamento são refletidas no console Atividades.
 * As alterações feitas no console Atividades são refletidas no modo de Direcionamento.
@@ -78,7 +78,7 @@ Para adicionar uma atividade:
    >É recomendado [criar marcas pelo console de atividades](/help/sites-cloud/authoring/personalization/activities.md#creating-a-brand-using-the-activities-console).
    >
    >
-   >If you create a brand in any other way, make certain that the node `/campaigns/<brand>/master` exists or an error will result when you attempt to create an activity.
+   >Se você criar uma marca de qualquer outra forma, verifique se o nó `/campaigns/<brand>/master` existe ou se um erro ocorrerá quando você tentar criar uma atividade.
 
 1. Clique ou toque em + ao lado do menu suspenso **Atividade**.
 1. Digite um nome para a atividade.
@@ -89,7 +89,7 @@ Para adicionar uma atividade:
 
 1. No menu suspenso do mecanismo de **Direcionamento**, selecione o mecanismo direcionamento.
 
-   * If you select **ContextHub AEM**, the remaining fields are dimmed and not available. Clique ou toque em **Criar**.
+   * Se você selecionar **ContextHub AEM**, os campos restantes estarão esmaecidos e não estarão disponíveis. Clique ou toque em **Criar**.
 
    * Se você selecionar **Adobe Target**, será possível selecionar uma configuração (por padrão, é a configuração inserida ao configurar a conta) e o tipo de atividade. <!--If you select **Adobe Target**, you can select a configuration (by default, it is the configuration you provided when you [configured the account](/help/sites-administering/opt-in.md)) and Activity Type.-->
 
@@ -98,7 +98,7 @@ Para adicionar uma atividade:
    * Direcionamento de experiência - gerencie as atividades do Adobe Target a partir do AEM.
    * Teste A/B - criar/gerenciar atividades de teste A/B no Adobe Target a partir do AEM.
 
-## O processo de direcionamento: Criar, Direcionar e Metas e configurações {#the-targeting-process-create-target-and-goals-settings}
+## O processo de direcionamento: Criar, Direcionar e Metas e configurações  {#the-targeting-process-create-target-and-goals-settings}
 
 O modo de direcionamento permite configurar diferentes aspectos de uma atividade. Use o seguinte processo de três etapas para criar conteúdo direcionado para uma atividade de marca:
 
@@ -124,11 +124,11 @@ Para adicionar uma atividade:
    >
    >Para alterar a atividade com a qual você está trabalhando, clique ou toque em **Voltar**.
 
-## Criar: criação de experiências {#create-authoring-the-experiences}
+## Criar: criação de experiências  {#create-authoring-the-experiences}
 
 A etapa Criar do direcionamento de conteúdo envolve a criação das experiências. Nesta etapa, é possível criar ou excluir as experiências da atividade, bem como adicionar ofertas a cada experiência.
 
-### Exibir ofertas de experiência no modo de direcionamento {#seeing-experience-offers-in-targeting-mode}
+### Exibir ofertas de experiência no modo de direcionamento  {#seeing-experience-offers-in-targeting-mode}
 
 Depois de [iniciar o processo de direcionamento](#the-targeting-process-create-target-and-goals-settings), selecione uma experiência para ver as ofertas fornecidas para ela. Quando você seleciona uma experiência, os componentes direcionados na página mudam para exibir a oferta para essa experiência.
 
@@ -152,7 +152,7 @@ Quando uma experiência é selecionada e o componente de destino não inclui uma
 
 ![Adicionar oferta](../assets/targeted-add-offer.png)
 
-A experiência padrão também é exibida quando as propriedades do visitante não correspondem aos segmentos mapeados às experiências. See [Adding Experiences using Targeting Mode](#adding-and-removing-experiences-using-targeting-mode).
+A experiência padrão também é exibida quando as propriedades do visitante não correspondem aos segmentos mapeados às experiências. Consulte [Adicionar experiências usando o Modo de definição de metas](#adding-and-removing-experiences-using-targeting-mode).
 
 ### Ofertas personalizadas e ofertas da biblioteca {#custom-offers-and-library-offers}
 
@@ -170,14 +170,14 @@ As ofertas [adicionadas de uma biblioteca de ofertas](#adding-an-offer-from-an-o
 
 Na etapa Criar do [processo de direcionamento](#the-targeting-process-create-target-and-goals-settings), é possível adicionar e remover experiências. Além disso, é possível duplicar uma experiência e também renomeá-la.
 
-#### Adicionar experiências usando o modo de direcionamento {#adding-experiences-using-targeting-mode}
+#### Adicionar experiências usando o modo de direcionamento  {#adding-experiences-using-targeting-mode}
 
 Para adicionar uma experiência:
 
-1. To add an experience, click or tap **+** **Add Experience Targeting** that appears below existing experiences in the **Audiences** pane.
+1. Para adicionar uma experiência, clique ou toque em **+** **Adicionar direcionamento de experiência** que aparece abaixo das experiências existentes no painel **Audiência**.
 1. Selecione um público. Por padrão, o nome é o nome da experiência. Você pode digitar outro nome, se desejado. Clique ou toque em **OK**.
 
-#### Remover experiências usando o modo de direcionamento {#removing-experiences-using-targeting-mode}
+#### Remover experiências usando o modo de direcionamento  {#removing-experiences-using-targeting-mode}
 
 Para excluir uma experiência:
 
@@ -187,12 +187,12 @@ Para excluir uma experiência:
 
 1. Clique em **Excluir**.
 
-#### Renomear experiências usando o modo de direcionamento {#renaming-experiences-using-targeting-mode}
+#### Renomear experiências usando o modo de direcionamento  {#renaming-experiences-using-targeting-mode}
 
 Para renomear experiências usando o modo de direcionamento:
 
 1. Clique ou toque na seta ao lado do nome da experiência.
-1. Click **Rename Experience** and type in the new name.
+1. Clique em **Renomear experiência** e digite o novo nome.
 1. Clique ou toque em outro lugar na tela para salvar as alterações.
 
 #### Editar públicos usando o modo de direcionamento {#editing-audiences-using-targeting-mode}
@@ -200,10 +200,10 @@ Para renomear experiências usando o modo de direcionamento:
 Para editar os públicos que usam o modo de direcionamento:
 
 1. Clique ou toque na seta ao lado do nome da experiência.
-1. Click **Edit Audience** and select a new audience.
+1. Clique em **Editar Audiência** e selecione uma nova audiência.
 1. Clique em **OK**.
 
-#### Duplicar experiências usando o modo de direcionamento {#duplicating-experiences-using-targeting-mode}
+#### Duplicar experiências usando o modo de direcionamento  {#duplicating-experiences-using-targeting-mode}
 
 Para copiar experiências usando o modo de direcionamento:
 
@@ -211,7 +211,7 @@ Para copiar experiências usando o modo de direcionamento:
 1. Clique em **Duplicar** e escolha o público.
 1. Renomeie a experiência, se desejado, e clique em **OK**.
 
-### Criar ofertas usando o modo de direcionamento {#creating-offers-using-targeting-mode}
+### Criar ofertas usando o modo de direcionamento  {#creating-offers-using-targeting-mode}
 
 Direcione um componente para criar ofertas para experiências. Os componentes direcionados fornecem o conteúdo que é usado como ofertas para as experiências.
 
@@ -229,7 +229,7 @@ As seguintes ferramentas estão disponíveis para trabalhar com ofertas:
 * [Converta uma oferta de biblioteca a uma oferta personalizada](#converting-a-library-offer-to-a-custom-library).
 * [Abra uma oferta de biblioteca e edite o conteúdo](#editing-a-library-offer).
 
-#### Criação de uma oferta padrão direcionando um componente existente {#creating-a-default-offer-by-targeting-an-existing-component}
+#### Criação de uma oferta padrão direcionando um componente existente  {#creating-a-default-offer-by-targeting-an-existing-component}
 
 Direcione um componente na página para usá-lo como oferta para a experiência padrão da atividade. Quando você direciona um componente, ele é envolvido em um componente de Direcionamento e seu conteúdo se torna a oferta para a experiência padrão.
 
@@ -245,17 +245,17 @@ Siga o seguinte procedimento após [iniciar o processo de direcionamento](#the-t
 
    ![Botão público alvo](../assets/targeted-target-button.png)
 
-   O conteúdo do componente é a oferta para a experiência padrão. Quando um componente é direcionado, seu nó padrão é replicado para cada experiência. Isso é necessário para editar o nó de conteúdo correto durante a criação da experiência. For these non-default experiences, either [add a custom offer](#adding-a-custom-offer) or [add a library offer](#adding-an-offer-from-an-offer-library).
+   O conteúdo do componente é a oferta para a experiência padrão. Quando um componente é direcionado, seu nó padrão é replicado para cada experiência. Isso é necessário para editar o nó de conteúdo correto durante a criação da experiência. Para essas experiências não padrão, [adicione uma oferta personalizada](#adding-a-custom-offer) ou [adicione uma oferta de biblioteca](#adding-an-offer-from-an-offer-library).
 
 #### Criação de uma oferta adicionando um componente de Direcionamento {#creating-an-offer-by-adding-a-target-component}
 
 Adicione um componente de Direcionamento para criar a oferta para experiência Padrão. O componente de Direcionamento é um contêiner de outros componentes e os componentes incluídos nele tornam-se direcionados. No componente de Direcionamento, é possível adicionar vários componentes para criar uma oferta. Além disso, é possível usar componentes diferentes em cada experiência para criar ofertas diferentes.
 
-See [Configuring Target component options](#configuring-target-component-options) for information on customizing this component.
+Consulte [Configuração das opções de componentes do Público alvo](#configuring-target-component-options) para obter informações sobre como personalizar este componente.
 
 >[!NOTE]
 >
->Offers that you create using the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) can also contain several components. Estas ofertas pertencem a uma biblioteca de ofertas e podem ser usadas para várias experiências.
+>Ofertas que você cria usando o [console do Oferta](/help/sites-cloud/authoring/personalization/offers.md) também podem conter vários componentes. Estas ofertas pertencem a uma biblioteca de ofertas e podem ser usadas para várias experiências.
 
 Como o componente de Direcionamento é um contêiner, ele é exibido como uma área para soltar outros componentes.
 
@@ -284,7 +284,7 @@ Se estiver editando o conteúdo direcionado, clique ou toque em **Iniciar o dire
    >
    >Se definido pelo administrador, talvez seja necessário definir o local explicitamente.
    >
-   >Administrators can decide whether setting this configuration is required at `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet`
+   >Os administradores podem decidir se a configuração é necessária em `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet`
    >
    >Para exigir que os usuários insiram um local, marque a caixa de seleção **Forçar local**.
 
@@ -294,11 +294,11 @@ Se estiver editando o conteúdo direcionado, clique ou toque em **Iniciar o dire
    * Para a experiência Padrão, arraste os componentes para a área de destino e edite as propriedades dos componentes como de costume para criar o conteúdo da oferta.
    * Para experiências diferentes do padrão,[ adicione uma oferta personalizada](#adding-a-custom-offer) ou[ uma oferta da biblioteca](#adding-an-offer-from-an-offer-library).
 
-#### Adicionar uma oferta personalizada {#adding-a-custom-offer}
+#### Adicionar uma oferta personalizada  {#adding-a-custom-offer}
 
 Crie uma oferta, criando o conteúdo de um componente direcionado no modo de direcionamento. Quando você cria uma oferta personalizada, ela é usada como a oferta de uma única experiência.
 
-If you decide that the offer can be used for other experiences, you can create a custom offer and [add it to the library](#adding-a-custom-offer-to-a-library). Para obter informações sobre como usar o console Ofertas para criar uma oferta reutilizável, consulte [Adicionar uma oferta a uma biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
+Se você decidir que a oferta pode ser usada para outras experiências, poderá criar uma oferta personalizada e [adicioná-la à biblioteca](#adding-a-custom-offer-to-a-library). Para obter informações sobre como usar o console Ofertas para criar uma oferta reutilizável, consulte [Adicionar uma oferta a uma biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
 
 1. Selecione a experiência na qual está adicionando a oferta.
 1. Para exibir o menu do componente, clique ou toque no componente direcionado ao qual você está adicionando a oferta.
@@ -315,9 +315,9 @@ If you decide that the offer can be used for other experiences, you can create a
 
 1. Edite o conteúdo do componente.
 
-#### Adicionar uma oferta de uma biblioteca de ofertas {#adding-an-offer-from-an-offer-library}
+#### Adicionar uma oferta de uma biblioteca de ofertas  {#adding-an-offer-from-an-offer-library}
 
-Add an offer from the [offer library](/help/sites-cloud/authoring/personalization/offers.md) to an experience. É possível adicionar qualquer oferta da biblioteca da marca que você está direcionando.
+Adicione uma oferta da [biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md) a uma experiência. É possível adicionar qualquer oferta da biblioteca da marca que você está direcionando.
 
 Não é possível adicionar ofertas da biblioteca à experiência padrão.
 
@@ -336,7 +336,7 @@ Não é possível adicionar ofertas da biblioteca à experiência padrão.
 
    O seletor de oferta permite procurar ou filtrar as ofertas. Ao navegar ou filtrar, também é possível classificar as ofertas e alterar como você as vê. O número na parte superior direita indica quantas ofertas estão disponíveis na biblioteca atual.
 
-   * Click or tap **Browse** to navigate to another folder. O painel de navegação é aberto e você clica na seta para mostrar o detalhamento das pastas. Click or tap **Browse** again to close the navigation pane.
+   * Clique ou toque em **Procurar** para navegar para outra pasta. O painel de navegação é aberto e você clica na seta para mostrar o detalhamento das pastas. Clique ou toque em **Procurar** novamente para fechar o painel de navegação.
 
    ![Procurar conteúdo](../assets/targeted-select-content-browse.png)
 
@@ -365,7 +365,7 @@ Para obter informações sobre como usar o console Ofertas para criar uma oferta
 
 1. Digite um nome para a oferta, selecione a biblioteca à qual você está adicionando a oferta e clique ou toque no ícone de marca de seleção.
 
-#### Converter uma oferta de biblioteca a uma biblioteca personalizada {#converting-a-library-offer-to-a-custom-library}
+#### Converter uma oferta de biblioteca a uma biblioteca personalizada  {#converting-a-library-offer-to-a-custom-library}
 
 Converta uma oferta de biblioteca a uma oferta personalizada para alterar a oferta para a experiência atual sem alterá-la em outras experiências.
 
@@ -379,16 +379,16 @@ Converta uma oferta de biblioteca a uma oferta personalizada para alterar a ofer
 Abra uma oferta de biblioteca a partir de uma experiência no modo Direcionamento para editar a oferta. As modificações feitas aparecem em todas as experiências que usam a oferta.
 
 1. Selecione a experiência para revelar a oferta da biblioteca.
-1. Converta a oferta da biblioteca oferta local/personalizada. See [Converting a Library Offer to a Custom Library](#converting-a-library-offer-to-a-custom-library).
+1. Converta a oferta da biblioteca oferta local/personalizada. Consulte [Convertendo uma Oferta de biblioteca em uma biblioteca personalizada](#converting-a-library-offer-to-a-custom-library).
 1. Edite o conteúdo da oferta.
 
-1. Salve na biblioteca. See [Adding a Custom Offer to a Library](#adding-a-custom-offer-to-a-library).
+1. Salve na biblioteca. Consulte [Adicionar uma Oferta personalizada a uma biblioteca](#adding-a-custom-offer-to-a-library).
 
 ## Direcionar: configurar os públicos {#target-configuring-the-audiences}
 
 A etapa Direcionar do [processo de direcionamento](#the-targeting-process-create-target-and-goals-settings) envolve o mapeamento dos públicos com as experiências utilizadas na etapa Criar. A página de Direcionamento mostra os públicos direcionados por cada experiência. É possível especificar ou alterar o público para cada experiência. Se estiver usando o Adobe Target, também poderá criar testes A/B que permitem direcionar uma porcentagem do tráfego de um público para uma experiência específica.
 
-### If you are using AEM targeting or Adobe Target (experience targeting) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### Se você estiver usando AEM direcionamento ou Adobe Target (direcionamento de experiência) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Os públicos são exibidos no lado esquerdo do diagrama de mapeamento e as experiências, no lado direito.
 
@@ -407,10 +407,10 @@ Um público não deve ser usado por mais de uma experiência. Um símbolo de avi
 Use o seguinte procedimento para associar uma experiência a um público usando o direcionamento do AEM (ou o direcionamento de experiência do Adobe Target):
 
 1. Clique ou toque na seta suspensa ao lado da caixa do público que está mapeado à experiência.
-1. (Optional) Click or tap **Edit** and then type a keyword to search for the desired segment.
+1. (Opcional) Clique ou toque em **Editar** e digite uma palavra-chave para procurar o segmento desejado.
 1. Na lista de públicos, selecione o público e clique ou toque em **OK**.
 
-### If you are using A/B Testing (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
+### Se você estiver usando o teste A/B (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
 Se tiver uma atividade de teste A/B, os públicos estarão à esquerda, a porcentagem de exibição de cada experiência estará no centro e as experiências estarão à direita.
 
@@ -426,9 +426,9 @@ Se tiver uma atividade de teste A/B, os públicos estarão à esquerda, a porcen
 1. Insira as porcentagens para configurar como o tráfego do público é distribuído a cada experiência. O número total deve ser igual a 100.
 1. (Opcional) Edite o nome da experiência clicando no menu suspenso ao lado do nome da experiência.
 
-## Metas e configurações: configurar a atividade e definir metas {#goals-settings-configuring-the-activity-and-setting-goals}
+## Metas e configurações: configurar a atividade e definir metas  {#goals-settings-configuring-the-activity-and-setting-goals}
 
-The Goals &amp; Settings step of [the targeting process](#the-targeting-process-create-target-and-goals-settings) involves configuring the behavior of the brand activity. Especifique quando a atividade começa e termina, bem como sua prioridade. Além disso, você também rastreia metas. Especificamente, é possível decidir o que deseja medir com suas atividades.
+A etapa Metas e configurações do [processo de definição de metas](#the-targeting-process-create-target-and-goals-settings) envolve a configuração do comportamento da atividade da marca. Especifique quando a atividade começa e termina, bem como sua prioridade. Além disso, você também rastreia metas. Especificamente, é possível decidir o que deseja medir com suas atividades.
 
 As medidas de meta somente estão disponíveis se você usar o Adobe Target como mecanismo de direcionamento. Você deve definir pelo menos uma métrica de meta. Se tiver o Adobe Analytics configurado e uma configuração da nuvem A4T do Analytics, será possível selecionar se deseja que a origem dos relatórios seja o Adobe Target ou o Adobe Analytics.
 
@@ -466,7 +466,7 @@ Use as configurações avançadas para determinar o que acontece **depois** que 
 
 Consulte a [documentação do Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) para obter mais informações sobre a métrica de sucesso.
 
-### Definição das configurações (direcionamento do AEM) {#configuring-settings-aem-targeting}
+### Definição das configurações (direcionamento do AEM)  {#configuring-settings-aem-targeting}
 
 Para definir se o direcionamento do AEM deve ser usado:
 
@@ -482,7 +482,7 @@ Para definir se o direcionamento do AEM deve ser usado:
 
 1. Para especificar uma prioridade para a atividade, use o controle deslizante e selecione **Baixa**, **Normal** ou **Alta**.
 
-### Configurar metas e configurações (Adobe Target) {#configuring-goals-settings-adobe-target}
+### Configurar metas e configurações (Adobe Target)  {#configuring-goals-settings-adobe-target}
 
 Para definir metas e configurações usando o Adobe Target:
 
@@ -509,7 +509,7 @@ Para definir metas e configurações usando o Adobe Target:
 
    Se precisar limpar todos os campos, clique nos três pontos no canto superior direito e selecione **Limpar todos os campos**.
 
-   Todas as métricas também possuem configurações avançadas que você pode definir. Selecione **Configurações avançadas** para acessá-las. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
+   Todas as métricas também possuem configurações avançadas que você pode definir. Selecione **Configurações avançadas** para acessá-las. Consulte a definição de como as métricas de sucesso são contadas na tabela anterior e consulte [a documentação da Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    >
@@ -529,12 +529,12 @@ Para definir metas e configurações usando o Adobe Target:
    >
    >É possível remover metas adicionais clicando ou tocando nas reticências e em **Excluir**. O AEM requer que você tenha pelo menos uma meta definida.
 
-1. If you want more control over how success metrics are counted, click or tap **Advanced Settings** to access those.
+1. Se você quiser mais controle sobre como as métricas de sucesso são contadas, clique ou toque em **Configurações avançadas** para acessá-las.
 1. Clique em **Salvar**.
 
 Depois de configurar, será possível [ver o desempenho das atividades](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) que usam o Adobe Target (direcionamento de experiência ou teste A/B). Além disso, com o direcionamento do teste A/B, é possível [converter os vencedores.](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)
 
-## Simular uma experiência {#simulating-an-experience}
+## Simular uma experiência  {#simulating-an-experience}
 
 Simule a experiência de um visitante para verificar se o conteúdo da página é exibido conforme esperado de acordo com o design do conteúdo direcionado. Ao simular, carregue diferentes perfis de usuário e veja o conteúdo direcionado para cada usuário.
 
@@ -557,7 +557,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
 * A atividade de simulação no modo de Direcionamento: a página exibe as ofertas para o usuário que está selecionado atualmente no Context Hub. É possível editar as ofertas direcionadas ao usuário.
 * Modo de visualização: use o Context Hub para selecionar os usuários e locais que atendem aos critérios dos segmentos que baseiam suas experiências. Quando as seleções do Context Hub mudam, o conteúdo direcionado muda de acordo.
 
-1. To switch to Preview mode, on the toolbar click or tap **Preview**.
+1. Para alternar para o modo de Pré-visualização, na barra de ferramentas, clique ou toque em **Pré-visualização**.
 1. Na barra de ferramentas, clique ou toque no ícone do Context Hub.
 
    ![Botão ContextHub](../assets/targeted-contexthub-button.png)
@@ -570,7 +570,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
 
 1. Para fazer alterações nas ofertas que são exibidas, alterne para o modo de Direcionamento. Com a atividade de simulação selecionada, edite as ofertas para o contexto que você configurou no modo de Visualização.
 
-## Configuração das opções do componente de Direcionamento {#configuring-target-component-options}
+## Configuração das opções do componente de Direcionamento  {#configuring-target-component-options}
 
 É possível personalizar o componente de Direcionamento acessando as opções do componente de duas maneiras:
 
