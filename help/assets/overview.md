@@ -21,13 +21,13 @@ A inclusão simultânea de muitos ativos ou ativos complexos é uma tarefa que c
 
 As empresas precisam de suporte para uma grande variedade de formatos de arquivo e resoluções de conteúdo para casos de uso multidispositivos, geografia e multilíngues. Os requisitos de armazenamento e processamento de ativos exigem recursos e capacidades que podem sobrecarregar uma solução tradicional. Por vezes, as limitações técnicas do processamento de ativos não produzem os resultados desejados e, noutras alturas, o custo do armazenamento constitui um entrave às margens de lucro.
 
-Para começar, entenda os [benefícios de uma oferta](#solution-benefits)nativa de nuvem. Verifique as [alterações notáveis no AEM como um Cloud Service](/help/release-notes/aem-cloud-changes.md) que também afeta os Experience Manager Assets acompanharam as [mudanças notáveis nos Assets](/help/assets/assets-cloud-changes.md).
+Para começar, entenda os [benefícios de uma oferta nativa de nuvem](#solution-benefits). Confira as alterações notáveis [para AEM como um Cloud Service](/help/release-notes/aem-cloud-changes.md) que também impactam os Experience Manager Assets acompanharam as alterações notáveis [nos Ativos](/help/assets/assets-cloud-changes.md).
 
-Leia para saber os [detalhes dos novos recursos](#whats-new-assets) do Assets e os problemas [](/help/release-notes/known-issues.md)conhecidos. Veja uma lista de funcionalidade [](/help/release-notes/deprecated-removed-features.md) obsoleta ou removida para saber o que foi removido nesta versão e veja esta [lista de recursos](/help/release-notes/known-issues.md#upcoming-assets-capabilities) futuros para saber o que está por vir em breve. Finalmente, entenda os termos AEM com a ajuda deste [glossário](/help/overview/terminology.md).
+Leia para saber os [detalhes dos novos recursos do Assets](#whats-new-assets) e os [problemas conhecidos](/help/release-notes/known-issues.md). Veja uma lista de [funcionalidade obsoleta ou removida](/help/release-notes/deprecated-removed-features.md) para saber o que foi removido nesta versão e veja esta [lista de recursos futuros](/help/release-notes/known-issues.md#upcoming-assets-capabilities) para saber o que está por vir em breve. Finalmente, entenda os termos AEM com a ajuda deste [glossário](/help/overview/terminology.md).
 
 ## Benefícios da solução {#solution-benefits}
 
-A seguir estão os principais benefícios dos Ativos como Cloud Service. Para saber mais, consulte a [visão geral do Experience Manager como Cloud Service](/help/overview/introduction.md).
+A seguir estão os principais benefícios dos Ativos como Cloud Service. Para saber mais, consulte [visão geral do Experience Manager como um Cloud Service](/help/overview/introduction.md).
 
 * **Cloud Service moderno para processamento** de ativos: Os novos microserviços de ativos são um serviço de processamento de ativos baseado em nuvem, dimensionável, confiável e sem complicações.
 * **Altamente escalável**: Escalabilidade elástica em todos os tipos de implantações. Recursos praticamente ilimitados que estão disponíveis sob demanda, conforme e quando necessário. Economiza o custo do design excedente em comparação com um sistema tradicional.
@@ -36,7 +36,7 @@ A seguir estão os principais benefícios dos Ativos como Cloud Service. Para sa
 * **Monitoramento** constante: O monitoramento do sistema é automatizado e as verificações e acionadores integrados ajudam a manter o desempenho, a disponibilidade e a robustez geral.
 * **Implantações** sem complicações: As AEM nas operações da Cloud são totalmente automatizadas e não exigem intervenção manual. Para implantações automatizadas, o componente do Cloud Manager (CM) automatiza a criação de imagens do Docker implantáveis que contêm seu código personalizado.
 
-## Novos recursos de ativos {#whats-new-assets}
+## Novos recursos do Assets {#whats-new-assets}
 
 Os novos recursos significativos são:
 
