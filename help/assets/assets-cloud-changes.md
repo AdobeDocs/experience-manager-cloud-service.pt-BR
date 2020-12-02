@@ -1,18 +1,18 @@
 ---
-title: Alterações notáveis no Adobe Experience Manager Assets como um Cloud Service
-description: Mudanças notáveis nos Adobe Experience Manager Assets no Cloud Service AEM em comparação ao Adobe Experience Manager 6.5.
+title: Alterações notáveis no Adobe Experience Manager Assets como a [!DNL Cloud Service]
+description: Alterações notáveis no Adobe Experience Manager Assets em AEM [!DNL Cloud Service] em comparação com o Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 18%
+source-wordcount: '601'
+ht-degree: 8%
 
 ---
 
 
-# Alterações notáveis nos ativos Experience Manager como Cloud Service {#notable-changes}
+# Alterações notáveis nos ativos Experience Manager como [!DNL Cloud Service] {#notable-changes}
 
-O Adobe Experience Manager as a Cloud Service oferece muitos novos recursos e possibilidades para gerenciar projetos do AEM. No entanto, há muitas diferenças entre os ativos Experience Manager no local ou no serviço gerenciado pelo Adobe em comparação ao Experience Manager como Cloud Service. Este documento destaca as diferenças importantes para os recursos do Assets.
+A Adobe Experience Manager como [!DNL Cloud Service] oferece muitos recursos e possibilidades novos para gerenciar seus projetos de AEM. No entanto, há muitas diferenças entre os ativos Experience Manager no local ou no serviço gerenciado pelo Adobe em comparação ao Experience Manager como um [!DNL Cloud Service]. Este documento destaca as diferenças importantes para os recursos do Assets.
 
 Estas são as principais diferenças em relação ao Experience Manager 6.5:
 
@@ -22,14 +22,14 @@ Estas são as principais diferenças em relação ao Experience Manager 6.5:
 
 >[!NOTE]
 >
->Este documento destaca as mudanças notáveis no AEM Assets. Para obter as alterações gerais para AEM como Cloud Service, e outros módulos, consulte:
+>Este documento destaca as mudanças notáveis no AEM Assets. Para obter alterações gerais em Experience Manager como [!DNL Cloud Service], e outros módulos, consulte:
 >
->* [Introdução ao Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* a [Visão geral do AEM as a Cloud Service: novidades e diferenças](/help/overview/what-is-new-and-different.md)
->* A [Arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager as a Cloud Service
->* [Alterações importantes no AEM as a Cloud Service (notas de versão)](/help/release-notes/aem-cloud-changes.md)
->* [Alterações importantes no AEM Sites as a  Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Introdução ao Adobe Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md)
+>* Uma [Visão geral do AEM como  [!DNL Cloud Service] - O que há de novo e o que é diferente](/help/overview/what-is-new-and-different.md)
+>* A [Arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager as a [!DNL Cloud Service]
+>* [Alterações notáveis no AEM como [!DNL Cloud Service]  (Notas de versão)](/help/release-notes/aem-cloud-changes.md)
+>* [Alterações notáveis no AEM Sites como uma [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager como  [!DNL Cloud Service] tutoriais](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## Inclusão e carregamento de ativos {#asset-ingestion}
@@ -56,4 +56,4 @@ Para fazer uma validação completa do código e do processo, incluindo a ingest
 
 ## Remoção da interface do usuário clássica {#classic-ui}
 
-A interface clássica não está mais disponível no Experience Manager como Cloud Service. A interface padrão é a interface habilitada para toque.
+A interface clássica não está mais disponível no Experience Manager como [!DNL Cloud Service]. A interface padrão é a interface habilitada para toque.
