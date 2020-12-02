@@ -19,17 +19,23 @@ Você pode determinar se seu nome de domínio foi verificado com êxito clicando
 
 O Cloud Manager verificará a propriedade do domínio por meio do valor TXT e exibirá uma das seguintes mensagens de status:
 
-* **O valor** TXT com falha na verificação do domínio está ausente ou é detectado com erros. Siga as instruções e tente novamente. Quando estiver pronto, você deve selecionar o ícone &quot;verificar novamente&quot; ao lado do status.
+* **O valor**
+FailedTXT de verificação de domínio está ausente ou é detectado com erros. Siga as instruções e tente novamente. Quando estiver pronto, você deve selecionar o ícone &quot;verificar novamente&quot; ao lado do status.
 
-* **Verificação de domínio em andamento** Verificação em andamento. Normalmente, esse status é visto depois que você seleciona o ícone &quot;verificar novamente&quot; ao lado do status.
+* **Verificação de domínio em**
+andamentoVerificação em andamento. Normalmente, esse status é visto depois que você seleciona o ícone &quot;verificar novamente&quot; ao lado do status.
 
-* **Verificado se a verificação** TXT de Implantação falhou com êxito. No entanto, a implantação do CDN falhou. Um representante Adobe será notificado automaticamente.
+* **Verificado se a verificação**
+FailedTXT da implantação foi bem-sucedida. No entanto, a implantação do CDN falhou. Um representante Adobe será notificado automaticamente.
 
-* **Domínio verificado e implantado** Este status indica que seu nome de domínio personalizado está pronto para ser usado. Observação: Nesse ponto, seu nome de domínio personalizado está pronto para teste e deve ser apontado para o nome de domínio do Cloud Manager. Vá até Configuração de DNS INSERIR LINK para saber como fazer isso.
+* **Domínio verificado e**
+implantadoEste status indica que seu nome de domínio personalizado está pronto para ser usado. Observação: Nesse ponto, seu nome de domínio personalizado está pronto para teste e deve ser apontado para o nome de domínio do Cloud Manager. Vá até Configuração de DNS INSERIR LINK para saber como fazer isso.
 
-* **A exclusão** da exclusão do nome de domínio personalizado está em andamento.
+* **A**
+exclusão do nome de domínio personalizado está em andamento.
 
-* **Falha na exclusão** da exclusão do nome de domínio personalizado. Você deve tentar novamente. Vá até Excluir nome de domínio personalizado para saber mais sobre o tópico.
+* **Falha na exclusão de**
+FailedExclution do nome do domínio personalizado. Você deve tentar novamente. Vá até Excluir nome de domínio personalizado para saber mais sobre o tópico.
 
 
 ## Configuração de configurações DNS {#configure-dns}
@@ -39,13 +45,13 @@ Depois que seu nome de domínio personalizado for verificado e implantado com ê
 >[!NOTE]
 >Você ou o indivíduo apropriado em sua organização deve poder fazer logon ou entrar em contato com seu provedor DNS (a empresa da qual você adquiriu o domínio) e fazer atualizações nas configurações de DNS.
 
-Para fazer isso, é necessário determinar se as configurações de DNS devem ser definidas para um registro `CNAME` ou Apex que aponte seu nome de domínio personalizado para o nome de domínio do Cloud Manager. Um registro `CNAME` ou A, uma vez provisionado, roteará todo o tráfego da Internet para o domínio para onde ele estiver apontando. Se esse local não for provisionado para servir o tráfego, haverá uma interrupção. Se não tiver sido testado, pode haver erros no conteúdo. É por isso que essa etapa é sempre realizada depois que o teste é concluído e o cliente está pronto para o Go-live.
+Para fazer isso, você deve determinar se deve configurar suas configurações de DNS para um `CNAME` ou registro Apex apontando seu nome de domínio personalizado para o nome de domínio do Cloud Manager. Um registro `CNAME` ou A, uma vez provisionado, roteará todo o tráfego da Internet do domínio para onde ele estiver apontando. Se esse local não for provisionado para servir o tráfego, haverá uma interrupção. Se não tiver sido testado, pode haver erros no conteúdo. É por isso que essa etapa é sempre realizada depois que o teste é concluído e o cliente está pronto para o Go-live.
 
 ### Registro CNAME {#cname-record}
 
 As seções a seguir ajudarão você a determinar que tipo de registro é apropriado para sua configuração de DNS.
 
-Um registro ou nome canônico é um tipo de registro DNS que mapeia um nome de alias para um nome de domínio verdadeiro ou canônico. `CNAME` Os registros CNAME são normalmente usados para mapear um subdomínio, como `www.example.com` o domínio que hospeda o conteúdo desse subdomínio.
+Um registro Canonical Name ou `CNAME` é um tipo de registro DNS que mapeia um nome de alias para um nome de domínio verdadeiro ou canônico. Os registros CNAME são normalmente usados para mapear um subdomínio como `www.example.com` para o domínio que hospeda o conteúdo desse subdomínio.
 
 Faça logon no Registrador de domínio e crie um registro CNAME para apontar seu nome de domínio personalizado para o público alvo, como mostrado abaixo:
 
@@ -55,7 +61,7 @@ Faça logon no Registrador de domínio e crie um registro CNAME para apontar seu
 
 ### Registro APEX {#apex-record}
 
-Um domínio de ápice é um domínio personalizado que não contém um subdomínio, como example.com. Um domínio de ápice está configurado com um `A` , `ALIAS` ou `ANAME` registro por meio do seu provedor DNS. Os domínios Apex devem apontar para endereços IP específicos.
+Um domínio de ápice é um domínio personalizado que não contém um subdomínio, como example.com. Um domínio de ápice está configurado com um registro `A`, `ALIAS` ou `ANAME` através do seu provedor DNS. Os domínios Apex devem apontar para endereços IP específicos.
 
 Adicione todos os seguintes registros A às configurações de DNS do Domínio por meio do provedor de domínio:
 
@@ -76,13 +82,17 @@ Você pode determinar se seu nome de domínio está resolvendo corretamente para
 >[!NOTE]
 >O Cloud Manager acionará automaticamente uma pesquisa DNS quando seu Nome de domínio personalizado for verificado e implantado pela primeira vez com êxito. Para tentativas subsequentes, você deve selecionar ativamente o ícone **resolver novamente** ao lado do status. INSERIR IMAGEM
 
-* **O status de DNS não detectado** O status de DNS não será detectado até que seu nome de domínio personalizado tenha sido verificado e implantado com êxito. Esse status também é observado quando seu nome de Domínio personalizado está em processo de exclusão.
+* **O status de DNS não foi**
+detectado. O status de DNS não será detectado até que seu nome de domínio personalizado tenha sido verificado e implantado com êxito. Esse status também é observado quando seu nome de Domínio personalizado está em processo de exclusão.
 
-* **Resoluções de DNS incorretas** Isso indica que a configuração de registros de DNS ainda não foi resolvida/apontou para cima ou está incorreta. Um representante Adobe será notificado automaticamente.
+* **Resoluções de DNS**
+incorretasIsso indica que a configuração de registros de DNS ainda não foi resolvida/apontou para cima ou está incorreta. Um representante Adobe será notificado automaticamente.
 
    >[!NOTE]
-   >Você deve configurar um `CNAME` ou `A-record` seguindo as instruções correspondentes. Vá até Configuração de DNS INSERIR LINK para saber mais sobre o tópico. Quando estiver pronto, você deve selecionar o ícone &quot;resolver novamente&quot; ao lado do status.
+   >Você deve configurar `CNAME` ou `A-record` seguindo as instruções correspondentes. Vá até Configuração de DNS INSERIR LINK para saber mais sobre o tópico. Quando estiver pronto, você deve selecionar o ícone &quot;resolver novamente&quot; ao lado do status.
 
-* **Resolução DNS em andamento** Resolução em andamento. Normalmente, esse status é visto depois que você seleciona o ícone &quot;resolver novamente&quot; ao lado do status.
+* **Resolução DNS em**
+andamentoResolução em andamento. Normalmente, esse status é visto depois que você seleciona o ícone &quot;resolver novamente&quot; ao lado do status.
 
-* **Resolve o DNS corretamente** As suas definições de DNS estão corretamente configuradas. Seu site está servindo visitantes.
+* **Resolve DNS**
+corretamenteSuas configurações de DNS estão configuradas corretamente. Seu site está servindo visitantes.
