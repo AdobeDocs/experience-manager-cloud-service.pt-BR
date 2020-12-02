@@ -35,7 +35,7 @@ AEM atualizações de versão são de dois tipos:
 
 AEM atualizações passam por um pipeline de validação de produto intenso e totalmente automatizado, que envolve várias etapas, garantindo que o serviço não seja interrompido em nenhum sistema em produção. Os controlos de saúde são utilizados para monitorizar a saúde da aplicação. Se essas verificações falharem durante um AEM como uma atualização de Cloud Service, o lançamento não prosseguirá e o Adobe investigará por que a atualização causou esse comportamento inesperado.
 
-[Os testes do produto e os testes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) funcionais do Cliente, que impedem que upgrades de produtos e empurramentos de código do cliente quebrem a produção, também são validados durante uma atualização da versão AEM.
+[Os testes do produto e os ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) testes funcionais do Cliente, que impedem que upgrades de produtos e empurramentos de código do cliente interrompam a produção, também são validados durante uma atualização da versão AEM.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ AEM atualizações passam por um pipeline de validação de produto intenso e to
 
 ## Armazenamento de nós composto {#composite-node-store}
 
-Como mencionado acima, as atualizações na maioria dos casos resultarão em tempo de inatividade zero, inclusive para o autor, que é um cluster de nós. As atualizações contínuas são possíveis devido ao recurso de armazenamento *de nós* compostos no Oak.
+Como mencionado acima, as atualizações na maioria dos casos resultarão em tempo de inatividade zero, inclusive para o autor, que é um cluster de nós. As atualizações contínuas são possíveis devido ao recurso *armazenamento de nó composto* no Oak.
 
-Esse recurso permite que AEM faça referência a vários repositórios simultaneamente. Em uma implantação contínua, a nova versão do AEM Verde contém seu próprio repositório (o repositório executável baseado no TarMK), distinto da versão mais antiga do AEM Azul, embora ambos referenciem um repositório mutável baseado no DocumentMK compartilhado que contém áreas como `/libs` , `/content` , `/conf` `/etc` e outras. Como o Azul e o Verde têm suas próprias versões do `/libs`, ambos podem estar ativos durante a atualização do acumulado, ambos assumindo o tráfego até que o azul seja totalmente substituído pelo verde.
+Esse recurso permite que AEM faça referência a vários repositórios simultaneamente. Em uma implantação móvel, a nova versão do AEM Verde contém seu próprio `/libs` (o repositório imutável baseado no TarMK), distinto da versão mais antiga do AEM Azul, embora ambos referenciem um repositório mutável baseado no DocumentMK compartilhado que contém áreas como `/content`, `/conf`, `/etc` e outras. Como o Azul e o Verde têm suas próprias versões de `/libs`, ambos podem estar ativos durante a atualização do acumulado, ambos assumindo o tráfego até que o azul seja totalmente substituído pelo verde.
 
