@@ -38,7 +38,7 @@ Normalmente, a barra de ferramentas fornece as seguintes opções:
 
 Para componentes baseados em texto, clique no modo de tela cheia ![botão de tela cheia do RTE](/help/sites-cloud/authoring/assets/editing-full-screen.png) na [barra de ferramentas](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) para abrir o editor de rich text e ocultar o restante do conteúdo da página.
 
-O modo de tela cheia exibe todas as opções configuradas que podem ser usadas para criação. The availability of options [depends on the configuration](/help/implementing/developing/extending/rich-text-editor.md).
+O modo de tela cheia exibe todas as opções configuradas que podem ser usadas para criação. A disponibilidade das opções [depende da configuração](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![RTE no modo de tela cheia](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
