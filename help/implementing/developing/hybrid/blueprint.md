@@ -2,7 +2,7 @@
 title: SPA Blueprint
 description: Este documento descreve o contrato geral, independente de estrutura, que qualquer quadro SPA deve cumprir para implementar componentes SPA editáveis dentro do AEM.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: d70f531087cccd45793f091b9fab7e8a25143c1e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
