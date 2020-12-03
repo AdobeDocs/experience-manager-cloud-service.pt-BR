@@ -2,10 +2,10 @@
 title: 'Diferencial de páginas  '
 description: O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 100%
+source-wordcount: '622'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ A criação de conteúdo é um processo iterativo. Criar com eficiência exige p
 
 O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
 
->[!CAUTION]
+>[!NOTE]
 >
 >O usuário deve ter a permissão de **Modificar/Criar/Excluir** no nó `/content/versionhistory` para usar o recurso.
 >
@@ -54,10 +54,6 @@ O diferencial detecta alterações no componente e no nível do HTML. Itens que 
 
 * Verde claro - Componente adicionado
 * Rosa - Componente removido
-* Azul - Componente alterado
-* Azul - Componente movido
-
-Observe que as cores alteradas e movidas são as mesmas.
 
 **Alterações no HTML**
 
@@ -93,9 +89,7 @@ Você pode sair do diferencial lado a lado a qualquer momento clicando no botão
 Existem algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme o esperado.
 
 * Ao diferenciar versões e lançamentos, o recurso de diferencial não leva em consideração os componentes dinâmicos, como navegação estrutural, menus, listas de produtos ou logotipos (componentes que dependem da estrutura do site para renderizar seu conteúdo).
-* Para versões, o diferencial não recria a política de controle de acesso e as relações de live copy.
-* Se for feita alguma alteração em uma imagem, como modificar os atributos alt, title ou src, ela será destacada em azul como alterada. No entanto, em alguns casos, a imagem tem uma representação Base64 do atributo src e, mesmo que as duas imagens tenham a mesma aparência, elas serão marcadas pelo recurso de diferencial como diferentes por causa dos diferentes atributos src.
-* O recurso de diferencial é incapaz de detectar a rotação da imagem.
+* Para versões, o diff não recria a política de controles de acesso e as relações de live copy.
 * Se uma página for movida, você não poderá mais executar um diff com versões feitas antes do movimento.
    * Se você tiver problemas com um diff, verifique a [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) da página para ver se a página foi movida.
 
