@@ -3,9 +3,9 @@ title: Predefinições do conjunto de lotes
 description: Saiba como automatizar a criação de conjuntos de imagens e conjuntos de rotação usando predefinições de conjuntos de lotes no Dynamic Media.
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: eba7216d6b70c15d7f8767358d1947e5dba1d802
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '3466'
+source-wordcount: '3521'
 ht-degree: 1%
 
 ---
@@ -21,12 +21,12 @@ Use **[!UICONTROL Predefinições de Conjunto de Lotes]** para ajudar a facilita
 
 **Prática**  recomendada - ao trabalhar com o Adobe de predefinições de conjuntos de lotes, o fluxo de trabalho a seguir é recomendado:
 
-1. Crie uma predefinição de conjunto de lotes.
-1. Crie uma nova pasta de ativos ou use uma pasta de ativos existente e verifique se ela está sincronizada com [!DNL Dynamic Media].
-1. Aplique a predefinição do conjunto de lotes à pasta de ativos.
-1. Carregue imagens para a pasta de ativos.
-1. Crie seu conjunto de imagens ou conjunto de rotação.
-1. Publique seu conjunto de imagens ou conjunto de rotação.
+1. Crie uma predefinição de conjunto de lotes. Consulte [Criar um conjunto de lotes predefinido para um conjunto de imagens ou um conjunto de rotação](#creating-bsp).
+1. Crie uma nova pasta de ativos ou use uma pasta de ativos existente e verifique se ela está sincronizada com [!DNL Dynamic Media]. Consulte [Criação de pastas](/help/assets/manage-digital-assets.md#creating-folders).
+1. Aplique a predefinição do conjunto de lotes à pasta de ativos. Consulte [Sobre a aplicação de predefinições de conjuntos de lotes a pastas](#apply-bsp).
+1. Carregue imagens para a pasta de ativos. Consulte [Carregando ativos para Conjuntos de imagens](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Carregando ativos para Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) ou [Adicionar ativos digitais ao Adobe Experience Manager](#add-assets-to-experience-manager)..
+1. Crie seu conjunto de imagens ou conjunto de rotação. Consulte [Conjuntos de imagens](/help/assets/dynamic-media/image-sets.md) ou [Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md).
+1. Publique seu conjunto de imagens ou conjunto de rotação. Consulte [Publicar ativos de mídia dinâmica](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Criar uma predefinição de conjunto de lotes para um conjunto de imagens ou um conjunto de rotação {#creating-bsp}
 
