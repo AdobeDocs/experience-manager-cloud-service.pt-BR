@@ -3,10 +3,10 @@ title: Relatórios sobre uso e compartilhamento
 description: Relatórios sobre seus ativos em [!DNL Adobe Experience Manager Assets] que ajudam você a entender o uso, a atividade e o compartilhamento de seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 11%
+source-wordcount: '928'
+ht-degree: 7%
 
 ---
 
@@ -48,17 +48,19 @@ Quando um relatório é gerado, você é notificado por <!-- through an email (o
 
    ![Selecionar tipo de relatório](assets/choose_report.png)
 
+<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
    >
-   >Antes de gerar um relatório **[!UICONTROL Ativo baixado]**, verifique se o serviço de Download de ativos está ativado. No console da Web (`https://[aem_server]:[port]/system/console/configMgr`), abra a configuração **[!UICONTROL Day CQ DAM Event Recorder]** e selecione a opção **[!UICONTROL Ativo baixado (BAIXADO)]** em Tipos de evento, se ainda não estiver selecionada.
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
 
-   >[!NOTE]
-   >
-   >Por padrão, os Fragmentos de conteúdo e compartilhamentos de link estão incluídos no relatório de Ativo [!UICONTROL Download]. Selecione a opção apropriada para criar um relatório de compartilhamentos de link ou para excluir Fragmentos de conteúdo do relatório de download.
+>[!NOTE]
+>
+>Por padrão, os Fragmentos de conteúdo e compartilhamentos de link estão incluídos no relatório de Ativo [!UICONTROL Download]. Selecione a opção apropriada para criar um relatório de compartilhamentos de link ou para excluir Fragmentos de conteúdo do relatório de download.
 
-   >[!NOTE]
-   >
-   >O relatório [!UICONTROL Download] exibe detalhes somente dos ativos que são baixados após a seleção individual ou baixados por meio da Ação rápida. No entanto, não inclui os detalhes dos ativos que estão dentro de uma pasta baixada.
+>[!NOTE]
+>
+>O relatório [!UICONTROL Download] exibe detalhes somente dos ativos que são baixados após a seleção individual ou baixados por meio da Ação rápida. No entanto, não inclui os detalhes dos ativos que estão dentro de uma pasta baixada.
 
 1. Configure detalhes do relatório, como título, descrição, miniatura e caminho da pasta no repositório CRX onde o relatório é armazenado. Por padrão, o caminho da pasta é `/content/dam`. Você pode especificar um caminho diferente.
 
@@ -139,11 +141,18 @@ Para adicionar colunas personalizadas a esses relatórios, siga estas etapas:
 
 1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatórios foi iniciada.
 
-## Configurar o serviço de remoção {#configure-purging-service}
+<!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
-Para remover relatórios que não são mais necessários, configure o serviço de Expurgação de relatórios do DAM do console da Web para expurgar os relatórios existentes com base na quantidade e idade.
+## Configure purging service {#configure-purging-service}
 
-1. Acesse o console da Web (gerenciador de configuração) de `https://[aem_server]:[port]/system/console/configMgr`.
-1. Abra a configuração **[!UICONTROL DAM Report Purge Service]**.
-1. Especifique a frequência (intervalo de tempo) do serviço de expurgação no campo `scheduler.expression.name`. Você também pode configurar a idade e o limite de quantidade para os relatórios.
-1. Salve as alterações.
+To remove reports that you no longer require, configure the DAM Report Purge service from the web console to purge existing reports based on their quantity and age.
+
+1. Access the web console (configuration manager) from `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.
+1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
+1. Save the changes.
+-->
+
+## Solução de problemas de informações, dicas e limitações {#best-practices-and-limitations}
+
+* Se o Relatório de uso de disco não for gerado e você estiver usando [!DNL Dynamic Media], verifique se todos os ativos foram processados corretamente. Para resolver, reprocesse os ativos e gere o relatório novamente.
