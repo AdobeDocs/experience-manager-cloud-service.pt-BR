@@ -2,15 +2,20 @@
 title: Visão geral do Analisador de práticas recomendadas
 description: Visão geral do Analisador de práticas recomendadas
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 35%
+source-wordcount: '351'
+ht-degree: 29%
 
 ---
 
 
 # Visão geral {#overview-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_overview"
+>title="Visão geral do Analisador de práticas recomendadas"
+>abstract="O Analisador de práticas recomendadas fornece uma avaliação da implementação atual de AEM, indicando áreas que não estão seguindo AEM práticas recomendadas. Fornece também orientações sobre as próximas etapas para adotar AEM práticas recomendadas. Além disso, ajuda a acelerar os processos de avaliação da prontidão para mudar de uma implantação existente da Adobe Experience Manager (AEM) para a AEM como Cloud Service."
 
 O Analisador de práticas recomendadas fornece uma avaliação da implementação atual de AEM, indicando áreas que não estão seguindo AEM práticas recomendadas. Fornece também orientações sobre as próximas etapas para adotar AEM práticas recomendadas. Além disso, ajuda a acelerar os processos de avaliação da prontidão para mudar de uma implantação existente da Adobe Experience Manager (AEM) para a AEM como Cloud Service.
 
