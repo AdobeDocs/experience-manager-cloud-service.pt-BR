@@ -2,15 +2,21 @@
 title: Uso do Analisador de práticas recomendadas
 description: Uso do Analisador de práticas recomendadas
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '2207'
-ht-degree: 47%
+source-wordcount: '2362'
+ht-degree: 46%
 
 ---
 
 
 # Usando o Analisador de práticas recomendadas {#using-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_using"
+>title="Uso do Analisador de práticas recomendadas"
+>abstract="Revise a documentação para usar o Analisador de práticas recomendadas (antigo Analisador de disponibilidade em nuvem) e o relatório gerado. O Relatório do Analisador de práticas recomendadas é usado para obter um alto nível de compreensão da disponibilidade geral de atualização."
+>additional-url=""
 
 ## Considerações importantes sobre o uso do Analisador de práticas recomendadas {#imp-considerations}
 
@@ -23,12 +29,12 @@ Siga a seção abaixo para entender as considerações importantes para executar
 * O BPA é suportado em instâncias AEM com a versão 6.1 e superior.
 
    >[!NOTE]
-   > Consulte [Instalando no AEM 6.1](#installing-on-aem61) para obter os requisitos especiais para instalar o BPA no AEM 6.1.
+Consulte  [Instalação no AEM 6.1](#installing-on-aem61) para obter os requisitos especiais para instalação do BPA no AEM 6.1.
 
 * O BPA pode ser executado em qualquer ambiente, mas é preferível executá-lo em um ambiente *Stage*.
 
    >[!NOTE]
-   >Para evitar um impacto em instâncias essenciais aos negócios, é recomendável executar o BPA em um ambiente *Author* o mais próximo possível do ambiente *Production* nas áreas de personalizações, configurações, conteúdo e aplicativos de usuário. Como alternativa, ele pode ser executado em um clone do ambiente de *Autor* de produção.
+Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o BPA em um ambiente  ** Authenvironment o mais próximo possível do ambiente de  ** produção nas áreas de personalizações, configurações, conteúdo e aplicativos do usuário. Como alternativa, ele pode ser executado em um clone do ambiente de *Autor* de produção.
 
 * A geração de conteúdo do relatório BPA pode levar um tempo significativo, de vários minutos a algumas horas. O tempo necessário depende muito do tamanho e da natureza do conteúdo do repositório do AEM, da versão do AEM e de outros fatores.
 
@@ -36,10 +42,15 @@ Siga a seção abaixo para entender as considerações importantes para executar
 
 ## Disponibilidade {#availability}
 
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_download"
+title="Download do Analisador de práticas recomendadas"
+abstract="O Analisador de práticas recomendadas pode ser baixado como um arquivo zip do portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM)."
+
 O Analisador de práticas recomendadas pode ser baixado como um arquivo zip do portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Baixe o Analisador de práticas recomendadas do portal [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+Baixe o Analisador de práticas recomendadas do portal  [de ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) distribuição de software.
 
 ## Exibindo o Relatório do Analisador de Práticas Recomendadas {#viewing-report}
 
@@ -73,12 +84,12 @@ Siga esta seção para saber como visualização o relatório Analisador de prá
    ![imagem](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >Você pode forçar o BPA a limpar seu cache e gerar novamente o relatório clicando em **Atualizar relatório**.
+Você pode forçar o BPA a limpar seu cache e gerar novamente o relatório clicando em  **Atualizar relatório**.
 
    ![imagem](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
-   >Enquanto o relatório está sendo regenerado, ele exibe o progresso em termos de porcentagem concluída, como mostrado na imagem abaixo.
+Enquanto o relatório está sendo regenerado, ele exibe o progresso em termos de porcentagem concluída, como mostrado na imagem abaixo.
 
    ![imagem](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
@@ -90,9 +101,15 @@ A ferramenta Analisador de práticas recomendadas está limitada no Adobe Experi
 Para o Adobe Experience Manager 6.1, a ferramenta não é funcional e apenas a interface HTTP pode ser usada.
 
 >[!NOTE]
->Em todas as versões, o Detector de padrões incluído pode ser executado independentemente.
+Em todas as versões, o Detector de padrões incluído pode ser executado independentemente.
 
 ## Interpretação do relatório do Analisador de práticas recomendadas {#cra-report}
+
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_interpreting"
+title="Interpretação do relatório do Analisador de práticas recomendadas"
+abstract="Há duas opções para exibir saídas de relatório BPA: IU e CSV. Quando a ferramenta Analisador de práticas recomendadas é executada na instância AEM, o relatório da interface é exibido como resultados na janela da ferramenta. O formato CSV do relatório inclui informações geradas a partir da saída do Detector de padrões, classificadas e organizadas por tipo de categoria, subtipo e nível de importância."
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Noções Gerais das categorias do Analisador de Práticas Recomendadas"
 
 Quando a ferramenta Analisador de práticas recomendadas é executada na instância AEM, o relatório é exibido como resultados na janela da ferramenta.
 
@@ -109,7 +126,7 @@ O formato do relatório é:
 Um nível de importância é atribuído a cada conclusão para indicar uma prioridade aproximada de ação.
 
 >[!NOTE]
->Para saber mais sobre cada Categoria de descoberta, consulte [Detector de padrões Categoria](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+Para saber mais sobre cada Categoria de descoberta, consulte Categorias [ do Detector de ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)padrões.
 
 Siga a tabela abaixo para entender os níveis de importância:
 
