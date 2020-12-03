@@ -2,9 +2,9 @@
 title: Trabalhando com vários repositórios Git de origem
 description: Trabalhar com vários repositórios Git de origem - Cloud Services
 translation-type: tm+mt
-source-git-commit: 89429fcba3a1d4f5e5fe9c98ef235057b979ad60
+source-git-commit: e8cfe8eeec697fe74da02e178a89fc7a0e22d441
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Siga as etapas abaixo para adicionar uma nova (terceira) fonte ou repositório:
 1. Adicione uma referência ao novo diretório no pom raiz Maven no Repositório Git do Cloud Manager.
 
 
-## Apêndice A: Exemplo de ação do GitHub {#sample-github-action}
+## Exemplo de ação do GitHub {#sample-github-action}
 
 Esta é uma ação de exemplo do GitHub acionada por um push para a ramificação principal e, em seguida, empurrando para um subdiretório do Repositório Git do Cloud Manager. As ações do GitHub precisam ser fornecidas com dois segredos, `MAIN_USER` e `MAIN_PASSWORD`, para que possam se conectar e encaminhar para o repositório Git do Cloud Manager.
 
@@ -117,7 +117,7 @@ Como mostrado acima, usar uma ação GitHub é muito flexível. Qualquer mapeame
 >[!NOTE]
 >O script acima usa `git add` para atualizar o repositório, o que supõe que as remoções estejam incluídas - dependendo da configuração padrão do Git, isso precisa ser substituído por `git add --all`.
 
-## Apêndice B: Exemplo de trabalho Jenkins {#sample-jenkins-job}
+## Exemplo de trabalho Jenkins {#sample-jenkins-job}
 
 Este é um exemplo de script que pode ser usado em um trabalho Jenkins ou similar. Ela é acionada por uma alteração em um Repositório Git. O trabalho do Jenkins verifica o estado mais recente daquele projeto ou ramo e dispara este script.
 
