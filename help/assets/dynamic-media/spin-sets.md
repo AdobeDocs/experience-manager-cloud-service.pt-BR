@@ -2,9 +2,9 @@
 title: Conjuntos de rotação
 description: Saiba como trabalhar com conjuntos de rotação no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1829'
 ht-degree: 12%
 
 ---
@@ -74,9 +74,9 @@ Para colocar você em funcionamento rapidamente com Conjuntos de rotação, siga
 
 Se necessário, você pode [editar Conjuntos de rotação](#editing-spin-sets). Além disso, você pode visualização e modificar [as propriedades do Spin Set](/help/assets/manage-digital-assets.md#editing-properties).
 
-## Fazer upload de ativos para conjuntos de rotação {#uploading-assets-for-spin-sets}
+## Fazer upload de ativos para Conjuntos de rotação {#uploading-assets-for-spin-sets}
 
-No mínimo, você precisa de 8 a 12 fotos de um item para um Conjunto de rotação unidimensional e 16 a 24 para um Conjunto de rotação bidimensional. As fotos devem ser tiradas a intervalos regulares para dar a impressão de que o item está girando e sendo virado. Por exemplo, se um Conjunto de rotação unidimensional incluir 12 fotos, gire o item 30 graus (360/12) para cada tomada.
+No mínimo, você precisa de 8 a 12 fotos de um item para um conjunto de rotação unidimensional. As fotos devem ser tiradas a intervalos regulares para dar a impressão de que o item está girando e sendo virado. Por exemplo, se um Conjunto de rotação unidimensional incluir 12 fotos, gire o item 30 graus (360/12) para cada tomada.
 
 Você pode fazer upload de imagens para os Conjuntos de rotação da mesma maneira que faria [fazer upload de qualquer outro ativo no AEM Assets](/help/assets/manage-digital-assets.md).
 
