@@ -1,11 +1,11 @@
 ---
 title: Como editar ou adicionar metadados
-description: Saiba mais sobre os metadados de ativos no AEM Assets e sobre as várias maneiras pelas quais você pode editar os metadados de ativos.
+description: Saiba mais sobre metadados de ativos em [!DNL Experience Manager Assets] e de várias maneiras pelas quais você pode editar metadados de ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '422'
 ht-degree: 9%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Metadados são informações adicionais sobre o ativo que pode ser pesquisado. Ele é extraído automaticamente quando você carrega uma imagem. Você pode editar os metadados existentes ou adicionar novas propriedades de metadados a campos existentes (por exemplo, quando um campo de metadados estiver em branco).
 
-Como o empresa precisa de vocabulários de metadados controlados e confiáveis, a AEM Assets não permite a adição ad hoc de novas propriedades de metadados. Embora os autores não possam adicionar novos campos de metadados para ativos, os desenvolvedores podem. Consulte [Criar nova propriedade de metadados para Assets](meta-edit.md#editing-metadata-schema).
+Como o empresa precisa de vocabulários de metadados controlados e confiáveis, [!DNL Experience Manager Assets] não permite a adição ad hoc de novas propriedades de metadados. Embora os autores não possam adicionar novos campos de metadados para ativos, os desenvolvedores podem. Consulte [Criar nova propriedade de metadados para Assets](meta-edit.md#editing-metadata-schema).
 
 ## Editar metadados para um ativo {#editing-metadata-for-an-asset}
 
