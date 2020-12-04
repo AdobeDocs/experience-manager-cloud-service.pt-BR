@@ -3,9 +3,9 @@ title: Configurar e usar microserviços de ativos
 description: Configure e use os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2511'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ Para verificar se os ativos são processados, pré-visualização as representa�
 
 Para situações em que é necessário um processamento adicional de ativos que não pode ser obtido usando os perfis de processamento, workflows adicionais pós-processamento podem ser adicionados à configuração. Isso permite adicionar processamento totalmente personalizado sobre o processamento configurável usando os microserviços de ativos.
 
-Os workflows de pós-processamento, se configurados, são executados automaticamente por AEM após a conclusão do processamento dos microserviços. Não há necessidade de adicionar iniciadores de fluxo de trabalho manualmente para acioná-los. Os exemplos incluem:
+Os workflows de pós-processamento, se configurados, são executados automaticamente por [!DNL Experience Manager] após a conclusão do processamento dos microserviços. Não há necessidade de adicionar iniciadores de fluxo de trabalho manualmente para acioná-los. Os exemplos incluem:
 
 * Etapas de fluxo de trabalho personalizadas para processar ativos.
 * Integrações para adicionar metadados ou propriedades a ativos de sistemas externos, por exemplo, informações sobre produtos ou processos.
@@ -195,7 +195,7 @@ A adição de uma configuração de fluxo de trabalho de pós-processamento ao E
 
 ### Criar modelos de fluxo de trabalho de pós-processamento {#create-post-processing-workflow-models}
 
-Os modelos de fluxo de trabalho de pós-processamento são modelos regulares de fluxo de trabalho AEM. Crie modelos diferentes se precisar de processamento diferente para locais de repositório ou tipos de ativos diferentes.
+Os modelos de fluxo de trabalho de pós-processamento são modelos de fluxo de trabalho regulares [!DNL Experience Manager]. Crie modelos diferentes se precisar de processamento diferente para locais de repositório ou tipos de ativos diferentes.
 
 As etapas de processamento devem ser adicionadas com base nas necessidades. Você pode usar quaisquer etapas compatíveis disponíveis, bem como quaisquer etapas de fluxo de trabalho implementadas por personalização.
 
@@ -213,7 +213,7 @@ O serviço Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow
 >[!NOTE]
 >
 >A configuração do Custom Workflow Runner é uma configuração de um serviço OSGi. Consulte [implantar em Experience Manager](/help/implementing/deploying/overview.md) para obter informações sobre como implantar uma configuração OSGi.
->O console da Web OSGi, ao contrário das implantações de serviços no local e gerenciados de AEM, não está disponível diretamente nas implantações de serviços em nuvem.
+>O console da Web OSGi, ao contrário das implantações de serviços locais e gerenciados de [!DNL Experience Manager], não está disponível diretamente nas implantações de serviços em nuvem.
 
 Para obter detalhes sobre qual etapa de fluxo de trabalho padrão pode ser usada no fluxo de trabalho de pós-processamento, consulte [etapas de fluxo de trabalho no fluxo de trabalho de pós-processamento](developer-reference-material-apis.md#post-processing-workflows-steps) na referência do desenvolvedor.
 
