@@ -17,7 +17,7 @@ ht-degree: 46%
 >id="aemcloud_bpa_using"
 >title="Uso do Analisador de práticas recomendadas"
 >abstract="Revise a documentação para usar o Analisador de práticas recomendadas (antigo Analisador de disponibilidade em nuvem) e o relatório gerado. O Relatório do Analisador de práticas recomendadas é usado para obter um alto nível de compreensão da disponibilidade geral de atualização."
->additional-url=""
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
 
 ## Considerações importantes sobre o uso do Analisador de práticas recomendadas {#imp-considerations}
 
