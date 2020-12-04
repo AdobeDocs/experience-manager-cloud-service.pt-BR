@@ -3,9 +3,9 @@ title: Baixar ativos
 description: Baixe ativos de [!DNL Adobe Experience Manager Assets] e ative ou desative a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Aplicativo para desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## Baixar ativos usando AEM interface {#download-in-aem}
+## Baixar ativos usando a interface [!DNL Experience Manager] {#download-in-aem}
 
 O serviço de download assíncrono fornece uma estrutura para o download ininterrupto de ativos de grande porte. Arquivos menores são baixados da interface do usuário em tempo real. Os arquivos grandes são baixados de forma assíncrona e os usuários são informados da conclusão por meio de notificações de Experience Manager na Caixa de entrada. Consulte [compreendendo a caixa de entrada do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
 
