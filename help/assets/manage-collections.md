@@ -4,9 +4,9 @@ description: Entenda o conceito de coleção no Adobe Experience Manager Assets.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2396'
 ht-degree: 20%
 
 ---
@@ -140,7 +140,7 @@ O recurso Pesquisar em Coleções oferece suporte a [Pesquisar por coleções](#
 
 ### Pesquisar coleções {#search-collections}
 
-Você pode pesquisar coleções no console Coleções. Quando você pesquisa com palavras-chave na caixa Omnisearch, a AEM Assets pesquisa nomes de coleção, metadados e as tags adicionadas às coleções.
+Você pode pesquisar coleções no console Coleções. Quando você pesquisa com palavras-chave na caixa Omnisearch, [!DNL Experience Manager Assets] pesquisa nomes de coleção, metadados e as tags adicionadas às coleções.
 
 Se você pesquisar por coleções do nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. Os ativos ou pastas dentro das coleções são excluídos. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pastas), todos os ativos, pastas e coleções relevantes são retornados.
 
@@ -148,7 +148,7 @@ Se você pesquisar por coleções do nível superior, somente coleções individ
 
 No console Coleções, toque/clique em uma coleção para abri-la.
 
-Em uma coleção, AEM pesquisa de ativos está restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
+Em uma coleção, a pesquisa [!DNL Experience Manager] está restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
 
 ## Editar configurações de coleção {#edit-collection-settings}
 
@@ -179,7 +179,7 @@ Quando você baixa uma coleção, toda a hierarquia de ativos dentro dela é bai
 
 ## Editar propriedades de metadados de várias coleções {#editing-metadata-properties-of-multiple-collections}
 
-Os ativos Adobe Enterprise Manager (AEM) permitem que você edite os metadados de muitas coleções em massa. Use a página [!UICONTROL Propriedades] para executar alterações de metadados em várias coleções, por exemplo, altere as propriedades de metadados para um valor comum ou adicione ou modifique tags.
+Os ativos Adobe Enterprise Manager permitem que você edite os metadados de muitas coleções em massa. Use a página [!UICONTROL Propriedades] para executar alterações de metadados em várias coleções, por exemplo, altere as propriedades de metadados para um valor comum ou adicione ou modifique tags.
 
 Para personalizar a página de metadados [!UICONTROL Propriedades], incluindo a adição, modificação e exclusão de propriedades de metadados, use o editor de Schemas.
 
