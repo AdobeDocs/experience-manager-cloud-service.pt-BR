@@ -1,25 +1,25 @@
 ---
 title: Esquema de metadados de pasta
-description: Saiba como criar schemas de metadados para pastas de ativos no AEM Assets
+description: Saiba como criar schemas de metadados para pastas de ativos em [!DNL Experience Manager Assets]
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dc5cec192a70413e0ebcc27eb5e58577079ae93b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 10%
+source-wordcount: '1029'
+ht-degree: 8%
 
 ---
 
 
 # Esquema de metadados de pasta {#folder-metadata-schema}
 
-Os ativos Adobe Experience Manager (AEM) permitem que você crie schemas de metadados para pastas de ativos, que definem o layout e os metadados exibidos nas páginas de propriedades da pasta.
+[!DNL Adobe Experience Manager Assets] permite criar schemas de metadados para pastas de ativos, que definem o layout e os metadados exibidos nas páginas de propriedades da pasta.
 
 ## Adicionar um schema de metadados de pasta {#add-a-folder-metadata-schema-form}
 
 Use o editor do Forms Schema de Metadados da Pasta para criar e editar schemas de metadados para pastas.
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados de pasta]**.
+1. Toque/clique no logotipo [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Schemas de Metadados de Pasta]**.
 1. Na página do Forms Schema de metadados da pasta, toque/clique em **[!UICONTROL Criar]**.
 1. Especifique um nome para o formulário e toque/clique em **[!UICONTROL Criar]**. O novo formulário de schema é listado na página Forms do Schema.
 
@@ -138,7 +138,7 @@ Se você configurar um schema de metadados para uma pasta, o caminho para o form
 
 ### Atribua a um schema da página Schema Metadados da Pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]**> **[!UICONTROL Esquemas de metadados de pasta]**.
+1. Toque/clique no logotipo [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]**> **[!UICONTROL Schemas de Metadados de Pasta]**.
 1. Na página do Forms Schema de metadados da pasta, selecione o formulário de schema que deseja aplicar a uma pasta.
 1. Na barra de ferramentas, toque/clique em **[!UICONTROL Aplicar às pastas]**.
 
@@ -155,7 +155,7 @@ Se você configurar um schema de metadados para uma pasta, o caminho para o form
 
 Você pode atribuir um schema de metadados de pasta ao criar uma pasta. Se pelo menos um schema de metadados de pasta existir no sistema, uma lista extra será exibida na caixa de diálogo **[!UICONTROL Criar pasta]**. Você pode selecionar o schema desejado. Por padrão, nenhum schema é selecionado.
 
-1. Na interface do usuário do AEM Assets, toque/clique em **[!UICONTROL Criar]** na barra de ferramentas.
+1. Na interface do usuário [!DNL Experience Manager Assets], toque/clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. Especifique um título e nome para a pasta.
 1. Na lista Schema Metadados da pasta, selecione o schema desejado. Em seguida, toque/clique em **[!UICONTROL Criar]**.
 
