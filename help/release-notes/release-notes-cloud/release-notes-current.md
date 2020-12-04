@@ -2,10 +2,10 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 4%
+source-wordcount: '1269'
+ht-degree: 3%
 
 ---
 
@@ -25,9 +25,9 @@ A seguinte versão (2020.12.0) será lançada em 17 de dezembro de 2020
 
 * **[Inicia o Gerenciamento](/help/sites-cloud/authoring/launches/managing-pages.md)  de Hierarquia e o Timewarp [](/help/sites-cloud/authoring/launches/preview.md)** Futuro: Nova interface do usuário para adicionar/remover páginas em uma inicialização e navegar no site com o Timewarp mostra o estado futuro de Inicializações.
 
-* **Classifique as páginas da Live Copy disponíveis para implantação**: Nova opção para classificar as páginas da Live Copy disponíveis para implantação usando as propriedades  [!UICONTROL Nome], Data [!UICONTROL  da ]última modificação e  [!UICONTROL Última ] implantação. A [!UICONTROL Data da última implementação] de uma página é uma nova propriedade introduzida.
+* **[Modelos e editor](/help/assets/content-fragments/content-fragments-models.md)** de fragmento de conteúdo estendido: Novas opções para a validação de entrada em vários tipos de dados, tipo de dados de Lista discriminada aprimorado com novas visualizações de formulário e o nome do modelo do Fragmento de conteúdo é exibido e pesquisável na interface do usuário do Assets.
 
-<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
+* **Classifique as páginas da Live Copy disponíveis para implantação**: Nova opção para classificar as páginas da Live Copy disponíveis para implantação usando as propriedades  [!UICONTROL Nome], Data [!UICONTROL  da ]última modificação e  [!UICONTROL Última ] implantação. A [!UICONTROL Data da última implementação] de uma página é uma nova propriedade introduzida.
 
 ## [!DNL Adobe Experience Manager Assets] como um Cloud Service  {#assets}
 
