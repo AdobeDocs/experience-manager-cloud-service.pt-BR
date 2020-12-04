@@ -3,10 +3,10 @@ title: Compartilhar ativos, pastas e coleções como um link
 description: Este artigo descreve como compartilhar ativos, pastas e coleções dentro dos Ativos do Experience Manager como um hiperlink.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 3%
+source-wordcount: '734'
+ht-degree: 1%
 
 ---
 
@@ -152,14 +152,16 @@ Before you can share assets as links, configure the email service.
 1. Click/tap **[!UICONTROL Save]**.
 -->
 
-### Configurar tamanho máximo de dados {#maxdatasize}
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+### Configure maximum data size {#maxdatasize}
 
-Quando você baixa ativos do link compartilhado usando o recurso Compartilhamento de link, AEM compacta a hierarquia de ativos do repositório e retorna o ativo em um arquivo ZIP. No entanto, na ausência de limites para a quantidade de dados que pode ser compactada em um arquivo ZIP, grandes quantidades de dados são submetidas à compactação, o que causa erros de memória esgotada no JVM. Para proteger o sistema de um possível ataque de negação de serviço devido a essa situação, é possível configurar o tamanho máximo dos arquivos baixados. Se o tamanho descompactado do ativo exceder o valor configurado, as solicitações de download do ativo serão rejeitadas. O valor padrão é 100 MB.
+When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Clique/toque no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-1. No console da Web, localize a configuração **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]**.
-1. Abra a configuração no modo de edição e modifique o valor do parâmetro **[!UICONTROL Tamanho máx. do conteúdo (descompactado)]**.
-1. Salve as alterações.
+1. Click/Tap the AEM logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the web console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
+1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
+1. Save the changes.
+-->
 
 <!--
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
