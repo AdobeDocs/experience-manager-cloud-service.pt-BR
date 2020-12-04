@@ -2,13 +2,12 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0.
 description: '[!DNL Adobe Experience Manager] como notas de versão de Cloud Service para 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 841069f35539a49c6ee67699bf3a476cf1c9da41
+source-git-commit: fd271f24e5f8ddbe440dccf5c51c91a46c70dead
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1044'
 ht-degree: 18%
 
 ---
-
 
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
@@ -32,8 +31,6 @@ A seguinte versão (2020.11.0) será lançada em 1º de dezembro de 2020.
 
 ## [!DNL Adobe Experience Manager Assets] como um Cloud Service  {#assets}
 
-### Novidades em [!DNL Assets] {#what-is-new-assets}
-
 * **[!DNL Adobe Sensei]Marcação** inteligente de vídeo: Ao utilizar modelos do AI para analisar o conteúdo de vídeo para tags de objeto e ação específicas, os usuários do DAM podem gastar menos tempo adicionando tags e mais tempo usando as informações avançadas expostas para fornecer a experiência certa aos clientes. Consulte [Ativos de vídeo de tags inteligentes](/help/assets/smart-tags-video-assets.md).
 
 * **Aprimoramentos** do Brand Portal: Os novos recursos a seguir e muito mais estão disponíveis em  [!DNL Brand Portal]. Para obter detalhes, consulte [[!DNL Brand Portal] notas de versão](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
@@ -45,13 +42,7 @@ A seguinte versão (2020.11.0) será lançada em 1º de dezembro de 2020.
 
 * **[!DNL Adobe Asset Link]versão 2.1**: Uma nova versão do  [Adobe Asset ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) Linkextension para  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]e  [!DNL Adobe InDesign] está disponível. Ele acrescenta compatibilidade com os aplicativos [!DNL Adobe Creative Cloud] mais recentes com a versão 2021, lançada em outubro de 2020.
 
-* **[!DNL Assets]Suporte** a arquivos WebP:  [!DNL Assets] como Cloud Service agora oferece suporte ao formato de imagem WebP. WebP é um formato de imagem emergente criado pelo Google. As imagens no formato de arquivo WebP são visualmente indistinguíveis dos arquivos JPG ou PNG e os arquivos são muito menores. O tamanho reduzido de arquivos de ativos melhora o tempo de carregamento da página e ajuda os criadores de conteúdo a proporcionarem uma experiência mais rápida na Web.
-
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-Content to come
--->
+* **[!DNL Assets]Suporte** a arquivos WebP:  [!DNL Assets] como Cloud Service agora oferece suporte ao formato de imagem WebP. WebP é um formato de imagem emergente criado pelo Google. As imagens no formato de arquivo WebP são visualmente indistinguíveis dos arquivos JPG ou PNG e os arquivos são muito menores. O tamanho reduzido de arquivos de ativos melhora o tempo de carregamento da página e ajuda os criadores de conteúdo a proporcionarem uma experiência mais rápida na Web. Consulte como usar o WebP em [criar perfil de processamento](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -80,7 +71,6 @@ A data de lançamento do Cloud Manager no AEM como Cloud Service 2020.10.0 é 2 
 * A página de ambientes hibernados agora mostra um status discreto no Cloud Manager.
 
 * O container de compilação do Cloud Manager agora oferece suporte à compilação de projetos usando Java 8 ou Java 11. O suporte para Java 11 é fornecido pelo sistema de cadeias de ferramentas Maven.
-
 
 * O número de variáveis por ambiente aumentou para 200.
 
@@ -122,4 +112,3 @@ Siga esta seção para saber mais sobre as novidades e as atualizações da [Fer
 ### Correções de erros {#ctt-bug-fixes}
 
 * A Ferramenta de transferência de conteúdo ignorava os arquivos de conteúdo se o conjunto de migração contivesse caminhos que tivessem nomes de arquivos parcialmente semelhantes. Isso foi corrigido.
-
