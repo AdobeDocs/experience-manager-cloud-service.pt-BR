@@ -3,9 +3,9 @@ title: Processar ativos usando microserviços de ativos
 description: Processar seus ativos digitais usando microserviços de processamento de ativos escaláveis e nativos na nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -50,14 +50,14 @@ Esse é o fluxo básico de assimilação e processamento de ativos. Se configura
 
 O fluxo de ingestão e processamento são conceitos-chave da arquitetura de microserviços do ativo para o Experience Manager.
 
-* **Acesso** binário direto: Os ativos são transportados (e carregados) para a Loja binária de nuvem uma vez configurados para ambientes Experience Manager e, em seguida, AEM, microserviços de ativos e, por fim, os clientes obtêm acesso direto a eles para realizar seu trabalho. Isso minimiza a carga nas redes e a duplicação dos binários armazenados
-* **Processamento** externo: O processamento de ativos é feito fora AEM ambiente e salva seus recursos (CPU, memória) para fornecer as principais funcionalidades do Gerenciamento de ativos digitais e suportar o trabalho interativo com o sistema para usuários finais
+* **Acesso** binário direto: Os ativos são transportados (e carregados) para a Loja binária de nuvem uma vez configurados para ambientes Experience Manager, e então  [!DNL Experience Manager], os microserviços de ativos e, por fim, os clientes obtêm acesso direto a eles para realizar seu trabalho. Isso minimiza a carga nas redes e a duplicação dos binários armazenados
+* **Processamento** externo: O processamento de ativos é feito fora do  [!DNL Experience Manager] ambiente e salva seus recursos (CPU, memória) para fornecer as principais funcionalidades do Gerenciamento de ativos digitais e suportar o trabalho interativo com o sistema para usuários finais
 
 ## Carregamento de ativos com acesso binário direto {#asset-upload-with-direct-binary-access}
 
-Os clientes Experience Manager, que fazem parte da oferta de produtos, todos suportam upload com acesso binário direto por padrão. Eles incluem upload usando a interface da Web, Adobe Asset Link e AEM aplicativo de desktop.
+Os clientes Experience Manager, que fazem parte da oferta de produtos, todos suportam upload com acesso binário direto por padrão. Eles incluem upload usando interface da Web, Adobe Asset Link e [!DNL Experience Manager] aplicativo de desktop.
 
-Você pode usar ferramentas de upload personalizadas, que funcionam diretamente com AEM APIs HTTP. Você pode usar essas APIs diretamente ou usar e estender os seguintes projetos de código aberto que implementam o protocolo de upload:
+Você pode usar ferramentas de upload personalizadas, que funcionam diretamente com [!DNL Experience Manager] APIs HTTP. Você pode usar essas APIs diretamente ou usar e estender os seguintes projetos de código aberto que implementam o protocolo de upload:
 
 * [Biblioteca de upload de código aberto](https://github.com/adobe/aem-upload)
 * [Ferramenta de linha de comando open-source](https://github.com/adobe/aio-cli-plugin-aem)
@@ -68,7 +68,7 @@ Para obter mais informações, consulte [fazer upload de ativos](add-assets.md).
 
 Embora a maioria dos clientes deva obter todas as suas necessidades de processamento de ativos dos microserviços de ativos configuráveis, alguns podem precisar de processamento de ativos adicionais. Isso é especialmente verdadeiro se os ativos precisarem ser processados com base em informações provenientes de outros sistemas por meio de integrações. Em casos como esse, workflows de pós-processamento personalizados podem ser usados.
 
-Os workflows de pós-processamento são modelos regulares de fluxo de trabalho AEM, criados e gerenciados AEM editor de fluxo de trabalho. Os clientes podem configurar os workflows para realizar etapas de processamento adicionais em um ativo, incluindo o uso de etapas de fluxo de trabalho prontas e workflows personalizados disponíveis.
+Os workflows de pós-processamento são modelos de fluxo de trabalho regulares [!DNL Experience Manager], criados e gerenciados no [!DNL Experience Manager] Editor de fluxo de trabalho. Os clientes podem configurar os workflows para realizar etapas de processamento adicionais em um ativo, incluindo o uso de etapas de fluxo de trabalho prontas e workflows personalizados disponíveis.
 
 O Adobe Experience Manager pode ser configurado para acionar automaticamente os workflows de pós-processamento após a conclusão do processamento do ativo.
 
