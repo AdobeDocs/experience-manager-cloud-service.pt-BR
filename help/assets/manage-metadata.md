@@ -4,10 +4,10 @@ description: Saiba mais sobre os tipos de metadados e como [!DNL Adobe Experienc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 4%
+source-wordcount: '1850'
+ht-degree: 3%
 
 ---
 
@@ -152,13 +152,16 @@ Os ativos como [!DNL Cloud Service] podem gerar metadados personalizados para um
 >
 >Somente um perfil de processamento pode ser aplicado a uma pasta. Para aplicar vários processos a ativos em uma pasta, adicione mais opções a um único perfil de processamento. Por exemplo, um único perfil pode gerar representações, transcodificar ativos, gerar metadados personalizados e assim por diante. Você pode aplicar filtros de tipo MIME para cada tarefa para que a tarefa apropriada seja acionada para o formato de arquivo necessário.
 
-## Configurar limite para atualização de metadados em massa {#configlimit}
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
-Para evitar uma situação semelhante ao DOS, AEM limita o número de parâmetros suportados em uma solicitação Sling. Ao atualizar metadados de muitos ativos de uma só vez, você pode atingir o limite e os metadados não são atualizados para mais ativos. AEM gera o seguinte aviso nos registros:
+## Configure limit for bulk metadata update {#configlimit}
+
+To prevent DOS-like situation, [!DNL Experience Manager] limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. [!DNL Experience Manager] generates the following warning in the logs:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Para alterar o limite, acesse o Console da Web (**[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**) e altere o valor de **[!UICONTROL Parâmetros de POST máximo]** na configuração OSGi da **[!UICONTROL Manipulação de parâmetro da solicitação do Apache]**.
+To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
+-->
 
 ## Esquemas de metadados {#metadata-schemata}
 
