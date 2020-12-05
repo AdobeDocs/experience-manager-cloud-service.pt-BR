@@ -4,9 +4,9 @@ description: Saiba mais sobre vários métodos de edição e gerenciamento de at
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '4429'
+source-wordcount: '4408'
 ht-degree: 12%
 
 ---
@@ -18,7 +18,7 @@ Este artigo descreve como gerenciar e editar ativos no Adobe Experience Manager 
 
 ## Criar pastas {#creating-folders}
 
-Ao organizar uma coleção de ativos, por exemplo, todas as imagens `Nature`, você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. A AEM Assets não exige que você organize ativos em pastas para trabalhar melhor.
+Ao organizar uma coleção de ativos, por exemplo, todas as imagens `Nature`, você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. [!DNL Experience Manager Assets] não requer que você organize ativos em pastas para trabalhar melhor.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Para pré-visualização de um ativo, siga estas etapas.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. No campo **[!UICONTROL Tags]**, selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione a tecla Enter. A nova tag é salva no AEM.
+1. No campo **[!UICONTROL Tags]**, selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione a tecla Enter. A nova tag é salva em [!DNL Experience Manager].
 
    O YouTube requer Tags para publicar e ter um link para o YouTube (se for possível encontrar um link adequado).
 
@@ -139,7 +139,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    >[!NOTE]
    >
-   >Se você copiar um ativo no mesmo local, AEM gera automaticamente uma variação do nome. Por exemplo, se você copiar um ativo chamado `Square`, o AEM gera automaticamente o título para sua cópia como `Square1`.
+   >Se você copiar um ativo no mesmo local, [!DNL Experience Manager] gera automaticamente uma variação do nome. Por exemplo, se você copiar um ativo chamado `Square`, [!DNL Experience Manager] gera automaticamente o título para sua cópia como `Square1`.
 
 1. Clique no ícone de ativo **[!UICONTROL Colar]** na barra de ferramentas. Os ativos são copiados para este local.
 
@@ -203,7 +203,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    >[!NOTE]
    >
-   >Por padrão, a AEM Assets não exibe a representação original do ativo no modo de pré-visualização. Se você for um administrador, poderá usar sobreposições para configurar o AEM Assets para exibir as representações originais no modo de pré-visualização.
+   >Por padrão, [!DNL Experience Manager Assets] não exibe a representação original do ativo no modo de pré-visualização. Se você for um administrador, poderá usar sobreposições para configurar [!DNL Assets] para exibir as representações originais no modo de pré-visualização.
 
 1. Selecione uma representação para visualização ou exclua a representação.
 
@@ -223,7 +223,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    >
    >Se você selecionar uma representação no painel **[!UICONTROL Representações]**, a barra de ferramentas alterará o contexto e exibirá somente as ações relevantes para a representação. As opções, como o ícone Fazer upload da representação, não são exibidas. Para exibir essas opções na barra de ferramentas, navegue até a página de detalhes do ativo.
 
-   Você pode configurar as dimensões para a representação que deseja exibir na página de detalhes de um ativo de imagem ou vídeo. Com base nas dimensões especificadas, o AEM Assets exibe a representação com as dimensões exatas ou mais próximas.
+   Você pode configurar as dimensões para a representação que deseja exibir na página de detalhes de um ativo de imagem ou vídeo. Com base nas dimensões especificadas, os Ativos exibem a representação com as dimensões exatas ou mais próximas.
 
    Para configurar as dimensões de representação de uma imagem no nível de detalhes do ativo, sobreponha o nó `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configure o valor da propriedade largura. Configure o **[!UICONTROL tamanho (Longo) em KB]** da propriedade no lugar da largura para personalizar a representação na página Detalhes do ativo com base no tamanho da imagem. Para personalização baseada em tamanho, a propriedade `preferOriginal` atribui preferência ao original se o tamanho da representação correspondente for maior que o original.
 
@@ -270,7 +270,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
 ## Baixar ativos {#download-assets}
 
-Consulte [Baixar ativos de AEM](/help/assets/download-assets-from-aem.md).
+Consulte [Baixar ativos de [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Publicar ativos {#publish-assets}
 
@@ -323,7 +323,7 @@ Consulte [Baixar ativos de AEM](/help/assets/download-assets-from-aem.md).
 
 ## Grupo de usuários fechado {#closed-user-group}
 
-Um grupo de usuários fechado (CUG) é usado para limitar o acesso a pastas de ativos específicas publicadas da AEM. Se você criar um CUG para uma pasta, o acesso à pasta (incluindo os ativos e as subpastas da pasta) será restrito somente aos membros ou grupos atribuídos. Para acessar a pasta, eles devem fazer logon usando suas credenciais de segurança.
+Um grupo de usuários fechado (CUG) é usado para limitar o acesso a pastas de ativos específicas publicadas de [!DNL Experience Manager]. Se você criar um CUG para uma pasta, o acesso à pasta (incluindo os ativos e as subpastas da pasta) será restrito somente aos membros ou grupos atribuídos. Para acessar a pasta, eles devem fazer logon usando suas credenciais de segurança.
 
 Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você também pode configurar uma página de logon para a pasta.
 
@@ -332,22 +332,22 @@ Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você tam
 
    ![add_user](assets/add_user.png)
 
-1. Para exibir uma tela de logon quando os usuários acessarem a pasta, selecione a opção **[!UICONTROL Ativar]**. Em seguida, selecione o caminho para uma página de logon no AEM e salve as alterações.
+1. Para exibir uma tela de logon quando os usuários acessarem a pasta, selecione a opção **[!UICONTROL Ativar]**. Em seguida, selecione o caminho para uma página de logon em [!DNL Experience Manager] e salve as alterações.
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >Se você não especificar o caminho para uma página de logon, AEM exibirá a página de logon padrão na instância de publicação.
+   >Se você não especificar o caminho para uma página de logon, [!DNL Experience Manager] exibirá a página de logon padrão na instância de publicação.
 
 1. Publique a pasta e tente acessá-la da instância de publicação. Uma tela de login é exibida.
-1. Se você for um membro do CUG, insira suas credenciais de segurança. A pasta é exibida depois que AEM o autentica.
+1. Se você for um membro do CUG, insira suas credenciais de segurança. A pasta é exibida depois que [!DNL Experience Manager] o autentica.
 
 ## Pesquisar ativos {#search-assets}
 
 Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos por parte de usuários e comerciantes, ou para administração por administradores de DAM.
 
-Para pesquisas simples, avançadas e personalizadas para descobrir e usar os ativos mais apropriados, consulte [ativos de pesquisa em AEM](/help/assets/search-assets.md).
+Para pesquisas simples, avançadas e personalizadas para descobrir e usar os ativos mais apropriados, consulte [ativos de pesquisa em [!DNL Experience Manager]](/help/assets/search-assets.md).
 
 ## Ações rápidas {#quick-actions}
 
@@ -358,7 +358,7 @@ Os ícones de ação rápida estão disponíveis para um único ativo por vez. D
 
 ## Editar imagens {#editing-images}
 
-As ferramentas de edição na interface do AEM Assets permitem executar pequenos trabalhos de edição em ativos de imagem. É possível recortar, girar, virar e executar outras tarefas de edição em imagens. Também é possível adicionar mapas de imagem a ativos.
+As ferramentas de edição na interface [!DNL Experience Manager Assets] permitem executar pequenos trabalhos de edição em ativos de imagem. É possível recortar, girar, virar e executar outras tarefas de edição em imagens. Também é possível adicionar mapas de imagem a ativos.
 
 >[!NOTE]
 >
@@ -430,7 +430,7 @@ A linha do tempo permite que você visualização vários eventos para um item s
 
 Anotações são comentários ou notas explicativas adicionadas a imagens ou vídeos. As anotações fornecem aos comerciantes a capacidade de colaborar e deixar feedback sobre os ativos.
 
-As anotações de vídeo são compatíveis apenas em navegadores com formatos de vídeo compatíveis com HTML5. Os formatos de vídeo suportados pela AEM Assets dependem do navegador.
+As anotações de vídeo são compatíveis apenas em navegadores com formatos de vídeo compatíveis com HTML5. Os formatos de vídeo compatíveis com o Assets dependem do navegador.
 
 >[!NOTE]
 >
@@ -467,7 +467,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
    >É possível adicionar várias anotações antes de salvá-las.
 
 1. Toque/clique em **[!UICONTROL Fechar]** para sair do modo Anotar.
-1. Para visualização da notificação, faça logon no AEM Assets com as credenciais do Aaron MacDonald e clique no ícone **[!UICONTROL Notificações]** para visualização da notificação.
+1. Para visualização da notificação, faça logon nos Ativos com as credenciais do Aaron MacDonald e clique no ícone **[!UICONTROL Notificações]** para visualização da notificação.
 
    >[!NOTE]
    >
@@ -559,9 +559,9 @@ O controle de versão cria um instantâneo de ativos digitais em um ponto espec�
 
 A seguir estão os cenários nos quais você cria versões:
 
-* Você modifica uma imagem em um aplicativo diferente e faz upload para a AEM Assets. Uma versão da imagem é criada para que sua imagem original não seja substituída.
+* Você modifica uma imagem em um aplicativo diferente e faz upload para Ativos. Uma versão da imagem é criada para que sua imagem original não seja substituída.
 * Edite os metadados de um ativo.
-* Use AEM aplicativo de desktop para fazer check-out de um ativo existente e salvar suas alterações. Uma nova versão é criada sempre que o ativo é salvo.
+* Use [!DNL Experience Manager] aplicativo desktop para fazer check-out de um ativo existente e salvar suas alterações. Uma nova versão é criada sempre que o ativo é salvo.
 
 Você também pode ativar o controle automático de versão por meio de um fluxo de trabalho. Quando você cria uma versão para um ativo, os metadados e as execuções são salvos junto com a versão. As execuções são alternativas renderizadas das mesmas imagens, por exemplo, uma execução PNG de um arquivo JPEG carregado.
 
