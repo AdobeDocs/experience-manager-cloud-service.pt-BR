@@ -2,9 +2,9 @@
 title: Sobre Perfis de imagem do Dynamic Media e Perfis de vídeo
 description: Um Perfil de imagem ou um Perfil de vídeo é uma receita para quais opções se aplicam aos ativos que você carrega em uma pasta. Por exemplo, você pode especificar qual codificação de vídeo aplicar aos ativos de vídeo do Dynamic Media você carrega. Ou qual Perfil de imagem aplicar aos ativos de imagem do Dynamic Media para que eles sejam cortados corretamente.
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1301'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#ad
 
 >[!NOTE]
 >
->Se você estiver realizando uma migração em massa de ativos do Dynamic Media Classic para AEM, deverá habilitar o agente de replicação de Migração no servidor de Dynamic Media. Quando a migração estiver concluída, desative o agente.
+>Se você estiver realizando uma migração em massa de ativos do Dynamic Media Classic para Experience Manager, deverá habilitar o agente de replicação de Migração no servidor de Dynamic Media. Quando a migração estiver concluída, desative o agente.
 >
 >O agente de publicação de Migração deve estar desabilitado no servidor de Dynamic Media para que o fluxo de trabalho de Reprocessamento funcione como esperado.
 
@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Para reprocessar ativos do Dynamic Media em uma pasta**:
-1. Em AEM, na página Ativos, navegue até uma pasta de ativos de Mídia dinâmica que tenha um Perfil de Imagem ou um Perfil de Vídeo atribuído a ele e para a qual você deseja aplicar o Scene7 **: Reprocessar o fluxo de trabalho do Asset**,
+1. No Adobe Experience Manager, na página Ativos, navegue até uma pasta de ativos de Mídia dinâmica que tenha um Perfil de Imagem ou um Perfil de Vídeo atribuído a ele e para a qual você deseja aplicar o Scene7 **: Reprocessar o fluxo de trabalho do Asset**,
 
    As pastas que tiverem um Perfil de imagem ou um Perfil de vídeo já atribuídos a ele serão indicadas pela exibição do nome do perfil logo abaixo do nome da pasta na Visualização de placa.
 
@@ -81,11 +81,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Clique em **[!UICONTROL Start]** e, em seguida, clique em **[!UICONTROL Confirmar]**.
 
-   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página principal do console AEM, clique em **[!UICONTROL Ferramentas > Fluxo de trabalho]**. Na página Instâncias do fluxo de trabalho, selecione um fluxo de trabalho. Na barra de menus, clique em **[!UICONTROL Abrir histórico]**. Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho.
+   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página do console principal do Experience Manager, clique em **[!UICONTROL Ferramentas > Fluxo de trabalho]**. Na página Instâncias do fluxo de trabalho, selecione um fluxo de trabalho. Na barra de menus, clique em **[!UICONTROL Abrir histórico]**. Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho.
 
 ### Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento {#adjusting-load}
 
-(Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por tarefa. O tamanho ideal do lote é regido pelo tamanho médio do ativo e pelos tipos MIME de ativos nos quais o reprocessamento é executado. Um valor mais alto significa que você terá muitos arquivos em um único trabalho de reprocessamento. Dessa forma, o banner de processamento permanece em ativos AEM por mais tempo. No entanto, se o tamanho médio do arquivo for pequeno-1 MB ou menos-Adobe, você recomenda aumentar o valor para várias centenas, mas nunca mais que 1000. Se o tamanho médio do arquivo for grande, centenas de megabytes-Adobe recomenda que você reduza o tamanho do lote para até 10.
+(Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por tarefa. O tamanho ideal do lote é regido pelo tamanho médio do ativo e pelos tipos MIME de ativos nos quais o reprocessamento é executado. Um valor mais alto significa que você terá muitos arquivos em um único trabalho de reprocessamento. Dessa forma, o banner de processamento permanece nos ativos do Experience Manager por mais tempo. No entanto, se o tamanho médio do arquivo for pequeno-1 MB ou menos-Adobe, você recomenda aumentar o valor para várias centenas, mas nunca mais que 1000. Se o tamanho médio do arquivo for grande, centenas de megabytes-Adobe recomenda que você reduza o tamanho do lote para até 10.
 
 **Como opção, ajuste o tamanho do lote do fluxo de trabalho de reprocessamento**
 
@@ -137,7 +137,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     ![Saving the new property](/help/security/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
 
 -->
