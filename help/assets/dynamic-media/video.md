@@ -2,9 +2,9 @@
 title: Vídeo
 description: Saiba como trabalhar com vídeo no Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '10056'
+source-wordcount: '10081'
 ht-degree: 10%
 
 ---
@@ -146,7 +146,7 @@ Para gerenciar um único vídeo e Conjuntos de vídeos adaptáveis, há suporte 
 * Organize, navegue e pesquise vídeos com suporte total a metadados para o gerenciamento eficiente dos ativos de vídeo.
 * Forneça Conjuntos de vídeo adaptáveis para a Web, desktops e dispositivos móveis, incluindo iPhone, iPad, Android, Blackberry e telefone Windows.
 
-O streaming de vídeo adaptativo é suportado em várias plataformas iOS. Consulte [Guia de referência de visualizadores do Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+O streaming de vídeo adaptativo é suportado em várias plataformas iOS. Consulte [Guia de Referência do Visualizador de Mídia Dinâmica](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 O Dynamic Media suporta reprodução de vídeo móvel para vídeo MP4 H.264. Você pode encontrar dispositivos Blackberry compatíveis com este formato de vídeo no seguinte endereço: [Formatos de vídeo suportados no Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,7 +162,7 @@ Você pode encontrar dispositivos Windows compatíveis com este formato de víde
 
 Consulte [Exemplo de reprodução de vídeo dinâmica](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
 
-Consulte também [Visualizadores para AEM e Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) e [Visualizadores para AEM ativos apenas](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) no Guia de Referência do Adobe Scene7 Viewers.
+Consulte também [Visualizadores para AEM Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) e [Visualizadores para AEM Assets apenas](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) no [Guia de Referência do Visualizador de Mídia Dinâmico](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ## Melhores práticas: Uso do visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -174,7 +174,7 @@ No lado da reprodução do visualizador, ele detecta automaticamente a capacidad
 
 Ao combinar em um único player a capacidade de projetar os componentes de reprodução usando HTML5 e CSS, ter reprodução integrada e usar streaming adaptável e progressivo dependendo da capacidade do navegador, você estende o alcance do conteúdo de mídia avançada para usuários de desktop e móveis e garante uma experiência de vídeo otimizada.
 
-Consulte também [Sobre Visualizadores HTML5](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) no Guia de Referência do Adobe Scene7 Viewers.
+Consulte também [Visualizadores somente para AEM Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) no [Guia de Referência do Visualizador de Mídia Dinâmica](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ### Reprodução de vídeo em computadores desktop e dispositivos móveis usando o visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -191,7 +191,7 @@ HLS é um padrão da Apple para streaming de vídeo adaptável que ajusta automa
 
 O vídeo progressivo é fornecido por meio do download e armazenamento local do vídeo no sistema de desktop ou dispositivo móvel de um usuário.
 
-A tabela a seguir descreve o dispositivo, o navegador e o método de reprodução de vídeos em computadores desktop e dispositivos móveis usando o Scene7 Video Viewer.
+A tabela a seguir descreve o dispositivo, o navegador e o método de reprodução de vídeos em computadores desktop e dispositivos móveis usando o [Visualizador de vídeo HTML5 do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video).
 
 <table>
  <tbody>
@@ -355,7 +355,7 @@ Esta tabela descreve a taxa de dados de velocidades de conexão típicas.
 
 ### Resolução {#resolution}
 
-**Resolução **descreve a altura e a largura de um arquivo de vídeo em pixels. A maioria dos vídeos de origem é armazenada em alta resolução (por exemplo, 1920 x 1080). Para fins de streaming, o vídeo de origem é compactado em uma resolução menor (640 x 480 ou menor).
+**A** resolução descreve a altura e a largura de um arquivo de vídeo em pixels. A maioria dos vídeos de origem é armazenada em alta resolução (por exemplo, 1920 x 1080). Para fins de streaming, o vídeo de origem é compactado em uma resolução menor (640 x 480 ou menor).
 
 A resolução e a taxa de dados são dois fatores totalmente ligados que determinam a qualidade do vídeo. Para manter a mesma qualidade de vídeo, quanto maior o número de pixels em um arquivo de vídeo (quanto maior a resolução), maior deve ser a taxa de dados. Por exemplo, considere o número de pixels por quadro em uma resolução 320 x 240 e um arquivo de vídeo de resolução 640 x 480:
 
@@ -983,13 +983,13 @@ Especifique o intervalo de datas inicial e final para o qual deseja obter dados 
 
 1. Na tabela que lista os vídeos publicados principais, toque no nome de um vídeo para reproduzir o vídeo e também veja o relatório de retenção de audiência (suspenso) do vídeo.
 
-### Visualização de relatórios de vídeo com base em um visualizador de vídeo criado usando o Scene7 HMTL5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Exibir relatórios de vídeo com base em um visualizador de vídeo criado usando o SDK do visualizador HTML5 do Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Se você estiver usando um visualizador de vídeo pronto para uso fornecido pelo Dynamic Media, ou se tiver criado uma predefinição de visualizador personalizado com base em um visualizador de vídeo pronto para uso, nenhuma etapa adicional será necessária para visualização de relatórios de vídeo. Entretanto, se você tiver criado seu próprio visualizador de vídeo com base no SDK do visualizador HTML5 da Scene7, use as seguintes etapas para garantir que o visualizador de vídeo esteja enviando eventos de rastreamento para os Relatórios de vídeo do Dynamic Media.
+Se você estiver usando um visualizador de vídeo pronto para uso fornecido pelo Dynamic Media, ou se tiver criado uma predefinição de visualizador personalizado com base em um visualizador de vídeo pronto para uso, nenhuma etapa adicional será necessária para visualização de relatórios de vídeo. Entretanto, se você tiver criado seu próprio visualizador de vídeo com base no SDK do visualizador HTML5 do Dynamic Media, use as seguintes etapas para garantir que o visualizador de vídeo esteja enviando eventos de rastreamento para os Relatórios de vídeo do Dynamic Media.
 
-Use a Referência de visualizadores do Scene7 e o SDK de visualizadores do Scene7 HTML5 para criar seus próprios visualizadores de vídeo.
+Use a Referência de visualizadores de Dynamic Media e o SDK de visualizadores HTML5 de Dynamic Media para criar seus próprios visualizadores de vídeo.
 
-Consulte [Guia de referência de visualizadores do Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Consulte [Guia de Referência do Visualizador de Mídia Dinâmica](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
 
 <!-- 
 
@@ -1001,7 +1001,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 -->
 
-Para visualização de relatórios de vídeo com base em um visualizador de vídeo criado usando o Scene7 HTML5 Viewer SDK:
+**Para visualização de relatórios de vídeo com base em um visualizador de vídeo criado usando o SDK do visualizador HTML5 do Dynamic Media:**
 
 1. Navegue até qualquer ativo de vídeo publicado.
 1. Próximo ao canto superior esquerdo da página do ativo, na lista suspensa, selecione **[!UICONTROL Visualizadores]**.
@@ -1061,9 +1061,9 @@ O player de vídeo que você usa deve suportar a exibição de legendas.
 
 O Dynamic Media tem a capacidade de converter arquivos de legenda em formato JSON (JavaScript Object Notation). Essa conversão significa que você pode incorporar o texto JSON em uma página da Web como uma transcrição oculta, mas completa, do vídeo. Os mecanismos de pesquisa podem rastrear e indexar o conteúdo para tornar os vídeos mais facilmente detectáveis e fornecer aos clientes detalhes adicionais sobre o conteúdo do vídeo.
 
-Consulte [Servindo conteúdo estático (não imagem)](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) na *Ajuda da API de disponibilização de imagens da Scene7* para obter mais informações sobre como usar a função JSON em um URL.
+Consulte [Servindo conteúdo estático (não imagem)](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) para obter mais informações sobre como usar a função JSON em um URL.
 
-**Para adicionar legendas ou legendas ao vídeo**
+**Para adicionar legendas ou legendas ao vídeo:**
 
 1. Use um aplicativo ou serviço de terceiros para criar sua legenda/arquivo de legenda.
 
