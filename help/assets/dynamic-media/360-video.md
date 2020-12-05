@@ -2,9 +2,9 @@
 title: Vídeo 360/VR
 description: Saiba como trabalhar com o 360 e o Vídeo Virtual Reality (VR) na Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit
 
 ## Fazer upload de ativos para uso com o visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 
-Os ativos de vídeo 360 que são carregados no AEM são rotulados como **Multimídia** em uma página Ativo, similar ao ativo de vídeo normal.
+Os ativos de vídeo 360 que são carregados no Experience Manager são rotulados como **Multimídia** em uma página Ativo, similar ao ativo de vídeo normal.
 
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *select-previewUm ativo de vídeo 360 carregado visto na visualização de cartão. O ativo é rotulado como Multimídia.*
@@ -98,7 +98,7 @@ Consulte também [Edição de predefinições do visualizador](/help/assets/dyna
 Quando estiver satisfeito com o vídeo 360, você poderá publicá-lo.
 
 Consulte [Incorporar o Visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
-Consulte [Vincular URLs ao seu aplicativo da Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
+Consulte [Vincular URLs ao seu aplicativo da Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Sites de Experience Manager.
 Consulte [Adicionar ativos de mídia dinâmica às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **Para a pré-visualização 360 vídeos**
@@ -134,5 +134,5 @@ Você precisa publicar o vídeo 360 para usá-lo. A publicação de um vídeo 36
 
 Consulte [Publicar ativos de mídia dinâmica](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar vídeos 360.
 Consulte também [Incorporar o Visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
-Consulte também [Vincular URLs ao seu aplicativo da Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
+Consulte também [Vincular URLs ao seu aplicativo da Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Sites de Experience Manager.
 Consulte também [Adicionar Ativos de Mídia Dinâmica às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
