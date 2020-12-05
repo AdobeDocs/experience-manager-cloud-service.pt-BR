@@ -2,9 +2,9 @@
 title: Gerenciar predefinições do visualizador
 description: Como criar e gerenciar predefinições do visualizador
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
 workflow-type: tm+mt
-source-wordcount: '4255'
+source-wordcount: '4258'
 ht-degree: 17%
 
 ---
@@ -51,7 +51,7 @@ Você pode adicionar, editar, excluir, publicar, cancelar a publicação e pré-
 
 Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes você deseja uma página da Web que forneça um link que abra o Visualizador HTML5 em uma janela separada do navegador. Em outros casos, pode ser necessário incorporar o Visualizador HTML5 diretamente na página de hospedagem. No último caso, a página da Web pode ter um layout estático. Ou pode ser &quot;responsivo&quot; e exibido de forma diferente em dispositivos diferentes ou para tamanhos diferentes de janelas do navegador. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos para uso que acompanham o Dynamic Media suportam páginas da Web estáticas e páginas da Web responsivas projetadas.
 
-Consulte [Biblioteca de imagens responsivas](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) na *Ajuda da API de disponibilização de imagens da Scene7* para obter mais informações sobre como incorporar visualizadores responsivos às suas páginas da Web.
+Consulte [Biblioteca de imagens estáticas responsivas](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) na *Ajuda da API de disponibilização e renderização de imagens de Dynamic Media* para obter mais informações sobre como incorporar visualizadores responsivos às suas páginas da Web.
 
 >[!NOTE]
 >
