@@ -4,9 +4,9 @@ description: Entenda o conceito de coleção no Adobe Experience Manager Assets.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2393'
 ht-degree: 20%
 
 ---
@@ -73,7 +73,7 @@ Você pode arrastar ativos da interface do usuário Ativos para uma coleção. V
 Uma coleção inteligente usa um critério de pesquisa para preencher dinamicamente ativos. Você pode criar uma coleção inteligente usando apenas arquivos e não pastas ou arquivos e pastas.
 
 1. Navegue até a interface do usuário do Assets e toque/clique no ícone **[!UICONTROL Pesquisar]**.
-1. Digite a palavra-chave de pesquisa na caixa Pesquisa Omni e pressione Enter. Toque/clique no ícone GlobalNav para exibir o painel Filtros e aplicar um filtro de pesquisa do painel Pesquisar.
+1. Digite a palavra-chave de pesquisa na caixa Pesquisa Omni e selecione `Enter`. Toque/clique no ícone GlobalNav para exibir o painel Filtros e aplicar um filtro de pesquisa do painel Pesquisar.
 1. Na lista **[!UICONTROL Arquivos e pastas]**, selecione **[!UICONTROL Arquivos]**.
 1. Toque/clique em **[!UICONTROL Salvar coleção inteligente]**.
 1. Especifique um nome para a coleção. Selecione **[!UICONTROL Public]** para adicionar o grupo Usuários DAM com a função Visualizador à coleção inteligente.
@@ -103,7 +103,7 @@ Você pode adicionar ativos a uma coleção que contenha uma lista de ativos ou 
 As coleções inteligentes são criadas salvando uma pesquisa para que você possa alterar seu conteúdo modificando os parâmetros de pesquisa de [pesquisa salva](#saved-searches).
 
 1. Na interface do usuário do Assets, toque/clique no ícone **[!UICONTROL Pesquisar]** da barra de ferramentas.
-1. Com o cursor na caixa Omnisearch, pressione a tecla Enter.
+1. Com o cursor na caixa Omnisearch, selecione a tecla `Enter`.
 1. Toque/clique no ícone GlobalNav para exibir o painel Filtros.
 1. Na lista **[!UICONTROL Pesquisas salvas]**, selecione a coleção inteligente que deseja modificar. O painel Pesquisar exibe os filtros configurados para a pesquisa salva.
 1. Na lista **[!UICONTROL Arquivos e pastas]**, selecione **[!UICONTROL Arquivos]**.
@@ -238,7 +238,7 @@ Para excluir pesquisas salvas, siga estas etapas:
 
 1. Na interface do usuário do Assets, toque/clique no ícone de pesquisa na barra de ferramentas.
 
-1. Com o cursor no campo Omnisearch, pressione a tecla Enter.
+1. Com o cursor no campo Omnisearch, selecione a tecla `Enter`.
 1. Clique ou toque no ícone GlobalNav para exibir o painel Filtros.
 1. Na lista **[!UICONTROL Pesquisas salvas]**, toque/clique em **[!UICONTROL Excluir]** ao lado da coleção inteligente que deseja excluir.
 1. Na caixa de diálogo, toque/clique em **[!UICONTROL Excluir]** para excluir a pesquisa salva.
@@ -249,7 +249,7 @@ Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a c
 
 1. No console Coleções, selecione uma coleção na qual deseja executar um fluxo de trabalho.
 1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** na lista.
-1. Na linha do tempo, clique ou toque no ícone Cursor na parte inferior e, em seguida, toque/clique em **[!UICONTROL Iniciar fluxo de trabalho]**.
+1. Na linha do tempo, selecione ou toque no ícone Cursor na parte inferior e, em seguida, toque/clique em **[!UICONTROL Fluxo de trabalho do Start]**.
 1. Na seção **[!UICONTROL Iniciar fluxo de trabalho]**, selecione um modelo de fluxo de trabalho da lista. Por exemplo, selecione o modelo **[!UICONTROL Atualizar ativo DAM]**.
 1. Insira um título para o fluxo de trabalho e toque/clique em **[!UICONTROL Start]**.
 1. Na caixa de diálogo, toque/clique em **[!UICONTROL Prosseguir]**. O fluxo de trabalho é executado em todos os ativos na coleção.
