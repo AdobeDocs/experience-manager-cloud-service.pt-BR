@@ -2,7 +2,7 @@
 title: Pesquisar aspectos.
 description: Este artigo descreve como criar, modificar e usar aspectos de pesquisa em AEM.
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2377'
 ht-degree: 23%
@@ -33,9 +33,9 @@ Para pesquisas de texto completo, adicione o predicado `Fulltext` ao formulário
 
 1. Na página Editar pesquisa do Forms, arraste um predicado da guia **[!UICONTROL Selecionar Predicado]** para o painel principal. Por exemplo, arraste **[!UICONTROL Predicado de propriedade]**.
 
-   ![Pressione e mova um predicado para personalizar os filtros de pesquisa](assets/drag_predicate.png)
+   ![Selecionar e mover um predicado para personalizar os filtros de pesquisa](assets/drag_predicate.png)
 
-   *Figura: Pressione e mova um predicado para personalizar os filtros de pesquisa.*
+   *Figura: Selecione e mova um predicado para personalizar os filtros de pesquisa.*
 
 1. Na guia Configurações, digite um rótulo de campo, um texto de espaço reservado e uma descrição para o predicado. Especifique um nome válido para a propriedade de metadados que deseja associar ao predicado. O rótulo do cabeçalho na guia Configurações identifica o tipo do predicado selecionado.
 
