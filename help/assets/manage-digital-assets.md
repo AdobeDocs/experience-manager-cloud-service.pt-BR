@@ -4,9 +4,9 @@ description: Saiba mais sobre vários métodos de edição e gerenciamento de at
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '4408'
+source-wordcount: '4407'
 ht-degree: 12%
 
 ---
@@ -95,7 +95,7 @@ Para pré-visualização de um ativo, siga estas etapas.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. No campo **[!UICONTROL Tags]**, selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione a tecla Enter. A nova tag é salva em [!DNL Experience Manager].
+1. No campo **[!UICONTROL Tags]**, selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e selecione a tecla `Enter`. A nova tag é salva em [!DNL Experience Manager].
 
    O YouTube requer Tags para publicar e ter um link para o YouTube (se for possível encontrar um link adequado).
 
@@ -549,7 +549,7 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
    Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor, o tamanho e o estilo da fonte, a cor de plano de fundo dos comentários e status, abra a **[!UICONTROL Configuração do PDF de anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/manage-digital-assets.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-248.png)
+   ![chlimage_1-247](assets/chlimage_1-248.png)
 
    Retorne ao arquivo PDF renderizado e atualize-o. O PDF atualizado reflete as alterações feitas.
 
