@@ -2,10 +2,10 @@
 title: 'Pesquisar  '
 description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteú
 
 A pesquisa está disponível na barra de ferramentas superior:
 
-![Botão Pesquisar](/help/sites-cloud/authoring/assets/search-button.png)
+![Ícone Pesquisar](/help/sites-cloud/authoring/assets/search-icon.png)
 
 Com o painel de pesquisa, você pode:
 
