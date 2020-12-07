@@ -2,9 +2,9 @@
 title: Conversor de índice
 description: Conversor de índice
 translation-type: tm+mt
-source-git-commit: 21bd9392d913369a5e8e0ebd9badbbe30fd4bba3
+source-git-commit: adfc453729b88a9cc457783806eb7b4d69150b21
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,18 @@ O Index Converter permite que AEM desenvolvedores migrem as Definições de Índ
 >[!NOTE]
 >O Conversor de índice só transforma *lucene* tipo Definições de índice de Oak personalizado que estão presentes em `/apps` ou `/oak:index`. Ele não transforma índices de tipo *lucene* que são criados para `nt:base`.
 
+Há duas maneiras de criar Definições de índice de Oak personalizado:
+
+* `under /apps` (por meio de qualquer pacote de conteúdo personalizado)
+* diretamente sob o caminho `/oak:index`
+
+>[!NOTE]
+>Consulte [Verifique o índice Oak](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) para saber como definir e criar definições Oak
+
 ## Usando o Conversor de índice {#using-index-converter}
 
-Consulte **[Recurso Git: aem-cs-source-migration-index-converter](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** para saber como instalar e usar o plug-in.
+>[!NOTE]
+>Embora seja recomendável usar a ferramenta Conversor de índice por meio do [plug-in AIO CLI para migração de origem](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration), também é possível executá-la separadamente.
+
+Consulte **[Recurso Git: aem-cs-source-migration-index-converter](https://git.corp.adobe.com/vavarshn/aem-cloud-service-source-migration/blob/master/packages/index-converter/README.md)** para saber como instalar e usar o plug-in.
 
