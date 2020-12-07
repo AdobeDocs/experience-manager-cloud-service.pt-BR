@@ -2,9 +2,9 @@
 title: Adicionar um certificado SSL - Gerenciar certificados SSL
 description: Adicionar um certificado SSL - Gerenciar certificados SSL
 translation-type: tm+mt
-source-git-commit: e27e5302802e68dce2a5713626950896bb35420a
+source-git-commit: b6911f0b8674550713bd4ec1e34be5d0a14cc427
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 # Adicionando um certificado SSL {#adding-an-ssl-certificate}
 
 >[!NOTE]
->Um certificado demora alguns dias para ser provisionado e recomenda-se que o certificado seja provisionado com meses de antecedência. Ir para Como obter um certificado SSL para saber mais.INSERT LINK
+>AEM como Cloud Service só aceitará certificados OV(Organization Validation) ou EV(Extended Validation). Certificados DV(Domain Validation) não serão aceitos.
+
+Um certificado demora alguns dias para ser provisionado e recomenda-se que o certificado seja provisionado com meses de antecedência. Consulte Obtendo um certificado SSL para obter mais detalhes.
 
 ## Formato de certificado {#certificate-format}
 
-Os arquivos SSL devem estar no formato PEM para serem instalados no Cloud Manager. As extensões de arquivo comuns que estão no formato PEM incluem .pem, .crt, .cer e .cert.
+Os arquivos SSL devem estar no formato PEM para serem instalados no Cloud Manager. As extensões de arquivo comuns que estão no formato PEM incluem `.pem,`.`crt`,  `.cer`e  `.cert`.
 
 Siga as etapas abaixo para converter o formato dos arquivos SSL em PEM:
 
@@ -37,21 +39,22 @@ Siga as etapas abaixo para converter o formato dos arquivos SSL em PEM:
 
 >[!NOTE]
 >* Um usuário deve estar na função Proprietário de Negócios ou Gerenciador de Implantação para instalar um certificado SSL no Cloud Manager.
->* A qualquer momento, o Cloud Manager permitirá um máximo de 5 certificados SSL que podem ser associados a um ou mais ambientes em seu Programa, mesmo se um certificado expirar. No entanto, a interface do usuário do Cloud Manager permitirá que até 50 certificados SSL sejam instalados no programa com essa restrição.
+>* A qualquer momento, o Cloud Manager permitirá um máximo de 10 certificados SSL que podem ser associados a um ou mais ambientes em seu Programa, mesmo se um certificado expirar. No entanto, a interface do usuário do Cloud Manager permitirá que até 50 certificados SSL sejam instalados no programa com essa restrição.
 
+
+Siga as etapas abaixo para adicionar um certificado:
 
 1. Faça logon no Cloud Manager.
 1. Navegue até a tela Ambientes na página Visão geral.
-1. Navegue até a tela Certificados SSL no menu de navegação esquerdo. Uma tabela com detalhes de quaisquer certificados SSL existentes será exibida nesta tela.INSERIR IMAGEM
+1. Navegue até a tela Certificados SSL no menu de navegação esquerdo. Uma tabela com detalhes de quaisquer certificados SSL existentes será exibida nessa tela.
 1. Selecione o botão **Adicionar certificado** para iniciar um assistente.
-1. Digite um nome para o seu certificado. Esse pode ser qualquer nome que o ajude a referenciar seu certificado facilmente.
-1. Cole o conteúdo Certificado, Chave privada e Cadeia em seus respectivos campos. Use o ícone colar à direita da caixa de entrada.
-1. Selecione **Salvar**.
+   1. Forneça um nome para seu certificado. Esse pode ser qualquer nome que o ajude a referenciar seu certificado facilmente.
+   1. Cole o conteúdo Certificado, Chave privada e Cadeia em seus respectivos campos. Use o ícone colar à direita da caixa de entrada.
 
-   >[!NOTE]
-   >Quaisquer erros detectados serão exibidos. Você deve corrigir todos os erros antes que seu certificado possa ser salvo. Consulte Erros de link INSERT de certificado para saber mais sobre como lidar com erros comuns.
+      >[!NOTE]
+      >Os três campos não são opcionais e devem ser incluídos.
+1. Depois de enviar seu certificado, ele será exibido como uma nova linha na tabela.
 
-   Depois de enviar seu certificado, ele será exibido como uma nova linha na tabela.
 
 ## Erros de certificado {#certificate-errors}
 
