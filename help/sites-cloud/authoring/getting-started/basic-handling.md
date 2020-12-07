@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
 translation-type: tm+mt
-source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * [Pesquisar](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Botão Pesquisar](/help/sites-cloud/authoring/assets/search-button.png)
+   ![Ícone Pesquisar](/help/sites-cloud/authoring/assets/search-icon.png)
 
    Você também pode usar a [tecla de atalho](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
 
