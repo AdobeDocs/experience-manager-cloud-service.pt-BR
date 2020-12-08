@@ -2,10 +2,10 @@
 title: Lançamentos
 description: Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma versão futura. Eles permitem que você faça alterações prontas para publicação futura, mantendo ao mesmo tempo suas páginas atuais
 translation-type: tm+mt
-source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 90%
+source-wordcount: '878'
+ht-degree: 83%
 
 ---
 
@@ -84,22 +84,31 @@ Lançamentos permitem que você:
 >
 >Entre em contato com o administrador do sistema se você tiver algum problema.
 
-### O console Lançamentos {#the-launches-console}
-
-O console Lançamentos fornece uma visão geral dos seus lançamentos e permite que você realize ações naqueles listados. O console pode ser acessado das seguintes maneiras:
-
-* No console **Ferramentas**: **Ferramentas**, **Sites**, **Lançamentos**.
-
-* Ou diretamente com `https://<host>:<port>/libs/launches/content/launches.html`
-
 ## Lançamentos em Referências (console Sites) {#launches-in-references-sites-console}
 
 1. No console **Sites**, navegue até a origem dos lançamentos.
 1. Abra o painel **Referências** e selecione a página de origem.
-1. Selecione **Lançamentos**. Os lançamentos existentes serão listados:
+1. Selecione **Inicializações**, as inicializações existentes serão listadas, juntamente com o acesso ao **Console de Inicializações**:
 
    ![Referências de inicializações no console de sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Toque/clique no lançamento apropriado. A lista de ações possíveis será exibida:
 
    ![Ações a serem iniciadas no console de sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## O console Lançamentos {#the-launches-console}
+
+O console Lançamentos fornece uma visão geral dos seus lançamentos e permite que você realize ações naqueles listados. O console pode ser acessado das seguintes maneiras:
+
+* No console **Ferramentas**: **Ferramentas**, **Sites**, **Lançamentos**.
+
+* **Inicializações** Consolide a parte inferior da seção  **** Inicialização do painel  **** Referências ao navegar pelo conteúdo de origem no console Sites.
+
+   ![Inicia o Console em Referências de inicializações no console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* O botão **Inicializações** na parte superior direita, ao navegar pelo conteúdo de inicialização no console Sites:
+
+   ![Opção Inicializações no console Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* Ou diretamente; por exemplo, com:
+   `https://<host>:<port>/libs/launches/content/launches.html`
