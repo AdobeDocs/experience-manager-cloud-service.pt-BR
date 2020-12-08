@@ -2,9 +2,9 @@
 title: Gerenciamento de páginas no Launch
 description: 'É possível criar novas páginas no Launch. Também é possível excluir páginas indesejadas. '
 translation-type: tm+mt
-source-git-commit: 1a753aa9132a6de73e093caa1f682a78f29348c4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,8 @@ Todos esses pontos de entrada abrirão a inicialização no console Sites, onde 
 * Selecionar páginas existentes e executar ações; por exemplo, **Editar**, abra **Propriedades**, **Bloquear**, **Copiar**, **Colar** e **Eliminar**
 
    ![Navegar para inicialização no console Sites a partir de Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* Use o painel **Referências** para retornar às páginas **Iniciar Origem**:
+   ![Console Sites - Iniciar origem](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## Adicionar páginas ao lançamento {#add-pages-to-launch}
 
