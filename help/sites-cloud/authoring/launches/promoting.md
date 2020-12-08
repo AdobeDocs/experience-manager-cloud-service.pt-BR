@@ -2,10 +2,10 @@
 title: Promoção de lançamentos
 description: 'Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar. '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 83%
+source-wordcount: '799'
+ht-degree: 80%
 
 ---
 
@@ -47,11 +47,14 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 É possível promover os lançamentos no console de **Sites** ou de **Lançamentos**:
 
 1. Abrir:
-   * O console **Sites**:
+   * O console **Sites** ao navegar pelas páginas de origem:
       1. Abra o painel [referências](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) e selecione a página de origem necessária usando [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou selecione e abra o painel de referências, a ordem não é importante). Todas as referências serão exibidas.
       1. Selecione **Lançamentos** (por exemplo, Lançamentos [1]) para exibir uma lista de lançamentos específica.
       1. Selecione o lançamento específico para mostrar as ações disponíveis.
       1. Selecione **Promover lançamento** para abrir o assistente.
+   * O console **Sites** ao navegar pelas páginas de inicialização:
+      1. Selecione a página de inicialização necessária usando [modo de seleção](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. A ação **Promover** estará disponível na barra de ferramentas.
    * O console **Inicializa**:
       1. Selecione seu lançamento (toque/clique na miniatura).
       1. Selecione **Promover**.
