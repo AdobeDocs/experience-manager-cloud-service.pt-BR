@@ -2,10 +2,10 @@
 title: Criação de lançamentos
 description: É possível criar um lançamento para permitir a atualização de uma nova versão das páginas da Web existentes para ativação futura.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 87%
+source-wordcount: '998'
+ht-degree: 85%
 
 ---
 
@@ -120,13 +120,15 @@ Criar um lançamento aninhado (um lançamento dentro de outro) permite criar um 
 Criar uma inicialização aninhada do console **Inicializações** é basicamente o mesmo que criar qualquer outra forma de inicialização, com a exceção de que você precisa navegar até a ramificação de inicializações `/content/launches`:
 
 1. No console **Lançamentos** selecione **Criar**.
-1. Selecione **Adicionar páginas** e navegue até a ramificação de inicializações especificando `/content/launches` no filtro. Selecione a inicialização necessária e confirme com **Selecionar**:
+1. Selecione **Adicionar páginas** e navegue até a ramificação de inicializações especificando `/content/launches` no painel **Filtros**. Selecione a inicialização necessária e confirme com **Selecionar**:
 
    ![Criação de uma inicialização aninhada](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. Continue com **Próximo** e preencha as **Propriedades** como faria com qualquer outro lançamento.
+1. Continue com **Próximo**.
 
-   ![Selecionar origem para inicialização aninhada](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. Preencha as **Propriedades** como em qualquer outra inicialização.
+
+1. Conclua com **Create**.
 
 #### Criação de um lançamento aninhado - Console Sites {#creating-a-nested-launch-sites-console}
 
