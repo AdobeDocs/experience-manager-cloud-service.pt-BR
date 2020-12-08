@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
+source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2239'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ O conteúdo é replicado de Autor para Publicar por meio de um mecanismo de sub-
 
 Para desenvolvimento local, as entradas de registros são gravadas em arquivos locais na pasta `/crx-quickstart/logs`.
 
-Nos ambientes da Cloud, os desenvolvedores podem baixar os logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+Em ambientes da Cloud, os desenvolvedores podem baixar os logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **Configuração do nível de log**
 
@@ -122,7 +122,7 @@ Os níveis de log são os seguintes:
 
 Os despejos de processos em ambientes da Cloud são coletados de forma contínua, mas não podem ser baixados de maneira automática no momento. Enquanto isso, entre em contato com AEM suporte se os despejos por thread forem necessários para depurar um problema, especificando a janela de hora exata.
 
-## CRX/DE Lite e console do sistema {#crxde-lite-and-system-console}
+## CRX/DE Lite e Developer Console {#crxde-lite-and-developer-console}
 
 ### Desenvolvimento local {#local-development}
 
@@ -132,7 +132,7 @@ Observe que no desenvolvimento local (usando o recurso de início rápido pronto
 
 ### AEM como ferramentas de desenvolvimento de Cloud Service {#aem-as-a-cloud-service-development-tools}
 
-Os clientes podem acessar a lista CRXDE no ambiente de desenvolvimento, mas não no estágio ou na produção. O repositório imutável (`/libs`, `/apps`) não pode ser gravado no tempo de execução, portanto, tentar fazer isso resultará em erros.
+Os clientes podem acessar a lista CRXDE no ambiente de desenvolvimento da camada do autor, mas não no estágio ou na produção. O repositório imutável (`/libs`, `/apps`) não pode ser gravado no tempo de execução, portanto, tentar fazer isso resultará em erros.
 
 Um conjunto de ferramentas para depurar AEM como ambientes de desenvolvedor de Cloud Service no Developer Console para ambientes dev, stage e production. O url pode ser determinado ajustando-se as urls do serviço Autor ou Publicação da seguinte maneira:
 
@@ -179,7 +179,7 @@ Mediante solicitação, o AEM como Cloud Service fornecerá um endereço IP est�
 
 Esse endereço IP dedicado pode melhorar a segurança ao integrar-se com fornecedores SaaS (como um fornecedor de CRM) ou outras integrações fora do AEM como uma Cloud Service que oferta uma lista de permissões de endereços IP. Ao adicionar o endereço IP dedicado à lista de permissões, ele garante que somente o tráfego do Cloud Service do cliente AEM possa fluir para o serviço externo. Além do tráfego de outros IPs permitidos.
 
-Sem o recurso de endereço IP dedicado ativado, o tráfego que sai do AEM como um Cloud Service continua por meio de um conjunto de IPs compartilhados com outros clientes.
+Sem o recurso de endereço IP dedicado ativado, o tráfego que sai do AEM como Cloud Service continua por meio de um conjunto de IPs compartilhados com outros clientes.
 
 ### Configuração {#configuration}
 
