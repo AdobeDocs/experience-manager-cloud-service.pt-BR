@@ -1,8 +1,8 @@
 ---
 title: Conjuntos de rotação
-description: Saiba como trabalhar com conjuntos de rotação no Dynamic Media
+description: Saiba como trabalhar com conjuntos de rotação no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 12%
@@ -14,7 +14,7 @@ ht-degree: 12%
 
 Um Conjunto de rotação simula o ato real de girar um objeto para examiná-lo. Os Conjuntos de rotação possibilitam a visualização de itens de qualquer ângulo, obtendo os detalhes visuais principais de qualquer ângulo.
 
-Um conjunto de rotação simula uma experiência de visualização de 360 graus. O Dynamic Media oferta Conjuntos de rotação de eixo único nos quais os visualizadores podem girar um item. Além disso, os usuários podem aplicar zoom e deslocar qualquer uma das visualizações com apenas alguns cliques do mouse. Dessa forma, os usuários podem examinar um item mais detalhadamente de um ponto de vista específico.
+Um conjunto de rotação simula uma experiência de visualização de 360 graus. Conjuntos de rotação de eixo único do Dynamic Media oferta nos quais os visualizadores podem girar um item. Além disso, os usuários podem aplicar zoom e deslocar qualquer uma das visualizações com apenas alguns cliques do mouse. Dessa forma, os usuários podem examinar um item mais detalhadamente de um ponto de vista específico.
 
 Os Conjuntos de rotação são designados por um banner com a palavra **[!UICONTROL SPINSET]**. Além disso, se o Conjunto de rotação for publicado, a data de publicação, indicada pelo ícone **[!UICONTROL Mundo]**, estará no banner juntamente com a última data de modificação, indicada pelo ícone **[!UICONTROL Lápis]** é exibido.
 
@@ -98,7 +98,7 @@ Esta seção descreve como criar Conjuntos de rotação.
 >
 >Também é possível criar conjuntos de rotação automaticamente por meio de [predefinições de conjuntos em lotes](/help/assets/dynamic-media/config-dm.md). **Importante:** os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da ingestão de ativos.
 >
->Consulte &quot;Criando predefinições de conjuntos de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação&quot; em [Configurando Mídia dinâmica](/help/assets/dynamic-media/config-dm.md).
+>Consulte &quot;Criando predefinições de conjuntos de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação&quot; em [Configurando o Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 
 >[!NOTE]
 >
