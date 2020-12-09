@@ -1,10 +1,10 @@
 ---
 title: Práticas recomendadas para otimização da qualidade de imagens
-description: Saiba mais sobre as práticas recomendadas para otimizar a qualidade de imagem no Dynamic Media
+description: Saiba mais sobre as práticas recomendadas que você pode usar no Dynamic Media para otimizar a qualidade de seus ativos de imagem.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1497'
 ht-degree: 5%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 5%
 
 A otimização da qualidade da imagem pode ser um processo demorado, já que muitos fatores contribuem para a renderização de resultados aceitáveis. O resultado é parcialmente subjetivo porque os indivíduos percebem a qualidade da imagem de forma diferente. Experimentação estruturada é fundamental.
 
-AEM inclui mais de 100 comandos de delivery de imagem do Dynamic Media para ajustar e otimizar imagens e resultados de renderização. As diretrizes a seguir podem ajudá-lo a dinamizar o processo e obter bons resultados rapidamente usando alguns comandos essenciais e práticas recomendadas.
+AEM inclui mais de 100 comandos de delivery de imagem Dynamic Media para ajustar e otimizar imagens e resultados de renderização. As diretrizes a seguir podem ajudá-lo a dinamizar o processo e obter bons resultados rapidamente usando alguns comandos essenciais e práticas recomendadas.
 
 ## Práticas recomendadas para o formato de imagem (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG ou PNG são as melhores opções para fornecer imagens em boa qualidade e com tamanho e peso gerenciáveis.
-* Se nenhum comando format for fornecido no URL, o Delivery de Imagem de Dynamic Media assumirá como padrão o JPG para o delivery.
+* Se nenhum comando format for fornecido no URL, o Delivery de Imagem Dynamic Media assumirá como padrão o JPG para o delivery.
 * O JPG compacta com uma proporção de 10:1 e geralmente produz arquivos de imagem menores. O PNG compacta com uma proporção de aproximadamente 2:1, exceto em alguns casos, como quando imagens contêm um fundo branco. Normalmente, porém, os tamanhos de arquivo PNG são maiores que os arquivos JPG.
 * O JPG usa compactação com perdas, o que significa que os elementos da imagem (pixels) são descartados durante a compactação. Por outro lado, o PNG usa compactação sem perdas.
 * Muitas vezes, o JPG compacta imagens fotográficas com melhor fidelidade do que imagens sintéticas com bordas e contraste nítidos.
