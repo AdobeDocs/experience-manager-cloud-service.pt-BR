@@ -1,11 +1,11 @@
 ---
 title: Acessibilidade em [!DNL Dynamic Media]
-description: Saiba mais sobre a acessibilidade no Dynamic Media e no Dynamic Media Viewers
+description: Saiba mais sobre a acessibilidade no Dynamic Media e no Dynamic Media Viewers.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 # Acessibilidade no Dynamic Media {#working-with-three-d-assets-dm}
 
-O Dynamic Media suporta o controle de teclado e tecnologias de assistência, como leitores de tela JAWS e NVDA, na interface do usuário de criação.
+A Dynamic Media oferece suporte a tecnologias de controle de teclado e assistência, como leitores de tela JAWS e NVDA, na interface do usuário de criação.
 
 ## Suporte de acessibilidade de teclado no Dynamic Media
 
-Como o Dynamic Media é um plug-in para o Experience Manager Assets, a maioria do comportamento de controle do teclado é exatamente igual ao dos Experience Manager Assets. Por exemplo, o botão `Cancel` no Dynamic Media tem o mesmo realce de foco que nos Ativos de Experience Manager e reage à tecla `Spacebar` como nos Ativos de Experience Manager. Consulte [Atalhos de teclado em Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Como o Dynamic Media é um plug-in para o Experience Manager Assets, a maioria do comportamento de controle do teclado é exatamente igual ao dos Experience Manager Assets. Por exemplo, o botão `Cancel` no Dynamic Media tem o mesmo realce de foco que nos Ativos do Experience Manager e reage à tecla `Spacebar` como nos Ativos do Experience Manager. Consulte [Atalhos de teclado em Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Os pressionamentos de teclas suportados por elementos individuais da interface do usuário no Dynamic Media são, na maioria dos casos, óbvios e fáceis de descobrir. O controle de teclado no Dynamic Media é sobre o seguinte:
 
@@ -44,20 +44,20 @@ Consulte [Editar o recorte inteligente ou a amostra inteligente de uma única im
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Suporte a tecnologia assistiva no Dynamic Media {#assistive-technology=support-for-dm}
+## Suporte a tecnologia assistiva na Dynamic Media {#assistive-technology=support-for-dm}
 
-Os elementos da interface do usuário do Dynamic Media funcionam com tecnologias de assistência, como leitores de tela. Por exemplo, ele reconhece marcos em uma página quando você navega por marcos usando o atalho de teclado `D` ou regiões que usam o atalho de teclado `R`. Ele também narrará o cabeçalho ao navegar usando o atalho de cabeçalho do teclado `H`.
+Os elementos da interface do usuário Dynamic Media funcionam com tecnologias de assistência, como leitores de tela. Por exemplo, ele reconhece marcos em uma página quando você navega por marcos usando o atalho de teclado `D` ou regiões que usam o atalho de teclado `R`. Ele também narrará o cabeçalho ao navegar usando o atalho de cabeçalho do teclado `H`.
 
-## Suporte de acessibilidade de teclado nos visualizadores do Dynamic Media {#keyboard-accessibility-for-dm-viewers}
+## Suporte de acessibilidade de teclado nos visualizadores Dynamic Media {#keyboard-accessibility-for-dm-viewers}
 
-Todos os componentes predefinidos do visualizador de Dynamic Media oferecem suporte à acessibilidade do teclado para seus clientes.
+Todos os componentes predefinidos do visualizador Dynamic Media suportam a acessibilidade do teclado para seus clientes.
 
-Consulte [Acesso ao teclado e navegação](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) no Guia de Referência do Visualizador de Mídia Dinâmica.
+Consulte [Acesso ao teclado e navegação](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) no Guia de referência do Dynamic Media Viewers.
 
-## Suporte técnico de assistência em visualizadores de Dynamic Media {#assistive-technology=support-for-dm-viewers}
+## Suporte a tecnologia assistiva em visualizadores Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
-Todos os componentes do visualizador de Dynamic Media suportam funções e atributos ARIA (Accessible Rich Internet Applications) para melhorar a integração com tecnologias de assistência, como leitores de tela.
-Consulte o tópico **Suporte à tecnologia assistiva** Ajuda em qualquer tópico personalizado do visualizador no Guia de Referência do Visualizador de Mídia Dinâmica. Por exemplo, consulte [Suporte à tecnologia assistiva](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para o Visualizador de vídeo, ou [Suporte à tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) para o Visualizador de imagem interativa.
+Todos os componentes do visualizador Dynamic Media suportam funções e atributos ARIA (Accessible Rich Internet Applications) para melhorar a integração com tecnologias de assistência, como leitores de tela.
+Consulte o tópico **Suporte à tecnologia assistiva** Ajuda em qualquer tópico personalizado do visualizador no Guia de Referência do Dynamic Media Viewers. Por exemplo, consulte [Suporte à tecnologia assistiva](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para o Visualizador de vídeo, ou [Suporte à tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) para o Visualizador de imagem interativa.
 
 >[!MORELIKETHIS]
 >
