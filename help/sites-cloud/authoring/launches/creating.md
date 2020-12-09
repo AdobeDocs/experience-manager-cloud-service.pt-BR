@@ -2,10 +2,10 @@
 title: Criação de lançamentos
 description: É possível criar um lançamento para permitir a atualização de uma nova versão das páginas da Web existentes para ativação futura.
 translation-type: tm+mt
-source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
+source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 85%
+source-wordcount: '1045'
+ht-degree: 81%
 
 ---
 
@@ -19,6 +19,18 @@ Crie um lançamento para permitir a atualização de uma nova versão de página
 * Por padrão, a Live Copy atualiza automaticamente as páginas de lançamento conforme as páginas de origem são alteradas. Você pode especificar que uma cópia estática seja criada para evitar alterações automáticas. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
 Como opção, especifique a **Data de inicialização** (e a hora) para definir quando as páginas de inicialização devem ser promovidas e ativadas. No entanto, a **Data de inicialização** só funciona em combinação com o sinalizador **Pronto para produção** (consulte [Editar uma configuração de inicialização](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)); para que as ações realmente ocorram automaticamente, ambas devem ser definidas.
+
+>[!NOTE]
+>
+>Quando você cria uma inicialização, as páginas superiores na hierarquia não são cópias das páginas de origem. São espaços reservados, criados com o modelo:
+>
+>* `/libs/launches/templates/outofscope`
+>
+>
+Essas páginas não podem ser editadas. Você verá a mensagem:
+>
+>* **Esta página não faz parte do lançamento. Ir para página de produção**
+
 
 ## Criação de um lançamento {#creating-a-launch}
 
