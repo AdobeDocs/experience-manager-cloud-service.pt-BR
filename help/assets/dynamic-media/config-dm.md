@@ -1,10 +1,10 @@
 ---
-title: Configuração do Cloud Service de Dynamic Media
-description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager Cloud Service.
+title: Configuração do Dynamic Media Cloud Service
+description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3855'
 ht-degree: 8%
 
 ---
@@ -12,17 +12,17 @@ ht-degree: 8%
 
 # Sobre a configuração do Dynamic Media Cloud Service {#configuring-dynamic-media-scene-mode}
 
-Se você usar a configuração do Adobe Experience Manager para ambientes diferentes, como um para desenvolvimento, um para armazenamento temporário e outro para produção ao vivo, é necessário configurar Cloud Services de Mídia dinâmica para cada um desses ambientes.
+Se você usar a configuração da Adobe Experience Manager para ambientes diferentes, como um para desenvolvimento, um para armazenamento temporário e outro para produção ao vivo, é necessário configurar Cloud Services Dynamic Media para cada um desses ambientes.
 
 ## Diagrama de arquitetura do Dynamic Media {#architecture-diagram-of-dynamic-media-scene-mode}
 
-O diagrama de arquitetura a seguir descreve como o Dynamic Media funciona.
+O diagrama de arquitetura a seguir descreve como a Dynamic Media funciona.
 
-Com a nova arquitetura, AEM é responsável pelos ativos de origem primária e sincronizações com o Dynamic Media para processamento e publicação de ativos:
+Com a nova arquitetura, AEM é responsável por ativos de origem primária e sincronizações com a Dynamic Media para processamento e publicação de ativos:
 
-1. Quando o ativo de origem principal é carregado para AEM, ele é replicado para o Dynamic Media. Nesse ponto, o Dynamic Media lida com todo o processamento de ativos e geração de representação, como codificação de vídeo e variantes dinâmicas de uma imagem.
+1. Quando o ativo de origem principal é carregado para AEM, ele é replicado para a Dynamic Media. Nesse ponto, a Dynamic Media lida com todo o processamento de ativos e geração de representação, como codificação de vídeo e variantes dinâmicas de uma imagem.
 1. Depois que as renderizações são geradas, AEM podem acessar e pré-visualização com segurança as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta à instância AEM).
-1. Depois que o conteúdo estiver pronto para ser publicado e aprovado, ele aciona o serviço de Mídia dinâmica para enviar conteúdo para os servidores de delivery e armazená-lo em cache no CDN.
+1. Depois que o conteúdo estiver pronto para ser publicado e aprovado, ele aciona o serviço da Dynamic Media para enviar o conteúdo para os servidores de delivery e armazená-lo em cache no CDN.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -46,15 +46,15 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Criação de uma nova Configuração de Dynamic Media no Cloud Services {#configuring-dynamic-media-cloud-services}
+## Criação de uma nova configuração do Dynamic Media no Cloud Services {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. Em AEM, toque no logotipo AEM para acessar o console de navegação global.
-1. No lado esquerdo do console, toque no ícone Ferramentas e em **[!UICONTROL Cloud Services > Configuração de Dynamic Media]**.
+1. No lado esquerdo do console, toque no ícone Ferramentas e em **[!UICONTROL Cloud Services > Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel à esquerda, toque em **[!UICONTROL global]** (não toque ou selecione o ícone de pasta à esquerda de **[!UICONTROL global]**) e, em seguida, toque em **[!UICONTROL Criar]**.
-1. Na página **[!UICONTROL Criar Configuração de Mídia Dinâmica]**, digite um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Eles são fornecidos por Adobe no e-mail de provisionamento. Entre em contato com o suporte se você não recebeu essa solicitação.
-1. Clique em **[!UICONTROL Ligar ao Dynamic Media]**.
+1. Na página **[!UICONTROL Criar Configuração do Dynamic Media]**, digite um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Eles são fornecidos por Adobe no e-mail de provisionamento. Entre em contato com o suporte se você não recebeu essa solicitação.
+1. Clique em **[!UICONTROL Conectar-se ao Dynamic Media]**.
 1. Na caixa de diálogo **[!UICONTROL Alterar Senha]**, no campo **[!UICONTROL Nova Senha]**, digite uma nova senha que contenha de 8 a 25 caracteres. A senha deve conter pelo menos um dos seguintes:
 
    * Letra maiúscula
@@ -68,7 +68,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. No campo **[!UICONTROL Repetir senha]**, digite novamente a nova senha e, em seguida, toque em **[!UICONTROL Concluído.]**
 
-   A nova senha é salva quando você toca em **[!UICONTROL Salvar]** no canto superior direito da página **[!UICONTROL Criar Configuração de Mídia Dinâmica]**.
+   A nova senha é salva quando você toca em **[!UICONTROL Salvar]** no canto superior direito da página **[!UICONTROL Criar Configuração do Dynamic Media]**.
 
    Se você tocou em **[!UICONTROL Cancelar]** na caixa de diálogo **[!UICONTROL Alterar senha]**, ainda é necessário digitar uma nova senha ao tocar em **[!UICONTROL Salvar]** para salvar a configuração recém-criada do Dynamic Media.
 
@@ -78,11 +78,11 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | Propriedade | Descrição |
    |---|---|
-   | Empresa | O nome da conta do Dynamic Media. É possível que você tenha várias contas de Dynamic Media para diferentes submarcas, divisões ou diferentes ambientes de preparo/produção. |
+   | Empresa | O nome da conta do Dynamic Media. É possível que você tenha várias contas da Dynamic Media para diferentes submarcas, divisões ou ambientes de preparo/produção diferentes. |
    | Caminho da pasta raiz da empresa | O caminho da pasta raiz do empresa. |
-   | Publicar ativos | Você pode escolher entre as três opções a seguir:<br>**[!UICONTROL Imediatamente ]**: Quando os ativos são carregados, o sistema recebe os ativos e fornece o URL/Incorporado instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.<br>**[!UICONTROL Na Ativação]**: É necessário publicar explicitamente o ativo primeiro antes que um link URL/Incorporado seja fornecido.<br>**[!UICONTROL Publicação ]**seletiva: Os ativos são publicados automaticamente apenas para pré-visualização segura e podem ser publicados explicitamente em AEM sem publicação no DMS7 para delivery no domínio público. No futuro, o Adobe aprimorará essa opção para publicar ativos para AEM e publicar ativos no Dynamic Media, mutuamente exclusivos entre si. Ou seja, você pode publicar ativos no DMS7 para poder usar recursos como Recorte inteligente ou representações dinâmicas. Ou, você pode publicar ativos exclusivamente em AEM para visualização; esses mesmos ativos não são publicados no DMS7 para delivery no domínio público. |
+   | Publicar ativos | Você pode escolher entre as três opções a seguir:<br>**[!UICONTROL Imediatamente ]**: Quando os ativos são carregados, o sistema recebe os ativos e fornece o URL/Incorporado instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.<br>**[!UICONTROL Na Ativação]**: É necessário publicar explicitamente o ativo primeiro antes que um link URL/Incorporado seja fornecido.<br>**[!UICONTROL Publicação ]**seletiva: Os ativos são publicados automaticamente apenas para pré-visualização segura e podem ser publicados explicitamente em AEM sem publicação no DMS7 para delivery no domínio público. No futuro, o Adobe aprimorará essa opção para publicar ativos para AEM e publicar ativos na Dynamic Media, mutuamente exclusivos entre si. Ou seja, você pode publicar ativos no DMS7 para poder usar recursos como Recorte inteligente ou representações dinâmicas. Ou, você pode publicar ativos exclusivamente em AEM para visualização; esses mesmos ativos não são publicados no DMS7 para delivery no domínio público. |
    | Servidor de visualização seguro | Permite que você especifique o caminho do URL para o servidor de pré-visualização de representações seguras. Ou seja, depois que as renderizações são geradas, AEM podem acessar e pré-visualização com segurança as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta à instância AEM).<br>A menos que você tenha uma disposição especial para usar seu próprio servidor empresa ou um servidor especial, a Adobe Systems recomenda deixar essa configuração como especificado. |
-   | Sincronizar todo o conteúdo | Selecionado por padrão. Desmarque essa opção se desejar incluir ou excluir seletivamente ativos da sincronização para o Dynamic Media. Desmarcar essa opção permite escolher entre os dois modos de sincronização de Dynamic Media a seguir:<br>**[!UICONTROL Modo de sincronização de Dynamic Media]**<br>**[!UICONTROL Ativar por padrão ]**: A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Desativado por padrão]**: A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.<br>Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, toque em  **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Details]**, na lista suspensa **[!UICONTROL Modo de sincronização de Dynamic Media]**, escolha entre as três opções a seguir. Quando terminar, toque em **[!UICONTROL Salvar]**. *Lembre-se: essas três opções não estarão disponíveis se você tiver selecionado **Sincronizar todo o**conteúdo anteriormente.* Consulte também  [Trabalhar com publicação seletiva no nível de pasta no Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Herdado ]**: Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração da nuvem. O status detalhado para herdado é exibido por meio de uma dica de ferramenta.<br>**[!UICONTROL Ativar para subpastas]**: Inclua tudo nesta subárvore para sincronizar com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.<br>**[!UICONTROL Desativado para subpastas ]**: Exclua toda a sub-árvore da sincronização para o Dynamic Media. |
+   | Sincronizar todo o conteúdo | Selecionado por padrão. Desmarque essa opção se desejar incluir ou excluir seletivamente ativos da sincronização para o Dynamic Media. Desmarcar essa opção permite escolher entre os dois modos de sincronização do Dynamic Media a seguir:<br>**[!UICONTROL Modo de sincronização do Dynamic Media]**<br>**[!UICONTROL Ativar por padrão ]**: A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Desativado por padrão]**: A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.<br>Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, toque em  **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Details]**, na lista suspensa **[!UICONTROL Modo de sincronização Dynamic Media]**, escolha uma das três opções a seguir. Quando terminar, toque em **[!UICONTROL Salvar]**. *Lembre-se: essas três opções não estarão disponíveis se você tiver selecionado **Sincronizar todo o**conteúdo anteriormente.* Consulte também  [Trabalhar com publicação seletiva no nível da pasta no Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Herdado ]**: Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração da nuvem. O status detalhado para herdado é exibido por meio de uma dica de ferramenta.<br>**[!UICONTROL Ativar para subpastas]**: Inclua tudo nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.<br>**[!UICONTROL Desativado para subpastas ]**: Exclua da sincronização de tudo nesta subárvore para o Dynamic Media. |
 
    >[!NOTE]
    >
@@ -94,16 +94,16 @@ To migrate any custom viewer presets and configurations that you have created fr
    ![dynamicmediaconfiguration2atualizado](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
 1. Toque em **[!UICONTROL Salvar]**. A nova senha e configuração do Dynamic Media são salvas. Se você tocou em **[!UICONTROL Cancelar]**, nenhuma atualização de senha ocorre.
-1. Na caixa de diálogo **[!UICONTROL Configurando o Dynamic Media]**, toque em **[!UICONTROL OK]** para iniciar a configuração.
+1. Na caixa de diálogo **[!UICONTROL Configuração do Dynamic Media]**, toque em **[!UICONTROL OK]** para iniciar a configuração.
 
    >[!IMPORTANT]
    >
    >Quando a nova configuração do Dynamic Media terminar a configuração, você receberá uma notificação de status na Caixa de entrada AEM.
    >
    >Esta notificação de Caixa de entrada informa se a configuração foi bem-sucedida ou não.
-   > Consulte [Resolução de problemas de uma nova configuração de Dynamic Media](#troubleshoot-dm-config) e [Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obter mais informações.
+   > Consulte [Resolução de problemas de uma nova configuração do Dynamic Media](#troubleshoot-dm-config) e [Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obter mais informações.
 
-1. Para pré-visualização segura do conteúdo do Dynamic Media antes de ser publicado, é necessário &quot;lista de permissões&quot; a instância do autor AEM para se conectar ao Dynamic Media. Para configurar isso, faça o seguinte:
+1. Para pré-visualização segura do conteúdo do Dynamic Media antes de ele ser publicado, é necessário &quot;lista de permissões&quot; a instância do autor AEM para se conectar ao Dynamic Media. Para configurar isso, faça o seguinte:
 
    * Faça logon em sua conta do Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Suas credenciais e logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
    * Na barra de navegação próxima à parte superior direita da página, clique em **[!UICONTROL Configuração > Configuração de aplicativo > Configuração de publicação > Servidor de imagem]**.
@@ -115,9 +115,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 Agora você terminou com a configuração básica; você está pronto para usar o Dynamic Media.
 
-Se desejar personalizar ainda mais sua configuração, você pode, opcionalmente, concluir qualquer uma das tarefas em [Configuração das configurações avançadas no Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+Se desejar personalizar ainda mais sua configuração, você pode, opcionalmente, concluir qualquer uma das tarefas em [Configuração de configurações avançadas no Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
-### Solução de problemas de uma nova configuração de Dynamic Media {#troubleshoot-dm-config}
+### Solução de problemas de uma nova configuração do Dynamic Media {#troubleshoot-dm-config}
 
 Quando uma nova configuração do Dynamic Media terminar sua configuração, você receberá uma notificação de status na Caixa de entrada AEM. Esta notificação informa se a configuração foi bem-sucedida ou não, conforme visto nas seguintes imagens respectivas da Caixa de entrada.
 
@@ -153,12 +153,12 @@ A senha deve conter pelo menos um dos seguintes:
 
 Se necessário, você pode verificar a ortografia de uma senha que digitou ou digitou novamente tocando no ícone do olho da senha para revelar a senha. Toque no ícone novamente para ocultar a senha.
 
-A senha alterada é salva quando você toca em **[!UICONTROL Salvar]** no canto superior direito da página **[!UICONTROL Editar configuração de mídia dinâmica]**.
+A senha alterada é salva quando você toca em **[!UICONTROL Salvar]** no canto superior direito da página **[!UICONTROL Editar configuração do Dynamic Media]**.
 
 1. Em AEM, toque no logotipo AEM para acessar o console de navegação global.
-1. No lado esquerdo do console, toque no ícone Ferramentas e em **[!UICONTROL Cloud Services > Configuração de Dynamic Media.]**
-1. Na página Navegador de configuração de Dynamic Media, no painel esquerdo, toque em **[!UICONTROL global]** (não toque nem selecione o ícone de pasta à esquerda de **[!UICONTROL global]**) e, em seguida, toque em **[!UICONTROL Editar.]**
-1. Na página **[!UICONTROL Editar Configuração de Mídia Dinâmica]**, logo abaixo do campo **[!UICONTROL Senha]**, toque em **[!UICONTROL Alterar Senha.]**
+1. No lado esquerdo do console, toque no ícone Ferramentas e em **[!UICONTROL Cloud Services > Configuração do Dynamic Media.]**
+1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, toque em **[!UICONTROL global]** (não toque nem selecione o ícone de pasta à esquerda de **[!UICONTROL global]**) e, em seguida, toque em **[!UICONTROL Editar.]**
+1. Na página **[!UICONTROL Editar Configuração do Dynamic Media]**, logo abaixo do campo **[!UICONTROL Senha]**, toque em **[!UICONTROL Alterar Senha.]**
 1. Na caixa de diálogo **[!UICONTROL Alterar senha]**, faça o seguinte:
 
    * No campo **[!UICONTROL Nova senha]**, digite uma nova senha.
@@ -167,14 +167,14 @@ A senha alterada é salva quando você toca em **[!UICONTROL Salvar]** no canto 
 
    * No campo **[!UICONTROL Repetir senha]**, digite novamente a nova senha e, em seguida, toque em **[!UICONTROL Concluído.]**
 
-1. No canto superior direito da página **[!UICONTROL Editar Configuração de Mídia Dinâmica]**, toque em **[!UICONTROL Guardar]** e, em seguida, toque em **[!UICONTROL OK.]**
+1. No canto superior direito da página **[!UICONTROL Editar Configuração do Dynamic Media]**, toque em **[!UICONTROL Guardar]** e, em seguida, toque em **[!UICONTROL OK.]**
 
 ## (Opcional) Configuração de configurações avançadas no Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 Se quiser personalizar ainda mais a configuração e configuração do Dynamic Media, ou otimizar seu desempenho, você pode concluir uma ou mais das seguintes tarefas *opcionais*:
 
 * [Configuração e configuração das configurações do Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
-* [(Opcional) Ajuste do desempenho do Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
+* [(Opcional) Ajuste do desempenho da Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 <!--
 
@@ -186,7 +186,7 @@ Se quiser personalizar ainda mais a configuração e configuração do Dynamic M
 
 Use a interface do usuário do Dynamic Media Classic (Scene7) para fazer alterações nas configurações do Dynamic Media.
 
-Algumas das tarefas acima exigem que você faça logon no Dynamic Media Classic (Scene7) aqui: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+Algumas das tarefas acima exigem que você efetue logon no Dynamic Media Classic (Scene7) aqui: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
 As tarefas de configuração incluem:
 
@@ -200,7 +200,7 @@ As tarefas de configuração incluem:
 
 #### Configuração de publicação para o Image Server {#publishing-setup-for-image-server}
 
-As configurações de publicação determinam como os ativos são entregues por padrão a partir do Dynamic Media. Se nenhuma configuração for especificada, o Dynamic Media fornecerá um ativo de acordo com as configurações padrão definidas na Configuração de publicação. Por exemplo, uma solicitação para fornecer uma imagem que não inclui um atributo de resolução gera uma imagem com a configuração Resolução de objeto padrão.
+As configurações de publicação determinam como os ativos são entregues por padrão da Dynamic Media. Se nenhuma configuração for especificada, a Dynamic Media fornece um ativo de acordo com as configurações padrão definidas na Configuração de publicação. Por exemplo, uma solicitação para fornecer uma imagem que não inclui um atributo de resolução gera uma imagem com a configuração Resolução de objeto padrão.
 
 Para configurar a Configuração de publicação: no Dynamic Media Classic, clique em **[!UICONTROL Configuração > Configuração de aplicativo > Configuração de publicação > Servidor de imagem]**.
 
@@ -216,9 +216,9 @@ A tela Servidor de imagens estabelece as configurações padrão para a entrega 
 
 #### Definição das configurações gerais do aplicativo {#configuring-application-general-settings}
 
-Para abrir a página Configurações Gerais do Aplicativo, na barra de Navegação Global do Dynamic Media Classic, clique em **[!UICONTROL Configuração > Configuração do Aplicativo > Configurações Gerais.]**
+Para abrir a página Configurações gerais do aplicativo, na barra de navegação global do Dynamic Media Classic, clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais.]**
 
-**[!UICONTROL Servidores]**  - Em provisionamento de conta, o Dynamic Media fornece automaticamente os servidores atribuídos para sua empresa. Esses servidores são usados para construir strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas para sua conta. Não altere nenhum nome de servidor, a menos que seja explicitamente instruído a fazê-lo pelo suporte AEM.
+**[!UICONTROL Servidores]**  - Em provisionamento de conta, a Dynamic Media fornece automaticamente os servidores atribuídos para sua empresa. Esses servidores são usados para construir strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas para sua conta. Não altere nenhum nome de servidor, a menos que seja explicitamente instruído a fazê-lo pelo suporte AEM.
 **[!UICONTROL Substituir imagens]**  - o Dynamic Media não permite que dois arquivos tenham o mesmo nome. A ID do URL de cada item (o nome do arquivo menos a extensão) deve ser exclusiva. Essas opções especificam como os ativos de substituição são carregados: se eles substituem o original ou se tornam duplicados. Os ativos do duplicado são renomeados com um &quot;-1&quot; (por exemplo, o nome &quot;President.tif&quot; é renomeado como President-1.tif). Essas opções afetam os ativos carregados em uma pasta diferente do original ou os ativos com uma extensão de nome de arquivo diferente do original (como JPG, TIF ou PNG).
 **[!UICONTROL Substituir na pasta atual, mesmo nome/extensão]**  da imagem base - Essa opção é a regra mais estrita para substituição. Ele requer que você carregue a imagem de substituição na mesma pasta que a original e que a imagem de substituição tenha a mesma extensão de nome de arquivo que a original. Se esses requisitos não forem atendidos, um duplicado será criado. Para manter a consistência com o AEM, sempre escolha **[!UICONTROL Substituir na pasta atual, o mesmo nome/extensão da imagem base]**.
 **[!UICONTROL Substituir em qualquer pasta, o mesmo nome/extensão]**  do ativo básico - Requer que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, o arquivo visit.jpg deve substituir o arquivo .jpg, não o domínio .tif). No entanto, é possível carregar a imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original.
@@ -257,7 +257,7 @@ Isso faria o seguinte:
 
 #### Edição de tipos MIME para formatos suportados {#editing-mime-types-for-supported-formats}
 
-Você pode definir quais tipos de ativos são processados pelo Dynamic Media e personalizar parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
+Você pode definir quais tipos de ativos são processados pela Dynamic Media e personalizar parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
 
 * Converter um Adobe PDF em um ativo eCatalog.
 * Converta um Documento Adobe Photoshop (.PSD) em um ativo de modelo de banner para personalização.
@@ -278,7 +278,7 @@ Consulte [Upload de ativos](/help/assets/add-assets.md).
 1. Na pasta mimeTypes, selecione um tipo mime.
 1. No lado direito da página CRXDE Lite, na parte inferior:
 
-   * Clique com o duplo no campo **[!UICONTROL enabled]**. Por padrão, todos os tipos MIME de ativos estão ativados (definidos como **[!UICONTROL true]**), o que significa que os ativos serão sincronizados com o Dynamic Media para processamento. Se desejar excluir esse tipo MIME de ativo do processamento, altere essa configuração para **[!UICONTROL false]**.
+   * Clique com o duplo no campo **[!UICONTROL enabled]**. Por padrão, todos os tipos MIME de ativos estão ativados (definidos como **[!UICONTROL true]**), o que significa que os ativos serão sincronizados com a Dynamic Media para processamento. Se desejar excluir esse tipo MIME de ativo do processamento, altere essa configuração para **[!UICONTROL false]**.
 
    * Clique com o duplo **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte [Tipos MIME Suportados](/help/assets/file-format-support.md) para obter uma lista de valores de parâmetro de processamento permitidos que você pode usar para um determinado tipo MIME.
 
@@ -344,12 +344,12 @@ Adicione tipos MIME personalizados para formatos não compatíveis com o AEM Ass
 
 ### (Opcional) Ajuste do desempenho do Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Para manter o Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> em execução sem problemas, o Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
+Para manter o Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> funcionando sem problemas, o Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
 
 * Atualização dos parâmetros de trabalho predefinidos para processamento de diferentes formatos de arquivo.
 * Atualizando os threads de trabalho de fila do fluxo de trabalho Granite (ativos de vídeo) predefinidos.
 * Atualizando os threads de trabalho de fila de transientes predefinidos do Granite (imagens e ativos que não sejam de vídeo).
-* Atualização das conexões máximas de upload para o servidor do Dynamic Media Classic.
+* Atualização das conexões máximas de upload para o servidor Dynamic Media Classic.
 
 #### Atualização dos parâmetros de trabalho predefinidos para processamento de diferentes formatos de arquivo
 
@@ -379,7 +379,7 @@ A fila Fluxo de trabalho de trânsito Granite é usada para o fluxo de trabalho 
 
 1. No campo **[!UICONTROL Máximo de trabalhos paralelos]**, altere o número para o valor desejado.
 
-   Você pode aumentar **[!UICONTROL Máximo de trabalhos paralelos]** para suportar adequadamente o carregamento pesado de arquivos para o Dynamic Media. O valor exato depende da capacidade do hardware. Em certos cenários, ou seja, uma migração inicial ou um carregamento em massa único, é possível usar um valor grande. No entanto, esteja ciente de que o uso de um valor grande (como duas vezes o número de núcleos) pode ter efeitos negativos em outras atividades simultâneas. Dessa forma, você deve testar e ajustar o valor com base no seu caso de uso específico.
+   Você pode aumentar **[!UICONTROL Máximo de trabalhos paralelos]** para suportar adequadamente o carregamento pesado de arquivos para a Dynamic Media. O valor exato depende da capacidade do hardware. Em certos cenários, ou seja, uma migração inicial ou um carregamento em massa único, é possível usar um valor grande. No entanto, esteja ciente de que o uso de um valor grande (como duas vezes o número de núcleos) pode ter efeitos negativos em outras atividades simultâneas. Dessa forma, você deve testar e ajustar o valor com base no seu caso de uso específico.
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -391,7 +391,7 @@ A fila Fluxo de trabalho de trânsito Granite é usada para o fluxo de trabalho 
 
 #### Atualizando a fila do Fluxo de Trabalho do Granite {#updating-the-granite-workflow-queue}
 
-A fila Fluxo de trabalho Granite é usada para workflows não transitórios. No Dynamic Media, ele costumava processar vídeos com o fluxo de trabalho **[!UICONTROL Dynamic Media Encode Video]**.
+A fila Fluxo de trabalho Granite é usada para workflows não transitórios. No Dynamic Media, costumava processar vídeos com o fluxo de trabalho **[!UICONTROL Codificar vídeo]** do Dynamic Media.
 
 Para atualizar a fila do Fluxo de Trabalho de Granite:
 
@@ -413,16 +413,16 @@ Para atualizar a fila do Fluxo de Trabalho de Granite:
 
 #### Atualização da conexão de upload do Scene7 {#updating-the-scene-upload-connection}
 
-A configuração Scene7 Upload Connection sincroniza AEM ativos aos servidores do Dynamic Media Classic.
+A configuração Scene7 Upload Connection sincroniza AEM ativos aos servidores Dynamic Media Classic.
 
 Para atualizar a conexão de upload do Scene7:
 
 1. Vá até `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. No campo **[!UICONTROL Número de conexões]** e/ou no campo **[!UICONTROL Tempo limite do trabalho ativo]**, altere o número conforme desejado.
 
-   A configuração **[!UICONTROL Número de conexões]** controla o número máximo de conexões HTTP permitidas para AEM para upload do Dynamic Media; normalmente, o valor predefinido de 10 conexões é suficiente.
+   A configuração **[!UICONTROL Número de conexões]** controla o número máximo de conexões HTTP permitidas para AEM upload do Dynamic Media; normalmente, o valor predefinido de 10 conexões é suficiente.
 
-   A configuração **[!UICONTROL Tempo limite do trabalho ativo]** determina o tempo de espera para os ativos do Dynamic Media carregados serem publicados no servidor de delivery. Esse valor é de 2100 segundos ou 35 minutos por padrão.
+   A configuração **[!UICONTROL Tempo limite do trabalho ativo]** determina o tempo de espera para os ativos Dynamic Media carregados serem publicados no servidor de delivery. Esse valor é de 2100 segundos ou 35 minutos por padrão.
 
    Para a maioria dos casos de uso, a configuração de 2100 é suficiente.
 
