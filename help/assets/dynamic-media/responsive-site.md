@@ -1,10 +1,10 @@
 ---
 title: Fornecer imagens otimizadas para um site responsivo
-description: Como usar o recurso de código responsivo para fornecer imagens otimizadas
+description: Saiba como usar o recurso de código responsivo para fornecer imagens otimizadas da Dynamic Media.
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '322'
 ht-degree: 13%
 
 ---
@@ -43,8 +43,8 @@ Consulte também [Vincular URLs à sua Aplicação web.](linking-urls-to-yourweb
 1. Na caixa de diálogo **[!UICONTROL Incorporar imagem responsiva]**, selecione e copie o texto do código responsivo e cole-o em seu site para acessar o ativo responsivo.
 1. Edite os pontos de interrupção padrão no código incorporado para corresponder aos do site responsivo diretamente no código. Além disso, teste as diferentes resoluções de imagem servidas em diferentes pontos de interrupção de página.
 
-## Usar HTTP/2 para delivery de ativos de Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
+## Usar HTTP/2 para delivery de ativos Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O delivery de ativos de Dynamic Media é suportado usando o HTTP/2, que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O delivery de ativos da Dynamic Media é compatível com o uso do HTTP/2, que oferece melhor resposta e tempo de carregamento.
 
-Consulte [Delivery HTTP2 de Content](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
+Consulte [Delivery HTTP2 de Content](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta Dynamic Media.
