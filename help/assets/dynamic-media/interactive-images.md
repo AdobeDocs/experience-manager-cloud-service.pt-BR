@@ -1,8 +1,8 @@
 ---
 title: Imagens interativas
-description: Saiba como trabalhar com imagens interativas no Dynamic Media
+description: Saiba como trabalhar com imagens interativas no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '4253'
 ht-degree: 2%
@@ -36,7 +36,7 @@ O tutorial ajuda a ilustrar as etapas da integração de imagens interativas em 
 
 Etapas de imagens interativas:
 
-1. **(Opcional) Identificação de variáveis**  de hotspots - se você usar o AEM Assets e o Dynamic Media de forma independente, identifique as variáveis dinâmicas usadas na implementação do Quickview existente para que você possa digitar dados de hotspots ao criar a imagem interativa. Consulte [(Opcional) Identificando variáveis de ponto de acesso](#optional-identifying-hotspot-variables).
+1. **(Opcional) Identificação de variáveis**  de hotspots - se você usar o AEM Assets e o Dynamic Media separadamente, start identificando as variáveis dinâmicas usadas na implementação existente do Quickview, para que você possa digitar dados de hotspots ao criar a imagem interativa. Consulte [(Opcional) Identificando variáveis de ponto de acesso](#optional-identifying-hotspot-variables).
 No entanto, se você usar o AEM Sites, AEM eCommerce, ou ambos, essa etapa não será necessária.
 
 1. **(Opcional) Criação de uma predefinição**  do visualizador de Imagem interativa - Personalize a imagem gráfica usada para representar pontos de acesso. A criação de sua própria predefinição do visualizador de Imagem interativa não é necessária se você pretende usar a predefinição do visualizador de Imagem interativa predefinida `Shoppable_Banner`.
@@ -51,8 +51,8 @@ Consulte [Pré-visualização de imagens interativas](#optional-previewing-inter
 Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de imagem interativos.
 
 1. **Adicionando uma imagem interativa ao seu site ou ao seu site no**
-AEMIse você usar o AEM Sites, ou AEM eCommerce, ou ambos, você pode adicionar a imagem interativa diretamente a uma página da Web em AEM arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos de mídia dinâmica a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-Se você usar o AEM Assets e o Dynamic Media sozinhos, é necessário copiar o código incorporado em seu site e, em seguida, integrá-lo à sua exibição rápida existente. Consulte [Integrar uma imagem interativa ao seu site](#integrating-an-interactive-image-with-your-website).
+AEMIse você usar o AEM Sites, ou AEM eCommerce, ou ambos, você pode adicionar a imagem interativa diretamente a uma página da Web em AEM arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se você usar o AEM Assets e o Dynamic Media de forma independente, é necessário copiar o código incorporado em seu site e, em seguida, integrá-lo ao seu Quickview existente. Consulte [Integrar uma imagem interativa ao seu site](#integrating-an-interactive-image-with-your-website).
 Se você estiver usando um WCM de terceiros (Web Content Manager), é necessário integrar o novo vídeo interativo com a implementação existente do Quickview usada em seu site. Consulte [Integrar uma imagem interativa a uma exibição rápida](#integrating-an-interactive-image-with-an-existing-quickview) existente.
 
 ## (Opcional) Identificação de variáveis de hotspot {#optional-identifying-hotspot-variables}
@@ -315,7 +315,7 @@ Você pode usar a Pré-visualização para ver uma representação da aparência
 Quando estiver satisfeito com a imagem interativa, você poderá publicá-la.
 Consulte [Incorporar o Visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
 Consulte [Vincular URLs ao seu aplicativo da Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
-Consulte [Adicionar ativos de mídia dinâmica a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Consulte [Adicionar ativos Dynamic Media a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **Para pré-visualização de imagens interativas**
 
@@ -332,7 +332,7 @@ Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-as
 
 Depois de carregar uma imagem de banner, adicionar pontos de acesso à imagem e publicar a imagem interativa, você estará pronto para adicioná-la à página do site.
 
-Se você for um cliente da AEM Sites, poderá adicionar a imagem interativa arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos de mídia dinâmica a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se você for um cliente da AEM Sites, poderá adicionar a imagem interativa arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 Se você for um cliente independente da AEM Assets, poderá adicionar manualmente a imagem interativa ao seu site, conforme descrito nesta seção.
 
