@@ -2,7 +2,7 @@
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 translation-type: tm+mt
-source-git-commit: ee53d400627fe2fd97d5cbdea8ddd38e00af191f
+source-git-commit: 38a589297caf3b28c7be569a819bd104a5079066
 workflow-type: tm+mt
 source-wordcount: '4050'
 ht-degree: 9%
@@ -17,12 +17,7 @@ ht-degree: 9%
 Esta seção descreve como estruturar o AEM como um Cloud Service Apache e configurações do Dispatcher, bem como como como validá-lo e executá-lo localmente antes de implantá-lo em ambientes do Cloud. Também descreve a depuração em ambientes da Cloud. Para obter informações adicionais sobre o Dispatcher, consulte a [AEM documentação do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
->
 >Os usuários do Windows precisarão usar o Windows 10 Professional ou outras distribuições compatíveis com o Docker. Este é um pré-requisito para executar e depurar o Dispatcher em um computador local. As seções abaixo incluem comandos usando as versões Mac ou Linux do SDK, mas o SDK do Windows pode ser usado de maneira semelhante.
-<!--
->[!WARNING]
->
->Windows users: the current version of AEM as a Cloud Service local Dispatcher Tools (v2.0.20) is incompatible with Windows. Please contact [Adobe Support](https://daycare.day.com/home.html) to receive updates on Windows compatibility. Alexandru note: removed at the request of Brian C -->
 
 ## Ferramentas do Dispatcher {#dispatcher-sdk}
 
@@ -32,7 +27,7 @@ As Ferramentas do Dispatcher fazem parte do AEM geral como um SDK do Cloud Servi
 * Ferramenta para clientes validarem se a configuração do dispatcher inclui apenas AEM como diretivas suportadas pelo Cloud Service.        Além disso, a ferramenta também valida que a sintaxe está correta para que o apache possa ser start com êxito.
 * Uma imagem do Docker que exibe o dispatcher localmente.
 
-## Download e extração das Ferramentas {#extracting-the-sdk}
+## Download e extração das ferramentas {#extracting-the-sdk}
 
 As Ferramentas do Dispatcher, parte do [AEM como um Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), podem ser baixadas de um arquivo zip no portal [Distribuição de software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Qualquer nova configuração disponível na nova versão das Ferramentas do dispatcher pode ser usada para implantar em ambientes da Cloud que executam essa versão do AEM na Cloud ou superior.
 
