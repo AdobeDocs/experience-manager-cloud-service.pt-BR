@@ -1,8 +1,8 @@
 ---
 title: Conjuntos de mídia mista
-description: Saiba como trabalhar com conjuntos de mídia mista no Dynamic Media
+description: Saiba como trabalhar com conjuntos de mídia mista no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 28%
