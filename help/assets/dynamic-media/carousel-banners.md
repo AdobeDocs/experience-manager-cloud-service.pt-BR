@@ -1,8 +1,8 @@
 ---
 title: Banners em carrossel
-description: Saiba como trabalhar com banners de carrossel no Dynamic Media
+description: Saiba como trabalhar com banners de carrossel no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 98a005dacc0bce0c03f0a58c50c6e85f12b1197f
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 4%
@@ -179,7 +179,7 @@ Considere os seguintes exemplos de URLs de visualização rápida e suas variáv
 
 ## Carregando banners de imagem {#uploading-image-banners}
 
-Se você já carregou as imagens que deseja usar, avance para a próxima etapa, [Criando Conjuntos de Carrossel](#creating-carousel-sets). Observe que as imagens usadas no carrossel devem ser carregadas após o Dynamic Media ter sido ativado.
+Se você já carregou as imagens que deseja usar, avance para a próxima etapa, [Criando Conjuntos de Carrossel](#creating-carousel-sets). Observe que as imagens usadas no carrossel devem ser carregadas depois que o Dynamic Media for ativado.
 
 Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/assets/manage-digital-assets.md).
 
@@ -367,7 +367,7 @@ Você pode usar a Pré-visualização para ver a aparência do seu banner de car
 Quando estiver satisfeito com o banner do carrossel, você poderá publicá-lo.
 Consulte [Incorporar o Visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
 Consulte [Vincular URLs ao seu aplicativo da Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
-Consulte [Adicionar ativos de mídia dinâmica às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Consulte [Adicionar ativos Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 Você pode pré-visualização banners de carrossel do Editor de carrossel (método preferencial) ou da lista **[!UICONTROL Visualizadores]**.
 
@@ -391,20 +391,20 @@ Você pode pré-visualização banners de carrossel do Editor de carrossel (mét
 
 ## Publicando banners do carrossel {#publishing-carousel-banners}
 
-Você precisa publicar o carrossel para usá-lo. A publicação de um conjunto de carrossel ativa o URL e o código incorporado. Ele também publica o carrossel para a nuvem Dynamic Media, que é integrada a uma CDN para delivery escaláveis e de desempenho.
+Você precisa publicar o carrossel para usá-lo. A publicação de um conjunto de carrossel ativa o URL e o código incorporado. Ele também publica o carrossel na nuvem do Dynamic Media, que é integrada a uma CDN para delivery escaláveis e de desempenho.
 
 >[!NOTE]
 Se você usar uma imagem interativa existente com pontos de acesso para seu banner de carrossel, deverá publicar a imagem interativa separadamente depois de publicar o banner do carrossel.
 Além disso, se você modificar uma imagem interativa publicada pré-existente que esteja usando em um banner de carrossel, deverá publicar a imagem interativa antes que essas alterações sejam refletidas no banner de carrossel.
 
-Consulte [Publicar ativos de mídia dinâmica](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obter informações sobre como publicar banners de carrossel.
+Consulte [Publicar Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obter informações sobre como publicar banners de carrossel.
 
 ## Adicionando um banner do carrossel à sua página do site {#adding-a-carousel-banner-to-your-website-page}
 
 Depois de fazer upload de imagens de banner para criar um carrossel, adicionar pontos de acesso e/ou mapas de imagem ao banner e publicar o conjunto de carrossel, você estará pronto para adicioná-lo à página existente do site.
 
 >[!NOTE]
-Se você for um cliente da AEM Sites, poderá adicionar o banner do carrossel diretamente à sua página arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos de mídia dinâmica a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se você for um cliente da AEM Sites, poderá adicionar o banner do carrossel diretamente à sua página arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 No entanto, se você for um cliente AEM ativos independentes, poderá adicionar manualmente o banner do carrossel à landing page do site, conforme descrito nesta seção.
 
