@@ -1,8 +1,8 @@
 ---
 title: Conjuntos de imagem
-description: Saiba como trabalhar com conjuntos de imagens no Dynamic Media
+description: Saiba como trabalhar com conjuntos de imagens no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '2070'
 ht-degree: 19%
@@ -16,7 +16,7 @@ Os Conjuntos de imagens fornecem aos usuários uma experiência de visualizaçã
 
 Os conjuntos de imagens são designados por um banner com a palavra `IMAGESET`. Além disso, se o Conjunto de imagens for publicado, a data de publicação, indicada pelo ícone **[!UICONTROL Mundo]**, estará no banner junto com a última data de modificação, indicada pelo ícone **[!UICONTROL Lápis]**.
 
-![chlimage_1-135](assets/chlimage_1-339.png)
+![chlimage_1-133](assets/chlimage_1-339.png)
 
 No conjunto de imagens, também é possível criar amostras criando um Conjunto de imagens e adicionando miniaturas.
 
@@ -184,7 +184,7 @@ No entanto, os conjuntos criados usando predefinições de conjuntos de lotes, f
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Na pesquisa, você pode selecionar **[!UICONTROL Filtrar]**, expandir **[!UICONTROL Mídia dinâmica]** e selecionar **[!UICONTROL Conjuntos]**.
+* Na pesquisa, você pode selecionar **[!UICONTROL Filtro]**, expandir **[!UICONTROL Dynamic Media]** e selecionar **[!UICONTROL Conjuntos]**.
 
    A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjuntos de lotes. Para conjuntos automatizados, o query de pesquisa é realizado usando critérios de pesquisa &quot;Start com&quot; diferentes de AEM pesquisa que se baseia no uso de critérios de pesquisa &quot;Contém&quot;. Definir o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
 
