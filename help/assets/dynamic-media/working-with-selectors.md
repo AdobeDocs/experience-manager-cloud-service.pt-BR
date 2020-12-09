@@ -1,10 +1,10 @@
 ---
 title: Trabalho com seletores
-description: Selecionar ativos para imagens interativas, vídeo interativo e banners de carrossel
+description: Saiba mais sobre os métodos que você pode usar para selecionar ativos para imagens interativas, vídeos interativos e banners de carrossel no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '748'
 ht-degree: 18%
 
 ---
@@ -62,7 +62,7 @@ Use o seletor de Produto para escolher um produto quando quiser que um ponto de 
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Seleção de sites no Dynamic Media {#selecting-sites}
+## Selecionar sites no Dynamic Media {#selecting-sites}
 
 Use o seletor de site para escolher uma página da Web quando quiser que um ponto de acesso ou mapa de imagem vincule-se a uma página da Web gerenciada dentro AEM sites.
 
