@@ -1,8 +1,8 @@
 ---
 title: Vídeos interativos
-description: Saiba como trabalhar com vídeo interativo e vídeos que podem ser comprados no Dynamic Media
+description: Saiba como trabalhar com vídeo interativo e vídeos que podem ser comprados no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '6016'
 ht-degree: 5%
@@ -27,7 +27,7 @@ Para ver um vídeo interativo e que pode ser comprado, clique em [Demonstraçõe
 
 * Clique na miniatura para pausar o vídeo e abrir a visualização rápida do produto. Por exemplo, clique na imagem em miniatura de KitchenAid no vídeo para exibir uma visualização de rotação de 360 graus do mixer ou amplie para ver os detalhes do mixer.
 
-Consulte também [Usando vídeo interativo com mídia dinâmica](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+Consulte também [Usando vídeo interativo com Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
 
 <!-- 
 
@@ -85,7 +85,7 @@ Conclua publicando os ativos de vídeo interativos. A publicação cria o códig
 Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 1. **Adicionando um vídeo interativo ao seu site ou ao seu site no**
-AEMIse você usar o AEM Sites, ou AEM eCommerce, ou ambos, você pode adicionar o vídeo interativo diretamente a uma página da Web em AEM arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos de mídia dinâmica a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+AEMIse você usar o AEM Sites, ou AEM eCommerce, ou ambos, você pode adicionar o vídeo interativo diretamente a uma página da Web em AEM arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 Use o código incorporado ou URL para integrar seu vídeo interativo com as experiências do site. Consulte [Integrar um vídeo interativo ao seu site](#integrating-an-interactive-video-with-your-website).
 Se você estiver usando um WCM de terceiros (Web Content Manager), é necessário integrar o novo vídeo interativo com a implementação existente do Quickview usada em seu site. Consulte [Integrar um vídeo interativo a um Quickview existente](#integrating-an-interactive-video-with-an-existing-quickview).
    [Adição de ativos de Mídia dinâmica a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -222,7 +222,7 @@ Você pode ignorar essa tarefa e continuar para a seguinte se desejar usar qualq
 
 Quando uma miniatura é clicada no ambiente de criação, uma pré-visualização da caixa de diálogo do Quickview é exibida.
 
-![chlimage_1-29](assets/chlimage_1-127.png)
+![chlimage_1-21](assets/chlimage_1-127.png)
 
 Como opção, você pode criar sua própria predefinição personalizada do visualizador de vídeo interativo. Você pode determinar, entre outras coisas, o estilo do player de vídeo, as miniaturas interativas e a visualização da grade de miniaturas que aparece no final do vídeo.
 
@@ -415,7 +415,7 @@ Para adicionar interatividade ao vídeo:
       <td><p>Em Tipo de ação, toque em <strong>Hiperlink</strong> e execute um dos procedimentos a seguir:</p> 
        <ul> 
        <li>Se você for um cliente da AEM Sites, toque no ícone Seletor de site (pasta) para navegar até uma página da Web. Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.</li> 
-       <li>Se você for um cliente independente do Dynamic Media, no campo de texto HREF, especifique o caminho do URL completo para uma página da Web vinculada.</li> 
+       <li>Se você for um cliente Dynamic Media independente, no campo de texto HREF, especifique o caminho do URL completo para uma página da Web vinculada.</li> 
        </ul> <p>Certifique-se de especificar se deseja abrir o link em uma nova guia do navegador ou na guia atual.</p> </td> 
       </tr> 
       <tr> 
@@ -467,7 +467,7 @@ Para adicionar interatividade ao vídeo:
       Na linha do tempo, toque em um segmento que deseja dividir ao meio e, em seguida, toque em **[!UICONTROL Dividir segmento]** na barra de ferramentas.
 
       Selecionar dois ou mais segmentos desativa o recurso **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Dividindo um segmento selecionado de dez segundos em dois segmentos de cinco segundos cada.
 
@@ -501,7 +501,7 @@ Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-as
 
 Depois de fazer upload de um vídeo, adicionar segmentos de linha do tempo a ele e publicar o vídeo interativo, você estará pronto para adicioná-lo ao site existente.
 
-Se você for um cliente da AEM Sites, poderá adicionar o vídeo interativo arrastando o componente de Mídia interativa para sua página. Consulte [Adicionar ativos de mídia dinâmica a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se você for um cliente da AEM Sites, poderá adicionar o vídeo interativo arrastando o componente de Mídia interativa para sua página. Consulte [Adicionar ativos Dynamic Media a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 Se você for um cliente independente da AEM Assets, poderá adicionar manualmente o vídeo interativo ao seu site, conforme descrito nesta seção.
 
