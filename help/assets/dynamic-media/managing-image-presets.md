@@ -1,8 +1,8 @@
 ---
 title: Gerenciamento de predefinições de imagens
-description: Entender predefinições de imagens e aprender como criar, modificar e gerenciar predefinições de imagens
+description: Entenda as predefinições de imagens e saiba como criar, modificar e gerenciar predefinições de imagens.
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '3608'
 ht-degree: 11%
@@ -67,7 +67,7 @@ Os subativos são criados pelo componente `Create Sub Asset process` dentro do f
 
 Você pode visualização os subativos ou as páginas ao abrir o ativo, tocar no menu Conteúdo e selecionar **[!UICONTROL Subassets]** ou **[!UICONTROL Páginas]**. Os subativos são ativos reais. Ou seja, as páginas de PDF são extraídas pelo componente de fluxo de trabalho `Create Sub Asset`. Eles são armazenados como `page1.pdf`, `page2.pdf` e assim por diante, abaixo do ativo principal. Depois de armazenados, o fluxo de trabalho `DAM Update Asset` processa-os.
 
-Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos AI, EPS ou PDF, as seguintes etapas de processamento são necessárias:
+Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos AI, EPS ou PDF, são necessárias as seguintes etapas de processamento:
 
 1. No fluxo de trabalho `DAM Update Asset`, o componente de processo `Rasterize PDF/AI Image Preview Rendition` rasteriza a primeira página do ativo original - usando a resolução configurada - em uma execução `cqdam.preview.png`.
 
@@ -173,7 +173,7 @@ Os seguintes scripts são usados pela integração do Dynamic Media:
 
 ### Configuração do tamanho da miniatura da imagem {#configuring-image-thumbnail-size}
 
-Você pode configurar o tamanho das miniaturas configurando essas configurações no fluxo de trabalho **[!UICONTROL DAM Update Asset]**. Há duas etapas no fluxo de trabalho nas quais você pode configurar o tamanho da miniatura dos ativos de imagem. Embora um (**[!UICONTROL Dynamic Media Process Image Assets]**) seja usado para ativos de imagem dinâmica e o outro (**[!UICONTROL Processar miniaturas]**) para geração de miniaturas estáticas ou quando todos os outros processos não conseguem gerar miniaturas, *ambos* devem ter as mesmas configurações.
+Você pode configurar o tamanho das miniaturas configurando essas configurações no fluxo de trabalho **[!UICONTROL DAM Update Asset]**. Há duas etapas no fluxo de trabalho nas quais você pode configurar o tamanho da miniatura dos ativos de imagem. Embora um (**[!UICONTROL Dynamic Media Process Image Assets]**) seja usado para ativos de imagem dinâmica e o outro (**[!UICONTROL Processar miniaturas]**) para geração de miniaturas estáticas ou quando todos os outros processos não geram miniaturas, *ambos* devem ter as mesmas configurações.
 
 Com a etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]**, as miniaturas são geradas pelo servidor de imagem e essa configuração é independente da configuração aplicada à etapa **[!UICONTROL Processar miniaturas]**. Gerar miniaturas por meio da etapa **[!UICONTROL Processar miniaturas]** é a maneira mais lenta e intensiva de memória para criar miniaturas.
 
@@ -401,7 +401,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
   </tr>
   <tr>
    <td><strong>Modificador de imagem</strong></td>
-   <td><p>Além das configurações comuns de imagem disponíveis na interface do usuário, o Dynamic Media suporta inúmeras modificações avançadas de imagem que você pode especificar no campo <strong>Modificadores de imagem</strong>. Esses parâmetros são definidos na <a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">referência de comando do Image Server Protocol</a>.</p> <p>Importante: A seguinte funcionalidade listada na API não é suportada:</p>
+   <td><p>Além das configurações comuns de imagem disponíveis na interface do usuário, a Dynamic Media oferece suporte a inúmeras modificações avançadas de imagem que você pode especificar no campo <strong>Modificadores de imagem</strong>. Esses parâmetros são definidos na <a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">referência de comando do Image Server Protocol</a>.</p> <p>Importante: A seguinte funcionalidade listada na API não é suportada:</p>
     <ul>
      <li>Comandos básicos de formatação e renderização de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandos de localização: <code>locale=</code> e <code>req=xlate</code></li>
@@ -410,7 +410,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Serviços de Dynamic Media não principais: SVG, renderização de imagem e Web para impressão</li>
+     <li>Serviços Dynamic Media não principais: SVG, renderização de imagem e Web para impressão</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -418,7 +418,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
 
 ### Definindo opções de predefinição de imagem com modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
 
-Além das opções disponíveis nas guias Básico e Avançado, é possível definir modificadores de imagem para fornecer mais opções ao definir predefinições de imagem. A renderização de imagem depende da API de renderização de imagem do Dynamic Media e é definida em detalhes na [Referência do protocolo HTTP](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
+Além das opções disponíveis nas guias Básico e Avançado, é possível definir modificadores de imagem para fornecer mais opções ao definir predefinições de imagem. A renderização de imagem depende da API de renderização de imagem da Dynamic Media e é definida em detalhes na [Referência do protocolo HTTP](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
 
 Estes são alguns exemplos básicos do que você pode fazer com modificadores de imagem.
 
@@ -482,4 +482,4 @@ As predefinições de imagens são publicadas automaticamente para você.
 ### Excluindo predefinições de imagens {#deleting-image-presets}
 
 1. Em AEM, toque no logotipo AEM para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos > Predefinições de imagem]**.
-1. Selecione uma predefinição e clique em **[!UICONTROL Excluir]**. O Dynamic Media confirma que você deseja excluí-lo. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
+1. Selecione uma predefinição e clique em **[!UICONTROL Excluir]**. A Dynamic Media confirma que você deseja excluí-lo. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
