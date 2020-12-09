@@ -1,16 +1,14 @@
 ---
-title: Trabalhar com ativos 3D no Dynamic Media
-seo-title: Trabalhar com ativos 3D no Dynamic Media
-description: Saiba como trabalhar com ativos 3D no Dynamic Media
-seo-description: Saiba como trabalhar com ativos 3D no Dynamic Media
+title: Trabalhar com ativos 3D na Dynamic Media
+description: Saiba como trabalhar com ativos 3D no Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 72bf52ca97b9c3cac84361207e53093fc69c0b43
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2270'
 ht-degree: 4%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 4%
 
 # Trabalhar com ativos 3D no Dynamic Media {#working-with-three-d-assets-dm}
 
-O Dynamic Media permite carregar, gerenciar, visualização e fornecer ativos 3D como experiências imersivas.
+A Dynamic Media permite que você carregue, gerencie, visualização e entregue ativos 3D como experiências imersivas.
 
 * Publicação com um clique (usando **[!UICONTROL Publicação rápida]** na barra de ferramentas) de ativos 3D para gerar um URL.
 * Suporte otimizado para exibir ativos 3D com a predefinição do visualizador Dimensional interativo de alta qualidade, capacitado pela Adobe Dimension.
@@ -32,7 +30,7 @@ Não há necessidade de instalação adicional para usar ativos 3D no Dynamic Me
 
 ## Formatos 3D suportados no Dynamic Media {#supported-three-d-file-formats-in-dm}
 
-O Dynamic Media suporta os seguintes formatos de arquivo 3D.
+A Dynamic Media oferece suporte aos seguintes formatos de arquivo 3D.
 
 Consulte também [formatos 3D suportados](/help/assets/file-format-support.md#support-3d-formats)
 
@@ -47,13 +45,13 @@ Consulte também [formatos 3D suportados](/help/assets/file-format-support.md#su
 
 A seguinte descrição passo a passo do fluxo de trabalho foi projetada para ajudá-lo a iniciar e executar rapidamente com ativos 3D no Dynamic Media.
 
-Antes de trabalhar com ativos 3D no Dynamic Media, verifique se o administrador do Experience Manager já habilitou e configurou Cloud Services do Dynamic Media.
+Antes de trabalhar com ativos 3D no Dynamic Media, verifique se o administrador do Experience Manager já habilitou e configurou Cloud Services Dynamic Media.
 
-Consulte [Configurando Cloud Services de Mídia Dinâmica.](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
+Consulte [Configurando Cloud Services Dynamic Media.](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
 1. **Carregar ativos 3D**
 
-   * [Fazer upload de ativos 3D para uso no Dynamic Media](/help/assets/add-assets.md#upload-assets)
+   * [Fazer upload de seus ativos 3D para uso no Dynamic Media](/help/assets/add-assets.md#upload-assets)
    * [Formatos de arquivo 3D suportados para upload no Dynamic Media](#supported-three-d-file-formats-in-dm)
 
 1. **Gerenciar ativos 3D**
@@ -75,8 +73,8 @@ Consulte [Configurando Cloud Services de Mídia Dinâmica.](/help/assets/dynamic
 
 1. **Publicar ativos 3D**
 
-   * [Publicar ativos estáticos do Dynamic Media 3D](#publishing-three-d-assets)
-   * [Métodos alternativos para publicar ativos em Dynamic Media 3D usando o visualizador Dimensional](#alternate-publish-methods)
+   * [Publicar ativos estáticos Dynamic Media 3D](#publishing-three-d-assets)
+   * [Métodos alternativos para publicar ativos 3D do Dynamic Media usando o Visualizador Dimensional](#alternate-publish-methods)
 
 ## Sobre a visualização e interação com ativos 3D {#viewing-three-d-assets}
 
@@ -170,7 +168,7 @@ componente de mídia 3D Um ativo 3D totalmente interativo, como exibido no modo 
 
 ## Sobre como trabalhar com o componente de mídia 3D {#working-with-three-d-media-component}
 
-O Dynamic Media inclui um componente de Mídia 3D do Dynamic Media que pode ser usado no Experience Manager Sites para permitir a visualização interativa de modelos 3D em suas páginas da Web.
+A Dynamic Media inclui um componente de mídia 3D da Dynamic Media que você pode usar no Experience Manager Sites para permitir a visualização interativa de modelos 3D em suas páginas da Web.
 
 * [Adicionar o componente de mídia 3D ao modelo de página](#adding-three-d-media-component-to-page-template)
 * [Adicionar o componente de mídia 3D a uma página da Web](#adding-the-three-d-media-component-to-a-web-page)
@@ -189,18 +187,18 @@ O Dynamic Media inclui um componente de Mídia 3D do Dynamic Media que pode ser 
 
 1. Toque em uma área vazia na região **[!UICONTROL Container de layout]** para selecioná-la e abrir a barra de ferramentas associada.
 1. Na barra de ferramentas, toque no ícone **[!UICONTROL Política]** para abrir o **[!UICONTROL Editor de Políticas]**.
-1. Na seção **[!UICONTROL Propriedades]**, na guia **[!UICONTROL Componentes permitidos]**, vá até **[!UICONTROL Mídia dinâmica]** e expanda a lista e marque **[!UICONTROL Mídia 3D]**.
+1. Na seção **[!UICONTROL Propriedades]**, na guia **[!UICONTROL Componentes permitidos]**, role até **[!UICONTROL Dynamic Media]**, expanda a lista e marque **[!UICONTROL 3D Media]**.
 1. Toque em **[!UICONTROL Concluído]** para salvar as alterações e fechar o **[!UICONTROL Editor de políticas]**.
 
-   Agora você pode colocar o componente Mídia 3D do Dynamic Media em todas as páginas que usam esse modelo.
+   Agora você pode colocar o componente de mídia 3D do Dynamic Media em todas as páginas que usam esse modelo.
 
 ## Adicionar o componente de mídia 3D a uma página da Web {#adding-the-three-d-media-component-to-a-web-page}
 
 Se você estiver usando o Adobe Experience Manager como seu sistema de gestão de conteúdo da Web, poderá adicionar ativos 3D às suas páginas da Web por meio do componente de mídia 3D.
 
-Consulte também [Adicionar ativos de Mídia Dinâmica às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Consulte também [Adicionar ativos Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-1. Abra Experience Manager Sites e selecione a página da Web à qual deseja adicionar o componente Mídia 3D do Dynamic Media.
+1. Abra Experience Manager Sites e selecione a página da Web à qual deseja adicionar o componente de mídia 3D da Dynamic Media.
 1. Toque no ícone **[!UICONTROL Editar]** (lápis) para abrir a página no editor de páginas. Verifique se o modo **[!UICONTROL Editar]** está selecionado próximo ao canto superior direito da página.
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
@@ -247,21 +245,21 @@ Consulte [Adicionar o componente de mídia 3D a uma página da Web.](#adding-the
 >
 >Enquanto uma página da Web está no modo Experience Manager Sites **[!UICONTROL Edit]**, o componente de Mídia 3D exibe o ativo 3D, mas nenhuma interação com o ativo é possível. Para tornar o ativo interativo, você pode usar o recurso **[!UICONTROL Pré-visualização]** para visualização da página da Web no editor de páginas com total acesso à funcionalidade do componente de mídia 3D.
 
-## Publicar ativos estáticos do Dynamic Media 3D {#publishing-three-d-assets}
+## Publicar ativos 3D estáticos do Dynamic Media {#publishing-three-d-assets}
 
-O Dynamic Media aceita uma variedade de formatos de arquivo 3D compatíveis com *conteúdo estático* no Dynamic Media. O conteúdo estático significa que você pode fazer upload e publicar ativos 3D, mas não há suporte para *dynamic* criação de imagens ou redefinição de imagens associadas ao ativo 3D. O motivo é que o Dynamic Media Imaging Server não reconhece formatos 3D. Assim, depois de publicar um ativo 3D no Dynamic Media, você tem um URL instantâneo que pode ser copiado. O URL do ativo 3D segue a estrutura normal de URL do Dynamic Media. No entanto, não é possível editar nenhum parâmetro no URL do ativo, ao contrário dos ativos de imagem tradicionais no Dynamic Media.
+A Dynamic Media aceita uma variedade de formatos de arquivo 3D compatíveis com *conteúdo estático* no Dynamic Media. O conteúdo estático significa que você pode fazer upload e publicar ativos 3D, mas não há suporte para *dynamic* criação de imagens ou redefinição de imagens associadas ao ativo 3D. O motivo é que o Dynamic Media Imaging Server não reconhece formatos 3D. Assim, depois de publicar um ativo 3D no Dynamic Media, você tem um URL instantâneo que pode ser copiado. O URL do ativo 3D segue a estrutura normal de URL da Dynamic Media. No entanto, não é possível editar nenhum parâmetro no URL do ativo, ao contrário dos ativos de imagem tradicionais no Dynamic Media.
 
 Consulte também [Obter um URL para um ativo estático.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
 
 Na **[!UICONTROL Visualização de cartão]**, um pequeno ícone de globo aparece logo abaixo do nome de um ativo e à esquerda de sua data e hora para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
 
-Se você estiver usando o Experience Manager como seu WCM, use este método de publicação para adicionar os ativos 3D do Dynamic Media diretamente na sua página da Web.
+Se você estiver usando o Experience Manager como seu WCM, use este método de publicação para adicionar os ativos 3D da Dynamic Media diretamente na sua página da Web.
 
-Consulte também [Publicar ativos de Mídia Dinâmica.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+Consulte também [Publicar ativos Dynamic Media.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
 Consulte também [Páginas de publicação.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
 
-**Para publicar ativos estáticos do Dynamic Media 3D**
+**Para publicar ativos 3D estáticos do Dynamic Media**
 
 1. Abra um ativo 3D (formato de arquivo GLB, OBJ ou STL) para visualização na página de detalhes do ativo.
 1. Na barra de ferramentas, toque em **[!UICONTROL Publicação rápida]**.
@@ -284,12 +282,12 @@ Consulte também [Páginas de publicação.](/help/sites-cloud/authoring/fundame
 
 ### Métodos alternativos para publicar ativos 3D do Dynamic Media usando o visualizador Dimensional {#alternate-publish-methods}
 
-Use os dois métodos a seguir para publicar ativos do Dynamic Media 3D se você *não* estiver usando o Experience Manager como seu WCM.
+Use os dois métodos a seguir para publicar ativos Dynamic Media 3D se você *não* estiver usando o Experience Manager como seu WCM.
 
-* **[!UICONTROL URL]**  - Use o  **** URL se estiver usando um sistema de gestão de conteúdo da Web de terceiros e quiser vincular ativos 3D do Dynamic Media às suas páginas da Web usando o Visualizador Dimensional.
+* **[!UICONTROL URL]**  - Use o  **** URL se estiver usando um sistema de gestão de conteúdo da Web de terceiros e quiser vincular ativos 3D da Dynamic Media a suas páginas da Web usando o Visualizador Dimensional.
 
    Consulte [Vincular URLs ao aplicativo da Web.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)
 
-* **[!UICONTROL Incorporar]**  - Use  **** Incorporar quando quiser visualização um ativo 3D do Dynamic Media incorporado em uma página da Web usando o visualizador Dimensional. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Embed]**.
+* **[!UICONTROL Incorporar]**  - Use  **** Incorporar quando quiser visualização um ativo Dynamic Media 3D incorporado em uma página da Web usando o Visualizador Dimensional. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Embed]**.
 
-   Consulte [Incorporação do Vídeo de Mídia Dinâmica, do Visualizador de Imagens ou do Visualizador Dimensional em uma página da Web.](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)
+   Consulte [Incorporar o Dynamic Media Video, o Visualizador de imagens ou o Visualizador de dimensões em uma página da Web.](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)
