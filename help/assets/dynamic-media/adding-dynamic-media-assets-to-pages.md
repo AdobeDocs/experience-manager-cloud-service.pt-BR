@@ -1,10 +1,10 @@
 ---
 title: Adição de ativos de Mídia dinâmica a páginas
-description: Como adicionar componentes do Dynamic Media a uma página no Experience Manager
+description: Como adicionar componentes do Dynamic Media a uma página no Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '3134'
+source-wordcount: '3139'
 ht-degree: 30%
 
 ---
@@ -14,22 +14,22 @@ ht-degree: 30%
 
 Para adicionar a funcionalidade Dynamic Media aos ativos que você usa nos sites, é possível adicionar o componente **Dynamic Media**, **Mídia interativa**, **Mídia panorâmica** ou **Mídia de vídeo 360** diretamente na página. Para fazer isso, entre no modo Layout e ative os componentes do Dynamic Media. Em seguida, adicione esses componentes à página e adicionar ativos ao componente. Os componentes do Dynamic Media são inteligentes - eles sabem se você está adicionando uma imagem ou um vídeo e as opções de configuração disponíveis mudam de acordo.
 
-Você adiciona ativos de Dynamic Media diretamente à página se estiver usando o Experience Manager como seu WCM. Se estiver usando um dispositivo de terceiros no WCM, [vincule](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorpore](/help/assets/dynamic-media/embed-code.md) os ativos. Para obter um site responsivo de terceiros, consulte [Fornecer imagens otimizadas para um site responsivo](/help/assets/dynamic-media/responsive-site.md).
+Você adiciona ativos da Dynamic Media diretamente à página se estiver usando o Experience Manager como seu WCM. Se estiver usando um dispositivo de terceiros no WCM, [vincule](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorpore](/help/assets/dynamic-media/embed-code.md) os ativos. Para obter um site responsivo de terceiros, consulte [Fornecer imagens otimizadas para um site responsivo](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->Você deve publicar ativos antes de adicioná-los às páginas no Experience Manager. Consulte [Publicar ativos de mídia dinâmica](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Você deve publicar ativos antes de adicioná-los às páginas no Experience Manager. Consulte [Publicar ativos Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-## Adicionar um componente de Dynamic Media a uma página {#adding-a-dynamic-media-component-to-a-page}
+## Adicionar um componente Dynamic Media a uma página {#adding-a-dynamic-media-component-to-a-page}
 
-Adicionar um componente de mídia 3D, Dynamic Media, Interative Media, Panorâmica Media, Smart Crop Video ou Video 360 Media a uma página é o mesmo que adicionar um componente a qualquer página. Os componentes do Dynamic Media estão descritos nas seções a seguir.
+Adicionar um componente de mídia 3D, Dynamic Media, Interative Media, Panorâmica Media, Smart Crop Video ou Video 360 Media a uma página é o mesmo que adicionar um componente a qualquer página. Os componentes do Dynamic Media são descritos nas seções a seguir.
 
-**Adicionar um componente de Dynamic Media a uma página**
+**Adicionar um componente Dynamic Media a uma página**
 
-1. No Experience Manager, abra a página onde deseja adicionar o componente Mídia dinâmica.
-1. No painel esquerdo, toque no ícone **[!UICONTROL Components]** e, em seguida, filtre para Dynamic Media.
+1. No Experience Manager, abra a página onde deseja adicionar o componente Dynamic Media.
+1. No painel esquerdo, toque no ícone **[!UICONTROL Componentes]** e, em seguida, filtre para Dynamic Media.
 
-   Se nenhuma lista de componentes do Dynamic Media estiver disponível, é necessário ativar os componentes do Dynamic Media que você deseja usar. Consulte [Ativando componentes do Dynamic Media](#enabling-dynamic-media-components).
+   Se nenhuma lista de componentes do Dynamic Media estiver disponível, você provavelmente precisará ativar os componentes do Dynamic Media que deseja usar. Consulte [Ativar componentes do Dynamic Media](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -45,15 +45,15 @@ Adicionar um componente de mídia 3D, Dynamic Media, Interative Media, Panorâmi
 
    ![Componente de mídia do Video 360](assets/6_5_360video_wcmcomponentviewerpreset.png)
 
-   O componente Dynamic Media Video 360 Media.
+   O componente de mídia Dynamic Media Video 360.
 
 1. Quando terminar, no canto superior direito da caixa de diálogo, toque na marca de seleção para salvar as alterações.
 
-### Ativação dos componentes do Dynamic Media {#enabling-dynamic-media-components}
+### Habilitar componentes do Dynamic Media {#enabling-dynamic-media-components}
 
-Se nenhum componente do Dynamic Media estiver disponível para adicionar a uma página, isso provavelmente significa que você precisa primeiro ativar os componentes que deseja usar.
+Se nenhum componente Dynamic Media estiver disponível para adicionar a uma página, isso provavelmente significa que você precisa primeiro ativar os componentes que deseja usar.
 
-1. No Experience Manager, abra a página onde deseja adicionar o componente Mídia dinâmica.
+1. No Experience Manager, abra a página onde deseja adicionar o componente Dynamic Media.
 1. No lado esquerdo da barra de ferramentas próximo à parte superior da página, toque no ícone Informações da página e, em seguida, toque em **[!UICONTROL Editar modelo]** na lista suspensa.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -68,17 +68,17 @@ Se nenhum componente do Dynamic Media estiver disponível para adicionar a uma p
    ![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
 
 1. Role até ver **[!UICONTROL Dynamic Media]**.
-1. Toque no ícone > à esquerda de **[!UICONTROL Dynamic Media]** para expandir a lista, selecione os componentes do Dynamic Media que deseja ativar.
+1. Toque no ícone > à esquerda de **[!UICONTROL Dynamic Media]** para expandir a lista, selecione os componentes Dynamic Media que deseja ativar.
 
-   ![Lista de componentes do Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
+   ![lista de componentes Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
 1. Perto do canto superior direito da página **[!UICONTROL Container de layout]**, toque no ícone Concluído (marca de seleção).
 
-1. No lado direito da barra de ferramentas, próximo à parte superior da página, na lista suspensa, toque em **[!UICONTROL Conteúdo inicial]** e [adicione um componente de Mídia dinâmica a uma página](#adding-a-dynamic-media-component-to-a-page), como de costume.
+1. No lado direito da barra de ferramentas, próximo à parte superior da página, na lista suspensa, toque em **[!UICONTROL Conteúdo inicial]** e [adicione um componente Dynamic Media a uma página](#adding-a-dynamic-media-component-to-a-page), como de costume.
 
-## Localizando componentes de Dynamic Media {#localizing-dynamic-media-components}
+## Localizando componentes do Dynamic Media {#localizing-dynamic-media-components}
 
-Você pode localizar componentes do Dynamic Media de uma das duas maneiras:
+Você pode localizar componentes Dynamic Media de uma das duas maneiras:
 
 * Em uma página da Web no Sites, abra **[!UICONTROL Propriedades]** e selecione a guia **[!UICONTROL Avançado]**. Selecione o idioma desejado para localização.
 
@@ -90,11 +90,11 @@ Você pode localizar componentes do Dynamic Media de uma das duas maneiras:
    >
    >Observe que nem todos os idiomas disponíveis no menu **[!UICONTROL Idioma]** têm tokens atribuídos no momento.
 
-## Componentes disponíveis do Dynamic Media {#dynamic-media-components}
+## Componentes Dynamic Media disponíveis {#dynamic-media-components}
 
-Os componentes do Dynamic Media estão disponíveis quando você toca no ícone **[!UICONTROL Components]** e, em seguida, filtra em **[!UICONTROL Dynamic Media]**.
+Os componentes do Dynamic Media estão disponíveis quando você toca no ícone **[!UICONTROL Componentes]** e, em seguida, filtra em **[!UICONTROL Dynamic Media]**.
 
-Os componentes do Dynamic Media disponíveis incluem:
+Os componentes Dynamic Media disponíveis incluem:
 
 * **[!UICONTROL Dynamic Media]** - use para ativos como imagens, vídeo, eCatalogs e conjuntos de rotação.
 * **[!UICONTROL Mídia]**  interativa - use para qualquer ativo interativo, como vídeo interativo, imagens interativas ou conjuntos de carrossel.
@@ -115,12 +115,12 @@ O componente Dynamic Media é inteligente. Dependendo de você adicionar uma ima
 >
 >Se sua página da Web tiver o seguinte:
 >
->* Várias instâncias do componente Mídia dinâmica sendo usado na mesma página.
+>* Várias instâncias do componente Dynamic Media sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
 
 >
 >
-Esteja ciente de que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente de Dynamic Media nessa página.
+Esteja ciente de que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente do Dynamic Media nessa página.
 >
 >Entretanto, é possível usar a mesma predefinição do visualizador para todos os componentes do Dynamic Media que usam ativos do mesmo tipo, na página.
 
@@ -134,7 +134,7 @@ O componente Mídia dinâmica permite adicionar imagens dinâmicas, incluindo co
 
 Você também pode configurar a predefinição do visualizador, a predefinição da imagem ou o formato da imagem diretamente no componente. Para tornar uma imagem responsiva, você pode definir os pontos de interrupção ou aplicar uma predefinição de imagem responsiva.
 
-Você pode editar as seguintes Configurações de Dynamic Media tocando no ícone **[!UICONTROL Editar]** no componente e, em seguida, **[!UICONTROL Configurações de Dynamic Media]**.
+Você pode editar as seguintes configurações do Dynamic Media tocando no ícone **[!UICONTROL Editar]** no componente e, em seguida, **[!UICONTROL Configurações do Dynamic Media]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
@@ -179,11 +179,11 @@ Você pode editar as seguintes Configurações de Dynamic Media tocando no ícon
 
 #### Ao trabalhar com vídeo {#when-working-with-video}
 
-Use o componente Mídia dinâmica para adicionar vídeo dinâmico às páginas da Web. Ao editar o componente, você pode optar por usar uma predefinição de visualizador de vídeo predefinida para reproduzir o vídeo na página.
+Use o componente Dynamic Media para adicionar vídeo dinâmico às suas páginas da Web. Ao editar o componente, você pode optar por usar uma predefinição de visualizador de vídeo predefinida para reproduzir o vídeo na página.
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-Você pode editar as seguintes Configurações de Dynamic Media clicando em **[!UICONTROL Editar]** no componente.
+Você pode editar as seguintes configurações do Dynamic Media clicando em **[!UICONTROL Editar]** no componente.
 
 >[!NOTE]
 >
@@ -208,15 +208,15 @@ Você pode editar as seguintes Configurações de Dynamic Media clicando em **[!
 
 #### Ao trabalhar com o Smart Crop {#when-working-with-smart-crop}
 
-Use o componente Mídia dinâmica para adicionar ativos de imagem de Recorte inteligente às suas páginas da Web. Ao editar o componente, você pode optar por usar uma predefinição de visualizador de vídeo predefinida para reproduzir o vídeo na página.
+Use o componente Dynamic Media para adicionar ativos de imagem de Recorte inteligente às suas páginas da Web. Ao editar o componente, você pode optar por usar uma predefinição de visualizador de vídeo predefinida para reproduzir o vídeo na página.
 
-Consulte [Usando o Smart Crop com Experience Manager Assets Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+Consulte [Usando o recorte inteligente com o Experience Manager Assets Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 Consulte também [Perfis de imagem](/help/assets/dynamic-media/image-profiles.md).
 
 ![dm-settings-smart-cut](assets/dm-settings-smart-crop.png)
 
-Você pode editar a seguinte Configuração de Mídia Dinâmica clicando em **[!UICONTROL Editar]** no componente.
+Você pode editar as seguintes configurações do Dynamic Media clicando em **[!UICONTROL Editar]** no componente.
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ Você pode editar a seguinte Configuração de Mídia Dinâmica clicando em **[!
 
    Você pode editar as seguintes Configurações avançadas clicando em **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Ativar a correspondência]** de proporção — Selecione essa opção para permitir que o Dynamic Media escolha uma execução de recorte inteligente com uma proporção que melhor corresponda à proporção da imagem original.
+* **[!UICONTROL Habilitar correspondência]** de proporção — Selecione essa opção para permitir que a Dynamic Media escolha uma execução de recorte inteligente com uma proporção que melhor corresponda à proporção da imagem original.
 
 * **[!UICONTROL Título]**—Altere o título da imagem de Recorte inteligente.
 
@@ -329,16 +329,16 @@ Você pode editar a seguinte configuração tocando em **[!UICONTROL Configurar]
 
 Se a predefinição do visualizador que você está procurando não estiver visível, verifique se ela foi publicada. É necessário publicar as predefinições do visualizador antes de usá-las. Consulte [Gerenciar predefinições do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-### Usar HTTP/2 para delivery de ativos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
+### Usar HTTP/2 para delivery de ativos Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O delivery dos ativos Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
-Consulte [Delivery HTTP2 de Content](/help/assets/dynamic-media/http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
+Consulte [Delivery HTTP2 de Content](/help/assets/dynamic-media/http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta Dynamic Media.
 
 >[!MORELIKETHIS]
 >
 >* [Uso do reprodutor de vídeo no Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Usando vídeo interativo com mídia dinâmica Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Uso de vídeo interativo com o Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
 >* [Como entender o Asset Viewer com o Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
 >* [Usando a miniatura de vídeo personalizada com o Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
 >* [Como entender o gerenciamento de cores com o Experience Manager Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
