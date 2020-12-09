@@ -2,10 +2,10 @@
 title: Promoção de lançamentos
 description: 'Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar. '
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 80%
+source-wordcount: '817'
+ht-degree: 76%
 
 ---
 
@@ -64,6 +64,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
    * **Escopo**
       * **Promover lançamento completo**
       * **Divulgar as páginas modificadas**
+      * **Promover páginas**  aprovadas - dependendo do fluxo de trabalho de aprovação de inicialização
       * **Divulgar a página atual**
       * **Divulgar página atual e subpáginas**
 
@@ -75,7 +76,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
       >
       >Isso abrange um único lançamento, se tiver lançamentos aninhados, consulte[ Promover um lançamento aninhado](#promoting-a-nested-launch).
 1. Selecione **Próximo** para continuar.
-1. É possível analisar as páginas a serem promovidas e isso dependerá do intervalo de páginas escolhido:
+1. Você pode revisar as páginas a serem promovidas; eles dependerão do intervalo de páginas que você tiver escolhido:
 
    ![Revisar promoção](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
@@ -106,6 +107,7 @@ Depois de criar uma inicialização aninhada, é possível promovê-la para qual
    * **Escopo**  - Aqui você pode selecionar se deseja promover a inicialização inteira ou somente as páginas que foram realmente editadas. Nesse último caso, é possível incluir/excluir as subpáginas. A configuração padrão é promover apenas as alterações da página atual:
       * **Promover lançamento completo**
       * **Divulgar as páginas modificadas**
+      * **Promover páginas**  aprovadas - dependendo do fluxo de trabalho de aprovação de inicialização
       * **Divulgar a página atual**
       * **Divulgar página atual e subpáginas**
 
