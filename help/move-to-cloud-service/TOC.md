@@ -4,10 +4,10 @@ user-guide-title: Migrar para o AEM as a Cloud Service
 breadcrumb-title: Guia de migração
 user-guide-description: Entenda a jornada de transição para o Cloud Service.
 translation-type: tm+mt
-source-git-commit: 4ded4f7da78c42f28cf8e472f88d18918f8cf1d0
+source-git-commit: 81e84ae3993321c210de917a9a9bcd17d32b2040
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 84%
 + Ferramentas de refatoração de código {#refactoring-tools}
    + [Experiência unificada](/help/move-to-cloud-service/unified-experience.md)
    + [Modernizador do repositório](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
+   + [Conversor de índice](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [Migração de fluxo de trabalho de ativos](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [Conversor do Dispatcher do AEM](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-   + [Conversor de índice](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [Ferramentas de Modernização do AEM](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
