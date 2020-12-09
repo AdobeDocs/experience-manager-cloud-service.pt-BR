@@ -1,8 +1,8 @@
 ---
 title: Configuração do Dynamic Media
-description: Para configurar a mídia dinâmica, é necessário configurar a mídia dinâmica e gerenciar predefinições de imagem e do visualizador
+description: Para configurar o Dynamic Media, é necessário configurar o Dynamic Media e gerenciar predefinições de imagens e visualizadores.
 translation-type: tm+mt
-source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Configurando o Dynamic Media {#setting-up-dynamic-media}
 
-[A Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media ajuda você a gerenciar ativos, fornecendo produtos visuais avançados e ativos de marketing sob demanda, dimensionados automaticamente para consumo na Web, em dispositivos móveis e em sites sociais. Usando um conjunto de ativos de origem primária, o Dynamic Media gera e oferece várias variações de conteúdo avançado em tempo real por meio de sua rede global, escalável e otimizada para desempenho.
+[A Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media ajuda você a gerenciar ativos, fornecendo produtos visuais avançados e ativos de marketing sob demanda, dimensionados automaticamente para consumo na Web, em dispositivos móveis e em sites sociais. Usando um conjunto de ativos de origem primária, a Dynamic Media gera e oferece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -40,4 +40,4 @@ Consulte também os seguintes tópicos:
 >
 >**Se você estiver atualizando:**
 >
->* Depois que você tiver o Experience Manager e em execução, qualquer ativo carregado terá o Dynamic Media automaticamente ativado (a menos que ele tenha sido explicitamente desativado pelo administrador do sistema). Se você estiver em uma instância atualizada do Experience Manager e for novo no Dynamic Media, talvez seja necessário reprocessar seus ativos para torná-los habilitados para o Dynamic Media.
+>* Depois que você tiver Experience Manager e executando, qualquer ativo carregado terá o Dynamic Media ativado automaticamente (a menos que ele tenha sido explicitamente desativado pelo administrador do sistema). Se você estiver em uma instância atualizada do Experience Manager e for novo no Dynamic Media, talvez seja necessário reprocessar seus ativos para torná-los habilitados para Dynamic Media.
