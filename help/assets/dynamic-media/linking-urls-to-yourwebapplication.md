@@ -1,8 +1,8 @@
 ---
 title: Vincular URLs ao aplicativo da Web.
-description: Como vincular URLs ao aplicativo da Web em mídia dinâmica
+description: Como vincular URLs ao seu aplicativo da Web no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 11%
@@ -12,7 +12,7 @@ ht-degree: 11%
 
 # Vincular URLs ao aplicativo da Web.{#linking-urls-to-your-web-application}
 
-Seus sites e aplicativos acessam os serviços de Dynamic Media por meio de chamadas de URL. Depois de publicar um ativo, o Dynamic Media ativa uma string de URL que faz referência ao ativo. Você pode colar esses URLs em um navegador da Web para teste.
+Seus sites e aplicativos acessam os serviços da Dynamic Media por meio de chamadas de URL. Depois de publicar um ativo, a Dynamic Media ativa uma string de URL que faz referência ao ativo. Você pode colar esses URLs em um navegador da Web para teste.
 
 Você vincula a URLs somente se estiver *não* usando AEM como seu WCM. A vinculação versus incorporação é usada quando você deseja fornecer um player de vídeo como uma janela pop-up ou modal. Se você estiver usando AEM como seu WCM, [adicione os ativos diretamente na sua página.](adding-dynamic-media-assets-to-pages.md)
 
@@ -82,7 +82,7 @@ Existem várias maneiras diferentes de obter uma string de URL. No entanto, as e
 
 ## Obter um URL para um ativo estático {#obtaining-a-url-for-a-static-asset}
 
-O Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicionais além de imagens e vídeos. Os formatos de ativos estáticos suportados para o delivery incluem:
+A Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicionais além de imagens e vídeos. Os formatos de ativos estáticos suportados para o delivery incluem:
 
 * arquivos 3D
 * GIF animado
@@ -156,7 +156,7 @@ O Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
 1. Em AEM, navegue até **[!UICONTROL Ferramentas > Implantação > Nuvem > Cloud Services]**.
 1. Na página **[!UICONTROL Serviços da nuvem]**, role até o cabeçalho **[!UICONTROL Serviços de nuvem do Dynamic Media]** e toque em **[!UICONTROL Mostrar configurações]**.
 1. Em **[!UICONTROL Configurações disponíveis]**, toque no nome da configuração desejada.
-1. Na página **[!UICONTROL Configurações do Cloud Services de Mídia Dinâmica]**, faça o seguinte:
+1. Na página **[!UICONTROL Configurações do Cloud Services Dynamic Media]**, faça o seguinte:
 
    * Em **[!UICONTROL URL do serviço de vídeo]**, copie o caminho do URL inteiro. Você precisará do caminho do URL copiado posteriormente nessas etapas. Por exemplo, o caminho do URL pode ser exibido da seguinte maneira:
 
@@ -206,8 +206,8 @@ O Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Usar HTTP/2 para fornecer seus ativos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Usar o HTTP/2 para fornecer seus ativos da Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O delivery dos ativos Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
-Consulte [Delivery HTTP2 de Content](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
+Consulte [Delivery HTTP2 de Content](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta Dynamic Media.
