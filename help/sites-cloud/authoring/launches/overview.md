@@ -2,10 +2,10 @@
 title: Lançamentos
 description: Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma versão futura. Eles permitem que você faça alterações prontas para publicação futura, mantendo ao mesmo tempo suas páginas atuais
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 83%
+source-wordcount: '907'
+ht-degree: 80%
 
 ---
 
@@ -20,6 +20,11 @@ Por exemplo, as páginas de produtos sazonais da sua loja online são atualizada
 
 * Alterações nas páginas de origem que ocorrem como resultado de tarefas de manutenção normais. Essas alterações são duplicadas automaticamente nas páginas de lançamento.
 * Edições realizadas diretamente nas páginas de lançamento, em preparação para o próximo trimestre.
+
+Você também pode:
+
+* Navegar pelo conteúdo na ramificação de lançamento; adicionar ou remover páginas, conforme necessário.
+* Pré-visualização como o conteúdo publicado será exibido em uma data/hora específica no futuro.
 
 Quando o próximo trimestre chegar, você promoverá as páginas de lançamento para poder publicar as páginas de origem (mantendo o conteúdo atualizado). É possível promover todas as páginas ou apenas aquelas que você modificou.
 
