@@ -1,8 +1,8 @@
 ---
 title: Entrega de ativos de Mídia dinâmica
-description: Saiba como fornecer ativos de mídia dinâmica
+description: Saiba como fornecer ativos Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 7a2eef19a3807d02e7eba0ce177465aabc35a53e
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 15%
@@ -12,7 +12,7 @@ ht-degree: 15%
 
 # Entrega de ativos de Mídia dinâmica{#delivering-dynamic-media-assets}
 
-A forma como você pode fornecer seus ativos de mídia dinâmica - vídeo e imagens - depende de como seu site é implementado.
+A forma como você pode fornecer seus ativos do Dynamic Media - vídeo e imagens - depende de como seu site é implementado.
 
 Com a Mídia dinâmica, você tem várias opções:
 
@@ -29,18 +29,18 @@ Com a Mídia dinâmica, você tem várias opções:
 
 Para obter mais informações, consulte os seguintes tópicos:
 
-* [Adicionar ativos de mídia dinâmica a páginas da Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Adicionar ativos Dynamic Media a páginas da Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Incorporação do visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md)
 * [Ativação da proteção de hotlink no Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Vincular URLs à sua Aplicação web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Fornecer imagens otimizadas para um site responsivo](/help/assets/dynamic-media/responsive-site.md)
 * [DELIVERY HTTP2 do conteúdo](/help/assets/dynamic-media/http2faq.md)
-* [Invalidar o cache CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [Invalidar o cache CDN por meio do Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [Como invalidar o cache CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [Como invalidar o cache CDN por meio do Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [Uso de conjuntos de regras para transformar URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
-## DELIVERY HTTP/2 de ativos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## DELIVERY HTTP/2 de ativos Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM agora suporta o delivery de todo o conteúdo de Dynamic Media (imagens e vídeo) por HTTP/2. Ou seja, um URL publicado ou um código incorporado para a imagem ou o vídeo está disponível para ser integrado a qualquer aplicativo que aceite um ativo hospedado. Esse ativo publicado é então entregue por meio do protocolo HTTP/2. Este método de delivery melhora a maneira como os navegadores e servidores se comunicam, permitindo uma melhor resposta e tempos de carregamento de todos os seus ativos de Dynamic Media.
+AEM agora suporta o delivery de todo o conteúdo do Dynamic Media (imagens e vídeo) por HTTP/2. Ou seja, um URL publicado ou um código incorporado para a imagem ou o vídeo está disponível para ser integrado a qualquer aplicativo que aceite um ativo hospedado. Esse ativo publicado é então entregue por meio do protocolo HTTP/2. Este método de delivery melhora a maneira como os navegadores e servidores se comunicam, permitindo uma melhor resposta e tempos de carregamento de todos os seus ativos Dynamic Media.
 
 Consulte [Delivery HTTP/2 de Perguntas frequentes sobre conteúdo](/help/assets/dynamic-media/http2faq.md) para saber mais.
