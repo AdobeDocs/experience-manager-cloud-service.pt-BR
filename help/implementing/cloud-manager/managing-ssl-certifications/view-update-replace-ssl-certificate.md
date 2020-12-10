@@ -2,7 +2,7 @@
 title: 'Exibindo Atualização e Substituição de um Certificado SSL - Gerenciando SSL '
 description: Exibindo Atualização e Substituição de um Certificado SSL - Gerenciando Certificados SSL
 translation-type: tm+mt
-source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Quando usar essas opções na interface do usuário do Cloud Manager:
 
 ## Atualização de um certificado SSL prestes a expirar {#update-ssl-certificate}
 
-Quando um certificado expira, quaisquer domínios que estejam em uso com o certificado expirado não funcionarão mais. Para atualizar um certificado expirado, siga as etapas listadas abaixo. Isso garantirá que seu domínio continue a funcionar conforme desejado. A adição de um novo certificado exigirá a atualização do nome de domínio personalizado com o novo Certificado antes que os domínios funcionem conforme desejado. Consulte [Visualizar e atualizar e substituir um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)para obter mais detalhes
+Quando um certificado expira, quaisquer domínios que estejam em uso com o certificado expirado não funcionarão mais. Para atualizar um certificado expirado, siga as etapas listadas abaixo. Isso garantirá que seu domínio continue a funcionar conforme desejado. A adição de um novo certificado exigirá a atualização do nome de domínio personalizado com o novo Certificado antes que os domínios funcionem conforme desejado. Consulte [Visualizar e atualizar e substituir um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) para obter mais detalhes.
 
 Siga as etapas abaixo para atualizar um certificado SSL:
 
