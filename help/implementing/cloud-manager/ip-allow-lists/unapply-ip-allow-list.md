@@ -2,7 +2,7 @@
 title: 'Desaplicar Lista de permissões IP '
 description: Desaplicar Lista de permissões IP
 translation-type: tm+mt
-source-git-commit: e92fc7bac289481d046eb6bc27da833f17b29c7e
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -19,7 +19,7 @@ A aplicação de uma Lista de permissões de IP é o processo pelo qual todos os
 
 Siga as etapas abaixo para Desaplicar uma Lista de permissões IP:
 
-1. Navegue até a página Detalhes do Ambiente específica na tela Ambientes e navegue até a tabela Lista de permissões IP.
+1. Navegue até a página Detalhes do Ambiente específica na tela **Ambientes** e navegue até a tabela Lista de permissões IP.
 1. Identifique a linha na qual a regra de Lista de permissões IP que você deseja desaplicar está listada.
 1. Selecione **...** na extremidade direita da linha.
-1. Selecione a opção Desaplicar e confirme sua submissão.
+1. Selecione a opção **Desaplicar** e confirme sua submissão.
