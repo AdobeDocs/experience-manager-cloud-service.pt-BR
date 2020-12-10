@@ -2,9 +2,9 @@
 title: Adicionar um certificado SSL - Gerenciar certificados SSL
 description: Adicionar um certificado SSL - Gerenciar certificados SSL
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Os arquivos SSL devem estar no formato PEM para serem instalados no Cloud Manage
 
 Siga as etapas abaixo para converter o formato dos arquivos SSL em PEM:
 
-1. Converter PFX em PEM
+* Converter PFX em PEM
 
-`openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
 
-1. Converter P7B em PEM
+* Converter P7B em PEM
 
-`openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
 
-1. Converter DER em PEM
+* Converter DER em PEM
 
-`openssl x509 -inform der -in certificate.cer -out certificate.pem`
+   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
 ## Considerações importantes {#important-considerations}
 
@@ -50,9 +50,11 @@ Siga as etapas abaixo para adicionar um certificado:
 1. Clique em **Certificados SSL** no menu de navegação esquerdo. Uma tabela com detalhes de quaisquer certificados SSL existentes será exibida nessa tela.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
-1. Selecione o botão **Adicionar certificado** para abrir a caixa de diálogo **Adicionar certificado SSL**.
+
+1. Clique em **Adicionar Certificado SSL** para abrir a caixa de diálogo **Adicionar Certificado SSL**.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
    1. Insira um nome para o certificado em **Nome do Certificado**. Esse pode ser qualquer nome que o ajude a referenciar seu certificado facilmente.
    1. Cole o **Certificado**, **Chave privada** e **Cadeia de certificados** nos respectivos campos. Use o ícone colar à direita da caixa de entrada.
 Os três campos não são opcionais e devem ser incluídos.
@@ -84,6 +86,4 @@ Você pode verificar se a chave privada e o certificado `main/server` correspond
 
 ### Datas de validade do certificado {#certificate-validity-dates}
 
-O Cloud Manager espera que o certificado SSL seja válido por pelo menos 90 dias no futuro
-
-Verifique a validade da cadeia de certificados.
+O Cloud Manager espera que o certificado SSL seja válido por pelo menos 90 dias no futuro. Verifique a validade da cadeia de certificados.
