@@ -2,15 +2,15 @@
 title: 'Exibindo Atualização e Substituição de um Certificado SSL - Gerenciando SSL '
 description: Exibindo Atualização e Substituição de um Certificado SSL - Gerenciando Certificados SSL
 translation-type: tm+mt
-source-git-commit: e5305efad061ae0b06ecb16433fccd5e97f978f3
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
 
-# Exibindo a Atualização e Substituição de um Certificado SSL {#view-update-replace-ssl-certificate}
+# Exibindo e atualizando e substituindo um certificado SSL {#view-update-replace-ssl-certificate}
 
 ## Exibindo e Atualizando um Certificado SSL {#view-update}
 
