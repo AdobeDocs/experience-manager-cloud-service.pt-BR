@@ -3,17 +3,65 @@ title: Referências de desenvolvedor para [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 1%
+source-wordcount: '1400'
+ht-degree: 2%
 
 ---
 
 
-# [!DNL Assets] APIs e material de referência do desenvolvedor  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] APIs e material de referência do desenvolvedor  {#assets-cloud-service-apis}
 
-O artigo contém material de referência e recursos para desenvolvedores de [!DNL Assets] como um [!DNL Cloud Service]. Inclui novo método de upload, referência de API e informações sobre o suporte fornecido em workflows de pós-processamento.
+O artigo contém recomendações, materiais de referência e recursos para desenvolvedores de [!DNL Assets] como um [!DNL Cloud Service]. Inclui novo módulo de carregamento de ativos, referência de API e informações sobre o suporte fornecido em workflows de pós-processamento.
+
+## [!DNL Experience Manager Assets] APIs e operações  {#use-cases-and-apis}
+
+[!DNL Assets] como um  [!DNL Cloud Service] fornece várias APIs para interagir programaticamente com ativos digitais. Cada API suporta casos de uso específicos, conforme mencionado na tabela abaixo. A [!DNL Assets] interface do usuário, [!DNL Experience Manager] aplicativo desktop e [!DNL Adobe Asset Link] suportam todas ou algumas das operações.
+
+>[!CAUTION]
+>
+>Algumas APIs continuam existindo, mas não são ativamente suportadas (denotadas com um x) e não devem ser usadas.
+
+| Nível de suporte | Descrição |
+| ------------- | --------------------------- |
+| Satélite | Compatível |
+| × | Não suportado. Não utilizar. |
+| - | Não disponível |
+
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [APIs AEM / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava | [serviço asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlets Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Pré-visualização)_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Binário original** |  |  |  |  |  |  |
+| Criar original | Satélite | × | - | × | × | - |
+| Ler original | - | × | Satélite | Satélite | Satélite | - |
+| Atualizar original | Satélite | × | Satélite | × | × | - |
+| Excluir original | - | Satélite | - | Satélite | Satélite | - |
+| Copiar original | - | Satélite | - | Satélite | Satélite | - |
+| Mover original | - | Satélite | - | Satélite | Satélite | - |
+| **Metadados** |  |  |  |  |  |  |
+| Criar metadados | - | Satélite | Satélite | Satélite | Satélite | - |
+| Ler metadados | - | Satélite | - | Satélite | Satélite | - |
+| Atualizar metadados | - | Satélite | Satélite | Satélite | Satélite | - |
+| Excluir metadados | - | Satélite | Satélite | Satélite | Satélite | - |
+| Copiar metadados | - | Satélite | - | Satélite | Satélite | - |
+| Mover metadados | - | Satélite | - | Satélite | Satélite | - |
+| **Fragmentos de conteúdo (CF)** |  |  |  |  |  |  |
+| Criar CF | - | Satélite | - | Satélite | - | - |
+| Ler CF | - | Satélite | - | Satélite | - | Satélite |
+| Atualizar CF | - | Satélite | - | Satélite | - | - |
+| Excluir CF | - | Satélite | - | Satélite | - | - |
+| Copiar CF | - | Satélite | - | Satélite | - | - |
+| Mover CF | - | Satélite | - | Satélite | - | - |
+| **Versões** |  |  |  |  |  |  |
+| Criar versão | Satélite | Satélite | - | - | - | - |
+| Ler versão | - | Satélite | - | - | - | - |
+| Excluir versão | - | Satélite | - | - | - | - |
+| **Pastas** |  |  |  |  |  |  |
+| Criar pasta | Satélite | Satélite | - | Satélite | - | - |
+| Ler pasta | - | Satélite | - | Satélite | - | - |
+| Excluir pasta | Satélite | Satélite | - | Satélite | - | - |
+| Copiar pasta | Satélite | Satélite | - | Satélite | - | - |
+| Mover pasta | Satélite | Satélite | - | Satélite | - | - |
 
 ## Carregamento de ativos {#asset-upload-technical}
 
@@ -31,8 +79,7 @@ A abordagem oferece uma manipulação escalável e mais eficiente dos uploads de
 * O armazenamento de nuvem binário funciona com uma rede Content Delivery Network (CDN) ou Edge. Um CDN seleciona um ponto de extremidade de carregamento mais próximo de um cliente. Quando os dados percorrem uma distância menor para um terminal próximo, o desempenho do upload e a experiência do usuário melhoram, especialmente para equipes distribuídas geograficamente.
 
 >[!NOTE]
->
->Consulte o código do cliente para implementar essa abordagem na biblioteca de código aberto [aem-upload](https://github.com/adobe/aem-upload).
+Consulte o código do cliente para implementar essa abordagem na biblioteca de código aberto [aem-upload](https://github.com/adobe/aem-upload).
 
 ### Iniciar carregamento {#initiate-upload}
 
