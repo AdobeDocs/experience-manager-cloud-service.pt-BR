@@ -4,9 +4,9 @@ user-guide-title: Integração ao AEM as a Cloud Service
 breadcrumb-title: Guia de integração
 user-guide-description: Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '377'
 ht-degree: 61%
 
 ---
@@ -69,6 +69,7 @@ ht-degree: 61%
       + [Desaplicar uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [Excluindo uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Verificando um status de Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+   + [API do Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
    + Notas de versão do Cloud Manager {#release-notes-cloud-manager}
       + [Notas de versão atuais (2020.12.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Notas da versão 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
