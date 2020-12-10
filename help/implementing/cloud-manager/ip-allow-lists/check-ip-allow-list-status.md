@@ -2,9 +2,9 @@
 title: Verificando o status da Lista de permissões de IP
 description: Verificando o status da Lista de permissões de IP
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Veja a seguir as definições de status que aparecerão em uma Lista de permiss�
 
 * **Falha**: Falha em um ou mais processos de aplicação ou cancelamento de aplicação em uma Atualização. Cada Aplicar e Desaplicar será listado juntamente com Concluído ou Falha.
    * O status falhará, mesmo se uma aplicação/desaplicação na atualização falhar.
-   * O status permanecerá com falha até que todas as falhas sejam apagadas.O usuário deve selecionar o ícone de nova tentativa ao lado do status para limpar a falha.
+   * O status continuará com Falha até que todas as falhas sejam apagadas. O usuário deve selecionar o ícone de nova tentativa ao lado do status para apagar a falha.
    * O usuário não poderá atualizar ou excluir a Lista de permissões IP enquanto o status estiver com falha.
 
 * **Excluindo**: A solicitação de exclusão está em andamento. Isto implica a não aplicação de todos os serviços. Cada Desaplicação será listada juntamente com Não iniciado/Em andamento/Concluído ou Com falha.
