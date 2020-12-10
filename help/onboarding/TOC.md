@@ -4,10 +4,10 @@ user-guide-title: Integração ao AEM as a Cloud Service
 breadcrumb-title: Guia de integração
 user-guide-description: Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 translation-type: tm+mt
-source-git-commit: 5e81e6ed9c44956384ff248bb28cebc861cf0b76
+source-git-commit: f836254f6c4874621d4772758b29c6b22aff0ed6
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 86%
+source-wordcount: '357'
+ht-degree: 62%
 
 ---
 
@@ -43,6 +43,32 @@ ht-degree: 86%
       + [Uso do Assistente](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [Configuração do projeto](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Noções básicas sobre o Ambiente Build](getting-access-to-aem-in-cloud/build-environment-details.md)
+   + Gerenciamento de certificados SSL {#manage-ssl-certificates}
+      + [Introdução](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [Obtendo um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
+      + [Adicionando um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [Exibindo e atualizando ou substituindo um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [Verificando o status de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
+      + [Excluindo um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+   + Nomes de Domínio Personalizados {#custom-domain-names}
+      + [Introdução](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [Obtendo um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
+      + [Adicionando um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+      + [Adicionando um registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+      + [Verificando o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [Configuração de configurações DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+      + [Verificando o status do registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [Exibindo e Atualizando o Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [Atualização do certificado SSL do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [Excluindo Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   + Listas de Permissões de IP {#ip-allow-lists}
+      + [Introdução](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [Adicionando uma Lista de Permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [Exibindo e Atualizando uma Lista de Permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [Aplicando Lista de Permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Desaplicar uma Lista de Permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [Excluindo uma Lista de Permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [Verificando um status de lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Notas de versão do Cloud Manager {#release-notes-cloud-manager}
       + [Notas de versão atuais (2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Notas da versão 2020.10.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
