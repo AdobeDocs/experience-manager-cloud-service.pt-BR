@@ -2,9 +2,9 @@
 title: Introdução - Gerenciamento de certificados SSL
 description: Introdução - Gerenciamento de certificados SSL
 translation-type: tm+mt
-source-git-commit: 5ebe94c8562b952521effa3b67267c3eab925d16
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,12 @@ ht-degree: 0%
 
 O Cloud Manager fornece aos clientes o recurso de autoatendimento para instalar certificados SSL por meio da interface do usuário do Cloud Manager. O Cloud Manager usa um serviço TLS da plataforma para gerenciar certificados SSL e chaves privadas de propriedade de clientes e normalmente obtidas de autoridades de certificação de terceiros, por exemplo, Let&#39;s Encrypt.
 
->[!IMPORTANT]
->O Cloud Manager não fornece certificados SSL nem chaves privadas. Estes devem ser obtidos junto de autoridades certificadoras de terceiros. Consulte [Obtendo um Certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para saber mais.
+## Considerações importantes {#important-considerations}
 
->[!NOTE]
->AEM como Cloud Service só suporta sites https seguros. Os clientes com vários domínios personalizados não desejarão carregar um certificado sempre que adicionarem um domínio. Assim, esses clientes se beneficiarão ao obter um certificado com vários domínios.
+
+* O Cloud Manager não fornece certificados SSL nem chaves privadas. Estes devem ser obtidos junto de autoridades certificadoras de terceiros. Consulte [Obtendo um Certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para saber mais.
+
+* AEM como um Cloud Service só oferece suporte a `https` sites seguros. Os clientes com vários domínios personalizados não desejarão carregar um certificado sempre que adicionarem um domínio. Assim, esses clientes se beneficiarão ao obter um certificado com vários domínios.
 
 O Cloud Manager oferece suporte aos seguintes requisitos de certificado SSL do cliente:
 
@@ -30,8 +31,8 @@ O Cloud Manager oferece suporte aos seguintes requisitos de certificado SSL do c
 
 Usando a página Certificados SSL de interface do usuário do Cloud Manager, um usuário com permissões pode executar várias tarefas para gerenciar certificados SSL para um programa:
 
-* Adicionar um certificado SSL
-* Exibição, atualização ou substituição de um certificado SSL
+* [Adicionando um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* [Como visualizar, atualizar ou substituir um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
    >[!NOTE]
    >Essas ações permitem que você visualização detalhes ou substitua um certificado que está prestes a expirar.
-* Excluindo um certificado SSL
+* [Excluindo um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
