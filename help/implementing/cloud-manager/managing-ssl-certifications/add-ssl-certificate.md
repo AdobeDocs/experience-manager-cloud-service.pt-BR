@@ -2,9 +2,9 @@
 title: Adicionar um certificado SSL - Gerenciar certificados SSL
 description: Adicionar um certificado SSL - Gerenciar certificados SSL
 translation-type: tm+mt
-source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
+source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Adicionando um certificado SSL {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM como Cloud Service só aceitará certificados OV(Organization Validation) ou EV(Extended Validation). Certificados DV(Domain Validation) não serão aceitos.
+>AEM como Cloud Service só aceitará certificados OV(Organization Validation) ou EV(Extended Validation). Certificados DV(Domain Validation) não serão aceitos. Além disso, qualquer certificado deve ser um certificado TLS X.509 de uma autoridade de certificação (CA) confiável com uma chave privada RSA de 2048 bits correspondente.
 
 Um certificado demora alguns dias para ser provisionado e recomenda-se que o certificado seja provisionado com meses de antecedência. Consulte [Obtendo um Certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para obter mais detalhes.
 
@@ -59,11 +59,12 @@ Siga as etapas abaixo para adicionar um certificado:
    1. Cole o **Certificado**, **Chave privada** e **Cadeia de certificados** nos respectivos campos. Use o ícone colar à direita da caixa de entrada.
 Os três campos não são opcionais e devem ser incluídos.
 
+      >[!NOTE]
+      >Quaisquer erros detectados serão exibidos. Você deve corrigir todos os erros antes que seu certificado possa ser salvo. Consulte [Erros de Certificado](#certificate-errors) para saber mais sobre como lidar com erros comuns.
+
 1. Clique em **Salvar** para enviar seu certificado. Será exibido como uma nova linha na tabela.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
-   >[!NOTE]
-   >Quaisquer erros detectados serão exibidos. Você deve corrigir todos os erros antes que seu certificado possa ser salvo. Consulte [Erros de Certificado](#certificate-errors) para saber mais sobre como lidar com erros comuns.
 
 ## Erros de certificado {#certificate-errors}
 
