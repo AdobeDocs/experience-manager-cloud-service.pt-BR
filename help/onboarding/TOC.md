@@ -4,9 +4,9 @@ user-guide-title: Integração ao AEM as a Cloud Service
 breadcrumb-title: Guia de integração
 user-guide-description: Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '380'
 ht-degree: 61%
 
 ---
@@ -61,11 +61,11 @@ ht-degree: 61%
       + [Exibindo e Atualizando o Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [Atualização do certificado SSL do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [Excluindo Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   + Gerenciando Listas de Permissões de IP {#ip-allow-lists}
+   + Gerenciando Listas de permissões IP {#ip-allow-lists}
       + [Introdução](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Adicionando uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Visualização e atualização de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [Aplicação de Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Aplicação de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [Desaplicar uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [Excluindo uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [Verificando um status de Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
