@@ -2,7 +2,7 @@
 title: Verificando o status do registro DNS
 description: Verificando o status do registro DNS
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -14,8 +14,7 @@ ht-degree: 0%
 
 Você pode determinar se seu nome de domínio está resolvendo corretamente para seu AEM como um site de Cloud Service, clicando no ícone Status do registro DNS na tabela da página Configurações de domínio.
 
->[!NOTE]
->O Cloud Manager acionará automaticamente uma pesquisa DNS quando seu Nome de domínio personalizado for verificado e implantado pela primeira vez com êxito. Para tentativas subsequentes, você deve selecionar ativamente o ícone **resolver novamente** ao lado do status.
+O Cloud Manager acionará automaticamente uma pesquisa DNS quando seu Nome de domínio personalizado for verificado e implantado pela primeira vez com êxito. Para tentativas subsequentes, você deve selecionar ativamente o ícone **resolver novamente** ao lado do status.
 
 O Cloud Manager realiza uma pesquisa DNS para seu nome de domínio e exibe uma das seguintes mensagens de status:
 
