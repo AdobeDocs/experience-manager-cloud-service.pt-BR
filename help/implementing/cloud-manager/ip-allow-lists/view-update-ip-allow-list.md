@@ -2,7 +2,7 @@
 title: 'Exibição e atualização - Listas de permissões de IP no Gerenciador de '
 description: 'Exibição e atualização - Listas de permissões de IP no Gerenciador de '
 translation-type: tm+mt
-source-git-commit: b353de1a58eb8c31de7289677a589cf192ebc0b9
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -29,10 +29,10 @@ Um usuário na função Proprietário da empresa ou Gerenciador de implantação
 
 Siga as etapas abaixo para atualizar uma Lista de permissões IP:
 
-1. Navegue até a página Lista de permissões IP na tela Ambientes.
+1. Navegue até a página **Listas de permissões IP** a partir da tela **Ambientes**.
 1. Identifique a linha na qual a regra de Lista de permissões IP que você deseja que seja visualização/atualização está listada.
 1. Selecione **...** na extremidade direita da linha.
-1. Selecione a opção Visualização e atualização.
+1. Selecione a opção **Visualização e atualização**.
 1. Faça alterações no nome ou no IP e confirme sua submissão.
 
 ## Considerações importantes ao adicionar, atualizar ou remover Listas de permissões IP {#considerations}
@@ -41,4 +41,4 @@ Siga as etapas abaixo para atualizar uma Lista de permissões IP:
 * A remoção de um intervalo IP da Lista de permissões IP automaticamente Desaplicará-o de todos os serviços de ambiente correspondentes.
 * As atualizações não podem ser feitas em uma Lista de permissões IP enquanto uma atualização anterior estiver em andamento e não tiver sido concluída.
 * As atualizações não podem ser feitas em uma Lista de permissões IP se houver erros em uma atualização anterior. Qualquer erro deve ser apagado ao tentar repetir a atualização.
-Consulte Verificando o status da Lista de permissões de IP para saber mais.
+Consulte [Verificando o status da Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md) para saber mais.
