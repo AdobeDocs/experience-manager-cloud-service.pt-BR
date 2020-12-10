@@ -4,9 +4,9 @@ user-guide-title: Implementação do AEM as a Cloud Service
 breadcrumb-title: Guia de implementação
 user-guide-description: Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento.
 translation-type: tm+mt
-source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
+source-git-commit: b19dfdd33ae789e56a56edc7a3d7ea960ba46d91
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '692'
 ht-degree: 45%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 45%
       + [Introdução](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [Obtendo um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
       + [Adicionando um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [Exibindo e atualizando ou substituindo um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [Visualização e atualização e substituição de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [Verificando o status de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [Excluindo um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
    + Gerenciando Nomes de Domínio Personalizados {#custom-domain-names}
