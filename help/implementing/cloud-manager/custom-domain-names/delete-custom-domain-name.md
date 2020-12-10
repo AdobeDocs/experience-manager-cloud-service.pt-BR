@@ -2,7 +2,7 @@
 title: Excluindo um Nome de Domínio Personalizado
 description: Excluindo um Nome de Domínio Personalizado
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: 68a62be11f711e30b87dfc60a85627dceaf06caa
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -12,15 +12,16 @@ ht-degree: 0%
 
 # Excluindo um Nome de Domínio Personalizado {#deleting-cdn}
 
->[!NOTE]
->Um usuário deve estar na função Proprietário do negócio ou Gerenciador de implantação para poder excluir um nome de domínio personalizado no Gerenciador de nuvem.
+Um usuário deve estar na função Proprietário do negócio ou Gerenciador de implantação para poder excluir um nome de domínio personalizado no Gerenciador de nuvem.
 
 ## Excluindo um nome de domínio personalizado de todos os Ambientes associados {#delete-cdn-all}
 
-1. Navegue até a página Configurações de domínio na tela Ambientes.
+1. Navegue até a página **Configurações de domínio** na tela **Ambientes**.
 1. Identifique a linha na qual o nome de domínio personalizado que você deseja excluir está listado.
 1. Selecione **...** na extremidade direita da linha.
-1. Selecione a opção Excluir.
+1. Selecione a opção **Excluir**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 1. Confirme seu envio.
 
 
