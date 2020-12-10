@@ -2,9 +2,9 @@
 title: Obter um certificado SSL - Gerenciamento de certificados SSL
 description: Obter um certificado SSL - Gerenciamento de certificados SSL
 translation-type: tm+mt
-source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
+source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,5 @@ Quando uma entidade solicita um certificado de uma autoridade de certificação,
 
 >[!NOTE]
 >AEM como Cloud Service só aceitará certificados OV(Organization Validation) ou EV(Extended Validation). Certificados DV(Domain Validation) ou autoassinados não serão aceitos. Os certificados OV e EV fornecem aos usuários informações extras validadas por CA que eles podem usar para decidir se o proprietário de um site, remetente de um email ou signatário digital de um código executável ou documentos PDF é confiável. Certificados DV são comuns e baratos. No entanto, não permitem a verificação da propriedade.
+>Além disso, qualquer certificado deve ser um certificado TLS X.509 de uma autoridade de certificação (CA) confiável com uma chave privada RSA de 2048 bits correspondente.
 
