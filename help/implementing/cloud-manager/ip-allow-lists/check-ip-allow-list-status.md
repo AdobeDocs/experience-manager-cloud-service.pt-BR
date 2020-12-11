@@ -2,7 +2,7 @@
 title: Verificando o status da Lista de permissões de IP
 description: Verificando o status da Lista de permissões de IP
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -33,7 +33,8 @@ Veja a seguir as definições de status que aparecerão em uma Lista de permiss�
 
 * **Excluindo**: A solicitação de exclusão está em andamento. Isto implica a não aplicação de todos os serviços. Cada Desaplicação será listada juntamente com Não iniciado/Em andamento/Concluído ou Com falha.
 Quando a operação Excluir estiver concluída, a Lista de permissões IP:
-   * Não é mais exibido na tabela Lista de permissões de IP * Não é mais aplicado a nenhum serviço no programa no Gerenciador de nuvem
+   * Não é mais exibido na tabela Lista de permissões IP.
+   * Não é mais aplicado a nenhum serviço no programa no Cloud Manager.
 
 * **Falha** na exclusão: Um ou mais processos de desaplicação em uma operação Excluir falharam. Cada Cancelamento de aplicação será listado juntamente com Concluído ou Falha.
 
