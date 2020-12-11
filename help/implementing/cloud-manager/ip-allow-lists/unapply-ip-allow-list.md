@@ -2,15 +2,15 @@
 title: 'Desaplicar Lista de permissões IP '
 description: Desaplicar Lista de permissões IP
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
 
-# Desaplicar Lista de permissões IP {#apply-allow-list}
+# Desaplicar uma Lista de permissões IP {#apply-allow-list}
 
 A aplicação de uma Lista de permissões de IP é o processo pelo qual todos os intervalos de IP incluídos na definição da Lista de permissões são desassociados de um serviço Autor/Editor em um ambiente.
 
