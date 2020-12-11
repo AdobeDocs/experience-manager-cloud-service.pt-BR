@@ -2,9 +2,9 @@
 title: Gerenciar Ambientes - Cloud Service
 description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1264'
 ht-degree: 5%
 
 ---
@@ -149,21 +149,28 @@ Além disso, você pode fazer logon localmente na página de resumo **Ambientes*
 
 ## Gerenciando Nomes de Domínio Personalizados {#manage-cdn}
 
-Navegue até a página de detalhes do Ambiente na página Resumo dos Ambientes.
+Navegue até a página de detalhes **Ambientes** na página Resumo dos Ambientes.
 
 As seguintes ações podem ser executadas no serviço de publicação do seu ambiente, conforme descrito abaixo:
 
-1. **Adicionando um nome** de domínio personalizado: Consulte para  [adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. **Adicionando um**
+nome de domínio personalizadoConsulte para  [adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **Exibindo e Atualizando o Nome** de Domínio Personalizado: Consulte  [Visualizando e Atualizando Nomes de Domínio Personalizados e Certificados SSL](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+1. **Exibindo e Atualizando o Nome de Domínio Personalizado e**
+Certificados de ServiçoConsulte
+   * [Exibindo e Atualizando Nomes de Domínio Personalizados](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+   * [Exibindo e Atualizando Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
 
-1. **Excluindo Nome** de Domínio Personalizado: Consulte  [Excluindo Nomes de Domínio Personalizados e Certificados SSL](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. **Excluindo**
+certificados e nomes de domínio personalizadosConsulte
+   * [Excluindo nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   * [Certificados SSL](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-## Gerenciando Listas de Permissões de IP {#manage-ip-allow-lists}
+## Gerenciando Listas de permissões IP {#manage-ip-allow-lists}
 
 Navegue até a página de detalhes do Ambiente na página Resumo dos Ambientes. Você pode executar as seguintes ações nos serviços de Publicação e/ou Autor do seu ambiente aqui.
 
-### Aplicar uma Lista de Permissões de IP {#apply-ip-allow-list}
+### Aplicação de Listas de permissões IP {#apply-ip-allow-list}
 
 A aplicação de uma Lista de permissões IP é o processo pelo qual todos os intervalos IP incluídos na definição da Lista de permissões são associados a um serviço de Autor ou Publicação em um ambiente. Um usuário na função Proprietário da empresa ou Gerenciador de implantação deve estar conectado para poder aplicar uma Lista de permissões de IP.
 
