@@ -2,15 +2,15 @@
 title: 'Exibição e atualização - Listas de permissões de IP no Gerenciador de '
 description: 'Exibição e atualização - Listas de permissões de IP no Gerenciador de '
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
 
 
-# Exibindo e Atualizando Listas de permissões IP {#view-update}
+# Exibindo e Atualizando uma Lista de permissões IP {#view-update}
 
 Você pode visualização e atualizar Listas de permissões IP nos seguintes cenários:
 
