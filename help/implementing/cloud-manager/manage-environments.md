@@ -2,10 +2,10 @@
 title: Gerenciar Ambientes - Cloud Service
 description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
+source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 5%
+source-wordcount: '1248'
+ht-degree: 4%
 
 ---
 
@@ -153,45 +153,38 @@ Navegue até a página de detalhes **Ambientes** na página Resumo dos Ambientes
 
 As seguintes ações podem ser executadas no serviço de publicação do seu ambiente, conforme descrito abaixo:
 
-1. **Adicionando um**
-nome de domínio personalizadoConsulte para  [adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. [Adicionando um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **Exibindo e Atualizando o Nome de Domínio Personalizado e**
-Certificados de ServiçoConsulte
-   * [Exibindo e Atualizando Nomes de Domínio Personalizados](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-   * [Exibindo e Atualizando Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+1. [Exibindo e Atualizando um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. **Excluindo**
-certificados e nomes de domínio personalizadosConsulte
-   * [Excluindo nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   * [Certificados SSL](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. [Excluindo um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## Gerenciando Listas de permissões IP {#manage-ip-allow-lists}
 
 Navegue até a página de detalhes do Ambiente na página Resumo dos Ambientes. Você pode executar as seguintes ações nos serviços de Publicação e/ou Autor do seu ambiente aqui.
 
-### Aplicação de Listas de permissões IP {#apply-ip-allow-list}
+### Aplicação de uma Lista de permissões IP {#apply-ip-allow-list}
 
 A aplicação de uma Lista de permissões IP é o processo pelo qual todos os intervalos IP incluídos na definição da Lista de permissões são associados a um serviço de Autor ou Publicação em um ambiente. Um usuário na função Proprietário da empresa ou Gerenciador de implantação deve estar conectado para poder aplicar uma Lista de permissões de IP.
 
 >[!NOTE]
->A Lista de permissões IP deve existir no Gerenciador de nuvem para aplicá-la a um serviço de ambiente. Para saber mais sobre as Listas de Permissões de IP no Gerenciador de nuvem, navegue até [Introdução às Listas de Permissões de IP no Gerenciador de Opções](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>A Lista de permissões IP deve existir no Gerenciador de nuvem para aplicá-la a um serviço de ambiente. Para saber mais sobre as Listas de permissões de IP no Gerenciador de nuvem, navegue até [Introdução às Listas de permissões de IP no Gerenciador de recursos](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-Siga as etapas abaixo:
+Siga as etapas abaixo para aplicar uma Lista de permissões IP:
 
-1. Navegue até a página Detalhes do Ambiente específica na tela Ambientes e navegue até a tabela Lista de permissões IP.
+1. Navegue até o ambiente específico na página de detalhes **Ambientes** e navegue até a tabela **Listas de permissões IP**.
 1. Use os campos de entrada na parte superior da tabela Lista de permissões IP para selecionar a Lista de permissões IP e o serviço Autor ou Publicação ao qual deseja aplicá-la.
-1. Em seguida, selecione Aplicar e confirme seu envio.
+1. Clique em **Aplicar** e confirme seu envio.
 
-### Desaplicando uma Lista de Permissões de IP {#unapply-ip-allow-list}
+### Desaplicando uma Lista de permissões IP {#unapply-ip-allow-list}
 
-Desaplicar uma Lista de permissões IP é o processo pelo qual todos os intervalos IP incluídos na definição da Lista de permissões são desassociados de um serviço Autor/Editor em um ambiente.  Um usuário na função Proprietário da empresa ou Gerenciador de implantação deve estar conectado para poder desaplicar uma Lista de permissões de IP.
+Desaplicar uma Lista de permissões IP é o processo pelo qual todos os intervalos IP incluídos na definição da Lista de permissões são desassociados de um serviço Autor ou Editor em um ambiente. Um usuário na função Proprietário da empresa ou Gerenciador de implantação deve estar conectado para poder desaplicar uma Lista de permissões de IP.
 
-Siga as etapas abaixo:
+Siga as etapas abaixo para desaplicar uma Lista de permissões IP:
 
-1. Navegue até a página Detalhes do Ambiente específica na tela Ambientes e navegue até a tabela Lista de permissões IP.
+1. Navegue até a página de detalhes **Ambientes** específica da tela Ambientes e navegue até a tabela **Listas de permissões IP**.
 1. Identifique a linha na qual a regra de Lista de permissões IP que você deseja desaplicar está listada.
 1. Selecione **...** na extremidade direita da linha.
-1. Selecione a opção Desaplicar e confirme sua submissão.
+1. Selecione a opção **Desaplicar** e confirme sua submissão.
 
 
