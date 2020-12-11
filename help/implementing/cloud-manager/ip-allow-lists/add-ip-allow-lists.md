@@ -2,7 +2,7 @@
 title: 'Adicionando Lista de permissões IP '
 description: Adicionando Lista de permissões IP
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 701020701fd45af720edea13a70cb459a650fbca
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -10,11 +10,9 @@ ht-degree: 0%
 ---
 
 
-# Introdução {#introduction}
+# Adicionando uma Lista de permissões IP {#add-ip-allow-list}
 
 Um usuário na função Proprietário da empresa ou Gerenciador de implantação deve estar conectado para poder adicionar uma Lista de permissões IP.
-
-## Adicionando Lista de permissões IP {#add-ip-allow-list}
 
 Siga as etapas abaixo para adicionar uma Lista de permissões IP:
 
