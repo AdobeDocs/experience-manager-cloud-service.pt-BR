@@ -2,9 +2,9 @@
 title: Gerenciar Ambientes - Cloud Service
 description: Gerenciar Ambientes - Cloud Service
 translation-type: tm+mt
-source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
+source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1249'
 ht-degree: 4%
 
 ---
@@ -168,7 +168,7 @@ Navegue até a página de detalhes do Ambiente na página Resumo dos Ambientes. 
 A aplicação de uma Lista de permissões IP é o processo pelo qual todos os intervalos IP incluídos na definição da Lista de permissões são associados a um serviço de Autor ou Publicação em um ambiente. Um usuário na função Proprietário da empresa ou Gerenciador de implantação deve estar conectado para poder aplicar uma Lista de permissões de IP.
 
 >[!NOTE]
->A Lista de permissões IP deve existir no Gerenciador de nuvem para aplicá-la a um serviço de ambiente. Para saber mais sobre as Listas de permissões de IP no Gerenciador de nuvem, navegue até [Introdução às Listas de permissões de IP no Gerenciador de recursos](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>A Lista de permissões IP deve existir no Gerenciador de nuvem para aplicá-la a um serviço de ambiente. Para saber mais sobre Listas de permissões de IP no Gerenciador de nuvem, navegue até [Introdução às Listas de permissões de IP no Gerenciador de recursos](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 Siga as etapas abaixo para aplicar uma Lista de permissões IP:
 
