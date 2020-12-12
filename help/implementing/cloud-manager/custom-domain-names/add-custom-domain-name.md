@@ -2,9 +2,9 @@
 title: Adicionando um nome de domínio personalizado
 description: Adicionando um nome de domínio personalizado
 translation-type: tm+mt
-source-git-commit: 27e96d66d93f2fa0e67e607c75f37efda17a13b7
+source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Um usuário deve ser um proprietário de negócios ou gerente de implantação p
 
 * Antes de adicionar um nome de domínio personalizado, um certificado SSL válido que contenha o nome de domínio personalizado deve ser instalado no seu Programa. Consulte [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para saber mais.
 
-* Somente um nome de domínio pode ser adicionado por vez. No entanto, os usuários podem adicionar curingas, por exemplo, `*.wknd.com` como um nome de domínio, e isso permitiria que vários subdomínios fossem hospedados com um único registro TXT.
+* Somente um nome de domínio pode ser adicionado por vez. No entanto, domínios não podem conter curingas. Não há suporte para domínios personalizados no lado do autor.
 
 * Cada Ambiente do Cloud Manager pode hospedar até 100 domínios personalizados por ambiente.
 
