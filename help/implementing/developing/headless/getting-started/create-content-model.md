@@ -2,7 +2,7 @@
 title: Guia de Start rápido para Criar modelos de fragmento de conteúdo sem cabeçalho
 description: Os Modelos de fragmento de conteúdo definem a estrutura do conteúdo que você criará e servirá usando AEM recursos sem cabeçalho.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -63,5 +63,6 @@ Você pode criar vários modelos. Os modelos podem fazer referência a outros fr
 
 Agora que você definiu as estruturas dos Fragmentos de conteúdo criando modelos, pode seguir para a terceira parte do guia de introdução e [criar pastas onde você armazenará os fragmentos.](create-assets-folder.md)
 
->!![TIP]
-Para obter detalhes completos sobre os Modelos de fragmento de conteúdo, consulte a documentação [Modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md)
+>[!TIP]
+>
+>Para obter detalhes completos sobre os Modelos de fragmento de conteúdo, consulte a documentação [Modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md)
