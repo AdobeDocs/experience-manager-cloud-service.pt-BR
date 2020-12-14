@@ -2,7 +2,7 @@
 title: Criando Fragmentos de Conteúdo Guia de Start Rápido Sem Cabeçalho
 description: Os Fragmentos de conteúdo permitem que você crie, prepare e use conteúdo independente de página que pode ser entregue sem cabeçalho por AEM.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 1%
@@ -53,5 +53,6 @@ Fragmentos de conteúdo também podem fazer referência a outros ativos no AEM. 
 
 Agora que criou um Fragmento de conteúdo, você pode seguir para a parte final do guia de introdução e [criar solicitações de API para acessar e fornecer fragmentos de conteúdo.](create-api-request.md)
 
->!![TIP]
-Para obter detalhes completos sobre o gerenciamento de Fragmentos de conteúdo, consulte a [documentação de Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>Para obter detalhes completos sobre o gerenciamento de Fragmentos de conteúdo, consulte a [documentação de Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
