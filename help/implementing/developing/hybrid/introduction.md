@@ -2,9 +2,9 @@
 title: Introdução SPA e Walkthrough
 description: Este artigo apresenta os conceitos de um SPA e percorre o uso de um aplicativo SPA básico para criação, mostrando como ele se relaciona ao editor SPA subjacente.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1933'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ A próxima seção, [Carregando um aplicativo SPA](#loading-a-spa-application), 
 
 ### Carregando um aplicativo SPA {#loading-a-spa-application}
 
-1. Se ainda não tiver sido carregado, carregue o aplicativo Journal We.Retail no servidor de publicação ou usando a opção **Visualização como Publicado** do menu **Informações da página** no editor de páginas.
+1. Se ainda não tiver sido carregado, carregue o aplicativo SPA Projeto WKND no servidor de publicação ou usando a opção **Visualização como Publicada** do menu **Informações da página** no editor de páginas.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -254,7 +254,7 @@ A próxima seção, [Carregando um aplicativo SPA](#loading-a-spa-application), 
 
 1. O modelo também pode agrupar as páginas para que elas sejam carregadas de forma síncrona, reduzindo o número de recarregamentos de página necessários.
 
-   No exemplo do Journal We.Retail, as páginas `home`, `page-1`, `page-2` e `page-3` são carregadas de forma síncrona, uma vez que os visitantes visitam normalmente todas essas páginas.
+   No exemplo do aplicativo SPA Projeto WKND, as páginas `home`, `page-1`, `page-2` e `page-3` são carregadas de forma síncrona, já que os visitantes visitam todas essas páginas.
 
    Este comportamento não é obrigatório e é totalmente definível.
 
