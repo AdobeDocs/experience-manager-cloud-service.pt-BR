@@ -2,7 +2,7 @@
 title: Criando um Guia de Start Rápido sem Cabeçalho da Pasta de Ativos
 description: Modelos de fragmento de conteúdo definem a estrutura dos Fragmentos de conteúdo. Fragmentos de conteúdo são armazenados em pastas de ativos.
 translation-type: tm+mt
-source-git-commit: 9c801af38142434a5a0302b73b6fc1469a0eaab2
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -53,5 +53,6 @@ Se estiver usando uma estrutura de site localizada, você pode [criar uma raiz d
 
 Agora que você criou uma pasta para seus Fragmentos de conteúdo, pode seguir para a quarta parte do guia de introdução e [criar fragmentos de conteúdo.](create-content-fragment.md)
 
->!![TIP]
-Para obter detalhes completos sobre o gerenciamento de Fragmentos de conteúdo, consulte a [documentação de Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>Para obter detalhes completos sobre o gerenciamento de Fragmentos de conteúdo, consulte a [documentação de Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
