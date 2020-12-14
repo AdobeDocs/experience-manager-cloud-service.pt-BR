@@ -2,7 +2,7 @@
 title: Guia de Start rápido para acessar e fornecer fragmentos de conteúdo sem cabeçalho
 description: A API REST de ativos permite gerenciar fragmentos de conteúdo e a API GraphQL permite um delivery simples do conteúdo do fragmento de conteúdo.
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Os arquitetos de informações precisarão projetar query para seus pontos de ex
 
 1. Supondo que o modelo que criamos tenha sido chamado `person` com os campos `firstName`, `lastName` e `position`, podemos criar um query simples para recuperar o conteúdo de nosso Fragmento de conteúdo.
 
-   ```
+   ```text
    query {
      persons {
        items {
