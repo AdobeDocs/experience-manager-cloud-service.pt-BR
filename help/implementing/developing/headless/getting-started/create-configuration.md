@@ -2,7 +2,7 @@
 title: Criando um Guia de Start Rápido sem Cabeçalhos de Configuração
 description: Como primeiro passo para começar a usar o recurso sem rumo em AEM como Cloud Service, é necessário criar uma configuração.
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 2%
@@ -42,12 +42,14 @@ Um administrador só precisaria criar uma configuração uma vez ou muito egoís
 
 É possível criar várias configurações, se necessário. As configurações também podem ser aninhadas.
 
->!![NOTE]
-As opções de configuração além de **Modelos de fragmento de conteúdo** e **Query persistentes GraphQL** podem ser necessárias, dependendo de seus requisitos de implementação.
+>[!NOTE]
+>
+>As opções de configuração além de **Modelos de fragmento de conteúdo** e **Query persistentes GraphQL** podem ser necessárias, dependendo de seus requisitos de implementação.
 
 ## Próximas etapas {#next-steps}
 
 Usando essa configuração, agora você pode seguir para a segunda parte do guia de introdução e [criar Modelos de Fragmento de Conteúdo.](create-content-model.md)
 
->!![TIP]
-Para obter detalhes completos sobre o Navegador de configuração, [consulte a documentação do Navegador de configuração.](/help/implementing/developing/introduction/configurations.md)
+>[!TIP]
+>
+>Para obter detalhes completos sobre o Navegador de configuração, [consulte a documentação do Navegador de configuração.](/help/implementing/developing/introduction/configurations.md)
