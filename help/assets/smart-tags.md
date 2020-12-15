@@ -3,9 +3,9 @@ title: Marcar imagens automaticamente com tags geradas por AI
 description: Marque imagens usando serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando  [!DNL Adobe Sensei] serviços.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
+source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2431'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ Em segundo plano, as Tags inteligentes usam uma estrutura de inteligência artif
 
 Para usar a marcação inteligente, conclua as seguintes tarefas:
 
-* [Integre o Experience Manager ao Console](#integrate-aem-with-aio) do desenvolvedor do Adobe.
+* [ [!DNL Adobe Experience Manager] Integração com o Console do desenvolvedor](#integrate-aem-with-aio).
 * [Entenda os modelos de tags e as diretrizes](#understand-tag-models-guidelines).
 * [Treinar o modelo](#train-model).
 * [Marque seus ativos](#tag-assets) digitais.
@@ -105,6 +105,9 @@ Para criar e treinar um modelo para suas tags comerciais específicas, siga esta
 1. Clique em **[!UICONTROL Criar]**. Forneça um **[!UICONTROL Título]**, **[!UICONTROL Descrição]**.
 1. Procure e selecione as tags das tags existentes em `cq:tags` para as quais você deseja treinar o modelo. Clique em **[!UICONTROL Avançar]**.
 1. Na caixa de diálogo **[!UICONTROL Selecionar ativos]**, clique em **[!UICONTROL Adicionar ativos]** em relação a cada tag. Pesquise no repositório do DAM ou navegue pelo repositório para selecionar pelo menos 10 e no máximo 50 imagens. Selecione os ativos e não a pasta. Depois de selecionar as imagens, clique em **[!UICONTROL Selecionar]**.
+
+   ![status de treinamento de visualizações](assets/smart-tags-training-status.png)
+
 1. Para pré-visualização das miniaturas das imagens selecionadas, clique no acordeão na frente de uma tag . Você pode modificar sua seleção clicando em **[!UICONTROL Adicionar ativos]**. Depois de satisfeito com a seleção, clique em **[!UICONTROL Enviar]**. A interface do usuário exibe uma notificação na parte inferior da página, indicando que o treinamento foi iniciado.
 1. Verifique o status do treinamento na coluna **[!UICONTROL Status]** para cada modelo de tag. Os possíveis status são [!UICONTROL Pendente], [!UICONTROL Treinado] e [!UICONTROL Falha].
 
@@ -116,13 +119,13 @@ Para criar e treinar um modelo para suas tags comerciais específicas, siga esta
 
 Para verificar se o serviço de Tags inteligentes é treinado em suas tags no conjunto de ativos de treinamento, reveja o relatório de fluxo de trabalho de treinamento no console Relatórios.
 
-1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas > Ativos > Relatórios]**.
+1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas] > **[!UICONTROL Ativos] > **[!UICONTROL Relatórios]**.
 1. Na página **[!UICONTROL Relatórios de ativos]**, clique em **[!UICONTROL Criar]**.
 1. Selecione o relatório **[!UICONTROL Treinamento de tags inteligentes]** e clique em **[!UICONTROL Próximo]** na barra de ferramentas.
 1. Especifique um título e uma descrição para o relatório. Em **[!UICONTROL Agendar relatório]**, deixe a opção **[!UICONTROL Agora]** selecionada. Se desejar agendar o relatório para posteriormente, selecione **[!UICONTROL Posteriormente]** e especifique uma data e hora. Em seguida, clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. Na página **[!UICONTROL Relatórios de ativos]**, selecione o relatório gerado. Para visualização do relatório, clique em **[!UICONTROL Visualização]** na barra de ferramentas.
 1. Revise os detalhes do relatório. O relatório exibe o status do treinamento das tags que você treinou. A cor verde na coluna **[!UICONTROL Status de treinamento]** indica que o serviço de Tags inteligentes é treinado para a tag . A cor amarela indica que o serviço não é completamente treinado para uma tag específica. Nesse caso, adicione mais imagens com a tag específica e execute o fluxo de trabalho de treinamento para treinar o serviço completamente na tag. Se você não vir suas tags neste relatório, execute o fluxo de trabalho de treinamento novamente para essas tags.Tags
-1. Para baixar o relatório, selecione-o na lista e clique em **[!UICONTROL Download]** na barra de ferramentas. O relatório é baixado como uma planilha do Microsoft Excel.
+1. Para baixar o relatório, selecione-o na lista e clique em **[!UICONTROL Download]** na barra de ferramentas. O relatório é baixado como uma planilha [!DNL Microsoft Excel].
 
 ## Marcar ativos {#tag-assets}
 
