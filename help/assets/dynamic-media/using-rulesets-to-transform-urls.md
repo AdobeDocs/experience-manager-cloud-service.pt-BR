@@ -2,9 +2,9 @@
 title: Uso de conjuntos de regras para transformar URLs
 description: Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições.
 translation-type: tm+mt
-source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
+source-git-commit: 3a8f63c46e5604a9ce46250ac2d02cc95b473a7c
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '766'
 ht-degree: 5%
 
 ---
@@ -17,11 +17,11 @@ Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs.
 * Adicionando um sufixo de tipo MIME. Muitos serviços e sites exigem sufixos de imagem, como adicionar `.jpg` a um URL.
 * Criando um caminho de pasta para o URL para fins de SEO (Search Engine Otimization).
 
-   Consulte [Como o Dynamic Media Classic suporta SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+   Consulte [Como o Adobe Dynamic Media Classic suporta SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Adicionar metadados ao URL para fins de SEO (Search Engine Otimization).
 
-   Consulte [Como o Dynamic Media Classic suporta SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+   Consulte [Como o Adobe Dynamic Media Classic suporta SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Definir a disposição do conteúdo para acionar um download.
 * Simplificar o serviço de imagens modelando URLs para personalização. Por exemplo, transforme `rgb{XX,YY,ZZ}` em RTF-ready `\redXX\greenYY\blueZZ`
@@ -45,9 +45,11 @@ Consulte também [Resolução de problemas de conjuntos de regras](https://helpx
 Além disso, primeiro teste seu conjunto de regras em um ambiente temporário que não afete seu ambiente de produção em tempo real.
 Ambientes de produção e ambientes de preparo geralmente exigem logons diferentes.
 
-* **Página de logon do** ambiente de preparo para NA:  [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **Página de logon do** ambiente de preparo EMEA:  [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **Página de logon do** ambiente de preparo JAPAC:  [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+Consulte o aplicativo de desktop Dynamic Media Classic [Adobe para obter informações de logon](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+
+<!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 Consulte também [Usar a imagem &#39;asset&#39; em vez de &#39;is&#39; em um conjunto de regras](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
