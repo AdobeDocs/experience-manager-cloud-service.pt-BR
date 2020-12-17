@@ -4,10 +4,10 @@ user-guide-title: Implementação do AEM as a Cloud Service
 breadcrumb-title: Guia de implementação
 user-guide-description: Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento.
 translation-type: tm+mt
-source-git-commit: c82622ad26fecd547c12fff6994713488b9759df
+source-git-commit: d8c4c49b158077393aac66bcb87a52236115551f
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 45%
+source-wordcount: '701'
+ht-degree: 44%
 
 ---
 
@@ -68,6 +68,7 @@ ht-degree: 45%
    + [Configurações e o navegador de configuração](developing/introduction/configurations.md)
    + [Fundamentos técnicos AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [API do AEM as a Cloud Service](https://docs.adobe.com/content/help/pt/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [Geração de Tokens de acesso para APIs do servidor](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + Desenvolvimento de pilha completa AEM {#full-stack}
       + [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
       + [Estrutura da IU AEM](developing/introduction/ui-structure.md)
