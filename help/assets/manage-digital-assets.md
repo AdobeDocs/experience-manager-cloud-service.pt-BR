@@ -4,9 +4,9 @@ description: Saiba mais sobre vários métodos de edição e gerenciamento de at
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
 workflow-type: tm+mt
-source-wordcount: '4407'
+source-wordcount: '4358'
 ht-degree: 12%
 
 ---
@@ -103,19 +103,25 @@ Para pré-visualização de um ativo, siga estas etapas.
    >
    >Para criar tags, é necessário ter permissão de gravação no caminho `/content/cq:tags/default` no repositório CRX.
 
-1. Para obter estatísticas de uso de visualização para o ativo, clique/toque na guia **[!UICONTROL Insights]**.
-
-   As estatísticas de uso incluem o seguinte:
-
-   * Número de vezes que o ativo foi exibido ou baixado
-   * Canais/dispositivos através dos quais o ativo foi usado
-   * Soluções criativas onde o ativo foi usado recentemente
-
-   Para obter mais detalhes, consulte [Asset Insights](assets-insights.md).
-
 1. Toque/clique em **[!UICONTROL Salvar e fechar]**.
 
 1. Navegue até a interface do usuário Ativos. As propriedades de metadados editadas, incluindo título, descrição e tags, são exibidas no cartão de ativos na visualização do cartão e em colunas relevantes na visualização da Lista.
+
+<!-- TBD: Uncomment after verification for Dec release.
+
+## View asset usage and references {#usage-and-references}
+
+[!DNL Experience Manager] lets you track statistics about usage of a digital asset. The usage statistics include the following:
+
+    * Number of times the asset was viewed or downloaded
+    * Channels/devices through which the asset was used
+    * Creative solutions where the asset was recently used
+
+To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Asset Insights](assets-insights.md).
+
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset. That is, the use of assets in compound assets in [!DNL Assets] and its use in remote [!DNL Sites] pages.
+
+-->
 
 ## Copiar ativos {#copying-assets}
 
@@ -545,7 +551,7 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
 1. Baixe ou imprima o PDF usando as opções na parte superior direita.
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor, o tamanho e o estilo da fonte, a cor de plano de fundo dos comentários e status, abra a **[!UICONTROL Configuração do PDF de anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/manage-digital-assets.md#annotating).
 
