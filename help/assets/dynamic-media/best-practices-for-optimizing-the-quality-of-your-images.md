@@ -2,9 +2,9 @@
 title: Práticas recomendadas para otimização da qualidade de imagens
 description: Saiba mais sobre as práticas recomendadas que você pode usar no Dynamic Media para otimizar a qualidade de seus ativos de imagem.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1475'
 ht-degree: 5%
 
 ---
@@ -38,9 +38,9 @@ Como prática recomendada para dimensionamento de imagem, use `&wid=<value>&hei=
 
 ## Práticas recomendadas para a nitidez da imagem {#best-practices-for-image-sharpening}
 
-O ajuste da nitidez da imagem é o aspecto mais complexo do controle de imagens em seu site e onde muitos erros são cometidos. Aproveite o tempo para saber mais sobre como a nitidez e a máscara de nitidez funcionam na AEM, consultando os seguintes recursos úteis:
+O ajuste da nitidez da imagem é o aspecto mais complexo do controle de imagens em seu site, e onde muitos erros são cometidos. Aproveite o tempo para saber mais sobre como a nitidez e a máscara de nitidez funcionam na AEM, consultando os seguintes recursos úteis:
 
-A publicação técnica de práticas recomendadas [Apagar imagens no Adobe Scene7 Publishing System e no Image Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) também se aplica ao AEM.
+White paper de práticas recomendadas [O ajuste de nitidez de imagens no Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) também se aplica a AEM.
 
 Na TV Adobe, assista [Nitidez de uma imagem com máscara nítida](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -65,7 +65,7 @@ Existem dois métodos de nitidez de imagem que você pode usar:
 
       AEM tópico da Ajuda sobre como aumentar a nitidez de uma imagem.
 
-      White paper de práticas recomendadas [Como aumentar a nitidez de imagens no Adobe Scene7 Publishing System e no Image Server.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+      White paper de práticas recomendadas [Qualidade de imagem clássica Adobe Dynamic Media e práticas recomendadas de nitidez](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
    * AEM também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
 
@@ -117,7 +117,7 @@ Se os resultados da nitidez ainda não forem satisfatórios, aumente o raio em i
 
 Durante o experimento, você também pode achar as seguintes sugestões gerais úteis para otimizar seu fluxo de trabalho:
 
-* Tente testar diferentes parâmetros em tempo real, seja diretamente em um URL ou usando a funcionalidade de ajuste de imagem do Scene7 Publishing System, que fornece pré-visualizações em tempo real para operações de ajuste.
+* Tente testar diferentes parâmetros em tempo real, diretamente em um URL.
 * Como prática recomendada, lembre-se de que é possível agrupar comandos do Dynamic Media Image Server em uma predefinição de imagem. Uma predefinição de imagem é basicamente macros de comando de URL com nomes predefinidos personalizados, como `$thumb_low$` e `&product_high$`. O nome predefinido personalizado em um caminho de URL faz uma chamada para essas predefinições. Essa funcionalidade ajuda a gerenciar comandos e configurações de qualidade para diferentes padrões de uso de imagens em seu site e reduz a duração geral dos URLs.
 * AEM também oferece maneiras mais avançadas de ajustar a qualidade da imagem, como aplicar imagens mais nítidas na ingestão. Para casos de uso avançado em que essa pode ser uma opção para ajustar e otimizar ainda mais os resultados da renderização, o [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) pode ajudá-lo com insight personalizado e práticas recomendadas.
 
