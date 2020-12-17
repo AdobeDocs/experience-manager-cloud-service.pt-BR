@@ -3,9 +3,9 @@ title: Processar ativos usando microserviços de ativos
 description: Processar seus ativos digitais usando microserviços de processamento de ativos escaláveis e nativos na nuvem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '829'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ A Adobe Experience Manager como [!DNL Cloud Service] fornece um método nativo d
 * Os serviços nativos de processamento de arquivos de Adobe são usados quando aplicável, fornecendo saída de alta fidelidade e [manuseio eficiente dos formatos proprietários de Adobe](file-format-support.md).
 * Capacidade de configurar o fluxo de trabalho de pós-processamento para adicionar ações e integrações específicas do usuário.
 
-Os microserviços de ativos ajudam a evitar a necessidade de ferramentas e métodos de renderização de terceiros (como a transcodificação de ImageMagick e FFmpeg) e a simplificar as configurações, além de fornecer funcionalidade pronta para uso para tipos de arquivos comuns.
+Os microserviços de ativos ajudam a evitar a necessidade de ferramentas e métodos de renderização de terceiros (como a transcodificação de ImageMagick e FFmpeg) e a simplificar as configurações, além de fornecer a funcionalidade básica para tipos de arquivos comuns por padrão.
 
 ## Arquitetura de alto nível {#asset-microservices-architecture}
 
