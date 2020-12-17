@@ -3,10 +3,10 @@ title: Gerenciar ativos de vídeo
 description: Carregue, pré-visualização, anote e publique ativos de vídeo em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 7%
+source-wordcount: '616'
+ht-degree: 6%
 
 ---
 
@@ -28,17 +28,17 @@ Saiba como gerenciar e editar os ativos de vídeo em [!DNL Adobe Experience Mana
 
 ## Publicar ativos de vídeo {#publish-video-assets}
 
-Após a publicação, você pode incluir os ativos de vídeo em uma página da Web como um URL ou incorporar diretamente os ativos. Para obter detalhes, consulte [publicar ativos do Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Após a publicação, você pode incluir os ativos de vídeo em uma página da Web como um URL ou incorporar diretamente os ativos. Para obter detalhes, consulte [publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Transcodificação usando o Perfil de processamento {#transcode-video}
 
 [!DNL Experience Manager] como um recurso,  [!DNL Cloud Service] permite a transcodificação básica de arquivos de vídeo MP4 usando Perfis de processamento. A funcionalidade permite que você não apenas carregue, mas também pré-visualização e dimensione um arquivo de vídeo MP4.
 
-![Criar Perfil de processamento para transcodificação de vídeo no Experience Manager](assets/video-processing-profile-for-mp4.png)
+![Criar Perfil de processamento para transcodificação de vídeo em  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *Figura: Um Perfil de processamento para transcodificação de vídeo no  [!DNL Experience Manager].*
 
-Se você fornecer apenas largura ou somente altura e deixar o outro campo em branco, as renderizações manterão a proporção. Atualmente, apenas o codec h264 está disponível para transcodificação.
+Se você fornecer apenas largura ou somente altura e deixar o outro campo em branco, as renderizações manterão a proporção. O codec de vídeo H.264 está disponível para transcodificação.
 
 Para processar ativos usando um perfil de processamento, adicione um perfil a uma pasta. Consulte [utilizar perfis de processamento para processar ativos](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
@@ -52,8 +52,18 @@ Para processar ativos usando um perfil de processamento, adicione um perfil a um
 
 ## Práticas recomendadas e limitações {#tips-limitations}
 
-* Sem a licença do Dynamic Media, você só pode processar arquivos MP4 usando perfis de processamento.
-* Para transcodificação básica usando
+* Sem a licença [!DNL Dynamic Media], você só pode processar arquivos MP4 usando perfis de processamento.
+* Ao transcodificar arquivos MP4 usando Perfis de processamento, as seguintes diretrizes e limitações se aplicam:
+
+   * Os arquivos do Apple ProRes só podem transcodificar para uma resolução máxima de 1080p.
+   * Se o arquivo de origem tiver uma taxa de bits >200 Mbps, você só poderá transcodificar para uma resolução máxima de 1080p.
+   * Se a taxa de quadros de origem >= 60 fps, o tamanho máximo de arquivo de origem que você pode usar é
+
+      * 400 MB para transcodificação de 4k.
+      * 800 MB para transcodificação de 1080p.
+      * 8 GB para transcodificação de 720p.
+   * O tamanho máximo de arquivo que você pode transcodificar para resolução 4k é um arquivo MP4 de 2,55 GB com resolução de 4k, taxa de bits de 12 Mbps e 23 fps.
+
 
 >[!MORELIKETHIS]
 >
