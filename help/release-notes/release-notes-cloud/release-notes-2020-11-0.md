@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0.
 description: '[!DNL Adobe Experience Manager] como notas de versão de Cloud Service para 2020.11.0.'
 translation-type: tm+mt
-source-git-commit: 70974ad7762bd07f68ee883756708799a79cf85f
+source-git-commit: 66374fe5a9126ba92e12c0128d5f60e0f0d09cb6
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 4%
@@ -34,7 +34,8 @@ A seguinte versão (2020.12.0) será lançada em 17 de dezembro de 2020
 ### Novidades em [!DNL Assets] e [!DNL Dynamic Media] {#what-is-new-assets}
 
 * **Inclusão** de ativos em massa: Ofereça aos clientes um serviço de ingestão escalável e nativo de nuvem que aproveita  [!DNL Experience Manager] como uma arquitetura de Cloud Service, incluindo microserviços de ativos. Os principais casos de uso incluem ingestão em escala com monitoramento, relatórios e agendamento, enquanto permitem a transferência inicial de ativos para armazenamentos de dados em nuvem usando ferramentas comuns de upload em nuvem. Consulte [ferramenta de assimilação em massa de ativos](/help/assets/add-assets.md#asset-bulk-ingestor).
-Esta ferramenta destina-se a administradores do sistema, consultores ou parceiros de implementação. Este recurso permite a ingestão em grande escala e é usado idealmente durante a ingestão inicial ou a ingestão ocasional em grande escala. Para tarefas de ingestão menores, use o [[!DNL Experience Manager] aplicativo desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) ou [upload usando a interface de usuário do Assets](/help/assets/add-assets.md#upload-assets).
+
+   Esta ferramenta destina-se a administradores do sistema, consultores ou parceiros de implementação. Este recurso permite a ingestão em grande escala e é usado idealmente durante a ingestão inicial ou a ingestão ocasional em grande escala. Para tarefas de ingestão menores, use o [[!DNL Experience Manager] aplicativo desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) ou [upload usando a interface de usuário do Assets](/help/assets/add-assets.md#upload-assets).
 
    ![Configuração do importador a granel](/help/assets/assets/bulk-import-config-low-res.png)
 
