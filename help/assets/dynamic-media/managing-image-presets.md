@@ -2,9 +2,9 @@
 title: Gerenciamento de predefinições de imagens
 description: Entenda as predefinições de imagens e saiba como criar, modificar e gerenciar predefinições de imagens.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3607'
 ht-degree: 11%
 
 ---
@@ -381,7 +381,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     </ul>
     <div>
       A nitidez está descrita em
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">Apagar imagens</a>.
+     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Apagar imagens</a>.
     </div> </td>
   </tr>
   <tr>
