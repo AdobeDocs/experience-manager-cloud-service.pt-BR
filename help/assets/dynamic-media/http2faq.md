@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre entrega de conteúdo HTTP2
 description: Saiba mais sobre o delivery de conteúdo HTTP2.
 translation-type: tm+mt
-source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
+source-git-commit: d9673296208831e68c5f776e0a9b142f348efc95
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '753'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ O site a seguir descreve o HTTP/2 e seus benefícios de uma forma breve e simple
 
 ## Quais são os principais benefícios da mudança para HTTP/2 para o delivery de conteúdo? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-O aprimoramento do desempenho varia muito com base em fatores como o código do seu site, a forma como você está usando o Scene7, o dispositivo do consumidor, a tela e o local, e assim por diante.
+O aprimoramento do desempenho varia muito com base em fatores como o código do seu site, a forma como você está usando o Dynamic Media, o dispositivo do consumidor, a tela e o local, e assim por diante.
 
 Os resultados obtidos foram os seguintes:
 
@@ -41,13 +41,13 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 * Use HTTPS seguro para suas solicitações de mídia avançada.
 * Use o CDN (content delivery network) fornecido no Adobe como parte da sua licença do Dynamic Media Classic.
-* Use um domínio dedicado (ou seja, `images.company.com` ou `mycompany.scene7.com`), não um domínio genérico do Dynamic Media Classic (ou seja, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
+* Use um domínio dedicado (ou seja, `images.company.com` ou `mycompany.scene7.com`), não um domínio Dynamic Media genérico (ou seja, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
 
-   Para localizar seus domínios, [faça logon em sua instância do Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta de empresa.
+   Para localizar seus domínios, [faça logon em sua instância do Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta de empresa.
 
-   Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**. Procure o campo **Published Server Name**. Se você estiver usando um domínio Scene7 genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
+   Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**. Procure o campo **Published Server Name**. Se você estiver usando um domínio Dynamic Media genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
 
-## Qual é o processo para habilitar HTTP/2 para minha conta do Dynamic Media Classic? {#what-is-the-process-for-enabling-http-for-my-scene-account}
+## Qual é o processo para habilitar HTTP/2 para minha conta Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
 Você deve [usar o Admin Console para criar um caso de suporte](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) e solicitar a alternância para HTTP/2; isso não é feito automaticamente para você.
 
@@ -56,17 +56,17 @@ Você deve [usar o Admin Console para criar um caso de suporte](https://helpx.ad
    * Nome do contato principal, email e número de telefone.
    * Todos os domínios a serem transferidos para HTTP2. Ou seja, `images.company.com` ou `mycompany.scene7.com`.
 
-   Para localizar seus domínios, [faça logon em sua instância do Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta de empresa.
+   Para localizar seus domínios, [faça logon em sua instância do Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta de empresa.
 
    Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**. Procure o campo **[!UICONTROL Published Server Name]**.
 
    * Verifique se você usa HTTPS seguro para solicitações de mídia avançada.
    * Verifique se você está usando o CDN através do Adobe e não é gerenciado com um relacionamento direto.
-   * Verifique se você está usando um domínio dedicado. Ou seja, `images.company.com` ou `mycompany.scene7.com`, não é um domínio genérico do Scene7, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+   * Verifique se você está usando um domínio dedicado. Ou seja, `images.company.com` ou `mycompany.scene7.com`, não é um domínio genérico do Dynamic Media, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-   Para localizar seus domínios, [faça logon em sua instância do Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta de empresa.
+   Para localizar seus domínios, [faça logon em sua instância do Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta de empresa.
 
-   Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**. Procure o campo **[!UICONTROL Published Server Name]**. Se você estiver usando um domínio Scene7 genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
+   Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**. Procure o campo **[!UICONTROL Published Server Name]**. Se você estiver usando um domínio Dynamic Media genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
 
    1. O suporte técnico o adiciona à lista de espera do cliente HTTP/2 com base na ordem em que as solicitações foram enviadas.
    1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Suporte entrará em contato com você para coordenar a transição e definir uma data de público alvo.
