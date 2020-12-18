@@ -3,9 +3,9 @@ title: Configurar e usar microserviços de ativos
 description: Configure e use os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2532'
 ht-degree: 1%
 
 ---
@@ -221,6 +221,7 @@ Para obter detalhes sobre qual etapa de fluxo de trabalho padrão pode ser usada
 
 * Considere suas necessidades para todos os tipos de execuções ao projetar workflows. Se você não prever a necessidade de uma representação no futuro, remova a etapa de criação do fluxo de trabalho. As execuções não podem ser excluídas em massa depois. As representações indesejadas podem ocupar muito espaço no armazenamento após o uso prolongado de [!DNL Experience Manager]. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e carregá-los novamente.
 * Atualmente, o suporte está limitado à geração de execuções. Não há suporte para a geração de novo ativo.
+* Atualmente, o limite de tamanho de arquivo para a extração de metadados é de aproximadamente 10 GB. Ao fazer upload de ativos muito grandes, às vezes a operação de extração de metadados falha.
 
 >[!MORELIKETHIS]
 >
