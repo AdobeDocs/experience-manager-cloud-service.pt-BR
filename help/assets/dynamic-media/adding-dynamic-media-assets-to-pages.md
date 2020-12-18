@@ -2,9 +2,9 @@
 title: Adição de ativos de Mídia dinâmica a páginas
 description: Como adicionar componentes do Dynamic Media a uma página no Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3135'
 ht-degree: 30%
 
 ---
@@ -195,8 +195,8 @@ Você pode editar as seguintes configurações do Dynamic Media clicando em **[!
 
    Com modificadores do visualizador, você pode, por exemplo, fazer o seguinte:
 
-   * Associe um arquivo de legenda a um vídeo: [legenda](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Associe um arquivo de navegação a um vídeo: [navegação](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Associe um arquivo de legenda a um vídeo: [legenda](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Associe um arquivo de navegação a um vídeo: [navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
    Você pode editar as seguintes Configurações avançadas clicando em **[!UICONTROL Editar]** no componente.
 
@@ -228,7 +228,7 @@ Você pode editar as seguintes configurações do Dynamic Media clicando em **[!
 
    Você pode editar as seguintes Configurações avançadas clicando em **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Habilitar correspondência]** de proporção — Selecione essa opção para permitir que a Dynamic Media escolha uma execução de recorte inteligente com uma proporção que melhor corresponda à proporção da imagem original.
+* **[!UICONTROL Ativar a correspondência]** de proporção — Selecione essa opção para permitir que a Dynamic Media escolha uma execução de recorte inteligente com uma proporção que melhor corresponda à proporção da imagem original.
 
 * **[!UICONTROL Título]**—Altere o título da imagem de Recorte inteligente.
 
