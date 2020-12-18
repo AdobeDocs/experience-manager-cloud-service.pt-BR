@@ -2,9 +2,9 @@
 title: Imagens interativas
 description: Saiba como trabalhar com imagens interativas no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '4253'
+source-wordcount: '4249'
 ht-degree: 2%
 
 ---
@@ -358,9 +358,9 @@ A integração é tão simples quanto remover a tag `IMG` e substituí-la pelo c
 
 Para aplicar um &quot;recorte&quot; a uma imagem interativa que pode ser comprada para um ambiente responsivo, você pode incluir o atributo de configuração de Imagem interativa `ZoomView.iscommand` no caminho, onde `ZoomView` é o componente a ser chamado e `iscommand` é o comando de serviço de imagem &quot;recorte&quot; aplicado.
 
-Consulte [Atributo de configuração ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Consulte [Atributo de configuração ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
 
-Consulte [comando de serviço de imagem ](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
+Consulte [comando de serviço de imagem ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
 
 Agora você está pronto para integrar a imagem interativa com uma exibição rápida existente em seu site.
 
