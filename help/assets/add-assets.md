@@ -2,7 +2,7 @@
 title: Adicione seus ativos digitais a [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais a [!DNL Adobe Experience Manager] como a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
+source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 1%
@@ -151,6 +151,8 @@ Para carregar um número maior de arquivos, use uma das seguintes abordagens. Al
 
 A ferramenta é fornecida somente para o grupo de administradores a ser usado para a ingestão em grande escala de ativos do Azure ou de armazenamentos de dados S3.
 
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+
 Para configurar a ferramenta, siga estas etapas:
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Importação em massa]**. Selecione a opção **[!UICONTROL Criar]**.
@@ -199,12 +201,12 @@ As seguintes guias estão disponíveis:
 
 Além disso, se [!DNL Dynamic Media] estiver ativado na implantação, as seguintes guias estarão disponíveis:
 
-* [Os ](dynamic-media/image-profiles.md) perfis de Imagem de Dynamic Media permitem aplicar recortes específicos (recorte **[!UICONTROL inteligente e recorte de]** pixels) e configurações de nitidez aos ativos carregados.
-* [Os ](dynamic-media/video-profiles.md) perfis de vídeo do Dynamic Media permitem que você aplique perfis de codificação de vídeo específicos (resolução, formato, parâmetros).
+* [Os ](dynamic-media/image-profiles.md) perfis de imagem Dynamic Media permitem que você aplique recortes específicos (**[!UICONTROL Recorte]** inteligente e recorte de pixels) e configuração de nitidez aos ativos carregados.
+* [Os ](dynamic-media/video-profiles.md) perfis do Dynamic Media Video permitem aplicar perfis de codificação de vídeo específicos (resolução, formato, parâmetros).
 
 >[!NOTE]
 >
->O corte do Dynamic Media e outras operações em ativos não são destrutivas, ou seja, não alteram o original carregado, mas fornecem parâmetros para o corte ou transformação de mídia a ser feito ao entregar os ativos
+>As operações de recorte da Dynamic Media e outras operações em ativos não são destrutivas, ou seja, elas não alteram o original carregado, mas fornecem parâmetros para o recorte ou a transformação de mídia a ser feita ao entregar os ativos
 
 Para pastas com um perfil de processamento atribuído, o nome do perfil aparece na miniatura na visualização do cartão. Na visualização da lista, o nome do perfil aparece na coluna **[!UICONTROL Processando Perfil]**.
 
