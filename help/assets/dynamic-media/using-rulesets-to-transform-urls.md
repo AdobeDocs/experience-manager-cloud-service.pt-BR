@@ -2,9 +2,9 @@
 title: Uso de conjuntos de regras para transformar URLs
 description: Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições.
 translation-type: tm+mt
-source-git-commit: 3a8f63c46e5604a9ce46250ac2d02cc95b473a7c
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '764'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ No contexto da Dynamic Media, os sites que usam um sistema baseado em XML para g
 >Tenha cuidado ao usar conjuntos de regras; eles podem impedir que o conteúdo do Dynamic Media seja exibido em seu site.
 
 Existem conjuntos de regras de amostra disponíveis que podem ajudar a criar seu próprio conjunto de regras.
-Consulte [Referência do conjunto de regras](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
+Consulte [Referência do conjunto de regras](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
 Como ocorre com a criação de todo o conjunto de regras, verifique se o arquivo XML é válido antes de carregá-lo usando um programa validador XML, como xmlvalid.
 Consulte também [Resolução de problemas de conjuntos de regras](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
