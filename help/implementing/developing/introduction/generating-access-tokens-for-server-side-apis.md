@@ -2,9 +2,9 @@
 title: Geração de Tokens de acesso para APIs do servidor
 description: Saiba como facilitar a comunicação entre um servidor de terceiros e o AEM como Cloud Service gerando um token JWT seguro
 translation-type: tm+mt
-source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
+source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,18 @@ O fluxo de servidor para servidor é descrito abaixo, juntamente com um fluxo si
 
 ## O fluxo de servidor para servidor {#the-server-to-server-flow}
 
-Um usuário com a função de administrador pode gerar um token do portador JWT, que deve ser instalado no servidor e deve ser tratado com cuidado como uma chave secreta. O token do portador de JWT deve ser trocado com IMS para um token de acesso, que deve ser incluído na solicitação para AEM como Cloud Service.
+Um usuário com a função de administrador pode gerar um AEM como uma credencial de Cloud Service, que deve ser instalada no servidor e tratada com cuidado como uma chave secreta. Esse arquivo de formato JSON contém todos os dados necessários para integrar um AEM como uma API Cloud Service. Os dados são usados para criar um token JWT assinado, que é trocado com IMS para um token de acesso IMS. Esse token de acesso pode ser usado como um token de autenticação do Portador para fazer solicitações para AEM como Cloud Service.
 
 O fluxo de servidor para servidor envolve as seguintes etapas:
 
-* Gerar o token do portador JWT a partir do console do desenvolvedor
-* Instale o token em um servidor não AEM fazendo chamadas para AEM
-* Troque o token do portador JWT por um token de acesso usando as APIs Adobe IMS
-* Chamando a API AEM
+* Obtenha o AEM como credenciais de Cloud Service no Developer Console
+* Instale o AEM como credenciais Cloud Service em um servidor que não seja AEM e faça chamadas para AEM
+* Gerar um token JWT e trocar esse token por um token de acesso usando as APIs IMS do Adobe
+* Chamar a API AEM com o token de acesso como um token de autenticação do portador
 
-### Gerando o token do portador JWT {#generating-the-jwt-bearer-token}
+### Obtenha o AEM como credenciais de Cloud Service {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Os usuários que têm a função de administrador de uma organização verão a guia integrações no console do desenvolvedor de um determinado ambiente, bem como dois botões. Clicar no botão **Obter Credenciais de Serviço** gerará a chave privada, o certificado e a configuração para o autor e a publicação dos níveis do ambiente, independentemente da seleção do pod.
+Os usuários que tiverem a função de administrador para uma organização IMS verão a guia integrações no Developer Console de um determinado ambiente, bem como dois botões. Clicar no botão **Obter Credenciais de Serviço** gerará o json de credenciais de serviço, que conterá todas as informações necessárias para o servidor não AEM, incluindo a ID do cliente, o segredo do cliente, a chave privada, o certificado e a configuração para os níveis de autor e publicação do ambiente, independentemente da seleção do pod.
 
 ![Geração JWT](assets/JWTtoken3.png)
 
@@ -59,21 +59,45 @@ A saída será semelhante ao seguinte:
 }
 ```
 
-### Instale o token em um servidor não AEM {#install-the-token-on-a-non-aem-server}
+### Instale as credenciais de serviço AEM em um servidor não AEM {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-O aplicativo não AEM fazendo chamadas para AEM deve instalar o token do portador JWT, tratando-o como um segredo.
+O aplicativo não AEM fazendo chamadas para AEM deve poder acessar o AEM como credenciais de Cloud Service, tratando-o como um segredo.
 
-### Troque o token JWT por um Token de acesso {#exchange-the-jwt-token-for-an-access-token}
+### Gerar um token JWT e trocá-lo por um Token de acesso{#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-Inclua o token JWT em uma chamada para o serviço IMS do Adobe para recuperar um token de acesso, que é válido por 24 horas.
+Use as credenciais para criar um JWT em uma chamada para o serviço IMS Adobe a fim de recuperar um token de acesso, que é válido por 24 horas.
+
+As credenciais de serviço da AEM-CS podem ser trocadas por um token de acesso usando bibliotecas de clientes projetadas para esse fim. As bibliotecas do cliente são do repositório público do Adobe [](https://github.com/adobe/aemcs-api-client-lib), que contém orientações mais detalhadas e informações mais recentes.
+
+```
+/*jshint node:true */
+"use strict";
+
+const fs = require('fs');
+const exchange = require("@adobe/aemcs-api-client-lib");
+
+const jsonfile = "aemcs-service-credentials.json";
+
+var config = JSON.parse(fs.readFileSync(jsonfile, 'utf8'));
+exchange(config).then(accessToken => {
+    // output the access token in json form including when it will expire.
+    console.log(JSON.stringify(accessToken,null,2));
+}).catch(e => {
+    console.log("Failed to exchange for access token ",e);
+});
+```
+
+A mesma troca pode ser executada em qualquer idioma capaz de gerar um token JWT assinado com o formato correto e chamar as APIs IMS Token Exchange.
+
+O token de acesso definirá quando expirará, que normalmente é 12h. Há um código de amostra no repositório git para gerenciar um token de acesso e atualizá-lo antes de expirar.
 
 ### Chamando a API AEM {#calling-the-aem-api}
 
-Faça as chamadas apropriadas de API de servidor para servidor para um AEM como ambiente, incluindo o token de acesso no cabeçalho. Portanto, para o cabeçalho &quot;Autorização&quot;, use o valor `"Bearer <access_token>"`.
+Faça as chamadas apropriadas de API de servidor para servidor para um AEM como ambiente, incluindo o token de acesso no cabeçalho. Portanto, para o cabeçalho &quot;Autorização&quot;, use o valor `"Bearer <access_token>"`. Por exemplo, usando `curl`:
 
-<!-- ### Code Samples {#code-samples}
-
-https://git.corp.adobe.com/boston/skyline-api-client-lib (internal note: URL will change to public git repo before we publish) contains client libraries written in node.js that will exchange the JSON outputted by the developer console for an access token. -->
+```curlc
+curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
+```
 
 ## Fluxo do desenvolvedor {#developer-flow}
 
@@ -100,6 +124,6 @@ Clique no botão **Obter token de desenvolvimento local** no Developer Console p
 
 Faça as chamadas apropriadas de API de servidor para servidor do aplicativo não AEM para um AEM como ambiente Cloud Service, incluindo o token de acesso no cabeçalho. Portanto, para o cabeçalho &quot;Autorização&quot;, use o valor `"Bearer <access_token>"`.
 
-## Revogação do token do portador JWT {#jwt-bearer-token-revocation}
+## Revogação de Credenciais de Serviço {#service-credentials-revocation}
 
 Envie uma solicitação ao suporte ao cliente se o token do portador JWT precisar ser revogado.
