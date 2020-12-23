@@ -2,9 +2,9 @@
 title: Adobe Experience Manager como um suporte a fragmentos de conteúdo de Cloud Service na API HTTP Assets
 description: Saiba mais sobre o Adobe Experience Manager como um suporte a fragmentos de conteúdo Cloud Service na API HTTP Assets.
 translation-type: tm+mt
-source-git-commit: c86dac828eabe28ee62748bff64fc091491303b0
+source-git-commit: 42d7ac4fc99ef45c26c23d68ddfe2a5ddf7f62fd
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1914'
 ht-degree: 2%
 
 ---
@@ -82,9 +82,7 @@ O método HTTP determina a operação a ser executada:
 >
 >Os parâmetros do corpo da solicitação e/ou URL podem ser usados para configurar algumas dessas operações; por exemplo, defina que uma pasta ou um ativo deve ser criado por uma solicitação **POST**.
 
-<!--
-The exact format of supported requests is defined in the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentation.
--->
+O formato exato das solicitações com suporte é definido na documentação [Referência da API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference).
 
 ### Comportamento transacional {#transactional-behavior}
 
@@ -256,11 +254,9 @@ O uso pode ser diferente se você estiver usando um autor ou ambiente de publica
 >
 >A configuração do dispatcher em instâncias AEM nuvem pode bloquear o acesso a `/api`.
 
-<!--
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html). 
--->
+>Para obter mais detalhes, consulte [Referência da API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Especificamente, [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Leitura/Delivery {#read-delivery}
 
@@ -309,10 +305,6 @@ Há algumas limitações:
 
 * **Os modelos de fragmento de conteúdo não são suportados** no momento: eles não podem ser lidos ou criados. Para poder criar um novo fragmento de conteúdo ou atualizar um existente, os desenvolvedores precisam saber o caminho correto para o modelo de fragmento de conteúdo. Atualmente, o único método para obter uma visão geral desses recursos é por meio da interface de usuário administrativa.
 * **As referências são ignoradas**. Atualmente, não há verificações para determinar se um fragmento de conteúdo existente é referenciado. Portanto, por exemplo, excluir um fragmento de conteúdo pode resultar em problemas em uma página que contenha uma referência ao fragmento de conteúdo excluído.
-
-<!--
-* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
--->
 
 ## Códigos de status e mensagens de erro {#status-codes-and-error-messages}
 
