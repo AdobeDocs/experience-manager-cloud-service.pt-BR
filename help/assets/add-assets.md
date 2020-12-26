@@ -2,9 +2,9 @@
 title: Adicione seus ativos digitais a [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais a [!DNL Adobe Experience Manager] como a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
+source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1903'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ Para adequar-se a convenções de nomenclatura de arquivos específicas para sua
 
 ## Carregar ativos em massa {#bulk-upload}
 
-O incorporador de ativos em massa pode lidar com milhares de ativos com eficiência. No entanto, uma ingestão em grande escala não é apenas um depósito de arquivos amplo e grande ou uma migração cega. Para ser um projeto significativo que atende a sua finalidade comercial, o planejamento e a preparação dos ativos levam a uma ingestão muito mais eficiente. Todas as ingestões não são as mesmas e as generalizações não podem ser feitas sem considerar a composição de repositório e as necessidades de negócios diversificadas. A seguir estão sugestões abrangentes para planejar e executar uma ingestão em massa:
+O incorporador de ativos em massa pode lidar com um número muito grande de ativos com eficiência. No entanto, uma ingestão em grande escala não é apenas um despejo de arquivos amplo ou uma migração casual. Para que uma ingestão em larga escala seja um projeto significativo que atende ao seu objetivo comercial e seja eficiente, planeje a migração e prepare a organização de ativos. Todas as sugestões são diferentes, portanto, em vez de generalizar, fator na composição de repositório e nas necessidades de negócios diversificadas. Estas são algumas sugestões abrangentes para planejar e executar uma ingestão em massa:
 
 * Preparar ativos: Remova ativos que não são necessários no DAM. Considere remover ativos não utilizados, obsoletos ou duplicados. Isso reduz os dados transferidos e os ativos assimilados, o que resulta em ingestões mais rápidas.
 * Organizar ativos: Considere organizar o conteúdo em alguma ordem lógica, por exemplo, por tamanho de arquivo, formato de arquivo, caso de uso ou prioridade. Em geral, arquivos complexos grandes exigem mais processamento. Você também pode considerar a assimilação de arquivos grandes separadamente usando a opção de filtragem do tamanho do arquivo (descrita abaixo).
@@ -149,7 +149,7 @@ Para carregar um número maior de arquivos, use uma das seguintes abordagens. Al
 
 ### Ferramenta de assimilação de itens em massa {#asset-bulk-ingestor}
 
-A ferramenta é fornecida somente para o grupo de administradores a ser usado para a ingestão em grande escala de ativos do Azure ou de armazenamentos de dados S3.
+A ferramenta é fornecida somente para o grupo de administradores a ser usado para a ingestão em grande escala de ativos do Azure ou de armazenamentos de dados S3. Assista a um vídeo de apresentação da configuração e ingestão.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
