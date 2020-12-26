@@ -3,10 +3,10 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29c3ca56281c482f195d84590ceb4ef07c556e64
+source-git-commit: caf50490c573c2f119f2cbfa14ee7cca12854364
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 40%
+source-wordcount: '2688'
+ht-degree: 28%
 
 ---
 
@@ -45,16 +45,17 @@ Os autores pesquisam por imagens e pelos seguintes tipos de documentos no Locali
 
 ### Usuários e grupos envolvidos {#users-and-groups-involved}
 
-As várias funções envolvidas para configurar e usar o recurso e seus grupos de usuários correspondentes são descritas abaixo. O escopo local é usado para o caso de uso em que um autor cria uma página da Web. O escopo remoto é usado para a implantação do DAM que hospeda os ativos necessários. O autor [!DNL Sites] busca esses ativos remotos.
+As várias funções envolvidas para configurar e usar o recurso e seus grupos de usuários correspondentes são descritas abaixo. O escopo local é usado para o caso de uso em que um autor cria uma página da Web. O escopo remoto é usado para a implantação do DAM. O autor [!DNL Sites] busca esses ativos remotos.
 
 | Função | Escopo | Grupo de usuários | Nome do usuário na apresentação | Requisito |
-|----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|------|--------|-----------|-----|----------|
 | [!DNL Sites] administrador | Local | [!DNL Experience Manager] `administrators` | `admin` | Configure [!DNL Experience Manager] e configure a integração com a implantação remota [!DNL Assets]. |
 | Usuário do DAM | Local | `Authors` | `ksaner` | Usado para exibir e duplicar os ativos pesquisados em `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Local | `Authors` (com acesso de leitura no DAM remoto e acesso de autor no local  [!DNL Sites]) | `ksaner` | Os usuários finais são [!DNL Sites] autores que usam essa integração para melhorar sua velocidade de conteúdo. Os autores pesquisam e navegam por ativos no DAM remoto usando [!UICONTROL Localizador de conteúdo] e usando as imagens necessárias em páginas da Web locais. As credenciais do usuário do DAM `ksaner` são usadas. |
+| [!DNL Sites] author | Local | <ul><li>`Authors` (com acesso de leitura no DAM remoto e acesso de autor no local  [!DNL Sites]) </li> <li>`dam-users` no local  [!DNL Sites]</li></ul> | `ksaner` | Os usuários finais são [!DNL Sites] autores que usam essa integração para melhorar sua velocidade de conteúdo. Os autores pesquisam e navegam por ativos no DAM remoto usando [!UICONTROL Localizador de conteúdo] e usando as imagens necessárias em páginas da Web locais. As credenciais do usuário do DAM `ksaner` são usadas. |
 | [!DNL Assets] administrador | Remoto | [!DNL Experience Manager] `administrators` | `admin` em remoto  [!DNL Experience Manager] | Configure o CORS (Cross-Origin Resource Sharing). |
 | Usuário do DAM | Remoto | `Authors` | `ksaner` em remoto  [!DNL Experience Manager] | Função de autor na implantação remota [!DNL Experience Manager]. Pesquise e procure ativos em Ativos conectados usando o [!UICONTROL Localizador de conteúdo]. |
-| Distribuidor do DAM (usuário técnico) | Remoto | [!DNL Sites] `Authors` | `ksaner` em remoto  [!DNL Experience Manager] | Este usuário presente na implantação remota é usado pelo [!DNL Experience Manager] servidor local (não pela função de autor [!DNL Sites]) para buscar os ativos remotos, em nome do autor [!DNL Sites]. Essa função não é igual às duas funções `ksaner` acima e pertence a um grupo de usuários diferente. |
+| Distribuidor do DAM (usuário técnico) | Remoto | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` em remoto  [!DNL Experience Manager] | Este usuário presente na implantação remota é usado pelo [!DNL Experience Manager] servidor local (não pela função de autor [!DNL Sites]) para buscar os ativos remotos, em nome do autor [!DNL Sites]. Essa função não é igual às duas funções `ksaner` acima e pertence a um grupo de usuários diferente. |
+| [!DNL Sites] utilizador técnico | Local | `connectedassets-sites-techaccts` | - | Permite que a implantação [!DNL Assets] procure referências a ativos nas páginas da Web [!DNL Sites]. |
 
 ## Configurar uma conexão entre [!DNL Sites] e [!DNL Assets] implantações {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -62,29 +63,28 @@ Um administrador [!DNL Experience Manager] pode criar essa integração. Depois 
 
 Para configurar os ativos conectados e a conectividade [!DNL Sites] local, siga estas etapas:
 
-1. Acesse uma implantação [!DNL Sites] existente ou crie uma implantação usando o seguinte comando:
+1. Acesse uma implantação [!DNL Sites] existente. Essa implantação [!DNL Sites] é usada para criação de página da Web, por exemplo, em `https://[sites_servername]:port`. Conforme a criação de página ocorre na implantação [!DNL Sites], vamos chamar a implantação [!DNL Sites] como local da perspectiva de criação de página.
 
-   1. Na pasta do arquivo JAR, execute o seguinte comando em um terminal para criar cada servidor [!DNL Experience Manager].
-      `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
+1. Acesse uma implantação [!DNL Assets] existente. Essa implantação [!DNL Assets] é usada para gerenciar ativos digitais, por exemplo, em `https://[assets_servername]:port`.
 
-   1. Após alguns minutos, os start do servidor [!DNL Experience Manager] serão executados com êxito. Considere esta implantação [!DNL Sites] como a máquina local para criação de página da Web, por exemplo, em `https://[local_sites]:4502`.
+1. Verifique se os usuários e as funções com o escopo apropriado existem na implantação [!DNL Sites] e na implantação [!DNL Assets] no AMS. Crie um usuário técnico na implantação [!DNL Assets] e adicione-o ao grupo de usuários mencionado em [usuários e grupos envolvidos](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
 
-1. Verifique se os usuários e as funções com escopo local existem na implantação [!DNL Sites] e na implantação [!DNL Assets] no AMS. Crie um usuário técnico na implantação [!DNL Assets] e adicione-o ao grupo de usuários mencionado em [usuários e grupos envolvidos](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
+1. Acesse a implantação local [!DNL Sites] em `https://[sites_servername]:port`. Clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Configuração de ativos conectados]**. Forneça os seguintes valores:
 
-1. Acesse a implantação local [!DNL Sites] em `https://[local_sites]:4502`. Clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Configuração do Connected Assets]** e forneça os seguintes valores:
-
-   1. [!DNL Assets] o local é  `https://[assets_servername_ams]:[port]`.
+   1. Um **[!UICONTROL Título]** da configuração.
+   1. **[!UICONTROL O]** URL do DAM remoto é o URL do  [!DNL Assets] local no formato  `https://[assets_servername]:[port]`.
    1. Credenciais de um distribuidor do DAM (usuário técnico).
-   1. No campo **[!UICONTROL Ponto de montagem]**, digite o caminho local [!DNL Experience Manager] onde [!DNL Experience Manager] busca os ativos. Por exemplo, pasta `remoteassets`.
+   1. No campo **[!UICONTROL Ponto de montagem]**, digite o caminho local [!DNL Experience Manager] onde [!DNL Experience Manager] busca os ativos. Por exemplo, pasta `connectedassets`. Os ativos obtidos do DAM são armazenados nesta pasta na implantação [!DNL Sites].
+   1. **[!UICONTROL O]** URL dos sites locais é o local da  [!DNL Sites] implantação. [!DNL Assets] a implantação usa esse valor para manter referências aos ativos digitais obtidos por essa  [!DNL Sites] implantação.
+   1. Credenciais de [!DNL Sites] usuário técnico.
+   1. O valor do campo Limite de otimização de transferência binária original **[!UICONTROL especifica se os ativos originais (incluindo as representações) são transferidos sincronicamente ou não.]** Os ativos com tamanho de arquivo menor podem ser buscados prontamente, enquanto os ativos com tamanho de arquivo relativamente maior são sincronizados de forma assíncrona. O valor depende dos recursos de sua rede.
+   1. Selecione **[!UICONTROL Datastore compartilhado com o Connected Assets]**, se você usar um datastore para armazenar seus ativos e se o Datastore for o armazenamento comum entre as duas implantações do Nesse caso, o limite não importa, pois os binários de ativos reais estão disponíveis no armazenamento de dados e não são transferidos.
 
-   1. Ajuste os valores do **[!UICONTROL Limite de otimização da transferência do binário original]**, dependendo da sua rede. Uma representação de ativos maior que esse limite é transferida de forma assíncrona.
-   1. Selecione **[!UICONTROL Datastore compartilhado com o Connected Assets]**, se você usar um datastore para armazenar seus ativos e se o Datastore for o armazenamento comum entre as duas implantações do Nesse caso, o limite não importa, pois os binários de ativos reais residem no datastore e não são transferidos.
+   ![Uma configuração típica para a funcionalidade Ativos conectados](assets/connected-assets-typical-config.png)
 
-   ![Uma configuração normal do Connected Assets](assets/connected-assets-typical-config.png)
+   *Figura: Uma configuração típica para a funcionalidade Ativos conectados.*
 
-   *Figura: uma configuração normal do Connected Assets.*
-
-1. Como os ativos já são processados e as representações são buscadas, desative os inicializadores do fluxo de trabalho. Ajuste as configurações do iniciador na implantação local ([!DNL Sites]) para excluir a pasta `connectedassets`, na qual os ativos remotos são buscados.
+1. Os ativos digitais existentes na implantação [!DNL Assets] já foram processados e as execuções são geradas. Eles são buscados usando essa funcionalidade, de modo que não há necessidade de regenerar as execuções. Desative os iniciadores do fluxo de trabalho para impedir a regeneração de execuções. Ajuste as configurações do iniciador na implantação ([!DNL Sites]) para excluir a pasta `connectedassets` (os ativos são buscados nessa pasta).
 
    1. Na implantação [!DNL Sites], clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Iniciadores]**.
 
@@ -104,13 +104,9 @@ Para configurar os ativos conectados e a conectividade [!DNL Sites] local, siga 
    >
    >Todas as representações disponíveis na implantação remota do são buscadas, quando os autores buscam um ativo. Se você quiser criar mais representações de um ativo buscado, pule esta etapa de configuração. O fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] é acionado e cria mais execuções. Essas execuções estão disponíveis somente na implantação local [!DNL Sites] e não na implantação remota do DAM.
 
-1. Adicione a implantação [!DNL Sites] como uma das **[!UICONTROL Origem]** permitidas na configuração remota [!DNL Assets'] CORS.
+1. Adicione a implantação [!DNL Sites] como uma origem permitida na configuração do CORS na implantação [!DNL Assets]. Para obter mais informações, consulte [compreender CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
-   1. Faça logon usando as credenciais de administrador. Pesquisar `Cross-Origin`. Acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-
-   1. Para criar uma configuração de CORS para a implantação [!DNL Sites], clique em adicionar opção ![Ícone de adição de ativos](assets/do-not-localize/aem_assets_add_icon.png) ao lado de **[!UICONTROL Política de compartilhamento de recursos de Origem cruzada de Granite]**.
-
-   1. No campo **[!UICONTROL Origem]** permitido, insira o URL do local [!DNL Sites], ou seja, `https://[local_sites]:[port]`. Salve a configuração.
+<!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
 ## Use ativos remotos {#use-remote-assets}
 
@@ -140,13 +136,13 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
    *Figura: opções para filtrar tipos de documentos e imagens ao pesquisar ativos no DAM remoto.*
 
-1. Um autor do site será notificado se ocorrer uma busca assíncrona de ativo e uma falha na tarefa de busca. Durante a criação ou até mesmo após a criação, os autores podem ver informações detalhadas sobre as tarefas de busca e erros na interface do usuário de [trabalhos assíncronos](/help/operations/asynchronous-jobs.md).
+1. Um autor do site será notificado se ocorrer uma busca assíncrona de ativo e uma falha na tarefa de busca. Durante a criação ou mesmo após a criação, os autores podem ver informações detalhadas sobre tarefas de busca e erros na interface do usuário [trabalhos assíncronos](/help/operations/asynchronous-jobs.md).
 
    ![Notificação sobre a busca assíncrona de ativos que ocorre em segundo plano.](assets/assets_async_transfer_fails.png)
 
    *Figura: notificação sobre a busca assíncrona de ativos que ocorre em segundo plano.*
 
-1. Ao publicar uma página, [!DNL Experience Manager] exibe uma lista completa de ativos que são usados na página. Verifique se os ativos remotos foram buscados com êxito no momento da publicação. Para verificar o status de cada ativo buscado, consulte a interface do usuário de [trabalhos assíncronos](/help/operations/asynchronous-jobs.md).
+1. Ao publicar uma página, [!DNL Experience Manager] exibe uma lista completa de ativos que são usados na página. Verifique se os ativos remotos foram buscados com êxito no momento da publicação. Para verificar o status de cada ativo buscado, consulte [tarefas assíncronas](/help/operations/asynchronous-jobs.md) a interface do usuário.
 
    >[!NOTE]
    >
@@ -158,17 +154,24 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
 Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se os metadados associados não puderem ser editados.
 
-<!-- TBD: Uncomment after verification for Dec release.
+### Verificar o uso de um ativo nas páginas da Web {#asset-usage-references}
 
-### Check use of an asset across other pages {#asset-usage-references}
+[!DNL Experience Manager] permite que os usuários do DAM verifiquem todas as referências a um ativo. Ele ajuda a entender e gerenciar o uso de um ativo em [!DNL Sites] remoto e em ativos compostos. Muitos autores de páginas da Web em [!DNL Experience Manager Sites] implantação podem usar um ativo em [!DNL Assets] remoto em diferentes páginas da Web. Para simplificar o gerenciamento de ativos e não levar a referências quebradas, é importante que os usuários do DAM verifiquem o uso de um ativo em páginas da Web locais e remotas. A guia [!UICONTROL Referências] na página [!UICONTROL Propriedades] de um ativo lista as referências locais e remotas do ativo.
 
-[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset.
+Para visualização e gerenciamento de referências na implantação [!DNL Assets], siga estas etapas:
 
-Users can view incoming references of the assets and move or delete the asset.
+1. Selecione um ativo no console [!DNL Assets] e clique em **[!UICONTROL Propriedades]** na barra de ferramentas.
+1. Clique na guia **[!UICONTROL Referências]**. Consulte **[!UICONTROL Referências locais]** para usar o ativo na implantação [!DNL Assets]. Consulte **[!UICONTROL Referências Remotas] para usar o ativo na implantação [!DNL Sites] na qual o ativo foi obtido usando a funcionalidade Ativos Conectados.
 
--->
+   ![referências remotas nas Propriedades do ativo](assets/connected-assets-remote-reference.png)
 
-## Limitações         e práticas recomendadas {#tip-and-limitations}
+1. As referências para [!DNL Sites] páginas exibem a contagem total de referências para cada [!DNL Sites] local. Pode levar algum tempo para encontrar todas as referências e exibir o número total de referências.
+1. A lista de referências é interativa e os usuários do DAM podem clicar em uma referência para abrir a página de referência. Se referências remotas não puderem ser buscadas por algum motivo, uma notificação será exibida informando o usuário da falha.
+1. Os usuários podem mover ou excluir o ativo. Ao mover ou excluir um ativo, o número total de referências de todos os ativos/pastas selecionados é exibido em uma caixa de diálogo de aviso. Ao excluir um ativo para o qual as referências ainda não são exibidas, uma caixa de diálogo de aviso é exibida.
+
+   ![forçar aviso de exclusão](assets/delete-referenced-asset.png)
+
+## Limitações e práticas recomendadas {#tip-and-limitations}
 
 * Para obter insights sobre o uso de ativos, configure a funcionalidade [Asset Insight](/help/assets/assets-insights.md) na instância [!DNL Sites].
 
@@ -198,13 +201,18 @@ Users can view incoming references of the assets and move or delete the asset.
 * Edições simples que não são destrutivas e a edição compatível por meio do componente `Image` do podem ser realizadas nos ativos buscados. Os ativos são somente leitura.
 * O único método para recuperar o ativo é arrastá-lo para uma página. Não há suporte a API ou outros métodos para recuperar um ativo para atualizá-lo.
 * Se os ativos forem descontinuados do DAM, eles continuarão a ser usados nas páginas [!DNL Sites].
+* As entradas de referência remota de um ativo são buscadas de forma assíncrona. As referências e a contagem total não são em tempo real e pode haver alguma diferença se um autor do Sites usa o ativo enquanto um usuário do DAM está visualizando a referência. Os usuários do DAM podem atualizar a página e tentar novamente em alguns minutos para obter a contagem total.
 
 ## Solução de problemas {#troubleshoot}
 
-Para solucionar problemas do cenário de erro comum, siga estas etapas:
+Para solucionar erros comuns, siga estas etapas:
 
 * Se você não conseguir pesquisar ativos remotos do [!UICONTROL Localizador de conteúdo], verifique se as funções e permissões necessárias estão no lugar.
 * Um ativo obtido da barragem remota pode não ser publicado em uma página da Web por um ou mais motivos. Ele não existe no servidor remoto, falta de permissões apropriadas para buscá-lo ou falha na rede pode ser o motivo. Verifique se o ativo não foi removido do DAM remoto. Verifique se as permissões apropriadas estão em vigor e se os pré-requisitos foram atendidos. Tente adicionar o ativo novamente à página e publique-o novamente. Verifique a [lista de trabalhos assíncronos](/help/operations/asynchronous-jobs.md) quanto a erros na busca de ativos.
 * Se você não conseguir acessar a implantação remota do DAM a partir da implantação local [!DNL Sites], verifique se os cookies entre sites são permitidos. Se os cookies entre sites estiverem bloqueados, as duas implantações de [!DNL Experience Manager] podem não ser autenticadas. Por exemplo, [!DNL Google Chrome] no modo Incognito pode bloquear cookies de terceiros. Para permitir cookies no navegador [!DNL Chrome], clique no ícone &#39;olho&#39; na barra de endereços, navegue até Site Not Working > Blocked, selecione o URL do DAM remoto e permita o cookie do token de logon. Como alternativa, consulte a ajuda sobre [como ativar cookies de terceiros](https://support.google.com/chrome/answer/95647).
 
    ![Erro de cookie no Chrome no modo cognito](assets/chrome-cookies-incognito-dialog.png)
+
+* Se referências remotas não forem recuperadas e resultar em uma mensagem de erro, verifique se a implantação do Sites está disponível e verifique se há problemas de conectividade de rede. Tente novamente mais tarde para verificar. [!DNL Assets] a implantação tenta estabelecer conexão duas vezes com a  [!DNL Sites] implantação e, em seguida, informa uma falha.
+
+![falha ao repetir referências remotas de ativos](assets/reference-report-failure.png)
