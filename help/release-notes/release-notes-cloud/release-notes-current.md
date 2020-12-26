@@ -2,7 +2,7 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 539fa16396519b66d53b91745bf69c819c5d5ea1
+source-git-commit: 6b001ffb9afe73c09d131ef7901cc2c12c57f164
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 5%
