@@ -222,7 +222,7 @@ Você pode ignorar essa tarefa e continuar para a seguinte se desejar usar qualq
 
 Quando uma miniatura é clicada no ambiente de criação, uma pré-visualização da caixa de diálogo do Quickview é exibida.
 
-![chlimage_1-21](assets/chlimage_1-127.png)
+![chlimage_1-29](assets/chlimage_1-127.png)
 
 Como opção, você pode criar sua própria predefinição personalizada do visualizador de vídeo interativo. Você pode determinar, entre outras coisas, o estilo do player de vídeo, as miniaturas interativas e a visualização da grade de miniaturas que aparece no final do vídeo.
 
@@ -467,7 +467,7 @@ Para adicionar interatividade ao vídeo:
       Na linha do tempo, toque em um segmento que deseja dividir ao meio e, em seguida, toque em **[!UICONTROL Dividir segmento]** na barra de ferramentas.
 
       Selecionar dois ou mais segmentos desativa o recurso **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Dividindo um segmento selecionado de dez segundos em dois segmentos de cinco segundos cada.
 
