@@ -1,6 +1,6 @@
 ---
 title: Newsletter Dynamic Media
-description: 'O Dynamic Media Newsletter da Experience League é um boletim mensal. Ele foi projetado para ajudá-lo a se familiarizar com o Dynamic Media e o Dynamic Media Classic, para que você possa start a agregar valor imediatamente. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim de balcão único, incluindo vídeos, visões gerais de soluções e apresentações para alguns dos principais recursos e recursos, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais. '
+description: 'A newsletter da Dynamic Media da Experience League é uma newsletter mensal. Ele foi projetado para ajudá-lo a se familiarizar com o Dynamic Media e o Dynamic Media Classic, para que você possa start a agregar valor imediatamente. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim de balcão único, incluindo vídeos, visões gerais de soluções e apresentações para alguns dos principais recursos e recursos, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais. '
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
