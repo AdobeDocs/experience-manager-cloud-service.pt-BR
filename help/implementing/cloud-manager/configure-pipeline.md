@@ -52,7 +52,7 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
 
 Siga estas etapas para configurar o comportamento e as preferências do seu pipeline:
 
-1. Clique em **Configurar pipeline** para configurar e configurar o pipeline.
+1. Clique em **Configurar Pipeline** para configurar e configurar seu pipeline.
 
    ![](assets/set-up-pipeline1.png)
 
