@@ -1,6 +1,6 @@
 ---
 title: Perfis de vídeo do Dynamic Media
-description: O Dynamic Media já vem com um perfil Adaptive Video Encoding predefinido. As configurações neste perfil predefinido são otimizadas para oferecer aos clientes a melhor experiência de visualização possível. Você também pode adicionar recorte inteligente aos vídeos.
+description: A Dynamic Media já vem com um perfil adaptável de codificação de vídeo predefinido. As configurações neste perfil predefinido são otimizadas para oferecer aos clientes a melhor experiência de visualização possível. Você também pode adicionar recorte inteligente aos vídeos.
 translation-type: tm+mt
 source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 17%
 
 # Perfis de vídeo do Dynamic Media{#video-profiles}
 
-O Dynamic Media já vem com um perfil Adaptive Video Encoding predefinido. As configurações neste perfil predefinido são otimizadas para oferecer aos clientes a melhor experiência de visualização possível. Quando você codifica seus vídeos de origem primária usando o perfil Adaptive Video Encoding, durante a reprodução o player de vídeo ajusta automaticamente a qualidade do fluxo de vídeo com base na velocidade de conexão com a Internet de seus clientes. Isso é conhecido como streaming adaptável.
+A Dynamic Media já vem com um perfil adaptável de codificação de vídeo predefinido. As configurações neste perfil predefinido são otimizadas para oferecer aos clientes a melhor experiência de visualização possível. Quando você codifica seus vídeos de origem primária usando o perfil Adaptive Video Encoding, durante a reprodução o player de vídeo ajusta automaticamente a qualidade do fluxo de vídeo com base na velocidade de conexão com a Internet de seus clientes. Isso é conhecido como streaming adaptável.
 
 Estes são outros fatores que determinam a qualidade de seus vídeos:
 
@@ -123,7 +123,7 @@ Consulte também [Recorte inteligente para imagens](image-profiles.md).
 
 ## Criando um Perfil de vídeo para transmissão adaptável {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-O Dynamic Media já vem com um perfil Adaptive Video Encoding predefinido - um grupo de configurações de upload de vídeo para MP4 H.264 - que é otimizado para a melhor experiência de visualização. Você pode usar esse perfil ao carregar seus vídeos.
+A Dynamic Media já vem com um perfil adaptável de codificação de vídeo predefinido - um grupo de configurações de upload de vídeo para MP4 H.264 - que é otimizado para a melhor experiência de visualização. Você pode usar esse perfil ao carregar seus vídeos.
 
 No entanto, se esse perfil predefinido não atender às suas necessidades, você pode optar por criar seu próprio perfil adaptável de codificação de vídeo. Ao usar a configuração **[!UICONTROL Codificar para transmissão adaptativa]** como uma prática recomendada, todas as predefinições de codificação adicionadas ao perfil são validadas para garantir que todos os vídeos tenham a mesma proporção. Além disso, os vídeos codificados são tratados como uma taxa de bits múltipla definida para streaming.
 
@@ -337,7 +337,7 @@ Toque no ícone de informações para obter uma descrição da transmissão adap
 1. Na página Perfil de codificação de vídeo, digite um novo nome para o perfil.
 1. Como prática recomendada, verifique se a caixa de seleção **[!UICONTROL Codificar para transmissão adaptável]** está selecionada. Toque no ícone de informações para obter uma descrição da transmissão adaptável. (Se você estiver copiando um Perfil de vídeo progressivo, não marque a caixa de seleção.)
 
-   No modo Mídia dinâmica - Híbrido, se uma predefinição de vídeo WebM fizer parte do Perfil Vídeo, **[!UICONTROL Codificar para transmissão adaptável]** não será possível porque todas as predefinições devem ser MP4.
+   No Dynamic Media - modo Híbrido, se uma predefinição de vídeo WebM fizer parte do Perfil Vídeo, **[!UICONTROL Codificar para transmissão adaptável]** não será possível porque todas as predefinições devem ser MP4.
 1. No cabeçalho Predefinições de codificação de vídeo, adicione, edite ou exclua predefinições de codificação de vídeo que compõem o perfil.
 
    Toque no ícone de informações ao lado de cada opção nas guias Básico e Avançado para obter as configurações e descrições recomendadas.
