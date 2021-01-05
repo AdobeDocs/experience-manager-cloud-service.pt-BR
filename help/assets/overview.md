@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- Need review information from gklebus -->
 
-O Adobe Experience Manager Assets como [!DNL Cloud Service] oferta uma solução PaaS nativa para nuvem para que as empresas não só executem suas operações de Gerenciamento de ativos digitais e Mídia dinâmica com velocidade e impacto, como também usem recursos inteligentes da próxima geração, como o AI/ML, de dentro de um sistema que é sempre atual, sempre disponível e sempre aprendendo.
+O Adobe Experience Manager Assets como [!DNL Cloud Service] oferta uma solução PaaS nativa para nuvem para que as empresas não só executem suas operações de Gerenciamento de ativos digitais e Dynamic Media com velocidade e impacto, como também usem recursos inteligentes da próxima geração, como o AI/ML, de dentro de um sistema que está sempre atualizado, sempre disponível e sempre aprendendo.
 
 A inclusão simultânea de muitos ativos ou ativos complexos é uma tarefa que consome muitos recursos para uma instância do autor de AEM. A instância principal consome recursos consideráveis de CPU, memória e E/S quando os ativos são adicionados, processados ou mesmo migrados. Esses problemas de desempenho afetam a criação e a experiência de navegação dos usuários finais.
 
