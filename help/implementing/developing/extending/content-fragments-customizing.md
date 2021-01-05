@@ -128,7 +128,7 @@ Os fragmentos de conteúdo podem ser referenciados AEM páginas, assim como qual
 >
 >Quando um fragmento de conteúdo é usado em uma página, o modelo de fragmento de conteúdo no qual ele se baseia é referenciado.
 >
->Isso significa que se o modelo não foi publicado no momento em que você publica a página, ele será sinalizado e o modelo será adicionado aos recursos a serem publicados com a página.
+>Isso significa que, se o modelo não tiver sido publicado no momento em que você publicar a página, ele será sinalizado e o modelo adicionado aos recursos a serem publicados com a página.
 
 ### Integração com outras Estruturas {#integration-with-other-frameworks}
 
