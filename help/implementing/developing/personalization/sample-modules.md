@@ -78,7 +78,7 @@ O módulo de interface do usuário `contexthub.browserinfo` exibe informações 
 
 ![módulo contexthub.browserinfo](assets/browserinfo-module.png)
 
-O código-fonte do módulo de interface está localizado em `/libs/granite/contexthub/components/modules/browserinfo`. Embora `contexthub.browserinfo` estenda o módulo `contexthub.base` da interface do usuário, ele não substitui nem fornece funções adicionais. A implementação fornece uma configuração padrão para renderizar informações do navegador.
+O código-fonte do módulo de interface está localizado em `/libs/granite/contexthub/components/modules/browserinfo`. Embora `contexthub.browserinfo` estenda o módulo de interface `contexthub.base`, ele não substitui nem fornece funções adicionais. A implementação fornece uma configuração padrão para renderizar informações do navegador.
 
 ### Configuração {#configuration-1}
 
