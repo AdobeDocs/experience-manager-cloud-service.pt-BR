@@ -177,24 +177,24 @@ Se tiver problemas com os visualizadores, consulte as seguintes orientações pa
    <td><strong>Solução</strong></td>
   </tr>
   <tr>
-   <td>Predefinições do visualizador não são publicadas</td>
-   <td><p>Vá para a página de diagnóstico do gerenciador de amostra: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe os valores calculados. Quando estiver operando corretamente, você deverá ver:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Pode levar cerca de 10 minutos após a configuração das configurações da nuvem da Dynamic Media para que os ativos do visualizador sejam sincronizados.</p> <p>Se os ativos inativados permanecerem, clique em um dos botões <strong>Listar todos os ativos inativados</strong> para ver os detalhes.</p> </td>
+   <td>As predefinições do visualizador não são publicadas</td>
+   <td><p>Vá para a página de diagnóstico do gerenciador de amostras: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe os valores calculados. Ao operar corretamente, você deve ver:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Observação</strong>: Pode levar cerca de 10 minutos após a configuração das configurações de nuvem do Dynamic Media para que os ativos do visualizador sejam sincronizados.</p> <p>Se os ativos não ativados permanecerem, clique nos botões <strong>Lista todos os ativos inativados</strong> para ver os detalhes.</p> </td>
    <td>
     <ol>
-     <li>Navegue até a lista de predefinições do visualizador nas ferramentas administrativas: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
+     <li>Navegue até a lista predefinida do visualizador nas ferramentas administrativas: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
      <li>Selecione todas as predefinições do visualizador e clique em <strong>Publicar</strong>.</li>
-     <li>Navegue até o gerente de amostra e observe que a contagem de ativos inativados agora é zero.</li>
+     <li>Navegue de volta para o gerenciador de amostras e observe que a contagem de ativos não ativados agora é zero.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>A ilustração Predefinição do visualizador retorna 404 da visualização em detalhes do ativo ou copia o URL/código incorporado</td>
-   <td><p>No CRXDE Lite, faça o seguinte:</p>
+   <td>A arte-final predefinida do visualizador retorna 404 da pré-visualização nos detalhes do ativo ou copia o URL/código incorporado</td>
+   <td><p>Na CRXDE Lite, faça o seguinte:</p>
     <ol>
-     <li>Navegue até a pasta <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> na pasta de sincronização do Dynamic Media (por exemplo, <code>/content/dam/_CSS/_OOTB</code>),</li>
+     <li>Navegue até a pasta <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> dentro da pasta de sincronização do Dynamic Media (por exemplo, <code>/content/dam/_CSS/_OOTB</code>),</li>
      <li>Localize o nó de metadados do ativo problemático (por exemplo, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Verifique a presença das propriedades <code>dam:scene7*</code>. Se o ativo foi sincronizado e publicado com êxito, você verá que o <code>dam:scene7FileStatus</code> definido é <strong>PublishComplete</strong>.</li>
-     <li>Tente solicitar a ilustração diretamente do Dynamic Media concatenando os valores das seguintes propriedades e literais de string
+     <li>Verifique a presença das propriedades <code>dam:scene7*</code>. Se o ativo foi sincronizado e publicado com êxito, você verá que <code>dam:scene7FileStatus</code> definido é <strong>PublishComplete</strong>.</li>
+     <li>Tente solicitar a arte-final diretamente da Dynamic Media concatenando os valores das seguintes propriedades e literais de string
       <ul>
        <li><code>dam:scene7Domain</code></li>
        <li><code>"is/content"</code></li>
@@ -203,7 +203,7 @@ Se tiver problemas com os visualizadores, consulte as seguintes orientações pa
        <li>Exemplo: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>Se os ativos de amostra ou a ilustração predefinida do visualizador não tiverem sido sincronizados ou publicados, reinicie todo o processo de cópia/sincronização:</p>
+   <td><p>Se os ativos de amostra ou a arte-final predefinida do visualizador não foram sincronizados ou publicados, reinicie todo o processo de cópia/sincronização:</p>
     <ol>
      <li>Vá até <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
      </li>
