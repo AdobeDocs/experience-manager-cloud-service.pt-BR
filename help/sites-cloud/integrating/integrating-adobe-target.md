@@ -91,7 +91,7 @@ Uma propriedade é um container que será preenchido com extensões, regras e el
 
 ### Criando um elemento de dados {#data-element}
 
-**Os** elementos de dados são os espaços reservados para os quais você pode mapear os parâmetros do hub de contexto.
+**Os** elementos de dados são os espaços reservados para os quais você pode mapear parâmetros de hub de contexto.
 
 1. Selecione **Elementos de dados**.
 2. Selecione **Adicionar elemento de dados**.
