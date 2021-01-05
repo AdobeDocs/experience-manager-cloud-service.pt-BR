@@ -555,7 +555,7 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
    Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor, o tamanho e o estilo da fonte, a cor de plano de fundo dos comentários e status, abra a **[!UICONTROL Configuração do PDF de anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/manage-digital-assets.md#annotating).
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Retorne ao arquivo PDF renderizado e atualize-o. O PDF atualizado reflete as alterações feitas.
 
