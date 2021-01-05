@@ -102,7 +102,7 @@ Para opt out a geração automatizada de tags inteligentes de vídeo para ativos
 
 ## Pontuação de confiança {#confidence-score-video-tag}
 
-[!DNL Adobe Experience Manager] aplica um limite de confiança mínimo para tags inteligentes de objeto e ação, a fim de evitar que haja muitas tags para cada ativo de vídeo, o que atrasa a indexação. Os resultados da pesquisa de ativos são classificados com base nas pontuações de confiança, que geralmente melhoram os resultados da pesquisa além do que uma inspeção das tags atribuídas de qualquer ativo de vídeo sugere. Tags imprecisas geralmente têm pontuações de baixa confiança, de modo que raramente aparecem na parte superior da lista de Tags inteligentes para ativos.
+[!DNL Adobe Experience Manager] aplica um limite mínimo de confiança para tags inteligentes de objeto e ação, a fim de evitar que haja muitas tags para cada ativo de vídeo, o que atrasa a indexação. Os resultados da pesquisa de ativos são classificados com base nas pontuações de confiança, que geralmente melhoram os resultados da pesquisa além do que uma inspeção das tags atribuídas de qualquer ativo de vídeo sugere. Tags imprecisas geralmente têm pontuações de baixa confiança, de modo que raramente aparecem na parte superior da lista de Tags inteligentes para ativos.
 
 O limite padrão para as tags action e object em [!DNL Adobe Experience Manager] é 0,7 (deve ser um valor entre 0 e 1). Se alguns ativos de vídeo não forem marcados por uma tag específica, isso indica que o algoritmo está menos de 70% confiante nas tags previstas. O limite padrão pode não ser sempre o ideal para todos os usuários. Portanto, é possível alterar o valor da pontuação de confiança na configuração do OSGI.
 
