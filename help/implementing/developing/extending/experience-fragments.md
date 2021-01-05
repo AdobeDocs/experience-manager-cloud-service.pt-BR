@@ -158,7 +158,7 @@ Depois de gerar a página HTML, o pipeline do Sling Rewriter faz modificações 
 
    Isso é feito para garantir que a Oferta Público alvo HTML possa ser incluída nas Atividades do Público alvo.
 
-2. AEM modifica todos os links internos presentes no HTML para que apontem para um recurso publicado.
+2. AEM modifica todos os links internos presentes no HTML, de modo que apontem para um recurso publicado.
 
    Para determinar os links a serem modificados, AEM este padrão para os atributos de elementos HTML:
 
