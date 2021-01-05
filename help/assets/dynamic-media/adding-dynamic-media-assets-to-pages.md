@@ -228,7 +228,7 @@ Você pode editar as seguintes configurações do Dynamic Media clicando em **[!
 
    Você pode editar as seguintes Configurações avançadas clicando em **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Ativar a correspondência]** de proporção — Selecione essa opção para permitir que a Dynamic Media escolha uma execução de recorte inteligente com uma proporção que melhor corresponda à proporção da imagem original.
+* **[!UICONTROL Habilitar correspondência]** de proporção — Selecione essa opção para permitir que a Dynamic Media escolha uma execução de recorte inteligente com uma proporção que melhor corresponda à proporção da imagem original.
 
 * **[!UICONTROL Título]**—Altere o título da imagem de Recorte inteligente.
 
