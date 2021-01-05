@@ -6,8 +6,8 @@ user-guide-description: Entenda a jornada de transição para o Cloud Service.
 translation-type: tm+mt
 source-git-commit: 81e84ae3993321c210de917a9a9bcd17d32b2040
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '83'
+ht-degree: 84%
 
 ---
 
