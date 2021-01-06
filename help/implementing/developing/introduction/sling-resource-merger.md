@@ -48,12 +48,10 @@ Os objetivos da utilização da fusão Sling Resource em AEM são os seguintes:
 >Isso ocorre porque o conteúdo de `/libs` pode ser substituído sempre que as atualizações forem aplicadas à sua instância.
 >
 >* As sobreposições dependem de [caminhos de pesquisa](/help/implementing/developing/introduction/overlays.md#search-paths).
-   >
-   >
-* As substituições não dependem dos caminhos de pesquisa, elas usam a propriedade `sling:resourceSuperType` para fazer a conexão.
 >
+>* As substituições não dependem dos caminhos de pesquisa, elas usam a propriedade `sling:resourceSuperType` para fazer a conexão.
 >
-No entanto, as substituições são frequentemente definidas em `/apps`, já que a prática recomendada no AEM como Cloud Service é definir personalizações em `/apps`; isso ocorre porque você não deve alterar nada em `/libs`.
+>No entanto, as substituições são frequentemente definidas em `/apps`, já que a prática recomendada no AEM como Cloud Service é definir personalizações em `/apps`; isso ocorre porque você não deve alterar nada em `/libs`.
 
 ### Propriedades {#properties}
 

@@ -131,10 +131,8 @@ O [modo de edição do RTE e a interface](#editingmodes) que você fornece para 
 >* **Nome**: `configPath`
 >* **Tipo**: `String`
 >* **Valor**: caminho do nó que contém a configuração real
-
 >
->
-Não nomeie o nó de configuração RTE como `config`. Caso contrário, as configurações do RTE terão efeito apenas para os administradores e não para os usuários no grupo `content-author`.
+>Não nomeie o nó de configuração RTE como `config`. Caso contrário, as configurações do RTE terão efeito apenas para os administradores e não para os usuários no grupo `content-author`.
 
 Configure as seguintes propriedades que se aplicam ao modo de edição de Diálogo:
 
@@ -161,10 +159,8 @@ O [componente de texto Componentes principais](https://docs.adobe.com/content/he
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
->
-Para criar seu próprio componente de texto, copie o componente acima em vez de editar esses componentes.
+>Para criar seu próprio componente de texto, copie o componente acima em vez de editar esses componentes.
 
 ## Configurar a barra de ferramentas RTE {#dialogfullscreen}
 

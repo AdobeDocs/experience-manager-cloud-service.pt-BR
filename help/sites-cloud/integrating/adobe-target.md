@@ -53,7 +53,6 @@ Para integrar ao Público alvo, execute as seguintes tarefas:
 >
 >* O 3.x está configurado com [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* O 4.x está configurado com [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
 >
 
 
@@ -86,7 +85,6 @@ Integrar AEM como Cloud Service com a Adobe Target requer conhecimento da Adobe 
 >* 2.000 experiências
 >* 50 métricas
 >* 50 segmentos de relatórios
-
 >
 
 

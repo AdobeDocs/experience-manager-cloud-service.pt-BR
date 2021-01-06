@@ -31,9 +31,8 @@ Esta seção descreve como usar predefinições de imagens. [Os administradores 
    >[!NOTE]
    >
    >* As representações estáticas são exibidas na metade superior do painel. As representações dinâmicas são exibidas na metade inferior. Somente com representações dinâmicas, você pode usar o URL para exibir a imagem. O botão **[!UICONTROL URL]** só será exibido se você selecionar uma representação dinâmica. O botão **[!UICONTROL RESS]** só será exibido se você selecionar uma predefinição de imagem responsiva.
-      >
-      >
-   * O sistema exibe várias representações quando você seleciona **[!UICONTROL Representações]** na visualização Detalhe de um ativo. Você pode aumentar o número de predefinições vistas. Consulte [Aumentando o número de predefinições de imagens que exibem](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+   >
+   >* O sistema exibe várias representações quando você seleciona **[!UICONTROL Representações]** na visualização Detalhe de um ativo. Você pode aumentar o número de predefinições vistas. Consulte [Aumentando o número de predefinições de imagens que exibem](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
