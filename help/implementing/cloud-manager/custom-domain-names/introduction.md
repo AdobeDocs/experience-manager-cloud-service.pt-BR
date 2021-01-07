@@ -2,9 +2,9 @@
 title: Introdução - Nomes de Domínio Personalizados
 description: Introdução - Nomes de Domínio Personalizados
 translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+source-git-commit: 677a5d65bb15c9579f19b0b4e8ef03d1201e4a94
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Introdução {#introduction}
 
-O Gerenciador de nuvem permite que você adicione um domínio personalizado para identificar seu site com um nome exclusivo e de marca, de uma maneira de autoatendimento por meio da interface do usuário. Seu AEMaaCS é provisionado com um nome de domínio padrão, terminando em `*.adobeaemcloud.com`. Esse nome de domínio padrão permanece, mesmo depois de anexar nomes de domínio personalizados ao seu site
+O Gerenciador de nuvem permite que você adicione um domínio personalizado para identificar seu site com um nome exclusivo e de marca, de uma maneira de autoatendimento por meio da interface do usuário. Seu Adobe Experience Manager como Cloud Service é fornecido com um nome de domínio padrão, terminando em `*.adobeaemcloud.com`. Esse nome de domínio padrão permanece, mesmo depois de anexar nomes de domínio personalizados ao seu site.
 
 >[!NOTE]
 >Nomes de domínio personalizados são suportados apenas no Gerenciador de nuvem para o Programa Sites (serviço de publicação). Cada Ambiente do Cloud Manager pode hospedar até 100 domínios personalizados por ambiente.
