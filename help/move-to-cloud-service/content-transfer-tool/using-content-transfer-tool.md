@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
+source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 66%
+source-wordcount: '1915'
+ht-degree: 64%
 
 ---
 
@@ -257,12 +257,6 @@ Os arquivos criados no *OUT_DIR* especificado acima para fins de consistência p
 ### Comportamento da interface do usuário {#ui-behavior}
 
 Como usuário, você pode ver as seguintes alterações de comportamento na interface do usuário da ferramenta Transferência de conteúdo:
-
-* O usuário cria um conjunto de migração para uma URL de autor (Desenvolvimento/Preparação/Produção) e realiza com sucesso a extração e a assimilação.
-
-* Em seguida, o usuário cria um novo conjunto de migração para a mesmo URL do autor e realiza a extração e a assimilação no novo conjunto de migração. A interface do usuário mostra que o status de assimilação do primeiro conjunto de migração muda para **FALHA** e nenhum log está disponível.
-
-* Isso não significa que a assimilação do primeiro conjunto de migração falhou. Esse comportamento é visto porque, quando um novo trabalho de assimilação é iniciado, ele exclui o trabalho de ingestão anterior. Portanto, o status das alterações no primeiro conjunto de migração deve ser ignorado.
 
 * Os ícones na interface do usuário da ferramenta Transferência de conteúdo podem parecer diferentes das capturas de tela mostradas neste guia ou podem não aparecer, dependendo da versão da instância do AEM de origem.
 
