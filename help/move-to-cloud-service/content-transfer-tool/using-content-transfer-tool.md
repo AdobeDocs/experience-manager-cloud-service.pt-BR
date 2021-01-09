@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
+source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 70%
+source-wordcount: '2018'
+ht-degree: 66%
 
 ---
 
@@ -25,6 +25,8 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 * Se estiver usando um *Ambiente Sandbox*, verifique se o ambiente está atualizado e atualizado para a versão mais recente. Se você estiver usando um *Ambiente de produção*, ele será atualizado automaticamente.
 
 * Para usar a Ferramenta de transferência de conteúdo, você precisará ser um usuário administrador na instância de origem e pertencer ao grupo de administradores de AEM local na instância de Cloud Service para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão recuperar o token de acesso para usar a ferramenta Transferência de conteúdo.
+
+* O token de acesso pode expirar periodicamente após um período de tempo específico ou após o ambiente ser atualizado. Se o token de acesso tiver expirado, você não poderá se conectar à instância Cloud Service e terá que recuperar o novo token de acesso. O ícone de status associado a um conjunto de migração existente será alterado para uma nuvem vermelha e exibirá uma mensagem ao passar o mouse sobre ele.
 
 * Atualmente, o tamanho padrão de MongoDB para um AEM como uma instância de autor de Cloud Service é de 32 GB. É recomendável que, para um tamanho de armazenamento de segmentos maior que 20 GB, você envie um ticket de suporte para aumentar o tamanho do MongoDB.
 
@@ -162,6 +164,9 @@ Quando o processo de extração estiver concluído, você poderá transferir o c
 Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Transferência de conteúdo:
 
 1. Selecione um conjunto de migração na página *Visão geral* e clique em **Assimilar** para iniciar a extração. A caixa de diálogo **Assimilação do conjunto de migração** é exibida. Clique em **Ingest** para start da fase de ingestão. Para fins de demonstração, a opção **Assimilar conteúdo na instância do autor** do autor está desativada. É possível assimilar conteúdo para Autor e Publicação ao mesmo tempo.
+
+   >[!IMPORTANT]
+   >Quando a opção **Limpar o conteúdo existente na instância da Cloud antes da ingestão** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório no qual assimilar o conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de público alvo.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
