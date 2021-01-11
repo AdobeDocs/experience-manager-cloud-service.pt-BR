@@ -3,7 +3,7 @@ title: Configurar e usar microserviços de ativos
 description: Configure e use os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '2532'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Com a configuração padrão, somente o perfil de processamento mais básico é 
 
 O perfil de processamento pode incluir uma execução FPO (Somente para disposição). Consulte [!DNL Adobe Asset Link] [documentação](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) para saber se você precisa ativá-la para o perfil de processamento. Para obter mais informações, consulte [documentação completa do Link de ativo do Adobe](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html).
 
-### Criar perfil padrão {#create-standard-profile}
+### Criar um perfil padrão {#create-standard-profile}
 
 Para criar um perfil de processamento padrão, siga estas etapas:
 
@@ -108,7 +108,7 @@ O [!DNL Asset Compute Service] oferece suporte a uma variedade de casos de uso, 
 
 Ele pode transformar imagens, vídeos, documentos e outros formatos de arquivo em diferentes representações, incluindo miniaturas, texto e metadados extraídos e arquivos.
 
-Os desenvolvedores podem usar o [!DNL Asset Compute Service] para [criar aplicativos personalizados](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) que atendam aos casos de uso suportados. [!DNL Experience Manager] pode chamar esses aplicativos personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] apoia os seguintes casos de utilização de serviços externos:
+Os desenvolvedores podem usar [!DNL Asset Compute Service] para [criar aplicativos personalizados](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) para os casos de uso suportados. [!DNL Experience Manager] pode chamar esses aplicativos personalizados da interface do usuário usando perfis personalizados configurados pelos administradores. [!DNL Asset Compute Service] apoia os seguintes casos de utilização de serviços externos:
 
 * Use a [API do ImageCut](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) de [!DNL Adobe Photoshop] e salve o resultado como execução.
 * Chame sistemas de terceiros para atualizar dados, por exemplo, um sistema PIM.
@@ -123,7 +123,7 @@ Os desenvolvedores podem usar o [!DNL Asset Compute Service] para [criar aplicat
 
 Para criar um perfil personalizado, siga estas etapas:
 
-1. Os administradores acessam **[!UICONTROL Ferramentas > Ativos > Perfis de processamento]**. Clique em **[!UICONTROL Criar]**.
+1. Os administradores acessam **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de processamento]**. Clique em **[!UICONTROL Criar]**.
 1. Clique na guia **[!UICONTROL Personalizado]**. Clique em **[!UICONTROL Adicionar Novo]**. Forneça o nome de arquivo desejado para a representação.
 1. Forneça as seguintes informações.
 
@@ -145,6 +145,8 @@ Os aplicativos personalizados são aplicativos sem cabeçalho [Project Firefly](
 Para ilustrar o uso personalizado de perfis, considere um caso de uso para aplicar algum texto personalizado a imagens de campanha. Você pode criar um perfil de processamento que aproveita a API do Photoshop para editar as imagens.
 
 A integração do Serviço de asset compute permite que o Experience Manager passe esses parâmetros para o aplicativo personalizado usando o campo [!UICONTROL Parâmetros de Serviço]. O aplicativo personalizado então chama a API do Photoshop e transmite esses valores para a API. Por exemplo, é possível passar o nome da fonte, a cor do texto, o peso do texto e o tamanho do texto para adicionar o texto personalizado às imagens de campanha.
+
+<!-- TBD: Check screenshot against the interface. -->
 
 ![perfil de processamento personalizado](assets/custom-processing-profile.png)
 
