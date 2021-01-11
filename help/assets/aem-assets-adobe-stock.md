@@ -3,7 +3,7 @@ title: Gerenciar [!DNL Adobe Stock] ativos em [!DNL Assets].
 description: Pesquise, busque, licencie e gerencie [!DNL Adobe Stock] ativos de dentro de [!DNL Adobe Experience Manager]. Use os ativos licenciados como qualquer outro ativo digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 5%
@@ -48,7 +48,7 @@ Para permitir a comunicação entre [!DNL Experience Manager] e [!DNL Adobe Stoc
 
 >[!NOTE]
 >
->Se houver várias [!DNL Adobe Stock] configurações, selecione a configuração desejada no painel Preferências do usuário. Para acessar o painel a partir do home page do Experience Manager, clique no ícone do usuário e, em seguida, clique em **[!UICONTROL Preferências do usuário]** > **[!UICONTROL Configuração de ações]**).
+>Se houver várias [!DNL Adobe Stock] configurações, selecione a configuração desejada no painel Preferências do usuário. Para acessar o painel a partir do home page do Experience Manager, clique no ícone do usuário e, em seguida, clique em **[!UICONTROL Preferências do usuário]** > **[!UICONTROL Configuração de ações]**.
 
 ## Usar e gerenciar ativos [!DNL Adobe Stock] em [!DNL Experience Manager] {#usemanage}
 
