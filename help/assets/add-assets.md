@@ -2,9 +2,9 @@
 title: Adicione seus ativos digitais a [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais a [!DNL Adobe Experience Manager] como a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
@@ -44,17 +44,13 @@ Os ativos como [!DNL Cloud Service] fornecem os seguintes métodos de upload. O 
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
-
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
    The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
-   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
+   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
-   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
-
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -97,7 +93,7 @@ Uploading numerous assets in bulk consumes significant I/O resources, which may 
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
-Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
+Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in CRX-DE and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -190,23 +186,23 @@ Além da interface de usuário do navegador da Web, [!DNL Experience Manager] of
 
 ## Processar ativos quando carregados {#process-when-uploaded}
 
-Para fazer um processamento adicional nos ativos carregados, você pode aplicar perfis de processamento nas pastas carregadas. Os perfis estão disponíveis na página **[!UICONTROL Propriedades]** de uma pasta em [!DNL Assets].
+Para fazer um processamento adicional nos ativos carregados, você pode aplicar perfis de processamento nas pastas carregadas. Os perfis estão disponíveis na página **[!UICONTROL Propriedades]** de uma pasta em [!DNL Assets]. Um ativo digital sem uma extensão ou com uma extensão incorreta não é processado conforme desejado. Por exemplo, ao fazer upload desses ativos, nada acontece ou um perfil de processamento incorreto pode se aplicar ao ativo. Os usuários ainda podem armazenar os arquivos binários no DAM.
 
-![assets-folder-properties](assets/assets-folder-properties.png)
+![Propriedades de uma pasta de ativos com opções para adicionar um perfil de processamento](assets/assets-folder-properties.png)
 
 As seguintes guias estão disponíveis:
 
-* [Os ](metadata-profiles.md) perfis de metadados permitem aplicar propriedades de metadados padrão a ativos carregados nessa pasta
+* [Os ](metadata-profiles.md) perfis de metadados permitem aplicar propriedades de metadados padrão a ativos carregados nessa pasta.
 * [O processamento de ](asset-microservices-configure-and-use.md) perfis permite que você gere mais execuções do que são possíveis por padrão.
 
 Além disso, se [!DNL Dynamic Media] estiver ativado na implantação, as seguintes guias estarão disponíveis:
 
-* [Os ](dynamic-media/image-profiles.md) perfis de imagem Dynamic Media permitem que você aplique recortes específicos (**[!UICONTROL Recorte]** inteligente e recorte de pixels) e configuração de nitidez aos ativos carregados.
-* [Os ](dynamic-media/video-profiles.md) perfis do Dynamic Media Video permitem aplicar perfis de codificação de vídeo específicos (resolução, formato, parâmetros).
+* [[!DNL Dynamic Media] Os ](dynamic-media/image-profiles.md) perfis de imagem permitem que você aplique recortes específicos (**[!UICONTROL Recorte]** inteligente e recorte de pixels) e configuração de nitidez aos ativos carregados.
+* [[!DNL Dynamic Media] Os ](dynamic-media/video-profiles.md) perfis de vídeo permitem aplicar perfis de codificação de vídeo específicos (resolução, formato, parâmetros).
 
 >[!NOTE]
 >
->As operações de recorte da Dynamic Media e outras operações em ativos não são destrutivas, ou seja, elas não alteram o original carregado, mas fornecem parâmetros para o recorte ou a transformação de mídia a ser feita ao entregar os ativos
+>[!DNL Dynamic Media] as operações de recorte e outras operações em ativos não são destrutivas, ou seja, as operações não alteram o original carregado. Em vez disso, fornece parâmetros para cortar ou transformar ao entregar os ativos.
 
 Para pastas com um perfil de processamento atribuído, o nome do perfil aparece na miniatura na visualização do cartão. Na visualização da lista, o nome do perfil aparece na coluna **[!UICONTROL Processando Perfil]**.
 
