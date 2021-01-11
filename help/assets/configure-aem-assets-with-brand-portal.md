@@ -3,7 +3,7 @@ title: Configure o AEM Assets como  [!DNL Cloud Service] com o Brand Portal
 description: Configurar o AEM Assets com o Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 20%
@@ -71,7 +71,7 @@ A chave pública (certificado) autentica seu perfil no Adobe Developer Console.
 
    ![Criar certificado](assets/ims-config2.png)
 
-1. Clique no ícone **[!UICONTROL Baixar chave pública]** e salve o arquivo de chave pública (.crt) em seu computador.
+1. Clique no ícone **[!UICONTROL Baixar chave pública]** e salve o arquivo de chave pública (CRT) em seu computador.
 
    A chave pública será usada posteriormente para configurar a API para o locatário do Brand Portal e gerar credenciais de conta de serviço no Console do desenvolvedor do Adobe.
 
