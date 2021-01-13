@@ -2,9 +2,9 @@
 title: Guia de referência de componentes
 description: Um guia de referência do desenvolvedor para detalhes de componentes e suas estruturas
 translation-type: tm+mt
-source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
+source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3720'
 ht-degree: 0%
 
 ---
@@ -315,6 +315,39 @@ O comportamento de edição de um componente é configurado adicionando um nó `
    * `cq:listeners` (tipo de nó  `cq:EditListenersConfig`): define o que acontece antes ou depois de uma ação ocorrer no componente
 
 Há muitas configurações existentes no AEM. Você pode pesquisar facilmente por propriedades específicas ou nós secundários usando a ferramenta Query em **CRXDE Lite**.
+
+### Marcadores de posição do componente {#component-placeholders}
+
+Os componentes sempre devem renderizar algum HTML que esteja visível para o autor, mesmo quando o componente não tiver conteúdo. Caso contrário, pode desaparecer visualmente da interface do editor, tornando-o tecnicamente presente, mas invisível na página e no editor. Nesse caso, os autores não poderão selecionar e interagir com o componente vazio.
+
+Por esse motivo, os componentes devem renderizar um espaço reservado, contanto que não renderizem nenhuma saída visível quando a página for renderizada no editor de páginas (quando o modo WCM for `edit` ou `preview`).
+A marcação HTML típica para um espaço reservado é a seguinte:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="Component Name"></div>
+```
+
+O script HTL típico que renderiza o HTML do espaço reservado acima é o seguinte:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
+     data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
+```
+
+No exemplo anterior, `isEmpty` é uma variável que é verdadeira somente quando o componente não tem conteúdo e é invisível para o autor.
+
+Para evitar repetições, o Adobe recomenda que os implementadores de componentes usem um modelo HTL para esses espaços reservados, [como o fornecido pelos Componentes Principais.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+
+O uso do modelo no link anterior é feito com a seguinte linha de HTL:
+
+```HTML
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
+```
+
+No exemplo anterior, `model.text` é a variável que é verdadeira somente quando o conteúdo tem conteúdo e está visível.
+
+Um exemplo de uso deste modelo pode ser visto nos Componentes Principais, [como no Componente Título.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### Configuração com cq:EditConfig Child Nodes {#configuring-with-cq-editconfig-child-nodes}
 
