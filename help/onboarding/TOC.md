@@ -4,10 +4,10 @@ user-guide-title: Integração ao AEM as a Cloud Service
 breadcrumb-title: Guia de integração
 user-guide-description: Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 translation-type: tm+mt
-source-git-commit: da1ca193b38657f78ff3e5e0cfffef0ab9e8a9a0
+source-git-commit: 064ef219702e45695413dad21388b513627a3cf5
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 60%
+source-wordcount: '379'
+ht-degree: 61%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 60%
    + [Adicionar usuários e funções](what-is-required/add-users-roles.md)
    + [Permissões baseadas em função](what-is-required/role-based-permissions.md)
    + [Repositório de código-fonte](what-is-required/source-code-repository.md)
++ Fases da jornada de transição {#phases}
+   + [Planejamento](/help/move-to-cloud-service/planning.md)
+   + [Execução](/help/move-to-cloud-service/execution.md)
+   + [Pós-ativação](/help/move-to-cloud-service/post-go-live.md)
 + Acesso ao AEM na nuvem {#getting-access}
    + [Acesso ao Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
    + Programas do Cloud Service {#cloud-service-programs}
