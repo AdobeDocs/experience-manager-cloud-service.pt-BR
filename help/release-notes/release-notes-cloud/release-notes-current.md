@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
+source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '692'
 ht-degree: 5%
 
 ---
@@ -45,21 +45,15 @@ A seguinte versão (2021.1.0) será lançada em 28 de janeiro de 2021.
 
 ### Data de lançamento {#release-date-cm}
 
-A data de lançamento do Cloud Manager no AEM como Cloud Service 2020.12.0 é 10 de dezembro de 2020.
-
-### Novidades em [!DNL Cloud Manager] {#what-is-new-cm}
-
-* Gerenciamento de autoatendimento de [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) e [Nomes de Domínio Personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
-
-* Gerenciamento de autoatendimento de [Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-* A página de detalhes atualizada **Ambiente** permite que os usuários gerenciem Nomes de domínio personalizados e Listas de permissões de IP em seus ambientes.
+A data de lançamento do Cloud Manager no AEM como Cloud Service 2021.1.0 é 14 de janeiro de 2021.
 
 ### Correções de erros {#bug-fixes-cloud-manager}
 
-* Algumas ocorrências de falhas em estágio de digitalização de código sem fornecer resultados abordados.
+* A instância Produção de ativos pode, ocasionalmente, mostrar o status do Portal de marcas na página de detalhes **Ambientes** como *Pendente* sem permitir que o usuário execute nenhuma ação.
 
-* O cartão de ambiente não exibia consistentemente o botão **Adicionar**.
+* Ao disparar uma hibernação do Gerenciador de nuvem, às vezes uma mensagem de falha era exibida mesmo quando a hibernação era iniciada com êxito.
+
+* Casos raros de falha encontrados na criação ou exclusão de ambientes foram abordados.
 
 ## Ferramentas de refatoração de código {#code-refactoring-tools}
 
