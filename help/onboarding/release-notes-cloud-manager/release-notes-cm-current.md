@@ -1,36 +1,29 @@
 ---
-title: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2020.12.0
-description: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2020.12.0
+title: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2021.1.0
+description: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2021.1.0
 translation-type: tm+mt
-source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
+source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 
 
-# Notas de versão do Cloud Manager no Adobe Experience Manager como Cloud Service 2020.12.0 {#release-notes}
+# Notas de versão do Cloud Manager no Adobe Experience Manager como Cloud Service 2021.1.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager em AEM como Cloud Service 2020.12.0.
+Esta página descreve as Notas de versão do Cloud Manager em AEM como Cloud Service 2021.1.0
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager no AEM como Cloud Service 2020.12.0 é 10 de dezembro de 2020.
+A data de lançamento do Cloud Manager no AEM como Cloud Service 2021.1.0 é 14 de janeiro de 2021.
 
 ## Cloud Manager {#cloud-manager}
 
-### Novidades {#what-is-new}
-
-* Gerenciamento de autoatendimento de [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) e [Nomes de Domínio Personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
-
-* Gerenciamento de autoatendimento de [Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-* A página de detalhes atualizada **Ambiente** permite que os usuários gerenciem Nomes de domínio personalizados e Listas de permissões de IP em seus ambientes.
-
-
 ### Correções de erros {#bug-fixes}
 
-* Algumas ocorrências de falhas em estágio de digitalização de código sem fornecer resultados abordados.
+* A instância Produção de ativos pode, ocasionalmente, mostrar o status do Portal de marcas na página de detalhes **Ambientes** como *Pendente* sem permitir que o usuário execute nenhuma ação.
 
-* O cartão de ambiente não exibia consistentemente o botão **Adicionar**.
+* Ao disparar uma hibernação do Gerenciador de nuvem, às vezes uma mensagem de falha era exibida mesmo quando a hibernação era iniciada com êxito.
+
+* Casos raros de falha encontrados na criação ou exclusão de ambientes foram abordados.
