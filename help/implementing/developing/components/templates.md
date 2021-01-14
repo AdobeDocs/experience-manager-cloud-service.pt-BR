@@ -2,9 +2,9 @@
 title: Modelos de páginas
 description: Modelos de página são usados ao criar uma página que será usada como a base para a nova página
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 8%
 
 ---
@@ -110,6 +110,16 @@ Ao criar um novo modelo editável:
 
    Para obter detalhes técnicos sobre como criar páginas com modelos editáveis, consulte [Páginas de conteúdo resultante](#resultant-content-pages) neste documento.
 
+>[!TIP]
+>
+>Nunca insira qualquer informação que precise ser internacionalizada em um modelo. Para fins de internalização, os recursos de [localização dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) são recomendados.
+
+>[!NOTE]
+>
+>Os modelos são ferramentas poderosas para simplificar o fluxo de trabalho de criação de página. No entanto, muitos modelos podem sobrecarregar os autores e tornar a criação da página confusa. Uma boa regra é manter o número de modelos abaixo de 100.
+>
+>O Adobe não recomenda ter mais de 1000 modelos devido a possíveis impactos no desempenho.
+
 >[!NOTE]
 >
 >A biblioteca do cliente do editor assume a presença da namespace `cq.shared` nas páginas de conteúdo e, se ela não estiver presente, o erro do JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` resultará.
@@ -118,9 +128,7 @@ Ao criar um novo modelo editável:
 >
 >Consulte [Usando bibliotecas do lado do cliente](/help/implementing/developing/introduction/clientlibs.md) para obter mais informações.
 
->[!CAUTION]
->
->Nunca insira qualquer informação que precise ser internacionalizada em um modelo.
+
 
 ## Pastas de Modelo {#template-folders}
 
