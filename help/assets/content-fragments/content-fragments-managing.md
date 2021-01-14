@@ -2,9 +2,9 @@
 title: Gerenciamento dos fragmentos de conteúdo
 description: Os Fragmentos de conteúdo são armazenados como Ativos, portanto, são gerenciados principalmente no console Ativos.
 translation-type: tm+mt
-source-git-commit: 0a60687eacf054675205d9a9466473e1f4996db1
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1488'
 ht-degree: 11%
 
 ---
@@ -12,21 +12,11 @@ ht-degree: 11%
 
 # Gerenciamento dos fragmentos de conteúdo{#managing-content-fragments}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>A API AEM GraphQL para o Delivery de fragmentos de conteúdo está disponível sob solicitação.
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->A API AEM GraphQL, para o Delivery de fragmento de conteúdo, será lançada no início de 2021.
->
->A documentação relacionada já está disponível para fins de pré-visualização.
+>Entre em contato com [Suporte ao Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) para habilitar a API do seu AEM como programa Cloud Service.
 
 Os Fragmentos de conteúdo são armazenados como **Ativos**, portanto, são gerenciados principalmente do console **Ativos**.
 
