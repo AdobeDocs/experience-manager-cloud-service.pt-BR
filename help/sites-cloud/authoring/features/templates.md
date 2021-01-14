@@ -2,10 +2,10 @@
 title: 'Criação de modelos de páginas  '
 description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa apenas do desenvolvedor
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 98%
+source-wordcount: '4600'
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ Ao criar um novo modelo editável:
 >
 >Os **Modelos permitidos** geralmente são predefinidos quando seu site for inicialmente configurado.
 
->[!CAUTION]
+>[!TIP]
 >
 >Nunca insira qualquer informação que precise ser internacionalizada em um modelo. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
@@ -126,6 +126,12 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
    >[!NOTE]
    >
    >Quando um modelo novo for criado, ele será marcado como **Rascunho** no console. Isso indica que ainda não está disponível para uso por autores da página.
+
+>[!NOTE]
+>
+>Os modelos são ferramentas poderosas para simplificar o fluxo de trabalho de criação de página. No entanto, muitos modelos podem sobrecarregar os autores e tornar a criação da página confusa. Uma boa regra é manter o número de modelos abaixo de 100.
+>
+>O Adobe não recomenda ter mais de 1000 modelos devido a possíveis impactos no desempenho.
 
 ### Definir propriedades do modelo - Autor do modelo    {#defining-template-properties-template-author}
 
