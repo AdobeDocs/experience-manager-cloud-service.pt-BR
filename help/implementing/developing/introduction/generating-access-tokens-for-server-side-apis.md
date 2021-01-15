@@ -2,7 +2,7 @@
 title: Geração de Tokens de acesso para APIs do servidor
 description: Saiba como facilitar a comunicação entre um servidor de terceiros e o AEM como Cloud Service gerando um token JWT seguro
 translation-type: tm+mt
-source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
+source-git-commit: a8cb0c1bf2cdc741173e83ad00b6453931a8df18
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -101,7 +101,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## Fluxo do desenvolvedor {#developer-flow}
 
-Os desenvolvedores provavelmente desejarão testar usando uma instância de desenvolvimento de seu aplicativo não AEM (em execução em seu laptop ou hospedado) que faz solicitações para um AEM de desenvolvimento como um ambiente dev. No entanto, como os desenvolvedores não têm necessariamente acesso de função de administrador ao AEM como um ambiente de desenvolvimento de Cloud Service, não podemos assumir que eles possam gerar o portador JWT descrito no fluxo regular de servidor para servidor. Dessa forma, fornecemos um mecanismo para um desenvolvedor gerar um token de acesso diretamente que pode ser usado em solicitações para AEM como ambientes Cloud Service a que eles têm acesso. Consulte a documentação [Diretrizes do desenvolvedor](/help/implementing/developing/introduction/development-guidelines.md) para obter informações sobre as permissões necessárias para usar o AEM como um console do desenvolvedor de Cloud Service.
+Os desenvolvedores provavelmente desejarão testar usando uma instância de desenvolvimento de seu aplicativo não AEM (em execução em seu laptop ou hospedado) que faz solicitações para um AEM de desenvolvimento como um ambiente dev. No entanto, como os desenvolvedores não têm necessariamente acesso de função de administrador ao AEM como um ambiente de desenvolvimento de Cloud Service, não podemos assumir que eles possam gerar o portador JWT descrito no fluxo regular de servidor para servidor. Dessa forma, fornecemos um mecanismo para um desenvolvedor gerar um token de acesso diretamente que pode ser usado em solicitações para AEM como ambientes Cloud Service a que eles têm acesso.
+
+Consulte a documentação [Diretrizes do desenvolvedor](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) para obter informações sobre as permissões necessárias para usar o AEM como um console do desenvolvedor de Cloud Service.
 
 >[!NOTE]
 >
