@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
+source-git-commit: a3d940765796e6a4d8e16d8fe31343074358ebc3
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Da mesma forma, com tudo o que está a acontecer de forma assíncrona, como atua
 
 É altamente recomendável que todas as conexões HTTP de saída definam tempos limite de conexão e leitura razoáveis. Para códigos que não aplicam esses tempos limite, instâncias AEM executadas em AEM como Cloud Service, imporão um tempo limite global. Esses valores de tempo limite são de 10 segundos para chamadas de conexão e 60 segundos para chamadas de leitura para conexões usadas pelas seguintes bibliotecas Java populares:
 
-O Adobe recomenda o uso da biblioteca do Apache HttpComponents Client 4.x [ fornecida para fazer conexões HTTP.](https://hc.apache.org/httpcomponents-client-ga/)
+O Adobe recomenda o uso da biblioteca do Apache HttpComponents Client 4.x ](https://hc.apache.org/httpcomponents-client-ga/) fornecida para fazer conexões HTTP.[
 
 As alternativas que são conhecidas por funcionarem, mas que podem exigir que a dependência seja fornecida por você mesmo, são:
 
@@ -222,7 +222,7 @@ AEM como Cloud Service requer que o correio externo seja criptografado. As seç�
 Por padrão, o email de saída está desativado. Para ativá-lo, envie um ticket de suporte com:
 
 1. O nome de domínio totalmente qualificado para o servidor de email (por exemplo `smtp.sendgrid.net`)
-1. A porta a ser usada. Deve ser a porta 465 se for suportada pelo servidor de correio; caso contrário, a porta 587 Observe que a porta 587 só pode ser usada se o servidor de correio exigir e impor o TLS nessa porta
+1. A porta a ser usada. Deve ser a porta 465 se for suportada pelo servidor de correio; caso contrário, a porta 587. Observe que a porta 587 só pode ser usada se o servidor de email exigir e aplicar o TLS nessa porta
 1. A ID do programa e a ID do ambiente dos ambientes dos quais eles gostariam de enviar emails
 1. Se o acesso SMTP é necessário para o autor, publicação ou ambos.
 
@@ -240,16 +240,16 @@ AEM CS requer que o correio seja enviado pela porta 465. Se um servidor de corre
 
 Os emails no AEM devem ser enviados usando o serviço OSGi do [Day CQ Mail Service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Consulte [AEM documentação 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) para obter detalhes sobre como configurar as configurações de email. Para AEM CS, os seguintes ajustes devem ser feitos no serviço `com.day.cq.mailer.DefaultMailService OSGI`:
+Consulte [AEM documentação 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) para obter detalhes sobre como configurar as configurações de email. Para AEM como Cloud Service, os seguintes ajustes devem ser feitos no serviço `com.day.cq.mailer.DefaultMailService OSGI`:
 
 Se a porta 465 tiver sido solicitada:
 
 * definir `smtp.port` como `465`
 * definir `smtp.ssl` como `true`
-* definir `smtp.starttls` como `false`
 
 Se a porta 587 tiver sido solicitada (somente permitida se o servidor de email não suportar a porta 465):
 
 * definir `smtp.port` como `587`
 * definir `smtp.ssl` como `false`
-* definir `smtp.starttls` como `true`
+
+A propriedade `smtp.starttls` será automaticamente definida AEM como Cloud Service no tempo de execução para um valor apropriado. Isso será `false` para a porta 465 e `true` para a porta 587. Isso independentemente dos valores `smtp.starttls` definidos na configuração do OSGI.
