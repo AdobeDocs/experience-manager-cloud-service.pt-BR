@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre entrega de conteúdo HTTP2
 description: Saiba mais sobre o delivery de conteúdo HTTP2.
 translation-type: tm+mt
-source-git-commit: d9673296208831e68c5f776e0a9b142f348efc95
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '762'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 * Use o CDN (content delivery network) fornecido no Adobe como parte da sua licença do Dynamic Media Classic.
 * Use um domínio dedicado (ou seja, `images.company.com` ou `mycompany.scene7.com`), não um domínio Dynamic Media genérico (ou seja, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
 
-   Para localizar seus domínios, [faça logon em sua instância do Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta de empresa.
+   Para localizar seus domínios, abra o [aplicativo Dynamic Media Classic para desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
    Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**. Procure o campo **Published Server Name**. Se você estiver usando um domínio Dynamic Media genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
 
@@ -56,7 +56,7 @@ Você deve [usar o Admin Console para criar um caso de suporte](https://helpx.ad
    * Nome do contato principal, email e número de telefone.
    * Todos os domínios a serem transferidos para HTTP2. Ou seja, `images.company.com` ou `mycompany.scene7.com`.
 
-   Para localizar seus domínios, [faça logon em sua instância do Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta de empresa.
+   Para localizar seus domínios, abra o [aplicativo Dynamic Media Classic para desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
    Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**. Procure o campo **[!UICONTROL Published Server Name]**.
 
@@ -64,7 +64,7 @@ Você deve [usar o Admin Console para criar um caso de suporte](https://helpx.ad
    * Verifique se você está usando o CDN através do Adobe e não é gerenciado com um relacionamento direto.
    * Verifique se você está usando um domínio dedicado. Ou seja, `images.company.com` ou `mycompany.scene7.com`, não é um domínio genérico do Dynamic Media, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-   Para localizar seus domínios, [faça logon em sua instância do Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta de empresa.
+   Para localizar seus domínios, abra o [aplicativo Dynamic Media Classic para desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
    Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**. Procure o campo **[!UICONTROL Published Server Name]**. Se você estiver usando um domínio Dynamic Media genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
 
