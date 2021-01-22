@@ -2,9 +2,9 @@
 title: Uso de conjuntos de regras para transformar URLs
 description: Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '767'
 ht-degree: 5%
 
 ---
@@ -55,11 +55,9 @@ Consulte também [Usar a imagem &#39;asset&#39; em vez de &#39;is&#39; em um con
 
 **Para implantar conjuntos de regras XML:**
 
-1. Faça logon em sua conta do Dynamic Media Classic:
+1. Abra o [aplicativo Dynamic Media Classic para desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   Suas credenciais e logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
+   Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
 
 1. Carregue seu arquivo de conjunto de regras fazendo o seguinte:
 
