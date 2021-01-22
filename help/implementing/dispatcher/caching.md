@@ -2,9 +2,9 @@
 title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
+source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1535'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,15 @@ Esta página também descreve como o cache do dispatcher é invalidado, bem como
 
 ### HTML/Texto {#html-text}
 
-* por padrão, armazenado em cache pelo navegador por cinco minutos, com base no cabeçalho de controle de cache emitido pela camada de cache. O CDN também respeita esse valor.
+* por padrão, armazenado em cache pelo navegador por cinco minutos, com base no cabeçalho `cache-control` emitido pela camada de cache. O CDN também respeita esse valor.
+* a configuração padrão de armazenamento em cache de HTML/Texto pode ser desativada definindo a variável `DISABLE_DEFAULT_CACHING` em `global.vars`:
+
+```
+Define DISABLE_DEFAULT_CACHING
+```
+
+Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste fino do cabeçalho da idade (com um valor baseado no dia do calendário), já que, por padrão, o cabeçalho da idade está definido como 0. Dito isso, **tenha cuidado ao desativar o cache padrão.**
+
 * pode ser substituída para todo o conteúdo HTML/Texto definindo a variável `EXPIRATION_TIME` em `global.vars` usando o AEM como ferramentas do Dispatcher do Cloud Service SDK.
 * pode ser substituído em um nível de granulado mais fino pelas seguintes diretivas apache mod_headers:
 
@@ -124,7 +132,7 @@ O diagrama apresentado abaixo ilustra isso.
 
 Se houver uma preocupação de que o cache do dispatcher não esteja sendo apagado, entre em contato com o [suporte ao cliente](https://helpx.adobe.com/support.ec.html) que pode liberar o cache do dispatcher, se necessário.
 
-O CDN gerido pelo Adobe respeita os TTLs e, por conseguinte, não há necessidade de o eliminar. Se houver suspeita de um problema, entre em contato com o suporte ao cliente [, que pode liberar um cache de CDN gerenciado por Adobe, conforme necessário.](https://helpx.adobe.com/support.ec.html)
+O CDN gerido pelo Adobe respeita os TTLs e, por conseguinte, não há necessidade de o eliminar. Se houver suspeita de um problema, entre em contato com o suporte ao cliente ](https://helpx.adobe.com/support.ec.html), que pode liberar um cache de CDN gerenciado por Adobe, conforme necessário.[
 
 ## Bibliotecas do lado do cliente e consistência da versão {#content-consistency}
 
