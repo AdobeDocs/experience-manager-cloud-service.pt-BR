@@ -2,10 +2,10 @@
 title: Uso da ferramenta Mapeamento de usuários
 description: Uso da ferramenta Mapeamento de usuários
 translation-type: tm+mt
-source-git-commit: 664c278494a5ac88362b994946060ab3baa846d8
+source-git-commit: 410b7900981596590fa80b286b40a965700f108e
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '750'
+ht-degree: 1%
 
 ---
 
@@ -42,3 +42,39 @@ Siga estas etapas para configurar:
 1. Gerar um par de chaves ou Carregar uma chave pública (rsa não está funcionando)
 1. Gere um token de acesso (ou token JWT ou token do portador).
 1. Salve todas essas informações (ID do cliente, segredo do cliente, ID da conta técnica, e-mail da conta técnica, ID da organização, Token de acesso) em um local seguro.
+
+## Interface do usuário {#user-interface}
+
+A Ferramenta de mapeamento do usuário é integrada à Ferramenta de transferência de conteúdo. Você pode baixar a Ferramenta de transferência de conteúdo do Portal de distribuição de software. Para obter mais detalhes sobre a versão mais recente, consulte as Notas de versão.
+
+1. Selecione Selecionar o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> **Transferência de Conteúdo**.
+1. Clique em **Create User Mapping Config**.
+
+   >[!NOTE]
+   >Se você ignorar esta etapa, o mapeamento de usuários e grupos será ignorado durante a fase de Extração.
+
+   Preencha os campos na Configuração da API de Gerenciamento de Usuário, conforme descrito abaixo:
+
+   * **ID** da organização: Digite a ID de organização IMS da organização na qual os usuários estão sendo migrados.
+
+      >[!NOTE]
+      >Para obter a ID da organização, faça logon no [Admin Console](https://adminconsole.adobe.com/) e escolha sua organização (na área superior direita) se você pertencer a mais de uma. A ID da organização estará no URL dessa página, no formato `xx@AdobeOrg`, onde xx é a ID da organização IMS.  Como alternativa, você pode encontrar a ID da organização na página [Console do desenvolvedor do Adobe](https://console.adobe.io) onde você gera o Token de acesso.
+
+   * **ID** do cliente: Insira a ID do cliente que você salvou na etapa de instalação
+
+   * **token de acesso**: Digite o Token de acesso salvo na etapa de configuração
+
+      >[!NOTE]
+      >O Token de acesso expira a cada 24 horas e é necessário criar um novo. Para criar um novo token, volte para [Console do desenvolvedor do Adobe](https://console.adobe.io), escolha o seu projeto, clique em API de gerenciamento de usuários e cole a mesma chave privada na caixa.
+
+1. Depois de inserir as informações acima, clique em Salvar.
+
+1. Crie um Conjunto de Migrações clicando em Criar Conjunto de Migrações e preenchendo os campos e, em seguida, clicando em Salvar. Para obter mais detalhes, consulte Executar a ferramenta de transferência de conteúdo.
+
+   >[!NOTE]
+   >A opção de alternância para incluir o Mapeamento de usuários e grupos de IMS está ATIVADA por padrão. Com essa configuração, quando a Extração é executada nesse conjunto de migração, a Ferramenta de Mapeamento de Usuário será executada como parte da fase de Extração. Essa é a maneira recomendada para executar a fase de Extração da Ferramenta de transferência de conteúdo. Se essa alternância estiver desativada e/ou a Configuração de mapeamento do usuário não for criada, os mapeamentos de usuários e grupos serão ignorados durante a fase de Extração.
+
+1. Para executar a fase de Extração, consulte [Execução da Ferramenta de Transferência de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
+
+
+
