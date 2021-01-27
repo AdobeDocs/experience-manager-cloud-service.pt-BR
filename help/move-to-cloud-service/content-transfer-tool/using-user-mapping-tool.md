@@ -2,9 +2,9 @@
 title: Uso da ferramenta Mapeamento de usuários
 description: Uso da ferramenta Mapeamento de usuários
 translation-type: tm+mt
-source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
+source-git-commit: dcba197624b6a7ae668b11f43f60b13a9da0080e
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '757'
 ht-degree: 1%
 
 ---
@@ -35,23 +35,23 @@ A Ferramenta de mapeamento de usuário usa uma API que permite pesquisar usuári
 Siga estas etapas para configurar:
 
 1. Navegue até [Console do desenvolvedor do Adobe](https://console.adobe.io) usando seu Adobe ID.
-1. Criar um novo projeto ou abrir um projeto existente
-1. Adicionar uma API
-1. Escolher API de gerenciamento de usuário
-1. Criar uma credencial JWT
-1. Gerar um par de chaves ou Carregar uma chave pública (rsa não está funcionando)
+1. Crie um novo projeto ou abra um existente.
+1. Adicione uma API.
+1. Escolha a API de gerenciamento de usuários.
+1. Crie uma credencial JWT.
+1. Gere um par de chaves ou Carregue uma chave pública (rsa não está funcionando).
 1. Gere um token de acesso (ou token JWT ou token do portador).
-1. Salve todas essas informações (ID do cliente, segredo do cliente, ID da conta técnica, e-mail da conta técnica, ID da organização, Token de acesso) em um local seguro.
+1. Salve todas essas informações, como **ID do cliente**, **Segredo do cliente**, **ID da conta técnica**, **Email da conta técnica**, **ID da organização** e **Token de acesso** com segurança.
 
 ## Interface do usuário {#user-interface}
 
-A Ferramenta de mapeamento do usuário é integrada à Ferramenta de transferência de conteúdo. Você pode baixar a Ferramenta de transferência de conteúdo do Portal de distribuição de software. Para obter mais detalhes sobre a versão mais recente, consulte as Notas de versão.
+A Ferramenta de mapeamento do usuário é integrada à Ferramenta de transferência de conteúdo. Você pode baixar a Ferramenta de transferência de conteúdo do Portal de distribuição de software. Para obter mais detalhes sobre a versão mais recente, consulte as [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Selecione Selecionar o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> **Transferência de Conteúdo**.
 1. Clique em **Create User Mapping Config**.
 
    >[!NOTE]
-   >Se você ignorar esta etapa, o mapeamento de usuários e grupos será ignorado durante a fase de Extração.
+   >Se você ignorar essa etapa, o mapeamento de usuários e grupos será ignorado durante a fase de Extração.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
 
