@@ -2,9 +2,9 @@
 title: Uso da ferramenta Mapeamento de usuários
 description: Uso da ferramenta Mapeamento de usuários
 translation-type: tm+mt
-source-git-commit: 410b7900981596590fa80b286b40a965700f108e
+source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,11 @@ A Ferramenta de mapeamento do usuário é integrada à Ferramenta de transferên
    >[!NOTE]
    >Se você ignorar esta etapa, o mapeamento de usuários e grupos será ignorado durante a fase de Extração.
 
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+
    Preencha os campos na Configuração da API de Gerenciamento de Usuário, conforme descrito abaixo:
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
    * **ID** da organização: Digite a ID de organização IMS da organização na qual os usuários estão sendo migrados.
 
@@ -67,12 +71,17 @@ A Ferramenta de mapeamento do usuário é integrada à Ferramenta de transferên
       >[!NOTE]
       >O Token de acesso expira a cada 24 horas e é necessário criar um novo. Para criar um novo token, volte para [Console do desenvolvedor do Adobe](https://console.adobe.io), escolha o seu projeto, clique em API de gerenciamento de usuários e cole a mesma chave privada na caixa.
 
-1. Depois de inserir as informações acima, clique em Salvar.
+1. Depois de inserir as informações acima, clique em **Salvar**.
 
-1. Crie um Conjunto de Migrações clicando em Criar Conjunto de Migrações e preenchendo os campos e, em seguida, clicando em Salvar. Para obter mais detalhes, consulte Executar a ferramenta de transferência de conteúdo.
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+
+
+1. Crie um Conjunto de Migrações clicando em **Criar Conjunto de Migração** e preenchendo os campos e clicando em **Salvar**. Para obter mais detalhes, consulte Executar a ferramenta de transferência de conteúdo.
 
    >[!NOTE]
    >A opção de alternância para incluir o Mapeamento de usuários e grupos de IMS está ATIVADA por padrão. Com essa configuração, quando a Extração é executada nesse conjunto de migração, a Ferramenta de Mapeamento de Usuário será executada como parte da fase de Extração. Essa é a maneira recomendada para executar a fase de Extração da Ferramenta de transferência de conteúdo. Se essa alternância estiver desativada e/ou a Configuração de mapeamento do usuário não for criada, os mapeamentos de usuários e grupos serão ignorados durante a fase de Extração.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Para executar a fase de Extração, consulte [Execução da Ferramenta de Transferência de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
 
