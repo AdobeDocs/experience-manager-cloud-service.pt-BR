@@ -2,9 +2,9 @@
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 translation-type: tm+mt
-source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
+source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
 workflow-type: tm+mt
-source-wordcount: '4050'
+source-wordcount: '4119'
 ht-degree: 9%
 
 ---
@@ -376,7 +376,8 @@ Phase 2 finished
 O script faz o seguinte:
 
 1. Ele executa o validador da seção anterior para garantir que somente as diretivas suportadas sejam incluídas. Se a configuração não for válida, o script falhará.
-2. Ele executa `httpd -t command` para testar se a sintaxe está correta, de modo que apache httpd possa ser start. Se a configuração for bem-sucedida, deverá estar pronta para implantação
+2. Ele executa `httpd -t command` para testar se a sintaxe está correta, de modo que apache httpd possa ser start. Se bem-sucedida, a configuração deverá estar pronta para implantação.
+3. Verifica se o subconjunto dos arquivos de configuração do SDK do dispatcher, que devem ser imutáveis conforme descrito na seção [Estrutura do arquivo](#file-structure), não foi modificado. Esta é uma nova verificação, introduzida com AEM versão v2021.1.4738 do SDK, que também inclui as Ferramentas do Dispatcher versão 2.0.36. Antes desta atualização, os clientes podem ter assumido incorretamente que quaisquer modificações locais do SDK desses arquivos imutáveis também seriam aplicadas ao ambiente da nuvem.
 
 Durante a implantação do Cloud Manager, a verificação `httpd -t syntax` também será executada e todos os erros serão incluídos no log `Build Images step failure` do Cloud Manager.
 
