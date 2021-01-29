@@ -2,10 +2,10 @@
 title: Uso da ferramenta Mapeamento de usuários
 description: Uso da ferramenta Mapeamento de usuários
 translation-type: tm+mt
-source-git-commit: d582b752848b2b8b5a5955eec08b04fbbc3a53fa
+source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '783'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Como parte da jornada de transição para Adobe Experience Manager (AEM) como Cloud Service, é necessário mover usuários e grupos do sistema de AEM existente para AEM como Cloud Service. Isso é feito pela Ferramenta de transferência de conteúdo.
 
-Uma grande mudança para AEM como Cloud Service é o uso totalmente integrado de IDs de Adobe para acessar a camada do autor.  Isso requer o uso do Adobe Admin Console para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS), que fornece logon único em todos os aplicativos da nuvem de Adobe. Para obter mais detalhes, consulte Identity Management. Devido a essa alteração, os usuários e grupos existentes precisam ser mapeados para suas IDs IMS para evitar que usuários e grupos do duplicado na instância do autor do Cloud Service.
+Uma grande mudança para AEM como Cloud Service é o uso totalmente integrado de IDs de Adobe para acessar a camada do autor.  Isso requer o uso do [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS), que fornece logon único em todos os aplicativos da nuvem de Adobe. Para obter mais detalhes, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Devido a essa alteração, os usuários e grupos existentes precisam ser mapeados para suas IDs IMS para evitar que usuários e grupos do duplicado na instância do autor do Cloud Service.
 
 ## Considerações importantes {#important-considerations}
 
@@ -45,7 +45,7 @@ Siga as etapas abaixo para configurar:
 
 ## Interface do usuário {#user-interface}
 
-A Ferramenta de mapeamento do usuário é integrada à Ferramenta de transferência de conteúdo. Você pode baixar a Ferramenta de transferência de conteúdo do Portal de distribuição de software. Para obter mais detalhes sobre a versão mais recente, consulte as [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md).
+A Ferramenta de mapeamento do usuário é integrada à Ferramenta de transferência de conteúdo. Você pode baixar a Ferramenta de transferência de conteúdo do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Para obter mais detalhes sobre a versão mais recente, consulte as [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Selecione Selecionar o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> **Transferência de Conteúdo**.
 1. Clique em **Create User Mapping Config**.
