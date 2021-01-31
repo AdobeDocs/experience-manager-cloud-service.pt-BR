@@ -3,9 +3,9 @@ title: Configurar e usar microserviços de ativos
 description: Configure e use os microserviços de ativos nativos na nuvem para processar ativos em escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2576'
 ht-degree: 1%
 
 ---
@@ -180,18 +180,18 @@ Para verificar se os ativos são processados, pré-visualização as representa�
 
 ## Workflows de pós-processamento {#post-processing-workflows}
 
-Para situações em que é necessário um processamento adicional de ativos que não pode ser obtido usando os perfis de processamento, workflows adicionais pós-processamento podem ser adicionados à configuração. Isso permite adicionar processamento totalmente personalizado sobre o processamento configurável usando os microserviços de ativos.
+Para uma situação em que é necessário um processamento adicional de ativos que não possa ser obtido usando os perfis de processamento, workflows adicionais pós-processamento podem ser adicionados à configuração. Isso permite adicionar processamento totalmente personalizado sobre o processamento configurável usando os microserviços de ativos.
 
-Os workflows de pós-processamento, se configurados, são executados automaticamente por [!DNL Experience Manager] após a conclusão do processamento dos microserviços. Não há necessidade de adicionar iniciadores de fluxo de trabalho manualmente para acioná-los. Os exemplos incluem:
+Os workflows de pós-processamento, se configurados, são executados automaticamente por [!DNL Experience Manager] após a conclusão do processamento dos microserviços. Não há necessidade de adicionar iniciadores de fluxo de trabalho manualmente para acionar os workflows. Os exemplos incluem:
 
 * Etapas de fluxo de trabalho personalizadas para processar ativos.
 * Integrações para adicionar metadados ou propriedades a ativos de sistemas externos, por exemplo, informações sobre produtos ou processos.
 * Processamento adicional feito por serviços externos.
 
-A adição de uma configuração de fluxo de trabalho de pós-processamento ao Experience Manager é composta das seguintes etapas:
+Para adicionar uma configuração de fluxo de trabalho de pós-processamento a [!DNL Experience Manager], siga estas etapas:
 
-* Crie um ou mais modelos de fluxo de trabalho. Os documentos o mencionam como *modelos de fluxo de trabalho pós-processamento*, mas esses são modelos de fluxo de trabalho Experience Manager.
-* Adicione etapas específicas do fluxo de trabalho a esses modelos. As etapas são executadas nos ativos com base em uma configuração de modelo de fluxo de trabalho.
+* Crie um ou mais modelos de fluxo de trabalho. Esses modelos personalizados são chamados de *modelos de fluxo de trabalho pós-processamento* nesta documentação. Esses são modelos de fluxo de trabalho [!DNL Experience Manager] comuns.
+* Adicione as etapas de fluxo de trabalho necessárias a esses modelos. Revise as etapas do fluxo de trabalho padrão e adicione todas as etapas padrão necessárias ao fluxo de trabalho personalizado. As etapas são executadas nos ativos com base em uma configuração de modelo de fluxo de trabalho. Por exemplo, se você deseja que a marcação inteligente ocorra automaticamente após o upload do ativo, adicione a etapa ao modelo de fluxo de trabalho personalizado de pós-processamento.
 * Adicione a etapa [!UICONTROL Fluxo de trabalho do ativo de atualização do DAM Processo] concluído no final. A adição desta etapa garante que o Experience Manager saiba quando o processamento termina e que o ativo pode ser marcado como processado, ou seja, *New* é exibido no ativo.
 * Crie uma configuração para o Serviço de Execução de Fluxo de Trabalho Personalizado que permita configurar a execução de um modelo de fluxo de trabalho de pós-processamento por um caminho (localização da pasta) ou por uma expressão regular.
 
@@ -207,7 +207,7 @@ Verifique se a última etapa de cada workflows de pós-processamento é `DAM Upd
 
 Para configurar os modelos de fluxo de trabalho de pós-processamento a serem executados para ativos carregados ou atualizados no sistema após a conclusão do processamento dos microserviços de ativos, o serviço do Custom Workflow Runner precisa ser configurado.
 
-O serviço Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) é um serviço OSGi e fornece duas opções para configuração:
+O Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) é um serviço OSGi e fornece duas opções para configuração:
 
 * Workflows de pós-processamento por caminho (`postProcWorkflowsByPath`): Vários modelos de fluxo de trabalho podem ser listados, com base em diferentes caminhos de repositório. Caminhos e modelos devem ser separados por dois pontos. Caminhos de repositório simples são suportados e devem ser mapeados para um modelo de fluxo de trabalho no caminho `/var`. Por exemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Workflows de pós-processamento por expressão (`postProcWorkflowsByExpression`): Vários modelos de fluxo de trabalho podem ser listados, com base em diferentes expressões regulares. Expressões e modelos devem ser separados por dois pontos. A expressão regular deve apontar diretamente para o nó Ativo, e não para uma das execuções ou arquivos. Por exemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
