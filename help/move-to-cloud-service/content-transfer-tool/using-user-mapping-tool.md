@@ -2,10 +2,10 @@
 title: Uso da ferramenta Mapeamento de usuários
 description: Uso da ferramenta Mapeamento de usuários
 translation-type: tm+mt
-source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
+source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 3%
+source-wordcount: '782'
+ht-degree: 4%
 
 ---
 
@@ -47,7 +47,7 @@ Siga as etapas abaixo para configurar:
 
 A Ferramenta de mapeamento do usuário é integrada à Ferramenta de transferência de conteúdo. Você pode baixar a Ferramenta de transferência de conteúdo do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Para obter mais detalhes sobre a versão mais recente, consulte as [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Selecione Selecionar o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> **Transferência de Conteúdo**.
+1. Selecione o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> **Transferência de conteúdo**.
 1. Clique em **Create User Mapping Config**.
 
    >[!NOTE]
