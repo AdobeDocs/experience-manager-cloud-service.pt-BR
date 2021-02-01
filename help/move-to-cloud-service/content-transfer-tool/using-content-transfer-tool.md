@@ -2,9 +2,9 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
+source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1906'
 ht-degree: 64%
 
 ---
@@ -28,9 +28,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * O token de acesso pode expirar periodicamente após um período de tempo específico ou após o ambiente ser atualizado. Se o token de acesso tiver expirado, você não poderá se conectar à instância Cloud Service e terá que recuperar o novo token de acesso. O ícone de status associado a um conjunto de migração existente será alterado para uma nuvem vermelha e exibirá uma mensagem ao passar o mouse sobre ele.
 
-* Atualmente, o tamanho padrão de MongoDB para um AEM como uma instância de autor de Cloud Service é de 32 GB. É recomendável que, para um tamanho de armazenamento de segmentos maior que 20 GB, você envie um ticket de suporte para aumentar o tamanho do MongoDB.
-
-* Os Usuários e grupos transferidos pela Ferramenta de transferência de conteúdo são apenas aqueles que são exigidos pelo conteúdo para atender às permissões. O processo *Extração* copia todo o `/home` para o conjunto de migração e o processo *Ingestão* copia todos os usuários e grupos referenciados nas ACLs de conteúdo migrado.
+* Os Usuários e grupos transferidos pela Ferramenta de transferência de conteúdo são apenas aqueles que são exigidos pelo conteúdo para atender às permissões. O processo *Extração* copia todo o `/home` para o conjunto de migração e o processo *Ingestão* copia todos os usuários e grupos referenciados nas ACLs de conteúdo migrado. Para mapear automaticamente os usuários e grupos existentes para suas IDs IMS, consulte [Usando a ferramenta de mapeamento do usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * Durante a fase de extração, a ferramenta Transferência de conteúdo é executada em uma instância de origem do AEM ativa.
 
