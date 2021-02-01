@@ -2,9 +2,9 @@
 title: Integração com o Adobe Target
 description: 'Integração com o Adobe Target '
 translation-type: tm+mt
-source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
+source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,6 @@ Para editar a configuração do Público alvo, siga estas etapas:
 1. Selecione uma configuração existente e clique em **Propriedades**.
 2. Edite as propriedades.
 3. Selecione **Ligar novamente ao Adobe Target**.
-   ![Reconecte-](assets/edit_config_page1.png "se")
 4. Selecione **Salvar e fechar**.
 
 ### Adicionando uma configuração a um site {#add-configuration}
@@ -91,7 +90,7 @@ Uma propriedade é um container que será preenchido com extensões, regras e el
 
 ### Criando um elemento de dados {#data-element}
 
-**Os** elementos de dados são os espaços reservados para os quais você pode mapear parâmetros de hub de contexto.
+**Os** elementos de dados são os espaços reservados para os quais você pode mapear os parâmetros do hub de contexto.
 
 1. Selecione **Elementos de dados**.
 2. Selecione **Adicionar elemento de dados**.
