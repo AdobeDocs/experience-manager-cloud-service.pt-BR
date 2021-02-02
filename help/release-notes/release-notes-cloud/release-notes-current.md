@@ -2,7 +2,7 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
+source-git-commit: 76da904f4fc5a96e6892242c42bae5d05eea2e16
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 5%
@@ -73,7 +73,7 @@ A data de lançamento do Cloud Manager no AEM como Cloud Service 2021.1.0 é 14 
 
 ### Data de lançamento {#release-date-ctt}
 
-A data de lançamento da Content Transfer Tool v1.2.20 é 1 de fevereiro de 2021.
+A data de lançamento da Content Transfer Tool v1.2.2 é 1 de fevereiro de 2021.
 
 ### Novidades em [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
