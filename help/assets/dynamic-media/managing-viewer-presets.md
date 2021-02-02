@@ -2,7 +2,7 @@
 title: Gerenciar predefinições do visualizador
 description: Como criar e gerenciar predefinições do visualizador no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '4246'
 ht-degree: 17%
@@ -51,7 +51,7 @@ Você pode adicionar, editar, excluir, publicar, cancelar a publicação e pré-
 
 Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes você deseja uma página da Web que forneça um link que abra o Visualizador HTML5 em uma janela separada do navegador. Em outros casos, pode ser necessário incorporar o Visualizador HTML5 diretamente na página de hospedagem. No último caso, a página da Web pode ter um layout estático. Ou pode ser &quot;responsivo&quot; e exibido de forma diferente em dispositivos diferentes ou para tamanhos diferentes de janelas do navegador. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos para uso que acompanham o Dynamic Media suportam páginas da Web estáticas e páginas da Web responsivas projetadas.
 
-Consulte [Biblioteca de imagens estáticas responsivas](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) na *Ajuda da API de disponibilização e renderização de imagens da Dynamic Media* para obter mais informações sobre como incorporar visualizadores responsivos às suas páginas da Web.
+Consulte [Biblioteca de imagens estáticas responsivas](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) na *Ajuda da API de disponibilização e renderização de imagens da Dynamic Media* para obter mais informações sobre como incorporar visualizadores responsivos às suas páginas da Web.
 
 >[!NOTE]
 >
