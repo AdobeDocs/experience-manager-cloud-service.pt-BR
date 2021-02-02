@@ -2,7 +2,7 @@
 title: Vídeo
 description: Saiba como trabalhar com vídeo no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '9536'
 ht-degree: 10%
@@ -340,7 +340,7 @@ Use o CBR se o vídeo contiver um nível de movimento semelhante em todo o víde
 O VBR demora mais para codificar, mas produz os resultados mais favoráveis; a qualidade do arquivo de mídia é superior. O VBR é usado com mais frequência para o delivery progressivo http do conteúdo de vídeo.
 
 Quando você deve usar VBR versus CRB?
-Quando se trata de selecionar VBR versus CBR, é quase sempre recomendável usar VBR para seus arquivos de mídia. O VBR fornece arquivos de maior qualidade a taxas de bits competitivas. Ao usar o VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima como 1,5x a taxa de bits de vídeo do público alvo.
+Quando se trata de selecionar VBR versus CBR, é quase sempre recomendável usar VBR para seus arquivos de mídia. O VBR fornece arquivos de maior qualidade a taxas de bits competitivas. Ao usar VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima para 1,5x a taxa de bits do vídeo do público alvo.
 
 Ao escolher uma predefinição de codificação de vídeo, considere a velocidade de conexão do usuário final do público alvo. Escolha uma predefinição com uma taxa de dados que seja 80% dessa velocidade. Por exemplo, se a velocidade de conexão do usuário final do público alvo for de 1000 Kbps, a melhor predefinição será aquela com uma taxa de dados de vídeo de 800 Kbps.
 
@@ -404,7 +404,7 @@ Por exemplo, suponha que o vídeo de origem seja 1920 x 1080. Na tabela a seguir
 |--- |--- |--- |--- |
 | Origem | 1920x1080 | 1 | 1 |
 | Codificado | 960 x 540 | 2 | 2 |
-| Codificado | 640 x 360 | 3 | 1 |
+| Codificado | 640 x 360 | 3 | 3 |
 | Codificado | 480 x 270 | 4 | 4 |
 
 ### Formato de arquivo de vídeo codificado {#encoded-video-file-format}
@@ -1058,7 +1058,7 @@ O player de vídeo que você usa deve suportar a exibição de legendas.
 
 A Dynamic Media tem a capacidade de converter arquivos de legenda em formato JSON (JavaScript Object Notation). Essa conversão significa que você pode incorporar o texto JSON em uma página da Web como uma transcrição oculta, mas completa, do vídeo. Os mecanismos de pesquisa podem rastrear e indexar o conteúdo para tornar os vídeos mais facilmente detectáveis e fornecer aos clientes detalhes adicionais sobre o conteúdo do vídeo.
 
-Consulte [Servindo conteúdo estático (não imagem)](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) para obter mais informações sobre como usar a função JSON em um URL.
+Consulte [Servindo conteúdo estático (não imagem)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) para obter mais informações sobre como usar a função JSON em um URL.
 
 **Para adicionar legendas ou legendas ao vídeo:**
 
