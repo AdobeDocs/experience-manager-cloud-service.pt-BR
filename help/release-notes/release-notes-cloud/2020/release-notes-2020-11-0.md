@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0.
 description: '[!DNL Adobe Experience Manager] como notas de versão de Cloud Service para 2020.11.0.'
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 4%
@@ -114,7 +114,7 @@ Consulte [Gerenciando Ambientes](/help/implementing/cloud-manager/manage-environ
 
 ### Analisadores de compilação do SDK {#analyzers}
 
-O AEM como um plug-in Maven do Cloud Service SDK Build Analyzer detecta problemas em um projeto maven, incluindo dependências ausentes. Ele oferece aos desenvolvedores uma oportunidade de descobrir problemas durante o desenvolvimento local, bem antes de implantar ambientes da Cloud com o Cloud Manager. Para obter mais informações, consulte a documentação [aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) e [aqui](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+O AEM como um plug-in Maven do Cloud Service SDK Build Analyzer detecta problemas em um projeto maven, incluindo dependências ausentes. Ele oferece aos desenvolvedores uma oportunidade de descobrir problemas durante o desenvolvimento local, bem antes de implantar ambientes da Cloud com o Cloud Manager. Para obter mais informações, consulte a documentação [aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) e [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
 
 ### Outros {#others-foundation}
 
