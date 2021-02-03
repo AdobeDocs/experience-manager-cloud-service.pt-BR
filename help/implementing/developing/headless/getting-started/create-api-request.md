@@ -2,9 +2,9 @@
 title: Guia de Start rápido para acessar e fornecer fragmentos de conteúdo sem cabeçalho
 description: A API REST de ativos permite gerenciar fragmentos de conteúdo e a API GraphQL permite um delivery simples do conteúdo do fragmento de conteúdo.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,14 @@ O restante deste guia se concentrará no acesso ao GraphQL e no delivery do frag
 
 Os arquitetos de informações precisarão projetar query para seus pontos de extremidade de canal a fim de fornecer conteúdo. Esses query geralmente só precisam ser considerados uma vez por endpoint por modelo. Para os fins deste guia de introdução, só precisaremos criar um.
 
-1. Efetue login no AEM como um Cloud Service e, no menu principal, selecione **Ferramentas -> Ativos -> GraphQL**
-   * Como alternativa, abra a página diretamente em `https://<host>:<port>/content/graphiql.html`.
+<!-- Not in the UI yet - will need updating when it is -->
+<!--
+1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
+   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
+-->
+
+1. Efetue login no AEM como um Cloud Service e acesse a interface do GraphiQL:
+   * Por exemplo: `https://<host>:<port>/content/graphiql.html`.
 
 1. O GraphiQL é um editor de query no navegador para o GraphQL. Você pode usá-lo para criar query para recuperar os Fragmentos de conteúdo para entregá-los de forma direta como JSON.
    * O painel esquerdo permite que você crie seu query.
@@ -39,8 +45,9 @@ Os arquitetos de informações precisarão projetar query para seus pontos de ex
 1. Supondo que o modelo que criamos tenha sido chamado `person` com os campos `firstName`, `lastName` e `position`, podemos criar um query simples para recuperar o conteúdo de nosso Fragmento de conteúdo.
 
    ```text
-   query {
-     persons {
+   query 
+   {
+     personList {
        items {
          _path
          firstName
