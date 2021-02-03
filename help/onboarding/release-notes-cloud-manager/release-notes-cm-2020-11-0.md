@@ -2,7 +2,7 @@
 title: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2020.11.0
 description: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2020.11.0
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 79af82d1589108e7a8953e29a5d0f0169920585c
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 4%
@@ -23,7 +23,7 @@ A data de lançamento do Cloud Manager no AEM como Cloud Service 2020.11.0 é 12
 ### Novidades {#what-is-new}
 
 * Uma nova opção de menu **Logon local** agora está disponível para os usuários nas opções do menu ambiente nas páginas Ambiente card e Resumo dos Ambientes.
-Consulte [Gerenciando Ambientes](/help/implementing/cloud-manager/manage-environments.md##login-locally) para obter mais detalhes.
+Consulte [Gerenciando Ambientes](/help/implementing/cloud-manager/manage-environments.md#login-locally) para obter mais detalhes.
 
 * A guia **Learn** no Cloud Manager foi atualizada com novas imagens na interface do usuário.
 
