@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 8125d78d4751f22bcc5dd22acbdfd21ce62fc53d
+source-git-commit: a01a55f85639613e5febd2588c9c55590f888124
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2284'
 ht-degree: 1%
 
 ---
@@ -246,10 +246,10 @@ Se a porta 465 tiver sido solicitada:
 
 * definir `smtp.port` como `465`
 * definir `smtp.ssl` como `true`
-* definir `smtp.starttls` como `false`
 
 Se a porta 587 tiver sido solicitada (somente permitida se o servidor de email não suportar a porta 465):
 
 * definir `smtp.port` como `587`
 * definir `smtp.ssl` como `false`
-* definir `smtp.starttls` como `true`
+
+A propriedade `smtp.starttls` será automaticamente definida AEM como Cloud Service no tempo de execução para um valor apropriado. Portanto, se `smtp.tls` estiver definido como true, `smtp.startls` será ignorado. Se `smtp.ssl` estiver definido como false, `smtp.starttls` estará definido como true. Isso independentemente dos valores `smtp.starttls` definidos na configuração do OSGI.
