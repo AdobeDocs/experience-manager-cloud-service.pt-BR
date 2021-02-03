@@ -3,9 +3,9 @@ title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados por [!DNL Experience Manager Assets] como a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '806'
 ht-degree: 10%
 
 ---
@@ -60,24 +60,24 @@ A legenda a seguir descreve o nível de suporte.
 | GIF | Satélite | Satélite | Satélite | Satélite |
 | JPEG | Satélite | Satélite | Satélite | Satélite |
 | PNG | Satélite | Satélite | Satélite | Satélite |
-| TIFF | Satélite | Satélite | Satélite | - |
-| SVG | Satélite | - | Satélite | Satélite |
-| SGI | Satélite | Satélite | Satélite | Satélite |
 | RGB | Satélite | Satélite | Satélite | Satélite |
 | RGBA | Satélite | Satélite | Satélite | Satélite |
+| SGI | Satélite | Satélite | Satélite | Satélite |
+| SVG | Satélite | - | Satélite | Satélite |
+| TIFF | Satélite | Satélite | Satélite | - |
 
 ## Formatos de imagem em [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | Formato | Carregar (formato de entrada) | Criar predefinição de imagem (formato de saída) | Execução dinâmica de pré-visualização | Fornecer representação dinâmica | Baixar representação dinâmica |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | Satélite | Satélite | Satélite | Satélite | Satélite |
-| GIF | Satélite | Satélite | Satélite | Satélite | Satélite |
-| TIFF | Satélite | Satélite | Satélite | Satélite | Satélite |
-| JPEG | Satélite | Satélite | Satélite | Satélite | Satélite |
 | BMP | Satélite | - | - | - | - |
-| PSD   ‡ | Satélite | - | - | - | - |
 | EPS | Satélite | Satélite | Satélite | Satélite | Satélite |
+| GIF | Satélite | Satélite | Satélite | Satélite | Satélite |
+| JPEG | Satélite | Satélite | Satélite | Satélite | Satélite |
 | PICT | Satélite | - | - | - | - |
+| PNG | Satélite | Satélite | Satélite | Satélite | Satélite |
+| PSD   ‡ | Satélite | - | - | - | - |
+| TIFF | Satélite | Satélite | Satélite | Satélite | Satélite |
 
 ‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada por [!DNL Adobe Photoshop] e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
@@ -92,7 +92,7 @@ Os seguintes subtipos de formatos de arquivo de imagem rasterizada que não são
 
 ## Formatos 3D {#support-3d-formats}
 
-A seguinte lista de formatos 3D é suportada.
+Os seguintes formatos 3D são suportados.
 
 Consulte também [Trabalhar com ativos 3D no Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
@@ -143,24 +143,24 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 | Formato de arquivo | Geração de miniaturas | Extração de texto completo | Largura/altura | Gerenciamento de metadados | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | Satélite | Satélite | Satélite | Satélite | Satélite |
-| DOCX | Satélite | Satélite | Satélite | Satélite | Satélite |
 | DOC | - | - | - | Satélite | Satélite |
-| PPTX | Satélite | Satélite | Satélite | Satélite | Satélite |
-| PPT | - | - | - | Satélite | Satélite |
-| XLSX | Satélite | Satélite | Satélite | Satélite | Satélite |
-| XLS | - | - | - | Satélite | Satélite |
+| DOCX | Satélite | Satélite | Satélite | Satélite | Satélite |
+| EPUB | - | Satélite | - | - | - |
+| HTML | - | Satélite | - | Satélite | Satélite |
 | ODF | Satélite | Satélite | Satélite | - | - |
-| OFF | Satélite | Satélite | Satélite | - | - |
 | ODM | Satélite | Satélite | Satélite | - | - |
 | ODP | Satélite | Satélite | Satélite | - | - |
 | ODS | Satélite | Satélite | Satélite | - | - |
 | ODT | Satélite | Satélite | Satélite | Satélite | Satélite |
-| EPUB | - | Satélite | - | - | - |
-| HTML | - | Satélite | - | Satélite | Satélite |
+| OFF | Satélite | Satélite | Satélite | - | - |
+| PDF | Satélite | Satélite | Satélite | Satélite | Satélite |
+| PPT | - | - | - | Satélite | Satélite |
+| PPTX | Satélite | Satélite | Satélite | Satélite | Satélite |
 | PS | - | - | Satélite | - | - |
 | RTF | - | Satélite | - | Satélite | Satélite |
 | TXT | - | Satélite | - | Satélite | Satélite |
+| XLS | - | - | - | Satélite | Satélite |
+| XLSX | Satélite | Satélite | Satélite | Satélite | Satélite |
 | XML | - | Satélite | - | - | - |
 
 ## formatos de documento em [!DNL Dynamic Media] {#document-support-dynamic-media}
@@ -168,8 +168,8 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | Formato | Carregar (formato de entrada) | Criar predefinição de imagem (formato de saída) | Execução dinâmica de pré-visualização | Fornecer representação dinâmica | Baixar representação dinâmica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | Satélite | - | - | - | - |
-| PDF | Satélite | Satélite | Satélite | Satélite | Satélite |
 | INDD | Satélite | - | - | - | - |
+| PDF | Satélite | Satélite | Satélite | Satélite | Satélite |
 
 ## Formatos de vídeo {#video-formats}
 
@@ -191,6 +191,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | MPEG | Satélite | Satélite | Satélite |
 | MPG | Satélite | Satélite | Satélite |
 | MTS | Satélite | - | Satélite |
+| MXF | Satélite | - | Satélite |
 | OGV | Satélite | - | Satélite |
 | QT | Satélite | - | Satélite |
 | R3D | - | Satélite | Satélite |
