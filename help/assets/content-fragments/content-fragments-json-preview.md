@@ -2,21 +2,15 @@
 title: Pré-visualização - Representação JSON
 description: Visualização da representação JSON do fragmento.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '95'
+ht-degree: 2%
 
 ---
 
 
 # Pré-visualização - Representação JSON {#preview-json-representation}
-
->[!CAUTION]
->
->A API AEM GraphQL para o Delivery de fragmentos de conteúdo está disponível sob solicitação.
->
->Entre em contato com [Suporte ao Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) para habilitar a API do seu AEM como programa Cloud Service.
 
 Ao desenvolver os modelos para Fragmentos de conteúdo, talvez você queira visualização de saída JSON de amostra para um fragmento de conteúdo, com base em um modelo. Por exemplo, para ter uma ideia da aparência da saída final. Isso pode ser útil ao validar a estrutura JSON do modelo, talvez com conteúdo de amostra padrão por tipo de dados.
 
