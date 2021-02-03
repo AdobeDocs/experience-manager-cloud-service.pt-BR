@@ -2,9 +2,9 @@
 title: Guia de Start rápido para Criar modelos de fragmento de conteúdo sem cabeçalho
 description: Os Modelos de fragmento de conteúdo definem a estrutura do conteúdo que você criará e servirá usando AEM recursos sem cabeçalho.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Um arquiteto da informação só executaria estas tarefas esporadicamente, uma v
 
    ![A pasta models](../assets/models-folder.png)
 1. Toque ou clique em **Criar**.
-1. Forneça um **Título do modelo** e **Descrição**.
+1. Forneça um **Título do modelo**, **Tags** e **Descrição**. Você também pode selecionar/desmarcar **Habilitar modelo** para controlar se o modelo é ativado imediatamente após a criação.
 
    ![Criar um modelo](../assets/models-create.png)
 1. Na janela de confirmação, toque ou clique em **Abrir** para configurar o modelo.
@@ -45,7 +45,7 @@ Um arquiteto da informação só executaria estas tarefas esporadicamente, uma v
 1. Quando terminar de criar seu modelo, toque ou clique em **Salvar**. O modelo recém-criado é salvo no modo **Rascunho**.
 
    ![Modelo no modo de rascunho](../assets/models-draft.png)
-1. O modelo deve estar habilitado para usá-lo. Selecione o modelo que acabou de criar e toque ou clique em **Ativar**.
+1. O modelo deve ser habilitado para usá-lo (se ainda não estiver ativado). Selecione o modelo que acabou de criar e toque ou clique em **Ativar**.
 
    ![Ativação do modelo](../assets/models-enable.png)
 1. Confirme a habilitação do modelo tocando ou clicando em **Ativar** na caixa de diálogo de confirmação.
