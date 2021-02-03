@@ -4,8 +4,8 @@ description: Notas de versão atuais para [!DNL Adobe Experience Manager] como u
 translation-type: tm+mt
 source-git-commit: cd392473d4e8ebee20b41c6c979121fe81819a40
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '863'
+ht-degree: 4%
 
 ---
 
