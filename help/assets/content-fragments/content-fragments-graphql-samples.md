@@ -2,21 +2,24 @@
 title: Aprendendo a usar o GraphQL com AEM - Conteúdo de amostra e Query
 description: Aprendendo a usar o GraphQL com AEM - Conteúdo de amostra e Query.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 6%
+source-wordcount: '1708'
+ht-degree: 5%
 
 ---
 
 
 # Aprendendo a usar o GraphQL com AEM - Conteúdo de amostra e Query {#learn-graphql-with-aem-sample-content-queries}
 
->[!CAUTION]
+>[!NOTE]
 >
->A API AEM GraphQL para o Delivery de fragmentos de conteúdo está disponível sob solicitação.
+>Esta página deve ser lida juntamente com:
 >
->Entre em contato com [Suporte ao Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) para habilitar a API do seu AEM como programa Cloud Service.
+>* [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
+>* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
+>* [AEM API GraphQL para uso com Fragmentos de conteúdo](/help/assets/content-fragments/graphql-api-content-fragments.md)
+
 
 Para começar a usar query GraphQL e como eles trabalham com AEM Fragmentos de conteúdo, é útil ver alguns exemplos práticos.
 
@@ -26,7 +29,7 @@ Para ajudar com isso, consulte:
 
 * E alguns [query GraphQL de amostra](#graphql-sample-queries), com base na estrutura do fragmento de conteúdo de amostra (Modelos de fragmento de conteúdo e Fragmentos de conteúdo relacionados).
 
-## GraphQL para AEM - Algumas extensões {#graphql-some-extensions}
+## GraphQL para AEM - Resumo das extensões {#graphql-extensions}
 
 A operação básica de query com GraphQL para AEM obedece à especificação GraphQL padrão. Para query GraphQL com AEM há algumas extensões:
 
@@ -34,148 +37,59 @@ A operação básica de query com GraphQL para AEM obedece à especificação Gr
    * Utilizar o nome do modelo; cidade eg
 
 * Se você espera uma lista de resultados:
-   * adicionar &quot;Lista&quot; ao nome do modelo; por exemplo, `cityList`
+   * adicione `List` ao nome do modelo; por exemplo, `cityList`
+   * Consulte [Query de amostra - Todas as informações sobre todas as cidades](#sample-all-information-all-cities)
 
 * Se quiser usar um OU lógico:
-   * use &quot; _logOp: OU&quot;
+   * use ` _logOp: OR`
+   * Consulte [Query de amostra - Todas as pessoas que têm o nome &quot;Jobs&quot; ou &quot;Smith&quot;](#sample-all-persons-jobs-smith)
 
 * E lógico também existe, mas é (muitas vezes) implícito
 
 * Você pode query em nomes de campos que correspondam aos campos no Modelo de fragmento de conteúdo
+   * Consulte [Query de amostra - Detalhes completos de um CEO e Funcionários da Empresa](#sample-full-details-company-ceos-employees)
 
 * Além dos campos do modelo, há alguns campos gerados pelo sistema (precedidos pelo underscore):
 
    * Para conteúdo:
 
       * `_locale` : revelar a língua; com base no Gerenciador de idiomas
-
+         * Consulte [Query de amostra para vários Fragmentos de conteúdo de uma determinada localidade](#sample-wknd-multiple-fragments-given-locale)
       * `_metadata` : para revelar metadados para o fragmento
-
+         * Consulte [Query de amostra para Metadados - Lista dos Metadados para Prêmios GB](#sample-metadata-awards-gb)
+      * `_model` : permitir consulta para um Modelo de fragmento de conteúdo (caminho e título)
+         * Consulte [Query de amostra para um Modelo de fragmento de conteúdo de um Modelo](#sample-wknd-content-fragment-model-from-model)
       * `_path` : o caminho para o seu Content Fragement no repositório
-
-      * `_references` : revelar referências; incluindo referências em linha no Editor de Rich Text
-
-      * `_variations` : para revelar variações específicas em seu fragmento de conteúdo
+         * Consulte [Query de amostra - Um único fragmento de cidade específico](#sample-single-specific-city-fragment)
+      * `_reference` : revelar referências; incluindo referências em linha no Editor de Rich Text
+         * Consulte [Query de amostra para vários fragmentos de conteúdo com referências pré-definidas](#sample-wknd-multiple-fragments-prefetched-references)
+      * `_variation` : para revelar variações específicas em seu fragmento de conteúdo
+         * Consulte [Query de amostra - Todas as cidades com uma Variação nomeada](#sample-cities-named-variation)
    * E operações:
 
-      * `_operator` : Aplicar operadores específicos;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,
-
+      * `_operator` : Aplicar operadores específicos;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
+         * Consulte [Query de amostra - Todas as pessoas que não têm o nome de &quot;Tarefas&quot;](#sample-all-persons-not-jobs)
       * `_apply` : Aplicar condições específicas; por exemplo,   `AT_LEAST_ONCE`
-
+         * Consulte [Query de amostra - Filtrar em uma matriz com um item que deve ocorrer pelo menos uma vez](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : para ignorar o caso ao consultar
+         * Consulte [Query de amostra - Todas as cidades com SAN no nome, independentemente de maiúsculas e minúsculas](#sample-all-cities-san-ignore-case)
+
+
+
+
+
+
+
 
 
 * Os tipos de união GraphQL são suportados:
 
-   * use `...on`
-
-
-## Uma estrutura de fragmento de conteúdo de amostra para uso com GraphQL {#content-fragment-structure-graphql}
-
-Para obter um exemplo simples, precisamos:
-
-* Um ou mais, [Amostra de modelos de fragmento de conteúdo](#sample-content-fragment-models-schemas) - formam a base para os schemas GraphQL
-
-* [Amostra de ](#sample-content-fragments) fragmentos de conteúdo com base nos modelos acima
-
-### Modelos de fragmento de conteúdo de amostra (Schemas) {#sample-content-fragment-models-schemas}
-
-Para os query de amostra, usaremos os seguintes Modelos de conteúdo e suas inter-relações (referências ->):
-
-* [Empresa](#model-company)
-->  [Pessoa](#model-person)
-    ->  [Prêmio](#model-award)
-
-* [Cidade](#model-city)
-
-#### Empresa {#model-company}
-
-Os campos básicos que definem a empresa são:
-
-| Nome do campo | Tipo de dados | Referência |
-|--- |--- |--- |
-| Nome da empresa | Texto em linha única |  |
-| CEO | Referência do fragmento (único) | [Person](#model-person) |
-| Funcionários | Referência do fragmento (vários campos) | [Pessoa](#model-person) |
-
-#### Person {#model-person}
-
-Os campos que definem uma pessoa, que também pode ser um funcionário:
-
-| Nome do campo | Tipo de dados | Referência |
-|--- |--- |--- |
-| Nome | Texto em linha única |  |
-| Nome | Texto em linha única |  |
-| Prêmios | Referência do fragmento (vários campos) | [Prêmio](#model-award) |
-
-#### Prêmio {#model-award}
-
-Os campos que definem um prêmio são:
-
-| Nome do campo | Tipo de dados | Referência |
-|--- |--- |--- |
-| Atalho/ID | Texto em linha única |  |
-| Título | Texto em linha única |  |
-
-#### Cidade {#model-city}
-
-Os campos para definir uma cidade são:
-
-| Nome do campo | Tipo de dados | Referência |
-|--- |--- |--- |
-| Nome | Texto em linha única |  |
-| País | Texto em linha única |  |
-| População | Número |  |
-| Categorias | Tags |  |
-
-### Amostra de fragmentos de conteúdo {#sample-content-fragments}
-
-Os seguintes fragmentos são usados para o modelo apropriado.
-
-#### Empresa {#fragment-company}
-
-| Nome da empresa | CEO | Funcionários |
-|--- |--- |--- |
-| Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Escória Cortadora |
-| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
-
-#### Pessoa {#fragment-person}
-
-| Nome | Nome | Prêmios |
-|--- |--- |--- |
-| Lincoln |  Abe |  |
-| Smith | Adam |   |
-| Barra |  Cortador |  Gameblitz<br>Gamestar |
-| pântano |  Duke |   |   |
-|  Smith |  Joe |   |
-| Corte |  Lara | Gamestar |
-| Caulfield |  Máximo |  Gameblitz |
-|  Tarefas |  Steve |   |
-
-#### Prêmio {#fragment-award}
-
-| Atalho/ID | Título |
-|--- |--- |
-| GB | Gameblitz |
-|  GS | Gamestar |
-|  OSC | Oscar |
-
-#### Cidade {#fragment-city}
-
-| Nome | País | População | Categorias |
-|--- |--- |--- |--- |
-| Basileia | Suíça | 172258 | cidade:emea |
-| Berlim | Alemanha | 3669491 | cidade:capital<br>cidade:emea |
-| Bucareste | Romênia | 1821000 |  cidade:capital<br>cidade:emea |
-| São Francisco |  EUA |  883306 |  cidade:praia<br>cidade:na |
-| San Jose |  EUA |  102635 |  cidade:na |
-| Stuttgart |  Alemanha |  634830 |  cidade:emea |
-|  Zurique |  Suíça |  415367 |  cidade:capital<br>cidade:emea |
+   * use `... on`
+      * Consulte [Query de amostra para obter um fragmento de conteúdo de um modelo específico com uma Referência de conteúdo](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL - Query de amostra usando a Amostra da estrutura do fragmento do conteúdo {#graphql-sample-queries-sample-content-fragment-structure}
 
-Consulte os query de amostra para obter ilustrações de criação de query, juntamente com resultados de amostra.
+Consulte estes query de amostra para obter ilustrações de criação de query, juntamente com resultados de amostra.
 
 >[!NOTE]
 >
@@ -183,9 +97,13 @@ Consulte os query de amostra para obter ilustrações de criação de query, jun
 >
 >Por exemplo: `http://localhost:4502/content/graphiql.html`
 
+>[!NOTE]
+>
+>Os query de amostra são baseados na [Exemplo de estrutura de fragmento de conteúdo para uso com GraphQL](#content-fragment-structure-graphql)
+
 ### Query de amostra - Todos os Schemas e tipos de dados disponíveis {#sample-all-schemes-datatypes}
 
-Isso retornará todos os tipos para todos os schemas disponíveis.
+Isso retornará todos os `types` para todos os schemas disponíveis.
 
 **Query de amostra**
 
@@ -269,134 +187,6 @@ Isso retornará todos os tipos para todos os schemas disponíveis.
         {
           "name": "__TypeKind",
           "description": "An enum describing what kind of type a given __Type is"
-        }
-      ]
-    }
-  }
-}
-```
-
-### Query de amostra - Detalhes completos de um CEO de Empresa e funcionários {#sample-full-details-company-ceos-employees}
-
-Usando a estrutura dos fragmentos aninhados, esse query retorna os detalhes completos de um CEO da empresa e de todos os seus funcionários.
-
-**Query de amostra**
-
-```xml
-query {
-  companyList {
-    items {
-      name
-      ceo {
-        _path
-        name
-        firstName
-        awards {
-        id
-          title
-        }
-      }
-      employees {
-       name
-        firstName
-       awards {
-         id
-          title
-        }
-      }
-    }
-  }
-}
-```
-
-**Resultados da amostra**
-
-```xml
-{
-  "data": {
-    "companyList": {
-      "items": [
-        {
-          "name": "Apple Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Marsh",
-              "firstName": "Duke",
-              "awards": []
-            },
-            {
-              "name": "Caulfield",
-              "firstName": "Max",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Little Pony, Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
-            "name": "Smith",
-            "firstName": "Adam",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Croft",
-              "firstName": "Lara",
-              "awards": [
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            },
-            {
-              "name": "Slade",
-              "firstName": "Cutter",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                },
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "NextStep Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Smith",
-              "firstName": "Joe",
-              "awards": []
-            },
-            {
-              "name": "Lincoln",
-              "firstName": "Abraham",
-              "awards": []
-            }
-          ]
         }
       ]
     }
@@ -537,7 +327,7 @@ query {
 }
 ```
 
-### Query de amostra - um fragmento de cidade única {#sample-single-city-fragment}
+### Query de amostra - Um único fragmento de cidade específico {#sample-single-specific-city-fragment}
 
 Este é um query para retornar os detalhes de uma única entrada de fragmento em um local específico no repositório.
 
@@ -613,6 +403,134 @@ Se você criar uma nova variação, chamada &quot;Berlin Center&quot; (`berlin_c
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Query de amostra - Detalhes completos de um CEO de Empresa e funcionários {#sample-full-details-company-ceos-employees}
+
+Usando a estrutura dos fragmentos aninhados, esse query retorna os detalhes completos de um CEO da empresa e de todos os seus funcionários.
+
+**Query de amostra**
+
+```xml
+query {
+  companyList {
+    items {
+      name
+      ceo {
+        _path
+        name
+        firstName
+        awards {
+        id
+          title
+        }
+      }
+      employees {
+       name
+        firstName
+       awards {
+         id
+          title
+        }
+      }
+    }
+  }
+}
+```
+
+**Resultados da amostra**
+
+```xml
+{
+  "data": {
+    "companyList": {
+      "items": [
+        {
+          "name": "Apple Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Marsh",
+              "firstName": "Duke",
+              "awards": []
+            },
+            {
+              "name": "Caulfield",
+              "firstName": "Max",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Little Pony, Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
+            "name": "Smith",
+            "firstName": "Adam",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Croft",
+              "firstName": "Lara",
+              "awards": [
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            },
+            {
+              "name": "Slade",
+              "firstName": "Cutter",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                },
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NextStep Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Smith",
+              "firstName": "Joe",
+              "awards": []
+            },
+            {
+              "name": "Lincoln",
+              "firstName": "Abraham",
+              "awards": []
+            }
           ]
         }
       ]
@@ -1186,7 +1104,13 @@ query {
 
 ## Query de amostra usando o projeto WKND {#sample-queries-using-wknd-project}
 
-Esses query de amostra são baseados no projeto WKND.
+Esses query de amostra são baseados no projeto WKND. Isso tem:
+
+* Modelos de fragmento de conteúdo disponíveis em:
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* Fragmentos de conteúdo (e outro conteúdo) disponíveis em:
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1277,12 +1201,12 @@ Este query interroga:
 
 Este query de amostra interroga:
 
-* para um único fragmento de conteúdo de um determinado modelo
-* para todos os formatos de conteúdo:
-   * HTML
-   * Markdown
-   * Texto sem formatação
-   * JSON 
+* para um único Fragmento de conteúdo do tipo `article` em um caminho específico
+   * dentro desse conteúdo, todos os formatos de conteúdo:
+      * HTML
+      * Markdown
+      * Texto sem formatação
+      * JSON 
 
 **Query de amostra**
 
@@ -1303,7 +1227,40 @@ Este query de amostra interroga:
 }
 ```
 
+### Query de amostra para um modelo de fragmento de conteúdo de um modelo {#sample-wknd-content-fragment-model-from-model}
+
+Este query de amostra interroga:
+
+* para um único fragmento de conteúdo
+   * detalhes do Modelo de fragmento de conteúdo subjacente
+
+**Query de amostra**
+
+```xml
+{
+  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+    item {
+      _path
+      adventureTitle
+      _model {
+        _path
+        title
+      }
+    }
+  }
+}
+```
+
 ### Query de amostra para um fragmento de conteúdo aninhado - Tipo de modelo único{#sample-wknd-nested-fragment-single-model}
+
+Este query interroga:
+
+* para um único Fragmento de conteúdo do tipo `article` em um caminho específico
+   * dentro disso, o caminho e o autor do fragmento referenciado (aninhado)
+
+>[!NOTE]
+>
+>O campo `referencearticle` tem o tipo de Dados `fragment-reference`.
 
 **Query de amostra**
 
@@ -1324,6 +1281,15 @@ Este query de amostra interroga:
 
 ### Query de amostra para um fragmento de conteúdo aninhado - Tipo de vários modelos{#sample-wknd-nested-fragment-multiple-model}
 
+Este query interroga:
+
+* para vários Fragmentos de conteúdo do tipo `bookmark`
+   * com referências de fragmento a outros fragmentos dos tipos de modelo específicos `article` e `adventure`
+
+>[!NOTE]
+>
+>O campo `fragments` tem o tipo de Dados `fragment-reference`, com os modelos `Article`, `Adventure` selecionados.
+
 ```xml
 {
   bookmarkList {
@@ -1343,7 +1309,61 @@ Este query de amostra interroga:
 }
 ```
 
-### Query de amostra para um fragmento de conteúdo de um modelo específico com uma Referência de conteúdo{#sample-wknd-fragment-specific-model-content-reference}
+### Query de amostra para um fragmento de conteúdo de um modelo específico com referências de conteúdo{#sample-wknd-fragment-specific-model-content-reference}
+
+Há dois sabores deste query:
+
+1. Para retornar todas as referências de conteúdo.
+1. Para retornar as referências de conteúdo específicas do tipo `attachments`.
+
+Estes query interrogam:
+
+* para vários Fragmentos de conteúdo do tipo `bookmark`
+   * com referências de conteúdo para outros fragmentos
+
+#### Query de amostra para vários fragmentos de conteúdo com referências pré-definidas {#sample-wknd-multiple-fragments-prefetched-references}
+
+O query a seguir retorna todas as referências de conteúdo usando `_references`:
+
+```xml
+{
+  bookmarkList {
+     _references {
+         ... on ImageRef {
+          _path
+          type
+          height
+        }
+        ... on MultimediaRef {
+          _path
+          type
+          size
+        }
+        ... on DocumentRef {
+          _path
+          type
+          author
+        }
+        ... on ArchiveRef {
+          _path
+          type
+          format
+        }
+    }
+    items {
+        _path
+    }
+  }
+}
+```
+
+#### Query de amostra para vários fragmentos de conteúdo com Anexos {#sample-wknd-multiple-fragments-attachments}
+
+O query a seguir retorna todos os `attachments` - um campo específico (subgrupo) do tipo `content-reference`:
+
+>[!NOTE]
+>
+>O campo `attachments` tem o tipo de Dados `content-reference`, com vários formulários selecionados.
 
 ```xml
 {
@@ -1376,80 +1396,16 @@ Este query de amostra interroga:
 }
 ```
 
-### Query de amostra para vários fragmentos de conteúdo com referências pré-definidas {#sample-wknd-multiple-fragments-prefetched-references}
-
-```xml
-{
-  bookmarkList {
-    _references {
-       ... on ImageRef {
-        _path
-        type
-        height
-      }
-      ... on MultimediaRef {
-        _path
-        type
-        size
-      }
-      ... on DocumentRef {
-        _path
-        type
-        author
-      }
-      ... on ArchiveRef {
-        _path
-        type
-        format
-      }
-    }
-  }
-}
-```
-
-### Query de amostra para uma única variação de Fragmento de conteúdo de um determinado Modelo {#sample-wknd-single-fragment-given-model}
-
-**Query de amostra**
-
-```xml
-{
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
-    item {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
-### Query de amostra para vários Fragmentos de conteúdo de uma determinada localidade {#sample-wknd-multiple-fragments-given-locale}
-
-**Query de amostra**
-
-```xml
-{ 
-  articleList (_locale: "fr") {
-    items {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
 ### Query de amostra para um único fragmento de conteúdo com referência em linha RTE {#sample-wknd-single-fragment-rte-inline-reference}
+
+Este query interroga:
+
+* para um único Fragmento de conteúdo do tipo `bookmark` em um caminho específico
+   * dentro disso, referências em linha do RTE
+
+>[!NOTE]
+>
+>As referências em linha do RTE são hidratadas em `_references`.
 
 **Query de amostra**
 
@@ -1486,7 +1442,37 @@ Este query de amostra interroga:
 }
 ```
 
+### Query de amostra para uma única variação de Fragmento de conteúdo de um determinado Modelo {#sample-wknd-single-fragment-given-model}
+
+Este query interroga:
+
+* para um único Fragmento de conteúdo do tipo `article` em um caminho específico
+   * nesse contexto, os dados relativos à variação: `variation1`
+
+**Query de amostra**
+
+```xml
+{
+  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+    item {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
 ### Query de amostra para uma Variação nomeada de vários Fragmentos de conteúdo de um determinado Modelo {#sample-wknd-variation-multiple-fragment-given-model}
+
+Este query interroga:
+
+* para Fragmentos de conteúdo do tipo `article` com uma variação específica: `variation1`
 
 **Query de amostra**
 
@@ -1506,3 +1492,131 @@ Este query de amostra interroga:
   }
 }
 ```
+
+### Query de amostra para vários Fragmentos de conteúdo de uma determinada localidade {#sample-wknd-multiple-fragments-given-locale}
+
+Este query interroga:
+
+* para Fragmentos de conteúdo do tipo `article` na localidade `fr`
+
+**Query de amostra**
+
+```xml
+{ 
+  articleList (_locale: "fr") {
+    items {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
+## A Amostra da estrutura do fragmento do conteúdo (usada com GraphQL) {#content-fragment-structure-graphql}
+
+Os query de amostra são baseados na seguinte estrutura, que usa:
+
+* Um ou mais, [Amostra de modelos de fragmento de conteúdo](#sample-content-fragment-models-schemas) - formam a base para os schemas GraphQL
+
+* [Amostra de ](#sample-content-fragments) fragmentos de conteúdo com base nos modelos acima
+
+### Modelos de fragmento de conteúdo de amostra (Schemas) {#sample-content-fragment-models-schemas}
+
+Para os query de amostra, usaremos os seguintes Modelos de conteúdo e suas inter-relações (referências ->):
+
+* [Empresa](#model-company)
+->  [Pessoa](#model-person)
+    ->  [Prêmio](#model-award)
+
+* [Cidade](#model-city)
+
+#### Empresa {#model-company}
+
+Os campos básicos que definem a empresa são:
+
+| Nome do campo | Tipo de dados | Referência |
+|--- |--- |--- |
+| Nome da empresa | Texto em linha única |  |
+| CEO | Referência do fragmento (único) | [Person](#model-person) |
+| Funcionários | Referência do fragmento (vários campos) | [Pessoa](#model-person) |
+
+#### Person {#model-person}
+
+Os campos que definem uma pessoa, que também pode ser um funcionário:
+
+| Nome do campo | Tipo de dados | Referência |
+|--- |--- |--- |
+| Nome | Texto em linha única |  |
+| Nome | Texto em linha única |  |
+| Prêmios | Referência do fragmento (vários campos) | [Prêmio](#model-award) |
+
+#### Prêmio {#model-award}
+
+Os campos que definem um prêmio são:
+
+| Nome do campo | Tipo de dados | Referência |
+|--- |--- |--- |
+| Atalho/ID | Texto em linha única |  |
+| Título | Texto em linha única |  |
+
+#### Cidade {#model-city}
+
+Os campos para definir uma cidade são:
+
+| Nome do campo | Tipo de dados | Referência |
+|--- |--- |--- |
+| Nome | Texto em linha única |  |
+| País | Texto em linha única |  |
+| População | Número |  |
+| Categorias | Tags |  |
+
+### Amostra de fragmentos de conteúdo {#sample-content-fragments}
+
+Os seguintes fragmentos são usados para o modelo apropriado.
+
+#### Empresa {#fragment-company}
+
+| Nome da empresa | CEO | Funcionários |
+|--- |--- |--- |
+| Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
+|  Little Pony Inc. | Adam Smith | Lara Croft<br>Escória Cortadora |
+| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
+
+#### Pessoa {#fragment-person}
+
+| Nome | Nome | Prêmios |
+|--- |--- |--- |
+| Lincoln |  Abe |  |
+| Smith | Adam |   |
+| Barra |  Cortador |  Gameblitz<br>Gamestar |
+| pântano |  Duke |   |   |
+|  Smith |  Joe |   |
+| Corte |  Lara | Gamestar |
+| Caulfield |  Máximo |  Gameblitz |
+|  Tarefas |  Steve |   |
+
+#### Prêmio {#fragment-award}
+
+| Atalho/ID | Título |
+|--- |--- |
+| GB | Gameblitz |
+|  GS | Gamestar |
+|  OSC | Oscar |
+
+#### Cidade {#fragment-city}
+
+| Nome | País | População | Categorias |
+|--- |--- |--- |--- |
+| Basileia | Suíça | 172258 | cidade:emea |
+| Berlim | Alemanha | 3669491 | cidade:capital<br>cidade:emea |
+| Bucareste | Romênia | 1821000 |  cidade:capital<br>cidade:emea |
+| São Francisco |  EUA |  883306 |  cidade:praia<br>cidade:na |
+| San Jose |  EUA |  102635 |  cidade:na |
+| Stuttgart |  Alemanha |  634830 |  cidade:emea |
+|  Zurique |  Suíça |  415367 |  cidade:capital<br>cidade:emea |
