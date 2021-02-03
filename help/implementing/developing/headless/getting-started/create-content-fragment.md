@@ -2,9 +2,9 @@
 title: Criando Fragmentos de Conteúdo Guia de Start Rápido Sem Cabeçalho
 description: Os Fragmentos de conteúdo permitem que você crie, prepare e use conteúdo independente de página que pode ser entregue sem cabeçalho por AEM.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: fa2fee3139acd60ea96222752785cf397978a2bc
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Os autores de conteúdo criarão qualquer número de Fragmentos de conteúdo par
 1. Forneça os detalhes do Fragmento do conteúdo no Editor de fragmentos do conteúdo.
 
    ![Editor de conteúdo do fragmento](../assets/content-fragment-edit.png)
-1. Toque ou clique em **Salvar**.
+1. Toque ou clique em **Salvar e fechar**.
 
 Fragmentos de conteúdo podem fazer referência a outros Fragmentos de conteúdo, permitindo uma estrutura de conteúdo aninhada, se necessário.
 
