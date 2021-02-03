@@ -5,10 +5,10 @@ breadcrumb-title: Guia do Assets
 user-guide-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 72%
+source-wordcount: '476'
+ht-degree: 70%
 
 ---
 
@@ -56,6 +56,7 @@ ht-degree: 72%
    + [API HTTP de ativos](mac-api-assets.md)
    + [Suporte a fragmentos de conteúdo na API HTTP de ativos](content-fragments/assets-api-content-fragments.md)
    + [AEM API GraphQL para fragmentos de conteúdo](content-fragments/graphql-api-content-fragments.md)
+   + [Autenticação para Query GraphQL de AEM Remotos em Fragmentos de Conteúdo](content-fragments/graphql-authentication-content-fragments.md)
    + [AEM API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e Query](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [Relatórios de ativos](asset-reports.md)
