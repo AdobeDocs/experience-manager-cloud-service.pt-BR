@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6ea94126d29a470820ee1dc39b239bb10951afac
+source-git-commit: 31e07090e4e3a265269eebce13857f88245788ee
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '691'
 ht-degree: 5%
 
 ---
@@ -74,3 +74,17 @@ A data de lançamento do Cloud Manager no AEM como Cloud Service 2020.12.0 é 10
 ### Correções de erros {#crt-bug-fixes}
 
 * Várias correções de erros feitas nas ferramentas AEM Dispatcher Converter e Repository Modernizer. Consulte [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) e [Modernizador do Repositório](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+
+### Data de lançamento {#release-date-ctt}
+
+A data de lançamento da Content Transfer Tool v1.1.20 é 8 de janeiro de 2021.
+
+### Novidades em [!DNL Content Transfer Tool] {#what-is-new-ctt}
+
+* Os usuários agora podem saber se o Token de acesso expirou passando o mouse sobre o ícone de status na interface do usuário da Ferramenta de transferência de conteúdo (CTT). Eles também serão notificados na interface do usuário Detalhes do Conjunto de Migrações de que não conseguem se conectar à instância do Cloud Service.
+
+### Correções de erros {#ctt-bug-fixes}
+
+* O status da interface do usuário da Ferramenta de transferência de conteúdo (CTT) para um conjunto de migração não persistiu e foi alterado após um período de inatividade. Isso foi corrigido.
+* A opção para registros de visualizações foi desativada se os registros não estivessem disponíveis. Isso foi corrigido e as mensagens foram adicionadas para notificar ao usuário por que os logs estão ausentes.
+* O status da interface do usuário da Ferramenta de transferência de conteúdo mostrava *FALHA* quando o usuário parava uma ingestão. Isso foi corrigido para exibir *PARADO*.
