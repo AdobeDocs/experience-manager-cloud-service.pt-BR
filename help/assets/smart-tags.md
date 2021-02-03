@@ -1,29 +1,54 @@
 ---
-title: Marcar imagens automaticamente com tags geradas por AI
-description: Marque imagens usando serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando  [!DNL Adobe Sensei] serviços.
+title: Marcar ativos automaticamente com tags geradas por AI
+description: Adicione tags a ativos usando serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando  [!DNL Adobe Sensei] serviço.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '2431'
+source-wordcount: '2557'
 ht-degree: 6%
 
 ---
 
 
-# Treinar o Smart Content Service e marcar automaticamente suas imagens {#train-service-tag-assets}
+# Adicione tags inteligentes a seus ativos para pesquisas mais rápidas {#smart-tag-assets-for-faster-search}
 
-As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar seus ativos digitais. Marcar ativos com um vocabulário controlado por taxonomia garante que esses ativos possam ser facilmente identificados e recuperados por pesquisas baseadas em tags.
+As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar seus ativos digitais. Marcar ativos com um vocabulário controlado por taxonomia garante que os ativos possam ser facilmente identificados e recuperados em pesquisas.
 
 Comparado aos vocabulários de linguagem natural, a marcação baseada na taxonomia comercial ajuda a alinhar os ativos a uma empresa empresa e garante que os ativos mais relevantes sejam exibidos nas pesquisas. Por exemplo, um fabricante de carros pode marcar imagens de carros com nomes de modelos para que somente as imagens relevantes sejam exibidas quando pesquisadas para projetar uma campanha promocional.
 
-Em segundo plano, as Tags inteligentes usam uma estrutura de inteligência artificial de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar seu algoritmo de reconhecimento de imagem na estrutura de tags e na taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
+Em segundo plano, as Tags inteligentes usam a estrutura artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar seu algoritmo de reconhecimento de imagem na estrutura de tags e na taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-Para usar a marcação inteligente, conclua as seguintes tarefas:
+## Tipos de ativos suportados {#smart-tags-supported-file-formats}
+
+As Tags inteligentes são aplicadas somente aos tipos de arquivos suportados que geram renderizações nos formatos JPG e PNG. A funcionalidade é compatível com os seguintes tipos de ativos:
+
+| Imagens (tipos MIME) | Ativos baseados em texto (formatos de arquivo) | Ativos de vídeo (formatos de arquivo e codecs) |
+|----|-----|------|
+| image/jpeg | TXT | MP4 (H264/AVC) |
+| image/tiff | RTF | MKV (H264/AVC) |
+| image/png | DITA | MOV (H264/AVC, Motion JPEG) |
+| image/bmp | XML | AVI (indeo4) |
+| image/gif | JSON  | FLV (H264/AVC, vp6f) |
+| image/pjpeg | DOC | WMV (WMV2) |
+| image/x-portable-anymap | DOCX |  |
+| imagem/x-portable-bitmap | PDF |  |
+| image/x-portable-graymap | CSV |  |
+| image/x-portable-pixmap | PPT |  |
+| image/x-rgb | PPTX |  |
+| image/x-xbitmap | VTT |  |
+| image/x-xpixmap | SRT |  |
+| image/x-icon |  |  |
+| image/photoshop |  |  |
+| image/x-photoshop |  |  |
+| image/psd |  |  |
+| image/vnd.adobe.photoshop |  |  |
+
+[!DNL Experience Manager] adiciona automaticamente as Tags inteligentes aos ativos baseados em texto e aos vídeos por padrão. Para adicionar automaticamente Tags inteligentes às imagens, conclua as seguintes tarefas.
 
 * [ [!DNL Adobe Experience Manager] Integração com o Console do desenvolvedor](#integrate-aem-with-aio).
 * [Entenda os modelos de tags e as diretrizes](#understand-tag-models-guidelines).
@@ -31,7 +56,9 @@ Para usar a marcação inteligente, conclua as seguintes tarefas:
 * [Marque seus ativos](#tag-assets) digitais.
 * [Gerencie as tags e pesquisas](#manage-smart-tags-and-searches).
 
-Tags inteligentes são aplicáveis somente para clientes [!DNL Adobe Experience Manager Assets]. As Tags inteligentes estão disponíveis para compra como um complemento para [!DNL Experience Manager].
+>[!TIP]
+>
+>Tags inteligentes são aplicáveis somente para clientes [!DNL Adobe Experience Manager Assets]. As Tags inteligentes estão disponíveis para compra como um complemento para [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -92,7 +119,7 @@ As imagens em seu conjunto de treinamento devem estar em conformidade com as seg
    * um modelo de etiqueta que inclui modelos de carro lançados em 2019 e 2020.
    * vários modelos de tags que incluem os mesmos poucos modelos de carro.
 
-**Imagens usadas para treinar**: Você pode usar as mesmas imagens para treinar diferentes modelos de tags. No entanto, o não associa uma imagem a mais de uma tag em um modelo de tag. Portanto, é possível marcar a mesma imagem com tags diferentes pertencentes a modelos de tags diferentes.
+**Imagens usadas para treinar**: Você pode usar as mesmas imagens para treinar diferentes modelos de tags. No entanto, não associe uma imagem a mais de uma tag em um modelo de tag. É possível marcar a mesma imagem com tags diferentes pertencentes a diferentes modelos de tags.
 
 Não é possível desfazer o treinamento. As diretrizes acima devem ajudá-lo a escolher boas imagens para treinar.
 
@@ -154,15 +181,17 @@ Depois de ter treinado o serviço de Tags inteligentes, é possível acionar o f
    ![start_workflow](assets/start_workflow.png)
 
 1. Selecione o fluxo de trabalho **[!UICONTROL Ativos inteligentes de tags do DAM]** e especifique um título para o fluxo de trabalho.
-1. Clique em **[!UICONTROL Start]**. O fluxo de trabalho aplica suas tags em ativos. Navegue até a pasta de ativos e reveja as tags para verificar se seus ativos estão marcados corretamente. Para obter detalhes, consulte [gerenciar tags inteligentes](#manage-smart-tags-and-searches).
+1. Clique em **[!UICONTROL Start]**. O fluxo de trabalho aplica suas tags em ativos. Navegue até a pasta de ativos e reveja as tags para verificar se os ativos estão marcados corretamente. Para obter detalhes, consulte [gerenciar tags inteligentes](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->Nos ciclos de marcação subsequentes, somente os ativos modificados são marcados novamente com tags treinadas recentemente.No entanto, mesmo ativos inalterados são marcados se a diferença entre os últimos e os atuais ciclos de marcação do fluxo de trabalho de marcação exceder 24 horas. Para workflows de marcação periódica, os ativos inalterados são marcados quando o intervalo de tempo excede 6 meses.
+>Nos ciclos subsequentes de marcação, somente os ativos modificados são marcados novamente com tags recém-treinadas. Entretanto, mesmo ativos inalterados são marcados se a diferença entre os últimos e os atuais ciclos de marcação do fluxo de trabalho de marcação exceder 24 horas. Para workflows de marcação periódica, os ativos inalterados são marcados quando o intervalo de tempo excede 6 meses.
 
 ### Marcar ativos carregados {#tag-uploaded-assets}
 
 O Experience Manager pode marcar automaticamente os ativos que os usuários carregam no DAM. Para fazer isso, os administradores configuram um fluxo de trabalho para adicionar uma etapa disponível de aos ativos de tags inteligentes. Consulte [como ativar a marcação inteligente para ativos carregados](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+
+<!-- TBD: Text-based assets are automatically smart tagged. -->
 
 ## Gerenciar tags inteligentes e pesquisas de ativos {#manage-smart-tags-and-searches}
 
@@ -209,6 +238,8 @@ Tags inteligentes aprimoradas são baseadas em modelos de aprendizado de imagens
 * Incapacidade de reconhecer diferenças sutis nas imagens. Por exemplo, camisas finas versus camisetas comuns.
 * Incapacidade de identificar tags com base em pequenos padrões/partes de uma imagem. Por exemplo, logotipos em camisetas.
 * A marcação é suportada nos idiomas suportados pelo Experience Manager. Para obter uma lista de idiomas, consulte [Notas de versão do Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+
+<!-- TBD: Add limitations related to text-based assets. -->
 
 Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use o Assets Omnisearch (pesquisa de texto completo). Não há predicado de pesquisa separado para tags inteligentes.
 
