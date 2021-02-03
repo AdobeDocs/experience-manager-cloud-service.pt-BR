@@ -2,21 +2,15 @@
 title: Trabalho com fragmentos de conteúdo
 description: Saiba como os Fragmentos de conteúdo no Adobe Experience Manager (AEM) como Cloud Service permitem que você crie, crie, prepare e use conteúdo independente de página.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2027'
 ht-degree: 6%
 
 ---
 
 
 # Trabalho com fragmentos de conteúdo{#working-with-content-fragments}
-
->[!CAUTION]
->
->A API AEM GraphQL para o Delivery de fragmentos de conteúdo está disponível sob solicitação.
->
->Entre em contato com [Suporte ao Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) para habilitar a API do seu AEM como programa Cloud Service.
 
 Com o Adobe Experience Manager (AEM) como um Cloud Service, os Fragmentos de conteúdo permitem que você crie, prepare e [publique conteúdo independente de página](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Eles permitem que você prepare conteúdo pronto para uso em vários locais/em vários canais.
 
@@ -30,12 +24,9 @@ Fragmentos de conteúdo contêm conteúdo estruturado:
    * Complexo
       * Uma combinação de vários campos de tipos de dados variáveis, incluindo texto, número, booleano, dados e tempo, entre outros.
       * Pode ser usado para preparar conteúdo mais estruturado para criação de página ou para delivery para seu aplicativo.
-
-<!--
-  * Nested
-    * The reference data types available allow you to nest your content.
-    * Tends to be used for delivery to your application.
--->
+   * Aninhado
+      * Os tipos de dados de referência disponíveis permitem aninhar o conteúdo.
+      * Tende a ser usada para delivery do aplicativo.
 
 Os fragmentos de conteúdo também podem ser entregues no formato JSON, usando os recursos de exportação do Modelo Sling (JSON) dos componentes principais AEM. Esta forma de delivery:
 
@@ -78,10 +69,7 @@ Fragmentos de conteúdo permitem:
 * Crie pools de conteúdo para uma variedade de canais.
 * Projete variações de conteúdo para canais específicos.
 * Adicione imagens ao texto inserindo ativos (fragmentos de mídia mista).
-
-<!--
-* Create nested content to reflect the complexity of your data.
--->
+* Crie conteúdo aninhado para refletir a complexidade de seus dados.
 
 Esses fragmentos de conteúdo podem ser montados para fornecer experiências em vários canais.
 
@@ -121,11 +109,9 @@ Junto com os recursos de exportação JSON dos componentes principais AEM, esse 
 >
 >AEM também suporta a tradução do conteúdo do fragmento.
 
-<!--
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
--->
+>AEM também suporta a tradução do conteúdo do fragmento. Consulte [Traduzindo ativos](/help/assets/translate-assets.md) para obter mais informações.
 
 ## Tipo de conteúdo {#content-type}
 
@@ -306,6 +292,12 @@ Um fragmento, com seus elementos e variações, pode ser usado para criar conte�
 
 ### Amostra de WKND {#wknd-sample}
 
-As amostras [Site WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) são fornecidas para ajudá-lo a saber mais sobre AEM como Cloud Service. Inclui fragmentos de amostra, que podem ser vistos em:
+As amostras [Site WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) são fornecidas para ajudá-lo a saber mais sobre AEM como Cloud Service.
 
-`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
+O projeto WKND inclui:
+
+* Modelos de fragmento de conteúdo disponíveis em:
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* Fragmentos de conteúdo (e outro conteúdo) disponíveis em:
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
