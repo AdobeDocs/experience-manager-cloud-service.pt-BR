@@ -2,7 +2,7 @@
 title: Metadados - propriedades dos fragmentos
 description: É possível visualização e editar os metadados (propriedades) dos fragmentos de conteúdo.
 translation-type: tm+mt
-source-git-commit: d302df83f3c2f95a5cc46d1d21c5e1376d4d4faf
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 10%
@@ -20,7 +20,7 @@ ht-degree: 10%
 2. Ou:
 
    * Selecione [**Propriedades da Visualização** para abrir as caixas de diálogo](/help/assets/manage-digital-assets.md#editing-properties). Uma vez aberto para exibição, você também pode editar.
-   * Abra o fragmento de conteúdo [para Editar](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) e selecione **Metadados** no painel lateral.
+   * Abra o fragmento de conteúdo para edição e selecione **Metadados** no painel lateral.
 
    ![metadata](assets/cfm-metadata-01.png)
 
