@@ -4,10 +4,10 @@ user-guide-title: Implementação do AEM as a Cloud Service
 breadcrumb-title: Guia de implementação
 user-guide-description: Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento.
 translation-type: tm+mt
-source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
+source-git-commit: e59f3d09a6e7a6007e25e088feb86c25be994bed
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 44%
+source-wordcount: '724'
+ht-degree: 43%
 
 ---
 
@@ -69,6 +69,7 @@ ht-degree: 44%
    + [Fundamentos técnicos AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [API do AEM as a Cloud Service](https://docs.adobe.com/content/help/pt/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Geração de Tokens de acesso para APIs do servidor](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + [Cabeça e Sem Cabeça em AEM](developing/headful-headless.md)
    + Desenvolvimento de pilha completa AEM {#full-stack}
       + [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
       + [Estrutura da IU AEM](developing/introduction/ui-structure.md)
@@ -102,7 +103,6 @@ ht-degree: 44%
       + [Diretrizes da API Java](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Desenvolvimento de AEM híbrido {#hybrid}
       + [Híbrido e SPA com AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [Ativando a exportação JSON para um componente](developing/components/enabling-json-exporter.md)
       + [Introdução SPA e Walkthrough](developing/hybrid/introduction.md)
       + [Tutorial SPA WKND](developing/hybrid/wknd-tutorial.md)
       + [Introdução usando React](developing/hybrid/getting-started-react.md)
@@ -114,8 +114,11 @@ ht-degree: 44%
       + [Componente da página SPA](developing/hybrid/page-component.md)
       + [Modelo dinâmico para mapeamento de componentes](developing/hybrid/model-to-component-mapping.md)
       + [Roteamento de modelo](developing/hybrid/routing.md)
-      + [Iniciar integração](developing/hybrid/launch-integration.md)
+      + [O componente RemotePage](developing/hybrid/remote-page.md)
+      + [Edição de um SPA externo em AEM](developing/hybrid/editing-external-spa.md)
       + [Renderização do lado do servidor](developing/hybrid/ssr.md)
+      + [Ativando a exportação JSON para um componente](developing/components/enabling-json-exporter.md)
+      + [Iniciar integração](developing/hybrid/launch-integration.md)
       + [documentos de referência SPA](developing/hybrid/reference-materials.md)
    + Gerenciamento de experiência headless {#headless}
       + [Sem cabeça e AEM](developing/headless/introduction.md)
