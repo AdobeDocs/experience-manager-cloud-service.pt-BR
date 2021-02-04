@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
+source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '719'
 ht-degree: 5%
 
 ---
@@ -21,9 +21,13 @@ A seguinte versão (2021.2.0) será lançada em 25 de fevereiro de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] como um Cloud Service  {#sites}
 
+### Gerenciamento de conteúdo sem periféricos {#headless}
+
 * **[API GraphQL para o Delivery](/help/assets/content-fragments/graphql-api-content-fragments.md)** de fragmento do conteúdo: Capacidade de query de Fragmentos de Conteúdo usando a sintaxe GraphQL e schemas com base em modelos de Fragmento de Conteúdo, para saída no formato JSON.
 
 * **[Suporte de autenticação para solicitações](/help/assets/content-fragments/graphql-authentication-content-fragments.md)** da API GraphQL: Capacidade de autenticar solicitações de API GraphQL com tokens de acesso para APIs do lado do servidor.
+
+* [O ](/help/implementing/developing/hybrid/remote-page.md) componente RemotePage oferece suporte para exibição e edição de SPA externos em AEM usando.
 
 * Saída JSON aprimorada da API GraphQL, incluindo a capacidade de produzir rich text no formato JSON e localidades.
 
@@ -37,6 +41,9 @@ A seguinte versão (2021.2.0) será lançada em 25 de fevereiro de 2021.
 
 * Capacidade de pré-visualização da saída JSON diretamente no editor de fragmento de conteúdo.
 
+### Aplicativos Web progressivos (PWA) {#pwa}
+
+* [Uma versão de aplicativo da Web progressivo (PWA) de um ](/help/sites-cloud/authoring/features/enable-pwa.md)  sitecan agora pode ser ativada no nível do projeto por meio de uma configuração simples.
 
 ## [!DNL Adobe Experience Manager Assets] como uma  [!DNL Cloud Service] {#assets}
 
