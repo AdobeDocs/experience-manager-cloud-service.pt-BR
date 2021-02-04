@@ -2,9 +2,9 @@
 title: Introdução SPA e Walkthrough
 description: Este artigo apresenta os conceitos de um SPA e percorre o uso de um aplicativo SPA básico para criação, mostrando como ele se relaciona ao editor SPA subjacente.
 translation-type: tm+mt
-source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
+source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1986'
 ht-degree: 0%
 
 ---
@@ -161,74 +161,8 @@ A próxima seção, [Carregando um aplicativo SPA](#loading-a-spa-application), 
 
 1. Use a ferramenta integrada do seu navegador para visualização da fonte da página.
 1. Observe que o conteúdo da fonte é limitado.
-
-   ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>WKND SPA React Home Page</title>
-   
-        <meta name="template" content="spa-page-template"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-   
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-base.min.css" type="text/css">
-   
-    <meta name="theme-color" content="#000000"/>
-    <link rel="icon" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/favicon.ico"/>
-    <link rel="apple-touch-icon" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/logo192.png"/>
-    <link rel="manifest" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/manifest.json"/>
-   
-    <!-- AEM page model -->
-    <meta property="cq:pagemodel_root_url" content="/content/wknd-spa-react/us/en.model.json"/>
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Asar&display=swap" rel="stylesheet"/>
-    <meta property="cq:datatype" content="JSON"/>
-    <meta property="cq:wcmmode" content="edit"/>
-   
-    <link rel="stylesheet" href="/libs/cq/gui/components/authoring/editors/clientlibs/internal/page.min.css" type="text/css">
-    <link rel="stylesheet" href="/etc.clientlibs/wcm/foundation/clientlibs/main.min.css" type="text/css">
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/messaging.min.js"></script>
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/utils.min.js"></script>
-    <script type="text/javascript" src="/libs/granite/author/deviceemulator/clientlibs.min.js"></script>
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/page.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/wcm/foundation/clientlibs/main.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
-   
-    <!--cq{"decorated":false,"type":"cq/cloudconfig/components/scripttags/header","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-header","structurePath":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-header","selectors":null,"servlet":"Script /libs/cq/cloudconfig/components/scripttags/header/header.html","totalTime":2,"selfTime":2}-->
-   
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react.min.css" type="text/css">
-   
-    </head>
-   
-    <body class="page basicpage">
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="spa-root"></div>
-   
-    <script type="text/javascript" src="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react.min.js"></script>
-   
-    <script type="text/javascript" src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-base.min.js"></script>
-   
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/pagemodel/messaging.min.js"></script>
-   
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-author.min.css" type="text/css">
-   
-    <!--cq{"decorated":true,"type":"cq/cloudserviceconfigs/components/servicecomponents","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudservices","selectors":null,"servlet":"Script /libs/cq/cloudserviceconfigs/components/servicecomponents/servicecomponents.jsp","totalTime":2,"selfTime":2}-->
-   
-    <!--cq{"decorated":false,"type":"cq/cloudconfig/components/scripttags/footer","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-footer","structurePath":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-footer","selectors":null,"servlet":"Script /libs/cq/cloudconfig/components/scripttags/footer/footer.html","totalTime":2,"selfTime":2}-->
-   
-    </body>
-    </html>
-    <!--cq{"decorated":false,"type":"wknd-spa-react/components/page","path":"/content/wknd-spa-react/us/en/home/jcr:content","selectors":null,"servlet":"Script /apps/spa-project-core/components/page/page.html","totalTime":39,"selfTime":33}-->
-   ```
-
-   A página não tem nenhum conteúdo em seu corpo. Ele é formado principalmente por folhas de estilo e uma chamada para vários scripts, como `clientlib-react.min.js`.
-
-   Esses scripts são os principais drivers desse aplicativo e são responsáveis pela renderização de todo o conteúdo.
+   * A página não tem nenhum conteúdo em seu corpo. Ele é formado principalmente por folhas de estilo e uma chamada para vários scripts, como `clientlib-react.min.js`.
+   * Esses scripts são os principais drivers desse aplicativo e são responsáveis pela renderização de todo o conteúdo.
 
 1. Use as ferramentas incorporadas do seu navegador para inspecionar a página. Consulte o conteúdo do DOM totalmente carregado.
 
@@ -297,6 +231,14 @@ Na seção a seguir, exploraremos o contrato que permite ao Editor de SPA relaci
    >Esse comportamento difere das páginas renderizadas do lado do servidor no AEM, onde há um elemento `cq` inserido para cada componente editável.
    >
    >Essa abordagem no Editor de SPA elimina a necessidade de inserir elementos personalizados, contando somente com um atributo de dados adicional, tornando a marcação mais simples para o desenvolvedor de front-end.
+
+## Cabeça e Sem Cabeça em AEM {#headful-headless}
+
+SPA pode ser habilitado com níveis flexíveis de integração dentro do AEM, incluindo SPA desenvolvidos e mantidos fora do AEM. Além disso, SPA pode ser aproveitado dentro do AEM e, ao mesmo tempo, usar AEM para fornecer conteúdo para pontos finais adicionais sem interrupções.
+
+>[!TIP]
+>
+>Consulte o documento [Cabeçalho e Sem Cabeça no AEM](/help/implementing/developing/headful-headless.md) para obter mais informações.
 
 ## Próximas etapas {#next-steps}
 
