@@ -3,9 +3,9 @@ title: Compartilhar ativos, pastas e coleções como um link
 description: Este artigo descreve como compartilhar ativos, pastas e coleções dentro de [!DNL Experience Manager Assets] como um hiperlink.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
 >[!NOTE]
 >
 >* Você precisa da permissão Editar ACL na pasta ou no ativo que deseja compartilhar como um link.
->* Antes de compartilhar um link com os usuários, verifique se o Day CQ Mail Service está configurado. Caso contrário, ocorrerá um erro.
+>* Antes de compartilhar um link com os usuários, certifique-se de que [email de saída esteja ativado](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Caso contrário, ocorrerá um erro.
 
 
 1. Na interface do usuário [!DNL Assets], selecione o ativo a ser compartilhado como um link.
