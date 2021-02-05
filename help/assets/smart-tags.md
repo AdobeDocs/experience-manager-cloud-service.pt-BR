@@ -3,15 +3,15 @@ title: Marcar ativos automaticamente com tags geradas por AI
 description: Adicione tags a ativos usando serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando  [!DNL Adobe Sensei] serviço.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '2557'
+source-wordcount: '2799'
 ht-degree: 6%
 
 ---
 
 
-# Adicione tags inteligentes a seus ativos para pesquisas mais rápidas {#smart-tag-assets-for-faster-search}
+# Adicione tags inteligentes a seus ativos para melhorar a experiência de pesquisa {#smart-tag-assets-for-faster-search}
 
 As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar seus ativos digitais. Marcar ativos com um vocabulário controlado por taxonomia garante que os ativos possam ser facilmente identificados e recuperados em pesquisas.
 
@@ -23,25 +23,31 @@ Em segundo plano, as Tags inteligentes usam a estrutura artificialmente intelige
 ![flowchart](assets/flowchart.gif) 
 -->
 
+Você pode marcar os seguintes tipos de ativos:
+
+* **Imagens**: As imagens em muitos formatos são marcadas usando os serviços de conteúdo inteligente da Adobe Sensei. Você [cria um modelo de treinamento](#train-model) e, em seguida, [aplica tags inteligentes](#tag-assets) às imagens.
+* **Ativos** de vídeo: A marcação de vídeo é ativada por padrão em  [!DNL Adobe Experience Manager] como um  [!DNL Cloud Service]. [Os vídeos são ](/help/assets/smart-tags-video-assets.md) marcados automaticamente quando você carrega novos vídeos ou reprocessa os existentes.
+* **Ativos** baseados em texto:  [!DNL Experience Manager Assets] marcar automaticamente os ativos com base em texto suportados quando carregados.
+
 ## Tipos de ativos suportados {#smart-tags-supported-file-formats}
 
-As Tags inteligentes são aplicadas somente aos tipos de arquivos suportados que geram renderizações nos formatos JPG e PNG. A funcionalidade é compatível com os seguintes tipos de ativos:
+As Tags inteligentes são aplicadas aos tipos de arquivos suportados que geram renderizações nos formatos JPG e PNG. A funcionalidade é compatível com os seguintes tipos de ativos:
 
 | Imagens (tipos MIME) | Ativos baseados em texto (formatos de arquivo) | Ativos de vídeo (formatos de arquivo e codecs) |
 |----|-----|------|
-| image/jpeg | TXT | MP4 (H264/AVC) |
-| image/tiff | RTF | MKV (H264/AVC) |
-| image/png | DITA | MOV (H264/AVC, Motion JPEG) |
-| image/bmp | XML | AVI (indeo4) |
+| image/jpeg | CSV | MP4 (H264/AVC) |
+| image/tiff | DOC | MKV (H264/AVC) |
+| image/png | DOCX | MOV (H264/AVC, Motion JPEG) |
+| image/bmp | HTML | AVI (indeo4) |
 | image/gif | JSON  | FLV (H264/AVC, vp6f) |
-| image/pjpeg | DOC | WMV (WMV2) |
-| image/x-portable-anymap | DOCX |  |
-| imagem/x-portable-bitmap | PDF |  |
-| image/x-portable-graymap | CSV |  |
-| image/x-portable-pixmap | PPT |  |
-| image/x-rgb | PPTX |  |
+| image/pjpeg | PDF | WMV (WMV2) |
+| image/x-portable-anymap | PPT |  |
+| imagem/x-portable-bitmap | PPTX |  |
+| image/x-portable-graymap | RTF |  |
+| image/x-portable-pixmap | SRT |  |
+| image/x-rgb | TXT |  |
 | image/x-xbitmap | VTT |  |
-| image/x-xpixmap | SRT |  |
+| image/x-xpixmap | XML |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -62,6 +68,12 @@ As Tags inteligentes são aplicadas somente aos tipos de arquivos suportados que
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
+## Marcação inteligente de ativos baseados em texto {#smart-tag-text-based-assets}
+
+Os ativos com base em texto suportados são marcados automaticamente por [!DNL Experience Manager Assets] quando carregados. Está ativado por padrão. A eficácia das Tags inteligentes não depende da quantidade de texto no ativo, mas das palavras-chave ou entidades relevantes presentes no texto do ativo. Para ativos baseados em texto, as Tags inteligentes são as palavras-chave que aparecem no texto, mas aquelas que melhor descrevem o ativo. Para ativos suportados, [!DNL Experience Manager] já extrai o texto, que é então indexado e é usado para pesquisar os ativos. No entanto, as Tags inteligentes baseadas em palavras-chave no texto fornecem um aspecto de pesquisa dedicado, estruturado e de prioridade mais alta que é usado para melhorar a descoberta de ativos em comparação ao índice de pesquisa total.
+
+Em comparação, para imagens e vídeos, as Tags inteligentes são derivadas com base em algum aspecto visual.
+
 ## Integre [!DNL Experience Manager] ao Console do desenvolvedor do Adobe {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
@@ -72,12 +84,7 @@ Você pode integrar [!DNL Adobe Experience Manager] com as Tags inteligentes usa
 
 ## Entender os modelos e diretrizes de tags {#understand-tag-models-guidelines}
 
-Um modelo de tag é um grupo de tags relacionadas que são por um aspecto visual da imagem. Por exemplo, uma coleção de sapatos pode ter tags diferentes, mas todas elas estão relacionadas a sapatos e podem pertencer ao mesmo modelo de etiqueta. As tags podem se relacionar somente com os diferentes aspectos visuais das imagens. Para entender a representação de conteúdo de um modelo de treinamento em [!DNL Experience Manager], visualize um modelo de treinamento como uma entidade de nível superior composta por um grupo de tags adicionadas manualmente e imagens de exemplo para cada tag. Cada tag pode ser aplicada exclusivamente a uma imagem.
-
-As tags que não podem ser tratadas realisticamente estão relacionadas a:
-
-* Aspectos não visuais e abstratos, como o ano ou a estação de lançamento de um produto, o estado de espírito ou a emoção evocados por uma imagem.
-* Diferenças visuais em produtos como camisas com e sem coleiras ou logotipos de pequenos produtos embutidos em produtos.
+Um modelo de tag é um grupo de tags relacionadas que estão associadas a vários aspectos visuais das imagens que estão sendo marcadas. As tags se relacionam com os aspectos visuais distintos das imagens, de modo que, quando aplicadas, as tags ajudem a pesquisar tipos específicos de imagens. Por exemplo, uma coleção de sapatos pode ter tags diferentes, mas todas elas estão relacionadas a sapatos e podem pertencer ao mesmo modelo de etiqueta. Quando aplicadas, as tags ajudam a encontrar diferentes tipos de sapatos, por exemplo, por cor, por design ou por uso. Para entender a representação de conteúdo de um modelo de treinamento em [!DNL Experience Manager], visualize um modelo de treinamento como uma entidade de nível superior composta por um grupo de tags adicionadas manualmente e imagens de exemplo para cada tag. Cada tag pode ser aplicada exclusivamente a uma imagem.
 
 Antes de criar um modelo de tag e treinar o serviço, identifique um conjunto de tags exclusivas que descrevam melhor os objetos nas imagens no contexto de sua empresa. Certifique-se de que os ativos no conjunto preparado estejam em conformidade com [as diretrizes de treinamento](#training-guidelines).
 
@@ -189,9 +196,7 @@ Depois de ter treinado o serviço de Tags inteligentes, é possível acionar o f
 
 ### Marcar ativos carregados {#tag-uploaded-assets}
 
-O Experience Manager pode marcar automaticamente os ativos que os usuários carregam no DAM. Para fazer isso, os administradores configuram um fluxo de trabalho para adicionar uma etapa disponível de aos ativos de tags inteligentes. Consulte [como ativar a marcação inteligente para ativos carregados](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
-
-<!-- TBD: Text-based assets are automatically smart tagged. -->
+[!DNL Experience Manager] pode marcar automaticamente os ativos que os usuários carregam no DAM. Para fazer isso, os administradores configuram um fluxo de trabalho para adicionar uma etapa disponível de aos ativos de tags inteligentes. Consulte [como ativar a marcação inteligente para ativos carregados](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
 ## Gerenciar tags inteligentes e pesquisas de ativos {#manage-smart-tags-and-searches}
 
@@ -231,17 +236,21 @@ Os resultados da pesquisa que correspondem a todos os termos de pesquisa nos cam
 1. corresponde a `woman running` em tags inteligentes.
 1. corresponde de `woman` ou de `running` em tags inteligentes.
 
-### Limitações de marcação {#limitations}
+## Limitações de marcação e práticas recomendadas {#limitations}
 
-Tags inteligentes aprimoradas são baseadas em modelos de aprendizado de imagens de marca e suas tags. Esses modelos nem sempre são perfeitos para identificar tags. A versão atual das Tags inteligentes tem as seguintes limitações:
+A marcação inteligente aprimorada é baseada em modelos de aprendizado de imagens e suas tags. Esses modelos nem sempre são perfeitos para identificar tags. A versão atual das Tags inteligentes tem as seguintes limitações:
 
 * Incapacidade de reconhecer diferenças sutis nas imagens. Por exemplo, camisas finas versus camisetas comuns.
 * Incapacidade de identificar tags com base em pequenos padrões/partes de uma imagem. Por exemplo, logotipos em camisetas.
-* A marcação é suportada nos idiomas suportados pelo Experience Manager. Para obter uma lista de idiomas, consulte [Notas de versão do Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* A marcação é suportada nos idiomas compatíveis com [!DNL Experience Manager]. Para obter uma lista de idiomas, consulte [Notas de versão do Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* As tags que não são tratadas realisticamente estão relacionadas a:
+
+   * Aspectos não visuais e abstratos, como o ano ou a estação de lançamento de um produto, o estado de espírito ou a emoção evocados por uma imagem, a conotação subjetiva de um vídeo e assim por diante.
+   * Diferenças visuais em produtos como camisas com e sem coleiras ou logotipos de pequenos produtos embutidos em produtos.
 
 <!-- TBD: Add limitations related to text-based assets. -->
 
-Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use o Assets Omnisearch (pesquisa de texto completo). Não há predicado de pesquisa separado para tags inteligentes.
+Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use o [!DNL Assets] Omnisearch (pesquisa de texto completo). Não há predicado de pesquisa separado para tags inteligentes.
 
 >[!NOTE]
 >
