@@ -3,9 +3,9 @@ title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados por [!DNL Experience Manager Assets] como a [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '818'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 Além disso, [!DNL Experience Manager Assets] oferece suporte estendido para gerar pré-visualizações e execuções e extrair metadados e texto para indexação de texto completo. Este suporte estendido é fornecido usando [ativos microservices](asset-microservices-configure-and-use.md).
 
-Os destaques da conversão de ativos usando microserviços de ativos incluem:
+Os destaques para conversão de ativos usando microserviços de ativos incluem:
 
 * As teclas [formatos de arquivo Adobe](#adobe-formats) produzidas por aplicativos e serviços Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] ou PDF.
 * Tecla [formatos de arquivo de imagem](#image-formats).
@@ -25,7 +25,7 @@ Os destaques da conversão de ativos usando microserviços de ativos incluem:
 * Formatos comuns de [documento](#document-formats), incluindo os formatos Microsoft Office e Open Documento.
 * Grande variedade de formatos de [vídeo](#video-formats) e [áudio.](#audio-formats)
 
-A legenda a seguir descreve o nível de suporte.
+A legenda a seguir descreve o nível de suporte para cada formato.
 
 | Nível de suporte | Descrição |
 | ------------- | --------------------------- |
@@ -231,4 +231,5 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 >[!MORELIKETHIS]
 >
 >* [Processamento de ativos usando microserviços de ativos](asset-microservices-overview.md)
+>* [Formatos de arquivo suportados para a marcação inteligente de ativos baseados em texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
