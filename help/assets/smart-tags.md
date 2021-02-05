@@ -3,9 +3,9 @@ title: Marcar ativos automaticamente com tags geradas por AI
 description: Adicione tags a ativos usando serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando  [!DNL Adobe Sensei] serviço.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2807'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ Você pode marcar os seguintes tipos de ativos:
 
 * **Imagens**: As imagens em muitos formatos são marcadas usando os serviços de conteúdo inteligente da Adobe Sensei. Você [cria um modelo de treinamento](#train-model) e, em seguida, [aplica tags inteligentes](#tag-assets) às imagens.
 * **Ativos** de vídeo: A marcação de vídeo é ativada por padrão em  [!DNL Adobe Experience Manager] como um  [!DNL Cloud Service]. [Os vídeos são ](/help/assets/smart-tags-video-assets.md) marcados automaticamente quando você carrega novos vídeos ou reprocessa os existentes.
-* **Ativos** baseados em texto:  [!DNL Experience Manager Assets] marcar automaticamente os ativos com base em texto suportados quando carregados.
+* **Ativos** baseados em texto:  [!DNL Experience Manager Assets] marcar automaticamente os ativos com base em texto suportados quando carregados. Saiba mais sobre [a marcação inteligente de ativos baseados em texto](#smart-tag-text-based-assets).
 
 ## Tipos de ativos suportados {#smart-tags-supported-file-formats}
 
