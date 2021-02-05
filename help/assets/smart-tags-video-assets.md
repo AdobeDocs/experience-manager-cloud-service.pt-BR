@@ -2,9 +2,9 @@
 title: Marcar com tags inteligentes seus ativos de vídeo
 description: O Experience Manager adiciona automaticamente tags inteligentes contextuais e descritivas aos vídeos usando [!DNL Adobe Sensei].
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 A crescente necessidade de novos conteúdos exige esforços manuais reduzidos para proporcionar experiências digitais atraentes em breve. [!DNL Adobe Experience Manager] como um  [!DNL Cloud Service] suporte à marcação automática de ativos de vídeo usando inteligência artificial. Marcar os vídeos manualmente pode ser demorado. Entretanto, o recurso de marcação inteligente de vídeo com [!DNL Adobe Sensei] usa modelos de inteligência artificial para analisar o conteúdo do vídeo e adicionar tags aos ativos do vídeo. Dessa forma, reduz o tempo para que os usuários do DAM forneçam experiências avançadas aos seus clientes. O serviço de aprendizado da máquina gera dois conjuntos de tags para um vídeo. Enquanto, um conjunto corresponde a objetos, cenas e atributos nesse vídeo; o outro conjunto está relacionado a ações como beber, correr e correr.
 
-A marcação automática de ativos de vídeo ocorre como processamento de ativos padrão (junto com a criação de miniaturas e a extração de metadados) depois que um vídeo é carregado ou quando um novo processamento é acionado. As tags inteligentes são exibidas em ordem decrescente de sua [pontuação de confiança](#confidence-score-video-tag) no ativo [!UICONTROL Propriedades]. A marcação de vídeo está ativada por padrão em [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. No entanto, você pode [optar por não participar da marcação inteligente de vídeo](#opt-out-video-smart-tagging) em uma pasta.
+A marcação de vídeo está ativada por padrão em [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. No entanto, você pode [optar por não participar da marcação inteligente de vídeo](#opt-out-video-smart-tagging) em uma pasta. Os vídeos são marcados automaticamente quando você carrega novos vídeos ou reprocessa os existentes. [!DNL Experience Manager] também cria as miniaturas e extrai metadados dos arquivos de vídeo. As tags inteligentes são exibidas em ordem decrescente de sua [pontuação de confiança](#confidence-score-video-tag) no ativo [!UICONTROL Propriedades].
 
 ## Vídeos de marcação inteligente no upload {#smart-tag-assets-on-ingestion}
 
