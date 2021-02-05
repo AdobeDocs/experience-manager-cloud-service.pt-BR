@@ -2,9 +2,9 @@
 title: CDN no AEM as a Cloud Service
 description: CDN no AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
+source-git-commit: f4ac8168dcf394fa66460e6f4cffaff0ee6fdbab
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '607'
 ht-degree: 5%
 
 ---
@@ -18,14 +18,14 @@ A CDN gerenciada AEM atenderá aos requisitos de desempenho e segurança da maio
 
 ## AEM Managed CDN {#aem-managed-cdn}
 
-Siga as seções abaixo para usar a interface do usuário de autoatendimento do Cloud Manager para se preparar para o delivery de conteúdo usando a CDN predefinida do Adobe:
+Siga as seções abaixo para usar a interface do usuário de autoatendimento do Cloud Manager para se preparar para o delivery de conteúdo usando a CDN predefinida do AEM:
 
 1. [Gerenciamento de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Gerenciamento de nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **Restrição de tráfego**
 
-Por padrão, para uma configuração de CDN gerenciada pelo Adobe, todo o tráfego público pode chegar ao serviço de publicação, tanto para ambientes de produção quanto de não produção (desenvolvimento e estágio). Se você deseja limitar o tráfego ao serviço de publicação de um determinado ambiente (por exemplo, limitar o armazenamento temporário por um intervalo de endereços IP), é possível fazer isso de uma forma de autoatendimento por meio da interface do usuário do Cloud Manager.
+Por padrão, para uma configuração de CDN gerenciada por AEM, todo o tráfego público pode chegar ao serviço de publicação, tanto para ambientes de produção quanto de não produção (desenvolvimento e estágio). Se você deseja limitar o tráfego ao serviço de publicação de um determinado ambiente (por exemplo, limitar o armazenamento temporário por um intervalo de endereços IP), é possível fazer isso de uma forma de autoatendimento por meio da interface do usuário do Cloud Manager.
 
 Consulte [Gerenciando Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) para saber mais.
 
@@ -35,7 +35,7 @@ Consulte [Gerenciando Listas de permissões IP](/help/implementing/cloud-manager
 
 ## O CDN do cliente aponta para AEM CDN gerenciada {#point-to-point-CDN}
 
-Se um cliente precisar usar o CDN existente, ele poderá gerenciá-lo e apontá-lo para o CDN gerenciado pela Adobe, desde que:
+Se um cliente precisar usar sua CDN existente, ele poderá gerenciá-la e apontá-la para a CDN gerenciada AEM, desde que:
 
 * O cliente deve ter um CDN existente que seria oneroso substituí-lo.
 * O cliente deve gerenciá-lo.
@@ -46,19 +46,19 @@ Se um cliente precisar usar o CDN existente, ele poderá gerenciá-lo e apontá-
 Instruções de configuração:
 
 1. Defina o cabeçalho `X-Forwarded-Host` com o nome do domínio.
-1. Defina o cabeçalho do host com o domínio da origem, que é a entrada do Adobe CDN. O valor deve vir do Adobe.
+1. Defina o cabeçalho Host com o domínio de origem, que é a entrada do AEM CDN. O valor deve vir do Adobe.
 1. Envie o cabeçalho SNI para a origem. Como o cabeçalho Host, o cabeçalho sni deve ser o domínio de origem.
 1. Defina `X-Edge-Key`, que é necessário para rotear o tráfego corretamente para os servidores AEM. O valor deve vir do Adobe.
 
 Antes de aceitar o tráfego ao vivo, você deve validar com o suporte ao cliente Adobe que o roteamento de tráfego completo está funcionando corretamente.
 
-Existe um potencial pequeno impacto no desempenho devido ao lúpulo extra, embora o salto da CDN do cliente para a CDN gerenciada pela Adobe provavelmente seja eficiente.
+Existe um pequeno impacto no desempenho devido ao salto extra, embora os saltos da CDN do cliente para a CDN gerenciada AEM provavelmente serão eficientes.
 
 Observe que essa configuração de CDN do cliente é compatível com a camada de publicação, mas não na frente da camada do autor.
 
 ## Cabeçalhos de localização geográfica {#geo-headers}
 
-A CDN gerenciada pelo Adobe adicionará cabeçalhos a cada solicitação com:
+A CDN gerenciada AEM adicionará cabeçalhos a cada solicitação com:
 
 * código do país: `x-aem-client-country`
 * código do continente: `x-aem-client-continent`
