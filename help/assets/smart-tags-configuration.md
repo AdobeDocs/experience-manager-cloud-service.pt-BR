@@ -3,10 +3,10 @@ title: Tags inteligentes aprimoradas
 description: Aplique tags comerciais contextuais e descritivas usando o serviço de IA e aprendizado de máquina do Adobe Sensei para melhorar a descoberta de ativos e a velocidade do conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 97%
+source-wordcount: '1040'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ A funcionalidade Tag inteligentes está disponível para compra como suplemento 
 
 >[!IMPORTANT]
 >
->As novas implantações [!DNL Experience Manager Assets] são integradas com [!DNL Adobe Developer Console] por padrão. Ajuda a configurar a funcionalidade de tags inteligentes mais rapidamente. Nas implantações existentes, os administradores seguem estas etapas para configurar a integração.
+>[!DNL Experience Manager Assets] as implantações criadas após  [agosto de 2020 ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) são integradas  [!DNL Adobe Developer Console] por padrão. Ajuda a configurar a funcionalidade de tags inteligentes mais rapidamente. Nas implantações mais antigas, os administradores podem seguir as etapas a seguir para configurar a integração.
 
 ## Integração com o Console do desenvolvedor {#aio-integration}
 
@@ -109,7 +109,7 @@ Quando o certificado expira, ele deixa de ser confiável. Para adicionar um novo
 
 1. Acesse [https://console.adobe.io](https://console.adobe.io) e vá para o serviço existente no Projeto. Faça upload do novo certificado e configure-o. Para obter mais informações sobre configuração, consulte as instruções em [Criar integração com o Console do desenvolvedor](#create-aio-integration).
 
-## Habilitar marcação inteligente para ativos recém-carregados (opcional) {#enable-smart-tagging-for-uploaded-assets}
+## Habilitar marcação automática quando os ativos forem carregados (Opcional) {#enable-smart-tagging-for-uploaded-assets}
 
 1. No [!DNL Experience Manager], clique em **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
 1. Na página **[!UICONTROL Modelos de fluxo de trabalho]**, selecione o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização DAM]**.
