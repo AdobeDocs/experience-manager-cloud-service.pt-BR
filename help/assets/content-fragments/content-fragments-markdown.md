@@ -2,9 +2,9 @@
 title: Markdown
 description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você escreva conteúdo facilmente.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 2ab82c18fedd5e49a9aa1bcb0a774f55327d9b56
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 4%
 
 ---
@@ -188,7 +188,7 @@ As escapadas de barra invertida estão disponíveis para os seguintes caracteres
 
     `\ backslash`
 
-    &#39;backtick&#39;
+    `` ` backtick``
 
     `* asterisk`
 
