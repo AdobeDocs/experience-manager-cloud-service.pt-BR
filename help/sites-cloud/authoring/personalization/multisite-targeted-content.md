@@ -2,9 +2,9 @@
 title: Trabalhar com conteúdo direcionado em vários sites
 description: Se você precisar gerenciar conteúdo direcionado, como atividades, experiências e ofertas entre seus sites, é possível aproveitar o suporte multisite integrado do AEM para conteúdo direcionado
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2915'
 ht-degree: 88%
 
 ---
@@ -52,6 +52,7 @@ Um site ou uma live copy se vincula a uma área que contém as atividades que pr
 >
 >* Quando você usa implantações ou cópias em tempo real, é necessário usar uma licença do MSM.
 >* Quando você usa a sincronização com o Adobe Target, é necessária uma licença do Adobe Target.
+
 >
 
 
@@ -188,9 +189,9 @@ Para criar uma área como uma live copy:
 
 1. No menu suspenso **Configurações de implantação**, selecione a configuração apropriada.
 
-   Consulte Configurações de implementação instaladas para obter descrições de cada opção. <!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   Consulte [Configurações de implementação instaladas](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations) para obter descrições de cada opção.
 
-   Consulte Criação e sincronização de cópias em tempo real para obter mais informações sobre cópias em tempo real. <!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   Consulte [Criação e sincronização de cópias em tempo real](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html) para obter mais informações sobre cópias em tempo real.
 
    >[!NOTE]
    >
@@ -239,6 +240,7 @@ Uma atividade herdada de outro site é marcada em verde ao lado do seu nome. Uma
 >
 >* Apenas é possível suspender ou desconectar cópias em tempo real em uma atividade.
 >* Não é necessário suspender ou desconectar cópias em tempo real para estender uma atividade herdada. Você sempre pode criar **novas** experiências e ofertas locais para essa atividade. Se quiser modificar uma atividade existente, será necessário suspender a herança.
+
 >
 
 
