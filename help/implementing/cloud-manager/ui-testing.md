@@ -2,9 +2,9 @@
 title: Teste da interface de usuário - Cloud Services
 description: Teste da interface de usuário - Cloud Services
 translation-type: tm+mt
-source-git-commit: bf3fb5178bc2ae72e19ecc1de82b08fac5089ecf
+source-git-commit: ea0c9675ca03b1d247c7e5fd13e03072fb4a13ae
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -12,12 +12,11 @@ ht-degree: 0%
 
 # Teste da interface de usuário {#ui-testing}
 
->[!CAUTION]
->
->Este recurso ainda não está disponível.
-
-
 Os testes da interface do usuário são testes baseados em Selenium empacotados em uma imagem da Docker para permitir uma ampla escolha em linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia desenvolvida a partir da Selenium). A imagem do Docker pode ser criada com ferramentas padrão, mas deve respeitar certas convenções durante sua execução. Ao executar a imagem do Docker, um servidor Selenium é automaticamente provisionado. As convenções de tempo de execução descritas abaixo permitem que seu código de teste acesse o servidor Selenium e as instâncias de AEM em teste.
+
+>[!NOTE]
+> Os pipeline de estágio e de produção criados antes de 10 de fevereiro de 2021 precisam ser atualizados para que os testes de interface sejam usados, conforme descrito nesta página.
+> Consulte [Configurando o pipeline CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) para obter informações sobre a configuração do pipeline.
 
 ## Criando testes de interface de usuário {#building-ui-tests}
 
