@@ -2,9 +2,9 @@
 title: Gerenciamento de predefinições de imagens
 description: Entenda as predefinições de imagens e saiba como criar, modificar e gerenciar predefinições de imagens.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3607'
+source-wordcount: '3647'
 ht-degree: 11%
 
 ---
@@ -381,7 +381,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     </ul>
     <div>
       A nitidez está descrita em
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Apagar imagens</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">Usando o ajuste de nitidez de imagem com AEM vídeo Dynamic Media</a>, no tópico <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Apagar uma imagem</a> Ajuda on-line e em <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Práticas recomendadas para aumentar a nitidez de imagens no Dynamic Media Classic</a> PDF disponível para download.
     </div> </td>
   </tr>
   <tr>
