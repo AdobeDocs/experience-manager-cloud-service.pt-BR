@@ -2,9 +2,9 @@
 title: Sobre Perfis de imagem Dynamic Media e Perfis de vídeo
 description: Um Perfil de imagem ou um Perfil de vídeo é uma receita para quais opções se aplicam aos ativos que você carrega em uma pasta. Por exemplo, você pode especificar qual codificação de vídeo aplicar aos ativos de vídeo do Dynamic Media você carrega. Ou qual Perfil de imagem aplicar aos ativos de imagem do Dynamic Media para que eles sejam cortados corretamente.
 translation-type: tm+mt
-source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
+source-git-commit: dfaaafce8e9a7f0d90e4c3d6967c8236d48e6e40
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1278'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Consulte também [perfis de metadados](/help/assets/metadata-profiles.md).
 
 Você deve ter direitos de Administrador para criar, editar e excluir Perfis de imagem Dynamic Media ou Perfis de vídeo Dynamic Media.
 
-Depois de criar o Perfil de imagem ou o Perfil de vídeo, atribua-o a uma ou mais pastas usadas como destino para os ativos do Dynamic Media carregados recentemente.
+Depois de criar o Perfil de imagem ou o Perfil de vídeo, atribua-o a uma ou mais pastas usadas para os ativos do Dynamic Media carregados recentemente.
 
 Consulte também [Práticas recomendadas para organizar seus ativos digitais para usar Perfis de imagem ou Perfis de vídeo](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
@@ -39,15 +39,15 @@ Você pode reprocessar ativos em uma pasta que já tenha um Perfil Dynamic Media
 
 Por exemplo, suponha que você tenha criado um Perfil de imagem Dynamic Media e o atribuiu a uma pasta. Todos os ativos de imagem carregados na pasta tinham automaticamente o Perfil de imagem aplicado aos ativos. No entanto, depois você decide adicionar uma nova proporção de recorte inteligente ao Perfil de imagem. Agora, em vez de ter selecionado e carregado novamente os ativos para a pasta, basta executar o *Scene7: Reprocessar o fluxo de trabalho Ativos*.
 
-Você pode executar o fluxo de trabalho de reprocessamento em um ativo cujo processamento falhou na primeira vez. Assim, mesmo se você não tiver editado um Perfil de imagem ou um perfil de vídeo, ou se já tiver aplicado um Perfil de imagem ou um Perfil de vídeo, ainda poderá executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
+Você pode executar o fluxo de trabalho de reprocessamento em um ativo cujo processamento falhou na primeira vez. Mesmo se você não tiver editado um Perfil de imagem ou um perfil de vídeo ou se já tiver aplicado um Perfil de imagem ou um Perfil de vídeo, ainda poderá executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
 
-Como opção, você pode ajustar o tamanho do lote do fluxo de trabalho de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Quando você executa o _Scene7: Fluxo de trabalho Reprocessar ativos_ em uma pasta, os ativos são agrupados em lotes e, em seguida, enviados para o servidor Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados em AEM. Se o tamanho do lote for muito grande, pode ocorrer um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta ao servidor Dynamic Media.
+Como opção, você pode ajustar o tamanho do lote do fluxo de trabalho de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Quando você executa o _Scene7: Fluxo de trabalho Reprocessar ativos_ em uma pasta, os ativos são agrupados em lotes e, em seguida, enviados para o servidor Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados em AEM. Se o tamanho do lote for grande, você pode experimentar um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, isso pode causar muitas viagens de ida e volta ao servidor Dynamic Media.
 
 Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#adjusting-load).
 
 >[!NOTE]
 >
->Se você estiver realizando uma migração em massa de ativos do Dynamic Media Classic para o Experience Manager, deverá ativar o agente de replicação Migração no servidor Dynamic Media. Quando a migração estiver concluída, desative o agente.
+>Se você estiver realizando uma migração em massa de ativos do Dynamic Media Classic para o Experience Manager, ative o agente de replicação Migração no servidor Dynamic Media. Quando a migração estiver concluída, desative o agente.
 >
 >O agente de publicação de Migração deve estar desabilitado no servidor Dynamic Media para que o fluxo de trabalho de Reprocessamento funcione como esperado.
 
@@ -60,16 +60,16 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 **Para reprocessar ativos Dynamic Media em uma pasta**:
 1. No Adobe Experience Manager, na página Ativos, navegue até uma pasta de ativos do Dynamic Media que tenha um Perfil de Imagem ou um Perfil de Vídeo atribuído a ele e para o qual você deseja aplicar o Scene7 **: Reprocessar o fluxo de trabalho do Asset**,
 
-   As pastas que tiverem um Perfil de imagem ou um Perfil de vídeo já atribuídos a ele serão indicadas pela exibição do nome do perfil logo abaixo do nome da pasta na Visualização de placa.
+   As pastas que tiverem um Perfil de imagem ou um Perfil de vídeo atribuído a ele terão o nome do perfil exibido logo abaixo do nome da pasta na Visualização da placa.
 
 1. Selecione uma pasta.
 
    * O fluxo de trabalho considera todos os arquivos na pasta selecionada, recursivamente.
    * Se houver uma ou mais subpastas com ativos na pasta selecionada principal, o fluxo de trabalho reprocessará cada ativo na hierarquia de pastas.
-   * Como prática recomendada, você deve evitar executar esse fluxo de trabalho em uma hierarquia de pastas que tenha mais de 1000 ativos.
+   * Como prática recomendada, evite executar esse fluxo de trabalho em uma hierarquia de pastas que tenha mais de 1000 ativos.
 
 1. Próximo ao canto superior esquerdo da página, na lista suspensa, clique em **[!UICONTROL Linha do tempo]**.
-1. Perto do canto inferior esquerdo da página, à direita do campo Comentário, clique no ícone de carrinho ( **^** ) .
+1. Próximo ao canto inferior esquerdo da página, à direita do campo [!UICONTROL Comentário], toque no ícone de quilate ( **^** ) .
 
    ![Reprocessar fluxo de trabalho de ativos 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
@@ -85,9 +85,9 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento {#adjusting-load}
 
-(Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por tarefa. O tamanho ideal do lote é regido pelo tamanho médio do ativo e pelos tipos MIME de ativos nos quais o reprocessamento é executado. Um valor mais alto significa que você terá muitos arquivos em um único trabalho de reprocessamento. Dessa forma, o banner de processamento permanece nos ativos do Experience Manager por mais tempo. No entanto, se o tamanho médio do arquivo for pequeno-1 MB ou menos-Adobe, você recomenda aumentar o valor para várias centenas, mas nunca mais que 1000. Se o tamanho médio do arquivo for grande, centenas de megabytes-Adobe recomenda que você reduza o tamanho do lote para até 10.
+(Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por tarefa. O tamanho ideal do lote é regido pelo tamanho médio do ativo e pelos tipos MIME de ativos nos quais o reprocessamento é executado. Um valor mais alto significa que você tem muitos arquivos em um único trabalho de reprocessamento. Portanto, o banner de processamento permanece nos ativos do Experience Manager por mais tempo. No entanto, se o tamanho médio do arquivo for pequeno-1 MB ou menos-Adobe, você recomenda aumentar o valor para várias centenas, mas nunca mais que 1000. Se o tamanho médio do arquivo for grande, centenas de megabytes-Adobe recomenda que você reduza o tamanho do lote para até 10.
 
-**Como opção, ajuste o tamanho do lote do fluxo de trabalho de reprocessamento**
+**Para ajustar opcionalmente o tamanho do lote do fluxo de trabalho** de reprocessamento:
 
 1. No Experience Manager, toque em **[!UICONTROL Adobe Experience Manager]** para acessar o console de navegação global e, em seguida, toque no ícone **[!UICONTROL Ferramentas]** (martelo) > **[!UICONTROL Fluxo de trabalho > Modelos]**.
 1. Na página Modelos de fluxo de trabalho, em Visualização de cartão ou Visualização de Lista, selecione **[!UICONTROL Scene7: Reprocessar Ativos]**.
