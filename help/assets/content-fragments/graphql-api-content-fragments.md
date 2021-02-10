@@ -2,9 +2,9 @@
 title: AEM API GraphQL para uso com Fragmentos de conteúdo
 description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) como um Cloud Service com a API AEM GraphQL para o Delivery de conteúdo sem cabeçalho.
 translation-type: tm+mt
-source-git-commit: 47ed0f516b724c4d9a966bd051a022f322acb08e
+source-git-commit: 20f90d46d24fa211d51ef4b59bb56f4b9f963bc3
 workflow-type: tm+mt
-source-wordcount: '3192'
+source-wordcount: '3167'
 ht-degree: 1%
 
 ---
@@ -218,7 +218,9 @@ Isso fornece recursos como realce de sintaxe, preenchimento automático, sugest�
 
 A interface do usuário do GraphiQL pode ser instalada em AEM com um pacote dedicado: o pacote [GraphiQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip).
 
-Consulte o pacote **README** para obter detalhes completos; incluindo detalhes completos de como ele pode ser instalado em uma instância AEM - em vários cenários.
+<!--
+See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
+-->
 
 ## Casos de uso para Ambientes de autor e publicação {#use-cases-author-publish-environments}
 
