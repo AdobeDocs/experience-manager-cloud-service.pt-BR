@@ -2,9 +2,9 @@
 title: Práticas recomendadas para otimização da qualidade de imagens
 description: Saiba mais sobre as práticas recomendadas que você pode usar no Dynamic Media para otimizar a qualidade de seus ativos de imagem.
 translation-type: tm+mt
-source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1474'
 ht-degree: 5%
 
 ---
@@ -40,9 +40,9 @@ Como prática recomendada para dimensionamento de imagem, use `&wid=<value>&hei=
 
 O ajuste da nitidez da imagem é o aspecto mais complexo do controle de imagens em seu site, e onde muitos erros são cometidos. Aproveite o tempo para saber mais sobre como a nitidez e a máscara de nitidez funcionam na AEM, consultando os seguintes recursos úteis:
 
-White paper de práticas recomendadas [O ajuste de nitidez de imagens no Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) também se aplica a AEM.
+* White paper de práticas recomendadas [O ajuste de nitidez de imagens no Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) também se aplica a AEM.
 
-Na TV Adobe, assista [Nitidez de uma imagem com máscara nítida](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+* Assista [Usando o ajuste de nitidez de imagem com AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
 Com o AEM, você pode tornar as imagens mais nítidas na ingestão, no delivery ou em ambos. Entretanto, na maioria dos casos, é necessário aumentar a nitidez das imagens usando apenas um método ou outro, mas não ambos. O compartilhamento de imagens no delivery, em um URL, geralmente oferece os melhores resultados.
 
