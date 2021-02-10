@@ -2,9 +2,9 @@
 title: Integração dos visualizadores do Dynamic Media ao Adobe Analytics e ao Adobe Launch
 description: A extensão do Dynamic Media Viewers para Adobe Launch, juntamente com o lançamento do Dynamic Media Viewers 5.13, permite que os clientes do Dynamic Media, do Adobe Analytics e do Adobe Launch usem eventos e dados específicos dos Dynamic Media Viewers na configuração do Adobe Launch.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '6628'
+source-wordcount: '6626'
 ht-degree: 17%
 
 ---
@@ -398,7 +398,7 @@ A tabela a seguir lista eventos do Dynamic Media Viewer e seus argumentos suport
 
 Caso ainda não o tenha feito, o Adobe recomenda que você analise toda a documentação antes desta seção para entender a integração completa.
 
-Esta seção explica as etapas de configuração necessárias para integrar os visualizadores Dynamic Media ao Adobe Analytics e Adobe Analytics para áudio e vídeo. Embora seja possível usar a extensão Dynamic Media Viewers para outros fins na inicialização do Adobe, esses cenários não são abordados nesta documentação.
+Esta seção explica as etapas de configuração necessárias para integrar os visualizadores Dynamic Media ao Adobe Analytics e Adobe Analytics para áudio e vídeo. Embora seja possível usar a extensão Dynamic Media Viewers para outros fins na inicialização do Adobe, tais cenários não são abordados nesta documentação.
 
 Você configurará a integração nos seguintes produtos de Adobe:
 
@@ -835,4 +835,4 @@ No entanto, ele é suportado no nó de publicação AEM. Usando as configuraçõ
 
 É possível contornar essa limitação especificando o URL de desenvolvimento ou armazenamento temporário da biblioteca de inicialização do Adobe na configuração da Adobe Launch Cloud para AEM publicação acima. Isso faz com que o nó de publicação AEM use a versão de Desenvolvimento ou Preparação da biblioteca de Adobe Launch.
 
-Consulte [Integrar AEM com o Adobe Launch Via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) para obter mais informações sobre como configurar a Configuração da Adobe Launch Cloud.
+Consulte [Integrar Experience Platform Launch e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations) para obter mais informações sobre como configurar a Configuração da Adobe Launch Cloud.
