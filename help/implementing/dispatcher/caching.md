@@ -2,7 +2,7 @@
 title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
+source-git-commit: d4b7aed89e587750b96b13d07a9252ecabee6c03
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
 * pode ser substituído em um nível de granulado mais fino pelas seguintes diretivas apache mod_headers:
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -43,7 +43,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
    Tenha cuidado ao definir cabeçalhos de controle de cache global ou aqueles que correspondem a um regex amplo, de modo que não sejam aplicados ao conteúdo que você deseja manter privado. Considere o uso de várias diretivas para garantir que as regras sejam aplicadas de forma refinada. Dito isso, AEM como um Cloud Service removerá o cabeçalho do cache se ele detectar que foi aplicado ao que detecta ser inatingível pelo dispatcher, conforme descrito na documentação do dispatcher. Para forçar o AEM a sempre aplicar o cache, é possível adicionar a opção &quot;sempre&quot; da seguinte maneira:
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -59,7 +59,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
 * Para impedir que o conteúdo específico seja armazenado em cache, defina o cabeçalho Cache-Control como *private*. Por exemplo, o seguinte impediria que o conteúdo html em um diretório chamado **myfolder** fosse armazenado em cache:
 
    ```
-      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
       Header set Cache-Control “private”
      </LocationMatch>
    ```
@@ -78,7 +78,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
 * pode ser definido em um nível de granulado mais fino pelas seguintes diretivas apache `mod_headers`:
 
    ```
-      <LocationMatch "^\.*.(jpeg|jpg)$">
+      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
         Header set Cache-Control "max-age=222"
         Header set Age 0
       </LocationMatch>
