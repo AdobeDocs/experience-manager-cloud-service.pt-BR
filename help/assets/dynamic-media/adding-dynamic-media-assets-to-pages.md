@@ -2,19 +2,19 @@
 title: Adição de ativos de Mídia dinâmica a páginas
 description: Como adicionar componentes do Dynamic Media a uma página no Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: d1f2315de6b96a912b38d4b81f5ea0a672f6c168
 workflow-type: tm+mt
-source-wordcount: '3128'
-ht-degree: 30%
+source-wordcount: '3123'
+ht-degree: 29%
 
 ---
 
 
 # Adição de ativos de Mídia dinâmica a páginas{#adding-dynamic-media-assets-to-pages}
 
-Para adicionar a funcionalidade Dynamic Media aos ativos que você usa nos sites, é possível adicionar o componente **Dynamic Media**, **Mídia interativa**, **Mídia panorâmica** ou **Mídia de vídeo 360** diretamente na página. Para fazer isso, entre no modo Layout e ative os componentes do Dynamic Media. Em seguida, adicione esses componentes à página e adicionar ativos ao componente. Os componentes do Dynamic Media são inteligentes - eles sabem se você está adicionando uma imagem ou um vídeo e as opções de configuração disponíveis mudam de acordo.
+Para adicionar a funcionalidade Dynamic Media aos ativos que você usa nos sites, é possível adicionar o componente **Dynamic Media**, **Mídia interativa**, **Mídia panorâmica** ou **Mídia de vídeo 360** diretamente na página. Você entra no modo Layout e ativa os componentes do Dynamic Media. Em seguida, adicione esses componentes à página e adicione ativos ao componente. Os componentes do Dynamic Media são inteligentes - eles sabem se você está adicionando uma imagem ou um vídeo e as opções de configuração disponíveis mudam de acordo.
 
-Você adiciona ativos da Dynamic Media diretamente à página se estiver usando o Experience Manager como seu WCM. Se estiver usando um dispositivo de terceiros no WCM, [vincule](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorpore](/help/assets/dynamic-media/embed-code.md) os ativos. Para obter um site responsivo de terceiros, consulte [Fornecer imagens otimizadas para um site responsivo](/help/assets/dynamic-media/responsive-site.md).
+Você adiciona ativos da Dynamic Media diretamente à página se estiver usando o Experience Manager como seu WCM. Se você estiver usando um terceiro para seu WCM, [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou [incorpore](/help/assets/dynamic-media/embed-code.md) seus ativos. Para obter um site responsivo de terceiros, consulte [Fornecer imagens otimizadas para um site responsivo](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Esteja ciente de que não há suporte para a atribuição de uma predefinição 
 
 Quando você adiciona o componente Mídia dinâmica e as **[!UICONTROL Configurações de mídia dinâmica]** estão em branco ou não é possível adicionar um ativo corretamente, verifique o seguinte:
 
-* A imagem tem um arquivo tiff de pirâmide. As imagens importadas antes de a mídia dinâmica ser ativada não possuem um arquivo tiff de pirâmide.
+* A imagem tem um arquivo tiff de pirâmide. As imagens importadas antes da ativação do Dynamic Media não têm um arquivo tiff pirâmide.
 
 #### Ao trabalhar com imagens {#when-working-with-images}
 
