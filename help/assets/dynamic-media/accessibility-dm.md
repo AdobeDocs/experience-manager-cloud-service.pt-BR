@@ -1,36 +1,36 @@
 ---
-title: Acessibilidade em [!DNL Dynamic Media]
+title: Acessibilidade no Dynamic Media
 description: Saiba mais sobre a acessibilidade no Dynamic Media e no Dynamic Media Viewers.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 75caf21c399271b23e71c7c0045e3a41cda8a851
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 
-# Acessibilidade no Dynamic Media {#working-with-three-d-assets-dm}
+# Acessibilidade no Dynamic Media {#accessibility-in-dm}
 
 A Dynamic Media oferece suporte a tecnologias de controle de teclado e assistência, como leitores de tela JAWS e NVDA, na interface do usuário de criação.
 
-## Suporte de acessibilidade de teclado no Dynamic Media
+## Suporte de acessibilidade de teclado no Dynamic Media {#keyboard-support-in-dm}
 
-Como o Dynamic Media é um plug-in para o Experience Manager Assets, a maioria do comportamento de controle do teclado é exatamente igual ao dos Experience Manager Assets. Por exemplo, o botão `Cancel` no Dynamic Media tem o mesmo realce de foco que nos Ativos do Experience Manager e reage à tecla `Spacebar` como nos Ativos do Experience Manager. Consulte [Atalhos de teclado em Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Como o Dynamic Media é um plug-in para o Experience Manager Assets, a maioria do comportamento de controle do teclado é igual ao dos Experience Manager Assets. Por exemplo, o botão `Cancel` no Dynamic Media tem o mesmo realce de foco dos Ativos do Experience Manager. Ele também reage à tecla `Spacebar` como nos ativos Experience Manager. Consulte [atalhos do teclado em Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Os pressionamentos de teclas suportados por elementos individuais da interface do usuário no Dynamic Media são, na maioria dos casos, óbvios e fáceis de descobrir. O controle de teclado no Dynamic Media é sobre o seguinte:
+Os pressionamentos de teclas suportados pelos elementos da interface de usuário individual no Dynamic Media são, na maioria dos casos, óbvios e fáceis de encontrar. O controle de teclado no Dynamic Media é sobre o seguinte:
 
 * Capacidade de usar `Tab` e `Shift+Tab` pressionamentos de teclas para navegar entre elementos interativos na página.
 Usar `Tab` avança o foco de entrada para o próximo elemento da interface do usuário na ordem de tabulação; usar `Shift+Tab` traz o foco de entrada de volta ao elemento anterior da interface do usuário.
 O foco transversal segue a localização do elemento natural da interface do usuário na tela e se move de esquerda para direita e de cima para baixo. Além disso, se algum campo tiver um erro, pressione `Tab` para mover o foco para ele.
 * Capacidade de usar as teclas `Spacebar` e `Enter` para ativar elementos padrão da interface do usuário, como botões, lista suspensa e assim por diante.
-* A capacidade de ver o foco do teclado é realçada no elemento ativo. O elemento da interface do usuário que tem foco de entrada pode receber uma indicação de foco visual como uma borda renderizada ao redor do elemento da interface do usuário.
+* A capacidade de ver o foco do teclado é realçada no elemento ativo. O elemento da interface do usuário que tem foco de entrada recebeu uma indicação de foco visual como uma borda renderizada ao redor do elemento da interface do usuário.
 * No editor do Hotspot, você pode usar alguns pressionamentos de teclas personalizados, como teclas de seta, para interagir com elementos complexos da interface do usuário para reposicionar pontos de conexão.
 * No editor de vídeo interativo, você pode usar `Spacebar` para selecionar uma imagem e adicioná-la a um segmento. Além disso, você pode usar a tecla `Backspace` para excluir o item selecionado da guia **[!UICONTROL Conteúdo]**. Além disso, pressionar `Tab` funciona conforme desejado para navegar entre os elementos interativos na página.
-* No editor de recorte de imagem/recorte inteligente, você pode fazer o seguinte:
+* No editor de recorte de imagem/recorte inteligente, é possível fazer o seguinte:
    * Use as teclas de seta para recortar o tamanho do quadro, reposicionar a imagem ou ambas.
    * A primeira parada `Tab` realça todo o quadro da imagem. Você pode usar as teclas de seta no teclado para reposicionar o quadro.
    * As quatro próximas `Tab` paradas são os quatro cantos do quadro. Quando o foco é colocado em um canto do quadro, o canto é realçado. Novamente, você pode usar as teclas de seta no teclado para mover o canto focalizado.
@@ -52,7 +52,7 @@ Os elementos da interface do usuário Dynamic Media funcionam com tecnologias de
 
 Todos os componentes predefinidos do visualizador Dynamic Media suportam a acessibilidade do teclado para seus clientes.
 
-Consulte [Acesso ao teclado e navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) no Guia de referência do Dynamic Media Viewers.
+Consulte [Acessibilidade do teclado e navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) no Guia de Referência do Dynamic Media Viewers.
 
 ## Suporte a tecnologia assistiva em visualizadores Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
