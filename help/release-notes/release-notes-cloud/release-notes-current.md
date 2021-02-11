@@ -2,7 +2,7 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: f1a54ac3f995a6e8cc51f9ef16e14df6210a02cd
+source-git-commit: 6c40641333f2297d7004d792e87f16a7cf081970
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 4%
@@ -146,7 +146,7 @@ A data de lançamento da Content Transfer Tool v1.2.2 é 1 de fevereiro de 2021.
 
 A data de lançamento do Best Practices Analyzer v2.1.0 é 11 de fevereiro de 2021.
 
-### Novidades em [!DNL Best-Practices-Analyzer] {#what-is-new-bpa}
+### Novidades em [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
 * Capacidade de detectar o uso da implementação do AEM Forms e AEM Forms e indicar áreas relevantes para migrar para o AEM Forms como Cloud Service.
 * Capacidade de detectar e relatar sobre o uso e contagem de componentes e modelos personalizados.
