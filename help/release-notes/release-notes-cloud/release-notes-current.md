@@ -2,10 +2,10 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 5%
+source-wordcount: '978'
+ht-degree: 4%
 
 ---
 
@@ -69,15 +69,37 @@ A seguinte versão (2021.2.0) será lançada em 25 de fevereiro de 2021.
 
 ### Data de lançamento {#release-date-cm}
 
-A data de lançamento do Cloud Manager no AEM como Cloud Service 2021.1.0 é 14 de janeiro de 2021.
+A data de lançamento do Cloud Manager no AEM como Cloud Service 2021.2.0 é 11 de fevereiro de 2021.
+
+### Novidades {#what-is-new-cloud-manager}
+
+* O pipeline de produção do Cloud Manager agora inclui o recurso de teste de interface personalizada.
+
+* Os clientes do Assets agora poderão escolher quando e onde implantar sua instância do Brand Portal de forma automática por meio da interface do usuário do Cloud Manager. Para um programa regular (não caixa de proteção) com a solução Assets, o Portal de marcas agora pode ser provisionado no ambiente Production. O provisionamento pode ser feito somente uma vez no Production ambiente.
+
+* O AEM Project Archetype usado em Projeto e criação de caixa de proteção foi atualizado para a versão 25.
+
+* A lista de APIs obsoletas identificadas durante a digitalização de código foi refinada para incluir classes e métodos adicionais obsoletos nas versões mais recentes do Cloud Service SDK.
+
+* O perfil SonarQube para o Gerenciador de nuvem foi atualizado para remover o Lula de regra Sonar:S2142. Isso não entrará em conflito com as verificações de Interrupção de Thread.
+
+* A interface do usuário do Gerenciador de nuvem informará o usuário que pode não ser capaz de adicionar/atualizar temporariamente o nome do domínio porque o ambiente associado tem um pipeline em execução conectado a ele ou que está aguardando a etapa de aprovação.
+
+* As propriedades definidas nos arquivos `pom.xml` do cliente prefixados com o Sonar serão removidas dinamicamente para evitar falhas na compilação e na verificação de qualidade.
+
+* A interface do usuário do Gerenciador de nuvem informará o usuário que não pode selecionar temporariamente um certificado SSL se ele estiver sendo usado por um nome de Domínio que está sendo implantado no momento.
 
 ### Correções de erros {#bug-fixes-cloud-manager}
 
-* A instância Produção de ativos pode, ocasionalmente, mostrar o status do Portal de marcas na página de detalhes **Ambientes** como *Pendente* sem permitir que o usuário execute nenhuma ação.
+* A correspondência do certificado SSL com um nome de domínio não faz mais distinção entre maiúsculas e minúsculas.
 
-* Ao disparar uma hibernação do Gerenciador de nuvem, às vezes uma mensagem de falha era exibida mesmo quando a hibernação era iniciada com êxito.
+* A interface do usuário do Cloud Manager agora informará um usuário se as chaves privadas do certificado não atenderem ao limite de 2048 bits com uma mensagem de erro apropriada.
 
-* Casos raros de falha encontrados na criação ou exclusão de ambientes foram abordados.
+* A interface do usuário do Gerenciador de nuvem informará o usuário que não pode selecionar temporariamente um certificado SSL se ele estiver sendo usado por um nome de Domínio que está sendo implantado no momento.
+
+* Em alguns casos, um problema interno pode fazer com que a exclusão de ambientes fique travada.
+
+* Algumas falhas de pipeline foram relatadas incorretamente como erros de pipeline.
 
 ## AEM como um Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
