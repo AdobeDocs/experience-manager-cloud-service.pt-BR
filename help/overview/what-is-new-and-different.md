@@ -2,7 +2,7 @@
 title: O que é diferente e o que é novo - Adobe Experience Manager como Cloud Service
 description: 'O que é diferente e o que é novo - Adobe Experience Manager (AEM) como Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
+source-git-commit: 1563da55c3dfed52088d5309eeac071918ff0d51
 workflow-type: tm+mt
 source-wordcount: '1876'
 ht-degree: 10%
@@ -262,7 +262,7 @@ Para obter detalhes, consulte a visão geral de [Alterações em sites](/help/si
 
 ## Ativos AEM {#aem-assets}
 
-O Adobe Experience Manager Assets como Cloud Service oferta uma solução SaaS nativa para nuvem para que as empresas não só executem suas operações de Gerenciamento de ativos digitais e Dynamic Media com velocidade e impacto, como também usem recursos inteligentes da próxima geração, como o AI/ML, de dentro de um sistema que é sempre atual, sempre disponível e sempre aprendendo.
+O Adobe Experience Manager Assets como Cloud Service oferta uma solução PaaS nativa para nuvem para que as empresas não só executem suas operações de Gerenciamento de ativos digitais e Dynamic Media com velocidade e impacto, como também usem recursos inteligentes da próxima geração, como o AI/ML, de dentro de um sistema que é sempre atual, sempre disponível e sempre aprendendo.
 
 A oferta de ativos inclui o processamento de ativos da próxima geração na nuvem e a inclusão e pesquisa de ativos de alto desempenho.
 
