@@ -2,9 +2,9 @@
 title: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2021.2.0
 description: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2021.2.0
 translation-type: tm+mt
-source-git-commit: bca0519b3f27ee21df41b2292d19e330c4aa5f7d
+source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '399'
 ht-degree: 2%
 
 ---
@@ -38,6 +38,7 @@ A data de lançamento do Cloud Manager no AEM como Cloud Service 2021.2.0 é 11 
 
 * A interface do usuário do Gerenciador de nuvem informará o usuário que não pode selecionar temporariamente um certificado SSL se ele estiver sendo usado por um nome de Domínio que está sendo implantado no momento.
 
+* Regras adicionais de qualidade de código foram adicionadas para cobrir problemas de compatibilidade de Cloud Service.
 
 ### Correções de erros {#bug-fixes}
 
