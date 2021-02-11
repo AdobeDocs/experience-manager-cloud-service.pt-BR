@@ -2,7 +2,7 @@
 title: Implantar seu código - Cloud Services
 description: Implantar seu código - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Consulte [Teste funcional do produto](/help/implementing/cloud-manager/functiona
    * Auditoria de experiência: Esta etapa do pipeline está sempre presente e não pode ser ignorada. Como um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após testes funcionais personalizados que executarão as verificações. As páginas configuradas serão enviadas ao serviço e avaliadas. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
 Consulte [Entendendo os resultados da auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
 
-      ![](assets/testing-tab.png)
+      ![](/help/implementing/cloud-manager/assets/deploy-testingscreen.png)
 
 
 
