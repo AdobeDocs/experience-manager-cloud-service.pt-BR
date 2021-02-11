@@ -2,9 +2,9 @@
 title: Teste funcional - Cloud Services
 description: Teste funcional - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '469'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ Os ensaios funcionais são classificados em dois tipos:
 
 * Teste funcional do produto
 * Teste funcional personalizado
+* Teste de interface personalizada
 
 ## Teste funcional do produto {#product-functional-testing}
 
@@ -33,6 +34,12 @@ No entanto, se nenhum JAR de teste for produzido pela compilação, o teste ser�
 
 >[!NOTE]
 >O botão **Baixar registro** permite acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade normal de Download ou Logs de assinatura. Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
+
+## Teste de interface personalizada {#custom-ui-testing}
+
+Os testes personalizados da interface do usuário podem ser gravados e permitem que os clientes criem rapidamente conjuntos de automação de testes para validar aplicativos da Web e móveis criados em AEM.
+
+Para saber mais sobre como gravar testes de interface personalizados, consulte [Criando testes de interface](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests).
 
 
 ### Gravando testes funcionais {#writing-functional-tests}
