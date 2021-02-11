@@ -1,10 +1,11 @@
 ---
 title: Práticas recomendadas para otimização da qualidade de imagens
 description: Saiba mais sobre as práticas recomendadas que você pode usar no Dynamic Media para otimizar a qualidade de seus ativos de imagem.
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1452'
 ht-degree: 5%
 
 ---
@@ -20,7 +21,7 @@ AEM inclui mais de 100 comandos de delivery de imagem Dynamic Media para ajustar
 
 * JPG ou PNG são as melhores opções para fornecer imagens em boa qualidade e com tamanho e peso gerenciáveis.
 * Se nenhum comando format for fornecido no URL, o Delivery de Imagem Dynamic Media assumirá como padrão o JPG para o delivery.
-* O JPG compacta com uma proporção de 10:1 e geralmente produz arquivos de imagem menores. O PNG compacta com uma proporção de aproximadamente 2:1, exceto em alguns casos, como quando imagens contêm um fundo branco. Normalmente, porém, os tamanhos de arquivo PNG são maiores que os arquivos JPG.
+* O JPG compacta com uma proporção de 10:1 e geralmente produz arquivos de imagem menores. O PNG compacta com uma proporção de aproximadamente 2:1, exceto quando as imagens contêm um fundo branco. Normalmente, porém, os tamanhos de arquivo PNG são maiores que os arquivos JPG.
 * O JPG usa compactação com perdas, o que significa que os elementos da imagem (pixels) são descartados durante a compactação. Por outro lado, o PNG usa compactação sem perdas.
 * Muitas vezes, o JPG compacta imagens fotográficas com melhor fidelidade do que imagens sintéticas com bordas e contraste nítidos.
 * Se suas imagens contiverem transparência, use PNG, pois o JPG não oferece suporte para transparência.
@@ -44,7 +45,7 @@ O ajuste da nitidez da imagem é o aspecto mais complexo do controle de imagens 
 
 * Assista [Usando o ajuste de nitidez de imagem com AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-Com o AEM, você pode tornar as imagens mais nítidas na ingestão, no delivery ou em ambos. Entretanto, na maioria dos casos, é necessário aumentar a nitidez das imagens usando apenas um método ou outro, mas não ambos. O compartilhamento de imagens no delivery, em um URL, geralmente oferece os melhores resultados.
+Com o AEM, você pode tornar as imagens mais nítidas na ingestão, no delivery ou em ambos. Normalmente, no entanto, é melhor tornar as imagens nítidas usando apenas um método ou outro, mas não ambos. O compartilhamento de imagens no delivery, em um URL, geralmente oferece os melhores resultados.
 
 Existem dois métodos de nitidez de imagem que você pode usar:
 
@@ -56,18 +57,19 @@ Existem dois métodos de nitidez de imagem que você pode usar:
       * **[!UICONTROL amount]** (0-5, intensidade do efeito.)
       * **[!UICONTROL radius]** (0-250, largura das &quot;linhas de nitidez&quot; desenhadas ao redor do objeto com nitidez, conforme medido em pixels.)
 
-         Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento do montante. O Raio permite um controle mais fino como um valor mais baixo aumenta a nitidez apenas dos pixels da borda, enquanto um valor mais alto aumenta a nitidez de uma faixa maior de pixels.
+      Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento do montante. O Raio permite um controle mais fino como um valor mais baixo aumenta a nitidez apenas dos pixels da borda, enquanto um valor mais alto aumenta a nitidez de uma faixa maior de pixels.
 
       * **[!UICONTROL limiar]** (0-255, sensibilidade do efeito.)
+      Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limit]** ajuda a evitar a sobreposição de nitidez de áreas com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
 
-         Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limit]** ajuda a evitar a sobreposição de nitidez de áreas com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
       Para obter mais informações sobre como você define esses três parâmetros, incluindo as práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
 
       AEM tópico da Ajuda sobre como aumentar a nitidez de uma imagem.
 
       White paper de práticas recomendadas [Qualidade de imagem clássica Adobe Dynamic Media e práticas recomendadas de nitidez](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
-   * AEM também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
+      * AEM também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
+
 
 
 Como prática recomendada, start com o parâmetro de raio de máscara de nitidez. As configurações de Raio que você pode start são as seguintes:
@@ -96,7 +98,7 @@ Como prática recomendada para a compactação JPG, use `&qlt=85,0`.
 
 ## Práticas recomendadas para dimensionamento JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-jpegSize é um parâmetro útil se você quiser garantir que uma imagem não exceda um determinado tamanho para delivery a dispositivos com memória limitada.
+`jpegSize` é um parâmetro útil se você deseja garantir que uma imagem não exceda um determinado tamanho para delivery em dispositivos com memória limitada.
 
 * Este parâmetro é definido em quilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Define o tamanho máximo permitido para o delivery de imagem.
 * `&jpegSize=` interage com o parâmetro de compactação JPG  `&qlt=`. Se a resposta JPG com o parâmetro de compactação JPG especificado (`&qlt=`) não exceder o valor jpegSize, a imagem será retornada com `&qlt=` conforme definido. Caso contrário, `&qlt=` será gradualmente diminuído até que a imagem se ajuste ao tamanho máximo permitido, ou até que o sistema determine que não é possível ajustar e retorne um erro.
@@ -115,9 +117,9 @@ Se a imagem exigir otimização adicional, ajuste gradualmente os parâmetros de
 
 Se os resultados da nitidez ainda não forem satisfatórios, aumente o raio em incrementos decimais. Para cada incremento decimal, reinicie o valor em 1,75 e aumente-o gradualmente para 4. Repita esse processo até obter o resultado desejado. Embora os valores acima sejam uma abordagem que os estúdios criativos validaram, lembre-se de que você pode start com outros valores e seguir outras estratégias. Se os resultados são ou não satisfatórios para si é uma questão subjetiva, por isso é fundamental uma experimentação estruturada.
 
-Durante o experimento, você também pode achar as seguintes sugestões gerais úteis para otimizar seu fluxo de trabalho:
+À medida que você experimenta, as seguintes sugestões gerais são úteis para otimizar seu fluxo de trabalho:
 
 * Tente testar diferentes parâmetros em tempo real, diretamente em um URL.
-* Como prática recomendada, lembre-se de que é possível agrupar comandos do Dynamic Media Image Server em uma predefinição de imagem. Uma predefinição de imagem é basicamente macros de comando de URL com nomes predefinidos personalizados, como `$thumb_low$` e `&product_high$`. O nome predefinido personalizado em um caminho de URL faz uma chamada para essas predefinições. Essa funcionalidade ajuda a gerenciar comandos e configurações de qualidade para diferentes padrões de uso de imagens em seu site e reduz a duração geral dos URLs.
-* AEM também oferece maneiras mais avançadas de ajustar a qualidade da imagem, como aplicar imagens mais nítidas na ingestão. Para casos de uso avançado em que essa pode ser uma opção para ajustar e otimizar ainda mais os resultados da renderização, o [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) pode ajudá-lo com insight personalizado e práticas recomendadas.
+* Como prática recomendada, lembre-se de que é possível agrupar comandos do Dynamic Media Image Server em uma predefinição de imagem. Uma predefinição de imagem é basicamente macros de comando de URL com nomes predefinidos personalizados, como `$thumb_low$` e `&product_high$`. O nome predefinido personalizado em um caminho de URL chama essas predefinições. Essa funcionalidade ajuda a gerenciar comandos e configurações de qualidade para diferentes padrões de uso de imagens em seu site e reduz a duração geral dos URLs.
+* O Experience Manager também oferece maneiras mais avançadas de ajustar a qualidade da imagem, como aplicar imagens mais nítidas na ingestão. Para ajustar e otimizar os resultados da renderização, o [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) pode ajudá-lo com insight personalizado e práticas recomendadas.
 
