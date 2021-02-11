@@ -4,9 +4,9 @@ description: As práticas recomendadas integram uma implantação de Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: eaf08018fbbf1cf1e71db2edce9ea673d546073a
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3294'
 ht-degree: 18%
 
 ---
@@ -70,7 +70,7 @@ Decidir sobre qual capacidade usar
 
 Para suportar casos de uso de distribuição de ativos, outras soluções devem ser consideradas:
 
-* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portalpara um complemento configurável SaaS para a AEM Assets para publicar ativos.
+* [Marca AEM Assets ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portalpara um complemento configurável aos Ativos para publicar os ativos.
 
 * As soluções personalizadas são criadas com base na base de código [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
 * AEM [link share](/help/assets/share-assets.md) para compartilhar ativos ad hoc usando links.
