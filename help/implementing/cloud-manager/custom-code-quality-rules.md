@@ -2,10 +2,10 @@
 title: Regras de qualidade de código personalizado - Cloud Services
 description: Regras de qualidade de código personalizado - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 901a660424f5e1fded654ddb09f3d872b7cd01b7
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 6%
+source-wordcount: '3221'
+ht-degree: 4%
 
 ---
 
@@ -733,4 +733,187 @@ Consulte [AEM Estrutura do Projeto](https://docs.adobe.com/content/help/pt-BR/ex
 O suporte para replicação reversa não está disponível em implantações de Cloud Service, conforme descrito em [Notas de versão: Remoção dos Agentes de Replicação](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 Os clientes que usam replicação reversa devem entrar em contato com a Adobe para obter soluções alternativas.
+
+### OakPAL - os recursos contidos nas bibliotecas de clientes ativadas por proxy devem estar em uma pasta chamada resources {#oakpal-resources-proxy}
+
+**Chave**: ClientlibProxyResource
+
+**Tipo**: Bug
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+AEM bibliotecas clientes podem conter recursos estáticos, como imagens e fontes. Conforme descrito em [Usando pré-processadores](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), ao usar bibliotecas de clientes proxy, esses recursos estáticos devem estar contidos em uma pasta filho chamada resources para que possam ser referenciados com eficácia nas instâncias de publicação.
+
+#### Código não compatível {#non-compliant-proxy-enabled}
+
+```
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + images
+        + myimage.jpg
+```
+
+#### Código compatível {#compliant-proxy-enabled}
+
+```
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + resources
+        + myimage.jpg
+```
+
+### OakPAL - Uso de processos de fluxo de trabalho incompatíveis com Cloud Service {#oakpal-usage-cloud-service}
+
+**Chave**: CloudServiceIncompatibleWorkflowProcess
+
+**Tipo**: Bug
+
+**Gravidade**: Major
+
+**Desde**: Versão 2021.2.0
+
+Com a mudança para os microserviços de ativos para processamento de ativos AEM Cloud Service, vários processos de fluxo de trabalho que foram usados nas versões local e AMS do AEM se tornaram não suportados ou desnecessários. A ferramenta de migração em [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration) pode ser usada para atualizar modelos de fluxo de trabalho durante AEM migração de Cloud Service.
+
+### OakPAL - O uso de modelos estáticos está desencorajado em favor de modelos editáveis {#oakpal-static-template}
+
+**Chave**: StaticTemplateUsage
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+Embora o uso de modelos estáticos tenha sido historicamente muito comum em projetos AEM, modelos editáveis são altamente recomendados, pois proporcionam mais flexibilidade e suportam recursos adicionais não presentes em modelos estáticos. Mais informações podem ser encontradas em [Modelos de página - Editável](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). A migração de modelos estáticos para editáveis pode ser amplamente automatizada usando as [AEM Ferramentas de Modernização](https://opensource.adobe.com/aem-modernize-tools/).
+
+### OakPAL - o uso de componentes básicos herdados está desencorajado {#oakpal-usage-legacy}
+
+**Chave**: LegacyFoundationComponentUsage
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+Os componentes básicos herdados (ou seja, os componentes em `/libs/foundation`) foram descontinuados para várias versões de AEM em favor dos Componentes principais do WCM. O uso dos componentes de base herdados como a base para os componentes personalizados - seja por sobreposição ou herança - é desencorajado e deve ser convertido no componente principal correspondente. Essa conversão pode ser facilitada pelas [AEM Ferramentas de Modernização](https://opensource.adobe.com/aem-modernize-tools/).
+
+### OakPAL - Somente nomes e pedidos de modo de execução suportados devem ser usados {#oakpal-supported-runmodes}
+
+**Chave**: SupportedRunmode
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+AEM Cloud Service impõe uma política de nomeação estrita para nomes de modo de execução e uma ordem estrita para esses modos de execução. A lista de modos de execução suportados pode ser encontrada em [Runmode](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes) e qualquer desvio em relação a isso será identificado como um problema.
+
+### OakPAL - Os nós de definição do índice de pesquisa personalizado devem ser filhos diretos de /oak:index {#oakpal-custom-search}
+
+**Chave**: OakIndexLocation
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+AEM Cloud Service exige que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo oak:QueryIndexDefinition) sejam nós secundários diretos de `/oak:index`. Os índices em outros locais devem ser movidos para serem compatíveis com AEM Cloud Service. Mais informações sobre índices de pesquisa podem ser encontradas em [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+
+### OakPAL - Nós de definição de índice de pesquisa personalizado devem ter uma compatVersion de 2 {#oakpal-custom-search-compatVersion}
+
+**Chave**: IndexCompatVersion
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+AEM Cloud Service exige que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo oak:QueryIndexDefinition) tenham a propriedade compatVersion definida como 2. Nenhum outro valor é suportado por AEM Cloud Service. Mais informações sobre índices de pesquisa podem ser encontradas em [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+
+### OakPAL - Nós descendentes dos nós de definição de índice de pesquisa personalizado devem ser do tipo nt:unstructed {#oakpal-descendent-nodes}
+
+**Chave**: IndexDescentalNodeType
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+É difícil solucionar problemas quando ocorre quando um nó de definição de índice de pesquisa personalizado tem nós filhos desordenados. Para evitar isso, é recomendável que todos os nós descendentes de um nó `oak:QueryIndexDefinition` sejam do tipo nt:unstructed.
+
+### OakPAL - Nós de definição de índice de pesquisa personalizado devem conter um nó filho chamado indexRules que tem filhos {#oakpal-custom-search-index}
+
+**Chave**: IndexRulesNode
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+Um nó de definição de índice de pesquisa personalizado corretamente definido deve conter um nó filho chamado indexRules que, por sua vez, deve ter pelo menos um filho. Mais informações podem ser encontradas em [Documentação do Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+
+### OakPAL - Nós de definição de índice de pesquisa personalizada devem seguir as convenções de nomenclatura {#oakpal-custom-search-definitions}
+
+**Chave**: IndexName
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+AEM Cloud Service exige que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo `oak:QueryIndexDefinition`) sejam nomeadas de acordo com um padrão específico descrito em [Pesquisa e Indexação de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+
+### OakPAL - Nós de definição de índice de pesquisa personalizado devem usar o tipo de índice lucene {#oakpal-index-type-lucene}
+
+**Chave**: IndexType
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+AEM Cloud Service exige que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo oak:QueryIndexDefinition) tenham uma propriedade type com o valor definido como **lucene**. A indexação usando tipos de índice herdados deve ser atualizada antes da migração para AEM Cloud Service. Consulte [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obter mais informações.
+
+### OakPAL - Os nós de definição de índice de pesquisa personalizado não devem conter uma propriedade denominada semente {#oakpal-property-name-seed}
+
+**Chave**: IndexSeedProperty
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+AEM Cloud Service proíbe que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo `oak:QueryIndexDefinition`) contenham uma propriedade chamada semente. A indexação usando essa propriedade deve ser atualizada antes da migração para AEM Cloud Service. Consulte [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obter mais informações.
+
+### OakPAL - Os nós de definição de índice de pesquisa personalizado não devem conter uma propriedade denominada reindex {#oakpal-reindex-property}
+
+**Chave**: IndexReindexProperty
+
+**Tipo**: Cheiro de código
+
+**Gravidade**: Menor
+
+**Desde**: Versão 2021.2.0
+
+AEM Cloud Service proíbe que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo `oak:QueryIndexDefinition`) contenham uma propriedade chamada reindex. A indexação usando essa propriedade deve ser atualizada antes da migração para AEM Cloud Service. Consulte [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obter mais informações.
+
+
+
+
+
 
