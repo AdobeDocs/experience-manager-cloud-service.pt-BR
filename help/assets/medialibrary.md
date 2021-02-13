@@ -3,9 +3,9 @@ title: AEM Assets vs. AEM MediaLibrary
 description: Perguntas frequentes sobre a AEM Assets e a. AEM Biblioteca de mídia, incluindo diferenças entre os dois.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '693'
 ht-degree: 3%
 
 ---
@@ -27,10 +27,10 @@ A Biblioteca de mídia AEM é uma parte designada do repositório de conteúdo A
 
 Os recursos exclusivos que estão disponíveis somente para clientes da AEM Assets são:
 
-1. a capacidade de extrair e editar metadados diferentes de título, tags e descrição.
-1. o AEM Assets Admin, disponível na tela de boas-vindas, clicando no segundo botão ao lado do siteadmin.
+1. A capacidade de extrair e editar metadados diferentes de título, tags e descrição.
+1. O administrador do AEM Assets, disponível na tela de boas-vindas, clicando na segunda opção adjacente a `siteadmin`.
 1. Todas as etapas do fluxo de trabalho relacionadas ao Gerenciamento de ativos digitais, nomeadamente AEM Assets Ingestion, AEM Assets Deletion, AEM Assets Sub-Asset-Handling, extração de metadados AEM Assets.
-1. bibliotecas incluindo o espaço do pacote &quot;dam&quot; im.
+1. Bibliotecas incluindo &quot;dam&quot; no espaço do pacote.
 
 O uso desses recursos requer uma licença válida do AEM Assets.
 
