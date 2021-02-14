@@ -1,26 +1,26 @@
 ---
 title: API HTTP de ativos
-description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
+description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: f1fa095c7c89be89ed02ebdf14dcc0a4b9f542b1
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1465'
 ht-degree: 1%
 
 ---
 
 
-# API HTTP de ativos {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] API HTTP  {#assets-http-api}
 
 ## Visão geral {#overview}
 
-A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, execuções e comentários, juntamente com conteúdo estruturado usando [!DNL Experience Manager] Fragmentos de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API. Inclui [suporte para Fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md).
+A API HTTP [!DNL Assets] permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, renderizações e comentários, juntamente com conteúdo estruturado usando [!DNL Experience Manager] Fragmentos de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API. Inclui [suporte para Fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 Para acessar a API:
 
 1. Abra o documento de serviço da API em `https://[hostname]:[port]/api.json`.
-1. Siga o link de serviço Ativos que leva a `https://[hostname]:[server]/api/assets.json`.
+1. Siga o link de serviço [!DNL Assets] que leva a `https://[hostname]:[server]/api/assets.json`.
 
 A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resposta para todos os tipos MIME. A resposta JSON é opcional e pode não estar disponível, por exemplo, para arquivos PDF. Confie no código de resposta para obter mais análises ou ações.
 
@@ -32,15 +32,13 @@ Depois do [!UICONTROL Tempo desligado], um ativo e suas representações não es
 
 ## Fragmentos de conteúdo {#content-fragments}
 
-Um [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md) é um tipo especial de ativo. Pode ser usado para acessar dados estruturados, como textos, números, datas, entre outros. Como há várias diferenças nos ativos `standard` (como imagens ou documentos), algumas regras adicionais se aplicam ao manuseio de fragmentos de conteúdo.
+Um [Fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md) é um tipo especial de ativo. Pode ser usado para acessar dados estruturados, como textos, números, datas, entre outros. Como há várias diferenças entre os ativos `standard` (como imagens ou documentos), algumas regras adicionais se aplicam ao manuseio de Fragmentos de conteúdo.
 
-Para obter mais informações, consulte [Suporte a fragmentos de conteúdo na API HTTP do Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
+Para obter mais informações, consulte [Suporte a fragmentos de conteúdo na  [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Modelo de dados {#data-model}
 
-A API HTTP Assets expõe dois elementos principais, pastas e ativos (para ativos padrão).
-
-Além disso, expõe elementos mais detalhados para os modelos de dados personalizados que descrevem o conteúdo estruturado em Fragmentos de conteúdo. Consulte [Modelos de dados do fragmento de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obter mais informações.
+A API HTTP [!DNL Assets] expõe dois elementos principais, pastas e ativos (para ativos padrão). Além disso, expõe elementos mais detalhados para os modelos de dados personalizados que descrevem o conteúdo estruturado em Fragmentos de conteúdo. Consulte [Modelos de dados do fragmento de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obter mais informações.
 
 ### Pastas {#folders}
 
@@ -81,19 +79,19 @@ Em [!DNL Experience Manager] uma pasta tem os seguintes componentes:
 
 ## Recursos disponíveis {#available-features}
 
-A API HTTP Assets inclui os seguintes recursos:
+A API HTTP [!DNL Assets] inclui os seguintes recursos:
 
-* Recuperar uma lista de pastas.
-* Criar uma pasta.
-* Criar um ativo (obsoleto).
-* Atualizar o binário do ativo (obsoleto).
-* Atualize os metadados do ativo.
-* Crie uma representação de ativo.
-* Atualizar uma representação de ativo.
-* Crie um comentário de ativo.
-* Copie uma pasta ou um ativo.
-* Mova uma pasta ou um ativo.
-* Exclua uma pasta, ativo ou representação.
+* [Recuperar uma lista](#retrieve-a-folder-listing) de pastas.
+* [Criar uma pasta](#create-a-folder).
+* [Criar um ativo (obsoleto)](#create-an-asset)
+* [Atualizar o binário do ativo (obsoleto)](#update-asset-binary).
+* [Atualize os metadados](#update-asset-metadata) do ativo.
+* [Crie uma representação](#create-an-asset-rendition) de ativo.
+* [Atualizar uma representação](#update-an-asset-rendition) de ativo.
+* [Crie um comentário](#create-an-asset-comment) de ativo.
+* [Copie uma pasta ou um ativo](#copy-a-folder-or-asset).
+* [Mova uma pasta ou um ativo](#move-a-folder-or-asset).
+* [Exclua uma pasta, ativo ou representação](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
@@ -144,11 +142,11 @@ Uma chamada de API falha com um código de resposta `500` se o nó pai do caminh
 
 ## Criar um ativo {#create-an-asset}
 
-Consulte [upload de ativos](developer-reference-material-apis.md) para obter informações sobre como criar um ativo usando APIs. A criação de um ativo usando a API HTTP está obsoleta.
+Consulte [upload de ativos](developer-reference-material-apis.md) para obter informações sobre como criar um ativo. Não é possível criar um ativo usando a API HTTP.
 
 ## Atualizar um binário de ativo {#update-asset-binary}
 
-Consulte [upload de ativos](developer-reference-material-apis.md) para obter informações sobre como atualizar binários de ativos usando APIs. A atualização de um binário de ativo usando a API HTTP está obsoleta.
+Consulte [upload de ativos](developer-reference-material-apis.md) para obter informações sobre como atualizar binários de ativos. Não é possível atualizar um binário de ativo usando a API HTTP.
 
 ## Atualizar metadados de um ativo {#update-asset-metadata}
 
@@ -262,3 +260,8 @@ Exclui um recurso (-tree) no caminho fornecido.
 * 200 - OK - se a pasta tiver sido excluída com êxito.
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
 * 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+
+>[!MORELIKETHIS]
+>
+>* [Documentos de referência do desenvolvedor para [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+
