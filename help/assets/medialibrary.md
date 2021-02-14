@@ -3,7 +3,7 @@ title: Comparar [!DNL Assets] e ofertas da Biblioteca de mídia
 description: Compare os recursos [!DNL Experience Manager Assets] e da Biblioteca de mídia e conheça as diferenças.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3a7af5fa5889c74eb74e12dead1df0494c2c6386
+source-git-commit: 93735a59dac1a0d674c0292ce268a8662f3b0b91
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -106,4 +106,5 @@ Nesse caso de uso, não é necessário comprar [!DNL Assets], mesmo o uso da Bib
 
 >[!MORELIKETHIS]
 >
->*[Experience Manager como uma descrição de produto Cloud Service](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [Experience Manager como uma descrição de produto Cloud Service](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+
