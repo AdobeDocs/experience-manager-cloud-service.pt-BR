@@ -2,9 +2,9 @@
 title: AEM API GraphQL para uso com Fragmentos de conteúdo
 description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) como um Cloud Service com a API AEM GraphQL para o Delivery de conteúdo sem cabeçalho.
 translation-type: tm+mt
-source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
+source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 1%
 
 ---
@@ -533,7 +533,7 @@ Para obter mais exemplos, consulte:
 
 ## Query Persistentes (Cache) {#persisted-queries-caching}
 
-Depois de preparar um query com uma solicitação de POST, ele pode ser executado com uma solicitação de GET que pode ser armazenada em cache por caches HTTP ou um CDN.
+Após preparar um query com uma solicitação de POST, ele pode ser executado com uma solicitação de GET que pode ser armazenada em cache por caches HTTP ou um CDN.
 
 Isso é necessário porque os query POST geralmente não são armazenados em cache e, se estiver usando o GET como parâmetro, há um risco significativo de o parâmetro se tornar grande demais para os serviços HTTP e os intermediários.
 
@@ -725,23 +725,90 @@ Estas são as etapas necessárias para persistir um determinado query:
 
 ## Consultando o ponto de extremidade GraphQL de um site externo {#query-graphql-endpoint-from-external-website}
 
+Para acessar o endpoint GraphQL de um site externo, é necessário configurar o:
+
+* [Filtro CORS](#cors-filter)
+* [Filtro de quem indicou](#referrer-filter)
+
+### Filtro CORS {#cors-filter}
+
 >[!NOTE]
 >
 >Para obter uma visão geral detalhada da política de compartilhamento de recursos do CORS em AEM, consulte [Entender o compartilhamento de recursos entre Origens (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
 
-Para permitir que um site de terceiros consuma saída JSON, uma política CORS deve ser configurada no repositório Git do cliente. Isso é feito adicionando um arquivo de configuração OSGi CORS apropriado para o terminal desejado. Essa configuração deve especificar um nome de site (ou regex) confiável para o qual o acesso deve ser concedido.
+Para acessar o endpoint GraphQL, uma política CORS deve ser configurada no repositório Git do cliente. Isso é feito adicionando um arquivo de configuração OSGi CORS apropriado para os pontos finais desejados.
 
-* Acessar o ponto de extremidade GraphQL:
+Essa configuração deve especificar uma origem de site confiável `alloworigin` ou `alloworiginregexp` para a qual o acesso deve ser concedido.
 
-   * alopirina: [o seu domínio] ou aloworiginregexp: [seu regex de domínio]
-   * supported methods: [POST]
-   * caminhos permitidos: [&quot;/content/graphql/global/endpoint.json&quot;]
+Por exemplo, para conceder acesso ao endpoint GraphQL e ao endpoint de query persistentes para `https://my.domain` você pode usar:
 
-* Acessar o ponto de extremidade de query persistentes do GraphQL:
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json",
+    "/graphql/execute.json/.*"
+  ]
+}
+```
 
-   * alopirina: [o seu domínio] ou aloworiginregexp: [seu regex de domínio]
-   * supported methods: [GET]
-   * caminhos permitidos: [&quot;/graphql/execute.json/.*&quot;]
+Se você tiver configurado um caminho personalizado para o terminal, também poderá usá-lo em `allowedpaths`.
+
+### Filtro de quem indicou {#referrer-filter}
+
+Além da configuração do CORS, um filtro de Quem indicou deve ser configurado para permitir o acesso de hosts de terceiros.
+
+Isso é feito adicionando um arquivo de configuração de Filtro de Quem indicou OSGi apropriado que:
+
+* especifica um nome de host de site confiável; `allow.hosts` ou `allow.hosts.regexp`,
+* concede acesso para esse nome de host.
+
+Por exemplo, para conceder acesso a solicitações com a Quem indicou `my.domain` você pode:
+
+```xml
+{
+    "allow.empty":false,
+    "allow.hosts":[
+      "my.domain"
+    ],
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "filter.methods":[
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}
+```
 
 >[!CAUTION]
 >
