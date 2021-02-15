@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 88%
+source-wordcount: '1894'
+ht-degree: 60%
 
 ---
 
@@ -20,49 +20,43 @@ As propriedades são distribuídas por várias guias.
 
 ### Básico {#basic}
 
-* **Título**
+* **Título e tags**
 
-   * O título da página é exibido em vários locais. Por exemplo, a lista da guia **Sites** e as visualizações de cartão/lista dos **Sites**.
-   * Este é um campo obrigatório.
+   * **Título**  - O título da página é exibido em vários locais. Por exemplo, a lista  **** Websitee a visualização  **** Sitescard/lista.
+      * Este é um campo obrigatório.
+   * **Tags** - Aqui você pode adicionar ou remover as tags da página, atualizando a lista na caixa de seleção.
+      * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o x.
+      * Uma tag totalmente nova pode ser inserida, digitando o nome em uma caixa de seleção vazia.
+         * A nova tag será criada ao apertar a tecla enter.
+         * A nova tag será então exibida com uma pequena estrela à direita, indicando que é uma nova tag.
+      * Com a funcionalidade suspensa, você pode selecionar a partir das tags existentes.
+      * Um x será exibido ao passar o mouse em cima de uma entrada de tag na caixa de seleção, que pode ser usado para remover a tag desta página.
+      * Para obter mais informações sobre tags, acesse [Usar tags](/help/sites-cloud/authoring/features/tags.md).
+   * **Ocultar na navegação** - Indica se a página está visível ou oculta na navegação de página do site resultante.
 
-* **Tags**
+* **Marcas**
 
-   * Aqui você pode adicionar ou remover as tags da página, atualizando a lista na caixa de seleção.
-   * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o x.
-   * Uma tag totalmente nova pode ser inserida, digitando o nome em uma caixa de seleção vazia.
-      * A nova tag será criada ao apertar a tecla enter.
-      * A nova tag será então exibida com uma pequena estrela à direita, indicando que é uma nova tag.
-   * Com a funcionalidade suspensa, você pode selecionar a partir das tags existentes.
-   * Um x será exibido ao passar o mouse em cima de uma entrada de tag na caixa de seleção, que pode ser usado para remover a tag desta página.
-   * Para obter mais informações sobre tags, acesse [Usar tags](/help/sites-cloud/authoring/features/tags.md).
+   Aplique uma identidade de marca consistente em todas as páginas, anexando um espaçador de marca a cada título de página. Esta funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior dos [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-* **Ocultar na navegação**
-
-   * Indica se a página está visível ou oculta na navegação de página do site resultante.
+   * **Substituir**  - Marque para definir o espaçador da marca nesta página.
+      * O valor será herdado por qualquer página secundária, a menos que os valores **Override** também estejam definidos.
+   * **Valor**  de substituição - O texto do espaçador da marca a ser anexado ao título da página.
+      * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Ciclismo da Toscana | Sempre pronto para a WKND&quot;
 
 * **ID HTML**
 
-   * ID HTML a ser aplicada ao componente.
+   * **ID**  - ID HTML para aplicar ao componente.
 
-* **Título da página**
+* **Mais títulos e descrições**
 
-   * Um título para ser usado na página. Normalmente usado pelos componentes do título. Caso esteja vazio, o **Título** será usado.
+   * **Título**  da página - Um título a ser usado na página. Normalmente usado pelos componentes do título. Caso esteja vazio, o **Título** será usado.
+   * **Título**  de navegação - Você pode especificar um título separado para uso na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, o  **** Título será usado.
+   * **Subtítulo**  - uma legenda para usar na página.
+   * **Descrição**  - sua descrição da página, finalidade ou quaisquer outros detalhes que você deseja adicionar.
 
-* **Titulo da Navegação**
+* **Horário ligado/desligado**
 
-   * Você pode especificar um título separado para uso na navegação (por exemplo, caso deseje algo mais conciso). Caso esteja vazio, o **Título** será usado.
-
-* **Legenda**
-
-   * Um subtítulo para usar na página.
-
-* **Descrição**
-
-   * A sua descrição da página, finalidade ou qualquer outro detalhe que desejar adicionar.
-
-* **Hora de ligar**
-
-   * A data e a hora em que a página publicada ficará visível (renderizada) no ambiente de publicação. A página deve ser publicada manualmente ou por replicação automática pré-configurada.
+   * **Hora**  - A data e a hora em que a página publicada ficará visível (renderizada) no ambiente de publicação. A página deve ser publicada manualmente ou por replicação automática pré-configurada.
 
       >[!NOTE]
       >
@@ -71,12 +65,10 @@ As propriedades são distribuídas por várias guias.
       * Se já [publicada (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) esta página será mantida em repouso (oculta) até a renderização no horário especificado.
       * Se não for publicada e configurada para replicação automática, a página será publicada automaticamente e renderizada no momento especificado.
       * Se não for publicada e não estiver configurada para replicação automática, a página não será publicada automaticamente, portanto, um 404 será visto quando uma tentativa de acessar a página for feita.
+   * **Hora**  de desligar - Semelhante e geralmente usado em combinação com  **Tempo** ligado, isso define o horário em que a página publicada ficará oculta no ambiente de publicação.
+
    * Deixe esses campos (**No tempo** e **Tempo desligado**) vazios para as páginas que deseja publicar imediatamente e que estão disponíveis no ambiente de publicação até que sejam desativadas (o cenário normal).
 
-* **Hora de desligar**
-
-   * Em paralelo a **No tempo**, isso define o horário em que a página publicada ficará oculta no ambiente de publicação.
-   * Deixe esses campos (**No tempo** e **Tempo desligado**) vazios para as páginas que deseja publicar imediatamente e que estão disponíveis no ambiente de publicação até que sejam desativadas (o cenário normal).
 
 * **URL personalizada**
 
@@ -92,31 +84,24 @@ As propriedades são distribuídas por várias guias.
    >* Não deve ser definido como uma página existente.
 
 
-* **Redirecionar URL personalizada**
+   * **Adicionar** - Toque ou clique para mostrar um campo para definir um URL personalizado para a página.
+      * Toque ou clique em novamente para adicionar vários.
+      * Toque ou clique no ícone **Remover** para excluir o URL personalizado.
+   * **Redirecionar URL**  personalizada - Indica se você deseja que a página use o URL personalizado.
 
-   * Indica se você deseja que a página use a URL personalizada.
+
+
 
 ### Avançado  {#advanced}
 
-* **Idioma**
+* **Configurações**
 
-   * O idioma da página.
+   * **Idioma**  - O idioma da página
+   * **Raiz**  do idioma - deve ser verificada se a página for a raiz de uma cópia do idioma
+   * **Redirecionar**  - Indica a página para a qual esta página deve redirecionar automaticamente
+   * **Design**  - Indica se a página é mostrada ou oculta na navegação da página do site resultante
+   * **Alias**  - Especifica um alias a ser usado com esta página
 
-* **Raiz do idioma**
-
-   * Deve ser marcado se a página for a raiz de uma cópia de idioma.
-
-* **Redirecionar**
-
-   * Indique a página de redirecionamento automático.
-
-* **Design**
-
-   * Indica se a página está visível ou oculta na navegação de página do site resultante.
-
-* **Alias**
-
-   * Especifique um alias a ser usado com esta página.
    >[!NOTE]
    >
    >O alias ajusta a propriedade `sling:alias` para definir um nome de alias para o recurso (isso afeta apenas o recurso, não o caminho).
@@ -129,52 +114,36 @@ As propriedades são distribuídas por várias guias.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Herdado de &lt;path>**
+* **Configuração**
 
-   * Indica se a página é herdada. e de onde.
+   * **Configuração**  em nuvem - O caminho para a configuração
 
-* **Configuração na nuvem**
+* **Configurações do modelo**
 
-   * O caminho para a configuração.
+   * **Modelos**  permitidos -  [define a lista de modelos que estarão ](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) disponíveis dentro desta subramificação
 
-* **Modelos permitidos**
+* **Requisitos de autenticação**
 
-   * [Defina a lista de modelos que estará disponível](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dentro desta sub-ramificação.
+   * **Ativar**  - Habilitar o uso da autenticação para acessar a página
 
-* **Habilitar** (Requisito de autenticação)
+      >[!NOTE]
+      >
+      >Os grupos de usuários fechados para a página são definidos na guia **[Permissões](#permissions)**.
 
-   * Habilite (ou desabilite) o uso de autenticação para acessar a página.
-   >[!NOTE]
-   >
-   >Os grupos de usuários fechados para a página são definidos na guia **[Permissões](#permissions)**.
+   * **Página**  de logon - A página a ser usada para o logon
 
-* **Página de logon**
+* **Exportar**
 
-   * A página para ser usada para logon.
-
-* **Exportar configuração**
-
-   * Especifique uma configuração de exportação.
+   * **Configuração**  de exportação - Especifica uma configuração de exportação
 
 ### Miniatura   {#thumbnail}
 
-Exibe a imagem de miniatura da página. É possível:
+Configurar a miniatura da página
 
-* **Gerar pré-visualização**
-
-   * Gere uma visualização da página para usar como miniatura.
-
-* **Carregar imagem**
-
-   * Carregue uma imagem para usar como miniatura.
-
-* **Selecionar imagem**
-
-   * Selecione um ativo existente para usar como miniatura.
-
-* **Reverter**
-
-   * Esta opção fica disponível após você ter feito uma alteração na miniatura. Se você não quiser manter sua alteração, poderá reverter essa alteração antes de salvar.
+* **Gerar Pré-visualização**  - gera uma pré-visualização da página para usar como miniatura
+* **Carregar imagem**  - Carregue uma imagem para usar como miniatura
+* **Selecionar imagem**  - Selecione um ativo existente para usar como miniatura
+* **Reverter**  - essa opção fica disponível depois que você altera a miniatura. Se você não quiser manter sua alteração, poderá reverter essa alteração antes de salvar.
 
 ### Redes sociais {#social-media}
 
@@ -189,9 +158,7 @@ Exibe a imagem de miniatura da página. É possível:
 
 ### Cloud Services {#cloud-services}
 
-* **Configurações do Cloud Service**
-
-   * Defina as propriedades para os serviços em nuvem.
+* **Configurações do Cloud Service** - Defina as propriedades para os serviços em nuvem
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -200,16 +167,14 @@ Exibe a imagem de miniatura da página. É possível:
 
 * **Configurações do ContextHub**
 
-   * Selecione Configuração do ContextHub e Caminho de segmentos.
-
-   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
-  -->
+   * **Caminho**  do ContextHub - Definir a configuração do  [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
+   * **Caminho**  dos segmentos - Definir o caminho  [dos segmentos](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
 * **Configuração de direcionamento**
 
-   * Selecione uma [Marca para especificar um escopo de direcionamento](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   * **Marca**  - Define uma  [Marca para especificar um escopo para a Definição de metas](/help/sites-cloud/authoring/personalization/targeted-content.md).
    >[!NOTE]
-   >Para selecionar essa opção, é necessário que a conta de usuário esteja no `Target Adminstrators`grupo.
+   >Para selecionar essa opção, é necessário que a conta de usuário esteja no `Target Administrators`grupo.
 
 ### Permissões   {#permissions}
 
@@ -227,25 +192,33 @@ Exibe a imagem de miniatura da página. É possível:
 
 ### Blueprint {#blueprint}
 
-* **Blueprint**
+Essa guia está visível somente para páginas que servem como blueprints.
 
-   * Defina as propriedades para uma página do Blueprint no gerenciamento de vários sites.
+* **Live Copies**  atuais - páginas do Lista baseadas nesta página do blueprint (ou seja, são Live Copies de)
 
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
-
-   * Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
-
+* **Configurações de implantação**  - controla as circunstâncias sob as quais as modificações serão propagadas para a Live Copy
 
 ### Live Copy   {#live-copy}
 
-* **Live Copy**
+* **Sincronizar**  - Sincronizar Live Copy com o Blueprint, mantendo as modificações locais
+* **Redefinir**  - Redefinir Live Copy para o estado do Blueprint, removendo as modificações locais
+* **Suspender**  - Suspender Live Copy de modificações adicionais na implantação
+* **Desanexar**  - Desanexar Live Copy do Blueprint
 
-   * Defina as propriedades para uma página de Live Copy no gerenciamento de vários sites. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
-   * Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
+* **Fonte**
 
-### Estrutura do site   {#site-structure}
+   * Exibe o caminho do blueprint para esta Live Copy
 
-* Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
+* **Status**
+
+   * Status atual da Live Copy do Lista da página
+
+* **Configuração**
+
+   * **Herança**  da Live Copy - se marcada, a configuração da Live Copy é efetiva para todos os filhos
+   * **Herdar configurações de implantação do pai**  - se marcada, a configuração de implantação é herdada do pai da página
+   * **Escolher configuração**  de implantação - define as circunstâncias sob as quais as modificações serão propagadas do Blueprint e só estarão disponíveis quando  **herdar configurações de implantação do** Parentis não selecionado
 
 ## Editar as propriedades da página {#editing-page-properties-1}
 
