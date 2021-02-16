@@ -2,9 +2,9 @@
 title: Integração com o Adobe Target
 description: 'Integração com o Adobe Target '
 translation-type: tm+mt
-source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
+source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '1048'
 ht-degree: 2%
 
 ---
@@ -33,9 +33,33 @@ O Adobe Launch é necessário para gerenciar as propriedades do cliente para o A
 4. Preencha os detalhes (veja abaixo) e selecione **Connect**.
    ![](assets/open_screen1.png "Connect")
 
-### Configuração IMS
+### Configuração IMS {#ims-configuration}
 
 Uma configuração IMS para o Launch e o Público alvo é necessária para integrar corretamente o Público alvo ao AEM e ao Launch. Embora a configuração IMS para Inicialização seja pré-configurada em AEM como um Cloud Service, a configuração IMS do Público alvo deve ser criada (após o Público alvo ser provisionado). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [esta página](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) para saber como criar a configuração IMS do Público alvo.
+
+### ID do locatário da Adobe Target e Código do cliente Adobe Target {#tenant-client}
+
+Ao configurar os campos Adobe Target Tenant ID e Adobe Target Client Code, esteja ciente do seguinte:
+
+1. Para a maioria dos clientes, a ID do locatário e o código do cliente são os mesmos. Isso significa que ambos os campos contêm as mesmas informações e são idênticos. Certifique-se de inserir a ID do locatário em ambos os campos.
+2. Para fins herdados, também é possível inserir valores diferentes nos campos ID do locatário e Código do cliente.
+
+Em ambos os casos, esteja ciente de que:
+
+* Por padrão, o Código do cliente (se adicionado primeiro) também será copiado automaticamente no campo ID do locatário.
+* Você tem a opção de alterar a ID do locatário padrão definida.
+* Dessa forma, as chamadas de backend para o Público alvo serão baseadas na ID do locatário e as chamadas do cliente para o Público alvo serão baseadas no Código do cliente.
+
+Como já foi dito, o primeiro caso é o mais comum para AEM como Cloud Service. De qualquer forma, verifique se os campos **e** contêm as informações corretas, dependendo de seus requisitos.
+
+>[!NOTE]
+>
+> Se você quiser editar uma Configuração de Público alvo já existente:
+>
+> 1. Insira novamente a ID do locatário.
+> 2. Conecte-se novamente ao Público alvo.
+> 3. Salve a configuração.
+
 
 ### Edição da Configuração do Público alvo {#edit-target-configuration}
 
@@ -90,7 +114,7 @@ Uma propriedade é um container que será preenchido com extensões, regras e el
 
 ### Criando um elemento de dados {#data-element}
 
-**Os** elementos de dados são os espaços reservados para os quais você pode mapear os parâmetros do hub de contexto.
+**Os** elementos de dados são os espaços reservados para os quais você pode mapear parâmetros de hub de contexto.
 
 1. Selecione **Elementos de dados**.
 2. Selecione **Adicionar elemento de dados**.
