@@ -2,9 +2,9 @@
 title: Alterações notáveis em [!DNL Adobe Experience Manager Assets] como a [!DNL Cloud Service]
 description: Alterações notáveis em  [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] em comparação com [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
+source-git-commit: 035d77ee4a6f9ef3593a34b2691ab6545d9e4f11
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '697'
 ht-degree: 3%
 
 ---
@@ -31,10 +31,14 @@ O upload de ativos é otimizado para proporcionar eficiência, permitindo um mel
 * O fluxo de trabalho padrão **[!UICONTROL DAM Asset Update]** nas versões anteriores do não está mais disponível. [!DNL Experience Manager] Em vez disso, os microserviços de ativos fornecem um serviço dimensionável e prontamente disponível que abrange a maioria do processamento de ativos padrão (execuções, extração de metadados e extração de texto para indexação).
    * Consulte [configurar e usar os microserviços de ativos](/help/assets/asset-microservices-configure-and-use.md)
    * Para ter etapas personalizadas de fluxo de trabalho no processamento, [workflows pós-processamento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) podem ser usados.
+* Não há suporte para o write-back de metadados.
 * Os ativos que são carregados usando o Gerenciador de pacotes exigem o reprocessamento manual usando a ação **[!UICONTROL Reprocessar ativo]** na interface [!DNL Assets].
-* Um ativo digital sem uma extensão ou com uma extensão incorreta não é processado conforme desejado. Por exemplo, ao fazer upload desses ativos, nada acontece ou um perfil de processamento incorreto pode se aplicar ao ativo. Os usuários ainda podem armazenar os arquivos binários no DAM.
+* Um ativo digital sem uma extensão ou com uma extensão incorreta não é processado conforme desejado. [A ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) detecção automática de tipo MIME não está disponível. Por exemplo, ao fazer upload desses ativos, nada acontece ou um perfil de processamento incorreto pode se aplicar ao ativo. Os usuários ainda podem armazenar os arquivos binários sem uma extensão no DAM.
+* [[!DNL Assets] A ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) experiência com o home page não está disponível.
+* A detecção de ativos de duplicado funciona de forma diferente em comparação a [como funcionava no Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).
+* Para execuções somente de posicionamento (FPO) são geradas de forma diferente em comparação ao modo como funcionam em versões anteriores [!DNL Experience Manager]. Consulte [representação FPO para Experience Manager como Cloud Service](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
 
-As representações padrão geradas com os microserviços de ativos são armazenadas de forma compatível com versões anteriores nos nós do repositório de ativos (mesmas convenções de nomenclatura).
+As representações padrão geradas com microserviços de ativos são armazenadas de forma compatível nos nós do repositório de ativos usando as mesmas convenções de nomenclatura.
 
 ## Desenvolver e testar microserviços de ativos {#asset-microservices}
 
