@@ -2,9 +2,9 @@
 title: Implantar seu código - Cloud Services
 description: Implantar seu código - Cloud Services
 translation-type: tm+mt
-source-git-commit: aef8afd3efca4d6d5db9f457e952958ee9ca38de
+source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
@@ -56,13 +56,9 @@ Consulte [Teste funcional do produto](/help/implementing/cloud-manager/functiona
    * Teste funcional personalizado: Esta etapa do pipeline está sempre presente e não pode ser ignorada. No entanto, se nenhum JAR de teste for produzido pela compilação, o teste será aprovado por padrão.\
       Consulte [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obter mais detalhes.
 
-   * Teste de interface personalizada: Esta etapa do pipeline está sempre presente e não pode ser ignorada. Os testes personalizados da interface do usuário podem ser gravados e permitem que os clientes criem rapidamente conjuntos de automação de testes para validar aplicativos da Web e móveis criados em AEM.
-Consulte [Teste de interface personalizada](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obter mais detalhes.
 
    * Auditoria de experiência: Esta etapa do pipeline está sempre presente e não pode ser ignorada. Como um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após testes funcionais personalizados que executarão as verificações. As páginas configuradas serão enviadas ao serviço e avaliadas. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
 Consulte [Entendendo os resultados da auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
-
-      ![](/help/implementing/cloud-manager/assets/deploy-testingscreen.png)
 
 
 
