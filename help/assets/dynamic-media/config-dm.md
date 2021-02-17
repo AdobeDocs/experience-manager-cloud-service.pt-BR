@@ -2,9 +2,9 @@
 title: Configuração do Dynamic Media Cloud Service
 description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 5a50226bfae12440d07f9a21233ea06e118addac
 workflow-type: tm+mt
-source-wordcount: '3869'
+source-wordcount: '3868'
 ht-degree: 8%
 
 ---
@@ -46,7 +46,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Criação de uma nova configuração do Dynamic Media no Cloud Services {#configuring-dynamic-media-cloud-services}
+## Criação de uma configuração Dynamic Media no Cloud Services {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
@@ -157,7 +157,7 @@ A senha alterada é salva quando você toca em **[!UICONTROL Salvar]** no canto 
 
 1. Em AEM, toque no logotipo AEM para acessar o console de navegação global.
 1. No lado esquerdo do console, toque no ícone Ferramentas e em **[!UICONTROL Cloud Services > Configuração do Dynamic Media.]**
-1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, toque em **[!UICONTROL global]** (não toque nem selecione o ícone de pasta à esquerda de **[!UICONTROL global]**) e, em seguida, toque em **[!UICONTROL Editar.]**
+1. Na página Dynamic Media Configuration Browser, no painel esquerdo, toque em **[!UICONTROL global]** (não toque nem selecione o ícone de pasta à esquerda de **[!UICONTROL global]**) e, em seguida, toque em **[!UICONTROL Editar.]**
 1. Na página **[!UICONTROL Editar Configuração do Dynamic Media]**, logo abaixo do campo **[!UICONTROL Senha]**, toque em **[!UICONTROL Alterar Senha.]**
 1. Na caixa de diálogo **[!UICONTROL Alterar senha]**, faça o seguinte:
 
@@ -404,7 +404,7 @@ Para atualizar a fila do Fluxo de Trabalho de Granite:
 
 1. No campo **[!UICONTROL Máximo de trabalhos paralelos]**, altere o número para o valor desejado.
 
-   Por padrão, o número máximo de trabalhos paralelos depende do número de núcleos de CPU disponíveis. Por exemplo, em um servidor de 4 núcleos, atribui 2 processos de trabalho. (Um valor entre 0,0 e 1,0 é baseado em relação, ou qualquer número maior que 1 atribuirá o número de threads de trabalho.)
+   Por padrão, o número máximo de trabalhos paralelos depende do número de núcleos de CPU disponíveis. Por exemplo, em um servidor de 4 núcleos, atribui 2 threads de trabalho. (Um valor entre 0,0 e 1,0 é baseado em relação, ou qualquer número maior que 1 atribuirá o número de threads de trabalho.)
 
    Para a maioria dos casos de uso, a configuração padrão 0.5 é suficiente.
 
