@@ -2,9 +2,9 @@
 title: Banners em carrossel
 description: Saiba como trabalhar com banners de carrossel no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: a3482d4e22ceb11d18a693fe2975d5b78d843de3
+source-git-commit: 3391045d867cdfc21ab9784e20c6893d38bc78f0
 workflow-type: tm+mt
-source-wordcount: '4575'
+source-wordcount: '4561'
 ht-degree: 3%
 
 ---
@@ -86,16 +86,16 @@ Para começar a trabalhar rapidamente:
    * [Adicione um banner de carrossel à ](#adding-a-carousel-banner-to-your-website-page)página do siteVocê pode adicionar o URL do banner de carrossel ou incorporar o código que você copiou na página do site.
 
       * [Integre o banner do carrossel a uma visualização](#integrating-the-carousel-banner-with-an-existing-quickview) rápida existente. Se você estiver usando um sistema de gestão de conteúdo da Web de terceiros, é necessário integrar o novo banner do carrossel com a implementação da visualização Rápida existente em seu site.
-   * [Adicione um banner de carrossel ao seu site no Experience ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) Manager. Se você for um cliente do Experience Manager Sites, poderá adicionar o conjunto de carrossel diretamente à página no Experience Manager, usando o componente de Mídia interativa.
+   * [Adicione um banner de carrossel ao seu site no Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Se você for um cliente do Experience Manager Sites, poderá adicionar o carrossel definido diretamente à página usando o componente de Mídia interativa.
 
 
 Se precisar editar Conjuntos de carrossel, consulte [editar Conjuntos de carrossel.](#editing-carousel-sets) Além disso, você pode visualização e editar as propriedades [ do Conjunto de ](/help/assets/manage-digital-assets.md#editing-properties)carrossel.
 
 ## Como identificar as variáveis de hotspot e mapa de imagem {#identifying-hotspot-and-image-map-variables}
 
-ao identificar variáveis dinâmicas usadas pela implementação da visualização Rápida existente. Isso ajuda a inserir os pontos de acesso ou os dados do mapa de imagem corretamente durante o processo de criação do conjunto de carrossel nos Ativos do Experience Manager.
+ao identificar variáveis dinâmicas usadas pela implementação da visualização Rápida existente. Este método ajuda a inserir os pontos de acesso ou os dados do mapa de imagem corretamente durante o processo de criação do conjunto de carrossel nos Ativos do Experience Manager.
 
-Quando você adiciona pontos de acesso ou mapas de imagem a uma imagem de banner, atribui um SKU e variáveis adicionais opcionais a cada ponto de acesso ou mapa de imagem. Essas variáveis são usadas posteriormente para corresponder a pontos de acesso ou mapas de imagem com conteúdo de visualização rápida.
+Quando você adiciona pontos de acesso ou mapas de imagem a uma imagem de banner, atribui um SKU (Stock Keeping Unit). Também é possível atribuir variáveis adicionais opcionais a cada ponto de acesso ou mapa de imagem. Essas variáveis são usadas posteriormente para corresponder a pontos de acesso ou mapas de imagem com conteúdo de visualização rápida.
 
 <!-- LEAVE; COMMERCE BEING ADDED LATER
 
@@ -135,7 +135,7 @@ Durante esse processo, é importante visitar diferentes áreas do seu site, com 
 
 No caso mais simples, a única parte variável no URL de visualização rápida é o SKU do produto. Nesse caso, o valor SKU é o único dado necessário para adicionar pontos de acesso ou mapas de imagem à imagem do banner.
 
-No entanto, em casos complexos, o URL de visualização rápida tem elementos variáveis diferentes além do SKU, como ID de categoria, código de cor, código de tamanho e assim por diante. Nesses casos, cada elemento é uma variável separada no ponto de conexão ou na definição de dados do mapa de imagem no recurso de banner do carrossel.
+No entanto, em casos complexos, o URL de visualização rápida tem elementos variáveis diferentes além do SKU. Alguns desses elementos incluem ID de categoria, código de cor, código de tamanho e assim por diante. Nesses casos, cada elemento é uma variável separada no ponto de conexão ou na definição de dados do mapa de imagem no recurso de banner do carrossel.
 
 Considere os seguintes exemplos de URLs de visualização Rápida e suas variáveis resultantes de hotspot ou mapa de imagem:
 
@@ -215,7 +215,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
    Para excluir um slide, toque ou clique no slide e toque ou clique em **[!UICONTROL Excluir slide]** na barra de ferramentas. Para mover um slide, toque no ícone de reordenação e segure e mova-se para o local desejado.
 
 1. Depois de adicionar as imagens nos slides, adicione um ponto de acesso, um mapa de imagens ou ambos à imagem. Consulte [adicionar pontos de acesso ou mapas de imagem](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. Você pode alterar o design visual e o comportamento dos conjuntos de carrossel tocando ou clicando nas guias Comportamento e Aparência e ajustando a aparência do banner do carrossel ou como os componentes específicos se comportam. Consulte [gerenciar predefinições do visualizador](/help/assets/dynamic-media/viewer-presets.md) para obter mais informações sobre como usar o editor do visualizador.
+1. Você pode alterar o design visual e o comportamento dos conjuntos de carrossel. Toque ou clique nas guias Comportamento e Aparência e ajuste a aparência do banner do carrossel ou como os componentes específicos se comportam. Consulte [gerenciar predefinições do visualizador](/help/assets/dynamic-media/viewer-presets.md) para obter mais informações sobre como usar o editor do visualizador.
 
    >[!NOTE]
    >
@@ -253,7 +253,7 @@ Consulte [(Opcional) Visualizando banners do carrossel.](#optional-previewing-ca
 
 >[!NOTE]
 >
->Quando você adiciona pontos de acesso a uma imagem em [Imagem interativa](/help/assets/dynamic-media/interactive-images.md) ou em um banner do carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados, em relação à localização da imagem. Esse ponto é verdadeiro independentemente de ser uma Imagem interativa ou um banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem, juntamente com seus dados de ponto de conexão definidos, em qualquer um dos visualizadores.
+>Quando você adiciona pontos de acesso a um banner de imagem, as informações do ponto de acesso são armazenadas no mesmo local de metadados, em relação ao local da imagem. Esse ponto é verdadeiro independentemente de ser uma Imagem interativa ou um banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem, juntamente com seus dados de ponto de conexão definidos, em qualquer um dos visualizadores.
 Esteja ciente, no entanto, de que os Carousel Banners oferecem suporte para mapas de imagem em imagens que também podem conter pontos de conexão; uma imagem interativa não. Lembre-se desta dica se você pretende criar uma imagem interativa ou um banner de carrossel que use a mesma imagem. Considere criar imagens interativas e banners de carrossel usando cópias separadas da mesma imagem.
 
 >[!NOTE]
@@ -285,7 +285,7 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
       * Se você não for um cliente do Experience Manager Sites <!-- or Ecommerce -->:
 
          * Defina variáveis. Consulte [Identificando variáveis de ponto de acesso](#identifying-hotspot-and-image-map-variables).
-         * Em seguida, insira manualmente o valor SKU. No campo de texto Valor SKU, digite o SKU do produto (Stock Keeping Unit), que é um identificador exclusivo para cada produto ou serviço distinto que você oferta. O valor SKU inserido preenche automaticamente a parte variável do modelo de visualização Rápida para que o sistema saiba associar o ponto de acesso tocado a uma visualização Rápida do SKU.
+         * Em seguida, insira manualmente o valor SKU. No campo de texto Valor SKU, digite o SKU do produto (Stock Keeping Unit), que é um identificador exclusivo para cada produto ou serviço distinto que você oferta. O valor SKU inserido preenche automaticamente a parte variável do modelo de visualização Rápida. O sistema agora sabe associar o ponto de conexão com uma visualização rápida de SKU específica.
          * (Opcional) Se houver outras variáveis na visualização Rápida que devem ser usadas para identificar um produto, toque em **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável extra. Por exemplo, categoria=Masculino é uma variável adicionada.
 
          * Consulte [Trabalhando com seletores](/help/assets/dynamic-media/working-with-selectors.md) para obter mais informações.
@@ -304,7 +304,7 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
 
    * Toque em **[!UICONTROL Fragmento de experiência]**.
 
-      * Se você for um cliente AEM Sites, toque no ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Para retornar à página de gerenciamento do Hotspot, toque ou clique no Fragmento de experiência que deseja usar e, em seguida, toque em Selecionar no canto superior direito da página.
+      * Se você for um cliente AEM Sites, toque no ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Para retornar à página de gerenciamento do Hotspot, toque no Fragmento de experiência que deseja usar e, em seguida, toque em Selecionar no canto superior direito da página.
 Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Especifique a largura e a altura do Fragmento de experiência, conforme exibido no banner.
@@ -348,7 +348,7 @@ Usuários não administrativos devem ser adicionados ao grupo **[!UICONTROL dam-
 
 1. Para editar o Conjunto de carrossel, execute um dos procedimentos a seguir:
 
-   * Para adicionar um slide, toque no ícone **[!UICONTROL Adicionar slide]** e navegue até o ativo que deseja adicionar ao slide e toque ou clique na marca de seleção.
+   * Para adicionar um slide, toque no ícone **[!UICONTROL Adicionar slide]**. Navegue até o ativo que deseja adicionar ao slide e toque ou clique na marca de seleção.
    * Para reordenar os slides, arraste um slide para um novo local (selecione o ícone de reordenação para mover itens).
    * Para adicionar um ponto de acesso ou mapa de imagem, clique nos ícones de ponto de acesso ou mapa de imagem e consulte [adicionar pontos de acesso e mapas de imagem](#adding-hotspots-or-image-maps-to-an-image-banner).
    * Para editar a aparência ou o comportamento do conjunto de carrossel, toque na guia **[!UICONTROL Aparência]** ou na guia **[!UICONTROL Comportamento]** e defina as opções desejadas.
@@ -362,7 +362,7 @@ Usuários não administrativos devem ser adicionados ao grupo **[!UICONTROL dam-
 
 ## (Opcional) Visualização de banners do carrossel {#optional-previewing-carousel-banners}
 
-Você pode usar a Pré-visualização para ver a aparência do seu banner de carrossel para os clientes e testar os pontos de conexão e mapas de imagem dos banners de carrossel para garantir que eles estejam se comportando como esperado.
+Você pode usar a Pré-visualização para ver a aparência do seu banner de carrossel para os clientes. O uso da Pré-visualização também permite testar os pontos de conexão e os mapas de imagem do banner do carrossel para garantir que eles se comportem como esperado.
 
 Quando estiver satisfeito com o banner do carrossel, você poderá publicá-lo.
 Consulte [Incorporar o Visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
@@ -391,11 +391,11 @@ Você pode pré-visualização banners de carrossel do Editor de carrossel (mét
 
 ## Publicando banners do carrossel {#publishing-carousel-banners}
 
-Publique o carrossel para usá-lo. A publicação de um conjunto de carrossel ativa o URL e o código incorporado. Ele também publica o carrossel na nuvem do Dynamic Media, que é integrada a uma CDN para delivery escaláveis e de desempenho.
+Para usar o carrossel, você deve publicá-lo. A publicação de um conjunto de carrossel ativa o URL e o código incorporado. Ele também publica o carrossel na nuvem do Dynamic Media, que é integrada a uma CDN para delivery escaláveis e de desempenho.
 
 >[!NOTE]
 Se você usar uma imagem interativa existente com pontos de acesso para seu banner de carrossel, deverá publicar a imagem interativa separadamente depois de publicar o banner do carrossel.
-Além disso, se você modificar uma imagem interativa publicada pré-existente que esteja usando em um banner de carrossel, deverá publicar a imagem interativa antes que essas alterações sejam refletidas no banner de carrossel.
+Além disso, se você modificar uma imagem interativa publicada pré-existente que você usa em um banner de carrossel, publique a imagem interativa para que essas alterações sejam refletidas no banner de carrossel.
 
 Consulte [Publicar Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obter informações sobre como publicar banners de carrossel.
 
@@ -406,7 +406,7 @@ Depois de fazer upload de imagens de banner para criar um carrossel, pontos de a
 >[!NOTE]
 Se você for um cliente da AEM Sites, poderá adicionar o banner do carrossel diretamente à sua página arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-No entanto, se você for um cliente independente do Experience Manager Assets, poderá adicionar manualmente o banner do carrossel à landing page do site, conforme descrito neste tópico.
+Entretanto, se você for um cliente independente do Experience Manager Assets, poderá adicionar manualmente o banner do carrossel à landing page do site.
 
 1. Copie o código incorporado do conjunto de carrossel publicado.
 Consulte [Incorporar o Visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
@@ -432,7 +432,7 @@ A implementação da visualização Rápida existente normalmente representa uma
 
 Essas chamadas não representam chamadas de API públicas independentes que podem ser chamadas pela lógica da página da Web a partir de uma etapa arbitrária. Em vez disso, é uma chamada encadeada na qual cada próxima etapa está oculta na última fase (retorno de chamada) da etapa anterior.
 
-Ao mesmo tempo que o banner do carrossel substitui a etapa 1 e parcialmente a etapa 2, quando um usuário clica em um ponto de conexão ou mapa de imagem dentro do banner do carrossel, essa interação do usuário é feita pelo visualizador. O visualizador retorna um evento para a página da Web que contém todos os dados de hotspot ou mapa de imagem adicionados anteriormente.
+Ao mesmo tempo que o banner do carrossel substitui a etapa 1 e parcialmente a etapa 2, quando um usuário clica em um ponto de conexão ou mapa de imagem, essa interação é feita pelo visualizador. O visualizador retorna um evento para a página da Web que contém todos os dados de hotspot ou mapa de imagem adicionados anteriormente.
 
 Nesse manipulador de eventos, o código front-end faz o seguinte:
 
