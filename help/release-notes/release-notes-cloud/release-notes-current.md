@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 77d0ae925ed3837c70e58c110b6c8360790b6aee
+source-git-commit: 6f48b5daa5b47ad19db8b3431350111364f962fc
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1178'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Consulte [Usando a ferramenta de mapeamento do usuário](https://experienceleagu
 
 ### Data de lançamento {#release-date-bpa}
 
-A data de lançamento do Best Practices Analyzer v2.1.0 é 11 de fevereiro de 2021.
+A data de lançamento do Best Practices Analyzer v2.1.2 é 18 de fevereiro de 2021.
 
 ### Novidades do Analisador de práticas recomendadas {#what-is-new-bpa}
 
@@ -153,6 +153,19 @@ A data de lançamento do Best Practices Analyzer v2.1.0 é 11 de fevereiro de 20
 * Capacidade de detectar o tipo de armazenamento de nó e armazenamento de dados usado.
 * Capacidade de detectar o uso do Dynamic Media.
 * Capacidade de detectar a versão do Java usada.
+
+## Ferramentas de refatoração de código {#code-refactoring-tools}
+
+### Novidades das Ferramentas de Refatoração de Código {#what-is-new-crt}
+
+* Nova versão do plug-in AIO-CLI lançada. A versão mais recente deste plug-in inclui várias correções de erros para o Repository Modernizer.
+Consulte [Experiência unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para saber mais sobre este plug-in.
+
+### Correções de erros {#bug-fixes-crt}
+
+* Várias correções de erros feitas no Repository Modernizer.
+Consulte [Recurso GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obter mais detalhes.
+
 
 
 
