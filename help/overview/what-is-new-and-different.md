@@ -2,9 +2,9 @@
 title: O que é diferente e o que é novo - Adobe Experience Manager como Cloud Service
 description: 'O que é diferente e o que é novo - Adobe Experience Manager (AEM) como Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 1563da55c3dfed52088d5309eeac071918ff0d51
+source-git-commit: 938f2b45a99e8884c166656694424d2123121369
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1885'
 ht-degree: 10%
 
 ---
@@ -121,13 +121,7 @@ O Cloud Manager evoluiu como um portal de autoatendimento onde os principais com
 
 * Ser notificado sobre eventos importantes do ciclo de vida desses componentes (por exemplo, atualizações de produtos).
 
-Atualmente, o Cloud Manager pode criar ambientes em três regiões geográficas (com mais regiões a seguir):
-
-* EUA (Leste)
-
-* EMEA (Países Baixos)
-
-* APAC (Austrália)
+O Cloud Manager cria ambientes em datacenters em várias regiões geográficas, proporcionando cobertura global. Os pontos de presença CDN (PoP) garantem delivery de conteúdo de baixa latência para clientes localizados em todo o mundo.
 
 >[!NOTE]
 >Consulte [Acessar o Experience Manager como Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) para começar a usar o Cloud Manager em AEM como Cloud Service.
