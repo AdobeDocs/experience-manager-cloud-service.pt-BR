@@ -2,15 +2,22 @@
 title: Pessoas certas, funções certas
 description: Pessoas certas, funções certas
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 
 # **Primeiro, ter as pessoas certas nos papéis certos**
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_chooseteam"
+>title="Escolha o grupo certo"
+>abstract="Colocando as pessoas certas nos trabalhos certos para ajudar a direcionar sua implantação do Adobe Experience Manager para o sucesso."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Alinhamento de KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="Avaliando KPIs"
 
 É possível que em sua organização vários departamentos tenham diferentes aspectos da experiência digital. Sem governança, o palco está definido para debates intermináveis, lutas internas e confusão.
 
