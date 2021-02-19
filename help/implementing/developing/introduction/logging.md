@@ -2,9 +2,9 @@
 title: Logs
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar registro de dados.
 translation-type: tm+mt
-source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
+source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2314'
 ht-degree: 3%
 
 ---
@@ -81,7 +81,7 @@ Produção</td>
 <td>
 ERRO</td>
 <td>
-Descreve as condições que indicam uma falha e que precisam ser resolvidas.<br>
+Descreve as condições que indicam uma falha e precisam ser resolvidas.<br>
 Quando o registro em log ERROR está ativo, somente as declarações que indicam falhas são registradas em log. Declarações de log de ERROS indicam um problema grave que deve ser resolvido o mais rápido possível.</td>
 <td>
 <ul>
@@ -598,6 +598,12 @@ As propriedades acima devem ser especificadas para cada combinação de tipo de 
 >[!NOTE]
 >
 >O encaminhamento de segmentos para ambientes de programas sandbox não é suportado.
+
+Certifique-se de que a solicitação inicial inclua todos os ambientes dev que devem ser ativados, além dos ambientes stage/prod.
+
+Se qualquer novo ambiente dev criado após a solicitação inicial tiver o encaminhamento Splunk, mas não o tiver ativado, uma solicitação adicional deverá ser feita.
+
+Observe também que, se ambientes dev tiverem sido solicitados, é possível que outros ambientes dev que não estejam na solicitação ou ambientes de caixa de proteção tenham o encaminhamento Splunk ativado e compartilhem um índice Splunk. Os clientes podem usar o campo `aem_env_id` para distinguir entre esses ambientes.
 
 Abaixo você encontrará um exemplo de solicitação de suporte ao cliente:
 
