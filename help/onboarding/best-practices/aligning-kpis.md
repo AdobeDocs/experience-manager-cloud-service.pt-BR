@@ -2,9 +2,9 @@
 title: Alinhamento de KPIs
 description: Alinhamento de KPIs
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,13 @@ ht-degree: 0%
 
 
 # Para escolher os KPIs certos, start com seus objetivos de negócios
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_alignkpis"
+>title="Alinhamento de KPIs"
+>abstract="Em um mundo digital, você pode medir quase tudo. Escolher os KPIs certos para sua implementação do Adobe Experience Manager ajudará sua equipe a se concentrar no que mais importa."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="Avaliando KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Escolhendo a equipe certa"
 
 Em um mundo digital, você pode medir quase tudo. A escolha de três KPIs para sua implementação do Adobe Experience Manager ajudará sua equipe a se concentrar no que mais importa.
 
