@@ -2,9 +2,9 @@
 title: Geração de Tokens de acesso para APIs do servidor
 description: Saiba como facilitar a comunicação entre um servidor de terceiros e o AEM como Cloud Service gerando um token JWT seguro
 translation-type: tm+mt
-source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
+source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ exchange(config).then(accessToken => {
 
 A mesma troca pode ser executada em qualquer idioma capaz de gerar um token JWT assinado com o formato correto e chamar as APIs IMS Token Exchange.
 
-O token de acesso definirá quando expirará, que é normalmente de 12 horas. Há um código de amostra no repositório git para gerenciar um token de acesso e atualizá-lo antes de expirar.
+O token de acesso definirá quando expirará, que é normalmente de 24 horas. Há um código de amostra no repositório git para gerenciar um token de acesso e atualizá-lo antes de expirar.
 
 ### Chamando a API AEM {#calling-the-aem-api}
 
@@ -120,7 +120,7 @@ Consulte a documentação [Diretrizes do desenvolvedor](/help/implementing/devel
 
 >[!NOTE]
 >
->O token de acesso de desenvolvimento local é válido por 24 horas após o que deve ser regenerado utilizando o mesmo método.
+>O token de acesso de desenvolvimento local é válido por um período máximo de 24 horas, após o qual deve ser regenerado utilizando o mesmo método.
 
 Os desenvolvedores podem usar esse token para fazer chamadas de seu aplicativo de teste não AEM para um AEM como ambiente. Normalmente, o desenvolvedor usará esse token com o aplicativo que não é AEM em seu próprio laptop. Além disso, o AEM como uma nuvem normalmente é um ambiente que não é de produção.
 
