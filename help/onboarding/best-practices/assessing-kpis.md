@@ -2,15 +2,22 @@
 title: Acessar KPIs
 description: Acessar KPIs
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
 
 
 # Você está medindo as coisas que mais importam?
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_assesskpis"
+>title="Avaliando KPIs"
+>abstract="Antes de começar o lançamento do Adobe Experience Manager, todos os que tiverem participação no projeto devem saber quais são seus três principais KPIs e por que eles importam."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Alinhamento de KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Escolhendo a equipe certa"
 
 Antes de começar o lançamento do Adobe Experience Manager, todos os que tiverem participação no projeto devem saber quais são seus três principais KPIs e por que eles importam.
 
