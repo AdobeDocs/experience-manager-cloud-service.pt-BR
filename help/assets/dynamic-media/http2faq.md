@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre entrega de conteúdo HTTP2
 description: Saiba mais sobre o delivery de conteúdo HTTP2.
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '758'
 ht-degree: 3%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Perguntas frequentes sobre entrega de conteúdo HTTP2{#http-delivery-of-content-faq}
 
-O Adobe está empolgado em anunciar a disponibilidade do delivery HTTP/2 do conteúdo. Ao usar HTTP/2, você observará um aumento geral no desempenho.
+O Adobe está empolgado em anunciar a disponibilidade do delivery HTTP/2 do conteúdo. Ao usar HTTP/2, ocorre um aumento geral no desempenho.
 
 ## O que é HTTP/2? {#what-is-http}
 
@@ -24,7 +24,7 @@ O site a seguir descreve o HTTP/2 e seus benefícios de uma forma breve e simple
 
 ## Quais são os principais benefícios da mudança para HTTP/2 para o delivery de conteúdo? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-O aprimoramento do desempenho varia muito com base em fatores como o código do seu site, a forma como você está usando o Dynamic Media, o dispositivo do consumidor, a tela e o local, e assim por diante.
+A melhoria do desempenho varia muito porque se baseia em vários fatores. Por exemplo, o código do seu site, como você usa o Dynamic Media, o dispositivo do consumidor, a tela e o local.
 
 Os resultados obtidos foram os seguintes:
 
@@ -49,7 +49,7 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 ## Qual é o processo para habilitar HTTP/2 para minha conta Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-Você deve [usar o Admin Console para criar um caso de suporte](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) e solicitar a alternância para HTTP/2; isso não é feito automaticamente para você.
+[Use a Admin Console para criar um ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) caso de suporte e solicitar a alternância para HTTP/2; isso não é feito automaticamente para você.
 
 1. Forneça as seguintes informações em seu caso de suporte:
 
@@ -69,7 +69,7 @@ Você deve [usar o Admin Console para criar um caso de suporte](https://helpx.ad
    Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**. Procure o campo **[!UICONTROL Published Server Name]**. Se você estiver usando um domínio Dynamic Media genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
 
    1. O suporte técnico o adiciona à lista de espera do cliente HTTP/2 com base na ordem em que as solicitações foram enviadas.
-   1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Suporte entrará em contato com você para coordenar a transição e definir uma data de público alvo.
+   1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Atendimento ao cliente entrará em contato com você para coordenar a transição e definir uma data de público alvo.
    1. Você será notificado após a conclusão e poderá verificar uma transição bem-sucedida em HTTP2.
 
 
@@ -80,14 +80,14 @@ As solicitações são processadas na ordem em que são recebidas pelo Suporte T
 
 >[!NOTE]
 >
->Pode haver um longo lead time porque a transição para HTTP/2 envolve a limpeza do cache. Portanto, somente algumas transições de clientes podem ser tratadas de cada vez.
+>Há um longo lead time porque a transição para HTTP/2 envolve a limpeza do cache. Portanto, somente algumas transições de clientes podem ser tratadas de cada vez.
 
 ## Quais são os riscos com a mudança para HTTP/2? {#what-are-the-risks-with-moving-to-http}
 
 A transição para HTTP/2 limpa o cache no CDN porque envolve a mudança para uma nova configuração de CDN.
 
-O conteúdo armazenado em cache atinge diretamente os servidores de Adobe não armazenados em cache até que o cache seja reconstruído novamente. Por esse motivo, a Adobe planeja lidar com algumas transições de clientes de cada vez para que o desempenho aceitável seja mantido ao retirar solicitações de nossa origem.
+O conteúdo armazenado em cache atinge diretamente os servidores de Adobe não armazenados em cache até que o cache seja reconstruído novamente. Por causa dessa ação, o Adobe planeja lidar com algumas transições de clientes de cada vez. Esse método garante que o desempenho aceitável seja mantido ao retirar solicitações da origem.
 
 ## Como verificar se um URL ou site é ativado com HTTP/2? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-Você precisa baixar uma externidade para usar com seu navegador da Web. Para Firefox e Chrome há uma extensão chamada **[!UICONTROL HTTP/2 e Indicador SPDY]**. Os navegadores só suportam HTTP/2 com segurança, portanto, é necessário chamar um URL com HTTPS para verificar. Se HTTP/2 for suportado, isso será indicado pela extensão na forma de um símbolo azul de Flash e um cabeçalho &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.
+Baixe uma extensão para usar com seu navegador da Web. Para Firefox e Chrome, há uma extensão chamada **[!UICONTROL HTTP/2 e Indicador SPDY]**. Os navegadores só suportam HTTP/2 com segurança, portanto, é necessário chamar um URL com HTTPS para verificar. Se o HTTP/2 for suportado, ele será indicado pela extensão na forma de um símbolo de Flash azul e um cabeçalho &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.
