@@ -2,7 +2,7 @@
 title: Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web
 description: Saiba como incorporar vídeos ou itens de imagem do Dynamic Media em uma página da Web.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 22%
@@ -42,7 +42,7 @@ Consulte [Fornecendo imagens otimizadas para um site responsivo.](responsive-sit
 
    Consulte [Predefinições de Imagem de Publicação](managing-image-presets.md#publishing-image-presets).
 
-1. No painel esquerdo, selecione o menu suspenso e toque em **[!UICONTROL Visualizadores]**.
+1. No painel esquerdo, selecione a lista suspensa e toque em **[!UICONTROL Visualizadores]**.
 1. No painel esquerdo, toque no nome predefinido do visualizador. A predefinição do visualizador é aplicada ao ativo.
 1. Toque em **[!UICONTROL Embed]**.
 1. Na caixa de diálogo **[!UICONTROL Incorporar código]**, copie o código inteiro para a área de transferência e toque em **[!UICONTROL Fechar]**.
