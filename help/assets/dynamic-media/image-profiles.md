@@ -1,11 +1,11 @@
 ---
 title: Perfis de imagem do Dynamic Media
-description: Crie Perfis de imagem Dynamic Media que contenham configurações para máscara de nitidez e recorte inteligente, ou amostra inteligente, ou ambos, e aplique o perfil a uma pasta de ativos de imagem.
+description: Crie Perfis de Imagem Dynamic Media que contenham configurações para máscara de nitidez e recorte inteligente ou amostra inteligente, ou ambos. Em seguida, aplique o perfil a uma pasta de ativos de imagem.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 11%
+source-wordcount: '2695'
+ht-degree: 9%
 
 ---
 
@@ -22,11 +22,11 @@ Ao fazer upload de imagens, você pode cortar automaticamente a imagem ao fazer 
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-As coordenadas de Recorte inteligente dependem da proporção. Ou seja, para as várias configurações de recorte inteligente em um Perfil de imagem, se a proporção for a mesma para as dimensões adicionadas no Perfil de imagem, a mesma proporção será enviada para a Dynamic Media. Por isso, o Adobe recomenda que você use a mesma área de corte. Isso garantirá que não haja impacto em diferentes dimensões usadas no Perfil de imagem.
+As coordenadas de Recorte inteligente dependem da proporção. Para as configurações de recorte inteligente em um Perfil de imagem, se a proporção for a mesma para as dimensões adicionadas no Perfil de imagem, a mesma proporção será enviada para a Dynamic Media. O Adobe recomenda que você use a mesma área de corte. Isso garante que não haja impacto em diferentes dimensões usadas no Perfil de imagem.
 
-Esteja ciente de que cada geração de Recorte inteligente criada requer processamento extra. Por exemplo, adicionar mais de cinco proporções de Recorte inteligente pode resultar em uma taxa lenta de ingestão de ativos. Ele também pode causar um aumento da carga nos sistemas. Como você pode aplicar o Smart Crop no nível da pasta, o Adobe recomenda usá-lo nas pastas *only* onde for necessário.
+Cada geração de Recorte inteligente que você cria requer processamento extra. Por exemplo, adicionar mais de cinco proporções de Recorte inteligente resulta em uma taxa lenta de ingestão de ativos. Também pode causar um aumento da carga nos sistemas. Como você pode aplicar o Smart Crop no nível da pasta, o Adobe recomenda usá-lo nas pastas *only* onde for necessário.
 
-Você tem duas opções de recorte de imagem nas quais pode escolher. Você também tem uma opção para automatizar a criação de amostras de cores e imagens.
+Você tem duas opções de recorte de imagem para escolher. Você também tem uma opção para automatizar a criação de amostras de cores e imagens.
 
 <table>
  <tbody>
@@ -45,17 +45,17 @@ Você tem duas opções de recorte de imagem nas quais pode escolher. Você tamb
      <li>Ponto de partida do corte: A esquerda é X e a parte superior é Y</li>
      <li>Cálculo horizontal: dimensão em pixels horizontais da imagem original menos Esquerda e depois menos Direita.</li>
      <li>Cálculo vertical: altura vertical do pixel menos Superior e depois menos Inferior.</li>
-    </ul> <p>Por exemplo, suponha que você tenha uma imagem de 4000 x 3000 pixels. Você usa valores: Superior=250, Inferior=500, Esquerda=300, Direita=700.</p> <p>Do canto superior esquerdo (300.250) recorte usando o espaço de preenchimento de (4000-300-700, 3000-250-500 ou 3000.2250).</p> </td>
+    </ul> <p>Por exemplo, suponha que você tenha uma imagem de 4000 x 3000 pixels. Você usa valores: Superior=250, Inferior=500, Esquerda=300, Direita=700.</p> <p>Do corte superior esquerdo (300.250) usando o espaço de preenchimento de (4000-300-700, 3000-250-500 ou 3000.2250).</p> </td>
   </tr>
   <tr>
    <td>Corte inteligente</td>
    <td>Imagens de corte em massa com base em seu ponto focal visual.</td>
-   <td><p>O Smart Crop usa o poder da inteligência artificial no Adobe Sensei para automatizar rapidamente o recorte de imagens em massa. O Smart Crop detecta e recorta automaticamente o ponto focal em qualquer imagem para capturar o ponto de interesse pretendido, independentemente do tamanho da tela.</p> <p>Para usar o Recorte inteligente, selecione <strong>Recorte inteligente</strong> na lista suspensa Opções de recorte, em seguida, à direita de Recorte de imagem responsiva, ative (ative) o recurso.</p> <p>Os tamanhos padrão de pontos de interrupção Grandes, Médios e Pequenos geralmente abrangem a gama completa de tamanhos que a maioria das imagens são usadas em dispositivos móveis e tablets, desktops e banners. Se desejar, edite os nomes padrão de Grande, Médio e Pequeno.</p> <p>Para adicionar mais pontos de interrupção, clique em <strong>Adicionar Recorte</strong>; para excluir um corte, clique no ícone Garbage Can.</p> </td>
+   <td><p>O Smart Crop usa o poder da inteligência artificial no Adobe Sensei para automatizar rapidamente o recorte de imagens em massa. O Smart Crop detecta e recorta automaticamente o ponto focal em qualquer imagem para capturar o ponto de interesse pretendido, independentemente do tamanho da tela.</p> <p>Para usar o Recorte inteligente, selecione <strong>Recorte inteligente</strong> na lista suspensa Opções de recorte, em seguida, à direita de Recorte de imagem responsiva, ative (ative) o recurso.</p> <p>Os tamanhos padrão de ponto de interrupção (Grande, Médio, Pequeno) abrangem a gama completa de tamanhos que a maioria das imagens são usadas em dispositivos móveis e tablets, desktops e banners. Se desejar, edite os nomes padrão de Grande, Médio e Pequeno.</p> <p>Para adicionar mais pontos de interrupção, clique em <strong>Adicionar Recorte</strong>; para excluir um corte, clique no ícone Garbage Can.</p> </td>
   </tr>
   <tr>
    <td>Amostra de cor e imagem</td>
-   <td>Gerar uma amostra de imagem em massa para cada imagem.</td>
-   <td><p><strong>Observação</strong>: A Smart Swatch não é compatível com o Dynamic Media Classic.</p> <p>Localize e gere automaticamente amostras de alta qualidade a partir de imagens de produtos que mostram cor ou textura.</p> <p>Para usar a Amostra de cores e imagens, selecione <strong>Recorte inteligente</strong> na lista suspensa Opções de recorte, em seguida, à direita de Amostra de cores e imagens, ative (ative) o recurso. Insira um valor de pixel nas caixas de texto Largura e Altura.</p> <p>Enquanto todos os recortes de imagem estão disponíveis no painel Representações, as amostras são usadas somente por meio do recurso Copiar URL. Observe que você deve usar seu próprio componente de visualização para renderizar a amostra em seu site. (A exceção a isso são banners de carrossel. A Dynamic Media fornece o componente de visualização para a amostra usada em banners de carrossel.)</p> <p><strong>Uso de amostras de imagem</strong></p> <p>O URL para amostras de imagem é direto. Ou seja:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>em que <code>:Swatch</code> é anexado à solicitação de ativo.</p> <p><strong>Uso de amostras de cores</strong></p> <p>Para usar amostras de cores, faça uma solicitação <code>req=userdata</code> com o seguinte:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por exemplo, este é um ativo de amostra no Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>e este é o URL <code>req=userdata</code> correspondente do ativo de amostra:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>A resposta <code>req=userdata</code> é a seguinte:</p> <p><code class="code">SmartCropDef=Swatch
+   <td>A massa gera uma amostra de imagem para cada imagem.</td>
+   <td><p><strong>Observação</strong>: A Smart Swatch não é compatível com o Dynamic Media Classic.</p> <p>Localize e gere automaticamente amostras de alta qualidade a partir de imagens de produtos que mostram cor ou textura.</p> <p>Para usar a Amostra de cores e imagens, selecione <strong>Recorte inteligente</strong> na lista suspensa Opções de recorte. Em seguida, à direita de Cor e Amostra de imagem, ative (ative) o recurso. Insira um valor de pixel nas caixas de texto Largura e Altura.</p> <p>Enquanto todos os recortes de imagem estão disponíveis no painel Representações, as amostras são usadas somente por meio do recurso Copiar URL. Use seu próprio componente de visualização para renderizar a amostra em seu site. A exceção a essa regra são os banners de carrossel. A Dynamic Media fornece o componente de visualização para a amostra usada em banners de carrossel.</p> <p><strong>Uso de amostras de imagem</strong></p> <p>O URL para amostras de imagem é direto:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>Em que <code>:Swatch</code> é anexado à solicitação de ativo.</p> <p><strong>Uso de amostras de cores</strong></p> <p>Para usar amostras de cores, faça uma solicitação <code>req=userdata</code> com o seguinte:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por exemplo, este é um ativo de amostra no Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>E aqui está o URL <code>req=userdata</code> correspondente do ativo de amostra:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>A resposta <code>req=userdata</code> é a seguinte:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -64,11 +64,11 @@ Você tem duas opções de recorte de imagem nas quais pode escolher. Você tamb
 
 ## Tirar nitidez da máscara {#unsharp-mask}
 
-Use a **[!UICONTROL Tirar nitidez da máscara]** para ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. Controle a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que será ignorado. Esse efeito usa as mesmas opções do filtro &quot;Tirar nitidez da máscara&quot; do Adobe Photoshop.
+Use a **[!UICONTROL Tirar nitidez da máscara]** para ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. Você pode controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que é ignorado. Esse efeito usa as mesmas opções do filtro &quot;Tirar nitidez da máscara&quot; do Adobe Photoshop.
 
 >[!NOTE]
 >
->A máscara de nitidez só é aplicada a representações em baixa dentro do PTIFF (tiff de pirâmide) com resolução reduzida superior a 50%. Isso significa que as renderizações de maior tamanho dentro do ptiff não são afetadas por máscara de nitidez, enquanto representações de menor tamanho, como miniaturas, são alteradas (e mostrarão a máscara de nitidez).
+>A máscara de nitidez só é aplicada a representações em baixa dentro do PTIFF (tiff de pirâmide) com resolução reduzida superior a 50%. Isso significa que as representações de maior tamanho dentro do ptiff não são afetadas por máscara de nitidez. Enquanto isso, representações de tamanho menor, como miniaturas, são alteradas (e mostram a máscara de nitidez).
 
 Em **[!UICONTROL Máscara de nitidez]**, você tem as seguintes opções de filtragem:
 
@@ -106,10 +106,10 @@ Consulte também [Práticas recomendadas para organizar seus ativos digitais par
 **Para criar Perfis de imagem Dynamic Media**
 
 1. Toque no logotipo AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de imagem]**.
-1. Toque em **[!UICONTROL Criar]** para adicionar um novo Perfil de Imagem.
+1. Para adicionar um Perfil de imagem, toque em **[!UICONTROL Criar]**.
 1. Insira um nome de perfil e valores para máscara de nitidez, recorte ou amostra, ou ambos.
 
-   Você pode achar útil usar um nome de perfil que seja específico para a finalidade pretendida. Por exemplo, se você deseja criar um perfil que gera apenas amostras, ou seja, o Smart Crop está desativado (desativado) e o Color e Image Swatch está ativado (ativado), você pode usar o nome do perfil &quot;Smart Swatches&quot;.
+   Dica: Use um nome de perfil específico para a finalidade pretendida. Por exemplo, suponha que você queira criar um perfil que gera apenas amostras. Ou seja, a opção Recorte inteligente está desativada (desativada) e a Amostra de cores e imagens está ativada (ativada). Nesses casos, você pode usar o nome do perfil &quot;Amostras inteligentes&quot;.
 
    Consulte também [Opções de recorte inteligente e amostra inteligente](#crop-options) e [Tirar nitidez da máscara](#unsharp-mask).
 
@@ -128,11 +128,11 @@ Consulte também [Práticas recomendadas para organizar seus ativos digitais par
 
 ## Aplicar um Perfil de imagem Dynamic Media a pastas {#applying-an-image-profile-to-folders}
 
-Quando você atribui um Perfil de imagem a uma pasta, qualquer subpasta herda automaticamente o perfil da pasta pai. Isso significa que você pode atribuir apenas um Perfil de imagem a uma pasta. Dessa forma, considere cuidadosamente a estrutura de pastas de onde você carrega, armazena, usa e arquiva ativos.
+Quando você atribui um Perfil de imagem a uma pasta, qualquer subpasta herda automaticamente o perfil da pasta pai. Dessa forma, você pode atribuir apenas um Perfil de imagem a uma pasta. Dessa forma, considere cuidadosamente a estrutura de pastas de onde você carrega, armazena, usa e arquiva ativos.
 
 Se você atribuiu um Perfil de imagem diferente a uma pasta, o novo perfil substituirá o perfil anterior. Os ativos de pasta existentes anteriormente permanecem inalterados. O novo perfil é aplicado aos ativos adicionados posteriormente à pasta.
 
-As pastas que têm um perfil atribuído a ele são indicadas na interface do usuário pelo nome do perfil que aparece no cartão.
+As pastas com um perfil atribuído a ele são indicadas na interface do usuário com o nome do perfil que aparece no cartão.
 
 <!-- When you add smart crop to an existing Image Profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
 
@@ -142,7 +142,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um Perfil de imagem exi
 
 ### Aplicar Perfis de imagem Dynamic Media a pastas específicas {#applying-image-profiles-to-specific-folders}
 
-Você pode aplicar um Perfil de imagem a uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, em **[!UICONTROL Propriedades]**. Esta seção descreve como aplicar Perfis de imagem a pastas de ambas as maneiras.
+Você pode aplicar um Perfil de imagem a uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, em **[!UICONTROL Propriedades]**.
 
 As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
@@ -155,7 +155,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Toque em **[!UICONTROL Aplicar Perfil de processamento à(s) pasta(s)]** e selecione a pasta ou várias pastas que deseja usar para receber os ativos carregados recentemente e toque/clique em **[!UICONTROL Aplicar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+1. Toque em **[!UICONTROL Aplicar Perfil de Processamento às Pastas]** e selecione a pasta ou várias pastas que deseja usar para receber os ativos carregados recentemente e toque/clique em **[!UICONTROL Aplicar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
 #### Aplicar Perfis de imagem Dynamic Media a pastas a partir de Propriedades {#applying-image-profiles-to-folders-from-properties}
 
@@ -167,7 +167,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 ### Aplicar um Perfil de imagem Dynamic Media globalmente {#applying-an-image-profile-globally}
 
-Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente para que qualquer conteúdo carregado AEM ativos em qualquer pasta tenha o perfil selecionado aplicado.
+Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente. Qualquer conteúdo carregado nos Ativos do Experience Manager em qualquer pasta terá o perfil selecionado aplicado.
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você tenha alterado posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
@@ -199,7 +199,7 @@ Consulte também [Editar o recorte inteligente ou a amostra inteligente de vári
 
 1. Toque no logotipo AEM e navegue até **[!UICONTROL Assets]**, em seguida, até a pasta que tem um Perfil inteligente de imagens de corte ou amostra inteligente aplicado.
 
-1. Toque na pasta para abrir seu conteúdo.
+1. Para abrir o conteúdo, toque na pasta.
 1. Toque na imagem cujo recorte inteligente ou amostra inteligente você deseja ajustar.
 1. Na barra de ferramentas, toque em **[!UICONTROL Recorte inteligente]**.
 
@@ -242,8 +242,8 @@ Você pode executar novamente o recorte inteligente para gerar as colheitas adic
 
    * Redimensione a caixa de corte inteligente. Execute um dos procedimentos a seguir:
 
-      * Se a imagem tiver apenas um recorte inteligente ou uma amostra inteligente, arraste na imagem a alça do canto da caixa de recorte para ajustar o tamanho da área visível do recorte.
-      * Se a imagem tiver um recorte inteligente e uma amostra inteligente, arraste a alça do canto da caixa de recorte para ajustar o tamanho da área visível do recorte. Ou, toque ou clique na amostra inteligente abaixo da imagem (as amostras de cores são estáticas), em seguida, arraste a alça do canto da caixa de corte para ajustar o tamanho da área visível da amostra.
+      * Se a imagem tiver apenas um recorte inteligente ou uma amostra inteligente, arraste na imagem a alça do canto da caixa de recorte. Ajuste o tamanho da área visível do corte.
+      * Se a imagem tiver um recorte inteligente e uma amostra inteligente, arraste na imagem a alça do canto da caixa de recorte. Ajuste o tamanho da área visível do corte. Ou toque na amostra inteligente abaixo da imagem (as amostras de cores são estáticas) e arraste a alça do canto da caixa de corte. Ajuste o tamanho da área visível da amostra.
 
       ![Redimensionamento do recorte inteligente de uma imagem.](assets/edit_smart_crops-resize.png)
 
@@ -262,19 +262,19 @@ Você pode executar novamente o recorte inteligente para gerar as colheitas adic
 
 
 
-1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Salvar]**. em seguida, toque em **[!UICONTROL Fechar]** para retornar à pasta de ativos.
+1. Perto do canto superior direito da página, toque em **[!UICONTROL Salvar]** e, em seguida, toque em **[!UICONTROL Fechar]** para voltar à pasta de ativos.
 
 ## Removendo um Perfil de imagem das pastas {#removing-an-image-profile-from-folders}
 
 Quando você remove um Perfil de imagem de uma pasta, qualquer subpasta herda automaticamente a remoção do perfil da pasta pai. No entanto, qualquer processamento de arquivos que tenha ocorrido dentro das pastas permanece intacto.
 
-Você pode remover um Perfil de imagem de uma pasta do menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, de **[!UICONTROL Propriedades]**. Esta seção descreve como remover Perfis de imagem de pastas de ambas as maneiras.
+Você pode remover um Perfil de imagem de uma pasta do menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, de **[!UICONTROL Propriedades]**.
 
 ### Remoção de Perfis de imagem Dynamic Media de pastas por meio da interface de usuário de Perfis {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Toque no logotipo AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de imagem]**.
 1. Selecione o Perfil de imagem que deseja remover de uma pasta ou de várias pastas.
-1. Toque em **[!UICONTROL Remover perfil de processamento das pastas]** e selecione uma ou várias pastas que deseja usar para remover o perfil e toque em **[!UICONTROL Remover]**.
+1. Toque em **[!UICONTROL Remover Perfil de Processamento das Pastas]** e selecione a pasta ou várias pastas que deseja usar para remover o perfil e toque em **[!UICONTROL Remover]**.
 
    Você pode confirmar que o Perfil de imagem não é mais aplicado a uma pasta porque o nome não aparece mais abaixo do nome da pasta.
 
