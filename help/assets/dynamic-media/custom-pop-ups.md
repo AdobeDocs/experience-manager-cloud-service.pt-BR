@@ -1,38 +1,38 @@
 ---
-title: Uso do Quickviews para criar pop-ups personalizados
-description: A exibição rápida padrão é usada em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para acionar uma compra. Você pode acionar a exibição de conteúdo personalizado nos pop-ups.
+title: Uso de visualizações rápidas para criar pop-ups personalizados
+description: A visualização Rápida padrão é usada em experiências de comércio eletrônico em que uma pop-up é exibida com informações do produto para acionar uma compra. Você pode acionar a exibição de conteúdo personalizado nos pop-ups.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 2%
+source-wordcount: '1023'
+ht-degree: 1%
 
 ---
 
 
-# Uso do Quickviews para criar pop-ups personalizados {#using-quickviews-to-create-custom-pop-ups}
+# Usando visualizações rápidas para criar janelas pop-up personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
-A exibição rápida padrão é usada em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para acionar uma compra. No entanto, é possível acionar a exibição de conteúdo personalizado nos pop-ups. Dependendo do visualizador usado, essa funcionalidade permite que os usuários cliquem em um ponto de acesso ou em uma imagem em miniatura, ou em um mapa de imagem para ver informações ou conteúdo relacionado.
+A visualização Rápida padrão é usada em experiências de comércio eletrônico em que uma pop-up é exibida com informações do produto para acionar uma compra. No entanto, é possível acionar a exibição de conteúdo personalizado nos pop-ups. Dependendo do visualizador usado, os clientes podem tocar em um ponto de acesso, em uma imagem em miniatura ou em um mapa de imagem para ver informações ou conteúdo relacionado.
 
-As exibições rápidas são suportadas pelos seguintes visualizadores no Dynamic Media:
+Visualizações rápidas são suportadas pelos seguintes visualizadores no Dynamic Media:
 
 * Imagens interativas (pontos de acesso clicáveis)
 * Vídeo interativo (imagens em miniatura clicáveis durante a reprodução do vídeo)
 * Banners de carrossel (pontos de conexão clicáveis ou mapas de imagem)
 
-Embora a funcionalidade de cada visualizador seja diferente, o processo de criação de uma exibição rápida é o mesmo entre os três visualizadores suportados.
+Embora a funcionalidade de cada visualizador seja diferente, o processo de criação de uma visualização Rápida é o mesmo entre os três visualizadores suportados.
 
-**Para usar o Quickviews para criar pop-ups personalizados**
+**Para usar visualizações rápidas para criar janelas pop-up personalizadas**
 
-1. Criar uma exibição rápida para um ativo carregado.
+1. Crie uma visualização rápida para um ativo carregado.
 
-   Geralmente, você cria uma exibição rápida ao mesmo tempo que edita um ativo para uso com o visualizador que está usando.
+   Geralmente, você cria uma visualização rápida ao mesmo tempo que edita um ativo para uso com o visualizador que está usando.
 
    <table>
     <tbody>
     <tr>
     <td><strong>Visualizador que você está usando</strong></td>
-    <td><strong>Conclua estas etapas para criar o Quickview</strong></td>
+    <td><strong>Para criar a visualização Rápida, conclua estas etapas</strong></td>
     </tr>
     <tr>
     <td>Imagens interativas</td>
@@ -55,7 +55,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     <tbody>
     <tr>
     <td><strong>Visualizador que você está usando</strong><br /> </td>
-    <td><strong>Complete estas etapas para integrar o visualizador ao seu site</strong></td>
+    <td><strong>Para integrar o visualizador ao seu site, conclua estas etapas</strong></td>
     </tr>
     <tr>
     <td>Imagem interativa</td>
@@ -72,9 +72,9 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     </tbody>
    </table>
 
-1. O visualizador que você está usando agora precisa saber como usar o Quickview.
+1. O visualizador usado precisa saber como usar a visualização Rápida.
 
-   Para fazer isso, o visualizador usa um manipulador chamado `QuickViewActive`.
+   O visualizador usa um manipulador chamado `QuickViewActive`.
 
    ****
 ExemploSuponha que você esteja usando a seguinte amostra de código incorporado em sua página da Web para uma imagem interativa:
@@ -85,7 +85,7 @@ ExemploSuponha que você esteja usando a seguinte amostra de código incorporado
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **Usando o exemplo de código incorporado de exemplo acima, temos o seguinte código:**
+   **Usando o exemplo de código incorporado de exemplo acima, você tem o seguinte código:**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -103,12 +103,12 @@ ExemploSuponha que você esteja usando a seguinte amostra de código incorporado
    * Visualizador de imagens interativas: [operadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Visualizador de vídeo interativo: [operadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Agora é necessário configurar o manipulador `quickViewActivate`.
+1. Agora, configure o manipulador `quickViewActivate`.
 
-   O manipulador `quickViewActivate` controla as exibições rápidas no visualizador. O manipulador contém a lista variável e as chamadas de função para uso com o Quickview. O código incorporado fornece mapeamento para a variável SKU definida no Quickview, bem como uma chamada de função `loadQuickView` de amostra.
+   O manipulador `quickViewActivate` controla as visualizações rápidas no visualizador. O manipulador contém a lista variável e as chamadas de função para uso com a visualização Rápida. O código incorporado fornece mapeamento para a variável SKU definida na visualização Rápida. Também faz uma chamada de função de exemplo `loadQuickView`.
 
    **Variável**
-mappingMap variáveis para uso em sua página da Web para o valor SKU e variáveis genéricas contidas no Quickview:
+mapeamentoVariáveis do mapa para uso em sua página da Web com o valor SKU e variáveis genéricas contidas na visualização Rápida:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -116,7 +116,7 @@ mappingMap variáveis para uso em sua página da Web para o valor SKU e variáve
 
    `var sku=inData.sku`
 
-   Mapeie variáveis adicionais do Quickview também, como a seguir:
+   Mapeie outras variáveis da visualização Rápida também, como a seguir:
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
@@ -124,7 +124,7 @@ mappingMap variáveis para uso em sua página da Web para o valor SKU e variáve
    ```
 
    **Função**
-callO manipulador também requer uma chamada de função para que o Quickview funcione. Pressupõe-se que a função seja acessível pela página de host. O código incorporado fornece uma chamada de função de exemplo:
+callO manipulador também requer uma função chamada para que a visualização Rápida funcione. Pressupõe-se que a função seja acessível pela página de host. O código incorporado fornece uma chamada de função de exemplo:
 
    `loadQuickView(sku)`
 
@@ -139,12 +139,12 @@ callO manipulador também requer uma chamada de função para que o Quickview fu
 1. Faça o seguinte:
 
    * Exclua as barras de comentário da seção setHandlers do código incorporado.
-   * Mapeie quaisquer variáveis adicionais contidas no Quickview.
+   * Mapeie quaisquer variáveis adicionais contidas na visualização Rápida.
 
-      * Atualize a chamada `loadQuickView(sku,*var1*,*var2*)` se você estiver adicionando variáveis adicionais.
+      * Atualize a chamada `loadQuickView(sku,*var1*,*var2*)` se você adicionar mais variáveis.
    * Crie uma função `loadQuickView` () simples na página, fora do visualizador.
 
-      Por exemplo, o seguinte grava o valor de sku no console do navegador:
+      Por exemplo, o seguinte grava o valor de SKU no console do navegador:
 
    ```xml
    function loadQuickView(sku){
@@ -154,12 +154,12 @@ callO manipulador também requer uma chamada de função para que o Quickview fu
 
    * Carregue uma página HTML de teste em um servidor Web e abra.
 
-      Com as variáveis do Quickview mapeadas e a chamada de função instalada, o console do navegador grava o valor da variável no console do navegador usando a função de amostra fornecida.
+      As variáveis da visualização rápida são mapeadas. A chamada de função está ativada. E o console do navegador grava o valor da variável no console do navegador. Ele faz isso usando a função de amostra fornecida.
 
 
 
-1. Agora você pode usar uma função para invocar um pop-up simples no Quickview. O exemplo a seguir usa um `DIV` para um pop-up.
-1. Estilo do pop-up `DIV` da seguinte maneira. Adicione seu próprio estilo adicional, conforme desejado.
+1. Agora você pode usar uma função para invocar um pop-up simples na visualização Rápida. O exemplo a seguir usa um `DIV` para um pop-up.
+1. Estilo do pop-up `DIV` da seguinte maneira. Adicione estilos adicionais conforme desejado.
 
    ```xml
    <style type="text/css">
@@ -173,7 +173,7 @@ callO manipulador também requer uma chamada de função para que o Quickview fu
 
 1. Coloque o pop-up `DIV` no corpo da sua página HTML.
 
-   Um dos elementos é definido com uma ID que é atualizada com valor de sku quando o usuário chama uma exibição rápida. O exemplo também inclui um botão simples para ocultar o pop-up novamente depois que ele se torna visível.
+   Um dos elementos é definido com uma ID que é atualizada com o valor SKU quando o usuário chama uma visualização rápida. O exemplo também inclui um botão simples para ocultar o pop-up novamente depois que ele se torna visível.
 
    ```xml
    <div id="quickview_div" >
@@ -184,7 +184,7 @@ callO manipulador também requer uma chamada de função para que o Quickview fu
    </div>
    ```
 
-1. Adicione uma função para atualizar o valor de sku no pop-up; torne o pop-up visível, substituindo a função simples criada na etapa 5. com o seguinte:
+1. Para atualizar o valor de SKU na janela pop-up, adicione uma função. Torne a janela pop-up visível, substituindo a função simples criada na etapa 5 pelo seguinte:
 
    ```xml
    <script type="text/javascript">
@@ -195,14 +195,14 @@ callO manipulador também requer uma chamada de função para que o Quickview fu
    </script>
    ```
 
-1. Carregue uma página HTML de teste no seu servidor Web e abra. O visualizador exibe o pop-up `DIV` quando um usuário chama uma exibição rápida.
-1. **Como exibir o pop-up personalizado no modo de tela cheia**
+1. Carregue uma página HTML de teste no seu servidor Web e abra. O visualizador exibe o pop-up `DIV` quando um usuário chama uma visualização rápida.
+1. **Como exibir a janela pop-up personalizada no modo de tela cheia**
 
    Alguns visualizadores, como o Visualizador de vídeo interativo, suportam a exibição no modo de tela cheia. No entanto, usar o pop-up conforme descrito nas etapas anteriores faz com que ele seja exibido atrás do visualizador no modo de tela cheia.
 
-   Para ter a exibição pop-up nos modos padrão e de tela cheia, anexe a pop-up ao container do visualizador. Para fazer isso, você pode usar um segundo método handler, `initComplete`.
+   Para que a janela pop-up seja exibida nos modos padrão e de tela cheia, anexe a janela pop-up ao container do visualizador. Nesse caso, use um segundo método handler, `initComplete`.
 
-   O hander `initComplete` é chamado depois que o visualizador é inicializado.
+   O manipulador `initComplete` é chamado depois que o visualizador é inicializado.
 
    ```xml
    "initComplete":function() { code block }
@@ -225,14 +225,14 @@ callO manipulador também requer uma chamada de função para que o Quickview fu
    }
    ```
 
-   No código acima, fizemos o seguinte:
+   No código acima, você fez o seguinte:
 
-   * Identificado nosso pop-up personalizado.
+   * Identificada a janela pop-up personalizada.
    * Removido do DOM.
    * Identificado o container do visualizador.
    * O pop-up foi anexado ao container do visualizador.
 
-1. O código de setHandlers inteiro agora deve ser semelhante ao seguinte (o visualizador de vídeo interativo foi usado):
+1. Todo o código setHandlers é semelhante ao seguinte (o visualizador de vídeo interativo foi usado):
 
    ```xml
    s7interactivevideoviewer.setHandlers({
@@ -260,5 +260,5 @@ ExemploEste exemplo usa o visualizador de imagem interativo.
 
    `s7interactiveimageviewer.init()`
 
-   Depois de incorporar o visualizador à sua página de host, verifique se a instância do visualizador foi criada e se os manipuladores foram carregados antes que o visualizador seja chamado usando `init()`.
+   Depois de incorporar o visualizador à página de host, verifique se a instância do visualizador foi criada. Além disso, verifique se os manipuladores foram carregados antes que o visualizador seja chamado usando `init()`.
 
