@@ -2,7 +2,7 @@
 title: AEM API GraphQL para uso com Fragmentos de conteúdo
 description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) como um Cloud Service com a API AEM GraphQL para o Delivery de conteúdo sem cabeçalho.
 translation-type: tm+mt
-source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
+source-git-commit: e6553e5f46d87c7214fdfd888a984ca725c773d9
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 1%
@@ -321,8 +321,8 @@ O GraphQL para AEM suporta uma lista de tipos. Todos os tipos de dados do modelo
 
 | Modelo de fragmento de conteúdo - Tipo de dados | Tipo GraphQL | Descrição |
 |--- |--- |--- |
-| Texto em linha única | String, [String] |  Usado para strings simples, como nomes de autor, nomes de localização etc |
-| Texto de várias linhas | Sequência de caracteres |  Usado para texto de saída, como o corpo de um artigo |
+| Texto em linha única | String, [String] |  Usado para strings simples, como nomes de autor, nomes de localização etc. |
+| Texto de várias linhas | Sequência de caracteres |  Usado para saída de texto, como o corpo de um artigo |
 | Número |  Flutuante, [Flutuante] | Usado para exibir números de ponto flutuante e números regulares |
 | Booleano |  Booleano |  Usado para exibir caixas de seleção → declarações simples verdadeiras/falsas |
 | Data E Hora | Calendário |  Usado para exibir a data e a hora em um formato ISO 8086 |
