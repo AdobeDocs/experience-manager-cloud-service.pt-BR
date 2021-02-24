@@ -2,9 +2,9 @@
 title: Aprendendo a usar o GraphQL com AEM - Conteúdo de amostra e Query
 description: Aprendendo a usar o GraphQL com AEM - Conteúdo de amostra e Query.
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1707'
 ht-degree: 5%
 
 ---
@@ -49,7 +49,7 @@ A operação básica de query com GraphQL para AEM obedece à especificação Gr
 * Você pode query em nomes de campos que correspondam aos campos no Modelo de fragmento de conteúdo
    * Consulte [Query de amostra - Detalhes completos de um CEO e Funcionários da Empresa](#sample-full-details-company-ceos-employees)
 
-* Além dos campos do modelo, há alguns campos gerados pelo sistema (precedidos pelo underscore):
+* Além dos campos do modelo, há alguns campos gerados pelo sistema (precedidos por sublinhado):
 
    * Para conteúdo:
 
@@ -59,7 +59,7 @@ A operação básica de query com GraphQL para AEM obedece à especificação Gr
          * Consulte [Query de amostra para Metadados - Lista dos Metadados para Prêmios GB](#sample-metadata-awards-gb)
       * `_model` : permitir consulta para um Modelo de fragmento de conteúdo (caminho e título)
          * Consulte [Query de amostra para um Modelo de fragmento de conteúdo de um Modelo](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : o caminho para o seu Content Fragement no repositório
+      * `_path` : o caminho para o fragmento do conteúdo no repositório
          * Consulte [Query de amostra - Um único fragmento de cidade específico](#sample-single-specific-city-fragment)
       * `_reference` : revelar referências; incluindo referências em linha no Editor de Rich Text
          * Consulte [Query de amostra para vários fragmentos de conteúdo com referências pré-definidas](#sample-wknd-multiple-fragments-prefetched-references)
@@ -1141,7 +1141,7 @@ Este query de amostra interroga:
 Este query interroga:
 
 * para todos os fragmentos de conteúdo do tipo `adventure`
-* metadata
+* metadados
 
 **Query de amostra**
 
