@@ -2,10 +2,10 @@
 title: Ativação da proteção de hotlink no Dynamic Media
 description: Informações sobre como ativar a proteção de hotlink no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 7%
+source-wordcount: '191'
+ht-degree: 6%
 
 ---
 
@@ -16,4 +16,8 @@ A vinculação é quando um site de terceiros usa o código HTML para exibir uma
 
 [Atendimento ao cliente do Adobe ](https://helpx.adobe.com/support.html) pode configurar um filtro de quem indicou no nível CDN. Isso garante que o conteúdo do Dynamic Media seja disponibilizado somente para sites na sua lista de sites permitidos para o domínio.
 
-A proteção do Hotlink requer o uso do CDN fornecido pelo Adobe. Para ativar a proteção de hotlink, um administrador precisa criar um ticket de suporte para solicitar a alteração da configuração em sua conta Dynamic Media. Não há custo adicional para ativar a proteção de hotlink.
+>[!NOTE]
+>
+>Este recurso exige que você use o CDN pronto para uso fornecido com a Adobe Experience Manager Dynamic Media. Nenhum outro CDN personalizado é suportado com este recurso.
+
+Para ativar a proteção de link ativo, um administrador precisa criar um ticket de suporte para solicitar a alteração da configuração em sua conta Dynamic Media. Não há custo adicional para ativar a proteção de conexão automática.
