@@ -2,9 +2,9 @@
 title: Configuração do Dynamic Media Cloud Service
 description: Informações sobre como configurar o Dynamic Media no Adobe Experience Manager como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
 workflow-type: tm+mt
-source-wordcount: '3893'
+source-wordcount: '3883'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,6 @@ Com a nova arquitetura, o Experience Manager é responsável pelos ativos de ori
 >* [Invalidação de cache](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [Proteção de link](/help/assets/dynamic-media/hotlink-protection.md)
 >* [DELIVERY HTTP/2 de conteúdo](/help/assets/dynamic-media/http2faq.md)
->* [Integração de visualizadores Dynamic Media com Adobe Analytics e Experience Platform Launch](/help/assets/dynamic-media/launch.md)
 >* Redirecionamento de URL no nível CDN
 >* Akamai ChinaCDN (para um delivery ideal na China)
 
@@ -151,7 +150,7 @@ Consulte também [Sua Caixa de Entrada](/help/sites-cloud/authoring/getting-star
 
 1. Na página **[!UICONTROL DMSETUP]**, reveja os detalhes de configuração que descrevem a falha. Em especial, tome nota de quaisquer mensagens de erro ou códigos de erro. Entre em contato com o Atendimento ao cliente da Adobe com essas informações.
 
-   ![Página Instalação do Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+   ![Página Configuração do Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
 ### Alteração da senha para Dynamic Media {#change-dm-password}
 
