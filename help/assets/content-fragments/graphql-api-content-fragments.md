@@ -2,9 +2,9 @@
 title: AEM API GraphQL para uso com Fragmentos de conteúdo
 description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) como um Cloud Service com a API AEM GraphQL para o Delivery de conteúdo sem cabeçalho.
 translation-type: tm+mt
-source-git-commit: e6553e5f46d87c7214fdfd888a984ca725c773d9
+source-git-commit: 8d1e5891b72a9d3587957df5b2553265d66896d5
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2901'
 ht-degree: 1%
 
 ---
@@ -139,14 +139,6 @@ Para habilitar query GraphQL em AEM, crie um terminal em `/content/cq:graphql/gl
 
 * Os nós `cq:graphql` e `global` devem ser do tipo `sling:Folder`.
 * O nó `endpoint` deve ser do tipo `nt:unstructured` e conter um `sling:resourceType` de `graphql/sites/components/endpoint`.
-
->[!CAUTION]
->
->Em determinadas versões, há atualmente um problema conhecido com o endpoint:
->
->* Dependendo da versão usada, a entrada `cq:graphql` é vista no console **Sites**; no nível superior.
-   >  Isto não deve ser utilizado.
-
 
 >[!CAUTION]
 >
