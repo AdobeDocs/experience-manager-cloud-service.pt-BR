@@ -2,17 +2,21 @@
 title: Como invalidar o cache CDN por meio do Dynamic Media Classic
 description: A invalidação do conteúdo em cache CDN (Content Delivery Network) permite que você atualize rapidamente os ativos entregues pela Dynamic Media, em vez de aguardar a expiração do cache.
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 26%
+source-wordcount: '691'
+ht-degree: 25%
 
 ---
 
 
 # Invalidar o cache CDN por meio do Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
-Os ativos Dynamic Media são armazenados em cache pelo CDN para delivery rápido. No entanto, ao fazer atualizações em um ativo, você pode desejar que essas alterações entrem em vigor imediatamente. A invalidação do conteúdo em cache CDN (Content Delivery Network) permite que você atualize rapidamente os ativos entregues pela Dynamic Media, em vez de aguardar a expiração do cache.
+Os ativos Dynamic Media são armazenados em cache pela CDN (Content Delivery Network, Rede de conteúdo) para delivery rápido. No entanto, ao fazer atualizações em um ativo, você pode desejar que essas alterações entrem em vigor imediatamente. A invalidação do conteúdo em cache do CDN permite atualizar rapidamente ativos entregues pela Dynamic Media, em vez de aguardar a expiração do cache.
+
+>[!NOTE]
+>
+>Este recurso exige que você use o CDN pronto para uso fornecido com a Adobe Experience Manager Dynamic Media. Nenhum outro CDN personalizado é suportado com este recurso.
 
 >[!IMPORTANT]
 >
