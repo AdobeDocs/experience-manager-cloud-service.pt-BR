@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
+source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1017'
 ht-degree: 4%
 
 ---
@@ -53,22 +53,18 @@ A seguinte versão (2021.3.0) será lançada em 25 de março de 2021.
 
 ## Novidades em [!DNL Assets] {#what-is-new-assets}
 
-* Os ativos podem ser originados usando [!DNL Experience Manager Assets Brand Portal]. Ajuda a obter ativos dos usuários da agência para novas campanhas de marketing, fotografias e projetos.
+* Em [!DNL Brand Portal], uma nova configuração de download é introduzida, permitindo que você crie uma pasta separada para cada ativo ao baixar pastas, coleção e assim por diante. consulte [configurações de download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
-
-Ability to select a root path. select if a minimum number of tags is required. 
-
-Add a Boolean or radio widget type to metadata schema setup. -->
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## Correções de erros em [!DNL Assets] {#bug-fixes-assets}
 
 * Quando uma nova versão de um ativo existente é criada após resolver o conflito de nomes, os metadados do ativo original são substituídos. (CQ-4313594)
 * Quando um ativo com um texto de anotação longo é impresso, o texto da anotação é aparado, mesmo se houver espaço disponível. (CQ-4314101)
+* Quando vários ativos são selecionados para atualizar as propriedades, às vezes ocorre um erro ou as propriedades de um ativo desmarcado são atualizadas. (CQ-4316532)
+* Ao tentar abrir [!UICONTROL Painel de pesquisa do administrador do Assets], a página permanece em branco e clicar em [!UICONTROL Editar] > [!UICONTROL Definições] gera um erro. (CQ-4315079)
 
 ## Cloud Manager {#cloud-manager}
 
