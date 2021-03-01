@@ -1,6 +1,6 @@
 ---
 sub-product: AEM Commerce as a Cloud Service
-user-guide-title: Comércio AEM como um Cloud Service
+user-guide-title: AEM Commerce as a Cloud Service
 breadcrumb-title: Guia do Commerce
 user-guide-description: Aprenda a usar e administrar o Experience Manager Commerce as a Cloud Service.
 translation-type: tm+mt
