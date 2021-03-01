@@ -2,10 +2,10 @@
 title: 'Criação de uma página para dispositivos móveis  '
 description: Ao criar em dispositivos móveis, você pode alternar entre vários emuladores para ver o que o usuário final vê
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 100%
+source-wordcount: '267'
+ht-degree: 98%
 
 ---
 
@@ -20,13 +20,11 @@ Os dispositivos são agrupados nas categorias Recurso, Inteligente e Toque, de a
 
 >[!NOTE]
 >
->Para criar um site móvel com base em um site padrão existente, crie uma live copy do site padrão. Consulte Criação de uma live copy para diferentes canais.
+>Para criar um site móvel com base em um site padrão existente, crie uma live copy do site padrão. Consulte [Criando Live Copies.](/help/sites-cloud/administering/msm/creating-live-copies.md)
 >
 >Os desenvolvedores do AEM podem criar novos grupos de dispositivos. Consulte Criação de filtros de grupos de dispositivos.
 
 <!--
->To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
->
 >AEM developers can create new device groups. (See [Creating Device Group Filters](/help/sites-developing/groupfilters.md).)
 -->
 
