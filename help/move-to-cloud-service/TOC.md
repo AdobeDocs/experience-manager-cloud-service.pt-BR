@@ -25,11 +25,11 @@ ht-degree: 80%
       + [Uso do Analisador de práticas recomendadas](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Ferramenta Transferência de conteúdo {#content-transfer-tool}
       + [Visão geral](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-      + [Uso da ferramenta Mapeamento de usuários](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
+      + [Usar a ferramenta Mapeamento de usuários](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [Usar a ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Ferramentas de refatoração de código {#refactoring-tools}
    + [Experiência unificada](/help/move-to-cloud-service/unified-experience.md)
-   + [Modernizador do repositório](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
+   + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
    + [Conversor de índice](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [Migração de fluxo de trabalho de ativos](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [Conversor do Dispatcher do AEM](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
