@@ -2,7 +2,7 @@
 title: 'Diferencial de páginas  '
 description: O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
 translation-type: tm+mt
-source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 97%
@@ -29,9 +29,9 @@ O recurso de diferencial de página permite a comparação lado a lado convenien
 O diferencial lado a lado pode comparar o seguinte:
 
 * [Versões](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - versão anterior de uma página com seu estado atual
-* Live Copies - Live Copy com blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies - Live Copy com blueprint
 * [Lançamentos](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - lançamento com sua origem
-* Cópias de idioma - uma página antes e depois da (nova) tradução <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)Cópias de idioma - uma página antes e depois da (nova) tradução
 
 Consulte os respectivos tópicos sobre como iniciar o diferencial nesses contextos.
 
@@ -89,7 +89,7 @@ Você pode sair do diferencial lado a lado a qualquer momento clicando no botão
 Existem algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme o esperado.
 
 * Ao diferenciar versões e lançamentos, o recurso de diferencial não leva em consideração os componentes dinâmicos, como navegação estrutural, menus, listas de produtos ou logotipos (componentes que dependem da estrutura do site para renderizar seu conteúdo).
-* Para versões, o diff não recria a política de controles de acesso e as relações de live copy.
+* Para versões, o diferencial não recria a política de controle de acesso e as relações de live copy.
 * Se uma página for movida, você não poderá mais executar um diff com versões feitas antes do movimento.
    * Se você tiver problemas com um diff, verifique a [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) da página para ver se a página foi movida.
 
