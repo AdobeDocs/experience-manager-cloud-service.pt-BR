@@ -2,7 +2,7 @@
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 98%
@@ -93,7 +93,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs de até um determinado comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-Ao criar uma nova página, AEM irá [validar o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pela AEM e pelo JCR.
+Ao criar uma nova página, o AEM [validará o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -130,10 +130,7 @@ Quando você fornecer um **Nome** de página ao criar uma nova página, o AEM va
 >
 >Evite usar um código de duas letras, conforme definido por ISO-639-1 como um nome de página, a menos que seja uma raiz de idioma.
 >
->Consulte Preparação de conteúdo para tradução para obter mais informações.
-<!--
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
--->
+>Consulte [Preparação de conteúdo para tradução](/help/sites-cloud/administering/translation/preparation.md) para obter mais informações.
 
 ### Modelos {#templates}
 
