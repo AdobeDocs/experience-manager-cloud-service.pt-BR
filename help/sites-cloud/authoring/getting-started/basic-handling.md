@@ -2,7 +2,7 @@
 title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
 translation-type: tm+mt
-source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 99%
@@ -95,7 +95,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * [Pesquisar](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Ícone Pesquisar](/help/sites-cloud/authoring/assets/search-icon.png)
+   ![Ícone de Pesquisa](/help/sites-cloud/authoring/assets/search-icon.png)
 
    Você também pode usar a [tecla de atalho](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
 
@@ -450,8 +450,8 @@ Essas opções podem ser acessadas por meio da divisa ao lado do campo **Coment�
 A opção **Referências** mostra conexões com o recurso selecionado. Por exemplo, no console de **Sites**, as [referências](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) de páginas mostram o seguinte:
 
 * [Lançamentos](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
-* Live copies<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
-* Cópias de idioma<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
+* [Live copies](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
+* [Cópias de idioma](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * Referência de conteúdo:
 
    * Links de outras páginas para a página selecionada
