@@ -50,7 +50,7 @@ ht-degree: 90%
       + [Console de componentes](authoring/features/components-console.md)
       + [Layout responsivo](authoring/features/responsive-layout.md)
       + [Uso de tags](authoring/features/tags.md)
-      + [Ativação de recursos progressivos do aplicativo da Web](authoring/features/enable-pwa.md)
+      + [Ativação de recursos progressivos do aplicativo web](authoring/features/enable-pwa.md)
    + Projetos {#projects}
       + [Trabalho com projetos](authoring/projects/overview.md)
       + [Gerenciamento de projetos](authoring/projects/managing.md)
@@ -78,9 +78,9 @@ ht-degree: 90%
       + [Criação e gerenciamento de ofertas](authoring/personalization/offers.md)
       + [Noções sobre segmentação](authoring/personalization/segmentation.md)
       + [Configuração da segmentação com o ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-      + [Registro, login e Perfil do usuário](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + [Registro, logon e perfil do usuário](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Administração {#administering}
-   + [Administração de Workflows](administering/workflows-administering.md)
+   + [Administração de fluxos de trabalho](administering/workflows-administering.md)
 + Integração ao AEM as a Cloud Service {#integrations}
    + [Integração ao Adobe Analytics](integrating/integrating-adobe-analytics.md)
    + [Integração com o Adobe Target](integrating/integrating-adobe-target.md)
