@@ -2,7 +2,7 @@
 title: Editar conteúdo da página
 description: Uma vez que a sua página é criada, você poderá editar o conteúdo para fazer atualizações necessárias
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -367,7 +367,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
 
 Herança é o mecanismo em que o conteúdo pode ser automaticamente enviado de um componente para outro. Componentes herdados podem ser o resultado de vários cenários, incluindo:
 
-* Gerenciamento de vários sites <!--[Multi site management](/help/sites-administering/msm.md)-->
+* [Gerenciamento de vários sites](/help/sites-cloud/administering/msm/overview.md)
 * [Lançamentos](/help/sites-cloud/authoring/launches/overview.md) (quando com base na live copy).
 
 Você pode cancelar (e depois reativar) a herança. Dependendo do componente, esta opção pode estar disponível na barra de ferramentas do componente, se o componente estiver em uma página que faz parte de uma live copy ou lançamento (com base em uma live copy).
