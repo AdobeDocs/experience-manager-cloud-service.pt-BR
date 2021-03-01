@@ -3,15 +3,15 @@ title: Tags inteligentes aprimoradas
 description: Aplique tags comerciais contextuais e descritivas usando o serviço de IA e aprendizado de máquina do Adobe Sensei para melhorar a descoberta de ativos e a velocidade do conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 96%
+source-wordcount: '1031'
+ht-degree: 83%
 
 ---
 
 
-# Configurar o Experience Manager para a marcação inteligente de ativos {#configure-aem-for-smart-tagging}
+# Configurar [!DNL Experience Manager] para marcação inteligente de ativos {#configure-aem-for-smart-tagging}
 
 Marcar ativos com um vocabulário controlado por taxonomia garante que esses ativos possam ser facilmente identificados e recuperados por pesquisas baseadas em tags. A Adobe fornece tags inteligentes que usam inteligência artificial e algoritmos de aprendizado de máquina para treinar imagens. As tags inteligentes usam uma estrutura de inteligência artificial do [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial.
 
@@ -25,7 +25,7 @@ A funcionalidade Tag inteligentes está disponível para compra como suplemento 
 
 >[!IMPORTANT]
 >
->[!DNL Experience Manager Assets] as implantações criadas após  [agosto de 2020 ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) são integradas  [!DNL Adobe Developer Console] por padrão. Ajuda a configurar a funcionalidade de tags inteligentes mais rapidamente. Nas implantações mais antigas, os administradores podem seguir as etapas a seguir para configurar a integração.
+>Se suas [!DNL Experience Manager Assets] implantações foram criadas após a [versão de agosto de 2020](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets), [!DNL Adobe Developer Console] é integrado por padrão. Ajuda a configurar a funcionalidade de tags inteligentes com mais rapidez. Nas implantações mais antigas, os administradores podem configurar manualmente a integração usando as instruções a seguir.
 
 ## Integração com o Console do desenvolvedor {#aio-integration}
 
@@ -56,7 +56,7 @@ Um certificado público permite autenticar seu perfil no Console do desenvolvedo
 
 1. Clique em **[!UICONTROL Baixar chave pública]**.
 
-   ![Experience Manager Tags inteligentes criar chave pública](assets/aem_smarttags-config1.png)
+   ![[!DNL Experience Manager] Tags inteligentes criar chave pública](assets/aem_smarttags-config1.png)
 
 ### Criar uma integração {#create-aio-integration}
 
@@ -64,10 +64,10 @@ Para usar Tags inteligentes, crie uma integração no Console do desenvolvedor p
 
 1. Acesse [https://console.adobe.io](https://console.adobe.io/) em um navegador. Selecione a conta e verifique se a organização associada tem a função de administrador do sistema.
 1. Crie um projeto com o nome que quiser. Clique em **[!UICONTROL Adicionar API]**.
-1. Na página **[!UICONTROL Adicionar uma API]**, selecione **[!UICONTROL Experience Cloud]** e escolha **[!UICONTROL Conteúdo inteligente]**. Clique em **[!UICONTROL Avançar]**.
+1. Na página **[!UICONTROL Adicionar uma API]**, selecione **[!UICONTROL Experience Cloud]** e selecione **[!UICONTROL Conteúdo inteligente]**. Clique em **[!UICONTROL Avançar]**.
 1. Selecione **[!UICONTROL Fazer upload da sua chave pública]**. Forneça o arquivo de certificado baixado do [!DNL Experience Manager]. Será exibida a mensagem [!UICONTROL Chave(s) pública(s) carregada(s) com êxito]. Clique em **[!UICONTROL Avançar]**.
-1. A página [!UICONTROL Criar uma nova credencial de conta de serviço (JWT)] exibe a chave pública da conta de serviço recém-configurada. Clique em **[!UICONTROL Avançar]**.
-1. Na página **[!UICONTROL Selecionar perfis de produtos]**, selecione **[!UICONTROL Serviços de conteúdo inteligente]**. Clique em **[!UICONTROL Salvar API configurada]**. Uma página exibe mais informações sobre a configuração. Para continuar configurando as Tags inteligentes no [!DNL Experience Manager], mantenha essa página aberta para copiar e adicionar esses valores no Experience Manager.
+1. [!UICONTROL A página Criar uma nova ] credencial de conta de serviço (JWT) exibe a chave pública da conta de serviço. Clique em **[!UICONTROL Avançar]**.
+1. Na página **[!UICONTROL Selecionar perfis de produtos]**, selecione **[!UICONTROL Serviços de conteúdo inteligente]**. Clique em **[!UICONTROL Salvar API configurada]**. Uma página exibe mais informações sobre a configuração. Mantenha essa página aberta para copiar e adicionar esses valores em [!DNL Experience Manager] ao configurar as Tags inteligentes em [!DNL Experience Manager].
 
    ![Na guia Visão geral, é possível revisar as informações da integração.](assets/integration_details.png)
 
@@ -94,22 +94,22 @@ Após concluir a configuração, siga as etapas seguintes para validá-la.
 
 ### Reconfigure se um certificado expirar {#certrenew}
 
-Quando o certificado expira, ele deixa de ser confiável. Para adicionar um novo certificado, siga estas etapas. Não é possível renovar um certificado expirado.
+Quando o certificado expira, ele não é mais confiável. Para adicionar um certificado, siga estas etapas. Não é possível renovar um certificado expirado.
 
 1. Faça logon na implantação do [!DNL Experience Manager] como administrador. Clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]**.
 
 1. Localize o usuário **[!UICONTROL dam-update-service]** e clique nele. Clique na guia **[!UICONTROL Armazenamento de chaves]**.
 1. Exclua o armazenamento de chaves **[!UICONTROL similaritysearch]** existente com o certificado expirado. Clique em **[!UICONTROL Salvar e fechar]**.
 
-   ![Exclua a entrada similaritysearch existente no Armazenamento de chaves para adicionar um novo certificado de segurança](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![Exclua a entrada de pesquisa de similaridade existente no Armazenamento de chaves para adicionar um novo certificado de segurança](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Figura: exclua a entrada `similaritysearch` existente no Armazenamento de chaves para adicionar um novo certificado de segurança.*
+   *Figura: Exclua a  `similaritysearch` entrada existente no Armazenamento de chaves para adicionar um certificado de segurança.*
 
 1. Na interface do [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**. Abra a configuração disponível de Tags inteligentes. Para baixar um certificado público, clique em **[!UICONTROL Baixar certificado público]**.
 
 1. Acesse [https://console.adobe.io](https://console.adobe.io) e vá para o serviço existente no Projeto. Faça upload do novo certificado e configure-o. Para obter mais informações sobre configuração, consulte as instruções em [Criar integração com o Console do desenvolvedor](#create-aio-integration).
 
-## Habilitar marcação automática quando os ativos forem carregados (Opcional) {#enable-smart-tagging-for-uploaded-assets}
+## Habilitar marcação automática quando os ativos forem carregados (opcional) {#enable-smart-tagging-for-uploaded-assets}
 
 1. No [!DNL Experience Manager], clique em **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
 1. Na página **[!UICONTROL Modelos de fluxo de trabalho]**, selecione o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização DAM]**.
@@ -126,7 +126,7 @@ Quando o certificado expira, ele deixa de ser confiável. Para adicionar um novo
 
 1. Na guia **[!UICONTROL Argumentos]**, selecione **[!UICONTROL Ignorar erros]** se quiser que o fluxo de trabalho ignore falhas ao prever tags. Para marcar os ativos quando eles forem carregados independentemente de a marcação inteligente estar ativada nas pastas, selecione **[!UICONTROL Ignorar sinalizador de tag inteligente]**.
 
-1. Clique em **[!UICONTROL OK]** para fechar a etapa do processo e salve o fluxo de trabalho. Clique em **[!UICONTROL Sincronizar]**.
+1. Clique em **[!UICONTROL OK]**. Ela fecha a etapa do processo. Salve o workflow. Clique em **[!UICONTROL Sincronizar]**.
 
 >[!MORELIKETHIS]
 >
