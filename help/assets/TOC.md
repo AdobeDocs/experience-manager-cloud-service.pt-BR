@@ -5,10 +5,10 @@ breadcrumb-title: Guia do Assets
 user-guide-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 2749703c569b5ce060041b1c479a465fb3d0ca01
+source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 69%
+source-wordcount: '487'
+ht-degree: 67%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 69%
 + Compartilhar e distribuir ativos {#brand-portal}
    + [ [!DNL Assets] Configurar com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos em [!DNL Brand Portal]](publish-to-brand-portal.md)
+   + [Publicar ativos  [!DNL Brand Portal] do [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + Fragmentos de conteúdo {#content-fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
    + [Entrega sem cabeçalho com fragmentos de conteúdo e GraphQL](content-fragments/content-fragments-graphql.md)
