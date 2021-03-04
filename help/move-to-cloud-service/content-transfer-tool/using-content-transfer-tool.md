@@ -2,9 +2,9 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
+source-git-commit: 495a292eceb7abf6439df15a092d71b58cf2f2f3
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2053'
 ht-degree: 58%
 
 ---
@@ -203,7 +203,7 @@ Quando o processo de assimilação estiver concluído, você poderá usar o cont
    >
    >Você deve desativar a opção **Limpar conteúdo existente na instância do Cloud antes de assimilar**, para evitar que o conteúdo existente seja excluído da atividade de assimilação anterior.
 
-   Além disso, consulte [Considerações importantes sobre o uso da ferramenta de transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) para saber como adicionar ao ticket do Atendimento ao cliente.
+   Além disso, consulte [Considerações importantes sobre o uso da ferramenta de transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) para saber como adicionar ao tíquete de Atendimento ao cliente.
 
 ### Visualização de logs para um conjunto de migração {#viewing-logs-migration-set}
 
