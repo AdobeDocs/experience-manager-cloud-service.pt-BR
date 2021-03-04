@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
+source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 62%
+source-wordcount: '2055'
+ht-degree: 58%
 
 ---
 
@@ -65,16 +65,23 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
+
 1. O console abaixo é exibido ao criar o primeiro conjunto de migração. Clique em **Criar conjunto de migração** para criar um novo conjunto de migração.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
+
 
    >[!NOTE]
    >Se você tiver conjuntos de migração existentes, o console exibirá a lista de conjuntos de migração existentes com seu status atual.
 
-1. Preencha os campos na tela **Detalhes do conjunto de migração de conteúdo**, conforme descrito abaixo.
+   Além disso, clique em **Criar configuração de mapeamento de usuários** para acessar a [Ferramenta de mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
+1. Preencha os campos na tela **Conjunto de migração de conteúdo**, conforme descrito abaixo.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+
+   >[!NOTE]
+   >Selecione **Incluir mapeamento de usuários e grupos do IMS**, conforme destacado na figura acima. Consulte [Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obter mais detalhes.
 
 
    1. **Nome**: insira o nome do conjunto de migração.
@@ -119,7 +126,6 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
    * Um *ícone amarelo* indica que você não criou o conjunto de migração existente e o específico é criado por algum outro usuário na mesma instância.
 
 1. Selecione um conjunto de migração na página de visão geral e clique em **Propriedades** para visualização ou editar as propriedades desse conjunto de migração. Ao editar as propriedades, não é possível alterar o nome do contêiner ou o URL do serviço.
-
 
 
 ### Processo de extração na transferência de conteúdo {#extraction-process}
@@ -174,6 +180,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
+
 1. Quando a assimilação estiver concluída, o status no campo **PUBLICAR ASTION** será atualizado para **FINISHED**.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
@@ -190,11 +197,13 @@ Quando o processo de assimilação estiver concluído, você poderá usar o cont
 
 1. Navegue até a página *Visão geral* e selecione o conjunto de migração para o qual você deseja realizar a assimilação complementar. Clique em **Assimilar** para iniciar a extração complementar. A caixa de diálogo **Assimilação do conjunto de migração** é exibida.
 
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+
    >[!IMPORTANT]
    >
    >Você deve desativar a opção **Limpar conteúdo existente na instância do Cloud antes de assimilar**, para evitar que o conteúdo existente seja excluído da atividade de assimilação anterior.
-   >
-   >![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+
+   Além disso, consulte [Considerações importantes sobre o uso da ferramenta de transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) para saber como adicionar ao ticket do Atendimento ao cliente.
 
 ### Visualização de logs para um conjunto de migração {#viewing-logs-migration-set}
 
