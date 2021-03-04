@@ -2,9 +2,9 @@
 title: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5b702dd33169939d7b16df07f29f8149cafa82bd
+source-git-commit: aadfc38f62a1e3543810447e91910cf71fa93583
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1167'
 ht-degree: 4%
 
 ---
@@ -109,6 +109,20 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.2.0 é 11 
 * Algumas falhas de pipeline eram relatadas incorretamente como erros de pipeline.
 
 ## Ferramenta Transferência de conteúdo {#content-transfer-tool}
+
+### Data de lançamento {#release-date-ctt-march}
+
+A Data de lançamento da ferramenta Transferência de conteúdo v1.3.0 é 4 de março de 2021.
+
+### Novidades na ferramenta Transferência de conteúdo {#what-is-new-ctt-march}
+
+* O CTT agora é instalado em `/apps` em vez de `/libs` marcadores do navegador para determinadas páginas, podem não ser mais válidos.
+* Quando a CTT estiver instalada, o usuário precisará navegar por um nível adicional para chegar à página Transferência de conteúdo . Consulte [Usar a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) para obter mais detalhes.
+
+### Correções de erros {#bug-fixes-ctt-march}
+
+* Ao migrar conteúdo de um caminho específico, a CTT estava extraindo recursos não relacionados. Isso foi corrigido
+
 
 ### Data de lançamento {#release-date-ctt}
 
