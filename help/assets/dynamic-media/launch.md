@@ -2,10 +2,10 @@
 title: Integração do Dynamic Media Viewers com o Adobe Analytics e o Experience Platform Launch
 description: A extensão Visualizadores do Dynamic Media para Platform Launch e Visualizadores do Dynamic Media 5.13 permite que os clientes do Adobe Analytics e do Platform Launch usem eventos e dados específicos dos Visualizadores em sua configuração do Platform Launch.
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: ef20224c59a6282ca6a78b2dfc9d777c67de5cb1
 workflow-type: tm+mt
-source-wordcount: '6684'
-ht-degree: 9%
+source-wordcount: '6658'
+ht-degree: 10%
 
 ---
 
@@ -34,11 +34,11 @@ Para saber mais sobre extensões, consulte [Adobe Extensions](https://experience
 
 O principal caso de uso da integração com o Experience Platform Launch são os clientes que usam os Ativos do Experience Manager e o Experience Manager Sites. Nesses cenários, você pode configurar uma integração padrão entre o nó de autor do Experience Manager e o Experience Platform Launch e, em seguida, associar a instância do Sites à propriedade do Experience Platform Launch. Depois disso, qualquer componente do WCM do Dynamic Media adicionado a uma página do Sites rastreará os dados e eventos dos visualizadores.
 
-Consulte [Sobre o rastreamento de visualizadores do Dynamic Media no Experience Manager Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
+Consulte [Rastreamento de visualizadores do Dynamic Media no Experience Manager Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
 Um caso de uso secundário suportado pela integração são os clientes que usam somente o Experience Manager Assets ou o Dynamic Media Classic. Nesses casos, você obtém o código de inserção do visualizador e o adiciona à página do site. Em seguida, obtenha o URL de produção da biblioteca do Experience Platform Launch do Experience Platform Launch e adicione-o manualmente ao código da página da Web.
 
-Consulte [Sobre o rastreamento de visualizadores do Dynamic Media usando o código incorporado](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
+Consulte [Rastreamento de visualizadores do Dynamic Media usando o código incorporado](#tracking-dynamic-media-viewers-using-embed-code).
 
 ## Como o rastreamento de dados e eventos funciona na integração {#how-data-and-event-tracking-works-in-the-integration}
 
