@@ -2,7 +2,7 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
+source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 57%
@@ -112,7 +112,7 @@ Consulte [Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.c
          >* `/etc` (alguns  `/etc` caminhos podem ser selecionados no CTT)
 
 
-1. Clique em **Salvar** depois de preencher todos os campos na tela de detalhes do **Conjunto de migração de conteúdo**.
+1. Clique em **Salvar** depois de preencher todos os campos na tela de detalhes **Criar conjunto de migração**.
 
 1. Você visualizará seu conjunto de migração na página *Visão geral*.
 
