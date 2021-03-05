@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
+source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 58%
+source-wordcount: '2049'
+ht-degree: 59%
 
 ---
 
@@ -76,13 +76,9 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
 
    Além disso, clique em **Criar configuração de mapeamento de usuários** para acessar a [Ferramenta de mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
-1. Preencha os campos na tela **Conjunto de migração de conteúdo**, conforme descrito abaixo.
+1. Preencha os campos na tela **Criar conjunto de migração**, conforme descrito abaixo.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
-
-   >[!NOTE]
-   >Selecione **Incluir mapeamento de usuários e grupos do IMS**, conforme destacado na figura acima. Consulte [Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obter mais detalhes.
-
 
    1. **Nome**: insira o nome do conjunto de migração.
       >[!NOTE]
@@ -102,6 +98,8 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
    1. **Parâmetros**: selecione os seguintes parâmetros para criar o conjunto de migração:
 
       1. **Incluir versão**: selecione conforme necessário.
+
+      1. **Incluir mapeamento de usuários e grupos** do IMS: Selecione a opção . Consulte [Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obter mais detalhes.
 
       1. **Caminhos a serem incluídos**: use o navegador de caminhos para selecionar os caminhos que precisam ser migrados. O seletor de caminho aceita entrada digitando ou por seleção.
 
@@ -178,7 +176,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
    >[!IMPORTANT]
    >Quando a opção **Limpar conteúdo existente na instância do Cloud antes da assimilação** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
 
 1. Quando a assimilação estiver concluída, o status no campo **PUBLICAR ASTION** será atualizado para **FINISHED**.
