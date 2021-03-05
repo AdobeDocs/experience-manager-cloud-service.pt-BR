@@ -2,7 +2,7 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: c1c352712d88667faa2364160bdb60cc7ef94f63
+source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 57%
@@ -200,7 +200,7 @@ Quando o processo de assimilação estiver concluído, você poderá usar o cont
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >Você deve desativar a opção **Limpar conteúdo existente na instância do Cloud antes de assimilar**, para evitar que o conteúdo existente seja excluído da atividade de assimilação anterior. Além disso, clique em **Atendimento ao cliente** para registrar um tíquete, como mostrado na figura anterior.
+   >Você deve desativar a opção **Limpar conteúdo existente na instância do Cloud antes de assimilar**, para evitar que o conteúdo existente seja excluído da atividade de assimilação anterior. Além disso, clique em **Atendimento ao cliente** para registrar um tíquete, conforme mostrado na figura anterior.
 
 
 ### Visualização de logs para um conjunto de migração {#viewing-logs-migration-set}
