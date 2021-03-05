@@ -2,7 +2,7 @@
 title: Renderização de SPAs e do servidor
 description: O uso da renderização do lado do servidor (SSR) em seu SPA pode acelerar a carga inicial da página e, em seguida, transmitir mais renderização para o cliente.
 translation-type: tm+mt
-source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
+source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
@@ -18,7 +18,7 @@ No entanto, isso pode levar a tempos de carregamento iniciais mais longos, espec
 
 ## Quando utilizar o SSR {#when-to-use-ssr}
 
-A RSS não é necessária em todos os projetos. Embora o AEM seja totalmente compatível com o JS SSR para SPA, a Adobe não recomenda implementá-lo sistematicamente para cada projeto.
+A RSS não é necessária em todos os projetos. Embora o AEM seja totalmente compatível com JS SSR para SPA, a Adobe não recomenda implementá-lo sistematicamente para cada projeto.
 
 Ao decidir implementar a SSR, você deve primeiro estimar qual complexidade adicional, esforço e custo adicional a SSR representa realisticamente para o projeto, incluindo a manutenção de longo prazo. Uma arquitetura RSS só deve ser escolhida quando o valor acrescentado exceder claramente os custos estimados.
 
