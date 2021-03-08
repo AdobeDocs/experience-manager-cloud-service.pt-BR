@@ -2,9 +2,9 @@
 title: Projetos
 description: Projetos permitem agrupar recursos em uma única entidade, cujo ambiente comum e compartilhado facilita o gerenciamento dos seus projetos
 translation-type: tm+mt
-source-git-commit: 4f52c08674148776c29c0a3130c60a34f6ed30cd
+source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1273'
 ht-degree: 80%
 
 ---
@@ -175,7 +175,7 @@ Todos os projetos oferecem suporte às seguintes funções padrão, para permiti
 |---|---|---|---|
 | Observador | Um usuário nessa função pode visualizar detalhes do projeto, incluindo seu status. | Permissões somente leitura em um projeto | `workflow-users` grupo |
 | Editor | Um usuário nessa função pode fazer o upload e a edição do conteúdo de um projeto. | Acesso de leitura e gravação em um projeto, metadados associados e ativos relacionados; privilégios para fazer upload de uma lista de capturas, sessão de fotos e revisar e aprovar ativos; permissão de gravação em /etc/commerce; modificar permissão em um projeto específico | grupo de usuários de fluxo de trabalho |
-| Proprietário | Um usuário nessa função pode iniciar um projeto. Um proprietário pode criar um projeto, iniciar o trabalho em um projeto e também mover ativos aprovados para a pasta Produção. Além disso, todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Permissão de gravação em `/etc/commerce` | `dam-users` grupo (para poder criar um projeto) grupo de administradores de projeto (para poder mover ativos) |
+| Proprietário | Um usuário nessa função pode iniciar um projeto. Um proprietário pode criar um projeto, iniciar o trabalho em um projeto e também mover ativos aprovados para a pasta Produção. Além disso, todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Permissão de gravação em `/etc/commerce` | `dam-users` grupo (para poder criar um projeto) grupo de administradores de projeto (para poder criar um projeto e mover ativos) |
 
 >[!NOTE]
 >
