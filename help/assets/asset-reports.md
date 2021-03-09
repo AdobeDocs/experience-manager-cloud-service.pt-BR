@@ -3,9 +3,9 @@ title: Relatórios sobre uso e compartilhamento
 description: Relatórios sobre seus ativos em [!DNL Adobe Experience Manager Assets] que ajudam a entender o uso, a atividade e o compartilhamento dos ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6586dfeeef1732ae115eea433a665191773ed283
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '945'
 ht-degree: 6%
 
 ---
@@ -92,13 +92,13 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
 
 1. Clique em **[!UICONTROL Avançar]** na barra de ferramentas.
 
-1. Na página **[!UICONTROL Configurar colunas]**, algumas colunas são selecionadas para serem exibidas no relatório por padrão. Você pode selecionar mais colunas. Desmarque uma coluna selecionada para excluí-la do relatório.
+1. Na página **[!UICONTROL Configurar colunas]**, algumas colunas são selecionadas para serem exibidas no relatório por padrão. Você pode selecionar mais colunas. Cancele a seleção de uma coluna para excluí-la no relatório.
 
-   ![Selecionar ou desmarcar colunas de relatório](assets/configure_columns.png)
+   ![Selecionar ou cancelar seleção de colunas de relatório](assets/configure_columns.png)
 
    Para exibir um nome de coluna ou caminho de propriedade personalizado, configure as propriedades do binário de ativo no nó `jcr:content` no CRX. Como alternativa, adicione-o por meio do seletor de caminho de propriedade.
 
-   ![Selecionar ou desmarcar colunas de relatório](assets/custom_columns.png)
+   ![Selecionar ou cancelar seleção de colunas de relatório](assets/custom_columns.png)
 
 1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatório foi iniciada.
 1. Na página [!UICONTROL Relatórios de Ativos], o status da geração de relatórios é baseado no estado atual do trabalho de relatório, por exemplo [!UICONTROL Sucesso], [!UICONTROL Falha], [!UICONTROL Em fila] ou [!UICONTROL Programado]. O mesmo status aparece na caixa de entrada de notificações.Para exibir a página do relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Exibir]** na barra de ferramentas.
