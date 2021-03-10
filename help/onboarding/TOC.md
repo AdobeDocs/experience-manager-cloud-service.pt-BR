@@ -4,9 +4,9 @@ user-guide-title: Integração ao AEM as a Cloud Service
 breadcrumb-title: Guia de integração
 user-guide-description: Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 translation-type: tm+mt
-source-git-commit: 0c5eac38ca9da8c0a3bd00fe1dd0472710dd3866
+source-git-commit: cef1cba48c70b6bd8d488040ed80ee0c4d6d814c
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '655'
 ht-degree: 35%
 
 ---
@@ -20,10 +20,6 @@ ht-degree: 35%
    + [Adicionar usuários e funções](what-is-required/add-users-roles.md)
    + [Permissões baseadas em função](what-is-required/role-based-permissions.md)
    + [Repositório de código-fonte](what-is-required/source-code-repository.md)
-+ Fases da jornada de transição {#phases}
-   + [Planejamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/planning.html)
-   + [Execução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
-   + [Pós-ativação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + Acesso ao AEM na nuvem {#getting-access}
    + [Visão geral do processo de provisionamento](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [Acesso ao Experience Manager as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
@@ -66,14 +62,14 @@ ht-degree: 35%
       + [Exibir e atualizar o nome de domínio personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html)
       + [Atualização do certificado SSL do nome de domínio personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/update-cdn-ssl-certificate.html)
       + [Excluindo Nome de Domínio Personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/delete-custom-domain-name.html)
-   + Gerenciando Listas de Permissões de IP {#ip-allow-lists}
+   + Gerenciando Listas de permissões IP {#ip-allow-lists}
       + [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/introduction.html)
-      + [Adicionando uma lista de permissões de IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html)
-      + [Exibindo e Atualizando uma Lista de Permissões de IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html)
-      + [Aplicando uma lista de permissões de IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html)
-      + [Desaplicando uma lista de permissões de IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/unapply-ip-allow-list.html)
-      + [Excluindo uma lista de permissões de IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
-      + [Verificando um Status de Lista de Permissões de IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
+      + [Adicionar uma Lista de permissões IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html)
+      + [Visualização e atualização de uma Lista de permissões IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html)
+      + [Aplicação de uma Lista de permissões IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html)
+      + [Desaplicar uma Lista de permissões IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/unapply-ip-allow-list.html)
+      + [Exclusão de uma Lista de permissões IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
+      + [Verificando o status de uma Lista de permissões IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Notas de versão do Cloud Manager {#release-notes-cloud-manager}
       + [Notas de versão atuais (2021.2.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Notas da versão 2021.1.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
