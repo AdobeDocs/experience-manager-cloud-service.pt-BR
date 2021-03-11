@@ -2,9 +2,9 @@
 title: 'Editando um programa de produção '
 description: 'Editando um programa de produção '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,8 @@ Os usuários com as permissões necessárias agora podem editar um programa de P
 
 Siga as etapas abaixo para editar um programa de Produção:
 
-1. Navegue até a página **Editar Programa**.
+1. 
+   1. Navegue até a página **Editar Programa** a partir da página *Visão Geral* do Cloud Manager
 
 1. A página **Editar programa** exibirá duas guias (Geral e Soluções) para os programas Produção e Sandbox.
 
