@@ -1,51 +1,59 @@
 ---
-title: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2021.2.0
-description: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2021.2.0
+title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.3.0
+description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.3.0
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 238ce5ea4327947694851bd0fae5be84614501c9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '400'
 ht-degree: 2%
 
 ---
 
 
-# Notas de versão do Cloud Manager no Adobe Experience Manager como Cloud Service 2021.2.0 {#release-notes}
+# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.3.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager em AEM como Cloud Service 2021.2.0.
+Esta página descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.3.0.
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager no AEM como Cloud Service 2021.2.0 é 11 de fevereiro de 2021.
+A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.3.0 é 11 de março de 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Novidades {#what-is-new}
 
-* Os clientes do Assets agora poderão escolher quando e onde implantar sua instância do Brand Portal de forma automática por meio da interface do usuário do Cloud Manager. Para um programa regular (não caixa de proteção) com a solução Assets, o Portal de marcas agora pode ser provisionado no ambiente Production. O provisionamento pode ser feito somente uma vez no Production ambiente.
+* Os clientes com ambientes com configurações de CDN pré-existentes para Lista de permissões de IP, certificados SSL e nomes de domínio personalizados verão a seguinte mensagem e poderão se auto-servir por meio da interface do usuário.
 
-* O AEM Project Archetype usado em Projeto e criação de caixa de proteção foi atualizado para a versão 25.
+* Os usuários com a permissão necessária agora podem Editar o Programa, permitindo que façam o seguinte de maneira automatizada.
 
-* A lista de APIs obsoletas identificadas durante a digitalização de código foi refinada para incluir classes e métodos adicionais obsoletos nas versões mais recentes do Cloud Service SDK.
+* AEM &quot;Atualização de push&quot; agora será exibido para as telas Execução de pipeline e Atividade.
 
-* O perfil SonarQube para o Gerenciador de nuvem foi atualizado para remover o Lula de regra Sonar:S2142. Isso não entrará em conflito com as verificações de Interrupção de Thread.
+* Se um ambiente estiver hibernado, mas também houver uma atualização de AEM disponível, o status &quot;Hibernado&quot; terá prioridade sobre &quot;Atualização disponível&quot;.
 
-* A interface do usuário do Gerenciador de nuvem informará o usuário que pode não ser capaz de adicionar/atualizar temporariamente o nome do domínio porque o ambiente associado tem um pipeline em execução conectado a ele ou que está aguardando a etapa de aprovação.
+* Agora os usuários podem ver suas funções do Cloud Manager selecionando a opção &quot;Exibir função(ões) do Cloud Manager&quot; após navegar até o ícone Perfil do usuário (canto superior direito) do Unified Shell.
 
-* As propriedades definidas nos arquivos `pom.xml` do cliente prefixados com o sonar agora serão removidas dinamicamente para evitar falhas de compilação e verificação de qualidade.
+* O rótulo &quot;Pedido de aprovação&quot; foi renomeado para &quot;Aprovação de produção&quot; para maior clareza.
 
-* A interface do usuário do Gerenciador de nuvem informará o usuário que não pode selecionar temporariamente um certificado SSL se ele estiver sendo usado por um nome de Domínio que está sendo implantado no momento.
+* O rótulo &quot;Versão&quot; foi renomeado para &quot;Git Tag&quot; na tela de execução do pipeline de Produção.
 
-* Regras adicionais de qualidade de código foram adicionadas para cobrir problemas de compatibilidade de Cloud Service.
+* Os rótulos que definem o comportamento quando métricas importantes não alcançam o limite definido foram renomeados para refletir seu comportamento verdadeiro - Cancelar imediatamente e Aprovar imediatamente.
+
+* As listas de desaprovação de classe e método foram atualizadas com base na versão `2021.3.4997.20210303T022849Z-210225` do SDK do Cloud Service AEM.
+
+* O pipeline de Produção do Cloud Manager agora incluirá o recurso de teste da interface de usuário personalizada.
 
 ### Correções de erros {#bug-fixes}
 
-* A correspondência do certificado SSL com um nome de domínio não faz mais distinção entre maiúsculas e minúsculas.
+* O controle de versão do pacote foi ignorado em alguns casos durante AEM atualização por push.
 
-* A interface do usuário do Cloud Manager agora informará um usuário se as chaves privadas do certificado não atenderem ao limite de 2048 bits com uma mensagem de erro apropriada.
+* Alguns problemas de qualidade não foram detectados corretamente quando os pacotes eram incorporados em outros pacotes.
 
-* A interface do usuário do Gerenciador de nuvem informará o usuário que não pode selecionar temporariamente um certificado SSL se ele estiver sendo usado por um nome de Domínio que está sendo implantado no momento.
+* Em situações obscuras, o nome de programa padrão gerado ao abrir a caixa de diálogo Adicionar programa pode ser uma duplicata de um nome de programa existente.
 
-* Em alguns casos, um problema interno pode fazer com que a exclusão de ambientes fique travada.
+* Ocasionalmente, se o usuário sair da página de execução do pipeline imediatamente após iniciar um pipeline, uma mensagem de erro será exibida informando que a ação falhou, embora a execução realmente comece.
 
-* Algumas falhas de pipeline foram relatadas incorretamente como erros de pipeline.
+* A etapa de build foi reiniciada desnecessariamente quando as builds do cliente resultaram em pacotes inválidos.
+
+* Ocasionalmente, o usuário pode ver um status verde &quot;ativo&quot; ao lado de uma  de IP Lista de permissões mesmo quando essa configuração não foi implantada.
+
+* Todos os pipelines de produção existentes serão ativados automaticamente com a etapa Auditoria de experiência.
