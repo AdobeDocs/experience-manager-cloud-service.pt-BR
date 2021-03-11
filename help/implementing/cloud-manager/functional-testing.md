@@ -2,9 +2,9 @@
 title: Teste funcional - Cloud Services
 description: Teste funcional - Cloud Services
 translation-type: tm+mt
-source-git-commit: 1e0765e6bf2818754c5603c08f055a7c7453bc33
+source-git-commit: 765334cff443d56e37f578647af4bcd133509481
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '847'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Teste funcional {#functional-testing}
 
-Os ensaios funcionais são classificados em dois tipos:
+Os ensaios funcionais são classificados em três tipos:
 
 * Teste funcional do produto
 * Teste funcional personalizado
@@ -39,7 +39,7 @@ No entanto, se nenhum JAR de teste for produzido pela build, o teste será aprov
 
 O AEM fornece aos clientes um conjunto integrado de portas de qualidade do Cloud Manager para garantir atualizações tranquilas em seus aplicativos. Em particular, os portões de teste de TI já permitem que os clientes criem e automatizem seus próprios testes que usam AEM APIs.
 
-O recurso de teste da interface personalizada é um recurso opcional que permite que nossos clientes criem e executem automaticamente testes da interface do usuário para seus aplicativos. Os testes da interface do usuário são testes baseados em Selenium, compactados em uma imagem Docker, para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium). Saiba mais sobre como criar interface do usuário e gravar testes da interface do usuário a partir daqui. Além disso, um projeto de Testes de interface pode ser facilmente gerado usando o Arquétipo de projeto AEM.
+O recurso de teste da interface personalizada é um recurso opcional [Opt-in do cliente](#customer-opt-in) que permite que nossos clientes criem e executem automaticamente testes da interface do usuário para seus aplicativos. Os testes da interface do usuário são testes baseados em Selenium, compactados em uma imagem Docker, para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium). Saiba mais sobre como criar interface do usuário e gravar testes da interface do usuário a partir daqui. Além disso, um projeto de Testes de interface pode ser facilmente gerado usando o Arquétipo de projeto AEM.
 
 Os clientes podem criar testes personalizados (via GIT) e conjunto de testes para interface do usuário. O teste da interface do usuário será executado como parte de uma porta de qualidade específica para cada pipeline do Cloud Manager com suas informações específicas de etapa e feedback. Quaisquer testes da interface do usuário, incluindo regressão e novas funcionalidades, permitirão que os erros sejam detectados e relatados no contexto do cliente.
 
