@@ -2,9 +2,9 @@
 title: Implantar o código - Cloud Services
 description: Implantar o código - Cloud Services
 translation-type: tm+mt
-source-git-commit: 533707b9073231ed16757884afeb968ace0785b3
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1065'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Consulte [Teste funcional do produto](/help/implementing/cloud-manager/functiona
       Consulte [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obter mais detalhes.
 
    * **Teste** da interface personalizada: Esta etapa é um recurso opcional que permite que nossos clientes criem e executem automaticamente testes de interface para seus aplicativos. Os testes da interface do usuário são testes baseados em Selenium, compactados em uma imagem Docker, para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium).
-Consulte Teste da interface personalizada para obter mais detalhes.
+Consulte [Teste de interface personalizada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing) para obter mais detalhes.
 
 
    * **Auditoria** de experiência: Essa etapa no pipeline está sempre presente e não pode ser ignorada. Conforme um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após um teste funcional personalizado que executará as verificações. As páginas configuradas serão enviadas ao serviço e avaliadas. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
