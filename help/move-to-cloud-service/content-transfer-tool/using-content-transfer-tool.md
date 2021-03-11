@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 translation-type: tm+mt
-source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
+source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 57%
+source-wordcount: '2274'
+ht-degree: 51%
 
 ---
 
@@ -18,7 +18,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * O requisito mínimo do sistema para a ferramenta Transferência de conteúdo é o AEM 6.3 + e o JAVA 8. Se você estiver em uma versão inferior do AEM, precisará atualizar seu repositório de conteúdo para o AEM 6.5 para usar a ferramenta Transferência de conteúdo.
 
-* O Java precisa ser configurado no ambiente do AEM, para que o comando `java` possa ser executado pelo usuário que inicia o AEM.
+* O Java precisa ser configurado no ambiente de AEM, para que o comando `java` possa ser executado pelo usuário que inicia o AEM.
 
 * É recomendável desinstalar versões mais antigas da ferramenta Transferência de conteúdo ao instalar a versão 1.3.0, pois houve uma mudança importante na arquitetura da ferramenta. Com a versão 1.3.0, você também deve criar novos conjuntos de migração e executar novamente a extração e a assimilação nos novos conjuntos de migração.
 
@@ -26,15 +26,19 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Se você estiver usando um *Ambiente de sandbox*, certifique-se de que ele esteja atualizado e seja atualizado para a versão mais recente. Se você estiver usando um *Ambiente de produção*, ele será atualizado automaticamente.
 
-* Para usar a ferramenta Transferência de conteúdo, você precisará ser um usuário administrador na instância de origem e pertencer ao grupo de administradores do AEM local na instância do Cloud Service para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão recuperar o token de acesso para usar a ferramenta Transferência de conteúdo.
+* Para usar a ferramenta Transferência de conteúdo, você precisará ser um usuário administrador na instância de origem e pertencer ao grupo de AEM local **administradores** na instância do Cloud Service para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão recuperar o token de acesso para usar a ferramenta Transferência de conteúdo.
 
-* O token de acesso pode expirar periodicamente após um período de tempo específico ou após a atualização do ambiente do Cloud Service. Se o token de acesso tiver expirado, você não poderá se conectar à instância do Cloud Service e terá que recuperar o novo token de acesso. O ícone de status associado a um conjunto de migração existente será alterado para uma nuvem vermelha e exibirá uma mensagem ao passar o mouse sobre ela.
+* Se a configuração **Limpar conteúdo existente na instância do Cloud antes da assimilação** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também é verdadeiro para um usuário administrador adicionado ao grupo **administradores**. O usuário precisará ser adicionado novamente ao grupo **administrators** para recuperar o token de acesso para CTT.
+
+* O token de acesso pode expirar periodicamente após um período de tempo específico ou após a atualização do ambiente de Cloud Service. Se o token de acesso tiver expirado, você não poderá se conectar à instância do Cloud Service e terá que recuperar o novo token de acesso. O ícone de status associado a um conjunto de migração existente será alterado para uma nuvem vermelha e exibirá uma mensagem ao passar o mouse sobre ela.
+
+* A ferramenta Transferência de conteúdo não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou de Publicação ou em ambos. Recomenda-se que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada e a instância de Autor de origem para mover o conteúdo para a instância de Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino.
 
 * Os Usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles que são exigidos pelo conteúdo para atender às permissões. O processo de *Extração* copia todo o `/home` para o conjunto de migração e o processo de *Assimilação* copia todos os usuários e grupos referenciados nas ACLs do conteúdo migrado. Para mapear automaticamente os usuários e grupos existentes para suas IDs IMS, consulte [Usar a ferramenta de mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * Durante a fase de extração, a ferramenta Transferência de conteúdo é executada em uma instância de origem do AEM ativa.
 
-* Após concluir a fase *Extração* do processo de transferência de conteúdo e antes de iniciar a *Fase de assimilação* para assimilar conteúdo em seu AEM as a Cloud Service *Estágio* ou *Produção* instâncias, será necessário registrar um tíquete de suporte para notificar a Adobe de sua intenção de executar *Assimilação a9/> para que a Adobe possa garantir que nenhuma interrupção ocorra durante o processo* Assimilação *.* Você precisará registrar o tíquete de suporte uma semana antes da data planejada de *Assimilação*. Depois de enviar o tíquete de suporte, a equipe de suporte fornecerá orientação sobre as próximas etapas.
+* Após concluir a fase *Extração* do processo de transferência de conteúdo e antes de iniciar a *Fase de assimilação* para assimilar conteúdo em seu AEM como um Cloud Service *Stage* ou *Production* instâncias, será necessário registrar um tíquete de suporte para notificar o Adobe de sua intenção de executar *Assimilação9/> para que o Adobe possa garantir que nenhuma interrupção ocorra durante o processo* Assimilação *.* Você precisará registrar o tíquete de suporte uma semana antes da data planejada de *Assimilação*. Depois de enviar o tíquete de suporte, a equipe de suporte fornecerá orientação sobre as próximas etapas.
    * Registre um tíquete de suporte com os seguintes detalhes:
       * Data exata e hora estimada (com seu fuso horário) quando você planeja iniciar a fase *Assimilação*.
       * Tipo de ambiente (Preparo ou Produção) no qual você planeja assimilar dados.
@@ -93,7 +97,7 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
    1. **Token de acesso**: insira o token de acesso.
 
       >[!NOTE]
-      >Você pode recuperar o token de acesso usando o botão **Open access token**. É necessário garantir que você pertença ao grupo de administradores do AEM na instância de destino do Cloud Service.
+      >Você pode recuperar o token de acesso usando o botão **Open access token**. Você precisa garantir que pertença ao grupo de administradores de AEM na instância do Cloud Service de destino.
 
    1. **Parâmetros**: selecione os seguintes parâmetros para criar o conjunto de migração:
 
@@ -175,7 +179,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 1. Selecione um conjunto de migração na página *Visão geral* e clique em **Assimilar** para iniciar a extração. A caixa de diálogo **Assimilação do conjunto de migração** é exibida. Clique em **Assimilar** para iniciar a fase de assimilação. É possível assimilar conteúdo para Autor e Publicação ao mesmo tempo.
 
    >[!IMPORTANT]
-   >Quando a opção **Limpar conteúdo existente na instância do Cloud antes da assimilação** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino.
+   >Quando a opção **Limpar conteúdo existente na instância do Cloud antes da assimilação** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também é verdadeiro para um usuário administrador adicionado ao grupo **administradores**.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
