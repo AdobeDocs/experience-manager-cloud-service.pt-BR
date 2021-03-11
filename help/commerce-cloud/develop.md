@@ -1,17 +1,17 @@
 ---
 title: Desenvolver o AEM Commerce para o AEM as a Cloud Service
-description: Saiba como gerar um projeto AEM habilitado para comércio usando o arquétipo de projeto AEM. Saiba como criar e implantar o projeto em um ambiente de desenvolvimento local usando o AEM como um SDK Cloud Service.
+description: Saiba como gerar um projeto de AEM habilitado para comércio usando o arquétipo de projeto AEM. Saiba como criar e implantar o projeto em um ambiente de desenvolvimento local usando o AEM como um SDK do Cloud Service.
 topics: Commerce, Development
-feature: Commerce Integration Framework
+feature: Estrutura de integração de comércio
 version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 9d8d7c3c8c1ac3cb843ce74b3ccdb6904bbfaa05
+source-git-commit: a9c9a866c03bc15ebddddc7f2086f1f3ffd38a07
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 78%
+source-wordcount: '969'
+ht-degree: 77%
 
 ---
 
@@ -28,11 +28,11 @@ O desenvolvimento de projetos do AEM Commerce com base na Commerce Integration F
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-Um ambiente de desenvolvimento local é recomendado para trabalhar com projetos da CIF. O complemento CIF disponibilizado para ambientes do AEM as a Cloud Service também está disponível para desenvolvimento local. Ele pode ser baixado no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+Um ambiente de desenvolvimento local é recomendado para trabalhar com projetos da CIF. O complemento CIF fornecido para o AEM como Cloud Service também está disponível para desenvolvimento local. Ele pode ser baixado no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 O complemento CIF é fornecido como um arquivo de recursos Sling. O arquivo zip disponível no Portal de distribuição de software inclui dois arquivos de recursos Sling, um para o autor no AEM e outro para instâncias de publicação do AEM.
 
-**Novo no AEM as a Cloud Service?** Consulte  [um guia mais detalhado para configurar um ambiente de desenvolvimento local usando o AEM como um SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) Cloud Service.
+**Novo no AEM as a Cloud Service?** Consulte  [um guia mais detalhado para configurar um ambiente de desenvolvimento local usando o AEM como um SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) do Cloud Service.
 
 ### Software necessário
 
@@ -47,7 +47,7 @@ Devem ser instalados:
 
 ### Acesso ao complemento CIF
 
-É possível baixar o complemento CIF como um arquivo zip no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). O arquivo zip contém o suplemento CIF como **Arquivo de recursos Sling**, ele não é um pacote AEM. Observe que o acesso às listagens do SDK está limitado aos que têm uma licença do AEM as a Cloud Service.
+É possível baixar o complemento CIF como um arquivo zip no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). O arquivo zip contém o complemento CIF como **Arquivo de recursos Sling**, ele não é um pacote AEM. Observe que o acesso às listagens do SDK está limitado aos que têm uma licença do AEM as a Cloud Service.
 
 >[!TIP]
 >
@@ -83,11 +83,11 @@ Para o desenvolvimento local do complemento CIF usando o AEM as a Cloud Service,
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   Essa variável é usada pelo AEM para se conectar ao seu sistema de comércio. Além disso, o add-on CIF inclui um proxy reverso local para disponibilizar o ponto final Magento GraphQL localmente. Isso é usado pelas ferramentas de criação CIF (console do produto e seletores) e para os componentes CIF do cliente que fazem chamadas diretas do GraphQL.
+   Essa variável é usada pelo AEM para se conectar ao seu sistema de comércio. Além disso, o complemento CIF inclui um proxy reverso local para disponibilizar o ponto de extremidade Magento GraphQL localmente. Isso é usado pelas ferramentas de criação da CIF (console do produto e seletores) e para os componentes do lado do cliente da CIF que fazem chamadas GraphQL diretas.
 
-   Essa variável também deve ser configurada para o ambiente do AEM as a Cloud Service. Para obter mais informações sobre variáveis, consulte [Configuração do OSGi para AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   Essa variável também deve ser configurada para o ambiente do AEM as a Cloud Service. Para obter mais informações sobre variáveis, consulte [Configuração do OSGi para AEM como um Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (Opcional) Para ativar os recursos de catálogo preparados, é necessário criar um token de integração para a instância do Magento. Siga as etapas em [Introdução](./getting-started.md#staging) para criar o token.
+1. (Opcional) Para ativar os recursos do catálogo preparado, você precisa criar um token de integração para sua instância do Magento. Siga as etapas em [Introdução](./getting-started.md#staging) para criar o token.
 
    Defina um segredo OSGi com o nome `COMMERCE_AUTH_HEADER` para o seguinte valor:
 
@@ -137,6 +137,12 @@ Os Componentes principais da CIF podem ser utilizados em qualquer projeto median
 <dependency>
     <groupId>com.adobe.commerce.cif</groupId>
     <artifactId>core-cif-components-apps</artifactId>
+    <type>zip</type>
+    <version>x.y.z</version>
+</dependency>
+<dependency>
+    <groupId>com.adobe.commerce.cif</groupId>
+    <artifactId>core-cif-components-config</artifactId>
     <type>zip</type>
     <version>x.y.z</version>
 </dependency>
