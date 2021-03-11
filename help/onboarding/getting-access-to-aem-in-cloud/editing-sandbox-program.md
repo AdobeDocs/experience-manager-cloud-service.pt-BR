@@ -2,9 +2,9 @@
 title: 'Edição de um programa de sandbox '
 description: 'Edição de um programa de sandbox '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,11 @@ Os usuários com a permissão necessária agora podem editar um programa de Prod
 
 Siga as etapas abaixo para editar um programa de sandbox:
 
-1. Navegue até a página **Editar Programa**.
+1. Navegue até a página **Editar programa** na página *Visão geral* do Cloud Manager.
 
 1. A página **Editar programa** exibe duas guias (Geral e Soluções) para os programas Produção e Sandbox.
    ![](assets/edit-program.png)
 
-   >[!NOTE]
-   >Embora os Sites e os Ativos sejam exibidos, um deles pode ser desativado com base no que foi comprado e não usado. Especificamente, se a organização não tiver direitos não utilizados para uma solução específica, essa solução será exibida, mas desabilitada.
 
 ## Considerações ao editar um programa {#considerations-editing}
 
