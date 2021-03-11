@@ -1,8 +1,8 @@
 ---
 title: Vincular URLs ao aplicativo da Web.
-description: Como vincular URLs ao aplicativo da Web no Dynamic Media.
+description: Como vincular URLs ao seu aplicativo web no Dynamic Media.
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '1265'
 ht-degree: 10%
@@ -12,15 +12,15 @@ ht-degree: 10%
 
 # Vincular URLs ao aplicativo da Web.{#linking-urls-to-your-web-application}
 
-Seus sites e aplicativos acessam os serviços do Dynamic Media por meio de chamadas de URL. Depois de publicar um ativo, o Dynamic Media ativa uma string de URL que faz referência ao ativo. Você pode colar esses URLs em um navegador da Web para testes.
+Seus sites e aplicativos acessam os serviços da Dynamic Media por meio de chamadas de URL. Após publicar um ativo, o Dynamic Media ativa uma string de URL que faz referência a ele. Você pode colar esses URLs em um navegador da Web para testes.
 
-Você vincula aos URLs somente se estiver *não* usando o AEM como seu WCM. A vinculação/incorporação é usada quando você deseja fornecer um reprodutor de vídeo como uma janela pop-up ou modal. Se estiver usando o AEM como seu WCM, [você adiciona os ativos diretamente na página.](adding-dynamic-media-assets-to-pages.md)
+Você vincula aos URLs somente se estiver *não* usando AEM como WCM. A vinculação/incorporação é usada quando você deseja fornecer um reprodutor de vídeo como uma janela pop-up ou modal. Se estiver usando AEM como WCM, [você adiciona os ativos diretamente na página.](adding-dynamic-media-assets-to-pages.md)
 
 Para colocar essas cadeias de caracteres de URL em suas páginas da Web e aplicativos, copie-as do Dynamic Media.
 
 >[!NOTE]
 >
->As sequências de caracteres de URL só estão disponíveis para representações dinâmicas de ativos. No momento, eles não estão disponíveis para ativos estáticos que residem no DAM e não no servidor de mídia dinâmica. O botão URL não é exibido para representações estáticas.
+>As sequências de caracteres de URL só estão disponíveis para representações dinâmicas de ativos. No momento, eles não estão disponíveis para ativos estáticos que residem no DAM e não no servidor do Dynamic Media. O botão URL não é exibido para representações estáticas.
 
 Consulte também [Incorporação do visualizador de vídeo ou imagem em uma página da Web](embed-code.md).
 
@@ -82,7 +82,7 @@ Há várias maneiras diferentes de obter uma string de URL. No entanto, as etapa
 
 ## Obter um URL para um ativo estático {#obtaining-a-url-for-a-static-asset}
 
-O Dynamic Media é compatível com a entrega de ativos estáticos, que são outros ativos além de apenas imagens e vídeo. Os formatos de ativos estáticos suportados para entrega incluem:
+O Dynamic Media oferece suporte à entrega de ativos estáticos, que são outros ativos além de apenas imagens e vídeo. Os formatos de ativos estáticos suportados para entrega incluem:
 
 * arquivos 3D
 * GIF animado
@@ -116,11 +116,11 @@ O Dynamic Media é compatível com a entrega de ativos estáticos, que são outr
 
 ## Obter um URL de vídeo para uma representação de vídeo publicada {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. No AEM, navegue até **[!UICONTROL Tools > Deployment > Cloud > Cloud Services]**.
+1. Em AEM, navegue até **[!UICONTROL Tools > Deployment > Cloud > Cloud Services]**.
 1. Na página **[!UICONTROL Serviços da nuvem]**, role até o cabeçalho **[!UICONTROL Serviços de nuvem do Dynamic Media]** e toque em **[!UICONTROL Mostrar configurações]**.
 1. Em **[!UICONTROL Configurações disponíveis]**, toque no nome da configuração desejada.
 
-1. Na página **[!UICONTROL Configurações da nuvem do Dynamic Media]**, em **[!UICONTROL URL do serviço de vídeo]**, copie todo o caminho do URL. Posteriormente, é necessário o caminho do URL copiado nas etapas.
+1. Na página **[!UICONTROL Configurações da Dynamic Media Cloud]**, em **[!UICONTROL URL do serviço de vídeo]**, copie todo o caminho do URL. Posteriormente, é necessário o caminho do URL copiado nas etapas.
 
    Por exemplo, o caminho do URL pode ser exibido de forma semelhante ao seguinte:
 
@@ -132,7 +132,7 @@ O Dynamic Media é compatível com a entrega de ativos estáticos, que são outr
 
    Por exemplo, se a ID de registro fosse `87654321|MyCompany`, o nome do cliente seria `MyCompany`.
 
-1. Próximo ao canto superior esquerdo da página, toque em **[!UICONTROL Serviços da nuvem]**, toque no ícone do AEM e navegue até **[!UICONTROL Geral > CRXDE Lite]**.
+1. Próximo ao canto superior esquerdo da página, toque em **[!UICONTROL Cloud Services]**, toque no ícone AEM e navegue até **[!UICONTROL Geral > CRXDE Lite]**.
 1. Copie todo o caminho de representação de vídeo do JCR (Java Content Repository).
 
    Por exemplo, o caminho de representação do vídeo pode ser exibido de forma semelhante ao seguinte:
@@ -153,10 +153,10 @@ O Dynamic Media é compatível com a entrega de ativos estáticos, que são outr
 
 ## Obter um URL de vídeo para transmissão adaptável (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. No AEM, navegue até **[!UICONTROL Tools > Deployment > Cloud > Cloud Services]**.
+1. Em AEM, navegue até **[!UICONTROL Tools > Deployment > Cloud > Cloud Services]**.
 1. Na página **[!UICONTROL Serviços da nuvem]**, role até o cabeçalho **[!UICONTROL Serviços de nuvem do Dynamic Media]** e toque em **[!UICONTROL Mostrar configurações]**.
 1. Em **[!UICONTROL Configurações disponíveis]**, toque no nome da configuração desejada.
-1. Na página **[!UICONTROL Configurações do Dynamic Media Cloud Services]**, faça o seguinte:
+1. Na página **[!UICONTROL Dynamic Media Cloud Services Settings]**, faça o seguinte:
 
    * Em **[!UICONTROL URL do serviço de vídeo]**, copie o caminho do URL inteiro. Posteriormente, você precisará do caminho do URL copiado nessas etapas. Por exemplo, o caminho do URL pode ser exibido de forma semelhante ao seguinte:
 
@@ -208,6 +208,6 @@ O Dynamic Media é compatível com a entrega de ativos estáticos, que são outr
 
 ## Usar HTTP/2 para fornecer ativos do Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Ele oferece transferência mais rápida de informações e reduz a quantidade de poder de processamento necessário. A entrega de ativos do Dynamic Media agora pode ser feita por HTTP/2, o que oferece melhor resposta e tempos de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Ele oferece transferência mais rápida de informações e reduz a quantidade de poder de processamento necessário. A entrega de ativos do Dynamic Media agora pode ser feita via HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
-Consulte [HTTP2 Delivery of Content](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta do Dynamic Media.
+Consulte [HTTP2 Delivery of Content](http2faq.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta Dynamic Media.
