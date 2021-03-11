@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
+source-git-commit: fb0700f2b25917dd97381e0270995d7cef646edb
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1574'
 ht-degree: 3%
 
 ---
@@ -42,7 +42,7 @@ A seguinte versão (2021.3.0) será lançada em 25 de março de 2021.
 
 ## Novidades em [!DNL Assets] {#what-is-new-assets}
 
-* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolverem com usuários de agências a obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolver com usuários de agências para obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * O relatório de uso [!DNL Brand Portal] agora exibe somente os usuários ativos. Os usuários inativos não são exibidos agora. Os usuários ativos são aqueles cuja conta está atribuída a um perfil de produto no [!DNL Admin Console]. Consulte [[!DNL Brand Portal] relatórios](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -82,7 +82,10 @@ A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.3.0 é 11 
 
 ### Novidades {#what-is-new-march}
 
-* Os clientes com ambientes com configurações de CDN pré-existentes para Lista de permissões de IP, certificados SSL e nomes de domínio personalizados verão uma mensagem sobre suas configurações existentes anteriormente e poderão se auto-servir por meio da interface do usuário.
+* Os clientes com ambientes com configurações de CDN pré-existentes para Lista de permissões de IP, certificados SSL e nomes de domínio personalizados verão uma mensagem sobre suas configurações existentes anteriormente e poderão se auto-servir por meio da interface do usuário. Os usuários agora podem:
+   * Adicionar a solução Sites a um programa existente com Ativos (ou vice-versa).
+   * Remova Sites (ou Ativos) de um programa existente com Sites e Ativos.
+   * Adicione o segundo direito de solução não utilizado a um programa existente ou como um novo Programa.
 
 * Os usuários com a permissão necessária agora podem Editar o Programa, permitindo que façam o seguinte de maneira automatizada.
 
