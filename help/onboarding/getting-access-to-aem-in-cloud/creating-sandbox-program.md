@@ -2,7 +2,7 @@
 title: 'Criação de um programa de sandbox '
 description: 'Criação de um programa de sandbox '
 translation-type: tm+mt
-source-git-commit: 14844806dc42684578100a1c2f5d3246897f0c8c
+source-git-commit: 5773683a75254855687266929a3e1876c8f06e61
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
