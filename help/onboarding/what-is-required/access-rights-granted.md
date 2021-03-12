@@ -2,7 +2,7 @@
 title: Direitos de acesso concedidos - O que é necessário
 description: Direitos de acesso concedidos - O que é necessário
 translation-type: tm+mt
-source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
+source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 11%
@@ -36,8 +36,8 @@ Depois que a Adobe criar uma organização para sua empresa, o administrador des
    * [Gerenciando funções](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-roles)
    * [Gerenciamento do acesso à instância do autor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#manage-access-aem)
 
->[!NOTE]
->Visite a seção [Usuários e funções](#users-roles) para saber mais sobre usuários e definições de funções no Cloud Manager.
+      >[!NOTE]
+      >Visite a seção [Usuários e funções](#users-roles) para saber mais sobre usuários e definições de funções no Cloud Manager.
 
 Com esses direitos concedidos, seu administrador agora está configurado com um logon único (usando o Adobe ID) para acessar os serviços [!UICONTROL Experience Cloud], fazer logon nos ambientes de nuvem AEM e usar o [!UICONTROL Cloud Manager].
 
