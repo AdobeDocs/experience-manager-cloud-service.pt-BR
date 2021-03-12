@@ -2,17 +2,17 @@
 title: CDN no AEM as a Cloud Service
 description: CDN no AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
+source-git-commit: c71117de502b1ee756e06e756a643c987113ea45
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 4%
+source-wordcount: '695'
+ht-degree: 7%
 
 ---
 
 
 # CDN no AEM as a Cloud Service {#cdn}
 
-AEM como Cloud Service é enviado com um CDN integrado. Seu principal objetivo é reduzir a latência, fornecendo conteúdo armazenável em cache a partir dos nós CDN na borda, perto do navegador. Ele é totalmente gerenciado e configurado para obter o desempenho ideal dos aplicativos AEM.
+AEM como Cloud Service é enviado com um CDN integrado. Seu principal objetivo é reduzir a latência, fornecendo conteúdo que pode ser armazenado em cache a partir dos nós CDN na borda, perto do navegador. Ele é totalmente gerenciado e configurado para obter o desempenho ideal dos aplicativos AEM.
 
 A CDN gerenciada AEM atenderá aos requisitos de desempenho e segurança da maioria dos clientes. Para o nível de publicação, os clientes podem apontar para ele opcionalmente a partir de sua própria CDN, que precisarão gerenciar. Isso será permitido caso a caso, com base no atendimento a determinados pré-requisitos, incluindo, mas não limitado a, o cliente que tem uma integração herdada com seu fornecedor de CDN que é difícil de abandonar.
 
@@ -47,10 +47,10 @@ Instruções de configuração:
 
 1. Defina o cabeçalho `X-Forwarded-Host` com o nome de domínio.
 1. Defina o cabeçalho Host com o domínio de origem, que é a entrada do CDN AEM. O valor deve vir do Adobe.
-1. Envie o cabeçalho SNI para a origem. Como o cabeçalho Host, o cabeçalho sni deve ser o domínio de origem.
+1. Envie o cabeçalho SNI para a origem. Como o cabeçalho Host , o cabeçalho SNI deve ser o domínio de origem.
 1. Defina o `X-Edge-Key` ou o `X-AEM-Edge-Key` (se sua CDN retirar o X-Edge-*), que é necessário para rotear o tráfego corretamente para os servidores de AEM. O valor deve vir do Adobe. Informe o Adobe se quiser acesso direto à entrada do Adobe CDN (a ser bloqueado quando `X-Edge-Key` não estiver presente).
 
-Antes de aceitar o tráfego em tempo real, você deve validar com o suporte ao cliente do Adobe que o roteamento de tráfego completo está funcionando corretamente.
+Antes de aceitar o tráfego ao vivo, você deve validar com suporte ao cliente Adobe que o roteamento de tráfego final está funcionando corretamente.
 
 >[!NOTE]
 >
@@ -58,11 +58,11 @@ Antes de aceitar o tráfego em tempo real, você deve validar com o suporte ao c
 
 Há um pequeno impacto no desempenho devido ao salto extra, embora o salto da CDN do cliente para a CDN gerenciada AEM provavelmente seja eficiente.
 
-Observe que essa configuração de CDN do cliente é compatível com o nível de publicação, mas não na frente do nível de criação.
+Observe que essa configuração de CDN do cliente é compatível com o nível de publicação, mas não na frente do nível do autor.
 
 ## Cabeçalhos de geolocalização {#geo-headers}
 
-A CDN gerenciada AEM adicionará cabeçalhos a cada solicitação com:
+O CDN gerenciado AEM adiciona cabeçalhos a cada solicitação com:
 
 * Código do país: `x-aem-client-country`
 * Código do continente: `x-aem-client-continent`
