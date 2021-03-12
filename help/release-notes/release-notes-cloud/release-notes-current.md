@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: fb0700f2b25917dd97381e0270995d7cef646edb
+source-git-commit: 608c512831ea7b0a516a4100a2d76e91f47ec73c
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1667'
 ht-degree: 3%
 
 ---
@@ -42,7 +42,7 @@ A seguinte versão (2021.3.0) será lançada em 25 de março de 2021.
 
 ## Novidades em [!DNL Assets] {#what-is-new-assets}
 
-* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolver com usuários de agências para obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolverem com usuários de agências a obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * O relatório de uso [!DNL Brand Portal] agora exibe somente os usuários ativos. Os usuários inativos não são exibidos agora. Os usuários ativos são aqueles cuja conta está atribuída a um perfil de produto no [!DNL Admin Console]. Consulte [[!DNL Brand Portal] relatórios](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -210,13 +210,20 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.2 é 18 de fe
 
 ### Novidades nas Ferramentas de refatoração de código {#what-is-new-crt}
 
-* Nova versão do plug-in AIO-CLI lançada. A versão mais recente deste plug-in inclui várias correções de erros para o Repository Modernizer.
-Consulte [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para saber mais sobre esse plug-in.
+* Nova versão do plug-in AIO-CLI lançada. A versão mais recente deste plug-in inclui vários novos recursos e correções de bugs do Repository Modernizer e do Dispatcher Converter.    Consulte [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para saber mais sobre esse plug-in.
 
-### Correções de erros {#bug-fixes-crt}
+* Novos recursos e melhorias para o Repository Modernizer. Consulte [Recurso GitHub: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para a versão mais recente.
+   * Normalize as configurações do OSGi (exceto as configurações do RepoInit) para o formato preferencial .cfg.json.
+   * Renomeie as pastas de configuração do OSGi para o formato especificado.
+   * Gere o projeto ui.apps.structure.
+   * Crie o módulo de análise.
 
-* Várias correções de erros feitas no Repository Modernizer.
-Consulte [Recurso GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obter mais detalhes.
+* Novos recursos e melhorias para o Dispatcher Converter. Consulte [Recurso GitHub: Conversor do Dispatcher](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+   * Criação de arquivos separados para inclusões diferentes em vez de no conteúdo de vinculação.
+   * Capacidade de lidar com o caminho da pasta de vhosts e o caminho para arquivos vhost.
+   * Geração de arquivos farm com configurações de clientes grandes no intervalo de 600 e mais.
+
+
 
 
 
