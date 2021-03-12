@@ -1,10 +1,10 @@
 ---
-title: Regras de qualidade de código personalizado - Cloud Services
-description: Regras de qualidade de código personalizado - Cloud Services
+title: Regras de qualidade do código personalizado - Cloud Services
+description: Regras de qualidade do código personalizado - Cloud Services
 translation-type: tm+mt
-source-git-commit: 901a660424f5e1fded654ddb09f3d872b7cd01b7
+source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3299'
 ht-degree: 4%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 4%
 # Regras de qualidade do código personalizado {#custom-code-quality-rules}
 
 
-Esta página descreve as regras de qualidade de código personalizadas executadas pelo Cloud Manager criadas com base nas práticas recomendadas da AEM Engineering.
+Esta página descreve as regras de qualidade de código personalizadas executadas pelo Cloud Manager e criadas com base nas práticas recomendadas do AEM Engineering.
 
 >[!NOTE]
 >As amostras de código fornecidas aqui são apenas para fins ilustrativos. Consulte [Conceitos](https://docs.sonarqube.org/7.4/user-guide/concepts/) para saber mais sobre os conceitos e as regras de qualidade do SonarQube.
@@ -22,7 +22,7 @@ Esta página descreve as regras de qualidade de código personalizadas executada
 
 A seção a seguir destaca as regras do SonarQube:
 
-### Não utilize funções potencialmente perigosas {#do-not-use-potentially-dangerous-functions}
+### Não use funções potencialmente perigosas {#do-not-use-potentially-dangerous-functions}
 
 **Chave**: CQRules:CWE-676
 
@@ -91,7 +91,7 @@ public class DoThis implements Runnable {
 
 **Desde**: Versão 2018.4.0
 
-O uso de uma string de formato de uma fonte externa (como um parâmetro de solicitação ou conteúdo gerado pelo usuário) pode produzir pode expor um aplicativo a ataques de negação de serviço. Há circunstâncias em que uma string de formato pode ser controlada externamente, mas só é permitida de fontes confiáveis.
+O uso de uma string de formato de uma fonte externa (como um parâmetro de solicitação ou conteúdo gerado pelo usuário) pode produzir o pode expor um aplicativo a ataques de negação de serviço. Há circunstâncias em que uma string de formato pode ser controlada externamente, mas só é permitida a partir de fontes confiáveis.
 
 #### Código não compatível {#non-compliant-code-1}
 
@@ -103,9 +103,9 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### As solicitações HTTP devem ter sempre soquete e tempos limite de conexão {#http-requests-should-always-have-socket-and-connect-timeouts}
+### As solicitações HTTP devem sempre ter soquete e tempo limite de conexão {#http-requests-should-always-have-socket-and-connect-timeouts}
 
-**Chave**: CQRules:ConnectionTimeoutMechanism
+**Chave**: CQRules:ConnectionTimeoutEngine
 
 **Tipo**: Bug
 
@@ -113,7 +113,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 **Desde**: Versão 2018.6.0
 
-Ao executar solicitações HTTP de dentro de um aplicativo AEM, é essencial garantir que os tempos limite apropriados sejam configurados para evitar o consumo desnecessário de thread. Infelizmente, o comportamento padrão do cliente HTTP padrão do Java (java.net.HttpUrlConnection) e do cliente Apache HTTP Components comumente usado é nunca expirar, portanto, os tempos limite devem ser definidos explicitamente. Além disso, como prática recomendada, esses tempos limite não devem exceder 60 segundos.
+Ao executar solicitações HTTP de dentro de um aplicativo AEM, é importante garantir que os tempos limite adequados sejam configurados para evitar o consumo desnecessário de encadeamento. Infelizmente, o comportamento padrão do cliente HTTP padrão do Java (java.net.HttpUrlConnection) e do cliente Apache HTTP Components usado com frequência é nunca expirar, portanto, os tempos limite devem ser explicitamente definidos. Além disso, como prática recomendada, esses tempos limite não devem ser superiores a 60 segundos.
 
 #### Código não compatível {#non-compliant-code-2}
 
@@ -181,7 +181,7 @@ public void orDoThis() {
 }
 ```
 
-### As APIs de produto anotadas com @ProviderType não devem ser implementadas ou estendidas pelos clientes {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### As APIs de produto anotadas com @ProviderType não devem ser implementadas ou estendidas por clientes {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 **Chave**: CQBP-84, CQBP-84-dependências
 
@@ -195,7 +195,7 @@ A API do AEM contém interfaces e classes do Java que devem ser usadas, mas não
 
 Quando novos métodos são adicionados a essas interfaces, esses métodos adicionais não afetam o código existente que usa essas interfaces e, como resultado, a adição de novos métodos a essas interfaces é considerada compatível com versões anteriores. No entanto, se o código personalizado ***implementa*** uma dessas interfaces, ele apresenta um risco de compatibilidade com versões anteriores para o cliente.
 
-As interfaces (e classes) que só devem ser implementadas por AEM são anotadas com *org.osgi.annotation.versioning.ProviderType* (ou, em alguns casos, uma anotação herdada similar *Qute.bnd.annotation.ProviderType*). Essa regra identifica os casos em que tal interface é implementada (ou uma classe é estendida) pelo código personalizado.
+As interfaces (e classes) que só devem ser implementadas por AEM são anotadas com *org.osgi.annotation.versioning.ProviderType* (ou, em alguns casos, uma anotação herdada semelhante *Qute.bnd.annotation.ProviderType*). Esta regra identifica os casos em que tal interface é implementada (ou em que uma classe é estendida) pelo código personalizado.
 
 #### Código não compatível {#non-compliant-code-3}
 
@@ -211,15 +211,15 @@ public class DontDoThis implements Page {
 
 **Chave**: CQRules:CQBP-72
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Major
 
 **Desde**: Versão 2018.4.0
 
-Os objetos ResourceResolver obtidos a partir do ResourceResolverFactory consomem recursos do sistema. Embora existam medidas para recuperar esses recursos quando um ResourceResolver não estiver mais em uso, é mais eficiente fechar explicitamente quaisquer objetos ResourceResolver abertos chamando o método close().
+Objetos ResourceResolver obtidos a partir do ResourceResolverFactory consomem recursos do sistema. Embora existam medidas para recuperar esses recursos quando um ResourceResolver não estiver mais em uso, é mais eficiente fechar explicitamente quaisquer objetos ResourceResolver abertos chamando o método close() .
 
-Um equívoco relativamente comum é que os objetos ResourceResolver criados usando uma Sessão JCR existente não devem ser explicitamente fechados ou que isso fechará a Sessão JCR subjacente. Esse não é o caso - independentemente de como um ResourceResolver é aberto, ele deve ser fechado quando não for mais usado. Como o ResourceResolver implementa a interface Closeable, também é possível usar a sintaxe try-with-resources em vez de chamar explicitamente close().
+Um equívoco relativamente comum é que os objetos ResourceResolver criados usando uma Sessão JCR existente não devem ser explicitamente fechados ou que isso encerrará a Sessão JCR subjacente. Esse não é o caso - independentemente de como um ResourceResolver é aberto, ele deve ser fechado quando não for mais usado. Como o ResourceResolver implementa a interface Closeable , também é possível usar a sintaxe try-with-resources em vez de chamar explicitamente close().
 
 #### Código não compatível {#non-compliant-code-4}
 
@@ -256,13 +256,13 @@ public void orDoThis(Session session) throws Exception {
 
 **Chave**: CQRules:CQBP-75
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Major
 
 **Desde**: Versão 2018.4.0
 
-Conforme descrito na [Documentação Sling](http://sling.apache.org/documentation/the-sling-engine/servlets.html), os servlets de vinculação por caminhos são desencorajados. Servlets com caminho não podem usar controles de acesso JCR padrão e, como resultado, exigem rigor de segurança adicional. Em vez de usar servlets vinculados a caminho, é recomendável criar nós no repositório e registrar servlets por tipo de recurso.
+Conforme descrito na [Documentação do Sling](http://sling.apache.org/documentation/the-sling-engine/servlets.html), os servlets de vinculação por caminhos não são incentivados. Os servlets vinculados ao caminho não podem usar controles de acesso JCR padrão e, como resultado, exigem rigor de segurança adicional. Em vez de usar servlets vinculados a caminhos, é recomendável criar nós no repositório e registrar servlets por tipo de recurso.
 
 #### Código não compatível {#non-compliant-code-5}
 
@@ -275,17 +275,17 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### As exceções obtidas devem ser registradas ou lançadas, mas não {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### As exceções capturadas devem ser registradas ou lançadas, mas não {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
-**Chave**: CQRules:CQBP-44—CatchAndOrThrow
+**Chave**: CQRules:CQBP-44—CatchAndLogOrThrow
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2018.4.0
 
-Em geral, uma exceção deve ser registrada exatamente uma vez. O registro de exceções várias vezes pode causar confusão, pois não está claro quantas vezes uma exceção ocorreu. O padrão mais comum que leva a isso é cortar e lançar uma exceção.
+Em geral, uma exceção deve ser registrada exatamente uma vez. O registro de exceções várias vezes pode causar confusão, pois não está claro quantas vezes uma exceção ocorreu. O padrão mais comum que leva a isso é o registro e o lançamento de uma exceção capturada.
 
 #### Código não compatível {#non-compliant-code-6}
 
@@ -320,17 +320,17 @@ public void orDoThis() throws MyCustomException {
 }
 ```
 
-### Evite ter uma declaração de log imediatamente seguida por uma declaração de lançamento {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
+### Evite ter uma declaração de log imediatamente seguida por uma instrução de lançamento {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
-**Chave**: CQRules:CQBP-44—ConsecutivelyLogAndThrow
+**Chave**: CQRules:CQBP-44 — ConsecutivelyLogAndThrow
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2018.4.0
 
-Outro padrão comum a ser evitado é registrar uma mensagem e imediatamente lançar uma exceção. Isso geralmente indica que a mensagem de exceção acabará duplicada nos arquivos de registro.
+Outro padrão comum a ser evitado é registrar uma mensagem e imediatamente lançar uma exceção. Isso geralmente indica que a mensagem de exceção acabará duplicada nos arquivos de log.
 
 #### Código não compatível {#non-compliant-code-7}
 
@@ -349,15 +349,15 @@ public void doThis() throws Exception {
 }
 ```
 
-### Evite o registro em INFO ao manipular solicitações de GET ou HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Evite fazer logon em INFO ao manipular solicitações de GET ou HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Chave**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
-Em geral, o nível de log INFO deve ser usado para demarcar ações importantes e, por padrão, AEM configurado para fazer logon no nível INFO ou acima. Os métodos de GET e de HEAD só devem ser operações só de leitura e, por conseguinte, não constituem ações importantes. É provável que o registro no nível INFO em resposta a solicitações de GET ou HEAD crie um ruído significativo no registro, dificultando a identificação de informações úteis em arquivos de registro. O registro ao lidar com solicitações de GET ou HEAD deve estar nos níveis de WARN ou ERROR quando algo deu errado ou nos níveis de DEBUG ou TRACE se informações mais detalhadas sobre solução de problemas forem úteis.
+Em geral, o nível de log INFO deve ser usado para demarcar ações importantes e, por padrão, AEM é configurado para fazer logon no nível INFO ou superior. Os métodos GET e HEAD só devem ser operações somente leitura e, portanto, não constituem ações importantes. Fazer logon no nível da INFO em resposta a solicitações de GET ou HEAD provavelmente gera um ruído significativo de log, dificultando a identificação de informações úteis em arquivos de log. O registro ao manipular solicitações de GET ou HEAD deve estar nos níveis de AVISO ou ERRO quando algo deu errado ou nos níveis de DEBUG ou TRACE, se informações mais detalhadas de solução de problemas forem úteis.
 
 >[!CAUTION]
 >
@@ -379,17 +379,17 @@ public void doGet() throws Exception {
 }
 ```
 
-### Não use Exception.getMessage() como o primeiro parâmetro de uma instrução de registro {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
+### Não use Exception.getMessage() como o primeiro parâmetro de uma instrução de log {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 **Chave**: CQRules:CQBP-44—ExceptionGetMessageIsFirstLogParam
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2018.4.0
 
-Como prática recomendada, as mensagens de log devem fornecer informações contextuais sobre onde ocorreu uma exceção no aplicativo. Embora o contexto também possa ser determinado pelo uso de rastreamentos de pilha, em geral a mensagem de registro será mais fácil de ler e entender. Como resultado, ao registrar uma exceção, é uma prática ruim usar a mensagem de exceção como a mensagem de registro - a mensagem de exceção conterá o que deu errado, enquanto a mensagem de registro deve ser usada para informar ao leitor de log o que o aplicativo estava fazendo quando a exceção aconteceu. A mensagem de exceção continuará sendo registrada; ao especificar sua própria mensagem, os registros serão mais fáceis de entender.
+Como prática recomendada, as mensagens de log devem fornecer informações contextuais sobre onde ocorreu uma exceção no aplicativo. Embora o contexto também possa ser determinado por meio do uso de rastreamentos de pilha, em geral a mensagem de log será mais fácil de ler e entender. Como resultado, ao registrar uma exceção, é uma prática ruim usar a mensagem de exceção como a mensagem de log - a mensagem de exceção conterá o que deu errado, enquanto a mensagem de log deverá ser usada para informar a um leitor de log o que o aplicativo estava fazendo quando a exceção aconteceu. A mensagem de exceção ainda será registrada; ao especificar sua própria mensagem, os logs serão mais fáceis de entender.
 
 #### Código não compatível {#non-compliant-code-9}
 
@@ -415,17 +415,17 @@ public void doThis() {
 }
 ```
 
-### O logon em blocos catch deve estar no nível WARN ou ERROR {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
+### O logon em blocos de captura deve estar no nível AVISO ou ERRO {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 **Chave**: CQRules:CQBP-44—WrongLogLevelInCatchBlock
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2018.4.0
 
-Como o nome sugere, as exceções Java devem ser sempre usadas em *excepcionais* circunstâncias. Como resultado, quando uma exceção é detectada, é importante garantir que as mensagens de log sejam registradas no nível apropriado - WARN ou ERROR. Isso garante que essas mensagens sejam exibidas corretamente nos registros.
+Como o nome sugere, as exceções de Java devem sempre ser usadas em *excepcionais* circunstâncias. Como resultado, quando uma exceção é capturada, é importante garantir que as mensagens de log sejam registradas no nível apropriado - AVISO ou ERRO. Isso garante que essas mensagens sejam exibidas corretamente nos logs.
 
 #### Código não compatível {#non-compliant-code-10}
 
@@ -455,13 +455,13 @@ public void doThis() {
 
 **Chave**: CQRules:CQBP-44—ExceptionPrintStackTrace
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2018.4.0
 
-Como mencionado, o contexto é crítico ao entender as mensagens de log. O uso de Exception.printStackTrace() faz com que **only** o rastreamento da pilha seja enviado para o fluxo de erro padrão, perdendo todo o contexto. Além disso, em um aplicativo de vários processos, como AEM se várias exceções forem impressas usando esse método em paralelo, seus traços de pilha podem se sobrepor, o que gera confusão significativa. As exceções devem ser registradas somente pela estrutura de registro.
+Como mencionado, o contexto é essencial ao entender as mensagens de log. Usar Exception.printStackTrace() faz com que **only** o rastreamento de pilha seja enviado para o fluxo de erro padrão, perdendo todo o contexto. Além disso, em um aplicativo de vários segmentos, como AEM se várias exceções forem impressas em paralelo usando esse método, seus rastreamentos de pilha podem se sobrepor, o que gera uma confusão significativa. As exceções devem ser registradas somente por meio da estrutura de registro.
 
 #### Código não compatível {#non-compliant-code-11}
 
@@ -487,17 +487,17 @@ public void doThis() {
 }
 ```
 
-### Não exibir Saída Padrão ou Erro Padrão {#do-not-output-to-standard-output-or-standard-error}
+### Não saída para Saída Padrão ou Erro Padrão {#do-not-output-to-standard-output-or-standard-error}
 
 **Chave**: CQRules:CQBP-44—LogLevelConsolePrinters
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2018.4.0
 
-O logon do AEM deve ser sempre feito por meio da estrutura de registro (SLF4J). A saída diretamente para a saída padrão ou fluxos de erro padrão perde as informações estruturais e contextuais fornecidas pela estrutura de registro e pode, em alguns casos, causar problemas de desempenho.
+O AEM de logon deve ser sempre feito por meio da estrutura de log (SLF4J). A saída diretamente para a saída padrão ou fluxos de erro padrão perde as informações estruturais e contextuais fornecidas pela estrutura de registro e pode, em alguns casos, causar problemas de desempenho.
 
 #### Código não compatível {#non-compliant-code-12}
 
@@ -523,17 +523,17 @@ public void doThis() {
 }
 ```
 
-### Evite /apps e /libs Caminhos {#avoid-hardcoded-apps-and-libs-paths} codificados permanentemente
+### Evite caminhos /apps e /libs codificados {#avoid-hardcoded-apps-and-libs-paths}
 
 **Chave**: CQRules:CQBP-71
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2018.4.0
 
-Em geral, os caminhos que são start com /libs e /apps não devem ser codificados, pois os caminhos a que se referem são mais comumente armazenados como caminhos relativos ao caminho de pesquisa Sling (que é definido como /libs,/apps por padrão). O uso do caminho absoluto pode apresentar defeitos sutis que só apareceriam posteriormente no ciclo de vida do projeto.
+Em geral, os caminhos que começam com /libs e /apps não devem ser codificados, pois os caminhos aos quais se referem são mais comumente armazenados como caminhos relativos ao caminho de pesquisa do Sling (que é definido como /libs,/apps por padrão). O uso do caminho absoluto pode apresentar defeitos sutis que só apareceriam posteriormente no ciclo de vida do projeto.
 
 #### Código não compatível {#non-compliant-code-13}
 
@@ -551,46 +551,46 @@ public void doThis(Resource resource) {
 }
 ```
 
-### O Scheduler Sling não deve ser usado {#sonarqube-sling-scheduler}
+### O Sling Scheduler Não Deve Ser Usado {#sonarqube-sling-scheduler}
 
 **Chave**: CQRules:AMSCORE-554
 
-**Tipo**: Compatibilidade entre código e Cloud Service
+**Tipo**: Compatibilidade de Cheiro de Código/Cloud Service
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2020.5.0
 
-O Scheduler Sling não deve ser usado para tarefas que exigem uma execução garantida. As Tarefas Agendadas de Varejo garantem a execução e são mais adequadas para ambientes clusterizados e não clusterizados.
+O Sling Scheduler não deve ser usado para tarefas que exigem uma execução garantida. Os trabalhos agendados do Sling garantem a execução e são mais adequados para ambientes em cluster e não em cluster.
 
-Consulte [Apache Sling Event and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para saber mais sobre como os Sling Jobs são tratados em ambientes agrupados.
+Consulte [Apache Sling Event and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para saber mais sobre como os Sling Jobs são tratados em ambientes em cluster.
 
 ### AEM APIs obsoletas não devem ser usadas {#sonarqube-aem-deprecated}
 
 **Chave**: AMSCORE-553
 
-**Tipo**: Compatibilidade entre código e Cloud Service
+**Tipo**: Compatibilidade de Cheiro de Código/Cloud Service
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2020.5.0
 
-A superfície da API AEM está em revisão constante para identificar APIs para as quais o uso é desencorajado e, portanto, considerado obsoleto.
+A superfície da API de AEM está sob revisão constante para identificar APIs para as quais o uso é desencorajado e, portanto, considerado obsoleto.
 
-Em muitos casos, essas APIs são descontinuadas usando a anotação padrão do Java *@Deprecated* e, como tal, como identificado por `squid:CallToDeprecatedMethod`.
+Em muitos casos, essas APIs são descontinuadas usando a anotação Java padrão *@Deprecated* e, como tal, identificadas por `squid:CallToDeprecatedMethod`.
 
-No entanto, há casos em que uma API é obsoleta no contexto de AEM, mas pode não ser obsoleta em outros contextos. Essa regra identifica essa segunda classe.
+No entanto, há casos em que uma API é preterida no contexto de AEM, mas pode não ser preterida em outros contextos. Essa regra identifica essa segunda classe.
 
 ## Regras de conteúdo OakPAL {#oakpal-rules}
 
-Encontre abaixo as verificações do OakPAL executadas pelo Cloud Manager.
+Encontre abaixo as verificações OakPAL executadas pelo Cloud Manager.
 
 >[!NOTE]
->OakPAL é uma estrutura desenvolvida por um parceiro AEM (e vencedor de 2019 AEM Rockstar North America) que valida pacotes de conteúdo usando um repositório Oak independente.
+>OakPAL é uma estrutura desenvolvida por um Parceiro AEM (e vencedor de 2019 AEM Rockstar North America) que valida pacotes de conteúdo usando um repositório Oak independente.
 
-### Os pacotes do cliente não devem criar ou modificar nós em /libs {#oakpal-customer-package}
+### Os pacotes de clientes não devem criar ou modificar nós em /libs {#oakpal-customer-package}
 
-**Chave**: Caminhos Banidos
+**Chave**: Caminhos proibidos
 
 **Tipo**: Bug
 
@@ -598,9 +598,9 @@ Encontre abaixo as verificações do OakPAL executadas pelo Cloud Manager.
 
 **Desde**: Versão 2019.6.0
 
-É uma prática recomendada antiga que a árvore de conteúdo /libs no repositório de conteúdo AEM seja considerada somente leitura pelos clientes. Modificar nós e propriedades em */libs* cria riscos significativos para atualizações principais e secundárias. As modificações em */libs* só devem ser feitas por Adobe através de canais oficiais.
+É uma prática recomendada antiga que a árvore de conteúdo /libs no repositório de conteúdo AEM seja considerada somente leitura pelos clientes. Modificar nós e propriedades em */libs* cria riscos significativos para atualizações importantes e secundárias. As modificações em */libs* só devem ser feitas pelo Adobe por meio de canais oficiais.
 
-### Os pacotes não devem conter configurações OSGi de Duplicado {#oakpal-package-osgi}
+### Os pacotes não devem conter configurações OSGi duplicadas {#oakpal-package-osgi}
 
 **Chave**: DuplicateOsgiConfigurations
 
@@ -610,7 +610,10 @@ Encontre abaixo as verificações do OakPAL executadas pelo Cloud Manager.
 
 **Desde**: Versão 2019.6.0
 
-Um problema comum que ocorre em projetos complexos é onde o mesmo componente OSGi é configurado várias vezes. Isso cria uma ambiguidade sobre qual configuração será operável. Essa regra é &quot;sensível ao modo de execução&quot;, pois identificará apenas problemas em que o mesmo componente é configurado várias vezes no mesmo modo de execução (ou combinação de modos de execução).
+Um problema comum que ocorre em projetos complexos é onde o mesmo componente OSGi é configurado várias vezes. Isso cria uma ambiguidade sobre qual configuração será operável. Essa regra é &quot;sensível ao modo de execução&quot; na medida em que só identificará problemas em que o mesmo componente é configurado várias vezes no mesmo modo de execução (ou combinação de modos de execução).
+
+>[!NOTE]
+>Essa regra produzirá problemas em que a mesma configuração, no mesmo caminho, é definida em vários pacotes, incluindo casos em que o mesmo pacote é duplicado na lista geral de pacotes incorporados. Por exemplo, se a build produzir pacotes chamados `com.myco:com.myco.ui.apps` e `com.myco:com.myco.all` em que `com.myco:com.myco.all` incorpora `com.myco:com.myco.ui.apps`, então todas as configurações em `com.myco:com.myco.ui.apps` serão relatadas como duplicatas. Geralmente, esse é um caso de não seguir as [Diretrizes de estrutura do pacote de conteúdo](/help/implementing/developing/aem-project-content-package-structure.md); neste exemplo específico, o pacote `com.myco:com.myco.ui.apps` não tem a propriedade `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 #### Código não compatível {#non-compliant-code-osgi}
 
@@ -641,9 +644,9 @@ Um problema comum que ocorre em projetos complexos é onde o mesmo componente OS
 
 **Desde**: Versão 2019.6.0
 
-Por motivos de segurança, os caminhos que contêm */config/ e /install/* só podem ser lidos por usuários administrativos no AEM e devem ser usados apenas para configuração OSGi e pacotes OSGi. Colocar outros tipos de conteúdo em caminhos que contêm esses segmentos resulta em comportamento de aplicativo que varia involuntariamente entre usuários administrativos e não administrativos.
+Por motivos de segurança, os caminhos que contêm */config/ e /install/* só podem ser lidos pelos usuários administrativos no AEM e devem ser usados apenas para a configuração OSGi e pacotes OSGi. Colocar outros tipos de conteúdo em caminhos que contêm esses segmentos resulta no comportamento do aplicativo, que varia de forma não intencional entre usuários administrativos e não administrativos.
 
-Um problema comum é o uso de nós chamados `config` nas caixas de diálogo do componente ou ao especificar a configuração do editor de rich text para edição em linha. Para resolver isso, o nó que está causando a ofensa deve ser renomeado para um nome compatível. Para a configuração do editor de rich text, use a propriedade `configPath` no nó `cq:inplaceEditing` para especificar o novo local.
+Um problema comum é o uso de nós chamados `config` nas caixas de diálogo do componente ou ao especificar a configuração do editor de rich text para edição em linha. Para resolver isso, o nó incorreto deve ser renomeado para um nome compatível. Para a configuração do editor de rich text, use a propriedade `configPath` no nó `cq:inplaceEditing` para especificar o novo local.
 
 #### Código não compatível {#non-compliant-code-config-install}
 
@@ -674,67 +677,67 @@ Um problema comum é o uso de nós chamados `config` nas caixas de diálogo do c
 
 **Desde**: Versão 2019.6.0
 
-Semelhante aos *pacotes não devem conter configurações OSGi de Duplicado*, esse é um problema comum em projetos complexos nos quais o mesmo caminho de nó é gravado por vários pacotes de conteúdo separados. Embora seja possível usar dependências de pacote de conteúdo para garantir um resultado consistente, é melhor evitar sobreposições completamente.
+Semelhante ao *Pacotes Não Devem Conter Configurações OSGi Duplicadas*, esse é um problema comum em projetos complexos, onde o mesmo caminho de nó é gravado por vários pacotes de conteúdo separados. Embora seja possível usar as dependências do pacote de conteúdo para garantir um resultado consistente, é melhor evitar sobreposições completamente.
 
 ### O modo de criação padrão não deve ser a interface clássica {#oakpal-default-authoring}
 
 **Chave**: ClassicUIAuthoringMode
 
-**Tipo**: Compatibilidade entre código e Cloud Service
+**Tipo**: Compatibilidade de Cheiro de Código/Cloud Service
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2020.5.0
 
-A configuração do OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` define o modo de criação padrão no AEM. Como a interface clássica está obsoleta desde o AEM 6.4, um problema agora será gerado quando o modo de criação padrão estiver configurado para a interface clássica.
+A configuração do OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` define o modo de criação padrão no AEM. Como a interface do usuário clássica foi descontinuada desde o AEM 6.4, um problema agora será gerado quando o modo de criação padrão estiver configurado para a interface do usuário clássica.
 
 ### Os componentes com caixas de diálogo devem ter caixas de diálogo de interface de toque {#oakpal-components-dialogs}
 
-**Chave**: ComponentWithOnlyClassicUIDialog
+**Chave**: ComponentWithOnlyClassicUIDalog
 
-**Tipo**: Compatibilidade entre código e Cloud Service
+**Tipo**: Compatibilidade de Cheiro de Código/Cloud Service
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2020.5.0
 
-AEM Os componentes que têm uma caixa de diálogo de interface clássica devem ter sempre uma caixa de diálogo de interface de usuário de toque correspondente, tanto para fornecer uma experiência de criação ideal quanto para serem compatíveis com o modelo de implantação de Cloud Service, onde a interface de usuário clássica não é suportada. Essa regra verifica os seguintes cenários:
+AEM Os componentes que têm uma caixa de diálogo da interface clássica devem sempre ter uma caixa de diálogo da interface do usuário de toque correspondente, para fornecer uma experiência de criação ideal e para serem compatíveis com o modelo de implantação do Cloud Service, onde a interface do usuário clássica não é compatível. Essa regra verifica os seguintes cenários:
 
-* Um componente com uma caixa de diálogo Interface clássica (ou seja, um nó filho da caixa de diálogo) deve ter uma caixa de diálogo Interface do usuário de toque correspondente (ou seja, um nó filho `cq:dialog`).
+* Um componente com uma caixa de diálogo da interface clássica (ou seja, um nó filho da caixa de diálogo) deve ter uma caixa de diálogo da interface de toque correspondente (ou seja, um `cq:dialog` nó filho).
 * Um componente com uma caixa de diálogo de design da interface clássica (ou seja, um nó design_dialog) deve ter uma caixa de diálogo de design da interface do usuário de toque correspondente (ou seja, um `cq:design_dialog` nó filho).
-* Um componente com uma caixa de diálogo de design de interface clássica e uma caixa de diálogo de design de interface clássica deve ter uma caixa de diálogo de interface de toque correspondente e uma caixa de diálogo de design de interface de toque correspondente.
+* Um componente com uma caixa de diálogo da interface clássica e uma caixa de diálogo de design da interface clássica deve ter uma caixa de diálogo da interface do usuário de toque correspondente e uma caixa de diálogo de design da interface de toque correspondente.
 
-A documentação das Ferramentas de modernização AEM fornece documentação e ferramentas para converter componentes da interface clássica para a interface de usuário de toque. Consulte [As Ferramentas de Modernização AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) para obter mais detalhes.
+A documentação das Ferramentas de Modernização do AEM fornece documentação e ferramentas para como converter componentes da interface clássica para a interface do usuário de toque. Consulte [As Ferramentas de Modernização de AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) para obter mais detalhes.
 
 ### Os pacotes não devem misturar conteúdo mutável e imutável {#oakpal-packages-immutable}
 
 **Chave**: ImmutableMutableMixedPackage
 
-**Tipo**: Compatibilidade entre código e Cloud Service
+**Tipo**: Compatibilidade de Cheiro de Código/Cloud Service
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2020.5.0
 
-Para serem compatíveis com o modelo de implantação do Cloud Service, os pacotes de conteúdo individuais devem conter conteúdo para as áreas imutáveis do repositório (ou seja, `/apps and /libs, although /libs` não deve ser modificado pelo código do cliente e causará uma violação separada) ou a área mutável (ou seja, tudo o mais), mas não ambos. Por exemplo, um pacote que inclui `/apps/myco/components/text and /etc/clientlibs/myco` não é compatível com o Cloud Service e fará com que um problema seja relatado.
+Para serem compatíveis com o modelo de implantação do Cloud Service, os pacotes de conteúdo individuais devem conter conteúdo para as áreas imutáveis do repositório (ou seja, `/apps and /libs, although /libs` não deve ser modificado pelo código do cliente e causará uma violação separada) ou a área mutável (ou seja, tudo o resto), mas não ambos. Por exemplo, um pacote que inclui `/apps/myco/components/text and /etc/clientlibs/myco` não é compatível com o Cloud Service e fará com que um problema seja relatado.
 
-Consulte [AEM Estrutura do Projeto](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html) para obter mais detalhes.
+Consulte [AEM Estrutura do projeto](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html) para obter mais detalhes.
 
-### Os Agentes de Replicação Inversa Não Devem Ser Usados {#oakpal-reverse-replication}
+### Os Agentes De Replicação Reversa Não Devem Ser Usados {#oakpal-reverse-replication}
 
 **Chave**: ReverseReplication
 
-**Tipo**: Compatibilidade entre código e Cloud Service
+**Tipo**: Compatibilidade de Cheiro de Código/Cloud Service
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2020.5.0
 
-O suporte para replicação reversa não está disponível em implantações de Cloud Service, conforme descrito em [Notas de versão: Remoção dos Agentes de Replicação](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+O suporte para Replicação reversa não está disponível em implantações de Cloud Service, conforme descrito em [Notas de versão: Remoção dos agentes de replicação](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
-Os clientes que usam replicação reversa devem entrar em contato com a Adobe para obter soluções alternativas.
+Os clientes que usam replicação inversa devem entrar em contato com o Adobe para obter soluções alternativas.
 
-### OakPAL - os recursos contidos nas bibliotecas de clientes ativadas por proxy devem estar em uma pasta chamada resources {#oakpal-resources-proxy}
+### OakPAL - Os recursos contidos nas bibliotecas de clientes ativadas por proxy devem estar em uma pasta chamada resources {#oakpal-resources-proxy}
 
 **Chave**: ClientlibProxyResource
 
@@ -744,7 +747,7 @@ Os clientes que usam replicação reversa devem entrar em contato com a Adobe pa
 
 **Desde**: Versão 2021.2.0
 
-AEM bibliotecas clientes podem conter recursos estáticos, como imagens e fontes. Conforme descrito em [Usando pré-processadores](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), ao usar bibliotecas de clientes proxy, esses recursos estáticos devem estar contidos em uma pasta filho chamada resources para que possam ser referenciados com eficácia nas instâncias de publicação.
+AEM bibliotecas de clientes podem conter recursos estáticos, como imagens e fontes. Conforme descrito em [Uso de pré-processadores](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), ao usar bibliotecas de clientes proxy, esses recursos estáticos devem estar contidos em uma pasta filho denominada resources para serem efetivamente referenciados nas instâncias de publicação.
 
 #### Código não compatível {#non-compliant-proxy-enabled}
 
@@ -768,9 +771,9 @@ AEM bibliotecas clientes podem conter recursos estáticos, como imagens e fontes
         + myimage.jpg
 ```
 
-### OakPAL - Uso de processos de fluxo de trabalho incompatíveis com Cloud Service {#oakpal-usage-cloud-service}
+### OakPAL - Uso de processos de fluxo de trabalho incompatíveis com o Cloud Service {#oakpal-usage-cloud-service}
 
-**Chave**: CloudServiceIncompatibleWorkflowProcess
+**Chave**: CloudServiceIncompatívelWorkflowProcess
 
 **Tipo**: Bug
 
@@ -778,133 +781,133 @@ AEM bibliotecas clientes podem conter recursos estáticos, como imagens e fontes
 
 **Desde**: Versão 2021.2.0
 
-Com a mudança para os microserviços de ativos para processamento de ativos AEM Cloud Service, vários processos de fluxo de trabalho que foram usados nas versões local e AMS do AEM se tornaram não suportados ou desnecessários. A ferramenta de migração em [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration) pode ser usada para atualizar modelos de fluxo de trabalho durante AEM migração de Cloud Service.
+Com a mudança para os microsserviços de ativos para processamento de ativos no AEM Cloud Service, vários processos de fluxo de trabalho que foram usados nas versões local e AMS do AEM se tornaram incompatíveis ou desnecessários. A ferramenta de migração em [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration) pode ser usada para atualizar modelos de fluxo de trabalho durante AEM migração de Cloud Service.
 
-### OakPAL - O uso de modelos estáticos está desencorajado em favor de modelos editáveis {#oakpal-static-template}
+### OakPAL - O uso de modelos estáticos é desencorajado em favor de modelos editáveis {#oakpal-static-template}
 
 **Chave**: StaticTemplateUsage
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2021.2.0
 
-Embora o uso de modelos estáticos tenha sido historicamente muito comum em projetos AEM, modelos editáveis são altamente recomendados, pois proporcionam mais flexibilidade e suportam recursos adicionais não presentes em modelos estáticos. Mais informações podem ser encontradas em [Modelos de página - Editável](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). A migração de modelos estáticos para editáveis pode ser amplamente automatizada usando as [AEM Ferramentas de Modernização](https://opensource.adobe.com/aem-modernize-tools/).
+Embora o uso de modelos estáticos tenha sido historicamente muito comum em projetos AEM, os modelos editáveis são altamente recomendados, pois fornecem mais flexibilidade e suporte a recursos adicionais não presentes em modelos estáticos. Mais informações podem ser encontradas em [Modelos de página - Editável](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). A migração de modelos estáticos para editáveis pode ser amplamente automatizada usando as [Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/).
 
-### OakPAL - o uso de componentes básicos herdados está desencorajado {#oakpal-usage-legacy}
+### OakPAL - O uso de componentes de base herdados está desencorajado {#oakpal-usage-legacy}
 
 **Chave**: LegacyFoundationComponentUsage
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2021.2.0
 
-Os componentes básicos herdados (ou seja, os componentes em `/libs/foundation`) foram descontinuados para várias versões de AEM em favor dos Componentes principais do WCM. O uso dos componentes de base herdados como a base para os componentes personalizados - seja por sobreposição ou herança - é desencorajado e deve ser convertido no componente principal correspondente. Essa conversão pode ser facilitada pelas [AEM Ferramentas de Modernização](https://opensource.adobe.com/aem-modernize-tools/).
+Os componentes fundamentais herdados (ou seja, componentes em `/libs/foundation`) foram descontinuados para várias versões de AEM em favor dos Componentes principais do WCM. O uso dos componentes fundamentais herdados como a base para os componentes personalizados - seja por sobreposição ou herança - não é recomendado e deve ser convertido no componente principal correspondente. Essa conversão pode ser facilitada pelas [Ferramentas de Modernização AEM](https://opensource.adobe.com/aem-modernize-tools/).
 
-### OakPAL - Somente nomes e pedidos de modo de execução suportados devem ser usados {#oakpal-supported-runmodes}
+### OakPAL - Somente os nomes e a ordenação compatíveis devem ser usados {#oakpal-supported-runmodes}
 
 **Chave**: SupportedRunmode
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2021.2.0
 
-AEM Cloud Service impõe uma política de nomeação estrita para nomes de modo de execução e uma ordem estrita para esses modos de execução. A lista de modos de execução suportados pode ser encontrada em [Runmode](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes) e qualquer desvio em relação a isso será identificado como um problema.
+AEM Cloud Service impõe uma política de nomeação estrita para nomes de modo de execução e uma ordem estrita para esses modos de execução. A lista de modos de execução suportados pode ser encontrada em [Runmodes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes) e qualquer desvio em relação a isto será identificado como um problema.
 
 ### OakPAL - Os nós de definição do índice de pesquisa personalizado devem ser filhos diretos de /oak:index {#oakpal-custom-search}
 
 **Chave**: OakIndexLocation
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2021.2.0
 
-AEM Cloud Service exige que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo oak:QueryIndexDefinition) sejam nós secundários diretos de `/oak:index`. Os índices em outros locais devem ser movidos para serem compatíveis com AEM Cloud Service. Mais informações sobre índices de pesquisa podem ser encontradas em [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+AEM Cloud Service requer que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo oak:QueryIndexDefinition) sejam nós filhos diretos de `/oak:index`. Os índices em outros locais devem ser movidos para serem compatíveis com AEM Cloud Service. Mais informações sobre índices de pesquisa podem ser encontradas em [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
 
-### OakPAL - Nós de definição de índice de pesquisa personalizado devem ter uma compatVersion de 2 {#oakpal-custom-search-compatVersion}
+### OakPAL - Nós de Definição de Índice de Pesquisa Personalizado devem ter uma compatVersion de 2 {#oakpal-custom-search-compatVersion}
 
 **Chave**: IndexCompatVersion
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2021.2.0
 
-AEM Cloud Service exige que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo oak:QueryIndexDefinition) tenham a propriedade compatVersion definida como 2. Nenhum outro valor é suportado por AEM Cloud Service. Mais informações sobre índices de pesquisa podem ser encontradas em [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+AEM Cloud Service requer que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo oak:QueryIndexDefinition) tenham a propriedade compatVersion definida como 2. Nenhum outro valor é suportado por AEM Cloud Service. Mais informações sobre índices de pesquisa podem ser encontradas em [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
 
-### OakPAL - Nós descendentes dos nós de definição de índice de pesquisa personalizado devem ser do tipo nt:unstructed {#oakpal-descendent-nodes}
+### OakPAL - Nós Descendentes dos Nós de Definição de Índice de Pesquisa Personalizado devem ser do tipo nt:unstructured {#oakpal-descendent-nodes}
 
-**Chave**: IndexDescentalNodeType
+**Chave**: IndexDescendantNodeType
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2021.2.0
 
-É difícil solucionar problemas quando ocorre quando um nó de definição de índice de pesquisa personalizado tem nós filhos desordenados. Para evitar isso, é recomendável que todos os nós descendentes de um nó `oak:QueryIndexDefinition` sejam do tipo nt:unstructed.
+Difícil de solucionar problemas pode ocorrer quando um nó de definição de índice de pesquisa personalizado tem nós filho desordenados. Para evitar isso, é recomendável que todos os nós descendentes de um nó `oak:QueryIndexDefinition` sejam do tipo nt:unstructured.
 
-### OakPAL - Nós de definição de índice de pesquisa personalizado devem conter um nó filho chamado indexRules que tem filhos {#oakpal-custom-search-index}
+### OakPAL - Os nós de definição do índice de pesquisa personalizado devem conter um nó filho denominado indexRules que tenha filhos {#oakpal-custom-search-index}
 
 **Chave**: IndexRulesNode
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2021.2.0
 
-Um nó de definição de índice de pesquisa personalizado corretamente definido deve conter um nó filho chamado indexRules que, por sua vez, deve ter pelo menos um filho. Mais informações podem ser encontradas em [Documentação do Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Um nó de definição de índice de pesquisa personalizado corretamente definido deve conter um nó filho denominado indexRules que, por sua vez, deve ter pelo menos um filho. Mais informações podem ser encontradas em [Documentação do Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-### OakPAL - Nós de definição de índice de pesquisa personalizada devem seguir as convenções de nomenclatura {#oakpal-custom-search-definitions}
+### OakPAL - Os nós de definição do índice de pesquisa personalizado devem seguir as convenções de nomenclatura {#oakpal-custom-search-definitions}
 
 **Chave**: IndexName
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2021.2.0
 
-AEM Cloud Service exige que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo `oak:QueryIndexDefinition`) sejam nomeadas de acordo com um padrão específico descrito em [Pesquisa e Indexação de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+AEM Cloud Service requer que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo `oak:QueryIndexDefinition`) sejam nomeadas de acordo com um padrão específico descrito em [Pesquisa e Indexação de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
 
-### OakPAL - Nós de definição de índice de pesquisa personalizado devem usar o tipo de índice lucene {#oakpal-index-type-lucene}
+### OakPAL - Nós de Definição de Índice de Pesquisa Personalizado Devem Usar o Tipo de Índice lucene {#oakpal-index-type-lucene}
 
 **Chave**: IndexType
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2021.2.0
 
-AEM Cloud Service exige que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo oak:QueryIndexDefinition) tenham uma propriedade type com o valor definido como **lucene**. A indexação usando tipos de índice herdados deve ser atualizada antes da migração para AEM Cloud Service. Consulte [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obter mais informações.
+AEM Cloud Service requer que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo oak:QueryIndexDefinition) tenham uma propriedade type com o valor definido como **lucene**. A indexação usando tipos de índice herdados deve ser atualizada antes da migração para AEM Cloud Service. Consulte [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obter mais informações.
 
-### OakPAL - Os nós de definição de índice de pesquisa personalizado não devem conter uma propriedade denominada semente {#oakpal-property-name-seed}
+### OakPAL - Os nós de definição do índice de pesquisa personalizado não devem conter uma propriedade denominada seed {#oakpal-property-name-seed}
 
 **Chave**: IndexSeedProperty
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
 **Desde**: Versão 2021.2.0
 
-AEM Cloud Service proíbe que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo `oak:QueryIndexDefinition`) contenham uma propriedade chamada semente. A indexação usando essa propriedade deve ser atualizada antes da migração para AEM Cloud Service. Consulte [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obter mais informações.
+AEM Cloud Service proíbe que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo `oak:QueryIndexDefinition`) contenham uma propriedade denominada seed. A indexação usando essa propriedade deve ser atualizada antes da migração para AEM Cloud Service. Consulte [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obter mais informações.
 
-### OakPAL - Os nós de definição de índice de pesquisa personalizado não devem conter uma propriedade denominada reindex {#oakpal-reindex-property}
+### OakPAL - Os nós de definição do índice de pesquisa personalizado não devem conter uma propriedade denominada reindex {#oakpal-reindex-property}
 
 **Chave**: IndexReindexProperty
 
-**Tipo**: Cheiro de código
+**Tipo**: Cheiro do código
 
 **Gravidade**: Menor
 
