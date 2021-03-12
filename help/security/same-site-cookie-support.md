@@ -2,9 +2,9 @@
 title: Suporte a cookies do mesmo site para Adobe Experience Manager as a Cloud Service
 description: Suporte a cookies do mesmo site para Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 4f25aa54bd40644912e0e430a81f1a17d545e3f8
+source-git-commit: 7195709a96422eb701722ef6b398d6577e080058
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
