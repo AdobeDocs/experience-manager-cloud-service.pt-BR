@@ -2,7 +2,7 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 3%
@@ -42,7 +42,7 @@ A seguinte versão (2021.3.0) será lançada em 25 de março de 2021.
 
 ## Novidades em [!DNL Assets] {#what-is-new-assets}
 
-* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolver com usuários de agências para obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolverem com usuários de agências a obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * O relatório de uso [!DNL Brand Portal] agora exibe somente os usuários ativos. Os usuários inativos não são exibidos agora. Os usuários ativos são aqueles cuja conta está atribuída a um perfil de produto no [!DNL Admin Console]. Consulte [[!DNL Brand Portal] relatórios](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -87,8 +87,8 @@ A próxima versão está planejada para 8 de abril de 2021.
 
 * Os usuários com as permissões necessárias agora podem editar um Programa, permitindo que façam o seguinte de maneira automatizada:
 
-   * Adicionar a solução Sites a um programa existente com Ativos (ou vice-versa).
-   * Remova Sites (ou Ativos) de um programa existente com Sites e Ativos.
+   * Adicionar a solução Sites a um programa existente com Ativos ou vice-versa.
+   * Remova Sites ou Ativos de um programa existente com Sites e Ativos.
    * Adicione o segundo direito de solução não utilizado a um programa existente ou como um novo Programa.
 
 * **AEM o** recurso Push Updatelabel será exibido para  *Pipeline* Execution e  ** Ativityscreens.
