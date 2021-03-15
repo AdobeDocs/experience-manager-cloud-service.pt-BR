@@ -1,43 +1,52 @@
 ---
-title: Verificando o status do nome do domínio
-description: Verificando o status do nome do domínio
+title: Verificando o status do nome de domínio
+description: Verificando o status do nome de domínio
 translation-type: tm+mt
-source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
+source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
 
-# Verificando o status do nome do domínio {#check-status}
+# Verificando o status do nome de domínio {#check-status}
 
-Você pode determinar se seu nome de domínio foi verificado com êxito clicando no ícone Status do nome de domínio na tabela em Ambientes da página Configurações de domínio.
+Você pode determinar se o nome de domínio foi verificado com êxito clicando no ícone Status do nome de domínio da tabela em Ambientes na página Configurações do domínio .
 
 >[!NOTE]
->O Cloud Manager acionará automaticamente uma verificação TXT quando você selecionar Salvar na etapa de verificação do assistente para Adicionar domínio personalizado. Para verificações subsequentes, você deve selecionar ativamente o ícone **verificar novamente** ao lado do status.
+>O Cloud Manager acionará automaticamente uma verificação TXT ao selecionar Salvar na etapa de verificação do assistente Adicionar domínio personalizado . Para verificações subsequentes, você deve selecionar ativamente o ícone **verify novamente** ao lado do status.
 
 O Cloud Manager verificará a propriedade do domínio por meio do valor TXT e exibirá uma das seguintes mensagens de status:
 
 * **O valor**
-FailedTXT de verificação de domínio está ausente ou é detectado com erros. Siga as instruções e tente novamente. Quando estiver pronto, você deve selecionar a variável 
-*verifique* novamente ao lado do status.
+FailedTXT da Verificação de Domínio está ausente ou é detectado com erros. Siga as instruções e tente novamente. Quando estiver pronto, você deverá selecionar a variável 
+*verifique novamente* ícone ao lado do status .
 
-* **Verificação de domínio em**
-andamentoVerificação em andamento. Esse status geralmente é visto depois que você seleciona a variável 
-*verifique* novamente ao lado do status.
+* **Verificação de Domínio em**
+AndamentoVerificação em andamento. Normalmente, esse status é visualizado depois que você seleciona a variável 
+*verifique novamente* ícone ao lado do status .
 
 * **Verificado se a verificação**
-FailedTXT da implantação foi bem-sucedida. No entanto, a implantação do CDN falhou. Um representante Adobe será notificado automaticamente.
+FailedTXT da implantação foi bem-sucedida. No entanto, a implantação da CDN falhou. Um representante da Adobe será notificado automaticamente.
 
 * **Domínio verificado e**
-implantadoEste status indica que seu nome de domínio personalizado está pronto para ser usado.
+implantado Este status indica que seu nome de domínio personalizado está pronto para ser usado.
    >[!NOTE]
-   >Nesse ponto, seu nome de domínio personalizado está pronto para teste e deve ser apontado para o nome de domínio do Cloud Manager. Consulte [Configuração de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) para saber mais.
+   >Neste ponto, o nome de domínio personalizado está pronto para teste e deve ser apontado para o nome de domínio do Cloud Manager. Consulte [Configuração de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) para saber mais.
 
-* **A**
-exclusão do nome de domínio personalizado está em andamento.
+* ****
+A exclusão do nome de domínio personalizado está em processo.
 
-* **Falha na exclusão de**
-FailedExclution do nome do domínio personalizado. Você deve tentar novamente. Consulte [Excluindo um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) para saber mais.
+* **Falha na exclusão**
+FailedDeletion do nome de domínio personalizado. Você deve tentar novamente. Consulte [Excluindo um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) para saber mais.
 
+
+## Configurações de CDN pré-existentes para Lista de permissões IP  {#pre-existing-cdn}
+
+Os clientes com ambientes que incluem configurações pré-existentes de CDN para Lista de permissões IP (certificados SSL ou nomes de domínio personalizados) verão a seguinte mensagem na página de detalhes **IP Lista de permissões** e **Environment**.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+Para visualizar e gerenciar as configurações pré-existentes, elas devem ser adicionadas por meio da interface do usuário.
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
