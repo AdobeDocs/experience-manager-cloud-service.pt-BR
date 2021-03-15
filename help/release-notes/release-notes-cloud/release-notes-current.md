@@ -2,7 +2,7 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 3%
@@ -42,7 +42,7 @@ A seguinte versão (2021.3.0) será lançada em 25 de março de 2021.
 
 ## Novidades em [!DNL Assets] {#what-is-new-assets}
 
-* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolverem com usuários de agências a obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolver com usuários de agências para obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * O relatório de uso [!DNL Brand Portal] agora exibe somente os usuários ativos. Os usuários inativos não são exibidos agora. Os usuários ativos são aqueles cuja conta está atribuída a um perfil de produto no [!DNL Admin Console]. Consulte [[!DNL Brand Portal] relatórios](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -101,11 +101,11 @@ A próxima versão está planejada para 8 de abril de 2021.
 
 * O rótulo **Version** foi renomeado para **Git Tag** na tela de execução do pipeline de Produção.
 
-* Os rótulos que definem o comportamento quando métricas importantes não atingem o limite definido foram renomeados para refletir seu comportamento verdadeiro - **Cancelar imediatamente** e **Aprovar imediatamente**.
+* Os rótulos que definem o comportamento quando métricas importantes não atingirem o limite definido foram renomeados para refletir seu comportamento verdadeiro: **Cancelar Imediatamente** e **Aprovar Imediatamente**.
 
 * As listas de desaprovação de classe e método foram atualizadas com base na versão `2021.3.4997.20210303T022849Z-210225` do SDK do Cloud Service AEM.
 
-* O pipeline de Produção do Cloud Manager agora incluirá o recurso de teste da interface de usuário personalizada.
+* O pipeline de Produção do Cloud Manager agora incluirá o recurso [Teste de interface personalizada](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Correções de erros {#bug-fixes-cm-march}
 
