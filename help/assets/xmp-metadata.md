@@ -3,9 +3,9 @@ title: Metadados XMP
 description: Saiba mais sobre o padrão de metadados XMP (Plataforma de metadados extensível) para gerenciamento de metadados. Ele é usado pelo AEM como um formato padronizado para criação, processamento e intercâmbio de metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
+source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1003'
 ht-degree: 16%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 16%
 
 XMP (Plataforma de metadados extensível) é o padrão de metadados usado pelo AEM Assets para todo o gerenciamento de metadados. O XMP fornece um formato padrão para a criação, o processamento e o intercâmbio de metadados para uma grande variedade de aplicativos.
 
-Além de oferecer a codificação de metadados universais que pode ser incorporada em todos os formatos de arquivo, o XMP fornece um [modelo de conteúdo](#xmp-core-concepts) rico e é [suportado pela Adobe](#advantages-of-xmp) e por outras empresas, para que os usuários do XMP em combinação com o AEM Assets tenham uma plataforma poderosa para desenvolver.
+Além de oferecer a codificação de metadados universais que pode ser incorporada a todos os formatos de arquivo, o XMP fornece um [modelo de conteúdo avançado](#xmp-core-concepts) e é [suportado pelo Adobe](#advantages-of-xmp) e por outras empresas, para que os usuários de XMP em combinação com o AEM Assets tenham uma plataforma poderosa para desenvolver.
 
-## Visão geral do XMP e ecossistema {#xmp-ecosystem}
+## Visão geral XMP e ecossistema {#xmp-ecosystem}
 
-Os ativos AEM são compatíveis nativamente com o padrão de metadados XMP. O XMP é um padrão para processamento e armazenamento de metadados padronizados e proprietários em ativos digitais. O XMP foi projetado para ser o padrão comum que permite que vários aplicativos funcionem com metadados de maneira eficaz.
+O AEM Assets oferece suporte nativo ao padrão de metadados de XMP. XMP é um padrão para processar e armazenar metadados padronizados e proprietários em ativos digitais. O XMP foi projetado para ser o padrão comum que permite que vários aplicativos funcionem com metadados de maneira eficaz.
 
-Os profissionais de produção, por exemplo, usam o suporte XMP integrado nos aplicativos da Adobe para transmitir informações em vários formatos de arquivo. O repositório do AEM Assets extrai os metadados XMP e os usa para gerenciar o ciclo de vida do conteúdo e oferece a capacidade de criar fluxos de trabalho de automação.
+Os profissionais de produção, por exemplo, usam o suporte XMP integrado nos aplicativos Adobe para transmitir informações em vários formatos de arquivo. O repositório AEM Assets extrai os metadados XMP e os usa para gerenciar o ciclo de vida do conteúdo e oferece a capacidade de criar fluxos de trabalho de automação.
 
-O XMP padroniza como os metadados são definidos, criados e processados fornecendo um modelo de dados, um modelo de armazenamento e esquemas. Todos esses conceitos são abordados nesta seção.
+XMP padroniza como os metadados são definidos, criados e processados fornecendo um modelo de dados, um modelo de armazenamento e esquemas. Todos esses conceitos são abordados nesta seção.
 
-Todos os metadados herdados de EXIF, ID3 ou Microsoft Office são traduzidos automaticamente para XMP, que pode ser estendido para oferecer suporte ao esquema de metadados específico do cliente, como catálogos de produtos.
+Todos os metadados herdados de EXIF, ID3 ou Microsoft Office são traduzidos automaticamente para XMP, o que pode ser estendido para oferecer suporte ao esquema de metadados específico do cliente, como catálogos de produtos.
 
 Os metadados no XMP consistem em um conjunto de propriedades. Estas propriedades estão sempre associadas a uma entidade específica designada por recurso; ou seja, as propriedades são &quot;sobre&quot; o recurso. No caso de XMP, o recurso é sempre o ativo.
 
@@ -35,60 +35,58 @@ O XMP geralmente é serializado e armazenado usando um subconjunto do [W3C](http
 
 ### Vantagens do XMP {#advantages-of-xmp}
 
-O XMP tem as seguintes vantagens em relação a outros padrões e esquemas de codificação:
+XMP tem as seguintes vantagens em relação a outros padrões e esquemas de codificação:
 
 * Metadados baseados em XMP são muito avançados e otimizados.
-* O XMP permite que você tenha vários valores para uma propriedade.
-* O XMP tem codificação padronizada, que permite a troca fácil de metadados.
-* O XMP é extensível. É possível adicionar mais informações aos ativos.
+* XMP permite ter vários valores para uma propriedade.
+* XMP tem codificação padronizada, que permite a troca fácil de metadados.
+* XMP é extensível. É possível adicionar mais informações aos ativos.
 
-O padrão XMP foi projetado para ser extensível, permitindo adicionar tipos personalizados de metadados aos dados XMP. Por outro lado, EXIF não - tem uma lista fixa de propriedades que não pode ser estendida.
+O padrão de XMP foi projetado para ser extensível, permitindo adicionar tipos personalizados de metadados aos dados de XMP. Por outro lado, EXIF não - tem uma lista fixa de propriedades que não pode ser estendida.
 
 >[!NOTE]
 >
->O XMP geralmente não permite a incorporação de tipos de dados binários. Para carregar dados binários no XMP, por exemplo, imagens em miniatura, eles devem ser codificados em um formato compatível com XML, como `Base64`.
+>XMP geralmente não permite que tipos de dados binários sejam incorporados. Para carregar dados binários no XMP, por exemplo, imagens em miniatura, eles devem ser codificados em um formato compatível com XML, como `Base64`.
 
-### Conceitos principais do XMP {#xmp-core-concepts}
+### XMP conceitos principais {#xmp-core-concepts}
 
 **Namespaces e schemata**
 
 Um esquema XMP é um conjunto de nomes de propriedade em um namespace XML comum que inclui
-Tipo de dados e informações descritivas. Um esquema XMP é identificado por seu URI de namespace XML. O uso de namespaces impede conflitos entre propriedades em esquemas diferentes que tenham o mesmo nome, mas um significado diferente.
+Tipo de dados e informações descritivas. Um esquema de XMP é identificado por seu URI de namespace XML. O uso de namespaces impede conflitos entre propriedades em esquemas diferentes que tenham o mesmo nome, mas um significado diferente.
 
 Por exemplo, a propriedade **Creator** em dois esquemas projetados independentemente pode significar a pessoa que criou o ativo ou pode significar o aplicativo que criou o ativo (por exemplo, Adobe Photoshop).
 
-**Propriedades e valores XMP**
+**Propriedades e valores de XMP**
 
-O XMP pode incluir propriedades de um ou mais schemas. Por exemplo, um subconjunto típico usado por muitos aplicativos da Adobe pode incluir o seguinte:
+XMP pode incluir propriedades de um ou mais schemas. Por exemplo, um subconjunto típico usado por muitos aplicativos Adobe pode incluir o seguinte:
 
 * Esquema principal de Dublin: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`
-* Esquema básico XMP: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
-* Esquema de gerenciamento de direitos XMP: `xmpRights:WebStatement`, `xmpRights:Marked`
-* Esquema de gerenciamento de mídia XMP: `xmpMM:DocumentID`
+* XMP esquema básico: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
+* XMP schema de gerenciamento de direitos: `xmpRights:WebStatement`, `xmpRights:Marked`
+* XMP schema de gerenciamento de mídia: `xmpMM:DocumentID`
 
 **Alternativas linguísticas**
 
-O XMP oferece a capacidade de adicionar uma propriedade `xml:lang` às propriedades de texto para especificar o idioma do texto.
+XMP oferece a capacidade de adicionar uma propriedade `xml:lang` às propriedades do texto para especificar o idioma do texto.
 
 ## Write-back de XMP a execuções {#xmp-writeback-to-renditions}
 
-Este recurso de gravação XMP em [!DNL Adobe Experience Manager Assets] replica as alterações de metadados nas representações do ativo original. Quando você altera os metadados de um ativo de [!DNL Assets] ou durante o upload do ativo, as alterações são armazenadas inicialmente no nó do ativo no repositório. O recurso de gravação XMP propaga as alterações de metadados para todas as representações ou representações específicas do ativo.
+Esse recurso de write-back de XMP em [!DNL Adobe Experience Manager Assets] replica as alterações de metadados nas representações do ativo original. Quando você altera os metadados de um ativo de [!DNL Assets] ou durante o upload do ativo, as alterações são armazenadas inicialmente no nó do ativo no repositório. No entanto, [!DNL Assets] não propaga automaticamente quaisquer alterações de metadados nas representações de um ativo. O recurso de write-back de XMP permite propagar as alterações de metadados para todas as representações ou representações específicas do ativo. As atualizações são armazenadas no nó de metadados na hierarquia de ativos. Esse recurso também incorpora as atualizações nos arquivos binários das representações. O recurso grava somente as propriedades de metadados que usam um namespace `jcr`.
 
-Considere um cenário em que você modifica a propriedade [!UICONTROL Title] do ativo intitulado `Classic Leather` para `Nylon`.
+Por exemplo, considere um cenário em que modifique a propriedade [!UICONTROL Title] do ativo intitulado `Classic Leather` para `Nylon`.
 
 ![metadados](assets/metadata.png)
 
 Nesse caso, [!DNL Assets] salva as alterações na propriedade **[!UICONTROL Title]** no parâmetro `dc:title` para os metadados de ativos armazenados na hierarquia de ativos.
 
-![metadata_stored](assets/metadata_stored.png)
+![metadados armazenados no nó do ativo no repositório](assets/metadata_stored.png)
 
-No entanto, [!DNL Assets] não propaga automaticamente quaisquer alterações de metadados nas representações de um ativo.
+>[!NOTE]
+>
+>O recurso de write-back não está habilitado por padrão em [!DNL Assets]. Consulte como [ativar o write-back de metadados](#enable-xmp-writeback).
 
-O recurso de write-back XMP permite propagar as alterações de metadados para todas as representações ou representações específicas do ativo. No entanto, as alterações não são armazenadas no nó de metadados na hierarquia de ativos. Em vez disso, esse recurso incorpora as alterações nos arquivos binários das representações.
-
-O recurso de write-back não está habilitado por padrão em [!DNL Assets]. Consulte como [ativar o write-back de metadados](#enable-xmp-writeback).
-
-### Ativar o write-back XMP {#enable-xmp-writeback}
+### Habilitar XMP write-back {#enable-xmp-writeback}
 
 [!UICONTROL O fluxo de trabalho ] Writeback de metadados DAM é usado para gravar os metadados de um ativo. Para ativar o write-back, siga estas etapas:
 
@@ -97,9 +95,9 @@ O recurso de write-back não está habilitado por padrão em [!DNL Assets]. Cons
 
    ![Selecione o iniciador de gravação de metadados DAM para modificar suas propriedades e ativá-lo](assets/launcher-properties-metadata-writeback1.png)
 
-1. Selecione **[!UICONTROL Ativar]** na página [!UICONTROL Propriedades do Iniciador]. Clique em **[!UICONTROL Salvar e fechar]**.
+1. Selecione **[!UICONTROL Ativar]** na página **[!UICONTROL Propriedades do Iniciador]**. Clique em **[!UICONTROL Salvar e fechar]**.
 
-Para aplicar esse workflow a um ativo apenas uma vez, aplique o workflow [!UICONTROL DAM Metadata Writeback] a partir do painel esquerdo. Para aplicar o fluxo de trabalho aos ativos carregados, adicione o fluxo de trabalho a um perfil de pós-processamento.
+Para aplicar esse workflow a um ativo apenas uma vez, aplique o workflow [!UICONTROL DAM Metadata Writeback] a partir do painel esquerdo. Para aplicar o fluxo de trabalho a todos os ativos carregados, adicione o fluxo de trabalho a um perfil de pós-processamento.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
