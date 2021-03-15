@@ -2,9 +2,9 @@
 title: Verificando o status da Lista de permissões de IP
 description: Verificando o status da Lista de permissões de IP
 translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Verificando o status da Lista de permissões de IP {#check-allow-list-status}
 
-Siga as etapas abaixo para determinar o status das atualizações para sua Lista de permissões IP:
+Siga as etapas abaixo para determinar o status das atualizações na sua Lista de permissões de IP:
 
 1. Clique no ícone Status da Lista de permissões IP na tabela da tela **Ambientes** e selecione **Listas de permissões IP**.
 
@@ -20,25 +20,36 @@ Siga as etapas abaixo para determinar o status das atualizações para sua Lista
 
 ## Status de uma Lista de permissões IP {#status}
 
-Veja a seguir as definições de status que aparecerão em uma Lista de permissões de IP:
+Estas são as definições de status que aparecerão em uma Lista de permissões de IP:
 
-* **Aplicado**: A Lista de permissões IP foi aplicada com êxito em ambientes.  Os ambientes e o serviço podem ser vistos como mostrado na imagem abaixo.
+* **Aplicado**: A Lista de permissões de IP é aplicada com êxito em ambientes.  Os ambientes e o serviço podem ser vistos como mostrado na imagem abaixo.
 
-* **Atualizando**: Está em andamento uma atualização da Lista de permissões IP que pode incluir uma ou mais aplicações ou cancelamento de aplicação. Cada Aplicar e Desaplicar será listado juntamente com Não iniciado/Em andamento/Concluído ou Com falha.
+* **Atualização**: Está em andamento uma atualização da Lista de permissões IP que pode incluir uma ou mais aplicações ou não aplicação. Cada Aplicar e Desaplicar será listado juntamente com Não Iniciado/Em Andamento/Concluído ou Falha.
 
-* **Falha**: Falha em um ou mais processos de aplicação ou cancelamento de aplicação em uma Atualização. Cada Aplicar e Desaplicar será listado juntamente com Concluído ou Falha.
-   * O status falhará, mesmo se uma aplicação/desaplicação na atualização falhar.
-   * O status continuará com Falha até que todas as falhas sejam apagadas. O usuário deve selecionar o ícone de nova tentativa ao lado do status para apagar a falha.
-   * O usuário não poderá atualizar ou excluir a Lista de permissões IP enquanto o status estiver com falha.
+* **Falha**: Um ou mais processos de aplicação ou cancelamento de aplicação em uma Atualização falharam. Cada Aplicar e Desaplicar será listado juntamente com Concluído ou Falha.
+   * O status será Failed, mesmo se um apply/unapply na atualização falhar.
+   * O status permanecerá com Falha até que todas as falhas sejam apagadas. O usuário deve selecionar o ícone de nova tentativa ao lado do status para limpar a falha.
+   * O usuário não poderá atualizar ou excluir a Lista de permissões IP enquanto o status for Failed.
 
-* **Excluindo**: A solicitação de exclusão está em andamento. Isto implica a não aplicação de todos os serviços. Cada Desaplicação será listada juntamente com Não iniciado/Em andamento/Concluído ou Com falha.
-Quando a operação Excluir estiver concluída, a Lista de permissões IP:
-   * Não é mais exibido na tabela Lista de permissões IP.
-   * Não é mais aplicado a nenhum serviço no programa no Cloud Manager.
+* **Excluindo**: A solicitação de exclusão está em andamento. Isto implica a não aplicação de todos os serviços. Cada Desaplicação será listada juntamente com Não Iniciado/Em Andamento/Concluído ou Falha.
+Quando a operação Delete for concluída, a Lista de permissões IP irá:
+   * Não é mais exibido na tabela de Lista de permissões de IP.
+   * Não pode mais ser aplicado a nenhum serviço no programa no Cloud Manager.
 
-* **Falha** na exclusão: Um ou mais processos de desaplicação em uma operação Excluir falharam. Cada Cancelamento de aplicação será listado juntamente com Concluído ou Falha.
+* **Falha** na Exclusão: Falha em um ou mais processos de desaplicação em uma operação de exclusão. Cada Desaplicação será listada juntamente com Concluído ou Falha.
 
-   * O status será Excluir falha, mesmo se uma não aplicação falhar.
-   * O status permanecerá Excluir falha até que todas as falhas sejam apagadas. O usuário deve selecionar Excluir de **...** na extremidade direita da linha na tabela para eliminar qualquer falha.
-   * O usuário não poderá atualizar a Lista de permissões IP enquanto o status estiver com falha.
+   * O status será Delete Failed (Falha na exclusão), mesmo se uma não aplicação falhar.
+   * O status permanecerá Delete Failed até que todas as falhas sejam apagadas. O usuário deve selecionar Excluir no **...** na extremidade direita da linha da tabela para limpar qualquer falha.
+   * O usuário não poderá atualizar a Lista de permissões de IP enquanto o status for Failed.
+
+## Configurações de CDN pré-existentes para Lista de permissões IP  {#pre-existing-cdn}
+
+Os clientes com ambientes que incluem configurações de CDN pré-existentes para Listas de permissões de IP, certificados SSL ou Nomes de domínio personalizados verão a seguinte mensagem na página **Lista de permissões de IP** e **Ambiente** de detalhes.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+>[!NOTE]
+>Para visualizar e gerenciar as configurações pré-existentes, elas devem ser adicionadas por meio da interface do usuário, como mostrado na figura abaixo.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
 
