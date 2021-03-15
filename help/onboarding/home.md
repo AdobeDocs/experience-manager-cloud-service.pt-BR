@@ -2,10 +2,10 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
+source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 97%
+source-wordcount: '416'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Esta página lista os recursos de autoajuda sobre integração ao Experience Man
 
 Esta seção contempla os artigos-chave com foco em:
 
-* requisitos de acesso ao Experience Manager as a Cloud Service
+* Introdução ao AEM como Cloud Service
 * noções básicas das funções para usuários que controlam a disponibilidade de recursos específicos
 * configuração do repositório git do Cloud Manager
 * acesso ao Experience Manager as a Cloud Service
