@@ -2,9 +2,9 @@
 title: Verificando o status do nome de domínio
 description: Verificando o status do nome de domínio
 translation-type: tm+mt
-source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,11 @@ FailedDeletion do nome de domínio personalizado. Você deve tentar novamente. C
 
 ## Configurações de CDN pré-existentes para Lista de permissões IP  {#pre-existing-cdn}
 
-Os clientes com ambientes que incluem configurações pré-existentes de CDN para Lista de permissões IP (certificados SSL ou nomes de domínio personalizados) verão a seguinte mensagem na página de detalhes **IP Lista de permissões** e **Environment**.
+Os clientes com ambientes que incluem configurações de CDN pré-existentes para Listas de permissões de IP, certificados SSL ou Nomes de domínio personalizados verão a seguinte mensagem na página **Lista de permissões de IP** e **Ambiente** de detalhes.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
-Para visualizar e gerenciar as configurações pré-existentes, elas devem ser adicionadas por meio da interface do usuário.
+>[!NOTE]
+>Para visualizar e gerenciar as configurações pré-existentes, elas devem ser adicionadas por meio da interface do usuário, como mostrado na figura abaixo.
+
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
