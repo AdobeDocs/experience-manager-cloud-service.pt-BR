@@ -3,10 +3,10 @@ title: Configurar o AEM Assets as a [!DNL Cloud Service] com o Brand Portal
 description: Configurar o AEM Assets com o Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: b6283cfff0a0476cc45eb9da75a3a9b2bfdef7bd
+source-git-commit: 4a22ef2913e88b037a65746f782e4c6a20afdddb
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 14%
+source-wordcount: '2411'
+ht-degree: 13%
 
 ---
 
@@ -17,7 +17,7 @@ A configuração do Adobe Experience Manager Assets Brand Portal permite publica
 
 ## Ativar o Brand Portal usando o Cloud Manager {#activate-brand-portal}
 
-O usuário do Cloud Manager ativa o Brand Portal para uma instância do AEM Assets como [!DNL Cloud Service]. O fluxo de trabalho de ativação cria as configurações necessárias (token de autorização, configuração IMS e serviço em nuvem do Brand Portal) no backend e reflete o status do locatário do Brand Portal no Cloud Manager.
+O usuário do Cloud Manager ativa o Brand Portal para uma instância do AEM Assets como [!DNL Cloud Service]. O fluxo de trabalho de ativação cria as configurações necessárias (token de autorização, configuração IMS e serviço em nuvem do Brand Portal) no backend e reflete o status do locatário do Brand Portal no Cloud Manager. Ativar o Brand Portal permite que os usuários do AEM Assets publiquem ativos no Brand Portal e os distribuam para os usuários do Brand Portal.
 
 **Pré-requisitos**
 
@@ -28,7 +28,7 @@ Você precisa do seguinte para ativar o Brand Portal em seu AEM Assets como uma 
 
 >[!NOTE]
 >
->Uma instância do AEM Assets as a [!DNL Cloud Service] tem direito a conectar apenas um locatário do Brand Portal. Você pode criar vários ambientes (desenvolvimento, produção e palco) para seu AEM Assets como uma instância [!DNL Cloud Service], onde o Brand Portal é ativado somente em um ambiente.
+>Uma instância do AEM Assets as a [!DNL Cloud Service] tem direito a se conectar a apenas um locatário do Brand Portal. Você pode ter vários ambientes (desenvolvimento, produção e palco) para seu AEM Assets como uma instância [!DNL Cloud Service], onde o Brand Portal é ativado em um ambiente.
 
 **Etapas para ativar o Brand Portal**
 
@@ -46,9 +46,18 @@ Você pode ativar o Brand Portal ao criar os ambientes para seu AEM Assets como 
 
    ![Ativar Brand Portal](assets/create-environment4.png)
 
-1. Pode levar alguns minutos para ativar o locatário do Brand Portal, pois o fluxo de trabalho de ativação cria as configurações necessárias no back-end. Quando o locatário do Brand Portal é ativado, o status é alterado para Ativado.
+1. São necessários alguns minutos para ativar o locatário do Brand Portal, pois o fluxo de trabalho de ativação cria as configurações necessárias no back-end. Quando o locatário do Brand Portal é ativado, o status é alterado para Ativado.
 
    ![Exibir status](assets/create-environment5.png)
+
+
+>[!NOTE]
+>
+>O Brand Portal deve ser ativado na mesma organização IMS do AEM Assets como uma instância [!DNL Cloud Service].
+>
+>Se você tiver uma configuração de nuvem existente do Brand Portal ([manualmente configurada usando o Console do Desenvolvedor do Adobe](#manual-configuration)) para uma organização IMS (org1-existing) e sua instância do AEM Assets como [!DNL Cloud Service] estiver configurada para outra organização IMS (org2-new), ativar o Brand Portal no Cloud Manager redefinirá a organização IMS do Brand Portal para `org2-new`. Embora a configuração de nuvem configurada manualmente em `org1-existing` esteja visível na instância do autor do AEM Assets, mas não estará mais em uso após ativar o Brand Portal no Cloud Manager.
+>
+>Se a configuração de nuvem existente do Brand Portal e a instância AEM Assets as [!DNL Cloud Service] estiverem usando a mesma organização IMS (org1), será necessário ativar o Brand Portal no Cloud Manager.
 
 **Consulte também**:
 * [Adicionar usuários e funções no AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
@@ -62,13 +71,15 @@ Após a ativação do locatário do Brand Portal no Cloud Manager, você pode fa
 
 O URL padrão do locatário do Brand Portal é: `https://<tenant-id>.brand-portal.adobe.com/`.
 
+Onde, a ID do locatário é a organização IMS.
+
 Execute as seguintes etapas se não tiver certeza do URL do Brand Portal:
 
 1. Faça logon em [Admin Console](http://adminconsole.adobe.com/) e navegue até **[!UICONTROL Produtos]**.
 1. No painel à esquerda, selecione **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
 1. Clique em **[!UICONTROL Ir para o Brand Portal]** para abrir diretamente o Brand Portal no navegador.
 
-   Ou copie o URL do locatário do Brand Portal e o cole em seu navegador para abrir a interface do Brand Portal.
+   Ou copie o URL do locatário do Brand Portal a partir do link **[!UICONTROL Ir para o Brand Portal]** e cole-o em seu navegador para abrir a interface do Brand Portal.
 
    ![Acessar Brand Portal](assets/access-bp-on-cloud.png)
 
@@ -130,16 +141,16 @@ Consulte a [documentação do Brand Portal](https://docs.adobe.com/content/help/
 
 Você pode monitorar os registros do agente de distribuição para o fluxo de trabalho de publicação de ativos.
 
-Por exemplo, publicamos um ativo do AEM Assets no Brand Portal para validar a configuração.
+Agora, vamos publicar um ativo do AEM Assets no Brand Portal e ver os logs.
 
-1. Siga as etapas (de 1 a 4) conforme mostrado na seção [Testar configuração](#test-configuration) e navegue até a página do agente de distribuição.
+1. Siga as etapas (de 1 a 4) conforme mostrado na seção **Testar conexão** e navegue até a página do agente de distribuição.
 1. Clique em **[!UICONTROL Logs]** para visualizar o processamento e os logs de erro.
 
    ![](assets/test-bpconfig5.png)
 
 O agente de distribuição gerou os seguintes logs:
 
-* INFORMAÇÕES: Este é um registro gerado pelo sistema que dispara para uma configuração bem-sucedida do agente de distribuição.
+* INFORMAÇÕES: É um registro gerado pelo sistema que dispara para uma configuração bem-sucedida do agente de distribuição.
 * DSTRQ1 (Solicitação 1): acionado na conexão de teste.
 
 Ao publicar o ativo, os seguintes registros de solicitação e resposta são gerados:
@@ -164,7 +175,7 @@ Junto com o fluxo de trabalho de automação para ativar o Brand Portal no AEM A
 
 >[!NOTE]
 >
->Você deve entrar em contato com o Suporte do Adobe se tiver algum problema ao ativar o locatário do Brand Portal.
+>Entre em contato com o Suporte do Adobe se tiver algum problema ao ativar o locatário do Brand Portal.
 
 ## Configuração manual usando o Console do desenvolvedor do Adobe {#manual-configuration}
 
@@ -225,7 +236,7 @@ A chave pública (certificado) autentica seu perfil no Console do desenvolvedor 
 
 1. Clique no ícone **[!UICONTROL Baixar chave pública]** e salve o arquivo de chave pública (CRT) no computador.
 
-   A chave pública será usada posteriormente para configurar a API para o locatário do Brand Portal e gerar credenciais de conta de serviço no Console do Desenvolvedor do Adobe.
+   A chave pública é usada posteriormente para configurar a API para o locatário do Brand Portal e gerar credenciais de conta de serviço no Console do Desenvolvedor do Adobe.
 
    ![Baixar certificado](assets/ims-config3.png)
 
