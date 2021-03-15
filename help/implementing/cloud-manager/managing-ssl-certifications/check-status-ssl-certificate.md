@@ -2,7 +2,7 @@
 title: Verificar o status de um certificado SSL - Gerenciar certificados SSL
 description: Verificar o status de um certificado SSL - Gerenciar certificados SSL
 translation-type: tm+mt
-source-git-commit: 0b04d43c8b5bb28286e616f0bd902c05ec56ec05
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%
@@ -27,7 +27,7 @@ VermelhoIndica que, apesar de várias notificações, seu certificado SSL expiro
 
 ## Configurações de CDN pré-existentes para Listas de permissões IP {#pre-existing-cdn}
 
-Os clientes com ambientes que incluem configurações de CDN pré-existentes para Listas de permissões de IP, certificados SSL ou Nomes de domínio personalizados verão a seguinte mensagem na página **Lista de permissões de IP** e **Ambiente** de detalhes. A mensagem exibida na interface do usuário desaparecerá assim que o cliente migrar totalmente todas as configurações de ambiente pré-existentes por meio da interface do usuário e talvez demore de 1 a 2 dias úteis para a mensagem desaparecer.
+Os clientes com ambientes que incluem configurações de CDN pré-existentes para Listas de permissões de IP, certificados SSL ou nomes de domínio personalizados verão a seguinte mensagem na página de detalhes **Lista de permissões de IP** e **Ambiente**. A mensagem exibida na interface do usuário desaparecerá assim que o cliente migrar totalmente todas as configurações de ambiente pré-existentes por meio da interface do usuário e talvez demore de 1 a 2 dias úteis para a mensagem desaparecer.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
