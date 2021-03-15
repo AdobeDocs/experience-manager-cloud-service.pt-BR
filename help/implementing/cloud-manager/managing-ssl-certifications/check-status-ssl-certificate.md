@@ -1,10 +1,10 @@
 ---
-title: Verificando o status de um certificado SSL - Gerenciando certificados SSL
-description: Verificando o status de um certificado SSL - Gerenciando certificados SSL
+title: Verificar o status de um certificado SSL - Gerenciar certificados SSL
+description: Verificar o status de um certificado SSL - Gerenciar certificados SSL
 translation-type: tm+mt
-source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -12,15 +12,26 @@ ht-degree: 0%
 
 # Verificando o status de um certificado SSL {#checking-status-an-ssl-certificate}
 
-O status dos certificados SSL pode ser entendido rapidamente na página de certificados SSL.
+O status dos certificados SSL pode ser entendido rapidamente na página de certificado SSL.
 
-Você pode identificar o status de um certificado SSL dos seguintes esquemas de cores:
-
-* ****
-VerdeIndica que seu certificado é válido por pelo menos 60 dias no futuro.
+Você pode identificar o status de um certificado SSL nos seguintes esquemas de cores:
 
 * ****
-LaranjaIndica que seu certificado deve expirar em menos de 60 dias. É hora de garantir que você tenha um plano para renovar seu certificado e substituí-lo pela interface do usuário do Cloud Manager, a fim de evitar possíveis acessos ou interrupções no site. O Cloud Manager enviará notificações regulares na interface do usuário para alertá-lo sobre uma expiração iminente do certificado.
+VerdeIndica que o certificado é válido por, pelo menos, 60 dias no futuro.
+
+* ****
+LaranjaIndica que o certificado deve expirar em menos de 60 dias. É hora de garantir que você tenha um plano para renovar seu certificado e substituí-lo pela interface do usuário do Cloud Manager para evitar possíveis acessos ao site ou interrupções. O Cloud Manager enviará notificações regulares na interface do usuário para alertá-lo sobre uma expiração iminente de certificado.
 
 * ****
 VermelhoIndica que, apesar de várias notificações, seu certificado SSL expirou.
+
+## Configurações de CDN pré-existentes para Lista de permissões IP  {#pre-existing-cdn}
+
+Os clientes com ambientes que incluem configurações de CDN pré-existentes para Listas de permissões de IP, certificados SSL ou Nomes de domínio personalizados verão a seguinte mensagem na página **Lista de permissões de IP** e **Ambiente** de detalhes.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+>[!NOTE]
+>Para visualizar e gerenciar as configurações pré-existentes, elas devem ser adicionadas por meio da interface do usuário, como mostrado na figura abaixo.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
