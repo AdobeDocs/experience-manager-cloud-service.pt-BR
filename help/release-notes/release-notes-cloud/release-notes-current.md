@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 612885895dda73afb3406f73e59ef3eec6202f5d
+source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1677'
 ht-degree: 3%
 
 ---
@@ -78,28 +78,29 @@ Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Ser
 ## Data de lançamento {#release-date-cm-march}
 
 A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.3.0 é 11 de março de 2021.
+A próxima versão está planejada para 8 de abril de 2021.
 
 
 ### Novidades {#what-is-new-march}
 
-* Os clientes com ambientes com configurações de CDN pré-existentes para Lista de permissões de IP, certificados SSL e nomes de domínio personalizados verão uma mensagem sobre suas configurações existentes anteriormente e poderão se auto-servir por meio da interface do usuário. Os usuários agora podem:
+* Os clientes com ambientes com configurações pré-existentes de Nome de domínio personalizado para [Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) e [Nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verão uma mensagem sobre suas configurações existentes anteriormente e poderão se autoservir por meio da interface do usuário. Os usuários agora podem:
    * Adicionar a solução Sites a um programa existente com Ativos (ou vice-versa).
    * Remova Sites (ou Ativos) de um programa existente com Sites e Ativos.
    * Adicione o segundo direito de solução não utilizado a um programa existente ou como um novo Programa.
 
-* Os usuários com a permissão necessária agora podem Editar o Programa, permitindo que façam o seguinte de maneira automatizada.
+* Os usuários com a permissão necessária agora podem editar o Programa, permitindo que façam o seguinte de maneira automatizada.
 
-* AEM &quot;Atualização de push&quot; agora será exibido para as telas Execução de pipeline e Atividade.
+* **AEM o** recurso Push Updatelabel será exibido para  *Pipeline* Execution e  ** Ativityscreens.
 
-* Se um ambiente estiver hibernado, mas também houver uma atualização de AEM disponível, o status &quot;Hibernado&quot; terá prioridade sobre &quot;Atualização disponível&quot;.
+* Se um ambiente estiver hibernado, mas também houver uma atualização de AEM disponível, o status **Hibernado** terá prioridade sobre **Atualização disponível**.
 
 * Agora os usuários podem ver suas funções do Cloud Manager selecionando a opção &quot;Exibir função(ões) do Cloud Manager&quot; após navegar até o ícone Perfil do usuário (canto superior direito) do Unified Shell.
 
-* O rótulo &quot;Pedido de aprovação&quot; foi renomeado para &quot;Aprovação de produção&quot; para maior clareza.
+* O rótulo **Application for Approval** foi renomeado para **Production Approval** para maior clareza.
 
-* O rótulo &quot;Versão&quot; foi renomeado para &quot;Git Tag&quot; na tela de execução do pipeline de Produção.
+* O rótulo **Version** foi renomeado para **Git Tag** na tela de execução do pipeline de Produção.
 
-* Os rótulos que definem o comportamento quando métricas importantes não alcançam o limite definido foram renomeados para refletir seu comportamento verdadeiro - Cancelar imediatamente e Aprovar imediatamente.
+* Os rótulos que definem o comportamento quando métricas importantes não atingem o limite definido foram renomeados para refletir seu comportamento verdadeiro - **Cancelar imediatamente** e **Aprovar imediatamente**.
 
 * As listas de desaprovação de classe e método foram atualizadas com base na versão `2021.3.4997.20210303T022849Z-210225` do SDK do Cloud Service AEM.
 
