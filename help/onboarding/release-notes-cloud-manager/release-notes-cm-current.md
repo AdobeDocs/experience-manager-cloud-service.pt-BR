@@ -2,7 +2,7 @@
 title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.3.0
 description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.3.0
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
@@ -30,21 +30,21 @@ A próxima versão está planejada para 8 de abril de 2021.
    * Remova Sites (ou Ativos) de um programa existente com Sites e Ativos.
    * Adicione o segundo direito de solução não utilizado a um programa existente ou como um novo Programa.
 
-* AEM &quot;Atualização de push&quot; agora será exibido para as telas Execução de pipeline e Atividade.
+* **AEM o** recurso Push Updatelabel agora será exibido para as telas Pipeline Execution e Activity.
 
-* Se um ambiente estiver hibernado, mas também houver uma atualização de AEM disponível, o status &quot;Hibernado&quot; terá prioridade sobre &quot;Atualização disponível&quot;.
+* Se um ambiente estiver hibernado, mas também houver uma atualização de AEM disponível, o status **Hibernado** terá prioridade sobre **Atualização disponível**.
 
 * Agora os usuários podem ver suas funções do Cloud Manager selecionando a opção &quot;Exibir função(ões) do Cloud Manager&quot; após navegar até o ícone Perfil do usuário (canto superior direito) do Unified Shell.
 
-* O rótulo &quot;Pedido de aprovação&quot; foi renomeado para &quot;Aprovação de produção&quot; para maior clareza.
+* O rótulo **Application for Approval** foi renomeado para **Production Approval** para maior clareza.
 
-* O rótulo &quot;Versão&quot; foi renomeado para &quot;Git Tag&quot; na tela de execução do pipeline de Produção.
+* O rótulo **Version** foi renomeado para **Git Tag** na tela de execução do pipeline de Produção.
 
-* Os rótulos que definem o comportamento quando métricas importantes não alcançam o limite definido foram renomeados para refletir seu comportamento verdadeiro - Cancelar imediatamente e Aprovar imediatamente.
+* Os rótulos que definem o comportamento quando métricas importantes não atingirem o limite definido foram renomeados para refletir seu comportamento verdadeiro: **Cancelar Imediatamente** e **Aprovar Imediatamente**.
 
 * As listas de desaprovação de classe e método foram atualizadas com base na versão `2021.3.4997.20210303T022849Z-210225` do SDK do Cloud Service AEM.
 
-* O pipeline de Produção do Cloud Manager agora incluirá o recurso de teste da interface de usuário personalizada.
+* O pipeline de Produção do Cloud Manager agora incluirá o recurso [Teste de interface personalizada](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Correções de erros {#bug-fixes}
 
