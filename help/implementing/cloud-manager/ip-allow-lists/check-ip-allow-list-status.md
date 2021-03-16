@@ -2,9 +2,9 @@
 title: Verificando o status da Lista de permissões de IP
 description: Verificando o status da Lista de permissões de IP
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -46,10 +46,11 @@ Quando a operação Delete for concluída, a Lista de permissões IP irá:
 
 Os clientes com ambientes que incluem configurações de CDN pré-existentes para Listas de permissões de IP, certificados SSL ou nomes de domínio personalizados verão a seguinte mensagem na página de detalhes **Lista de permissões de IP** e **Ambiente**. A mensagem exibida na interface do usuário desaparecerá assim que o cliente migrar totalmente todas as configurações de ambiente pré-existentes por meio da interface do usuário e talvez demore de 1 a 2 dias úteis para a mensagem desaparecer.
 
+>[!NOTE]
+>Para visualizar e gerenciar as configurações pré-existentes, elas devem ser adicionadas por meio da interface do usuário. Consulte [Adicionar uma Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) para obter mais detalhes.
+
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
->[!NOTE]
->Para visualizar e gerenciar as configurações pré-existentes, elas devem ser adicionadas por meio da interface do usuário, como mostrado na figura abaixo.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
 
