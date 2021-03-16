@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: ebd2e870255dc0a62a4369e0eead9f6981856746
+source-git-commit: bd0efdcea679fa8dc312b17309a5ef0a3c27efc9
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1748'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,7 @@ A seguinte versão (2021.3.0) será lançada em 25 de março de 2021.
 
 * [!DNL Experience Manager Assets] as a  [!DNL Cloud Service] tem direito a ter uma  [!DNL Brand Portal] instância pré-configurada. O usuário [!DNL Cloud Manager] pode ativar [!DNL Brand Portal] em [!DNL Experience Manager Assets] como um [!DNL Cloud Service]. Consulte [ativar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
 
-* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolver com usuários de agências para obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolverem com usuários de agências a obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * O relatório de uso [!DNL Brand Portal] agora exibe somente os usuários ativos. Os usuários inativos não são exibidos agora. Os usuários ativos são aqueles cuja conta está atribuída a um perfil de produto no [!DNL Admin Console]. Consulte [[!DNL Brand Portal] relatórios](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -227,12 +227,29 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.2 é 18 de fe
    * Capacidade de lidar com o caminho da pasta de vhosts e o caminho para arquivos vhost.
    * Geração de arquivos farm com configurações de clientes grandes no intervalo de 600 e mais.
 
+## [!DNL Adobe Experience Manager] como uma Fundação Cloud Service  {#aem-as-a-cloud-service-foundation}
 
+### Problemas conhecidos {#known-issues-foundation}
 
+**Descrição do problema**
 
+Em determinados casos, uma criação de projeto local pode falhar durante a execução do `aemanalyser-maven-plugin` com a seguinte mensagem de erro:
 
+```
+[ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
+ 
+Was expecting one of:
+ 
+     
+ 
+[ERROR] Analyser detected errors on feature
+```
 
+**Solução alternativa**
 
+Para contornar esse problema, selecione a versão mais recente do `aemanalyser-maven-plugin` no arquivo pai `pom.xml`:
 
-
+```xml
+<aemanalyser.version>0.9.2</aemanalyser.version>
+```
 
