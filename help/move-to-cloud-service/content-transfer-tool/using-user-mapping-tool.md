@@ -1,89 +1,105 @@
 ---
-title: Uso da ferramenta Mapeamento de usuários
-description: Uso da ferramenta Mapeamento de usuários
+title: Usar a ferramenta Mapeamento de usuários
+description: Usar a ferramenta Mapeamento de usuários
 translation-type: tm+mt
-source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
+source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 4%
+source-wordcount: '1104'
+ht-degree: 3%
 
 ---
 
 
-# Usando a ferramenta de mapeamento de usuário {#user-mapping-tool}
+# Usar a ferramenta de mapeamento de usuários {#user-mapping-tool}
 
 ## Visão geral {#overview}
 
-Como parte da jornada de transição para Adobe Experience Manager (AEM) como Cloud Service, é necessário mover usuários e grupos do sistema de AEM existente para AEM como Cloud Service. Isso é feito pela Ferramenta de transferência de conteúdo.
+Como parte da jornada de transição para o Adobe Experience Manager (AEM) as a Cloud Service, é necessário mover usuários e grupos do sistema de AEM existente para o AEM como Cloud Service. Isso é feito pela ferramenta Transferência de conteúdo.
 
-Uma grande mudança para AEM como Cloud Service é o uso totalmente integrado de IDs de Adobe para acessar a camada do autor.  Isso requer o uso do [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS), que fornece logon único em todos os aplicativos da nuvem de Adobe. Para obter mais detalhes, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Devido a essa alteração, os usuários e grupos existentes precisam ser mapeados para suas IDs IMS para evitar que usuários e grupos do duplicado na instância do autor do Cloud Service.
+Uma mudança importante no AEM como Cloud Service é o uso totalmente integrado de IDs de Adobe para acessar o nível de criação.  Isso requer o uso do [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS), que fornece o logon único em todos os aplicativos de nuvem do Adobe. Para obter mais detalhes, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Devido a essa alteração, usuários e grupos existentes precisam ser mapeados para suas IDs de IMS para evitar usuários e grupos duplicados na instância de autor do Cloud Service.
 
 ## Considerações importantes {#important-considerations}
 
-Há alguns casos excepcionais a considerar. Os seguintes casos específicos serão registrados e o usuário ou grupo em questão não será mapeado:
+### Casos excepcionais {#exceptional-cases}
 
-1. Se um usuário não tiver endereço de email no campo `profile/email` de seu nó *jcr*.
+Os seguintes casos específicos serão registrados:
 
-1. Se um determinado e-mail não for encontrado no sistema IMS (Adobe Identity Management System) para a ID da organização usada (ou se a ID IMS não puder ser recuperada por outro motivo).
+1. Se um usuário não tiver endereço de email no campo `profile/email` de seu nó *jcr*, o usuário ou grupo em questão será migrado, mas não mapeado.
+
+1. Se um determinado email não for encontrado no sistema Adobe Identity Management System (IMS) para a ID da organização usada (ou se a ID IMS não puder ser recuperada por outro motivo), o usuário ou grupo em questão será migrado, mas não mapeado.
 
 1. Se o usuário estiver desabilitado no momento, ele será tratado como se não estivesse desabilitado. Ele será mapeado e migrado normalmente e permanecerá desativado na instância da nuvem.
 
-## Usando a ferramenta de mapeamento de usuário {#using-user-mapping-tool}
+1. Se um usuário existir na instância do Cloud Service de AEM de destino com o mesmo nome de usuário (rep:principalName) de um dos usuários na instância de AEM de origem, o usuário ou grupo em questão não será migrado.
 
-A Ferramenta de mapeamento de usuário usa uma API que permite pesquisar usuários do Adobe Identity Management System (IMS) por email e retornar suas IDs IMS. Essa API exige que o usuário crie uma ID do cliente para sua organização, um Segredo do cliente e um Token de acesso ou portador.
+### Considerações adicionais {#additional-considerations}
 
-Siga as etapas abaixo para configurar:
+* Se a configuração **Limpar conteúdo existente na instância do Cloud antes da assimilação** for definida, os usuários já transferidos na instância do Cloud Service serão excluídos juntamente com todo o repositório existente e um novo repositório será criado para assimilar conteúdo. Isso também redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino, e é verdadeiro para um usuário administrador adicionado ao grupo **administradores**. O usuário administrador precisará ser adicionado novamente ao grupo **administrators** para recuperar o token de acesso para CTT.
 
-1. Navegue até [Console do desenvolvedor do Adobe](https://console.adobe.io) usando seu Adobe ID.
-1. Crie um novo projeto ou abra um existente.
+* Recomenda-se remover qualquer usuário existente da instância do Cloud Service de destino AEM antes de executar a CTT com o Mapeamento de usuários. Isso é para evitar qualquer conflito entre a migração de usuários da instância de AEM de origem para a instância de AEM de destino. Os conflitos ocorrerão durante a assimilação se o mesmo usuário existir na instância de AEM de origem e na instância de AEM de destino.
+
+* Quando os upups de conteúdo são executados, se o conteúdo não for transferido porque não foi alterado desde a transferência anterior, os usuários e grupos associados a esse conteúdo também não serão transferidos, mesmo se os usuários e grupos tiverem sido alterados enquanto isso. Isso ocorre porque os usuários e grupos são migrados junto com o conteúdo ao qual estão associados.
+
+* A assimilação falhará nos seguintes cenários:
+
+1. Se a instância do Cloud Service do target AEM tiver um usuário com um nome de usuário diferente, mas o mesmo endereço de email de um dos usuários na instância de AEM de origem.
+
+1. Se houver dois usuários na instância de AEM de origem com nomes de usuário diferentes, mas o mesmo endereço de email. AEM como Cloud Service não permite que dois usuários tenham o mesmo endereço de email.
+
+## Usar a Ferramenta de Mapeamento de Usuário {#using-user-mapping-tool}
+
+A Ferramenta de mapeamento de usuários usa uma API que permite procurar usuários do Adobe Identity Management System (IMS) por email e retornar suas IDs IMS. Essa API exige que o usuário crie uma ID do cliente para sua organização, um Segredo do cliente e um Token de acesso ou portador.
+
+Siga as etapas abaixo para configurar isso:
+
+1. Navegue até [Console do desenvolvedor do Adobe](https://console.adobe.io) usando sua Adobe ID.
+1. Crie um novo projeto ou abra um projeto existente.
 1. Adicione uma API.
 1. Escolha a API de gerenciamento de usuários.
 1. Crie uma credencial JWT.
-1. Gere um par de chaves ou Carregue uma chave pública (rsa não está funcionando).
-1. Gere um token de acesso (ou token JWT ou token do portador).
-1. Salve todas essas informações, como **ID do cliente**, **Segredo do cliente**, **ID da conta técnica**, **Email da conta técnica**, **ID da empresa** e **Token de acesso** com segurança.
+1. Gere um par de chaves ou Carregue uma chave pública (rsa não está bom).
+1. Gere um token de acesso (ou token JWT ou token portador).
+1. Salve todas essas informações, como **Client ID**, **Client Secret**, **Technical Account ID**, **Technical Account Email**, **Org ID** e **Access Token** com segurança.
 
 ## Interface do usuário {#user-interface}
 
-A Ferramenta de mapeamento do usuário é integrada à Ferramenta de transferência de conteúdo. Você pode baixar a Ferramenta de transferência de conteúdo do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Para obter mais detalhes sobre a versão mais recente, consulte as [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md).
+A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferência de conteúdo. Você pode baixar a ferramenta Transferência de conteúdo no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Para obter mais detalhes sobre a versão mais recente, consulte as [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Selecione o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> **Transferência de conteúdo**.
-1. Clique em **Create User Mapping Config**.
+1. Clique em **Criar configuração de mapeamento de usuário**.
 
    >[!NOTE]
-   >Se você ignorar essa etapa, o mapeamento de usuários e grupos será ignorado durante a fase de Extração.
+   >Se você ignorar esta etapa, o mapeamento de usuários e grupos será ignorado durante a fase de Extração.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
 
-   Preencha os campos na Configuração da API de Gerenciamento de Usuário, conforme descrito abaixo:
+   Preencha os campos na Configuração da API de gerenciamento de usuário, conforme descrito abaixo:
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
-   * **ID** da organização: Digite a ID de empresa do sistema Adobe Identity Management (IMS) para a organização na qual os usuários estão sendo migrados.
+   * **ID** da organização: Insira a ID da organização do Sistema Adobe Identity Management (IMS) para a organização na qual os usuários estão sendo migrados.
 
       >[!NOTE]
-      >Para obter a ID da organização, faça logon no [Admin Console](https://adminconsole.adobe.com/) e escolha sua organização (na área superior direita) se você pertencer a mais de uma. A ID da organização estará no URL dessa página, no formato `xx@AdobeOrg`, onde xx é a ID da organização IMS.  Como alternativa, você pode encontrar a ID da organização na página [Console do desenvolvedor do Adobe](https://console.adobe.io) onde você gera o Token de acesso.
+      >Para obter a ID da organização, faça logon no [Admin Console](https://adminconsole.adobe.com/) e escolha sua organização (na área superior direita) se você pertencer a mais de uma. A ID da organização estará no URL dessa página, no formato como `xx@AdobeOrg`, onde xx é a ID da organização IMS.  Como alternativa, você pode encontrar a ID da organização na página [Console do desenvolvedor do Adobe](https://console.adobe.io) onde gera o Token de acesso.
 
-   * **ID** do cliente: Insira a ID do cliente que você salvou na etapa de instalação.
+   * **ID** do cliente: Insira a ID do cliente que você salvou na etapa Configuração .
 
-   * **token de acesso**: Insira o Token de acesso salvo na etapa Configuração.
+   * **Token** de acesso: Insira o Token de acesso que você salvou na etapa Configuração.
 
       >[!NOTE]
-      >O Token de acesso expira a cada 24 horas e é necessário criar um novo. Para criar um novo token, volte para [Console do desenvolvedor do Adobe](https://console.adobe.io), escolha o seu projeto, clique em **API de gerenciamento de usuários** e cole a mesma chave privada na caixa.
+      >O Token de acesso expira a cada 24 horas e um novo precisa ser criado. Para criar um novo token, volte para [Console do Desenvolvedor do Adobe](https://console.adobe.io), escolha seu projeto, clique em **API do Gerenciamento de Usuário** e cole a mesma chave privada na caixa.
 
 1. Depois de inserir as informações acima, clique em **Salvar**.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
 
 
-1. Crie um Conjunto de Migrações clicando em **Criar Conjunto de Migração** e preenchendo os campos e clicando em **Salvar**. Para obter mais detalhes, consulte [Execução da Ferramenta de transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
+1. Crie um Conjunto de Migração clicando em **Criar Conjunto de Migração**, preenchendo os campos e clicando em **Salvar**. Para obter mais detalhes, consulte [Execução da ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
 
    >[!NOTE]
-   >A opção de alternância para incluir o Mapeamento de usuários e grupos de IMS está ATIVADA por padrão. Com essa configuração, quando a Extração é executada nesse conjunto de migração, a Ferramenta de Mapeamento de Usuário será executada como parte da fase de Extração. Essa é a maneira recomendada para executar a fase de Extração da Ferramenta de transferência de conteúdo. Se essa alternância estiver desativada e/ou a Configuração de mapeamento do usuário não for criada, os mapeamentos de usuários e grupos serão ignorados durante a fase de Extração.
+   >A opção de alternância para incluir o Mapeamento de usuários e grupos do IMS está ATIVADA por padrão. Com essa configuração, quando a Extração for executada nesse conjunto de migração, a Ferramenta de mapeamento de usuários será executada como parte da fase de Extração. Essa é a maneira recomendada de executar a fase de Extração da ferramenta Transferência de conteúdo. Se esse botão estiver desativado e/ou a configuração de mapeamento do usuário não for criada, o mapeamento de usuários e grupos será ignorado durante a fase de Extração.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
-1. Para executar a fase de Extração, consulte [Execução da Ferramenta de Transferência de Conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
-
-
+1. Para executar a fase de Extração, consulte [Executar a ferramenta de transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
 
