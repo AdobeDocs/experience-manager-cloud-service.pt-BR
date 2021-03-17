@@ -2,7 +2,7 @@
 title: Verificar o status de um certificado SSL - Gerenciar certificados SSL
 description: Verificar o status de um certificado SSL - Gerenciar certificados SSL
 translation-type: tm+mt
-source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -32,6 +32,6 @@ Os clientes com ambientes que incluem configurações de CDN pré-existentes par
 >[!NOTE]
 >Para visualizar e gerenciar as configurações pré-existentes, elas devem ser adicionadas por meio da interface do usuário. Consulte [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obter mais detalhes.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
