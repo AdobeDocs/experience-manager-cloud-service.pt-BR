@@ -3,9 +3,9 @@ title: Metadados XMP
 description: Saiba mais sobre o padrão de metadados XMP (Plataforma de metadados extensível) para gerenciamento de metadados. Ele é usado pelo AEM como um formato padronizado para criação, processamento e intercâmbio de metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
+source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '979'
 ht-degree: 16%
 
 ---
@@ -72,7 +72,10 @@ XMP oferece a capacidade de adicionar uma propriedade `xml:lang` às propriedade
 
 ## Write-back de XMP a execuções {#xmp-writeback-to-renditions}
 
-Esse recurso de write-back de XMP em [!DNL Adobe Experience Manager Assets] replica as alterações de metadados nas representações do ativo original. Quando você altera os metadados de um ativo de [!DNL Assets] ou durante o upload do ativo, as alterações são armazenadas inicialmente no nó do ativo no repositório. No entanto, [!DNL Assets] não propaga automaticamente quaisquer alterações de metadados nas representações de um ativo. O recurso de write-back de XMP permite propagar as alterações de metadados para todas as representações ou representações específicas do ativo. As atualizações são armazenadas no nó de metadados na hierarquia de ativos. Esse recurso também incorpora as atualizações nos arquivos binários das representações. O recurso grava somente as propriedades de metadados que usam um namespace `jcr`.
+Esse recurso de write-back de XMP em [!DNL Adobe Experience Manager Assets] replica as alterações de metadados nas representações do ativo original.
+Ao alterar os metadados de um ativo de dentro do Assets ou ao fazer upload do ativo, as alterações são armazenadas inicialmente no nó de metadados na hierarquia de ativos.
+
+O recurso de write-back de XMP permite propagar as alterações de metadados para todas as representações ou representações específicas do ativo. O recurso grava somente as propriedades de metadados que usam `jcr` namespace, ou seja, uma propriedade chamada `dc:title` é gravada novamente, mas uma propriedade chamada `mytitle` não é.
 
 Por exemplo, considere um cenário em que modifique a propriedade [!UICONTROL Title] do ativo intitulado `Classic Leather` para `Nylon`.
 
