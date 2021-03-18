@@ -2,10 +2,10 @@
 title: Regras de qualidade do código personalizado - Cloud Services
 description: Regras de qualidade do código personalizado - Cloud Services
 translation-type: tm+mt
-source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3299'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -747,7 +747,7 @@ Os clientes que usam replicação inversa devem entrar em contato com o Adobe pa
 
 **Desde**: Versão 2021.2.0
 
-AEM bibliotecas de clientes podem conter recursos estáticos, como imagens e fontes. Conforme descrito em [Uso de pré-processadores](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), ao usar bibliotecas de clientes proxy, esses recursos estáticos devem estar contidos em uma pasta filho denominada resources para serem efetivamente referenciados nas instâncias de publicação.
+AEM bibliotecas de clientes podem conter recursos estáticos, como imagens e fontes. Conforme descrito em [Uso de pré-processadores](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), ao usar bibliotecas de clientes proxy, esses recursos estáticos devem estar contidos em uma pasta filho denominada resources para serem efetivamente referenciados nas instâncias de publicação.
 
 #### Código não compatível {#non-compliant-proxy-enabled}
 
@@ -793,7 +793,7 @@ Com a mudança para os microsserviços de ativos para processamento de ativos no
 
 **Desde**: Versão 2021.2.0
 
-Embora o uso de modelos estáticos tenha sido historicamente muito comum em projetos AEM, os modelos editáveis são altamente recomendados, pois fornecem mais flexibilidade e suporte a recursos adicionais não presentes em modelos estáticos. Mais informações podem ser encontradas em [Modelos de página - Editável](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). A migração de modelos estáticos para editáveis pode ser amplamente automatizada usando as [Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/).
+Embora o uso de modelos estáticos tenha sido historicamente muito comum em projetos AEM, os modelos editáveis são altamente recomendados, pois fornecem mais flexibilidade e suporte a recursos adicionais não presentes em modelos estáticos. Mais informações podem ser encontradas em [Modelos de página.](/help/implementing/developing/components/templates.md) A migração de modelos estáticos para editáveis pode ser amplamente automatizada usando as Ferramentas de Modernização do  [AEM](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### OakPAL - O uso de componentes de base herdados está desencorajado {#oakpal-usage-legacy}
 
