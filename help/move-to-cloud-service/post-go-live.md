@@ -2,9 +2,9 @@
 title: Fase Pós-ativação
 description: Fase Pós-ativação
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '233'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Como usuário, você pode acessar o CRX/DE Lite no ambiente de desenvolvimento, 
 >[!IMPORTANT]
 >A gravação em repositórios imutáveis, como `/libs` e `/apps` em tempo de execução, resultará em erros. Além disso, como cliente, você não terá acesso a ferramentas de desenvolvedor para ambientes de preparação e produção.
 
-Consulte [Desenvolvimento com o CRX/DE Lite](https://docs.adobe.com/help/pt-BR/experience-manager-65/developing/devtools/developing-with-crxde-lite.translate.html) para saber como desenvolver seu aplicativo do AEM usando o CRX/DE Lite.
+Consulte [Desenvolvimento com o CRX/DE Lite](/help/implementing/developing/tools/crxde.md) para saber como desenvolver seu aplicativo do AEM usando o CRX/DE Lite.
 
 ## Gerenciamento de logs {#managing-logs}
 
