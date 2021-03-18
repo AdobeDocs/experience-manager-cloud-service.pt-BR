@@ -2,17 +2,17 @@
 title: Configuração da estrutura de integração de tradução
 description: Saiba como configurar a Estrutura de integração de tradução para integrar com serviços de tradução de terceiros.
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Configurar a estrutura de integração de tradução {#configuring-the-translation-integration-framework}
 
-A Estrutura de integração de tradução integra-se aos serviços de tradução de terceiros para orquestrar a tradução de conteúdo do AEM. Envolve três etapas básicas.
+A Estrutura de integração de tradução integra-se aos serviços de tradução de terceiros para orquestrar a tradução de conteúdo AEM. Envolve três etapas básicas.
 
 1. [Conecte-se ao seu provedor de serviços de tradução.](#connecting-to-a-translation-service-provider)
 1. [Crie uma configuração da Estrutura de integração de tradução.](#creating-a-translation-integration-configuration)
@@ -22,12 +22,12 @@ Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, cons
 
 ## Conectar-se a um Provedor de Serviços de Tradução {#connecting-to-a-translation-service-provider}
 
-Crie uma configuração de nuvem que conecta o AEM ao seu provedor de serviços de tradução. O AEM inclui a capacidade de [se conectar ao Microsoft Translator](connect-ms-translator.md) por padrão.
+Crie uma configuração de nuvem que se conecta AEM seu provedor de serviços de tradução. AEM inclui a capacidade de [conectar ao Microsoft Translator](connect-ms-translator.md) por padrão.
 
-Os seguintes fornecedores de tradução fornecem uma implementação da API do AEM para projetos de tradução.
+Os seguintes fornecedores de tradução fornecem uma implementação da API de AEM para projetos de tradução.
 
 * [Microsoft Translator](connect-ms-translator.md)
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)  (Parceiro Premier do Adobe Exchange)
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)  (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memória](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
@@ -37,7 +37,6 @@ Os seguintes fornecedores de tradução fornecem uma implementação da API do A
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 
 Depois de instalar um pacote de conectores, você pode criar uma configuração de nuvem para o conector. Normalmente, você precisa fornecer suas credenciais para autenticação com o serviço de tradução. Para obter informações sobre como adicionar uma configuração de nuvem para o conector do Microsoft Translator, consulte [Integração com o Microsoft Translator](connect-ms-translator.md).
 
@@ -69,11 +68,11 @@ Uma única configuração da estrutura controla como traduzir o conteúdo e os a
 
 Para criar uma nova configuração de tradução:
 
-1. No menu de navegação global [clique ou toque em **Ferramentas -> Serviços em Nuvem - e Serviços em Nuvem de Tradução**.](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)
+1. No menu de navegação global [clique ou toque em **Ferramentas -> Cloud Services - e Cloud Services de tradução**.](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)
 1. Navegue até o local em que deseja criar a configuração na estrutura do conteúdo. Geralmente, isso é baseado em um site específico ou pode ser global.
 1. Forneça as seguintes informações nos campos e clique ou toque em **Create**:
    1. Selecione **Tipo de configuração** no menu suspenso.
-   1. Insira um **Title** para sua configuração. O **Title** identifica a configuração no console **Cloud Services**, bem como nas listas suspensas de propriedade da página.
+   1. Insira um **Title** para sua configuração. O **Título** identifica a configuração no console **Cloud Services**, bem como nas listas suspensas de propriedade da página.
    1. Opcionalmente, digite um **Name** para usar no nó do repositório que armazena a configuração.
 1. Na janela **Editar Configuração**, configure as propriedades nas guias **Sites** e **Assets** e clique ou toque em **Salvar e fechar**.
 
@@ -108,7 +107,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
 
 Para configurar a tradução das páginas de origem em outros idiomas, associe as páginas às seguintes configurações de nuvem:
 
-* A configuração da nuvem que conecta o AEM ao seu provedor de tradução.
+* A configuração da nuvem que se conecta AEM seu provedor de tradução.
 * A estrutura de integração de tradução que configura os detalhes da tradução.
 
 Observe que a configuração da nuvem da estrutura de integração de tradução identifica a configuração da nuvem a ser usada para conexão com o provedor de serviços. Quando você associa uma página de origem a uma configuração da nuvem de estrutura, a página deve ser associada à configuração da nuvem do provedor de serviços que a configuração da nuvem de estrutura usa.
@@ -122,7 +121,7 @@ Quando necessário, é possível substituir a associação em uma página descen
 Associe uma página ao provedor de tradução que você está usando para traduzir a página e as páginas descendentes.
 
 1. No console de sites, selecione a página que será configurada e clique ou toque em **Propriedades da exibição**.
-1. Clique ou toque na guia **Serviços da nuvem** .
+1. Clique ou toque na guia **Cloud Services**.
 1. Na lista suspensa **Adicionar configuração**, selecione a configuração.
 1. Clique ou toque em **Salvar e fechar**.
 
@@ -131,6 +130,6 @@ Associe uma página ao provedor de tradução que você está usando para traduz
 Associe uma página à Estrutura de integração de tradução que define como você deseja executar a tradução da página e das páginas descendentes.
 
 1. No console de sites, selecione a página que será configurada e clique ou toque em **Propriedades da exibição**.
-1. Clique ou toque na guia **Serviços da nuvem** .
+1. Clique ou toque na guia **Cloud Services**.
 1. Na lista suspensa **Adicionar configuração**, selecione a configuração.
 1. Clique ou toque em **Salvar e fechar**.
