@@ -2,10 +2,10 @@
 title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3229'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +102,7 @@ Após a mudança para a nova versão do aplicativo:
    * Configuração sensível ao contexto (qualquer item em `/conf`) (adicione, modifique, remova)
    * Scripts (pacotes podem acionar hooks de instalação em vários estágios do processo de instalação do pacote)
 
-É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author or install.publish em `/apps`. Detalhes a serem encontrados em [AEM documentação](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) sobre a reestruturação de projeto recomendada.
+É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author or install.publish em `/apps`. A reestruturação para refletir esta separação foi feita no AEM 6.5 e os detalhes sobre a reestruturação de projeto recomendada podem ser encontrados na documentação [AEM 6.5.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >Os pacotes de conteúdo são implantados em todos os tipos de ambiente (desenvolvimento, estágio, produção). Não é possível limitar a implantação a um ambiente específico. Esta limitação está em vigor para garantir a opção de uma execução de teste de execução automatizada. O conteúdo específico de um ambiente requer instalação manual pelo Gerenciador de pacotes.
@@ -111,7 +111,7 @@ Além disso, não há nenhum mecanismo para reverter as alterações no pacote d
 
 Qualquer pacote de terceiros incluído deve ser validado como sendo AEM como um Cloud Service Service compatível, caso contrário sua inclusão resultará em uma falha de implantação.
 
-Como mencionado acima, os clientes com bases de código existentes devem estar em conformidade com o exercício de reestruturação de repositório descrito em [AEM documentação](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html).
+Como mencionado acima, os clientes com bases de código existentes devem estar em conformidade com o exercício de reestruturação de repositório necessário pelas alterações de repositório 6.5 descritas na documentação [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## Repontar {#repoinit}
 
