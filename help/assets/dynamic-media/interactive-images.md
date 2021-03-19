@@ -1,10 +1,12 @@
 ---
 title: Imagens interativas
-description: Saiba como trabalhar com imagens interativas no Dynamic Media.
+description: Saiba como trabalhar com Imagens interativas no Dynamic Media.
+feature: Imagens interativas
+topic: Profissional
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4245'
+source-wordcount: '4249'
 ht-degree: 1%
 
 ---
@@ -36,8 +38,8 @@ O tutorial ajuda a ilustrar as etapas da integração de imagens interativas em 
 
 Etapas de imagens interativas:
 
-1. **(Opcional) Identificação de variáveis** de ponto de acesso. Se você usar os ativos do Adobe Experience Manager e o Dynamic Media independente, identifique as variáveis dinâmicas usadas na implementação da visualização rápida existente. Isso garante que você possa inserir dados de ponto de acesso ao criar a imagem interativa. Consulte [(Opcional) Identificação de variáveis de ponto de acesso](#optional-identifying-hotspot-variables).
-No entanto, se você usar o AEM Sites ou o AEM eCommerce, ou ambos, essa etapa não será necessária.
+1. **(Opcional) Identificação de variáveis** de ponto de acesso. Se você usa ativos Adobe Experience Manager e Dynamic Media independentes, identifique as variáveis dinâmicas usadas na implementação da Exibição rápida existente. Isso garante que você possa inserir dados de ponto de acesso ao criar a imagem interativa. Consulte [(Opcional) Identificação de variáveis de ponto de acesso](#optional-identifying-hotspot-variables).
+No entanto, se você usar o AEM Sites ou AEM eCommerce, ou ambos, essa etapa não será necessária.
 
 1. **(Opcional) Criação de uma predefinição** do visualizador de Imagem interativa . Personalize a imagem gráfica usada para representar pontos de acesso. Não é necessário criar sua própria predefinição do visualizador de Imagem interativa se você pretende usar a predefinição do visualizador de Imagem interativa pronta para uso chamada `Shoppable_Banner`.
 Consulte [(Opcional) Criação de uma predefinição do visualizador de Imagem interativa](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -50,8 +52,8 @@ Consulte [Adicionar pontos de acesso a um banner de imagem](#adding-hotspots-to-
 Consulte [Visualização de imagens interativas](#optional-previewing-interactive-images) - Opcional. Se desejar, você pode visualizar uma representação do banner que pode ser comprado e testar sua interatividade.
 Consulte [Publicação de ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de imagem interativos.
 
-1. **Adicionar uma imagem interativa ao seu site ou ao seu site no Experience Manager**. Se você usar o Sites ou o eCommerce, ou ambos, poderá adicionar imagens interativas diretamente a uma página da Web no Experience Manager. Arraste o componente Mídia interativa para a página. Consulte [Adicionar ativos de mídia dinâmica às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-Se você usa o Experience Manager Assets e o Dynamic Media independentes, copie o código incorporado no site. Em seguida, integre-o à visualização rápida existente. Consulte [Integração de uma imagem interativa com seu site](#integrating-an-interactive-image-with-your-website).
+1. **Adicionar uma imagem interativa ao seu site ou ao seu site no Experience Manager**. Se você usar o Sites ou o eCommerce, ou ambos, poderá adicionar imagens interativas diretamente a uma página da Web no Experience Manager. Arraste o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se você usa o Experience Manager Assets e o Dynamic Media independentes, copie o código incorporado no seu site. Em seguida, integre-o à visualização rápida existente. Consulte [Integração de uma imagem interativa com seu site](#integrating-an-interactive-image-with-your-website).
 Se você usar um WCM (Web Content Manager, Gerenciador de conteúdo da Web) de terceiros, integre o novo vídeo interativo à exibição Rápida existente usada em seu site. Consulte [Integração de uma imagem interativa com uma visualização rápida existente](#integrating-an-interactive-image-with-an-existing-quickview).
 
 ## (Opcional) Identificação de variáveis de ponto de acesso {#optional-identifying-hotspot-variables}
@@ -65,11 +67,11 @@ Se você usar um WCM (Web Content Manager, Gerenciador de conteúdo da Web) de t
 
 >
 >
-Se sua implementação do AEM usar o eCommerce, você poderá ignorar essa tarefa e prosseguir para a próxima tarefa.
+Se a implementação do AEM usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
 
 Comece identificando as variáveis dinâmicas usadas pela implementação do Quick view existente, para que você possa inserir dados de hotspot para criar a imagem interativa.
 
-Ao adicionar pontos de acesso a uma imagem de banner no Experience Manager Assets, atribua uma SKU (Stock Keeping Unit). O SKU é um identificador exclusivo para cada produto ou serviço distinto que você oferece. E adicione quaisquer variáveis opcionais extras a cada ponto de conexão. Essas variáveis de ponto de acesso são usadas posteriormente para corresponder pontos de acesso com conteúdo de exibição rápida.
+Quando você adiciona pontos de acesso a uma imagem de banner no Experience Manager Assets, atribua um SKU (Stock Keeping Unit). O SKU é um identificador exclusivo para cada produto ou serviço distinto que você oferece. E adicione quaisquer variáveis opcionais extras a cada ponto de conexão. Essas variáveis de ponto de acesso são usadas posteriormente para corresponder pontos de acesso com conteúdo de exibição rápida.
 
 É importante identificar corretamente o número e o tipo de variáveis a serem associadas aos dados do ponto de acesso. Cada ponto de acesso adicionado a uma imagem de banner deve ter informações suficientes para identificar inequivocamente o produto no sistema de back-end existente.
 
@@ -170,7 +172,7 @@ Agora você está pronto para fazer upload de um banner de imagem e adicionar po
 
 ## (Opcional) Criação de uma predefinição do visualizador de Imagem interativa {#optional-creating-an-interactive-image-viewer-preset}
 
-Você pode optar por usar a predefinição padrão do visualizador de Imagem interativa, pronta para uso, chamada `Shoppable_Banner`, que vem com os ativos AEM. Ou você pode criar sua própria predefinição personalizada do visualizador para uso com imagens interativas.
+Você pode optar por usar a predefinição padrão do visualizador de Imagem interativa e pronta para uso chamada `Shoppable_Banner` que vem com o AEM Assets. Ou você pode criar sua própria predefinição personalizada do visualizador para uso com imagens interativas.
 
 Ao criar uma predefinição personalizada do visualizador de Imagem interativa, você pode determinar a aparência dos pontos de acesso no banner de imagem. Como parte da criação da predefinição do visualizador, você pode optar por usar um gráfico de ponto de acesso de uma galeria de imagens predefinidas.
 
@@ -264,14 +266,14 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
    * Toque em **[!UICONTROL Vista Rápida]**.
 
       * Se você for um cliente do AEM Sites ou eCommerce, toque ou clique no ícone Seletor de produto (lupa) para abrir a página Selecionar produto . Toque no produto que deseja usar e toque em **Selecionar** no canto superior direito da página. Você é retornado à página Gerenciamento de pontos de acesso .
-      * Se você for *não* um cliente do Experience Manager Sites ou eCommerce
+      * Se você for *not* um cliente Experience Manager Sites ou eCommerce
 
          * Consulte [Identificação de variáveis de ponto de acesso](#optional-identifying-hotspot-variables); você deve definir essas variáveis.
          * Em seguida, insira manualmente o valor de SKU. No campo de texto Valor SKU , digite o SKU do produto. O valor SKU inserido preenche automaticamente a parte variável do modelo de Exibição rápida. Isso garante que o sistema saiba associar o ponto de acesso com toque à exibição rápida de um SKU específico.
          * (Opcional) Se houver outras variáveis na exibição Rápida usadas para identificar um produto, toque em **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável extra. Por exemplo, `category=Mens` é uma variável adicionada.
    * Toque em **[!UICONTROL Hiperlink]**.
 
-      * Se você for um cliente do Experience Manager Sites , toque no ícone Seletor de site (pasta). Navegue até um URL. O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.
+      * Se você for um cliente do Experience Manager Sites , toque no ícone do Seletor de site (pasta). Navegue até um URL. O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
       * Se você for um cliente independente, no campo de texto HREF, especifique o caminho do URL completo para uma página da Web vinculada.
 
    Certifique-se de especificar se deseja abrir o link em uma nova guia do navegador (padrão recomendado) ou na mesma guia.
@@ -309,7 +311,7 @@ Você pode usar a Visualização para ver uma representação de como a imagem i
 Quando estiver satisfeito com a imagem interativa, você poderá publicá-la.
 Consulte [Incorporando o visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
 Consulte [Vincular URLs ao aplicativo Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do AEM Sites.
-Consulte [Adicionar ativos do Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Consulte [Adicionar ativos Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **Visualização de imagens interativas**
 
@@ -326,7 +328,7 @@ Consulte [Publicação de ativos](/help/assets/dynamic-media/publishing-dynamicm
 
 Depois de fazer upload de uma imagem de banner, adicionar pontos de acesso a ela e publicar a imagem interativa, você estará pronto para adicioná-la à página do site.
 
-Se você for um cliente do AEM Sites, é possível adicionar a imagem interativa arrastando o componente Mídia interativa para a página. Consulte [Adicionar ativos do Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se você for um cliente do AEM Sites, é possível adicionar a imagem interativa, arrastando o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 Se você for um cliente independente do AEM Assets, poderá adicionar manualmente a imagem interativa ao seu site, conforme descrito nesta seção.
 
@@ -344,7 +346,7 @@ Usando o site de demonstração [como exemplo](https://marketing.adobe.com/resou
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-A integração é tão simples como remover a tag `IMG` e substituí-la pelo código incorporado copiado dos ativos AEM. Você pode ver que o resultado [mostra a imagem interativa que pode ser comprada na página com três pontos de acesso de círculo](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
+A integração é tão simples como remover a tag `IMG` e substituí-la pelo código incorporado copiado do AEM Assets. Você pode ver que o resultado [mostra a imagem interativa que pode ser comprada na página com três pontos de acesso de círculo](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 Como esse ponto, os pontos de acesso na imagem interativa que pode ser comprada do site de demonstração são somente para fins de exibição. Elas ainda não estão integradas às visualizações rápidas existentes.
@@ -376,7 +378,7 @@ A implementação do Quick View existente geralmente representa uma cadeia de a�
 
 Essas chamadas não representam necessariamente chamadas de API públicas independentes chamadas pela lógica da página da Web de uma etapa arbitrária. Em vez disso, é uma chamada encadeada em que cada próxima etapa está oculta na última fase (retorno de chamada) da etapa anterior.
 
-Quando a imagem interativa que pode ser comprada está substituindo a etapa 1 e parcialmente a etapa 2, um usuário toca em um ponto de acesso dentro da imagem que pode ser comprada. Essa interação do usuário é tratada pelo visualizador. O visualizador retorna um evento para a página da Web que contém todos os dados de ponto de acesso adicionados anteriormente aos ativos AEM.
+Quando a imagem interativa que pode ser comprada está substituindo a etapa 1 e parcialmente a etapa 2, um usuário toca em um ponto de acesso dentro da imagem que pode ser comprada. Essa interação do usuário é tratada pelo visualizador. O visualizador retorna um evento para a página da Web que contém todos os dados de ponto de acesso adicionados anteriormente ao AEM Assets.
 
 Nesse manipulador de evento, o código front-end faz o seguinte:
 
