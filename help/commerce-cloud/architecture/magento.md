@@ -3,7 +3,7 @@ title: Integração do AEM e da Magento usando a Commerce Integration Framework
 description: O AEM e a Magento se integram perfeitamente usando a Commerce Integration Framework (CIF). A CIF permite que o AEM acesse uma instância da Magento e estabeleça uma comunicação via GraphQL. Ela também permite que os autores do AEM usem seletores de produtos e categorias e o console de produtos para navegar pelos dados de produto e categoria obtidos da Magento sob demanda. Além disso, a CIF fornece uma loja pronta para uso que agiliza projetos de comércio.
 thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: 36e0fd66c9119571cde5c8791862abed8b552d5a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 88%
@@ -20,7 +20,7 @@ O AEM e a Magento se integram perfeitamente usando a Commerce Integration Framew
 >O GraphQL é usado atualmente em dois cenários (separados) no Adobe Experience Manager (AEM) como Cloud Service:
 >
 >* O AEM Commerce consome dados de uma plataforma de comércio via GraphQL.
->* [AEM Fragmentos de conteúdo trabalham em conjunto com a API AEM GraphQL (uma implementação personalizada, baseada no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos](/help/assets/content-fragments/graphql-api-content-fragments.md).
+>* [AEM Fragmentos de conteúdo trabalham com a API GraphQL AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos](/help/assets/content-fragments/graphql-api-content-fragments.md).
 
 
 ## Visão geral da arquitetura {#overview}
