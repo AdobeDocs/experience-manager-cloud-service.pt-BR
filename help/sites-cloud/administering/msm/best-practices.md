@@ -1,10 +1,12 @@
 ---
 title: Práticas recomendadas do MSM
-description: Saiba mais sobre as práticas recomendadas compiladas pelas equipes de engenharia e consultoria da Adobe para ajudar a ativar e executar o AEM Multi Site Manager.
+description: Conheça as práticas recomendadas compiladas pelas equipes de engenharia e consultoria de Adobe para ajudar a ativar e executar o AEM Multi Site Manager.
+feature: Gerenciamento de vários sites
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
@@ -20,7 +22,7 @@ O MSM é uma estrutura configurável para automatizar a implantação de conteú
 * **Personalize o quanto for necessário, mas o mínimo possível.** Embora o MSM suporte um alto grau de personalização (por exemplo, configurações de implementação), a prática recomendada para o desempenho, confiabilidade e atualização de seu site é minimizar a personalização.
 * Estabeleça um modelo de **governança** antecipadamente e treine os usuários de acordo, para garantir o sucesso. Uma prática recomendada do ponto de vista de governança é **minimizar a autoridade que os produtores de conteúdo local têm** para alocar/conectar conteúdo a outros usuários locais e suas respectivas Live Copies. Isso ocorre porque heranças encadeadas e não governadas podem aumentar significativamente a complexidade de uma estrutura MSM e comprometer seu desempenho e confiabilidade.
 * Quando existir um plano para sua estrutura, fluxos de conteúdo, automação e governança, **protótipo e teste completamente seu sistema** antes de iniciar uma implementação ativa.
-* Lembre-se de que os **Adobe Consulting e os principais Integradores de sistema** têm um planejamento de experiência profundo e implementam a automação de conteúdo com o MSM, para que possam ajudar você a começar a usar o projeto MSM e em toda a implementação.
+* Lembre-se de que **Adobe Consulting e os principais integradores de sistema** têm um planejamento de experiência profundo e implementam a automação de conteúdo com o MSM, para que eles possam ajudá-lo a começar a usar o projeto MSM e em toda a implementação.
 
 ## Fontes de Live Copy e configurações do Blueprint {#live-copy-sources-and-blueprint-configurations}
 
@@ -53,7 +55,7 @@ Para suportar o aninhamento de componentes de modo que os componentes adicionado
 
 ## Criar site {#create-site}
 
-Observe que o AEM tem duas abordagens principais para a criação de Live Copies:
+Observe que AEM tem duas abordagens principais para a criação de Live Copies:
 
 * Ao [criar uma Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-page) - Isso pode ser considerado a abordagem mais genérica, permitindo que você crie Live Copies de qualquer página. A estrutura de conteúdo de uma Live Copy corresponde exatamente à fonte.
 
@@ -80,7 +82,7 @@ Ao criar mestres em linguagem, lembre-se do seguinte:
    * O MSM permite cancelar a herança no nível da página e/ou do componente. Isso ajuda a impedir a substituição do conteúdo traduzido (de uma Live Copy, com conteúdo ainda não traduzido de um blueprint) na próxima implantação.
       * Alguns conectores de tradução de terceiros automatizam esse gerenciamento de heranças do MSM.
       * Consulte seu provedor de serviços de tradução para obter mais informações.
-      * Uma abordagem alternativa para criar e traduzir mestres de idioma é usar cópias de idioma juntamente com a estrutura de integração de tradução pronta para uso do AEM.
+      * Uma abordagem alternativa para criar e traduzir mestres de linguagem é usar cópias de idioma juntamente com AEM estrutura de integração de tradução pronta para uso.
 
 Para obter mais informações, consulte [Tradução de conteúdo para sites multilíngues](/help/sites-cloud/administering/translation/overview.md) e [Práticas recomendadas de tradução.](/help/sites-cloud/administering/translation/best-practices.md)
 
