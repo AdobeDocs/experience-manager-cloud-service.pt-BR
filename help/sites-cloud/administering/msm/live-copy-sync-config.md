@@ -1,10 +1,12 @@
 ---
 title: Configurar a sincronização da Live Copy
 description: Saiba mais sobre as poderosas opções de sincronização da Live Copy disponíveis e como você pode configurá-las e personalizá-las para atender às necessidades do seu projeto.
+feature: Gerenciamento de vários sites
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2358'
 ht-degree: 30%
 
 ---
@@ -41,7 +43,7 @@ Cada configuração de implementação usa um acionador de implementação que f
 
 ### Configurações de implementação {#rollout-configurations}
 
-A tabela a seguir lista as configurações de implementação fornecidas com o AEM prontas para uso. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação. Se as ações de configuração de implementação instaladas não atenderem aos requisitos, você poderá [criar uma nova configuração de implementação](#creating-a-rollout-configuration).
+A tabela a seguir lista as configurações de implementação fornecidas com AEM prontas para uso. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação. Se as ações de configuração de implementação instaladas não atenderem aos requisitos, você poderá [criar uma nova configuração de implementação](#creating-a-rollout-configuration).
 
 | Nome | Descrição | Acionar | [Ações de sincronização](#synchronization-actions) |
 |---|---|---|---|
@@ -54,7 +56,7 @@ A tabela a seguir lista as configurações de implementação fornecidas com o A
 
 ### Ações de sincronização {#synchronization-actions}
 
-A tabela a seguir lista as ações de sincronização fornecidas com o AEM prontas para uso.
+A tabela a seguir lista as ações de sincronização fornecidas com AEM prontas para uso.
 
 <!--If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).-->
 
@@ -91,9 +93,9 @@ The new rollout configuration is then available to you when configuring rollout 
 
 ### Excluir propriedades e tipos de nó da sincronização {#excluding-properties-and-node-types-from-synchronization}
 
-Você pode configurar vários serviços OSGi que suportam ações de sincronização correspondentes para que eles não afetem tipos de nó e propriedades específicos. Por exemplo, muitas propriedades e subnós relacionados ao funcionamento interno do AEM não devem ser incluídos em uma Live Copy. Somente o conteúdo relevante para o usuário da página deve ser copiado.
+Você pode configurar vários serviços OSGi que suportam ações de sincronização correspondentes para que eles não afetem tipos de nó e propriedades específicos. Por exemplo, muitas propriedades e subnós relacionados ao funcionamento interno de AEM não devem ser incluídos em uma Live Copy. Somente o conteúdo relevante para o usuário da página deve ser copiado.
 
-Ao trabalhar com o AEM, há vários métodos de gerenciamento das configurações desses serviços. Consulte [Configuração do OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+Ao trabalhar com AEM, há vários métodos de gerenciamento das configurações desses serviços. Consulte [Configuração do OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 A tabela a seguir lista as ações de sincronização para as quais você pode especificar os nós a serem excluídos. A tabela fornece os nomes dos serviços a serem configurados usando o Console na Web e o PID para configurar o usando um nó de repositório.
 
@@ -132,7 +134,7 @@ Por exemplo, se você quiser que o **Título** da página seja incluído nas alt
 
 Você pode configurar vários serviços OSGi que oferecem suporte às ações de sincronização correspondentes relacionadas à atualização de referências.
 
-Ao trabalhar com o AEM, há vários métodos de gerenciamento das configurações desses serviços. Consulte [Configuração do OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+Ao trabalhar com AEM, há vários métodos de gerenciamento das configurações desses serviços. Consulte [Configuração do OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 A tabela a seguir lista as ações de sincronização para as quais você pode especificar a atualização de referência. A tabela fornece os nomes dos serviços a serem configurados usando o Console na Web e o PID para configurar o usando um nó de repositório.
 
