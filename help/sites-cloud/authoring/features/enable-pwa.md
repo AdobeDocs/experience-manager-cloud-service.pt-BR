@@ -4,9 +4,9 @@ description: O AEM Sites permite que o autor de conteúdo ative recursos progres
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 54c4755207d84f6f11effea72e94e20027446ba9
+source-git-commit: 8fa74c2c575409659f482c669c4939a623ef6707
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Ativar recursos progressivos do aplicativo web {#enabling-pwa}
 
-Por meio de uma configuração simples, um autor de conteúdo agora pode ativar recursos de aplicativo da Web progressivo (PWA) para experiências criadas no AEM Sites.
+Por meio de uma configuração simples, um autor de conteúdo agora pode ativar recursos progressivos do aplicativo da Web (PWA) para experiências criadas no AEM Sites.
 
 >[!CAUTION]
 >
 >Este é um recurso avançado que requer:
 >
->* Conhecimento dos PWAs
+>* Conhecimento do PWA
 >* Conhecimento do seu site e estrutura de conteúdo
 >* Noções básicas sobre estratégias de armazenamento em cache
 >* Suporte da sua equipe de desenvolvimento
@@ -31,18 +31,18 @@ Antes de usar esse recurso, é recomendável discutir isso com a equipe de desen
 
 >[!NOTE]
 >
->Os recursos descritos neste documento estão planejados para serem disponibilizados com a [versão de março de 2021 do AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+>Os recursos descritos neste documento estão planejados para serem disponibilizados com a [versão de março de 2021 do AEM como Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
 
 ## Introdução {#introduction}
 
-[Os aplicativos web progressivos (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) permitem experiências semelhantes a aplicativos imersivos para sites do AEM, permitindo que eles sejam armazenados localmente na máquina do usuário e sejam acessíveis offline. Um usuário pode navegar em um site em qualquer lugar, mesmo perdendo uma conexão com a Internet. Os PWAs permitem experiências ininterruptas, mesmo que a rede seja perdida ou instável.
+[Os aplicativos web progressivos (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) permitem experiências semelhantes a aplicativos imersivos para sites de AEM, permitindo que eles sejam armazenados localmente na máquina do usuário e sejam acessíveis offline. Um usuário pode navegar em um site em qualquer lugar, mesmo perdendo uma conexão com a Internet. O PWA permite experiências ininterruptas, mesmo que a rede seja perdida ou instável.
 
-Em vez de exigir qualquer recodificação do site, um autor de conteúdo pode configurar as propriedades do PWA como uma guia adicional no [page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) de um site.
+Em vez de exigir qualquer recodificação do site, um autor de conteúdo pode configurar as propriedades do PWA como uma guia adicional nas [propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md) de um site.
 
 * Quando salva ou publicada, essa configuração aciona um manipulador de eventos que grava os [arquivos manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) e [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) que ativam os recursos do PWA no site.
 * Os mapeamentos Sling também são mantidos para garantir que o trabalhador de serviço seja disponibilizado a partir da raiz do aplicativo para ativar o conteúdo de proxy, permitindo recursos offline no aplicativo.
 
-Com o PWA, o usuário tem uma cópia local do site, proporcionando uma experiência semelhante ao aplicativo mesmo sem uma conexão com a Internet.
+Com o PWA, o usuário tem uma cópia local do site, dando uma experiência semelhante ao aplicativo mesmo sem uma conexão com a Internet.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Com o PWA, o usuário tem uma cópia local do site, proporcionando uma experiên
 
 ## Pré-requisitos {#prerequisites}
 
-Para usar os recursos do PWA no site, há dois requisitos para o ambiente do projeto:
+Para poder usar os recursos do PWA para o seu site, há dois requisitos para o ambiente do projeto:
 
 1. [Use ](#adjust-components) os Componentes principais para aproveitar esse recurso
 1. [Ajuste as regras do ](#adjust-dispatcher) dispatcher para expor os arquivos necessários
@@ -59,11 +59,11 @@ Essas são etapas técnicas que o autor precisará coordenar com a equipe de des
 
 ### Usar componentes principais {#adjust-components}
 
-Os Componentes principais versão 2.15.0 e posteriores são compatíveis com os recursos PWA dos sites do AEM. Como o AEMaaCS sempre inclui a versão mais recente dos Componentes principais, você pode aproveitar os recursos do PWA prontos para uso. Seu projeto AEMaaCS atende automaticamente a esse requisito.
+Os Componentes principais versão 2.15.0 e posteriores são compatíveis com os recursos do PWA dos sites de AEM. Como o AEMaaCS sempre inclui a versão mais recente dos Componentes principais, você pode aproveitar os recursos do PWA prontos para uso. Seu projeto AEMaaCS atende automaticamente a esse requisito.
 
 >[!NOTE]
 >
->A Adobe não recomenda usar os recursos PWA em componentes personalizados ou componentes [estendidos dos Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+>O Adobe não recomenda usar os recursos do PWA em componentes personalizados ou componentes não [estendidos dos Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
@@ -106,7 +106,7 @@ Dependendo do seu projeto, talvez você queira incluir diferentes tipos de exten
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 ```
 
-## Ativar o PWA para o seu site {#enabling-pwa-for-your-site}
+## Ativar o PWA para seu site {#enabling-pwa-for-your-site}
 
 Com [os pré-requisitos](#prerequisites) atendidos, é muito fácil para um autor de conteúdo habilitar os recursos do PWA para um site. Veja a seguir um esboço básico de como fazer isso. As opções individuais são detalhadas na seção [Opções detalhadas.](#detailed-options)
 
@@ -121,7 +121,7 @@ Com [os pré-requisitos](#prerequisites) atendidos, é muito fácil para um auto
 
    1. Carregue um ícone de png de 512x512 no DAM e faça referência a ele como o ícone do aplicativo.
 
-      ![Ícone Definir PWA](../assets/pwa-icon.png)
+      ![Ícone PWA](../assets/pwa-icon.png)
 
    1. Configure os caminhos que deseja que o trabalhador do serviço fique offline. Os caminhos típicos são:
       * `/content/<sitename>`
@@ -130,16 +130,16 @@ Com [os pré-requisitos](#prerequisites) atendidos, é muito fácil para um auto
       * Qualquer referência de fonte de terceiros
       * `/etc/clientlibs/<sitename>`
 
-      ![Definir caminhos offline do PWA](../assets/pwa-offline.png)
+      ![Definir caminhos de PWA offline](../assets/pwa-offline.png)
 
 
 1. Toque ou clique em **Salvar e fechar**.
 
 Seu site agora está configurado e você pode [instalá-lo como um aplicativo local.](#using-pwa-enabled-site)
 
-## Usar seu site habilitado para PWA {#using-pwa-enabled-site}
+## Usando seu site habilitado para PWA {#using-pwa-enabled-site}
 
-Agora que você configurou [o site para oferecer suporte ao PWA,](#enabling-pwa-for-your-site) é possível experimentá-lo por conta própria.
+Agora que você configurou [o site para oferecer suporte ao PWA,](#enabling-pwa-for-your-site) você pode experimentá-lo por conta própria.
 
 1. Acesse o site em um navegador compatível [.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
 1. Você verá um novo ícone na barra de endereços do navegador, indicando que o site pode ser instalado como um aplicativo local.
@@ -156,14 +156,14 @@ A seção a seguir fornece mais detalhes sobre as opções disponíveis ao [conf
 
 Essas configurações permitem que o site se comporte como um aplicativo nativo, tornando-o instalável na tela inicial do visitante e disponível offline.
 
-* **Habilitar PWA**  - esse é o principal botão de alternância para habilitar o PWA no site.
+* **Ativar PWA**  - Este é o botão principal para ativar o PWA para o site.
 * **URL de inicialização**  - esse é o  [URL de início preferido ](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) que o aplicativo abrirá quando o usuário carregar o aplicativo instalado localmente.
    * Pode ser qualquer caminho na estrutura do conteúdo.
    * Essa não precisa ser a raiz e geralmente é uma página de boas-vindas dedicada ao aplicativo.
    * Se esse URL for relativo, o URL de manifesto será usado como URL base para resolvê-lo.
    * Quando deixado em branco, o recurso usa o endereço da página da Web da qual o aplicativo Web foi instalado.
    * É recomendável definir um valor.
-* **Modo de exibição**  - Um aplicativo habilitado para PWA ainda é um site do AEM fornecido por meio de um navegador. [Essas opções de exibição ](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) definem como o navegador deve ser oculto ou apresentado de outra forma ao usuário no dispositivo local.
+* **Modo de exibição**  - Um aplicativo habilitado para PWA ainda é um site AEM fornecido por um navegador. [Essas opções de exibição ](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) definem como o navegador deve ser oculto ou apresentado de outra forma ao usuário no dispositivo local.
    * **Independente**  - O navegador é completamente oculto do usuário e parece ser um aplicativo nativo. Este é o valor padrão.
       * Com essa opção, a navegação do aplicativo deve ser totalmente possível por meio do conteúdo, usando links e componentes nas páginas do site, sem usar os controles de navegação do navegador.
    * **Navegador**  - O navegador é exibido como normalmente seria ao visitar o site.
@@ -189,14 +189,14 @@ Essas configurações permitem que o site se comporte como um aplicativo nativo,
 
 Essas configurações disponibilizam partes deste site offline e localmente no dispositivo do visitante. Isso permite controlar o cache do aplicativo da Web para otimizar as solicitações de rede e oferecer suporte a experiências offline.
 
-* **Estratégia de armazenamento em cache e frequência de atualização de conteúdo**  - Essa configuração define o modelo de armazenamento em cache para seu PWA.
+* **Estratégia de armazenamento em cache e frequência de atualização de conteúdo**  - Essa configuração define o modelo de armazenamento em cache para o seu PWA.
    * **Moderadamente**  -  [essa ](https://web.dev/stale-while-revalidate/) configuração é o caso da maioria dos sites e é o valor padrão.
       * Com essa configuração, o conteúdo visualizado pela primeira vez pelo usuário será carregado do cache e, enquanto o usuário estiver consumindo esse conteúdo, o restante do conteúdo no cache será revalidado.
    * **Frequentemente**  - Esse é o caso de sites que precisam de atualizações para serem muito rápidos, como leiloeiros.
       * Com essa configuração, o aplicativo buscará primeiro o conteúdo mais recente por meio da rede e, se não estiver disponível, retornará ao cache local.
    * **Raramente**  - Esse é o caso para sites que são quase estáticos, como páginas de referência.
       * Com essa configuração, o aplicativo procurará primeiro o conteúdo no cache e, se não estiver disponível, recorrerá à rede para recuperá-lo.
-* **Pré-armazenamento em cache de arquivos**  - Esses arquivos hospedados no AEM serão salvos no cache do navegador local quando o trabalhador do serviço estiver instalando e antes de serem usados. Isso garante que o aplicativo Web esteja totalmente funcional quando estiver offline.
+* **Pré-armazenamento em cache de arquivos**  - Esses arquivos hospedados em AEM serão salvos no cache do navegador local quando o trabalhador do serviço estiver instalando e antes de serem usados. Isso garante que o aplicativo Web esteja totalmente funcional quando estiver offline.
 * **Inclusões de caminhos**  - As solicitações de rede para os caminhos definidos são interceptadas e o conteúdo em cache é retornado de acordo com a estratégia de  **Cache configurada e a frequência de atualização** do conteúdo.
 * **Exclusões de cache**  - Esses arquivos nunca serão armazenados em cache, independentemente das configurações em Pré- **armazenamento em cache do** arquivo e Inclusões de  **caminho**.
 
@@ -204,23 +204,22 @@ Essas configurações disponibilizam partes deste site offline e localmente no d
 >
 >Sua equipe de desenvolvedores provavelmente tem informações importantes sobre como a configuração offline deve ser configurada.
 
-## Limitações e recomendações {#limitations-recommendations}
+## Limitações e Recommendations {#limitations-recommendations}
 
 Nem todos os recursos do PWA estão disponíveis para o AEM Sites. Essas são algumas limitações notáveis.
 
-* Um usuário deve navegar na página pelo menos uma vez antes de armazená-la em cache offline.
 * As páginas não são sincronizadas ou atualizadas automaticamente se o usuário não estiver usando o aplicativo.
 
-A Adobe também faz as seguintes recomendações ao implementar o PWA.
+O Adobe também faz as seguintes recomendações ao implementar o PWA.
 
 ### Minimize o número de recursos para pré-armazenar em cache. {#minimize-precache}
 
-A Adobe recomenda que você limite o número de páginas para pré-armazenar em cache.
+O Adobe aconselha a limitar o número de páginas a serem pré-armazenadas em cache.
 
 * Incorpore bibliotecas para reduzir o número de entradas para gerenciar ao pré-armazenar em cache.
 * Limite o número de variações de imagem para pré-cache.
 
-### Ative o PWA após a estabilização dos scripts do projeto e das folhas de estilos. {#pwa-stabilized}
+### Ative o PWA depois que os scripts do projeto e as folhas de estilos estiverem estabilizados. {#pwa-stabilized}
 
 As bibliotecas de clientes são entregues com a adição de um seletor de cache observando o seguinte padrão `lc-<checksumHash>-lc`. Toda vez que um dos arquivos (e dependências) que compõe uma alteração de biblioteca, esse seletor é alterado. Se você listou uma biblioteca do cliente para ser pré-armazenada em cache pelo trabalhador do serviço e deseja fazer referência a uma nova versão, recupere e atualize manualmente a entrada. Como resultado, recomendamos que você configure o site para ser um PWA depois que os scripts do projeto e as folhas de estilos estiverem estabilizados.
 
@@ -230,6 +229,6 @@ O Componente de imagem dos Componentes principais do AEM determina em um dos fro
 
 Ao configurar o pré-cache, o usuário precisa listar todas as variações de caminho que podem ser buscadas. Essas variações são compostas de parâmetros como qualidade e largura. É fortemente aconselhável reduzir o número destas variações para um máximo de três - pequenas, médias e grandes. Você pode fazer isso através da caixa de diálogo da política de conteúdo do [Componente de imagem.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
 
-Se não for configurado com cuidado, o consumo de memória e de rede pode afetar seriamente o desempenho do PWA. Além disso, se você pretende realizar o pré-cache, por exemplo, 50 imagens, e tiver 3 larguras por imagem, o usuário que mantém o site terá que manter uma lista de até 150 entradas na seção pré-cache do PWA das propriedades de página.
+Se não for configurado com cuidado, o consumo de memória e de rede pode afetar seriamente o desempenho do seu PWA. Além disso, se você pretende realizar o pré-cache, digamos, 50 imagens, e tiver 3 larguras por imagem, o usuário que mantém o site terá que manter uma lista de até 150 entradas na seção pré-cache do PWA das propriedades da página.
 
-A Adobe também aconselha que você configure seu site para ser um PWA após a estabilização do uso de imagens no projeto.
+O Adobe também aconselha você a configurar seu site como um PWA após a estabilização do uso de imagens do projeto.
