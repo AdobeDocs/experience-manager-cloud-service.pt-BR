@@ -1,22 +1,23 @@
 ---
-title: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2020.10.0
-description: Notas de versão do Cloud Manager no AEM como Cloud Service versão 2020.10.0
+title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2020.10.0
+description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2020.10.0
+feature: Informações da versão
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 48%
 
 ---
 
 
-# Notas de versão do Cloud Manager no Adobe Experience Manager como Cloud Service 2020.10.0 {#release-notes}
+# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager em AEM como Cloud Service 2020.10.0.
+Esta página descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2020.10.0.
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager no AEM como Cloud Service 2020.10.0 é 1 de outubro de 2020.
+A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2020.10.0 é 1 de outubro de 2020.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -26,12 +27,12 @@ A data de lançamento do Cloud Manager no AEM como Cloud Service 2020.10.0 é 1 
 
 * A página de ambientes hibernados agora mostra um status discreto no Cloud Manager.
 
-* O container de compilação do Cloud Manager agora oferece suporte à compilação de projetos usando Java 8 ou Java 11. O suporte para Java 11 é fornecido pelo sistema de cadeias de ferramentas Maven.
+* O contêiner de build do Cloud Manager agora é compatível com a compilação de projetos usando o Java 8 ou o Java 11. O suporte para o Java 11 é fornecido pelo sistema de cadeias de ferramentas Maven.
 
 * O número de variáveis por ambiente aumentou para 200.
 
-* A placa de Ambiente na página Visão geral agora lista até três ambientes. Os usuários podem selecionar o botão **Mostrar tudo** para navegar até a página de resumo do Ambiente para visualização de uma tabela com uma lista completa de ambientes.
-Consulte [Visualizando Ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
+* O cartão Environment na página Visão geral agora listará até três ambientes. Os usuários podem selecionar o botão **Mostrar tudo** para navegar até a página de resumo do ambiente para exibir uma tabela com uma lista completa de ambientes.
+Consulte [Ambiente de visualização](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
 
 
 ### Correções de erros {#bug-fixes-cloud-manager}
@@ -40,7 +41,7 @@ Consulte [Visualizando Ambiente](/help/implementing/cloud-manager/manage-environ
 
 * O link direto do Cloud Manager para o Console do desenvolvedor não exibia a opção de desibernar/hibernar para ambientes do Programa de sandbox.
 
-* Os botões Cancelar e Salvar na página Edição de Pipeline de Não Produção nem sempre estavam visíveis.
+* Os botões Cancelar e Salvar na página Editar pipeline de não produção nem sempre estavam visíveis.
 
 * Certas falhas no processo de qualidade do código podiam resultar na geração incorreta do arquivo de log.
 
