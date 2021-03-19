@@ -1,10 +1,11 @@
 ---
 title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
+feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4119'
+source-wordcount: '4120'
 ht-degree: 9%
 
 ---
@@ -12,28 +13,28 @@ ht-degree: 9%
 
 # Dispatcher na nuvem {#Dispatcher-in-the-cloud}
 
-## Configuração e teste do Apache e do Dispatcher {#apache-and-dispatcher-configuration-and-testing}
+## Configuração e teste do Apache e Dispatcher {#apache-and-dispatcher-configuration-and-testing}
 
-Esta seção descreve como estruturar o AEM como um Cloud Service Apache e configurações do Dispatcher, bem como como como validá-lo e executá-lo localmente antes de implantá-lo em ambientes do Cloud. Também descreve a depuração em ambientes da Cloud. Para obter informações adicionais sobre o Dispatcher, consulte a [AEM documentação do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.html).
+Esta seção descreve como estruturar o AEM como um Cloud Service Apache e configurações do Dispatcher, bem como como como validá-lo e executá-lo localmente antes de implantá-lo em ambientes do Cloud. Também descreve a depuração em ambientes do Cloud. Para obter informações adicionais sobre o Dispatcher, consulte a [AEM documentação do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
->Os usuários do Windows precisarão usar o Windows 10 Professional ou outras distribuições compatíveis com o Docker. Este é um pré-requisito para executar e depurar o Dispatcher em um computador local. As seções abaixo incluem comandos usando as versões Mac ou Linux do SDK, mas o SDK do Windows pode ser usado de maneira semelhante.
+>Os usuários do Windows precisarão usar o Windows 10 Professional ou outras distribuições compatíveis com o Docker. Isso é um pré-requisito para executar e depurar o Dispatcher em um computador local. As seções abaixo incluem comandos usando as versões Mac ou Linux do SDK, mas o SDK do Windows pode ser usado de maneira semelhante.
 
 ## Ferramentas do Dispatcher {#dispatcher-sdk}
 
-As Ferramentas do Dispatcher fazem parte do AEM geral como um SDK do Cloud Service e fornecem:
+As Ferramentas do Dispatcher fazem parte do AEM geral como um Cloud Service SDK e fornecem:
 
-* Uma estrutura de arquivos baunilha que contém os arquivos de configuração a serem incluídos em um projeto maven para o dispatcher.
-* Ferramenta para clientes validarem se a configuração do dispatcher inclui apenas AEM como diretivas suportadas pelo Cloud Service.        Além disso, a ferramenta também valida que a sintaxe está correta para que o apache possa ser start com êxito.
+* Uma estrutura de arquivo baunilha contendo os arquivos de configuração a serem incluídos em um projeto maven para o dispatcher.
+* Ferramentas para clientes validarem se a configuração do dispatcher inclui apenas AEM como diretivas suportadas por Cloud Service.        Além disso, a ferramenta também valida que a sintaxe está correta para que o apache possa ser iniciado com êxito.
 * Uma imagem do Docker que exibe o dispatcher localmente.
 
 ## Download e extração das ferramentas {#extracting-the-sdk}
 
-As Ferramentas do Dispatcher, parte do [AEM como um Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), podem ser baixadas de um arquivo zip no portal [Distribuição de software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Qualquer nova configuração disponível na nova versão das Ferramentas do dispatcher pode ser usada para implantar em ambientes da Cloud que executam essa versão do AEM na Cloud ou superior.
+As Ferramentas do Dispatcher, parte do [AEM como um Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), podem ser baixadas de um arquivo zip no portal [Distribuição de software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Qualquer nova configuração disponível nessa nova versão das Ferramentas do dispatcher pode ser usada para implantar em ambientes do Cloud que executam essa versão de AEM na Cloud ou posterior.
 
 Descompacte o SDK, que agrupa as Ferramentas do Dispatcher para macOS/Linux e Windows.
 
-**Para macOS/Linux**, torne o artefato da ferramenta dispatcher executável e execute-o. Ele extrairá automaticamente os arquivos das Ferramentas do Dispatcher abaixo do diretório no qual você os armazenou (onde `version` é a versão das Ferramentas do dispatcher).
+**Para macOS/Linux**, torne o artefato da ferramenta dispatcher executável e execute-o. Ele extrairá automaticamente os arquivos das Ferramentas do Dispatcher sob o diretório em que você o armazenou (onde `version` é a versão das Ferramentas do Dispatcher).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -44,9 +45,9 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 **No Windows**, extraia o arquivo zip Dispatcher Tool.
 
-## Estrutura do arquivo {#file-structure}
+## Estrutura de arquivo {#file-structure}
 
-A estrutura da subpasta dispatcher do projeto está descrita abaixo e deve ser copiada para a pasta do despachante do projeto maven:
+A estrutura da subpasta do dispatcher do projeto é descrita abaixo e deve ser copiada para a pasta do dispatcher do projeto maven:
 
 ```bash
 ./
@@ -87,15 +88,15 @@ A estrutura da subpasta dispatcher do projeto está descrita abaixo e deve ser c
         └── virtualhosts.any
 ```
 
-Abaixo está uma explicação de arquivos importantes que podem ser modificados:
+Abaixo está uma explicação de arquivos notáveis que podem ser modificados:
 
 **Arquivos personalizáveis**
 
-Os arquivos a seguir são personalizáveis e serão transferidos para a instância da Cloud na implantação:
+Os arquivos a seguir são personalizáveis e serão transferidos para sua instância do Cloud na implantação:
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Você pode ter um ou mais desses arquivos. Elas contêm `<VirtualHost>` entradas que correspondem aos nomes de host e permitem que o Apache gerencie cada tráfego de domínio com regras diferentes. Os arquivos são criados no diretório `available_vhosts` e ativados com um link simbólico no diretório `enabled_vhosts`. Nos arquivos `.vhost`, outros arquivos, como regravações e variáveis, serão incluídos.
+Você pode ter um ou mais desses arquivos. Eles contêm `<VirtualHost>` entradas que correspondem aos nomes de host e permitem que o Apache manipule cada tráfego de domínio com regras diferentes. Os arquivos são criados no diretório `available_vhosts` e ativados com um link simbólico no diretório `enabled_vhosts`. Nos arquivos `.vhost`, outros arquivos como regravações e variáveis serão incluídos.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -103,7 +104,7 @@ Este arquivo é incluído de dentro de seus arquivos `.vhost`. Ele tem um conjun
 
 >[!NOTE]
 >
->No momento, um único arquivo de regravação deve ser usado em vez de arquivos específicos do site. Esse tamanho de arquivo deve ser inferior a 1 MB.
+>No momento, um único arquivo de reescrita deve ser usado em vez de arquivos específicos do site. Esse tamanho de arquivo deve ser inferior a 1 MB.
 
 * `conf.d/variables/custom.vars`
 
@@ -111,15 +112,15 @@ Este arquivo é incluído de dentro de seus arquivos `.vhost`. Você pode coloca
 
 * `conf.d/variables/global.vars`
 
-Este arquivo é incluído de dentro do arquivo `dispatcher_vhost.conf`. Você pode alterar o nível do despachante e regravar o log neste arquivo.
+Este arquivo está incluído de dentro do arquivo `dispatcher_vhost.conf`. Você pode alterar seu dispatcher e reescrever o nível de log neste arquivo.
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Você pode ter um ou mais desses arquivos e eles contêm farm para corresponder aos nomes de host e permitir que o módulo do dispatcher manipule cada farm com regras diferentes. Os arquivos são criados no diretório `available_farms` e ativados com um link simbólico no diretório `enabled_farms`. Nos arquivos `.farm`, outros arquivos, como filtros, regras de cache e outros, serão incluídos.
+Você pode ter um ou mais desses arquivos e eles contêm farms para corresponder aos nomes de host e permitir que o módulo Dispatcher manipule cada farm com regras diferentes. Os arquivos são criados no diretório `available_farms` e ativados com um link simbólico no diretório `enabled_farms`. Nos arquivos `.farm`, outros arquivos como filtros, regras de cache e outros serão incluídos.
 
 * `conf.dispatcher.d/cache/rules.any`
 
-Este arquivo é incluído de dentro de seus arquivos `.farm`. Especifica preferências de cache.
+Este arquivo é incluído de dentro de seus arquivos `.farm`. Especifica preferências de armazenamento em cache.
 
 * `conf.dispatcher.d/clientheaders/clientheaders.any`
 
@@ -127,19 +128,19 @@ Este arquivo é incluído de dentro de seus arquivos `.farm`. Especifica quais c
 
 * `conf.dispatcher.d/filters/filters.any`
 
-Este arquivo é incluído de dentro de seus arquivos `.farm`. Ele tem um conjunto de regras que mudam qual tráfego deve ser filtrado e não chegar ao backend.
+Este arquivo é incluído de dentro de seus arquivos `.farm`. Ele tem um conjunto de regras que alteram o tráfego que deve ser filtrado e não para o back-end.
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-Este arquivo é incluído de dentro de seus arquivos `.farm`. Ele tem uma lista de nomes de host ou caminhos de URI que devem ser correspondidos por correspondências de localizações. Isso determina qual backend usar para servir uma solicitação.
+Este arquivo é incluído de dentro de seus arquivos `.farm`. Ela tem uma lista de nomes de host ou caminhos de URI a serem correspondidos pela correspondência glob. Isso determina qual back-end usar para servir uma solicitação.
 
-Os arquivos acima fazem referência aos arquivos de configuração imutáveis listados abaixo. As alterações nos arquivos imutáveis não serão processadas pelos despachantes nos ambientes da Cloud.
+Os arquivos acima fazem referência aos arquivos de configuração imutáveis listados abaixo. As alterações nos arquivos imutáveis não serão processadas pelos dispatchers nos ambientes do Cloud.
 
 **Arquivos de configuração imutáveis**
 
-Esses arquivos fazem parte da estrutura básica e aplicam padrões e práticas recomendadas. Os arquivos são considerados imutáveis porque modificá-los ou excluí-los localmente não afetarão sua implantação, pois não serão transferidos para a instância da Cloud.
+Esses arquivos fazem parte da estrutura básica e impõem padrões e práticas recomendadas. Os arquivos são considerados imutáveis porque modificá-los ou excluí-los localmente não terá impacto na implantação, pois não serão transferidos para a instância do Cloud.
 
-É recomendável que os arquivos acima façam referência aos arquivos imutáveis listados abaixo, seguidos de declarações ou substituições adicionais. Quando a configuração do dispatcher for implantada em um ambiente de nuvem, a versão mais recente dos arquivos imutáveis será usada, independentemente da versão usada no desenvolvimento local.
+É recomendável que os arquivos acima façam referência aos arquivos imutáveis listados abaixo, seguidos de quaisquer instruções ou substituições adicionais. Quando a configuração do dispatcher é implantada em um ambiente de nuvem, a versão mais recente dos arquivos imutáveis será usada, independentemente da versão usada no desenvolvimento local.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -147,35 +148,35 @@ Contém um host virtual de amostra. Para seu próprio host virtual, crie uma có
 
 * `conf.d/dispatcher_vhost.conf`
 
-Parte da estrutura base, usada para ilustrar como seus hosts virtuais e variáveis globais são incluídos.
+Parte da estrutura base, usada para ilustrar como os hosts virtuais e as variáveis globais são incluídos.
 
 * `conf.d/rewrites/default_rewrite.rules`
 
-Regras padrão de regravação adequadas para um projeto padrão. Se precisar de personalização, modifique `rewrite.rules`. Na personalização, você ainda pode incluir as regras padrão primeiro, se elas se ajustarem às suas necessidades.
+Regras padrão de reescrita adequadas para um projeto padrão. Se precisar de personalização, modifique `rewrite.rules`. Na personalização, ainda é possível incluir as regras padrão primeiro, se elas atenderem às suas necessidades.
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
-Contém um farm de despachantes de amostra. Para seu próprio farm, crie uma cópia desse arquivo, personalize-o, vá para `conf.d/enabled_farms` e crie um link simbólico para sua cópia personalizada.
+Contém um farm de dispatchers de amostra. Para seu próprio farm, crie uma cópia deste arquivo, personalize-o, vá para `conf.d/enabled_farms` e crie um link simbólico para sua cópia personalizada.
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
-Parte da estrutura básica é gerada na inicialização. Você é **necessário** para incluir esse arquivo em cada farm definido, na seção `cache/allowedClients`.
+Parte da estrutura base é gerada na inicialização. Você é **necessário** para incluir esse arquivo em cada farm definido, na seção `cache/allowedClients`.
 
 * `conf.dispatcher.d/cache/default_rules.any`
 
-Regras de cache padrão adequadas para um projeto padrão. Se precisar de personalização, modifique `conf.dispatcher.d/cache/rules.any`. Na personalização, você ainda pode incluir as regras padrão primeiro, se elas se ajustarem às suas necessidades.
+Regras de cache padrão adequadas para um projeto padrão. Se precisar de personalização, modifique `conf.dispatcher.d/cache/rules.any`. Na personalização, ainda é possível incluir as regras padrão primeiro, se elas atenderem às suas necessidades.
 
 * `conf.dispatcher.d/clientheaders/default_clientheaders.any`
 
-Cabeçalhos de solicitação padrão para encaminhar ao backend, adequados para um projeto padrão. Se precisar de personalização, modifique `clientheaders.any`. Na personalização, você ainda pode incluir os cabeçalhos de solicitação padrão primeiro, se eles se ajustarem às suas necessidades.
+Cabeçalhos de solicitação padrão para encaminhar ao backend, adequados para um projeto padrão. Se precisar de personalização, modifique `clientheaders.any`. Na personalização, você ainda pode incluir os cabeçalhos de solicitação padrão primeiro, se eles atenderem às suas necessidades.
 
 * `conf.dispatcher.d/dispatcher.any`
 
-Parte da estrutura básica, usada para ilustrar como as fazendas de despachantes estão incluídas.
+Parte da estrutura base, usada para ilustrar como os farms de dispatcher são incluídos.
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
-Filtros padrão adequados para um projeto padrão. Se precisar de personalização, modifique `filters.any`. Na personalização, você ainda pode incluir os filtros padrão primeiro, se eles se ajustarem às suas necessidades.
+Filtros padrão adequados para um projeto padrão. Se precisar de personalização, modifique `filters.any`. Na personalização, você ainda pode incluir os filtros padrão primeiro, se eles atenderem às suas necessidades.
 
 * `conf.dispatcher.d/renders/default_renders.any`
 
@@ -183,21 +184,21 @@ Parte da estrutura base, esse arquivo é gerado na inicialização. Você é **n
 
 * `conf.dispatcher.d/virtualhosts/default_virtualhosts.any`
 
-Globalização de host padrão adequada para um projeto padrão. Se precisar de personalização, modifique `virtualhosts.any`. Na personalização, você não deve incluir a globalização padrão do host, pois ela corresponde a **cada** solicitação recebida.
+Globalização de host padrão adequada para um projeto padrão. Se precisar de personalização, modifique `virtualhosts.any`. Na personalização, você não deve incluir a globalização de host padrão, pois ela corresponde a **cada** solicitação recebida.
 
 >[!NOTE]
 >
->O AEM como um arquétipo de Cloud Service maven gerará a mesma estrutura do arquivo de configuração do dispatcher.
+>O AEM como um arquétipo de maven Cloud Service gerará a mesma estrutura de arquivo de configuração do dispatcher.
 
-As seções abaixo descrevem como validar a configuração localmente para que ela possa passar pela porta de qualidade associada no Cloud Manager ao implantar uma versão interna.
+As seções abaixo descrevem como validar a configuração localmente para que possa passar a porta de qualidade associada no Cloud Manager ao implantar uma versão interna.
 
-## Validação local de diretivas suportadas na configuração do Dispatcher {#local-validation-of-dispatcher-configuration}
+## Validação local de diretivas compatíveis na configuração do Dispatcher {#local-validation-of-dispatcher-configuration}
 
-A ferramenta de validação está disponível no SDK em `bin/validator` como um binário Mac OS, Linux ou Windows, permitindo que os clientes executem a mesma validação que o Cloud Manager executará ao criar e implantar uma versão.
+A ferramenta de validação está disponível no SDK em `bin/validator` como um binário do Mac OS, Linux ou Windows, permitindo que os clientes executem a mesma validação que o Cloud Manager executará ao criar e implantar uma versão.
 
 É invocado como: `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-A ferramenta valida que a configuração do dispatcher está usando as diretivas apropriadas suportadas pela AEM como um serviço da Cloud, verificando todos os arquivos com o padrão `conf.d/enabled_vhosts/*.vhost`. As diretivas permitidas nos arquivos de configuração do Apache podem ser listadas executando o comando de  lista de permissões do validador:
+A ferramenta valida que a configuração do dispatcher está usando as diretivas apropriadas compatíveis com o AEM as a Cloud Service, digitalizando todos os arquivos com o padrão `conf.d/enabled_vhosts/*.vhost`. As diretivas permitidas nos arquivos de configuração do Apache podem ser listadas executando o comando de  lista de permissões do validador:
 
 ```
 $ validator allowlist
@@ -209,7 +210,7 @@ Allowlisted directives:
   
 ```
 
-A tabela abaixo mostra os módulos de cache suportados:
+A tabela abaixo mostra os módulos apache suportados:
 
 | Nome do módulo | Página de referência |
 |---|---|
@@ -235,16 +236,16 @@ A tabela abaixo mostra os módulos de cache suportados:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Os clientes não podem adicionar módulos arbitrários, no entanto, módulos adicionais podem ser considerados para inclusão no produto no futuro. Os clientes podem encontrar a lista de diretivas disponíveis para uma determinada versão do Dispatcher executando o comando de  lista de permissões do validador no SDK, conforme descrito acima.
+Os clientes não podem adicionar módulos arbitrários, no entanto, módulos adicionais podem ser considerados para inclusão futura no produto. Os clientes podem encontrar a lista de diretivas disponíveis para uma determinada versão do Dispatcher executando o comando de  lista de permissões do validador no SDK, conforme descrito acima.
 
-A lista de permissões contém uma lista de diretivas do Apache que são permitidas em uma configuração do cliente. Se uma diretiva não for incluir na lista de permissões, a ferramenta registrará um erro e retornará um código de saída diferente de zero. Se nenhuma  lista de permissões for fornecida na linha de comando (que é a forma como deve ser chamada), a ferramenta usará uma  de lista de permissões padrão que o Gerenciador de nuvem usará para validação antes de implantar nos ambientes da Cloud.
+A  lista de permissões contém uma lista de diretivas Apache que são permitidas em uma configuração de cliente. Se uma diretiva não for incluir na lista de permissões, a ferramenta registrará um erro e retornará um código de saída diferente de zero. Se nenhuma  lista de permissões for fornecida na linha de comando (que é a forma como ela deve ser invocada), a ferramenta usará uma  de lista de permissões padrão que o Cloud Manager usará para validação antes de implantar em ambientes do Cloud.
 
-Além disso, verifica ainda mais todos os arquivos com o padrão `conf.dispatcher.d/enabled_farms/*.farm` e verifica se:
+Além disso, ele verifica todos os arquivos com o padrão `conf.dispatcher.d/enabled_farms/*.farm` e verifica se:
 
-* Não existe uma regra de filtro que use permite via `/glob` (consulte [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) para obter mais detalhes)
+* Não existe uma regra de filtro que use o permite via `/glob` (consulte [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) para obter mais detalhes)
 * Nenhum recurso administrativo é exposto. Por exemplo, acesso a caminhos como `/crx/de or /system/console`.
 
-Quando executado em seu artefato maven ou em seu subdiretório `dispatcher/src`, ele reportará falhas de validação:
+Quando executado em seu artefato maven ou subdiretório `dispatcher/src`, ele reportará falhas de validação:
 
 ```
 $ validator full dispatcher/src
@@ -255,24 +256,24 @@ Cloud manager validator 1.0.4
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-Observe que a ferramenta de validação relata somente o uso proibido das diretivas Apache que não foram incluir na lista de permissões. Ele não relata problemas sintáticos ou semânticos com a configuração do Apache, pois essas informações só estão disponíveis para os módulos do Apache em um ambiente em execução.
+Observe que a ferramenta de validação relata apenas o uso proibido das diretivas Apache que não foram incluir na lista de permissões. Ele não relata problemas sintáticos ou semânticos com a configuração do Apache, pois essas informações só estão disponíveis para os módulos Apache em um ambiente em execução.
 
-Apresentamos abaixo técnicas de solução de problemas para depurar erros comuns de validação que são exibidos pela ferramenta:
+Apresentamos abaixo as técnicas de solução de problemas para depurar erros comuns de validação que são gerados pela ferramenta:
 
 **não é possível localizar uma  `conf.dispatcher.d` subpasta no arquivo**
 
 Seu arquivo deve conter as pastas `conf.d` e `conf.dispatcher.d`. Observe que você **não deve**
 usar o prefixo `etc/httpd` em seu arquivo.
 
-**não foi possível localizar nenhum farm em`conf.dispatcher.d/enabled_farms`**
+**não é possível localizar nenhum farm em`conf.dispatcher.d/enabled_farms`**
 
-Seus farm habilitados devem estar localizados na subpasta mencionada.
+Os farms ativados devem estar localizados na subpasta mencionada.
 
-**o arquivo incluído (...) deve ser nomeado: ...**
+**arquivo incluído (..) deve ser nomeado como: ...**
 
 Há duas seções na configuração do farm que **devem** incluir um
 arquivo específico: `/renders` e `/allowedClients` na seção `/cache`. Esses
-as seções devem ter a seguinte aparência:
+As seções devem ter a seguinte aparência:
 
 ```
 /renders {
@@ -290,7 +291,7 @@ e:
 
 **arquivo incluído no local desconhecido: ...**
 
-Há quatro seções na configuração do farm nas quais você pode incluir seu próprio arquivo: `/clientheaders`, `filters`, `/rules` na seção `/cache` e `/virtualhosts`. Os arquivos incluídos precisam ser nomeados da seguinte forma:
+Há quatro seções na configuração do farm em que você pode incluir seu próprio arquivo: `/clientheaders`, `filters`, `/rules` na seção `/cache` e `/virtualhosts`. Os arquivos incluídos precisam ser nomeados da seguinte maneira:
 
 | Seção | Incluir nome de arquivo |
 |------------------|--------------------------------------|
@@ -301,9 +302,9 @@ Há quatro seções na configuração do farm nas quais você pode incluir seu p
 
 Como alternativa, inclua a versão **padrão** desses arquivos, cujos nomes são anexados à palavra `default_`, por exemplo, `../filters/default_filters.any`.
 
-**inclua a declaração em (...), fora de qualquer local conhecido: ...**
+**inclua instrução em (..), fora de qualquer local conhecido: ...**
 
-Além das seis seções mencionadas nos parágrafos anteriores, você não é permitido
+Além das seis seções mencionadas nos parágrafos acima, você não é permitido
 para usar a instrução `$include`, por exemplo, o seguinte geraria este erro:
 
 ```
@@ -314,12 +315,12 @@ para usar a instrução `$include`, por exemplo, o seguinte geraria este erro:
 
 **clientes/renderizadores permitidos não são incluídos de: ...**
 
-Esse erro é gerado quando você não especifica um include para `/renders` e `/allowedClients` na seção `/cache`. Consulte a
-**ficheiro incluído (...) tem de ser nomeado: ...** para obter mais informações.
+Esse erro é gerado quando você não especifica uma inclusão para `/renders` e `/allowedClients` na seção `/cache`. Consulte a
+**arquivo incluído (...) deve ser nomeado como: ...** para obter mais informações.
 
-**o filtro não deve usar o padrão de bloqueio para permitir solicitações**
+**o filtro não deve usar o padrão glob para permitir solicitações**
 
-Não é seguro permitir solicitações com uma regra de estilo `/glob`, que corresponde à linha de solicitação completa, por exemplo,
+Não é seguro permitir solicitações com uma regra de estilo `/glob`, que é correspondida com a linha de solicitação completa, por exemplo
 
 ```
 /0100 {
@@ -327,30 +328,30 @@ Não é seguro permitir solicitações com uma regra de estilo `/glob`, que corr
 }
 ```
 
-Esta instrução destina-se a permitir solicitações para arquivos `css`, mas também permite solicitações para o recurso **any** seguido pela string de query `?a=.css`. Por conseguinte, é proibido utilizar tais filtros (ver também CVE-2016-0957).
+Essa instrução destina-se a permitir solicitações para arquivos `css`, mas também permite solicitações para **qualquer** recurso seguido pela sequência de consulta `?a=.css`. Por conseguinte, é proibido utilizar esses filtros (ver também CVE-2016-0957).
 
 **o arquivo incluído (...) não corresponde a nenhum arquivo conhecido**
 
 Há dois tipos de arquivos na configuração de host virtual do Apache que podem ser especificados como inclui: regravações e variáveis.
-Os arquivos incluídos precisam ser nomeados da seguinte forma:
+Os arquivos incluídos precisam ser nomeados da seguinte maneira:
 
 | Tipo | Incluir nome de arquivo |
 |-----------|---------------------------------|
-| Substitui | `conf.d/rewrites/rewrite.rules` |
+| Regravações | `conf.d/rewrites/rewrite.rules` |
 | Variáveis | `conf.d/variables/custom.vars` |
 
-Como alternativa, você pode incluir a versão **default** das regras de regravação, cujo nome é `conf.d/rewrites/default_rewrite.rules`.
+Como alternativa, você pode incluir a versão **padrão** das regras de regravação, cujo nome é `conf.d/rewrites/default_rewrite.rules`.
 Observe que não há uma versão padrão dos arquivos de variáveis.
 
 **Foi detectado um layout de configuração obsoleto, habilitando o modo de compatibilidade**
 
-Esta mensagem indica que sua configuração tem o layout obsoleto da versão 1, contendo uma
-Configuração do Apache e arquivos com prefixos `ams_`. Embora isso ainda seja suportado para trás
-compatibilidade que você deve alternar para o novo layout.
+Essa mensagem indica que sua configuração tem o layout obsoleto da versão 1, contendo um relatório completo
+Configuração do Apache e arquivos com prefixos `ams_`. Embora isso ainda seja compatível com versões anteriores
+compatibilidade você deve mudar para o novo layout.
 
-## Validação local da sintaxe de configuração do dispatcher para que o apache httpd possa start {#local-validation}
+## Validação local da sintaxe de configuração do dispatcher para que o apache httpd possa iniciar {#local-validation}
 
-Depois que for estabelecido que a configuração do módulo do dispatcher inclui apenas diretivas suportadas, verifique se a sintaxe está correta para que o apache possa ser start. Para testar isso, o docker deve ser instalado localmente. E observe que não é necessário AEM estar correndo.
+Depois de estabelecer que a configuração do módulo Dispatcher inclui apenas diretivas compatíveis, você deve verificar se a sintaxe está correta para que o apache possa ser iniciado. Para testar isso, o docker deve ser instalado localmente. E observe que não é necessário AEM estar funcionando.
 
 Use o script `validate.sh` conforme mostrado abaixo:
 
@@ -375,17 +376,17 @@ Phase 2 finished
 
 O script faz o seguinte:
 
-1. Ele executa o validador da seção anterior para garantir que somente as diretivas suportadas sejam incluídas. Se a configuração não for válida, o script falhará.
-2. Ele executa `httpd -t command` para testar se a sintaxe está correta, de modo que apache httpd possa ser start. Se bem-sucedida, a configuração deverá estar pronta para implantação.
-3. Verifica se o subconjunto dos arquivos de configuração do SDK do dispatcher, que devem ser imutáveis conforme descrito na seção [Estrutura do arquivo](#file-structure), não foi modificado. Esta é uma nova verificação, introduzida com AEM versão v2021.1.4738 do SDK, que também inclui as Ferramentas do Dispatcher versão 2.0.36. Antes desta atualização, os clientes podem ter assumido incorretamente que quaisquer modificações locais do SDK desses arquivos imutáveis também seriam aplicadas ao ambiente da nuvem.
+1. Ele executa o validador da seção anterior para garantir que apenas as diretivas compatíveis sejam incluídas. Se a configuração não for válida, o script falhará.
+2. Ela executa `httpd -t command` para testar se a sintaxe está correta, de forma que o apache httpd possa ser iniciado. Se bem-sucedida, a configuração deve estar pronta para implantação.
+3. Verifica se o subconjunto dos arquivos de configuração do SDK do dispatcher, que devem ser imutáveis conforme descrito na seção [File structure](#file-structure), não foi modificado. Esta é uma nova verificação, introduzida com AEM versão v2021.1.4738 do SDK, que também inclui a versão 2.0.36 das Ferramentas do Dispatcher. Antes dessa atualização, os clientes podem ter presumido incorretamente que quaisquer modificações do SDK local desses arquivos imutáveis também seriam aplicadas ao ambiente do Cloud.
 
-Durante a implantação do Cloud Manager, a verificação `httpd -t syntax` também será executada e todos os erros serão incluídos no log `Build Images step failure` do Cloud Manager.
+Durante uma implantação do Cloud Manager, a verificação `httpd -t syntax` também será executada e todos os erros serão incluídos no log `Build Images step failure` do Cloud Manager.
 
-## Testando a configuração do Apache e do Dispatcher localmente {#testing-apache-and-dispatcher-configuration-locally}
+## Testar a configuração do Apache e Dispatcher localmente {#testing-apache-and-dispatcher-configuration-locally}
 
-Também é possível testar a configuração do Apache e do Dispatcher localmente. Ele requer que o docker seja instalado localmente e sua configuração passe na validação conforme descrito acima.
+Também é possível testar a configuração do Apache e Dispatcher localmente. Requer que o docker seja instalado localmente e sua configuração passe na validação conforme descrito acima.
 
-Execute a ferramenta validator (observe que é diferente da `validator.sh` mencionada anteriormente), usando o parâmetro `-d` que gera uma pasta com todos os arquivos de configuração do dispatcher. Em seguida, execute o script `docker_run.sh`, transmitindo essa pasta como um argumento. Fornecendo o número da porta (aqui: 8080) para expor o ponto de extremidade do despachante, um container Docker é iniciado, executando o despachante com sua configuração.
+Execute a ferramenta validador (observe que é diferente do `validator.sh` mencionado anteriormente), usando o parâmetro `-d` que gera uma pasta com todos os arquivos de configuração do dispatcher. Em seguida, execute o script `docker_run.sh`, transmitindo essa pasta como um argumento. Fornecendo o número da porta (aqui: 8080) para expor o endpoint do dispatcher, um container do Docker é iniciado, executando o dispatcher com sua configuração.
 
 ```
 $ validator full -d out src/dispatcher
@@ -400,11 +401,11 @@ Starting httpd server
 ...
 ```
 
-Isso fará com que o dispatcher seja start em um container com seu backend apontando para uma instância AEM em execução em sua máquina local do Mac OS na porta 4503.
+Isso iniciará o dispatcher em um container com seu back-end apontando para uma instância de AEM em execução no computador local do Mac OS na porta 4503.
 
-## Depuração da configuração do Apache e do Dispatcher {#debugging-apache-and-dispatcher-configuration}
+## Depuração da configuração do Apache e Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-A estratégia a seguir pode ser usada para aumentar a saída do log para o módulo do dispatcher e ver os resultados da avaliação `RewriteRule` nos ambientes locais e na nuvem.
+A estratégia a seguir pode ser usada para aumentar a saída de log do módulo Dispatcher e ver os resultados da avaliação `RewriteRule` em ambientes locais e de nuvem.
 
 Os níveis de log desses módulos são definidos pelas variáveis `DISP_LOG_LEVEL` e `REWRITE_LOG_LEVEL`. Eles podem ser definidos no arquivo `conf.d/variables/global.vars`. A sua parte relevante é a seguinte:
 
@@ -430,13 +431,13 @@ Os níveis de log desses módulos são definidos pelas variáveis `DISP_LOG_LEVE
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Ao executar o dispatcher localmente, os registros são impressos diretamente na saída do terminal. Na maioria das vezes, você deseja que esses registros estejam em DEBUG, o que pode ser feito transmitindo o nível de Depuração como parâmetro ao executar o Docker. Por exemplo: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+Ao executar o dispatcher localmente, os logs são impressos diretamente na saída do terminal. Na maioria das vezes, você deseja que esses logs estejam em DEBUG, o que pode ser feito transmitindo o nível de Depuração como parâmetro ao executar o Docker. Por exemplo: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
-Os registros de ambientes na nuvem são expostos pelo serviço de registro disponível no Cloud Manager.
+Os logs para ambientes de nuvem são expostos por meio do serviço de registro disponível no Cloud Manager.
 
 ## Diferentes configurações do Dispatcher por ambiente {#different-dispatcher-configurations-per-environment}
 
-No momento, a mesma configuração do dispatcher é aplicada a todos os AEM como ambientes Cloud Service. O tempo de execução terá uma variável de ambiente `ENVIRONMENT_TYPE` que contém o modo de execução atual (dev, stage ou prod), bem como uma definição. A definição pode ser `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` ou `ENVIRONMENT_PROD`. Na configuração do Apache, a variável pode ser usada diretamente em uma expressão. Como alternativa, a definição pode ser usada para construir lógica:
+No momento, a mesma configuração do dispatcher é aplicada a todos os AEM como ambientes Cloud Service. O tempo de execução terá uma variável de ambiente `ENVIRONMENT_TYPE` que contém o modo de execução atual (dev, stage ou prod), bem como uma definição. A definição pode ser `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` ou `ENVIRONMENT_PROD`. Na configuração do Apache, a variável pode ser usada diretamente em uma expressão. Como alternativa, a definição pode ser usada para criar lógica:
 
 ```
 # Simple usage of the environment variable
@@ -453,7 +454,7 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 </IfDefine>
 ```
 
-Na configuração do Dispatcher, a mesma variável de ambiente está disponível. Se for necessária mais lógica, defina as variáveis como mostrado no exemplo acima e use-as na seção de configuração do Dispatcher:
+Na configuração do Dispatcher, a mesma variável de ambiente está disponível. Se for necessária mais lógica, defina as variáveis conforme mostrado no exemplo acima e use-as na seção Configuração do Dispatcher:
 
 ```
 /virtualhosts {
@@ -461,20 +462,20 @@ Na configuração do Dispatcher, a mesma variável de ambiente está disponível
 }
 ```
 
-Ao testar sua configuração localmente, você pode simular diferentes tipos de ambientes transmitindo a variável `DISP_RUN_MODE` para o script `docker_run.sh` diretamente:
+Ao testar sua configuração localmente, você pode simular diferentes tipos de ambiente transmitindo a variável `DISP_RUN_MODE` para o script `docker_run.sh` diretamente:
 
 ```
 $ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
 ```
 
-O modo de execução padrão quando não é transmitido em um valor para DISP_RUN_MODE é &quot;dev&quot;.
+O modo de execução padrão ao não transmitir um valor para DISP_RUN_MODE é &quot;dev&quot;.
 Para obter uma lista completa de opções e variáveis disponíveis, execute o script `docker_run.sh` sem argumentos.
 
-## Exibindo a configuração do Dispatcher em uso pelo seu container Docker {#viewing-dispatcher-configuration-in-use-by-docker-container}
+## Visualização da configuração do Dispatcher em uso pelo seu contêiner do Docker {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-Com configurações específicas do ambiente, pode ser difícil determinar a aparência real da configuração do Dispatcher. Depois de iniciar seu container docker com `docker_run.sh`, ele pode ser despejado da seguinte maneira:
+Com configurações específicas do ambiente, pode ser difícil determinar a aparência real da configuração do Dispatcher. Depois de iniciar o contêiner do docker com `docker_run.sh`, ele pode ser descartado da seguinte maneira:
 
-* Determine a ID do container do docker em uso:
+* Determine a ID do contêiner do docker em uso:
 
 ```
 $ docker ps
@@ -482,7 +483,7 @@ CONTAINER ID       IMAGE
 d75fbd23b29        adobe/aem-ethos/dispatcher-publish:...
 ```
 
-* Execute a seguinte linha de comando com essa ID de container:
+* Execute a seguinte linha de comando com essa ID de contêiner:
 
 ```
 $ docker exec d75fbd23b29 httpd-test
@@ -495,35 +496,35 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Principais diferenças entre o AMS Dispatcher e o AEM como Cloud Service {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
-Conforme descrito na página de referência acima, a configuração do Apache e do Dispatcher em AEM como um Cloud Service é bastante semelhante à do AMS. As principais diferenças são:
+Conforme descrito na página de referência acima, a configuração do Apache e Dispatcher no AEM como um Cloud Service é bastante semelhante à do AMS. As principais diferenças são:
 
-* Em AEM como Cloud Service, algumas diretivas do Apache podem não ser usadas (por exemplo `Listen` ou `LogLevel`)
-* No AEM como um Cloud Service, apenas algumas partes da configuração do Dispatcher podem ser colocadas em arquivos de inclusão e sua nomeação é importante. Por exemplo, regras de filtragem que você deseja reutilizar em diferentes hosts devem ser colocadas em um arquivo chamado `filters/filters.any`. Consulte a página de referência para obter mais informações.
-* Em AEM como Cloud Service, há validação extra para proibir regras de filtro gravadas usando `/glob` para evitar problemas de segurança. Como `deny *` será usado em vez de `allow *` (que não pode ser usado), os clientes se beneficiarão com a execução local do Dispatcher e com erros, observando os registros para saber exatamente quais caminhos os filtros do Dispatcher estão bloqueando para que eles possam ser adicionados.
+* No AEM como um Cloud Service, algumas diretivas Apache podem não ser usadas (por exemplo `Listen` ou `LogLevel`)
+* No AEM como um Cloud Service, somente algumas partes da configuração do Dispatcher podem ser colocadas em arquivos de inclusão e sua nomenclatura é importante. Por exemplo, as regras de filtro que você deseja reutilizar em hosts diferentes devem ser colocadas em um arquivo chamado `filters/filters.any`. Consulte a página de referência para obter mais informações.
+* No AEM como um Cloud Service, há validação extra para não permitir regras de filtro gravadas usando `/glob` para evitar problemas de segurança. Como `deny *` será usado em vez de `allow *` (que não pode ser usado), os clientes se beneficiarão de executar o Dispatcher localmente e de fazer tentativa e erro, observando os logs para saber exatamente quais caminhos os filtros do Dispatcher estão bloqueando para que eles possam ser adicionados.
 
-## Diretrizes para migrar a configuração do dispatcher do AMS para o AEM como Cloud Service
+## Diretrizes para migrar a configuração do dispatcher do AMS para o AEM como um Cloud Service
 
-A estrutura de configuração do dispatcher tem diferenças entre o Managed Services e o AEM como um Cloud Service. Apresentado abaixo, é um guia passo a passo sobre como migrar da configuração do AMS Dispatcher versão 2 para AEM como Cloud Service.
+A estrutura de configuração do dispatcher tem diferenças entre o Managed Services e o AEM como Cloud Service. Apresentado abaixo, é um guia passo a passo sobre como migrar da configuração do AMS Dispatcher versão 2 para o AEM como Cloud Service.
 
-## Como converter um AMS em um AEM como uma configuração de despachante de serviço da Cloud
+## Como converter um AMS em uma configuração de dispatcher do AEM as a Cloud Service
 
 A seção a seguir fornece instruções passo a passo sobre como converter uma configuração do AMS. Ele parte do princípio
-que você tem um arquivo com uma estrutura semelhante à descrita em [Configuração do despachante do Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.translate.html)
+que você tem um arquivo com uma estrutura semelhante à descrita em [Configuração do Dispatcher do Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.translate.html)
 
 ### Extrair o arquivo morto e remover um eventual prefixo
 
-Extraia o arquivo para uma pasta e certifique-se de que o start de subpastas imediatas seja `conf`, `conf.d`,
-`conf.dispatcher.d` e `conf.modules.d`. Se não, mova-os para cima na hierarquia.
+Extraia o arquivo morto para uma pasta e verifique se as subpastas imediatas começam com `conf`, `conf.d`,
+`conf.dispatcher.d` e `conf.modules.d`. Caso contrário, mova-os para cima na hierarquia.
 
 ### Livrar-se de subpastas e arquivos não usados
 
-Remova as subpastas `conf` e `conf.modules.d`, bem como os arquivos que correspondem a `conf.d/*.conf`.
+Remova as subpastas `conf` e `conf.modules.d`, bem como os arquivos correspondentes a `conf.d/*.conf`.
 
 ### Livrar-se de todos os hosts virtuais que não sejam de publicação
 
 Remova qualquer arquivo de host virtual em `conf.d/enabled_vhosts` que tenha `author`, `unhealthy`, `health`,
-`lc` ou `flush` em seu nome. Todos os arquivos de host virtual em `conf.d/available_vhosts` que não sejam
-vinculado também pode ser removido.
+`lc` ou `flush` em seu nome. Todos os arquivos de host virtual em `conf.d/available_vhosts` que não estejam
+vinculada ao também pode ser removida.
 
 ### Remova ou comente seções de host virtual que não se refiram à porta 80
 
@@ -539,45 +540,45 @@ remova-as ou comente-as. As instruções nessas seções não serão processadas
 
 ### Verificar regravações
 
-Insira o diretório `conf.d/rewrites`.
+Entre no diretório `conf.d/rewrites`.
 
 Remova qualquer arquivo chamado `base_rewrite.rules` e `xforwarded_forcessl_rewrite.rules` e lembre-se de
-remova as instruções `Include` nos arquivos de host virtual que se referem a elas.
+remova as instruções `Include` nos arquivos de host virtual que fazem referência a elas.
 
 Se `conf.d/rewrites` agora contiver um único arquivo, ele deverá ser renomeado para `rewrite.rules` e não
-esqueça de adaptar as instruções `Include` referentes a esse arquivo também nos arquivos do host virtual.
+esqueça de adaptar também as instruções `Include` referentes a esse arquivo nos arquivos de host virtual.
 
-No entanto, se a pasta contiver vários arquivos específicos de host virtual, seu conteúdo deverá ser
-copiada para a instrução `Include` referente a eles nos arquivos de host virtual.
+Se, no entanto, a pasta contiver vários arquivos específicos do host virtual, seu conteúdo deverá ser
+copiada para a instrução `Include` referenciando-a nos arquivos de host virtual.
 
 ### Verificar variáveis
 
-Insira o diretório `conf.d/variables`.
+Entre no diretório `conf.d/variables`.
 
-Remova qualquer arquivo chamado `ams_default.vars` e lembre-se de remover instruções `Include` no virtual
-arquivos host que se referem a eles.
+Remova qualquer arquivo chamado `ams_default.vars` e lembre-se de remover as instruções `Include` no virtual
+os arquivos host que fazem referência a eles.
 
 Se `conf.d/variables` agora contiver um único arquivo, ele deverá ser renomeado para `custom.vars` e não
-esqueça de adaptar as instruções `Include` referentes a esse arquivo também nos arquivos do host virtual.
+esqueça de adaptar também as instruções `Include` referentes a esse arquivo nos arquivos de host virtual.
 
-No entanto, se a pasta contiver vários arquivos específicos de host virtual, seu conteúdo deverá ser
-copiada para a instrução `Include` referente a eles nos arquivos de host virtual.
+Se, no entanto, a pasta contiver vários arquivos específicos do host virtual, seu conteúdo deverá ser
+copiada para a instrução `Include` referenciando-a nos arquivos de host virtual.
 
-### Remover lista de permissões
+### Remover listas de permissões
 
-Remova a pasta `conf.d/whitelists` e remova as instruções `Include` nos arquivos de host virtual que fazem referência a
+Remova a pasta `conf.d/whitelists` e remova as instruções `Include` nos arquivos de host virtual referentes a
 algum arquivo nessa subpasta.
 
 ### Substituir qualquer variável que não esteja mais disponível
 
 Em todos os arquivos de host virtual:
 
-Renomear `PUBLISH_DOCROOT` para `DOCROOT`
-Remova seções referentes a variáveis chamadas `DISP_ID`, `PUBLISH_FORCE_SSL` ou `PUBLISH_WHITELIST_ENABLED`
+Renomeie `PUBLISH_DOCROOT` para `DOCROOT`
+Remova as seções que fazem referência às variáveis chamadas `DISP_ID`, `PUBLISH_FORCE_SSL` ou `PUBLISH_WHITELIST_ENABLED`
 
 ### Verificar o estado executando o validador
 
-Execute o validador do dispatcher no diretório, com o subcomando `httpd`:
+Execute o validador do dispatcher no seu diretório, com o subcomando `httpd`:
 
 ```
 $ validator httpd .
@@ -589,40 +590,40 @@ Se você vir diretivas Apache que não estão incluir na lista de permissões, r
 
 ### Livrar-se de todos os farms não publicados
 
-Remova qualquer arquivo de farm em `conf.dispatcher.d/enabled_farms` que tenha `author`, `unhealthy`, `health`,
-`lc` ou `flush` em seu nome. Todos os arquivos de farm em `conf.dispatcher.d/available_farms` que não sejam
-vinculado também pode ser removido.
+Remova qualquer arquivo do farm em `conf.dispatcher.d/enabled_farms` que tenha `author`, `unhealthy`, `health`,
+`lc` ou `flush` em seu nome. Todos os arquivos farm em `conf.dispatcher.d/available_farms` que não estão
+vinculada ao também pode ser removida.
 
 ### Renomear arquivos de farm
 
-Todos os farm em `conf.d/enabled_farms` devem ser renomeados para corresponder ao padrão `*.farm`, portanto, por exemplo, um
-o arquivo de farm chamado `customerX_farm.any` deve ser renomeado como `customerX.farm`.
+Todos os farms em `conf.d/enabled_farms` devem ser renomeados para corresponder ao padrão `*.farm`, portanto, por exemplo, um
+O arquivo do farm chamado `customerX_farm.any` deve ser renomeado para `customerX.farm`.
 
 ### Verificar cache
 
-Insira o diretório `conf.dispatcher.d/cache`.
+Entre no diretório `conf.dispatcher.d/cache`.
 
 Remova qualquer arquivo prefixado com `ams_`.
 
-Se `conf.dispatcher.d/cache` estiver vazio, copie o arquivo `conf.dispatcher.d/cache/rules.any`
-da configuração padrão do dispatcher para essa pasta. O despachante padrão
-pode ser encontrada na pasta `src` deste SDK. Não se esqueça de adaptar o
-instruções `$include` referentes aos arquivos de regra `ams_*_cache.any` nos arquivos do farm
+Se `conf.dispatcher.d/cache` agora estiver vazio, copie o arquivo `conf.dispatcher.d/cache/rules.any`
+da configuração padrão do dispatcher para essa pasta. O dispatcher padrão
+a configuração pode ser encontrada na pasta `src` deste SDK. Não se esqueça de adaptar a
+`$include` instruções referentes aos arquivos de regra `ams_*_cache.any` nos arquivos do farm
 também.
 
 Se, em vez disso, `conf.dispatcher.d/cache` agora contiver um único arquivo com o sufixo `_cache.any`,
 ele deve ser renomeado para `rules.any` e não se esqueça de adaptar as instruções `$include`
-referência a esse arquivo nos arquivos do farm também.
+fazer referência a esse arquivo também nos arquivos do farm.
 
-No entanto, se a pasta contiver vários arquivos específicos do farm com esse padrão, seu conteúdo
-deve ser copiada para a instrução `$include` referente a eles nos arquivos do farm.
+Se, no entanto, a pasta contiver vários arquivos específicos do farm com esse padrão, seu conteúdo
+deve ser copiado para a instrução `$include` que faz referência a eles nos arquivos do farm.
 
 Remova qualquer arquivo que tenha o sufixo `_invalidate_allowed.any`.
 
 Copie o arquivo `conf.dispatcher.d/cache/default_invalidate_any` do padrão
-AEM na configuração do despachante do Cloud para esse local.
+AEM na configuração do Cloud Dispatcher para esse local.
 
-Em cada arquivo de farm, remova qualquer conteúdo na seção `cache/allowedClients` e substitua-o
+Em cada arquivo do farm, remova qualquer conteúdo da seção `cache/allowedClients` e substitua-o
 com:
 
 ```
@@ -631,19 +632,19 @@ $include "../cache/default_invalidate.any"
 
 ### Verificar cabeçalhos do cliente
 
-Insira o diretório `conf.dispatcher.d/clientheaders`.
+Entre no diretório `conf.dispatcher.d/clientheaders`.
 
 Remova qualquer arquivo prefixado com `ams_`.
 
 Se `conf.dispatcher.d/clientheaders` agora contiver um único arquivo com o sufixo `_clientheaders.any`,
 ele deve ser renomeado para `clientheaders.any` e não se esqueça de adaptar as instruções `$include`
-referência a esse arquivo nos arquivos do farm também.
+fazer referência a esse arquivo também nos arquivos do farm.
 
-No entanto, se a pasta contiver vários arquivos específicos do farm com esse padrão, seu conteúdo
-deve ser copiada para a instrução `$include` referente a eles nos arquivos do farm.
+Se, no entanto, a pasta contiver vários arquivos específicos do farm com esse padrão, seu conteúdo
+deve ser copiado para a instrução `$include` que faz referência a eles nos arquivos do farm.
 
 Copie o arquivo `conf.dispatcher/clientheaders/default_clientheaders.any` do padrão
-AEM como uma configuração de despachante de Cloud Service para esse local.
+AEM como uma configuração de Cloud Service dispatcher para esse local.
 
 Em cada arquivo do farm, substitua qualquer instrução include de clienteheader com a seguinte aparência:
 
@@ -660,19 +661,19 @@ $include "../clientheaders/default_clientheaders.any"
 
 ### Verificar filtro
 
-Insira o diretório `conf.dispatcher.d/filters`.
+Entre no diretório `conf.dispatcher.d/filters`.
 
 Remova qualquer arquivo prefixado com `ams_`.
 
 Se `conf.dispatcher.d/filters` agora contiver um único arquivo, ele deverá ser renomeado para
 `filters.any` e não se esqueça de adaptar as instruções `$include` referentes a isso
-nos arquivos do farm também.
+nos arquivos farm também.
 
-No entanto, se a pasta contiver vários arquivos específicos do farm com esse padrão, seu conteúdo
-deve ser copiada para a instrução `$include` referente a eles nos arquivos do farm.
+Se, no entanto, a pasta contiver vários arquivos específicos do farm com esse padrão, seu conteúdo
+deve ser copiado para a instrução `$include` que faz referência a eles nos arquivos do farm.
 
 Copie o arquivo `conf.dispatcher/filters/default_filters.any` do padrão
-AEM como uma configuração de despachante de Cloud Service para esse local.
+AEM como uma configuração de Cloud Service dispatcher para esse local.
 
 Em cada arquivo do farm, substitua qualquer instrução include de filtro com a seguinte aparência:
 
@@ -688,14 +689,14 @@ $include "../filters/default_filters.any"
 
 ### Verificar renderizadores
 
-Insira o diretório `conf.dispatcher.d/renders`.
+Entre no diretório `conf.dispatcher.d/renders`.
 
 Remova todos os arquivos nessa pasta.
 
 Copie o arquivo `conf.dispatcher.d/renders/default_renders.any` do padrão
-AEM como uma configuração de despachante de Cloud Service para esse local.
+AEM como uma configuração de Cloud Service dispatcher para esse local.
 
-Em cada arquivo de farm, remova qualquer conteúdo na seção `renders` e substitua-o
+Em cada arquivo do farm, remova qualquer conteúdo da seção `renders` e substitua-o
 com:
 
 ```
@@ -704,19 +705,19 @@ $include "../renders/default_renders.any"
 
 ### Verifique virtualhosts
 
-Renomeie o diretório `conf.dispatcher.d/vhosts` para `conf.dispatcher.d/virtualhosts` e insira-o.
+Renomeie o diretório `conf.dispatcher.d/vhosts` para `conf.dispatcher.d/virtualhosts` e entre nele.
 
 Remova qualquer arquivo prefixado com `ams_`.
 
 Se `conf.dispatcher.d/virtualhosts` agora contiver um único arquivo, ele deverá ser renomeado para
 `virtualhosts.any` e não se esqueça de adaptar as instruções `$include` referentes a isso
-nos arquivos do farm também.
+nos arquivos farm também.
 
-No entanto, se a pasta contiver vários arquivos específicos do farm com esse padrão, seu conteúdo
-deve ser copiada para a instrução `$include` referente a eles nos arquivos do farm.
+Se, no entanto, a pasta contiver vários arquivos específicos do farm com esse padrão, seu conteúdo
+deve ser copiado para a instrução `$include` que faz referência a eles nos arquivos do farm.
 
 Copie o arquivo `conf.dispatcher/virtualhosts/default_virtualhosts.any` do padrão
-AEM como uma configuração de despachante de Cloud Service para esse local.
+AEM como uma configuração de Cloud Service dispatcher para esse local.
 
 Em cada arquivo do farm, substitua qualquer instrução include de filtro com a seguinte aparência:
 
@@ -732,7 +733,7 @@ $include "../virtualhosts/default_virtualhosts.any"
 
 ### Verificar o estado executando o validador
 
-Execute o AEM como um validador de Cloud Service dispatcher no diretório, com o subcomando `dispatcher`:
+Execute o AEM como um validador do Cloud Service dispatcher no seu diretório, com o subcomando `dispatcher`:
 
 ```
 $ validator dispatcher .
@@ -747,7 +748,7 @@ Para todos os outros erros, consulte a seção de solução de problemas da docu
 ### Teste sua configuração com uma implantação local (requer a instalação do Docker)
 
 Usando o script `docker_run.sh` no AEM como um Cloud Service Dispatcher Tools, você pode testar se
-sua configuração não contém nenhum outro erro que apareceria somente em
+sua configuração não contém nenhum outro erro que apareceria apenas em
 implantação:
 
 ### Etapa 1: Gerar informações de implantação com o validador
@@ -758,7 +759,7 @@ validator full -d out .
 
 Isso valida a configuração completa e gera informações de implantação em `out`
 
-### Etapa 2: Start do despachante em uma imagem do docker com essas informações de implantação
+### Etapa 2: Inicie o dispatcher em uma imagem do docker com essas informações de implantação
 
 Com o servidor de publicação do AEM em execução no computador macOS, ouvindo na porta 4503, você pode executar o dispatcher na frente desse servidor, da seguinte maneira:
 
@@ -768,11 +769,11 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 Isso iniciará o contêiner e exporá o Apache na porta local 8080.
 
-### Usar a nova configuração do dispatcher
+### Usar sua nova configuração de dispatcher
 
 Parabéns! Se o validador não relatar mais nenhum problema e a variável
-start de container mais ânimos sem falhas ou avisos, você
+o contêiner do docker é iniciado sem falhas ou avisos, você é
 pronto para mover sua configuração para um subdiretório `dispatcher/src`
-do repositório git.
+do seu repositório Git.
 
-**Os clientes que estão usando a configuração do AMS Dispatcher versão 1 devem entrar em contato com o suporte ao cliente para ajudá-los a migrar da versão 1 para a versão 2 para que as instruções acima possam ser seguidas.**
+**Os clientes que estiverem usando a configuração do AMS Dispatcher versão 1 devem entrar em contato com o suporte ao cliente para ajudá-los a migrar da versão 1 para a versão 2, de modo que as instruções acima possam ser seguidas.**
