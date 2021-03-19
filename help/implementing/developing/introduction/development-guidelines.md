@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2283'
 ht-degree: 1%
 
 ---
@@ -128,7 +128,7 @@ Os despejos de encadeamento em ambientes do Cloud são coletados continuamente, 
 
 Para desenvolvimento local, os desenvolvedores têm acesso total ao CRXDE Lite (`/crx/de`) e ao Console da Web AEM (`/system/console`).
 
-Observe que, no desenvolvimento local (usando o início rápido pronto para nuvem), `/apps` e `/libs` podem ser gravadas diretamente, o que é diferente dos ambientes do Cloud, onde essas pastas de nível superior são imutáveis.
+Observe que, no desenvolvimento local (usando o SDK), `/apps` e `/libs` podem ser gravadas diretamente, o que é diferente dos ambientes do Cloud, onde essas pastas de nível superior são imutáveis.
 
 ### AEM como ferramentas de desenvolvimento do Cloud Service {#aem-as-a-cloud-service-development-tools}
 
