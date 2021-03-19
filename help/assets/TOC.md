@@ -4,18 +4,19 @@ user-guide-title: Guia do Assets as a Cloud Service
 breadcrumb-title: Guia do Assets
 user-guide-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 67%
+ht-degree: 70%
 
 ---
 
 
 # [!DNL Assets] Guia  {#assets}
 
-+ [[!DNL Assets] como [!DNL Cloud Service]](/help/assets/home.md)
++ [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Visão geral e novidades](overview.md)
 + [Alterações importantes  [!DNL Assets] como uma [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] arquitetura](architecture.md)
@@ -55,9 +56,9 @@ ht-degree: 67%
    + [Pesquisar aspectos](search-facets.md)
    + [API HTTP de ativos](mac-api-assets.md)
    + [Suporte a fragmentos de conteúdo na API HTTP do Assets](content-fragments/assets-api-content-fragments.md)
-   + [API GraphQL do AEM para fragmentos de conteúdo](content-fragments/graphql-api-content-fragments.md)
-   + [Autenticação para consultas GraphQL do AEM remotas em fragmentos de conteúdo](content-fragments/graphql-authentication-content-fragments.md)
-   + [API GraphQL do AEM com fragmentos de conteúdo - Conteúdo de amostra e consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [AEM API GraphQL para fragmentos de conteúdo](content-fragments/graphql-api-content-fragments.md)
+   + [Autenticação para consultas GraphQL de AEM Remotas em Fragmentos de Conteúdo](content-fragments/graphql-authentication-content-fragments.md)
+   + [AEM API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [Relatórios de ativos](asset-reports.md)
    + [Metadados em cascata](cascading-metadata.md)
@@ -97,7 +98,7 @@ ht-degree: 67%
    + [Aplicação de predefinições da imagem do Dynamic Media](dynamic-media/image-presets.md)
    + [Gerenciamento de predefinições do visualizador do Dynamic Media](dynamic-media/managing-viewer-presets.md)
    + [Aplicação de predefinições do visualizador do Dynamic Media](dynamic-media/viewer-presets.md)
-   + [Predefinições do conjunto de lotes](dynamic-media/batch-set-presets-dm.md)
+   + [Predefinições de conjunto de lotes](dynamic-media/batch-set-presets-dm.md)
    + [Invalidar o cache CDN por meio do Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [Invalidar o cache CDN por meio do Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Imagem inteligente](dynamic-media/imaging-faq.md)
@@ -122,8 +123,8 @@ ht-degree: 67%
    + [Vincular URLs ao aplicativo da Web.](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Uso de conjuntos de regras para transformar URLs](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Publicação de ativos do Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [Trabalhar com publicação seletiva no Dynamic Media](dynamic-media/selective-publishing.md)
+   + [Trabalho com Publicação seletiva no Dynamic Media](dynamic-media/selective-publishing.md)
    + [Trabalho com seletores](dynamic-media/working-with-selectors.md)
    + [Perguntas frequentes sobre entrega de conteúdo HTTP2](dynamic-media/http2faq.md)
-   + [Fim da vida útil de visualizadores Flash](dynamic-media/flash-viewers-eol.md)
+   + [Fim da vida útil de visualizadores do Flash](dynamic-media/flash-viewers-eol.md)
    + [Fim da vida útil de visualizadores DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
