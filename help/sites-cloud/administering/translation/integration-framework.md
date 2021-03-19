@@ -1,11 +1,13 @@
 ---
 title: Configuração da estrutura de integração de tradução
 description: Saiba como configurar a Estrutura de integração de tradução para integrar com serviços de tradução de terceiros.
+feature: Cópia de idioma
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1384'
+ht-degree: 2%
 
 ---
 
