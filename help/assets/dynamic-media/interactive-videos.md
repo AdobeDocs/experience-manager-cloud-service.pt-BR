@@ -1,10 +1,12 @@
 ---
 title: Vídeos interativos
 description: Saiba como trabalhar com vídeo interativo e vídeo que pode ser comprado no Dynamic Media.
+feature: Vídeos interativos
+topic: Profissional
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '6062'
+source-wordcount: '6066'
 ht-degree: 4%
 
 ---
@@ -27,7 +29,7 @@ Para ver um vídeo interativo e que pode ser comprado, clique em [Demonstraçõe
 
 * Para pausar o vídeo e abrir a exibição Rápida do produto, toque na miniatura. Por exemplo, toque na imagem em miniatura de KitchenAid no vídeo para experimentar uma visualização de rotação de 360 graus do mixer ou amplie o zoom para ver os detalhes do mixer.
 
-Consulte também [Usando vídeo interativo com Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
+Consulte também [Usar vídeo interativo com Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
 
 <!-- 
 
@@ -48,11 +50,11 @@ There was a link here that showed the video frame of an interactive video and wh
 ### Veja como os vídeos interativos são criados {#watch-how-interactive-videos-are-created}
 
 Assista a uma apresentação de 7 minutos e 30 segundos sobre [como os vídeos interativos são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).
-(Embora a apresentação em vídeo tenha a marca Assets on Demand, os princípios e etapas ainda se aplicam a Vídeo interativo no Adobe Experience Manager Assets.)
+(Embora a apresentação em vídeo tenha a marca Assets on Demand, os princípios e etapas ainda se aplicam a Vídeo interativo nos ativos Adobe Experience Manager.)
 
-### Webinar de sucesso do cliente da Adobe {#adobe-customer-success-webinar}
+### Webinar de sucesso do cliente do Adobe {#adobe-customer-success-webinar}
 
-O webinar [Usar vídeo interativo, compartilhamento de links e compartilhamento do YouTube no Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) ensina como usar vídeo interativo e outros recursos para unir eventos orientados por conversão ao conteúdo de marketing de vídeo.
+O webinário [Usar vídeo interativo, compartilhamento de link e compartilhamento do YouTube no Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) ensina como usar o vídeo interativo e outros recursos para unir eventos orientados por conversão ao conteúdo de marketing de vídeo.
 
 ## Início rápido: Vídeos interativos {#quick-start-interactive-videos}
 
@@ -80,11 +82,11 @@ Consulte [Criando uma Nova Predefinição do Visualizador](/help/assets/dynamic-
 Consulte [Fazer upload de um vídeo e seus ativos de miniatura associados](#uploading-a-video-and-its-associated-thumbnail-assets).
 
 1. **Adição de interatividade ao vídeo**  - Adicione um ou mais segmentos de tempo ao vídeo. Em seguida, associe as miniaturas de imagem nesses segmentos de tempo. Atribua cada miniatura de imagem a uma ação, como um hiperlink, uma Exibição rápida ou um Fragmento de experiência.
-(O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.)
+(O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .)
 Termine publicando os ativos interativos de vídeo. A publicação cria o código incorporado ou URL que você eventualmente copia e aplica à página de aterrissagem do site. Consulte [Adicionar interatividade ao vídeo](#adding-interactivity-to-your-video).
 Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. **Adicionar um vídeo interativo ao seu site ou ao seu site no Experience Manager**  - Se você usa o Experience Manager Sites, o Experience Manager eCommerce, ou ambos, você pode adicionar o vídeo interativo diretamente a uma página da Web no Experience Manager. Arraste o componente Mídia interativa para a página. Consulte [Adicionar ativos de mídia dinâmica às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **Adição de um vídeo interativo ao seu site ou ao seu site no Experience Manager**  - Se você usa o Experience Manager Sites, o Experience Manager eCommerce, ou ambos, você pode adicionar o vídeo interativo diretamente a uma página da Web no Experience Manager. Arraste o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 Use o código incorporado ou URL para integrar seu vídeo interativo com as experiências do site. Consulte [Integrar um vídeo interativo com seu site](#integrating-an-interactive-video-with-your-website).
 Se você estiver usando um WCM (Web Content Manager, Gerenciador de conteúdo da Web) de terceiros, é necessário integrar o novo vídeo interativo à implementação do Quick View existente usada em seu site. Consulte [Integração de um vídeo interativo com uma visualização rápida existente](#integrating-an-interactive-video-with-an-existing-quickview).
    [Adição de ativos de Mídia dinâmica a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -94,7 +96,7 @@ Se você estiver usando um WCM (Web Content Manager, Gerenciador de conteúdo da
 >[!NOTE]
 Essa tarefa só será necessária se o seguinte for verdadeiro:
 * Você deseja adicionar interatividade ao vídeo, acionando para as visualizações rápidas.
-* Sua implementação do Experience Manager *not* usa uma estrutura de integração de comércio eletrônico para inserir dados de produtos no Experience Manager a partir de qualquer solução de comércio eletrônico, como IBM WebSphere® Commerce, Elastic Path, hybris ou Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
+* Sua implementação do Experience Manager *not* usa uma estrutura de integração de eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM WebSphere® Commerce, Elastic Path, hybris ou Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
 Se sua implementação do Experience Manager usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
 
@@ -154,7 +156,7 @@ Considere os seguintes exemplos de URLs de visualização rápida e suas variáv
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>A parte variável está na última parte do caminho e se torna o valor SKU das miniaturas do Experience Manager: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+    </ul> <p>A parte variável está na última parte do caminho e se torna o valor SKU das miniaturas de Experience Manager: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>SKU e ID de categoria na sequência de consulta.</p> </td>
@@ -231,7 +233,7 @@ Após salvar a predefinição do visualizador, seu estado é automaticamente def
 
 Consulte [Criação de uma nova predefinição do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) para criar sua própria predefinição do visualizador de vídeo interativo.
 
-## Fazer upload de um vídeo e seus ativos de miniatura associados {#uploading-a-video-and-its-associated-thumbnail-assets}
+## Fazer upload de um vídeo e de seus ativos em miniatura associados {#uploading-a-video-and-its-associated-thumbnail-assets}
 
 Se você já tiver carregado seus ativos de vídeo e miniatura, continue para [Adicionar interatividade ao vídeo](#adding-interactivity-to-your-video).
 
@@ -258,7 +260,7 @@ Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/e
 As ferramentas de compartilhamento de mídia social em Vídeo interativo não são compatíveis quando você incorpora o visualizador em um Fragmento de experiência. Em vez disso, você pode usar ou criar predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem que você as incorpore com êxito aos Fragmentos de experiência.
 
 >[!NOTE]
-O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.
+O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
 
 As opções Desfazer e Refazer, próximo ao canto superior direito da página, são compatíveis durante a sessão de criação/edição atual.
 
@@ -398,11 +400,11 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
     <tbody> 
       <tr> 
       <td>Para associar a imagem de miniatura selecionada a uma exibição Rápida</td> 
-      <td><p>Em Tipo de ação, toque em <strong>Exibição rápida</strong>.</p> <p>Se você for um cliente do Experience Manager Sites e Comércio eletrônico:</p> 
+      <td><p>Em Tipo de ação, toque em <strong>Exibição rápida</strong>.</p> <p>Se você for um cliente do Experience Manager Sites e Ecommerce:</p> 
        <ul> 
-       <li>Observe que o campo de texto Valor SKU é preenchido previamente com o SKU do produto selecionado (unidade de manutenção de estoque). O SKU é um identificador exclusivo para cada produto ou serviço distinto que você oferece. Esse campo é preenchido automaticamente quando a imagem é associada a um produto no Experience Manager Commerce.</li> 
+       <li>Observe que o campo de texto Valor SKU é preenchido previamente com o SKU do produto selecionado (unidade de manutenção de estoque). O SKU é um identificador exclusivo para cada produto ou serviço distinto que você oferece. Este campo é preenchido automaticamente quando a imagem é associada a um produto no Experience Manager Commerce.</li> 
        <li>Se o SKU preenchido anteriormente estiver incorreto, toque ou clique no ícone Seletor de produto (lupa) para abrir a página Selecionar produto . Toque no produto que deseja usar e toque na marca de seleção no canto superior direito da página. Você é retornado ao Editor de vídeo interativo.</li> 
-       </ul> <p> Se você for <em>não</em> um cliente do Experience Manager Sites ou Ecommerce</p> 
+       </ul> <p> Se você for <em>not</em> um cliente Experience Manager Sites ou Ecommerce</p> 
        <ul> 
        <li>Consulte <a href="/help/assets/dynamic-media/carousel-banners.md#identifying-hotspot-and-image-map-variables">Identificação de variáveis de ponto de acesso</a>. Essas variáveis devem ser definidas.</li> 
        <li>Por padrão, esse campo SKU usa o nome de arquivo do ativo de imagem sem a extensão. Se você seguir uma convenção de nomenclatura padrão para seus arquivos com base no SKU, esse campo normalmente não exigirá edições adicionais. </li> 
@@ -413,8 +415,8 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
       <td>Para associar a imagem em miniatura selecionada a um hiperlink</td> 
       <td><p>Em Tipo de ação, toque em <strong>Hiperlink</strong> e siga um destes procedimentos:</p> 
        <ul> 
-       <li>Se você for um cliente do Experience Manager Sites , toque no ícone Seletor de site (pasta) para navegar para uma página da Web. O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.</li> 
-       <li>Se você for um cliente independente do Dynamic Media, no campo de texto HREF, especifique o caminho completo do URL para uma página da Web vinculada.</li> 
+       <li>Se você for um cliente do Experience Manager Sites , toque no ícone do Seletor de site (pasta) para navegar até uma página da Web. O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .</li> 
+       <li>Se você for um cliente independente do Dynamic Media, no campo de texto HREF , especifique o caminho do URL completo para uma página da Web vinculada.</li> 
        </ul> <p>Certifique-se de especificar se deseja abrir o link em uma nova guia do navegador ou na guia atual.</p> </td> 
       </tr> 
       <tr> 
@@ -483,7 +485,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
 
 1. Publique o vídeo interativo. A publicação cria o código incorporado ou URL que você eventualmente copia e cola nas experiências do site.
 
-   Se você adicionou interatividade com visualizações rápidas, use somente o código de inserção; se você tiver adicionado a interatividade com páginas da Web com hiperlink, também poderá usar o URL publicado. Observe, no entanto, que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.
+   Se você adicionou interatividade com visualizações rápidas, use somente o código de inserção; se você tiver adicionado a interatividade com páginas da Web com hiperlink, também poderá usar o URL publicado. Observe, no entanto, que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
 
    Consulte [Publicação de ativos](publishing-dynamicmedia-assets.md).
 
@@ -500,16 +502,16 @@ Consulte [Publicação de ativos](/help/assets/dynamic-media/publishing-dynamicm
 
 Depois de fazer upload de um vídeo, adicionar segmentos de linha do tempo a ele e publicar o vídeo interativo, você estará pronto para adicioná-lo ao seu site atual.
 
-Se você for um cliente do Experience Manager Sites , é possível adicionar o vídeo interativo arrastando o componente Mídia interativa para a página. Consulte [Adicionar ativos do Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se você for um cliente do Experience Manager Sites , é possível adicionar o vídeo interativo arrastando o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 Se você for um cliente independente do Experience Manager Assets, poderá adicionar manualmente o vídeo interativo ao seu site, conforme descrito nesta seção.
 
 1. Copie o código incorporado ou URL do vídeo interativo publicado.
 Consulte [Incorporando o visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
-Se você adicionou interatividade com visualizações rápidas, use somente o código de inserção; se você tiver adicionado a interatividade com páginas da Web com hiperlink, também poderá usar o URL publicado. Observe, no entanto, que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.
+Se você adicionou interatividade com visualizações rápidas, use somente o código de inserção; se você tiver adicionado a interatividade com páginas da Web com hiperlink, também poderá usar o URL publicado. Observe, no entanto, que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
 
 1. No código da página da Web do target, identifique onde o vídeo estático está localizado.
-1. Remova o vídeo estático e substitua o código pelo código incorporado ou URL que você copiou dos ativos do Experience Manager, como está.
+1. Remova o vídeo estático e substitua o código pelo código incorporado ou URL que você copiou do Experience Manager Assets, como está.
 O código incorporado copiado é definido para um ambiente responsivo, de modo que se ajuste automaticamente à área ocupada anteriormente pelo vídeo estático.
 
 >[!NOTE]
@@ -549,7 +551,7 @@ Observe que o código de inserção do vídeo é padrão:
 </script>
 ```
 
-A integração é tão simples como remover o código de inserção do vídeo e substituí-lo pelo código de inserção do vídeo interativo no Experience Manager. Você pode ver o resultado no seguinte URL. Embora ele mostre um Vídeo interativo presente na página, ele ainda não está integrado às visualizações rápidas existentes:
+A integração é tão simples como remover o código de inserção do vídeo e substituí-lo pelo código de inserção do vídeo interativo do Experience Manager. Você pode ver o resultado no seguinte URL. Embora ele mostre um Vídeo interativo presente na página, ele ainda não está integrado às visualizações rápidas existentes:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
 
@@ -564,7 +566,7 @@ A implementação do Quick View existente geralmente representa uma cadeia de a�
 
 1. Um usuário aciona um elemento na interface do usuário do site.
 1. O código front-end obtém um URL de visualização rápida com base no elemento da interface do usuário acionado na etapa 1.
-1. O código de front-end envia uma solicitação AJAX usando o URL obtido na etapa 2.
+1. O código de front-end envia uma solicitação de AJAX usando o URL obtido na etapa 2.
 1. A lógica de back-end retorna os dados de visualização rápida ou o conteúdo correspondentes de volta ao código de front-end.
 1. O código front-end carrega os dados ou o conteúdo da visualização rápida.
 1. Como opção, o código front-end converte os dados de visualização rápida carregados em uma representação HTML.
@@ -582,7 +584,7 @@ Nesse manipulador de evento, o código front-end faz o seguinte:
 
 Além disso, o visualizador de Vídeo interativo oferece suporte ao modo de operação de tela cheia. O usuário final aciona as Exibições rápidas clicando em uma miniatura sem sair da tela cheia. Para obter essa funcionalidade, altere o código front-end para que a caixa de diálogo modal Exibição rápida esteja anexada ao contêiner do visualizador. Não adicione o BODY do documento ou outro elemento de página da Web que não esteja disponível quando o visualizador estiver no modo de tela cheia. O código que executa essa tarefa escuta mais um retorno de chamada do visualizador enviado depois que o visualizador é carregado na página.
 
-O código incorporado retornado pelo Experience Manager já tem um manipulador de eventos pronto para uso em vigor. Ele é comentado como visto no seguinte trecho de código destacado:
+O código incorporado retornado pelo Experience Manager já tem um manipulador de eventos pronto para uso no lugar. Ele é comentado como visto no seguinte trecho de código destacado:
 
 ```xml
 <style type="text/css">
