@@ -1,10 +1,11 @@
 ---
 title: Vincular URLs ao aplicativo da Web.
-description: Como vincular URLs ao seu aplicativo web no Dynamic Media.
+description: Saiba como vincular URLs ao aplicativo da Web no Dynamic Media.
+topic: Profissional
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1268'
 ht-degree: 10%
 
 ---
