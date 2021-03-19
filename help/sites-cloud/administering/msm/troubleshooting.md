@@ -1,10 +1,12 @@
 ---
 title: Solução de problemas e perguntas frequentes do MSM
 description: Descubra como solucionar os problemas mais comuns relacionados ao MSM e obter respostas para as perguntas mais comuns relacionadas ao MSM.
+feature: Gerenciamento de vários sites
+role: Administrador
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -65,7 +67,7 @@ Consulte [este artigo](best-practices.md) para obter mais informações sobre es
 
 ### Como posso remover as permissões de implantação de um grupo de autores? {#remove-rollout-permissions}
 
-Não há privilégio **rollout** que possa ser definido ou removido para principais do AEM (usuários ou grupos).
+Não há privilégio **rollout** que possa ser definido ou removido para entidades principais AEM (usuários ou grupos).
 
 Como alternativa, você pode:
 
