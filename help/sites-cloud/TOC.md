@@ -4,11 +4,14 @@ sub-product: Criação de conteúdo no AEM as a Cloud Service
 user-guide-title: Criação de conteúdo no AEM as a Cloud Service
 breadcrumb-title: Guia de criação
 user-guide-description: Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service.
+feature-set: Experience Manager Sites
+feature: 'Criação  '
+role: Profissional
 translation-type: tm+mt
-source-git-commit: e381c83eb37e3b2ede1de20eb2f7e3a6eb51ce5e
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 72%
+source-wordcount: '310'
+ht-degree: 73%
 
 ---
 
@@ -65,8 +68,8 @@ ht-degree: 72%
       + [Promoção de lançamentos](authoring/launches/promoting.md)
    + Fluxos de trabalhos {#workflows}
       + [Trabalhar com fluxos de trabalho](authoring/workflows/overview.md)
-      + [Aplicação de fluxos de trabalho às páginas](authoring/workflows/applying.md)
-      + [Participação em fluxos de trabalho](authoring/workflows/participating.md)
+      + [Aplicação de fluxos de trabalho a páginas](authoring/workflows/applying.md)
+      + [Participar de fluxos de trabalho](authoring/workflows/participating.md)
    + Personalização {#personalization}
       + [Visão geral da personalização](authoring/personalization/overview.md)
       + [Visualização de páginas usando dados do ContextHub](authoring/personalization/contexthub.md)
@@ -80,10 +83,10 @@ ht-degree: 72%
       + [Configuração da segmentação com o ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registro, logon e perfil do usuário](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Administração {#administering}
-   + [Administração de fluxos de trabalho](administering/workflows-administering.md)
+   + [Administração de workflows](administering/workflows-administering.md)
    + Reutilizar Conteúdo {#reusing-content}
       + [MSM e tradução](administering/msm-and-translation.md)
-      + Gerenciador de vários sites {#msm}
+      + Gerenciamento de vários sites {#msm}
          + [Visão geral do MSM e da Live Copy](administering/msm/overview.md)
          + [Configurar a sincronização da Live Copy](administering/msm/live-copy-sync-config.md)
          + [Criação e sincronização de cópias em tempo real](administering/msm/creating-live-copies.md)
