@@ -1,10 +1,12 @@
 ---
 title: Reutilizar conteúdo - Gerenciador de vários sites e Live Copy
-description: Obtenha uma introdução sobre como reutilizar conteúdo com as poderosas Live Copies do AEM e os recursos do Multi Site Manager.
+description: Obtenha uma introdução sobre como reutilizar conteúdo com AEM Live Copies e os recursos do Multi Site Manager.
+feature: Gerenciamento de vários sites
+role: Administrador
 translation-type: tm+mt
-source-git-commit: b22d972adeaec6af4f15e11fa3359758a1ed77c3
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2686'
 ht-degree: 1%
 
 ---
@@ -39,7 +41,7 @@ Há muitos casos de uso para MSM e Live Copies. Alguns cenários incluem:
 
    Por exemplo, a seção em inglês da amostra de tutorial [WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) é criada para clientes nos EUA. A maior parte do conteúdo deste site também pode ser usada para outros sites WKND que atendem clientes que falam inglês de diferentes países e culturas. O conteúdo principal permanece o mesmo em todos os sites, enquanto os ajustes regionais podem ser feitos.
 
-   A seguinte estrutura pode ser usada para sites dos Estados Unidos e Canadá. Observe como o nó `language-masters` mantém a cópia mestre não apenas do inglês, mas de outro conteúdo de idioma. Esse conteúdo pode ser usado como a base para o conteúdo adicional em língua regional, ao lado do inglês.
+   A seguinte estrutura pode ser usada para sites dos Estados Unidos e Canadá. Observe como o nó `language-masters` mantém a cópia principal não apenas do inglês, mas de outro conteúdo de idioma. Esse conteúdo pode ser usado como a base para o conteúdo adicional em língua regional, ao lado do inglês.
 
    ```xml
    /content
@@ -140,7 +142,7 @@ O MSM é diretamente acessível na interface do usuário usando várias opções
 
 >[!NOTE]
 >
->Os aspectos da funcionalidade MSM são usados em vários outros recursos do AEM, como Inicializações. Nesses casos, a Live Copy é gerenciada por esse recurso.
+>Os aspectos da funcionalidade MSM são usados em vários outros recursos AEM, como Inicializações. Nesses casos, a Live Copy é gerenciada por esse recurso.
 
 ### Termos usados {#terms-used}
 
@@ -183,9 +185,9 @@ Uma Live Copy do MSM é uma cópia do conteúdo específico do site para o qual 
    * Profundo: a página, junto com suas páginas secundárias
 * As regras de sincronização, chamadas de configurações de implementação, determinam quais propriedades são sincronizadas e quando a sincronização ocorre.
 
-No exemplo anterior, `/content/wknd/language-masters/en` é o site mestre global em inglês. Para reutilizar o conteúdo deste site, as Live Copies do MSM são criadas:
+No exemplo anterior, `/content/wknd/language-masters/en` é o site principal global em inglês. Para reutilizar o conteúdo deste site, as Live Copies do MSM são criadas:
 
-* O conteúdo abaixo `/content/wknd/language-masters/en` é a fonte.
+* O conteúdo abaixo de `/content/wknd/language-masters/en` é a fonte.
 * O conteúdo abaixo `/content/wknd/language-masters/en` é copiado abaixo dos nós `/content/wknd/us/en/` e `/content/wknd/ca/en`. Estas são as Live Copies.
 * Os autores fazem alterações nas páginas abaixo `/content/wknd/language-masters/en`.
 * Quando acionado, o MSM sincroniza essas alterações nas Live Copies.
@@ -215,7 +217,7 @@ As alterações podem ser [sincronizadas](creating-live-copies.md#synchronizing-
 
 #### Live Copy com páginas {#live-copy-with-non-live-copy-pages} que não são da Live Copy
 
-Ao criar uma Live Copy no AEM, você pode ver e navegar pela ramificação Live Copy e usar a funcionalidade normal do AEM na ramificação Live Copy. Isso significa que você (ou um processo) pode criar novos recursos (páginas e/ou parágrafos) dentro da Live Copy. Por exemplo, um produto para uma determinada região ou país.
+Ao criar uma Live Copy no AEM, você pode ver e navegar pela ramificação Live Copy e usar a funcionalidade AEM normal na ramificação Live Copy. Isso significa que você (ou um processo) pode criar novos recursos (páginas e/ou parágrafos) dentro da Live Copy. Por exemplo, um produto para uma determinada região ou país.
 
 * Esses recursos não têm relacionamento dinâmico com as páginas de origem/blueprint e não são sincronizados.
 * Podem ocorrer cenários que o MSM lida como casos especiais. Por exemplo, quando você (ou um processo) cria uma página com a mesma posição e nome nas ramificações de origem/blueprint e Live Copy. Para essas situações, consulte [Conflitos de implementação MSM](rollout-conflicts.md) para obter mais informações.
@@ -235,7 +237,7 @@ Por exemplo, os links que apontam do segundo ao primeiro blueprint serão reescr
 
 >[!NOTE]
 >
->Se você mover ou renomear uma página na ramificação Live Copy, isso será tratado como uma Live Copy aninhada para permitir que o AEM rastreie os relacionamentos.
+>Se você mover ou renomear uma página na ramificação Live Copy, ela será tratada como uma Live Copy aninhada para permitir que o AEM rastreie os relacionamentos.
 
 #### Cópias online empilhadas {#stacked-live-copies}
 
