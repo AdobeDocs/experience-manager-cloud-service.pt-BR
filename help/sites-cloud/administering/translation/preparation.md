@@ -1,10 +1,12 @@
 ---
 title: Preparação de conteúdo para tradução
 description: Saiba como preparar conteúdo para tradução.
+feature: Cópia de idioma
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -45,14 +47,14 @@ O [site tutorial WKND](/help/implementing/developing/introduction/develop-wknd-t
             |- it
 ```
 
-A cópia de idioma para a qual você criou originalmente o conteúdo do site é o idioma mestre. O idioma mestre é a fonte traduzida para outros idiomas.
+A cópia de idioma para a qual você criou originalmente o conteúdo do site é o idioma principal. O idioma principal é a fonte traduzida para outros idiomas.
 
 Cada ramificação de idioma de um site é chamada de cópia de idioma. A página raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/wknd/fr` é a raiz do idioma para a cópia em francês. As cópias de idioma devem usar uma [raiz de idioma corretamente configurada](preparation.md#creating-a-language-root) para que o idioma correto seja direcionado quando as traduções de um site de origem forem executadas.
 
 Use as seguintes etapas para preparar seu site para tradução:
 
-1. Crie a raiz do idioma do mestre em idiomas. Por exemplo, a raiz do idioma do site de demonstração WKND em inglês é `/content/wknd/language-masters/en`. Certifique-se de que a raiz do idioma esteja configurada corretamente de acordo com as informações em [Criação de uma Raiz de Idioma](preparation.md#creating-a-language-root).
-1. Crie o conteúdo do seu idioma mestre.
+1. Crie a raiz do idioma do principal. Por exemplo, a raiz do idioma do site de demonstração WKND em inglês é `/content/wknd/language-masters/en`. Certifique-se de que a raiz do idioma esteja configurada corretamente de acordo com as informações em [Criação de uma Raiz de Idioma](preparation.md#creating-a-language-root).
+1. Crie o conteúdo do seu idioma principal.
 1. Crie a raiz de idioma de cada cópia de idioma para o site. Por exemplo, a cópia em francês do site de amostra WKND é `/content/wknd/language-masters/fr`.
 
 Depois de preparar o conteúdo para tradução, você pode criar automaticamente as páginas ausentes em suas cópias de idioma e projetos de tradução associados. (Consulte [Criação de um projeto de tradução](managing-projects.md).) Para obter uma visão geral do processo de tradução de conteúdo no AEM, consulte [Tradução de conteúdo para sites multilíngues](overview.md).
@@ -83,7 +85,7 @@ Você pode usar qualquer um dos formatos, de acordo com a estrutura escolhida pa
 
 ## Ver o status das raízes de idioma {#seeing-the-status-of-language-roots}
 
-O AEM fornece um painel **Referências** que mostra uma lista de raízes de idioma que foram criadas.
+AEM fornece um painel **Referências** que mostra uma lista de raízes de idioma que foram criadas.
 
 ![Raízes linguísticas](../assets/language-roots.png)
 
@@ -140,4 +142,4 @@ Essa cópia de idioma `es` não será detectada, pois está a dois níveis (`ame
 
 >[!TIP]
 >
->Nessa configuração, as raízes de idioma podem ter qualquer nome de página, em vez de apenas o código ISO do idioma. O AEM sempre verificará o caminho e o nome primeiro, mas se o nome da página não identificar um idioma, o AEM verificará a propriedade `cq:language` da página para a identificação do idioma.
+>Nessa configuração, as raízes de idioma podem ter qualquer nome de página, em vez de apenas o código ISO do idioma. AEM sempre verificará o caminho e o nome primeiro, mas se o nome da página não identificar um idioma, AEM verificará a propriedade `cq:language` da página para a identificação do idioma.
