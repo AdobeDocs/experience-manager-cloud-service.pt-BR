@@ -1,10 +1,11 @@
 ---
 title: Uso de conjuntos de regras para transformar URLs
-description: Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições.
+description: Saiba como implantar conjuntos de regras no Dynamic Media para transformar URLs. Os conjuntos de regras são conjuntos de instruções escritas em uma linguagem de script (como JavaScript) que avalia dados XML e executa determinadas ações se esses dados atenderem a determinadas condições.
+topic: Profissional
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '770'
 ht-degree: 5%
 
 ---
@@ -12,40 +13,40 @@ ht-degree: 5%
 
 # Uso de conjuntos de regras para transformar URLs {#using-rulesets-to-transform-urls}
 
-Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. Cada regra consiste em pelo menos uma condição e pelo menos uma ação. Uma regra avalia os dados XML em relação às condições e, se uma condição for atendida, ela executará a ação apropriada. Exemplos de conjuntos de regras incluem:
+Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Os conjuntos de regras são conjuntos de instruções escritas em uma linguagem de script (como JavaScript) que avalia dados XML e executa determinadas ações se esses dados atenderem a determinadas condições. Cada regra consiste em pelo menos uma condição e pelo menos uma ação. Uma regra avalia os dados XML em relação às condições e, se uma condição for atendida, tomará a ação apropriada. Exemplos de conjuntos de regras incluem:
 
-* Adicionando um sufixo de tipo MIME. Muitos serviços e sites exigem sufixos de imagem, como adicionar `.jpg` a um URL.
-* Criando um caminho de pasta para o URL para fins de SEO (Search Engine Otimization).
+* Adicionar um sufixo do tipo MIME. Muitos serviços e sites exigem sufixos de imagem, como adicionar `.jpg` a um URL.
+* Criação de um caminho de pasta para o URL para fins de SEO (Otimização de Mecanismo de Pesquisa).
 
    Consulte [Como o Adobe Dynamic Media Classic suporta SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
-* Adicionar metadados ao URL para fins de SEO (Search Engine Otimization).
+* Adicionar metadados ao URL para fins de SEO (Otimização de mecanismo de pesquisa).
 
    Consulte [Como o Adobe Dynamic Media Classic suporta SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Definir a disposição do conteúdo para acionar um download.
-* Simplificar o serviço de imagens modelando URLs para personalização. Por exemplo, transforme `rgb{XX,YY,ZZ}` em RTF-ready `\redXX\greenYY\blueZZ`
+* Simplifique os URLs de modelos do Image Serving para personalização. Por exemplo, transformar `rgb{XX,YY,ZZ}` em RTF-ready `\redXX\greenYY\blueZZ`
 
-* Solicite que determinados caracteres sejam codificados, como `$`, `{` e `}`, e que determinados caracteres sejam decodificados em direção ao ImageServer. Por exemplo, o Facebook não funciona bem com URLs que contêm caracteres especiais.
+* Solicite determinados caracteres a serem codificados, como `$`, `{` e `}`, e determinados caracteres a serem decodificados para o ImageServer. Por exemplo, o Facebook não funciona bem com URLs contendo caracteres especiais.
 
-   Consulte [Remoção de caracteres especiais de URLs](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
+   Consulte [Removendo caracteres especiais de URLs](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-No contexto da Dynamic Media, os sites que usam um sistema baseado em XML para gerenciar informações de ativos podem carregar arquivos XML para a Dynamic Media. Você pode designar um desses arquivos como o arquivo de conjunto de regras de pré-processamento para servir ativos Dynamic Media. Esse arquivo reestrutura o formato padrão do protocolo URL para atender à lógica comercial dos sistemas que estão sendo integrados à Dynamic Media. Especifique um arquivo XML para servir como o caminho de arquivo de definições de conjuntos de regras.
+No contexto do Dynamic Media, os sites que usam um sistema baseado em XML para gerenciar informações de ativos podem fazer upload de arquivos XML para o Dynamic Media. Você pode designar um desses arquivos como o arquivo de conjunto de regras de pré-processamento para servir ativos do Dynamic Media. Esse arquivo reestrutura o formato de protocolo URL padrão para atender à lógica comercial dos sistemas que estão sendo integrados ao Dynamic Media. Você especifica um arquivo XML a ser exibido como o caminho de arquivo das definições do conjunto de regras.
 
 >[!CAUTION]
 >
->Tenha cuidado ao usar conjuntos de regras; eles podem impedir que o conteúdo do Dynamic Media seja exibido em seu site.
+>Tenha cuidado ao usar conjuntos de regras; elas podem impedir que o conteúdo do Dynamic Media seja exibido no seu site.
 
-Existem conjuntos de regras de amostra disponíveis que podem ajudar a criar seu próprio conjunto de regras.
+Existem conjuntos de regras de amostra disponíveis que podem ajudar você a criar seu próprio conjunto de regras.
 Consulte [Referência do conjunto de regras](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
-Como ocorre com a criação de todo o conjunto de regras, verifique se o arquivo XML é válido antes de carregá-lo usando um programa validador XML, como xmlvalid.
+Como em toda a criação do conjunto de regras, certifique-se de que o arquivo XML seja válido antes de fazer upload usando um programa de validação XML, como xmlvalid.
 Consulte também [Resolução de problemas de conjuntos de regras](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
 
-Além disso, primeiro teste seu conjunto de regras em um ambiente temporário que não afete seu ambiente de produção em tempo real.
-Ambientes de produção e ambientes de preparo geralmente exigem logons diferentes.
+Além disso, certifique-se de testar primeiro seu conjunto de regras em um ambiente de preparo que não afete seu ambiente de produção ativo.
+Ambientes de produção e ambientes de preparo normalmente exigem logons diferentes.
 
-Consulte o aplicativo de desktop Dynamic Media Classic [Adobe para obter informações de logon](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+Consulte o [aplicativo de desktop Adobe Dynamic Media Classic para obter informações de logon](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -55,28 +56,28 @@ Consulte também [Usar a imagem &#39;asset&#39; em vez de &#39;is&#39; em um con
 
 **Para implantar conjuntos de regras XML:**
 
-1. Abra o [aplicativo Dynamic Media Classic para desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
-   Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
+   Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
 
-1. Carregue seu arquivo de conjunto de regras fazendo o seguinte:
+1. Faça upload do arquivo de conjunto de regras fazendo o seguinte:
 
-   * Na barra Navegação global, clique em **[!UICONTROL Carregar]**.
-   * Na página **[!UICONTROL Carregar]**, próximo ao canto superior esquerdo, clique em **[!UICONTROL Procurar]**.
-   * Na caixa de diálogo **[!UICONTROL Abrir]**, navegue até o arquivo de conjunto de regras (XML).
+   * Na barra Navegação global, clique em **[!UICONTROL Fazer upload]**.
+   * Na página **[!UICONTROL Upload]**, próximo ao canto superior esquerdo, clique em **[!UICONTROL Procurar]**.
+   * Na caixa de diálogo **[!UICONTROL Abrir]**, navegue até o arquivo do conjunto de regras (XML).
    * Selecione o arquivo e clique em **[!UICONTROL Abrir]**.
-   * No lado direito da página **[!UICONTROL Carregar]**, selecione uma pasta de destino para o arquivo de conjunto de regras.
-   * Próximo à parte inferior da página, verifique se **[!UICONTROL Publicar após carregar]** está marcada.
+   * No lado direito da página **[!UICONTROL Upload]**, selecione uma pasta de destino para o arquivo de conjunto de regras.
+   * Próximo à parte inferior da página, verifique se **[!UICONTROL Publicar após o upload]** está marcado.
    * No canto inferior direito da página, clique em **[!UICONTROL Enviar upload]**.
-   * Na barra Navegação global, clique em **[!UICONTROL Tarefas]** para verificar o status do trabalho de upload. Quando a coluna **[!UICONTROL Status]** na página **[!UICONTROL Job]** exibir Carregar concluído, vá para as próximas etapas.
+   * Na barra Navegação global, clique em **[!UICONTROL Trabalhos]** para verificar o status do trabalho de upload. Quando a coluna **[!UICONTROL Status]** na página **[!UICONTROL Trabalho]** exibir Carregar concluído, continue para as próximas etapas.
 
-1. Na barra de navegação próxima à parte superior da página, clique em **[!UICONTROL Configuração > Configuração de aplicativo > Configuração de publicação > Servidor de imagem]**.
+1. Na barra de navegação próxima à parte superior da página, clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configuração de publicação > Servidor de imagem]**.
 1. Na página **[!UICONTROL Publicação do servidor de imagens]**, no grupo **[!UICONTROL Gerenciamento de catálogo]**, localize o **[!UICONTROL Caminho do arquivo de definição de conjunto de regras]** e clique em **[!UICONTROL Selecionar]**.
 1. Na página **[!UICONTROL Selecionar arquivo de definição do conjunto de regras (XML)]**, navegue até o arquivo de conjunto de regras e, no canto inferior direito da página, clique em **[!UICONTROL Selecionar]**.
-1. No canto inferior direito da página Configuração, clique em **[!UICONTROL Fechar]**.
-1. Execute um trabalho de publicação do Image Server.
+1. No canto inferior direito da página Configurar, clique em **[!UICONTROL Fechar]**.
+1. Execute um trabalho de publicação do servidor de imagens.
 
-   As condições do conjunto de regras são aplicadas às solicitações dos Dynamic Media Image Servers ativos.
+   As condições do conjunto de regras são aplicadas nas solicitações dos Servidores de Imagem Dynamic Media ao vivo.
 
-   Se você fizer alterações no arquivo do conjunto de regras, as alterações serão aplicadas imediatamente quando você fizer upload e publicar novamente o arquivo atualizado do conjunto de regras.
+   Se você fizer alterações no arquivo de conjunto de regras, as alterações serão aplicadas imediatamente quando você fizer upload novamente e publicar novamente o arquivo de conjunto de regras atualizado.
 
