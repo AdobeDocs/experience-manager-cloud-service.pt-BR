@@ -1,10 +1,12 @@
 ---
 title: Conjuntos de mídia mista
 description: Saiba como trabalhar com conjuntos de mídia mista no Dynamic Media.
+feature: Conjuntos de mídia mista
+topic: Profissional
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1469'
 ht-degree: 25%
 
 ---
@@ -154,7 +156,7 @@ Você pode executar várias tarefas de edição em ativos em Conjuntos de mídia
 
    >[!NOTE]
    >
-   >* Para editar os ativos em um Conjunto de mídias mistas - Navegue até o Conjunto de mídias mistas. Toque (não selecione) no conjunto para abri-lo na página Visualização do conjunto do Experience Manager . No painel à esquerda, clique no sinal de seta para baixo para abrir a lista suspensa e toque em **[!UICONTROL Definir membros]**. Na página Definir membros , passe o mouse sobre um ativo e toque em **[!UICONTROL Editar]** (ícone de lápis) para abrir a página de edição.
+   >* Para editar os ativos em um Conjunto de mídias mistas - Navegue até o Conjunto de mídias mistas. Toque (não selecione) no conjunto para abri-lo na página Visualização do conjunto de Experience Manager. No painel à esquerda, clique no sinal de seta para baixo para abrir a lista suspensa e toque em **[!UICONTROL Definir membros]**. Na página Definir membros , passe o mouse sobre um ativo e toque em **[!UICONTROL Editar]** (ícone de lápis) para abrir a página de edição.
       >
       >
    * Para excluir um conjunto de mídia mista inteiro - A partir de qualquer modo de exibição (como a Exibição de cartão ou em Coluna), navegue até o conjunto de mídias mistas. Passe o mouse sobre o conjunto e toque em **[!UICONTROL Selecionar]** (ícone de marca de seleção). Pressione **[!UICONTROL Backspace]** no teclado ou toque em **[!UICONTROL Mais]** (linha de três pontos) e toque em **[!UICONTROL Excluir]**.
