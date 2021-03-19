@@ -1,11 +1,13 @@
 ---
 title: Conflitos de implementação
 description: Saiba como gerenciar e resolver conflitos de implementação do Multi Site Manager.
+feature: Gerenciamento de vários sites
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 2%
+source-wordcount: '927'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +26,7 @@ Para garantir que a implantação não seja bloqueada, as possíveis definiçõe
 * Quais páginas serão renomeadas (e como)
 * Como isso afetará qualquer conteúdo publicado
 
-O comportamento padrão do AEM pronto para uso é que o conteúdo publicado não será afetado. Portanto, se uma página que foi criada manualmente na ramificação da Live Copy tiver sido publicada, esse conteúdo ainda será publicado após a manipulação e implantação do conflito.
+O comportamento padrão AEM pronto para uso é que o conteúdo publicado não será afetado. Portanto, se uma página que foi criada manualmente na ramificação da Live Copy tiver sido publicada, esse conteúdo ainda será publicado após a manipulação e implantação do conflito.
 
 Além da funcionalidade padrão, os manipuladores de conflito personalizados podem ser adicionados para implementar regras diferentes. Isso também pode permitir a publicação de ações como um processo individual.
 
@@ -34,7 +36,7 @@ Nas seções a seguir, usamos o exemplo de uma nova página `b`, criada no bluep
 
 * blueprint: `/b`
 
-   Uma página mestre com 1 página secundária, `bp-level-1`
+   Uma página principal com 1 página secundária, `bp-level-1`
 
 * Live Copy: `/b`
 
@@ -57,13 +59,13 @@ O gerenciador de implementação permite ativar ou desativar o gerenciamento de 
 
 Isso é feito usando a [configuração OSGi](/help/implementing/deploying/configuring-osgi.md) de **Gerenciador de implementação do WCM CQ do dia**. Defina o valor **Lidar com conflito com páginas criadas manualmente** ( `rolloutmgr.conflicthandling.enabled`) como true se o gerenciador de implementação deve lidar com conflitos de uma página criada na Live Copy com um nome que existe no blueprint.
 
-O AEM tem [comportamento predefinido quando o gerenciamento de conflitos foi desativado.](#behavior-when-conflict-handling-deactivated)
+AEM tem [comportamento predefinido quando o gerenciamento de conflitos foi desativado.](#behavior-when-conflict-handling-deactivated)
 
 ## Manipuladores de conflito {#conflict-handlers}
 
 O AEM usa manipuladores de conflitos para resolver quaisquer conflitos de página que existam ao implantar conteúdo de um blueprint em uma Live Copy. A renomeação de páginas é o método usual (não apenas) para resolver esses conflitos. Mais de um manipulador de conflitos pode ser operacional para permitir uma seleção de comportamentos diferentes.
 
-O AEM fornece:
+AEM fornece:
 
 * O [manipulador de conflitos padrão](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
@@ -116,11 +118,11 @@ Os manipuladores de conflitos personalizados podem:
 
 ### Comportamento quando a manipulação de conflitos é desativada {#behavior-when-conflict-handling-deactivated}
 
-Se você desativar manualmente [a manipulação de conflitos,](#rollout-manager-and-conflict-handling) o AEM não executará nenhuma ação em nenhuma página em conflito. As páginas não conflitantes são implantadas conforme esperado.
+Se você desativar manualmente [a manipulação de conflitos,](#rollout-manager-and-conflict-handling) AEM não executa nenhuma ação em páginas em conflito. As páginas não conflitantes são implantadas conforme esperado.
 
 >[!CAUTION]
 >
->Quando a manipulação de conflitos está desativada, o AEM não dá nenhuma indicação de que os conflitos estão sendo ignorados. Como nesses casos, esse comportamento deve ser configurado explicitamente, assume-se que é o comportamento desejado.
+>Quando a manipulação de conflitos é desativada, AEM não dá qualquer indicação de que os conflitos estão sendo ignorados. Como nesses casos, esse comportamento deve ser configurado explicitamente, assume-se que é o comportamento desejado.
 
 Nesse caso, a Live Copy tem prioridade. A página do blueprint `/b` não é copiada e a página da Live Copy `/b` é deixada intocada.
 
