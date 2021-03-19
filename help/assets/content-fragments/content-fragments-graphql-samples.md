@@ -2,9 +2,9 @@
 title: Saiba como usar GraphQL com AEM - Conteúdo de amostra e consultas
 description: Saiba como usar GraphQL com AEM - Conteúdo de amostra e Consultas.
 translation-type: tm+mt
-source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
+source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1741'
 ht-degree: 5%
 
 ---
@@ -69,7 +69,7 @@ A operação básica de consultas com GraphQL para AEM adere à especificação 
 
       * `_operator` : Aplicar operadores específicos;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
          * Consulte [Consulta de Amostra - Todas as Pessoas que não têm um nome &quot;Trabalhos&quot;](#sample-all-persons-not-jobs)
-         * Consulte [Exemplo de consulta - Todas as empresas cujas `_path` iniciam com um prefixo específico](#sample-wknd-all-adventures-cycling-path-filter)
+         * Consulte [Exemplo de consulta - Todas as empresas onde o `_path` começa com um prefixo específico](#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : Aplicar condições específicas; por exemplo,   `AT_LEAST_ONCE`
          * Consulte [Exemplo de consulta - Filtrar em uma matriz com um item que deve ocorrer pelo menos uma vez](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : para ignorar o caso ao consultar
@@ -664,7 +664,7 @@ query {
 
 ### Consulta de amostra - Todas as empresas cujas `_path` estejam a começar com um prefixo específico {#sample-wknd-all-adventures-cycling-path-filter}
 
-Todos `adventures` cujo `_path` está começando com um prefixo específico (`/content/dam/wknd/en/adventures/cycling`).
+Todos `adventures` onde `_path` começa com um prefixo específico (`/content/dam/wknd/en/adventures/cycling`).
 
 **Exemplo de consulta**
 
