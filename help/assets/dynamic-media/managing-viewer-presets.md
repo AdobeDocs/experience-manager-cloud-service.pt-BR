@@ -1,10 +1,12 @@
 ---
 title: Gerenciar predefinições do visualizador
-description: Como criar e gerenciar predefinições do visualizador no Dynamic Media.
+description: Saiba como criar e gerenciar predefinições do visualizador no Dynamic Media.
+feature: Predefinições do visualizador, visualizadores
+topic: Profissional
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '4239'
+source-wordcount: '4245'
 ht-degree: 13%
 
 ---
@@ -23,7 +25,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-Consulte também o [Guia de referência de visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Consulte também o [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Esta seção descreve como criar, editar e gerenciar predefinições do visualizador. Você pode aplicar uma predefinição do visualizador a um ativo a qualquer momento que o visualizar. Consulte [Aplicação de predefinições do visualizador](#applying-a-viewer-preset-to-an-asset).
 
@@ -39,7 +41,7 @@ Consulte também [Acessibilidade e navegação do teclado](https://experiencelea
 
 ## Gerenciar predefinições do visualizador {#managing-viewer-presets-1}
 
-Você pode adicionar, editar, excluir, publicar, cancelar a publicação e visualizar predefinições do visualizador no Adobe Experience Manager ao tocar em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos] > [!UICONTROL Predefinições do visualizador]**.
+Adicione, edite, exclua, publique, cancele a publicação e visualize predefinições do visualizador no Adobe Experience Manager ao tocar em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos] > [!UICONTROL Predefinições do visualizador]**.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -60,7 +62,7 @@ Consulte [Biblioteca de imagens estáticas responsivas](https://experienceleague
 
 ### Compatibilidade do sistema de predefinições do visualizador {#viewer-preset-system-compatibility}
 
-Todas as predefinições do visualizador prontas para uso que vêm com o Dynamic Media são totalmente compatíveis com os seguintes sistemas:
+Todas as predefinições do visualizador prontas para uso que acompanham o Dynamic Media são totalmente compatíveis com os seguintes sistemas:
 
 * Desktops
 * Apple iPhone
@@ -389,7 +391,7 @@ O Experience Manager mostra uma grande variedade de predefinições do visualiza
 
 A criação de predefinições do visualizador permite aplicar várias configurações para visualizar e interagir com ativos. No entanto, não é necessário criar predefinições do visualizador. Se preferir, você pode usar as predefinições padrão do visualizador pronto para uso que já vêm com os Ativos do Experience Manager.
 
-Se você optar por criar uma predefinição do visualizador, depois de salvá-la, o estado do visualizador será ativado automaticamente (definido como **[!UICONTROL On]**) na página Predefinições do visualizador. Esse estado significa que está visível no componente Mídia dinâmica e no componente Mídia interativa e sempre que você visualiza uma imagem ou vídeo.
+Se você optar por criar uma predefinição do visualizador, depois de salvá-la, o estado do visualizador será ativado automaticamente (definido como **[!UICONTROL On]**) na página Predefinições do visualizador. Esse estado significa que está visível no componente Dynamic Media e no componente Mídia interativa e sempre que você visualiza uma imagem ou vídeo.
 
 Algumas predefinições do visualizador têm configurações exclusivas que podem afetar o uso e o comportamento geral do visualizador. Dependendo da predefinição do visualizador que você criar, esteja ciente dessas considerações especiais.
 
@@ -530,7 +532,7 @@ As Predefinições do visualizador disponíveis na interface do usuário depende
 
 ## Predefinições do visualizador de publicação {#publishing-viewer-presets}
 
-Ativar (ou ativar) o estado de uma predefinição do visualizador significa que ela está visível no componente Mídia dinâmica, no componente Mídia interativa e sempre que você exibe um ativo.
+Ativar (ou ativar) o estado de uma predefinição do visualizador significa que ela está visível no componente Dynamic Media, no componente Mídia interativa e sempre que você exibe um ativo.
 
 No entanto, para *fornecer* um ativo com uma predefinição do visualizador, a predefinição do visualizador também deve ser publicada. Todas as predefinições do visualizador devem ser ativadas *e* publicadas para obter o URL ou código incorporado de um ativo. Ative e publique todas as predefinições do visualizador prontas para uso que acompanham o Dynamic Media. As predefinições do visualizador personalizado criadas e adicionadas são ativadas automaticamente, mas também devem ser publicadas.
 
@@ -597,4 +599,4 @@ Se já tiver publicado o ativo e o visualizador selecionado, os botões **[!UICO
 
 Para obter os URLs das Predefinições do visualizador, consulte [Vincular URLs à sua aplicação web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Consulte também [Incorporação do visualizador de vídeo em uma página da Web](/help/assets/dynamic-media/embed-code.md).
 
-Se você estiver usando o Experience Manager como WCM, poderá adicionar ativos usando as predefinições do visualizador diretamente na página. Consulte [Adicionar ativos de mídia dinâmica às páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Se você estiver usando o Experience Manager como o WCM, poderá adicionar ativos usando as predefinições do visualizador diretamente na página. Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
