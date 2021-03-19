@@ -2,9 +2,9 @@
 title: Integração com o Adobe Target
 description: 'Integração com o Adobe Target '
 translation-type: tm+mt
-source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
+source-git-commit: 2e40a5a1cfe3919d678abeef2726fbc303c2e6b2
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1042'
 ht-degree: 2%
 
 ---
@@ -12,135 +12,135 @@ ht-degree: 2%
 
 # Integração com o Adobe Target{#integrating-with-adobe-target}
 
-Como parte do Adobe Marketing Cloud, a Adobe Target permite aumentar a relevância do conteúdo por meio da definição de metas e medição em todos os canais. A integração do Adobe Target e do AEM como Cloud Service exige:
+Como parte da Adobe Marketing Cloud, o Adobe Target permite aumentar a relevância do conteúdo por meio do direcionamento e da medição em todos os canais. A integração do Adobe Target e do AEM como Cloud Service requer:
 
-* usando a interface de usuário para toque para criar uma Configuração de Público alvo em AEM como Cloud Service (configuração IMS necessária).
-* adicionar e configurar o Adobe Target como uma extensão em [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* Usar a interface do usuário de toque para criar uma Configuração do Target no AEM como um Cloud Service (configuração IMS necessária).
+* adicionar e configurar o Adobe Target como uma extensão no [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-O Adobe Launch é necessário para gerenciar as propriedades do cliente para o Analytics e o Público alvo em páginas AEM (bibliotecas/tags do JS). Dito isso, a integração com o Launch é necessária para a &quot;definição de metas de experiência&quot;. Para que os Fragmentos de experiência exportem para o Público alvo, você precisa apenas da Configuração Adobe Target e IMS.
+O Adobe Launch é necessário para gerenciar propriedades do lado do cliente para o Analytics e o Target em páginas AEM (bibliotecas/tags JS). Dito isso, a integração com o Launch é necessária para o &quot;direcionamento de experiência&quot;. Para exportar Fragmentos de experiência para o Target, você precisa apenas da Configuração do Adobe Target e do IMS.
 
 >[!NOTE]
 >
->A Adobe Experience Manager como cliente Cloud Service que não tem uma conta de Público alvo existente pode solicitar acesso ao Público alvo Foundation Pack para Experience Cloud. O Foundation Pack fornece utilização limitada em volume do Público alvo.
+>Os clientes do Adobe Experience Manager as a Cloud Service que não têm uma conta Target existente podem solicitar acesso ao Target Foundation Pack para Experience Cloud. O Foundation Pack fornece uso limitado por volume do Target.
 
-## Criando a Configuração do Adobe Target {#create-configuration}
+## Criação da configuração do Adobe Target {#create-configuration}
 
 1. Navegue até **Ferramentas** → **Cloud Services**.
    ![](assets/cloudservice1.png "Navegação")
 2. Selecione **Adobe Target**.
-3. Selecione o botão **Criar**.
-   ![](assets/tenant1.png "CriarCriar")
+3. Selecione o botão **Create**.
+   ![](assets/tenant1.png "Criar")
 4. Preencha os detalhes (veja abaixo) e selecione **Connect**.
-   ![](assets/open_screen1.png "Connect")
+   ![](assets/open_screen1.png "ConnectConnect")
 
 ### Configuração IMS {#ims-configuration}
 
-Uma configuração IMS para o Launch e o Público alvo é necessária para integrar corretamente o Público alvo ao AEM e ao Launch. Embora a configuração IMS para Inicialização seja pré-configurada em AEM como um Cloud Service, a configuração IMS do Público alvo deve ser criada (após o Público alvo ser provisionado). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [esta página](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) para saber como criar a configuração IMS do Público alvo.
+Uma configuração IMS para o Launch e o Target é necessária para integrar corretamente o Target ao AEM e ao Launch. Embora a configuração IMS do Launch seja pré-configurada no AEM como um Cloud Service, a configuração do IMS do Target deve ser criada (após o provisionamento do Target). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) e [esta página](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) para saber como criar a configuração IMS do Target.
 
-### ID do locatário da Adobe Target e Código do cliente Adobe Target {#tenant-client}
+### ID de locatário da Adobe Target e código de cliente do Adobe Target {#tenant-client}
 
 Ao configurar os campos Adobe Target Tenant ID e Adobe Target Client Code, esteja ciente do seguinte:
 
 1. Para a maioria dos clientes, a ID do locatário e o código do cliente são os mesmos. Isso significa que ambos os campos contêm as mesmas informações e são idênticos. Certifique-se de inserir a ID do locatário em ambos os campos.
-2. Para fins herdados, também é possível inserir valores diferentes nos campos ID do locatário e Código do cliente.
+2. Para fins herdados, você também pode inserir valores diferentes nos campos ID do locatário e Código do cliente .
 
 Em ambos os casos, esteja ciente de que:
 
-* Por padrão, o Código do cliente (se adicionado primeiro) também será copiado automaticamente no campo ID do locatário.
-* Você tem a opção de alterar a ID do locatário padrão definida.
-* Dessa forma, as chamadas de backend para o Público alvo serão baseadas na ID do locatário e as chamadas do cliente para o Público alvo serão baseadas no Código do cliente.
+* Por padrão, o Código do cliente (se adicionado primeiro) também é copiado automaticamente para o campo ID do locatário .
+* Você tem a opção de alterar o conjunto padrão de ID de locatário.
+* Assim, as chamadas de back-end para o Target serão baseadas na ID do locatário e as chamadas do lado do cliente para o Target serão baseadas no Código do cliente.
 
-Como já foi dito, o primeiro caso é o mais comum para AEM como Cloud Service. De qualquer forma, verifique se os campos **e** contêm as informações corretas, dependendo de seus requisitos.
+Como dito anteriormente, o primeiro caso é o mais comum para AEM como Cloud Service. De qualquer maneira, verifique se os campos **e** contêm as informações corretas, dependendo de seus requisitos.
 
 >[!NOTE]
 >
-> Se você quiser alterar uma Configuração de Público alvo existente:
+> Se quiser alterar uma Configuração do Target existente:
 >
 > 1. Insira novamente a ID do locatário.
-> 2. Conecte-se novamente ao Público alvo.
+> 2. Conecte-se novamente ao Target.
 > 3. Salve a configuração.
 
 
-### Edição da Configuração do Público alvo {#edit-target-configuration}
+### Editar a configuração do Target {#edit-target-configuration}
 
-Para editar a configuração do Público alvo, siga estas etapas:
+Para editar a configuração do Target, siga estas etapas:
 
 1. Selecione uma configuração existente e clique em **Propriedades**.
 2. Edite as propriedades.
-3. Selecione **Ligar novamente ao Adobe Target**.
+3. Selecione **Reconectar ao Adobe Target**.
 4. Selecione **Salvar e fechar**.
 
-### Adicionando uma configuração a um site {#add-configuration}
+### Adicionar uma configuração a um site {#add-configuration}
 
-Para aplicar uma configuração de interface de usuário de toque a um site, vá para: **Sites** → **Selecione qualquer página do site** → **Propriedades** → **Avançado** → **Configuração** → Selecione o locatário da configuração.
+Para aplicar uma configuração da interface de toque a um site, acesse: **Sites** → **Selecione qualquer página de site** → **Propriedades** → **Avançado** → **Configuração** → Selecione o locatário de configuração.
 
 ## Integração do Adobe Target em sites AEM usando o Adobe Launch {#integrate-target-launch}
 
-AEM oferta uma integração pronta para uso com o Experience Platform Launch. Ao adicionar a extensão do Adobe Target ao Experience Platform Launch, você pode usar os recursos do Adobe Target em AEM página(s) da Web.As bibliotecas de Públicos alvos só serão renderizadas usando o Launch.
+AEM oferece uma integração pronta para uso com o Experience Platform Launch. Ao adicionar a extensão Adobe Target ao Experience Platform Launch, é possível usar os recursos do Adobe Target em AEM páginas da Web. As bibliotecas do Target só serão renderizadas usando o Launch.
 
 >[!NOTE]
 >
->As estruturas existentes (herdadas) ainda funcionam, mas não podem ser configuradas na interface do usuário para toque. É aconselhável recriar as configurações de mapeamento de variáveis no Launch.
+>As estruturas existentes (herdadas) ainda funcionam, mas não podem ser configuradas na interface do usuário de toque. É aconselhável recriar as configurações de mapeamento de variável no Launch.
 
-Como uma visão geral, as etapas de integração são:
+Como visão geral, as etapas de integração são:
 
-1. Criar uma propriedade de inicialização
+1. Criar uma propriedade do Launch
 2. Adicionar as extensões necessárias
-3. Criar um elemento de dados (para capturar parâmetros de hub de contexto)
+3. Criar um elemento de dados (para capturar parâmetros do hub de contexto)
 4. Criar uma regra de página
 5. Criar e publicar
 
-### Criação de uma propriedade Launch {#create-property}
+### Criação de uma propriedade do Launch {#create-property}
 
-Uma propriedade é um container que será preenchido com extensões, regras e elementos de dados.
+Uma propriedade é um container preenchido com extensões, regras, elementos de dados.
 
 1. Selecione o botão **Nova propriedade**.
-2. Forneça um nome para sua propriedade.
-3. Conforme o domínio, digite o IP/host no qual você deseja carregar a biblioteca de inicialização.
-4. Selecione o botão **Salvar**.
+2. Forneça um nome para a propriedade.
+3. Como domínio, insira o IP/host no qual deseja carregar a biblioteca do launch.
+4. Selecione o botão **Save**.
    ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
 
 ### Adicionar as extensões necessárias {#add-extension}
 
-**O** Extensiones é o container que gerencia as configurações principais da biblioteca. A extensão do Adobe Target suporta implementações do lado do cliente usando o Público alvo JavaScript SDK para a Web moderna, o at.js. É necessário adicionar as extensões **Adobe Target** e **Adobe ContextHub**.
+**** As extensões são o contêiner que gerencia as principais configurações da biblioteca. A extensão Adobe Target suporta implementações do lado do cliente usando o SDK JavaScript do Target para a Web moderna, a at.js. Você deve adicionar as extensões **Adobe Target** e **Adobe ContextHub**.
 
-1. Selecione a opção Catálogo de extensão e procure o Público alvo no filtro.
-2. Selecione **Adobe Target** at.js e clique na opção Instalar.
-   ![Pesquisa ](assets/search_ext1.png "do público alvo SearchTarget")
-3. Selecione o botão **Configurar**. Observe a janela de configuração com as credenciais de conta de Público alvo importadas e a versão at.js para essa extensão.
-4. Selecione **Salvar** para adicionar a Extensão do target à propriedade Iniciar. Você pode ver a Extensão do target listada na lista **Extensões instaladas**.
-   ![Salvar extensão ](assets/configure_extension1.png "ExtensionSave")
-5. Repita as etapas acima para pesquisar a extensão **Adobe ContextHub** e instale-a (isso é necessário para a integração com parâmetros contextuais, com base no que a definição de metas será feita).
+1. Selecione a opção Catálogo de extensões e procure pelo Target no filtro .
+2. Selecione **Adobe Target** at.js e clique na opção Instalar .
+   ![Pesquisa do Target ](assets/search_ext1.png "SearchTarget")
+3. Selecione o botão **Configurar**. Observe a janela de configuração com as credenciais de conta do Target importadas e a versão da at.js para essa extensão.
+4. Selecione **Save** para adicionar a extensão do Target à propriedade do Launch. Você deve conseguir ver a extensão do Target listada na lista **Extensões instaladas**.
+   ![Salvar Extensão ](assets/configure_extension1.png "ExtensionSave")
+5. Repita as etapas acima para pesquisar a extensão **Adobe ContextHub** e instalá-la (isso é necessário para a integração com parâmetros contexthub, com base na qual o direcionamento será feito).
 
-### Criando um elemento de dados {#data-element}
+### Criar um elemento de dados {#data-element}
 
-**Os** elementos de dados são os espaços reservados para os quais você pode mapear parâmetros de hub de contexto.
+**Os** elementos de dados são os espaços reservados para os quais você pode mapear parâmetros do hub de contexto.
 
-1. Selecione **Elementos de dados**.
+1. Selecione **Elementos de Dados**.
 2. Selecione **Adicionar elemento de dados**.
-3. Forneça o nome do elemento de dados e mapeie-o para um parâmetro de hub de contexto.
-4. selecione **Salvar**.
+3. Forneça o nome do elemento de dados e o mapeie para um parâmetro de hub de contexto.
+4. Selecione **Salvar**.
    ![Elemento ](assets/data_elem1.png "de dados")
 
-### Criando uma regra de página {#page-rule}
+### Criando uma Regra de Página {#page-rule}
 
-Em **Regra** definimos e ordenamos uma sequência de ações, que serão executadas no site, para atingir a definição de metas.
+Em **Rule** definimos e ordenamos uma sequência de ações, que são executadas no site, para alcançar o direcionamento.
 
-1. Adicione um conjunto de ações como exemplificado na captura de tela.
-   ![](assets/rules1.png "AçõesAções")
-2. Em Adicionar parâmetros a todas as mboxes, adicione o elemento de dados configurado anteriormente (consulte o elemento de dados acima) ao parâmetro que será enviado na chamada da mbox.
+1. Adicione um conjunto de ações, como exemplificado na captura de tela.
+   ![](assets/rules1.png "Ações")
+2. Em Adicionar params a todas as mboxes, adicione o elemento de dados configurado anteriormente (consulte o elemento de dados acima) ao parâmetro que será enviado na chamada de mbox.
    ![](assets/map_data1.png "MboxActions")
 
 ### Criar e publicar {#build-publish}
 
 Para saber como criar e publicar, consulte esta [página](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
 
-## Alterações na estrutura de conteúdo entre as configurações de interface de usuário clássica e de toque {#changes-content-structure}
+## Alterações na estrutura do conteúdo entre as configurações do Classic e do Touch UI {#changes-content-structure}
 
 | **Alterar** | **Configuração da interface clássica** | **Configuração da interface de toque** | **Consequências** |
 |---|---|---|---|
-| Localização da Configuração do Público alvo. | /etc/cloudservices/testandtarget/ | /conf/locatário/settings/cloudservices/público alvo | Anteriormente, várias configurações estavam presentes em /etc/cloudservices/testandtarget, mas agora uma única configuração estará presente sob um locatário. |
+| Localização da configuração do Target. | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Anteriormente, várias configurações estavam presentes em /etc/cloudservices/testandtarget, mas agora uma única configuração está presente em um locatário. |
 
 >[!NOTE]
 >
->As configurações herdadas ainda são compatíveis com os clientes existentes (sem a opção de editar ou criar novos). As configurações herdadas farão parte dos pacotes de conteúdo carregados pelo cliente usando o VSTS.
+>As configurações herdadas ainda são compatíveis com clientes existentes (sem a opção de editar ou criar novos). As configurações herdadas farão parte dos pacotes de conteúdo carregados pelos clientes que usam o VSTS.
