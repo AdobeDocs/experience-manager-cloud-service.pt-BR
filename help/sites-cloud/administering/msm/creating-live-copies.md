@@ -1,10 +1,12 @@
 ---
 title: Criação e sincronização de cópias em tempo real
 description: Saiba como criar e sincronizar Live Copies para reutilizar seu conteúdo no site.
+feature: Gerenciamento de vários sites
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4188'
+source-wordcount: '4192'
 ht-degree: 1%
 
 ---
@@ -249,7 +251,7 @@ As implantações são processadas como trabalhos assíncronos e podem ser verif
 
       Especifique se o escopo é apenas para a página selecionada ou deve incluir subpáginas.
 
-   * **Agendamento**:
+   * **Programação**:
 
       Especifique se o trabalho de implementação deve ser executado imediatamente (**Now**) ou em uma data/hora posterior (**Mais Tarde**).
 
