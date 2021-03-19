@@ -3,11 +3,14 @@ sub-product: Implementação do AEM as a Cloud Service
 user-guide-title: Implementação do AEM as a Cloud Service
 breadcrumb-title: Guia de implementação
 user-guide-description: Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento.
+feature-set: Experience Manager
+feature: Ferramentas do desenvolvedor
+role: Desenvolvedor, Arquiteto
 translation-type: tm+mt
-source-git-commit: 7b17605ceb794969b079c21a639dd145f8e028af
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 35%
+source-wordcount: '876'
+ht-degree: 37%
 
 ---
 
@@ -46,14 +49,14 @@ ht-degree: 35%
       + [Visualização e atualização e substituição de um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [Atualização de um certificado SSL de nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [Excluindo um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   + Gerenciando Listas de Permissões de IP {#ip-allow-lists}
+   + Gerenciando Listas de permissões IP {#ip-allow-lists}
       + [Introdução](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-      + [Adicionando uma lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-      + [Exibindo e Atualizando uma Lista de Permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [Aplicando uma lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Adicionar uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [Visualização e atualização de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [Aplicação de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [Desaplicando uma lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [Excluindo uma lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-      + [Verificando um Status de Lista de Permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+      + [Exclusão de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [Verificando o status de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + [Perguntas frequentes do Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Gerenciamento do código {#managing-code}
    + [Manuseio da versão do projeto Maven](cloud-manager/project-version-handling.md)
@@ -67,18 +70,18 @@ ht-degree: 35%
    + [Diretrizes de desenvolvimento do AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Logs](developing/introduction/logging.md)
    + [Configurações e o navegador de configuração](developing/introduction/configurations.md)
-   + [Fundamentos técnicos do AEM](/help/implementing/developing/introduction/aem-technologies.md)
+   + [Fundamentos Técnicos AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [API do AEM as a Cloud Service](https://docs.adobe.com/content/help/pt/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Gerar tokens de acesso para APIs do lado do servidor](developing/introduction/generating-access-tokens-for-server-side-apis.md)
-   + [Cabeçalho e headless no AEM](developing/headful-headless.md)
-   + Desenvolvimento de AEM em pilha completa {#full-stack}
+   + [Cabeça e Sem Cabeça no AEM](developing/headful-headless.md)
+   + Desenvolvimento de pilha completa {#full-stack}
       + [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
-      + [Estrutura da interface do usuário do AEM](developing/introduction/ui-structure.md)
+      + [Estrutura da interface AEM](developing/introduction/ui-structure.md)
       + [Folha de características do Sling](developing/introduction/sling-cheatsheet.md)
       + [Uso de adaptadores Sling](developing/introduction/sling-adapters.md)
       + [Uso do Sling Resource Merger no AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
       + [Sobreposições no AEM as a Cloud Service](developing/introduction/overlays.md)
-      + [Usar bibliotecas do lado do cliente](developing/introduction/clientlibs.md)
+      + [Uso de bibliotecas do cliente](developing/introduction/clientlibs.md)
       + [Diferencial de páginas](/help/implementing/developing/introduction/page-diff.md)
       + [Limitações do editor](/help/implementing/developing/introduction/editor-limitations.md)
       + [Convenções de nomenclatura](/help/implementing/developing/introduction/naming-conventions.md)
@@ -93,27 +96,27 @@ ht-degree: 35%
          + [Tags de decoração](developing/components/decoration-tag.md)
          + [Usar Ocultar condições](developing/components/hide-conditions.md)
          + [Guia de referência de componentes](developing/components/reference.md)
-      + [Estrutura de marcação do AEM](/help/implementing/developing/introduction/tagging-framework.md)
+      + [Estrutura de marcação de AEM](/help/implementing/developing/introduction/tagging-framework.md)
       + [Criação de tags em aplicativos AEM](/help/implementing/developing/introduction/tagging-applications.md)
       + Pesquisar {#search}
-         + [API do Query Builder](/help/implementing/developing/introduction/query-builder-api.md)
+         + [API do Construtor de consulta](/help/implementing/developing/introduction/query-builder-api.md)
          + [Referência de predicado do construtor de consultas](/help/implementing/developing/introduction/query-builder-predicates.md)
          + [Implementando um avaliador de predicado personalizado](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Páginas de erro personalizadas](/help/implementing/developing/introduction/custom-error-page.md)
-      + [Tipos de nó do AEM](/help/implementing/developing/introduction/node-types.md)
+      + [Tipos de nó AEM](/help/implementing/developing/introduction/node-types.md)
       + [Diretrizes da API Java](/help/implementing/developing/introduction/java-api-guidelines.md)
-   + Desenvolvimento híbrido do AEM {#hybrid}
+   + Desenvolvimento de AEM híbrido {#hybrid}
       + [Híbrido e SPA com AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Ativando a exportação JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
-      + [Introdução ao SPA e explicação passo a passo](developing/hybrid/introduction.md)
+      + [Introdução SPA e Apresentação](developing/hybrid/introduction.md)
       + [Tutorial WKND do SPA](developing/hybrid/wknd-tutorial.md)
       + [Introdução usando o React](developing/hybrid/getting-started-react.md)
       + [Introdução ao uso do Angular](developing/hybrid/getting-started-angular.md)
       + [SPA Deep Dives](developing/hybrid/deep-dives.md)
-      + [Desenvolvimento de SPAs para o AEM](developing/hybrid/developing.md)
-      + [Visão geral do Editor SPA](developing/hybrid/editor-overview.md)
-      + [Blueprint do SPA](developing/hybrid/blueprint.md)
-      + [Componente de página SPA](developing/hybrid/page-component.md)
+      + [Desenvolvimento de SPA para AEM](developing/hybrid/developing.md)
+      + [Visão geral do editor de SPA](developing/hybrid/editor-overview.md)
+      + [SPA Blueprint](developing/hybrid/blueprint.md)
+      + [Componente Página SPA](developing/hybrid/page-component.md)
       + [Modelo dinâmico para mapeamento de componentes](developing/hybrid/model-to-component-mapping.md)
       + [Roteamento de Modelo](developing/hybrid/routing.md)
       + [O componente RemotePage](developing/hybrid/remote-page.md)
@@ -121,9 +124,9 @@ ht-degree: 35%
       + [Renderização do lado do servidor](developing/hybrid/ssr.md)
       + [Ativando a exportação JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Integração do Launch](developing/hybrid/launch-integration.md)
-      + [Documentos de referência do SPA](developing/hybrid/reference-materials.md)
+      + [Documentos de referência SPA](developing/hybrid/reference-materials.md)
    + Gerenciamento de experiência headless {#headless}
-      + [Headless e AEM](developing/headless/introduction.md)
+      + [Sem cabeça e AEM](developing/headless/introduction.md)
       + Guias de introdução {#getting-started}
          + [Criação de uma configuração](developing/headless/getting-started/create-configuration.md)
          + [Criação de um modelo de fragmento de conteúdo](developing/headless/getting-started/create-content-model.md)
@@ -145,12 +148,12 @@ ht-degree: 35%
       + API de entrega {#delivery-api}
          + [API REST de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
          + [API GraphQL de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-         + [API GraphQL do AEM com fragmentos de conteúdo - Conteúdo de amostra e consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
-         + [Autenticação para consultas GraphQL do AEM remotas em fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
+         + [AEM API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
+         + [Autenticação para consultas GraphQL de AEM Remotas em Fragmentos de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
 + Ferramentas do desenvolvedor {#developer-tools}
    + [Ferramentas de desenvolvedor do AEM para Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Plug-in do Content Package Maven](/help/implementing/developing/tools/maven-plugin.md)
-   + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
+   + [Ferramenta AEM Repo](/help/implementing/developing/tools/repo-tool.md)
    + [Uso do CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 + Personalização {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
