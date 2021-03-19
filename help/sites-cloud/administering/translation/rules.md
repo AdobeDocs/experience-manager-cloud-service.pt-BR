@@ -1,10 +1,12 @@
 ---
 title: Identificação de conteúdo a ser traduzido
 description: Saiba como as regras de tradução identificam o conteúdo que precisa ser traduzido.
+feature: Cópia de idioma
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -39,7 +41,7 @@ Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, cons
 
 >[!NOTE]
 >
->O AEM oferece suporte ao mapeamento de um para um entre tipos de recursos e atributos de referência para a tradução do conteúdo referenciado em uma página.
+>O AEM suporta o mapeamento de um para um entre os tipos de recursos e atributos de referência para a tradução do conteúdo referenciado em uma página.
 
 ## Sintaxe de regra para páginas, componentes e ativos {#rule-syntax-for-pages-components-and-assets}
 
@@ -106,7 +108,7 @@ O exemplo a seguir extrai imagens do componente de imagem:
 
 ## Substituição de regras {#overriding-rules}
 
-O arquivo `translation_rules.xml` consiste em um elemento `nodelist` com vários elementos secundários `node`. O AEM lê a lista de nós de cima para baixo. Quando várias regras têm como alvo o mesmo nó, a regra que está menor no arquivo é usada. Por exemplo, as seguintes regras fazem com que todo o conteúdo nas propriedades `text` seja traduzido, exceto para a ramificação `/content/mysite/en` das páginas:
+O arquivo `translation_rules.xml` consiste em um elemento `nodelist` com vários elementos secundários `node`. AEM lê a lista de nós de cima para baixo. Quando várias regras têm como alvo o mesmo nó, a regra que está menor no arquivo é usada. Por exemplo, as seguintes regras fazem com que todo o conteúdo nas propriedades `text` seja traduzido, exceto para a ramificação `/content/mysite/en` das páginas:
 
 ```xml
 <nodelist>
@@ -216,9 +218,9 @@ O resultado no xml terá esta aparência:
 
 ## Editar o arquivo de regras manualmente {#editing-the-rules-file-manually}
 
-O arquivo `translation_rules.xml` instalado com o AEM contém um conjunto padrão de regras de tradução. Você pode editar o arquivo para atender aos requisitos dos seus projetos de tradução. Por exemplo, você pode adicionar regras para que o conteúdo dos componentes personalizados seja traduzido.
+O arquivo `translation_rules.xml` instalado com AEM contém um conjunto padrão de regras de tradução. Você pode editar o arquivo para atender aos requisitos dos seus projetos de tradução. Por exemplo, você pode adicionar regras para que o conteúdo dos componentes personalizados seja traduzido.
 
-Se você editar o arquivo `translation_rules.xml`, mantenha uma cópia de backup em um pacote de conteúdo. A reinstalação de determinados pacotes do AEM pode substituir o arquivo `translation_rules.xml` atual pelo original. Para restaurar as regras nessa situação, você pode instalar o pacote que contém sua cópia de backup.
+Se você editar o arquivo `translation_rules.xml`, mantenha uma cópia de backup em um pacote de conteúdo. A reinstalação de determinados pacotes de AEM pode substituir o arquivo `translation_rules.xml` atual pelo original. Para restaurar as regras nessa situação, você pode instalar o pacote que contém sua cópia de backup.
 
 >[!NOTE]
 >
