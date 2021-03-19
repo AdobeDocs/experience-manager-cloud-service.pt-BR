@@ -1,10 +1,12 @@
 ---
 title: Gerenciar predefinições de imagens
-description: Entenda as predefinições de imagens e saiba como criar, modificar e gerenciar as predefinições de imagens.
+description: '"Saiba mais sobre predefinições de imagens e como criar, modificar e gerenciar predefinições de imagens."'
+feature: Predefinições de imagem, Visualizadores, Representações
+topic: Profissional
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '3640'
+source-wordcount: '3646'
 ht-degree: 10%
 
 ---
@@ -36,7 +38,7 @@ Os administradores podem criar Predefinições de imagem. Para criar uma predefi
 
 ## Gerenciando predefinições de imagens {#managing-image-presets-1}
 
-Gerencie suas predefinições de imagens no Experience Manager ao tocar ou clicar no logotipo do Experience Manager para acessar o console de navegação global e tocar ou clicar no ícone Ferramentas e navegar até **[!UICONTROL Ativos > Predefinições de imagem]**.
+Gerencie as predefinições de imagens no Experience Manager ao tocar ou clicar no logotipo do Experience Manager para acessar o console de navegação global e tocar ou clicar no ícone Ferramentas e navegar até **[!UICONTROL Ativos > Predefinições de imagem]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -56,7 +58,7 @@ Gerencie suas predefinições de imagens no Experience Manager ao tocar ou clica
 
 Se você pretende suportar a assimilação de arquivos AI, EPS e PDF para gerar representações dinâmicas desses formatos de arquivo, analise as seguintes informações antes de criar predefinições de imagem.
 
-O formato de arquivo do Adobe Illustrator é uma variante do PDF. As principais diferenças, no contexto dos Ativos do Experience Manager, são as seguintes:
+O formato de arquivo Adobe Illustrator é uma variante do PDF. As principais diferenças, no contexto de Ativos Experience Manager, são as seguintes:
 
 * Os documentos do Adobe Illustrator consistem em uma única página com várias camadas. Cada camada é extraída como um subativo PNG no ativo principal do Illustrator.
 * Os documentos PDF consistem em uma ou mais páginas. Cada página é extraída como um subativo PDF de página única sob o documento PDF principal de várias páginas.
@@ -86,7 +88,7 @@ Para usar o Dynamic Media para visualizar e gerar representações dinâmicas pa
 
 Você acessa `Rasterize PDF/AI Image Preview Rendition` as opções do componente de processo por meio do workflow `DAM Update Asset`.
 
-Toque no Adobe Experience Manager no canto superior esquerdo, navegue até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**. Na página Modelos de fluxo de trabalho , selecione **[!UICONTROL Ativo de atualização do DAM]** e, na barra de ferramentas, toque em **[!UICONTROL Editar]**. Na página do fluxo de trabalho Atualizar ativo do DAM , toque duas vezes no componente do processo `Rasterize PDF/AI Image Preview Rendition` para abrir a caixa de diálogo Propriedades da etapa .
+Toque em Adobe Experience Manager no canto superior esquerdo, navegue até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**. Na página Modelos de fluxo de trabalho , selecione **[!UICONTROL Ativo de atualização do DAM]** e, na barra de ferramentas, toque em **[!UICONTROL Editar]**. Na página do fluxo de trabalho Atualizar ativo do DAM , toque duas vezes no componente do processo `Rasterize PDF/AI Image Preview Rendition` para abrir a caixa de diálogo Propriedades da etapa .
 
 #### Rasterizar opções de representação de visualização de imagem PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -104,7 +106,7 @@ Argumentos para rasterizar o fluxo de trabalho de PDF ou AI
   <tr>
    <td>Tipos de mime</td>
    <td><p>application/pdf</p> <p>application/postscript</p> <p>aplicativo/ilustrador<br /> </p> </td>
-   <td>Lista de tipos MIME de documentos considerados documentos PDF ou do Illustrator.<br /> </td>
+   <td>Lista de tipos MIME de documentos considerados documentos PDF ou Illustrator.<br /> </td>
   </tr>
   <tr>
    <td>Largura máxima</td>
@@ -130,26 +132,26 @@ Largura máxima e Altura máxima limitam a resolução na qual rasterizar. Por e
 
 O componente de processo `Rasterize PDF/AI Image Preview Rendition` tem um máximo definido para garantir que não crie imagens excessivamente grandes na memória. Imagens tão grandes podem estender a memória fornecida para a JVM (Java Virtual Machine). Deve-se tomar cuidado para fornecer à JVM memória suficiente para gerenciar o número configurado de fluxos de trabalho paralelos, cada um com o potencial de criar uma imagem no tamanho máximo configurado.
 
-### Formato de arquivo do InDesign (INDD) {#indesign-indd-file-format}
+### Formato de arquivo InDesign (INDD) {#indesign-indd-file-format}
 
 Se você pretende suportar a assimilação de arquivos INDD para gerar a representação dinâmica desse formato de arquivo, analise as seguintes informações antes de criar predefinições de imagem.
 
-Para arquivos do InDesign, os ativos secundários são extraídos somente se o Adobe InDesign Server estiver integrado ao Experience Manager. Os ativos referenciados são vinculados com base em seus metadados. O InDesign Server não é necessário para vinculação. No entanto, os ativos referenciados devem estar presentes no Experience Manager antes que os arquivos do InDesign sejam processados para que os links sejam criados entre os arquivos do InDesign e os ativos referenciados.
+Para arquivos InDesign, os sub-ativos são extraídos somente se o Adobe InDesign Server estiver integrado ao Experience Manager. Os ativos referenciados são vinculados com base em seus metadados. O InDesign Server não é necessário para vinculação. No entanto, os ativos referenciados devem estar presentes no Experience Manager antes que os arquivos do InDesign sejam processados para que os links sejam criados entre os arquivos do InDesign e os ativos referenciados.
 
 <!-- See [Integrating Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
 
-O componente do processo de Extração de mídia no fluxo de trabalho `DAM Update Asset` executa vários scripts estendidos pré-configurados para processar arquivos do InDesign.
+O componente do processo de Extração de mídia no workflow `DAM Update Asset` executa vários scripts estendidos pré-configurados para processar arquivos de InDesign.
 
-![Os caminhos ExtendScript nos argumentos do processo de Extração de mídia](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![Os caminhos do ExtendScript nos argumentos do processo de extração de mídia](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-Os caminhos ExtendScript nos argumentos do componente do processo de Extração de mídia no fluxo de trabalho do Ativo de atualização DAM.
+Os caminhos do ExtendScript nos argumentos do componente do processo de Extração de mídia no fluxo de trabalho do Ativo de atualização DAM .
 
 Os seguintes scripts são usados pela integração do Dynamic Media:
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Nome ExtendScript</strong></td>
+   <td><strong>Nome do ExtendScript</strong></td>
    <td><strong>Padrão</strong></td>
    <td><strong>Descrição</strong></td>
   </tr>
@@ -173,7 +175,7 @@ Os seguintes scripts são usados pela integração do Dynamic Media:
 
 ### Configuração do tamanho da miniatura da imagem {#configuring-image-thumbnail-size}
 
-Você pode configurar o tamanho das miniaturas definindo essas configurações no fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**. Há duas etapas no fluxo de trabalho, onde você pode configurar o tamanho da miniatura dos ativos de imagem. Um (**[!UICONTROL Ativos de imagem do processo do Dynamic Media]**) é usado para ativos de imagem dinâmicos. O outro (**[!UICONTROL Process Thumbnails]**) é usado para geração de miniaturas estáticas ou quando todos os outros processos não conseguem gerar miniaturas. Independentemente disso, *ambos* devem ter as mesmas configurações.
+Você pode configurar o tamanho das miniaturas definindo essas configurações no fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**. Há duas etapas no fluxo de trabalho, onde você pode configurar o tamanho da miniatura dos ativos de imagem. Um (**[!UICONTROL Ativos de imagem de processo do Dynamic Media]**) é usado para ativos de imagem dinâmicos. O outro (**[!UICONTROL Process Thumbnails]**) é usado para geração de miniaturas estáticas ou quando todos os outros processos não conseguem gerar miniaturas. Independentemente disso, *ambos* devem ter as mesmas configurações.
 
 Com a etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]**, as miniaturas são geradas pelo servidor de imagem e essa configuração é independente da configuração aplicada à etapa **[!UICONTROL Processar miniaturas]**. Gerar miniaturas por meio da etapa **[!UICONTROL Processar miniaturas]** é a maneira mais lenta e intensiva de memória para criar miniaturas.
 
@@ -193,7 +195,7 @@ O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL w
 **Para configurar o tamanho da miniatura da imagem**
 
 1. Toque em **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos > Ativo de atualização do DAM > Editar]**.
-1. Toque na etapa **[!UICONTROL Ativos de imagem do processo do Dynamic Media]** e toque na guia **[!UICONTROL Miniaturas]**. Altere o tamanho da miniatura, conforme necessário, e toque em **[!UICONTROL OK]**.
+1. Toque na etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]** e toque na guia **[!UICONTROL Miniaturas]**. Altere o tamanho da miniatura, conforme necessário, e toque em **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -237,7 +239,7 @@ Se você pretende suportar a assimilação de arquivos AI, PDF e EPS para gerar 
 Consulte [Adobe Illustrator (AI), PostScript® (EPS) e formatos de arquivo PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 Se você pretende suportar a assimilação de arquivos INDD para gerar a representação dinâmica desse formato de arquivo, analise as seguintes informações antes de criar predefinições de imagem.
-Consulte [Formato de arquivo do InDesign (INDD)](#indesign-indd-file-format).
+Consulte [InDesign (INDD) file format](#indesign-indd-file-format).
 
 **Para criar uma predefinição** de imagem:
 
@@ -260,7 +262,7 @@ Consulte [Formato de arquivo do InDesign (INDD)](#indesign-indd-file-format).
 
 Para criar uma predefinição de imagem responsiva, execute as etapas em [Criação de predefinições de imagem](#creating-image-presets). Ao inserir a altura e a largura na janela **[!UICONTROL Editar predefinição de imagem]**, apague os valores e deixe-os em branco.
 
-Deixá-las em branco informa ao Experience Manager que essa predefinição de imagem é responsiva. É possível ajustar os outros valores, conforme necessário.
+Deixá-los em branco informa ao Experience Manager que essa predefinição de imagem é responsiva. É possível ajustar os outros valores, conforme necessário.
 
 >[!NOTE]
 >
@@ -272,7 +274,7 @@ Deixá-las em branco informa ao Experience Manager que essa predefinição de im
 
 ### Opções de predefinição de imagem {#image-preset-options}
 
-Ao criar ou editar predefinições de imagens, você tem as opções descritas nesta seção. Além disso, a Adobe recomenda que essas opções de &quot;prática recomendada&quot; comecem:
+Ao criar ou editar predefinições de imagens, você tem as opções descritas nesta seção. Além disso, o Adobe recomenda que essas opções de &quot;práticas recomendadas&quot; comecem:
 
 * **[!UICONTROL Formatar]** (guia **[!UICONTROL Básico]**) - Selecione **[!UICONTROL JPEG]** ou outro formato que atenda aos requisitos. Todos os navegadores da Web são compatíveis com o formato de imagem JPEG; ele oferece um bom equilíbrio entre arquivos pequenos e qualidade de imagem. No entanto, as imagens no formato JPEG usam um esquema de compactação com perdas que pode apresentar artefatos de imagem indesejados se a configuração de compactação for muito baixa. Por esse motivo, a Adobe recomenda definir a qualidade de compactação como 75. Essa configuração oferece um bom equilíbrio entre a qualidade da imagem e o tamanho pequeno de arquivo.
 
@@ -382,7 +384,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     </ul>
     <div>
       A nitidez é descrita em
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">Usando a nitidez da imagem com o vídeo Dynamic Media do Experience Manager</a>, no <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Nitidez de uma imagem</a> tópico de Ajuda online e no <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Práticas recomendadas para nitidez de imagens no Dynamic Media Classic</a> PDF disponível para download.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">Usando nitidez de imagem com vídeo Experience Manager Dynamic Media</a>, no tópico <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Nitidez de imagem</a> Ajuda online e em <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Práticas recomendadas para nitidez de imagens no Dynamic Media Classic</a> PDF disponível para download.
     </div> </td>
   </tr>
   <tr>
@@ -392,7 +394,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
      <li><strong>Bi-Linear</strong>  - O método de reamostragem mais rápido. Alguns artefatos de aliasing são perceptíveis.</li>
      <li><strong>Bi-Cubic</strong>  - Aumenta o uso da CPU, mas produz imagens mais nítidas com artefatos de aliasing menos notáveis.</li>
      <li><strong>Sharp2</strong> : pode produzir resultados ligeiramente mais nítidos do que o Bi-Cubic, mas a um custo de CPU ainda maior.</li>
-     <li><strong>Bi-Sharp</strong>  - Seleciona o reamplador padrão do Photoshop para reduzir o tamanho da imagem, que é chamado de  <strong>nitidez bicúbica </strong> no Adobe Photoshop.</li>
+     <li><strong>Bi-Sharp</strong>  - Seleciona o resampler padrão do Photoshop para reduzir o tamanho da imagem, que é chamado de  <strong>nitidez bicúbica </strong> no Adobe Photoshop.</li>
      <li><strong>Cada </strong> cor e  <strong>brilho</strong>  - cada método pode ser baseado na cor ou no brilho. Por padrão, <strong>Cada Cor</strong> é selecionada.</li>
     </ul> </td>
   </tr>
@@ -411,7 +413,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Serviços de Dynamic Media não principais: SVG, renderização de imagem e Web-to-impressão</li>
+     <li>Serviços Dynamic Media não principais: SVG, renderização de imagem e Web-to-impressão</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -419,13 +421,13 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
 
 ### Definição das opções de predefinição de imagem com modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
 
-Além das opções disponíveis nas guias Básico e Avançado , é possível definir modificadores de imagem para fornecer mais opções ao definir predefinições de imagem. A renderização de imagem depende da API de renderização de imagem do Dynamic Media e é definida detalhadamente no [HTTP Protocol Reference](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
+Além das opções disponíveis nas guias Básico e Avançado , é possível definir modificadores de imagem para fornecer mais opções ao definir predefinições de imagem. A renderização de imagem depende da API de renderização de imagem do Dynamic Media e é definida detalhadamente no [Referência de protocolo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
 
 A seguir estão alguns exemplos básicos do que você pode fazer com modificadores de imagem.
 
 >[!NOTE]
 >
->Alguns modificadores de imagem [não podem ser usados no Experience Manager](#advanced-tab-options).
+>Alguns modificadores de imagem [não podem ser usados em Experience Manager](#advanced-tab-options).
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  - Inverte cada componente de cor para um efeito de imagem negativo.
 
@@ -483,4 +485,4 @@ As predefinições de imagens são publicadas automaticamente para você.
 ### Excluindo predefinições de imagem {#deleting-image-presets}
 
 1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos > Predefinições de imagem]**.
-1. Selecione uma predefinição e clique em **[!UICONTROL Delete]**. O Dynamic Media confirma que você deseja excluí-lo. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
+1. Selecione uma predefinição e clique em **[!UICONTROL Delete]**. A Dynamic Media confirma que você deseja excluí-la. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
