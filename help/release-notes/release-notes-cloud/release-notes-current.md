@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: eeb9dfba87a6fa980c2f44b52813e4d3ca8e3e57
+source-git-commit: 93ae24247ae36f44e659211f1e7ab2f0888e4ad6
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1793'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,7 @@ A seguinte versão (2021.3.0) será lançada em 25 de março de 2021.
 
 * [!DNL Experience Manager Assets] as a  [!DNL Cloud Service] tem direito a ter uma  [!DNL Brand Portal] instância pré-configurada. O usuário [!DNL Cloud Manager] pode ativar [!DNL Brand Portal] em [!DNL Experience Manager Assets] como um [!DNL Cloud Service]. Consulte [ativar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
 
-* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolverem com usuários de agências a obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolver com usuários de agências para obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * O relatório de uso [!DNL Brand Portal] agora exibe somente os usuários ativos. Os usuários inativos não são exibidos agora. Os usuários ativos são aqueles cuja conta está atribuída a um perfil de produto no [!DNL Admin Console]. Consulte [[!DNL Brand Portal] relatórios](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -163,6 +163,15 @@ A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.2.0 é 11 
 
 ## Ferramenta Transferência de conteúdo {#content-transfer-tool}
 
+### Data de lançamento {#release-date-ctt}
+
+A Data de lançamento da ferramenta Transferência de conteúdo v1.3.4 é 19 de março de 2021.
+
+### Correções de erros {#bug-fixes-ctt}
+
+* A CTT ignorava o conteúdo de pastas com o mesmo nome, mas com um hífen no nome. Isso foi corrigido.
+
+
 ### Data de lançamento {#release-date-ctt-march}
 
 A Data de lançamento da ferramenta Transferência de conteúdo v1.3.0 é 4 de março de 2021.
@@ -177,15 +186,15 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.3.0 é 4 de m
 * Ao migrar conteúdo de um caminho específico, a CTT estava extraindo recursos não relacionados. Isso foi corrigido
 
 
-### Data de lançamento {#release-date-ctt}
+### Data de lançamento {#release-date-ctt-feb}
 
 A Data de lançamento da ferramenta Transferência de conteúdo v1.2.4 é 10 de fevereiro de 2021.
 
-### Correções de erros {#bug-fixes-ctt}
+### Correções de erros {#bug-fixes-ctt-feb}
 
 * Ao mapear vários usuários, as IDs IMS de alguns estavam sendo mapeadas incorretamente. Isso foi corrigido.
 
-### Data de lançamento {#release-date-ctt-feb}
+### Data de lançamento {#release-date-ctt-feb01}
 
 A Data de lançamento da ferramenta Transferência de conteúdo v1.2.2 é 1 de fevereiro de 2021.
 
