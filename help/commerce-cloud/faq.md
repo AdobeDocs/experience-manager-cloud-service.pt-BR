@@ -2,9 +2,9 @@
 title: AEM - Perguntas frequentes sobre a integração com o Commerce usando a Commerce Integration Framework
 description: AEM - Perguntas frequentes sobre a integração com o Commerce usando a Commerce Integration Framework
 translation-type: tm+mt
-source-git-commit: 903a78d98082b937128073d5edce23dc70b01a1d
+source-git-commit: ad831b2cc3657666678662eeff0eaf371ce4da49
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1284'
 ht-degree: 68%
 
 ---
@@ -41,7 +41,7 @@ O complemento CIF usado com AEM Cloud Service permite que os dados fluam da solu
 
 ## 7. Que tamanho de catálogo AEM com o suporte à CIF?
 
-À medida que os dados do produto e as páginas de catálogo são criados e armazenados em cache dinamicamente, não há limite de tamanho de correção. No entanto, o tamanho do catálogo é apenas um aspecto que você precisa considerar. A taxa de cache, as solicitações de dados simultâneas e a criação de página podem afetar a escalabilidade e o desempenho.
+Isso depende de alguns aspectos adicionais que você precisa considerar. Qual é a proporção de cache dos dados e páginas do catálogo? Quantas solicitações simultâneas você espera durante as horas de pico? Em que escala as APIs de suas soluções comerciais podem ser utilizadas?
 
 ## 8. Como o PIM atua nessa estrutura?
 
