@@ -3,9 +3,9 @@ title: API HTTP de ativos
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
+source-git-commit: c9a7dc74e3fc7c637825606a1a92cbe46d86283f
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1489'
 ht-degree: 1%
 
 ---
@@ -267,7 +267,7 @@ Exclui um recurso (-tree) no caminho fornecido.
 
 * Após o [!UICONTROL Tempo desligado], um ativo e suas representações não estarão disponíveis por meio da interface da Web [!DNL Assets] e por meio da API HTTP. A API retornará uma mensagem de erro 404 se o [!UICONTROL Tempo ligado] estiver no futuro ou [!UICONTROL Tempo desligado] estiver no passado.
 
-* Não use `/adobe` como URL ou caminho JCR. Não registre servlets nesta árvore ou crie conteúdo no JCR.
+* Algumas propriedades de pasta ou ativo são mapeadas para um prefixo diferente quando atualizadas usando APIs. O prefixo `jcr` de `jcr:title`, `jcr:description` e `jcr:language` são substituídos pelo prefixo `dc`. Portanto, no JSON retornado, `dc:title` e `dc:description` contêm os valores de `jcr:title` e `jcr:description`, respectivamente.
 
 >[!MORELIKETHIS]
 >
