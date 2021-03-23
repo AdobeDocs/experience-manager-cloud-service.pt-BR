@@ -2,23 +2,23 @@
 title: '[!DNL Assets] as a [!DNL Cloud Service] Guia'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] recursos de autoajuda e links de documentação'
 translation-type: tm+mt
-source-git-commit: 58d99c33105b132570d0ca133ffa164373f53ad7
+source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 25%
+source-wordcount: '260'
+ht-degree: 36%
 
 ---
 
 
 # [!DNL Assets] como um  [!DNL Cloud Service] guia  {#aem-assets-guide}
 
-Seguem os recursos de autoajuda de [!DNL Experience Manager Assets] como um [!DNL Cloud Service].
+Os seguintes recursos de autoajuda estão disponíveis para [!DNL Experience Manager Assets] como um [!DNL Cloud Service].
 
-## Teclas [!DNL Assets] artigos {#key-articles}
+## Artigos-chave [!DNL Assets] {#key-articles}
 
 * [Visão geral e novidades](overview.md)
-* [Alterações notáveis](/help/assets/assets-cloud-changes.md)
-* [Arquitetura  [!DNL Assets] de uma [!DNL Cloud Service]](architecture.md)
+* [Alterações importantes](/help/assets/assets-cloud-changes.md)
+* [Arquitetura  [!DNL Assets] das [!DNL Cloud Service]](architecture.md)
 * [Visão geral dos microsserviços de ativos](/help/assets/asset-microservices-overview.md)
 
 ## [!DNL Experience Manager] guias  {#aem-guides}
@@ -26,15 +26,15 @@ Seguem os recursos de autoajuda de [!DNL Experience Manager Assets] como um [!DN
 | Guia do usuário | Descrição |
 |---|---|
 | [[!DNL Experience Manager] as a [!DNL Cloud Service] Início](/help/landing/home.md) | Documentação completa de [!DNL Experience Manager] como um [!DNL Cloud Service]. |
-| [Visão geral](/help/overview/home.md) | Visão geral preliminar e glossário de [!DNL Experience Manager] como [!DNL Cloud Service]. |
+| [Visão geral](/help/overview/home.md) | Visão geral introdutória e glossário de [!DNL Experience Manager] como um [!DNL Cloud Service]. |
 | [Notas de versão](/help/release-notes/home.md) | Notas de versão, novidades, problemas conhecidos e recursos obsoletos e removidos. |
-| [Conceitos principais](/help/core-concepts/home.md) | Este guia fornece uma introdução aos conceitos principais de [!DNL Experience Manager] como [!DNL Cloud Service], incluindo a arquitetura do novo serviço. |
+| [Conceitos principais](/help/core-concepts/home.md) | Este guia fornece uma introdução aos conceitos principais de [!DNL Experience Manager] como um [!DNL Cloud Service], incluindo a arquitetura do novo serviço. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados a [!DNL Experience Manager] como um [!DNL Cloud Service]. |
-| [Integração](/help/onboarding/home.md) | Comece com [!DNL Experience Manager] como [!DNL Cloud Service] — obtenha acesso e proteja dados importantes. |
-| [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como criar e administrar [!DNL Experience Manager Sites] como um [!DNL Cloud Service]. |
-| [Mover  [!DNL Experience Manager] para uma [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Entenda a jornada de transição como [!DNL Experience Manager] como um [!DNL Cloud Service]. |
+| [Integração](/help/onboarding/home.md) | Comece a usar [!DNL Experience Manager] como [!DNL Cloud Service] — obtenha acesso e proteja dados importantes. |
+| [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como criar e administrar com [!DNL Experience Manager Sites] como um [!DNL Cloud Service]. |
+| [Mover  [!DNL Experience Manager] para uma [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Entenda a jornada de transição para [!DNL Experience Manager] como um [!DNL Cloud Service]. |
 | [Guia do usuário de implementação](/help/implementing/home.md) | Personalize, desenvolva e implante [!DNL Experience Manager] como um [!DNL Cloud Service]. |
-| [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar Conectores em [!DNL Experience Manager] como um [!DNL Cloud Service]. |
+| [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar Conectores a [!DNL Experience Manager] como um [!DNL Cloud Service]. |
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end de [!DNL Experience Manager] como [!DNL Cloud Service], como tarefas de indexação e manutenção. |
 | [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework em [!DNL Experience Manager] como um [!DNL Cloud Service]. |
 
@@ -42,10 +42,10 @@ Seguem os recursos de autoajuda de [!DNL Experience Manager Assets] como um [!DN
 
 * [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
-* [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
-* [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
+* [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
+* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR)
 * [Disponibilidade do GDPR](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager como  [!DNL Cloud Service] tutoriais](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Tutoriais  [!DNL Cloud Service] do Adobe Experience Manager as](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [[!DNL Experience Manager] Fórum da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
