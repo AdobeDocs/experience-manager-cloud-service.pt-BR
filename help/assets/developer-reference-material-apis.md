@@ -3,9 +3,9 @@ title: Referências do desenvolvedor para [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
+source-git-commit: 044740339ea7f164dd4c28650fe71a5eb11615d6
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1388'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ O artigo contém recomendações, materiais de referência e recursos para desen
 
 >[!CAUTION]
 >
->Algumas APIs continuam a existir, mas não têm suporte ativo (denotado com um ×) e não devem ser usadas.
+>Algumas APIs continuam a existir, mas não têm suporte ativo (denotado com um ×). Na medida do possível, não use essas APIs.
 
 | Nível de suporte | Descrição |
 | ------------- | --------------------------- |
@@ -65,7 +65,7 @@ O artigo contém recomendações, materiais de referência e recursos para desen
 
 ## Upload de ativo {#asset-upload-technical}
 
-[!DNL Experience Manager] o as a  [!DNL Cloud Service] fornece um novo método para carregar ativos no repositório. Os usuários podem fazer upload direto dos ativos para o armazenamento em nuvem usando a API HTTP. As etapas para fazer upload de um arquivo binário são:
+Em [!DNL Experience Manager] como um [!DNL Cloud Service], é possível fazer upload direto dos ativos para o armazenamento na nuvem usando a API HTTP. As etapas para fazer upload de um arquivo binário são:
 
 1. [Envie uma solicitação](#initiate-upload) HTTP. Ele informa [!DNL Experience Manage]ou a implantação de sua intenção de fazer upload de um novo binário.
 1. [POST do conteúdo do binário para um ou mais URIs fornecidos pelo pedido de início. ](#upload-binary) 
@@ -116,8 +116,8 @@ Uma única solicitação pode ser usada para iniciar uploads para vários binár
 * `mimeType` (string): O tipo mime do binário correspondente, conforme fornecido na solicitação de inicialização. Esse valor deve ser incluído na solicitação completa.
 * `uploadToken` (string): Um token de upload para o binário correspondente. Esse valor deve ser incluído na solicitação completa.
 * `uploadURIs` (matriz): Uma lista de strings cujos valores são URIs completos para as quais o conteúdo do binário deve ser carregado (consulte  [Upload binário](#upload-binary)).
-* `minPartSize` (número): O comprimento mínimo, em bytes, dos dados que podem ser fornecidos a qualquer um dos URIs de upload, se houver mais de um URI.
-* `maxPartSize` (número): O comprimento máximo, em bytes, dos dados que podem ser fornecidos a qualquer um dos URIs de upload, se houver mais de um URI.
+* `minPartSize` (número): O comprimento mínimo, em bytes, dos dados que podem ser fornecidos a qualquer um dos  `uploadURIs`, se houver mais de um URI.
+* `maxPartSize` (número): O comprimento máximo, em bytes, dos dados que podem ser fornecidos a qualquer um dos  `uploadURIs`, se houver mais de um URI.
 
 ### Fazer upload de binário {#upload-binary}
 
@@ -240,5 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [O Experience Cloud como  [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
