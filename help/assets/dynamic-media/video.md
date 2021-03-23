@@ -4,7 +4,7 @@ description: Saiba como trabalhar com vídeo no Dynamic Media.
 feature: Perfis de vídeo
 topic: Profissional
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '9512'
 ht-degree: 6%
@@ -406,7 +406,7 @@ Por exemplo, suponha que o vídeo de origem seja 1920 x 1080. Na tabela a seguir
 |--- |--- |--- |--- |
 | Origem | 1920x1080 | 1 | 3 |
 | Codificado | 960 x 540 | 2 | 2 |
-| Codificado | 640 x 360 | 3 | 3 |
+| Codificado | 640 x 360 | 3 | 1 |
 | Codificado | 480 x 270 | 4 | 4 |
 
 ### Formato de arquivo de vídeo codificado {#encoded-video-file-format}
@@ -551,9 +551,9 @@ A publicação de vídeos no YouTube requer um ou mais canais. Se já tiver cria
 Para criar um canal do YouTube:
 
 1. Vá para [https://www.youtube.com](https://www.youtube.com/) e faça logon usando suas credenciais de conta do Google.
-1. No canto superior direito da página do YouTube, clique na imagem do seu perfil (ela também pode aparecer como uma letra dentro de um círculo colorido sólido) e clique em **[!UICONTROL Configurações do YouTube]** (ícone de engrenagem redonda).
-1. Na página Visão geral , no cabeçalho Recursos adicionais, clique em **[!UICONTROL Ver todos os meus canais ou criar um novo canal]**.
-1. Na página Canais , clique em **[!UICONTROL Criar um novo canal]**.
+1. No canto superior direito da página do YouTube, clique na imagem do seu perfil (ela também pode aparecer como uma letra dentro de um círculo colorido sólido) e toque em **[!UICONTROL Configurações do YouTube]** (ícone de engrenagem redonda).
+1. Na página Visão geral , no cabeçalho Recursos adicionais , toque em **[!UICONTROL Ver todos os meus canais ou crie um novo canal]**.
+1. Na página Canais , toque em **[!UICONTROL Criar um novo canal]**.
 1. Na página Conta de marca, no campo Nome da conta de marca , digite um nome de negócios ou qualquer outro nome de canal que você escolher onde deseja publicar seus ativos de vídeo e, em seguida, clique em **[!UICONTROL Criar]**.
 
    Lembre-se do nome inserido aqui, pois é necessário inseri-lo novamente ao configurar o YouTube no Experience Manager.
