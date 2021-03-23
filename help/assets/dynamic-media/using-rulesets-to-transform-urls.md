@@ -1,11 +1,11 @@
 ---
 title: Uso de conjuntos de regras para transformar URLs
-description: Saiba como implantar conjuntos de regras no Dynamic Media para transformar URLs. Os conjuntos de regras são conjuntos de instruções escritas em uma linguagem de script (como JavaScript) que avalia dados XML e executa determinadas ações se esses dados atenderem a determinadas condições.
+description: Saiba como implantar conjuntos de regras no Dynamic Media para transformar URLs. Os conjuntos de regras são conjuntos de instruções escritas em uma linguagem de script (como JavaScript™) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições.
 topic: Profissional
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '768'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Uso de conjuntos de regras para transformar URLs {#using-rulesets-to-transform-urls}
 
-Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Os conjuntos de regras são conjuntos de instruções escritas em uma linguagem de script (como JavaScript) que avalia dados XML e executa determinadas ações se esses dados atenderem a determinadas condições. Cada regra consiste em pelo menos uma condição e pelo menos uma ação. Uma regra avalia os dados XML em relação às condições e, se uma condição for atendida, tomará a ação apropriada. Exemplos de conjuntos de regras incluem:
+Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs. Os conjuntos de regras são conjuntos de instruções escritas em uma linguagem de script (como JavaScript™) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições. Cada regra consiste em pelo menos uma condição e pelo menos uma ação. Uma regra avalia os dados XML em relação às condições e, se uma condição for atendida, tomará a ação apropriada. Exemplos de conjuntos de regras incluem:
 
 * Adicionar um sufixo do tipo MIME. Muitos serviços e sites exigem sufixos de imagem, como adicionar `.jpg` a um URL.
 * Criação de um caminho de pasta para o URL para fins de SEO (Otimização de Mecanismo de Pesquisa).
@@ -67,7 +67,7 @@ Consulte também [Usar a imagem &#39;asset&#39; em vez de &#39;is&#39; em um con
    * Na caixa de diálogo **[!UICONTROL Abrir]**, navegue até o arquivo do conjunto de regras (XML).
    * Selecione o arquivo e clique em **[!UICONTROL Abrir]**.
    * No lado direito da página **[!UICONTROL Upload]**, selecione uma pasta de destino para o arquivo de conjunto de regras.
-   * Próximo à parte inferior da página, verifique se **[!UICONTROL Publicar após o upload]** está marcado.
+   * Próximo à parte inferior da página, verifique se a opção Publicar após o upload está marcada.
    * No canto inferior direito da página, clique em **[!UICONTROL Enviar upload]**.
    * Na barra Navegação global, clique em **[!UICONTROL Trabalhos]** para verificar o status do trabalho de upload. Quando a coluna **[!UICONTROL Status]** na página **[!UICONTROL Trabalho]** exibir Carregar concluído, continue para as próximas etapas.
 
@@ -79,5 +79,5 @@ Consulte também [Usar a imagem &#39;asset&#39; em vez de &#39;is&#39; em um con
 
    As condições do conjunto de regras são aplicadas nas solicitações dos Servidores de Imagem Dynamic Media ao vivo.
 
-   Se você fizer alterações no arquivo de conjunto de regras, as alterações serão aplicadas imediatamente quando você fizer upload novamente e publicar novamente o arquivo de conjunto de regras atualizado.
+   Se você alterar o arquivo de conjunto de regras, as alterações serão aplicadas imediatamente quando você fizer upload e publicar novamente o arquivo de conjunto de regras atualizado.
 
