@@ -4,9 +4,9 @@ description: Saiba mais sobre as poderosas opções de sincronização da Live C
 feature: Gerenciamento de vários sites
 role: Administrador
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2340'
 ht-degree: 30%
 
 ---
@@ -43,7 +43,11 @@ Cada configuração de implementação usa um acionador de implementação que f
 
 ### Configurações de implementação {#rollout-configurations}
 
-A tabela a seguir lista as configurações de implementação fornecidas com AEM prontas para uso. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação. Se as ações de configuração de implementação instaladas não atenderem aos requisitos, você poderá [criar uma nova configuração de implementação](#creating-a-rollout-configuration).
+A tabela a seguir lista as configurações de implementação fornecidas com AEM prontas para uso. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação.
+
+<!--
+If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+-->
 
 | Nome | Descrição | Acionar | [Ações de sincronização](#synchronization-actions) |
 |---|---|---|---|
