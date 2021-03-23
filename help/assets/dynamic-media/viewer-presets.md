@@ -2,9 +2,9 @@
 title: Aplicação de predefinições do visualizador do Dynamic Media
 description: Saiba como aplicar predefinições do visualizador no Dynamic Media.
 feature: Predefinições do visualizador, visualizadores
-topic: Profissional
+topic: Administrador,Profissional
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 24%
