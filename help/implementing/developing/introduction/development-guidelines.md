@@ -2,7 +2,7 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
+source-git-commit: e70135d7f59fc46c24f73f109d027f3536ffbbd7
 workflow-type: tm+mt
 source-wordcount: '2283'
 ht-degree: 1%
@@ -161,7 +161,6 @@ Também útil para depuração, o console Desenvolvedor tem um link para a ferra
 ![Console de desenvolvimento 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 Para programas de Produção, o acesso ao Console do Desenvolvedor é definido pela &quot;Função do Desenvolvedor - Cloud Manager&quot; no Admin Console, enquanto para programas de sandbox, o Console do Desenvolvedor está disponível para qualquer usuário com um perfil de produto que dá acesso ao AEM como Cloud Service. Para todos os programas, &quot;Cloud Manager - Função do desenvolvedor&quot; é necessário para despejos de status e os usuários também devem ser definidos no Perfil de produto Usuários AEM ou Administradores AEM nos serviços de criação e publicação, para visualizar os dados de despejo de status de ambos os serviços. Para obter mais informações sobre como configurar permissões de usuário, consulte [Documentação do Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
 
 ### Serviço de preparo e produção de AEM {#aem-staging-and-production-service}
 
