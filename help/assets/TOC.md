@@ -6,7 +6,7 @@ user-guide-description: Aprenda a usar e administrar o Experience Manager Assets
 solution: Experience Manager, Experience Manager Assets
 feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 9f47f53524ab89c368ab260bc0d16e47ee81a230
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 70%
@@ -72,9 +72,9 @@ ht-degree: 70%
 + Fragmentos de conteúdo {#content-fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
    + [Entrega sem cabeçalho com fragmentos de conteúdo e GraphQL](content-fragments/content-fragments-graphql.md)
-   + [Gerenciamento dos fragmentos de conteúdo](content-fragments/content-fragments-managing.md)
    + [Ativar a funcionalidade de fragmento de conteúdo para sua instância](content-fragments/content-fragments-configuration-browser.md)
    + [Modelos de fragmentos do conteúdo](content-fragments/content-fragments-models.md)
+   + [Gerenciamento dos fragmentos de conteúdo](content-fragments/content-fragments-managing.md)
    + [Variações - Criação dos fragmentos de conteúdo](content-fragments/content-fragments-variations.md)
    + [Conteúdo associado aos fragmentos de conteúdo](content-fragments/content-fragments-assoc-content.md)
    + [Metadados - propriedades dos fragmentos](content-fragments/content-fragments-metadata.md)
