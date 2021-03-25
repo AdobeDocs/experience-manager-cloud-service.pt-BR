@@ -1,10 +1,8 @@
 ---
 title: Ativação de recursos progressivos do aplicativo web
 description: O AEM Sites permite que o autor de conteúdo ative recursos progressivos do aplicativo da Web para qualquer site por meio de uma configuração simples, em vez de codificação.
-hide: true
-hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 8fa74c2c575409659f482c669c4939a623ef6707
+source-git-commit: f130fe34e5c57b9fc78697374a5a9772da3c4c17
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 0%
