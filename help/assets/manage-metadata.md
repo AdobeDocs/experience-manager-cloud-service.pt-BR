@@ -4,7 +4,7 @@ description: Saiba mais sobre os tipos de metadados e como [!DNL Adobe Experienc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '1854'
 ht-degree: 3%
@@ -65,7 +65,7 @@ Os dois tipos básicos de metadados são metadados técnicos e descritivos.
 Os metadados técnicos são úteis para aplicativos de software que lidam com ativos digitais e não devem ser mantidos manualmente. [!DNL Experience Manager Assets] e outros softwares determinam automaticamente os metadados técnicos e podem mudar quando o ativo é modificado. Os metadados técnicos disponíveis de um ativo dependem principalmente do tipo de arquivo do ativo. Alguns exemplos de metadados técnicos são:
 
 * Tamanho de um arquivo.
-* Dimensões (altura e largura) de uma imagem.
+* Dimension (altura e largura) de uma imagem.
 * Taxa de bits de um arquivo de áudio ou vídeo.
 * Resolução (nível de detalhes) de uma imagem.
 
@@ -84,7 +84,7 @@ Há várias maneiras de incorporar metadados em arquivos. Há suporte para uma s
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado pelo  [!DNL Experience Manager Assets] para todo o gerenciamento de metadados. O padrão oferece codificação de metadados universais que podem ser incorporados em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois ele fornece um modelo de conteúdo avançado. Os usuários do padrão XMP e [!DNL Experience Manager Assets] têm uma plataforma poderosa para criar. Para obter mais informações, consulte [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado pelo  [!DNL Experience Manager Assets] para todo o gerenciamento de metadados. O padrão oferece codificação de metadados universais que podem ser incorporados em todos os formatos de arquivo. O Adobe e outras empresas oferecem suporte XMP padrão, pois fornece um modelo de conteúdo avançado. Os usuários XMP padrão e [!DNL Experience Manager Assets] têm uma plataforma poderosa para desenvolver. Para obter mais informações, consulte [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -104,7 +104,7 @@ O formato de arquivo de imagem permutável (Exif) é o formato de metadados mais
 
 Uma grande limitação do Exif é que alguns formatos de arquivo de imagem populares, como BMP, GIF ou PNG, não são compatíveis.
 
-Os campos de metadados definidos pela Exif normalmente têm natureza técnica e são de uso limitado para o gerenciamento de metadados descritivos. Por esse motivo, [!DNL Experience Manager Assets] oferece mapeamento de propriedades Exif em [esquemas de metadados comuns](metadata-schemas.md) e em XMP.
+Os campos de metadados definidos pela Exif normalmente têm natureza técnica e são de uso limitado para o gerenciamento de metadados descritivos. Por esse motivo, [!DNL Experience Manager Assets] oferece o mapeamento das propriedades Exif em [esquemas de metadados comuns](metadata-schemas.md) e no XMP.
 
 #### Outros metadados {#other-metadata}
 
@@ -116,7 +116,7 @@ O Enterprise Manager Assets permite editar os metadados de vários ativos simult
 
 >[!NOTE]
 >
->Os métodos de edição em massa funcionam para ativos disponíveis em uma pasta ou coleção. Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é possível [atualizar os metadados em massa após pesquisar](/help/assets/search-assets.md#metadataupdates).
+>Os métodos de edição em massa funcionam para ativos disponíveis em uma pasta ou coleção. Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é possível [atualizar os metadados em massa após pesquisar](/help/assets/search-assets.md#metadata-updates).
 
 1. Navegue até o local dos ativos que deseja editar.
 1. Selecione os ativos para os quais deseja editar propriedades comuns.
@@ -196,7 +196,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PDF e PDF/X.
 * Photoshop e psAux - [!DNL Adobe Photoshop].
 
-### Metadados do Gerenciamento de direitos digitais {#digital-rights-management-metadata}
+### Digital Rights Management metadados {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -204,7 +204,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PRISM - [Requisitos de publicação para metadados padrão do setor](https://www.idealliance.org/prism-metadata).
 * PRL - Linguagem de direitos PRISM.
 * PUR - Direitos de uso do PRISM.
-* `xmpPlus` - Integração do PLUS com o XMP.
+* `xmpPlus` - Integração da PLUS com a XMP.
 
 ### Metadados específicos da fotografia {#photography-specific-metadata}
 
@@ -218,7 +218,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PDF e PDF/X - Adobe PDF e aplicativos de terceiros.
 * PRISM - [Requisitos de publicação para metadados padrão do setor](https://www.idealliance.org/prism-metadata).
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - Metadados XMP para texto paginado.
+* `xmpPG` - XMP metadados para texto paginado.
 
 ### Metadados específicos de multimídia {#multimedia-specific-metadata}
 
