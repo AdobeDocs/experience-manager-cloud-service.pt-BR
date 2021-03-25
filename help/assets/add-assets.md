@@ -2,9 +2,9 @@
 title: Adicione seus ativos digitais a [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais a [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '2017'
 ht-degree: 1%
 
 ---
@@ -174,8 +174,20 @@ Para configurar a ferramenta, siga estas etapas:
    * [!UICONTROL Execução] prática: Chame uma execução de teste da ingestão em massa.
    * [!UICONTROL Executar]: Executar a configuração selecionada.
    * [!UICONTROL Parar]: Encerrar uma configuração ativa.
+   * [!UICONTROL Programação]: Defina um agendamento único ou recorrente para assimilar ativos.
    * [!UICONTROL Status] da Tarefa: Exibir o status da configuração quando ela for usada em um trabalho de importação em andamento ou em um trabalho concluído.
+   * [!UICONTROL Histórico] de tarefas: Instâncias anteriores da tarefa.
    * [!UICONTROL Exibir ativos]: Exiba a pasta de destino, se ela existir.
+
+   ![Opções da barra de ferramentas para configurações de assimilador](assets/bulk-ingest-toolbar-options.png)
+
+Para agendar uma importação em massa única ou recorrente, siga estas etapas:
+
+1. Criar uma configuração de importação em massa.
+1. Selecione a configuração e selecione **[!UICONTROL Schedule]** na barra de ferramentas.
+1. Defina uma ingestão única ou programe uma hora, uma diária ou uma programação semanal. Clique em **[!UICONTROL Enviar]**.
+
+   ![Programar tarefa de assimilação em massa](assets/bulk-ingest-schedule1.png)
 
 ## Fazer upload de ativos usando clientes de desktop {#upload-assets-desktop-clients}
 
