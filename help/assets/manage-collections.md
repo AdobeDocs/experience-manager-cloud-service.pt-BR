@@ -4,7 +4,7 @@ description: Entenda o conceito de coleção no Adobe Experience Manager Assets.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '2397'
 ht-degree: 19%
@@ -179,13 +179,13 @@ Ao baixar uma coleção, toda a hierarquia de ativos na coleção é baixada, in
 
 ## Editar propriedades de metadados de várias coleções {#editing-metadata-properties-of-multiple-collections}
 
-O Adobe Enterprise Manager Assets permite editar os metadados de muitas coleções em massa. Use a página [!UICONTROL Propriedades] para executar alterações de metadados em várias coleções, por exemplo, altere as propriedades de metadados para um valor comum ou adicione ou modifique tags.
+Os Ativos do Adobe Enterprise Manager permitem editar os metadados de muitas coleções em massa. Use a página [!UICONTROL Propriedades] para executar alterações de metadados em várias coleções, por exemplo, altere as propriedades de metadados para um valor comum ou adicione ou modifique tags.
 
 Para personalizar a página de metadados [!UICONTROL Propriedades], incluindo adicionar, modificar, excluir propriedades de metadados, use o editor de Esquema.
 
 >[!NOTE]
 >
->Os métodos de edição em massa funcionam para ativos disponíveis em uma coleção. Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é possível [atualizar os metadados em massa após pesquisar](/help/assets/search-assets.md#metadataupdates).
+>Os métodos de edição em massa funcionam para ativos disponíveis em uma coleção. Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é possível [atualizar os metadados em massa após pesquisar](/help/assets/search-assets.md#metadata-updates).
 
 1. No console Coleções, selecione as coleções que deseja editar.
 1. Na barra de ferramentas, toque/clique em **[!UICONTROL Propriedades]** para abrir a página [!UICONTROL Propriedades] das coleções selecionadas.
