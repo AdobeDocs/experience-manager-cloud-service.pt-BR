@@ -2,9 +2,9 @@
 title: Adicione seus ativos digitais a [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais a [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager] enriquece o conteúdo binário dos arquivos digitais carregados com metadados ricos, tags inteligentes, representações e outros serviços de Gerenciamento de ativos digitais (DAM). Você pode fazer upload de vários tipos de arquivos, como imagens, documentos e arquivos de imagem brutos, da pasta local ou de uma unidade de rede para [!DNL Experience Manager Assets].
 
-Vários métodos de upload são fornecidos. Além do upload do navegador mais usado, existem outros métodos de adicionar ativos ao repositório [!DNL Experience Manager], incluindo clientes de desktop, como o Adobe Asset Link ou [!DNL Experience Manager] aplicativo de desktop, carregar e assimilar scripts que os clientes criariam e integrações de assimilação automatizadas adicionadas como extensões [!DNL Experience Manager].
+Vários métodos de upload são fornecidos. Além do upload do navegador mais usado, existem outros métodos de adicionar ativos ao repositório [!DNL Experience Manager], incluindo clientes de desktop, como o Adobe Asset Link ou [!DNL Experience Manager] aplicativo de desktop, scripts de upload e assimilação que os clientes criariam e integrações de assimilação automatizadas adicionadas como extensões [!DNL Experience Manager].
 
 Vamos nos concentrar em métodos de upload para usuários finais aqui e fornecer links para artigos que descrevem aspectos técnicos do upload e assimilação de ativos usando [!DNL Experience Manager] APIs e SDKs.
 
@@ -28,7 +28,7 @@ Você também pode optar por realizar processamento adicional nos ativos carrega
 >
 >O código de upload personalizado ou estendido pelas equipes técnicas do cliente precisa usar as novas APIs e protocolos de upload.
 
-Os ativos como [!DNL Cloud Service] fornecem os seguintes métodos de upload. A Adobe recomenda compreender o caso de uso e a aplicabilidade de uma opção de upload antes de usá-la.
+Os ativos como [!DNL Cloud Service] fornecem os seguintes métodos de upload. O Adobe recomenda compreender o caso de uso e a aplicabilidade de uma opção de upload antes de usá-la.
 
 | Método de upload | Quando usar? | Persona Primária |
 |---------------------|----------------|-----------------|
@@ -118,7 +118,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >Se o Asset Insights estiver ativado para rastrear impressões ou cliques com [!DNL Adobe Analytics], a ID de ativo regenerada invalida os dados capturados para o ativo em [!DNL Analytics].
 
-Para reter o ativo duplicado em [!DNL Assets], clique em **[!UICONTROL Keep]**. Para excluir o ativo duplicado carregado, toque/clique em **[!UICONTROL Excluir]**.
+Para reter o ativo duplicado em [!DNL Assets], clique em **[!UICONTROL Keep]**. Para excluir o ativo duplicado carregado, clique em **[!UICONTROL Excluir]**.
 
 ### Tratamento do nome do arquivo e caracteres proibidos {#filename-handling}
 
