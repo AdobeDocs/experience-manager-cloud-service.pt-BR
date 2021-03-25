@@ -3,7 +3,7 @@ title: Trabalho com seletores
 description: Saiba mais sobre os métodos que você pode usar para selecionar ativos para imagens interativas, vídeos interativos e banners de carrossel no Dynamic Media.
 topic: Profissional
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 14%
@@ -87,7 +87,7 @@ Use o seletor de site para escolher uma página da Web quando quiser um ponto de
 
 Use este seletor para escolher imagens para usar em um Banner de carrossel, um Vídeo interativo, conjuntos de imagens, conjuntos de mídia mista e conjuntos de rotação. Em Vídeo interativo, o seletor de ativos fica disponível ao tocar em **[!UICONTROL Selecionar ativos]** na guia **[!UICONTROL Conteúdo]**. Em Conjuntos de carrossel, o seletor de ativos fica disponível ao criar um slide. Em Conjuntos de imagens, Conjuntos de mídias mistas e Conjuntos de rotação, o seletor de ativo estará disponível ao criar um Conjunto de imagens, Conjunto de mídias mistas ou Conjunto de rotação, respectivamente.
 
-Consulte também [Seletor de ativos](/help/assets/search-assets.md#assetselector) para obter mais informações.
+Consulte também [Seletor de ativos](/help/assets/search-assets.md#asset-selector) para obter mais informações.
 
 1. Navegue até o Conjunto de carrossel e crie um slide. Ou navegue até o Vídeo interativo, vá até a guia **[!UICONTROL Conteúdo]** e selecione ativos. Ou crie um Conjunto de mídias mistas, um Conjunto de imagens ou um Conjunto de rotação.
 1. Toque no ícone **[!UICONTROL Seletor de ativos]** (pasta com uma lupa) e navegue até um ativo.
