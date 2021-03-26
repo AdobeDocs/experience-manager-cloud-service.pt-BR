@@ -7,9 +7,9 @@ feature-set: Experience Manager Sites
 feature: Implantação
 role: Arquiteto, desenvolvedor
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 974c7d20d7896b749e07b05d0149ed16dc7e0cd5
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '683'
 ht-degree: 31%
 
 ---
@@ -94,8 +94,6 @@ ht-degree: 31%
       + [Notas da versão 2020.4.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
       + [Notas da versão 2020.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [Notas da versão 2020.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-   + Noções básicas sobre funções e responsabilidades {#getting-access-to-aem-in-cloud}
-      + [Noções básicas sobre funções e responsabilidades](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + Disponibilidade para proteção e privacidade de dados {#data-privacy}
    + [Regulamentos de disponibilidade para proteção e privacidade de dados do AEM](data-privacy-and-protection-readiness/aem-readiness.md)
    + [Regulamentos de disponibilidade da base para proteção e privacidade de dados do AEM](data-privacy-and-protection-readiness/foundation-readiness.md)
