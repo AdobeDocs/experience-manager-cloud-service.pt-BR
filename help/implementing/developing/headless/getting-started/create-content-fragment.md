@@ -1,46 +1,46 @@
 ---
-title: Criando Fragmentos de Conteúdo Guia de Start Rápido Sem Cabeçalho
-description: Os Fragmentos de conteúdo permitem que você crie, prepare e use conteúdo independente de página que pode ser entregue sem cabeçalho por AEM.
+title: Guia de início rápido para Criação de fragmentos de conteúdo sem cabeçalho
+description: Saiba como usar AEM Fragmentos do conteúdo para projetar, criar, preparar e usar conteúdo independente da página para entrega sem periféricos.
 translation-type: tm+mt
-source-git-commit: fa2fee3139acd60ea96222752785cf397978a2bc
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
 
 
-# Criando Fragmentos de Conteúdo Guia de Start Rápido Sem Cabeçalho {#creating-content-fragments}
+# Criação do Guia de início rápido sem cabeçalho dos Fragmentos de conteúdo {#creating-content-fragments}
 
-Os Fragmentos de conteúdo permitem que você crie, prepare e use conteúdo independente de página que pode ser entregue sem cabeçalho por AEM.
+Saiba como usar AEM Fragmentos do conteúdo para projetar, criar, preparar e usar conteúdo independente da página para entrega sem periféricos.
 
 ## O que são Fragmentos de conteúdo? {#what-are-content-fragments}
 
-[Agora que você criou uma ](create-assets-folder.md) pasta de ativos na qual pode armazenar seus Fragmentos de conteúdo, agora é possível criar os fragmentos!
+[Agora que você criou uma ](create-assets-folder.md) pasta de ativos, onde pode armazenar os Fragmentos de conteúdo, agora é possível criar os fragmentos!
 
-Fragmentos de conteúdo permitem que você crie, prepare e publique conteúdo independente de página. Eles permitem que você prepare conteúdo pronto para uso em vários locais e em vários canais.
+Os Fragmentos de conteúdo permitem que você crie, crie, prepare e publique conteúdo independente da página. Eles permitem que você prepare conteúdo pronto para uso em vários locais e em vários canais.
 
 Os fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no formato JSON.
 
 ## Como criar um fragmento de conteúdo {#how-to-create-a-content-fragment}
 
-Os autores de conteúdo criarão qualquer número de Fragmentos de conteúdo para representar o conteúdo que criarem. Esta será a sua principal tarefa em AEM. Para os fins deste guia de introdução, só precisaremos criar um.
+Os autores de conteúdo criarão qualquer número de Fragmentos de conteúdo para representar o conteúdo que eles criam. Esta será a principal tarefa em AEM. Para os fins deste guia de introdução, só será necessário criar um.
 
-1. Efetue login AEM como um Cloud Service e, no menu principal, selecione **Navegação -> Ativos**.
+1. Faça logon em AEM como um Cloud Service e, no menu principal, selecione **Navigation -> Assets**.
 1. Toque ou clique na pasta [criada anteriormente.](create-assets-folder.md)
 1. Toque ou clique em **Criar -> Fragmento de conteúdo**.
-1. A criação de um Fragmento de conteúdo é apresentada como um assistente em duas etapas. Primeiro, selecione o modelo que deseja usar para criar seu fragmento de conteúdo e toque ou clique em **Próximo**.
-   * Os modelos disponíveis dependem da [**Configuração da nuvem** definida para a pasta de ativos](create-assets-folder.md) na qual você está criando o Fragmento de conteúdo.
-   * Se você receber a mensagem `We could not find any models`, verifique a configuração da sua pasta de ativos.
+1. A criação de um Fragmento de conteúdo é apresentada como um assistente em duas etapas. Primeiro, selecione qual modelo deseja usar para criar o fragmento de conteúdo e toque ou clique em **Next**.
+   * Os modelos disponíveis dependem da [**Configuração da nuvem** que você definiu para a pasta de ativos](create-assets-folder.md) na qual você está criando o Fragmento de conteúdo.
+   * Se você receber a mensagem `We could not find any models`, verifique a configuração da pasta de ativos.
 
-   ![Selecionar modelo de fragmento do conteúdo](../assets/content-fragment-model-select.png)
+   ![Selecionar modelo de fragmento de conteúdo](../assets/content-fragment-model-select.png)
 1. Forneça um **Título**, **Descrição** e **Tags** conforme necessário e toque ou clique em **Criar**.
 
    ![Criar fragmento do conteúdo](../assets/content-fragment-create.png)
 1. Toque ou clique em **Abrir** na janela de confirmação.
 
    ![Confirmação de criação do Fragmento de conteúdo](../assets/content-fragment-confirmation.png)
-1. Forneça os detalhes do Fragmento do conteúdo no Editor de fragmentos do conteúdo.
+1. Forneça os detalhes do Fragmento de conteúdo no Editor de fragmento de conteúdo.
 
    ![Editor de conteúdo do fragmento](../assets/content-fragment-edit.png)
 1. Toque ou clique em **Salvar e fechar**.
@@ -51,8 +51,8 @@ Fragmentos de conteúdo também podem fazer referência a outros ativos no AEM. 
 
 ## Próximas etapas {#next-steps}
 
-Agora que criou um Fragmento de conteúdo, você pode seguir para a parte final do guia de introdução e [criar solicitações de API para acessar e fornecer fragmentos de conteúdo.](create-api-request.md)
+Agora que você criou um Fragmento de conteúdo, poderá seguir para a parte final do guia de introdução e [criar solicitações de API para acessar e fornecer fragmentos de conteúdo.](create-api-request.md)
 
 >[!TIP]
 >
->Para obter detalhes completos sobre o gerenciamento de Fragmentos de conteúdo, consulte a [documentação de Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
+>Para obter detalhes completos sobre o gerenciamento dos Fragmentos de conteúdo, consulte a [documentação dos Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
