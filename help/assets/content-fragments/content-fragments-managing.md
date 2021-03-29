@@ -1,16 +1,18 @@
 ---
 title: Gerenciamento dos fragmentos de conteúdo
-description: Os Fragmentos de conteúdo são armazenados como Ativos, portanto, são gerenciados principalmente no console Ativos .
+description: Saiba como usar o console Assets para gerenciar os Fragmentos de conteúdo AEM, a base do seu conteúdo sem periféricos.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1640'
 ht-degree: 9%
 
 ---
 
 
-# Gerenciamento dos fragmentos de conteúdo{#managing-content-fragments}
+# Gerenciamento dos fragmentos de conteúdo {#managing-content-fragments}
+
+Saiba como usar o console Assets para gerenciar os Fragmentos de conteúdo AEM, a base do seu conteúdo sem periféricos.
 
 Os Fragmentos de conteúdo são armazenados como **Assets**, portanto, são gerenciados principalmente no console **Assets**.
 
