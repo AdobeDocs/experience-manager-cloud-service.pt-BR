@@ -1,34 +1,36 @@
 ---
 title: Fragmentos de conteúdo - excluir considerações
-description: Fragmentos de conteúdo - excluir considerações
+description: Revise essas importantes considerações antes de definir as políticas de exclusão dos Fragmentos de conteúdo no AEM. Os Fragmentos de conteúdo são uma ferramenta poderosa para fornecer conteúdo sem interface, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 translation-type: tm+mt
-source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 12%
+source-wordcount: '470'
+ht-degree: 9%
 
 ---
 
 
-# Fragmentos de conteúdo - excluir considerações{#content-fragments-delete-considerations}
+# Fragmentos de conteúdo - excluir considerações {#content-fragments-delete-considerations}
 
-## Permissões - Excluir ou Não Excluir {#permissions-delete-or-not-delete}
+Revise essas importantes considerações antes de definir as políticas de exclusão dos Fragmentos de conteúdo no AEM. Os Fragmentos de conteúdo são uma ferramenta poderosa para fornecer conteúdo sem interface, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 
-A capacidade de excluir conteúdo é poderosa, mas potencialmente sensível, com muitos setores precisando restringir e controlar como esses privilégios são distribuídos.
+## Permissões - excluir ou não excluir {#permissions-delete-or-not-delete}
+
+A capacidade de excluir conteúdo é poderosa, mas potencialmente sensível, com muitos setores precisando restringir e controlar a distribuição desses privilégios.
 
 Em relação às permissões de exclusão, os Fragmentos de conteúdo devem ser considerados em dois níveis:
 
 1. **O Fragmento do conteúdo como uma única entidade.**
 
    * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo  **e excluir um fragmento** inteiro.
-   * **Permissões**: A permissão Excluir pode ser atribuída por meio do Gerenciamento de usuários e/ou grupos.  <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **Permissões**: A permissão Excluir pode ser atribuída por meio do Gerenciamento de usuários e/ou do Gerenciamento de grupos.  <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **As várias subentidades que compõem um fragmento de conteúdo; por exemplo, variações, subnós.**
 
    A operação básica do editor de fragmentos de conteúdo requer que esses subelementos transitórios possam ser excluídos. Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
 
    * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo -  **sem ter permissão para excluir um fragmento** inteiro.
-   * **Permissões**: Consulte  [Permissões necessárias somente](#permissions-required-for-editor-functionality-only) para a funcionalidade do editor.
+   * **Permissões**: Consulte  [Permissões necessárias somente para a funcionalidade do editor](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
@@ -38,7 +40,7 @@ Em relação às permissões de exclusão, os Fragmentos de conteúdo devem ser 
 >
 >Consulte também Como auditar operações de gerenciamento de usuários em AEM. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
-## Permissões necessárias somente para a funcionalidade do editor {#permissions-required-for-editor-functionality-only}
+## Permissões necessárias para a funcionalidade do editor somente {#permissions-required-for-editor-functionality-only}
 
 Para usuários que precisam editar/atualizar um fragmento de conteúdo, **sem permitir que excluam um fragmento inteiro**, permissões específicas devem ser atribuídas, já que a operação básica do editor de fragmentos de conteúdo requer que elementos transitórios secundários possam ser excluídos.
 
@@ -46,9 +48,9 @@ Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar 
 
 >[!NOTE]
 >
->As permissões de exclusão, necessárias para editar/atualizar um Fragmento de conteúdo, estão incluídas na permissão Excluir atribuída por meio do Gerenciamento de usuários e/ou grupos. <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+>As permissões de exclusão, necessárias para editar/atualizar um Fragmento de conteúdo, estão incluídas na permissão de exclusão atribuída por meio do Gerenciamento de usuários e/ou grupos. <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-As permissões necessárias para editar/atualizar um fragmento precisam ser aplicadas ao nó que contém o fragmento de conteúdo ou a um nó pai apropriado (em qualquer nível em `/content/dam`). Quando atribuídas a esse nó pai, as permissões serão aplicadas a todos os nós dentro desse ramo.
+As permissões necessárias para editar/atualizar um fragmento precisam ser aplicadas ao nó que contém o fragmento de conteúdo ou a um nó pai apropriado (em qualquer nível em `/content/dam`). Quando atribuídas a esse nó pai, as permissões serão aplicadas a todos os nós dentro dessa ramificação.
 
 Por exemplo, uma pasta que manterá todos os fragmentos de conteúdo, como:
 
