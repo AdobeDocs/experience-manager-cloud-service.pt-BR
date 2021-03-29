@@ -1,16 +1,18 @@
 ---
 title: Saiba como usar GraphQL com AEM - Conteúdo de amostra e consultas
-description: Saiba como usar GraphQL com AEM - Conteúdo de amostra e Consultas.
+description: Saiba como usar o GraphQL com AEM para fornecer conteúdo headless, explorando conteúdo de amostra e consultas.
 translation-type: tm+mt
-source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1418'
 ht-degree: 6%
 
 ---
 
 
 # Saiba como usar GraphQL com AEM - Conteúdo de amostra e Consultas {#learn-graphql-with-aem-sample-content-queries}
+
+Saiba como usar o GraphQL com AEM para fornecer conteúdo headless, explorando conteúdo de amostra e consultas.
 
 >[!NOTE]
 >
