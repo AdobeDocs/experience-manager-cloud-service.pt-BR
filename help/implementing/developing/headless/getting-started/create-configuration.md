@@ -1,40 +1,40 @@
 ---
-title: Criando um Guia de Start Rápido sem Cabeçalhos de Configuração
-description: Como primeiro passo para começar a usar o recurso sem rumo em AEM como Cloud Service, é necessário criar uma configuração.
+title: Criação de um Guia de início rápido sem cabeçalho de configuração
+description: Crie uma configuração como uma primeira etapa para começar a usar o headless no AEM como um Cloud Service.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '333'
 ht-degree: 2%
 
 ---
 
 
-# Criando um Guia de Start Rápido sem Cabeçalho de Configuração {#creating-configuration}
+# Criação de um Guia de início rápido sem cabeçalho de configuração {#creating-configuration}
 
-Como primeiro passo para começar a usar o recurso sem rumo em AEM como Cloud Service, é necessário criar uma configuração.
+Como primeiro passo para começar a usar o headless no AEM as a Cloud Service, é necessário criar uma configuração.
 
 ## O que é uma configuração? {#what-is-a-configuration}
 
 O Navegador de configuração fornece uma API de configuração genérica, estrutura de conteúdo, mecanismo de resolução para configurações no AEM.
 
-No contexto de gestão de conteúdo sem cabeçalho no AEM, pense em uma configuração como um local de trabalho dentro do AEM onde você pode criar seus Modelos de conteúdo, que definem a estrutura do conteúdo futuro e dos Fragmentos de conteúdo. É possível ter várias configurações para separar esses modelos.
+No contexto do gerenciamento de conteúdo sem periféricos no AEM, considere uma configuração como um local de trabalho no AEM onde você pode criar os Modelos de conteúdo, que definem a estrutura do conteúdo futuro e os Fragmentos de conteúdo. É possível ter várias configurações para separar esses modelos.
 
-Se você estiver familiarizado com [modelos de página em uma implementação de pilha completa AEM,](/help/sites-cloud/authoring/features/templates.md) o uso de configurações para o gerenciamento de Modelos de conteúdo é semelhante.
+Se você estiver familiarizado com [modelos de página em uma implementação de pilha completa,](/help/sites-cloud/authoring/features/templates.md) o uso de configurações para o gerenciamento de Modelos de conteúdo é semelhante.
 
 ## Como criar uma configuração {#how-to-create-a-configuration}
 
-Um administrador só precisaria criar uma configuração uma vez ou muito egoísta quando uma nova área de trabalho for necessária para organizar seus Modelos de conteúdo. Para os fins deste guia de introdução, precisamos apenas criar uma configuração.
+Um administrador só precisaria criar uma configuração uma vez ou muito automaticamente quando um novo espaço de trabalho for necessário para organizar seus Modelos de conteúdo. Para o objetivo deste guia de introdução, precisamos apenas criar uma configuração.
 
-1. Efetue login no AEM como um Cloud Service e, no menu principal, selecione **Ferramentas -> Geral -> Navegador de configuração**.
-1. Forneça um **Título** e um **Nome** para a sua configuração.
+1. Efetue login no AEM como um Cloud Service e, no menu principal, selecione **Tools -> General -> Configuration Browser**.
+1. Forneça um **Título** e um **Nome** para sua configuração.
    * O **Title** deve ser descritivo.
    * O **Name** se tornará o nome do nó no repositório.
-      * Será gerado automaticamente com base no título e ajustado de acordo com [AEM convenções de nomenclatura.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Ele será gerado automaticamente com base no título e ajustado de acordo com [AEM convenções de nomenclatura.](/help/implementing/developing/introduction/naming-conventions.md)
       * Pode ser ajustado, se necessário.
 1. Verifique as seguintes opções:
    * **Modelos de fragmentos do conteúdo**
-   * **Query Persistentes GraphQL**
+   * **Consultas Persistentes GraphQL**
 
    ![Criar configuração](../assets/create-configuration.png)
 
@@ -44,7 +44,7 @@ Um administrador só precisaria criar uma configuração uma vez ou muito egoís
 
 >[!NOTE]
 >
->As opções de configuração além de **Modelos de fragmento de conteúdo** e **Query persistentes GraphQL** podem ser necessárias, dependendo de seus requisitos de implementação.
+>As opções de configuração, além dos **Modelos de fragmento de conteúdo** e **Consultas persistentes de GraphQL** podem ser necessárias, dependendo dos requisitos de implementação.
 
 ## Próximas etapas {#next-steps}
 
