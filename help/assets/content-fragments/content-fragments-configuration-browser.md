@@ -1,23 +1,25 @@
 ---
 title: Fragmentos de conteúdo - Navegador de configuração
-description: Saiba como ativar determinadas funcionalidades do Fragmento de conteúdo no Navegador de configuração.
+description: Saiba como ativar determinadas funcionalidades de Fragmento de conteúdo no Navegador de configuração para aproveitar AEM poderosos recursos de entrega sem cabeçalho.
 translation-type: tm+mt
-source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 21%
+source-wordcount: '271'
+ht-degree: 19%
 
 ---
 
 
 # Fragmentos de conteúdo - Navegador de configuração{#content-fragments-configuration-browser}
 
+Saiba como ativar determinadas funcionalidades de Fragmento de conteúdo no Navegador de configuração para aproveitar AEM poderosos recursos de entrega sem cabeçalho.
+
 ## Ativar a funcionalidade de fragmento de conteúdo para sua instância {#enable-content-fragment-functionality-instance}
 
 Antes de usar Fragmentos de conteúdo, você precisa usar o **Navegador de configuração** para ativar:
 
-* **Modelos**  de fragmento de conteúdo - obrigatório
-* **Query**  persistentes GraphQL - opcional
+* **Modelos de fragmentos do conteúdo**  - obrigatório
+* **Consultas**  persistentes GraphQL - opcional
 
 >[!CAUTION]
 >
@@ -25,12 +27,12 @@ Antes de usar Fragmentos de conteúdo, você precisa usar o **Navegador de confi
 
 Para ativar a funcionalidade do fragmento de conteúdo, é necessário:
 
-* Habilitar o uso da funcionalidade de fragmento de conteúdo por meio do navegador de configuração
-* Aplicar a configuração à pasta Ativos
+* Ativar o uso da funcionalidade de fragmento de conteúdo por meio do navegador de configuração
+* Aplicar a configuração à sua pasta Ativos
 
 ### Ativar a funcionalidade de fragmento de conteúdo no navegador de configuração {#enable-content-fragment-functionality-in-configuration-browser}
 
-Para [utilizar determinadas funcionalidades do Fragmento de conteúdo](#creating-a-content-fragment-model) você **deve** primeiro ativá-las por meio do **Navegador de configuração**:
+Para [usar determinada funcionalidade de Fragmento de conteúdo](#creating-a-content-fragment-model) você **deve** primeiro ativá-los por meio do **Navegador de configuração**:
 
 >[!NOTE]
 >
@@ -38,27 +40,27 @@ Para [utilizar determinadas funcionalidades do Fragmento de conteúdo](#creating
 
 >[!CAUTION]
 >
->Sub-configurações (uma configuração aninhada em uma configuração) não são suportadas para uso com Fragmentos de conteúdo.
+>Subconfigurações (uma configuração aninhada em uma configuração) não são compatíveis com o Fragmentos de conteúdo.
 
 1. Navegue até **Ferramentas**, **Gerale** abra o **Navegador de configuração**.
 
 1. Use **Criar** para abrir a caixa de diálogo, onde você:
 
    1. Especifique um **Título**.
-   1. Para habilitar o uso, selecione
+   1. Para permitir seu uso, selecione
       * **Modelos de fragmentos do conteúdo**
-      * **Query Persistentes GraphQL**
+      * **Consultas Persistentes GraphQL**
 
       ![Definir configuração](assets/cfm-conf-01.png)
 
 
-1. Selecione **Criar** para guardar a definição.
+1. Selecione **Create** para salvar a definição.
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### Aplicar a configuração à sua pasta Assets {#apply-the-configuration-to-your-assets-folder}
+### Aplique a configuração à sua pasta de ativos {#apply-the-configuration-to-your-assets-folder}
 
-Quando a configuração **global** estiver ativada para a funcionalidade do fragmento do conteúdo, então se aplica a qualquer pasta Ativos.
+Quando a configuração **global** está ativada para a funcionalidade do fragmento de conteúdo, então se aplica a qualquer pasta de Ativos.
 
 Para usar outras configurações (ou seja, excluindo globais) com uma pasta do Assets comparável, é necessário definir a conexão. Isso é feito ao selecionar a **Configuração** apropriada na guia **Serviços da nuvem** das **Propriedades da pasta** da pasta apropriada.
 
