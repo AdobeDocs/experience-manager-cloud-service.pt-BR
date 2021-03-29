@@ -3,7 +3,7 @@ title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 feature: Implantação
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
 workflow-type: tm+mt
 source-wordcount: '3247'
 ht-degree: 1%
@@ -50,7 +50,7 @@ O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar o
 
 Os clientes implantam código personalizado em ambientes de nuvem por meio do Cloud Manager. Observe que o Cloud Manager transforma pacotes de conteúdo montados localmente em um artefato que está em conformidade com o Modelo de recurso do Sling, que é a forma como um AEM como um aplicativo Cloud Service é descrito ao executar em um ambiente de nuvem. Como resultado, ao examinar os pacotes no Gerenciador de pacotes em ambientes do Cloud, o nome incluirá &quot;cp2fm&quot; e os pacotes transformados terão todos os metadados removidos. Eles não podem ter interação, o que significa que não podem ser baixados, replicados ou abertos. A documentação detalhada sobre o conversor pode ser [encontrada aqui](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
-Os pacotes de conteúdo gravados para AEM como aplicativos Cloud Service devem ter uma separação limpa entre conteúdo imutável e mutável e o Cloud Manager a aplicará ao falhar na criação, criando uma mensagem como:
+Os pacotes de conteúdo gravados para AEM como aplicativos Cloud Service devem ter uma separação limpa entre conteúdo imutável e mutável e o Cloud Manager instalará apenas o conteúdo mutável, além de exibir uma mensagem como:
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
