@@ -2,7 +2,7 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 53%
@@ -30,7 +30,7 @@ Após a assinatura do contrato, ocorrerão os seguintes eventos:
 
 **Equipes, funções e permissões**
 
-O Administrador do sistema pode adicionar usuários e atribuí-los às funções do Cloud Manager. Esta seção ajuda você a entender o que são *Funções do Cloud Manager* e as permissões associadas às funções antes de começar.
+O Administrador do sistema pode adicionar usuários e atribuí-los às funções do Cloud Manager. Esta seção ajuda você a entender o que são [Funções do Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles) e as [permissões](/help/onboarding/what-is-required/user-roles-permissions.md#permissions) associadas às funções antes de começar.
 
 **Tarefas do administrador do sistema**
 
@@ -39,7 +39,7 @@ Os administradores do sistema gerenciam todos os aspectos de seus usuários, des
 
 **Navegar para o Cloud Manager**
 
-Acesse o Cloud Manager para começar a usar o Cloud jornada com o AEM. Agora que você foi adicionado como um usuário e atribuído a uma Função do Cloud Manager, você está pronto para realizar várias tarefas, como criar um programa, adicionar um ambiente, gerenciar Git, configurar um pipeline e implantar código.
+Acesse o Cloud Manager para começar a usar o Cloud jornada com o AEM. Agora que você foi adicionado como um usuário e atribuído a uma Função do Cloud Manager, você está pronto para realizar várias tarefas, como [criar um programa](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [adicionar um ambiente](/help/implementing/cloud-manager/manage-environments.md), [acessar Git](/help/implementing/cloud-manager/accessing-git.md), [configurar um pipeline](/help/implementing/cloud-manager/configure-pipeline.md) e [implantar um código](/help/implementing/cloud-manager/deploy-code.md).
 
 **Acessar uma instância AEM**
 
