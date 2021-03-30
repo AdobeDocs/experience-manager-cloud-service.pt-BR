@@ -2,9 +2,9 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 834d41cfb9b2988b5e7ffa03ad0f45d78c53f915
+source-git-commit: b3f9d750c2103f2af97b8348dcdb24a80a06fa06
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '692'
 ht-degree: 49%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 49%
 
 # Integração ao Experience Manager as a Cloud Service {#aem-onboarding-guide}
 
-Parabéns por começar sua jornada com AEM como Cloud Service! Se você estiver implantando um novo aplicativo ou migrando um existente, este guia serve como ponto de partida para garantir que seu aplicativo seja otimizado e esteja pronto para o sucesso no Cloud Service.
+Parabéns por começar sua jornada com AEM como Cloud Service! Se você estiver implantando um novo aplicativo ou migrando um existente, este guia serve como ponto de partida para garantir que seu aplicativo seja otimizado e pronto para o sucesso no Cloud Service.
 
 ## Artigos-chave sobre integração {#key-articles}
 
@@ -35,7 +35,7 @@ O Administrador do sistema pode adicionar usuários e atribuí-los às funções
 
 **[Tarefas do administrador do sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-Os administradores do sistema gerenciam todos os aspectos de seus usuários, desde o acesso às permissões. As seguintes páginas de documentação incluem informações descrevendo tarefas organizacionais básicas:
+Os administradores do sistema gerenciam todos os aspectos de seus usuários, desde o acesso às permissões. A documentação a seguir inclui informações descrevendo tarefas organizacionais básicas, como:
 
 * Adicionar usuários
 * Atribuição de usuários a funções e permissões do Cloud Manager
@@ -46,7 +46,7 @@ Acesse o Cloud Manager para começar a usar o Cloud jornada com o AEM. Agora que
 
 **[Conceder ao usuário acesso a uma instância de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-Siga esta seção para saber como um Administrador do sistema pode conceder aos usuários acesso a uma instância do AEM ou um usuário que criou um ambiente pode conceder acesso a uma instância do AEM a outros usuários.
+Siga esta seção para saber como um Administrador do sistema pode conceder aos usuários acesso a uma instância do AEM ou um usuário que criou um ambiente pode conceder acesso a outra instância do AEM a outros usuários.
 
 ## Guias do Experience Manager as a Cloud Service {#aem-guides}
 
