@@ -2,9 +2,9 @@
 title: 'Acesso a instâncias de AEM '
 description: Siga esta página para saber como acessar uma instância do AEM
 translation-type: tm+mt
-source-git-commit: 7ab5c624ccb2b321462c9759946becd79d03689c
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Acessar uma instância de AEM {#accessing-aem-instance}
 
-Siga as etapas abaixo para gerenciar o acesso do Cloud Manager:
+Siga as etapas abaixo para acessar uma instância do AEM no Cloud Manager:
 
 1. Navegue até o Cloud Manager e clique no botão **Gerenciar acesso** no cartão **Ambientes**, conforme mostrado abaixo.
 
