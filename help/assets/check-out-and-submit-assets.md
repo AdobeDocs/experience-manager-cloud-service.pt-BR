@@ -1,73 +1,62 @@
 ---
-title: Arquivos de check-in e check-out em [!DNL Assets]
-description: Saiba como fazer check-out dos ativos para edição e check-in deles novamente após a conclusão das alterações.
+title: Fazer check-in e check-out de arquivos em [!DNL Assets]
+description: Saiba como fazer check-out de ativos para edição e check-in deles novamente depois que as alterações forem concluídas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 8db9f899cee8f01a4c2aac93ccecc052f9780bc0
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 4%
+source-wordcount: '431'
+ht-degree: 0%
 
 ---
 
 
-# Arquivos de check-in e check-out no Assets {#check-in-and-check-out-files-in-assets}
+# Arquivos de check-in e check-out em [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
-Os ativos Adobe Experience Manager (AEM) permitem que você faça check-out dos ativos para edição e check-in deles novamente após concluir as alterações. Depois de fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo. Outros usuários não podem executar nenhuma dessas operações no ativo até que você faça check-in do ativo novamente no AEM Assets. No entanto, eles ainda podem alterar os metadados do ativo bloqueado.
+[!DNL Adobe Experience Manager Assets] permite fazer check-out dos ativos para edição e check-in deles novamente depois de concluir a realização das alterações. Após fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo. Outros usuários não podem executar nenhuma dessas operações no ativo até que você verifique o ativo de volta para [!DNL Assets]. No entanto, eles ainda podem alterar os metadados do ativo bloqueado.
 
-Para poder fazer check-out/check-in de ativos, você precisa ter acesso de gravação neles.
+Para fazer check-out/in de ativos, você precisa ter acesso de gravação.
 
-Esse recurso ajuda a impedir que outros usuários substituam as alterações feitas por um autor, onde vários usuários colaboram na edição de workflows entre equipes.
+Esse recurso ajuda a impedir que outros usuários substituam as alterações feitas por um autor, onde vários usuários colaboram na edição de fluxos de trabalho entre equipes.
 
-## Fazendo check-out de ativos {#checking-out-assets}
+## Confira os ativos {#checking-out-assets}
 
-1. Na interface do usuário Ativos, selecione o ativo que deseja fazer check-out. Você também pode selecionar vários ativos para fazer check-out.
+1. Na interface do usuário [!DNL Assets], selecione o ativo que deseja fazer check-out. Você também pode selecionar vários ativos para fazer check-out.
 
-   ![chlimage_1-468](assets/chlimage_1-468.png)
+1. Na barra de ferramentas, clique em **[!UICONTROL Check-out]**. A opção **[!UICONTROL Check-out]** alterna para **[!UICONTROL Check-in]**.
+Para verificar se outros usuários podem editar o ativo com check-out, faça logon como um usuário diferente. O ícone ![checkout lock icon](assets/do-not-localize/checkout_lock.png) é exibido na miniatura do ativo que você fez o check-out.
 
-1. Na barra de ferramentas, clique/toque no ícone **[!UICONTROL Check-out]**.
+   ![ícone de finalização na exibição de cartão](assets/checkout-icon-card-view.png)
 
-   ![chlimage_1-469](assets/chlimage_1-469.png)
+   Selecione o ativo. Observe que a barra de ferramentas não exibe opções que permitem editar, anotar, publicar ou excluir o ativo.
 
-   Observe que o ícone **[!UICONTROL Check-out]** alterna para o ícone **[!UICONTROL Checkin]** com o cadeado aberto.
+   ![chlimage_1-472](assets/checkout-asset-toolbar-options.png)
 
-   ![chlimage_1-470](assets/chlimage_1-470.png)
+   Para editar os metadados do ativo bloqueado, clique em **[!UICONTROL Exibir propriedades]**.
 
-   Para verificar se outros usuários podem editar o ativo que você fez check-out, faça logon como um usuário diferente. Um ícone de cadeado é exibido na miniatura do ativo que você deu baixa.
+1. Clique em **[!UICONTROL Editar]** para abrir o ativo no modo de edição.
 
-   ![chlimage_1-471](assets/chlimage_1-471.png)
+1. Edite o ativo e salve as alterações. Por exemplo, corte a imagem e salve. Também é possível optar por anotar ou publicar o ativo.
 
-   Selecione o ativo. Observe que a barra de ferramentas não exibe nenhuma opção que permita editar, anotar, publicar ou excluir o ativo.
+1. Selecione o ativo editado na interface [!DNL Assets] e clique em **[!UICONTROL Check-in]** na barra de ferramentas. O ativo modificado é passado para [!DNL Assets] e está disponível para edição por outros usuários.
 
-   ![chlimage_1-472](assets/chlimage_1-472.png)
+## Verificação forçada em {#forced-check-in}
 
-   No entanto, você pode clicar/tocar no ícone **[!UICONTROL Propriedades da Visualização]** para editar os metadados do ativo bloqueado.
+Os administradores podem verificar ativos com check-out feito por outros usuários.
 
-1. Clique/toque no ícone Editar para abrir o ativo no modo de edição.
-
-   ![chlimage_1-473](assets/chlimage_1-473.png)
-
-1. Edite o ativo e salve as alterações. Por exemplo, recorte a imagem e salve-a.
-
-   ![chlimage_1-474](assets/chlimage_1-474.png)
-
-   Você também pode optar por anotar ou publicar o ativo.
-
-1. Selecione o ativo editado na interface do usuário do Assets e clique/toque no ícone **[!UICONTROL Check-in]**, da barra de ferramentas.
-
-   ![chlimage_1-475](assets/chlimage_1-475.png)
-
-   O ativo modificado é feito check-in no AEM Assets e está disponível para outros usuários para edição.
-
-## Check-in Forçado {#forced-check-in}
-
-Os administradores podem fazer check-in de ativos cujo check-out foi feito por outros usuários.
-
-1. Faça logon na AEM Assets como administrador.
-1. Na interface do usuário do Assets, selecione um ou mais ativos cujo check-out foi feito por outros usuários.
+1. Faça logon em [!DNL Assets] como administrador.
+1. Na interface do usuário [!DNL Assets], selecione um ou mais ativos que foram verificados por outros usuários.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. Na barra de ferramentas, clique/toque no ícone **[!UICONTROL Bloquear versão]**. O ativo é devolvido e está disponível para edição para outros usuários.
+1. Na barra de ferramentas, clique em **[!UICONTROL Liberar Bloqueio]**. O ativo é retornado e está disponível para edição para outros usuários.
 
-   ![chlimage_1-477](assets/chlimage_1-477.png)
+## Práticas recomendadas e limitações {#tips-limitations}
+
+* É possível excluir uma *pasta* que contém arquivos de ativos com check-out. Antes de excluir uma pasta, verifique se não há check-out de ativos digitais para os usuários.
+
+>[!MORELIKETHIS]
+>
+>* [Entender check-in e check-out  [!DNL Experience Manager] no aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Tutorial em vídeo para entender o check-in e o check-out [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+
