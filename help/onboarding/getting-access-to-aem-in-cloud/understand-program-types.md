@@ -2,10 +2,10 @@
 title: Noções básicas sobre tipos de programas e programas
 description: Noções básicas sobre tipos de programas e programas - Cloud Services
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 6e8cf08ec3f85437a8472a45895f3818e473e98c
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 3%
+source-wordcount: '329'
+ht-degree: 2%
 
 ---
 
@@ -17,6 +17,23 @@ No Cloud Manager, você tem a entidade Locatário na parte superior, que pode te
 O diagrama a seguir mostra a hierarquia de entidades no Cloud Manager.
 
 ![imagem](assets/program-types1.png)
+
+## Repositório de código-fonte {#source-code-repository}
+
+O programa do Cloud Manager será provisionado automaticamente com seu próprio repositório Git.
+
+Para um usuário acessar o repositório Git do Cloud Manager, os usuários precisarão usar um cliente Git com uma ferramenta de linha de comando, um cliente Git visual independente ou o IDE do usuário, como Eclipse, IntelliJ, NetBeans.
+
+Depois que um cliente Git é configurado, você pode gerenciar seu repositório Git na interface do usuário do Cloud Manager. Para saber mais sobre como gerenciar o Git usando a interface do usuário do Cloud Manager, consulte [Acesso ao Git](/help/implementing/cloud-manager/accessing-git.md).
+
+Para começar a desenvolver o aplicativo AEM Cloud, uma cópia local do código do aplicativo deve ser feita verificando-o do repositório do Cloud Manager para um local em seu computador local onde deseje criar seu repositório.
+
+```java
+$ git clone {URL}
+```
+
+>[!NOTE]
+>Um usuário pode fazer check-out de uma cópia de seu código e fazer alterações no repositório de código local. Quando pronto, o usuário pode confirmar as alterações de código no repositório de código remoto no Cloud Manager.
 
 ## Tipos de programas {#program-types}
 
