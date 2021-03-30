@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: Implantação
 role: Arquiteto, desenvolvedor
 translation-type: tm+mt
-source-git-commit: 974c7d20d7896b749e07b05d0149ed16dc7e0cd5
+source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 31%
+source-wordcount: '672'
+ht-degree: 29%
 
 ---
 
@@ -19,24 +19,22 @@ ht-degree: 31%
 
 + [Integração ao AEM as a Cloud Service](/help/onboarding/home.md)
 + Introdução ao AEM como Cloud Service {#what-is-required}
-   + [Direitos de acesso concedidos](what-is-required/access-rights-granted.md)
-   + [Permissões baseadas em função](what-is-required/role-based-permissions.md)
-   + [Repositório de código-fonte](what-is-required/source-code-repository.md)
-+ Acesso ao AEM na nuvem {#getting-access}
-   + [Acesso ao Cloud Manager para AEM as a Cloud Service](getting-access-to-aem-in-cloud/navigation.md)
-   + Acesso ao Cloud Manager {#cloud-service-programs}
-      + [Página de aterrissagem do Cloud Manager](getting-access-to-aem-in-cloud/first-time-login.md)
-      + [Noções básicas sobre programas e tipos de programas](getting-access-to-aem-in-cloud/understand-program-types.md)
-      + Programas de produção {#production-programs}
-         + [Introdução](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [Criação de um programa de produção](getting-access-to-aem-in-cloud/creating-production-program.md)
-         + [Editando um programa de produção](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
-      + Programas do Sandbox {#sandbox-programs}
-         + [Introdução](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [Criação de um programa de sandbox](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
-         + [Edição de um programa de sandbox](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
-         + [Exclusão de um programa de sandbox](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
-         + [Hibernar e desibernar ambientes de sandbox](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+   + [Conheça o Adobe ID](what-is-required/get-your-adobe-id.md)
+   + [Adicionar usuários e atribuir funções ao Cloud Manager](what-is-required/add-users-assign-cm-roles.md)
+   + [Navegar para o Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
+   + [Acesso a uma instância de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
++ Programas do Cloud Manager {#getting-access}
+   + [Noções básicas sobre programas e tipos de programas](getting-access-to-aem-in-cloud/understand-program-types.md)
+   + Programas de produção {#production-programs}
+      + [Introdução](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [Criação de um programa de produção](getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [Editando um programa de produção](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+   + Programas do Sandbox {#sandbox-programs}
+      + [Introdução](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [Criação de um programa de sandbox](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [Edição de um programa de sandbox](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+      + [Exclusão de um programa de sandbox](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [Hibernar e desibernar ambientes de sandbox](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + Uso do Cloud Manager {#using-cloud-manager}
       + [Gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
       + [Configuração do pipeline de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
