@@ -2,9 +2,9 @@
 title: Navegar para o Cloud Manager
 description: Siga esta página para saber como navegar até a página de aterrissagem do Cloud Manager
 translation-type: tm+mt
-source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
+source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,8 @@ Assim que o Administrador do sistema conceder acesso ao Cloud Manager, você rec
 >[!NOTE]
 >Você deve ser adicionado como um usuário e atribuído a uma Função do Cloud Manager (Perfil do produto no Admin Console) pelo Administrador do sistema.
 
-1. No email de boas-vindas, selecione **Introdução** ou navegue até [Cloud Manager](https://experience.adobe.com) e faça logon usando sua Adobe ID.
+1. No email de boas-vindas, clique em **Introdução**, conforme mostrado na figura abaixo, ou navegue até [Cloud Manager](https://experience.adobe.com) e faça logon usando sua Adobe ID.\
+   ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
 1. Selecione **Experience Manager**.
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
@@ -34,7 +35,7 @@ Após o logon bem-sucedido, você será direcionado para a página inicial do Cl
 >[!NOTE]
 >Dependendo das funções atribuídas no [!UICONTROL Cloud Manager] e do estado do aplicativo, você verá telas diferentes ao usar a interface do [!UICONTROL Cloud Manager].
 
-Você verá uma das três opções descritas abaixo:
+Você verá uma das três opções, descritas abaixo:
 
 * **Quando nenhum programa existe no Cloud Manager**
 
