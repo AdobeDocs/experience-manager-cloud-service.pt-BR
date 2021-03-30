@@ -7,9 +7,9 @@ feature-set: Experience Manager Sites
 feature: Implantação
 role: Arquiteto, desenvolvedor
 translation-type: tm+mt
-source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '671'
 ht-degree: 29%
 
 ---
@@ -19,10 +19,11 @@ ht-degree: 29%
 
 + [Integração ao AEM as a Cloud Service](/help/onboarding/home.md)
 + Introdução ao AEM como Cloud Service {#what-is-required}
-   + [Conheça o Adobe ID](what-is-required/get-your-adobe-id.md)
-   + [Adicionar usuários e atribuir funções ao Cloud Manager](what-is-required/add-users-assign-cm-roles.md)
+   + [Obter a Adobe ID](what-is-required/get-your-adobe-id.md)
+   + [Funções e permissões do usuário](what-is-required/user-roles-permissions.md)
+   + [Tarefas do administrador do sistema](what-is-required/add-users-assign-cm-roles.md)
    + [Navegar para o Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
-   + [Acesso a uma instância de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
+   + [Acessar uma instância AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Programas do Cloud Manager {#getting-access}
    + [Noções básicas sobre programas e tipos de programas](getting-access-to-aem-in-cloud/understand-program-types.md)
    + Programas de produção {#production-programs}
