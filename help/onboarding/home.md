@@ -2,7 +2,7 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: 99417790e5770d7b340baf78539f5985056dc0f7
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 49%
@@ -34,7 +34,7 @@ O Administrador do sistema pode adicionar usuários e atribuí-los às funções
 
 **[Tarefas do administrador do sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-Os administradores do sistema gerenciam todos os aspectos de seus usuários, desde o acesso às permissões. As páginas de documentação a seguir incluem informações descrevendo tarefas organizacionais básicas, ou seja, [Adicionar usuários e atribuir usuários a funções e permissões do Cloud Manager](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
+Os administradores do sistema gerenciam todos os aspectos de seus usuários, desde o acesso às permissões. As páginas de documentação a seguir incluem informações descrevendo tarefas organizacionais básicas, ou seja, [adicionar usuários e atribuir usuários a funções e permissões do Cloud Manager](/help/onboarding/what-is-required/add-users-assign-cm-roles.md).
 
 **[Navegar para o Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
