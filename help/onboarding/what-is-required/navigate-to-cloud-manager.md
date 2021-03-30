@@ -2,7 +2,7 @@
 title: Navegar para o Cloud Manager
 description: Siga esta página para saber como navegar até a página de aterrissagem do Cloud Manager
 translation-type: tm+mt
-source-git-commit: e77fb8bc94d8be2d8613075f4b1638aab1d2fcbe
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Navegar até o Cloud Manager {#cloud-manager}
+# Navegue até o Cloud Manager {#cloud-manager}
 
 Assim que o Administrador do sistema conceder acesso ao Cloud Manager, você receberá um email que o levará até a página de logon do Cloud Manager, que também é acessível por meio do [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
 
