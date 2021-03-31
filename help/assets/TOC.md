@@ -4,9 +4,9 @@ user-guide-title: Guia do Assets as a Cloud Service
 breadcrumb-title: Guia do Assets
 user-guide-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
-feature-set: Experience Manager Assets
+feature-set: Experience Manager Assets, Experience Manager
 translation-type: tm+mt
-source-git-commit: 9f47f53524ab89c368ab260bc0d16e47ee81a230
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 70%
