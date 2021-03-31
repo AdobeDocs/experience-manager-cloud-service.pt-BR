@@ -2,11 +2,12 @@
 title: Aviso de fim de vida útil de visualizadores Flash
 description: A partir de 31 de janeiro de 2017, o suporte para a Plataforma do visualizador de Flashes será encerrado oficialmente.
 topic: Profissional
+role: Administrador,Profissional
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 8%
+source-wordcount: '52'
+ht-degree: 11%
 
 ---
 
