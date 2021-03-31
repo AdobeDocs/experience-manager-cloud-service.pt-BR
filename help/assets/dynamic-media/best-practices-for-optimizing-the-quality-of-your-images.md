@@ -4,10 +4,11 @@ description: Conheça as práticas recomendadas que você pode usar no Dynamic M
 contentOwner: Rick Brough
 feature: Gerenciamento de ativos
 topic: Profissional
+role: Profissional
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1458'
 ht-degree: 5%
 
 ---
