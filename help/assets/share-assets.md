@@ -2,10 +2,12 @@
 title: Compartilhar ativos, pastas e coleções como um link
 description: Este artigo descreve como compartilhar ativos, pastas e coleções dentro de [!DNL Experience Manager Assets] como um hiperlink.
 contentOwner: AG
+feature: Gerenciamento de ativos, Colaboração, Distribuição de ativos
+role: Profissional de negócios,Administrador
 translation-type: tm+mt
-source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
@@ -17,8 +19,8 @@ ht-degree: 1%
 
 * Compartilhar como um link.
 * Baixe ativos e compartilhe separadamente.
-* Compartilhe via aplicativo de desktop do AEM.
-* Compartilhar via Adobe Asset Link.
+* Compartilhe por meio AEM aplicativo de desktop.
+* Compartilhe via Adobe Asset Link.
 * (Funcionalidade futura) Compartilhar usando o Brand Portal.
 
 ## Compartilhar ativos como um link {#sharelink}
@@ -113,7 +115,7 @@ Os usuários podem baixar os ativos necessários e compartilhá-los fora de [!DN
 
 Os profissionais de marketing e os usuários de linha de negócios podem compartilhar facilmente os ativos aprovados com seus profissionais de criação usando o
 
-* **Aplicativo** de desktop do Experience Manager: O aplicativo funciona no Windows e no Mac. Consulte [visão geral do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Para saber como qualquer usuário autorizado de desktop pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Os usuários da área de trabalho podem criar ativos e compartilhá-los com seus equivalentes que são usuários do AEM, por exemplo, ao fazer upload de novas imagens. Consulte [fazer upload de ativos usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Aplicativo** de desktop do Experience Manager: O aplicativo funciona no Windows e no Mac. Consulte [visão geral do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Para saber como qualquer usuário autorizado de desktop pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Os usuários da área de trabalho podem criar ativos e compartilhá-los com seus equivalentes que são usuários AEM, por exemplo, ao carregar novas imagens. Consulte [fazer upload de ativos usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: Os profissionais criativos podem pesquisar e usar ativos diretamente de dentro  [!DNL Adobe InDesign],  [!DNL Adobe Illustrator]e  [!DNL Adobe Photoshop].
 
