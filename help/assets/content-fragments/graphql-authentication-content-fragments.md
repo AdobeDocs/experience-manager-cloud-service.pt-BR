@@ -1,10 +1,11 @@
 ---
 title: Autenticação para consultas GraphQL de AEM Remotas em Fragmentos de Conteúdo
 description: Entenda a autenticação necessária para consultas GraphQL de AEM Remotas para proteger sua entrega de conteúdo sem periféricos.
+feature: Fragmentos de conteúdo, API GraphQL
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
