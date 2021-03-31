@@ -2,15 +2,21 @@
 title: 'Tarefas do administrador do sistema '
 description: Siga esta página para saber como adicionar usuários e atribuí-los às funções do Cloud Manager como Administrador do sistema
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
 
 # Tarefas do administrador do sistema {#add-users-assign}
+
+Os administradores do sistema gerenciam todos os aspectos de seus usuários, desde o acesso às permissões. Esse usuário é a primeira pessoa a ter acesso para iniciar a realização de tarefas no Admin Console e no Cloud Manager.
+Um Administrador do sistema executa as seguintes tarefas organizacionais:
+
+* Adicionar usuários
+* Atribuição de usuários a funções e permissões do Cloud Manager
 
 ## Adicionar usuários {#add-users}
 
