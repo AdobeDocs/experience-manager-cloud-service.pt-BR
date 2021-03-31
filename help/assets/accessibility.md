@@ -2,10 +2,12 @@
 title: Acessibilidade em [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade em [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ajudam usuários portadores de deficiência.
 contentOwner: AG
+feature: Acessibilidade,Gerenciamento de ativos
+role: Praticante da empresa,Arquiteto,Líder
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1919'
 ht-degree: 2%
 
 ---
@@ -29,7 +31,7 @@ Possible topics to cover in this article are below.
 
 # Recursos de acessibilidade em [!DNL Adobe Experience Manager Assets] como [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] O permite que criadores e editores de conteúdo vejam experiências incríveis na Web. A Adobe se esforça para incluir os criadores com deficiência, melhorando a acessibilidade de [!DNL Experience Manager]. O software é aprimorado continuamente para atender às necessidades de todos os tipos de usuários e seguir os padrões mundiais que incluem indivíduos com deficiências visuais, auditivas, de mobilidade ou outras.
+[!DNL Adobe Experience Manager] O permite que criadores e editores de conteúdo vejam experiências incríveis na Web. O Adobe se esforça para incluir os criadores com deficiência, melhorando a acessibilidade de [!DNL Experience Manager]. O software é aprimorado continuamente para atender às necessidades de todos os tipos de usuários e seguir os padrões mundiais que incluem indivíduos com deficiências visuais, auditivas, de mobilidade ou outras.
 
 [!DNL Experience Manager] O publica informações de conformidade que descrevem os padrões que ele adere, descreve os recursos de acessibilidade do produto e descreve o nível de conformidade. Os relatórios de conformidade de acessibilidade ajudam os usuários a entender o nível de adesão a vários padrões. [!DNL Experience Manager] As melhorias feitas em [!DNL Assets] permitem que todos os usuários usem as interfaces facilmente por meio de teclado, leitor de tela, ampliadores e outras tecnologias de assistência.
 
@@ -208,7 +210,7 @@ Ao compartilhar ativos, as seguintes funcionalidades melhoram a acessibilidade:
 
 ## Documentação acessível {#accessible-docs}
 
-[!DNL Experience Manager] O fornece documentação acessível para uso por pessoas com deficiência. O seguinte ajuda a tornar a oferta de conteúdo acessível por enquanto, enquanto a Adobe continua a melhorar o modelo e o conteúdo:
+[!DNL Experience Manager] O fornece documentação acessível para uso por pessoas com deficiência. O seguinte ajuda a tornar a oferta de conteúdo acessível por enquanto, enquanto o Adobe continua a melhorar o modelo e o conteúdo:
 
 * Leitores de tela podem ler o texto.
 * Imagens e ilustrações têm o texto alternativo disponível.
@@ -226,5 +228,5 @@ Para fornecer feedback, fazer perguntas e solicitar aprimoramentos de produtos r
 >
 >* [Notas de versão dos aprimoramentos feitos em cada versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
 >* [[!DNL Adobe Experience Manager] orientação sobre acessibilidade](/help/onboarding/accessibility/web-accessibility.md).
->* [Relatórios de conformidade (ACR) e lista de VPAT para soluções](https://www.adobe.com/accessibility/compliance.html) da Adobe.
+>* [Relatórios de conformidade (ACR) e lista de VPAT para soluções](https://www.adobe.com/accessibility/compliance.html) do Adobe.
 
