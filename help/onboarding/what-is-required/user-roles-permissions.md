@@ -2,7 +2,7 @@
 title: Funções e permissões do usuário
 description: Esta página descreve as funções e permissões do usuário. Siga esta página para saber como adicionar usuários e atribuí-los a funções do Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 9%
@@ -12,7 +12,7 @@ ht-degree: 9%
 
 # Funções do usuário e permissões {#user-roles-permissions}
 
-O Adobe criará um identificador **Organization** para sua empresa no Adobe Identity Management System (IMS), onde todos os usuários e suas permissões podem ser gerenciados. Cada usuário, que precisa ser membro dessa organização e receberá acesso a qualquer um dos serviços [!UICONTROL Experience Cloud], precisará ter seu próprio **Adobe ID**.
+O Adobe criará um identificador **Organization** para sua empresa no Adobe Identity Management System (IMS), onde todos os usuários e suas permissões podem ser gerenciados. Cada usuário, que precisa ser membro dessa organização e receberá acesso a qualquer um dos serviços [!UICONTROL Experience Cloud], precisará ter seu próprio **[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**.
 
 ## Funções de usuário {#user-roles}
 
