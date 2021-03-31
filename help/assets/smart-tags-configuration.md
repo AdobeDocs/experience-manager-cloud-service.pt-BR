@@ -2,10 +2,12 @@
 title: Tags inteligentes aprimoradas
 description: Aplique tags comerciais contextuais e descritivas usando o serviço de IA e aprendizado de máquina do Adobe Sensei para melhorar a descoberta de ativos e a velocidade do conteúdo.
 contentOwner: AG
+feature: Tags inteligentes, marcação
+role: Administrador
 translation-type: tm+mt
-source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1035'
 ht-degree: 83%
 
 ---
@@ -13,7 +15,7 @@ ht-degree: 83%
 
 # Configurar [!DNL Experience Manager] para marcação inteligente de ativos {#configure-aem-for-smart-tagging}
 
-Marcar ativos com um vocabulário controlado por taxonomia garante que esses ativos possam ser facilmente identificados e recuperados por pesquisas baseadas em tags. A Adobe fornece tags inteligentes que usam inteligência artificial e algoritmos de aprendizado de máquina para treinar imagens. As tags inteligentes usam uma estrutura de inteligência artificial do [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial.
+Marcar ativos com um vocabulário controlado por taxonomia garante que esses ativos possam ser facilmente identificados e recuperados por pesquisas baseadas em tags. O Adobe fornece Tags inteligentes que usam inteligência artificial e algoritmos de aprendizado de máquina para treinar imagens. As tags inteligentes usam uma estrutura de inteligência artificial do [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial.
 
 A funcionalidade Tag inteligentes está disponível para compra como suplemento do [!DNL Experience Manager]. Após a compra, um email é enviado ao administrador da sua organização com um link para o Console do desenvolvedor. O administrador acessa o link para integrar as Tags inteligentes ao [!DNL Experience Manager] usando o Console do desenvolvedor.
 
