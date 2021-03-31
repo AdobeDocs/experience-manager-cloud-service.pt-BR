@@ -4,10 +4,11 @@ description: '"Dicas e práticas recomendadas para nomear, organizar e gerenciar
 contentOwner: Rick Brough
 feature: Gerenciamento de ativos, Perfis de imagem, Perfis de vídeo
 topic: Profissional
+role: Administrador,Profissional
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
