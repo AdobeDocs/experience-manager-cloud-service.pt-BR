@@ -3,11 +3,12 @@ title: Ativação da proteção de hotlink no Dynamic Media
 description: Saiba como ativar a proteção de hotlink no Dynamic Media.
 feature: Gerenciamento de ativos
 topic: Profissional
+role: Profissional
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 6%
+source-wordcount: '196'
+ht-degree: 8%
 
 ---
 
