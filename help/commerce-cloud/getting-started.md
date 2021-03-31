@@ -1,6 +1,6 @@
 ---
 title: Introdução ao AEM Commerce as a Cloud Service
-description: Saiba como implantar um projeto de AEM habilitado para comércio em um AEM em execução como um ambiente de serviço da Cloud. Use os recursos do Adobe Cloud Manager e um pipeline de CI/CD para criar a vitrine de referência de Venia para um ambiente em execução.
+description: Saiba como implantar um projeto de AEM habilitado para o comércio em um AEM em execução no as a Cloud Service. Use os recursos do Adobe Cloud Manager e um pipeline de CI/CD para criar a loja de referência Venia em um ambiente em execução.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: cloud-service
@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 05242f0ca4168e220a4b83436da4daa0013edfaf
+source-git-commit: d1727601bb5d70bea9920aa1d680284fb3d25bf0
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 78%
@@ -29,7 +29,7 @@ A integração do AEM Commerce as a Cloud Service é um processo de duas etapas:
 1. Ativação do AEM Commerce as a Cloud Service e provisionamento do complemento CIF
 2. Conexão do AEM Commerce as a Cloud Service com seu ambiente Magento
 
-O primeiro passo de onboard é feito pela Adobe. Para obter mais detalhes sobre preços e provisionamento, entre em contato com seu representante de vendas.
+A primeira etapa de integração é feita pelo Adobe. Para obter mais detalhes sobre preços e provisionamento, entre em contato com seu representante de vendas.
 
 Com o provisionamento do complemento CIF, ele será aplicado a todos os programas existentes do Cloud Manager. Caso não tenha um programa do Cloud Manager, será necessário criar um novo. Para obter mais detalhes, consulte [Configurar o programa](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
@@ -64,25 +64,25 @@ Para conectar o AEM Commerce ao Magento, siga estas etapas:
 
 >[!NOTE]
 >
->Como alternativa, você pode usar a [API do Gerenciador de nuvem](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) para configurar as variáveis do Gerenciador de nuvem também.
+>Como alternativa, você pode usar a [API do Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) para configurar também as variáveis do Cloud Manager.
 
 Agora você está pronto para usar o AEM Commerce as a Cloud Service e implantar seu projeto por meio do Cloud Manager.
 
-## Ativar recursos de catálogo temporário (opcional) {#staging}
+## Habilitar recursos do catálogo preparados (opcional) {#staging}
 
 >[!NOTE]
 >
->Esse recurso só está disponível com a Magento Enterprise Edition ou a Magento Cloud.
+>Este recurso só está disponível com o Magento Enterprise Edition ou o Magento Cloud.
 
-1. Faça logon no Magento e crie um token de integração. Consulte [Autenticação baseada em token](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) para obter detalhes. Verifique se o token de integração tem *apenas* acesso aos recursos `Content -> Staging`. Copie o valor `Access Token`.
+1. Faça logon no Magento e crie um token de integração. Consulte [Autenticação baseada em token](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) para obter detalhes. Certifique-se de que o token de integração tenha *somente* acesso aos recursos `Content -> Staging`. Copie o valor `Access Token`.
 
-1. Defina a variável secreta `COMMERCE_AUTH_HEADER` no Gerenciador de nuvem:
+1. Defina a variável `COMMERCE_AUTH_HEADER` secreta no Cloud Manager:
 
    ```bash
-   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
    ```
 
-   Consulte [Ligar AEM Commerce a Magento](#magento) sobre como configurar a CLI Adobe I/O para o Cloud Manager.
+   Consulte [Conectando AEM Commerce com Magento](#magento) sobre como configurar a CLI do Adobe I/O para o Cloud Manager.
 
 ## Integrações de comércio de terceiros {#integrations}
 
