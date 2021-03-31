@@ -3,10 +3,11 @@ title: Informativo do Dynamic Media
 description: 'O informativo do Dynamic Media disponibilizado pelo Experience League é um informativo mensal. Ela foi criada para ajudar você a usar o Dynamic Media e o Dynamic Media Classic para começar a obter valor imediatamente. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim informativo de balcão único. Por exemplo, há vídeos de instruções e visões gerais da solução. Leia sobre alguns dos principais recursos e características, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais. '
 feature: Gerenciamento de ativos
 topic: '"Administrador,Profissional de negócios"'
+role: Profissional
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
