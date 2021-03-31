@@ -1,210 +1,212 @@
 ---
 title: Formatos de arquivo suportados e tipos MIME
-description: Formatos de arquivo e tipos MIME suportados por [!DNL Experience Manager Assets] como a [!DNL Cloud Service].
+description: Formatos de arquivo e tipos MIME suportados por [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
+feature: Gerenciamento de ativos,Representações
+role: Profissional de negócios,Administrador
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '824'
 ht-degree: 10%
 
 ---
 
 
-# [!DNL Assets] formatos de arquivo suportados  {#supported-file-formats}
+# [!DNL Assets] formatos de arquivo compatíveis  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] como  [!DNL Cloud Service] suporte a recursos básicos de gestão de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download e assim por diante — para qualquer arquivo binário, independentemente de seu formato. [!DNL Adobe Experience Manager Assets] oferece suporte para uma grande variedade de formatos de arquivos e cada recurso de produto tem suporte variado para formatos diferentes.
+[!DNL Adobe Experience Manager] o as a  [!DNL Cloud Service] suporta recursos básicos de gerenciamento de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download e assim por diante — para qualquer arquivo binário, independente de seu formato. [!DNL Adobe Experience Manager Assets] O suporta uma grande variedade de formatos de arquivo e cada recurso de produto tem suporte variado para diferentes formatos.
 
-Além disso, [!DNL Experience Manager Assets] oferece suporte estendido para gerar pré-visualizações e execuções e extrair metadados e texto para indexação de texto completo. Este suporte estendido é fornecido usando [ativos microservices](asset-microservices-configure-and-use.md).
+Além disso, [!DNL Experience Manager Assets] oferece suporte estendido para gerar visualizações e representações e extrair metadados e texto para indexação de texto completo. Esse suporte estendido é fornecido usando [asset microservices](asset-microservices-configure-and-use.md).
 
-Os destaques para conversão de ativos usando microserviços de ativos incluem:
+Os destaques da conversão de ativos usando microsserviços de ativos incluem:
 
-* As teclas [formatos de arquivo Adobe](#adobe-formats) produzidas por aplicativos e serviços Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] ou PDF.
-* Tecla [formatos de arquivo de imagem](#image-formats).
-* [Camera Raw ](#camera-raw-formats) formatos de arquivos para uma grande variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (alimentados pela Adobe Camera Raw).
-* Formatos comuns de [documento](#document-formats), incluindo os formatos Microsoft Office e Open Documento.
+* Os formatos de arquivo de chave [Adobe](#adobe-formats) produzidos por aplicativos e serviços Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] ou PDF.
+* Chave [formatos de arquivo de imagem](#image-formats).
+* [Camera Raw ](#camera-raw-formats) formatos de arquivo para uma grande variedade de câmeras, incluindo Canon, Nikon, FujiFilm, Olympus e outros fabricantes (alimentados pela Adobe Camera Raw).
+* Formatos de documento comuns [a1/>, incluindo o Microsoft Office e formatos Open Document.](#document-formats)
 * Grande variedade de formatos de [vídeo](#video-formats) e [áudio.](#audio-formats)
 
 A legenda a seguir descreve o nível de suporte para cada formato.
 
 | Nível de suporte | Descrição |
 | ------------- | --------------------------- |
-| Satélite | Compatível |
+| Instantâneo | Compatível |
 | * | Ver observações abaixo do quadro |
 | - | Não aplicável |
 
-## formatos Adobe {#adobe-formats}
+## Formatos de Adobe {#adobe-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de texto completo | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | Satélite | - | Satélite | Satélite |
-| COLAGEM | - | - | Satélite | - |
-| DN | Satélite | - | Satélite | Satélite |
-| IDEIAS | - | - | Satélite | - |
-| INDD | Satélite | - | Satélite | * |
-| INDT | - | - | Satélite | - |
-| PDF | Satélite | Satélite | Satélite | Satélite |
-| PROTO | - | - | Satélite | - |
-| PSB | Satélite | - | Satélite | Satélite |
-| PSD | Satélite | - | Satélite | Satélite |
-| XD | Satélite | - | Satélite | Satélite |
+| AI | Instantâneo | - | Instantâneo | Instantâneo |
+| COLAGEM | - | - | Instantâneo | - |
+| DN | Instantâneo | - | Instantâneo | Instantâneo |
+| IDEIAS | - | - | Instantâneo | - |
+| INDD | Instantâneo | - | Instantâneo | * |
+| INDT | - | - | Instantâneo | - |
+| PDF | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| PROTO | - | - | Instantâneo | - |
+| PSB | Instantâneo | - | Instantâneo | Instantâneo |
+| PSD | Instantâneo | - | Instantâneo | Instantâneo |
+| XD | Instantâneo | - | Instantâneo | Instantâneo |
 
-\* Para arquivos [!DNL Adobe InDesign] (INDD), o tamanho da representação é determinado pela pré-visualização incorporada no arquivo INDD. Configure as preferências em [!DNL InDesign] (**[!UICONTROL Preferências > Manuseio de arquivos > Sempre salvar imagens de Pré-visualização com Documentos, Tamanho de Pré-visualização]**) para incorporar renderização maior.
+\* Para arquivos [!DNL Adobe InDesign] (INDD), o tamanho da representação é determinado pela pré-visualização incorporada no arquivo INDD. Configure as preferências em [!DNL InDesign] (**[!UICONTROL Preferências > Manuseio de arquivo > Sempre Salvar imagens de visualização com documentos, Visualizar tamanho]**) para incorporar representações maiores.
 
 ## Formatos de imagem {#image-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura | Cortar |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | Satélite | - | Satélite | Satélite |
-| EPS | - | Satélite | - | - |
-| GIF | Satélite | Satélite | Satélite | Satélite |
-| JPEG | Satélite | Satélite | Satélite | Satélite |
-| PNG | Satélite | Satélite | Satélite | Satélite |
-| RGB | Satélite | Satélite | Satélite | Satélite |
-| RGBA | Satélite | Satélite | Satélite | Satélite |
-| SGI | Satélite | Satélite | Satélite | Satélite |
-| SVG | Satélite | - | Satélite | Satélite |
-| TIFF | Satélite | Satélite | Satélite | - |
+| BMP | Instantâneo | - | Instantâneo | Instantâneo |
+| EPS | - | Instantâneo | - | - |
+| GIF | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| RGB | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| RGBA | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| SGI | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| SVG | Instantâneo | - | Instantâneo | Instantâneo |
+| TIFF | Instantâneo | Instantâneo | Instantâneo | - |
 
 ## Formatos de imagem em [!DNL Dynamic Media] {#image-support-dynamic-media}
 
-| Formato | Carregar (formato de entrada) | Criar predefinição de imagem (formato de saída) | Execução dinâmica de pré-visualização | Fornecer representação dinâmica | Baixar representação dinâmica |
+| Formato | Upload (Formato de entrada) | Criar predefinição de imagem (formato de saída) | Visualizar representação dinâmica | Fornecer representação dinâmica | Baixar representação dinâmica |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| BMP | Satélite | - | - | - | - |
-| EPS | Satélite | Satélite | Satélite | Satélite | Satélite |
-| GIF | Satélite | Satélite | Satélite | Satélite | Satélite |
-| JPEG | Satélite | Satélite | Satélite | Satélite | Satélite |
-| PICT | Satélite | - | - | - | - |
-| PNG | Satélite | Satélite | Satélite | Satélite | Satélite |
-| PSD   ‡ | Satélite | - | - | - | - |
-| TIFF | Satélite | Satélite | Satélite | Satélite | Satélite |
+| BMP | Instantâneo | - | - | - | - |
+| EPS | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| GIF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| PICT | Instantâneo | - | - | - | - |
+| PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| PSD   ‡ | Instantâneo | - | - | - | - |
+| TIFF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 
 ‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada por [!DNL Adobe Photoshop] e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 Os seguintes subtipos de formatos de arquivo de imagem rasterizada que não são suportados em [!DNL Dynamic Media]:
 
-* Arquivos PNG com um tamanho de bloco IDAT maior que 100 MB.
+* Arquivos PNG com um tamanho de bloco IDAT superior a 100 MB.
 * Arquivos PSB.
-* Arquivos PSD com um espaço de cor diferente de CMYK, RGB, Escala de cinza ou Bitmap não são suportados. Espaços de cores Indexadas, Lab e DuoTone não são suportados.
+* Arquivos PSD com um espaço de cor diferente de CMYK, RGB, Escala de cinza ou Bitmap não são compatíveis. Não há suporte para espaços de cores DuoTone, Lab e Indexado.
 * Arquivos PSD com uma profundidade de bits superior a 16.
 * Arquivos TIFF com dados de ponto flutuante.
 * Arquivos TIFF com espaço de cor Lab.
 
 ## Formatos 3D {#support-3d-formats}
 
-Os seguintes formatos 3D são suportados.
+Os seguintes formatos 3D são compatíveis.
 
 Consulte também [Trabalhar com ativos 3D no Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
-| Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Pré-visualização em miniatura | pré-visualização 3D | delivery Dynamic Media |
+| Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Visualização de miniatura | Visualização 3D | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | Satélite | Satélite | Satélite | - | Satélite | Satélite | - | - |
-| gLB | Satélite | Satélite | Satélite | Satélite | Satélite | - | Satélite | Satélite |
-| gLTF | Satélite | Satélite | Satélite | - | Satélite | - | Satélite | - |
-| OBJ | Satélite | Satélite | Satélite | Satélite | Satélite | - | Satélite | Satélite |
-| STL | Satélite | Satélite | Satélite | Satélite | Satélite | - | Satélite | Satélite |
-| USDz | Satélite | Satélite | Satélite | Satélite | Satélite | - | - | Satélite |
+| DN | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo | - | - |
+| gLB | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
+| gLTF | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | - | Instantâneo | - |
+| OBJ | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
+| STL | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
+| USDz | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | - | Instantâneo |
 
 ## [!DNL Camera RAW] formatos  {#camera-raw-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | Satélite | Satélite | Satélite |
-| ARW | Satélite | Satélite | Satélite |
-| CR2 | Satélite | Satélite | Satélite |
-| CR3 | Satélite | Satélite | Satélite |
-| CRW | Satélite | Satélite | Satélite |
-| DCR | Satélite | Satélite | Satélite |
-| DNG | Satélite | Satélite | Satélite |
-| ERF | Satélite | Satélite | Satélite |
-| FFF | Satélite | Satélite | Satélite |
-| GPR | Satélite | Satélite | Satélite |
-| IIQ | Satélite | Satélite | Satélite |
-| KDC | Satélite | Satélite | Satélite |
-| MEF | Satélite | Satélite | Satélite |
-| MFW | Satélite | Satélite | Satélite |
-| MOS | Satélite | Satélite | Satélite |
-| MRW | Satélite | Satélite | Satélite |
-| NEF | Satélite | Satélite | Satélite |
-| NRW | Satélite | Satélite | Satélite |
-| ORF | Satélite | Satélite | Satélite |
-| PEF | Satélite | Satélite | Satélite |
-| RAF | Satélite | Satélite | Satélite |
-| RAW | Satélite | Satélite | Satélite |
-| RW2 | Satélite | Satélite | Satélite |
-| RWL | Satélite | Satélite | Satélite |
-| SRF | Satélite | Satélite | Satélite |
-| SRW | Satélite | Satélite | Satélite |
-| X3F | Satélite | Satélite | Satélite |
+| 3FR | Instantâneo | Instantâneo | Instantâneo |
+| ARMA | Instantâneo | Instantâneo | Instantâneo |
+| CR2 | Instantâneo | Instantâneo | Instantâneo |
+| CR3 | Instantâneo | Instantâneo | Instantâneo |
+| CRW | Instantâneo | Instantâneo | Instantâneo |
+| DCR | Instantâneo | Instantâneo | Instantâneo |
+| DNG | Instantâneo | Instantâneo | Instantâneo |
+| ERF | Instantâneo | Instantâneo | Instantâneo |
+| FFF | Instantâneo | Instantâneo | Instantâneo |
+| GPR | Instantâneo | Instantâneo | Instantâneo |
+| IIQ | Instantâneo | Instantâneo | Instantâneo |
+| KDC | Instantâneo | Instantâneo | Instantâneo |
+| MEF | Instantâneo | Instantâneo | Instantâneo |
+| MFW | Instantâneo | Instantâneo | Instantâneo |
+| MOS | Instantâneo | Instantâneo | Instantâneo |
+| MRW | Instantâneo | Instantâneo | Instantâneo |
+| NEF | Instantâneo | Instantâneo | Instantâneo |
+| NRW | Instantâneo | Instantâneo | Instantâneo |
+| ORF | Instantâneo | Instantâneo | Instantâneo |
+| PEF | Instantâneo | Instantâneo | Instantâneo |
+| RAF | Instantâneo | Instantâneo | Instantâneo |
+| BRUTO | Instantâneo | Instantâneo | Instantâneo |
+| RW2 | Instantâneo | Instantâneo | Instantâneo |
+| RWL | Instantâneo | Instantâneo | Instantâneo |
+| SRF | Instantâneo | Instantâneo | Instantâneo |
+| SRW | Instantâneo | Instantâneo | Instantâneo |
+| X3F | Instantâneo | Instantâneo | Instantâneo |
 
 ## Formatos de documento {#document-formats}
 
-Os formatos de documento compatíveis com os recursos de gerenciamento de ativos são os seguintes:
+Os formatos de documento compatíveis com os recursos de gerenciamento de ativos são os seguintes.
 
 | Formato de arquivo | Geração de miniaturas | Extração de texto completo | Largura/altura | Gerenciamento de metadados | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| DOC | - | - | - | Satélite | Satélite |
-| DOCX | Satélite | Satélite | Satélite | Satélite | Satélite |
-| EPUB | - | Satélite | - | - | - |
-| HTML | - | Satélite | - | Satélite | Satélite |
-| ODF | Satélite | Satélite | Satélite | - | - |
-| ODM | Satélite | Satélite | Satélite | - | - |
-| ODP | Satélite | Satélite | Satélite | - | - |
-| ODS | Satélite | Satélite | Satélite | - | - |
-| ODT | Satélite | Satélite | Satélite | Satélite | Satélite |
-| OFF | Satélite | Satélite | Satélite | - | - |
-| PDF | Satélite | Satélite | Satélite | Satélite | Satélite |
-| PPT | - | - | - | Satélite | Satélite |
-| PPTX | Satélite | Satélite | Satélite | Satélite | Satélite |
-| PS | - | - | Satélite | - | - |
-| RTF | - | Satélite | - | Satélite | Satélite |
-| TXT | - | Satélite | - | Satélite | Satélite |
-| XLS | - | - | - | Satélite | Satélite |
-| XLSX | Satélite | Satélite | Satélite | Satélite | Satélite |
-| XML | - | Satélite | - | - | - |
+| DOC | - | - | - | Instantâneo | Instantâneo |
+| DOCX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| EPUB | - | Instantâneo | - | - | - |
+| HTML | - | Instantâneo | - | Instantâneo | Instantâneo |
+| ODF | Instantâneo | Instantâneo | Instantâneo | - | - |
+| ODM | Instantâneo | Instantâneo | Instantâneo | - | - |
+| ODP | Instantâneo | Instantâneo | Instantâneo | - | - |
+| ODS | Instantâneo | Instantâneo | Instantâneo | - | - |
+| ODT | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| OFG | Instantâneo | Instantâneo | Instantâneo | - | - |
+| PDF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| PPT | - | - | - | Instantâneo | Instantâneo |
+| PPTX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| PS | - | - | Instantâneo | - | - |
+| RTF | - | Instantâneo | - | Instantâneo | Instantâneo |
+| TXT | - | Instantâneo | - | Instantâneo | Instantâneo |
+| XLS | - | - | - | Instantâneo | Instantâneo |
+| XLSX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| XML | - | Instantâneo | - | - | - |
 
-## formatos de documento em [!DNL Dynamic Media] {#document-support-dynamic-media}
+## Formatos de documento em [!DNL Dynamic Media] {#document-support-dynamic-media}
 
-| Formato | Carregar (formato de entrada) | Criar predefinição de imagem (formato de saída) | Execução dinâmica de pré-visualização | Fornecer representação dinâmica | Baixar representação dinâmica |
+| Formato | Upload (Formato de entrada) | Criar predefinição de imagem (formato de saída) | Visualizar representação dinâmica | Fornecer representação dinâmica | Baixar representação dinâmica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | Satélite | - | - | - | - |
-| INDD | Satélite | - | - | - | - |
-| PDF | Satélite | Satélite | Satélite | Satélite | Satélite |
+| AI | Instantâneo | - | - | - | - |
+| INDD | Instantâneo | - | - | - | - |
+| PDF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 
 ## Formatos de vídeo {#video-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | Satélite | - |
-| 3GP | - | Satélite | - |
-| AVI | Satélite | Satélite | Satélite |
-| DIVX | Satélite | - | Satélite |
-| F4V | Satélite | Satélite | Satélite |
-| FLV | Satélite | Satélite | Satélite |
-| M2T | Satélite | - | Satélite |
-| M2TS | Satélite | - | Satélite |
-| M2V | Satélite | - | Satélite |
-| M4V | Satélite | Satélite | Satélite |
-| MKV | Satélite | - | Satélite |
-| MOV | Satélite | Satélite | Satélite |
-| MP4 | Satélite | Satélite | Satélite |
-| MPEG | Satélite | Satélite | Satélite |
-| MPG | Satélite | Satélite | Satélite |
-| MTS | Satélite | - | Satélite |
-| MXF | Satélite | - | Satélite |
-| OGV | Satélite | - | Satélite |
-| QT | Satélite | - | Satélite |
-| R3D | - | Satélite | Satélite |
-| SWF | Satélite | - | Satélite |
-| WebM | Satélite | - | Satélite |
-| WMV | Satélite | Satélite | Satélite |
+| 3G2 | - | Instantâneo | - |
+| 3GP | - | Instantâneo | - |
+| AVI | Instantâneo | Instantâneo | Instantâneo |
+| DIVX | Instantâneo | - | Instantâneo |
+| F4V | Instantâneo | Instantâneo | Instantâneo |
+| FLV | Instantâneo | Instantâneo | Instantâneo |
+| M2T | Instantâneo | - | Instantâneo |
+| M2TS | Instantâneo | - | Instantâneo |
+| M2V | Instantâneo | - | Instantâneo |
+| M4V | Instantâneo | Instantâneo | Instantâneo |
+| MKV | Instantâneo | - | Instantâneo |
+| MOV | Instantâneo | Instantâneo | Instantâneo |
+| MP4 | Instantâneo | Instantâneo | Instantâneo |
+| MPEG | Instantâneo | Instantâneo | Instantâneo |
+| MPG | Instantâneo | Instantâneo | Instantâneo |
+| MTS | Instantâneo | - | Instantâneo |
+| MXF | Instantâneo | - | Instantâneo |
+| OGV | Instantâneo | - | Instantâneo |
+| QT | Instantâneo | - | Instantâneo |
+| R3D | - | Instantâneo | Instantâneo |
+| SWF | Instantâneo | - | Instantâneo |
+| WebM | Instantâneo | - | Instantâneo |
+| WMV | Instantâneo | Instantâneo | Instantâneo |
 
 ## Formatos de vídeo em [!DNL Dynamic Media] para transcodificação {#video-dynamic-media-transcoding}
 
-| Extensão do arquivo de vídeo | Container | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
+| Extensão de arquivo de vídeo | Container | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 |------------------------|--------------------|--------|-------|
 | MP4 | MPEG-4 | H264/AVC (todos os perfis) | - |
-| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animação da Apple |
+| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação da Apple |
 | FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação vetorial) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
@@ -216,20 +218,20 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | MTS | AVCHD | H264/AVC | - |
 | MKV | Matroska | H264/AVC | - |
 | R3D, RM | Vídeo vermelho bruto | MJPEG 2000 | - |
-| RAM, RM | RealVideo | Não suportado | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Flash nativo | Codec de áudio sem perda gratuito | - |
+| RAM, RM | RealVideo | Não suportado | G2 real (RV20), Real 8 (RV30), Real 10 (RV40) |
+| FLAC | Flac nativo | Codec de áudio sem perdas gratuito | - |
 | MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 | - |
 
 ## Formatos de áudio {#audio-formats}
 
-[!DNL Assets] como um  [!DNL Cloud Service] fornece suporte XMP extração de metadados para os formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
+[!DNL Assets] a as a  [!DNL Cloud Service] fornece suporte XMP extração de metadados para formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
 
 ## Dicas e limitações {#limitations-and-tips}
 
-* Atualmente, o limite de tamanho de arquivo para a extração de metadados é de aproximadamente 10 GB. Ao fazer upload de ativos muito grandes, às vezes a operação de extração de metadados falha.
+* Atualmente, o limite de tamanho do arquivo para extração de metadados é de aproximadamente 10 GB. Ao fazer upload de ativos muito grandes, às vezes a operação de extração de metadados falha.
 
 >[!MORELIKETHIS]
 >
->* [Processamento de ativos usando microserviços de ativos](asset-microservices-overview.md)
->* [Formatos de arquivo suportados para a marcação inteligente de ativos baseados em texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Processamento de ativos usando microsserviços de ativos](asset-microservices-overview.md)
+>* [Formatos de arquivo compatíveis para a marcação inteligente de ativos baseados em texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
