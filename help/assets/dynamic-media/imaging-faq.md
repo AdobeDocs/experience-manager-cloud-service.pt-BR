@@ -3,10 +3,11 @@ title: Imagem inteligente
 description: '"Saiba como a geração inteligente de imagens aplica as características de exibição exclusivas de cada usuário para veicular automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento."'
 feature: Gerenciamento de ativos,Representações
 topic: Profissional
+role: Profissional
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1865'
 ht-degree: 2%
 
 ---
