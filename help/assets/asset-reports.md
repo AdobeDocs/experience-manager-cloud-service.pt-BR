@@ -2,10 +2,12 @@
 title: Relatórios sobre uso e compartilhamento
 description: Relatórios sobre seus ativos em [!DNL Adobe Experience Manager Assets] que ajudam a entender o uso, a atividade e o compartilhamento dos ativos digitais.
 contentOwner: AG
+feature: Relatórios de ativos, Gerenciamento de ativos
+role: Administrador,Profissional
 translation-type: tm+mt
-source-git-commit: dc6823d9a0dabcc4fe1537073d90ca53da205556
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '876'
 ht-degree: 7%
 
 ---
