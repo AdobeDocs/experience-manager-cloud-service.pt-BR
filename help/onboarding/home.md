@@ -2,10 +2,10 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 98d840cf618052dd0fab5e1e6bfce6cb1bee441b
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 48%
+source-wordcount: '872'
+ht-degree: 42%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 48%
 # Integração ao Experience Manager as a Cloud Service {#aem-onboarding-guide}
 
 Parabéns por começar sua jornada com AEM como Cloud Service! Se você estiver implantando um novo aplicativo ou migrando um existente, este guia serve como ponto de partida para garantir que seu aplicativo seja otimizado e pronto para o sucesso no Cloud Service.
+
+Este guia fornecerá uma lista de verificação para que você e sua equipe comecem a usar o Cloud Manager rapidamente. Você precisará da Adobe ID e da ajuda do Administrador do sistema para adicionar os usuários ao Cloud Manager às funções atribuídas (chamadas de Perfis de produto no Admin Console) e às permissões associadas. As instruções de como o Administrador do sistema pode fazer isso via Admin Console estão descritas. A lista de funções do Cloud Manager, chamada de Perfis de produto no Admin Console e suas permissões associadas, é detalhada para que você possa determinar quais funções podem ser necessárias para vários usuários em sua organização.
 
 ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/customer-journey.png)
 
