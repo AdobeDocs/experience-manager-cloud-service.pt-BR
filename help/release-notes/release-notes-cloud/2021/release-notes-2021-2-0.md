@@ -1,13 +1,14 @@
 ---
-title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0.
+description: '[!DNL Adobe Experience Manager] Notas de versão do as a Cloud Service para 2021.2.0.'
 translation-type: tm+mt
-source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
+source-git-commit: 2920ab75fca1eaa3b8e3b1f75e9126632a026b6b
 workflow-type: tm+mt
 source-wordcount: '1237'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
+
 
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
@@ -57,7 +58,7 @@ A seguinte versão (2021.3.0) será lançada em 25 de março de 2021.
 
 * [!DNL Experience Manager Assets] as a  [!DNL Cloud Service] tem direito a ter uma  [!DNL Brand Portal] instância pré-configurada. O usuário [!DNL Cloud Manager] pode ativar [!DNL Brand Portal] em [!DNL Experience Manager Assets] como um [!DNL Cloud Service]. Consulte [ativar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
 
-* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolver com usuários de agências para obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolverem com usuários de agências a obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * O relatório de uso [!DNL Brand Portal] agora exibe somente os usuários ativos. Os usuários inativos não são exibidos agora. Os usuários ativos são aqueles cuja conta está atribuída a um perfil de produto no [!DNL Admin Console]. Consulte [[!DNL Brand Portal] relatórios](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
