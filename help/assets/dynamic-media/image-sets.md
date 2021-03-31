@@ -3,10 +3,11 @@ title: Conjuntos de imagem
 description: Saiba como trabalhar com conjuntos de imagens no Dynamic Media.
 feature: Conjuntos de imagem
 topic: Profissional
+role: Profissional
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2053'
 ht-degree: 9%
 
 ---
