@@ -1,10 +1,12 @@
 ---
 title: Adicione seus ativos digitais a [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais a [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+feature: Gerenciamento de ativos,Fazer upload
+role: Profissional de negócios,Administrador
 translation-type: tm+mt
-source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2023'
 ht-degree: 1%
 
 ---
