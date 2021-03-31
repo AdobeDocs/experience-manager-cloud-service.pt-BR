@@ -2,9 +2,9 @@
 title: 'Conceder ao usuário acesso a uma instância de AEM '
 description: Siga esta página para saber como um Administrador do sistema concede acesso a uma instância do AEM
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Conceder ao usuário acesso a uma instância de AEM {#accessing-aem-instance}
 
-Como Administrador do sistema, siga as etapas abaixo para conceder ao usuário acesso a uma instância do AEM:
+Como Administrador do sistema, siga as etapas abaixo para conceder acesso do usuário a uma instância do AEM:
 
 1. Navegue até o Cloud Manager e clique no botão **Gerenciar acesso** no cartão **Ambientes**, conforme mostrado abaixo.
 
