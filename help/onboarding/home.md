@@ -2,7 +2,7 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: 175cddb9e36422b3896efc76ac58183829b364b3
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 40%
@@ -28,11 +28,11 @@ Esta seção aborda os principais artigos focados em sua jornada ao começar com
 
 Após a assinatura do contrato, ocorrerão os seguintes eventos:
 
-1. O Adobe concluirá o provisionamento de sua organização, seguindo o qual o Administrador de sistema de sua organização receberá um email de boas-vindas permitindo que ele faça [tarefas do Administrador de sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) incluindo a adição de usuários, a atribuição a funções e, portanto, a concessão de acesso apropriado [ao Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
+1. O Adobe concluirá o provisionamento de sua organização, seguindo o qual o Administrador de sistema de sua organização receberá um email de boas-vindas permitindo que ele faça [Tarefas do Administrador de sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) incluindo a adição de usuários, a atribuição a funções e, portanto, a concessão de acesso apropriado ao Cloud Manager.
 
 1. Os usuários adicionados pelo Administrador do sistema, por sua vez, receberão um email de boas-vindas permitindo que eles naveguem com êxito [Navegue até o Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Agora os usuários podem usar a Adobe ID para fazer logon e iniciar a jornada com o Cloud Manager a partir daqui.
 
-1. Um Administrador do sistema pode [conceder aos usuários acesso a uma instância de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) para fins de desenvolvimento.
+1. Um Administrador do sistema pode [Conceder aos usuários acesso a uma instância de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) para fins de desenvolvimento.
 
 **[Obter a Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**
 
