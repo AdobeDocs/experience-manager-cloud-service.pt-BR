@@ -1,11 +1,13 @@
 ---
 title: Árvore da estrutura do fragmento do conteúdo
 description: Use o recurso Árvore de estrutura do Editor de fragmento de conteúdo no AEM para entender melhor seu conteúdo sem periféricos.
+feature: Fragmentos de conteúdo
+role: Profissional
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 0%
+source-wordcount: '82'
+ht-degree: 4%
 
 ---
 
