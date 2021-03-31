@@ -2,7 +2,7 @@
 title: Navegar para o Cloud Manager
 description: Siga esta página para saber como navegar até a página de aterrissagem do Cloud Manager
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 9fa8c6632188874036ccfe7570e53a6971ff74b4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 7%
@@ -27,7 +27,7 @@ Assim que o Administrador do sistema conceder acesso ao Cloud Manager, você rec
 
 1. Clique em **Iniciar** no cartão do Cloud Manager.
 Depois de fazer logon no [!UICONTROL Cloud Manager] com êxito, você estará pronto para usar a interface do usuário (UI).
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Página de aterrissagem do Cloud Manager {#cloud-manager-landing}
