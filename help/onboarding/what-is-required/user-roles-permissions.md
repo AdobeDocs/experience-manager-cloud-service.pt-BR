@@ -2,7 +2,7 @@
 title: Funções do Cloud Manager
 description: Esta página descreve as funções e permissões do usuário. Siga esta página para saber como adicionar usuários e atribuí-los a funções do Cloud Manager.
 translation-type: tm+mt
-source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
+source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 8%
@@ -65,7 +65,7 @@ A tabela a seguir resume as funções, juntamente com suas permissões associada
 | Adicionar programa<br>Editar programa | Adicione um novo programa.<br>Editar um programa - Adicionar ou remover soluções ou complementos | x |  |  |  |
 | Criar ambiente | Crie Ambientes Prod+Stage, Dev. | x | x |  |  |
 | Ambiente de atualização | Atualize Ambientes Prod+Stage, Dev. | x | x |  |  |
-| Excluir ambiente | Exclua Ambientes sem produção, desenvolvimento e desenvolvimento. | x | x |  |  |
+| Excluir ambiente de desenvolvimento | Excluir ambientes de desenvolvimento. | x | x |  |  |
 | Configuração de pipeline | Configurar ou editar pipeline. |  | x |  |  |
 | Execução de pipeline | Inicie o pipeline. | x | x |  |  |
 | Execução de pipeline | Rejeitar/Aprovar Falhas Importantes De 3 Camadas. | x | x | x |  |
