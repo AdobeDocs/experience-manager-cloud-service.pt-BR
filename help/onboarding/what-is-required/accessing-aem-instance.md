@@ -2,9 +2,9 @@
 title: 'Conceder ao usuário acesso a uma instância de AEM '
 description: Siga esta página para saber como um Administrador do sistema concede acesso a uma instância do AEM
 translation-type: tm+mt
-source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Como Administrador do sistema, siga as etapas abaixo para conceder acesso do usu
 1. Navegue até o Cloud Manager e clique no botão **Gerenciar acesso** no cartão **Ambientes**, conforme mostrado abaixo.
 
    >[!NOTE]
-   >Você deve ser um Administrador do sistema ou o usuário que criou o ambiente para poder adicionar um usuário no Admin Console. Somente as funções Proprietário comercial ou Gerenciador de implantação têm permissões para criar um ambiente. Consulte [Funções e permissões do usuário](/help/onboarding/what-is-required/user-roles-permissions.md) para saber mais sobre funções e permissões associadas. Além disso, consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para saber mais sobre os ambientes.
+   >Você deve ser um Administrador do sistema ou o usuário que criou o ambiente para poder adicionar um usuário no Admin Console. Somente as funções Proprietário comercial ou Gerenciador de implantação têm permissões para criar um ambiente. Consulte [Funções do Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) para saber mais sobre funções e permissões associadas. Além disso, consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para saber mais sobre os ambientes.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    Ou,
 
-   **Gerenciar** acesso também está disponível no botão  **** Gerenciar , se você clicar em  **** Detalhes no cartão  **** Ambientes .
+   Na página **Ambientes**, selecione **Gerenciar** —> **Gerenciar Acesso**.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
