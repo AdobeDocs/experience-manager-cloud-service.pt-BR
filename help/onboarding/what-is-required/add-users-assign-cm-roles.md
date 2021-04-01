@@ -2,9 +2,9 @@
 title: 'Tarefas do administrador do sistema '
 description: Siga esta página para saber como adicionar usuários e atribuí-los às funções do Cloud Manager como Administrador do sistema
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -44,17 +44,7 @@ Um Administrador do sistema executa as seguintes tarefas organizacionais:
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >Consulte as seções anteriores, [Funções e permissões do usuário](#user-roles) e [Permissões associadas a Definições de função](#permissions) para garantir que os usuários certos recebam a(s) Função(ões) correta(s) no **Admin Console**.
+   >Consulte [Funções e permissões do usuário](#user-roles) e [Permissões associadas a Definições de função](#permissions) para garantir que as funções corretas sejam atribuídas aos usuários corretos nas **Admin Console**.
 
    Agora, você adicionou usuários ao Contexto de Produto do Adobe Experience Manager as a Cloud Service e está configurado com as Funções ou Perfis de Produto certos.
 
-   Por exemplo, se você estiver na função de um:
-
-   * ***Proprietário comercial***, você tem a permissão para Adicionar um novo programa ou Editar um programa, adicionar ou atualizar um ambiente, adicionar/editar/excluir o pipeline e executar qualquer pipeline, e implantar o código AEM ambiente ou qualidade de código.
-
-   * ***Gerenciador de implantação***, você tem permissão para adicionar ou atualizar um ambiente, executar qualquer pipeline e implantar código em AEM ambiente ou qualidade de código.
-
-   * ***Desenvolvedor***, você tem a permissão para gerar o Token de acesso pessoal para acessar o Git.
-
-      >[!NOTE]
-      > Um usuário pode ser atribuído a várias funções. Por exemplo, atribuir funções de Proprietário comercial e Gerente de implantação a um usuário fornece a combinação ou a soma dessas permissões.
