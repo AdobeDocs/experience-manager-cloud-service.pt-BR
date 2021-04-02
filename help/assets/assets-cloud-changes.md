@@ -4,10 +4,10 @@ description: Alterações importantes para [!DNL Adobe Experience Manager Assets
 feature: Informações da versão
 role: Praticante de negócios,Líder,Arquiteto,Administrador
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 6%
+source-wordcount: '770'
+ht-degree: 5%
 
 ---
 
@@ -65,6 +65,7 @@ Para fazer uma validação completa do código e do processo, incluindo a assimi
 >
 >Os seguintes recursos estão disponíveis para [!DNL Experience Manager] como um [!DNL Cloud Service]:
 >
+>* [Lista de recursos obsoletos e removidos](/help/release-notes/deprecated-removed-features.md)
 >* [Uma introdução](/help/overview/introduction.md)
 >* [Novidades e diferenças](/help/overview/what-is-new-and-different.md)
 >* [A arquitetura](/help/core-concepts/architecture.md)
