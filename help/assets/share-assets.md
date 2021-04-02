@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Gerenciamento de ativos, Colaboração, Distribuição de ativos
 role: Profissional de negócios,Administrador
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 1%
+source-wordcount: '758'
+ht-degree: 2%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 1%
 [!DNL Adobe Experience Manager Assets] permite compartilhar ativos, pastas e coleções com membros de sua organização e entidades externas, incluindo parceiros e fornecedores. Use os seguintes métodos para compartilhar ativos de [!DNL Experience Manager Assets] como um [!DNL Cloud Service]:
 
 * Compartilhar como um link.
-* Baixe ativos e compartilhe separadamente.
-* Compartilhe por meio AEM aplicativo de desktop.
-* Compartilhe via Adobe Asset Link.
-* (Funcionalidade futura) Compartilhar usando o Brand Portal.
+* [Baixe ](/help/assets/download-assets-from-aem.md) ativos e compartilhe separadamente.
+* Compartilhe usando [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+* Compartilhe usando [[!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html).
+* Compartilhe usando [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
 ## Compartilhar ativos como um link {#sharelink}
 
