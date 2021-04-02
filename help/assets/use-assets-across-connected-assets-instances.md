@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Gerenciamento de ativos,Ativos conectados,Distribuição de ativos
 role: Administrador,Profissional de negócios,Arquiteto
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2902'
 ht-degree: 27%
 
 ---
@@ -120,9 +120,9 @@ Você pode configurar uma conexão entre a implantação [!DNL Sites] e a implan
 
 Para configurar essa conexão, siga estas etapas.
 
-1. Crie a configuração do Connected Assets conforme descrito acima. Marque a caixa de seleção **[!UICONTROL Buscar representação original para [!DNL Dynamic Media] Ativos conectados]** na caixa de diálogo.
+1. Crie a configuração do Connected Assets conforme descrito acima. Ao configurar a funcionalidade, selecione a opção **[!UICONTROL Buscar representação original para Dynamic Media Connected Assets]** .
 
-1. Configure [!DNL Dynamic Media] em implantações locais [!DNL Sites] e remotas [!DNL Assets]. Siga as instruções para [configurar [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services).
+1. Configure [!DNL Dynamic Media] em implantações locais [!DNL Sites] e remotas [!DNL Assets]. Siga as instruções para [configurar [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Use o mesmo nome de empresa em todas as configurações.
    * Em [!DNL Sites] local, em [!UICONTROL Modo de sincronização Dynamic Media], selecione **[!UICONTROL Desativado por padrão]**. A implantação Sites precisa apenas de acesso somente leitura à conta [!DNL Dynamic Media].
