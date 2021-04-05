@@ -4,14 +4,14 @@ description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API
 contentOwner: AG
 feature: APIs HTTP de ativos, APIs
 role: Desenvolvedor,Arquiteto,Administrador
+exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1522'
 ht-degree: 1%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] API HTTP  {#assets-http-api}
 
@@ -268,6 +268,8 @@ Exclui um recurso (-tree) no caminho fornecido.
 ## Dicas, práticas recomendadas e limitações {#tips-limitations}
 
 * Após o [!UICONTROL Tempo desligado], um ativo e suas representações não estarão disponíveis por meio da interface da Web [!DNL Assets] e por meio da API HTTP. A API retornará uma mensagem de erro 404 se o [!UICONTROL Tempo ligado] estiver no futuro ou [!UICONTROL Tempo desligado] estiver no passado.
+
+* A API HTTP de ativos não retorna os metadados completos. Os namespaces são codificados e somente esses namespaces são retornados. Para obter metadados completos, consulte o caminho do ativo `/jcr_content/metadata.json`.
 
 * Algumas propriedades de pasta ou ativo são mapeadas para um prefixo diferente quando atualizadas usando APIs. O prefixo `jcr` de `jcr:title`, `jcr:description` e `jcr:language` são substituídos pelo prefixo `dc`. Portanto, no JSON retornado, `dc:title` e `dc:description` contêm os valores de `jcr:title` e `jcr:description`, respectivamente.
 
