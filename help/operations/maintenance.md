@@ -3,9 +3,9 @@ title: Tarefas de manutenção no AEM como Cloud Service
 description: Tarefas de manutenção no AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: d53d34e86b5e5bac6a66be8d288cf4ab8fb00ac4
+source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -54,8 +54,8 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Diariamente</td>
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
-    <td>/apps/settings/granite/operations/maintenance/granite_diariamente</td>
-    <td>Ver código exemplo 1 bel</td>
+    <td>Veja o local 1 abaixo</td>
+    <td>Consulte a amostra de código 1 abaixo</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong>  = diariamente (este valor não deve ser alterado)</li>
@@ -67,7 +67,7 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Semanalmente</td>
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
+    <td>Veja o local 2 abaixo</td>
     <td>Consulte a amostra de código 2 abaixo</td>
      <td>
     <ul>
@@ -81,7 +81,7 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Mensalmente</td>
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
+    <td>Veja o local 3 abaixo</td>
     <td>Ver exemplo de código 3 abaixo</td>
      <td>
     <ul>
@@ -93,6 +93,14 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     </ul> </td> 
   </tr>
 </table>
+
+Localizações:
+
+1. /apps/settings/granite/operations/maintenance/granite_diariamente
+2. /apps/settings/granite/operations/maintenance/granite_weekly
+3. /apps/settings/granite/operations/maintenance/granite_mensal
+
+Amostras de código:
 
 Amostra de código 1
 
