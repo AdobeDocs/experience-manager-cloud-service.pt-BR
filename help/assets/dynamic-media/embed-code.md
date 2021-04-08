@@ -3,25 +3,25 @@ title: Incorporação do visualizador de vídeo ou imagem do Dynamic Media em um
 description: Saiba como incorporar vídeos ou ativos de imagem do Dynamic Media em uma página da Web.
 feature: Gerenciamento de ativos
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '376'
 ht-degree: 22%
 
 ---
-
 
 # Incorporação do vídeo do Dynamic Media, visualizador de imagem ou visualizador Dimensional em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]**.
 
-Você incorpora URLs somente se estiver _não_ usando AEM como WCM. Se estiver usando AEM como WCM, [você adiciona os ativos diretamente na página.](adding-dynamic-media-assets-to-pages.md)
+Você incorpora URLs somente se estiver _não_ usando AEM como WCM. Se estiver usando AEM como WCM, [você adiciona os ativos diretamente na página](adding-dynamic-media-assets-to-pages.md).
 
-Consulte [Vincular URLs ao seu Aplicativo Web.](linking-urls-to-yourwebapplication.md)
+Consulte [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebapplication.md).
 
-Consulte [Fornecer imagens otimizadas para um site responsivo.](responsive-site.md)
+Consulte [Fornecer imagens otimizadas para um site responsivo](responsive-site.md).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Consulte [Fornecer imagens otimizadas para um site responsivo.](responsive-site.
 
    Lembre-se de que o código incorporado só está disponível para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou da imagem também deve ser publicada.
 
-   Consulte [Publicar ativos.](publishing-dynamicmedia-assets.md)
+   Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
    Consulte [Predefinições do visualizador de publicação](managing-viewer-presets.md#publishing-viewer-presets).
 
