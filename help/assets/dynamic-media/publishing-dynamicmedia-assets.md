@@ -4,21 +4,21 @@ description: Saiba como publicar ativos do Dynamic Media.
 contentOwner: Rick Brough
 feature: Gerenciamento de ativos
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '465'
 ht-degree: 5%
 
 ---
-
 
 # Publicar ativos do Dynamic Media {#publishing-dynamic-media-assets}
 
 Publique seus ativos do Dynamic Media selecionando os ativos que já carregou e tocando em **[!UICONTROL Publicar]** ou **[!UICONTROL Publicação rápida]**. Depois que os ativos da Dynamic Media forem publicados, eles estarão disponíveis para inclusão em uma página da Web por meio de um URL ou como meio de incorporar o código na página.
 
-Você também pode publicar instantaneamente os ativos que você faz upload, sem nenhuma intervenção do usuário. Ou você pode publicar seletivamente esses ativos. Consulte [Configuração do Dynamic Media.](config-dm.md) Ou, você pode publicar ativos seletivamente na Dynamic Media ou na Adobe Experience Manager, mutuamente exclusivos entre si, usando a  **[!UICONTROL Publicação seletiva]** no nível da pasta. Consulte [Trabalho com publicação seletiva no Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)
+Você também pode publicar instantaneamente os ativos que você faz upload, sem nenhuma intervenção do usuário. Ou você pode publicar seletivamente esses ativos. Consulte [Configuração do Dynamic Media](config-dm.md). Ou, você pode publicar ativos seletivamente no Dynamic Media ou no Adobe Experience Manager, mutuamente exclusivos entre si, usando **[!UICONTROL Publicação seletiva]** no nível da pasta. Consulte [Trabalho com publicação seletiva no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 Na **[!UICONTROL Exibição de cartão]**, um pequeno ícone de globo aparece logo abaixo do nome de um ativo e à esquerda da data e hora para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
 
@@ -28,9 +28,9 @@ Na **[!UICONTROL Exibição de cartão]**, um pequeno ícone de globo aparece lo
 
 Se você pretende publicar ativos de vídeo imediatamente após codificá-los, verifique se a codificação foi feita. Quando os vídeos são codificados, o sistema informa que um fluxo de trabalho de processamento de vídeo está em andamento. Quando a codificação de vídeo estiver concluída, você poderá visualizar as representações de vídeo. Nesse momento, é seguro publicar os vídeos sem incorrer em erros de publicação.
 
-Consulte também [Vincular URLs ao seu Aplicativo Web.](linking-urls-to-yourwebapplication.md)
+Consulte também [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebapplication.md).
 
-Consulte também [Incorporando o visualizador de vídeo ou o visualizador de imagem do Dynamic Media em uma página da Web.](embed-code.md)
+Consulte também [Incorporação do visualizador de vídeo ou do visualizador de imagem do Dynamic Media em uma página da Web](embed-code.md).
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Consulte também [Incorporando o visualizador de vídeo ou o visualizador de ima
 
 
 
-Para obter informações detalhadas sobre a publicação de um conjunto ou ativo, consulte [Publicação de ativos.](/help/assets/manage-digital-assets.md)
+Para obter informações detalhadas sobre a publicação de um conjunto ou ativo, consulte [Publicação de ativos](/help/assets/manage-digital-assets.md).
 
 ## Entrega HTTP/2 de ativos do Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
