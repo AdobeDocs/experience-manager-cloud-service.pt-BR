@@ -3,15 +3,15 @@ title: Perfis de vídeo do Dynamic Media
 description: O Dynamic Media já vem com um perfil de codificação de vídeo adaptável predefinido. As configurações nesse perfil pronto para uso são otimizadas para proporcionar aos clientes a melhor experiência de visualização possível. Você também pode adicionar recorte inteligente aos seus vídeos.
 feature: Gerenciamento de ativos, Perfis de vídeo, Representações
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '3666'
 ht-degree: 10%
 
 ---
-
 
 # Perfis de vídeo do Dynamic Media{#video-profiles}
 
@@ -37,7 +37,7 @@ Consulte também [Práticas recomendadas para organizar ativos digitais para usa
 >
 >Os metadados são úteis quando você está procurando ativos. As miniaturas são imagens de vídeo estáticas geradas durante a codificação. Eles são exigidos pelo sistema Experience Manager e usados na interface do usuário para ajudar você a identificar visualmente os vídeos na exibição Cartões, na exibição Resultados da pesquisa e na exibição Lista de ativos. É possível ver as miniaturas geradas ao tocar no ícone Representações (uma paleta Pintor) de um vídeo codificado.
 
-Quando terminar de criar o Perfil de vídeo, aplique-o a uma ou várias pastas. Consulte [Aplicar um perfil de vídeo a pastas.](#applying-a-video-profile-to-folders)
+Quando terminar de criar o Perfil de vídeo, aplique-o a uma ou várias pastas. Consulte [Aplicar um perfil de vídeo a pastas](#applying-a-video-profile-to-folders).
 
 Para definir parâmetros de processamento avançados para outros tipos de ativos, consulte [Configuração do processamento de ativos](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
@@ -429,4 +429,3 @@ Remova um Perfil de vídeo de uma pasta no menu **[!UICONTROL Ferramentas]** ou,
 1. Toque ou clique no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta da qual deseja remover um Perfil de vídeo.
 1. Na pasta, toque ou clique na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Properties]**.
 1. Selecione a guia **[!UICONTROL Perfis de vídeo]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e clique em **[!UICONTROL Salvar e fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
-
