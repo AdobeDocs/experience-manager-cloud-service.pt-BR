@@ -3,9 +3,9 @@ title: 'Editando um programa de produção '
 description: Editando um programa de produção
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,20 @@ Siga as etapas abaixo para editar um programa de Produção:
 
 1. Navegue até a página **Editar Programa** a partir da página *Visão Geral* do Cloud Manager
 
-1. A página **Editar Programa** exibirá três opções (**Sites**, **Commerce** e **Assets**) para os programas Produção e Sandbox.
+1. A página **Editar Programa** exibirá três opções (**Sites** e **Assets**) para os programas Produção e Sandbox. Além disso, você pode selecionar a opção complementar **Commerce**, que está disponível em **Sites**, conforme mostrado na figura abaixo.
 
    ![](assets/edit-prg.png)
+
+   >[!NOTE]
+   >Pelo menos uma solução deve ser selecionada para um Programa, ou seja, o usuário não poderá desmarcar todas as soluções durante o fluxo de trabalho Editar programa.
+
+1. Clique em **Salvar** para concluir o processo de edição do programa.
 
 
 ## Considerações ao editar um programa {#considerations-editing}
 
 Algumas considerações devem ser revisadas durante a edição de um programa:
 
-* Pelo menos uma solução deve ser selecionada para um Programa, ou seja, o uso não terá permissão para desmarcar todas as soluções durante o fluxo de trabalho Editar programa.
+* Pelo menos uma solução deve ser selecionada para um Programa, ou seja, o usuário não poderá desmarcar todas as soluções durante o fluxo de trabalho Editar programa.
 
 * Clicar no botão **Save**, se as soluções selecionadas forem alteradas, as atualizações de solução para ambientes entrarão em vigor após a próxima implantação.
