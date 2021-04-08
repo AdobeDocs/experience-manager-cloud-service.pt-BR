@@ -3,15 +3,15 @@ title: Conjuntos de rotação
 description: Saiba como trabalhar com conjuntos de rotação no Dynamic Media.
 feature: Conjuntos de rotação
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 12%
 
 ---
-
 
 # Conjuntos de rotação{#spin-sets}
 
@@ -39,11 +39,11 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga estas etapas
    >
    >Os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da ingestão de ativos.
 
-1. [Carregue suas imagens para várias exibições.](#uploading-assets-for-spin-sets)
+1. [Carregue suas imagens para várias exibições](#uploading-assets-for-spin-sets).
 
    No mínimo, você precisa de 8 a 12 capturas de um item para um Conjunto de rotação unidimensional e 16 a 24 para um Conjunto de rotação bidimensional. As fotos devem ser tiradas regularmente para dar a impressão de que o item está girando e sendo virado. Por exemplo, se um Conjunto de rotação unidimensional incluir 12 capturas, gire o item 30° (360/12) para cada disparo.
 
-1. [Criar Conjuntos De Rotação.](#creating-spin-sets)
+1. [Criar conjuntos de rotação](#creating-spin-sets).
 
    Para criar um Conjunto de rotação, selecione **[!UICONTROL Criar > Conjunto de rotação]** e nomeie o conjunto, escolha os ativos e escolha a ordem em que as imagens serão exibidas.
 
@@ -55,15 +55,15 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga estas etapas
 
    Para criar ou editar predefinições do visualizador, consulte **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]**.
 
-   Consulte [Adicionar e editar predefinições do visualizador.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   Consulte [Adicionar e editar predefinições do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
    Você pode exibir e acessar conjuntos criados por meio de predefinições de conjuntos em lotes de três maneiras diferentes. (Conjuntos criados usando predefinições de conjunto de lotes, faça com que *not* apareça na interface do usuário.)
 
-1. [Visualizar conjuntos de rotação.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Visualizar conjuntos de rotação](/help/assets/dynamic-media/previewing-assets.md).
 
    Selecione o Conjunto de rotação e você pode visualizá-lo. Gire o conjunto de rotação. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]**, disponível no menu suspenso do painel à esquerda.
 
-1. [Publicar Conjuntos De Rotação.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Publicar conjuntos de rotação](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    A publicação de um Conjunto de rotação ativa o URL e a cadeia de caracteres de inserção. Além disso, você deve [publicar a predefinição do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -138,7 +138,7 @@ Esta seção descreve como criar Conjuntos de rotação.
 
    Se necessário, arraste o ícone Reordenar de um ativo à direita do nome do arquivo do ativo para reorganizar as imagens para cima ou para baixo na lista definida.
 
-   ![Reorganizando o Quadro 11 no conjunto de rotação arrastando-o para um novo local.](assets/6_5_spinset-reorderassets.png)
+   ![Reorganização do Quadro 11 no conjunto de rotação arrastando-o para um novo local](assets/6_5_spinset-reorderassets.png)
 
    Reorganizando o Quadro 11 no conjunto de rotação arrastando-o para um novo local.
 
