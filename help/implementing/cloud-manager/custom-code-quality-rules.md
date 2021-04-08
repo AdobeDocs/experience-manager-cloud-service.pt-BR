@@ -1,14 +1,14 @@
 ---
 title: Regras de qualidade do código personalizado - Cloud Services
 description: Regras de qualidade do código personalizado - Cloud Services
+exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: d4fb51aa1b5f0bc469c961b0e7287758ec17e9e9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3278'
+ht-degree: 4%
 
 ---
-
 
 # Regras de qualidade do código personalizado {#custom-code-quality-rules}
 
@@ -613,7 +613,7 @@ Encontre abaixo as verificações OakPAL executadas pelo Cloud Manager.
 Um problema comum que ocorre em projetos complexos é onde o mesmo componente OSGi é configurado várias vezes. Isso cria uma ambiguidade sobre qual configuração será operável. Essa regra é &quot;sensível ao modo de execução&quot; na medida em que só identificará problemas em que o mesmo componente é configurado várias vezes no mesmo modo de execução (ou combinação de modos de execução).
 
 >[!NOTE]
->Essa regra produzirá problemas em que a mesma configuração, no mesmo caminho, é definida em vários pacotes, incluindo casos em que o mesmo pacote é duplicado na lista geral de pacotes incorporados. Por exemplo, se a build produzir pacotes chamados `com.myco:com.myco.ui.apps` e `com.myco:com.myco.all` em que `com.myco:com.myco.all` incorpora `com.myco:com.myco.ui.apps`, então todas as configurações em `com.myco:com.myco.ui.apps` serão relatadas como duplicatas. Geralmente, esse é um caso de não seguir as [Diretrizes de estrutura do pacote de conteúdo](/help/implementing/developing/aem-project-content-package-structure.md); neste exemplo específico, o pacote `com.myco:com.myco.ui.apps` não tem a propriedade `<cloudManagerTarget>none</cloudManagerTarget>`.
+>Essa regra produzirá problemas em que a mesma configuração, no mesmo caminho, é definida em vários pacotes, incluindo casos em que o mesmo pacote é duplicado na lista geral de pacotes incorporados. Por exemplo, se a build produzir pacotes chamados `com.myco:com.myco.ui.apps` e `com.myco:com.myco.all` em que `com.myco:com.myco.all` incorpora `com.myco:com.myco.ui.apps`, então todas as configurações em `com.myco:com.myco.ui.apps` serão relatadas como duplicatas. Geralmente, esse é um caso de não seguir as [Diretrizes de estrutura do pacote de conteúdo](/help/implementing/developing/introduction/aem-project-content-package-structure.md); neste exemplo específico, o pacote `com.myco:com.myco.ui.apps` não tem a propriedade `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 #### Código não compatível {#non-compliant-code-osgi}
 
@@ -914,9 +914,3 @@ AEM Cloud Service proíbe que as definições de índice de pesquisa personaliza
 **Desde**: Versão 2021.2.0
 
 AEM Cloud Service proíbe que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo `oak:QueryIndexDefinition`) contenham uma propriedade chamada reindex. A indexação usando essa propriedade deve ser atualizada antes da migração para AEM Cloud Service. Consulte [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obter mais informações.
-
-
-
-
-
-
