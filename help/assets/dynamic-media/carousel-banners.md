@@ -3,15 +3,15 @@ title: Banners em carrossel
 description: Saiba como trabalhar com banners em carrossel no Dynamic Media.
 feature: Banners em carrossel
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4567'
+source-wordcount: '4565'
 ht-degree: 3%
 
 ---
-
 
 # Banners em carrossel{#carousel-banners}
 
@@ -74,11 +74,11 @@ Para ativar e executar rapidamente:
 
    Para criar um Conjunto de carrossel no Assets, toque em **[!UICONTROL Criar]** e selecione **[!UICONTROL Conjuntos de carrossel]**. Adicione ativos a slides e toque em **[!UICONTROL Salvar]**. Além disso, edite a aparência e o comportamento do carrossel diretamente no editor.
 
-1. [Adicione pontos de acesso ou mapas de imagem a um banner de imagem.](#adding-hotspots-or-image-maps-to-an-image-banner)
+1. [Adicione pontos de acesso ou mapas de imagem a um banner](#adding-hotspots-or-image-maps-to-an-image-banner) de imagem.
 
    Adicione um ou mais pontos de acesso ou mapas de imagem a um banner de imagem. Em seguida, associe cada um a uma ação, como um link, uma Exibição rápida ou um Fragmento de experiência. Após adicionar pontos de acesso ou mapas de imagem, conclua esta tarefa publicando o conjunto de carrossel. A publicação cria o código incorporado que pode ser usado para copiar e aplicar à página de aterrissagem do site.
 
-   Consulte [(Opcional) Visualização de banners de carrossel.](#optional-previewing-carousel-banners) - Opcional. Se desejar, é possível visualizar uma representação do conjunto de carrossel e testar sua interatividade.
+   Consulte [(Opcional) Visualização dos banners do carrossel](#optional-previewing-carousel-banners) - Opcional. Se desejar, é possível visualizar uma representação do conjunto de carrossel e testar sua interatividade.
 
 1. [Publique banners no carrossel](#publishing-carousel-banners).
 
@@ -92,7 +92,7 @@ Para ativar e executar rapidamente:
    * [Adicione um banner de carrossel ao seu site no Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Se você for um cliente do Experience Manager Sites , é possível adicionar o conjunto de carrossel diretamente à página usando o componente Mídia interativa .
 
 
-Se precisar editar Conjuntos de carrossel, consulte [editar Conjuntos de carrossel.](#editing-carousel-sets) Além disso, você pode exibir e editar as propriedades do Conjunto de  [carrossel](/help/assets/manage-digital-assets.md#editing-properties).
+Se precisar editar Conjuntos de carrossel, consulte [editar Conjuntos de carrossel](#editing-carousel-sets). Além disso, você pode visualizar e editar [Propriedades do Conjunto de carrossel](/help/assets/manage-digital-assets.md#editing-properties).
 
 ## Identificação das variáveis de hotspot e mapa de imagem {#identifying-hotspot-and-image-map-variables}
 
@@ -227,7 +227,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
    >    * Animação. Por padrão, cada transição de slide está esmaecida. Você pode alterá-lo para uma transição de slide.
    >    * Estilo dos botões. Os usuários podem girar pelos banners tocando em cada ponto ou número. Você pode alterar o local em que os botões de indicador definidos são exibidos (e se são numéricos ou de estilo pontilhado) e o tamanho deles.
    >    * Altere o estilo de realce de um mapa de imagem ou o ícone usado para pontos de acesso.
-   >    * Antes de editar uma predefinição do visualizador, escolha o estilo no qual deseja basear a predefinição. Se você não escolher um estilo, ao começar a editar a predefinição do visualizador, perderá todas as suas alterações se alterar para uma predefinição diferente.
+   >    * Antes de editar uma predefinição do visualizador, escolha o estilo no qual deseja basear a predefinição. Se você não escolher um estilo, ao começar a editar a predefinição do visualizador, perderá todas as suas alterações se mudar para uma predefinição diferente.
 
 
    Você também pode visualizar como será o banner do carrossel. Consulte [(Opcional) Visualização de banners do carrossel](#optional-previewing-carousel-banners).
@@ -252,7 +252,7 @@ Consulte [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/ex
 
 Quando terminar de criar o banner do carrossel, você pode usar a opção Visualizar para ver uma representação de como o banner do carrossel aparece para os clientes.
 
-Consulte [(Opcional) Visualização de banners de carrossel.](#optional-previewing-carousel-banners)
+Consulte [(Opcional) Visualização de banners do carrossel](#optional-previewing-carousel-banners).
 
 >[!NOTE]
 >
@@ -370,7 +370,7 @@ Você pode usar a Visualização para ver a aparência do seu banner de carrosse
 Quando estiver satisfeito com o banner do carrossel, você pode publicá-lo.
 Consulte [Incorporando o visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
 Consulte [Vincular URLs ao aplicativo Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do AEM Sites.
-Consulte [Adicionar ativos Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Você pode visualizar banners de carrossel no Editor de carrossel (método preferencial) ou na lista **[!UICONTROL Visualizadores]**.
 
@@ -407,7 +407,7 @@ Consulte [Publicação de ativos Dynamic Media](/help/assets/dynamic-media/publi
 Depois de fazer upload de imagens de banner para criar um carrossel, pontos de acesso adicionados ou mapas de imagem, ou ambos, para o banner. Publicação do conjunto de carrossel. Agora você está pronto para adicioná-lo à página de seu site existente.
 
 >[!NOTE]
-Se você for um cliente do AEM Sites, poderá adicionar o banner do carrossel diretamente à sua página, arrastando o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Se você for um cliente do AEM Sites, poderá adicionar o banner do carrossel diretamente à sua página, arrastando o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 No entanto, se você for um cliente independente do Experience Manager Assets, poderá adicionar manualmente o banner do carrossel à página de aterrissagem do site.
 
