@@ -6,15 +6,15 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '2937'
 ht-degree: 4%
 
 ---
-
 
 # Configuração da publicação seletiva no nível da pasta no Dynamic Media {#selective-publish-configure-folder}
 
@@ -34,40 +34,40 @@ Por exemplo, com a publicação seletiva, você pode trabalhar com ativos para p
 
 Se posteriormente decidir alterar as configurações de **[!UICONTROL Publicação seletiva]** em uma pasta, essas alterações afetarão somente os novos ativos que você fizer upload para essa pasta a partir desse ponto. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente da caixa de diálogo **[!UICONTROL Publicação rápida]** ou **[!UICONTROL Gerenciar publicação]**.
 
-A opção de nível de pasta **[!UICONTROL Modo de publicação do Dynamic Media]** sempre assume o padrão do valor encontrado na configuração **[!UICONTROL Publicar ativos]** em sua **[!UICONTROL Configuração do Dynamic Media.]** As etapas a seguir neste tópico, no entanto, mostram como alterar manualmente esse valor padrão no nível da pasta (conforme descrito nas etapas a seguir) para substituir o valor de  **[!UICONTROL Configuração do Dynamic Media]** .
+A opção de nível de pasta **[!UICONTROL Modo de publicação do Dynamic Media]** sempre assume o padrão do valor encontrado na configuração **[!UICONTROL Publicar ativos]** em sua **[!UICONTROL Configuração do Dynamic Media]**. As etapas a seguir neste tópico, no entanto, mostram como alterar manualmente esse valor padrão no nível da pasta (conforme descrito nas etapas a seguir) para substituir o valor **[!UICONTROL Configuração do Dynamic Media]**.
 
 Independentemente de você depender de:
 
 * O valor **[!UICONTROL Publicar ativos]** definido em **[!UICONTROL Configuração do Dynamic Media]**
 * Ou o valor **[!UICONTROL Modo de publicação do Dynamic Media]** definido nas propriedades no nível da pasta
 
-Ainda é possível escolher **[!UICONTROL Imediatamente]**, **[!UICONTROL Após ativação]** ou **[!UICONTROL Publicação seletiva.]** Por exemplo, você pode definir o valor  **[!UICONTROL Publicar]** ativos na sua configuração do  **[!UICONTROL Dynamic Media como]** Na ativação ****. E você pode definir o valor do modo **[!UICONTROL Dynamic Media Publish]** no nível da pasta para **[!UICONTROL Publicação seletiva]**, de maneira inversa e assim por diante.
+Ainda é possível escolher **[!UICONTROL Imediatamente]**, **[!UICONTROL Após ativação]** ou **[!UICONTROL Publicação seletiva]**. Por exemplo, você pode definir o valor **[!UICONTROL Publicar ativos]** em sua **[!UICONTROL Configuração do Dynamic Media]** como **[!UICONTROL Na ativação]**. E você pode definir o valor do modo **[!UICONTROL Dynamic Media Publish]** no nível da pasta para **[!UICONTROL Publicação seletiva]**, de maneira inversa e assim por diante.
 
 Depois de configurar a publicação seletiva em uma pasta, você pode executar qualquer um dos seguintes procedimentos:
 
-* [Publique ativos no Dynamic Media ou no Experience Manager seletivamente usando Gerenciar publicação.](#selective-publish-manage-publication)
-* [Cancele a publicação seletiva de ativos do Dynamic Media ou do Experience Manager usando Gerenciar publicação.](#selective-unpublish-manage-publication)
-* [Publicar ativos no Dynamic Media ou Experience Manager usando a Publicação rápida.](#quick-publish-aem-dm)
-* [Publicar ou cancelar a publicação seletiva de ativos por meio de resultados de pesquisa.](#selective-publish-unpublish-search-results)
+* [Publique ativos no Dynamic Media ou no Experience Manager seletivamente usando Gerenciar publicação](#selective-publish-manage-publication).
+* [Cancele a publicação seletiva de ativos do Dynamic Media ou do Experience Manager usando Gerenciar publicação](#selective-unpublish-manage-publication).
+* [Publicar ativos no Dynamic Media ou Experience Manager usando a Publicação rápida](#quick-publish-aem-dm).
+* [Publicar ou cancelar a publicação seletiva de ativos por meio de resultados](#selective-publish-unpublish-search-results) de pesquisa.
 
 **Para configurar a publicação seletiva no nível da pasta no Dynamic Media**
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global. No lado esquerdo, toque no ícone Navegação (logo acima do ícone Ferramentas) e toque em **[!UICONTROL Ativos > Arquivos.]**
+1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global. No lado esquerdo, toque no ícone Navegação (logo acima do ícone Ferramentas) e, em seguida, toque em **[!UICONTROL Ativos > Arquivos]**.
 1. Faça uma das seguintes opções:
-   * Editar as propriedades de uma pasta existente - Em **[!UICONTROL Exibição de cartão]**, **[!UICONTROL Exibição de coluna]** ou **[!UICONTROL Exibição de lista]**, navegue até uma pasta cujas propriedades deseja editar. Selecione a pasta e, em seguida, na barra de ferramentas, toque em **[!UICONTROL Propriedades.]**
-   * Edite as propriedades de uma nova pasta - Em **[!UICONTROL Exibição de cartão]**, **[!UICONTROL Exibição de coluna]** ou **[!UICONTROL Exibição de lista]**, próximo ao canto superior direito da página, toque em **[!UICONTROL Criar > Pasta.]** Na caixa de diálogo  **[!UICONTROL Criar]** pasta, insira um título (obrigatório) para a pasta e toque em  **[!UICONTROL Criar.]** Selecione a pasta e, na barra de ferramentas, toque em  **[!UICONTROL Propriedades.]**
+   * Editar as propriedades de uma pasta existente - Em **[!UICONTROL Exibição de cartão]**, **[!UICONTROL Exibição de coluna]** ou **[!UICONTROL Exibição de lista]**, navegue até uma pasta cujas propriedades deseja editar. Selecione a pasta e, na barra de ferramentas, toque em **[!UICONTROL Propriedades]**.
+   * Edite as propriedades de uma nova pasta - Em **[!UICONTROL Exibição de cartão]**, **[!UICONTROL Exibição de coluna]** ou **[!UICONTROL Exibição de lista]**, próximo ao canto superior direito da página, toque em **[!UICONTROL Criar > Pasta]**. Na caixa de diálogo **[!UICONTROL Criar pasta]**, insira um título (obrigatório) para a pasta e toque em **[!UICONTROL Criar]**. Selecione a pasta e, na barra de ferramentas, toque em **[!UICONTROL Propriedades]**.
 
 1. Na lista suspensa **[!UICONTROL Sync mode]**, selecione uma das seguintes opções:
 
    | Modo de sincronização | Descrição |
    | --- | --- |
-   | **[!UICONTROL Herdado]** | Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão definido em sua **[!UICONTROL Configuração do Dynamic Media.]** O status detalhado de  **** Herdado é exibido por meio de uma dica de ferramenta. |
-   | **[!UICONTROL Sincronizar tudo nesta subárvore de pastas com o Dynamic Media]** | Para que a publicação no Dynamic Media seja bem-sucedida, os ativos devem ser sincronizados com o Dynamic Media. A seleção dessa opção inclui todos os ativos nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem a configuração padrão na **[!UICONTROL Configuração do Dynamic Media.]** |
+   | **[!UICONTROL Herdado]** | Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão definido em seu **[!UICONTROL Dynamic Media Configuration]**. O status detalhado de **[!UICONTROL Herdado]** é exibido por meio de uma dica de ferramenta. |
+   | **[!UICONTROL Sincronizar tudo nesta subárvore de pastas com o Dynamic Media]** | Para que a publicação no Dynamic Media seja bem-sucedida, os ativos devem ser sincronizados com o Dynamic Media. A seleção dessa opção inclui todos os ativos nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem a configuração padrão no **[!UICONTROL Dynamic Media Configuration]**. |
    | **[!UICONTROL Excluir tudo nesta subárvore de pastas da sincronização Dynamic Media]** | Exclua todos os ativos nesta subárvore da sincronização com o Dynamic Media. |
 
    ![Publicação seletiva no nível da pasta](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
-1. Na lista suspensa **[!UICONTROL Dynamic Media Publish mode]** , selecione uma opção. A opção **[!UICONTROL Dynamic Media Publish mode]** sempre assume o valor padrão definido na **[!UICONTROL Dynamic Media Configuration.]** No entanto, você pode substituir manualmente esse valor padrão de  **[!UICONTROL Dynamic Media]** Configuration usando uma das opções a seguir.
+1. Na lista suspensa **[!UICONTROL Dynamic Media Publish mode]** , selecione uma opção. A opção **[!UICONTROL Dynamic Media Publish mode]** sempre assume o valor padrão definido no **[!UICONTROL Dynamic Media Configuration]**. No entanto, você pode substituir manualmente esse valor padrão **[!UICONTROL Dynamic Media Configuration]** usando uma das opções a seguir.
 
    >[!IMPORTANT]
    >
@@ -125,15 +125,15 @@ Consulte [Criação de uma Configuração do Dynamic Media](#configuring-dynamic
    | **[!UICONTROL Agora]** | Selecione para publicar os ativos imediatamente. |
    | **[!UICONTROL Posteriomente]** | Selecione para publicar os ativos em uma data e hora específica. |
 
-1. No canto superior direito da página **[!UICONTROL Gerenciar publicação]**, toque em **[!UICONTROL Próximo.]**
+1. No canto superior direito da página **[!UICONTROL Gerenciar publicação]**, toque em **[!UICONTROL Próximo]**.
 1. Na página **[!UICONTROL Gerenciar publicação - Escopo]** , siga um destes procedimentos:
    * Se necessário, selecione um ou mais ativos que deseja remover da publicação.
-   * No canto superior direito da página **[!UICONTROL Gerenciar publicação - Escopo]**, toque em **[!UICONTROL Publicar]** ou **[!UICONTROL Publicar no Dynamic Media.]**
-1. Toque em **[!UICONTROL OK.]**
+   * No canto superior direito da página **[!UICONTROL Gerenciar publicação - Escopo]**, toque em **[!UICONTROL Publicar]** ou **[!UICONTROL Publicar no Dynamic Media]**.
+1. Toque em **[!UICONTROL OK]**.
 
 ### Cancelar a publicação seletiva de ativos do Dynamic Media ou do Experience Manager usando Gerenciar publicação {#selective-unpublish-manage-publication}
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global. No lado esquerdo, toque no ícone Navegação (logo acima do ícone Ferramentas) e toque em **[!UICONTROL Ativos > Arquivos.]**
+1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global. No lado esquerdo, toque no ícone Navegação (logo acima do ícone Ferramentas) e, em seguida, toque em **[!UICONTROL Ativos > Arquivos]**.
 1. Em **[!UICONTROL Exibição de cartão]**, **[!UICONTROL Exibição de coluna]** ou **[!UICONTROL Exibição de lista]**, siga um destes procedimentos:
    * Navegue até uma pasta cujos ativos você deseja cancelar a publicação. Selecione a pasta e, na barra de ferramentas, toque em **[!UICONTROL Gerenciar publicação]**. Use a **[!UICONTROL Exibição de lista]** para verificar mais facilmente o status de publicação de uma pasta específica.
    * Navegue até uma pasta cujos ativos você deseja cancelar a publicação. Abra a pasta e selecione um ou mais ativos. Na barra de ferramentas, toque em **[!UICONTROL Gerenciar publicação]**. Use **[!UICONTROL Exibição de lista]** para verificar mais facilmente o status de publicação de um ativo específico.
@@ -156,11 +156,11 @@ Consulte [Criação de uma Configuração do Dynamic Media](#configuring-dynamic
    | **[!UICONTROL Agora]** | Selecione para cancelar a publicação dos ativos imediatamente. |
    | **[!UICONTROL Posteriomente]** | Selecione para desfazer a publicação dos ativos em uma data e hora específica. |
 
-1. No canto superior direito da página **[!UICONTROL Gerenciar publicação]**, toque em **[!UICONTROL Próximo.]**
+1. No canto superior direito da página **[!UICONTROL Gerenciar publicação]**, toque em **[!UICONTROL Próximo]**.
 1. Na página **[!UICONTROL Gerenciar publicação - Escopo]** , siga um destes procedimentos:
    * Selecione um ou mais ativos que deseja remover do cancelamento da publicação.
-   * No canto superior direito da página **[!UICONTROL Gerenciar publicação - Escopo]**, toque em **[!UICONTROL Cancelar publicação]** ou **[!UICONTROL Cancelar publicação do Dynamic Media.]**
-1. Toque em **[!UICONTROL OK.]**
+   * No canto superior direito da página **[!UICONTROL Gerenciar publicação - Escopo]**, toque em **[!UICONTROL Cancelar publicação]** ou **[!UICONTROL Cancelar publicação do Dynamic Media]**.
+1. Toque em **[!UICONTROL OK]**.
 
 ## Publicar ativos no Dynamic Media ou Experience Manager usando a Publicação rápida {#quick-publish-aem-dm}
 
@@ -170,9 +170,9 @@ Você pode usar **[!UICONTROL Publicação rápida]** para casos simples de ativ
 >
 >Para usar **[!UICONTROL Publicação rápida]** para publicar ativos no Dynamic Media ou no Experience Manager, certifique-se de que **[!UICONTROL Publicação seletiva]** esteja ativada em seu **[!UICONTROL Configuração do Dynamic Media]** ou nas propriedades da pasta da pasta selecionada.
 
-**Publicar ativos no Dynamic Media ou no Experience Manager usando a Publicação rápida**
+**Para publicar ativos no Dynamic Media ou no Experience Manager usando a Publicação rápida:**
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global. No lado esquerdo da página, toque no ícone Navegação (logo acima do ícone Ferramentas) e, no lado direito da página, toque em **[!UICONTROL Ativos > Arquivos.]**.
+1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global. No lado esquerdo da página, toque no ícone Navegação (logo acima do ícone Ferramentas) e, no lado direito da página, toque em **[!UICONTROL Ativos > Arquivos]**.
 1. Em **[!UICONTROL Exibição de cartão]**, **[!UICONTROL Exibição de coluna]** ou **[!UICONTROL Exibição de lista]**, siga um destes procedimentos:
    * Navegue até uma pasta cujos ativos você deseja publicar. Selecione a pasta e, na barra de ferramentas, toque em **[!UICONTROL Publicação rápida]**. Use a **[!UICONTROL Exibição de lista]** para verificar mais facilmente o status de publicação de uma pasta específica.
    * Navegue até uma pasta cujos ativos você deseja publicar. Abra a pasta e selecione um ou mais ativos. Na barra de ferramentas, toque em **[!UICONTROL Publicação rápida]**. Use **[!UICONTROL Exibição de lista]** para verificar mais facilmente o status de publicação de um ativo específico.
@@ -264,7 +264,7 @@ Você pode usar **[!UICONTROL Linha do tempo]** com **[!UICONTROL Exibição de 
 1. No Experience Manager, no canto superior esquerdo da página, toque no logotipo do Experience Manager para acessar o console de navegação global. No lado esquerdo da página, toque no ícone Navegação (logo acima do ícone Ferramentas) e, em seguida, toque em **[!UICONTROL Ativos > Arquivos]**.
 1. Em **[!UICONTROL Exibição de cartão]**, **[!UICONTROL Exibição de coluna]** ou **[!UICONTROL Exibição de lista]** (captura de tela abaixo mostra a **[!UICONTROL Exibição de lista]**), abra uma pasta que contenha ativos publicados ou não publicados.
 1. Selecione um ativo para que ele seja exibido com uma marca de seleção. Veja a captura de tela abaixo, por exemplo.
-1. Próximo ao canto superior esquerdo da página, no menu suspenso, selecione **[!UICONTROL Linha do tempo.]** A  **** região Status no painel esquerdo mostra o estado de publicação do ativo selecionado.
+1. Próximo ao canto superior esquerdo da página, no menu suspenso, selecione **[!UICONTROL Linha do tempo]**. A região **[!UICONTROL Status]** no painel esquerdo mostra o estado de publicação do ativo selecionado.
 Quando você usa **[!UICONTROL Exibição de lista]**, uma coluna extra para **[!UICONTROL Dynamic Media]** estado de publicação é exibida.
    * Uma pasta configurada para sincronizar com o Dynamic Media exibe a coluna **[!UICONTROL Dynamic Media]** por padrão.
    * Uma pasta *not* configurada para sincronizar com o Dynamic Media não exibe a coluna Dynamic Media.
@@ -275,4 +275,3 @@ Quando você usa **[!UICONTROL Exibição de lista]**, uma coluna extra para **[
 Um ativo que não está sincronizado com o Dynamic Media, mas tem uma ação de publicação do Dynamic Media acionada nele, resulta na seguinte mensagem de erro e solução:
 
 ![Erro de publicação seletiva](/help/assets/assets-dm/selective-publish-error.png)
-
