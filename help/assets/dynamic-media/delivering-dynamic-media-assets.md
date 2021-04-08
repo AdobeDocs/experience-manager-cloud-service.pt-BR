@@ -3,15 +3,15 @@ title: Entrega de ativos de Mídia dinâmica
 description: Saiba como fornecer ativos do Dynamic Media.
 feature: Gerenciamento de ativos
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 7%
 
 ---
-
 
 # Entrega de ativos de Mídia dinâmica{#delivering-dynamic-media-assets}
 
@@ -24,7 +24,7 @@ Com o Dynamic Media, você tem várias opções:
 
    * Incorporação do vídeo ou imagem ao seu site.
    * Vincule URLs ao aplicativo da Web. Use a vinculação quando desejar fornecer um reprodutor de vídeo como uma janela pop-up ou modal.
-   * Se seu site for responsivo, você poderá [fornecer imagens otimizadas.](/help/assets/dynamic-media/responsive-site.md)
+   * Se seu site for responsivo, você poderá [fornecer imagens otimizadas](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
