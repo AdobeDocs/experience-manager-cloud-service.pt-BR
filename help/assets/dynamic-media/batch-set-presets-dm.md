@@ -4,23 +4,23 @@ description: Saiba como automatizar a criação de conjuntos de imagens e conjun
 contentOwner: Rick Brough
 feature: Predefinições de imagem,Predefinições do visualizador
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3435'
-ht-degree: 2%
+source-wordcount: '3446'
+ht-degree: 1%
 
 ---
 
-
 # Sobre as predefinições do conjunto de lotes {#about-bsp}
 
-Use **[!UICONTROL Predefinições de conjunto de lotes]** para ajudar a facilitar a criação e a organização de vários ativos em um conjunto de imagens ou conjunto de rotação no momento em que você carrega arquivos de ativos em uma pasta individualmente ou usando a assimilação em massa. É possível executar a predefinição junto com as tarefas de importação de ativos agendadas em [!DNL Dynamic Media]. Cada predefinição é um conjunto de instruções autocontido e nomeado exclusivamente que define como construir o conjunto de imagens ou o conjunto de rotação usando imagens que correspondem às convenções de nomenclatura definidas na receita predefinida.
+Use **[!UICONTROL Predefinições de conjunto de lotes]** para criar e organizar vários ativos em um conjunto de imagens ou conjunto de rotação no momento em que você fizer upload dos arquivos de ativos para uma pasta individualmente ou usando a assimilação em massa. É possível executar a predefinição junto com as tarefas de importação de ativos agendadas em [!DNL Dynamic Media]. Cada predefinição é um conjunto de instruções autocontido e nomeado exclusivamente que define como construir o conjunto de imagens ou o conjunto de rotação usando imagens que correspondem às convenções de nomenclatura definidas na receita predefinida.
 
 >[!IMPORTANT]
 >
->Se você usou predefinições de conjuntos em lotes em [!DNL Dynamic Media Classic] e está migrando de [!DNL Dynamic Media Classic] para o Adobe Experience Manager como um Cloud Service, é necessário recriar manualmente as definições de predefinições de conjuntos em lotes em [!DNL Adobe Experience Manager as a Cloud Service].
+>Se você usou predefinições de conjunto de lotes em [!DNL Dynamic Media Classic] e está migrando de [!DNL Dynamic Media Classic] para o Adobe Experience Manager como um Cloud Service, recrie manualmente as predefinições de conjunto de lotes em [!DNL Adobe Experience Manager as a Cloud Service].
 
 **Prática recomendada**  - Ao trabalhar com o Adobe de predefinições de conjunto de lotes, o recomenda o seguinte fluxo de trabalho:
 
@@ -28,7 +28,7 @@ Use **[!UICONTROL Predefinições de conjunto de lotes]** para ajudar a facilita
 1. Crie uma pasta de ativos ou use uma pasta de ativos existente e verifique se ela está sincronizada com [!DNL Dynamic Media]. Consulte [Criação de pastas](/help/assets/manage-digital-assets.md#creating-folders).
 1. Aplique a predefinição do conjunto de lotes à pasta de ativos. Consulte [Sobre a aplicação de predefinições de conjuntos em lotes a pastas](#apply-bsp).
 1. Faça upload de imagens para a pasta de ativos. Consulte [Fazer upload de ativos para conjuntos de imagens](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Fazer upload de ativos para conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) ou [Adicionar ativos digitais ao Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
-1. Crie seu conjunto de imagens ou conjunto de rotação. Consulte [Conjuntos de imagens](/help/assets/dynamic-media/image-sets.md) ou [Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md).
+1. O conjunto de imagens ou conjunto de rotação é gerado automaticamente na pasta desejada.
 1. Publique seu conjunto de imagens ou conjunto de rotação. Consulte [Publicar ativos do Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Criar uma predefinição de conjunto de lotes para um conjunto de imagens ou um conjunto de rotação {#creating-bsp}
@@ -60,7 +60,7 @@ Com relação à automação de pedido de sequência, você especifica regras pa
 
 `.*_main,.*_alt[0-9]`
 
-Embora uma sequência de classificação de força seja possível, é melhor confiar na numeração alfanumérica para a ordenação de sequência, na medida do possível. Além disso, você pode usar o conjunto de imagens ou as ferramentas do editor de conjunto de rotação em [!DNL Dynamic Media] para reorganizar facilmente a ordem de sequência dos ativos, ou adicionar e excluir novos ativos no conjunto usando uma operação de arrastar e soltar.
+Embora uma sequência de classificação de força seja possível, é melhor confiar na numeração alfanumérica para a ordenação de sequência, na medida do possível. Além disso, você pode usar o conjunto de imagens ou as ferramentas do editor de conjunto de rotação em [!DNL Dynamic Media] para reorganizar a ordem da sequência de ativos ou adicionar e excluir novos ativos no conjunto usando uma operação de arrastar e soltar.
 
 Quando você terminar de criar uma predefinição de conjunto de lotes, aplique-a a uma ou mais pastas que você criou. Consulte [Sobre a aplicação de predefinições de conjuntos em lotes a pastas](#apply-bsp).
 
@@ -87,7 +87,7 @@ Para saber mais sobre as opções editáveis disponíveis para você, consulte [
    * À esquerda da página **[!UICONTROL Editar predefinição do conjunto de lotes]**, em **[!UICONTROL Corresponder]**, **[!UICONTROL Nome base]** ou **[!UICONTROL Ordenação de sequência]**, toque em **[!UICONTROL Adicionar grupo]**.
    * O campo **[!UICONTROL Match]** é obrigatório. **[!UICONTROL O]** nome de base é obrigatório somente se o campo  **** Matchfield ainda não especificar um nome de base usando um agrupamento de colchetes. **[!UICONTROL A]** Ordem de sequência é opcional.
    * Usando as listas suspensas e caixas de texto no formulário do grupo, especifique um grupo de expressões que deseja usar para definir os critérios de nomenclatura para o conjunto de imagens ou para os membros do ativo de conjunto de rotação.
-      * À medida que você seleciona e especifica expressões para um grupo, observe que a sintaxe de expressão regular real é refletida perto do canto inferior direito da página, no cabeçalho **[!UICONTROL Rule Results - RegX]** (toque em qualquer lugar fora da área do formulário para ver a string de expressão regular atualizada no canto inferior direito). Essas sequências de expressão regular representam o padrão que você deseja corresponder em uma pesquisa de [!DNL Dynamic Media] ativos para criar seu conjunto de imagens ou conjunto de rotação.
+      * À medida que você seleciona e especifica expressões para um grupo, observe que a sintaxe de expressão regular real é refletida perto do canto inferior direito da página, no cabeçalho **[!UICONTROL Rule Results - RegX]**. Para ver a string de expressão regular atualizada no canto inferior direito, toque em qualquer lugar fora da área do formulário. Essas sequências de expressão regular representam o padrão que você deseja corresponder em uma pesquisa de [!DNL Dynamic Media] ativos para criar seu conjunto de imagens ou conjunto de rotação.
       * Para remover um grupo adicionado, toque em **[!UICONTROL X]**.
    * Ao adicionar dois ou mais grupos, na lista suspensa **[!UICONTROL And]**, selecione **[!UICONTROL And]** para associar-se a um grupo recém-adicionado a qualquer grupo de expressão anterior adicionado. Ou selecione **[!UICONTROL Or]** para adicionar uma alternativa entre o grupo de expressões anterior e o novo grupo que você criar. O operando **[!UICONTROL Ou]** é definido pelo uso de um caractere de linha vertical `|` na própria sintaxe de expressão regular.
 
@@ -99,7 +99,7 @@ Para saber mais sobre as opções editáveis disponíveis para você, consulte [
 
 1. No canto superior direito da página, toque **[!UICONTROL Salvar]**.
 
-Agora você é lido para aplicar a predefinição do conjunto de lotes a uma ou mais pastas de ativos, fazer upload de ativos para a pasta e, em seguida, criar seu conjunto de imagens ou conjunto de rotação. Consulte [Sobre a aplicação de predefinições de conjuntos em lotes a pastas](#apply-bsp).
+Agora você está pronto para aplicar a predefinição de conjunto de lotes a uma pasta de ativos. Em seguida, faça upload de ativos para essa pasta. Esse fluxo de trabalho resulta na geração automática do conjunto de imagens ou do conjunto de rotação. Consulte [Sobre a aplicação de predefinições de conjuntos em lotes a pastas de ativos](#apply-bsp).
 
 ### Detalhes da predefinição, Definir convenção de nomenclatura e resultados da regra - Opções RegX {#features-options-bsp}
 
@@ -112,7 +112,7 @@ Consulte [Criação de uma predefinição de conjunto de lotes para um conjunto 
 | Nome da predefinição | Somente leitura. O nome especificado quando você criou o conjunto de lotes pela primeira vez. Se for necessário renomear a predefinição, é possível copiar a predefinição de conjunto de lotes existente e especificar um novo nome. Consulte [Copiando uma predefinição de conjunto de lotes existente](#copy-bsp). |
 | Tipo | Somente leitura. O tipo foi especificado quando você criou o conjunto de lotes pela primeira vez. Copiar uma predefinição de conjunto de lotes existente não permite alterar seu [!UICONTROL Type]; em vez disso, você deve criar uma predefinição. |
 | Incluir ativos derivados | Opcional. Para que o IPS de [!DNL Dynamic Media] (Sistema de produção de imagem) inclua imagens geradas ou &quot;derivadas&quot; com seu Conjunto de rotação ou Conjunto de imagens, selecione **[!UICONTROL Sim]** (padrão). Um ativo derivado é uma imagem que não foi carregada diretamente por um usuário. Em vez disso, o ativo foi produzido pelo IPS quando um ativo principal foi carregado. Por exemplo, um ativo de imagem que o IPS gerou de uma página em um PDF, no momento em que o PDF foi carregado em [!DNL Dynamic Media], é considerado um ativo derivado. |
-| Pasta de destino | Opcional. Se você definir grandes números de conjuntos de imagens ou de rotação, o Adobe recomenda manter esses conjuntos separados das pastas que contêm os próprios ativos. Dessa forma, considere criar uma pasta Conjuntos de imagens ou Conjuntos de rotação e redirecione o aplicativo para colocar conjuntos gerados por conjuntos em lote aqui.<br>Nesse caso, especifique qual pasta na estrutura de pastas do Experience Manager Assets (`/content/dam`) tem a predefinição de conjunto de lotes ativa. Certifique-se de que a pasta esteja habilitada para a sincronização [!DNL Dynamic Media] para permitir como uma pasta de destino. Consulte [Configuração da publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Mais de uma pasta pode ter uma determinada predefinição de conjunto de lotes atribuída a ela, se você aplicar a predefinição por meio das  **[!UICONTROL Propriedades]** da pasta. Consulte [Aplicar predefinições de conjuntos em lotes da página Propriedades de uma pasta de ativos](#apply-bsp-to-folders-via-properties).<br>Se você não especificar uma pasta, a predefinição do conjunto de lotes será criada na mesma pasta da pasta de upload de ativos. |
+| Pasta de destino | Opcional. Se você definir grandes números de conjuntos de imagens ou de rotação, o Adobe recomenda manter esses conjuntos separados das pastas que contêm os próprios ativos. Dessa forma, considere criar uma pasta Conjuntos de imagens ou Conjuntos de rotação e redirecione o aplicativo para colocar conjuntos gerados por conjuntos em lote aqui.<br>Nesse caso, especifique qual pasta na estrutura de pastas do Experience Manager Assets (`/content/dam`) tem a predefinição de conjunto de lotes ativa. Certifique-se de que a pasta esteja habilitada para a sincronização [!DNL Dynamic Media] para permitir como uma pasta de destino. Consulte [Configuração da publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Mais de uma pasta pode ter uma determinada predefinição de conjunto de lotes atribuída a ela, se você aplicar a predefinição por meio das  **[!UICONTROL Propriedades]** da pasta. Consulte [Aplicar predefinições de conjuntos em lotes da página Propriedades de uma pasta de ativos](#apply-bsp-to-folders-via-properties).<br>Se você não especificar uma pasta, o conjunto de imagens gerado pela predefinição do conjunto de lotes ou o conjunto de rotação será criado na mesma pasta da pasta de ativos para a qual você fez upload. |
 | **[!UICONTROL Definir convenção de nomeação]** |  |
 | Prefixo<br>ou<br>Sufixo | Opcional. Insira um prefixo, sufixo ou ambos nos respectivos campos.<br>Os campos de prefixo e sufixo permitem criar quantas predefinições de conjunto de lotes usam uma convenção de nomenclatura de arquivo personalizada e alternativa para um conjunto específico de conteúdo. Esse método é especialmente útil nos casos em que há uma exceção no esquema de nomeação padrão definido por uma empresa.<br>O prefixo ou sufixo é adicionado ao  **[!UICONTROL Nome]** básico definido na área  **[!UICONTROL Convenção de nomenclatura de ativos]** . Ao adicionar um prefixo ou sufixo, você garante que seu conjunto de imagens ou conjunto de rotação seja criado exclusiva e independentemente de outros ativos. Também pode servir para ajudar outras pessoas a identificar os tipos de arquivo. Por exemplo, para determinar um modo de cor usado, é possível adicionar como um prefixo ou sufixo `rgb` ou `cmyk`.<br>Embora não seja necessário especificar uma convenção de nomenclatura de conjunto para usar a funcionalidade predefinida de conjunto de lotes, a prática recomendada é usar a convenção de nomenclatura de conjunto. Essa prática permite definir quantos elementos da convenção de nomenclatura você deseja agrupar em um conjunto para ajudar a simplificar a criação de conjuntos em lotes. |
 | **[!UICONTROL Resultados da regra - RegX]** |  |
@@ -120,15 +120,15 @@ Consulte [Criação de uma predefinição de conjunto de lotes para um conjunto 
 | Convenção de Nomenclatura de Ativos - Nome Base | Somente leitura. Exibe a sintaxe da expressão regular com base nas opções de formulário Nome base escolhidas para o código bruto inserido. |
 | Ordem de sequência - Correspondência | Somente leitura. Exibe a sintaxe da expressão regular com base nas opções de formulário escolhidas para o código bruto inserido. |
 
-## Sobre a aplicação de predefinições de conjuntos em lotes a pastas {#apply-bsp}
+## Sobre a aplicação de predefinições de conjuntos em lotes às pastas de ativos {#apply-bsp}
 
-Quando você atribui predefinições de conjuntos em lotes a uma ou mais pastas, qualquer subpasta herda automaticamente as predefinições da pasta pai.
+Quando você atribui predefinições de conjuntos em lotes a uma ou mais pastas de ativos, qualquer subpasta herda automaticamente as predefinições da pasta pai.
 
-É possível aplicar várias predefinições de conjuntos em lotes a uma pasta.
+É possível aplicar várias predefinições de conjuntos em lotes a uma pasta de ativos.
 
 As pastas que têm uma predefinição de lote atribuída a elas são indicadas na interface do usuário com o nome da predefinição que aparece na pasta, na visualização **[!UICONTROL Cartão]**.
 
-Para aplicar predefinições de conjuntos em lotes a pastas, use um dos dois métodos a seguir:
+Para aplicar predefinições de conjuntos em lotes a pastas de ativos, use um dos dois métodos a seguir:
 
 * [Aplicar predefinições de conjuntos em lotes a pastas de ativos na página](#apply-bsp-to-folders-via-bsp-page)  Predefinição de conjunto de lotes - Esse método oferece a você a maior flexibilidade. É possível aplicar uma única predefinição ou várias predefinições a uma única pasta ou várias pastas.
 * [Aplicar predefinições de conjuntos em lotes da página](#apply-bsp-to-folders-via-properties)  Propriedades de uma pasta de ativos - Esse método permite aplicar uma ou mais predefinições de conjuntos em lotes a uma única pasta.
@@ -160,7 +160,7 @@ Reprocesse ativos em uma pasta se você enfrentar uma das duas situações a seg
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
-1. Em **[!UICONTROL Predefinições de conjunto de lotes]**, na caixa de listagem suspensa **[!UICONTROL Nome da predefinição]**, selecione o nome de uma predefinição de conjunto de lotes que deseja aplicar. A captura de tela acima mostra duas predefinições de conjunto de lotes selecionadas aplicadas à pasta.
+1. Em **[!UICONTROL Predefinições de conjunto de lotes]**, na caixa de listagem suspensa **[!UICONTROL Nome da predefinição]**, selecione o nome de uma predefinição de conjunto de lotes que deseja aplicar. A captura de tela acima mostra duas predefinições de conjunto de lotes selecionadas aplicadas à pasta de ativos.
 
    Se não houver nomes predefinidos de conjuntos de lotes na caixa de listagem suspensa **[!UICONTROL Nome da predefinição]**, significa que você ainda não criou predefinições de conjuntos de lotes. Consulte [Criar uma predefinição de conjunto de lotes para um conjunto de imagens ou um conjunto de rotação](#creating-bsp).
 
@@ -172,19 +172,19 @@ Reprocesse ativos em uma pasta se você enfrentar uma das duas situações a seg
 
 É possível editar uma predefinição de conjunto de lotes existente que você criou. Você pode alterar qualquer um dos grupos de expressão criados para a convenção de nomenclatura de ativos ou ordem de sequência. Se necessário, também é possível atualizar a pasta de destino e definir convenções de nomenclatura.
 
-No entanto, não é possível alterar o nome ou o tipo predefinido da predefinição (Conjunto de imagens ou Conjunto de rotação). Se for necessário alterar o nome de uma predefinição, basta copiar a predefinição existente e especificar um novo nome. Consulte [Copiando uma predefinição de conjunto de lotes](#copy-bsp).
+No entanto, não é possível alterar o nome ou o tipo predefinido da predefinição (Conjunto de imagens ou Conjunto de rotação). Se for necessário alterar o nome de uma predefinição, copie a predefinição existente e especifique um novo nome. Consulte [Copiando uma predefinição de conjunto de lotes](#copy-bsp).
 
-Se você editar uma predefinição de conjunto de lotes aplicada anteriormente a uma pasta, a predefinição recém-editada será aplicada somente aos novos ativos que forem carregados na pasta.
+Se você editar uma predefinição de conjunto de lotes aplicada anteriormente a uma pasta, a predefinição de conjunto de lotes recém-editada será aplicada somente aos novos ativos carregados nessa pasta.
 
-Se desejar que a predefinição recém-editada seja reaplicada aos ativos existentes na pasta, será necessário reprocessar a pasta. <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->Dessa forma, os ativos existentes agora se qualificariam para fazer parte de um conjunto de imagens ou conjunto de rotação e seriam adicionados. Além disso, os ativos existentes que já foram incluídos no conjunto de imagens ou no conjunto de rotação com base na predefinição anterior do conjunto de lotes que foi usada - não são removidos (assumindo que não estão mais qualificados com base na predefinição recém-editada) e são exibidos como estão.
+Se desejar que a predefinição recém-editada seja reaplicada aos ativos existentes na pasta, será necessário reprocessar a pasta. <!-- See [Reprocessing assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). -->Dessa forma, os ativos existentes agora se qualificariam para fazer parte de um conjunto de imagens ou conjunto de rotação e seriam adicionados. Além disso, os ativos existentes que já foram incluídos no conjunto de imagens ou no conjunto de rotação - com base na predefinição de conjunto de lotes anterior que foi usada - não são removidos e são exibidos como estão. Esse cenário pressupõe que elas não se qualificam mais com base na predefinição recém-editada.
 
 **Para editar uma predefinição de conjunto de lotes:**
 
-1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes.]**
+1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
 1. Na página **[!UICONTROL Predefinições do conjunto de lotes]**, à esquerda da coluna **[!UICONTROL Nome da predefinição]**, verifique a predefinição do conjunto de lotes que deseja alterar.
-1. Na barra de ferramentas, toque em **[!UICONTROL Editar predefinição do conjunto de lotes.]**
+1. Na barra de ferramentas, toque em **[!UICONTROL Editar predefinição do conjunto de lotes]**.
 1. Edite a predefinição conforme necessário.
-1. No canto superior direito da página **[!UICONTROL Predefinição do Conjunto de Lotes]**, toque em **[!UICONTROL Salvar.]**
+1. No canto superior direito da página **[!UICONTROL Predefinição do conjunto de lotes]**, toque em **[!UICONTROL Salvar]**.
 
 ## Copiando uma predefinição de conjunto de lotes existente {#copy-bsp}
 
@@ -194,7 +194,7 @@ Se você copiar uma predefinição existente que é referência por pastas de at
 
 **Para copiar uma predefinição de conjunto de lotes existente:**
 
-1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes.]**
+1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
 1. Na página **[!UICONTROL Predefinições do conjunto de lotes]**, à esquerda da coluna **[!UICONTROL Nome da predefinição]**, marque a caixa de seleção da predefinição do conjunto de lotes que deseja copiar.
 1. Na barra de ferramentas, toque em **[!UICONTROL Copiar]**.
 1. Na caixa de diálogo **[!UICONTROL Copiar predefinição do conjunto de lotes]**, na caixa de texto **[!UICONTROL Título]**, digite um novo nome para a predefinição.
@@ -269,3 +269,4 @@ Se você deseja *remover* predefinições de pastas, consulte [Removendo predefi
 >* [Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md)
 >* [Configuração da publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)  - Consulte &quot;Modo de sincronização&quot; no tópico para saber mais sobre como sincronizar uma única pasta com o  [!DNL Dynamic Media].
 >* [Criação de uma configuração do Dynamic Media no Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)  - Consulte &quot;Modo de sincronização Dynamic Media&quot; no tópico para saber mais sobre como sincronizar todas as pastas com o  [!DNL Dynamic Media].
+
