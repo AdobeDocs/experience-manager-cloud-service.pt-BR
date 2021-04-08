@@ -3,7 +3,7 @@ title: 'Edição de um programa de sandbox '
 description: Edição de um programa de sandbox
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 87d4e7d17b6a035a1127b8f8599214bfd763644a
+source-git-commit: 9de1b85f8909709c08cb7358414c18c813aac684
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Siga as etapas abaixo para editar um programa de sandbox:
    >[!NOTE]
    >Pelo menos uma solução deve ser selecionada para um Programa, ou seja, o usuário não tem permissão para desmarcar todas as soluções durante o fluxo de trabalho Editar programa.
 
-1. Clique em **Salvar** para concluir o processo de edição do programa.
+1. Clique em **Save** para concluir o fluxo de trabalho do programa de edição.
 
 
 ## Considerações ao editar um programa {#considerations-editing}
