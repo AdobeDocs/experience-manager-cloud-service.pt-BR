@@ -3,7 +3,7 @@ title: 'Edição de um programa de sandbox '
 description: Edição de um programa de sandbox
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
+source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Siga as etapas abaixo para editar um programa de sandbox:
    ![](assets/edit-prg.png)
 
    >[!NOTE]
-   >Pelo menos uma solução deve ser selecionada para um Programa, ou seja, o usuário não poderá desmarcar todas as soluções durante o fluxo de trabalho Editar programa.
+   >Pelo menos uma solução deve ser selecionada para um Programa, ou seja, o usuário não tem permissão para desmarcar todas as soluções durante o fluxo de trabalho Editar programa.
 
 1. Clique em **Salvar** para concluir o processo de edição do programa.
 
