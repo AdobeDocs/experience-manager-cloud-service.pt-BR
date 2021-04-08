@@ -3,15 +3,15 @@ title: Gerenciar predefinições de imagens
 description: '"Saiba mais sobre predefinições de imagens e como criar, modificar e gerenciar predefinições de imagens."'
 feature: Predefinições de imagem, Visualizadores, Representações
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 10%
 
 ---
-
 
 # Gerenciando predefinições de imagens{#managing-image-presets}
 
@@ -49,7 +49,7 @@ Gerencie as predefinições de imagens no Experience Manager ao tocar ou clicar 
 >
 >Você *não* precisa publicar predefinições de imagens, pois as predefinições de imagens são publicadas automaticamente.
 >
->Consulte [Publicar predefinições de imagens.](#publishing-image-presets)
+>Consulte [Publicar predefinições de imagens](#publishing-image-presets).
 
 >[!NOTE]
 >
