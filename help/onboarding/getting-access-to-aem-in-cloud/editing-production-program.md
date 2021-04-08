@@ -1,14 +1,14 @@
 ---
 title: 'Editando um programa de produção '
-description: 'Editando um programa de produção '
+description: Editando um programa de produção
+exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
-
 
 # Editar um programa de produção {#create-production-program}
 
@@ -25,12 +25,10 @@ Siga as etapas abaixo para editar um programa de Produção:
 
 1. Navegue até a página **Editar Programa** a partir da página *Visão Geral* do Cloud Manager
 
-1. A página **Editar programa** exibirá duas guias (Geral e Soluções) para os programas Produção e Sandbox.
+1. A página **Editar Programa** exibirá três opções (**Sites**, **Commerce** e **Assets**) para os programas Produção e Sandbox.
 
-   ![](assets/edit-program.png)
+   ![](assets/edit-prg.png)
 
-   >[!NOTE]
-   >Embora os Sites e os Ativos sejam exibidos, um deles pode ser desativado com base no que foi comprado e não usado. Especificamente, se a organização não tiver direitos não utilizados para uma solução específica, essa solução será exibida, mas desabilitada.
 
 ## Considerações ao editar um programa {#considerations-editing}
 
