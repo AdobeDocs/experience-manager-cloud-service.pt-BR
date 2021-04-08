@@ -5,11 +5,11 @@ breadcrumb-title: Guia de integração
 user-guide-description: Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 feature-set: Experience Manager Sites
 feature: Implantação
-role: Arquiteto, desenvolvedor
+role: Architect, Developer
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '674'
 ht-degree: 29%
 
 ---
@@ -79,7 +79,8 @@ ht-degree: 29%
       + [Exclusão de uma Lista de permissões IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [Verificando o status de uma Lista de permissões IP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Notas de versão do Cloud Manager {#release-notes-cloud-manager}
-      + [Notas de versão atuais (2021.3.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notas de versão atuais (2021.4.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notas da versão 2021.3.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
       + [Notas da versão 2021.2.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
       + [Notas da versão 2021.1.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
       + [Notas da versão 2020.12.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
