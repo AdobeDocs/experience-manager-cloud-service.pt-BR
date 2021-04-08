@@ -3,9 +3,9 @@ title: 'Editando um programa de produção '
 description: Editando um programa de produção
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
+source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,17 @@ Os usuários com as permissões necessárias agora podem editar um programa de P
 
 Siga as etapas abaixo para editar um programa de Produção:
 
-1. Navegue até a página **Editar Programa** a partir da página *Visão Geral* do Cloud Manager
+1. Clique na opção **Editar programa** na página *Visão geral* do Cloud Manager
 
-1. A página **Editar Programa** exibirá três opções (**Sites** e **Assets**) para os programas Produção e Sandbox. Além disso, você pode selecionar a opção complementar **Commerce**, que está disponível em **Sites**, conforme mostrado na figura abaixo.
+   ![](assets/edit-program-overview.png)
+
+1. A página **Editar Programa** exibe duas guias **Geral** e **Soluções e Suplementos**.
+
+   Navegue até a guia **General** para editar a descrição do programa.
+
+   ![](assets/edit-program-general.png)
+
+   A guia **Soluções e complementos** exibe duas opções, como **Sites** e **Ativos** para programas de Produção e Sandbox. Além disso, você pode selecionar a opção complementar **Commerce**, que está disponível em **Sites**, conforme mostrado na figura abaixo.
 
    ![](assets/edit-prg.png)
 
