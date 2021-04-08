@@ -3,15 +3,15 @@ title: Conjuntos de mídia mista
 description: Saiba como trabalhar com conjuntos de mídia mista no Dynamic Media.
 feature: Conjuntos de mídia mista
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1469'
 ht-degree: 25%
 
 ---
-
 
 # Conjuntos de mídia mista{#mixed-media-sets}
 
@@ -33,11 +33,11 @@ Para ativar e executar rapidamente com Conjuntos de mídias mistas, siga estas e
 
    Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Se necessário, crie seus [Conjuntos de imagens](/help/assets/dynamic-media/image-sets.md) e [Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md). Como os usuários podem ampliar imagens no Visualizador de conjunto de mídias mistas, verifique se você considera o zoom ao escolher imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão.
 
-1. [Criar conjuntos de mídia mista.](#creating-mixed-media-sets)
+1. [Criar conjuntos de mídia mista](#creating-mixed-media-sets).
 
    Para criar um Conjunto de mídia mista, na página Assets, toque em **[!UICONTROL Criar > Conjunto de mídias mistas]** e nomeie o conjunto, selecione os ativos e escolha a ordem em que as imagens serão exibidas.
 
-   Consulte [Trabalhar com seletores.](/help/assets/dynamic-media/working-with-selectors.md)
+   Consulte [Trabalhar com seletores](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Configure [Mixed Media Viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md), conforme necessário.
 
@@ -45,13 +45,13 @@ Para ativar e executar rapidamente com Conjuntos de mídias mistas, siga estas e
 
    Para criar ou editar predefinições do visualizador, consulte **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]**.
 
-   Consulte [Adicionar e editar predefinições do visualizador.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   Consulte [Adicionar e editar predefinições do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-1. [Visualizar conjuntos de mídia mista.](#previewing-mixed-media-sets)
+1. [Visualizar conjuntos de mídia mista](#previewing-mixed-media-sets).
 
    Selecione o Conjunto de mídias mistas e você pode visualizá-lo. Para examinar seu Conjunto de mídias mistas no Visualizador selecionado, clique nos ícones de miniatura. Você pode escolher visualizadores diferentes do menu **[!UICONTROL Visualizadores]**, disponível no menu suspenso do painel à esquerda.
 
-1. [Publicar Conjuntos de Mídias Mistas.](#publishing-mixed-media-sets)
+1. [Publicar conjuntos de mídia mista](#publishing-mixed-media-sets).
 
    A publicação de um Conjunto de mídias mistas ativa o URL e a cadeia de caracteres de inserção. Além disso, você deve [publicar a predefinição do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -174,4 +174,3 @@ Consulte [Publicação de ativos](/help/assets/dynamic-media/publishing-dynamicm
 >[!NOTE]
 >
 >Se o conjunto de mídia mista não terminar totalmente no serviço de delivery na primeira vez que você o publicar, publique o conjunto de mídia mista uma segunda vez.
-
