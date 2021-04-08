@@ -3,9 +3,9 @@ title: 'Edição de um programa de sandbox '
 description: Edição de um programa de sandbox
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
+source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,17 @@ Os usuários com a permissão necessária agora podem editar um programa de Prod
 
 Siga as etapas abaixo para editar um programa de sandbox:
 
-1. Navegue até a página **Editar programa** na página *Visão geral* do Cloud Manager.
+1. Clique na opção **Editar programa** na página *Visão geral* do Cloud Manager
 
-1. A página **Editar Programa** exibirá três opções (**Sites** e **Assets**) para os programas Produção e Sandbox. Além disso, você pode selecionar a opção complementar **Commerce**, que está disponível em **Sites**, conforme mostrado na figura abaixo.
+   ![](assets/edit-program-overview.png)
+
+1. A página **Editar Programa** exibe duas guias **Geral** e **Soluções e Suplementos**.
+
+   Navegue até a guia **General** para editar a descrição do programa.
+
+   ![](assets/edit-program-general.png)
+
+   A guia **Soluções e complementos** exibe duas opções, como **Sites** e **Ativos** para programas de Produção e Sandbox. Além disso, você pode selecionar a opção complementar **Commerce**, que está disponível em **Sites**, conforme mostrado na figura abaixo.
 
    ![](assets/edit-prg.png)
 
