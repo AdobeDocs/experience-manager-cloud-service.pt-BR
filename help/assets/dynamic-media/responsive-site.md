@@ -3,15 +3,15 @@ title: Fornecer imagens otimizadas para um site responsivo
 description: Saiba como usar o recurso de código responsivo para fornecer imagens otimizadas do Dynamic Media.
 feature: Gerenciamento de ativos
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 14%
+source-wordcount: '326'
+ht-degree: 13%
 
 ---
-
 
 # Entrega de imagens otimizadas para um site responsivo {#delivering-optimized-images-for-a-responsive-site}
 
@@ -19,9 +19,9 @@ Use o recurso de código responsivo quando quiser compartilhar o código para se
 
 Esse recurso faz sentido usar se o site estiver em um WCM de terceiros. No entanto, se seu site estiver em AEM, um servidor de imagem externo renderiza a imagem e a fornece à página da Web.
 
-Consulte também [Incorporando o Visualizador de Vídeo em uma Página da Web.](embed-code.md)
+Consulte também [Incorporação do visualizador de vídeo em uma página da Web](embed-code.md).
 
-Consulte também [Vincular URLs ao seu Aplicativo Web.](linking-urls-to-yourwebapplication.md)
+Consulte também [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebapplication.md).
 
 **Para fornecer imagens otimizadas para um site** responsivo:
 
