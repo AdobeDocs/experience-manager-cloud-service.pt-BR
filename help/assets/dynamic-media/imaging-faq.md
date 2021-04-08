@@ -6,9 +6,9 @@ topic: Profissional
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: e1ca8c3a26fae6e421a087ade03cfeddc7a94a0e
+source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1924'
 ht-degree: 2%
 
 ---
@@ -45,11 +45,11 @@ Aprimoramentos na versão mais recente do Smart Imaging:
 
 * Melhoria na classificação de SEO do Google para páginas da Web que utilizam a Imagem inteligente mais recente.
 * Atua conteúdo otimizado imediatamente (no tempo de execução).
-* Usa a tecnologia Adobe Sensei para converter de acordo com a qualidade (qlt) especificada na solicitação de imagem.
-* A Imagem inteligente pode ser desativada usando o parâmetro de URL &quot;bfc&quot;.
+* Usa a tecnologia Adobe Sensei para converter de acordo com a qualidade (`qlt`) especificada na solicitação de imagem.
+* A Imagem inteligente pode ser desativada usando o parâmetro de URL `bfc`.
 * TTL (Tempo de vida útil) independente. Anteriormente, um TTL mínimo de 12 horas era obrigatório para que a Smart Imaging funcionasse.
 * Anteriormente, as imagens original e derivada eram armazenadas em cache e era um processo de duas etapas para invalidar o cache. No último Smart Imaging, somente os derivados são armazenados em cache, permitindo um processo de invalidação de cache de uma única etapa.
-* Clientes que usam cabeçalhos personalizados em seus conjuntos de regras. Por exemplo, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot;, conforme sugerido em [Adicionar um valor de cabeçalho personalizado a respostas de imagem|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se beneficiam do Smart Imaging mais recente. Esses cabeçalhos não estão bloqueados, ao contrário da versão anterior do Smart Imaging.
+* Os clientes que usam cabeçalhos personalizados em seus conjuntos de regras se beneficiam do Smart Imaging mais recente, pois esses cabeçalhos não estão bloqueados, ao contrário da versão anterior do Smart Imaging. Por exemplo, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot;, conforme sugerido em [Adicionar um valor de cabeçalho personalizado às respostas da imagem|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## Há algum custo de licenciamento associado à geração inteligente de imagens? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
