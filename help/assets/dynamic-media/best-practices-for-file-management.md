@@ -4,15 +4,15 @@ description: '"Dicas e práticas recomendadas para nomear, organizar e gerenciar
 contentOwner: Rick Brough
 feature: Gerenciamento de ativos, Perfis de imagem, Perfis de vídeo
 topic: Profissional
-role: Administrador,Profissional
+role: Administrator,Business Practitioner
+exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas para organizar ativos digitais para usar perfis de imagem ou perfis de vídeo{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
@@ -26,7 +26,7 @@ A seguir estão dicas de práticas recomendadas para organizar seus arquivos de 
 
 * Organize seus arquivos com base nos metadados que você adicionou a eles em vez de nas pastas em que eles residem. Você pode realizar essa prática adicionando perfis de metadados.
 
-   * Consulte [Perfis de Metadados.](/help/assets/metadata-profiles.md)
+   * Consulte [Perfis de metadados](/help/assets/metadata-profiles.md).
    * Consulte [Metadados para Gerenciamento de ativos digitais](/help/assets/manage-metadata.md).
 
 * Geralmente, sua coleção de ativos digitais está sempre crescendo. Portanto, é importante, anteriormente, formalizar o uso de metadados, a estrutura de pastas e a nomenclatura de arquivos entre todos os ativos carregados. Padronizar essas coisas garante que, à medida que o conjunto de ativos digitais cresce, você possa aplicar perfis de processamento a pastas com maior precisão e consistência.
@@ -44,4 +44,3 @@ A seguir estão dicas de práticas recomendadas para organizar seus arquivos de 
 
 * Crie um diretório de pastas que provavelmente não será alterado para que os perfis atribuídos não sejam interrompidos.
 * Suponha que um ativo já tenha sido publicado, então use o Adobe Experience Manager para movê-lo para outra pasta e republicar de seu novo local. O local do ativo publicado original ainda está disponível, juntamente com o ativo republicado recentemente. O ativo publicado original, no entanto, é &quot;perdido&quot; para o Experience Manager e não pode ter a publicação cancelada. Portanto, como prática recomendada, cancele a publicação de ativos primeiro antes de movê-los para uma pasta diferente.
-
