@@ -3,15 +3,15 @@ title: Perfis de imagem do Dynamic Media
 description: '"Saiba como criar Perfis de imagem do Dynamic Media que contêm configurações para a máscara de nitidez e recorte inteligente ou amostra inteligente, ou ambos. Em seguida, aplique o perfil a uma pasta de ativos de imagem."'
 feature: Gerenciamento de ativos, Perfis de imagem, Representações
 topic: Profissional
-role: Profissional
+role: Business Practitioner
+exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2705'
 ht-degree: 10%
 
 ---
-
 
 # Perfis de imagem do Dynamic Media {#image-profiles}
 
@@ -96,7 +96,7 @@ Em **[!UICONTROL Tirar nitidez da máscara]**, você tem as seguintes opções d
  </tbody>
 </table>
 
-A nitidez é descrita em [Nitidez de imagens.](/help/assets/dynamic-media/assets/sharpening_images.pdf)
+A nitidez é descrita em [Nitidez de imagens](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## Criação de perfis de imagem do Dynamic Media {#creating-image-profiles}
 
@@ -248,7 +248,7 @@ Você pode executar o recorte inteligente novamente para gerar as culturas adici
       * Se a imagem tiver um recorte inteligente ou apenas uma amostra inteligente, arraste a alça do canto da caixa de recorte na imagem. Ajuste o tamanho da área visível da cultura.
       * Se a imagem tiver um recorte inteligente e uma amostra inteligente, arraste a alça do canto da caixa de recorte na imagem. Ajuste o tamanho da área visível da cultura. Ou toque na amostra inteligente abaixo da imagem (as amostras de cores são estáticas) e arraste a alça do canto da caixa de recorte. Ajuste o tamanho da área visível da amostra.
 
-      ![Redimensionamento do recorte inteligente de uma imagem.](assets/edit_smart_crops-resize.png)
+      ![Redimensionamento do recorte inteligente de uma imagem](assets/edit_smart_crops-resize.png).
 
    * Mova a caixa de recorte inteligente. Siga um destes procedimentos:
 
