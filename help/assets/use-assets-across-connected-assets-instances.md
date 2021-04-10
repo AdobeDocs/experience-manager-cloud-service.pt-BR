@@ -3,15 +3,15 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 feature: Gerenciamento de ativos,Ativos conectados,Distribuição de ativos
-role: Administrador,Profissional de negócios,Arquiteto
+role: Administrator,Business Practitioner,Architect
+exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '2922'
 ht-degree: 27%
 
 ---
-
 
 # Use o Connected Assets para compartilhar ativos do DAM no [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -108,9 +108,12 @@ Para configurar a conectividade do Connected Assets e do [!DNL Sites] local, sig
 
 1. Adicione a implantação [!DNL Sites] como uma origem permitida na configuração do CORS na implantação [!DNL Assets]. Para obter mais informações, consulte [compreender o CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
+1. Configure [o mesmo suporte a cookies do site](/help/security/same-site-cookie-support.md).
+
 Você pode verificar a conectividade entre as implantações [!DNL Sites] configuradas e a implantação [!DNL Assets].
 
 ![Teste de conexão do Connected Assets configurado  [!DNL Sites]](assets/connected-assets-multiple-config.png)
+*Figura: Teste de conexão do Connected Assets configurado  [!DNL Sites].*
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
@@ -129,7 +132,7 @@ Para configurar essa conexão, siga estas etapas.
    * Em [!DNL Sites] local, na opção **[!UICONTROL Publicar ativos]**, selecione **[!UICONTROL Publicação seletiva]**. Não selecione **[!UICONTROL Sincronizar todo o conteúdo]**.
    * Na implantação remota [!DNL Assets], em [!UICONTROL Modo de sincronização Dynamic Media], selecione **[!UICONTROL Ativado por padrão]**.
 
-1. Ative o suporte [[!DNL Dynamic Media] no Componente principal de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esse recurso permite que o componente Imagem padrão exiba imagens [!DNL Dynamic Media] quando imagens [!DNL Dynamic Media] são usadas por autores em páginas da Web na implantação local [!DNL Sites].
+1. Ative o suporte [[!DNL Dynamic Media] no Componente principal de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esse recurso permite que o [Componente de imagem](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) padrão exiba imagens [!DNL Dynamic Media] quando imagens [!DNL Dynamic Media] são usadas por autores em páginas da Web na implantação local [!DNL Sites].
 
 ## Use ativos remotos {#use-remote-assets}
 
@@ -231,11 +234,13 @@ Para visualizar e gerenciar referências na implantação [!DNL Assets], siga es
 Para solucionar erros comuns, siga estas etapas:
 
 * Se você não conseguir pesquisar ativos remotos no [!UICONTROL Localizador de conteúdo], verifique se as funções e permissões necessárias estão em vigor.
-* Um ativo buscado no dam remoto pode não ser publicado em uma página da Web por um ou mais motivos. Ele não existe no servidor remoto, falta de permissões apropriadas para buscá-lo ou falha de rede pode ser o motivo. Certifique-se de que o ativo não seja removido do DAM remoto. Verifique se as permissões apropriadas estão em vigor e se os pré-requisitos foram atendidos. Tente adicionar o ativo novamente à página e publique-o novamente. Verifique a [lista de trabalhos assíncronos](/help/operations/asynchronous-jobs.md) quanto a erros na busca de ativos.
-* Se não conseguir acessar a implantação remota do DAM a partir da implantação local [!DNL Sites], verifique se os cookies entre sites são permitidos. Se os cookies entre sites estiverem bloqueados, as duas implantações de [!DNL Experience Manager] poderão não ser autenticadas. Por exemplo, [!DNL Google Chrome] no modo Incógnito pode bloquear cookies de terceiros. Para permitir cookies no navegador [!DNL Chrome], clique no ícone &#39;olho&#39; na barra de endereços, navegue até Site não funcionando > Bloqueado, selecione o URL do DAM remoto e permita o cookie do token de login. Como alternativa, consulte a ajuda sobre [como ativar cookies de terceiros](https://support.google.com/chrome/answer/95647).
 
-   ![Erro de cookie no Chrome no modo incógnito](assets/chrome-cookies-incognito-dialog.png)
+* Um ativo buscado no DAM remoto pode não ser publicado em uma página da Web por um ou mais motivos. Ele não existe no servidor remoto, falta de permissões apropriadas para buscá-lo ou falha de rede pode ser o motivo. Certifique-se de que o ativo não seja removido do DAM remoto. Verifique se as permissões apropriadas estão em vigor e se os pré-requisitos foram atendidos. Tente adicionar o ativo novamente à página e publique-o novamente. Verifique a [lista de trabalhos assíncronos](/help/operations/asynchronous-jobs.md) quanto a erros na busca de ativos.
 
-* Se referências remotas não forem recuperadas e resultar em uma mensagem de erro, verifique se a implantação do Sites está disponível e verifique se há problemas de conectividade de rede. Tente novamente mais tarde para verificar. [!DNL Assets] a implantação tenta estabelecer conexão duas vezes com a  [!DNL Sites] implantação e, em seguida, relata uma falha.
+* Se você não conseguir acessar a implantação remota do DAM a partir da implantação local [!DNL Sites], verifique se os cookies entre sites são permitidos e [o mesmo suporte de cookie do site](/help/security/same-site-cookie-support.md) está configurado. Se os cookies entre sites estiverem bloqueados, as implantações de [!DNL Experience Manager] podem não ser autenticadas. Por exemplo, [!DNL Google Chrome] no modo Incógnito pode bloquear cookies de terceiros. Para permitir cookies no navegador [!DNL Chrome], clique no ícone &#39;olho&#39; na barra de endereços, navegue até **Site não funcionando** > **Bloqueado**, selecione o URL do DAM remoto e permita cookie de token de login. Como alternativa, consulte [como ativar cookies de terceiros](https://support.google.com/chrome/answer/95647).
+
+   ![Erro de cookie no navegador Chrome no modo Incógnito](assets/chrome-cookies-incognito-dialog.png)
+
+* Se referências remotas não forem recuperadas e resultarem em uma mensagem de erro, verifique se a implantação [!DNL Sites] está disponível e verifique se há problemas de conectividade de rede. Tente novamente mais tarde para verificar. [!DNL Assets] a implantação tenta estabelecer conexão duas vezes com a  [!DNL Sites] implantação e, em seguida, relata uma falha.
 
 ![falha ao tentar novamente referências remotas de ativos](assets/reference-report-failure.png)
