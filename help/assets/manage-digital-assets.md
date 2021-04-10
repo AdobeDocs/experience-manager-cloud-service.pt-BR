@@ -7,9 +7,9 @@ feature: Gerenciamento de ativos, Publicação, Colaboração, Processamento de 
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e12638fdda7da178e8dc22163d5ffb822bd980bf
 workflow-type: tm+mt
-source-wordcount: '4342'
+source-wordcount: '4362'
 ht-degree: 12%
 
 ---
@@ -280,54 +280,29 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
 Consulte [Baixar ativos de [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## Publicar ativos {#publish-assets}
+## Publicar ou cancelar a publicação de ativos {#publish-assets}
 
-<!--
->[!NOTE]
->
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
--->
+1. Navegue até o local do ativo ou da pasta de ativos que deseja publicar ou que deseja remover do ambiente de publicação (cancelar a publicação).
 
-1. Acesse o local dos ativos/pastas que deseja publicar.
+1. Selecione o ativo ou a pasta para publicar ou desfazer a publicação e selecione a opção **[!UICONTROL Gerenciar publicação]** ![gerenciar opção de publicação](assets/do-not-localize/globe-publication.png) na barra de ferramentas. Como alternativa, para publicar rapidamente, selecione a opção **[!UICONTROL Publicação rápida]** na barra de ferramentas. Se a pasta que você deseja publicar incluir uma pasta vazia, a pasta vazia não será publicada.
 
-1. Selecione a ação rápida **[!UICONTROL Publicar]** no cartão de ativos ou selecione o ativo e toque/clique no ícone **[!UICONTROL Publicação rápida]** na barra de ferramentas.
-1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas/não foram publicadas são exibidas. Escolha as referências que deseja publicar.
+1. Selecione a opção **[!UICONTROL Publish]** ou **[!UICONTROL Unpublish]** conforme necessário.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Cancelar publicação da ação](assets/unpublish_action.png)
+   *Figura: Opções de publicação e cancelamento de publicação e a opção de agendamento.*
 
-   >[!NOTE]
-   >
-   >Se a pasta que você deseja publicar incluir uma pasta vazia, a pasta vazia não será publicada.
+1. Selecione **[!UICONTROL Agora]** para agir no ativo imediatamente ou selecione **[!UICONTROL Mais Tarde]** para agendar a ação. Selecione uma data e hora se escolher a opção **[!UICONTROL Later]**. Clique em **[!UICONTROL Avançar]**.
 
-1. Toque/clique em **[!UICONTROL Publicar]** para confirmar a ativação dos ativos.
+1. Ao publicar, se um ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências são exibidas, que não são publicadas ou modificadas desde a última publicação. Escolha as referências que deseja publicar.
 
->[!CAUTION]
->
->Se você publicar um ativo que está sendo processado, somente o conteúdo original será publicado. As representações estão ausentes. Aguarde até que o processamento seja concluído e publique ou publique novamente o ativo quando o processamento for concluído.
+1. Ao cancelar a publicação, se um ativo fizer referência a outros ativos, escolha as referências que deseja cancelar a publicação. Clique em **[!UICONTROL Cancelar publicação]**. Na caixa de diálogo de confirmação, clique em **[!UICONTROL Cancelar]** para interromper a ação ou clique em **[!UICONTROL Cancelar publicação]** para confirmar que a publicação dos ativos deve ser cancelada na data especificada.
 
-## Cancelar a publicação de ativos {#unpublishing-assets}
+Entenda as seguintes limitações e dicas relacionadas à publicação ou ao cancelamento da publicação de ativos ou pastas:
 
-1. Navegue até o local da pasta de ativo/ativo que deseja remover do ambiente de publicação (cancelar a publicação).
-
-1. Selecione o ativo/pasta a ser desfeito na publicação e toque/clique no ícone **[!UICONTROL Gerenciar publicação]** na barra de ferramentas.
-
-   ![manage_publication](assets/manage_publication.png)
-
-1. Selecione a ação **[!UICONTROL Cancelar publicação]** na lista.
-
-   ![unpublish_action](assets/unpublish_action.png)
-
-1. Para cancelar a publicação do ativo mais tarde, selecione **[!UICONTROL Cancelar publicação mais tarde]** e selecione uma data para cancelar a publicação do ativo.
-1. Programe uma data para o ativo ficar indisponível no ambiente de publicação.
-1. Se o ativo fizer referência a outros ativos, escolha as referências que deseja cancelar a publicação. Toque/clique em **[!UICONTROL Cancelar publicação]**.
-1. Na caixa de diálogo de confirmação, toque/clique em:
-
-   * **** Cancelar para interromper a ação
-   * **** Cancelar publicação para confirmar que a publicação dos ativos está desfeita (não está mais disponível no ambiente de publicação) na data especificada.
-
-   >[!NOTE]
-   >
-   >Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite cancelar a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
+* A opção para [!UICONTROL Gerenciar publicação] está disponível somente para as contas de usuário que têm permissões de replicação.
+* Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite desfazer a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
+* Pastas vazias não são publicadas.
+* Se você publicar um ativo que está sendo processado, somente o conteúdo original será publicado. As representações estão ausentes. Aguarde até que o processamento seja concluído e publique ou publique novamente o ativo quando o processamento for concluído.
 
 ## Grupo de usuários fechado {#closed-user-group}
 
