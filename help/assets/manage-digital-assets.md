@@ -7,10 +7,10 @@ feature: Gerenciamento de ativos, Publicação, Colaboração, Processamento de 
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: e12638fdda7da178e8dc22163d5ffb822bd980bf
+source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 12%
+source-wordcount: '4508'
+ht-degree: 11%
 
 ---
 
@@ -624,4 +624,24 @@ Uma coleção é um conjunto ordenado de ativos. Use coleções para compartilha
 * Uma coleção pode incluir ativos de locais diferentes, pois eles contêm apenas referências a esses ativos. Cada coleção mantém a integridade referencial dos ativos.
 * Você pode compartilhar coleções com vários usuários com diferentes níveis de privilégio, incluindo edição, visualização e assim por diante.
 
-Consulte [Gerenciamento de coleções](/help/assets/manage-collections.md) para obter detalhes sobre o gerenciamento de coleções.
+Para saber mais sobre o Gerenciamento de coleções, consulte [gerenciar coleções](/help/assets/manage-collections.md).
+
+## Ocultar ativos expirados ao visualizar ativos no aplicativo de desktop ou no Adobe Asset Link {#hide-expired-assets-via-acp-api}
+
+[!DNL Experience Manager] o aplicativo de desktop permite acesso ao repositório DAM do desktop do Windows ou Mac. O Adobe Asset Link permite acesso a ativos a partir dos aplicativos de desktop [!DNL Creative Cloud] compatíveis.
+
+Ao navegar pelos ativos na interface do usuário [!DNL Experience Manager], os ativos expirados não são exibidos. Para evitar visualizar, pesquisar e buscar ativos expirados ao navegar por ativos do aplicativo de desktop e do Asset Link, os administradores podem fazer a seguinte configuração. A configuração funciona para todos os usuários, independentemente do privilégio de administrador.
+
+Execute o seguinte comando CURL. Garanta o acesso de leitura em `/conf/global/settings/dam/acpapi/` para os usuários que acessam ativos. Os usuários que fazem parte do grupo `dam-user` têm a permissão por padrão.
+
+```curl
+curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'jcr:title=acpapiconfig' \
+--data-urlencode 'hideExpiredAssets=true' \
+--data-urlencode 'hideExpiredAssets@TypeHint=Boolean' \
+--data-urlencode 'jcr:primaryType=nt:unstructured' \
+--data-urlencode '../../jcr:primaryType=sling:Folder'
+```
+
+Para saber mais, consulte como [procurar ativos do DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
