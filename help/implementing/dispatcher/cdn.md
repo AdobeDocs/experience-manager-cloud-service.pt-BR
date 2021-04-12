@@ -4,7 +4,7 @@ description: CDN no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: 753d023e1b2c5b76ed5c402c002046cc2c5c1de4
+source-git-commit: 16a0f4de0d7a32032abd4742cc06a086038d032b
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 7%
@@ -46,8 +46,8 @@ Se um cliente precisar usar sua CDN existente, ele poderá gerenciá-la e apont�
 
 Instruções de configuração:
 
-1. Defina o cabeçalho `X-Forwarded-Host` com o nome de domínio. Por exemplo: `X-Forwarded-Host: example.com`.
-1. Defina o cabeçalho Host com o domínio de origem, que é a entrada do CDN AEM. Por exemplo: `Host: publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Defina o cabeçalho `X-Forwarded-Host` com o nome de domínio. Por exemplo:`X-Forwarded-Host:example.com`.
+1. Defina o cabeçalho Host com o domínio de origem, que é a entrada do CDN AEM. Por exemplo:`Host: publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Envie o cabeçalho SNI para a origem. Como o cabeçalho Host , o cabeçalho SNI deve ser o domínio de origem.
 1. Defina `X-Edge-Key` ou `X-AEM-Edge-Key` (se sua CDN tira `X-Edge-*`). O valor deve vir do Adobe.
    * Isso é necessário para que o Adobe CDN possa validar a origem das solicitações e transmitir os cabeçalhos `X-Forwarded-*` para o aplicativo AEM. Por exemplo, `X-Forwarded-Host` é usado pelo AEM para determinar o cabeçalho do Host e `X-Forwarded-For` é usado para determinar o IP do cliente. Assim, é responsabilidade do chamador confiável (ou seja, o CDN gerenciado pelo cliente) garantir a correção dos cabeçalhos `X-Forwarded-*` (consulte a nota abaixo).
