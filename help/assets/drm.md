@@ -3,15 +3,15 @@ title: Digital Rights Management em [!DNL Assets]
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
 feature: Gerenciamento de ativos,DRM
-role: Profissional de negócios,Administrador
+role: Business Practitioner,Administrator
+exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1345'
 ht-degree: 7%
 
 ---
-
 
 # Digital Rights Management ativos {#digital-rights-management-in-assets}
 
@@ -37,7 +37,7 @@ Você pode visualizar o status de expiração de um ativo nos seguintes locais:
 
 Você pode pesquisar ativos expirados, incluindo subativos expirados no painel Pesquisar .
 
-1. No console [!DNL Assets], clique em **[!UICONTROL Pesquisar]** na barra de ferramentas para exibir a caixa Omnisearch.
+1. No console [!DNL Assets], clique em **[!UICONTROL Pesquisar]** na barra de ferramentas para exibir a caixa de pesquisa [!DNL Experience Manager].
 
 1. Com o cursor na caixa Omnisearch, selecione a tecla `Enter` para exibir a página de resultados de pesquisa.
 
