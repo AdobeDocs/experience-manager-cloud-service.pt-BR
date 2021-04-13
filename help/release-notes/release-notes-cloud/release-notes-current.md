@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: bea158d45f8f66febe47d0580074358ec2b69c16
+source-git-commit: b412ec6b554684b9b41fe6c8991124bc76e200af
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1588'
 ht-degree: 3%
 
 ---
@@ -195,11 +195,13 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.3.0 é 4 de m
 
 ### Data de lançamento {#release-date-bpa}
 
-A data de lançamento do Analisador de práticas recomendadas v2.1.8 é 22 de março de 2021.
+A data de lançamento do Analisador de práticas recomendadas v2.1.12 é 12 de abril de 2021.
 
-### Novidades do Analisador de práticas recomendadas {#what-is-new-bpa}
+### Correções de erros {#bug-fixes-bpa-april}
 
-* Capacidade de filtrar as conclusões do ACS Commons do relatório BPA na interface do usuário, bem como do relatório exportado como um arquivo CSV.
+* Linhas duplicadas foram vistas no BPA relatado. Isso foi corrigido.
+* A interface do usuário do BPA AEM versão 6.4.2 estava exibindo um erro de JS que estava desativando o botão Gerar relatório . Isso foi corrigido
+
 
 ## Ferramentas de refatoração de código {#code-refactoring-tools}
 
