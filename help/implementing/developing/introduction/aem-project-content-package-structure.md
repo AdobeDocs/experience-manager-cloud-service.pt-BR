@@ -1,14 +1,14 @@
 ---
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
+exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 translation-type: tm+mt
-source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
+source-git-commit: 800c6db7fed43d706dcf1c26235b2f88ed0a5b62
 workflow-type: tm+mt
-source-wordcount: '2836'
+source-wordcount: '2873'
 ht-degree: 13%
 
 ---
-
 
 # Estrutura de projetos do AEM
 
@@ -86,6 +86,10 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
          + Usuários do Serviço
          + Grupos
          + ACLs (permissões)
+
+>[!NOTE]
+>
+>O mesmo código deve ser implantado em todos os ambientes. Isso é necessário para garantir que um nível de validação de confiança no ambiente de preparo também esteja em produção. Para obter mais informações, consulte [Codificação Conservadora para Rollbacks](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks).
 
 
 ### Pacotes de conteúdo
