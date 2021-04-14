@@ -2,9 +2,9 @@
 title: Configuração de desenvolvimento para equipes empresariais - Cloud Services
 description: Siga esta página para saber mais sobre a Configuração de desenvolvimento para equipes empresariais
 translation-type: tm+mt
-source-git-commit: 1695f98cdf10c3bf35d651bd165fb9f2ee113abe
+source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1495'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ A configuração no repositório Git do Cloud Manager tem duas ramificações:
 * Uma *ramificação de liberação estável*, contendo o código de produção de todas as equipes
 * Uma *ramificação de desenvolvimento*, contendo o código de desenvolvimento de todas as equipes
 
-Cada push para o repositório Git de uma equipe no desenvolvimento ou na ramificação estável está acionando uma [ação do github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Todos os projetos seguem a mesma configuração para a ramificação estável: Um push da ramificação estável de um projeto é enviado automaticamente para a ramificação estável no repositório Git do Cloud Managers. O pipeline de produção no Cloud Manager é configurado para ser acionado por um push para a ramificação estável. O pipeline de produção é, portanto, executado por cada push de qualquer equipe em uma ramificação estável e a implantação de produção é atualizada se todas as portas de qualidade passarem.
+Cada push para o repositório Git de uma equipe no desenvolvimento ou na ramificação estável está acionando uma [ação do github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Todos os projetos seguem a mesma configuração para a ramificação estável. Um push na ramificação estável de um projeto é enviado automaticamente para a ramificação estável no repositório Git do Cloud Managers. O pipeline de produção no Cloud Manager é configurado para ser acionado por um push para a ramificação estável. O pipeline de produção é, portanto, executado por cada push de qualquer equipe em uma ramificação estável e a implantação de produção é atualizada se todas as portas de qualidade passarem.
 
 ![](assets/team-setup2.png)
 
