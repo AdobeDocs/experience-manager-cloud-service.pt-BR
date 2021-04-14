@@ -2,9 +2,9 @@
 title: Configuração de desenvolvimento para equipes empresariais - Cloud Services
 description: Siga esta página para saber mais sobre a Configuração de desenvolvimento para equipes empresariais
 translation-type: tm+mt
-source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
+source-git-commit: 833f8d5bcfb88a6a4c9c945c433bbb731bb5d8a2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ O Cloud Manager é compatível com configurações flexíveis de várias equipes
 
 Cada empresa tem requisitos diferentes, incluindo configuração de equipe, processos e fluxos de trabalho de desenvolvimento diferentes. A configuração descrita abaixo é usada pelo Adobe para vários projetos que proporcionam experiências além do AEM como Cloud Service.
 
-Por exemplo, os aplicativos do Adobe Creative Cloud, como Adobe Photoshop ou Adobe Illustrator, incluem recursos de conteúdo, como tutoriais, amostras e guias disponíveis para os usuários finais. Esse conteúdo é consumido pelos aplicativos clientes usando AEM como Cloud Service de uma maneira *headless*, fazendo chamadas de API para o AEM Cloud publish tier para recuperar o conteúdo estruturado como fluxos JSON e aproveitando o AEM Cloud Service CDN para fornecer conteúdo estruturado e não estruturado com desempenho ideal.
+Por exemplo, os aplicativos do Adobe Creative Cloud, como Adobe Photoshop ou Adobe Illustrator, incluem recursos de conteúdo, como tutoriais, amostras e guias disponíveis para os usuários finais. Esse conteúdo é consumido pelos aplicativos clientes usando AEM como Cloud Service de uma maneira *headless*, fazendo chamadas de API para o nível de publicação da AEM Cloud para recuperar o conteúdo estruturado como fluxos JSON e aproveitando a [Content Delivery Network (CDN) no AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=en#content-delivery) para fornecer conteúdo estruturado e não estruturado com desempenho ideal.
 
 As equipes que contribuem para este projeto seguem o processo descrito a seguir.
 
@@ -68,13 +68,13 @@ A configuração no repositório Git do Cloud Manager tem duas ramificações:
 * Uma *ramificação de liberação estável*, contendo o código de produção de todas as equipes
 * Uma *ramificação de desenvolvimento*, contendo o código de desenvolvimento de todas as equipes
 
-Cada push para o repositório Git de uma equipe no desenvolvimento ou na ramificação estável está acionando uma [ação do github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Todos os projetos seguem a mesma configuração para a ramificação estável. Um push na ramificação estável de um projeto é enviado automaticamente para a ramificação estável no repositório Git do Cloud Manager. O pipeline de produção no Cloud Manager é configurado para ser acionado por um push para a ramificação estável. O pipeline de produção é, portanto, executado por cada push de qualquer equipe em uma ramificação estável e a implantação de produção é atualizada se todas as portas de qualidade passarem.
+Cada push para o repositório Git de uma equipe no desenvolvimento ou na ramificação estável está acionando uma [ação do github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Todos os projetos seguem a mesma configuração para a ramificação estável. Um push para a ramificação estável de um projeto é enviado automaticamente para a ramificação estável no repositório Git do Cloud Manager. O pipeline de produção no Cloud Manager é configurado para ser acionado por um push para a ramificação estável. O pipeline de produção é, portanto, executado por cada push de qualquer equipe em uma ramificação estável e a implantação de produção é atualizada se todas as portas de qualidade passarem.
 
 ![](assets/team-setup2.png)
 
 Os esforços para o ramo de desenvolvimento são tratados de forma diferente. Embora um push para uma ramificação de desenvolvedor no repositório Git de uma equipe também esteja acionando uma ação github e o código seja enviado automaticamente para a ramificação de desenvolvimento no repositório Git do Cloud Manager, o pipeline de não produção não é acionado automaticamente pelo push de código. É acionado por uma chamada para a api do Cloud Manager.
 A execução do pipeline de produção inclui a verificação do código de todas as equipes por meio das portas de qualidade fornecidas. Depois que o código é implantado no estágio, os testes e as auditorias são executados para garantir que tudo funcione conforme o esperado. Depois que todas as portas forem passadas, as alterações serão implementadas para produção sem interrupção ou tempo de inatividade.
-Para desenvolvimento local, o SDK para Cloud Service é usado. O SDK permite que um autor, publicação e dispatcher locais sejam configurados. Isso permite o desenvolvimento offline e tempos de resposta rápidos. Às vezes, somente o autor é usado para desenvolvimento, mas a configuração rápida do dispatcher e da publicação permite testar tudo localmente antes de enviar para o repositório Git. Os membros de cada equipe geralmente fazem check-out do código no git compartilhado para , bem como em seu próprio código de projeto. Não há necessidade de realizar check-out de outros projetos, pois eles são independentes.
+Para desenvolvimento local, o [SDK para AEM como um Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) é usado. O SDK permite que um autor, publicação e dispatcher locais sejam configurados. Isso permite o desenvolvimento offline e tempos de resposta rápidos. Às vezes, somente o autor é usado para desenvolvimento, mas a configuração rápida do dispatcher e da publicação permite testar tudo localmente antes de enviar para o repositório Git. Os membros de cada equipe geralmente fazem check-out do código no git compartilhado para , bem como em seu próprio código de projeto. Não há necessidade de realizar check-out de outros projetos, pois eles são independentes.
 
 ![](assets/team-setup3.png)
 
