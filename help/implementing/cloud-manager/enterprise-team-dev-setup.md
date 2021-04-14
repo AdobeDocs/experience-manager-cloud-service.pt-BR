@@ -2,9 +2,9 @@
 title: Configuração de desenvolvimento para equipes empresariais - Cloud Services
 description: Siga esta página para saber mais sobre a Configuração de desenvolvimento para equipes empresariais
 translation-type: tm+mt
-source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
+source-git-commit: 8197defd4a73173106e1f013627547a085e51dab
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -82,8 +82,10 @@ Essa configuração do mundo real pode ser usada como um blueprint e depois pers
 
 ### Considerações para uma configuração de vários grupos {#considerations}
 
-O projeto descrito acima para uma configuração de várias equipes permite dimensionar em um número maior de equipes. Com o repositório Git do Cloud Manager e o pipeline de produção, sempre o código de produção completo é executado por todas as portas de qualidade, tratando-o como uma unidade de implantação. Dessa forma, o sistema de produção é mantido *sempre em* sem interrupção ou tempo de inatividade.
-Por outro lado, sem esse sistema em vigor, porque cada equipe pode implantar separadamente, existe o risco de que uma atualização de uma única equipe possa levar a problemas de estabilidade de produção. Além disso, requer coordenação e tempo de inatividade planejado para lançar atualizações. Com um número crescente de equipes, o esforço de coordenação tornar-se-á muito mais complexo e rapidamente incontrolável.
-Se for detectado um problema nas portas de qualidade, a produção não é afetada e o problema pode ser detectado e corrigido sem o pessoal de Adobe necessário para entrar. Sem o Cloud Service e sem sempre testar toda a implantação, implantações parciais podem causar paralisações que exigem uma solicitação de reversão ou até mesmo uma restauração completa de um backup. Os ensaios parciais podem também conduzir a outros problemas que terão de ser resolvidos depois de o fato exigir de novo a coordenação e o apoio do pessoal Adobe.
+>[!NOTE]
+>Para qualquer configuração de várias equipes, é fundamental definir um modelo de governança e um conjunto de padrões que todas as equipes devem seguir. O blueprint acima para uma configuração de várias equipes permite dimensionar em um número maior de equipes e você pode usar esse blueprint como ponto de partida.
 
-Para qualquer configuração de várias equipes, é fundamental definir um modelo de governança e um conjunto de padrões que todas as equipes devem seguir. Você pode usar o blueprint como ponto de partida.
+Com o repositório Git do Cloud Manager e o pipeline de produção, sempre o código de produção completo é executado por todas as portas de qualidade, tratando-o como uma unidade de implantação. Dessa forma, o sistema de produção é mantido *sempre em* sem interrupção ou tempo de inatividade.
+Por outro lado, sem esse sistema em vigor, porque cada equipe pode implantar separadamente, existe o risco de que uma atualização de uma única equipe possa levar a problemas de estabilidade de produção. Além disso, requer coordenação e tempo de inatividade planejado para lançar atualizações. Com um número crescente de equipes, o esforço de coordenação tornar-se-á muito mais complexo e rapidamente incontrolável.
+
+Se for detectado um problema nas portas de qualidade, a produção não é afetada e o problema pode ser detectado e corrigido sem o pessoal de Adobe necessário para entrar. Sem o Cloud Service e sem sempre testar toda a implantação, implantações parciais podem causar paralisações que exigem uma solicitação de reversão ou até mesmo uma restauração completa de um backup. Os ensaios parciais podem também conduzir a outros problemas que terão de ser resolvidos depois de o fato exigir de novo a coordenação e o apoio do pessoal Adobe.
