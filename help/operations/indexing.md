@@ -1,14 +1,14 @@
 ---
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
+exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: fd2009eab27ac14e722f2e9da28fc734834ab892
+source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 2%
 
 ---
-
 
 # Pesquisa e indexação de conteúdo {#indexing}
 
@@ -169,7 +169,7 @@ A nova versão do aplicativo usa a seguinte configuração (alterada):
 
 ### Desfazer uma alteração {#undoing-a-change}
 
-Às vezes, uma alteração em uma definição de índice precisa ser revertida. As razões podem ser que uma mudança foi feita por engano, ou uma mudança já não é necessária. Por exemplo, a definição de índice `damAssetAssetLucene-8-custom-3` foi criada por engano e já está implantada. Por causa disso, você pode querer reverter para a definição de índice anterior `damAssetAssetLucene-8-custom-2`. Para fazer isso, você precisa adicionar um novo índice chamado `damAssetAssetLucene-8-custom-4` que contenha a definição do índice anterior, `damAssetAssetLucene-8-custom-2`.
+Às vezes, uma alteração em uma definição de índice precisa ser revertida. As razões podem ser que uma mudança foi feita por engano, ou uma mudança já não é necessária. Por exemplo, a definição de índice `damAssetLucene-8-custom-3` foi criada por engano e já está implantada. Por causa disso, você pode querer reverter para a definição de índice anterior `damAssetLucene-8-custom-2`. Para fazer isso, você precisa adicionar um novo índice chamado `damAssetLucene-8-custom-4` que contenha a definição do índice anterior, `damAssetLucene-8-custom-2`.
 
 ### Removendo um índice {#removing-an-index}
 
@@ -198,7 +198,7 @@ Se um índice deve ser removido em uma versão posterior do aplicativo, você po
     </acme.product-custom-3>
 ```
 
-Se não for mais necessário ter uma personalização de um índice pronto para uso, você deverá copiar a definição de índice pronta para uso. Por exemplo, se você já implantou `damAssetAssetLucene-8-custom-3`, mas não precisa mais das personalizações e deseja voltar ao índice `damAssetAssetLucene-8` padrão, é necessário adicionar um índice `damAssetAssetLucene-8-custom-4` que contenha a definição de índice `damAssetAssetLucene-8`.
+Se não for mais necessário ter uma personalização de um índice pronto para uso, você deverá copiar a definição de índice pronta para uso. Por exemplo, se você já implantou `damAssetLucene-8-custom-3`, mas não precisa mais das personalizações e deseja voltar ao índice `damAssetLucene-8` padrão, é necessário adicionar um índice `damAssetLucene-8-custom-4` que contenha a definição de índice `damAssetLucene-8`.
 
 ### Disponibilidade de índice e tolerância a falhas {#index-availability-and-fault-tolerance}
 
