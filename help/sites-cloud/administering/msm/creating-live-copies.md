@@ -2,15 +2,15 @@
 title: Criação e sincronização de cópias em tempo real
 description: Saiba como criar e sincronizar Live Copies para reutilizar seu conteúdo no site.
 feature: Gerenciamento de vários sites
-role: Administrador
+role: Administrator
+exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
 workflow-type: tm+mt
 source-wordcount: '4192'
 ht-degree: 1%
 
 ---
-
 
 # Criando e Sincronizando Live Copies {#creating-and-synchronizing-live-copies}
 
@@ -238,7 +238,7 @@ As implantações são processadas como trabalhos assíncronos e podem ser verif
 
 #### Implantar um blueprint no painel de referência {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. No console **Sites**, selecione a página no blueprint e abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (na barra de ferramentas).
+1. No console **Sites**, selecione a página na live copy e abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (na barra de ferramentas).
 1. Selecione a opção **Blueprint** na lista para mostrar os blueprints associados a esta página.
 1. Selecione o blueprint necessário na lista.
 1. Clique ou toque em **Implantação**.
