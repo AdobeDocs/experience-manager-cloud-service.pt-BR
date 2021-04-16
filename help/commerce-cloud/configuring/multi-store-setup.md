@@ -1,6 +1,6 @@
 ---
-title: Configuração de várias lojas
-description: Saiba como mapear várias visualizações de loja da Magento para o AEM. Isso permite que os projetos suportem casos de uso de vários locatários e várias línguas.
+title: Configuração de várias lojas do Commerce
+description: Saiba como mapear várias exibições de loja do Magento para o AEM. Isso permite que os projetos suportem casos de uso de vários locatários e várias línguas.
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
@@ -9,16 +9,16 @@ audience: administrator
 feature: Estrutura de integração de comércio
 kt: 3046
 thumbnail: 28952.jpg
+exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: 577e5cb9d465c794f29e1b7ed11d26a954e1c072
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 91%
+source-wordcount: '382'
+ht-degree: 83%
 
 ---
 
-
-# Configuração de várias lojas {#multi-store}
+# Configuração de várias lojas do Commerce {#multi-store}
 
 Os Componentes principais da CIF do AEM podem ser usados em várias estruturas de site do AEM e a implementação de cliente GraphQL subjacente pode se conectar a diferentes lojas/visualizações de loja da Magento. Assim, os projetos podem implementar configurações complexas de várias lojas/vários sites.
 
@@ -40,11 +40,15 @@ Para conectar um site do AEM e os Componentes principais da CIF do AEM a uma vis
 
 3. Crie uma configuração secundária da configuração do CIF Cloud Service seguindo estas etapas:
 
-   * No AEM, acesse Ferramentas -> Geral -> [Navegador de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * AEM vá para Ferramentas -> Geral -> [Navegador de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Selecione a configuração básica que você criou
    * Criar uma nova configuração usando as etapas descritas no ponto 2 acima
 
    Essa nova configuração será criada como uma configuração secundária da base. Agora você pode acessar Ferramentas -> Geral -> Navegador de configuração e criar as configurações.
+
+   >[!TIP]
+   >
+   > Os catálogos de comércio podem ser abordados usando IDs ou UIDs. Os UIDs foram introduzidos no Magento 2.4.2. Habilite-os somente se o back-end de comércio suportar um esquema GraphQL da versão 2.4.2 ou posterior.
 
 4. Atribua a configuração secundária a um site do AEM
 
