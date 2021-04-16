@@ -1,57 +1,67 @@
 ---
-title: Alterações importantes no AEM Commerce as a Cloud Service
-description: Alterações importantes no AEM Commerce as a Cloud Service em comparação ao Adobe Experience Manager 6.5.
+title: Alterações importantes do complemento Commerce Integration Framework (CIF)
+description: Alterações importantes da Commerce Integration Framework (CIF) em comparação às versões antigas da CIF.
+exl-id: c136763f-56aa-450e-8796-bc84bf6c205d
 translation-type: tm+mt
-source-git-commit: 2934d0d8d3977bb7884bae9654ac26e9fa57b34f
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 94%
+source-wordcount: '453'
+ht-degree: 9%
 
 ---
 
+# Alterações importantes no complemento Commerce Integration Framework (CIF){#notable-changes}
 
-# Alterações importantes no AEM Commerce as a Cloud Service {#notable-changes}
+O Adobe Experience Manager as a Cloud Service oferece muitos novos recursos e possibilidades para gerenciar projetos do AEM. Para saber mais sobre esses recursos, siga o link para [alterações no Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
-O Adobe Experience Manager as a Cloud Service oferece muitos novos recursos e possibilidades para gerenciar projetos do AEM. Este documento destaca as importantes diferenças entre as funcionalidades de comércio da CIF (Commerce Integration Framework) para o Adobe Managed Service, o Experience Manager as a Cloud Service e para serviços no local. Para outras alterações, consulte as [alterações genéricas no Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Este documento destaca as diferenças importantes entre o complemento Commerce Integration Framework (CIF) e as versões antigas da CIF, principalmente conhecidas como CIF Classic (Quickstart) como fonte aberta da CIF.
 
-Estas são as principais diferenças em relação ao Experience Manager 6.5:
-* [Suporte à CIF clássica](#cif-classic)
-* [Implantação de ferramentas de criação da CIF](#cif-tools)
-* [Migração dos serviços no local e do Adobe Managed Service](#moving-cif-cs)
+## Instalação e atualizações
 
-## Suporte à CIF clássica/início rápido no Experience Manager as a Cloud Service {#cif-classic}
+O complemento CIF do AEM é instalado por meio do Cloud Manager. A instalação requer um crédito da CIF, exceto para sandboxes, onde a CIF pode ser instalada sem créditos. Os créditos são recebidos automaticamente por meio do provisionamento do complemento CIF em seu contrato de AEM.
 
-A Commerce Integration Framework clássica, que incluía um importador de produtos para importar e armazenar catálogos de produtos no Experience Manager, já não está disponível no Experience Manager as a Cloud Service. A CIF clássica não é compatível com o Experience Manager as a Cloud Service e os projetos que usam a CIF clássica terão de implementar a versão compatível no seu lugar, como descrito em [CIF no Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/architecture/magento.html#overview)
+O complemento é atualizado automaticamente como parte do AEM regular como atualizações de Cloud Service.
 
-## Implantação da CIF {#deployment}
+**Versões anteriores da CIF**
 
-Veja abaixo os diferentes modelos de implantação da Commerce Integration Framework para as diferentes soluções do AEM:
+* CIF Classic: Sem a necessidade de instalação, a CIF fazia parte do Início rápido. As atualizações da CIF faziam parte de atualizações regulares de AEM ou service pack
+* CIF — código aberto para AEM no local: Instalação via GitHub. As atualizações faziam parte do trabalho manual de atualização/manutenção.
+* Origem aberta da CIF para AEM Adobe Managed Services: Instalação por meio do Gerente de sucesso do cliente. As atualizações faziam parte do trabalho manual de atualização/manutenção.
 
-|  | AEM no local | AEM Managed Services | AEM Cloud Service |
-|-------------     |-----------|-----------|-----------|
-| Como implantar as ferramentas de criação da CIF para back-end da Magento | Consulte o [Conector da CIF](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) compatível com o AEM 6.5 | Consulte o [Conector da CIF](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) compatível com o AEM 6.5 | O AEM as a Cloud Service deve ser provisionado com o complemento CIF. Entre em contato com seu representante de vendas para obter mais informações |
-| Como implantar o projeto [CIF Venia](https://github.com/adobe/aem-cif-guides-venia) | Instalação do pacote do AEM | Implantação feita pelo [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | O projeto foi movido para o [Repositório Git do Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.translate.html) e a implantação foi feita pelo [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/deploying/overview.translate.html) |
+## Configuração do ponto de extremidade
+
+O endpoint é configurado e atualizado por meio da interface do usuário do Cloud Manager ou da CLI.
+
+**Versões anteriores da CIF**
+
+* CIF Classic: Por meio da configuração OSGi no AEM
+* Código aberto da CIF: Por meio do navegador de configuração da CIF
+
+## Implantação do projeto CIF Venia
+
+Projeto disponível em [Repositório Git do Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.translate.html) e implantação feita via [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/deploying/overview.translate.html)
+
+**Versões anteriores da CIF**
+
+* CIF Classic: Via instalação AEM pacote
+* Código aberto da CIF: Via [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+
+## Dados do catálogo de produtos
+
+Os dados do catálogo de produtos são solicitados sob demanda por meio de chamadas em tempo real para um endpoint externo que oferece suporte às APIs GraphQL necessárias. Essas APIs oferecem suporte para o acesso a dados ao vivo ou preparados em qualquer data específica. Não é necessária replicação.
+
+**Versões anteriores da CIF**
+
+* CIF Classic: Os dados de produtos em tempo real e preparados são importados e mantidos no JCR no AEM Author por meio de importação completa ou delta de produtos. Os dados do produto em tempo real são replicados para o AEM Publish.
+
+## Experiências do catálogo de produtos com renderização de AEM
+
+AEM renderiza experiências de catálogo de produtos dinamicamente usando modelos de catálogo AEM que foram atribuídos a produtos e categorias. Não é necessária replicação.
+
+**Versões anteriores da CIF**
+
+* CIF Classic: O AEM Author cria uma página de AEM para cada categoria/produto usando a ferramenta de blueprint do catálogo. Essas páginas são replicadas para o AEM Publish.
 
 >[!NOTE]
 >
->Para obter documentação adicional sobre como usar CIF com AEM Managed Service ou AEM On-premise, consulte [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
-
->[!NOTE]
->
->A Commerce Integration Framework clássica/início rápido pode ser usada na solução local do AEM em casos de uso muito limitados. No entanto, essa solução não é recomendada.
-
-## Migrar para o AEM Commerce as a Cloud Service a partir de serviços no local e do Managed Services {#moving-cif-cs}
-
-Os clientes que migram de uma instalação AEM no local ou do Managed Services para o AEM as a Cloud Service precisam fazer alguns ajustes no projeto do AEM.
-
-O primeiro ajuste necessário, conforme descrito acima, é para o Conector da CIF. O Conector da CIF é substituído pelo complemento CIF implantado pela Adobe. Portanto, não instale o Conector da CIF no AEM as a Cloud Service. Além disso, ele não é compatível com o SDK local da AEM Cloud. A Adobe fornece o complemento CIF também para [desenvolvimento local](develop.md).
-
-O segundo passo é entender a [estrutura do Projeto AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html) e as características do AEM as a Cloud Service. Adapte a configuração do seu projeto ao layout do AEM as a Cloud Service.
-As principais diferenças são:
-
-* O pacote OSGI do cliente GraphQL **não** deve mais ser incluído nos projetos AEM, agora ele é implantado por meio do complemento CIF.
-* As configurações de OSGI para o cliente GraphQL e o Graphql Data Service **não** devem mais ser incluídas nos projetos AEM.
-
->[!TIP]
->
->Confira o projeto [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia) no GitHub. Esse projeto fornece perfis Maven para o AEM as a Cloud Service e implantações locais que consideram as diferentes condições da estrutura.
+>Para obter a documentação adicional sobre como usar a CIF com AEM Managed Service ou AEM no local, consulte [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
