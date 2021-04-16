@@ -1,34 +1,37 @@
 ---
-sub-product: AEM Commerce as a Cloud Service
-user-guide-title: AEM Commerce as a Cloud Service
-breadcrumb-title: Guia do Commerce
-user-guide-description: Aprenda a usar e administrar o Experience Manager Commerce as a Cloud Service.
+sub-product: Conteúdo e comércio AEM como um Cloud Service
+user-guide-title: Conteúdo e comércio AEM como um Cloud Service
+breadcrumb-title: Guia de conteúdo e comércio do AEM
+user-guide-description: Entenda como usar e administrar conteúdo e comércio do Experience Manager como um Cloud Service.
 feature-set: Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 4b4741926381818e44b2293f9bed86782e689c49
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 100%
+source-wordcount: '99'
+ht-degree: 22%
 
 ---
 
 
-# Commerce {#commerce}
+# Conteúdo e comércio AEM {#content-and-commerce}
 
-+ [AEM Commerce as a Cloud Service](/help/commerce-cloud/home.md)
-+ [Introdução](overview.md)
-+ [Alterações importantes](changes.md)
-+ Arquitetura {#architecture}
-   + [Integração da Magento](architecture/magento.md)
-   + [Integração de soluções comerciais de terceiros](architecture/third-party.md)
-+ [Introdução](getting-started.md)
-+ [Desenvolver com o SDK do AEM Cloud Service](develop.md)
-+ Configurar {#configure}
-   + [Uso de vários modelos](configuring/multi-template-usage.md)
-   + [Configuração de várias lojas](configuring/multi-store-setup.md)
-   + [Configurar URLs para SEO](configuring/advanced-url-configuration.md)
-   + [Opções de armazenamento em cache](configuring/caching.md)
-+ Personalizar {#customize}
-   + [Alterar estilo de componentes da CIF](customizing/style-cif-component.md)
-   + [Personalizar componentes da CIF](customizing/customize-cif-components.md)
++ [Conteúdo e comércio AEM](/help/commerce-cloud/home.md)
++ [Alterações importantes no conteúdo AEM e no comércio como Cloud Service](changes.md)
++ [Introdução e visão geral](introduction.md)
++ Integrações {#integrations}
+   + [Comércio Adobe](integrating/magento.md)
+   + [Solução comercial de terceiros](integrating/third-party.md)
++ AEM Loja {#storefront}
+   + [Introdução](getting-started.md)
+   + Administração {#administering}
+      + [Configuração de várias lojas](configuring/multi-store-setup.md)
+      + [Uso de vários modelos](configuring/multi-template-usage.md)
+      + [Configurar URLs para SEO](configuring/advanced-url-configuration.md)
+      + [Opções de armazenamento em cache](configuring/caching.md)
+   + Desenvolvimento {#developing}
+      + [Desenvolvimento com AEM Cloud Service SDK](develop.md)
+      + [Alterar estilo de componentes da CIF](customizing/style-cif-component.md)
+      + [Personalizar componentes da CIF](customizing/customize-cif-components.md)
+      + [Usar seletores de catálogo da CIF](customizing/use-cif-pickers.md)
++ [Migração](migration.md)
 + [Perguntas frequentes](faq.md)
