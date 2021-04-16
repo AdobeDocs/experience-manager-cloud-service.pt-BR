@@ -1,22 +1,22 @@
 ---
 title: Configurações avançadas de URL
-description: Saiba como personalizar os URLs para páginas de produtos e categorias. Isso permite que as implementações otimizem URLs para mecanismos de pesquisa e promovam a descoberta.
+description: Saiba como personalizar os URLs das páginas de produto e categoria. Isso permite que as implementações otimizem URLs para mecanismos de pesquisa e promovam a descoberta.
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: Estrutura de integração de comércio
 kt: 4933
 thumbnail: 34350.jpg
+exl-id: 363cb465-c50a-422f-b149-b3f41c2ebc0f
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 97%
+source-wordcount: '792'
+ht-degree: 95%
 
 ---
-
 
 # Configurações avançadas de URL {#url}
 
@@ -43,7 +43,7 @@ O modelo configura os URLs das páginas de produto com as seguintes propriedades
 * **Localização do identificador de produto**: define o local do identificador que será usado para buscar os dados do produto. O valor padrão é `SELECTOR`, o outro valor possível é `SUFFIX`. Com o URL de exemplo anterior, o identificador `chaz-kangeroo-hoodie` será usado para buscar os dados do produto.
 * **Tipo de identificador de produto**: define o tipo do identificador que será usado ao buscar os dados do produto. O valor padrão é `URL_KEY`, o outro valor possível é `SKU`. Com o URL de exemplo anterior, os dados do produto serão obtidos com um filtro GraphQL da Magento, como `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`.
 
-### Modelo de URL da página de lista de produtos {#product-list}
+### Modelo de URL da página da lista de produtos {#product-list}
 
 O modelo configura os URLs das páginas de categoria ou lista de produtos com as seguintes propriedades:
 
