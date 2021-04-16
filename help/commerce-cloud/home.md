@@ -1,24 +1,24 @@
 ---
-title: AEM Commerce as a Cloud Service
-description: Recursos de autoajuda e links de documentação do AEM Commerce as a Cloud Service
+title: Conteúdo e comércio AEM
+description: Recursos de autoajuda e links de documentação do AEM Content and Commerce
+exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: d1eb326bd704b15616e9e7f09158e77127ac8d28
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 97%
+source-wordcount: '356'
+ht-degree: 82%
 
 ---
 
+# Conteúdo e comércio AEM {#commerce-guide}
 
-# AEM Commerce as a Cloud Service {#commerce-guide}
+Esta página lista os recursos de autoajuda sobre Conteúdo e Comércio AEM.
 
-Esta página lista os recursos de autoajuda do AEM Commerce as a Cloud Service.
+## Artigos-chave sobre conteúdo e comércio {#key-articles}
 
-## Principais artigos do Commerce {#key-articles}
-
-* [Introdução ao AEM Commerce as a Cloud Service](overview.md)
-* [Arquitetura do AEM Commerce as a Cloud Service](architecture/magento.md)
-* [Introdução](getting-started.md)
+* [Introdução de conteúdo e comércio AEM](introduction.md)
+* [Introdução ao conteúdo e comércio AEM](/help/commerce-cloud/getting-started.md)
+* [Desenvolvimento de conteúdo e comércio AEM](/help/commerce-cloud/develop.md)
 
 ## Guias do Experience Manager as a Cloud Service {#aem-guides}
 
