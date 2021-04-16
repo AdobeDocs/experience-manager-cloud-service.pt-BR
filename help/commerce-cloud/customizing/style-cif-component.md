@@ -10,14 +10,14 @@ audience: developer
 feature: Estrutura de integração de comércio
 kt: 3456
 thumbnail: 3456-style-cif.jpg
+exl-id: 75df606f-b22f-4f7e-bd8a-576d215f72bc
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: 1bbe48c772f6e664a6afaff450da7d7987061562
 workflow-type: tm+mt
-source-wordcount: '2566'
-ht-degree: 33%
+source-wordcount: '2567'
+ht-degree: 32%
 
 ---
-
 
 # Alterar estilo dos Componentes principais da CIF do AEM {#style-aem-cif-core-components}
 
@@ -66,7 +66,7 @@ Clonaremos o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e su
 
    ![Loja configurada com o tema Venia](../assets/style-cif-component/venia-store-configured.png)
 
-## Bibliotecas de clientes e módulo ui.frontend {#introduction-to-client-libraries}
+## Módulo de bibliotecas de clientes e ui.frontend {#introduction-to-client-libraries}
 
 O CSS e o JavaScript responsáveis pela renderização de temas/estilos da loja são gerenciados no AEM por uma [biblioteca do cliente](/help/implementing/developing/introduction/clientlibs.md) ou, abreviando, clientlibs. As bibliotecas de clientes fornecem um mecanismo para organizar o CSS e o Javascript no código de um projeto e, em seguida, na página.
 
@@ -82,7 +82,7 @@ O módulo `ui.frontend` também é um módulo Maven e é integrado ao projeto ma
 
 ## Atualizar o estilo do Teaser {#ui-frontend-module}
 
-Em seguida, faça uma pequena alteração no estilo do Teaser para ver como o módulo `ui.frontend` e as bibliotecas de clientes funcionam. Use [o IDE de sua escolha](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Em seguida, faça uma pequena alteração no estilo do Teaser para ver como o módulo `ui.frontend` e as bibliotecas do cliente funcionam. Use [o IDE de sua escolha](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
 1. Acesse e expanda o módulo **ui.frontend** e expanda a hierarquia de pastas para: `ui.frontend/src/main/styles/commerce`:
 
@@ -228,7 +228,7 @@ Em seguida, verifique a inclusão das bibliotecas de clientes na página.
 
    ![Exibir como publicado](../assets/style-cif-component/view-as-published.png)
 
-   A página será exibida sem carregar o javascript criado pelo autor no AEM, como seria exibido no site publicado. Observe que o URL tem o parâmetro de consulta `?wcmmode=disabled` anexado. Ao desenvolver o CSS e o Javascript, é recomendado usar esse parâmetro para simplificar a página sem nenhuma ação de seu autor no AEM.
+   A página será exibida sem carregar o javascript criado pelo autor no AEM, como seria exibido no site publicado. Observe que o url tem o parâmetro de consulta `?wcmmode=disabled` anexado. Ao desenvolver o CSS e o Javascript, é recomendado usar esse parâmetro para simplificar a página sem nenhuma ação de seu autor no AEM.
 
 1. Visualize a fonte da página e você deve ser capaz de identificar se várias bibliotecas de clientes foram incluídas:
 
@@ -287,7 +287,7 @@ Há várias opções para incluir uma biblioteca do lado do cliente. Em seguida,
 
    A vantagem de utilizar modelos e políticas de página para gerenciar a inclusão das bibliotecas de clientes é que você pode alterar a política de acordo com o modelo. Por exemplo, talvez você esteja gerenciando duas marcas diferentes na mesma instância do AEM. Cada marca terá seu próprio estilo ou *tema*, mas as bibliotecas base e o código base serão os mesmos. Outro exemplo: se você quisesse que uma bibliotecas do cliente maior fosse exibida apenas em determinadas páginas, seria possível fazer uma política de página exclusiva para esse modelo.
 
-## Desenvolvimento de webpack local {#local-webpack-development}
+## Desenvolvimento de Webpack Local {#local-webpack-development}
 
 No exercício anterior, foi feita uma atualização em um arquivo Sass no módulo `ui.frontend` e, depois de executar uma compilação Maven, as alterações são implantadas em AEM. Em seguida, analisaremos o aproveitamento de um servidor de desenvolvimento de webpack para desenvolver rapidamente os estilos de front-end.
 
