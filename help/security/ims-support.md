@@ -1,14 +1,14 @@
 ---
 title: Suporte IMS do Adobe Experience Manager as a Cloud Service
 description: Suporte IMS do Adobe Experience Manager as a Cloud Service
+exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 translation-type: tm+mt
-source-git-commit: 70726c373d88f36cdcc9a4a1a944bc8d4c99238c
+source-git-commit: 460cefde9a203b4237aedf01b01e026d37eadfe6
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 100%
+source-wordcount: '1952'
+ht-degree: 95%
 
 ---
-
 
 # Suporte IMS do Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
@@ -125,15 +125,15 @@ Estas são as principais configurações de OSGI que precisam ser modificadas pa
 
 ### Gerenciamento de produtos e acesso do usuário no Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Quando o Administrador do produto fizer logon no Admin Console, verá várias instâncias do Contexto de produto do AEM Managed Services, como mostrado abaixo:
+Quando o Administrador de produto fizer logon no Admin Console, verá várias instâncias do AEM como um Contexto de produto do Cloud Service, como mostrado abaixo. Por exemplo, selecione qualquer um dos produtos na página **Visão geral**:
 
 ![Logon de instâncias](/help/security/assets/ims6.png)
 
-Neste exemplo, a organização **AEM-MS-Onboard** tem 32 instâncias que abrangem topologias e ambientes diferentes, como Preparo ou Produção.
+Você verá uma lista de instâncias existentes:
 
 ![Logon de instâncias 2](/help/security/assets/ims7.png)
 
-Em cada instância do Contexto do produto, haverá Perfis de produto associados. Esses perfis de produto são usados para atribuir acesso a usuários e grupos com o privilégio necessário.
+Em cada instância do Contexto do Produto, haverá instâncias que abrangem os serviços de Autor ou Publicação em todos os ambientes de Produção, Estágio ou Desenvolvimento. Cada instância será associada às funções Perfis de produto ou Cloud Manager . Esses perfis de produto são usados para atribuir acesso a usuários e grupos com os privilégios necessários.
 
 O perfil **Administrator_xxx** será usado para conceder privilégios de Administrador na instância do AEM associada, enquanto o perfil **User_xxx** é usado para adicionar usuários regulares.
 
@@ -241,4 +241,3 @@ Para obter acesso às instâncias do AEM, o usuário precisará ser adicionado a
 Cada instância do autor terá um Perfil de administradores do AEM e usuários do AEM e cada instância de publicação terá um Perfil de usuários do AEM. É possível adicionar outros perfis, conforme necessário.
 
 Para obter acesso de nível administrativo à instância do AEM, adicione o usuário ao Perfil de administradores do AEM para esse Produto específico.
-
