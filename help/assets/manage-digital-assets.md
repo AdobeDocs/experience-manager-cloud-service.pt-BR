@@ -7,9 +7,9 @@ feature: Gerenciamento de ativos, Publicação, Colaboração, Processamento de 
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4505'
 ht-degree: 11%
 
 ---
@@ -47,8 +47,6 @@ Consulte [adicionar ativos digitais ao Experience Manager](add-assets.md).
 
 Se um usuário do DAM carregar um ou mais ativos que já existem no repositório, [!DNL Experience Manager] detectará a duplicação e notificará o usuário. A detecção de duplicatas é desativada por padrão, pois pode ter impacto no desempenho dependendo do tamanho do repositório e do número de ativos carregados. Para ativar o recurso, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Consulte [como fazer configurações OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). A detecção de duplicação é baseada no valor exclusivo `dam:sha1` armazenado em `jcr:content/metadata/dam:sha1`. Isso significa que os ativos duplicados são detectados, mesmo se os nomes de arquivo forem diferentes.
 
-![Detectar configuração OSGi de ativo duplicado](assets/duplicate-detection.png)
-
 Você pode adicionar o arquivo de configuração `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` no código personalizado e o arquivo pode conter o seguinte:
 
 ```json
@@ -58,7 +56,7 @@ Você pode adicionar o arquivo de configuração `/apps/example/config.author/co
 }
 ```
 
-Depois de habilitado, o Experience Manager envia notificações de ativos duplicados para a caixa de entrada. É um resultado agregado para várias duplicatas. Os usuários podem optar por remover os ativos com base nos resultados.
+Depois de habilitado, o Experience Manager envia notificações de ativos duplicados para a Caixa de entrada do Experience Manager. É um resultado agregado para várias duplicatas. Os usuários podem optar por remover os ativos com base nos resultados.
 
 ![Notificação da caixa de entrada para ativos duplicados](assets/duplicate-detect-inbox-notification.png)
 
