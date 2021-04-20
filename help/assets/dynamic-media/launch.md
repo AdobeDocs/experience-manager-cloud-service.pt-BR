@@ -1,9 +1,9 @@
 ---
 title: Integração dos visualizadores do Dynamic Media com o Adobe Analytics e o Experience Platform Launch
 description: Saiba mais sobre a extensão Visualizadores do Dynamic Media para Platform launch e Dynamic Media Viewers 5.13. Ela permite que clientes do Adobe Analytics e do Platform launch usem eventos e dados específicos para os Visualizadores em suas configurações do Platform launch.
-feature: Relatórios dos ativos
-topic: '"Engenheiro de dados,Administrador,Profissional de negócios"'
-role: Administrador,Profissional
+feature: Asset Reports
+topic: "Data Engineer,Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Imagem inteligente
 description: '"Saiba como a geração inteligente de imagens aplica as características de exibição exclusivas de cada usuário para veicular automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento."'
-feature: Gerenciamento de ativos,Representações
-topic: Profissional
+feature: Asset Management,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt

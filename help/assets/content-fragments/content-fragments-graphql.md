@@ -1,7 +1,7 @@
 ---
 title: Entrega de conteúdo sem cabeçalho usando Fragmentos de conteúdo com GraphQL
 description: Saiba como usar AEM Fragmentos de conteúdo com GraphQL para a entrega de conteúdo sem interface.
-feature: Fragmentos de conteúdo
+feature: Content Fragments
 role: Business Practitioner
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 translation-type: tm+mt

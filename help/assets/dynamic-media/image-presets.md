@@ -1,9 +1,9 @@
 ---
 title: Aplicação de predefinições da imagem do Dynamic Media
 description: Saiba como aplicar predefinições de imagens no Dynamic Media.
-feature: Predefinições de imagem, Visualizadores, Representações
-topic: Profissional
-role: Profissional
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

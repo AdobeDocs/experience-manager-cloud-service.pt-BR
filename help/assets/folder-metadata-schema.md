@@ -2,8 +2,8 @@
 title: Esquema de metadados de pasta
 description: Saiba como criar um esquema de metadados para pastas de ativos em [!DNL Experience Manager Assets]
 contentOwner: AG
-feature: Metadados
-role: Profissional de negócios,Administrador
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

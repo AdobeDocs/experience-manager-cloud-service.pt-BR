@@ -2,8 +2,8 @@
 title: Compartilhar ativos, pastas e coleções como um link
 description: Este artigo descreve como compartilhar ativos, pastas e coleções dentro de [!DNL Experience Manager Assets] como um hiperlink.
 contentOwner: AG
-feature: Gerenciamento de ativos, Colaboração, Distribuição de ativos
-role: Profissional de negócios,Administrador
+feature: Asset Management,Collaboration,Asset Distribution
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt

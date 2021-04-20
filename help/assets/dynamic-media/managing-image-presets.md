@@ -1,8 +1,8 @@
 ---
 title: Gerenciar predefinições de imagens
 description: '"Saiba mais sobre predefinições de imagens e como criar, modificar e gerenciar predefinições de imagens."'
-feature: Predefinições de imagem, Visualizadores, Representações
-topic: Profissional
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt

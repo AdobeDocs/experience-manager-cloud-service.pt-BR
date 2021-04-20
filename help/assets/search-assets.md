@@ -3,8 +3,8 @@ title: Pesquisar ativos e imagens digitais em [!DNL Adobe Experience Manager]
 description: Saiba como localizar os ativos necessários em [!DNL Adobe Experience Manager] usando o painel Filtros e como usar os ativos que aparecem na pesquisa.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Pesquisa, Metadados, Distribuição de ativos
-role: Profissional de negócios,Administrador
+feature: Search,Metadata,Asset Distribution
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

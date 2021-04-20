@@ -1,8 +1,8 @@
 ---
 title: Gerenciar predefinições do visualizador
 description: Saiba como criar e gerenciar predefinições do visualizador no Dynamic Media.
-feature: Predefinições do visualizador, visualizadores
-topic: Profissional
+feature: Viewer Presets,Viewers
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt

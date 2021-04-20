@@ -2,8 +2,8 @@
 title: Práticas recomendadas para organizar ativos digitais para usar perfis de imagem ou perfis de vídeo do Dynamic Media
 description: '"Dicas e práticas recomendadas para nomear, organizar e gerenciar arquivos de imagem e de ativos de vídeo da Dynamic Media."'
 contentOwner: Rick Brough
-feature: Gerenciamento de ativos, Perfis de imagem, Perfis de vídeo
-topic: Profissional
+feature: Asset Management,Image Profiles,Video Profiles
+topic: Business Practitioner
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt

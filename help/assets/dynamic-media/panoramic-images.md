@@ -1,9 +1,9 @@
 ---
 title: Imagens panorâmicas
 description: Saiba como trabalhar com imagens panorâmicas no Dynamic Media.
-feature: Imagens panorâmicas
-topic: Profissional
-role: Profissional
+feature: Panoramic Images
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

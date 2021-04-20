@@ -4,9 +4,9 @@ description: Saiba mais sobre acessibilidade no Dynamic Media e no Dynamic Media
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-topic: Profissional
-feature: Acessibilidade
-role: Administrador,Profissional
+topic: Business Practitioner
+feature: Accessibility
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

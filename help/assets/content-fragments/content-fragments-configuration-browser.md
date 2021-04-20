@@ -1,8 +1,8 @@
 ---
 title: Fragmentos de conteúdo - Navegador de configuração
 description: Saiba como ativar determinadas funcionalidades de Fragmento de conteúdo no Navegador de configuração para aproveitar AEM poderosos recursos de entrega sem cabeçalho.
-feature: Fragmentos de conteúdo
-role: Profissional
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

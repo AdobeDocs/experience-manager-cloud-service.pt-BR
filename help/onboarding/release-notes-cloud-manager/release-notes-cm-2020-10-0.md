@@ -1,7 +1,7 @@
 ---
 title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2020.10.0
 description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2020.10.0
-feature: Informações da versão
+feature: Release Information
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

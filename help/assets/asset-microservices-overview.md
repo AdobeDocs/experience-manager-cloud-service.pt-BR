@@ -2,8 +2,8 @@
 title: Processar ativos usando microsserviços de ativos
 description: Processe seus ativos digitais usando microsserviços de processamento de ativos escaláveis e nativos em nuvem.
 contentOwner: AG
-feature: Microserviços do Asset compute, Fluxo de trabalho, Informações da versão, Processamento de ativos
-role: Arquiteto,Administrador
+feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

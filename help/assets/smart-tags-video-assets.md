@@ -1,8 +1,8 @@
 ---
 title: Tag inteligente de seus ativos de vídeo
 description: O Experience Manager adiciona automaticamente tags inteligentes contextuais e descritivas aos vídeos usando [!DNL Adobe Sensei].
-feature: Tags inteligentes,Marcação
-role: Administrador,Profissional
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

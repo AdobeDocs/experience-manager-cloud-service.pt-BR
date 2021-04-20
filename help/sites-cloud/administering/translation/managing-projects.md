@@ -1,8 +1,8 @@
 ---
 title: Gerenciamento de projetos de tradução
 description: Saiba como criar e gerenciar projetos de tradução automática e humana no AEM.
-feature: Cópia de idioma
-role: Administrador
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt

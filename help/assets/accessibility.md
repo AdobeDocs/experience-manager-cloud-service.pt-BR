@@ -2,8 +2,8 @@
 title: Acessibilidade em [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade em [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ajudam usuários portadores de deficiência.
 contentOwner: AG
-feature: Acessibilidade,Gerenciamento de ativos
-role: Praticante da empresa,Arquiteto,Líder
+feature: Accessibility,Asset Management
+role: Business Practitioner,Architect,Leader
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: Publicar ativos, pastas e coleções no Brand Portal
 description: Publicar ativos, pastas e coleções no Brand Portal.
 contentOwner: Vishabh Gupta
-feature: Brand Portal,Distribuição de ativos,Configuração
+feature: Brand Portal,Asset Distribution,Configuration
 role: Business Practitioner
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 translation-type: tm+mt

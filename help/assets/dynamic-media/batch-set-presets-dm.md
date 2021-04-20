@@ -2,8 +2,8 @@
 title: Predefinições de conjunto de lotes
 description: Saiba como automatizar a criação de conjuntos de imagens e conjuntos de rotação usando predefinições de conjuntos de lotes no Dynamic Media.
 contentOwner: Rick Brough
-feature: Predefinições de imagem,Predefinições do visualizador
-topic: Profissional
+feature: Image Presets,Viewer Presets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt

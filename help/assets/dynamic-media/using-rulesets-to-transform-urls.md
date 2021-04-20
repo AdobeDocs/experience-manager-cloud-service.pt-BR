@@ -1,8 +1,8 @@
 ---
 title: Uso de conjuntos de regras para transformar URLs
 description: Saiba como implantar conjuntos de regras no Dynamic Media para transformar URLs. Os conjuntos de regras são conjuntos de instruções escritas em uma linguagem de script (como JavaScript™) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições.
-topic: Profissional
-role: Profissional
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

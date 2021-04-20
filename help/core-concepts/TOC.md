@@ -4,8 +4,8 @@ user-guide-title: Conceitos principais do AEM as a Cloud Service
 breadcrumb-title: Guia de Conceitos principais
 user-guide-description: Este guia fornece uma introdução aos conceitos principais do Experience Manager as a Cloud Service, incluindo a arquitetura do novo serviço.
 feature-set: Experience Manager
-feature: Informações da versão
-role: Arquiteto
+feature: Release Information
+role: Architect
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Vídeos interativos
 description: Saiba como trabalhar com vídeo interativo e vídeo que pode ser comprado no Dynamic Media.
-feature: Vídeos interativos
-topic: Profissional
+feature: Interactive Videos
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt

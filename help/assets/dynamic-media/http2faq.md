@@ -1,8 +1,8 @@
 ---
 title: Perguntas frequentes sobre entrega de conteúdo HTTP2
 description: Saiba mais sobre a entrega de conteúdo HTTP2.
-topic: '"Administrador,Profissional de negócios"'
-role: Administrador,Profissional
+topic: "Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

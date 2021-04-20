@@ -1,8 +1,8 @@
 ---
 title: Fornecer imagens otimizadas para um site responsivo
 description: Saiba como usar o recurso de código responsivo para fornecer imagens otimizadas do Dynamic Media.
-feature: Gerenciamento de ativos
-topic: Profissional
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt

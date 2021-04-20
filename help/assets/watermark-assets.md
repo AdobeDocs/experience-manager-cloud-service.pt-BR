@@ -2,8 +2,8 @@
 title: Marcar os ativos como uma marca d'água
 description: Adicione uma marca d'água aos seus ativos digitais.
 contentOwner: AG
-feature: Gerenciamento de ativos,Publicação
-role: Profissional de negócios,Administrador
+feature: Asset Management,Publishing
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

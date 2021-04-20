@@ -2,7 +2,7 @@
 title: 'Informações de ativos '
 description: Acompanhe as classificações de usuários e as estatísticas de uso de imagens usadas em campanhas de marketing de terceiros e nas soluções criativas de Adobe sites.
 contentOwner: AG
-feature: Insights de ativos,Relatórios de ativos
+feature: Asset Insights,Asset Reports
 role: Business Practitioner
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt

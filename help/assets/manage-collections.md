@@ -3,8 +3,8 @@ title: Gerenciar coleções de ativos digitais
 description: Entenda o conceito de coleção no Adobe Experience Manager Assets. Saiba como coletar, gerenciar, editar e coleções com outros usuários.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Coleções,Gerenciamento de ativos
-role: Profissional
+feature: Collections,Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

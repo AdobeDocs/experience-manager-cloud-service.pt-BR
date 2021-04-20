@@ -2,8 +2,8 @@
 title: Fazer check-in e check-out de arquivos em [!DNL Assets]
 description: Saiba como fazer check-out de ativos para edição e check-in deles novamente depois que as alterações forem concluídas.
 contentOwner: AG
-feature: Gerenciamento de ativos
-role: Profissional
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ title: Práticas recomendadas para integrar com [!DNL Adobe Creative Cloud]
 description: As práticas recomendadas integram uma implantação do Experience Manager com o Adobe Creative Cloud para simplificar os fluxos de trabalho de transferência de ativos e obter o máximo de eficiência.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Colaboração, Adobe Asset Link, Aplicativo de desktop
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,Business Practitioner,Administrator
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 translation-type: tm+mt

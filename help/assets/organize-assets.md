@@ -2,8 +2,8 @@
 title: Organizar ativos digitais
 description: Organize seus ativos digitais usando vários métodos fornecidos no Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Gerenciamento de ativos, Marcação, Distribuição de ativos
-role: Profissional
+feature: Asset Management,Tagging,Asset Distribution
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

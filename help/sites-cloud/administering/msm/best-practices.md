@@ -1,8 +1,8 @@
 ---
 title: Práticas recomendadas do MSM
 description: Conheça as práticas recomendadas compiladas pelas equipes de engenharia e consultoria de Adobe para ajudar a ativar e executar o AEM Multi Site Manager.
-feature: Gerenciamento de vários sites
-role: Administrador
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Conjuntos de mídia mista
 description: Saiba como trabalhar com conjuntos de mídia mista no Dynamic Media.
-feature: Conjuntos de mídia mista
-topic: Profissional
+feature: Mixed Media Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt

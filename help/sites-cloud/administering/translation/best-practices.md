@@ -1,8 +1,8 @@
 ---
 title: Práticas recomendadas de tradução
 description: Saiba mais sobre as práticas recomendadas compiladas pelas equipes de engenharia de Adobe e consultoria para ajudá-lo a trabalhar com projetos de tradução.
-feature: Cópia de idioma
-role: Administrador
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

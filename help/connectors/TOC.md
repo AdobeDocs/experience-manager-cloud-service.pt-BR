@@ -4,8 +4,8 @@ user-guide-title: Conectores do AEM as a Cloud Service
 breadcrumb-title: Guia de conectores
 user-guide-description: Saiba como integrar conectores ao Experience Manager as a Cloud Service.
 feature-set: Experience Manager
-feature: Ferramentas do desenvolvedor
-role: Desenvolvedor
+feature: Developer Tools
+role: Developer
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

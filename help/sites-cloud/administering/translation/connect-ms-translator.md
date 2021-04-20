@@ -1,8 +1,8 @@
 ---
 title: Conexão com o Microsoft Translator
 description: Saiba como se conectar AEM ao Microsoft Translator pronto para uso para automatizar seu fluxo de trabalho de tradução.
-feature: Cópia de idioma
-role: Administrador
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

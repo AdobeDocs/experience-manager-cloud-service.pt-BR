@@ -1,8 +1,8 @@
 ---
 title: Banners em carrossel
 description: Saiba como trabalhar com banners em carrossel no Dynamic Media.
-feature: Banners em carrossel
-topic: Profissional
+feature: Carousel Banners
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt

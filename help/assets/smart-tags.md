@@ -2,8 +2,8 @@
 title: Marcar ativos automaticamente com tags geradas por IA
 description: Adicione tags a ativos usando serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando o serviço  [!DNL Adobe Sensei] .
 contentOwner: AG
-feature: Tags inteligentes,Marcação
-role: Administrador,Profissional
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

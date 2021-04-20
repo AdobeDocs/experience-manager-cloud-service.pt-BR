@@ -2,8 +2,8 @@
 title: Criar e gerenciar ativos digitais em vários idiomas
 description: Saiba como automatizar fluxos de trabalho para tradução de ativos, incluindo binários, metadados e tags em vários idiomas.
 contentOwner: AG
-feature: Gerenciamento de ativos,Tradução
-role: Administrador,Profissional
+feature: Asset Management,Translation
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

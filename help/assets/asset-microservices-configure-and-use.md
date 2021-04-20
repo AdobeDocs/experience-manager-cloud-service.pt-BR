@@ -2,8 +2,8 @@
 title: Configurar e usar microsserviços de ativos
 description: Configure e use os microsserviços de ativos nativos em nuvem para processar ativos em escala.
 contentOwner: AG
-feature: Microserviços do Asset compute, Fluxo de trabalho, Processamento de ativos
-role: Arquiteto,Administrador
+feature: Asset Compute Microservices,Workflow,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

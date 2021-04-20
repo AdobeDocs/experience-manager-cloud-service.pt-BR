@@ -1,8 +1,8 @@
 ---
 title: Entrega de ativos de Mídia dinâmica
 description: Saiba como fornecer ativos do Dynamic Media.
-feature: Gerenciamento de ativos
-topic: Profissional
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt

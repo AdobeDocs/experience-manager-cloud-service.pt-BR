@@ -1,9 +1,9 @@
 ---
 title: Visualizar ativos
 description: Saiba como visualizar ativos no Dynamic Media.
-feature: Gerenciamento de ativos
-topic: Profissional
-role: Profissional
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

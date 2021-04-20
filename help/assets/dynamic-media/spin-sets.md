@@ -1,8 +1,8 @@
 ---
 title: Conjuntos de rotação
 description: Saiba como trabalhar com conjuntos de rotação no Dynamic Media.
-feature: Conjuntos de rotação
-topic: Profissional
+feature: Spin Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt

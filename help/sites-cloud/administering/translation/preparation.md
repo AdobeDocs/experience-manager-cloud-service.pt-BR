@@ -1,8 +1,8 @@
 ---
 title: Preparação de conteúdo para tradução
 description: Saiba como preparar conteúdo para tradução.
-feature: Cópia de idioma
-role: Administrador
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

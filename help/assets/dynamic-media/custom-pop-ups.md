@@ -1,9 +1,9 @@
 ---
 title: Usar visualizações rápidas para criar pop-ups personalizados
 description: '"Saiba mais sobre como a visualização rápida padrão é usada em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado nas janelas pop-up."'
-topic: '"Desenvolvedor,Administrador,Profissional de negócios"'
-feature: Imagens interativas, Vídeos interativos, Banners em carrossel
-role: Administrador,Profissional
+topic: "Developer,Administrator,Business Practitioner"
+feature: Interactive Images,Interactive Videos,Carousel Banners
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

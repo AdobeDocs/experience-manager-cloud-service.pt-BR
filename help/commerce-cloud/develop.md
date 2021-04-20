@@ -2,7 +2,7 @@
 title: Desenvolver o AEM Commerce para o AEM as a Cloud Service
 description: Saiba como gerar um projeto de AEM habilitado para comércio usando o arquétipo de projeto AEM. Saiba como criar e implantar o projeto em um ambiente de desenvolvimento local usando o AEM como um SDK do Cloud Service.
 topics: Commerce, Development
-feature: Estrutura de integração de comércio
+feature: Commerce Integration Framework
 version: cloud-service
 doc-type: tutorial
 kt: 5826
