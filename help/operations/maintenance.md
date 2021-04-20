@@ -3,7 +3,7 @@ title: Tarefas de manutenção no AEM como Cloud Service
 description: Tarefas de manutenção no AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 0c7f413be7b7f2222c5487426b74f2a954d0b21f
+source-git-commit: 90b35554b1238b51ca181c720c86f4062c6d9592
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 2%
@@ -81,15 +81,14 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Definição de Nó JCR</td>
     <td>Veja o local 3 abaixo</td>
     <td>Ver exemplo de código 3 abaixo</td>
-     <td>
-    <ul>
-    <li><strong>windowSchedule</strong>  = diariamente (este valor não deve ser alterado)</li>
-    <li><strong>windowStartTime</strong>  = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem começar a ser executadas.</li>
-    <li><strong>windowEndTime</strong>  = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem parar de ser executadas se ainda não tiverem sido concluídas.</li>
-    <li><strong>windowScheduleWeekdays = Matriz de 2 valores de 1 a 7. por exemplo [5,5].</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa seria interrompida. A hora exata do início e do fim é regida por windowStartTime e windowEndTime, respectivamente.</li>
-    <li><strong>windowFirstLastStartDay - 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor agendaria efetivamente trabalhos todos os dias, conforme determinado por windowScheduleWeekdays todos os meses.</li>
-    </ul> </td> 
-  </tr>
+    <td>
+    <strong>windowSchedule</strong>  = diariamente (este valor não deve ser alterado) 
+    <strong>windowStartTime</strong>  = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem começar a ser executadas.
+    <strong>windowEndTime</strong>  = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem parar de ser executadas se ainda não tiverem sido concluídas.
+    <strong>windowScheduleWeekdays = Matriz de 2 valores de 1 a 7. por exemplo [5,5].</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa seria interrompida. A hora exata do início e do fim é regida por windowStartTime e windowEndTime, respectivamente.
+    <strong>windowFirstLastStartDay - 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor agendaria efetivamente trabalhos todos os dias, conforme determinado por windowScheduleWeekdays todos os meses.
+    </td> 
+    </tr>
 </table>
 
 Localizações:
