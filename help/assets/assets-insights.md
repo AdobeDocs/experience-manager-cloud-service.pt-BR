@@ -1,17 +1,17 @@
 ---
 title: 'Informações de ativos '
-description: Saiba como o recurso Asset Insights permite que você acompanhe as classificações do usuário e as estatísticas de uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas do Adobe.
+description: Acompanhe as classificações de usuários e as estatísticas de uso de imagens usadas em campanhas de marketing de terceiros e nas soluções criativas de Adobe sites.
 contentOwner: AG
 feature: Insights de ativos,Relatórios de ativos
-role: Profissional
+role: Business Practitioner
+exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 9%
+source-wordcount: '795'
+ht-degree: 8%
 
 ---
-
 
 # Informações de ativos {#asset-insights}
 
