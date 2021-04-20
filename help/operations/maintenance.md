@@ -3,7 +3,7 @@ title: Tarefas de manutenção no AEM como Cloud Service
 description: Tarefas de manutenção no AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
+source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 2%
@@ -57,11 +57,10 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Veja o local 1 abaixo</td>
     <td>Consulte a amostra de código 1 abaixo</td>
    <td>
-    <ul>
-    <li><strong>windowSchedule</strong>  = diariamente (este valor não deve ser alterado)</li>
-    <li><strong>windowStartTime</strong>  = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem começar a ser executadas.</li>
-    <li><strong>windowEndTime</strong>  = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem parar de ser executadas se ainda não tiverem sido concluídas.</li>
-    </ul> </td> 
+    <strong>windowSchedule</strong>  = diariamente (este valor não deve ser alterado) 
+    <strong>windowStartTime</strong>  = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem começar a ser executadas.
+    <strong>windowEndTime</strong>  = HH:MM usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem parar de ser executadas se ainda não tiverem sido concluídas.
+    </td> 
   </tr>
   <tr>
     <td>Semanalmente</td>
