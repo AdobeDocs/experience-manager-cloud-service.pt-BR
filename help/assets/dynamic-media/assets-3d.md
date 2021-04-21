@@ -9,10 +9,10 @@ feature: Ativos 3D
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 58d09d12ce2e8415eb50c288eeab3167a92fae57
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 4%
+source-wordcount: '2251'
+ht-degree: 5%
 
 ---
 
@@ -102,7 +102,7 @@ Além disso, os recursos do computador cliente, como uma estação de trabalho, 
 
 Consulte também [Visualização de ativos usando a interface de software](/help/assets/dynamic-media/previewing-assets.md).
 
-**Para visualizar e interagir com um ativo 3D na página de detalhes do ativo**
+**Para visualizar e interagir com um ativo 3D na página de detalhes do ativo:**
 
 1. Certifique-se de ter carregado ativos 3D no Experience Manager.
 
@@ -114,20 +114,14 @@ Consulte também [Visualização de ativos usando a interface de software](/help
 1. Para abrir o ativo na página Detalhes, toque no cartão do ativo 3D.
 1. Na página Detalhes do ativo 3D, siga um destes procedimentos:
 
-   * **Rode sua câmera**  - Órbita sua exibição ao redor da cena e dos objetos 3D.
-      * _Rato_: Clique com o botão esquerdo e arraste.
-      * _Tela_ sensível ao toque: Pressione com um único dedo e arraste.
-   * **Deslocar sua câmera**  - Desloque sua exibição para a esquerda, para a direita, para cima ou para baixo.
-      * _Rato_: Clique com o botão direito + arraste.
-      * _Tela_ sensível ao toque: Pressione com dois dedos e arraste.
-   * **Zoom da câmera**  - Zoom da câmera para mover para dentro e para fora de áreas da cena 3D.
-      * _Rato_: Roda de rolagem.
-      * _Tela_ sensível ao toque: Um beliscão de dois dedos.
-   * **Recenter sua câmera**  - Insira novamente sua câmera a um ponto em um objeto na cena 3D.
-      * _Rato_: Clique duas vezes.
-      * _Tela_ sensível ao toque: Toque duas vezes.
-   * **Redefinir**  - Próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de destino da exibição para o centro do ativo 3D. A redefinição também aproxima ou afasta a câmera para mostrar o ativo inteiro e com um tamanho de visualização razoável.
-   * **Modo de tela cheia**  - Para entrar no modo de tela cheia, no canto inferior direito da página, toque no ícone Tela cheia.
+   | Exibir | Descrição | Ação do mouse | Ação da tela de toque |
+   | --- | --- | --- | --- |
+   | **Rode a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo e arraste. | Pressione com um único dedo e arraste. |
+   | **Deslocar a câmera** | Deslocar a vista para a esquerda, para a direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos e arraste. |
+   | **Zoom da câmera** | Mova para dentro e para fora de áreas na cena 3D. | Roda de rolagem. | Um beliscão de dois dedos. |
+   | **Recenter a câmera** | Insira novamente sua câmera em um ponto em um objeto na cena 3D. | Duplo clique. | Toque duas vezes. |
+   | **Redefinir** | Próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de destino da exibição para o centro do ativo 3D. A redefinição também aproxima ou afasta a câmera para mostrar o ativo inteiro e com um tamanho de visualização razoável. |  |  |
+   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, toque no ícone Tela cheia. |  |  |
 
 1. No canto superior direito da página, toque em **[!UICONTROL Fechar]** para voltar à página Assets.
 
@@ -141,7 +135,7 @@ Quando uma página da Web está no modo **[!UICONTROL Edit]**, nenhuma interaç�
 
 Consulte também [Visualização de ativos usando a interface de software](/help/assets/dynamic-media/previewing-assets.md).
 
-**Para visualizar e interagir com um ativo 3D dentro de um componente de mídia 3D**
+**Para visualizar e interagir com um ativo 3D dentro de um componente de mídia 3D:**
 
 1. Embora uma página da Web esteja no modo **[!UICONTROL Edit]**, siga um destes procedimentos:
 
@@ -153,20 +147,14 @@ componente Mídia 3Dum ativo 3D totalmente interativo, como exibido no modo  ***
 
 1. Enquanto estiver no modo **[!UICONTROL Preview]** , siga um destes procedimentos:
 
-   * **Rode sua câmera**  - Órbita sua exibição ao redor da cena e dos objetos 3D.
-      * _Rato_: Clique com o botão esquerdo e arraste.
-      * _Tela_ sensível ao toque: Pressione com um único dedo e arraste.
-   * **Deslocar sua câmera**  - Desloque sua exibição para a esquerda, para a direita, para cima ou para baixo.
-      * _Rato_: Clique com o botão direito + arraste.
-      * _Tela_ sensível ao toque: Pressione com dois dedos e arraste.
-   * **Zoom da câmera**  - Zoom da câmera para mover para dentro e para fora de áreas da cena 3D.
-      * _Rato_: Roda de rolagem.
-      * _Tela_ sensível ao toque: Um beliscão de dois dedos.
-   * **Recenter sua câmera**  - Insira novamente sua câmera a um ponto em um objeto na cena 3D.
-      * _Rato_: Clique duas vezes.
-      * _Tela_ sensível ao toque: Toque duas vezes.
-   * **Redefinir**  - Próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de destino da exibição para o centro do ativo 3D. A redefinição também aproxima ou afasta a câmera para mostrar o ativo inteiro e com um tamanho de visualização razoável.
-   * **Modo de tela cheia**  - Para entrar no modo de tela cheia, no canto inferior direito da página, toque no ícone Tela cheia.
+   | Exibir | Descrição | Ação do mouse | Ação da tela de toque |
+   | --- | --- | --- | --- |
+   | **Rode a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo e arraste. | Pressione com um único dedo e arraste. |
+   | **Deslocar a câmera** | Deslocar a vista para a esquerda, para a direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos e arraste. |
+   | **Zoom da câmera** | Mova para dentro e para fora de áreas na cena 3D. | Roda de rolagem. | Um beliscão de dois dedos. |
+   | **Recenter a câmera** | Insira novamente sua câmera em um ponto em um objeto na cena 3D. | Duplo clique. | Toque duas vezes. |
+   | **Redefinir** | Próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de destino da exibição para o centro do ativo 3D. A redefinição também aproxima ou afasta a câmera para mostrar o ativo inteiro e com um tamanho de visualização razoável. |  |  |
+   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, toque no ícone Tela cheia. |  |  |
 
 ## Sobre como trabalhar com o componente de mídia 3D {#working-with-three-d-media-component}
 
@@ -176,7 +164,6 @@ O Dynamic Media inclui um componente de mídia 3D do Dynamic Media que pode ser 
 * [Adicionar o componente de mídia 3D a uma página da Web](#adding-the-three-d-media-component-to-a-web-page)
    * [Opcional - Configuração do componente de mídia 3D](#configuring-the-three-d-component)
 * [Atribuição de um ativo 3D ao componente de mídia 3D](#assigning-a-three-d-asset-to-the-component)
-
 
 ## Adicionar o componente de mídia 3D ao modelo de página {#adding-three-d-media-component-to-page-template}
 
@@ -261,7 +248,7 @@ Consulte também [Publicação de ativos do Dynamic Media](/help/assets/dynamic-
 
 Consulte também [Publicar páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
 
-**Publicar ativos 3D estáticos do Dynamic Media**
+**Para publicar ativos 3D estáticos do Dynamic Media:**
 
 1. Abra um ativo 3D (formato de arquivo GLB, OBJ ou STL) para exibi-lo na página Detalhes.
 1. Na barra de ferramentas, toque em **[!UICONTROL Publicação rápida]**.
