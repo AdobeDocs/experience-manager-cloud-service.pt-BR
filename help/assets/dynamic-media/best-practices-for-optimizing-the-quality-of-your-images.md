@@ -2,17 +2,16 @@
 title: Práticas recomendadas para otimização da qualidade de imagens
 description: Conheça as práticas recomendadas que você pode usar no Dynamic Media para otimizar a qualidade dos ativos de imagem.
 contentOwner: Rick Brough
-feature: Asset Management
-topic: Business Practitioner
+feature: Gerenciamento de ativos
 role: Business Practitioner
+exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1454'
 ht-degree: 5%
 
 ---
-
 
 # Práticas recomendadas para otimização da qualidade de imagens {#best-practices-for-optimizing-the-quality-of-your-images}
 
@@ -125,4 +124,3 @@ Se os resultados de nitidez ainda não forem satisfatórios, aumente o raio em i
 * Tente e teste diferentes parâmetros em tempo real, diretamente em um URL.
 * Como prática recomendada, lembre-se de que é possível agrupar comandos do Dynamic Media Image Serving em uma predefinição de imagem. Uma predefinição de imagem é basicamente macros de comando de URL com nomes predefinidos personalizados, como `$thumb_low$` e `&product_high$`. O nome predefinido personalizado em um caminho de URL chama essas predefinições. Essa funcionalidade ajuda você a gerenciar comandos e configurações de qualidade para diferentes padrões de uso de imagens no seu site e reduz o tamanho geral dos URLs.
 * O Experience Manager também oferece formas mais avançadas de ajustar a qualidade da imagem, como aplicar imagens de nitidez na assimilação. Para ajustar e otimizar os resultados de renderização, o [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) pode ajudá-lo com insight personalizado e práticas recomendadas.
-
