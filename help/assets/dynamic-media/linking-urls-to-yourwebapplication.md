@@ -1,16 +1,15 @@
 ---
 title: Vincular URLs ao aplicativo da Web.
 description: Saiba como vincular URLs ao aplicativo da Web no Dynamic Media.
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 11%
+source-wordcount: '1266'
+ht-degree: 10%
 
 ---
-
 
 # Vincular URLs ao aplicativo da Web.{#linking-urls-to-your-web-application}
 
@@ -26,7 +25,7 @@ Para colocar essas cadeias de caracteres de URL em suas páginas da Web e aplica
 
 Consulte também [Incorporação do visualizador de vídeo ou imagem em uma página da Web](embed-code.md).
 
-Consulte também [Vincular URLs do YouTube ao seu Aplicativo Web](video.md).
+Consulte também [Vincular URLs do YouTube à sua aplicação web](video.md).
 
 Consulte também [Fornecer imagens otimizadas para um site responsivo](responsive-site.md).
 
