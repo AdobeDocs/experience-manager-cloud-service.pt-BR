@@ -1,14 +1,13 @@
 ---
 title: Banners em carrossel
 description: Saiba como trabalhar com banners em carrossel no Dynamic Media.
-feature: Carousel Banners
-topic: Business Practitioner
+feature: Banners em carrossel
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '4565'
+source-wordcount: '4563'
 ht-degree: 3%
 
 ---
@@ -227,7 +226,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
    >    * Animação. Por padrão, cada transição de slide está esmaecida. Você pode alterá-lo para uma transição de slide.
    >    * Estilo dos botões. Os usuários podem girar pelos banners tocando em cada ponto ou número. Você pode alterar o local em que os botões de indicador definidos são exibidos (e se são numéricos ou de estilo pontilhado) e o tamanho deles.
    >    * Altere o estilo de realce de um mapa de imagem ou o ícone usado para pontos de acesso.
-   >    * Antes de editar uma predefinição do visualizador, escolha o estilo no qual deseja basear a predefinição. Se você não escolher um estilo, ao começar a editar a predefinição do visualizador, perderá todas as suas alterações se mudar para uma predefinição diferente.
+   >    * Antes de editar uma predefinição do visualizador, escolha o estilo no qual deseja basear a predefinição. Se você não escolher um estilo, ao começar a editar a predefinição do visualizador, perderá todas as suas alterações se alterar para uma predefinição diferente.
 
 
    Você também pode visualizar como será o banner do carrossel. Consulte [(Opcional) Visualização de banners do carrossel](#optional-previewing-carousel-banners).
