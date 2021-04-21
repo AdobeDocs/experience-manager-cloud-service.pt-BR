@@ -1,17 +1,16 @@
 ---
 title: Aplicação de predefinições da imagem do Dynamic Media
 description: Saiba como aplicar predefinições de imagens no Dynamic Media.
-feature: Image Presets,Viewers,Renditions
-topic: Business Practitioner
+feature: Predefinições de imagem, Visualizadores, Representações
 role: Business Practitioner
+exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 8%
+source-wordcount: '309'
+ht-degree: 7%
 
 ---
-
 
 # Aplicação de predefinições da imagem do Dynamic Media {#applying-image-presets}
 
@@ -51,4 +50,3 @@ Você pode aplicar uma predefinição de imagem a uma imagem sempre que visualiz
    >Se o ativo *e* a predefinição de imagem ainda não tiver sido publicada, o botão **[!UICONTROL URL]** (ou botões URL e RESS, se aplicável) não estará disponível.
    >
    >Observe também que as predefinições de imagens são publicadas automaticamente em um servidor Dynamic Media S7.
-
