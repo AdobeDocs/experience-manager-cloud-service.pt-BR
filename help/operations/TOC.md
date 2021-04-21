@@ -3,13 +3,12 @@ sub-product: Operações e manutenção do AEM as a Cloud Service
 user-guide-title: Operações e manutenção do AEM as a Cloud Service
 breadcrumb-title: Guia de operações
 user-guide-description: Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção.
-feature-set: Experience Manager Sites
-feature: Configuring
+feature: Configuração
 role: Administrator
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '64'
+source-wordcount: '63'
 ht-degree: 100%
 
 ---
