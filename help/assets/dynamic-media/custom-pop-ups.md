@@ -1,17 +1,16 @@
 ---
 title: Usar visualizações rápidas para criar pop-ups personalizados
 description: '"Saiba mais sobre como a visualização rápida padrão é usada em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado nas janelas pop-up."'
-topic: "Developer,Administrator,Business Practitioner"
-feature: Interactive Images,Interactive Videos,Carousel Banners
+feature: Imagens interativas, Vídeos interativos, Banners em carrossel
 role: Administrator,Business Practitioner
+exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1034'
 ht-degree: 1%
 
 ---
-
 
 # Usando visualizações rápidas para criar janelas pop-up personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
@@ -264,4 +263,3 @@ Exemplo: este exemplo usa o visualizador de imagens interativas.
    `s7interactiveimageviewer.init()`
 
    Depois de incorporar o visualizador à sua página de host, verifique se a instância do visualizador foi criada. Além disso, verifique se os manipuladores são carregados antes que o visualizador seja chamado usando `init()`.
-
