@@ -1,16 +1,15 @@
 ---
 title: Trabalho com seletores
 description: Saiba mais sobre os métodos que você pode usar para selecionar ativos para imagens interativas, vídeos interativos e banners de carrossel no Dynamic Media.
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 15%
+source-wordcount: '751'
+ht-degree: 14%
 
 ---
-
 
 # Trabalhar com seletores no Dynamic Media {#working-with-selectors}
 
