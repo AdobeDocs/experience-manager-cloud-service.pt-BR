@@ -1,14 +1,13 @@
 ---
 title: Vídeos interativos
 description: Saiba como trabalhar com vídeo interativo e vídeo que pode ser comprado no Dynamic Media.
-feature: Interactive Videos
-topic: Business Practitioner
+feature: Vídeos interativos
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '6066'
+source-wordcount: '6064'
 ht-degree: 4%
 
 ---
@@ -55,7 +54,7 @@ Assista a uma apresentação de 7 minutos e 30 segundos sobre [como os vídeos i
 
 ### Webinar de sucesso do cliente do Adobe {#adobe-customer-success-webinar}
 
-O webinário [Usar vídeo interativo, compartilhamento de link e compartilhamento do YouTube no Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) ensina como usar o vídeo interativo e outros recursos para unir eventos orientados por conversão ao conteúdo de marketing de vídeo.
+O webinário [Usar vídeo interativo, compartilhamento de link e compartilhamento de YouTube no Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) ensina como usar o vídeo interativo e outros recursos para unir eventos orientados por conversão ao conteúdo de marketing de vídeo.
 
 ## Início rápido: Vídeos interativos {#quick-start-interactive-videos}
 
