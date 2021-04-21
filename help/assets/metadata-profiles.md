@@ -2,16 +2,16 @@
 title: Perfis de metadados
 description: Saiba mais sobre perfis de metadados para ativos. Saiba como criar um perfil de metadados e aplicá-lo aos ativos de pastas.
 contentOwner: AG
-feature: Metadata
+feature: Metadados
 role: Business Practitioner,Administrator
+exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 7ad68c071d9a4089ec8612a3c55067dc0b072fc8
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1236'
 ht-degree: 20%
 
 ---
-
 
 # Perfis de metadados {#metadata-profiles}
 
@@ -63,13 +63,11 @@ Edite as seguintes propriedades para o componente **[!UICONTROL Description]**:
 
 ## Aplicar um perfil de metadados a pastas {#applying-a-metadata-profile-to-folders}
 
-Ao atribuir um perfil de metadados a uma pasta, qualquer subpasta herda automaticamente o perfil da pasta pai. Isso significa que você pode atribuir somente um perfil de metadados a uma pasta. Dessa forma, considere cuidadosamente a estrutura de pastas de onde você faz upload, armazena, usa e arquiva ativos.
+Ao atribuir um perfil de metadados a uma pasta, qualquer subpasta herda automaticamente o perfil da pasta pai. A herança para quando um perfil diferente é aplicado a uma subpasta. Você pode atribuir somente um perfil de metadados a uma pasta. Portanto, considere cuidadosamente a estrutura de pastas onde você carrega, armazena, usa e arquiva ativos.
 
-Se você atribuiu um perfil de metadados diferente a uma pasta, o novo perfil substituirá o perfil anterior. Os ativos de pasta existentes anteriormente permanecem inalterados. O novo perfil é aplicado aos ativos que são adicionados à pasta posteriormente.
+Se você atribuiu um perfil de metadados diferente a uma pasta, o novo perfil substituirá o perfil anterior. Os ativos de pasta existentes anteriormente permanecem inalterados. O novo perfil é aplicado aos ativos que são adicionados à pasta após a alteração. Você pode aplicar perfis de metadados a pastas específicas ou globalmente a todos os ativos.
 
 As pastas que têm um perfil atribuído a elas são indicadas na interface do usuário pelo nome do perfil que aparece no nome do cartão.
-
-Você pode aplicar perfis de metadados a pastas específicas ou globalmente a todos os ativos.
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de metadados existente que você alterou posteriormente. <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
