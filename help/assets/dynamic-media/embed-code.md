@@ -1,15 +1,14 @@
 ---
 title: Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web
 description: Saiba como incorporar vídeos ou ativos de imagem do Dynamic Media em uma página da Web.
-feature: Asset Management
-topic: Business Practitioner
+feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 22%
+source-wordcount: '374'
+ht-degree: 21%
 
 ---
 
