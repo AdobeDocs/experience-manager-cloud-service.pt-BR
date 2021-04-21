@@ -1,15 +1,14 @@
 ---
 title: Imagens interativas
 description: Saiba como trabalhar com Imagens interativas no Dynamic Media.
-feature: Interactive Images
-topic: Business Practitioner
+feature: Imagens interativas
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '4249'
-ht-degree: 2%
+source-wordcount: '4247'
+ht-degree: 1%
 
 ---
 
