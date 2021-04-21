@@ -1,14 +1,13 @@
 ---
 title: Conjuntos de mídia mista
 description: Saiba como trabalhar com conjuntos de mídia mista no Dynamic Media.
-feature: Mixed Media Sets
-topic: Business Practitioner
+feature: Conjuntos de mídia mista
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1467'
 ht-degree: 25%
 
 ---
@@ -31,7 +30,7 @@ Para ativar e executar rapidamente com Conjuntos de mídias mistas, siga estas e
 
 1. [Faça upload dos ativos](#uploading-assets).
 
-   Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Se necessário, crie seus [Conjuntos de imagens](/help/assets/dynamic-media/image-sets.md) e [Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md). Como os usuários podem ampliar imagens no Visualizador de conjunto de mídias mistas, verifique se você considera o zoom ao escolher imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão.
+   Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Se necessário, crie seus [Conjuntos de imagens](/help/assets/dynamic-media/image-sets.md) e [Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md). Como os usuários podem ampliar as imagens no Visualizador de conjunto de mídias mistas, verifique se você considera o zoom ao escolher imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão.
 
 1. [Criar conjuntos de mídia mista](#creating-mixed-media-sets).
 
