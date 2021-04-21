@@ -1,14 +1,13 @@
 ---
 title: Conjuntos de imagem
 description: Saiba como trabalhar com conjuntos de imagens no Dynamic Media.
-feature: Image Sets
-topic: Business Practitioner
+feature: Conjuntos de imagem
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2049'
 ht-degree: 9%
 
 ---
@@ -19,7 +18,7 @@ Os Conjuntos de imagens fornecem aos usuários uma experiência de visualizaçã
 
 Os conjuntos de imagens são designados por um banner com a palavra `IMAGESET`. Além disso, se o Conjunto de imagens for publicado, a data de publicação, indicada pelo ícone **[!UICONTROL World]**, estará no banner. Além disso, a última data de modificação, indicada pelo ícone **[!UICONTROL Pencil]**, é exibida.
 
-![chlimage_1-135](assets/chlimage_1-339.png)
+![chlimage_1-133](assets/chlimage_1-339.png)
 
 No conjunto de imagens, também é possível criar amostras criando um Conjunto de imagens e adicionando miniaturas.
 
