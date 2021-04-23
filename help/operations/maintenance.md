@@ -3,10 +3,10 @@ title: Tarefas de manutenção no AEM como Cloud Service
 description: Tarefas de manutenção no AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
+source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 2%
+source-wordcount: '902'
+ht-degree: 1%
 
 ---
 
@@ -47,16 +47,12 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <th>Configuração da Janela de Manutenção</th>
     <th>Quem é o proprietário da configuração</th>
     <th>Tipo de configuração</th>
-    <th>Local</th>
-    <th>Exemplo</th>
     <th>Parâmetros</th>
   </tr>
   <tr>
     <td>Diariamente</td>
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
-    <td>1</td>
-    <td>1</td>
   <td>
   <p><strong>windowSchedule= daily</strong>  (este valor não deve ser alterado)</p>
   <p><strong>windowStartTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem começar a ser executadas.</p>
@@ -67,8 +63,6 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Semanalmente</td>
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
-    <td>Veja o local 2 abaixo</td>
-    <td>Consulte a amostra de código 2 abaixo</td>
     <td>
     <p><strong>windowSchedule= weekly</strong>  (este valor não deve ser alterado)</p>
     <p><strong>windowStartTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção semanal devem começar a ser executadas.</p>
@@ -80,8 +74,6 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Mensalmente</td>
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
-    <td>Veja o local 3 abaixo</td>
-    <td>Ver exemplo de código 3 abaixo</td>
     <td>
     <p><strong>windowSchedule= daily</strong>  (este valor não deve ser alterado)</p>
     <p><strong>windowStartTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem começar a ser executadas.</p>
