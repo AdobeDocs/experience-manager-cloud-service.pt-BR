@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ A complexidade das dependências na pilha rapidamente se torna aparente, pois vo
 
 ## Limites da entrega em pilha completa {#limits}
 
-A abordagem de pilha completa cria inerentemente um silo em que todas as experiências acabam em um sistema. As alterações ou adições em um nível do silo exigem mudanças em outras camadas, tornando as mudanças demoradas e caras.
+A abordagem de pilha completa cria inerentemente um silo em que todas as experiências acabam em um sistema. As alterações ou os componentes de adições do silo exigem mudanças em outros componentes, tornando as mudanças demoradas e caras.
 
 Isso é particularmente verdade no que diz respeito à camada de apresentação, que nos sistemas tradicionais está muitas vezes estreitamente ligada ao CMS. Qualquer novo canal geralmente significa uma atualização na camada de apresentação, que afeta todos os outros canais.
 
@@ -80,7 +80,7 @@ A entrega sem interface é possível ao expor um conjunto de APIs (Application P
 
 Headless é um exemplo de dissociação do conteúdo de sua apresentação. Ou, em um sentido mais genérico, dissociar o front-end do back-end da sua pilha de serviço. Em uma configuração sem cabeçalho, a camada de apresentação (o cabeçalho) é dissociada do gerenciamento de conteúdo (o tail). Os dois só interagem por meio de chamadas de API.
 
-Essa dissociação significa que cada serviço de consumo (front-end) pode criar sua experiência com base no mesmo conteúdo fornecido sobre as APIs, garantindo a reutilização e a consistência do conteúdo. Os serviços de consumo podem, então, implementar suas próprias camadas de apresentação, permitindo que a camada de gerenciamento de conteúdo (o back-end) seja facilmente dimensionada horizontalmente.
+Essa dissociação significa que cada serviço de consumo (front-end) pode criar sua experiência com base no mesmo conteúdo fornecido sobre as APIs, garantindo a reutilização e a consistência do conteúdo. Os serviços de consumo podem, então, implementar suas próprias camadas de apresentação, permitindo que a pilha de gerenciamento de conteúdo (o back-end) seja facilmente dimensionada horizontalmente.
 
 ## Princípios tecnológicos {#technology}
 
