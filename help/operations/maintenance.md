@@ -3,9 +3,9 @@ title: Tarefas de manutenção no AEM como Cloud Service
 description: Tarefas de manutenção no AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
+source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '920'
 ht-degree: 2%
 
 ---
@@ -55,9 +55,10 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Diariamente</td>
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
-    <td>Veja o local 1 abaixo</td>
-    <td>Consulte a amostra de código 1 abaixo</td>
-  <td><p><strong>windowSchedule= daily</strong></p> (esse valor não deve ser alterado)
+    <td>1</td>
+    <td>1</td>
+  <td>
+  <p><strong>windowSchedule= daily</strong>  (este valor não deve ser alterado)</p>
   <p><strong>windowStartTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem começar a ser executadas.</p>
   <p><strong>windowEndTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
   </td> 
@@ -69,11 +70,11 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Veja o local 2 abaixo</td>
     <td>Consulte a amostra de código 2 abaixo</td>
     <td>
-    <strong>windowSchedule= weekly</strong>  (esse valor não deve ser alterado) 
-    <strong>windowStartTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção semanal devem começar a ser executadas.
-    <strong>windowEndTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Semanal devem parar de ser executadas caso ainda não tenham sido concluídas.
-    <strong>windowScheduleWeekdays= Matriz de 2 valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa seria interrompida. A hora exata do início e do fim é regida por windowStartTime e windowEndTime, respectivamente.
-    </td> 
+    <p><strong>windowSchedule= weekly</strong>  (este valor não deve ser alterado)</p>
+    <p><strong>windowStartTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção semanal devem começar a ser executadas.</p>
+    <p><strong>windowEndTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Semanal devem parar de ser executadas caso ainda não tenham sido concluídas.</p>
+    <p><strong>windowScheduleWeekdays= Matriz de 2 valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa seria interrompida. A hora exata do início e do fim é regida por windowStartTime e windowEndTime, respectivamente.</p>
+    </td>
   </tr>
   <tr>
     <td>Mensalmente</td>
@@ -82,11 +83,11 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Veja o local 3 abaixo</td>
     <td>Ver exemplo de código 3 abaixo</td>
     <td>
-    <strong>windowSchedule= daily</strong>  (este valor não deve ser alterado) 
-    <strong>windowStartTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem começar a ser executadas.
-    <strong>windowEndTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem parar de ser executadas se ainda não tiverem sido concluídas.
-    <strong>windowScheduleWeekdays = Matriz de 2 valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa seria interrompida. A hora exata do início e do fim é regida por windowStartTime e windowEndTime, respectivamente.
-    <strong>windowFirstLastStartDay= 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor agendaria efetivamente trabalhos todos os dias, conforme determinado por windowScheduleWeekdays todos os meses.
+    <p><strong>windowSchedule= daily</strong>  (este valor não deve ser alterado)</p>
+    <p><strong>windowStartTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem começar a ser executadas.</p>
+    <p><strong>windowEndTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Mensal devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
+    <p><strong>windowScheduleWeekdays = Matriz de 2 valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa seria interrompida. A hora exata do início e do fim é regida por windowStartTime e windowEndTime, respectivamente.</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor agendaria efetivamente trabalhos todos os dias, conforme determinado por windowScheduleWeekdays todos os meses.</p>
     </td> 
     </tr>
     </tbody>
