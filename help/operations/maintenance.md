@@ -3,9 +3,9 @@ title: Tarefas de manutenção no AEM como Cloud Service
 description: Tarefas de manutenção no AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
+source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '914'
 ht-degree: 2%
 
 ---
@@ -42,6 +42,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
 Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de trabalho, Expurgação de tarefa ad-hoc e Manutenção de limpeza de projeto para serem executadas durante as janelas de manutenção diária, semanal ou mensal. Essas configurações devem ser editadas diretamente no controle do código-fonte. A tabela abaixo descreve os parâmetros de configuração disponíveis para cada janela.
 
 <table>
+ <tbody>
   <tr>
     <th>Configuração da Janela de Manutenção</th>
     <th>Quem é o proprietário da configuração</th>
@@ -54,12 +55,11 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Diariamente</td>
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
-    <td>Veja o local 1 abaixo</td>
+    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
     <td>Consulte a amostra de código 1 abaixo</td>
-  <td>
-  <strong>windowSchedule= daily</strong>  (este valor não deve ser alterado) 
-  <strong>windowStartTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem começar a ser executadas.
-  <strong>windowEndTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem parar de ser executadas se ainda não tiverem sido concluídas.
+  <td><p><code>windowSchedule= daily</code></p> (esse valor não deve ser alterado)
+  <p><code>windowStartTime= HH:MM</code> usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem começar a ser executadas.</p>
+  <p><code>windowEndTime= HH:MM</code> usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
   </td> 
   </tr>
   <tr>
@@ -89,6 +89,7 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <strong>windowFirstLastStartDay= 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor agendaria efetivamente trabalhos todos os dias, conforme determinado por windowScheduleWeekdays todos os meses.
     </td> 
     </tr>
+    </tbody>
 </table>
 
 Localizações:
