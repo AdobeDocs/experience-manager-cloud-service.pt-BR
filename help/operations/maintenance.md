@@ -3,9 +3,9 @@ title: Tarefas de manutenção no AEM como Cloud Service
 description: Tarefas de manutenção no AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
+source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -55,11 +55,11 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     <td>Diariamente</td>
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
-    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
+    <td>Veja o local 1 abaixo</td>
     <td>Consulte a amostra de código 1 abaixo</td>
-  <td><p><code>windowSchedule= daily</code></p> (esse valor não deve ser alterado)
-  <p><code>windowStartTime= HH:MM</code> usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem começar a ser executadas.</p>
-  <p><code>windowEndTime= HH:MM</code> usando como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
+  <td><p><strong>windowSchedule= daily</strong></p> (esse valor não deve ser alterado)
+  <p><strong>windowStartTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem começar a ser executadas.</p>
+  <p><strong>windowEndTime= HH:</strong> MMusing como relógio de 24 horas. Define quando as Tarefas de Manutenção associadas à Janela de Manutenção Diária devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
   </td> 
   </tr>
   <tr>
