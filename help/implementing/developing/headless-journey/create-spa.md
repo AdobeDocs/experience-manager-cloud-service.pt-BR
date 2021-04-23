@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
 
-Nesta continuação opcional da [AEM Jornada do desenvolvedor sem cabeçalho,](#overview.md) você aprenderá como AEM pode combinar a entrega sem periféricos com os recursos tradicionais de CMS de pilha completa e como você pode criar SPA editáveis usando SPA estrutura do editor, bem como integrar SPA externos, habilitando os recursos de edição conforme necessário.
+Nesta continuação opcional da [AEM Jornada do desenvolvedor sem cabeçalho,](overview.md) você aprenderá como AEM pode combinar a entrega sem periféricos com os recursos tradicionais de CMS de pilha completa e como você pode criar SPA editáveis usando SPA estrutura do editor, bem como integrar SPA externos, habilitando os recursos de edição conforme necessário.
 
 ## A história até agora {#story-so-far}
 
