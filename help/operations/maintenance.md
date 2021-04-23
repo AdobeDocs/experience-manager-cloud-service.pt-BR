@@ -3,9 +3,9 @@ title: Tarefas de manutenção no AEM como Cloud Service
 description: Tarefas de manutenção no AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
+source-git-commit: c7e954e3ed49d6189d050b2c33c04a9266853758
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '919'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
 | Remoção do fluxo de trabalho | Cliente | Deve ser feito no github. <br> Substitua o nó de configuração da janela de manutenção pronto para uso em  `/libs` criando propriedades na `/apps/settings/granite/operations/maintenance/granite_weekly` pasta  `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o  `granite_WorkflowPurgeTask`) com as propriedades apropriadas. <br> Configure as propriedades do OSGI, consulte a documentação da Tarefa de manutenção  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | Remoção do projeto | Cliente | Deve ser feito no github. <br> Substitua o nó de configuração da janela de manutenção pronto para uso em  `/libs` criando propriedades na pasta  `/apps/settings/granite/operations/maintenance/granite_weekly` ou  `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando um nó sob o nó acima (nomeie-o  `granite_ProjectPurgeTask`) com as propriedades apropriadas. <br> Configurar as propriedades do OSGI consulte a documentação da Tarefa de manutenção  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de trabalho, Expurgação de tarefa ad-hoc e Manutenção de limpeza de projeto para serem executadas durante as janelas de manutenção diária, semanal ou mensal. Essas configurações devem ser editadas diretamente no controle do código-fonte. A tabela abaixo descreve os parâmetros de configuração disponíveis para cada janela.
+Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de trabalho, Expurgação de tarefa ad-hoc e Manutenção de limpeza de projeto para serem executadas durante as janelas de manutenção diária, semanal ou mensal. Essas configurações devem ser editadas diretamente no controle do código-fonte. A tabela abaixo descreve os parâmetros de configuração disponíveis para cada janela. Além disso, consulte os locais e as amostras de código fornecidas após a tabela.
 
 <table>
  <tbody>
@@ -85,15 +85,15 @@ Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de traba
     </tbody>
 </table>
 
-Localizações:
+**Localizações**:
 
-1. /apps/settings/granite/operations/maintenance/granite_diariamente
-2. /apps/settings/granite/operations/maintenance/granite_weekly
-3. /apps/settings/granite/operations/maintenance/granite_mensal
+* Diariamente - /apps/settings/granite/operations/maintenance/granite_daily
+* Semanalmente - /apps/settings/granite/operations/maintenance/granite_weekly
+* Mensalmente - /apps/settings/granite/operations/maintenance/granite_mensal
 
-Amostras de código:
+**Amostras** de código:
 
-Amostra de código 1
+Amostra de código 1 (diariamente)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -108,7 +108,7 @@ Amostra de código 1
  />
 ```
 
-Amostra de código 2
+Amostra de código 2 (semanalmente)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -123,7 +123,7 @@ Amostra de código 2
    windowStartTime="14:30"/>
 ```
 
-Amostra de código 3
+Amostra de código 3 (mensalmente)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
