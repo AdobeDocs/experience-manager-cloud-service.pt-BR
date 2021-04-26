@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
 
-Nesta parte da [AEM Jornada de desenvolvedores headless,](#overview.md) saiba mais sobre tecnologia headless e por que usá-la.
+Nesta parte da [AEM Jornada de desenvolvedores headless,](overview.md) saiba mais sobre tecnologia headless e por que usá-la.
 
 ## Objetivo {#objective}
 
