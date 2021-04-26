@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
 
-Nesta parte da [AEM Jornada de desenvolvedores headless,](#overview.md) saiba como usar consultas GraphQL para acessar o conteúdo dos Fragmentos de conteúdo.
+Nesta parte da [AEM Jornada de desenvolvedores headless,](overview.md) saiba como usar consultas GraphQL para acessar o conteúdo dos Fragmentos de conteúdo.
 
 ## A história até agora {#story-so-far}
 
