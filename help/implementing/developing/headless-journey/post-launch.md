@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
 
-Nesta parte da [AEM Jornada de desenvolvedor headless,](#overview.md) saiba como manter sua experiência headless.
+Nesta parte da [AEM Jornada de desenvolvedor headless,](overview.md) saiba como manter sua experiência headless.
 
 ## A história até agora {#story-so-far}
 
