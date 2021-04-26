@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
 
-Nesta parte da [AEM Jornada do desenvolvedor headless](#overview.md), você pode aprender a modelar sua estrutura de conteúdo. Em seguida, perceba essa estrutura do Adobe Experience Manager (AEM) usando Modelos de fragmentos de conteúdo e Fragmentos de conteúdo, para reutilização em canais.
+Nesta parte da [AEM Jornada do desenvolvedor headless](overview.md), você pode aprender a modelar sua estrutura de conteúdo. Em seguida, perceba essa estrutura do Adobe Experience Manager (AEM) usando Modelos de fragmentos de conteúdo e Fragmentos de conteúdo, para reutilização em canais.
 
 ## A história até agora {#story-so-far}
 
