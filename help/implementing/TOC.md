@@ -6,7 +6,7 @@ user-guide-description: Guia para personalizar a implantação do Experience Man
 feature: Ferramentas do desenvolvedor
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: f0357bb2b19d7d44066bf868c3ea3ce0dcf42461
+source-git-commit: 77668ff0937c2af24d73da7f8d6b3c8956acb350
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 33%
