@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '764'
 ht-degree: 2%
 
 ---
@@ -130,6 +130,7 @@ Para ajudar na criação e desenvolvimento dos Modelos de fragmento de conteúdo
 
 ## Recursos adicionais {#additional-resources}
 
+* [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - Uma pequena série de tutoriais em vídeo que fornece uma visão geral do uso de AEM recursos headless, incluindo modelagem de dados e GraphQL.
 * [GraphQL.org](https://graphql.org)
    * [Esquema](https://graphql.org/learn/schema/)
    * [Bibliotecas GraphQL Java](https://graphql.org/code/#java)
