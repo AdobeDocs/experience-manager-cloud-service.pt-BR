@@ -1,12 +1,12 @@
 ---
 title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
-feature: Deploying
+feature: Implantação
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3334'
 ht-degree: 1%
 
 ---
@@ -163,6 +163,12 @@ Mais detalhes sobre o reponteiro podem ser encontrados na [Documentação do Sli
 above appears to be internal, to confirm with Brian -->
 
 ### Gerenciador de Pacotes &quot;únicos&quot; para Pacotes de Conteúdo Mutável {#package-manager-oneoffs-for-mutable-content-packages}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_packagemanager"
+>title="Gerenciador de pacotes - Migração de pacotes de conteúdo variável"
+>abstract="Explore o uso do gerenciador de pacotes para casos de uso, onde um pacote de conteúdo deve ser instalado como &quot;único&quot;, o que inclui a importação de conteúdo específico da produção para o armazenamento temporário, a fim de depurar um problema de produção, transferir um pacote de conteúdo pequeno do ambiente local para ambientes AEM Cloud e muito mais."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Ferramenta Transferência de conteúdo"
 
 Há casos de uso em que um pacote de conteúdo deve ser instalado como um &quot;único&quot;. Por exemplo, importação de conteúdo específico da produção para o armazenamento temporário a fim de depurar um problema de produção. Para esses cenários, o Gerenciador de pacotes pode ser usado em AEM como ambientes Cloud Service.
 
