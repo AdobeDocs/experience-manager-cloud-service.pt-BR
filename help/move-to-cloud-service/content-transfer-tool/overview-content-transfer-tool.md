@@ -1,16 +1,23 @@
 ---
 title: Visão geral da ferramenta Transferência de conteúdo
 description: Visão geral da ferramenta Transferência de conteúdo
+exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 94%
+source-wordcount: '813'
+ht-degree: 79%
 
 ---
 
-
 # Visão geral {#overview-content-transfer-tool}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_overview"
+>title="Visão geral"
+>abstract="A ferramenta Transferência de conteúdo é uma ferramenta desenvolvida pelo Adobe que pode ser usada para mover o conteúdo existente de uma instância de origem AEM (no local ou AMS) para a instância de destino AEM Cloud Service. Essa ferramenta também transfere entidades principais (usuários ou grupos) automaticamente."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Processo de extração"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Processo de assimilação"
 
 A ferramenta Transferência de conteúdo é uma ferramenta desenvolvida pela Adobe que pode ser usada para mover o conteúdo existente de uma instância do AEM de origem (no local ou AMS) para a instância de destino do AEM Cloud Service.
 
@@ -24,7 +31,7 @@ Existem duas fases associadas à transferência de conteúdo:
 
 >[!NOTE]
 >
-> É recomendável executar a Ferramenta de Mapeamento de Usuário como parte da fase de Extração. Consulte [Usando a ferramenta de mapeamento do usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) para obter mais detalhes.
+> É recomendável executar a Ferramenta de Mapeamento de Usuário como parte da fase de Extração. Consulte [Usar a ferramenta de mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) para obter mais detalhes.
 
 1. **Assimilação**: Assimilação refere-se à assimilação de conteúdo do *conjunto de migração* na instância de destino do Cloud Service.
 
@@ -49,6 +56,12 @@ Na fase de assimilação, para aplicar o conteúdo delta sobre o conteúdo atual
 
 
 ## Diretrizes e práticas recomendadas{#best-practices}
+
+>id=&quot;aemcloud_ctt_guidelines&quot;
+>title=&quot;Diretrizes e práticas recomendadas&quot;
+>abstract=&quot;Analise as diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo, incluindo tarefas de limpeza de revisão, considerações de espaço em disco e muito mais.&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs&quot; text=&quot;Considerações importantes sobre o uso da ferramenta Transferência de conteúdo&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations&quot; text=&quot;Considerações importantes sobre o uso da ferramenta de mapeamento de usuários&quot;
 
 Siga a seção abaixo para entender as diretrizes e práticas recomendadas de uso da ferramenta Transferência de conteúdo:
 
