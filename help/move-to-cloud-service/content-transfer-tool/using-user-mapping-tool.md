@@ -1,18 +1,26 @@
 ---
 title: Usar a ferramenta Mapeamento de usuários
 description: Usar a ferramenta Mapeamento de usuários
+exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 translation-type: tm+mt
-source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1185'
 ht-degree: 3%
 
 ---
 
-
 # Usar a ferramenta de mapeamento de usuários {#user-mapping-tool}
 
 ## Visão geral {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_usermapping"
+>title="Ferramenta de mapeamento de usuários"
+>abstract="A ferramenta Transferência de conteúdo ajuda a mover usuários e grupos do sistema de AEM existente para o AEM como Cloud Service. Os usuários e grupos existentes precisam ser mapeados para suas IDs IMS para evitar usuários e grupos duplicados na instância do autor do Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Considerações importantes sobre o uso da ferramenta Mapeamento de usuários"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Usar a ferramenta Mapeamento de usuários"
+
 
 Como parte da jornada de transição para o Adobe Experience Manager (AEM) as a Cloud Service, é necessário mover usuários e grupos do sistema de AEM existente para o AEM como Cloud Service. Isso é feito pela ferramenta Transferência de conteúdo.
 
@@ -102,4 +110,3 @@ A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferê
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Para executar a fase de Extração, consulte [Executar a ferramenta de transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
-
