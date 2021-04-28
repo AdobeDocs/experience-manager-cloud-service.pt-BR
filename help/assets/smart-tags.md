@@ -1,13 +1,14 @@
 ---
-title: Marcar ativos automaticamente com tags geradas por IA
-description: Adicione tags a ativos usando serviços inteligentes artificialmente que aplicam tags comerciais contextuais e descritivas usando o serviço  [!DNL Adobe Sensei] .
+title: Marcar ativos automaticamente com o  [!DNL Adobe Sensei] serviço inteligente
+description: Marque ativos com um serviço artificialmente inteligente que aplica tags comerciais contextuais e descritivas.
 contentOwner: AG
-feature: Smart Tags,Tagging
+feature: Tags inteligentes,Marcação
 role: Administrator,Business Practitioner
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2709'
 ht-degree: 6%
 
 ---
@@ -19,21 +20,19 @@ As organizações que lidam com ativos digitais cada vez mais usam um vocabulár
 
 Comparado aos vocabulários de linguagem natural, a marcação baseada na taxonomia comercial ajuda a alinhar os ativos aos negócios de uma empresa e garante que os ativos mais relevantes apareçam em pesquisas. Por exemplo, um fabricante de carros pode marcar imagens de carros com nomes de modelo para que somente imagens relevantes sejam exibidas quando pesquisadas para projetar uma campanha promocional.
 
-Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar seu algoritmo de reconhecimento de imagem em sua estrutura de tags e taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
+Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar seu algoritmo de reconhecimento de imagem em sua estrutura de tags e taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos. As novas implantações [!DNL Experience Manager Assets] são integradas a [!DNL Adobe Developer Console] por padrão. Ajuda a configurar a funcionalidade de tags inteligentes com mais rapidez. Nas implantações mais antigas, os administradores podem [configurar manualmente a integração de tags inteligentes](/help/assets/smart-tags-configuration.md#aio-integration).
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-Você pode adicionar tags aos seguintes tipos de ativos:
-
-* **Imagens**: As imagens em muitos formatos são marcadas usando os serviços de conteúdo inteligente da Adobe Sensei. Você [cria um modelo de treinamento](#train-model) e então [aplica tags inteligentes](#tag-assets) a imagens.
-* **Ativos** de vídeo: A marcação de vídeo é ativada por padrão no  [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service]. [Os vídeos são ](/help/assets/smart-tags-video-assets.md) marcados automaticamente ao fazer upload de novos vídeos ou reprocessar os existentes.
-* **Ativos** baseados em texto:  [!DNL Experience Manager Assets] adiciona tags automaticamente aos ativos com base em texto compatíveis quando carregados. Saiba mais sobre como [marcar ativos baseados em texto](#smart-tag-text-based-assets).
-
 ## Tipos de ativos compatíveis {#smart-tags-supported-file-formats}
 
-As Tags inteligentes são aplicadas aos tipos de arquivo compatíveis que geram renderizações no formato JPG e PNG. A funcionalidade é compatível com os seguintes tipos de ativos:
+Você pode adicionar tags aos seguintes tipos de ativos:
+
+* **Imagens**: As imagens em muitos formatos são marcadas usando os serviços de conteúdo inteligente da Adobe Sensei. Você [cria um modelo de treinamento](#train-model) e então [aplica tags inteligentes](#tag-assets) a imagens. As Tags inteligentes são aplicadas aos tipos de arquivo compatíveis que geram renderizações no formato JPG e PNG.
+* **Ativos** baseados em texto:  [!DNL Experience Manager Assets] adiciona tags automaticamente aos ativos com base em texto compatíveis quando carregados. Saiba mais sobre como [marcar ativos baseados em texto](#smart-tag-text-based-assets).
+* **Ativos** de vídeo: A marcação de vídeo é ativada por padrão no  [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service]. [Os vídeos são ](/help/assets/smart-tags-video-assets.md) marcados automaticamente ao fazer upload de novos vídeos ou reprocessar os existentes.
 
 | Imagens (tipos MIME) | Ativos baseados em texto (formatos de arquivo) | Ativos de vídeo (formatos de arquivo e codecs) |
 |----|-----|------|
@@ -58,15 +57,10 @@ As Tags inteligentes são aplicadas aos tipos de arquivo compatíveis que geram 
 
 [!DNL Experience Manager] adiciona automaticamente as Tags inteligentes aos ativos baseados em texto e aos vídeos por padrão. Para adicionar tags inteligentes automaticamente a imagens, conclua as seguintes tarefas.
 
-* [ [!DNL Adobe Experience Manager] Integração com o Console do desenvolvedor](#integrate-aem-with-aio).
 * [Entenda os modelos e as diretrizes de tags](#understand-tag-models-guidelines).
 * [Treine o modelo](#train-model).
 * [Marque seus ativos](#tag-assets) digitais.
 * [Gerencie as tags e pesquisas](#manage-smart-tags-and-searches).
-
->[!TIP]
->
->Tags inteligentes são aplicáveis somente para clientes [!DNL Adobe Experience Manager Assets] . As Tags inteligentes estão disponíveis para compra como um complemento para [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -75,14 +69,6 @@ As Tags inteligentes são aplicadas aos tipos de arquivo compatíveis que geram 
 Os ativos baseados em texto são marcados automaticamente por [!DNL Experience Manager Assets] quando carregados. Está ativada por padrão. A eficácia das Tags inteligentes não depende da quantidade de texto no ativo, mas das palavras-chave ou entidades relevantes presentes no texto do ativo. Para ativos baseados em texto, as Tags inteligentes são as palavras-chave que aparecem no texto, mas aquelas que melhor descrevem o ativo. Para ativos compatíveis, [!DNL Experience Manager] já extrai o texto, que é então indexado e usado para procurar os ativos. No entanto, as Tags inteligentes com base em palavras-chave no texto fornecem uma faceta de pesquisa dedicada, estruturada e de prioridade mais alta usada para melhorar a descoberta de ativos em comparação com o índice de pesquisa completo.
 
 Em comparação, para imagens e vídeos, as Tags inteligentes são derivadas de algum aspecto visual.
-
-## Integre [!DNL Experience Manager] ao Console do Desenvolvedor do Adobe {#integrate-aem-with-aio}
-
->[!IMPORTANT]
->
->As novas implantações [!DNL Experience Manager Assets] são integradas a [!DNL Adobe Developer Console] por padrão. Ajuda a configurar a funcionalidade de tags inteligentes com mais rapidez. Nas implantações mais antigas, os administradores podem [configurar manualmente a integração de tags inteligentes](/help/assets/smart-tags-configuration.md#aio-integration).
-
-Você pode integrar [!DNL Adobe Experience Manager] com as Tags inteligentes usando [!DNL Adobe Developer Console]. Use essa configuração para acessar o serviço Tags inteligentes de dentro de [!DNL Experience Manager]. Consulte [configurar [!DNL Experience Manager] para marcar ativos](smart-tags-configuration.md) para tarefas para configurar as Tags inteligentes. No back-end, o servidor [!DNL Experience Manager] autentica suas credenciais de serviço no gateway do Console do desenvolvedor do Adobe antes de encaminhar sua solicitação ao serviço de Tags inteligentes.
 
 ## Entender modelos e diretrizes de tags {#understand-tag-models-guidelines}
 
@@ -155,7 +141,7 @@ Para criar e treinar um modelo para suas tags específicas de negócios, siga es
 
 Para verificar se o serviço de Tags inteligentes é treinado em suas tags no conjunto de ativos de treinamento, analise o relatório do fluxo de trabalho de treinamento no console Relatórios .
 
-1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas] > **[!UICONTROL Ativos] > **[!UICONTROL Relatórios]**.
+1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
 1. Na página **[!UICONTROL Relatórios de ativos]**, clique em **[!UICONTROL Criar]**.
 1. Selecione o relatório **[!UICONTROL Treinamento de Tags inteligentes]** e clique em **[!UICONTROL Avançar]** na barra de ferramentas.
 1. Especifique um título e uma descrição para o relatório. Em **[!UICONTROL Agendar relatório]**, deixe a opção **[!UICONTROL Agora]** selecionada. Se desejar agendar o relatório para posteriormente, selecione **[!UICONTROL Posteriormente]** e especifique uma data e hora. Em seguida, clique em **[!UICONTROL Create]** na barra de ferramentas.
@@ -165,7 +151,7 @@ Para verificar se o serviço de Tags inteligentes é treinado em suas tags no co
 
 ## Marcar ativos {#tag-assets}
 
-Depois de ter treinado o serviço de Tags inteligentes, você pode acionar o fluxo de trabalho de marcação para aplicar automaticamente as tags apropriadas em um conjunto diferente de ativos semelhantes. Você pode aplicar o fluxo de trabalho de marcação periodicamente ou sempre que necessário. O fluxo de trabalho de marcação se aplica a ativos e pastas.
+Depois de ter treinado o serviço de Tags inteligentes, você pode acionar o fluxo de trabalho de marcação para aplicar tags automaticamente em um conjunto diferente de ativos. Você pode aplicar o workflow de marcação sob demanda ou agendá-lo para execução periódica. O fluxo de trabalho de marcação se aplica a ativos e pastas.
 
 ### Marque ativos no console do fluxo de trabalho {#tagging-assets-from-the-workflow-console}
 
@@ -224,7 +210,7 @@ Para moderar as tags inteligentes de seus ativos:
 
 1. Navegue até a página [!UICONTROL Propriedades] do ativo. Observe que a tag promovida tem uma relevância alta e, portanto, aparece mais alta nos resultados da pesquisa.
 
-### Entender AEM resultados de pesquisa com tags inteligentes {#understandsearch}
+### Entender AEM resultados de pesquisa com tags inteligentes {#understand-search}
 
 Por padrão, AEM pesquisa combina os termos de pesquisa com uma cláusula `AND`. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma cláusula `OR` para localizar qualquer um dos termos de pesquisa nas tags inteligentes aplicadas. Por exemplo, considere pesquisar por `woman running`. Os ativos com apenas `woman` ou apenas `running` palavra-chave nos metadados não aparecem nos resultados da pesquisa por padrão. No entanto, um ativo marcado com `woman` ou `running` usando tags inteligentes aparece em tal query de pesquisa. Então os resultados da pesquisa são uma combinação de...
 
