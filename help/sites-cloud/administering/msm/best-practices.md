@@ -1,16 +1,16 @@
 ---
 title: Práticas recomendadas do MSM
 description: Conheça as práticas recomendadas compiladas pelas equipes de engenharia e consultoria de Adobe para ajudar a ativar e executar o AEM Multi Site Manager.
-feature: Multi Site Manager
+feature: Gerenciamento de vários sites
 role: Administrator
+exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas do MSM {#msm-best-practices}
 
@@ -37,6 +37,10 @@ Os benefícios adicionais do uso de uma configuração do blueprint são:
 No caso de uma configuração do blueprint não ser mencionada, as implantações só podem ser iniciadas a partir das próprias Live Copies, obtendo essencialmente conteúdo da origem.
 
 Ao criar um novo site com o Live Copy, é vantajoso criar configurações de blueprint para garantir a disponibilidade do conjunto completo de recursos do MSM.
+
+>[!NOTE]
+>
+> Observe que os CUGs na guia Permissões não podem ser implantados em Live Copies de Blueprints. Planeje isso ao configurar a Live Copy.
 
 ## Sincronização de componentes e contêineres {#components-and-container-synchronization}
 
