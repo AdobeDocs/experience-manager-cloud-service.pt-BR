@@ -1,16 +1,16 @@
 ---
 title: Tag inteligente de seus ativos de vídeo
 description: O Experience Manager adiciona automaticamente tags inteligentes contextuais e descritivas aos vídeos usando [!DNL Adobe Sensei].
-feature: Smart Tags,Tagging
+feature: Tags inteligentes,Marcação
 role: Administrator,Business Practitioner
+exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
-
 
 # Tag inteligente seus ativos de vídeo {#video-smart-tags}
 
@@ -64,7 +64,7 @@ Para pesquisar os ativos de vídeo com base nas tags inteligentes geradas automa
 
 Os resultados da pesquisa exibem os ativos do vídeo com base na tag especificada.
 
-Os resultados da pesquisa são uma combinação de ativos de vídeo com palavras-chave pesquisadas nos metadados e nos ativos de vídeo que são marcados de forma inteligente com as palavras-chave pesquisadas. No entanto, os resultados da pesquisa que correspondem a todos os termos de pesquisa nos campos de metadados são exibidos primeiro, seguidos pelos resultados da pesquisa que correspondem a qualquer um dos termos de pesquisa nas tags inteligentes. Para obter mais informações, consulte [Entender [!DNL Experience Manager] resultados de pesquisa com tags inteligentes](smart-tags.md#understandsearch).
+Os resultados da pesquisa são uma combinação de ativos de vídeo com palavras-chave pesquisadas nos metadados e nos ativos de vídeo que são marcados de forma inteligente com as palavras-chave pesquisadas. No entanto, os resultados da pesquisa que correspondem a todos os termos de pesquisa nos campos de metadados são exibidos primeiro, seguidos pelos resultados da pesquisa que correspondem a qualquer um dos termos de pesquisa nas tags inteligentes. Para obter mais informações, consulte [Entender [!DNL Experience Manager] resultados de pesquisa com tags inteligentes](smart-tags.md#understand-search).
 
 ## Moderar tags inteligentes de vídeo {#moderate-video-smart-tags}
 
