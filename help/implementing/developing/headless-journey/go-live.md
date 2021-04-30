@@ -4,14 +4,14 @@ description: Nesta parte do AEM Headless Developer Jornada, saiba como implantar
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
-
 
 # Como ativar seu aplicativo sem cabeçalho {#go-live}
 
@@ -63,6 +63,8 @@ O padrão de implantação mais comum com AEM aplicativos sem cabeçalho é ter 
 3. Configurar armazenamento em cache e escalabilidade
 
 ## Implantar na produção {#deploy-to-production}
+
+Depois de testar todo o código e conteúdo localmente, você está pronto para iniciar uma implantação de produção com o AEM.
 
 ### Estrutura do modelo vs Saída GraphQL {#structure-vs-output}
 
