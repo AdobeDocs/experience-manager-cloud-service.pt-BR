@@ -3,10 +3,10 @@ title: Visão geral da ferramenta Transferência de conteúdo
 description: Visão geral da ferramenta Transferência de conteúdo
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 79%
+source-wordcount: '803'
+ht-degree: 81%
 
 ---
 
@@ -57,11 +57,12 @@ Na fase de assimilação, para aplicar o conteúdo delta sobre o conteúdo atual
 
 ## Diretrizes e práticas recomendadas{#best-practices}
 
->id=&quot;aemcloud_ctt_guidelines&quot;
->title=&quot;Diretrizes e práticas recomendadas&quot;
->abstract=&quot;Analise as diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo, incluindo tarefas de limpeza de revisão, considerações de espaço em disco e muito mais.&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs&quot; text=&quot;Considerações importantes sobre o uso da ferramenta Transferência de conteúdo&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations&quot; text=&quot;Considerações importantes sobre o uso da ferramenta de mapeamento de usuários&quot;
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_guidelines"
+>title="Diretrizes e práticas recomendadas"
+>abstract="Analise as diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo, incluindo tarefas de limpeza de revisão, considerações de espaço em disco e muito mais."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="Considerações importantes sobre o uso da ferramenta Transferência de conteúdo"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Considerações importantes sobre o uso da ferramenta Mapeamento de usuários"
 
 Siga a seção abaixo para entender as diretrizes e práticas recomendadas de uso da ferramenta Transferência de conteúdo:
 
