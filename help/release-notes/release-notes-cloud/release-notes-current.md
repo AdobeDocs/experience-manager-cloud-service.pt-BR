@@ -3,7 +3,7 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 9743b5a80a8554e375561093e8554455b3a6b8f5
+source-git-commit: 9a2b52a873e4e0662da252bba2af6ac2a46cd08e
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 3%
@@ -80,7 +80,7 @@ Entre em contato com o representante do Adobe para obter uma demonstração ou p
 * Lançamento de componentes principais CIF v1.9.0. Consulte [Componentes principais CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) para obter mais detalhes.
 
 
-## Cloud Manager {#c-manager}
+## Cloud Manager {#cloud-manager}
 
 Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.4.0 e 2021.3.0.
 
