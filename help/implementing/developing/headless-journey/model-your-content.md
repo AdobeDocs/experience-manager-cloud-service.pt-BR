@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 1%
+source-wordcount: '1752'
+ht-degree: 2%
 
 ---
 
@@ -212,6 +212,20 @@ O tipo de dados pode ser configurado para permitir que os autores de fragmento:
    * Edite o fragmento referenciado diretamente.
    * Crie um novo fragmento de conteúdo, com base no modelo apropriado
 
+### Criação de modelos de fragmento de conteúdo {#creating-content-fragment-models}
+
+Os primeiros Modelos de fragmento de conteúdo são ativados para o seu site, isso é feito no Navegador de configuração:
+
+![Definir configuração](assets/cfm-configuration.png)
+
+Em seguida, os Modelos de fragmentos de conteúdo podem ser modelados:
+
+![Modelo de fragmentos de conteúdo](assets/cfm-model.png)
+
+>[!NOTE]
+>
+>Consulte Trabalhar com fragmentos de conteúdo .
+
 ## Uso do modelo para criar conteúdo com fragmentos de conteúdo {#use-content-to-author-content}
 
 Fragmentos de conteúdo são sempre baseados em um Modelo de fragmento de conteúdo. O modelo fornece a estrutura, o fragmento retém o conteúdo.
@@ -231,6 +245,16 @@ Após a criação do fragmento, é possível abri-lo no Editor de fragmento do c
 * Editar os metadados.
 * Mostrar a estrutura da árvore.
 * Visualize a representação JSON.
+
+### Criação de fragmentos de conteúdo {#creating-content-fragments}
+
+Após selecionar o modelo apropriado, um Fragmento de conteúdo é aberto para edição no Editor de fragmento de conteúdo:
+
+![Editor de conteúdo do fragmento](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>Consulte Trabalhar com fragmentos de conteúdo .
 
 ## Introdução a alguns exemplos {#getting-started-examples}
 
