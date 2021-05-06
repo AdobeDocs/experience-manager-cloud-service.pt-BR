@@ -1,14 +1,14 @@
 ---
 title: Como modelar seu conteúdo
-description: Nesta parte da Jornada do desenvolvedor sem cabeçalho AEM, saiba como modelar o conteúdo para AEM entrega sem cabeçalho usando a Modelagem de dados com modelos de fragmentos de conteúdo e fragmentos de conteúdo.
+description: Nesta parte da Jornada do desenvolvedor sem cabeçalho AEM, saiba como modelar o conteúdo para AEM entrega sem cabeçalho usando a Modelagem de conteúdo com modelos de fragmentos de conteúdo e fragmentos de conteúdo.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
+source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1686'
 ht-degree: 1%
 
 ---
@@ -38,10 +38,10 @@ Este artigo se baseia nesses fundamentos para que você entenda como preparar se
 
 * **Público-alvo**: Iniciante
 * **Objetivo**: Saiba como modelar sua estrutura de conteúdo e, em seguida, perceber essa estrutura usando AEM Modelos de fragmento de conteúdo e Fragmentos de conteúdo:
-   * Introduza conceitos e terminologia relacionados à [modelagem de dados](#data-modeling).
-   * Saiba [por que a modelagem de dados é necessária para a entrega de conteúdo sem cabeçalho](#data-modeling-for-aem-headless).
-   * Saiba [como realizar essa estrutura usando AEM Modelos de fragmento de conteúdo](#create-structure-content-fragment-models) (e criar conteúdo com [Fragmentos de conteúdo](#use-content-to-author-content)).
-   * Saiba [como modelar seu conteúdo](#getting-started-examples); princípios com amostras básicas.
+   * Introduza conceitos e terminologia relacionados à modelagem de dados/conteúdo.
+   * Saiba por que a modelagem de conteúdo é necessária para a entrega de conteúdo sem interface.
+   * Saiba como realizar essa estrutura usando AEM Modelos de fragmento de conteúdo (e criar conteúdo com Fragmentos de conteúdo).
+   * Saiba como modelar seu conteúdo; princípios com amostras básicas.
 
 >[!NOTE]
 >
@@ -49,11 +49,15 @@ Este artigo se baseia nesses fundamentos para que você entenda como preparar se
 >
 >Somente consideraremos os aspectos que são de interesse ao modelar dados para uso com AEM Headless.
 
-## Modelagem de dados {#data-modeling}
+## Modelagem de conteúdo {#content-modeling}
 
 *É um mundo grande e ruim lá* fora.
 
 Talvez, talvez não, mas é certamente um grande ***complicado*** mundo afora e a modelagem de dados é usada para definir uma representação simplificada de uma subseção muito (muito) pequena, usando as informações específicas necessárias para um certo propósito.
+
+>[!NOTE]
+>
+>Como AEM trata do conteúdo, referimos a Modelagem de dados como a Modelagem de conteúdo.
 
 Por exemplo:
 
@@ -91,7 +95,7 @@ As informações que queremos armazenar sobre eles são os **Atributos** (propri
 
 Em seguida, há vários **Relacionamentos** entre as entidades. Por exemplo, geralmente uma escola tem apenas um professor titular e muitos professores (e geralmente o professor principal também é professor).
 
-O processo de análise e definição dessas informações, juntamente com as relações entre elas, é chamado de **Data Modeling**.
+O processo de análise e definição dessas informações, juntamente com as relações entre elas, é chamado de **Modelagem de Conteúdo**.
 
 ### Básico {#basics}
 
@@ -128,9 +132,9 @@ Tudo é um ato de equilíbrio, mas a criação de uma estrutura demasiado comple
 
 * Afete bastante o desempenho se a consulta tiver que acessar vários Fragmentos de conteúdo aninhados (referenciados) para recuperar o conteúdo necessário.
 
-## Modelagem de dados para AEM sem cabeçalho {#data-modeling-for-aem-headless}
+## Modelagem de conteúdo para AEM headless {#content-modeling-for-aem-headless}
 
-A Modelagem de Dados é um conjunto de técnicas estabelecidas, muitas vezes usadas quando bancos de dados de relacionamento desenvolvidos, então o que significa para AEM Cabeça?
+A modelagem de dados é um conjunto de técnicas estabelecidas, geralmente usadas quando bancos de dados de relacionamento desenvolvidos, portanto, o que a modelagem de conteúdo significa para AEM headless?
 
 ### Por quê? {#why}
 
@@ -142,7 +146,7 @@ Isso significa que o aplicativo sabe antecipadamente a forma de resposta e, port
 
 O AEM usa Fragmentos de conteúdo para fornecer as estruturas necessárias para a entrega sem cabeçalho do conteúdo aos seus aplicativos.
 
-A estrutura do seu modelo de dados é:
+A estrutura do modelo de conteúdo é:
 
 * realizado pela definição do modelo de fragmento de conteúdo,
 * usado como base dos Fragmentos de conteúdo usados para a geração de conteúdo.
@@ -173,7 +177,7 @@ Dentro de um modelo:
 1. **Os** Tipos de dados permitem definir os atributos individuais.
 Por exemplo, defina o campo com o nome de um professor como **Text** e seus anos de serviço como **Number**.
 1. Os tipos de dados **Referência de conteúdo** e **Referência de fragmento** permitem criar relacionamentos com outro conteúdo no AEM.
-1. O tipo de dados **Referência do fragmento** permite que você atinja vários níveis de estrutura aninhando seus Fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de dados.
+1. O tipo de dados **Referência do fragmento** permite que você atinja vários níveis de estrutura aninhando seus Fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de conteúdo.
 
 Por exemplo:
 ![Modelagem de conteúdo com fragmentos de conteúdo](assets/headless-modeling-01.png "Modelagem de conteúdo com fragmentos de conteúdo")
@@ -250,4 +254,4 @@ Agora que você aprendeu a modelar sua estrutura e criar conteúdo dependente di
    * [Gerenciamento de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md)  - criação e criação de fragmentos de conteúdo; esta página o levará a outras seções detalhadas
 * [AEM esquemas GraphQL](/help/implementing/developing/headless-journey/access-your-content.md)  - como o GraphQL realiza modelos
 * [A estrutura do fragmento de conteúdo de amostra](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - Uma pequena série de tutoriais em vídeo que fornece uma visão geral do uso de AEM recursos headless, incluindo modelagem de dados e GraphQL.
+* [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - Uma pequena série de tutoriais em vídeo que fornece uma visão geral do uso de AEM recursos headless, incluindo modelagem de conteúdo e GraphQL.
