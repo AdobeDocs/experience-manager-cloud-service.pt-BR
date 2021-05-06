@@ -1,53 +1,55 @@
 ---
-title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.4.0
-description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.4.0
-feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
+title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.5.0
+description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.5.0
+feature: Informações da versão
 translation-type: tm+mt
-source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
+source-git-commit: e2d4bb7649fad3ee172c6f049ecfdedc71417ee2
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '362'
 ht-degree: 2%
 
 ---
 
-# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.4.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.4.0.
+# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.5.0 {#release-notes}
+
+Esta página descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.5.0.
 
 ## Data de lançamento {#release-date}
 
-A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.4.0 é 8 de abril de 2021.
-A próxima versão está planejada para 06 de maio de 2021.
+A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.5.0 é 6 de maio de 2021.
+A próxima versão está planejada para 3 de junho de 2021.
 
-### Novidades {#what-is-new-april}
+### Novidades {#what-is-new}
 
-* Atualizações da interface do usuário para os fluxos de trabalho Adicionar e editar programa para torná-lo mais intuitivo.
+* A regra de qualidade PackageOverlaps agora detecta casos em que o mesmo pacote foi implantado várias vezes, ou seja, em vários locais incorporados, no mesmo conjunto de pacotes implantado.
 
-* Um usuário com as permissões necessárias agora pode enviar o ponto final de comércio por meio da interface do usuário do .
+* O endpoint do repositório na API pública agora inclui o URL do Git.
 
-* Agora, as variáveis de ambiente podem ser enviadas para um serviço específico, seja de criação ou de publicação. Exige AEM versão `2021.03.5104.20210328T185548Z` ou superior.
+* O log de implantação baixado por um usuário do Cloud Manager será mais revelador e incluirá detalhes sobre falhas e cenários de sucesso.
 
-* O botão **Gerenciar Git** é exibido no cartão Pipelines mesmo quando nenhum pipeline foi configurado.
+* Falhas intermitentes encontradas ao enviar o código para o Adobe git foram resolvidas.
 
-* A versão do arquétipo de projeto AEM usado pelo Cloud Manager foi atualizada para a versão 27.
+* O complemento Commerce agora pode ser aplicado a programas Sandbox durante o fluxo de trabalho Editar programa .
 
-* Os projetos no Console do desenvolvedor do Adobe I/O criados pelo Cloud Manager não podem mais ser editados ou excluídos involuntariamente.
+* A experiência Editar programa foi atualizada.
 
-* Quando um usuário adiciona um novo ambiente, ele é informado que, uma vez criado um ambiente, ele não pode ser movido para uma região diferente.
+* A tabela Nomes de Domínio na página Detalhes do Ambiente exibirá até 250 nomes de Domínio por paginação.
 
-* Agora, as variáveis de ambiente podem ser enviadas para um serviço específico, seja de criação ou de publicação. Exige AEM versão 2021.03.5104.20210328T185548Z ou superior.
+* A guia Soluções nos fluxos de trabalho Adicionar programa e Editar programa exibirá a solução, mesmo que apenas uma solução esteja disponível para o programa.
 
-* A mensagem de erro ao iniciar um pipeline quando um ambiente foi excluído foi esclarecida.
+* A mensagem de erro no log de etapas da criação quando a build não produziu nenhum pacote de conteúdo implantado não estava clara.
 
-* Pacotes OSGi fornecidos por projetos Eclipse agora são excluídos da regra `CQBP-84--dependencies`.
+### Correções de erros {#bug-fixes}
 
-### Correções de erros {#bug-fixes-cm-april}
+* Ocasionalmente, o usuário pode ver um status verde &quot;ativo&quot; ao lado de uma Lista de permissões de IP, mesmo quando essa configuração não foi implantada.
 
-* Ao editar a página Auditoria de experiência de um pipeline, um caminho de entrada que começa com uma barra `( / )` não resultará mais na etapa presa no status pendente.
+* Em vez de remover variáveis &quot;excluídas&quot;, a API de variáveis de pipelines somente as marcaria com o status **DELETED**.
 
-* Quando um novo pipeline de produção é criado, se nenhuma substituição de auditoria de conteúdo for adicionada pelo usuário, a página inicial padrão não foi auditada.
+* Alguns problemas de qualidade do tipo Código Smell estavam afetando incorretamente a Classificação de confiabilidade.
 
-* Os problemas para `CloudServiceIncompatibleWorkflowProcess` tinham a severidade incorreta no arquivo CSV de problema baixável.
+* Como domínios curingas não são compatíveis, a interface do usuário não permitirá que o usuário envie um domínio curinga.
 
-* A verificação `Runmode` estava produzindo falsos positivos em nós que não eram pastas.
+* Quando uma execução de pipeline era iniciada entre meia-noite e 1h UTC, a versão de artefato gerada pelo Cloud Manager não tinha garantia de ser maior do que uma versão criada no dia anterior.
+
+* Durante a configuração do programa de sandbox, depois que o projeto com código de amostra for criado com êxito, o Gerenciar Git será exibido como um link do cartão herói na página Visão geral .
