@@ -3,15 +3,19 @@ title: Regras de qualidade do código personalizado - Cloud Services
 description: Regras de qualidade do código personalizado - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 translation-type: tm+mt
-source-git-commit: d4fb51aa1b5f0bc469c961b0e7287758ec17e9e9
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '3278'
+source-wordcount: '3302'
 ht-degree: 4%
 
 ---
 
 # Regras de qualidade do código personalizado {#custom-code-quality-rules}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_customcodequalityrules"
+>title="Regras de qualidade do código personalizado"
+>abstract="Esta página descreve as regras de qualidade de código personalizadas executadas pelo Cloud Manager e criadas com base nas práticas recomendadas do AEM Engineering."
 
 Esta página descreve as regras de qualidade de código personalizadas executadas pelo Cloud Manager e criadas com base nas práticas recomendadas do AEM Engineering.
 
