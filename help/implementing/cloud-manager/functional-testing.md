@@ -1,18 +1,25 @@
 ---
 title: Teste funcional - Cloud Services
 description: Teste funcional - Cloud Services
+exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 translation-type: tm+mt
-source-git-commit: 765334cff443d56e37f578647af4bcd133509481
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '865'
 ht-degree: 2%
 
 ---
 
-
 # Teste funcional {#functional-testing}
 
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_functionaltesting"
+>title="Teste funcional"
+>abstract="O teste funcional é categorizado em três tipos: Teste funcional do produto, Teste funcional personalizado, Teste da interface personalizada"
+
 Os ensaios funcionais são classificados em três tipos:
+
 
 * Teste funcional do produto
 * Teste funcional personalizado
@@ -124,4 +131,3 @@ As propriedades do sistema são as seguintes:
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
-
