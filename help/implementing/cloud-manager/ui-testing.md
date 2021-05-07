@@ -1,39 +1,44 @@
 ---
-title: Teste da interface de usuário - Cloud Services
-description: Teste da interface de usuário - Cloud Services
+title: Teste da interface do usuário - Cloud Services
+description: Teste da interface do usuário - Cloud Services
+exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 translation-type: tm+mt
-source-git-commit: ea0c9675ca03b1d247c7e5fd13e03072fb4a13ae
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
 
+# Teste da interface do usuário {#ui-testing}
 
-# Teste da interface de usuário {#ui-testing}
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_uitesting"
+>title="Teste da interface do usuário"
+>abstract="Os testes da interface do usuário são testes baseados em Selenium, compactados em uma imagem Docker, para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium). A imagem Docker pode ser criada com ferramentas padrão, mas deve respeitar certas convenções durante a execução. Ao executar a imagem Docker, um servidor Selenium é automaticamente provisionado. As convenções de tempo de execução descritas abaixo permitem que o código de teste acesse o servidor Selenium e as instâncias de AEM em teste."
 
-Os testes da interface do usuário são testes baseados em Selenium empacotados em uma imagem da Docker para permitir uma ampla escolha em linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia desenvolvida a partir da Selenium). A imagem do Docker pode ser criada com ferramentas padrão, mas deve respeitar certas convenções durante sua execução. Ao executar a imagem do Docker, um servidor Selenium é automaticamente provisionado. As convenções de tempo de execução descritas abaixo permitem que seu código de teste acesse o servidor Selenium e as instâncias de AEM em teste.
+Os testes da interface do usuário são testes baseados em Selenium, compactados em uma imagem Docker, para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium). A imagem Docker pode ser criada com ferramentas padrão, mas deve respeitar certas convenções durante a execução. Ao executar a imagem Docker, um servidor Selenium é automaticamente provisionado. As convenções de tempo de execução descritas abaixo permitem que o código de teste acesse o servidor Selenium e as instâncias de AEM em teste.
 
 >[!NOTE]
-> Os pipeline de estágio e de produção criados antes de 10 de fevereiro de 2021 precisam ser atualizados para que os testes de interface sejam usados, conforme descrito nesta página.
-> Consulte [Configurando o pipeline CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) para obter informações sobre a configuração do pipeline.
+> Os pipelines de preparo e produção criados antes de 10 de fevereiro de 2021 precisam ser atualizados para usar os testes da interface do usuário, conforme descrito nesta página.
+> Consulte [Configuração do pipeline de CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) para obter informações sobre a configuração do pipeline.
 
-## Criando testes de interface de usuário {#building-ui-tests}
+## Criação de testes da interface do usuário {#building-ui-tests}
 
-Os testes de interface são criados a partir de um contexto de criação do Docker gerado por um projeto Maven. O Gerenciador de nuvem usa o contexto de compilação do Docker para gerar uma imagem do Docker que contém os testes de UI reais. Em resumo, um projeto Maven gera um contexto de criação do Docker, e o contexto de criação do Docker descreve como criar uma imagem do Docker contendo os testes da interface do usuário.
+Os testes da interface do usuário são criados a partir de um contexto de compilação Docker gerado por um projeto Maven. O Cloud Manager usa o contexto de compilação do Docker para gerar uma imagem do Docker que contém os testes reais da interface do usuário. Em resumo, um projeto Maven gera um contexto de compilação Docker, e o contexto de compilação Docker descreve como criar uma imagem Docker contendo os testes da interface do usuário.
 
-Esta seção passa pelas etapas necessárias para adicionar um projeto de Testes de interface ao seu repositório. Se você estiver com pressa ou não tiver requisitos especiais para a linguagem de programação, o [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) poderá gerar um projeto de Testes de IU para você.
+Esta seção passa pelas etapas necessárias para adicionar um projeto de Testes de interface ao seu repositório. Se você tiver pressa ou não tiver requisitos especiais para a linguagem de programação, o [AEM Arquétipo de Projeto](https://github.com/adobe/aem-project-archetype) poderá gerar um projeto de Testes de IU para você.
 
 ### Gerar um contexto de compilação do Docker {#generate-docker-build-context}
 
 Para gerar um contexto de compilação do Docker, você precisa de um módulo Maven que:
 
-- Produz um arquivo que contém `Dockerfile` e todos os outros arquivos necessários para criar a imagem do Docker com seus testes.
+- Produz um arquivo que contém um `Dockerfile` e qualquer outro arquivo necessário para criar a imagem do Docker com seus testes.
 - Marca o arquivo com o classificador `ui-test-docker-context`.
 
-A maneira mais simples de conseguir isso é configurar o [Plug-in Maven Assembly](http://maven.apache.org/plugins/maven-assembly-plugin/) para criar o arquivo de contexto de compilação do Docker e atribuir o classificador correto a ele.
+A maneira mais simples de fazer isso é configurar o [Maven Assembly Plugin](http://maven.apache.org/plugins/maven-assembly-plugin/) para criar o arquivo de contexto da compilação do Docker e atribuir o classificador correto a ele.
 
-Você pode criar testes de interface de usuário com diferentes tecnologias e estruturas, mas esta seção presume que seu projeto seja apresentado de uma forma semelhante à seguinte.
+Você pode criar testes de interface do usuário com diferentes tecnologias e estruturas, mas esta seção presume que o projeto foi apresentado de uma maneira semelhante ao seguinte.
 
 ```
 ├── Dockerfile
@@ -46,7 +51,7 @@ Você pode criar testes de interface de usuário com diferentes tecnologias e es
 └── wait-for-grid.sh
 ```
 
-O arquivo `pom.xml` cuida da compilação Maven. Adicione uma execução ao Plug-in Maven Assembly semelhante ao seguinte.
+O arquivo `pom.xml` cuida da build Maven. Adicione uma execução ao Plug-in Maven Assembly semelhante ao seguinte.
 
 ```xml
 <plugin>
@@ -70,7 +75,7 @@ O arquivo `pom.xml` cuida da compilação Maven. Adicione uma execução ao Plug
 </plugin>
 ```
 
-Essa execução instrui o Plug-in Maven Assembly a criar um arquivo com base nas instruções contidas em `assembly-ui-test-docker-context.xml`, chamado de &quot;descritor de assembly&quot; no jargão do plug-in. O descritor de assembly lista todos os arquivos que devem fazer parte do arquivo.
+Essa execução instrui o Plug-in de Montagem Maven a criar um arquivo com base nas instruções contidas em `assembly-ui-test-docker-context.xml`, chamado de &quot;descritor de montagem&quot; no jargão do plug-in. O descritor de assembly lista todos os arquivos que devem fazer parte do arquivo.
 
 ```xml
 <assembly>
@@ -101,51 +106,51 @@ Essa execução instrui o Plug-in Maven Assembly a criar um arquivo com base nas
 
 O descritor de assembly instrui o plug-in a criar um arquivo do tipo `.tar.gz` e atribui o classificador `ui-test-docker-context` a ele. Além disso, ele lista os arquivos que devem ser incluídos no arquivo:
 
-- Um `Dockerfile`, obrigatório para criar a imagem do Docker.
+- Um `Dockerfile`, obrigatório para criar a imagem Docker.
 - O script `wait-for-grid.sh`, cujas finalidades são descritas abaixo.
-- Os testes de interface reais, implementados por um projeto Node.js na pasta `test-module`.
+- Os testes da interface do usuário real, implementados por um projeto Node.js na pasta `test-module`.
 
-O descritor de assembly também exclui alguns arquivos que podem ser gerados durante a execução local dos testes da interface do usuário. Isso garante um arquivo menor e construções mais rápidas.
+O descritor de conjunto também exclui alguns arquivos que podem ser gerados durante a execução local dos testes da interface do usuário. Isso garante um arquivo menor e builds mais rápidas.
 
-O arquivo que contém o contexto de compilação do Docker é automaticamente selecionado pelo Gerenciador de nuvem, que criará a imagem do Docker que contém seus testes durante seus pipelines de implantação. Eventualmente, o Cloud Manager executará a imagem do Docker para executar os testes da interface de usuário em seu aplicativo.
+O arquivo que contém o contexto de compilação do Docker é automaticamente selecionado pelo Cloud Manager, que criará a imagem do Docker que contém seus testes durante seus pipelines de implantação. Eventualmente, o Cloud Manager executará a imagem do Docker para executar os testes da interface de usuário em seu aplicativo.
 
-## Gravando testes de interface de usuário {#writing-ui-tests}
+## Gravando testes de interface do usuário {#writing-ui-tests}
 
-Esta seção descreve as convenções que a imagem do Docker que contém seus testes de interface de usuário devem seguir. A imagem do Docker é construída a partir do contexto de compilação do Docker descrito na seção anterior.
+Esta seção descreve as convenções que a imagem do Docker que contém seus testes de interface de usuário devem seguir. A imagem do Docker é criada a partir do contexto de compilação do Docker descrito na seção anterior.
 
 ### Variáveis de ambiente {#environment-variables}
 
-As variáveis de ambiente a seguir serão passadas para a imagem do Docker em tempo de execução.
+As variáveis de ambiente a seguir serão passadas para a imagem Docker em tempo de execução.
 
 | Variável | Exemplos | Descrição |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | O URL do servidor Selenium |
 | `SELENIUM_BROWSER` | `chrome`, `firefox` | A implementação do navegador usada pelo servidor Selenium |
-| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | O URL da instância do autor AEM |
-| `AEM_AUTHOR_USERNAME` | `admin` | O nome de usuário para fazer login na instância do autor AEM |
-| `AEM_AUTHOR_PASSWORD` | `admin` | A senha para fazer login na instância do autor AEM |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | O URL da instância de publicação AEM |
-| `AEM_PUBLISH_USERNAME` | `admin` | O nome de usuário para fazer login na instância de publicação AEM |
-| `AEM_PUBLISH_PASSWORD` | `admin` | A senha para fazer login na instância de publicação AEM |
-| `REPORTS_PATH` | `/usr/src/app/reports` | O caminho no qual o relatório XML dos resultados do teste deve ser salvo |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | O URL para o qual o arquivo deve ser carregado para torná-lo acessível ao Selenium |
+| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | O URL da instância do autor do AEM |
+| `AEM_AUTHOR_USERNAME` | `admin` | O nome de usuário para fazer logon na instância do autor do AEM |
+| `AEM_AUTHOR_PASSWORD` | `admin` | A senha para fazer logon na instância do autor do AEM |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | O URL da instância de publicação de AEM |
+| `AEM_PUBLISH_USERNAME` | `admin` | O nome de usuário para fazer logon na instância de publicação do AEM |
+| `AEM_PUBLISH_PASSWORD` | `admin` | A senha para fazer logon na instância de publicação do AEM |
+| `REPORTS_PATH` | `/usr/src/app/reports` | O caminho onde o relatório XML dos resultados do teste deve ser salvo |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | O URL onde o arquivo deve ser carregado para torná-lo acessível ao Selenium |
 
-### Aguardando que Selenium esteja pronto {#waiting-for-selenium}
+### Aguardando que o Selenium esteja pronto {#waiting-for-selenium}
 
-Antes do start dos testes, é responsabilidade da imagem da Docker garantir que o servidor Selenium esteja funcionando. Esperar pelo serviço Selenium é um processo de duas etapas:
+Antes de os testes começarem, é responsabilidade da imagem do Docker garantir que o servidor Selenium esteja funcionando. Aguardar o serviço Selenium é um processo de duas etapas:
 
 1. Leia o URL do serviço Selenium da variável de ambiente `SELENIUM_BASE_URL`.
-2. Pesquisa em intervalos regulares para o [ponto de extremidade de status](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) exposto pela API Selenium.
+2. Pesquisa em intervalo regular para o [status endpoint](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) exposto pela API Selenium.
 
-Quando o terminal de status do Selenium responde com uma resposta positiva, os testes podem finalmente start.
+Quando o endpoint de status do Selenium responde com uma resposta positiva, os testes podem finalmente começar.
 
 ### Gerar os relatórios de teste {#generate-test-reports}
 
-A imagem do Docker deve gerar relatórios de teste no formato XML JUnit e salvá-los no caminho especificado pela variável de ambiente `REPORTS_PATH`. O formato JUnit XML é um formato difundido para o relatórios dos resultados dos testes. Se a imagem do Docker usar Java e Maven, o [Plug-in Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) e o [Plug-in Maven Failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/). Se a imagem do Docker for implementada com outras linguagens de programação ou corredores de teste, verifique a documentação das ferramentas escolhidas para saber como gerar relatórios XML JUnit.
+A imagem Docker deve gerar relatórios de teste no formato JUnit XML e salvá-los no caminho especificado pela variável de ambiente `REPORTS_PATH`. O formato JUnit XML é um formato amplo para relatar os resultados dos testes. Se a imagem do Docker usar Java e Maven, o [Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/) e o [Maven Failsafe Plugin](https://maven.apache.org/surefire/maven-failsafe-plugin/). Se a imagem do Docker for implementada com outras linguagens de programação ou corredores de teste, verifique a documentação das ferramentas escolhidas para saber como gerar relatórios XML JUnit.
 
-### Carregar arquivos (#upload-files)
+### Upload de arquivos (#upload-files)
 
-Os testes às vezes devem carregar arquivos no aplicativo em teste. Para manter flexível a implantação da Selenium em relação aos seus testes, não é possível carregar diretamente um ativo diretamente para a Selenium. Em vez disso, o upload de um arquivo passa por algumas etapas intermediárias:
+Os testes às vezes devem carregar arquivos no aplicativo em teste. Para manter a implantação do Selenium em relação aos testes flexível, não é possível fazer upload direto de um ativo para o Selenium. Em vez disso, o upload de um arquivo passa por algumas etapas intermediárias:
 
-1. Carregue o arquivo no URL especificado pela variável de ambiente `UPLOAD_URL`. O upload deve ser executado em uma solicitação de POST com um formulário multiparte. O formulário multipart deve ter um único campo de arquivo. Isso equivale a `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`. Consulte a documentação e as bibliotecas da linguagem de programação usada na imagem do Docker para saber como executar tal solicitação HTTP.
-2. Se o upload for bem-sucedido, a solicitação retornará uma resposta `200 OK` do tipo `text/plain`. O conteúdo da resposta é um identificador de arquivo opaco. Você pode usar esse identificador no lugar de um caminho de arquivo em um elemento `<input>` para testar os uploads de arquivos no aplicativo.
+1. Carregue o arquivo no URL especificado pela variável de ambiente `UPLOAD_URL`. O upload deve ser executado em uma solicitação de POST com um formulário multipart. O formulário multipart deve ter um único campo de arquivo. Isso é equivalente a `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`. Consulte a documentação e as bibliotecas da linguagem de programação usada na imagem do Docker para saber como executar tal solicitação HTTP.
+2. Se o upload for bem-sucedido, a solicitação retornará uma resposta `200 OK` do tipo `text/plain`. O conteúdo da resposta é um identificador de arquivo opaco. Você pode usar esse identificador no lugar de um caminho de arquivo em um elemento `<input>` para testar os uploads de arquivo em seu aplicativo.
