@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1830'
 ht-degree: 2%
 
 ---
@@ -214,17 +214,21 @@ O tipo de dados pode ser configurado para permitir que os autores de fragmento:
 
 ### Criação de modelos de fragmento de conteúdo {#creating-content-fragment-models}
 
-Os primeiros Modelos de fragmento de conteúdo são ativados para o seu site, isso é feito no Navegador de configuração:
+No início, é necessário ativar os Modelos de fragmento de conteúdo para o site, isso é feito no Navegador de configuração; em Ferramentas -> Geral -> Navegador de configuração. Você pode optar por configurar a entrada global ou criar uma nova configuração. Por exemplo:
 
 ![Definir configuração](assets/cfm-configuration.png)
 
-Em seguida, os Modelos de fragmentos de conteúdo podem ser modelados:
+>[!NOTE]
+>
+>Consulte Recursos adicionais - Fragmentos de conteúdo no navegador de configuração
+
+Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em Ferramentas -> Ativos -> Modelos de fragmento de conteúdo. Por exemplo:
 
 ![Modelo de fragmentos de conteúdo](assets/cfm-model.png)
 
 >[!NOTE]
 >
->Consulte Trabalhar com fragmentos de conteúdo .
+>Consulte Recursos adicionais - Modelos de fragmento de conteúdo.
 
 ## Uso do modelo para criar conteúdo com fragmentos de conteúdo {#use-content-to-author-content}
 
@@ -232,7 +236,9 @@ Fragmentos de conteúdo são sempre baseados em um Modelo de fragmento de conte�
 
 ### Selecionar o modelo adequado {#select-model}
 
-A primeira etapa para realmente criar o conteúdo é criar um Fragmento do conteúdo. Isso é baseado em um Modelo de fragmento de conteúdo específico, selecionado como a primeira etapa do processo de criação.
+A primeira etapa para realmente criar o conteúdo é criar um Fragmento do conteúdo. Isso é feito usando Criar -> Fragmento de conteúdo na pasta necessária em Ativos -> Arquivos. O assistente o guiará pelas etapas.
+
+Um Fragmento de conteúdo é baseado em um Modelo de fragmento de conteúdo específico, que pode ser selecionado como a primeira etapa do processo de criação.
 
 ### Criar e editar conteúdo estruturado {#create-edit-structured-content}
 
@@ -254,7 +260,7 @@ Após selecionar o modelo apropriado, um Fragmento de conteúdo é aberto para e
 
 >[!NOTE]
 >
->Consulte Trabalhar com fragmentos de conteúdo .
+>Consulte Recursos adicionais - Como trabalhar com fragmentos de conteúdo.
 
 ## Introdução a alguns exemplos {#getting-started-examples}
 
