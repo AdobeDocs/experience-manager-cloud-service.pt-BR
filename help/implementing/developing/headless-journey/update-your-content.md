@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 3%
+source-wordcount: '1668'
+ht-degree: 2%
 
 ---
 
@@ -51,6 +51,8 @@ Então, por que outra API é necessária?
 
 A API HTTP do Assets permite **Ler** o seu conteúdo, mas também permite **Criar**, **Atualizar** e **Eliminar** conteúdo - ações que não são possíveis com a API GraphQL.
 
+A API REST de ativos está disponível em cada instalação pronta para uso de uma versão recente do Adobe Experience Manager as a Cloud Service.
+
 ## API HTTP de ativos {#assets-http-api}
 
 A [API HTTP de ativos](/help/assets/mac-api-assets.md) abrange:
@@ -62,28 +64,16 @@ A implementação atual da API HTTP de ativos é baseada no estilo arquitetônic
 
 A API REST de ativos permite que os desenvolvedores do Adobe Experience Manager as a Cloud Service acessem o conteúdo (armazenado em AEM) diretamente sobre a API HTTP, por meio de operações **CRUD** (Criar, Ler, Atualizar, Excluir).
 
-A API permite operar o Adobe Experience Manager as a Cloud Service como um CMS (Content Management System) sem periféricos fornecendo serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON.
-
-Por exemplo, Aplicativos de página única (SPA), baseados em estrutura ou personalizados, exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
-
-Embora AEM os Componentes principais forneçam uma API muito abrangente, flexível e personalizável que possa servir as operações de Leitura necessárias para essa finalidade e cuja saída JSON possa ser personalizada, eles exigem AEM know-how WCM (Gerenciamento de conteúdo da Web) para implementação, pois devem ser hospedados em páginas baseadas em modelos de AEM dedicados. Nem todas as organizações SPA de desenvolvimento têm acesso direto a esses conhecimentos.
-
-É quando a API REST do Assets pode ser usada. Ela permite que os desenvolvedores acessem ativos (por exemplo, imagens e fragmentos de conteúdo) diretamente, sem a necessidade de primeiro incorporá-los a uma página e entregar seu conteúdo em formato JSON serializado.
+Com essa operação, a API permite operar o Adobe Experience Manager como um Cloud Service como um CMS (Content Management System) sem periféricos fornecendo serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, Aplicativos de página única (SPA), baseados em estrutura ou personalizados, exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
 
 >[!NOTE]
 >
 >Não é possível personalizar a saída JSON da API REST de ativos.
 
-A API REST de ativos também permite que os desenvolvedores modifiquem o conteúdo, criando ativos novos, atualizados ou excluindo ativos, fragmentos de conteúdo e pastas existentes.
-
 A API REST de ativos:
 
 * segue o princípio HATEOAS
 * implementa o formato SIREN
-
-## Pré-requisitos {#prerequisites}
-
-A API REST de ativos está disponível em cada instalação pronta para uso de uma versão recente do Adobe Experience Manager as a Cloud Service.
 
 ## Principais conceitos {#key-concepts}
 
@@ -124,53 +114,6 @@ Todas as solicitações são atômicas.
 
 Isso significa que as solicitações subsequentes (`write`) não podem ser combinadas em uma única transação que pode ter êxito ou falhar como uma única entidade.
 
-### AEM (Ativos) REST API versus AEM Componentes {#aem-assets-rest-api-versus-aem-components}
-
-<table>
- <thead>
-  <tr>
-   <td>Aspecto</td>
-   <td>API REST de ativos<br/> </td>
-   <td>Componente AEM<br/> (componentes que usam Modelos Sling)</td>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>Casos de uso suportados</td>
-   <td>Finalidade geral.</td>
-   <td><p>Otimizado para consumo em um Aplicativo de página única (SPA), ou qualquer outro contexto (que consome conteúdo).</p> <p>Também pode conter informações de layout.</p> </td>
-  </tr>
-  <tr>
-   <td>Operações suportadas</td>
-   <td><p>Criar, Ler, Atualizar, Excluir.</p> <p>Com operações adicionais, dependendo do tipo de entidade.</p> </td>
-   <td>Somente leitura.</td>
-  </tr>
-  <tr>
-   <td>Acesso</td>
-   <td><p>Pode ser acessado diretamente.</p> <p>Usa o ponto de extremidade <code>/api/assets </code>mapeado para <code>/content/dam</code> (no repositório).</p> 
-   <p>Um caminho de exemplo seria: <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
-   </td>
-    <td><p>Precisa ser referenciado por meio de um componente de AEM em uma página de AEM.</p> <p>Usa o seletor <code>.model</code> para criar a representação JSON.</p> <p>Um caminho de exemplo seria:<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
-   </td>
-  </tr>
-  <tr>
-   <td>Segurança</td>
-   <td><p>Várias opções são possíveis.</p> <p>O OAuth é proposto; pode ser configurado separadamente da configuração padrão.</p> </td>
-   <td>Usa AEM configuração padrão.</td>
-  </tr>
-  <tr>
-   <td>Observações arquitetônicas</td>
-   <td><p>O acesso de gravação normalmente endereçará uma instância de autor.</p> <p>A leitura também pode ser direcionada a uma instância de publicação.</p> </td>
-   <td>Como essa abordagem é somente leitura, ela normalmente será usada para instâncias de publicação.</td>
-  </tr>
-  <tr>
-   <td>Saída</td>
-   <td>Saída SIREN baseada em JSON: verboso, mas poderoso. Permite navegar dentro do conteúdo.</td>
-   <td>Saída proprietária baseada em JSON; configurável por meio de Modelos do Sling. É difícil implementar a navegação na estrutura de conteúdo (mas não é necessariamente impossível).</td>
-  </tr>
- </tbody>
-</table>
-
 ### Segurança {#security}
 
 Se a API REST do Assets for usada em um ambiente sem requisitos de autenticação específicos, AEM filtro CORS precisará ser configurado corretamente.
@@ -182,9 +125,6 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >* Explicação do CORS/AEM
 >* Vídeo - Desenvolvimento do CORS com AEM
 
->
-
-
 
 Em ambientes com requisitos de autenticação específicos, o OAuth é recomendado.
 
@@ -194,7 +134,7 @@ Fragmentos de conteúdo são um tipo específico de ativo, consulte Trabalhar co
 
 Para obter mais informações sobre recursos disponíveis por meio da API, consulte:
 
-* A API REST do Assets
+* A API REST de ativos (recursos adicionais)
 * Tipos de entidade, onde os recursos específicos para cada tipo suportado (conforme relevante para Fragmentos de conteúdo) são explicados
 
 ### Paginação {#paging}
@@ -275,16 +215,74 @@ O conteúdo associado não está exposto no momento.
 
 ## Uso da API REST do Assets {#using-aem-assets-rest-api}
 
-Para obter detalhes sobre como usar a API REST do AEM Assets, é possível fazer referência a:
+O uso pode ser diferente dependendo se você está usando um autor ou um ambiente de publicação AEM, juntamente com seu caso de uso específico.
 
-* API HTTP do Adobe Experience Manager Assets
-* Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets
+* É altamente recomendável que a criação seja vinculada a uma instância do autor ([e atualmente não há como replicar um fragmento para publicar usando essa API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
+* A entrega é possível de ambos, pois AEM serve o conteúdo solicitado somente no formato JSON.
+
+   * O armazenamento e o delivery de uma instância de autor de AEM devem ser suficientes para aplicativos de biblioteca de mídia por trás do firewall.
+
+   * Para entrega na Web ao vivo, recomenda-se uma instância de publicação de AEM.
+
+>[!CAUTION]
+>
+>A configuração do dispatcher em instâncias AEM nuvem pode bloquear o acesso a `/api`.
+
+>[!NOTE]
+>
+>Para obter mais detalhes, consulte a [Referência da API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Especificamente, [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+
+### Leitura/entrega {#read-delivery}
+
+O uso é via:
+
+`GET /{cfParentPath}/{cfName}.json`
+
+Por exemplo:
+
+`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
+
+A resposta é JSON serializado com o conteúdo estruturado como no fragmento de conteúdo. As referências são fornecidas como URLs de referência.
+
+Dois tipos de operações de leitura são possíveis:
+
+* Ao ler um fragmento de conteúdo específico por caminho, a representação JSON do fragmento de conteúdo é retornada.
+* Leitura de uma pasta de fragmentos de conteúdo por caminho: isso retorna as representações JSON de todos os fragmentos de conteúdo dentro da pasta.
+
+### Criar {#create}
+
+O uso é via:
+
+`POST /{cfParentPath}/{cfName}`
+
+O corpo deve conter uma representação JSON do fragmento de conteúdo a ser criado, incluindo qualquer conteúdo inicial que deve ser definido nos elementos do fragmento de conteúdo. É obrigatório definir a propriedade `cq:model` e deve apontar para um modelo de fragmento de conteúdo válido. Se isso não for feito, haverá um erro. Também é necessário adicionar um cabeçalho `Content-Type` que está definido como `application/json`.
+
+### Atualizar {#update}
+
+O uso é via
+
+`PUT /{cfParentPath}/{cfName}`
+
+O corpo deve conter uma representação JSON do que deve ser atualizado para o fragmento de conteúdo especificado.
+
+Pode ser simplesmente o título ou a descrição de um fragmento de conteúdo, um único elemento ou todos os valores e/ou metadados do elemento.
+
+### Exclua {#delete}
+
+O uso é via:
+
+`DELETE /{cfParentPath}/{cfName}`
+
+Para obter mais detalhes sobre o uso da API REST do AEM Assets, consulte:
+
+* API HTTP do Adobe Experience Manager Assets (Recursos adicionais)
+* Suporte a fragmentos de conteúdo na API HTTP do AEM Assets (Recursos adicionais)
 
 ## O que vem a seguir {#whats-next}
 
 Agora que você concluiu esta parte da Jornada de Desenvolvedores sem Cabeça da AEM, você deve:
 
-* Entenda a API HTTP do AEM Assets.
+* Entenda as noções básicas da API HTTP do AEM Assets.
 * Entenda como os Fragmentos de conteúdo são compatíveis com essa API.
 
 <!--
