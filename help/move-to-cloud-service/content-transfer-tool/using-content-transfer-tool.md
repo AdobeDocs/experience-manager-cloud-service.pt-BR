@@ -3,10 +3,10 @@ title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: d55eb86afd9973e428c8738db181f79dcd55accb
+source-git-commit: 42c6d904fb484435572544147936b50b9a277dcf
 workflow-type: tm+mt
-source-wordcount: '2675'
-ht-degree: 47%
+source-wordcount: '2731'
+ht-degree: 46%
 
 ---
 
@@ -53,6 +53,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * A *Fase de assimilação* do autor diminuirá a implantação do autor inteiro. Isso significa que o AEM do autor não estará disponível durante todo o processo de ingestão. Certifique-se também de que nenhum pipeline do Cloud Manager seja executado enquanto você está executando a fase *Assimilação*.
 
+* Ao usar `Amazon S3` ou `Azure` como o armazenamento de dados no sistema de AEM de origem, o armazenamento de dados deve ser configurado para que os blobs armazenados não possam ser excluídos (coleta de lixo). Isso garante a integridade dos dados de índice. A não configuração dessa forma pode resultar em extrações com falha devido à falta de integridade desses dados de índice.
 
 ## Disponibilidade {#availability}
 
