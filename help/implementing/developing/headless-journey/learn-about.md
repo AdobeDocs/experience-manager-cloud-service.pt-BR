@@ -4,14 +4,14 @@ description: Nesta parte da Jornada de desenvolvedores sem periféricos AEM, sai
 hide: true
 hidefromtoc: true
 index: false
+exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 7df3620e6f58336de2ac29dd496a888b17606d7f
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
-
 
 # Saiba mais sobre o desenvolvimento sem periféricos do CMS {#learn-about}
 
@@ -50,15 +50,15 @@ A complexidade das dependências na pilha rapidamente se torna aparente, pois vo
 
 ## Limites da entrega em pilha completa {#limits}
 
-A abordagem de pilha completa cria inerentemente um silo em que todas as experiências acabam em um sistema. As alterações ou os componentes de adições do silo exigem mudanças em outros componentes, tornando as mudanças demoradas e caras.
+A abordagem de pilha completa cria inerentemente um silo em que todas as experiências acabam em um sistema. As alterações ou adições a um componente do silo exigem alterações em outros componentes que podem fazer mudanças demoradas e caras.
 
-Isso é particularmente verdade no que diz respeito à camada de apresentação, que nos sistemas tradicionais está muitas vezes estreitamente ligada ao CMS. Qualquer novo canal geralmente significa uma atualização na camada de apresentação, que afeta todos os outros canais.
+Isto é particularmente verdade no que respeita ao sistema de apresentação, que, nas configurações tradicionais, está frequentemente vinculado ao SCC. Qualquer novo canal geralmente significa uma atualização do sistema de apresentação, que pode afetar todos os outros canais.
 
 ![A complexidade aumenta à medida que os canais são adicionados a uma pilha](assets/presentation-complexity.png)
 
-As limitações desse silo natural são evidentes à medida que você percebe quanto esforço e tempo são necessários para coordenar as alterações em todos os componentes da pilha.
+As limitações desse silo natural podem se tornar evidentes à medida que você se esforça para coordenar as alterações em todos os componentes da pilha.
 
-Os usuários esperam engajamento independentemente da plataforma ou do ponto de contato, o que requer agilidade na maneira como você apresenta suas experiências.  Essa abordagem multicanal é o padrão das experiências digitais e uma abordagem de pilha completa pode, às vezes, se revelar inflexível.
+Os usuários esperam engajamento independentemente da plataforma ou do ponto de contato, o que requer agilidade na maneira como você apresenta suas experiências.  Essa abordagem multicanal é o padrão das experiências digitais e uma abordagem de pilha completa pode, em determinadas circunstâncias, se revelar inflexível.
 
 ## A cabeça em Sem Cabeça {#the-head}
 
@@ -72,15 +72,15 @@ Quando falamos de um CMS sem interface, o CMS gerencia o conteúdo e continua a 
 
 Os serviços que consomem, sejam experiências de AR, um webshop, experiências móveis, aplicativos web progressivos (PWA), etc., absorvem conteúdo do CMS sem cabeçalho e fornecem sua própria renderização. Eles cuidam de fornecer suas próprias cabeças para o seu conteúdo.
 
-Omitir a cabeça simplifica bastante o CMS ao remover a complexidade substancial. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
+Omitir a cabeça simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 
 ## Desvinculando {#decoupling}
 
 A entrega sem interface é possível ao expor um conjunto de APIs (Application Programming Interfaces, interfaces de programação de aplicativos) robustas e flexíveis que todas as suas experiências podem aproveitar. A API serve como um idioma comum entre os serviços, vinculando-os no nível de conteúdo por meio de uma entrega de conteúdo padronizada, mas permitindo a flexibilidade para implementar suas próprias soluções.
 
-Headless é um exemplo de dissociação do conteúdo de sua apresentação. Ou, em um sentido mais genérico, dissociar o front-end do back-end da sua pilha de serviço. Em uma configuração sem cabeçalho, a camada de apresentação (o cabeçalho) é dissociada do gerenciamento de conteúdo (o tail). Os dois só interagem por meio de chamadas de API.
+Headless é um exemplo de dissociação do conteúdo de sua apresentação. Ou, em um sentido mais genérico, dissociar o front-end do back-end da sua pilha de serviço. Em uma configuração sem cabeçalho, o sistema de apresentação (o cabeçalho) é dissociado do gerenciamento de conteúdo (a cauda). Os dois só interagem por meio de chamadas de API.
 
-Essa dissociação significa que cada serviço de consumo (front-end) pode criar sua experiência com base no mesmo conteúdo fornecido sobre as APIs, garantindo a reutilização e a consistência do conteúdo. Os serviços de consumo podem, então, implementar suas próprias camadas de apresentação, permitindo que a pilha de gerenciamento de conteúdo (o back-end) seja facilmente dimensionada horizontalmente.
+Essa dissociação significa que cada serviço de consumo (front-end) pode criar sua experiência com base no mesmo conteúdo fornecido sobre as APIs, garantindo a reutilização e a consistência do conteúdo. Os serviços de consumo podem, então, implementar seus próprios sistemas de apresentação, permitindo que a pilha de gerenciamento de conteúdo (o back-end) seja facilmente dimensionada horizontalmente.
 
 ## Princípios tecnológicos {#technology}
 
@@ -88,7 +88,7 @@ Uma abordagem sem interface permite construir uma pilha de tecnologia que se ada
 
 As APIs para CMSs no passado normalmente eram baseadas em REST. A transferência de estado de representação (REST) fornece recursos como texto sem estado. Isso permite que os recursos sejam lidos e modificados com um conjunto predefinido de operações. O REST permitiu uma grande interoperabilidade entre serviços na Web, garantindo a representação sem estado do conteúdo.
 
-E ainda há necessidade de REST APIs robustas. No entanto, as solicitações REST podem ser grandes e detalhadas. Se você tiver vários consumidores fazendo chamadas REST para todos os seus canais, esses compostos de verbosidade e o desempenho podem ser afetados.
+Ainda há necessidade de REST APIs robustas. No entanto, as solicitações REST podem ser grandes e detalhadas. Se você tiver vários consumidores fazendo chamadas REST para todos os seus canais, esses compostos de verbosidade e o desempenho podem ser afetados.
 
 A entrega de conteúdo headless geralmente usa APIs GraphQL. GraphQL permite uma transferência sem estado semelhante, mas permite consultas mais direcionadas, reduzindo o número total de consultas necessárias e melhorando o desempenho. É comum ver soluções que usam uma combinação de REST e GraphQL, escolhendo essencialmente a melhor ferramenta para o trabalho em mãos.
 
@@ -116,9 +116,9 @@ As experiências digitais continuarão a definir como as marcas interagem com os
 
 À medida que você prossegue com essa jornada do desenvolvedor, aprenderá como o AEM suporta a entrega sem periféricos junto com seus recursos de entrega em pilha completa.
 
-Como líder do setor em gerenciamento de experiência digital, o Adobe percebe que a solução ideal para os desafios reais que os criadores de experiências enfrentam raramente é uma escolha binária. É por isso que AEM suporta não apenas ambos os modelos, mas também permite exclusivamente a combinação híbrida perfeita dos dois para ajudá-lo a atender melhor os consumidores de seu conteúdo. Onde quer que estejam.
+Como líder do setor em gerenciamento de experiência digital, o Adobe percebe que a solução ideal para os desafios do mundo real que os criadores de experiências enfrentam raramente é uma escolha binária. É por isso que AEM suporta não apenas ambos os modelos, mas também permite exclusivamente a combinação híbrida perfeita dos dois, misturando as vantagens da pilha completa e sem interface, para ajudá-lo a atender melhor os consumidores de seu conteúdo, onde quer que estejam.
 
-Essa jornada se concentra no modelo sem periféricos de entrega de conteúdo. No entanto, uma vez que você tenha estabelecido essa base de conhecimento, poderá explorar mais o potencial de ambos os modelos.
+Essa jornada se concentra no modelo sem periféricos de entrega de conteúdo. No entanto, uma vez que você tenha esse conhecimento fundamental, poderá explorar ainda mais o potencial de ambos os modelos.
 
 ## O que vem a seguir {#what-is-next}
 
