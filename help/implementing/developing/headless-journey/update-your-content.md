@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
+source-git-commit: 7732a291d070a5d93a6f490877b909e1331be1e2
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1270'
 ht-degree: 2%
 
 ---
@@ -55,102 +55,99 @@ A API REST de ativos está disponível em cada instalação pronta para uso de u
 
 ## API HTTP de ativos {#assets-http-api}
 
-A [API HTTP de ativos](/help/assets/mac-api-assets.md) abrange:
+A API HTTP de ativos abrange:
 
 * API REST de ativos
 * incluindo suporte para Fragmentos de conteúdo
 
-A implementação atual da API HTTP de ativos é baseada no estilo arquitetônico **REST**.
-
-A API REST de ativos permite que os desenvolvedores do Adobe Experience Manager as a Cloud Service acessem o conteúdo (armazenado em AEM) diretamente sobre a API HTTP, por meio de operações **CRUD** (Criar, Ler, Atualizar, Excluir).
+A implementação atual da API HTTP de ativos é baseada no **REST** estilo arquitetônico e permite acessar o conteúdo (armazenado em AEM) por meio de **operações CRUD** (Criar, Ler, Atualizar, Excluir).
 
 Com essa operação, a API permite operar o Adobe Experience Manager como um Cloud Service como um CMS (Content Management System) sem periféricos fornecendo serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, Aplicativos de página única (SPA), baseados em estrutura ou personalizados, exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
 
+<!--
 >[!NOTE]
 >
->Não é possível personalizar a saída JSON da API REST de ativos.
+>It is not possible to customize JSON output from the Assets REST API. 
 
-A API REST de ativos:
+The Assets REST API:
 
-* segue o princípio HATEOAS
-* implementa o formato SIREN
+* follows the HATEOAS principle
+* implements the SIREN format
 
-## Principais conceitos {#key-concepts}
+## Key Concepts {#key-concepts}
 
-A API REST de ativos oferece acesso ao estilo REST a ativos armazenados em uma instância de AEM.
+The Assets REST API offers REST-style access to assets stored within an AEM instance. 
 
-Ele usa o terminal `/api/assets` e requer o caminho do ativo para acessá-lo (sem o `/content/dam` à esquerda).
+It uses the `/api/assets` endpoint and requires the path of the asset to access it (without the leading `/content/dam`). 
 
-* Isso significa que para acessar o ativo em:
-   * `/content/dam/path/to/asset`
-* Você precisa solicitar:
-   * `/api/assets/path/to/asset`
+* This means that to access the asset at:
+  * `/content/dam/path/to/asset`
+* You need to request:
+  * `/api/assets/path/to/asset` 
 
-Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
->[!NOTE]
->Acesso ao:
->
->* `/api/assets` **não** precisa do uso do  `.model` seletor.
->* `/content/path/to/page` **** Não requer o uso do  `.model` seletor.
-
-
-O método HTTP determina a operação a ser executada:
-
-* **GET**  - para recuperar uma representação JSON de um ativo ou uma pasta
-* **POST**  - para criar novos ativos ou pastas
-* **PUT**  - para atualizar as propriedades de um ativo ou pasta
-* **DELETE**  - para excluir um ativo ou uma pasta
+For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, request `/api/assets/wknd/en/adventures/cycling-tuscany.json` 
 
 >[!NOTE]
+>Access over:
 >
->O corpo da solicitação e/ou os parâmetros de URL podem ser usados para configurar algumas dessas operações; por exemplo, defina que uma pasta ou um ativo deve ser criado por uma solicitação **POST**.
+>* `/api/assets` **does not** need the use of the `.model` selector.
+>* `/content/path/to/page` **does** require the use of the `.model` selector.
 
-O formato exato das solicitações compatíveis é definido na documentação de Referência da API.
+The HTTP method determines the operation to be executed:
 
-### Comportamento transacional {#transactional-behavior}
-
-Todas as solicitações são atômicas.
-
-Isso significa que as solicitações subsequentes (`write`) não podem ser combinadas em uma única transação que pode ter êxito ou falhar como uma única entidade.
-
-### Segurança {#security}
-
-Se a API REST do Assets for usada em um ambiente sem requisitos de autenticação específicos, AEM filtro CORS precisará ser configurado corretamente.
+* **GET** - to retrieve a JSON representation of an asset or a folder
+* **POST** - to create new assets or folders
+* **PUT** - to update the properties of an asset or folder
+* **DELETE** - to delete an asset or folder
 
 >[!NOTE]
 >
->Para obter mais informações, consulte:
->
->* Explicação do CORS/AEM
->* Vídeo - Desenvolvimento do CORS com AEM
+>The request body and/or URL parameters can be used to configure some of these operations; for example, define that a folder or an asset should be created by a **POST** request.
 
+The exact format of supported requests is defined in the API Reference documentation. 
 
-Em ambientes com requisitos de autenticação específicos, o OAuth é recomendado.
+### Transactional Behavior {#transactional-behavior}
 
-## Recursos disponíveis {#available-features}
+All requests are atomic.
 
-Fragmentos de conteúdo são um tipo específico de ativo, consulte Trabalhar com fragmentos de conteúdo .
+This means that subsequent (`write`) requests cannot be combined into a single transaction that could succeed or fail as a single entity.
 
-Para obter mais informações sobre recursos disponíveis por meio da API, consulte:
+### Security {#security}
 
-* A API REST de ativos (recursos adicionais)
-* Tipos de entidade, onde os recursos específicos para cada tipo suportado (conforme relevante para Fragmentos de conteúdo) são explicados
-
-### Paginação {#paging}
-
-A API REST de ativos suporta paginação (para solicitações do GET) por meio dos parâmetros de URL:
-
-* `offset` - o número da primeira entidade (filho) a recuperar
-* `limit` - o número máximo de entidades devolvidas
-
-A resposta conterá informações de paginação como parte da seção `properties` da saída SIREN. Esta propriedade `srn:paging` contém o número total de entidades (filho) ( `total`), o deslocamento e o limite ( `offset`, `limit`) conforme especificado na solicitação.
+If the Assets REST API is used within an environment without specific authentication requirements, AEM's CORS filter needs to be configured correctly.
 
 >[!NOTE]
 >
->A paginação normalmente é aplicada em entidades de contêiner (ou seja, pastas ou ativos com representações), pois está relacionada aos filhos da entidade solicitada.
+>For further information see:
+>
+>* CORS/AEM explained
+>* Video - Developing for CORS with AEM
 
-#### Exemplo: Paginação {#example-paging}
+In environments with specific authentication requirements, OAuth is recommended.
+
+## Available Features {#available-features}
+
+Content Fragments are a specific type of Asset, see Working with Content Fragments.
+
+For further information about features available through the API see:
+
+* The Assets REST API (Additional Resources) 
+* Entity Types, where the features specific to each supported type (as relevant to Content Fragments) are explained 
+
+### Paging {#paging}
+
+The Assets REST API supports paging (for GET requests) via the URL parameters:
+
+* `offset` - the number of the first (child) entity to retrieve
+* `limit` - the maximum number of entities returned
+
+The response will contain paging information as part of the `properties` section of the SIREN output. This `srn:paging` property contains the total number of (child) entities ( `total`), the offset and the limit ( `offset`, `limit`) as specified in the request.
+
+>[!NOTE]
+>
+>Paging is typically applied on container entities (i.e. folders or assets with renditions), as it relates to the children of the requested entity.
+
+#### Example: Paging {#example-paging}
 
 `GET /api/assets.json?offset=2&limit=3`
 
@@ -168,33 +165,34 @@ A resposta conterá informações de paginação como parte da seção `properti
 ...
 ```
 
-## Tipos de entidade {#entity-types}
+## Entity Types {#entity-types}
 
-### Pastas {#folders}
+### Folders {#folders}
 
-As pastas atuam como contêineres para ativos e outras pastas. Eles refletem a estrutura do repositório de conteúdo AEM.
+Folders act as containers for assets and other folders. They reflect the structure of the AEM content repository.
 
-A API REST do Assets expõe o acesso às propriedades de uma pasta; por exemplo, seu nome, título etc. Os ativos são expostos como entidades filhas de pastas e subpastas.
+The Assets REST API exposes access to the properties of a folder; for example its name, title, etc. Assets are exposed as child entities of folders, and sub-folders.
 
 >[!NOTE]
 >
->Dependendo do tipo de ativo dos ativos e pastas filhos, a lista de entidades filhas já pode conter o conjunto completo de propriedades que define a respectiva entidade filho. Como alternativa, apenas um conjunto reduzido de propriedades pode ser exposto para uma entidade nesta lista de entidades-filho.
+>Depending on the asset type of the child assets and folders the list of child entities may already contain the full set of properties that defines the respective child entity. Alternatively, only a reduced set of properties may be exposed for an entity in this list of child entities.
 
 ### Assets {#assets}
 
-Se um ativo for solicitado, a resposta retornará seus metadados; como título, nome e outras informações conforme definido pelo respectivo schema de ativos.
+If an asset is requested, the response will return its metadata; such as title, name and other information as defined by the respective asset schema.
 
-Os dados binários de um ativo são expostos como um link SIREN do tipo `content`.
+The binary data of an asset is exposed as a SIREN link of type `content`.
 
-Os ativos podem ter várias representações. Normalmente, elas são expostas como entidades secundárias, sendo uma exceção uma representação em miniatura, que é exposta como um link do tipo `thumbnail` ( `rel="thumbnail"`).
+Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
+-->
 
-### Fragmentos de conteúdo {#content-fragments}
+## API HTTP de ativos e fragmentos de conteúdo {#assets-http-api-content-fragments}
 
-Um Fragmento de conteúdo é um tipo especial de ativo. Eles podem ser usados para acessar dados estruturados, como textos, números, datas, entre outros.
+Fragmentos de conteúdo são usados para entrega sem cabeçalho, e um Fragmento de conteúdo é um tipo especial de ativo. Eles são usados para acessar dados estruturados, como textos, números, datas, entre outros.
 
 Como há várias diferenças nos ativos *padrão* (como imagens ou áudio), algumas regras adicionais se aplicam ao seu manuseio.
 
-#### Representação {#representation}
+### Representação {#representation}
 
 Fragmentos de conteúdo:
 
@@ -203,21 +201,54 @@ Fragmentos de conteúdo:
 
 * Também são considerados atômicos, ou seja, os elementos e as variações são expostos como parte das propriedades do fragmento vs. como links ou entidades filhas. Isso permite acesso eficiente à carga de um fragmento.
 
-#### Modelos de conteúdo e fragmentos de conteúdo {#content-models-and-content-fragments}
+### Modelos de conteúdo e fragmentos de conteúdo {#content-models-and-content-fragments}
 
 Atualmente, os modelos que definem a estrutura de um fragmento de conteúdo não são expostos por meio de uma API HTTP. Portanto, o *consumidor* precisa saber sobre o modelo de um fragmento (pelo menos um mínimo) - embora a maioria das informações possa ser inferida da carga; como tipos de dados, etc. fazem parte da definição.
 
 Para criar um novo fragmento de conteúdo, o caminho (repositório interno) do modelo deve ser fornecido.
 
-#### Conteúdo associado {#associated-content}
+### Conteúdo associado {#associated-content}
 
 O conteúdo associado não está exposto no momento.
 
 ## Uso da API REST do Assets {#using-aem-assets-rest-api}
 
+### Acesso {#access}
+
+A API REST do Assets usa o terminal `/api/assets` e requer o caminho do ativo para acessá-lo (sem o `/content/dam` à esquerda).
+
+* Isso significa que para acessar o ativo em:
+   * `/content/dam/path/to/asset`
+* Você precisa solicitar:
+   * `/api/assets/path/to/asset`
+
+Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+
+>[!NOTE]
+>Acesso ao:
+>
+>* `/api/assets` **não** precisa do uso do  `.model` seletor.
+>* `/content/path/to/page` **** Não requer o uso do  `.model` seletor.
+
+
+### Operação {#operation}
+
+O método HTTP determina a operação a ser executada:
+
+* **GET**  - para recuperar uma representação JSON de um ativo ou uma pasta
+* **POST**  - para criar novos ativos ou pastas
+* **PUT**  - para atualizar as propriedades de um ativo ou pasta
+* **DELETE**  - para excluir um ativo ou uma pasta
+
+>[!NOTE]
+>
+>O corpo da solicitação e/ou os parâmetros de URL podem ser usados para configurar algumas dessas operações; por exemplo, defina que uma pasta ou um ativo deve ser criado por uma solicitação **POST**.
+
+O formato exato das solicitações compatíveis é definido na documentação de Referência da API.
+
 O uso pode ser diferente dependendo se você está usando um autor ou um ambiente de publicação AEM, juntamente com seu caso de uso específico.
 
-* É altamente recomendável que a criação seja vinculada a uma instância do autor ([e atualmente não há como replicar um fragmento para publicar usando essa API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
+* É altamente recomendável que a criação seja vinculada a uma instância do autor (e atualmente não há como replicar um fragmento para publicar usando essa API).
 * A entrega é possível de ambos, pois AEM serve o conteúdo solicitado somente no formato JSON.
 
    * O armazenamento e o delivery de uma instância de autor de AEM devem ser suficientes para aplicativos de biblioteca de mídia por trás do firewall.
@@ -230,7 +261,7 @@ O uso pode ser diferente dependendo se você está usando um autor ou um ambient
 
 >[!NOTE]
 >
->Para obter mais detalhes, consulte a [Referência da API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). Especificamente, [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>Para obter mais detalhes, consulte a Referência da API. Especificamente, [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Leitura/entrega {#read-delivery}
 
@@ -299,6 +330,7 @@ Você deve continuar sua jornada sem periféricos de AEM ao revisar o documento 
 * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 * [API REST de fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [Referência da API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
+* [API Adobe Experience Manager Assets - Fragmentos de conteúdo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
 * [AEM Core Components](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
 * [Explicação do CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
