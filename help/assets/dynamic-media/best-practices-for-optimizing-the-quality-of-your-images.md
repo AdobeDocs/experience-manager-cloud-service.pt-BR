@@ -1,14 +1,14 @@
 ---
 title: Práticas recomendadas para otimização da qualidade de imagens
-description: Conheça as práticas recomendadas que você pode usar no Dynamic Media para otimizar a qualidade dos ativos de imagem.
+description: Conheça as práticas recomendadas para otimizar a qualidade de seus ativos de imagem usando o Dynamic Media.
 contentOwner: Rick Brough
 feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1478'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 A otimização da qualidade da imagem pode ser um processo demorado, pois muitos fatores contribuem para a renderização de resultados aceitáveis. O resultado é parcialmente subjetivo porque os indivíduos percebem a qualidade da imagem de forma diferente. A experimentação estruturada é fundamental.
 
-AEM inclui mais de 100 comandos de delivery de imagens Dynamic Media para ajustar e otimizar imagens e resultados de renderização. As diretrizes a seguir podem ajudar você a simplificar o processo e obter bons resultados rapidamente usando alguns comandos essenciais e práticas recomendadas.
+O Adobe Experience Manager inclui mais de 100 comandos de delivery de imagens Dynamic Media para ajustar e otimizar imagens e resultados de renderização. As diretrizes a seguir podem ajudar você a simplificar o processo e obter bons resultados rapidamente usando alguns comandos essenciais e práticas recomendadas.
 
 ## Práticas recomendadas para o formato de imagem (`&fmt=`) {#best-practices-for-image-format-fmt}
 
@@ -41,13 +41,13 @@ Como prática recomendada para o dimensionamento de imagem, use `&wid=<value>&he
 
 ## Práticas recomendadas para nitidez da imagem {#best-practices-for-image-sharpening}
 
-A nitidez da imagem é o aspecto mais complexo do controle de imagens em seu site, e onde muitos erros são cometidos. Reserve tempo para saber mais sobre como a nitidez e o mascaramento em nitidez funcionam no AEM, referindo-se aos seguintes recursos úteis:
+A nitidez da imagem é o aspecto mais complexo do controle de imagens em seu site, e onde muitos erros são cometidos. Reserve tempo para saber mais sobre como a nitidez e o mascaramento nítido funcionam no Experience Manager, referindo-se aos seguintes recursos úteis:
 
-* O white paper de práticas recomendadas [Nitidez de imagens no Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) também se aplica a AEM.
+* O white paper de práticas recomendadas [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) também se aplica ao Experience Manager.
 
-* Assista [Usando a nitidez da imagem com AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Assista [Usando a nitidez da imagem com o Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-Com AEM, você pode ajustar a nitidez das imagens na assimilação, na entrega ou em ambas. No entanto, normalmente, é melhor ajustar a nitidez das imagens usando apenas um método ou o outro, mas não ambos. A nitidez de imagens na entrega, em um URL, normalmente fornece os melhores resultados.
+Com o Experience Manager, é possível aprimorar as imagens na ingestão, na entrega ou em ambos. No entanto, normalmente, é melhor ajustar a nitidez das imagens usando apenas um método ou o outro, mas não ambos. A nitidez de imagens na entrega, em um URL, normalmente fornece os melhores resultados.
 
 Existem dois métodos de nitidez de imagem que você pode usar:
 
@@ -66,11 +66,11 @@ Existem dois métodos de nitidez de imagem que você pode usar:
 
       Para obter mais informações sobre como você define esses três parâmetros, incluindo práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
 
-      Tópico de Ajuda AEM sobre Nitidez de uma imagem.
+      * O white paper de práticas recomendadas [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) também se aplica ao Experience Manager.
 
-      White paper de práticas recomendadas [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf).
+      * Assista [Usando a nitidez da imagem com o Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-      * AEM também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se o mascaramento com nitidez é aplicado a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
+      * O Experience Manager também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se o mascaramento com nitidez é aplicado a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
 
 
 
@@ -100,7 +100,7 @@ Como prática recomendada para a compactação JPG, use `&qlt=85,0`.
 
 ## Práticas recomendadas para dimensionamento JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-`jpegSize` é um parâmetro útil se você quiser garantir que uma imagem não exceda um determinado tamanho para entrega em dispositivos com memória limitada.
+O parâmetro `jpegSize` é útil se você quiser garantir que uma imagem não exceda um determinado tamanho para entrega em dispositivos com memória limitada.
 
 * Esse parâmetro é definido em kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Ela define o tamanho máximo permitido para a entrega de imagens.
 * `&jpegSize=` interage com o parâmetro de compactação JPG  `&qlt=`. Se a resposta JPG com o parâmetro de compactação JPG especificado (`&qlt=`) não exceder o valor jpegSize, a imagem será retornada com `&qlt=`, conforme definido. Caso contrário, `&qlt=` será reduzido gradualmente até que a imagem se ajuste ao tamanho máximo permitido ou até que o sistema determine que não é possível ajustar e retorne um erro.
@@ -123,4 +123,4 @@ Se os resultados de nitidez ainda não forem satisfatórios, aumente o raio em i
 
 * Tente e teste diferentes parâmetros em tempo real, diretamente em um URL.
 * Como prática recomendada, lembre-se de que é possível agrupar comandos do Dynamic Media Image Serving em uma predefinição de imagem. Uma predefinição de imagem é basicamente macros de comando de URL com nomes predefinidos personalizados, como `$thumb_low$` e `&product_high$`. O nome predefinido personalizado em um caminho de URL chama essas predefinições. Essa funcionalidade ajuda você a gerenciar comandos e configurações de qualidade para diferentes padrões de uso de imagens no seu site e reduz o tamanho geral dos URLs.
-* O Experience Manager também oferece formas mais avançadas de ajustar a qualidade da imagem, como aplicar imagens de nitidez na assimilação. Para ajustar e otimizar os resultados de renderização, o [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) pode ajudá-lo com insight personalizado e práticas recomendadas.
+* O Experience Manager também oferece formas mais avançadas de ajustar a qualidade da imagem, como aplicar imagens de nitidez na assimilação. Para ajustar e otimizar a renderização, [Serviços de consultoria Adobe](https://business.adobe.com/customers/consulting-services/main.html) pode ajudá-lo com informações personalizadas e práticas recomendadas.
