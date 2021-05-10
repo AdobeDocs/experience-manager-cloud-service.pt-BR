@@ -6,9 +6,9 @@ feature: Gerenciamento de ativos, Perfis de imagem, Perfis de vídeo
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Um conceito importante relacionado ao uso de perfis de imagem ou perfis de vídeo do Dynamic Media é que eles são atribuídos a pastas. Dentro de um perfil estão as configurações de uma imagem ou vídeo. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, nomear arquivos e pastas, organizar subpastas e manipular os arquivos nessas pastas afeta como esses ativos são processados pelo perfil.
 
-Ao usar estratégias consistentes e apropriadas de nomeação de arquivos e pastas, juntamente com uma boa prática de metadados, você pode aproveitar ao máximo sua coleção de ativos digitais e garantir que os arquivos corretos sejam processados pelo perfil correto.
+Ao usar estratégias consistentes e apropriadas de nomeação de arquivos e pastas, juntamente com uma boa prática de metadados, você aproveita ao máximo sua coleção de ativos digitais e garante que os arquivos corretos sejam processados pelo perfil correto.
 
 Consulte [Sobre Perfil de imagem do Dynamic Media e Perfis de vídeo](about-image-video-profiles.md).
 
