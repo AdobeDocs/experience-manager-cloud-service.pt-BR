@@ -9,9 +9,9 @@ feature: Ativos 3D
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: 58d09d12ce2e8415eb50c288eeab3167a92fae57
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2248'
 ht-degree: 5%
 
 ---
@@ -250,8 +250,8 @@ Consulte também [Publicar páginas](/help/sites-cloud/authoring/fundamentals/pu
 
 **Para publicar ativos 3D estáticos do Dynamic Media:**
 
-1. Abra um ativo 3D (formato de arquivo GLB, OBJ ou STL) para exibi-lo na página Detalhes.
-1. Na barra de ferramentas, toque em **[!UICONTROL Publicação rápida]**.
+1. Abra um ativo 3D (formato de arquivo GLB, OBJ ou STL).
+1. Na página Detalhes , na barra de ferramentas, toque em **[!UICONTROL Publicação rápida]**.
 
    ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
