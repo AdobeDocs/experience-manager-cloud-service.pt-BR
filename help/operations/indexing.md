@@ -3,9 +3,9 @@ title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
+source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -57,6 +57,12 @@ Você precisa preparar um novo pacote de definição de índice que contenha a d
 que precisa então ficar em `ui.apps/src/main/content/jcr_root`. As pastas de sub-raiz não são compatíveis a partir de agora.
 
 O pacote da amostra acima é criado como `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+
+>[!NOTE]
+>
+>Qualquer pacote de conteúdo que contenha definições de índice deve ter a seguinte propriedade definida no arquivo de propriedades do pacote de conteúdo, localizado em `/META-INF/vault/properties.xml`:
+>
+>`noIntermediateSaves=true`
 
 ### Implantando Definições de Índice {#deploying-index-definitions}
 
