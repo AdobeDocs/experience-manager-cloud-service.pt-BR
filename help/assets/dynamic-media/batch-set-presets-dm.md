@@ -6,9 +6,9 @@ feature: Predefinições de imagem,Predefinições do visualizador
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3435'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ Para ajudar você a entender a importância de usar uma convenção de nomenclat
 
 A página **[!UICONTROL Predefinição de conjunto de lotes]** em [!DNL Dynamic Media] permite criar, editar ou excluir predefinições de conjunto de lotes e aplicar ou remover predefinições de conjunto de lotes de ou para pastas de ativos. Você pode usar as listas suspensas do campo de formulário para definir uma predefinição de conjunto de lotes ou usar o campo **[!UICONTROL Código bruto]**, que permite digitar a sintaxe de expressão regular.
 
-Você pode criar quantas predefinições de conjuntos em lotes forem necessárias para cobrir todas as tarefas de assimilação de ativos forem necessárias.
+Você pode criar muitas predefinições de conjuntos em lotes para cobrir todos os trabalhos de assimilação de ativos necessários.
 
-**Sobre a Convenção de Nomenclatura de Ativos**
+### Sobre a Convenção de Nomenclatura de Ativos
 
 A área **[!UICONTROL Convenção de Nomenclatura de Ativos]** na página **[!UICONTROL Predefinição do Conjunto de Lotes]** tem dois elementos que podem ser usados para definir a predefinição do conjunto de lotes: **[!UICONTROL Corresponder]** e **[!UICONTROL Nome Base]**. Esses elementos permitem definir uma convenção de nomenclatura e identificar a parte da convenção usada para nomear o conjunto no qual eles estão contidos. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
@@ -51,7 +51,7 @@ Por exemplo, a sintaxe de uma expressão regular de correspondência literal pod
 
 `(\w+)-\w+-\w+`
 
-**Sobre a ordem de sequência**
+### Sobre a ordem de sequência
 
 Opcionalmente, é possível definir a ordem em que as imagens são exibidas depois que o conjunto de imagens ou o conjunto de rotação é agrupado em [!DNL Dynamic Media]. Por padrão, os ativos são classificados alfanumérico. No entanto, é possível usar uma lista separada por vírgulas de expressões regulares para definir a ordem.
 
@@ -67,7 +67,7 @@ Quando você terminar de criar uma predefinição de conjunto de lotes, aplique-
 
 **Para criar uma predefinição de conjunto de lotes para um conjunto de imagens ou um conjunto de rotação:**
 
-1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -113,7 +113,7 @@ Consulte [Criação de uma predefinição de conjunto de lotes para um conjunto 
 | Incluir ativos derivados | Opcional. Para que o IPS de [!DNL Dynamic Media] (Sistema de produção de imagem) inclua imagens geradas ou &quot;derivadas&quot; com seu Conjunto de rotação ou Conjunto de imagens, selecione **[!UICONTROL Sim]** (padrão). Um ativo derivado é uma imagem que não foi carregada diretamente por um usuário. Em vez disso, o ativo foi produzido pelo IPS quando um ativo principal foi carregado. Por exemplo, um ativo de imagem que o IPS gerou de uma página em um PDF, no momento em que o PDF foi carregado em [!DNL Dynamic Media], é considerado um ativo derivado. |
 | Pasta de destino | Opcional. Se você definir grandes números de conjuntos de imagens ou de rotação, o Adobe recomenda manter esses conjuntos separados das pastas que contêm os próprios ativos. Dessa forma, considere criar uma pasta Conjuntos de imagens ou Conjuntos de rotação e redirecione o aplicativo para colocar conjuntos gerados por conjuntos em lote aqui.<br>Nesse caso, especifique qual pasta na estrutura de pastas do Experience Manager Assets (`/content/dam`) tem a predefinição de conjunto de lotes ativa. Certifique-se de que a pasta esteja habilitada para a sincronização [!DNL Dynamic Media] para permitir como uma pasta de destino. Consulte [Configuração da publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Mais de uma pasta pode ter uma determinada predefinição de conjunto de lotes atribuída a ela, se você aplicar a predefinição por meio das  **[!UICONTROL Propriedades]** da pasta. Consulte [Aplicar predefinições de conjuntos em lotes da página Propriedades de uma pasta de ativos](#apply-bsp-to-folders-via-properties).<br>Se você não especificar uma pasta, o conjunto de imagens gerado pela predefinição do conjunto de lotes ou o conjunto de rotação será criado na mesma pasta da pasta de ativos para a qual você fez upload. |
 | **[!UICONTROL Definir convenção de nomeação]** |  |
-| Prefixo<br>ou<br>Sufixo | Opcional. Insira um prefixo, sufixo ou ambos nos respectivos campos.<br>Os campos de prefixo e sufixo permitem criar quantas predefinições de conjunto de lotes usam uma convenção de nomenclatura de arquivo personalizada e alternativa para um conjunto específico de conteúdo. Esse método é especialmente útil nos casos em que há uma exceção no esquema de nomeação padrão definido por uma empresa.<br>O prefixo ou sufixo é adicionado ao  **[!UICONTROL Nome]** básico definido na área  **[!UICONTROL Convenção de nomenclatura de ativos]** . Ao adicionar um prefixo ou sufixo, você garante que seu conjunto de imagens ou conjunto de rotação seja criado exclusiva e independentemente de outros ativos. Também pode servir para ajudar outras pessoas a identificar os tipos de arquivo. Por exemplo, para determinar um modo de cor usado, é possível adicionar como um prefixo ou sufixo `rgb` ou `cmyk`.<br>Embora não seja necessário especificar uma convenção de nomenclatura de conjunto para usar a funcionalidade predefinida de conjunto de lotes, a prática recomendada é usar a convenção de nomenclatura de conjunto. Essa prática permite definir quantos elementos da convenção de nomenclatura você deseja agrupar em um conjunto para ajudar a simplificar a criação de conjuntos em lotes. |
+| Prefixo<br>ou<br>Sufixo | Opcional. Insira um prefixo, sufixo ou ambos nos respectivos campos.<br>Os campos de prefixo e sufixo permitem que você crie predefinições de conjuntos de lotes usando uma convenção de nomenclatura de arquivo personalizada e alternativa para um conjunto específico de conteúdo. Esse método é especialmente útil nos casos em que há uma exceção no esquema de nomeação padrão definido por uma empresa.<br>O prefixo ou sufixo é adicionado ao  **[!UICONTROL Nome]** básico definido na área  **[!UICONTROL Convenção de nomenclatura de ativos]** . Ao adicionar um prefixo ou sufixo, você garante que seu conjunto de imagens ou conjunto de rotação seja criado exclusiva e independentemente de outros ativos. Também pode servir para ajudar outras pessoas a identificar os tipos de arquivo. Por exemplo, para determinar um modo de cor usado, é possível adicionar como um prefixo ou sufixo `rgb` ou `cmyk`.<br>Embora não seja necessário especificar uma convenção de nomenclatura de conjunto para usar a funcionalidade predefinida de conjunto de lotes, a prática recomendada é usar a convenção de nomenclatura de conjunto. Essa prática permite definir quantos elementos da convenção de nomenclatura você deseja agrupar em um conjunto para ajudar a simplificar a criação de conjuntos em lotes. |
 | **[!UICONTROL Resultados da regra - RegX]** |  |
 | Convenção de nomenclatura de ativos - Correspondência | Somente leitura. Exibe a sintaxe da expressão regular com base nas opções de formulário Corresponder escolhidas para o código bruto inserido. |
 | Convenção de Nomenclatura de Ativos - Nome Base | Somente leitura. Exibe a sintaxe da expressão regular com base nas opções de formulário Nome base escolhidas para o código bruto inserido. |
@@ -143,7 +143,7 @@ Reprocesse ativos em uma pasta se você enfrentar uma das duas situações a seg
 
 ### Aplicação de predefinições de conjuntos em lotes a pastas de ativos a partir da página Predefinição de conjuntos em lotes {#apply-bsp-to-folders-via-bsp-page}
 
-1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
 1. Na página **[!UICONTROL Predefinições de conjunto de lotes]**, à esquerda da coluna **[!UICONTROL Nome de predefinição]**, marque a caixa de seleção de cada predefinição de conjunto de lotes que deseja aplicar às pastas.
 1. Na barra de ferramentas, toque em **[!UICONTROL Aplicar predefinição de lote às pastas]**.
 1. Na página **[!UICONTROL Select Folders]**, marque a caixa de seleção de cada pasta à qual você deseja que as predefinições do conjunto de lotes sejam aplicadas.
@@ -151,7 +151,7 @@ Reprocesse ativos em uma pasta se você enfrentar uma das duas situações a seg
 
 ### Aplicação de predefinições de conjunto de lotes da página Propriedades de uma pasta de ativos {#apply-bsp-to-folders-via-properties}
 
-1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]**.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]**.
 1. Navegue até uma pasta à qual deseja aplicar uma ou mais predefinições de conjunto de lotes.
 1. Na página , à esquerda da coluna **[!UICONTROL Name]**, marque a caixa de seleção de uma pasta.
 1. Na barra de ferramentas, toque em **[!UICONTROL Propriedades]**.
@@ -159,7 +159,7 @@ Reprocesse ativos em uma pasta se você enfrentar uma das duas situações a seg
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
-1. Em **[!UICONTROL Predefinições de conjunto de lotes]**, na caixa de listagem suspensa **[!UICONTROL Nome da predefinição]**, selecione o nome de uma predefinição de conjunto de lotes que deseja aplicar. A captura de tela acima mostra duas predefinições de conjunto de lotes selecionadas aplicadas à pasta de ativos.
+1. Em **[!UICONTROL Predefinições de conjunto de lotes]**, na caixa de listagem suspensa **[!UICONTROL Nome da predefinição]**, selecione o nome de uma predefinição de conjunto de lotes que deseja aplicar. A captura de tela acima mostra duas predefinições de conjunto de lotes selecionadas que são aplicadas à pasta de ativos.
 
    Se não houver nomes predefinidos de conjuntos de lotes na caixa de listagem suspensa **[!UICONTROL Nome da predefinição]**, significa que você ainda não criou predefinições de conjuntos de lotes. Consulte [Criar uma predefinição de conjunto de lotes para um conjunto de imagens ou um conjunto de rotação](#creating-bsp).
 
@@ -179,7 +179,7 @@ Se desejar que a predefinição recém-editada seja reaplicada aos ativos existe
 
 **Para editar uma predefinição de conjunto de lotes:**
 
-1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
 1. Na página **[!UICONTROL Predefinições do conjunto de lotes]**, à esquerda da coluna **[!UICONTROL Nome da predefinição]**, verifique a predefinição do conjunto de lotes que deseja alterar.
 1. Na barra de ferramentas, toque em **[!UICONTROL Editar predefinição do conjunto de lotes]**.
 1. Edite a predefinição conforme necessário.
@@ -193,7 +193,7 @@ Se você copiar uma predefinição existente que é referência por pastas de at
 
 **Para copiar uma predefinição de conjunto de lotes existente:**
 
-1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
 1. Na página **[!UICONTROL Predefinições do conjunto de lotes]**, à esquerda da coluna **[!UICONTROL Nome da predefinição]**, marque a caixa de seleção da predefinição do conjunto de lotes que deseja copiar.
 1. Na barra de ferramentas, toque em **[!UICONTROL Copiar]**.
 1. Na caixa de diálogo **[!UICONTROL Copiar predefinição do conjunto de lotes]**, na caixa de texto **[!UICONTROL Título]**, digite um novo nome para a predefinição.
@@ -215,7 +215,7 @@ Há dois métodos que você pode usar para remover predefinições de conjuntos 
 
 ### Removendo predefinições de conjuntos de lotes de pastas por meio da página Predefinição de Conjunto de Lotes {#remove-bsp-from-folders-via-bsp-page}
 
-1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
 1. Na página **[!UICONTROL Predefinições de conjunto de lotes]**, à esquerda da coluna **[!UICONTROL Nome de predefinição]**, marque a caixa de seleção de uma ou mais predefinições de conjunto de lotes que você deseja remover de uma ou mais pastas.
 1. Na barra de ferramentas, toque em **[!UICONTROL Remover predefinição de lote das pastas]**.
 
@@ -228,7 +228,7 @@ Há dois métodos que você pode usar para remover predefinições de conjuntos 
 
 ### Removendo predefinições de conjunto de lotes da página Propriedades de uma pasta {#remove-bsp-from-folders-via-properties}
 
-1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]**.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]**.
 1. Navegue até a pasta para a qual deseja remover uma ou mais predefinições de conjunto de lotes.
 1. Na página , à esquerda da coluna **[!UICONTROL Name]**, marque a caixa de seleção de uma pasta.
 1. Na barra de ferramentas, toque em **[!UICONTROL Propriedades]**.
@@ -250,7 +250,7 @@ Se você deseja *remover* predefinições de pastas, consulte [Removendo predefi
 
 **Para excluir predefinições de conjunto de lotes:**
 
-1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de conjunto de lotes]**.
 1. Na página **[!UICONTROL Predefinições de conjunto de lotes]**, à esquerda da coluna **[!UICONTROL Nome de predefinição]**, marque a caixa de seleção de uma ou mais predefinições de conjunto de lotes que você deseja excluir.
 1. Na barra de ferramentas, toque em **[!UICONTROL Excluir predefinições do conjunto de lotes]**.
 
