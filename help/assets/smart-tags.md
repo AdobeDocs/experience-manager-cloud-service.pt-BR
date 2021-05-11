@@ -6,9 +6,9 @@ feature: Tags inteligentes,Marcação
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: d86581f61c9dd7339f7deb8ee1f5e469ce2b5f7c
+source-git-commit: 2633a8fdd8301a38cd044ba822494ed54c564863
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2401'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ As organizações que lidam com ativos digitais cada vez mais usam um vocabulár
 
 Comparado aos vocabulários de linguagem natural, a marcação baseada na taxonomia comercial ajuda a alinhar os ativos aos negócios de uma empresa e garante que os ativos mais relevantes apareçam em pesquisas. Por exemplo, um fabricante de carros pode marcar imagens de carros com nomes de modelo para que somente imagens relevantes sejam exibidas quando pesquisadas para projetar uma campanha promocional.
 
-Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar seu algoritmo de reconhecimento de imagem em sua estrutura de tags e taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos. As novas implantações [!DNL Experience Manager Assets] são integradas a [!DNL Adobe Developer Console] por padrão. Ajuda a configurar a funcionalidade de tags inteligentes com mais rapidez. Nas implantações mais antigas, os administradores podem [configurar manualmente a integração de tags inteligentes](/help/assets/smart-tags-configuration.md#aio-integration).
+Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar seu algoritmo de reconhecimento de imagem em sua estrutura de tags e taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos. [!DNL Experience Manager Assets] por padrão, as implantações são integradas ao  [!DNL Adobe Developer Console] .
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -151,40 +151,42 @@ Para verificar se o serviço de Tags inteligentes é treinado em suas tags no co
 
 ## Marcar ativos {#tag-assets}
 
-Depois de ter treinado o serviço de Tags inteligentes, você pode acionar o fluxo de trabalho de marcação para aplicar tags automaticamente em um conjunto diferente de ativos. Você pode aplicar o workflow de marcação sob demanda ou agendá-lo para execução periódica. O fluxo de trabalho de marcação se aplica a ativos e pastas.
+Depois de ter treinado o serviço de Tags inteligentes, os ativos carregados são automaticamente marcados com tags. [!DNL Experience Manager] aplica as tags apropriadas em tempo quase real. Você pode aplicar o workflow de marcação sob demanda ou agendá-lo para execução periódica. O fluxo de trabalho de marcação se aplica a ativos e pastas.
 
-### Marque ativos no console do fluxo de trabalho {#tagging-assets-from-the-workflow-console}
+<!--
+### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
-1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
-1. Na página **[!UICONTROL Modelos de fluxo de trabalho]**, selecione o fluxo de trabalho **[!UICONTROL Ativos de tags inteligentes do DAM]** e clique em **[!UICONTROL Iniciar fluxo de trabalho]** na barra de ferramentas.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. Na caixa de diálogo **[!UICONTROL Executar fluxo de trabalho]**, navegue até a pasta de carga que contém ativos nos quais você deseja aplicar suas tags automaticamente.
-1. Especifique um título para o fluxo de trabalho e um comentário opcional. Clique em **[!UICONTROL Executar]**.
+1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. Specify a title for the workflow and an optional comment. Click **[!UICONTROL Run]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   *Figura: Navegue até a pasta de ativos e revise as tags para verificar se os ativos estão marcados corretamente. Para obter detalhes, consulte [gerenciar tags inteligentes](#manage-smart-tags-and-searches).*
+   *Figure: Navigate to the asset folder and review the tags to verify whether your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).*
 
-### Marque ativos na linha do tempo {#tagging-assets-from-the-timeline}
+### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
-1. Na interface do usuário [!DNL Assets], selecione a pasta que contém ativos ou ativos específicos aos quais deseja aplicar tags inteligentes.
-1. No canto superior esquerdo, abra a **[!UICONTROL Linha do tempo]**.
-1. Abra as ações na parte inferior da barra lateral esquerda e clique em **[!UICONTROL Iniciar fluxo de trabalho]**.
+1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
+1. From upper-left corner, open the **[!UICONTROL Timeline]**.
+1. Open actions from the bottom of the left sidebar and click **[!UICONTROL Start Workflow]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Selecione o fluxo de trabalho **[!UICONTROL Ativos de tags inteligentes do DAM]** e especifique um título para o fluxo de trabalho.
-1. Clique em **[!UICONTROL Iniciar]**. O fluxo de trabalho aplica suas tags em ativos. Navegue até a pasta de ativos e revise as tags para verificar se os ativos estão marcados corretamente. Para obter detalhes, consulte [gerenciar tags inteligentes](#manage-smart-tags-and-searches).
+1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
+1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify that your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->Nos ciclos de marcação subsequentes, somente os ativos modificados são marcados novamente com tags recém-treinadas. No entanto, mesmo ativos inalterados são marcados se a diferença entre os últimos e os atuais ciclos de marcação do fluxo de trabalho de marcação exceder 24 horas. Para workflows de marcação periódica, os ativos inalterados são marcados quando o intervalo de tempo excede seis meses.
+>In the subsequent tagging cycles, only the modified assets are tagged again with newly trained tags. However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds six months.
 
-### Marcar ativos carregados {#tag-uploaded-assets}
+### Tag uploaded assets {#tag-uploaded-assets}
 
-[!DNL Experience Manager] O pode marcar automaticamente os ativos que os usuários fazem upload para o DAM. Para fazer isso, os administradores configuram um fluxo de trabalho para adicionar uma etapa disponível que marca ativos. Consulte [como ativar as Tags inteligentes para ativos carregados](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+[!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+-->
 
 ## Gerenciar tags inteligentes e pesquisas de ativos {#manage-smart-tags-and-searches}
 
@@ -247,7 +249,6 @@ Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use a pe
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Experience Manager] Configurar para marcação inteligente](smart-tags-configuration.md)
 >* [Saiba como as tags inteligentes ajudam a gerenciar ativos](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [Marcação inteligente de ativos de vídeo](smart-tags-video-assets.md)
+>* [Marque com tags inteligentes os ativos de vídeo](smart-tags-video-assets.md)
 
