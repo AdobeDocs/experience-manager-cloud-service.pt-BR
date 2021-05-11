@@ -5,9 +5,9 @@ feature: Banners em carrossel
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4563'
+source-wordcount: '4556'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Em seu site, um banner de carrossel pode ter a seguinte aparência:
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Aqui você pode navegar pelas imagens clicando nos números. Além disso, os slides giram automaticamente com base em um intervalo de tempo que você pode personalizar. As imagens adicionadas no banner do carrossel são compatíveis com hotspots e mapas de imagem. Os usuários podem tocar em ou ir para um hiperlink ou acessar uma janela de Exibição rápida .
+Aqui você pode navegar pelas imagens clicando nos números. Além disso, os slides giram automaticamente com base em um intervalo de tempo que você pode personalizar. As imagens em um banner de carrossel são compatíveis com hotspots e mapas de imagem. Os usuários podem tocar em ou ir para um hiperlink ou acessar uma janela de Exibição rápida .
 
 Neste exemplo, um usuário tocou ou clicou em um mapa de imagem e acessou a janela Exibição rápida para obter luvas:
 
@@ -34,7 +34,7 @@ Neste exemplo, um usuário tocou ou clicou em um mapa de imagem e acessou a jane
 
 ## Observe como os banners de carrossel são criados {#watch-how-carousel-banners-are-created}
 
-Assista a uma apresentação de 10 minutos e 33 segundos sobre [como os banners de carrossel são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). Você também aprenderá sobre como visualizar, editar e fornecer banners em carrossel.
+Assista a uma apresentação em [como os banners de carrossel são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (Duração: 10 minutos e 33 segundos). Você também aprenderá sobre como visualizar, editar e fornecer banners em carrossel.
 
 >[!NOTE]
 >
@@ -122,12 +122,12 @@ A maioria das implementações da Exibição rápida usa o seguinte paradigma:
 * Os dados da Exibição rápida são traduzidos para o conteúdo em preparação para renderização na página da Web.
 * Por fim, o código front-end renderiza visualmente esse conteúdo na tela.
 
-A abordagem é então visitar diferentes áreas do site existente onde o recurso de Exibição rápida é implementado. Em seguida, acione a Exibição rápida e capture o URL Ajax enviado pela página da Web para carregar os dados ou o conteúdo da Exibição rápida .
+A abordagem é então visitar diferentes áreas do site existente onde o recurso de Exibição rápida é implementado. Em seguida, acione a Exibição rápida e adquira o URL Ajax enviado pela página da Web para carregar os dados ou o conteúdo da Exibição rápida.
 
 Normalmente, não há necessidade de usar ferramentas de depuração especializadas. Os navegadores modernos da Web apresentam inspetores da Web que fazem um trabalho adequado. A seguir estão alguns exemplos de navegadores da Web que incluem inspetores da Web:
 
-* Para ver todas as solicitações HTTP de saída no Google Chrome, pressione F12 (Windows) ou Command-Option-I (Mac) para abrir o painel de ferramentas do Desenvolvedor. Toque na guia Rede.
-* No Firefox, é possível ativar o plug-in do Firebug pressionando F12 (Windows) ou Command-Option-I (Mac). Use a guia Rede ou a ferramenta Inspetor integrada e a guia Rede.
+* Para ver todas as solicitações HTTP de saída no Google Chrome, pressione F12 (Windows®) ou Command-Option-I (Mac) para abrir o painel de ferramentas do Desenvolvedor. Toque na guia Rede.
+* No Firefox, é possível ativar o plug-in do Firebug pressionando F12 (Windows®) ou Command-Option-I (Mac). Use a guia Rede ou a ferramenta Inspetor integrada e a guia Rede.
 
 Quando o monitoramento de rede estiver ativado no navegador, acione a exibição Rápida na página.
 
@@ -191,7 +191,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
 >
 >Usuários não administrativos devem ser adicionados ao grupo **[!UICONTROL dam-users]** para poderem criar ou editar banners de carrossel. Se tiver problemas ao criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo **[!UICONTROL dam-users]**.
 
-**Para criar um Conjunto de carrossel**
+**Para criar um Conjunto de carrossel:**
 
 1. No Assets, navegue até a pasta onde deseja criar o Conjunto de carrossel e toque em **[!UICONTROL Criar > Conjunto de carrossel]**.
 1. Na página Editor de banner de carrossel , toque em **[!UICONTROL Toque para abrir o Seletor de ativo]** para selecionar a imagem do primeiro slide.
@@ -217,19 +217,20 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
    Para excluir um slide, toque ou clique no slide e toque ou clique em **[!UICONTROL Excluir slide]** na barra de ferramentas. Para mover um slide, toque no ícone de reordenação e segure e mova-se para o local desejado.
 
 1. Depois de ter adicionado as imagens nos slides, você pode adicionar um ponto de acesso, mapa de imagem ou ambos à sua imagem. Consulte [adicionar pontos de acesso ou mapas de imagem](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. Você pode alterar o design visual e o comportamento dos conjuntos de carrossel. Toque ou clique nas guias Comportamento e Aparência e ajuste a aparência do banner do carrossel ou o comportamento dos componentes específicos. Consulte [gerenciar predefinições do visualizador](/help/assets/dynamic-media/viewer-presets.md) para obter mais informações sobre como usar o editor do visualizador.
+1. Você pode alterar o design visual e o comportamento dos conjuntos de carrossel. Toque ou clique nas guias **[!UICONTROL Comportamento]** e **[!UICONTROL Aparência]** e ajuste como o banner do carrossel aparece ou como os componentes específicos se comportam. Consulte [gerenciar predefinições do visualizador](/help/assets/dynamic-media/viewer-presets.md) para obter mais informações sobre como usar o editor do visualizador.
 
    >[!NOTE]
    >
    >Para banners de carrossel, você pode ajustar o seguinte:
-   >    * Duração que uma imagem exibe. Por padrão, cada imagem é exibida por 9 segundos.
-   >    * Animação. Por padrão, cada transição de slide está esmaecida. Você pode alterá-lo para uma transição de slide.
-   >    * Estilo dos botões. Os usuários podem girar pelos banners tocando em cada ponto ou número. Você pode alterar o local em que os botões de indicador definidos são exibidos (e se são numéricos ou de estilo pontilhado) e o tamanho deles.
-   >    * Altere o estilo de realce de um mapa de imagem ou o ícone usado para pontos de acesso.
-   >    * Antes de editar uma predefinição do visualizador, escolha o estilo no qual deseja basear a predefinição. Se você não escolher um estilo, ao começar a editar a predefinição do visualizador, perderá todas as suas alterações se alterar para uma predefinição diferente.
+   >
+   >* Duração que uma imagem exibe. Por padrão, cada imagem é exibida por 9 segundos.
+   >* Animação. Por padrão, cada transição de slide está esmaecida. Você pode alterá-lo para uma transição de slide.
+   >* Estilo dos botões. Os usuários podem girar pelos banners tocando em cada ponto ou número. Você pode alterar o local em que os botões de indicador definidos são exibidos (e se são numéricos ou de estilo pontilhado) e o tamanho deles.
+   >* Altere o estilo de realce de um mapa de imagem ou o ícone usado para pontos de acesso.
+   >* Antes de editar uma predefinição do visualizador, escolha o estilo no qual deseja basear a predefinição. Se você não escolher um estilo, ao começar a editar a predefinição do visualizador, perderá todas as suas alterações se alterar para uma predefinição diferente.
 
 
-   Você também pode visualizar como será o banner do carrossel. Consulte [(Opcional) Visualização de banners do carrossel](#optional-previewing-carousel-banners).
+   Você também pode visualizar a aparência do banner do carrossel. Consulte [(Opcional) Visualização de banners do carrossel](#optional-previewing-carousel-banners).
 
 1. Toque em **[!UICONTROL Salvar]** quando terminar.
 
@@ -263,7 +264,7 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**Para adicionar pontos de acesso ou mapas de imagem a um banner de imagem**
+**Para adicionar pontos de acesso ou mapas de imagem a um banner de imagem:**
 
 1. Em Ativos, navegue até o conjunto de carrossel que deseja tornar interativo.
 1. Selecione o conjunto de carrossel e toque em **[!UICONTROL Editar]**. O Editor do visualizador de carrossel é aberto.
@@ -316,7 +317,7 @@ Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/e
          Para contornar esse problema, você pode usar ou criar predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem que você as incorpore com êxito aos Fragmentos de experiência.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   Você também pode visualizar como será o banner do carrossel. Consulte [(Opcional) Visualização de banners do carrossel](#optional-previewing-carousel-banners).
+   Você também pode visualizar a aparência do banner do carrossel. Consulte [(Opcional) Visualização de banners do carrossel](#optional-previewing-carousel-banners).
 
 1. Toque em **[!UICONTROL Salvar]**.
 1. Publique o conjunto de carrossel. A publicação cria o código incorporado ou URL que você pode usar na página do site. Se você for um cliente do Experience Manager Sites , adicione o conjunto de carrossel diretamente à sua página da Web.
@@ -339,7 +340,7 @@ Você pode executar várias tarefas de edição em Conjuntos de carrossel, como 
 * Exclua o Conjunto de carrossel.
 * Adicione ou edite pontos de acesso e mapas de imagem. Consulte também [Trabalhar com seletores](/help/assets/dynamic-media/working-with-selectors.md).
 
-**Para editar um conjunto de carrossel**
+**Para editar um conjunto de carrossel:**
 
 1. Siga um destes procedimentos:
 
@@ -364,7 +365,7 @@ Você pode executar várias tarefas de edição em Conjuntos de carrossel, como 
 
 ## (Opcional) Visualização dos banners do carrossel {#optional-previewing-carousel-banners}
 
-Você pode usar a Visualização para ver a aparência do seu banner de carrossel para os clientes. Usar a Visualização também permite testar os pontos de acesso e mapas de imagem do banner de carrossel para garantir que eles se comportem conforme esperado.
+Você pode usar a Visualização para ver como o banner do carrossel é exibido para os clientes. Usar a Visualização também permite testar os pontos de acesso e mapas de imagem do banner de carrossel para garantir que eles se comportem conforme esperado.
 
 Quando estiver satisfeito com o banner do carrossel, você pode publicá-lo.
 Consulte [Incorporando o visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
@@ -373,7 +374,7 @@ Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/dynamic-medi
 
 Você pode visualizar banners de carrossel no Editor de carrossel (método preferencial) ou na lista **[!UICONTROL Visualizadores]**.
 
-**Para visualizar banners de carrossel**
+**Para visualizar os banners de carrossel:**
 
 1. Em **[!UICONTROL Assets]**, navegue até um banner de carrossel existente que você criou e toque para abri-lo.
 1. Toque em **[!UICONTROL Editar]**.
@@ -384,7 +385,7 @@ Você pode visualizar banners de carrossel no Editor de carrossel (método prefe
 1. Toque em **[!UICONTROL Visualizar]**.
 1. Para testar as ações associadas, toque nos pontos de acesso ou mapas de imagem na imagem.
 
-**Para visualizar banners de carrossel na lista Visualizadores**
+**Para visualizar banners de carrossel na lista Visualizadores:**
 
 1. Em **[!UICONTROL Assets]**, navegue até um banner de carrossel existente que você criou e toque para abri-lo.
 1. Próximo ao canto superior esquerdo da página Visualização, clique no ícone Conteúdo.
@@ -452,6 +453,6 @@ Consulte [Identificação de variáveis de ponto de acesso e mapa de imagem](#id
 
 A última etapa para acionar o URL de visualização rápida e ativar o painel de visualização rápida provavelmente requer a assistência de uma pessoa de TI front-end do seu departamento de TI. Eles têm o conhecimento de saber mais sobre como acionar com precisão a implementação da visualização rápida a partir da etapa adequada, com um URL de visualização rápida pronto para uso.
 
-## Usando visualizações rápidas para criar janelas pop-up personalizadas {#using-quickviews-to-create-custom-pop-ups}
+## Usando visualizações rápidas para criar pop-up personalizado do Windows® {#using-quickviews-to-create-custom-pop-ups}
 
-Consulte [Usando visualizações rápidas para criar janelas pop-up personalizadas](/help/assets/dynamic-media/custom-pop-ups.md).
+Consulte [Usar visualizações rápidas para criar janelas pop-up personalizadas do Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
