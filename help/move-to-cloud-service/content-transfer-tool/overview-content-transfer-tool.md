@@ -3,10 +3,10 @@ title: Visão geral da ferramenta Transferência de conteúdo
 description: Visão geral da ferramenta Transferência de conteúdo
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
+source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 81%
+source-wordcount: '865'
+ht-degree: 73%
 
 ---
 
@@ -39,10 +39,11 @@ Existem duas fases associadas à transferência de conteúdo:
 
 Um *conjunto de migração* possui os seguintes atributos:
 
-* No máximo quatro conjuntos de migração podem ser criados e mantidos por vez durante a atividade de transferência de conteúdo.
+* No máximo dez conjuntos de migração podem ser criados e mantidos por vez durante a atividade de transferência de conteúdo.
 * Cada conjunto de migração deve ter um nome exclusivo.
 * Se um conjunto de migração estiver inativo por mais de 30 dias, ele será excluído automaticamente.
 * Sempre que você cria um conjunto de migração, ele é associado a um ambiente específico. Você só pode assimilar em um autor ou uma instância de publicação do mesmo ambiente.
+
 
 A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior.
 
@@ -81,3 +82,5 @@ A fórmula geral para calcular o espaço livre em disco necessário é a seguint
    * *tamanho do armazenamento de dados*: a ferramenta Transferência de conteúdo usa 64 GB, mesmo que o armazenamento de dados real seja maior.
    * *tamanho do armazenamento do nó*: tamanho do diretório do repositório de segmentos ou tamanho do banco de dados MongoDB.
 Assim, para um tamanho de armazenamento de segmentos de 20 GB, o espaço livre em disco necessário seria de 94 GB.
+
+* Um conjunto de migração precisa ser mantido durante toda a atividade de transferência de conteúdo para oferecer suporte a atualizações complementares de conteúdo. Como é possível criar e manter no máximo dez conjuntos de migração por vez durante a atividade de transferência de conteúdo, é recomendável dividir o repositório de conteúdo adequadamente para garantir que você não fique sem conjuntos de migração.  durante/estruturar o conjunto de migração em conformidade.
