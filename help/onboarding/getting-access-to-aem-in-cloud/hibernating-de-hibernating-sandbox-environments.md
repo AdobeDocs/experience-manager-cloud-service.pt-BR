@@ -1,14 +1,14 @@
 ---
 title: 'Hibernar e desibernar ambientes de sandbox '
-description: 'Hibernar e desibernar ambientes de sandbox '
+description: Hibernar e desibernar ambientes de sandbox
+exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
-
 
 # Hibernando e removendo ambientes de sandbox {#hibernating-introduction}
 
@@ -121,8 +121,12 @@ São poucas as considerações principais relacionadas a ambientes hibernados e 
 
 * As atualizações de AEM podem ser aplicadas a ambientes hibernados, que os clientes podem acionar manualmente no Cloud Manager. O ambiente permanecerá hibernado e a nova versão aparecerá no ambiente após a hibernação.
 
->[!NOTE]
->No momento, o Cloud Manager não indica se um ambiente está hibernado.
+* As sandboxes são colocadas no nó de hibernação após 8 horas de inatividade, após o que podem ser removidas da hibernação.
+
+* As sandboxes são excluídas depois de seis meses em modo de hibernação contínua, depois disso, podem ser recriadas.
+
+   >[!NOTE]
+   >No momento, o Cloud Manager não indica se um ambiente está hibernado.
 
 ## AEM atualizações para ambientes de sandbox {#aem-updates-sandbox}
 
@@ -135,9 +139,4 @@ Consulte [Atualização do ambiente](/help/implementing/cloud-manager/manage-env
 >[!NOTE]
 >* Uma atualização manual só pode ser executada quando o ambiente de destino tiver um pipeline configurado corretamente.
 >* Uma atualização manual para o ambiente *Production* ou *Stage* atualizará automaticamente o outro. O conjunto de ambientes Production+Stage deve estar na mesma versão de AEM.
-
-
-
-
-
 
