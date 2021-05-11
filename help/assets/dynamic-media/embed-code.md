@@ -5,9 +5,9 @@ feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '377'
 ht-degree: 21%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 21%
 
 Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]**.
 
-Você incorpora URLs somente se estiver _não_ usando AEM como WCM. Se estiver usando AEM como WCM, [você adiciona os ativos diretamente na página](adding-dynamic-media-assets-to-pages.md).
+Você incorpora URLs somente se estiver _não_ usando o Adobe Experience Manager como o WCM. Se estiver usando o Experience Manager como WCM, [você adiciona os ativos diretamente na página](adding-dynamic-media-assets-to-pages.md).
 
 Consulte [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebapplication.md).
 
@@ -32,7 +32,7 @@ Consulte [Fornecer imagens otimizadas para um site responsivo](responsive-site.m
 >
 >Consulte [Publicar predefinições de imagens](managing-image-presets.md#publishing-image-presets).
 
-**Para incorporar o visualizador de vídeo ou imagem do Dynamic Media em uma página da Web**
+**Para incorporar o visualizador de vídeo ou imagem do Dynamic Media em uma página da Web:**
 
 1. Navegue até o vídeo *publicado* ou ativo de imagem cujo código incorporado você deseja copiar.
 
