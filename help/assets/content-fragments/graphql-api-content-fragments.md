@@ -4,9 +4,9 @@ description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Mana
 feature: Fragmentos de conteúdo, API GraphQL
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3935'
 ht-degree: 1%
 
 ---
@@ -121,20 +121,20 @@ Há dois tipos de endpoints no AEM:
 
 * Global
    * Disponível para uso por todos os sites.
-   * Esse terminal pode usar todos os Modelos de fragmento de conteúdo de todos os locatários.
-   * Se houver Modelos de fragmento de conteúdo que devem ser compartilhados entre locatários, eles devem ser criados no locatário global.
-* Inquilino:
-   * Corresponde a uma configuração de locatário, conforme definido no [Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Esse terminal pode usar todos os Modelos de fragmento de conteúdo de todas as configurações de Sites (definidas no [Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Se houver Modelos de fragmento de conteúdo que devem ser compartilhados entre configurações de Sites, eles devem ser criados nas configurações globais de Sites.
+* Configurações de sites:
+   * Corresponde a uma configuração de Sites, conforme definido no [Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
    * Específico de um site/projeto especificado.
-   * Um endpoint específico de locatário usará os Modelos de fragmento de conteúdo desse locatário específico junto com aqueles do locatário global.
+   * Um endpoint específico de configuração de Sites usará os Modelos de fragmento de conteúdo da configuração de Sites específica junto com aqueles da configuração de Sites global.
 
 >[!CAUTION]
 >
->O Editor de fragmento de conteúdo pode permitir que um Fragmento de conteúdo de um locatário faça referência a um Fragmento de conteúdo de outro locatário (por meio de políticas).
+>O Editor de fragmento de conteúdo pode permitir que um Fragmento de conteúdo de uma configuração de Sites faça referência a um Fragmento de conteúdo de outra configuração de Sites (por meio de políticas).
 >
->Nesse caso, nem todo o conteúdo poderá ser recuperado usando um endpoint específico de locatário.
+>Nesse caso, nem todo o conteúdo poderá ser recuperado usando um endpoint específico da configuração de Sites .
 >
->O autor de conteúdo deve controlar esse cenário; por exemplo, pode ser útil considerar colocar Modelos de fragmento de conteúdo compartilhados no locatário Global.
+>O autor de conteúdo deve controlar esse cenário; por exemplo, pode ser útil considerar colocar Modelos de fragmento de conteúdo compartilhados na configuração de Sites globais.
 
 O caminho do repositório do GraphQL para AEM endpoint global é:
 
@@ -196,6 +196,10 @@ Selecione o novo terminal e **Publish** para torná-lo totalmente disponível em
 ## Interface GraphiQL {#graphiql-interface}
 
 Uma implementação da interface [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) padrão está disponível para uso com AEM GraphQL. Pode ser [instalado com AEM](#installing-graphiql-interface).
+
+>[!NOTE]
+>
+>O GraphiQL está vinculado ao endpoint global (e não funciona com outros endpoints para configurações específicas do Sites).
 
 Essa interface permite que você insira e teste diretamente consultas.
 
@@ -587,21 +591,21 @@ Após preparar uma consulta com uma solicitação POST, ela pode ser executada c
 
 Isso é necessário, pois as consultas do POST geralmente não são armazenadas em cache e, se estiver usando o GET com o query como parâmetro, há um risco significativo de o parâmetro se tornar muito grande para serviços HTTP e intermediários.
 
-As consultas persistentes devem sempre usar o ponto de extremidade relacionado à [configuração adequada (locatário)](#graphql-aem-endpoint); para que possam usar ou ambos:
+As consultas persistentes devem sempre usar o terminal relacionado ao [configuração apropriada do Sites](#graphql-aem-endpoint); para que possam usar ou ambos:
 
 * A configuração global e o terminal
 O query tem acesso a todos os Modelos de fragmento de conteúdo.
-* Configuração(ões) específica(s) do locatário e endpoint(s)
-A criação de uma consulta persistente para uma configuração de locatário específica requer um endpoint específico de locatário correspondente (para fornecer acesso aos Modelos de fragmento de conteúdo relacionados).
-Por exemplo, para criar uma consulta persistente especificamente para o locatário do WKND, uma configuração de locatário específica do WKND correspondente e um endpoint específico do WKND devem ser criados antecipadamente.
+* Configuração(ões) de sites específicos e endpoint(s)
+A criação de uma consulta persistente para uma configuração de Sites específica requer um endpoint específico de configuração de Sites correspondente (para fornecer acesso aos Modelos de fragmento de conteúdo relacionados).
+Por exemplo, para criar uma consulta persistente especificamente para a configuração de Sites WKND, uma configuração de Sites específica de WKND correspondente e um endpoint específico de WKND devem ser criados antecipadamente.
 
 >[!NOTE]
 >
 >Consulte [Ativar a funcionalidade de fragmento de conteúdo no Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) para obter mais detalhes.
 >
->As **Consultas de persistência GraphQL** precisam ser ativadas para a configuração apropriada do locatário.
+>As **Consultas de Persistência GraphQL** precisam ser ativadas para a configuração apropriada do Sites.
 
-Por exemplo, se houver uma consulta específica chamada `my-query`, que usa um modelo `my-model` da configuração do locatário `my-conf`:
+Por exemplo, se houver uma consulta específica chamada `my-query`, que usa um modelo `my-model` da configuração de Sites `my-conf`:
 
 * Você pode criar uma consulta usando o terminal específico `my-conf` e, em seguida, a consulta será salva da seguinte maneira:
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
