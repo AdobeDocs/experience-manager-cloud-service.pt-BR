@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -324,11 +324,10 @@ Agora que você concluiu esta parte da Jornada de Desenvolvedores sem Cabeça da
 
 Você deve continuar sua jornada sem periféricos de AEM ao revisar o documento [Como colocar tudo junto - Seu aplicativo e seu conteúdo em AEM sem periféricos](put-it-all-together.md), onde você aprenderá a executar seu projeto sem periféricos de AEM e prepará-lo para entrar ao vivo.
 
+[Como criar aplicativos de página única (SPA) com o ](create-spa.md) AEM também mostrará como você pode criar SPA editáveis usando a estrutura SPA Editor do AEM, bem como integrar SPA externos, permitindo recursos de edição, conforme necessário.
+
 ## Recursos adicionais {#additional-resources}
 
-* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [Princípio HATEOAS](https://en.wikipedia.org/wiki/HATEOAS)
-* [Formato SIREN](https://github.com/kevinswiber/siren)
 * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 * [API REST de fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [Referência da API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
