@@ -1,14 +1,14 @@
 ---
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Notas de versão do Experience Manager para 2020.6.0
+exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 99%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
-
 
 # Notas de versão do AEM as a Cloud Service 2020.6.0 {#release-notes}
 
@@ -110,7 +110,7 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 As tags inteligentes aprimoradas permitem que as organizações treinem modelos de marcação inteligente para reconhecer imagens com base em tags comerciais específicas de clientes, além de tags inteligentes genéricas.
 
 Esta versão oferece uma experiência do usuário nova e guiada que ajuda a configurar o treinamento de tags inteligentes para conjuntos de tags específicos do cliente e treiná-las com ativos que devem ser reconhecidos e marcados no futuro. Agora, a experiência está mais intuitiva.
-Treine as tags inteligentes aprimoradas para uma experiência mais intuitiva. Consulte [Como adicionar tags inteligentes a ativos](/help/assets/smart-tags.md) e [Configurar a marcação inteligente](/help/assets/smart-tags-configuration.md).
+Treine as tags inteligentes aprimoradas para uma experiência mais intuitiva. Consulte [como adicionar tags inteligentes a ativos](/help/assets/smart-tags.md).
 
 **Suporte para assimilação, pré-visualização e entrega de conteúdo 3D**
 
@@ -190,4 +190,4 @@ Além dos novos recursos acima, a versão atual fornece as seguintes correções
 * Ao baixar um ativo, se a opção de email estiver selecionada e mesmo se uma ID de email válida for fornecida, a opção de download não fica disponível. (CQ-4296535)
 * Filtros personalizados salvos como coleções inteligentes não são aplicados corretamente a ativos. (CQ-4294942)
 * Várias melhorias de pesquisa e indexação e correções de erros para melhorar o desempenho. (CQ-4286373)
-* A guia de propriedades da pasta não pode ser acessada em Ativos e retorna um erro 500. (CQ-4295701)
+* A guia de propriedades da pasta não pode ser acessada no Assets e retorna um erro 500. (CQ-4295701)
