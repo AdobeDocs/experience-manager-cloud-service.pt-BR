@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
+source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1906'
 ht-degree: 2%
 
 ---
@@ -72,6 +72,8 @@ A seguinte versão (2021.5.0) será lançada em 27 de maio de 2021.
 * Ao navegar pelos ativos na exibição em Coluna, um indicador visual exibe o status aprovado ou rejeitado de cada ativo.
 
 * Ao navegar pelos ativos na exibição em Coluna, um indicador visual é exibido para os ativos expirados.
+
+* Um tipo de dados de área de texto é disponibilizado no editor de metadados [!DNL Assets]. Você pode usar essa opção para permitir que os usuários insiram metadados em um campo de texto de forma livre.
 
 ### Correções de erros em [!DNL Assets] {#bug-fixes-assets}
 
