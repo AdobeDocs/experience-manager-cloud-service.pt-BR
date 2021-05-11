@@ -1,18 +1,18 @@
 ---
 title: Usar visualizações rápidas para criar pop-ups personalizados
-description: '"Saiba mais sobre como a visualização rápida padrão é usada em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado nas janelas pop-up."'
+description: '"Saiba mais sobre como a visualização rápida padrão é usada em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado na janela pop-up do Windows®."'
 feature: Imagens interativas, Vídeos interativos, Banners em carrossel
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 1%
 
 ---
 
-# Usando visualizações rápidas para criar janelas pop-up personalizadas {#using-quickviews-to-create-custom-pop-ups}
+# Usando visualizações rápidas para criar pop-up personalizado do Windows® {#using-quickviews-to-create-custom-pop-ups}
 
 A visualização rápida padrão é usada em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. No entanto, você pode acionar a exibição de conteúdo personalizado nas janelas pop-ups. Dependendo do visualizador usado, os clientes podem tocar em um ponto de acesso, uma imagem em miniatura ou um mapa de imagem para ver informações ou conteúdo relacionado.
 
@@ -24,7 +24,7 @@ As visualizações rápidas são compatíveis com os seguintes visualizadores no
 
 Embora a funcionalidade de cada visualizador seja diferente, o processo de criação de uma visualização rápida é o mesmo em todos os três visualizadores compatíveis.
 
-**Para usar as Exibições rápidas para criar janelas pop-up personalizadas**
+**Para usar o Quick views para criar pop-up personalizado do Windows®:**
 
 1. Crie uma Exibição rápida para um ativo carregado.
 
@@ -102,8 +102,8 @@ ExemploSuponha que você estava usando o seguinte código incorporado de amostra
 
    Saiba mais sobre o método `setHandlers()` no link a seguir:
 
-   * Visualizador de Imagem Interativa: [Segmentadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * Visualizador de vídeo interativo: [Segmentadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * Visualizador de Imagem Interativa - [Segmentadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Visualizador de vídeo interativo - [segmentadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. Agora configure o manipulador `quickViewActivate`.
 
