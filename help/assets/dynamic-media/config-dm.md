@@ -4,9 +4,9 @@ description: Saiba como configurar o Dynamic Media no Adobe Experience Manager a
 role: Administrator,Business Practitioner
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4053'
+source-wordcount: '4054'
 ht-degree: 4%
 
 ---
@@ -93,9 +93,9 @@ To migrate any custom viewer presets and configurations that you have created fr
    |---|---|
    | Empresa | O nome da conta do Dynamic Media. É possível ter várias contas do Dynamic Media para diferentes submarcas, divisões ou ambientes de preparo/produção. |
    | Caminho da pasta raiz da empresa | O caminho da pasta raiz da sua empresa. |
-   | Publicar ativos | Você pode escolher entre as três opções a seguir:<br>**[!UICONTROL Imediatamente ]**: Quando os ativos são carregados, o sistema assimila os ativos e fornece o URL/Incorporado instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.<br>**[!UICONTROL Após a ativação]**: Você deve publicar explicitamente o ativo antes de fornecer um URL/link Incorporado.<br>**[!UICONTROL Publicação ]**seletiva: Os ativos são publicados automaticamente apenas para visualização segura. Eles também podem ser publicados explicitamente no Experience Manager como um Cloud Service, sem publicação no DMS7 para entrega no domínio público. No futuro, essa opção pretende publicar ativos no Experience Manager as a Cloud Service e publicar ativos no Dynamic Media, mutuamente exclusivos entre si. Ou seja, você pode publicar ativos no DMS7 para usar recursos como um Recorte inteligente ou representações dinâmicas. Ou, você pode publicar ativos exclusivamente no Experience Manager como Cloud Service para visualização; esses mesmos ativos não são publicados no DMS7 para entrega no domínio público. |
+   | Publicar ativos | Você pode escolher entre as três opções a seguir:<br>**[!UICONTROL Imediatamente ]**- Quando os ativos são carregados, o sistema assimila os ativos e fornece o URL/Incorporado instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.<br>**[!UICONTROL Em ativação]**  - você deve publicar explicitamente o ativo primeiro antes que um link URL/Incorporar seja fornecido.<br>**[!UICONTROL Publicação seletiva ]**- Os ativos são publicados automaticamente apenas para visualização segura. Eles também podem ser publicados explicitamente no Experience Manager como um Cloud Service, sem publicação no DMS7 para entrega no domínio público. No futuro, essa opção pretende publicar ativos no Experience Manager as a Cloud Service e publicar ativos no Dynamic Media, mutuamente exclusivos entre si. Ou seja, você pode publicar ativos no DMS7 para usar recursos como um Recorte inteligente ou representações dinâmicas. Ou, você pode publicar ativos exclusivamente no Experience Manager como Cloud Service para visualização; esses mesmos ativos não são publicados no DMS7 para entrega no domínio público. |
    | Servidor de visualização seguro | Permite que você especifique o caminho do URL para seu servidor de visualização de representações seguras. Ou seja, depois que as renderizações são geradas, o Experience Manager como um Cloud Service pode acessar com segurança e visualizar as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta ao Experience Manager como uma instância do Cloud Service).<br>A menos que você tenha um acordo especial para usar o servidor da sua empresa ou um servidor especial, o Adobe recomenda deixar essa configuração como especificado. |
-   | Sincronizar todo o conteúdo | Selecionado por padrão. Desmarque essa opção se desejar incluir ou excluir seletivamente ativos da sincronização com o Dynamic Media. Desmarcar essa opção permite escolher entre os dois modos de sincronização Dynamic Media a seguir:<br>**[!UICONTROL Modo de sincronização Dynamic Media]**<br>**[!UICONTROL Ativar por padrão ]**: A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Desabilitado por padrão]**: A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.<br>Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, toque em  **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Details]**, na lista suspensa **[!UICONTROL Dynamic Media sync mode]**, escolha entre as três opções a seguir. Quando terminar, toque em **[!UICONTROL Salvar]**. *Lembre-se: essas três opções não estarão disponíveis se você tiver selecionado **Sincronizar todo o**conteúdo anteriormente.* Consulte também  [Trabalhar com publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Herdado ]**: Nenhum valor de sincronização explícito na pasta. Em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração da nuvem. O status detalhado de herdado é exibido por meio de uma dica de ferramenta.<br>**[!UICONTROL Ativar para subpastas]**: Inclua tudo nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.<br>**[!UICONTROL Desabilitado para subpastas ]**: Exclua toda a subárvore da sincronização com o Dynamic Media. |
+   | Sincronizar todo o conteúdo | Selecionado por padrão. Desmarque essa opção se desejar incluir ou excluir seletivamente ativos da sincronização com o Dynamic Media. Desmarcar essa opção permite escolher entre os dois modos de sincronização Dynamic Media a seguir:<br>**[!UICONTROL Modo de sincronização Dynamic Media]**<br>**[!UICONTROL Ativar por padrão ]**- A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Desativado por padrão]**  - A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.<br>Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, toque em  **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Details]**, na lista suspensa **[!UICONTROL Dynamic Media sync mode]**, escolha entre as três opções a seguir. Quando terminar, toque em **[!UICONTROL Salvar]**. *Lembre-se: essas três opções não estarão disponíveis se você tiver selecionado **Sincronizar todo o**conteúdo anteriormente.* Consulte também  [Trabalhar com publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Herdado ]**- Nenhum valor de sincronização explícito na pasta. Em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração da nuvem. O status detalhado de herdado é exibido por meio de uma dica de ferramenta.<br>**[!UICONTROL Ativar para subpastas]**  - Inclua tudo nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.<br>**[!UICONTROL Desabilitado para subpastas ]**- Exclua tudo nesta subárvore da sincronização com o Dynamic Media. |
 
    >[!NOTE]
    >
@@ -116,7 +116,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Esta notificação da Caixa de entrada informa se a configuração foi bem-sucedida ou não.
    > Consulte [Resolução de problemas de uma nova configuração do Dynamic Media](#troubleshoot-dm-config) e [Sua Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obter mais informações.
 
-1. Para visualizar com segurança o conteúdo do Dynamic Media antes de ser publicado, o Experience Manager como Cloud Service usa a autenticação baseada em token por padrão. No entanto, também é possível &quot;lista de permissões&quot; mais IPs para fornecer aos usuários acesso a visualização segura do conteúdo. Para configurar essa ação, faça o seguinte: <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. Para visualizar com segurança o conteúdo do Dynamic Media antes de ser publicado, o Experience Manager como Cloud Service usa a validação baseada em token por padrão. No entanto, também é possível &quot;lista de permissões&quot; mais IPs para fornecer aos usuários acesso a visualização segura do conteúdo. Para configurar essa ação, faça o seguinte: <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
    * Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta. Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Atendimento ao cliente do Adobe.
    * Na barra de navegação próxima ao canto superior direito da página, toque em **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Publicar configuração]** > **[!UICONTROL Servidor de imagem]**.
@@ -139,7 +139,7 @@ Quando uma nova configuração do Dynamic Media terminar a configuração, você
 
 Consulte também [Sua Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-**Para solucionar problemas de uma nova configuração do Dynamic Media**
+**Para solucionar problemas de uma nova configuração do Dynamic Media:**
 
 1. Próximo ao canto superior direito da Experience Manager como Cloud Service, toque no ícone de sino e toque em **[!UICONTROL Exibir todos]**.
 1. Na página Caixa de entrada, toque na notificação de sucesso para ler uma visão geral do status e logs da configuração.
@@ -279,7 +279,7 @@ Você pode definir quais tipos de ativos são processados pelo Dynamic Media e p
 
 Consulte [Upload de ativos](/help/assets/add-assets.md).
 
-**Para editar os tipos MIME para formatos compatíveis**
+**Para editar os tipos MIME para formatos compatíveis:**
 
 1. No Experience Manager como um Cloud Service, clique no logotipo Experience Manager como Cloud Service para acessar o console de navegação global e, em seguida, clique em **[!UICONTROL Geral > CRXDE Lite]**.
 1. No painel à esquerda, navegue até o seguinte:
@@ -305,7 +305,7 @@ Consulte [Upload de ativos](/help/assets/add-assets.md).
 
 Você pode adicionar tipos MIME personalizados para formatos não compatíveis no Experience Manager Assets. Para garantir que qualquer novo nó adicionado no CRXDE Lite não seja excluído pelo Experience Manager, mova o tipo MIME antes de `image_`. Além disso, verifique se o valor ativado está definido como **[!UICONTROL false]**.
 
-**Para adicionar tipos MIME para formatos não suportados**
+**Para adicionar tipos MIME para formatos não suportados:**
 
 1. No Experience Manager como um Cloud Service, toque em **[!UICONTROL Ferramentas > Operações > Console da Web]**.
 
@@ -325,7 +325,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis n
 
 1. Digite `DWG=image/vnd.dwg` no campo de texto vazio que acabou de adicionar.
 
-   O exemplo `DWG=image/vnd.dwg` é somente para fins ilustrativos. O tipo MIME adicionado aqui pode ser qualquer outro formato não suportado.
+   O tipo MIME `DWG=image/vnd.dwg` é somente para fins de amostra. O tipo MIME adicionado aqui pode ser qualquer outro formato não suportado.
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
@@ -390,7 +390,7 @@ Consulte também [Adicionar tipos MIME para formatos não suportados](#adding-mi
 
 A fila Fluxo de trabalho de trânsito do Granite é usada para o fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**. No Dynamic Media, é usado para assimilação e processamento de imagens.
 
-**Para atualizar a fila de Fluxo de trabalho transitório do Granite**
+**Para atualizar a fila de Fluxo de trabalho transitório do Granite:**
 
 1. Navegue até [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) e procure por **Fila: Fila de Fluxo de Trabalho Transitório do Granite**.
 
