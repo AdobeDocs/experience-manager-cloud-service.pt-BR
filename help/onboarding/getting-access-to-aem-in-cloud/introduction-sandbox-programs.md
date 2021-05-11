@@ -1,14 +1,14 @@
 ---
 title: 'Introdução aos programas de sandbox '
-description: 'Introdução aos programas de sandbox '
+description: Introdução aos programas de sandbox
+exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 translation-type: tm+mt
-source-git-commit: d98e3ba930690627bfbe9b90ce5cb93328c30503
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # Introdução aos programas de sandbox {#sandbox-programs}
 
@@ -38,5 +38,7 @@ Os Programas do Sandbox têm os seguintes atributos:
 1. **AEM atualizações:** AEM atualizações podem ser aplicadas manualmente aos ambientes em um programa de sandbox e não são automaticamente enviadas.
 Consulte [AEM Atualizações para ambientes de sandbox](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) para obter mais detalhes.
 
-1. **Hibernação:** os ambientes em um programa de sandbox hibernam automaticamente se nenhuma atividade for detectada por um determinado período. Ambientes hibernados podem ser removidos manualmente da hibernação.
+1. **Hibernação:** os ambientes em um programa de sandbox hibernam automaticamente se nenhuma atividade for detectada por um determinado período. As sandboxes são colocadas no nó de hibernação após 8 horas de inatividade, após o que podem ser removidas da hibernação. Ambientes hibernados podem ser removidos manualmente da hibernação.
 Consulte [Hibernando e removendo ambientes de sandbox](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) para obter mais detalhes.
+
+1. **Exclusão**: As sandboxes são excluídas depois de seis meses em modo de hibernação contínua, depois disso, podem ser recriadas.
