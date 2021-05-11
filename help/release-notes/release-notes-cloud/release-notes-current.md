@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
+source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '2002'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 A seção a seguir descreve as Notas de versão gerais para a versão atual (mais recente) de [!DNL Experience Manager] como um Cloud Service.
 
 >[!NOTE]
->Desse ponto, você pode navegar até as notas de versão das versões anteriores; por exemplo, para aqueles em 2020, 2021 e assim por diante.
+>A partir daqui, você pode navegar até as notas de versão das versões anteriores; por exemplo, para aqueles em 2020, 2021 e assim por diante.
 
 >[!NOTE]
 >
@@ -223,6 +223,22 @@ A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.4.0 é 8 d
 * Os problemas para `CloudServiceIncompatibleWorkflowProcess` tinham a severidade incorreta no arquivo CSV de problema baixável.
 
 * A verificação `Runmode` estava produzindo falsos positivos em nós que não eram pastas.
+
+## Ferramenta Transferência de conteúdo {#content-transfer-tool}
+
+### Data de lançamento {#release-date-ctt}
+
+A Data de lançamento da ferramenta Transferência de conteúdo v1.4.0 é 11 de maio de 2021.
+
+### Novidades {#what-is-new-ctt-may}
+
+* Essa versão da ferramenta Transferência de conteúdo cria representações de texto para ativos que estão sendo migrados para o Cloud Service. As representações de texto são necessárias para suportar a pesquisa de texto completo em ativos assimilados.
+* O número máximo de conjuntos de migração da ferramenta Transferência de conteúdo que um usuário pode criar foi aumentado de 4 para 10.
+
+### Correções de erros {#bug-fixes-ctt-may}
+
+* Várias correções de erros relacionadas ao recurso de atualização automática na interface do usuário da ferramenta Transferência de conteúdo .
+* A ferramenta Transferência de conteúdo com `wipe=true` resultou em um índice de contador incorreto no destino. Isso foi corrigido.
 
 ## Analisador de práticas recomendadas {#best-practices-analyzer}
 
