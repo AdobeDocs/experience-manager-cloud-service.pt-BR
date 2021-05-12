@@ -4,14 +4,14 @@ description: Nesta parte da Jornada de desenvolvedores sem cabeçalho do AEM, vo
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # Caminho para sua primeira experiência usando AEM headless {#path-to-first-experience}
 
@@ -137,7 +137,14 @@ Agora que você concluiu esta parte da Jornada de Desenvolvedores sem Cabeça da
 * Saiba quais ferramentas e configurações de AEM necessárias são necessárias.
 * Conheça as práticas recomendadas para tornar sua jornada sem interface suave, manter a geração de conteúdo eficiente e garantir que o conteúdo seja entregue rapidamente.
 
-Você deve continuar sua jornada sem periféricos de AEM revisando o documento [Como modelar seu conteúdo como AEM Modelos de conteúdo](model-your-content.md), onde você aprenderá a modelar sua estrutura de conteúdo no AEM.
+Queremos que você se baseie nesse conhecimento fundamental para entender totalmente o poder e a flexibilidade de AEM sem Cabeça, para que possa aproveitar esse conhecimento para seus próprios projetos. Para fazer isso, você tem opções.
+
+### Escolha seu próprio empreendimento {#choose-your-path}
+
+Não importa qual o seu estilo de aprendizagem, o Adobe quer que você tenha sucesso na introdução ao seu projeto AEM Headless.
+
+* Se preferir **continuar aprendendo conceitos sem interface e AEM tecnologias sem periféricos**, continue sua jornada sem periféricos AEM revisando o documento [Como modelar seu conteúdo como AEM Modelos de conteúdo](model-your-content.md), onde você aprenderá a modelar sua estrutura de conteúdo em AEM.
+* Se preferir **aprender ao fazer**, você pode ir para o [Tutorial Introdução AEM mãos sem cabeçalho](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html), onde você irá ir diretamente para AEM desenvolvimento sem cabeçalho implementando um projeto simples para expor AEM conteúdo sem interface.
 
 ## Recursos adicionais {#additional-resources}
 
