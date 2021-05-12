@@ -2,10 +2,9 @@
 title: Teste funcional - Cloud Services
 description: Teste funcional - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '866'
 ht-degree: 2%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Teste funcional"
->abstract="O teste funcional é categorizado em três tipos: Teste funcional do produto, Teste funcional personalizado, Teste da interface personalizada"
+>abstract="Os ensaios funcionais são classificados em três tipos: Teste funcional do produto, teste funcional personalizado e teste de interface personalizada"
 
 Os ensaios funcionais são classificados em três tipos:
 
