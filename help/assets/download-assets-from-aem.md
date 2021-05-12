@@ -2,16 +2,16 @@
 title: Baixar ativos
 description: Baixe ativos a partir de [!DNL Adobe Experience Manager Assets] e ative ou desative a funcionalidade de download.
 contentOwner: AG
-feature: Asset Management
+feature: Gerenciamento de ativos
 role: Business Practitioner
+exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 5%
+source-wordcount: '921'
+ht-degree: 4%
 
 ---
-
 
 # Baixar ativos de [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
@@ -62,13 +62,13 @@ Para baixar ativos, siga estas etapas:
    | **[!UICONTROL Ativo(s)]** | Selecione essa opção para baixar o ativo em seu formulário original sem nenhuma representação.<br>A opção de subativos estará disponível se o ativo original tiver subativos. |
    | **[!UICONTROL Representações]** | Uma representação é uma representação binária de um ativo. Os ativos têm uma representação principal: a do arquivo carregado. Eles podem ter qualquer número de representações. <br> Com essa opção, você pode selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |
    | **[!UICONTROL Cortes inteligentes]** | Selecione esta opção para baixar todas as representações de recorte inteligente do ativo selecionado de dentro de [!DNL Experience Manager]. Um arquivo zip com as representações de Recorte inteligente é criado e baixado no computador local. |
-   | **[!UICONTROL Execução(ões) dinâmica(s)]** | Selecione essa opção para gerar uma série de representações alternativas em tempo real. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente selecionando na lista [Predefinição de imagem](/help/assets/dynamic-media/image-presets.md). <br>Além disso, é possível selecionar o tamanho e a unidade de medida, o formato, o espaço de cores, a resolução e qualquer modificador de imagem opcional, como inverter a imagem. A opção só estará disponível se você tiver [!DNL Dynamic Media] ativado. |
+   | **[!UICONTROL Representação(ões) dinâmica(s)]** | Selecione essa opção para gerar uma série de representações alternativas em tempo real. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente selecionando na lista [Predefinição de imagem](/help/assets/dynamic-media/image-presets.md). <br>Além disso, é possível selecionar o tamanho e a unidade de medida, o formato, o espaço de cores, a resolução e qualquer modificador de imagem opcional, como inverter a imagem. A opção só estará disponível se você tiver [!DNL Dynamic Media] ativado. |
 
 1. Na caixa de diálogo, clique em **[!UICONTROL Download]**.
 
 ## Habilitar servlet de download de ativos {#enable-asset-download-servlet}
 
-O servlet padrão em [!DNL Experience Manager] permite que usuários autenticados emitam solicitações de download simultâneas e arbitrariamente grandes para criar arquivos ZIP de ativos. A preparação do download pode ter implicações de desempenho ou pode até mesmo sobrecarregar o servidor e a rede. Para mitigar esses potenciais riscos do tipo DoS causados por esse recurso, o componente `AssetDownloadServlet` OSGi é desabilitado para instâncias de publicação.
+O servlet padrão em [!DNL Experience Manager] permite que usuários autenticados emitam solicitações de download simultâneas e arbitrariamente grandes para criar arquivos ZIP de ativos. A preparação do download pode ter implicações de desempenho ou pode até mesmo sobrecarregar o servidor e a rede. Para mitigar esses potenciais riscos do tipo DoS causados por esse recurso, o componente `AssetDownloadServlet` OSGi é desabilitado para instâncias de publicação. Se você não precisar do recurso de download em instâncias do autor, desative o servlet no autor.
 
 Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Share Commons ou outra implementação semelhante a portal, ative manualmente o servlet por meio de uma configuração OSGi. A Adobe recomenda definir o tamanho de download permitido o mais baixo possível sem afetar os requisitos diários de download. Um alto valor pode afetar o desempenho.
 
@@ -86,7 +86,7 @@ Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Sha
 
 ## Desativar o servlet de download de ativos {#disable-asset-download-servlet}
 
-O `Asset Download Servlet` pode ser desativado em [!DNL Experience Manager] Instâncias de publicação atualizando a configuração do dispatcher para bloquear qualquer solicitação de download de ativos. O servlet também pode ser desabilitado manualmente por meio do console OSGi diretamente.
+Se você não precisar da funcionalidade de download, desative o servlet para evitar riscos semelhantes a DoS. O `Asset Download Servlet` pode ser desativado em [!DNL Experience Manager] instâncias de autor e publicação, atualizando a configuração do dispatcher para bloquear qualquer solicitação de download de ativos. O servlet também pode ser desabilitado manualmente por meio do console OSGi diretamente.
 
 1. Para bloquear solicitações de download de ativos por meio de uma configuração de dispatcher, edite a configuração `dispatcher.any` e adicione uma nova regra à seção de filtro [a2/>.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)
 
