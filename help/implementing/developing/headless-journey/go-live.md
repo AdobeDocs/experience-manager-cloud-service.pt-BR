@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 0960c354eb9a5156d9200b2c6f54761f1a8383a2
+source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1836'
 ht-degree: 0%
 
 ---
@@ -199,7 +199,8 @@ Você deve continuar sua jornada sem periféricos de AEM revisando o documento [
 
 ## Recursos adicionais {#additional-resources}
 
-* [Introdução à implantação de produção sem cabeçalho AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [Uma visão geral da implantação do no AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Configurar Um Ambiente De AEM Local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [O AEM como um SDK do Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [Uma visão geral da implantação do no AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Use o Cloud Manager para implantar seu código](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [Integre o Repositório Git do Cloud Manager a um Repositório Git Externo e Implante um Projeto para AEM como Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
