@@ -2,9 +2,9 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
+source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1780'
 ht-degree: 2%
 
 ---
@@ -208,7 +208,3 @@ Se um índice deve ser removido em uma versão posterior do aplicativo, você po
 ```
 
 Se não for mais necessário ter uma personalização de um índice pronto para uso, você deverá copiar a definição de índice pronta para uso. Por exemplo, se você já implantou `damAssetLucene-8-custom-3`, mas não precisa mais das personalizações e deseja voltar ao índice `damAssetLucene-8` padrão, é necessário adicionar um índice `damAssetLucene-8-custom-4` que contenha a definição de índice `damAssetLucene-8`.
-
-### Disponibilidade de índice e tolerância a falhas {#index-availability-and-fault-tolerance}
-
-É recomendável criar índices duplicados para recursos importantes (tendo em mente a convenção de nomenclatura para os índices mencionados acima), de modo que, no caso de corrupção de índice ou qualquer evento imprevisto, haja um índice de fallback disponível para responder a consultas.
