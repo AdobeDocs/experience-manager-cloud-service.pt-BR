@@ -2,10 +2,9 @@
 title: Visão geral da ferramenta Transferência de conteúdo
 description: Visão geral da ferramenta Transferência de conteúdo
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-translation-type: tm+mt
-source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
+source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '860'
 ht-degree: 73%
 
 ---
@@ -83,4 +82,4 @@ A fórmula geral para calcular o espaço livre em disco necessário é a seguint
    * *tamanho do armazenamento do nó*: tamanho do diretório do repositório de segmentos ou tamanho do banco de dados MongoDB.
 Assim, para um tamanho de armazenamento de segmentos de 20 GB, o espaço livre em disco necessário seria de 94 GB.
 
-* Um conjunto de migração precisa ser mantido durante toda a atividade de transferência de conteúdo para oferecer suporte a atualizações complementares de conteúdo. Como é possível criar e manter no máximo dez conjuntos de migração por vez durante a atividade de transferência de conteúdo, é recomendável dividir o repositório de conteúdo adequadamente para garantir que você não fique sem conjuntos de migração.  durante/estruturar o conjunto de migração em conformidade.
+* Um conjunto de migração precisa ser mantido durante toda a atividade de transferência de conteúdo para oferecer suporte a atualizações complementares de conteúdo. Como é possível criar e manter no máximo dez conjuntos de migração por vez durante a atividade de transferência de conteúdo, é recomendável dividir o repositório de conteúdo adequadamente para garantir que você não fique sem conjuntos de migração.
