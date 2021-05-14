@@ -4,8 +4,7 @@ description: Um Perfil de imagem ou um Perfil de vídeo é uma receita para quai
 feature: Gerenciamento de ativos, Perfis de imagem, Perfis de vídeo
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 2%
@@ -89,7 +88,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 (Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é regulado pelo tamanho médio do ativo e pelos tipos MIME de ativos em que o reprocessamento é executado. Um valor maior significa que você tem muitos arquivos em um único trabalho de reprocessamento. Assim, o banner de processamento permanece nos ativos do Experience Manager por um tempo maior. No entanto, se o tamanho médio do arquivo for de 1 MB ou menos Adobe, a recomenda que você aumente o valor para vários 100, mas nunca mais que 1000. Se o tamanho médio do arquivo for de centenas de megabytes, o Adobe recomenda diminuir o tamanho do lote para até 10.
 
-**Para ajustar opcionalmente o tamanho do lote do workflow** de reprocessamento:
+**Para ajustar opcionalmente o tamanho do lote do workflow de reprocessamento:**
 
 1. No Experience Manager, toque em **[!UICONTROL Adobe Experience Manager]** para acessar o console de navegação global e, em seguida, toque no ícone **[!UICONTROL Ferramentas]** (martelo) > **[!UICONTROL Fluxo de trabalho > Modelos]**.
 1. Na página Modelos de fluxo de trabalho , na Exibição de cartão ou Exibição de lista, selecione **[!UICONTROL Scene7: Reprocessar Ativos]**.
