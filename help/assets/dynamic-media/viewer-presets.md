@@ -4,10 +4,9 @@ description: Saiba como aplicar predefinições do visualizador no Dynamic Media
 feature: Predefinições do visualizador, visualizadores
 role: Business Practitioner
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '220'
 ht-degree: 25%
 
 ---
@@ -20,7 +19,8 @@ Se você for um administrador e precisar gerenciar, criar, classificar e excluir
 
 Consulte também [Predefinições do visualizador de publicação](managing-viewer-presets.md#publishing-viewer-presets).
 
-Talvez não seja necessário publicar predefinições do visualizador, dependendo do modo de publicação usado.
+Não é necessário publicar predefinições do visualizador, dependendo do modo de publicação usado.
+
 Qualquer problema com as predefinições do visualizador, consulte [Resolução de problemas do Dynamic Media](troubleshoot-dm.md#viewers).
 
 ## Aplicar uma predefinição do visualizador do Dynamic Media a um ativo {#applying-a-viewer-preset-to-an-asset}
