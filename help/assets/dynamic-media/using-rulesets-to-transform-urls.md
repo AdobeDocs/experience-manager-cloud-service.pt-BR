@@ -3,8 +3,7 @@ title: Uso de conjuntos de regras para transformar URLs
 description: Saiba como implantar conjuntos de regras no Dynamic Media para transformar URLs. Os conjuntos de regras são conjuntos de instruções escritas em uma linguagem de script (como JavaScript™) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições.
 role: Business Practitioner
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -31,7 +30,7 @@ Você pode implantar conjuntos de regras no Dynamic Media para transformar URLs.
 
    Consulte [Removendo caracteres especiais de URLs](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-No contexto do Dynamic Media, os sites que usam um sistema baseado em XML para gerenciar informações de ativos podem fazer upload de arquivos XML para o Dynamic Media. Você pode designar um desses arquivos como o arquivo de conjunto de regras de pré-processamento para servir ativos do Dynamic Media. Esse arquivo reestrutura o formato de protocolo URL padrão para atender à lógica comercial dos sistemas que estão sendo integrados ao Dynamic Media. Você especifica um arquivo XML a ser exibido como o caminho de arquivo das definições do conjunto de regras.
+No contexto do Dynamic Media, os sites que usam um sistema baseado em XML para gerenciar informações de ativos podem fazer upload de arquivos XML para o Dynamic Media. Você pode designar um desses arquivos como o arquivo de conjunto de regras de pré-processamento para servir ativos do Dynamic Media. Esse arquivo reestrutura o formato de protocolo URL padrão para atender à lógica da empresa de sistemas que estão sendo integrados ao Dynamic Media. Você especifica um arquivo XML a ser exibido como o caminho de arquivo das definições do conjunto de regras.
 
 >[!CAUTION]
 >
@@ -71,7 +70,7 @@ Consulte também [Usar a imagem &#39;asset&#39; em vez de &#39;is&#39; em um con
    * No canto inferior direito da página, clique em **[!UICONTROL Enviar upload]**.
    * Na barra Navegação global, clique em **[!UICONTROL Trabalhos]** para verificar o status do trabalho de upload. Quando a coluna **[!UICONTROL Status]** na página **[!UICONTROL Trabalho]** exibir Carregar concluído, continue para as próximas etapas.
 
-1. Na barra de navegação próxima à parte superior da página, clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configuração de publicação > Servidor de imagem]**.
+1. Na barra de navegação próxima à parte superior da página, clique em **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Publicar Configuração]** > **[!UICONTROL Servidor de Imagem]**.
 1. Na página **[!UICONTROL Publicação do servidor de imagens]**, no grupo **[!UICONTROL Gerenciamento de catálogo]**, localize o **[!UICONTROL Caminho do arquivo de definição de conjunto de regras]** e clique em **[!UICONTROL Selecionar]**.
 1. Na página **[!UICONTROL Selecionar arquivo de definição do conjunto de regras (XML)]**, navegue até o arquivo de conjunto de regras e, no canto inferior direito da página, clique em **[!UICONTROL Selecionar]**.
 1. No canto inferior direito da página Configurar, clique em **[!UICONTROL Fechar]**.
