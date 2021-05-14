@@ -4,17 +4,16 @@ description: Saiba como aplicar predefinições de imagens no Dynamic Media.
 feature: Predefinições de imagem, Visualizadores, Representações
 role: Business Practitioner
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '306'
 ht-degree: 7%
 
 ---
 
 # Aplicação de predefinições da imagem do Dynamic Media {#applying-image-presets}
 
-As predefinições de imagens permitem que os ativos forneçam dinamicamente imagens de tamanhos diferentes, em formatos diferentes ou com outras propriedades de imagens que foram geradas dinamicamente. Você pode escolher uma predefinição ao exportar imagens, o que também reformata as imagens para as especificações especificadas pelo administrador.
+As predefinições de imagens permitem que os ativos forneçam dinamicamente imagens de tamanhos diferentes, em formatos diferentes ou com outras propriedades de imagens que foram geradas dinamicamente. Você pode escolher uma predefinição ao exportar para reformatar imagens às especificações descritas pelo administrador.
 
 Além disso, você pode escolher uma predefinição de imagem responsiva (designada pelo botão **[!UICONTROL RESS]** após selecioná-la).
 
@@ -26,7 +25,7 @@ Além disso, você pode escolher uma predefinição de imagem responsiva (design
 
 Você pode aplicar uma predefinição de imagem a uma imagem sempre que visualizá-la.
 
-**Para aplicar as predefinições da imagem do Dynamic Media**
+**Para aplicar as predefinições da imagem do Dynamic Media:**
 
 1. Abra o ativo e, no painel à esquerda, toque na lista suspensa e em **[!UICONTROL Representações]**.
 
