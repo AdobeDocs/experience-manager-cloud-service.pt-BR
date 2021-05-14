@@ -4,11 +4,10 @@ description: Saiba como trabalhar com conjuntos de imagens no Dynamic Media.
 feature: Conjuntos de imagem
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 9%
+source-wordcount: '2050'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +17,7 @@ Os Conjuntos de imagens fornecem aos usuários uma experiência de visualizaçã
 
 Os conjuntos de imagens são designados por um banner com a palavra `IMAGESET`. Além disso, se o Conjunto de imagens for publicado, a data de publicação, indicada pelo ícone **[!UICONTROL World]**, estará no banner. Além disso, a última data de modificação, indicada pelo ícone **[!UICONTROL Pencil]**, é exibida.
 
-![chlimage_1-133](assets/chlimage_1-339.png)
+![chlimage_1-135](assets/chlimage_1-339.png)
 
 No conjunto de imagens, também é possível criar amostras criando um Conjunto de imagens e adicionando miniaturas.
 
@@ -44,7 +43,7 @@ Para ativar e executar rapidamente:
 
 1. [Carregue suas imagens de origem primária para várias exibições](#uploading-assets-in-image-sets).
 
-   Carregue as imagens para seus Conjuntos de imagens. Lembre-se de que os usuários podem ampliar imagens no Visualizador de conjunto de imagens. Assim, escolha suas imagens com cuidado. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. O Experience Manager Assets suporta muitos formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
+   Carregue as imagens para seus Conjuntos de imagens. Lembre-se de que os usuários podem ampliar imagens no Visualizador de conjunto de imagens. Assim, escolha suas imagens com cuidado. Certifique-se de que as imagens tenham pelo menos 2000 pixels no tamanho maior. O Experience Manager Assets suporta muitos formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
 
 1. [Criar conjuntos de imagens](#creating-image-sets).
 
@@ -85,7 +84,7 @@ Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos em [Resoluç
 
 ## Fazer upload de ativos para conjuntos de imagens {#uploading-assets-in-image-sets}
 
-Comece carregando os ativos de imagem dos seus Conjuntos de imagens. Lembre-se de que os usuários podem ampliar imagens no Visualizador de conjunto de imagens. Assim, escolha suas imagens com cuidado. Certifique-se de que as imagens tenham pelo menos 2000 pixels na maior dimensão para obter detalhes ideais de zoom. O Dynamic Media pode renderizar imagens de até 25 megapixels cada. Por exemplo, você pode usar uma imagem de 5000 x 5000 megapixels ou qualquer outra combinação de tamanho até 25 megapixels.
+Comece carregando os ativos de imagem dos seus Conjuntos de imagens. Lembre-se de que os usuários podem ampliar imagens no Visualizador de conjunto de imagens. Assim, escolha suas imagens com cuidado. Certifique-se de que as imagens tenham pelo menos 2000 pixels no maior tamanho para obter detalhes ideais de zoom. O Dynamic Media pode renderizar imagens de até 25 megapixels cada. Por exemplo, você pode usar uma imagem de 5000x5000 megapixels ou qualquer outra combinação de tamanho de até 25 megapixels.
 
 Os Conjuntos de imagens são compatíveis com vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
 
@@ -95,9 +94,9 @@ Você pode fazer upload de imagens para Conjuntos de imagens da mesma maneira qu
 
 Antes de criar Conjuntos de imagens, verifique se as imagens têm o tamanho e o formato corretos.
 
-Para criar um Conjunto de imagens com várias exibições, você precisa de imagens que mostrem um item de diferentes pontos de vista ou que mostrem diferentes aspectos do mesmo item. O objetivo é destacar os recursos importantes de um item para que os visualizadores tenham uma imagem completa de como ele se parece ou faz.
+Para criar um Conjunto de imagens com várias exibições, você precisa de imagens que mostrem um item de diferentes pontos de vista ou que mostrem diferentes aspectos do mesmo item. O objetivo é destacar os recursos importantes de um item para que os visualizadores tenham uma imagem completa de como ele aparece ou o que ele faz.
 
-Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. O Experience Manager Assets suporta muitos formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
+Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as imagens têm pelo menos 2000 pixels no tamanho maior. O Experience Manager Assets suporta muitos formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
 
 >[!NOTE]
 >
@@ -124,7 +123,7 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 >
 >Os conjuntos de imagens não são compatíveis com ativos com &quot;&quot; (vírgula) no nome do arquivo.
 
-**Para criar um conjunto de imagens**
+**Para criar um conjunto de imagens:**
 
 1. No Adobe Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global.
 1. Toque em **[!UICONTROL Navegação > Ativos]**. Navegue até o local em que deseja criar um conjunto de imagens, em seguida, toque em **[!UICONTROL Criar > Conjunto de imagens]** para abrir a página Editor do conjunto de imagens.
@@ -207,7 +206,7 @@ Você pode executar várias tarefas de edição em Conjuntos de imagens, como as
 * Aplicar predefinições do visualizador.
 * Exclua o conjunto de imagens.
 
-**Para editar conjuntos de imagens**
+**Para editar conjuntos de imagens:**
 
 1. Siga um destes procedimentos:
 
