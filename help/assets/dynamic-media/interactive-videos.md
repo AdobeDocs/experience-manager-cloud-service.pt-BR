@@ -4,10 +4,9 @@ description: Saiba como trabalhar com vídeo interativo e vídeo que pode ser co
 feature: Vídeos interativos
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '6064'
+source-wordcount: '6051'
 ht-degree: 4%
 
 ---
@@ -49,7 +48,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ### Veja como os vídeos interativos são criados {#watch-how-interactive-videos-are-created}
 
-Assista a uma apresentação de 7 minutos e 30 segundos sobre [como os vídeos interativos são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).
+Assista a uma apresentação sobre [como os vídeos interativos são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)(7 minutos e 30 segundos).
 (Embora a apresentação em vídeo tenha a marca Assets on Demand, os princípios e etapas ainda se aplicam a Vídeo interativo nos ativos Adobe Experience Manager.)
 
 ### Webinar de sucesso do cliente do Adobe {#adobe-customer-success-webinar}
@@ -70,23 +69,25 @@ Quando você terminar o tutorial na última seção de exemplo, [sua página da 
 
 Etapas de vídeo interativo:
 
-1. **(Opcional) Identificação das variáveis**  de Exibição rápida - Comece identificando as variáveis dinâmicas usadas pela implementação da Exibição rápida existente. Você usa as variáveis para mapear miniaturas de produto para a exibição Rápida de produto correspondente ao criar o vídeo interativo. Consulte [(Opcional) Identificação das variáveis de Exibição rápida](#optional-identifying-quickview-variables).
-   **Essa etapa só será necessária se todas as seguintes etapas forem verdadeiras**: ・ Você deseja adicionar interatividade ao vídeo, acionando para as visualizações rápidas.
-・ Sua implementação do Experience Manager *not* usa uma estrutura de integração de eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM WebSphere® Commerce, Elastic Path, hybris ou Intershop.
+1. **(Opcional) Identificar as variáveis**  de exibição rápida - Comece identificando as variáveis dinâmicas usadas pela implementação existente do Quick view. Você usa as variáveis para mapear miniaturas de produto para a exibição Rápida de produto correspondente ao criar o vídeo interativo. Consulte [(Opcional) Identificação das variáveis de Exibição rápida](#optional-identifying-quickview-variables).
+   **Essa etapa só será necessária se todas as opções a seguir forem verdadeiras:**
+ ・ Você deseja adicionar interatividade ao vídeo, acionando para Visualizações rápidas.
+・ Sua implementação do Experience Manager faz 
+** note uma estrutura de integração do eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.
 
-1. **(Opcional) Criação de uma predefinição do visualizador de Vídeo interativo**  - Personalize a aparência e o comportamento de vários componentes que compõem o player, como o depurador de vídeo e as miniaturas interativas.
+1. **(Opcional) Criar uma predefinição do visualizador de Vídeo interativo**  - Personalize a aparência e o comportamento de vários componentes que compõem o player, como o depurador de vídeo e as miniaturas interativas.
 Não é necessário criar sua própria predefinição do visualizador de Vídeo interativo se você pretende usar as predefinições do visualizador de Vídeo interativo prontas para uso `Shoppable_Video_Light` ou `Shoppable_Video_Dark`.
 Consulte [Criando uma Nova Predefinição do Visualizador](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) (opcional) e [Considerações especiais para criar uma predefinição do Visualizador Interativo](/help/assets/dynamic-media/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
 
-1. **Upload de um vídeo e seus ativos de imagem associados**  - Carregue um vídeo e imagens associadas que você deseja tornar interativas.
+1. **Carregar um vídeo e seus ativos de imagem associados**  - Carregue um vídeo e imagens associadas que você deseja tornar interativas.
 Consulte [Fazer upload de um vídeo e seus ativos de miniatura associados](#uploading-a-video-and-its-associated-thumbnail-assets).
 
-1. **Adição de interatividade ao vídeo**  - Adicione um ou mais segmentos de tempo ao vídeo. Em seguida, associe as miniaturas de imagem nesses segmentos de tempo. Atribua cada miniatura de imagem a uma ação, como um hiperlink, uma Exibição rápida ou um Fragmento de experiência.
+1. **Adicionar interatividade ao vídeo**  - Adicione um ou mais segmentos de tempo ao vídeo. Em seguida, associe as miniaturas de imagem nesses segmentos de tempo. Atribua cada miniatura de imagem a uma ação, como um hiperlink, uma Exibição rápida ou um Fragmento de experiência.
 (O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .)
 Termine publicando os ativos interativos de vídeo. A publicação cria o código incorporado ou URL que você eventualmente copia e aplica à página de aterrissagem do site. Consulte [Adicionar interatividade ao vídeo](#adding-interactivity-to-your-video).
 Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. **Adição de um vídeo interativo ao seu site ou ao seu site no Experience Manager**  - Se você usa o Experience Manager Sites, o Experience Manager eCommerce, ou ambos, você pode adicionar o vídeo interativo diretamente a uma página da Web no Experience Manager. Arraste o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+1. **Adicione um vídeo interativo ao seu site ou ao seu site no Experience Manager**  - Se você usar o Experience Manager Sites ou eCommerce, ou ambos, adicione o vídeo interativo a uma página da Web no Experience Manager. Arraste o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 Use o código incorporado ou URL para integrar seu vídeo interativo com as experiências do site. Consulte [Integrar um vídeo interativo com seu site](#integrating-an-interactive-video-with-your-website).
 Se você estiver usando um WCM (Web Content Manager, Gerenciador de conteúdo da Web) de terceiros, é necessário integrar o novo vídeo interativo à implementação do Quick View existente usada em seu site. Consulte [Integração de um vídeo interativo com uma visualização rápida existente](#integrating-an-interactive-video-with-an-existing-quickview).
    [Adição de ativos de Mídia dinâmica a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -96,7 +97,7 @@ Se você estiver usando um WCM (Web Content Manager, Gerenciador de conteúdo da
 >[!NOTE]
 Essa tarefa só será necessária se o seguinte for verdadeiro:
 * Você deseja adicionar interatividade ao vídeo, acionando para as visualizações rápidas.
-* Sua implementação do Experience Manager *not* usa uma estrutura de integração de eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM WebSphere® Commerce, Elastic Path, hybris ou Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
+* Sua implementação do Experience Manager *not* usa uma estrutura de integração de eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
 Se sua implementação do Experience Manager usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
 
@@ -115,13 +116,13 @@ A maioria das implementações da Exibição rápida usa o seguinte paradigma:
 * Os dados da Exibição rápida são traduzidos para o conteúdo em preparação para renderização na página da Web.
 * Por fim, o código front-end renderiza visualmente esse conteúdo na tela.
 
-A abordagem, portanto, é visitar diferentes áreas de seu site existente, onde a Visualização rápida está implementada. Em seguida, acione a exibição Rápida e capture o URL Ajax enviado pela página da Web para carregar os dados ou o conteúdo da exibição Rápida.
+A abordagem, portanto, é visitar diferentes áreas de seu site existente, onde a Visualização rápida está implementada. Em seguida, acione a exibição Rápida e adquira o URL Ajax enviado pela página da Web para carregar os dados ou o conteúdo da exibição Rápida.
 
 Normalmente, não há necessidade de usar ferramentas de depuração especializadas. Os navegadores modernos da Web apresentam inspetores da Web que fazem um trabalho adequado. A seguir estão alguns exemplos de navegadores da Web que incluem inspetores da Web:
 
-* Para ver todas as solicitações HTTP de saída no Google Chrome, pressione **F12** (Windows) ou **Command+Options+I** (Mac) para abrir o painel Ferramentas do Desenvolvedor e clique na guia **Rede**.
+* Para ver todas as solicitações HTTP de saída no Google Chrome, pressione **F12** (Windows®) ou **Command+Options+I** (Mac) para abrir o painel Ferramentas do desenvolvedor e clique na guia **Rede**.
 
-* No Firefox, você pode ativar o plug-in do Firebug pressionando **F12** (Windows) ou **Command+Option+I** (Mac) e usar a guia **[!UICONTROL Net]** ou usar a ferramenta Inspetor integrada e a guia Rede.
+* No Firefox, você pode ativar o plug-in do Firebug pressionando **F12** (Windows®) ou **Command+Option+I** (Mac) e usar a guia **[!UICONTROL Net]** ou usar a ferramenta Inspetor integrada e a guia Rede.
 
 * No Internet Explorer, ative a ferramenta de depuração pressionando **F12**.
 
@@ -219,7 +220,7 @@ Agora você está pronto para fazer upload de um vídeo e seus ativos de miniatu
 
 ## (Opcional) Criação de uma predefinição do visualizador de Vídeo interativo {#optional-creating-an-interactive-video-viewer-preset}
 
-Ignore esta tarefa e prossiga para a próxima se pretender utilizar qualquer um dos tipos predefinidos predefinidos do Visualizador de Vídeo Interativo predefinido e predefinido `Shoppable_Video_dark` ou `Shoppable_Video_light`.
+Ignore esta tarefa e continue para a próxima se pretender utilizar os tipos predefinidos predefinidos do Visualizador de Vídeo Interativo e predefinidos `Shoppable_Video_dark` ou `Shoppable_Video_light`.
 
 Quando uma miniatura é tocada no ambiente de criação, uma visualização da caixa de diálogo Exibição rápida é exibida.
 
@@ -266,7 +267,7 @@ As opções Desfazer e Refazer, próximo ao canto superior direito da página, s
 
 Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualização. A partir daí, você pode selecionar uma predefinição do visualizador de Vídeo interativo e reproduzir o vídeo para ver uma representação aproximada de como ele aparece para os clientes.
 
-**Para adicionar interatividade ao vídeo**:
+**Para adicionar interatividade ao vídeo:**
 
 1. Na exibição Ativos, navegue até o vídeo que você carregou e deseja tornar interativo.
 1. Faça uma das seguintes opções:
@@ -434,10 +435,10 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
       </tr> 
       <tr> 
       <td>Para alterar o rótulo de texto de uma imagem em miniatura</td> 
-      <td><p>Por padrão, o rótulo do texto usa o campo de metadados <code>Title</code> da imagem em miniatura. Se <code>Title</code> não estiver presente, o nome de arquivo da imagem em miniatura será usado, mas sem a extensão .</p> <p>Para alterar o rótulo do texto de uma imagem em miniatura, na guia <strong>Actions </strong>, logo abaixo do ativo de imagem exibido, insira o texto desejado. Veja a ilustração abaixo.</p> <p>O novo rótulo de texto é usado somente pelo próprio reprodutor de vídeo e o texto em miniatura exibido no segmento da linha do tempo. A alteração no rótulo não afeta o campo de metadados Título da imagem em miniatura nem seu nome de arquivo.</p> </td> 
+      <td><p>Por padrão, o rótulo do texto usa o campo de metadados <code>Title</code> da imagem em miniatura. Se <code>Title</code> não estiver presente, o nome de arquivo da imagem em miniatura será usado, mas sem a extensão .</p> <p>Para alterar o rótulo do texto de uma imagem em miniatura, na guia <strong>Actions </strong>, logo abaixo do ativo de imagem exibido, insira o texto desejado. Veja a imagem abaixo.</p> <p>O novo rótulo de texto é usado somente pelo próprio reprodutor de vídeo e o texto em miniatura exibido no segmento da linha do tempo. A alteração no rótulo não afeta o campo de metadados Título da imagem em miniatura nem seu nome de arquivo.</p> </td> 
       </tr> 
       <tr> 
-      <td>Para reverter uma alteração feita</td> 
+      <td>Para reverter uma alteração</td> 
       <td>Próximo ao canto superior direito da página, toque em <strong>Desfazer</strong> ou <strong>Refazer</strong>.</td> 
       </tr> 
     </tbody> 
@@ -456,7 +457,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
 
    * **[!UICONTROL Mesclar segmentos]**  - é possível combinar dois segmentos adjacentes (com ou sem miniaturas de produto atribuídas a eles) em um segmento.
 
-      Na linha do tempo, toque em dois ou mais segmentos contíguos que deseja mesclar em um. Não há alças de arrastar ovais azuis nos dois segmentos selecionados na ilustração abaixo.
+      Na linha do tempo, toque em dois ou mais segmentos contíguos que deseja mesclar em um. Não há alças de arrastar ovais azuis nos dois segmentos selecionados na imagem abaixo.
 
       Toque em **[!UICONTROL Unir segmento]** na barra de ferramentas.
    ![chlimage_1-134](assets/chlimage_1-134.png)
@@ -468,7 +469,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
       Na linha do tempo, toque em um segmento que deseja dividir ao meio e em **[!UICONTROL Dividir segmento]** na barra de ferramentas.
 
       Selecionar dois ou mais segmentos desativa o recurso **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Divisão de um segmento selecionado de dez segundos em dois segmentos de cinco segundos cada.
 
@@ -688,7 +689,7 @@ O site de demonstração está acionando a caixa de diálogo Exibição rápida 
 loadQuickView(quickViewUrl);
 ```
 
-Finalmente, verifique se a caixa de diálogo Exibição rápida está anexada ao elemento do contêiner do visualizador. O código incorporado padrão fornece etapas de amostra para obter essa funcionalidade. Para obter uma referência ao elemento de contêiner do visualizador, você pode usar as seguintes linhas de código:
+Finalmente, verifique se a caixa de diálogo Exibição rápida está anexada ao elemento do contêiner do visualizador. O padrão do código incorporado fornece etapas de amostra para obter essa funcionalidade. Para obter uma referência ao elemento de contêiner do visualizador, você pode usar as seguintes linhas de código:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -750,11 +751,11 @@ O código-fonte completo é o seguinte:
 </script>
 ```
 
-O site de demonstração final com o vídeo interativo totalmente integrado tem a seguinte aparência:
+O site de demonstração final com o vídeo interativo totalmente integrado é exibido da seguinte maneira:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
 
-## Usando visualizações rápidas para criar janelas pop-up personalizadas {#using-quickviews-to-create-custom-pop-ups}
+## Usando visualizações rápidas para criar pop-up personalizado do Windows® {#using-quickviews-to-create-custom-pop-ups}
 
-Consulte [Usando visualizações rápidas para criar janelas pop-up personalizadas](/help/assets/dynamic-media/custom-pop-ups.md).
+Consulte [Usar visualizações rápidas para criar janelas pop-up personalizadas do Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
 —>
