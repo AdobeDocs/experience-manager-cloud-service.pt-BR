@@ -1,13 +1,12 @@
 ---
 title: Perfis de imagem do Dynamic Media
-description: '"Saiba como criar Perfis de imagem do Dynamic Media que contêm configurações para a máscara de nitidez e recorte inteligente ou amostra inteligente, ou ambos. Em seguida, aplique o perfil a uma pasta de ativos de imagem."'
+description: Saiba como criar Perfis de imagem do Dynamic Media que contêm configurações para a máscara de nitidez e recorte inteligente ou amostra inteligente, ou ambos. Em seguida, aplique o perfil a uma pasta de ativos de imagem.
 feature: Gerenciamento de ativos, Perfis de imagem, Representações
 role: Business Practitioner
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2703'
+source-wordcount: '2714'
 ht-degree: 9%
 
 ---
@@ -45,14 +44,14 @@ Você tem duas opções de recorte de imagem para escolher. Você também tem um
      <li>Os valores são Superior, Inferior, Esquerda e Direita.</li>
      <li>A parte superior esquerda é considerada como 0,0 e o corte de pixels é calculado a partir daí.</li>
      <li>Ponto de partida do corte: A esquerda é X e a parte superior é Y</li>
-     <li>Cálculo horizontal: dimensão de pixel horizontal da imagem original menos Esquerda e depois menos Direita.</li>
+     <li>Cálculo horizontal: tamanho de pixel horizontal da imagem original menos Esquerda e depois menos Direita.</li>
      <li>Cálculo vertical: altura vertical do pixel menos Superior e depois menos Inferior.</li>
     </ul> <p>Por exemplo, suponha que você tenha uma imagem de 4000 x 3000 pixels. Você usa valores: Superior=250, Inferior=500, Esquerda=300, Direita=700.</p> <p>Do corte superior esquerdo (300.250) usando o espaço de preenchimento de (4000-300-700, 3000-250-500 ou 3000.2250).</p> </td>
   </tr>
   <tr>
    <td>Corte inteligente</td>
    <td>Imagens de corte em massa com base em seu ponto focal visual.</td>
-   <td><p>O Smart Crop usa o poder da inteligência artificial no Adobe Sensei para automatizar rapidamente o corte de imagens em massa. O Recorte inteligente detecta e recorta automaticamente o ponto focal em qualquer imagem para capturar o ponto de interesse pretendido, independentemente do tamanho da tela.</p> <p>Para usar o Recorte inteligente, selecione <strong>Recorte inteligente</strong> na lista suspensa Opções de recorte e, à direita do Recorte de imagem responsiva, ative (ative) o recurso.</p> <p>Os tamanhos padrão de ponto de interrupção (Grande, Médio, Pequeno) abrangem a gama completa de tamanhos que a maioria das imagens é usada em dispositivos móveis e tablets, desktops e banners. Se desejar, você pode editar os nomes padrão de Grande, Médio e Pequeno.</p> <p>Para adicionar mais pontos de interrupção, clique em <strong>Adicionar Corte</strong>; para excluir um corte, clique no ícone Garbage Can .</p> </td>
+   <td><p>O Smart Crop usa o poder da inteligência artificial no Adobe Sensei para automatizar rapidamente o corte de imagens em massa. O Recorte inteligente detecta e recorta automaticamente o ponto focal em qualquer imagem para adquirir o ponto de interesse pretendido, independentemente do tamanho da tela.</p> <p>Para usar o Recorte inteligente, selecione <strong>Recorte inteligente</strong> na lista suspensa Opções de recorte e, à direita do Recorte de imagem responsiva, ative (ative) o recurso.</p> <p>Os tamanhos padrão de ponto de interrupção (Grande, Médio, Pequeno) abrangem a gama completa de tamanhos que a maioria das imagens é usada em dispositivos móveis e tablets, desktops e banners. Se desejar, você pode editar os nomes padrão de Grande, Médio e Pequeno.</p> <p>Para adicionar mais pontos de interrupção, clique em <strong>Adicionar Corte</strong>; para excluir um corte, clique no ícone Garbage Can .</p> </td>
   </tr>
   <tr>
    <td>Amostra de cor e imagem</td>
@@ -70,7 +69,7 @@ Use a **[!UICONTROL Tirar nitidez da máscara]** para ajustar um efeito de filtr
 
 >[!NOTE]
 >
->A Tirar nitidez da máscara é aplicada apenas a representações baixadas dentro do PTIFF (tiff de pirâmide) que têm uma resolução reduzida de mais de 50%. Isso significa que as representações de maior porte dentro do ptiff não são afetadas pela máscara de nitidez. Enquanto isso, representações de menor tamanho, como miniaturas, são alteradas (e mostram a máscara de nitidez).
+>A Tirar nitidez da máscara é aplicada apenas a representações baixadas dentro do PTIFF (tiff de pirâmide) que têm uma resolução reduzida de mais de 50%. Isso significa que as representações de maior porte dentro do ptiff não são afetadas pela máscara de nitidez. Enquanto as representações de menor tamanho, como miniaturas, são alteradas (e mostram a máscara de nitidez).
 
 Em **[!UICONTROL Tirar nitidez da máscara]**, você tem as seguintes opções de filtragem:
 
@@ -105,9 +104,9 @@ Consulte [Sobre perfis de imagem do Dynamic Media e perfis de vídeo](/help/asse
 
 Consulte também [Práticas recomendadas para organizar ativos digitais para usar perfis de processamento](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
-**Para criar perfis de imagem do Dynamic Media**
+**Para criar perfis de imagem do Dynamic Media:**
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de imagem]**.
+1. Toque no logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de imagem]**.
 1. Para adicionar um Perfil de imagem, toque em **[!UICONTROL Criar]**.
 1. Insira um nome de perfil e valores para Tirar nitidez da máscara, recortar ou amostra, ou ambos.
 
@@ -121,7 +120,7 @@ Consulte também [Práticas recomendadas para organizar ativos digitais para usa
 
 ## Editar ou excluir perfis de imagem do Dynamic Media {#editing-or-deleting-image-profiles}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de imagem]**.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de imagem]**.
 1. Selecione o Perfil de imagem que deseja editar ou remover. Para editá-lo, selecione **[!UICONTROL Editar perfil de processamento de imagem]**. Para removê-lo, selecione **[!UICONTROL Excluir perfil de processamento de imagem]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
@@ -152,7 +151,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 #### Aplicar perfis de imagem do Dynamic Media a pastas da interface do usuário de Perfis {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de imagem]**.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de imagem]**.
 1. Selecione o Perfil de imagem que deseja aplicar a uma ou várias pastas.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
@@ -161,7 +160,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 #### Aplicação de perfis de imagem do Dynamic Media a pastas de Propriedades {#applying-image-profiles-to-folders-from-properties}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta à qual deseja aplicar um Perfil de imagem.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta à qual deseja aplicar um Perfil de imagem.
 1. Na pasta , toque na marca de seleção para selecioná-la e toque em **[!UICONTROL Propriedades]**.
 1. Toque na guia **[!UICONTROL Perfis de imagem]**. Na lista suspensa **[!UICONTROL Nome do perfil]**, selecione o perfil e toque em **[!UICONTROL Salvar e fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
@@ -173,7 +172,7 @@ Além de aplicar um perfil a uma pasta, também é possível aplicá-lo globalme
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você alterou posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Para aplicar um Perfil de imagem do Dynamic Media globalmente**:
+**Para aplicar um Perfil de imagem do Dynamic Media globalmente:**
 
 1. Faça uma das seguintes opções:
 
@@ -197,10 +196,9 @@ Você pode executar o recorte inteligente novamente para gerar as culturas adici
 
 Consulte também [Edição do recorte inteligente ou da amostra inteligente de várias imagens](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**Para editar o recorte inteligente ou a amostra inteligente de uma única imagem**
+**Para editar o recorte inteligente ou a amostra inteligente de uma única imagem:**
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Assets]**, em seguida, até a pasta que tem um recorte inteligente ou Perfil de imagem de amostra inteligente aplicado a ele.
-
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]**, em seguida, até a pasta que tem um recorte inteligente ou Perfil de imagem de amostra inteligente aplicado a ele.
 1. Para abrir seu conteúdo, toque na pasta .
 1. Toque na imagem cujo recorte inteligente ou amostra inteligente você deseja ajustar.
 1. Na barra de ferramentas, toque em **[!UICONTROL Recorte inteligente]**.
@@ -217,15 +215,15 @@ Consulte também [Edição do recorte inteligente ou da amostra inteligente de v
 
 ## Editar o recorte inteligente ou a amostra inteligente de várias imagens {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-Depois de aplicar um Perfil de imagem - contendo o Recorte inteligente - a uma pasta, todas as imagens dessa pasta terão um recorte aplicado a elas. Se desejar, você pode *manualmente* realinhar ou redimensionar a janela de recorte inteligente em várias imagens para refinar ainda mais seu ponto focal.
+Depois de aplicar um Perfil de imagem - contendo Recorte inteligente - a uma pasta, todas as imagens nessa pasta têm um recorte aplicado a elas. Se desejar, você pode *manualmente* realinhar ou redimensionar a janela de recorte inteligente em várias imagens para refinar ainda mais seu ponto focal.
 
 Depois de editar um recorte inteligente e salvar, a alteração é propagada em todos os locais em que você usa o recorte para as imagens específicas.
 
 Você pode executar o recorte inteligente novamente para gerar as culturas adicionais, se necessário.
 
-**Para editar o recorte inteligente ou a amostra inteligente de várias imagens**
+**Para editar o recorte inteligente ou a amostra inteligente de várias imagens:**
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Assets]**, em seguida, para uma pasta que tenha um recorte inteligente ou Perfil de imagem de amostra inteligente aplicado a ele.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]**, em seguida, para uma pasta que tenha um recorte inteligente ou Perfil de imagem de amostra inteligente aplicado a ele.
 1. Na pasta, toque no ícone **[!UICONTROL Mais Ações]** (...) e toque em **[!UICONTROL Recorte inteligente]**.
 
 1. Na página **[!UICONTROL Editar recortes inteligentes]**, siga um destes procedimentos:
@@ -274,7 +272,7 @@ Remova um Perfil de imagem de uma pasta do menu **[!UICONTROL Ferramentas]** ou,
 
 ### Removendo perfis de imagem do Dynamic Media de pastas por meio da interface do usuário de Perfis {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de imagem]**.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de imagem]**.
 1. Selecione o Perfil de imagem que deseja remover de uma pasta ou de várias pastas.
 1. Toque em **[!UICONTROL Remover perfil de processamento das pastas]** e selecione uma ou várias pastas que deseja usar para remover o perfil e toque em **[!UICONTROL Remover]**.
 
@@ -282,7 +280,7 @@ Remova um Perfil de imagem de uma pasta do menu **[!UICONTROL Ferramentas]** ou,
 
 ### Remoção de perfis de imagem do Dynamic Media de pastas por meio de Propriedades {#removing-image-profiles-from-folders-via-properties}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta da qual deseja remover um Perfil de imagem.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta da qual deseja remover um Perfil de imagem.
 1. Na pasta , toque na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Propriedades]**.
 1. Selecione a guia **[!UICONTROL Image Profiles]**.
 1. Na lista suspensa **[!UICONTROL Nome do perfil]**, selecione **[!UICONTROL Nenhum]** e toque em **[!UICONTROL Salvar e fechar]**.
