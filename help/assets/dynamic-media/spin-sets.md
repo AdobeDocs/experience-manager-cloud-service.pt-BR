@@ -4,10 +4,9 @@ description: Saiba como trabalhar com conjuntos de rotação no Dynamic Media.
 feature: Conjuntos de rotação
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1830'
 ht-degree: 12%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 12%
 
 Um Conjunto de rotação simula o ato real de girar um objeto para examiná-lo. Os Conjuntos de rotação permitem visualizar itens de qualquer ângulo, obtendo os detalhes visuais principais de qualquer ângulo.
 
-Um Conjunto de rotação simula uma experiência de visualização de 360 graus. O Dynamic Media oferece Conjuntos de rotação de eixo único em que os visualizadores podem girar um item. Além disso, os usuários podem &quot;formar livremente&quot; o zoom e deslocar qualquer uma das exibições com apenas alguns cliques do mouse. Dessa forma, os usuários podem examinar um item mais detalhadamente de um ponto de vista específico.
+Um Conjunto de rotação simula uma experiência de visualização de 360°. O Dynamic Media oferece Conjuntos de rotação de eixo único em que os visualizadores podem girar um item. Além disso, os usuários podem &quot;formar livremente&quot; o zoom e deslocar qualquer uma das exibições com apenas alguns cliques do mouse. Dessa forma, os usuários podem examinar um item mais detalhadamente de um ponto de vista específico.
 
 Os Conjuntos de rotação são designados por um banner com a palavra **[!UICONTROL SPINSET]**. Além disso, se o Conjunto de rotação for publicado, a data de publicação, indicada pelo ícone **[!UICONTROL Mundo]**, estará no banner junto com a última data de modificação, indicada pelo ícone **[!UICONTROL Lápis]**.
 
@@ -44,7 +43,7 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga estas etapas
 
 1. [Criar conjuntos de rotação](#creating-spin-sets).
 
-   Para criar um Conjunto de rotação, selecione **[!UICONTROL Criar > Conjunto de rotação]** e nomeie o conjunto, escolha os ativos e escolha a ordem em que as imagens serão exibidas.
+   Para criar um Conjunto de rotação, selecione **[!UICONTROL Criar]** > **[!UICONTROL Conjunto de rotação]** e nomeie o conjunto, escolha os ativos e escolha a ordem em que as imagens serão exibidas.
 
    Consulte [Trabalhar com seletores](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -52,7 +51,7 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga estas etapas
 
    Os administradores podem criar ou modificar as Predefinições do visualizador de conjunto de rotação. Para ver seu conjunto de rotação com uma predefinição do visualizador, selecione o conjunto de rotação e, no menu suspenso do painel à esquerda, selecione **Visualizadores**.
 
-   Para criar ou editar predefinições do visualizador, consulte **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]**.
+   Para criar ou editar predefinições do visualizador, consulte **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
 
    Consulte [Adicionar e editar predefinições do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -90,7 +89,7 @@ Veja a seguir algumas práticas recomendadas sobre imagens de conjunto de rotaç
 * Usar um formato sem perdas; Recomenda-se TIFF e PNG.
 * Mascarar todas as imagens para que o item apareça em um plano de fundo branco ou de alto contraste. Como opção, adicione sombras.
 * Verifique se os detalhes do produto estão bem iluminados e em foco.
-* Use imagens de rotação para roupas de moda com um manequim ou modelo. Frequentemente, o manequim é mascarado (utilizando um manequim de vidro) ou na imagem aparece um manequim/moldura estilizada. Você pode criar um conjunto de rotação no modelo definindo o número de ângulos. Marque cada ângulo com uma fita no chão para guiar o modelo para pisar e olhe na direção de cada tomada.
+* Use imagens de rotação para roupas de moda com um manequim ou modelo. Frequentemente, o manequim é mascarado (utilizando um manequim de vidro) ou na imagem aparece um manequim/moldura estilizada. Você pode criar um conjunto de rotação no modelo definindo o número de ângulos. Marque cada ângulo com uma fita no chão para que você possa guiar o modelo para pisar e olhar na direção de cada tomada.
 
 ## Criando Conjuntos de Rotação {#creating-spin-sets}
 
@@ -106,7 +105,7 @@ Esta seção descreve como criar Conjuntos de rotação.
 >
 >A ordem em que as imagens aparecem em um conjunto de rotação é importante. Certifique-se de ordená-los para que o spin seja uma exibição suave de 360 graus.
 
-**Para criar Conjuntos de rotação**
+**Para criar Conjuntos de rotação:**
 
 1. No Assets, navegue até o local em que deseja criar um conjunto de rotação, clique em **[!UICONTROL Criar]** e selecione **[!UICONTROL Conjunto de rotação]**. Além disso, crie o conjunto de dentro de uma pasta que contenha seus ativos. O Editor de conjunto de rotação é exibido.
 
@@ -157,7 +156,7 @@ Você pode criar conjuntos de rotação na interface do usuário ou automaticame
 >
 >Também é possível visualizar conjuntos por meio da interface do usuário, conforme descrito em [Editar conjuntos de rotação](#editing-spin-sets).
 
-**Para exibir Conjuntos de rotação**
+**Para exibir Conjuntos de rotação:**
 
 1. Ao abrir as propriedades de um ativo individual. As propriedades indicam o que define o ativo selecionado como membro (em **[!UICONTROL Membro de Conjuntos]**). Para ver o conjunto inteiro, toque no nome do conjunto.
 
@@ -183,7 +182,7 @@ Você pode executar várias tarefas de edição em Conjuntos de rotação, como 
 * Aplicar predefinições do visualizador.
 * Exclua o Conjunto de rotação.
 
-**Para editar um conjunto de rotação**
+**Para editar um Conjunto de rotação:**
 
 1. Siga um destes procedimentos:
 
