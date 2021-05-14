@@ -4,11 +4,10 @@ description: Saiba como trabalhar com conjuntos de mídia mista no Dynamic Media
 feature: Conjuntos de mídia mista
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 25%
+source-wordcount: '1471'
+ht-degree: 23%
 
 ---
 
@@ -30,7 +29,7 @@ Para ativar e executar rapidamente com Conjuntos de mídias mistas, siga estas e
 
 1. [Faça upload dos ativos](#uploading-assets).
 
-   Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Se necessário, crie seus [Conjuntos de imagens](/help/assets/dynamic-media/image-sets.md) e [Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md). Como os usuários podem ampliar as imagens no Visualizador de conjunto de mídias mistas, verifique se você considera o zoom ao escolher imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão.
+   Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Se necessário, crie seus [Conjuntos de imagens](/help/assets/dynamic-media/image-sets.md) e [Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md). Como os usuários podem ampliar as imagens no Visualizador de conjunto de mídias mistas, verifique se você considera o zoom ao escolher imagens. Certifique-se de que as imagens tenham pelo menos 2000 pixels no tamanho maior.
 
 1. [Criar conjuntos de mídia mista](#creating-mixed-media-sets).
 
@@ -70,7 +69,7 @@ Se necessário, você pode editar [Conjuntos de mídias mistas](#editing-mixed-m
 
 ## Carregar ativos {#uploading-assets}
 
-Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Lembre-se de que os usuários podem ampliar imagens no Visualizador de conjunto de mídias mistas. Assim, escolha imagens com essa capacidade de zoom em mente. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão.
+Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Lembre-se de que os usuários podem ampliar imagens no Visualizador de conjunto de mídias mistas. Assim, escolha imagens com essa capacidade de zoom em mente. Certifique-se de que as imagens tenham pelo menos 2000 pixels no tamanho maior.
 
 Além disso, se você quiser adicionar conjuntos de rotação ou conjuntos de imagens ao conjunto de mídia mista, crie-os também.
 
@@ -80,7 +79,7 @@ Você pode adicionar imagens, conjuntos de imagens, conjuntos de rotação e ví
 
 Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em ordem alfanumérica. Você pode reorganizar ou classificar ativos manualmente após sua adição.
 
-**Para criar um Conjunto de mídias mistas**
+**Para criar um Conjunto de mídias mistas:**
 
 1. No Assets, navegue até o local em que deseja criar um conjunto de mídia mista, clique em **[!UICONTROL Criar]** e selecione **[!UICONTROL Conjunto de mídia mista]**. Além disso, crie o conjunto de dentro de uma pasta que contenha seus ativos. O Editor do conjunto de mídias mistas é exibido.
 
@@ -126,7 +125,7 @@ Você pode executar várias tarefas de edição em ativos em Conjuntos de mídia
 * Aplicar predefinições do visualizador.
 * Altere a miniatura padrão.
 
-**Para editar um conjunto de mídia mista**
+**Para editar um Conjunto de mídias mistas:**
 
 1. Siga um destes procedimentos:
 
