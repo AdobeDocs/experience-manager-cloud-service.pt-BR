@@ -3,10 +3,9 @@ title: Trabalho com seletores
 description: Saiba mais sobre os métodos que você pode usar para selecionar ativos para imagens interativas, vídeos interativos e banners de carrossel no Dynamic Media.
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '750'
 ht-degree: 14%
 
 ---
@@ -59,7 +58,7 @@ Use o seletor de produto para escolher um produto quando quiser um ponto de aces
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. Quando estiver no modo **[!UICONTROL Visualização]**, você pode tocar no ponto de acesso ou no mapa de imagem e ver a aparência da Visualização rápida.
+1. Quando estiver no modo **[!UICONTROL Visualização]**, você pode tocar no ponto de acesso ou no mapa de imagem e ver como a Visualização rápida aparece.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
