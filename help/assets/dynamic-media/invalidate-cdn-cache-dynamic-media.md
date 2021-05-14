@@ -1,13 +1,12 @@
 ---
-title: Invalidar o cache CDN por meio do Dynamic Media
+title: Invalidar o cache CDN (Content Delivery Network) por meio do Dynamic Media
 description: '"Saiba como invalidar o conteúdo em cache do CDN (Content Delivery Network) para permitir que você atualize rapidamente os ativos entregues pela Dynamic Media, em vez de esperar que o cache expire."'
 feature: Gerenciamento de ativos
 role: Administrator,Business Practitioner
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1308'
 ht-degree: 1%
 
 ---
@@ -22,11 +21,11 @@ Os ativos da Dynamic Media são armazenados em cache pela CDN (Content Delivery 
 
 Consulte também [Visão geral do armazenamento em cache no Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**Para invalidar o cache CDN por meio do Dynamic Media**
+**Para invalidar o cache CDN por meio do Dynamic Media:**
 
 *Parte 1 de 2: Criação de um modelo de Invalidação de CDN*
 
-1. No AEM como um Cloud Service, toque em **[!UICONTROL Ferramentas > Ativos > Modelo de invalidação CDN]**.
+1. No Adobe Experience Manager as a Cloud Service, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Modelo de Invalidação CDN]**.
 
    ![Recurso de validação CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -35,7 +34,7 @@ Consulte também [Visão geral do armazenamento em cache no Dynamic Media](https
    | Cenário | Opção |
    | --- | --- |
    | Eu já criei um modelo de invalidação de CDN no passado usando o Dynamic Media Classic. | O campo de texto **[!UICONTROL Criar modelo]** é preenchido previamente com seus dados do modelo. Nesse caso, você pode editar o modelo ou continuar para a próxima etapa. |
-   | Eu tenho que criar um template. O que devo digitar? | No campo de texto **[!UICONTROL Criar modelo]**, insira um URL de imagem (incluindo predefinições ou modificadores de imagem) referenciando `<ID>`, em vez de uma ID de imagem específica como no exemplo a seguir:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Se o modelo contiver apenas `<ID>`, o Dynamic Media preencherá `https://<publishserver_name>/is/image/<company_name>/<ID>`, onde `<publishserver_name>` é o nome do Servidor de Publicação definido nas Configurações Gerais no Dynamic Media Classic . O `<company_name>` é o nome da raiz da sua empresa associada a esta instância de AEM e `<ID>` é o ativo selecionado por meio do seletor de ativos a ser invalidado.<br>Todas as postagens de predefinições/modificadores  `<ID>` são copiadas como estão na definição do URL.<br>Somente imagens, ou seja,  `/is/image`, podem ser formadas automaticamente com base no modelo.<br>Para  `/is/content/`, adicionar ativos, como vídeos ou PDFs, usando o seletor de ativos não gera URLs automaticamente. Em vez disso, você deve especificar esses ativos no modelo de Invalidação CDN ou pode adicionar manualmente o URL a esses ativos em *Parte 2 de 2: Definindo opções de Invalidação de CDN*.<br>**Exemplos:**<br> neste primeiro exemplo, o modelo de invalidação contém  `<ID>` juntamente com o URL do ativo com  `/is/content`. Por exemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. O Dynamic Media forma o URL com base nesse caminho, com `<ID>` sendo os ativos selecionados por meio do seletor de ativos que você deseja invalidar.<br>Neste segundo exemplo, o modelo de invalidação contém o URL completo do ativo usado em suas propriedades da Web com o  `/is/content` (não dependente do seletor de ativos). Por exemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` onde o backpack é a ID do ativo.<br>Os formatos de ativos compatíveis com o Dynamic Media são elegíveis para invalidação. Os tipos de arquivos de ativos que são *not* compatíveis com a invalidação de CDN incluem PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft Powerpoint, Microsoft Excel, Microsoft Word e Rich Text Format.<br>Ao criar o modelo, mas certifique-se de prestar atenção à sintaxe e aos erros de digitação; O Dynamic Media não faz nenhuma validação de modelo.<br>Especifique URLs para recortes inteligentes de imagem neste modelo de Invalidação de CDN ou no campo  **[!UICONTROL Adicionar]** URLtext na  *Parte 2: Definindo opções de Invalidação de CDN.*<br>**Importante:**cada entrada em um modelo de Invalidação CDN deve estar em sua própria linha.<br>*O exemplo de modelo a seguir é apenas para fins ilustrativos.* |
+   | Eu tenho que criar um template. O que devo digitar? | No campo de texto **[!UICONTROL Criar modelo]**, insira um URL de imagem (incluindo predefinições ou modificadores de imagem) referenciando `<ID>`, em vez de uma ID de imagem específica como no exemplo a seguir:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Se o modelo contiver apenas `<ID>`, o Dynamic Media preencherá `https://<publishserver_name>/is/image/<company_name>/<ID>`, onde `<publishserver_name>` é o nome do Servidor de Publicação definido nas Configurações Gerais no Dynamic Media Classic . O `<company_name>` é o nome da raiz da sua empresa associada a esta instância do Experience Manager e `<ID>` são os ativos selecionados por meio do seletor de ativos a serem invalidados.<br>Quaisquer predefinições/modificadores a seguir  `<ID>` são copiados como estão na definição do URL.<br>Somente imagens, ou seja,  `/is/image`, podem ser formadas automaticamente com base no modelo.<br>Para  `/is/content/`, adicionar ativos, como vídeos ou PDFs, usando o seletor de ativos não gera URLs automaticamente. Em vez disso, você deve especificar esses ativos no modelo de Invalidação CDN ou pode adicionar manualmente o URL a esses ativos em *Parte 2 de 2: Definindo opções de Invalidação de CDN*.<br>**Exemplos:**<br> neste primeiro exemplo, o modelo de invalidação contém  `<ID>` juntamente com o URL do ativo com  `/is/content`. Por exemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. O Dynamic Media forma o URL com base nesse caminho, com `<ID>` sendo os ativos selecionados por meio do seletor de ativos que você deseja invalidar.<br>Neste segundo exemplo, o modelo de invalidação contém o URL completo do ativo usado em suas propriedades da Web com o  `/is/content` (não dependente do seletor de ativos). Por exemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` onde o backpack é a ID do ativo.<br>Os formatos de ativos compatíveis com o Dynamic Media são elegíveis para invalidação. Os tipos de arquivos de ativos que são *not* compatíveis com a invalidação de CDN incluem PostScript®, Encapsulated PostScript®, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word e Rich Text Format.<br>Ao criar o modelo, mas certifique-se de prestar atenção à sintaxe e aos erros de digitação; O Dynamic Media não faz nenhuma validação de modelo.<br>Especifique URLs para recortes inteligentes de imagem neste modelo de Invalidação de CDN ou no campo  **[!UICONTROL Adicionar]** URLtext na  *Parte 2: Definindo opções de Invalidação de CDN.*<br>**Importante:**cada entrada em um modelo de Invalidação CDN deve estar em sua própria linha.<br>*O exemplo de modelo a seguir é somente para fins de explicação.* |
 
    ![Modelo de Invalidação CDN - Criar](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
@@ -44,7 +43,7 @@ Consulte também [Visão geral do armazenamento em cache no Dynamic Media](https
    *Parte 2 de 2: Configuração das opções de invalidação de CDN*
    <br>
 
-1. No AEM como um Cloud Service, toque em **[!UICONTROL Ferramentas > Ativos > Invalidação CDN]**.
+1. No Experience Manager como Cloud Service, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Invalidação CDN]**.
 
    ![Recurso de validação CDN](/help/assets/assets-dm/cdn-invalidation-path.png)
 
