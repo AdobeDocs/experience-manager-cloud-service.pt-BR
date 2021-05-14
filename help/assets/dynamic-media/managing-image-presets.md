@@ -4,10 +4,9 @@ description: '"Saiba mais sobre predefinições de imagens e como criar, modific
 feature: Predefinições de imagem, Visualizadores, Representações
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3653'
 ht-degree: 10%
 
 ---
@@ -30,7 +29,7 @@ Esta seção descreve como criar, modificar e gerenciar predefinições de image
 
 Como uma macro, uma Predefinição de imagem é uma coleção predefinida de comandos de dimensionamento e formatação salvos em um nome. Para entender como as Predefinições de imagem funcionam, suponha que o site exija que cada imagem do produto apareça em tamanhos diferentes, formatos diferentes e taxas de compactação para entrega de desktop e dispositivo móvel.
 
-Você pode criar duas predefinições de imagem: um com 500 x 500 pixels para a versão desktop e 150 x 150 pixels para a versão móvel. Você cria duas Predefinições de imagem, uma chamada `Enlarge` para exibir imagens a 500x500 pixels e outra chamada `Thumbnail` para exibir imagens a 150 x 150 pixels. Para fornecer imagens no tamanho `Enlarge` e `Thumbnail`, o Experience Manager procura a definição da Predefinição de imagem ampliada e da Predefinição de imagem em miniatura. Em seguida, o Experience Manager gera dinamicamente uma imagem no tamanho e nas especificações de formatação de cada Predefinição de imagem.
+Você pode criar duas predefinições de imagem: um com 500 x 500 pixels para a versão desktop e 150 x 150 pixels para a versão móvel. Você cria duas Predefinições de imagem, uma chamada `Enlarge` para exibir imagens a 500x500 pixels e outra chamada `Thumbnail` para exibir imagens a 150 x 150 pixels. Para entregar imagens no tamanho `Enlarge` e `Thumbnail`, o Experience Manager encontra a definição da Predefinição de ampliação de imagem e da Predefinição de imagem em miniatura. Em seguida, o Experience Manager gera dinamicamente uma imagem no tamanho e nas especificações de formatação de cada Predefinição de imagem.
 
 As imagens que são reduzidas quando entregues dinamicamente podem perder nitidez e detalhes. Por esse motivo, cada Predefinição de imagem contém controles de formatação para otimizar uma imagem quando ela é entregue em um tamanho específico. Esses controles garantem que suas imagens sejam nítidas e claras quando forem entregues ao seu site ou aplicativo.
 
@@ -38,7 +37,7 @@ Os administradores podem criar Predefinições de imagem. Para criar uma predefi
 
 ## Gerenciando predefinições de imagens {#managing-image-presets-1}
 
-Gerencie as predefinições de imagens no Experience Manager ao tocar ou clicar no logotipo do Experience Manager para acessar o console de navegação global e tocar ou clicar no ícone Ferramentas e navegar até **[!UICONTROL Ativos > Predefinições de imagem]**.
+Gerencie as predefinições de imagens no Experience Manager tocando ou clicando no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, tocando ou clicando no ícone Ferramentas e navegando até **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -63,7 +62,7 @@ O formato de arquivo Adobe Illustrator é uma variante do PDF. As principais dif
 * Os documentos do Adobe Illustrator consistem em uma única página com várias camadas. Cada camada é extraída como um subativo PNG no ativo principal do Illustrator.
 * Os documentos PDF consistem em uma ou mais páginas. Cada página é extraída como um subativo PDF de página única sob o documento PDF principal de várias páginas.
 
-Os subativos são criados pelo componente `Create Sub Asset process` dentro do workflow geral `DAM Update Asset`. Para ver esse componente de processo no workflow, toque em **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos > Ativo de atualização DAM > Editar]**.
+Os subativos são criados pelo componente `Create Sub Asset process` dentro do workflow geral `DAM Update Asset`. Para ver esse componente de processo no workflow, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Ativo de atualização DAM]** > **[!UICONTROL Editar]**.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
@@ -88,7 +87,7 @@ Para usar o Dynamic Media para visualizar e gerar representações dinâmicas pa
 
 Você acessa `Rasterize PDF/AI Image Preview Rendition` as opções do componente de processo por meio do workflow `DAM Update Asset`.
 
-Toque em Adobe Experience Manager no canto superior esquerdo, navegue até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**. Na página Modelos de fluxo de trabalho , selecione **[!UICONTROL Ativo de atualização do DAM]** e, na barra de ferramentas, toque em **[!UICONTROL Editar]**. Na página do fluxo de trabalho Atualizar ativo do DAM , toque duas vezes no componente do processo `Rasterize PDF/AI Image Preview Rendition` para abrir a caixa de diálogo Propriedades da etapa .
+Toque em Adobe Experience Manager no canto superior esquerdo, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Na página Modelos de fluxo de trabalho , selecione **[!UICONTROL Ativo de atualização do DAM]** e, na barra de ferramentas, toque em **[!UICONTROL Editar]**. Na página do fluxo de trabalho Atualizar ativo do DAM , toque duas vezes no componente do processo `Rasterize PDF/AI Image Preview Rendition` para abrir a caixa de diálogo Propriedades da etapa .
 
 #### Rasterizar opções de representação de visualização de imagem PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -96,41 +95,18 @@ Toque em Adobe Experience Manager no canto superior esquerdo, navegue até **[!U
 
 Argumentos para rasterizar o fluxo de trabalho de PDF ou AI
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Argumento do processo</strong></td>
-   <td><strong>Configuração padrão</strong></td>
-   <td><strong>Descrição</strong></td>
-  </tr>
-  <tr>
-   <td>Tipos de mime</td>
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>aplicativo/ilustrador<br /> </p> </td>
-   <td>Lista de tipos MIME de documentos considerados documentos PDF ou Illustrator.<br /> </td>
-  </tr>
-  <tr>
-   <td>Largura máxima</td>
-   <td>2048</td>
-   <td>Largura máxima da representação de visualização gerada, em pixels.<br /> </td>
-  </tr>
-  <tr>
-   <td>Altura máxima</td>
-   <td>2048</td>
-   <td>Altura máxima da representação de visualização gerada, em pixels.<br /> </td>
-  </tr>
-  <tr>
-   <td>Resolução</td>
-   <td>72</td>
-   <td>Resolução para rasterizar a primeira página, em ppi (pixels por polegada).</td>
-  </tr>
- </tbody>
-</table>
+| Argumento do processo | Configuração padrão | Descrição |
+|---|---|---|
+| Tipos de mime | application/pdf<br>application/postscript<br>application/illustrator | Lista de tipos MIME de documentos considerados documentos PDF ou Illustrator. |
+| Largura máxima | 2048 | Largura máxima da representação de visualização gerada, em pixels. |
+| Altura máxima | 2048 | Altura máxima da representação de visualização gerada, em pixels. |
+| Resolução | 72 | Resolução para rasterizar a primeira página, em ppi (pixels por polegada). |
 
 Usando os argumentos padrão do processo, a primeira página de um documento PDF/AI é rasterizada em 72 ppi e a imagem de visualização gerada é dimensionada em 2048 x 2048 pixels. Para uma implantação típica, é possível aumentar a resolução para um mínimo de 150 ppi ou mais. Por exemplo, um documento de tamanho de letra dos EUA a 300 ppi requer uma largura e altura máximas de 2550 x 3300 pixels, respectivamente.
 
 Largura máxima e Altura máxima limitam a resolução na qual rasterizar. Por exemplo, se os máximos estiverem inalterados e a Resolução for definida como 300 ppi, um documento Carta dos EUA será rasterizado em 186 ppi. Ou seja, o documento tem 1581 x 2046 pixels.
 
-O componente de processo `Rasterize PDF/AI Image Preview Rendition` tem um máximo definido para garantir que não crie imagens excessivamente grandes na memória. Imagens tão grandes podem estender a memória fornecida para a JVM (Java Virtual Machine). Deve-se tomar cuidado para fornecer à JVM memória suficiente para gerenciar o número configurado de fluxos de trabalho paralelos, cada um com o potencial de criar uma imagem no tamanho máximo configurado.
+O componente de processo `Rasterize PDF/AI Image Preview Rendition` tem um máximo definido para garantir que não crie imagens excessivamente grandes na memória. Imagens tão grandes podem estender a memória fornecida para a JVM (Java™ Virtual Machine). Deve-se tomar cuidado para fornecer à JVM memória suficiente para gerenciar o número configurado de fluxos de trabalho paralelos, cada um com o potencial de criar uma imagem no tamanho máximo configurado.
 
 ### Formato de arquivo InDesign (INDD) {#indesign-indd-file-format}
 
@@ -148,30 +124,12 @@ Os caminhos do ExtendScript nos argumentos do componente do processo de Extraç�
 
 Os seguintes scripts são usados pela integração do Dynamic Media:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Nome do ExtendScript</strong></td>
-   <td><strong>Padrão</strong></td>
-   <td><strong>Descrição</strong></td>
-  </tr>
-  <tr>
-   <td>ThumbnailExport.jsx</td>
-   <td>Sim</td>
-   <td>Gera uma representação de 300 ppi <code>thumbnail.jpg</code> que é otimizada e transformada em uma representação PTIFF por <code>Dynamic Media Process Image Assets</code> componente do processo.<br /> </td>
-  </tr>
-  <tr>
-   <td>JPEGPagesExport.jsx</td>
-   <td>Sim</td>
-   <td>Gera um subativo JPEG de 300 ppi para cada página. O subativo JPEG é um ativo real armazenado no ativo do InDesign. Ele também é otimizado e transformado em PTIFF pelo workflow <code>DAM Update Asset</code>.<br /> </td>
-  </tr>
-  <tr>
-   <td>PDFPagesExport.jsx</td>
-   <td>Não</td>
-   <td>Gera um subativo PDF para cada página. O subativo PDF é processado conforme descrito anteriormente. Como o PDF contém somente uma página, nenhum subativo é gerado.<br /> </td>
-  </tr>
- </tbody>
-</table>
+
+| Nome do ExtendScript | Padrão | Descrição |
+|---|---|---|
+| ThumbnailExport.jsx | Sim | Gera uma representação de 300 ppi `thumbnail.jpg` que é otimizada e transformada em uma representação PTIFF por `Dynamic Media Process Image Assets` componente do processo. |
+| JPEGPagesExport.jsx | Sim | Gera um subativo JPEG de 300 ppi para cada página. O subativo JPEG é um ativo real armazenado no ativo do InDesign. Ele também é otimizado e transformado em PTIFF pelo workflow `DAM Update Asset` . |
+| PDFPagesExport.jsx | Não | Gera um subativo PDF para cada página. O subativo PDF é processado conforme descrito anteriormente. Como o PDF contém apenas uma página, nenhum subativo é gerado. |
 
 ### Configuração do tamanho da miniatura da imagem {#configuring-image-thumbnail-size}
 
@@ -194,7 +152,7 @@ O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL w
 
 **Para configurar o tamanho da miniatura da imagem**
 
-1. Toque em **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos > Ativo de atualização do DAM > Editar]**.
+1. Toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Ativo de atualização do DAM]** > **[!UICONTROL Editar]**.
 1. Toque na etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]** e toque na guia **[!UICONTROL Miniaturas]**. Altere o tamanho da miniatura, conforme necessário, e toque em **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
@@ -211,7 +169,7 @@ O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL w
 
 As predefinições de imagens criadas estão disponíveis como representações dinâmicas ao visualizar ativos. O Experience Manager mostra várias representações dinâmicas ao visualizar um ativo de **[!UICONTROL Exibição de detalhes > Representações]**. Você pode aumentar ou diminuir o limite de representações exibidas.
 
-**Para aumentar ou diminuir o número de predefinições de imagens exibidas**:
+**Para aumentar ou diminuir o número de predefinições de imagens exibidas:**
 
 1. Navegue até CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navegue até o nó da listagem de predefinições de imagens em `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -239,11 +197,12 @@ Se você pretende suportar a assimilação de arquivos AI, PDF e EPS para gerar 
 Consulte [Adobe Illustrator (AI), PostScript® (EPS) e formatos de arquivo PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 Se você pretende suportar a assimilação de arquivos INDD para gerar a representação dinâmica desse formato de arquivo, analise as seguintes informações antes de criar predefinições de imagem.
+
 Consulte [InDesign (INDD) file format](#indesign-indd-file-format).
 
-**Para criar uma predefinição** de imagem:
+**Para criar uma predefinição de imagem:**
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas > Ativos > Predefinições de imagem]**.
+1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 1. Clique em **[!UICONTROL Criar]**. A janela **[!UICONTROL Editar predefinição de imagem]** é aberta.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -356,7 +315,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     <ul>
      <li>Selecione <strong>Perceptual</strong> para compactar a gama total de um espaço de cores em outro espaço de cores quando uma ou mais cores na imagem original estiverem fora do gamut do espaço de cores de destino.</li>
      <li>Selecione <strong>Colorimétrica relativa</strong> quando uma cor no espaço de cores atual estiver fora do gamut no espaço de cores de destino. E você quer mapeá-lo para a cor mais próxima possível dentro do gama do espaço de cores alvo sem afetar outras cores. </li>
-     <li>Selecione <strong>Saturation</strong> para reproduzir a saturação de cor da imagem original ao converter no espaço de cores de destino. </li>
+     <li>Selecione <strong>Saturation</strong> se desejar reproduzir a saturação de cores da imagem original ao converter no espaço de cores de destino. </li>
      <li>Selecione <strong>Colorimétrica Absoluta</strong> para corresponder as cores exatamente sem nenhum ajuste do ponto branco ou do ponto preto que alteraria o brilho da imagem.</li>
     </ul> </td>
   </tr>
@@ -372,9 +331,9 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
    <td><strong>Tipo de nitidez</strong></td>
    <td><p>Selecione <strong>None</strong>, <strong>Nitidez</strong> ou <strong>Tirar nitidez da máscara</strong>. </p>
     <ul>
-     <li>Selecione <strong>None</strong> para desativar a nitidez.</li>
+     <li>Selecione <strong>None</strong> se desejar desativar a nitidez.</li>
      <li>Selecione <strong>Nitidez </strong>para aplicar um filtro de nitidez básico à imagem depois que toda a escala ocorrer. A nitidez pode ajudar a compensar a indefinição que pode resultar na exibição de uma imagem em um tamanho diferente. </li>
-     <li>Selecione<strong> Tirar nitidez da máscara</strong> para ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. Você pode controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que é ignorado. Esse efeito usa as mesmas opções do filtro "Tirar nitidez da máscara" do Photoshop.</li>
+     <li>Selecione<strong> Tirar nitidez da máscara</strong> se quiser ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. Você pode controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que é ignorado. Esse efeito usa as mesmas opções do filtro "Tirar nitidez da máscara" do Photoshop.</li>
     </ul> <p>Em <strong>Tirar nitidez da máscara</strong>, você tem as seguintes opções:</p>
     <ul>
      <li><strong>Quantia</strong>  - Controla a quantidade de contraste aplicado aos pixels da borda. O valor padrão do número real é 1,0. Para imagens de alta resolução, você pode aumentá-lo até 5,0. Considere Quantia como uma medida de intensidade de filtro.</li>
@@ -471,7 +430,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
 ### Editar predefinições de imagem {#modifying-image-presets}
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas > Ativos > Predefinições de imagem]**.
+1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -484,5 +443,5 @@ As predefinições de imagens são publicadas automaticamente para você.
 
 ### Excluindo predefinições de imagem {#deleting-image-presets}
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos > Predefinições de imagem]**.
+1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 1. Selecione uma predefinição e clique em **[!UICONTROL Delete]**. A Dynamic Media confirma que você deseja excluí-la. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
