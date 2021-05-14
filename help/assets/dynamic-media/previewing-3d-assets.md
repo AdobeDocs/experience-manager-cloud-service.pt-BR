@@ -1,10 +1,9 @@
 ---
 title: Pré-visualização de ativos 3D
 description: Saiba como visualizar ativos 3D no Dynamic Media.
-translation-type: tm+mt
-source-git-commit: 2fd39221eca36f520d0095339423ac2c6a0c322e
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '562'
 ht-degree: 15%
 
 ---
@@ -25,7 +24,7 @@ A visualização 3D interativa no Experience Manager oferece suporte aos seguint
 | extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmissão binária GL | model/gltf-binário |  |
-| GLTF | Formato de transmissão GL | model/gltf+json | Consulte **Observação** abaixo. |
+| GLTF | Formato de transmissão GL | model/gltf+json | Consulte a **Nota** abaixo. |
 | OBJ | Arquivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Estereolitografia | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Suporte apenas para ingestão; visualização não disponível. |
@@ -46,19 +45,19 @@ A visualização 3D interativa no Experience Manager oferece suporte aos seguint
 
 O tempo necessário para abrir um ativo 3D na página de visualização de detalhes do ativo depende de vários fatores, como largura de banda, complexidade da imagem e latências para o servidor.
 
-Além disso, os recursos do computador cliente, como uma estação de trabalho, um notebook ou um dispositivo de toque móvel, também são importantes a ser considerados ao manipular a câmera interativamente. Um sistema bastante eficiente com bons recursos gráficos pode tornar a experiência de visualização interativa em 3D mais fácil e favorável.
+Além disso, os recursos do computador cliente - como uma estação de trabalho, um notebook ou um dispositivo de toque móvel - também são importantes a serem considerados ao manipular a câmera interativamente. Um sistema bastante eficiente com bons recursos gráficos pode tornar a experiência de visualização interativa em 3D mais fácil e favorável.
 
 **Para visualizar ativos 3D no Experience Manager:**
 
 1. Certifique-se de ter carregado ativos 3D no Experience Manager.
 Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewing-assets) e [Fazer upload de ativos](/help/assets/manage-digital-assets.md#uploading-assets).
-1. No Experience Manager, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Ativos > Arquivos]**.
+1. No Experience Manager, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]**.
 
    ![Página de navegação](/help/assets/dynamic-media/assets/navigation-assets.png)
 
 1. Próximo ao canto superior direito da página, na lista suspensa Exibição, toque em **[!UICONTROL Exibição de cartão]** e navegue até um ativo 3D que deseja visualizar.
 
-   ![Seleção de cartão 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
+   ![Seleção do cartão 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
    _Na Exibição de cartão, toque no cartão do ativo 3D que deseja visualizar._
 
 1. Toque no cartão do ativo 3D.
