@@ -4,17 +4,16 @@ description: Saiba como visualizar ativos no Dynamic Media.
 feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1214'
 ht-degree: 1%
 
 ---
 
 # Visualização de ativos{#previewing-assets}
 
-Você pode usar a Visualização para ver como um ativo digital que você carregou é exibido por um cliente em seu próprio navegador da Web. O visualizador padrão incorporado entre dispositivos atribuído ao ativo é usado para a Visualização.
+Você pode usar a Visualização para ver como um ativo digital que você carregou aparece quando é visualizado por um cliente em seu próprio navegador da Web. O visualizador padrão incorporado entre dispositivos atribuído ao ativo é usado para a Visualização.
 
 Um visualizador é uma coleção de várias configurações ou &quot;predefinições&quot;. Por exemplo, o tamanho de exibição do visualizador, o comportamento de zoom, esquemas de cores, bordas e fontes, que determinam como os usuários visualizam ativos de mídia avançada nas telas de seus computadores e dispositivos móveis.
 
@@ -25,11 +24,11 @@ Além de usar o recurso de Visualização dedicado para vídeos, conjuntos de ro
 
 >[!NOTE]
 >
->Quando você está em uma página da Web (Sites) no Adobe Experience Manager, não pode visualizar ativos no modo **Editar**. Em vez disso, vá para o modo **Preview** clicando em **Preview** no canto superior direito da página.
+>Quando você está em uma página da Web (Sites) no Adobe Experience Manager, não pode visualizar ativos no modo **[!UICONTROL Editar]**. Em vez disso, vá para o modo de Visualização clicando em **[!UICONTROL Preview]** no canto superior direito da página.
 
 Para ativar ou desativar as predefinições do visualizador na interface do usuário, consulte [Gerenciar predefinições do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-**Para visualizar ativos**
+**Para visualizar ativos:**
 
 1. Em **[!UICONTROL Experience Manager]**, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Ativos]** e em **[!UICONTROL Arquivos]** para acessar os ativos.
 1. Próximo ao canto superior direito da página, na lista suspensa **[!UICONTROL View]**, toque em **[!UICONTROL List View]**.
@@ -58,7 +57,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <ul>
       <li><p><strong>Rode sua câmera</strong>  3D - Órbita sua exibição ao redor da cena e dos objetos 3D.</p> Rato: Clique com o botão esquerdo do mouse + Arraste.</p> Tela sensível ao toque: Pressione + Arraste.</p></li>
       <li><p><strong>Deslocar sua câmera</strong>  - Desloque sua exibição para a esquerda, para a direita, para cima e para baixo.</p> Rato: Clique com o botão direito do mouse em + Arraste.</p> Tela sensível ao toque: Pressione com dois dedos + Arraste.</p></li>
-      <li><p><strong>Zoom da câmera</strong>  - Zoom da câmera para mover para dentro e para fora de áreas da cena 3D.</p> Rato: Roda de rolagem.</p> Tela sensível ao toque: Aperte o dedo.</p></li>
+      <li><p><strong>Zoom da câmera</strong>  - Aplique zoom à câmera se quiser mover para dentro e para fora de áreas da cena 3D.</p> Rato: Roda de rolagem.</p> Tela sensível ao toque: Aperte o dedo.</p></li>
       <li><p><strong>Recenter sua câmera</strong>  - Órbita sua visualização em torno da cena 3D e dos objetos.</p> Rato: Clique duas vezes.</p> Tela sensível ao toque: Toque duas vezes.</li></ul></td>
       </tr>
       <tr>
