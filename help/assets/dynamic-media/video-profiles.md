@@ -4,10 +4,9 @@ description: O Dynamic Media já vem com um perfil de codificação de vídeo ad
 feature: Gerenciamento de ativos, Perfis de vídeo, Representações
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3664'
+source-wordcount: '3665'
 ht-degree: 10%
 
 ---
@@ -101,7 +100,7 @@ O tamanho máximo suportado do arquivo de vídeo para o recorte inteligente é o
 
 * Duração de cinco minutos.
 * 30 quadros por segundo (FPS).
-* 300 MB de tamanho de arquivo.
+* Tamanho do arquivo de 300 MB.
 
 O Adobe Sensei é limitado a 9000 quadros. Ou seja, cinco minutos a 30 QPS. Se o vídeo tiver um FPS maior, a duração máxima do vídeo compatível diminuirá. Por exemplo, um vídeo de 60 FPS deve ter dois minutos e meio de duração para ser compatível com o Adobe Sensei e o recorte inteligente.
 
@@ -211,7 +210,7 @@ Toque no ícone de informações ao lado de cada opção para obter mais descri�
 1. Faça o seguinte:
    * No campo **[!UICONTROL Width]**, digite **[!UICONTROL auto]**.
    * No campo **[!UICONTROL Height]**, insira um valor em pixels.
-Para ajudá-lo a visualizar o tamanho do vídeo, toque no ícone Informações de altura para abrir a página **[!UICONTROL Calculadora de tamanho]**. Use a página **[!UICONTROL Calculadora de tamanho]** para definir ainda mais a dimensão do vídeo (caixa azul) como desejar. Quando terminar, no canto superior direito da caixa de diálogo, toque em **[!UICONTROL X]**.
+Para ajudá-lo a visualizar o tamanho do vídeo, toque no ícone Informações de altura para abrir a página **[!UICONTROL Calculadora de tamanho]**. Use a página **[!UICONTROL Calculadora de tamanho]** para definir ainda mais o tamanho do vídeo (caixa azul) como desejar. Quando terminar, no canto superior direito da caixa de diálogo, toque em **[!UICONTROL X]**.
 1. (Opcional) Siga um destes procedimentos:
 
    * Toque na guia **[!UICONTROL Avançado]** e verifique se a caixa de seleção **[!UICONTROL Usar valores padrão]** está marcada (recomendada).
@@ -244,7 +243,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
 
 É possível editar um perfil de codificação de vídeo existente para aproveitar os parâmetros de codificação avançada de vídeo não encontrados na interface do usuário ao criar ou editar um Perfil de vídeo no Experience Manager. É possível adicionar um ou mais parâmetros avançados, como minBitrate e maxBitrate, ao perfil existente.
 
-**Para usar parâmetros** de codificação de vídeo personalizados:
+**Para usar parâmetros de codificação de vídeo personalizados:**
 
 1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
 1. Na página CRXDE Lite, no painel Explorer à esquerda, navegue até o seguinte:
@@ -316,7 +315,7 @@ Consulte também [Práticas recomendadas para codificação de vídeo](/help/ass
 
 Para definir parâmetros de processamento avançados para outros tipos de ativos, consulte [Configuração do processamento de ativos](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Para editar um Perfil** de vídeo:
+**Para editar um Perfil de vídeo:**
 
 1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
 1. Na página Perfis de vídeo , marque um nome de Perfil de vídeo.
@@ -383,7 +382,7 @@ Você pode [monitorar o progresso de um trabalho de processamento do Perfil de v
 
 #### Aplicar um perfil de vídeo a pastas das Propriedades {#applying-video-profiles-to-folders-from-properties}
 
-1. Toque ou clique no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]** e até a pasta à qual deseja aplicar um Perfil de vídeo.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta à qual deseja aplicar um Perfil de vídeo.
 1. Na pasta , toque na marca de seleção para selecioná-la e toque em **[!UICONTROL Propriedades]**.
 1. Selecione a guia **[!UICONTROL Perfis de vídeo]**, selecione o perfil no menu suspenso e clique em **[!UICONTROL Salvar e fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
@@ -396,7 +395,7 @@ Além de aplicar um perfil a uma pasta, também é possível aplicar um globalme
 
 Consulte também [Reprocessando ativos em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Para aplicar um perfil de vídeo globalmente**,
+**Para aplicar um perfil de vídeo globalmente:**
 
 * Navegue até CRXDE Lite para o seguinte nó: `/content/dam/jcr:content`. Adicione a propriedade `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e toque em **[!UICONTROL Salvar tudo]**.
 
