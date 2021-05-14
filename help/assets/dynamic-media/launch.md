@@ -4,11 +4,10 @@ description: Saiba mais sobre a extensão Visualizadores do Dynamic Media para P
 feature: Relatórios dos ativos
 role: Administrator,Business Practitioner
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '6663'
-ht-degree: 10%
+source-wordcount: '6661'
+ht-degree: 9%
 
 ---
 
@@ -24,7 +23,7 @@ Essa integração significa que você pode rastrear o uso de visualizadores do D
 
 Para saber mais sobre extensões, consulte [extensões do Adobe](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension) no Guia do Usuário do Experience Platform Launch.
 
-**Este tópico foi criado para o seguinte:** administradores de site, desenvolvedores na plataforma Adobe Experience Manager e pessoas em Operações.
+**Este tópico foi criado para o seguinte:** administradores de site, desenvolvedores no programa Adobe Experience Manager e pessoas em Operações.
 
 ### Limitações da integração {#limitations-of-the-integration}
 
@@ -58,7 +57,7 @@ No Experience Platform Launch, os conceitos de *Elementos de dados* e *Regras* t
 
 Um Elemento de dados no Experience Platform Launch é uma propriedade nomeada cujo valor é definido estaticamente ou calculado dinamicamente com base no estado de uma página da Web ou nos dados do Dynamic Media Viewers.
 
-As opções disponíveis para uma definição de Elemento de dados dependem da lista de Extensões instaladas na Propriedade do Experience Platform Launch. A extensão &quot;Core&quot; é pré-instalada e está disponível para uso imediato em qualquer configuração. Essa extensão &quot;Core&quot; permite definir um Elemento de dados cujo valor provém de cookie, código JavaScript, sequência de consulta e muitas outras fontes.
+As opções disponíveis para uma definição de Elemento de dados dependem da lista de Extensões instaladas na Propriedade do Experience Platform Launch. A extensão &quot;Core&quot; é pré-instalada e está disponível para uso imediato em qualquer configuração. Essa extensão &quot;Core&quot; permite definir um Elemento de dados, que valor provém de cookie, código JavaScript™, sequência de consulta e muitas outras fontes.
 
 Para o rastreamento do Adobe Analytics, várias outras extensões devem ser instaladas, conforme descrito em [Instalação e configuração de extensões](#installing-and-setup-of-extensions). A extensão Visualizadores do Dynamic Media adiciona uma capacidade de definir um Elemento de dados que é um argumento do evento Visualizador dinâmico. Por exemplo, é possível fazer referência ao tipo de visualizador ou ao nome do ativo relatado pelo visualizador quando carregado, o nível de zoom relatado quando o usuário final faz zoom e muito mais.
 
@@ -66,7 +65,7 @@ A extensão Visualizador do Dynamic Media mantém os valores de seus Elementos d
 
 Depois de defini-lo, um Elemento de dados pode ser usado em outros locais da interface do usuário do Experience Platform Launch, usando o widget seletor de elementos de dados. Especificamente, os Elementos de dados definidos para as finalidades do rastreamento de Visualizadores do Dynamic Media são referenciados pela Ação Definir variáveis da extensão Adobe Analytics na Regra (veja abaixo).
 
-Consulte [Data elements](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference) no Guia do Usuário do Experience Platform Launch.
+Consulte [Data elements](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html#ui) no Guia do Usuário do Experience Platform Launch.
 
 #### Sobre regras no Experience Platform Launch {#about-rules-in-adobe-launch}
 
@@ -92,7 +91,7 @@ Na seção Ações , é necessário que você tenha uma ação *Definir variáve
 
 A ação *Definir variáveis* deve ser seguida por uma ação *Enviar beacon*. A ação *Send Beacon* envia dados ao servidor de rastreamento de análise. Ambas as ações, *Definir variáveis* e *Enviar beacon*, vêm da extensão Adobe Analytics.
 
-Consulte [Rules](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html#reference) no Guia do Usuário do Experience Platform Launch.
+Consulte [Rules](https://experienceleague.adobe.com/docs/launch/using/ui/rules.html#ui) no Guia do Usuário do Experience Platform Launch.
 
 #### Exemplo de configuração {#sample-configuration}
 
@@ -116,7 +115,7 @@ A seguinte configuração de exemplo no Experience Platform Launch demonstra com
 
    ![image2019-3](assets/image2019-3.png)
 
-1. A configuração de regra resultante é semelhante ao seguinte:
+1. A configuração de regra resultante aparece como a seguinte:
 
    ![image2019-4](assets/image2019-4.png)
 
@@ -152,7 +151,7 @@ Consulte [Adicionar o código incorporado do Experience Platform Launch](https:/
 
 Para saber mais sobre como usar o recurso de código incorporado do Experience Manager Dynamic Media, consulte [Incorporando o visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
 
-**Para rastrear visualizadores do Dynamic Media usando o código** incorporado:
+**Para rastrear visualizadores do Dynamic Media usando o código incorporado:**
 
 1. Ter uma página da Web pronta para incorporar um visualizador do Dynamic Media.
 1. Obtenha o código incorporado da biblioteca do Experience Platform Launch fazendo primeiro o logon no Experience Platform Launch (consulte [Configuração do Experience Platform Launch](#configuring-adobe-launch-for-the-integration)).
@@ -204,7 +203,7 @@ Qualquer visualizador do Dynamic Media tem um identificador exclusivo na página
 
 O valor exato retornado pelo Elemento de dados depende do contexto. Se o Elemento de dados for solicitado em uma Regra que foi acionada por um evento do visualizador do Dynamic Media, o valor do Elemento de dados será retornado para o visualizador que iniciou a Regra. E o Elemento de dados é solicitado em uma Regra que foi acionado por um Evento de alguma outra extensão do Platform launch. Nesse momento, o valor do Elemento de dados vem do visualizador que foi o último a atualizar esse Elemento de dados.
 
-**Considere a seguinte configuração** de exemplo:
+**Considere a seguinte configuração de exemplo:**
 
 * Uma página da Web que tem dois visualizadores de zoom do Dynamic Media: *viewer1* e *viewer2*.
 
@@ -230,7 +229,7 @@ A amostra configurada acima também afeta a duração do valor do Elemento de da
 
 Em qualquer caso, os valores dos Elementos de dados orientados pelos Visualizadores do Dynamic Media não são armazenados no armazenamento local ou no servidor; em vez disso, eles são mantidos somente na biblioteca Experience Platform Launch do lado do cliente. Os valores desse Elemento de dados desaparecem quando a página da Web é recarregada.
 
-Geralmente, o Editor de Elemento de Dados suporta [seleção de duração do armazenamento](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element). No entanto, os Elementos de dados que usam a extensão Visualizadores do Dynamic Media oferecem suporte apenas à opção de duração de armazenamento de **[!UICONTROL None]**. A configuração de qualquer outro valor é possível na interface do usuário, mas o comportamento do Elemento de dados não é definido nesse caso. A extensão gerencia o valor do Elemento de dados sozinho: o Elemento de dados que mantém o valor do argumento de evento do visualizador durante todo o ciclo de vida do visualizador.
+Geralmente, o Editor de Elemento de Dados suporta [seleção de duração do armazenamento](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html?lang=en#create-a-data-element). No entanto, os Elementos de dados que usam a extensão Visualizadores do Dynamic Media oferecem suporte apenas à opção de duração de armazenamento de **[!UICONTROL None]**. A configuração de qualquer outro valor é possível na interface do usuário, mas o comportamento do Elemento de dados não é definido nesse caso. A extensão gerencia o valor do Elemento de dados sozinho: o Elemento de dados que mantém o valor do argumento de evento do visualizador durante todo o ciclo de vida do visualizador.
 
 ### Sobre regras na extensão Visualizadores do Dynamic Media {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -426,7 +425,7 @@ Após configurar o Adobe Analytics, as seguintes etapas serão configuradas para
 
 Consulte também [Guia de implementação do Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html).
 
-**Para configurar o Adobe Analytics para a integração**:
+**Para configurar o Adobe Analytics para a integração:**
 
 1. Comece acessando o Adobe Analytics a partir do Experience Cloud [home page](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). Na barra de menus, clique no ícone Soluções (uma tabela de três por três pontos) próximo ao canto superior direito da página, em seguida, clique em **[!UICONTROL Analytics]**.
 
@@ -438,11 +437,11 @@ Consulte também [Guia de implementação do Analytics](https://experienceleague
 
 1. Próximo ao canto superior direito da página do Adobe Analytics, à direita do campo **[!UICONTROL Pesquisar relatórios]**, selecione o conjunto de relatórios correto na lista suspensa. Se houver vários conjuntos de relatórios disponíveis e você não tiver certeza de qual usar, entre em contato com o administrador do Adobe Analytics, que pode ajudá-lo a selecionar qual usar.
 
-   Na ilustração abaixo, um usuário criou um conjunto de relatórios chamado *DynamicMediaViewersExtensionDoc* e o selecionou na lista suspensa. O nome do conjunto de relatórios é somente para fins ilustrativos. O nome do conjunto de relatórios que você selecionar dependerá de você.
+   No exemplo abaixo, um usuário criou um conjunto de relatórios chamado *DynamicMediaViewersExtensionDoc* e o selecionou na lista suspensa. O nome do conjunto de relatórios é apenas um exemplo. O nome do conjunto de relatórios que você selecionar dependerá de você.
 
    Se nenhum conjunto de relatórios estiver disponível, você ou o administrador da Adobe Analytics devem criar um antes de continuar com a configuração.
 
-   Consulte [Relatórios e conjuntos de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) e [Criar um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/create-report-suite.html#admin-console).
+   Consulte [Relatórios e conjuntos de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) e [Criar um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites).
 
    No Adobe Analytics, os conjuntos de relatórios são gerenciados em **[!UICONTROL Admin > Conjuntos de relatórios]**.
 
@@ -462,8 +461,8 @@ Consulte também [Guia de implementação do Analytics](https://experienceleague
 
    Para ativar uma nova variável de Tráfego personalizado, no Adobe Analytics, na barra de ferramentas, clique em **[!UICONTROL Admin > Conjuntos de relatórios]**.
 
-1. Na página **[!UICONTROL Gerenciador do conjunto de relatórios]**, selecione o relatório correto e, na barra de ferramentas, clique em **[!UICONTROL Editar configurações > Tráfego > Variáveis de tráfego]**.
-1. Ali, escolha uma variável não utilizada, atribua a ela um nome descritivo ( **[!UICONTROL Ativo do visualizador (prop 30)]**) e altere a caixa de combinação para &quot;Ativado&quot; na coluna Ativado .
+1. Na página **[!UICONTROL Gerenciador do conjunto de relatórios]**, selecione o relatório correto e, na barra de ferramentas, clique em **[!UICONTROL Editar configurações]** > **[!UICONTROL Tráfego]** > **[!UICONTROL Variáveis de tráfego]**.
+1. Escolha uma variável não usada, atribua a ela um nome descritivo ( **[!UICONTROL Ativo do visualizador (prop 30)]**) e altere a caixa de combinação para &quot;Ativado&quot; na coluna Ativado .
 
    A captura de tela a seguir é um exemplo de uma variável de Tráfego personalizado ( **[!UICONTROL prop30]**) para rastrear um nome de ativo usado pelo visualizador:
 
@@ -489,10 +488,10 @@ Após configurar o Experience Platform Launch, o seguinte será configurado para
 
 * A criação de uma nova propriedade para manter todas as configurações juntas.
 * A instalação e configuração das extensões. O código do lado do cliente de todas as extensões instaladas na Propriedade é compilado em conjunto em uma biblioteca. Essa biblioteca é usada posteriormente pela página da Web.
-* Configuração de elementos de dados e regras. Essa configuração define quais dados capturar dos visualizadores do Dynamic Media, quando acionar a lógica de rastreamento e onde enviar os dados do visualizador no Adobe Analytics.
+* Configuração de elementos de dados e regras. Essa configuração define quais dados adquirir dos visualizadores do Dynamic Media, quando acionar a lógica de rastreamento e onde enviar os dados do visualizador no Adobe Analytics.
 * Publicação da biblioteca.
 
-**Para configurar o Experience Platform Launch para a integração**:
+**Para configurar o Experience Platform Launch para a integração:**
 
 1. Comece acessando o Experience Platform Launch a partir do Experience Cloud [home page](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/). Na barra de menu, clique no ícone Soluções (três por três tabelas de pontos) próximo ao canto superior direito da página, em seguida, clique em **[!UICONTROL Iniciar]**.
 
@@ -543,7 +542,7 @@ Na página Instalar extensão, digite a ID do conjunto de relatórios no campo *
 
 ![image2019-7-8_16-47-40](assets/image2019-7-8_16-47-40.png)
 
-*Configure o seguinte item somente se planeja usar o rastreamento de vídeo:*
+*Configure o seguinte item somente se você pretende usar o rastreamento de vídeo:*
 
 Na página **[!UICONTROL Instalar extensão]**, expanda **[!UICONTROL Geral]** e especifique o Servidor de rastreamento. O Servidor de rastreamento segue o modelo `<trackingNamespace>.sc.omtrdc.net`, onde `<trackingNamespace>` são as informações obtidas no email de provisionamento.
 
@@ -585,9 +584,9 @@ Consulte [Configurar a extensão do Dynamic Media Viewers](#configuring-the-dyna
 
 Para alterar a configuração do Experience Platform Launch (incluindo Propriedade, Extensões, Regras e Elementos de Dados configurados), você deve *publicar* essas alterações. A publicação no Experience Platform Launch é executada a partir da guia Publicação na configuração Propriedade.
 
-O Platform launch pode ter vários ambientes de desenvolvimento, um ambiente de preparo e um ambiente de produção. Por padrão, a Configuração da nuvem do Platform launch no Experience Manager aponta o nó Experience Manager author para o ambiente Stage do Platform launch. O nó Experience Manager publish aponta para o ambiente Production do Platform launch. Esse arranjo significa que, com as configurações padrão do Experience Manager, é necessário publicar a biblioteca do Platform launch no ambiente de preparo. Isso permite usá-lo no Experience Manager author. Em seguida, você pode publicá-lo no ambiente de Produção para que ele possa ser usado na publicação do Experience Manager.
+O Platform launch pode ter vários ambientes de desenvolvimento, um ambiente de preparo e um ambiente de produção. Por padrão, a Configuração da nuvem do Platform launch no Experience Manager aponta o nó Experience Manager author para o ambiente Stage do Platform launch. O nó Experience Manager Publish aponta para o ambiente de produção do Platform launch. Esse arranjo significa que, com as configurações padrão do Experience Manager, é necessário publicar a biblioteca do Platform launch no ambiente de preparo. Isso permite usá-lo no Experience Manager author. Em seguida, você pode publicá-lo no ambiente de Produção para que ele possa ser usado na publicação do Experience Manager.
 
-Consulte [Ambientes](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types) para obter mais informações sobre ambientes Experience Platform Launch.
+Consulte [Ambientes](https://experienceleague.adobe.com/docs/launch/using/publish/environments/environments.html#environment-types) para obter mais informações sobre ambientes Experience Platform Launch.
 
 A publicação de uma biblioteca envolve as duas etapas a seguir:
 
@@ -645,7 +644,7 @@ A publicação de uma biblioteca envolve as duas etapas a seguir:
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Consulte [Publicação](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference) para obter mais informações sobre o processo de publicação no Experience Platform Launch.
+   Consulte [Publicação](https://experienceleague.adobe.com/docs/launch/using/publish/overview.html#publish) para obter mais informações sobre o processo de publicação no Experience Platform Launch.
 
 ## Configuração do Adobe Experience Manager para a integração {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -744,9 +743,9 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
    * **[!UICONTROL Título]**  - Insira um título de conta descritiva.
    * **[!UICONTROL Servidor de autorização]**  - Retorne à página Detalhes da integração que você abriu anteriormente. Clique na guia **[!UICONTROL JWT]**. Copie o nome do servidor, sem o caminho, conforme destacado abaixo.
 
-(o nome de servidor de exemplo é somente para fins ilustrativos)   Retorne à página **[!UICONTROL Conta]** e cole o nome no respectivo campo.
+(o nome de servidor de exemplo é somente para fins de explicação)   Retorne à página **[!UICONTROL Conta]** e cole o nome no respectivo campo.
 Por exemplo, `https://ims-na1.adobelogin.com/`
-(o nome de servidor de exemplo é somente para fins ilustrativos)
+(o nome de servidor de exemplo é somente para fins de explicação)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    _Página de detalhes da integração - guia JWT_
@@ -787,7 +786,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
 
 1. Na página **[!UICONTROL Experience Platform Launch Configurations]**, no painel esquerdo, selecione um Experience Manager Site para o qual deseja aplicar a sua Configuração de Experience Platform Launch.
 
-   Apenas para fins ilustrativos, o **[!UICONTROL Site We.Retail]** é selecionado na captura de tela abaixo.
+   Somente para fins de explicação, o Site **[!UICONTROL We.Retail]** é selecionado na captura de tela abaixo.
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
@@ -810,7 +809,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
 
    No campo **[!UICONTROL URI da biblioteca]**, verifique o local da versão de preparo da biblioteca de Experience Platform Launch. Experience Manager preenche este campo automaticamente.
 
-   Para fins ilustrativos, esta etapa usa bibliotecas Experience Platform Launch que são implantadas no Adobe CDN.
+   Somente para fins de explicação, essa etapa usa bibliotecas Experience Platform Launch que são implantadas no Adobe CDN.
 
    >[!NOTE]
    >
