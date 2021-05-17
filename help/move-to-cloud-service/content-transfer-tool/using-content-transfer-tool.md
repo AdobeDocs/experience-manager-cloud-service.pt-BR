@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 3b89e701e080f27f490a6c8a7bb38792c07d6abc
+source-git-commit: 9fdc139f5a945de931a2bebb95e5ea006e5b91be
 workflow-type: tm+mt
-source-wordcount: '2769'
-ht-degree: 45%
+source-wordcount: '2762'
+ht-degree: 43%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 45%
 
 Siga a seção abaixo para entender as considerações importantes ao executar a ferramenta Transferência de conteúdo:
 
-* O requisito mínimo do sistema para a ferramenta Transferência de conteúdo é o AEM 6.3 + e o JAVA 8. Se você estiver em uma versão inferior do AEM, precisará atualizar seu repositório de conteúdo para o AEM 6.5 para usar a ferramenta Transferência de conteúdo.
+* O requisito mínimo do sistema para a ferramenta Transferência de conteúdo é o AEM 6.3 + e o JAVA 8. Se você estiver em uma versão inferior do AEM, precisará atualizar seu repositório de conteúdo para AEM 6.5 para usar a ferramenta Transferência de conteúdo.
 
-* O Java precisa ser configurado no ambiente de AEM, para que o comando `java` possa ser executado pelo usuário que inicia o AEM.
+* O Java deve ser configurado no ambiente de AEM, para que o comando `java` possa ser executado pelo usuário que inicia o AEM.
 
 * É recomendável desinstalar versões mais antigas da ferramenta Transferência de conteúdo ao instalar a versão 1.3.0, pois houve uma mudança importante na arquitetura da ferramenta. Com a versão 1.3.0, você também deve criar novos conjuntos de migração e executar novamente a extração e a assimilação nos novos conjuntos de migração.
 
@@ -32,13 +32,13 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Se você estiver usando um *Ambiente de sandbox*, certifique-se de que ele esteja atualizado e seja atualizado para a versão mais recente. Se você estiver usando um *Ambiente de produção*, ele será atualizado automaticamente.
 
-* Para usar a ferramenta Transferência de conteúdo, você precisará ser um usuário administrador na instância de origem e pertencer ao grupo de AEM local **administradores** na instância do Cloud Service para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão recuperar o token de acesso para usar a ferramenta Transferência de conteúdo.
+* Para usar a ferramenta Transferência de conteúdo, você precisa ser um usuário administrador na instância de origem e pertencer ao grupo de AEM local **administradores** na instância do Cloud Service para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão recuperar o token de acesso para usar a ferramenta Transferência de conteúdo.
 
-* Se a configuração **Limpar conteúdo existente na instância do Cloud antes da assimilação** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também é verdadeiro para um usuário administrador adicionado ao grupo **administradores**. O usuário precisará ser adicionado novamente ao grupo **administrators** para recuperar o token de acesso para CTT.
+* Se a configuração **Limpar conteúdo existente na instância do Cloud antes da assimilação** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também é verdadeiro para um usuário administrador adicionado ao grupo **administradores**. O usuário deve ser adicionado novamente ao grupo **administrators** para recuperar o token de acesso para CTT.
 
-* O token de acesso pode expirar periodicamente após um período de tempo específico ou após a atualização do ambiente de Cloud Service. Se o token de acesso tiver expirado, você não poderá se conectar à instância do Cloud Service e terá que recuperar o novo token de acesso. O ícone de status associado a um conjunto de migração existente será alterado para uma nuvem vermelha e exibirá uma mensagem ao passar o mouse sobre ela.
+* O token de acesso pode expirar periodicamente após um período de tempo específico ou após a atualização do ambiente de Cloud Service. Se o token de acesso tiver expirado, você não poderá se conectar à instância do Cloud Service e precisará recuperar o novo token de acesso. O ícone de status associado a um conjunto de migração existente será alterado para uma nuvem vermelha e exibirá uma mensagem ao passar o mouse sobre ela.
 
-* A ferramenta Transferência de conteúdo não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou de Publicação ou em ambos. Recomenda-se que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada e a instância de Autor de origem para mover o conteúdo para a instância de Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino.
+* A Ferramenta de transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou de Publicação ou em ambos. Recomenda-se que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância de Autor de origem para mover o conteúdo para a instância de Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino.
 
 * Os Usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles que são exigidos pelo conteúdo para atender às permissões. O processo de *Extração* copia todo o `/home` para o conjunto de migração e o processo de *Assimilação* copia todos os usuários e grupos referenciados nas ACLs do conteúdo migrado. Para mapear automaticamente os usuários e grupos existentes para suas IDs IMS, consulte [Usar a ferramenta de mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
@@ -50,7 +50,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
       * Tipo de ambiente (Preparo ou Produção) no qual você planeja assimilar dados.
       * ID do programa.
 
-* A *Fase de assimilação* do autor diminuirá a implantação do autor inteiro. Isso significa que o AEM do autor não estará disponível durante todo o processo de ingestão. Certifique-se também de que nenhum pipeline do Cloud Manager seja executado enquanto você está executando a fase *Assimilação*.
+* A *Fase de assimilação* do autor diminui a implantação do autor inteiro. Isso significa que o AEM do autor não estará disponível durante todo o processo de ingestão. Certifique-se também de que nenhum pipeline do Cloud Manager seja executado enquanto você está executando a fase *Assimilação*.
 
 * Ao usar `Amazon S3` ou `Azure` como o armazenamento de dados no sistema de AEM de origem, o armazenamento de dados deve ser configurado para que os blobs armazenados não possam ser excluídos (coleta de lixo). Isso garante a integridade dos dados de índice e a falha na configuração dessa maneira pode resultar em extrações com falha devido à falta de integridade desses dados de índice.
 
@@ -120,7 +120,7 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
    1. **Token de acesso**: insira o token de acesso.
 
       >[!NOTE]
-      >Você pode recuperar o token de acesso usando o botão **Open access token**. Você precisa garantir que pertença ao grupo de administradores de AEM na instância do Cloud Service de destino.
+      >Você pode recuperar o token de acesso usando o botão **Open access token**. Você precisa garantir que pertença ao grupo dos administradores de AEM na instância do Cloud Service de destino.
 
    1. **Parâmetros**: selecione os seguintes parâmetros para criar o conjunto de migração:
 
@@ -145,7 +145,7 @@ Consulte [Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.c
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Todos os conjuntos de migração existentes nessa tela serão exibidos na página *Visão geral* com suas informações de status atuais. Você pode ver alguns desses ícones descritos abaixo.
+   Todos os conjuntos de migração existentes nessa tela serão exibidos na página *Visão Geral* com suas informações de status atuais. Você pode ver alguns desses ícones descritos abaixo.
 
    * Uma *nuvem vermelha* indica que não é possível concluir o processo de extração.
    * Uma *nuvem verde* indica que você pode concluir o processo de extração.
