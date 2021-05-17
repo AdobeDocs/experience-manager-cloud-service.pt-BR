@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 9fdc139f5a945de931a2bebb95e5ea006e5b91be
+source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
 workflow-type: tm+mt
 source-wordcount: '2762'
-ht-degree: 43%
+ht-degree: 42%
 
 ---
 
@@ -114,7 +114,7 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
    1. **Configuração do Cloud Service**: insira a URL do autor do AEM as a Cloud Service.
 
       >[!NOTE]
-      >Você pode criar e manter no máximo quatro conjuntos de migração por vez durante a atividade de transferência de conteúdo.
+      >Você pode criar e manter no máximo dez conjuntos de migração por vez durante a atividade de transferência de conteúdo.
       >Além disso, é necessário criar uma migração separadamente para cada um dos ambientes específicos - *Preparação*, *Desenvolvimento* ou *Produção*.
 
    1. **Token de acesso**: insira o token de acesso.
