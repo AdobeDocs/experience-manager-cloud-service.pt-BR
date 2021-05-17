@@ -4,14 +4,13 @@ description: Comece aqui para obter uma jornada guiada com os recursos avançado
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
-
 
 # jornada do desenvolvedor sem cabeçalho AEM {#aem-headless-developer-journey}
 
@@ -19,7 +18,7 @@ ht-degree: 2%
 >
 >TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
 
-Comece aqui para obter uma jornada guiada com os recursos avançados e flexíveis do AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
+Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento sem periféricos.
 
 ## Introdução {#introduction}
 
@@ -52,3 +51,14 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 | 8 | [Como executar o aplicativo sem periféricos](go-live.md) | Saiba como implantar o aplicativo ao vivo, obter seu código local no Git e movê-lo para o pipeline de Git do Cloud Manager para CI/CD. |
 | 9 | [Pós-lançamento](post-launch.md) | Saiba como manter sua experiência sem periféricos. |
 | 10 | [Opcional - Como criar aplicativos de página única (SPA) com AEM](create-spa.md) | Assim que você entender AEM recursos headless, explore como combinar delivery headful e headless e saiba como criar SPA editáveis usando AEM estrutura SPA Editor. |
+
+## O que vem a seguir {#what-is-next}
+
+Agora você está pronto para começar a usar sua jornada sem cabeça do Adobe. Recomendamos que você continue para a próxima parte da jornada e leia o artigo [Saiba mais sobre o desenvolvimento sem cabeçalho do CMS.](learn-about.md)
+
+### Escolha seu próprio empreendimento {#choose-your-path}
+
+No entanto, o Adobe quer que você tenha sucesso à medida que inicia seu projeto sem cabeçalho AEM, independentemente do seu estilo de aprendizagem. Por isso, por favor, considere estas duas opções.
+
+* Se preferir continuar a **aprender sobre conceitos sem interface e AEM tecnologias sem periféricos**, continue sua jornada sem periféricos AEM conforme recomendado ao revisar o documento [Como modelar seu conteúdo como AEM Modelos de conteúdo](model-your-content.md), onde você aprenderá a modelar sua estrutura de conteúdo em AEM.
+* Se preferir **aprender ao fazer**, você pode ir para o [Tutorial Introdução AEM mãos sem cabeçalho](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html), onde você irá ir diretamente para AEM desenvolvimento sem cabeçalho implementando um projeto simples para expor AEM conteúdo sem interface.
