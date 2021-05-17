@@ -1,18 +1,17 @@
 ---
 title: Implantar o código - Cloud Services
 description: Implantar o código - Cloud Services
-translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
+source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
 
-
 # Implantação do código {#deploy-your-code}
 
-## Implantação do código com o Cloud Manager {#deploying-code-with-cloud-manager}
+## Implantação do código com o Cloud Manager no AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
 Depois de configurar o Pipeline de produção (repositório, ambiente e ambiente de teste), você estará pronto para implantar seu código.
 
@@ -126,5 +125,3 @@ As implantações de produção geralmente seguem as mesmas etapas descritas aci
 1. Implante AEM pacotes para publish2 e o pacote do dispatcher para dispatcher2, libere o cache do dispatcher.
 1. Coloque o dispatcher2 de volta no balanceador de carga.
 Esse processo continua até que a implantação tenha atingido todos os editores e dispatchers na topologia.
-
-
