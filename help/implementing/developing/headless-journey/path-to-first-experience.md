@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
-translation-type: tm+mt
-source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -74,7 +73,7 @@ A produção é onde os autores de conteúdo criam e gerenciam seu conteúdo rea
 
 Durante o estágio de desenvolvimento, é recomendável trabalhar com um ambiente de desenvolvimento e preparo. À medida que você migra para o teste de desempenho, é necessário migrar para o ambiente de produção.
 
-### Cooperação entre desenvolvedores e autores de conteúdo {#cooperation}
+### Cooperação de desenvolvedores e autores de conteúdo {#cooperation}
 
 Os desenvolvedores precisam de um ambiente de desenvolvimento AEM configurado com os modelos de conteúdo preenchidos. O desenvolvedor desenvolve o cliente que consumirá conteúdo AEM sem periféricos à medida que os autores de conteúdo ainda estiverem criando o conteúdo. É por isso que as definições de API são realmente importantes. Ao utilizar o SDK do AEM, o desenvolvedor pode criar um gancho de teste para que os testes de unidade e do cliente possam ser criados para garantir que o cliente possa renderizar corretamente o conteúdo.
 
@@ -141,9 +140,9 @@ Queremos que você se baseie nesse conhecimento fundamental para entender totalm
 
 ### Escolha seu próprio empreendimento {#choose-your-path}
 
-Não importa qual o seu estilo de aprendizagem, o Adobe quer que você tenha sucesso na introdução ao seu projeto AEM Headless.
+Não importa qual o seu estilo de aprendizagem, o Adobe quer que você tenha sucesso à medida que inicia seu projeto AEM Headless.
 
-* Se preferir **continuar aprendendo conceitos sem interface e AEM tecnologias sem periféricos**, continue sua jornada sem periféricos AEM revisando o documento [Como modelar seu conteúdo como AEM Modelos de conteúdo](model-your-content.md), onde você aprenderá a modelar sua estrutura de conteúdo em AEM.
+* Se preferir continuar a **aprender sobre conceitos sem interface e AEM tecnologias sem periféricos**, continue sua jornada sem periféricos AEM revisando o documento [Como modelar seu conteúdo como AEM Modelos de conteúdo](model-your-content.md), onde você aprenderá a modelar sua estrutura de conteúdo em AEM.
 * Se preferir **aprender ao fazer**, você pode ir para o [Tutorial Introdução AEM mãos sem cabeçalho](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html), onde você irá ir diretamente para AEM desenvolvimento sem cabeçalho implementando um projeto simples para expor AEM conteúdo sem interface.
 
 ## Recursos adicionais {#additional-resources}
