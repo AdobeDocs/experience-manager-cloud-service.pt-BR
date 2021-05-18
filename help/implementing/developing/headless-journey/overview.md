@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '772'
 ht-degree: 2%
 
 ---
@@ -55,8 +55,7 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 | 6 | [Como atualizar seu conteúdo por meio das APIs do AEM Assets](update-your-content.md) | Saiba como usar a REST API para acessar e atualizar o conteúdo dos Fragmentos de conteúdo. |
 | 7 | [Como unir tudo - seu aplicativo e seu conteúdo no AEM Headless](put-it-all-together.md) | Saiba como participar do Projeto de AEM, incluindo Fragmentos de conteúdo, suas chamadas GraphQL, suas chamadas de API REST e seu aplicativo, e prepará-lo para entrar em funcionamento. |
 | 8 | [Como executar o aplicativo sem periféricos](go-live.md) | Saiba como implantar o aplicativo ao vivo, obter seu código local no Git e movê-lo para o pipeline de Git do Cloud Manager para CI/CD. |
-| 9 | [Pós-lançamento](post-launch.md) | Saiba como manter sua experiência sem periféricos. |
-| 10 | [Opcional - Como criar aplicativos de página única (SPA) com AEM](create-spa.md) | Assim que você entender AEM recursos headless, explore como combinar delivery headful e headless e saiba como criar SPA editáveis usando AEM estrutura SPA Editor. |
+| 9 | [Opcional - Como criar aplicativos de página única (SPA) com AEM](create-spa.md) | Assim que você entender AEM recursos headless, explore como combinar delivery headful e headless e saiba como criar SPA editáveis usando AEM estrutura SPA Editor. |
 
 ## O que vem a seguir {#what-is-next}
 
