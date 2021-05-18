@@ -4,9 +4,9 @@ description: Alterações importantes para [!DNL Adobe Experience Manager Assets
 feature: Informações da versão
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bcb747517595943e1ed65d19424f002136877903
+source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '778'
 ht-degree: 6%
 
 ---
@@ -46,7 +46,7 @@ Para fazer uma validação completa do código e do processo, incluindo a assimi
 
 ## Paridade de recursos com [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
-[!DNL Experience Manager] o as a  [!DNL Cloud Service] apresenta muitos novos recursos e maneiras mais eficientes de os recursos existentes funcionarem. No entanto, ao mudar de [!DNL Experience Manager] 6.5 para [!DNL Experience Manager] como [!DNL Cloud Service], você pode notar que alguns recursos funcionam de forma diferente, não estão disponíveis ou estão parcialmente disponíveis. Veja a seguir uma lista desses recursos:
+[!DNL Experience Manager] o as a  [!DNL Cloud Service] apresenta muitos novos recursos e maneiras mais eficientes de os recursos existentes funcionarem. No entanto, ao mudar de [!DNL Experience Manager] 6.5 para [!DNL Experience Manager] como [!DNL Cloud Service], você pode notar que alguns recursos funcionam de forma diferente, não estão disponíveis ou estão parcialmente disponíveis. Veja a seguir uma lista desses recursos. Além disso, consulte os [recursos obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
 | Recurso ou caso de uso | Status em [!DNL Experience Manager] como [!DNL Cloud Service] | Comentários |
 |-----|-----|-----|
