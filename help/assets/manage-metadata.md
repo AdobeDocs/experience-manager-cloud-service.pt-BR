@@ -3,26 +3,19 @@ title: Gerenciar metadados de ativos digitais
 description: Saiba mais sobre os tipos de metadados e como [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] possibilita organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Metadata
+feature: Gerenciamento de ativos,Metadados
 role: Business Practitioner,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
+source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1857'
 ht-degree: 3%
 
 ---
 
-
 # Gerenciar metadados de seus ativos digitais {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] mantém metadados para cada ativo. Ela facilita a categorização e a organização de ativos e ajuda as pessoas que estão procurando por um ativo específico. Com a capacidade de extrair metadados de arquivos carregados para [!DNL Experience Manager Assets], o gerenciamento de metadados integra-se ao fluxo de trabalho criativo. Com a capacidade de manter e gerenciar metadados com seus ativos, você pode organizar e processar ativos automaticamente com base em seus metadados.
-
->[!MORELIKETHIS]
->
->* [Metadados XMP](xmp-metadata.md)
->* [Como editar ou adicionar metadados](meta-edit.md)
-
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -234,3 +227,9 @@ A criação de fluxos de trabalho orientados por metadados ajuda a automatizar a
 * O fluxo de trabalho pode verificar se uma imagem tem um título ou não. Caso contrário, o sistema notifica para adicionar um título.
 * O workflow pode verificar se um aviso de copyright em um ativo permite distribuição ou não. Assim, o sistema envia o ativo para um servidor ou outro.
 * Um workflow pode verificar ativos sem metadados obrigatórios predefinidos ou ativos com metadados *inválidos*.
+
+>[!MORELIKETHIS]
+>
+>* [Metadados XMP](xmp-metadata.md)
+* [Como editar ou adicionar metadados](meta-edit.md)
+
