@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1986'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,23 @@ Agora que você concluiu esta parte da Jornada de Desenvolvedores sem Cabeça da
 * Saiba como proteger e dimensionar seu aplicativo antes do Launch.
 * Entenda como monitorar problemas de desempenho e depuração.
 
-Você deve continuar sua jornada sem periféricos de AEM revisando o documento [Pós-lançamento](post-launch.md) onde você aprende a manter sua experiência sem periféricos.
+## A Jornada Termina - Ou Será? {#journey-ends}
+
+Parabéns! Você concluiu a Jornada do desenvolvedor sem cabeçalho AEM! Agora você deve conhecer:
+
+* A diferença entre a entrega de conteúdo sem periféricos e com periféricos.
+* AEM recursos sem periféricos.
+* Como organizar e AEM um projeto autônomo.
+* Como criar conteúdo sem periféricos no AEM.
+* Como recuperar e atualizar o conteúdo sem periféricos no AEM.
+* Como participar de um projeto sem cabeçalho AEM.
+* O que fazer depois do lançamento?
+
+Você já lançou seu primeiro projeto AEM Headless ou agora tem todo o conhecimento necessário para isso. Excelente trabalho!
+
+As lojas sem cabeça no AEM não precisam parar aqui. Você pode se lembrar na parte [Introdução do jornada](getting-started.md#integration-levels) que discutimos brevemente como o AEM não só suporta delivery sem cabeçalho e modelos de pilha completa tradicionais, como também pode suportar modelos híbridos que combinam as vantagens de ambos.
+
+Se esse tipo de flexibilidade for algo que você precisa para o seu projeto, continue para a parte adicional opcional da jornada, [Como criar aplicativos de página única (SPA) com AEM.](create-spa.md)
 
 ## Recursos adicionais {#additional-resources}
 
