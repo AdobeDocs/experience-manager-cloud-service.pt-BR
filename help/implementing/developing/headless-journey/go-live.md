@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
+source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '1886'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
 
-Nesta parte do [AEM Headless Developer Jornada,](overview.md) saiba como implantar um aplicativo headless, colocando seu código local no Git e movendo-o para o Cloud Manager Git para o pipeline de CI/CD.
+Nesta parte do [AEM Headless Developer Jornada](overview.md), saiba como implantar um aplicativo headless, colocando seu código local no Git e movendo-o para o Cloud Manager Git para o pipeline de CI/CD.
 
 ## A história até agora {#story-so-far}
 
@@ -40,19 +40,18 @@ Este documento ajuda você a entender o pipeline de publicação sem periférico
 
 ## O SDK do AEM {#the-aem-sdk}
 
-Ele contém os seguintes artefatos:
+O SDK do AEM é usado para criar e implantar código personalizado. É a principal ferramenta necessária para desenvolver e testar seu aplicativo sem periféricos antes de entrar online. Ele contém os seguintes artefatos:
 
 * O Quickstart jar - um arquivo jar executável que pode ser usado para configurar um autor e uma instância de publicação
 * Ferramentas do Dispatcher - o módulo Dispatcher e suas dependências para sistemas baseados em Windows e UNIX
 * Java API Jar - A dependência Java Jar/Maven que expõe todas as APIs Java permitidas que podem ser usadas para desenvolvimento em relação a AEM
 * Javadoc jar - o javadocs para o jar da API Java
 
-## Ferramentas de desenvolvimento {#development-tools}
+## Ferramentas adicionais de desenvolvimento {#additional-development-tools}
 
 Além do SDK AEM, você precisará de ferramentas adicionais que facilitem o desenvolvimento e o teste do código e conteúdo localmente:
 
 * Java
-* O SDK AEM
 * Git
 * Apache Maven
 * A biblioteca Node.js
@@ -60,15 +59,15 @@ Além do SDK AEM, você precisará de ferramentas adicionais que facilitem o des
 
 Como o AEM é um aplicativo Java, é necessário instalar o Java e o SDK Java para dar suporte ao desenvolvimento do AEM como Cloud Service.
 
-O SDK do AEM é usado para criar e implantar código personalizado. É a principal ferramenta necessária para testar seu aplicativo sem periféricos antes de entrar online.
-
 O Git é o que você usará para gerenciar o controle do código-fonte, bem como para verificar as alterações no Cloud Manager e, em seguida, implantá-las em uma instância de produção.
 
 AEM usa o Apache Maven para criar projetos gerados a partir do arquétipo de projeto AEM Maven. Todos os principais IDEs fornecem suporte de integração para Maven.
 
-Node.js é um ambiente de tempo de execução JavaScript usado para trabalhar com os ativos de front-end de um subprojeto ui.frontend de um projeto AEM. O Node.js é distribuído com npm, é o gerenciador de pacotes Node.js de fato, usado para gerenciar dependências do JavaScript.
+Node.js é um ambiente de tempo de execução JavaScript usado para trabalhar com os ativos de front-end de um subprojeto `ui.frontend` de um projeto AEM. O Node.js é distribuído com npm, é o gerenciador de pacotes Node.js de fato, usado para gerenciar dependências do JavaScript.
 
 ## Componentes de um sistema de AEM em um resumo {#components-of-an-aem-system-at-a-glance}
+
+Em seguida, vamos dar uma olhada nas partes constituintes de um ambiente AEM.
 
 Um ambiente AEM completo é composto de um Autor, Publicação e Dispatcher. Esses mesmos componentes serão disponibilizados no tempo de execução de desenvolvimento local para facilitar a visualização do código e conteúdo antes de entrar no ar.
 
@@ -88,10 +87,6 @@ Anote as distinções entre cada componente no tempo de execução do AEM local,
 
 Em um sistema de produção, um dispatcher e um servidor http Apache sempre se sentarão na frente de uma instância de publicação de AEM. Eles fornecem serviços de armazenamento em cache e de segurança para o sistema de AEM, portanto, é fundamental testar atualizações de código e conteúdo em relação ao dispatcher também.
 
-Depois de verificar se tudo foi testado e está funcionando corretamente, você está pronto para enviar suas atualizações de código para um repositório Git centralizado no Cloud Manager.
-
-Depois que as atualizações forem carregadas no Cloud Manager, elas poderão ser implantadas no AEM como um Cloud Service usando o pipeline de CI/CD do Cloud Manager.
-
 ## Visualização do código e conteúdo localmente com o ambiente de desenvolvimento local {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
 Para preparar o seu projeto sem periféricos AEM para lançamento, você precisa garantir que todas as partes constituintes do seu projeto estejam funcionando bem.
@@ -106,23 +101,16 @@ O ambiente de desenvolvimento local compreende três áreas principais:
 
 Depois que o ambiente de desenvolvimento local for configurado, é possível simular o conteúdo que serve para o aplicativo React ao implantar um servidor Node estático localmente.
 
-Para obter uma análise mais detalhada da configuração de um ambiente de desenvolvimento local e todas as dependências necessárias para a visualização de conteúdo, consulte [Implantação de produção com um serviço de publicação do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
-
-## Implantar na produção {#deploy-to-production}
-
-Depois de testar todo o código e conteúdo localmente, você estará pronto para iniciar uma implantação de produção com o AEM.
-
-Você pode começar a implantar seu código aproveitando o pipeline de CI/CD do Cloud Manager, que é coberto extensivamente [aqui](/help/implementing/deploying/overview.md).
+Para obter uma análise mais detalhada da configuração de um ambiente de desenvolvimento local e todas as dependências necessárias para a visualização de conteúdo, consulte a [documentação de Implantação de produção](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
 
 ## Prepare seu aplicativo sem cabeçalho AEM para ativação {#prepare-your-aem-headless-application-for-golive}
 
-Agora é hora de preparar seu aplicativo sem periféricos AEM para o lançamento, seguindo as práticas recomendadas descritas abaixo.
+Agora, é hora de preparar seu aplicativo sem periféricos AEM para o lançamento, seguindo as práticas recomendadas descritas abaixo.
 
 ### Proteja e dimensione seu aplicativo sem cabeçalho antes de iniciar {#secure-and-scale-before-launch}
 
-1. Configurar [Autenticação Baseada em Token](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-1. Webhooks seguros
-1. Configurar armazenamento em cache e escalabilidade
+1. Configure [Autenticação Baseada em Token](/help/assets/content-fragments/graphql-authentication-content-fragments.md) com suas solicitações GraphQL
+1. Configure [Cache](/help/implementing/dispatcher/caching.md).
 
 ### Estrutura do modelo vs Saída GraphQL {#structure-vs-output}
 
@@ -133,8 +121,8 @@ Agora é hora de preparar seu aplicativo sem periféricos AEM para o lançamento
 ### Maximizar a taxa de ocorrências do cache CDN {#maximize-cdn}
 
 * Não use consultas GraphQL diretas, a menos que esteja solicitando conteúdo ao vivo da superfície.
-   * Em vez disso, use consultas persistentes.
-   * Forneça TTL CDN acima de 600 segundos para que a CDN possa armazená-los em cache.
+   * Use consultas persistentes sempre que possível.
+   * Forneça TTL CDN acima de 600 segundos para que a CDN armazene em cache.
    * AEM pode calcular o impacto de uma alteração de modelo em consultas existentes.
 * Divida arquivos JSON/consultas GraphQL entre taxas de alteração de conteúdo baixas e altas para reduzir o tráfego de clientes para CDN e atribuir TTL maior. Isso minimiza a revalidação do CDN no JSON com o servidor de origem.
 * Para invalidar ativamente o conteúdo da CDN, use a limpeza suave. Isso permite que a CDN baixe novamente o conteúdo sem causar a perda de um cache.
@@ -146,6 +134,14 @@ Agora é hora de preparar seu aplicativo sem periféricos AEM para o lançamento
 * Minimize o número de domínios usados para hospedar JSON e artefatos referenciados.
 * Utilize `Last-modified-since` para atualizar recursos.
 * Use a saída `_reference` no arquivo JSON para iniciar o download de ativos sem precisar analisar os arquivos JSON completos.
+
+## Implantar na produção {#deploy-to-production}
+
+Depois de verificar se tudo foi testado e está funcionando corretamente, você está pronto para enviar suas atualizações de código para um [repositório Git centralizado no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+
+Depois que as atualizações forem carregadas no Cloud Manager, elas poderão ser implantadas no AEM como um Cloud Service usando o [pipeline CI/CD do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+
+Você pode começar a implantar seu código aproveitando o pipeline de CI/CD do Cloud Manager, que é coberto extensivamente [aqui](/help/implementing/deploying/overview.md).
 
 ## Monitoramento de desempenho {#performance-monitoring}
 
@@ -207,16 +203,10 @@ Parabéns! Você concluiu a Jornada do desenvolvedor sem cabeçalho AEM! Agora v
 * Como participar de um projeto sem cabeçalho AEM.
 * O que fazer depois do lançamento?
 
-Você já lançou seu primeiro projeto AEM Headless ou agora tem todo o conhecimento necessário para isso. Excelente trabalho!
-
-As lojas sem cabeça no AEM não precisam parar aqui. Você pode se lembrar na parte [Introdução do jornada](getting-started.md#integration-levels) que discutimos brevemente como o AEM não só suporta delivery sem cabeçalho e modelos de pilha completa tradicionais, como também pode suportar modelos híbridos que combinam as vantagens de ambos.
-
-Se esse tipo de flexibilidade for algo que você precisa para o seu projeto, continue para a parte adicional opcional da jornada, [Como criar aplicativos de página única (SPA) com AEM.](create-spa.md)
-
 ## Recursos adicionais {#additional-resources}
 
-* [Configurar Um Ambiente De AEM Local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [O AEM como um SDK do Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [Uma visão geral da implantação do no AEM as a Cloud Service](/help/implementing/deploying/overview.md)
+* [O AEM como um SDK do Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [Configurar Um Ambiente De AEM Local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [Use o Cloud Manager para implantar seu código](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Integre o Repositório Git do Cloud Manager a um Repositório Git Externo e Implante um Projeto para AEM como Cloud Service](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
+* [Integre o Repositório Git do Cloud Manager a um Repositório Git Externo e Implante um Projeto para AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
