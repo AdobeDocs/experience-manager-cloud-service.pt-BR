@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,13 @@ Este guia aborda os tópicos mais importantes para que você, ao concluir:
 * Entenda AEM recursos sem periféricos e como eles trabalham juntos para proporcionar uma experiência sem periféricos.
 * Tenha a capacidade de realizar as primeiras etapas de implementação do seu primeiro projeto sem periféricos AEM.
 
-## A Jornada sem cabeçalho {#the-journey}
+## Público {#audience}
+
+Essa jornada foi projetada para o persona do desenvolvedor, apresentando os requisitos, as etapas e a abordagem de um projeto sem cabeçalho AEM da perspectiva do desenvolvedor. A jornada definirá personas adicionais com as quais o desenvolvedor deve interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o do desenvolvedor.
+
+As informações nesta jornada podem, é claro, ser úteis para outras pessoas, mas algumas informações serão supérfluas para certas funções. Fique atento às próximas jornadas que abordam outras funções.
+
+## A Jornada do desenvolvedor sem cabeçalho {#the-journey}
 
 Você explorará muitos tópicos nesta jornada. Os artigos a seguir fornecem um conhecimento fundamental da AEM sem cabeça e vinculam-se à documentação técnica detalhada.
 
