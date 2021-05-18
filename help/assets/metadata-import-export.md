@@ -2,16 +2,15 @@
 title: Importar e exportar metadados de ativos em massa
 description: Este artigo descreve como importar e exportar metadados em massa.
 contentOwner: AG
-feature: Metadata
+feature: Metadados
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fb70a068-3ba3-4459-952d-79155d286c42
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '666'
 ht-degree: 12%
 
 ---
-
 
 # Importar e exportar metadados de ativos em massa {#import-and-export-asset-metadata-in-bulk}
 
@@ -19,7 +18,7 @@ O AEM Assets permite importar metadados de ativos em massa usando um arquivo CSV
 
 ## Importar metadados {#import-metadata}
 
-A importação de metadados é assíncrona e não impede o desempenho do sistema. A atualização simultânea dos metadados para vários ativos pode exigir muitos recursos devido XMP atividade de gravação usando microsserviços de ativos. O Adobe recomenda que você planeje quaisquer operações em massa durante o uso de servidor simplificado para que o desempenho para outros usuários não seja afetado.
+A importação de metadados é assíncrona e não impede o desempenho do sistema. A atualização simultânea dos metadados para vários ativos pode exigir muitos recursos devido à atividade de gravação de metadados que usa microsserviços de ativos. O Adobe recomenda que você planeje quaisquer operações em massa durante o uso de servidor simplificado para que o desempenho para outros usuários não seja afetado.
 
 >[!NOTE]
 >
