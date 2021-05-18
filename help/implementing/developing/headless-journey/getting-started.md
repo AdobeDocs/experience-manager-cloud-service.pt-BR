@@ -4,14 +4,13 @@ description: Nesta parte do AEM Headless Developer Jornada, saiba mais sobre AEM
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 0%
 
 ---
-
 
 # Introdução ao AEM Headless como um Cloud Service {#getting-started}
 
@@ -50,7 +49,7 @@ Em sua forma mais simples, o AEM consiste em uma instância de autor e uma [inst
 
 O conteúdo começa na instância do autor. É aqui que os autores de conteúdo criam o conteúdo. O ambiente de criação oferece várias ferramentas para que os autores criem, organizem e reutilizem seu conteúdo.
 
-### Publicar instância {#publish}
+### Instância de publicação {#publish}
 
 Depois que o conteúdo é criado na instância do autor, ele deve ser publicado para estar disponível a outros serviços para consumo. Uma instância de publicação contém todo o conteúdo que foi publicado.
 
@@ -63,7 +62,8 @@ Replicação é o ato de transferir conteúdo da instância do autor para a inst
 No nível mais simples, a criação de experiências digitais no AEM requer as seguintes etapas:
 
 1. Seus autores de conteúdo criarão seu conteúdo headless na instância do autor.
-1. Quando esse conteúdo estiver pronto, ele será replicado para a instância de publicação. As APIs podem ser chamadas para recuperar esse conteúdo.
+1. Quando esse conteúdo estiver pronto, ele será replicado para a instância de publicação.
+1. As APIs podem ser chamadas para recuperar esse conteúdo.
 
 AEM a base técnica se desenvolve sem periféricos oferecendo ferramentas poderosas para gerenciar conteúdo sem periféricos, que é [descrito na próxima seção.](#aem-headless-basics)
 
