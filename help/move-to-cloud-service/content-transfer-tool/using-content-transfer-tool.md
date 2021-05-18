@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
+source-git-commit: e0c6a79e6a088423cbc47046f285fb1ac241c476
 workflow-type: tm+mt
-source-wordcount: '2762'
-ht-degree: 42%
+source-wordcount: '2721'
+ht-degree: 43%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 42%
 >title="Considerações importantes sobre o uso da ferramenta Transferência de conteúdo"
 >abstract="Analise considerações importantes para usar a ferramenta Transferência de conteúdo , incluindo versões de Java e AEM, tipos compatíveis de armazenamento de dados, considerações sobre grupos de usuários e muito mais."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Práticas recomendadas e diretrizes"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="Download da ferramenta Transferência de conteúdo"
 
 Siga a seção abaixo para entender as considerações importantes ao executar a ferramenta Transferência de conteúdo:
 
@@ -160,7 +159,6 @@ Consulte [Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.c
 >id="aemcloud_ctt_extraction"
 >title="Extração de conteúdo"
 >abstract="Extração refere-se à extração de conteúdo da instância de AEM de origem em uma área temporária chamada de conjunto de migração. Um conjunto de migração é uma área de armazenamento em nuvem fornecida pela Adobe para armazenar temporariamente o conteúdo transferido entre a instância do AEM de origem e a instância do AEM Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Processo de assimilação"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extração complementar"
 
 Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Transferência de conteúdo:
@@ -207,8 +205,7 @@ Quando o processo de extração estiver concluído, você poderá transferir o c
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Assimilação de conteúdo"
->abstract="Assimilação refere-se à assimilação de conteúdo do *conjunto de migração* na instância do Cloud Service de destino. A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Processo de extração"
+>abstract="Assimilação refere-se à assimilação de conteúdo do conjunto de migração na instância do Cloud Service de destino. A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Ingestão complementar"
 
 Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Transferência de conteúdo:
