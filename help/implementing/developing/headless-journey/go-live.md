@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Nesta parte do [AEM Headless Developer Jornada](overview.md), saiba como implant
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada sem periféricos AEM, [Como colocar tudo junto - Seu aplicativo e seu conteúdo em AEM sem periféricos](put-it-all-together.md) você aprendeu a preparar seu próprio projeto AEM sem periféricos para entrar em funcionamento e agora deveria:
+No documento anterior da jornada sem cabeçalho AEM, [Como atualizar seu conteúdo por meio das APIs do AEM Assets](update-your-content.md) você aprendeu a atualizar seu conteúdo sem cabeçalho existente no AEM por meio da API e agora deve:
 
-* Entenda os requisitos para entrar no ar.
+* Entenda a API HTTP do AEM Assets.
 
-Este artigo se baseia nesses fundamentos para que você entenda como colocar seu projeto sem cabeçalho AEM em execução.
+Este artigo se baseia nesses fundamentos para que você entenda como preparar seu próprio projeto sem periféricos AEM para entrar em funcionamento.
 
 ## Objetivo {#objective}
 
@@ -151,13 +151,13 @@ Para que os usuários tenham a melhor experiência possível ao usar o aplicativ
 * Verificar AEM páginas de status para o status de disponibilidade de serviço atual
 * Acessar relatórios de desempenho
    * Desempenho do delivery
-      * Fastly (CDN) - verifique o número de chamadas, a taxa de cache, as taxas de erro, o tráfego de carga
+      * Desempenho de CDN (Fastly) - verifique o número de chamadas, a taxa de cache, as taxas de erro e o tráfego de carga
       * Servidores de origem - número de chamadas, taxas de erro, cargas da CPU, tráfego de carga
    * Desempenho do autor
       * Verificar o número de usuários, solicitações e carregamento
 * Acessar relatórios de desempenho específicos do aplicativo e do espaço
    * Quando o servidor estiver ativo, verifique se as métricas gerais estão verde/laranja/vermelho, e identifique problemas específicos do aplicativo
-   * Abra os mesmos relatórios acima filtrados para o aplicativo/espaço (ou seja, desktop do Photoshop, paywall etc.)
+   * Abra os mesmos relatórios acima filtrados para o aplicativo ou espaço (por exemplo, desktop do Photoshop, paywall)
    * Use APIs de log do Splunk para acessar o desempenho do serviço e do aplicativo
    * Entre em contato com o Suporte ao cliente em caso de outros problemas.
 
@@ -181,15 +181,6 @@ Para registrar um bug com suporte com eficiência, caso precise de assistência 
 * Documente uma maneira de reproduzir o problema
 * Documente o conteúdo com o qual o problema reproduz
 * Registre um problema por meio do portal de suporte AEM com a prioridade apropriada
-
-## O que vem a seguir {#what-is-next}
-
-Agora que você concluiu esta parte da Jornada de Desenvolvedores sem Cabeça da AEM, você deve:
-
-* Entenda AEM conceitos básicos sobre replicação e cache de conteúdo.
-* Saiba como configurar as ferramentas necessárias para simular o início do aplicativo sem periféricos.
-* Saiba como proteger e dimensionar seu aplicativo antes do Launch.
-* Entenda como monitorar problemas de desempenho e depuração.
 
 ## A Jornada Termina - Ou Será? {#journey-ends}
 
