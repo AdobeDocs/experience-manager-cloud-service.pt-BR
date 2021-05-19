@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-translation-type: tm+mt
-source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -300,7 +299,7 @@ O corpo deve conter uma representação JSON do que deve ser atualizado para o f
 
 Pode ser simplesmente o título ou a descrição de um fragmento de conteúdo, um único elemento ou todos os valores e/ou metadados do elemento.
 
-### Exclua {#delete}
+### Excluir {#delete}
 
 O uso é via:
 
@@ -322,7 +321,11 @@ Agora que você concluiu esta parte da Jornada de Desenvolvedores sem Cabeça da
 * Have experience with sample code and know how the API works in practice.
 -->
 
-Você deve continuar sua jornada sem periféricos de AEM ao revisar o documento [Como colocar tudo junto - Seu aplicativo e seu conteúdo em AEM sem periféricos](put-it-all-together.md), onde você aprenderá a executar seu projeto sem periféricos de AEM e prepará-lo para entrar ao vivo.
+<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+
+<!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
+
+Você deve continuar sua jornada sem periféricos de AEM revisando o documento [Como entrar em vigor com seu aplicativo sem periféricos](go-live.md), onde você realmente leva seu AEM projeto sem periféricos em tempo real!
 
 [Como criar aplicativos de página única (SPA) com o ](create-spa.md) AEM também mostrará como você pode criar SPA editáveis usando a estrutura SPA Editor do AEM, bem como integrar SPA externos, permitindo recursos de edição, conforme necessário.
 
