@@ -1,9 +1,9 @@
 ---
 title: jornada do desenvolvedor sem periféricos do AEM
 description: Comece aqui para obter uma jornada guiada com os recursos avançados e flexíveis do AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: 1ac93a066f808e7dd2ed7e34aa7635e9914a4ea9
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '736'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 | 4 | [Como modelar seu conteúdo](model-your-content.md) | Saiba como modelar sua estrutura de conteúdo. Em seguida, perceba essa estrutura do Adobe Experience Manager (AEM) usando Modelos de fragmentos de conteúdo e Fragmentos de conteúdo, para reutilização em canais. |
 | 5 | [Como acessar seu conteúdo por meio AEM APIs de entrega](access-your-content.md) | Saiba como usar consultas GraphQL para acessar o conteúdo dos Fragmentos de conteúdo. |
 | 6 | [Como atualizar seu conteúdo por meio das APIs do AEM Assets](update-your-content.md) | Saiba como usar a REST API para acessar e atualizar o conteúdo dos Fragmentos de conteúdo. |
-| 7 | [Como unir tudo - seu aplicativo e seu conteúdo no AEM Headless](put-it-all-together.md) | Saiba como participar do Projeto de AEM, incluindo Fragmentos de conteúdo, suas chamadas GraphQL, suas chamadas de API REST e seu aplicativo, e prepará-lo para entrar em funcionamento. |
+| 7 | [Como unir tudo - seu aplicativo e seu conteúdo no AEM Headless](put-it-all-together.md) | Saiba como aceitar seu AEM Project e prepará-lo para entrar em vigor com o AEM Headless SDK. |
 | 8 | [Como executar o aplicativo sem periféricos](go-live.md) | Saiba como implantar o aplicativo ao vivo, obter seu código local no Git e movê-lo para o pipeline de Git do Cloud Manager para CI/CD. |
 | 9 | [Opcional - Como criar aplicativos de página única (SPA) com AEM](create-spa.md) | Assim que você entender AEM recursos headless, explore como combinar delivery headful e headless e saiba como criar SPA editáveis usando AEM estrutura SPA Editor. |
 
