@@ -1,16 +1,15 @@
 ---
-title: Conteúdo e comércio AEM
+title: AEM Content and Commerce
 description: Recursos de autoajuda e links de documentação do AEM Content and Commerce
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-translation-type: tm+mt
-source-git-commit: 5eba36477fff65bae40ab14daada027fba5dc5db
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 78%
+source-wordcount: '402'
+ht-degree: 71%
 
 ---
 
-# Conteúdo e comércio AEM {#commerce-guide}
+# AEM Content and Commerce {#commerce-guide}
 
 Esta página lista os recursos de autoajuda sobre Conteúdo e Comércio AEM.
 
@@ -37,7 +36,8 @@ Esta página lista os recursos de autoajuda sobre Conteúdo e Comércio AEM.
 | [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar os sites do Experience Manager as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Entenda como administrar os ativos do Experience Manager as a Cloud Service. |
-| [Implementação do guia do usuário](/help/implementing/home.md) | Saiba como personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação do desenvolvimento. |
+| [Implementação do guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando AEM recursos avançados explorando esses tópicos de desenvolvimento e implantação. |
+| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada com os recursos avançados e flexíveis do AEM para se preparar para o seu primeiro projeto sem periféricos. |
 | [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar soluções ao Experience Manager as a Cloud Service. |
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção. |
 
