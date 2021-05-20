@@ -1,27 +1,26 @@
 ---
 title: Adicionar um certificado SSL - Gerenciar certificados SSL
 description: Adicionar um certificado SSL - Gerenciar certificados SSL
-translation-type: tm+mt
-source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
+exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
+source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
 
-
-# Adicionando um certificado SSL {#adding-an-ssl-certificate}
+# Adicionar um certificado SSL {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM como Cloud Service só aceitará certificados OV(Organization Validation) ou EV(Extended Validation). Certificados DV(Domain Validation) não serão aceitos. Além disso, qualquer certificado deve ser um certificado TLS X.509 de uma autoridade de certificação (CA) confiável com uma chave privada RSA de 2048 bits correspondente.
+>AEM como Cloud Service só aceitará certificados OV (Validação da Organização) ou EV (Validação Estendida). Certificados DV (Validação de Domínio) não serão aceitos. Além disso, qualquer certificado deve ser um certificado TLS X.509 de uma autoridade de certificação (CA) confiável com uma chave privada RSA de 2048 bits correspondente. AEM como Cloud Service aceitará certificados SSL curinga para um domínio.
 
-Um certificado demora alguns dias para ser provisionado e recomenda-se que o certificado seja provisionado com meses de antecedência. Consulte [Obtendo um Certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para obter mais detalhes.
+Um certificado leva alguns dias para ser provisionado e é recomendável que ele seja provisionado com meses de antecedência. Consulte [Obter um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para obter mais detalhes.
 
 ## Formato de certificado {#certificate-format}
 
-Os arquivos SSL devem estar no formato PEM para serem instalados no Cloud Manager. As extensões de arquivo comuns que estão no formato PEM incluem `.pem,`.`crt`,  `.cer`e  `.cert`.
+Os arquivos SSL devem estar no formato PEM para serem instalados no Cloud Manager. Extensões de arquivo comuns que estão no formato PEM incluem `.pem,` .`crt`,  `.cer`, e  `.cert`.
 
-Siga as etapas abaixo para converter o formato dos arquivos SSL em PEM:
+Siga as etapas abaixo para converter o formato de seus arquivos SSL em PEM:
 
 * Converter PFX em PEM
 
@@ -37,41 +36,41 @@ Siga as etapas abaixo para converter o formato dos arquivos SSL em PEM:
 
 ## Considerações importantes {#important-considerations}
 
-* Um usuário deve estar na função Proprietário de Negócios ou Gerenciador de Implantação para instalar um certificado SSL no Cloud Manager.
+* Um usuário deve estar na função Proprietário comercial ou Gerente de implantação para instalar um certificado SSL no Cloud Manager.
 
-* A qualquer momento, o Cloud Manager permitirá um máximo de 10 certificados SSL que podem ser associados a um ou mais ambientes em seu Programa, mesmo se um certificado expirar. No entanto, a interface do usuário do Cloud Manager permitirá que até 50 certificados SSL sejam instalados no programa com essa restrição.
+* A qualquer momento, o Cloud Manager permitirá no máximo 10 certificados SSL que podem ser associados a um ou mais ambientes em todo o Programa, mesmo que um certificado tenha expirado. No entanto, a interface do usuário do Cloud Manager permitirá que até 50 certificados SSL sejam instalados no programa com essa restrição.
 
-## Adicionando um certificado {#adding-a-cert}
+## Adicionar um certificado {#adding-a-cert}
 
 Siga as etapas abaixo para adicionar um certificado:
 
 1. Faça logon no Cloud Manager.
-1. Navegue até a tela **Ambientes** da página **Visão geral**.
+1. Navegue até a tela **Ambientes** a partir da página **Visão geral**.
 1. Clique em **Certificados SSL** no menu de navegação esquerdo. Uma tabela com detalhes de quaisquer certificados SSL existentes será exibida nessa tela.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Clique em **Adicionar Certificado SSL** para abrir a caixa de diálogo **Adicionar Certificado SSL**.
+1. Clique em **Adicionar certificado SSL** para abrir a caixa de diálogo **Adicionar certificado SSL**.
 
-   * Insira um nome para o certificado em **Nome do Certificado**. Esse pode ser qualquer nome que o ajude a referenciar seu certificado facilmente.
-   * Cole o **Certificado**, **Chave privada** e **Cadeia de certificados** nos respectivos campos. Use o ícone colar à direita da caixa de entrada.
-Os três campos não são opcionais e devem ser incluídos.
+   * Insira um nome para o certificado em **Nome do certificado**. Pode ser qualquer nome que ajude você a fazer referência ao certificado facilmente.
+   * Cole o **Certificado**, **Chave privada** e **Cadeia de certificados** nos respectivos campos. Use o ícone de colar à direita da caixa de entrada.
+Todos os três campos não são opcionais e devem ser incluídos.
 
       ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
 
       >[!NOTE]
-      >Quaisquer erros detectados serão exibidos. Você deve corrigir todos os erros antes que seu certificado possa ser salvo. Consulte [Erros de Certificado](#certificate-errors) para saber mais sobre como lidar com erros comuns.
+      >Quaisquer erros detectados serão exibidos. Você deve corrigir todos os erros antes que o certificado possa ser salvo. Consulte [Erros de certificado](#certificate-errors) para saber mais sobre como lidar com erros comuns.
 
-1. Clique em **Salvar** para enviar seu certificado. Será exibido como uma nova linha na tabela.
+1. Clique em **Save** para enviar seu certificado. Você o verá como uma nova linha na tabela.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
 ## Erros de certificado {#certificate-errors}
 
-### Ordem de certificado correta {#correct-certificate-order}
+### Corrija a Ordem do Certificado {#correct-certificate-order}
 
-O motivo mais comum para uma implantação de certificado falhar é que os certificados intermediários ou de cadeia não estão na ordem correta. Especificamente, os arquivos de certificado intermediários devem terminar com o certificado raiz ou mais próximo à raiz e estar em ordem decrescente do certificado `main/server` até a raiz.
+O motivo mais comum para uma implantação de certificado falhar é que os certificados intermediários ou em cadeia não estão na ordem correta. Especificamente, os arquivos de certificado intermediários devem terminar com o certificado raiz ou o certificado mais próximo da raiz e estar em uma ordem decrescente do certificado `main/server` para a raiz.
 
 Você pode determinar a ordem dos arquivos intermediários usando o seguinte comando:
 
@@ -84,8 +83,8 @@ Você pode verificar se a chave privada e o certificado `main/server` correspond
 `openssl rsa -noout -modulus -in ssl.key | openssl md5`
 
 >[!NOTE]
->A saída desses dois comandos deve ser exatamente a mesma. Se não conseguir localizar uma chave privada correspondente ao seu certificado `main/server`, será necessário recodificar o certificado gerando um novo CSR e/ou solicitando um certificado atualizado do seu fornecedor SSL.
+>A saída desses dois comandos deve ser exatamente a mesma. Se não for possível localizar uma chave privada correspondente ao seu certificado `main/server`, será necessário rechavear o certificado gerando uma nova CSR e/ou solicitando um certificado atualizado de seu fornecedor SSL.
 
 ### Datas de validade do certificado {#certificate-validity-dates}
 
-O Cloud Manager espera que o certificado SSL seja válido por pelo menos 90 dias no futuro. Verifique a validade da cadeia de certificados.
+O Cloud Manager espera que o certificado SSL seja válido por, pelo menos, 90 dias no futuro. Você deve verificar a validade da cadeia de certificados.
