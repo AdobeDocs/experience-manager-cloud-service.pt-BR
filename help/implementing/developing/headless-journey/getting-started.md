@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '3087'
+source-wordcount: '3073'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
+>DESATUALIZADO - Esse conteúdo de rascunho foi substituído pela nova [Documentação de Jornada do desenvolvedor sem cabeçalho.](/help/journey-headless/developer/overview.md)
 
 Nesta parte da [AEM Jornada do desenvolvedor headless,](overview.md) saiba mais sobre o que é necessário para iniciar seu próprio projeto com AEM Headless.
 
