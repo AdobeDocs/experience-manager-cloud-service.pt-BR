@@ -1,18 +1,18 @@
 ---
-title: Como ativar seu aplicativo sem periféricos
+title: Como ativar seu aplicativo autônomo
 description: Nesta parte do AEM Headless Developer Jornada, saiba como implantar um aplicativo headless, colocando seu código local no Git e movendo-o para o Cloud Manager Git para o pipeline de CI/CD.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
+source-git-commit: bc717c544bd4f0449d358b831a5132f85fa85e86
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1818'
 ht-degree: 0%
 
 ---
 
-# Como ativar seu aplicativo sem cabeçalho {#go-live}
+# Como ativar seu aplicativo headless {#go-live}
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ Um ambiente AEM completo é composto de um Autor, Publicação e Dispatcher. Ess
 
 * **O serviço Autor** é onde usuários internos criam, gerenciam e visualizam conteúdo.
 
-* **O** serviço de Publicação é considerado o ambiente &quot;Ao vivo&quot; e normalmente é com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço Autor, é distribuído ao serviço de Publicação. O padrão de implantação mais comum com AEM aplicativos sem cabeçalho é ter a versão de produção do aplicativo conectada a um serviço de publicação do AEM.
+* **O** serviço de Publicação é considerado o ambiente &quot;Ao vivo&quot; e normalmente é com o que os usuários finais interagem. O conteúdo, após ser editado e o aplicativo criado no serviço Autor, é distribuído ao serviço de Publicação. O padrão de implantação mais comum com AEM aplicativos sem cabeçalho é ter a versão de produção do aplicativo conectada a um serviço de publicação do AEM.
 
 * **O** Dispatcher é um servidor da Web estático aumentado com o módulo Dispatcher de AEM. Armazena em cache as páginas da Web produzidas pela instância de publicação para melhorar o desempenho.
 
@@ -99,11 +99,11 @@ O ambiente de desenvolvimento local compreende três áreas principais:
 1. O Local AEM Runtime - versões locais dos serviços de criação e publicação do AEM que serão usados para implantar o código do AEM projeto
 1. O Local Dispatcher Runtime - uma versão local do servidor Web Apache httpd que inclui o módulo Dispatcher
 
-Depois que o ambiente de desenvolvimento local for configurado, é possível simular o conteúdo que serve para o aplicativo React ao implantar um servidor Node estático localmente.
+Depois que o ambiente de desenvolvimento local for configurado, é possível simular o conteúdo que serve ao aplicativo React ao implantar um servidor Node estático localmente.
 
 Para obter uma análise mais detalhada da configuração de um ambiente de desenvolvimento local e todas as dependências necessárias para a visualização de conteúdo, consulte a [documentação de Implantação de produção](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
 
-## Prepare seu aplicativo sem cabeçalho AEM para ativação {#prepare-your-aem-headless-application-for-golive}
+## Prepare seu aplicativo AEM Headless para o Go-Live {#prepare-your-aem-headless-application-for-golive}
 
 Agora, é hora de preparar seu aplicativo sem periféricos AEM para o lançamento, seguindo as práticas recomendadas descritas abaixo.
 
@@ -156,9 +156,9 @@ Para que os usuários tenham a melhor experiência possível ao usar o aplicativ
    * Desempenho do autor
       * Verificar o número de usuários, solicitações e carregamento
 * Acessar relatórios de desempenho específicos do aplicativo e do espaço
-   * Quando o servidor estiver ativo, verifique se as métricas gerais estão verde/laranja/vermelho, e identifique problemas específicos do aplicativo
-   * Abra os mesmos relatórios acima filtrados para o aplicativo ou espaço (por exemplo, desktop do Photoshop, paywall)
-   * Use APIs de log do Splunk para acessar o desempenho do serviço e do aplicativo
+   * Quando o servidor estiver ativo, verifique se as métricas gerais estão verde/laranja/vermelho e identifique problemas específicos do aplicativo
+   * Abra os relatórios mencionados acima, mas filtre-os para o aplicativo ou espaço (por exemplo, desktop do Photoshop, paywall)
+   * [Use ](/help/implementing/developing/introduction/logging.md#splunk-logs) APIs de log do Splunk para acessar o desempenho do serviço e do aplicativo
    * Entre em contato com o Suporte ao cliente em caso de outros problemas.
 
 ## Resolução de problemas {#troubleshooting}
@@ -169,7 +169,7 @@ Siga essas práticas recomendadas como uma abordagem geral para depurar:
 
 * Validar a funcionalidade e o desempenho com a versão de visualização do aplicativo
 * Validar a funcionalidade e o desempenho com a versão de produção do aplicativo
-* Validar com a visualização JSON do Editor de fragmento de conteúdo
+* Validar com a [visualização JSON](/help/assets/content-fragments/content-fragments-json-preview.md) do Editor de fragmento de conteúdo
 * Inspect o JSON no aplicativo cliente para verificar a presença de problemas no aplicativo cliente ou no delivery
 * Inspect o JSON usando GraphQL para verificar a presença de problemas relacionados ao conteúdo ou AEM em cache
 
@@ -180,7 +180,7 @@ Para registrar um bug com suporte com eficiência, caso precise de assistência 
 * Tire capturas de tela do problema, se necessário
 * Documente uma maneira de reproduzir o problema
 * Documente o conteúdo com o qual o problema reproduz
-* Registre um problema por meio do portal de suporte AEM com a prioridade apropriada
+* Registre um problema por meio do portal de suporte AEM com a prioridade do aplicativo
 
 ## A Jornada Termina - Ou Será? {#journey-ends}
 
