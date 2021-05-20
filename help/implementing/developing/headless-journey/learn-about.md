@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
-translation-type: tm+mt
-source-git-commit: 7df3620e6f58336de2ac29dd496a888b17606d7f
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
+>DESATUALIZADO - Esse conteúdo de rascunho foi substituído pela nova [Documentação de Jornada do desenvolvedor sem cabeçalho.](/help/journey-headless/developer/overview.md)
 
 Nesta parte da [AEM Jornada de desenvolvedores headless,](overview.md) saiba mais sobre tecnologia headless e por que usá-la.
 
@@ -74,7 +73,7 @@ Os serviços que consomem, sejam experiências de AR, um webshop, experiências 
 
 Omitir a cabeça simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 
-## Desvinculando {#decoupling}
+## Desvinculação {#decoupling}
 
 A entrega sem interface é possível ao expor um conjunto de APIs (Application Programming Interfaces, interfaces de programação de aplicativos) robustas e flexíveis que todas as suas experiências podem aproveitar. A API serve como um idioma comum entre os serviços, vinculando-os no nível de conteúdo por meio de uma entrega de conteúdo padronizada, mas permitindo a flexibilidade para implementar suas próprias soluções.
 
@@ -82,7 +81,7 @@ Headless é um exemplo de dissociação do conteúdo de sua apresentação. Ou, 
 
 Essa dissociação significa que cada serviço de consumo (front-end) pode criar sua experiência com base no mesmo conteúdo fornecido sobre as APIs, garantindo a reutilização e a consistência do conteúdo. Os serviços de consumo podem, então, implementar seus próprios sistemas de apresentação, permitindo que a pilha de gerenciamento de conteúdo (o back-end) seja facilmente dimensionada horizontalmente.
 
-## Princípios tecnológicos {#technology}
+## Subvenções Tecnológicas {#technology}
 
 Uma abordagem sem interface permite construir uma pilha de tecnologia que se adapte fácil e rapidamente às futuras demandas de experiência digital.
 
@@ -106,7 +105,7 @@ Ter muitos canais diferentes pode significar que cada um tem seus próprios sist
 
 Ao implementar sistemas de design cuidadosos, compartilhar bibliotecas de padrões e aproveitar componentes de design reutilizáveis, bem como estruturas estabelecidas e abertas do lado do cliente, experiências consistentes podem ser asseguradas, mas isso deve ser planejado.
 
-## O futuro é imutável e o futuro agora é {#future}
+## O futuro é imprudente e o futuro é agora {#future}
 
 As experiências digitais continuarão a definir como as marcas interagem com os clientes. O que é empolgante sobre o design sem interface é a flexibilidade que ele nos dá para responder às expectativas do cliente em evolução.
 
