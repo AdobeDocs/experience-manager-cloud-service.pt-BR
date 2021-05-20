@@ -1,11 +1,11 @@
 ---
 title: Desenvolvimento autônomo do AEM Sites as a Cloud Service
 description: Saiba como o AEM como um Cloud Service poderoso de recursos sem cabeçalho, como Modelos de conteúdo, Fragmentos de conteúdo e a API GraphQL trabalham juntos para permitir que você gerencie suas experiências centralmente e as distribua pelos canais.
-translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
+source-git-commit: 469579cfe10227ab22bbe055d4c503d8ea978150
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 2%
+source-wordcount: '489'
+ht-degree: 4%
 
 ---
 
@@ -47,28 +47,12 @@ O AEM as a Cloud Service é uma ferramenta flexível para o modelo de implementa
    * A API REST do AEM Assets suporta operações CRUD de Fragmento de conteúdo.
    * A entrega de conteúdo direto também é possível com a exportação JSON do [Componente principal do fragmento de conteúdo.](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html)
 
-## Guias de introdução sem cabeçalho {#getting-started}
+## Seus primeiros passos com AEM headless {#first-steps}
 
-Os Guias de introdução sem cabeçalho apresentam um caminho simples para criar, gerenciar e fornecer experiências usando o AEM como Cloud Service em cinco etapas. Cada guia tem como base o anterior, portanto, é recomendável explorá-lo detalhadamente e em ordem.
+Há vários recursos disponíveis para você começar a usar AEM recursos headless. Elas são destinadas a casos de uso diferentes, mas todas fornecem uma visão geral sólida AEM recursos sem periféricos.
 
-1. [Criação de uma configuração](getting-started/create-configuration.md)
-1. [Criação de um modelo de fragmento de conteúdo](getting-started/create-content-model.md)
-1. [Criação de uma pasta de ativos](getting-started/create-assets-folder.md)
-1. [Criação de um fragmento de conteúdo](getting-started/create-content-fragment.md)
-1. [Acesso e entrega de fragmentos de conteúdo](getting-started/create-api-request.md)
-
-## Público {#audience}
-
-As tarefas descritas nos [Guias de introdução sem cabeçalho](#getting-started) são necessárias para uma demonstração completa e básica dos recursos sem cabeçalho AEM. Qualquer pessoa com acesso de administrador a uma instância de AEM de teste pode seguir esses guias para entender a entrega sem periféricos no AEM, embora alguém com experiência de desenvolvedor seja ideal.
-
-No entanto, em uma situação de produção, as tarefas serão executadas por personas diferentes em um número variável de vezes. Por exemplo:
-
-* **** Os administradores precisarão configurar a configuração inicial e a estrutura de pastas para o conteúdo normalmente apenas uma vez ou esporadicamente.
-* **Em geral,** os arquitetos de informações adicionarão novos modelos à medida que as necessidades da organização evoluírem.
-* **Os** autores de conteúdo criarão continuamente novo conteúdo como Fragmentos de conteúdo com base nos modelos definidos pelos arquitetos.
-
-Os Guias de introdução sem cabeçalho apontam quem normalmente executaria as tarefas descritas e com que frequência.
-
-## Próxima etapa {#next-step}
-
-Pronto para aprender mais? Em seguida, comece lendo a primeira parte do Guia de Introdução Sem Cabeça: [Criando uma Configuração.](getting-started/create-configuration.md)
+| Recurso | Descrição | Tipo | Público | Est. Hora |
+|---|---|---|---|---|
+| [Jornada de desenvolvedores headless](/help/implementing/developing/headless-journey/overview.md) | Para obter uma visão geral abrangente dos AEM recursos sem periféricos da teoria de ficar sem periféricos entrando em vigor com seu primeiro projeto sem periféricos, comece aqui. | Guia | Desenvolvedores | 1 hora |
+| [Guia de introdução sem cabeçalho](/help/implementing/developing/headless/getting-started/introduction.md) | Para obter um breve resumo dos principais recursos sem periféricos AEM, consulte esta visão geral de início rápido. | Início rápido | Desenvolvedores, administradores | 20 minutos |
+| [Introdução ao AEM tutorial prático](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | Se preferir uma abordagem prática, este tutorial mergulha diretamente na criação de um projeto simples e sem periféricos. | Tutorial | Desenvolvedores | 2 horas |
