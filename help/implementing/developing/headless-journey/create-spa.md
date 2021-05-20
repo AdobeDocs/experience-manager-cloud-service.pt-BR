@@ -4,20 +4,19 @@ description: Nesta continuação opcional da Jornada de desenvolvedor sem cabeç
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+exl-id: 80b43aae-0027-45c8-b079-e3931d58597f
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
-
 
 # Como criar aplicativos de página única (SPA) com AEM {#create-spa}
 
 >[!CAUTION]
 >
->TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
+>DESATUALIZADO - Esse conteúdo de rascunho foi substituído pela nova [Documentação de Jornada do desenvolvedor sem cabeçalho.](/help/journey-headless/developer/overview.md)
 
 Nesta continuação opcional da [AEM Jornada do desenvolvedor sem cabeçalho,](overview.md) você aprenderá como AEM pode combinar a entrega sem periféricos com os recursos tradicionais de CMS de pilha completa e como você pode criar SPA editáveis usando SPA estrutura do editor, bem como integrar SPA externos, habilitando os recursos de edição conforme necessário.
 
