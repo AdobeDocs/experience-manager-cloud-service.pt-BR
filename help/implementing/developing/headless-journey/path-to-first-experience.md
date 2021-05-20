@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
-source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2005'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
+>DESATUALIZADO - Esse conteúdo de rascunho foi substituído pela nova [Documentação de Jornada do desenvolvedor sem cabeçalho.](/help/journey-headless/developer/overview.md)
 
 Nesta parte da [AEM Jornada de desenvolvedores headless,](overview.md) você entenderá as etapas para implementar sua primeira experiência headless em AEM incluindo considerações de planejamento e também aprenderá as práticas recomendadas para tornar seu caminho o mais suave possível.
 
