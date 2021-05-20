@@ -1,7 +1,7 @@
 ---
 title: jornada do desenvolvedor sem periféricos do AEM
 description: Comece aqui para obter uma jornada guiada com os recursos avançados e flexíveis do AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
-source-git-commit: 1ac93a066f808e7dd2ed7e34aa7635e9914a4ea9
+source-git-commit: bec1e901e19abc9ae99dbf95878e51c9b000a5ee
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 2%
@@ -17,7 +17,7 @@ Comece aqui para obter uma jornada guiada por meio dos recursos avançados e fle
 
 A implementação sem periféricos está se tornando cada vez mais importante para fornecer experiências ao seu público-alvo, onde quer que estejam e independentemente do canal.
 
-A implementação sem cabeçalho perde o gerenciamento de página e componente, como é tradicional em soluções de pilha completa, e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em canais e em sua entrega entre canais. É um padrão de desenvolvimento moderno e dinâmico para implementar experiências da Web.
+A implementação sem cabeçalho perde o gerenciamento de página e componente, como é tradicional em soluções de pilha completa, e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em canais e em sua entrega entre canais. É um padrão de desenvolvimento moderno e dinâmico para a implementação de experiências digitais.
 
 Este guia aborda os tópicos mais importantes para que você, ao concluir:
 
