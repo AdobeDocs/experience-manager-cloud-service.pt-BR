@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
-translation-type: tm+mt
-source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1816'
 ht-degree: 2%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->TRABALHO EM ANDAMENTO - A criação deste documento está em curso e não deve ser entendida como completa ou definitiva, nem deve ser usada para fins de produção.
+>DESATUALIZADO - Esse conteúdo de rascunho foi substituído pela nova [Documentação de Jornada do desenvolvedor sem cabeçalho.](/help/journey-headless/developer/overview.md)
 
 Nesta parte da [AEM Jornada do desenvolvedor headless](overview.md), você pode aprender a modelar sua estrutura de conteúdo. Em seguida, perceba essa estrutura do Adobe Experience Manager (AEM) usando Modelos de fragmentos de conteúdo e Fragmentos de conteúdo, para reutilização em canais.
 
@@ -87,7 +86,7 @@ Por exemplo, a publicidade de eventos especiais para todas as escolas da área:
 * Data do evento
 * Professor organizando o evento
 
-### Conceitos {#concepts}
+### Conceitos  {#concepts}
 
 O que você deseja descrever é chamado de **Entities** - basicamente os &quot;itens&quot; sobre os quais queremos armazenar informações.
 
