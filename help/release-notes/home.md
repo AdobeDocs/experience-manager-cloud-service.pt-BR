@@ -2,11 +2,10 @@
 title: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-translation-type: tm+mt
-source-git-commit: 1916ff5f9cd6227e548d809c0cb1a584d76afb75
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 96%
+source-wordcount: '402'
+ht-degree: 86%
 
 ---
 
@@ -38,7 +37,8 @@ ht-degree: 96%
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service. |
 | [Migração para o AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Entenda a jornada de transição para o Cloud Service. |
-| [Implementação do Guia do usuário](/help/implementing/home.md) | Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento. |
+| [Implementação do Guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando AEM recursos avançados explorando esses tópicos de desenvolvimento e implantação. |
+| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada com os recursos avançados e flexíveis do AEM para se preparar para o seu primeiro projeto sem periféricos. |
 | [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar conectores ao Experience Manager as a Cloud Service. |
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção. |
 | [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM as a Cloud Service. |
