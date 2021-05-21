@@ -5,10 +5,9 @@ contentOwner: AG
 feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-translation-type: tm+mt
-source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
+source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '916'
 ht-degree: 4%
 
 ---
@@ -26,7 +25,6 @@ Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de m�
 Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
 * [Interface do usuário do Experience Manager](#download-in-aem)
-* Interface do usuário de Compartilhamento de link de ativo
 * [Compartilhamento de ativos Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -95,6 +93,6 @@ Se você não precisar da funcionalidade de download, desative o servlet para ev
 >[!MORELIKETHIS]
 >
 >* [Baixar ativos protegidos por DRM](drm.md)
->* [Baixar ativos usando o aplicativo de desktop do Experience Manager no desktop Win ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR)
->* [Baixar ativos usando o Link de ativos do Adobe nos aplicativos Adobe Creative Cloud compatíveis](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)
+* [Baixar ativos usando o aplicativo de desktop do Experience Manager no desktop Win ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR)
+* [Baixar ativos usando o Link de ativos do Adobe nos aplicativos Adobe Creative Cloud compatíveis](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
