@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
+source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '921'
 ht-degree: 4%
 
 ---
@@ -24,14 +24,14 @@ Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de m�
 
 Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
-* [Interface do usuário do Experience Manager](#download-in-aem)
+* [Interface do usuário do Experience Manager](#download-assets)
 * [Compartilhamento de ativos Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## Baixar ativos usando a interface [!DNL Experience Manager] {#download-in-aem}
+## Baixar ativos usando a interface [!DNL Experience Manager] {#download-assets}
 
-O serviço de download assíncrono fornece uma estrutura para o download perfeito de ativos de grande porte. Arquivos menores são baixados da interface do usuário em tempo real. Os arquivos grandes são baixados de forma assíncrona e os usuários são informados da conclusão por meio de notificações Experience Manager na Caixa de entrada. Consulte [compreendendo a caixa de entrada do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
+O serviço de download assíncrono fornece uma estrutura para o download perfeito de ativos de grande porte. Arquivos menores são baixados da interface do usuário em tempo real. [!DNL Experience Manager] não arquiva downloads de ativos únicos onde o arquivo original é baixado. Essa funcionalidade permite downloads mais rápidos. Os arquivos grandes são baixados de forma assíncrona e [!DNL Experience Manager] notifica a conclusão através de notificações na Caixa de entrada. Consulte [entender [!DNL Experience Manager] Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Baixar notificação](assets/download-notification.png)
 
