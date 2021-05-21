@@ -1,14 +1,13 @@
 ---
 title: Gerenciar ambientes - Cloud Service
 description: Gerenciar ambientes - Cloud Service
-translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
+source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 4%
 
 ---
-
 
 # Gerenciamento de ambientes {#manage-environments}
 
@@ -63,7 +62,7 @@ Um usuário com as permissões necessárias pode criar os seguintes tipos de amb
    >Caso ainda não tenha configurado o pipeline de não produção, a tela *Visão geral* exibe o cartão de onde você pode criar o pipeline de não produção.
 
 
-## Ambiente de visualização {#viewing-environment}
+## Detalhes do ambiente {#viewing-environment}
 
 O cartão **Ambientes** na página Visão geral lista até três ambientes.
 
@@ -112,7 +111,6 @@ A opção de exclusão também estará disponível se você clicar em **Detalhes
 
 
 >[!NOTE]
->
 >Esse recurso não está disponível para o ambiente de Produção/Estágio definido em um programa de Produção configurado para fins de produção. No entanto, o recurso está disponível para ambientes de Produção/Estágio em um programa de sandbox.
 
 ## Gerenciamento de acesso {#managing-access}
@@ -190,5 +188,3 @@ Siga as etapas abaixo para desaplicar uma Lista de permissões IP:
 1. Identifique a linha na qual a regra de Lista de permissões IP que você deseja desaplicar está listada.
 1. Selecione o **...** a partir da extremidade direita da linha.
 1. Selecione a opção **Unapply** e confirme seu envio.
-
-
