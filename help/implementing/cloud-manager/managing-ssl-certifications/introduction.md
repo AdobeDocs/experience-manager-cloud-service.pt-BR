@@ -2,7 +2,7 @@
 title: Introdução - Gerenciar certificados SSL
 description: Introdução - Gerenciar certificados SSL
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 8e09031d1cf17bda9d4eb379f84462b2d29e1aa5
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -19,7 +19,9 @@ O Cloud Manager fornece aos clientes o recurso de autoatendimento para instalar 
 
 * O AEM como Cloud Service só oferece suporte a sites `https` seguros. Os clientes com vários domínios personalizados não desejarão carregar um certificado sempre que adicionarem um domínio. Portanto, esses clientes se beneficiarão ao obter um certificado com vários domínios.
 
-* AEM como Cloud Service só aceitará certificados OV (Validação da Organização) ou EV (Validação Estendida). Certificados DV (Validação de Domínio) não serão aceitos. Além disso, qualquer certificado deve ser um certificado TLS X.509 de uma autoridade de certificação (CA) confiável com uma chave privada RSA de 2048 bits correspondente. AEM como Cloud Service aceitará certificados SSL curinga para um domínio.
+* AEM como Cloud Service só aceitará certificados OV (Validação da Organização) ou EV (Validação Estendida). Certificados DV (Validação de Domínio) não serão aceitos. Além disso, qualquer certificado deve ser um certificado TLS X.509 de uma autoridade de certificação (CA) confiável com uma chave privada RSA de 2048 bits correspondente.
+
+* AEM como Cloud Service aceitará certificados SSL curinga para um domínio.
 
 O Cloud Manager é compatível com os seguintes requisitos de certificado SSL do cliente:
 
