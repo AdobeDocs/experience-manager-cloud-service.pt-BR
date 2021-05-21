@@ -3,13 +3,12 @@ title: Gerenciar ativos digitais
 description: Saiba mais sobre vários métodos de edição e gerenciamento de ativos.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Publishing,Collaboration,Asset Processing
+feature: Gerenciamento de ativos, Publicação, Colaboração, Processamento de ativos
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-translation-type: tm+mt
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '4505'
+source-wordcount: '4502'
 ht-degree: 11%
 
 ---
@@ -251,9 +250,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
 1. Vá ao local do(s) ativo(s) que deseja excluir.
 
-1. Selecione o ativo e toque/clique no ícone **[!UICONTROL Excluir]** na barra de ferramentas.
-
-   ![delete_icon](assets/delete_icon.png)
+1. Selecione o ativo e clique em **[!UICONTROL Delete]** ![delete_icon](assets/do-not-localize/delete-icon.png) na barra de ferramentas.
 
 1. Na caixa de diálogo de confirmação, clique em:
 
@@ -261,7 +258,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
    * **[!UICONTROL Excluir]** para confirmar a ação:
 
       * Se o ativo não tiver referências, o ativo será excluído.
-      * Se o ativo tiver referências, uma mensagem de erro informa que **Um ou mais ativos são referenciados.** Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
+      * Se o ativo tiver referências, uma mensagem de erro informa que **[!UICONTROL Um ou mais ativos são referenciados]**. Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
 
    >[!NOTE]
    >
@@ -269,14 +266,11 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
    >[!NOTE]
    >
-   >Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo.
-   >
-   >
-   >Além disso, desative o botão forçar exclusão usando uma sobreposição para impedir que os usuários excluam ativos referenciados e deixem links quebrados.
+   >Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. É possível não permitir a exclusão de ativos referenciados, pois isso causa links quebrados. Desative o botão forçar exclusão usando uma sobreposição.
 
 ## Baixar ativos {#download-assets}
 
-Consulte [Baixar ativos de [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+Consulte [baixar ativos de [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Publicar ou cancelar a publicação de ativos {#publish-assets}
 
