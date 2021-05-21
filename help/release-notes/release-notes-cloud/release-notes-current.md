@@ -2,10 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-translation-type: tm+mt
-source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1996'
 ht-degree: 2%
 
 ---
@@ -55,19 +54,17 @@ A seguinte versão (2021.5.0) será lançada em 27 de maio de 2021.
 
 ### Novidades em [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] não arquiva downloads de ativos únicos onde o arquivo original é baixado. Esse aprimoramento permite downloads mais rápidos.
+* [!DNL Experience Manager] não arquiva downloads de ativos únicos onde o arquivo original é baixado. Esse aprimoramento permite downloads mais rápidos. Consulte [baixar ativos](/help/assets/download-assets-from-aem.md).
 
-* Quando um ativo é baixado por meio da opção linkshare, você pode optar por baixar ou não as representações. Anteriormente, todas as representações de ativos eram baixadas.
-
-* Os administradores podem configurar [!DNL Experience Manager] para excluir a fonte de ativos depois de fazer ingestões de ativos em massa. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Ao baixar um ativo por meio de uma opção de compartilhamento de link, agora é possível optar por baixar ou não as representações. Anteriormente, todas as representações de ativos eram baixadas. Consulte [opções de download](/help/assets/download-assets-from-aem.md).
 
 * Ao executar uma verificação de integridade para importar ativos em massa, o Experience Manager agora fornece mais motivos de informações para falhas. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Ao importar ativos usando a ferramenta de importação em massa, os administradores agora têm a opção de excluir os arquivos de origem após a importação ser bem-sucedida. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Ao editar um esquema de metadados, um novo campo seletor de caminho raiz permite que os administradores façam a seleção de forma rápida e fácil, reduzindo assim o tempo de configuração.
+* Ao editar um esquema de metadados, um novo campo seletor de caminho raiz permite que os administradores façam a seleção de forma rápida e fácil. Esse aprimoramento ajuda a reduzir o tempo de configuração dos metadados.
 
-* Os metadados de muitos ativos podem ser importados em massa usando um arquivo CSV e podem ser exportados para um arquivo CSV. O formato de data padrão agora é `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Os usuários podem aproveitar um formato diferente ao atualizar o cabeçalho da coluna. Por exemplo, adicione `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como o cabeçalho da coluna no arquivo CSV em vez da palavra `Date`.
+* Os metadados de muitos ativos podem ser importados em massa usando um arquivo CSV e podem ser exportados para um arquivo CSV. O formato de data padrão agora é `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Os usuários podem aproveitar um formato diferente ao atualizar o cabeçalho da coluna. Por exemplo, adicione `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como o cabeçalho da coluna no arquivo CSV em vez da palavra `Date`. Consulte [importar metadados](/help/assets/metadata-import-export.md).
 
 * Ao navegar pelos ativos na exibição em Coluna, um indicador visual exibe o status aprovado ou rejeitado de cada ativo.
 
