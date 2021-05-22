@@ -1,14 +1,13 @@
 ---
 title: Recursos obsoletos e removidos
 description: Notas de versão específicas para recursos obsoletos e removidos no [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-translation-type: tm+mt
-source-git-commit: e6ad571b7428f6fb7a11907e752ba670a722057c
+exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
+source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 45%
+source-wordcount: '448'
+ht-degree: 44%
 
 ---
-
 
 # Recursos obsoletos e removidos {#deprecated-and-removed-features}
 
@@ -44,4 +43,4 @@ Esta seção lista os recursos e funcionalidades removidos de [!DNL Experience M
 | [!DNL Dynamic Media] | As integrações anteriores com [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) e [Modo Dynamic Media Hybrid](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) não estão disponíveis em [!DNL Experience Manager] como um [!DNL Cloud Service]. | Use [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornecido com [!DNL Experience Manager] como um [!DNL Cloud Service]. |
 | [!DNL Sites] | Portal Director e Portlet Component | Esses recursos foram descontinuados no [!DNL Experience Manager] 6.4 e foram removidos de [!DNL Experience Manager]. |
 | [!DNL Sites] | Importador de design | Esse recurso foi removido, pois seções imutáveis do repositório [!DNL Experience Manager] não estão acessíveis no tempo de execução. |
-| [!DNL Assets] | [[!DNL Assets] O compartilhamento do com os serviços Marketing Cloud Assets Core Service e Creative Cloud](https://docs.adobe.com/content/help/br/experience-manager-65/administering/integration/configure-assets-cc-integration.html) não está disponível. | Para integração com [!DNL Adobe Creative Cloud], use [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html). |
+| [!DNL Assets] | [!DNL Assets]O compartilhamento do com os serviços Marketing Cloud Assets Core Service e Creative Cloud não está disponível. | Para integração com [!DNL Adobe Creative Cloud], use [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html). |
