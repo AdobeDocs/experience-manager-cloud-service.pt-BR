@@ -5,11 +5,10 @@ contentOwner: Rick Brough
 feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 21%
+source-wordcount: '3242'
+ht-degree: 20%
 
 ---
 
@@ -166,6 +165,17 @@ Você pode editar as seguintes configurações do Dynamic Media tocando no ícon
 
    Você pode editar as seguintes configurações avançadas ao tocar em **[!UICONTROL Editar]** no componente.
 
+* **[!UICONTROL Otimizar para dispositivos]**  de resolução mais alta - marque a caixa de seleção (padrão) para permitir a otimização do DPR (Device Pixel Ratio).
+
+   Consulte também [Sobre a otimização da taxa de pixels do dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+   Observe que qualquer valor de DPR de imagem inteligente do Adobe Experience Manager Dynamic Media é ignorado.
+
+   A opção **[!UICONTROL Otimizar para dispositivos de resolução mais alta]** só é mostrada quando o seguinte é verdadeiro:
+   * Em Tipo de predefinição, **[!UICONTROL Predefinição de imagem]** é selecionado e **[!UICONTROL RESS_IP]** é selecionado na lista suspensa **[!UICONTROL Predefinição de imagem]**.
+
+   ![configuração da relação de pixels do dispositivo para predefinição de imagem](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+
 * **[!UICONTROL Título]**  - Altere o título da imagem.
 
 * **[!UICONTROL Texto alternativo]**  - Adicione um título à imagem para os usuários que têm os gráficos desativados.
@@ -179,7 +189,6 @@ Você pode editar as seguintes configurações do Dynamic Media tocando no ícon
 * **[!UICONTROL Largura]**  - insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
 
 * **[!UICONTROL Altura]**  - Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
-
 
 #### Ao trabalhar com vídeo {#when-working-with-video}
 
@@ -233,6 +242,18 @@ Você pode editar a seguinte configuração do Dynamic Media clicando em **[!UIC
    Você pode editar as seguintes Configurações avançadas clicando em **[!UICONTROL Editar]** no componente.
 
 * **[!UICONTROL Ativar correspondência de proporção de aspecto]**  - Para permitir que a Dynamic Media escolha uma representação de recorte inteligente com uma proporção de aspecto que melhor corresponda à proporção de aspecto da imagem original, selecione esta opção.
+
+* **[!UICONTROL Otimizar para dispositivos]**  de resolução mais alta - marque a caixa de seleção (padrão) para permitir a otimização do DPR (Device Pixel Ratio).
+
+   Consulte também [Sobre a otimização da taxa de pixels do dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+   Observe que qualquer valor de DPR de imagem inteligente do Adobe Experience Manager Dynamic Media é ignorado.
+
+   A opção **[!UICONTROL Otimizar para dispositivos de resolução mais alta]** só é mostrada quando o seguinte é verdadeiro:
+
+   * Em Tipo de predefinição, a opção **[!UICONTROL Recorte inteligente]** é selecionada.
+
+   ![configuração de proporção de pixels do dispositivo para recorte inteligente](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
 * **[!UICONTROL Título]**  - Altere o título da imagem de Recorte inteligente.
 
