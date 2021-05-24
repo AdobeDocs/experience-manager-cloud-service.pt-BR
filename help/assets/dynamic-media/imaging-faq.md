@@ -4,7 +4,7 @@ description: Saiba como o Smart Imaging com a Adobe Sensei AI aplica as caracter
 feature: Gerenciamento de ativos,Representações
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: eef1760407986e47876416c90df6dfb6f5693c1a
+source-git-commit: f500dd32a3f71357ced9687800945604a3455b48
 workflow-type: tm+mt
 source-wordcount: '2634'
 ht-degree: 1%
@@ -98,7 +98,7 @@ Aprimoramentos na versão mais recente do Smart Imaging:
 
 ## Há algum custo de licenciamento associado ao Smart Imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-Não. A Smart Imaging está incluída em sua licença existente. Essa regra é verdadeira para o Dynamic Media Classic ou o Experience Manager Dynamic Media (No local, AMS e Experience Manager as a Cloud Service).
+Não. A Smart Imaging está incluída em sua licença existente. Essa regra é verdadeira para o Dynamic Media Classic ou Experience Manager - Dynamic Media (No local, AMS e Experience Manager as a Cloud Service).
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Para usar a Smart Imaging, a conta do Dynamic Media Classic ou Dynamic Media no 
 
 Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta ou contas da empresa.
 
-Toque em **[!UICONTROL Configurar > Configuração do aplicativo > Configurações gerais]**. Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**. Se você usa um domínio genérico no momento, é possível solicitar a transferência para seu próprio domínio personalizado. Faça essa solicitação de transição ao enviar um tíquete de suporte técnico.
+Toque em **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Definições Gerais]**. Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**. Se você usa um domínio genérico no momento, é possível solicitar a transferência para seu próprio domínio personalizado. Faça essa solicitação de transição ao enviar um tíquete de suporte técnico.
 
 Seu primeiro domínio personalizado não tem custo adicional com uma licença do Dynamic Media.
 
