@@ -3,10 +3,9 @@ title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 feature: Implantação
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3350'
 ht-degree: 1%
 
 ---
@@ -101,7 +100,7 @@ Após a mudança para a nova versão do aplicativo:
    * Pastas (adicionar, modificar, remover)
    * Modelos editáveis (adicionar, modificar, remover)
    * Configuração sensível ao contexto (qualquer item em `/conf`) (adicione, modifique, remova)
-   * Scripts (pacotes podem acionar hooks de instalação em vários estágios do processo de instalação do pacote). Consulte a [documentação do Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sobre ganchos de instalação, que incluem os usuários permitidos a executá-los).
+   * Scripts (pacotes podem acionar hooks de instalação em vários estágios do processo de instalação do pacote). Consulte a [documentação do Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sobre ganchos de instalação. Observe que AEM CS usa atualmente o Filevault versão 3.4.0, que limita os ganchos de instalação para usuários administradores, usuários do sistema e membro do grupo de administradores).
 
 É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author or install.publish em `/apps`. A reestruturação para refletir esta separação foi feita no AEM 6.5 e os detalhes sobre a reestruturação de projeto recomendada podem ser encontrados na documentação [AEM 6.5.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
@@ -114,7 +113,7 @@ Qualquer pacote de terceiros incluído deve ser validado como sendo AEM como um 
 
 Como mencionado acima, os clientes com bases de código existentes devem estar em conformidade com o exercício de reestruturação de repositório necessário pelas alterações de repositório 6.5 descritas na documentação [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
-## Repontar {#repoinit}
+## Reapontar {#repoinit}
 
 Nos seguintes casos, é preferível adotar a abordagem das instruções `repoinit` de criação de conteúdo explícito de codificação manual em configurações de fábrica OSGI:
 
