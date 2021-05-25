@@ -5,18 +5,17 @@ breadcrumb-title: Guia de migração
 user-guide-description: Entenda a jornada de transição para o Cloud Service.
 feature: Implantação
 role: Architect, Developer
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 64794b387efe6995cda6b58fb19ba36a04cbe577
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 79%
+source-wordcount: '93'
+ht-degree: 75%
 
 ---
 
 
-# Guia de migração para o AEM as a Cloud Service{#moving}
+# Guia de migração para o AEM as a Cloud Service {#moving}
 
-+ [Migrar para o AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
++ [Migração para o AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Fases da jornada de transição {#phases}
    + [Planejamento](/help/move-to-cloud-service/planning.md)
    + [Execução](/help/move-to-cloud-service/execution.md)
@@ -27,6 +26,7 @@ ht-degree: 79%
       + [Uso do Analisador de práticas recomendadas](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Ferramenta Transferência de conteúdo {#content-transfer-tool}
       + [Visão geral](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
+      + [Pré-requisitos para a ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [Usar a ferramenta Mapeamento de usuários](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [Usar a ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Ferramentas de refatoração de código {#refactoring-tools}
