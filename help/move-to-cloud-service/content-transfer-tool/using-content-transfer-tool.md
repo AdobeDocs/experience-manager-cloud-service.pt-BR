@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: e0c6a79e6a088423cbc47046f285fb1ac241c476
+source-git-commit: d8ea69fc36a6565d245fe3c01484200b2e744c6c
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 43%
+source-wordcount: '2833'
+ht-degree: 41%
 
 ---
 
@@ -54,6 +54,8 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 * Ao usar `Amazon S3` ou `Azure` como o armazenamento de dados no sistema de AEM de origem, o armazenamento de dados deve ser configurado para que os blobs armazenados não possam ser excluídos (coleta de lixo). Isso garante a integridade dos dados de índice e a falha na configuração dessa maneira pode resultar em extrações com falha devido à falta de integridade desses dados de índice.
 
 * Se você estiver usando índices personalizados, certifique-se de configurar os índices personalizados com o nó `tika` antes de executar a ferramenta Transferência de conteúdo. Consulte [Preparando a Nova Definição de Índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) para obter mais detalhes.
+
+* Se você pretende fazer atualizações adicionais, é essencial que a estrutura de conteúdo do conteúdo existente não seja alterada do momento em que a extração inicial é levada ao momento em que a extração complementar é executada. Os complementos não podem ser executados em conteúdo cuja estrutura foi alterada desde a extração inicial. Certifique-se de restringir isso durante o processo de migração.
 
 ## Disponibilidade {#availability}
 
@@ -189,6 +191,7 @@ A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a at
 
 >[!NOTE]
 >Após a transferência inicial do conteúdo, é recomendável fazer atualizações complementares frequentes de conteúdo diferencial para reduzir o período de congelamento de conteúdo para a transferência final de conteúdo diferencial antes de entrar online no Cloud Service.
+>Além disso, é essencial que a estrutura de conteúdo do conteúdo existente não seja alterada do momento em que a extração inicial é levada ao momento em que a extração complementar é executada. Os complementos não podem ser executados em conteúdo cuja estrutura foi alterada desde a extração inicial. Certifique-se de restringir isso durante o processo de migração.
 
 Quando o processo de extração estiver concluído, você poderá transferir o conteúdo delta usando o método de extração complementar. Siga as etapas abaixo:
 
