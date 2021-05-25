@@ -1,16 +1,18 @@
 ---
 title: Pré-requisitos para a ferramenta Transferência de conteúdo
 description: Pré-requisitos para a ferramenta Transferência de conteúdo
-source-git-commit: ebe12a71df610a68c43048667136e331c1bd8f86
+source-git-commit: f70959efd9d0382c083ac05b9ccd63cf79947bc2
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 1%
+source-wordcount: '222'
+ht-degree: 0%
 
 ---
 
 # Pré-requisitos para a ferramenta Transferência de conteúdo {#prerequisites}
 
-A tabela a seguir resume os pré-requisitos para usar a ferramenta Transferência de conteúdo . Revise todas as considerações listadas abaixo:
+A tabela a seguir resume os pré-requisitos para usar a ferramenta Transferência de conteúdo .
+
+Revise todas as considerações listadas abaixo:
 
 | Considerações | O que é compatível no momento |
 |--- |--- |
@@ -18,3 +20,7 @@ A tabela a seguir resume os pré-requisitos para usar a ferramenta Transferênci
 | Tamanho do armazenamento de segmentos | A ferramenta Transferência de conteúdo suporta atualmente até 83 GB em *Author* e 31 GB em *Publish*. |
 | Tamanho total do repositório de conteúdo <br>*(armazenamento de conteúdo + armazenamento de dados)* | A ferramenta Transferência de conteúdo foi criada para transferir conteúdo de até 10 TB. Qualquer coisa superior a 10 TB não é compatível no momento. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de conteúdo maior que 10 TB. |
 | Conteúdo em caminhos imutáveis | A ferramenta Transferência de conteúdo não funciona para migrar o conteúdo em caminhos imutáveis, como `“/etc”`. <br>Consulte  [Reestruturação ](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) comum de repositório para saber mais sobre a reestruturação de repositório e os modelos de fluxo de trabalho. |
+
+## O que vem a seguir {#whats-next}
+
+Depois de revisar os pré-requisitos, você pode aprender a executar a ferramenta Transferência de conteúdo. Consulte [Usar a ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) para obter mais detalhes.
