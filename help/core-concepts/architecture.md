@@ -1,16 +1,22 @@
 ---
 title: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service
-description: 'Introdução à arquitetura do Adobe Experience Manager as a Cloud Service. '
-translation-type: tm+mt
-source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+description: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service.
+exl-id: fb169e85-ac19-4962-93d9-abaed812f948
+source-git-commit: 74b2720eae1fbc986cd1a252180a4b7f4187ed16
 workflow-type: tm+mt
-source-wordcount: '1671'
-ht-degree: 98%
+source-wordcount: '1728'
+ht-degree: 95%
 
 ---
 
-
 # Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
+
+>[!CONTEXTUALHELP]
+>id="intro_aem_cloudservice_architecture"
+>title="Introdução ao AEM as a Cloud Service Architecture"
+>abstract="Nesta guia, é possível visualizar a nova arquitetura do AEM como um Cloud Service e compreender as alterações. AEM resultou em uma arquitetura dinâmica com um número variável de imagens, portanto é importante levar tempo para entender.a arquitetura de nuvem"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Visão geral da arquitetura"
+
 
 O Adobe Experience Manager (AEM) as a Cloud Service resultou em mudanças na arquitetura.
 
@@ -63,7 +69,7 @@ O dimensionamento de instâncias por locatário do serviço pode ser automático
 
 O AEM as a Cloud Service é disponibilizado como instâncias individuais e cada instância representa um ambiente completo do AEM.
 
-Há três tipos de ambiente disponíveis com AEM como Cloud Service:
+Há três tipos de ambientes disponíveis com o AEM as a Cloud Service:
 
 * **Ambiente de produção**: hospeda os aplicativos para os profissionais de negócios.
 
@@ -71,7 +77,7 @@ Há três tipos de ambiente disponíveis com AEM como Cloud Service:
 
 * **Ambiente de desenvolvimento**: permite que os desenvolvedores implementem os aplicativos do AEM nas mesmas condições de tempo de execução que os ambientes de preparo e produção.
 
-   Consulte [Gerenciando Ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) para obter mais detalhes.
+   Consulte [Gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) para obter mais detalhes.
 
 ## Programas {#programs}
 
