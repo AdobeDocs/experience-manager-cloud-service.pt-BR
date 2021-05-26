@@ -2,13 +2,12 @@
 title: API HTTP de ativos
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Assets HTTP API,APIs
+feature: APIs HTTP de ativos, APIs
 role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-translation-type: tm+mt
-source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1519'
 ht-degree: 1%
 
 ---
@@ -28,7 +27,7 @@ A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resp
 
 >[!NOTE]
 >
->Todas as chamadas de API relacionadas ao upload ou atualização de ativos ou binários em geral (como representações) estão obsoletas para [!DNL Experience Manager] como uma implantação [!DNL Cloud Service]. Para fazer upload de binários, use [APIs de upload binário direto](developer-reference-material-apis.md#asset-upload-technical).
+>Todas as chamadas de API relacionadas ao upload ou atualização de ativos ou binários em geral (como representações) estão obsoletas para [!DNL Experience Manager] como uma implantação [!DNL Cloud Service]. Para fazer upload de binários, use [APIs de upload binário direto](developer-reference-material-apis.md#asset-upload).
 
 ## Fragmentos de conteúdo {#content-fragments}
 
@@ -61,7 +60,7 @@ As pastas são como diretórios nos sistemas de arquivos tradicionais. A pasta p
 * `parent`: Link para a pasta principal.
 * `thumbnail`: (Opcional) link para uma imagem em miniatura de pasta.
 
-### Assets {#assets}
+### Ativos {#assets}
 
 Em [!DNL Experience Manager] um ativo contém os seguintes elementos:
 
