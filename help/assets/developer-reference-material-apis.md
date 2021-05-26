@@ -2,16 +2,15 @@
 title: Referências do desenvolvedor para [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
-feature: APIs,Assets HTTP API
+feature: APIs,API HTTP de ativos
 role: Developer,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1406'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] casos de uso do desenvolvedor, APIs e material de referência  {#assets-cloud-service-apis}
 
@@ -65,7 +64,7 @@ O artigo contém recomendações, materiais de referência e recursos para desen
 | Copiar pasta | Instantâneo | Instantâneo | - | Instantâneo | - | - |
 | Mover pasta | Instantâneo | Instantâneo | - | Instantâneo | - | - |
 
-## Upload de ativo {#asset-upload-technical}
+## Upload de ativo {#asset-upload}
 
 Em [!DNL Experience Manager] como um [!DNL Cloud Service], é possível fazer upload direto dos ativos para o armazenamento na nuvem usando a API HTTP. As etapas para fazer upload de um arquivo binário são:
 
@@ -74,6 +73,9 @@ Em [!DNL Experience Manager] como um [!DNL Cloud Service], é possível fazer up
 1. [Envie uma ](#complete-upload) solicitação HTTP para informar ao servidor que o conteúdo do binário foi carregado com êxito.
 
 ![Visão geral do protocolo de upload binário direto](assets/add-assets-technical.png)
+
+>[!IMPORTANT]
+Execute essas etapas em um aplicativo externo e não na JVM [!DNL Experience Manager].
 
 A abordagem oferece uma manipulação escalável e mais eficiente dos uploads de ativos. As diferenças em comparação com [!DNL Experience Manager] 6.5 são:
 
