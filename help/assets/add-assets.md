@@ -4,8 +4,7 @@ description: Adicione seus ativos digitais a [!DNL Adobe Experience Manager] as 
 feature: Gerenciamento de ativos,Fazer upload
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-translation-type: tm+mt
-source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -121,7 +120,7 @@ Para se adequar às convenções específicas de nomenclatura de arquivos para s
 
 ## Fazer upload em massa de ativos {#bulk-upload}
 
-O criador de ativos em massa pode lidar com um grande número de ativos com eficiência. No entanto, uma assimilação em grande escala não é apenas um despejo de arquivo amplo ou uma migração casual. Para que uma assimilação em grande escala seja um projeto significativo que atende ao seu objetivo comercial e seja eficiente, planeje a migração e prepare a organização de ativos. Todas as sugestões são diferentes, portanto, em vez de generalizar, fator na composição de repositório e nas necessidades comerciais avançadas. Veja a seguir algumas sugestões abrangentes para planejar e executar uma assimilação em massa:
+O criador de ativos em massa pode lidar com um grande número de ativos com eficiência. No entanto, uma assimilação em grande escala não é apenas um despejo de arquivo amplo ou uma migração casual. Para que uma assimilação em grande escala seja um projeto significativo que atende à sua finalidade comercial e seja eficiente, planeje a migração e prepare a organização de ativos. Todas as sugestões são diferentes, portanto, em vez de generalizar, fator na composição de repositório e nas necessidades comerciais avançadas. Veja a seguir algumas sugestões abrangentes para planejar e executar uma assimilação em massa:
 
 * Preparar ativos: Remova ativos que não são necessários no DAM. Considere remover ativos não utilizados, obsoletos ou duplicados. Isso reduz os dados transferidos e os ativos assimilados, levando a ingestões mais rápidas.
 * Organizar ativos: Considere organizar o conteúdo em alguma ordem lógica, por exemplo, por tamanho de arquivo, formato de arquivo, caso de uso ou prioridade. Em geral, arquivos complexos grandes exigem mais processamento. Você também pode considerar a assimilação de arquivos grandes separadamente usando a opção de filtragem do tamanho do arquivo (descrita abaixo).
@@ -129,7 +128,7 @@ O criador de ativos em massa pode lidar com um grande número de ativos com efic
 
 Para fazer upload de um número maior de arquivos, use uma das abordagens a seguir. Além disso, consulte os [casos de uso e métodos](#upload-methods-comparison)
 
-* [APIs](developer-reference-material-apis.md#asset-upload-technical) de upload de ativos: Use um script de carregamento personalizado ou uma ferramenta que aproveite as APIs para adicionar manuseio adicional de ativos (por exemplo, traduzir metadados ou renomear arquivos), se necessário.
+* [APIs](developer-reference-material-apis.md#asset-upload) de upload de ativos: Use um script de carregamento personalizado ou uma ferramenta que aproveite as APIs para adicionar manuseio adicional de ativos (por exemplo, traduzir metadados ou renomear arquivos), se necessário.
 * [[!DNL Experience Manager] aplicativo](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) de desktop: Útil para profissionais criativos e profissionais de marketing que fazem upload de ativos de seu sistema de arquivos local. Use-o para fazer upload de pastas aninhadas disponíveis localmente.
 * [Ferramenta](#asset-bulk-ingestor) de assimilação em massa: Use para assimilação de grandes quantidades de ativos ocasionalmente ou inicialmente durante a implantação  [!DNL Experience Manager].
 
@@ -210,7 +209,7 @@ Para pastas que têm um perfil de processamento atribuído, o nome do perfil apa
 
 ## Fazer upload ou assimilar ativos usando APIs {#upload-using-apis}
 
-Detalhes técnicos das APIs e protocolo de upload, além de links para o SDK de código aberto e clientes de exemplo, são fornecidos na seção [upload de ativos](developer-reference-material-apis.md#asset-upload-technical) da referência do desenvolvedor.
+Detalhes técnicos das APIs e protocolo de upload, além de links para o SDK de código aberto e clientes de exemplo, são fornecidos na seção [upload de ativos](developer-reference-material-apis.md#asset-upload) da referência do desenvolvedor.
 
 ## Dicas, práticas recomendadas e limitações {#tips-limitations}
 
@@ -232,5 +231,5 @@ Detalhes técnicos das APIs e protocolo de upload, além de links para o SDK de 
 >* Aplicativo de desktop do [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Sobre [!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentação](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Referência técnica para upload de ativos](developer-reference-material-apis.md#asset-upload-technical)
+>* [Referência técnica para upload de ativos](developer-reference-material-apis.md#asset-upload)
 
