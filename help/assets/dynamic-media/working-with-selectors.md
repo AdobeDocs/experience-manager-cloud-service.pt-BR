@@ -3,10 +3,10 @@ title: Trabalho com seletores
 description: Saiba mais sobre os métodos que você pode usar para selecionar ativos para imagens interativas, vídeos interativos e banners de carrossel no Dynamic Media.
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 14%
+source-wordcount: '731'
+ht-degree: 18%
 
 ---
 
@@ -22,7 +22,7 @@ Por exemplo, neste Banner de carrossel, você usa o seletor de Produto se estive
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou mapas de imagem são direcionados, você está usando o seletor. O seletor de site só funcionará se você for um cliente do Adobe Experience Manager Sites. O seletor de produto também requer o Experience Manager Commerce.
+Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou mapas de imagem são direcionados, você está usando o seletor. O seletor de site só funcionará se você for um cliente [!DNL Adobe Experience Manager Sites]. O seletor de produto também requer [!DNL Experience Manager Commerce].
 
 ## Selecionar produtos no Dynamic Media {#selecting-products}
 
@@ -42,11 +42,11 @@ Use o seletor de produto para escolher um produto quando quiser um ponto de aces
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Você pode alterar o local em que o Experience Manager procura dados do produto ao tocar em **[!UICONTROL Procurar]** e navegar para outra pasta.
+   Você pode alterar o local em que [!DNL Experience Manager] procura dados do produto ao tocar em **[!UICONTROL Procurar]** e navegar para outra pasta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Toque em **[!UICONTROL Classificar por]** para alterar se o Experience Manager classifica por mais recente ou mais antigo até o mais recente.
+   Toque em **[!UICONTROL Classificar por]** para alterar se [!DNL Experience Manager] classifica por mais recente ou mais antiga a mais recente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ Use o seletor de produto para escolher um produto quando quiser um ponto de aces
 
 ## Selecionar sites no Dynamic Media {#selecting-sites}
 
-Use o seletor de site para escolher uma página da Web quando quiser um ponto de acesso ou mapa de imagem para vincular a uma página da Web gerenciada em Experience Manager sites.
+Use o seletor de site para escolher uma página da Web quando quiser que um ponto de acesso ou mapa de imagem vincule a uma página da Web gerenciada em [!DNL Experience Manager] sites.
 
 1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
 
@@ -72,7 +72,7 @@ Use o seletor de site para escolher uma página da Web quando quiser um ponto de
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Toque no ícone **[!UICONTROL Seletor de site]** (pasta com lupa) e navegue até uma página no seu Experience Manager, onde deseja vincular o ponto de acesso ou mapa de imagem.
+1. Toque no ícone do **[!UICONTROL Seletor de sites]** (pasta com lupa) e navegue até uma página no Sites a qual você deseja vincular o ponto de acesso ou mapa de imagem.[!DNL Experience Manager]
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,7 +80,7 @@ Use o seletor de site para escolher uma página da Web quando quiser um ponto de
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Quando estiver no modo **[!UICONTROL Visualizar]** se tocar no ponto de acesso ou mapa de imagem, você navegará até a página de Experience Manager site especificada.
+1. Quando estiver no modo **[!UICONTROL Visualizar]** se tocar no ponto de acesso ou mapa de imagem, você navegará até a página do site [!DNL Experience Manager] especificada.
 
 ## Selecionar ativos no Dynamic Media {#selecting-assets}
 
@@ -97,7 +97,7 @@ Consulte também [Seletor de ativos](/help/assets/search-assets.md#asset-selecto
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Você pode alterar o local em que o Experience Manager procura ativos navegando até outra pasta no campo **[!UICONTROL Path]**.
+   Você pode alterar o local em que [!DNL Experience Manager] procura ativos navegando até outra pasta no campo **[!UICONTROL Caminho]**.
 
    Toque em **[!UICONTROL Coleção]** para pesquisar apenas ativos nas coleções.
 
