@@ -6,10 +6,9 @@ topic-tags: introduction
 content-type: reference
 feature: Acessibilidade
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -21,7 +20,7 @@ O Dynamic Media oferece suporte a tecnologias de assistência e controle de tecl
 
 ## Suporte à acessibilidade de teclado no Dynamic Media {#keyboard-support-in-dm}
 
-Como o Dynamic Media é um plug-in para o Experience Manager Assets, a maioria do comportamento de controle de teclado é igual ao dos Experience Manager Assets. Por exemplo, o botão `Cancel` no Dynamic Media tem o mesmo realce de foco que nos Ativos de Experience Manager. Também reage à tecla `Spacebar` como no Experience Manager Assets. Consulte [atalhos de teclado em Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Como o Dynamic Media é um plug-in para [!DNL Experience Manager Assets], a maioria do comportamento de controle do teclado é igual ao comportamento em [!DNL Experience Manager Assets]. Por exemplo, o botão `Cancel` no Dynamic Media tem o mesmo realce de foco que em [!DNL Experience Manager Assets]. Ele também reage à chave `Spacebar` como em [!DNL Experience Manager Assets]. Consulte [atalhos de teclado em Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Os pressionamentos de tecla suportados pelos elementos da interface do usuário individual no Dynamic Media são, na maioria dos casos, óbvios e fáceis de encontrar. O controle de teclado no Dynamic Media é sobre o seguinte:
 
