@@ -2,10 +2,9 @@
 title: Replicação
 description: Distribuição e Solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-translation-type: tm+mt
-source-git-commit: eb92c66f2b9e8e6ec859114da2de049747ec251e
+source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 2%
 
 ---
@@ -83,7 +82,7 @@ Como alternativa, você também pode fazer isso criando um Modelo de fluxo de tr
 
 * `replicateAsParticipant` (valor booleano, padrão:  `false`). Se configurado como `true`, a replicação está usando o `userid` do principal que executou a etapa do participante.
 * `enableVersion` (valor booleano, padrão:  `true`). Esse parâmetro determina se uma nova versão será criada na replicação.
-* `agentId` (valor da string, padrão significa que todos os agentes ativados são usados).
+* `agentId` (valor da string, padrão significa que todos os agentes ativados são usados). Recomenda-se ser explícito sobre o agentId; por exemplo, definir o valor para : publicar
 * `filters` (valor da string, padrão significa que todos os caminhos estão ativados). Os valores disponíveis são:
    * `onlyActivated` - somente os caminhos que não estão marcados como ativados serão ativados.
    * `onlyModified` - ative apenas caminhos que já estejam ativados e tenham uma data de modificação posterior à data de ativação.
