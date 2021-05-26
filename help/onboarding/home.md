@@ -2,14 +2,14 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 34%
+source-wordcount: '962'
+ht-degree: 19%
 
 ---
 
-# Integração ao Experience Manager as a Cloud Service {#aem-onboarding-guide}
+# Integração a [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
@@ -58,31 +58,31 @@ As seguintes páginas de documentação incluem informações descrevendo tarefa
 **[Navegar para o Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
 Agora que você foi adicionado como um usuário e atribuído a uma função do Cloud Manager, é possível acessar o Cloud Manager para começar a usar a jornada na nuvem com o AEM. Os usuários estão prontos para fazer várias tarefas, como [criar um programa](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [adicionar um ambiente](/help/implementing/cloud-manager/manage-environments.md), [acessar Git](/help/implementing/cloud-manager/accessing-git.md), [configurar um pipeline](/help/implementing/cloud-manager/configure-pipeline.md) e [implantar código](/help/implementing/cloud-manager/deploy-code.md).
-O Cloud Manager é uma parte importante do AEM as a Cloud Service. Ela permite que as organizações autogerenciem o Experience Manager na nuvem. Inclui uma estrutura de integração contínua e entrega contínua (CI/CD) que permite que as equipes de TI e os parceiros de implementação acelerem a entrega de personalizações ou atualizações, sem comprometer o desempenho ou a segurança. Usando a interface do usuário, você pode configurar e iniciar o pipeline de CI/CD.
+O Cloud Manager é uma parte importante do AEM as a Cloud Service. Ela permite que as organizações autogerenciem [!DNL Experience Manager] na nuvem. Inclui uma estrutura de integração contínua e entrega contínua (CI/CD) que permite que as equipes de TI e os parceiros de implementação acelerem a entrega de personalizações ou atualizações, sem comprometer o desempenho ou a segurança. Usando a interface do usuário, você pode configurar e iniciar o pipeline de CI/CD.
 
 **[Conceder ao usuário acesso a uma instância de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
 Siga esta seção para saber como um Administrador do sistema ou um usuário que criou um ambiente pode conceder acesso a uma instância de AEM a outros usuários.
 
-## Guias do Experience Manager as a Cloud Service {#aem-guides}
+## [!DNL Experience Manager as a Cloud Service] Guias  {#aem-guides}
 
 | Guia do usuário | Descrição |
 |---|---|
 | [Página inicial do Experience Manager as a Cloud Service](/help/landing/home.md) | Comece por aqui para ter uma visão geral da documentação do Experience Manager as a Cloud Service. |
-| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, etc. |
-| [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo novidades, problemas conhecidos e recursos obsoletos e removidos. |
-| [Conceitos principais](/help/core-concepts/home.md) | Este guia fornece uma introdução aos conceitos principais do Experience Manager as a Cloud Service, incluindo a arquitetura do novo serviço. |
-| [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
-| [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service. |
-| [Guia do usuário do Assets](/help/assets/home.md) | Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service. |
+| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do [!DNL Experience Manager as a Cloud Service], incluindo uma introdução, terminologia e assim por diante. |
+| [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do [!DNL Experience Manager as a Cloud Service], incluindo novidades, recursos obsoletos e removidos e problemas conhecidos. |
+| [Conceitos principais](/help/core-concepts/home.md) | Este guia fornece uma introdução aos conceitos principais de [!DNL Experience Manager as a Cloud Service], incluindo a arquitetura do novo serviço. |
+| [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados a [!DNL Experience Manager as a Cloud Service]. |
+| [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como criar com e administrar [!DNL Experience Manager Sites] como um Cloud Service. |
+| [Guia do usuário do Assets](/help/assets/home.md) | Entenda como usar e administrar [!DNL Experience Manager Assets as a Cloud Service]. |
 | [Migração para o AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Entenda a jornada de transição para o Cloud Service |
 | [Implementação do Guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando AEM recursos avançados explorando esses tópicos de desenvolvimento e implantação. |
 | [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada com os recursos avançados e flexíveis do AEM para se preparar para o seu primeiro projeto sem periféricos. |
-| [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar conectores ao Experience Manager as a Cloud Service. |
-| [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção. |
-| [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM as a Cloud Service. |
+| [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar Conectores a [!DNL Experience Manager as a Cloud Service]. |
+| [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end de [!DNL Experience Manager as a Cloud Service], como tarefas de indexação e manutenção. |
+| [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework em [!DNL Experience Manager as a Cloud Service]. |
 
-## Outros recursos do Experience Manager {#other-resources}
+## Outros [!DNL Experience Manager] Recursos {#other-resources}
 
 * [Atualizações recentes na documentação](https://helpx.adobe.com/br/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
