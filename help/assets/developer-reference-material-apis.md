@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,API HTTP de ativos
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
+source-git-commit: 5243b02a8168da82674989b9f5abb65af6613096
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1420'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ O artigo contém recomendações, materiais de referência e recursos para desen
 
 ## Upload de ativo {#asset-upload}
 
-Em [!DNL Experience Manager] como um [!DNL Cloud Service], é possível fazer upload direto dos ativos para o armazenamento na nuvem usando a API HTTP. As etapas para fazer upload de um arquivo binário são:
+Em [!DNL Experience Manager] como um [!DNL Cloud Service], é possível fazer upload direto dos ativos para o armazenamento na nuvem usando a API HTTP. As etapas para fazer upload de um arquivo binário estão abaixo. Execute essas etapas em um aplicativo externo e não na JVM [!DNL Experience Manager].
 
 1. [Envie uma solicitação](#initiate-upload) HTTP. Ele informa [!DNL Experience Manage]ou a implantação de sua intenção de fazer upload de um novo binário.
 1. [POST do conteúdo do binário para um ou mais URIs fornecidos pelo pedido de início. ](#upload-binary) 
