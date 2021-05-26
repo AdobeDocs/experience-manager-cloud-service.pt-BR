@@ -1,27 +1,33 @@
 ---
 title: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 description: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
-translation-type: tm+mt
-source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
+exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
+source-git-commit: 71f05dda4ccd52c66bbf1d9025900976f07227f3
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 90%
+source-wordcount: '882'
+ht-degree: 85%
 
 ---
-
 
 # Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service {#notable-changes-aem-cloud}
 
 O AEM Cloud Service oferece muitos novos recursos e possibilidades para gerenciar os projetos do AEM. No entanto, existem várias diferenças entre o AEM Sites no local ou no Adobe Managed Services, em comparação ao AEM Cloud Service. Este documento destaca as diferenças importantes.
 
+>[!CONTEXTUALHELP]
+>id="aem_cloud_notable_changes"
+>title="Alterações importantes no AEM como Cloud Service"
+>abstract="Nesta guia, é possível visualizar o conteúdo que ajudará você a entender as diferenças entre AEM no local ou no Adobe Managed Services, em comparação ao AEM como Cloud Service."
+>additional-url="https://video.tv.adobe.com/v/330543" text="Evolução do AEM como Cloud Service"
+
+
 >[!NOTE]
 >Este documento destaca as alterações importantes no AEM como um todo. Para obter mais informações e conhecer as alterações específicas de cada solução, consulte:
 >
 >* [Introdução ao Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* [Novidades e diferenças](/help/overview/what-is-new-and-different.md) entre o Adobe Experience Manager as a Cloud Service e as versões anteriores
->* A [Arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager as a Cloud Service
->* [Alterações importantes no AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Alterações importantes no AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
+* [Novidades e diferenças](/help/overview/what-is-new-and-different.md) entre o Adobe Experience Manager as a Cloud Service e as versões anteriores
+* A [Arquitetura](/help/core-concepts/architecture.md) do Adobe Experience Manager as a Cloud Service
+* [Alterações importantes no AEM Sites as a  Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+* [Alterações importantes no AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
 
 As principais diferenças encontram-se nas seguintes áreas:
@@ -65,7 +71,7 @@ O console da Web, usado nas versões anteriores do AEM para alterar as configura
 
 ## Não são permitidas alterações no repositório de publicação {#changes-to-publish-repo}
 
-Além das alterações na pasta `/home` na camada de publicação, as alterações diretas no repositório de publicação não são permitidas em AEM Cloud Service. Em versões anteriores de AEM no local ou AEM no AMS, alterações de código podem ser feitas diretamente no repositório de publicação. Algumas limitações podem ser atenuadas das seguintes maneiras:
+Além de alterações na pasta `/home` no nível de publicação, alterações diretas no repositório de publicação não são permitidas no AEM Cloud Service. Em versões anteriores de AEM no local ou AEM no AMS, as alterações de código poderiam ser feitas diretamente no repositório de publicação. Algumas limitações podem ser atenuadas das seguintes maneiras:
 
 * Para configuração de conteúdo e baseada em conteúdo: faça as alterações na instância de criação e as publique.
 * Para código e configuração: faça as alterações no repositório de GIT e execute o pipeline de CI/CD para implementá-las.
@@ -108,7 +114,7 @@ Para a transição de projetos do AMS ou de uma instalação local, a Adobe reco
 
 ## Manuseio e entrega de ativos {#asset-handling}
 
-O upload, o tratamento e o download de ativos foram otimizados no Assets como Cloud Service para serem mais eficientes, permitindo um melhor dimensionamento e downloads mais rápidos. No entanto, isso pode afetar alguns códigos personalizados existentes.
+O upload, o tratamento e o download de ativos foram otimizados no Assets as a Cloud Service para serem mais eficientes, permitindo melhor dimensionamento e uploads e downloads mais rápidos. No entanto, isso pode afetar alguns códigos personalizados existentes.
 
 * O fluxo de trabalho padrão **DAM Asset Update** nas versões anteriores do AEM não está mais disponível.
 * Os componentes do site que fornecem um binário **sem transformação** devem usar o download direto.
