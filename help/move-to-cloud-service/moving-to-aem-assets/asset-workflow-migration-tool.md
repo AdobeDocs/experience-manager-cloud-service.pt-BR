@@ -2,7 +2,7 @@
 title: Ferramenta Migração de fluxo de trabalho de ativos
 description: Ferramenta Migração de fluxo de trabalho de ativos
 exl-id: 18490295-ead6-4691-8983-a6d4054e4264
-source-git-commit: a0fb2714bc74c620d90153746930757301e62fd7
+source-git-commit: d443ab32e5d2dddded58693483a2bda825ea3048
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 74%
@@ -36,4 +36,4 @@ Os fluxos de trabalho têm um nível variável de suporte à migração. Consult
 
 * **[!DNL Adobe I/O]CLI**: O Adobe recomenda usar a ferramenta Migração de fluxo de trabalho de ativos por meio do  `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] como um plug-in de refatoração de  [!DNL Cloud Service] código para a  [!DNL Adobe I/O] CLI). Para saber como instalar e usar o plug-in, consulte [Recurso Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
 
-* **Utilitário** independente: A Ferramenta Migração de fluxo de trabalho de ativos também pode ser executada como um utilitário independente. Para saber mais sobre como instalar e criar o código a partir da origem, consulte **[Recurso Git: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - Migração de fluxo de trabalho](https://github.com/adobe/aem-cloud-migration)**.
+* **Utilitário** independente: A Ferramenta Migração de fluxo de trabalho de ativos também pode ser executada como um utilitário independente. Para saber mais sobre como instalar e criar o código a partir da origem, consulte [Recurso Git: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - Migração de fluxo de trabalho](https://github.com/adobe/aem-cloud-migration).
