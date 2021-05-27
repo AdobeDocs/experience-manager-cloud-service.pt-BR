@@ -2,10 +2,10 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
+source-git-commit: 37e431d70bc7e11097b9d59faed4b654b9087656
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 2%
+source-wordcount: '986'
+ht-degree: 3%
 
 ---
 
@@ -23,128 +23,85 @@ A seção a seguir descreve as Notas de versão gerais para a versão atual (mai
 
 ## Data de lançamento {#release-date}
 
-A Data de lançamento de [!DNL Adobe Experience Manager] como Cloud Service 2021.4.0 é 6 de maio de 2021.
-A seguinte versão (2021.5.0) será lançada em 27 de maio de 2021.
+A Data de lançamento de [!DNL Adobe Experience Manager] como Cloud Service 2021.5.0 é 27 de maio de 2021.
+A seguinte versão (2021.6.0) será lançada em 24 de junho de 2021.
 
-## AEM como um Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
+## AEM como uma fundação de Cloud Service {#foundation}
 
-### Novidades {#what-is-new-foundation}
+### Novidades no AEM como um Cloud Service Foundation {#what-is-new-foundation}
 
-* [Fluxo de trabalho da Árvore de conteúdo de publicação](/help/operations/replication.md#publish-content-tree-workflow)  - Um novo modelo de fluxo de trabalho e uma etapa proporcionam maior desempenho ao publicar hierarquias profundas de conteúdo.
+* [Canal](/help/release-notes/prerelease.md) de pré-lançamento: Visualize os recursos futuros por um mês inteiro antes de eles entrarem em produção!
+
+* [Substituição](/help/release-notes/deprecated-apis.md) da API: uma lista das APIs obsoletas mais recentes para o AEM as a Cloud Service está disponível.
+
+* [AEM como um plug-in Maven do Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Atualize seus projetos maven para a versão mais recente, que inclui uma verificação da API Java obsoleta e outras melhorias.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Novidades em [!DNL Sites] {#what-is-new-sites}
 
-* Endpoints GraphQL - agora é possível habilitar a API GraphQL da AEM para configurações AEM Sites individuais e criar pontos de extremidade GraphQL personalizados para essas configurações usando uma nova interface do usuário do console GraphQL. A interface do usuário também permite o gerenciamento de pontos de extremidade GraphQL.
-
-* Modelos de conteúdo, tipo de dados aprimorado de Data e Hora - agora é possível configurar o tipo de data e hora para permitir a criação apenas de data, hora ou informações de data e hora.
-
-* Modelos de conteúdo, tipo de dados Tags aprimoradas - agora é possível configurar o tipo de dados Tags para permitir a criação de tags únicas ou múltiplas.
-
-* Modelos de conteúdo, novo tipo de dados de Espaço reservado de guia - o novo tipo de dados de Espaço reservado de guia permite agrupar tipos de dados em seções que serão renderizadas em guias no editor de fragmento de conteúdo.
-
-### Correções de erros em [!DNL Sites] {#bug-fixes-sites}
-
-* Fragmentos de conteúdo - mover fragmentos de conteúdo ou pastas agora atualiza referências aninhadas dentro do fragmento (CQ-4320815)
-
-* GraphQL - As consultas persistentes agora oferecem suporte a endpoints definidos pelo usuário que são específicos das configurações do AEM Sites (CQ-4315928)
+* Em breve, você poderá verificar o conteúdo em um novo [Camada de visualização](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para simular a aparência da experiência final e a experiência como faria no nível de Publicação. Isso é ativado pelo assistente de Publicação gerenciada do AEM Sites , que agora permite escolher um destino de publicação entre Publicar ou Visualizar. As experiências na Visualização podem ser acessadas por um URL dedicado. Após a validação em Visualizar, o conteúdo pode ser publicado de Autor para Publicar como de costume. Habilitar o Serviço de visualização no AEM como ambientes Cloud Service será implementado gradualmente nas próximas semanas.
 
 ## [!DNL Adobe Experience Manager Assets] como  [!DNL Cloud Service] {#assets}
 
 ### Novidades em [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] não arquiva downloads de ativos únicos onde o arquivo original é baixado. Esse aprimoramento permite downloads mais rápidos. Consulte [baixar ativos](/help/assets/download-assets-from-aem.md).
+* Você pode baixar os ativos compartilhados usando a funcionalidade Compartilhamento de links . Esse download agora usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos, mesmo para downloads muito grandes. Consulte [baixar ativos](/help/assets/download-assets-from-aem.md#link-share-download).
 
-* Ao baixar um ativo por meio de uma opção de compartilhamento de link, agora é possível optar por baixar ou não as representações. Anteriormente, todas as representações de ativos eram baixadas. Consulte [opções de download](/help/assets/download-assets-from-aem.md).
+   ![Baixar caixa de entrada](/help/assets/assets/download-inbox.png)
 
-* Ao executar uma verificação de integridade para importar ativos em massa, o Experience Manager agora fornece mais motivos de informações para falhas. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
+### Novos recursos disponíveis no canal de pré-lançamento {#what-is-new-assets-prerelease}
 
-* Ao importar ativos usando a ferramenta de importação em massa, os administradores agora têm a opção de excluir os arquivos de origem após a importação ser bem-sucedida. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Os esquemas de metadados podem ser aplicados diretamente às propriedades da pasta.
 
-* Ao editar um esquema de metadados, um novo campo seletor de caminho raiz permite que os administradores façam a seleção de forma rápida e fácil. Esse aprimoramento ajuda a reduzir o tempo de configuração dos metadados.
+   ![Adicionar esquema de metadados das propriedades da pasta](/help/assets/assets/metadata-schema-folder-properties.png)
 
-* Os metadados de muitos ativos podem ser importados em massa usando um arquivo CSV e podem ser exportados para um arquivo CSV. O formato de data padrão agora é `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Os usuários podem aproveitar um formato diferente ao atualizar o cabeçalho da coluna. Por exemplo, adicione `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como o cabeçalho da coluna no arquivo CSV em vez da palavra `Date`. Consulte [importar metadados](/help/assets/metadata-import-export.md).
+* A ferramenta Ingestor em massa de ativos permite adicionar metadados durante uma assimilação em massa.
 
-* Ao navegar pelos ativos na exibição em Coluna, um indicador visual exibe o status aprovado ou rejeitado de cada ativo.
+* As melhorias na experiência do usuário exibem o número de ativos presentes em uma pasta. Para mais de 1000 ativos em uma pasta, [!DNL Assets] exibe 1000+.
 
-* Ao navegar pelos ativos na exibição em Coluna, um indicador visual é exibido para os ativos expirados.
+   ![O número de ativos em uma pasta é exibido na interface](/help/assets/assets/browse-folder-number-of-assets.png)
 
-* Um tipo de dados de área de texto é disponibilizado no editor de metadados [!DNL Assets]. Você pode usar essa opção para permitir que os usuários insiram metadados em um campo de texto de forma livre.
+### Erros corrigidos em [!DNL Assets] {#assets-bugs-fixed}
 
-### Correções de erros em [!DNL Assets] {#bug-fixes-assets}
+* Fazer upload de arquivos muito grandes trava o [!DNL Experience Manager desktop app]. (CQ-4320942)
+* As opções da barra de ferramentas são diferentes quando a mesma Coleção é selecionada de uma pasta e quando é selecionada de um resultado de pesquisa. (CQ-4321406)
 
-* Ao tentar mover vários ativos ou pastas, um erro é registrado no console e a operação de movimentação não é concluída. A operação de movimentação falhará se o título não puder ser atualizado. (CQ-4322080)
+#### Novidades no Dynamic Media {#what-is-new-dm}
 
-* Um campo de metadados pode ser oculto com base em uma regra, de modo que, quando uma condição predefinida é atendida, os metadados não são obrigatórios. No entanto, esses campos de metadados ocultos são exibidos como campos obrigatórios. (CQ-4321285)
+* O Smart Imaging DPR (Device Pixel Ratio) e a otimização da largura de banda da rede permitem fornecer imagens de melhor qualidade com eficiência, em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter mais informações, consulte [Perguntas frequentes sobre imagem inteligente](/help/assets/dynamic-media/imaging-faq.md).
 
-* A importação de metadados em massa falha devido ao formato de data incorreto. (CQ-4319014)
+   >[!NOTE]
+   >
+   >A linha do tempo da versão para os aprimoramentos de Smart Imaging acima é:
+   >
+   >* América do Norte 24 de maio de 2021 em NA,
+      >
+      >
+   * Europa, Oriente Médio e África 25 de junho de 2021,
+      >
+      >
+   * Ásia-Pacífico em 19 de julho de 2021.
 
-* Quando uma seleção é feita na página Propriedades para atualizar metadados, a interface fica lenta para responder quando há muitas opções fornecidas pelo esquema. (CQ-4318538)
 
-* Ao atualizar e salvar o valor de metadados em um campo de texto de uma única linha, os valores no menu suspenso são excluídos, mesmo que as edições estejam desativadas no menu suspenso. (CQ-4317077)
+* Introdução do suporte para o formato de imagem da próxima geração AVIF na entrega do Dynamic Media (modificador de URL fmt).
 
-* Você pode usar reticências como uma anotação para revisar ativos. Quando uma pequena elipse é usada, a elipse se sobrepõe ao número da anotação na versão impressa. (CQ-4316792)
-
-## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
-
-### Novidades em [!DNL Forms] {#what-is-new-forms}
-
-Você pode usar [AEM Forms como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) para criar formulários digitais, conectar formulários a fontes de dados existentes, integrar formulários ao Adobe Sign para adicionar assinaturas eletrônicas a formulários, gerar Documento de Registro (DoR) para arquivar formulários enviados como arquivos PDF. O serviço também pode converter PDF forms existentes em formulários digitais. Além dos recursos padrão do AEM Forms, o serviço oferece vários recursos nativos em nuvem como dimensionamento automático, tempo de inatividade zero para atualizações e ambiente de desenvolvimento nativo em nuvem. Leia [esta publicação do blog](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) para saber mais sobre os recursos do AEM Forms as a Cloud Service.
-
-* **Usar o método de autenticação de identidade do Governo no Adobe Sign Adaptive Forms habilitado**
-
-   Alimentado por algoritmos avançados de aprendizado de máquina, o processo de ID do governo da Adobe Sign capacita empresas em todo o mundo com a capacidade de garantir uma autenticação de alta qualidade da identidade do destinatário. Agora, você pode usar o método de autenticação de identidade do Governo no Adobe Sign Adaptive Forms habilitado.
-
-   ID do governo é um método de autenticação de identidade premium que instrui o recipient a [carregar a imagem de um documento de identidade emitido pelo governo (licença de motorista, ID nacional, passaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html), e então avalia esse documento para garantir que ele seja autêntico.
-
-* **Suporte para usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis**
-
-   Agora é possível usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis. Você também pode incorporar um formulário adaptável em uma página [!DNL Experience Manager Sites] e usar a experiência de assinatura no formulário para envios de formulários adaptáveis.
-
-* **Suporte para usar uma variável para especificar um anexo ao preencher previamente um Formulário adaptável para uma etapa Atribuir tarefa**
-
-   Ao pré-preencher um formulário adaptável para uma etapa Atribuir tarefa , agora é possível usar uma variável do tipo de documento para selecionar um anexo de entrada para o formulário adaptável.
-
-* **Suporte para usar a opção literal para definir valor para uma variável do tipo JSON**
-
-   Você pode usar a opção literal para definir um valor para uma variável do tipo JSON na etapa Definir variável de um fluxo de trabalho AEM. A opção literal permite especificar um JSON no formato de uma string.
-
-* **Usar o ambiente de desenvolvimento local para criar Documento de registro (DoR)**
-
-   Você pode usar um XDP como modelo de Documento de registro em instâncias do Cloud Service e AEM Forms como um SDK do Cloud Service (Ambiente de desenvolvimento local). Anteriormente, o suporte estava limitado apenas a instâncias Cloud Service.
-
-### Correções de erros em [!DNL Forms] {#bug-fixes-forms}
-
-* Quando um Formulário adaptável configurado para não gerar Documento de registro é enviado a um Fluxo de trabalho AEM configurado para gerar Documento de registro, nenhuma mensagem de erro é exibida e a tarefa não é enviada.
-
-### Outras atualizações {#misc-2021-04-0-forms}
-
-* Para facilitar o reconhecimento de conteúdo, o serviço agora gera a miniatura em tempo real para arquivos XDP, PDF dinâmico e Esquema.
-* Adicione a capacidade de mover um arquivo PDF para uma pasta colocada na interface do usuário do AEM Forms.
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### Novidades {#what-is-new-commerce}
-
-* Suporte para UID de categoria - Isso desbloqueia integrações de comércio de terceiros para sistemas que usam Strings para ids de categoria
-
-* AEM extensão para PWA Studio incl. integração de exemplo
-
-* Novo componente principal de navegação da CIF que estende o componente principal de navegação do WCM
-
-* Indicador visual para dados de catálogo preparados na loja de AEM
-
-* O endpoint de comércio agora é configurável por meio da interface do usuário do Cloud Manager
-
-### Correções de erros {#bug-fixes-commerce}
-
-* O campo categoria raiz não era exibido na guia Comércio nas propriedades de página das páginas de categoria
+   >[!NOTE]
+   >
+   >A linha do tempo da versão do suporte a AVIF é:
+   >
+   >* América do Norte, 10 de maio de 2021,
+      >
+      >
+   * Europa, Oriente Médio e África 24 de maio de 2021,
+      >
+      >
+   * Ásia-Pacífico, 24 de junho de 2021.
 
 
 ## Cloud Manager {#cloud-manager}
 
-Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.5.0 e 2021.4.0.
+Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.5.0.
 
 ### Data de lançamento {#release-date-cm-may}
 
@@ -185,42 +142,6 @@ A próxima versão está planejada para 3 de junho de 2021.
 
 * Durante a configuração do programa de sandbox, depois que o projeto com código de amostra for criado com êxito, o Gerenciar Git será exibido como um link do cartão herói na página Visão geral .
 
-### Data de lançamento {#release-date-cm-april}
-
-A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.4.0 é 8 de abril de 2021.
-
-### Novidades {#what-is-new-april}
-
-* Atualizações da interface do usuário para os fluxos de trabalho Adicionar e editar programa para torná-lo mais intuitivo.
-
-* Um usuário com as permissões necessárias agora pode enviar o ponto final de comércio por meio da interface do usuário do .
-
-* Agora, as variáveis de ambiente podem ser enviadas para um serviço específico, seja de criação ou de publicação. Exige AEM versão `2021.03.5104.20210328T185548Z` ou superior.
-
-* O botão **Gerenciar Git** é exibido no cartão Pipelines mesmo quando nenhum pipeline foi configurado.
-
-* A versão do arquétipo de projeto AEM usado pelo Cloud Manager foi atualizada para a versão 27.
-
-* Os projetos no Console do desenvolvedor do Adobe I/O criados pelo Cloud Manager não podem mais ser editados ou excluídos involuntariamente.
-
-* Quando um usuário adiciona um novo ambiente, ele é informado que, uma vez criado um ambiente, ele não pode ser movido para uma região diferente.
-
-* Agora, as variáveis de ambiente podem ser enviadas para um serviço específico, seja de criação ou de publicação. Exige AEM versão 2021.03.5104.20210328T185548Z ou superior.
-
-* A mensagem de erro ao iniciar um pipeline quando um ambiente foi excluído foi esclarecida.
-
-* Pacotes OSGi fornecidos por projetos Eclipse agora são excluídos da regra `CQBP-84--dependencies`.
-
-### Correções de erros {#bug-fixes-cm-april}
-
-* Ao editar a página Auditoria de experiência de um pipeline, um caminho de entrada que começa com uma barra `( / )` não resultará mais na etapa presa no status pendente.
-
-* Quando um novo pipeline de produção é criado, se nenhuma substituição de auditoria de conteúdo for adicionada pelo usuário, a página inicial padrão não foi auditada.
-
-* Os problemas para `CloudServiceIncompatibleWorkflowProcess` tinham a severidade incorreta no arquivo CSV de problema baixável.
-
-* A verificação `Runmode` estava produzindo falsos positivos em nós que não eram pastas.
-
 ## Ferramenta Transferência de conteúdo {#content-transfer-tool}
 
 ### Data de lançamento {#release-date-ctt}
@@ -237,14 +158,14 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.4.0 é 11 de 
 * Várias correções de erros relacionadas ao recurso de atualização automática na interface do usuário da ferramenta Transferência de conteúdo .
 * A ferramenta Transferência de conteúdo com `wipe=true` resultou em um índice de contador incorreto no destino. Isso foi corrigido.
 
-## Analisador de práticas recomendadas {#best-practices-analyzer}
+## Complemento do Commerce {#cloud-services-commerce}
 
-### Data de lançamento {#release-date-bpa}
+### Novidades {#what-is-new-commerce}
 
-A data de lançamento do Analisador de práticas recomendadas v2.1.12 é 12 de abril de 2021.
+* Suporte à paginação para conteúdo associado nas propriedades do console do produto
 
-### Correções de erros {#bug-fixes-bpa-april}
+### Correções de erros {#bug-fixes-commerce}
 
-* Linhas duplicadas foram vistas no BPA relatado. Isso foi corrigido.
-* A interface do usuário do BPA AEM versão 6.4.2 estava exibindo um erro de JS que estava desativando o botão Gerar relatório . Isso foi corrigido
+* Miniaturas de ativos não exibidas na guia Ativo das propriedades do produto
 
+* A navegação estrutural redefine os dados de visualização no console do produto
