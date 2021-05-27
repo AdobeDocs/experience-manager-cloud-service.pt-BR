@@ -1,23 +1,22 @@
 ---
-title: Compartilhar ativos, pastas e coleções como um link
-description: Este artigo descreve como compartilhar ativos, pastas e coleções dentro de [!DNL Experience Manager Assets] como um hiperlink.
+title: Distribuir e compartilhar ativos, pastas e coleções
+description: Distribua seus ativos digitais usando métodos como compartilhar como um link, baixar e via [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
-feature: Asset Management,Collaboration,Asset Distribution
+feature: Gerenciamento de ativos, Colaboração, Distribuição de ativos
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
+source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
-
 
 # Compartilhar e distribuir ativos gerenciados em [!DNL Experience Manager] {#share-assets-from-aem}
 
 [!DNL Adobe Experience Manager Assets] permite compartilhar ativos, pastas e coleções com membros de sua organização e entidades externas, incluindo parceiros e fornecedores. Use os seguintes métodos para compartilhar ativos de [!DNL Experience Manager Assets] como um [!DNL Cloud Service]:
 
-* Compartilhar como um link.
+* [Compartilhar como um link](#sharelink).
 * [Baixe ](/help/assets/download-assets-from-aem.md) ativos e compartilhe separadamente.
 * Compartilhe usando [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 * Compartilhe usando [[!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html).
@@ -27,10 +26,12 @@ ht-degree: 2%
 
 Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caixa de diálogo Compartilhamento de links . Os usuários com privilégios de administrador ou com permissões de leitura no local `/var/dam/share` podem visualizar os links compartilhados com eles. O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar recursos para partes externas sem que elas precisem primeiro fazer logon em [!DNL Assets].
 
+![Caixa de diálogo Compartilhamento de link](assets/link-share-dialog.png)
+
 >[!NOTE]
 >
 >* Você precisa de permissão Editar ACL na pasta ou no ativo que deseja compartilhar como um link.
->* Antes de compartilhar um link com os usuários, verifique se o [email de saída está ativado](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Caso contrário, ocorrerá um erro.
+>* Antes de compartilhar um link com os usuários, [ative emails de saída](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Caso contrário, ocorrerá um erro.
 
 
 1. Na interface do usuário [!DNL Assets], selecione o ativo a ser compartilhado como um link.
