@@ -1,14 +1,13 @@
 ---
 title: Ferramenta Migração de fluxo de trabalho de ativos
-description: 'Ferramenta Migração de fluxo de trabalho de ativos '
-translation-type: tm+mt
-source-git-commit: 3a438de3c460d4dc5a8b8617f0ec0eefc56f1665
+description: Ferramenta Migração de fluxo de trabalho de ativos
+exl-id: 18490295-ead6-4691-8983-a6d4054e4264
+source-git-commit: a0fb2714bc74c620d90153746930757301e62fd7
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 74%
 
 ---
-
 
 # Ferramenta Migração de fluxo de trabalho de ativos{#asset-workflow-migration}
 
@@ -33,6 +32,8 @@ Os fluxos de trabalho têm um nível variável de suporte à migração. Consult
 * `NUI_MIGRATED`: movido para um [perfil de processamento do Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
 * `UNSUPPORTED`: no momento não há suporte no [!DNL Experience Manager Assets] as a Cloud Service.
 
-## Instalação da ferramenta Migração de fluxo de trabalho de ativos{#installing-tool}
+## Use a ferramenta Migração de fluxo de trabalho de ativos {#use-workflow-migrator}
 
-Consulte **[Recurso do Git: AEM Assets as a Cloud Service - Migração de fluxos de trabalho](https://github.com/adobe/aem-cloud-migration)** para saber mais sobre como instalar e desenvolver o código a partir da fonte.
+* **[!DNL Adobe I/O]CLI**: O Adobe recomenda usar a ferramenta Migração de fluxo de trabalho de ativos por meio do  `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] como um plug-in de refatoração de  [!DNL Cloud Service] código para a  [!DNL Adobe I/O] CLI). Para saber como instalar e usar o plug-in, consulte [Recurso Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
+
+* **Utilitário** independente: A Ferramenta Migração de fluxo de trabalho de ativos também pode ser executada como um utilitário independente. Para saber mais sobre como instalar e criar o código a partir da origem, consulte **[Recurso Git: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - Migração de fluxo de trabalho](https://github.com/adobe/aem-cloud-migration)**.
