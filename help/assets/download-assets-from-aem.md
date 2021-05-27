@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '896'
 ht-degree: 4%
 
 ---
@@ -24,8 +24,9 @@ Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de m�
 
 Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
+<!-- * [Link Share](#link-share-download) -->
+
 * [Interface do usuário do Experience Manager](#download-assets)
-* [Compartilhamento de link](#link-share-download)
 * [Compartilhamento de ativos Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -65,15 +66,17 @@ Para baixar ativos, siga estas etapas:
 
 1. Na caixa de diálogo, clique em **[!UICONTROL Download]**.
 
-## Baixar ativos compartilhados usando o compartilhamento de link {#link-share-download}
+<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
+## Download assets shared using link sharing {#link-share-download}
 
-Compartilhar ativos usando um link é uma maneira conveniente de disponibilizá-lo para as pessoas interessadas, sem que elas precisem primeiro fazer logon em [!DNL Assets]. Para gerar um URL para compartilhar ativos, use a funcionalidade [Compartilhar link](/help/assets/share-assets.md#sharelink).
+Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
 
-Quando os usuários baixam ativos de links compartilhados, [!DNL Assets] usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos. Os ativos a serem baixados são enfileirados em segundo plano em uma caixa de entrada em arquivos ZIP com tamanho de arquivo gerenciável. Para downloads muito grandes, o download é fragmentado em arquivos de 100 GB de tamanho.
+When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
 
-A caixa de entrada exibe o status de processamento de cada arquivo. Após concluir o processamento, é possível baixar os arquivos da caixa de entrada.
+The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
 
-![Baixar caixa de entrada](assets/download-inbox.png)
+![Download inbox](assets/download-inbox.png)
+-->
 
 ## Habilitar servlet de download de ativos {#enable-asset-download-servlet}
 
