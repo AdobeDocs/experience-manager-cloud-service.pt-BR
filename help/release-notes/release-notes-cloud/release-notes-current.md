@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -61,9 +61,9 @@ A seguinte versão (2021.6.0) será lançada em 24 de junho de 2021.
 * Fazer upload de arquivos muito grandes trava o [!DNL Experience Manager desktop app]. (CQ-4320942)
 * As opções da barra de ferramentas são diferentes quando a mesma Coleção é selecionada de uma pasta e quando é selecionada de um resultado de pesquisa. (CQ-4321406)
 
-#### Novidades no Dynamic Media {#what-is-new-dm}
+#### Novidades em [!DNL Dynamic Media] {#what-is-new-dm}
 
-* O Smart Imaging DPR (Device Pixel Ratio) e a otimização da largura de banda da rede permitem fornecer imagens de melhor qualidade com eficiência, em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter mais informações, consulte [Perguntas frequentes sobre imagem inteligente](/help/assets/dynamic-media/imaging-faq.md).
+* A taxa de pixels do dispositivo de imagem inteligente (DPR) e a otimização da largura de banda da rede permitem que você forneça imagens de melhor qualidade com eficiência, em dispositivos com telas de alta resolução e largura de banda de rede restrita. Consulte as [perguntas frequentes sobre a geração inteligente de imagens](/help/assets/dynamic-media/imaging-faq.md).
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ A seguinte versão (2021.6.0) será lançada em 24 de junho de 2021.
    * Ásia-Pacífico em 19 de julho de 2021.
 
 
-* Introdução do suporte para o formato de imagem da próxima geração AVIF na entrega do Dynamic Media (modificador de URL fmt).
+* Introdução do suporte para o formato de imagem da próxima geração AVIF na entrega [!DNL Dynamic Media] (modificador de URL fmt).
 
    >[!NOTE]
    >
