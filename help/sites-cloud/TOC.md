@@ -6,11 +6,10 @@ breadcrumb-title: Guia de criação
 user-guide-description: Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service.
 feature: 'Criação  '
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: e736b80e0bee80b5f3df6451b63b306c546d0912
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 74%
+source-wordcount: '310'
+ht-degree: 73%
 
 ---
 
@@ -24,9 +23,9 @@ ht-degree: 74%
       + [Guia de início rápido para a criação de páginas](authoring/getting-started/quick-start.md)
       + [Conceitos de criação](authoring/getting-started/concepts.md)
       + [Manuseio básico](authoring/getting-started/basic-handling.md)
-      + [Pesquisar](authoring/getting-started/search.md)
+      + [Pesquisar  ](authoring/getting-started/search.md)
       + [Configurar o ambiente da sua conta](authoring/getting-started/account-environment.md)
-      + [Sua Caixa de entrada](authoring/getting-started/inbox.md)
+      + [Sua caixa de entrada](authoring/getting-started/inbox.md)
       + [Atalhos de teclado](authoring/getting-started/keyboard-shortcuts.md)
    + Princípios básicos de criação {#fundamentals}
       + [Ambiente e ferramentas](authoring/fundamentals/environment-tools.md)
@@ -35,23 +34,24 @@ ht-degree: 74%
       + [Editar conteúdo da página](authoring/fundamentals/editing-content.md)
       + [O editor de rich text](authoring/fundamentals/rich-text-editor.md)
       + [Propriedades da página](authoring/fundamentals/page-properties.md)
+      + [Visualização de conteúdo](authoring/fundamentals/previewing-content.md)
       + [Publicar páginas](authoring/fundamentals/publishing-pages.md)
       + [Fragmentos de conteúdo](authoring/fundamentals/content-fragments.md)
       + [Fragmentos de experiência](authoring/fundamentals/experience-fragments.md)
-      + [Exportar para CSV](authoring/fundamentals/csv-export.md)
+      + [Exportar para CSV  ](authoring/fundamentals/csv-export.md)
       + [Componentes](authoring/fundamentals/components.md)
       + [Criação para dispositivos móveis](authoring/fundamentals/mobile.md)
       + [Criação de conteúdo acessível (Conformidade com o WCAG 2.1)](authoring/fundamentals/accessible-content.md)
-      + [Resolução de Problemas](authoring/fundamentals/troubleshooting.md)
+      + [Resolução de problemas](authoring/fundamentals/troubleshooting.md)
       + [Atalhos de teclado](authoring/fundamentals/keyboard-shortcuts.md)
    + Recursos de criação {#features}
       + [Modelos de páginas](authoring/features/templates.md)
       + [Sistema de estilos](authoring/features/style-system.md)
       + [Versões de página](authoring/features/page-versions.md)
-      + [Diferencial de páginas](authoring/features/page-diff.md)
+      + [Diferencial de páginas  ](authoring/features/page-diff.md)
       + [Console de componentes](authoring/features/components-console.md)
-      + [Layout responsivo](authoring/features/responsive-layout.md)
-      + [Uso de tags](authoring/features/tags.md)
+      + [Layout responsivo  ](authoring/features/responsive-layout.md)
+      + [Uso de tags  ](authoring/features/tags.md)
       + [Ativação de recursos progressivos do aplicativo web](authoring/features/enable-pwa.md)
    + Projetos {#projects}
       + [Trabalho com projetos](authoring/projects/overview.md)
@@ -72,7 +72,7 @@ ht-degree: 74%
    + Personalização {#personalization}
       + [Visão geral da personalização](authoring/personalization/overview.md)
       + [Visualização de páginas usando dados do ContextHub](authoring/personalization/contexthub.md)
-      + [Criar conteúdo direcionado usando o modo de direcionamento](authoring/personalization/targeted-content.md)
+      + [Criação de conteúdo direcionado usando o modo Direcionar](authoring/personalization/targeted-content.md)
       + [Trabalhar com conteúdo direcionado em vários sites](authoring/personalization/multisite-targeted-content.md)
       + [Como o gerenciamento multisite para conteúdo direcionado está estruturado](authoring/personalization/multisite-structure.md)
       + [Gerenciamento de atividades](authoring/personalization/activities.md)
