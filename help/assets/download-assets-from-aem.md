@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
+source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '1016'
 ht-degree: 4%
 
 ---
 
 # Baixar ativos de [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-Você pode baixar ativos, incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente de [!DNL Adobe Experience Manager Assets]. Os ativos baixados são agrupados em um arquivo ZIP. O arquivo ZIP compactado tem um tamanho máximo de arquivo de 1 GB para o trabalho de exportação. É permitido um máximo de 500 ativos totais por trabalho de exportação.
+Você pode baixar ativos, incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente de [!DNL Adobe Experience Manager Assets]. Os ativos baixados são agrupados em um arquivo ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -25,6 +25,7 @@ Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de m�
 Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
 * [Interface do usuário do Experience Manager](#download-assets)
+* [Compartilhamento de link](#link-share-download)
 * [Compartilhamento de ativos Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -63,6 +64,16 @@ Para baixar ativos, siga estas etapas:
    | **[!UICONTROL Representação(ões) dinâmica(s)]** | Selecione essa opção para gerar uma série de representações alternativas em tempo real. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente selecionando na lista [Predefinição de imagem](/help/assets/dynamic-media/image-presets.md). <br>Além disso, é possível selecionar o tamanho e a unidade de medida, o formato, o espaço de cores, a resolução e qualquer modificador de imagem opcional, como inverter a imagem. A opção só estará disponível se você tiver [!DNL Dynamic Media] ativado. |
 
 1. Na caixa de diálogo, clique em **[!UICONTROL Download]**.
+
+## Baixar ativos compartilhados usando o compartilhamento de link {#link-share-download}
+
+Compartilhar ativos usando um link é uma maneira conveniente de disponibilizá-lo para as pessoas interessadas, sem que elas precisem primeiro fazer logon em [!DNL Assets]. Para gerar um URL para compartilhar ativos, use a funcionalidade [Compartilhar link](/help/assets/share-assets.md#sharelink).
+
+Quando os usuários baixam ativos de links compartilhados, [!DNL Assets] usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos. Os ativos a serem baixados são enfileirados em segundo plano em uma caixa de entrada em arquivos ZIP com tamanho de arquivo gerenciável. Para downloads muito grandes, o download é fragmentado em arquivos de 100 GB de tamanho.
+
+A caixa de entrada exibe o status de processamento de cada arquivo. Após concluir o processamento, é possível baixar os arquivos da caixa de entrada.
+
+![Baixar caixa de entrada](assets/download-inbox.png)
 
 ## Habilitar servlet de download de ativos {#enable-asset-download-servlet}
 
