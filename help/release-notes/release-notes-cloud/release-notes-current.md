@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 37e431d70bc7e11097b9d59faed4b654b9087656
+source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '947'
 ht-degree: 3%
 
 ---
@@ -43,12 +43,6 @@ A seguinte versão (2021.6.0) será lançada em 24 de junho de 2021.
 * Em breve, você poderá verificar o conteúdo em um novo [Camada de visualização](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para simular a aparência da experiência final e a experiência como faria no nível de Publicação. Isso é ativado pelo assistente de Publicação gerenciada do AEM Sites , que agora permite escolher um destino de publicação entre Publicar ou Visualizar. As experiências na Visualização podem ser acessadas por um URL dedicado. Após a validação em Visualizar, o conteúdo pode ser publicado de Autor para Publicar como de costume. Habilitar o Serviço de visualização no AEM como ambientes Cloud Service será implementado gradualmente nas próximas semanas.
 
 ## [!DNL Adobe Experience Manager Assets] como  [!DNL Cloud Service] {#assets}
-
-### Novidades em [!DNL Assets] {#what-is-new-assets}
-
-* Você pode baixar os ativos compartilhados usando a funcionalidade Compartilhamento de links . Esse download agora usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos, mesmo para downloads muito grandes. Consulte [baixar ativos](/help/assets/download-assets-from-aem.md#link-share-download).
-
-   ![Baixar caixa de entrada](/help/assets/assets/download-inbox.png)
 
 ### Novos recursos disponíveis no canal de pré-lançamento {#what-is-new-assets-prerelease}
 
