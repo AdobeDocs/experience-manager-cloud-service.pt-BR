@@ -1,20 +1,19 @@
 ---
 title: Criação de tags em aplicativos AEM
 description: Trabalhar programaticamente com tags ou estender tags em um aplicativo de AEM personalizado
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: a106dce1-5d51-406a-a563-4dea83987343
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '750'
 ht-degree: 0%
 
 ---
-
 
 # Criação de tags em aplicativos AEM {#building-tagging-into-aem-applications}
 
 Para o objetivo de trabalhar programaticamente com tags ou estender tags em um aplicativo de AEM personalizado, este documento descreve o uso da variável
 
-* [API de marcação](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
+* [API de marcação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
 
 que interage com o
 
@@ -27,7 +26,7 @@ Para obter informações relacionadas à marcação:
 
 ## Visão geral da API de marcação {#overview-of-the-tagging-api}
 
-A implementação da [estrutura de marcação](tagging-framework.md) no AEM permite o gerenciamento de tags e conteúdo de tags usando a API JCR. `TagManager` garante que as tags inseridas como valores na propriedade da matriz da  `cq:tags` sequência de caracteres não sejam duplicadas, remove  `TagID`as tags apontadas para tags e atualizações não existentes  `TagID`para tags movidas ou mescladas. `TagManager` O usa um ouvinte de observação JCR que reverte quaisquer alterações incorretas. As classes principais estão no pacote [com.day.cq.tagging](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html):
+A implementação da [estrutura de marcação](tagging-framework.md) no AEM permite o gerenciamento de tags e conteúdo de tags usando a API JCR. `TagManager` garante que as tags inseridas como valores na propriedade da matriz da  `cq:tags` sequência de caracteres não sejam duplicadas, remove  `TagID`as tags apontadas para tags e atualizações não existentes  `TagID`para tags movidas ou mescladas. `TagManager` O usa um ouvinte de observação JCR que reverte quaisquer alterações incorretas. As classes principais estão no pacote [com.day.cq.tagging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html):
 
 * `JcrTagManagerFactory` - retorna uma implementação baseada em JCR de um  `TagManager`. É a implementação de referência da API de marcação.
 * `TagManager` - permite resolver e criar tags por caminhos e nomes.
@@ -143,13 +142,13 @@ Por exemplo, quando a tag **Animais** é adicionada à página **Produtos**, o v
 
 A API do lado do servidor localizou `title` métodos relacionados:
 
-* [`com.day.cq.tagging.Tag`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
+* [`com.day.cq.tagging.Tag`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
    * `getLocalizedTitlePaths()`
    * `getLocalizedTitles()`
    * `getTitle(Locale locale)`
    * `getTitlePath(Locale locale)`
-* [`com.day.cq.tagging.TagManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
+* [`com.day.cq.tagging.TagManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
    * `canCreateTagByTitle(String tagTitlePath, Locale locale)`
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`
