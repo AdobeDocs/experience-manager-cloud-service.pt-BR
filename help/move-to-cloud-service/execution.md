@@ -2,10 +2,10 @@
 title: Fase de execução
 description: Fase de execução
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 96%
+source-wordcount: '1028'
+ht-degree: 87%
 
 ---
 
@@ -17,12 +17,11 @@ O Cloud Manager permite que as organizações gerenciem automaticamente o AEM na
 
 Consulte os seguintes recursos abaixo para obter mais detalhes:
 
-* [Integração com o Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/home.html) para compreender recursos de autoajuda sobre integração do Experience Manager as a Cloud Service.
+* [Integração com o Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) para compreender recursos de autoajuda sobre integração do Experience Manager as a Cloud Service.
 
-* [Integração do Git com o Adobe Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.translate.html) para saber mais sobre o uso de um único repositório Git para implantar código.
+* [Integração do Git com o Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) para saber mais sobre o uso de um único repositório Git para implantar código.
 
-* [Configuração do Adobe Experience as a Cloud Service](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/security/ims-support.html#aem-configuration
-) para saber mais sobre como gerenciar produtos e o acesso dos usuários no Admin Console.
+* [Configuração do Adobe Experience as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#aem-configuration) para saber mais sobre como gerenciar produtos e o acesso dos usuários no Admin Console.
 
 
 ## Introdução {#introduction}
@@ -57,12 +56,11 @@ Certas alterações são necessárias para que projetos do AEM Maven sejam compa
 
 * Todo o restante no repositório, `/content` , `/conf` , `/var` , `/home` , `/etc` , `/oak:index` , `/system` , `/tmp` , etc. são áreas mutáveis, o que significa que podem ser alteradas em tempo de execução.
 
-Consulte [Estrutura de pacotes recomendada](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html#recommended-package-structure
-) para obter mais detalhes.
+Consulte [Estrutura de pacotes recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure) para obter mais detalhes.
 
-Existem algumas diretrizes de desenvolvimento adicionais que você precisa conhecer ao desenvolver no AEM as a Cloud Service. Para saber mais, consulte [Diretrizes de desenvolvimento do AEM as a Cloud Service](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/development-guidelines.translate.html).
+Existem algumas diretrizes de desenvolvimento adicionais que você precisa conhecer ao desenvolver no AEM as a Cloud Service. Para saber mais, consulte [Diretrizes de desenvolvimento do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html).
 
-Na fase de Planejamento, você deve ter uma lista de áreas que precisam ser refatoradas para serem compatíveis com o Cloud Service. Você também deve rever as [Diretrizes de desenvolvimento](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) para obter mais detalhes sobre como refatorar e otimizar o código para migrar para o Cloud Service.
+Na fase de Planejamento, você deve ter uma lista de áreas que precisam ser refatoradas para serem compatíveis com o Cloud Service. Você também deve rever as [Diretrizes de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html) para obter mais detalhes sobre como refatorar e otimizar o código para migrar para o Cloud Service.
 
 Para ajudar a acelerar algumas das tarefas de refatoração de código, você pode usar as seguintes ferramentas:
 
@@ -72,7 +70,7 @@ Para ajudar a acelerar algumas das tarefas de refatoração de código, você po
 
 É recomendável refatorar e testar o código localmente antes de enviá-lo para um ambiente do Cloud Service por meio do Git do Cloud Manager.
 
-Consulte a documentação do [SDK do AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/deploying/overview.translate.html#aem-as-a-cloud-service-sdk) para saber mais.
+Consulte a documentação do [SDK do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) para saber mais.
 
 Alguns recursos adicionais estão listados abaixo:
 
@@ -84,7 +82,7 @@ Alguns recursos adicionais estão listados abaixo:
 
    >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-* Consulte a documentação de [Configuração de desenvolvimento local](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) para configurar um ambiente de desenvolvimento local
+* Consulte a documentação de [Configuração de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) para configurar um ambiente de desenvolvimento local
 
 
 Para gerenciar o desenvolvimento contínuo do seu código no AEM ativo, juntamente com a tarefa de refatoração de código como parte da sua jornada de transição, é recomendável programar um período de congelamento do código até você concluir a reestruturação do seu projeto Maven para que ele seja compatível com o AEM as a Cloud Service.
@@ -98,21 +96,19 @@ Depois que a reestruturação do projeto estiver concluída, você poderá retom
 
 As execuções de pipeline do Cloud Manager para o Cloud Services oferecerão suporte à execução de testes que são executados no ambiente de preparo.
 
-Consulte [Testes de qualidade do código](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/understand-test-results.translate.html#code-quality-testing
-) para saber mais sobre como escrever scripts de teste e a cobertura recomendada de pelo menos 50%.
+Consulte [Testes de qualidade do código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) para saber mais sobre como escrever scripts de teste e a cobertura recomendada de pelo menos 50%.
 
-Além disso, consulte [Noções básicas sobre regras de qualidade de código personalizadas](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.translate.html
-) para saber mais sobre as regras de qualidade de código personalizadas executadas pelo Cloud Manager e criadas com base nas práticas recomendadas do AEM Engineering.
+Além disso, consulte [Noções básicas sobre regras de qualidade de código personalizadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html) para saber mais sobre as regras de qualidade de código personalizadas executadas pelo Cloud Manager e criadas com base nas práticas recomendadas do AEM Engineering.
 
 O uso do Cloud Manager é o único mecanismo para implantar código em ambientes do Cloud Service.
 
 Siga os recursos abaixo para saber como usar o Cloud Manager para gerenciar e implantar seu código.
 
-* [Gerenciamento de ambientes](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.translate.html)
+* [Gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
 
-* [Configurar seu pipeline de CI-CDConfiguração do seu pipeline CI-CD](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.translate.html)
+* [Configurar seu pipeline de CI-CDConfiguração do seu pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
 
-* [Implantação do código](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.translate.htmll)
+* [Implantação do código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
 ## Práticas recomendadas de preparação para ativação {#go-live}
 
