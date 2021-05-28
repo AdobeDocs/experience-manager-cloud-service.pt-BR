@@ -2,11 +2,10 @@
 title: Ferramenta de conversão do Dispatcher do AEM
 description: Ferramenta de conversão do Dispatcher do AEM
 exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 51%
+source-wordcount: '337'
+ht-degree: 48%
 
 ---
 
@@ -26,13 +25,13 @@ O Dispatcher é a ferramenta de balanceamento de carga e/ou cache do Adobe Exper
 >[!NOTE]
 >O uso mais comum do Dispatcher é armazenar em cache as respostas de uma **instância de publicação do AEM**, para aumentar a capacidade de resposta e a segurança de seu site publicado voltado para o exterior.
 
-Consulte [Visão geral do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.translate.html) para saber como o dispatcher executa o cache, retorna documentos e realiza o Balanceamento de carga.
+Consulte [Visão geral do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para saber como o dispatcher executa o cache, retorna documentos e realiza o Balanceamento de carga.
 
 ### Testes e configuração do Apache e Dispatcher {#dispatcher-configurations-cloud}
 
 Você deve aprender a estruturar as configurações do Apache e Dispatcher do AEM as a Cloud Service e também a validá-lo e executá-lo localmente antes de implantá-lo em ambientes de Nuvem.
 
-Consulte [Dispatcher na nuvem](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) para obter mais informações.
+Consulte [Dispatcher na nuvem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) para obter mais informações.
 
 ## AEM Dispatcher Converter Conversor do Dispatcher do AEM{#aem-dispatcher-converter}
 
