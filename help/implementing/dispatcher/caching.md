@@ -2,14 +2,13 @@
 title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 feature: Dispatcher
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
-
 
 # Introdução {#intro}
 
@@ -113,7 +112,7 @@ Em geral, não será necessário invalidar o cache do dispatcher. Em vez disso, 
 
 Como nas versões anteriores do AEM, a publicação ou o cancelamento da publicação de páginas limpará o conteúdo do cache do dispatcher. Se houver suspeita de um problema de cache, os clientes devem republicar as páginas em questão.
 
-Quando a instância de publicação recebe uma nova versão de uma página ou ativo do autor, ela usa o agente de limpeza para invalidar os caminhos apropriados em seu dispatcher. O caminho atualizado é removido do cache do dispatcher, juntamente com seus pais, até um nível (você pode configurar isso com o [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+Quando a instância de publicação recebe uma nova versão de uma página ou ativo do autor, ela usa o agente de limpeza para invalidar os caminhos apropriados em seu dispatcher. O caminho atualizado é removido do cache do dispatcher, juntamente com seus pais, até um nível (você pode configurar isso com o [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
 
 ### Invalidação do cache do dispatcher explícito {#explicit-invalidation}
 
@@ -124,8 +123,8 @@ Antes de AEM como um Cloud Service, havia duas maneiras de invalidar o cache do 
 1. Chame o agente de replicação, especificando o agente de liberação do dispatcher de publicação
 2. Chamar diretamente a API `invalidate.cache` (por exemplo, `POST /dispatcher/invalidate.cache`)
 
-A abordagem da API `invalidate.cache` do dispatcher não será mais suportada, pois aborda apenas um nó específico do dispatcher. AEM como um Cloud Service opera no nível de serviço, não no nível de nó individual e, portanto, as instruções de invalidação na página [Invalidar páginas em cache de AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) não são mais válidas para AEM como Cloud Service .
-Em vez disso, o agente de limpeza de replicação deve ser usado. Isso pode ser feito usando a API de replicação. A documentação da API de replicação está disponível [aqui](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) e para obter um exemplo de limpeza do cache, consulte a [página de exemplo da API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) especificamente o exemplo `CustomStep` emitindo uma ação de replicação do tipo ATIVATE para todos os agentes disponíveis. O endpoint do agente de limpeza não é configurável, mas pré-configurado para apontar para o dispatcher, correspondente ao serviço de publicação que executa o agente de limpeza. O agente de limpeza normalmente pode ser acionado por eventos ou fluxos de trabalho OSGi.
+A abordagem da API `invalidate.cache` do dispatcher não será mais suportada, pois aborda apenas um nó específico do dispatcher. AEM como um Cloud Service opera no nível de serviço, não no nível de nó individual e, portanto, as instruções de invalidação na página [Invalidar páginas em cache de AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) não são mais válidas para AEM como Cloud Service .
+Em vez disso, o agente de limpeza de replicação deve ser usado. Isso pode ser feito usando a API de replicação. A documentação da API de replicação está disponível [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) e para obter um exemplo de limpeza do cache, consulte a [página de exemplo da API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) especificamente o exemplo `CustomStep` emitindo uma ação de replicação do tipo ATIVATE para todos os agentes disponíveis. O endpoint do agente de limpeza não é configurável, mas pré-configurado para apontar para o dispatcher, correspondente ao serviço de publicação que executa o agente de limpeza. O agente de limpeza normalmente pode ser acionado por eventos ou fluxos de trabalho OSGi.
 
 O diagrama apresentado abaixo ilustra isso.
 
