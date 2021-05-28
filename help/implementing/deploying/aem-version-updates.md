@@ -1,15 +1,14 @@
 ---
 title: Atualizações de versão do AEM
 description: 'Atualizações de versão do AEM '
-feature: Deploying
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Implantação
+exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
-
 
 # Atualizações de versão do AEM {#aem-version-updates}
 
@@ -36,7 +35,7 @@ AEM atualizações de versão são de dois tipos:
 
 AEM atualizações passam por um pipeline de validação de produto intenso e totalmente automatizado, envolvendo várias etapas, garantindo que o serviço não seja interrompido em nenhum sistema em produção. Os controlos sanitários são utilizados para monitorizar a saúde da aplicação. Se essas verificações falharem durante uma AEM como atualização de Cloud Service, a versão não continuará e o Adobe investigará por que a atualização causou esse comportamento inesperado.
 
-[Os testes do produto e os ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) testes funcionais do cliente, que impedem que as atualizações do produto e os envios de código do cliente quebrem a produção, também são validados durante uma atualização da versão AEM.
+[Os testes do produto e os ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) testes funcionais do cliente, que impedem que as atualizações do produto e os envios de código do cliente quebrem a produção, também são validados durante uma atualização da versão AEM.
 
 >[!NOTE]
 >
@@ -47,4 +46,3 @@ AEM atualizações passam por um pipeline de validação de produto intenso e to
 Como mencionado acima, as atualizações na maioria dos casos terão tempo de inatividade zero, incluindo para o autor, que é um cluster de nós. As atualizações contínuas são possíveis devido ao recurso *armazenamento de nó composto* no Oak.
 
 Esse recurso permite que o AEM faça referência a vários repositórios simultaneamente. Em uma implantação em andamento, a nova versão do Green AEM contém seu próprio `/libs` (o repositório imutável baseado no TarMK), distinto da versão mais antiga do Blue AEM, embora ambos referenciem um repositório mutável baseado no DocumentMK compartilhado que contém áreas como `/content` , `/conf` , `/etc` e outras. Como o Azul e o Verde têm suas próprias versões de `/libs`, ambos podem estar ativos durante a atualização contínua, ambos assumindo o tráfego até que o azul seja totalmente substituído pelo verde.
-
