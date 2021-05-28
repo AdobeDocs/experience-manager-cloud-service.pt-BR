@@ -2,10 +2,10 @@
 title: Visão geral da ferramenta Transferência de conteúdo
 description: Visão geral da ferramenta Transferência de conteúdo
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 73%
+source-wordcount: '858'
+ht-degree: 72%
 
 ---
 
@@ -66,7 +66,7 @@ Na fase de assimilação, para aplicar o conteúdo delta sobre o conteúdo atual
 
 Siga a seção abaixo para entender as diretrizes e práticas recomendadas de uso da ferramenta Transferência de conteúdo:
 
-* É aconselhável executar a [Limpeza de revisão](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/deploying/deploying/revision-cleanup.html) e as [verificações de consistência do armazenamento de dados](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) no repositório de **origem** para identificar possíveis problemas e reduzir o tamanho do repositório.
+* É aconselhável executar a [Limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) e as [verificações de consistência do armazenamento de dados](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) no repositório de **origem** para identificar possíveis problemas e reduzir o tamanho do repositório.
 
 * Se a Rede de entrega de conteúdo (CDN) do Autor da AEM Cloud estiver configurada para ter uma lista de permissões de IPs, será necessário garantir que os IPs do ambiente de origem também sejam adicionados à lista de permissões para que o ambiente de origem e o ambiente da AEM Cloud possam se comunicar.
 
