@@ -2,11 +2,10 @@
 title: Registro de AEM como Cloud Service
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar o logon de dados AEM como um Cloud Service.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-translation-type: tm+mt
-source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2332'
-ht-degree: 3%
+source-wordcount: '2330'
+ht-degree: 2%
 
 ---
 
@@ -550,7 +549,7 @@ AEM logs estão localizados na pasta `crx-quickstart/logs`, onde os seguintes lo
 * AEM log de solicitação HTTP: `request.log`
 * Log de acesso HTTP AEM: `access.log`
 
-Os logs de camada do Apache, incluindo o dispatcher, estão no contêiner Docker que contém o Dispatcher. Consulte a [documentação do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) para obter informações sobre como iniciar o Dispatcher.
+Os logs de camada do Apache, incluindo o dispatcher, estão no contêiner Docker que contém o Dispatcher. Consulte a [documentação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) para obter informações sobre como iniciar o Dispatcher.
 
 Para recuperar os logs:
 
