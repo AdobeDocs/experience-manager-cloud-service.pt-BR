@@ -7,15 +7,14 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: Commerce Integration Framework
+feature: Estrutura de integração de comércio
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-translation-type: tm+mt
-source-git-commit: 7adef41690044067ef4fe6af31fcb2f6ea222d83
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 32%
+source-wordcount: '2549'
+ht-degree: 30%
 
 ---
 
@@ -72,7 +71,7 @@ O CSS e o JavaScript responsáveis pela renderização de temas/estilos da loja 
 
 É possível aplicar estilos específicos da marca AEM os Componentes principais da CIF, adicionando e substituindo o CSS gerenciado por essas bibliotecas de clientes. Entender como as bibliotecas de clientes são estruturadas e incluídas na página é essencial.
 
-O [ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) é um projeto dedicado [webpack](https://webpack.js.org/) para gerenciar todos os ativos de front-end de um projeto. Isso permite que desenvolvedores de front-end usem qualquer número de idiomas e tecnologias como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) e muito mais.
+O [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) é um projeto dedicado [webpack](https://webpack.js.org/) para gerenciar todos os ativos de front-end de um projeto. Isso permite que desenvolvedores de front-end usem qualquer número de idiomas e tecnologias como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) e muito mais.
 
 O módulo `ui.frontend` também é um módulo Maven e é integrado ao projeto maior por meio do uso de um módulo NPM no [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Durante uma criação, o `aem-clientlib-generator` copia os arquivos CSS e JavaScript compilados em uma Biblioteca do cliente no módulo `ui.apps`.
 
@@ -82,7 +81,7 @@ O módulo `ui.frontend` também é um módulo Maven e é integrado ao projeto ma
 
 ## Atualizar o estilo do Teaser {#ui-frontend-module}
 
-Em seguida, faça uma pequena alteração no estilo do Teaser para ver como o módulo `ui.frontend` e as bibliotecas do cliente funcionam. Use [o IDE de sua escolha](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Em seguida, faça uma pequena alteração no estilo do Teaser para ver como o módulo `ui.frontend` e as bibliotecas do cliente funcionam. Use [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
 1. Acesse e expanda o módulo **ui.frontend** e expanda a hierarquia de pastas para: `ui.frontend/src/main/styles/commerce`:
 
@@ -179,7 +178,7 @@ Em seguida, faça uma pequena alteração no estilo do Teaser para ver como o m�
 
    Essas bibliotecas de clientes não são gerenciadas pelo módulo `ui.frontend`. Em vez disso, essas bibliotecas de clientes incluem dependências CSS e JavaScript fornecidas pelo Adobe. A definição dessas bibliotecas de clientes está no arquivo `.content.xml` abaixo de cada pasta.
 
-   **clientlib-base** — É uma biblioteca do cliente vazia que simplesmente incorpora as dependências necessárias dos [Componentes principais do AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) A categoria é `venia.base`.
+   **clientlib-base** — É uma biblioteca do cliente vazia que simplesmente incorpora as dependências necessárias dos [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) A categoria é `venia.base`.
 
    **clientlib-CIF**  — também é uma biblioteca do cliente vazia que simplesmente incorpora as dependências necessárias dos  [AEM Componentes](https://github.com/adobe/aem-core-cif-components) principais da CIF. A categoria é `venia.cif`.
 
@@ -446,7 +445,7 @@ Retorne ao IDE e ao projeto gerado.
    ```
 
    >[!NOTE]
-   >Há outras [Ferramentas e configurações do IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) que podem sincronizar arquivos de projeto diretamente em uma instância do AEM local sem precisar executar uma compilação completa de Maven.
+   >Há outras [Ferramentas e configurações do IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) que podem sincronizar arquivos de projeto diretamente em uma instância do AEM local sem precisar executar uma compilação completa de Maven.
 
 ## Exibir Teaser do produto atualizado {#view-updated-product-teaser}
 
@@ -474,7 +473,7 @@ Você acabou de criar o estilo do seu primeiro Componente principal da CIF do AE
 
 ## Desafio extra {#bonus-challenge}
 
-Utilize o [Sistema de estilo do AEM](/help/sites-cloud/authoring/features/style-system.md) para criar dois estilos que podem ser ativados/desativados por um autor de conteúdo. Em [Desenvolvimento com o sistema de estilo](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) você encontra informações detalhadas com todas as etapas para fazê-lo.
+Utilize o [Sistema de estilo do AEM](/help/sites-cloud/authoring/features/style-system.md) para criar dois estilos que podem ser ativados/desativados por um autor de conteúdo. Em [Desenvolvimento com o sistema de estilo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) você encontra informações detalhadas com todas as etapas para fazê-lo.
 
 ![Desafio extra — Sistema de estilo](../assets/style-cif-component/bonus-challenge.png)
 
@@ -482,7 +481,7 @@ Utilize o [Sistema de estilo do AEM](/help/sites-cloud/authoring/features/style-
 
 * [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype)
 * [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
-* [Configurar um Ambiente de desenvolvimento do AEM local](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [Configurar um Ambiente de desenvolvimento do AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [Bibliotecas do lado do cliente](/help/implementing/developing/introduction/clientlibs.md)
-* [Introdução ao AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-* [Desenvolvimento com o sistema de estilo](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Desenvolvimento com o sistema de estilo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
