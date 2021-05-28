@@ -1,11 +1,10 @@
 ---
 title: Fase de pós-migração
 description: Fase de pós-migração
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 100%
+source-wordcount: '222'
+ht-degree: 93%
 
 ---
 
@@ -25,8 +24,7 @@ As seguintes ferramentas estão disponíveis para solucionar problemas com ambie
 
 A depuração de ambientes de desenvolvedor do AEM as a Cloud Service está disponível no Console do desenvolvedor para ambientes de desenvolvimento, preparo e produção.
 
-Consulte [Implementação do AEM as a Cloud Service](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/development-guidelines.translate.html#aem-as-a-cloud-service-development-tools
-) para saber mais sobre ferramentas de desenvolvimento.
+Consulte [Implementação do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) para saber mais sobre ferramentas de desenvolvimento.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -41,7 +39,7 @@ Consulte [Desenvolvimento com o CRXDE Lite](/help/implementing/developing/tools/
 
 Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
 
-Consulte [Acessar e gerenciar logs](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.translate.html) para saber como acessar e gerenciar logs por meio da interface do usuário ou da API via Cloud Manager.
+Consulte [Acessar e gerenciar logs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) para saber como acessar e gerenciar logs por meio da interface do usuário ou da API via Cloud Manager.
 
 ### Suporte adicional {#additional-support}
 
