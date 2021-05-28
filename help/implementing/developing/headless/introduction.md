@@ -2,10 +2,10 @@
 title: Desenvolvimento autônomo do AEM Sites as a Cloud Service
 description: Saiba como o AEM como um Cloud Service poderoso de recursos sem cabeçalho, como Modelos de conteúdo, Fragmentos de conteúdo e a API GraphQL trabalham juntos para permitir que você gerencie suas experiências centralmente e as distribua pelos canais.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 4%
+source-wordcount: '487'
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ O AEM as a Cloud Service é uma ferramenta flexível para o modelo de implementa
 1. API de conteúdo para entrega
    * A API GraphQL da AEM é compatível com a entrega de Fragmento de conteúdo.
    * A API REST do AEM Assets suporta operações CRUD de Fragmento de conteúdo.
-   * A entrega de conteúdo direto também é possível com a exportação JSON do [Componente principal do fragmento de conteúdo.](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html)
+   * A entrega de conteúdo direto também é possível com a exportação JSON do [Componente principal do fragmento de conteúdo.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 ## Seus primeiros passos com AEM headless {#first-steps}
 
