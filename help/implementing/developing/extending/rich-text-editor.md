@@ -2,14 +2,13 @@
 title: Configure o Editor de Rich Text para criar conteúdo em [!DNL Adobe Experience Manager] como um Cloud Service.
 description: Configure o Editor de Rich Text para criar conteúdo em [!DNL Adobe Experience Manager] como um Cloud Service.
 contentOwner: AG
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '1969'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
-
 
 # Configurar o Editor de Rich Text {#configure-the-rich-text-editor}
 
@@ -155,7 +154,7 @@ Para obter configurações detalhadas dos plug-ins do RTE, consulte [como ativar
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-O [Componente de texto dos Componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem muitos plug-ins do RTE usando a interface do usuário como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário do RTE conforme descrito neste documento. Para obter mais informações, consulte [criar modelos de página](/help/sites-cloud/authoring/features/templates.md) e a [documentação do desenvolvedor dos Componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
+O [Componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem muitos plug-ins do RTE usando a interface do usuário como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário do RTE conforme descrito neste documento. Para obter mais informações, consulte [criar modelos de página](/help/sites-cloud/authoring/features/templates.md) e a [documentação do desenvolvedor dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >Para fins de referência, os componentes de Texto padrão (fornecidos como parte de uma instalação padrão) podem ser encontrados em:
 >
@@ -231,7 +230,7 @@ As opções disponíveis no RTE fluem downstream das configurações da interfac
 * Se a configuração da interface do usuário do RTE tiver sido removida ou não ativar um item, a política de conteúdo não poderá configurá-la.
 * Um autor tem acesso somente à funcionalidade disponibilizada pelas configurações da interface do usuário e pelas políticas de conteúdo.
 
-Como exemplo, você pode ver a [documentação do Componente principal de texto](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+Como exemplo, você pode ver a [documentação do Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar mapeamento entre ícones e comandos da barra de ferramentas {#iconstoolbar}
 
@@ -285,6 +284,6 @@ Abaixo está um trecho de amostra para mapear o comando `Bold` para o ícone Cor
 >[!MORELIKETHIS]
 >
 >* [Configurar plug-ins do RTE](configure-rich-text-editor-plug-ins.md)
->* [Usar o editor de rich text para criação](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
->* [Configurar o RTE para sites acessíveis](rte-accessible-content.md)
+* [Usar o editor de rich text para criação](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+* [Configurar o RTE para sites acessíveis](rte-accessible-content.md)
 
