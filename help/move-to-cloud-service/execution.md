@@ -1,14 +1,13 @@
 ---
 title: Fase de execução
 description: Fase de execução
-translation-type: tm+mt
-source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
+exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 100%
+source-wordcount: '1054'
+ht-degree: 96%
 
 ---
-
 
 # Execução {#execution-phase}
 
@@ -116,6 +115,11 @@ Siga os recursos abaixo para saber como usar o Cloud Manager para gerenciar e im
 * [Implantação do código](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.translate.htmll)
 
 ## Práticas recomendadas de preparação para ativação {#go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_prep"
+>title="Preparação ao vivo"
+>abstract="Para garantir um lançamento tranquilo e bem-sucedido do AEM as a Cloud Service, você deve planejar períodos de congelamento de código e conteúdo, iterações de teste, atualizações de conteúdo, testes de desempenho, testes de segurança e muito mais."
 
 Para garantir um início tranquilo e bem-sucedido das operações do AEM as a Cloud Service, considere executar as seguintes etapas:
 
