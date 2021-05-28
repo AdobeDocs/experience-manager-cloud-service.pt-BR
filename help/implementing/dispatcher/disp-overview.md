@@ -3,10 +3,9 @@ title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4211'
+source-wordcount: '4207'
 ht-degree: 6%
 
 ---
@@ -20,7 +19,7 @@ ht-degree: 6%
 
 ## Configuração e teste do Apache e Dispatcher {#apache-and-dispatcher-configuration-and-testing}
 
-Esta seção descreve como estruturar o AEM como um Cloud Service Apache e configurações do Dispatcher, bem como como como validá-lo e executá-lo localmente antes de implantá-lo em ambientes do Cloud. Também descreve a depuração em ambientes do Cloud. Para obter informações adicionais sobre o Dispatcher, consulte a [AEM documentação do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.html).
+Esta seção descreve como estruturar o AEM como um Cloud Service Apache e configurações do Dispatcher, bem como como como validá-lo e executá-lo localmente antes de implantá-lo em ambientes do Cloud. Também descreve a depuração em ambientes do Cloud. Para obter informações adicionais sobre o Dispatcher, consulte a [AEM documentação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR).
 
 >[!NOTE]
 >Os usuários do Windows precisam usar o Windows 10 Professional ou outras distribuições compatíveis com o Docker. Isso é um pré-requisito para executar e depurar o Dispatcher em um computador local. As seções abaixo incluem comandos usando as versões Mac ou Linux do SDK, mas o SDK do Windows pode ser usado de maneira semelhante.
@@ -528,7 +527,7 @@ A estrutura de configuração do Dispatcher tem diferenças entre o Managed Serv
 ## Como converter um AMS em uma configuração de Dispatcher do AEM as a Cloud Service
 
 A seção a seguir fornece instruções passo a passo sobre como converter uma configuração do AMS. Ele parte do princípio
-que você tem um arquivo com uma estrutura semelhante à descrita em [Configuração do Dispatcher do Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.translate.html)
+que você tem um arquivo com uma estrutura semelhante à descrita em [Configuração do Dispatcher do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
 ### Extrair o arquivo morto e remover um eventual prefixo
 
