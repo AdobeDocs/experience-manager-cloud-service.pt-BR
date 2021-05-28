@@ -3,8 +3,7 @@ title: AEM API GraphQL para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) como Cloud Service com a API GraphQL AEM para entrega de conteúdo sem periféricos.
 feature: Fragmentos de conteúdo, API GraphQL
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 1%
@@ -159,7 +158,7 @@ Para ativar um Endpoint GraphQL, primeiro é necessário ter uma configuração 
 
 Para ativar o endpoint correspondente:
 
-1. Navegue até **Ferramentas**, **Sites**, em seguida selecione **GraphQL**.
+1. Navegue até **Ferramentas**, **Ativos**, em seguida selecione **GraphQL**.
 1. Selecione **Criar**.
 1. A caixa de diálogo **Criar novo Ponto de Extremidade GraphQL** será aberta. Aqui você pode especificar:
    * **Nome**: nome do ponto final; você pode inserir qualquer texto.
@@ -227,7 +226,7 @@ Os casos de uso podem depender do tipo de AEM como um ambiente de Cloud Service:
       * No momento, a GraphQL no AEM as a Cloud Service é uma API somente leitura.
       * A REST API pode ser usada para operações de CR(u)D.
 
-## Permissões  {#permission}
+## Permissões {#permission}
 
 As permissões são as necessárias para acessar o Assets.
 
