@@ -1,14 +1,13 @@
 ---
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
-translation-type: tm+mt
-source-git-commit: e70135d7f59fc46c24f73f109d027f3536ffbbd7
+exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
-
 
 # Diretrizes de desenvolvimento do AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
@@ -88,7 +87,7 @@ O conteúdo é replicado de Autor para Publicação por meio de um mecanismo de 
 
 Para desenvolvimento local, as entradas de logs são gravadas em arquivos locais na pasta `/crx-quickstart/logs` .
 
-Em ambientes do Cloud, os desenvolvedores podem baixar logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+Em ambientes do Cloud, os desenvolvedores podem baixar logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **Definir o nível de log**
 
@@ -160,7 +159,7 @@ Também útil para depuração, o console Desenvolvedor tem um link para a ferra
 
 ![Console de desenvolvimento 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Para programas de Produção, o acesso ao Console do Desenvolvedor é definido pela &quot;Função do Desenvolvedor - Cloud Manager&quot; no Admin Console, enquanto para programas de sandbox, o Console do Desenvolvedor está disponível para qualquer usuário com um perfil de produto que dá acesso ao AEM como Cloud Service. Para todos os programas, &quot;Cloud Manager - Função do desenvolvedor&quot; é necessário para despejos de status e os usuários também devem ser definidos no Perfil de produto Usuários AEM ou Administradores AEM nos serviços de criação e publicação, para visualizar os dados de despejo de status de ambos os serviços. Para obter mais informações sobre como configurar permissões de usuário, consulte [Documentação do Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+Para programas de Produção, o acesso ao Console do Desenvolvedor é definido pela &quot;Função do Desenvolvedor - Cloud Manager&quot; no Admin Console, enquanto para programas de sandbox, o Console do Desenvolvedor está disponível para qualquer usuário com um perfil de produto que dá acesso ao AEM como Cloud Service. Para todos os programas, &quot;Cloud Manager - Função do desenvolvedor&quot; é necessário para despejos de status e os usuários também devem ser definidos no Perfil de produto Usuários AEM ou Administradores AEM nos serviços de criação e publicação, para visualizar os dados de despejo de status de ambos os serviços. Para obter mais informações sobre como configurar permissões de usuário, consulte [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Serviço de preparo e produção de AEM {#aem-staging-and-production-service}
 
@@ -227,7 +226,7 @@ Por padrão, o email de saída é desativado. Para ativá-lo, envie um tíquete 
 
 ### Envio de emails {#sending-emails}
 
-O [Day CQ Mail Service OSGI service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) deve ser usado e os emails devem ser enviados ao servidor de email indicado na solicitação de suporte, em vez de diretamente aos recipients.
+O [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) deve ser usado e os emails devem ser enviados ao servidor de email indicado na solicitação de suporte, em vez de diretamente aos recipients.
 
 AEM CS requer que o correio seja enviado através da porta 465. Se um servidor de email não suportar a porta 465, a porta 587 poderá ser usada, desde que a opção TLS esteja habilitada.
 
@@ -237,9 +236,9 @@ AEM CS requer que o correio seja enviado através da porta 465. Se um servidor d
 
 ### Configuração {#email-configuration}
 
-Os emails no AEM devem ser enviados usando o [Day CQ Mail Service OSGi service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+Os emails no AEM devem ser enviados usando o [Day CQ Mail Service OSGi service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Consulte a [documentação do AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) para obter detalhes sobre a configuração das configurações de email. Para AEM como Cloud Service, os seguintes ajustes devem ser feitos no serviço `com.day.cq.mailer.DefaultMailService OSGI`:
+Consulte a [documentação do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) para obter detalhes sobre a configuração das configurações de email. Para AEM como Cloud Service, os seguintes ajustes devem ser feitos no serviço `com.day.cq.mailer.DefaultMailService OSGI`:
 
 Se a porta 465 tiver sido solicitada:
 
