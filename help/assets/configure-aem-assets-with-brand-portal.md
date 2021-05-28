@@ -2,24 +2,23 @@
 title: Configurar o AEM Assets as a [!DNL Cloud Service] com o Brand Portal
 description: Configurar o AEM Assets com o Brand Portal.
 contentOwner: Vishabh Gupta
-feature: Brand Portal,Asset Distribution,Configuration
+feature: Brand Portal,Distribuição de ativos,Configuração
 role: Administrator
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 13%
+source-wordcount: '2410'
+ht-degree: 12%
 
 ---
 
-# Configurar o AEM Assets como um [!DNL Cloud Service] com o Brand Portal {#configure-aem-assets-with-brand-portal}
+# Configurar o AEM Assets como um [!DNL Cloud Service] com Brand Portal {#configure-aem-assets-with-brand-portal}
 
-A configuração do Adobe Experience Manager Assets Brand Portal permite publicar ativos de marca aprovados do Adobe Experience Manager Assets como uma instância [!DNL Cloud Service] no Brand Portal e distribuí-los para os usuários do Brand Portal.
+A configuração do Adobe Experience Manager Assets Brand Portal permite publicar ativos de marca aprovados do Adobe Experience Manager Assets como uma instância [!DNL Cloud Service] no Brand Portal e distribuí-los aos usuários do Brand Portal.
 
 ## Ativar o Brand Portal usando o Cloud Manager {#activate-brand-portal}
 
-O usuário do Cloud Manager ativa o Brand Portal para uma instância do AEM Assets como [!DNL Cloud Service]. O fluxo de trabalho de ativação cria as configurações necessárias (token de autorização, configuração IMS e serviço em nuvem do Brand Portal) no backend e reflete o status do locatário do Brand Portal no Cloud Manager. Ativar o Brand Portal permite que os usuários do AEM Assets publiquem ativos no Brand Portal e os distribuam para os usuários do Brand Portal.
+O usuário do Cloud Manager ativa o Brand Portal para uma instância do AEM Assets como [!DNL Cloud Service]. O fluxo de trabalho de ativação cria as configurações necessárias (token de autorização, configuração IMS e serviço de nuvem do Brand Portal) no back-end e reflete o status do locatário do Brand Portal no Cloud Manager. Ativar o Brand Portal permite que os usuários do AEM Assets publiquem ativos no Brand Portal e os distribuam para os usuários do Brand Portal.
 
 **Pré-requisitos**
 
@@ -30,11 +29,11 @@ Você precisa do seguinte para ativar o Brand Portal em seu AEM Assets como uma 
 
 >[!NOTE]
 >
->Uma instância do AEM Assets as a [!DNL Cloud Service] tem direito a se conectar a apenas um locatário do Brand Portal. Você pode ter vários ambientes (desenvolvimento, produção e palco) para seu AEM Assets como uma instância [!DNL Cloud Service], onde o Brand Portal é ativado em um ambiente.
+>Uma instância do AEM Assets as a [!DNL Cloud Service] tem direito a se conectar a apenas um locatário do Brand Portal. Você pode ter vários ambientes (desenvolvimento, produção e estágio) para seu AEM Assets como uma instância [!DNL Cloud Service], onde o Brand Portal é ativado em um ambiente.
 
 **Etapas para ativar o Brand Portal**
 
-Você pode ativar o Brand Portal ao criar os ambientes para seu AEM Assets como uma instância [!DNL Cloud Service] ou separadamente. Vamos supor que os ambientes já foram criados e agora você precisa ativar o Brand Portal.
+Você pode ativar o Brand Portal ao criar os ambientes para sua AEM Assets como uma instância [!DNL Cloud Service] ou separadamente. Vamos supor que os ambientes já foram criados e agora você precisa ativar o Brand Portal.
 
 1. Faça logon no Adobe Cloud Manager e navegue até **[!UICONTROL Ambientes]**.
 
@@ -44,9 +43,9 @@ Você pode ativar o Brand Portal ao criar os ambientes para seu AEM Assets como 
 
    O Brand Portal tem direito a um dos ambientes disponíveis e é refletido no **[!UICONTROL Environment Information]**.
 
-   Depois de encontrar o ambiente associado ao Brand Portal, clique no botão **[!UICONTROL Ativate Brand Portal]** para iniciar o fluxo de trabalho de ativação.
+   Depois de encontrar o ambiente associado ao Brand Portal, clique no botão **[!UICONTROL Ativate Brand Portal]** para iniciar o workflow de ativação.
 
-   ![Ativar Brand Portal](assets/create-environment4.png)
+   ![Ativar o Brand Portal](assets/create-environment4.png)
 
 1. São necessários alguns minutos para ativar o locatário do Brand Portal, pois o fluxo de trabalho de ativação cria as configurações necessárias no back-end. Quando o locatário do Brand Portal é ativado, o status é alterado para Ativado.
 
@@ -57,9 +56,9 @@ Você pode ativar o Brand Portal ao criar os ambientes para seu AEM Assets como 
 >
 >O Brand Portal deve ser ativado na mesma organização IMS do AEM Assets como uma instância [!DNL Cloud Service].
 >
->Se você tiver uma configuração de nuvem existente do Brand Portal ([manualmente configurada usando o Console do Desenvolvedor do Adobe](#manual-configuration)) para uma organização IMS (org1-existing) e sua instância do AEM Assets como [!DNL Cloud Service] estiver configurada para outra organização IMS (org2-new), ativar o Brand Portal no Cloud Manager redefinirá a organização IMS do Brand Portal para `org2-new`. Embora a configuração de nuvem configurada manualmente em `org1-existing` esteja visível na instância do autor do AEM Assets, mas não estará mais em uso após ativar o Brand Portal no Cloud Manager.
+>Se você tiver uma configuração de nuvem Brand Portal existente ([manualmente configurada usando o Adobe Developer Console](#manual-configuration)) para uma organização IMS (org1-existing) e seu AEM Assets como uma instância [!DNL Cloud Service] estiver configurado para outra organização IMS (org2-new), ativar o Brand Portal no Cloud Manager redefinirá a organização do Brand Portal IMS para `org2-new`. Embora a configuração de nuvem configurada manualmente em `org1-existing` esteja visível na instância do autor do AEM Assets, mas não estará mais em uso após ativar o Brand Portal no Cloud Manager.
 >
->Se a configuração de nuvem existente do Brand Portal e a instância AEM Assets as [!DNL Cloud Service] estiverem usando a mesma organização IMS (org1), será necessário ativar o Brand Portal no Cloud Manager.
+>Se a configuração de nuvem existente do Brand Portal e a instância do AEM Assets as [!DNL Cloud Service] estiverem usando a mesma organização IMS (org1), será necessário ativar o Brand Portal somente no Cloud Manager.
 
 **Consulte também**:
 * [Adicionar usuários e funções no AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
@@ -69,26 +68,26 @@ Você pode ativar o Brand Portal ao criar os ambientes para seu AEM Assets como 
 
 **Faça logon no locatário** do Brand Portal:
 
-Após a ativação do locatário do Brand Portal no Cloud Manager, você pode fazer logon no Brand Portal a partir do Admin Console ou diretamente usando o URL do locatário.
+Após a ativação do locatário do Brand Portal no Cloud Manager, é possível fazer logon no Brand Portal pelo Admin Console ou diretamente usando o URL do locatário.
 
-O URL padrão do locatário do Brand Portal é: `https://<tenant-id>.brand-portal.adobe.com/`.
+O URL padrão do seu locatário do Brand Portal é: `https://<tenant-id>.brand-portal.adobe.com/`.
 
 Onde, a ID do locatário é a organização IMS.
 
 Execute as seguintes etapas se não tiver certeza do URL do Brand Portal:
 
 1. Faça logon em [Admin Console](http://adminconsole.adobe.com/) e navegue até **[!UICONTROL Produtos]**.
-1. No painel à esquerda, selecione **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
-1. Clique em **[!UICONTROL Ir para o Brand Portal]** para abrir diretamente o Brand Portal no navegador.
+1. No painel esquerdo, selecione **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
+1. Clique em **[!UICONTROL Vá para Brand Portal]** para abrir diretamente o Brand Portal no navegador.
 
-   Ou copie o URL do locatário do Brand Portal a partir do link **[!UICONTROL Ir para o Brand Portal]** e cole-o em seu navegador para abrir a interface do Brand Portal.
+   Ou copie o URL do locatário do Brand Portal do link **[!UICONTROL Ir para Brand Portal]** e cole-o em seu navegador para abrir a interface do Brand Portal.
 
-   ![Acessar Brand Portal](assets/access-bp-on-cloud.png)
+   ![Acessar o Brand Portal](assets/access-bp-on-cloud.png)
 
 
 **Testar conexão**
 
-Execute as seguintes etapas para validar a conexão entre seu AEM Assets como uma instância [!DNL Cloud Service] e o locatário do Brand Portal:
+Execute as etapas a seguir para validar a conexão entre sua AEM Assets como uma instância [!DNL Cloud Service] e o locatário do Brand Portal:
 
 1. Faça logon no AEM Assets.
 
@@ -96,7 +95,7 @@ Execute as seguintes etapas para validar a conexão entre seu AEM Assets como um
 
    ![](assets/test-bpconfig1.png)
 
-   Um agente de distribuição do Brand Portal (**[!UICONTROL bpdistributionagent0]**) é criado em **[!UICONTROL Publicar no Brand Portal]**.
+   Um agente de distribuição Brand Portal (**[!UICONTROL bpdistributionagent0]**) é criado em **[!UICONTROL Publicar no Brand Portal]**.
 
    ![](assets/test-bpconfig2.png)
 
@@ -125,7 +124,7 @@ Execute as seguintes etapas para validar a conexão entre seu AEM Assets como um
    >
    >Evite desativar o agente de distribuição, pois isso pode causar falha na distribuição dos ativos (em execução na fila).
 
-Para verificar a conexão entre o AEM Assets como uma instância [!DNL Cloud Service] e o locatário do Brand Portal, publique um ativo do AEM Assets no Brand Portal. Se a conexão for bem-sucedida, o ativo publicado estará visível na interface do Brand Portal.
+Para verificar a conexão entre sua instância do AEM Assets as a [!DNL Cloud Service] e o locatário do Brand Portal, publique um ativo do AEM Assets para o Brand Portal. Se a conexão for bem-sucedida, o ativo publicado estará visível na interface do Brand Portal.
 
 
 Agora você pode:
@@ -133,17 +132,17 @@ Agora você pode:
 * [Publicar ativos do AEM Assets no Brand Portal](publish-to-brand-portal.md)
 * [Publicar pastas do AEM Assets no Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publicar coleções do AEM Assets no Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Publicar ativos do Brand Portal no AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)  - origem dos ativos no Brand Portal
-* [Publicar predefinições, esquemas e aspectos no Brand Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Publicar marcações no Brand Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publicar ativos do Brand Portal no AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)  - Origem de ativos no Brand Portal
+* [Publicar predefinições, esquemas e aspectos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publicar marcações no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-Consulte a [documentação do Brand Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/home.html) para obter mais informações.
+Consulte a [documentação do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para obter mais informações.
 
 **Registros de distribuição**
 
 Você pode monitorar os registros do agente de distribuição para o fluxo de trabalho de publicação de ativos.
 
-Agora, vamos publicar um ativo do AEM Assets no Brand Portal e ver os logs.
+Agora, vamos publicar um ativo do AEM Assets para o Brand Portal e ver os logs.
 
 1. Siga as etapas (de 1 a 4) conforme mostrado na seção **Testar conexão** e navegue até a página do agente de distribuição.
 1. Clique em **[!UICONTROL Logs]** para visualizar o processamento e os logs de erro.
@@ -165,15 +164,15 @@ Ao publicar o ativo, os seguintes registros de solicitação e resposta são ger
 **Resposta do agente de distribuição**:
 
 * queue-bpdistributionagent0 (DSTRQ2): o ativo é publicado no Brand Portal.
-* queue-bpdistributionagent0 (DSTRQ3): O sistema replica a pasta do AEM Assets (contendo o ativo) no Brand Portal.
+* queue-bpdistributionagent0 (DSTRQ3): O sistema replica a pasta AEM Assets (contendo o ativo) no Brand Portal.
 
-No exemplo acima, uma solicitação e uma resposta adicionais são acionadas. O sistema não pôde localizar a pasta principal (Adicionar caminho) no Brand Portal porque o ativo foi publicado pela primeira vez, portanto, acionou uma solicitação adicional para criar uma pasta principal com o mesmo nome no Brand Portal onde o ativo é publicado.
+No exemplo acima, uma solicitação e uma resposta adicionais são acionadas. O sistema não pôde localizar a pasta principal (Adicionar caminho) no Brand Portal porque o ativo foi publicado pela primeira vez, portanto, acionou uma solicitação adicional para criar uma pasta principal com o mesmo nome no Brand Portal, onde o ativo é publicado.
 
 >[!NOTE]
 >
 >A solicitação adicional é gerada caso a pasta principal não exista no Brand Portal ou tenha sido modificada no AEM Assets.
 
-Junto com o fluxo de trabalho de automação para ativar o Brand Portal no AEM Assets como [!DNL Cloud Service], existe outro método para configurar manualmente o AEM Assets como [!DNL Cloud Service] com o Brand Portal usando o Console do Desenvolvedor do Adobe, o que não é mais recomendado.
+Junto com o fluxo de trabalho de automação para ativar o Brand Portal no AEM Assets como um [!DNL Cloud Service], existe outro método para configurar manualmente o AEM Assets como um [!DNL Cloud Service] com o Brand Portal usando o Console do Desenvolvedor do Adobe, o que não é mais recomendado.
 
 >[!NOTE]
 >
@@ -186,16 +185,16 @@ A seção a seguir descreve como configurar manualmente o AEM Assets as a [!DNL 
 Anteriormente, o AEM Assets as a [!DNL Cloud Service] era configurado manualmente com o Brand Portal via Console do Desenvolvedor do Adobe, que obtém um token de conta do Adobe Identity Management Services (IMS) para autorização do locatário do Brand Portal. Ela requer configurações no AEM Assets e no Console do desenvolvedor do Adobe.
 
 1. No AEM Assets, crie uma conta IMS e gere uma chave pública (certificado).
-1. No Console do desenvolvedor do Adobe, crie um projeto para o locatário do Brand Portal (organização).
+1. No Console do desenvolvedor do Adobe, crie um projeto para seu locatário do Brand Portal (organização).
 1. No projeto, configure uma API usando a chave pública para criar uma conexão de conta de serviço.
 1. Obtenha as credenciais da conta de serviço e as informações de carga JSON Web Token (JWT).
 1. No AEM Assets, configure a conta IMS usando as credenciais da conta de serviço e a carga JWT.
-1. No AEM Assets, configure o serviço em nuvem do Brand Portal usando a conta IMS e o terminal do Brand Portal (URL da organização).
-1. Teste sua configuração publicando um ativo do AEM Assets no Brand Portal.
+1. No AEM Assets, configure o serviço de nuvem da Brand Portal usando a conta IMS e o terminal Brand Portal (URL da organização).
+1. Teste sua configuração publicando um ativo do AEM Assets para o Brand Portal.
 
 >[!NOTE]
 >
->Uma instância do AEM Assets as a [!DNL Cloud Service] só deve ser configurada com um locatário do Brand Portal.
+>Uma instância do AEM Assets como [!DNL Cloud Service] só deve ser configurada com um locatário do Brand Portal.
 
 **Pré-requisitos**
 
@@ -216,7 +215,7 @@ Execute as etapas a seguir na sequência especificada para configurar o AEM Asse
 
 ### Criar configuração IMS {#create-ims-configuration}
 
-A configuração IMS autentica sua instância do AEM Assets como [!DNL Cloud Service] com o locatário do Brand Portal.
+A configuração IMS autentica sua AEM Assets como uma instância [!DNL Cloud Service] com o locatário do Brand Portal.
 
 A configuração IMS inclui duas etapas:
 
@@ -238,7 +237,7 @@ A chave pública (certificado) autentica seu perfil no Console do desenvolvedor 
 
 1. Clique no ícone **[!UICONTROL Baixar chave pública]** e salve o arquivo de chave pública (CRT) no computador.
 
-   A chave pública é usada posteriormente para configurar a API para o locatário do Brand Portal e gerar credenciais de conta de serviço no Console do Desenvolvedor do Adobe.
+   A chave pública é usada posteriormente para configurar a API do locatário do Brand Portal e gerar credenciais de conta de serviço no Console do desenvolvedor do Adobe.
 
    ![Baixar certificado](assets/ims-config3.png)
 
@@ -248,9 +247,9 @@ A chave pública (certificado) autentica seu perfil no Console do desenvolvedor 
 
    Abra uma nova guia e [crie uma conexão de conta de serviço (JWT) no Console do Desenvolvedor do Adobe](#createnewintegration) para obter as credenciais e a carga JWT para configurar a conta IMS.
 
-### Criar conexão da conta de serviço (JWT) {#createnewintegration}
+### Criar conexão de conta de serviço (JWT) {#createnewintegration}
 
-No Console do desenvolvedor do Adobe, os projetos e as APIs são configurados no nível de locatário (organização) do Brand Portal. Configurar uma API cria uma conexão de conta de serviço (JWT). Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Para configurar o AEM Assets com o Brand Portal, você deve gerar uma chave pública (certificado) no AEM Assets e criar credenciais no Adobe Developer Console fazendo upload da chave pública. Essas credenciais são necessárias para configurar a conta IMS no AEM Assets. Depois que a conta IMS é configurada, você pode configurar o serviço em nuvem do Brand Portal no AEM Assets.
+No Console do desenvolvedor do Adobe, os projetos e as APIs são configurados no nível de locatário (organização) do Brand Portal. Configurar uma API cria uma conexão de conta de serviço (JWT). Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Para configurar o AEM Assets com o Brand Portal, você deve gerar uma chave pública (certificado) no AEM Assets e criar credenciais no Console do desenvolvedor do Adobe fazendo upload da chave pública. Essas credenciais são necessárias para configurar a conta IMS no AEM Assets. Após configurar a conta IMS, é possível configurar o serviço de nuvem da Brand Portal no AEM Assets.
 
 Execute as seguintes etapas para gerar as credenciais da conta de serviço e a carga JWT:
 
@@ -378,19 +377,19 @@ Execute as etapas a seguir para configurar a conta IMS.
 
 ### Configurar o serviço em nuvem {#configure-the-cloud-service}
 
-Execute as seguintes etapas para configurar o serviço em nuvem do Brand Portal:
+Execute as seguintes etapas para configurar o serviço de nuvem do Brand Portal:
 
 1. Faça logon no AEM Assets.
 
 1. No painel **Ferramentas**, navegue até **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
-1. Na página Configurações do Brand Portal, clique em **[!UICONTROL Criar]**.
+1. Na página Configurações do Brand Portal , clique em **[!UICONTROL Criar]**.
 
 1. Especifique um **[!UICONTROL Título]** para a configuração.
 
    Selecione a configuração IMS que você criou ao [configurar a conta IMS](#create-ims-account-configuration).
 
-   No campo **[!UICONTROL URL do serviço]**, especifique o URL do locatário do Brand Portal (organização).
+   No campo **[!UICONTROL URL do serviço]**, especifique o URL do locatário (organização) do Brand Portal.
 
    ![](assets/create-cloud-service.png)
 
@@ -447,10 +446,10 @@ You can now:
 * [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
 * [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Asset Sourcing in Brand Portal
-* [Publish presets, schemas, and facets to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Publish tags to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-See [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
+See [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for more information.
 
 ## Distribution logs {#distribution-logs}
 
