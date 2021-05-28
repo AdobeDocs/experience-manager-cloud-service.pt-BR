@@ -1,32 +1,31 @@
 ---
 title: Exportador JSON para serviços de conteúdo
-description: AEM Content Services foram criados para generalizar a descrição e o delivery do conteúdo de/para AEM além de um foco nas páginas da Web. Eles fornecem o delivery do conteúdo para canais que não são tradicionais AEM páginas da Web, usando métodos padronizados que podem ser consumidos por qualquer cliente.
-translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+description: Os Serviços de conteúdo AEM foram projetados para generalizar a descrição e a entrega de conteúdo de/para AEM além de um foco nas páginas da Web. Eles fornecem a entrega de conteúdo para canais que não são páginas da Web tradicionais AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente.
+exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 7%
+source-wordcount: '409'
+ht-degree: 5%
 
 ---
 
+# Exportador JSON para serviços de conteúdo {#json-exporter-for-content-services}
 
-# Exportador JSON para Content Services {#json-exporter-for-content-services}
+Os Serviços de conteúdo AEM foram projetados para generalizar a descrição e a entrega de conteúdo de/para AEM além do foco das páginas da Web.
 
-AEM Content Services foram criados para generalizar a descrição e o delivery do conteúdo de/para AEM além do foco das páginas da Web.
-
-Eles fornecem o delivery do conteúdo para canais que não são tradicionais AEM páginas da Web, usando métodos padronizados que podem ser consumidos por qualquer cliente. Esses canais podem incluir:
+Eles fornecem a entrega de conteúdo para canais que não são páginas da Web tradicionais AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente. Esses canais podem incluir:
 
 * Aplicativos de página única
 * Aplicativos móveis nativos
 * Outros canais e pontos de contato externos ao AEM
 
-Com fragmentos de conteúdo que usam conteúdo estruturado, você pode fornecer serviços de conteúdo usando o exportador JSON para fornecer o conteúdo de uma página AEM no formato de modelo de dados JSON. Isso pode ser consumido por seus próprios aplicativos.
+Com fragmentos de conteúdo que usam conteúdo estruturado, você pode fornecer serviços de conteúdo usando o exportador JSON para fornecer o conteúdo de uma página de AEM (y) no formato de modelo de dados JSON. Isso pode ser consumido por seus próprios aplicativos.
 
-## Exportador JSON com Componentes Principais do Fragmento de Conteúdo {#json-exporter-with-content-fragment-core-components}
+## Exportador JSON com Componentes principais do fragmento de conteúdo {#json-exporter-with-content-fragment-core-components}
 
-Usando o exportador JSON AEM, você pode fornecer o conteúdo de uma página AEM no formato de modelo de dados JSON. Isso pode ser consumido por seus próprios aplicativos.
+Usando o exportador JSON de AEM, você pode fornecer o conteúdo de uma página AEM(y) no formato de modelo de dados JSON. Isso pode ser consumido por seus próprios aplicativos.
 
-Dentro AEM delivery é obtido usando as extensões `model` e `.json` do seletor.
+Dentro AEM o delivery é obtido usando a extensão `model` e `.json` do seletor.
 
 `.model.json`
 
@@ -40,13 +39,13 @@ Dentro AEM delivery é obtido usando as extensões `model` e `.json` do seletor.
 
    ![Modelo JSON de conteúdo WKND](assets/json-model-wknd.png)
 
-Como alternativa, é possível fornecer o conteúdo de um fragmento de conteúdo estruturado, direcionando-o especificamente.
+Como alternativa, você pode fornecer o conteúdo de um fragmento de conteúdo estruturado, direcionando-o especificamente.
 
-Isso é feito usando o caminho inteiro para o fragmento (via `jcr:content`); por exemplo, com um sufixo como.
+Isso é feito usando o caminho inteiro para o fragmento (por meio do `jcr:content`); por exemplo, com um sufixo como.
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
-Sua página pode conter um único fragmento de conteúdo ou vários componentes de vários tipos. Você também pode usar mecanismos como componentes de lista para pesquisar automaticamente o conteúdo relevante.
+A página pode conter um único fragmento de conteúdo ou vários componentes de vários tipos. Você também pode usar mecanismos como componentes de lista para pesquisar automaticamente pelo conteúdo relevante.
 
 * Por exemplo, um URL como:
 
@@ -64,7 +63,7 @@ Sua página pode conter um único fragmento de conteúdo ou vários componentes 
 
    >[!NOTE]
    >
-   >Embora não seja uma implementação padrão, há suporte para [vários seletores,](enabling-json-exporter.md#multiple-selectors) mas `model` deve ser o primeiro.
+   >Embora não seja uma implementação padrão, [vários seletores são suportados,](enabling-json-exporter.md#multiple-selectors) mas `model` deve ser o primeiro.
 
 ### Informações adicionais {#further-information}
 
@@ -72,16 +71,16 @@ Consulte também:
 
 * API HTTP de ativos
    * [API HTTP de ativos](/help/assets/developer-reference-material-apis.md)
-* Modelos Sling:
-   * [Modelos Sling - Associando uma classe de modelo a um tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+* Modelos sling:
+   * [Modelos do Sling - Associando uma classe de modelo a um tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * AEM com JSON:
    * [Ativando a exportação JSON para um componente](enabling-json-exporter.md)
 
 ## Documentação relacionada {#related-documentation}
 
-Para mais informações, consulte:
+Para obter mais detalhes, consulte:
 
 * [Fragmentos de conteúdo no guia do usuário Ativos](/help/assets/content-fragments/content-fragments.md)
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Componentes principais ](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) e o componente Fragmento  [do conteúdo](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Componentes principais ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o componente Fragmento  [de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
