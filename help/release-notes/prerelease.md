@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Experience Manager] como um Canal de pré-lançamento do Cloud Service'
 description: '[!DNL Adobe Experience Manager] como um Canal de pré-lançamento do Cloud Service'
-source-git-commit: 7519c937fdc36711a5f558d787257cee713baf7e
+source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 [!DNL Adobe Experience Manager] o as a Cloud Service fornece novos recursos mensalmente, de acordo com o agendamento do roteiro de versões do  [Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). Para se familiarizar com os recursos agendados para serem ativados no mês seguinte, os clientes podem assinar o canal de pré-lançamento, que é acessível por meio da configuração apropriada em ambientes de desenvolvimento de programas padrão ou em quaisquer ambientes de programa sandbox. Os clientes podem visualizar as alterações no console Sites, bem como criar o código em relação a quaisquer novas APIs de pré-lançamento.
 
 A lista de recursos de pré-lançamento de um determinado mês é publicada nas [notas de versão mensais](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+>[!VÍDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## Como ativar o pré-lançamento {#enable-prerelease}
 
@@ -110,8 +112,7 @@ Para build no SDK de pré-lançamento:
 1. Se ele funcionar conforme esperado localmente, confirme o código em uma ramificação de desenvolvimento e use um pipeline de não produção do Cloud Manager para implantar em um ambiente que assine o canal de pré-lançamento
 
 >[!CAUTION]
-> 
-> O `aem-prerelease-sdk-api` artifactId nunca deve ser usado ao implantar em Preparo ou Produção. Sempre use o aem-sdk-api ao implantar via Pipeline de produção. Da mesma forma, o código que faz referência às APIs de pré-lançamento não deve ser implantado por meio do pipeline de produção.
+O `aem-prerelease-sdk-api` artifactId nunca deve ser usado ao implantar em Preparo ou Produção. Sempre use o aem-sdk-api ao implantar via Pipeline de produção. Da mesma forma, o código que faz referência às APIs de pré-lançamento não deve ser implantado por meio do pipeline de produção.
 
 O [AEM plug-in maven do Analyzer CS build v1.0 e superior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) detectará se a api de pré-lançamento é usada em um projeto inspecionando as dependências. Se o analisador o encontrar, ele usará a api de pré-lançamento do sdk para analisar o projeto.
 
