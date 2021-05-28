@@ -1,26 +1,26 @@
 ---
-title: 'Informações de ativos '
+title: Insights de ativos
 description: Acompanhe as classificações de usuários e as estatísticas de uso de imagens usadas em campanhas de marketing de terceiros e nas soluções criativas de Adobe sites.
 contentOwner: AG
 feature: Insights de ativos,Relatórios de ativos
 role: Business Practitioner,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 8%
 
 ---
 
-# Informações de ativos {#asset-insights}
+# Insights do Assets {#asset-insights}
 
-A funcionalidade do Asset Insights permite que você acompanhe as estatísticas de usuário e uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas de classificações do Adobe. Ele ajuda a fornecer insights sobre o desempenho e a popularidade das imagens.
+A funcionalidade do Assets Insights permite que você acompanhe as estatísticas de usuário e uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas de classificações do Adobe. Ele ajuda a fornecer insights sobre o desempenho e a popularidade das imagens.
 
 O Assets Insights captura detalhes da atividade do usuário, como o número de vezes que uma imagem é classificada, clicada e impressões (número de vezes que uma imagem é carregada no site). Ele atribui pontuações a imagens com base nessas estatísticas. Você pode usar as pontuações e as estatísticas de desempenho para selecionar imagens populares para inclusão em catálogos, campanhas de marketing e assim por diante. Você pode até mesmo formular políticas de arquivamento e renovação de licença com base nessas estatísticas.
 
 Para que o Assets Insights capture as estatísticas de uso de imagens de um site, você deve incluir o código incorporado da imagem no código do site.
 
-Para permitir que o Asset Insights exiba estatísticas de uso de ativos, primeiro configure o recurso para buscar dados de relatório de [!DNL Adobe Analytics]. Para obter detalhes, consulte [Configurar Asset Insights](#configure-asset-insights). Para usar esse recurso, compre a licença [!DNL Adobe Analytics] separadamente.
+Para permitir que o Assets Insights exiba estatísticas de uso de ativos, primeiro configure o recurso para buscar dados de relatório de [!DNL Adobe Analytics]. Para obter detalhes, consulte [Configurar o Assets Insights](#configure-asset-insights). Para usar esse recurso, compre a licença [!DNL Adobe Analytics] separadamente.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Para permitir que o Asset Insights exiba estatísticas de uso de ativos, primeir
 
 ## Exibir estatísticas de uma imagem {#viewing-statistics-for-an-image}
 
-Você pode exibir as pontuações do Asset Insights da página de metadados.
+Você pode exibir as pontuações do Assets Insights da página de metadados.
 
 1. Na interface do usuário do Assets, selecione a imagem e clique em **[!UICONTROL Propriedades]** na barra de ferramentas.
 1. Na página Propriedades, clique em **[!UICONTROL Insights]**.
@@ -49,7 +49,7 @@ Você pode exibir as pontuações do Asset Insights da página de metadados.
 
    >[!NOTE]
    >
-   >Como o recurso Asset Insights normalmente busca os dados das Soluções de [!DNL Adobe Analytics] de maneira periódica, a seção Soluções pode não exibir os dados mais recentes. O período de tempo para o qual os dados são exibidos depende do agendamento da operação de busca executada pelo Asset Insights para recuperar dados do Analytics.
+   >Como o recurso do Assets Insights normalmente busca os dados das Soluções de [!DNL Adobe Analytics] de maneira periódica, a seção Soluções pode não exibir os dados mais recentes. O período de tempo para o qual os dados são exibidos depende da programação da operação de busca executada pelo Assets Insights para recuperar os dados do Analytics.
 
 1. Para exibir estatísticas de desempenho do ativo graficamente durante um período de tempo, selecione o período na seção **[!UICONTROL Estatísticas de desempenho]**. Detalhes, incluindo cliques e impressões, são exibidos como linhas de tendência de um gráfico.
 
@@ -75,7 +75,7 @@ Exiba pontuações de todos os ativos em uma pasta simultaneamente usando a **[!
 
 ## Schedule background job {#scheduling-background-job}
 
-Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
+Assets Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Assets Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
 
 1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
@@ -85,9 +85,9 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
 -->
 
-## Configurar o Asset Insights {#configure-asset-insights}
+## Configurar o Assets Insights {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] busca dados de uso em ativos digitais usados por sites de terceiros do  [!DNL Adobe Analytics]. Para permitir que o Asset Insights recupere esses dados e gere insights, primeiro configure o recurso para integrar com [!DNL Adobe Analytics].
+[!DNL Experience Manager Assets] busca dados de uso em ativos digitais usados por sites de terceiros do  [!DNL Adobe Analytics]. Para permitir que o Assets Insights recupere esses dados e gere insights, primeiro configure o recurso para integrar com [!DNL Adobe Analytics].
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
    *Figura: Configurar o Adobe Analytics para o Assets Insights no[!DNL Experience Manager]*
 
-1. Clique em **[!UICONTROL Autenticar]**. Depois que [!DNL Experience Manager] autenticar suas credenciais, na lista **[!UICONTROL Report Suite]**, escolha um conjunto de relatórios do Adobe Analytics no qual deseja que o Asset Insights busque dados. Clique em **[!UICONTROL Adicionar]**.
+1. Clique em **[!UICONTROL Autenticar]**. Depois que [!DNL Experience Manager] autenticar suas credenciais, na lista **[!UICONTROL Report Suite]**, escolha um conjunto de relatórios do Adobe Analytics no qual deseja que o Assets Insights busque dados. Clique em **[!UICONTROL Adicionar]**.
 1. Depois de [!DNL Experience Manager] configurar seu conjunto de relatórios, clique em **[!UICONTROL Concluído]**.
 
 ### Rastreador de página {#page-tracker}
@@ -120,11 +120,11 @@ Após configurar sua conta do Adobe Analytics, o código do Rastreador de págin
 
 <!--
 
-## Using demo package for Asset Insights {#using-demo-package-for-asset-insights}
+## Using demo package for Assets Insights {#using-demo-package-for-asset-insights}
 
-Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
+Using the demo package, you can enable Adobe Assets Insights to capture data from and generate insights for a sample web page.
 
-1. Configure Asset Insights using the instructions in [Configure Asset Insights](#configure-asset-insights).
+1. Configure Assets Insights using the instructions in [Configure Assets Insights](#configure-asset-insights).
 1. Download the sample [!DNL Experience Manager Assets] package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)
