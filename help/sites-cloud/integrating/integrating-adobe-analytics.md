@@ -1,23 +1,22 @@
 ---
 title: Integração ao Adobe Analytics
 description: 'Integração ao Adobe Analytics '
-feature: Administering
+feature: Administração
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '532'
 ht-degree: 4%
 
 ---
-
 
 # Integração ao Adobe Analytics{#integrating-with-adobe-analytics}
 
 Integrar o Adobe Analytics e o AEM como um Cloud Service permite rastrear a atividade da página da Web. A integração exige:
 
 * usando a interface do usuário de toque para criar uma configuração do Analytics no AEM como um Cloud Service.
-* adicionar e configurar o Adobe Analytics como uma extensão no [Adobe Launch](#analytics-launch). Para obter mais detalhes sobre o Adobe Launch, consulte [esta página](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* adicionar e configurar o Adobe Analytics como uma extensão no [Adobe Launch](#analytics-launch). Para obter mais detalhes sobre o Adobe Launch, consulte [esta página](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html).
 
 Comparado às versões anteriores do AEM, o suporte à estrutura não é fornecido na Configuração do Analytics no AEM como Cloud Service. Em vez disso, agora é feito por meio do Adobe Launch, que é a ferramenta de fato para instrumentar um site AEM com recursos do Analytics (bibliotecas JS). No Adobe Launch, uma propriedade é criada, onde a extensão Adobe Analytics pode ser configurada e as regras são criadas para enviar dados ao Adobe Analytics. O Adobe Launch substituiu a tarefa de análise fornecida pelo sitecatalyst.
 
@@ -45,7 +44,7 @@ Os campos de configuração presentes na janela Configuração do Adobe Analytic
 | Nome de usuário | Usuário da API do Adobe Analytics |
 | Senha | Senha Adobe Analytics usada para autenticação |
 | Centro de dados | O data center da Adobe Analytics com o qual sua conta está associada (servidor por exemplo, San Jose, Londres) |
-| Segmento | Opção para usar um segmento do Analytics definido no conjunto de relatórios atual. Os relatórios do Analytics serão filtrados com base no segmento. Consulte [esta página](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-overview.html) para obter mais detalhes. |
+| Segmento | Opção para usar um segmento do Analytics definido no conjunto de relatórios atual. Os relatórios do Analytics serão filtrados com base no segmento. Consulte [esta página](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) para obter mais detalhes. |
 | Report Suites | Um repositório no qual você envia dados e obtém relatórios. Um conjunto de relatórios define o relatório completo e independente de um site específico ou subconjuntos de páginas do site. Você pode exibir os relatórios obtidos de um único conjunto de relatórios e editar esse campo em uma configuração a qualquer momento, de acordo com suas necessidades. |
 
 ### Adicionar uma configuração a um site {#add-configuration}
@@ -56,9 +55,9 @@ Para aplicar uma configuração da interface de toque a um site, acesse: **Sites
 
 O Adobe Analytics pode ser adicionado como uma extensão na propriedade do Launch. As regras podem ser definidas para executar o mapeamento e fazer uma chamada de postagem para o Adobe Analytics:
 
-* Assista a [este vídeo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) para saber como configurar a extensão do Analytics no Launch para um site básico.
+* Assista a [este vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) para saber como configurar a extensão do Analytics no Launch para um site básico.
 
-* Consulte [esta página](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) para obter detalhes sobre como criar regras e enviar dados para o Adobe Analytics.
+* Consulte [esta página](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) para obter detalhes sobre como criar regras e enviar dados para o Adobe Analytics.
 
 >[!NOTE]
 >
