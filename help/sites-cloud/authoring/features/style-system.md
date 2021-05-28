@@ -1,14 +1,13 @@
 ---
 title: Sistema de estilos
 description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
-translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1327'
 ht-degree: 97%
 
 ---
-
 
 # Sistema de estilos{#style-system}
 
@@ -57,7 +56,7 @@ O diagrama a seguir ilustra a arquitetura do Sistema de estilos.
 
 ## Uso {#use}
 
-Para demonstrar o recurso, usaremos como exemplo a implementação da [WKND](https://docs.adobe.com/content/help/br/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) do [componente de título](https://www.adobe.com/go/aem_cmp_title_v2) do componente principal.
+Para demonstrar o recurso, usaremos como exemplo a implementação da [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) do [componente de título](https://www.adobe.com/go/aem_cmp_title_v2) do componente principal.
 
 As seções a seguir, [Como um autor de conteúdo](#as-a-content-author) e [Como um autor de modelo](#as-a-template-author) descrevem como testar a funcionalidade do Sistema de estilos usando o Sistema de estilos da WKND.
 
@@ -121,7 +120,6 @@ Para que um componente funcione com o sistema de estilos do AEM e mostre a guia 
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Com o componente configurado, os estilos configurados pelos autores da página serão inseridos automaticamente pelo AEM no elemento de decoração que o AEM adiciona ao redor de cada componente editável. O componente não precisa fazer mais nada para que isso ocorra.
@@ -136,7 +134,6 @@ A guia Editar pode ser incluída de maneira semelhante na guia Design:
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
@@ -158,6 +155,7 @@ Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 >1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
 >1. Por fim, a `cq:htmlTag`/ `cq:tagName` do componente será considerada um valor de fallback.
+
 >
 
 
