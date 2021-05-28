@@ -2,11 +2,10 @@
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.6.0
 description: Notas de versão do Experience Manager para 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-translation-type: tm+mt
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 98%
+source-wordcount: '1941'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +23,7 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do AEM
 
 ### Novidades {#whats-new-2020.6.0}
 
-A versão 2.9.0 dos [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) agora está disponível como parte do AEM Sites, incluindo:
+A versão 2.9.0 dos [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) agora está disponível como parte do AEM Sites, incluindo:
 
 * Integração entre a [Camada de dados do cliente Adobe](https://github.com/adobe/adobe-client-data-layer) e os Componentes principais
 * Atributos de ID HTML configuráveis para todos os componentes
@@ -61,11 +60,11 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 
 * Os usuários que estiverem exercendo a função de *Proprietário comercial* no Cloud Manager agora podem excluir um Programa de sandbox a partir da página de aterrissagem (com o botão de ação rápida no cartão Programa) ou dentro do programa.
 
-   Consulte [Exclusão de um programa de sandbox](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obter mais detalhes.
+   Consulte [Exclusão de um programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obter mais detalhes.
 
 * Os usuários de programas de sandbox que estiverem exercendo a função de *Proprietário comercial* ou *Gerente de implantação* no Cloud Manager agora podem excluir seu conjunto de ambientes de produção e preparo na interface do Cloud Manager. A opção de exclusão agora está disponível no cartão Ambiente da página **Visão geral de programas**, bem como na página **Ambientes**. Selecionar a opção de exclusão no ambiente de produção também exclui o ambiente de preparo no mesmo conjunto, e vice-versa.
 
-   Consulte [Exclusão de um programa de sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obter mais detalhes.
+   Consulte [Exclusão de um programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obter mais detalhes.
 
 * Há notas explicativas na página de aterrissagem para informar e instruir o usuário sobre a navegação básica.
 
@@ -77,11 +76,11 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 
 * Os usuários que estiverem exercendo a função SysAdmin agora têm acesso com um só clique ao local do Admin Console onde podem gerenciar funções ou permissões de usuários para o Cloud Manager. Agora há um botão **Gerenciar acesso** na página de aterrissagem, ao lado do botão **Adicionar programa**.
 
-   Consulte [Tarefas de SysAdmin](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) para saber mais.
+   Consulte [Tarefas de SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) para saber mais.
 
 * Agora os usuários que estiverem exercendo a função SysAdmin têm acesso à instância do autor diretamente do Cloud Manager, com um só clique.
 
-   Consulte [Gerenciar o acesso à instância do autor](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) para saber mais.
+   Consulte [Gerenciar o acesso à instância do autor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) para saber mais.
 
 * O log da etapa Criar agora inclui a lista de artefatos descobertos, incluindo pacotes de conteúdo ignorados.
 
