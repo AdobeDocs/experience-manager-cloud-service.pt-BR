@@ -2,9 +2,9 @@
 title: AEM Content and Commerce
 description: Recursos de autoajuda e links de documentação do AEM Content and Commerce
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '394'
 ht-degree: 71%
 
 ---
@@ -44,10 +44,10 @@ Esta página lista os recursos de autoajuda sobre Conteúdo e Comércio AEM.
 ## Outros recursos do Experience Manager {#other-resources}
 
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
-* [Documentação HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
-* [Documentação dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
-* [Documentação do Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
+* [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
+* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Disponibilidade do GDPR](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Tutoriais do Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
