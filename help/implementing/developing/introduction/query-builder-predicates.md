@@ -1,20 +1,19 @@
 ---
 title: Referência de predicado do construtor de consultas
 description: Referência de predicado para a API do Construtor de consultas.
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2217'
 ht-degree: 1%
 
 ---
-
 
 # Referência de predicado do construtor de consultas {#query-builder-predicate-reference}
 
 ## Geral {#general}
 
-### raiz {#root}
+### root {#root}
 
 Este é o grupo de predicado raiz. Ele suporta todos os recursos de um grupo e permite definir parâmetros de consulta global.
 
@@ -121,7 +120,7 @@ Este é um predicado somente filtragem e não pode utilizar um índice de pesqui
    * `>` para  `property1` maior que  `property2`
    * `>=` para  `property1` maior ou igual a  `property2`
 
-### intervalo de datas {#daterange}
+### daterange {#daterange}
 
 Esse predicado corresponde às propriedades de data do JCR em relação a um intervalo de data/hora. Isso usa a ISO8601
 formato para datas e horas (`YYYY-MM-DDTHH:mm:ss.SSSZ`) e também permite representações parciais, como `YYYY-MM-DD`. Como alternativa, o carimbo de data e hora pode ser fornecido como hora POSIX.
@@ -188,7 +187,7 @@ Ele suporta extração de facetas e fornece compartimentos para cada código de 
 
 * **`language`** - código de idioma ISO, por exemplo  `de`
 
-### principal {#mainasset}
+### ativo principal {#mainasset}
 
 Esse predicado verifica se um nó é um ativo principal do DAM e não um subativo. Basicamente, todos os nós não dentro de um nó de sub-ativos. Observe que isso não verifica o tipo de nó `dam:Asset`. Para usar esse predicado, basta definir `mainasset=true` ou `mainasset=false`. Não há mais propriedades.
 
@@ -202,7 +201,7 @@ Ele suporta extração de facetas e fornece dois buckets para os ativos principa
 
 ### memberOf {#memberof}
 
-Este predicado encontra itens que são membros de uma [coleção de recursos sling específica](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
+Este predicado encontra itens que são membros de uma [coleção de recursos sling específica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
 Este é um predicado somente filtragem e não pode utilizar um índice de pesquisa.
 
@@ -222,7 +221,7 @@ Ele suporta extração de facetas e fornece buckets para cada nome de nó exclus
 
 * **`nodename`** - padrão de nome de nó que permite curingas:  `*` = qualquer ou nenhum caractere,  `?` = qualquer caractere,  `[abc]` = somente caracteres entre colchetes
 
-### {#notexpired} não texturizado
+### não textuoso {#notexpired}
 
 Esse predicado corresponde itens verificando se uma propriedade de data JCR é maior ou igual à hora atual do servidor. Isso pode ser usado para verificar um valor `expiresAt` e limitar os resultados somente àqueles que ainda não expiraram (`notexpired=true`) ou que já expiraram (`notexpired=false`).
 
