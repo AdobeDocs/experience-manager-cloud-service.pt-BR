@@ -2,10 +2,9 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-translation-type: tm+mt
-source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2869'
 ht-degree: 13%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 13%
 
 >[!TIP]
 >
->Familiarize-se com o [AEM básico do Arquétipo de projeto use](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html) e o [Plug-in FileVault Content Maven](/help/implementing/developing/tools/maven-plugin.md), pois este artigo se baseia nesses aprendizados e conceitos.
+>Familiarize-se com o [AEM básico do Arquétipo de projeto use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) e o [Plug-in FileVault Content Maven](/help/implementing/developing/tools/maven-plugin.md), pois este artigo se baseia nesses aprendizados e conceitos.
 
 Este artigo descreve as alterações necessárias para que os projetos Adobe Experience Manager Maven sejam AEM como Cloud Service compatíveis, garantindo que eles respeitem a divisão de conteúdo mutável e imutável, que as dependências sejam estabelecidas para criar implantações determinísticas e não conflitantes e que sejam compactadas em uma estrutura implantável.
 
@@ -61,7 +60,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
 + O arquivo Jar do pacote OSGi é gerado e diretamente incorporado no projeto inteiro.
 
 + O pacote `ui.apps` contém todo o código a ser implantado e só é implantado em `/apps`. Os elementos comuns do pacote `ui.apps` incluem, mas não estão limitados a:
-   + [Definições de componentes e ](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html) scripts HTL
+   + [Definições de componentes e ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR) scripts HTL
       + `/apps/my-app/components`
    + JavaScript e CSS (por meio de [Bibliotecas do cliente](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
@@ -206,7 +205,7 @@ Observe que os pacotes de conteúdo (`<packageType>content</packageType>`) **nã
 >
 >Consulte a seção [POM XML Snippets](#xml-repository-structure-package) abaixo para obter um trecho completo.
 
-## Incorporação de sub-pacotes no Pacote do Contêiner{#embeddeds}
+## Incorporação de subpacotes no pacote de contêiner{#embeddeds}
 
 Os pacotes de conteúdo ou código são colocados em uma pasta &quot;side-car&quot; especial e podem ser direcionados para instalação AEM autor, AEM publicação ou ambos, usando a configuração `<embeddeds>` do plug-in FileVault Maven. Observe que a configuração `<subPackages>` não deve ser usada.
 
