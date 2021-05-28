@@ -1,14 +1,13 @@
 ---
 title: Uso do Analisador de práticas recomendadas
 description: Uso do Analisador de práticas recomendadas
-translation-type: tm+mt
-source-git-commit: 3d1aa714bacc74f77672ce2d7265da5239a6c6ff
+exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 43%
+source-wordcount: '2506'
+ht-degree: 42%
 
 ---
-
 
 # Uso do Analisador de práticas recomendadas {#using-best-practices-analyzer}
 
@@ -16,13 +15,13 @@ ht-degree: 43%
 >id="aemcloud_bpa_using"
 >title="Uso do Analisador de práticas recomendadas"
 >abstract="Consulte a documentação para usar o Analisador de práticas recomendadas (antigo Cloud Readiness Analyzer) e o relatório gerado. O Relatório do Analisador de práticas recomendadas é usado para obter um alto nível de compreensão da disponibilidade geral de atualização."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considerações importantes sobre o uso do Analisador de práticas recomendadas {#imp-considerations}
 
 Siga a seção abaixo para entender as considerações importantes para a execução do BPA (Best Practices Analyzer):
 
-* O relatório BPA é criado usando a saída do Adobe Experience Manager (AEM) [Detector de padrões](https://docs.adobe.com/content/help/br/experience-manager-65/deploying/upgrading/pattern-detector.html). A versão do Detector de padrões usada pelo BPA está incluída no pacote de instalação do BPA.
+* O relatório BPA é criado usando a saída do Adobe Experience Manager (AEM) [Detector de padrões](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). A versão do Detector de padrões usada pelo BPA está incluída no pacote de instalação do BPA.
 
 * O BPA só pode ser executado pelo usuário **admin** ou por um usuário no grupo **administradores**.
 
@@ -248,8 +247,8 @@ O valor dessa propriedade é o tempo de vida do cache em segundos. Um administra
 
 O BPA usa uma conta de usuário do serviço do sistema chamada `repository-reader-service` para executar o Detector de padrões. Essa conta está disponível no AEM 6.2 e nas versões posteriores. No AEM 6.1, essa conta deve ser criada *antes da instalação* do BPA, seguindo as seguintes etapas:
 
-1. Siga as instruções em [Criar um novo usuário de serviço](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/administering/security/security-service-users.translate.html#creating-a-new-service-user) para criar um usuário. Defina a UserID como `repository-reader-service`, deixe o Caminho intermediário vazio e clique na marca de seleção verde.
+1. Siga as instruções em [Criar um novo usuário de serviço](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) para criar um usuário. Defina a UserID como `repository-reader-service`, deixe o Caminho intermediário vazio e clique na marca de seleção verde.
 
-2. Siga as instruções em [Gerenciar usuários e grupos](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/administering/security/security.translate.html#managing-users-and-groups), especificamente as instruções para adicionar usuários a um grupo, para adicionar o usuário `repository-reader-service` ao grupo `administrators`.
+2. Siga as instruções em [Gerenciar usuários e grupos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), especificamente as instruções para adicionar usuários a um grupo, para adicionar o usuário `repository-reader-service` ao grupo `administrators`.
 
 3. Instale o pacote BPA por meio do Gerenciador de pacotes na instância de AEM de origem. (Essa etapa adiciona a alteração de configuração necessária à configuração ServiceUserMapper do usuário de serviço do sistema `repository-reader-service`.)
