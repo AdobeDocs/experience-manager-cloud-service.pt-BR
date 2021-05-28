@@ -1,14 +1,13 @@
 ---
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
 description: Usar o AEM as a Cloud Service para ajuda a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
-translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '14060'
+source-wordcount: '14050'
 ht-degree: 99%
 
 ---
-
 
 # Criação de conteúdo acessível (Conformidade com o WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
@@ -69,15 +68,15 @@ Um benefício adicional útil é que as alternativas em texto permitem que o con
 
 #### Como cumprir - Conteúdo não textual (1.1.1)        {#how-to-meet-non-text-content}
 
-Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo **Texto alternativo**. Por exemplo, veja o Componente principal **[Imagem](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html)**.
+Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo **Texto alternativo**. Por exemplo, veja o Componente principal **[Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)**.
 
 >[!NOTE]
 >
->Alguns Componentes principais predefinidos, como **[Carrossel](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/carousel.html)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para o componente inteiro.
+>Alguns Componentes principais predefinidos, como **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para o componente inteiro.
 >
 >Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte Adicionar suporte para elementos HTML e atributos adicionais).
 >
->Alguns Componentes principais predefinidos, como **[Carrossel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para o componente inteiro.
+>Alguns Componentes principais predefinidos, como **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para o componente inteiro.
 >
 >Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`[, para que os autores possam adicioná-lo ao conteúdo (consulte Adicionar suporte para elementos HTML e atributos adicionais](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -292,7 +291,7 @@ Siga as orientações fornecidas para a [Descrição de áudio ou alternativa de
 * [Noções sobre o Critério de sucesso 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [Como cumprir o Critério de sucesso 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### Adaptável (1.3)        {#adaptable}
+### Adaptável (1.3)       {#adaptable}
 
 [Diretriz adaptável 1.3: criar conteúdos que possam ser apresentados de diferentes formas (por exemplo, um layout mais simples) sem perder as informações ou a estrutura.](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -465,7 +464,7 @@ Certifique-se de que todas as informações baseadas em características visuais
 * [Noções sobre o Critério de sucesso 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Como cumprir o Critério de sucesso 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### Discernível (1.4)        {#distinguishable}
+### Discernível (1.4)       {#distinguishable}
 
 [Diretriz 1.4 Discernível: facilitar a visualização e a audição de conteúdos aos usuários, incluindo a separação do primeiro plano e do plano de fundo. ](https://www.w3.org/TR/WCAG/#distinguishable)
 
