@@ -1,34 +1,33 @@
 ---
-title: Regulamentos de proteção de dados e privacidade de dados - a Adobe Experience Manager está pronta para o Cloud Service Sites
-description: 'Saiba mais sobre a Adobe Experience Manager como um suporte de Cloud Service Sites para as várias regulamentações de proteção de dados e privacidade de dados; incluindo o Regulamento Geral da UE sobre Proteção de Dados (RGPD), a Lei da Privacidade do Consumidor da Califórnia e como cumprir ao implementar um novo AEM como um projeto Cloud Service. '
-translation-type: tm+mt
-source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
+title: Regulamentos de proteção e privacidade de dados - Disponibilidade do Adobe Experience Manager as a Cloud Service Sites
+description: Saiba mais sobre o suporte do Adobe Experience Manager as a Cloud Service Sites para as várias regulamentações de proteção e privacidade de dados; incluindo o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia e como fazer isso ao implementar um novo AEM como um projeto do Cloud Service.
+exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
 
-
-# A Adobe Experience Manager como Cloud Service Sites Prontidão para Proteção de Dados e Regulamentos de Privacidade de Dados {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Regulamentos de disponibilidade dos sites do Adobe Experience Manager as a Cloud Service para proteção e privacidade de dados {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
->O conteúdo deste documento não constitui um aconselhamento jurídico e não substitui o aconselhamento jurídico.
+>O conteúdo deste documento não constitui um aconselhamento jurídico e não se destina a substituir tal aconselhamento.
 >
->Consulte o departamento jurídico da sua empresa para obter informações sobre as regulamentações de Proteção de Dados e Privacidade de Dados.
+>Consulte o departamento jurídico da sua empresa para obter aconselhamento sobre as regras de proteção e privacidade de dados.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o que isso significa em relação a problemas de privacidade, consulte [Centro de Privacidade do Adobe](https://www.adobe.com/privacy.html)Adobe.
+>Para obter mais informações sobre resposta do Adobe a problemas de privacidade e o que isso significa para você como cliente de Adobe, consulte [Central de Privacidade do Adobe](https://www.adobe.com/privacy.html).
 
-A Adobe Experience Manager como Cloud Service Sites está pronta para ajudar os clientes com suas obrigações de privacidade de dados e conformidade de proteção. Esta página orienta os clientes pelos procedimentos para lidar com essas solicitações no AEM Sites. Ela descreve a localização dos dados privados armazenados e como removê-los manualmente ou com código.
+O Adobe Experience Manager as a Cloud Service Sites está pronto para ajudar os clientes com suas obrigações de conformidade com a privacidade de dados e a proteção. Esta página orienta os clientes pelos procedimentos para lidar com essas solicitações no AEM Sites. Ele descreve a localização dos dados privados armazenados e como removê-los manualmente ou com código.
 
 Para obter mais informações, consulte o [Centro de privacidade do Adobe](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->Consulte [Adobe Experience Manager como Cloud Service para Prontidão para Proteção de Dados e Regulamentos de Privacidade de Dados](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) para obter mais detalhes.
+>Consulte [Adobe Experience Manager as a Cloud Service Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) para obter mais detalhes.
 
 ## Nível de criação do AEM {#aem-author-tier}
 
@@ -36,53 +35,53 @@ As contas de usuário e o conteúdo UGC no servidor do autor são abordados na [
 
 ## Nível de publicação do AEM {#aem-publish-tier}
 
-As contas de usuário usadas para autenticar visitantes no site e o conteúdo UGC no servidor de publicação são abordados na [documentação AEM Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
+As contas de usuário usadas para autenticar visitantes no site e o conteúdo UGC no servidor de publicação são abordados na [AEM documentação do Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
-Por padrão, os componentes da AEM Sites não armazenam dados de formulário inseridos por visitantes no servidor de publicação. É recomendável encaminhar os dados para um sistema de terceiros, ou para a Adobe Campaign, para processamento adicional.
+Por padrão, os componentes do AEM Sites não armazenam dados de formulário inseridos por visitantes no servidor de publicação. É recomendável encaminhar os dados para um sistema de terceiros ou para o Adobe Campaign para processamento adicional.
 
-## Inclusão/exclusão {#opt-in-opt-out}
+## Opção de rejeição/rejeição {#opt-in-opt-out}
 
 <!--
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
 -->
 
-A Adobe Experience Manager está sujeita a um serviço de opção de não participação de cookie usado para gerenciar a opção de participação/não participação dos usuários.
+A Adobe Experience Manager está sujeita a um serviço de opção de não participação de cookies usado para gerenciar a aceitação/não participação dos usuários.
 
 Para recusar:
 
 1. Vá até:
-   [Centro de privacidade do Adobe - Recusar](https://www.adobe.com/privacy/opt-out.html)
+   [Central de privacidade do Adobe - Recusar](https://www.adobe.com/privacy/opt-out.html)
 
-1. Role para baixo até **Services** - **dados de uso do serviço Experience Cloud**.
+1. Role para baixo até **Services** - **Dados de uso do serviço Experience Cloud**.
 
-1. Selecione o link referenciado; atualmente denominado **here**.
+1. Selecione o link referenciado; atualmente denominado **aqui**.
 
-1. Você receberá os seguintes detalhes, juntamente com as opções para opt out ou em:
+1. Os detalhes a seguir serão apresentados a você, juntamente com as opções de recusa ou aceitação:
 
-   * Para excluir a agregação e a análise de dados sobre sua visita a este site, é necessário instalar um cookie no navegador. Este cookie identifica que você optou por não participar.
+   * Para recusar a agregação e a análise de dados sobre sua visita a este site, é necessário instalar um cookie em seu navegador. Este cookie identifica que você optou por não participar.
 
-      Se você excluir o cookie de opção de não participação, ou se você alterar computadores ou navegadores da Web, precisará recusar novamente.
+      Se você excluir o cookie de opção, ou se você alterar computadores ou navegadores da Web, será necessário rejeitar novamente.
 
-      Recusar - exclua-me da agregação e análise da sessão do visitante (instale o cookie de `amcglobal.sc.omtrdc.net` opção de não participação) - Clique aqui.
+      Recusar - Excluir-me da agregação e análise da sessão de visitante (instale o `amcglobal.sc.omtrdc.net` cookie de opção) - Clique aqui.
 
-      Inclusão - Inclua-me na agregação e análise da sessão do visitante (não instale o `amcglobal.sc.omtrdc.net` cookie de opção de não participação) - Clique aqui.
+      Opt-in - Inclua-me na agregação e análise da sessão de visitante (não instale o `amcglobal.sc.omtrdc.net` cookie de opção) - Clique aqui.
    Siga as etapas acima para acessar os links reais.
 
    >[!NOTE]
    >
-   > Há uma descrição adicional em **2. Privacidade.** dos Termos de uso [ gerais do ](https://www.adobe.com/legal/terms.html)Adobe.
+   > Há uma descrição adicional no **2. Privacidade.** da seção Termos de uso do  [Adobe General](https://www.adobe.com/br/legal/terms.html).
 
-## Analytics Foundation {#analytics-foundation}
+## Base do Analytics {#analytics-foundation}
 
-A AEM Sites inclui uma integração opcional com a Analytics Foundation que usa funcionalidade no Adobe Analytics On-demand Service.
+O AEM Sites inclui uma integração opcional com a Analytics Foundation que usa funcionalidade no Adobe Analytics On-Demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de pessoas relacionadas ao Adobe Analytics, consulte [Adobe Analytics e Privacidade de dados](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
+Para obter mais informações sobre como gerenciar solicitações de titulares de dados relacionadas ao Adobe Analytics, consulte [Adobe Analytics e Privacidade de dados](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
-## Fundação de personalização por Público alvo {#personalization-foundation-by-target}
+## Base de personalização pelo Target {#personalization-foundation-by-target}
 
-A AEM Sites inclui uma integração opcional com a Personalization Foundation por Público alvo que usa funcionalidade no Adobe Target On-demand Service.
+O AEM Sites inclui uma integração opcional com a Fundação de personalização por Target que usa funcionalidade no Adobe Target On-Demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de pessoas relacionadas à Adobe Target, consulte [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Para obter mais informações sobre como gerenciar solicitações de titulares de dados relacionadas ao Adobe Target, consulte [Adobe Target - Privacidade e Regulamento Geral sobre a Proteção de Dados](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -90,22 +89,22 @@ Para obter mais informações sobre como gerenciar solicitações de pessoas rel
 AEM provides an optional data layer with [ContextHub](/help/sites-developing/contexthub.md).
 -->
 
-AEM fornece uma camada de dados opcional com o ContextHub. Isso mantém os dados específicos do visitante no navegador, a serem usados para personalização baseada em regras.
+O AEM fornece uma camada de dados opcional com o ContextHub. Isso mantém os dados específicos do visitante no navegador, a serem usados para personalização baseada em regras.
 
-Por padrão, esses dados de visitante não são armazenados em AEM; AEM envia regras para a camada de dados para tomar decisões de personalização no navegador.
+Por padrão, esses dados do visitante não são armazenados no AEM; AEM envia regras para a camada de dados para tomar decisões de personalização no navegador.
 
-### Implementação da aceitação/não participação {#implementing-opt-in-opt-out}
+### Implementação do Opt-in/Opt-out {#implementing-opt-in-opt-out}
 
-O proprietário do site precisa implementar um componente de opção de não participação de acordo com as diretrizes a seguir.
+O proprietário do site precisa implementar um componente de opção de não participação, de acordo com as diretrizes a seguir.
 
-Essas diretrizes implementam o opt-in como padrão. Assim, um visitante do site deve concordar claramente, antes que quaisquer dados pessoais sejam armazenados na persistência do navegador (do lado do cliente).
+Essas diretrizes implementam o opt-in como padrão. Assim, um visitante do site deve concordar claramente, antes que quaisquer dados pessoais sejam armazenados na persistência do navegador (lado do cliente).
 
-* O componente de opção de não participação deve ser incluído toda vez que o componente ContextHub for incluído.
-* Os termos e condições relacionados à proteção de dados e à privacidade do website devem ser exibidos no visitante do site, permitindo que eles:
+* O componente de opt out deve ser incluído sempre que o componente ContextHub for incluído.
+* Os termos e condições relacionados à proteção de dados e à privacidade do site devem ser exibidos para o visitante do site, permitindo que:
 
    * accept
-   * rejeição
-   * alterar sua escolha anterior
+   * rejeitar
+   * alterar a opção anterior
 
 * Se um visitante do site aceitar os termos e condições do site, o cookie de opção de não participação do ContextHub deverá ser removido:
 
@@ -113,7 +112,7 @@ Essas diretrizes implementam o opt-in como padrão. Assim, um visitante do site 
    ContextHub.Utils.Cookie.removeItem('cq-opt-out');
    ```
 
-* Se um visitante do site não aceitar os termos e condições do site, o cookie de opção de não participação do ContextHub deverá ser definido:
+* Se um visitante do site não aceitar os termos e condições do site, o cookie de opção do ContextHub deve ser definido:
 
    ```
    ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
@@ -128,7 +127,7 @@ Essas diretrizes implementam o opt-in como padrão. Assim, um visitante do site 
 
 ### Visualização da persistência do ContextHub {#previewing-persistence-of-contexthub}
 
-Para que a persistência da pré-visualização seja usada pelo ContextHub, o usuário pode:
+Para visualizar a persistência usada pelo ContextHub, o usuário pode:
 
 * Use o console do navegador; por exemplo:
 
@@ -137,26 +136,26 @@ Para que a persistência da pré-visualização seja usada pelo ContextHub, o us
       * Abra Ferramentas do desenvolvedor > Aplicativo > Armazenamento:
 
          * Armazenamento local > (site) > ContextHubPersistence
-         * Armazenamento da sessão > (site) > ContextHubPersistence
+         * Armazenamento de sessão > (site) > ContextHubPersistence
          * Cookies > (site) > SessionPersistence
    * Firefox:
 
       * Abra Ferramentas do desenvolvedor > Armazenamento:
 
          * Armazenamento local > (site) > ContextHubPersistence
-         * Armazenamento da sessão > (site) > ContextHubPersistence
+         * Armazenamento de sessão > (site) > ContextHubPersistence
          * Cookies > (site) > SessionPersistence
    * Safari:
 
-      * Abrir Preferências > Avançado > Mostrar menu Revelação na barra de menus
-      * Abrir Revelação > Mostrar JavaScript Console
+      * Abra Preferências > Avançado > Mostrar menu desenvolver na barra de menus
+      * Abra Desenvolver > Mostrar console do JavaScript
 
          * Console > Armazenamento > Armazenamento local > (site) > ContextHubPersistence
-         * Console > Armazenamento > Armazenamento da sessão > (site) > ContextHubPersistence
+         * Console > Armazenamento > Armazenamento de sessão > (site) > ContextHubPersistence
          * Console > Armazenamento > Cookies > (site) > ContextHubPersistence
    * Internet Explorer:
 
-      * Abrir Ferramentas do Desenvolvedor > Console
+      * Abra Ferramentas do desenvolvedor > Console
 
          * `localStorage.getItem('ContextHubPersistence')`
          * `sessionStorage.getItem('ContextHubPersistence')`
@@ -165,7 +164,7 @@ Para que a persistência da pré-visualização seja usada pelo ContextHub, o us
 
 
 
-* Use a API ContextHub, no console do navegador:
+* Use a API do ContextHub, no console do navegador:
 
    * O ContextHub fornece as seguintes camadas de persistência de dados:
 
@@ -174,28 +173,28 @@ Para que a persistência da pré-visualização seja usada pelo ContextHub, o us
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      O repositório do ContextHub define qual camada de persistência será usada, portanto, para visualização do estado atual da persistência, todas as camadas devem ser verificadas.
+      O armazenamento do ContextHub define qual camada de persistência será usada, portanto, para exibir o estado atual da persistência, todas as camadas devem ser verificadas.
 
 
-Por exemplo, para visualização de dados armazenados em localStorage:
+Por exemplo, para exibir dados armazenados em localStorage:
 
-Para que a persistência da pré-visualização seja usada pelo ContextHub, o usuário pode:
+Para visualizar a persistência usada pelo ContextHub, o usuário pode:
 
 * Use o console do navegador:
 
    * Chrome - abra Ferramentas do desenvolvedor > Aplicativo > Armazenamento:
 
       * Armazenamento local > (site) > ContextHubPersistence
-      * Armazenamento da sessão > (site) > ContextHubPersistence
+      * Armazenamento de sessão > (site) > ContextHubPersistence
       * Cookies > (site) > SessionPersistence
    * Firefox - abra Ferramentas do desenvolvedor > Armazenamento:
 
       * Armazenamento local > (site) > ContextHubPersistence
-      * Armazenamento da sessão > (site) > ContextHubPersistence
+      * Armazenamento de sessão > (site) > ContextHubPersistence
       * Cookies > (site) > SessionPersistence
 
 
-* Use a API ContextHub, no console do navegador:
+* Use a API do ContextHub, no console do navegador:
 
    * O ContextHub fornece as seguintes camadas de persistência de dados:
 
@@ -204,10 +203,10 @@ Para que a persistência da pré-visualização seja usada pelo ContextHub, o us
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      O repositório do ContextHub define qual camada de persistência será usada, portanto, para visualização do estado atual da persistência, todas as camadas devem ser verificadas.
+      O armazenamento do ContextHub define qual camada de persistência será usada, portanto, para exibir o estado atual da persistência, todas as camadas devem ser verificadas.
 
 
-Por exemplo, para visualização de dados armazenados em localStorage:
+Por exemplo, para exibir dados armazenados em localStorage:
 
 ```
 var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.LOCAL });
@@ -218,7 +217,7 @@ console.log(storage.getTree());
 
 Para limpar a persistência do ContextHub:
 
-* Para eliminar a persistência dos armazenamentos atualmente carregados:
+* Para limpar a persistência de armazenamentos carregados no momento:
 
    ```
    // in order to be able to fully access persistence layer, Opt-Out must be turned off
