@@ -2,9 +2,9 @@
 title: Gerenciar ambientes - Cloud Service
 description: Gerenciar ambientes - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 4%
 
 ---
@@ -128,7 +128,7 @@ Selecione **Console do Desenvolvedor** no menu suspenso do cartão **Ambientes**
 
 Somente um usuário na função Desenvolvedor terá acesso ao **Console do Desenvolvedor**. A exceção é para Programas de sandbox, em que qualquer usuário com acesso ao Programa de sandbox do Cloud Manager terá acesso ao **Console do desenvolvedor**.
 
-Consulte [Hibernando e removendo ambientes de sandbox](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) para obter mais detalhes.
+Consulte [Hibernando e removendo ambientes de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) para obter mais detalhes.
 
 
 ![](assets/environ-devconsole.png)
