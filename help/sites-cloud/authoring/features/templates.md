@@ -1,14 +1,13 @@
 ---
 title: 'Criação de modelos de páginas  '
 description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa apenas do desenvolvedor
-translation-type: tm+mt
-source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
+exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4596'
 ht-degree: 97%
 
 ---
-
 
 # Criação de modelos de páginas   {#creating-page-templates}
 
@@ -29,7 +28,7 @@ O **Editor de modelo** permite que os autores do modelo:
 
 Este documento explica como um **autor de modelo** pode usar o console e o editor de modelo para criar e gerenciar modelos editáveis.
 
-Para obter informações detalhadas sobre como os modelos editáveis funcionam em nível técnico, consulte o documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md) para obter mais informações.
+Para obter informações detalhadas sobre como os modelos editáveis funcionam a um nível técnico, consulte o documento do desenvolvedor [Modelos de página](/help/implementing/developing/components/templates.md) para obter mais informações.
 
 >[!NOTE]
 >
@@ -92,11 +91,11 @@ Ao criar um novo modelo editável:
 >
 >Nunca insira qualquer informação que precise ser internacionalizada em um modelo. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, aproveite os recursos de [localização dos componentes principais.](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/get-started/localization.html)
+>Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, aproveite os recursos de [localização dos componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
-Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. Esta é uma tarefa de administrador e está descrita no documento [Modelos de página](/help/implementing/developing/components/templates.md#template-folders).—>
+Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. Esta é uma tarefa de administrador e está descrita no documento [Modelos de Página](/help/implementing/developing/components/templates.md#template-folders).—>
 
 ### Criação de um novo modelo - Autor do modelo {#creating-a-new-template-template-author}
 
@@ -533,7 +532,7 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 >
 >O conteúdo inicial destina-se a preparar componentes e o layout de página que servem como ponto de partida para a criação do conteúdo. Não se destina a ser o conteúdo real que permaneceria intacto. Por esse motivo, o conteúdo inicial não pode ser traduzido.
 >
->Se você precisar incluir texto traduzível no modelo, como em cabeçalhos ou rodapés, poderá usar os recursos de [localização dos componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
+>Se você precisar incluir texto traduzível no modelo, como em cabeçalhos ou rodapés, poderá usar os recursos de [localização dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Editar um modelo - Layout - Autor do modelo {#editing-a-template-layout-template-author}
 
