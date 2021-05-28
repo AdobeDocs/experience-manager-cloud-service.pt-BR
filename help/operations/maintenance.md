@@ -2,15 +2,21 @@
 title: Tarefas de manutenção no AEM como Cloud Service
 description: Tarefas de manutenção no AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-translation-type: tm+mt
-source-git-commit: 068ae08fddd482e4367b4bf1c8cc3776bbb4cc6b
+source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 1%
+source-wordcount: '992'
+ht-degree: 2%
 
 ---
 
 # Tarefas de manutenção no AEM como Cloud Service
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_maintenance"
+>title="Tarefas de manutenção"
+>abstract="Tarefas de manutenção são processos que são executados de acordo com uma programação para otimizar o repositório. Com o AEM como Cloud Service, a necessidade de os clientes configurarem as propriedades operacionais das tarefas de manutenção é mínima. Os clientes podem concentrar seus recursos em preocupações no nível do aplicativo, deixando as operações de infraestrutura para o Adobe."
+>additional-url="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html" text="Guia de manutenção de AEM"
+>additional-url="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks" text="Tarefas de manutenção do Painel de operações"
 
 Tarefas de manutenção são processos que são executados de acordo com uma programação para otimizar o repositório. Com o AEM como Cloud Service, a necessidade de os clientes configurarem as propriedades operacionais das tarefas de manutenção é mínima. Os clientes podem concentrar seus recursos em preocupações no nível do aplicativo, deixando as operações de infraestrutura para o Adobe.
 
