@@ -1,9 +1,9 @@
 ---
 title: Como atualizar seu conteúdo por meio das APIs do AEM Assets
 description: Nesta parte da Jornada do desenvolvedor sem cabeçalho AEM, saiba como usar a REST API para acessar e atualizar o conteúdo dos Fragmentos de conteúdo.
-source-git-commit: 8e96827f9353d6ffdf1e01645f2bc8bdaac2610f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1049'
 ht-degree: 2%
 
 ---
@@ -255,7 +255,7 @@ O uso pode ser diferente dependendo se você está usando um autor ou um ambient
 
 >[!NOTE]
 >
->Para obter mais detalhes, consulte a Referência da API. Especificamente, [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>Para obter mais detalhes, consulte a Referência da API. Especificamente, [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Leitura/entrega {#read-delivery}
 
@@ -325,8 +325,8 @@ Você deve continuar sua jornada sem periféricos de AEM revisando o documento [
 * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 * [API REST de fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [Referência da API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
-* [API Adobe Experience Manager Assets - Fragmentos de conteúdo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [API Adobe Experience Manager Assets - Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
-* [AEM Core Components](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+* [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Explicação do CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Vídeo - Desenvolvimento do CORS com AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
