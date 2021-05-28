@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 8442353b016ccd143b7265b5f20901a11bd48102
 workflow-type: tm+mt
-source-wordcount: '3226'
-ht-degree: 20%
+source-wordcount: '3084'
+ht-degree: 21%
 
 ---
 
@@ -112,7 +112,7 @@ Os componentes do Dynamic Media disponíveis incluem:
 
 ### Componente: Dynamic Media {#dynamic-media-component}
 
-O componente Dynamic Media é inteligente. Dependendo de você adicionar uma imagem ou um vídeo, você terá várias opções. O componente oferece suporte a predefinições de imagem, visualizadores baseados em imagem, como conjuntos de imagens, conjuntos de rotação, conjuntos de mídia mista e vídeo. Além disso, o visualizador é responsivo: o tamanho da tela muda automaticamente com base no tamanho da tela. Todos são visualizadores HTML5.
+O componente Dynamic Media é inteligente. Se você adicionar uma imagem ou um vídeo, você terá várias opções. O componente oferece suporte a predefinições de imagem, visualizadores baseados em imagem, como conjuntos de imagens, conjuntos de rotação, conjuntos de mídia mista e vídeo. Além disso, o visualizador é responsivo: o tamanho da tela muda automaticamente com base no tamanho da tela. Todos são visualizadores HTML5.
 
 >[!NOTE]
 >
@@ -165,16 +165,16 @@ Você pode editar as seguintes configurações do Dynamic Media tocando no ícon
 
    Você pode editar as seguintes configurações avançadas ao tocar em **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Otimizar para dispositivos]**  de resolução mais alta - marque a caixa de seleção (padrão) para permitir a otimização do DPR (Device Pixel Ratio).
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
-   Consulte também [Sobre a otimização da taxa de pixels do dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Observe que qualquer valor [!DNL Experience Manager] do DPR de imagem inteligente da Dynamic Media é ignorado.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   A opção **[!UICONTROL Otimizar para dispositivos de resolução mais alta]** só é mostrada quando o seguinte é verdadeiro:
-   * Em Tipo de predefinição, **[!UICONTROL Predefinição de imagem]** é selecionado e **[!UICONTROL RESS_IP]** é selecionado na lista suspensa **[!UICONTROL Predefinição de imagem]**.
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-   ![configuração da relação de pixels do dispositivo para predefinição de imagem](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
 
 * **[!UICONTROL Título]**  - Altere o título da imagem.
 
@@ -243,17 +243,17 @@ Você pode editar a seguinte configuração do Dynamic Media clicando em **[!UIC
 
 * **[!UICONTROL Ativar correspondência de proporção de aspecto]**  - Para permitir que a Dynamic Media escolha uma representação de recorte inteligente com uma proporção de aspecto que melhor corresponda à proporção de aspecto da imagem original, selecione esta opção.
 
-* **[!UICONTROL Otimizar para dispositivos]**  de resolução mais alta - marque a caixa de seleção (padrão) para permitir a otimização do DPR (Device Pixel Ratio).
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
-   Consulte também [Sobre a otimização da taxa de pixels do dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Observe que qualquer valor [!DNL Experience Manager] do DPR de imagem inteligente da Dynamic Media é ignorado.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   A opção **[!UICONTROL Otimizar para dispositivos de resolução mais alta]** só é mostrada quando o seguinte é verdadeiro:
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
-   * Em Tipo de predefinição, a opção **[!UICONTROL Recorte inteligente]** é selecionada.
+  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
-   ![configuração de proporção de pixels do dispositivo para recorte inteligente](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
 
 * **[!UICONTROL Título]**  - Altere o título da imagem de Recorte inteligente.
 
@@ -273,7 +273,7 @@ Você pode editar a seguinte configuração do Dynamic Media clicando em **[!UIC
 
 O componente Mídia interativa é para ativos que possuem interatividade em pontos de acesso ou mapas de imagem. Se você tiver uma imagem interativa, um vídeo interativo ou um banner de carrossel, use o componente **[!UICONTROL Mídia interativa]**.
 
-O componente Mídia interativa é inteligente. Dependendo de você adicionar uma imagem ou um vídeo, você terá várias opções. Além disso, o visualizador é responsivo: o tamanho da tela muda automaticamente com base no tamanho da tela. Todos são visualizadores HTML5.
+O componente Mídia interativa é inteligente. Se você adicionar uma imagem ou um vídeo, você terá várias opções. Além disso, o visualizador é responsivo: o tamanho da tela muda automaticamente com base no tamanho da tela. Todos são visualizadores HTML5.
 
 >[!NOTE]
 >
