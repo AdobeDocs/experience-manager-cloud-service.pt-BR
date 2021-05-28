@@ -2,11 +2,10 @@
 title: Plug-in Adobe Content Package Maven
 description: Use o plug-in Content Package Maven para implantar aplicativos AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-translation-type: tm+mt
-source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 7%
+source-wordcount: '1847'
+ht-degree: 5%
 
 ---
 
@@ -34,7 +33,7 @@ O AEM as a Cloud Service adere às práticas recomendadas mais recentes para o g
 
 >[!TIP]
 >
->Para obter mais detalhes, consulte o artigo [AEM Estrutura do Projeto](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html) na documentação do AEM como Cloud Service, bem como a documentação [AEM Project Archetype](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html). Ambos são totalmente compatíveis com o AEM 6.5.
+>Para obter mais detalhes, consulte o artigo [AEM Estrutura do Projeto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) na documentação do AEM como Cloud Service, bem como a documentação [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Ambos são totalmente compatíveis com o AEM 6.5.
 
 ## Obter o plug-in do Maven do pacote de conteúdo {#obtaining-the-content-package-maven-plugin}
 
@@ -97,7 +96,7 @@ Os parâmetros na tabela a seguir são comuns a todas as metas, exceto quando an
 | `userId` | `String` | Sim | `admin` | O nome de usuário com o qual autenticar AEM | Todas as metas exceto `package` |
 | `verbose` | `boolean` | Não | `false` | Ativa ou desativa o registro detalhado | Todas as metas exceto `package` |
 
-### criar {#build}
+### build {#build}
 
 Cria um pacote de conteúdo que já está definido em uma instância de AEM.
 
@@ -266,4 +265,4 @@ O AEM Project Archetype mais recente implementa a estrutura de pacotes de práti
 
 >[!TIP]
 >
->Para obter mais detalhes, consulte o artigo [AEM Estrutura do Projeto](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) na documentação do AEM como Cloud Service, bem como a documentação [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html). Ambos são totalmente compatíveis com o AEM 6.5.
+>Para obter mais detalhes, consulte o artigo [AEM Estrutura do Projeto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) na documentação do AEM como Cloud Service, bem como a documentação [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Ambos são totalmente compatíveis com o AEM 6.5.
