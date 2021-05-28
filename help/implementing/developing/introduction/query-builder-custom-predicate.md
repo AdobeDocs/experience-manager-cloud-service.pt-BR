@@ -1,14 +1,13 @@
 ---
 title: Implementando um Avaliador de Predicados Personalizados para o Construtor de Consultas
 description: O Query Builder no AEM oferece uma maneira fácil e personalizável de consultar o repositório de conteúdo
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
-
 
 # Implementando um Avaliador de Predicado Personalizado para o Construtor de Consultas {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
@@ -53,7 +52,7 @@ Ele mapeia uma restrição de pesquisa de nível superior (como `width>200`) par
 
 >[!TIP]
 >
->Para obter mais informações sobre o `PredicateEvaluator` e o pacote `com.day.cq.search`, consulte a [documentação do Java](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html).
+>Para obter mais informações sobre o `PredicateEvaluator` e o pacote `com.day.cq.search`, consulte a [documentação do Java](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementando um Avaliador de Predicados Personalizados para Metadados de Replicação {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -132,7 +131,7 @@ O projeto `cq-search` contém a classe abstrata `AbstractPredicateEvaluator`. Is
 
 >[!NOTE]
 >
->O procedimento a seguir explica como criar uma expressão `Xpath` para filtrar dados. Outra opção seria implementar o método `includes` que seleciona dados em uma base de linha. Consulte a [documentação do Java](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html) para obter mais informações.
+>O procedimento a seguir explica como criar uma expressão `Xpath` para filtrar dados. Outra opção seria implementar o método `includes` que seleciona dados em uma base de linha. Consulte a [documentação do Java](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html) para obter mais informações.
 
 1. Crie uma nova classe Java que estende `com.day.cq.search.eval.AbstractPredicateEvaluator`
 1. Anote sua classe com um trecho `@Component` como exibido em [formato diff unificado](https://en.wikipedia.org/wiki/Diff#Unified_format)
