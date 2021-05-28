@@ -2,10 +2,9 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service Release Notes para 2020.8.0.'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-translation-type: tm+mt
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1046'
 ht-degree: 7%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 7%
 A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.8.0.
 
 
-## [!DNL Adobe Experience Manager Sites] como um Cloud Service  {#sites}
+## [!DNL Adobe Experience Manager Sites] como um Cloud Service {#sites}
 
 ### Novidades em [!DNL Sites] {#what-is-new-sites}
 
@@ -24,7 +23,7 @@ A seção a seguir descreve as Notas de versão gerais do Experience Manager as 
 * Capacidade de [criar Inicializações](/help/sites-cloud/authoring/launches/overview.md) no [SPA Editor.](/help/implementing/developing/hybrid/introduction.md)
 
 
-## [!DNL Adobe Experience Manager Assets] como um Cloud Service  {#assets}
+## [!DNL Adobe Experience Manager Assets] como um Cloud Service {#assets}
 
 ### Novidades em [!DNL Assets] {#what-is-new-assets}
 
@@ -41,9 +40,9 @@ A seção a seguir descreve as Notas de versão gerais do Experience Manager as 
 
 * Use um perfil de processamento para gerar metadados personalizados usando o Serviço de computação. Consulte [Metadados personalizados usando o perfil de processamento](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Uma experiência de download mais simples para usuários do Brand Portal que os administradores podem configurar. Consulte [visão geral da experiência de download](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+* Uma experiência de download mais simples para usuários do Brand Portal que os administradores podem configurar. Consulte [visão geral da experiência de download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* As visualizações de documentos PDF nativos e de alta fidelidade agora estão disponíveis no Brand Portal. Consulte [visão geral do visualizador de documentos](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+* As visualizações de documentos PDF nativos e de alta fidelidade agora estão disponíveis no Brand Portal. Consulte [visão geral do visualizador de documentos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
 * Agora você pode invalidar o cache CDN (Content Delivery Network) diretamente de [!DNL Dynamic Media] no AEM como um Cloud Service (em vez de usar [!DNL Dynamic Media Classic]). Isso garante que os ativos mais recentes sejam disponibilizados em minutos em vez de horas. Consulte [Invalidar o cache do CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
