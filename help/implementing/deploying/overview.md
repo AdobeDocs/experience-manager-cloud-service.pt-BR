@@ -3,9 +3,9 @@ title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 feature: Implantação
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3290'
 ht-degree: 1%
 
 ---
@@ -20,8 +20,10 @@ A atualização da [AEM versão](/help/implementing/deploying/aem-version-update
 
 O resto deste documento descreverá como os desenvolvedores devem adaptar suas práticas para que trabalhem com as atualizações de versão do Cloud Service e com as atualizações do cliente.
 
+<!--
 >[!NOTE]
->É recomendável que os clientes com bases de código existentes passem pelo exercício de reestruturação de repositório descrito na [AEM documentação](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+-->
 
 ## Versões do cliente {#customer-releases}
 
@@ -40,8 +42,10 @@ O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar o
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
+<!--
 >[!NOTE]
->É recomendável que os clientes com bases de código existentes passem pelo exercício de reestruturação de repositório descrito na [AEM documentação](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
+-->
 
 ## Implantação de pacotes de conteúdo pelo Cloud Manager e pelo Gerenciador de pacotes {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -102,7 +106,7 @@ Após a mudança para a nova versão do aplicativo:
    * Configuração sensível ao contexto (qualquer item em `/conf`) (adicione, modifique, remova)
    * Scripts (pacotes podem acionar hooks de instalação em vários estágios do processo de instalação do pacote). Consulte a [documentação do Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sobre ganchos de instalação. Observe que AEM CS usa atualmente o Filevault versão 3.4.0, que limita os ganchos de instalação para usuários administradores, usuários do sistema e membro do grupo de administradores).
 
-É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author or install.publish em `/apps`. A reestruturação para refletir esta separação foi feita no AEM 6.5 e os detalhes sobre a reestruturação de projeto recomendada podem ser encontrados na documentação [AEM 6.5.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author or install.publish em `/apps`. A reestruturação para refletir esta separação foi feita no AEM 6.5 e os detalhes sobre a reestruturação de projeto recomendada podem ser encontrados na documentação [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >Os pacotes de conteúdo são implantados em todos os tipos de ambiente (desenvolvimento, estágio, produção). Não é possível limitar a implantação a um ambiente específico. Esta limitação está em vigor para garantir a opção de uma execução de teste de execução automatizada. O conteúdo específico de um ambiente requer instalação manual pelo Gerenciador de pacotes.
