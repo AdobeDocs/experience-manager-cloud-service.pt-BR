@@ -1,14 +1,13 @@
 ---
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
-translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1907'
 ht-degree: 60%
 
 ---
-
 
 # Editar as propriedades da página {#editing-page-properties}
 
@@ -36,7 +35,7 @@ As propriedades são distribuídas por várias guias.
 
 * **Marcas**
 
-   Aplique uma identidade de marca consistente em todas as páginas, anexando um arquivo de marca a cada título de página. Essa funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior dos [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+   Aplique uma identidade de marca consistente em todas as páginas, anexando um arquivo de marca a cada título de página. Essa funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior dos [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 
    * **Override**  - Marque a opção para definir o rastreamento da marca nesta página.
       * O valor será herdado por qualquer página secundária, a menos que também tenha seus valores **Override** definidos.
@@ -124,7 +123,7 @@ As propriedades são distribuídas por várias guias.
 
 * **Requisitos de autenticação**
 
-   * **Habilitar**  - Habilitar o uso de autenticação para acessar a página
+   * **Habilitar**  - Habilitar o uso da autenticação para acessar a página
 
       >[!NOTE]
       >
@@ -136,7 +135,7 @@ As propriedades são distribuídas por várias guias.
 
    * **Exportar configuração**  - Especifica uma configuração de exportação
 
-### Miniatura   {#thumbnail}
+### Miniatura  {#thumbnail}
 
 Configurar a miniatura da página
 
@@ -149,7 +148,7 @@ Configurar a miniatura da página
 
 * **Compartilhamento em rede social**
 
-   Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente de compartilhamento principal](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/sharing.html).
+   Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente de compartilhamento principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
 
    * **Permitir o compartilhamento de usuário para Facebook**
    * **Permitir o compartilhamento de usuário para Pinterest**
@@ -176,7 +175,7 @@ Configurar a miniatura da página
    >[!NOTE]
    >Para selecionar essa opção, é necessário que a conta de usuário esteja no `Target Administrators`grupo.
 
-### Permissões   {#permissions}
+### Permissões  {#permissions}
 
 * **Permissões**
 
@@ -198,7 +197,7 @@ Essa guia só fica visível para páginas que servem como blueprints. Os bluepri
 
 * **Configurações de implantação**  - Controla as circunstâncias sob as quais as modificações serão propagadas na Live Copy
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Sincronizar**  - Sincronize a Live Copy com o Blueprint, mantendo as modificações locais
 * **Redefinir**  - Redefinir Live Copy para estado do Blueprint, removendo modificações locais
