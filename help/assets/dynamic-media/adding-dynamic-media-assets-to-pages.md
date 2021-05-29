@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 8442353b016ccd143b7265b5f20901a11bd48102
+source-git-commit: 33d5e756379af671f345e6f4e02d4a955f73a3c9
 workflow-type: tm+mt
-source-wordcount: '3084'
+source-wordcount: '3186'
 ht-degree: 21%
 
 ---
@@ -165,16 +165,16 @@ Você pode editar as seguintes configurações do Dynamic Media tocando no ícon
 
    Você pode editar as seguintes configurações avançadas ao tocar em **[!UICONTROL Editar]** no componente.
 
-<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
+* **[!UICONTROL Otimizar para dispositivos]**  de resolução mais alta - marque a caixa de seleção (padrão) para permitir a otimização do DPR (Device Pixel Ratio).
 
-  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   A opção **[!UICONTROL Otimizar para dispositivos de resolução mais alta]** só é mostrada quando o seguinte é verdadeiro:
+   * Em Tipo de predefinição, **[!UICONTROL Predefinição de imagem]** é selecionado e **[!UICONTROL RESS_IP]** é selecionado na lista suspensa **[!UICONTROL Predefinição de imagem]**.
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
+   ![configuração da relação de pixels do dispositivo para predefinição de imagem](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
-  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
+<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Título]**  - Altere o título da imagem.
 
@@ -243,17 +243,17 @@ Você pode editar a seguinte configuração do Dynamic Media clicando em **[!UIC
 
 * **[!UICONTROL Ativar correspondência de proporção de aspecto]**  - Para permitir que a Dynamic Media escolha uma representação de recorte inteligente com uma proporção de aspecto que melhor corresponda à proporção de aspecto da imagem original, selecione esta opção.
 
-<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
+* **[!UICONTROL Otimizar para dispositivos]**  de resolução mais alta - marque a caixa de seleção (padrão) para permitir a otimização do DPR (Device Pixel Ratio).
 
-  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   A opção **[!UICONTROL Otimizar para dispositivos de resolução mais alta]** só é mostrada quando o seguinte é verdadeiro:
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
+   * Em Tipo de predefinição, a opção **[!UICONTROL Recorte inteligente]** é selecionada.
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+   ![configuração de proporção de pixels do dispositivo para recorte inteligente](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
+<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
 
-  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
+<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Título]**  - Altere o título da imagem de Recorte inteligente.
 
