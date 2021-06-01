@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3452f877960a0067aa4eb1041e58a0b0e64340dd
+source-git-commit: 40897b9194de56251da73cbea8718845882f98af
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1093'
 ht-degree: 3%
 
 ---
@@ -142,7 +142,23 @@ A próxima versão está planejada para 10 de junho de 2021.
 
 ## Ferramenta Transferência de conteúdo {#content-transfer-tool}
 
-### Data de lançamento {#release-date-ctt}
+### Data de lançamento {#release-date-ctt-latest}
+
+A Data de lançamento da ferramenta Transferência de conteúdo v1.4.6 é 27 de maio de 2021.
+
+### Novidades {#what-is-new-ctt-latest}
+
+* Uma nova instrução de log foi adicionada ao log de erros do início rápido, se o usuário não tiver permissão de execução no executável Java.
+
+* Quando um usuário exclui um conjunto de migração da interface do usuário da CTT, onde uma extração foi executada, a pasta `tmp` associada a esse conjunto de migração será excluída para economizar espaço.
+
+### Correções de erros {#bug-fixes-ctt-latest}
+
+* Ao excluir um conjunto de migração, ocasionalmente, uma mensagem de erro inútil apareceria na interface do usuário da CTT. Isso foi corrigido.
+
+* Durante a execução do Mapeamento de usuários, se os usuários tivessem o mesmo endereço de email no destino e no host, mas nomes de usuários diferentes, a assimilação inteira falharia. Isso foi corrigido. Nesse cenário conflitante, o usuário/grupo é ignorado e registrado como um conflito no arquivo de log.
+
+### Data de lançamento {#release-date-ctt-may}
 
 A Data de lançamento da ferramenta Transferência de conteúdo v1.4.0 é 11 de maio de 2021.
 
