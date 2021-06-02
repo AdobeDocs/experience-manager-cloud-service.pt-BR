@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 07a03d603e2a5e0a7d55a64862f991fedebbf93d
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2301'
 ht-degree: 1%
 
 ---
@@ -251,3 +251,7 @@ Se a porta 587 tiver sido solicitada (somente permitida se o servidor de e-mail 
 * defina `smtp.ssl` para `false`
 
 A propriedade `smtp.starttls` será automaticamente definida pelo AEM como um Cloud Service no tempo de execução para um valor apropriado. Portanto, se `smtp.tls` estiver definido como true, `smtp.startls` será ignorado. Se `smtp.ssl` for definido como falso, `smtp.starttls` será definido como verdadeiro. Isso ocorre independentemente dos valores `smtp.starttls` definidos na configuração OSGI.
+
+## Recommendations e diretrizes para [!DNL Assets] {#use-cases-assets}
+
+Para saber mais sobre casos de uso de desenvolvimento, recomendações e materiais de referência do Assets as a Cloud Service, consulte [Referência do desenvolvedor para Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
