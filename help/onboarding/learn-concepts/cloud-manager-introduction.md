@@ -1,9 +1,9 @@
 ---
 title: Saiba o que é o Cloud Manager
 description: Siga esta página para saber mais sobre o Cloud Manager, os programas do Cloud Manager e os ambientes.
-source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
+source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ O Administrador do sistema será responsável pela configuração da equipe do C
 
 ## Programas do Cloud Manager {#cloud-manager-programs}
 
-Os Programas do Cloud Manager representam conjuntos de ambientes do Cloud Manager que oferecem suporte a conjuntos lógicos de iniciativas de negócios, normalmente correspondendo a um SLA (Service Level Agreement, contrato de nível de serviço) adquirido. Por exemplo, um Programa pode representar os recursos AEM para suportar os sites públicos globais, enquanto outro Programa representa um DAM central interno. Assista a este vídeo para saber mais.
+Os Programas do Cloud Manager representam conjuntos de ambientes do Cloud Manager que oferecem suporte a conjuntos lógicos de iniciativas de negócios, normalmente correspondendo a um SLA (Service Level Agreement, contrato de nível de serviço) adquirido. Por exemplo, um Programa pode representar os recursos AEM para suportar os sites públicos globais, enquanto outro Programa representa um DAM central interno. Assista a este [vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en) para saber mais sobre como usar os programas do Cloud Manager.
 
 Um usuário pode criar um programa de **Sandbox** ou **Produção**.
 
