@@ -2,7 +2,7 @@
 title: Usar a ferramenta Mapeamento de usuários
 description: Usar a ferramenta Mapeamento de usuários
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: d7f74356db14c40ce2e1e76f96211a277fed8b93
+source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Uma mudança importante no AEM como Cloud Service é o uso totalmente integrado 
 
 ### Ferramenta de Mapeamento de Usuário {#mapping-tool}
 
-A ferramenta Transferência de conteúdo (sem Mapeamento de usuários) migrará qualquer usuário e grupo associado ao conteúdo que está sendo migrado.  A Ferramenta de mapeamento de usuários faz parte da Ferramenta de transferência de conteúdo e seu único objetivo é modificar os usuários e grupos para que eles possam ser reconhecidos corretamente pelo IMS, a funcionalidade de logon único usada pelo AEM como um Cloud Service.  Quando essas modificações forem feitas, a ferramenta Transferência de conteúdo migrará os usuários e grupos do conteúdo especificado como de costume.
+A ferramenta Transferência de conteúdo (sem Mapeamento de usuários) migrará qualquer usuário e grupo associado ao conteúdo que está sendo migrado. A Ferramenta de mapeamento de usuários faz parte da Ferramenta de transferência de conteúdo e seu único objetivo é modificar os usuários e grupos para que eles possam ser reconhecidos corretamente pelo IMS, a funcionalidade de logon único usada pelo AEM como um Cloud Service. Quando essas modificações forem feitas, a ferramenta Transferência de conteúdo migrará os usuários e grupos do conteúdo especificado como de costume.
 
 ## Considerações importantes {#important-considerations}
 
