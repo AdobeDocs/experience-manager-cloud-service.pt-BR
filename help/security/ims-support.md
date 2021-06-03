@@ -2,10 +2,10 @@
 title: Suporte IMS do Adobe Experience Manager as a Cloud Service
 description: Suporte IMS do Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -163,7 +163,7 @@ Para outros usuários, o logon baseado no IMS pode ser usado assim que o IMS for
 
 >[!NOTE]
 >
->Qualquer usuário criado no IMS pode ser criado usando a Adobe ID ou a Federated ID. Se um usuário for configurado usando a Adobe ID, ele será autenticado usando o Provedor de identidade da Empresa para fazer logon.
+>Qualquer usuário criado no IMS pode ser criado usando a Adobe ID ou a Federated ID. Se um usuário for configurado usando o Federated ID, ele será autenticado usando o Provedor de identidade da Empresa para fazer logon.
 
 Eles serão redirecionados para a tela de logon do IMS e precisarão digitar as credenciais:
 
