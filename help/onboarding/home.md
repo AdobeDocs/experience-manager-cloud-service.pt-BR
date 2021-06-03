@@ -2,7 +2,7 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 10e08b100c637db968b405b65d72a896ad411308
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 19%
