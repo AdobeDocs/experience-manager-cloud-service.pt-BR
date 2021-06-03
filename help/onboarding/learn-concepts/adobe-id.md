@@ -1,9 +1,9 @@
 ---
 title: Adobe ID
 description: Esta página descreve as informações de introdução sobre o Adobe ID.
-source-git-commit: d8e4635bba1b8a3e825e70c921a5d0c5aff52990
+source-git-commit: 1918eccf1e734ddcbc46a4efdf6dc730f84be026
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '319'
 ht-degree: 1%
 
 ---
@@ -11,9 +11,11 @@ ht-degree: 1%
 
 # Adobe ID {#adobe-id}
 
-Um Adobe ID é simplesmente o email que você usará para fazer logon e acessar o AEM como Cloud Service ou qualquer solução do Adobe. Essa é a ID de email que o Administrador do sistema usa ao configurar a equipe. Ao usar a Adobe ID, você mantém todos os seus planos e produtos de Adobe associados a uma única conta. Uma Adobe ID é essencial para uma experiência segura e personalizada com aplicativos e serviços do Adobe.
+Um Adobe ID é simplesmente o email que você usará para fazer logon e acessar o AEM como Cloud Service ou qualquer solução do Adobe. Essa é a ID de email que o Administrador do sistema usa ao configurar a equipe. Ao usar a Adobe ID, você mantém todos os seus planos e produtos de Adobe associados a uma única conta.
 
-Consulte [Criar ou atualizar seu Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) para saber mais.
+>[!IMPORTANT]
+>Uma Adobe ID é essencial para uma experiência segura e personalizada com aplicativos e serviços do Adobe, e é necessária quando você deseja comprar produtos Adobe. Ao usar a Adobe ID, você mantém todos os seus planos e produtos de Adobe associados a uma única conta. Consulte [Criar ou atualizar seu Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) para saber mais.
+
 
 Existem três tipos de Adobe ID:
 
