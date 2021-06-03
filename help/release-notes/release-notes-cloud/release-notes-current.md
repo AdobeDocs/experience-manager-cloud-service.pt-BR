@@ -2,10 +2,10 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 40897b9194de56251da73cbea8718845882f98af
+source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 3%
+source-wordcount: '1349'
+ht-degree: 2%
 
 ---
 
@@ -96,6 +96,29 @@ Assista ao vídeo [Visão geral da versão de maio de 2021](https://video.tv.ado
       >
    * Ásia-Pacífico, 24 de junho de 2021.
 
+
+## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
+
+### Novidades em [!DNL Forms] {#what-is-new-forms}
+
+* **Ajuda** contextual: Adição de ajuda contextual para o editor de formulários adaptáveis, editor de modelos e editor de temas para ajudar os autores a entender melhor vários recursos dos editores.
+* **Mensagens de erro no navegador** Propriedades: Adicionadas mensagens de erro para cada propriedade no navegador Adaptive Forms Properties. Essas mensagens ajudam a entender os valores permitidos para um campo.
+
+### Futuro recurso beta de [!DNL Forms] {#what-is-new-forms-prerelease}
+
+Saída como um serviço da nuvem: O serviço de saída ajuda a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo de lote síncrono e assíncrono. O serviço de saída permite criar aplicativos que permitem:
+
+* Gere documentos de formulário finais preenchendo arquivos de modelo com dados XML.
+* Gere formulários de saída em vários formatos, incluindo fluxos de impressão PDF não interativos.
+* Gere PDFs de impressão a partir de PDFs de formulários XFA.
+
+Você pode gravar em formscsbeta@adobe.com para se inscrever no programa beta.
+
+### Erros corrigidos em [!DNL Forms] {#forms-bugs-fixed}
+
+* Em uma etapa Atribuir tarefa dos fluxos de trabalho do AEM Forms, ao substituir o ícone padrão dos botões de ação por um ícone de coral, o fluxo de trabalho para de funcionar e registra uma exceção. O fluxo de trabalho é executado conforme esperado quando os ícones padrão são usados.
+* Na camada de layout, ao alterar o número de colunas, abrir a camada de edição e arrastar alguns componentes em um painel, caixas azuis quadradas começam a aparecer na área de conteúdo do editor de formulários adaptáveis e o editor fica sem resposta.
+* A mensagem de erro de uma opção do editor de regras relacionada ao fornecimento de URL de um ativo adaptável ou externo é muito longa e não é amigável para o usuário.
 
 ## Cloud Manager {#cloud-manager}
 
