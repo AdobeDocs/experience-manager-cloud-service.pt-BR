@@ -1,9 +1,9 @@
 ---
 title: AEM como grupo do Cloud Service e perfis de produto
 description: Siga esta página para saber mais sobre o AEM as a Cloud Service Team e Product Profiles.
-source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
+source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Perfis de produto {#profiles}
 
-Ao conceder acesso de usuário a uma solução Adobe específica, você não quer necessariamente conceder acesso total a ele. Os Perfis de produto permitem que cada solução tenha seu próprio conjunto de permissões do usuário. Elas estão disponíveis e podem ser acessadas pela Adobe Admin Console.
+Ao conceder acesso de usuário a uma solução Adobe específica, você não quer necessariamente conceder acesso total a ele. Os Perfis de produto permitem que cada solução tenha seu próprio conjunto de permissões do usuário. Eles estão disponíveis e podem ser acessados por meio do [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md).
 
 Leia mais sobre [AEM como um Cloud Service product profiles](#aem-product-profiles) e [Cloud Manager product profiles](#cloud-manager-product-profiles) para entender como eles funcionam em conjunto enquanto sua equipe é configurada.
 
@@ -40,13 +40,13 @@ O Cloud Manager tem perfis de produto pré-configurados ou, mais simplesmente, p
 
 Cada um dos perfis de produto tem permissões específicas associadas a ele. Por exemplo, se você estiver na função de um:
 
-* **Proprietário comercial**, você tem a permissão para Adicionar um novo programa ou Editar um programa, adicionar ou atualizar um ambiente, adicionar/editar/excluir o pipeline e executar qualquer pipeline, e implantar o código AEM ambiente ou qualidade de código.
+* **Proprietário da empresa**, você tem permissão para adicionar um novo programa ou editar um programa, adicionar ou atualizar um ambiente, adicionar/editar/excluir o pipeline e executar qualquer pipeline, e implantar código AEM ambiente ou qualidade de código.
 
 * **Gerenciador de implantação**, você tem permissão para adicionar ou atualizar um ambiente, executar qualquer pipeline e implantar código em AEM ambiente ou qualidade de código.
 
 * **Desenvolvedor**, você tem a permissão para gerar o Token de acesso pessoal para acessar o Git.
 
-* **Gerenciador de programas**, você tem permissão para acessar o Git.
+* **Gerenciador de programas**, você tem permissão para programar pipelines, substituir portas de qualidade de 3 níveis e fornecer aprovação de produção.
 
 Um usuário pode ser atribuído a vários perfis de produto. Por exemplo, a atribuição de funções de Proprietário comercial e Gerente de implantação a um usuário fornece a combinação ou a soma dessas permissões.
 
@@ -57,4 +57,4 @@ A equipe do Cloud Manager incluirá pelo menos:
 * Um desenvolvedor
 
    >[!NOTE]
-   >Para receber acesso ao AEM como um Cloud Service, os usuários devem pertencer a um dos dois perfis de produto `AEM Users-xxx` ou `AEM Administrators-xxx`, você deve ter permissões para a instância. As permissões para administrar o Cloud Manager associado não serão suficientes.
+   >Para receber acesso ao AEM como um Cloud Service, os usuários devem pertencer a um de dois perfis de produto, como `AEM Users` ou `AEM Administrators`. Você deve receber permissões para a instância. As permissões para administrar o Cloud Manager associado não serão suficientes.
