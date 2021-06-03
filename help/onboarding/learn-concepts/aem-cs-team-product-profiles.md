@@ -1,9 +1,9 @@
 ---
 title: AEM como grupo do Cloud Service e perfis de produto
 description: Siga esta página para saber mais sobre o AEM as a Cloud Service Team e Product Profiles.
-source-git-commit: 312b1ce7dc660d1bb4fe199be0e7403069d30161
+source-git-commit: fbf2ddff7d3b54f76afbd2431a6b5d5772620fd3
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -11,14 +11,17 @@ ht-degree: 0%
 
 # AEM como um grupo do Cloud Service e perfis de produto {#product-profiles}
 
-O AEM como Cloud Service é a oferta totalmente nativa em nuvem que oferece AEM como um serviço. Ele fornece AEM de maneira nativa em nuvem, com novos atributos como sempre ativos, sempre atuais, sempre seguros e sempre em escala. Ao mesmo tempo, mantém a principal proposta de valor que o AEM oferece como uma plataforma personalizável para os clientes e permite que equipes de nível empresarial se integrem em seus procedimentos de desenvolvimento e entrega. Para consultar a [Introdução ao Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en) para saber mais sobre AEM como Cloud Service.
+## Perfis de produto {#profiles}
 
-Sua AEM como membros da equipe de Cloud Service será adicionada e atribuída a um ou mais dos seguintes perfis de produto por meio do Admin Console durante a integração.
+Ao conceder acesso de usuário a uma solução Adobe específica, você não quer necessariamente conceder acesso total a ele. Os Perfis de produto permitem que cada solução tenha seu próprio conjunto de permissões do usuário. Elas estão disponíveis e podem ser acessadas pela Adobe Admin Console.
 
+Leia mais sobre [AEM como um Cloud Service product profiles](#aem-product-profiles) e [Cloud Manager product profiles](#cloud-manager-product-profiles) para entender como eles funcionam em conjunto enquanto sua equipe é configurada.
 
 ## AEM como Perfis de produto Cloud Service {#aem-product-profiles}
 
-Os seguintes perfis de produto estão disponíveis no AEM como uma equipe do Cloud Service:
+O AEM como Cloud Service é a oferta totalmente nativa em nuvem que oferece AEM como um serviço. Ele fornece AEM de maneira nativa em nuvem, com novos atributos como sempre ativos, sempre atuais, sempre seguros e sempre em escala. Ao mesmo tempo, mantém a principal proposta de valor que o AEM oferece como uma plataforma personalizável para os clientes e permite que equipes de nível empresarial se integrem em seus procedimentos de desenvolvimento e entrega. Consulte [Introdução ao Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en) para saber mais sobre AEM como Cloud Service.
+
+Sua AEM como membros da equipe de Cloud Service será adicionada e atribuída a um ou mais dos seguintes perfis de produto por meio do Admin Console durante a integração.
 
 * **Administrador** AEM: Normalmente, um Administrador de AEM é atribuído a desenvolvedores, em particular desenvolvedores que precisarão ter acesso, por exemplo, aos ambientes de desenvolvimento. O perfil de produto Administradores de AEM será usado para conceder privilégios de administrador na instância de AEM associada.
 
@@ -52,4 +55,4 @@ A equipe do Cloud Manager incluirá pelo menos:
 * Um desenvolvedor
 
    >[!NOTE]
-   >Para receber acesso ao AEM como um Cloud Service, os usuários devem pertencer a um dos dois perfis de produto `AEM Users-xxx` ou `AEM Administrators-xxx`. Você deve ter permissões para a instância. As permissões para administrar o Cloud Manager associado não serão suficientes.
+   >Para receber acesso ao AEM como um Cloud Service, os usuários devem pertencer a um dos dois perfis de produto `AEM Users-xxx` ou `AEM Administrators-xxx`, você deve ter permissões para a instância. As permissões para administrar o Cloud Manager associado não serão suficientes.
