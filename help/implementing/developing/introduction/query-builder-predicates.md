@@ -2,9 +2,9 @@
 title: Referência de predicado do construtor de consultas
 description: Referência de predicado para a API do Construtor de consultas.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2219'
 ht-degree: 1%
 
 ---
@@ -201,7 +201,7 @@ Ele suporta extração de facetas e fornece dois buckets para os ativos principa
 
 ### memberOf {#memberof}
 
-Este predicado encontra itens que são membros de uma [coleção de recursos sling específica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
+Este predicado encontra itens que são membros de uma [coleção de recursos sling específica](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
 Este é um predicado somente filtragem e não pode utilizar um índice de pesquisa.
 
