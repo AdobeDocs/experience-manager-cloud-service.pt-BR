@@ -4,9 +4,9 @@ description: Saiba como trabalhar com vídeo no Dynamic Media.
 feature: Perfis de vídeo
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
 workflow-type: tm+mt
-source-wordcount: '9475'
+source-wordcount: '9471'
 ht-degree: 6%
 
 ---
@@ -499,7 +499,7 @@ O Google altera periodicamente a interface do usuário. Dessa forma, as etapas p
 
 1. Toque em **[!UICONTROL Quais credenciais são necessárias?]**
 1. Na página **[!UICONTROL Adicionar credenciais ao projeto]**, etapa 2, no cabeçalho **[!UICONTROL Criar uma ID de cliente do OAuth 2.0]**, no campo Nome, digite um nome exclusivo, se desejar. Ou você pode usar o nome padrão especificado pelo Google.
-1. No cabeçalho **[!UICONTROL Authorized JavaScript™ origins]**, no campo de texto, digite o seguinte caminho, substituindo seu próprio domínio e número da porta no caminho, e pressione **[!UICONTROL Enter]** para adicionar o caminho à lista:
+1. No cabeçalho **[!UICONTROL Authorized JavaScript origins]**, no campo de texto, digite o seguinte caminho, substituindo seu próprio domínio e número da porta no caminho, e pressione **[!UICONTROL Enter]** para adicionar o caminho à lista:
 
    `https://<servername.domain>:<port_number>`
 
@@ -607,7 +607,7 @@ Deixe a página Criar configuração do YouTube aberta; você está voltando a e
 1. Retorne à caixa de diálogo Configurações da conta do YouTube. No campo **[!UICONTROL Configuração JSON]**, cole o texto JSON.
 1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Salvar]**.
 
-   Agora você configurará os canais YouTube no Experience Manager.
+   Agora, configure os canais YouTube no Experience Manager.
 
 1. Toque em **[!UICONTROL Adicionar Canal]**.
 1. No campo Nome do canal , insira o nome do canal criado na tarefa **[!UICONTROL Adicionar um ou mais canais ao YouTube]** anteriormente.
@@ -623,7 +623,7 @@ Deixe a página Criar configuração do YouTube aberta; você está voltando a e
 
 1. Toque em **[!UICONTROL Permitir]**.
 
-   Agora você irá configurar tags para publicação.
+   Agora, configure as tags para publicação.
 
 1. **[!UICONTROL Configuração de tags para publicação]**  - Na página Cloud Services > YouTube , toque no ícone de lápis para editar a lista de tags que deseja usar.
 1. Para exibir a lista de tags disponíveis no Experience Manager, toque no ícone da lista suspensa (sinal de interpolação).
@@ -653,7 +653,7 @@ Deixe a caixa de diálogo Configuração da conta do YouTube aberta; você está
 1. Retorne à caixa de diálogo Configurações da conta do YouTube. No campo **[!UICONTROL Configuração JSON]**, cole o texto JSON.
 1. Toque em **[!UICONTROL OK]**.
 
-   Agora você configurará os canais YouTube no Experience Manager.
+   Agora, configure os canais YouTube no Experience Manager.
 
 1. À direita de **[!UICONTROL Canais disponíveis]**, toque em **+** (ícone de adição).
 1. Na caixa de diálogo Configurações do canal do YouTube, no campo Título, digite o nome do canal criado na tarefa **[!UICONTROL Adicionar um ou mais canais ao YouTube]** anteriormente.
@@ -669,7 +669,7 @@ Deixe a caixa de diálogo Configuração da conta do YouTube aberta; você está
 
 1. Toque em **[!UICONTROL Permitir]**.
 
-   Agora você irá configurar tags para publicação.
+   Agora, configure as tags para publicação.
 
 1. **[!UICONTROL Configuração de tags para publicação]**  - Na página Cloud Services > YouTube , toque no ícone de lápis para editar a lista de tags que deseja usar.
 1. Para exibir a lista de tags disponíveis no Experience Manager, toque no ícone da lista suspensa (sinal de interpolação).
@@ -1057,7 +1057,7 @@ As legendas também permitem maior acessibilidade, usando legendas ocultas para 
 >[!NOTE]
 O reprodutor de vídeo usado deve ser compatível com a exibição de legendas.
 
-O Dynamic Media pode converter arquivos de legenda para o formato JSON (JavaScript™ Object Notation). Essa conversão significa que você pode incorporar o texto JSON em uma página da Web como uma transcrição oculta, mas completa, do vídeo. Os mecanismos de pesquisa podem, então, rastrear/indexar o conteúdo para tornar os vídeos mais fáceis de serem descobertos e fornecer aos clientes mais detalhes sobre o conteúdo do vídeo.
+O Dynamic Media pode converter arquivos de legenda para o formato JSON (Notação de objeto JavaScript). Essa conversão significa que você pode incorporar o texto JSON em uma página da Web como uma transcrição oculta, mas completa, do vídeo. Os mecanismos de pesquisa podem, então, rastrear/indexar o conteúdo para tornar os vídeos mais fáceis de serem descobertos e fornecer aos clientes mais detalhes sobre o conteúdo do vídeo.
 
 Consulte [Servindo conteúdo estático (não imagem)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) para obter mais informações sobre como usar a função JSON em um URL.
 
