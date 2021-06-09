@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a548e33d5958c28cf4db002bc3b1d8b086f3b236
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 64%
@@ -73,13 +73,13 @@ Para o desenvolvimento local do complemento CIF usando o AEM as a Cloud Service,
    Exemplo para Mac OSX:
 
    ```bash
-   export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    Exemplo para Windows:
 
    ```bash
-   set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    Essa variável é usada pelo AEM para se conectar ao seu sistema de comércio. Além disso, o complemento CIF inclui um proxy reverso local para disponibilizar o ponto de extremidade GraphQL do Commerce localmente. Isso é usado pelas ferramentas de criação da CIF (console do produto e seletores) e para os componentes do lado do cliente da CIF que fazem chamadas GraphQL diretas.
