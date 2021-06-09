@@ -4,9 +4,9 @@ description: Esta página descreve como criar um projeto no Screens as a Cloud S
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 2e572e0b25e1add25016191b55a78eea050b4ad0
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -26,15 +26,38 @@ Siga as etapas abaixo para criar um novo projeto no Screens as a Cloud Service:
 
 1. Navegue até o Provedor de conteúdo do Screens.
 
-1. Clique em **Criar projeto do Screens** no canto superior direito da barra de ações.
+   >[!NOTE]
+   >Consulte [Uso do Provedor de conteúdo do Screens](/help/screens-cloud/setting-up-project/using-screens-content-provider.md) para saber como acessar o Provedor de conteúdo do Screens para criar seu projeto.
+
+1. Clique em **Criar** —> **Criar entidade** no canto superior direito da barra de ações.
+
+   ![](/help/screens-cloud/assets/create-content/create-project1.png)
+
+1. Selecione **Projeto do Screens** no assistente **Criar**. Clique em **Next**.
+
+   ![](/help/screens-cloud/assets/create-content/create-project2.png)
 
 1. Insira o **Título** do seu projeto na caixa de diálogo **Criar projeto do Screens**, por exemplo, *FirstDigitalExperience*.
+
+   ![](/help/screens-cloud/assets/create-content/create-project3.png)
 
    >[!NOTE]
    >O campo **Nome** é preenchido automaticamente na caixa de diálogo **Criar projeto do Screens** com base no título escolhido.
 
-1. Clique em **Salvar**. Você verá seu projeto do Screens, intitulado como *FirstDigitalExperience* no Provedor de conteúdo do Screens.
+1. Clique em **Criar**. Você verá seu projeto do Screens, intitulado como *FirstDigitalExperience* no Provedor de conteúdo do Screens.
 
+   ![](/help/screens-cloud/assets/create-content/create-project4.png)
+
+
+   Ou,
+
+   1. Clique em **Criar projeto do Screens** na barra de ações.
+
+      ![](/help/screens-cloud/assets/create-content/create-project7.png)
+
+   1. Insira o **Título** do seu projeto. Clique em **Salvar**.
+
+      ![](/help/screens-cloud/assets/create-content/create-project6.png)
    Agora que você configurou um projeto do AEM Screens, pode começar a adicionar canais e locais ao seu projeto.
 
 ### Excluindo um Projeto Existente {#deleting-project}
@@ -45,6 +68,9 @@ Siga as etapas abaixo para excluir um projeto existente do Provedor de conteúdo
 1. Navegue até o Provedor de conteúdo do Screens.
 1. Selecione o projeto que deseja excluir.
 1. Clique em **Excluir** na barra de ações para excluir o projeto.
+
+   ![](/help/screens-cloud/assets/create-content/create-project5.png)
+
 1. Clique em **Excluir** para confirmar a exclusão do projeto.
 
    >[!NOTE]
