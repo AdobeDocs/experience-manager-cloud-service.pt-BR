@@ -4,7 +4,7 @@ description: Esta página descreve como criar e gerenciar canais no Screens as a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 49b7af411e26f0f56a159e288c5aa12c51b81a19
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 4%
@@ -33,7 +33,11 @@ Este documento ajuda você a entender a criação e o gerenciamento de canais pa
 Siga as etapas abaixo para criar um novo canal de sequência no Screens as a Cloud Service:
 
 1. Navegue até o Provedor de conteúdo do Screens.
-1. Navegue até seu projeto do AEM Screens, como SanJoseCafe.
+
+1. Navegue até o projeto do AEM Screens, como *FirstDigitalExperience*.
+
+   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+
 1. Selecione a pasta **Channels** do seu projeto, como SanJoseCafe —> Canais.
 1. Clique em **Criar** na barra de ações.
 1. Selecione o modelo, como **Canal de sequência** do assistente **Criar** e clique em **Próximo**.
