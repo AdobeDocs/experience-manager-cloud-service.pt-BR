@@ -2,18 +2,18 @@
 title: Registro de AEM como Cloud Service
 description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar o logon de dados AEM como um Cloud Service.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a4b21fe922d7b4ff77b01425e0a8cf1c904d7922
 workflow-type: tm+mt
-source-wordcount: '2330'
+source-wordcount: '2333'
 ht-degree: 2%
 
 ---
 
 # Registro para AEM como Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-O AEM as a Cloud Service é uma plataforma para clientes incluírem código personalizado para criar experiências exclusivas para sua base de clientes. Com isso em mente, o registro em log é uma função essencial para depurar e entender a execução de código em desenvolvimento local e em ambientes de nuvem, especialmente os ambientes AEM as a Cloud Service Dev.
+O AEM as a Cloud Service é uma plataforma para clientes incluírem código personalizado para criar experiências exclusivas para sua base de clientes. Com isso em mente, o serviço de registro é uma função essencial para depurar e entender a execução de código em desenvolvimento local e em ambientes de nuvem, especialmente o AEM como ambientes Cloud Service Dev.
 
-Os níveis de registro e registro AEM são gerenciados em arquivos de configuração que são armazenados como parte do projeto AEM no Git e implantados como parte do projeto AEM pelo Cloud Manager. O logon AEM como um Cloud Service pode ser dividido em dois conjuntos lógicos:
+AEM configurações de registro e níveis de log são gerenciados em arquivos de configuração que são armazenados como parte do projeto AEM no Git e implantados como parte do projeto AEM pelo Cloud Manager. O logon AEM como um Cloud Service pode ser dividido em dois conjuntos lógicos:
 
 * Registro de AEM, que executa o registro em log no nível de aplicativo AEM
 * Apache HTTPD Web Server/Dispatcher logging, que executa o log do servidor da Web e do Dispatcher na camada de Publicação.
