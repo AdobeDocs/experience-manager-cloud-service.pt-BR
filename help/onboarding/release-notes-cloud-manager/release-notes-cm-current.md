@@ -2,56 +2,58 @@
 title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.5.0
 description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.5.0
 feature: Informações da versão
-source-git-commit: 13d45a02169fc99be60d73dde91dbc8c2ce03ef8
+source-git-commit: d30f81b8d12a4136d96cdfd1fb8c3e9927c015d1
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '394'
 ht-degree: 3%
 
 ---
 
 
-# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.5.0 {#release-notes}
+# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.6.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.5.0.
+Esta página descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.6.0.
 
 >[!NOTE]
 >Para ver as Notas de versão atuais do Adobe Experience Manager como um Cloud Service, clique [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.5.0 é 6 de maio de 2021.
-A próxima versão está planejada para 10 de junho de 2021.
+A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.6.0 é 10 de junho de 2021.
+A próxima versão está planejada para 15 de julho de 2021.
 
 ### Novidades {#what-is-new}
 
-* A regra de qualidade PackageOverlaps agora detecta casos em que o mesmo pacote foi implantado várias vezes, ou seja, em vários locais incorporados, no mesmo conjunto de pacotes implantado.
+* O Serviço de Pré-visualização será implantado continuamente em todos os Programas. Os clientes serão notificados no produto quando o Programa estiver ativado para o Serviço de visualização. Consulte [Acessando o serviço de visualização](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obter mais detalhes.
 
-* O endpoint do repositório na API pública agora inclui o URL do Git.
+* As Dependências de Maven baixadas durante a etapa de build agora serão armazenadas em cache entre as execuções de pipeline. Esse recurso será ativado para clientes nas próximas semanas.
 
-* O log de implantação baixado por um usuário do Cloud Manager será mais revelador e incluirá detalhes sobre falhas e cenários de sucesso.
+* O nome do programa agora pode ser editado por meio da caixa de diálogo Editar programa .
 
-* Falhas intermitentes encontradas ao enviar o código para o Adobe git foram resolvidas.
+* O nome da ramificação padrão usado durante a criação do projeto e no comando push padrão por meio do gerenciamento de workflows git foi alterado para `main`.
 
-* O complemento Commerce agora pode ser aplicado a programas Sandbox durante o fluxo de trabalho Editar programa .
+* A experiência de edição de programa na interface do usuário foi atualizada.
 
-* A experiência *Editar programa* foi atualizada.
+* A regra de qualidade `ImmutableMutableMixCheck` foi atualizada para classificar os nós `/oak:index` como imutáveis.
 
-* A tabela Nomes de Domínio na página Detalhes do Ambiente exibirá até 250 nomes de Domínio por paginação.
+* As regras de qualidade `CQBP-84` e `CQBP-84--dependencies` foram consolidadas em uma única regra.
 
-* A guia **Solutions &amp; Add-ons** em **Add Program** e **Edit Program** workflows exibirá a solução, mesmo se apenas uma solução estiver disponível para o Programa.
+* Para evitar confusão, as linhas de segmento Publicar AEM e Publicar Dispatcher na página Detalhes do ambiente foram consolidadas.
 
-* A mensagem de erro no log de etapas da criação quando a build não produziu nenhum pacote de conteúdo implantado não estava clara.
+* Uma nova regra de qualidade de código foi adicionada para validar a estrutura de índices `damAssetLucene`. Consulte [Índices de Oak do Ativo do DAM Personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obter mais detalhes.
+
+* A página Detalhes do ambiente agora exibe vários nomes de domínio para os serviços de Publicação e Visualização (conforme aplicável). Consulte [Detalhes do ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes}
 
-* Ocasionalmente, o usuário pode ver um status verde &quot;ativo&quot; ao lado de uma Lista de permissões de IP, mesmo quando essa configuração não foi implantada.
+* Definições de nó JCR contendo uma nova linha após o nome do elemento raiz não foram analisadas corretamente.
 
-* Em vez de remover variáveis &quot;excluídas&quot;, a API de variáveis de pipelines somente as marcaria com o status **DELETED**.
+* A API de repositórios de lista não filtra repositórios excluídos.
 
-* Alguns problemas de qualidade do tipo Código Smell estavam afetando incorretamente a Classificação de confiabilidade.
+* Uma mensagem de erro incorreta era exibida quando um valor inválido era fornecido para a etapa de programação.
 
-* Como domínios curingas não são compatíveis, a interface do usuário não permitirá que o usuário envie um domínio curinga.
+* Ocasionalmente, o usuário pode ver um status verde *ativo* ao lado de uma Lista de permissões de IP, mesmo quando essa configuração não foi implantada.
 
-* Quando uma execução de pipeline era iniciada entre meia-noite e 1h UTC, a versão de artefato gerada pelo Cloud Manager não tinha garantia de ser maior do que uma versão criada no dia anterior.
+* Algumas sequências de edição de programas podem resultar na incapacidade de criar ou editar o pipeline de produção.
 
-* Durante a configuração do programa de sandbox, depois que o projeto com código de amostra for criado com êxito, o Gerenciar Git será exibido como um link do cartão herói na página Visão geral .
+* Algumas sequências de edição de programas podem resultar na página **Visão Geral** exibindo uma mensagem enganosa para executar novamente a configuração do programa.
