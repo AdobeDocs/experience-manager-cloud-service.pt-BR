@@ -2,9 +2,9 @@
 title: Gerenciar ambientes - Cloud Service
 description: Gerenciar ambientes - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
+source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1642'
 ht-degree: 3%
 
 ---
@@ -89,9 +89,7 @@ Visualize a experiência final de um site antes que ele chegue ao ambiente de pu
 
 1. **Versão** AEM: Seu ambiente deve estar AEM versão  `2021.5.5343.20210542T070738Z` ou superior. Certifique-se de que um pipeline de atualização tenha sido executado com êxito em seu ambiente para fazer isso.
 
-1. **Bloqueio** de Lista de permissões IP padrão: Após a criação, o Serviço de visualização terá uma Lista de permissões IP padrão aplicada, rotulada  `Preview Default [Env ID]`, como mostrado na figura abaixo.
-
-   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
+1. **Bloqueio** de Lista de permissões IP padrão: Após a criação, o Serviço de visualização terá uma Lista de permissões IP padrão aplicada, rotulada como  `Preview Default [Env ID]`.
 
    >[!NOTE]
    >Após a primeira criação, você deve desaplicar ativamente a Lista de permissões IP padrão do Serviço de visualização em seu ambiente para habilitar o acesso.
