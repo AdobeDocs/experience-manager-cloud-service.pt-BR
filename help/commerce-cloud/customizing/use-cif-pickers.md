@@ -6,15 +6,14 @@ topics: Development
 version: cloud-service
 activity: develop
 audience: developer
-feature: Commerce Integration Framework
-translation-type: tm+mt
-source-git-commit: 0f2747190523613d2fa1f4710dee1c28d4a5148f
+feature: Estrutura de integração de comércio
+exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
+source-git-commit: 764d70db8026bad1683fffdb44092f1d2a8e8d28
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '579'
 ht-degree: 1%
 
 ---
-
 
 # Seletores de criação de conteúdo e comércio AEM {#cif-pickers}
 
@@ -45,7 +44,9 @@ O campo seletor de produto oferece suporte às seguintes propriedades opcionais:
 
 Além disso, também há suporte para propriedades de campo de diagnóstico padrão como `name`, `fieldLabel` ou `fieldDescription`.
 
-O componente `cifproductfield` requer a clientlib cif.shell.picker. Para adicionar uma clientlib a uma caixa de diálogo, você pode usar a propriedade extraClientlibs.
+>[!CAUTION]
+>
+>O componente `cifproductfield` requer a clientlib `cif.shell.picker`. Para adicionar uma clientlib a uma caixa de diálogo, você pode usar a propriedade extraClientlibs.
 
 Um exemplo completo de trabalho do `cifproductfield` pode ser encontrado no projeto [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consulte também [Personalizando caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) da documentação dos Componentes principais AEM.
 
@@ -70,6 +71,8 @@ O campo do seletor de categoria oferece suporte às seguintes propriedades opcio
 
 Além disso, também há suporte para propriedades de campo de diagnóstico padrão como `name`, `fieldLabel` ou `fieldDescription`.
 
-Igual ao componente `cifproductfield`, o componente `cifcategoryfield` também requer a clientlib cif.shell.picker. Para adicionar uma clientlib a uma caixa de diálogo, você pode usar a propriedade `extraClientlibs` . Consulte [Personalizando caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) da documentação dos Componentes principais AEM.
+>[!CAUTION]
+>
+>Igual ao componente `cifproductfield`, o componente `cifcategoryfield` também requer a clientlib `cif.shell.picker`. Para adicionar uma clientlib a uma caixa de diálogo, você pode usar a propriedade `extraClientlibs` . Consulte [Personalizando caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) da documentação dos Componentes principais AEM.
 
 Um exemplo completo de trabalho do `cifcategoryfield` pode ser encontrado no projeto [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml).
