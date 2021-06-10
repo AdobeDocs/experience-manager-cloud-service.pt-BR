@@ -2,10 +2,10 @@
 title: Implantar o código - Cloud Services
 description: Implantar o código - Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
+source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '616'
+ht-degree: 2%
 
 ---
 
@@ -70,46 +70,7 @@ Consulte [Entendendo os resultados da auditoria de experiência](/help/implement
 
 ## Processo de implantação {#deployment-process}
 
-A seção a seguir descreve como os pacotes de AEM e dispatcher são implantados na fase de estágio e na fase de produção.
-
-O Cloud Manager carrega todos os arquivos target/*.zip produzidos pelo processo de compilação em um local de armazenamento.  Esses artefatos são recuperados desse local durante as fases de implantação do pipeline.
-
-Quando o Cloud Manager é implantado em topologias que não são de produção, o objetivo é concluir a implantação o mais rápido possível e, portanto, os artefatos são implantados em todos os nós simultaneamente da seguinte maneira:
-
-1. O Cloud Manager determina se cada artefato é um pacote de AEM ou dispatcher.
-1. O Cloud Manager remove todos os dispatchers do Balanceador de Carga para isolar o ambiente durante a implantação.
-
-   A menos que configurado de outra forma, você pode ignorar as Alterações no Balanceador de Carga nas Implantações de Desenvolvimento e Estágio, ou seja, desanexar e anexar etapas em pipelines não de produção, para ambientes de desenvolvimento e o pipeline de produção, para ambientes de preparo.
-
-   >[!NOTE]
-   >
-   >Espera-se que esse recurso seja usado principalmente por clientes 1-1-1.
-
-1. Cada artefato de AEM é implantado em cada instância AEM por meio de APIs do Gerenciador de Pacotes, com dependências de pacote determinando a ordem de implantação.
-
-   Para saber mais sobre como usar pacotes para instalar novas funcionalidades, transferir conteúdo entre instâncias e fazer backup do conteúdo do repositório, consulte Como trabalhar com pacotes.
-
-   >[!NOTE]
-   >
-   >Todos os artefatos AEM são implantados tanto no autor quanto nos editores. Os modos de execução devem ser aproveitados quando configurações específicas de nó são necessárias. Para saber mais sobre como os modos de Execução permitem ajustar a instância do AEM para uma finalidade específica, consulte Modos de execução.
-
-1. O artefato do dispatcher é implantado em cada dispatcher da seguinte maneira:
-
-   1. O backup das configurações atuais é feito e copiado para um local temporário
-   1. Todas as configurações são excluídas, exceto os arquivos imutáveis. Consulte Gerenciar suas configurações do Dispatcher para obter mais detalhes. Isso limpa os diretórios para garantir que nenhum arquivo órfão seja deixado para trás.
-   1. O artefato é extraído para o diretório `httpd`.  Arquivos imutáveis não são substituídos. Quaisquer alterações feitas em arquivos imutáveis no repositório Git serão ignoradas no momento da implantação.  Esses arquivos são fundamentais para a estrutura do AMS Dispatcher e não podem ser alterados.
-   1. O Apache executa um teste de configuração. Se nenhum erro for encontrado, o serviço será recarregado. Se ocorrer um erro, as configurações serão restauradas a partir do backup, o serviço será recarregado e o erro será relatado ao Cloud Manager.
-   1. Cada caminho especificado na configuração do pipeline é invalidado ou liberado do cache do dispatcher.
-
-   >[!NOTE]
-   >
-   >O Cloud Manager espera que o artefato do dispatcher contenha o conjunto completo de arquivos.  Todos os arquivos de configuração do dispatcher devem estar presentes no repositório Git. Arquivos ou pastas ausentes resultarão em falha na implantação.
-
-1. Após a implantação bem-sucedida de todos os pacotes de AEM e dispatcher em todos os nós, os dispatchers serão adicionados novamente ao balanceador de carga e a implantação será concluída.
-
-   >[!NOTE]
-   >
-   >Você pode ignorar as alterações no balanceador de carga em implantações de desenvolvimento e estágio, ou seja, desanexar e anexar etapas em pipelines não de produção, para ambientes de desenvolvedor e no pipeline de produção, para ambientes de preparo.
+Todas as implantações de Cloud Service seguem um processo contínuo para garantir tempo de inatividade zero. Consulte [Como as implantações em andamento funcionam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) para saber mais.
 
 ### Implantação para Fase de Produção {#deployment-production-phase}
 
