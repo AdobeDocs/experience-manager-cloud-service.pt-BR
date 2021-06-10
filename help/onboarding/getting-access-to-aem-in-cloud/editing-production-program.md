@@ -2,8 +2,7 @@
 title: 'Editando um programa de produção '
 description: Editando um programa de produção
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
-translation-type: tm+mt
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -31,7 +30,7 @@ Siga as etapas abaixo para editar um programa de Produção:
 
    Navegue até a guia **General** para editar a descrição do programa.
 
-   ![](assets/edit-program-general.png)
+   ![](assets/edit-program-prod1.png)
 
    A guia **Soluções e complementos** exibe duas opções, como **Sites** e **Ativos** para programas de Produção e Sandbox. Além disso, você pode selecionar a opção complementar **Commerce**, que está disponível em **Sites**, conforme mostrado na figura abaixo.
 
@@ -40,7 +39,7 @@ Siga as etapas abaixo para editar um programa de Produção:
    >[!NOTE]
    >Pelo menos uma solução deve ser selecionada para um Programa, ou seja, o usuário não tem permissão para desmarcar todas as soluções durante o fluxo de trabalho Editar programa.
 
-1. Clique em **Save** para concluir o fluxo de trabalho do programa de edição.
+1. Clique em **Atualizar** para concluir o fluxo de trabalho de edição do programa.
 
 
 ## Considerações ao editar um programa {#considerations-editing}
