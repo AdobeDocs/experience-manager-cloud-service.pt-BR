@@ -2,7 +2,7 @@
 title: Gerenciar ambientes - Cloud Service
 description: Gerenciar ambientes - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 11d12e43de7a71a59f565379e95ba57b13180fed
+source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -87,7 +87,7 @@ O recurso Serviço de visualização fornece um Serviço de visualização (publ
 
 Visualize a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente. Alguns indicadores antes de visualizar e usar o Serviço de visualização:
 
-1. **Versão** AEM: Seu ambiente deve estar AEM versão  `2021.5.5343.20210542T070738Z` ou superior. Certifique-se de que um pipeline de atualização tenha sido executado com êxito em seu ambiente para fazer isso.
+1. **Versão** AEM: Seu ambiente deve estar AEM versão  `2021.05.5368.20210529T101701Z` ou superior. Certifique-se de que um pipeline de atualização tenha sido executado com êxito em seu ambiente para fazer isso.
 
 1. **Bloqueio** de Lista de permissões IP padrão: Após a criação, o Serviço de visualização terá uma Lista de permissões IP padrão aplicada, rotulada como  `Preview Default [Env ID]`.
 
