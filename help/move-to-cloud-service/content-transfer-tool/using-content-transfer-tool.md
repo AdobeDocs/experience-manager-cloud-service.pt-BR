@@ -2,9 +2,9 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2785'
 ht-degree: 42%
 
 ---
@@ -12,12 +12,6 @@ ht-degree: 42%
 # Usar a ferramenta Transferência de conteúdo {#using-content-transfer-tool}
 
 ## Considerações importantes sobre o uso da ferramenta Transferência de conteúdo {#pre-reqs}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_prereqs"
->title="Considerações importantes sobre o uso da ferramenta Transferência de conteúdo"
->abstract="Analise considerações importantes para usar a ferramenta Transferência de conteúdo , incluindo versões de Java e AEM, tipos compatíveis de armazenamento de dados, considerações sobre grupos de usuários e muito mais."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="Práticas recomendadas e diretrizes"
 
 Siga a seção abaixo para entender as considerações importantes ao executar a ferramenta Transferência de conteúdo:
 
