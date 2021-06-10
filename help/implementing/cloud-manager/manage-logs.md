@@ -2,22 +2,24 @@
 title: Gerenciar registros - Cloud Service
 description: Gerenciar registros - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
+source-git-commit: 8a70a343be8a6843436f1df26adae5b1935ad4c3
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 17%
+source-wordcount: '275'
+ht-degree: 16%
 
 ---
 
 # Acesso e gerenciamento de registros {#manage-logs}
 
-Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado usando o Cartão de Ambiente.  Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
+Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado usando o Cartão de Ambiente. Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
 
-Esses arquivos podem ser baixados por meio da interface do usuário, na página **Visão geral**:
+## Fazendo download de logs {#download-logs}
+
+Esses arquivos podem ser baixados por meio da interface do usuário, no cartão **Ambientes** da página **Visão geral**:
 
 ![](assets/download-logs1.png)
 
-Ou a página **Ambientes**:
+Ou, na página Detalhes do ambiente :
 
 ![](assets/download-logs.png)
 
@@ -28,13 +30,13 @@ Ou a página **Ambientes**:
 
 ## Baixando registros para o serviço de visualização {#download-preview-service}
 
-O usuário pode baixar logs para o serviço de visualização
+Siga as etapas abaixo para baixar logs para o serviço de visualização
 
 1. Navegue até o cartão **Ambientes** na página **Visão geral** do Cloud Manager.
 
-1. Selecione os logs de download no menu ... .
+1. Selecione **Baixar logs** no **..Menu**.
 
-1. Nas opções suspensas do serviço, selecione **Visualizar** ou **Visualizar Dispatcher**, seguido de clicar no ícone de download.
+1. No menu suspenso **Service**, selecione **Preview** ou **Preview Dispatcher**, seguido de clicar no ícone de download.
 
    >[!NOTE]
    >Essa ação também pode ser realizada na página de detalhes do Ambiente .
