@@ -2,7 +2,7 @@
 title: Gerenciar ambientes - Cloud Service
 description: Gerenciar ambientes - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
+source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 3%
@@ -91,22 +91,22 @@ Visualize a experiência final de um site antes que ele chegue ao ambiente de pu
 
 1. **Bloqueio** de Lista de permissões IP padrão: Após a primeira criação, você deve desaplicar ativamente a Lista de permissões IP padrão do Serviço de visualização em seu ambiente para habilitar o acesso.
 
+   Um usuário com as permissões necessárias deve executar um dos seguintes procedimentos para *desbloquear* o acesso ao serviço de visualização e fornecer o acesso desejado:
+
+   1. Crie uma Lista de permissões IP apropriada e a aplique ao serviço de visualização. Siga isto imediatamente ao desaplicar `Preview Default [Env ID] IP Allow List` do Serviço de Pré-visualização.
+
+      OU,
+
+   1. Use o fluxo de trabalho de atualização da Lista de permissões de IP para remover o IP padrão e adicionar IP(s) conforme apropriado. Consulte [Visualização e atualização de uma Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)para saber mais.
+
+      >[!NOTE]
+      >As etapas acima devem ser feitas antes de compartilhar o URL do serviço de visualização com qualquer uma das equipes, para garantir que os membros apropriados de sua equipe possam acessar o URL de visualização.
+
+      Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de bloqueio não será mais exibido, como mostrado abaixo.
+
+      ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+
 1. **Publicar conteúdo na visualização**: Você pode publicar conteúdo no Serviço de visualização usando a interface Gerenciar publicação no AEM. Consulte [Visualização de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) para obter mais detalhes.
-
-Um usuário com as permissões necessárias deve executar um dos seguintes procedimentos para *desbloquear* o acesso ao serviço de visualização e fornecer o acesso desejado:
-
-1. Crie uma Lista de permissões IP apropriada e a aplique ao serviço de visualização. Siga isto imediatamente ao desaplicar `Preview Default [Env ID] IP Allow List` do Serviço de Pré-visualização.
-
-   OU,
-
-1. Use o fluxo de trabalho de atualização da Lista de permissões de IP para remover o IP padrão e adicionar IP(s) conforme apropriado. Consulte [Visualização e atualização de uma Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)para saber mais.
-
-   >[!NOTE]
-   >As etapas acima devem ser feitas antes de compartilhar o URL do serviço de visualização com qualquer uma das equipes, para garantir que os membros apropriados de sua equipe possam acessar o URL de visualização.
-
-   Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de bloqueio não será mais exibido, como mostrado abaixo.
-
-   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## Atualização do ambiente {#updating-dev-environment}
 
