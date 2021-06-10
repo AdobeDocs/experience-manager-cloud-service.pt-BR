@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 7fc99376522238f74eb24efd93f079c03f854aa1
+source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2322'
 ht-degree: 1%
 
 ---
@@ -215,6 +215,10 @@ Para validar se o tráfego está de saída no endereço IP dedicado esperado, ve
 
 AEM como Cloud Service requer que o email de saída seja criptografado. As seções abaixo descrevem como solicitar, configurar e enviar emails.
 
+>[!NOTE]
+>
+>O serviço de email pode ser configurado com suporte a OAuth2. Para obter mais informações, consulte [Suporte OAuth2 para o serviço de email](/help/security/oauth2-support-for-mail-service.md).
+
 ### Solicitando acesso {#requesting-access}
 
 Por padrão, o email de saída é desativado. Para ativá-lo, envie um tíquete de suporte com:
@@ -238,7 +242,7 @@ AEM CS requer que o correio seja enviado através da porta 465. Se um servidor d
 
 Os emails no AEM devem ser enviados usando o [Day CQ Mail Service OSGi service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Consulte a [documentação do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) para obter detalhes sobre a configuração das configurações de email. Para AEM como Cloud Service, os seguintes ajustes devem ser feitos no serviço `com.day.cq.mailer.DefaultMailService OSGI`:
+Consulte a documentação do [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) para obter detalhes sobre a configuração das configurações de email. Para AEM como Cloud Service, os seguintes ajustes devem ser feitos no serviço `com.day.cq.mailer.DefaultMailService OSGI`:
 
 Se a porta 465 tiver sido solicitada:
 
