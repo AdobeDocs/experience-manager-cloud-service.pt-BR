@@ -2,9 +2,9 @@
 title: Gerenciar ambientes - Cloud Service
 description: Gerenciar ambientes - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
+source-git-commit: 7e4d75d90b3f6fad024304781225dfcef6df0e2b
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1652'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ Visualize a experiência final de um site antes que ele chegue ao ambiente de pu
 
    Um usuário com as permissões necessárias deve executar um dos seguintes procedimentos para *desbloquear* o acesso ao Serviço de visualização e fornecer o acesso desejado:
 
-   * Crie uma Lista de permissões IP apropriada e aplique-a ao Serviço de visualização. Siga isto imediatamente ao desaplicar `Preview Default [Env ID] IP Allow List` do Serviço de Pré-visualização.
+   * Crie uma Lista de permissões IP apropriada e aplique-a ao Serviço de visualização. Siga isto imediatamente ao desaplicar `Preview Default [Env ID] IP Allow List` do Serviço de Pré-visualização. Consulte [Desaplicar uma Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) para obter mais detalhes.
 
       *OU*,
 
