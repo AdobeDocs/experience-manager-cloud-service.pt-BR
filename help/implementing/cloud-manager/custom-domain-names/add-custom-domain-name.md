@@ -2,9 +2,9 @@
 title: Adicionar um nome de domínio personalizado
 description: Adicionar um nome de domínio personalizado
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Um usuário deve ser um Proprietário comercial ou Gerente de implantação para
 
 * O AEM as a Cloud Service não oferece suporte a domínios curingas.
 
-* Cada Ambiente do Cloud Manager pode hospedar até 100 domínios personalizados por ambiente.
+* Cada Ambiente do Cloud Manager pode hospedar até 250 domínios personalizados por ambiente.
 
 * O mesmo nome de domínio não pode ser usado em mais de um ambiente.
 
@@ -39,7 +39,7 @@ Siga as etapas abaixo para adicionar um Nome de domínio personalizado na págin
 
 1. Clique no botão **Adicionar Domínio** para abrir a caixa de diálogo **Adicionar Nome de Domínio**.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+   ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. Insira o nome de domínio personalizado em **Domain Name**.
 
@@ -47,6 +47,11 @@ Siga as etapas abaixo para adicionar um Nome de domínio personalizado na págin
    >Você não deve incluir `http://`, `https://` ou espaços ao inserir o seu domínio.
 
 1. Selecione o **Ambiente** cujo serviço de Publicação será associado ao nome do domínio.
+
+1. Selecione o serviço como **Publish** ou **Preview**.
+
+   >[!NOTE]
+   >Agora, os nomes de domínio personalizados são compatíveis com os programas do Cloud Manager for Sites para Serviços de publicação e visualização. Cada Ambiente do Cloud Manager pode hospedar até 250 domínios personalizados por ambiente. Para saber mais sobre o Serviço de visualização, consulte [Serviço de visualização](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
 1. Selecione o **Certificado SSL de Domínio** no menu suspenso e selecione **Continuar**.
 
