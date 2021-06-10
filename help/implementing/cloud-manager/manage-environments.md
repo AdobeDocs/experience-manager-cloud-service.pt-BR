@@ -2,10 +2,10 @@
 title: Gerenciar ambientes - Cloud Service
 description: Gerenciar ambientes - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 4%
+source-wordcount: '1620'
+ht-degree: 3%
 
 ---
 
@@ -61,7 +61,6 @@ Um usuário com as permissões necessárias pode criar os seguintes tipos de amb
    >[!NOTE]
    >Caso ainda não tenha configurado o pipeline de não produção, a tela *Visão geral* exibe o cartão de onde você pode criar o pipeline de não produção.
 
-
 ## Detalhes do ambiente {#viewing-environment}
 
 O cartão **Ambientes** na página Visão geral lista até três ambientes.
@@ -76,8 +75,36 @@ O cartão **Ambientes** na página Visão geral lista até três ambientes.
 
 1. Selecione qualquer um dos ambientes na lista para exibir os detalhes do ambiente.
 
-   ![](assets/environment-view-3.png)
+   >[!NOTE]
+   >O Serviço de Pré-visualização será implantado continuamente em todos os Programas. Os clientes serão notificados no produto quando o Programa estiver ativado para o Serviço de visualização. Consulte a seção [Acesso ao serviço de visualização](#access-preview-service) para obter mais detalhes.
 
+   ![](assets/environ-preview1.png)
+
+
+### Acesso ao Serviço de visualização {#access-preview-service}
+
+O recurso Serviço de visualização fornece um Serviço de visualização (publicação) adicional para cada AEM como um ambiente de Cloud Service via Cloud Manager.
+
+Visualize a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente. Alguns indicadores antes de visualizar e usar o Serviço de visualização:
+
+1. **Versão** AEM: Seu ambiente deve estar AEM versão  `2021.5.5343.20210542T070738Z` ou superior. Certifique-se de que um pipeline de atualização tenha sido executado com êxito em seu ambiente para fazer isso.
+
+1. **Bloqueio** de Lista de permissões IP padrão: Após a primeira criação, você deve desaplicar ativamente a Lista de permissões IP padrão do Serviço de visualização em seu ambiente para habilitar o acesso.
+
+1. **Publicar conteúdo na visualização**: Você pode publicar conteúdo no Serviço de visualização usando a interface Gerenciar publicação no AEM. Consulte [Visualização de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) para obter mais detalhes.
+
+Um usuário com as permissões necessárias deve executar um dos seguintes procedimentos para *desbloquear* o acesso ao serviço de visualização e fornecer o acesso desejado:
+
+1. Crie uma Lista de permissões IP apropriada e a aplique ao serviço de visualização. Siga isto imediatamente ao desaplicar `Preview Default [Env ID] IP Allow List` do Serviço de Pré-visualização.
+
+   OU,
+
+1. Use o fluxo de trabalho de atualização da Lista de permissões de IP para remover o IP padrão e adicionar IP(s) conforme apropriado. Consulte [Visualização e atualização de uma Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)para saber mais.
+
+   >[!NOTE]
+   >As etapas acima devem ser feitas antes de compartilhar o URL do serviço de visualização com qualquer uma das equipes, para garantir que os membros apropriados de sua equipe possam acessar o URL de visualização.
+
+   Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de bloqueio não será mais exibido.
 
 ## Atualização do ambiente {#updating-dev-environment}
 
@@ -145,9 +172,13 @@ Além disso, você pode fazer logon localmente na página de resumo **Ambientes*
 
 ![](assets/environ-login-locally-2.png)
 
+
 ## Gerenciando Nomes de Domínio Personalizados {#manage-cdn}
 
 Navegue até a página de detalhes **Ambientes** na página Resumo dos ambientes .
+
+>[!NOTE]
+>Agora, os nomes de domínio personalizados são compatíveis com os programas do Cloud Manager for Sites para Serviços de publicação e visualização. Cada Ambiente do Cloud Manager pode hospedar até 250 domínios personalizados por ambiente.
 
 As seguintes ações podem ser executadas no serviço de Publicação para o seu ambiente, conforme descrito abaixo:
 
@@ -161,9 +192,13 @@ As seguintes ações podem ser executadas no serviço de Publicação para o seu
 
 1. [Verificando o status de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
+
 ## Gerenciando Listas de permissões IP {#manage-ip-allow-lists}
 
 Navegue até a página Detalhes do ambiente na página Resumo dos ambientes . Você pode executar as seguintes ações no(s) serviço(s) de Publicação e/ou Autor para seu ambiente aqui.
+
+>[!NOTE]
+>O recurso Lista de permissões de IP agora é compatível com o Cloud Manager para Autor, Publicação e Serviços de visualização (disponível nos programas Sites).
 
 ### Aplicação de uma Lista de permissões IP {#apply-ip-allow-list}
 
