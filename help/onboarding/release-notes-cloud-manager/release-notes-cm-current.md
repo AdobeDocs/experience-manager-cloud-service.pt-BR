@@ -2,7 +2,7 @@
 title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.5.0
 description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.5.0
 feature: Informações da versão
-source-git-commit: d30f81b8d12a4136d96cdfd1fb8c3e9927c015d1
+source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -39,6 +39,8 @@ A próxima versão está planejada para 15 de julho de 2021.
 * As regras de qualidade `CQBP-84` e `CQBP-84--dependencies` foram consolidadas em uma única regra.
 
 * Para evitar confusão, as linhas de segmento Publicar AEM e Publicar Dispatcher na página Detalhes do ambiente foram consolidadas.
+
+   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
 
 * Uma nova regra de qualidade de código foi adicionada para validar a estrutura de índices `damAssetLucene`. Consulte [Índices de Oak do Ativo do DAM Personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obter mais detalhes.
 
