@@ -2,8 +2,7 @@
 title: 'Edição de um programa de sandbox '
 description: Edição de um programa de sandbox
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
-translation-type: tm+mt
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -31,7 +30,7 @@ Siga as etapas abaixo para editar um programa de sandbox:
 
    Navegue até a guia **General** para editar a descrição do programa.
 
-   ![](assets/edit-program-general.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/edit-program-sandboxa.png)
 
    A guia **Soluções e complementos** exibe duas opções, como **Sites** e **Ativos** para programas de Produção e Sandbox. Além disso, você pode selecionar a opção complementar **Commerce**, que está disponível em **Sites**, conforme mostrado na figura abaixo.
 
@@ -40,7 +39,7 @@ Siga as etapas abaixo para editar um programa de sandbox:
    >[!NOTE]
    >Pelo menos uma solução deve ser selecionada para um Programa, ou seja, o usuário não tem permissão para desmarcar todas as soluções durante o fluxo de trabalho Editar programa.
 
-1. Clique em **Save** para concluir o fluxo de trabalho do programa de edição.
+1. Clique em **Atualizar** para concluir o fluxo de trabalho de edição do programa.
 
 
 ## Considerações ao editar um programa {#considerations-editing}
