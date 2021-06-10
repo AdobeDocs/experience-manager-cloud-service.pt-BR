@@ -2,9 +2,9 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
+source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1660'
 ht-degree: 2%
 
 ---
@@ -122,12 +122,55 @@ Você pode gravar em formscsbeta@adobe.com para se inscrever no programa beta.
 
 ## Cloud Manager {#cloud-manager}
 
-Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.5.0.
+Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.6.0 e 2021.5.0.
+
+## Data de lançamento {#release-date-june-cm}
+
+A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.6.0 é 10 de junho de 2021.
+A próxima versão está planejada para 15 de julho de 2021.
+
+### Novidades {#what-is-new-junecm}
+
+* O Serviço de Pré-visualização será implantado continuamente em todos os Programas. Os clientes serão notificados no produto quando o Programa estiver ativado para o Serviço de visualização. Consulte [Acessando o serviço de visualização](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obter mais detalhes.
+
+* As Dependências de Maven baixadas durante a etapa de build agora serão armazenadas em cache entre as execuções de pipeline. Esse recurso será ativado para clientes nas próximas semanas.
+
+* O nome do programa agora pode ser editado por meio da caixa de diálogo Editar programa .
+
+* O nome da ramificação padrão usado durante a criação do projeto e no comando push padrão por meio do gerenciamento de workflows git foi alterado para `main`.
+
+* A experiência de edição de programa na interface do usuário foi atualizada.
+
+* A regra de qualidade `ImmutableMutableMixCheck` foi atualizada para classificar os nós `/oak:index` como imutáveis.
+
+* As regras de qualidade `CQBP-84` e `CQBP-84--dependencies` foram consolidadas em uma única regra.
+
+* Para evitar confusão, as linhas de segmento Publicar AEM e Publicar Dispatcher na página Detalhes do ambiente foram consolidadas.
+
+   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
+
+* Uma nova regra de qualidade de código foi adicionada para validar a estrutura de índices `damAssetLucene`. Consulte [Índices de Oak do Ativo do DAM Personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obter mais detalhes.
+
+* A página Detalhes do ambiente agora exibe vários nomes de domínio para os serviços de Publicação e Visualização (conforme aplicável). Consulte [Detalhes do ambiente](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
+
+### Correções de erros {#bug-fixes-junecm}
+
+* Definições de nó JCR contendo uma nova linha após o nome do elemento raiz não foram analisadas corretamente.
+
+* A API de repositórios de lista não filtra repositórios excluídos.
+
+* Uma mensagem de erro incorreta era exibida quando um valor inválido era fornecido para a etapa de programação.
+
+* Ocasionalmente, o usuário pode ver um status verde *ativo* ao lado de uma Lista de permissões de IP, mesmo quando essa configuração não foi implantada.
+
+* Algumas sequências de edição de programas podem resultar na incapacidade de criar ou editar o pipeline de produção.
+
+* Algumas sequências de edição de programas podem resultar na página **Visão Geral** exibindo uma mensagem enganosa para executar novamente a configuração do programa.
+
 
 ### Data de lançamento {#release-date-cm-may}
 
 A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.5.0 é 6 de maio de 2021.
-A próxima versão está planejada para 10 de junho de 2021.
 
 ### Novidades {#what-is-new-may}
 
