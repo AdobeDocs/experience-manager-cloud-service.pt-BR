@@ -2,9 +2,9 @@
 title: Gerenciar ambientes - Cloud Service
 description: Gerenciar ambientes - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
+source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1623'
 ht-degree: 3%
 
 ---
@@ -104,7 +104,9 @@ Um usuário com as permissões necessárias deve executar um dos seguintes proce
    >[!NOTE]
    >As etapas acima devem ser feitas antes de compartilhar o URL do serviço de visualização com qualquer uma das equipes, para garantir que os membros apropriados de sua equipe possam acessar o URL de visualização.
 
-   Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de bloqueio não será mais exibido.
+   Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de bloqueio não será mais exibido, como mostrado abaixo.
+
+   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## Atualização do ambiente {#updating-dev-environment}
 
