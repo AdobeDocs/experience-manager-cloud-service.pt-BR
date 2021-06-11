@@ -2,37 +2,39 @@
 title: Gerenciar registros - Cloud Service
 description: Gerenciar registros - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: fa1dd46798d2b8f9b0476e5ad8eb74679fb4beb7
+source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 13%
+source-wordcount: '235'
+ht-degree: 14%
 
 ---
 
 # Acesso e gerenciamento de registros {#manage-logs}
 
-Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado usando o Cartão de Ambiente.
+Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado usando o cartão **Ambientes** da página **Visão geral** ou Detalhes do ambiente.
 
 ## Fazendo download de logs {#download-logs}
 
-Siga as etapas abaixo para baixar os logs:
+Siga as etapas abaixo para baixar logs.
 
-1. Você pode baixar logs por meio da interface do usuário, no cartão **Ambientes** da página **Visão geral**:
-
-![](assets/download-logs1.png)
-
-Ou, na página Detalhes do ambiente :
-
-![](assets/download-logs.png)
-
->[!NOTE]
->Independentemente de onde ele seja aberto, a mesma caixa de diálogo é exibida e permite que um arquivo de log individual seja baixado.
+1. Navegue até o cartão **Ambientes** da página **Visão geral**.
 
 1. Selecione **Baixar logs** no **..Menu**.
 
-1. No menu suspenso **Service**, selecione opções como **Preview** ou **Preview Dispatcher**, em seguida, clicando no ícone de download. Essa ação também pode ser realizada na página de detalhes do Ambiente .
+   ![](assets/download-logs1.png)
 
-![](assets/download-preview.png)
+   *Ou*,
+
+   Na página Detalhes do ambiente :
+
+   ![](assets/download-logs.png)
+
+   >[!NOTE]
+   >Independentemente de onde ele seja aberto, a mesma caixa de diálogo é exibida e permite que um arquivo de log individual seja baixado.
+
+1. No menu suspenso **Service**, selecione opções como **Preview** ou **Preview Dispatcher**, em seguida, clicando no ícone de download.
+
+   ![](assets/download-preview.png)
 
 
 ## Faz logon pela API {#logs-through-api}
