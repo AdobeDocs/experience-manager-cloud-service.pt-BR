@@ -2,20 +2,22 @@
 title: Gerenciar registros - Cloud Service
 description: Gerenciar registros - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 8a70a343be8a6843436f1df26adae5b1935ad4c3
+source-git-commit: fa1dd46798d2b8f9b0476e5ad8eb74679fb4beb7
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 16%
+source-wordcount: '245'
+ht-degree: 13%
 
 ---
 
 # Acesso e gerenciamento de registros {#manage-logs}
 
-Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado usando o Cartão de Ambiente. Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
+Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado usando o Cartão de Ambiente.
 
 ## Fazendo download de logs {#download-logs}
 
-Esses arquivos podem ser baixados por meio da interface do usuário, no cartão **Ambientes** da página **Visão geral**:
+Siga as etapas abaixo para baixar os logs:
+
+1. Você pode baixar logs por meio da interface do usuário, no cartão **Ambientes** da página **Visão geral**:
 
 ![](assets/download-logs1.png)
 
@@ -26,22 +28,11 @@ Ou, na página Detalhes do ambiente :
 >[!NOTE]
 >Independentemente de onde ele seja aberto, a mesma caixa de diálogo é exibida e permite que um arquivo de log individual seja baixado.
 
-![](assets/download-logs2.png)
-
-## Baixando registros para o serviço de visualização {#download-preview-service}
-
-Siga as etapas abaixo para baixar logs para o serviço de visualização
-
-1. Navegue até o cartão **Ambientes** na página **Visão geral** do Cloud Manager.
-
 1. Selecione **Baixar logs** no **..Menu**.
 
-1. No menu suspenso **Service**, selecione **Preview** ou **Preview Dispatcher**, seguido de clicar no ícone de download.
+1. No menu suspenso **Service**, selecione opções como **Preview** ou **Preview Dispatcher**, em seguida, clicando no ícone de download. Essa ação também pode ser realizada na página de detalhes do Ambiente .
 
-   >[!NOTE]
-   >Essa ação também pode ser realizada na página de detalhes do Ambiente .
-
-   ![](assets/download-preview.png)
+![](assets/download-preview.png)
 
 
 ## Faz logon pela API {#logs-through-api}
