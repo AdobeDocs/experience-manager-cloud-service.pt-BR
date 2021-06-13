@@ -4,9 +4,9 @@ description: Esta página descreve como publicar um canal no Screens as a Cloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2f49c34a0d45e4fe2793f0a5bfe04f85dbb892ad
+source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,22 @@ Este documento ajuda você a entender a criação de um novo projeto do AEM Scre
 
 Siga as etapas abaixo para publicar o canal:
 
-1. Navegue e selecione o canal em seu projeto, como **FirstDigitalExperience** —> Canais —> ChannelFood.
+1. Navegue e selecione o canal em seu projeto, como **FirstDigitalExperience** —> **Channels** —> **LoopingChannelOne**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. Clique em **Gerenciar publicação** na barra de ações.
 
-1. Selecione a ação como Publicar e Agendar como Agora no assistente Gerenciar publicação e clique em **Próximo**.
+1. Selecione **Ação** como **Publicar** e **Agendamento** como **Agora** no **Assistente para Gerenciar Publicação** e clique em **Próximo**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+
+   >[!NOTE]
+   >Clique em **+ Incluir filhos** na barra de ações e desmarque todas as opções para publicar todos os módulos no seu projeto e clique em Adicionar para publicar. Por padrão, todas as caixas serão marcadas e você terá que desmarcar manualmente as caixas para publicar todos os módulos no seu projeto.
 
 1. Depois de selecionar o canal no assistente **Gerenciar publicação**, clique em **Publicar** para publicar o canal.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## O que vem a seguir {#whats-next}
@@ -48,4 +57,4 @@ Agora, que você publicou seus canais no projeto, é possível:
 * Crie e gerencie localizações do Provedor de conteúdo do Screens
 * Criar e gerenciar reprodutores do Provedor de serviços do Screens
 
-   Você deve continuar sua jornada do Screens como um Cloud Service Network Administrator&#39;s depois de revisar o documento.
+   Você deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento em seguida.
