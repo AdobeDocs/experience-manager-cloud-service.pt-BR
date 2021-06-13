@@ -4,10 +4,10 @@ description: Esta página descreve como criar e gerenciar canais no Screens as a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 49b7af411e26f0f56a159e288c5aa12c51b81a19
+source-git-commit: ece3fae8b65b4dbdc38e63a211a3f55f4eb91333
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 4%
+source-wordcount: '547'
+ht-degree: 7%
 
 ---
 
@@ -36,25 +36,60 @@ Siga as etapas abaixo para criar um novo canal de sequência no Screens as a Clo
 
 1. Navegue até o projeto do AEM Screens, como *FirstDigitalExperience*.
 
-   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+1. Selecione a pasta **Canais** do seu projeto, como **FirstDigitalExperience** —> **Canais** e clique em **Criar** na barra de ações.
 
-1. Selecione a pasta **Channels** do seu projeto, como SanJoseCafe —> Canais.
-1. Clique em **Criar** na barra de ações.
+   ![](/help/screens-cloud/assets/create-content/channel-create1.png)
+
 1. Selecione o modelo, como **Canal de sequência** do assistente **Criar** e clique em **Próximo**.
 
+   ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
    > O assistente **Criar** fornece diferentes tipos de modelos ao criar um canal. Consulte a seção Modelos disponíveis no Assistente de criação para obter mais detalhes.
 
 1. Insira o nome do canal de sequência, como **LoopingChannelOne**, e clique em **Create**.
-Agora você verá um **LoopingChannelOne** na pasta Canais em seu projeto do AEM Screens.
 
-## Gerenciamento de um canal existente {#managing-channels}
+   ![](/help/screens-cloud/assets/create-content/channel-create3.png)
+
+   Agora você verá um **LoopingChannelOne** na pasta Canais em seu projeto do AEM Screens.
+
+1. Depois de criar o canal, agora é possível adicionar conteúdo ao canal. Consulte [Adicionar conteúdo a um canal](#add-content) para saber como adicionar ativos (imagens/vídeos) ao seu canal.
+
+## Gerenciar um canal {#managing-channels}
 
 Você pode editar, exibir propriedades e o painel, copiar, visualizar e excluir um canal.
+
+Navegue até o canal no seu projeto e selecione o canal , conforme mostrado na figura abaixo. Agora é possível selecionar as opções, como editar o canal, visualizar propriedades, visualizar conteúdo, gerenciar a publicação ou excluir o canal na barra de ações.
+
+![](/help/screens-cloud/assets/create-content/channelprop1.png)
+
+### Adicionar conteúdo a um canal {#add-content}
+
+Para adicionar ou editar conteúdo em um canal, siga as etapas abaixo:
+
+1. Selecione o canal que deseja editar, conforme mostrado na figura abaixo. Clique em **Editar** no canto superior esquerdo da barra de ações para abrir o editor.
+
+   ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
+
+1. O editor permite adicionar ativos/componentes ao seu canal que você deseja publicar.
+
+1. Arraste e solte os ativos do painel lateral esquerdo e adicione-os ao editor.
+
+   ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
+
+   >[!NOTE]
+   >Clique em **Preview** para visualizar o conteúdo do seu canal.
+   >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## Modelos disponíveis no Assistente de criação {#available-templates}
 
 Os seguintes modelos estão disponíveis ao usar o assistente de canal **Criar** como:
+
+| Modelos disponíveis | Descrição |
+|--- |--- |
+| Pasta de canais | Permite criar uma pasta para armazenar uma coleção de canais. |
+| Canal de sequência | Permite criar um canal que reproduz os componentes sequencialmente (um por um em uma apresentação de slides). |
+| Canal de tela dividida da barra L esquerda ou direita | Permite que os autores de conteúdo visualizem diferentes tipos de ativos em zonas de tamanho apropriado. |
+
 
 ## O que vem a seguir {#whats-next}
 
