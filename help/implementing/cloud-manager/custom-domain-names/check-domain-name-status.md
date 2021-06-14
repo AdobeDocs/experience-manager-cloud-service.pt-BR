@@ -1,14 +1,13 @@
 ---
 title: Verificando o status do nome de domínio
 description: Verificando o status do nome de domínio
-translation-type: tm+mt
-source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
+exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
+source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
 
 ---
-
 
 # Verificando o status do nome de domínio {#check-status}
 
@@ -42,7 +41,7 @@ A exclusão do nome de domínio personalizado está em processo.
 FailedDeletion do nome de domínio personalizado. Você deve tentar novamente. Consulte [Excluindo um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) para saber mais.
 
 
-## Configurações de CDN pré-existentes para Listas de permissões IP {#pre-existing-cdn}
+## Configurações de CDN pré-existentes para nomes de domínio personalizados {#pre-existing-cdn}
 
 Os clientes com ambientes que incluem configurações de CDN pré-existentes para Listas de permissões de IP, certificados SSL ou nomes de domínio personalizados verão a seguinte mensagem na página de detalhes **Lista de permissões de IP** e **Ambiente**. A mensagem exibida na interface do usuário desaparecerá assim que o cliente migrar totalmente todas as configurações de ambiente pré-existentes por meio da interface do usuário e talvez demore de 1 a 2 dias úteis para a mensagem desaparecer.
 
