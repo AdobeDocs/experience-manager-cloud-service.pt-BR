@@ -4,9 +4,9 @@ description: Esta página descreve como publicar um canal no Screens as a Cloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,4 @@ Siga as etapas abaixo para publicar o canal:
 
 ## O que vem a seguir {#whats-next}
 
-Agora, que você publicou seus canais no projeto, é possível:
-
-* Crie e gerencie localizações do Provedor de conteúdo do Screens
-* Criar e gerenciar reprodutores do Provedor de serviços do Screens
-
-   Você deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento em seguida.
+Agora, que você publicou seus canais no projeto, você deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento, [Instalando e configurando players no Screens como um Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).
