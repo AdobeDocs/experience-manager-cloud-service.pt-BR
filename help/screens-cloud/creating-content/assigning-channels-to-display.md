@@ -4,7 +4,7 @@ description: Esta página descreve como atribuir um canal a uma exibição no Sc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 19%
@@ -71,4 +71,4 @@ Siga as etapas abaixo para atribuir um canal a uma exibição:
 
 ## O que vem a seguir {#whats-next}
 
-Agora, que você atribuiu o canal a uma exibição, você deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento **Instalando e configurando o Player do Screens para AEM como um Cloud Service**.
+Agora, que você atribuiu o canal a uma exibição, você deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento [Instalando e configurando o Player do Screens para AEM como um Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
