@@ -4,9 +4,9 @@ description: Esta página descreve como criar e gerenciar reprodutores no Screen
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8c58378660d865e90a0f5e562119c510cf86343a
+source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,12 @@ ht-degree: 0%
 
 # Criação e gerenciamento de players no Screens como um Cloud Service {#creating-players-screens-cloud}
 
-Depois de publicar os canais do AEM Screens Project, você deve criar reprodutores.
+Depois de publicar os canais do Projeto AEM Screens, você deve criar players do Provedor de serviços do Screens.
+
 Um *Player* executa o software do player para produzir uma saída visual. Ele é capaz de controlar a exibição de uma parte recortada, dimensionada e traduzida de conteúdo ou experiência comum. A configuração da tela está vinculada a uma exibição, mas pode ser substituída caso ocorra um defeito técnico.
+
+>[!NOTE]
+>Você também pode implementar as etapas mencionadas neste Guia depois de instalar o player do Screens.
 
 ## Objetivo {#objective}
 
@@ -26,10 +30,12 @@ Este documento ajuda você a entender a criação e o gerenciamento de players p
 
 ## Criação de um reprodutor {#creating-players}
 
-Siga as etapas abaixo para criar a exibição do Provedor de serviços do Screens:
+Siga as etapas abaixo para criar o reprodutor no Provedor de serviços do Screens:
 
-1. Navegue até o Provedor de serviços do Screens a partir da instância do Cloud Service AEM.
-1. Selecione a guia **Exibe** na barra de navegação esquerda e clique em Criar no canto superior direito da tela.
+1. Navegue até o Provedor de serviços do Screens.
+
+1. Selecione a guia **Exibe** no painel de navegação esquerdo e clique em Criar no canto superior direito da tela.
+
 1. Selecione **Exibir**.
 1. Insira o título como **ChannelFoodDisplay** em Nome de exibição e clique em Criar.
 1. A exibição denominada ChannelFoodDisplay agora será registrada na lista de exibição.
