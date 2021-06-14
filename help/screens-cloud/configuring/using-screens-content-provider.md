@@ -4,10 +4,10 @@ description: Esta página descreve como usar o Provedor de conteúdo do Screens 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 864c9cf72b0c552867422ee59bf85b11b9673ac7
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,11 @@ A seção a seguir descreve como usar o Provedor de conteúdo do Screens, depois
 >**Pré-requisitos**
 >Antes de começar a ler esta seção, consulte [Configuração do Provedor de Serviços do Screens](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md) para saber como navegar até essa interface do usuário pelo Provedor de Serviços do Screens.
 
-Depois de fazer logon no Provedor de conteúdo do Screens, você estará pronto para criar o conteúdo na reprodução do conteúdo.
+Depois de fazer logon no Provedor de conteúdo do Screens, você estará pronto para criar o conteúdo na reprodução do conteúdo. Use o Provedor de conteúdo do Screens para criar e gerenciar:
+
+* Projetos
+* Canais
+* Localizações
 
 ## O que vem a seguir {#whats-next}
 
