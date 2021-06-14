@@ -4,10 +4,10 @@ description: Esta página descreve como atribuir um canal a uma exibição no Sc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2514255c20a87a2e469c1678e6aee20a517eb9ab
+source-git-commit: 8108589cb69c31e1b6d838476efc56684a97728e
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 9%
+source-wordcount: '289'
+ht-degree: 29%
 
 ---
 
@@ -18,9 +18,7 @@ Quando a configuração do projeto for concluída, você deverá atribuir o cana
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como atribuir um canal a uma exibição, uma vez que a exibição esteja pronta e o conteúdo do canal seja preenchido. Depois de ler, você deve:
-
-* Entenda como atribuir um canal a uma exibição do Provedor de serviços do Screens.
+Este documento ajuda você a entender como atribuir um canal a uma exibição, uma vez que a exibição esteja pronta e tenha adicionado conteúdo ao seu canal e publicado-o. Após a leitura, você deve ser capaz de entender como atribuir um canal a uma exibição do Provedor de serviços do Screens.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -35,10 +33,24 @@ Siga as etapas abaixo para atribuir um canal a uma exibição:
 
 1. Navegue até Provedor de serviços do Screens e selecione **Exibe** no painel de navegação esquerdo.
 
-1. Selecione a exibição, como ChannelFoodDisplay na lista e clique em Assign channel para atribuir um canal à exibição.
+1. Clique em **Atribuir canal** à exibição.
 
-1. Selecione o canal, como ChannelFood na lista suspensa. Defina a Prioridade e a Ativação e clique em Criar.
+   ![imagem](/help/screens-cloud/assets/display/assignchannel-1.png)
+
+1. Preencha os seguintes campos da caixa de diálogo **Atribuir um canal**.
+
+   1. Selecione o nome do canal no menu suspenso .
+   1. Escolha a prioridade .
+
+      >[!NOTE]
+      >A prioridade é usada para ordenar as atribuições, no caso de várias delas corresponderem aos critérios de reprodução. A atribuição com o valor mais alto sempre terá precedência sobre aquelas com valores mais baixos. Por exemplo, se houver dois canais, A e B, em que A tem uma prioridade de 1 e B tem uma prioridade de 2, o canal B será exibido, pois tem uma prioridade mais alta que A.
+   1. Selecione a data inicial e a data final de **Ativation**.
+
+      ![imagem](/help/screens-cloud/assets/display/assignchannel-2.png)
+
+1. Clique em **Criar**. Você verá que um canal é atribuído para essa exibição, como mostrado na figura abaixo.
+
+   ![imagem](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-   Depois de clicar em Criar, você verá que um canal é atribuído para essa exibição.
 
