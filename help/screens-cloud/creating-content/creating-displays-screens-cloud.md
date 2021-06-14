@@ -4,10 +4,10 @@ description: Esta página descreve como criar e gerenciar exibições no Screens
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 16%
+source-wordcount: '283'
+ht-degree: 14%
 
 ---
 
@@ -53,3 +53,6 @@ Selecione a exibição e clique em **Delete** na parte inferior do painel, confo
 
 ![imagem](/help/screens-cloud/assets/display/disp-5.png)
 
+## O que vem a seguir {#whats-next}
+
+Agora, que você aprendeu a criar e gerenciar exibições para o seu projeto, deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento [Instalando e configurando o Player do Screens para AEM como um Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
