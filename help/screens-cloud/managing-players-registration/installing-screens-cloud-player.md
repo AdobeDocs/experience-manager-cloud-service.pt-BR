@@ -4,15 +4,15 @@ description: Esta página descreve como instalar players no Screens como um Clou
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '262'
 ht-degree: 1%
 
 ---
 
 
-# Instalar players no Screens como um Cloud Service {#installing-players-screens-cloud}
+# Instalar e configurar players no Screens como um Cloud Service {#installing-players-screens-cloud}
 
 A seção abaixo descreve como instalar players do AEM Screens registrados em instâncias de AEM locais. Além disso, você deve fazer uma redefinição de fábrica do reprodutor existente e registrar o reprodutor novo no AEM Screens como um Cloud Service.
 
