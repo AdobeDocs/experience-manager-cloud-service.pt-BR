@@ -1,12 +1,12 @@
 ---
 title: Usando o Provedor de Conteúdo do Screens
-description: Esta página descreve como usar o Provedor de conteúdo do Screens.
+description: Esta página descreve como usar o Provedor de conteúdo do Screens para criar conteúdo.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
@@ -32,5 +32,6 @@ Depois de fazer logon no Provedor de conteúdo do Screens, você estará pronto 
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender como navegar até o Provedor de conteúdo do Screens, você pode navegar até a próxima etapa, ou seja, Criar e gerenciar projetos no Screens como um Cloud Service.
+Agora, você aprendeu a navegar até o Provedor de conteúdo do Screens, e agora deve continuar com seu Screens como uma jornada de Cloud Service, revisando o documento em [Criação e gerenciamento de projetos no Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+
 
