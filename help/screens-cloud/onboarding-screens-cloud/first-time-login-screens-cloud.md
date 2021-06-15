@@ -4,9 +4,9 @@ description: Esta página descreve as primeiras etapas da introdução ao Screen
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0cc505b7ed96ddf81cae1f92d50d6aa0c9eb7db8
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Clique aqui para baixar o pacote de recursos mais recente.
 
 ## Adicionar usuários ao Adobe Admin Console {#admin-console}
 
-Depois de ter sido provisionado com uma ID de empresa do Adobe Identity Management System (IMS), agora você pode ser integrado em [Adobe Admin Console](https://adminconsole.adobe.com/). Consulte [Usuários do Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) para saber mais sobre como adicionar usuários ao Admin Console.
+Depois de ter sido provisionado com uma ID de empresa do Adobe Identity Management System (IMS), agora você pode acessar [Adobe Admin Console](https://adminconsole.adobe.com/). Consulte [Usuários do Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) para saber mais sobre como adicionar usuários ao Admin Console.
 
 >[!NOTE]
 >Os usuários têm acesso AEM perfil de produto do Cloud Service para que possam fazer logon no AEM usando o Adobe ID ou o Federated ID.
 
 ## O que vem a seguir {#whats-next}
 
-Agora que você foi provisionado com uma IMS Organization ID e adicionado como um usuário à Adobe Admin Console, é possível adicionar o complemento Screens ao programa novo ou existente do Screens as a Cloud Service no Cloud Manager.
+Agora que você foi provisionado com uma IMS Organization ID e adicionado como um usuário à Adobe Admin Console, é possível adicionar [complemento Screens ao novo programa](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) ou a [um programa existente](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) para Screens as a Cloud Service no Cloud Manager.
