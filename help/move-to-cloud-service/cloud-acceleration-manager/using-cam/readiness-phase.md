@@ -4,9 +4,9 @@ description: Esta página fornece uma visão geral sobre a fase Preparação no 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
+source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,12 @@ A Fase de preparação inclui:
 * [Análise de práticas recomendadas](#best-practices-analysis)
 * [Planejamento e configuração](#planning-setup)
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+Clique no cartão do projeto para abrir a página de aterrissagem do projeto e navegue até a seção **Prontidão**, conforme mostrado na figura abaixo.
+
+![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+>[!NOTE]
+>Consulte [Criação e gerenciamento de um projeto no Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) para saber mais.
 
 ## Usando o cartão de análise de práticas recomendadas {#best-practices-analysis}
 
