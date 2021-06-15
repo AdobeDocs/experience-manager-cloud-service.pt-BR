@@ -4,9 +4,9 @@ description: Esta página fornece uma visão geral sobre a fase Preparação no 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
    * Use o ícone de detalhes para exibir os detalhes de cada descoberta de relatório
    * Fazer upload de um novo relatório redefine todas as avaliações
 
-## Usando o Planning e a Configuração {#planning-setup}
+## Usando o Cartão de Planejamento e Configuração {#planning-setup}
 
 Siga esta seção para explorar o cartão de atividade Planejamento e configuração.
 
