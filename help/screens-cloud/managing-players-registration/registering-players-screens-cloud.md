@@ -4,9 +4,9 @@ description: Esta página descreve como registrar players no Screens como um Clo
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,10 @@ Depois de instalar e configurar players para o Screens como um Cloud Service, vo
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender o registro de players no Provedor de serviços do Screens. Depois de ler, você deve:
+Este documento ajuda você a entender o registro de players no Provedor de serviços do Screens. Após a leitura, você deve ser capaz de:
 
-* Entenda como registrar jogadores.
-* Gerencie seus canais em um projeto do AEM Screens, em termos de escopo.
+* entender como registrar jogadores
+* como concluir o processo de registro do Provedor de serviços do Screens
 
 ## Etapas para registrar um reprodutor do Screens {#register-players}
 
@@ -66,3 +66,6 @@ Siga as etapas abaixo para registrar o player:
 
    ![imagem](/help/screens-cloud/assets/player/register-player6.png)
 
+## O que vem a seguir {#whats-next}
+
+Agora, que você instalou e configurou o reprodutor para o modo Nuvem, deve continuar com seu Screens como uma jornada de Cloud Service ao revisar o documento, [Atribuindo reprodutor a uma exibição no Screens como Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) do Provedor de serviços do Screens.
