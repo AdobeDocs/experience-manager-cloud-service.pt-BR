@@ -4,9 +4,9 @@ description: Esta página descreve como instalar e configurar players no Screens
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '270'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Instalar e configurar players no Screens como um Cloud Service {#installing-players-screens-cloud}
 
-A seção abaixo descreve como instalar players do AEM Screens registrados em instâncias de AEM locais. Além disso, você deve fazer uma redefinição de fábrica do reprodutor existente e registrar o reprodutor novo no AEM Screens como um Cloud Service.
+Esta seção descreve como instalar players do AEM Screens registrados em instâncias de AEM locais. Além disso, você deve fazer uma redefinição de fábrica do reprodutor existente e registrar o novo reprodutor no AEM Screens como um Cloud Service.
 
 ## Objetivo {#objective}
 
@@ -48,4 +48,4 @@ Siga as etapas abaixo para atualizar o player:
 
 ## O que vem a seguir {#whats-next}
 
-Agora, que você instalou e configurou o reprodutor para o modo Nuvem, deve continuar com seu Screens como uma jornada Cloud Service, revisando o documento [Registrando Players no Screens como um Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) do Provedor de serviços do Screens.
+Agora, que você instalou e configurou o reprodutor para o modo Nuvem, você deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento [Registrando Players no Screens como um Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) do Provedor de serviços do Screens.
