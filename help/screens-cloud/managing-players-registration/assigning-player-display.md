@@ -4,9 +4,9 @@ description: Esta página descreve como atribuir um player a uma exibição no S
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '229'
 ht-degree: 2%
 
 ---
@@ -34,9 +34,11 @@ Siga as etapas abaixo para atribuir um reprodutor a uma exibição:
 
    ![imagem](/help/screens-cloud/assets/player/register-player8.png)
 
-1. Depois de clicar em Selecionar, você verá a exibição atribuída no painel **EXIBIÇÃO ATRIBUÍDA**.
+## Reprodução de conteúdo {#content-playback}
 
-   Agora, a exibição é atribuída ao seu reprodutor e o canal começará a reproduzir o conteúdo. O reprodutor agora deve baixar e iniciar a reprodução do conteúdo. **Parabéns!**
+Depois de atribuir uma exibição a um reprodutor, conforme mostrado na seção anterior, você verá a exibição atribuída no painel **EXIBIÇÃO ATRIBUÍDA**.
 
-   ![imagem](/help/screens-cloud/assets/player/output.gif)
+Agora, a exibição é atribuída ao seu reprodutor e o canal começará a reproduzir o conteúdo. O reprodutor agora deve baixar e iniciar a reprodução do conteúdo. **Parabéns!**
+
+![imagem](/help/screens-cloud/assets/player/output.gif)
 
