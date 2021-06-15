@@ -4,9 +4,9 @@ description: Esta página descreve como adicionar um complemento do Screens a um
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9d3c43f863cff3117186cd6bcf358a7069a6b255
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '311'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ A seção a seguir descreve como adicionar o Screens como um complemento para um
 
 Siga as etapas abaixo para adicionar o Screens como um complemento a um novo programa no Cloud Manager:
 
-1. Navegue até o Cloud Manager.
+1. Navegue até [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
    >Consulte [Introdução ao Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) para saber mais sobre o Cloud Manager.
