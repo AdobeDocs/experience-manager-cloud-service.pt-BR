@@ -4,7 +4,7 @@ description: Esta página descreve como executar um pipeline para o Screens como
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 371cfaeb0e526197fdf98dea65ed5bc2ca0481a2
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
@@ -59,4 +59,4 @@ A seção a seguir descreve como configurar o pipeline de CI/CD e implantar seu 
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender a executar o pipeline do seu programa no Cloud Manager, você está pronto para seguir para a próxima etapa. A próxima etapa é Configurar e configurar o projeto do Screens.
+Depois de aprender a configurar um ambiente para o seu programa no Cloud Manager, agora você está pronto para seguir para a próxima etapa do processo de integração, ou seja, [Navegando até o Provedor de serviços do Screens](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
