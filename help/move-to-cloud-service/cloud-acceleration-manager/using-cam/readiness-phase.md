@@ -4,9 +4,9 @@ description: Esta página fornece uma visão geral sobre a fase Preparação no 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 3%
 
 ---
@@ -18,20 +18,20 @@ Depois de criar um projeto no Cloud Acceleration Manager, você pode começar a 
 
 A Fase de preparação inclui:
 
-* Análise de práticas recomendadas
-* Planejamento e configuração
+* [Análise de práticas recomendadas](#best-practices-analysis)
+* [Planejamento e configuração](#planning-setup)
 
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
-## Uso da análise de práticas recomendadas {#best-practices-analysis}
+## Usando o cartão de análise de práticas recomendadas {#best-practices-analysis}
 
-Siga as etapas abaixo para usar a Análise de práticas recomendadas:
+Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
 
 1. Clique no botão **Revisar** do cartão **Análise de práticas recomendadas**.
 
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Siga estas etapas para baixar o Analisador de práticas recomendadas e executá-lo em um clone do seu sistema de AEM.
+1. Siga estas etapas para baixar o BPA (Best Practices Analyzer) e executá-lo em um clone de seu sistema de AEM.
 
    1. Navegue até o portal [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) e baixe o Analisador de práticas recomendadas como um arquivo zip.
 
@@ -46,10 +46,10 @@ Siga as etapas abaixo para usar a Análise de práticas recomendadas:
 
 1. Revise e explore o painel de análise de práticas recomendadas do CAM.
 
-   * Clicar em cada cartão abrirá a guia associada
-   * Todas as guias de relatório (incluindo filtragem) podem ser marcadas para compartilhamento ou futura recuperação
-   * Visualize os detalhes de cada conclusão de relatório por meio do ícone de detalhes
-   * Fazer upload de um novo relatório redefinirá todas as avaliações
+   * Clique em cada cartão para abrir a guia associada
+   * É possível marcar todas as guias do relatório (incluindo a filtragem) para compartilhamento ou futura recuperação
+   * Use o ícone de detalhes para exibir os detalhes de cada descoberta de relatório
+   * Fazer upload de um novo relatório redefine todas as avaliações
 
 ## Usando o Planning e a Configuração {#planning-setup}
 
@@ -66,8 +66,5 @@ Siga esta seção para explorar o cartão de atividade Planejamento e configura�
 ## O que vem a seguir {#whats-next}
 
 Depois de aprender a fazer logon no Cloud Acceleration Manager e a criar um projeto, agora você está pronto para passar para a próxima etapa, usando a fase de implementação.
-
-
-
 
 
