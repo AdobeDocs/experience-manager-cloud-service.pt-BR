@@ -4,9 +4,9 @@ description: Esta página descreve como criar e gerenciar canais no Screens as a
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ece3fae8b65b4dbdc38e63a211a3f55f4eb91333
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '540'
 ht-degree: 7%
 
 ---
@@ -19,10 +19,10 @@ Depois de criar um Projeto do AEM Screens, você deve criar canais.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender a criação e o gerenciamento de canais para seu projeto AEM Screens no Provedor de conteúdo do Screens. Depois de ler, você deve:
+Este documento ajuda você a entender a criação e o gerenciamento de canais para seu projeto AEM Screens no Provedor de conteúdo do Screens. Após a leitura, você deve:
 
-* Entenda como criar canais para o Provedor de conteúdo do Screens.
-* Gerencie seus canais em um projeto do AEM Screens, em termos de escopo.
+* saiba como criar canais para o Provedor de conteúdo do Screens
+* gerenciar e editar conteúdo em seus canais
 
 ## Etapas para criar um novo canal de sequência no Screens como um Cloud Service {#create-new-channel}
 
@@ -44,7 +44,7 @@ Siga as etapas abaixo para criar um novo canal de sequência no Screens as a Clo
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > O assistente **Criar** fornece diferentes tipos de modelos ao criar um canal. Consulte a seção Modelos disponíveis no Assistente de criação para obter mais detalhes.
+   > O assistente **Criar** fornece diferentes tipos de modelos ao criar um canal. Consulte a seção [Modelos disponíveis](#available-templates) no Assistente de criação para obter mais detalhes.
 
 1. Insira o nome do canal de sequência, como **LoopingChannelOne**, e clique em **Create**.
 
@@ -52,7 +52,7 @@ Siga as etapas abaixo para criar um novo canal de sequência no Screens as a Clo
 
    Agora você verá um **LoopingChannelOne** na pasta Canais em seu projeto do AEM Screens.
 
-1. Depois de criar o canal, agora é possível adicionar conteúdo ao canal. Consulte [Adicionar conteúdo a um canal](#add-content) para saber como adicionar ativos (imagens/vídeos) ao seu canal.
+   Depois de criar o canal, agora é possível adicionar conteúdo ao canal. Consulte [Adicionar conteúdo a um canal](#add-content) para saber como adicionar ativos (imagens/vídeos) ao seu canal.
 
 ## Gerenciar um canal {#managing-channels}
 
@@ -82,7 +82,7 @@ Para adicionar ou editar conteúdo em um canal, siga as etapas abaixo:
 
 ## Modelos disponíveis no Assistente de criação {#available-templates}
 
-Os seguintes modelos estão disponíveis ao usar o assistente de canal **Criar** como:
+Os seguintes modelos estão disponíveis ao usar o assistente de canal **Criar** :
 
 | Modelos disponíveis | Descrição |
 |--- |--- |
