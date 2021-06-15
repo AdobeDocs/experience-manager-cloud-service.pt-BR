@@ -4,9 +4,9 @@ description: Esta página descreve como publicar um canal no Screens as a Cloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Você pode publicar conteúdo do AEM Screens. O recurso Gerenciar publicação permite que você forneça atualizações de conteúdo do autor para publicar no player. Você pode publicar ou cancelar a publicação de conteúdo para todo o projeto do AEM Screens ou apenas para um de seus canais, local, player ou um aplicativo.
+Você pode publicar conteúdo do AEM Screens. O recurso Gerenciar publicação permite que você forneça atualizações de conteúdo do autor para publicar no player. Você pode publicar ou cancelar a publicação de conteúdo em todo o projeto do AEM Screens ou apenas em um dos canais, local, player ou aplicativo.
 
 >[!IMPORTANT]
 >Depois de criar seu canal ou canais em seu projeto, é obrigatório publicar os canais para exibir os canais/canais na exibição da lista de inventário no Provedor de serviços da AEM Screens.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender a criação de um novo projeto do AEM Screens no Provedor de conteúdo do Screens. Depois de ler, você deve:
+Este documento ajuda você a entender a criação de um novo projeto do AEM Screens no Provedor de conteúdo do Screens. Após a leitura, você deve ser capaz de:
 
-* Saiba como publicar um canal.
-* Ser capaz de gerenciar a publicação do canal, em termos de escopo.
+* saiba como publicar um canal.
+* gerenciar a publicação, em termos de escopo
 
 ## Etapas para publicar um canal {#publish-channel}
 
