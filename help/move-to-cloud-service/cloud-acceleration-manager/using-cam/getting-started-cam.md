@@ -4,10 +4,10 @@ description: Esta página fornece uma visão geral sobre como usar e começar a 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 4%
+source-wordcount: '480'
+ht-degree: 3%
 
 ---
 
@@ -54,14 +54,41 @@ Siga as etapas abaixo para criar um novo projeto do
 
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-3.png)
 
-   Selecione o projeto e passe o mouse sobre ele para editar ou excluir o projeto, como mostrado na figura abaixo.
+1. O projeto agora é criado e exibido na página de aterrissagem do **Cloud Acceleration Manager**.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing.png)
 
 1. Clique no cartão do projeto para entrar no projeto. Isso o levará à página de aterrissagem do projeto.
 
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
+## Gerenciar o projeto {#manage-project}
+
+É possível editar o nome do projeto, a descrição, a imagem em miniatura ou excluir o projeto.
+
+### Editar o projeto {#edit-project}
+
+Siga as etapas abaixo para editar seu projeto:
+
+1. Selecione o projeto, passe o mouse sobre ele e clique no ícone de lápis para editar o projeto, como mostrado na figura abaixo.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. Você pode editar o nome do projeto, a descrição e até mesmo fazer upload de uma nova imagem ou editar uma existente na caixa de diálogo **Editar projeto**.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-edit.png)
+
+1. Clique em **Atualizar** para confirmar as alterações.
+
+### Excluindo o Projeto {#delete-project}
+
+Siga as etapas abaixo para excluir seu projeto:
+
+1. Selecione o projeto, passe o mouse sobre ele e clique no ícone de bucket para excluir o projeto, conforme mostrado na figura abaixo.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. Clique em **Delete** para confirmar a etapa.
 
 ## O que vem a seguir {#whats-next}
 
