@@ -4,9 +4,9 @@ description: Esta página fornece uma visão geral sobre a fase Preparação no 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '441'
 ht-degree: 3%
 
 ---
@@ -21,12 +21,18 @@ A Fase de preparação inclui:
 * [Análise de práticas recomendadas](#best-practices-analysis)
 * [Planejamento e configuração](#planning-setup)
 
-Clique no cartão do projeto para abrir a página de aterrissagem do projeto e navegue até a seção **Prontidão**, conforme mostrado na figura abaixo.
+Siga as etapas abaixo para navegar até a Fase de disponibilidade:
 
-![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+1. Clique no cartão do projeto para abrir a página de aterrissagem do projeto.
 
->[!NOTE]
->Consulte [Criação e gerenciamento de um projeto no Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) para saber mais.
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+
+1. Navegue até a seção **Readiness**, conforme mostrado na figura abaixo.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+   >[!NOTE]
+   >Consulte [Criação e gerenciamento de um projeto no Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) para saber mais.
 
 ## Usando o cartão de análise de práticas recomendadas {#best-practices-analysis}
 
@@ -49,12 +55,35 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
 
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
-1. Revise e explore o painel de análise de práticas recomendadas do CAM.
+1. Após carregar um novo relatório, você verá o relatório de Análise de práticas recomendadas .
 
-   * Clique em cada cartão para abrir a guia associada
-   * É possível marcar todas as guias do relatório (incluindo a filtragem) para compartilhamento ou futura recuperação
-   * Use o ícone de detalhes para exibir os detalhes de cada descoberta de relatório
-   * Fazer upload de um novo relatório redefine todas as avaliações
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
+1. Revise e explore o painel de análise de práticas recomendadas do CAM. Consulte a seção abaixo [Revisando o Relatório de Análise de Práticas Recomendadas](#analysis-report) para obter mais detalhes.
+
+### Revisando o Relatório de Análise de Práticas Recomendadas {#analysis-report}
+
+Explore os seguintes cartões disponíveis na página de relatórios:
+
+>[!NOTE]
+>Fazer upload de um novo relatório redefine todas as avaliações.
+
+1. **Propriedades** do relatório: Este cartão fornece informações em propriedades do relatório, como data do relatório, duração, filtros, data de upload e assim por diante.
+
+1. **Visão geral** do relatório:
+
+   Este cartão fornece os resultados do relatório
+
+1. **Avaliação de práticas recomendadas**
+
+1. **Avaliação da complexidade da migração**
+
+   >[!NOTE]
+   > Além disso, você pode:
+   >* clique em cada cartão para abrir a guia associada
+   >* marcar todas as guias do relatório (incluindo filtragem) para compartilhamento ou futura recuperação
+   >* use o ícone de detalhes para exibir os detalhes de cada descoberta de relatório
+
 
 ## Usando o Cartão de Planejamento e Configuração {#planning-setup}
 
