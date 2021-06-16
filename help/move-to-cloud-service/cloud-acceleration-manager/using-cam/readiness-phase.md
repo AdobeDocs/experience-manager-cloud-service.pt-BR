@@ -4,10 +4,10 @@ description: Esta página fornece uma visão geral sobre a fase Preparação no 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
+source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 3%
+source-wordcount: '511'
+ht-degree: 4%
 
 ---
 
@@ -68,6 +68,8 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
 
 Explore os seguintes cartões disponíveis na página Relatório de análise de práticas recomendadas :
 
+![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
 >[!NOTE]
 > Com cada placa, você tem a capacidade de:
 >* clique em cada cartão para abrir a guia associada
@@ -77,11 +79,26 @@ Explore os seguintes cartões disponíveis na página Relatório de análise de 
 
 #### Propriedades do relatório {#report-properties}
 
-Este cartão fornece informações em propriedades do relatório, como data do relatório, duração, filtros, data de upload e assim por diante.
+Este cartão fornece informações sobre propriedades do relatório, como data do relatório, duração, filtros, data de upload e detalhes do Adobe Experience Manager (AEM).
+
+![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Visão geral do relatório {#report-overview}
 
 Este cartão fornece os resultados do relatório
+
+![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+
+Clicar nesse relatório abre a guia **Report**, conforme mostrado na figura abaixo.
+
+![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+
+Você pode filtrar o relatório com base na importância, no subtipo ou na contagem.
+
+![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+
+>[!NOTE]
+>Consulte [Interpretando o Relatório do Analisador de Práticas Recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) para saber mais sobre as categorias de descobertas e os níveis de importância.
 
 #### Avaliação de práticas recomendadas {#best-practices-assessment}
 
