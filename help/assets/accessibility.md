@@ -2,16 +2,15 @@
 title: Acessibilidade em [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade em [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ajudam usuários portadores de deficiência.
 contentOwner: AG
-feature: Accessibility,Asset Management
+feature: Acessibilidade,Gerenciamento de ativos
 role: Business Practitioner,Architect,Leader
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
-source-wordcount: '1919'
+source-wordcount: '1915'
 ht-degree: 2%
 
 ---
-
 
 <!--
 Possible topics to cover in this article are below.
@@ -87,7 +86,7 @@ As seguintes ações em [!DNL Assets] funcionam com os atalhos de teclado listad
 | Exibição em coluna na interface do usuário [!DNL Assets] | Teclas de seta para cima e para baixo | Navegue até arquivos e pastas dentro da mesma hierarquia. |
 | Exibição em coluna na interface do usuário [!DNL Assets] | Teclas de seta para a esquerda e para a direita | Navegue até arquivos e pastas acima ou abaixo da pasta atual. |
 | Procurar pastas em [!DNL Assets] | `/` | Chame a pesquisa abrindo a caixa Omnisearch. |
-| [!DNL Assets] Console | ` | Alternar painéis laterais |
+| [!DNL Assets] Console |  | Alternar painéis laterais |
 | [!DNL Assets] Console | `Alt + 1` | Abra a árvore de conteúdo. |
 | [!DNL Assets] Console | `Alt + 2` | Abra o painel esquerdo [!UICONTROL Navegação]. |
 | [!DNL Assets] Console | `Alt + 3` | Exibir [!UICONTROL Linha do tempo] de um ativo selecionado. |
@@ -105,7 +104,7 @@ As seguintes ações em [!DNL Assets] funcionam com os atalhos de teclado listad
 | Páginas de propriedade do ativo | `Ctrl + S` | Salve as alterações. |
 | [!DNL Assets] Console | `?` | Consulte uma lista de atalhos do teclado. |
 
-## Fazer logon e navegar [!DNL Assets] na interface do usuário {#login}
+## Fazer logon e navegar pela interface do usuário [!DNL Assets] {#login}
 
 Os usuários podem usar o teclado para navegar até o campo de logon e preenchê-lo para fazer logon. As mensagens de erro devido a combinações incorretas de nome de usuário e senha na página de logon são anunciadas por leitores de tela sempre que o erro ocorrer.
 
@@ -120,7 +119,7 @@ Se um usuário expandir a opção de ajuda ou perfil do usuário do menu, a opç
 *Figure: Navigating through the options at the top of [!DNL Experience Manager] user interface using `Tab` key.*
 -->
 
-## Navegue pelos ativos e exiba as informações relacionadas {#browse}
+## Procurar ativos e exibir as informações relacionadas {#browse}
 
 Na interface do usuário [!DNL Assets], os usuários podem usar o teclado para navegar pela lista de ativos digitais existentes no repositório DAM, visualizar ou baixar um ativo, ver representações geradas, alternar visualizações, ver as representações geradas, ver a linha do tempo e o histórico da versão, ver comentários e referências e exibir e gerenciar metadados.
 
