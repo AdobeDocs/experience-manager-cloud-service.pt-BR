@@ -4,9 +4,9 @@ description: Esta página fornece uma visão geral sobre a fase Preparação no 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
+source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -61,28 +61,35 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
 
 1. Revise e explore o painel de análise de práticas recomendadas do CAM. Consulte a seção abaixo [Revisando o Relatório de Análise de Práticas Recomendadas](#analysis-report) para obter mais detalhes.
 
+   >[!NOTE]
+   >Fazer upload de um novo relatório redefine todas as avaliações.
+
 ### Revisando o Relatório de Análise de Práticas Recomendadas {#analysis-report}
 
-Explore os seguintes cartões disponíveis na página de relatórios:
+Explore os seguintes cartões disponíveis na página Relatório de análise de práticas recomendadas :
 
 >[!NOTE]
->Fazer upload de um novo relatório redefine todas as avaliações.
+> Com cada placa, você tem a capacidade de:
+>* clique em cada cartão para abrir a guia associada
+>* marcar todas as guias do relatório (incluindo filtragem) para compartilhamento ou futura recuperação
+>* use o ícone de detalhes para exibir os detalhes de cada descoberta de relatório
 
-1. **Propriedades** do relatório: Este cartão fornece informações em propriedades do relatório, como data do relatório, duração, filtros, data de upload e assim por diante.
 
-1. **Visão geral** do relatório:
+#### Propriedades do relatório {#report-properties}
 
-   Este cartão fornece os resultados do relatório
+Este cartão fornece informações em propriedades do relatório, como data do relatório, duração, filtros, data de upload e assim por diante.
 
-1. **Avaliação de práticas recomendadas**
+#### Visão geral do relatório {#report-overview}
 
-1. **Avaliação da complexidade da migração**
+Este cartão fornece os resultados do relatório
 
-   >[!NOTE]
-   > Além disso, você pode:
-   >* clique em cada cartão para abrir a guia associada
-   >* marcar todas as guias do relatório (incluindo filtragem) para compartilhamento ou futura recuperação
-   >* use o ícone de detalhes para exibir os detalhes de cada descoberta de relatório
+#### Avaliação de práticas recomendadas {#best-practices-assessment}
+
+Este cartão fornece um
+
+#### Avaliação da complexidade da migração {#migration-complexity-assessment}
+
+Este cartão fornece
 
 
 ## Usando o Cartão de Planejamento e Configuração {#planning-setup}
