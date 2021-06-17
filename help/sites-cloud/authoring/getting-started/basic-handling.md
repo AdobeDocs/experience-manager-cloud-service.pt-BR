@@ -1,14 +1,13 @@
 ---
 title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
+source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
 workflow-type: tm+mt
-source-wordcount: '2864'
-ht-degree: 99%
+source-wordcount: '2876'
+ht-degree: 98%
 
 ---
-
 
 # Manuseio básico {#basic-handling}
 
@@ -72,7 +71,7 @@ Em Navegação, os consoles disponíveis são:
 | Projetos | O console Projetos concede acesso direto aos projetos. [Projetos são painéis virtuais](/help/sites-cloud/authoring/projects/overview.md) que podem ser usados para criar uma equipe. Você pode conceder a essa equipe acesso a recursos, fluxos de trabalho e tarefas, permitindo que as pessoas trabalhem por um objetivo comum. |
 | Sites | O console Sites permite [criar, exibir e gerenciar sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) em execução na sua instância do AEM. Por meio desse console, você pode criar, copiar, mover e excluir páginas, iniciar fluxos de trabalho e publicar páginas. |
 | Fragmentos de experiência | Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências. |
-| Ativos | O console Ativos permite importar e gerenciar ativos digitais como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por um site em execução na mesma instância do AEM.<!--add some kind of assets link--> |
+| Ativos | O console Assets permite importar e gerenciar [ativos digitais como imagens, vídeos, documentos e arquivos de áudio](/help/assets/overview.md). Esses ativos podem ser usados por um site em execução na mesma instância do AEM. Você também pode criar e gerenciar [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) no console Ativos. |
 | Personalização | Esse console fornece uma estrutura de ferramentas para a [criação de conteúdo direcionado e a apresentação de experiências personalizadas.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## Painel Ferramentas {#tools-panel}
@@ -93,7 +92,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![Navegação global](/help/sites-cloud/authoring/assets/global-navigation.png)
 
-* [Pesquisar](/help/sites-cloud/authoring/getting-started/search.md)
+* [Pesquisar  ](/help/sites-cloud/authoring/getting-started/search.md)
 
    ![Ícone de Pesquisa](/help/sites-cloud/authoring/assets/search-icon.png)
 
@@ -203,7 +202,7 @@ Há vários recursos de ajuda disponíveis:
    >Para obter uma visão geral de todos os atalhos de teclado, consulte a seguinte documentação:
    >
    >* [Atalhos de teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Atalhos de teclado para consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   * [Atalhos de teclado para os consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Barra de ferramentas de Ações {#actions-toolbar}
@@ -223,8 +222,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 ![Opções adicionais](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
->
->Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
+Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
 ## Ações rápidas  {#quick-actions}
 
@@ -245,8 +243,7 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 * [Exibição de lista  ](#list-view)
 
 >[!NOTE]
->
->Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
+Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
 
 ### Seleção de recursos    {#selecting-resources}
 
@@ -376,8 +373,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 * Altere a ordem dos itens usando a barra vertical pontilhada na extremidade direita de cada item da lista.
 
    >[!NOTE]
-   >
-   >Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
+   Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
 
    ![Ordem das colunas](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -396,8 +392,7 @@ Por exemplo, no **Sites**, é possível selecionar somente conteúdo (padrão), 
 Se somente conteúdo for selecionado, apenas o ícone do painel será exibido. Se qualquer outra opção for selecionada, o nome da opção aparecerá ao lado do ícone do painel.
 
 >[!NOTE]
->
->[Atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) estão disponíveis para alternar rapidamente entre as opções de exibição do painel.
+[Atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) estão disponíveis para alternar rapidamente entre as opções de exibição do painel.
 
 ### Árvore de conteúdo {#content-tree}
 
@@ -408,10 +403,8 @@ Usando o painel lateral da árvore de conteúdo, juntamente com uma exibição d
 ![Árvore de conteúdo](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
->
->Quando uma entrada na exibição hierárquica é selecionada, as teclas de seta podem ser usadas para navegar rapidamente pela hierarquia.
->
->Consulte os [atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) para obter mais informações.
+Quando uma entrada na exibição hierárquica é selecionada, as teclas de seta podem ser usadas para navegar rapidamente pela hierarquia.
+Consulte os [atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) para obter mais informações.
 
 ### Linha do tempo {#timeline}
 
