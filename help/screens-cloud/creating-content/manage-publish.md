@@ -4,9 +4,9 @@ description: Esta página descreve como publicar um canal no Screens as a Cloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: 9db293c4a0e2980015aa894f1912980e66dbfc86
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Você pode publicar conteúdo do AEM Screens. O recurso Gerenciar publicação p
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender a criação de um novo projeto do AEM Screens no Provedor de conteúdo do Screens. Após a leitura, você deve ser capaz de:
+Este documento ajuda você a entender a criação de um novo projeto do AEM Screens no Provedor de conteúdo do Screens e a publicar o conteúdo editado no provedor de serviços e no reprodutor. Após a leitura, você deve ser capaz de:
 
 * saiba como publicar um canal.
 * gerenciar a publicação, em termos de escopo
