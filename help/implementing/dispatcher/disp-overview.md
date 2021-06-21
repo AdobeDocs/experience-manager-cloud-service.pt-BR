@@ -3,7 +3,7 @@ title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 7b8b9ca2881d07482888ac2a53b8c3bdff02b6dd
+source-git-commit: cf42e530136d5eb8afe7204ae0af1353b1f31cbd
 workflow-type: tm+mt
 source-wordcount: '4247'
 ht-degree: 6%
@@ -36,7 +36,7 @@ As Ferramentas do Dispatcher fazem parte do AEM geral como um Cloud Service SDK 
 
 As Ferramentas do Dispatcher, parte do [AEM como um Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), podem ser baixadas de um arquivo zip no portal [Distribuição de software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Qualquer nova configuração disponível nessa nova versão das Ferramentas do Dispatcher pode ser usada para implantar em ambientes do Cloud que executam essa versão de AEM na Cloud ou posterior.
 
-Descompacte o SDK, que agrupa as Ferramentas do Dispatcher para macOS/Linux e Windows.
+Descompacte o SDK, que agrupa as Ferramentas do Dispatcher para macOS, Linux e Windows.
 
 **Para macOS/Linux**, torne o artefato da ferramenta Dispatcher executável e execute-o. Ele extrairá automaticamente os arquivos das Ferramentas do Dispatcher sob o diretório em que você o armazenou (onde `version` é a versão das Ferramentas do Dispatcher).
 
@@ -112,7 +112,7 @@ Este arquivo é incluído de dentro de seus arquivos `.vhost`. Ele tem um conjun
 
 * `conf.d/variables/custom.vars`
 
-Este arquivo é incluído de dentro de seus arquivos `.vhost`. Você pode colocar definições para variáveis do Apache neste local.
+Este arquivo é incluído de dentro de seus arquivos `.vhost`. Você pode adicionar definições para variáveis do Apache neste local.
 
 * `conf.d/variables/global.vars`
 
