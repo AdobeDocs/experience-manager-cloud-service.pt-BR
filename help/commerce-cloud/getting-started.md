@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
+source-git-commit: 35137687e51d54454d3a4b7aed247a28d98dc291
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 30%
+source-wordcount: '1104'
+ht-degree: 29%
 
 ---
 
@@ -61,7 +61,7 @@ Depois que o endpoint (como opção, um token de autenticação para suporte ao 
 
 ![Informações do ambiente CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### Via Adobe I/O CLI {#adobe-cli}
+### Via Adobe I/O CLI  {#adobe-cli}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -128,6 +128,9 @@ As seguintes propriedades podem ser configuradas:
    >
    > O suporte para UIDs foi introduzido no Adobe Commerce (Magento) 2.4.2. Habilite-o somente se o back-end comercial suportar um esquema GraphQL da versão 2.4.2 ou posterior.
 - Identificador de categoria raiz do catálogo - o identificador (UID ou ID) da raiz do catálogo de loja
+   >[!CAUTION]
+   >
+   > A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para `id` foi removido e substituído por `uid`. Se o seu projeto usa a versão 2.0.0 dos Componentes principais da CIF, você deve ativar o Suporte à UID de catálogo e usar uma UID de categoria válida como &quot;Identificador de categoria raiz do catálogo&quot;.
 
 A configuração mostrada acima é para referência. Os projetos devem fornecer suas próprias configurações.
 
