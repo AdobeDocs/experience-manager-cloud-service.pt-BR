@@ -4,10 +4,10 @@ description: Alterações importantes para [!DNL Adobe Experience Manager Assets
 feature: Informações da versão
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 6%
+source-wordcount: '830'
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ As principais diferenças em comparação com [Experience Manager] 6.5 estão na
 * [Microserviços de ativos para processamento](#asset-microservices) nativo em nuvem.
 * [Remoção da interface do usuário clássica](#classic-ui).
 
-## Assimilação e processamento de ativos {#asset-ingestion}
+## Assimilação, processamento e distribuição de ativos {#asset-ingestion-distribution}
 
 O upload de ativos é otimizado para maior eficiência, permitindo uma melhor escala de assimilação, uploads mais rápidos, processamento mais rápido usando microsserviços e assimilação em massa. Os recursos do produto (interfaces de usuário da Web, clientes de desktop) são atualizados. Além disso, isso pode afetar algumas personalizações existentes.
 
@@ -33,6 +33,8 @@ O upload de ativos é otimizado para maior eficiência, permitindo uma melhor es
    * Consulte [configurar e usar microsserviços de ativos](/help/assets/asset-microservices-configure-and-use.md)
    * Para ter etapas de fluxo de trabalho personalizadas no processamento, [workflows de pós-processamento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) podem ser usados.
 
+* Os componentes do site que fornecem um arquivo binário sem qualquer transformação podem usar o download direto. O servlet Sling GET é atualizado para permitir que os desenvolvedores façam isso por padrão. Os componentes do site que fornecem um binário com alguma transformação (por exemplo, redimensioná-lo por meio de um servlet) podem continuar a funcionar como estão.
+
 As representações padrão geradas com os microsserviços de ativos são armazenadas de forma compatível com versões anteriores nos nós do repositório de ativos usando as mesmas convenções de nomenclatura.
 
 ## Desenvolver e testar microsserviços de ativos {#asset-microservices}
@@ -42,7 +44,6 @@ Os microsserviços de ativos fornecem um processamento escalável e resiliente d
 Os microsserviços de ativos são um serviço nativo em nuvem que é automaticamente provisionado e conectado a [!DNL Experience Manager] em programas e ambientes do cliente gerenciados no Cloud Manager. Para estender ou personalizar [!DNL Experience Manager], os desenvolvedores podem usar o conteúdo ou ativos existentes com representações geradas em um ambiente de nuvem, para testar e validar seu código usando, exibindo e baixando ativos.
 
 Para fazer uma validação completa do código e do processo, incluindo a assimilação e o processamento de ativos, implante as alterações de código em um ambiente de cloud-dev usando [o pipeline](/help/implementing/cloud-manager/configure-pipeline.md) e teste com a execução completa do processamento de microsserviços de ativos.
-
 
 ## Paridade de recursos com [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
