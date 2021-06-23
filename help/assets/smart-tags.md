@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Tags inteligentes,Marcação
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 6%
@@ -109,7 +109,7 @@ Certifique-se de que as imagens no conjunto de treinamento estejam em conformida
 
 Não é possível desfazer o treinamento. As diretrizes acima devem ajudá-lo a escolher boas imagens para treinar.
 
-## Treine o modelo para suas tags personalizadas {#train-model}
+## Treinar o modelo de suas tags personalizadas {#train-model}
 
 Para criar e treinar um modelo para suas tags específicas de negócios, siga estas etapas:
 
@@ -128,7 +128,7 @@ Para criar e treinar um modelo para suas tags específicas de negócios, siga es
 
 *Figura: Etapas do fluxo de trabalho de treinamento para treinar o modelo de marcação.*
 
-### Exibir o status e o relatório de treinamento {#training-status}
+### Exibir o status e o relatório do treinamento {#training-status}
 
 Para verificar se o serviço de Tags inteligentes é treinado em suas tags no conjunto de ativos de treinamento, analise o relatório do fluxo de trabalho de treinamento no console Relatórios .
 
