@@ -1,14 +1,13 @@
 ---
 title: Acesso à camada do autor
 description: Acesso à camada do autor
-translation-type: tm+mt
-source-git-commit: e772687c4034a364912aa426a133134571246db9
+exl-id: 4143a125-3d46-4c44-b52c-f55c5194fb9c
+source-git-commit: ebc80a68d250ce5e95657f42419e6b40b843f25b
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 100%
+source-wordcount: '51'
+ht-degree: 78%
 
 ---
-
 
 # Acesso à camada do autor {#accessing-the-author-tier}
 
@@ -18,8 +17,4 @@ No momento, o formato do URL é o seguinte:
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-Finalmente, esse formato será substituído por um formato padrão de URL da Adobe Experience Cloud:
-
-* `https://experience.adobe.com/#/@[TenantId]/`
-
-Portanto, não é possível configurar nomes de domínio personalizados para a camada de autor do AEM.
+Não há suporte para nomes de domínio personalizados para a camada de autor de AEM.
