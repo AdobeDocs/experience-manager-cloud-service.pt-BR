@@ -1,18 +1,17 @@
 ---
-sub-product: Conteúdo e comércio AEM como um Cloud Service
-user-guide-title: Conteúdo e comércio AEM como um Cloud Service
-breadcrumb-title: Guia de conteúdo e comércio do AEM
-user-guide-description: Entenda como usar e administrar conteúdo e comércio do Experience Manager como um Cloud Service.
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+sub-product: Conteúdo AEM e Commerce as a Cloud Service
+user-guide-title: Conteúdo AEM e Commerce as a Cloud Service
+breadcrumb-title: Manual do AEM Content and Commerce
+user-guide-description: Entenda como usar e administrar o Experience Manager Content and Commerce as a Cloud Service.
+source-git-commit: 4c6f7cafba4be20d7501fbe33b38c843a638305c
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 22%
+source-wordcount: '105'
+ht-degree: 62%
 
 ---
 
 
-# Conteúdo e comércio AEM {#content-and-commerce}
+# AEM Content and Commerce {#content-and-commerce}
 
 + [Conteúdo e comércio AEM](/help/commerce-cloud/home.md)
 + [Alterações importantes no conteúdo AEM e no comércio como Cloud Service](changes.md)
@@ -25,6 +24,7 @@ ht-degree: 22%
    + Administração {#administering}
       + [Configuração de várias lojas](configuring/multi-store-setup.md)
       + [Uso de vários modelos](configuring/multi-template-usage.md)
+      + [Enriqueça os dados do produto com o conteúdo associado](configuring/enrich-product-associated-content.md)
       + [Configurar URLs para SEO](configuring/advanced-url-configuration.md)
       + [Opções de armazenamento em cache](configuring/caching.md)
    + Desenvolvimento {#developing}
