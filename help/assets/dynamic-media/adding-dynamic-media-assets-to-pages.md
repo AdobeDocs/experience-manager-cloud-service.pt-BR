@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Gerenciamento de ativos
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 33d5e756379af671f345e6f4e02d4a955f73a3c9
+source-git-commit: 230c5a20696684ec69ab154f97609139dbddfea4
 workflow-type: tm+mt
-source-wordcount: '3186'
-ht-degree: 21%
+source-wordcount: '3222'
+ht-degree: 20%
 
 ---
 
@@ -79,7 +79,7 @@ Se nenhum componente do Dynamic Media estiver disponível para ser adicionado a 
 1. No lado direito da barra de ferramentas, próximo à parte superior da página, na lista suspensa, toque em **[!UICONTROL Conteúdo inicial]**.
 1. [Adicione um componente Dynamic Media a uma página ](#adding-a-dynamic-media-component-to-a-page) como de costume.
 
-## Localização dos componentes do Dynamic Media {#localizing-dynamic-media-components}
+## Localização de componentes do Dynamic Media {#localizing-dynamic-media-components}
 
 Você pode localizar componentes do Dynamic Media de uma das duas maneiras:
 
@@ -172,9 +172,9 @@ Você pode editar as seguintes configurações do Dynamic Media tocando no ícon
 
    ![configuração da relação de pixels do dispositivo para predefinição de imagem](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   Consulte também [Sobre a otimização da taxa de pixels do dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   Observe que qualquer valor [!DNL Experience Manager] do DPR de imagem inteligente da Dynamic Media é ignorado.
 
 * **[!UICONTROL Título]**  - Altere o título da imagem.
 
@@ -251,9 +251,9 @@ Você pode editar a seguinte configuração do Dynamic Media clicando em **[!UIC
 
    ![configuração de proporção de pixels do dispositivo para recorte inteligente](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
+   Consulte também [Sobre a otimização da taxa de pixels do dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   Observe que qualquer valor [!DNL Experience Manager] do DPR de imagem inteligente da Dynamic Media é ignorado.
 
 * **[!UICONTROL Título]**  - Altere o título da imagem de Recorte inteligente.
 
