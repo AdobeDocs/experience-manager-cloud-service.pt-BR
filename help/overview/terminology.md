@@ -1,16 +1,15 @@
 ---
 title: Introdução ao Adobe Experience Manager as a Cloud Service - Terminologia
-description: 'Introdução ao Adobe Experience Manager as a Cloud Service - Terminologia. '
-translation-type: tm+mt
-source-git-commit: 465172db5bbc3b1dc3b42164d759a45e0ff13a8e
+description: Introdução ao Adobe Experience Manager as a Cloud Service - Terminologia.
+exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
+source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 100%
+source-wordcount: '345'
+ht-degree: 97%
 
 ---
 
-
-# Adobe Experience Manager as a Cloud Service - Terminologia{#adobe-experience-manager-as-a-cloud-service-terminology}
+# Adobe Experience Manager as a Cloud Service - Terminologia {#adobe-experience-manager-as-a-cloud-service-terminology}
 
 Os termos a seguir são usados em relação ao Adobe Experience Manager (AEM) as a Cloud Service:
 
@@ -28,6 +27,7 @@ Os termos a seguir são usados em relação ao Adobe Experience Manager (AEM) as
 |---|---|
 | Adobe Pipeline | O mecanismo de publicação de conteúdo do autor para publicação. |
 | Nível de criação do AEM | Descreve o ambiente de criação do Sites e do Assets. |
+| Camada de visualização do AEM | Descreve o ambiente de visualização do Sites. |
 | Nível de publicação do AEM | Descreve o ambiente de publicação de Sites. |
 
 
