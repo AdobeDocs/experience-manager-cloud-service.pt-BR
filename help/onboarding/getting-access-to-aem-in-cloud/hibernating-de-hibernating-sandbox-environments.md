@@ -2,15 +2,14 @@
 title: 'Hibernar e desibernar ambientes de sandbox '
 description: Hibernar e desibernar ambientes de sandbox
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-translation-type: tm+mt
-source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
+source-git-commit: f06fe7f30d9f5e2eb5dcc6c8d542ace5f5e2f419
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
 
-# Hibernando e removendo ambientes de sandbox {#hibernating-introduction}
+# Hibernar e desibernar ambientes de sandbox {#hibernating-introduction}
 
 Os ambientes do Programa de sandbox inserem um *modo de hibernação* se nenhuma atividade for detectada por um determinado período de tempo.
 
@@ -23,14 +22,14 @@ A hibernação pode ocorrer automática ou manualmente. Pode levar alguns minuto
 
 A hibernação é classificada como:
 
-* ****  Os ambientes do Automatic Sandbox Program hibernam automaticamente após oito horas de inatividade, o que significa que nem os serviços de criação nem de publicação recebem solicitações.
+* ****  Os ambientes do Automatic Sandbox Program hibernam automaticamente após oito horas de inatividade, o que significa que nem os serviços de criação, visualização ou publicação recebem solicitações.
 
 * **Manual**: Como usuário, você pode hibernar manualmente um ambiente do Programa de sandbox, embora não haja necessidade de fazer isso, pois a hibernação ocorrerá automaticamente após um determinado período (oito horas) de inatividade.
 
 >[!CAUTION]
 >Na versão mais recente, vincular ao Console do desenvolvedor diretamente do Cloud Manager não oferecerá a opção de hibernar um ambiente do Programa de sandbox. A solução alternativa é uma vez no Console do desenvolvedor, adicione o seguinte padrão ao final do URL `#release-cm-p1234-e5678 where 1234` 1234 é seu *ID do programa* e 5678 é seu *ID do ambiente*.
 
-### Usando a hibernação manual {#using-manual-hibernation}
+### Uso da hibernação manual {#using-manual-hibernation}
 
 Você pode hibernar manualmente seu Programa de sandbox no Console do desenvolvedor de duas maneiras diferentes, usando:
 
@@ -66,7 +65,7 @@ Consulte [Acessando o Console do Desenvolvedor](/help/implementing/cloud-manager
    ![](assets/hibernate-4.png)
 
 
-## Eliminação de hibernação {#de-hibernation-introduction}
+## Deshibernação {#de-hibernation-introduction}
 
 1. Navegue até **Console do Desenvolvedor**.
 Consulte [Acessando o Console do Desenvolvedor](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para saber como acessar o **Console do Desenvolvedor** no cartão **Ambientes**.
@@ -75,7 +74,7 @@ Consulte [Acessando o Console do Desenvolvedor](/help/implementing/cloud-manager
    >Vincular ao **Console do desenvolvedor** diretamente do Cloud Manager não oferecerá a opção de desibernar um ambiente do Programa de sandbox. A solução alternativa é uma vez no Console do desenvolvedor, adicione o seguinte padrão ao final do URL `#release-cm-p1234-e5678 where 1234` 1234 é seu *ID do programa* e 5678 é seu *ID do ambiente*.
 
    >[!NOTE]
-   >Como alternativa, você pode navegar até o **Console do Desenvolvedor** para desibernar, tentando acessar o serviço de criação ou publicação de um ambiente já hibernado; nesse caso, uma landing page será exibida com um link para o Console do desenvolvedor. Consulte a seção Acesso a um ambiente hibernado abaixo.
+   >Como alternativa, você pode navegar até o **Console do Desenvolvedor** para cancelar a hibernação tentando acessar o serviço de autor, visualização ou publicação de um ambiente já hibernado; nesse caso, uma landing page será exibida com um link para o Console do desenvolvedor. Consulte a seção Acesso a um ambiente hibernado abaixo.
 
    >[!IMPORTANT]
    >O acesso ao Console do desenvolvedor é definido pelo **Cloud Manager - Developer Role** no **Admin Console**. Um usuário com uma permissão de função de desenvolvedor pode desibernar um ambiente do Programa de sandbox.
@@ -103,13 +102,13 @@ Consulte [Acessando o Console do Desenvolvedor](/help/implementing/cloud-manager
 
    ![](assets/de-hibernation-img4.png)
 
-### Permissões para Cancelar hibernação {#permissions-de-hibernate}
+### Permissões para desibernar {#permissions-de-hibernate}
 
 Qualquer usuário com um perfil de produto que dê acesso ao AEM como um Cloud Service deve poder acessar o **Console do desenvolvedor**, permitindo que ele remova a hibernação do ambiente.
 
-## Acessar um ambiente hibernado {#accessing-hibernated-environment}
+## Acesso a um ambiente hibernado {#accessing-hibernated-environment}
 
-Ao fazer qualquer solicitação do navegador em relação ao nível de criação ou publicação de um ambiente hibernado, o usuário encontrará uma página de aterrissagem descrevendo o status de hibernação do ambiente, conforme mostrado na figura abaixo:
+Ao fazer qualquer solicitação do navegador em relação ao nível de criação, visualização ou publicação de um ambiente hibernado, o usuário encontrará uma página de aterrissagem descrevendo o status de hibernação do ambiente, conforme mostrado na figura abaixo:
 
 ![](assets/de-hibernation-img5.png)
 
