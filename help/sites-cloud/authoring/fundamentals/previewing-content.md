@@ -1,15 +1,15 @@
 ---
 title: Visualização de conteúdo
 description: Saiba como usar o Serviço de visualização de AEM para visualizar o conteúdo antes de entrar no ar.
-source-git-commit: 9b4ac173c55380cbc06de64677470818aa801df4
+exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
+source-git-commit: 53a3fb91dcf093d55e80c7dfcdef3a7855731841
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
-
-# Visualizar conteúdo {#previewing-content}
+# Visualização de conteúdo {#previewing-content}
 
 >[!NOTE]
 >
@@ -38,3 +38,27 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 
 Consulte [Gerenciar seus ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obter mais informações sobre como obter os URLs dos seus ambientes.
 
+## Configurações do OSGi para a camada de visualização {#configuring-osgi-settings-for-the-preview-tier}
+
+Os valores da propriedade OSGI da camada de visualização são herdados do nível de publicação, mas os valores da camada de visualização podem ser distintos do nível de publicação usando valores específicos do ambiente definindo o parâmetro de serviço com o valor &quot;pré-visualização&quot;. Tome o exemplo abaixo de uma propriedade OSGI que determina o URL de um endpoint de integração:
+
+```
+[
+{
+"name":"INTEGRATION_URL",
+"type":"string",
+"value":"http://s2.integrationvendor.com",
+"service": "preview"
+}
+]
+```
+
+Para obter mais informações, consulte [esta seção](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) da documentação de configuração do OSGi.
+
+## Depuração da visualização usando o Console do desenvolvedor {#debugging-preview-using-the-developer-console}
+
+Siga estas etapas para depurar a camada de visualização usando o Console do desenvolvedor:
+
+* No [Console do Desenvolvedor](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), selecione **— Todas as visualizações —** ou um ambiente de produção que inclua **prev** no seu nome
+* Gerar as informações relevantes para a instância de visualização
+Consulte [Gerenciar seus ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obter mais informações sobre como obter os URLs dos seus ambientes.
