@@ -2,15 +2,15 @@
 title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
+source-git-commit: 344a42f31444d30e9304b3a2198b1a4df17aa9c0
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1663'
 ht-degree: 2%
 
 ---
 
 
-# Notas de versão atuais para [!DNL Adobe Experience Manager] como Cloud Service {#release-notes}
+# Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais para a versão atual (mais recente) de [!DNL Experience Manager] como um Cloud Service.
 
@@ -32,7 +32,7 @@ Assista ao vídeo [Visão geral da versão de maio de 2021](https://video.tv.ado
 
 ## AEM como uma fundação de Cloud Service {#foundation}
 
-### Novidades no AEM como um Cloud Service Foundation {#what-is-new-foundation}
+### O que há de novo no AEM como uma fundação de Cloud Service {#what-is-new-foundation}
 
 * [Canal](/help/release-notes/prerelease.md) de pré-lançamento: Visualize os recursos futuros por um mês inteiro antes de eles entrarem em produção!
 
@@ -69,33 +69,7 @@ Assista ao vídeo [Visão geral da versão de maio de 2021](https://video.tv.ado
 
 * A taxa de pixels do dispositivo de imagem inteligente (DPR) e a otimização da largura de banda da rede permitem que você forneça imagens de melhor qualidade com eficiência, em dispositivos com telas de alta resolução e largura de banda de rede restrita. Consulte as [perguntas frequentes sobre a geração inteligente de imagens](/help/assets/dynamic-media/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >A linha do tempo da versão para os aprimoramentos de Smart Imaging acima é:
-   >
-   >* América do Norte 24 de maio de 2021 em NA,
-      >
-      >
-   * Europa, Oriente Médio e África 25 de junho de 2021,
-      >
-      >
-   * Ásia-Pacífico em 19 de julho de 2021.
-
-
-* Introdução do suporte para o formato de imagem da próxima geração AVIF na entrega [!DNL Dynamic Media] (modificador de URL fmt).
-
-   >[!NOTE]
-   >
-   >A linha do tempo da versão do suporte a AVIF é:
-   >
-   >* América do Norte, 10 de maio de 2021,
-      >
-      >
-   * Europa, Oriente Médio e África 24 de maio de 2021,
-      >
-      >
-   * Ásia-Pacífico, 24 de junho de 2021.
-
+* Introdução do suporte para o formato de imagem de próxima geração AVIF na entrega [!DNL Dynamic Media] (`fmt` modificador de URL). Para obter mais detalhes e linha do tempo, consulte [image service and rendering API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
 
@@ -238,7 +212,7 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.4.0 é 11 de 
 * Várias correções de erros relacionadas ao recurso de atualização automática na interface do usuário da ferramenta Transferência de conteúdo .
 * A ferramenta Transferência de conteúdo com `wipe=true` resultou em um índice de contador incorreto no destino. Isso foi corrigido.
 
-## Complemento do Commerce {#cloud-services-commerce}
+## Suplemento comercial {#cloud-services-commerce}
 
 ### Novidades {#what-is-new-commerce}
 
