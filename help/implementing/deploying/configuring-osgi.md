@@ -3,15 +3,14 @@ title: Configuração do OSGi para Adobe Experience Manager as a Cloud Service
 description: 'Configuração do OSGi com valores secretos e valores específicos do ambiente '
 feature: Implantação
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-translation-type: tm+mt
-source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
+source-git-commit: b28202a4e133f046b50477c07eb5a37271532c90
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2927'
 ht-degree: 0%
 
 ---
 
-# Configuração do OSGi para Adobe Experience Manager como um Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
+# Configuração do OSGi para Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [](https://www.osgi.org/) O OSGi é um elemento fundamental na pilha de tecnologia do Adobe Experience Manager (AEM). Ele é usado para controlar os pacotes compostos de AEM e suas configurações.
 
@@ -41,7 +40,7 @@ seguindo o formato de configuração do OSGi cfg.json.
 >
 >As versões anteriores AEM arquivos de configuração OSGi compatíveis usando formatos de arquivo diferentes, como .cfg., .config e como definições de recurso XML sling:OsgiConfig . Esses formatos são substituídos pelo formato de configuração OSGi cfg.json .
 
-## Resolução do modo de execução {#runmode-resolution}
+## Resolução do Modo de Execução {#runmode-resolution}
 
 Configurações específicas de OSGi podem ser direcionadas a instâncias AEM específicas usando modos de execução. Para usar o runmode, crie pastas de configuração em `/apps/example` (onde por exemplo é o nome do projeto), no formato:
 
@@ -54,6 +53,10 @@ Por exemplo, se AEM estiver usando o autor e o desenvolvimento de runmodes, os n
 Se várias configurações para o mesmo PID forem aplicáveis, a configuração com o maior número de modos de execução correspondentes será aplicada.
 
 A granularidade desta regra está em um nível PID. Isso significa que não é possível definir algumas propriedades para o mesmo PID em `/apps/example/config.author/` e outras mais específicas em `/apps/example/config.author.dev/` para o mesmo PID. A configuração com o maior número de modos de execução correspondentes será efetiva para todo o PID.
+
+>[!NOTE]
+>
+>Uma `config.preview` pasta de configuração OSGI **não pode** ser declarada da mesma forma que uma `config.publish` pode ser declarada. Em vez disso, o nível de visualização herda sua configuração OSGI dos valores do nível de publicação.
 
 Ao desenvolver localmente, um parâmetro de inicialização do modo de execução pode ser passado para ditar qual configuração de OSGI do modo de execução é usada.
 
@@ -117,10 +120,10 @@ Sempre que definir um valor de configuração OSGi, comece com valores em linha 
 
 ### Quando usar valores de configuração não secretos específicos do ambiente {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Use apenas configurações específicas do ambiente (`$[env:ENV_VAR_NAME]`) para valores de configuração não secretos quando os valores variam em ambientes de desenvolvimento. Isso inclui instâncias de desenvolvimento local e qualquer ambiente de desenvolvimento do Adobe Experience Manager as a Cloud Service. Evite usar configurações não secretas específicas do ambiente para o Adobe Experience Manager como um ambiente de Cloud Service Stage ou Production.
+Use apenas configurações específicas do ambiente (`$[env:ENV_VAR_NAME]`) para valores de configuração não secretos quando os valores variam para o nível de visualização ou variam em ambientes de desenvolvimento. Isso inclui instâncias de desenvolvimento local e qualquer ambiente de desenvolvimento do Adobe Experience Manager as a Cloud Service. Exceto para definir valores exclusivos para o nível de visualização, evite usar configurações não secretas específicas do ambiente para o Adobe Experience Manager como um ambiente de Cloud Service Stage ou de Produção.
 
-* Use apenas configurações específicas de ambiente não secretas para valores de configuração que diferem entre ambientes de desenvolvimento, incluindo instâncias de desenvolvimento local.
-* Em vez disso, use os valores em linha padrão nas configurações OSGi para valores não secretos de Preparo e Produção. Em relação a isso, não é recomendável usar configurações específicas do ambiente para facilitar as alterações de configuração em tempo de execução para ambientes de Preparo e Produção; essas alterações devem ser introduzidas por meio do gerenciamento do código-fonte.
+* Use apenas configurações específicas de ambiente não secretas para valores de configuração que diferem entre publicar e visualizar camadas, ou para valores que diferem entre ambientes de desenvolvimento, incluindo instâncias de desenvolvimento local.
+* Além do cenário em que o nível de visualização precisa variar do nível de publicação, use os valores em linha padrão nas configurações OSGi para valores não secretos de Preparo e Produção. Em relação a isso, não é recomendável usar configurações específicas do ambiente para facilitar as alterações de configuração em tempo de execução para ambientes de Preparo e Produção; essas alterações devem ser introduzidas por meio do gerenciamento do código-fonte.
 
 ### Quando usar valores de configuração secretos específicos do ambiente {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -132,7 +135,7 @@ Use configurações secretas específicas do ambiente para armazenar o valor de 
 
 Há duas maneiras de criar configurações OSGi, conforme descrito abaixo. A primeira abordagem é normalmente usada para configurar componentes OSGi personalizados que têm propriedades e valores OSGi bem conhecidos pelo desenvolvedor, e a última para componentes OSGi fornecidos por AEM.
 
-### Gravando configurações do OSGi {#writing-osgi-configurations}
+### Gravando configurações de OSGi {#writing-osgi-configurations}
 
 Os arquivos de configuração OSGi formatados em JSON podem ser gravados manualmente diretamente no projeto AEM. Essa é frequentemente a maneira mais rápida de criar configurações OSGi para componentes OSGi bem conhecidos e, especialmente, componentes OSGi personalizados que foram projetados e desenvolvidos pelo mesmo desenvolvedor definindo as configurações. Essa abordagem também pode ser usada para copiar/colar e atualizar configurações para o mesmo componente OSGi em várias pastas do modo de execução.
 
@@ -144,7 +147,7 @@ Observe que os nomes de arquivos de fábrica de configuração OSGi usam a conve
 1. Salve as alterações no novo arquivo `.cfg.json`
 1. Adicionar e confirmar o novo arquivo de configuração OSGi no Git
 
-### Gerar configurações OSGi usando o Início rápido do SDK AEM {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### Gerar configurações de OSGi usando o Início rápido do SDK AEM {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
 O AEM Web Console do AEM SDK Quickstart Jar pode ser usado para configurar componentes OSGi e exportar configurações OSGi como JSON. Isso é útil para configurar componentes OSGi fornecidos AEM cujas propriedades OSGi e seus formatos de valor podem não ser bem entendidos pelo desenvolvedor que define as configurações OSGi no projeto AEM.
 
@@ -258,7 +261,7 @@ Se uma propriedade OSGI exigir valores diferentes para autor versus publicação
 * As pastas `config.author` e `config.publish` OSGi separadas devem ser usadas, conforme descrito na seção [Resolução do modo de execução](#runmode-resolution).
 * Há duas opções para criar nomes de variáveis independentes que devem ser usadas:
    * a primeira opção, que é recomendada: em todas as pastas OSGI (como `config.author` e `config.publish`) declaradas para definir valores diferentes, use o mesmo nome de variável. Por exemplo
-      `$[env:ENV_VAR_NAME;default=<value>]`, onde o padrão corresponde ao valor padrão dessa camada (autor ou publicação). Ao definir a variável de ambiente por meio da [API do Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou por meio de um cliente, diferencie os níveis usando o parâmetro &quot;service&quot;, conforme descrito nesta [documentação de referência da API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). O parâmetro &quot;service&quot; vinculará o valor da variável ao nível OSGI apropriado.
+      `$[env:ENV_VAR_NAME;default=<value>]`, onde o padrão corresponde ao valor padrão dessa camada (autor ou publicação). Ao definir a variável de ambiente por meio da [API do Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou por meio de um cliente, diferencie os níveis usando o parâmetro &quot;service&quot;, conforme descrito nesta [documentação de referência da API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). O parâmetro &quot;service&quot; vinculará o valor da variável ao nível OSGI apropriado. Pode ser &quot;autor&quot; ou &quot;publicação&quot; ou &quot;visualização&quot;.
    * a segunda opção, que é declarar variáveis distintas usando um prefixo como `author_<samevariablename>` e `publish_<samevariablename>`
 
 ### Exemplos de configuração {#configuration-examples}
@@ -449,14 +452,14 @@ config.dev
 </tr>
 </table>
 
-## Formato de API do Cloud Manager para a configuração de propriedades {#cloud-manager-api-format-for-setting-properties}
+## Formato de API do Cloud Manager para propriedades de configuração {#cloud-manager-api-format-for-setting-properties}
 
 Consulte [esta página](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) sobre como a API deve ser configurada.
 >[!NOTE]
 >
 >Verifique se a API do Cloud Manager usada atribuiu a função &quot;Gerenciador de implantação - Cloud Service&quot;. Outras funções não podem executar todos os comandos abaixo.
 
-### Configuração de valores por meio da API {#setting-values-via-api}
+### Configuração de valores por API {#setting-values-via-api}
 
 Chamar a API implanta as novas variáveis e valores em um ambiente do Cloud, de modo semelhante a um pipeline típico de implantação de código do cliente. Os serviços de criação e publicação serão reiniciados e farão referência aos novos valores, normalmente levando alguns minutos.
 
@@ -492,7 +495,7 @@ GET /program/{programId}/environment/{environmentId}/variables
 
 Consulte [esta página](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) para obter mais informações.
 
-### Exclusão de valores por meio da API {#deleting-values-via-api}
+### Exclusão de valores por API {#deleting-values-via-api}
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -502,7 +505,7 @@ Para excluir uma variável, inclua-a com um valor vazio.
 
 Consulte [esta página](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) para obter mais informações.
 
-### Obtendo valores por meio da linha de comando {#getting-values-via-cli}
+### Obter valores através da linha de comando {#getting-values-via-cli}
 
 ```bash
 $ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
@@ -512,13 +515,13 @@ MY_VAR2  secretString ****
 ```
 
 
-### Definindo valores pela Linha de Comando {#setting-values-via-cli}
+### Definindo valores através da Linha de Comando {#setting-values-via-cli}
 
 ```bash
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
 ```
 
-### Excluindo Valores por meio da Linha de Comando {#deleting-values-via-cli}
+### Exclusão de valores por meio da linha de comando {#deleting-values-via-cli}
 
 ```bash
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
