@@ -2,10 +2,10 @@
 title: Replicação
 description: Distribuição e Solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
+source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 2%
+source-wordcount: '1071'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,11 @@ O Adobe Experience Manager as a Cloud Service usa o recurso [Distribuição de c
 
 ## Métodos de publicação de conteúdo {#methods-of-publishing-content}
 
-### Publicação/Cancelamento Rápido - Planejado {#publish-unpublish}
+### Publicação/Cancelamento Rápido - Planejado/Publicação {#publish-unpublish}
 
 Essas funcionalidades de AEM padrão para os autores não são alteradas com AEM Cloud Service.
 
-### Tempos de ativação e desativação - Configuração do acionador {#on-and-off-times-trigger-configuration}
+### Tempos de ativação e desativação - Configuração de acionador {#on-and-off-times-trigger-configuration}
 
 As possibilidades adicionais de **No Tempo** e **Tempo desligado** estão disponíveis na guia [Básico das Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
@@ -42,7 +42,7 @@ Para executar uma ativação de árvore:
    ![](assets/distribute.png "DistribuirDistribuir")
 4. Selecione o caminho no navegador de caminho, escolha adicionar um nó, árvore ou excluir conforme necessário e selecione **Enviar**
 
-### Fluxo de trabalho da árvore de conteúdo de publicação {#publish-content-tree-workflow}
+### Fluxo de trabalho da Árvore de conteúdo da publicação {#publish-content-tree-workflow}
 
 Você pode acionar uma replicação de árvore escolhendo **Ferramentas - Fluxo de trabalho - Modelos** e copiando o modelo de fluxo de trabalho pronto para uso **Publicar árvore de conteúdo**, conforme mostrado abaixo:
 
@@ -82,7 +82,7 @@ Como alternativa, você também pode fazer isso criando um Modelo de fluxo de tr
 
 * `replicateAsParticipant` (valor booleano, padrão:  `false`). Se configurado como `true`, a replicação está usando o `userid` do principal que executou a etapa do participante.
 * `enableVersion` (valor booleano, padrão:  `true`). Esse parâmetro determina se uma nova versão será criada na replicação.
-* `agentId` (valor da string, padrão significa que todos os agentes ativados são usados). Recomenda-se ser explícito sobre o agentId; por exemplo, definir o valor para : publicar
+* `agentId` (valor da string, padrão significa que apenas os agentes para publicação são usados). Recomenda-se ser explícito sobre o agentId; por exemplo, definir o valor para : publicar. Configurar o agente para `preview` será publicado no serviço de visualização
 * `filters` (valor da string, padrão significa que todos os caminhos estão ativados). Os valores disponíveis são:
    * `onlyActivated` - somente os caminhos que não estão marcados como ativados serão ativados.
    * `onlyModified` - ative apenas caminhos que já estejam ativados e tenham uma data de modificação posterior à data de ativação.
@@ -111,6 +111,66 @@ Abaixo você encontrará exemplos de logs gerados durante um exemplo de fluxo de
 **Retomar suporte**
 
 O workflow processa o conteúdo em partes, cada uma representando um subconjunto do conteúdo completo a ser publicado. Se, por qualquer motivo, o workflow for interrompido pelo sistema, ele reiniciará e processará o segmento que ainda não foi processado. Uma declaração de log indicará que o conteúdo foi retomado de um caminho específico.
+
+### API de replicação {#replication-api}
+
+Você pode publicar conteúdo usando a API de substituição em AEM como um Cloud Service.
+
+Para obter mais informações, consulte a [Documentação da API](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
+
+**Uso básico da API**
+
+```
+@Reference
+Replicator replicator;
+@Reference
+ReplicationStatusProvider replicationStatusProvider;
+
+....
+Session session = ...
+// Activate a single page to all agents, which are active by default
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en");
+// Activate multiple pages (but try to limit it to approx 100 at max)
+replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/content/we-retail/en","/content/we-retail/de"});
+
+// ways to get the replication status
+Resource enResource = resourceResolver.getResource("/content/we-retail/en");
+Resource deResource = resourceResolver.getResource("/content/we-retail/de");
+ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
+// if you need to get the status for more more than 1 resource at once, this approach is more performant
+Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
+```
+
+**Replicação com agentes específicos**
+
+Ao replicar recursos como no exemplo acima, somente os agentes que estão ativos por padrão serão usados. No AEM como um Cloud Service, esse será apenas o agente chamado &quot;publicar&quot;, que conecta o autor ao nível de publicação.
+
+Para oferecer suporte à funcionalidade de visualização, um novo agente chamado &quot;pré-visualização&quot; foi adicionado, o que não está ativo por padrão. Esse agente é usado para conectar o autor à camada de visualização. Se quiser replicar somente por meio do agente de visualização, é necessário selecionar explicitamente esse agente de visualização por meio de um `AgentFilter`.
+
+Veja o exemplo abaixo sobre como fazer isso:
+
+```
+private static final String PREVIEW_AGENT = "preview";
+
+ReplicationStatus beforeStatus = enResource.adaptTo(ReplicationStatus.class); // beforeStatus.isActivated == false
+
+ReplicationOptions options = new ReplicationOptions();
+options.setFilter(new AgentFilter() {
+  @Override
+  public boolean isIncluded (Agent agent) {
+    return agent.getId().equals(PREVIEW_AGENT);
+  }
+});
+// will replicate only to preview
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en", options);
+
+ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // afterStatus.isActivated == false
+ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
+```
+
+Caso não forneça esse filtro e use apenas o agente &quot;publicar&quot;, o agente &quot;visualizar&quot; não será usado e a ação de replicação não afetará o nível de visualização.
+
+O `ReplicationStatus` geral de um recurso só será modificado se a ação de replicação incluir pelo menos um agente que esteja ativo por padrão. No exemplo acima, isso não ocorre, pois a replicação está usando apenas o agente &quot;preview&quot;. Portanto, você precisa usar o novo método `getStatusForAgent()`, que permite consultar o status de um agente específico. Esse método também funciona para o agente &quot;publicar&quot;. Retorna um valor não nulo se houver alguma ação de replicação feita usando o agente fornecido.
 
 ## Resolução de problemas {#troubleshooting}
 
