@@ -26,7 +26,7 @@ Os seguintes atalhos estão disponíveis para os consoles Sites, Ativos, Usuári
 | Consoles | `?` | Ajuda dos atalhos de teclado |
 |  | `/` | Executar a [pesquisa](/help/sites-cloud/authoring/getting-started/search.md) |
 |  | `Alt+`&lt;`Number`> | Alternar para a opção de [seletor do painel](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) que deseja exibir |
-|  | ` | Ocultar painel |
+|  | &grave; | Ocultar painel |
 |  | `e` | Editar |
 |  | `p` | Propriedades |
 |  | `m` | Mover |
