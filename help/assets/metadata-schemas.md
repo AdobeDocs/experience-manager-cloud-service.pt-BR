@@ -5,10 +5,9 @@ contentOwner: AG
 feature: Metadados
 role: Business Practitioner,Administrator
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-translation-type: tm+mt
-source-git-commit: 855b8b1de11e5f986948d3144104d6b5226c2dd5
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2557'
 ht-degree: 9%
 
 ---
@@ -98,8 +97,11 @@ A guia **[!UICONTROL Criar formulário]** lista os itens de formulário que voc�
 | [!UICONTROL Ativo referenciado por] | Adicione este componente para exibir a lista de ativos referenciados pelo ativo. |
 | [!UICONTROL Fazer referência ao ativo] | Adicionar para exibir uma lista de ativos que fazem referência ao ativo. |
 | [!UICONTROL Referências de produtos] | Adicionar para mostrar a lista de produtos vinculados ao ativo. |
-| [!UICONTROL Classificação do ativo] | Adicionar para exibir opções para classificar o ativo. |
 | [!UICONTROL Metadados do contexto] | Adicionar para controlar a exibição de outras guias de metadados na página de propriedades dos ativos. |
+
+<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
+| [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
+-->
 
 #### Editar o componente de metadados {#edit-the-metadata-component}
 
@@ -141,7 +143,7 @@ Para exibir qualquer guia na página de propriedades, além da guia em que o com
 
 Em vez de especificar propriedades para as opções na guia **[!UICONTROL Configurações]**, defina as opções em um arquivo JSON especificando pares de valores chave correspondentes. Especifique o caminho do arquivo JSON no campo **[!UICONTROL Caminho JSON]**.
 
-#### Adicione ou exclua uma guia no formulário de esquema {#add-delete-a-tab-in-the-schema-form}
+#### Adicionar ou excluir uma guia no formulário de esquema {#add-delete-a-tab-in-the-schema-form}
 
 O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]** e **[!UICONTROL IPTC Extension]**.
 
@@ -175,7 +177,7 @@ Para excluir um formulário, selecione-o e clique no ícone excluir.
 
 Crie um formulário no tipo de formulário apropriado. Por exemplo, para adicionar um modelo para o subtipo `image/png`, crie o formulário nos formulários &quot;image&quot;. O título do formulário de esquema é o nome do subtipo. Nesse caso, o título é `png`.
 
-#### Use um modelo de esquema existente para vários tipos MIME {#use-an-existing-schema-template-for-various-mime-types}
+#### Usar um modelo de esquema existente para vários tipos MIME {#use-an-existing-schema-template-for-various-mime-types}
 
 Você pode usar um modelo existente para um tipo MIME diferente. Por exemplo, use o formulário `image/jpeg` para ativos do tipo MIME `image/png`.
 
