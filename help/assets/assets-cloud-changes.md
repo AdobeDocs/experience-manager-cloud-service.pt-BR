@@ -4,9 +4,9 @@ description: Alterações importantes para [!DNL Adobe Experience Manager Assets
 feature: Informações da versão
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '850'
 ht-degree: 5%
 
 ---
@@ -59,6 +59,7 @@ Para fazer uma validação completa do código e do processo, incluindo a assimi
 | Geração de subconjuntos para ativos compostos | Não suportado. | Casos de uso dependentes não são cumpridos. Por exemplo, a anotação de arquivos PDF de várias páginas é afetada. Consulte [criação de subativo em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Página inicial | Não suportado. | Consulte [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Extrair ativos do arquivo ZIP | Não suportado. | Consulte [Extração de ZIP em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
+| Classificação de ativos | Não suportado. | O widget no editor de esquema de metadados que forneceu a opção de classificação de ativos não é suportado. |
 | Interface do usuário clássica | Não suportado. | Somente a interface habilitada para toque está disponível. |
 
 >[!MORELIKETHIS]
