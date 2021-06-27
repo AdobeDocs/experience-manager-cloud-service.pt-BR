@@ -1,16 +1,15 @@
 ---
 title: Pesquisar aspectos.
 description: Este artigo descreve como criar, modificar e usar facetas de pesquisa no AEM.
-feature: Search,Metadata
+feature: Pesquisar,Metadados
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2361'
 ht-degree: 23%
 
 ---
-
 
 # Pesquisar aspectos {#search-facets}
 
@@ -269,17 +268,6 @@ Semelhante à forma como você adiciona um predicado de Propriedade ou um predic
     <ul>
      <li>Etiqueta</li>
      <li>Nome da propriedade</li>
-     <li>Descrição</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Classificação</td>
-   <td>Predicado de pesquisa para pesquisar ativos com base em sua classificação média </td>
-   <td>
-    <ul>
-     <li>Etiqueta</li>
-     <li>Nome da propriedade</li>
-     <li>Caminho da opção</li>
      <li>Descrição</li>
     </ul> </td>
   </tr>
