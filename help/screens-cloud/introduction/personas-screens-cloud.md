@@ -1,10 +1,7 @@
 ---
 title: Definições de função no AEM Screens as a Cloud Service
 description: Esta página descreve as definições de função no AEM Screens as a Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 65b7bc7d911a80fa1ae03dc83eb49956b283a050
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
