@@ -2,9 +2,9 @@
 title: Visualização de conteúdo
 description: Saiba como usar o Serviço de visualização de AEM para visualizar o conteúdo antes de entrar no ar.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: f5e37a4ac8b179ac869609edc87f52858607ad36
+source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 
 Consulte [Gerenciar seus ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obter mais informações sobre como obter os URLs dos seus ambientes.
 
-O conteúdo também pode ser publicado para visualização usando um [Fluxo de trabalho da árvore de conteúdo de publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=en#publish-content-tree-workflow) com o parâmetro agentId definido para visualização ou usando a [API de replicação](/help/operations/replication.md#replication-api) com um AgentFilter configurado para visualização.
+O conteúdo também pode ser publicado para visualização usando um [Fluxo de trabalho da árvore de conteúdo de publicação](/help/operations/replication.md#publish-content-tree-workflow) com o parâmetro agentId definido para visualização ou usando a [API de replicação](/help/operations/replication.md#replication-api) com um AgentFilter configurado para visualização.
 
 ## Configurações do OSGi para a camada de visualização {#configuring-osgi-settings-for-the-preview-tier}
 
