@@ -1,10 +1,7 @@
 ---
 title: Registrar players no Screens como um Cloud Service
 description: Esta página descreve como registrar players no Screens como um Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# Registrando players no Screens como um Cloud Service {#registering-players-screens-cloud}
+# Registrar players no Screens como um Cloud Service {#registering-players-screens-cloud}
 
 Depois de instalar e configurar players para o Screens como um Cloud Service, você deve registrar os players.
 
@@ -23,7 +20,7 @@ Este documento ajuda você a entender o registro de players no Provedor de servi
 * entender como registrar jogadores
 * como concluir o processo de registro do Provedor de serviços do Screens
 
-## Etapas para registrar um reprodutor do Screens {#register-players}
+## Etapas para registrar um player do Screens {#register-players}
 
 Depois de instalar seu player no Screens como um Cloud Service, você estará pronto para registrar seu player no Provedor de serviços do Screens.
 
