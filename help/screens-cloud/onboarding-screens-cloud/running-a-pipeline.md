@@ -1,10 +1,7 @@
 ---
 title: Execução de um pipeline
 description: Esta página descreve como executar um pipeline para o Screens como Cloud Service no Cloud Manager.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
@@ -12,7 +9,7 @@ ht-degree: 2%
 ---
 
 
-# Execução de um pipeline para Screens as a Cloud Service no Cloud Manager {#run-pipeline-screens-cloud}
+# Execução de um pipeline para o Screens as a Cloud Service no Cloud Manager {#run-pipeline-screens-cloud}
 
 Esta seção descreve como executar o pipeline e implantar seu código para o seu programa no Cloud Manager.
 
