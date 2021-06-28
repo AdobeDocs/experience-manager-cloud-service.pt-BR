@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
+source-git-commit: 641fd1716555806311e62a020e70b799ab3c621d
 workflow-type: tm+mt
-source-wordcount: '2785'
-ht-degree: 42%
+source-wordcount: '2907'
+ht-degree: 40%
 
 ---
 
@@ -158,6 +158,8 @@ Consulte [Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.c
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extração complementar"
 
 Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Transferência de conteúdo:
+>[!NOTE]
+>Se o Amazon S3 ou o Azure Data Store for usado como o tipo de armazenamento de dados, você poderá executar a etapa opcional de pré-cópia para acelerar significativamente a fase de extração. Para fazer isso, será necessário configurar um arquivo azcopy.config antes de executar a extração. Consulte [Manuseio de repositórios de conteúdo grandes] para obter mais detalhes.
 
 1. Selecione um conjunto de migração na página *Visão geral* e clique em **Extrair** para iniciar a extração. A caixa de diálogo **Extração do conjunto de migração** é exibida e clique em **Extrair** para iniciar a fase de extração.
 
@@ -206,8 +208,13 @@ Quando o processo de extração estiver concluído, você poderá transferir o c
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Ingestão complementar"
 
 Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Transferência de conteúdo:
+>[!NOTE]
+>Se o Amazon S3 ou o Azure Data Store for usado como o tipo de armazenamento de dados, você poderá executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. Consulte [Gravação com AzCopy] para obter mais detalhes.
 
-1. Selecione um conjunto de migração na página *Visão geral* e clique em **Assimilar** para iniciar a extração. A caixa de diálogo **Assimilação do conjunto de migração** é exibida. Clique em **Assimilar** para iniciar a fase de assimilação. É possível assimilar conteúdo para Autor e Publicação ao mesmo tempo.
+1. Selecione um conjunto de migração na página *Visão geral* e clique em **Assimilar** para iniciar a assimilação. A caixa de diálogo **Assimilação do conjunto de migração** é exibida. Clique em **Assimilar** para iniciar a fase de assimilação. É possível assimilar conteúdo para Autor e Publicação ao mesmo tempo.
+
+   >[!IMPORTANT]
+   >Se a assimilação com pré-cópia for usada (para S3 ou Azure Data Store), é recomendável executar a assimilação do autor primeiro sozinho. Isso irá acelerar a assimilação de Publicação quando for executada mais tarde.
 
    >[!IMPORTANT]
    >Quando a opção **Limpar conteúdo existente na instância do Cloud antes da assimilação** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também é verdadeiro para um usuário administrador adicionado ao grupo **administradores**.
