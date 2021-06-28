@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -154,5 +154,25 @@ Você pode gravar em [!DNL formscsbeta@adobe.com] para se inscrever no programa 
 * Os Componentes principais do Commerce são compatíveis com a coleta de dados do Adobe Commerce Sensei Recs
 * URLs compatíveis com SEO aprimorados para páginas de categoria
 * Suporte para cabeçalhos HTTP personalizados por site/configuração
+
+## Ferramenta Transferência de conteúdo {#content-transfer-tool}
+
+### Data de lançamento {#release-date-ctt-latest}
+
+A Data de lançamento da ferramenta Transferência de conteúdo v1.5.4 é 28 de junho de 2021.
+
+### Novidades {#what-is-new-ctt-latest}
+
+* Suporte para uma etapa [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) opcional adicionada para uso com CTT. A etapa de pré-cópia pode ser usada para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo quando a instância de origem AEM está configurada para usar um armazenamento de dados Amazon S3 ou Azure Blob Storage.
+
+* A grade de proteção foi adicionada à CTT para impedir que os usuários interrompam uma assimilação e possivelmente corrompam dados depois de atingir o ponto crítico durante a fase de assimilação.
+
+* Os logs de extração foram mais descritivos para ajudar na solução de problemas.
+
+* Adicionadas mais mensagens descritivas sobre o status de assimilação na interface do usuário.
+
+### Correções de erros {#bug-fixes-ctt-latest}
+
+* Ao parar uma assimilação na instância do autor, a interface do usuário substituiu uma assimilação concluída anteriormente na instância de publicação para `STOPPED` de `FINISHED`. Isso foi corrigido.
 
 
