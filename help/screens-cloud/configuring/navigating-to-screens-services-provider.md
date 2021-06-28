@@ -1,10 +1,7 @@
 ---
 title: Navegar até o Provedor de serviços do Screens
 description: Esta página descreve como navegar até o Provedor de serviços do Screens.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 1%
@@ -25,7 +22,7 @@ Esta seção descreve como configurar o Provedor de serviços do Screens.
 
 A seção a seguir mostra como configurar e configurar o Provedor de serviços do Screens.
 
-## Etapas para configurar o Provedor de serviços do Screens {#screens-services-provider}
+## Etapas para configurar o provedor de serviços do Screens {#screens-services-provider}
 
 Siga as etapas abaixo para configurar o Provedor de serviços do Screens:
 
