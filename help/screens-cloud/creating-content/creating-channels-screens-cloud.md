@@ -1,10 +1,7 @@
 ---
 title: Criação e gerenciamento de canais no Screens as a Cloud Service
 description: Esta página descreve como criar e gerenciar canais no Screens as a Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 7%
@@ -12,7 +9,7 @@ ht-degree: 7%
 ---
 
 
-# Criação e gerenciamento de canais no Screens como um Cloud Service {#creating-channels-screens-cloud}
+# Criação e gerenciamento de canais no Screens as a Cloud Service {#creating-channels-screens-cloud}
 
 Depois de criar um Projeto do AEM Screens, você deve criar canais.
 ***Canais***, exiba uma sequência de conteúdo (imagens e vídeos), um site ou um aplicativo de página única.
@@ -54,7 +51,7 @@ Siga as etapas abaixo para criar um novo canal de sequência no Screens as a Clo
 
    Depois de criar o canal, agora é possível adicionar conteúdo ao canal. Consulte [Adicionar conteúdo a um canal](#add-content) para saber como adicionar ativos (imagens/vídeos) ao seu canal.
 
-## Gerenciar um canal {#managing-channels}
+## Gerenciamento de um canal {#managing-channels}
 
 Você pode editar, exibir propriedades e o painel, copiar, visualizar e excluir um canal.
 
