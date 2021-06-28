@@ -4,9 +4,9 @@ description: Alterações importantes para [!DNL Adobe Experience Manager Assets
 feature: Informações da versão
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 19e64cc8239afefd1f17b6cffee5e681f220a68c
+source-git-commit: e3efbaf5cb590b079ccc228a0f130ecec198d2ff
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '858'
 ht-degree: 5%
 
 ---
@@ -56,7 +56,7 @@ Para fazer uma validação completa do código e do processo, incluindo a assimi
 | Write-back de metadados | Funciona de forma diferente | Desativado por padrão. Ative o iniciador do fluxo de trabalho correspondente, se necessário. O write-back é realizado pelos microsserviços de ativos. |
 | Processamento de ativos carregados usando o Gerenciador de pacotes | Precisa de intervenção manual. | Reprocessar manualmente usando a ação **[!UICONTROL Reprocessar ativo]**. |
 | Detecção de tipo MIME | Não suportado. | Se você carregar um ativo digital sem uma extensão ou com uma extensão incorreta, ele poderá não ser processado conforme desejado. Os usuários ainda podem armazenar os arquivos binários sem uma extensão no DAM. Consulte [Detecção de tipo MIME em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
-| Geração de subconjuntos para ativos compostos | Não suportado. | Casos de uso dependentes não são cumpridos. Por exemplo, a anotação de arquivos PDF de várias páginas é afetada. Consulte [criação de subativo em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
+| Geração de subconjunto para anotação ou anotação de um ativo composto | Não suportado. | Casos de uso dependentes não são cumpridos. Por exemplo, visualizar ou anotar um arquivo PDF de várias páginas, INDD, PPT, PPTX e AI não é possível. Consulte [criação de subativo em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Página inicial | Não suportado. | Consulte [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Extrair ativos do arquivo ZIP | Não suportado. | Consulte [Extração de ZIP em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Classificações de ativos | Não suportado. | Não há suporte para o widget de classificação no editor de esquema de metadados. |
