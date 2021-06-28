@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 60%
+source-wordcount: '1930'
+ht-degree: 59%
 
 ---
 
@@ -157,7 +157,7 @@ Configurar a miniatura da página
 
 ### Cloud Services {#cloud-services}
 
-* **Configurações do Cloud Service** - Defina as propriedades para os serviços em nuvem
+* **Configurações de Cloud Service**  - Defina as propriedades para os serviços em nuvem
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -217,6 +217,12 @@ Essa guia só fica visível para páginas que servem como blueprints. Os bluepri
    * **Herança da Live Copy**  - se marcada, a configuração da Live Copy é eficaz em todos os filhos
    * **Herdar configurações de implantação do Pai**  - se marcada, a configuração de implantação é herdada do pai da página
    * **Escolher configuração de implementação**  - Define as circunstâncias sob as quais as modificações serão propagadas do Blueprint e só estarão disponíveis quando  **Herdar configurações de implementação dos** parceiros não selecionados
+
+### Visualizar {#preview}
+
+Quando um ambiente de Visualização estiver ativado, você verá:
+
+* URL de visualização - o URL usado para acessar o conteúdo no ambiente de visualização
 
 ## Editar as propriedades da página {#editing-page-properties-1}
 
