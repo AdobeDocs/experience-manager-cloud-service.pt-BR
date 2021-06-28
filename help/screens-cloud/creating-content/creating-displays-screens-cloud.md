@@ -1,10 +1,7 @@
 ---
 title: Criação e gerenciamento de exibições no Screens as a Cloud Service
 description: Esta página descreve como criar e gerenciar exibições no Screens as a Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 14%
@@ -12,7 +9,7 @@ ht-degree: 14%
 ---
 
 
-# Criação e gerenciamento de exibições no Screens como um Cloud Service {#create-displays-screens-cloud}
+# Criação e gerenciamento de exibições no Screens as a Cloud Service {#create-displays-screens-cloud}
 
 Depois de publicar seu canal, é hora de criar a exibição no Provedor de serviços do Screens.
 
@@ -24,7 +21,7 @@ Este documento ajuda você a entender como criar e gerenciar exibições no Prov
 
 * Entenda como criar exibições.
 
-## Etapas para criar um {#create-display} de exibição
+## Etapas para criar uma exibição {#create-display}
 
 Siga as etapas abaixo para criar a exibição do Provedor de serviços do Screens:
 
@@ -45,7 +42,7 @@ Siga as etapas abaixo para criar a exibição do Provedor de serviços do Screen
 
    ![imagem](/help/screens-cloud/assets/display/disp-4.png)
 
-### Excluindo uma Exibição {#deleting-display}
+### Exclusão de uma exibição {#deleting-display}
 
 Você pode excluir uma exibição do Provedor de serviços do Screens.
 
