@@ -1,10 +1,7 @@
 ---
 title: Adicionar o complemento Screens a um programa existente no Cloud Manager
 description: Esta página descreve como adicionar um complemento do Screens a um programa existente no Cloud Manager for Screens as a Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 1%
@@ -23,7 +20,7 @@ Esta seção descreve como adicionar o Screens como um complemento a um programa
 
 As etapas a seguir permitirão saber como adicionar o complemento Screens a um programa existente no Cloud Manager.
 
-## Etapas para adicionar o complemento do Screens a um programa existente no Cloud Manager {#edit-programs-screens-cloud}
+## Etapas para adicionar o complemento Screens a um programa existente no Cloud Manager {#edit-programs-screens-cloud}
 
 Siga as etapas abaixo para adicionar o Screens como um complemento a um programa existente:
 
