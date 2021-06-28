@@ -2,9 +2,9 @@
 title: Visualização de conteúdo
 description: Saiba como usar o Serviço de visualização de AEM para visualizar o conteúdo antes de entrar no ar.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,15 @@ Você pode publicar conteúdo no Serviço de visualização usando a interface d
 
 1. Clique em **Next** e em **Publish** para confirmar.
 
-O conteúdo da visualização é exibido, anexe **preview** ao URL de publicação da instância de produção. O URL deve ser construído desta forma:
+1. Uma caixa de diálogo exibirá os URLs para acessar o conteúdo no ambiente de Visualização.
 
-```
-https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-```
+   Ou para ver o conteúdo da visualização, você também pode anexar **preview** ao URL de publicação da instância de produção.
+
+   O URL deve ser construído desta forma:
+
+   ```
+   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
+   ```
 
 Consulte [Gerenciar seus ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obter mais informações sobre como obter os URLs dos seus ambientes.
 
