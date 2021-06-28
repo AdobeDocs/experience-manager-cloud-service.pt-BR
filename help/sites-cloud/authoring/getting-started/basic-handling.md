@@ -2,9 +2,9 @@
 title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2881'
 ht-degree: 98%
 
 ---
@@ -56,7 +56,7 @@ A navegação global possui dois painéis, representados por ícones na margem e
 
 As opções disponíveis nesses painéis estão descritas abaixo.
 
-### Painel Navegação    {#navigation-panel}
+### Painel Navegação   {#navigation-panel}
 
 O painel de Navegação:
 
@@ -162,7 +162,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![Ir para o conteúdo principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
-## Acessar ajuda {#accessing-help}
+## Acessar ajuda   {#accessing-help}
 
 Há vários recursos de ajuda disponíveis:
 
@@ -224,7 +224,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 >[!NOTE]
 Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
-## Ações rápidas  {#quick-actions}
+## Ações rápidas {#quick-actions}
 
 Na [Exibição de cartão](#card-view), determinadas ações estão disponíveis como ícones de ação rápida, além de estarem na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e elimina a necessidade de pré-seleção.
 
@@ -245,7 +245,7 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 >[!NOTE]
 Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
 
-### Seleção de recursos    {#selecting-resources}
+### Seleção de recursos   {#selecting-resources}
 
 Selecionar um recurso específico depende de uma combinação da exibição e do dispositivo:
 
@@ -315,7 +315,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * O modelo no qual a página se baseia
    * Detalhes da modificação
    * Idioma da página
-   * Detalhes da publicação
+   * Publicação e detalhes da visualização
 
 
 ### Exibição de cartão {#card-view}
@@ -337,7 +337,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 * É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar as ações rápidas) ou para cima novamente usando a [navegação estrutural no cabeçalho](#the-header).
 
-### Exibição de lista    {#list-view}
+### Exibição de lista   {#list-view}
 
 ![Exibição de lista](/help/sites-cloud/authoring/assets/list-view.png)
 
@@ -361,6 +361,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * **Nome** - O nome da página, que pode ser útil em um ambiente de criação multilíngue, pois faz parte do URL da página e não muda, independentemente do idioma
    * **Modificado** - Data da última modificação e o usuário que a realizou
    * **Publicado**- Status de publicação
+   * **Visualização**  - Status da visualização
    * **Modelo** - Modelo no qual a página se baseia
    * **Fluxo de trabalho** - Fluxo de trabalho aplicado atualmente à página. Mais informações estão disponíveis ao passar o mouse ou abrir a Linha do tempo.
    * **Análise de páginas**
