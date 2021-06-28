@@ -2,9 +2,9 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d08fc076306c54f8551c9df499efa0ded7bcc131
+source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2929'
 ht-degree: 40%
 
 ---
@@ -209,7 +209,7 @@ Quando o processo de extração estiver concluído, você poderá transferir o c
 
 Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Transferência de conteúdo:
 >[!NOTE]
->Se o Amazon S3 ou o Azure Data Store for usado como o tipo de armazenamento de dados, você poderá executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. Consulte [Gravação com AzCopy] para obter mais detalhes.
+>Se o Amazon S3 ou o Azure Data Store for usado como o tipo de armazenamento de dados, você poderá executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. Consulte [Gravação com AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) para obter mais detalhes.
 
 1. Selecione um conjunto de migração na página *Visão geral* e clique em **Assimilar** para iniciar a assimilação. A caixa de diálogo **Assimilação do conjunto de migração** é exibida. Clique em **Assimilar** para iniciar a fase de assimilação. É possível assimilar conteúdo para Autor e Publicação ao mesmo tempo.
 
