@@ -1,10 +1,7 @@
 ---
 title: Instalar e configurar players no Screens como um Cloud Service
 description: Esta página descreve como instalar e configurar players no Screens como um Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 1%
@@ -23,7 +20,7 @@ Este documento ajuda você a entender como configurar o reprodutor antes de regi
 * onde instalar os players
 * como atualizar o reprodutor para o modo Cloud
 
-## Etapas para definir o reprodutor para o modo de nuvem {#cloud-mode-setup}
+## Etapas para definir o reprodutor para o modo Nuvem {#cloud-mode-setup}
 
 Depois de baixar o player mais recente em [Downloads do AEM Screens Player](https://download.macromedia.com/screens/), você está pronto para atualizar o player para o modo Cloud.
 
