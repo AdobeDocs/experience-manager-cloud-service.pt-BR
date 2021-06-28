@@ -1,10 +1,7 @@
 ---
 title: Criação de uma Ramificação
 description: Esta página descreve como criar uma ramificação no Cloud Manager para Screens as a Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 0042b0ba6b652a61ee0ac880bc5b4db8aa679359
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 1%
