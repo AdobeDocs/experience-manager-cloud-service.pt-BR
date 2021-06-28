@@ -1,7 +1,7 @@
 ---
 title: Lidar com grandes repositórios de conteúdo
 description: Esta seção descreve o tratamento de repositórios de conteúdo grande
-source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
+source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -38,13 +38,13 @@ Siga esta seção para saber como configurar o AzCopy como uma etapa de pré-có
 
 ### 0. Determine o tamanho total de todo o conteúdo no armazenamento de dados {#determine-total-size}
 
-#### Armazenamento de dados do Azure Blob
+#### Armazenamento de dados do Azure Blob {#azure-blob-storage}
 
 Na página de propriedades do contêiner no portal do Azure, use o botão **Calculate size** para determinar o tamanho de todo o conteúdo no contêiner. Por exemplo:
 
 ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
-#### Armazenamento de dados do Amazon S3
+#### Armazenamento de dados do Amazon S3 {#amazon-data}
 
 Você pode usar a guia Métricas do contêiner para determinar o tamanho de todo o conteúdo do contêiner. Por exemplo:
 
@@ -67,7 +67,7 @@ Na instância do AEM de origem, em crx-quickstart/cloud-migration , crie um novo
 
 O conteúdo desse arquivo de configuração será diferente, dependendo se a instância de AEM de origem usa um armazenamento de dados do Azure ou Amazon S3.
 
-#### Armazenamento de dados do Azure Blob
+#### Armazenamento de dados do Azure Blob {#azure-blob-storage-data}
 
 Seu arquivo azcopy.config deve incluir as seguintes propriedades (certifique-se de usar o azCopyPath e o azureSas corretos para sua instância).
 
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Armazenamento de dados do Amazon S3
+#### Armazenamento de dados do Amazon S3 {#amazon-data-store}
 
 Seu arquivo azcopy.config deve incluir as seguintes propriedades (certifique-se de usar os valores corretos para sua instância).
 
