@@ -1,7 +1,7 @@
 ---
 title: Lidar com grandes repositórios de conteúdo
 description: Esta seção descreve o tratamento de repositórios de conteúdo grande
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -134,7 +134,6 @@ Quaisquer blobs copiados antes do erro serão ignorados automaticamente pelo AzC
 Com o lançamento da ferramenta Transferência de conteúdo 1.5.4, adicionamos suporte ao AzCopy à assimilação de autor.
 
 >[!NOTE]
->
 > A recomendação é executar a assimilação do autor primeiro sozinho. Isso irá acelerar a assimilação de Publicação quando for executada mais tarde.
 
 Para aproveitar o AzCopy durante a assimilação, precisamos que você esteja em um AEM como uma versão de Cloud Service que tenha pelo menos a versão 2021.6.5561.
