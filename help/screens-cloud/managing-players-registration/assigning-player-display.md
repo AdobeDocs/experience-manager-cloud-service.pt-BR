@@ -1,10 +1,7 @@
 ---
 title: Atribuição do Player a uma exibição no Screens como Cloud Service
 description: Esta página descreve como atribuir um player a uma exibição no Screens como Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 2%
@@ -12,7 +9,7 @@ ht-degree: 2%
 ---
 
 
-# Atribuir player a uma exibição no Screens como Cloud Service {#assign-player-displays-screens-cloud}
+# Atribuição do Player a uma exibição no Screens como Cloud Service {#assign-player-displays-screens-cloud}
 
 Quando a configuração do projeto for concluída, você deverá atribuir o reprodutor a uma exibição para exibir o conteúdo.
 
@@ -20,7 +17,7 @@ Quando a configuração do projeto for concluída, você deverá atribuir o repr
 
 Este documento ajuda você a entender como atribuir um reprodutor a uma exibição no Provedor de serviços do Screens. Essas são as etapas obrigatórias finais antes que o conteúdo comece a ser reproduzido no Screens como um reprodutor de Cloud Service.
 
-## Etapas para atribuir um reprodutor a um monitor {#create-display}
+## Etapas para atribuir um reprodutor a uma exibição {#create-display}
 
 Depois de registrar o reprodutor, é obrigatório atribuir um reprodutor à exibição necessária, para que o conteúdo comece a ser reproduzido no reprodutor.
 
