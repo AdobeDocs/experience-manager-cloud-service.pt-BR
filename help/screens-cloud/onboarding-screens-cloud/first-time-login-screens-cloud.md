@@ -1,10 +1,7 @@
 ---
 title: Primeiro logon no Screens como um Cloud Service
 description: Esta página descreve as primeiras etapas da introdução ao Screens como um Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -15,7 +12,7 @@ ht-degree: 0%
 # Primeiro logon no Screens como um Cloud Service {#first-time-login-screens-cloud}
 
 
-## O processo de integração {#onboarding-process}
+## Processo de integração {#onboarding-process}
 
 Após a assinatura do contrato, o Adobe Managed Services (AMS) inicia a integração do cliente. Durante a fase de provisionamento, quando o AMS provisionar a instância do AMS seguindo o contrato, o Feature Pack do AMS-Screens-Cloud será instalado. O Feature Pack permite que o Provedor de serviços do Screens se conecte à instância do AMS ou ao Provedor de conteúdo do Screens.
 
