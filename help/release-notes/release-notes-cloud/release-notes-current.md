@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
+source-git-commit: 2d0fc0351c62f920376c9d36f4919f827c711afc
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1384'
 ht-degree: 2%
 
 ---
@@ -143,6 +143,27 @@ Você pode gravar em [!DNL formscsbeta@adobe.com] para se inscrever no programa 
 
 * Quando um campo é validado antes de enviar dados para o serviço de backend por meio do FDM (Form Data Model), as validações são bem-sucedidas, mas o serviço do Modelo de dados de formulário não consegue invocar a validação posterior.
 * Às vezes, ao enviar um formulário contendo um campo de carregamento HTML padrão de um dispositivo Apple iOS, o conteúdo do arquivo não é enviado e um arquivo de 0 byte é recebido na outra extremidade. Esse é um problema conhecido no Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+## AEM Screens {#aem-screens}
+
+Esta seção descreve as Notas de versão do Screens as a Cloud Service.
+
+### Data de lançamento {#release-date-june-screens}
+
+A data de lançamento do AEM Screens as a Cloud Service é 24 de junho de 2021.
+
+### Novidades {#what-is-new-screens-june}
+
+>[!NOTE]
+>Consulte o [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guia para obter conhecimento fundamental necessário para instalar, configurar e executar o Screens com êxito como Cloud Service e vincule-se à documentação técnica de conceitos detalhados.
+
+* O gerenciamento do registro de dispositivos em massa significa que o provisionamento de grandes quantidades de dispositivos de player é mais rápido e eficiente.
+
+* Opções de pesquisa e filtro aprimoradas para cada visualização de inventário de Dispositivo, Exibição e Canal.
+
+* O instantâneo de integridade do dispositivo economiza tempo, fornecendo um status crítico.
+
+* A página Detalhes do objeto oferece um resumo das informações mais relevantes para cada objeto do projeto.
 
 ## Complemento CIF {#cloud-services-cif}
 
