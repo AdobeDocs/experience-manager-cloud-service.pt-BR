@@ -3,16 +3,15 @@ title: Pesquisar ativos e imagens digitais em [!DNL Adobe Experience Manager]
 description: Saiba como localizar os ativos necessários em [!DNL Adobe Experience Manager] usando o painel Filtros e como usar os ativos que aparecem na pesquisa.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Search,Metadata,Asset Distribution
+feature: Pesquisa, Metadados, Distribuição de ativos
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
+source-git-commit: a6813cf691acb868589932719e33303871859323
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4916'
 ht-degree: 6%
 
 ---
-
 
 # Pesquisar ativos em [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
@@ -29,7 +28,7 @@ ht-degree: 6%
 | [Classificação de pesquisa e reforço](#searchrank) | [Predicados personalizados](#custompredicates) | [Coleções inteligentes](#collections) |
 | [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) |  | [Entender e solucionar problemas de resultados inesperados](#unexpected-results) |
 | [Pesquisar a partir de outras soluções e aplicativos](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Aplicativo de desktop do Experience Manager](#desktop-app)</li><li>[Imagens do Adobe Stock](#adobe-stock)</li><li>[Ativos da Dynamic Media](#search-dynamic-media-assets)</li></ul> |  |  |
-| [Seletor de ativos](#asset-selector) |  |  |
+| [Seletor de ativos](#asset-picker) |  |  |
 | [](#limitations) Limitações e  [dicas](#tips) |  |  |
 | [Exemplos ilustrados](#samples) |  |  |
 
@@ -57,7 +56,7 @@ Você pode descobrir os ativos desejados mais rapidamente na página de resultad
 
 *Figura: Veja o número aproximado de ativos sem filtrar os resultados da pesquisa nos aspectos de pesquisa.*
 
-## Pesquise sugestões ao digitar {#searchsuggestions}
+## Pesquisar sugestões à medida que você digita {#searchsuggestions}
 
 Quando você começa a digitar uma palavra-chave, AEM sugere as possíveis palavras-chave ou frases de pesquisa. As sugestões são baseadas nos ativos no AEM. AEM indexa todos os campos de metadados para ajudar na pesquisa. Para fornecer sugestões de pesquisa, o sistema usa os valores dos poucos campos de metadados a seguir. Para fornecer sugestões de pesquisa, considere preencher os seguintes campos com palavras-chave apropriadas:
 
@@ -69,7 +68,7 @@ Quando você começa a digitar uma palavra-chave, AEM sugere as possíveis palav
 
 ## Entender os resultados e o comportamento da pesquisa {#searchbehavior}
 
-### Termos e resultados básicos de pesquisa {#searchbasics}
+### Termos e resultados básicos da pesquisa {#searchbasics}
 
 Você pode executar pesquisas de palavras-chave a partir do campo OmniSearch . A pesquisa de palavra-chave não diferencia maiúsculas de minúsculas e é uma pesquisa de texto completo (nos campos de metadados populares). Se mais de uma palavra-chave for usada, `AND` será o operador padrão entre as palavras-chave.
 
@@ -193,7 +192,7 @@ Estes são alguns exemplos de formatos de pesquisa para consultas complexas:
 * Para exibir ativos com um valor de propriedade que contenha uma string específica (por exemplo: título = Sala de Reunião de Basileia): `title:*Meeting*`
 * Para exibir ativos que contêm uma string específica e têm um valor de propriedade específico (por exemplo: procure por Adobe de sequência em ativos com title=John Doe): `*Adobe* title:"John Doe"`
 
-## Pesquise ativos de outras [!DNL Experience Manager] ofertas ou interfaces {#search-assets-other-surfaces}
+## Pesquisar ativos de outras [!DNL Experience Manager] ofertas ou interfaces {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] conecta o repositório DAM a várias outras  [!DNL Experience Manager] soluções para fornecer acesso mais rápido a ativos digitais e simplificar os fluxos de trabalho criativos. Qualquer descoberta de ativo começa com navegação ou pesquisa. O comportamento de pesquisa permanece basicamente o mesmo em várias superfícies e soluções. Alguns métodos de pesquisa são alterados conforme o público-alvo, os casos de uso e a interface do usuário variam nas soluções [!DNL Experience Manager]. Os métodos específicos estão documentados para as soluções individuais nos links abaixo. As dicas e comportamentos universalmente aplicáveis estão documentados neste artigo.
 
@@ -201,7 +200,7 @@ Estes são alguns exemplos de formatos de pesquisa para consultas complexas:
 
 Usando o Adobe Asset Link, os profissionais criativos agora podem acessar o conteúdo armazenado em [!DNL Experience Manager Assets], sem sair dos aplicativos Adobe Creative Cloud compatíveis. Os criadores podem navegar, pesquisar, sair e fazer check-in de ativos com facilidade usando o painel no aplicativo nos aplicativos [!DNL Adobe Creative Cloud]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] e [!DNL Adobe InDesign]. O Asset Link também permite que os usuários pesquisem resultados visualmente semelhantes. Os resultados da exibição de pesquisa visual são fornecidos por algoritmos de aprendizado de máquina da Adobe Sensei e ajudam os usuários a encontrar imagens esteticamente semelhantes. Consulte [pesquisar e procurar ativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) usando o Adobe Asset Link.
 
-### Pesquisar ativos no [!DNL Experience Manager] aplicativo de desktop {#desktop-app}
+### Pesquisar ativos no aplicativo de desktop [!DNL Experience Manager] {#desktop-app}
 
 Os profissionais de criação usam o aplicativo de desktop para tornar o [!DNL Experience Manager Assets] facilmente pesquisável e disponível em seu desktop local (Win ou Mac). Os criadores podem revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas em [!DNL Experience Manager] com uma nova versão criada no repositório. O aplicativo suporta pesquisas básicas usando uma ou mais palavras-chave, curingas `*` e `?` e operador `AND`. Consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) no aplicativo de desktop.
 
@@ -209,11 +208,11 @@ Os profissionais de criação usam o aplicativo de desktop para tornar o [!DNL E
 
 Usuários de linha de negócios e profissionais de marketing usam o Brand Portal para compartilhar com eficiência e segurança os ativos digitais aprovados com suas equipes internas estendidas, parceiros e revendedores. Consulte [pesquisar ativos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
-### Pesquisar [!DNL Adobe Stock] imagens {#adobe-stock1}
+### Pesquisar imagens [!DNL Adobe Stock] {#adobe-stock1}
 
 Na interface do usuário [!DNL Experience Manager], os usuários podem pesquisar ativos da Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` no campo Omnisearch . Você também pode usar o painel **[!UICONTROL Filters]** para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo Adobe Stock. Consulte [gerenciar [!DNL Adobe Stock] imagens em [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Pesquisar [!DNL Dynamic Media] ativos {#search-dynamic-media-assets}
+### Pesquisar ativos [!DNL Dynamic Media] {#search-dynamic-media-assets}
 
 Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação. Ao criar páginas da Web, os autores podem pesquisar por conjuntos no Localizador de conteúdo. Há um filtro para conjuntos disponível em um menu pop-up.
 
@@ -225,7 +224,7 @@ Os autores podem usar o Localizador de conteúdo para pesquisar o repositório D
 
 [!DNL Experience Manager] o recurso de pesquisa suporta a pesquisa de coleções e a pesquisa de ativos dentro de uma coleção. Consulte [pesquisar coleções](/help/assets/manage-collections.md).
 
-## Seletor de ativo {#asset-picker}
+## Seletor de ativos {#asset-picker}
 
 >[!NOTE]
 >
@@ -380,7 +379,7 @@ To improve the speed of discovery, [!DNL Experience Manager Assets] offers searc
 You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
 -->
 
-### O predicado personalizado para filtrar os resultados de pesquisa {#custompredicates}
+### Predicados personalizados para filtrar os resultados da pesquisa {#custompredicates}
 
 Os predicados são usados para criar facetas. Os administradores podem personalizar os aspectos de pesquisa no painel Filtros usando predicados pré-configurados. Esses predicados podem ser personalizados usando sobreposições. Consulte [criar predicados personalizados](/help/assets/search-facets.md).
 
