@@ -2,16 +2,15 @@
 title: Relatórios sobre uso e compartilhamento
 description: Relatórios sobre seus ativos em [!DNL Adobe Experience Manager Assets] que ajudam a entender o uso, a atividade e o compartilhamento dos ativos digitais.
 contentOwner: AG
-feature: Asset Reports,Asset Management
+feature: Relatórios de ativos, Gerenciamento de ativos
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
+source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 7%
+source-wordcount: '872'
+ht-degree: 6%
 
 ---
-
 
 # Relatórios de ativos {#asset-reports}
 
@@ -121,7 +120,6 @@ Você pode adicionar colunas personalizadas aos seguintes relatórios para exibi
 -->
 
 * Imagem
-* Download
 * Expiração
 * Modificação
 * Publicação
