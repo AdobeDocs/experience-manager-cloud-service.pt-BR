@@ -3,7 +3,7 @@ sub-product: Ajuda do Adobe Experience Manager as a Cloud Service
 user-guide-title: Ajuda do Adobe Experience Manager as a Cloud Service
 feature: Informações da versão
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: 441c5f9f1a58bb837f27aef84392b6ec0fba8a78
+source-git-commit: f595e456ebd6eb4fd9fa1e6a509bb1e3587f1585
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 58%
@@ -21,7 +21,7 @@ ht-degree: 58%
 + [Integração ao AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)
 + [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html)
 + [AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
-+ [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-cloud/home.html)
++ [AEM Screens as a Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html)
 + [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/home.html)
 + [Migração para o AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)
 + [Implementação de aplicativos do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html)
