@@ -1,10 +1,10 @@
 ---
 title: Criação e gerenciamento de exibições no Screens as a Cloud Service
 description: Esta página descreve como criar e gerenciar exibições no Screens as a Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 14%
+source-wordcount: '292'
+ht-degree: 13%
 
 ---
 
@@ -52,4 +52,4 @@ Selecione a exibição e clique em **Delete** na parte inferior do painel, confo
 
 ## O que vem a seguir {#whats-next}
 
-Agora, que você aprendeu a criar e gerenciar exibições para o seu projeto, deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento [Atribuindo canal a uma exibição no Screens como Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md).
+Agora, que você aprendeu a criar e gerenciar exibições para o seu projeto, deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento [Atribuindo canal a uma exibição no Screens como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
