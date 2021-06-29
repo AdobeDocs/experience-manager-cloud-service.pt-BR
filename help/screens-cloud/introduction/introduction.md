@@ -1,9 +1,9 @@
 ---
 title: AEM Screens as a Cloud Service
 description: Esta página serve como uma introdução ao AEM Screens as a Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ O AEM Screens as a Cloud Service é uma solução de sinalização digital que p
 
 As telas como um Cloud Service têm dois componentes principais, a saber:
 
-* **Provedor de conteúdo**, que é o complemento Screens em execução no AEM Cloud Service ou no Adobe Managed Services (AMS). Screens Content Provider permite que o autor de conteúdo crie e gerencie canais. Os autores de conteúdo podem adicionar novo conteúdo, editar o conteúdo sem se preocupar com os detalhes da criação de exibições ou do registro do player. O Provedor de conteúdo fornece uma abstração dos detalhes subjacentes do desenvolvimento de conteúdo, exibições ou registro do player.
+* **[Provedor de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)**, que é o complemento Screens em execução no AEM Cloud Service ou no Adobe Managed Services (AMS). Screens Content Provider permite que o autor de conteúdo crie e gerencie canais. Os autores de conteúdo podem adicionar novo conteúdo, editar o conteúdo sem se preocupar com os detalhes da criação de exibições ou do registro do player. O Provedor de conteúdo fornece uma abstração dos detalhes subjacentes do desenvolvimento de conteúdo, exibições ou registro do player.
 
-* **Provedor de serviços**, que é o serviço de gerenciamento de sinalização digital em execução no Adobe I/O runtime. O Provedor de serviços do Screens permite que o autor, desenvolvedores e administradores de conteúdo gerenciem exibições e players para reprodução de conteúdo depois que o conteúdo é adicionado aos canais. Além disso, o Provedor de serviços do Screens informa ao orquestrador onde e quando o conteúdo será reproduzido em um nível superior.
+* **[Provedor de serviços](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)**, que é o serviço de gerenciamento de sinalização digital em execução no Adobe I/O runtime. O Provedor de serviços do Screens permite que o autor, desenvolvedores e administradores de conteúdo gerenciem exibições e players para reprodução de conteúdo depois que o conteúdo é adicionado aos canais. Além disso, o Provedor de serviços do Screens informa ao orquestrador onde e quando o conteúdo será reproduzido em um nível superior.
 
 
 ## Visão geral da arquitetura {#architectural-overview}
