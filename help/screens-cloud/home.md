@@ -1,10 +1,10 @@
 ---
 title: AEM Screens as a Cloud Service
 description: Recursos de autoajuda e links de documentação do Adobe Experience Manager Screens as a Cloud Service
-source-git-commit: 79eac4a2bf7d891dcd99c90f518fffeca279b3b7
+source-git-commit: 8d68844d67b6025b5dbb7351ed123765afe742bc
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 62%
+source-wordcount: '452'
+ht-degree: 60%
 
 ---
 
@@ -18,9 +18,11 @@ Esta página lista os recursos de autoajuda relacionados ao AEM Screens as a Clo
 
 ## Conteúdo principal e artigos do AEM Screens as a Cloud Service {#key-articles}
 
-* [Introdução ao AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
-* [Integração ao AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
+* [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
+* [Integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
+* [Configurar serviços do Screens e provedor de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 * [Criar um projeto no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
+* [Instalar o Player do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
 ## Guias do Experience Manager as a Cloud Service {#aem-guides}
 
