@@ -1,7 +1,7 @@
 ---
 title: Lidar com grandes repositórios de conteúdo
 description: Esta seção descreve o tratamento de repositórios de conteúdo grande
-source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
+source-git-commit: 3611b9ede7c7f516c4773ac4b22e8ba9b14b5220
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Armazenamento de dados do Amazon S3 {#amazon-data-store}
+#### Armazenamento de dados do Amazon S3 {#amazon-sdata-store}
 
 Seu arquivo azcopy.config deve incluir as seguintes propriedades (certifique-se de usar os valores corretos para sua instância).
 
@@ -134,7 +134,7 @@ Quaisquer blobs copiados antes do erro serão ignorados automaticamente pelo AzC
 Com o lançamento da ferramenta Transferência de conteúdo 1.5.4, adicionamos suporte ao AzCopy à assimilação de autor.
 
 >[!NOTE]
-> A recomendação é executar a assimilação do autor primeiro sozinho. Isso irá acelerar a assimilação de Publicação quando for executada mais tarde.
+>A recomendação é executar a assimilação do autor primeiro sozinho. Isso irá acelerar a assimilação de Publicação quando for executada mais tarde.
 
 Para aproveitar o AzCopy durante a assimilação, precisamos que você esteja em um AEM como uma versão de Cloud Service que tenha pelo menos a versão 2021.6.5561.
 
