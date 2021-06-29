@@ -2,10 +2,10 @@
 title: Replicação
 description: Distribuição e Solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
+source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '1155'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,9 @@ O Adobe Experience Manager as a Cloud Service usa o recurso [Distribuição de c
 
 ### Publicação/Cancelamento Rápido - Planejado/Publicação {#publish-unpublish}
 
-Essas funcionalidades de AEM padrão para os autores não são alteradas com AEM Cloud Service.
+Isso permite publicar as páginas selecionadas imediatamente, sem as opções adicionais possíveis por meio da abordagem Gerenciar publicação .
+
+Para obter mais informações, consulte [Gerenciar publicação](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### Tempos de ativação e desativação - Configuração de acionador {#on-and-off-times-trigger-configuration}
 
@@ -171,6 +173,14 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Caso não forneça esse filtro e use apenas o agente &quot;publicar&quot;, o agente &quot;visualizar&quot; não será usado e a ação de replicação não afetará o nível de visualização.
 
 O `ReplicationStatus` geral de um recurso só será modificado se a ação de replicação incluir pelo menos um agente que esteja ativo por padrão. No exemplo acima, isso não ocorre, pois a replicação está usando apenas o agente &quot;preview&quot;. Portanto, você precisa usar o novo método `getStatusForAgent()`, que permite consultar o status de um agente específico. Esse método também funciona para o agente &quot;publicar&quot;. Retorna um valor não nulo se houver alguma ação de replicação feita usando o agente fornecido.
+
+### Gerenciar publicação    {#manage-publication}
+
+A opção Gerenciar publicação oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
+
+A inclusão dos filhos de uma pasta na opção &quot;publicar mais tarde&quot; chamará o fluxo de trabalho Publicar árvore de conteúdo, descrito neste artigo.
+
+Você pode encontrar informações mais detalhadas sobre Gerenciar publicação na [documentação de Fundamentos da publicação](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ## Resolução de problemas {#troubleshooting}
 
