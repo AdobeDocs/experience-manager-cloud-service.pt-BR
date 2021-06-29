@@ -2,7 +2,7 @@
 title: Replicação
 description: Distribuição e Solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
+source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 4%
@@ -42,17 +42,17 @@ Para realizar a replicação automática para isso, você precisa ativar a **Rep
 Para executar uma ativação de árvore:
 
 1. No menu Iniciar AEM, navegue até **Ferramentas > Implantação > Distribuição**
-2. Selecione o cartão **forwardPublisher**
-3. Uma vez na interface do console da Web do forwardPublisher, **selecione Distribuir**
+2. Selecione o cartão **publish**
+3. Uma vez na interface do console da Web de publicação, **selecione Distribuir**
 
-   ![](assets/distribute.png "DistribuirDistribuir")
+   ![](assets/publish-distribute.png "DistribuirDistribuir")
 4. Selecione o caminho no navegador de caminho, escolha adicionar um nó, árvore ou excluir conforme necessário e selecione **Enviar**
 
 ### Fluxo de trabalho da Árvore de conteúdo da publicação {#publish-content-tree-workflow}
 
 Você pode acionar uma replicação de árvore escolhendo **Ferramentas - Fluxo de trabalho - Modelos** e copiando o modelo de fluxo de trabalho pronto para uso **Publicar árvore de conteúdo**, conforme mostrado abaixo:
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/publish-distribute.png)
 
 Não modifique ou chame o modelo original. Em vez disso, primeiro copie o modelo e depois modifique ou chame essa cópia.
 
@@ -191,13 +191,13 @@ Você pode encontrar informações mais detalhadas sobre Gerenciar publicação 
 Para solucionar problemas de replicação, navegue até as filas de replicação na interface do usuário da Web do AEM Author Service:
 
 1. No menu Iniciar AEM, navegue até **Ferramentas > Implantação > Distribuição**
-2. Selecione o cartão **forwardPublisher**
-   ![](assets/status.png "StatusStatus")
+2. Selecione o cartão **publish**
+   ![](assets/publish-status.png "StatusStatus")
 3. Verifique o status da fila que deve estar verde
 4. Você pode testar a conexão com o serviço de replicação
 5. Selecione a guia **Logs** que mostra o histórico de publicações de conteúdo
 
-![](assets/logs.png "LogsLogs")
+![](assets/publish-logs.png "LogsLogs")
 
 Se o conteúdo não puder ser publicado, toda a publicação será revertida do AEM Publish Service.
 Nesse caso, as filas devem ser revistas para identificar quais itens causaram o cancelamento da publicação. Ao clicar em uma fila mostrando um status vermelho, a fila com itens pendentes seria exibida, a partir da qual um ou todos os itens podem ser apagados, se necessário.
