@@ -1,7 +1,7 @@
 ---
 title: Navegar até o Provedor de serviços do Screens
 description: Esta página descreve como navegar até o Provedor de serviços do Screens.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Siga as etapas abaixo para configurar o Provedor de serviços do Screens:
 
 1. Navegue até o Provedor de serviços do Screens de [here](https://experience.adobe.com/screens).
 
-   >[!NOTE]
+   >[!CAUTION]
    >Se você tiver acesso a várias organizações, verifique se fez logon na Organização correta. Para alterar sua organização, clique no nome da Organização no canto superior direito da tela e escolha a organização necessária à qual você precisa acessar.
 
 1. Selecione **Channels** na barra de navegação esquerda e clique em **abrir no provedor de conteúdo**.
