@@ -4,9 +4,9 @@ description: Gerar variações de ativos usando a integração do Creative Cloud
 contentOwner: AG
 feature: Upload,Processamento de Ativos,Publicação,Microserviços do Asset compute,Fluxo de Trabalho
 role: Business Practitioner,Administrator
-source-git-commit: 05f2bfac12d37b8ef9940e3381c709891cabe236
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -20,31 +20,37 @@ Para editar ativos em [!DNL Adobe Photoshop] e [!DNL Adobe Lightroom], não é n
 
 Os usuários podem criar perfis de processamento para automatizar as seguintes operações criativas em seus ativos:
 
-**Toque** automático: Utiliza inteligência artificial para analisar o conteúdo da imagem e faz correções de luz e cor de forma inteligente com base nos atributos exclusivos da imagem.
-**Direita** automaticamente: Utiliza inteligência artificial para analisar o conteúdo da imagem e corrigir a perspectiva distorcida nas imagens. Por exemplo, para criar horizontes de nível.
-**Predefinições** do Lightroom: Aplica uma aparência definida pelo usuário a imagens para obter uma aparência consistente usando predefinições personalizadas.
-**Recorte** da imagem: Utiliza inteligência artificial para criar seleção em torno de objetos salientes e remover o plano de fundo com um único comando.
-**Máscara** de imagem: Utiliza inteligência artificial para criar máscara em torno de objetos salientes com um único comando.
-**Ações** do Photoshop: Aplica uma série de tarefas (no Photoshop) a um arquivo ou lote de arquivos.
-**Substituição** de objeto inteligente: Executa a personalização em escala permitindo trocar imagens enquanto mantém todos os efeitos e ajustes aplicados em um arquivo PSD.
+* **Toque** automático: Utiliza inteligência artificial para analisar o conteúdo da imagem e faz correções de luz e cor de forma inteligente com base nos atributos exclusivos da imagem.
+* **Direita** automaticamente: Utiliza inteligência artificial para analisar o conteúdo da imagem e corrigir a perspectiva distorcida nas imagens. Por exemplo, para criar horizontes de nível.
+* **Predefinições** do Lightroom: Aplica uma aparência definida pelo usuário a imagens para obter uma aparência consistente usando predefinições personalizadas.
+* **Recorte** da imagem: Utiliza inteligência artificial para criar seleção em torno de objetos salientes e remover o plano de fundo com um único comando.
+* **Máscara** de imagem: Utiliza inteligência artificial para criar máscara em torno de objetos salientes com um único comando.
+* **Ações** do Photoshop: Aplica uma série de tarefas (no Photoshop) a um arquivo ou lote de arquivos.
+* **Substituição** de objeto inteligente: Executa a personalização em escala permitindo trocar imagens enquanto mantém todos os efeitos e ajustes aplicados em um arquivo PSD.
 
 ## Usar um perfil de processamento para processar ativos {#process-assets}
 
 Para usar perfis de processamento para criar variações automaticamente, siga estas etapas:
 
-1. Entre em contato com o Suporte ao cliente do Adobe para adquirir a licença.
-1. Navegue até Ferramentas > Ativos > Perfis de processamento.
-1. Selecione Criar e especifique um Nome.
-1. Selecione a guia Creative . Especifique a pasta de saída, selecione [!UICONTROL Adicionar Novo] para adicionar configurações criativas. Forneça o Nome da representação (ou o nome da saída), a Extensão (ou o tipo de arquivo), selecione Qualidade (ou parâmetros de saída), selecione Inclui e Exclui listas do tipo MIME (ou filtro de ativo de entrada) e selecione a operação criativa necessária.
-1. Para algumas operações, é necessário um parâmetro adicional (ativo). Forneça valores para esses parâmetros adicionais, se solicitado.
+1. Entre em contato com o [Adobe Customer Care](https://experienceleague.adobe.com/#support) para receber a licença.
+
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de processamento]**.
+
+1. Selecione **[!UICONTROL Criar]** e especifique um **[!UICONTROL Nome]**.
+
+1. Selecione a guia **[!UICONTROL Creative]**, especifique a pasta de saída, selecione **[!UICONTROL Adicionar novo]** para adicionar configurações criativas.
+
+1. Forneça **[!UICONTROL Nome da representação]** (ou nome da saída), **[!UICONTROL Extensão]** (ou tipo de arquivo), selecione **[!UICONTROL Qualidade]** (ou parâmetros de saída), selecione Inclui e Exclui listas do tipo MIME (ou filtro de ativo de entrada) e selecione a operação criativa necessária.
+
+1. Algumas operações exigem um parâmetro adicional (ativo). Forneça valores para esses parâmetros adicionais, se necessário.
 
 1. Adicione mais operações criativas como parte do mesmo perfil de processamento ou Salve o perfil.
 
-1. Aplique o perfil de processamento a uma pasta. Selecione as Propriedades da pasta, Processamento de ativos e selecione o perfil de processamento criado.
+1. Aplique o perfil de processamento a uma pasta. Na página **[!UICONTROL Properties]** de uma pasta, selecione **[!UICONTROL Asset Processing]** e selecione o perfil de processamento a ser aplicado.
 
-Depois que o perfil de processamento é aplicado a uma pasta DAM, todos os ativos carregados ou atualizados nessa pasta (ou em subpastas, a menos que substituídos) executam as operações definidas além do processamento padrão.
+Depois que o perfil de processamento é aplicado a uma pasta DAM, todos os ativos carregados ou atualizados nessa pasta executam as operações definidas, além do processamento padrão. As subpastas herdam os mesmos perfis aplicados nas pastas pai. Os usuários podem substituir essa herança.
 
-Para processar os ativos existentes manualmente, selecione os ativos e a opção **[!UICONTROL Reprocessar]** e selecione o perfil de processamento necessário.
+Para processar os ativos existentes, selecione os ativos, selecione a opção **[!UICONTROL Reprocessar]** e selecione o perfil de processamento necessário.
 
 ## Dicas e limitações {#limitations-best-practices}
 
