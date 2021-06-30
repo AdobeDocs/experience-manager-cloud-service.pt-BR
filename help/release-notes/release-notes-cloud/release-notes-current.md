@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
+source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1544'
 ht-degree: 3%
 
 ---
@@ -111,7 +111,7 @@ A próxima versão está planejada para 15 de julho de 2021.
 
    ![Filtrar pastas de pesquisa usando predicados de pesquisa](/help/assets/assets/search-folders-via-predicates.png)
 
-* [!DNL Experience Manager Assets] incorpora o Visualizador de PDF para visualizar os formatos de documento suportados. Ela é fornecida por [!DNL Adobe Document Cloud]. Esse recurso permite que os usuários visualizem PDF e outros arquivos de várias páginas sem nenhum processamento complexo. Isso melhora a paridade de recursos com [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] incorpora o Visualizador de PDF para visualizar os formatos de documento suportados. Ela é fornecida por [!DNL Adobe Document Cloud]. Esse recurso permite que os usuários visualizem PDF e outros arquivos de várias páginas sem nenhum processamento complexo. Isso melhora a paridade de recursos com [!DNL Experience Manager] 6.5. Os controles disponíveis na visualização são o zoom, a navegação para páginas, a desâncora de controles e a visualização em tela cheia. O visualizador de PDF integrado oferece suporte aos formatos de arquivo AI, DOCX, INDD, PDF e PSD. É possível comentar o próprio ativo, mas não há suporte para comentários e anotações no arquivo PDF.
 
    ![Visualizar arquivos PDF no  [!DNL Experience Manager] uso do Visualizador de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
