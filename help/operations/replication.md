@@ -2,10 +2,10 @@
 title: Replicação
 description: Distribuição e Solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
+source-git-commit: 225c47db1af35b29d79ebd16fa437681987b1372
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,6 +32,14 @@ As possibilidades adicionais de **No Tempo** e **Tempo desligado** estão dispon
 Para realizar a replicação automática para isso, você precisa ativar a **Replicação automática** na [configuração OSGi](/help/implementing/deploying/configuring-osgi.md) **Configuração do Acionador Desligado**:
 
 ![Configuração do Acionador Desligado do OSGi](/help/operations/assets/replication-on-off-trigger.png)
+
+### Gerenciar publicação    {#manage-publication}
+
+A opção Gerenciar publicação oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
+
+A inclusão dos filhos de uma pasta na opção &quot;publicar mais tarde&quot; chamará o fluxo de trabalho Publicar árvore de conteúdo, descrito neste artigo.
+
+Você pode encontrar informações mais detalhadas sobre Gerenciar publicação na [documentação de Fundamentos da publicação](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### Ativação de árvore {#tree-activation}
 
@@ -177,14 +185,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Caso não forneça esse filtro e use apenas o agente &quot;publicar&quot;, o agente &quot;visualizar&quot; não será usado e a ação de replicação não afetará o nível de visualização.
 
 O `ReplicationStatus` geral de um recurso só será modificado se a ação de replicação incluir pelo menos um agente que esteja ativo por padrão. No exemplo acima, isso não ocorre, pois a replicação está usando apenas o agente &quot;preview&quot;. Portanto, você precisa usar o novo método `getStatusForAgent()`, que permite consultar o status de um agente específico. Esse método também funciona para o agente &quot;publicar&quot;. Retorna um valor não nulo se houver alguma ação de replicação feita usando o agente fornecido.
-
-### Gerenciar publicação    {#manage-publication}
-
-A opção Gerenciar publicação oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
-
-A inclusão dos filhos de uma pasta na opção &quot;publicar mais tarde&quot; chamará o fluxo de trabalho Publicar árvore de conteúdo, descrito neste artigo.
-
-Você pode encontrar informações mais detalhadas sobre Gerenciar publicação na [documentação de Fundamentos da publicação](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ## Resolução de problemas {#troubleshooting}
 
