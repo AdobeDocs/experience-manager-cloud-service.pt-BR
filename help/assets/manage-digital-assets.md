@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Gerenciamento de ativos, Publicação, Colaboração, Processamento de ativos
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 76dd50e044038859bb06a02a2b1c2131932db29c
 workflow-type: tm+mt
-source-wordcount: '4502'
+source-wordcount: '4550'
 ht-degree: 11%
 
 ---
@@ -272,7 +272,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
 Consulte [baixar ativos de [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## Publicar ou cancelar a publicação de ativos {#publish-assets}
+## Publicar ou desfazer a publicação de ativos {#publish-assets}
 
 1. Navegue até o local do ativo ou da pasta de ativos que deseja publicar ou que deseja remover do ambiente de publicação (cancelar a publicação).
 
@@ -462,6 +462,14 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 
 ### Exibir anotações salvas {#viewing-saved-annotations}
 
+É possível exibir apenas uma anotação por vez.
+
+>[!NOTE]
+>
+>Se estiver selecionando várias anotações, a anotação mais recente ficará visível na interface do usuário.
+>
+>A seleção múltipla é suportada apenas para imprimir o ativo anotado como PDF.
+
 1. Para exibir anotações salvas de um ativo, navegue até o local do ativo e abra a página do ativo.
 
 1. Toque/clique no ícone de Navegação global e escolha **[!UICONTROL Linha do tempo]** na lista.
@@ -483,6 +491,10 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 Se um ativo tiver anotações ou tiver sido sujeito a um fluxo de trabalho de revisão, é possível imprimir o ativo junto com anotações e revisar o status como um arquivo PDF para revisão offline.
 
 Você também pode optar por imprimir somente as anotações ou o status da revisão.
+
+>[!NOTE]
+>
+>É possível selecionar várias anotações ao imprimir o ativo anotado como PDF.
 
 Para imprimir as anotações e o status da revisão, toque/clique no ícone **[!UICONTROL Imprimir]** e siga as instruções do assistente. O ícone **[!UICONTROL Imprimir]** aparece na barra de ferramentas somente quando o ativo tem pelo menos uma anotação ou status de revisão atribuído a ele.
 
@@ -516,7 +528,7 @@ Para imprimir as anotações e o status da revisão, toque/clique no ícone **[!
 
 1. Baixe ou imprima o PDF usando as opções na parte superior direita.
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor da fonte, o tamanho e o estilo, a cor de fundo dos comentários e status, abra a **[!UICONTROL Configuração do PDF de anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/manage-digital-assets.md#annotating).
 
