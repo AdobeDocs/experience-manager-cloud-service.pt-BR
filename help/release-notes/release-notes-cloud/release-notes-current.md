@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
+source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1395'
 ht-degree: 2%
 
 ---
@@ -90,14 +90,12 @@ A próxima versão está planejada para 15 de julho de 2021.
 
 ### Novos recursos em [!DNL Assets] {#ga-features-assets}
 
-* A funcionalidade de Automação de conteúdo permite que [!DNL Experience Manager Assets] aproveite as APIs [!DNL Adobe Creative Cloud] para automatizar a produção de ativos em escala. Melhora a velocidade do conteúdo diminuindo drasticamente o tempo gasto e as iterações necessárias para criar variações do mesmo ativo. A funcionalidade não requer nenhum código e funciona no DAM.
+* A funcionalidade de Automação de conteúdo permite que [!DNL Experience Manager Assets] aproveite as APIs [!DNL Adobe Creative Cloud] para automatizar a produção de ativos em escala. Melhora a velocidade do conteúdo diminuindo drasticamente o tempo gasto e as iterações necessárias para criar variações do mesmo ativo. A funcionalidade não requer programação e funciona no DAM. Consulte [Gerar variações de ativos usando a integração do Creative Cloud](/help/assets/cc-api-integration.md).
+
 * [!DNL Adobe Asset Link] v3.0 para  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]e  [!DNL Adobe InDesign] e  [!DNL Adobe Asset Link] v2.0 para  [!DNL Adobe XD] foi lançado. Ele fornece:
 
    * Suporte para [!DNL Assets Essentials].
    * Capacidade de se conectar automaticamente a [!DNL Experience Manager] como um [!DNL Cloud Service] ou [!DNL Assets Essentials].
-
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
--->
 
 ### Novos recursos disponíveis no canal de pré-lançamento [!DNL Assets] {#beta-features-assets}
 
