@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Tags inteligentes,Marcação
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2355'
 ht-degree: 6%
 
 ---
@@ -97,13 +97,16 @@ Certifique-se de que as imagens no conjunto de treinamento estejam em conformida
 
 **Exemplos**: Mais alguns exemplos para orientação são:
 
-* Crie um modelo de tag que inclua,
-   * apenas as etiquetas relacionadas com modelos de automóveis.
-   * apenas as marcas relacionadas às cores das camisas.
-   * apenas as etiquetas relacionadas com coletes para mulheres e homens.
+* Crie um modelo de tag que inclua apenas,
+
+   * As tags relacionadas a modelos de carros.
+   * As etiquetas relacionadas às cores das camisas.
+   * As etiquetas relacionadas aos casacos para mulheres e homens.
+
 * Não criar,
-   * um modelo de etiquetas que inclui modelos de automóveis lançados em 2019 e 2020.
-   * vários modelos de tags que incluem os mesmos modelos de carro.
+
+   * Um modelo de tag que inclui modelos de carros lançados em 2019 e 2020.
+   * Vários modelos de tags que incluem os mesmos poucos modelos de carro.
 
 **Imagens usadas para treinar**: Você pode usar as mesmas imagens para treinar diferentes modelos de tags. No entanto, não associe uma imagem a mais de uma tag em um modelo de tag. É possível marcar a mesma imagem com tags diferentes pertencentes a modelos de tags diferentes.
 
