@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1430'
 ht-degree: 2%
 
 ---
@@ -97,12 +97,23 @@ A próxima versão está planejada para 15 de julho de 2021.
    * Suporte para [!DNL Assets Essentials].
    * Capacidade de se conectar automaticamente a [!DNL Experience Manager] como um [!DNL Cloud Service] ou [!DNL Assets Essentials].
 
+* A ferramenta [Entrada de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor) permite que você adicione metadados durante uma assimilação em massa.
+
 ### Novos recursos disponíveis no canal de pré-lançamento [!DNL Assets] {#beta-features-assets}
 
 * As configurações de exibição são aprimoradas para permitir que os usuários escolham uma exibição padrão e um parâmetro de classificação padrão.
+
+   ![Definir exibição padrão em Configurações de exibição](/help/assets/assets/view-settings-for-defaults.png)
+
 * A funcionalidade de download do Linkshare usa downloads assíncronos que aumentam a velocidade de download.
+
 * Os usuários podem pesquisar e filtrar as pastas com base em predicados de propriedade.
-* [!DNL Experience Manager Assets] Incorpora o Visualizador de PDF com  [!DNL Adobe Document Cloud] o objetivo de visualizar os documentos suportados. Esse recurso permite que os usuários visualizem PDF e outros arquivos de várias páginas sem nenhum processamento complexo. Isso melhora a paridade de recursos com [!DNL Experience Manager] 6.5.
+
+   ![Filtrar pastas de pesquisa usando predicados de pesquisa](/help/assets/assets/search-folders-via-predicates.png)
+
+* [!DNL Experience Manager Assets] incorpora o Visualizador de PDF para visualizar os formatos de documento suportados. Ela é fornecida por [!DNL Adobe Document Cloud]. Esse recurso permite que os usuários visualizem PDF e outros arquivos de várias páginas sem nenhum processamento complexo. Isso melhora a paridade de recursos com [!DNL Experience Manager] 6.5.
+
+   ![Visualizar arquivos PDF no  [!DNL Experience Manager] uso do Visualizador de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
 ### Erros corrigidos em [!DNL Assets] {#bugs-fixed-assets}
 
