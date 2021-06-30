@@ -4,20 +4,19 @@ user-guide-title: Guia do Assets as a Cloud Service
 breadcrumb-title: Guia do Assets
 user-guide-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
-translation-type: tm+mt
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: ec5510d68c2c38be7755070e84b98d519c10e02a
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '484'
 ht-degree: 70%
 
 ---
 
 
-# [!DNL Assets] Guia  {#assets}
+# [!DNL Assets] Guia {#assets}
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Visão geral e novidades](overview.md)
-+ [Alterações importantes  [!DNL Assets] como uma [!DNL Cloud Service]](assets-cloud-changes.md)
++ [Alterações importantes em [!DNL Assets] como a [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] arquitetura](architecture.md)
 + [Formatos de arquivo não suportados](file-format-support.md)
 + [Visão geral dos microsserviços de ativos](asset-microservices-overview.md)
@@ -32,7 +31,7 @@ ht-degree: 70%
    + [Tags inteligentes para imagens](smart-tags.md)
    + [Tag inteligente de seus ativos de vídeo](smart-tags-video-assets.md)
    + [Como organizar ativos](organize-assets.md)
-   + [ [!DNL Adobe Stock] Usar ativos no AEM](aem-assets-adobe-stock.md)
+   + [Use [!DNL Adobe Stock] ativos no AEM](aem-assets-adobe-stock.md)
    + [Gerenciar coleções](manage-collections.md)
    + [Visão geral dos metadados](manage-metadata.md)
    + [Integrar com [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -46,6 +45,7 @@ ht-degree: 70%
    + [Ativos de check-in e check-out para edição](check-out-and-submit-assets.md)
    + [Digital Rights Management para ativos](drm.md)
    + [Ativos de marca d&#39;água](watermark-assets.md)
+   + [Processar ativos usando  [!DNL Creative Cloud] APIs](cc-api-integration.md)
 + Configurar, administrar e estender [!DNL Assets] {#admin}
    + [Documentos do desenvolvedor e referências de APIs](developer-reference-material-apis.md)
    + [Esquema de metadados de pastas](folder-metadata-schema.md)
@@ -64,7 +64,7 @@ ht-degree: 70%
    + [Recursos MediaLibrary](medialibrary.md)
    + [Importar e exportar metadados de ativos](metadata-import-export.md)
 + Compartilhar e distribuir ativos {#brand-portal}
-   + [ [!DNL Assets] Configurar com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configurar [!DNL Assets] com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos em [!DNL Brand Portal]](publish-to-brand-portal.md)
    + [Publicar ativos  [!DNL Brand Portal] do [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + Fragmentos de conteúdo {#content-fragments}
