@@ -5,10 +5,9 @@ contentOwner: Rick Brough
 feature: Gerenciamento de ativos, Perfis de imagem, Perfis de vídeo
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -28,7 +27,7 @@ A seguir estão dicas de práticas recomendadas para organizar seus arquivos de 
    * Consulte [Perfis de metadados](/help/assets/metadata-profiles.md).
    * Consulte [Metadados para Gerenciamento de ativos digitais](/help/assets/manage-metadata.md).
 
-* Geralmente, sua coleção de ativos digitais está sempre crescendo. Portanto, é importante, anteriormente, formalizar o uso de metadados, a estrutura de pastas e a nomenclatura de arquivos entre todos os ativos carregados. Padronizar essas coisas garante que, à medida que o conjunto de ativos digitais cresce, você possa aplicar perfis de processamento a pastas com maior precisão e consistência.
+* Geralmente, sua coleção de ativos digitais está sempre crescendo. Portanto, é importante - anteriormente - formalizar o uso de metadados, a estrutura de pastas e a nomenclatura de arquivos entre todos os ativos carregados. Padronizar essas coisas garante que, à medida que o conjunto de ativos digitais cresce, você possa aplicar perfis de processamento a pastas com maior precisão e consistência.
 * Use pastas somente para impor uma estrutura de armazenamento consistente para seus ativos digitais. Por exemplo, as estruturas de pastas que podem ajudar você a refinar quais perfis atribuir podem incluir o seguinte:
 
    * **Pastas de desenvolvimento**  - contém ativos digitais em que você está trabalhando no momento.
