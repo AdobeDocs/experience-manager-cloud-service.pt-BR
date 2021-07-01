@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
+source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1577'
 ht-degree: 3%
 
 ---
@@ -211,5 +211,21 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.5.4 é 28 de 
 ### Correções de erros {#bug-fixes-ctt-latest}
 
 * Ao parar uma assimilação na instância do autor, a interface do usuário substituiu uma assimilação concluída anteriormente na instância de publicação para `STOPPED` de `FINISHED`. Isso foi corrigido.
+
+## Analisador de práticas recomendadas {#best-practices-analyzer}
+
+### Data de lançamento {#release-date-bpa}
+
+A data de lançamento do Analisador de práticas recomendadas v2.1.16 é 30 de junho de 2021.
+
+### Novidades {#what-is-new-bpa-latest}
+
+* Capacidade de detectar e relatar os nós secundários ausentes nas pastas em `/content/dam`.
+
+* Capacidade de detectar e relatar a versão do Analisador de práticas recomendadas usada.
+
+### Correções de erros {#bug-fixes-bpa-latest}
+
+* Corrigido um erro de registro relacionado à Estrutura de Repositório (URS) Não Suportada.
 
 
