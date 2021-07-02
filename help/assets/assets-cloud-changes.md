@@ -4,9 +4,9 @@ description: Alterações importantes para [!DNL Adobe Experience Manager Assets
 feature: Informações da versão
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 2b6e67503b212f0da0064e1955a82ccf7beaddea
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '967'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ As representações padrão geradas com os microsserviços de ativos são armaze
 
 ## Desenvolver e testar microsserviços de ativos {#asset-microservices}
 
-Os microsserviços de ativos fornecem um processamento escalável e resiliente de ativos usando serviços em nuvem. O Adobe gerencia os serviços em nuvem para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento. Os microsserviços de ativos ajudam a evitar a necessidade de ferramentas e métodos de renderização de terceiros (como o ImageMagick) e simplificam as configurações, além de fornecer funcionalidade pronta para uso para tipos de arquivos comuns. Agora você pode processar um [grande intervalo de tipos de arquivo](/help/assets/file-format-support.md) cobrindo mais formatos prontos para uso do que o possível com versões anteriores do Experience Manager. Por exemplo, a extração em miniatura de formatos PSD e PSB agora é possível que tenha exigido anteriormente soluções de terceiros, como o ImageMagick. Não é possível usar as configurações complexas do ImageMagick para a configuração [!UICONTROL Processing Profiles]. Use [!DNL Dynamic Media] para transcodificação avançada de vídeos do FFmpeg e use perfis de processamento para [transcodificação básica de vídeos MP4](/help/assets/manage-video-assets.md#transcode-video).
+Os microsserviços de ativos fornecem um processamento escalável e resiliente de ativos usando serviços em nuvem. O Adobe gerencia os serviços em nuvem para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento. Os microsserviços de ativos ajudam a evitar a necessidade de ferramentas e métodos de renderização de terceiros (como [!DNL ImageMagick]) e simplificam as configurações, além de fornecer funcionalidade pronta para uso para tipos de arquivos comuns. Agora você pode processar um [grande intervalo de tipos de arquivo](/help/assets/file-format-support.md) cobrindo mais formatos prontos para uso do que o possível com versões anteriores do Experience Manager. Por exemplo, a extração em miniatura de formatos PSD e PSB agora é possível que tenha exigido anteriormente soluções de terceiros, como [!DNL ImageMagick]. Você não pode usar as configurações complexas de [!DNL ImageMagick] para a configuração [!UICONTROL Processando Perfis]. Use [!DNL Dynamic Media] para transcodificação avançada de vídeos do FFmpeg e use perfis de processamento para [transcodificação básica de vídeos MP4](/help/assets/manage-video-assets.md#transcode-video).
 
 Os microsserviços de ativos são um serviço nativo em nuvem que é automaticamente provisionado e conectado a [!DNL Experience Manager] em programas e ambientes do cliente gerenciados no Cloud Manager. Para estender ou personalizar [!DNL Experience Manager], os desenvolvedores podem usar o conteúdo ou ativos existentes com representações geradas em um ambiente de nuvem, para testar e validar seu código usando, exibindo e baixando ativos.
 
