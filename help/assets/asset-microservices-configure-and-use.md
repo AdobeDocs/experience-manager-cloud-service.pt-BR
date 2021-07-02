@@ -2,22 +2,21 @@
 title: Configurar e usar microsserviços de ativos
 description: Configure e use os microsserviços de ativos nativos em nuvem para processar ativos em escala.
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Asset Processing
+feature: Microserviços do Asset compute, Fluxo de trabalho, Processamento de ativos
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2635'
 ht-degree: 1%
 
 ---
-
 
 # Usar microsserviços de ativos e perfis de processamento {#get-started-using-asset-microservices}
 
 Os microsserviços de ativos oferecem processamento escalável e resiliente de ativos usando aplicativos nativos em nuvem (também chamados de trabalhadores). O Adobe gerencia os serviços para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento.
 
-Os microsserviços de ativos permitem processar uma [ampla gama de tipos de arquivos](/help/assets/file-format-support.md) cobrindo mais formatos prontos para uso do que o possível com versões anteriores de [!DNL Experience Manager]. Por exemplo, a extração em miniatura de formatos PSD e PSB agora é possível que tenha exigido anteriormente soluções de terceiros, como o ImageMagick.
+Os microsserviços de ativos permitem processar uma [ampla gama de tipos de arquivos](/help/assets/file-format-support.md) cobrindo mais formatos prontos para uso do que o possível com versões anteriores de [!DNL Experience Manager]. Por exemplo, a extração em miniatura de formatos PSD e PSB agora é possível, mas era necessária anteriormente soluções de terceiros, como [!DNL ImageMagick].
 
 O processamento de ativos depende da configuração em **[!UICONTROL Perfis de processamento]**. O Experience Manager oferece uma configuração básica padrão e permite que os administradores adicionem configurações mais específicas de processamento de ativos. Os administradores criam, mantêm e modificam as configurações dos fluxos de trabalho de pós-processamento, incluindo a personalização opcional. Personalizar os fluxos de trabalho permite que os desenvolvedores estendam a oferta padrão.
 
@@ -32,9 +31,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 >
 >O processamento de ativos descrito aqui substitui o modelo de fluxo de trabalho `DAM Update Asset` existente nas versões anteriores de [!DNL Experience Manager]. A maioria das etapas de geração de representação padrão e relacionadas a metadados é substituída pelo processamento de microsserviços de ativos e as etapas restantes, se houver, podem ser substituídas pela configuração de fluxo de trabalho de pós-processamento.
 
-## Entender as opções de processamento de ativos {#get-started}
+## Compreender as opções de processamento de ativos {#get-started}
 
-O Experience Manager permite os seguintes níveis de processamento.
+[!DNL Experience Manager] O permite os seguintes níveis de processamento.
 
 | Opção | Descrição | Casos de uso cobertos |
 |---|---|---|
@@ -154,7 +153,7 @@ A integração do Asset compute Service permite que o Experience Manager transmi
 
 *Figura: Use o campo  [!UICONTROL Service ] Parameters para transmitir informações adicionais para parâmetros predefinidos incorporados no aplicativo personalizado. Neste exemplo, quando imagens de campanha são carregadas, as imagens são atualizadas com o texto `Jumanji` na fonte `Arial-BoldMT`.*
 
-## Use perfis de processamento para processar ativos {#use-profiles}
+## Usar perfis de processamento para processar ativos {#use-profiles}
 
 Crie e aplique perfis de processamento adicionais e personalizados a pastas específicas para que o Experience Manager processe ativos carregados ou atualizados nessas pastas. O perfil de processamento padrão integrado é sempre executado, mas não é visível na interface do usuário. Se você adicionar um perfil personalizado, ambos os perfis serão usados para processar os ativos carregados.
 
@@ -207,17 +206,26 @@ Certifique-se de que a última etapa de cada fluxo de trabalho de pós-processam
 
 ### Configurar a execução do workflow de pós-processamento {#configure-post-processing-workflow-execution}
 
-Para configurar os modelos de fluxo de trabalho de pós-processamento a serem executados para ativos carregados ou atualizados no sistema após a conclusão do processamento dos microsserviços de ativos, o serviço Custom Workflow Runner precisa ser configurado.
+Depois que os microsserviços de ativos concluírem o processamento dos ativos carregados, você poderá definir o pós-processamento para processar mais alguns ativos. Para configurar o pós-processamento usando modelos de fluxo de trabalho, você pode executar um dos seguintes procedimentos:
+
+* Configure o serviço Custom Workflow Runner.
+* Aplique um modelo de fluxo de trabalho na pasta [!UICONTROL Propriedades].
 
 O Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) é um serviço OSGi e fornece duas opções para configuração:
 
-* Fluxos de trabalho de pós-processamento por caminho (`postProcWorkflowsByPath`): Vários modelos de fluxo de trabalho podem ser listados, com base em caminhos de repositório diferentes. Caminhos e modelos devem ser separados por dois pontos. Caminhos de repositório simples são suportados e devem ser mapeados para um modelo de fluxo de trabalho no caminho `/var`. Por exemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Fluxos de trabalho de pós-processamento por caminho (`postProcWorkflowsByPath`): Vários modelos de fluxo de trabalho podem ser listados, com base em caminhos de repositório diferentes. Separe caminhos e modelos usando dois pontos. Caminhos de repositório simples são compatíveis. Mapeie-os para um modelo de fluxo de trabalho no caminho `/var`. Por exemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Fluxos de trabalho de pós-processamento por expressão (`postProcWorkflowsByExpression`): Vários modelos de fluxo de trabalho podem ser listados, com base em diferentes expressões regulares. As expressões e os modelos devem ser separados por dois pontos. A expressão regular deve apontar para o nó do ativo diretamente, e não para uma das representações ou arquivos. Por exemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
 >A configuração do Executor de Fluxo de Trabalho Personalizado é uma configuração de um serviço OSGi. Consulte [implantar no Experience Manager](/help/implementing/deploying/overview.md) para obter informações sobre como implantar uma configuração OSGi.
 >O console da Web OSGi, ao contrário das implantações locais e de serviços gerenciados de [!DNL Experience Manager], não está disponível diretamente nas implantações do serviço de nuvem.
+
+Para aplicar um modelo de fluxo de trabalho na pasta [!UICONTROL Properties], siga estas etapas:
+
+1. Crie um modelo de fluxo de trabalho.
+1. Selecione uma pasta, clique em **[!UICONTROL Propriedades]** na barra de ferramentas e, em seguida, clique na guia **[!UICONTROL Processamento de Ativos]**.
+1. Em **[!UICONTROL Fluxo de trabalho de início automático]**, selecione o fluxo de trabalho necessário, forneça um título do fluxo de trabalho e salve as alterações.
 
 Para obter detalhes sobre qual etapa de fluxo de trabalho padrão pode ser usada no fluxo de trabalho de pós-processamento, consulte [etapas do fluxo de trabalho no fluxo de trabalho de pós-processamento](developer-reference-material-apis.md#post-processing-workflows-steps) na referência do desenvolvedor.
 
