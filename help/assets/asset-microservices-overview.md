@@ -2,16 +2,15 @@
 title: Processar ativos usando microsserviços de ativos
 description: Processe seus ativos digitais usando microsserviços de processamento de ativos escaláveis e nativos em nuvem.
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+feature: Microserviços do Asset compute, Fluxo de trabalho, Informações da versão, Processamento de ativos
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '828'
 ht-degree: 2%
 
 ---
-
 
 # Visão geral da assimilação e do processamento de ativos com microsserviços de ativos {#asset-microservices-overview}
 
@@ -26,7 +25,7 @@ O Adobe Experience Manager as a [!DNL Cloud Service] fornece um método nativo e
 * Os serviços de processamento de arquivos Adobe nativos são usados, quando aplicável, fornecendo saída de alta fidelidade e [manuseio eficiente de formatos proprietários de Adobe](file-format-support.md).
 * Capacidade de configurar o fluxo de trabalho de pós-processamento para adicionar ações e integrações específicas do usuário.
 
-Os microsserviços de ativos ajudam a evitar a necessidade de ferramentas e métodos de renderização de terceiros (como transcodificação de ImagemMagick e FFmpeg) e simplificam as configurações, além de fornecer a funcionalidade básica para tipos de arquivos comuns por padrão.
+Os microsserviços de ativos ajudam a evitar a necessidade de ferramentas e métodos de renderização de terceiros (como [!DNL ImageMagick] e transcodificação FFmpeg) e simplificam as configurações, além de fornecer a funcionalidade básica para os formatos de arquivo comuns por padrão.
 
 ## Arquitetura de alto nível {#asset-microservices-architecture}
 
@@ -41,19 +40,19 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 As principais etapas da assimilação e do processamento usando microsserviços de ativos são:
 
-* Os clientes, como navegadores da Web ou Adobe Asset Link, enviam uma solicitação de upload para o Experience Manager e começam a fazer upload do binário diretamente no armazenamento da nuvem binária.
-* Quando o upload binário direto é concluído, o cliente notifica o Experience Manager.
-* O Experience Manager envia uma solicitação de processamento para os microsserviços de ativos. O conteúdo da solicitação depende da configuração dos perfis de processamento no Experience Manager que especifica, quais renderizações serão geradas.
+* Os clientes, como navegadores da Web ou Adobe Asset Link, enviam uma solicitação de upload para [!DNL Experience Manager] e começam a fazer upload do binário diretamente no armazenamento da nuvem binária.
+* Quando o upload binário direto é concluído, o cliente notifica [!DNL Experience Manager].
+* [!DNL Experience Manager] envia uma solicitação de processamento para microsserviços de ativos. O conteúdo da solicitação depende da configuração dos perfis de processamento em [!DNL Experience Manager] que especifica, quais renderizações serão geradas.
 * O back-end dos microsserviços de ativos recebe a solicitação, a despacha para um ou mais microsserviços com base na solicitação. Cada microsserviço acessa o binário original diretamente da loja de nuvem binária.
 * Os resultados do processamento, como representações, são armazenados no armazenamento binário em nuvem.
-* O Experience Manager é notificado de que o processamento está concluído, juntamente com ponteiros diretos para os binários gerados (execuções). As representações geradas estão disponíveis no Experience Manager para o ativo carregado.
+* O Experience Manager é notificado de que o processamento está concluído, juntamente com ponteiros diretos para os binários gerados (execuções). As representações geradas estão disponíveis em [!DNL Experience Manager] para o ativo carregado.
 
 Esse é o fluxo básico de assimilação e processamento de ativos. Se configurado, o Experience Manager também pode iniciar o modelo de fluxo de trabalho personalizado para fazer o pós-processamento do ativo. Por exemplo, execute etapas personalizadas específicas para seu ambiente, como buscar informações de um sistema empresarial e adicionar às propriedades do ativo.
 
 O fluxo de assimilação e processamento são conceitos-chave da arquitetura de microsserviços de ativos para o Experience Manager.
 
 * **Acesso** binário direto: Os ativos são transportados (e carregados) para a Loja Binária da Nuvem depois de configurados para ambientes do Experience Manager e, em seguida,  [!DNL Experience Manager], microsserviços de ativos e, finalmente, os clientes obtêm acesso direto a eles para realizar seu trabalho. Isso minimiza a carga em redes e a duplicação de binários armazenados
-* **Processamento** externo: O processamento de ativos é feito fora do  [!DNL Experience Manager] ambiente e salva seus recursos (CPU, memória) para fornecer as principais funcionalidades do Gerenciamento de ativos digitais e suportar o trabalho interativo com o sistema para usuários finais
+* **Processamento** externo: O processamento de ativos é feito fora do  [!DNL Experience Manager] ambiente e salva seus recursos (CPU, memória) para fornecer as principais funcionalidades do Gerenciamento de ativos digitais (DAM) e suportar o trabalho interativo com o sistema para usuários finais
 
 ## Upload de ativo com acesso binário direto {#asset-upload-with-direct-binary-access}
 
@@ -80,8 +79,8 @@ O Adobe Experience Manager pode ser configurado para acionar automaticamente os 
 >[!MORELIKETHIS]
 >
 >* [Introdução ao uso dos microsserviços de ativos](asset-microservices-configure-and-use.md)
->* [Formatos de arquivo não suportados](file-format-support.md)
->* [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
->* Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Documentação do Apache Oak sobre acesso binário direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
+* [Formatos de arquivo não suportados](file-format-support.md)
+* [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
+* Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+* [Documentação do Apache Oak sobre acesso binário direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
