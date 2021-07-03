@@ -2,16 +2,15 @@
 title: Metadados em cascata
 description: Este artigo descreve como definir metadados em cascata para ativos.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Metadados
+role: User,Admin
+exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '958'
 ht-degree: 12%
 
 ---
-
 
 # Metadados em cascata {#cascading-metadata}
 
