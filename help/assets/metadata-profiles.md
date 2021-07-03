@@ -3,10 +3,9 @@ title: Perfis de metadados
 description: Saiba mais sobre perfis de metadados para ativos. Saiba como criar um perfil de metadados e aplicá-lo aos ativos de pastas.
 contentOwner: AG
 feature: Metadados
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-translation-type: tm+mt
-source-git-commit: 7ad68c071d9a4089ec8612a3c55067dc0b072fc8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1236'
 ht-degree: 20%
@@ -79,13 +78,13 @@ As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do n
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você alterou posteriormente. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
-#### Aplicar perfis de metadados a pastas da interface do usuário de Perfis {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+#### Aplicar perfis de metadados a pastas da interface do usuário Perfis {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 1. Navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de metadados]**.
 1. Selecione o perfil de metadados que deseja aplicar a uma ou várias pastas.
 1. Clique em **[!UICONTROL Aplicar perfil de metadados à(s) pasta(s)]** e selecione a pasta ou várias pastas que deseja usar para receber os ativos carregados recentemente e clique em **[!UICONTROL Concluído]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
-#### Aplicar perfis de metadados a pastas das Propriedades {#applying-metadata-profiles-to-folders-from-properties}
+#### Aplicar perfis de metadados a pastas de Propriedades {#applying-metadata-profiles-to-folders-from-properties}
 
 1. No painel à esquerda, clique em **[!UICONTROL Assets]** e navegue até a pasta à qual deseja aplicar um perfil de metadados.
 1. Na pasta , clique ou clique na marca de seleção para selecioná-la e, em seguida, clique ou clique em **Properties**.
@@ -103,7 +102,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de metadados 
 
 * Navegue até CRXDE Lite para o seguinte nó: `/content/dam/jcr:content`. Adicione a propriedade `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Clique em **Salvar tudo**.
 
-## Remover um perfil de metadados das pastas {#removing-a-metadata-profile-from-folders}
+## Remoção de um perfil de metadados de pastas {#removing-a-metadata-profile-from-folders}
 
 Ao remover um perfil de metadados de uma pasta, qualquer subpasta herda automaticamente a remoção do perfil da pasta pai. No entanto, o processamento de arquivos que ocorreu dentro das pastas permanece intacto.
 
@@ -117,7 +116,7 @@ Remova um perfil de metadados a uma pasta do menu **Ferramentas** ou, se estiver
 
    Você pode confirmar que o perfil de metadados não é mais aplicado a uma pasta porque o nome não aparece mais abaixo do nome da pasta.
 
-### Remoção de perfis de metadados de pastas por meio das Propriedades {#removing-metadata-profiles-from-folders-via-properties}
+### Remoção de perfis de metadados de pastas por meio de Propriedades {#removing-metadata-profiles-from-folders-via-properties}
 
 1. Clique no logotipo do AEM e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta da qual deseja remover um perfil de metadados.
 1. Na pasta , clique na marca de seleção para selecioná-la e, em seguida, clique em **[!UICONTROL Properties]**.
