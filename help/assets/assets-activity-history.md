@@ -2,16 +2,15 @@
 title: Fluxo de atividades na linha do tempo
 description: Este artigo descreve como exibir registros de atividades para ativos na linha do tempo.
 contentOwner: AG
-feature: Asset Reports,Asset Management
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Relatórios de ativos, Gerenciamento de ativos
+role: Admin,User
+exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '213'
 ht-degree: 23%
 
 ---
-
 
 # Exibir logs de operações de ativos no fluxo de atividades {#activity-stream-in-timeline}
 
