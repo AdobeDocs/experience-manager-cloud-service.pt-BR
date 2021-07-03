@@ -1,14 +1,13 @@
 ---
 title: Trabalhar com fluxos de trabalho de projeto
 description: Há uma variedade de fluxos de trabalho de projeto disponíveis para uso imediato.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 78%
+source-wordcount: '542'
+ht-degree: 77%
 
 ---
-
 
 # Trabalhar com fluxos de trabalho de projeto {#working-with-project-workflows}
 
@@ -25,7 +24,6 @@ Dependendo de qual modelo de projeto você selecionar, certos fluxos de trabalho
 |  | **Projeto simples** | **Projeto de mídia** | **Projeto de tradução** |
 |---|:-:|:-:|:-:|
 | Solicitar cópia |  | x |  |
-| Sessão fotográfica do produto |  | x |  |
 | Aprovação de projeto | x |  |  |
 | Solicitar lançamento | x |  |  |
 | Solicitar página de aterrissagem | x |  |  |
