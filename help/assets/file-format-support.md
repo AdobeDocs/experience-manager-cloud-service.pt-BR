@@ -2,18 +2,17 @@
 title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados por [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management,Renditions
-role: Business Practitioner,Administrator
+feature: Gerenciamento de ativos,Representações
+role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 10%
 
 ---
 
-# [!DNL Assets] formatos de arquivo compatíveis  {#supported-file-formats}
+# [!DNL Assets] formatos de arquivo compatíveis {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] o as a  [!DNL Cloud Service] suporta recursos básicos de gerenciamento de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download e assim por diante — para qualquer arquivo binário, independente de seu formato. [!DNL Adobe Experience Manager Assets] O suporta uma grande variedade de formatos de arquivo e cada recurso de produto tem suporte variado para diferentes formatos.
 
@@ -35,7 +34,7 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 | * | Ver observações abaixo do quadro |
 | - | Não aplicável |
 
-## Formatos de Adobe {#adobe-formats}
+## Formatos Adobe {#adobe-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de texto completo | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
@@ -107,7 +106,7 @@ Consulte também [Trabalhar com ativos 3D no Dynamic Media](/help/assets/dynamic
 | STL | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
 | USDz | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | - | Instantâneo |
 
-## [!DNL Camera RAW] formatos  {#camera-raw-formats}
+## [!DNL Camera RAW] formatos {#camera-raw-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -233,5 +232,5 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 >[!MORELIKETHIS]
 >
 >* [Processamento de ativos usando microsserviços de ativos](asset-microservices-overview.md)
->* [Formatos de arquivo compatíveis para a marcação inteligente de ativos baseados em texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+* [Formatos de arquivo compatíveis para a marcação inteligente de ativos baseados em texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
