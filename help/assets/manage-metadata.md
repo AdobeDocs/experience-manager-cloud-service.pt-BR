@@ -4,16 +4,16 @@ description: Saiba mais sobre os tipos de metadados e como [!DNL Adobe Experienc
 contentOwner: AG
 mini-toc-levels: 1
 feature: Gerenciamento de ativos,Metadados
-role: Business Practitioner,Architect,Administrator
+role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 3%
 
 ---
 
-# Gerenciar metadados de seus ativos digitais {#managing-metadata-for-digital-assets}
+# Gerenciar metadados dos ativos digitais {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] mantém metadados para cada ativo. Ela facilita a categorização e a organização de ativos e ajuda as pessoas que estão procurando por um ativo específico. Com a capacidade de extrair metadados de arquivos carregados para [!DNL Experience Manager Assets], o gerenciamento de metadados integra-se ao fluxo de trabalho criativo. Com a capacidade de manter e gerenciar metadados com seus ativos, você pode organizar e processar ativos automaticamente com base em seus metadados.
 
@@ -105,7 +105,7 @@ Os campos de metadados definidos pela Exif normalmente têm natureza técnica e 
 
 Outros metadados que podem ser incorporados de arquivos incluem [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], e assim por diante.
 
-## Gerenciar metadados de seus ativos digitais {#manage-assets-metadata}
+## Gerenciar metadados dos ativos digitais {#manage-assets-metadata}
 
 O Enterprise Manager Assets permite editar os metadados de vários ativos simultaneamente, para que você possa propagar rapidamente alterações de metadados comuns a ativos em massa. Use a página [!UICONTROL Propriedades] para alterar as propriedades dos metadados para um valor comum ou adicionar ou modificar tags. Para personalizar a página Propriedades dos metadados, incluindo adicionar, modificar e excluir propriedades dos metadados, use o Editor de esquemas.
 
@@ -191,7 +191,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PDF e PDF/X.
 * Photoshop e psAux - [!DNL Adobe Photoshop].
 
-### Digital Rights Management metadados {#digital-rights-management-metadata}
+### Metadados de Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
