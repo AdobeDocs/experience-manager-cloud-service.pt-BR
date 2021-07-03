@@ -3,9 +3,9 @@ title: Distribuir e compartilhar ativos, pastas e coleções
 description: Distribua seus ativos digitais usando métodos como compartilhar como um link, baixar e via [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
 feature: Gerenciamento de ativos, Colaboração, Distribuição de ativos
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 2%
@@ -112,7 +112,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 Os usuários podem baixar os ativos necessários e compartilhá-los fora de [!DNL Experience Manager]. Para obter mais informações, consulte [como pesquisar ativos](/help/assets/search-assets.md), [como baixar ativos](/help/assets/download-assets-from-aem.md) e [como baixar coleções](manage-collections.md#download-a-collection)
 
-## Compartilhar ativos com profissionais criativos {#share-with-creatives}
+## Compartilhar ativos com profissionais de criação {#share-with-creatives}
 
 Os profissionais de marketing e os usuários de linha de negócios podem compartilhar facilmente os ativos aprovados com seus profissionais de criação usando o
 
@@ -124,7 +124,7 @@ Os profissionais de marketing e os usuários de linha de negócios podem compart
 
 As diferentes opções para compartilhar os ativos exigem configuração específica e têm pré-requisitos específicos.
 
-### Configurar o compartilhamento de link de ativo {#asset-link-sharing}
+### Configurar compartilhamento de link de ativos {#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
@@ -170,7 +170,7 @@ When you download assets from the link shared using the Link Sharing feature, AE
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### Ativar ações da área de trabalho para usar com o aplicativo de área de trabalho {#desktop-actions}
+### Ativar ações da área de trabalho para usar com o aplicativo da área de trabalho {#desktop-actions}
 
 Na interface do usuário [!DNL Assets] em um navegador, é possível explorar os locais do ativo ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas de ações da área de trabalho e, para ativá-las, consulte [ativar ações da área de trabalho em [!DNL Assets] interface da Web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
