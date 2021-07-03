@@ -3,9 +3,9 @@ title: Metadados XMP
 description: Saiba mais sobre o padrão de metadados XMP (Plataforma de metadados extensível) para gerenciamento de metadados. Ele é usado pelo AEM como um formato padronizado para criação, processamento e intercâmbio de metadados.
 contentOwner: AG
 feature: Metadados
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 16%
@@ -88,7 +88,7 @@ Nesse caso, [!DNL Assets] salva as alterações na propriedade **[!UICONTROL Tit
 >
 >O recurso de write-back não está habilitado por padrão em [!DNL Assets]. Consulte como [ativar o write-back de metadados](#enable-xmp-writeback). O MSM para ativos digitais não funciona com o write-back de metadados habilitado. Após o write-back, a herança é interrompida.
 
-### Habilitar XMP write-back {#enable-xmp-writeback}
+### Ativar XMP write-back {#enable-xmp-writeback}
 
 [!UICONTROL O fluxo de trabalho ] Writeback de metadados DAM é usado para gravar os metadados de um ativo. Para ativar o write-back, siga qualquer um dos três métodos a seguir:
 
