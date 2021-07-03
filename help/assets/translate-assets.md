@@ -3,9 +3,9 @@ title: Criar e gerenciar ativos digitais em vários idiomas
 description: Saiba como automatizar fluxos de trabalho para tradução de ativos, incluindo binários, metadados e tags em vários idiomas.
 contentOwner: AG
 feature: Gerenciamento de ativos,Tradução
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2590'
 ht-degree: 24%
@@ -87,7 +87,7 @@ Por exemplo, a página raiz da cópia de idioma italiano da hierarquia de amostr
 1. No campo Nome, digite o código do país no formato `<language-code>`.
 1. Clique ou toque em **[!UICONTROL Criar]**. A raiz do idioma é criada no console Assets.
 
-### Exibir raízes de idioma {#view-language-roots}
+### Exibir raízes do idioma {#view-language-roots}
 
 A interface otimizada para toque fornece um painel Referências que mostra uma lista de raízes de idioma que foram criadas no AEM Assets.
 
