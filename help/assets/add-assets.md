@@ -2,9 +2,9 @@
 title: Adicione seus ativos digitais a [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais a [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Gerenciamento de ativos,Fazer upload
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -178,14 +178,14 @@ Para agendar uma importação em massa única ou recorrente, siga estas etapas:
 
    ![Programar tarefa de assimilação em massa](assets/bulk-ingest-schedule1.png)
 
-## Fazer upload de ativos usando clientes de desktop {#upload-assets-desktop-clients}
+## Fazer upload de ativos usando clientes do desktop {#upload-assets-desktop-clients}
 
 Além da interface do usuário do navegador da Web, [!DNL Experience Manager] suporta outros clientes no desktop. Eles também fornecem experiência de upload sem a necessidade de acessar o navegador da Web.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) fornece acesso a ativos  [!DNL Experience Manager] no Adobe Photoshop, Adobe Illustrator e aplicativos de desktop do Adobe InDesign. Você pode fazer upload do documento aberto no momento para [!DNL Experience Manager] diretamente da interface do usuário do Adobe Asset Link nesses aplicativos de desktop.
 * [[!DNL Experience Manager] os ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) aplicativos de desktop simplificam o trabalho com ativos no desktop, independentemente do tipo de arquivo ou do aplicativo nativo que os manipula. É particularmente útil fazer upload de arquivos nas hierarquias de pastas aninhadas do seu sistema de arquivos local, pois o upload do navegador suporta apenas o upload de listas de arquivos simples.
 
-## Processar ativos ao carregar {#process-when-uploaded}
+## Processar ativos ao fazer upload {#process-when-uploaded}
 
 Para fazer processamento adicional nos ativos carregados, você pode aplicar perfis de processamento nas pastas de upload. Os perfis estão disponíveis na página **[!UICONTROL Propriedades]** de uma pasta em [!DNL Assets]. Um ativo digital sem uma extensão ou com uma extensão incorreta não é processado conforme desejado. Por exemplo, ao fazer upload desses ativos, nada acontece ou um perfil de processamento incorreto pode se aplicar ao ativo. Os usuários ainda podem armazenar os arquivos binários no DAM.
 
