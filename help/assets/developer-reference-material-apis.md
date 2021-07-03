@@ -3,20 +3,20 @@ title: Referências do desenvolvedor para [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 feature: APIs,API HTTP de ativos
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 9d0fbffa0f66deb230a85fa8d09f9f3be45db3f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 2%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] casos de uso do desenvolvedor, APIs e material de referência  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] casos de uso do desenvolvedor, APIs e material de referência {#assets-cloud-service-apis}
 
 O artigo contém recomendações, materiais de referência e recursos para desenvolvedores de [!DNL Assets] como um [!DNL Cloud Service]. Ele inclui um novo módulo de upload de ativos, uma referência de API e informações sobre o suporte fornecido em workflows de pós-processamento.
 
-## [!DNL Experience Manager Assets] APIs e operações  {#use-cases-and-apis}
+## [!DNL Experience Manager Assets] APIs e operações {#use-cases-and-apis}
 
 [!DNL Assets] o as a  [!DNL Cloud Service] fornece várias APIs para interagir programaticamente com ativos digitais. Cada API suporta casos de uso específicos, conforme mencionado na tabela abaixo. A interface do usuário [!DNL Assets], [!DNL Experience Manager] aplicativo de desktop e [!DNL Adobe Asset Link] são compatíveis com todas ou algumas das operações.
 
@@ -85,7 +85,7 @@ A abordagem oferece uma manipulação escalável e mais eficiente dos uploads de
 >[!NOTE]
 Consulte o código de cliente para implementar essa abordagem no [biblioteca aem-upload](https://github.com/adobe/aem-upload) de código aberto.
 
-### Iniciar carregamento {#initiate-upload}
+### Iniciar upload {#initiate-upload}
 
 Envie uma solicitação HTTP POST para a pasta desejada. Os ativos são criados ou atualizados nesta pasta. Inclua o seletor `.initiateUpload.json` para indicar que a solicitação é iniciar o upload de um arquivo binário. Por exemplo, o caminho para a pasta onde o ativo deve ser criado é `/assets/folder`. A solicitação de POST é `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
@@ -123,7 +123,7 @@ Uma única solicitação pode ser usada para iniciar uploads para vários binár
 * `minPartSize` (número): O comprimento mínimo, em bytes, dos dados que podem ser fornecidos a qualquer um dos  `uploadURIs`, se houver mais de um URI.
 * `maxPartSize` (número): O comprimento máximo, em bytes, dos dados que podem ser fornecidos a qualquer um dos  `uploadURIs`, se houver mais de um URI.
 
-### Fazer upload de binário {#upload-binary}
+### Upload binário {#upload-binary}
 
 A saída de iniciar um upload inclui um ou mais valores de URI de upload. Se mais de um URI for fornecido, o cliente dividirá o binário em partes e fará a solicitação POST de cada parte para cada URI, em ordem. Use todos os URIs. Certifique-se de que o tamanho de cada parte esteja dentro dos tamanhos mínimo e máximo especificados na resposta de inicialização. Os nós de borda CDN ajudam a acelerar o upload solicitado de binários.
 
