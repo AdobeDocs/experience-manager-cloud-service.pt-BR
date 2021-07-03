@@ -2,16 +2,15 @@
 title: Como editar ou adicionar metadados
 description: Saiba mais sobre metadados de ativos em [!DNL Experience Manager Assets] e de várias maneiras pelas quais você pode editar metadados de ativos.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Metadados
+role: User,Admin
+exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '423'
 ht-degree: 9%
 
 ---
-
 
 # Como editar ou adicionar metadados {#how-to-edit-or-add-metadata}
 
@@ -45,7 +44,7 @@ Quaisquer alterações nos metadados de um ativo são gravadas de volta no biná
 
 Para obter detalhes sobre como editar o esquema de metadados, consulte [Edição de formulários de esquema de metadados](metadata-schemas.md#edit-metadata-schema-forms).
 
-## Registrando um namespace personalizado em AEM {#registering-a-custom-namespace-within-aem}
+## Registro de um namespace personalizado no AEM {#registering-a-custom-namespace-within-aem}
 
 Você pode adicionar seus próprios namespaces no AEM. Assim como há namespaces predefinidos, como cq, jcr e sling, você pode ter um namespace para os metadados do repositório e o processamento xml.
 
