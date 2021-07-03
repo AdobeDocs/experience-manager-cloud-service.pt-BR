@@ -3,16 +3,15 @@ title: Gerenciar coleções de ativos digitais
 description: Entenda o conceito de coleção no Adobe Experience Manager Assets. Saiba como coletar, gerenciar, editar e coleções com outros usuários.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collections,Asset Management
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Coleções,Gerenciamento de ativos
+role: User
+exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '2402'
-ht-degree: 20%
+source-wordcount: '2400'
+ht-degree: 19%
 
 ---
-
 
 # Gerenciar coleções {#manage-collections}
 
@@ -28,7 +27,7 @@ As coleções são dos seguintes tipos, com base na maneira como coletam ativos:
 
 * Uma coleção inteligente que inclui dinamicamente ativos com base em critérios de pesquisa.
 
-## Acesse o console de coleções {#navigate-the-collections-console}
+## Acesse o console Coleções {#navigate-the-collections-console}
 
 Para abrir o console **[!UICONTROL Coleções]**:
 
@@ -136,7 +135,7 @@ Você pode editar os metadados de várias coleções simultaneamente. Essa funci
    >
    >O Modo anexar funciona somente para campos que podem conter vários valores. Em campos que podem conter apenas um valor, os novos metadados não são anexados ao valor existente no campo mesmo se você selecionar o **[!UICONTROL Modo anexar]**.
 
-## Pesquisar {#searching}
+## Pesquisar   {#searching}
 
 O recurso Pesquisar em Coleções oferece suporte a [Pesquisar por coleções](#search-collections) e [Pesquisar por ativos em uma Coleção](#search-within-collections).
 
@@ -146,7 +145,7 @@ Você pode pesquisar coleções no console Coleções. Ao pesquisar com palavras
 
 Se você pesquisar por coleções do nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. Os ativos ou pastas nas coleções são excluídos. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pasta), todos os ativos, pastas e coleções relevantes são retornados.
 
-### Pesquisar nas Coleções {#search-within-collections}
+### Pesquisar em Coleções {#search-within-collections}
 
 No console Coleções , toque/clique em uma coleção para abri-la.
 
