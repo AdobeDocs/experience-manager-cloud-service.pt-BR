@@ -2,20 +2,19 @@
 title: Organizar ativos digitais
 description: Organize seus ativos digitais usando vários métodos fornecidos no Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Asset Management,Tagging,Asset Distribution
+feature: Gerenciamento de ativos, Marcação, Distribuição de ativos
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 2%
+source-wordcount: '450'
+ht-degree: 1%
 
 ---
 
-
 # Organizar ativos digitais {#organize-digital-assets}
 
-Todos os ativos digitais, metadados e conteúdo de documentos do Microsoft Office e PDF são extraídos e podem ser pesquisados. A pesquisa permite uma filtragem sofisticada em ativos e respeita totalmente as permissões apropriadas. Os metadados são abordados detalhadamente em Metadados no Gerenciamento de ativos digitais.
+Todos os ativos digitais, metadados e conteúdo de documentos do Microsoft Office e PDF são extraídos e podem ser pesquisados. A pesquisa permite uma filtragem sofisticada em ativos e respeita completamente as permissões apropriadas. Os metadados são abordados detalhadamente em Metadados no Gerenciamento de ativos digitais.
 
 O AEM Assets é compatível com várias maneiras de organizar o conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de maneira não ordenada e adhoc, usando, por exemplo, tags . Os usuários podem editar tags no Editor de ativos DAM, onde os ativos secundários, as representações e os metadados são exibidos.
 
@@ -32,7 +31,7 @@ Ao organizar uma coleção de ativos, por exemplo, todas as imagens *Nature*, vo
 1. No campo **[!UICONTROL Title]**, forneça um nome de pasta. Por padrão, o DAM usa o título fornecido como o nome da pasta. Depois que a pasta for criada, é possível substituir o padrão e especificar outro nome de pasta.
 1. Clique em **[!UICONTROL Criar]**. Sua pasta é exibida na pasta de ativos digitais.
 
-## Adicionar propriedades CUG às pastas {#add-cug-properties-to-folders}
+## Adicionar propriedades CUG a pastas {#add-cug-properties-to-folders}
 
 É possível limitar quem pode acessar determinadas pastas no Assets, tornando a pasta parte de um grupo de usuários fechado (CUG). Para fazer uma pasta parte de um CUG:
 
@@ -41,7 +40,7 @@ Ao organizar uma coleção de ativos, por exemplo, todas as imagens *Nature*, vo
 1. Marque a caixa de seleção **Enabled** para disponibilizar a pasta e seus ativos somente para um grupo de usuários fechado.
 1. Navegue até a página de logon, se houver, para adicionar essas informações. Adicione grupos admitidos clicando em **Adicionar item**. Se necessário, adicione o realm. Clique em **OK** para salvar suas alterações.
 
-## Use tags para organizar ativos {#use-tags-to-organize-assets}
+## Usar tags para organizar ativos {#use-tags-to-organize-assets}
 
 Você pode usar pastas ou tags ou ambas para organizar ativos. Adicionar tags a ativos facilita sua recuperação durante uma pesquisa. Para adicionar tags a um ativo, siga estas etapas:
 
