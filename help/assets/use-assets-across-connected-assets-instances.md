@@ -3,9 +3,9 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 feature: Gerenciamento de ativos, Ativos conectados, Distribuição de ativos, Usuário e grupos
-role: Administrator,Business Practitioner,Architect
+role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 192762e3efb23d84eb4378755975dc9b9d3158e8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2967'
 ht-degree: 26%
@@ -161,7 +161,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
    *Figura: opções para filtrar tipos de documentos e imagens ao pesquisar ativos no DAM remoto.*
 
-1. Um autor do site será notificado se ocorrer uma busca assíncrona de ativo e uma falha na tarefa de busca. Durante a criação ou até mesmo após a criação, os autores podem ver informações detalhadas sobre as tarefas de busca e erros na interface do usuário [trabalhos assíncronos](/help/operations/asynchronous-jobs.md).
+1. Um autor do site será notificado se ocorrer uma busca assíncrona de ativo e uma falha na tarefa de busca. Durante a criação ou até mesmo após a criação, os autores podem ver informações detalhadas sobre tarefas de busca e erros na interface do usuário [trabalhos assíncronos](/help/operations/asynchronous-jobs.md).
 
    ![Notificação sobre a busca assíncrona de ativos que ocorre em segundo plano.](assets/assets_async_transfer_fails.png)
 
