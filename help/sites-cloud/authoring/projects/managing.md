@@ -1,14 +1,13 @@
 ---
 title: Gerenciamento de projetos
-description: Os projetos permitem que você organize seu projeto agrupando recursos em uma entidade que pode ser acessada e gerenciada no console Projetos
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+description: Projetos permite organizar o projeto agrupando recursos em uma entidade que pode ser acessada e gerenciada no console Projetos
+exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '915'
 ht-degree: 80%
 
 ---
-
 
 # Gerenciamento de projetos {#managing-projects}
 
@@ -26,8 +25,11 @@ Pronto para uso, o AEM permite escolher os seguintes modelos ao criar um projeto
 
 * Projeto simples
 * Projeto de mídia
-* Projeto de sessão fotográfica do produto
 * Projeto de tradução
+
+<!-- Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
+* Product Photo Shoot Project 
+-->
 
 O procedimento de criação de um projeto é o mesmo em todos os projetos. A diferença entre os tipos de projetos inclui [funções de usuário](/help/sites-cloud/authoring/projects/overview.md) e [fluxos de trabalho](/help/sites-cloud/authoring/projects/workflows.md) disponíveis.  Para criar um novo projeto:
 
@@ -36,13 +38,13 @@ O procedimento de criação de um projeto é o mesmo em todos os projetos. A dif
 
    ![Criação de um projeto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Defina **Title** e **Descrição** e adicione uma imagem **Miniatura**, se necessário. Você também adiciona ou exclui os usuários e os grupos aos quais pertencem. Além disso, clique em **Avançado** para adicionar um nome utilizado no URL.
+1. Defina o **Título** e **Descrição** e adicione uma imagem **Miniatura** se necessário. Você também adiciona ou exclui os usuários e os grupos aos quais pertencem. Além disso, clique em **Avançado** para adicionar um nome utilizado no URL.
 
    ![Adicionar detalhes do projeto](/help/sites-cloud/authoring/assets/projects-title.png)
 
 1. Toque/clique em **Criar**. A confirmação pergunta se você deseja abrir o novo projeto ou retornar ao console.
 
-### Associar recursos ao projeto  {#associating-resources-with-your-project}
+### Associar recursos ao projeto {#associating-resources-with-your-project}
 
 Como os projetos permitem agrupar recursos em uma única entidade, você deseja associar os recursos ao projeto. Esses recursos são chamados de **Mosaicos**. Os tipos de recursos que você pode adicionar são descritos nos [Mosaicos do projeto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
@@ -83,7 +85,7 @@ Em alguns mosaicos, é possível adicionar mais de um item. Por exemplo, é poss
 
 Para adicionar itens a um mosaico:
 
-1. Em **Projetos**, navegue até o projeto e clique no ícone Adicionar + no bloco ao qual você deseja adicionar um item.
+1. Em **Projetos**, navegue até o projeto e clique no ícone Adicionar + no mosaico ao qual deseja adicionar um item.
 
    ![Adicionar item a um bloco](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
@@ -103,23 +105,23 @@ Para abrir um mosaico para ver ou modificar itens:
 
 1. O AEM lista os itens no mosaico. É possível entrar no modo de seleção para modificar ou excluir os itens.
 
-   ![Mosaico aberto](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![Bloco aberto](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
 
 ## Exibir as estatísticas do projeto {#viewing-project-statistics}
 
-Para ver as estatísticas do projeto, no console **Projetos**, clique em **Exibir visualização de estatísticas**. O nível de conclusão de cada projeto é exibido. Clique em **Mostrar Visualização de Estatísticas** novamente para ir para o console **Projetos**.
+Para ver as estatísticas do projeto, no console **Projetos**, clique em **Exibir visualização de estatísticas**. O nível de conclusão de cada projeto é exibido. Clique em **Mostrar visualização de estatísticas** novamente para ir para o console **Projetos**.
 
 ![Estatísticas do projeto](/help/sites-cloud/authoring/assets/projects-stats.png)
 
 ### Exibir uma linha do tempo do projeto {#viewing-a-project-timeline}
 
-A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para visualização da linha do tempo do projeto, clique/toque em **Linha do tempo**, insira o modo de seleção e selecione o projeto. Os ativos são exibidos no painel esquerdo. Clique/toque em **Linha do tempo** para retornar ao console **Projetos**.
+A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para exibir a linha do tempo do projeto, clique/toque em **Linha do tempo**, em seguida, insira o modo de seleção e selecione o projeto. Os ativos são exibidos no painel esquerdo. Clique/toque em **Linha do tempo** para retornar ao console **Projetos**.
 
 ![Linha do tempo do projeto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Exibir projetos ativos/inativos {#viewing-active-inactive-projects}
 
-Para alternar entre os projetos ativos e inativos, no console **Projetos**, clique em **Alternar projetos ativos**. Se o ícone tiver uma marca de seleção ao lado dele, ele exibirá os projetos ativos.
+Para alternar entre os projetos ativos e inativos, no console **Projetos**, clique em **Alternar projetos ativos**. Se o ícone tiver uma marca de seleção ao lado, estará exibindo os projetos ativos.
 
 ![Botão Alternar projetos ativos](/help/sites-cloud/authoring/assets/projects-active.png)
 
@@ -136,8 +138,7 @@ Para tornar um projeto inativo (ou ativo):
 1. No console **Projetos**, abra o projeto e, em seguida, localize o mosaico **Informações do projeto**.
 
    >[!NOTE]
-   >
-   >Talvez seja necessário adicionar este mosaico se ele ainda não estiver no seu projeto. Consulte [Adicionar mosaico](#adding-items-to-a-tile).
+   Talvez seja necessário adicionar este mosaico se ele ainda não estiver no seu projeto. Consulte [Adicionar mosaico](#adding-items-to-a-tile).
 
 1. Toque/clique em **Editar**.
 1. Altere o seletor de **Ativo** para **Inativo** (ou vice-versa).
