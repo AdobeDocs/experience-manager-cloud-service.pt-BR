@@ -2,18 +2,17 @@
 title: Marcar os ativos como uma marca d'água
 description: Adicione uma marca d'água aos seus ativos digitais.
 contentOwner: AG
-feature: Asset Management,Publishing
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Gerenciamento de ativos,Publicação
+role: User,Admin
+exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
 
-
-# Marque seus ativos {#watermark-assets}
+# Marque seus ativos com água {#watermark-assets}
 
 [!DNL Adobe Experience Manager Assets] permite adicionar uma marca d&#39;água digital a imagens. [!DNL Assets] O suporta a aplicação de uma imagem como marca d&#39;água a outros arquivos de imagem. As marcas d&#39;água podem ajudar os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. Além disso, uma marca d&#39;água pode ser usada para indicar o estado de um documento como confidencial, rascunho, validade e assim por diante.
 
