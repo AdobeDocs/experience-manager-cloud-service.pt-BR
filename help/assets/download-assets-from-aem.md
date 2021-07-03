@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Gerenciamento de ativos
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -66,17 +66,19 @@ Para baixar ativos, siga estas etapas:
 
 1. Na caixa de diálogo, clique em **[!UICONTROL Download]**.
 
-<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
-## Download assets shared using link sharing {#link-share-download}
+## Baixar ativos compartilhados usando o compartilhamento de link {#link-share-download}
 
-Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
+>[!NOTE]
+>
+>Essa funcionalidade está disponível no canal de pré-lançamento do Experience Manager.
 
-When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
+Compartilhar ativos usando um link é uma maneira conveniente de disponibilizá-lo para as pessoas interessadas, sem que elas precisem primeiro fazer logon em [!DNL Assets]. Para gerar um URL para compartilhar ativos, use a funcionalidade [Compartilhar link](/help/assets/share-assets.md#sharelink).
 
-The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
+Quando os usuários baixam ativos de links compartilhados, [!DNL Assets] usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos. Os ativos a serem baixados são enfileirados em segundo plano em uma caixa de entrada em arquivos ZIP com tamanho de arquivo gerenciável. Para downloads muito grandes, o download é fragmentado em arquivos de 100 GB de tamanho.
 
-![Download inbox](assets/download-inbox.png)
--->
+A caixa de entrada exibe o status de processamento de cada arquivo. Após concluir o processamento, é possível baixar os arquivos da caixa de entrada.
+
+![Baixar caixa de entrada](assets/download-inbox.png)
 
 ## Habilitar servlet de download de ativos {#enable-asset-download-servlet}
 
