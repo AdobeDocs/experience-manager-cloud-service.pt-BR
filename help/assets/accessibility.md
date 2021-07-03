@@ -3,9 +3,9 @@ title: Acessibilidade em [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade em [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ajudam usuários portadores de deficiência.
 contentOwner: AG
 feature: Acessibilidade,Gerenciamento de ativos
-role: Business Practitioner,Architect,Leader
+role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 2%
@@ -28,7 +28,7 @@ Possible topics to cover in this article are below.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
 -->
 
-# Recursos de acessibilidade em [!DNL Adobe Experience Manager Assets] como [!DNL Cloud Service] {#accessibility-in-aem-assets}
+# Recursos de acessibilidade em [!DNL Adobe Experience Manager Assets] como um [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
 [!DNL Adobe Experience Manager] O permite que criadores e editores de conteúdo vejam experiências incríveis na Web. O Adobe se esforça para incluir os criadores com deficiência, melhorando a acessibilidade de [!DNL Experience Manager]. O software é aprimorado continuamente para atender às necessidades de todos os tipos de usuários e seguir os padrões mundiais que incluem indivíduos com deficiências visuais, auditivas, de mobilidade ou outras.
 
@@ -46,7 +46,7 @@ Para ler um relatório com detalhes do nível de conformidade, consulte a págin
 <!-- TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](/). -->
 
-## Tecnologias assistivas {#at-support}
+## Tecnologias de assistência {#at-support}
 
 Os usuários portadores de deficiências dependem frequentemente de hardware e software para acessar conteúdo da Web e usar produtos de software. Essas ferramentas são conhecidas como tecnologias de assistência. [!DNL Experience Manager Assets] O pode trabalhar com os seguintes tipos de tecnologias de assistência (AT) ao usar as funcionalidades principais do software:
 
@@ -56,7 +56,7 @@ Os usuários portadores de deficiências dependem frequentemente de hardware e s
 * Hardware auxiliar, incluindo controles de switch, exibições em Braille atualizáveis e outros dispositivos de entrada de computador.
 * Ferramentas de aumento da interface do usuário.
 
-## [!DNL Experience Manager Assets] casos de uso acessíveis  {#accessible-assets-use-cases}
+## [!DNL Experience Manager Assets] casos de uso acessíveis {#accessible-assets-use-cases}
 
 Em [!DNL Experience Manager], os recursos de acessibilidade atendem a dois requisitos principais de [!DNL Experience Manager] usuários e seus clientes.
 
@@ -65,7 +65,7 @@ Em [!DNL Experience Manager], os recursos de acessibilidade atendem a dois requi
 
 Os recursos principais em [!DNL Assets] são mais acessíveis do que antes e são atualizados regularmente para melhorar a conformidade com os padrões globais. As operações CRUD em [!DNL Assets] têm algum grau de acessibilidade incorporado nelas. Fluxos de trabalho do DAM como adicionar, gerenciar, pesquisar e distribuir ativos são acessíveis com a ajuda de atalhos do teclado, texto do leitor de tela, contraste de cores e assim por diante.
 
-## Suporte para uso do teclado {#keyboard-use}
+## Suporte para uso de teclado {#keyboard-use}
 
 Muitos elementos da interface do usuário que são clicáveis ou acionáveis com um ponteiro também podem ser envolvidos com o uso do teclado. Usando um teclado, os usuários podem se concentrar em elementos da interface do usuário e tomar uma ação apropriada. Os usuários podem usar os atalhos de teclado diretamente para acionar um comando ou uma ação sem precisar se concentrar nos elementos da interface do usuário e acioná-la usando o teclado. Por exemplo, os usuários podem abrir a linha do tempo de um ativo no lado esquerdo navegando até o controle da interface do usuário usando um teclado, selecionando `Return` e selecionando `Alt + 2` o atalho do teclado.
 
