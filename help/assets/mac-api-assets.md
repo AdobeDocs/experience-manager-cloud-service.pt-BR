@@ -3,16 +3,16 @@ title: API HTTP de ativos
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: APIs HTTP de ativos, APIs
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] API HTTP  {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] API HTTP {#assets-http-api}
 
 ## Visão geral {#overview}
 
@@ -106,7 +106,7 @@ A API HTTP [!DNL Assets] inclui os seguintes recursos:
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 -->
 
-## Recuperar uma lista de pastas {#retrieve-a-folder-listing}
+## Recuperar uma listagem de pastas {#retrieve-a-folder-listing}
 
 Recupera uma representação Siren de uma pasta existente e de suas entidades filhas (subpastas ou ativos).
 
@@ -120,7 +120,7 @@ Recupera uma representação Siren de uma pasta existente e de suas entidades fi
 
 **Resposta**: A classe da entidade retornada é um ativo ou uma pasta. As propriedades das entidades contidas são um subconjunto do conjunto completo de propriedades de cada entidade. Para obter uma representação completa da entidade, os clientes devem recuperar o conteúdo do URL apontado pelo link com um `rel` de `self`.
 
-## Crie uma pasta {#create-a-folder}
+## Crie uma pasta  {#create-a-folder}
 
 Cria um `sling`: `OrderedFolder` no caminho especificado. Se `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome do nó. A solicitação aceita um dos seguintes procedimentos:
 
