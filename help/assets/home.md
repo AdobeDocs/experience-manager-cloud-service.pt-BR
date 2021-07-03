@@ -2,27 +2,27 @@
 title: '[!DNL Assets] as a [!DNL Cloud Service] Guia'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] recursos de autoajuda e links de documentação'
 feature: Gerenciamento de ativos
-role: Business Practitioner,Leader
+role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 32%
 
 ---
 
-# [!DNL Assets] como um  [!DNL Cloud Service] guia  {#aem-assets-guide}
+# [!DNL Assets] como um  [!DNL Cloud Service] guia {#aem-assets-guide}
 
 Os seguintes recursos de autoajuda estão disponíveis para [!DNL Experience Manager Assets] como um [!DNL Cloud Service].
 
-## Artigos-chave [!DNL Assets] {#key-articles}
+## Artigos principais [!DNL Assets] {#key-articles}
 
 * [Visão geral e novidades](overview.md)
 * [Alterações importantes](/help/assets/assets-cloud-changes.md)
 * [Arquitetura de [!DNL Assets] como a [!DNL Cloud Service]](architecture.md)
 * [Visão geral dos microsserviços de ativos](/help/assets/asset-microservices-overview.md)
 
-## [!DNL Experience Manager] guias  {#aem-guides}
+## [!DNL Experience Manager] guias {#aem-guides}
 
 | Guia do usuário | Descrição |
 |---|---|
