@@ -2,23 +2,22 @@
 title: Tag inteligente de seus ativos de vídeo
 description: O Experience Manager adiciona automaticamente tags inteligentes contextuais e descritivas aos vídeos usando [!DNL Adobe Sensei].
 feature: Tags inteligentes,Marcação
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-translation-type: tm+mt
-source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 0%
 
 ---
 
-# Tag inteligente seus ativos de vídeo {#video-smart-tags}
+# Tag inteligente de seus ativos de vídeo {#video-smart-tags}
 
 A crescente necessidade de novos conteúdos exige esforços manuais reduzidos para fornecer experiências digitais atraentes em breve. [!DNL Adobe Experience Manager] O as a  [!DNL Cloud Service] suporta a marcação automática de ativos de vídeo usando inteligência artificial. Marcar os vídeos manualmente pode ser demorado. No entanto, o recurso de marcação inteligente de vídeo [!DNL Adobe Sensei] alimentado usa modelos de inteligência artificial para analisar o conteúdo do vídeo e adicionar tags aos ativos do vídeo. Dessa forma, os usuários do DAM podem fornecer experiências avançadas aos clientes. Adobe gera dois conjuntos de tags para um vídeo. Embora, um conjunto corresponda a objetos, cenas e atributos nesse vídeo; o outro conjunto está relacionado a ações como beber, correr e correr.
 
 A marcação de vídeo é ativada por padrão em [!DNL Adobe Experience Manager] como um [!DNL Cloud Service]. No entanto, você pode [recusar a marcação inteligente de vídeo](#opt-out-video-smart-tagging) em uma pasta. Os vídeos são marcados automaticamente ao fazer upload de novos vídeos ou reprocessar os existentes. [!DNL Experience Manager] também cria as miniaturas e extrai metadados dos arquivos de vídeo. As tags inteligentes são exibidas em ordem decrescente de sua [pontuação de confiança](#confidence-score-video-tag) no ativo [!UICONTROL Propriedades].
 
-## Vídeos de marcação inteligente ao carregar {#smart-tag-assets-on-ingestion}
+## Vídeos de marcação inteligente no upload {#smart-tag-assets-on-ingestion}
 
 Ao [fazer upload de ativos de vídeo](add-assets.md#upload-assets) para [!DNL Adobe Experience Manager] como um [!DNL Cloud Service], os vídeos são processados. Quando o processamento estiver concluído, consulte a guia [!UICONTROL Básico] do ativo [!UICONTROL Propriedades]. Tags inteligentes são adicionadas automaticamente ao vídeo em [!UICONTROL Tags inteligentes]. Os microsserviços de ativos aproveitam [!DNL Adobe Sensei] para criar essas tags inteligentes.
 
@@ -52,7 +51,7 @@ Para adicionar tags inteligentes a ativos de vídeo ou pastas (incluindo subpast
 
 Quando o processo estiver concluído, navegue até a página [!UICONTROL Propriedades] de qualquer ativo de vídeo dentro da pasta. As tags adicionadas automaticamente são vistas na seção [!UICONTROL Tags inteligentes] na guia [!UICONTROL Básico]. Essas tags inteligentes aplicadas são classificadas em ordem decrescente de [pontuação de confiança](#confidence-score-video-tag).
 
-## Procure vídeos marcados {#search-smart-tagged-videos}
+## Pesquisar vídeos marcados {#search-smart-tagged-videos}
 
 Para pesquisar os ativos de vídeo com base nas tags inteligentes geradas automaticamente, use [Omnisearch](search-assets.md#search-assets-in-aem):
 
@@ -138,5 +137,5 @@ Para adicionar a configuração OSGI da pontuação de confiança ao projeto imp
 >[!MORELIKETHIS]
 >
 >* [Gerenciar tags inteligentes e pesquisas de ativos](smart-tags.md#manage-smart-tags-and-searches)
->* [Treinar o serviço de Tag inteligente e marcar suas imagens](smart-tags.md)
+* [Treinar o serviço de Tag inteligente e marcar suas imagens](smart-tags.md)
 
