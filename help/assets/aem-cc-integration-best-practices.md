@@ -3,11 +3,10 @@ title: Práticas recomendadas para integrar com [!DNL Adobe Creative Cloud]
 description: As práticas recomendadas integram uma implantação do Experience Manager com o Adobe Creative Cloud para simplificar os fluxos de trabalho de transferência de ativos e obter o máximo de eficiência.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collaboration,Adobe Asset Link,Desktop App
-role: Architect,Business Practitioner,Administrator
+feature: Colaboração, Adobe Asset Link, Aplicativo de desktop
+role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-translation-type: tm+mt
-source-git-commit: 522d0363c0207afbed2c51e9d54d921ce9b66c70
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '3300'
 ht-degree: 18%
@@ -26,7 +25,7 @@ Leia para saber quais integrações devem ser escolhidas entre o desktop e o DAM
 >
 >AEM ao compartilhamento de pasta do Creative Cloud agora está obsoleto e não é mais coberto abaixo. O Adobe recomenda recursos mais recentes, como o Adobe Asset Link ou AEM aplicativo de desktop para fornecer aos usuários criativos acesso aos ativos gerenciados no AEM.
 
-## Necessidade de colaboração de criativos, profissionais de marketing e usuários de DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
+## Necessidade de colaboração de criativos, profissionais de marketing e usuários do DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
 
 | Requisitos | Caso de uso | Superfícies envolvidas |
 |---|---|---|
@@ -60,7 +59,7 @@ Decisão sobre qual recurso usar
 | Editar - abrir para edição | Sim - Ação de check-out | Sim - Abrir ação (no compartilhamento de rede) | [O check-out no ](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) AAL salva o ativo na conta de armazenamento da creative cloud do usuário (sincronizada pelo aplicativo do Creative Cloud) por padrão. |
 | Editar - trabalho em andamento fora do AEM | Sim - Ativo disponível na conta de armazenamento de Creative Cloud do usuário sincronizada com o desktop. | Sim |  |
 | Editar - fazer upload de alterações | Sim - [Ação de check-in](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) com comentário opcional | Sim |  |
-| Upload - arquivo único | Sim - carrega o documento ativo atual | Sim | [Fazer upload por meio da interface da Web](/help/assets/manage-digital-assets.md#uploading-assets) |
+| Upload - arquivo único | Sim - carrega o documento ativo atual | Sim | [Fazer upload via interface da Web](/help/assets/manage-digital-assets.md#uploading-assets) |
 | Upload - vários arquivos / estruturas hierárquicas de pastas | Não | Sim | [Fazer upload via interface](/help/assets/manage-digital-assets.md#uploading-assets) da Web; Ferramenta ou script personalizado |
 | Misc - usuário e logon | O usuário Creative Cloud conectado ao aplicativo de desktop Creative Cloud é reconhecido (SSO) | Usuário AEM/logon | Os usuários de ambas as soluções contam com a cota de usuários AEM. |
 | Misc - rede e acesso | Requer acesso do desktop do usuário para AEM implantação pela rede | Requer acesso do desktop do usuário para AEM implantação pela rede | O Adobe Asset Link não compartilha o ambiente proxy de rede. |
@@ -94,7 +93,7 @@ Para suportar casos de uso de distribuição de ativos, outras soluções devem 
 * **Usuário criativo**: um profissional criativo, que cria ativos digitais usando aplicativos e serviços da Creative Cloud. Em alguns casos, um usuário criativo pode ser membro de uma equipe criativa que pode usar a Creative Cloud, mas não cria ativos digitais (como um diretor criativo ou gerente de equipe criativa).
 * **Usuário do DAM:** um usuário típico de um sistema DAM. Dependendo da organização, um usuário do DAM pode ser um usuário de marketing ou não, por exemplo, um usuário de Linha de Negócios (LOB), um bibliotecário, um vendedor e assim por diante.
 
-### Considerações ao usar AEM e Creative Cloud integration {#considerations-when-using-aem-and-creative-cloud-integration}
+### Considerações ao usar a integração AEM e Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
 <!--incomplete and TBD: 
 
@@ -114,7 +113,7 @@ Este é um breve resumo das práticas recomendadas para a integração do AEM &a
 * **Entenda o ciclo de vida do ativo:** saiba como os ativos são manipulados em sua organização por equipes diferentes
 * **Lidar com salvamentos frequentes em ativos com cuidado:** o Adobe Asset Link cuida disso para você com PS, AI, ID. Em outros aplicativos, não realize tarefas em andamento na pasta mapeada/compartilhada, a menos que precise de todas as alterações no DAM
 
-### Acesso aos ativos do Adobe Stock do AEM Assets {#access-to-adobe-stock-assets-from-aem-assets}
+### Acesso aos ativos do Adobe Stock da AEM Assets {#access-to-adobe-stock-assets-from-aem-assets}
 
 [A ](/help/assets/aem-assets-adobe-stock.md) integração do AEM e do Adobe Stock fornece AEM usuários a capacidade de pesquisar, visualizar, licenciar e salvar ativos do Adobe Stock no AEM. Os ativos licenciados e salvos do Adobe Stock selecionaram metadados de Estoque, que podem ser usados para pesquisá-los com filtros extras.
 
@@ -189,7 +188,7 @@ Use as seguintes estratégias para fornecer acesso a ativos finais/aprovados:
 * Use uma implementação personalizada de um portal de distribuição e fornecimento com base em [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Use o Controle de Acesso configurado em AEM e a infraestrutura de rede necessária (por exemplo, lista de permissões de VPN e IP) para conceder a terceiros acesso a uma área dedicada de conteúdo no DAM. Eles podem usar AEM interface do usuário da Web para obter ativos e carregar novo conteúdo no DAM.
 
-#### Trabalho em andamento em ativos de AEM {#work-in-progress-on-assets-from-aem}
+#### Trabalho em andamento em ativos do AEM {#work-in-progress-on-assets-from-aem}
 
 Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalho em andamento, sem ter todas as edições salvas no arquivo local também enviadas para o AEM como alterações. Isso acelera o trabalho de um usuário de desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpa e focada em atualizações importantes e controladas.
 
