@@ -3,9 +3,9 @@ title: Baixar ativos
 description: Baixe ativos a partir de [!DNL Adobe Experience Manager Assets] e ative ou desative a funcionalidade de download.
 contentOwner: AG
 feature: Gerenciamento de ativos
-role: Business Practitioner
+role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 4%
