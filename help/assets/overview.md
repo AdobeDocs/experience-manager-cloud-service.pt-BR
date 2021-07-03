@@ -2,18 +2,17 @@
 title: Introdução ao Assets as a [!DNL Cloud Service]
 description: Novidades no Assets as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management
+feature: Gerenciamento de ativos
 role: Business Practitioner,Leader,Architect
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
 
-
-# Introdução aos Ativos como [!DNL Cloud Service] {#assets-cloud-service-introduction}
+# Introdução aos ativos como [!DNL Cloud Service] {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -36,7 +35,7 @@ A seguir estão os principais benefícios do Assets as a [!DNL Cloud Service]. P
 * **Software** mais recente: Sempre atual e sempre atualizado. Todos os usuários têm somente o software mais recente com todos os patches, recursos, segurança e correções de erros disponíveis para eles. Desenvolvedores e integradores trabalham com o conjunto mais recente de APIs sem problemas de suporte a várias versões.
 * **Sempre online**: Tempo de inatividade zero (0dt), graças à instância implantada em um cluster com backups e redundância. As atualizações também são 0dt.
 * **Monitoramento** constante: O monitoramento do sistema é automatizado e os acionadores integrados ajudam a manter o desempenho, a disponibilidade e a robustez geral.
-* **Implantações** sem complicações: As AEM nas operações do Cloud são totalmente automatizadas e não exigem intervenção manual. Para implantações automatizadas, o componente do Cloud Manager (CM) automatiza a criação de imagens implantáveis do Docker que contêm seu código personalizado.
+* **Implantações** sem complicações: AEM nas operações do Cloud são completamente automatizadas, não exigindo intervenção manual. Para implantações automatizadas, o componente do Cloud Manager (CM) automatiza a criação de imagens implantáveis do Docker que contêm seu código personalizado.
 
 ## Novos recursos do Assets {#whats-new-assets}
 
