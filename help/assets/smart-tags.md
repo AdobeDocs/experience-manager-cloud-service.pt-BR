@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Tags inteligentes,Marcação
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+source-git-commit: 4654706865c6f6511ac2893370db3424b20797cc
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2346'
 ht-degree: 6%
 
 ---
@@ -63,7 +63,7 @@ Você pode adicionar tags aos seguintes tipos de ativos:
 
 ## Entender modelos e diretrizes de tags {#understand-tag-models-guidelines}
 
-Um modelo de tag é um grupo de tags relacionadas que estão associadas a vários aspectos visuais das imagens que estão sendo marcadas. As tags estão relacionadas a aspectos visuais distintos das imagens, de modo que, quando aplicadas, as tags ajudem a procurar tipos específicos de imagens. Por exemplo, uma coleção de sapatos pode ter tags diferentes, mas todas as tags estão relacionadas a sapatos e podem pertencer ao mesmo modelo de tag. Quando aplicadas, as tags ajudam a encontrar diferentes tipos de sapatos, por exemplo, por cor, por design ou por uso. Para entender a representação de conteúdo de um modelo de treinamento em [!DNL Experience Manager], visualize um modelo de treinamento como uma entidade de nível superior constituída por um grupo de tags adicionadas manualmente e imagens de exemplo para cada tag. Cada tag pode ser aplicada exclusivamente a uma imagem.
+Um modelo de tag é um grupo de tags relacionadas que estão associadas a vários aspectos visuais das imagens que estão sendo marcadas. As tags estão relacionadas a aspectos visuais distintos das imagens, de modo que, quando aplicadas, as tags ajudem a procurar tipos específicos de imagens. Por exemplo, uma coleção de sapatos pode ter tags diferentes, mas todas as tags estão relacionadas a sapatos e podem pertencer ao mesmo modelo de tag. Quando aplicadas, as tags ajudam a encontrar diferentes tipos de sapatos, por exemplo, por design ou por uso. Para entender a representação de conteúdo de um modelo de treinamento em [!DNL Experience Manager], visualize um modelo de treinamento como uma entidade de nível superior constituída por um grupo de tags adicionadas manualmente e imagens de exemplo para cada tag. Cada tag pode ser aplicada exclusivamente a uma imagem.
 
 Antes de criar um modelo de tag e treinar o serviço, identifique um conjunto de tags exclusivas que descrevam melhor os objetos nas imagens no contexto de sua empresa. Certifique-se de que os ativos em seu conjunto preparado estejam em conformidade com [as diretrizes de treinamento](#training-guidelines).
 
@@ -100,7 +100,6 @@ Certifique-se de que as imagens no conjunto de treinamento estejam em conformida
 * Crie um modelo de tag que inclua apenas,
 
    * As tags relacionadas a modelos de carros.
-   * As etiquetas relacionadas às cores das camisas.
    * As etiquetas relacionadas aos casacos para mulheres e homens.
 
 * Não criar,
