@@ -5,9 +5,9 @@ breadcrumb-title: Guia de implementação
 user-guide-description: Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento.
 feature: Ferramentas do desenvolvedor
 role: Developer, Architect
-source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
+source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '885'
 ht-degree: 34%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 34%
    + [Logs](developing/introduction/logging.md)
    + [Configurações e o navegador de configuração](developing/introduction/configurations.md)
    + [Fundamentos Técnicos AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [API do AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
+   + [Materiais de referência de API](/help/implementing/developing/reference-materials.md)
    + [Gerar tokens de acesso para APIs do lado do servidor](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Cabeça e Sem Cabeça no AEM](developing/headful-headless.md)
    + Desenvolvimento de pilha completa {#full-stack}
@@ -103,7 +103,6 @@ ht-degree: 34%
          + [Implementando um avaliador de predicado personalizado](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Páginas de erro personalizadas](/help/implementing/developing/introduction/custom-error-page.md)
       + [Tipos de nó AEM](/help/implementing/developing/introduction/node-types.md)
-      + [Diretrizes da API Java](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Gerenciamento de experiência headless {#headless}
       + [Sem cabeça e AEM](developing/headless/introduction.md)
       + [Jornada de desenvolvedores headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
