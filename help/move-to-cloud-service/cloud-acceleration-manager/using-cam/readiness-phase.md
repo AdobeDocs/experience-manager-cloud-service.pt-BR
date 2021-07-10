@@ -4,9 +4,9 @@ description: Esta página fornece uma visão geral sobre a fase Preparação no 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '515'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ Siga as etapas abaixo para navegar até a Fase de disponibilidade:
    >[!NOTE]
    >Consulte [Criação e gerenciamento de um projeto no Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) para saber mais.
 
-## Usando o cartão de análise de práticas recomendadas {#best-practices-analysis}
+## Uso do cartão de análise de práticas recomendadas {#best-practices-analysis}
 
 Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
 
@@ -64,7 +64,7 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
    >[!NOTE]
    >Fazer upload de um novo relatório redefine todas as avaliações.
 
-### Revisando o Relatório de Análise de Práticas Recomendadas {#analysis-report}
+### Relatório de análise de práticas recomendadas {#analysis-report}
 
 Explore os seguintes cartões disponíveis na página Relatório de análise de práticas recomendadas :
 
@@ -79,17 +79,17 @@ Explore os seguintes cartões disponíveis na página Relatório de análise de 
 
 #### Propriedades do relatório {#report-properties}
 
-Este cartão fornece informações sobre propriedades do relatório, como data do relatório, duração, filtros, data de upload e detalhes do Adobe Experience Manager (AEM).
+O cartão **Propriedades do relatório** fornece informações sobre propriedades do relatório, como data do relatório, duração, filtros, data de upload e detalhes do Adobe Experience Manager (AEM).
 
 ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Visão geral do relatório {#report-overview}
 
-Este cartão fornece os resultados do relatório
+Este cartão **Visão geral do relatório** fornece as conclusões do relatório, conforme mostrado na figura abaixo.
 
 ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-Clicar nesse relatório abre a guia **Report**, conforme mostrado na figura abaixo.
+Clicar nesse relatório abre a guia **Report**.
 
 ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -109,7 +109,7 @@ Este cartão fornece um
 Este cartão fornece
 
 
-## Usando o Cartão de Planejamento e Configuração {#planning-setup}
+## Uso do Cartão de Planejamento e Configuração {#planning-setup}
 
 Siga esta seção para explorar o cartão de atividade Planejamento e configuração.
 
