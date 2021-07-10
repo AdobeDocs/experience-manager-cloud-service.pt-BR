@@ -4,9 +4,9 @@ description: Esta página fornece uma visão geral sobre a fase Preparação no 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: b5b6a4a84c57805770ec1c72741c2d56d4711309
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '594'
 ht-degree: 4%
 
 ---
@@ -102,12 +102,23 @@ Você pode filtrar o relatório com base na importância, no subtipo ou na conta
 
 #### Avaliação de práticas recomendadas {#best-practices-assessment}
 
-Este cartão fornece um
+A opção Avaliação de práticas recomendadas fornece uma avaliação da instância de AEM atual e fornece orientação sobre as próximas etapas para adotar AEM práticas recomendadas. Você pode revisar as seguintes informações nesta guia:
+
+* Visão geral da instância de AEM
+* Componentes e modelos personalizados
+* Conclusões adicionais
+* Consultas lentas
+* Tarefas de manutenção
 
 #### Avaliação da complexidade da migração {#migration-complexity-assessment}
 
-Este cartão fornece
+A opção Avaliação da complexidade da migração fornece uma avaliação da complexidade para migrar a implementação de AEM existente para o AEM como Cloud Service. Você pode revisar as seguintes informações nesta guia:
 
+* Visão geral da instância de AEM
+* Avaliação
+* Considerações sobre a migração de conteúdo
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Uso do Cartão de Planejamento e Configuração {#planning-setup}
 
@@ -119,10 +130,8 @@ Siga esta seção para explorar o cartão de atividade Planejamento e configura�
 
 1. Um carrossel de conteúdo com informações relevantes para essa fase da jornada de migração é exibido.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## O que vem a seguir {#whats-next}
 
 Depois de aprender a fazer logon no Cloud Acceleration Manager e a criar um projeto, agora você está pronto para passar para a próxima etapa, usando a fase de implementação.
-
-
