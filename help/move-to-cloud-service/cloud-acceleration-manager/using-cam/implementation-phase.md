@@ -4,7 +4,7 @@ description: Esta página fornece uma visão geral da fase de implementação no
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: 8063afa2df9f5007f686afcc4162abde56c188ef
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Clique no cartão do projeto para abrir a página de aterrissagem do projeto e n
 >Consulte [Criação e gerenciamento de um projeto no Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) para saber mais.
 
 
-## Usando o Cartão de Desenvolvimento Local {#local-development}
+## Usando o cartão de desenvolvimento local {#local-development}
 
 O cartão de Desenvolvimento local fornece todo o conteúdo relevante que ajudará a configurar seu ambiente de desenvolvimento de AEM local à medida que você inicia a fase de Implementação da jornada de migração.
 
@@ -63,7 +63,7 @@ Siga esta seção para explorar o cartão de atividades Refatoração do código
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
-## Uso do AEM como uma placa de implantação do Cloud Service {#aem-as-a-cloud-service-deployment}
+## Uso do AEM como um cartão de implantação do Cloud Service {#aem-as-a-cloud-service-deployment}
 
 O AEM como cartão de Implantação do Cloud Service fornece todo o conteúdo relevante que ajudará você a implantar seu código no AEM como Cloud Service.
 
@@ -75,10 +75,10 @@ Siga esta seção para explorar o AEM como um cartão de atividade do Cartão de
 
 1. Um carrossel de conteúdo com informações relevantes para essa fase da jornada de migração é exibido.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
-## Uso da placa de transferência de conteúdo {#content-transfer}
+## Uso do cartão de transferência de conteúdo {#content-transfer}
 
 O cartão de atividade Transferência de conteúdo fornece orientação e considerações que devem ser revisadas ao usar a ferramenta Transferência de conteúdo para mover o conteúdo da instância de AEM atual para o AEM como Cloud Service.
 
@@ -90,7 +90,7 @@ Siga esta seção para explorar o cartão de atividade Transferência de conteú
 
 1. Um carrossel de conteúdo com informações relevantes para essa fase da jornada de migração é exibido.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >Revise os [pré-requisitos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) e as [práticas recomendadas e diretrizes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) antes de usar a ferramenta Transferência de conteúdo.
