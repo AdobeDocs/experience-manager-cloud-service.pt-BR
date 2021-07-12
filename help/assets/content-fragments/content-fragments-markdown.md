@@ -2,9 +2,9 @@
 title: Markdown
 description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de marcação para permitir que você crie conteúdo sem periféricos com facilidade.
 feature: Fragmentos de conteúdo
-role: Business Practitioner
+role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 4%
@@ -179,7 +179,7 @@ Os blocos de código geralmente são usados para ilustrar o código-fonte. Você
 
         `This is a code block.`
 
-## A barra invertida evita {#backslash-escapes}
+## Escovas da barra invertida {#backslash-escapes}
 
 Você pode usar escape de barra invertida para gerar caracteres literais que têm significado especial na formatação da sintaxe. Por exemplo, se você deseja rodar uma palavra com asteriscos literais (em vez de uma tag HTML &lt;em> ), é possível usar barras invertidas antes dos asteriscos, desta forma:
 
