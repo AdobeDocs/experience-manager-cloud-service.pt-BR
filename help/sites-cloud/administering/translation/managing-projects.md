@@ -1,16 +1,15 @@
 ---
 title: Gerenciamento de projetos de tradução
 description: Saiba como criar e gerenciar projetos de tradução automática e humana no AEM.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+feature: Cópia de idioma
+role: Admin
+exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '3828'
+source-wordcount: '3827'
 ht-degree: 1%
 
 ---
-
 
 # Gerenciamento de projetos de tradução {#managing-translation-projects}
 
@@ -59,7 +58,7 @@ Você também pode [criar projetos de tradução manualmente](#creating-a-transl
 >
 >Para criar um projeto, sua conta deve ser membro do grupo `project-administrators`.
 
-### Traduções iniciais e atualização das traduções {#initial-and-updating}
+### Traduções iniciais e atualização de traduções {#initial-and-updating}
 
 O painel Referências indica se você está atualizando cópias de idioma existentes ou criando a primeira versão das cópias de idioma. Quando existe uma cópia de idioma para a página selecionada, a guia Atualizar Cópias de idioma aparece para fornecer acesso aos comandos relacionados ao projeto.
 
@@ -165,7 +164,7 @@ Preencha sua cópia de idioma para que ela contenha conteúdo do idioma principa
 
 1. Clique ou toque em **Atualizar**.
 
-### Atualizando a Memória de Tradução {#updating-translation-memory}
+### Atualizando a memória de tradução {#updating-translation-memory}
 
 As edições manuais de conteúdo traduzido podem ser sincronizadas de volta ao Sistema de Gerenciamento de Tradução (TMS) para treinar sua Memória de Tradução.
 
@@ -176,7 +175,7 @@ As edições manuais de conteúdo traduzido podem ser sincronizadas de volta ao 
 
 AEM enviará as cadeias de caracteres selecionadas de volta para o Sistema de gerenciamento de tradução.
 
-### Verificando o status de tradução de uma página {#check-translation-status}
+### Verificar o status de tradução de uma página {#check-translation-status}
 
 Uma propriedade pode ser selecionada na exibição de lista do console de sites que mostra se uma página foi traduzida, está na tradução ou ainda não foi traduzida.
 
@@ -263,7 +262,7 @@ Você pode adicionar páginas, ativos ou tags ao trabalho de tradução do seu p
 
 É possível adicionar tags a um projeto de tradução semelhante a [como você adiciona ativos e páginas a um projeto.](#adding-pages-assets-to-a-translation-job) Basta selecionar  **** Tags no  **** menu Adicionar e seguir as mesmas etapas.
 
-### Visualizando detalhes do projeto de tradução {#seeing-translation-project-details}
+### Visualizar detalhes do projeto de tradução {#seeing-translation-project-details}
 
 As propriedades do projeto de tradução são acessíveis por meio do botão de reticências do bloco de resumo do projeto. Além das [informações genéricas do projeto](/help/sites-cloud/authoring/projects/overview.md#project-info), as propriedades do projeto de tradução contêm traduções específicas.
 
@@ -310,7 +309,7 @@ A tabela a seguir descreve cada status que uma ordem de produção ou um item na
 
 Para ver o status de cada arquivo no trabalho, clique ou toque nas reticências na parte inferior do bloco.
 
-### Definindo a Data de Vencimento dos Trabalhos de Tradução {#setting-the-due-date-of-translation-jobs}
+### Definir a data de vencimento dos trabalhos de tradução {#setting-the-due-date-of-translation-jobs}
 
 Especifique a data antes da qual seu fornecedor de tradução precisa retornar os arquivos traduzidos. A configuração da data de vencimento funciona corretamente somente quando o fornecedor de tradução que você está usando suporta esse recurso.
 
@@ -342,7 +341,7 @@ O escopo funciona corretamente somente quando o fornecedor de tradução que voc
 1. No título do trabalho de tradução, toque ou clique no menu de comandos e, em seguida, toque ou clique em **Escopo da solicitação**.
 1. Quando o status da tarefa for alterado para **Escopo concluído**, clique ou toque no menu de comandos e, em seguida, clique ou toque em **Mostrar escopo**.
 
-### Iniciando Trabalhos de Tradução {#starting-translation-jobs}
+### Iniciando trabalhos de tradução {#starting-translation-jobs}
 
 Inicie um trabalho de tradução para traduzir as páginas de origem para o idioma de destino. A tradução é executada de acordo com os valores de propriedade do bloco resumo de tradução.
 
@@ -416,7 +415,7 @@ Quando o conteúdo é traduzido para uma cópia de idioma existente, revise as t
 1. Após ter revisado o conteúdo e feito as alterações necessárias, para promover a cópia de lançamento, clique em **Promover**.
 1. Na página **Promover lançamento** , especifique quais páginas promover e clique ou toque em **Promover**.
 
-### Comparando Cópias de Idioma {#comparing-language-copies}
+### Comparação de cópias de idioma {#comparing-language-copies}
 
 Para comparar cópias de idioma ao idioma principal:
 
@@ -442,7 +441,7 @@ Você pode baixar o conteúdo de um trabalho de tradução, por exemplo, para en
 1. Na caixa de diálogo, clique ou toque em **Baixar arquivo exportado** e, se necessário, use a caixa de diálogo do navegador da Web para salvar o arquivo.
 1. Na caixa de diálogo, clique ou toque em **Fechar**.
 
-### Importando um trabalho de tradução {#importing-a-translation-job}
+### Importar um trabalho de tradução {#importing-a-translation-job}
 
 Você pode importar conteúdo traduzido para o AEM, por exemplo, quando seu provedor de tradução o envia para você porque não está integrado ao AEM por meio de um conector.
 
