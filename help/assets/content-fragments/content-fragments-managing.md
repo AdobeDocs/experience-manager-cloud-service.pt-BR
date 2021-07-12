@@ -1,13 +1,12 @@
 ---
 title: Gerenciamento dos fragmentos de conteúdo
 description: Saiba como usar o console Assets para gerenciar os Fragmentos de conteúdo AEM, a base do seu conteúdo sem periféricos.
-feature: Content Fragments
-role: Business Practitioner
+feature: Fragmentos de conteúdo
+role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-translation-type: tm+mt
-source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1746'
 ht-degree: 9%
 
 ---
@@ -177,7 +176,7 @@ Navegue pelos vários modos usando os ícones no painel lateral:
 
 ![modos](assets/cfm-managing-04.png)
 
-### Ações da barra de ferramentas no Editor de fragmento de conteúdo {#toolbar-actions-in-the-content-fragment-editor}
+### Ações da barra de ferramentas no Editor de fragmentos de conteúdo {#toolbar-actions-in-the-content-fragment-editor}
 
 Alguns recursos na barra de ferramentas superior estão disponíveis em vários modos:
 
@@ -202,7 +201,7 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
 * **** Salvar fornece acesso à opção  **Salvar e** fechar.
 
 * Os três pontos (**...**) fornece acesso a ações adicionais:
-   * **Atualizar referências da página**
+   * **Atualizar referências de página**
       * Isso atualiza todas as referências de página.
    * **[Publicação rápida](#publishing-and-referencing-a-fragment)**
    * **[Gerenciar publicação](#publishing-and-referencing-a-fragment)**
@@ -260,11 +259,11 @@ Ao editar o fragmento de conteúdo, o AEM cria automaticamente versões para gar
 3. Se o usuário cancelar a edição, a versão criada no início da sessão de edição será restaurada e o token será removido para encerrar a sessão de edição.
 4. Se o usuário selecionar para **Salvar** as edições, os elementos/variações atualizados serão mantidos e o token será removido para encerrar a sessão de edição.
 
-## Editar o conteúdo do fragmento {#editing-the-content-of-your-fragment}
+## Edição do conteúdo do fragmento {#editing-the-content-of-your-fragment}
 
 Após abrir o fragmento, você pode usar a guia [Variations](/help/assets/content-fragments/content-fragments-variations.md) para criar o conteúdo.
 
-## Criação e gerenciamento de variações no fragmento {#creating-and-managing-variations-within-your-fragment}
+## Criação e gerenciamento de variações dentro do fragmento {#creating-and-managing-variations-within-your-fragment}
 
 Depois de criar o conteúdo Principal, você pode criar e gerenciar [Variations](/help/assets/content-fragments/content-fragments-variations.md) desse conteúdo.
 
@@ -276,7 +275,7 @@ Você também pode [associar o conteúdo](/help/assets/content-fragments/content
 
 É possível exibir e editar as propriedades de um fragmento usando a guia [Metadados](/help/assets/content-fragments/content-fragments-metadata.md).
 
-## Linha do tempo para Fragmentos de conteúdo {#timeline-for-content-fragments}
+## Linha do tempo dos fragmentos de conteúdo {#timeline-for-content-fragments}
 
 Além das opções padrão, [Linha do tempo](/help/assets/manage-digital-assets.md#timeline) fornece informações e ações específicas para fragmentos de conteúdo:
 
@@ -311,7 +310,7 @@ Por exemplo:
 
 ![linha do tempo](assets/cfm-managing-05.png)
 
-## Comparação das versões do fragmento {#comparing-fragment-versions}
+## Comparação de versões do fragmento {#comparing-fragment-versions}
 
 A ação **Comparar a Atual** está disponível na [Linha do tempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) depois de selecionar uma versão específica.
 
@@ -338,7 +337,7 @@ Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
 
 ![comparação](assets/cfm-managing-06.png)
 
-## Reverter para uma versão {#reverting-to-a-version}
+## Reverter para uma versão  {#reverting-to-a-version}
 
 Você pode reverter para uma versão específica do fragmento:
 
