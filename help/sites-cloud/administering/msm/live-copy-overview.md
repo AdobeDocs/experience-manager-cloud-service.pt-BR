@@ -1,16 +1,15 @@
 ---
 title: Console de Visão Geral da Live Copy
 description: Saiba mais sobre as noções básicas do Console de visão geral da Live Copy para entender rapidamente o status das suas Live Copies a fim de sincronizar o conteúdo.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Gerenciamento de vários sites
+role: Admin
+exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 1%
 
 ---
-
 
 # Console de Visão Geral da Live Copy {#live-copy-overview-console}
 
@@ -29,7 +28,7 @@ Você pode abrir a Visão geral da Live Copy em:
 * [Painel lateral Referências de uma página do blueprint (console Sites)](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [Propriedades de uma página do blueprint](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
-### Referências a uma Página do Blueprint {#references-to-a-blueprint-page}
+### Referências a uma página do Blueprint {#references-to-a-blueprint-page}
 
 O **Visão geral da Live Copy** pode ser aberto no painel lateral Referências **do console** Sites **:**
 
@@ -45,7 +44,7 @@ O **Visão geral da Live Copy** pode ser aberto no painel lateral Referências *
 1. Selecione **Visão geral da Live Copy** para mostrar e usar a visão geral de todas as Live Copies relacionadas ao blueprint selecionado.
 1. Use **Close** para sair e retornar ao console **Sites**.
 
-### Propriedades de uma Página do Blueprint {#properties-of-a-blueprint-page}
+### Propriedades de uma página do Blueprint {#properties-of-a-blueprint-page}
 
 O **Visão geral da Live Copy** pode ser aberto ao visualizar propriedades de uma página do blueprint:
 
@@ -75,7 +74,7 @@ O **Visão geral da Live Copy** também pode ser usado para executar ações na 
 1. Abra o **Visão geral da Live Copy**.
 1. Selecione o blueprint necessário ou a página Live Copy e a barra de ferramentas será atualizada para mostrar as ações disponíveis. As [ações](overview.md#terms-used) disponíveis dependem da seleção de uma página [blueprint](#actions-for-a-blueprint-page) ou [Live Copy](#actions-for-a-live-copy-page).
 
-### Ações para uma Página do Blueprint {#actions-for-a-blueprint-page}
+### Ações para uma página do Blueprint {#actions-for-a-blueprint-page}
 
 Quando você seleciona uma página do blueprint, as seguintes ações estão disponíveis:
 
