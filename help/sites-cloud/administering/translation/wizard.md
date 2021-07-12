@@ -1,16 +1,15 @@
 ---
 title: Assistente de Cópia de Idioma
 description: Saiba mais sobre como usar o Assistente de cópia de idioma no AEM.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Cópia de idioma
+role: Admin
+exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '250'
 ht-degree: 2%
 
 ---
-
 
 # Assistente de Cópia de Idioma {#language-copy-wizard}
 
