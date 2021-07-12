@@ -2,9 +2,9 @@
 title: Vídeo
 description: Saiba como trabalhar com vídeo no Dynamic Media.
 feature: Perfis de vídeo
-role: Business Practitioner
+role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '9471'
 ht-degree: 6%
@@ -561,7 +561,7 @@ A publicação de vídeos no YouTube requer um ou mais canais. Se você já crio
 
    Agora, você adiciona tags para publicação.
 
-### Adicionar tags para publicação {#adding-tags-for-publishing}
+### Adição de tags para publicação {#adding-tags-for-publishing}
 
 Para publicar seus vídeos no YouTube, o Experience Manager associa as tags a um ou mais canais do YouTube. Para adicionar tags para publicação, consulte [Administração de tags](/help/sites-cloud/authoring/features/tags.md).
 
@@ -635,7 +635,7 @@ Deixe a página Criar configuração do YouTube aberta; você está voltando a e
 
    Agora você publica vídeos no seu canal do YouTube.
 
-#### Configuração do YouTube no Experience Manager antes de 6.4 {#setting-up-youtube-in-aem-before}
+#### Configuração do YouTube no Experience Manager antes da 6.4 {#setting-up-youtube-in-aem-before}
 
 1. Certifique-se de fazer logon na sua instância do Dynamic Media como um administrador.
 
@@ -681,7 +681,7 @@ Deixe a caixa de diálogo Configuração da conta do YouTube aberta; você está
 
    Agora você publica vídeos no seu canal do YouTube.
 
-### (Opcional) Automatizando a configuração das propriedades padrão do YouTube para seus vídeos carregados {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### (Opcional) Automatização da configuração das propriedades padrão do YouTube para os vídeos enviados por upload {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 Opcionalmente, é possível automatizar a configuração das propriedades do YouTube ao fazer upload dos vídeos. Crie um perfil de processamento de metadados no Experience Manager.
 
@@ -787,7 +787,7 @@ Os tempos de publicação podem variar bastante, dependendo de vários fatores q
 
 Após oito horas, se você ainda vir uma mensagem de status que diz **[!UICONTROL Upload (processing, por favor aguarde)]**, tente remover o vídeo do site e carregá-lo novamente.
 
-### Vincular URLs do YouTube à sua aplicação web {#linking-youtube-urls-to-your-web-application}
+### Vincular URLs do YouTube ao seu aplicativo web {#linking-youtube-urls-to-your-web-application}
 
 Você pode obter uma string de URL do YouTube gerada pelo Dynamic Media após publicar o vídeo. Ao copiar o URL do YouTube, ele chega à Área de transferência para que você possa colá-lo conforme necessário nas páginas do seu site ou aplicativo.
 
@@ -828,7 +828,7 @@ Para cancelar a publicação de vídeos para removê-los do YouTube:
 
 Ao fazer o upload de um novo vídeo para uma pasta que tenha codificação de vídeo aplicada ou, você publicar seu vídeo no YouTube, monitore o progresso (ou falha) da codificação/publicação do YouTube. O progresso real da publicação do YouTube só está disponível por meio dos logs. Mas se ele falhar ou for bem-sucedido, ele será listado de outras maneiras descritas no procedimento a seguir. Além disso, você recebe notificações por email quando um fluxo de trabalho de publicação ou codificação de vídeo do YouTube é concluído ou interrompido.
 
-### Monitorar o progresso {#monitoring-progress}
+### Monitorar progresso {#monitoring-progress}
 
 **Para monitorar o progresso, incluindo codificação com falha/publicação do YouTube:**
 
@@ -1048,7 +1048,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## Adicionar legendas ao vídeo {#adding-captions-to-video}
+## Adição de legendas ao vídeo {#adding-captions-to-video}
 
 Você pode estender o alcance de seus vídeos para os mercados globais adicionando legendas a vídeos individuais ou aos Conjuntos de vídeos adaptáveis. Ao adicionar legendas, você evita a necessidade de dublar o áudio ou a necessidade de usar alto-falantes nativos para regravar o áudio para cada idioma diferente. O vídeo é reproduzido no idioma em que foi gravado. As legendas em idioma estrangeiro são exibidas para que pessoas de idiomas diferentes ainda possam entender a parte de áudio.
 
