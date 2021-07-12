@@ -1,16 +1,15 @@
 ---
 title: Conexão com o Microsoft Translator
 description: Saiba como se conectar AEM ao Microsoft Translator pronto para uso para automatizar seu fluxo de trabalho de tradução.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Cópia de idioma
+role: Admin
+exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 3%
+source-wordcount: '478'
+ht-degree: 2%
 
 ---
-
 
 # Conexão com o Microsoft Translator {#connecting-to-microsoft-translator}
 
@@ -49,7 +48,7 @@ O procedimento a seguir cria uma configuração do Microsoft Translator.
 1. Toque ou clique em **Connect** para verificar a conexão.
 1. Toque ou clique em **Salvar e fechar**.
 
-## Atualização Da Configuração Da Licença De Avaliação Do Microsoft Translator {#upgrading-the-microsoft-translator-trial-license-configuration}
+## Atualizando A Configuração Da Licença De Avaliação Do Microsoft Translator {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 As páginas de configuração do Microsoft Translation fornecem um link conveniente para o site da Microsoft para obter uma assinatura de conta adequada para sistemas de produção.
 
@@ -67,7 +66,7 @@ As páginas de configuração do Microsoft Translation fornecem um link convenie
 1. Toque ou clique em **Editar**.
 1. Na janela **Editar configuração**, toque ou clique em **Personalizar tradutor**. Use a página da Web da Microsoft que é aberta para personalizar seu serviço.
 
-## Ativando as configurações do serviço de tradução {#activating-the-translator-service-configurations}
+## Ativar as configurações do serviço de tradução {#activating-the-translator-service-configurations}
 
 É necessário ativar as configurações do serviço de nuvem para suportar o conteúdo traduzido que é replicado para a instância de publicação. Use o método de [publicar uma árvore](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree) para ativar os nós do repositório que armazenam as configurações do Microsoft Translator. Os nós estão localizados abaixo dos seguintes nós pai:
 
