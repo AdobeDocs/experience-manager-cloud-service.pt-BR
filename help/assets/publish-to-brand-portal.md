@@ -3,16 +3,16 @@ title: Publicar ativos, pastas e coleções no Brand Portal
 description: Publicar ativos, pastas e coleções no Brand Portal.
 contentOwner: Vishabh Gupta
 feature: Brand Portal,Distribuição de ativos,Configuração
-role: Business Practitioner
+role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 97%
 
 ---
 
-# Publicar ativos no Brand Portal{#publish-assets-to-brand-portal}
+# Publicar ativos no Brand Portal {#publish-assets-to-brand-portal}
 
 Como administrador do Adobe Experience Manager (AEM) Assets, você pode publicar ativos, pastas e coleções na instância do AEM Assets Brand Portal. Além disso, você pode agendar o fluxo de trabalho de publicação de um ativo ou pasta para uma data ou hora posterior. Depois de publicados, os usuários do Brand Portal podem acessar e distribuir os ativos, as pastas e as coleções para outros usuários.
 
@@ -28,7 +28,7 @@ Se fizer modificações subsequentes no ativo, pasta ou coleção original no AE
 >
 >A Adobe recomenda uma publicação escalonada, de preferência durante horários que não sejam de pico, para que o autor do AEM não ocupe recursos excessivos.
 
-## Publicar ativos no Brand Portal{#publish-assets-to-bp}
+## Publicar ativos no Brand Portal {#publish-assets-to-bp}
 
 Veja a seguir as etapas para publicar ativos do AEM Assets no Brand Portal:
 
@@ -83,11 +83,11 @@ Faça logon na interface do Brand Portal para ver os ativos publicados (dependen
 ![bp_landing_page](assets/bp_landing_page.png)
 
 
-## Publicar pastas no Brand Portal{#publish-folders-to-brand-portal}
+## Publicar pastas no Brand Portal {#publish-folders-to-brand-portal}
 
 Você pode publicar ou cancelar a publicação de pastas de ativos imediatamente ou agendar para uma data ou hora posterior.
 
-### Publicar pastas no Brand Portal{#publish-folders-to-bp}
+### Publicar pastas no Brand Portal {#publish-folders-to-bp}
 
 1. No console Assets, selecione as pastas que deseja publicar e clique na opção **[!UICONTROL Publicação rápida]** na barra de ferramentas.
 
@@ -178,7 +178,7 @@ Para cancelar a publicação de pastas de ativos do Brand Portal:
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## Publicar coleções no Brand Portal{#publish-collections-to-brand-portal}
+## Publicar coleções no Brand Portal {#publish-collections-to-brand-portal}
 
 Você pode publicar ou cancelar a publicação de coleções da instância da nuvem do AEM Assets.
 
