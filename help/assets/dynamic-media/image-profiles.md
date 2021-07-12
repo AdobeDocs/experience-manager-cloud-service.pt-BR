@@ -2,9 +2,9 @@
 title: Perfis de imagem do Dynamic Media
 description: Saiba como criar Perfis de imagem do Dynamic Media que contêm configurações para a máscara de nitidez e recorte inteligente ou amostra inteligente, ou ambos. Em seguida, aplique o perfil a uma pasta de ativos de imagem.
 feature: Gerenciamento de ativos, Perfis de imagem, Representações
-role: Business Practitioner
+role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2714'
 ht-degree: 9%
@@ -127,7 +127,7 @@ Consulte também [Práticas recomendadas para organizar ativos digitais para usa
 
 1. Se estiver editando, salve as alterações. Se estiver excluindo, confirme se deseja remover o perfil.
 
-## Aplicar um perfil de imagem do Dynamic Media a pastas {#applying-an-image-profile-to-folders}
+## Aplicação de um perfil de imagem do Dynamic Media a pastas {#applying-an-image-profile-to-folders}
 
 Ao atribuir um Perfil de imagem a uma pasta, qualquer subpasta herda automaticamente o perfil da pasta pai. Dessa forma, você pode atribuir somente um Perfil de imagem a uma pasta. Dessa forma, considere cuidadosamente a estrutura de pastas de onde você faz upload, armazena, usa e arquiva ativos.
 
@@ -149,7 +149,7 @@ As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do n
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você alterou posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-#### Aplicar perfis de imagem do Dynamic Media a pastas da interface do usuário de Perfis {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Aplicação de perfis de imagem do Dynamic Media a pastas da interface do usuário de Perfis {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de imagem]**.
 1. Selecione o Perfil de imagem que deseja aplicar a uma ou várias pastas.
@@ -186,7 +186,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
-## Editar o recorte inteligente ou a amostra inteligente de uma única imagem {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
+## Edição do recorte inteligente ou da amostra inteligente de uma única imagem {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 Você pode realinhar ou redimensionar manualmente a janela de recorte inteligente de uma imagem para refinar ainda mais seu ponto focal.
 
@@ -213,7 +213,7 @@ Consulte também [Edição do recorte inteligente ou da amostra inteligente de v
 
 1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Salvar]** e toque em **[!UICONTROL Fechar]** para retornar à pasta de ativos.
 
-## Editar o recorte inteligente ou a amostra inteligente de várias imagens {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+## Edição de recorte inteligente ou amostra inteligente de várias imagens {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 Depois de aplicar um Perfil de imagem - contendo Recorte inteligente - a uma pasta, todas as imagens nessa pasta têm um recorte aplicado a elas. Se desejar, você pode *manualmente* realinhar ou redimensionar a janela de recorte inteligente em várias imagens para refinar ainda mais seu ponto focal.
 
@@ -270,7 +270,7 @@ Ao remover um Perfil de imagem de uma pasta, qualquer subpasta herda automaticam
 
 Remova um Perfil de imagem de uma pasta do menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, em **[!UICONTROL Propriedades]**.
 
-### Removendo perfis de imagem do Dynamic Media de pastas por meio da interface do usuário de Perfis {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Remoção de perfis de imagem do Dynamic Media de pastas por meio da interface do usuário de Perfis {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de imagem]**.
 1. Selecione o Perfil de imagem que deseja remover de uma pasta ou de várias pastas.
@@ -278,7 +278,7 @@ Remova um Perfil de imagem de uma pasta do menu **[!UICONTROL Ferramentas]** ou,
 
    Você pode confirmar que o Perfil de imagem não é mais aplicado a uma pasta porque o nome não aparece mais abaixo do nome da pasta.
 
-### Remoção de perfis de imagem do Dynamic Media de pastas por meio de Propriedades {#removing-image-profiles-from-folders-via-properties}
+### Remoção de perfis de imagem do Dynamic Media de pastas por meio de propriedades {#removing-image-profiles-from-folders-via-properties}
 
 1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta da qual deseja remover um Perfil de imagem.
 1. Na pasta , toque na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Propriedades]**.
