@@ -2,9 +2,9 @@
 title: Imagens interativas
 description: Saiba como trabalhar com Imagens interativas no Dynamic Media.
 feature: Imagens interativas
-role: Business Practitioner
+role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4245'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Veja a seguir um banner que pode ser comprado com uma janela pop-up Exibição r
 
 Consulte [imagens interativas em action](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) na página da Web mostrada acima.
 
-## Observe como os banners de imagem interativos são criados {#watch-how-interactive-image-banners-are-created}
+## Veja como os banners de imagem interativos são criados {#watch-how-interactive-image-banners-are-created}
 
 Assista a uma apresentação em [como os banners de imagem interativos são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minutos e 33 segundos). Você também aprenderá a visualizar, editar e fornecer banners de imagem interativos.
 
@@ -323,7 +323,7 @@ Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/dynamic-medi
 
 Consulte [Publicação de ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de imagem interativos.
 
-## Integração de uma imagem interativa com seu site {#integrating-an-interactive-image-with-your-website}
+## Integração de uma imagem interativa ao seu site {#integrating-an-interactive-image-with-your-website}
 
 Depois de fazer upload de uma imagem de banner, adicionar pontos de acesso a ela e publicar a imagem interativa, você estará pronto para adicioná-la à página do site.
 
@@ -358,7 +358,7 @@ Consulte [comando de veiculação de imagens ](https://experienceleague.adobe.co
 
 Agora você está pronto para integrar a imagem interativa com uma visualização rápida existente no seu site.
 
-## Integração de uma imagem interativa com uma visualização rápida {#integrating-an-interactive-image-with-an-existing-quickview} existente
+## Integração de uma imagem interativa com uma visualização rápida existente {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 Essa tarefa só se aplica se você for um cliente independente do Experience Manager Assets.
