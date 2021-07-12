@@ -1,16 +1,15 @@
 ---
 title: Conflitos de implementação
 description: Saiba como gerenciar e resolver conflitos de implementação do Multi Site Manager.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Gerenciamento de vários sites
+role: Admin
+exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 3%
+source-wordcount: '926'
+ht-degree: 2%
 
 ---
-
 
 # Conflitos de implementação {#msm-rollout-conflicts}
 
@@ -53,7 +52,7 @@ Nas seções a seguir, usamos o exemplo de uma nova página `b`, criada no bluep
 | Valor | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Comentário |  | Criado manualmente na ramificação Live Copy | contém o conteúdo da página `child-level-1` que foi criada manualmente na ramificação Live Copy |
 
-## Gerenciador de implantação e tratamento de conflito {#rollout-manager-and-conflict-handling}
+## Gerenciador de implementação e tratamento de conflito {#rollout-manager-and-conflict-handling}
 
 O gerenciador de implementação permite ativar ou desativar o gerenciamento de conflitos.
 
