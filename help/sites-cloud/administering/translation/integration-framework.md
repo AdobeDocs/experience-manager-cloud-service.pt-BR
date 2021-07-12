@@ -1,18 +1,17 @@
 ---
 title: Configuração da estrutura de integração de tradução
 description: Saiba como configurar a Estrutura de integração de tradução para integrar com serviços de tradução de terceiros.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+feature: Cópia de idioma
+role: Admin
+exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1383'
 ht-degree: 2%
 
 ---
 
-
-# Configurar a estrutura de integração de tradução {#configuring-the-translation-integration-framework}
+# Configuração da estrutura de integração de tradução {#configuring-the-translation-integration-framework}
 
 A Estrutura de integração de tradução integra-se aos serviços de tradução de terceiros para orquestrar a tradução de conteúdo AEM. Envolve três etapas básicas.
 
@@ -22,7 +21,7 @@ A Estrutura de integração de tradução integra-se aos serviços de tradução
 
 Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, consulte [Tradução de conteúdo para sites multilíngues](overview.md).
 
-## Conectar-se a um Provedor de Serviços de Tradução {#connecting-to-a-translation-service-provider}
+## Conexão com um provedor de serviços de tradução {#connecting-to-a-translation-service-provider}
 
 Crie uma configuração de nuvem que se conecta AEM seu provedor de serviços de tradução. AEM inclui a capacidade de [conectar ao Microsoft Translator](connect-ms-translator.md) por padrão.
 
@@ -46,7 +45,7 @@ Você pode criar várias configurações de nuvem para o mesmo conector, se nece
 
 Após configurar uma conexão, você pode criar a configuração da estrutura de integração de tradução que a usa.
 
-## Criação de uma configuração de integração de tradução {#creating-a-translation-integration-configuration}
+## Criar uma configuração de integração de tradução {#creating-a-translation-integration-configuration}
 
 Crie uma configuração de estrutura de integração de tradução para especificar como traduzir o conteúdo. A configuração inclui as seguintes informações:
 
@@ -105,7 +104,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
 | Traduzir tags | Ative essa propriedade para traduzir tags associadas ao ativo. |
 | Executar tradução automaticamente | Selecione essa propriedade para executar trabalhos de tradução automaticamente após a criação de projetos de tradução. Você não tem uma oportunidade de revisar ou escoar o trabalho de tradução ao selecionar essa opção. |
 
-## Configurar páginas para tradução {#configuring-pages-for-translation}
+## Configuração de páginas para tradução {#configuring-pages-for-translation}
 
 Para configurar a tradução das páginas de origem em outros idiomas, associe as páginas às seguintes configurações de nuvem:
 
