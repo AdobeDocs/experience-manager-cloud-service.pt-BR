@@ -2,10 +2,9 @@
 title: Modelos de fragmentos do conteúdo
 description: Saiba como os Modelos de fragmentos de conteúdo servem como base para seu conteúdo headless no AEM e como criar Fragmentos de conteúdo com conteúdo estruturado.
 feature: Fragmentos de conteúdo
-role: Business Practitioner
+role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 7%
@@ -39,7 +38,7 @@ Para usar os Modelos de fragmento do conteúdo, você pode:
 
 1. Use **Create** para salvar o modelo vazio. Uma mensagem indicará o sucesso da ação, você poderá selecionar **Abrir** para editar imediatamente o modelo ou **Concluído** para retornar ao console.
 
-## Definição do modelo do fragmento de conteúdo {#defining-your-content-fragment-model}
+## Definição do modelo de fragmento de conteúdo {#defining-your-content-fragment-model}
 
 O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmentos de conteúdo resultantes usando uma seleção de **[Tipos de dados](#data-types)**. Usando o editor de modelo, você pode adicionar instâncias dos tipos de dados e configurá-las para criar os campos necessários:
 
@@ -192,7 +191,7 @@ Vários tipos de dados agora incluem a possibilidade de definir requisitos de va
 * **Referência do fragmento**
    * Teste um modelo de fragmento de conteúdo específico.
 
-## Usando referências para formar Conteúdo aninhado {#using-references-to-form-nested-content}
+## Usar referências para formar conteúdo aninhado {#using-references-to-form-nested-content}
 
 Os Fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguintes tipos de dados:
 
@@ -232,7 +231,7 @@ Além das propriedades padrão, você pode especificar:
 
 ![Referência de conteúdo](assets/cfm-content-reference.png)
 
-### Referência de fragmento (fragmentos aninhados) {#fragment-reference-nested-fragments}
+### Referência de fragmento (Fragmentos aninhados) {#fragment-reference-nested-fragments}
 
 A Referência do fragmento faz referência a um ou mais fragmentos de conteúdo. Esse recurso de especial interesse ao recuperar conteúdo para uso no aplicativo, pois permite recuperar dados estruturados com várias camadas.
 
@@ -325,7 +324,7 @@ Para desativar um Modelo que esteja sinalizado como **Ativado**, use a opção *
 
 ![Desativar um modelo habilitado](assets/cfm-status-disable.png)
 
-## Permitir modelos de fragmentos de conteúdo na pasta de ativos {#allowing-content-fragment-models-assets-folder}
+## Permitir modelos de fragmentos de conteúdo na pasta Ativos {#allowing-content-fragment-models-assets-folder}
 
 Para implementar a governança de conteúdo, você pode configurar **Policies** na pasta Assets para controlar quais Modelos de fragmento de conteúdo são permitidos para a criação de Fragmento nessa pasta.
 
@@ -359,7 +358,7 @@ Os Modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos d
 * Se a cadeia de herança não fornecer um resultado, verifique a configuração **Cloud Services** dessa pasta (também primeiro diretamente e, em seguida, por herança).
 * Se nenhuma das opções acima fornecer resultados, então não há modelos permitidos para essa pasta.
 
-## Excluindo um modelo de fragmento de conteúdo {#deleting-a-content-fragment-model}
+## Exclusão de um modelo de fragmento de conteúdo {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 A exclusão de um modelo de fragmento de conteúdo pode afetar fragmentos dependentes.
@@ -374,7 +373,7 @@ Para excluir um modelo de fragmento de conteúdo:
    >[!NOTE]
    Se o modelo for referenciado, um aviso será dado. Agir adequadamente.
 
-## Publicar um modelo de fragmento de conteúdo {#publishing-a-content-fragment-model}
+## Publicação de um modelo de fragmento de conteúdo {#publishing-a-content-fragment-model}
 
 Os modelos de fragmento de conteúdo precisam ser publicados quando/antes de qualquer fragmento de conteúdo dependente ser publicado.
 
@@ -389,7 +388,7 @@ O status publicado será indicado no console.
    >[!NOTE]
    Se você publicar um fragmento de conteúdo para o qual o modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
 
-## Cancelamento de publicação de um modelo de fragmento de conteúdo {#unpublishing-a-content-fragment-model}
+## Desfazer a publicação de um modelo de fragmento de conteúdo {#unpublishing-a-content-fragment-model}
 
 Os modelos de fragmento de conteúdo podem ter a publicação cancelada se não estiverem referenciados por nenhum fragmento.
 
