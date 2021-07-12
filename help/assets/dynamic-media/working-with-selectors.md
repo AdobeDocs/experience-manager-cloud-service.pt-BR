@@ -1,9 +1,9 @@
 ---
 title: Trabalho com seletores
 description: Saiba mais sobre os métodos que você pode usar para selecionar ativos para imagens interativas, vídeos interativos e banners de carrossel no Dynamic Media.
-role: Business Practitioner
+role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 18%
@@ -24,7 +24,7 @@ Por exemplo, neste Banner de carrossel, você usa o seletor de Produto se estive
 
 Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou mapas de imagem são direcionados, você está usando o seletor. O seletor de site só funcionará se você for um cliente [!DNL Adobe Experience Manager Sites]. O seletor de produto também requer [!DNL Experience Manager Commerce].
 
-## Selecionar produtos no Dynamic Media {#selecting-products}
+## Seleção de produtos no Dynamic Media {#selecting-products}
 
 Use o seletor de produto para escolher um produto quando quiser um ponto de acesso ou mapa de imagem para fornecer uma exibição rápida para um produto específico em seu catálogo de produtos.
 
@@ -62,7 +62,7 @@ Use o seletor de produto para escolher um produto quando quiser um ponto de aces
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Selecionar sites no Dynamic Media {#selecting-sites}
+## Seleção de sites no Dynamic Media {#selecting-sites}
 
 Use o seletor de site para escolher uma página da Web quando quiser que um ponto de acesso ou mapa de imagem vincule a uma página da Web gerenciada em [!DNL Experience Manager] sites.
 
@@ -82,7 +82,7 @@ Use o seletor de site para escolher uma página da Web quando quiser que um pont
 
 1. Quando estiver no modo **[!UICONTROL Visualizar]** se tocar no ponto de acesso ou mapa de imagem, você navegará até a página do site [!DNL Experience Manager] especificada.
 
-## Selecionar ativos no Dynamic Media {#selecting-assets}
+## Seleção de ativos no Dynamic Media {#selecting-assets}
 
 Use este seletor para escolher imagens para usar em um Banner de carrossel, um Vídeo interativo, conjuntos de imagens, conjuntos de mídia mista e conjuntos de rotação. Em Vídeo interativo, o seletor de ativos fica disponível ao tocar em **[!UICONTROL Selecionar ativos]** na guia **[!UICONTROL Conteúdo]**. Em Conjuntos de carrossel, o seletor de ativos fica disponível ao criar um slide. Em Conjuntos de imagens, Conjuntos de mídias mistas e Conjuntos de rotação, o seletor de ativo estará disponível ao criar um Conjunto de imagens, Conjunto de mídias mistas ou Conjunto de rotação, respectivamente.
 
