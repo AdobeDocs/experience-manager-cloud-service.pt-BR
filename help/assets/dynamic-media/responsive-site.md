@@ -2,9 +2,9 @@
 title: Fornecer imagens otimizadas para um site responsivo
 description: Saiba como usar o recurso de código responsivo para fornecer imagens otimizadas do Dynamic Media.
 feature: Gerenciamento de ativos
-role: Business Practitioner
+role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 12%
@@ -44,7 +44,7 @@ Consulte também [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebap
 1. Na caixa de diálogo **[!UICONTROL Incorporar imagem responsiva]**, selecione e copie o texto do código responsivo e o cole no site para acessar o ativo responsivo.
 1. Edite os pontos de interrupção padrão no código incorporado para corresponder ao que é encontrado no site responsivo, diretamente no código. Além disso, teste as diferentes resoluções de imagem que estão sendo veiculadas em diferentes pontos de interrupção da página.
 
-## Usar HTTP/2 para fornecer ativos do Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
+## Usar HTTP/2 para fornecer ativos da Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Ele oferece transferência mais rápida de informações e reduz a quantidade de poder de processamento necessário. A entrega de ativos do Dynamic Media é compatível com o uso do HTTP/2, o que oferece melhor resposta e tempos de carregamento.
 
