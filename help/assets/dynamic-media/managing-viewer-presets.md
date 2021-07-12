@@ -2,9 +2,9 @@
 title: Gerenciar predefinições do visualizador
 description: Saiba como criar e gerenciar predefinições do visualizador no Dynamic Media.
 feature: Predefinições do visualizador, visualizadores
-role: Business Practitioner
+role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4236'
 ht-degree: 13%
@@ -48,7 +48,7 @@ Adicione, edite, exclua, publique, cancele a publicação e visualize predefini�
 >
 >Por padrão, o sistema mostra 15 predefinições do visualizador ao selecionar Visualizadores na exibição detalhada de um ativo. Você pode aumentar esse limite. Consulte [Aumentar o número de predefinições do visualizador exibidas](#increasing-the-number-of-viewer-presets-that-display).
 
-### Suporte ao visualizador para páginas da Web responsivas projetadas {#viewer-support-for-responsive-designed-web-pages}
+### Suporte de visualizador para páginas da Web responsivas projetadas {#viewer-support-for-responsive-designed-web-pages}
 
 Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes, você deseja uma página da Web que forneça um link que abra o Visualizador de HTML5 em uma janela separada do navegador. Em outros casos, é necessário incorporar o Visualizador HTML5 diretamente na página de hospedagem. No último caso, a página da Web tem um layout estático. Ou é &quot;responsivo&quot; e exibido de forma diferente em diferentes dispositivos ou para tamanhos de janela de navegador diferentes. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos que vêm com o Dynamic Media suportam páginas da Web estáticas e páginas da Web responsivas projetadas.
 
@@ -59,7 +59,7 @@ Consulte [Biblioteca de imagens estáticas responsivas](https://experienceleague
 >Publique todos os visualizadores prontos para uso antes de usá-los para os primeiros.
 >Consulte [Predefinições do visualizador de publicação](#publishing-viewer-presets).
 
-### Compatibilidade do sistema de predefinições do visualizador {#viewer-preset-system-compatibility}
+### Compatibilidade do sistema de predefinições do visualizador  {#viewer-preset-system-compatibility}
 
 Todas as predefinições do visualizador prontas para uso que acompanham o Dynamic Media são totalmente compatíveis com os seguintes sistemas:
 
@@ -70,7 +70,7 @@ Todas as predefinições do visualizador prontas para uso que acompanham o Dynam
 * Tablet Android™
 * Para vídeo, é fornecido suporte extra para reprodução MP4 para [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) e [Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
 
-### Tipos de mídia avançada para Predefinições do visualizador {#rich-media-types-for-viewer-presets}
+### Tipos de mídia avançada para predefinições do visualizador {#rich-media-types-for-viewer-presets}
 
 Os administradores podem adicionar e personalizar os seguintes tipos de mídia avançada ao criar predefinições do visualizador.
 
@@ -310,7 +310,7 @@ Consulte &quot;Notas de versão de visualizadores&quot; no índice do [Guia de r
  </tbody>
 </table>
 
-### Matriz de gestos de visualizadores móveis compatível {#supported-mobile-viewers-gestures-matrix}
+### Matriz de gestos de visualizadores móveis compatíveis {#supported-mobile-viewers-gestures-matrix}
 
 A tabela a seguir identifica os gestos do visualizador móvel que são suportados em dispositivos iOS, Android™ 2.x e Android™ 3.x.
 
@@ -367,7 +367,7 @@ A tabela a seguir identifica os gestos do visualizador móvel que são suportado
  </tbody>
 </table>
 
-## Aumentar o número de predefinições do visualizador que exibem {#increasing-the-number-of-viewer-presets-that-display}
+## Aumentar o número de predefinições do visualizador exibidas {#increasing-the-number-of-viewer-presets-that-display}
 
 O Experience Manager mostra uma grande variedade de predefinições do visualizador ao visualizar ativos de **[!UICONTROL Exibição de detalhes > Visualizadores]**. Você pode aumentar ou diminuir o número de visualizadores exibidos.
 
@@ -386,7 +386,7 @@ O Experience Manager mostra uma grande variedade de predefinições do visualiza
 1. Na propriedade limit , altere o número para o número desejado, por exemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Toque em **[!UICONTROL Salvar tudo]**.
 
-## Criando uma predefinição do visualizador {#creating-a-new-viewer-preset}
+## Criação de uma predefinição do visualizador {#creating-a-new-viewer-preset}
 
 A criação de predefinições do visualizador permite aplicar várias configurações para visualizar e interagir com ativos. No entanto, não é necessário criar predefinições do visualizador. Se preferir, você pode usar as predefinições padrão do visualizador pronto para uso que já vêm com os Ativos do Experience Manager.
 
@@ -510,7 +510,7 @@ Usando o exemplo na tabela acima, 9 miniaturas / 3 subsegmentos de vídeo = 3 mi
 * Duração do subsegmento = duração total do vídeo / número de subsegmentos do vídeo.
 Usando o exemplo na tabela acima, 30 segundos / 3 subsegmentos de vídeo = 10 segundos de exibição de cada subsegmento de vídeo.
 
-#### Considerações especiais para criar predefinições do visualizador do banner do carrossel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+#### Considerações especiais para criar predefinições do visualizador de banner do carrossel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
 Ao criar predefinições do visualizador de banner do carrossel, a alteração do estilo dos pontos de acesso pode ser acessada da seguinte maneira:
 
@@ -545,7 +545,7 @@ Consulte também [Visualização de ativos](/help/assets/dynamic-media/previewin
 1. Selecione uma ou mais predefinições do visualizador que você deseja publicar.
 1. Na barra de ferramentas, toque no ícone **[!UICONTROL Publish]**.
 
-## Classificar predefinições do visualizador {#sorting-viewer-presets}
+## Ordenar predefinições do visualizador {#sorting-viewer-presets}
 
 1. No canto superior esquerdo do Experience Manager, toque no logotipo do Experience Manager e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos] > [!UICONTROL Predefinições do visualizador]**.
 1. Clique em **[!UICONTROL Título da predefinição]**, **[!UICONTROL Tipo]**, **[!UICONTROL Publicado]** ou **[!UICONTROL Estado]** para classificar pelo cabeçalho da coluna. Por exemplo, clique em **[!UICONTROL Tipo]** para classificar os tipos de predefinição do visualizador em ordem alfabética ou não.
@@ -568,7 +568,7 @@ Editar qualquer *predefinições predefinidas e predefinidas do visualizador* n�
    * Toque em **[!UICONTROL Salvar]** para salvar suas alterações e retornar à página Predefinição do visualizador.
    * Toque em **[!UICONTROL Cancelar]** para evitar alterações feitas e retornar à página Predefinição do visualizador.
 
-## Excluindo predefinições personalizadas do visualizador {#deleting-custom-viewer-presets}
+## Excluindo predefinições do visualizador personalizado {#deleting-custom-viewer-presets}
 
 É possível excluir as Predefinições do visualizador que você criou e adicionou ao Dynamic Media.
 
@@ -578,7 +578,7 @@ Editar qualquer *predefinições predefinidas e predefinidas do visualizador* n�
 1. Na página Predefinições do visualizador , marque um Título de predefinição e toque no ícone **[!UICONTROL Lixeira]**.
 1. Toque em **[!UICONTROL Excluir]**.
 
-## Aplicar predefinições do visualizador a um ativo {#applying-a-viewer-preset-to-an-asset}
+## Aplicação de predefinições do visualizador a um ativo {#applying-a-viewer-preset-to-an-asset}
 
 Se já tiver publicado o ativo e o visualizador selecionado, os botões **[!UICONTROL URL]** e **[!UICONTROL Incorporar]** aparecerão depois de selecionar uma predefinição do visualizador.
 
