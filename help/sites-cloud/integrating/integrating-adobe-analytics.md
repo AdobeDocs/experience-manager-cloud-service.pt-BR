@@ -2,9 +2,9 @@
 title: Integração ao Adobe Analytics
 description: 'Integração ao Adobe Analytics '
 feature: Administração
-role: Administrator
+role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 4%
