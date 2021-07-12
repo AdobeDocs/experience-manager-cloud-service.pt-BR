@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Acessibilidade
-role: Administrator,Business Practitioner
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+role: Admin,User
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 1%
@@ -49,7 +49,7 @@ Consulte [Editar o recorte inteligente ou a amostra inteligente de uma única im
 
 Os elementos da interface do usuário do Dynamic Media funcionam com tecnologias de assistência, como leitores de tela. Por exemplo, ele reconhece marcos em uma página ao navegar por marcos usando o atalho de teclado `D` ou regiões usando o atalho de teclado `R`. Ele também narra o cabeçalho ao navegar usando o atalho de teclado do cabeçalho `H`.
 
-## Suporte à acessibilidade de teclado em visualizadores Dynamic Media {#keyboard-accessibility-for-dm-viewers}
+## Suporte para acessibilidade de teclado em visualizadores Dynamic Media {#keyboard-accessibility-for-dm-viewers}
 
 Todos os componentes prontos para uso dos visualizadores Dynamic Media suportam a acessibilidade do teclado para seus clientes.
 
