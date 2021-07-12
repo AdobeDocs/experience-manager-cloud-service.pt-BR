@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner
+role: User
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 4%
@@ -39,7 +39,7 @@ Independentemente de você depender de:
 * O valor **[!UICONTROL Publicar ativos]** definido em **[!UICONTROL Configuração do Dynamic Media]**
 * Ou o valor **[!UICONTROL Modo de publicação do Dynamic Media]** definido nas propriedades no nível da pasta
 
-Ainda é possível escolher **[!UICONTROL Imediatamente]**, **[!UICONTROL Após ativação]** ou **[!UICONTROL Publicação seletiva]**. Por exemplo, você pode definir o valor **[!UICONTROL Publicar ativos]** em sua **[!UICONTROL Configuração do Dynamic Media]** como **[!UICONTROL Em ativação]**. E você pode definir o valor do modo **[!UICONTROL Dynamic Media Publish]** no nível da pasta para **[!UICONTROL Publicação seletiva]**, de maneira inversa e assim por diante.
+Ainda é possível escolher **[!UICONTROL Imediatamente]**, **[!UICONTROL Após ativação]** ou **[!UICONTROL Publicação seletiva]**. Por exemplo, você pode definir o valor **[!UICONTROL Publicar ativos]** em sua **[!UICONTROL Configuração do Dynamic Media]** como **[!UICONTROL Em ativação]**. Além disso, é possível definir o valor do modo **[!UICONTROL Dynamic Media Publish]** no nível da pasta para **[!UICONTROL Publicação seletiva]**, inversamente e assim por diante.
 
 Depois de configurar a publicação seletiva em uma pasta, você pode executar qualquer um dos seguintes procedimentos:
 
@@ -79,7 +79,7 @@ Depois de configurar a publicação seletiva em uma pasta, você pode executar q
 
 1. No canto superior direito da página, toque em **[!UICONTROL Salvar e fechar]** e toque em **[!UICONTROL OK]** para retornar aos Ativos do Experience Manager.
 
-## Publique ativos seletivamente no Dynamic Media ou no Experience Manager como um Cloud Service usando Gerenciar publicação{#selective-publish-manage-publication}
+## Publicar ativos no Dynamic Media ou no Experience Manager as a Cloud Service usando Gerenciar publicação{#selective-publish-manage-publication}
 
 Antes de usar **[!UICONTROL Gerenciar publicação]** para publicar ativos seletivamente no Dynamic Media ou no Experience Manager, certifique-se de ter feito o seguinte:
 
@@ -160,7 +160,7 @@ Consulte [Criação de uma Configuração do Dynamic Media](#configuring-dynamic
    * No canto superior direito da página **[!UICONTROL Gerenciar publicação - Escopo]**, toque em **[!UICONTROL Cancelar publicação]** ou **[!UICONTROL Cancelar publicação do Dynamic Media]**.
 1. Toque em **[!UICONTROL OK]**.
 
-## Publicar ativos no Dynamic Media ou Experience Manager usando a Publicação rápida {#quick-publish-aem-dm}
+## Publicação de ativos no Dynamic Media ou Experience Manager usando a Publicação rápida {#quick-publish-aem-dm}
 
 Você pode usar **[!UICONTROL Publicação rápida]** para casos simples de ativação de ativos. **[!UICONTROL A]** Publicação rápida publica os ativos selecionados imediatamente, sem qualquer outra interação do usuário. Todas as referências não publicadas também são publicadas automaticamente.
 
@@ -186,7 +186,7 @@ Você pode usar **[!UICONTROL Publicação rápida]** para casos simples de ativ
    | Opção Publicação rápida | O que ele faz |
    | --- | --- | 
    | Publicar no Experience Manager | Publica os ativos selecionados imediatamente no Experience Manager. |
-   | Publicar no Brand Portal | Publica os ativos selecionados imediatamente no **[!UICONTROL Brand Portal]**.<br>Essa opção só estará disponível se a instância do Experience Manager Assets tiver o  **[!UICONTROL Brand]** Portal já configurado. |
+   | Publicar no Brand Portal | Publica os ativos selecionados imediatamente em **[!UICONTROL Brand Portal]**.<br>Essa opção só estará disponível se a instância do Experience Manager Assets tiver o  **[!UICONTROL Brand]** Portal já configurado. |
    | Publicar no Dynamic Media | Publica os ativos selecionados imediatamente no Dynamic Media.<br>Um ativo já deve ser sincronizado com o Dynamic Media. Se necessário, verifique se **[!UICONTROL Sync mode]** nas propriedades de uma pasta já está definido como **[!UICONTROL Sincronize tudo nesta subárvore de pasta para Dynamic Media]**. |
 
 1. Toque em **[!UICONTROL OK]** e toque em **[!UICONTROL Fechar]**.
