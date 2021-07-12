@@ -1,16 +1,15 @@
 ---
 title: Gerenciador de vários sites e tradução
 description: Saiba como reutilizar seu conteúdo em seu projeto e gerenciar sites multilíngues no AEM.
-feature: Administering
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Administração
+role: Admin
+exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 2%
 
 ---
-
 
 # Gerenciador de vários sites e tradução {#msm-and-translation}
 
@@ -56,5 +55,5 @@ Para casos de uso mais avançados, o MSM também pode ser usado em mestres de id
 >Em todos os casos de uso, é recomendável ler as seguintes práticas recomendadas:
 >
 >* [Práticas recomendadas para MSM](msm/best-practices.md)
->* [Práticas recomendadas para tradução](translation/best-practices.md)
+* [Práticas recomendadas para tradução](translation/best-practices.md)
 
