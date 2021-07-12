@@ -1,16 +1,15 @@
 ---
 title: Variações - Criação dos fragmentos de conteúdo
 description: Entenda como as variações podem tornar o conteúdo sem interface AEM ainda mais flexível, permitindo que você crie conteúdo para o fragmento e, em seguida, crie variações desse conteúdo de acordo com a finalidade.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Fragmentos de conteúdo
+role: User
+exl-id: af05aae6-d535-4007-ba81-7f41213ff152
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2257'
 ht-degree: 15%
 
 ---
-
 
 # Variações - Criação dos fragmentos de conteúdo{#variations-authoring-fragment-content}
 
@@ -39,7 +38,7 @@ Executar uma variedade de outras ações, dependendo do tipo de dados que está 
 >
 >Depois que um fragmento tiver sido publicado e/ou referenciado, AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
-## Criação do seu conteúdo {#authoring-your-content}
+## Criação de conteúdo {#authoring-your-content}
 
 Ao abrir o fragmento de conteúdo para edição, a guia **Variations** será aberta por padrão. Aqui você pode criar o conteúdo, para Principais variações ou quaisquer variações que tenha. O fragmento estruturado contém vários campos, de vários tipos de dados, que foram definidos no modelo de conteúdo.
 
@@ -156,11 +155,11 @@ Você também pode abrir o editor de tela cheia para mais [ações](#actions).
 >
 >Se você alternar entre **Rich Text** e **Marcação**, poderá ver efeitos inesperados com Cotas de bloqueio e Bloqueios de código, já que esses dois formatos podem ter diferenças na maneira como são tratados.
 
-### Referências do fragmento {#fragment-references}
+### Referências de fragmento {#fragment-references}
 
 Se o Modelo do fragmento de conteúdo contiver Referências de fragmento, os autores do fragmento podem ter opções adicionais:
 
-* [Editar fragmento do conteúdo](#fragment-references-edit-content-fragment)
+* [Editar fragmento de conteúdo](#fragment-references-edit-content-fragment)
 * [Novo fragmento de conteúdo](#fragment-references-new-content-fragment)
 
 ![Referências de fragmento](assets/cfm-variations-12.png)
@@ -187,7 +186,7 @@ A opção **Novo fragmento de conteúdo** permitirá que você crie um fragmento
    1. **** Não retornará (ao fragmento original) e referenciará o novo fragmento.
    1. **** Abrir referenciará o novo fragmento, bem como abrirá o novo fragmento, para edição, em uma nova guia do navegador.
 
-### Exibindo as estatísticas principais {#viewing-key-statistics}
+### Exibindo Estatísticas-Chave {#viewing-key-statistics}
 
 Quando o editor de tela cheia estiver aberto, a ação **Estatísticas de texto** exibirá uma variedade de informações sobre o texto.
 
@@ -283,7 +282,7 @@ Para anotar um fragmento:
 
    ![anotar](assets/cfm-variations-07c.png)
 
-### Visualização, edição e exclusão de anotações {#viewing-editing-deleting-annotations}
+### Visualização, edição, exclusão de anotações {#viewing-editing-deleting-annotations}
 
 Anotações:
 
@@ -369,9 +368,9 @@ Existem vários métodos de adicionar [imagens](/help/assets/content-fragments/c
    * **Marcação**: a referência permanecerá.
 
 
-## Gerenciando variações {#managing-variations}
+## Gerenciamento de variações {#managing-variations}
 
-### Criando uma Variação {#creating-a-variation}
+### Criação de uma variação {#creating-a-variation}
 
 As variações permitem pegar o conteúdo **Principal** e variá-lo de acordo com a finalidade (se necessário).
 
@@ -386,7 +385,7 @@ Para criar uma nova variação:
    >[!NOTE]
    Ao criar uma nova variação, é sempre **Principal** que é copiado, não a variação que está aberta no momento.
 
-### Editar uma Variação {#editing-a-variation}
+### Editar uma variação {#editing-a-variation}
 
 Você pode fazer alterações no conteúdo de variação após:
 
@@ -395,7 +394,7 @@ Você pode fazer alterações no conteúdo de variação após:
 
 ![edição de uma variação](assets/cfm-variations-10.png)
 
-### Renomeando uma Variação {#renaming-a-variation}
+### Renomear uma variação {#renaming-a-variation}
 
 Para renomear uma variação existente:
 
@@ -423,7 +422,7 @@ Para excluir uma variação existente:
 >[!NOTE]
 Não é possível excluir **Principal**.
 
-### Sincronização com {#synchronizing-with-master} Principal
+### Sincronização com Principal {#synchronizing-with-master}
 
 **** O domínio é parte integrante de um fragmento de conteúdo e, por definição, contém a cópia principal do conteúdo, enquanto as variações contêm as versões individuais atualizadas e personalizadas desse conteúdo. Quando o Principal é atualizado, é possível que essas alterações também sejam relevantes para as variações e, portanto, precisam ser propagadas para elas.
 
