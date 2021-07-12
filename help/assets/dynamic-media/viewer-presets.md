@@ -2,16 +2,16 @@
 title: Aplicação de predefinições do visualizador do Dynamic Media
 description: Saiba como aplicar predefinições do visualizador no Dynamic Media.
 feature: Predefinições do visualizador, visualizadores
-role: Business Practitioner
+role: User
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 25%
 
 ---
 
-# Aplicar predefinições do visualizador do Dynamic Media {#applying-viewer-presets}
+# Aplicação de predefinições do visualizador do Dynamic Media {#applying-viewer-presets}
 
 Uma predefinição do visualizador é uma coleção de configurações que determinam como os usuários visualizam ativos de mídia avançada em suas telas de computadores e dispositivos móveis. Você pode aplicar predefinições do visualizador criadas pelo administrador a um ativo.
 
