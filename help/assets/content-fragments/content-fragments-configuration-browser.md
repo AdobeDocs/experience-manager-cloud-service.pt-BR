@@ -2,10 +2,9 @@
 title: Fragmentos de conteúdo - Navegador de configuração
 description: Saiba como ativar determinadas funcionalidades de Fragmento de conteúdo no Navegador de configuração para aproveitar AEM poderosos recursos de entrega sem cabeçalho.
 feature: Fragmentos de conteúdo
-role: Business Practitioner
+role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 18%
@@ -64,7 +63,7 @@ Para [usar determinada funcionalidade de Fragmento de conteúdo](#creating-a-con
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### Aplique a configuração à sua pasta de ativos {#apply-the-configuration-to-your-assets-folder}
+### Aplicar a configuração à sua pasta de ativos {#apply-the-configuration-to-your-assets-folder}
 
 Quando a configuração **global** está ativada para a funcionalidade do fragmento de conteúdo, então se aplica a qualquer pasta de Ativos.
 
