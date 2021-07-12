@@ -2,9 +2,9 @@
 title: Conjuntos de imagem
 description: Saiba como trabalhar com conjuntos de imagens no Dynamic Media.
 feature: Conjuntos de imagem
-role: Business Practitioner
+role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 8%
@@ -17,7 +17,7 @@ Os Conjuntos de imagens fornecem aos usuários uma experiência de visualizaçã
 
 Os conjuntos de imagens são designados por um banner com a palavra `IMAGESET`. Além disso, se o Conjunto de imagens for publicado, a data de publicação, indicada pelo ícone **[!UICONTROL World]**, estará no banner. Além disso, a última data de modificação, indicada pelo ícone **[!UICONTROL Pencil]**, é exibida.
 
-![chlimage_1-135](assets/chlimage_1-339.png)
+![chlimage_1-133](assets/chlimage_1-339.png)
 
 No conjunto de imagens, também é possível criar amostras criando um Conjunto de imagens e adicionando miniaturas.
 
@@ -90,7 +90,7 @@ Os Conjuntos de imagens são compatíveis com vários formatos de arquivo de ima
 
 Você pode fazer upload de imagens para Conjuntos de imagens da mesma maneira que faria [upload de qualquer outro ativo no Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
-### Preparando ativos do Conjunto de imagens para carregar {#preparing-image-set-assets-for-upload}
+### Preparação de ativos do Conjunto de imagens para upload {#preparing-image-set-assets-for-upload}
 
 Antes de criar Conjuntos de imagens, verifique se as imagens têm o tamanho e o formato corretos.
 
@@ -108,7 +108,7 @@ Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as
 >* Miniatura de cor preta, marrom e verde.
 
 
-## Criando Conjuntos de Imagens {#creating-image-sets}
+## Criação de conjuntos de imagens {#creating-image-sets}
 
 Você pode criar Conjuntos de imagens por meio da interface do usuário ou da API.
 
@@ -168,7 +168,7 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 
 1. Clique em **[!UICONTROL Salvar]**. O Conjunto de imagens recém-criado é exibido na pasta em que você o criou.
 
-## Visualizando conjuntos de imagens {#viewing-image-sets}
+## Visualização de conjuntos de imagens {#viewing-image-sets}
 
 Você pode criar conjuntos de imagens na interface do usuário ou automaticamente usando [predefinições do conjunto de lotes](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
@@ -238,6 +238,6 @@ Você pode executar várias tarefas de edição em Conjuntos de imagens, como as
 
 Consulte [Visualização de ativos](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publicando conjuntos de imagens {#publishing-image-sets}
+## Publicar conjuntos de imagens {#publishing-image-sets}
 
 Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
