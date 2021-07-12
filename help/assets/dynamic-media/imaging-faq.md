@@ -2,9 +2,9 @@
 title: Imagem inteligente
 description: Saiba como o Smart Imaging com a Adobe Sensei AI aplica as características de visualização exclusivas de cada usuário para veicular automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento.
 feature: Gerenciamento de ativos,Representações
-role: Business Practitioner
+role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 0946383504aec025bda8c4087495deb2526b5fe3
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2634'
 ht-degree: 1%
