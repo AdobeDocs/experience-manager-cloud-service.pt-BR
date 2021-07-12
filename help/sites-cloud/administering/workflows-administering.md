@@ -1,16 +1,15 @@
 ---
 title: Administração de instâncias do fluxo de trabalho
 description: Saiba como administrar instâncias de fluxo de trabalho
-feature: Administering
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Administração
+role: Admin
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '935'
 ht-degree: 1%
 
 ---
-
 
 # Administração de instâncias do fluxo de trabalho {#administering-workflow-instances}
 
@@ -83,7 +82,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
 
-## Correção de falhas de instância de fluxo de trabalho {#fixing-workflow-instance-failures}
+## Correção de falhas na instância do fluxo de trabalho {#fixing-workflow-instance-failures}
 
 Quando um workflow falha, o AEM fornece o console **Falhas** para permitir que você investigue e tome as medidas apropriadas quando a causa original tiver sido tratada:
 
@@ -157,7 +156,7 @@ Para configurar o serviço, você pode configurar os Arquivos de Configuração 
  </tbody>
 </table>
 
-## Definir o tamanho máximo da caixa de entrada {#setting-the-maximum-size-of-the-inbox}
+## Configuração do tamanho máximo da caixa de entrada {#setting-the-maximum-size-of-the-inbox}
 
 Você pode definir o tamanho máximo da caixa de entrada configurando o **Adobe Granite Workflow Service**, consulte [adicionar uma configuração OSGi ao repositório](/help/implementing/deploying/configuring-osgi.md). A tabela a seguir descreve a propriedade configurada.
 
@@ -168,4 +167,3 @@ Você pode definir o tamanho máximo da caixa de entrada configurando o **Adobe 
 | Nome da propriedade (Console da Web) | Nome da Propriedade OSGi |
 |---|---|
 | Tamanho máximo da consulta da caixa de entrada | granite.workflow.inboxQuerySize |
-
