@@ -2,10 +2,9 @@
 title: Imagens panorâmicas
 description: Saiba como trabalhar com imagens panorâmicas no Dynamic Media.
 feature: Imagens panorâmicas
-role: Business Practitioner
+role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 3%
@@ -20,7 +19,7 @@ Consulte também [Gerenciar predefinições do visualizador](/help/assets/dynami
 
 ![panorâmica-imagem2](assets/panoramic-image2.png)
 
-## Fazer upload de ativos para uso com o Visualizador de imagem panorâmica {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Fazer upload de ativos para uso com o visualizador de Imagem panorâmica {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 Para que um ativo carregado seja qualificado como uma imagem panorâmica esférica que você pretende usar com o visualizador de Imagem panorâmica, o ativo deve ter um ou ambos os itens a seguir:
 
@@ -81,6 +80,6 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 Consulte [Visualização de ativos](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publicar imagens panorâmicas {#publishing-panoramic-images}
+## Publicação de imagens panorâmicas {#publishing-panoramic-images}
 
 Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
