@@ -2,9 +2,9 @@
 title: Vídeos interativos
 description: Saiba como trabalhar com vídeo interativo e vídeo que pode ser comprado no Dynamic Media.
 feature: Vídeos interativos
-role: Business Practitioner
+role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '6021'
 ht-degree: 4%
@@ -92,7 +92,7 @@ Use o código incorporado ou URL para integrar seu vídeo interativo com as expe
 Se você estiver usando um WCM (Web Content Manager, Gerenciador de conteúdo da Web) de terceiros, é necessário integrar o novo vídeo interativo à implementação do Quick View existente usada em seu site. Consulte [Integração de um vídeo interativo com uma visualização rápida existente](#integrating-an-interactive-video-with-an-existing-quickview).
    [Adição de ativos de Mídia dinâmica a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-## (Opcional) Identificação de variáveis de Exibição rápida {#optional-identifying-quickview-variables}
+## (Opcional) Identificação das variáveis de exibição rápida {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 Essa tarefa só será necessária se o seguinte for verdadeiro:
@@ -218,7 +218,7 @@ Com base nessa análise, você conclui que pode usar as duas variáveis a seguir
 
 Agora você está pronto para fazer upload de um vídeo e seus ativos de miniatura associados.
 
-## (Opcional) Criação de uma predefinição do visualizador de Vídeo interativo {#optional-creating-an-interactive-video-viewer-preset}
+## (Opcional) Criação de uma predefinição do visualizador de vídeo interativo {#optional-creating-an-interactive-video-viewer-preset}
 
 Ignore esta tarefa e continue para a próxima se pretender utilizar os tipos predefinidos predefinidos do Visualizador de Vídeo Interativo e predefinidos `Shoppable_Video_dark` ou `Shoppable_Video_light`.
 
@@ -469,7 +469,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
       Na linha do tempo, toque em um segmento que deseja dividir ao meio e em **[!UICONTROL Dividir segmento]** na barra de ferramentas.
 
       Selecionar dois ou mais segmentos desativa o recurso **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Divisão de um segmento selecionado de dez segundos em dois segmentos de cinco segundos cada.
 
@@ -495,7 +495,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
 
    Depois de adicionar segmentos de linha do tempo e publicar o vídeo interativo, você estará pronto para adicioná-lo à página de aterrissagem do site. Consulte [Integrar um vídeo interativo com seu site](#integrating-an-interactive-video-with-your-website).
 
-## Publicar ativos de vídeo interativos {#publishing-interactive-video-assets}
+## Publicação de ativos interativos de vídeo {#publishing-interactive-video-assets}
 
 Consulte [Publicação de ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de vídeo interativos.
 
@@ -556,7 +556,7 @@ A integração é tão simples como remover o código de inserção do vídeo e 
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## Integração de um vídeo interativo com uma visualização rápida {#integrating-an-interactive-video-with-an-existing-quickview} existente
+## Integração de um vídeo interativo com uma visualização rápida existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 Essa tarefa só se aplica se você for um cliente independente do Experience Manager Assets.
@@ -755,7 +755,7 @@ O site de demonstração final com o vídeo interativo totalmente integrado é e
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Usando visualizações rápidas para criar pop-up personalizado do Windows® {#using-quickviews-to-create-custom-pop-ups}
+## Usar o Quick views para criar pop-up personalizado do Windows® {#using-quickviews-to-create-custom-pop-ups}
 
 Consulte [Usar visualizações rápidas para criar janelas pop-up personalizadas do Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
 —>
