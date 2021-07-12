@@ -1,16 +1,15 @@
 ---
 title: Visualização - Representação JSON
 description: Saiba como visualizar facilmente a representação JSON dos Fragmentos de conteúdo ao implementar sua solução sem periféricos AEM.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Fragmentos de conteúdo
+role: User
+exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 5%
+source-wordcount: '115'
+ht-degree: 3%
 
 ---
-
 
 # Visualização - Representação JSON {#preview-json-representation}
 
