@@ -1,16 +1,15 @@
 ---
 title: Preparação de conteúdo para tradução
 description: Saiba como preparar conteúdo para tradução.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Cópia de idioma
+role: Admin
+exl-id: afc577a2-2791-481a-ac77-468011e4302e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # Preparação de conteúdo para tradução {#preparing-content-for-translation}
 
@@ -59,7 +58,7 @@ Use as seguintes etapas para preparar seu site para tradução:
 
 Depois de preparar o conteúdo para tradução, você pode criar automaticamente as páginas ausentes em suas cópias de idioma e projetos de tradução associados. (Consulte [Criação de um projeto de tradução](managing-projects.md).) Para obter uma visão geral do processo de tradução de conteúdo no AEM, consulte [Tradução de conteúdo para sites multilíngues](overview.md).
 
-## Criação de uma Raiz de Idioma {#creating-a-language-root}
+## Criar uma raiz de idioma {#creating-a-language-root}
 
 Crie uma raiz de idioma como a página raiz de uma cópia de idioma que identifica o idioma do conteúdo. Depois de criar a raiz do idioma, você pode criar projetos de tradução que incluem a cópia de idioma.
 
@@ -83,7 +82,7 @@ Você pode usar qualquer um dos formatos, de acordo com a estrutura escolhida pa
 
 1. Clique ou toque em **Criar**. Na caixa de diálogo de confirmação, clique ou toque em **Concluído** para retornar ao console Sites ou em **Abrir** para abrir a cópia de idioma.
 
-## Ver o status das raízes de idioma {#seeing-the-status-of-language-roots}
+## Ver o status das raízes das línguas {#seeing-the-status-of-language-roots}
 
 AEM fornece um painel **Referências** que mostra uma lista de raízes de idioma que foram criadas.
 
