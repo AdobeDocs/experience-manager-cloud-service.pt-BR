@@ -2,10 +2,9 @@
 title: Práticas recomendadas do MSM
 description: Conheça as práticas recomendadas compiladas pelas equipes de engenharia e consultoria de Adobe para ajudar a ativar e executar o AEM Multi Site Manager.
 feature: Gerenciamento de vários sites
-role: Administrator
+role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-translation-type: tm+mt
-source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -118,7 +117,7 @@ Ao considerar mover páginas em uma Live Copy, considere a seguinte prática rec
       * Para implantar a movimentação da página, mantendo as respectivas páginas em seus locais antigos nas Live Copies (essencialmente duplicando o conteúdo):
          * Posicione a configuração recém-criada após a configuração padrão de implementação. Isso garantirá que nenhum conteúdo seja excluído na Live Copy ou desativado da publicação.
 
-## Personalizando implantações {#customizing-rollouts}
+## Personalização de implantações {#customizing-rollouts}
 
 As configurações de implementação do MSM são altamente personalizáveis. Você deve estar ciente de que a automatização de implantações pode ter consequências de longo alcance. Como prática recomendada, você deve planejar com muito cuidado antes de realizar as seguintes atividades:
 
@@ -139,7 +138,7 @@ Ao usar o [acionador de implementação](live-copy-sync-config.md#rollout-trigge
 
 Portanto, é recomendável usar somente `onModify` acionadores se os benefícios da iniciação de implementação automática compensarem quaisquer possíveis problemas de desempenho.
 
-### Tipos de nó/Propriedades {#node-types-properties}
+### Tipos/propriedades de nós {#node-types-properties}
 
 Além de personalizar as ações de implantação, o MSM também permite personalizar as propriedades do nó que estão sendo implantadas. A configuração [MSM OSGi permite excluir os tipos de nó](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de serem copiados da origem para a Live Copy.
 
