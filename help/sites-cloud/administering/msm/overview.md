@@ -1,16 +1,15 @@
 ---
 title: Reutilizar conteúdo - Gerenciador de vários sites e Live Copy
 description: Obtenha uma introdução sobre como reutilizar conteúdo com AEM Live Copies e os recursos do Multi Site Manager.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Gerenciamento de vários sites
+role: Admin
+exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2685'
 ht-degree: 1%
 
 ---
-
 
 # Reutilizar conteúdo: gerenciador de vários sites e Live Copy {#multi-site-manager-and-live-copy}
 
@@ -187,7 +186,7 @@ Uma Live Copy do MSM é uma cópia do conteúdo específico do site para o qual 
 
 No exemplo anterior, `/content/wknd/language-masters/en` é o site principal global em inglês. Para reutilizar o conteúdo deste site, as Live Copies do MSM são criadas:
 
-* O conteúdo abaixo de `/content/wknd/language-masters/en` é a fonte.
+* O conteúdo abaixo `/content/wknd/language-masters/en` é a fonte.
 * O conteúdo abaixo `/content/wknd/language-masters/en` é copiado abaixo dos nós `/content/wknd/us/en/` e `/content/wknd/ca/en`. Estas são as Live Copies.
 * Os autores fazem alterações nas páginas abaixo `/content/wknd/language-masters/en`.
 * Quando acionado, o MSM sincroniza essas alterações nas Live Copies.
@@ -215,7 +214,7 @@ As alterações podem ser [sincronizadas](creating-live-copies.md#synchronizing-
 
 ![Visão geral da composição da Live Copy](../assets/live-copy-composition.png)
 
-#### Live Copy com páginas {#live-copy-with-non-live-copy-pages} que não são da Live Copy
+#### Live Copy com páginas que não são da Live Copy {#live-copy-with-non-live-copy-pages}
 
 Ao criar uma Live Copy no AEM, você pode ver e navegar pela ramificação Live Copy e usar a funcionalidade AEM normal na ramificação Live Copy. Isso significa que você (ou um processo) pode criar novos recursos (páginas e/ou parágrafos) dentro da Live Copy. Por exemplo, um produto para uma determinada região ou país.
 
@@ -290,7 +289,7 @@ As configurações de implantação podem ser reutilizadas, de modo que mais de 
 
 As implantações podem se tornar complicadas, especialmente quando os autores estão editando o conteúdo na origem e na Live Copy. Portanto, é útil estar ciente de como o AEM lida com qualquer conflito [que possa ocorrer durante a implantação.](rollout-conflicts.md)
 
-### Suspender e cancelar herança e sincronização {#suspending-and-cancelling-inheritance-and-synchronization}
+### Suspensão e cancelamento de herança e sincronização {#suspending-and-cancelling-inheritance-and-synchronization}
 
 Cada página e componente em uma Live Copy é associado à página e ao componente de origem por meio de um relacionamento dinâmico. O relacionamento ao vivo configura a sincronização do conteúdo da Live Copy da origem.
 
@@ -298,7 +297,7 @@ Você pode **Suspender** a herança da Live Copy para uma página de Live Copy, 
 
 Ao editar uma página individual, os autores podem **Cancelar herança** para um componente. Quando a herança é cancelada, o relacionamento ao vivo é suspenso e a sincronização não ocorre para esse componente. Cancelar a herança e a sincronização são úteis quando as subseções do conteúdo precisam ser personalizadas.
 
-### Desanexando uma Live Copy {#detaching-a-live-copy}
+### Desanexar uma Live Copy {#detaching-a-live-copy}
 
 Você também pode [desconectar uma Live Copy](creating-live-copies.md#detaching-a-live-copy) de seu blueprint para remover todas as conexões.
 
