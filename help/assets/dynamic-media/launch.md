@@ -2,9 +2,9 @@
 title: Integração dos visualizadores do Dynamic Media com o Adobe Analytics e o Experience Platform Launch
 description: Saiba mais sobre a extensão Visualizadores do Dynamic Media para Platform launch e Dynamic Media Viewers 5.13. Ela permite que clientes do Adobe Analytics e do Platform launch usem eventos e dados específicos para os Visualizadores em suas configurações do Platform launch.
 feature: Relatórios dos ativos
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 2fa40e8ee71f881df68337c99ccdb3437d50a0f3
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '6662'
 ht-degree: 9%
@@ -49,7 +49,7 @@ Consulte [Rastreamento de visualizadores Dynamic Media usando o código incorpor
 
 A integração aproveita dois tipos separados e independentes de rastreamento de visualizadores do Dynamic Media: *Adobe Analytics* e *Adobe Analytics para áudio e vídeo*.
 
-### Sobre o rastreamento usando o Adobe Analytics {#about-tracking-using-adobe-analytics}
+### Sobre o rastreamento usando o Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
 O Adobe Analytics permite que você rastreie ações executadas pelo usuário final quando elas interagem com os Visualizadores do Dynamic Media em seu site. O Adobe Analytics também permite rastrear dados específicos do visualizador. Por exemplo, você pode rastrear e registrar eventos de carregamento de exibição junto com o nome do ativo, quaisquer ações de zoom que ocorreram e as ações de reprodução de vídeo.
 
@@ -133,7 +133,7 @@ Atualmente, o suporte para rastreamento de vídeo está limitado somente ao rast
 
 Conforme mencionado em [Use cases for the integration](#use-cases-for-the-integration), é possível rastrear os visualizadores do Dynamic Media com a nova integração do Experience Platform Launch no Experience Manager Sites e usando o código incorporado.
 
-### Rastreamento de visualizadores do Dynamic Media em Experience Manager Sites {#tracking-dynamic-media-viewers-in-aem-sites}
+### Rastreamento de visualizadores do Dynamic Media no Experience Manager Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
 Para rastrear visualizadores do Dynamic Media no Experience Manager Sites, todas as etapas listadas na seção [Configuração de todas as partes de integração](#configuring-all-the-integration-pieces) devem ser executadas. Especificamente, você deve criar a configuração IMS e a configuração da Experience Platform Launch Cloud.
 
@@ -141,7 +141,7 @@ Após a configuração correta, qualquer visualizador do Dynamic Media adicionad
 
 Consulte [Adicionar ativos Dynamic Media às páginas usando Adobe Sites](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-### Rastrear visualizadores do Dynamic Media usando o código incorporado {#tracking-dynamic-media-viewers-using-embed-code}
+### Rastreamento de visualizadores do Dynamic Media usando o código incorporado {#tracking-dynamic-media-viewers-using-embed-code}
 
 Os clientes que não usam Sites Experience Manager ou incorporam visualizadores Dynamic Media em páginas da Web fora do Experience Manager Sites, ou ambos, ainda podem usar a integração do Experience Platform Launch.
 
@@ -161,9 +161,9 @@ Para saber mais sobre como usar o recurso de código incorporado do Experience M
 1. Escolha o nível de Ambiente que seja relevante para o ambiente da página da Web. Em seguida, na coluna **[!UICONTROL Install]**, clique no ícone da caixa.
 1. **[!UICONTROL Na caixa de diálogo]** Instruções de instalação da Web , copie o código incorporado completo da biblioteca de Experience Platform Launch, juntamente com as  `<script/>` tags subjacentes.
 
-## Guia de referência para a extensão de visualizadores do Dynamic Media {#reference-guide-for-the-dynamic-media-viewers-extension}
+## Guia de referência para a extensão Visualizadores do Dynamic Media {#reference-guide-for-the-dynamic-media-viewers-extension}
 
-### Sobre a configuração dos Visualizadores do Dynamic Media {#about-the-dynamic-media-viewers-configuration}
+### Sobre a configuração dos visualizadores do Dynamic Media {#about-the-dynamic-media-viewers-configuration}
 
 A extensão Visualizador do Dynamic Media integra-se automaticamente à biblioteca de Experience Platform Launch se as seguintes condições forem verdadeiras:
 
@@ -435,7 +435,7 @@ Consulte também [Guia de implementação do Analytics](https://experienceleague
 
    Em seguida, selecione um conjunto de relatórios.
 
-### Selecionar um conjunto de relatórios {#selecting-a-report-suite}
+### Seleção de um conjunto de relatórios {#selecting-a-report-suite}
 
 1. Próximo ao canto superior direito da página do Adobe Analytics, à direita do campo **[!UICONTROL Pesquisar relatórios]**, selecione o conjunto de relatórios correto na lista suspensa. Se houver vários conjuntos de relatórios disponíveis e você não tiver certeza de qual usar, entre em contato com o administrador do Adobe Analytics, que pode ajudá-lo a selecionar qual usar.
 
@@ -572,7 +572,7 @@ Depois que as extensões forem instaladas e configuradas, no mínimo, as cinco e
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
-### Configuração de elementos de dados e regras {#setting-up-data-elements-and-rules}
+### Configuração de elementos e regras de dados {#setting-up-data-elements-and-rules}
 
 No Experience Platform Launch, crie os Elementos de dados e as Regras necessários para rastrear os visualizadores do Dynamic Media.
 
@@ -582,7 +582,7 @@ Consulte [Exemplo de configuração](#sample-configuration) para obter uma confi
 
 Consulte [Configurar a extensão do Dynamic Media Viewers](#configuring-the-dynamic-media-viewers-extension) para obter informações detalhadas sobre os recursos da extensão.
 
-### Publicar uma biblioteca {#publishing-a-library}
+### Publicação de uma biblioteca {#publishing-a-library}
 
 Para alterar a configuração do Experience Platform Launch (incluindo Propriedade, Extensões, Regras e Elementos de Dados configurados), você deve *publicar* essas alterações. A publicação no Experience Platform Launch é executada a partir da guia Publicação na configuração Propriedade.
 
@@ -595,7 +595,7 @@ A publicação de uma biblioteca envolve as duas etapas a seguir:
 * Adicionar e criar uma nova biblioteca incluindo todas as alterações necessárias (novas e atualizações) na biblioteca.
 * Migração da biblioteca para níveis de ambiente diferentes (de desenvolvimento para armazenamento temporário e produção).
 
-#### Adicionar e criar uma nova biblioteca {#adding-and-building-a-new-library}
+#### Adição e criação de uma nova biblioteca {#adding-and-building-a-new-library}
 
 1. Na primeira vez que você abre a guia Publicação no Experience Platform Launch, a lista da biblioteca fica vazia.
 
@@ -624,7 +624,7 @@ A publicação de uma biblioteca envolve as duas etapas a seguir:
    >
    >Na tela de publicação da biblioteca, clique em **[!UICONTROL Adicionar todos os recursos alterados]** e, em seguida, clique em **[!UICONTROL Salvar e criar para desenvolvimento]**.
 
-#### Mover uma biblioteca para cima por meio de níveis de ambiente {#moving-a-library-up-through-environment-levels}
+#### Migração de uma biblioteca para níveis de ambiente {#moving-a-library-up-through-environment-levels}
 
 1. Após a adição de uma nova biblioteca, ela é encontrada no ambiente de desenvolvimento. Para movê-lo para o nível de ambiente de preparo (que corresponde à coluna Enviado ), no menu suspenso da biblioteca, clique em **[!UICONTROL Enviar para aprovação]**.
 
@@ -663,7 +663,7 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
 * Configuração do Experience Manager IMS.
 * Configuração da Experience Platform Launch Cloud.
 
-### Configuração do Experience Manager IMS {#configuring-aem-ims}
+### Configuração de Experience Manager IMS {#configuring-aem-ims}
 
 1. No Experience Manager author, clique no ícone Tools (martelo) e, em seguida, clique em **[!UICONTROL Security > Adobe IMS Configurations]**.
 
@@ -780,7 +780,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-## Configuração do Experience Platform Launch Cloud para a integração {#configuring-adobe-launch-cloud-for-the-integration}
+## Configuração da Experience Platform Launch Cloud para integração {#configuring-adobe-launch-cloud-for-the-integration}
 
 1. No Experience Manager author, próximo ao canto superior esquerdo, clique no ícone Tools (martelo) e, em seguida, clique em **[!UICONTROL Cloud Services > Experience Platform Launch Configurations]**.
 
