@@ -2,9 +2,9 @@
 title: Conjuntos de rotação
 description: Saiba como trabalhar com conjuntos de rotação no Dynamic Media.
 feature: Conjuntos de rotação
-role: Business Practitioner
+role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 12%
@@ -75,13 +75,13 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga estas etapas
 
 Se necessário, você pode [editar Conjuntos de rotação](#editing-spin-sets). Além disso, você pode visualizar e modificar [Propriedades do conjunto de rotação](/help/assets/manage-digital-assets.md#editing-properties).
 
-## Upload de ativos para Conjuntos de rotação {#uploading-assets-for-spin-sets}
+## Fazer upload de ativos para conjuntos de rotação {#uploading-assets-for-spin-sets}
 
 No mínimo, você precisa de 8 a 12 fotos de um item para um Conjunto de rotação unidimensional. As fotos devem ser tiradas regularmente para dar a impressão de que o item está girando e sendo virado. Por exemplo, se um Conjunto de rotação unidimensional incluir 12 capturas, gire o item 30° (360/12) para cada disparo.
 
 Você pode fazer upload de imagens para os Conjuntos de rotação da mesma maneira que faria [upload de qualquer outro ativo no Experience Manager Assets](/help/assets/manage-digital-assets.md).
 
-### Diretrizes para capturar imagens para seu Conjunto de rotação {#guidelines-for-shooting-spin-set-images}
+### Diretrizes para capturar imagens para seu conjunto de rotação {#guidelines-for-shooting-spin-set-images}
 
 Veja a seguir algumas práticas recomendadas sobre imagens de conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito giratório da imagem. No entanto, incluir muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. O Experience Manager recomenda estas diretrizes para fotografar imagens para uso em Conjuntos de rotação:
 
@@ -91,7 +91,7 @@ Veja a seguir algumas práticas recomendadas sobre imagens de conjunto de rotaç
 * Verifique se os detalhes do produto estão bem iluminados e em foco.
 * Use imagens de rotação para roupas de moda com um manequim ou modelo. Frequentemente, o manequim é mascarado (utilizando um manequim de vidro) ou na imagem aparece um manequim/moldura estilizada. Você pode criar um conjunto de rotação no modelo definindo o número de ângulos. Marque cada ângulo com uma fita no chão para que você possa guiar o modelo para pisar e olhar na direção de cada tomada.
 
-## Criando Conjuntos de Rotação {#creating-spin-sets}
+## Criação de conjuntos de rotação {#creating-spin-sets}
 
 Esta seção descreve como criar Conjuntos de rotação.
 
@@ -148,7 +148,7 @@ Esta seção descreve como criar Conjuntos de rotação.
 
 1. Clique em **[!UICONTROL Salvar]**. O Conjunto de rotação recém-criado é exibido na pasta em que você o criou.
 
-## Exibindo Conjuntos de rotação {#viewing-spin-sets}
+## Visualização de conjuntos de rotação {#viewing-spin-sets}
 
 Você pode criar conjuntos de rotação na interface do usuário ou automaticamente usando [predefinições do conjunto de lotes](/help/assets/dynamic-media/config-dm.md). No entanto, os conjuntos criados usando predefinições de conjunto de lotes, do *not* aparecem na interface do usuário. Você pode acessar conjuntos criados por predefinições de conjuntos em lotes de três maneiras diferentes. (Esses métodos estão disponíveis mesmo se você tiver criado os conjuntos de rotação na interface do usuário).
 
