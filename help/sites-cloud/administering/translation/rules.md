@@ -1,18 +1,17 @@
 ---
 title: Identificação de conteúdo a ser traduzido
 description: Saiba como as regras de tradução identificam o conteúdo que precisa ser traduzido.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Cópia de idioma
+role: Admin
+exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
 
-
-# Identificação de conteúdo para traduzir {#identifying-content-to-translate}
+# Identificação de conteúdo a ser traduzido {#identifying-content-to-translate}
 
 As regras de tradução identificam o conteúdo a ser traduzido para páginas, componentes e ativos que estão incluídos ou excluídos de projetos de tradução. Quando uma página ou ativo está sendo traduzido, o AEM extrai esse conteúdo para que ele possa ser enviado ao serviço de tradução.
 
@@ -87,7 +86,7 @@ O exemplo a seguir traduz o conteúdo de todas as `text` propriedades e também 
 </node>
 ```
 
-## Sintaxe de regra para extração de ativos das páginas {#rule-syntax-for-extracting-assets-from-pages}
+## Sintaxe de regra para extração de ativos de páginas  {#rule-syntax-for-extracting-assets-from-pages}
 
 Use a sintaxe de regra a seguir para incluir ativos incorporados ou referenciados de componentes:
 
