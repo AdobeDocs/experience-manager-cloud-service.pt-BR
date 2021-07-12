@@ -2,17 +2,16 @@
 title: Criação e sincronização de cópias em tempo real
 description: Saiba como criar e sincronizar Live Copies para reutilizar seu conteúdo no site.
 feature: Gerenciamento de vários sites
-role: Administrator
+role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-translation-type: tm+mt
-source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 1%
 
 ---
 
-# Criando e Sincronizando Live Copies {#creating-and-synchronizing-live-copies}
+# Criação e sincronização de cópias em tempo real {#creating-and-synchronizing-live-copies}
 
 Você pode criar uma Live Copy a partir de uma página ou configuração de blueprint para reutilizar esse conteúdo em seu site. Gerencie a herança e a sincronização, você pode controlar como as alterações no conteúdo são propagadas.
 
@@ -42,7 +41,7 @@ Após criar a configuração do blueprint, configure as seguintes propriedades:
 
 Quando sua configuração do blueprint é usada, você pode associá-la a uma configuração de implementação que determina como as Live Copies da origem/blueprint são sincronizadas. Consulte [Especificando as Configurações de Implantação para Usar](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
-### Criando e Editando Configurações do Blueprint {#creating-editing-blueprint-configurations}
+### Como criar e editar configurações do Blueprint {#creating-editing-blueprint-configurations}
 
 As configurações do Blueprint são consideradas dados imutáveis e, como tal, não são editáveis no tempo de execução. Por esse motivo, todas as alterações de configuração devem ser implantadas por meio do Git usando o pipeline de CI/CD.
 
@@ -138,7 +137,7 @@ Para criar uma Live Copy:
 1. (Opcional) Para especificar uma ou mais configurações de implementação a serem usadas para a Live Copy, use a lista suspensa **Configurações de implementação** para selecioná-las. As configurações selecionadas serão mostradas abaixo do seletor suspenso.
 1. Clique ou toque em **Criar**. Uma mensagem de confirmação será exibida; aqui, você pode selecionar **Open** ou **Concluído**.
 
-### Criando uma Live Copy de um Site a partir de uma Configuração do Blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
+### Criação de uma Live Copy de um Site a partir de uma Configuração do Blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 Crie uma Live Copy usando uma configuração de blueprint para criar um site com base no conteúdo do blueprint (fonte). Ao criar uma Live Copy a partir de uma configuração do blueprint, você seleciona uma ou mais ramificações de idioma da origem do blueprint a serem copiadas e, em seguida, seleciona os capítulos a serem copiados das ramificações de idioma. Consulte [Criação de uma Configuração do Blueprint](#creating-a-blueprint-configuration).
 
@@ -181,9 +180,9 @@ Para criar uma Live Copy de um site a partir de uma configuração do blueprint:
 
 Ao criar uma Live Copy dentro da Live Copy existente (criada usando uma configuração de blueprint), você pode inserir qualquer cópia de idioma ou capítulos que não foram incluídos quando a Live Copy foi originalmente criada.
 
-## Monitoramento da Live Copy {#monitoring-your-live-copy}
+## Monitorar a Live Copy {#monitoring-your-live-copy}
 
-### Ver o status de uma Live Copy {#seeing-the-status-of-a-live-copy}
+### Visualização do status de uma Live Copy {#seeing-the-status-of-a-live-copy}
 
 As propriedades de uma página de Live Copy mostram as seguintes informações sobre a Live Copy:
 
@@ -206,7 +205,7 @@ Para exibir as propriedades:
 
    Consulte a seção [Uso da visão geral da Live Copy](live-copy-overview.md#using-the-live-copy-overview) no artigo Console Visão geral da Live Copy para obter mais detalhes.
 
-### Ver as Live Copies de uma Página do Blueprint {#seeing-the-live-copies-of-a-blueprint-page}
+### Ver as cópias em tempo real de uma página do Blueprint {#seeing-the-live-copies-of-a-blueprint-page}
 
 As páginas do blueprint (referenciadas em uma configuração do blueprint) fornecem uma lista das páginas da Live Copy que usam a página atual (blueprint) como fonte. Use esta lista para rastrear as Live Copies. A lista é exibida na guia **Blueprint** das [propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md).
 
@@ -390,7 +389,7 @@ A ação [Suspender também está disponível na Visão geral da Live Copy](live
 
    ![Confirmar suspensão](../assets/confirm-suspend.png)
 
-### Retomando herança de uma Página {#resuming-inheritance-for-a-page}
+### Retomando a herança de uma página {#resuming-inheritance-for-a-page}
 
 Suspender a herança da Live Copy para uma página é uma ação temporária. Uma vez suspensa, a ação **Resume** fica disponível, permitindo que você reinstale a relação ativa.
 
@@ -408,7 +407,7 @@ Quando você reativa a herança, a página não é sincronizada automaticamente 
 >
 >Quando você reativa a herança, a página não é sincronizada automaticamente com a fonte. Se isso for necessário, é possível solicitar manualmente uma sincronização no momento da retomada ou posteriormente.
 
-#### Retomando a herança das propriedades da página {#resuming-inheritance-from-page-properties}
+#### Retomando herança das propriedades da página {#resuming-inheritance-from-page-properties}
 
 Depois de [suspenso](#suspending-inheritance-from-page-properties) a ação **Retomar** torna-se na barra de ferramentas das propriedades da página:
 
@@ -424,7 +423,7 @@ A ação [Retomar também está disponível na Visão geral da Live Copy](live-c
 1. Selecione **Retomar** na barra de ferramentas.
 1. Indique se deseja sincronizar a página após reverter a herança e, em seguida, confirme a ação **Resume** na caixa de diálogo **Resume Live Copy**.
 
-### Alterando a profundidade da herança (superficial/profunda) {#changing-inheritance-depth-shallow-deep}
+### Alterar a profundidade da herança (superficial/profunda) {#changing-inheritance-depth-shallow-deep}
 
 Em uma Live Copy existente, é possível alterar a profundidade de uma página, ou seja, se as páginas filhas estão incluídas.
 
@@ -462,7 +461,7 @@ Para especificar ou alterar a profundidade:
 
 1. Clique ou toque em **Salvar** para continuar suas atualizações.
 
-### Cancelando herança de um componente {#cancelling-inheritance-for-a-component}
+### Cancelar herança de um Componente {#cancelling-inheritance-for-a-component}
 
 Cancele a herança da Live Copy de um componente para que ele não seja mais sincronizado com o componente de origem. Você pode ativar a herança em um ponto posterior, se necessário.
 
@@ -484,7 +483,7 @@ Cancelar herança para alterar o conteúdo do componente ou excluir o componente
 
    A barra de ferramentas do componente é atualizada para incluir todos os comandos de edição (apropriados).
 
-### Reativando a herança de um componente {#re-enabling-inheritance-for-a-component}
+### Ativar novamente a herança de um componente {#re-enabling-inheritance-for-a-component}
 
 Para ativar a herança de um componente, clique ou toque no ícone **Reativar herança** na barra de ferramentas do componente.
 
@@ -591,7 +590,7 @@ Para rastrear as alterações feitas, é possível exibir a página do blueprint
 
    Para obter informações completas sobre como usar o recurso de comparação, consulte [Diff de página](/help/sites-cloud/authoring/features/page-diff.md).
 
-## Desanexando uma Live Copy {#detaching-a-live-copy}
+## Desanexar uma Live Copy {#detaching-a-live-copy}
 
 A ação de desanexar remove permanentemente o relacionamento em tempo real entre uma Live Copy e sua página de origem/blueprint. Todas as propriedades relevantes ao MSM são removidas da Live Copy e as páginas da Live Copy se tornam uma cópia independente.
 
@@ -627,7 +626,7 @@ Há implicações em onde na árvore você usa **Desanexar**:
    >
    >Consulte [Conflitos de implementação MSM](rollout-conflicts.md) para obter detalhes sobre tais situações.
 
-### Desanexar uma página de Live Copy das Propriedades da Página {#detach-a-live-copy-page-from-the-page-properties}
+### Desanexar uma página de Live Copy das propriedades da página {#detach-a-live-copy-page-from-the-page-properties}
 
 Para desanexar uma Live Copy:
 
