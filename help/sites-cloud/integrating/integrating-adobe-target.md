@@ -2,9 +2,9 @@
 title: Integração com o Adobe Target
 description: 'Integração com o Adobe Target '
 feature: Administração
-role: Administrator
+role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 2%
@@ -123,7 +123,7 @@ Uma propriedade é um container preenchido com extensões, regras, elementos de 
 4. Selecione **Salvar**.
    ![Elemento ](assets/data_elem1.png "de dados")
 
-### Criando uma Regra de Página {#page-rule}
+### Criando uma regra de página {#page-rule}
 
 Em **Rule** definimos e ordenamos uma sequência de ações, que são executadas no site, para alcançar o direcionamento.
 
