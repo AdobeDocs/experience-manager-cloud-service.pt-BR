@@ -2,16 +2,16 @@
 title: Gerenciar predefinições de imagens
 description: '"Saiba mais sobre predefinições de imagens e como criar, modificar e gerenciar predefinições de imagens."'
 feature: Predefinições de imagem, Visualizadores, Representações
-role: Business Practitioner
+role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '3653'
+source-wordcount: '3652'
 ht-degree: 10%
 
 ---
 
-# Gerenciando predefinições de imagens{#managing-image-presets}
+# Gerenciar predefinições de imagens{#managing-image-presets}
 
 As predefinições de imagens permitem que os ativos Adobe Experience Manager forneçam dinamicamente imagens de diferentes tamanhos, formatos diferentes ou com outras propriedades de imagem geradas dinamicamente. Cada predefinição de imagem representa uma coleção predefinida de comandos de tamanho e formato para a exibição de imagens. Ao criar uma Predefinição de imagem, você escolhe um tamanho para a entrega da imagem. Você também escolhe comandos de formatação para que a aparência da imagem seja otimizada quando a imagem for entregue para exibição.
 
@@ -35,7 +35,7 @@ As imagens que são reduzidas quando entregues dinamicamente podem perder nitide
 
 Os administradores podem criar Predefinições de imagem. Para criar uma predefinição de imagem, você pode começar do zero ou começar com uma existente e salvá-la com um novo nome.
 
-## Gerenciando predefinições de imagens {#managing-image-presets-1}
+## Gerenciar predefinições de imagens {#managing-image-presets-1}
 
 Gerencie as predefinições de imagens no Experience Manager tocando ou clicando no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, tocando ou clicando no ícone Ferramentas e navegando até **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 
@@ -78,7 +78,7 @@ Para usar o Dynamic Media para visualizar e gerar representações dinâmicas pa
 >
 >No fluxo de trabalho do ativo de atualização do DAM, a etapa de **[!UICONTROL Miniaturas do EPS]** gera miniaturas para arquivos EPS.
 
-#### Propriedades de metadados de ativos PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
+#### Propriedades de metadados de ativos de PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
 
 | **Propriedade de metadados** | **Descrição** |
 |---|---|
@@ -89,7 +89,7 @@ Você acessa `Rasterize PDF/AI Image Preview Rendition` as opções do component
 
 Toque em Adobe Experience Manager no canto superior esquerdo, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Na página Modelos de fluxo de trabalho , selecione **[!UICONTROL Ativo de atualização do DAM]** e, na barra de ferramentas, toque em **[!UICONTROL Editar]**. Na página do fluxo de trabalho Atualizar ativo do DAM , toque duas vezes no componente do processo `Rasterize PDF/AI Image Preview Rendition` para abrir a caixa de diálogo Propriedades da etapa .
 
-#### Rasterizar opções de representação de visualização de imagem PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
+#### Rasterizar opções de representação de visualização de imagem em PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Argumentos para rasterizar o fluxo de trabalho de PDF ou AI](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -108,7 +108,7 @@ Largura máxima e Altura máxima limitam a resolução na qual rasterizar. Por e
 
 O componente de processo `Rasterize PDF/AI Image Preview Rendition` tem um máximo definido para garantir que não crie imagens excessivamente grandes na memória. Imagens tão grandes podem estender a memória fornecida para a JVM (Java™ Virtual Machine). Deve-se tomar cuidado para fornecer à JVM memória suficiente para gerenciar o número configurado de fluxos de trabalho paralelos, cada um com o potencial de criar uma imagem no tamanho máximo configurado.
 
-### Formato de arquivo InDesign (INDD) {#indesign-indd-file-format}
+### Formato de arquivo INDD (InDesign) {#indesign-indd-file-format}
 
 Se você pretende suportar a assimilação de arquivos INDD para gerar a representação dinâmica desse formato de arquivo, analise as seguintes informações antes de criar predefinições de imagem.
 
@@ -293,7 +293,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
  </tbody>
 </table>
 
-#### Opções avançadas da guia {#advanced-tab-options}
+#### Opções avançadas de guia {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -428,7 +428,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
    ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### Editar predefinições de imagem {#modifying-image-presets}
+### Editar predefinições da imagem {#modifying-image-presets}
 
 1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 
@@ -441,7 +441,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
 As predefinições de imagens são publicadas automaticamente para você.
 
-### Excluindo predefinições de imagem {#deleting-image-presets}
+### Excluir predefinições de imagens {#deleting-image-presets}
 
 1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 1. Selecione uma predefinição e clique em **[!UICONTROL Delete]**. A Dynamic Media confirma que você deseja excluí-la. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
