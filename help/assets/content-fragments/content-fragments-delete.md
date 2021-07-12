@@ -1,22 +1,21 @@
 ---
 title: Fragmentos de conteúdo - excluir considerações
 description: Revise essas importantes considerações antes de definir as políticas de exclusão dos Fragmentos de conteúdo no AEM. Os Fragmentos de conteúdo são uma ferramenta poderosa para fornecer conteúdo sem interface, e as implicações de excluí-los devem ser cuidadosamente consideradas.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Fragmentos de conteúdo
+role: User
+exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '472'
 ht-degree: 10%
 
 ---
-
 
 # Fragmentos de conteúdo - excluir considerações {#content-fragments-delete-considerations}
 
 Revise essas importantes considerações antes de definir as políticas de exclusão dos Fragmentos de conteúdo no AEM. Os Fragmentos de conteúdo são uma ferramenta poderosa para fornecer conteúdo sem interface, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 
-## Permissões - excluir ou não excluir {#permissions-delete-or-not-delete}
+## Permissões - Excluir ou não excluir {#permissions-delete-or-not-delete}
 
 A capacidade de excluir conteúdo é poderosa, mas potencialmente sensível, com muitos setores precisando restringir e controlar a distribuição desses privilégios.
 
@@ -42,7 +41,7 @@ Em relação às permissões de exclusão, os Fragmentos de conteúdo devem ser 
 >
 >Consulte também Como auditar operações de gerenciamento de usuários em AEM. <!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
-## Permissões necessárias para a funcionalidade do editor somente {#permissions-required-for-editor-functionality-only}
+## Permissões necessárias somente para a funcionalidade do editor {#permissions-required-for-editor-functionality-only}
 
 Para usuários que precisam editar/atualizar um fragmento de conteúdo, **sem permitir que excluam um fragmento inteiro**, permissões específicas devem ser atribuídas, já que a operação básica do editor de fragmentos de conteúdo requer que elementos transitórios secundários possam ser excluídos.
 
