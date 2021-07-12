@@ -1,22 +1,21 @@
 ---
 title: Conteúdo associado
 description: Entenda como AEM recurso de conteúdo associado fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo, adicionando flexibilidade adicional à entrega de conteúdo sem periféricos.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Fragmentos de conteúdo
+role: User
+exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '246'
 ht-degree: 14%
 
 ---
-
 
 # Conteúdo associado{#associated-content}
 
 AEM recurso de conteúdo associado fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo. Isso proporciona flexibilidade para a entrega de conteúdo sem periféricos ao [fornecer um intervalo de ativos para acessar ao usar o fragmento de conteúdo em uma página,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado.
 
-## Adicionar Conteúdo Associado {#adding-associated-content}
+## Adicionar conteúdo associado {#adding-associated-content}
 
 >[!NOTE]
 >
@@ -43,7 +42,7 @@ Para fazer a associação, primeiro é necessário [adicionar o(s) ativo(s) de m
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
-## Editar Conteúdo Associado {#editing-associated-content}
+## Editar conteúdo associado {#editing-associated-content}
 
 Depois de associar uma coleção, você pode:
 
