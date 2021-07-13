@@ -2,10 +2,10 @@
 title: Migração para o AEM as a Cloud Service
 description: 'Recursos de autoajuda e links de documentação referentes à migração para o AEM as a Cloud Service '
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 86%
+source-wordcount: '657'
+ht-degree: 64%
 
 ---
 
@@ -19,26 +19,31 @@ ht-degree: 86%
 
 ## Benefícios da migração para o AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
-O AEM as a Cloud Service fornece uma base de tecnologia escalável, segura e ágil para Sites e Ativos do Experience Manager, permitindo que profissionais de marketing e TI se concentrem em fornecer experiências de impacto em grande escala.
+O AEM as a Cloud Service oferece uma base de tecnologia escalável, segura e ágil para os Experience Manager Assets, Forms e Screens, permitindo que os profissionais de marketing e TI se concentrem em fornecer experiências impactantes em escala.
 
 Com o AEM as a Cloud Service, suas equipes podem se concentrar em inovar em vez de planejar atualizações de produtos. Os novos recursos do produto são exaustivamente testados e entregues às suas equipes, sem interrupção, para que elas sempre tenham acesso ao aplicativo mais moderno e atual.
 
 ## Noções básicas sobre o processo de transição para o Cloud Service {#understanding-move}
 
-A jornada de transição para o Cloud Service envolve três fases - Planejamento, Execução e Pós ativação.
+A jornada de transição para o Cloud Service envolve as seguintes fases:
+
+* Prontidão
+* Implementação
+* Ativa
+* Postagem ativa
 
 Para uma transição tranquila e bem-sucedida, você deve garantir um planejamento adequado e seguir as melhores práticas descritas neste Guia.
 
-A figura abaixo mostra uma representação visual da jornada de transição recomendada para o Cloud Service.
+A figura abaixo mostra uma representação visual da jornada de transição recomendada para AEM como Cloud Service.
 
-![imagem](/help/move-to-cloud-service/assets/home-img1.png)
+![imagem](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
 
-Saiba mais sobre as diferentes fases envolvidas na jornada de transição para o Cloud Service:
 
-* **[Planejamento](/help/move-to-cloud-service/planning.md)**
-* **[Execução](/help/move-to-cloud-service/execution.md)**
-* **[Pós-ativação](/help/move-to-cloud-service/post-go-live.md)**
+## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
+O Cloud Acceleration Manager é um aplicativo baseado em nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, começando pelo planejamento até a ativação do Cloud Service. Configure suas equipes para uma migração bem-sucedida com práticas recomendadas, dicas, documentação e ferramentas do Adobe, recomendadas para ajudar em cada fase da jornada a AEM como Cloud Service.
+
+Consulte Introdução ao Cloud Acceleration Manager para iniciar sua jornada de migração.
 
 ## Guias do Experience Manager as a Cloud Service {#aem-guides}
 
@@ -52,6 +57,7 @@ Saiba mais sobre as diferentes fases envolvidas na jornada de transição para o
 | [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service. |
+| [Guia do usuário do Screens](/help/screens-cloud/home.md) | Saiba como usar e administrar o Experience Manager Screens como Cloud Service. |
 | [Implementação do Guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando AEM recursos avançados explorando esses tópicos de desenvolvimento e implantação. |
 | [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada com os recursos avançados e flexíveis do AEM para se preparar para o seu primeiro projeto sem periféricos. |
 | [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar conectores ao Experience Manager as a Cloud Service. |
