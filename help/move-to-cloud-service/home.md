@@ -2,10 +2,10 @@
 title: Migração para o AEM as a Cloud Service
 description: 'Recursos de autoajuda e links de documentação referentes à migração para o AEM as a Cloud Service '
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 8737463905ef604e7d42280e25fb1f48ed87c9f3
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 61%
+source-wordcount: '703'
+ht-degree: 60%
 
 ---
 
@@ -29,7 +29,7 @@ A jornada de transição para o Cloud Service envolve as seguintes fases:
 
 * [Prontidão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-readiness.html?lang=en)
 * [Implementação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-implementation.html?lang=en)
-* Ativa
+* [Ativa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-go-live.html?lang=en)
 * [Postagem ativa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-post-go-live.html?lang=en)
 
 Para uma transição tranquila e bem-sucedida, você deve garantir um planejamento adequado e seguir as melhores práticas descritas neste Guia.
