@@ -1,9 +1,9 @@
 ---
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '604'
 ht-degree: 4%
 
 ---
@@ -133,4 +133,4 @@ Siga esta seção para explorar o cartão de atividade Planejamento e configura�
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender a fazer logon no Cloud Acceleration Manager e a criar um projeto, agora você está pronto para passar para a próxima etapa, usando a fase de implementação.
+Depois de aprender a fazer logon no Cloud Acceleration Manager e a criar um projeto, agora você está pronto para passar para a próxima etapa, usando a [Fase de implementação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
