@@ -2,10 +2,10 @@
 title: Migração para o AEM as a Cloud Service
 description: 'Recursos de autoajuda e links de documentação referentes à migração para o AEM as a Cloud Service '
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 64%
+source-wordcount: '694'
+ht-degree: 61%
 
 ---
 
@@ -27,10 +27,10 @@ Com o AEM as a Cloud Service, suas equipes podem se concentrar em inovar em vez 
 
 A jornada de transição para o Cloud Service envolve as seguintes fases:
 
-* Prontidão
-* Implementação
+* [Prontidão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-readiness.html?lang=en)
+* [Implementação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-implementation.html?lang=en)
 * Ativa
-* Postagem ativa
+* [Postagem ativa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-post-go-live.html?lang=en)
 
 Para uma transição tranquila e bem-sucedida, você deve garantir um planejamento adequado e seguir as melhores práticas descritas neste Guia.
 
@@ -43,7 +43,7 @@ A figura abaixo mostra uma representação visual da jornada de transição reco
 
 O Cloud Acceleration Manager é um aplicativo baseado em nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, começando pelo planejamento até a ativação do Cloud Service. Configure suas equipes para uma migração bem-sucedida com práticas recomendadas, dicas, documentação e ferramentas do Adobe, recomendadas para ajudar em cada fase da jornada a AEM como Cloud Service.
 
-Consulte Introdução ao Cloud Acceleration Manager para iniciar sua jornada de migração.
+Consulte [Introdução ao Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en) para iniciar sua jornada de migração.
 
 ## Guias do Experience Manager as a Cloud Service {#aem-guides}
 
