@@ -5,10 +5,10 @@ breadcrumb-title: Guia de migração
 user-guide-description: Entenda a jornada de transição para o Cloud Service.
 feature: Implantação
 role: Architect, Developer
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 72%
+source-wordcount: '125'
+ht-degree: 54%
 
 ---
 
@@ -17,9 +17,18 @@ ht-degree: 72%
 
 + [Migração para o AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
 + Fases da jornada de transição {#phases}
-   + [Planejamento](/help/move-to-cloud-service/planning.md)
-   + [Execução](/help/move-to-cloud-service/execution.md)
-   + [Pós-ativação](/help/move-to-cloud-service/post-go-live.md)
+   + [Prontidão](/help/move-to-cloud-service/migration-readiness.md)
+   + [Implementação](/help/move-to-cloud-service/migration-implementation.md)
+   + [Postagem ativa](/help/move-to-cloud-service/migration-post-go-live.md)
++ Cloud Acceleration Manager {#cloud-acceleration-manager}
+   + Introdução ao Cloud Acceleration Manager {#introduction-cam}
+      + [Visão geral](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
+      + [Benefícios](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
+   + Uso do Cloud Acceleration Manager {#using-cam}
+      + [Introdução ao Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+      + [Fase de preparação](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+      + [Fase de implementação](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+      + [Ir para a Fase Ativa](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
 + Ferramentas de transição para a nuvem {#cloud-migration}
    + Analisador de práticas recomendadas {#best-practices-analyzer}
       + [Visão geral](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
