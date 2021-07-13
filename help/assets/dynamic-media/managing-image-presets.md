@@ -1,17 +1,17 @@
 ---
-title: Gerenciar predefinições de imagens
-description: '"Saiba mais sobre predefinições de imagens e como criar, modificar e gerenciar predefinições de imagens."'
+title: Gerenciar predefinições da imagem
+description: Saiba mais sobre predefinições de imagens e como criar, modificar e gerenciar predefinições de imagens.
 feature: Predefinições de imagem, Visualizadores, Representações
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '3652'
-ht-degree: 10%
+source-wordcount: '3634'
+ht-degree: 9%
 
 ---
 
-# Gerenciar predefinições de imagens{#managing-image-presets}
+# Gerenciar predefinições da imagem{#managing-image-presets}
 
 As predefinições de imagens permitem que os ativos Adobe Experience Manager forneçam dinamicamente imagens de diferentes tamanhos, formatos diferentes ou com outras propriedades de imagem geradas dinamicamente. Cada predefinição de imagem representa uma coleção predefinida de comandos de tamanho e formato para a exibição de imagens. Ao criar uma Predefinição de imagem, você escolhe um tamanho para a entrega da imagem. Você também escolhe comandos de formatação para que a aparência da imagem seja otimizada quando a imagem for entregue para exibição.
 
@@ -19,13 +19,13 @@ Os administradores podem criar predefinições para exportar ativos. Os usuário
 
 Também é possível criar predefinições de imagens responsivas. Se você aplicar uma predefinição de imagem responsiva a seus ativos, eles serão alterados dependendo do dispositivo ou do tamanho da tela em que são visualizados. Você pode configurar predefinições de imagens para usar CMYK no espaço de cores, além de RGB ou Cinza.
 
-Esta seção descreve como criar, modificar e gerenciar predefinições de imagens em geral. Você pode aplicar uma predefinição de imagem a uma imagem sempre que visualizá-la. Consulte [Aplicação de predefinições de imagem](/help/assets/dynamic-media/image-presets.md).
+Esta seção descreve como criar, modificar e gerenciar predefinições de imagens em geral. Você pode aplicar uma predefinição de imagem a uma imagem sempre que visualizá-la. Consulte [Aplicar predefinições de imagem](/help/assets/dynamic-media/image-presets.md).
 
 >[!NOTE]
 >
 >A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência nos últimos milissegundos do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Imagem inteligente](/help/assets/dynamic-media/imaging-faq.md) para obter mais informações.
 
-## Noções básicas sobre predefinições de imagens {#understanding-image-presets}
+## Saiba mais sobre predefinições de imagens {#understanding-image-presets}
 
 Como uma macro, uma Predefinição de imagem é uma coleção predefinida de comandos de dimensionamento e formatação salvos em um nome. Para entender como as Predefinições de imagem funcionam, suponha que o site exija que cada imagem do produto apareça em tamanhos diferentes, formatos diferentes e taxas de compactação para entrega de desktop e dispositivo móvel.
 
@@ -35,9 +35,9 @@ As imagens que são reduzidas quando entregues dinamicamente podem perder nitide
 
 Os administradores podem criar Predefinições de imagem. Para criar uma predefinição de imagem, você pode começar do zero ou começar com uma existente e salvá-la com um novo nome.
 
-## Gerenciar predefinições de imagens {#managing-image-presets-1}
+## Gerenciar predefinições da imagem {#managing-image-presets-1}
 
-Gerencie as predefinições de imagens no Experience Manager tocando ou clicando no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, tocando ou clicando no ícone Ferramentas e navegando até **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
+Gerencie as predefinições de imagens no Experience Manager selecionando o logotipo do Experience Manager para acessar o console de navegação global e, em seguida, selecionando o ícone Ferramentas e navegando até **[!UICONTROL Assets]** > **[!UICONTROL Predefinições de imagem]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -47,11 +47,11 @@ Gerencie as predefinições de imagens no Experience Manager tocando ou clicando
 >
 >Você *não* precisa publicar predefinições de imagens, pois as predefinições de imagens são publicadas automaticamente.
 >
->Consulte [Publicar predefinições de imagens](#publishing-image-presets).
+>Consulte [Publicar predefinições de imagem](#publishing-image-presets).
 
 >[!NOTE]
 >
->O sistema mostra várias representações ao selecionar **[!UICONTROL Representações]** na Exibição de Detalhes de um ativo. Você pode aumentar ou diminuir o número de predefinições de imagens exibidas. Consulte [Aumentar o número de predefinições de imagens exibidas](#increasing-or-decreasing-the-number-of-image-presets-that-display).
+>O sistema mostra várias representações ao selecionar **[!UICONTROL Representações]** na Exibição de Detalhes de um ativo. Você pode aumentar ou diminuir o número de predefinições de imagens exibidas. Consulte [Aumente o número de predefinições de imagens exibidas](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 ### Adobe Illustrator (AI), PostScript® (EPS) e formatos de arquivo PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -62,11 +62,11 @@ O formato de arquivo Adobe Illustrator é uma variante do PDF. As principais dif
 * Os documentos do Adobe Illustrator consistem em uma única página com várias camadas. Cada camada é extraída como um subativo PNG no ativo principal do Illustrator.
 * Os documentos PDF consistem em uma ou mais páginas. Cada página é extraída como um subativo PDF de página única sob o documento PDF principal de várias páginas.
 
-Os subativos são criados pelo componente `Create Sub Asset process` dentro do workflow geral `DAM Update Asset`. Para ver esse componente de processo no workflow, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Ativo de atualização DAM]** > **[!UICONTROL Editar]**.
+Os subativos são criados pelo componente `Create Sub Asset process` dentro do workflow geral `DAM Update Asset`. Para ver esse componente de processo no workflow, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Ativo de atualização DAM]** > **[!UICONTROL Editar]**.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
-Você pode exibir os subativos ou as páginas ao abrir o ativo, tocar no menu Conteúdo e selecionar **[!UICONTROL Subativos]** ou **[!UICONTROL Páginas]**. Os subativos são ativos reais. Ou seja, as páginas em PDF são extraídas pelo componente `Create Sub Asset` do fluxo de trabalho. Eles são armazenados como `page1.pdf`, `page2.pdf` e assim por diante, abaixo do ativo principal. Depois que são armazenados, o workflow `DAM Update Asset` os processa.
+É possível exibir os subativos ou as páginas ao abrir o ativo, selecionar o menu Conteúdo e selecionar **[!UICONTROL Subativos]** ou **[!UICONTROL Páginas]**. Os subativos são ativos reais. Ou seja, as páginas em PDF são extraídas pelo componente `Create Sub Asset` do fluxo de trabalho. Eles são armazenados como `page1.pdf`, `page2.pdf` e assim por diante, abaixo do ativo principal. Depois que são armazenados, o workflow `DAM Update Asset` os processa.
 
 Para usar o Dynamic Media para visualizar e gerar representações dinâmicas para arquivos AI, EPS ou PDF, as seguintes etapas de processamento são necessárias:
 
@@ -87,7 +87,7 @@ Para usar o Dynamic Media para visualizar e gerar representações dinâmicas pa
 
 Você acessa `Rasterize PDF/AI Image Preview Rendition` as opções do componente de processo por meio do workflow `DAM Update Asset`.
 
-Toque em Adobe Experience Manager no canto superior esquerdo, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Na página Modelos de fluxo de trabalho , selecione **[!UICONTROL Ativo de atualização do DAM]** e, na barra de ferramentas, toque em **[!UICONTROL Editar]**. Na página do fluxo de trabalho Atualizar ativo do DAM , toque duas vezes no componente do processo `Rasterize PDF/AI Image Preview Rendition` para abrir a caixa de diálogo Propriedades da etapa .
+Selecione no Adobe Experience Manager, no canto superior esquerdo, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Na página Modelos de fluxo de trabalho , selecione **[!UICONTROL Ativo de atualização do DAM]** e, na barra de ferramentas, selecione **[!UICONTROL Editar]**. Na página do fluxo de trabalho Atualizar ativo do DAM , toque duas vezes no componente do processo `Rasterize PDF/AI Image Preview Rendition` para abrir a caixa de diálogo Propriedades da etapa .
 
 #### Rasterizar opções de representação de visualização de imagem em PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -114,7 +114,7 @@ Se você pretende suportar a assimilação de arquivos INDD para gerar a represe
 
 Para arquivos InDesign, os sub-ativos são extraídos somente se o Adobe InDesign Server estiver integrado ao Experience Manager. Os ativos referenciados são vinculados com base em seus metadados. O InDesign Server não é necessário para vinculação. No entanto, os ativos referenciados devem estar presentes no Experience Manager antes que os arquivos do InDesign sejam processados para que os links sejam criados entre os arquivos do InDesign e os ativos referenciados.
 
-<!-- See [Integrating Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
+<!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
 
 O componente do processo de Extração de mídia no workflow `DAM Update Asset` executa vários scripts estendidos pré-configurados para processar arquivos de InDesign.
 
@@ -127,17 +127,17 @@ Os seguintes scripts são usados pela integração do Dynamic Media:
 
 | Nome do ExtendScript | Padrão | Descrição |
 |---|---|---|
-| ThumbnailExport.jsx | Sim | Gera uma representação de 300 ppi `thumbnail.jpg` que é otimizada e transformada em uma representação PTIFF por `Dynamic Media Process Image Assets` componente do processo. |
-| JPEGPagesExport.jsx | Sim | Gera um subativo JPEG de 300 ppi para cada página. O subativo JPEG é um ativo real armazenado no ativo do InDesign. Ele também é otimizado e transformado em PTIFF pelo workflow `DAM Update Asset` . |
+| ThumbnailExport.jsx | Sim | Gera uma representação de 300 PPI `thumbnail.jpg` que é otimizada e transformada em uma representação PTIFF por `Dynamic Media Process Image Assets` componente do processo. |
+| JPEGPagesExport.jsx | Sim | Gera um subativo 300 PPI JPEG para cada página. O subativo JPEG é um ativo real armazenado no ativo do InDesign. Ele também é otimizado e transformado em PTIFF pelo workflow `DAM Update Asset` . |
 | PDFPagesExport.jsx | Não | Gera um subativo PDF para cada página. O subativo PDF é processado conforme descrito anteriormente. Como o PDF contém apenas uma página, nenhum subativo é gerado. |
 
-### Configuração do tamanho da miniatura da imagem {#configuring-image-thumbnail-size}
+### Configurar o tamanho da miniatura da imagem {#configuring-image-thumbnail-size}
 
 Você pode configurar o tamanho das miniaturas definindo essas configurações no fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**. Há duas etapas no fluxo de trabalho, onde você pode configurar o tamanho da miniatura dos ativos de imagem. Um (**[!UICONTROL Ativos de imagem de processo do Dynamic Media]**) é usado para ativos de imagem dinâmicos. O outro (**[!UICONTROL Process Thumbnails]**) é usado para geração de miniaturas estáticas ou quando todos os outros processos não conseguem gerar miniaturas. Independentemente disso, *ambos* devem ter as mesmas configurações.
 
 Com a etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]**, as miniaturas são geradas pelo servidor de imagem e essa configuração é independente da configuração aplicada à etapa **[!UICONTROL Processar miniaturas]**. Gerar miniaturas por meio da etapa **[!UICONTROL Processar miniaturas]** é a maneira mais lenta e intensiva de memória para criar miniaturas.
 
-O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL width:height:center]**, por exemplo *80:80:false*. A largura e a altura determinam o tamanho em pixels da miniatura. O valor central é falso ou verdadeiro. Se definido como true, indica que a imagem em miniatura tem exatamente o tamanho fornecido na configuração. Se a imagem redimensionada for menor, ela será centralizada na miniatura.
+O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL width:height:center]**, por exemplo `80:80:false`. A largura e a altura determinam o tamanho em pixels da miniatura. O valor central é falso ou verdadeiro. Se definido como true, indica que a imagem em miniatura tem exatamente o tamanho fornecido na configuração. Se a imagem redimensionada for menor, ela será centralizada na miniatura.
 
 >[!NOTE]
 >
@@ -150,22 +150,22 @@ O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL w
 
 
 
-**Para configurar o tamanho da miniatura da imagem**
+**Para configurar o tamanho da miniatura da imagem:**
 
-1. Toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Ativo de atualização do DAM]** > **[!UICONTROL Editar]**.
-1. Toque na etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]** e toque na guia **[!UICONTROL Miniaturas]**. Altere o tamanho da miniatura, conforme necessário, e toque em **[!UICONTROL OK]**.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Ativo de atualização do DAM]** > **[!UICONTROL Editar]**.
+1. Selecione a etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]** e selecione a guia **[!UICONTROL Miniaturas]**. Altere o tamanho da miniatura, conforme necessário, e selecione **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Toque na etapa **[!UICONTROL Processar miniaturas]** e toque na guia **[!UICONTROL Miniaturas]**. Altere o tamanho da miniatura, conforme necessário, e toque em **[!UICONTROL OK]**.
+1. Selecione a etapa **[!UICONTROL Processar miniaturas]** e selecione a guia **[!UICONTROL Miniaturas]**. Altere o tamanho da miniatura, conforme necessário, e selecione **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
    >Os valores no argumento de miniaturas da etapa **[!UICONTROL Processar miniaturas]** devem corresponder ao argumento de miniaturas na etapa **[!UICONTROL Ativos de imagem do processo do Dynamic Media]**.
 
-1. Toque em **[!UICONTROL Salvar]** para salvar as alterações no fluxo de trabalho.
+1. Selecione **[!UICONTROL Save]** para guardar as alterações ao fluxo de trabalho.
 
-### Aumentar ou diminuir o número de predefinições de imagens exibidas {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### Aumente ou diminua o número de predefinições de imagens exibidas {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 As predefinições de imagens criadas estão disponíveis como representações dinâmicas ao visualizar ativos. O Experience Manager mostra várias representações dinâmicas ao visualizar um ativo de **[!UICONTROL Exibição de detalhes > Representações]**. Você pode aumentar ou diminuir o limite de representações exibidas.
 
@@ -182,11 +182,11 @@ As predefinições de imagens criadas estão disponíveis como representações 
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. Na propriedade limit , altere o número para o número desejado, por exemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Toque em **[!UICONTROL Salvar tudo]**.
+1. Selecione **[!UICONTROL Salvar tudo]**.
 
-### Criação de uma predefinição de imagem {#creating-image-presets}
+### Criar predefinições de imagens {#creating-image-presets}
 
-Criar uma predefinição de imagem permite aplicar essas configurações a qualquer imagem ao visualizar ou publicar.
+Crie predefinições de imagens para aplicar as configurações de forma consistente nas imagens ao visualizar ou publicar.
 
 >[!NOTE]
 >
@@ -200,10 +200,10 @@ Se você pretende suportar a assimilação de arquivos INDD para gerar a represe
 
 Consulte [InDesign (INDD) file format](#indesign-indd-file-format).
 
-**Para criar uma predefinição de imagem:**
+**Para criar predefinições de imagens:**
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
-1. Clique em **[!UICONTROL Criar]**. A janela **[!UICONTROL Editar predefinição de imagem]** é aberta.
+1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e, em seguida, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
+1. Selecione **[!UICONTROL Criar]**.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
@@ -211,15 +211,15 @@ Consulte [InDesign (INDD) file format](#indesign-indd-file-format).
    >
    >Para tornar essa predefinição de imagem responsiva, apague os valores nos campos **[!UICONTROL largura]** e **[!UICONTROL altura]** e deixe-os em branco.
 
-1. Insira valores nas guias **[!UICONTROL Básico]** e **[!UICONTROL Avançado]**, conforme apropriado, incluindo um nome. As opções são descritas em [Opções de predefinição de imagem](#image-preset-options). As predefinições aparecem no painel à esquerda e podem ser usadas junto com outros ativos.
+1. Na janela **[!UICONTROL Edit Image Preset]**, digite valores nas guias **[!UICONTROL Basic]** e **[!UICONTROL Advanced]**, conforme apropriado, incluindo um nome. As opções são descritas em [Opções de predefinição de imagem](#image-preset-options). As predefinições aparecem no painel à esquerda e podem ser usadas junto com outros ativos.
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. Clique em **[!UICONTROL Salvar]**.
+1. Selecione **[!UICONTROL Salvar]**.
 
 ### Criação de uma predefinição de imagem responsiva {#creating-a-responsive-image-preset}
 
-Para criar uma predefinição de imagem responsiva, execute as etapas em [Criação de predefinições de imagem](#creating-image-presets). Ao inserir a altura e a largura na janela **[!UICONTROL Editar predefinição de imagem]**, apague os valores e deixe-os em branco.
+Para criar uma predefinição de imagem responsiva, execute as etapas em [Criar predefinições de imagem](#creating-image-presets). Ao inserir a altura e a largura na janela **[!UICONTROL Editar predefinição de imagem]**, apague os valores e deixe-os em branco.
 
 Deixá-los em branco informa ao Experience Manager que essa predefinição de imagem é responsiva. É possível ajustar os outros valores, conforme necessário.
 
@@ -243,55 +243,12 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
 
 #### Opções básicas da guia {#basic-tab-options}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Texto</strong></td>
-   <td><strong>Descrição</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Nome</strong></td>
-   <td>Insira um nome descritivo sem espaços em branco. Para ajudar os usuários a identificar essa predefinição de imagem, inclua a especificação do tamanho da imagem no nome.</td>
-  </tr>
-  <tr>
-   <td><strong>Largura e altura</strong></td>
-   <td>Insira em pixels o tamanho em que a imagem é entregue. A largura e a altura devem ser maiores que 0 pixels. Se um dos valores for 0, nenhuma predefinição será criada. Se ambos os valores estiverem em branco, uma predefinição de imagem responsiva será criada.</td>
-  </tr>
-  <tr>
-   <td><strong>Formato</strong></td>
-   <td><p>Escolha um formato no menu .</p> <p>Escolher <strong>JPEG</strong> oferece as seguintes outras opções:</p>
-    <ul>
-     <li><strong>Qualidade</strong>  - Controla o nível de compactação JPEG. Essa configuração afeta o tamanho do arquivo e a qualidade da imagem. A escala de qualidade JPEG é de 1 a 100. A escala fica visível ao arrastar o controle deslizante.</li>
-     <li><strong>Ativar a Redução do Chrominance JPG</strong>  - Como o olho é menos sensível às informações de cores de alta frequência do que à luminância de alta frequência, as imagens JPEG dividem as informações da imagem em componentes de luminância e cor. Quando uma imagem JPEG é compactada, o componente de luminância é deixado em resolução completa, enquanto os componentes de cor são reduzidos pela média de grupos de pixels. A redução da amostragem reduz o volume de dados em um terço ou metade, quase sem impacto na qualidade percebida. A redução da amostragem não é aplicável a imagens em tons de cinza. Essa técnica reduz a quantidade de compactação útil para imagens com alto contraste (por exemplo, imagens com texto sobreposto).</li>
-    </ul>
-    <div>
-      Escolha
-     <strong>GIF</strong> ou
-     <strong>GIF com alfa</strong> fornece esses itens adicionais
-     Opções <strong>GIF Color Quantization</strong>:
-    </div>
-    <ul>
-     <li><strong>Tipo  </strong>- Selecione  <strong>Adaptável</strong>  (padrão),  <strong>Web</strong> ou  <strong>Macintosh</strong>. Se você selecionar <strong>GIF com Alpha</strong>, a opção Macintosh não estará disponível.</li>
-     <li><strong>Pontilhamento</strong>  - Selecione  <strong></strong> Difusor  <strong>Off</strong>.</li>
-     <li><strong>Número de Cores  </strong>- Insira um número de 2 a 256.</li>
-     <li><strong>Lista de cores</strong>  - digite uma lista separada por vírgulas. Por exemplo, para branco, cinza e preto, digite 00000,888888,ffff.</li>
-    </ul>
-    <div>
-      Escolha
-     <strong>PDF</strong>,
-     <strong>TIFF</strong>, ou
-     <strong>TIFF com alfa</strong> fornece esta opção adicional:
-    </div>
-    <ul>
-     <li><strong>Compactação</strong>  - Selecione um algoritmo de compactação. As opções de algoritmo para PDF são <strong>None</strong>, <strong>Zip</strong> e <strong>Jpeg</strong>; para TIFF são <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> e <strong>Zip</strong>; e para TIFF com Alfa são <strong>None</strong>, <strong>LZW</strong> e <strong>Zip</strong>.</li>
-    </ul> <p>Escolher <strong>PNG</strong>, <strong>PNG com Alfa,</strong> ou <strong>EPS</strong> não fornece opções adicionais.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Nitidez</strong></td>
-   <td>Selecione a opção <strong>Ativar nitidez simples</strong> para aplicar um filtro de nitidez básico à imagem depois que toda a escala ocorrer. A nitidez pode ajudar a compensar a indefinição que pode resultar na exibição de uma imagem em um tamanho diferente. </td>
-  </tr>
- </tbody>
-</table>
+| Texto | Descrição |
+| --- | --- |
+| **Nome** | Insira um nome descritivo sem espaços em branco. Para ajudar os usuários a identificar essa predefinição de imagem, inclua a especificação do tamanho da imagem no nome. |
+| **Largura e altura** | Insira em pixels o tamanho em que a imagem é entregue. A largura e a altura devem ser maiores que 0 pixels. Se um dos valores for 0, nenhuma predefinição será criada. Se ambos os valores estiverem em branco, uma predefinição de imagem responsiva será criada. |
+| **Formato** | Escolha um formato no menu .<br>Escolher  **** JPEGoferece as seguintes outras opções:<br> ・  **Qualidade**  - A escala de qualidade JPEG é de 1 a 100. A escala fica visível ao arrastar o controle deslizante.<br>・  **Ativar a redução do crominância JPG**  - Como o olho é menos sensível a informações de cores de alta frequência do que a luminância de alta frequência, as imagens JPEG dividem as informações da imagem em componentes de luminância e cor. Quando uma imagem JPEG é compactada, o componente de luminância é deixado em resolução completa, enquanto os componentes de cor são reduzidos pela média de grupos de pixels. A redução da amostragem reduz o volume de dados em um terço ou metade, quase sem impacto na qualidade percebida. A redução da amostragem não é aplicável a imagens em tons de cinza. Essa técnica reduz a quantidade de compactação útil para imagens com alto contraste (por exemplo, imagens com texto sobreposto).<br><br>Escolher  **** GIFou  **GIF com** alfabeto fornece estas opções adicionais de  **Quantizaçãode cor** GIF:<br>  **Tipo de ・**  - Selecione  **Adaptável**  (padrão),  **Web** ou  **Macintosh**. Se você selecionar **GIF com Alpha**, a opção Macintosh não estará disponível.<br>・  **Pontilhamento**  - Selecione  **** Difusor  **Off**.<br>・  **Número de Cores**  - Insira um número 2 - 256.<br>・  **Lista de cores**  - digite uma lista separada por vírgulas. Por exemplo, para branco, cinza e preto, digite `000000,888888,ffffff`.<br><br>Escolher  **PDF**,  **TIFF** ou  **TIFF com** alfabeto fornece esta opção adicional:<br> ・  **Compressão**  - Selecione um algoritmo de compactação. As opções de algoritmo para PDF são **None**, **Zip** e **Jpeg**; para TIFF são **None**, **LZW**, **Jpeg** e **Zip**; e para TIFF com Alfa são **None**, **LZW** e **Zip**.<br><br>Escolher  **PNG**,  **PNG com Alfa** ou  **** EPS não fornece opções adicionais. |
+| **Nitidez** | Selecione **Ativar nitidez simples** para aplicar um filtro de nitidez básico à imagem depois que toda a escala ocorrer. A nitidez pode ajudar a compensar a indefinição que pode resultar na exibição de uma imagem em um tamanho diferente. |
 
 #### Opções avançadas de guia {#advanced-tab-options}
 
@@ -378,7 +335,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
  </tbody>
 </table>
 
-### Definição das opções de predefinição de imagem com modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
+### Definir opções predefinidas de imagem com modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
 
 Além das opções disponíveis nas guias Básico e Avançado , é possível definir modificadores de imagem para fornecer mais opções ao definir predefinições de imagem. A renderização de imagem depende da API de renderização de imagem do Dynamic Media e é definida detalhadamente no [Referência de protocolo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
 
@@ -428,20 +385,21 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
    ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### Editar predefinições da imagem {#modifying-image-presets}
+### Editar predefinições de imagens {#modifying-image-presets}
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
+1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e, em seguida, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
-1. Selecione uma predefinição e clique em **[!UICONTROL Editar]**. A janela **[!UICONTROL Editar predefinição de imagem]** é aberta.
-1. Faça alterações e clique em **[!UICONTROL Save]** para salvar as alterações ou em **[!UICONTROL Cancelar]** para cancelar as alterações.
+1. Selecione uma predefinição e depois selecione **[!UICONTROL Editar]**. A janela **[!UICONTROL Editar predefinição de imagem]** é aberta.
+1. Faça alterações e selecione **[!UICONTROL Salvar]** para salvar suas alterações ou **[!UICONTROL Cancelar]** para cancelar suas alterações.
 
-### Publicar predefinições da imagem {#publishing-image-presets}
+### Publicar predefinições de imagens {#publishing-image-presets}
 
 As predefinições de imagens são publicadas automaticamente para você.
 
 ### Excluir predefinições de imagens {#deleting-image-presets}
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
-1. Selecione uma predefinição e clique em **[!UICONTROL Delete]**. A Dynamic Media confirma que você deseja excluí-la. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
+1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e selecione o ícone Ferramentas .
+1. Navegue até **[!UICONTROL Assets]** > **[!UICONTROL Predefinições de imagem]**.
+1. Selecione uma predefinição e, em seguida, **[!UICONTROL Delete]**. A Dynamic Media confirma que você deseja excluí-la. Selecione **[!UICONTROL Delete]** para remover ou selecione **[!UICONTROL Cancelar]** para retornar às Predefinições de imagem.
