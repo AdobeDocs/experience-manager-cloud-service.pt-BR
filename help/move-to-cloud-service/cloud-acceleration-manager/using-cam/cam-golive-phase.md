@@ -1,10 +1,10 @@
 ---
 title: Fase de ativação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral da fase de ativação no Cloud Acceleration Manager.
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 2%
+source-wordcount: '157'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Clique no cartão do projeto para abrir a página de aterrissagem do projeto e n
 ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->Consulte Criação e gerenciamento de um projeto no Cloud Acceleration Manager para saber mais.
+>Consulte [Criação e gerenciamento de um projeto no Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) para saber mais.
 
 
 ## Uso do cartão de atividade Go Live {#go-live}
