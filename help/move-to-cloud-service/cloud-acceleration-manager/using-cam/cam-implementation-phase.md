@@ -1,9 +1,9 @@
 ---
 title: Fase de implementação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral da fase de implementação no Cloud Acceleration Manager.
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '585'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Clique no cartão do projeto para abrir a página de aterrissagem do projeto e n
 ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->Consulte Criação e gerenciamento de um projeto no Cloud Acceleration Manager para saber mais.
+>Consulte [Criação e gerenciamento de um projeto no Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) para saber mais.
 
 
 ## Usando o cartão de desenvolvimento local {#local-development}
@@ -102,4 +102,4 @@ Você também pode estimar o tamanho de caminhos de repositório específicos us
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender como fazer logon no Cloud Acceleration Manager e como utilizar a fase de Implementação, agora você está pronto para passar para a próxima etapa, Usando a Fase do GoLive.
+Depois de aprender como fazer logon no Cloud Acceleration Manager e como utilizar a fase de Implementação, agora você está pronto para avançar para a revisão da próxima etapa, [Usando a Fase de ativação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en).
