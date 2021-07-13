@@ -1,9 +1,9 @@
 ---
 title: Benefícios do uso do Cloud Acceleration Manager
 description: Esta página destaca os principais benefícios do uso do Cloud Acceleration Manager.
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Os principais benefícios do uso do Cloud Acceleration Manager são:
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber o que é o Cloud Acceleration Manager, você estará pronto para usar e começar a usar o Cloud Acceleration Manager.
+Depois de saber o que é o Cloud Acceleration Manager, você estará pronto para usar e [Introdução ao Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
