@@ -1,10 +1,7 @@
 ---
 title: Introdução ao Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre como usar e começar a usar o Cloud Acceleration Manager.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 3%
@@ -80,7 +77,7 @@ Siga as etapas abaixo para editar seu projeto:
 
 1. Clique em **Atualizar** para confirmar as alterações.
 
-### Excluindo o Projeto {#delete-project}
+### Excluindo o projeto {#delete-project}
 
 Siga as etapas abaixo para excluir seu projeto:
 
