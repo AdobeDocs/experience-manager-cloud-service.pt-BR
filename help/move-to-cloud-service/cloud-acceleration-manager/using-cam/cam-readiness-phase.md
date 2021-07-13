@@ -1,17 +1,17 @@
 ---
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 4%
+source-wordcount: '670'
+ht-degree: 5%
 
 ---
 
 
 # Fase de disponibilidade no Cloud Acceleration Manager {#readiness-phase-cam}
 
-Depois de criar um projeto no Cloud Acceleration Manager, você pode começar a executar as ferramentas disponíveis na fase Preparação.
+Depois de criar um projeto no Cloud Acceleration Manager, você pode iniciar a avaliação da implementação de AEM atual na fase Preparação.
 
 A Fase de preparação inclui:
 
@@ -39,7 +39,10 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
 
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Siga estas etapas para baixar o BPA (Best Practices Analyzer) e executá-lo em um clone de seu sistema de AEM.
+1. Siga estas etapas para baixar o BPA (Best Practices Analyzer).
+
+   >[!NOTE]
+   >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o BPA em um ambiente de Autor o mais próximo possível do ambiente de Produção nas áreas de personalizações, configurações, conteúdo e aplicativos de usuários. Como alternativa, ele pode ser executado em um clone do ambiente de Autor de produção.
 
    1. Navegue até o portal [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) e baixe o Analisador de práticas recomendadas como um arquivo zip.
 
@@ -82,7 +85,7 @@ O cartão **Propriedades do relatório** fornece informações sobre propriedade
 
 #### Visão geral do relatório {#report-overview}
 
-Este cartão **Visão geral do relatório** fornece as conclusões do relatório, conforme mostrado na figura abaixo.
+Este cartão **Visão geral do relatório** fornece as conclusões do relatório e os níveis de gravidade que se aplicam ao avaliar a disponibilidade para mudar para AEM como um Cloud Service, conforme mostrado na figura abaixo.
 
 ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -123,14 +126,14 @@ Você pode revisar as seguintes informações nesta guia:
 
 Siga esta seção para explorar o cartão de atividade Planejamento e configuração.
 
-1. Clique no botão **Exibir** do cartão **Planejamento e Configuração** que fornece todo o conteúdo relevante que ajudará você a planejar e configurar sua migração de AEM.
+1. Clique no botão **Exibir** do cartão **Planejamento e Configuração**. Este cartão fornece todo o conteúdo relevante que ajudará você a planejar e configurar sua migração de AEM.
 
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
-1. Um carrossel de conteúdo com informações relevantes para essa fase da jornada de migração é exibido.
+1. Um carrossel de conteúdo exibe todas as informações relevantes para essa fase da jornada de migração.
 
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender a fazer logon no Cloud Acceleration Manager e a criar um projeto, agora você está pronto para passar para a próxima etapa, usando a [Fase de implementação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Depois de aprender a fazer logon no Cloud Acceleration Manager e a criar um projeto, agora você está pronto para passar para a revisão da próxima etapa na [Fase de implementação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
