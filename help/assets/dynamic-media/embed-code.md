@@ -1,17 +1,17 @@
 ---
-title: Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web
+title: Incorporar o visualizador de vídeo ou imagem do Dynamic Media em uma página da Web
 description: Saiba como incorporar vídeos ou ativos de imagem do Dynamic Media em uma página da Web.
 feature: Gerenciamento de ativos
 role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 21%
 
 ---
 
-# Incorporação do vídeo do Dynamic Media, visualizador de imagens ou visualizador Dimensional em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Incorporar o vídeo do Dynamic Media, o visualizador de imagens ou o visualizador dimensional em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]**.
 
@@ -27,9 +27,9 @@ Consulte [Fornecer imagens otimizadas para um site responsivo](responsive-site.m
 >
 >Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 >
->Consulte [Predefinições do visualizador de publicação](managing-viewer-presets.md#publishing-viewer-presets).
+>Consulte [Publicar predefinições do visualizador](managing-viewer-presets.md#publishing-viewer-presets).
 >
->Consulte [Publicar predefinições de imagens](managing-image-presets.md#publishing-image-presets).
+>Consulte [Publicar predefinições de imagem](managing-image-presets.md#publishing-image-presets).
 
 **Para incorporar o visualizador de vídeo ou imagem do Dynamic Media em uma página da Web:**
 
@@ -39,14 +39,14 @@ Consulte [Fornecer imagens otimizadas para um site responsivo](responsive-site.m
 
    Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
-   Consulte [Predefinições do visualizador de publicação](managing-viewer-presets.md#publishing-viewer-presets).
+   Consulte [Publicar predefinições do visualizador](managing-viewer-presets.md#publishing-viewer-presets).
 
-   Consulte [Publicar predefinições de imagens](managing-image-presets.md#publishing-image-presets).
+   Consulte [Publicar predefinições de imagem](managing-image-presets.md#publishing-image-presets).
 
-1. No painel à esquerda, selecione a lista suspensa e toque em **[!UICONTROL Visualizadores]**.
-1. No painel à esquerda, toque em um nome de predefinição do visualizador. A predefinição do visualizador é aplicada ao ativo.
-1. Toque em **[!UICONTROL Incorporar]**.
-1. Na caixa de diálogo **[!UICONTROL Incorporar código]**, copie o código inteiro para a área de transferência e toque em **[!UICONTROL Fechar]**.
+1. No painel à esquerda, selecione a lista suspensa e selecione **[!UICONTROL Visualizadores]**.
+1. No painel à esquerda, selecione um nome de predefinição do visualizador. A predefinição do visualizador é aplicada ao ativo.
+1. Selecione **[!UICONTROL Incorporar]**.
+1. Na caixa de diálogo **[!UICONTROL Incorporar código]**, copie o código inteiro para a área de transferência e selecione **[!UICONTROL Fechar]**.
 1. Cole o código incorporado nas páginas da Web.
 
 ## Usar HTTP/2 para fornecer ativos da Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
