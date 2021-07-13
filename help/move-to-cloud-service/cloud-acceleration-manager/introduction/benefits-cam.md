@@ -1,12 +1,9 @@
 ---
 title: Benefícios do uso do Cloud Acceleration Manager
 description: Esta página destaca os principais benefícios do uso do Cloud Acceleration Manager.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -14,13 +11,25 @@ ht-degree: 0%
 
 # Benefícios do uso do Cloud Acceleration Manager {#benefits-cam}
 
-O Cloud Acceleration Manager é um aplicativo gratuito baseado em nuvem que fornece uma avaliação da implementação atual do Adobe Experience Manager (AEM) de um cliente e ajuda a gerenciar sua jornada para o AEM como Cloud Service, seguindo a metodologia de migração recomendada pelo Adobe.
+Com uma grande variedade de requisitos comerciais e personalizações, a migração para a nuvem pode ser um projeto envolvido. O Cloud Acceleration Manager (CAM) equipe suas equipes com uma experiência guiada com as práticas recomendadas e a metodologia do Adobe para ajudar suas equipes a planejar, implementar e ativar com confiança.
 
 Os principais benefícios do uso do Cloud Acceleration Manager são:
 
-* Fornece uma avaliação em um formato fácil de consumir.
-* Guias e gerencia a jornada de transição.
-* Fornece práticas recomendadas, ajuda relevante e acesso a ferramentas para minimizar o tempo de migração.
+1. Planeje melhor e mais inteligente:
+
+   * Simplifique a avaliação da sua instância atual por meio de uma representação visual fácil de ler dos resultados.
+
+   * Avalie e entenda a complexidade estimada da mudança para o AEM como um Cloud Service com um relatório personalizado detalhado.
+
+1. Simplifique a mudança com orientações completas:
+
+   * Gerencie a jornada de migração com inteligência integrada que fornece ajuda contextual ao longo do caminho.
+
+   * Revise e identifique as áreas que não são aceitas no AEM como um Cloud Service ou que exigem refatoração para garantir a compatibilidade.
+
+1. Otimize os esforços:
+
+   Acesse as práticas recomendadas pelo Adobe e as ferramentas de automação para ajudar a acelerar os esforços de migração e o acesso às ferramentas, a fim de minimizar o tempo de migração.
 
 ## O que vem a seguir {#whats-next}
 
