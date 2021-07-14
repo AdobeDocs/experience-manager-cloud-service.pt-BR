@@ -4,26 +4,26 @@ description: Saiba como usar o recurso de código responsivo para fornecer image
 feature: Gerenciamento de ativos
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 12%
+ht-degree: 10%
 
 ---
 
-# Entrega de imagens otimizadas para um site responsivo {#delivering-optimized-images-for-a-responsive-site}
+# Fornecer imagens otimizadas para um site responsivo {#delivering-optimized-images-for-a-responsive-site}
 
 Use o recurso de código responsivo quando quiser compartilhar o código para serviço responsivo com seu desenvolvedor da Web. Você copia o código responsivo (**[!UICONTROL RESS]**) para a área de transferência para compartilhá-lo com o desenvolvedor da Web.
 
 Esse recurso faz sentido usar se o site estiver em um WCM de terceiros. No entanto, se seu site estiver no Adobe Experience Manager, um servidor de imagem externo renderiza a imagem e a fornece à página da Web.
 
-Consulte também [Incorporação do visualizador de vídeo em uma página da Web](embed-code.md).
+Consulte também [Incorporar o visualizador de vídeo em uma página da Web](embed-code.md).
 
-Consulte também [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebapplication.md).
+Consulte também [Vincular URLs ao seu aplicativo Web](linking-urls-to-yourwebapplication.md).
 
 **Para fornecer imagens otimizadas para um site responsivo:**
 
-1. Navegue até a imagem para a qual deseja fornecer o código responsivo e, no menu suspenso, toque em **[!UICONTROL Representações]**.
+1. Navegue até a imagem para a qual deseja fornecer o código responsivo e, no menu suspenso, selecione **[!UICONTROL Representações]**.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -37,7 +37,7 @@ Consulte também [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebap
    >
    >As predefinições de imagens são publicadas automaticamente.
 
-1. Toque em **[!UICONTROL RESS]**.
+1. Selecione **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
