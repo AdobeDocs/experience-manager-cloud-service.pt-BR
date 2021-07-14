@@ -3,10 +3,10 @@ title: Solução de problemas do Dynamic Media
 description: Dicas de solução de problemas ao usar o Dynamic Media.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 2%
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
@@ -16,13 +16,13 @@ O tópico a seguir descreve a solução de problemas para o Dynamic Media.
 
 ## Nova configuração do Dynamic Media {#new-dm-config}
 
-Consulte [Resolução de problemas de uma nova configuração do Dynamic Media](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
+Consulte [Solucionar problemas de uma nova configuração do Dynamic Media](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
 ## Geral (Todos os Ativos) {#general-all-assets}
 
 Veja a seguir algumas dicas e truques gerais para todos os ativos.
 
-### Propriedades do Status da Sincronização de Ativos {#asset-synchronization-status-properties}
+### Propriedades de status da sincronização de ativos {#asset-synchronization-status-properties}
 
 As seguintes propriedades de ativos podem ser revisadas no CRXDE Lite para confirmar a sincronização bem-sucedida do ativo do Adobe Experience Manager para o Dynamic Media:
 
@@ -33,7 +33,7 @@ As seguintes propriedades de ativos podem ser revisadas no CRXDE Lite para confi
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Deve ser preenchido para gerar URLs para um ativo remoto do Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **** sucessor  **falhou:`<error text>`** | Status de sincronização de conjuntos (conjuntos de rotação, conjuntos de imagens e assim por diante), predefinições de imagens, predefinições do visualizador, atualizações de mapa de imagens para um ativo ou imagens que foram editadas. |
 
-### Registro de Sincronização {#synchronization-logging}
+### Registro de sincronização {#synchronization-logging}
 
 Erros e problemas de sincronização são registrados em `error.log` (diretório do servidor do Experience Manager `/crx-quickstart/logs/`). O registro em log é suficiente para determinar a causa raiz da maioria dos problemas, no entanto, é possível aumentar o registro em DEBUG no pacote `com.adobe.cq.dam.ips` por meio do Console do Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) para coletar mais informações.
 
@@ -179,11 +179,11 @@ Se tiver problemas com os visualizadores, consulte a seguinte orientação para 
   <tr>
    <td>As predefinições do visualizador não são publicadas</td>
    <td><p>Vá para a página de diagnóstico do gerenciador de exemplo: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe valores calculados. Ao operar corretamente, você verá:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Observação</strong>: Pode levar cerca de 10 minutos após a configuração das configurações de nuvem do Dynamic Media para que os ativos do visualizador sejam sincronizados.</p> <p>Se os ativos não ativados permanecerem, clique em um dos botões <strong>Listar todos os ativos não ativados</strong> para ver os detalhes.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Observação</strong>: Pode levar cerca de 10 minutos após a configuração das configurações de nuvem do Dynamic Media para que os ativos do visualizador sejam sincronizados.</p> <p>Se os ativos não ativados permanecerem, selecione um dos botões <strong>Listar todos os ativos não ativados</strong> para ver os detalhes.</p> </td>
    <td>
     <ol>
      <li>Navegue até a lista predefinida do visualizador nas ferramentas administrativas: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Selecione todas as predefinições do visualizador e clique em <strong>Publicar</strong>.</li>
+     <li>Selecione todas as predefinições do visualizador e selecione <strong>Publicar</strong>.</li>
      <li>Navegue de volta ao gerenciador de amostra e observe que a contagem de ativos não ativados agora é zero.</li>
     </ol> </td>
   </tr>
