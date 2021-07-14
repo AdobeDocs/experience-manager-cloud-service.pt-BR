@@ -4,10 +4,10 @@ description: Saiba como trabalhar com conjuntos de rotação no Dynamic Media.
 feature: Conjuntos de rotação
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 12%
+source-wordcount: '1818'
+ht-degree: 9%
 
 ---
 
@@ -91,7 +91,7 @@ Veja a seguir algumas práticas recomendadas sobre imagens de conjunto de rotaç
 * Verifique se os detalhes do produto estão bem iluminados e em foco.
 * Use imagens de rotação para roupas de moda com um manequim ou modelo. Frequentemente, o manequim é mascarado (utilizando um manequim de vidro) ou na imagem aparece um manequim/moldura estilizada. Você pode criar um conjunto de rotação no modelo definindo o número de ângulos. Marque cada ângulo com uma fita no chão para que você possa guiar o modelo para pisar e olhar na direção de cada tomada.
 
-## Criação de conjuntos de rotação {#creating-spin-sets}
+## Criar conjuntos de rotação {#creating-spin-sets}
 
 Esta seção descreve como criar Conjuntos de rotação.
 
@@ -99,7 +99,7 @@ Esta seção descreve como criar Conjuntos de rotação.
 >
 >Também é possível criar conjuntos de rotação automaticamente por meio de [predefinições de conjuntos em lotes](/help/assets/dynamic-media/config-dm.md). **Importante:** os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da ingestão de ativos.
 >
->Consulte &quot;Criando predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação&quot; em [Configurando o Dynamic Media](/help/assets/dynamic-media/config-dm.md).
+>Consulte &quot;Criando predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação&quot; em [Configurar Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Esta seção descreve como criar Conjuntos de rotação.
 
 **Para criar Conjuntos de rotação:**
 
-1. No Assets, navegue até o local em que deseja criar um conjunto de rotação, clique em **[!UICONTROL Criar]** e selecione **[!UICONTROL Conjunto de rotação]**. Além disso, crie o conjunto de dentro de uma pasta que contenha seus ativos. O Editor de conjunto de rotação é exibido.
+1. No Assets, navegue até o local em que deseja criar um conjunto de rotação, selecione **[!UICONTROL Criar]** e selecione **[!UICONTROL Conjunto de rotação]**. Além disso, crie o conjunto de dentro de uma pasta que contenha seus ativos.
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -117,16 +117,16 @@ Esta seção descreve como criar Conjuntos de rotação.
 
    >[!NOTE]
    >
-   >Ao criar o conjunto de rotação, você pode alterar a miniatura do conjunto de rotação ou permitir que o Experience Manager selecione a miniatura automaticamente com base nos ativos no conjunto de rotação. Para selecionar uma miniatura, clique em **[!UICONTROL Change thumbnail]** e selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). Se tiver selecionado uma miniatura e decidir que deseja que o Experience Manager gere uma a partir do conjunto de rotação, selecione **[!UICONTROL Alternar para a miniatura automática]**.
+   >Ao criar o conjunto de rotação, você pode alterar a miniatura do conjunto de rotação ou permitir que o Experience Manager selecione a miniatura automaticamente com base nos ativos no conjunto de rotação. Para selecionar uma miniatura, selecione **[!UICONTROL Change thumbnail]** e selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). Se tiver selecionado uma miniatura e decidir que deseja que o Experience Manager gere uma a partir do conjunto de rotação, selecione **[!UICONTROL Alternar para a miniatura automática]**.
 
 1. Siga um destes procedimentos:
 
-   * Próximo ao canto superior esquerdo da página Editor do conjunto de rotação, toque em **[!UICONTROL Adicionar ativo]**.
+   * Próximo ao canto superior esquerdo da página Editor do conjunto de rotação, selecione **[!UICONTROL Adicionar ativo]**.
 
-   * Próximo ao meio da página Editor do conjunto de rotação, toque em **[!UICONTROL Toque para abrir o Seletor de ativo]**.
-   Toque para selecionar ativos que deseja incluir no seu Conjunto de rotação. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, toque em **[!UICONTROL Selecionar]**.
+   * Próximo ao meio da página Editor do conjunto de rotação, selecione **[!UICONTROL Toque para abrir o Seletor de ativo]**.
+   Selecione os ativos que deseja incluir no seu Conjunto de rotação. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Select]**.
 
-   Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e toque no ícone **[!UICONTROL Filtro]**, na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista]**.
+   Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e depois selecione o ícone **[!UICONTROL Filter]** na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista]**.
 
    Consulte [Trabalhar com seletores](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -136,17 +136,17 @@ Esta seção descreve como criar Conjuntos de rotação.
 
    Se necessário, arraste o ícone Reordenar de um ativo à direita do nome do arquivo do ativo para reorganizar as imagens para cima ou para baixo na lista definida.
 
-   ![Reorganização do Quadro 11 no conjunto de rotação arrastando-o para um novo local](assets/6_5_spinset-reorderassets.png)
+   ![Reorganizar quadro 11 no conjunto de rotação arrastando-o para um novo local](assets/6_5_spinset-reorderassets.png)
 
    Reorganizando o Quadro 11 no conjunto de rotação arrastando-o para um novo local.
 
 1. (Opcional) Siga um destes procedimentos:
 
-   * Para excluir uma imagem, selecione-a e toque em **[!UICONTROL Excluir ativo]**.
+   * Para excluir uma imagem, selecione a imagem e selecione **[!UICONTROL Excluir ativo]**.
 
-   * Para aplicar uma predefinição, próximo ao canto superior direito da página, toque em **[!UICONTROL Predefinição]** e selecione uma predefinição para aplicar a todos os ativos ao mesmo tempo.
+   * Para aplicar uma predefinição, próximo ao canto superior direito da página, selecione **[!UICONTROL Predefinição]** e selecione uma predefinição para aplicar a todos os ativos ao mesmo tempo.
 
-1. Clique em **[!UICONTROL Salvar]**. O Conjunto de rotação recém-criado é exibido na pasta em que você o criou.
+1. Selecione **[!UICONTROL Salvar]**. O Conjunto de rotação recém-criado é exibido na pasta em que você o criou.
 
 ## Visualização de conjuntos de rotação {#viewing-spin-sets}
 
@@ -154,11 +154,11 @@ Você pode criar conjuntos de rotação na interface do usuário ou automaticame
 
 >[!NOTE]
 >
->Também é possível visualizar conjuntos por meio da interface do usuário, conforme descrito em [Editar conjuntos de rotação](#editing-spin-sets).
+>Você também pode visualizar conjuntos por meio da interface do usuário, conforme descrito em [Editar conjuntos de rotação](#editing-spin-sets).
 
 **Para exibir Conjuntos de rotação:**
 
-1. Ao abrir as propriedades de um ativo individual. As propriedades indicam o que define o ativo selecionado como membro (em **[!UICONTROL Membro de Conjuntos]**). Para ver o conjunto inteiro, toque no nome do conjunto.
+1. Ao abrir as propriedades de um ativo individual. As propriedades indicam o que define o ativo selecionado como membro (em **[!UICONTROL Membro de Conjuntos]**). Para ver o conjunto inteiro, selecione o nome do conjunto.
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
@@ -182,35 +182,35 @@ Você pode executar várias tarefas de edição em Conjuntos de rotação, como 
 * Aplicar predefinições do visualizador.
 * Exclua o Conjunto de rotação.
 
-**Para editar um Conjunto de rotação:**
+**Para editar Conjuntos de rotação:**
 
 1. Siga um destes procedimentos:
 
-   * Passe o mouse sobre um ativo Conjunto de rotação, em seguida toque em **[!UICONTROL Editar]** (ícone de lápis).
-   * Passe o mouse sobre um ativo Conjunto de rotação, toque em **[!UICONTROL Selecione]** (ícone de marca de seleção) e toque em **[!UICONTROL Editar]** na barra de ferramentas.
+   * Passe o mouse sobre um ativo Conjunto de rotação, em seguida selecione **[!UICONTROL Editar]** (ícone de lápis).
+   * Passe o mouse sobre um ativo Conjunto de rotação, selecione **[!UICONTROL Selecionar]** (ícone de marca de seleção) e selecione **[!UICONTROL Editar]** na barra de ferramentas.
 
-   * Toque em um ativo Conjunto de rotação e toque em **[!UICONTROL Editar]** (ícone de lápis) na barra de ferramentas.
+   * Selecione um ativo Conjunto de rotação e depois selecione **[!UICONTROL Editar]** (ícone de lápis) na barra de ferramentas.
 
 1. Para editar o Conjunto de rotação, siga um destes procedimentos:
 
    * Para reorganizar imagens, arraste uma imagem para um novo local (selecione o ícone de reordenação para mover itens).
-   * Para classificar itens em ordem crescente ou decrescente, clique no cabeçalho da coluna.
-   * Para adicionar um ativo ou atualizar um ativo existente, clique em **[!UICONTROL Adicionar ativo]**. Navegue até um ativo, selecione-o e toque em **[!UICONTROL Selecionar]** próximo ao canto superior direito.
+   * Para classificar itens em ordem crescente ou decrescente, selecione o cabeçalho da coluna.
+   * Para adicionar um ativo ou atualizar um ativo existente, selecione **[!UICONTROL Adicionar ativo]**. Navegue até um ativo, selecione-o e selecione **[!UICONTROL Selecionar]** próximo ao canto superior direito.
 Se você excluir a imagem que o Experience Manager usa para a miniatura ao substituí-la por outra imagem, o ativo original ainda é exibido.
-   * Para excluir um ativo, selecione-o e clique ou toque em **[!UICONTROL Excluir ativo]**.
-   * Para aplicar uma predefinição, toque ou clique no ícone Predefinição e selecione uma predefinição.
+   * Para excluir um ativo, selecione-o e **[!UICONTROL Excluir ativo]**.
+   * Para aplicar uma predefinição, selecione o ícone Predefinição e selecione uma predefinição.
    * Para excluir um Conjunto de rotação inteiro, navegue até o Conjunto de rotação, selecione-o e selecione **[!UICONTROL Excluir]**
 
    >[!NOTE]
    >
-   >Edite as imagens em um Conjunto de imagens ao navegar até o conjunto, tocar em **[!UICONTROL Definir membros]** no painel à esquerda e tocar no ícone Lápis em um ativo individual para abrir a janela de edição.
+   >Edite as imagens em um Conjunto de imagens ao navegar até o conjunto, selecionar **[!UICONTROL Definir membros]** no painel à esquerda e selecionar o ícone Lápis em um ativo individual para abrir a janela de edição.
 
-1. Clique em **[!UICONTROL Salvar]** ao concluir a edição.
+1. Selecione **[!UICONTROL Salvar]** ao concluir a edição.
 
-## Visualização de conjuntos de rotação {#previewing-spin-sets}
+## Visualizar conjuntos de rotação {#previewing-spin-sets}
 
-Consulte [Visualização de ativos](/help/assets/dynamic-media/previewing-assets.md).
+Consulte [Visualizar ativos](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publicação de conjuntos de rotação {#publishing-spin-sets}
+## Publicar conjuntos de rotação {#publishing-spin-sets}
 
 Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
