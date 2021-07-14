@@ -1,15 +1,18 @@
 ---
 title: Pré-visualização de ativos 3D
 description: Saiba como visualizar ativos 3D no Dynamic Media.
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+feature: Ativos 3D
+role: User
+exl-id: null
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 15%
+source-wordcount: '565'
+ht-degree: 10%
 
 ---
 
 
-# Visualização de ativos 3D no Adobe Experience Manager{#previewing-3d-assets}
+# Visualizar ativos 3D no Adobe Experience Manager{#previewing-3d-assets}
 
 O Experience Manager oferece suporte para upload, delivery e visualização interativa de ativos 3D como parte do processo de criação.
 
@@ -51,16 +54,16 @@ Além disso, os recursos do computador cliente - como uma estação de trabalho,
 
 1. Certifique-se de ter carregado ativos 3D no Experience Manager.
 Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewing-assets) e [Fazer upload de ativos](/help/assets/manage-digital-assets.md#uploading-assets).
-1. No Experience Manager, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]**.
+1. No Experience Manager, na página **[!UICONTROL Navegação]**, vá para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]**.
 
    ![Página de navegação](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. Próximo ao canto superior direito da página, na lista suspensa Exibição, toque em **[!UICONTROL Exibição de cartão]** e navegue até um ativo 3D que deseja visualizar.
+1. Próximo ao canto superior direito da página, na lista suspensa Exibição, selecione **[!UICONTROL Exibição de cartão]**, em seguida, navegue até um ativo 3D que deseja visualizar.
 
    ![Seleção do cartão 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
-   _Na Exibição de cartão, toque no cartão do ativo 3D que deseja visualizar._
+   _Na Exibição de cartão, selecione o cartão do ativo 3D que deseja visualizar._
 
-1. Toque no cartão do ativo 3D.
+1. Selecione o cartão do ativo 3D.
 
    ![Visualização 3D interativa](/help/assets/dynamic-media/assets/3d-preview.png)
    _Visualização interativa de um ativo 3D na página de visualização de detalhes do ativo._
@@ -72,7 +75,7 @@ Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewin
    | **Deslocar a câmera** | Deslocar a vista para a esquerda, para a direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos e arraste. |
    | **Zoom da câmera** | Mova para dentro e para fora das áreas da cena 3D. | Roda de rolagem. | Um beliscão de dois dedos. |
    | **Recenter a câmera** | Insira novamente sua câmera em um ponto em um objeto na cena 3D. | Duplo clique. | Toque duas vezes. |
-   | **Redefinir** | Próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de destino da exibição para o centro do ativo 3D. A redefinição também aproxima ou afasta a câmera para mostrar o ativo inteiro e com um tamanho de visualização razoável. |  |  |
-   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, toque no ícone Tela cheia. |  |  |
+   | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino da exibição para o centro do ativo 3D. A redefinição também aproxima ou afasta a câmera para mostrar o ativo inteiro e com um tamanho de visualização razoável. |  |  |
+   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone de tela cheia. |  |  |
 
-1. Quando terminar, próximo ao canto superior direito da página, toque em **[!UICONTROL Fechar]**.
+1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Fechar]**.
