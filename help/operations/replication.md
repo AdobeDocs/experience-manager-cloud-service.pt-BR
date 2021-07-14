@@ -2,9 +2,9 @@
 title: Replicação
 description: Distribuição e Solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
+source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1189'
 ht-degree: 4%
 
 ---
@@ -200,4 +200,4 @@ Para solucionar problemas de replicação, navegue até as filas de replicação
 ![](assets/publish-logs.png "LogsLogs")
 
 Se o conteúdo não puder ser publicado, toda a publicação será revertida do AEM Publish Service.
-Nesse caso, as filas devem ser revistas para identificar quais itens causaram o cancelamento da publicação. Ao clicar em uma fila mostrando um status vermelho, a fila com itens pendentes seria exibida, a partir da qual um ou todos os itens podem ser apagados, se necessário.
+Nesse caso, a fila principal e editável mostrará um status vermelho e deverá ser revisada para identificar quais itens causaram o cancelamento da publicação. Ao clicar nessa fila, seus itens pendentes serão exibidos, a partir dos quais um único item ou todos os itens podem ser apagados, se necessário.
