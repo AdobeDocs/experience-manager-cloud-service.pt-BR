@@ -1,14 +1,13 @@
 ---
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
-translation-type: tm+mt
-source-git-commit: 97c3ddd5331d55c5d9b45a29251f584e4bac878b
+exl-id: d2024b42-9042-46a0-879e-110b214c7285
+source-git-commit: e3575278fbfd523a2727e4d659deb057bf2cff9e
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
-
 
 # Configurar seu pipeline de CI-CDConfiguração do seu pipeline CI-CD {#configure-ci-cd-pipeline}
 
@@ -46,7 +45,7 @@ Antes de começar a implantar seu código, você deve definir as configurações
 >
 >Você pode alterar as configurações do pipeline após a configuração inicial.
 
-## Configuração das configurações de pipeline de [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
+## Configurar as configurações de pipeline de [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
 
 Depois de configurar seu programa e ter pelo menos um ambiente usando a interface do usuário do [!UICONTROL Cloud Manager], você estará pronto para configurar o pipeline de implantação.
 
@@ -111,7 +110,7 @@ Siga estas etapas para configurar o comportamento e as preferências do pipeline
 
 ## Pipelines somente para não-produção e qualidade de código {#non-production-pipelines}
 
-Além do pipeline principal que é implantado na fase e na produção, os clientes podem configurar pipelines adicionais, conhecidos como **Non-Production Pipelines**. Esses pipelines sempre executam as etapas de criação e qualidade do código. Como opção, também podem implantar no ambiente do Adobe Managed Services.
+Além do pipeline principal que é implantado na fase e na produção, os clientes podem configurar pipelines adicionais, conhecidos como **Non-Production Pipelines**. Esses pipelines sempre executam as etapas de criação e qualidade do código. Opcionalmente, também é possível implantar no AEM como um ambiente Cloud Service.
 
 Na tela inicial, esses pipelines são listados em um novo cartão:
 
