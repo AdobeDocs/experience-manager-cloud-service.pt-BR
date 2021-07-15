@@ -1,9 +1,9 @@
 ---
 title: Fase de implementação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral da fase de implementação no Cloud Acceleration Manager.
-source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
+source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '689'
 ht-degree: 2%
 
 ---
@@ -54,10 +54,27 @@ Siga esta seção para explorar o cartão de atividades Refatoração do código
 
 1. A página exibe a lista de atividades de refatoração de código organizadas pelo nível de gravidade. Você pode saber mais clicando nos dois ícones destacados.
 
+   A página exibe as considerações de refatoração de código em três guias diferentes.
+
+   * Visão geral:
+   * Dispatcher
+   * Testes
+
+   A guia **Visão geral** exibe uma lista de atividades de refatoração de código.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+
+   A guia **Dispatcher** fornece informações sobre como estruturar o AEM como um Apache Cloud Service e configurações do Dispatcher, bem como como como validá-lo e executá-lo localmente antes de implantá-lo em ambientes do Cloud. Também descreve a depuração em ambientes do Cloud.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+
+   A guia **Testing** fornece informações sobre testes funcionais, de auditoria de experiência e de interface do usuário.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
+
+
    >[!NOTE]
    >Além disso, revise o conteúdo nas guias da página para entender algumas áreas adicionais que não são abordadas pelo Analisador de práticas recomendadas.
-
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
 ## Uso do AEM como um cartão de implantação do Cloud Service {#aem-as-a-cloud-service-deployment}
