@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d5cb722a47d9776e186aa2b47b142d0c22be8511
+source-git-commit: 96f2c99caebd446288720adaf4ac929bbc41950f
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1858'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,44 @@ Assista ao vídeo [Visão geral da versão de junho de 2021](https://video.tv.ad
 
 ## Cloud Manager {#cloud-manager}
 
-Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.6.0.
+Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.7.0 e 2021.6.0.
+
+### Data de lançamento {#release-cm-july}
+
+A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.7.0 é 15 de julho de 2021.
+A próxima versão está planejada para 12 de agosto de 2021.
+
+### Novidades {#what-is-new-cm-july}
+
+* Os clientes agora podem usar os JDKs do Azul 8 e 11 para seus processos de build do Cloud Manager e podem optar por usar um desses JDKs para plug-ins Maven compatíveis com cadeias de ferramentas *ou* em toda a execução do processo Maven.
+
+* O IP de saída agora será registrado no arquivo de log da etapa de compilação.
+
+* Ambientes de Preparo e Produção que executam versões antigas de AEM agora relatarão um status de **Atualizar Disponível**.
+
+* Os certificados SSL máximos suportados aumentaram para 20 por programa.
+
+* O número máximo de domínios que podem ser configurados aumentou para 500 por ambiente.
+
+* Os botões **Gerenciar Git** foram renomeados para **Acessar informações do Git** e a caixa de diálogo foi atualizada visualmente.
+
+* A versão do AEM Project Archetype usada pelo Cloud Manager foi atualizada para a versão 28.
+
+### Correções de erros {#bug-fixes-cm-july}
+
+* Em algumas situações, a Visualização não era uma opção disponível ao vincular uma Lista de permissões de IP a um ambiente.
+
+* Navegar manualmente para a página de detalhes da execução de uma execução não existente não exibia um erro, apenas uma tela de carregamento infinita.
+
+* A mensagem de erro exibida quando o número máximo de certificados SSL foi atingido não foi útil.
+
+* Em algumas circunstâncias, pode haver uma discrepância na versão de lançamento mostrada na placa de pipeline na página **Visão geral**.
+
+* O assistente de adição de programa declarou incorretamente que o nome não pode ser alterado após a criação.
+
+### Problemas conhecidos {#known-issues-cm-july}
+
+Os clientes que alternam para usar os JDKs do Azul devem estar cientes de que nem todos os aplicativos existentes serão compilados sem erro no JDK do Azul. É altamente recomendável testar localmente antes de trocar.
 
 ### Data de lançamento {#release-date-june-cm}
 
