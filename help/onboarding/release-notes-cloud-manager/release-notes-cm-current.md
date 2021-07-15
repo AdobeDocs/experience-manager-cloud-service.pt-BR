@@ -3,9 +3,9 @@ title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.
 description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.7.0
 feature: Informações da versão
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 06dca3b3e94b27f592681e661cd5c9883c0f6422
+source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '366'
 ht-degree: 4%
 
 ---
@@ -28,17 +28,19 @@ A próxima versão está planejada para 12 de agosto de 2021.
 
 * O IP de saída agora será registrado no arquivo de log da etapa de compilação.
 
-* Ambientes de Preparo e Produção que executam versões antigas de AEM agora relatarão um status de &quot;Atualização disponível&quot;.
+* Ambientes de Preparo e Produção que executam versões antigas de AEM agora relatarão um status de **Atualizar Disponível**.
 
-* O número máximo de certificados SSL suportados aumentou para 20 por programa.
+* Os certificados SSL máximos suportados aumentaram para 20 por programa.
 
-* Aumentar O número máximo de domínios que podem ser configurados aumentou para 500 por ambiente.
+* O número máximo de domínios que podem ser configurados aumentou para 500 por ambiente.
 
-* Os botões Gerenciar Git foram intitulados Informações do Git de Acesso e a caixa de diálogo foi atualizada visualmente.
+* Os botões **Gerenciar Git** foram renomeados **Acessar informações do Git** e a caixa de diálogo foi atualizada visualmente.
+
+* A versão do AEM Project Archetype usada pelo Cloud Manager foi atualizada para a versão 28.
 
 ### Correções de erros {#bug-fixes}
 
-* Em algumas situações, a Visualização não era uma opção disponível ao vincular uma Lista de permissões IP a um ambiente.
+* Em algumas situações, a Visualização não era uma opção disponível ao vincular uma Lista de permissões de IP a um ambiente.
 
 * Navegar manualmente para a página de detalhes da execução de uma execução não existente não exibia um erro, apenas uma tela de carregamento infinita.
 
@@ -48,7 +50,7 @@ A próxima versão está planejada para 12 de agosto de 2021.
 
 * O assistente de adição de programa declarou incorretamente que o nome não pode ser alterado após a criação.
 
-* Em algumas situações, a Visualização não era uma opção disponível ao vincular uma Lista de permissões IP a um ambiente.
+* Em algumas situações, a Visualização não era uma opção disponível ao vincular uma Lista de permissões de IP a um ambiente.
 
 ### Problemas conhecidos {#known-issues}
 
