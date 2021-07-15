@@ -2,7 +2,7 @@
 title: 'Criação de um programa de produção '
 description: Criação de um programa de produção
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: e51ab417af5aa77019e8ba3fa5c452c9b25b2d35
+source-git-commit: ca960361bea8f62d908a9b6f1408a99722552c75
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Assista aos vídeos de tutoriais em duas partes abaixo para saber como criar um 
 
 >[!VIDEO](https://video.tv.adobe.com/v/334954)
 
-Ou,
+Além disso,
 
 Siga as etapas abaixo para criar um programa de Produção:
 
