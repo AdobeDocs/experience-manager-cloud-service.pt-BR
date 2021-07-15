@@ -2,10 +2,9 @@
 title: 'Criação de um programa de produção '
 description: Criação de um programa de produção
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-translation-type: tm+mt
-source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
+source-git-commit: e51ab417af5aa77019e8ba3fa5c452c9b25b2d35
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -13,6 +12,14 @@ ht-degree: 0%
 # Criação de um programa de produção {#create-production-program}
 
 Um programa de *Produção* destina-se a um usuário familiarizado com o AEM e o Cloud Manager e está pronto para começar a escrever, criar e testar o código com o objetivo de implantá-lo em produção.
+
+Assista aos vídeos de tutoriais em duas partes abaixo para saber como criar um Programa no Cloud Manager:
+
+>[!VIDEO](https://video.tv.adobe.com/v/334953)
+
+>[!VIDEO](https://video.tv.adobe.com/v/334954)
+
+Ou,
 
 Siga as etapas abaixo para criar um programa de Produção:
 
