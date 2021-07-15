@@ -1,7 +1,7 @@
 ---
 title: Fase de implementação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral da fase de implementação no Cloud Acceleration Manager.
-source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
+source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 2%
@@ -54,9 +54,9 @@ Siga esta seção para explorar o cartão de atividades Refatoração do código
 
 1. A página exibe a lista de atividades de refatoração de código organizadas pelo nível de gravidade. Você pode saber mais clicando nos dois ícones destacados.
 
-   A página exibe as considerações de refatoração de código em três guias diferentes.
+   A página exibe as considerações de refatoração de código em três guias diferentes:
 
-   * Visão geral:
+   * Visão geral
    * Dispatcher
    * Testes
 
