@@ -3,9 +3,9 @@ title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.
 description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.7.0
 feature: Informações da versão
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
+source-git-commit: e24610cef6d134ddf9ce8abe9a5893deac08eeb6
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '349'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ A próxima versão está planejada para 12 de agosto de 2021.
 
 * O número máximo de domínios que podem ser configurados aumentou para 500 por ambiente.
 
-* Os botões **Gerenciar Git** foram renomeados **Acessar informações do Git** e a caixa de diálogo foi atualizada visualmente.
+* Os botões **Gerenciar Git** foram renomeados para **Acessar informações do Git** e a caixa de diálogo foi atualizada visualmente.
 
 * A versão do AEM Project Archetype usada pelo Cloud Manager foi atualizada para a versão 28.
 
@@ -46,11 +46,9 @@ A próxima versão está planejada para 12 de agosto de 2021.
 
 * A mensagem de erro exibida quando o número máximo de certificados SSL foi atingido não foi útil.
 
-* Em algumas circunstâncias, pode haver uma discrepância na versão exibida no cartão do pipeline na página de visão geral.
+* Em algumas circunstâncias, pode haver uma discrepância na versão de lançamento mostrada na placa de pipeline na página **Visão geral**.
 
 * O assistente de adição de programa declarou incorretamente que o nome não pode ser alterado após a criação.
-
-* Em algumas situações, a Visualização não era uma opção disponível ao vincular uma Lista de permissões de IP a um ambiente.
 
 ### Problemas conhecidos {#known-issues}
 
