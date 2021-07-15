@@ -2,7 +2,7 @@
 title: Gerenciar ambientes - Cloud Service
 description: Gerenciar ambientes - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
+source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 A seção a seguir descreve os tipos de ambiente que um usuário pode criar e como ele pode criar um ambiente.
 
-## Tipos de ambiente {#environment-types}
+## Tipos de ambientes {#environment-types}
 
 Um usuário com as permissões necessárias pode criar os seguintes tipos de ambiente (dentro dos limites do que está disponível para o locatário específico).
 
@@ -67,7 +67,7 @@ O cartão **Ambientes** na página Visão geral lista até três ambientes.
 
 1. Selecione o botão **Mostrar tudo** para navegar até a página de resumo **Ambiente** para exibir uma tabela com uma lista completa de ambientes.
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. A página **Ambientes** exibe a lista de todos os ambientes existentes.
 
@@ -81,7 +81,7 @@ O cartão **Ambientes** na página Visão geral lista até três ambientes.
    ![](assets/environ-preview1.png)
 
 
-### Acesso ao Serviço de visualização {#access-preview-service}
+### Acesso ao serviço de visualização {#access-preview-service}
 
 O recurso Serviço de visualização fornece um Serviço de visualização (publicação) adicional para cada AEM como um ambiente de Cloud Service via Cloud Manager.
 
@@ -129,7 +129,7 @@ Selecionar essa opção permitirá que um Gerenciador de implantação atualize 
 
 Se o pipeline já tiver sido atualizado, o usuário será solicitado a executar o pipeline.
 
-## Excluindo o ambiente {#deleting-environment}
+## Excluir ambiente {#deleting-environment}
 
 O usuário com as permissões necessárias poderá excluir um ambiente de desenvolvimento.
 
@@ -154,7 +154,7 @@ Consulte [Gerenciando o Acesso à Instância do Autor](/help/onboarding/what-is-
 ![](assets/environ-access.png)
 
 
-## Acessar o Console do desenvolvedor {#accessing-developer-console}
+## Acesso ao Console do desenvolvedor {#accessing-developer-console}
 
 Selecione **Console do Desenvolvedor** no menu suspenso do cartão **Ambientes**. Isso abrirá uma nova guia no navegador com a página de logon em **Console do desenvolvedor**.
 
@@ -178,7 +178,7 @@ Além disso, você pode fazer logon localmente na página de resumo **Ambientes*
 ![](assets/environ-login-locally-2.png)
 
 
-## Gerenciando Nomes de Domínio Personalizados {#manage-cdn}
+## Gerenciar nomes de domínio personalizados {#manage-cdn}
 
 Navegue até a página de detalhes **Ambientes** na página Resumo dos ambientes .
 
@@ -198,7 +198,7 @@ As seguintes ações podem ser executadas no serviço de Publicação para o seu
 1. [Verificando o status de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 
-## Gerenciando Listas de permissões IP {#manage-ip-allow-lists}
+## Gerenciamento de Listas de permissões IP {#manage-ip-allow-lists}
 
 Navegue até a página Detalhes do ambiente na página Resumo dos ambientes . Você pode executar as seguintes ações no(s) serviço(s) de Publicação e/ou Autor para seu ambiente aqui.
 
