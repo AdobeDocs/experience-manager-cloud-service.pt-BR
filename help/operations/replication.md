@@ -2,9 +2,9 @@
 title: Replicação
 description: Distribuição e Solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
+source-git-commit: a585fd8994c00014243f628ac0abbcb6571137f6
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1338'
 ht-degree: 4%
 
 ---
@@ -57,8 +57,8 @@ Para executar uma ativação de árvore:
 4. Selecione o caminho no navegador de caminho, escolha adicionar um nó, árvore ou excluir conforme necessário e selecione **Enviar**
 
 Para um melhor desempenho, siga estas diretrizes ao usar este recurso:
-* O tamanho total do pacote de conteúdo gerado para replicação deve ser inferior a 5 MB.
 * Recomenda-se replicar menos de 100 caminhos de cada vez, com um limite rígido de 500 caminhos.
+* O tamanho total do conteúdo replicado deve ser inferior a 5 MB. Isso inclui apenas os nós e propriedades, mas não qualquer binário, que incluem pacotes de fluxo de trabalho e pacotes de conteúdo.
 
 ### Fluxo de trabalho da Árvore de conteúdo da publicação {#publish-content-tree-workflow}
 
@@ -189,6 +189,11 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Caso não forneça esse filtro e use apenas o agente &quot;publicar&quot;, o agente &quot;visualizar&quot; não será usado e a ação de replicação não afetará o nível de visualização.
 
 O `ReplicationStatus` geral de um recurso só será modificado se a ação de replicação incluir pelo menos um agente que esteja ativo por padrão. No exemplo acima, isso não ocorre, pois a replicação está usando apenas o agente &quot;preview&quot;. Portanto, você precisa usar o novo método `getStatusForAgent()`, que permite consultar o status de um agente específico. Esse método também funciona para o agente &quot;publicar&quot;. Retorna um valor não nulo se houver alguma ação de replicação feita usando o agente fornecido.
+
+
+**Caminho e limites de tamanho da API de replicação**
+
+Recomenda-se replicar menos de 100 caminhos, sendo 500 o limite rígido. Acima do limite rígido, um ReplicationException será lançado. Se a lógica do aplicativo não exigir replicação atômica, esse limite poderá ser ultrapassado definindo ReplicationOptions.setUseAtomicCalls como false, o que aceitará qualquer número de caminhos, mas criará compartimentos internamente para permanecer abaixo desse limite. A quantidade de conteúdo transmitido por chamada de replicação não deve exceder 5 MB, o que inclui os nós e as propriedades, mas não qualquer binário (pacotes de fluxo de trabalho e pacotes de conteúdo são considerados binários).
 
 ## Resolução de problemas {#troubleshooting}
 
