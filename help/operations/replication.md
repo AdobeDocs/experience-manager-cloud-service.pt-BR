@@ -2,9 +2,9 @@
 title: Replicação
 description: Distribuição e Solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
+source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1229'
 ht-degree: 4%
 
 ---
@@ -55,6 +55,10 @@ Para executar uma ativação de árvore:
 
    ![](assets/publish-distribute.png "DistribuirDistribuir")
 4. Selecione o caminho no navegador de caminho, escolha adicionar um nó, árvore ou excluir conforme necessário e selecione **Enviar**
+
+Para um melhor desempenho, siga estas diretrizes ao usar este recurso:
+* O tamanho total do pacote de conteúdo gerado para replicação deve ser inferior a 5 MB.
+* Recomenda-se replicar menos de 100 caminhos de cada vez, com um limite rígido de 500 caminhos.
 
 ### Fluxo de trabalho da Árvore de conteúdo da publicação {#publish-content-tree-workflow}
 
