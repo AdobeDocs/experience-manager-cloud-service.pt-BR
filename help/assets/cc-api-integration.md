@@ -4,9 +4,9 @@ description: Gerar variações de ativos usando a integração do Creative Cloud
 contentOwner: AG
 feature: Upload,Processamento de Ativos,Publicação,Microserviços do Asset compute,Fluxo de Trabalho
 role: User,Admin
-source-git-commit: 997f292be2498624c5218addd61ec40727eb48bc
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,9 @@ ht-degree: 0%
 O complemento de automação de conteúdo integra APIs [!DNL Adobe Experience Manager Assets as a Cloud Service] e [!DNL Adobe Creative Cloud] para processar seus ativos em escala de forma criativa. [!DNL Experience Manager] O usa microsserviços de  [ativos baseados em nuvem para usar os ](/help/assets/asset-microservices-overview.md)   [!DNL Adobe Creative Cloud] recursos e automatizar a criação e o manuseio de mídia de ativos.
 
 Para editar ativos em [!DNL Adobe Photoshop] e [!DNL Adobe Lightroom], não é necessário baixar ativos de [!DNL Experience Manager Assets], editá-los e carregá-los novamente. Basta criar e configurar um perfil de processamento em [!DNL Experience Manager], aplicar o perfil a uma pasta e fazer upload dos ativos para a pasta. Os ativos carregados são reprocessados com base nos perfis de processamento e você obtém variações desses ativos. O processamento em massa consistente e sem esforço salva esforços e aumenta a velocidade do conteúdo, também sem a necessidade de habilidades criativas excepcionais. Além disso, desenvolvedores e parceiros podem estender os microsserviços de ativos com acesso direto a essas APIs e incluir lógica personalizada.
-Os usuários podem criar perfis de processamento para automatizar as seguintes operações criativas em seus ativos:
 
+Os usuários podem criar perfis de processamento para automatizar as seguintes operações criativas em seus ativos:\
+![automatizar operações do Adobe Photoshop e do Adobe Lightroom em ativos](assets/content-automation.png)
 * **Toque** automático: Usa inteligência artificial para analisar o conteúdo da imagem e faz correções de luz e cor de forma inteligente com base nos atributos únicos da imagem.
 * **Direita** automaticamente: Usa inteligência artificial para analisar o conteúdo da imagem e corrigir a perspectiva distorcida nas imagens. Por exemplo, para criar horizontes de nível.
 * **Predefinições** do Lightroom: Aplica uma aparência definida pelo usuário a imagens para obter uma aparência consistente usando predefinições personalizadas.
@@ -26,6 +27,8 @@ Os usuários podem criar perfis de processamento para automatizar as seguintes o
 * **Máscara** de imagem: Usa inteligência artificial para criar máscara em torno de objetos salientes com um único comando.
 * **Ações** do Photoshop: Aplica uma série de tarefas (no Photoshop) a um arquivo ou lote de arquivos.
 * **Substituição** de objeto inteligente: A personalização em escala permite trocar imagens enquanto mantém todos os efeitos e ajustes aplicados em um arquivo PSD.
+
+
 
 ## Use um perfil de processamento para editar seus ativos de criação em massa {#process-assets}
 
@@ -39,7 +42,7 @@ Para usar perfis de processamento para criar variações automaticamente, siga e
 
 1. Selecione a guia **[!UICONTROL Creative]**, especifique a pasta de saída, selecione **[!UICONTROL Adicionar Novo]** para adicionar uma configuração criativa.
 
-1. Forneça **[!UICONTROL Nome da representação]** (ou nome da saída), **[!UICONTROL Extensão]** (ou tipo de arquivo), selecione **[!UICONTROL Qualidade]** (ou parâmetros de saída), selecione Inclui e Exclui listas do tipo MIME (ou filtro de ativo de entrada) e selecione a operação criativa necessária.
+1. Forneça **[!UICONTROL Nome da representação]** (ou nome da saída), **[!UICONTROL Extensão]** (ou tipo de arquivo), selecione **[!UICONTROL Qualidade]** (ou parâmetros de saída), selecione **[!UICONTROL Inclui]** e **[!UICONTROL Exclui]** listas do tipo MIME (ou filtro de ativo de entrada) e selecione a operação criativa necessária.
    ![guia criativo no perfil de processamento](assets/creative-processing-profile.png)
 
 1. Algumas operações exigem parâmetros extras (ativo). Forneça valores para esses parâmetros extras, se necessário.
