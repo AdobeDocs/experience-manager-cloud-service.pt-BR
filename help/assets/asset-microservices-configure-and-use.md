@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Microserviços do Asset compute, Fluxo de trabalho, Processamento de ativos
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 1%
@@ -75,7 +75,7 @@ Para criar um perfil de processamento padrão, siga estas etapas:
 
 1. Os administradores acessam **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de processamento]**. Clique em **[!UICONTROL Criar]**.
 1. Forneça um nome que ajude você a identificar o perfil exclusivamente ao se aplicar a uma pasta.
-1. Para gerar representações FPO, na guia **[!UICONTROL Standard]**, ative **[!UICONTROL Criar representação FPO]**. Insira um valor **[!UICONTROL Quality]** entre 1 e 100.
+1. Para gerar representações FPO, na guia **[!UICONTROL Image]**, ative **[!UICONTROL Create FPO Rendition]**. Insira um valor **[!UICONTROL Quality]** entre 1 e 100.
 1. Para gerar outras representações, clique em **[!UICONTROL Adicionar Novo]** e forneça as seguintes informações:
 
    * Nome do arquivo de cada representação.
