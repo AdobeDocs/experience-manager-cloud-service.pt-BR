@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadados
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '2557'
+source-wordcount: '2562'
 ht-degree: 9%
 
 ---
@@ -99,7 +99,7 @@ A guia **[!UICONTROL Criar formulário]** lista os itens de formulário que voc�
 | [!UICONTROL Referências de produtos] | Adicionar para mostrar a lista de produtos vinculados ao ativo. |
 | [!UICONTROL Metadados do contexto] | Adicionar para controlar a exibição de outras guias de metadados na página de propriedades dos ativos. |
 
-<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
+<!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
 | [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
 -->
 
@@ -155,7 +155,7 @@ Clique em `+` para adicionar uma guia em um formulário de esquema. Por padrão,
 
 ## Excluir formulários de esquema de metadados {#deleting-metadata-schema-forms}
 
-AEM permite excluir somente formulários de esquema personalizados. Ela não permite excluir os formulários/modelos de esquema padrão. No entanto, é possível excluir quaisquer alterações personalizadas nesses formulários.
+O Experience Manager permite excluir somente formulários de esquema personalizados. Ela não permite excluir os formulários/modelos de esquema padrão. No entanto, é possível excluir quaisquer alterações personalizadas nesses formulários.
 
 Para excluir um formulário, selecione-o e clique no ícone excluir.
 
@@ -236,16 +236,16 @@ Você pode definir campos obrigatórios em um nível de pasta, que é empregado 
 
 >[!NOTE]
 >
->Um campo de metadados pode ser definido como obrigatório com base no valor de outro campo. Na exibição Cartões, AEM não exibe a mensagem de aviso sobre a falta de metadados para esses campos de metadados obrigatórios.
+>Um campo de metadados pode ser definido como obrigatório com base no valor de outro campo. Na exibição Cartões, o Experience Manager não exibe a mensagem de aviso sobre a falta de metadados para esses campos de metadados obrigatórios.
 
-1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
+1. Clique no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Salve o formulário de metadados padrão como um formulário personalizado. Por exemplo, salve-o como `my_default`.
 1. Edite o formulário personalizado. Adicione um campo obrigatório. Por exemplo, adicione um campo **[!UICONTROL Category]** e torne o campo obrigatório.
 1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página **[!UICONTROL Forms]** do Esquema de Metadados. Selecione o formulário e clique ou toque em **[!UICONTROL Aplicar à(s) pasta(s)]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
 1. Navegue até a pasta e faça upload de alguns ativos com metadados ausentes para o campo obrigatório adicionado ao formulário personalizado. Uma mensagem para os metadados ausentes do campo obrigatório é exibida na exibição Cartão do ativo.
-1. (Opcional) Acesse `https://[server]:[port]/system/console/components/`. Configure e habilite o componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` que está desabilitado por padrão. Defina uma frequência na qual o AEM verifica a validade dos metadados nos ativos.
+1. (Opcional) Acesse `https://[server]:[port]/system/console/components/`. Configure e habilite o componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` que está desabilitado por padrão. Defina uma frequência na qual o Experience Manager verifica a validade dos metadados nos ativos.
 
-   Essa configuração adiciona uma propriedade `hasValidMetadata` a `jcr:content` de ativos. Usando essa propriedade, AEM pode filtrar resultados em uma pesquisa.
+   Essa configuração adiciona uma propriedade `hasValidMetadata` a `jcr:content` de ativos. Usando essa propriedade, o Experience Manager pode filtrar resultados em uma pesquisa.
 
    >[!NOTE]
    >
