@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,API HTTP de ativos
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 3051475d20d5b534b74c84f9d541dcaf1a5492f9
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1436'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ O artigo contém recomendações, materiais de referência e recursos para desen
 Em [!DNL Experience Manager] como um [!DNL Cloud Service], é possível fazer upload direto dos ativos para o armazenamento na nuvem usando a API HTTP. As etapas para fazer upload de um arquivo binário estão abaixo. Execute essas etapas em um aplicativo externo e não na JVM [!DNL Experience Manager].
 
 1. [Envie uma solicitação](#initiate-upload) HTTP. Ele informa [!DNL Experience Manage]ou a implantação de sua intenção de fazer upload de um novo binário.
-1. [POST do conteúdo do binário para um ou mais URIs fornecidos pelo pedido de início. ](#upload-binary) 
+1. [PUT do conteúdo do binário para um ou mais URIs fornecidos pelo pedido de início. ](#upload-binary) 
 1. [Envie uma ](#complete-upload) solicitação HTTP para informar ao servidor que o conteúdo do binário foi carregado com êxito.
 
 ![Visão geral do protocolo de upload binário direto](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ Uma única solicitação pode ser usada para iniciar uploads para vários binár
 }
 ```
 
-* `completeURI` (string): Chame esse URI quando o binário terminar o upload. O URI pode ser um URI absoluto ou relativo, e os clientes devem ser capazes de lidar com ambos. Ou seja, o valor pode ser `"https://author.acme.com/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` Consulte [concluir o upload](#complete-upload).
+* `completeURI` (string): Chame esse URI quando o binário terminar o upload. O URI pode ser um URI absoluto ou relativo, e os clientes devem ser capazes de lidar com ambos. Ou seja, o valor pode ser `"https://[aem_server]:[port]/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` Consulte [concluir o upload](#complete-upload).
 * `folderPath` (string): Caminho completo para a pasta na qual o binário é carregado.
 * `(files)` (matriz): Uma lista de elementos cujo comprimento e ordem correspondem ao comprimento e à ordem da lista de informações binárias fornecidas na solicitação de inicialização.
 * `fileName` (string): O nome do binário correspondente, conforme fornecido na solicitação de inicialização. Esse valor deve ser incluído na solicitação completa.
@@ -125,7 +125,7 @@ Uma única solicitação pode ser usada para iniciar uploads para vários binár
 
 ### Upload binário {#upload-binary}
 
-A saída de iniciar um upload inclui um ou mais valores de URI de upload. Se mais de um URI for fornecido, o cliente dividirá o binário em partes e fará a solicitação POST de cada parte para cada URI, em ordem. Use todos os URIs. Certifique-se de que o tamanho de cada parte esteja dentro dos tamanhos mínimo e máximo especificados na resposta de inicialização. Os nós de borda CDN ajudam a acelerar o upload solicitado de binários.
+A saída de iniciar um upload inclui um ou mais valores de URI de upload. Se mais de um URI for fornecido, o cliente dividirá o binário em partes e fará solicitações de PUT de cada parte para cada URI, em ordem. Use todos os URIs. Certifique-se de que o tamanho de cada parte esteja dentro dos tamanhos mínimo e máximo especificados na resposta de inicialização. Os nós de borda CDN ajudam a acelerar o upload solicitado de binários.
 
 Um possível método para fazer isso é calcular o tamanho da peça com base no número de URIs de upload fornecidos pela API. Por exemplo, suponha que o tamanho total do binário seja de 20.000 bytes e o número de URIs de upload seja 2. Siga estas etapas:
 
@@ -154,9 +154,7 @@ Se o ativo existir e nenhum `createVersion` ou `replace` for especificado, [!DNL
 
 Como o processo de inicialização, os dados completos da solicitação podem conter informações para mais de um arquivo.
 
-O processo de upload de um binário não é feito até que o URL completo seja chamado para o arquivo. Um ativo é processado após a conclusão do processo de upload. O processamento não é iniciado mesmo se o arquivo binário do ativo for carregado completamente, mas o processo de upload não estiver concluído.
-
-Se bem-sucedido, o servidor responde com um código de status `200`.
+O processo de upload de um binário não é feito até que o URL completo seja chamado para o arquivo. Um ativo é processado após a conclusão do processo de upload. O processamento não é iniciado mesmo se o arquivo binário do ativo for carregado completamente, mas o processo de upload não estiver concluído. Se o upload for bem-sucedido, o servidor responderá com um código de status `200`.
 
 ### Biblioteca de upload de código aberto {#open-source-upload-library}
 
