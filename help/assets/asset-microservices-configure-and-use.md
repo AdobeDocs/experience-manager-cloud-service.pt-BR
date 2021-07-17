@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Microserviços do Asset compute, Fluxo de trabalho, Processamento de ativos
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
+source-git-commit: 6d662a7350b851a450b8c20660d7a461d940c1b2
 workflow-type: tm+mt
-source-wordcount: '2678'
+source-wordcount: '2709'
 ht-degree: 1%
 
 ---
@@ -160,8 +160,10 @@ Crie e aplique perfis de processamento adicionais e personalizados a pastas espe
 Aplique perfis de processamento a pastas usando um dos seguintes métodos:
 
 * Os administradores podem selecionar uma definição de perfil de processamento em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de processamento]** e usar a ação **[!UICONTROL Aplicar perfil à(s) pasta(s)]**. Ele abre um navegador de conteúdo que permite navegar para pastas específicas, selecioná-las e confirmar o aplicativo do perfil.
-* Os usuários podem selecionar uma pasta na interface do usuário do Assets, usar a ação **[!UICONTROL Propriedades]** para abrir a tela de propriedades da pasta, clicar na guia **[!UICONTROL Perfis de processamento]** e, na lista pop-up, selecionar o perfil de processamento apropriado para essa pasta. Para salvar as alterações, clique em **[!UICONTROL Salvar e fechar]**.
+* Os usuários podem selecionar uma pasta na interface do usuário do Assets, usar a ação **[!UICONTROL Propriedades]** para abrir a tela de propriedades da pasta, clicar na guia **[!UICONTROL Processamento de Ativos]** e, na lista [!UICONTROL Perfil de Processamento], selecionar o perfil de processamento apropriado para essa pasta. Para salvar as alterações, clique em **[!UICONTROL Salvar e fechar]**.
    ![Aplicar perfil de processamento a uma pasta na guia Propriedades do ativo](assets/folder-properties-processing-profile.png)
+
+* Os usuários podem selecionar pastas ou ativos específicos na interface do usuário do Assets para aplicar um perfil de processamento, em seguida, selecionar ![ícone de reprocessamento de ativos](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Reprocessar ativos]** das opções disponíveis na parte superior.
 
 >[!TIP]
 >
