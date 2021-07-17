@@ -4,7 +4,7 @@ description: Gerar variações de ativos usando a integração do Creative Cloud
 contentOwner: AG
 feature: Upload,Processamento de Ativos,Publicação,Microserviços do Asset compute,Fluxo de Trabalho
 role: User,Admin
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: f21f8bf7975fd4e82785a4c368cf4956096608d4
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -42,7 +42,8 @@ Para usar perfis de processamento para criar variações automaticamente, siga e
 
 1. Selecione a guia **[!UICONTROL Creative]**, especifique a pasta de saída, selecione **[!UICONTROL Adicionar Novo]** para adicionar uma configuração criativa.
 
-1. Forneça **[!UICONTROL Nome da representação]** (ou nome da saída), **[!UICONTROL Extensão]** (ou tipo de arquivo), selecione **[!UICONTROL Qualidade]** (ou parâmetros de saída), selecione **[!UICONTROL Inclui]** e **[!UICONTROL Exclui]** listas do tipo MIME (ou filtro de ativo de entrada) e selecione a operação criativa necessária.
+1. Forneça **[!UICONTROL Nome da representação]** (ou nome da saída), **[!UICONTROL Extensão]** (ou tipo de arquivo), selecione **[!UICONTROL Qualidade]** (ou parâmetros de saída), selecione **[!UICONTROL Inclui]** e **[!UICONTROL Exclui]** listas do tipo MIME (ou filtro de ativo de entrada) e selecione a operação criativa necessária. <br/>
+
    ![guia criativo no perfil de processamento](assets/creative-processing-profile.png)
 
 1. Algumas operações exigem parâmetros extras (ativo). Forneça valores para esses parâmetros extras, se necessário.
