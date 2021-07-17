@@ -4,9 +4,9 @@ user-guide-title: Guia do Assets as a Cloud Service
 breadcrumb-title: Guia do Assets
 user-guide-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: f3d2fafa4f10cb6538ba3e814987f75b466080fc
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '479'
 ht-degree: 70%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 70%
    + [Tags inteligentes para imagens](smart-tags.md)
    + [Tag inteligente de seus ativos de vídeo](smart-tags-video-assets.md)
    + [Como organizar ativos](organize-assets.md)
-   + [Use [!DNL Adobe Stock] ativos no AEM](aem-assets-adobe-stock.md)
+   + [Usar [!DNL Adobe Stock] ativos](aem-assets-adobe-stock.md)
    + [Gerenciar coleções](manage-collections.md)
    + [Visão geral dos metadados](manage-metadata.md)
    + [Integrar com [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -54,9 +54,9 @@ ht-degree: 70%
    + [Pesquisar aspectos](search-facets.md)
    + [API HTTP de ativos](mac-api-assets.md)
    + [Suporte a fragmentos de conteúdo na API HTTP do Assets](content-fragments/assets-api-content-fragments.md)
-   + [AEM API GraphQL para fragmentos de conteúdo](content-fragments/graphql-api-content-fragments.md)
-   + [Autenticação para consultas GraphQL de AEM Remotas em Fragmentos de Conteúdo](content-fragments/graphql-authentication-content-fragments.md)
-   + [AEM API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [API GraphQL para fragmentos de conteúdo](content-fragments/graphql-api-content-fragments.md)
+   + [Autenticação para consultas GraphQL remotas em fragmentos de conteúdo](content-fragments/graphql-authentication-content-fragments.md)
+   + [API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [Relatórios de ativos](asset-reports.md)
    + [Metadados em cascata](cascading-metadata.md)
