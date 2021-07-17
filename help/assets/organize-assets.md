@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Gerenciamento de ativos, Marcação, Distribuição de ativos
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 Todos os ativos digitais, metadados e conteúdo de documentos do Microsoft Office e PDF são extraídos e podem ser pesquisados. A pesquisa permite uma filtragem sofisticada em ativos e respeita completamente as permissões apropriadas. Os metadados são abordados detalhadamente em Metadados no Gerenciamento de ativos digitais.
 
-O AEM Assets é compatível com várias maneiras de organizar o conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de maneira não ordenada e adhoc, usando, por exemplo, tags . Os usuários podem editar tags no Editor de ativos DAM, onde os ativos secundários, as representações e os metadados são exibidos.
+O Experience Manager Assets é compatível com várias maneiras de organizar o conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de maneira não ordenada e adhoc, usando, por exemplo, tags . Os usuários podem editar tags no Editor de ativos DAM, onde os ativos secundários, as representações e os metadados são exibidos.
 
 ## Criar pastas {#create-folders}
 
-Ao organizar uma coleção de ativos, por exemplo, todas as imagens *Nature*, você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. A AEM Assets não exige que você organize ativos em pastas para funcionar melhor.
+Ao organizar uma coleção de ativos, por exemplo, todas as imagens *Nature*, você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. [!DNL Assets] não exige que você organize ativos em pastas para funcionar melhor.
 
 >[!NOTE]
 >
