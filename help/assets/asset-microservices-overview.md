@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Microserviços do Asset compute, Fluxo de trabalho, Informações da versão, Processamento de ativos
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 2%
