@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadados
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '427'
 ht-degree: 9%
 
 ---
@@ -28,7 +28,7 @@ Para editar metadados:
    * Na miniatura do ativo, selecione a ação rápida **[!UICONTROL Exibir propriedades]** .
    * Na página de ativos, clique/toque em **[!UICONTROL Exibir propriedades]** na barra de ferramentas.
 
-   A página de ativo exibe todos os metadados do ativo. Esses metadados eram extraídos automaticamente quando eram carregados (assimilados) no AEM Assets.
+   A página de ativo exibe todos os metadados do ativo. Esses metadados eram extraídos automaticamente quando eram carregados (assimilados) no Experience Manager Assets.
 
 1. Faça edições nos metadados em várias guias, conforme necessário, e quando concluído, clique/toque em **[!UICONTROL Salvar]** na barra de ferramentas para salvar as alterações. Clique/toque em **[!UICONTROL Fechar]** para retornar à interface da Web do Assets.
 
@@ -36,7 +36,7 @@ Para editar metadados:
    >
    >Se um campo de texto estiver vazio, não há nenhum conjunto de metadados existente. Você pode inserir um valor no campo e salvá-lo para adicionar essa propriedade de metadados.
 
-Quaisquer alterações nos metadados de um ativo são gravadas de volta no binário original como parte de seus dados de XMP. Isso é feito por meio AEM fluxo de trabalho de gravação de metadados. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e as propriedades recém-criadas (incluindo propriedades personalizadas como `cq:tags`) são adicionadas juntamente com o schema .
+Quaisquer alterações nos metadados de um ativo são gravadas de volta no binário original como parte de seus dados de XMP. Isso é feito por meio de um fluxo de trabalho de write-back de metadados de Experience Manager. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e as propriedades recém-criadas (incluindo propriedades personalizadas como `cq:tags`) são adicionadas juntamente com o schema .
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -44,9 +44,9 @@ Quaisquer alterações nos metadados de um ativo são gravadas de volta no biná
 
 Para obter detalhes sobre como editar o esquema de metadados, consulte [Edição de formulários de esquema de metadados](metadata-schemas.md#edit-metadata-schema-forms).
 
-## Registro de um namespace personalizado no AEM {#registering-a-custom-namespace-within-aem}
+## Registro de um namespace personalizado no Experience Manager {#registering-a-custom-namespace-within-aem}
 
-Você pode adicionar seus próprios namespaces no AEM. Assim como há namespaces predefinidos, como cq, jcr e sling, você pode ter um namespace para os metadados do repositório e o processamento xml.
+Você pode adicionar seus próprios namespaces no Experience Manager. Assim como há namespaces predefinidos, como cq, jcr e sling, você pode ter um namespace para os metadados do repositório e o processamento xml.
 
 1. Vá para a página de administração do tipo de nó *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
 1. Clique ou toque em **[!UICONTROL Namespaces]** na parte superior da página. A página de administração do namespace é exibida em uma janela.
