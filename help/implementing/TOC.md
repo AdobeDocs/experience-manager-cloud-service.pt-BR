@@ -5,10 +5,10 @@ breadcrumb-title: Guia de implementação
 user-guide-description: Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento.
 feature: Ferramentas do desenvolvedor
 role: Developer, Architect
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 34%
+source-wordcount: '913'
+ht-degree: 33%
 
 ---
 
@@ -180,11 +180,15 @@ ht-degree: 34%
    + [Implantação do AEM as a Cloud Service](deploying/overview.md)
    + [Atualizações de versão do AEM](deploying/aem-version-updates.md)
    + [Configuração do OSGi para o AEM as a Cloud Service](deploying/configuring-osgi.md)
+   + [API de configuração do OSGi](deploying/osgi-configuration-api.md)
 + Camada do autor {#author-tier}
    + [Acesso à camada do autor](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [Proteção da camada do autor](/help/implementing/author-tier/securing-the-author-tier.md)
 + Visão geral da entrega de conteúdo {#content-delivery}
    + [Fluxo de entrega de conteúdo](dispatcher/overview.md)
    + [Dispatcher na nuvem](dispatcher/disp-overview.md)
+   + [Validação e depuração usando ferramentas do Dispatcher](dispatcher/validation-debug.md)
+   + [Migração da configuração do Dispatcher do AMS para o AEM como um Cloud Service](dispatcher/ams-aem.md)
+   + [Validação e depuração usando ferramentas do Dispatcher herdadas](dispatcher/validation-debug-legacy.md)
    + [CDN no AEM as a Cloud Service](dispatcher/cdn.md)
    + [Armazenamento em cache no AEM as a Cloud Service](dispatcher/caching.md)
