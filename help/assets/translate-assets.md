@@ -5,20 +5,20 @@ contentOwner: AG
 feature: Gerenciamento de ativos,Tradução
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2587'
 ht-degree: 24%
 
 ---
 
 # Ativos multilíngues {#multilingual-assets}
 
-Ativos multilíngues significa ativos com binários, metadados e tags em vários idiomas. Geralmente, os binários, metadados e tags de ativos existem em um idioma, que é traduzido para outros idiomas para uso em projetos multilíngues. Os ativos Adobe Experience Manager (AEM) permitem automatizar os fluxos de trabalho de tradução em ativos (incluindo binários, metadados e tags) para gerar ativos em outros idiomas para usar em projetos multilíngues.
+Ativos multilíngues significa ativos com binários, metadados e tags em vários idiomas. Geralmente, os binários, metadados e tags de ativos existem em um idioma, que é traduzido para outros idiomas para uso em projetos multilíngues. O Adobe Experience Manager Assets permite automatizar os fluxos de trabalho de tradução em ativos (incluindo binários, metadados e tags) para gerar ativos em outros idiomas para usar em projetos multilíngues.
 
-Para automatizar os fluxos de trabalho de tradução, você integra provedores de serviços de tradução ao AEM e cria projetos para traduzir ativos em vários idiomas. AEM suporta fluxos de trabalho de tradução humana e de máquina.
+Para automatizar os fluxos de trabalho de tradução, você integra provedores de serviços de tradução ao Experience Manager e cria projetos para traduzir ativos em vários idiomas. O Experience Manager suporta fluxos de trabalho de tradução humana e de máquina.
 
-Tradução humana: Os ativos traduzidos são retornados e importados para o AEM. Quando seu provedor de tradução é integrado ao AEM, os ativos são automaticamente enviados entre o AEM e o provedor de tradução.
+Tradução humana: Os ativos traduzidos são retornados e importados para o Experience Manager. Quando seu provedor de tradução é integrado ao Experience Manager, os ativos são automaticamente enviados entre o Experience Manager e o provedor de tradução.
 
 Tradução da máquina: O serviço de tradução automática traduz imediatamente os metadados e as tags para os ativos.
 
@@ -36,13 +36,13 @@ One of these articles is a copy of [Preparing Content for Translation](https://e
 <!-- 
 Translating assets includes the following:
 
-1. [Connecting AEM with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Connecting Experience Manager with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Creating translation integration framework configurations](/help/sites-administering/tc-tic.md)
 1. [Preparing assets for translation](prepare-assets-for-translation.md)
 1. [Applying translation cloud services to folders](transition-cloud-services.md)
 1. [Create translation projects](translation-projects.md)
 
-If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+If your translation service provider does not provide a connector to integrate with Experience Manager, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
 Also see, [Creating translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
 
@@ -52,7 +52,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 Ativos multilíngues significa ativos com binários, metadados e tags em vários idiomas. Geralmente, os binários, metadados e tags de ativos existem em um idioma, que é traduzido para outros idiomas para uso em projetos multilíngues.
 
-Nos ativos Adobe Experience Manager (AEM), os ativos multilíngues são incluídos nas pastas, onde cada pasta contém os ativos em um idioma diferente.
+No Adobe Experience Manager Assets, os ativos multilíngues são incluídos nas pastas, onde cada pasta contém os ativos em um idioma diferente.
 
 Cada pasta de idioma é chamada de cópia de idioma. A pasta raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/dam/it` é a raiz do idioma italiano para a cópia de idioma italiano. As cópias de idioma devem usar uma [raiz de idioma configurada corretamente](#create-a-language-root) para que o idioma correto seja direcionado quando as traduções de ativos de origem forem executadas.
 
@@ -89,7 +89,7 @@ Por exemplo, a página raiz da cópia de idioma italiano da hierarquia de amostr
 
 ### Exibir raízes do idioma {#view-language-roots}
 
-A interface otimizada para toque fornece um painel Referências que mostra uma lista de raízes de idioma que foram criadas no AEM Assets.
+A interface otimizada para toque fornece um painel Referências que mostra uma lista de raízes de idioma que foram criadas em [!DNL Assets].
 
 1. No console Assets, selecione o idioma principal para o qual deseja criar cópias de idioma.
 1. Clique ou toque no ícone de Navegação global e escolha **[!UICONTROL Referências]** para abrir o painel Referência.
@@ -169,9 +169,9 @@ Se você usar essa opção, o conjunto de ativos será adicionado a um projeto d
 
 ### Criar cópias temporárias de idioma {#creating-temporary-language-copies}
 
-Quando você executa um fluxo de trabalho de tradução para atualizar uma cópia de idioma com as versões editadas dos ativos originais, a cópia de idioma existente é preservada até que você aprove o(s) ativo(s) traduzido(s). O AEM Assets armazena o(s) ativo(s) recém-traduzido(s) em um local temporário e atualiza a cópia de idioma existente após você aprovar explicitamente o(s) ativo(s). Se você rejeitar o(s) ativo(s), a cópia de idioma permanecerá inalterada.
+Quando você executa um fluxo de trabalho de tradução para atualizar uma cópia de idioma com as versões editadas dos ativos originais, a cópia de idioma existente é preservada até que você aprove o(s) ativo(s) traduzido(s). [!DNL Assets] armazena o(s) ativo(s) recém-traduzido(s) em um local temporário e atualiza a cópia de idioma existente após você aprovar explicitamente o(s) ativo(s). Se você rejeitar o(s) ativo(s), a cópia de idioma permanecerá inalterada.
 
-1. Clique/toque na pasta raiz de origem, em **[!UICONTROL Cópias de idioma]** para as quais você já criou uma cópia de idioma e clique/toque em **[!UICONTROL Revelar no Assets]** para abrir a pasta no AEM Assets.
+1. Clique/toque na pasta raiz de origem, em **[!UICONTROL Cópias de idioma]** para as quais você já criou uma cópia de idioma e clique/toque em **[!UICONTROL Revelar no Assets]** para abrir a pasta no [!DNL Assets].
 1. Na interface do usuário do Assets, selecione um ativo já traduzido e clique/toque no ícone **[!UICONTROL Editar]** na barra de ferramentas para abrir o ativo no modo de edição.
 1. Edite o ativo e salve as alterações.
 1. Execute as etapas 2 a 14 do procedimento [Adicionar ao projeto de tradução existente](#add-to-existing-translation-project) para atualizar a cópia de idioma.
@@ -234,7 +234,7 @@ Use a opção **Somente criar estrutura** para criar uma hierarquia de pasta de 
 
 ## Aplicar serviços de nuvem de tradução a pastas {#applying-translation-cloud-services-to-folders}
 
-O Adobe Experience Manager (AEM) permite que você utilize os serviços de tradução em nuvem do provedor de tradução de sua escolha para garantir que os ativos sejam traduzidos de acordo com suas necessidades.
+O Adobe Experience Manager permite que você utilize os serviços de tradução em nuvem do provedor de tradução de sua escolha para garantir que seus ativos sejam traduzidos de acordo com suas necessidades.
 
 Você pode aplicar o serviço da nuvem de tradução diretamente à sua pasta de ativos para que eles possam ser utilizados durante os fluxos de trabalho de tradução.
 
@@ -263,7 +263,7 @@ A aplicação de serviços da nuvem de tradução diretamente à sua pasta de at
 Se quiser aplicar um conector personalizado para os serviços de tradução que deseja usar nos fluxos de trabalho de tradução. Para aplicar um conector personalizado, primeiro instale o conector do Gerenciador de pacotes. Em seguida, configure o conector do console Serviços da nuvem. Após configurar o conector, ele estará disponível na lista de conectores na guia Serviços da nuvem descrita em [Aplicar serviços de tradução](#applying-the-translation-services). Depois de aplicar o conector personalizado e executar os fluxos de trabalho de tradução, o bloco **[!UICONTROL Resumo da tradução]** do projeto de tradução exibe os detalhes do conector nos cabeçalhos **[!UICONTROL Provedor]** e **[!UICONTROL Método]**.
 
 1. Instale o conector do Gerenciador de pacotes.
-1. Clique/toque no logotipo do AEM e navegue até **[!UICONTROL Tools > Deployment > Cloud Services]**.
+1. Clique/toque no logotipo do Experience Manager e navegue até **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. Localize o conector instalado em **[!UICONTROL Serviços de terceiros]** na página **[!UICONTROL Serviços da nuvem]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
