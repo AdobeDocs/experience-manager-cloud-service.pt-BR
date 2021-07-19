@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Tags inteligentes,Marcação
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2346'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ As organizações que lidam com ativos digitais cada vez mais usam um vocabulár
 
 Comparado aos vocabulários de linguagem natural, a marcação baseada na taxonomia comercial ajuda a alinhar os ativos aos negócios de uma empresa e garante que os ativos mais relevantes apareçam em pesquisas. Por exemplo, um fabricante de carros pode marcar imagens de carros com nomes de modelo para que somente imagens relevantes sejam exibidas quando pesquisadas para projetar uma campanha promocional.
 
-Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar seu algoritmo de reconhecimento de imagem em sua estrutura de tags e taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos. [!DNL Experience Manager Assets] aplica tags inteligentes automaticamente a ativos carregados, por padrão.
+Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para treinar seu algoritmo de reconhecimento de imagem em sua estrutura de tags e taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos. [!DNL Experience Manager Assets] por padrão, as implantações são integradas ao  [!DNL Adobe Developer Console] .
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -179,11 +179,11 @@ Para verificar se o serviço de Tags inteligentes é treinado em suas tags no co
 
 ## Marcar ativos com tags inteligentes {#tag-assets}
 
-Todos os tipos de ativos compatíveis são marcados automaticamente por [!DNL Experience Manager Assets] quando carregados. A marcação é ativada e funciona, por padrão. [!DNL Experience Manager] aplica as tags apropriadas em tempo quase real.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Todos os tipos de ativos compatíveis são marcados automaticamente por [!DNL Experience Manager Assets] quando carregados. A marcação é ativada por padrão. [!DNL Experience Manager] aplica as tags apropriadas em tempo quase real.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
-* Para imagens e vídeos, as Tags inteligentes são baseadas em algum aspecto visual.
+Para imagens e vídeos, as Tags inteligentes são derivadas de algum aspecto visual.
 
-* Para ativos baseados em texto, a eficácia das Tags inteligentes não depende da quantidade de texto no ativo, mas das palavras-chave ou entidades relevantes presentes no texto do ativo. Para ativos baseados em texto, as Tags inteligentes são as palavras-chave que aparecem no texto, mas aquelas que melhor descrevem o ativo. Para ativos compatíveis, [!DNL Experience Manager] já extrai o texto, que é então indexado e usado para procurar os ativos. No entanto, as Tags inteligentes com base em palavras-chave no texto fornecem uma faceta de pesquisa dedicada, estruturada e de prioridade mais alta usada para melhorar a descoberta de ativos em comparação com o índice de pesquisa completo.
+Para ativos baseados em texto, a eficácia das Tags inteligentes não depende da quantidade de texto no ativo, mas das palavras-chave ou entidades relevantes presentes no texto do ativo. Para ativos baseados em texto, as Tags inteligentes são as palavras-chave que aparecem no texto, mas aquelas que melhor descrevem o ativo. Para ativos compatíveis, [!DNL Experience Manager] já extrai o texto, que é então indexado e usado para procurar os ativos. No entanto, as Tags inteligentes com base em palavras-chave no texto fornecem uma faceta de pesquisa dedicada, estruturada e de prioridade mais alta usada para melhorar a descoberta de ativos em comparação com o índice de pesquisa completo.
 
 ## Gerenciar tags inteligentes e pesquisas de ativos {#manage-smart-tags-and-searches}
 
