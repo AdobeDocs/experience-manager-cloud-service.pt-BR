@@ -2,7 +2,7 @@
 title: Introdução - Nomes de domínio personalizados
 description: Introdução - Nomes de domínio personalizados
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 O Cloud Manager permite que você adicione um domínio personalizado para identificar seu site com um nome exclusivo e de marca em um modo de autoatendimento por meio da interface do usuário. Seu Adobe Experience Manager as a Cloud Service é provisionado com um nome de domínio padrão, terminando em `*.adobeaemcloud.com`. Esse nome de domínio padrão permanece, mesmo depois de anexar nomes de domínio personalizados ao seu site.
 
 >[!NOTE]
->Os nomes de domínio personalizados são suportados somente no Cloud Manager para o Programa Sites (serviço de publicação). Cada Ambiente do Cloud Manager pode hospedar até 250 domínios personalizados por ambiente. O AEM as a Cloud Service não oferece suporte a domínios curingas.
+>Os nomes de domínio personalizados são suportados somente no Cloud Manager para o Programa Sites (serviço de publicação). Cada Ambiente do Cloud Manager pode hospedar até 500 domínios personalizados por ambiente. O AEM as a Cloud Service não oferece suporte a domínios curingas.
 
 Usando a página Configurações de domínio da interface do usuário do Cloud Manager ou a página Detalhes do ambiente , um usuário com permissões pode executar várias tarefas para gerenciar nomes de domínio personalizados para seus ambientes, incluindo:
 
