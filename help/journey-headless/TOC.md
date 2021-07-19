@@ -5,15 +5,15 @@ breadcrumb-title: jornada do desenvolvedor sem periféricos do AEM
 user-guide-description: Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu projeto.
 feature: Ferramentas do desenvolvedor
 role: Developer, Architect
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: bc7a8460c10706e9dd398f1aa2a0b3fc608fdafb
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
 
 
-# jornada sem cabeçalho AEM {#headless-journey}
+# AEM Jornada sem cabeça {#headless-journey}
 
 + jornada do desenvolvedor sem cabeçalho AEM {#developer}
    + [Compreender o headless no AEM](developer/overview.md)
@@ -26,3 +26,11 @@ ht-degree: 1%
    + [Como juntar tudo](developer/put-it-all-together.md)
    + [Como executar o aplicativo sem periféricos](developer/go-live.md)
    + [Opcional - Como criar aplicativos de página única com AEM](developer/create-spa.md)
++ jornada de localização sem cabeçalho AEM {#localization}
+   + [Entender a localização sem cabeçalho no AEM](localization/overview.md)
+   + [Introdução à localização sem periféricos AEM](localization/getting-started.md)
+   + [Saiba mais sobre o conteúdo sem periféricos e como localizar no AEM](localization/learn-about.md)
+   + [Configurar conector de tradução](localization/configure-connector.md)
+   + [Configurar regras de tradução](localization/translation-rules.md)
+   + [Traduzir conteúdo](localization/translate-content.md)
+   + [Publicar conteúdo traduzido](localization/publish-content.md)
