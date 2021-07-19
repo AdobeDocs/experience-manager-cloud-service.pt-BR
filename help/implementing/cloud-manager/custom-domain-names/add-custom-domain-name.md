@@ -2,7 +2,7 @@
 title: Adicionar um nome de domínio personalizado
 description: Adicionar um nome de domínio personalizado
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: bee18f13a7261077821205cad1df5e68a63638e0
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Um usuário deve ser um Proprietário comercial ou Gerente de implantação para
 
 * O AEM as a Cloud Service não oferece suporte a domínios curingas.
 
-* Cada Ambiente do Cloud Manager pode hospedar até 500 domínios personalizados por ambiente.
+* Cada Ambiente do Cloud Manager pode hospedar até 250 domínios personalizados por ambiente.
 
 * O mesmo nome de domínio não pode ser usado em mais de um ambiente.
 
