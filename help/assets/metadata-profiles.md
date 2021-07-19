@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadados
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1238'
 ht-degree: 20%
 
 ---
@@ -98,7 +98,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de metadados 
 
 **Para aplicar um perfil de metadados globalmente, siga um destes procedimentos**
 
-* Navegue até `https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`, aplique o perfil apropriado e clique em **Salvar**.
+* Navegue até `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`, aplique o perfil apropriado e clique em **[!UICONTROL Salvar]**.
 
 * Navegue até CRXDE Lite para o seguinte nó: `/content/dam/jcr:content`. Adicione a propriedade `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Clique em **Salvar tudo**.
 
@@ -110,7 +110,7 @@ Remova um perfil de metadados a uma pasta do menu **Ferramentas** ou, se estiver
 
 ### Remoção de perfis de metadados de pastas por meio da interface do usuário de Perfis {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de metadados]**.
+1. Clique no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis de metadados]**.
 1. Selecione o perfil de metadados que deseja remover de uma pasta ou de várias pastas.
 1. Clique em **[!UICONTROL Remover perfil de metadados da(s) pasta(s)]**, selecione a pasta ou várias pastas que deseja usar para remover um perfil e clique em **[!UICONTROL Concluído]**.
 
@@ -118,6 +118,6 @@ Remova um perfil de metadados a uma pasta do menu **Ferramentas** ou, se estiver
 
 ### Remoção de perfis de metadados de pastas por meio de Propriedades {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Clique no logotipo do AEM e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta da qual deseja remover um perfil de metadados.
+1. Clique no logotipo do Experience Manager e navegue **[!UICONTROL Assets]** até a pasta da qual deseja remover um perfil de metadados.
 1. Na pasta , clique na marca de seleção para selecioná-la e, em seguida, clique em **[!UICONTROL Properties]**.
 1. Selecione a guia **[!UICONTROL Perfis de metadados]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e clique em **[!UICONTROL Salvar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
