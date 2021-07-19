@@ -2,7 +2,7 @@
 title: Gerenciar ambientes - Cloud Service
 description: Gerenciar ambientes - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -67,7 +67,7 @@ O cartão **Ambientes** na página Visão geral lista até três ambientes.
 
 1. Selecione o botão **Mostrar tudo** para navegar até a página de resumo **Ambiente** para exibir uma tabela com uma lista completa de ambientes.
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. A página **Ambientes** exibe a lista de todos os ambientes existentes.
 
