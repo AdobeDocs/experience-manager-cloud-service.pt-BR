@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1943'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,44 @@ Assista ao vídeo [Visão geral da versão de junho de 2021](https://video.tv.ad
 
 ## Cloud Manager {#cloud-manager}
 
-Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.6.0 e 2021.5.0.
+Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.7.0 e 2021.6.0.
+
+### Data de lançamento {#release-cm-july}
+
+A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.7.0 é 15 de julho de 2021.
+A próxima versão está planejada para 12 de agosto de 2021.
+
+### Novidades {#what-is-new-cm-july}
+
+* Os clientes agora podem usar os JDKs do Azul 8 e 11 para seus processos de build do Cloud Manager e podem optar por usar um desses JDKs para plug-ins Maven compatíveis com cadeias de ferramentas *ou* em toda a execução do processo Maven.
+
+* O IP de saída agora será registrado no arquivo de log da etapa de compilação.
+
+* Ambientes de Preparo e Produção que executam versões antigas de AEM agora relatarão um status de **Atualizar Disponível**.
+
+* Os certificados SSL máximos suportados aumentaram para 20 por programa.
+
+* O número máximo de domínios que podem ser configurados aumentou para 500 por ambiente.
+
+* Os botões **Gerenciar Git** foram renomeados para **Acessar informações do Git** e a caixa de diálogo foi atualizada visualmente.
+
+* A versão do AEM Project Archetype usada pelo Cloud Manager foi atualizada para a versão 28.
+
+### Correções de erros {#bug-fixes-cm-july}
+
+* Em algumas situações, a Visualização não era uma opção disponível ao vincular uma Lista de permissões de IP a um ambiente.
+
+* Navegar manualmente para a página de detalhes da execução de uma execução não existente não exibia um erro, apenas uma tela de carregamento infinita.
+
+* A mensagem de erro exibida quando o número máximo de certificados SSL foi atingido não foi útil.
+
+* Em algumas circunstâncias, pode haver uma discrepância na versão de lançamento mostrada na placa de pipeline na página **Visão geral**.
+
+* O assistente de adição de programa declarou incorretamente que o nome não pode ser alterado após a criação.
+
+### Problemas conhecidos {#known-issues-cm-july}
+
+Os clientes que alternam para usar os JDKs do Azul devem estar cientes de que nem todos os aplicativos existentes serão compilados sem erro no JDK do Azul. É altamente recomendável testar localmente antes de trocar.
 
 ### Data de lançamento {#release-date-june-cm}
 
@@ -182,6 +219,16 @@ A data de lançamento do AEM Screens as a Cloud Service é 24 de junho de 2021.
 * O instantâneo de integridade do dispositivo economiza tempo, fornecendo um status crítico.
 
 * A página Detalhes do objeto oferece um resumo das informações mais relevantes para cada objeto do projeto.
+
+## Cloud Acceleration Manager {#cam}
+
+### Data de lançamento {#release-date-july-cam}
+
+A data de lançamento do Cloud Acceleration Manager é 15 de julho de 2021.
+
+## Novidades {#what-is-new-cam}
+
+O Cloud Acceleration Manager é um aplicativo baseado em nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, começando pelo planejamento até a ativação do Cloud Service. Configure suas equipes para uma migração bem-sucedida com práticas recomendadas, dicas, documentação e ferramentas do Adobe, recomendadas para ajudar em cada fase da jornada a AEM como Cloud Service. Saiba mais [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
 
 ## Complemento CIF {#cloud-services-cif}
 
