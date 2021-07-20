@@ -4,7 +4,7 @@ description: Siga esta página para saber como atribuir membros da equipe ao AEM
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender as etapas que o administrador do sistema deve tomar para atribuir os membros da equipe ao AEM como perfis de produto do Cloud Service e por que é crucial permitir que os autores do AEM iniciem sua jornada com o AEM.
+Este documento ajuda você a entender as etapas que o Administrador do sistema deve tomar para atribuir os membros da equipe ao AEM como perfis de produto do Cloud Service e por que é crucial permitir que os autores do AEM iniciem sua jornada com o AEM.
 
 Após ler esta seção, você deve:
 
