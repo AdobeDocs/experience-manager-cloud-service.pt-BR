@@ -2,15 +2,15 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
+source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 4%
+source-wordcount: '1535'
+ht-degree: 3%
 
 ---
 
 
-# Notas de versão atuais para [!DNL Adobe Experience Manager] como Cloud Service {#release-notes}
+# Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais para a versão atual (mais recente) de [!DNL Experience Manager] como um Cloud Service.
 
@@ -26,7 +26,7 @@ A seção a seguir descreve as Notas de versão gerais para a versão atual (mai
 A Data de lançamento de [!DNL Adobe Experience Manager] como Cloud Service 2021.4.0 é 6 de maio de 2021.
 A seguinte versão (2021.5.0) será lançada em 27 de maio de 2021.
 
-## AEM como um Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
+## AEM como uma fundação de Cloud Service{#aem-as-a-cloud-service-foundation}
 
 ### Novidades {#what-is-new-foundation}
 
@@ -65,6 +65,8 @@ A seguinte versão (2021.5.0) será lançada em 27 de maio de 2021.
 * Ao importar ativos usando a ferramenta de importação em massa, os administradores agora têm a opção de excluir os arquivos de origem após a importação ser bem-sucedida. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Ao editar um esquema de metadados, um novo campo seletor de caminho raiz permite que os administradores façam a seleção de forma rápida e fácil, reduzindo assim o tempo de configuração.
+
+* Ao editar um esquema de metadados, é adicionado um tipo de dados que fornece uma área de texto de forma livre no editor de metadados. Os usuários podem usar essa área de texto para inserir texto de forma livre como metadados de um ativo. Consulte [editor de esquema de metadados](/help/assets/metadata-schemas.md).
 
 * Os metadados de muitos ativos podem ser importados em massa usando um arquivo CSV e podem ser exportados para um arquivo CSV. O formato de data padrão agora é `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Os usuários podem aproveitar um formato diferente ao atualizar o cabeçalho da coluna. Por exemplo, adicione `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como o cabeçalho da coluna no arquivo CSV em vez da palavra `Date`.
 
