@@ -4,9 +4,9 @@ description: Saiba como criar Perfis de imagem do Dynamic Media que contêm conf
 feature: Gerenciamento de ativos, Perfis de imagem, Representações
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
+source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: '2762'
 ht-degree: 7%
 
 ---
@@ -160,9 +160,15 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 #### Aplicar perfis de imagem do Dynamic Media a pastas de Propriedades {#applying-image-profiles-to-folders-from-properties}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Assets]**. Em seguida, navegue até a pasta pai da pasta à qual deseja aplicar um perfil de imagem.
-1. Na pasta , selecione a marca de seleção para selecioná-la e, em seguida, selecione **[!UICONTROL Properties]**.
-1. Selecione a guia **[!UICONTROL Image Profiles]**. Na lista suspensa **[!UICONTROL Nome do perfil]**, selecione o perfil e selecione **[!UICONTROL Salvar e fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]**.
+1. Navegue até uma *pasta* (não um ativo) à qual deseja aplicar um perfil de imagem.
+1. Dependendo da exibição em que você estiver, execute um dos seguintes procedimentos:
+   * Na Exibição de cartão, passe o ponteiro sobre a pasta e selecione a marca de seleção para selecioná-la.
+   * Em Exibição de coluna ou Exibição de lista, marque a caixa de seleção à esquerda do nome da pasta.
+1. Na barra de ferramentas, selecione **[!UICONTROL Propriedades]**.
+1. Selecione a guia **[!UICONTROL Dynamic Media Processing]**.
+1. Em **[!UICONTROL Image Profile]**, na lista suspensa **[!UICONTROL Profile Name]**, selecione o perfil a ser aplicado.
+1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar e fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
