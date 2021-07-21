@@ -4,10 +4,10 @@ description: Siga esta página para saber como começar a usar o jornada de inte
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0931d0a6c53c850013b0162b9c027daec39ceb
+source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 2%
+source-wordcount: '709'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 | # | Artigo | Descrição |
 |---|---|---|
 | 0 | Jornada de integração | Este documento |
-| 1 | Saiba mais sobre conceitos de integração, como:<br>Administrador do sistema<br>Admin Console<br>Sistema Adobe Identity Management<br>Adobe ID<br>Introdução ao Cloud Manager<br>AEM como Cloud Service e Perfis de produto<br>Suporte ao Adobe | Saiba mais sobre conceitos de integração. |
+| 1 | Saiba mais sobre conceitos de integração, como:<br>[Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Sistema Adobe Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Introdução ao Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM como Cloud Service e Perfis de produto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Suporte ao Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Saiba mais sobre conceitos de integração. |
 | 2 | Introdução ao integração | Saiba mais sobre como fazer logon no Admin Console e verificar seu perfil como Administrador do sistema |
 | 3 | Atribuir membros da equipe aos perfis de produto do Cloud Manager | Revise os Perfis de produto do Cloud Manager e saiba como atribuir membros da equipe aos perfis de produto do Cloud Manager. |
 | 4 | Configuração de recursos da nuvem via Cloud Manager | Saiba como os recursos da nuvem são criados e quem pode fazê-lo. Além disso, saiba como o programa de nuvem e os ambientes são criados. |
