@@ -4,9 +4,9 @@ description: Siga esta página para saber como começar a usar o jornada de inte
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -17,29 +17,23 @@ A integração é o processo durante o qual um Administrador de sistema designad
 
 ## Objetivo {#objective}
 
-Como Administrador do sistema, este documento resume as primeiras etapas da sua jornada Onboard.
+Como Administrador do sistema, este documento resume as primeiras etapas da sua jornada de integração.
 
 Após ler esta seção, você deve ser capaz de:
 
-* Entenda o que é Admin Console
 * Como acessar e fazer logon no Admin Console
 * Revise seus privilégios como Administrador do sistema via Admin Console
 
-## Noções básicas sobre o Admin Console {#login-admin-console}
-
-Após a assinatura do contrato, o Adobe Managed Services (AMS) inicia a integração do cliente.
-
-Depois que seu contrato for assinado, o Adobe concluirá o provisionamento de sua organização, seguindo o qual o Administrador de sistema de sua organização receberá um email de boas-vindas permitindo que ele execute tarefas de Administrador do sistema, como adicionar usuários e atribuí-los a funções.
-
-O Admin Console do Adobe é um local central para administrar e gerenciar licenças de produtos e usuários do Adobe. O administrador do sistema fará logon no Admin Console do Adobe para adicionar ou remover usuários e muito mais. Clique [aqui](https://adminconsole.adobe.com/) para acessar o Admin Console do Adobe.
+>[!NOTE]
+>Antes de iniciar o processo de integração, certifique-se de saber mais sobre o Adobe Admin Console. O Admin Console do Adobe é um local central para administrar e gerenciar licenças de produtos e usuários do Adobe. O administrador do sistema fará logon no Admin Console do Adobe para adicionar ou remover usuários e muito mais. Consulte [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) para saber mais.
 
 
-## Etapas para fazer logon no Admin Console {#steps-admin-console}
+## Logon no Admin Console {#steps-admin-console}
 
 Siga as etapas abaixo para navegar até o Admin Console e revisar a função de Administrador do sistema no Admin Console:
 
 >[!NOTE]
->Você deve ser um Administrador do sistema para poder concluir as etapas a seguir com êxito.
+>Você deve ser um Administrador do sistema para concluir as etapas a seguir com êxito.
 
 1. Clique em **Introdução** do email de boas-vindas, como mostrado na figura abaixo, para navegar até o Admin Console ou navegar diretamente para o Admin Console a partir de [aqui](https://adminconsole.adobe.com).
 
