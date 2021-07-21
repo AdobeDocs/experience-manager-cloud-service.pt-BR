@@ -2,9 +2,9 @@
 title: Regras de qualidade do código personalizado - Cloud Services
 description: Regras de qualidade do código personalizado - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bd9cb35016b91e247f14a851ad195a48ac30fda0
+source-git-commit: 0217e39ddc8fdaa2aa204568be291d608aef3d0e
 workflow-type: tm+mt
-source-wordcount: '3403'
+source-wordcount: '3520'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Esta página descreve as regras de qualidade de código personalizadas executada
 
 A seção a seguir destaca as regras do SonarQube:
 
-### Não use funções potencialmente perigosas {#do-not-use-potentially-dangerous-functions}
+### Não utilize funções potencialmente perigosas {#do-not-use-potentially-dangerous-functions}
 
 **Chave**: CQRules:CWE-676
 
@@ -184,7 +184,7 @@ public void orDoThis() {
 }
 ```
 
-### Os objetos ResourceResolver devem ser sempre fechados {#resourceresolver-objects-should-always-be-closed}
+### Os objetos ResourceResolver devem sempre ser fechados {#resourceresolver-objects-should-always-be-closed}
 
 **Chave**: CQRules:CQBP-72
 
@@ -297,7 +297,7 @@ public void orDoThis() throws MyCustomException {
 }
 ```
 
-### Evite ter uma declaração de log imediatamente seguida por uma instrução de lançamento {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
+### Evite ter uma declaração de log imediatamente seguida por uma declaração de lançamento {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 **Chave**: CQRules:CQBP-44 — ConsecutivelyLogAndThrow
 
@@ -326,7 +326,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### Evite fazer logon em INFO ao manipular solicitações de GET ou HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### Evite fazer logon no INFO ao manipular solicitações de GET ou HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 **Chave**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
@@ -428,7 +428,7 @@ public void doThis() {
 }
 ```
 
-### Não imprima rastreamentos de pilha no console {#do-not-print-stack-traces-to-the-console}
+### Não imprimir rastreamentos de pilha no console {#do-not-print-stack-traces-to-the-console}
 
 **Chave**: CQRules:CQBP-44—ExceptionPrintStackTrace
 
@@ -464,7 +464,7 @@ public void doThis() {
 }
 ```
 
-### Não saída para Saída Padrão ou Erro Padrão {#do-not-output-to-standard-output-or-standard-error}
+### Não produzir para Saída Padrão ou Erro Padrão {#do-not-output-to-standard-output-or-standard-error}
 
 **Chave**: CQRules:CQBP-44—LogLevelConsolePrinters
 
@@ -592,7 +592,88 @@ public class DontDoThis implements Page {
 }
 ```
 
-### Os Índices de Oak do Ativo DAM Personalizado estão estruturados corretamente {#oakpal-damAssetLucene-sanity-check}
+### Os índices personalizados do Lucene Oak devem ter uma configuração de tika {#oakpal-indextikanode}
+
+**Chave**: IndexTikaNode
+
+**Tipo**: Bug
+
+**Gravidade**: Bloqueador
+
+**Desde**: 2021.8.0
+
+Vários índices prontos AEM Oak incluem uma configuração de tika e personalizações desses índices **must** incluem uma configuração de tika. Essa regra verifica as personalizações dos índices `damAssetLucene`, `lucene` e `graphqlConfig` e gera um problema se `tika`  está ausente ou se o nó `tika` estiver faltando um nó filho chamado `config.xml`.
+
+Consulte [Documentação de indexação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) para obter mais informações sobre como personalizar definições de índice.
+
+#### Código não compatível {#non-compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+```
+
+#### Código compatível {#compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Os índices personalizados do Lucene Oak não devem ser síncronos {#oakpal-indexasync}
+
+**Chave**: IndexAsyncProperty
+
+**Tipo**: Bug
+
+**Gravidade**: Bloqueador
+
+**Desde**: 2021.8.0
+
+Índices de Oak do tipo lucene  deve ser sempre indexado de forma assíncrona. Se isso não for feito, pode ocorrer instabilidade do sistema. Mais informações sobre a estrutura dos índices de lucene podem ser encontradas na [Documentação do Oak](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition).
+
+#### Código não compatível {#non-compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### Código compatível {#compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### Os Índices do Oak do Ativo DAM Personalizado estão estruturados corretamente  {#oakpal-damAssetLucene-sanity-check}
 
 **Chave**: IndexDamAssetLucene
 
@@ -602,38 +683,31 @@ public class DontDoThis implements Page {
 
 **Desde**: 2021.6.0
 
-Para que a pesquisa de ativos funcione corretamente no AEM Assets, o índice `damAssetLucene` Oak deve seguir um conjunto de diretrizes. Essa regra verifica os seguintes padrões especificamente para índices cujo nome contém `damAssetLucene`:
-
-O nome deve seguir as diretrizes para personalizar as definições de índice descritas aqui.
-
-* Especificamente, o nome deve seguir o padrão `damAssetLucene-<indexNumber>-custom-<customerVersionNumber>`.
-
-* A definição do índice deve ter uma propriedade de vários valores chamada tags que contém o valor `visualSimilaritySearch`.
-
-* A definição do índice deve ter um nó filho chamado `tika` e esse nó filho deve ter um nó filho chamado config.xml .
+Para que a pesquisa de ativos funcione corretamente no AEM Assets, as personalizações do índice `damAssetLucene` Oak devem seguir um conjunto de diretrizes específicas a esse índice. Essa regra verifica se a definição do índice deve ter uma propriedade de vários valores chamada `tags` que contenha o valor `visualSimilaritySearch`.
 
 #### Código não compatível {#non-compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - type: lucene
+    + damAssetLucene-1-custom
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      + tika
+        + config.xml
 ```
 
 #### Código compatível {#compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom-2
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - reindexCount: -6952249853801250000
-      - tags: [visualSimilaritySearch]
-      - type: lucene
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
       + tika
         + config.xml
 ```
@@ -717,7 +791,7 @@ Um problema comum é o uso de nós chamados `config` nas caixas de diálogo do c
       + rtePlugins [nt:unstructured]
 ```
 
-### Os pacotes não devem sobrepor {#oakpal-no-overlap}
+### Os Pacotes Não Devem Sobrepor {#oakpal-no-overlap}
 
 **Chave**: PackageOverlaps
 
@@ -729,7 +803,7 @@ Um problema comum é o uso de nós chamados `config` nas caixas de diálogo do c
 
 Semelhante ao *Pacotes Não Devem Conter Configurações OSGi Duplicadas*, esse é um problema comum em projetos complexos, onde o mesmo caminho de nó é gravado por vários pacotes de conteúdo separados. Embora seja possível usar as dependências do pacote de conteúdo para garantir um resultado consistente, é melhor evitar sobreposições completamente.
 
-### O modo de criação padrão não deve ser a interface clássica {#oakpal-default-authoring}
+### O Modo de Criação Padrão Não Deve Ser A Interface Clássica {#oakpal-default-authoring}
 
 **Chave**: ClassicUIAuthoringMode
 
@@ -741,7 +815,7 @@ Semelhante ao *Pacotes Não Devem Conter Configurações OSGi Duplicadas*, esse 
 
 A configuração do OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` define o modo de criação padrão no AEM. Como a interface do usuário clássica foi descontinuada desde o AEM 6.4, um problema agora será gerado quando o modo de criação padrão estiver configurado para a interface do usuário clássica.
 
-### Os componentes com caixas de diálogo devem ter caixas de diálogo de interface de toque {#oakpal-components-dialogs}
+### Os Componentes Com Caixas De Diálogo Devem Ter Caixas De Diálogo Da Interface Do Usuário De Toque {#oakpal-components-dialogs}
 
 **Chave**: ComponentWithOnlyClassicUIDalog
 
@@ -787,7 +861,7 @@ O suporte para Replicação reversa não está disponível em implantações de 
 
 Os clientes que usam replicação inversa devem entrar em contato com o Adobe para obter soluções alternativas.
 
-### OakPAL - Os recursos contidos nas bibliotecas de clientes ativadas por proxy devem estar em uma pasta chamada resources {#oakpal-resources-proxy}
+### OakPAL - Os recursos contidos em bibliotecas de clientes ativadas por proxy devem estar em uma pasta nomeada recursos {#oakpal-resources-proxy}
 
 **Chave**: ClientlibProxyResource
 
@@ -929,15 +1003,15 @@ Um nó de definição de índice de pesquisa personalizado corretamente definido
 
 AEM Cloud Service requer que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo `oak:QueryIndexDefinition`) sejam nomeadas de acordo com um padrão específico descrito em [Pesquisa e Indexação de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
 
-### OakPAL - Nós de Definição de Índice de Pesquisa Personalizado Devem Usar o Tipo de Índice lucene {#oakpal-index-type-lucene}
+### OakPAL - Nós de Definição de Índice de Pesquisa Personalizado Devem Usar o tipo de índice lucene  {#oakpal-index-type-lucene}
 
 **Chave**: IndexType
 
-**Tipo**: Cheiro do código
+**Tipo**: Bug
 
-**Gravidade**: Menor
+**Gravidade**: Bloqueador
 
-**Desde**: Versão 2021.2.0
+**Desde**: Versão 2021.2.0 (tipo e gravidade alterados em 2021.8.0)
 
 AEM Cloud Service requer que as definições de índice de pesquisa personalizadas (ou seja, nós do tipo oak:QueryIndexDefinition) tenham uma propriedade type com o valor definido como **lucene**. A indexação usando tipos de índice herdados deve ser atualizada antes da migração para AEM Cloud Service. Consulte [Pesquisa e indexação de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) para obter mais informações.
 
