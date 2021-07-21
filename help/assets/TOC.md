@@ -4,10 +4,10 @@ user-guide-title: Guia do Assets as a Cloud Service
 breadcrumb-title: Guia do Assets
 user-guide-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 70%
+source-wordcount: '481'
+ht-degree: 66%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 70%
    + [Gerenciar ativos de vídeo](manage-video-assets.md)
    + [Baixar ativos](download-assets-from-aem.md)
    + [Ativos de check-in e check-out para edição](check-out-and-submit-assets.md)
-   + [Digital Rights Management para ativos](drm.md)
+   + [Digital Rights Management por ativos](drm.md)
    + [Ativos de marca d&#39;água](watermark-assets.md)
    + [Processar ativos usando  [!DNL Creative Cloud] APIs](cc-api-integration.md)
 + Configurar, administrar e estender [!DNL Assets] {#admin}
@@ -112,8 +112,8 @@ ht-degree: 70%
    + [Imagens interativas](dynamic-media/interactive-images.md)
    + [Vídeos interativos](dynamic-media/interactive-videos.md)
    + [Vídeo 360 VR](dynamic-media/360-video.md)
-   + [Integração dos visualizadores do Dynamic Media ao Adobe Analytics e ao Adobe Launch](dynamic-media/launch.md)
-   + [Uso do Quickviews para criar pop-ups personalizados](dynamic-media/custom-pop-ups.md)
+   + [Integração de visualizadores do Dynamic Media com tags do Adobe Analytics e do Adobe Experience Platform](dynamic-media/tags.md)
+   + [Usar o Quickview para criar pop-ups personalizados](dynamic-media/custom-pop-ups.md)
    + [Entrega de imagens otimizadas para um site responsivo](dynamic-media/responsive-site.md)
    + [Visualização de ativos do Dynamic Media](dynamic-media/previewing-assets.md)
    + [Adição de ativos do Dynamic Media a páginas](dynamic-media/adding-dynamic-media-assets-to-pages.md)
