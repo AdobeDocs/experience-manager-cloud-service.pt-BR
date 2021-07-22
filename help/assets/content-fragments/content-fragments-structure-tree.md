@@ -4,9 +4,9 @@ description: Use o recurso Árvore de estrutura do Editor de fragmento de conte�
 feature: Fragmentos de conteúdo
 role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 61e3b1d883afe0e9a873991fb8fd148de0fbcd4f
+source-git-commit: 426a05db7062c7823dfaa63e1d918792d3e8a290
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '113'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ No Editor de fragmento de conteúdo, é possível selecionar o ícone Árvore de
 
 ![Árvore da estrutura do fragmento do conteúdo](assets/cfm-structuretree-01.png)
 
-Isso abrirá uma representação da estrutura do fragmento no painel esquerdo. Com isso, você pode navegar pelos fragmentos referenciados e para eles.
+Isso abrirá uma representação da estrutura do fragmento no painel esquerdo. Com isso, você pode navegar pelos fragmentos referenciados e para eles. Selecionar uma referência abre esse fragmento para edição.
 
 >[!NOTE]
 >
