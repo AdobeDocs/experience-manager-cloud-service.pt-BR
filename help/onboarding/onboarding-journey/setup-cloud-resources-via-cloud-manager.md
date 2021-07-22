@@ -4,25 +4,25 @@ description: Siga esta página para saber como configurar os Recursos da nuvem p
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
 
 # Configuração de recursos da nuvem via Cloud Manager {#setup-cloud-resources}
 
-O Administrador do sistema atribuído à função &quot;Proprietário da empresa&quot; deve acessar e fazer logon no Cloud Manager. Em seguida, um membro da equipe atribuído ao perfil de produto &quot;Proprietário comercial&quot; deve fazer logon no Cloud Manager e criar o programa em nuvem e os ambientes para que a equipe de especialistas possa começar.
+O Administrador do sistema atribuído à função *Proprietário comercial* deve acessar e fazer logon no Cloud Manager. Em seguida, um membro da equipe atribuído ao perfil de produto *Proprietário comercial* deve fazer logon no Cloud Manager e criar o programa e os ambientes de nuvem para que a equipe de especialistas possa começar.
 
 ## Objetivo {#objective}
 
 Este documento ajuda você a entender como os recursos da nuvem são criados e quem pode fazê-lo.
 
-Após ler esta seção, você deve:
+Após ler esta seção, você deve entender:
 
-* Entenda que um administrador de sistema atribuído à função &quot;Proprietário comercial&quot; deve ser o primeiro a acessar e fazer logon no Cloud Manager
-* Entenda como o programa em nuvem e os ambientes são criados.
+* Um Administrador do sistema atribuído à função *Proprietário comercial* deve ser o primeiro a acessar e fazer logon no Cloud Manager.
+* Como o programa em nuvem e os ambientes são criados.
 
 ## Introdução {#introduction}
 
@@ -32,36 +32,47 @@ Siga as seções abaixo para saber como criar seus [programas de serviço em nuv
 
 ### Pré-requisitos {#prerequisites}
 
-* O administrador do sistema atribuído à função &quot;Proprietário comercial&quot; deve acessar e fazer logon no Cloud Manager.
+* O Administrador do sistema atribuído à função *Proprietário comercial* deve acessar e fazer logon no Cloud Manager.
 
-* Saiba como navegar e fazer logon no Cloud Manager
+* Entenda como [navegar e fazer logon no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en).
 
-* Familiarize-se com os perfis de produto do Cloud Manager
+* Familiarize-se com os [perfis de produto do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
 
 * Entenda as considerações para criar seu programa. Assista a este vídeo para saber mais.
 
-* Entenda os conceitos dos programas e ambientes do Cloud Manager
+* Entenda os conceitos do Cloud Manager [programas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) e [ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)
 
 ## Navegar para o Cloud Manager {#navigate-cloud-manager}
 
-1. O usuário &quot;Proprietário da empresa&quot; receberá um email de boas-vindas de onde pode começar ou, se não conseguir encontrá-lo, acesse diretamente experience.adobe.com e faça logon usando sua Adobe ID.
+1. O usuário *Proprietário comercial* receberá um email de boas-vindas de onde pode começar, ou se não conseguir encontrá-lo, vá diretamente para [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) e faça logon usando sua Adobe ID.
 
-1. Na página inicial do Experience Cloud, selecione Experience Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
 
+1. Na página inicial do Adobe Experience Cloud, selecione **Experience Manager**.
 
-1. Isso o levará à página inicial da AEM. Aqui, selecione Cloud Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
 
+1. Isso o levará à página inicial da AEM. A partir daqui, inicie o **Cloud Manager** .
 
-1. Isso o levará à página de aterrissagem do Cloud Manager, conforme mostrado abaixo:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
+1. A página de aterrissagem do Cloud Manager é exibida, como mostrado na figura abaixo.
 
-1. Agora, verifique se você recebeu o Perfil de Produto do Proprietário Comercial. Para fazer isso, selecione o perfil na parte superior direita, como mostrado abaixo:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
+1. Verifique se você recebeu o Perfil de Produto do Proprietário Comercial. Para fazer isso, selecione o perfil na parte superior direita, conforme mostrado abaixo.
 
-1. Agora selecione Funções de usuário e verifique se você está atribuído ao Proprietário comercial.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
+1. Selecione **Funções de Usuário** e verifique se você está atribuído ao Proprietário da Empresa.
 
-   Excelente trabalho! Você fez login com êxito no Cloud Manager como proprietário de negócios!
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources6.png)
+
+1. Isso confirma sua função de usuário como um Proprietário comercial.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources7.png)
+
+   Excelente trabalho! Você fez logon no Cloud Manager as a Business Owner!
 
 ## Criação de programa Cloud Service {#create-cloud-service-program}
 
