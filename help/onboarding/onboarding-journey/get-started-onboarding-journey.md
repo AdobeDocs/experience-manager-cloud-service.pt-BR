@@ -4,7 +4,7 @@ description: Siga esta página para saber como começar a usar o jornada de inte
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
