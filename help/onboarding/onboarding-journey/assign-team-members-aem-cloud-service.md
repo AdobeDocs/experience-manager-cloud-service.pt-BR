@@ -4,15 +4,15 @@ description: Siga esta página para saber como atribuir membros da equipe ao AEM
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
 
 
-# Atribuir ao AEM como perfis de produto do Cloud Service {#assign-team-members-cloud-service}
+# Atribuindo membros da equipe ao AEM como perfis de produto do Cloud Service {#assign-team-members-cloud-service}
 
 ## Objetivo {#objective}
 
