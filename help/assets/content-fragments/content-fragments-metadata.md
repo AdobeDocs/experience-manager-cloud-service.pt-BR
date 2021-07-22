@@ -4,10 +4,10 @@ description: Veja como visualizar e editar as propriedades de metadados dos Frag
 feature: Fragmentos de conteúdo
 role: User
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 4d20b83c3324e5c082c26e2fa700f03763da2d19
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 9%
+source-wordcount: '208'
+ht-degree: 6%
 
 ---
 
@@ -34,5 +34,7 @@ Você pode exibir e editar os metadados (propriedades) dos fragmentos de conteú
    * **Título**
    * **Descrição**
    * **Tags**
+      * [](/help/sites-cloud/authoring/features/tags.md) As tags são particularmente poderosas ao organizar os fragmentos, pois podem ser usadas para classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
+Por exemplo, você pode marcar fragmentos relevantes como &quot;lançamento de Natal&quot; para permitir a navegação somente nesses como um subconjunto ou copiá-los para uso com outro lançamento futuro em uma nova pasta.
    * Criado (somente exibição)
    ![metadados](assets/cfm-metadata-02.png)
