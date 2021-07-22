@@ -4,10 +4,10 @@ description: Siga esta página para saber como começar a usar o jornada de inte
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 1%
+source-wordcount: '646'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ Parabéns por começar sua jornada com AEM como Cloud Service! Estamos animados 
 
 ## Introdução {#introduction}
 
-Este guia aborda os tópicos mais importantes para que, ao concluir, o leitor:
+Este guia aborda os tópicos mais importantes para que, ao concluir, você:
 
 * Ter um entendimento completo do que esperar durante o AEM como uma jornada de integração.
 * Ativaram e executaram a sua equipe e deram os primeiros passos para aprender a criar e desenvolver conteúdo para o seu AEM como um aplicativo Cloud Service.
@@ -31,18 +31,13 @@ Isso significa:
 
 ## Público {#audience}
 
-A integração é o processo durante o qual um Administrador de sistema designado configura o AEM como um Cloud Service para sua organização. Isso inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções apropriadas com base em suas responsabilidades de trabalho, após as quais cada membro é capaz de fazer logon e acessar seus AEM como recursos de Cloud Service.
+A integração é o processo durante o qual um [Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura o AEM como um Cloud Service para sua organização. Isso inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções apropriadas com base em suas responsabilidades de trabalho, após as quais cada membro é capaz de fazer logon e acessar seus AEM como recursos de Cloud Service.
 
 A jornada de integração é ilustrada abaixo e cada etapa na jornada é descrita detalhadamente nas seções a seguir.
 
 ## Explorar a Jornada de integração {#exploring-onboarding-journey}
 
-
 Você explorará muitos tópicos nesta jornada. Os artigos a seguir fornecem um conhecimento fundamental das etapas de integração do AEM como Cloud Service. Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você não estiver familiarizado com integração, recomendamos que você comece no início e avance sequencialmente.
-
-Você explorará muitos tópicos nesta jornada. Os artigos a seguir fornecem o conhecimento fundamental necessário no processo de integração e vinculam a documentação técnica detalhada.
-
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você não estiver familiarizado com integração, recomendamos que comece revisando os artigos mencionados na seção Conceitos de integração de aprendizagem do Guia.
 
 | # | Artigo | Descrição |
 |---|---|---|
