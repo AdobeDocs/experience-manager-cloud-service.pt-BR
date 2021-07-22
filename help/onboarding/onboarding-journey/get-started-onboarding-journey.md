@@ -1,17 +1,17 @@
 ---
-title: Introdução ao Onboard Jornada
+title: Introdução ao processo de integração
 description: Siga esta página para saber como começar a usar o jornada de integração
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
-# Introdução ao Onboard Jornada {#getting-started}
+# Introdução ao processo de integração {#getting-started}
 
 A integração é o processo durante o qual um Administrador de sistema designado configura o AEM como um Cloud Service para sua organização. Isso inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções apropriadas com base em suas responsabilidades de trabalho, após as quais cada membro é capaz de fazer logon e acessar seus AEM como recursos de Cloud Service.
 
@@ -21,7 +21,7 @@ Como Administrador do sistema, este documento resume as primeiras etapas da sua 
 
 Após ler esta seção, você deve ser capaz de:
 
-* Como acessar e fazer logon no Admin Console
+* Acesso e logon no Admin Console
 * Revise seus privilégios como Administrador do sistema via Admin Console
 
 >[!NOTE]
