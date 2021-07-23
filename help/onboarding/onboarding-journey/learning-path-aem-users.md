@@ -4,9 +4,9 @@ description: Siga esta página para saber mais sobre as próximas etapas após o
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bfed38bbb0a08e9d6484ec579c4b11d04282473b
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '335'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ As etapas a seguir precisam ser seguidas para acessar o Autor:
 
 ## O que vem a seguir {#whats-next}
 
-Agora você está pronto para iniciar seu caminho de aprendizagem para criação e publicação de páginas. Para saber mais, consulte o Guia de início rápido para a criação de páginas.
+Agora você está pronto para iniciar seu caminho de aprendizagem para criação e publicação de páginas. Você deve seguir o caminho, revisando o documento Caminho de aprendizagem para usuários AEM.
 
 ## Recursos adicionais {#additional-resources}
 
