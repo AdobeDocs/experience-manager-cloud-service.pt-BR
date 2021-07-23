@@ -4,10 +4,10 @@ description: Siga esta página para saber como atribuir membros da equipe ao AEM
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '743'
+ht-degree: 1%
 
 ---
 
@@ -18,26 +18,31 @@ ht-degree: 2%
 
 Este documento ajuda você a entender as etapas que o Administrador do sistema deve tomar para atribuir os membros da equipe ao AEM como perfis de produto do Cloud Service e por que é crucial permitir que os autores do AEM iniciem sua jornada com o AEM.
 
-Após ler esta seção, você deve:
+Após ler esta seção, você deve entender:
 
-* Entenda por que e como os membros da equipe são atribuídos ao AEM como perfis de produto do Cloud Service
-* Saiba como adicionar membros da equipe AEM perfil de produto do usuário
-* Saiba como adicionar membros da equipe ao perfil de produto Administradores AEM
+* Por que e como os membros da equipe são atribuídos ao AEM como perfis de produto do Cloud Service.
+* Como adicionar membros da equipe AEM perfil de produto do usuário.
+* Como adicionar membros da equipe ao perfil de produto Administradores AEM.
 
 
 ## Introdução {#introduction}
 
-Para receber acesso ao AEM como Cloud Service, os usuários devem pertencer a um dos dois perfis de produto, &quot;AEM usuários&quot; ou &quot;AEM administradores&quot;. Os membros da equipe devem receber permissões para a instância do AEM, pois as permissões para administrar o Cloud Manager não serão suficientes. Saiba mais.
+Para receber acesso ao AEM como um Cloud Service, os usuários devem pertencer a um de dois perfis de produto, como *AEM Usuários* ou *AEM Administradores*. Os membros da equipe devem receber permissões para a instância do AEM, pois as permissões para administrar o Cloud Manager não serão suficientes. Saiba mais.
 
 >[!NOTE]
 >Todos os usuários atribuídos a AEM perfil de produto do Usuário pelo administrador do sistema terão (somente leitura) acesso ao Cloud Manager.
 
 ## Pré-requisitos {#prerequisites}
 
-* Entender AEM como perfis de produto Cloud Service
-* Familiarize-se com o Admin Console
+Antes de começar a ler esta seção, você deve considerar seguir estes pré-requisitos:
+
+* Entenda [AEM como um Cloud Service product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)
+* Familiarize-se com [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)
 * Os perfis de produto do Cloud Manager foram atribuídos aos membros de sua equipe, conforme apropriado, e os recursos de nuvem foram configurados
-* Detalhes sobre o membro da equipe: O administrador do sistema deve ter os nomes e endereços de email e as funções e responsabilidades dos membros da equipe que precisarão acessar o AEM como Cloud Service. Para fins de integração, recomendamos que você adicione inicialmente usuários que participarão das tarefas imediatas, como administradores, desenvolvedores e autores de conteúdo. Você pode continuar o resto da integração sem adicionar todos os usuários. Depois de concluir a integração, você pode dimensionar para um número maior de usuários posteriormente.
+* Detalhes sobre o membro da equipe: O Administrador do sistema deve ter os nomes e endereços de email e as funções e responsabilidades dos membros da equipe que precisarão acessar o AEM como Cloud Service.
+
+   >[!NOTE]
+   >Para fins de integração, recomendamos que você adicione inicialmente usuários que participarão das tarefas imediatas, como administradores, desenvolvedores e autores de conteúdo. Você pode continuar o resto da integração sem adicionar todos os usuários. Depois de concluir a integração, você pode dimensionar para um número maior de usuários posteriormente.
 
 
 1. Faça logon no Admin Console
@@ -55,11 +60,9 @@ No Admin Console, é possível ver a lista de Perfis do Cloud Manager. Para faze
    Agora é possível ver a lista de AEM como um perfil de produto do Cloud Service que será necessário atribuir a um usuário com base em sua função. Para saber mais sobre isso, acesse AEM as a Cloud Service Product Profiles.
 
 
-
-
 ## Adicionar membros da equipe ao Perfil de Produto AEM Usuário ou Administrador AEM {#add-team-members}
 
-Para receber acesso à instância do AEMaaCS, os usuários devem pertencer a um dos dois perfis de produto &quot;AEM usuários&quot; ou &quot;AEM administradores&quot;.
+Para receber acesso ao AEM como uma instância do Cloud Service, os usuários devem pertencer a um dos dois perfis de produto &quot;AEM usuários&quot; ou &quot;AEM administradores&quot;.
 
 >[!NOTE]
 >Você deve receber permissões para a instância. As permissões para administrar o Cloud Manager não serão suficientes. Saiba mais.
@@ -68,7 +71,7 @@ As etapas abaixo devem ser seguidas pelo administrador do sistema que também es
 
 1. No Cloud Manager, navegue até o Cloud Manager e selecione o botão Gerenciar acesso no contexto do ambiente de interesse, conforme mostrado abaixo:
 
-1. Depois de clicar em Gerenciar acesso, uma nova GUIA navega até o Admin Console, de onde você tem acesso à instância do autor do ambiente. Selecione &quot;Administradores AEM&quot; ou &quot;Usuários AEM&quot; com base nas permissões que esse indivíduo precisa dar. Saiba mais sobre o AEM as a Cloud Service product profiles.
+1. Depois de clicar em Gerenciar acesso, uma nova GUIA navega até o Admin Console, de onde você tem acesso à instância do autor do ambiente. Selecione *AEM Administradores* ou *AEM Usuários* com base nas permissões que esse indivíduo precisa conceder. Saiba mais sobre [AEM como um Cloud Service product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles).
 
 1. Selecione Adicionar usuário como mostrado abaixo e envie os detalhes necessários para concluir a adição do membro da equipe:
 
@@ -80,7 +83,7 @@ As etapas abaixo devem ser seguidas pelo administrador do sistema que também es
 
 ## O que vem a seguir {#whats-next}
 
-Os usuários atribuídos aos perfis de produto do AEMaaCS agora estão prontos para aprender como acessar o Author e se familiarizar com a criação de páginas no AEM as a Cloud Service. Saiba mais.
+Os usuários designados ao AEM como perfis de produto do Cloud Service agora estão prontos para acessar o Author e se familiarizar com a criação de páginas no AEM as a Cloud Service. Você deve seguir o caminho, revisando o documento Caminho de aprendizagem para usuários AEM.
 
 ## Recursos adicionais {#additional-resources}
 
