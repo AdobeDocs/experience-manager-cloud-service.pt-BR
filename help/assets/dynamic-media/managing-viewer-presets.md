@@ -4,9 +4,9 @@ description: Saiba como criar e gerenciar predefinições do visualizador no Dyn
 feature: Predefinições do visualizador, visualizadores
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4231'
 ht-degree: 9%
 
 ---
@@ -68,7 +68,7 @@ Todas as predefinições do visualizador prontas para uso que acompanham o Dynam
 * Apple iPad
 * Android™ Smartphone
 * Tablet Android™
-* Para vídeo, é fornecido suporte extra para reprodução MP4 para [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) e [Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)).
+* Para vídeo, é fornecido suporte extra para reprodução MP4 para [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) e [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Tipos de mídia avançada para predefinições do visualizador {#rich-media-types-for-viewer-presets}
 
