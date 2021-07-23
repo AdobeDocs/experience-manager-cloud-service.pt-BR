@@ -4,9 +4,9 @@ description: Siga esta página para saber mais sobre as próximas etapas após o
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ Para saber mais sobre este tópico, clique aqui
 
 ## O que vem a seguir {#whats-next}
 
-Agora, os Gerentes de desenvolvimento e implantação estão prontos para se familiarizarem com o desenvolvimento de código no AEMaaCS. Saiba mais ou encontre mais caminhos de aprendizagem na seção Recursos adicionais abaixo.
+Os Gerentes de desenvolvimento e implantação agora estão prontos para se familiarizar com o desenvolvimento de código no AEM as a Cloud Service. Saiba mais ou encontre mais caminhos de aprendizagem na seção Recursos adicionais abaixo.
 
 ## Recursos adicionais {#additional-resources}
 
