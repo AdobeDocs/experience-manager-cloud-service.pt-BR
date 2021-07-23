@@ -1,13 +1,13 @@
 ---
 title: APIs obsoletas
 description: Notas de versão específicas para APIs obsoletas e removidas no [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-source-git-commit: 788727ce2e6b26f5da647c9ffd8267d958e3b226
+exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
+source-git-commit: 02b610b830911b737f8caa7356d0e446958bcc2f
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 7%
 
 ---
-
 
 # APIs obsoletas {#deprecated-apis}
 
@@ -64,7 +64,7 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
     <td>org.json</td>
     <td>A implementação do Apache Johnzon de <a href="https://johnzon.apache.org/index.html">javax.json</a> é recomendada e deve ser usada. </td>
     <td>30/4/21</td>
-    <td>30/7/21</td>
+    <td>31/12/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
@@ -76,13 +76,13 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
     <td>O Commons Lang 2 está em modo de manutenção. Em vez disso, use Commons Lang 3.</td>
     <td>30/4/21</td>
-    <td>30/7/21</td>
+    <td>31/12/21</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
     <td>Commons Collections 3 está em modo de manutenção. Em vez disso, as Coleções Comuns 4 devem ser usadas.</td>
     <td>30/4/21</td>
-    <td>30/7/21</td>
+    <td>31/12/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.systemready</td>
