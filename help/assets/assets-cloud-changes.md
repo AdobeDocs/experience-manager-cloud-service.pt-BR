@@ -4,9 +4,9 @@ description: Alterações importantes para [!DNL Adobe Experience Manager Assets
 feature: Informações da versão
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 2f0f5d04269ae01f28ce88e87c3269efaf21e657
+source-git-commit: bb4c1377da4bbca6c54ec2a0ec0a0b31f9182485
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '983'
 ht-degree: 5%
 
 ---
@@ -56,7 +56,7 @@ Para fazer uma validação completa do código e do processo, incluindo a assimi
 | Write-back de metadados | Funciona de forma diferente | Desativado por padrão. Ative o iniciador do fluxo de trabalho correspondente, se necessário. O write-back é realizado pelos microsserviços de ativos. |
 | Processamento de ativos carregados usando o Gerenciador de pacotes | Precisa de intervenção manual. | Reprocessar manualmente usando a ação **[!UICONTROL Reprocessar ativo]**. |
 | Detecção de tipo MIME | Não suportado. | Se você carregar um ativo digital sem uma extensão ou com uma extensão incorreta, ele poderá não ser processado conforme desejado. Os usuários ainda podem armazenar os arquivos binários sem uma extensão no DAM. Consulte [Detecção de tipo MIME em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
-| Geração de subconjunto para anotação ou anotação de um ativo composto | Não suportado. | Os casos de utilização dependentes não podem ser cumpridos. Consulte [criação de subativo em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
+| Geração de subconjunto para ativos compostos | Não suportado. | Casos de uso dependentes como anotações podem não ser cumpridos. Consulte [criação de subativo em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). A visualização em PDF de alguns tipos de arquivos está disponível como um recurso de [pré-lançamento na versão 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md#beta-features-assets). Consulte [como acessar o canal de pré-lançamento](/help/release-notes/prerelease.md). |
 | Página inicial | Não suportado. | Consulte [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Extrair ativos do arquivo ZIP | Não suportado. | Consulte [Extração de ZIP em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Classificações de ativos | Não suportado. | Não há suporte para o widget de classificação no editor de esquema de metadados. |
