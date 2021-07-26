@@ -2,7 +2,7 @@
 title: Recursos obsoletos e removidos
 description: Notas de versão específicas para recursos obsoletos e removidos no [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
+source-git-commit: 1adcde525454e779adbd251b9a31f4e456b28998
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 40%
