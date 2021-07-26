@@ -4,16 +4,16 @@ description: Siga esta página para saber como começar a usar o jornada de inte
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '517'
+ht-degree: 0%
 
 ---
 
 # Introdução ao processo de integração {#getting-started}
 
-A integração é o processo durante o qual um Administrador de sistema designado configura o AEM como um Cloud Service para sua organização. Isso inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções apropriadas com base em suas responsabilidades de trabalho, após as quais cada membro é capaz de fazer logon e acessar seus AEM como recursos de Cloud Service.
+A integração é o processo durante o qual um [Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura o AEM como um Cloud Service para sua organização. Isso inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções apropriadas com base em suas responsabilidades de trabalho, depois que cada membro é capaz de fazer logon e acessar seus AEM como recursos de Cloud Service.
 
 ## Objetivo {#objective}
 
@@ -21,8 +21,8 @@ Como Administrador do sistema, este documento resume as primeiras etapas da sua 
 
 Após ler esta seção, você deve ser capaz de:
 
-* Acesso e logon no Admin Console
-* Revise seus privilégios como Administrador do sistema via Admin Console
+* Acesso e login no Admin Console.
+* Revise seus privilégios como Administrador do sistema via Admin Console.
 
 >[!NOTE]
 >Antes de iniciar o processo de integração, certifique-se de saber mais sobre o Adobe Admin Console. O Admin Console do Adobe é um local central para administrar e gerenciar licenças de produtos e usuários do Adobe. O administrador do sistema fará logon no Admin Console do Adobe para adicionar ou remover usuários e muito mais. Consulte [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) para saber mais.
@@ -42,12 +42,12 @@ Siga as etapas abaixo para navegar até o Admin Console e revisar a função de 
 
    ![](/help/onboarding/onboarding-journey/assets/sys-admin-getstarted.png)
 
-1. Faça logon usando sua Adobe ID. Após o logon bem-sucedido, você verá a página **Visão geral** do Adobe Admin Console, conforme mostrado abaixo.
+1. Faça logon usando o [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Após o logon bem-sucedido, você verá a página **Visão geral** do Adobe Admin Console, conforme mostrado abaixo.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started1.png)
 
    >[!NOTE]
-   >Se você tiver acesso a várias organizações, verifique se fez logon na Organização correta. Para alterar sua organização, clique no nome da Organização na barra de ações e escolha a organização necessária à qual você precisa acessar, conforme mostrado na figura abaixo.
+   >Se você tiver acesso a várias organizações, verifique se fez logon na Organização correta. Para alterar sua organização, clique no nome da organização no canto superior direito e escolha a organização à qual você precisa acessar, conforme mostrado na figura abaixo.
 
    ![](/help/onboarding/onboarding-journey/assets/admin-console-orgswitch.png)
 
