@@ -1,9 +1,9 @@
 ---
 title: Criação de representações de vídeo do Screens no Screens as a Cloud Service
 description: Esta página descreve como criar Representações de vídeo do Screens no Screens como um Cloud Service.
-source-git-commit: b8691bb77079eeb7efd141ce89c44c5a312262b3
+source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,24 @@ Este guia descreve como criar representações de vídeo usadas em players do Sc
 
 ## Etapas para criar representações de vídeo do Screens no Screens como um Cloud Service {#steps-creating-screens-video-renditions}
 
-1. Navegue até os canais na interface do usuário do Screens Cloud.
-1. Clique no Adobe Experience Manager no canto superior esquerdo para navegar até Provedor de conteúdo do Screens, ou seja, AEM como Cloud Service.
-1. Clique na seção Ferramentas na navegação principal agora, clique em &quot;Ativos&quot; e em &quot;Perfis de processamento&quot;
+1. Navegue até seu canal no Provedor de conteúdo do Screens.
 
-1. Clique em &quot;Criar&quot; para criar um novo perfil de processamento
-1. Forneça um nome como, &quot;ScreensProcessingProfile&quot;
-1. Navegue até a guia Vídeo para adicionar uma codificação de vídeo e clique em &quot;Adicionar novo&quot;
+   >[!NOTE]
+   >Consulte [Uso do provedor de conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) para obter mais detalhes.
+
+1. Clique na seção Ferramentas na barra de navegação esquerda, clique em **Ativos** e em **Perfis de processamento**.
+
+   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+
+1. Clique em **Criar** para criar um novo perfil de processamento.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+
+1. Insira o **Name**, como **ScreensProcessingProfile**.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+
+1. Navegue até a guia **Vídeo** para adicionar uma codificação de vídeo e clique em **Adicionar Novo**.
 
 
    >[!IMPORTANT]
