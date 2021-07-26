@@ -4,9 +4,9 @@ description: Siga esta página para saber como configurar os Recursos da nuvem p
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
+source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -137,12 +137,13 @@ Siga as etapas abaixo para criar seus ambientes de nuvem a partir do Cloud Manag
 
 ## O que vem a seguir {#whats-next}
 
-Os membros da equipe devem receber permissões para a instância, pois as permissões para administrar o Cloud Manager não serão suficientes. Agora que os recursos da nuvem foram criados e estão prontos para serem acessados pela sua equipe, o Administrador do sistema deve atribuir os membros da sua equipe ao AEM como perfis de produto de Cloud Service do Admin Console.
+Os membros da equipe devem receber permissões para a instância, pois as permissões para administrar o Cloud Manager não serão suficientes. Agora que os recursos da nuvem foram criados e estão prontos para serem acessados pela sua equipe, o Administrador do sistema deve atribuir os membros da sua equipe ao AEM como perfis de produto do Cloud Service da Adobe Admin Console.
+
+>[!NOTE]
+>Para receber acesso ao AEM como Cloud Service, os usuários devem pertencer a um dos dois perfis de produto `AEM Users` ou `AEM Administrators`. Consulte [Gerenciamento de produtos e acesso do usuário no Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console) para saber mais.
 
 Você deve continuar sua jornada de integração revisando o documento Atribuindo membros da equipe ao AEM como perfis de produto do Cloud Service.
 
->[!NOTE]
->Para receber acesso ao AEM como Cloud Service, os usuários devem pertencer a um dos dois perfis de produto &quot;AEM usuários&quot; ou &quot;AEM administradores&quot;. Saiba mais.
 
 ## Recursos adicionais {#additional-resources}
 
