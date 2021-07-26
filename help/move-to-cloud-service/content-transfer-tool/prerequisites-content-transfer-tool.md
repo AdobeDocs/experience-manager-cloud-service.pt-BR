@@ -2,9 +2,9 @@
 title: Pré-requisitos para a ferramenta Transferência de conteúdo
 description: Pré-requisitos para a ferramenta Transferência de conteúdo
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: ac44eeda36a7c8e1232bfd3275fb872e6523f87d
+source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '488'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Revise todas as considerações listadas abaixo:
 | Considerações | O que é compatível no momento |
 |--- |--- |
 | Versão do AEM | A ferramenta Transferência de conteúdo pode ser executada somente no AEM 6.3 ou versões superiores. Para poder usar a ferramenta Transferência de conteúdo com AEM 6.2 ou versões mais antigas, é necessária uma atualização no local do repositório de conteúdo para AEM 6.5. Não é necessário atualizar o código para AEM 6.5 para isso. |
-| Tamanho do armazenamento de segmentos | No momento, há suporte para até 83 GB em *Author* e 31 GB em *Publish*. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de tamanho de armazenamento de segmento acima desses limites. |
+| Tamanho do armazenamento de segmentos | Um repositório existente que tem menos de 55 milhões de nós JCR e até 83 GB (tamanho compactado online) em *Author* e 31 GB em *Publish* é atualmente suportado. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de tamanho de armazenamento de segmento acima desses limites. |
 | Tamanho total do repositório de conteúdo <br>*(armazenamento de segmentos + armazenamento de dados)* | A ferramenta Transferência de conteúdo foi criada para transferir conteúdo de até 10 TB para o tipo de armazenamento de dados File Data Store. Qualquer coisa superior a 10 TB não é compatível no momento. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de conteúdo maior que 10 TB. <br>Para os tipos de armazenamento de dados do Amazon S3 e do Azure Data Store, uma etapa  [pré-](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) cópia opcional pode ser usada para acelerar significativamente o processo de transferência de conteúdo e oferece suporte a um tamanho maior do que 10 TB de armazenamento de dados. |
 | Tamanho total do índice | O tamanho total do índice de 25 GB no máximo é atualmente suportado. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de tamanho de índice acima desse limite. |
 | Tamanho do nome do nó | O comprimento de um nome de nó deve ser de 150 bytes ou menos. Nomes de nós com mais de 150 bytes devem ser encurtados para serem &lt;= 150 bytes para terem suporte no armazenamento de nós Documento em AEM como Cloud Service. As sugestões falharão se esses nomes de nó longos não forem corrigidos. |
