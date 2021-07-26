@@ -2,10 +2,10 @@
 title: Pré-requisitos para a ferramenta Transferência de conteúdo
 description: Pré-requisitos para a ferramenta Transferência de conteúdo
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 84cca61f8c56e70377c61f5adcdd98c22fbb09a7
+source-git-commit: ac44eeda36a7c8e1232bfd3275fb872e6523f87d
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 2%
+source-wordcount: '474'
+ht-degree: 1%
 
 ---
 
@@ -28,6 +28,7 @@ Revise todas as considerações listadas abaixo:
 | Tamanho do armazenamento de segmentos | No momento, há suporte para até 83 GB em *Author* e 31 GB em *Publish*. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de tamanho de armazenamento de segmento acima desses limites. |
 | Tamanho total do repositório de conteúdo <br>*(armazenamento de segmentos + armazenamento de dados)* | A ferramenta Transferência de conteúdo foi criada para transferir conteúdo de até 10 TB para o tipo de armazenamento de dados File Data Store. Qualquer coisa superior a 10 TB não é compatível no momento. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de conteúdo maior que 10 TB. <br>Para os tipos de armazenamento de dados do Amazon S3 e do Azure Data Store, uma etapa  [pré-](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) cópia opcional pode ser usada para acelerar significativamente o processo de transferência de conteúdo e oferece suporte a um tamanho maior do que 10 TB de armazenamento de dados. |
 | Tamanho total do índice | O tamanho total do índice de 25 GB no máximo é atualmente suportado. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de tamanho de índice acima desse limite. |
+| Tamanho do nome do nó | O comprimento de um nome de nó deve ser de 150 bytes ou menos. Nomes de nós com mais de 150 bytes devem ser encurtados para serem &lt;= 150 bytes para terem suporte no armazenamento de nós Documento em AEM como Cloud Service. As sugestões falharão se esses nomes de nó longos não forem corrigidos. |
 | Conteúdo em caminhos imutáveis | A ferramenta Transferência de conteúdo não pode ser usada para migrar o conteúdo em caminhos imutáveis. Para transferir conteúdo de `/etc` apenas determinados caminhos `/etc` podem ser selecionados, mas somente para suportar [AEM Forms para AEM Forms como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Para todos os outros casos de uso, consulte [Restruturação de Repositório Comum](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) para saber mais sobre a reestruturação de repositório. |
 
 ## O que vem a seguir {#whats-next}
