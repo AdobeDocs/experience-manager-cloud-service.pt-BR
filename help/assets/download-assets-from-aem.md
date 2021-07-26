@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Gerenciamento de ativos
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1025'
+ht-degree: 3%
 
 ---
 
@@ -109,6 +109,6 @@ Se você não precisar da funcionalidade de download, desative o servlet para ev
 >[!MORELIKETHIS]
 >
 >* [Baixar ativos protegidos por DRM](drm.md)
-* [Baixar ativos usando o aplicativo de desktop do Experience Manager no desktop Win ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR)
+* [Baixar ativos usando o aplicativo de desktop do Experience Manager no desktop Win ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 * [Baixar ativos usando o Link de ativos do Adobe nos aplicativos Adobe Creative Cloud compatíveis](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
