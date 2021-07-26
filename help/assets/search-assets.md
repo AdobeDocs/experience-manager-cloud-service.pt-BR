@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Pesquisa, Metadados, Distribuição de ativos
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '4911'
+source-wordcount: '4902'
 ht-degree: 6%
 
 ---
@@ -226,11 +226,7 @@ Os autores podem usar o Localizador de conteúdo para pesquisar o repositório D
 
 ## Seletor de ativos {#asset-picker}
 
->[!NOTE]
->
->O seletor de ativo era chamado [seletor de ativo](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) em versões anteriores de [!DNL Adobe Experience Manager].
-
-O seletor de ativos permite pesquisar, filtrar e navegar pelos ativos do DAM de uma maneira especial. O seletor de ativos está disponível em `https://[aem_server]:[port]/aem/assetpicker.html`. Você pode buscar os metadados dos ativos selecionados usando o seletor de ativos. Você pode iniciá-lo com parâmetros de solicitação compatíveis, como tipo de ativo (imagem, vídeo, texto) e modo de seleção (seleções únicas ou múltiplas). Esses parâmetros definem o contexto do seletor de ativos para uma instância de pesquisa específica e permanecem intactos durante toda a seleção.
+O seletor de ativos (chamado seletor de ativos em versões anteriores de [!DNL Adobe Experience Manager]) permite pesquisar, filtrar e navegar pelos ativos do DAM de uma maneira especial. O seletor de ativos está disponível em `https://[aem_server]:[port]/aem/assetpicker.html`. Você pode buscar os metadados dos ativos selecionados usando o seletor de ativos. Você pode iniciá-lo com parâmetros de solicitação compatíveis, como tipo de ativo (imagem, vídeo, texto) e modo de seleção (seleções únicas ou múltiplas). Esses parâmetros definem o contexto do seletor de ativos para uma instância de pesquisa específica e permanecem intactos durante toda a seleção.
 
 O seletor de ativos usa a mensagem HTML5 `Window.postMessage` para enviar dados do ativo selecionado para o recipient. Funciona somente no modo de navegação e somente com a página de resultados do Omnisearch.
 
