@@ -4,9 +4,9 @@ description: Siga esta página para saber como atribuir membros da equipe ao AEM
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: c2301227eb65bedb77acd9754e2bc4b62527863d
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '779'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Após ler esta seção, você deve entender:
 
 ## Introdução {#introduction}
 
-Para receber acesso ao AEM como um Cloud Service, os usuários devem pertencer a um de dois perfis de produto, como *AEM Usuários* ou *AEM Administradores*. Os membros da equipe devem receber permissões para a instância do AEM, pois as permissões para administrar o Cloud Manager não serão suficientes. Saiba mais.
+Para receber acesso ao AEM como um Cloud Service, os usuários devem pertencer a um de dois perfis de produto, como `AEM Users` ou `AEM Administrators`. Os membros da equipe devem receber permissões para a instância do AEM, pois as permissões para administrar o Cloud Manager não serão suficientes. Saiba mais.
 
 >[!NOTE]
 >Todos os usuários atribuídos a AEM perfil de produto do Usuário pelo administrador do sistema terão (somente leitura) acesso ao Cloud Manager.
@@ -45,24 +45,22 @@ Antes de começar a ler esta seção, você deve considerar seguir estes pré-re
    >Para fins de integração, recomendamos que você adicione inicialmente usuários que participarão das tarefas imediatas, como administradores, desenvolvedores e autores de conteúdo. Você pode continuar o resto da integração sem adicionar todos os usuários. Depois de concluir a integração, você pode dimensionar para um número maior de usuários posteriormente.
 
 
-1. Faça logon no Admin Console
-(Igual a antes)
+1. Faça logon em [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en). Consulte Fazer logon no Admin Console para obter mais detalhes.
 
-1. Revisar AEM como perfis de produto do Cloud Service
-No Admin Console, é possível ver a lista de Perfis do Cloud Manager. Para fazer isso:
+1. Revise [AEM como um Cloud Service Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles).
+
+Siga as etapas abaixo para ver a lista de Perfis do Cloud Manager da Adobe Admin Console:
 
 1. Depois de fazer logon no Adobe Admin Console, selecione Adobe Experience Manager as a Cloud Service no cartão Produtos e serviços :
 
 1. Navegue e selecione a instância (Instância do autor do ambiente de desenvolvimento), conforme mostrado na figura abaixo.
-
-
 
    Agora é possível ver a lista de AEM como um perfil de produto do Cloud Service que será necessário atribuir a um usuário com base em sua função. Para saber mais sobre isso, acesse AEM as a Cloud Service Product Profiles.
 
 
 ## Adicionar membros da equipe ao Perfil de Produto AEM Usuário ou Administrador AEM {#add-team-members}
 
-Para receber acesso ao AEM como uma instância do Cloud Service, os usuários devem pertencer a um dos dois perfis de produto &quot;AEM usuários&quot; ou &quot;AEM administradores&quot;.
+Para receber acesso ao AEM como uma instância do Cloud Service, os usuários devem pertencer a um dos dois perfis de produto `AEM Users` ou `AEM Administrators`.
 
 >[!NOTE]
 >Você deve receber permissões para a instância. As permissões para administrar o Cloud Manager não serão suficientes. Saiba mais.
@@ -87,5 +85,5 @@ Os usuários designados ao AEM como perfis de produto do Cloud Service agora est
 
 ## Recursos adicionais {#additional-resources}
 
-Configuração do acesso ao AEM (Passagem do vídeo)
-Guia de início rápido para a criação de páginas
+* [Configuração do acesso ao AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
+* [Guia de início rápido para a criação de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
