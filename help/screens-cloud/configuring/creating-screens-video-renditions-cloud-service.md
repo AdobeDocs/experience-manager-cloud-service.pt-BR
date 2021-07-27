@@ -1,9 +1,9 @@
 ---
 title: Criação de representações de vídeo do Screens no Screens as a Cloud Service
 description: Esta página descreve como criar Representações de vídeo do Screens no Screens como um Cloud Service.
-source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
+source-git-commit: 0badd4209b35b4c8cdfa765a08b5d9db749f52b5
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -39,20 +39,30 @@ Este guia descreve como criar representações de vídeo usadas em players do Sc
 
 1. Navegue até a guia **Vídeo** para adicionar uma codificação de vídeo e clique em **Adicionar Novo**.
 
+   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+
+1. Insira o **Encoding Name** como , **screens-fullhd** e o **Bitrate** como **2500**.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Certifique-se de usar o nome Codificação que começa com &quot;screens-&quot;. Somente essas representações de vídeo serão consideradas para reproduzir a experiência de vídeo no Screens as a Cloud Service. Insira a taxa de bits que se adapta aos seus vídeos (2500kbps para vídeo de 720px e 5000 kbps para 1080px)
+   >Certifique-se de usar o nome Codificação que começa com &quot;screens-&quot;. Somente essas representações de vídeo serão consideradas para reproduzir a experiência de vídeo no Screens como Cloud Service. Insira a taxa de bits que funciona em seus vídeos (2500kbps para vídeo de 720px e 5000 kbps para 1080px).
 
    >[!NOTE]
-   >Várias representações de vídeo podem ser adicionadas com largura/altura/taxa de bits variável para atender às suas necessidades, mas lembre-se de que todas as representações de tela serão baixadas pelos dispositivos do Screens, mesmo que a reprodução do dispositivo seja apenas a representação de vídeo.
+   >Várias representações de vídeo podem ser adicionadas com largura/altura/taxa de bits variável para trabalhar com seus vídeos. Lembre-se de que todas as representações de tela serão baixadas pelos dispositivos do Screens, mesmo que o dispositivo reproduza apenas a representação de vídeo.
 
-1. Clique em Salvar
+1. Clique em **Salvar**.
 
-1. Selecione o Perfil de processamento e clique em &quot;Aplicar perfil às pastas&quot;
+1. Selecione o Perfil de processamento e clique em **Aplicar perfil à(s) pasta(s)**.
 
-1. Selecione as pastas onde os vídeos do Screens são mantidos e clique em Aplicar
+   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. Você pode criar vários perfis de processamento e aplicá-los às pastas correspondentes, para que os vídeos nessas pastas obtenham as representações de vídeo específicas
+1. Selecione as pastas onde os vídeos do Screens são mantidos e clique em **Aplicar**.
 
-1. Ao fazer o upload de qualquer vídeo para a pasta na qual o perfil de processamento é aplicado, os vídeos serão processados e as representações configuradas serão criadas, que serão usadas pelos dispositivos do Screens para reproduzir os vídeos.
+   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+
+   >[!NOTE]
+   >* Você pode criar vários perfis de processamento e aplicá-los às pastas correspondentes, para que os vídeos nessas pastas obtenham as representações de vídeo específicas.
+   >* Ao fazer o upload de qualquer vídeo para a pasta na qual o Perfil de processamento é aplicado, os vídeos são processados e as representações configuradas são criadas, que são mais usadas pelos dispositivos Screens para reproduzir os vídeos.
+
 
