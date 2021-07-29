@@ -11,14 +11,14 @@ feature: Estrutura de integração de comércio
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 73822fb3b74472d48a3db59267ed133fc1a40ad6
+source-git-commit: 1575d5d8b06b537fc9754885905aacdfd2e33fbf
 workflow-type: tm+mt
 source-wordcount: '2582'
 ht-degree: 27%
 
 ---
 
-# Personalizar os Componentes principais da CIF do AEM{#customize-cif-components}
+# Personalizar os Componentes principais da CIF do AEM {#customize-cif-components}
 
 O [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para usar [Componentes principais CIF](https://github.com/adobe/aem-core-cif-components). Neste tutorial, você estenderá ainda mais o componente [Teaser do produto](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para exibir um atributo personalizado do Magento. Você também aprenderá mais sobre a integração GraphQL entre o AEM e o Magento e os ganchos de extensão fornecidos pelos Componentes principais da CIF.
 
@@ -56,7 +56,7 @@ Clonaremos o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e su
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Adicione as configurações OSGi necessárias para conectar a instância do AEM a uma instância da Magento ou adicione as configurações ao projeto recém-criado.
@@ -135,7 +135,7 @@ Os produtos e os dados do produto exibidos no AEM são armazenados no Magento. E
    >
    > Mais detalhes sobre o [Gerenciamento de cache podem ser encontrados no guia do usuário do Magento](https://docs.magento.com/user-guide/system/cache-management.html).
 
-## Usar um GraphQL IDE para verificar o Atributo {#use-graphql-ide}
+## Usar um GraphQL IDE para verificar o atributo {#use-graphql-ide}
 
 Antes de entrar em AEM código, é útil explorar o [GraphQL Magento](https://devdocs.magento.com/guides/v2.4/graphql/) usando um GraphQL IDE. A integração do Magento com o AEM é feita principalmente por meio de uma série de consultas GraphQL. Entender e modificar as consultas GraphQL é uma das principais maneiras de estender os Componentes principais da CIF.
 
@@ -184,7 +184,7 @@ Em seguida, use um GraphQL IDE para verificar se o atributo `eco_friendly` foi a
    >
    > Documentação mais detalhada sobre [GraphQL Magento pode ser encontrada aqui](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
-## Atualize o Modelo do Sling para o Teaser do produto {#updating-sling-model-product-teaser}
+## Atualizar o Modelo do Sling para o Teaser do produto {#updating-sling-model-product-teaser}
 
 A seguir, estenderemos a lógica de negócios do Teaser do produto implementando um Modelo do Sling. Os [Modelos do Sling](https://sling.apache.org/documentation/bundles/models.html) são objetos POJO (Plain Old Java Objects) orientados por anotações que implementam qualquer lógica de negócios exigida pelo componente. Modelos do Sling são usados junto com os scripts HTL como parte do componente. Seguiremos o [padrão de delegação para Modelos do Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) para que possamos estender partes do modelo existente do Teaser do produto.
 
@@ -275,11 +275,9 @@ Use [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-ma
        productRetriever = productTeaser.getProductRetriever();
    
        if (productRetriever != null) {
-           productRetriever.extendProductQueryWith(p ->
-                productRetriever.extendProductQueryWith(p -> p
-                   .createdAt()
-                   .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
-               );
+           productRetriever.extendProductQueryWith(p -> p
+               .createdAt()
+               .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
            );
        }
    }
@@ -400,7 +398,7 @@ Em nosso caso, queremos renderizar um banner sobre o teaser para indicar que o p
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Abra uma nova janela do navegador e navegue até AEM e o **console OSGi** > **Status** > **Modelos do Sling**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -434,7 +432,7 @@ Em nosso caso, queremos renderizar um banner sobre o teaser para indicar que o p
    >
    > Você também pode ver alguns rastreamentos de pilha se o produto usado no teaser não tiver o atributo `eco_friendly` como parte do conjunto de atributos dele.
 
-## Adicionar estilos para o símbolo compatível com o ambiente {#add-styles}
+## Adicionar estilos para o emblema compatível com o ambiente {#add-styles}
 
 Neste ponto, a lógica de quando exibir o símbolo **Eco Friendly** está funcionando, no entanto, o texto simples pode usar alguns estilos. Em seguida, adicione um ícone e estilos ao módulo `ui.frontend` para concluir a implementação.
 
@@ -479,7 +477,7 @@ Neste ponto, a lógica de quando exibir o símbolo **Eco Friendly** está funcio
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Atualize para a **Página inicial Venia** em [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html), onde o Teaser do produto foi adicionado.
