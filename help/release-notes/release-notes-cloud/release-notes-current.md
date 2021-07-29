@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
+source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1286'
 ht-degree: 2%
 
 ---
@@ -140,17 +140,17 @@ A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em 
 
 * `bulk-offline-update-service` estava faltando todas as permissões para alguns ambientes.
 
-* Atualizar link da Ajuda para corresponder à nova documentação da nuvem de telas.
+* Atualização do link Ajuda para corresponder à nova documentação da nuvem de telas.
 
-* Cancele a atribuição de listas de reprodução e não permita a remoção de listas de reprodução com reprodutor(es) atribuído(s).
+* Cancelar a atribuição de listas de reprodução e não permitir a remoção de listas de reprodução com reprodutor(es) atribuído(s), agora funciona.
 
-* O reprodutor agora faz o download de Ativos novamente quando o Cache de &quot;TODAS&quot; é limpo.
+* O reprodutor agora faz o download de Ativos novamente quando o Cache &quot;ALL&quot; é limpo.
 
 * Repetir o Agendamento agora funciona, se a *Hora Final* estiver definida para o dia seguinte.
 
-* `Back&Forward` Agora trabalhe na interface do usuário da nuvem do Screens.
+* `Back&Forward` O agora funciona no Screens as a Cloud Service UI.
 
-* Não foi possível criar tags com o mesmo nome, mas namespaces diferentes.
+* Tags com o mesmo nome, mas namespaces diferentes, não puderam ser criadas anteriormente.
 
 ## [!DNL Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
 
