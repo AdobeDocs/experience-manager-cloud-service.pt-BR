@@ -1,14 +1,13 @@
 ---
 title: Publicar páginas
 description: Como publicar e desfazer a publicação de páginas usando o AEM
-translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
+source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
 workflow-type: tm+mt
 source-wordcount: '1717'
-ht-degree: 96%
+ht-degree: 85%
 
 ---
-
 
 # Publicar páginas {#publishing-pages}
 
@@ -20,7 +19,7 @@ Você pode publicar/desfazer a publicação de uma página imediatamente ou em u
 
 ## Terminologia {#terminology}
 
-Você pode encontrar termos diferentes relacionados à publicação enquanto trabalha com o Adobe Experience Manager (AEM) como Cloud Service.
+Você pode encontrar termos diferentes relacionados à publicação ao trabalhar com o Adobe Experience Manager (AEM) como Cloud Service.
 
 * **Publicar/Desfazer a publicação**
    * Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
@@ -48,14 +47,9 @@ Dependendo da sua localização, você pode publicar:
 >* Uma mensagem será exibida brevemente para notificar que o fluxo de trabalho foi disparado.
 
 
-<!--
->* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
->* A message will be displayed briefly to notify you that the workflow was triggered.
--->
-
 >[!NOTE]
 >
-> Para obter outras possibilidades, consulte **Tempo ligado** e **Tempo desligado** na guia [Básico das Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> Para outras possibilidades, consulte **No Tempo** e **Tempo desligado** na guia [Básico das Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Publicação por meio do Editor {#publishing-from-the-editor}
 
@@ -90,8 +84,8 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 No console de sites, existem duas opções para publicação:
 
-* [Publicação rápida](#quick-publish)
-* [Gerenciar publicação](#manage-publication)
+* [Publicação rápida   ](#quick-publish)
+* [Gerenciar publicação   ](#manage-publication)
 
 #### Publicação rápida    {#quick-publish}
 
@@ -113,9 +107,9 @@ Para publicar uma página com a Publicação rápida:
 >
 >A Publicação rápida é uma publicação superficial, ou seja, apenas as páginas selecionadas são publicadas, sem incluir páginas filhas.
 
-#### Gerenciar publicação     {#manage-publication}
+#### Gerenciar publicação    {#manage-publication}
 
-A opção **Gerenciar publicação** oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
+**A opção Gerenciar** publicação oferece mais opções do que a Publicação  **rápida**, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
 
 Para publicar ou desfazer a publicação de uma página usando Gerenciar publicação:
 
@@ -125,46 +119,42 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
 1. O assistente para **Gerenciar publicação** é iniciado. A primeira etapa, **Opções**, permite fazer o seguinte:
 
-   * Optar por publicar ou desfazer a publicação de páginas selecionadas.
-   * Optar por realizar a ação agora ou em uma data posterior.
+   * **Ação**
 
-   A publicação posterior inicia um fluxo de trabalho para publicar as páginas selecionadas no horário especificado. Por outro lado, o cancelamento posterior da publicação inicia um fluxo de trabalho para desfazer a publicação das páginas selecionadas em um horário específico.
+      Optar por publicar ou desfazer a publicação de páginas selecionadas.
 
-   Caso deseje cancelar a publicação/desfazer a publicação mais tarde, acesse o console Sites para encerrar o fluxo de trabalho correspondente. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   * **Programação**
 
+      Optar por realizar a ação agora ou em uma data posterior.
+
+      A publicação posterior inicia um fluxo de trabalho para publicar as páginas selecionadas no horário especificado. Por outro lado, o cancelamento posterior da publicação inicia um fluxo de trabalho para desfazer a publicação das páginas selecionadas em um horário específico.
+
+      >[!NOTE]
+      >
+      >Caso deseje cancelar a publicação/desfazer a publicação mais tarde, acesse o [console Sites](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para encerrar o fluxo de trabalho correspondente.
    ![Gerenciar opções de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
-   Clique em **Avançar** para continuar.
+1. Clique em **Avançar** para continuar.
 
 1. Na próxima etapa do assistente Gerenciar publicação, **Escopo**, você pode definir o escopo da publicação ou do cancelamento da publicação, por exemplo, incluindo páginas filhas e/ou referências.
 
    ![Gerenciar escopo de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
 
+   **Adicionar conteúdo**
+
    Você pode usar o botão **Adicionar conteúdo** para adicionar outras páginas à lista de páginas a serem publicadas caso tenha se esquecido de selecionar uma antes de iniciar o assistente para Gerenciar publicação.
 
-   Clicar no botão Adicionar conteúdo inicia o [navegador de caminho](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) para permitir a seleção de conteúdo.
+   Selecionar o botão **Adicionar Conteúdo** inicia o [navegador de caminho](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) para permitir a seleção de conteúdo.
 
-   Selecione as páginas necessárias e clique em **Selecione** para adicionar o conteúdo ao assistente ou em **Cancelar** para cancelar a seleção e voltar ao assistente.
+   Selecione as páginas necessárias e clique em **Select** para adicionar o conteúdo ao assistente ou em **Cancelar** para cancelar a seleção e retornar ao assistente.
 
-   De volta ao assistente, é possível selecionar um item na lista para configurar suas opções adicionais, como:
+   **Remover seleção**
 
-   * Incluir seus filhos.
-   * Removê-lo da seleção.
-   * Gerenciar suas referências publicadas.
+   De volta ao assistente, você pode selecionar um item na lista para removê-lo da seleção.
 
    ![Gerenciar páginas de seleção de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-   Clicar em **Incluir filhos** abre uma caixa de diálogo que permite:
-
-   * Incluir somente filhos imediatos.
-   * Incluir somente as páginas modificadas.
-   * Incluir somente páginas já publicadas.
-
-   Clique em **Adicionar** para adicionar as páginas filhas à lista de páginas a serem publicadas ou não, com base nas opções de seleção. Clique em **Cancelar** para cancelar a seleção e retornar ao assistente.
-
-   ![Gerenciar publicação incluindo filhos](/help/sites-cloud/authoring/assets/publishing-include-children.png)
-
-   Ao retornar ao assistente, você verá as páginas adicionadas com base na sua escolha de opções na caixa de diálogo Incluir filhos.
+   **Referências publicadas**
 
    É possível visualizar e modificar as referências a serem publicadas ou não para uma página. Basta selecionar a referência desejada e clicar no botão **Referências publicadas**.
 
@@ -178,30 +168,42 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    ![Gerenciar páginas de seleção de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
+   **Incluir filhos**
+
+   >[!NOTE]
+   >
+   >Consulte [Publicar e desfazer a publicação de uma árvore](#publishing-and-unpublishing-a-tree)
+
+   Clicar em **Incluir filhos** abre uma caixa de diálogo que permite:
+
+   * **Incluir filhos**
+   * **Incluir somente filhos imediatos**
+   * **Incluir somente as páginas modificadas**
+   * **Incluir somente páginas já publicadas**
+
+   Ative as opções necessárias e confirme com **OK** para adicionar as páginas filhas à lista de páginas a serem publicadas ou não, com base nas opções de seleção. Clique em **Cancelar** para cancelar a seleção e retornar ao assistente.
+
+   ![Gerenciar publicação incluindo filhos](/help/sites-cloud/authoring/assets/publishing-include-children.png)
+
 1. Clique em **Publicar** para concluir.
 
    De volta ao console de sites, uma mensagem de notificação confirmará a publicação.
 
 1. Se as páginas publicadas estiverem associadas a fluxos de trabalho, elas poderão ser exibidas em uma etapa final de **Fluxos de trabalho** do assistente de publicação.
 
+   ![Gerenciar páginas de seleção de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-workflow.png)
+
    >[!NOTE]
    >
    >A etapa **Fluxos de trabalho** será mostrada com base em quais direitos seu usuário pode ou não possuir. Para obter detalhes, consulte a observação anterior nesta página sobre privilégios de publicação, além dos tópicos Gerenciamento do acesso a fluxos de trabalho e [Aplicação de fluxos de trabalho a páginas](/help/sites-cloud/authoring/workflows/applying.md).
-   <!--
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
-   -->
 
    Os recursos são agrupados pelos fluxos de trabalho acionados e cada uma das opções especificadas para:
 
    * Definir o título do fluxo de trabalho.
    * Manter o pacote de fluxo de trabalho, desde que o fluxo de trabalho tenha suporte para vários recursos.
-
-   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
-    -->
-
    * Definir um título do pacote de fluxo de trabalho se a opção para manter esse pacote tiver sido escolhida.
 
-   Clique em **Publicar** ou **Publicar mais tarde** para concluir a publicação.
+1. Clique em **Publicar** ou **Publicar mais tarde** para concluir a publicação.
 
 ## Desfazer a publicação de páginas {#unpublishing-pages}
 
@@ -212,24 +214,28 @@ De uma [maneira semelhante à publicação](#publishing-pages), uma ou mais pág
 * [No editor de páginas](#unpublishing-from-the-editor)
 * [Do console de sites](#unpublishing-from-the-console)
 
-### Desfazer a publicação por meio do editor     {#unpublishing-from-the-editor}
+### Desfazer a publicação por meio do editor    {#unpublishing-from-the-editor}
 
 Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a publicação da página** no menu **Informações da página**, da mesma maneira que faria para [publicar essa página](#publishing-from-the-editor).
 
-### Desfazer a publicação por meio do Console   {#unpublishing-from-the-console}
+### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
 
 Da mesma forma que você [usa a opção Gerenciar publicação para publicar](#manage-publication), também pode usá-la para desfazer a publicação.
 
 1. Selecione as páginas no console Sites e clique no botão **Gerenciar publicação**.
 1. O assistente para **Gerenciar publicação** é iniciado. Na primeira etapa, **Opções**, selecione **Desfazer a publicação** em vez da opção padrão **Publicar**.
 
-   ![Desfazer a publicação](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
+   ![Desfazer publicação - Opções](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
    Da mesma forma que a opção para publicar mais tarde inicia um fluxo de trabalho para publicar essa versão de página no horário especificado, a opção para desativar mais tarde inicia um fluxo de trabalho para desfazer a publicação das páginas selecionadas em um momento específico.
 
-   Caso deseje cancelar a publicação/desfazer a publicação mais tarde, acesse o console Sites para encerrar o fluxo de trabalho correspondente. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   >[!NOTE]
+   >
+   >Caso deseje cancelar a publicação/desfazer a publicação mais tarde, acesse o [console Sites](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para encerrar o fluxo de trabalho correspondente.
 
 1. Para concluir o cancelamento da publicação, prossiga com o assistente como faria para [publicar a página](#manage-publication).
+
+   ![Desfazer publicação - Escopo](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
 
 ## Publicar e desfazer a publicação de uma Arvore {#publishing-and-unpublishing-a-tree}
 
@@ -243,18 +249,18 @@ Você pode usar a opção [Gerenciar publicação](#manage-publication) no conso
 
    ![Gerenciar páginas de seleção de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. Na caixa de diálogo **Incluir filhos**, desmarque as opções:
+1. Na caixa de diálogo **Incluir filhos**:
 
-   * Incluir somente filhos imediatos
-   * Incluir somente páginas já publicadas
+   * selecione **Incluir filhos**
+   * desmarque **Incluir somente filhos imediatos**
+   * desmarque **Incluir apenas páginas já publicadas**
+   * configure **Incluir apenas páginas modificadas** conforme necessário
 
-   Essas opções são selecionadas por padrão e, portanto, você deve se lembrar de desmarcá-las. Clique em **Adicionar** para confirmar e adicionar o conteúdo à publicação ou ao cancelamento da publicação.
+   Essas opções são selecionadas por padrão, portanto, lembre-se de configurá-las. Confirme a seleção com **OK** para adicionar o conteúdo à publicação ou ao cancelamento da publicação.
 
-   ![Inclusão de filhos ao desfazer a publicação](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
+   ![Inclusão de filhos para publicação em árvore](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. O assistente para **Gerenciar publicação** lista o conteúdo da árvore para revisão. Você pode personalizar ainda mais a seleção, adicionando outras páginas ou removendo as selecionadas.
-
-   ![Gerenciar opções de publicação](/help/sites-cloud/authoring/assets/publishing-tree-select.png)
+1. No assistente **Gerenciar publicação**, é possível personalizar ainda mais a seleção, adicionando outras páginas ou removendo as selecionadas.
 
    Lembre-se de que você também pode rever as referências a serem publicadas por meio da opção **Referências publicadas**.
 
