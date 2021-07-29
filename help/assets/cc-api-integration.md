@@ -4,9 +4,9 @@ description: Gerar variações de ativos usando a integração do Creative Cloud
 contentOwner: AG
 feature: Upload,Processamento de Ativos,Publicação,Microserviços do Asset compute,Fluxo de Trabalho
 role: User,Admin
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -14,21 +14,41 @@ ht-degree: 0%
 
 # Gerar variações de ativos usando a integração [!DNL Adobe Creative Cloud] {#content-automation}
 
-O complemento de automação de conteúdo integra APIs [!DNL Adobe Experience Manager Assets as a Cloud Service] e [!DNL Adobe Creative Cloud] para processar seus ativos em escala de forma criativa. [!DNL Experience Manager] O usa microsserviços de  [ativos baseados em nuvem para usar os ](/help/assets/asset-microservices-overview.md)   [!DNL Adobe Creative Cloud] recursos e automatizar a criação e o manuseio de mídia de ativos.
+O complemento de automação de conteúdo integra [!DNL Adobe Experience Manager Assets] como uma API [!DNL Cloud Service] e [!DNL Adobe Creative Cloud] para processar seus ativos em escala de forma criativa. [!DNL Experience Manager] O usa microsserviços de  [ativos baseados em nuvem para usar os ](/help/assets/asset-microservices-overview.md)   [!DNL Adobe Creative Cloud] recursos e automatizar a criação e o manuseio de mídia de ativos.
 
 Para editar ativos em [!DNL Adobe Photoshop] e [!DNL Adobe Lightroom], não é necessário baixar ativos de [!DNL Experience Manager Assets], editá-los e carregá-los novamente. Crie e configure um perfil de processamento em [!DNL Experience Manager], aplique o perfil a uma pasta e faça upload dos ativos para a pasta. Os ativos carregados são reprocessados com base nos perfis de processamento e você obtém variações desses ativos. O processamento em massa consistente e sem esforço salva esforços e aumenta a velocidade do conteúdo, também sem a necessidade de habilidades criativas excepcionais. Além disso, os desenvolvedores e os parceiros podem estender os microsserviços de ativos com acesso direto a essas APIs e incluir a lógica personalizada.
 
-Os usuários podem criar perfis de processamento para automatizar as seguintes operações criativas em seus ativos:\
-![automatizar operações do Adobe Photoshop e do Adobe Lightroom em ativos](assets/content-automation.png)
+Os usuários podem criar perfis de processamento para automatizar as seguintes operações criativas em seus ativos:
+
 * **Toque** automático: Usa inteligência artificial para analisar o conteúdo da imagem e faz correções de luz e cor de forma inteligente com base nos atributos únicos da imagem.
+
 * **Direita** automaticamente: Usa inteligência artificial para analisar o conteúdo da imagem e corrigir a perspectiva distorcida nas imagens. Por exemplo, para criar horizontes de nível.
+
+   ![tom automático](/help/assets/assets/content-automation-autotone.png)
+
+   *Figura: O tom automático e a correção automática podem ajudar a melhorar imagens distorcidas.*
+
 * **Predefinições** do Lightroom: Aplica uma aparência definida pelo usuário a imagens para obter uma aparência consistente usando predefinições personalizadas.
+
+   ![Predefinição de Lightroom](/help/assets/assets/content-automation-lrpresets.png)
+
+   *Figura: Predefinição Adobe Lightroom para melhorar a qualidade da imagem de forma consistente para muitas imagens.*
+
 * **Recorte** da imagem: Usa inteligência artificial para criar seleção em torno de objetos salientes e remover o plano de fundo com um único comando.
+
+   ![Remover o plano de fundo e recortar uma imagem de uma foto](/help/assets/assets/content-automation-backgroundremove.png)
+
 * **Máscara** de imagem: Usa inteligência artificial para criar máscara em torno de objetos salientes com um único comando.
-* **Ações** do Photoshop: Aplica uma série de tarefas (no Photoshop) a um arquivo ou lote de arquivos.
+
+   ![Mascarar uma imagem usando AI](/help/assets/assets/content-automation-mask.png)
+
+* **Ações** do Photoshop: Aplica uma série de  [!DNL Adobe Photoshop] tarefas a um arquivo ou lote de arquivos.
+
+   ![Ações do Photoshop](/help/assets/assets/content-automation-psactions.png)
+
 * **Substituição** de objeto inteligente: A personalização em escala permite trocar imagens enquanto mantém todos os efeitos e ajustes aplicados em um arquivo PSD.
 
-
+   ![Substituir objetos de maneira inteligente](/help/assets/assets/content-automation-objectreplace.png)
 
 ## Use um perfil de processamento para editar seus ativos de criação em massa {#process-assets}
 
@@ -42,9 +62,9 @@ Para usar perfis de processamento para criar variações automaticamente, siga e
 
 1. Selecione a guia **[!UICONTROL Creative]**, especifique a pasta de saída, selecione **[!UICONTROL Adicionar Novo]** para adicionar uma configuração criativa.
 
-1. Forneça **[!UICONTROL Nome da representação]** (ou nome da saída), **[!UICONTROL Extensão]** (ou tipo de arquivo), selecione **[!UICONTROL Qualidade]** (ou parâmetros de saída), selecione **[!UICONTROL Inclui]** e **[!UICONTROL Exclui]** listas do tipo MIME (ou filtro de ativo de entrada) e selecione a operação criativa necessária. <br/>
+1. Forneça **[!UICONTROL Nome da representação]** (ou nome da saída), **[!UICONTROL Extensão]** (ou tipo de arquivo), selecione **[!UICONTROL Qualidade]** (ou parâmetros de saída), selecione **[!UICONTROL Inclui]** e **[!UICONTROL Exclui]** listas do tipo MIME (ou filtro de ativo de entrada) e selecione a operação criativa necessária.
 
-   ![guia criativo no perfil de processamento](assets/creative-processing-profile.png)
+   ![ Creativetab no perfil  [!UICONTROL de processamento]](assets/creative-processing-profile.png)
 
 1. Algumas operações exigem parâmetros extras (ativo). Forneça valores para esses parâmetros extras, se necessário.
 
@@ -52,7 +72,7 @@ Para usar perfis de processamento para criar variações automaticamente, siga e
 
 1. Aplique o perfil de processamento a uma pasta. Na página **[!UICONTROL Properties]** de uma pasta, selecione **[!UICONTROL Asset Processing]** e selecione o perfil de processamento a ser aplicado.
 
-Depois que o perfil de processamento é aplicado a uma pasta DAM, todos os ativos carregados ou atualizados nessa pasta executam as operações definidas, além do processamento padrão. As subpastas herdam os mesmos perfis que foram aplicados nas pastas pai. Os usuários podem substituir essa herança.
+Depois de aplicar o perfil de processamento a uma pasta DAM, todos os ativos carregados ou atualizados nessa pasta executam as operações definidas além do processamento padrão. As subpastas herdam os mesmos perfis que foram aplicados nas pastas pai. Os usuários podem substituir essa herança.
 
 Para processar os ativos existentes, selecione os ativos, selecione a opção **[!UICONTROL Reprocessar]** e selecione o perfil de processamento necessário.
 
