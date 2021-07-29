@@ -2,10 +2,10 @@
 title: Criar e organizar páginas
 description: Como criar e organizar páginas com o AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
 workflow-type: tm+mt
-source-wordcount: '2552'
-ht-degree: 98%
+source-wordcount: '2560'
+ht-degree: 94%
 
 ---
 
@@ -261,27 +261,30 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
-   >[!NOTE]
-   >
-   >Caso esteja no modo de seleção, este é encerrado automaticamente assim que a página for copiada.
-
 1. Navegue até o local para a nova cópia da página.
-1. O ícone **Colar** está disponível com uma seta suspensa à direita:
+1. Toque ou clique no ícone **Colar** que ficou disponível.
 
    ![Colar](/help/sites-cloud/authoring/assets/paste.png)
 
-   Você pode:
+1. A caixa de diálogo de colagem apresenta um resumo da transação de colagem e a capacidade de:
+   * **Novo nome do site:** altere o nome da página colada
+   * **Colar sem filhos:** Omita as páginas filhas da página selecionada ao colar (por padrão, as páginas filhas são coladas)
 
-   1. Selecionar o próprio ícone **Colar**: uma cópia da página original e qualquer página secundária serão criadas neste local.
-   1. Selecione a seta suspensa para revelar a opção **Colar sem filhos**. Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
+   ![Caixa de diálogo Colar](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-   >[!NOTE]
-   >
-   >Se você copiar a página para um local onde uma página com o mesmo nome que a original já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` se tornará `beach1`.
+1. Toque ou clique no botão **Colar** para confirmar a transação de colagem e criar a(s) nova(s) página(s).
+
+>[!NOTE]
+>
+>Se você copiar a página para um local onde uma página com o mesmo nome que a original já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` se tornará `beach1`.
+
+>[!NOTE]
+>
+>Se você iniciar a ação de colar no modo de seleção, ela será encerrada automaticamente assim que a página for copiada.
 
 ### Mover ou renomear uma página {#moving-or-renaming-a-page}
 
-O procedimento para mover ou renomear uma página é basicamente o mesmo e é realizado pelo mesmo assistente. Com este assistente você pode:
+O procedimento para mover ou renomear uma página é basicamente o mesmo e ambas as ações são tratadas pelo assistente Mover página . Com este assistente você pode:
 
 * Renomear uma página sem movê-la
 * Mover a página sem renomeá-la
@@ -409,7 +412,7 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de tr
 >
 >Se uma página já estiver publicada, sua publicação será automaticamente removida antes da exclusão.
 
-### Bloquear uma página {#locking-a-page}
+### Bloquear uma página   {#locking-a-page}
 
 Você pode [bloquear/desbloquear uma página](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) em um console ou ao editar uma página individual. Informações sobre se uma página está bloqueada são exibidas em ambos os locais.
 
