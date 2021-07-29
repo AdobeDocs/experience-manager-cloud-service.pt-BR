@@ -2,9 +2,9 @@
 title: Uso do Analisador de práticas recomendadas
 description: Uso do Analisador de práticas recomendadas
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2522'
 ht-degree: 42%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="Uso do Analisador de práticas recomendadas"
 >abstract="Consulte a documentação para usar o Analisador de práticas recomendadas (antigo Cloud Readiness Analyzer) e o relatório gerado. O Relatório do Analisador de práticas recomendadas é usado para obter um alto nível de compreensão da disponibilidade geral de atualização."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considerações importantes sobre o uso do Analisador de práticas recomendadas {#imp-considerations}
 
@@ -127,6 +127,7 @@ Em todas as versões, o Detector de padrões incluído pode ser executado indepe
 id="aemcloud_bpa_interpreting"
 title="Interpretação do relatório do Analisador de práticas recomendadas"
 abstract="Há duas opções para visualizar saídas de relatórios BPA: Interface do usuário e CSV. Quando a ferramenta Analisador de práticas recomendadas é executada na instância de AEM, o relatório da interface do usuário é exibido como resultado na janela da ferramenta. O formato CSV do relatório inclui informações geradas a partir da saída do Detector de padrões, classificadas e organizadas por tipo de categoria, subtipo e nível de importância."
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Relatório de análise de práticas recomendadas"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Noções básicas sobre as categorias de relatório do Analisador de práticas recomendadas"
 
 Quando a ferramenta Analisador de práticas recomendadas é executada na instância de AEM, o relatório é exibido como resultado na janela da ferramenta.
