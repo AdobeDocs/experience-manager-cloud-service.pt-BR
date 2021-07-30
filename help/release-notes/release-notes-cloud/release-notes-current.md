@@ -3,7 +3,7 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 76d068de881edce2324ceb73f1a724ff0f5f585c
+source-git-commit: d977ff765accb650daff4c35f2668489454305cd
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 2%
@@ -39,6 +39,102 @@ Assista ao vídeo [Visão geral da versão de julho de 2021](https://video.tv.ad
 * Configuração mais flexível do dispatcher: Os projetos podem ser mais facilmente organizados. Por exemplo, agora você pode incluir vários arquivos de regras de regravação que refletem a estrutura do site. [Saiba mais ](/help/implementing/dispatcher/disp-overview.md#validation-debug) sobre esse modo flexível, incluindo como estruturar sua configuração de dispatcher para aproveitar isso.
 * A interface de usuário de replicação em árvore na guia &quot;Distribuir&quot; do agente de replicação deve ser considerada obsoleta e deve ser removida após 30 de setembro. [Saiba mais ](/help/operations/replication.md#tree-activation) sobre estratégias de replicação alternativas.
 * O pacote `org.apache.sling.datasource-1.0.4.jar` para suporte à fonte de dados do Sling foi removido, pois tem funcionalidade desatualizada e não está em uso pelos clientes.
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+### Novos recursos em [!DNL Assets] {#assets-features}
+
+* A funcionalidade de Automação de conteúdo permite que [!DNL Experience Manager Assets] aproveite as APIs [!DNL Adobe Creative Cloud] para automatizar a produção de ativos em escala. Melhora a velocidade do conteúdo diminuindo drasticamente o tempo gasto e as iterações necessárias para criar variações do mesmo ativo. A funcionalidade não requer programação e funciona no DAM. Consulte [gerar variações de ativos usando a integração do Creative Cloud](/help/assets/cc-api-integration.md).
+
+* [!DNL Experience Manager Assets] O inclui o Visualizador de  [!DNL Document Cloud] PDF para visualizar documentos PDF nativamente. Esse recurso permite que os usuários visualizem arquivos PDF de várias páginas sem qualquer processamento ou conversão de arquivos. Este recurso melhora a paridade com [!DNL Experience Manager] 6.5. Os controles disponíveis no visualizador incluem zoom, navegar até páginas, desancorar controles e exibir em tela cheia. O caso Usuários também visualiza e salta para páginas e marcadores. Comentários no próprio arquivo são suportados, comentários e anotações sobre o conteúdo no arquivo PDF serão adicionados em uma versão futura.
+
+   ![Visualizar arquivos PDF no  [!DNL Experience Manager] uso do Visualizador de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
+
+* A funcionalidade de download do Linkshare usa downloads assíncronos que aumentam a velocidade de download. Consulte [Baixar ativos compartilhados usando o compartilhamento de link](/help/assets/download-assets-from-aem.md#link-share-download).
+
+   ![Baixar caixa de entrada](/help/assets/assets/download-inbox.png)
+
+* As configurações de exibição são aprimoradas para permitir que os usuários escolham uma exibição padrão e um parâmetro de classificação padrão.
+
+   ![Definir exibição padrão em Configurações  [!UICONTROL de exibição]](/help/assets/assets/view-settings-for-defaults.png)
+
+* Os usuários podem pesquisar e filtrar as pastas com base em predicados de propriedade.
+
+   ![Filtrar pastas de pesquisa usando predicados de pesquisa](/help/assets/assets/search-folders-via-predicates.png)
+
+### Novos recursos disponíveis no canal de pré-lançamento [!DNL Assets] {#assets-prerelease-features}
+
+<!-- TBD: Not sure about GA of these enh. Shall check with the team.
+
+* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
+
+  ![Number of assets in a folder are displayed on the interface](/help/assets/assets/browse-folder-number-of-assets.png)
+
+* You can directly apply a metadata schemas to a folder in its [!UICONTROL Properties].
+
+  ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
+-->
+
+* Ao compartilhar ativos digitais como um link, os usuários podem copiar o URL para a área de transferência. O aprimoramento permite compartilhar ativos de maneira mais rápida e conveniente.
+
+### Erros corrigidos em [!DNL Assets] {#assets-bugs-fixed}
+
+A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em [!DNL Experience Manager] como [!DNL Cloud Service]. (CQ-4326322)
+
+## [!DNL Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
+
+### Novidades em [!DNL Forms] {#what-is-new-forms}
+
+* Agora você pode usar o serviço Automated forms conversion para [converter PDF forms em francês, alemão e espanhol](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) para formulários adaptáveis.
+* Adição de um painel separado ao editor de modelo para exibir erros relacionados aos componentes de formulário adaptáveis. Ele ajuda a consolidar todos os erros de formulário adaptável em um local e a reduzir o tempo de resolução.
+
+### Novos recursos disponíveis no canal de pré-lançamento [!DNL Forms] {#beta-features-forms}
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [A ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIshelp de comunicação permite combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo síncrono. As APIs permitem criar aplicativos que permitem:
+   * Gere documentos preenchendo arquivos de modelo com dados XML.
+   * Gere formulários de saída em vários formatos, incluindo fluxos de impressão PDF não interativos.
+   * Gere arquivos PDF de impressão a partir de um formulário XFA PDF e Formulário Adobe Acrobat.
+
+* **Externalizador** de dados de variável: Você pode salvar dados de variáveis de Fluxo de trabalho AEM em um sistema de armazenamento externo gerenciado por sua organização.
+
+* **Documento de registro** baseado em formulário: Também é possível  [usar o PDF do formulário Adobe Acrobat (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) como um modelo de Documento de registro além do modelo de formulário baseado em XFA.
+
+* **Conector** do repositório de dados do Microsoft Azure: Agora você pode  [conectar o Modelo de Dados de Formulário ao Armazenamento do Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft Azure como um BLOB.
+
+## Complemento CIF {#cloud-services-cif}
+
+### Novidades {#what-is-new-cif}
+
+* Componentes principais da CIF v2
+   * Configurações simplificadas e aprimoradas para URL PDP/PLP e SEO
+   * Indicador visual para dados de produto preparados no modo de criação para melhor visibilidade das alterações futuras
+   * Novo componente de mapa de site para páginas de conteúdo e comércio
+
+* Suporte para [Recomendação de produto do Adobe Commerce Sensei, viabilizado pelo Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) em AEM Storefront usando recomendações predefinidas ou criadas de forma instantânea
+
+## [!DNL Experience Manager Screens] como  [!DNL Cloud Service] {#screens}
+
+### Correções de erros {#bug-fixes-screens}
+
+* As configurações do Provedor de conteúdo agora são validadas durante a criação ou atualização.
+
+* Todas as exibições têm coluna de pastas.
+
+* É possível expandir a Estrutura de conteúdo do Screens.
+
+* `bulk-offline-update-service` estava faltando todas as permissões para alguns ambientes.
+
+* Atualização do link Ajuda para corresponder à nova documentação da nuvem de telas.
+
+* Cancelar a atribuição de listas de reprodução e não permitir a remoção de listas de reprodução com reprodutor(es) atribuído(s), agora funciona.
+
+* O reprodutor agora faz o download de Ativos novamente quando o Cache &quot;ALL&quot; é limpo.
+
+* Repetir o Agendamento agora funciona, se a *Hora Final* estiver definida para o dia seguinte.
+
+* `Back&Forward` O agora funciona no Screens as a Cloud Service UI.
+
+* Tags com o mesmo nome, mas namespaces diferentes, não puderam ser criadas anteriormente.
 
 ## Documentação XML do Experience Manager as a Cloud Service {#xml-documentation}
 
@@ -87,91 +183,6 @@ A próxima versão está planejada para 12 de agosto de 2021.
 
 Os clientes que alternam para usar os JDKs do Azul devem estar cientes de que nem todos os aplicativos existentes serão compilados sem erro no JDK do Azul. É altamente recomendável testar localmente antes de trocar.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
-
-### Novos recursos em [!DNL Assets] {#assets-features}
-
-* A funcionalidade de Automação de conteúdo permite que [!DNL Experience Manager Assets] aproveite as APIs [!DNL Adobe Creative Cloud] para automatizar a produção de ativos em escala. Melhora a velocidade do conteúdo diminuindo drasticamente o tempo gasto e as iterações necessárias para criar variações do mesmo ativo. A funcionalidade não requer programação e funciona no DAM. Consulte [gerar variações de ativos usando a integração do Creative Cloud](/help/assets/cc-api-integration.md).
-
-* [!DNL Experience Manager Assets] O inclui o Visualizador de  [!DNL Document Cloud] PDF para visualizar documentos PDF nativamente. Esse recurso permite que os usuários visualizem arquivos PDF de várias páginas sem qualquer processamento ou conversão de arquivos. Este recurso melhora a paridade com [!DNL Experience Manager] 6.5. Os controles disponíveis no visualizador incluem zoom, navegar até páginas, desancorar controles e exibir em tela cheia. O caso Usuários também visualiza e salta para páginas e marcadores. Comentários no próprio arquivo são suportados, comentários e anotações sobre o conteúdo no arquivo PDF serão adicionados em uma versão futura.
-
-   ![Visualizar arquivos PDF no  [!DNL Experience Manager] uso do Visualizador de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
-
-* A funcionalidade de download do Linkshare usa downloads assíncronos que aumentam a velocidade de download. Consulte [Baixar ativos compartilhados usando o compartilhamento de link](/help/assets/download-assets-from-aem.md#link-share-download).
-
-   ![Baixar caixa de entrada](/help/assets/assets/download-inbox.png)
-
-* As configurações de exibição são aprimoradas para permitir que os usuários escolham uma exibição padrão e um parâmetro de classificação padrão.
-
-   ![Definir exibição padrão em Configurações  [!UICONTROL de exibição]](/help/assets/assets/view-settings-for-defaults.png)
-
-* Os usuários podem pesquisar e filtrar as pastas com base em predicados de propriedade.
-
-   ![Filtrar pastas de pesquisa usando predicados de pesquisa](/help/assets/assets/search-folders-via-predicates.png)
-
-### Novos recursos disponíveis no canal de pré-lançamento [!DNL Assets] {#assets-prerelease-features}
-
-<!-- TBD: Not sure about GA of these enh. Shall check with the team.
-
-* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
-
-  ![Number of assets in a folder are displayed on the interface](/help/assets/assets/browse-folder-number-of-assets.png)
-
-* You can directly apply a metadata schemas to a folder in its [!UICONTROL Properties].
-
-  ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
--->
-
-* Ao compartilhar ativos digitais como um link, os usuários podem copiar o URL para a área de transferência. O aprimoramento permite compartilhar ativos de maneira mais rápida e conveniente.
-
-### Erros corrigidos em [!DNL Assets] {#assets-bugs-fixed}
-
-A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em [!DNL Experience Manager] como [!DNL Cloud Service]. (CQ-4326322)
-
-## [!DNL Experience Manager Screens] como  [!DNL Cloud Service] {#screens}
-
-### Correções de erros {#bug-fixes-screens}
-
-* As configurações do Provedor de conteúdo agora são validadas durante a criação ou atualização.
-
-* Todas as exibições têm coluna de pastas.
-
-* É possível expandir a Estrutura de conteúdo do Screens.
-
-* `bulk-offline-update-service` estava faltando todas as permissões para alguns ambientes.
-
-* Atualização do link Ajuda para corresponder à nova documentação da nuvem de telas.
-
-* Cancelar a atribuição de listas de reprodução e não permitir a remoção de listas de reprodução com reprodutor(es) atribuído(s), agora funciona.
-
-* O reprodutor agora faz o download de Ativos novamente quando o Cache &quot;ALL&quot; é limpo.
-
-* Repetir o Agendamento agora funciona, se a *Hora Final* estiver definida para o dia seguinte.
-
-* `Back&Forward` O agora funciona no Screens as a Cloud Service UI.
-
-* Tags com o mesmo nome, mas namespaces diferentes, não puderam ser criadas anteriormente.
-
-## [!DNL Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
-
-### Novidades em [!DNL Forms] {#what-is-new-forms}
-
-* Agora você pode usar o serviço Automated forms conversion para [converter PDF forms em francês, alemão e espanhol](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) para formulários adaptáveis.
-* Adição de um painel separado ao editor de modelo para exibir erros relacionados aos componentes de formulário adaptáveis. Ele ajuda a consolidar todos os erros de formulário adaptável em um local e a reduzir o tempo de resolução.
-
-### Novos recursos disponíveis no canal de pré-lançamento [!DNL Forms] {#beta-features-forms}
-
-* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [A ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIshelp de comunicação permite combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo síncrono. As APIs permitem criar aplicativos que permitem:
-   * Gere documentos preenchendo arquivos de modelo com dados XML.
-   * Gere formulários de saída em vários formatos, incluindo fluxos de impressão PDF não interativos.
-   * Gere arquivos PDF de impressão a partir de um formulário XFA PDF e Formulário Adobe Acrobat.
-
-* **Externalizador** de dados de variável: Você pode salvar dados de variáveis de Fluxo de trabalho AEM em um sistema de armazenamento externo gerenciado por sua organização.
-
-* **Documento de registro** baseado em formulário: Também é possível  [usar o PDF do formulário Adobe Acrobat (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) como um modelo de Documento de registro além do modelo de formulário baseado em XFA.
-
-* **Conector** do repositório de dados do Microsoft Azure: Agora você pode  [conectar o Modelo de Dados de Formulário ao Armazenamento do Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft Azure como um BLOB.
-
 ## Cloud Acceleration Manager {#cam}
 
 ### Data de lançamento {#release-date-july-cam}
@@ -185,14 +196,3 @@ O Cloud Acceleration Manager é um aplicativo baseado em nuvem projetado para or
 >[!NOTE]
 >
 > Verifique este [vídeo de demonstração do Cloud Acceleration Manager](https://video.tv.adobe.com/v/335547).
-
-## Complemento CIF {#cloud-services-cif}
-
-### Novidades {#what-is-new-cif}
-
-* Componentes principais da CIF v2
-   * Configurações simplificadas e aprimoradas para URL PDP/PLP e SEO
-   * Indicador visual para dados de produto preparados no modo de criação para melhor visibilidade das alterações futuras
-   * Novo componente de mapa de site para páginas de conteúdo e comércio
-
-* Suporte para [Recomendação de produto do Adobe Commerce Sensei, viabilizado pelo Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) em AEM Storefront usando recomendações predefinidas ou criadas de forma instantânea
