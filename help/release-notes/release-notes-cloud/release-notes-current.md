@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
+source-git-commit: 76d068de881edce2324ceb73f1a724ff0f5f585c
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1313'
 ht-degree: 2%
 
 ---
@@ -156,22 +156,21 @@ A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em 
 
 ### Novidades em [!DNL Forms] {#what-is-new-forms}
 
-* Agora você pode usar o serviço Automated forms conversion para converter PDF forms em francês, alemão e espanhol em formulários adaptáveis.
+* Agora você pode usar o serviço Automated forms conversion para [converter PDF forms em francês, alemão e espanhol](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) para formulários adaptáveis.
 * Adição de um painel separado ao editor de modelo para exibir erros relacionados aos componentes de formulário adaptáveis. Ele ajuda a consolidar todos os erros de formulário adaptável em um local e a reduzir o tempo de resolução.
 
 ### Novos recursos disponíveis no canal de pré-lançamento [!DNL Forms] {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: As APIs de comunicação ajudam a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo síncrono. As APIs permitem criar aplicativos que permitem:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [A ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIshelp de comunicação permite combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo síncrono. As APIs permitem criar aplicativos que permitem:
    * Gere documentos preenchendo arquivos de modelo com dados XML.
    * Gere formulários de saída em vários formatos, incluindo fluxos de impressão PDF não interativos.
    * Gere arquivos PDF de impressão a partir de um formulário XFA PDF e Formulário Adobe Acrobat.
 
 * **Externalizador** de dados de variável: Você pode salvar dados de variáveis de Fluxo de trabalho AEM em um sistema de armazenamento externo gerenciado por sua organização.
 
-* **Documento de registro** baseado em formulário: Também é possível usar o PDF do formulário Adobe Acrobat (Acroform PDF) como um modelo para Documento de registro além do modelo de formulário baseado em XFA.
+* **Documento de registro** baseado em formulário: Também é possível  [usar o PDF do formulário Adobe Acrobat (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) como um modelo de Documento de registro além do modelo de formulário baseado em XFA.
 
-* **Conector** do repositório de dados do Microsoft Azure: Agora você pode conectar o Modelo de Dados de Formulário ao Armazenamento do Microsoft Azure. Ele permite armazenar e recuperar dados de formulário adaptáveis para o Armazenamento do Microsoft Azure como um BLOB.
-
+* **Conector** do repositório de dados do Microsoft Azure: Agora você pode  [conectar o Modelo de Dados de Formulário ao Armazenamento do Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft Azure como um BLOB.
 
 ## Cloud Acceleration Manager {#cam}
 
