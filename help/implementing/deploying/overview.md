@@ -3,7 +3,7 @@ title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 feature: Implantação
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '3290'
 ht-degree: 1%
@@ -27,7 +27,7 @@ O resto deste documento descreverá como os desenvolvedores devem adaptar suas p
 
 ## Versões do cliente {#customer-releases}
 
-### Codificação em relação à versão AEM direita {#coding-against-the-right-aem-version}
+### Codificação em relação à versão AEM correta {#coding-against-the-right-aem-version}
 
 Para soluções de AEM anteriores, a versão de AEM mais recente era alterada com pouca frequência (aproximadamente anualmente com service packs trimestrais) e os clientes atualizavam as instâncias de produção para o início rápido mais recente a seu próprio tempo, referenciando o API Jar. No entanto, os aplicativos AEM as a Cloud Service são atualizados automaticamente para a versão mais recente do AEM com mais frequência, portanto, o código personalizado para versões internas deve ser criado em relação à versão mais recente do AEM.
 
@@ -47,7 +47,7 @@ O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar o
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
 -->
 
-## Implantação de pacotes de conteúdo pelo Cloud Manager e pelo Gerenciador de pacotes {#deploying-content-packages-via-cloud-manager-and-package-manager}
+## Implantação de pacotes de conteúdo por meio do Cloud Manager e do Gerenciador de pacotes {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
 ### Implantações via Cloud Manager {#deployments-via-cloud-manager}
 
@@ -179,9 +179,9 @@ Como o Gerenciador de pacotes é um conceito de tempo de execução, não é pos
 
 Todos os pacotes de conteúdo instalados pelo Cloud Manager (mutáveis e imutáveis) aparecerão em um estado congelado na interface do usuário do Gerenciador de Pacotes AEM. Esses pacotes não podem ser reinstalados, recriados ou até mesmo baixados e serão listados com um sufixo **&quot;cp2fm&quot;**, indicando que sua instalação foi gerenciada pelo Cloud Manager.
 
-### Incluindo pacotes de terceiros {#including-third-party}
+### Inclusão de pacotes de terceiros {#including-third-party}
 
-É comum que os clientes incluam pacotes pré-criados de fornecedores de software de terceiros, como parceiros de tradução Adobe. A recomendação é hospedar esses pacotes em um repositório remoto e referenciá-los no `pom.xml`. Isso é possível para repositórios públicos e também para repositórios privados com proteção por senha, conforme descrito em [repositórios maven protegidos por senha](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
+É comum que os clientes incluam pacotes pré-criados de fornecedores de software de terceiros, como parceiros de tradução Adobe. A recomendação é hospedar esses pacotes em um repositório remoto e referenciá-los no `pom.xml`. Isso é possível para repositórios públicos e também para repositórios privados com proteção por senha, conforme descrito em [repositórios maven protegidos por senha](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 Se não for possível armazenar o pacote em um repositório remoto, os clientes poderão colocar em um repositório Maven local baseado em sistema de arquivos, que é comprometido com SCM como parte do projeto e referenciado pelo que depender dele. O repositório seria declarado nos exemplos de projeto ilustrados abaixo:
 
@@ -271,7 +271,7 @@ Além disso, a versão antiga deve ser testada quanto à compatibilidade com qua
 
 Alterar os usuários do serviço ou as ACLs necessárias para acessar o conteúdo ou o código pode levar a erros nas versões de AEM mais antigas, resultando no acesso a esse conteúdo ou código com usuários de serviço desatualizados. Para lidar com esse comportamento, uma recomendação é fazer alterações espalhadas em pelo menos 2 versões, com a primeira versão funcionando como uma ponte antes de limpar na versão subsequente.
 
-### Alterações de índice {#index-changes}
+### Alterações de Índice {#index-changes}
 
 Se forem feitas alterações nos índices, é importante que a versão Azul continue a usar seus índices até que seja encerrada, enquanto a versão Verde usa seu próprio conjunto modificado de índices. O desenvolvedor deve seguir as técnicas de gerenciamento de índice descritas [neste artigo](/help/operations/indexing.md).
 
