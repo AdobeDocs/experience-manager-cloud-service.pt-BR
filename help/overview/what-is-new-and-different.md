@@ -2,7 +2,7 @@
 title: O que é diferente e novidades - Adobe Experience Manager as a Cloud Service
 description: O que é diferente e novidades - Adobe Experience Manager (AEM) como Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 10%
@@ -112,7 +112,7 @@ Especificamente, o número e o tipo de programas de AEM que podem ser criados no
 
 O Cloud Manager evoluiu como um portal de autoatendimento onde os principais componentes do AEM como um Cloud Service podem ser criados e configurados:
 
-* Criação e gerenciamento de novos programas. Consulte [Noções básicas sobre programas e tipos de programas](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) para obter mais detalhes.
+* Criação e gerenciamento de novos programas. Consulte [Noções básicas sobre programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) para obter mais detalhes.
 
 * Criação e gerenciamento dos ambientes AEM nesses programas. Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais detalhes.
 
@@ -161,7 +161,7 @@ Também é significativamente diferente, pois agora:
 
 A nova arquitetura que oferece suporte ao AEM as a Cloud Service envolve algumas alterações importantes na experiência geral do desenvolvedor. Um dos principais objetivos do AEM como Cloud Service é permitir que clientes experientes (que usaram AEM local ou no contexto do Adobe Managed Services) migrem para o AEM o mais rápido possível, sem precisar reescrever a maior parte de seu código personalizado. No entanto, poderão ainda ser necessários alguns ajustamentos.
 
-### Desenvolvimento em nuvem {#aem-as-a-cloud-service-developing-cloud-development}
+### Desenvolvimento na nuvem {#aem-as-a-cloud-service-developing-cloud-development}
 
 Para que os aplicativos de AEM existentes sejam executados no AEM como Cloud Service, as seguintes etapas são esperadas:
 
