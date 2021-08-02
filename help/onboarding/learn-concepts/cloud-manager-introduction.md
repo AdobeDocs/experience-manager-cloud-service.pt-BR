@@ -1,13 +1,13 @@
 ---
 title: Saiba o que é o Cloud Manager
 description: Siga esta página para saber mais sobre o Cloud Manager, os programas do Cloud Manager e os ambientes.
-source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
+exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
 
 ---
-
 
 # Introdução ao Cloud Manager {#intro-cloud-manager}
 
@@ -26,10 +26,10 @@ Os Programas do Cloud Manager representam conjuntos de ambientes do Cloud Manage
 Um usuário pode criar um programa de **Sandbox** ou **Produção**.
 
 * Um *Programa de produção* é criado para ativar o tráfego ao vivo no momento adequado no futuro.
-Consulte [Introdução aos programas de produção](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obter mais detalhes.
+Consulte Introdução a programas de produção para obter mais detalhes.
 
 * Um *Programa de sandbox* normalmente é criado para servir os propósitos de treinamento, execução de demonstração, ativação, POC&#39;s ou documentação. Não se destina a transportar tráfego vivo e terá restrições que um programa de produção não irá. Ele incluirá Sites e Ativos e será fornecido automaticamente com uma ramificação Git que inclui código de amostra, um ambiente de desenvolvimento e um pipeline não relacionado à produção.
-Consulte [Introdução aos programas de sandbox](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) para obter mais detalhes.
+Consulte Introdução aos programas de sandbox para obter mais detalhes.
 
 ## Ambientes do Cloud Manager {#cloud-manager-environments}
 
