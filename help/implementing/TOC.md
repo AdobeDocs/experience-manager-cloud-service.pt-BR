@@ -5,10 +5,10 @@ breadcrumb-title: Guia de implementação
 user-guide-description: Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento.
 feature: Ferramentas do desenvolvedor
 role: Developer, Architect
-source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 33%
+source-wordcount: '1034'
+ht-degree: 36%
 
 ---
 
@@ -17,6 +17,42 @@ ht-degree: 33%
 
 + [Implementação de aplicativos do AEM as a Cloud Service](/help/implementing/home.md)
 + Uso do Cloud Manager {#using-cloud-manager}
+   + Notas de versão do Cloud Manager {#release-notes-cloud-manager}
+      + [Notas de versão atuais (2021.7.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + 2021 {#2021}
+         + [Notas da versão 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
+         + [Notas da versão 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
+         + [Notas da versão 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
+         + [Notas da versão 2021.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
+         + [Notas da versão 2021.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
+         + [Notas da versão 2021.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+      + 2020 {#2020}
+         + [Notas da versão 2020.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
+         + [Notas da versão 2020.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
+         + [Notas da versão 2020.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+         + [Notas da versão 2020.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+         + [Notas da versão 2020.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+         + [Notas da versão 2020.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+         + [Notas da versão 2020.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+         + [Notas da versão 2020.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+         + [Notas da versão 2020.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+         + [Notas da versão 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
+         + [Notas da versão 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+   + [Noções básicas sobre programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)
+   + Programas de produção {#production-programs}
+      + [Introdução](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [Criação de um programa de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [Editando um programa de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-production-program.md)
+   + Programas do Sandbox {#sandbox-programs}
+      + [Introdução](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [Criação de um programa de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [Edição de um programa de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+      + [Exclusão de um programa de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [Hibernar e desibernar ambientes de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+   + Criação de um projeto de aplicativo AEM {#create-application-project}
+      + [Usar o Assistente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+      + [Configurar o projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+      + [Compreensão do ambiente de criação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
    + [Gerenciamento de ambientes](cloud-manager/manage-environments.md)
    + [Configuração do pipeline de CI/CD](cloud-manager/configure-pipeline.md)
    + [Implantação do código](cloud-manager/deploy-code.md)
