@@ -1,14 +1,13 @@
 ---
 title: 'Tarefas do administrador do sistema '
 description: Siga esta página para saber como adicionar usuários e atribuí-los às funções do Cloud Manager como Administrador do sistema
-translation-type: tm+mt
-source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
+exl-id: 4c0f5783-02c1-4ea6-871a-03ea8a0847bf
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
 
 ---
-
 
 # Tarefas do administrador do sistema {#add-users-assign}
 
@@ -27,7 +26,7 @@ Um Administrador do sistema executa as seguintes tarefas organizacionais:
 
 1. Clique no botão **Gerenciar acesso**, localizado na parte superior direita da página de aterrissagem do Cloud Manager, para abrir o Admin Console em uma nova guia.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
 
    No **Admin Console**, é possível adicionar usuários ao Cloud Manager e atribuí-los a Funções, chamadas de Perfis de produto no Admin Console.
 
@@ -47,4 +46,3 @@ Um Administrador do sistema executa as seguintes tarefas organizacionais:
    >Consulte [Funções do Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) para saber mais sobre funções e permissões oferecidas no Cloud Manager.
 
    Agora, você adicionou usuários ao Contexto de Produto do Adobe Experience Manager as a Cloud Service e está configurado com as Funções ou Perfis de Produto certos.
-
