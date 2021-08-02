@@ -2,9 +2,9 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 3e3296f2c7cbc5c960560a3a6c380875e2ca64bd
+source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 19%
 
 ---
@@ -38,7 +38,7 @@ Após a assinatura do contrato, ocorrerão os seguintes eventos:
 
 1. Um Administrador do sistema pode [Conceder aos usuários acesso a uma instância de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) para fins de desenvolvimento.
 
-**[Obter a Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**
+**[Obter a Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
 
 Você precisará da ajuda da Adobe ID e do Administrador do sistema para adicionar os usuários ao Cloud Manager às funções atribuídas.
 
@@ -56,14 +56,14 @@ As seguintes páginas de documentação incluem informações descrevendo tarefa
 
 **[Navegar para o Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Agora que você foi adicionado como um usuário e atribuído a uma função do Cloud Manager, é possível acessar o Cloud Manager para começar a usar a jornada na nuvem com o AEM. Os usuários estão prontos para fazer várias tarefas, como [criar um programa](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [adicionar um ambiente](/help/implementing/cloud-manager/manage-environments.md), [acessar Git](/help/implementing/cloud-manager/accessing-git.md), [configurar um pipeline](/help/implementing/cloud-manager/configure-pipeline.md) e [implantar código](/help/implementing/cloud-manager/deploy-code.md).
+Agora que você foi adicionado como um usuário e atribuído a uma função do Cloud Manager, é possível acessar o Cloud Manager para começar a usar a jornada na nuvem com o AEM. Os usuários estão prontos para fazer várias tarefas, como criar um programa, adicionar um ambiente, [acessar Git](/help/implementing/cloud-manager/accessing-git.md), [configurar um pipeline](/help/implementing/cloud-manager/configure-pipeline.md) e [implantar código](/help/implementing/cloud-manager/deploy-code.md).
 O Cloud Manager é uma parte importante do AEM as a Cloud Service. Ela permite que as organizações autogerenciem [!DNL Experience Manager] na nuvem. Inclui uma estrutura de integração contínua e entrega contínua (CI/CD) que permite que as equipes de TI e os parceiros de implementação acelerem a entrega de personalizações ou atualizações, sem comprometer o desempenho ou a segurança. Usando a interface do usuário, você pode configurar e iniciar o pipeline de CI/CD.
 
 **[Conceder ao usuário acesso a uma instância de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
 Siga esta seção para saber como um Administrador do sistema ou um usuário que criou um ambiente pode conceder acesso a uma instância de AEM a outros usuários.
 
-## [!DNL Experience Manager as a Cloud Service] Guias  {#aem-guides}
+## [!DNL Experience Manager as a Cloud Service] Guias {#aem-guides}
 
 | Guia do usuário | Descrição |
 |---|---|
@@ -81,7 +81,7 @@ Siga esta seção para saber como um Administrador do sistema ou um usuário que
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end de [!DNL Experience Manager as a Cloud Service], como tarefas de indexação e manutenção. |
 | [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework em [!DNL Experience Manager as a Cloud Service]. |
 
-## Outros [!DNL Experience Manager] Recursos {#other-resources}
+## Outros recursos [!DNL Experience Manager] {#other-resources}
 
 * [Atualizações recentes na documentação](https://helpx.adobe.com/br/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
