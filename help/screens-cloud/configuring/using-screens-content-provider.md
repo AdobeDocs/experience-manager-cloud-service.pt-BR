@@ -1,7 +1,7 @@
 ---
 title: Usando o Provedor de Conteúdo do Screens
 description: Esta página descreve como usar o Provedor de conteúdo do Screens para criar conteúdo.
-source-git-commit: aea66e38a54c8e96b0dfe06cc7cb8f7733e8bc09
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 1%
@@ -30,10 +30,10 @@ Siga as etapas abaixo para fazer logon no Provedor de conteúdo do Screens:
 1. Navegue até a página inicial do [Adobe Experience Cloud](https://experience.adobe.com).
 
 1. Selecione **Experience Manager**.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Clique em **Iniciar** no cartão do Cloud Manager. Depois de fazer logon no [!UICONTROL Cloud Manager] com êxito, você estará pronto para usar a interface do usuário (UI).
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Selecione o programa do Screens como um Cloud Service e clique no ícone , conforme mostrado abaixo para abrir a página **Visão geral** do Cloud Manager para esse programa específico.
 
