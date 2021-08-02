@@ -1,27 +1,31 @@
 ---
-title: Informativo do Dynamic Media
+title: Arquivo de informativo do Dynamic Media
 description: 'O informativo do Dynamic Media por Experience League é um informativo mensal. Ela foi criada para ajudar você a usar o Dynamic Media e o Dynamic Media Classic para obter valor imediatamente. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim informativo de balcão único. Por exemplo, há vídeos de instruções e visões gerais da solução. Leia sobre alguns dos principais recursos e características, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais. '
 feature: Gerenciamento de ativos
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
 # ![Logotipo do informativo do Dynamic Media](/help/assets/dynamic-media/assets/dynamic-media-newsletter-logo.png)
 
-Para ajudar você a obter valor imediatamente, este boletim informativo foi projetado para ajudar você a usar o Dynamic Media e o Dynamic Media Classic rapidamente.
+>[!NOTE]
+>
+>O boletim informativo mensal agora é descontinuado. No entanto, você ainda pode acessar os arquivos do boletim informativo abaixo.
 
-Explore recursos valiosos para a criação de conhecimento, como vídeos explicativos e visões gerais de soluções. Leia as introduções para alguns dos principais recursos da solução, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais.
+O informativo do Dynamic Media disponibilizado pelo Experience League foi projetado para ajudar você a usar o Dynamic Media e o Dynamic Media Classic para obter vantagens desde o início.
 
-## Inspire-se. Fique informado.
+Neste boletim informativo arquivado de balcão único, você pode encontrar recursos valiosos para a criação de conhecimento, como vídeos explicativos e visões gerais de soluções. Há também introduções para recursos e características principais, como predefinições de imagens, predefinições do visualizador e perfis de vídeo.
 
-[Faça logon ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) para receber o informativo do Dynamic Media mensalmente em sua caixa de entrada.
+<!-- ## Get inspired. Stay informed.
 
-## Perdeu um problema do informativo do Dynamic Media?
+[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox. -->
+
+## Arquivo de informativo do Dynamic Media
 
 <!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
@@ -49,9 +53,9 @@ Explore recursos valiosos para a criação de conhecimento, como vídeos explica
    * Saiba mais sobre as auditorias gratuitas do Dynamic Media Classic.
    * Conheça John Monroe, Gerente Sênior de Programa para Serviços de Sucesso do Cliente.
 
-      >[!IMPORTANT]
-      >
-      >O Adobe deseja garantir que ele esteja enviando o informativo do Dynamic Media somente para pessoas que desejam recebê-lo. Para continuar recebendo o informativo depois desse problema, cadastre-se nele [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
+<!--     >[!IMPORTANT]
+    >
+    >Adobe wants to make sure that they are sending the Dynamic Media newsletter only to folks who want to receive it. To continue receiving the newsletter after this issue, sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[Fevereiro de 2020, Edição 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -62,7 +66,7 @@ Explore recursos valiosos para a criação de conhecimento, como vídeos explica
    * Explore como usar a magia de corte do Dynamic Media.
    * Para ajudá-lo a tirar maior proveito do Dynamic Media Classic, utilize uma auditoria gratuita do Adobe.
    * Saiba mais sobre a nova interface do usuário do Dynamic Media Classic.
-   * Conheça Georgia Myers, Gerente de Sucesso do Cliente para Adobe Experience Cloud.
+   * Conheça `Georgia Myers`, Gerente de sucesso do cliente para Adobe Experience Cloud.
 
 * **[Janeiro de 2020, Edição 1](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
@@ -82,7 +86,7 @@ Explore recursos valiosos para a criação de conhecimento, como vídeos explica
    * Novos recursos de segurança poderosos.
    * Como o Adobe está se preparando para que você tenha uma temporada de férias bem-sucedida.
    * Compartilhe o informativo com seus colegas para criar experiência em equipe.
-   * Conheça Apoorva Gupta, Gerente Sênior De Produtos, Dynamic Media.
+   * Conheça `Apoorva Gupta`, Gerente de produto sênior, Dynamic Media.
 
 * **[Outubro de 2019, Edição 10](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
 
@@ -92,7 +96,7 @@ Explore recursos valiosos para a criação de conhecimento, como vídeos explica
    * Um infográfico com dicas para o corte da mandíbula resulta do fornecimento de imagens e vídeos de alta qualidade.
    * Um artigo do CMSwire que ajuda você a entender como atualizar sua estratégia de mídia avançada para atender às expectativas atuais do cliente.
    * Acesso ao webinário sob demanda no Dynamic Media a partir da série Skill Builder.
-   * Conheça Nick Peters, Gerente, Engenharia de Confiabilidade do Site, Adobe Experience Manager.
+   * Conheça `Nick Peters`, Gerente, Engenharia de Confiabilidade de Site, Adobe Experience Manager.
    * Acesse o Dynamic Media e o Dynamic Media Classic no Experience League.
 
 * **[Setembro de 2019, Edição 09](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
@@ -114,7 +118,7 @@ Explore recursos valiosos para a criação de conhecimento, como vídeos explica
    * Saiba mais sobre uma série de webinários criada para agilizar o Experience Manager Assets e a Dynamic Media.
    * Inicie sua jornada obtendo valor do Dynamic Media no Experience League.
    * Dê uma espiada em uma integração poderosa que virá em setembro deste ano e permitirá analisar como os visitantes interagem com sua mídia avançada.
-   * Conheça PieterJan Pieper, wiz de suporte técnico da Dynamic Media.
+   * Conheça `PieterJan Pieper`, wiz de suporte técnico da Dynamic Media.
 
 * **[Julho de 2019, Edição 07](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
 
@@ -125,7 +129,7 @@ Explore recursos valiosos para a criação de conhecimento, como vídeos explica
    * O próximo para no Adobe Insider Tour com informações preenchidas.
    * Recursos interessantes disponíveis quando você tem o Dynamic Media no Experience Manager Assets (Experience Manager Assets).
    * Adicionar vídeos de 360 graus e miniaturas de vídeo personalizadas ao seu site.
-   * Conheça Andrew Hathaway, consultor principal de soluções para a Dynamic Media no Experience Manager Assets.
+   * Conheça `Andrew Hathaway`, Consultor de soluções principal para Dynamic Media no Experience Manager Assets.
 
 * **[Junho De 2019, Edição 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
@@ -136,7 +140,7 @@ Explore recursos valiosos para a criação de conhecimento, como vídeos explica
    * Saiba mais sobre o Adobe Insider Tour futuro.
    * Leia sobre como você pode proteger seus ativos digitais da pirataria.
    * Saiba mais sobre o Recorte inteligente controlado por IA para imagens.
-   * Conheça Alex Thiers, uma das forças impulsionadoras por trás de muitos dos grandes recursos e inovações do Dynamic Media e Dynamic Media Classic.
+   * Conheça `Alex Thiers`, uma das forças impulsionadoras por trás de muitos dos grandes recursos e inovações do Dynamic Media e Dynamic Media Classic.
 
 * **[Maio de 2019, Edição 05](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**
 
