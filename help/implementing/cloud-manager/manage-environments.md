@@ -2,9 +2,9 @@
 title: Gerenciar ambientes - Cloud Service
 description: Gerenciar ambientes - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1618'
 ht-degree: 3%
 
 ---
@@ -74,9 +74,6 @@ O cartão **Ambientes** na página Visão geral lista até três ambientes.
    ![](assets/environment-view-2.png)
 
 1. Selecione qualquer um dos ambientes na lista para exibir os detalhes do ambiente.
-
-   >[!NOTE]
-   >O Serviço de Pré-visualização será implantado continuamente em todos os Programas. Os clientes serão notificados no produto quando o Programa estiver ativado para o Serviço de visualização. Consulte a seção [Acesso ao serviço de visualização](#access-preview-service) para obter mais detalhes.
 
    ![](assets/environ-preview1.png)
 
