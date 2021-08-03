@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Insights de ativos,Relatórios de ativos
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 8%
+source-wordcount: '813'
+ht-degree: 7%
 
 ---
 
@@ -68,7 +68,7 @@ Você pode exibir as pontuações do Assets Insights da página de metadados.
 Exiba pontuações de todos os ativos em uma pasta simultaneamente usando a **[!UICONTROL Exibição do Insights]**.
 
 1. Na interface do usuário do Assets, navegue até a pasta que contém os ativos para os quais deseja exibir insights.
-1. Clique na opção Layout na barra de ferramentas e escolha **[!UICONTROL Exibição do Insights]**.
+1. Clique na opção **[!UICONTROL Layout]** na barra de ferramentas e escolha **[!UICONTROL Exibição do Insights]**.
 1. A página exibe as pontuações de uso dos ativos. Compare as classificações dos vários ativos e obtenha insights.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -95,7 +95,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. Em [!DNL Experience Manager], clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]**.
 
-   ![chlimage_1-72](assets/chlimage_1-72.png)
+   ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Clique no cartão **[!UICONTROL Configuração do Insights]**.
 1. No assistente, selecione um data center e forneça suas credenciais, incluindo o nome da organização, o nome de usuário e o Segredo compartilhado.
@@ -117,6 +117,29 @@ Após configurar sua conta do Adobe Analytics, o código do Rastreador de págin
 
 1. Na página **[!UICONTROL Navegação]**, clique no cartão do **[!UICONTROL Rastreador de páginas do Insights]**.
 1. Clique em **[!UICONTROL Download]** para baixar o código do rastreador de página.
+
+<!--
+Add page tracker code, CQDOC-18045, 30/07/2021
+-->
+O trecho de código de exemplo a seguir exibe o código do Rastreador de página incluído em uma página da Web de exemplo:
+
+```xml
+ <head>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/sitecatalyst/appmeasurement.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/foundation/assetinsights/pagetracker.js"></script>
+            <script type="text/javascript">
+                                assetAnalytics.attrTrackable = 'trackable';
+                assetAnalytics.defaultTrackable = false;
+                assetAnalytics.attrAssetID = 'aem-asset-id';
+                assetAnalytics.assetImpressionPollInterval = 200; // interval in millis
+                assetAnalytics.charsLimitForGET = 2000; // bytes
+                assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
+            </script>
+
+ </head>
+```
+
+
 
 <!--
 
