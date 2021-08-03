@@ -2,9 +2,9 @@
 title: Replicação
 description: Distribuição e Solução de problemas de replicação.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1347'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,7 @@ Você pode encontrar informações mais detalhadas sobre Gerenciar publicação 
 
 >[!NOTE]
 >
->Essa abordagem deve ser considerada obsoleta, pois não persiste em status e é menos escalável do que outras abordagens. Em vez disso, os métodos do workflow são usados para gerenciar a publicação
+>Essa abordagem deve ser considerada obsoleta e será removida em ou após 30 de setembro de 2021, pois não persiste nos status e é menos escalável do que outras abordagens. Em vez disso, os métodos do workflow são usados para gerenciar a publicação
 
 Para executar uma ativação de árvore:
 
