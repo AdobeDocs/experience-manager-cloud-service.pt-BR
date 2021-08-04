@@ -2,9 +2,9 @@
 title: Visualização de conteúdo
 description: Saiba como usar o Serviço de visualização de AEM para visualizar o conteúdo antes de entrar no ar.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 78c5649c6b9c04cb459f5730161affeb452c916c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->O recurso de Visualização faz parte da versão 2021.5.0 e será lançado gradualmente nas próximas semanas.
+>Para ativar o recurso de visualização em ambientes criados antes de 3 de agosto de 2021, verifique se o ambiente está AEM versão 2021.05.5368.20210529T101701Z ou superior e execute um pipeline iniciado pelo cliente.
 
 O AEM oferece um Serviço de visualização de sites desenvolvido para permitir que desenvolvedores e autores de conteúdo visualizem a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente.
 
 Ele facilita a visualização de experiências de página que de outra forma não estariam visíveis no ambiente do autor, como transições de página e outro conteúdo somente do lado da publicação.
+
+Leia também sobre [como acessar o serviço de Visualização](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Publicar conteúdo na visualização {#publishing-content-to-preview}
 
@@ -40,7 +42,7 @@ Você pode publicar conteúdo no Serviço de visualização usando a interface d
    https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
    ```
 
-Consulte [Gerenciar seus ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obter mais informações sobre como obter os URLs dos seus ambientes.
+Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais informações sobre como obter os URLs dos seus ambientes.
 
 O conteúdo também pode ser publicado para visualização usando um [Fluxo de trabalho da árvore de conteúdo de publicação](/help/operations/replication.md#publish-content-tree-workflow) com o parâmetro agentId definido para visualização ou usando a [API de replicação](/help/operations/replication.md#replication-api) com um AgentFilter configurado para visualização.
 
@@ -67,4 +69,4 @@ Siga estas etapas para depurar a camada de visualização usando o Console do de
 
 * No [Console do Desenvolvedor](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), selecione **— Todas as visualizações —** ou um ambiente de produção que inclua **prev** no seu nome
 * Gerar as informações relevantes para a instância de visualização
-Consulte [Gerenciar seus ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obter mais informações sobre como obter os URLs dos seus ambientes.
+Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais informações sobre como obter os URLs dos seus ambientes.
