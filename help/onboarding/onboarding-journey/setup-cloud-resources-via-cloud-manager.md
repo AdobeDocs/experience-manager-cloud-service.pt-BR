@@ -4,9 +4,9 @@ description: Siga esta página para saber como configurar os Recursos da nuvem p
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Siga as etapas abaixo para navegar até o Cloud Manager:
 1. Você navegará até a página **Programas e produtos** do Cloud Manager.
 
    >[!IMPORTANT]
-   >Como alternativa, você também pode navegar diretamente para a página de logon do Cloud Manager de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+   >Como alternativa, você também pode navegar diretamente para a página de logon do Cloud Manager de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Marque esta página para o futuro e para ajudá-lo a navegar diretamente para a página de aterrissagem do Cloud Manager.
 
 Além disso, você pode navegar até a página **Programas e produtos** do Cloud Manager na página inicial do Adobe Experience Cloud. Siga as etapas abaixo:
 
@@ -91,7 +91,6 @@ Além disso, você pode navegar até a página **Programas e produtos** do Cloud
       Se programas já existirem em sua organização e você for um Administrador do sistema, sua landing page exibirá o botão **Gerenciar acesso** junto com a opção **Adicionar programa**, conforme mostrado na figura abaixo.
 
       ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
-
 
 
 ## Verificando suas funções de usuário {#verify-user-roles}
