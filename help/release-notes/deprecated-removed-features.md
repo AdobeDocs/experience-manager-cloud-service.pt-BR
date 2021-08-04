@@ -2,10 +2,10 @@
 title: Recursos obsoletos e removidos
 description: Notas de versão específicas para recursos obsoletos e removidos no [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8742c4058a5b89a0d6aca0d6e58ed993b01d084d
+source-git-commit: 6a850b03501c899cf5b91fca9012036cad2a78ef
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 38%
+source-wordcount: '550'
+ht-degree: 36%
 
 ---
 
@@ -52,3 +52,11 @@ Esta seção lista os recursos e funcionalidades removidos de [!DNL Experience M
 | [!DNL Sites] | Importador de design | Esse recurso foi removido, pois seções imutáveis do repositório [!DNL Experience Manager] não estão acessíveis no tempo de execução. |
 | [!DNL Assets] | [!DNL Assets]O compartilhamento do com os serviços Marketing Cloud Assets Core Service e Creative Cloud não está disponível. | Para integração com [!DNL Adobe Creative Cloud], use [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html). |
 | [!DNL Foundation] | Suporte para fontes de dados do Apache Sling (pacote OSGi org.apache.sling.datasource). | N/A |
+
+## API Java {#java-api}
+
+Consulte [esta página](/help/release-notes/deprecated-apis.md) para obter quaisquer APIs Java obsoletas ou removidas, que são ocasionalmente introduzidas.
+
+## Configuração OSGI {#osgi-configuration}
+
+Consulte [este artigo](/help/implementing/deploying/osgi-configuration-api.md) para obter quaisquer restrições sobre a configuração de propriedades OSGI, algumas das quais podem ser introduzidas ao longo do tempo.
