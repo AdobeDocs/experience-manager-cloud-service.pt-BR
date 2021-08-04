@@ -2,7 +2,7 @@
 title: Implantar o código - Cloud Services
 description: Implantar o código - Cloud Services
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 2%
@@ -41,7 +41,7 @@ Depois de configurar o Pipeline de produção (repositório, ambiente e ambiente
    A **Implantação do preparo** envolve estas etapas:
 
    * Validação: Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento, por exemplo, que a ramificação configurada exista, os ambientes estarão disponíveis.
-   * Teste de compilação e unidade: Essa etapa executa um processo de criação contêiner. Consulte [Detalhes do ambiente de criação](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) para obter detalhes sobre o ambiente de criação.
+   * Teste de compilação e unidade: Essa etapa executa um processo de criação contêiner. Consulte [Detalhes do ambiente de criação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obter detalhes sobre o ambiente de criação.
    * Verificação de código: Esta etapa avalia a qualidade do código de seu aplicativo. Consulte [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) para obter detalhes sobre o processo de teste.
    * Criar imagens: Esta etapa tem um arquivo de log do processo usado para criar imagens. Esse processo é responsável por transformar os pacotes de conteúdo e dispatcher produzidos pela etapa de compilação em imagens Docker e configuração de Kubernetes.
    * Implantar no Estágio
@@ -72,7 +72,7 @@ Consulte [Entendendo os resultados da auditoria de experiência](/help/implement
 
 Todas as implantações de Cloud Service seguem um processo contínuo para garantir tempo de inatividade zero. Consulte [Como as implantações em andamento funcionam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) para saber mais.
 
-### Implantação para Fase de Produção {#deployment-production-phase}
+### Implantação para fase de produção {#deployment-production-phase}
 
 O processo de implantação das topologias de produção é um pouco diferente para minimizar o impacto para AEM visitantes do Site.
 
