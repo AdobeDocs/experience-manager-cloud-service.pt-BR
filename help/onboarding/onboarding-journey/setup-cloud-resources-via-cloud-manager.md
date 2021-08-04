@@ -4,9 +4,9 @@ description: Siga esta página para saber como configurar os Recursos da nuvem p
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
+source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,21 @@ Siga as seções abaixo para saber como criar seus [programas de serviço em nuv
 
 ## Navegar para o Cloud Manager {#navigate-cloud-manager}
 
-1. O usuário *Proprietário comercial* receberá um email de boas-vindas de onde pode começar, ou se não conseguir encontrá-lo, vá diretamente para [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) e faça logon usando sua Adobe ID.
+O usuário *Proprietário comercial* receberá um email de boas-vindas de onde pode começar, ou se não conseguir encontrá-lo, vá diretamente para [Adobe Experience Cloud](https://experience.adobe.com) e faça logon usando sua Adobe ID.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
+Siga as etapas abaixo para navegar até o Cloud Manager:
+
+1. No email de boas-vindas, clique em **Introdução**, conforme mostrado na figura abaixo.
+   ![](/help/onboarding/onboarding-journey/assets/get-started-email.png)
+
+1. Você navegará até a página **Programas e produtos** do Cloud Manager.
+
+   >[!IMPORTANT]
+   >Como alternativa, você também pode navegar diretamente para a página de logon do Cloud Manager de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+
+Além disso, você pode navegar até a página **Programas e produtos** do Cloud Manager na página inicial do Adobe Experience Cloud. Siga as etapas abaixo:
+
+1. Navegue diretamente para [Adobe Experience Cloud](https://experience.adobe.com) e faça logon usando sua Adobe ID.
 
 1. Na página inicial do Adobe Experience Cloud, selecione **Experience Manager**.
 
@@ -56,11 +68,37 @@ Siga as seções abaixo para saber como criar seus [programas de serviço em nuv
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. A página de aterrissagem do Cloud Manager é exibida, como mostrado na figura abaixo.
+1. Após o logon bem-sucedido, você será direcionado para a página inicial do Cloud Manager.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
+   >[!NOTE]
+   >Dependendo das funções atribuídas no [!UICONTROL Cloud Manager] e do estado do aplicativo, você verá telas diferentes ao usar a interface do [!UICONTROL Cloud Manager].
 
-1. Verifique se você recebeu o Perfil de Produto do Proprietário Comercial. Para fazer isso, selecione o perfil na parte superior direita, conforme mostrado abaixo.
+   Você verá uma das três opções, descritas abaixo:
+
+   * **Quando nenhum programa existe no Cloud Manager**
+
+      Se não houver programas em sua organização, a landing page direcionará você para criar seu primeiro programa, como mostrado na figura abaixo.
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+
+   * **Quando programas já existem no Cloud Manager**
+
+      Se o(s) programa(s) já existir(em) em sua Organização, a landing page o direcionará para adicionar outro programa e exibirá todos os programas existentes também, como mostrado na figura abaixo.
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+
+   * **Quando um programa existe e o usuário é o Administrador do sistema**
+
+      Se programas já existirem em sua organização e você for um Administrador do sistema, sua landing page exibirá o botão **Gerenciar acesso** junto com a opção **Adicionar programa**, conforme mostrado na figura abaixo.
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+
+
+
+## Verificando suas funções de usuário {#verify-user-roles}
+
+Depois de fazer logon no Cloud Manager com êxito, siga as etapas abaixo para verificar se você recebeu o Perfil de produto do proprietário de negócios:
+
+1. Selecione o perfil no canto superior direito, como mostrado abaixo.
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
