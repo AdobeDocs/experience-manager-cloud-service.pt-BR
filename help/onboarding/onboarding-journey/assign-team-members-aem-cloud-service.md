@@ -4,9 +4,9 @@ description: Siga esta página para saber como atribuir membros da equipe ao AEM
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ As etapas abaixo devem ser seguidas por um Administrador de sistema que também 
 
 ## O que vem a seguir {#whats-next}
 
-Os usuários designados ao AEM como perfis de produto do Cloud Service agora estão prontos para acessar o Author e se familiarizar com a criação de páginas no AEM as a Cloud Service. Você deve seguir o caminho, revisando o documento Caminho de aprendizagem para usuários AEM.
+Os usuários designados ao AEM como perfis de produto do Cloud Service agora estão prontos para acessar o Author e se familiarizar com a criação de páginas no AEM as a Cloud Service. Você deve seguir o caminho, revisando o documento Caminho de aprendizagem para usuários de AEM ou Caminho de aprendizado para desenvolvedores e Gerentes de implantação.
 
 ## Recursos adicionais {#additional-resources}
 
