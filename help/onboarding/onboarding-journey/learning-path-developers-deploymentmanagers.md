@@ -4,9 +4,9 @@ description: Siga esta página para saber mais sobre as próximas etapas após o
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '456'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 3%
 
 Este documento ajuda seus desenvolvedores e gerentes de implantação a obterem acesso ao Cloud Manager e a se familiarizarem com a preparação para o caminho de aprendizagem.
 
-Depois de ler, você deve:
+Após ler este documento, você deve:
 
-* Como desenvolvedor, você deve ser capaz de entender como acessar e gerenciar o Git do Cloud Manager
-* Como um Gerenciador de implantação, você deve ser capaz de entender como configurar pipelines e implantar seu código no Cloud Manager
+* Como desenvolvedor, você pode entender como acessar e gerenciar o Git do Cloud Manager
+* Como um Gerenciador de implantação, você pode entender como configurar pipelines e implantar seu código no Cloud Manager
 
 ## Introdução {#introduction}
 
@@ -39,11 +39,13 @@ Você sabe como navegar e fazer logon no Cloud Manager
 
 ## Gerenciar Git {#manage-git}
 
-Para saber mais sobre este tópico, clique aqui.
+Você pode acessar e gerenciar seu Repositório Git usando o Gerenciamento de conta Git de Autoatendimento da interface do usuário do Cloud Manager.
+Para saber mais sobre este tópico, consulte [Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
 ## Configurar pipeline {#setup-pipeline}
 
-Para saber mais sobre este tópico, clique aqui
+Você pode configurar o Pipeline de produção ou não-produção na interface do usuário do Cloud Manager.
+Para saber mais sobre este tópico, consulte [Configuração do pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## O que vem a seguir {#whats-next}
 
