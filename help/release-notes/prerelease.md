@@ -1,15 +1,15 @@
 ---
 title: '[!DNL Adobe Experience Manager] como um Canal de pré-lançamento do Cloud Service'
 description: '[!DNL Adobe Experience Manager] como um Canal de pré-lançamento do Cloud Service'
-source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
+exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] como um Canal de pré-lançamento do Cloud Service  {#prerelease-channel}
+# [!DNL Adobe Experience Manager] como um Canal de pré-lançamento do Cloud Service {#prerelease-channel}
 
 
 ## Introdução {#introduction}
@@ -27,7 +27,7 @@ Os recursos de pré-lançamento podem ser vistos de diferentes maneiras:
 * Ambientes em nuvem (ambientes padrão de desenvolvimento de programa ou qualquer tipo de ambiente de programa sandbox)
 * SDK local
 
-### Ambientes em nuvem {#cloud-environments}
+### Ambientes na nuvem {#cloud-environments}
 
 Para ver novos recursos no console Sites em ambientes de desenvolvimento de nuvem, bem como o resultado de qualquer personalização de projeto:
 
@@ -54,7 +54,7 @@ A variável pode ser excluída ou retornada a um valor diferente se você quiser
 
 Você pode ver novos recursos no console Sites no SDK do Quickstart local e código em relação às novas APIs no pré-lançamento, fazendo com que seu projeto maven faça referência ao pré-lançamento `API Jar` localizado no Maven Central. Você também pode ver esses recursos de pré-lançamento em seu computador local, iniciando o SDK Quickstart normal no modo de pré-lançamento:
 
-* Baixe o SDK no portal de distribuição de software e instale conforme descrito em [Acessando o AEM como um SDK do Cloud Service](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.)
+* Baixe o SDK no portal de distribuição de software e instale conforme descrito em [Acessando o AEM como um Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 * Ao iniciar o Início rápido do SDK, inclua o argumento `-r prerelease`.
 * O valor é *sticky*, portanto, só pode ser selecionado na primeira inicialização. Reinstale o SDK para alterar a opção de linha de comando.
 
