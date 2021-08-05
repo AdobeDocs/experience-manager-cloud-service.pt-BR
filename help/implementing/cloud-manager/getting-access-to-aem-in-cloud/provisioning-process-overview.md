@@ -50,6 +50,7 @@ Para obter mais informações, visite [Integração ao Experience Manager como C
 ### 2. Organizações integradas da Adobe Admin Console:
 
 >   ![processador overview2.jpg](./assets/processOverview2.jpg)
+
 * Administrador do sistema:
    * Provisionar programas e ambientes AEM.
    * Navegue até o Admin Console para tarefas administrativas.
