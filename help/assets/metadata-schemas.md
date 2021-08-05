@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadados
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: a7da1deb71a7c6ebf9c73b8d33877fb56b73be47
+source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
 workflow-type: tm+mt
-source-wordcount: '2594'
+source-wordcount: '2593'
 ht-degree: 8%
 
 ---
@@ -111,7 +111,7 @@ Para editar as propriedades de um componente de metadados no formulário, clique
 
 **Mapear para propriedade**: Essa propriedade especifica o caminho relativo ou o nome do nó do ativo, onde ele é salvo no repositório CRX. Ela começa com `./` para indicar que o caminho está no nó do ativo.
 
-Veja a seguir os exemplos de valores válidos para uma propriedade:
+A seguir estão exemplos de valores válidos para uma propriedade:
 
 * `./jcr:content/metadata/dc:title`: armazena o valor no nó de metadados do ativo como a propriedade `dc:title`.
 
