@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadados
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 8%
+source-wordcount: '1061'
+ht-degree: 7%
 
 ---
 
@@ -101,13 +101,13 @@ A guia **[!UICONTROL Criar formulário]** lista os itens de formulário que voc�
 
 ### Edição de itens de formulário {#editing-form-items}
 
-Para editar as propriedades dos itens de formulário, toque/clique no componente e edite todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Settings]**.
+Para editar as propriedades dos itens de formulário, toque/clique no componente e edite todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Settings]**. É recomendável mapear apenas um campo para uma determinada propriedade no esquema de metadados. Caso contrário, o campo adicionado mais recente mapeado para a propriedade será escolhido pelo sistema.
 
 **[!UICONTROL Rótulo]** do campo: O nome da propriedade de metadados exibida na página de propriedades da pasta.
 
 **[!UICONTROL Mapear para propriedade]**: Essa propriedade especifica o caminho relativo do nó da pasta no repositório CRX, onde é salva. Começa com &quot;**./**&quot;, que indica que o caminho está sob o nó da pasta.
 
-A seguir estão os valores válidos para essa propriedade:
+A seguir estão exemplos de valores válidos para uma propriedade:
 
 * `./jcr:content/metadata/dc:title`: Armazena o valor no nó de metadados da pasta como a propriedade  `dc:title`.
 
