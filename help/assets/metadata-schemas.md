@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadados
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
+source-git-commit: a7da1deb71a7c6ebf9c73b8d33877fb56b73be47
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 9%
+source-wordcount: '2594'
+ht-degree: 8%
 
 ---
 
@@ -105,13 +105,13 @@ A guia **[!UICONTROL Criar formulário]** lista os itens de formulário que voc�
 
 #### Editar o componente de metadados {#edit-the-metadata-component}
 
-Para editar as propriedades de um componente de metadados no formulário, clique no componente para editar todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Settings]**.
+Para editar as propriedades de um componente de metadados no formulário, clique no componente para editar todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Settings]**. É recomendável mapear apenas um campo para uma determinada propriedade no esquema de metadados. Caso contrário, o campo adicionado mais recente mapeado para a propriedade será escolhido pelo sistema.
 
 **Rótulo** do campo: O nome da propriedade de metadados exibida na página de propriedades do ativo.
 
 **Mapear para propriedade**: Essa propriedade especifica o caminho relativo ou o nome do nó do ativo, onde ele é salvo no repositório CRX. Ela começa com `./` para indicar que o caminho está no nó do ativo.
 
-A seguir estão os valores válidos para essa propriedade:
+Veja a seguir os exemplos de valores válidos para uma propriedade:
 
 * `./jcr:content/metadata/dc:title`: armazena o valor no nó de metadados do ativo como a propriedade `dc:title`.
 
