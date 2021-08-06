@@ -2,9 +2,9 @@
 title: Teste funcional - Cloud Services
 description: Teste funcional - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
+source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '900'
 ht-degree: 2%
 
 ---
@@ -62,9 +62,21 @@ Para que os testes da interface do usuário sejam criados e executados, os clien
 
 *Nome do arquivo*: `testing.properties`
 
-*Conteúdo*:  `one line: ui-tests.version=1`
+*Conteúdo*:  `ui-tests.version=1`
 
 Se isso não estiver no arquivo `tar.gz` criado, a interface do usuário testa a criação e as execuções serão ignoradas
+
+Para adicionar o arquivo `testing.properties` no artefato criado, adicione uma instrução `include` no arquivo `assembly-ui-test-docker-context.xml` (no submódulo de testes da interface do usuário):
+
+    &quot;
+    [..]
+    &lt;includes>
+    &lt;include>&lt;/include>
+    &lt;include>Dockerfilewait-for-grid.&lt;/include>
+    &lt;include>shtesting.properties&lt;/include> &lt;!- módulo de teste de aceitação no Cloud Manager —>
+    &lt;/include>
+    [...]
+    &quot;
 
 >[!NOTE]
 >Os pipelines de produção criados antes de 10 de fevereiro de 2021 precisarão ser atualizados para usar os testes da interface do usuário, conforme descrito nesta seção. Essencialmente, isso significa que o Usuário deve editar o pipeline de Produção e clicar em **Salvar** na interface do usuário, mesmo que nenhuma alteração tenha sido feita.
