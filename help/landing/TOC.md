@@ -3,10 +3,10 @@ sub-product: Ajuda do Adobe Experience Manager as a Cloud Service
 user-guide-title: Ajuda do Adobe Experience Manager as a Cloud Service
 feature: Informações da versão
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 58%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,3 +27,4 @@ ht-degree: 58%
 + [Implementação de aplicativos do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html)
 + [Implementação de conectores do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/connectors/home.html)
 + [Operações e manutenção do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/home.html)
+
