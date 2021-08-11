@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Acessibilidade,Gerenciamento de ativos
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 2%
@@ -60,7 +60,7 @@ Os usuários portadores de deficiências dependem frequentemente de hardware e s
 
 Em [!DNL Experience Manager], os recursos de acessibilidade atendem a dois requisitos principais de [!DNL Experience Manager] usuários e seus clientes.
 
-* Para designers e criadores de conteúdo, há recursos para criar e publicar conteúdo acessível que é usado por sua vez pelos clientes e visitantes do site. O conteúdo pode ser usado por indivíduos com deficiência com a ajuda de tecnologias assistivas. Para obter detalhes, consulte [diretrizes de acessibilidade da Web](/help/onboarding/accessibility/web-accessibility.md).
+* Para designers e criadores de conteúdo, há recursos para criar e publicar conteúdo acessível que é usado por sua vez pelos clientes e visitantes do site. O conteúdo pode ser usado por indivíduos com deficiência com a ajuda de tecnologias assistivas. Para obter detalhes, consulte [diretrizes de acessibilidade da Web](/help/compliance/accessibility/quick-guide-wcag.md).
 * [!DNL Experience Manager] O também permite que os usuários e administradores com deficiência acessem a interface do usuário e os controles para criar e gerenciar conteúdo. O indivíduo com deficiência pode usar tecnologias de assistência para navegar, usar e gerenciar o recurso [!DNL Assets].
 
 Os recursos principais em [!DNL Assets] são mais acessíveis do que antes e são atualizados regularmente para melhorar a conformidade com os padrões globais. As operações CRUD em [!DNL Assets] têm algum grau de acessibilidade incorporado nelas. Fluxos de trabalho do DAM como adicionar, gerenciar, pesquisar e distribuir ativos são acessíveis com a ajuda de atalhos do teclado, texto do leitor de tela, contraste de cores e assim por diante.
@@ -226,6 +226,6 @@ Para fornecer feedback, fazer perguntas e solicitar aprimoramentos de produtos r
 >[!MORELIKETHIS]
 >
 >* [Notas de versão dos aprimoramentos feitos em cada versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
->* [[!DNL Adobe Experience Manager] orientação sobre acessibilidade](/help/onboarding/accessibility/web-accessibility.md).
+>* [[!DNL Adobe Experience Manager] orientação sobre acessibilidade](/help/compliance/accessibility/web-accessibility.md).
 >* [Relatórios de conformidade (ACR) e lista de VPAT para soluções](https://www.adobe.com/accessibility/compliance.html) do Adobe.
 
