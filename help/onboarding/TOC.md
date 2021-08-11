@@ -5,10 +5,10 @@ breadcrumb-title: Guia de integração
 user-guide-description: Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 feature: Implantação
 role: Architect, Developer
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 62%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,13 +30,6 @@ ht-degree: 62%
    + [Tarefas do administrador do sistema](what-is-required/add-users-assign-cm-roles.md)
    + [Navegar para o Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
    + [Conceder ao usuário acesso a uma instância de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
-+ Disponibilidade para proteção e privacidade de dados {#data-privacy}
-   + [Regulamentos de disponibilidade para proteção e privacidade de dados do AEM](data-privacy-and-protection-readiness/aem-readiness.md)
-   + [Regulamentos de disponibilidade da base para proteção e privacidade de dados do AEM](data-privacy-and-protection-readiness/foundation-readiness.md)
-   + [Regulamentos de disponibilidade dos sites para proteção e privacidade de dados do AEM Sites](data-privacy-and-protection-readiness/sites-readiness.md)
-+ Acessibilidade {#accessibility}
-   + [AEM as a Cloud Service e diretrizes de acessibilidade da Web](accessibility/web-accessibility.md)
-   + [Um guia rápido para a WCAG 2.1](accessibility/quick-guide-wcag.md)
 + Metodologia de migração {#migration-methodology}
    + [Migração para o Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Práticas recomendadas     {#best-practices}
