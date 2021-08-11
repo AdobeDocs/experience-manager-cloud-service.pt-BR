@@ -4,10 +4,10 @@ description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] r
 feature: Gerenciamento de ativos
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 32%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ Os seguintes recursos de autoajuda estão disponíveis para [!DNL Experience Man
 * [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
 * [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR)
-* [Disponibilidade do GDPR](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais  [!DNL Cloud Service] do Adobe Experience Manager as](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [[!DNL Experience Manager] Fórum da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
