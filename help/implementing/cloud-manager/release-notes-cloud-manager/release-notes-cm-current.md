@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.
 description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.8.0
 feature: Informações da versão
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 05cd993df7293691a0f8b91e9bde278ec7b7af69
+source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 5%
+source-wordcount: '302'
+ht-degree: 4%
 
 ---
 
@@ -25,6 +25,7 @@ A próxima versão está planejada para 09 de setembro de 2021.
 ### Novidades {#what-is-new}
 
 * Os clientes do Cloud Service agora podem visualizar os relatórios do Contrato de nível de serviço (SLA) no Cloud Manager. Esta informação será disponibilizada progressivamente nos próximos meses.
+Consulte [Relatórios do SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) para saber mais.
 
 * O tipo e a gravidade das regras de qualidade IndexType e `IndexDamAssetLucene` foram alterados. Agora, ambos são Bugs do Blocker *serverity*.
 
