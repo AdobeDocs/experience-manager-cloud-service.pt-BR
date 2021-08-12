@@ -2,7 +2,7 @@
 title: 'Criação de um programa de sandbox '
 description: Criação de um programa de sandbox
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Siga as etapas abaixo para criar um programa sandbox:
 
    >[!NOTE]
    >
-   >Para saber mais sobre como acessar e gerenciar o Repositório Git usando o Gerenciamento de Conta Git de Autoatendimento da interface do usuário do Cloud Manager, consulte [Acessando o Git](/help/implementing/cloud-manager/accessing-git.md).
+   >Para saber mais sobre como acessar e gerenciar o Repositório Git usando o Gerenciamento de Conta Git de Autoatendimento da interface do usuário do Cloud Manager, consulte [Acessando o Git](/help/implementing/cloud-manager/accessing-repos.md).
 
 
 1. Depois que o ambiente de desenvolvimento é criado, o usuário pode **Acessar AEM** link, conforme mostrado na figura abaixo:
