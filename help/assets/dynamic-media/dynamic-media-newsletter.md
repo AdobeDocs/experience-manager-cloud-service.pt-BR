@@ -4,9 +4,9 @@ description: 'O informativo do Dynamic Media por Experience League é um informa
 feature: Gerenciamento de ativos
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
+source-git-commit: 07f7ec3fae8af6739e49d5bce55a980aca391e06
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Neste boletim informativo arquivado de balcão único, você pode encontrar recu
    * Assista aos webinários on-demand do Skill Builder para Dynamic Media Classic.
    * Exiba as sessões do Dynamic Media do Online Adobe Summit 2020.
    * Saiba mais sobre as auditorias gratuitas do Dynamic Media Classic.
-   * Conheça John Monroe, Gerente Sênior de Programa para Serviços de Sucesso do Cliente.
+   * Conheça `John Monroe`, Gerente de Programa Sênior para Serviços de Sucesso do Cliente.
 
 * **[Fevereiro de 2020, Edição 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -72,7 +72,7 @@ Neste boletim informativo arquivado de balcão único, você pode encontrar recu
    * Uma auditoria gratuita para ajudá-lo a obter mais valor do Dynamic Media Classic.
    * Uma temporada de compras recorde rich media para clientes de mídia Adobe.
    * Seu guia para selecionar um DAM (Digital Asset Manager) que atende às suas necessidades atuais e o prepara para as novidades na mídia avançada amanhã.
-   * Conheça Mark Dean, especialista em mídia digital.
+   * Conheça `Mark Dean`, especialista em mídia digital.
 
 * **[Novembro de 2019, Edição 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
@@ -103,7 +103,7 @@ Neste boletim informativo arquivado de balcão único, você pode encontrar recu
    * Descubra como a equipe do Dynamic Media pode ajudá-lo a se preparar para um dia com tráfego de visitantes superior ao normal.
    * Uma segunda chance de capturar dois webinars recentes do Skill Builder.
    * Assista ao webinário sob demanda sobre a proteção de seus ativos digitais contra pirataria.
-   * Conheça Bridget Roman, Gerente de marketing de produtos sênior para ativos Experience Manager.
+   * Conheça `Bridget Roman`, Gerente de marketing de produto sênior para ativos Experience Manager.
    * Acesse o Dynamic Media e o Dynamic Media Classic no Experience League.
 
 * **[Agosto de 2019, Edição 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
