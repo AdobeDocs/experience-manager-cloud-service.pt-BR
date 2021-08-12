@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,API HTTP de ativos
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1438'
 ht-degree: 2%
 
 ---
@@ -185,7 +185,7 @@ Para configuração de fluxo de trabalho de pós-processamento, use os fluxos de
 
 ## Suporte a etapas do fluxo de trabalho no fluxo de trabalho de pós-processamento {#post-processing-workflows-steps}
 
-Se você atualizar de uma versão anterior de [!DNL Experience Manager], poderá usar os microsserviços de ativos para processar ativos. Os microsserviços de ativos nativos em nuvem são mais simples de configurar e usar. Algumas etapas do fluxo de trabalho usadas no fluxo de trabalho [!UICONTROL Ativo de atualização DAM] na versão anterior não são suportadas. Para obter mais informações sobre classes compatíveis, consulte a [Referência da API Java](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
+Se você atualizar de uma versão anterior de [!DNL Experience Manager], poderá usar os microsserviços de ativos para processar ativos. Os microsserviços de ativos nativos em nuvem são mais simples de configurar e usar. Algumas etapas do fluxo de trabalho usadas no fluxo de trabalho [!UICONTROL Ativo de atualização DAM] na versão anterior não são suportadas. Para obter mais informações sobre classes compatíveis, consulte a [Referência da API Java ou Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
 
 Os seguintes modelos de fluxo de trabalho técnicos são substituídos por microsserviços de ativos ou o suporte não está disponível:
 
