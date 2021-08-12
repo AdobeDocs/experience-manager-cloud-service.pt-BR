@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
+source-git-commit: 3f16144a95bdb3da08c15f15613031cdd069a977
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1406'
 ht-degree: 2%
 
 ---
@@ -182,6 +182,21 @@ A próxima versão está planejada para 12 de agosto de 2021.
 ### Problemas conhecidos {#known-issues-cm-july}
 
 Os clientes que alternam para usar os JDKs do Azul devem estar cientes de que nem todos os aplicativos existentes serão compilados sem erro no JDK do Azul. É altamente recomendável testar localmente antes de trocar.
+
+## Ferramenta Transferência de conteúdo {#content-transfer-tool}
+
+### Data de lançamento {#release-date-ctt-latest}
+
+A Data de lançamento da ferramenta Transferência de conteúdo v1.5.6 é 11 de agosto de 2021.
+
+### Correções de erros {#bug-fixes-ctt}
+
+* Em alguns casos, nem todos os usuários foram migrados para a instância de destino. Para obter essa correção, o CTT v1.5.6 é necessário juntamente com o aem-ethos-tools 1.2.354 ou versão posterior no target AEM como uma instância do Cloud Service.
+
+* O botão **Parar assimilação** estava sendo desativado durante a assimilação na instância de publicação. Isso não é necessário porque não há uma etapa de restauração de mongo durante a assimilação de Publicação.
+
+* A CTT não limpou o diretório `/tmp` após uma extração bem-sucedida. Isso às vezes levava a problemas de espaço em disco.
+
 
 ## Cloud Acceleration Manager {#cam}
 
