@@ -2,14 +2,14 @@
 title: Conformidade
 description: Conformidade
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: b994725c4af3c108aa7c957c8669181379b6728c
+source-git-commit: 6569b98bafa98b3f85c55d95f5e6db0ec1de77f8
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 83%
+source-wordcount: '407'
+ht-degree: 81%
 
 ---
 
-# Conformidade {#aem-compliance}
+# Conformidade em AEM como Cloud Service {#aem-compliance}
 
 Esta página lista os recursos de autoajuda que fornecem informações sobre conformidade no Experience Manager as a Cloud Service.
 
