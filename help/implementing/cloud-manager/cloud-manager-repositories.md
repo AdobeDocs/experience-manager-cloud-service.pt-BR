@@ -2,9 +2,9 @@
 title: Repositórios do Cloud Manager
 description: Repositórios do Cloud Manager
 exl-id: Cloud Manager Repositories
-source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
+source-git-commit: d2a8329fff12be6581f2ee2caf7f9764c765d0e6
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -100,5 +100,5 @@ Ao usar submódulos git, lembre-se dos seguintes itens:
 
 * O URL do Git deve estar exatamente na sintaxe descrita acima. Por motivos de segurança, não incorpore credenciais nesses URLs.
 * Somente os submódulos na raiz da ramificação são suportados.
-* As referências de submódulos Git são armazenadas para confirmações Git específicas. Como resultado, quando alterações no repositório do submódulo são feitas, a confirmação referenciada precisa ser atualizada, por exemplo, usando a atualização do submódulo git `--remote` .
+* As referências de submódulos Git são armazenadas para confirmações Git específicas. Como resultado, quando alterações no repositório do submódulo são feitas, a confirmação referenciada precisa ser atualizada, por exemplo, usando `git submodule update --remote` .
 
