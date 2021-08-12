@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,35 @@ Siga estas etapas para configurar o comportamento e as preferências do pipeline
 
    ![](assets/configure-pipeline5.png)
 
+### Edição de um pipeline de produção {#editing-prod-pipeline}
+
+É possível editar as configurações de pipeline na página **Visão geral do programa**.
+
+Siga as etapas abaixo para editar o pipeline configurado:
+
+1. Navegue até o cartão **Pipelines** da página **Visão geral do programa**.
+
+1. Clique em **Editar** no cartão **Pipelines**.
+
+   ![](assets/configure-pipeline/edit-pipeline-1.png)
+
+1. A guia **Source Code** permite atualizar o repositório. Clique em **Acessar informações do repositório** para atualizar o repositório.
+
+   >[!NOTE]
+   >Consulte [Adicionar e gerenciar repositórios](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) para saber como adicionar e gerenciar repositórios no Cloud Manager.
+
+   ![](assets/configure-pipeline/edit-pipeline-2.png)
+
+
+1. A guia **Ambientes** permite atualizar as opções de estágio e produção.
+
+   ![](assets/configure-pipeline/edit-pipeline-3.png)
+
+1. A opção **Auditoria de experiência** permite atualizar ou adicionar novas páginas.
+
+   ![](assets/configure-pipeline/edit-pipeline-4.png)
+
+1. Clique em **Salvar** depois de concluir a edição do pipeline.
 
 ## Pipelines somente para não-produção e qualidade de código {#non-production-pipelines}
 
@@ -133,6 +162,22 @@ Na tela inicial, esses pipelines são listados em um novo cartão:
    * **Build**  - navega até a página de execução, da qual o pipeline pode ser executado
    * **Acessar informações do acordo de recompra**  - permite que o usuário obtenha as informações necessárias para acessar o repositório Git do Cloud Manager
    * **Saiba mais**  - navegue para entender o recurso de documentação do pipeline de CI/CD.
+
+### Edição de um pipeline de não produção {#editing-nonprod-pipeline}
+
+É possível editar as configurações de pipeline na página **Visão geral do programa**.
+
+Siga as etapas abaixo para editar o pipeline de não produção configurado:
+
+1. Navegue até o cartão **Pipelines** da página **Visão geral do programa**.
+
+1. Selecione a guia **Non-Production** e clique em **Edit** depois de selecionar os pipelines desejados.
+
+   ![](assets/configure-pipeline/non-prod-edit-1.png)
+
+1. Selecione o repositório desejado e clique em **Salvar**.
+
+   ![](assets/configure-pipeline/non-prod-edit2.png)
 
 ## Próximas etapas {#the-next-steps}
 
