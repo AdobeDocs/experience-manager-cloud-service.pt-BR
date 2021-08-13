@@ -3,7 +3,7 @@ title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.
 description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.8.0
 feature: Informações da versão
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
+source-git-commit: d04194bd83ced844dffc94da35c996d363c5ba30
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
@@ -39,7 +39,7 @@ Consulte [Relatórios do SLA](https://experienceleague.adobe.com/docs/experience
 
 * Agora há uma API disponível para invalidar o cache de dependência Maven por pipeline.
 
-* A versão do AEM Project Archetype usada pelo Cloud Manager foi atualizada para a versão 28.
+* A versão do AEM Project Archetype usada pelo Cloud Manager foi atualizada para a versão 29.
 
 ### Correções de erros {#bug-fixes}
 
