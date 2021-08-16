@@ -2,9 +2,9 @@
 title: Repositórios do Cloud Manager
 description: Repositórios do Cloud Manager
 exl-id: Cloud Manager Repositories
-source-git-commit: d2a8329fff12be6581f2ee2caf7f9764c765d0e6
+source-git-commit: cebc603aab9c558239588f574f52568d05081b34
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Repositórios do Cloud Manager {#cloud-manager-repos}
 
 Os repositórios criados e disponíveis no Cloud Manager podem ser visualizados e gerenciados por meio da página Repositórios .
+
+>[!NOTE]
+>Existe um limite de 300 repositórios em todos os programas em qualquer empresa ou [Adobe System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)).
 
 ## Adicionar e gerenciar repositórios {#add-manage-repos}
 
@@ -32,6 +35,9 @@ Siga as etapas abaixo para visualizar e gerenciar repositórios no Cloud Manager
    ![](assets/repos/repo-1.png)
 
 1. Selecione **Salvar**. O acordo de recompra recém-criado será exibido na tabela, conforme mostrado abaixo.
+
+   >[!NOTE]
+   >Há um único repositório *primário* ou uma ramificação para qualquer pipeline específico. Com [Suporte ao Submódulo Git](#git-submodule-support), no entanto, muitas ramificações secundárias podem ser incluídas no momento da criação.
 
    ![](assets/repos/create-repo3.png)
 
