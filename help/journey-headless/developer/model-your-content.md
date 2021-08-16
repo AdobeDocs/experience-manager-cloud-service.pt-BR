@@ -1,21 +1,21 @@
 ---
 title: Como modelar seu conteúdo
 description: Nesta parte da Jornada do desenvolvedor sem cabeçalho AEM, saiba como modelar o conteúdo para AEM entrega sem cabeçalho usando a Modelagem de conteúdo com modelos de fragmentos de conteúdo e fragmentos de conteúdo.
-source-git-commit: dc1ed5c55cc17bcba97972bc79d04aa3530664e7
+exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
+source-git-commit: 8107e6fdf4a1e4b49d0ab1ac213cfcf286c5dc86
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 2%
 
 ---
 
-
 # Como modelar seu conteúdo {#model-your-content}
 
 Nesta parte da [AEM Jornada do desenvolvedor headless](overview.md), você pode aprender a modelar sua estrutura de conteúdo. Em seguida, perceba essa estrutura do Adobe Experience Manager (AEM) usando Modelos de fragmentos de conteúdo e Fragmentos de conteúdo, para reutilização em canais.
 
-## A história até agora {#story-so-far}
+## A História Até Agora {#story-so-far}
 
-No início, [Saiba mais sobre o CMS Headless Development](learn-about.md) cobriu a entrega de conteúdo sem cabeçalho e por que ele deve ser usado. Em seguida, [Introdução ao AEM Headless como um Cloud Service](getting-started.md) descrito AEM Headless no contexto de seu próprio projeto
+No início, [Saiba mais sobre o CMS Headless Development](learn-about.md) cobriu a entrega de conteúdo sem cabeçalho e por que ele deve ser usado. Em seguida, [Introdução ao AEM Headless como um Cloud Service](getting-started.md) descrito AEM Headless no contexto de seu próprio projeto.
 
 No documento anterior da jornada sem cabeçalho AEM, [Caminho para sua primeira experiência usando AEM headless](path-to-first-experience.md), você aprendeu as etapas necessárias para implementar seu primeiro projeto. Depois de lê-lo, você deve:
 
@@ -101,7 +101,7 @@ Depois que isso estiver estável, você poderá traduzir os modelos em um **Esqu
 
 Por exemplo, você precisa de entidades separadas para `Head Teacher` e `Teacher`, ou simplesmente um atributo adicional no modelo `Teacher`?
 
-### Garantir a integridade dos dados {#data-integrity}
+### Garantia da integridade dos dados {#data-integrity}
 
 A integridade dos dados é necessária para garantir a precisão e a consistência do conteúdo durante todo o ciclo de vida. Isso inclui garantir que os autores de conteúdo possam entender facilmente o que armazenar, para que os itens a seguir sejam vitais:
 
@@ -204,7 +204,7 @@ O tipo de dados pode ser configurado para permitir que os autores de fragmento:
    * Edite o fragmento referenciado diretamente.
    * Crie um novo fragmento de conteúdo, com base no modelo apropriado
 
-### Criação de modelos de fragmento de conteúdo {#creating-content-fragment-models}
+### Criação de modelos de fragmentos do conteúdo {#creating-content-fragment-models}
 
 No início, é necessário ativar os Modelos de fragmento de conteúdo para o site, isso é feito no Navegador de configuração; em Ferramentas -> Geral -> Navegador de configuração. Você pode optar por configurar a entrada global ou criar uma nova configuração. Por exemplo:
 
@@ -226,13 +226,13 @@ Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutur
 
 Fragmentos de conteúdo são sempre baseados em um Modelo de fragmento de conteúdo. O modelo fornece a estrutura, o fragmento retém o conteúdo.
 
-### Selecionar o modelo adequado {#select-model}
+### Seleção do modelo apropriado {#select-model}
 
 A primeira etapa para realmente criar o conteúdo é criar um Fragmento do conteúdo. Isso é feito usando Criar -> Fragmento de conteúdo na pasta necessária em Ativos -> Arquivos. O assistente o guiará pelas etapas.
 
 Um Fragmento de conteúdo é baseado em um Modelo de fragmento de conteúdo específico, que pode ser selecionado como a primeira etapa do processo de criação.
 
-### Criar e editar conteúdo estruturado {#create-edit-structured-content}
+### Criação e edição de conteúdo estruturado {#create-edit-structured-content}
 
 Após a criação do fragmento, é possível abri-lo no Editor de fragmento do conteúdo. Aqui você pode:
 
