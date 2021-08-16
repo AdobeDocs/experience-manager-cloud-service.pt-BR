@@ -5,7 +5,7 @@ breadcrumb-title: jornada do desenvolvedor sem periféricos do AEM
 user-guide-description: Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu projeto.
 feature: Ferramentas do desenvolvedor
 role: Developer, Architect
-source-git-commit: 15ecba196c76acc0f11869ca8f91e9e268ea5601
+source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -38,9 +38,9 @@ ht-degree: 0%
    + [Saiba mais sobre a modelagem de conteúdo para headless com AEM](architect/basics.md)
    + [Saiba mais sobre como criar modelos de fragmento de conteúdo no AEM](architect/model-structure.md)
 + jornada de tradução sem cabeçalho AEM {#translation}
-   + [Entender a localização sem cabeçalho no AEM](translation/overview.md)
-   + [Introdução à localização sem periféricos AEM](translation/getting-started.md)
-   + [Saiba mais sobre o conteúdo sem periféricos e como localizar no AEM](translation/learn-about.md)
+   + [Entender a tradução sem periféricos no AEM](translation/overview.md)
+   + [Introdução a AEM tradução headless](translation/getting-started.md)
+   + [Saiba mais sobre o conteúdo sem periféricos e como traduzir em AEM](translation/learn-about.md)
    + [Configurar conector de tradução](translation/configure-connector.md)
    + [Configurar regras de tradução](translation/translation-rules.md)
    + [Traduzir conteúdo](translation/translate-content.md)
