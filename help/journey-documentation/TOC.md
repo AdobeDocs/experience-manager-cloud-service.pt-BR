@@ -5,10 +5,10 @@ breadcrumb-title: jornadas de documentação de AEM
 user-guide-description: Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu projeto.
 feature: Ferramentas do desenvolvedor
 role: Developer, Architect
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 637346d8daabadae996459d71e6f8557cae866dc
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 1%
+source-wordcount: '417'
+ht-degree: 0%
 
 ---
 
@@ -40,3 +40,15 @@ Please note that all links to other guides need to be absolute references with l
    + [Configurar regras de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translation-rules.html)
    + [Traduzir conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translate-content.html)
    + [Publicar conteúdo traduzido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/publish-content.html)
++ jornada do autor de conteúdo sem cabeçalho AEM {#content-author}
+   + [jornada do autor de conteúdo sem cabeçalho do AEM - Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.md)
+   + [Criação para headless com AEM - uma introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.md)
+   + [Noções básicas de criação para headless com AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.md)
+   + [Saiba mais sobre como usar referências em Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.md)
+   + [Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.md)
++ jornada do AEM Headless Content Architect {#content-architect}
+   + [Visão geral da Jornada do AEM Headless Content Architect](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.md)
+   + [Modelagem de conteúdo para headless com AEM - uma introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.md)
+   + [Saiba mais sobre a modelagem de conteúdo para headless com AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.md)
+   + [Saiba mais sobre como criar modelos de fragmento de conteúdo no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.md)
+
