@@ -1,9 +1,10 @@
 ---
 title: jornada do AEM Headless Content Architect
 description: Uma introdução aos recursos avançados e flexíveis sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.
+index: false
 hide: true
 hidefromtoc: true
-source-git-commit: d0e870f5e49580bb95d347092a2ece4c2497a1c9
+source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 0%
