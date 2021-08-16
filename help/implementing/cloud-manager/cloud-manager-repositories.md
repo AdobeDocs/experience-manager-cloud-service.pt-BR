@@ -2,9 +2,9 @@
 title: Repositórios do Cloud Manager
 description: Repositórios do Cloud Manager
 exl-id: Cloud Manager Repositories
-source-git-commit: 1f2109731b8efd1c05941b7a7db23e6497257cbf
+source-git-commit: 8a53641745ab2e0cfabdf0b6e13b163aaf6a68bd
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Os repositórios criados e disponíveis no Cloud Manager podem ser visualizados e gerenciados por meio da página Repositórios .
 
 >[!NOTE]
->Existe um limite de 300 repositórios em todos os programas em qualquer empresa ou em [Adobe System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html) Identity Management System.
+>Existe um limite de 300 repositórios em todos os programas em uma determinada empresa (ou IMS Org).
 
 ## Adicionar e gerenciar repositórios {#add-manage-repos}
 
@@ -34,10 +34,10 @@ Siga as etapas abaixo para visualizar e gerenciar repositórios no Cloud Manager
 
    ![](assets/repos/repo-1.png)
 
-1. Selecione **Salvar**. O acordo de recompra recém-criado será exibido na tabela, conforme mostrado abaixo. Os repositórios criados no Cloud Manager também estarão disponíveis para você selecionar durante as etapas de adição ou edição do pipeline. Consulte [Configurar o pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) para saber mais.
+1. Selecione **Salvar**. O acordo de recompra recém-criado será exibido na tabela, conforme mostrado abaixo.
 
    >[!NOTE]
-   >Há um único repositório *primário* ou uma ramificação para qualquer pipeline específico. Com [Suporte ao Submódulo Git](#git-submodule-support), no entanto, muitas ramificações secundárias podem ser incluídas no momento da criação.
+   >Os repositórios criados no Cloud Manager também estarão disponíveis para você selecionar durante as etapas de adição ou edição do pipeline. Consulte [Configurar o pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) para saber mais. Há um único repositório *primário* ou uma ramificação para qualquer pipeline específico. Com [Suporte ao Submódulo Git](#git-submodule-support), no entanto, muitas ramificações secundárias podem ser incluídas no momento da criação.
 
    ![](assets/repos/create-repo3.png)
 
