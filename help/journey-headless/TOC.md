@@ -5,10 +5,10 @@ breadcrumb-title: jornada do desenvolvedor sem periféricos do AEM
 user-guide-description: Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu projeto.
 feature: Ferramentas do desenvolvedor
 role: Developer, Architect
-source-git-commit: bcfe00727e443e2598beb4dbdeee90644447211c
+source-git-commit: 15ecba196c76acc0f11869ca8f91e9e268ea5601
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 1%
+source-wordcount: '234'
+ht-degree: 0%
 
 ---
 
@@ -32,6 +32,11 @@ ht-degree: 1%
    + [Noções básicas de criação para headless com AEM](author/basics.md)
    + [Saiba mais sobre como usar referências em Fragmentos de conteúdo](author/references.md)
    + [Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo](author/metadata-tagging.md)
++ jornada do AEM Headless Content Architect {#content-architect}
+   + [Visão geral da Jornada do AEM Headless Content Architect](architect/overview.md)
+   + [Modelagem de conteúdo para headless com AEM - uma introdução](architect/introduction.md)
+   + [Saiba mais sobre a modelagem de conteúdo para headless com AEM](architect/basics.md)
+   + [Saiba mais sobre como criar modelos de fragmento de conteúdo no AEM](architect/model-structure.md)
 + jornada de tradução sem cabeçalho AEM {#translation}
    + [Entender a localização sem cabeçalho no AEM](translation/overview.md)
    + [Introdução à localização sem periféricos AEM](translation/getting-started.md)
