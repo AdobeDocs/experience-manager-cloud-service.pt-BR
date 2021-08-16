@@ -1,11 +1,11 @@
 ---
-sub-product: jornada do desenvolvedor sem periféricos do AEM
-user-guide-title: jornada do desenvolvedor sem periféricos do AEM
-breadcrumb-title: jornada do desenvolvedor sem periféricos do AEM
+sub-product: AEM Jornadas headless
+user-guide-title: AEM Jornadas headless
+breadcrumb-title: AEM Jornadas headless
 user-guide-description: Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu projeto.
 feature: Ferramentas do desenvolvedor
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -13,8 +13,9 @@ ht-degree: 0%
 ---
 
 
-# AEM Jornada sem cabeça {#headless-journey}
+# AEM Jornadas headless {#headless-journey}
 
++ [AEM Jornadas headless](/help/journey-headless/home.md)
 + jornada do desenvolvedor sem cabeçalho AEM {#developer}
    + [Compreender o headless no AEM](developer/overview.md)
    + [Saiba mais sobre o desenvolvimento sem cabeçalho CMS](developer/learn-about.md)
