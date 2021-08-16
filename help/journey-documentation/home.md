@@ -1,9 +1,9 @@
 ---
 title: jornadas de documentação de AEM
 description: As Jornadas de documentação fornecem uma estrutura narrativa dentro AEM documentação, unindo recursos complexos e díspares para resolver uma meta de negócios de uma maneira prática recomendada. Projetadas tendo em mente AEM iniciantes, as jornadas apresentam os conceitos e os recursos para atingir uma meta de A a Z.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1262'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,8 @@ Há várias Jornadas de Documentação disponíveis para você. Como cada jornad
 | Jornada | Descrição |
 |---|---|
 | [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Comece aqui para ver como o AEM suporta modelos de desenvolvimento sem periféricos e como começar a planejar, implementar e ativar seu projeto. |
-| Jornada de criação sem cabeçalho | Comece aqui para ver como criar e gerenciar conteúdo sem periféricos no AEM. |
+| [Jornada de criação sem cabeçalho](/help/journey-headless/author/overview.md) | Comece aqui para obter uma jornada guiada através dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como modelar seu conteúdo em seu primeiro projeto sem interface. |
+| [Jornada de arquitetura headless](/help/journey-headless/architect/overview.md) | Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto. |
 | [Jornada de tradução headless](/help/journey-headless/translation/overview.md) | Comece aqui para ver como configurar e gerenciar seus projetos de tradução sem periféricos no AEM. |
 | jornada de integração de AEM | Em breve! |
 | jornada de comércio AEM | Em breve! |
