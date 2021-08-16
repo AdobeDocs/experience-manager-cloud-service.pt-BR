@@ -4,9 +4,9 @@ description: Comece aqui para obter uma jornada guiada através dos recursos ava
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '655'
 ht-degree: 2%
 
 ---
@@ -52,3 +52,14 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 ## O que vem a seguir {#what-is-next}
 
 Agora você está pronto para começar a usar sua jornada sem cabeça do Adobe. Recomendamos que você continue para a próxima parte da jornada e leia o artigo [Modelagem de conteúdo para headless com AEM - Uma introdução](introduction.md).
+
+## Recursos adicionais {#additional-resources}
+
+As jornadas de documentação mostram como o AEM soluciona um problema comercial fornecendo uma narrativa que o orienta por processos e recursos complexos e inter-relacionados. Uma jornada ilustra como vários recursos trabalham juntos para atender a uma única necessidade de negócios.
+
+Como tais jornadas são projetadas para se sustentarem sozinhas. No entanto, alguns deles podem estar relacionados entre si. Confira estas jornadas adicionais para obter mais informações sobre como AEM recursos avançados trabalham juntos.
+
+* [AEM Jornada de tradução headless](/help/journey-headless/translation/overview.md)  - Essa jornada de documentação oferece uma ampla compreensão da tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
+* [Jornada de criação sem interface](/help/journey-headless/author/overview.md)  - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface do AEM, seus recursos e como modelar seu conteúdo no seu primeiro projeto sem interface.
+* [AEM Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md)  - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
+* [AEM como documentação técnica do Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)  - Se você já tem uma compreensão firme das tecnologias AEM e sem periféricos, pode consultar diretamente nossos documentos técnicos aprofundados.
