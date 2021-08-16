@@ -1,9 +1,9 @@
 ---
 title: AEM Jornadas headless
 description: Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para compreender AEM recursos avançados sem periféricos.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -52,5 +52,7 @@ As Jornadas de Documentação a seguir estão disponíveis para tópicos sem cab
 |---|---|---|
 | [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Saiba mais sobre as tecnologias sem periféricos, o que elas trazem à experiência do usuário, como o AEM suporta modelos sem periféricos e como implementar seu próprio projeto de desenvolvimento sem periféricos de A a Z. | Desenvolvedores |
 | [Jornada de tradução headless](/help/journey-headless/translation/overview.md) | Saiba mais sobre as tecnologias sem periféricos, por que elas podem ser usadas em seu projeto e como criar e atualizar projetos de tradução em AEM de A a Z. | Especialistas em tradução |
+| [Jornada de criação sem cabeçalho](/help/journey-headless/author/overview.md) | Comece aqui para obter uma jornada guiada através dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como modelar seu conteúdo em seu primeiro projeto sem interface. | Arquitetos |
+| [Jornada de arquitetura headless](/help/journey-headless/architect/overview.md) | Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto. | Criadores e autores de conteúdo |
 
 Fique atento às [próximas jornadas que abrangem funções adicionais.](/help/journey-documentation/home.md#journeys)
