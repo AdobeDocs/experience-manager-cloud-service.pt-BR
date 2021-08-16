@@ -4,9 +4,9 @@ description: Comece aqui para obter uma jornada guiada por meio da tradução do
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '1005'
 ht-degree: 2%
 
 ---
@@ -83,5 +83,7 @@ As jornadas de documentação mostram como o AEM soluciona um problema comercial
 
 Como tais jornadas são projetadas para se sustentarem sozinhas. No entanto, alguns deles podem estar relacionados entre si. Confira estas jornadas adicionais para obter mais informações sobre como AEM recursos avançados trabalham juntos.
 
+* [Jornada de criação sem interface](/help/journey-headless/author/overview.md)  - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface do AEM, seus recursos e como modelar seu conteúdo no seu primeiro projeto sem interface.
+* [Jornada de arquitetura headless](/help/journey-headless/architect/overview.md)  - Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.
 * [AEM Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md)  - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
 * [AEM como documentação técnica do Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)  - Se você já tem uma compreensão firme das tecnologias AEM e sem periféricos, pode consultar diretamente nossos documentos técnicos aprofundados.
