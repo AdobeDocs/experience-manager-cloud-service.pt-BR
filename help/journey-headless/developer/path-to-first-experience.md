@@ -1,19 +1,19 @@
 ---
 title: Caminho para sua primeira experiência usando AEM headless
 description: Nesta parte da Jornada de desenvolvedores sem cabeçalho do AEM, você entenderá as etapas para implementar sua primeira experiência sem periféricos em AEM incluindo considerações de planejamento e também aprenderá as práticas recomendadas para tornar seu caminho o mais tranquilo possível.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
+source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
-
 
 # Caminho para sua primeira experiência usando AEM headless {#path-to-first-experience}
 
 Nesta parte da [AEM Jornada de desenvolvedores headless,](overview.md) você entenderá as etapas para implementar sua primeira experiência headless em AEM incluindo considerações de planejamento e também aprenderá as práticas recomendadas para tornar seu caminho o mais suave possível.
 
-## A história até agora {#story-so-far}
+## A História Até Agora {#story-so-far}
 
 No documento anterior da jornada sem periféricos AEM, [Introdução AEM Sem Cabeça como Cloud Service](getting-started.md) você aprendeu a teoria básica do que é um CMS sem periféricos e agora deve:
 
@@ -46,15 +46,15 @@ Para iniciar seu primeiro projeto sem periféricos de AEM, é necessário garant
 
 Separado de AEM, você também quer garantir que tenha um ambiente de desenvolvimento adequado configurado se estiver criando um aplicativo do lado do cliente para testar seu cliente em relação às chamadas de API para AEM como Cloud Service.
 
-### Definir modelos de conteúdo e APIs {#defining-models}
+### Definição de modelos de conteúdo e APIs {#defining-models}
 
 Você deseja direcionar uma experiência consistente e gerenciar campanhas personalizadas em todos os canais, para que possa visualizar cada canal e superfície individual como sua própria estrutura de conteúdo distinta para entrega. No entanto, ter cada canal com seu próprio modelo de conteúdo será um desafio manter.
 
-Em vez disso, você deve considerar como o conteúdo em diferentes superfícies é relacionado com base no princípio de organização, como hierarquias de marca e produto, categorias de bens ou superfícies, ou etapas na jornada do cliente. Por exemplo, se você tiver um conjunto de superfícies que suportam uma marca específica de carros que você fabrica, você pode começar com um modelo de conteúdo para informações gerais que seria verdadeiro para o carro inteiro e ter elementos específicos de contexto mais específicos, como conteúdo necessário quando o carro está iniciando até quando há problemas de serviço. Esse modelo imporá uma herança do conteúdo geral da marca de carro, permitindo, ao mesmo tempo, deslocamentos com base no contexto específico necessário. Também ajuda no gerenciamento futuro de atualizações desse conteúdo, pois é possível impor o controle com base em funções, como o profissional de marketing geral ou o gerente de produto de toda a marca de carro, em comparação com um autor responsável pela experiência de &quot;carro inicial&quot;.
+Em vez disso, você deve considerar como o conteúdo em diferentes superfícies é relacionado com base no princípio de organização, como hierarquias de marca e produto, categorias de bens ou superfícies, ou etapas na jornada do cliente. Por exemplo, se você tiver um conjunto de superfícies que suportam uma marca específica de carros que você fabrica, talvez queira começar com um modelo de conteúdo para informações gerais que seria verdadeiro para todo o carro e, em seguida, ter elementos mais específicos, como conteúdo necessário quando o carro estiver iniciando até quando houver problemas de serviço. Esse modelo imporá a herança do conteúdo geral da marca de carro e permitirá mudanças com base no contexto específico necessário. Também ajuda no gerenciamento futuro de atualizações desse conteúdo, pois é possível impor o controle com base em funções, como o profissional de marketing geral ou o gerente de produto de toda a marca de carro, em comparação com um autor responsável pela experiência de &quot;carro inicial&quot;.
 
 Depois de ter o modelo de conteúdo e a visualização nítida dos vários clientes aos quais o conteúdo precisa ser revelado, é necessário garantir que GraphQL/APIs associadas ao acesso a vários modelos de conteúdo sejam publicadas para todos os clientes que precisam desse conteúdo. Há diferentes opções de como acessar determinado conteúdo. Você pode solicitar um conteúdo específico estático, que permite o armazenamento em cache do conteúdo e desempenho mais alto. Você também pode solicitar conteúdo gerado dinamicamente, o que exigirá mais processamento. Certifique-se de que os clientes estejam aproveitando as APIs mais eficientes para suas necessidades comerciais.
 
-## Entendendo os ambientes {#understanding-environments}
+## Entender os ambientes {#understanding-environments}
 
 No AEM há três tipos de ambientes: desenvolvimento, armazenamento temporário e produção.
 
@@ -105,13 +105,13 @@ Um projeto sem cabeça não só é bem-sucedido devido à tecnologia implementad
 * Quando você tem requisitos de acesso, eles devem direcionar sua hierarquia de conteúdo. Agrupe o conteúdo, que é editado pelo mesmo grupo de pessoas.
 * Agrupe conteúdo semelhante em uma pasta.
    * É mais provável que um autor de conteúdo copie e cole o conteúdo existente para criar novo conteúdo. Portanto, fazer isso na mesma pasta o torna mais eficiente.
-   * AEM permite definir modelos permitidos por pasta, de modo que o botão **Criar novo** mostre apenas os modelos suportados nesse local.
+   * AEM permite que os modelos permitidos sejam definidos por pasta, de modo que o botão **Criar novo** mostre apenas os modelos suportados nesse local.
 * A criação do editor de Fragmento de conteúdo em linha dos novos Fragmentos de conteúdo pode ser simplificada se a pasta raiz estiver definida no modelo. Então o profissional não precisa escolher um local, mas precisa apenas fornecer um nome e pode começar a editar a nova referência.
 
 ### Criar conteúdo {#authoring}
 
 * Para versões específicas de canal do seu conteúdo, considere usar variações de fragmento de conteúdo. As variações são sincronizadas com o conteúdo principal para simplificar o gerenciamento de alterações de conteúdo.
-* Convide outros produtores de conteúdo para revisar o conteúdo e fornecer feedback com anotações e comentários, que estão disponíveis no editor de fragmentos de conteúdo e globalmente em fragmentos no console de administração de fragmentos de conteúdo.
+* Convide outros produtores de conteúdo para revisar o conteúdo e fornecer feedback com anotações e comentários, que estão disponíveis no editor de fragmentos de conteúdo e globalmente em fragmentos no Admin Console de fragmentos de conteúdo.
 * Mantenha as coisas em movimento com o menor número possível de elementos obrigatórios. Os elementos obrigatórios podem bloquear o workflow.
 
 ### Criação de conteúdo global {#localization}
@@ -131,7 +131,7 @@ Agora que você concluiu esta parte da Jornada de Desenvolvedores sem Cabeça da
 
 Queremos que você se baseie nesse conhecimento fundamental para entender totalmente o poder e a flexibilidade de AEM sem Cabeça, para que possa aproveitar esse conhecimento para seus próprios projetos. Para fazer isso, você tem opções.
 
-### Escolha seu próprio empreendimento {#choose-your-path}
+### Escolha Sua Própria Aventura {#choose-your-path}
 
 Não importa qual o seu estilo de aprendizagem, o Adobe quer que você tenha sucesso à medida que inicia seu projeto AEM Headless.
 
@@ -142,6 +142,7 @@ Não importa qual o seu estilo de aprendizagem, o Adobe quer que você tenha suc
 
 Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento sem periféricos revisando o documento [Como modelar seu conteúdo como modelos de conteúdo AEM,](model-your-content.md) os seguintes são alguns recursos adicionais e opcionais que fazem um mergulho mais profundo em alguns conceitos mencionados neste documento, mas eles não são solicitados a continuar na jornada sem periféricos.
 
+* [AEM Jornada de tradução headless](/help/journey-headless/translation/overview.md)  - Essa jornada de documentação oferece uma ampla compreensão da tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 * [Desenvolvimento sem periféricos para o AEM Sites as a Cloud Service](/help/implementing/developing/headless/introduction.md)  - Uma introdução rápida para orientar o desenvolvedor sem periféricos AEM com os recursos necessários
 * [AEM Tutorials sem interface](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com AEM e escolha o que é certo para você.
 * [Gerenciamento de conteúdo sem cabeçalho usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. A autenticação via AdobeID é necessária.
