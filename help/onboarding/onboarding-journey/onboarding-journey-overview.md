@@ -4,9 +4,9 @@ description: Siga esta página para saber como começar a usar o jornada de inte
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
+source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '645'
 ht-degree: 2%
 
 ---
@@ -37,14 +37,14 @@ A jornada de integração é ilustrada abaixo e cada etapa na jornada é descrit
 
 ![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
 
-## Explorar a Jornada de integração {#exploring-onboarding-journey}
+## Explorar a Jornada onboard {#exploring-onboarding-journey}
 
 Você explorará muitos tópicos nesta jornada. Os artigos a seguir fornecem um conhecimento fundamental das etapas de integração do AEM como Cloud Service. Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você não estiver familiarizado com integração, recomendamos que você comece no início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|
 | 0 | Jornada de integração | Este documento |
-| 1 | Saiba mais sobre conceitos de integração, como:<br>[Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Sistema Adobe Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Introdução ao Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM como Cloud Service e Perfis de produto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Suporte ao Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Saiba mais sobre conceitos de integração. |
+| 1 | Saiba mais sobre conceitos de integração, como:<br>[Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Sistema Adobe Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Introdução ao Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM como Cloud Service e Perfis de produto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Entrando em contato com o suporte ao Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Saiba mais sobre conceitos de integração. |
 | 2 | Introdução ao integração | Saiba mais sobre como fazer logon no Admin Console e verificar seu perfil como Administrador do sistema |
 | 3 | Atribuir membros da equipe aos perfis de produto do Cloud Manager | Revise os Perfis de produto do Cloud Manager e saiba como atribuir membros da equipe aos perfis de produto do Cloud Manager. |
 | 4 | Configuração de recursos da nuvem via Cloud Manager | Saiba como os recursos da nuvem são criados e quem pode fazê-lo. Além disso, saiba como são criados os programas e ambientes em nuvem. |
