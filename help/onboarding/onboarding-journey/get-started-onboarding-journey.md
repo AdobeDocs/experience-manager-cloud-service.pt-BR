@@ -4,7 +4,7 @@ description: Siga esta página para saber como começar a usar o jornada de inte
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
+source-git-commit: 1ce3849cee513d061df0664ca50d400e6cf41a8d
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Introdução ao processo de integração {#getting-started}
 
-A integração é o processo durante o qual um [Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura o AEM como um Cloud Service para sua organização. Isso inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções apropriadas com base em suas responsabilidades de trabalho, depois que cada membro é capaz de fazer logon e acessar seus AEM como recursos de Cloud Service.
+A integração é o processo durante o qual um [Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura o AEM como um Cloud Service para sua organização. Isso inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções com base em suas responsabilidades de trabalho. Como resultado, cada membro pode fazer logon e acessar seus AEM como um recurso de Cloud Service.
 
 ## Objetivo {#objective}
 
@@ -55,11 +55,11 @@ Siga as etapas abaixo para navegar até o Admin Console e revisar a função de 
 
    ![](/help/onboarding/onboarding-journey/assets/get-started2.png)
 
-1. Depois de clicar em **Administradores** no cartão **Usuários**, na etapa anterior, você pode pesquisar inserindo seu email do Adobe ID, nome de usuário, nome ou sobrenome.
+1. Depois de clicar em **Administradores** no cartão **Usuários**, você pode pesquisar inserindo seu email do Adobe ID, nome de usuário, nome ou sobrenome.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started3.png)
 
-1. A pesquisa deve retornar com êxito para localizar seu registro de email com **System** na coluna rotulada **ADMIN ROLE**, conforme mostrado abaixo. Isso confirma que você é o Administrador do sistema.
+1. A pesquisa deve encontrar o registro de email com êxito. Além disso, o **ADMIN ROLE** deve mostrar **System**, conforme mostrado abaixo. Isso confirma que você é um Administrador do sistema. Isso confirma sua função de Administrador do sistema.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started4.png)
 
