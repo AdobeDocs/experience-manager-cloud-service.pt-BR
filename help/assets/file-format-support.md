@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Gerenciamento de ativos,Representações
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
+source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '795'
 ht-degree: 10%
 
 ---
@@ -213,12 +213,8 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
 | WebM | WebM | VP8 do Google | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| MTS | AVCHD | H264/AVC | - |
 | MKV | Matroska | H264/AVC | - |
-| R3D, RM | Vídeo vermelho bruto | MJPEG 2000 | - |
 | RAM, RM | RealVideo | Não suportado | G2 real (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Flac nativo | Codec de áudio sem perdas gratuito | - |
 | MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 | - |
 
 ## Formatos de áudio {#audio-formats}
