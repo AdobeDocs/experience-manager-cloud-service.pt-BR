@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Microserviços do Asset compute, Fluxo de trabalho, Processamento de ativos
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 1%
@@ -238,7 +238,7 @@ Para saber como implantar uma configuração OSGi, consulte [implantar em [!DNL 
 
 * Considere suas necessidades para todos os tipos de representações ao projetar fluxos de trabalho. Se você não prever a necessidade de uma representação no futuro, remova sua etapa de criação do fluxo de trabalho. As representações não podem ser excluídas em massa posteriormente. As representações indesejadas podem ocupar muito espaço de armazenamento após o uso prolongado de [!DNL Experience Manager]. Para ativos individuais, você pode remover as renderizações manualmente da interface do usuário. Para vários ativos, você pode personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e carregá-los novamente.
 * Atualmente, o suporte está limitado à geração de representações. Não há suporte para a geração de novo ativo.
-* Atualmente, o limite de tamanho do arquivo para extração de metadados é de aproximadamente 10 GB. Ao fazer upload de ativos muito grandes, às vezes a operação de extração de metadados falha.
+* Atualmente, o limite de tamanho do arquivo para extração de metadados é de aproximadamente 15 GB. Ao fazer upload de ativos muito grandes, às vezes a operação de extração de metadados falha.
 
 >[!MORELIKETHIS]
 >
