@@ -2,7 +2,7 @@
 title: Integração com o Adobe Target
 description: Integração com o Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 4%
@@ -69,7 +69,7 @@ Quando a integração for concluída, você poderá [criar conteúdo direcionado
 >
 >Quando você direciona um componente em AEM autor, o componente faz uma série de chamadas do lado do servidor para o Adobe Target para registrar a campanha, configurar ofertas e recuperar segmentos do Adobe Target (se configurado). Nenhuma chamada do lado do servidor é feita AEM publicação no Adobe Target.
 
-## Fontes de informações de plano de fundo {#background-information-sources}
+## Fontes de informações de fundo {#background-information-sources}
 
 A integração do AEM as a Cloud Service com o Adobe Target requer conhecimento do Adobe Target, gerenciamento de atividades AEM e gerenciamento de AEM públicos-alvo. Familiarize-se com as seguintes informações:
 
@@ -85,7 +85,4 @@ A integração do AEM as a Cloud Service com o Adobe Target requer conhecimento 
 >* 2.000 experiências
 >* 50 métricas
 >* 50 segmentos de relatórios
-
->
-
 
