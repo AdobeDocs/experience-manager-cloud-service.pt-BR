@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Gerenciamento de ativos,Representações
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 10%
@@ -227,7 +227,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 ## Dicas e limitações {#limitations-and-tips}
 
-* Atualmente, o limite de tamanho do arquivo para extração de metadados é de aproximadamente 10 GB. Ao fazer upload de ativos muito grandes, às vezes a operação de extração de metadados falha.
+* Atualmente, o limite de tamanho do arquivo para extração de metadados é de aproximadamente 15 GB. Ao fazer upload de ativos muito grandes, às vezes a operação de extração de metadados falha.
 
 >[!MORELIKETHIS]
 >
