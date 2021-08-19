@@ -2,10 +2,10 @@
 title: Fase de implementação
 description: Fase de implementação
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 89%
+source-wordcount: '943'
+ht-degree: 90%
 
 ---
 
@@ -98,7 +98,7 @@ As execuções de pipeline do Cloud Manager para o Cloud Services oferecerão su
 
 Consulte [Testes de qualidade do código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) para saber mais sobre como escrever scripts de teste e a cobertura recomendada de pelo menos 50%.
 
-Além disso, consulte [Noções básicas sobre regras de qualidade de código personalizadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html) para saber mais sobre as regras de qualidade de código personalizadas executadas pelo Cloud Manager e criadas com base nas práticas recomendadas do AEM Engineering.
+Além disso, consulte [Noções básicas sobre regras de qualidade de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md) para saber mais sobre as regras de qualidade de código personalizadas executadas pelo Cloud Manager e criadas com base nas práticas recomendadas do AEM Engineering.
 
 O uso do Cloud Manager é o único mecanismo para implantar código em ambientes do Cloud Service.
 
