@@ -2,9 +2,9 @@
 title: Migração para o Experience Manager as a Cloud Service
 description: Migração para o Experience Manager as a Cloud Service
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c5b98c25ec8999c36e2aa44266ca42150c3b2906
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2105'
 ht-degree: 10%
 
 ---
@@ -31,7 +31,7 @@ Esse único pager descreve a abordagem de fases recomendada para clientes de tra
 
 <br>
 
-## Introdução ao Adobe Experience Manager como Cloud Service {#getting-started}
+## Introdução ao Adobe Experience Manager as a Cloud Service {#getting-started}
 
 | O que é diferente? | Visão geral da arquitetura |
 |--------------------------|--------------------------|
@@ -41,7 +41,7 @@ Esse único pager descreve a abordagem de fases recomendada para clientes de tra
 
 <br>
 
-## Jornada do desenvolvedor no Adobe Experience Manager as a Cloud Service {#developer-journey}
+## Jornada para desenvolvedores no Adobe Experience Manager as a Cloud Service {#developer-journey}
 
 ### Desenvolvimento
 
@@ -53,10 +53,10 @@ Consulte os recursos de autoajuda sobre implementação do Experience Manager as
 
 | Configuração de desenvolvimento local | O que você deve saber antes de começar |
 |-----------|------------|
-| <ol><li>Consulte a documentação do [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) para saber mais.</li><li>Assista [Instalar o SDK do Dispatcher](https://video.tv.adobe.com/v/30601) para entender como instalar o SDK do Dispatcher</li><li>Assista [Configurar o SDK do Dispatcher](https://video.tv.adobe.com/v/30602) para entender como configurar o SDK do Dispatcher</li><li>Consulte a documentação [Configuração de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up) para saber mais</li><li>Configuração do acesso ao Experience Manager [caminho](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)</li></ol> | <ol><li>[Princípios básicos de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[Diretrizes de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[Noções básicas sobre a estrutura do projeto do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)</li><li>[Digital Foundation Blueprint](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[Sobreposições](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/overlays.html?lang=en#developing)</li><li>[Referência da API do Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)</li></ol> |
+| <ol><li>Consulte a documentação do [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) para saber mais.</li><li>Assista [Instalar o SDK do Dispatcher](https://video.tv.adobe.com/v/30601) para entender como instalar o SDK do Dispatcher</li><li>Assista [Configurar o SDK do Dispatcher](https://video.tv.adobe.com/v/30602) para entender como configurar o SDK do Dispatcher</li><li>Consulte a documentação [Configuração de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up) para saber mais</li><li>Configuração do acesso ao Experience Manager [caminho](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)</li></ol> | <ol><li>[Princípios básicos de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[Diretrizes de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[Noções básicas sobre a estrutura do projeto do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)</li><li>[Digital Foundation Blueprint](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[Sobreposições](/help/implementing/developing/introduction/overlays.md)</li><li>[Referência da API do Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)</li></ol> |
 
 >[!TIP]
-> Consulte tutorial sobre como [Desenvolver e implantar WKND no SDK do Experience Manager local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
+> Consulte tutorial sobre como [Desenvolver e implantar WKND no SDK do Experience Manager local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ### Implantação
 
@@ -99,7 +99,7 @@ Consulte os recursos de autoajuda sobre como configurar e implantar no AEM como 
 
 <br>
 
-## Migrar para o Adobe Experience Manager como um Cloud Service {#move-to-cloud}
+## Migração para o Adobe Experience Manager as a Cloud Service {#move-to-cloud}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_move_to_cloud"
