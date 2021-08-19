@@ -4,16 +4,16 @@ description: Siga esta página para saber como configurar os Recursos da nuvem p
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
+source-git-commit: 5f599eb877565c65aad3d54af411bd8d40f4580d
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
 
 # Configuração de recursos da nuvem via Cloud Manager {#setup-cloud-resources}
 
-O Administrador do sistema atribuído à função *Proprietário comercial* deve acessar e fazer logon no Cloud Manager. Em seguida, um membro da equipe atribuído ao perfil de produto *Proprietário comercial* deve fazer logon no Cloud Manager e criar o programa e os ambientes de nuvem para que a equipe de especialistas possa começar.
+O Administrador do sistema atribuído à função Proprietário comercial deve acessar e fazer logon no Cloud Manager. Em seguida, um membro da equipe atribuído ao perfil de produto Proprietário comercial deve fazer logon no Cloud Manager e criar seu programa e ambientes de nuvem para que a equipe de especialistas possa começar.
 
 ## Objetivo {#objective}
 
@@ -21,7 +21,7 @@ Este documento ajuda você a entender como os recursos da nuvem são criados e q
 
 Após ler esta seção, você deve entender:
 
-* Um Administrador do sistema atribuído à função *Proprietário comercial* deve ser o primeiro a acessar e fazer logon no Cloud Manager.
+* Um Administrador do sistema atribuído à função Proprietário comercial deve ser o primeiro a acessar e fazer logon no Cloud Manager.
 * Como o programa em nuvem e os ambientes são criados.
 
 ## Introdução {#introduction}
@@ -32,19 +32,17 @@ Siga as seções abaixo para saber como criar seus [programas de serviço em nuv
 
 ### Pré-requisitos {#prerequisites}
 
-* O Administrador do sistema atribuído à função *Proprietário comercial* deve acessar e fazer logon no Cloud Manager.
+* O Administrador do sistema atribuído à função Proprietário comercial deve acessar e fazer logon no Cloud Manager.
 
 * Entenda como [navegar e fazer logon no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en).
 
 * Familiarize-se com os [perfis de produto do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
 
-* Entenda as considerações para criar seu programa. Assista a este vídeo para saber mais.
-
 * Entenda os conceitos do Cloud Manager [programas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) e [ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)
 
 ## Navegar para o Cloud Manager {#navigate-cloud-manager}
 
-O usuário *Proprietário comercial* receberá um email de boas-vindas de onde pode começar, ou se não conseguir encontrá-lo, vá diretamente para [Adobe Experience Cloud](https://experience.adobe.com) e faça logon usando sua Adobe ID.
+O usuário Proprietário comercial receberá um email de boas-vindas com um link para começar ou, se não conseguir encontrá-lo, acesse diretamente [Adobe Experience Cloud](https://experience.adobe.com) e faça logon usando sua Adobe ID.
 
 Siga as etapas abaixo para navegar até o Cloud Manager:
 
@@ -54,7 +52,7 @@ Siga as etapas abaixo para navegar até o Cloud Manager:
 1. Você navegará até a página **Programas e produtos** do Cloud Manager.
 
    >[!IMPORTANT]
-   >Como alternativa, você também pode navegar diretamente para a página de logon do Cloud Manager de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Marque esta página para o futuro e para ajudá-lo a navegar diretamente para a página de aterrissagem do Cloud Manager.
+   >Como alternativa, você também pode navegar diretamente para a página de logon do Cloud Manager de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Marque esta página como referência futura e para ajudá-lo a navegar diretamente para a página de aterrissagem do Cloud Manager.
 
 1. Você será direcionado para a página de aterrissagem do Cloud Manager. Consulte a seção [Visualizando programas do Cloud Manager](#viewing-programs) para obter mais detalhes.
 
@@ -100,7 +98,7 @@ Se programas já existirem em sua organização e você for um Administrador do 
 
 ## Verificando suas funções de usuário {#verify-user-roles}
 
-Depois de fazer logon no Cloud Manager com êxito, siga as etapas abaixo para verificar se você recebeu o Perfil de produto do proprietário de negócios:
+Depois de fazer logon no Cloud Manager com êxito, siga as etapas abaixo para verificar se o Perfil de produto do proprietário de negócios foi atribuído a você:
 
 1. Selecione o perfil no canto superior direito, como mostrado abaixo.
 
@@ -166,14 +164,14 @@ Siga as etapas abaixo para criar seus ambientes de nuvem a partir do Cloud Manag
 
    Além disso, assista ao tutorial rápido de [vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en) para saber mais sobre os ambientes do Cloud Manager e como adicioná-los ao seu programa.
 
-1. Isso iniciará o assistente para adicionar ambiente que guiará a adição do ambiente. Adicione seu ambiente de desenvolvimento primeiro para se familiarizar. Consulte [Adicionar um ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments) para saber mais.
+1. Isso iniciará o assistente para adicionar ambiente que o guiará pela adição do ambiente. Adicione seu ambiente de desenvolvimento primeiro para se familiarizar com o assistente. Consulte [Adicionar um ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments) para saber mais.
 
    >[!NOTE]
    >Se você ainda não tiver feito isso, agora é um bom momento para adicionar seus membros do Desenvolvedor à sua equipe do Cloud Manager. Consulte Adicionar usuários ao perfil de produto do desenvolvedor e siga as etapas descritas.
 
 1. Os membros atribuídos ao perfil de produto do Desenvolvedor podem fazer logon no Cloud Manager e no [Gerenciar Git do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
-   Excelente trabalho! Agora que seu programa foi criado com sucesso, seu Git do Cloud Manager está disponível para que seus desenvolvedores acessem!
+   Excelente trabalho! Agora que seu programa foi criado com sucesso e seu Git do Cloud Manager está disponível para que seus desenvolvedores acessem!
 
    Parabéns! Agora, seus ambientes do programa em nuvem foram criados e seus Desenvolvedores foram adicionados à equipe!
 
