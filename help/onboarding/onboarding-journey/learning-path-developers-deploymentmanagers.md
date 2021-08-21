@@ -4,9 +4,9 @@ description: Siga esta página para saber mais sobre as próximas etapas após o
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '476'
 ht-degree: 3%
 
 ---
@@ -33,11 +33,13 @@ Se você estiver lendo esta seção, provavelmente estará atribuído a um perfi
 
 ## Pré-requisitos {#prerequisites}
 
-O administrador do sistema atribuiu desenvolvedores e gerentes de implantação aos respectivos perfis de produto. Os desenvolvedores também devem ser atribuídos ao perfil de produto Usuários AEM ou Administradores AEM .\
-Os recursos da nuvem foram configurados.
-Você sabe como navegar e fazer logon no Cloud Manager
+Antes de começar, verifique:
 
-## Gerenciar Git {#manage-git}
+* O administrador do sistema atribuiu desenvolvedores e gerentes de implantação aos respectivos perfis de produto. Os desenvolvedores também devem ser atribuídos ao perfil de produto Usuários AEM ou Administradores AEM .
+* Os recursos da nuvem foram configurados.
+* Você sabe como navegar e fazer logon no Cloud Manager
+
+## Gerenciar o GitHub {#manage-git}
 
 Você pode acessar e gerenciar seu Repositório Git usando o Gerenciamento de conta Git de Autoatendimento da interface do usuário do Cloud Manager.
 Para saber mais sobre este tópico, consulte [Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
@@ -49,7 +51,7 @@ Para saber mais sobre este tópico, consulte [Configuração do pipeline de CI-C
 
 ## O que vem a seguir {#whats-next}
 
-Os Gerentes de desenvolvimento e implantação agora estão prontos para se familiarizar com o desenvolvimento de código no AEM as a Cloud Service. Saiba mais ou encontre mais caminhos de aprendizagem na seção Recursos adicionais abaixo.
+Os Gerentes de desenvolvimento e implantação agora estão prontos para se familiarizar com o desenvolvimento de código no AEM as a Cloud Service. Saiba mais ou encontre mais caminhos de aprendizagem na seção Recursos adicionais abaixo. Para saber mais sobre a jornada de aprendizado para autores de conteúdo, consulte Caminho de aprendizado para autores do AEM.
 
 ## Recursos adicionais {#additional-resources}
 
