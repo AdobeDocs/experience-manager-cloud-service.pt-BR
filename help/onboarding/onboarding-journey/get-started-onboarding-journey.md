@@ -3,7 +3,7 @@ title: Introdução ao processo de integração
 description: Siga esta página para saber como começar a usar o jornada de integração
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -66,5 +66,5 @@ Siga as etapas abaixo para navegar até o Admin Console e revisar a função de 
 
 ## O que vem a seguir {#whats-next}
 
-Agora que você fez logon no Admin Console e verificou seu perfil como Administrador do sistema, é necessário continuar sua jornada de integração revisando o documento Atribuindo membros da equipe aos perfis de produto do Cloud Manager.
+Agora que você fez login no Admin Console e verificou seu perfil como Administrador do sistema, deve continuar sua jornada de integração revisando o documento [Atribuir membros da equipe a perfis de produto do Cloud Manager](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md).
 
