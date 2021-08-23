@@ -3,7 +3,7 @@ title: Jornada de integração
 description: Siga esta página para saber como começar a usar o jornada de integração
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 2%
@@ -64,4 +64,4 @@ Você explorará muitos tópicos nesta jornada. Os artigos a seguir fornecem um 
 
 ## O que vem a seguir {#what-is-next}
 
-Agora você está pronto para começar a usar a Jornada de integração. Recomendamos que você continue para a próxima parte da jornada e leia o artigo Introdução ao processo de integração .
+Agora você está pronto para começar a usar a Jornada de integração. Recomendamos que você continue para a próxima parte da jornada e leia o artigo [Introdução ao processo de integração](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md).
