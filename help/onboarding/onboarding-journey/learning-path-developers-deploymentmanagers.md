@@ -3,7 +3,7 @@ title: Caminho de aprendizado para desenvolvedores e gerentes de implantação
 description: Siga esta página para saber mais sobre as próximas etapas após obter acesso, se você for um desenvolvedor ou um gerente de implantação
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 3%
@@ -50,7 +50,7 @@ Para saber mais sobre este tópico, consulte [Configuração do pipeline de CI-C
 
 ## O que vem a seguir {#whats-next}
 
-Os Gerentes de desenvolvimento e implantação agora estão prontos para se familiarizar com o desenvolvimento de código no AEM as a Cloud Service. Saiba mais ou encontre mais caminhos de aprendizagem na seção Recursos adicionais abaixo. Para saber mais sobre a jornada de aprendizado para autores de conteúdo, consulte Caminho de aprendizado para autores do AEM.
+Os Gerentes de desenvolvimento e implantação agora estão prontos para se familiarizar com o desenvolvimento de código no AEM as a Cloud Service. Saiba mais ou encontre mais caminhos de aprendizagem na seção Recursos adicionais abaixo. Para saber mais sobre a jornada de aprendizado para autores de conteúdo, consulte [Caminho de aprendizado para autores do AEM](/help/onboarding/onboarding-journey/learning-path-aem-users.md).
 
 ## Recursos adicionais {#additional-resources}
 
