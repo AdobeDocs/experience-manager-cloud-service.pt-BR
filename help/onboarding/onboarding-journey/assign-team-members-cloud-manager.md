@@ -3,7 +3,7 @@ title: 'Atribuindo membros da equipe a perfis de produto do Cloud Manager '
 description: Siga esta página para saber como atribuir membros da equipe a perfis de produto do Cloud Manager
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
@@ -157,7 +157,7 @@ As etapas a seguir guiarão você por isso:
 
 ## O que vem a seguir {#whats-next}
 
-Você aprendeu sobre três perfis de produto diferentes do Cloud Manager, como Proprietário comercial, Gerenciador de implantação e Desenvolvedor. Em seguida, você atribuiu membros da equipe a perfis de produtos do Cloud Manager, como Proprietário comercial, Gerenciador de implantação e Desenvolvedor. Agora você está pronto para continuar sua jornada de integração revisando o documento Configurar recursos da nuvem por meio do Cloud Manager, onde você aprenderá:
+Você aprendeu sobre três perfis de produto diferentes do Cloud Manager, como Proprietário comercial, Gerenciador de implantação e Desenvolvedor. Em seguida, você atribuiu membros da equipe a perfis de produtos do Cloud Manager, como Proprietário comercial, Gerenciador de implantação e Desenvolvedor. Agora você está pronto para continuar sua jornada de integração ao revisar o documento [Configurar recursos da nuvem por meio do Cloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md), onde você aprenderá:
 
 1. Como Administrador do sistema atribuído à função *Proprietário comercial*, você deve acessar e fazer logon no Cloud Manager.
 
