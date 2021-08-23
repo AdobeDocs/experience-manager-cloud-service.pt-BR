@@ -4,9 +4,9 @@ description: Comece aqui para obter uma jornada guiada através dos recursos ava
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '694'
 ht-degree: 2%
 
 ---
@@ -63,3 +63,4 @@ Como tais jornadas são projetadas para se sustentarem sozinhas. No entanto, alg
 * [Jornada de criação sem interface](/help/journey-headless/author/overview.md)  - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface do AEM, seus recursos e como modelar seu conteúdo no seu primeiro projeto sem interface.
 * [AEM Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md)  - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
 * [AEM como documentação técnica do Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)  - Se você já tem uma compreensão firme das tecnologias AEM e sem periféricos, pode consultar diretamente nossos documentos técnicos aprofundados.
+* [AEM tutoriais headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - se você preferir aprender fazendo e se inclinar tecnicamente, utilize tutoriais práticos organizados por API e framework, que exploram a criação e o uso de aplicativos criados AEM Headless.
