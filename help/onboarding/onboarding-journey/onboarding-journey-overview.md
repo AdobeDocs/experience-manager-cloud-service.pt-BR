@@ -4,9 +4,9 @@ description: Siga esta página para saber como começar a usar o jornada de inte
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
+source-git-commit: ae7b9f45b0a50bf6816c85934997c7562718c2be
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '834'
 ht-degree: 2%
 
 ---
@@ -36,6 +36,17 @@ A integração é o processo durante o qual um [Administrador do sistema](https:
 A jornada de integração é ilustrada abaixo e cada etapa na jornada é descrita detalhadamente nas seções a seguir.
 
 ![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
+Essa jornada foi projetada para uma persona de Administrador do sistema, apresentando os requisitos, as etapas e a abordagem. A jornada define personas adicionais com as quais o Administrador do sistema deve interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o de um administrador.
+
+A seguir estão as personas que interagem nessa jornada.
+
+| Persona | Descrição | Função no Jornada |
+|---|---|---|
+| Administrador do sistema | Fornece provisionamento inicial de recursos de nuvem e atribuição de usuários a funções apropriadas com base em suas responsabilidades de trabalho, após as quais cada membro é capaz de fazer logon e acessar seus AEM como recursos de Cloud Service. | Gerencia todos os aspectos de seus usuários, desde o acesso às permissões. |
+| AEM Author | Cria e analisa o conteúdo (que pode ser de vários tipos; por exemplo, páginas, ativos, publicações) antes de ser publicado no site. | Após obter as permissões, você pode iniciar a jornada do gerente de implantação. |
+| Desenvolvedor | Tem experiência no desenvolvimento de aplicativos AEM que consomem conteúdo de diferentes fontes | Após obter as permissões, você pode iniciar sua própria jornada de desenvolvedor |
+| Gerenciador de implantação | Adiciona ou atualiza um ambiente, executa qualquer pipeline e implanta código em AEM ambiente ou qualidade de código. | Após obter as permissões, você pode iniciar a jornada do gerente de implantação. |
 
 ## Explorar a Jornada onboard {#exploring-onboarding-journey}
 
