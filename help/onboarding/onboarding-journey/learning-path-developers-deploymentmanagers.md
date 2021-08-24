@@ -3,10 +3,10 @@ title: Caminho de aprendizado para desenvolvedores e gerentes de implantação
 description: Siga esta página para saber mais sobre as próximas etapas após obter acesso, se você for um desenvolvedor ou um gerente de implantação
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 3%
+source-wordcount: '467'
+ht-degree: 2%
 
 ---
 
@@ -68,9 +68,3 @@ Os Gerentes de desenvolvimento e implantação agora estão prontos para se fami
 
 * [Introdução ao AEM Editor SPA para desenvolvedores](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
-### Cursos de Experience League {#experience-league-courses}
-
-* Sites tradicionais
-* Editor de SPA
-* Cabeça
-* Commerce
