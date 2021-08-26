@@ -3,9 +3,9 @@ title: Suporte a miniaturas para vídeos no Screens as a Cloud Service
 description: Esta página descreve como adicionar suporte de miniatura a vídeos no Screens as a Cloud Service.
 hide: true
 index: false
-source-git-commit: ea96e811c0164e3cc7d323e734c1617d3c0e9308
+source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,21 @@ Siga as etapas abaixo para usar a miniatura em vídeos:
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Edite as propriedades do componente de vídeo.
+1. Selecione o vídeo e clique no ícone *chave* para abrir as propriedades do vídeo.
 
-1. Arraste uma imagem do seletor de ativos para a área de soltar Miniaturas .
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. Visualize o canal.
+1. A caixa de diálogo **Vídeo** é aberta, onde você visualizará a área de soltar **Miniatura**.
 
-1. Se um vídeo estiver definido no componente, ele será reproduzido. Caso contrário, e a miniatura estiver definida, a miniatura será reproduzida. Caso contrário, o componente será considerado não configurado e será ignorado
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+
+1. Arraste e solte uma imagem do seletor de ativos para a área de soltar **Miniatura** e clique em **Concluído**.
+
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. Clique em **Visualizar**.
+
+1. Se um vídeo estiver definido no componente, ele será reproduzido. Caso contrário, e a miniatura estiver definida, a miniatura será reproduzida. Caso contrário, o componente será considerado não configurado e será ignorado.
 
 ## Casos de uso suportados ao usar miniatura em vídeos {#understand-use-case}
 
