@@ -2,12 +2,12 @@
 title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados por [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Gerenciamento de ativos,Representações
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
+source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '792'
 ht-degree: 10%
 
 ---
@@ -159,7 +159,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | PPTX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 | PS | - | - | Instantâneo | - | - |
 | RTF | - | Instantâneo | - | Instantâneo | Instantâneo |
-| TXT | - | Instantâneo | - | Instantâneo | Instantâneo |
+| TXT | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
 | XLS | - | - | - | Instantâneo | Instantâneo |
 | XLSX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 | XML | - | Instantâneo | - | - | - |
@@ -228,5 +228,5 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 >[!MORELIKETHIS]
 >
 >* [Processamento de ativos usando microsserviços de ativos](asset-microservices-overview.md)
-* [Formatos de arquivo compatíveis para a marcação inteligente de ativos baseados em texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Formatos de arquivo compatíveis para a marcação inteligente de ativos baseados em texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
