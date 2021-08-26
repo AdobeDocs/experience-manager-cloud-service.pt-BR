@@ -1,14 +1,14 @@
 ---
-sub-product: Migrar para o AEM as a Cloud Service
-user-guide-title: Migrar para o AEM as a Cloud Service
+sub-product: Move to AEM as a Cloud Service
+user-guide-title: Migração para o AEM as a Cloud Service
 breadcrumb-title: Guia de migração
 user-guide-description: Entenda a jornada de transição para o Cloud Service.
-feature: Implantação
+feature: Deploying
 role: Architect, Developer
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 53%
+source-wordcount: '130'
+ht-degree: 46%
 
 ---
 
@@ -47,3 +47,4 @@ ht-degree: 53%
    + [Migração de fluxo de trabalho de ativos](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [Conversor do Dispatcher do AEM](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [Ferramentas de Modernização do AEM](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
++ [Guia de migração para o Experience Manager as a Cloud Service para parceiros](/help/move-to-cloud-service/getting-started.md)
