@@ -1,9 +1,9 @@
 ---
 title: Instalar e configurar players no Screens como um Cloud Service
 description: Esta página descreve como instalar e configurar players no Screens como um Cloud Service.
-source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
+source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -74,6 +74,15 @@ As seguintes propriedades estão incluídas em cada `ping`:
 >|—|—|
 >|isContentRendering {boolean}|true se a GPU puder confirmar que está reproduzindo conteúdo real (com base na análise de pixel)|
 
+### Limitações           {#limitations}
+
+Abaixo estão listadas algumas limitações do monitoramento básico da reprodução:
+
+* Como o reprodutor está relatando seu próprio estado de reprodução para o servidor, ele precisa de uma conexão ativa.
+
+* A propriedade `isContentRendering` que verifica a GPU atualmente consome muitos recursos para ser ativada por padrão e requer aceitação explícita das preferências do reprodutor. É recomendável não usá-lo junto com os vídeos.
+
+* Suportado para canais de sequência.
 
 ## O que vem a seguir {#whats-next}
 
