@@ -1,9 +1,9 @@
 ---
 title: Instalar e configurar players no Screens como um Cloud Service
 description: Esta página descreve como instalar e configurar players no Screens como um Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,38 @@ Siga as etapas abaixo para atualizar o player:
    ![imagem](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Clique em **Confirm** que solicita que, ao alternar para o modo de nuvem, o registro do reprodutor seja cancelado.
+
+## Monitoramento básico da reprodução {#playback-monitoring}
+
+O reprodutor relata várias métricas de reprodução com cada `ping` padrão de 30 segundos. Com base nas métricas, você pode detectar vários casos de borda, como experiência paralisada, tela em branco e problemas de agendamento. Isso permite que você entenda e solucione problemas no dispositivo e, portanto, acelere uma investigação e medidas corretivas.
+
+O monitoramento básico da reprodução em um reprodutor AEM Screens permite:
+
+* Monitore remotamente se um reprodutor estiver reproduzindo o conteúdo corretamente
+
+* Melhore a reatividade em telas em branco ou em experiências quebradas no campo
+
+* Diminua o risco de mostrar uma experiência quebrada para o usuário final
+
+### Como entender as propriedades {#understand-properties}
+
+As seguintes propriedades estão incluídas em cada `ping`:
+
+| Propriedade | Descrição |
+|---|---|
+| id {string} | o identificador do reprodutor |
+| ativeChannel {string} | no momento, reproduzindo o caminho do canal, ou nulo se nada estiver agendado |
+| ativeElements {string} | sequência separada por vírgulas, elementos atualmente visíveis em todos os canais de sequência de reprodução (vários no caso de um layout de várias zonas) |
+| isDefaultContent {boolean} | true se o canal de reprodução for considerado um canal padrão ou de fallback (ou seja, tem prioridade 1 e sem agendamento) |
+| hasContentChanged {boolean} | true se o conteúdo tiver sido alterado nos últimos 5 minutos; caso contrário, false |
+| lastContentChange {string} | carimbo de data e hora da última alteração de conteúdo |
+
+>[!NOTE]
+>Como opção, uma propriedade mais avançada pode ser ativada nas preferências do reprodutor (Ativar monitoramento de reprodução), ou seja:
+>|Propriedade|Descrição|
+>|—|—|
+>|isContentRendering {boolean}|true se a GPU puder confirmar que está reproduzindo conteúdo real (com base na análise de pixel)|
+
 
 ## O que vem a seguir {#whats-next}
 
