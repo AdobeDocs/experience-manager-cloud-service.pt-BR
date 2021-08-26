@@ -1,9 +1,9 @@
 ---
 title: Instalar e configurar players no Screens como um Cloud Service
 description: Esta página descreve como instalar e configurar players no Screens como um Cloud Service.
-source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
+source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 1%
 
 ---
@@ -49,11 +49,11 @@ O reprodutor relata várias métricas de reprodução com cada `ping` padrão de
 
 O monitoramento básico da reprodução em um reprodutor AEM Screens permite:
 
-* Monitore remotamente se um reprodutor estiver reproduzindo o conteúdo corretamente
+* Monitore remotamente, se um reprodutor estiver reproduzindo o conteúdo corretamente.
 
-* Melhore a reatividade em telas em branco ou em experiências quebradas no campo
+* Melhore a reatividade em telas em branco ou em experiências quebradas no campo .
 
-* Diminua o risco de mostrar uma experiência quebrada para o usuário final
+* Diminui o risco de mostrar uma experiência quebrada para o usuário final.
 
 ### Como entender as propriedades {#understand-properties}
 
@@ -78,11 +78,11 @@ As seguintes propriedades estão incluídas em cada `ping`:
 
 Abaixo estão listadas algumas limitações do monitoramento básico da reprodução:
 
-* Como o reprodutor está relatando seu próprio estado de reprodução para o servidor, ele precisa de uma conexão ativa.
+* O reprodutor relata seu próprio estado de reprodução no servidor para que ele exija uma conexão ativa.
 
 * A propriedade `isContentRendering` que verifica a GPU atualmente consome muitos recursos para ser ativada por padrão e requer aceitação explícita das preferências do reprodutor. É recomendável não usá-lo junto com os vídeos.
 
-* Suportado para canais de sequência.
+* Esse recurso é compatível com canais de sequência.
 
 ## O que vem a seguir {#whats-next}
 
