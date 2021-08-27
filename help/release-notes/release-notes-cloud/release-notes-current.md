@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
+source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1367'
 ht-degree: 2%
 
 ---
@@ -90,6 +90,24 @@ Você pode gravar em [!DNL formscsbeta@adobe.com] para se inscrever no programa 
 * **Analytics para Adaptive Forms**: Agora é possível capturar e rastrear o comportamento do usuário final por meio do Adobe Analytics para o Adaptive Forms para coletar insights do usuário final. Ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário final.
 
 * **Conecte facilmente o AEM Forms com o Microsoft Dynamics e o Salesforce.com**: O serviço fornece configuração de fonte de dados e modelos de dados prontos para uso para o Microsoft Dynamics e Salesforce.com, tornando  [mais rápido e fácil para os desenvolvedores configurar o Microsoft Dynamics e o Salesforce.com como fontes de dados para um formulário](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html) adaptável.
+
+## [!DNL Screens] como  [!DNL Cloud Service] {#screens}
+
+### Novidades {#what-is-new-screens}
+
+* Como um Autor de conteúdo, agora você pode definir uma miniatura para vídeos, de modo que possa usar essa imagem como um espaço reservado e testar corretamente a reprodução e o direcionamento do conteúdo, enquanto o vídeo real está sendo finalizado pela equipe apropriada.
+Consulte [Monitoramento básico da reprodução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) para obter mais detalhes.
+
+* Agora, o suporte em miniatura para vídeos do agora é compatível com o Screens as a Cloud Service. Um autor de conteúdo pode definir uma miniatura de vídeos para que a imagem possa ser usada como um espaço reservado e testar corretamente a reprodução e o direcionamento do conteúdo, enquanto o vídeo real está sendo finalizado pela equipe apropriada. A imagem também pode ser usada caso a reprodução do vídeo falhe.
+
+### Correções de erros {#bug-fixes-screens}
+
+* O reprodutor não pôde mostrar o conteúdo da página Incorporada e esse problema foi corrigido.
+
+* Após um logon bem-sucedido, a navegação para a página padrão (canais) terminou em uma página de Erro interno do servidor.
+
+* As entradas de tag associadas não foram removidas ao remover listas de reprodução.
+
 
 ## Complemento CIF {#cloud-services-cif}
 
