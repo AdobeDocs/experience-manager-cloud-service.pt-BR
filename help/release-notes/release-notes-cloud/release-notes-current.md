@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 03151f72a86e708a0a91c141d5901a9fb7a311a5
+source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1197'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Assista ao vídeo [Visão geral da versão de agosto de 2021](https://video.tv.a
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* AEM projeto do Archetype para Forms as a Cloud Service agora inclui [4 novos temas e modelos de dados de formulário para Microsoft Dynamics e Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
+* AEM projeto do Archetype para Forms as a Cloud Service agora inclui o tema [Canvas 3.0 e modelos de dados de formulário para Microsoft Dynamics e Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment).
 
 * **Documento de registro** baseado em formulário: O AEM Forms as a Cloud Service suporta o uso do PDF de formulário  [Adobe Acrobat (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) como um modelo para Documento de registro além do modelo de formulário baseado em XFA.
 
@@ -72,7 +72,9 @@ Assista ao vídeo [Visão geral da versão de agosto de 2021](https://video.tv.a
 
 ### Recurso beta de [!DNL Forms] {#aug-what-is-new-forms-prerelease}
 
-* **Conector de armazenamento unificado:** o Conector de armazenamento unificado permite conectar suas fontes de dados a um fluxo de trabalho AEM ou um formulário adaptável, sem persistir nos dados no armazenamento do AEM Forms Cloud Service. Ele permite processar PII com segurança (informações de identificação pessoal) e armazenar informações diretamente no armazenamento de dados do Azure.
+* **Conector de armazenamento unificado:** use o Conector de armazenamento unificado para externalizar dados em processo em repositórios gerenciados pelo cliente. Por exemplo, você pode
+   * Habilite a funcionalidade de salvar e retomar do Forms Portal e armazene rascunhos de formulários adaptáveis em um repositório de dados gerenciado pelo cliente.
+   * Armazene dados de fluxos de trabalho em andamento AEM (dados AEM variáveis de fluxo de trabalho) que contêm dados confidenciais pessoais (SPD) em um repositório gerenciado pelo cliente.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**:  [A ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIshelp de comunicação permite combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo síncrono. As APIs permitem criar aplicativos que permitem:
    * Gere documentos preenchendo arquivos de modelo com dados XML.
