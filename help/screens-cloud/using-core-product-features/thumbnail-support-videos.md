@@ -2,9 +2,9 @@
 title: Suporte a miniaturas para vídeos no Screens as a Cloud Service
 description: Esta página descreve como adicionar suporte de miniatura a vídeos no Screens as a Cloud Service.
 index: true
-source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
+source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ O suporte a miniaturas permite:
 * Defina um mecanismo de fallback, caso haja problemas de reprodução no dispositivo.
 
 ## Usar miniaturas em vídeos {#using-thumbnails}
+
+>[!IMPORTANT]
+>**Pré-requisitos**
+>Antes de aprender a usar miniaturas em vídeos, certifique-se de criar representações de vídeo para canais no Screens as a Cloud Service. Consulte [aqui](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) para obter mais detalhes.
 
 Siga as etapas abaixo para usar a miniatura em vídeos:
 
@@ -68,6 +72,6 @@ A miniatura em vídeos é compatível com os seguintes casos de uso:
 
 * Um componente de vídeo com apenas a miniatura definida reproduzirá a miniatura.
 
-* Um componente de vídeo com o vídeo e miniatura definidos reproduzirá o vídeo.
+* Um componente de vídeo com o vídeo (se o vídeo tiver a representação correta) e o conjunto de miniaturas serão reproduzidos.
 
 * Um componente de vídeo com o conjunto de vídeos reproduzirá a miniatura, no caso de um erro de reprodução, ou será ignorado para o próximo item, caso a miniatura não esteja configurada.
