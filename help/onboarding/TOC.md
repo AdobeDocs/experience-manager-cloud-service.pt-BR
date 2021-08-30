@@ -5,7 +5,7 @@ breadcrumb-title: Guia de integração
 user-guide-description: Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: cef35b897c85040989150b1da1f868c1d7a10716
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 50%
