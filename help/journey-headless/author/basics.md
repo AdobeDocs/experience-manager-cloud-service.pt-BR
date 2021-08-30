@@ -4,9 +4,9 @@ description: Saiba mais sobre os conceitos e os mecanismos de criação de conte
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: d925333421b4a9ec1e2a7c553b43e042bb1e6fbe
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1693'
 ht-degree: 3%
 
 ---
@@ -73,7 +73,7 @@ No console, é possível selecionar pastas para navegar até o Fragmento do cont
 
 O console **Assets** tem **Barras de ferramentas de ação** dedicadas e **Ações rápidas** que você pode usar após selecionar um recurso (por exemplo, uma pasta ou fragmento de conteúdo).
 
-As Ações rápidas estão disponíveis para um único recurso:
+As Ações rápidas estão disponíveis para um único recurso, consulte **Basel** no exemplo abaixo:
 
 ![Ações rápidas](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,7 +101,7 @@ A menos que tenha pouquíssimos Fragmentos de conteúdo, você desejará organiz
 
 #### Criação de uma pasta {#creating-folder}
 
-Você pode fazer isso criando uma série de pastas na seção **Files** do console Assets. Selecione a opção **Criar** (canto superior direito), seguida de **Criar pasta**:
+Você pode fazer isso criando uma série de pastas na seção **Files** do console Assets. Selecione a opção **Create** (canto superior direito), seguida por **Folder**:
 
 ![Opção Criar pasta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -113,7 +113,7 @@ Uma caixa de diálogo será aberta onde você pode inserir os detalhes e, em seg
 
 Esta seção está um pouco mais avançada. Você não precisa realmente dele se estiver apenas começando e tentando coisas, mas ele é *very* útil quando você tem muitos fragmentos. Por isso é bom saber - mesmo que ainda não o utilize.
 
-Seu Arquiteto de conteúdo terá criado todos os Modelos de fragmento de conteúdo necessários para seu projeto atual e talvez alguns outros projetos também. Para ajudar a simplificar as coisas para seus autores, você pode limitar a lista de modelos disponíveis para uma pasta específica.
+Seu Arquiteto de conteúdo terá criado todos os Modelos de fragmento de conteúdo necessários para seu projeto atual e talvez alguns outros projetos também. Para ajudar a simplificar as coisas para si mesmo e para outros autores, você pode limitar a lista de modelos disponíveis para uma pasta específica.
 
 Depois de criar a pasta, você pode abrir a pasta **Propriedades**. Aqui estão várias guias com informações e detalhes de configuração sobre a pasta. Particularmente para Fragmentos de conteúdo, você pode usar a guia **Policies** para definir caminhos e/ou tags específicos para essa pasta. Isso limita os Modelos de fragmento de conteúdo disponíveis para uso na pasta, pois significa que os Modelos de fragmento de conteúdo devem atender a esses requisitos antes que possam ser usados para gerar fragmentos nessa pasta.
 
@@ -147,7 +147,7 @@ Desta vez, um assistente será aberto. A primeira etapa é selecionar o Modelo d
 
 ![Criar fragmento de conteúdo - selecione Modelo](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Depois de continuar com **Next**, você pode fornecer os detalhes do fragmento:
+Depois de continuar com **Next** você pode fornecer os detalhes (**Basic** e **Advanced**) do seu fragmento:
 
 ![Criar fragmento do conteúdo - fornecer nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
