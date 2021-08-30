@@ -1,12 +1,12 @@
 ---
 title: Vídeos interativos
 description: Saiba como trabalhar com vídeo interativo e vídeo que pode ser comprado no Dynamic Media.
-feature: Vídeos interativos
+feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '5941'
+source-wordcount: '5938'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ Para ver um vídeo interativo e que pode ser comprado, selecione [Demonstraçõe
 
 * Durante a reprodução, conforme os produtos são usados no vídeo, o produto idêntico aparece à direita como uma imagem em miniatura.
 
-* Para pausar o vídeo e abrir o Quickview do produto, selecione a miniatura. Por exemplo, selecione a imagem em miniatura de KitchenAid no vídeo para visualizar uma visualização de rotação de 360 graus do mixer ou amplie para ver os detalhes do mixer.
+* Para pausar o vídeo e abrir o Quickview do produto, selecione a miniatura. Por exemplo, selecione a imagem em miniatura de KitchenAid no vídeo para visualizar uma visualização de rotação de 360° do mixer ou amplie para ver os detalhes do mixer.
 
 Consulte também [Usar vídeo interativo com Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
 
@@ -99,8 +99,7 @@ Se estiver usando um WCM de terceiros (Web Content Manager), é necessário inte
 >* Sua implementação do Experience Manager *not* usa uma estrutura de integração de eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
 >
->
-Se sua implementação do Experience Manager usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
+>Se sua implementação do Experience Manager usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
 
 Comece identificando as variáveis dinâmicas usadas pela implementação existente do Quickview, para que seja possível mapear miniaturas de produtos para o produto correspondente do Quickview durante o processo de criação interativo de vídeo.
 
@@ -472,7 +471,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
       Na linha do tempo, selecione um segmento que deseja dividir ao meio e selecione **[!UICONTROL Dividir segmento]** na barra de ferramentas.
 
       Selecionar dois ou mais segmentos desativa o recurso **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Divisão de um segmento selecionado de dez segundos em dois segmentos de cinco segundos cada.
 

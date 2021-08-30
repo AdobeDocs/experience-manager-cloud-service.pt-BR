@@ -1,12 +1,12 @@
 ---
 title: Arquivo de informativo do Dynamic Media
 description: 'O informativo do Dynamic Media por Experience League é um informativo mensal. Ela foi criada para ajudar você a usar o Dynamic Media e o Dynamic Media Classic para obter valor imediatamente. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim informativo de balcão único. Por exemplo, há vídeos de instruções e visões gerais da solução. Leia sobre alguns dos principais recursos e características, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais. '
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 0cc54dd3590792b6842af030f4bb5b87e3c0fbe8
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Neste boletim informativo arquivado de balcão único, você pode encontrar recu
    * Saiba mais sobre um próximo webinar sobre a proteção de seus ativos digitais.
    * O próximo para no Adobe Insider Tour com informações preenchidas.
    * Recursos interessantes disponíveis quando você tem o Dynamic Media no Experience Manager Assets (Experience Manager Assets).
-   * Adicionar vídeos de 360 graus e miniaturas de vídeo personalizadas ao seu site.
+   * Adicionar vídeos de 360° e miniaturas de vídeo personalizadas ao seu site.
    * Conheça `Andrew Hathaway`, Consultor de soluções principal para Dynamic Media no Experience Manager Assets.
 
 * **[Junho De 2019, Edição 06](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**
