@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
+source-git-commit: bacc6335e25387933a1d39dba10c4cc930a71cdb
 workflow-type: tm+mt
-source-wordcount: '2322'
+source-wordcount: '2375'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Se houver a necessidade de identificar o principal no cluster, a API Apache Slin
 
 O estado não deve ser mantido na memória, mas persistido no repositório. Caso contrário, esse estado poderá ser perdido se uma instância for interrompida.
 
-## Estado no sistema de arquivos {#state-on-the-filesystem}
+## Estado do sistema de arquivos {#state-on-the-filesystem}
 
 O sistema de arquivos da instância não deve ser usado no AEM como um Cloud Service. O disco é efêmero e será descartado quando as instâncias forem recicladas. A utilização limitada do sistema de arquivos para armazenamento temporário relacionado ao processamento de pedidos únicos é possível, mas não deve ser utilizada abusivamente para arquivos enormes. Isso ocorre porque pode ter um impacto negativo na cota de uso de recursos e encontrar limitações de disco.
 
@@ -37,7 +37,7 @@ Como exemplo, onde o uso do sistema de arquivos não é compatível, a camada Pu
 
 Da mesma forma, com tudo o que está acontecendo de forma assíncrona como atuar em eventos de observação, não se pode garantir que seja executado localmente e, portanto, deve ser usado com cuidado. Isso é verdadeiro para eventos JCR e eventos de recurso Sling. No momento em que uma alteração ocorre, a instância pode ser removida e substituída por uma instância diferente. Outras instâncias na topologia que estão ativas nesse momento poderão reagir a esse evento. No entanto, neste caso, não se trata de um evento local e pode até não haver um líder ativo no caso de uma eleição de líder em curso, quando o evento é emitido.
 
-## Tarefas em segundo plano e trabalhos de longa execução {#background-tasks-and-long-running-jobs}
+## Tarefas em Segundo Plano e Trabalhos de Longa Execução {#background-tasks-and-long-running-jobs}
 
 O código executado como uma tarefa em segundo plano deve supor que a instância em execução pode ser desativada a qualquer momento. Portanto, o código deve ser resiliente e a maioria das importações deve ser retomada. Isso significa que, se o código for executado novamente, ele não deverá começar do início novamente, mas antes próximo de onde parou. Embora esse não seja um novo requisito para esse tipo de código, na AEM como Cloud Service é mais provável que ocorra uma interrupção da instância.
 
@@ -59,15 +59,15 @@ As alternativas que são conhecidas por funcionar, mas que podem exigir que voc�
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)  (não recomendado, pois está desatualizado e substituído pela versão 4.x)
 * [OK Http](https://square.github.io/okhttp/)  (Não fornecido pelo AEM)
 
-## Nenhuma Personalização da Interface do Usuário Clássica {#no-classic-ui-customizations}
+## Nenhuma personalização da interface clássica {#no-classic-ui-customizations}
 
 O AEM como Cloud Service só é compatível com a interface de usuário de toque para código de cliente de terceiros. A interface do usuário clássica não está disponível para personalização.
 
-## Evite Binários Nativos {#avoid-native-binaries}
+## Evitar binários Nativos {#avoid-native-binaries}
 
 O código não poderá baixar binários no tempo de execução nem modificá-los. Por exemplo, ele não poderá descompactar os arquivos `jar` ou `tar`.
 
-## Nenhum binário de transmissão por meio de AEM como Cloud Service {#no-streaming-binaries}
+## Nenhum binário de transmissão por meio do AEM como um Cloud Service {#no-streaming-binaries}
 
 Os binários devem ser acessados por meio da CDN, que fornecerá binários fora dos principais serviços de AEM.
 
@@ -77,7 +77,7 @@ Por exemplo, não use `asset.getOriginal().getStream()`, o que aciona o download
 
 A replicação inversa de Publicar para autor não é compatível no AEM como um Cloud Service. Se tal estratégia for necessária, você poderá usar um armazenamento de persistência externo compartilhado entre o farm de instâncias de Publicação e, potencialmente, o cluster Autor.
 
-## Os agentes de replicação encaminhados podem precisar ser transferidos {#forward-replication-agents}
+## Os agentes de replicação de encaminhamento podem precisar ser transferidos {#forward-replication-agents}
 
 O conteúdo é replicado de Autor para Publicação por meio de um mecanismo de sub-rede. Não há suporte para agentes de replicação personalizados.
 
@@ -129,7 +129,7 @@ Para desenvolvimento local, os desenvolvedores têm acesso total ao CRXDE Lite (
 
 Observe que, no desenvolvimento local (usando o SDK), `/apps` e `/libs` podem ser gravadas diretamente, o que é diferente dos ambientes do Cloud, onde essas pastas de nível superior são imutáveis.
 
-### AEM como ferramentas de desenvolvimento do Cloud Service {#aem-as-a-cloud-service-development-tools}
+### AEM como ferramentas de desenvolvimento de Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 Os clientes podem acessar o CRXDE lite no ambiente de desenvolvimento do nível de criação, mas não no ambiente de preparo ou produção. O repositório imutável (`/libs`, `/apps`) não pode ser gravado no tempo de execução, portanto, tentar fazer isso resultará em erros.
 
@@ -189,7 +189,7 @@ O recurso é compatível com código Java ou bibliotecas que resultam em tráfeg
 
 Abaixo está uma amostra de código:
 
-```
+```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
   String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
   URL finalUrl = endpointUri.resolve(relativeUri).toURL();
@@ -200,6 +200,26 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
   try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
     return new JSONObject(new JSONTokener(responseReader));
   }
+}
+```
+
+Algumas bibliotecas exigem configuração explícita para usar as propriedades padrão do sistema Java para configurações de proxy.
+
+Um exemplo usando o Apache HttpClient, que requer chamadas explícitas para
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) ou use
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
 }
 ```
 
@@ -219,7 +239,7 @@ AEM como Cloud Service requer que o email de saída seja criptografado. As seç�
 >
 >O serviço de email pode ser configurado com suporte a OAuth2. Para obter mais informações, consulte [Suporte OAuth2 para o serviço de email](/help/security/oauth2-support-for-mail-service.md).
 
-### Solicitando acesso {#requesting-access}
+### Solicitar acesso {#requesting-access}
 
 Por padrão, o email de saída é desativado. Para ativá-lo, envie um tíquete de suporte com:
 
@@ -256,6 +276,6 @@ Se a porta 587 tiver sido solicitada (somente permitida se o servidor de e-mail 
 
 A propriedade `smtp.starttls` será automaticamente definida pelo AEM como um Cloud Service no tempo de execução para um valor apropriado. Portanto, se `smtp.tls` estiver definido como true, `smtp.startls` será ignorado. Se `smtp.ssl` for definido como falso, `smtp.starttls` será definido como verdadeiro. Isso ocorre independentemente dos valores `smtp.starttls` definidos na configuração OSGI.
 
-## [!DNL Assets] diretrizes de desenvolvimento e casos de uso  {#use-cases-assets}
+## [!DNL Assets] diretrizes de desenvolvimento e casos de uso {#use-cases-assets}
 
 Para saber mais sobre casos de uso de desenvolvimento, recomendações e materiais de referência do Assets as a Cloud Service, consulte [Referência do desenvolvedor para Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
