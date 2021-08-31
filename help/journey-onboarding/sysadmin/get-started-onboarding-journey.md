@@ -4,9 +4,9 @@ description: Siga esta página para saber como começar a usar o jornada de inte
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,12 @@ Siga as etapas abaixo para navegar até o Admin Console e revisar a função de 
 >[!NOTE]
 >Você deve ser um Administrador do sistema para concluir as etapas a seguir com êxito.
 
-1. Clique em **Introdução** do email de boas-vindas para navegar até o Admin Console ou navegar diretamente para o Admin Console a partir de [aqui](https://adminconsole.adobe.com).
+1. Clique em **Introdução** do email de boas-vindas, como mostrado na figura abaixo, para navegar até o Admin Console ou navegar diretamente para o Admin Console a partir de [aqui](https://adminconsole.adobe.com).
 
    >[!NOTE]
    >Como Administrador do sistema, você receberá vários emails. Procure o email de boas-vindas que fornece as informações sobre o nome da organização ao qual você recebeu acesso e clique em **Introdução**. Se não conseguir localizar o email, navegue diretamente para [Admin Console](https://adminconsole.adobe.com/).
+
+   ![](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Faça logon usando o [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Após o logon bem-sucedido, você verá a página **Visão geral** do Adobe Admin Console, conforme mostrado abaixo.
 
