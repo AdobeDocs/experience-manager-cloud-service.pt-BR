@@ -2,8 +2,9 @@
 title: 'Atribuir membros da equipe ao AEM como perfis de produto do Cloud Service '
 description: Siga esta página para saber como atribuir membros da equipe ao AEM como perfis de produto do Cloud Service
 index: false
+feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: a9eacc44c6be9101fae131c6fb6b95612efeac53
+source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 2%

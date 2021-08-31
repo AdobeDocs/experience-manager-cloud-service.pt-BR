@@ -3,9 +3,9 @@ sub-product: Onboarding Journey
 user-guide-title: Jornada de integração
 breadcrumb-title: Jornada de integração
 user-guide-description: Comece aqui para obter uma jornada guiada projetada para uma persona de Administrador do sistema, apresentando os requisitos, as etapas e a abordagem. A jornada define personas adicionais com as quais o Administrador do sistema deve interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o de um administrador.
-feature: Developer Tools
+feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
