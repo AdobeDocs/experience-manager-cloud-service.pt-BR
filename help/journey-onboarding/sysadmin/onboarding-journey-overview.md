@@ -4,9 +4,9 @@ description: Siga esta página para saber como começar a usar o jornada de inte
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: 792ec993bd9d628fac49b9553d5923c74195f4c7
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Você explorará muitos tópicos nesta jornada. Os artigos a seguir fornecem um 
 | # | Artigo | Descrição |
 |---|---|---|
 | 0 | Jornada de integração | Este documento |
-| 1 | Saiba mais sobre conceitos de integração, como:<br>[Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Sistema Adobe Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Introdução ao Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM como Cloud Service e Perfis de produto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Entrando em contato com o suporte ao Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Saiba mais sobre conceitos de integração. |
+| 1 | Saiba mais sobre Conceitos de integração, como:<br>[Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en){target=&quot;_blank&quot;}<br>[Sistema Identity Management Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en){target=&quot;_blank&quot;}<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Introdução ao Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM como Cloud Service Team and Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Contactando o suporte ao Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | Saiba mais sobre conceitos de integração. |
 | 2 | [Introdução ao integração](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md) | Saiba mais sobre como fazer logon no Admin Console e verificar seu perfil como Administrador do sistema |
 | 3 | [Atribuir membros da equipe aos perfis de produto do Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) | Revise os Perfis de produto do Cloud Manager e saiba como atribuir membros da equipe aos perfis de produto do Cloud Manager. |
 | 4 | [Configuração de recursos da nuvem via Cloud Manager](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md) | Saiba como os recursos da nuvem são criados e quem pode fazê-lo. Além disso, saiba como são criados os programas e ambientes em nuvem. |
