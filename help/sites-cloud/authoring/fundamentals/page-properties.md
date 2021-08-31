@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 59%
+source-wordcount: '1955'
+ht-degree: 58%
 
 ---
 
@@ -55,11 +55,14 @@ As propriedades são distribuídas por várias guias.
 
 * **Horário ligado/desligado**
 
-   * **No momento**  - a data e a hora em que a página publicada ficará visível (renderizada) no ambiente de publicação. A página deve ser publicada manualmente ou por replicação automática pré-configurada.
+   >[!NOTE]
+   >
+   > Consulte [Ativação e desativação - Configuração do acionador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obter detalhes sobre como configurar a replicação automática relacionada.
 
-      >[!NOTE]
-      >
-      > Consulte [Ativação e desativação - Configuração do acionador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obter detalhes sobre como configurar a replicação automática relacionada.
+   >[!NOTE]
+   >Se o **No Tempo** ou **Tempo desligado** estiver no passado e a replicação automática estiver configurada, a ação relevante será acionada imediatamente.
+
+   * **No momento**  - a data e a hora em que a página publicada ficará visível (renderizada) no ambiente de publicação. A página deve ser publicada manualmente ou por replicação automática pré-configurada.
 
       * Se já [publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) esta página será mantida inativa (oculta) até a renderização no horário especificado.
       * Se não for publicada e configurada para replicação automática, a página será publicada automaticamente e renderizada, no horário especificado.
@@ -87,8 +90,6 @@ As propriedades são distribuídas por várias guias.
       * Toque ou clique novamente para adicionar vários.
       * Toque ou clique no ícone **Remove** para excluir a URL personalizada.
    * **Redirecionar URL personalizada**  - Indica se você deseja que a página use a URL personalizada.
-
-
 
 
 ### Avançado  {#advanced}
