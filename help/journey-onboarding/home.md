@@ -1,7 +1,7 @@
 ---
 title: Jornada de integração
 description: Comece aqui para obter uma visão geral da jornada de integração guiada disponível para entender a experiência de integração.
-source-git-commit: 39dda310bbe3ca0a47e8d38f18200351730a5b4e
+source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 2%
@@ -34,10 +34,10 @@ A seguir estão as personas que interagem nessa jornada.
 | Persona | Descrição | Função no Jornada |
 |---|---|---|
 | Administrador do sistema | Fornece provisionamento inicial de recursos de nuvem e atribuição de usuários a funções apropriadas com base em suas responsabilidades de trabalho, após as quais cada membro é capaz de fazer logon e acessar seus AEM como recursos de Cloud Service. | Gerencia todos os aspectos de seus usuários, desde o acesso às permissões. |
-| AEM Author | Cria e analisa o conteúdo (que pode ser de vários tipos; por exemplo, páginas, ativos, publicações) antes de ser publicado no site. | Após obter as permissões, você pode iniciar a jornada do gerente de implantação. |
-| Desenvolvedor | Tem experiência no desenvolvimento de aplicativos AEM que consomem conteúdo de diferentes fontes | Após obter as permissões, você pode iniciar sua própria jornada de desenvolvedor |
-| Gerenciador de implantação | Adiciona ou atualiza um ambiente, executa qualquer pipeline e implanta código em AEM ambiente ou qualidade de código. | Após obter as permissões, você pode iniciar a jornada do gerente de implantação. |
+| AEM Author | Cria e analisa o conteúdo (que pode ser de vários tipos; por exemplo, páginas, ativos, publicações) antes de ser publicado no site. | Depois de conceder as permissões, o pode iniciar sua própria jornada. |
+| Desenvolvedor | Desenvolve aplicativos AEM que consomem conteúdo de diferentes fontes | Após obter as permissões, você pode iniciar sua própria jornada de desenvolvedor |
+| Gerenciador de implantação | Adiciona ou atualiza um ambiente, executa o pipeline e implanta código para AEM ambiente ou qualidade de código. | Após obter as permissões, você pode iniciar a jornada do gerente de implantação. |
 
 ## Explorar a Jornada onboard {#exploring-onboarding-journey}
 
-Explore o [Onboard Jornada](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md) para saber mais.
+Explore o primeiro passo para a Jornada onboard de [here](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md) e comece!

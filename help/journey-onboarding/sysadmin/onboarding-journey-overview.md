@@ -4,30 +4,14 @@ description: Siga esta página para saber como começar a usar o jornada de inte
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 792ec993bd9d628fac49b9553d5923c74195f4c7
+source-git-commit: 5a91f45b4ed933e37f5af61a194d08e204cd1514
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 1%
+source-wordcount: '532'
+ht-degree: 2%
 
 ---
 
 # Jornada de integração {#onboarding-jourrney}
-
-Parabéns por começar sua jornada com AEM como Cloud Service! Estamos animados por você estar aqui e não podemos esperar para começar sua jornada de integração. Se você estiver implantando um novo aplicativo ou migrando um existente, este guia serve como ponto de partida para garantir que suas equipes estejam configuradas e tenham acesso ao AEM como Cloud Service.
-
-## Introdução {#introduction}
-
-Este guia aborda os tópicos mais importantes para que, ao concluir, você tenha:
-
-* Compreensão completa do que esperar durante o AEM como uma jornada de integração de Cloud Service.
-* Ativação e funcionamento da equipe e primeiros passos para aprender a criar e desenvolver conteúdo para o AEM como um aplicativo Cloud Service.
-
-Isso significa:
-
-* Sua equipe está configurada e tem acesso aos recursos da nuvem,
-* Os autores do AEM terão acesso ao AEM como Cloud Service,
-* Os desenvolvedores de AEM e os gerentes de implantação terão acesso ao AEM como Cloud Service.
-
 
 ## Experiência de integração {#audience}
 
