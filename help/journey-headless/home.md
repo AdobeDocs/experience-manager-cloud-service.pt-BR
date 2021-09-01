@@ -1,9 +1,9 @@
 ---
 title: AEM Jornadas headless
 description: Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para compreender AEM recursos avançados sem periféricos.
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -30,19 +30,11 @@ Se você quiser saber como o Adobe recomenda como resolver casos de negócios se
 
 ## Públicos {#audiences}
 
-As Jornadas sem periféricos são projetadas para várias personas, apresentando os requisitos, as etapas e a abordagem para implementar soluções sem periféricos a partir de diferentes perspectivas. Uma jornada é definida para um persona específico, mas também define personas adicionais com as quais o leitor interage.
+As Jornadas headless são projetadas para diversas personas, apresentando os requisitos, etapas e abordagem para implementar soluções headless a partir de diferentes perspectivas.
 
-A seguir estão as personas que interagem nas Jornadas sem cabeçalho.
+Uma jornada individual é definida para um público-alvo ou persona específico, mas também define personas adicionais com as quais o leitor interage.
 
-| Persona | Descrição | Função no Jornada |
-|---|---|---|
-| Desenvolvedor | Tem experiência no desenvolvimento de aplicativos sem periféricos que consomem conteúdo de diferentes fontes | O desenvolvedor trabalha com autores, administradores e arquitetos para entender os dados e criar um aplicativo sem periféricos que consome esses dados. |
-| Autor do conteúdo | Cria e gerencia conteúdo entregue sem interface | Os autores de conteúdo criam conteúdo que o desenvolvedor oferece sem cabeçalho. |
-| Administrador | Gerencia a configuração básica e a configuração do AEM | O desenvolvedor trabalha com o administrador para fazer as alterações de configuração necessárias para o desenvolvimento. |
-| Arquitetura de conteúdo | Analisa os requisitos dos dados que devem ser entregues sem periféricos e define a estrutura desses dados | Os desenvolvedores trabalham com o arquiteto de conteúdo para entender a estrutura dos dados e os requisitos para fornecê-los sem interrupções. |
-| Especialista em tradução | Define qual conteúdo deve ser traduzido e gerencia esses workflows | O especialista em Tradução trabalha com o arquiteto de conteúdo para definir a organização inicial do conteúdo e pode trabalhar com o desenvolvedor para verificar quaisquer requisitos específicos de tradução. |
-
-As informações nessas jornadas podem, é claro, ser úteis para todas as pessoas, mas algumas informações podem ser supérfluas para determinadas funções.
+As informações nas jornadas podem, é claro, ser úteis para várias personas, mas uma jornada é direcionada a uma persona específica e algumas informações podem ser supérfluas para determinadas funções.
 
 ## Jornadas headless {#headless-journeys}
 

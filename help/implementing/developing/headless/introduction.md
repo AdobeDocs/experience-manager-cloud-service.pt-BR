@@ -2,15 +2,15 @@
 title: Desenvolvimento autônomo do AEM Sites as a Cloud Service
 description: Saiba como o AEM como um Cloud Service poderoso de recursos sem cabeçalho, como Modelos de conteúdo, Fragmentos de conteúdo e a API GraphQL trabalham juntos para permitir que você gerencie suas experiências centralmente e as distribua pelos canais.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 2%
+source-wordcount: '515'
+ht-degree: 1%
 
 ---
 
 
-# Desenvolvimento sem periféricos para o AEM Sites as a Cloud Service {#headless-development}
+# Desenvolvimento autônomo do AEM Sites as a Cloud Service {#headless-development}
 
 Saiba como o AEM como um Cloud Service poderoso de recursos sem cabeçalho, como Modelos de conteúdo, Fragmentos de conteúdo e a API GraphQL trabalham juntos para permitir que você gerencie suas experiências centralmente e as distribua pelos canais.
 
@@ -22,7 +22,7 @@ A implementação sem cabeçalho perde o gerenciamento de página e componente, 
 
 ![Modelos de implementação de AEM](assets/aem-implementation-models.png)
 
-## Comparação entre Cabeça e Sem Cabeça {#headful-headless}
+## Comparação entre headful e headless {#headful-headless}
 
 Este documento se concentra no modelo de implementação sem periféricos de AEM. No entanto, o headful versus headless não precisam ser uma escolha binária no AEM. Os recursos headless podem ser usados para gerenciar e entregar seu conteúdo a uma variedade de endpoints, além de permitir que os autores de conteúdo editem aplicativos de página única. Tudo em AEM.
 
@@ -30,7 +30,7 @@ Este documento se concentra no modelo de implementação sem periféricos de AEM
 >
 >Consulte o documento [Cabeçalho e Sem Cabeça em AEM](/help/implementing/developing/headful-headless.md) para obter mais informações.
 
-## AEM como um Cloud Service e sem cabeçalho {#aem-headless}
+## AEM como Cloud Service e sem cabeça {#aem-headless}
 
 O AEM as a Cloud Service é uma ferramenta flexível para o modelo de implementação sem periféricos, oferecendo três serviços poderosos:
 
@@ -53,6 +53,6 @@ Há vários recursos disponíveis para você começar a usar AEM recursos headle
 
 | Recurso | Descrição | Tipo | Público | Est. Hora |
 |---|---|---|---|---|
-| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Para obter uma visão geral abrangente dos AEM recursos sem periféricos da teoria de ficar sem periféricos entrando em vigor com seu primeiro projeto sem periféricos, comece aqui. | Guia | Desenvolvedores | 1 hora |
-| [Guia de introdução sem cabeçalho](/help/implementing/developing/headless/getting-started/introduction.md) | Para obter um breve resumo dos principais recursos sem periféricos AEM, consulte esta visão geral de início rápido. | Início rápido | Desenvolvedores, administradores | 20 minutos |
-| [Introdução ao AEM tutorial prático](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | Se preferir uma abordagem prática, este tutorial mergulha diretamente na criação de um projeto simples e sem periféricos. | Tutorial | Desenvolvedores | 2 horas |
+| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | **Para usuários novos de AEM e** tecnologias headless, comece aqui para uma introdução abrangente à AEM e seus recursos sem periféricos da teoria do headless até entrar com seu primeiro projeto sem periféricos. | Guia | Desenvolvedores **novos a AEM e sem periféricos** | 1 hora |
+| [Guia de introdução sem cabeçalho](/help/implementing/developing/headless/getting-started/introduction.md) | **Para** usuários experientes do AEM que precisam de um breve resumo dos principais AEM recursos sem periféricos, confira esta visão geral de início rápido. | Início rápido | Desenvolvedores, Administradores **com AEM experiência** | 20 minutos |
+| [Introdução ao AEM tutorial prático](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **Se preferir uma abordagem prática e estiver familiarizado com o AEM**, este tutorial mergulha diretamente na criação de um projeto simples e sem periféricos. | Tutorial | Desenvolvedores | 2 horas |

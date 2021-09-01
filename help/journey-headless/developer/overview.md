@@ -2,9 +2,9 @@
 title: jornada do desenvolvedor sem periféricos do AEM
 description: Comece aqui para obter uma jornada guiada com os recursos avançados e flexíveis do AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: d7d647e2114ed808ad29ed0802d838d257a9df03
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1201'
 ht-degree: 2%
 
 ---
@@ -15,11 +15,9 @@ Comece aqui para obter uma jornada guiada por meio dos recursos avançados e fle
 
 ## Introdução {#introduction}
 
-A implementação sem periféricos está se tornando cada vez mais importante para fornecer experiências ao seu público-alvo, onde quer que estejam e independentemente do canal.
-
 A implementação sem cabeçalho perde o gerenciamento de página e componente, como é tradicional em soluções de pilha completa, e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em canais e em sua entrega entre canais. É um padrão de desenvolvimento moderno e dinâmico para a implementação de experiências digitais.
 
-Este guia aborda os tópicos mais importantes para que você, ao concluir:
+Este guia aborda os tópicos de implementação sem cabeçalho no AEM para que, ao concluir, você:
 
 * Ter uma compreensão completa do que é entrega de conteúdo sem periféricos e de seus benefícios.
 * Entenda AEM recursos sem periféricos e como eles trabalham juntos para proporcionar uma experiência sem periféricos.
@@ -31,11 +29,11 @@ Este guia aborda os tópicos mais importantes para que você, ao concluir:
 
 As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
 
-Se você quiser saber como o Adobe recomenda como resolver casos de negócios sem periféricos com AEM, AEM Jornadas sem periféricos são o ponto de partida.
+Se você quiser saber como o Adobe recomenda como resolver casos de negócios sem periféricos com AEM, [AEM Jornadas sem periféricos](/help/journey-headless/home.md) são onde começar.
 
 >[!TIP]
 >
-> Se preferir **aprender fazendo** e tiver uma inclinação técnica, visite os tutoriais AEM Headless, que são organizados pela API e pela estrutura e estão disponíveis na [seção Recursos adicionais](#additional-resources) no final deste documento.
+> Se você preferir **aprender fazendo** e tiver inclinação técnica, visite os tutoriais AEM Headless, que são organizados pela API e pela estrutura e estão disponíveis na [seção Recursos adicionais](#additional-resources) no final deste documento.
 
 ## Público {#audience}
 
@@ -43,13 +41,12 @@ Essa jornada foi projetada para o persona do desenvolvedor, apresentando os requ
 
 A seguir estão as personas que interagem nessa jornada.
 
-| Persona | Descrição | Função no Jornada |
+| Persona | Descrição | Função nesta Jornada |
 |---|---|---|
-| Desenvolvedor | Tem experiência no desenvolvimento de aplicativos sem periféricos que consomem conteúdo de diferentes fontes | Público-alvo desta jornada |
+| Desenvolvedor (público-alvo) | Tem experiência no desenvolvimento de aplicativos sem periféricos que consomem conteúdo de diferentes fontes | Público-alvo desta jornada |
 | Autor do conteúdo | Cria e gerencia conteúdo entregue sem interface | Os autores de conteúdo criam conteúdo que o desenvolvedor oferece sem cabeçalho. |
 | Administrador | Gerencia a configuração básica e a configuração do AEM | O desenvolvedor trabalha com o administrador para fazer as alterações de configuração necessárias para o desenvolvimento. |
 | Arquitetura de conteúdo | Analisa os requisitos dos dados que devem ser entregues sem periféricos e define a estrutura desses dados | Os desenvolvedores trabalham com o arquiteto de conteúdo para entender a estrutura dos dados e os requisitos para fornecê-los sem interrupções. |
-| Especialista em tradução | Define qual conteúdo deve ser traduzido e gerencia esses workflows | O especialista em Tradução trabalha com o arquiteto de conteúdo para definir a organização inicial do conteúdo e pode precisar trabalhar com o desenvolvedor para verificar quaisquer requisitos específicos de tradução. |
 
 As informações nesta jornada podem, é claro, ser úteis para todas as pessoas, mas algumas informações podem ser supérfluas para determinadas funções. Fique atento às [próximas jornadas que abrangem funções adicionais.](/help/journey-documentation/home.md#journeys)
 

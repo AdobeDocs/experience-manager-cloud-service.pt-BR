@@ -1,12 +1,12 @@
 ---
 title: jornada do AEM Headless Content Architect
 description: Comece aqui para obter uma jornada guiada através dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como modelar seu conteúdo em seu primeiro projeto sem interface.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '789'
 ht-degree: 2%
 
 ---
@@ -27,6 +27,14 @@ Este guia aborda os tópicos mais importantes para que você, ao concluir:
 * Entenda o que é entrega de conteúdo sem periféricos e seus benefícios.
 * Entenda como modelar o conteúdo para AEM recursos sem periféricos.
 * Tenha a capacidade de realizar as primeiras etapas de modelagem do conteúdo para o seu primeiro projeto sem periféricos AEM.
+
+## jornadas de documentação de AEM {#documentation-journeys}
+
+[Uma ](/help/journey-documentation/home.md) Jornadas da documentação reúne vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo em AEM, entender e resolver um problema comercial do início ao fim, além de assumir um tópico prévio mínimo ou conhecimento AEM.
+
+As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
+
+Se você quiser saber como o Adobe recomenda como resolver casos de negócios sem periféricos com AEM, [AEM Jornadas sem periféricos](/help/journey-headless/home.md) são onde começar.
 
 ## Público {#audience}
 

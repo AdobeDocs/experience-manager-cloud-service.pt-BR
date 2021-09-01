@@ -1,10 +1,10 @@
 ---
 title: Noções básicas sobre criação de aprendizado
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS sem cabeçalho usando Fragmentos de conteúdo.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: d925333421b4a9ec1e2a7c553b43e042bb1e6fbe
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 3%

@@ -1,10 +1,10 @@
 ---
 title: Jornada de integração
 description: Comece aqui para obter uma visão geral da jornada de integração guiada disponível para entender a experiência de integração.
-source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
+source-git-commit: 9cea7a8a7adf363b6b969a1a427ebf7ff473469b
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 2%
+source-wordcount: '462'
+ht-degree: 1%
 
 ---
 
@@ -24,6 +24,14 @@ Isso significa:
 * Sua equipe está configurada e tem acesso aos recursos da nuvem,
 * Os autores do AEM terão acesso ao AEM como Cloud Service,
 * Os desenvolvedores de AEM e os gerentes de implantação terão acesso ao AEM como Cloud Service.
+
+## jornadas de documentação de AEM {#documentation-journeys}
+
+[Uma ](/help/journey-documentation/home.md) Jornadas da documentação reúne vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo em AEM, entender e resolver um problema comercial do início ao fim, além de assumir um tópico prévio mínimo ou conhecimento AEM.
+
+As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
+
+Se você quiser saber como o Adobe recomenda como colocar sua equipe em funcionamento criando conteúdo para seu AEM como um aplicativo Cloud Service, é aqui que você começa!
 
 ## Públicos {#audiences}
 

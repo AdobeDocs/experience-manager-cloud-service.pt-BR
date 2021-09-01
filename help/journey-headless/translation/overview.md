@@ -1,10 +1,10 @@
 ---
 title: jornada de tradução sem cabeçalho AEM
 description: Comece aqui para obter uma jornada guiada por meio da tradução do conteúdo sem periféricos usando AEM ferramentas de tradução avançadas.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 9de8b0b295808d0f0fa5bc21a74345e2ba2655d4
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Se você já está familiarizado com AEM, sem cabeça e tradução, você pode j
 
 As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
 
-Se você quiser saber como o Adobe recomenda como resolver casos de negócios sem periféricos com AEM, AEM Jornadas sem periféricos são o ponto de partida.
+Se você quiser saber como o Adobe recomenda como resolver casos de negócios sem periféricos com AEM, [AEM Jornadas sem periféricos](/help/journey-headless/home.md) são onde começar.
 
 ## Público {#audience}
 

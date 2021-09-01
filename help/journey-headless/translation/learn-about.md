@@ -1,10 +1,10 @@
 ---
 title: Saiba mais sobre o conteúdo sem periféricos e como traduzi-lo em AEM
 description: Aprenda conceitos sem interface, como eles mapeiam para AEM e a teoria AEM tradução.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
