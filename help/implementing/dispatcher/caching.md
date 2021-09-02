@@ -3,9 +3,9 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1531'
 ht-degree: 1%
 
 ---
@@ -40,10 +40,12 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
    </LocationMatch>
    ```
 
-   Tenha cuidado ao definir cabeçalhos de controle de cache global ou aqueles que correspondem a um grande regex, de modo que eles não sejam aplicados ao conteúdo que você pretende manter privado. Considere o uso de várias diretivas para garantir que as regras sejam aplicadas de forma refinada. Dito isso, o AEM como Cloud Service removerá o cabeçalho do cache se detectar que ele foi aplicado ao que detecta como não armazenável em cache pelo dispatcher, conforme descrito na documentação do dispatcher. Para forçar o AEM a sempre aplicar o armazenamento em cache, é possível adicionar a opção &quot;sempre&quot; da seguinte maneira:
+   Tenha cuidado ao definir cabeçalhos de controle de cache global ou aqueles que correspondem a um grande regex, de modo que eles não sejam aplicados ao conteúdo que você pretende manter privado. Considere o uso de várias diretivas para garantir que as regras sejam aplicadas de forma refinada. Dito isso, o AEM como Cloud Service removerá o cabeçalho do cache se detectar que ele foi aplicado ao que detecta como não armazenável em cache pelo dispatcher, conforme descrito na documentação do dispatcher. Para forçar o AEM a sempre aplicar os cabeçalhos de cache, é possível adicionar a opção **always** da seguinte maneira:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
+        Header unset Cache-Control
+        Header unset Expires
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -56,18 +58,20 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
    { /glob "*" /type "allow" }
    ```
 
-* Para evitar que conteúdo específico seja armazenado em cache, defina o cabeçalho Controle de Cache como *private*. Por exemplo, o seguinte impediria que o conteúdo html em um diretório chamado **myfolder** fosse armazenado em cache:
+* Para evitar que conteúdo específico seja armazenado em cache, defina o cabeçalho Controle de Cache como *private*. Por exemplo, o seguinte impediria que o conteúdo html em um diretório chamado **secure** fosse armazenado em cache:
 
    ```
-      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
-      Header set Cache-Control “private”
+      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+      Header unset Cache-Control
+      Header unset Expires
+      Header always set Cache-Control “private”
      </LocationMatch>
    ```
 
    >[!NOTE]
    >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirão valores com êxito.
 
-### Bibliotecas do lado do cliente (js,css) {#client-side-libraries}
+### Bibliotecas do lado do cliente (js, css) {#client-side-libraries}
 
 * ao usar AEM estrutura de biblioteca do lado do cliente, o JavaScript e o código CSS são gerados de forma que os navegadores possam armazená-los em cache indefinidamente, já que qualquer alteração se manifesta como novos arquivos com um caminho exclusivo.  Em outras palavras, o HTML que faz referência às bibliotecas de clientes será produzido conforme necessário para que os clientes possam ter novo conteúdo conforme ele é publicado. O controle de cache é definido como &quot;imutável&quot; ou 30 dias para navegadores mais antigos que não respeitam o valor &quot;imutável&quot;.
 * consulte a seção [Bibliotecas do lado do cliente e consistência da versão](#content-consistency) para obter mais detalhes.
@@ -98,7 +102,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
    >[!NOTE]
    >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirão valores com êxito.
 
-### Outros tipos de arquivo de conteúdo no armazenamento de nó {#other-content}
+### Outros tipos de arquivos de conteúdo no armazenamento de nós {#other-content}
 
 * sem armazenamento em cache padrão
 * o padrão não pode ser definido com a variável `EXPIRATION_TIME` usada para tipos de arquivo html/text
@@ -108,7 +112,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
 
 Em geral, não será necessário invalidar o cache do dispatcher. Em vez disso, você deve confiar no dispatcher atualizando seu cache quando o conteúdo estiver sendo republicado e o CDN respeitar os cabeçalhos de expiração do cache.
 
-### Invalidação do Cache do Dispatcher durante Ativação/Desativação {#cache-activation-deactivation}
+### Invalidação de cache do Dispatcher durante a ativação/desativação {#cache-activation-deactivation}
 
 Como nas versões anteriores do AEM, a publicação ou o cancelamento da publicação de páginas limpará o conteúdo do cache do dispatcher. Se houver suspeita de um problema de cache, os clientes devem republicar as páginas em questão.
 
@@ -134,7 +138,7 @@ Se houver uma preocupação de que o cache do dispatcher não esteja sendo limpo
 
 A CDN gerenciada por Adobe respeita os TTLs e, portanto, não há necessidade de liberá-la. Se houver suspeita de problema, [entre em contato com o suporte ao cliente](https://helpx.adobe.com/support.ec.html) que pode liberar um cache CDN gerenciado por Adobe, conforme necessário.
 
-## Bibliotecas do lado do cliente e consistência de versão {#content-consistency}
+## Bibliotecas do lado do cliente e consistência da versão {#content-consistency}
 
 As páginas são compostas de HTML, Javascript, CSS e imagens. Os clientes são incentivados a aproveitar o [Client-Side Library (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) para importar recursos Javascript e CSS para páginas HTML, levando em conta as dependências entre as bibliotecas JS.
 
@@ -144,7 +148,7 @@ Quando as novas versões das bibliotecas são lançadas para produção, as pág
 
 O mecanismo para isso é um hash serializado, que é anexado ao link da biblioteca do cliente, garantindo um url exclusivo com versão para o navegador armazenar em cache o CSS/JS. O hash serializado só é atualizado quando o conteúdo da biblioteca do cliente muda. Isso significa que, se ocorrerem atualizações não relacionadas (ou seja, sem alterações no css/js subjacente da biblioteca do cliente), mesmo com uma nova implantação, a referência permanecerá a mesma, garantindo menos interrupção do cache do navegador.
 
-### Ativação das versões do Longcache das bibliotecas do lado do cliente - AEM como um Cloud Service SDK Quickstart {#enabling-longcache}
+### Ativação das versões do Longcache das bibliotecas do lado do cliente - AEM como um Início rápido do SDK do Cloud Service {#enabling-longcache}
 
 As inclusões padrão de clientlib em uma página HTML são semelhantes ao seguinte exemplo:
 
