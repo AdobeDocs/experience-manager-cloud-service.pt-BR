@@ -1,10 +1,9 @@
 ---
 title: 'Atribuindo membros da equipe a perfis de produto do Cloud Manager '
 description: Siga esta página para saber como atribuir membros da equipe a perfis de produto do Cloud Manager
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%

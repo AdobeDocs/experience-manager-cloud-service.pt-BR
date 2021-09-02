@@ -1,10 +1,9 @@
 ---
 title: Jornada de integração
 description: Siga esta página para saber como começar a usar o jornada de integração
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 5a91f45b4ed933e37f5af61a194d08e204cd1514
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 2%
