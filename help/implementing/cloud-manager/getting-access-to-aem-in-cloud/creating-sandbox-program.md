@@ -2,9 +2,9 @@
 title: 'Criação de um programa de sandbox '
 description: Criação de um programa de sandbox
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,6 @@ Siga as etapas abaixo para criar um programa sandbox:
 1. Inicie a página de aterrissagem do Cloud Manager e clique em **Adicionar programa** no canto superior direito da tela.
 
    ![](assets/first_timelogin1.png)
-
-   >[!NOTE]
-   >Para saber como acessar o Cloud Manager, consulte [Página de aterrissagem do Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) para obter mais detalhes.
 
 1. No assistente criar programa, selecione **Configurar uma sandbox**. O usuário envia o nome do programa antes de selecionar **Criar**.
 
