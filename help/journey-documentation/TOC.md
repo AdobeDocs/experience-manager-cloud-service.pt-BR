@@ -5,9 +5,9 @@ breadcrumb-title: jornadas de documentação de AEM
 user-guide-description: Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu projeto.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 65f0bc92d0ce60dd55b17b5ee8875d8e88033266
+source-git-commit: de797ba7a59afa911a5a0d719b4b905d6cfcbad4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,14 @@ Please note that all links to other guides need to be absolute references with l
    + [Atribuir membros da equipe ao AEM como perfis de produto do Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-aem-cloud-service.html)
    + [Caminho de aprendizado para desenvolvedores e gerentes de implantação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-developers-deploymentmanagers.html)
    + [Caminho de aprendizado para usuários de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-aem-users.html)
++ Jornada de tradução de sites {#sites-translation}
+   + [Entender a tradução de sites no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
+   + [Introdução à tradução de sites AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/getting-started.html)
+   + [Saiba mais sobre o conteúdo de sites e como traduzir em AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/learn-about.html)
+   + [Configurar conector de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/configure-connector.html)
+   + [Configurar regras de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translation-rules.html)
+   + [Traduzir conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translate-content.html)
+   + [Publicar conteúdo traduzido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/publish-content.html)
 + Jornadas headless {#headless}
    + [Página inicial do Jornada sem periféricos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
    + Jornada do desenvolvedor sem periféricos {#developer}
