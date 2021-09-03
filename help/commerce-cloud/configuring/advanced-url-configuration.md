@@ -6,18 +6,22 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Estrutura de integração de comércio
+feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: fe0e93d6f9ab16bf469e52e2b758f5e3f8600413
+source-git-commit: c956aab4dbbbb7daede3e115616ae923f7a68b90
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 45%
+source-wordcount: '789'
+ht-degree: 46%
 
 ---
 
 # Configurações avançadas de URL {#url}
+
+>[!NOTE]
+>
+> A Otimização do mecanismo de pesquisa (SEO) se tornou uma preocupação principal para muitos comerciantes. Como resultado, as preocupações com a SEO precisam ser abordadas em muitos projetos do Adobe Experience Manager (AEM) as a Cloud Service. Leia [SEO e Práticas recomendadas de gerenciamento de URL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html) para obter mais informações.
 
 Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) fornecem configurações avançadas para personalizar os URLs das páginas de produto e categoria. Muitas implementações personalizam esses URLs para fins de otimização de mecanismo de pesquisa (SEO). O vídeo a seguir mostra detalhes sobre como configurar o serviço `UrlProvider` e os recursos do [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para personalizar os URLs das páginas de produto e categoria.
 
