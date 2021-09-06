@@ -2,10 +2,10 @@
 title: Saiba o que é o Cloud Manager
 description: Siga esta página para saber mais sobre o Cloud Manager, os programas do Cloud Manager e os ambientes.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
+source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 1%
+source-wordcount: '907'
+ht-degree: 4%
 
 ---
 
@@ -39,6 +39,26 @@ Além disso, também é possível navegar até a página Programas e produtos do
 1. Clique em **Iniciar** no cartão do Cloud Manager. Depois de fazer logon no Cloud Manager com êxito, você estará pronto para usar a interface do usuário (UI).
 
    Após o logon bem-sucedido, você será direcionado para a página inicial do Cloud Manager.
+
+## Permissões baseadas em funções no Cloud Manager {#role-based-permissions}
+
+| Permissão | Descrição | Proprietário da empresa | Gerenciador de implantação | Gerenciador de programas | Desenvolvedor |
+|--- |--- |--- |--- |--- |--- |
+| Adicionar programa<br>Editar programa | Adicione um novo programa.<br>Editar um programa - Adicionar ou remover soluções ou complementos | x |  |  |  |
+| Criar ambiente | Crie Ambientes Prod+Stage, Dev. | x | x |  |  |
+| Ambiente de atualização | Atualize Ambientes Prod+Stage, Dev. | x | x |  |  |
+| Excluir ambiente de desenvolvimento | Excluir ambientes de desenvolvimento. | x | x |  |  |
+| Configuração de pipeline | Configurar ou editar pipeline. |  | x |  |  |
+| Execução de pipeline | Inicie o pipeline. | x | x |  |  |
+| Execução de pipeline | Rejeitar/Aprovar Falhas Importantes De 3 Camadas. | x | x | x |  |
+| Execução de pipeline | Forneça Aprovação De GoLive. | x | x | x |  |
+| Execução de pipeline | Agendar implantação de produção. | x | x | x |  |
+| Exclusão de pipeline | Permite a exclusão de um pipeline. |  | x |  |  |
+| Cancelamento de execução | Cancelar Execução Atual. |  | x |  |  |
+| Gerar Token de Acesso Pessoal | Acesse o Git. |  | x |  | x |
+
+>[!NOTE]
+>Um usuário pode ser atribuído a várias funções. Por exemplo, atribuir funções de Proprietário comercial e Gerente de implantação a um usuário fornece a combinação ou a soma dessas permissões.
 
 ## Programas do Cloud Manager {#cloud-manager-programs}
 

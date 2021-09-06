@@ -1,15 +1,15 @@
 ---
 title: AEM como grupo do Cloud Service e perfis de produto
 description: Siga esta página para saber mais sobre o AEM as a Cloud Service Team e Product Profiles.
-source-git-commit: 976fc51be0ba8c407ff7d6f7c1a6efecbbdad5c9
+exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
+source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
 
 ---
 
-
-# AEM como um grupo do Cloud Service e perfis de produto {#product-profiles}
+# AEM como grupo do Cloud Service e perfis de produto {#product-profiles}
 
 ## Perfis de produto {#profiles}
 
@@ -17,7 +17,7 @@ Ao conceder acesso de usuário a uma solução Adobe específica, você não que
 
 Leia mais sobre [AEM como um Cloud Service product profiles](#aem-product-profiles) e [Cloud Manager product profiles](#cloud-manager-product-profiles) para entender como eles funcionam em conjunto enquanto sua equipe é configurada.
 
-## AEM como Perfis de produto Cloud Service {#aem-product-profiles}
+## AEM como perfis de produto do Cloud Service {#aem-product-profiles}
 
 O AEM como Cloud Service é a oferta totalmente nativa em nuvem que oferece AEM como um serviço. Ele fornece AEM de maneira nativa em nuvem, com novos atributos como sempre ativos, sempre atuais, sempre seguros e sempre em escala. Ao mesmo tempo, mantém a principal proposta de valor que o AEM oferece como uma plataforma personalizável para os clientes e permite que equipes de nível empresarial se integrem em seus procedimentos de desenvolvimento e entrega. Consulte [Introdução ao Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en) para saber mais sobre AEM como Cloud Service.
 
@@ -36,7 +36,7 @@ Sua AEM como membros da equipe de Cloud Service será adicionada e atribuída a 
 
 O Cloud Manager tem perfis de produto pré-configurados ou, mais simplesmente, permissões baseadas em funções. O administrador do sistema será responsável pela configuração da equipe do Cloud Manager, atribuindo o a esses perfis de produtos e deverá se familiarizar com esses perfis de produtos e qual membro da equipe será atribuído a eles.
 >[!NOTE]
->Consulte [Permissões baseadas em funções no Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) para obter mais detalhes.
+>Consulte [Permissões baseadas em funções no Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions) para obter mais detalhes.
 
 Cada um dos perfis de produto tem permissões específicas associadas a ele. Por exemplo, se você estiver na função de um:
 
