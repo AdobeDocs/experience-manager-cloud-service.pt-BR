@@ -2,9 +2,10 @@
 title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
+source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2413'
 ht-degree: 1%
 
 ---
@@ -412,7 +413,7 @@ Os níveis de log desses módulos são definidos pelas variáveis `DISP_LOG_LEVE
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Ao executar o Dispatcher localmente, os logs são impressos diretamente na saída do terminal. Na maioria das vezes, você deseja que esses logs estejam em DEBUG, o que pode ser feito transmitindo o nível de Depuração como parâmetro ao executar o Docker. Por exemplo: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+Ao executar o Dispatcher localmente, os logs são impressos diretamente na saída do terminal. Na maioria das vezes, você deseja que esses logs estejam em DEBUG, o que pode ser feito transmitindo o nível de Depuração como parâmetro ao executar o Docker. Por exemplo: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 Os logs para ambientes de nuvem são expostos por meio do serviço de registro disponível no Cloud Manager.
 
@@ -446,7 +447,7 @@ Na configuração do Dispatcher, a mesma variável de ambiente está disponível
 Ao testar sua configuração localmente, você pode simular diferentes tipos de ambiente transmitindo a variável `DISP_RUN_MODE` para o script `docker_run.sh` diretamente:
 
 ```
-$ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
+$ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 ```
 
 O modo de execução padrão ao não transmitir um valor para DISP_RUN_MODE é &quot;dev&quot;.
