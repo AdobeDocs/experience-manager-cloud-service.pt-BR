@@ -3,11 +3,10 @@ title: Gerar para representações somente posicionamento para o Adobe InDesign
 description: Gere representações FPO de ativos novos e existentes usando o fluxo de trabalho de Ativos do Experience Manager e o ImageMagick.
 contentOwner: Vishabh Gupta
 role: Admin
-feature: Representações
-exl-id: null
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+feature: Renditions
+source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
