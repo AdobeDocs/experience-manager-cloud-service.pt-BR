@@ -2,7 +2,7 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 620972f1a9b4cf9cc4cc888b440b59af28b1127a
+source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 26%
@@ -24,7 +24,7 @@ A imagem a seguir ilustra sua jornada de integração, começando pelo email de 
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
-Consulte [Jornada onboard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) para começar a integrar a jornada.
+Consulte [Onboard Jornada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) para começar a usar a experiência de integração.
 
 >[!NOTE]
 >Antes de aprofundar a jornada de integração, é recomendável revisar a seção Conceitos de aprendizado de integração que aborda os seguintes tópicos:

@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
+source-git-commit: 56f799b7583c82694f20de096855d6c5c1741f49
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1473'
 ht-degree: 2%
 
 ---
@@ -169,4 +169,20 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.5.6 é 11 de 
 * O botão **Parar assimilação** estava sendo desativado durante a assimilação na instância de publicação. Isso não é necessário porque não há uma etapa de restauração de mongo durante a assimilação de Publicação.
 
 * A CTT não limpou o diretório `/tmp` após uma extração bem-sucedida. Isso às vezes levava a problemas de espaço em disco.
+
+## Analisador de práticas recomendadas {#best-practices-analyzer}
+
+### Data de lançamento {#release-date-bpa-latest}
+
+A data de lançamento do Analisador de práticas recomendadas v2.1.18 é 2 de setembro de 2021.
+
+### Novidades {#what-is-new}
+
+* Capacidade de detectar e relatar a contagem total de nós.
+
+* Capacidade de detectar e relatar no tipo e tamanho do armazenamento do nó.
+
+### Correções de erros {#bug-fixes-bpa}
+
+* O BPA detectou falsamente a presença da Commerce Integration Framework.
 
