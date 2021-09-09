@@ -2,10 +2,10 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 26%
+source-wordcount: '556'
+ht-degree: 27%
 
 ---
 
@@ -18,24 +18,17 @@ ht-degree: 26%
 
 Parabéns por começar sua jornada com AEM como Cloud Service! Se você estiver implantando um novo aplicativo ou migrando um existente, este guia serve como ponto de partida para garantir que seu aplicativo seja otimizado e pronto para o sucesso no Cloud Service.
 
-Este guia ajudará você e sua equipe a começar a usar o Cloud Manager rapidamente. Você precisará da ajuda do Adobe ID e do Administrador do sistema para adicionar os usuários ao Cloud Manager às funções atribuídas (chamadas de Perfis de produto no Admin Console) e às permissões associadas. As instruções de como o Administrador do sistema pode fazer isso via Admin Console estão descritas. A lista de funções do Cloud Manager, chamada de Perfis de produto no Admin Console e suas permissões associadas, é detalhada para que você possa determinar quais funções podem ser necessárias para vários usuários em sua organização.
+## Experiência de integração {#audience}
 
-A imagem a seguir ilustra sua jornada de integração, começando pelo email de boas-vindas recebido pelo Administrador do sistema e culminando com os usuários que acessam o Cloud Manager para AEM como Cloud Service.
+A integração é o processo durante o qual um [Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura o AEM como um Cloud Service para sua organização. Isso inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções apropriadas com base em suas responsabilidades de trabalho, após as quais cada membro é capaz de fazer logon e acessar seus AEM como recursos de Cloud Service.
 
-![](/help/onboarding/what-is-required/assets/cust-journey.png)
+A jornada de integração é ilustrada abaixo e cada etapa na jornada é descrita detalhadamente nas seções a seguir.
 
-Consulte [Onboard Jornada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) para começar a usar a experiência de integração.
+![](/help/journey-onboarding/assets/onboarding-journey.png)
 
->[!NOTE]
->Antes de aprofundar a jornada de integração, é recomendável revisar a seção Conceitos de aprendizado de integração que aborda os seguintes tópicos:
->* [Administrador do sistema](/help/onboarding/learn-concepts/system-administrator.md)
->* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
->* [Sistema Adobe Identity Management](/help/onboarding/learn-concepts/ims.md)
->* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
->* [Introdução ao Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
->* [AEM as a Cloud Service Team &amp; Product Profiles](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
->* [Suporte a Adobe](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+Essa jornada foi projetada para uma persona de Administrador do sistema, apresentando os requisitos, as etapas e a abordagem. A jornada define personas adicionais com as quais o Administrador do sistema deve interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o de um administrador.
 
+Consulte [Onboard Jornada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) para começar a usar a experiência de integração.
 
 ## [!DNL Experience Manager as a Cloud Service] Guias {#aem-guides}
 

@@ -3,24 +3,15 @@ title: Jornada de integração
 description: Siga esta página para saber como começar a usar o jornada de integração
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: fa88a919-af6a-4266-b38c-647706decba4
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '401'
 ht-degree: 2%
 
 ---
 
 # Jornada de integração {#onboarding-jourrney}
-
-## Experiência de integração {#audience}
-
-A integração é o processo durante o qual um [Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura o AEM como um Cloud Service para sua organização. Isso inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções apropriadas com base em suas responsabilidades de trabalho, após as quais cada membro é capaz de fazer logon e acessar seus AEM como recursos de Cloud Service.
-
-A jornada de integração é ilustrada abaixo e cada etapa na jornada é descrita detalhadamente nas seções a seguir.
-
-![](/help/journey-onboarding/assets/onboarding-journey.png)
-
-Essa jornada foi projetada para uma persona de Administrador do sistema, apresentando os requisitos, as etapas e a abordagem. A jornada define personas adicionais com as quais o Administrador do sistema deve interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o de um administrador.
 
 ## Explorar a Jornada onboard {#exploring-onboarding-journey}
 
