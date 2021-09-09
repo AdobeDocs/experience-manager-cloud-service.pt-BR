@@ -3,7 +3,7 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 3%
@@ -131,6 +131,8 @@ A próxima versão está planejada para 07 de outubro de 2021.
 
 ### Novidades {#what-is-new-cm-sept}
 
+* A versão do AEM Project Archetype usada pelo Cloud Manager foi atualizada para a versão 30.
+
 * Os cartões de programa na página de aterrissagem do Cloud Manager e a experiência associada foram atualizados.
 
 * O Log de Etapa de Qualidade do Código agora inclui informações de log detalhadas no processo de varredura do OakPal.
@@ -139,7 +141,6 @@ A próxima versão está planejada para 07 de outubro de 2021.
 
 * Clicar diretamente no cartão do Programa agora navegará até a página Visão geral do Cloud Manager .
 
-* A versão do AEM Project Archetype usada pelo Cloud Manager foi atualizada para a versão 30.
 
 ### Correções de erros {#bug-fixes-sept}
 

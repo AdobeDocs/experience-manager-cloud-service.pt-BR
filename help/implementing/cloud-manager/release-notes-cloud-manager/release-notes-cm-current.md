@@ -3,7 +3,7 @@ title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.
 description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.9.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 5%
@@ -24,6 +24,8 @@ A próxima versão está planejada para 07 de outubro de 2021.
 
 ### Novidades {#what-is-new}
 
+* A versão do AEM Project Archetype usada pelo Cloud Manager foi atualizada para a versão 30.
+
 * Os cartões de programa na página de aterrissagem do Cloud Manager e a experiência associada foram atualizados.
 
 * O Log de Etapa de Qualidade do Código agora inclui informações de log detalhadas no processo de varredura do OakPal.
@@ -31,8 +33,6 @@ A próxima versão está planejada para 07 de outubro de 2021.
 * As opções de menu da página Atividade agora incluirão uma opção para **Baixar log** para execuções concluídas do Gerador de código. Ao selecionar essa opção, o log da etapa de build será baixado.
 
 * Clicar diretamente no cartão do Programa agora navegará até a página Visão geral do Cloud Manager .
-
-* A versão do AEM Project Archetype usada pelo Cloud Manager foi atualizada para a versão 30.
 
 ### Correções de erros {#bug-fixes}
 
