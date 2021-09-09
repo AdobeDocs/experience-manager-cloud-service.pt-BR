@@ -2,9 +2,9 @@
 title: 'Criação de um programa de produção '
 description: Criação de um programa de produção
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
+source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ Siga as etapas abaixo para criar um programa de Produção:
 
    ![](assets/setup-prod-commerce.png)
 
-1. Depois de ver o cartão do programa na página de aterrissagem, passe o mouse sobre ele para selecionar o ícone do Cloud Manager e navegue até a página **Visão geral** do Cloud Manager.
+1. Depois de ver o cartão do programa na página de aterrissagem, selecione o **...** para ver as opções de menu disponíveis. Selecione **Cloud Manager**, conforme mostrado na figura abaixo, para navegar até a página **Visão geral** do Cloud Manager.
 
-   ![](assets/set-up-prod4.png)
+   ![](assets/navigate-cm.png)
 
 1. O cartão principal de chamada para ação guiará o usuário para criar um ambiente, criar um pipeline de não produção e, por fim, um pipeline de produção.
    ![](assets/set-up-prod5.png)
