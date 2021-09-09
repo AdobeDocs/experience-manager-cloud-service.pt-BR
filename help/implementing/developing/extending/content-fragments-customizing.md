@@ -2,7 +2,7 @@
 title: Personalização e extensão de fragmentos de conteúdo
 description: Um fragmento de conteúdo estende um ativo padrão.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 2%
@@ -16,10 +16,6 @@ No Adobe Experience Manager as a Cloud Service, um fragmento de conteúdo estend
 * [Criação e gerenciamento de ](/help/assets/content-fragments/content-fragments.md) fragmentos de conteúdo e criação de  [página com ](/help/sites-cloud/authoring/fundamentals/content-fragments.md) fragmentos de conteúdo para obter mais informações sobre fragmentos de conteúdo.
 
 * [Gerenciamento de ](/help/assets/manage-digital-assets.md) ativos para obter mais informações sobre ativos padrão.
-
-<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
-* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
--->
 
 ## Arquitetura {#architecture}
 
@@ -97,7 +93,7 @@ Para integrar com o núcleo dos ativos:
 
 * Vários componentes de Ativos foram estendidos para atender a fragmentos de conteúdo.
 
-### Uso de fragmentos de conteúdo nas páginas {#using-content-fragments-in-pages}
+### Uso de fragmentos de conteúdo em páginas {#using-content-fragments-in-pages}
 
 >[!CAUTION]
 >
@@ -129,13 +125,13 @@ Os fragmentos de conteúdo podem ser referenciados AEM páginas, como qualquer o
 >
 >Isso significa que, se o modelo não tiver sido publicado no momento em que você publicar a página, ela será sinalizada e o modelo será adicionado aos recursos a serem publicados com a página.
 
-### Integração com outros Frameworks {#integration-with-other-frameworks}
+### Integração com outros quadros {#integration-with-other-frameworks}
 
 Os fragmentos de conteúdo podem ser integrados com:
 
 * **Traduções**
 
-   Os Fragmentos de conteúdo são totalmente integrados ao fluxo de trabalho de tradução de AEM. A nível arquitetônico, isso significa:
+   Os Fragmentos de conteúdo são totalmente integrados ao [AEM fluxo de trabalho de tradução](/help/sites-cloud/administering/translation/overview.md). A nível arquitetônico, isso significa:
 
    * As traduções individuais de um fragmento de conteúdo são, na verdade, fragmentos separados; por exemplo:
 
@@ -166,7 +162,7 @@ Os fragmentos de conteúdo podem ser integrados com:
 
    * O respectivo formulário de esquema é integrado ao editor de fragmentos.
 
-## A API de gerenciamento de fragmentos de conteúdo - no lado do servidor {#the-content-fragment-management-api-server-side}
+## A API de gerenciamento de fragmentos de conteúdo - do lado do servidor {#the-content-fragment-management-api-server-side}
 
 Você pode usar a API do lado do servidor para acessar os fragmentos de conteúdo; consulte:
 
@@ -176,7 +172,7 @@ Você pode usar a API do lado do servidor para acessar os fragmentos de conteúd
 >
 >É altamente recomendável usar a API do lado do servidor em vez de acessar diretamente a estrutura de conteúdo.
 
-### Interfaces de chave {#key-interfaces}
+### Principais interfaces {#key-interfaces}
 
 As três interfaces a seguir podem servir como pontos de entrada:
 
@@ -299,7 +295,7 @@ Observe que dois usuários podem editar o mesmo fragmento de conteúdo simultane
 
 ## Exemplos {#examples}
 
-### Exemplo: Acessar um fragmento de conteúdo existente {#example-accessing-an-existing-content-fragment}
+### Exemplo: Acesso a um fragmento de conteúdo existente {#example-accessing-an-existing-content-fragment}
 
 Para isso, é possível adaptar o recurso que representa a API a:
 

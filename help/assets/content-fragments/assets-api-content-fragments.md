@@ -1,11 +1,11 @@
 ---
 title: Suporte a fragmentos de conteúdo do Adobe Experience Manager as a Cloud Service na API HTTP do Assets
 description: Saiba mais sobre o suporte para Fragmentos de conteúdo na API HTTP do Assets, uma parte importante AEM recurso de entrega sem cabeçalho.
-feature: Fragmentos de conteúdo, API HTTP de ativos
+feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1951'
 ht-degree: 2%
 
 ---
@@ -24,14 +24,13 @@ Saiba mais sobre o suporte para Fragmentos de conteúdo na API HTTP do Assets, u
 >* incluindo suporte para Fragmentos de conteúdo
 
 >
->
-A implementação atual da API HTTP de ativos é baseada no estilo arquitetônico [REST](https://en.wikipedia.org/wiki/Representational_state_transfer).
+>A implementação atual da API HTTP de ativos é baseada no estilo arquitetônico [REST](https://en.wikipedia.org/wiki/Representational_state_transfer).
 
 A [API REST do Assets](/help/assets/mac-api-assets.md) permite que os desenvolvedores do Adobe Experience Manager como um Cloud Service acessem o conteúdo (armazenado em AEM) diretamente sobre a API HTTP, por meio de operações CRUD (Criar, Ler, Atualizar, Excluir).
 
 A API permite operar o Adobe Experience Manager as a Cloud Service como um CMS (Content Management System) sem periféricos fornecendo serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON.
 
-Por exemplo, Aplicativos de página única (SPA), baseados em estrutura ou personalizados, exigem conteúdo fornecido através da API HTTP, geralmente no formato JSON.
+Por exemplo, [Aplicativos de página única (SPA)](/help/implementing/developing/hybrid/introduction.md), baseados em estrutura ou personalizados, exigem conteúdo fornecido através da API HTTP, geralmente no formato JSON.
 
 Embora [AEM Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) ofereça uma API muito abrangente, flexível e personalizável que possa servir as operações de Leitura necessárias para essa finalidade e cuja saída JSON possa ser personalizada, eles exigem AEM know-how WCM (Gerenciamento de conteúdo da Web) para implementação, pois devem ser hospedados em páginas que se baseiam em modelos de AEM dedicados. Nem todas as organizações SPA de desenvolvimento têm acesso direto a esses conhecimentos.
 
@@ -151,7 +150,6 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >* [Vídeo - Desenvolvimento do CORS com AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 
 >
-
 
 
 Em ambientes com requisitos de autenticação específicos, o OAuth é recomendado.
