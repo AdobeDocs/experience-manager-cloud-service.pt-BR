@@ -2,8 +2,7 @@
 title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.8.0
 description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.8.0
 feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 4%
@@ -48,5 +47,3 @@ Consulte [Relatórios do SLA](https://experienceleague.adobe.com/docs/experience
 * A integração inicial estava falhando para novas organizações com nomes muito longos.
 
 * Ocasionalmente, quando um pipeline é acionado duas vezes por algum motivo, resulta em uma das execuções falhando com o erro *cannot update pipeline execution status* .
-
-

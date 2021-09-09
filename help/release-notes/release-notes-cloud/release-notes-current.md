@@ -3,10 +3,10 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 4a4e473639ccf10410afc07b77b1bfd880b95543
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 2%
+source-wordcount: '1630'
+ht-degree: 3%
 
 ---
 
@@ -122,12 +122,34 @@ Consulte [Suporte de miniaturas para vídeos](https://experienceleague.adobe.com
 
 ## Cloud Manager {#cloud-manager}
 
-Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.8.0 e 2021.7.0.
+Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.9.0 e 2021.8.0.
+
+## Data de lançamento {#release-date-cm-sept}
+
+A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.9.0 é 9 de setembro de 2021.
+A próxima versão está planejada para 07 de outubro de 2021.
+
+### Novidades {#what-is-new-cm-sept}
+
+* Os cartões de programa na página de aterrissagem do Cloud Manager e a experiência associada foram atualizados.
+
+* O Log de Etapa de Qualidade do Código agora inclui informações de log detalhadas no processo de varredura do OakPal.
+
+* As opções de menu da página Atividade agora incluirão uma opção para **Baixar log** para execuções concluídas do Gerador de código. Ao selecionar essa opção, o log da etapa de build será baixado.
+
+* Clicar diretamente no cartão do Programa agora navegará até a página Visão geral do Cloud Manager .
+
+* A versão do AEM Project Archetype usada pelo Cloud Manager foi atualizada para a versão 30.
+
+### Correções de erros {#bug-fixes-sept}
+
+* O usuário verá uma mensagem mais compreensível ao tentar adicionar uma nova Lista de permissões IP em um programa que atingiu o número máximo permitido de Listas de permissões IP que podem ser configuradas.
+
+* URL incorreto foi copiado ao selecionar a opção de menu copiar URL na tela Repositórios.
 
 ## Data de lançamento {#release-date-cm-aug}
 
 A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.8.0 é 12 de agosto de 2021.
-A próxima versão está planejada para 09 de setembro de 2021.
 
 ### Novidades {#what-is-new-aug}
 
