@@ -2,7 +2,7 @@
 title: APIs obsoletas
 description: Notas de versão específicas para APIs obsoletas e removidas no [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 02b610b830911b737f8caa7356d0e446958bcc2f
+source-git-commit: 70ca1cce6995634d330da68cf8bce8ee12c71f1e
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 7%
@@ -40,7 +40,7 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
     <td>com.day.cq.jcrclustersupport</td>
     <td>Usar a API de Descoberta do Sling como alternativa</td>
     <td>2015</td>
-    <td>30/7/21</td>
+    <td>removida</td>
   </tr>
   <tr>
     <td>org.apache.sling.settings</td>
@@ -58,7 +58,7 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
     <td></td>
     <td>5/3/21</td>
-    <td>6/6/21</td>
+    <td>removida</td>
   </tr>
   <tr>
     <td>org.json</td>
@@ -70,7 +70,7 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
     <td>Os gerentes de persistência personalizados não são suportados no AEM como um Cloud Service.</td>
     <td>30/4/21</td>
-    <td>30/7/21</td>
+    <td>removida</td>
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
@@ -88,7 +88,7 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
     <td>org.apache.felix.systemready</td>
     <td>Recomenda-se usar a API do Apache Felix HealthCheck</td>
     <td>30/4/21</td>
-    <td>30/7/21</td>
+    <td>removida</td>
   </tr>
   <tr>
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n</td>
