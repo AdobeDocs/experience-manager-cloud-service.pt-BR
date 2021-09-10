@@ -1,19 +1,19 @@
 ---
 title: Configurações do Dispatcher no Screens como um Cloud Service
 description: Esta página descreve as configurações do Dispatcher no Screens como um Cloud Service.
-source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
+source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
 
-# Configurações do Dispatcher no Screens como um Cloud Service{#dispatcher-configurations-screens-cloud}
+# Configurações do Dispatcher no Screens como um Cloud Service {#dispatcher-configurations-screens-cloud}
 
 Esta seção descreve as configurações do dispatcher para Screens como um Cloud Service.
 
-## Configurações do Dispatcher para a implantação do Screens as a Cloud Service {#deployment}
+## Adicionar filtros e regras de cache no Dispatcher para o Screens como uma implantação do Cloud Service {#deployment}
 
 Permita os seguintes filtros e regras de cache nos dispatchers para as instâncias de publicação no Screens as a Cloud Service.
 
