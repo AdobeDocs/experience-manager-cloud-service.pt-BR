@@ -3,9 +3,9 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
+source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1572'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
    { /glob "*" /type "allow" }
    ```
 
-* Para evitar que conteúdo específico seja armazenado em cache, defina o cabeçalho Controle de Cache como *private*. Por exemplo, o seguinte impediria que o conteúdo html em um diretório chamado **secure** fosse armazenado em cache:
+* Para evitar que conteúdo específico seja armazenado em cache **no CDN**, defina o cabeçalho Cache-Control como *private*. Por exemplo, o seguinte impediria que o conteúdo html em um diretório chamado **secure** fosse armazenado em cache no CDN:
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -70,6 +70,9 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
 
    >[!NOTE]
    >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirão valores com êxito.
+
+   >[!NOTE]
+   >Observe que o dispatcher ainda pode armazenar o conteúdo em cache de acordo com suas próprias [regras de armazenamento em cache](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Para tornar o conteúdo realmente privado, você deve garantir que ele não seja armazenado em cache pelo dispatcher.
 
 ### Bibliotecas do lado do cliente (js, css) {#client-side-libraries}
 
