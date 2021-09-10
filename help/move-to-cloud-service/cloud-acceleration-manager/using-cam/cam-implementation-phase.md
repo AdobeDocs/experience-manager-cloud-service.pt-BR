@@ -1,13 +1,13 @@
 ---
 title: Fase de implementação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral da fase de implementação no Cloud Acceleration Manager.
-source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
+exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
+source-git-commit: e786fe40d97294b4ab5e8657920f2ecbb401d8e9
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '674'
 ht-degree: 2%
 
 ---
-
 
 # Fase de implementação no Cloud Acceleration Manager {#implementation-phase-cam}
 
@@ -60,21 +60,16 @@ Siga esta seção para explorar o cartão de atividades Refatoração do código
    * Dispatcher
    * Testes
 
-   A guia **Visão geral** exibe uma lista de atividades de refatoração de código.
+>[!NOTE]
+>Revise o conteúdo dessas guias para entender algumas áreas adicionais que não são abordadas pelo Analisador de práticas recomendadas.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+A guia **Dispatcher** fornece informações sobre como estruturar o AEM como um Apache Cloud Service e configurações do Dispatcher, bem como como como validá-lo e executá-lo localmente antes de implantá-lo em ambientes do Cloud. Também descreve a depuração em ambientes do Cloud.
 
-   A guia **Dispatcher** fornece informações sobre como estruturar o AEM como um Apache Cloud Service e configurações do Dispatcher, bem como como como validá-lo e executá-lo localmente antes de implantá-lo em ambientes do Cloud. Também descreve a depuração em ambientes do Cloud.
+![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+A guia **Testing** fornece informações sobre testes funcionais, de auditoria de experiência e de interface do usuário.
 
-   A guia **Testing** fornece informações sobre testes funcionais, de auditoria de experiência e de interface do usuário.
-
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
-
-
-   >[!NOTE]
-   >Além disso, revise o conteúdo nas guias da página para entender algumas áreas adicionais que não são abordadas pelo Analisador de práticas recomendadas.
+![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## Uso do AEM como um cartão de implantação do Cloud Service {#aem-as-a-cloud-service-deployment}
