@@ -2,9 +2,9 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 0354f4782ff02d0c0d890ec6a99262b6b5002729
+source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '539'
 ht-degree: 28%
 
 ---
@@ -22,13 +22,13 @@ Parabéns por começar sua jornada com AEM como Cloud Service! Se você estiver 
 
 A integração é o processo durante o qual um [Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura o AEM como um Cloud Service para sua organização. Isso inclui o provisionamento inicial de recursos de nuvem e a atribuição de usuários a funções apropriadas com base em suas responsabilidades de trabalho, após as quais cada membro é capaz de fazer logon e acessar seus AEM como recursos de Cloud Service.
 
-A jornada de integração é ilustrada abaixo.
+A jornada de integração ilustrada abaixo foi projetada para uma persona de Administrador do sistema, apresentando os requisitos, as etapas e a abordagem. A jornada define personas adicionais com as quais o Administrador do sistema deve interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o de um administrador.
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
-Essa jornada foi projetada para uma persona de Administrador do sistema, apresentando os requisitos, as etapas e a abordagem. A jornada define personas adicionais com as quais o Administrador do sistema deve interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o de um administrador.
+>[!NOTE]
+>Consulte [Onboard Jornada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) para começar a usar sua experiência de integração.
 
-Consulte [Onboard Jornada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) para começar a usar sua experiência de integração.
 
 ## [!DNL Experience Manager as a Cloud Service] Guias {#aem-guides}
 
