@@ -3,9 +3,9 @@ sub-product: AEM Screens as a Cloud Service
 user-guide-title: AEM Screens as a Cloud Service
 breadcrumb-title: AEM Screens as a Cloud Service
 user-guide-description: Entenda o AEM Screens como um Cloud Service.
-source-git-commit: 83b90b7aa51911d6aa5a76cfff7b7bca78903fe8
+source-git-commit: 152500c0c448cd8f9e5e485a060d7e015be524dc
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '184'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,7 @@ ht-degree: 2%
    + [Navegar até o Provedor de serviços do Screens](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
    + [Uso do provedor de conteúdo do Screens](/help/screens-cloud/configuring/using-screens-content-provider.md)
    + [Criação das representações de vídeo do Screens](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
+   + [Configuração do Dispatcher para Screens como um Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
 + Criar conteúdo {#create-content}
    + [Criação e gerenciamento de um projeto no provedor de conteúdo do Screens](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
    + [Criação e gerenciamento de um canal no provedor de conteúdo do Screens](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
