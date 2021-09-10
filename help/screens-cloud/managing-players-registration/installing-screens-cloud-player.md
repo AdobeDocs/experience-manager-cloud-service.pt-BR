@@ -1,13 +1,13 @@
 ---
 title: Instalar e configurar players no Screens como um Cloud Service
 description: Esta página descreve como instalar e configurar players no Screens como um Cloud Service.
-source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
+exl-id: a022738a-c543-4629-a244-f70fa294fe7f
+source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
-
 
 # Instalar e configurar players no Screens como um Cloud Service {#installing-players-screens-cloud}
 
@@ -45,7 +45,7 @@ Siga as etapas abaixo para atualizar o player:
 
 ## Monitoramento básico da reprodução {#playback-monitoring}
 
-O reprodutor relata várias métricas de reprodução com cada `ping` padrão de 30 segundos. Com base nas métricas, você pode detectar vários casos de borda, como experiência paralisada, tela em branco e problemas de agendamento. Isso permite que você entenda e solucione problemas no dispositivo e, portanto, acelere uma investigação e medidas corretivas.
+O reprodutor relata várias métricas de reprodução com cada `ping` padrão de 30 segundos. Com base nessas métricas, podemos detectar vários casos de borda, como experiência paralisada, tela em branco e problemas de agendamento. Isso nos permite entender e solucionar problemas no dispositivo e, portanto, acelerar uma investigação e medidas corretivas.
 
 O monitoramento básico da reprodução em um reprodutor AEM Screens permite:
 
@@ -80,9 +80,11 @@ Abaixo estão listadas algumas limitações do monitoramento básico da reprodu�
 
 * O reprodutor relata seu próprio estado de reprodução no servidor para que ele exija uma conexão ativa.
 
-* A propriedade `isContentRendering` que verifica a GPU atualmente consome muitos recursos para ser ativada por padrão e requer aceitação explícita das preferências do reprodutor. É recomendável não usá-lo junto com os vídeos.
+* A propriedade `isContentRendering` que verifica a GPU atualmente exige muitos recursos para ser ativada por padrão e requer aceitação explícita das preferências do reprodutor. É recomendável não usá-lo juntamente com vídeos em produção.
 
-* Esse recurso é compatível com canais de sequência.
+* Esse recurso é compatível apenas para canais de sequência e ainda não cobre o caso de uso dos canais interativos (SPA).
+
+* As métricas ainda não estão totalmente expostas aos nossos clientes, estamos trabalhando duro para ativar o mecanismo de relatório e alerta semelhante ao painel em um futuro próximo.
 
 ## O que vem a seguir {#whats-next}
 
