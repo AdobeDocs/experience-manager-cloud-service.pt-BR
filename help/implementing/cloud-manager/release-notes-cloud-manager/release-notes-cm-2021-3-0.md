@@ -1,12 +1,11 @@
 ---
 title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.3.0
 description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.3.0
-feature: Informações da versão
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+feature: Release Information
+source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 2%
+source-wordcount: '447'
+ht-degree: 1%
 
 ---
 
