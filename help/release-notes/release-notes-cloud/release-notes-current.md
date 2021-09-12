@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
+source-git-commit: 534fd193181fe22392fb598625d3a018a4a09e69
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1628'
 ht-degree: 3%
 
 ---
@@ -99,7 +99,7 @@ Você pode gravar em [!DNL formscsbeta@adobe.com] para se inscrever no programa 
 Consulte [Monitoramento básico da reprodução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) para obter mais detalhes.
 
 * Agora, o suporte em miniatura para vídeos do agora é compatível com o Screens as a Cloud Service. Um autor de conteúdo pode definir uma miniatura de vídeos para que a imagem possa ser usada como um espaço reservado e testar corretamente a reprodução e o direcionamento do conteúdo, enquanto o vídeo real está sendo finalizado pela equipe apropriada. A imagem também pode ser usada caso a reprodução do vídeo falhe.
-Consulte [Suporte de miniaturas para vídeos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=en) para obter mais detalhes.
+Consulte [Suporte de miniaturas para vídeos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-screens}
 

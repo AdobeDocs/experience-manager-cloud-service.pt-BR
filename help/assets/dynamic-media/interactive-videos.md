@@ -4,9 +4,9 @@ description: Saiba como trabalhar com vídeo interativo e vídeo que pode ser co
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '5938'
+source-wordcount: '5936'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Para ver um vídeo interativo e que pode ser comprado, selecione [Demonstraçõe
 
 * Para pausar o vídeo e abrir o Quickview do produto, selecione a miniatura. Por exemplo, selecione a imagem em miniatura de KitchenAid no vídeo para visualizar uma visualização de rotação de 360° do mixer ou amplie para ver os detalhes do mixer.
 
-Consulte também [Usar vídeo interativo com Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
+Consulte também [Usar vídeo interativo com Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
 
 <!-- 
 
@@ -224,7 +224,7 @@ Ignore esta tarefa e continue para a próxima se pretender utilizar os tipos pre
 
 Quando uma miniatura é selecionada no ambiente de criação, uma visualização da caixa de diálogo do Quickview é exibida.
 
-![chlimage_1-29](assets/chlimage_1-127.png)
+![chlimage_1-21](assets/chlimage_1-127.png)
 
 Opcionalmente, é possível criar sua própria predefinição personalizada do visualizador de Vídeo interativo. Você pode determinar, entre outras coisas, o estilo do reprodutor de vídeo, as miniaturas interativas e a exibição da grade de miniatura que aparece no final do vídeo.
 

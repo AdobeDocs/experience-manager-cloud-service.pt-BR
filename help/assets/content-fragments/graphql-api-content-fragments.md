@@ -1,11 +1,11 @@
 ---
 title: AEM API GraphQL para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) como Cloud Service com a API GraphQL AEM para entrega de conteúdo sem periféricos.
-feature: Fragmentos de conteúdo, API GraphQL
+feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3935'
+source-wordcount: '3929'
 ht-degree: 1%
 
 ---
@@ -148,7 +148,7 @@ Para ativar um terminal para GraphQL para AEM, é necessário:
 * [Ativar o terminal GraphQL](#enabling-graphql-endpoint)
 * [Publicar seu terminal GraphQL](#publishing-graphql-endpoint)
 
-### Ativando seu ponto de extremidade GraphQL {#enabling-graphql-endpoint}
+### Ativação do terminal GraphQL {#enabling-graphql-endpoint}
 
 Para ativar um Endpoint GraphQL, primeiro é necessário ter uma configuração apropriada. Consulte [Fragmentos de conteúdo - Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
@@ -307,7 +307,7 @@ Dentro do schema há campos individuais, de duas categorias básicas:
 
    Eles são usados para identificar um Fragmento de conteúdo ou para obter mais informações sobre um fragmento de conteúdo.
 
-### Tipos de campo {#field-types}
+### Tipos de campos {#field-types}
 
 GraphQL para AEM oferece suporte a uma lista de tipos. Todos os tipos de dados do modelo de fragmento de conteúdo suportados e os tipos GraphQL correspondentes são representados:
 
@@ -812,7 +812,7 @@ Para acessar o ponto de extremidade GraphQL de um site externo, é necessário c
 
 >[!NOTE]
 >
->Para obter uma visão geral detalhada da política de compartilhamento de recursos do CORS em AEM consulte [Entender o compartilhamento de recursos entre origens (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
+>Para obter uma visão geral detalhada da política de compartilhamento de recursos do CORS em AEM consulte [Entender o compartilhamento de recursos entre origens (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
 
 Para acessar o ponto de extremidade GraphQL, uma política CORS deve ser configurada no repositório Git do cliente. Isso é feito adicionando um arquivo de configuração de CORS OSGi apropriado para os endpoints desejados.
 
@@ -855,7 +855,7 @@ Por exemplo, para conceder acesso ao ponto de extremidade GraphQL e ao ponto de 
 
 Se você tiver configurado um caminho personalizado para o endpoint, também poderá usá-lo em `allowedpaths`.
 
-### Filtro de referência {#referrer-filter}
+### Filtro referenciador {#referrer-filter}
 
 Além da configuração do CORS, um filtro Referenciador deve ser configurado para permitir acesso de hosts de terceiros.
 

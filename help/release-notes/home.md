@@ -2,10 +2,10 @@
 title: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: bd2a2fb37b7a89a41687e15eacf9dbb767cb272f
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 46%
+source-wordcount: '661'
+ht-degree: 47%
 
 ---
 
@@ -32,7 +32,7 @@ Além da velocidade da inovação, o [!DNL Adobe Experience Manager] como Cloud 
 
 Para preparar uma versão:
 
-1. Marcar seus calendários: Verifique as principais datas para versões mensais no [roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service) e marque seus calendários para se preparar para as atividades principais para se preparar para a versão.
+1. Marcar seus calendários: Verifique as principais datas para versões mensais no [roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) e marque seus calendários para se preparar para as atividades principais para se preparar para a versão.
 1. Revise as notas de versão: Leia as [notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md) para se familiarizar com os recursos de lançamento e pré-lançamento.
 1. Acesse e tente novos recursos: Ative o [canal de pré-lançamento](/help/release-notes/prerelease.md) em seus ambientes de não-produção e comece a tentar os recursos a serem avaliados em seus ambientes personalizados.
 1. Treine seus usuários: Use a documentação e os recursos do Experience League para fazer com que os usuários se familiarizem com os novos recursos.

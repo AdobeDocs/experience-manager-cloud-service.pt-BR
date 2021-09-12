@@ -1,12 +1,12 @@
 ---
 title: Integrar visualizadores do Dynamic Media com tags Adobe Analytics e Experience Platform
 description: Saiba mais sobre a extensão Visualizadores do Dynamic Media para Tags do Experience Platform e Visualizadores do Dynamic Media 5.13. Ela permite que clientes de Adobe Analytics e Tags da plataforma usem eventos e dados específicos para os Visualizadores do Dynamic Media em suas configurações de Tags do Experience Platform.
-feature: Relatórios dos ativos
+feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 13dbce0d8ad25fec47460a41c5ea3e355a4dd486
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '6681'
+source-wordcount: '6675'
 ht-degree: 7%
 
 ---
@@ -231,7 +231,7 @@ A amostra configurada acima também afeta a duração do valor do Elemento de da
 
 Em qualquer caso, os valores dos Elementos de dados orientados pelos Visualizadores do Dynamic Media não são armazenados no armazenamento local ou no servidor; em vez disso, elas são mantidas somente na biblioteca de Tags do Experience Platform do lado do cliente. Os valores desse Elemento de dados desaparecem quando a página da Web é recarregada.
 
-Geralmente, o Editor de Elemento de Dados suporta [seleção de duração do armazenamento](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en#create-a-data-element). No entanto, os Elementos de dados que usam a extensão Visualizadores do Dynamic Media oferecem suporte apenas à opção de duração de armazenamento de **[!UICONTROL None]**. A configuração de qualquer outro valor é possível na interface do usuário, mas o comportamento do Elemento de dados não é definido nesse caso. A extensão gerencia o valor do Elemento de dados sozinho: o Elemento de dados que mantém o valor do argumento de evento do visualizador durante todo o ciclo de vida do visualizador.
+Geralmente, o Editor de Elemento de Dados suporta [seleção de duração do armazenamento](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element). No entanto, os Elementos de dados que usam a extensão Visualizadores do Dynamic Media oferecem suporte apenas à opção de duração de armazenamento de **[!UICONTROL None]**. A configuração de qualquer outro valor é possível na interface do usuário, mas o comportamento do Elemento de dados não é definido nesse caso. A extensão gerencia o valor do Elemento de dados sozinho: o Elemento de dados que mantém o valor do argumento de evento do visualizador durante todo o ciclo de vida do visualizador.
 
 ### Sobre regras na extensão Visualizadores do Dynamic Media {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -443,7 +443,7 @@ Consulte também [Guia de implementação do Analytics](https://experienceleague
 
    Se nenhum conjunto de relatórios estiver disponível, você ou o administrador da Adobe Analytics devem criar um antes de continuar com a configuração.
 
-   Consulte [Relatórios e conjuntos de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) e [Criar um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites).
+   Consulte [Relatórios e conjuntos de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) e [Criar um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#manage-report-suites).
 
    No Adobe Analytics, os conjuntos de relatórios são gerenciados em **[!UICONTROL Admin]** > **[!UICONTROL Conjuntos de relatórios]**.
 
@@ -667,7 +667,7 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
 
 ### Configurar Experience Manager IMS {#configuring-aem-ims}
 
-1. No autor do Experience Manager, selecione o ícone Ferramentas (martelo) e vá para **[!UICONTROL Segurança]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. No autor do Experience Manager, selecione o ícone Ferramentas (martelo) e vá para **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 

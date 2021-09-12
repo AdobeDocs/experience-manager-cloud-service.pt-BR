@@ -1,12 +1,12 @@
 ---
 title: Trabalho com fragmentos de conteúdo
 description: Saiba como os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo independente da página, ideal para entrega sem interface.
-feature: Fragmentos de conteúdo
+feature: Content Fragments
 role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2033'
 ht-degree: 6%
 
 ---
@@ -51,9 +51,9 @@ Esta e as seguintes páginas abordam as tarefas de criação, configuração, ma
 >
 >* [Criação de página com fragmentos de conteúdo](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* [Personalização e extensão de fragmentos de conteúdo](/help/implementing/developing/extending/content-fragments-customizing.md)
-* [Fragmentos de conteúdo configuram componentes para renderização](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-* [Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
-* [AEM API GraphQL para uso com Fragmentos de conteúdo](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [Fragmentos de conteúdo configuram componentes para renderização](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+>* [Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [AEM API GraphQL para uso com Fragmentos de conteúdo](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo de delivery, como:
@@ -75,12 +75,15 @@ Fragmentos de conteúdo permitem:
 Esses fragmentos de conteúdo podem ser montados para proporcionar experiências em uma variedade de canais.
 
 >[!NOTE]
-**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** são recursos diferentes no AEM:
-* **Os** Fragmentos de conteúdo são conteúdo editorial, que pode ser usado para acessar dados estruturados, incluindo textos, números e datas, entre outros. São conteúdo puro, com definição e estrutura, mas sem design visual e/ou layout adicionais.
-* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
+>
+>**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** são recursos diferentes no AEM:
+>* **Os** Fragmentos de conteúdo são conteúdo editorial, que pode ser usado para acessar dados estruturados, incluindo textos, números e datas, entre outros. São conteúdo puro, com definição e estrutura, mas sem design visual e/ou layout adicionais.
+>* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 
-Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
-Para obter mais informações, consulte também [Entendendo fragmentos de conteúdo e fragmentos de experiência em AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments).
+>
+>Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
+>
+>Para obter mais informações, consulte também [Entendendo fragmentos de conteúdo e fragmentos de experiência em AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 ## Fragmentos de conteúdo e serviços de conteúdo {#content-fragments-and-content-services}
 
@@ -99,13 +102,16 @@ AEM Fragmentos de conteúdo podem ser usados para descrever e gerenciar conteúd
 Juntamente com os recursos de exportação JSON de AEM componentes principais, esse conteúdo estruturado pode ser usado para fornecer conteúdo AEM a canais diferentes de páginas AEM.
 
 >[!NOTE]
-Consulte [Headless e AEM](/help/implementing/developing/headless/introduction.md) para obter uma introdução ao Headless Development for AEM Sites as a Cloud Service.
+>
+>Consulte [Headless e AEM](/help/implementing/developing/headless/introduction.md) para obter uma introdução ao Headless Development for AEM Sites as a Cloud Service.
 
 >[!NOTE]
-AEM também suporta a tradução do conteúdo do fragmento.
+>
+>AEM também suporta a tradução do conteúdo do fragmento.
 
 >[!NOTE]
-AEM também suporta a tradução do conteúdo do fragmento. Consulte [Tradução de ativos](/help/assets/translate-assets.md) para obter mais informações.
+>
+>AEM também suporta a tradução do conteúdo do fragmento. Consulte [Tradução de ativos](/help/assets/translate-assets.md) para obter mais informações.
 
 ## Tipo de conteúdo {#content-type}
 
@@ -144,7 +150,8 @@ Os ativos podem ser usados com um fragmento de conteúdo de várias maneiras; ca
    * Consulte [Inserir ativos em seu fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) no Editor de fragmentos para obter mais informações.
 
    >[!NOTE]
-   Os ativos visuais inseridos no próprio fragmento de conteúdo são anexados ao parágrafo anterior. Quando o fragmento é adicionado a uma página, esses ativos são movidos em relação a esse parágrafo quando o conteúdo intermediário é adicionado.
+   >
+   >Os ativos visuais inseridos no próprio fragmento de conteúdo são anexados ao parágrafo anterior. Quando o fragmento é adicionado a uma página, esses ativos são movidos em relação a esse parágrafo quando o conteúdo intermediário é adicionado.
 
 * **Conteúdo associado**
 
@@ -188,10 +195,12 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
    * São anexadas ao texto anterior (parágrafo).
 
       >[!CAUTION]
-      Os ativos podem ser (inadvertidamente) removidos de um fragmento ao alternar para o formato Texto simples.
+      >
+      >Os ativos podem ser (inadvertidamente) removidos de um fragmento ao alternar para o formato Texto simples.
 
       >[!NOTE]
-      Os ativos também podem ser adicionados como [conteúdo adicional (intermediário)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) ao usar um fragmento em uma página; usando Conteúdo associado ou ativos no navegador Ativos.
+      >
+      >Os ativos também podem ser adicionados como [conteúdo adicional (intermediário)](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) ao usar um fragmento em uma página; usando Conteúdo associado ou ativos no navegador Ativos.
 
 * **Conteúdo associado**
 
@@ -215,7 +224,8 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
          * Ao editar o **Metadados** quando estiver no editor de fragmentos
 
    >[!CAUTION]
-   Os perfis de processamento de metadados não se aplicam aos Fragmentos de conteúdo.
+   >
+   >Os perfis de processamento de metadados não se aplicam aos Fragmentos de conteúdo.
 
 * **Mestre**
 
@@ -248,7 +258,8 @@ Conteúdo intermediário:
 * O conteúdo associado pode ser usado, assim como os ativos e/ou componentes do navegador apropriado.
 
 >[!CAUTION]
-O conteúdo intermediário é o conteúdo da página. Não é armazenado no fragmento de conteúdo.
+>
+>O conteúdo intermediário é o conteúdo da página. Não é armazenado no fragmento de conteúdo.
 
 ### Necessário por fragmentos {#required-by-fragments}
 
