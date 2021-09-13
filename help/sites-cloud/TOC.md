@@ -1,15 +1,15 @@
 ---
 solution: Experience Manager, Experience Manager Sites, Experience Manager as a Cloud Service
-sub-product: Criação de conteúdo no AEM as a Cloud Service
+sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: Criação de conteúdo no AEM as a Cloud Service
 breadcrumb-title: Guia de criação
 user-guide-description: Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service.
-feature: 'Criação  '
+feature: Authoring
 role: User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 73%
+source-wordcount: '311'
+ht-degree: 70%
 
 ---
 
@@ -94,6 +94,7 @@ ht-degree: 73%
          + [Práticas recomendadas do MSM](administering/msm/best-practices.md)
          + [Solução de problemas e perguntas frequentes](administering/msm/troubleshooting.md)
       + Tradução {#translation}
+         + [Jornada da documentação de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
          + [Tradução de conteúdo para sites multilíngues](administering/translation/overview.md)
          + [Preparação de conteúdo para tradução](administering/translation/preparation.md)
          + [Gerenciamento de projetos de tradução](administering/translation/managing-projects.md)

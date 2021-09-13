@@ -1,19 +1,23 @@
 ---
 title: Assistente de Cópia de Idioma
 description: Saiba mais sobre como usar o Assistente de cópia de idioma no AEM.
-feature: Cópia de idioma
+feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 2%
+source-wordcount: '286'
+ht-degree: 1%
 
 ---
 
 # Assistente de Cópia de Idioma {#language-copy-wizard}
 
 O Assistente de cópia de idioma é uma experiência guiada para criar e instrumentar a estrutura de conteúdo multilíngue. O assistente simplifica e agiliza a criação de uma cópia de idioma.
+
+>[!TIP]
+>
+>Se você não estiver familiarizado com a tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é o caminho orientado pela tradução do conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideal para aqueles sem AEM ou experiência de tradução.
 
 >[!NOTE]
 >

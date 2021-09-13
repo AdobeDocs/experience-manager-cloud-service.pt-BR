@@ -2,10 +2,10 @@
 title: Trabalhar com fluxos de trabalho de projeto
 description: Há uma variedade de fluxos de trabalho de projeto disponíveis para uso imediato.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 77%
+source-wordcount: '452'
+ht-degree: 75%
 
 ---
 
@@ -21,15 +21,14 @@ Os fluxos de trabalho de projeto disponíveis para uso imediato incluem os segui
 
 Dependendo de qual modelo de projeto você selecionar, certos fluxos de trabalho estarão disponíveis:
 
-|  | **Projeto simples** | **Projeto de mídia** | **Projeto de tradução** |
-|---|:-:|:-:|:-:|
-| Solicitar cópia |  | x |  |
-| Aprovação de projeto | x |  |  |
-| Solicitar lançamento | x |  |  |
-| Solicitar página de aterrissagem | x |  |  |
-| Solicitar email | x |  |  |
-| Criar Cópia de Idioma DAM &amp;ast; |  |  | x |
-| Criar e traduzir DAM Language Copy&amp;ast; |  |  | x |
+|  | **Projeto simples** | **Projeto de tradução** |
+|---|:-:|:-:|
+| Fluxo de trabalho de aprovação do projeto | x |  |
+| Solicitar lançamento | x |  |
+| Solicitar página de aterrissagem | x |  |
+| Solicitar email | x |  |
+| Criar Cópia de Idioma DAM &amp;ast; |  | x |
+| Criar e traduzir DAM Language Copy&amp;ast; |  | x |
 
 >[!NOTE]
 >
@@ -47,19 +46,6 @@ Para obter mais informações sobre como trabalhar com fluxos de trabalho no AEM
 
 Esta seção descreve os fluxos de trabalho disponíveis para Projetos.
 
-## Fluxo de trabalho Solicitar cópia {#request-copy-workflow}
-
-Esse fluxo de trabalho permite solicitar um manuscrito de um usuário e depois aprová-lo. Para iniciar o fluxo de trabalho Solicitar cópia:
-
-1. No projeto Mídia, selecione o sinal **+** no bloco **Fluxos de trabalho** e selecione **Solicitar fluxo de trabalho de cópia**.
-1. Insira um título de manuscrito e um breve resumo do que você está solicitando. Se aplicável, insira uma contagem de palavras de destino, uma prioridade de tarefa e uma data de vencimento.
-
-   ![Fluxo de trabalho Solicitar cópia](/help/sites-cloud/authoring/assets/projects-request-copy.png)
-
-1. Clique em **Criar**. O fluxo de trabalho é iniciado. A tarefa é exibida no bloco **Tarefas**.
-
-   ![Solicitação de cópia adicionada](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
-
 ## Fluxo de trabalho para aprovação do projeto {#project-approval-workflow}
 
 No fluxo de trabalho Aprovação de projeto, você atribui conteúdo a um usuário e depois revisa e aprova esse conteúdo.
@@ -70,8 +56,6 @@ No fluxo de trabalho Aprovação de projeto, você atribui conteúdo a um usuár
    ![Solicitar aprovação](/help/sites-cloud/authoring/assets/projects-approval.png)
 
 1. Clique em **Criar**. O fluxo de trabalho é iniciado. A tarefa é exibida no bloco **Tarefas**.
-
-   ![Solicitação de aprovação adicionada](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
 ## Fluxo de trabalho Solicitar lançamento {#request-launch-workflow}
 
@@ -86,4 +70,4 @@ Esse fluxo de trabalho permite solicitar um lançamento.
 
 ## Criar (e Traduzir) fluxo de trabalho de cópia de idioma para ativos {#create-and-translate-language-copy-workflow-for-assets}
 
-Os fluxos de trabalho **Criar cópia de idioma** e **Criar e traduzir da cópia de idioma** são abordados detalhadamente em Criar cópias de idioma para ativos.
+Os fluxos de trabalho **Criar cópia de idioma** e **Criar e traduzir da cópia de idioma**[ são abordados detalhadamente em Criar cópias de idioma para ativos.](/help/assets/translate-assets.md)

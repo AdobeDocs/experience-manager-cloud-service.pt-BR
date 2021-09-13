@@ -1,14 +1,13 @@
 ---
 title: Trabalhar com tarefas
 description: As tarefas representam itens de trabalho a serem realizados no conteúdo e são usadas nos projetos para determinar o nível de integridade das tarefas atuais
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
+source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 93%
+source-wordcount: '578'
+ht-degree: 94%
 
 ---
-
 
 # Trabalhar com tarefas {#working-with-tasks}
 
@@ -16,7 +15,7 @@ Tarefas representam itens de trabalho a serem realizados no conteúdo. Quando vo
 
 Tarefas também são usadas em projetos para determinar o nível de integridade das tarefas atuais, incluindo tarefas de fluxo de trabalho.
 
-## Rastrear o andamento do projeto  {#tracking-project-progress}
+## Rastrear o andamento do projeto {#tracking-project-progress}
 
 É possível monitorar o andamento do projeto por meio da análise de tarefas ativas/concluídas dentro de um projeto representado pelo mosaico de **Tarefas**. O andamento do projeto pode ser determinado por:
 
@@ -26,7 +25,7 @@ Tarefas também são usadas em projetos para determinar o nível de integridade 
 
 Ambos listam as tarefas do fluxo de trabalho e as tarefas criadas diretamente no Mosaico de **tarefas**.
 
-### Mosaico de tarefas  {#task-tile}
+### Mosaico de tarefas {#task-tile}
 
 Se um projeto estiver relacionado a alguma tarefa, um Mosaico de tarefas será exibido dentro do projeto. O Mosaico de tarefas mostra o status atual do projeto. Isso é baseado nas tarefas existentes dentro do fluxo de trabalho e não inclui tarefas que serão geradas no futuro, conforme o fluxo de trabalho progride. As informações a seguir estão visíveis no mosaico de tarefas:
 
@@ -34,13 +33,13 @@ Se um projeto estiver relacionado a alguma tarefa, um Mosaico de tarefas será e
 * Porcentagem de tarefas ativas
 * Porcentagem de tarefas vencidas
 
-![mosaico de tarefa](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![Mosaico de tarefas](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
 
 ### Visualizar ou modificar as tarefas de um projeto {#viewing-or-modifying-the-tasks-in-a-project}
 
 Além de monitorar o andamento, é possível ver mais informações sobre o projeto ou modificá-lo.
 
-#### Lista de tarefas  {#task-list}
+#### Lista de tarefas {#task-list}
 
 Clique nas reticências (...) no Mosaico de tarefas para exibir a lista de tarefas relacionadas ao projeto. As tarefas são divididas por fluxos de trabalho principais. Os detalhes da tarefa são exibidos, juntamente com os metadados, como prazo, responsável, prioridade e status.
 
@@ -48,7 +47,7 @@ Clique nas reticências (...) no Mosaico de tarefas para exibir a lista de taref
 
 #### Detalhes da tarefa {#task-details}
 
-Para obter mais informações sobre uma tarefa específica, na Lista da Tarefa, toque/clique na tarefa e **detalhes da Tarefa **abra.
+Para obter mais informações sobre uma tarefa específica, na Lista de Tarefas, toque/clique na tarefa e **Abrir**.
 
 ![Detalhes da tarefa](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -71,7 +70,7 @@ Para adicionar uma tarefa:
 
 1. Toque/clique em **Criar**.
 
-## Trabalhar com tarefas na caixa de entrada  {#working-with-tasks-in-the-inbox}
+## Trabalhar com tarefas na caixa de entrada {#working-with-tasks-in-the-inbox}
 
 Também é possível acessar as tarefas na Caixa de entrada. Na caixa de entrada, é possível abrir o conteúdo para implementar as alterações necessárias. Quando concluído, você define o status da tarefa para Concluído. As tarefas também são exibidas na caixa de entrada quando são atribuídas a um grupo de usuários ao qual você pertence. Neste caso, qualquer membro do grupo de realizar o trabalho e concluir a tarefa.
 

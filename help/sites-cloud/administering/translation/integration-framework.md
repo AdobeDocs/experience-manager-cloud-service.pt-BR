@@ -1,12 +1,12 @@
 ---
 title: Configuração da estrutura de integração de tradução
 description: Saiba como configurar a Estrutura de integração de tradução para integrar com serviços de tradução de terceiros.
-feature: Cópia de idioma
+feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1419'
 ht-degree: 2%
 
 ---
@@ -20,6 +20,10 @@ A Estrutura de integração de tradução integra-se aos serviços de tradução
 1. [Associe as configurações de nuvem com suas páginas.](#configuring-pages-for-translation)
 
 Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, consulte [Tradução de conteúdo para sites multilíngues](overview.md).
+
+>[!TIP]
+>
+>Se você não estiver familiarizado com a tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é o caminho orientado pela tradução do conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideal para aqueles sem AEM ou experiência de tradução.
 
 ## Conexão com um provedor de serviços de tradução {#connecting-to-a-translation-service-provider}
 

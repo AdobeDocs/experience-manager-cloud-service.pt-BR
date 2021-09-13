@@ -2,10 +2,10 @@
 title: Projetos
 description: Projetos permitem agrupar recursos em uma única entidade, cujo ambiente comum e compartilhado facilita o gerenciamento dos seus projetos
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 79%
+source-wordcount: '1259'
+ht-degree: 78%
 
 ---
 
@@ -83,7 +83,7 @@ O bloco **Experiências** permite adicionar um aplicativo para dispositivos móv
 
 ![Experiências](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Os ícones indicam que tipo de experiência é representada: site, aplicativo móvel ou publicação. Adicione experiências ao clicar no sinal + ou em **Adicionar experiência** e selecionar o tipo de experiência.
+Os ícones indicam que tipo de experiência é representada: site, aplicativo móvel ou publicação. Adicione experiências tocando ou clicando na divisa inferior e tocando em **Adicionar experiência** e selecionando o tipo de experiência.
 
 ![Adicionar uma experiência](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 

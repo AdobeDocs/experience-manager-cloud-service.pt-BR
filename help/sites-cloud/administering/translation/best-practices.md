@@ -1,17 +1,21 @@
 ---
 title: Práticas recomendadas de tradução
 description: Saiba mais sobre as práticas recomendadas compiladas pelas equipes de engenharia de Adobe e consultoria para ajudá-lo a trabalhar com projetos de tradução.
-feature: Cópia de idioma
+feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas de tradução {#translation-best-practices}
+
+>[!TIP]
+>
+>Se você não estiver familiarizado com a tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é o caminho orientado pela tradução do conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideal para aqueles sem AEM ou experiência de tradução.
 
 ## Geral {#general}
 

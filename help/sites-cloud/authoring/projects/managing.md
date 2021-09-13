@@ -2,9 +2,9 @@
 title: Gerenciamento de projetos
 description: Projetos permite organizar o projeto agrupando recursos em uma entidade que pode ser acessada e gerenciada no console Projetos
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '894'
 ht-degree: 80%
 
 ---
@@ -15,7 +15,7 @@ O console Projetos permite que você organize seu projeto, agrupando os recursos
 
 No console **Projetos**, você acessa e toma medidas nos seus projetos:
 
-![O console Projetos](/help/sites-cloud/authoring/assets/projects-console-detail.png)
+![O console Projetos](/help/sites-cloud/authoring/assets/projects-console.png)
 
 Em Projetos, é possível criar um projeto, associar recursos ao projeto e também excluir um projeto ou vínculos de recursos. Você pode querer abrir um mosaico para exibir seu conteúdo, bem como adicionar itens a um mosaico. Este tópico descreve esses procedimentos.
 
@@ -40,7 +40,7 @@ O procedimento de criação de um projeto é o mesmo em todos os projetos. A dif
 
 1. Defina o **Título** e **Descrição** e adicione uma imagem **Miniatura** se necessário. Você também adiciona ou exclui os usuários e os grupos aos quais pertencem. Além disso, clique em **Avançado** para adicionar um nome utilizado no URL.
 
-   ![Adicionar detalhes do projeto](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![Adicionar detalhes do projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Toque/clique em **Criar**. A confirmação pergunta se você deseja abrir o novo projeto ou retornar ao console.
 
@@ -85,13 +85,11 @@ Em alguns mosaicos, é possível adicionar mais de um item. Por exemplo, é poss
 
 Para adicionar itens a um mosaico:
 
-1. Em **Projetos**, navegue até o projeto e clique no ícone Adicionar + no mosaico ao qual deseja adicionar um item.
+1. Em **Projetos**, navegue até o projeto e toque ou clique na divisa inferior no bloco ao qual deseja adicionar um item.
 
-   ![Adicionar item a um bloco](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![Adicionar item a um bloco](/help/sites-cloud/authoring/assets/project-workflows.png)
 
 1. Adicione um item ao mosaico da mesma forma que ao criar um novo mosaico. Os mosaicos do projeto são descritos[ aqui](/help/sites-cloud/authoring/projects/overview.md#project-tiles). Neste exemplo, outro fluxo de trabalho foi adicionado.
-
-   ![Outro item adicionado a um bloco](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### Abrir um mosaico {#opening-a-tile}
 
@@ -99,19 +97,17 @@ Você pode querer ver quais itens estão incluídos em um mosaico atual ou modif
 
 Para abrir um mosaico para ver ou modificar itens:
 
-1. No console Projetos, toque/clique nas reticências (...)
+1. No console Projetos, toque/clique nas reticências (...) na parte inferior do cartão.
 
-   ![Abrir um bloco](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+   ![Abrir um bloco](/help/sites-cloud/authoring/assets/project-links.png)
 
 1. O AEM lista os itens no mosaico. É possível entrar no modo de seleção para modificar ou excluir os itens.
 
-   ![Bloco aberto](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![Bloco aberto](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ## Exibir as estatísticas do projeto {#viewing-project-statistics}
 
-Para ver as estatísticas do projeto, no console **Projetos**, clique em **Exibir visualização de estatísticas**. O nível de conclusão de cada projeto é exibido. Clique em **Mostrar visualização de estatísticas** novamente para ir para o console **Projetos**.
-
-![Estatísticas do projeto](/help/sites-cloud/authoring/assets/projects-stats.png)
+É possível exibir estatísticas do projeto, no console **Projetos**.
 
 ### Exibir uma linha do tempo do projeto {#viewing-a-project-timeline}
 
@@ -143,6 +139,6 @@ Para tornar um projeto inativo (ou ativo):
 1. Toque/clique em **Editar**.
 1. Altere o seletor de **Ativo** para **Inativo** (ou vice-versa).
 
-   ![Ativar um projeto](/help/sites-cloud/authoring/assets/projects-activate.png)
+   ![Ativar um projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. Toque/clique em **Concluído** para salvar as alterações.
