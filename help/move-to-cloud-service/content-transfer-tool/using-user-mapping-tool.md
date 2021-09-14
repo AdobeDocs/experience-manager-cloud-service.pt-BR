@@ -2,14 +2,14 @@
 title: Usar a ferramenta Mapeamento de usuários
 description: Usar a ferramenta Mapeamento de usuários
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
+source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1315'
 ht-degree: 2%
 
 ---
 
-# Usar a ferramenta de mapeamento de usuários {#user-mapping-tool}
+# Usar a ferramenta Mapeamento de usuários {#user-mapping-tool}
 
 ## Visão geral {#overview}
 
@@ -24,7 +24,7 @@ Como parte da jornada de transição para o Adobe Experience Manager (AEM) as a 
 
 Uma mudança importante no AEM como Cloud Service é o uso totalmente integrado de IDs de Adobe para acessar o nível de criação.  Isso requer o uso do [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS), que fornece o logon único em todos os aplicativos de nuvem do Adobe. Para obter mais detalhes, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Devido a essa alteração, usuários e grupos existentes precisam ser mapeados para suas IDs de IMS para evitar usuários e grupos duplicados na instância de autor do Cloud Service.
 
-### Ferramenta de Mapeamento de Usuário {#mapping-tool}
+### Ferramenta de mapeamento de usuários {#mapping-tool}
 
 A ferramenta Transferência de conteúdo (sem Mapeamento de usuários) migrará qualquer usuário e grupo associado ao conteúdo que está sendo migrado. A Ferramenta de mapeamento de usuários faz parte da Ferramenta de transferência de conteúdo e seu único objetivo é modificar os usuários e grupos para que eles possam ser reconhecidos corretamente pelo IMS, a funcionalidade de logon único usada pelo AEM como um Cloud Service. Quando essas modificações forem feitas, a ferramenta Transferência de conteúdo migrará os usuários e grupos do conteúdo especificado como de costume.
 
@@ -50,13 +50,12 @@ Os seguintes casos específicos serão registrados:
 
 * Quando os upups de conteúdo são executados, se o conteúdo não for transferido porque não foi alterado desde a transferência anterior, os usuários e grupos associados a esse conteúdo também não serão transferidos, mesmo se os usuários e grupos tiverem sido alterados enquanto isso. Isso ocorre porque os usuários e grupos são migrados junto com o conteúdo ao qual estão associados.
 
-* A assimilação falhará nos seguintes cenários:
+* Se a instância do Cloud Service de destino AEM tiver um usuário com um nome de usuário diferente, mas o mesmo endereço de email de um dos usuários na instância de origem do AEM e o Mapeamento de usuários estiver ativado, uma mensagem de erro será gravada nos logs e o usuário do AEM de origem não será transferido, pois somente um usuário com um determinado endereço de email é permitido no sistema de destino.
 
-1. Se a instância do Cloud Service do target AEM tiver um usuário com um nome de usuário diferente, mas o mesmo endereço de email de um dos usuários na instância de AEM de origem.
+* Se dois usuários na instância de AEM de origem tiverem o mesmo endereço de email e o Mapeamento de usuários estiver ativado, uma mensagem de erro será gravada nos logs e um dos usuários de AEM de origem não será transferido, pois somente um usuário com um determinado endereço de email é permitido no sistema de destino.
 
-1. Se houver dois usuários na instância de AEM de origem com nomes de usuário diferentes, mas o mesmo endereço de email. AEM como Cloud Service não permite que dois usuários tenham o mesmo endereço de email.
 
-## Usar a Ferramenta de Mapeamento de Usuário {#using-user-mapping-tool}
+## Usar a ferramenta Mapeamento de usuários {#using-user-mapping-tool}
 
 A Ferramenta de mapeamento de usuários usa uma API que permite procurar usuários do Adobe Identity Management System (IMS) por email e retornar suas IDs IMS. Essa API exige que o usuário crie uma ID do cliente para sua organização, um Segredo do cliente e um Token de acesso ou portador.
 
