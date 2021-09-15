@@ -1,12 +1,12 @@
 ---
 title: Alterações importantes em [!DNL Adobe Experience Manager Assets] como a [!DNL Cloud Service]
 description: Alterações importantes para [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5.
-feature: Informações da versão
+feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: b2f68acaf4c88a3a7e0768410cee53eb2d07a76e
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 5%
 
 ---
@@ -71,10 +71,10 @@ Para fazer uma validação completa do código e do processo, incluindo a assimi
 >Os seguintes recursos estão disponíveis para [!DNL Experience Manager] como um [!DNL Cloud Service]:
 >
 >* [Lista de recursos obsoletos e removidos](/help/release-notes/deprecated-removed-features.md)
-* [Uma introdução](/help/overview/introduction.md)
-* [Novidades e diferenças](/help/overview/what-is-new-and-different.md)
-* [A arquitetura](/help/core-concepts/architecture.md)
-* [Alterações importantes](/help/release-notes/aem-cloud-changes.md)
-* [Alterações importantes [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
-* [Tutoriais em vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
+>* [Uma introdução](/help/overview/introduction.md)
+>* [Novidades e diferenças](/help/overview/what-is-new-and-different.md)
+>* [A arquitetura](/help/overview/architecture.md)
+>* [Alterações importantes](/help/release-notes/aem-cloud-changes.md)
+>* [Alterações importantes [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Tutoriais em vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 

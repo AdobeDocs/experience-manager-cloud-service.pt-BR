@@ -1,13 +1,13 @@
 ---
 title: Saiba mais sobre o desenvolvimento sem periféricos do CMS
 description: Nesta parte da Jornada de desenvolvedores sem periféricos AEM, saiba mais sobre a tecnologia sem periféricos e por que usá-la.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
 
 ---
-
 
 # Saiba mais sobre o desenvolvimento sem periféricos do CMS {#learn-about}
 
@@ -21,7 +21,7 @@ Este documento ajuda você a entender a entrega de conteúdo sem periféricos e 
 * Entenda por que e quando o headless é necessário
 * Saiba em alto nível como os conceitos sem interface são usados e como eles se relacionam
 
-## Entrega de conteúdo de pilha completa {#full-stack}
+## Entrega de conteúdo em pilha completa {#full-stack}
 
 Desde o aumento dos sistemas de gerenciamento de conteúdo (CMSs) fáceis de usar e em larga escala, as organizações os aproveitaram como um local central para gerenciar mensagens, identidade visual e comunicações. Usar o CMS como ponto central para administrar experiências melhorou a eficiência, eliminando a necessidade de duplicar tarefas em sistemas diferentes.
 
@@ -52,7 +52,7 @@ As limitações desse silo natural podem se tornar evidentes à medida que você
 
 Os usuários esperam engajamento independentemente da plataforma ou do ponto de contato, o que requer agilidade na maneira como você apresenta suas experiências.  Essa abordagem multicanal é o padrão das experiências digitais e uma abordagem de pilha completa pode, em determinadas circunstâncias, se revelar inflexível.
 
-## A cabeça em Sem Cabeça {#the-head}
+## A Cabeça em Sem Cabeça {#the-head}
 
 O cabeçalho de qualquer sistema é geralmente o renderizador de saída desse sistema, normalmente na forma de uma GUI ou outro resultado gráfico.
 
@@ -104,7 +104,7 @@ As experiências digitais continuarão a definir como as marcas interagem com os
 
 É impossível prever o futuro, mas sem cabeça dá-nos a agilidade de reagir ao que o futuro traz.
 
-## AEM e Sem Cabeça {#aem-and-headless}
+## AEM e sem cabeça {#aem-and-headless}
 
 À medida que você prossegue com essa jornada do desenvolvedor, aprenderá como o AEM suporta a entrega sem periféricos junto com seus recursos de entrega em pilha completa.
 
@@ -126,5 +126,5 @@ Aproveite esse conhecimento e prossiga com sua jornada sem periféricos de AEM r
 
 Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento sem periféricos revisando o documento [Introdução AEM Cabeça como Cloud Service,](getting-started.md) os seguintes são alguns recursos adicionais opcionais que fazem um mergulho mais profundo em alguns conceitos mencionados neste documento, mas eles não são solicitados a continuar com a jornada sem periféricos.
 
-* [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/core-concepts/architecture.md)  - Entenda o AEM como uma estrutura Cloud Service
+* [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)  - Entenda o AEM como uma estrutura Cloud Service
 * [AEM Tutorials sem interface](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com AEM e escolha o que é certo para você.

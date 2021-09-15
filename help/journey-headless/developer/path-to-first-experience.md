@@ -2,7 +2,7 @@
 title: Caminho para sua primeira experiência usando AEM headless
 description: Nesta parte da Jornada de desenvolvedores sem cabeçalho do AEM, você entenderá as etapas para implementar sua primeira experiência sem periféricos em AEM incluindo considerações de planejamento e também aprenderá as práticas recomendadas para tornar seu caminho o mais tranquilo possível.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
@@ -147,7 +147,7 @@ Embora seja recomendável seguir para a próxima parte da jornada de desenvolvim
 * [AEM Tutorials sem interface](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com AEM e escolha o que é certo para você.
 * [Gerenciamento de conteúdo sem cabeçalho usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. A autenticação via AdobeID é necessária.
 * [AEM Guias WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  - Este projeto do GitHub inclui aplicativos de exemplo que destacam AEM APIs GraphQL.
-* [Introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/core-concepts/architecture.md)  - Uma visão geral completa AEM arquitetura
+* [Introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)  - Uma visão geral completa AEM arquitetura
 * [Guia de introdução sem cabeçalho](/help/implementing/developing/headless/introduction.md#getting-started)  - uma introdução rápida para AEM recursos sem periféricos para usuários que já conhecem AEM.
 * [Criar modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md)  - Documentação técnica sobre modelos de fragmento de conteúdo
 * [Criar fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)  - Documentação técnica sobre fragmentos de conteúdo
