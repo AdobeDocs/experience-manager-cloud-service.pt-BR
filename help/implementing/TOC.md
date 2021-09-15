@@ -5,10 +5,10 @@ breadcrumb-title: Guia de implementação
 user-guide-description: Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
+source-git-commit: 8ee0eef4a46b2e2ebe0e94812db68e369bc0dfd0
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 36%
+source-wordcount: '1037'
+ht-degree: 35%
 
 ---
 
@@ -171,7 +171,7 @@ ht-degree: 36%
          + [AEM API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
          + [Autenticação para consultas GraphQL de AEM Remotas em Fragmentos de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
    + Desenvolvimento AEM híbrido e SPA {#hybrid}
-      + [Híbrido e SPA com AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [Híbrido e SPA com AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Ativando a exportação JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Introdução SPA e Apresentação](developing/hybrid/introduction.md)
       + [Tutorial WKND do SPA](developing/hybrid/wknd-tutorial.md)
