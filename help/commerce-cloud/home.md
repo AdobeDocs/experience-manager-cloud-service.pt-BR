@@ -2,10 +2,10 @@
 title: AEM Content and Commerce
 description: Recursos de autoajuda e links de documentação do AEM Content and Commerce
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '370'
+ht-degree: 64%
 
 ---
 
@@ -16,7 +16,6 @@ Esta página lista os recursos de autoajuda sobre Conteúdo e Comércio AEM.
 >[!NOTE]
 >
 >Para AEM Content and Commerce com AEM 6.5 e CIF clássica, consulte [AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
-
 
 ## Artigos-chave sobre conteúdo e comércio {#key-articles}
 
@@ -29,10 +28,9 @@ Esta página lista os recursos de autoajuda sobre Conteúdo e Comércio AEM.
 | Guia do usuário | Descrição |
 |---|---|
 | [Página inicial do Experience Manager as a Cloud Service](/help/landing/home.md) | Para obter uma visão geral da documentação do Experience Manager as a Cloud Service, comece aqui. |
-| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, etc. |
+| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, arquitetura etc. |
 | [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo as novidades dos recursos descontinuados e removidos e problemas conhecidos. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
-| [Conceitos principais](/help/core-concepts/home.md) | Este guia fornece uma introdução aos conceitos principais do Experience Manager as a Cloud Service, incluindo a arquitetura do novo serviço. |
 | [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar os sites do Experience Manager as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Entenda como administrar os ativos do Experience Manager as a Cloud Service. |

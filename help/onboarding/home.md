@@ -2,9 +2,9 @@
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '521'
 ht-degree: 28%
 
 ---
@@ -35,9 +35,8 @@ A jornada de integração ilustrada abaixo foi projetada para uma persona de Adm
 | Guia do usuário | Descrição |
 |---|---|
 | [Página inicial do Experience Manager as a Cloud Service](/help/landing/home.md) | Comece por aqui para ter uma visão geral da documentação do Experience Manager as a Cloud Service. |
-| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do [!DNL Experience Manager as a Cloud Service], incluindo uma introdução, terminologia e assim por diante. |
+| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do [!DNL Experience Manager as a Cloud Service], incluindo uma introdução, terminologia, arquitetura e assim por diante. |
 | [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do [!DNL Experience Manager as a Cloud Service], incluindo novidades, recursos obsoletos e removidos e problemas conhecidos. |
-| [Conceitos principais](/help/core-concepts/home.md) | Este guia fornece uma introdução aos conceitos principais de [!DNL Experience Manager as a Cloud Service], incluindo a arquitetura do novo serviço. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados a [!DNL Experience Manager as a Cloud Service]. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como criar com e administrar [!DNL Experience Manager Sites] como um Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Entenda como usar e administrar [!DNL Experience Manager Assets as a Cloud Service]. |

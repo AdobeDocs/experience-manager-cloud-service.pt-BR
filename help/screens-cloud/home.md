@@ -1,10 +1,11 @@
 ---
 title: AEM Screens as a Cloud Service
 description: Recursos de autoajuda e links de documentação do Adobe Experience Manager Screens as a Cloud Service
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '428'
+ht-degree: 54%
 
 ---
 
@@ -29,10 +30,9 @@ Esta página lista os recursos de autoajuda relacionados ao AEM Screens as a Clo
 | Guia do usuário | Descrição |
 |---|---|
 | [Página inicial do Experience Manager as a Cloud Service](/help/landing/home.md) | Para obter uma visão geral da documentação do Experience Manager as a Cloud Service, comece aqui. |
-| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, etc. |
+| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, arquitetura etc. |
 | [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo as novidades dos recursos descontinuados e removidos e problemas conhecidos. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
-| [Conceitos principais](/help/core-concepts/home.md) | Este guia fornece uma introdução aos conceitos principais do Experience Manager as a Cloud Service, incluindo a arquitetura do novo serviço. |
 | [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar os sites do Experience Manager as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Entenda como administrar os ativos do Experience Manager as a Cloud Service. |
