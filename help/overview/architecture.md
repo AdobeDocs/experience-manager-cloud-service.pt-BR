@@ -1,15 +1,21 @@
 ---
 title: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service
 description: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service.
-exl-id: fb169e85-ac19-4962-93d9-abaed812f948
-source-git-commit: f96561e46cfaa217398ec496bf9d5df669e01c29
+source-git-commit: a54841ca2e959e885a997b19dd03c6ece3f00d1c
 workflow-type: tm+mt
-source-wordcount: '1725'
-ht-degree: 84%
+source-wordcount: '1782'
+ht-degree: 82%
 
 ---
 
 # Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
+
+>[!CONTEXTUALHELP]
+>id="intro_aem_cloudservice_architecture"
+>title="Introdução ao AEM as a Cloud Service Architecture"
+>abstract="Nesta guia, é possível visualizar a nova arquitetura do AEM como um Cloud Service e compreender as alterações. AEM resultou em uma arquitetura dinâmica com um número variável de imagens, portanto é importante levar tempo para entender.a arquitetura de nuvem"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Visão geral da arquitetura"
+
 
 O Adobe Experience Manager (AEM) as a Cloud Service resultou em mudanças na arquitetura.
 
