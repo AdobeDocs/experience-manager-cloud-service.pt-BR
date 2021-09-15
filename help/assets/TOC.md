@@ -1,13 +1,13 @@
 ---
-sub-product: Ativos Adobe Experience Manager as a Cloud Service
+sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Guia do Assets as a Cloud Service
 breadcrumb-title: Guia do Assets
 user-guide-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+source-git-commit: 8ed1d93a11c326df449164d35c7433f21b64d187
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 43%
+source-wordcount: '483'
+ht-degree: 42%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 43%
    + [Perfis de metadados](metadata-profiles.md)
    + [Esquema de metadados](metadata-schemas.md)
    + [Gerenciar ativos de vídeo](manage-video-assets.md)
+   + [Reutilizar ativos usando o MSM](reuse-assets-using-msm.md)
    + [Baixar ativos](download-assets-from-aem.md)
    + [Ativos de check-in e check-out para edição](check-out-and-submit-assets.md)
    + [Digital Rights Management por ativos](drm.md)
@@ -58,7 +59,7 @@ ht-degree: 43%
    + [Autenticação para consultas GraphQL remotas em fragmentos de conteúdo](content-fragments/graphql-authentication-content-fragments.md)
    + [API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
-   + [Gerar representações FPO para o Adobe InDesign](configure-fpo-renditions.md)
+   + [Gerar para representações somente posicionamento](configure-fpo-renditions.md)
    + [Relatórios de ativos](asset-reports.md)
    + [Metadados em cascata](cascading-metadata.md)
    + [Metadados XMP](xmp-metadata.md)
@@ -67,7 +68,7 @@ ht-degree: 43%
 + Compartilhar e distribuir ativos {#brand-portal}
    + [Configurar [!DNL Assets] com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos em [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [Publicar ativos  [!DNL Brand Portal] do [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
+   + [Publicar ativos  [!DNL Brand Portal] do [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + Fragmentos de conteúdo {#content-fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
    + [Entrega sem cabeçalho com fragmentos de conteúdo e GraphQL](content-fragments/content-fragments-graphql.md)
