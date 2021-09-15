@@ -2,12 +2,12 @@
 title: Configurar e usar microsserviços de ativos
 description: Configure e use os microsserviços de ativos nativos em nuvem para processar ativos em escala.
 contentOwner: AG
-feature: Microserviços do Asset compute, Fluxo de trabalho, Processamento de ativos
+feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2704'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Os microsserviços de ativos oferecem processamento escalável e resiliente de ativos usando aplicativos nativos em nuvem (também chamados de trabalhadores). O Adobe gerencia os serviços para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento.
 
-Os microsserviços de ativos permitem processar uma [ampla gama de tipos de arquivos](/help/assets/file-format-support.md) cobrindo mais formatos prontos para uso do que o possível com versões anteriores de [!DNL Experience Manager]. Por exemplo, a extração em miniatura de formatos PSD e PSB agora é possível, mas era necessária anteriormente soluções de terceiros, como [!DNL ImageMagick].
+Os microsserviços de ativos permitem processar uma [ampla gama de tipos de arquivos](/help/assets/file-format-support.md) cobrindo mais formatos prontos para uso do que o possível com versões anteriores de [!DNL Experience Manager]. Por exemplo, a extração de miniaturas dos formatos PSD e PSB agora é possível, mas era necessária anteriormente para soluções de terceiros, como [!DNL ImageMagick].
 
 O processamento de ativos depende da configuração em **[!UICONTROL Perfis de processamento]**. O Experience Manager oferece uma configuração básica padrão e permite que os administradores adicionem configurações mais específicas de processamento de ativos. Os administradores criam, mantêm e modificam as configurações dos fluxos de trabalho de pós-processamento, incluindo a personalização opcional. Personalizar os fluxos de trabalho permite que os desenvolvedores estendam a oferta padrão.
 

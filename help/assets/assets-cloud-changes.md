@@ -4,9 +4,9 @@ description: Alterações importantes para [!DNL Adobe Experience Manager Assets
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '986'
 ht-degree: 5%
 
 ---
@@ -52,7 +52,7 @@ Para fazer uma validação completa do código e do processo, incluindo a assimi
 | Recurso ou caso de uso | Status em [!DNL Experience Manager] como [!DNL Cloud Service] | Comentários |
 |-----|-----|-----|
 | [Detecção de ativos duplicados](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Funciona de forma diferente. | Consulte [como funcionou em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
-| [Representações somente para posicionamento (FPO)](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | Funciona de forma diferente |  |
+| [Representações somente para posicionamento (FPO)](/help/assets/configure-fpo-renditions.md) | Funciona de forma diferente | Os Perfis de processamento usam microsserviços de ativos para gerar representações de FPO. No Experience Manager 6.5, uma solução de terceiros, como [!DNL ImageMagick], estava disponível para gerar as representações. |
 | Write-back de metadados | Funciona de forma diferente | Desativado por padrão. Ative o iniciador do fluxo de trabalho correspondente, se necessário. O write-back é realizado pelos microsserviços de ativos. |
 | Processamento de ativos carregados usando o Gerenciador de pacotes | Precisa de intervenção manual. | Reprocessar manualmente usando a ação **[!UICONTROL Reprocessar ativo]**. |
 | Detecção de tipo MIME | Não suportado. | Se você carregar um ativo digital sem uma extensão ou com uma extensão incorreta, ele poderá não ser processado conforme desejado. Os usuários ainda podem armazenar os arquivos binários sem uma extensão no DAM. Consulte [Detecção de tipo MIME em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
@@ -73,7 +73,7 @@ Para fazer uma validação completa do código e do processo, incluindo a assimi
 >* [Lista de recursos obsoletos e removidos](/help/release-notes/deprecated-removed-features.md)
 >* [Uma introdução](/help/overview/introduction.md)
 >* [Novidades e diferenças](/help/overview/what-is-new-and-different.md)
->* [A arquitetura](/help/overview/architecture.md)
+>* [A arquitetura](/help/core-concepts/architecture.md)
 >* [Alterações importantes](/help/release-notes/aem-cloud-changes.md)
 >* [Alterações importantes [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [Tutoriais em vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)

@@ -1,12 +1,12 @@
 ---
 title: Adicione seus ativos digitais a [!DNL Adobe Experience Manager].
 description: Adicione seus ativos digitais a [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-feature: Gerenciamento de ativos,Fazer upload
+feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2063'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ Para se adequar às convenções específicas de nomenclatura de arquivos para s
 
 ## Fazer upload em massa de ativos {#bulk-upload}
 
-O criador de ativos em massa pode lidar com um grande número de ativos com eficiência. No entanto, uma assimilação em grande escala não é apenas um despejo de arquivo amplo ou uma migração casual. Para que uma assimilação em grande escala seja um projeto significativo que atende ao seu objetivo comercial e seja eficiente, planeje a migração e prepare a organização de ativos. Todas as sugestões são diferentes, portanto, em vez de generalizar, fator na composição de repositório e nas necessidades comerciais avançadas. Veja a seguir algumas sugestões abrangentes para planejar e executar uma assimilação em massa:
+O criador de ativos em massa pode lidar com um grande número de ativos com eficiência. No entanto, uma assimilação em grande escala não é apenas um despejo de arquivo amplo ou uma migração casual. Para que uma assimilação em grande escala seja um projeto significativo que atende à sua finalidade comercial e seja eficiente, planeje a migração e prepare a organização de ativos. Todas as sugestões são diferentes, portanto, em vez de generalizar, fator na composição de repositório e nas necessidades comerciais avançadas. Veja a seguir algumas sugestões abrangentes para planejar e executar uma assimilação em massa:
 
 * Preparar ativos: Remova ativos que não são necessários no DAM. Considere remover ativos não utilizados, obsoletos ou duplicados. Isso reduz os dados transferidos e os ativos assimilados, levando a ingestões mais rápidas.
 * Organizar ativos: Considere organizar o conteúdo em alguma ordem lógica, por exemplo, por tamanho de arquivo, formato de arquivo, caso de uso ou prioridade. Em geral, arquivos complexos grandes exigem mais processamento. Você também pode considerar a assimilação de arquivos grandes separadamente usando a opção de filtragem do tamanho do arquivo (descrita abaixo).

@@ -2,12 +2,12 @@
 title: Fazer check-in e check-out de arquivos em [!DNL Assets]
 description: Saiba como fazer check-out de ativos para edição e check-in deles novamente depois que as alterações forem concluídas.
 contentOwner: AG
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,6 @@ Os administradores podem verificar ativos com check-out feito por outros usuári
 
 >[!MORELIKETHIS]
 >
->* [Entender check-in e check-out  [!DNL Experience Manager] no aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Entender check-in e check-out  [!DNL Experience Manager] no aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
 >* [Tutorial em vídeo para entender o check-in e o check-out [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 

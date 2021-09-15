@@ -2,12 +2,12 @@
 title: Acessibilidade em [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade em [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ajudam usuários portadores de deficiência.
 contentOwner: AG
-feature: Acessibilidade,Gerenciamento de ativos
+feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1911'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Possible topics to cover in this article are below.
 
 # Recursos de acessibilidade em [!DNL Adobe Experience Manager Assets] como um [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] O permite que criadores e editores de conteúdo vejam experiências incríveis na Web. O Adobe se esforça para incluir os criadores com deficiência, melhorando a acessibilidade de [!DNL Experience Manager]. O software é aprimorado continuamente para atender às necessidades de todos os tipos de usuários e seguir os padrões mundiais que incluem indivíduos com deficiências visuais, auditivas, de mobilidade ou outras.
+[!DNL Adobe Experience Manager] permite que criadores e editores de conteúdo vejam experiências incríveis na Web. O Adobe se esforça para incluir os criadores com deficiência, melhorando a acessibilidade de [!DNL Experience Manager]. O software é aprimorado continuamente para atender às necessidades de todos os tipos de usuários e seguir os padrões mundiais que incluem indivíduos com deficiências visuais, auditivas, de mobilidade ou outras.
 
 [!DNL Experience Manager] O publica informações de conformidade que descrevem os padrões que ele adere, descreve os recursos de acessibilidade do produto e descreve o nível de conformidade. Os relatórios de conformidade de acessibilidade ajudam os usuários a entender o nível de adesão a vários padrões. [!DNL Experience Manager] As melhorias feitas em [!DNL Assets] permitem que todos os usuários usem as interfaces facilmente por meio de teclado, leitor de tela, ampliadores e outras tecnologias de assistência.
 
