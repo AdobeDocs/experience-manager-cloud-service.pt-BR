@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6e7b2dd71f7e5a820ebca5e6e3928c712dfc359c
+source-git-commit: d46efe181fee238d355a67cafbd5e7220efb43dc
 workflow-type: tm+mt
-source-wordcount: '3086'
-ht-degree: 25%
+source-wordcount: '2986'
+ht-degree: 26%
 
 ---
 
@@ -23,8 +23,6 @@ A funcionalidade Ativos conectados oferece suporte ao caso de uso acima, integra
 Ao editar páginas no [!UICONTROL Editor de páginas] como destino, os autores podem pesquisar, navegar e incorporar facilmente ativos de uma implantação [!DNL Assets] diferente que atua como uma fonte de ativos. Os administradores criam uma integração única de uma implantação de [!DNL Experience Manager] com o recurso [!DNL Sites] com outra implantação de [!DNL Experience Manager] com o recurso [!DNL Assets]. Você também pode usar as imagens do Dynamic Media nas páginas da Web de seu site por meio do Connected Assets e aproveitar as funcionalidades do Dynamic Media, como recorte inteligente e predefinições de imagens.
 
 Para os autores [!DNL Sites], os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e uso ininterruptos de alguns ativos remotos de cada vez. Para disponibilizar muitos ativos remotos em uma implantação [!DNL Sites] de uma só vez, considere migrar os ativos em massa.
-
-Você pode configurar uma conexão entre a implantação do Sites e a implantação do Dynamic Media que permite que autores de páginas usem imagens do Dynamic Media em suas páginas da Web. Ao criar páginas da Web, a experiência de usar ativos remotos e implantações remotas do Dynamic Media permanece a mesma. Isso permite aproveitar a funcionalidade do Dynamic Media por meio do recurso Ativos conectados, por exemplo, recorte inteligente e predefinições de imagens.
 
 ### Pré-requisitos e implantações compatíveis {#prerequisites}
 
@@ -148,24 +146,17 @@ Somente as tags de ativos remotos são buscadas e têm uma tag exata corresponde
 Use a configuração acima para ter uma experiência de criação a fim de entender a funcionalidade. Use documentos ou imagens de sua escolha na implantação remota do DAM.
 
 1. Navegue até a interface [!DNL Assets] na implantação remota, acessando **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]** do espaço de trabalho [!DNL Experience Manager]. Como alternativa, acesse `https://[assets_servername_ams]:[port]/assets.html/content/dam` em um navegador. Carregue os ativos de sua escolha.
-&lt;>
+
 1. Na implantação [!DNL Sites], no ativador de perfil no canto superior direito, clique em **[!UICONTROL Representar como]**. Forneça `ksaner` como nome de usuário, selecione a opção fornecida e clique em **[!UICONTROL OK]**.
-1. Abra uma página do site em **[!UICONTROL Navigation]** > **[!UICONTROL Sites]**. Edite a página. Como alternativa, acesse `https://[aem_server]:[port]/editor.html/content/<site page>` em um navegador para editar uma página.
-========
-1. Na implantação [!DNL Sites], no ativador de perfil no canto superior direito, clique em **[!UICONTROL Representar como]**. Forneça o nome de usuário desejado e clique em **[!UICONTROL OK]**.
-1. Abra uma página de site a partir de **[!UICONTROL Navigation]** > **[Sites]**. Edite a página. Como alternativa, acesse `https://[aem_server]:[port]/editor.html/content/<page name>` em um navegador para editar uma página.
->>>>>>>>>>Alterações em estado de parada
 
+1. Abra uma página do site `We.Retail` em **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edite a página. Como alternativa, acesse `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` em um navegador para editar uma página.
 
-
-
-
-> 
-
-Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo da página.
+   Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo da página.
 
 1. Abra a guia [!UICONTROL Assets] e clique em **[!UICONTROL Fazer logon no Connected Assets]**.
-1. Forneça as credenciais apropriadas. Este usuário tem permissões de criação em ambas as implantações [!DNL Experience Manager].
+
+1. Forneça as credenciais - `ksaner` como nome de usuário e `password` como senha. Este usuário tem permissões de criação em ambas as implantações [!DNL Experience Manager].
+
 1. Procure o ativo que você adicionou ao DAM. Os ativos remotos são exibidos no painel esquerdo. Filtre por imagens ou documentos e filtre também por tipos de documentos compatíveis. Arraste as imagens em um componente `Image` e os documentos em um componente `Download`.
 
    Os ativos buscados são somente leitura na implantação local [!DNL Sites]. Você ainda pode usar as opções fornecidas pelos componentes [!DNL Sites] para editar o ativo buscado. A edição por componentes não é destrutiva.
@@ -183,10 +174,12 @@ Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo da
 1. Ao publicar uma página, [!DNL Experience Manager] exibe uma lista completa de ativos que são usados na página. Verifique se os ativos remotos foram buscados com êxito no momento da publicação. Para verificar o status de cada ativo buscado, consulte a interface do usuário [trabalhos assíncronos](/help/operations/asynchronous-jobs.md).
 
    >[!NOTE]
-   Mesmo se um ou mais ativos remotos não forem buscados, a página será publicada. O componente que usa o ativo remoto é publicado vazio. A área de notificação [!DNL Experience Manager] exibe uma notificação para erros que são mostrados na página de trabalhos assíncronos.
+   >
+   >Mesmo se um ou mais ativos remotos não forem buscados, a página será publicada. O componente que usa o ativo remoto é publicado vazio. A área de notificação [!DNL Experience Manager] exibe uma notificação para erros que são mostrados na página de trabalhos assíncronos.
 
 >[!CAUTION]
-Uma vez usados em uma página da Web, os ativos remotos buscados podem ser pesquisados e usados por qualquer pessoa com permissões para acessar a pasta local. Os ativos buscados são armazenados na pasta local (`connectedassets` na apresentação acima). Os ativos também podem ser pesquisados e visualizados no repositório local por meio do [!UICONTROL Localizador de conteúdo].
+>
+>Uma vez usados em uma página da Web, os ativos remotos buscados podem ser pesquisados e usados por qualquer pessoa com permissões para acessar a pasta local. Os ativos buscados são armazenados na pasta local (`connectedassets` na apresentação acima). Os ativos também podem ser pesquisados e visualizados no repositório local por meio do [!UICONTROL Localizador de conteúdo].
 
 Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se os metadados associados não puderem ser editados.
 
