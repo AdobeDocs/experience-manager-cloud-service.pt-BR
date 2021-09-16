@@ -3,12 +3,12 @@ title: Gerenciar ativos digitais
 description: Saiba mais sobre vários métodos de edição e gerenciamento de ativos.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Gerenciamento de ativos, Publicação, Colaboração, Processamento de ativos
+feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4543'
 ht-degree: 11%
 
 ---
@@ -531,8 +531,6 @@ Para imprimir as anotações e o status da revisão, toque/clique no ícone **[!
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
    Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor da fonte, o tamanho e o estilo, a cor de fundo dos comentários e status, abra a **[!UICONTROL Configuração do PDF de anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/manage-digital-assets.md#annotating).
-
-   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Retorne ao arquivo PDF renderizado e atualize-o. O PDF atualizado reflete as alterações feitas.
 

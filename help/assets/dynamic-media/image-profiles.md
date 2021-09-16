@@ -1,12 +1,12 @@
 ---
 title: Perfis de imagem do Dynamic Media
 description: Saiba como criar Perfis de imagem do Dynamic Media que contêm configurações para a máscara de nitidez e recorte inteligente ou amostra inteligente, ou ambos. Em seguida, aplique o perfil a uma pasta de ativos de imagem.
-feature: Gerenciamento de ativos, Perfis de imagem, Representações
+feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '2762'
+source-wordcount: '2757'
 ht-degree: 7%
 
 ---
@@ -102,7 +102,7 @@ Para definir parâmetros de processamento avançados para outros tipos de ativos
 
 Consulte [Sobre perfis de imagem do Dynamic Media e perfis de vídeo](/help/assets/dynamic-media/about-image-video-profiles.md).
 
-Consulte também [Práticas recomendadas para organizar ativos digitais para usar perfis de processamento](/help/assets/dynamic-media/best-practices-for-file-management.md).
+Consulte também [Práticas recomendadas para organizar ativos digitais para usar perfis de processamento](/help/assets/organize-assets.md).
 
 **Para criar perfis de imagem do Dynamic Media:**
 

@@ -4,12 +4,13 @@ description: Gere representações FPO de ativos novos e existentes usando o flu
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
+source-git-commit: 7e82c3c5490c2f6d43167e6784cdbbb60f811a6f
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
+
 
 # Gerar para representações somente posicionamento para o Adobe InDesign {#fpo-renditions}
 
@@ -20,7 +21,9 @@ Os ativos fornecem representações que são usadas somente para posicionamento 
 O Experience Manager as a Cloud Service oferece recursos de processamento de ativos nativos em nuvem para gerar as representações FPO. Use microsserviços de ativos para geração de representação. Você pode configurar a geração de representação de ativos recém-carregados e dos ativos que existem no Experience Manager.
 
 A seguir estão as etapas para gerar representações de FPO:
+
 1. [Crie um perfil de processamento](#create-processing-profile).
+
 1. Configure o Experience Manager para usar esse perfil no [processar novos ativos](#generate-renditions-of-new-assets).
 1. Use os perfis para [processar ativos existentes](#generate-renditions-of-existing-assets).
 

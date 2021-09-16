@@ -2,19 +2,22 @@
 title: Perfis de metadados
 description: Saiba mais sobre perfis de metadados para ativos. Saiba como criar um perfil de metadados e aplicá-lo aos ativos de pastas.
 contentOwner: AG
-feature: Metadados
+feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 20%
+source-wordcount: '1356'
+ht-degree: 18%
 
 ---
 
 # Perfis de metadados {#metadata-profiles}
 
 Um Perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. Crie um Perfil de metadados e aplique-o a uma pasta. Qualquer ativo carregado posteriormente na pasta herda os metadados padrão configurados no Perfil de metadados.
+
+Um conceito importante relacionado ao uso de perfis no Experience Manager Assets é que eles são atribuídos a pastas. Em um perfil estão as configurações no formato de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como organiza subpastas e como manipula os arquivos nessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil.
+Ao usar estratégias consistentes e apropriadas de nomenclatura de arquivos e pastas e práticas recomendadas de metadados, você aproveita ao máximo sua coleção de ativos digitais e garante que os arquivos corretos sejam processados pelo perfil correto.
 
 ## Adicionar um perfil de metadados {#adding-a-metadata-profile}
 

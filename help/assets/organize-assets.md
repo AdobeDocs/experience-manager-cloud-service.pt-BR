@@ -1,49 +1,106 @@
 ---
-title: Organizar ativos digitais
-description: Organize seus ativos digitais usando vários métodos fornecidos no Adobe Experience Manager Assets.
+title: Organize seus ativos digitais
+description: Organize seus ativos digitais, imagens, arquivos, pastas e assim por diante, usando o Experience Manager.
 contentOwner: AG
-feature: Gerenciamento de ativos, Marcação, Distribuição de ativos
+feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
 
-# Organizar ativos digitais {#organize-digital-assets}
+# Organize seus ativos digitais {#organize-digital-assets}
 
-Todos os ativos digitais, metadados e conteúdo de documentos do Microsoft Office e PDF são extraídos e podem ser pesquisados. A pesquisa permite uma filtragem sofisticada em ativos e respeita completamente as permissões apropriadas. Os metadados são abordados detalhadamente em Metadados no Gerenciamento de ativos digitais.
+Todos os ativos digitais, metadados e conteúdo de documentos do Microsoft® Office e PDF são extraídos e podem ser pesquisados. A pesquisa permite uma filtragem sofisticada em ativos e respeita completamente as permissões apropriadas. Os metadados são abordados detalhadamente em Metadados no Gerenciamento de ativos digitais.
 
-O Experience Manager Assets é compatível com várias maneiras de organizar o conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de maneira não ordenada e adhoc, usando, por exemplo, tags . Os usuários podem editar tags no Editor de ativos DAM, onde os ativos secundários, as representações e os metadados são exibidos.
+[!DNL Experience Manager Assets] O suporta várias maneiras de organizar o conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de maneira não ordenada e ad hoc, por exemplo, tags. Os usuários podem editar tags no Editor de ativos DAM, onde subativos, representações e metadados são exibidos.
 
-## Criar pastas {#create-folders}
+<!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
+## Create folders {#create-folders}
 
-Ao organizar uma coleção de ativos, por exemplo, todas as imagens *Nature*, você pode criar pastas para mantê-las juntas. Você pode usar pastas para categorizar e organizar seus ativos. [!DNL Assets] não exige que você organize ativos em pastas para funcionar melhor.
+When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. [!DNL Assets] does not require you to organize assets in folders to work better.
 
 >[!NOTE]
 >
->Não há suporte para o compartilhamento de uma pasta de Ativos (no Marketing Cloud) do tipo `sling:OrderedFolder`. Se quiser compartilhar uma pasta, não selecione Solicitado ao criar uma pasta.
+>Sharing an Assets folder (in Marketing Cloud) of the type `sling:OrderedFolder`, is not supported. If you want to share a folder, do not select Ordered when creating a folder.
 
-1. Navegue até o local na pasta de ativos digitais onde deseja criar uma nova pasta.
-1. No menu, clique em **[!UICONTROL Create]**. Selecione **[!UICONTROL Nova Pasta]**.
-1. No campo **[!UICONTROL Title]**, forneça um nome de pasta. Por padrão, o DAM usa o título fornecido como o nome da pasta. Depois que a pasta for criada, é possível substituir o padrão e especificar outro nome de pasta.
-1. Clique em **[!UICONTROL Criar]**. Sua pasta é exibida na pasta de ativos digitais.
+1. Navigate to the place in your digital assets folder where you want to create a new folder.
+1. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
+1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
+1. Click **[!UICONTROL Create]**. Your folder is displayed in the digital assets folder.
 
-## Adicionar propriedades CUG a pastas {#add-cug-properties-to-folders}
+## Add CUG properties to folders {#add-cug-properties-to-folders}
 
-É possível limitar quem pode acessar determinadas pastas no Assets, tornando a pasta parte de um grupo de usuários fechado (CUG). Para fazer uma pasta parte de um CUG:
+You can limit who can access certain folders in Assets by making the folder part of a closed user group (CUG). To make a folder part of a CUG:
 
-1. No Assets, clique com o botão direito do mouse na pasta para a qual deseja adicionar propriedades de grupo de usuários fechado e selecione **Properties**.
-1. Clique na guia **CUG**.
-1. Marque a caixa de seleção **Enabled** para disponibilizar a pasta e seus ativos somente para um grupo de usuários fechado.
-1. Navegue até a página de logon, se houver, para adicionar essas informações. Adicione grupos admitidos clicando em **Adicionar item**. Se necessário, adicione o realm. Clique em **OK** para salvar suas alterações.
+1. In Assets, right-click the folder you want to add closed user group properties for and select **Properties**.  
+1. Click the **CUG** tab.
+1. Select the **Enabled** check box to make the folder and its assets available only to a closed user group.  
+1. Browse to the login page, if there is one, to add that information. Add admitted groups by clicking **Add item**. If necessary, add the realm. Click **OK** to save your changes.
 
-## Usar tags para organizar ativos {#use-tags-to-organize-assets}
+## Use tags to organize assets {#use-tags-to-organize-assets}
 
-Você pode usar pastas ou tags ou ambas para organizar ativos. Adicionar tags a ativos facilita sua recuperação durante uma pesquisa. Para adicionar tags a um ativo, siga estas etapas:
+You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. To add tags to an asset, follow these steps:
 
-1. No Digital Asset Manager, clique duas vezes no ativo para abri-lo.
-1. Na área **Tags**, abra o menu para revelar as tags disponíveis. Selecione as tags conforme apropriado. Para excluir uma tag, passe o ponteiro do mouse sobre ela e clique em `X` para excluí-la.
-1. Clique em **Salvar** para salvar quaisquer tags adicionadas.
+1. In the Digital Asset Manager, double-click the asset to open it.
+1. In the **Tags** area, open the menu to reveal the available tags. Select tags as appropriate. To delete a tag, hover the pointer over the tag and click `X` to delete it.
+1. Click **Save** to save any tags you added.
+
+Date24/08/2021
+-->
+
+## Organizar ativos em pastas {#organize-using-folders}
+
+A maneira mais básica de organizar ativos é salvar os ativos em pastas. É semelhante a organizar arquivos em pastas no sistema de arquivos local. Para obter mais informações sobre como criar e gerenciar pastas, consulte [Gerenciar ativos](manage-digital-assets.md). A forma como você nomeia arquivos e pastas, como organiza subpastas e como você manipula os arquivos nessas pastas pode ter um impacto significativo na maneira como esses ativos são processados. Ao usar estratégias consistentes e apropriadas de nomenclatura de arquivos e pastas, juntamente com uma boa prática de metadados, você pode aproveitar ao máximo seu repositório de ativos digitais.
+
+* Geralmente, seu repositório de ativos digitais está sempre crescendo. Portanto, é importante formalizar o uso de metadados, a estrutura de pastas e a nomenclatura de arquivos no início do ciclo de criação de conteúdo.
+* Use pastas somente para impor uma estrutura de armazenamento consistente para seus ativos digitais. Essa consistência ajuda a processar e gerencia melhor seus ativos. Por exemplo, os ativos colocados nos seguintes tipos de pastas podem ajudar a segregar seus ativos:
+
+   * **Pastas** de desenvolvimento: contém ativos digitais em que você está trabalhando no momento.
+   * **Pastas** do cliente: contém ativos digitais com base em clientes ou nomes de projeto.
+   * **Pastas** primárias: contém ativos digitais de origem original.
+   * **Pastas** de representação: contém representações e cópias dos ativos digitais de origem original.
+   * **Pastas** de tamanho de arquivo: contém ativos digitais com base em tamanhos de arquivo pequenos, médios ou grandes.
+   * **Pastas** de preparo: O contém ativos digitais prontos para publicação ao vivo em seu site.
+   * **Pastas** do tipo MIME: contém ativos digitais específicos para tipos MIME, como imagens, documentos e multimídia.
+   * **Arquivar pastas**: contém ativos digitais removidos.
+   * **Pastas** baseadas em data: contém ativos digitais com base em uma data de criação ou em uma data da última modificação.
+
+* Crie um diretório de pastas que provavelmente não serão alteradas para que qualquer personalização ou automação continue a funcionar. Por exemplo, os perfis de processamento atribuídos continuam a funcionar.
+* Se um ativo já estiver publicado, use [!DNL Experience Manager] para movê-lo para outra pasta e republicar de seu novo local. O local do ativo publicado original ainda está disponível junto com o ativo republicado recentemente. O ativo publicado original, no entanto, é *lost* para [!DNL Experience Manager] e não pode ter a publicação cancelada. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e depois o mova para uma pasta diferente.
+
+## Organizar ativos usando tags {#use-tags-to-organize-assets}
+
+Usando tags como metadados, você pode pesquisar ativos facilmente, criar coleções usando os resultados de pesquisa, aumentar a classificação de pesquisa para alguns ativos e aplicar algoritmos de IA do Adobe Sensei para descoberta de ativos.
+
+[!DNL Adobe Experience Manager Assets] O usa um algoritmo de autoaprendizado para criar tags altamente descritivas que permitem encontrar o ativo certo em apenas alguns cliques. A marcação inteligente usa a Adobe Sensei, a inteligência artificial e a estrutura de aprendizado de máquina, que podem ser treinadas para reconhecer e aplicar tags padrão e específicas de negócios a imagens. As Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas aos ativos
+
+Para obter mais informações, consulte os seguintes artigos:
+
+* [Editar metadados de ativos](meta-edit.md)
+* [Tags inteligentes no Assets](smart-tags.md)
+
+## Organizar como coleções {#organize-as-collections}
+
+Com as coleções de ativos em [!DNL Experience Manager Assets], você pode simplificar a capacidade de criar, editar e compartilhar ativos entre usuários. Crie vários tipos de coleções com base na maneira como você as usa, incluindo coleções que contêm uma lista de referência estática de ativos, pastas e coleções, e coleções que extrai ativos com base em critérios de pesquisa. Você pode criar coleções com ativos de diferentes locais e compartilhá-las com vários usuários com diferentes níveis de acesso, privilégios de visualização e edição.
+
+Para obter mais informações, consulte [gerenciar coleções](manage-collections.md)
+
+
+## Usar perfis para organizar seus ativos {#organize-to-use-profiles}
+
+Um perfil de processamento contém [!DNL Assets] comandos de processamento que se aplicam a ativos que são carregados em pastas predefinidas. Os perfis são usados para automatizar o processamento do conteúdo de uma pasta ou dos ativos carregados recentemente. Você pode usar perfis para organizar seus ativos melhor.
+
+Padronizar o uso de metadados, a nomenclatura de arquivos e a estrutura de pastas garante que, à medida que seu conjunto de ativos digitais cresce, você possa aplicar perfis de processamento a pastas com maior precisão e consistência.
+
+>[!MORELIKETHIS]
+>
+>* [Usar microsserviços de ativos e perfis de processamento](asset-microservices-configure-and-use.md)
+>* [Perfis de metadados](metadata-profiles.md)
+>* [Perfis de vídeo](/help/assets/dynamic-media/video-profiles.md)
+>* [Perfis de imagem do Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
+
+

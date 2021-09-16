@@ -1,12 +1,12 @@
 ---
 title: Sobre perfis de imagem e perfis de vídeo do Dynamic Media
 description: Um Perfil de imagem ou um Perfil de vídeo é uma receita para quais opções se aplicam a ativos que você faz upload em uma pasta. Por exemplo, você pode especificar qual codificação de vídeo aplicar aos ativos de vídeo do Dynamic Media você faz upload. Ou, qual Perfil de imagem aplicar aos ativos de imagem da Dynamic Media para cortá-los corretamente.
-feature: Gerenciamento de ativos, Perfis de imagem, Perfis de vídeo
+feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1261'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,8 @@ Você deve ter direitos de Administrador para criar, editar e excluir Perfis de 
 
 Depois de criar o Perfil de imagem ou o Perfil de vídeo, atribua-o a uma ou mais pastas que usa para os ativos recém-carregados do Dynamic Media.
 
-Consulte também [Práticas recomendadas para organizar ativos digitais para usar perfis de imagem ou perfis de vídeo](/help/assets/dynamic-media/best-practices-for-file-management.md).
+Consulte também [Práticas recomendadas para organizar ativos digitais para usar perfis de processamento](/help/assets/organize-assets.md).
+
 
 >[!NOTE]
 >

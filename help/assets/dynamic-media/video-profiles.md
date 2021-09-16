@@ -1,12 +1,12 @@
 ---
 title: Perfis de vídeo do Dynamic Media
 description: O Dynamic Media já vem com um perfil de codificação de vídeo adaptável predefinido. As configurações nesse perfil pronto para uso são otimizadas para proporcionar aos clientes a melhor experiência de visualização possível. Você também pode adicionar recorte inteligente aos seus vídeos.
-feature: Gerenciamento de ativos, Perfis de vídeo, Representações
+feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '3661'
+source-wordcount: '3656'
 ht-degree: 7%
 
 ---
@@ -27,7 +27,8 @@ A seguir estão outros fatores que determinam a qualidade de seus vídeos:
 
 Consulte [Práticas recomendadas para codificação de vídeo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-Consulte também [Práticas recomendadas para organizar ativos digitais para usar Perfis de processamento](/help/assets/dynamic-media/best-practices-for-file-management.md).
+Consulte também [Práticas recomendadas para organizar ativos digitais para usar perfis de processamento](/help/assets/organize-assets.md).
+
 
 >[!NOTE]
 >

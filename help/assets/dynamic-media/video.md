@@ -4,14 +4,14 @@ description: Saiba como trabalhar com vídeo no Dynamic Media.
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: d174ff3a27d9a0a3d89bb146b847cf253b8afbdc
 workflow-type: tm+mt
-source-wordcount: '9497'
+source-wordcount: '9427'
 ht-degree: 4%
 
 ---
 
-# Vídeo{#video}
+# Vídeo {#video}
 
 Esta seção descreve como trabalhar com vídeo no Dynamic Media.
 
@@ -37,7 +37,6 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
    * Associe o perfil de processamento de vídeo a uma ou mais pastas, onde você fará upload dos vídeos de origem primária.
 
       * [Aplicar um perfil de vídeo a pastas](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-      * Saiba mais sobre as [Práticas recomendadas para organizar ativos digitais para usar perfis de processamento](/help/assets/dynamic-media/best-practices-for-file-management.md).
       * Saiba mais sobre [Organizar ativos digitais](/help/assets/organize-assets.md).
    * Faça upload dos vídeos de origem primária para as pastas. Ao adicionar vídeos à pasta, eles são codificados de acordo com o perfil de processamento de vídeo atribuído à pasta.
 
@@ -54,9 +53,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 
    * Organizar, navegar e pesquisar ativos de vídeo
 
-      * [Organizar ](/help/assets/organize-assets.md)
-ativos digitaisSaiba mais sobre as práticas  [recomendadas para organizar ativos digitais para usar perfis de processamento](/help/assets/dynamic-media/best-practices-for-file-management.md)
-
+      * [Organizar ativos digitais](/help/assets/organize-assets.md)
       * [Pesquisar ](/help/assets/search-assets.md#custompredicates) ativos de vídeo ou  [Pesquisar ativos](/help/assets/manage-digital-assets.md#search-assets)
    * Visualizar e publicar ativos de vídeo
 
@@ -64,41 +61,27 @@ ativos digitaisSaiba mais sobre as práticas  [recomendadas para organizar ativo
          [Visualizar ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) vídeos ou  [Visualizar ativos](/help/assets/dynamic-media/previewing-assets.md)
          [Gerenciar representações de vídeo](/help/assets/manage-digital-assets.md#managing-renditions)
 
+      * [Gerenciar predefinições do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md)
+      * [Publicação de ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   * Trabalhar com metadados de vídeo
 
-<!-- Commented video-renditions.md as the file is not published yet and will lead to broken link.
-        * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
+      * Edite as propriedades do vídeo, como título, descrição e tags, e os campos de metadados personalizados:
+         [Edição de propriedades do vídeo](/help/assets/manage-digital-assets.md#editing-properties)
 
-    * [Gerenciar predefinições do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md)
-    * [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-    
-    * Trabalhar com metadados de vídeo
+      * [Gerenciamento de metadados para ativos digitais](/help/assets/manage-metadata.md)
+      * [Esquemas de metadados](/help/assets/metadata-schemas.md)
+   * Revisar, aprovar e anotar vídeos e manter o controle total da versão
 
-<!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md) -->
+      * [Anotação de ](/help/assets/manage-video-assets.md#annotate-video-assets) vídeos ou  [Anotação de ativos](/help/assets/manage-digital-assets.md#annotating)
 
-    * Edite as propriedades do vídeo, como título, descrição e tags, campos de metadados personalizados: 
-    [Edição de propriedades de vídeo](/help/assets/manage-digital-assets.md#editing-properties)
-    
-    * [Gerenciamento de metadados para ativos digitais](/help/assets/manage-metadata.md)
-    * [Esquemas de metadados](/help/assets/metadata-schemas.md)
-    
-    * Revise, aprove e anote vídeos e mantenha o controle de versão completo
-    
-    * [Anotação de vídeos](/help/assets/manage-video-assets.md#anotação de-vídeo-ativos) ou [Anotação notação de ativos](/help/assets/manage-digital-assets.md#anotação)
-    
-    * [Criação de uma versão](/help/assets/manage-digital-assets.md#asset-versioning)
-    * [Início de um fluxo de trabalho em um ativo](/help/assets/manage-digital-assets.md#início-um-fluxo de trabalho-em-um-ativo)
+      * [Criar uma versão](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [Iniciar um fluxo de trabalho em um ativo](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
-<!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
--->
+      * [Revisar ativos da pasta](/help/assets/bulk-approval.md)
+      * [Projetos](/help/sites-cloud/authoring/projects/overview.md)
 
-    * [Revisar ativos da pasta](/help/assets/bulk-approval.md)
-    * [Projetos](/help/sites-cloud/authoring/projects/overview.md)
+
+
 
 1. **Publique seus** vídeos do Dynamic Media seguindo um destes procedimentos:
 
