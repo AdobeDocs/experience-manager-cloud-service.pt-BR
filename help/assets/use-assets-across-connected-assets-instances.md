@@ -2,13 +2,13 @@
 title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
-feature: Gerenciamento de ativos, Ativos conectados, Distribuição de ativos, Usuário e grupos
+feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 69242846bcd27a4d70f31cc17688d651e4733b5f
 workflow-type: tm+mt
-source-wordcount: '2967'
-ht-degree: 26%
+source-wordcount: '3046'
+ht-degree: 25%
 
 ---
 
@@ -20,9 +20,11 @@ A funcionalidade Ativos conectados oferece suporte ao caso de uso acima, integra
 
 ## Visão geral do Connected Assets {#overview-of-connected-assets}
 
-Ao editar páginas no [!UICONTROL Editor de páginas] como destino, os autores podem pesquisar, navegar e incorporar facilmente ativos de uma implantação [!DNL Assets] diferente que atua como uma fonte de ativos. Os administradores criam uma integração única de uma implantação de [!DNL Experience Manager] com o recurso [!DNL Sites] com outra implantação de [!DNL Experience Manager] com o recurso [!DNL Assets].
+Ao editar páginas no [!UICONTROL Editor de páginas] como destino, os autores podem pesquisar, navegar e incorporar facilmente ativos de uma implantação [!DNL Assets] diferente que atua como uma fonte de ativos. Os administradores criam uma integração única de uma implantação de [!DNL Experience Manager] com o recurso [!DNL Sites] com outra implantação de [!DNL Experience Manager] com o recurso [!DNL Assets]. Você também pode usar as imagens do Dynamic Media nas páginas da Web de seu site por meio do Connected Assets e aproveitar as funcionalidades do Dynamic Media, como recorte inteligente e predefinições de imagens.
 
 Para os autores [!DNL Sites], os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e uso ininterruptos de alguns ativos remotos de cada vez. Para disponibilizar muitos ativos remotos em uma implantação [!DNL Sites] de uma só vez, considere migrar os ativos em massa.
+
+Você pode configurar uma conexão entre a implantação do Sites e a implantação do Dynamic Media que permite que autores de páginas usem imagens do Dynamic Media em suas páginas da Web. Ao criar páginas da Web, a experiência de usar ativos remotos e implantações remotas do Dynamic Media permanece a mesma. Isso permite aproveitar a funcionalidade do Dynamic Media por meio do recurso Ativos conectados, por exemplo, recorte inteligente e predefinições de imagens.
 
 ### Pré-requisitos e implantações compatíveis {#prerequisites}
 
@@ -147,7 +149,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
 1. Navegue até a interface [!DNL Assets] na implantação remota, acessando **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]** do espaço de trabalho [!DNL Experience Manager]. Como alternativa, acesse `https://[assets_servername_ams]:[port]/assets.html/content/dam` em um navegador. Carregue os ativos de sua escolha.
 1. Na implantação [!DNL Sites], no ativador de perfil no canto superior direito, clique em **[!UICONTROL Representar como]**. Forneça `ksaner` como nome de usuário, selecione a opção fornecida e clique em **[!UICONTROL OK]**.
-1. Abra uma página do site `We.Retail` em **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edite a página. Como alternativa, acesse `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` em um navegador para editar uma página.
+1. Abra uma página do site em **[!UICONTROL Navigation]** > **[!UICONTROL Sites]**. Edite a página. Como alternativa, acesse `https://[aem_server]:[port]/editor.html/content/<site page>` em um navegador para editar uma página.
 
    Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo da página.
 
@@ -161,7 +163,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
    *Figura: opções para filtrar tipos de documentos e imagens ao pesquisar ativos no DAM remoto.*
 
-1. Um autor do site será notificado se ocorrer uma busca assíncrona de ativo e uma falha na tarefa de busca. Durante a criação ou até mesmo após a criação, os autores podem ver informações detalhadas sobre tarefas de busca e erros na interface do usuário [trabalhos assíncronos](/help/operations/asynchronous-jobs.md).
+1. Um autor do site será notificado se ocorrer uma busca assíncrona de ativo e uma falha na tarefa de busca. Durante a criação ou até mesmo após a criação, os autores podem ver informações detalhadas sobre as tarefas de busca e erros na interface do usuário [trabalhos assíncronos](/help/operations/asynchronous-jobs.md).
 
    ![Notificação sobre a busca assíncrona de ativos que ocorre em segundo plano.](assets/assets_async_transfer_fails.png)
 
