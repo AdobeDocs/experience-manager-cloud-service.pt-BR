@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
+source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
 workflow-type: tm+mt
-source-wordcount: '2929'
-ht-degree: 40%
+source-wordcount: '3063'
+ht-degree: 38%
 
 ---
 
@@ -286,6 +286,23 @@ Siga as etapas abaixo:
 1. Clique em **Excluir** na caixa de diálogo **Excluir conjunto de migração** para confirmar a exclusão.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+
+
+## Execução da ferramenta Transferência de conteúdo em uma instância de publicação {#running-ctt-on-publish}
+
+Recomenda-se que, ao mover o conteúdo para uma instância de Publicação, a CTT seja instalada na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Siga a abordagem recomendada conforme descrito abaixo:
+
+* Use a mesma versão da CTT usada na instância do Autor.
+
+* Somente um único nó de publicação precisa ser migrado. Ele deve ser removido do balanceador de carga antes de iniciar a extração.
+
+* Ao criar o conjunto de migração, use o URL do ambiente AEMaaCS de autor.
+
+* Durante a assimilação para publicar, o nível de publicação NÃO será dimensionado para baixo (diferente do autor). Como precaução, evite quaisquer operações de gravação iniciadas pelo usuário, como:
+
+   * Distribuição de conteúdo do autor do AEMaaCS para publicar nesse ambiente
+   * Sincronização de usuários entre instâncias de publicação
+
 
 ## Resolução de problemas {#troubleshooting}
 
