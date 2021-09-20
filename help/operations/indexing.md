@@ -2,9 +2,9 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
+source-git-commit: 8e978616bd1409c12e8a40eeeeb828c853faa408
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '2098'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ O pacote da amostra acima é criado como `com.adobe.granite:new-index-content:zi
 >
 >`noIntermediateSaves=true`
 
-### Implantando Definições de Índice {#deploying-index-definitions}
+### Implantação de definições de índice {#deploying-index-definitions}
 
 >[!NOTE]
 >
@@ -85,9 +85,9 @@ Depois que a nova definição de índice é adicionada, o novo aplicativo precis
 >
 >Para obter mais detalhes sobre a estrutura do pacote necessária para AEM como Cloud Service, consulte o documento [AEM Estrutura do Projeto.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
-## Gerenciamento de índice usando implantações azul-verde {#index-management-using-blue-green-deployments}
+## Gerenciamento de índice usando implantações em verde-azul {#index-management-using-blue-green-deployments}
 
-### O que é o Gerenciamento de índice {#what-is-index-management}
+### O que é Gerenciamento de índice {#what-is-index-management}
 
 O gerenciamento de índice trata da adição, remoção e alteração de índices. Alterar a *definição* de um índice é rápido, mas a aplicação da alteração (muitas vezes chamada de &quot;criação de índice&quot; ou, para índices existentes, &quot;reindexação&quot;) requer tempo. Não é instantâneo: o repositório deve ser verificado para que os dados sejam indexados.
 
@@ -95,7 +95,7 @@ O gerenciamento de índice trata da adição, remoção e alteração de índice
 
 A implantação do Blue-Green pode reduzir o tempo de inatividade. Também permite atualizações de tempo de inatividade zero e reversões rápidas. A versão antiga do aplicativo (azul) é executada ao mesmo tempo que a nova versão do aplicativo (verde).
 
-### Áreas de somente leitura e leitura e gravação {#read-only-and-read-write-areas}
+### Áreas somente leitura e leitura-gravação {#read-only-and-read-write-areas}
 
 Determinadas áreas do repositório (partes somente leitura do repositório) podem ser diferentes na versão antiga (azul) e na nova (verde) do aplicativo. As áreas somente leitura do repositório normalmente são &quot;`/app`&quot; e &quot;`/libs`&quot;. No exemplo a seguir, itálico é usado para marcar áreas somente leitura, enquanto negrito é usado para áreas de leitura e gravação.
 
@@ -111,11 +111,11 @@ Determinadas áreas do repositório (partes somente leitura do repositório) pod
 
 As áreas de leitura e gravação do repositório são compartilhadas entre todas as versões do aplicativo, enquanto para cada versão do aplicativo, há um conjunto específico de `/apps` e `/libs`.
 
-### Gerenciamento de índice sem implantação azul-verde {#index-management-without-blue-green-deployment}
+### Gerenciamento de índice sem implantação em verde-azul {#index-management-without-blue-green-deployment}
 
 Durante o desenvolvimento ou ao usar instalações locais, os índices podem ser adicionados, removidos ou alterados no tempo de execução. Os índices são usados assim que estão disponíveis. Se um índice ainda não tiver que ser usado na versão antiga do aplicativo, ele normalmente será criado durante um tempo de inatividade programado. O mesmo ocorre ao remover um índice ou alterar um índice existente. Ao remover um índice, ele fica indisponível assim que é removido.
 
-### Gerenciamento de índice com implantação azul-verde {#index-management-with-blue-green-deployment}
+### Gerenciamento de índice com implantação em verde-azul {#index-management-with-blue-green-deployment}
 
 Com implantações azul-esverdeadas, não há tempo de inatividade. No entanto, para o gerenciamento de índice, isso requer que os índices sejam usados apenas por determinadas versões do aplicativo. Por exemplo, ao adicionar um índice na versão 2 do aplicativo, você não gostaria que ele fosse usado pela versão 1 do aplicativo ainda. O inverso é o caso quando um índice é removido: um índice removido na versão 2 ainda é necessário na versão 1. Ao alterar uma definição de índice, queremos que a versão antiga do índice seja usada apenas para a versão 1 e que a nova versão do índice seja usada apenas para a versão 2.
 
@@ -160,7 +160,7 @@ Isso funciona ao anexar um identificador personalizado ao nome do índice, segui
 
 Como acima, isso garante que o índice seja usado somente pela nova versão do aplicativo.
 
-### Alteração de um Índice {#changing-an-index}
+### Alterar um índice {#changing-an-index}
 
 Quando um índice existente é alterado, um novo índice precisa ser adicionado com a definição de índice alterada. Por exemplo, considere que o índice existente `/oak:index/acme.product-custom-1` é alterado. O índice antigo é armazenado em `/oak:index/acme.product-custom-1` e o novo índice é armazenado em `/oak:index/acme.product-custom-2`.
 
@@ -180,7 +180,7 @@ A nova versão do aplicativo usa a seguinte configuração (alterada):
 
 Às vezes, uma alteração em uma definição de índice precisa ser revertida. As razões podem ser que uma mudança foi feita por engano, ou uma mudança já não é necessária. Por exemplo, a definição de índice `damAssetLucene-8-custom-3` foi criada por engano e já está implantada. Por causa disso, você pode querer reverter para a definição de índice anterior `damAssetLucene-8-custom-2`. Para fazer isso, você precisa adicionar um novo índice chamado `damAssetLucene-8-custom-4` que contenha a definição do índice anterior, `damAssetLucene-8-custom-2`.
 
-### Removendo um índice {#removing-an-index}
+### Remover um índice {#removing-an-index}
 
 O seguinte se aplica somente a índices personalizados. Os índices de produto não podem ser removidos, pois são usados pelo AEM.
 
@@ -208,3 +208,12 @@ Se um índice deve ser removido em uma versão posterior do aplicativo, você po
 ```
 
 Se não for mais necessário ter uma personalização de um índice pronto para uso, você deverá copiar a definição de índice pronta para uso. Por exemplo, se você já implantou `damAssetLucene-8-custom-3`, mas não precisa mais das personalizações e deseja voltar ao índice `damAssetLucene-8` padrão, é necessário adicionar um índice `damAssetLucene-8-custom-4` que contenha a definição de índice `damAssetLucene-8`.
+
+## Otimizações de índice
+
+O Apache Jackrabbit Oak permite configurações de índice flexíveis para lidar com consultas de pesquisa com eficiência. Embora as otimizações de índice possam não desempenhar um papel importante para projetos de pequeno a médio porte, é imperativo que os projetos com repositórios de conteúdo de grande porte e maior velocidade de conteúdo realizem melhorias de eficiência direcionadas para indexação. Os índices não otimizados e os índices de fallback devem ser evitados o máximo possível. É recomendável tomar etapas proativas para garantir que índices adequados e otimizados estejam disponíveis para todas as suas consultas no AEM. Na ausência de um índice adequado, as consultas atravessam todo o repositório - essas consultas devem ser identificadas ao analisar os arquivos de log para otimizar as definições de índice adequadamente, pois uma consulta de travessia do repositório é o método de consulta menos eficiente na AEM. Consulte [esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) para obter mais informações.
+
+### Índice de texto completo do Lucene no AEM como Cloud Service
+
+O índice de texto completo lucene2, indexa todo o conteúdo no repositório de AEM por padrão e, portanto, é extremamente ineficiente devido ao tamanho dependente do repositório. O índice de texto completo do Lucene foi preterido internamente e não será mais implantado em AEM como Cloud Service a partir de setembro de 2021. Dessa forma, ele não é mais usado no lado do produto no AEM como um Cloud Service e não deve ser necessário executar o código do cliente. Para AEM como um ambiente de Cloud Service com índices comuns do Lucene, o Adobe está trabalhando com os clientes individualmente para obter uma abordagem coordenada para compensar esse índice e usar índices melhores e otimizados. Se, ao contrário de todas as expectativas, um índice de texto completo for realmente necessário para executar consultas no código personalizado, a definição de índice analógica para o índice Lucene deve ser criada com um nome diferente para evitar conflitos na manutenção.
+Essa otimização não se aplica a outros ambientes AEM, que são hospedados no local ou gerenciados pelo Adobe Managed Services, a menos que o Adobe o aconselhasse de outra forma.
