@@ -1,9 +1,9 @@
 ---
 title: Repositórios do Cloud Manager
 description: Repositórios do Cloud Manager
-source-git-commit: f2a93373d6f3d6e92dc170fd98315b5989b2b296
+source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,25 @@ Siga as etapas abaixo para visualizar e gerenciar repositórios no Cloud Manager
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. Você pode selecionar o repositório e clicar nas opções de menu na extremidade direita da tabela para **Copiar URL do Repositório**, **Exibir e atualizar** ou **Excluir** seu repositório, conforme mostrado na figura abaixo.
+1. Você pode selecionar o repositório e clicar nas opções de menu na extremidade direita da tabela para **Copiar URL do Repositório** ou **Exibir e atualizar** ou **Excluir** seu repositório, conforme mostrado na figura abaixo.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+
+## Excluindo um Repositório {#delete-repo}
+
+Siga as etapas abaixo para excluir um repositório no Cloud Manager:
+>[!NOTE]
+>A exclusão de um repositório irá:
+>1. Torne o nome do repositório excluído inutilizável para novos repositórios que podem ser criados no futuro. Uma mensagem de erro, conforme mostrado abaixo, será vista neste caso:
+   >*O nome do repositório deve ser exclusivo dentro da organização.*
+>1. Tornar o repositório excluído indisponível no Cloud Manager e, portanto, não pode ser vinculado a um pipeline.
+
+
+1. Na página **Visão geral do programa**, clique na guia **Repositórios** e navegue até a página **Repositórios**.
+
+1. Selecione o repositório e clique nas opções de menu na extremidade direita da tabela. Clique em **Excluir** para excluir o repositório, conforme mostrado na figura abaixo.
+
+   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 
 ## Suporte ao Submódulo Git {#git-submodule-support}
