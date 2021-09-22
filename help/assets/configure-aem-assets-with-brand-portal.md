@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2402'
 ht-degree: 12%
 
 ---
@@ -59,6 +59,8 @@ Você pode ativar o Brand Portal ao criar os ambientes para sua AEM Assets como 
 >Se você tiver uma configuração de nuvem Brand Portal existente ([manualmente configurada usando o Adobe Developer Console](#manual-configuration)) para uma organização IMS (org1-existing) e seu AEM Assets como uma instância [!DNL Cloud Service] estiver configurado para outra organização IMS (org2-new), ativar o Brand Portal no Cloud Manager redefinirá a organização do Brand Portal IMS para `org2-new`. Embora a configuração de nuvem configurada manualmente em `org1-existing` esteja visível na instância do autor do AEM Assets, mas não estará mais em uso após ativar o Brand Portal no Cloud Manager.
 >
 >Se a configuração de nuvem existente do Brand Portal e a instância do AEM Assets as [!DNL Cloud Service] estiverem usando a mesma organização IMS (org1), será necessário ativar o Brand Portal somente no Cloud Manager.
+>
+>Não modifique configurações geradas automaticamente.
 
 **Consulte também**:
 * [Adicionar usuários e funções no AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
@@ -228,7 +230,7 @@ A chave pública (certificado) autentica seu perfil no Console do desenvolvedor 
 
 1. Faça logon no AEM Assets.
 1. No painel **Ferramentas**, navegue até **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**.
-1. Na página Configurações do Adobe IMS , clique em **[!UICONTROL Criar]**. Ele redirecionará para a página **[!UICONTROL Adobe IMS Technical Account Configuration]** . Por padrão, a guia **Certificate** é aberta.
+1. Na página Configurações do Adobe IMS , clique em **[!UICONTROL Criar]**. Ele redirecionará para a página **[!UICONTROL Configuração de conta técnica do Adobe IMS]**. Por padrão, a guia **Certificate** é aberta.
 1. Selecione **[!UICONTROL Adobe Brand Portal]** na lista suspensa **[!UICONTROL Cloud Solution]**.
 1. Marque a caixa de seleção **[!UICONTROL Create new certificate]** e especifique um **alias** para a chave pública. O alias serve como nome da chave pública.
 1. Clique em **[!UICONTROL Criar certificado]**. Em seguida, clique em **[!UICONTROL OK]** para gerar a chave pública.
@@ -243,7 +245,7 @@ A chave pública (certificado) autentica seu perfil no Console do desenvolvedor 
 
 1. Clique em **[!UICONTROL Avançar]**.
 
-   Na guia **Account**, é criada a conta Adobe IMS que requer as credenciais da conta de serviço geradas no Console do Desenvolvedor do Adobe. Mantenha esta página aberta por enquanto.
+   Na guia **Account**, é criada a conta do Adobe IMS que requer as credenciais da conta de serviço geradas no Console do Desenvolvedor do Adobe. Mantenha esta página aberta por enquanto.
 
    Abra uma nova guia e [crie uma conexão de conta de serviço (JWT) no Console do Desenvolvedor do Adobe](#createnewintegration) para obter as credenciais e a carga JWT para configurar a conta IMS.
 
