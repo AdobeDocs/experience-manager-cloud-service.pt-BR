@@ -2,12 +2,12 @@
 title: Importar e exportar metadados de ativos em massa
 description: Este artigo descreve como importar e exportar metadados em massa.
 contentOwner: AG
-feature: Metadados
+feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 561df1d2a2f7b900470084d28b832b4c7a568d3e
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '667'
 ht-degree: 12%
 
 ---
@@ -34,7 +34,7 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
    | Tamanho do lote | Número de ativos em um lote para o qual os metadados devem ser importados. O valor padrão é 50. O valor máximo é 100. |
    | Separador de campos | O valor padrão é `,` (uma vírgula). É possível especificar qualquer outro caractere. |
    | Delimitador de vários valores | Separador para valores de metadados. O valor padrão é `|`. |
-   | Inicializar fluxos de trabalho | False por padrão. Quando definido como `true` e as configurações padrão do Iniciador estiverem em vigor para o fluxo de trabalho WriteBack de metadados de DAM (que grava metadados nos dados binários de XMP). Ativar workflows de inicialização torna o sistema mais lento. |
+   | Inicializar fluxos de trabalho | False por padrão. Quando definido como `true` e as configurações padrão estão em vigor para o fluxo de trabalho WriteBack de metadados de DAM (que grava metadados nos dados de XMP binários). Habilitar os workflows atrasa o sistema. |
    | Nome de coluna do caminho do ativo | Define o nome da coluna para o arquivo CSV com ativos. |
 
 1. Clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é enviada para a sua caixa de entrada de Notificação. Navegue até a página de propriedade do ativo e verifique se os valores de metadados foram importados corretamente para os ativos.
