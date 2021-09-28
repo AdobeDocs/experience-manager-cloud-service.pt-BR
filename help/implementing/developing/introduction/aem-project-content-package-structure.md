@@ -2,9 +2,9 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 798cd0f459b668dc372a88773ed6221927e7d02e
 workflow-type: tm+mt
-source-wordcount: '2869'
+source-wordcount: '2880'
 ht-degree: 13%
 
 ---
@@ -70,6 +70,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
       + `/apps/settings`
    + ACLs (permissões)
       + Qualquer `rep:policy` para qualquer caminho em `/apps`
+   + [Scripts agrupados pré-compilados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + O pacote `ui.config` contém todas as [configurações OSGi](/help/implementing/deploying/configuring-osgi.md):
    + Pasta organizacional contendo definições de configuração OSGi específicas do modo de execução
@@ -124,7 +125,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
       + `site-b.ui.config` implanta configurações OSGi necessárias para o site B
       + `site-b.ui.content` implanta conteúdo e configuração exigidos pelo site B
 
-### Pacotes de Aplicativo Adicionais{#extra-application-packages}
+### Pacotes de aplicativos extras{#extra-application-packages}
 
 Se outros projetos de AEM, que são compostos por seus próprios pacotes de código e conteúdo, forem usados pela implantação de AEM, seus pacotes de contêiner deverão ser incorporados ao pacote `all` do projeto.
 
@@ -234,7 +235,7 @@ Analisando esta estrutura de pastas:
    >Por convenção, as pastas incorporadas do pacote secundário são nomeadas com o sufixo `-packages`. Isso garante que o código de implantação e os pacotes de conteúdo **não** sejam implantados nas pastas de destino de qualquer pacote secundário `/apps/<app-name>/...` que resulte em comportamento de instalação destrutivo e cíclico.
 
 + A pasta de terceiro nível deve ser
-   `application`,  `content` ou  `container`
+   `application`, `content` ou `container`
    + A pasta `application` contém pacotes de código
    + A pasta `content` contém pacotes de conteúdo
    + A pasta `container` armazena qualquer [pacote de aplicativo extra](#extra-application-packages) que possa ser incluído pelo aplicativo AEM.
@@ -282,7 +283,7 @@ A adição de dependências de Maven segue as práticas padrão de Maven e a inc
 >
 >Consulte a seção [POM XML Snippets](#xml-3rd-party-maven-repositories) abaixo para obter um trecho completo.
 
-## Dependências do pacote entre `ui.apps` de `ui.content` Pacotes {#package-dependencies}
+## Dependências do pacote entre `ui.apps` dos pacotes `ui.content` {#package-dependencies}
 
 Para garantir a instalação correta das embalagens, recomenda-se estabelecer as dependências entre pacotes.
 
@@ -570,7 +571,7 @@ No `pom.xml` do projeto do reator, adicione quaisquer diretivas de repositório 
 </repositories>
 ```
 
-### Dependências do pacote entre `ui.apps` de `ui.content` Pacotes {#xml-package-dependencies}
+### Dependências do pacote entre `ui.apps` dos pacotes `ui.content` {#xml-package-dependencies}
 
 Na `ui.content/pom.xml`, adicione as seguintes diretivas `<dependencies>` à declaração de plug-in `filevault-package-maven-plugin`.
 
