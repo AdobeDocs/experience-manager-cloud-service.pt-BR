@@ -2,7 +2,7 @@
 title: Gerenciar registros - Cloud Service
 description: Gerenciar registros - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
+source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 14%
@@ -13,7 +13,7 @@ ht-degree: 14%
 
 Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado usando o cartão **Ambientes** da página **Visão geral** ou Detalhes do ambiente.
 
-## Fazendo download de logs {#download-logs}
+## Download de logs {#download-logs}
 
 Siga as etapas abaixo para baixar logs.
 
@@ -37,11 +37,11 @@ Siga as etapas abaixo para baixar logs.
    ![](assets/download-preview.png)
 
 
-## Faz logon pela API {#logs-through-api}
+## Logs por meio da API {#logs-through-api}
 
 Além de baixar logs por meio da interface do usuário, os logs estarão disponíveis por meio da API e da Interface da linha de comando.
 
-Por exemplo, para baixar os arquivos de log para um ambiente específico, o comando seria algo sozinho nas linhas de
+Por exemplo, para baixar os arquivos de log para um ambiente específico, o comando seria algo ao longo das linhas de
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
