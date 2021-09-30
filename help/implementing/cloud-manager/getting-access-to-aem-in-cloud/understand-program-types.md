@@ -2,9 +2,9 @@
 title: Noções básicas sobre tipos de programas e programas
 description: Noções básicas sobre tipos de programas e programas - Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: aae4d942ef1e7ffd0065de73c3fbd044a19c3e8e
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -39,8 +39,8 @@ $ git clone {URL}
 Um usuário pode criar um programa de **Sandbox** ou **Produção**.
 
 * Um *Programa de produção* é criado para ativar o tráfego ao vivo no momento adequado no futuro.
-Consulte Introdução a programas de produção para obter mais detalhes.
+Consulte [Introdução aos programas de produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en) para obter mais detalhes.
 
 
 * Um *Programa de sandbox* normalmente é criado para servir os propósitos de treinamento, execução de demonstração, ativação, POC&#39;s ou documentação. Não se destina a transportar tráfego vivo e terá restrições que um programa de produção não irá. Ele incluirá Sites e Ativos e será fornecido automaticamente com uma ramificação Git que inclui código de amostra, um ambiente de desenvolvimento e um pipeline não relacionado à produção.
-Consulte Introdução aos programas de sandbox para obter mais detalhes.
+Consulte [Introdução aos programas de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en) para obter mais detalhes.
