@@ -2,12 +2,12 @@
 title: Referências do desenvolvedor para [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
-feature: APIs,API HTTP de ativos
+feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1430'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ O artigo contém recomendações, materiais de referência e recursos para desen
 | × | Não suportado. Não utilizar. |
 | - | Não disponível |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [APIs Experience Manager / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava | [Serviço Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlets Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Visualização)_ |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [APIs Experience Manager / Sling / ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) JCRJava | [Serviço Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlets Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Visualização)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Binário original** |  |  |  |  |  |  |
 | Criar original | Instantâneo | × | - | × | × | - |
@@ -185,7 +185,7 @@ Para configuração de fluxo de trabalho de pós-processamento, use os fluxos de
 
 ## Suporte a etapas do fluxo de trabalho no fluxo de trabalho de pós-processamento {#post-processing-workflows-steps}
 
-Se você atualizar de uma versão anterior de [!DNL Experience Manager], poderá usar os microsserviços de ativos para processar ativos. Os microsserviços de ativos nativos em nuvem são mais simples de configurar e usar. Algumas etapas do fluxo de trabalho usadas no fluxo de trabalho [!UICONTROL Ativo de atualização DAM] na versão anterior não são suportadas. Para obter mais informações sobre classes compatíveis, consulte a [Referência da API Java ou Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
+Se você atualizar de uma versão anterior de [!DNL Experience Manager], poderá usar os microsserviços de ativos para processar ativos. Os microsserviços de ativos nativos em nuvem são mais simples de configurar e usar. Algumas etapas do fluxo de trabalho usadas no fluxo de trabalho [!UICONTROL Ativo de atualização DAM] na versão anterior não são suportadas. Para obter mais informações sobre classes compatíveis, consulte a [Referência da API Java ou Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html).
 
 Os seguintes modelos de fluxo de trabalho técnicos são substituídos por microsserviços de ativos ou o suporte não está disponível:
 

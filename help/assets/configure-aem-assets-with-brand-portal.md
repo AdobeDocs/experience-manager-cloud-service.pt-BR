@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 12%
@@ -78,7 +78,7 @@ Onde, a ID do locatário é a organização IMS.
 
 Execute as seguintes etapas se não tiver certeza do URL do Brand Portal:
 
-1. Faça logon em [Admin Console](http://adminconsole.adobe.com/) e navegue até **[!UICONTROL Produtos]**.
+1. Faça logon em [Admin Console](https://adminconsole.adobe.com/) e navegue até **[!UICONTROL Produtos]**.
 1. No painel esquerdo, selecione **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
 1. Clique em **[!UICONTROL Vá para Brand Portal]** para abrir diretamente o Brand Portal no navegador.
 
