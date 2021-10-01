@@ -1,13 +1,13 @@
 ---
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
-source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
+exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
+source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '682'
 ht-degree: 5%
 
 ---
-
 
 # Fase de disponibilidade no Cloud Acceleration Manager {#readiness-phase-cam}
 
@@ -54,6 +54,9 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
 1. Clique em **Fazer upload do novo relatório** para fazer upload do relatório BPA no CAM.
 
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+
+   >[!IMPORTANT]
+   >O relatório não pode ser carregado se você estiver no modo Incógnito do navegador.
 
 1. Após carregar um novo relatório, você verá o relatório de Análise de práticas recomendadas .
 
