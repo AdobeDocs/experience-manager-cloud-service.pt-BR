@@ -1,14 +1,13 @@
 ---
 title: Ambiente e ferramentas de criação
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 99%
+source-wordcount: '2154'
+ht-degree: 98%
 
 ---
-
 
 # Ambiente e ferramentas de criação {#authoring-the-environment-and-tools}
 
@@ -36,7 +35,7 @@ Você pode editar uma página com o editor de páginas. Por exemplo:
 >
 >Ignore o tour, se desejar, e repita-o a qualquer momento selecionando o menu **Informações da página.**
 
-## Acessar ajuda {#accessing-help}
+## Acessar ajuda   {#accessing-help}
 
 Ao editar uma página, a **Ajuda** pode ser acessada de:
 
@@ -261,7 +260,7 @@ As Informações da página (ícone de equalizador) abrem um menu que também fo
 
 Além disso, **Informações da página** pode fornecer acesso ao Analytics e a recomendações, quando apropriado.
 
-## Modos de página    {#page-modes}
+## Modos de página   {#page-modes}
 
 Há vários modos ao editar uma página, o que permite ações diferentes:
 
@@ -270,6 +269,7 @@ Há vários modos ao editar uma página, o que permite ações diferentes:
 * [Direcionamento](/help/sites-cloud/authoring/personalization/targeted-content.md) - aumenta a relevância do conteúdo através do direcionamento e medição em todos os canais.
 * [Distorção](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - permite que você veja o status de uma página em um ponto específico no tempo.
 * [Status da Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - permite ter uma visão geral rápida do status da live copy e quais componentes são ou não herdados.
+* [Modo de desenvolvedor](/help/implementing/developing/tools/developer-mode.md)
 * [Visualização](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)- o modo usado para visualizar a página da forma que será exibida no ambiente de publicação; ou navegar usando os links no conteúdo.
 * [Anotar](/help/sites-cloud/authoring/fundamentals/annotations.md) - usado para adicionar ou exibir anotações na página.
 
@@ -287,12 +287,11 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 >
 
 
-
 ## Seleção de caminho {#path-selection}
 
 Ao criar, geralmente é necessário selecionar outro recurso, como ao definir um link para outra página ou recurso ou ao selecionar uma imagem. Para selecionar um caminho com facilidade, os [campos de caminho](#path-fields) oferecem o recurso de completar automaticamente, e o [navegador de caminho](#path-browser) permite uma seleção mais robusta.
 
-### Campos de caminho    {#path-fields}
+### Campos de caminho   {#path-fields}
 
 Para ilustração, o exemplo usado aqui é o componente de imagem. Para obter mais informações sobre como usar e editar componentes, consulte [Componentes para criação de página](/help/sites-cloud/authoring/fundamentals/components.md).
 
