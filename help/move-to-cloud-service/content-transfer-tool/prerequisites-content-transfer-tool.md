@@ -2,10 +2,10 @@
 title: Pré-requisitos para a ferramenta Transferência de conteúdo
 description: Pré-requisitos para a ferramenta Transferência de conteúdo
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
+source-git-commit: 2c0874ca14b9dd91ef62f2af85a9961b07c1b60b
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ Revise todas as considerações listadas abaixo:
 | Tamanho total do índice | O tamanho total do índice de 25 GB no máximo é atualmente suportado. Crie um tíquete de suporte com o Atendimento ao cliente do Adobe para discutir opções de tamanho de índice acima desse limite. |
 | Tamanho do nome do nó | O comprimento de um nome de nó deve ser de 150 bytes ou menos. Nomes de nós com mais de 150 bytes devem ser encurtados para serem &lt;= 150 bytes para terem suporte no armazenamento de nós Documento em AEM como Cloud Service. As sugestões falharão se esses nomes de nó longos não forem corrigidos. |
 | Conteúdo em caminhos imutáveis | A ferramenta Transferência de conteúdo não pode ser usada para migrar o conteúdo em caminhos imutáveis. Para transferir conteúdo de `/etc` apenas determinados caminhos `/etc` podem ser selecionados, mas somente para suportar [AEM Forms para AEM Forms como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Para todos os outros casos de uso, consulte [Restruturação de Repositório Comum](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) para saber mais sobre a reestruturação de repositório. |
+| Valor da propriedade do nó no MongoDB | Os valores de propriedade de nó armazenados no MongoDB não podem exceder 16MB. Isso é empregado pelo MongoDB. As sugestões falharão se houver valores de propriedade maiores que esse limite. Antes de executar uma extração, execute este script [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar). Revise todos os valores de propriedades grandes e valide se eles forem necessários. Os que excederem 16MB precisarão ser convertidos em valores binários. |
 
 ## O que vem a seguir {#whats-next}
 
