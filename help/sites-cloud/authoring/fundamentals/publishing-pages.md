@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Como publicar e desfazer a publicação de páginas usando o AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 85%
+source-wordcount: '1769'
+ht-degree: 82%
 
 ---
 
@@ -79,6 +79,10 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 >[!NOTE]
 >
 >A publicação por meio do Editor é um processo superficial, ou seja, apenas as páginas selecionadas são publicadas, sem incluir páginas filhas.
+
+>[!NOTE]
+>
+>As páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não podem ser publicadas. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
 ### Publicação por meio do Console {#publishing-from-the-console}
 
@@ -217,6 +221,10 @@ De uma [maneira semelhante à publicação](#publishing-pages), uma ou mais pág
 ### Desfazer a publicação por meio do editor    {#unpublishing-from-the-editor}
 
 Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a publicação da página** no menu **Informações da página**, da mesma maneira que faria para [publicar essa página](#publishing-from-the-editor).
+
+>[!NOTE]
+>
+>As páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não podem ter a publicação desfeita. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
 ### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
 

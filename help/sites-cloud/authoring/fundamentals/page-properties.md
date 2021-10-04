@@ -2,10 +2,10 @@
 title: Editar as propriedades da página
 description: Defina as propriedades desejadas para uma página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 58%
+source-wordcount: '1966'
+ht-degree: 55%
 
 ---
 
@@ -101,14 +101,9 @@ As propriedades são distribuídas por várias guias.
    * **Redirecionar**  - Indica a página para a qual essa página deve redirecionar automaticamente
    * **Design**  - Indica se a página é exibida ou oculta na navegação de página do site resultante
    * **Alias**  - Especifica um alias a ser usado com esta página
-
-   >[!NOTE]
-   >
-   >O alias ajusta a propriedade `sling:alias` para definir um nome de alias para o recurso (isso afeta apenas o recurso, não o caminho).
-   >
-   >Por exemplo: se você definir um alias de `latin-lang` para o `/content/we-retail/spanish` nó, essa página poderá ser acessada por meio de `/content/we-retail/latin-language`
-   >
-   >Para obter mais detalhes, consulte Nomes de página localizados em SEO e Práticas recomendadas de gerenciamento de URL.
+      * Por exemplo, se você definir um alias de `private` para a página `/content/wknd/us/en/magazine/members-only`, essa página também poderá ser acessada por `/content/wknd/us/en/magazine/private`
+      * A criação de um alias define a propriedade `sling:alias` no nó da página, que afeta apenas o recurso, não o caminho do repositório.
+      * As páginas acessadas por aliases no editor não podem ser publicadas. [As opções ](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
@@ -205,7 +200,7 @@ Essa guia só fica visível para páginas que servem como blueprints. Os bluepri
 * **Suspender**  - Suspender Live Copy de modificações adicionais na implantação
 * **Desanexar**  - Desanexar Live Copy do Blueprint
 
-* **Fonte**
+* **Origem**
 
    * Exibe o caminho do blueprint para esta Live Copy
 
