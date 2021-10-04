@@ -2,10 +2,10 @@
 title: Usar a ferramenta Transferência de conteúdo
 description: Usar a ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
+source-git-commit: a9d3547900c84101672cd0400bb374b1a8ccda33
 workflow-type: tm+mt
-source-wordcount: '3063'
-ht-degree: 38%
+source-wordcount: '3104'
+ht-degree: 37%
 
 ---
 
@@ -31,7 +31,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * O token de acesso pode expirar periodicamente após um período de tempo específico ou após a atualização do ambiente de Cloud Service. Se o token de acesso tiver expirado, você não poderá se conectar à instância do Cloud Service e precisará recuperar o novo token de acesso. O ícone de status associado a um conjunto de migração existente será alterado para uma nuvem vermelha e exibirá uma mensagem ao passar o mouse sobre ela.
 
-* A Ferramenta de transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou de Publicação ou em ambos. Recomenda-se que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância de Autor de origem para mover o conteúdo para a instância de Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino.
+* A Ferramenta de transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou de Publicação ou em ambos. Recomenda-se que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância de Autor de origem para mover o conteúdo para a instância de Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Consulte [Executar a ferramenta Transferência de conteúdo em uma instância de publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) para obter mais detalhes.
 
 * Os Usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles que são exigidos pelo conteúdo para atender às permissões. O processo de *Extração* copia todo o `/home` para o conjunto de migração e o processo de *Assimilação* copia todos os usuários e grupos referenciados nas ACLs do conteúdo migrado. Para mapear automaticamente os usuários e grupos existentes para suas IDs IMS, consulte [Usar a ferramenta de mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
@@ -119,7 +119,7 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
 
    1. **Parâmetros**: selecione os seguintes parâmetros para criar o conjunto de migração:
 
-      1. **Incluir versão**: selecione conforme necessário.
+      1. **Incluir versão**: selecione conforme necessário. Quando as versões são incluídas, o caminho `/var/audit` é incluído automaticamente para migrar eventos de auditoria.
 
       1. **Incluir mapeamento de usuários e grupos** do IMS: Selecione a opção para incluir o mapeamento de usuários e grupos do IMS.
 Consulte [Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obter mais detalhes.
@@ -211,7 +211,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 >[!NOTE]
 >Se o Amazon S3 ou o Azure Data Store for usado como o tipo de armazenamento de dados, você poderá executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. Consulte [Gravação com AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) para obter mais detalhes.
 
-1. Selecione um conjunto de migração na página *Visão geral* e clique em **Assimilar** para iniciar a assimilação. A caixa de diálogo **Assimilação do conjunto de migração** é exibida. Clique em **Assimilar** para iniciar a fase de assimilação. É possível assimilar conteúdo para Autor e Publicação ao mesmo tempo.
+1. Selecione um conjunto de migração na página *Visão geral* e clique em **Assimilar** para iniciar a assimilação. A caixa de diálogo **Assimilação do conjunto de migração** é exibida. O conteúdo pode ser assimilado na instância do autor ou na instância de publicação de cada vez. Selecione a instância para a qual assimilar conteúdo. Clique em **Assimilar** para iniciar a fase de assimilação.
 
    >[!IMPORTANT]
    >Se a assimilação com pré-cópia for usada (para S3 ou Azure Data Store), é recomendável executar a assimilação do autor primeiro sozinho. Isso irá acelerar a assimilação de Publicação quando for executada mais tarde.
@@ -219,11 +219,11 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
    >[!IMPORTANT]
    >Quando a opção **Limpar conteúdo existente na instância do Cloud antes da assimilação** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também é verdadeiro para um usuário administrador adicionado ao grupo **administradores**.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
    Além disso, clique em **Atendimento ao cliente** para registrar um tíquete, conforme mostrado na figura acima. Além disso, consulte [Considerações importantes sobre o uso da ferramenta de transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) para saber mais.
 
-1. Quando a assimilação estiver concluída, o status no campo **PUBLICAR ASTION** será atualizado para **FINISHED**.
+1. Quando a assimilação estiver concluída, o status será atualizado para **FINISHED**.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -239,7 +239,7 @@ Quando o processo de assimilação estiver concluído, você poderá usar o cont
 
 1. Navegue até a página *Visão geral* e selecione o conjunto de migração para o qual você deseja realizar a assimilação complementar. Clique em **Assimilar** para iniciar a extração complementar. A caixa de diálogo **Assimilação do conjunto de migração** é exibida.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
 
    >[!IMPORTANT]
    >Você deve desativar a opção **Limpar conteúdo existente na instância do Cloud antes de assimilar**, para evitar que o conteúdo existente seja excluído da atividade de assimilação anterior. Além disso, clique em **Atendimento ao cliente** para registrar um tíquete, conforme mostrado na figura anterior.
