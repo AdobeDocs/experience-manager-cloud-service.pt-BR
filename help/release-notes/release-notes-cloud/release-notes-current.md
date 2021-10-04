@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 49e88e18e17a2675151a11339a01b3ea7b71d555
+source-git-commit: 1062b65da46d85e3777656dbef4b7667b130a6ec
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1722'
 ht-degree: 3%
 
 ---
@@ -179,19 +179,35 @@ Consulte [Relatórios do SLA](https://experienceleague.adobe.com/docs/experience
 
 * Ocasionalmente, quando um pipeline é acionado duas vezes por algum motivo, resulta em uma das execuções falhando com o erro *cannot update pipeline execution status* .
 
+
+## Cloud Acceleration Manager {#cam}
+
+### Data de lançamento {#release-date-october-cam}
+
+A data de lançamento do Cloud Acceleration Manager é 4 de outubro de 2021.
+
+### Novidades {#what-is-new-cam}
+
+* O Cloud Acceleration Manager agora oferece aos usuários a capacidade de visualizar os relatórios de BPA em uma visualização que pode ser impressa, permitindo a impressão ou impressão simples em PDF, facilitando a compartilhamento. Consulte as Etapas 6 e 7 em [Uso do cartão de análise de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+
+
 ## Ferramenta Transferência de conteúdo {#content-transfer-tool}
 
 ### Data de lançamento {#release-date-ctt-latest}
 
-A Data de lançamento da ferramenta Transferência de conteúdo v1.5.6 é 11 de agosto de 2021.
+A Data de lançamento da ferramenta Transferência de conteúdo v1.6.0 é 4 de outubro de 2021.
 
-### Correções de erros {#bug-fixes-ctt}
+### Novidades {#what-is-new-ctt}
 
-* Em alguns casos, nem todos os usuários foram migrados para a instância de destino. Para obter essa correção, o CTT v1.5.6 é necessário juntamente com o aem-ethos-tools 1.2.354 ou versão posterior no target AEM como uma instância do Cloud Service.
+* Mapeamento de usuário aprimorado com uma experiência de usuário simplificada, incluindo os seguintes recursos listados abaixo. Para obter mais detalhes, consulte [Usar a ferramenta de mapeamento de usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+   * Testar conexão com a API de gerenciamento de usuários antes de executar o Mapeamento de usuários
+   * Ignore erros com cuidado e continue com a atividade de Mapeamento de usuários
+   * O Mapeamento de usuário não falha mais se o Token de acesso expirar (após 24 horas). O Mapeamento de Usuário pode ser executado novamente de onde parou pela última vez.
 
-* O botão **Parar assimilação** estava sendo desativado durante a assimilação na instância de publicação. Isso não é necessário porque não há uma etapa de restauração de mongo durante a assimilação de Publicação.
+* Para aumentar a robustez da CTT, o conteúdo pode ser assimilado na instância do autor ou na instância de publicação de cada vez.
 
-* A CTT não limpou o diretório `/tmp` após uma extração bem-sucedida. Isso às vezes levava a problemas de espaço em disco.
+* Quando as versões são incluídas, o caminho `/var/audit` é incluído automaticamente para migrar eventos de auditoria.
+
 
 ## Analisador de práticas recomendadas {#best-practices-analyzer}
 
