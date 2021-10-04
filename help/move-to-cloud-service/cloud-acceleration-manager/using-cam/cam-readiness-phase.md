@@ -2,9 +2,9 @@
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '751'
 ht-degree: 5%
 
 ---
@@ -66,6 +66,19 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
 
    >[!NOTE]
    >Fazer upload de um novo relatório redefine todas as avaliações.
+
+1. Clique no ícone **Visualização de impressão**, conforme mostrado abaixo para facilitar a compartilhamento.
+
+   ![imagem](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. Clicar em **Visualização de impressão** abre uma nova guia com os relatórios exibidos em uma visualização que pode ser impressa. Clique em **Imprimir** para imprimir o relatório em um formato PDF para facilitar o compartilhamento.
+
+   >[!IMPORTANT]
+   >* A opção **Salvar como PDF** é recomendada e tem suporte para a funcionalidade acima.
+   >* Se o botão de impressão do navegador for usado, ele imprimirá apenas uma página.
+
+
+   ![imagem](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Relatório de análise de práticas recomendadas {#analysis-report}
 
