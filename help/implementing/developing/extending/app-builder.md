@@ -1,7 +1,7 @@
 ---
 title: Extensão  [!DNL Adobe Experience Manager] como um Cloud Service usando o Construtor de aplicativos do Desenvolvedor do Adobe.
-description: Extensão  [!DNL Adobe Experience Manager] como um Cloud Service usando o Construtor de aplicativos do Desenvolvedor do Adobe.
-source-git-commit: 7b8d214ebba9e8dfc89f7787b0d442752650210e
+description: Estender [!DNL Adobe Experience Manager] as a Cloud Service usando o Adobe Developer App Builder.
+source-git-commit: 9287a40518d7026d5361cb61ab3804583e22450f
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Estender [!DNL Adobe Experience Manager] como um Cloud Service usando o Construtor de aplicativos do desenvolvedor do Adobe {#extend-using-app-builder}
 
-## O que é o App Builder para o AEM as a Cloud Service {#project-firefly}
+## O que é o App Builder para AEM as a Cloud Service {#project-firefly}
 
 O novo Adobe Developer App Builder oferece uma estrutura de extensibilidade para um desenvolvedor estender facilmente o AEM como funcionalidades do Cloud Service.
 
@@ -42,26 +42,26 @@ O diagrama a seguir ilustra como um aplicativo padrão criado no App Builder apr
 
 ![Arquitetura](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
 
-Para obter mais detalhes sobre a arquitetura do App Builder, consulte [Visão geral da arquitetura](https://www.adobe.io/project-firefly/docs/guides/).
+Para obter mais detalhes sobre a arquitetura do App Builder, consulte [Visão geral da arquitetura](https://www.adobe.io/app-builder/docs/guides/).
 
 ## Introdução ao App Builder {#additional-resources}
 
 Para ajudar você a começar a usar o App Builder, criamos uma série de documentação para ajudá-lo a começar:
 
-* [Introdução ao App Builder](https://www.adobe.io/project-firefly/docs/getting_started/)
+* [Introdução ao App Builder](https://www.adobe.io/app-builder/docs/getting_started/)
 
 ## Continuar o aprendizado com a documentação {#appbuilder-documentation}
 
 O App Builder fornece vídeos e documentação para desenvolvedores, incluindo guias e documentação de referência para ajudar você a começar a desenvolver seus próprios aplicativos personalizados:
 
-* [Documentação do App Builder](https://www.adobe.io/project-firefly/docs/overview/)
+* [Documentação do App Builder](https://www.adobe.io/app-builder/docs/overview/)
 * [Vídeos do App Builder](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## Experimente um dos aplicativos de exemplo {#appbuilder-codesamples}
 
 Pronto para começar a desenvolver? Temos muitos aplicativos de exemplo para ajudá-lo a entrar em contato rapidamente:
 
-* [Laboratórios de código do App Builder no site do desenvolvedor do Adobe](https://www.adobe.io/project-firefly/docs/resources/)
+* [Laboratórios de código do App Builder no site do desenvolvedor do Adobe](https://www.adobe.io/app-builder/docs/resources/)
 
 ## Suporte {#support}
 
