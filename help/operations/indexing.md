@@ -2,7 +2,7 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 37e0c3865fb5be6c31e6e4bf1faa5666e77303bc
+source-git-commit: d873e13eadd418c468166aa90ce0b42126802e65
 workflow-type: tm+mt
 source-wordcount: '2155'
 ht-degree: 2%
@@ -211,16 +211,16 @@ Se um índice deve ser removido em uma versão posterior do aplicativo, você po
 
 Se não for mais necessário ter uma personalização de um índice pronto para uso, você deverá copiar a definição de índice pronta para uso. Por exemplo, se você já implantou `damAssetLucene-8-custom-3`, mas não precisa mais das personalizações e deseja voltar ao índice `damAssetLucene-8` padrão, é necessário adicionar um índice `damAssetLucene-8-custom-4` que contenha a definição de índice `damAssetLucene-8`.
 
-## Otimizações de índice
+## Otimizações de índice {#index-optimizations}
 
 O Apache Jackrabbit Oak permite configurações de índice flexíveis para lidar com consultas de pesquisa com eficiência. Os índices são especialmente importantes para repositórios maiores. Certifique-se de que todas as consultas sejam apoiadas por um índice adequado. Consultas sem um índice adequado podem ler milhares de nós, que são registrados como um aviso. Essas consultas devem ser identificadas ao analisar os arquivos de log, para que as definições de índice possam ser otimizadas. Consulte [esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) para obter mais informações.
 
-### Índice de texto completo do Lucene no AEM como Cloud Service
+### Índice de texto completo do Lucene no AEM como Cloud Service {#index-lucene}
 
 O índice de texto completo `/oak:index/lucene-2` pode se tornar muito grande porque indexa todos os nós no repositório de AEM por padrão.  Após os planos da Adobe para retirar esse índice, ele não será mais implantado no AEM como Cloud Service a partir de setembro de 2021. Dessa forma, ele não é mais usado no lado do produto no AEM como um Cloud Service e não deve ser necessário executar o código do cliente. Para AEM como um ambiente de Cloud Service com índices comuns do Lucene, o Adobe está trabalhando com os clientes individualmente para obter uma abordagem coordenada para compensar esse índice e usar índices melhores e otimizados. Os clientes não necessitam de qualquer ação sem aviso prévio da Adobe. AEM como clientes de Cloud Service será informado pelo Adobe quando houver necessidade de ação em relação a essa otimização. Se esse índice for necessário para consultas personalizadas, como uma solução temporária, uma cópia desse índice deverá ser criada, usando um nome diferente, por exemplo, `/oak:index/acme.lucene-1-custom-1`, conforme descrito [aqui](/help/operations/indexing.md).
 Essa otimização não se aplica por padrão a outros ambientes AEM hospedados no local ou gerenciados pelo Adobe Managed Services.
 
-## Otimizações de consulta
+## Otimizações de consulta {#index-query}
 
 A ferramenta **Desempenho da consulta** permite observar queries JCR populares e lentas. Além disso, é possível analisar consultas e exibir várias informações sobre o , principalmente se um índice estiver sendo usado ou não para essa consulta.
 
