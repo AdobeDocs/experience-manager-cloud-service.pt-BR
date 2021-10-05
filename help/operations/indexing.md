@@ -2,9 +2,9 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
+source-git-commit: 8df5e800cd08fa0eb08edca06e98786a1864db84
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2139'
 ht-degree: 2%
 
 ---
@@ -219,3 +219,9 @@ O Apache Jackrabbit Oak permite configurações de índice flexíveis para lidar
 
 O índice de texto completo `/oak:index/lucene-2` pode se tornar muito grande porque indexa todos os nós no repositório de AEM por padrão. O índice de texto completo do Lucene foi preterido internamente e não será mais implantado em AEM como Cloud Service a partir de setembro de 2021. Dessa forma, ele não é mais usado no lado do produto no AEM como um Cloud Service e não deve ser necessário executar o código do cliente. Para AEM como um ambiente de Cloud Service com índices comuns do Lucene, o Adobe está trabalhando com os clientes individualmente para obter uma abordagem coordenada para compensar esse índice e usar índices melhores e otimizados. Se esse índice for necessário para consultas personalizadas, como uma solução temporária, uma cópia desse índice deverá ser criada, usando um nome diferente, por exemplo, `/oak:index/acme.lucene-1-custom-1`, conforme descrito [aqui](/help/operations/indexing.md).
 Essa otimização não se aplica a outros ambientes AEM, que são hospedados no local ou gerenciados pelo Adobe Managed Services, a menos que o Adobe o aconselhasse de outra forma.
+
+## Otimizações de consulta
+
+A ferramenta **Desempenho da consulta** permite observar queries JCR populares e lentas. Além disso, é possível analisar consultas e exibir várias informações sobre o , principalmente se um índice estiver sendo usado ou não para essa consulta.
+
+Ao contrário do AEM no local, o AEM como Cloud Service não exibe mais a ferramenta **Desempenho da consulta** na interface do usuário. Em vez disso, agora está disponível por meio do Console do desenvolvedor (no Cloud Manager) na guia **Queries**.
