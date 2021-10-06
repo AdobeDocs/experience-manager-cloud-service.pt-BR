@@ -2,9 +2,9 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
+source-git-commit: 6548e05850d5499f1ce7d1f23f2cea2adb9d06fd
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2878'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 >
 >Familiarize-se com o [AEM básico do Arquétipo de projeto use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) e o [Plug-in FileVault Content Maven](/help/implementing/developing/tools/maven-plugin.md), pois este artigo se baseia nesses aprendizados e conceitos.
 
-Este artigo descreve as alterações necessárias para que os projetos Adobe Experience Manager Maven sejam AEM como Cloud Service compatíveis, garantindo que eles respeitem a divisão de conteúdo mutável e imutável, que as dependências sejam estabelecidas para criar implantações determinísticas e não conflitantes e que sejam compactadas em uma estrutura implantável.
+Este artigo descreve as alterações necessárias para que os projetos Adobe Experience Manager Maven sejam AEM as a Cloud Service compatíveis, garantindo que eles respeitem a divisão de conteúdo mutável e imutável, que as dependências sejam estabelecidas para criar implantações determinísticas e não conflitantes e que sejam compactadas em uma estrutura implantável.
 
 AEM implantações de aplicativos devem ser compostas por um único pacote AEM. Este pacote deve, por sua vez, conter subpacotes que contêm tudo o que o aplicativo requer para funcionar, incluindo código, configuração e qualquer conteúdo de linha de base de suporte.
 
@@ -39,13 +39,13 @@ Todo o restante no repositório, `/content`, `/conf`, `/var`, `/etc`, `/oak:inde
 
 ### Índices Oak {#oak-indexes}
 
-Os índices do Oak (`/oak:index`) são gerenciados especificamente pelo AEM como um processo de implantação do Cloud Service. Isso ocorre porque o Cloud Manager deve aguardar até que qualquer novo índice seja implantado e totalmente reindexado antes de passar para a nova imagem de código.
+Os índices Oak (`/oak:index`) são gerenciados especificamente pelo processo de implantação as a Cloud Service AEM. Isso ocorre porque o Cloud Manager deve aguardar até que qualquer novo índice seja implantado e totalmente reindexado antes de passar para a nova imagem de código.
 
 Por isso, embora os índices Oak sejam mutáveis em tempo de execução, eles devem ser implantados como código para que possam ser instalados antes que qualquer pacote mutável seja instalado. Portanto, as configurações `/oak:index` fazem parte do Pacote de código e não fazem parte do Pacote de conteúdo [conforme descrito abaixo](#recommended-package-structure).
 
 >[!TIP]
 >
->Para obter mais detalhes sobre a indexação no AEM como um Cloud Service, consulte o documento [Pesquisa e indexação de conteúdo](/help/operations/indexing.md).
+>Para obter mais detalhes sobre a indexação AEM as a Cloud Service, consulte o documento [Pesquisa e indexação de conteúdo](/help/operations/indexing.md).
 
 ## Estrutura de pacote recomendada {#recommended-package-structure}
 
@@ -64,7 +64,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
       + `/apps/my-app/components`
    + JavaScript e CSS (por meio de [Bibliotecas do cliente](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
-   + [](/help/implementing/developing/introduction/overlays.md) Sobreposição de  `/libs`
+   + [](/help/implementing/developing/introduction/overlays.md) Sobreposição  `/libs`
       + `/apps/cq`, `/apps/dam/`, etc.
    + Configurações com reconhecimento de contexto de fallback
       + `/apps/settings`
@@ -75,9 +75,9 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
 + O pacote `ui.config` contém todas as [configurações OSGi](/help/implementing/deploying/configuring-osgi.md):
    + Pasta organizacional contendo definições de configuração OSGi específicas do modo de execução
       + `/apps/my-app/osgiconfig`
-   + Pasta de configuração OSGi comum contendo configurações OSGi padrão que se aplicam a todos os AEM de destino como alvos de implantação do Cloud Service
+   + Pasta de configuração OSGi comum contendo configurações OSGi padrão que se aplicam a todos os alvos AEM alvos de implantação as a Cloud Service
       + `/apps/my-app/osgiconfig/config`
-   + Execute pastas de configuração OSGi específicas ao modo que contêm configurações OSGi padrão que se aplicam a todos os AEM de destino como destinos de implantação do Cloud Service
+   + Execute pastas de configuração OSGi específicas ao modo que contenham configurações OSGi padrão que se aplicam a todos os destinos de implantação AEM as a Cloud Service do target
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Repo Init Scripts de configuração do OSGi
       + [O Repo ](#repo-init) é a maneira recomendada de implantar conteúdo (mutável) que é logicamente parte do aplicativo AEM. As configurações de OSGi da Inicialização do Repo devem ser colocadas na pasta `config.<runmode>` apropriada, conforme descrito acima, e ser usadas para definir:
@@ -269,7 +269,7 @@ Basta adicionar as entradas `<filter root="/apps/<my-app>-packages"/>` para qual
 
 ## Como incorporar pacotes de terceiros {#embedding-3rd-party-packages}
 
-Todos os pacotes devem estar disponíveis por meio do repositório público do Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) ou de um repositório de artefatos Maven acessível público e referenciável de terceiros.[
+Todos os pacotes devem estar disponíveis por meio do repositório público do Adobe](https://repo1.maven.org/maven2/com/adobe/) ou de um repositório de artefatos Maven acessível público e referenciável de terceiros.[
 
 Se os pacotes de terceiros estiverem no **repositório público de artefatos Maven da Adobe**, nenhuma configuração adicional será necessária para o Adobe Cloud Manager resolver os artefatos.
 

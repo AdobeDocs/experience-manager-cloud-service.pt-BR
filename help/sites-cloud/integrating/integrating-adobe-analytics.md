@@ -1,28 +1,28 @@
 ---
 title: Integração ao Adobe Analytics
 description: 'Integração ao Adobe Analytics '
-feature: Administração
+feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '530'
 ht-degree: 4%
 
 ---
 
 # Integração ao Adobe Analytics{#integrating-with-adobe-analytics}
 
-Integrar o Adobe Analytics e o AEM como um Cloud Service permite rastrear a atividade da página da Web. A integração exige:
+Integrar o Adobe Analytics e AEM as a Cloud Service permite rastrear a atividade da página da Web. A integração exige:
 
-* usando a interface do usuário de toque para criar uma configuração do Analytics no AEM como um Cloud Service.
-* adicionar e configurar o Adobe Analytics como uma extensão no [Adobe Launch](#analytics-launch). Para obter mais detalhes sobre o Adobe Launch, consulte [esta página](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html).
+* usando a interface do usuário de toque para criar uma configuração do Analytics em AEM as a Cloud Service.
+* adicionar e configurar o Adobe Analytics como uma extensão no [Adobe Launch](#analytics-launch). Para obter mais detalhes sobre o Adobe Launch, consulte [esta página](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
-Comparado às versões anteriores do AEM, o suporte à estrutura não é fornecido na Configuração do Analytics no AEM como Cloud Service. Em vez disso, agora é feito por meio do Adobe Launch, que é a ferramenta de fato para instrumentar um site AEM com recursos do Analytics (bibliotecas JS). No Adobe Launch, uma propriedade é criada, onde a extensão Adobe Analytics pode ser configurada e as regras são criadas para enviar dados ao Adobe Analytics. O Adobe Launch substituiu a tarefa de análise fornecida pelo sitecatalyst.
+Comparado às versões anteriores do AEM, o suporte à estrutura não é fornecido na Configuração do Analytics em AEM as a Cloud Service. Em vez disso, agora é feito por meio do Adobe Launch, que é a ferramenta de fato para instrumentar um site AEM com recursos do Analytics (bibliotecas JS). No Adobe Launch, uma propriedade é criada, onde a extensão Adobe Analytics pode ser configurada e as regras são criadas para enviar dados ao Adobe Analytics. O Adobe Launch substituiu a tarefa de análise fornecida pelo sitecatalyst.
 
 >[!NOTE]
 >
->Os clientes do Adobe Experience Manager as a Cloud Service que não têm uma conta existente do Analytics podem solicitar acesso ao Analytics Foundation Pack para Experience Cloud. Este Foundation Pack fornece uso limitado por volume do Analytics.
+>Os clientes da Adobe Experience Manager as a Cloud Service que não têm uma conta existente do Analytics podem solicitar acesso ao Analytics Foundation Pack para Experience Cloud. Este Foundation Pack fornece uso limitado por volume do Analytics.
 
 ## Criação da configuração do Adobe Analytics {#analytics-configuration}
 
@@ -65,4 +65,4 @@ O Adobe Analytics pode ser adicionado como uma extensão na propriedade do Launc
 
 >[!NOTE]
 >
->A configuração IMS (contas técnicas) do Launch é pré-configurada no AEM como um Cloud Service. Os usuários não precisam criar essa configuração.
+>A configuração IMS (contas técnicas) do Launch é pré-configurada AEM as a Cloud Service. Os usuários não precisam criar essa configuração.
