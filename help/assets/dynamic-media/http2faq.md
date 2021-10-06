@@ -3,9 +3,9 @@ title: Perguntas frequentes sobre entrega de conteúdo HTTP2
 description: Saiba mais sobre a entrega de conteúdo HTTP2.
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -42,23 +42,23 @@ A demonstração a seguir ilustra a diferença entre o carregamento HTTP/1 e HTT
 Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 * Use HTTPS seguro para suas solicitações de mídia avançada.
-* Use a CDN (Content Delivery Network) fornecida pelo Adobe como parte de sua licença do Dynamic Media Classic.
+* Use a CDN (Content Delivery Network) fornecida pelo Adobe como parte de sua licença da Dynamic Media Classic.
 * Use um domínio dedicado (ou seja, `images.company.com` ou `mycompany.scene7.com`), não um domínio Dynamic Media genérico (ou seja, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
 
-   Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
+   Para encontrar seus domínios, abra o [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
    Vá para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Definições Gerais]**. Procure o campo rotulado **Nome do Servidor Publicado**. Se você estiver usando um domínio genérico do Dynamic Media no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
 
 ## Qual é o processo para habilitar HTTP/2 para minha conta Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[Use o Admin Console para criar um ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) caso de suporte e solicitar a mudança para HTTP/2; isso não é feito automaticamente para você.
+[Use o Admin Console para criar um ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) caso de suporte e solicitar a mudança para HTTP/2; isso não é feito automaticamente para você.
 
 1. Forneça as seguintes informações no caso de suporte:
 
    * Nome do contato principal, email e número de telefone.
    * Todos os domínios a serem transferidos para HTTP2. Ou seja, `images.company.com` ou `mycompany.scene7.com`.
 
-   Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
+   Para encontrar seus domínios, abra o [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
    Vá para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Definições Gerais]**. Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**.
 
@@ -66,19 +66,19 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
    * Verifique se você está usando a CDN por meio do Adobe e não é gerenciada com uma relação direta.
    * Verifique se você está usando um domínio dedicado. Ou seja, `images.company.com` ou `mycompany.scene7.com`, não é um domínio genérico do Dynamic Media, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-   Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
+   Para encontrar seus domínios, Abra o [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
    Vá para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Definições Gerais]**. Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**. Se você estiver usando um domínio genérico do Dynamic Media no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
 
-   1. O Suporte Técnico adiciona você à lista de espera do cliente HTTP/2 com base na ordem em que as solicitações foram enviadas.
-   1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Atendimento ao cliente entrará em contato com você para coordenar a transição e definir uma data de destino.
+   1. O Suporte ao cliente adiciona você à lista de espera do cliente HTTP/2 com base na ordem em que as solicitações foram enviadas.
+   1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Suporte ao cliente entrará em contato com você para coordenar a transição e definir uma data de destino.
    1. Você será notificado após a conclusão e poderá verificar uma transição bem-sucedida para HTTP2.
 
 
 
 ## Quando posso esperar uma transição para HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-As solicitações são processadas na ordem em que são recebidas pelo Suporte Técnico.
+As solicitações são processadas na ordem em que são recebidas pelo Suporte ao cliente.
 
 >[!NOTE]
 >
