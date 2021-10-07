@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1507'
 ht-degree: 3%
 
 ---
@@ -47,8 +47,11 @@ Assista ao vídeo [Visão geral da versão de setembro de 2021](https://video.tv
    ![Classifique os resultados da pesquisa  [!DNL Assets] nas exibições Coluna e Cartão](/help/assets/assets/sort-searched-assets.png)
    *Figura: Classifique os resultados da pesquisa  [!DNL Assets] nas exibições Coluna e Cartão.*
 
-* Para invocar o processamento programaticamente usando microsserviços de ativos, uma nova API é introduzida. Os desenvolvedores agora podem aplicar um perfil de processamento existente no nível de pasta em um ou mais ativos específicos em uma pasta. O perfil de processamento é aplicado com base em atualizações de propriedades de metadados personalizadas. Consulte `AssetProcessor` no [[!DNL Experience Manager] Referência da API](https://www.adobe.io/experience-manager/reference-materials/). Como antes, é possível [usar microsserviços de ativos da interface do usuário](/help/assets/asset-microservices-configure-and-use.md).
+<!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
+* To programmatically invoke processing using asset microservices, a new API is introduced. Developers can now apply an existing folder-level processing profile on one or more specific assets in a folder. The processing profile gets applied based on custom metadata properties updates. See `AssetProcessor` in the [[!DNL Experience Manager] API reference](https://www.adobe.io/experience-manager/reference-materials/). As before, it is possible to [use asset microservices from the user interface](/help/assets/asset-microservices-configure-and-use.md).
+
+-->
 <!-- Leave this commented.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
