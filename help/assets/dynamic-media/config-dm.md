@@ -3,9 +3,9 @@ title: Configurar o Dynamic Media Cloud Service
 description: Saiba como configurar o Dynamic Media no Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4057'
 ht-degree: 4%
 
 ---
@@ -65,7 +65,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. No Experience Manager as a Cloud Service, selecione o logotipo Experience Manager as a Cloud Service para acessar o console de navegação global.
 1. À esquerda do console, selecione o ícone Ferramentas e vá para **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, selecione **[!UICONTROL global]** (não selecione o ícone de pasta à esquerda de **[!UICONTROL global]**). Em seguida, selecione **[!UICONTROL Criar]**.
-1. Na página **[!UICONTROL Criar configuração do Dynamic Media]**, insira um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Essas informações são fornecidas pelo Adobe no email de provisionamento. Entre em contato com o Suporte ao cliente do Adobe se não tiver recebido este email.
+1. Na página **[!UICONTROL Criar configuração do Dynamic Media]**, insira um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Essas informações são fornecidas pelo Adobe no email de provisionamento. Entre em contato com o Atendimento ao cliente do Adobe se não tiver recebido esse email.
 1. Selecione **[!UICONTROL Conectar-se ao Dynamic Media]**.
 1. Na caixa de diálogo **[!UICONTROL Change Password]**, no campo **[!UICONTROL New Password]**, digite uma nova senha que contenha de 8 a 25 caracteres. A senha deve conter pelo menos uma das seguintes opções:
 
@@ -117,7 +117,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. Para visualizar com segurança o conteúdo do Dynamic Media antes de ser publicado, o Experience Manager as a Cloud Service usa a validação baseada em token por padrão. No entanto, também é possível &quot;lista de permissões&quot; mais IPs para fornecer aos usuários acesso a visualização segura do conteúdo. Para configurar essa ação, faça o seguinte: <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta. Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
+   * Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta. Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Atendimento ao cliente do Adobe.
    * Na barra de navegação próxima ao canto superior direito da página, vá para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Publicar configuração]** > **[!UICONTROL Servidor de imagem]**.
    * Na página Publicação do servidor de imagens, na lista suspensa **[!UICONTROL Publicar contexto]**, selecione **[!UICONTROL Testar fornecimento de imagem]**.
    * Para o Filtro de endereço do cliente, selecione **[!UICONTROL Adicionar]**.
@@ -147,7 +147,7 @@ Consulte também [Sua Caixa de entrada](/help/sites-cloud/authoring/getting-star
 
    ![Falha na configuração do Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
-1. Na página **[!UICONTROL DMSETUP]**, revise os detalhes de configuração que descrevem a falha. Em especial, tome nota de quaisquer mensagens de erro ou códigos de erro. Entre em contato com o Suporte ao cliente do Adobe com essas informações.
+1. Na página **[!UICONTROL DMSETUP]**, revise os detalhes de configuração que descrevem a falha. Em especial, tome nota de quaisquer mensagens de erro ou códigos de erro. Entre em contato com o Atendimento ao cliente do Adobe com essas informações.
 
    ![Página Configurar Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
@@ -391,8 +391,7 @@ A fila Fluxo de trabalho de trânsito do Granite é usada para o fluxo de trabal
 
 **Para atualizar a fila de Fluxo de trabalho transitório do Granite:**
 
-1. Navegue até **Configuração do Adobe Experience Manager Web Console** em `http://<host>:<port>/system/console/configMgr`
-1. Procure por **Fila: Fila de Fluxo de Trabalho Transitório do Granite**.
+1. Navegue até [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) e procure por **Fila: Fila de Fluxo de Trabalho Transitório do Granite**.
 
    >[!NOTE]
    >

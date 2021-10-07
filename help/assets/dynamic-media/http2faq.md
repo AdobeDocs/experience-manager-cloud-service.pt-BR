@@ -3,9 +3,9 @@ title: Perguntas frequentes sobre entrega de conteúdo HTTP2
 description: Saiba mais sobre a entrega de conteúdo HTTP2.
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '797'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 ## Qual é o processo para habilitar HTTP/2 para minha conta Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[Use o Admin Console para criar um ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) caso de suporte e solicitar a mudança para HTTP/2; isso não é feito automaticamente para você.
+[Use o Admin Console para criar um ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) caso de suporte e solicitar a mudança para HTTP/2; isso não é feito automaticamente para você.
 
 1. Forneça as seguintes informações no caso de suporte:
 
@@ -70,15 +70,15 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
    Vá para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Definições Gerais]**. Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**. Se você estiver usando um domínio genérico do Dynamic Media no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
 
-   1. O Suporte ao cliente adiciona você à lista de espera do cliente HTTP/2 com base na ordem em que as solicitações foram enviadas.
-   1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Suporte ao cliente entrará em contato com você para coordenar a transição e definir uma data de destino.
+   1. O Suporte Técnico adiciona você à lista de espera do cliente HTTP/2 com base na ordem em que as solicitações foram enviadas.
+   1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Atendimento ao cliente entrará em contato com você para coordenar a transição e definir uma data de destino.
    1. Você será notificado após a conclusão e poderá verificar uma transição bem-sucedida para HTTP2.
 
 
 
 ## Quando posso esperar uma transição para HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-As solicitações são processadas na ordem em que são recebidas pelo Suporte ao cliente.
+As solicitações são processadas na ordem em que são recebidas pelo Suporte Técnico.
 
 >[!NOTE]
 >

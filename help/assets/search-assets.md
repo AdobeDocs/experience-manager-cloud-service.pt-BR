@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: aa5d529b132a4ff517950192a81a13c05fe92b4c
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '4897'
+source-wordcount: '4898'
 ht-degree: 6%
 
 ---
@@ -157,7 +157,7 @@ Você pode pesquisar ativos com base em valores exatos de campos de metadados, c
 | Criador | criador:John |
 | Local | local:NA |
 | Descrição | description: &quot;Imagem de exemplo&quot; |
-| Ferramenta Criador | criatortool: &quot;Adobe Photoshop&quot; |
+| Ferramenta Criador | criatortool: &quot;Adobe Photoshop CC 2015&quot; |
 | Proprietário de direitos autorais | copyrights towner: &quot;Adobe Systems&quot; |
 | Contribuinte | colaborador:John |
 | Termos de Uso  | usageterms:&quot;CopyRights Reserved&quot; |

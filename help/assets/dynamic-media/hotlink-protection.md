@@ -4,18 +4,18 @@ description: Saiba como ativar a proteção de hotlink no Dynamic Media.
 feature: Asset Management
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
 
 # Ativar a proteção de hotlink no Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
-Hot linking é quando um site de terceiros usa o código de HTML para exibir uma imagem de seu site. Eles usam sua largura de banda toda vez que a imagem é solicitada, pois o navegador do visitante a está acessando diretamente do seu servidor. Hotlink *protection* é um método para impedir que outros sites vinculem diretamente a imagens, CSS ou JavaScript nas suas páginas da Web. Esse tipo de blindagem ajuda a reduzir o uso desnecessário da largura de banda em sua conta do Dynamic Media.
+Hot linking é quando um site de terceiros usa o código de HTML para exibir uma imagem de seu site. Eles usam sua largura de banda toda vez que a imagem é solicitada, pois o navegador do visitante a está acessando diretamente do seu servidor. Hotlink *protection* é um método para impedir que outros sites vinculem diretamente a imagens, CSS ou JavaScript™ nas suas páginas da Web. Esse tipo de blindagem ajuda a reduzir o uso desnecessário da largura de banda em sua conta do Dynamic Media.
 
-[O ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) Suporte ao cliente do Adobe pode configurar um filtro de referenciador no nível da CDN. Isso garante que o conteúdo do Dynamic Media seja veiculado somente em sites da sua lista de sites permitidos para o domínio.
+[O ](https://helpx.adobe.com/support.html) Atendimento ao cliente do Adobe pode configurar um filtro de referenciador no nível da CDN. Isso garante que o conteúdo do Dynamic Media seja veiculado somente em sites da sua lista de sites permitidos para o domínio.
 
 >[!NOTE]
 >
