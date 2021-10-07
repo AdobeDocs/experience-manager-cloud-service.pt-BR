@@ -37,7 +37,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Durante a fase de extração, a ferramenta Transferência de conteúdo é executada em uma instância de origem do AEM ativa.
 
-* Após concluir a fase *Extração* do processo de transferência de conteúdo e antes de iniciar a *Fase de assimilação* para assimilar conteúdo em seu AEM como um Cloud Service *Stage* ou *Production* instâncias, será necessário registrar um tíquete de suporte para notificar o Adobe de sua intenção de executar *Assimilação9/> para que o Adobe possa garantir que nenhuma interrupção ocorra durante o processo* Assimilação *.* Você precisará registrar o tíquete de suporte uma semana antes da data planejada de *Assimilação*. Depois de enviar o tíquete de suporte, a equipe de suporte fornecerá orientação sobre as próximas etapas. Você pode registrar um tíquete de suporte com os seguintes detalhes:
+* Após concluir a fase *Extração* do processo de transferência de conteúdo e antes de iniciar a *Fase de assimilação* para assimilar conteúdo em suas instâncias AEM as a Cloud Service *Stage* ou *Production*, você precisará registrar um tíquete de suporte para notificar o Adobe de sua intenção de executar *Assimilação&lt;a9 para que o Adobe possa garantir que nenhuma interrupção ocorra durante o processo* Assimilação *.* Você precisará registrar o tíquete de suporte uma semana antes da data planejada de *Assimilação*. Depois de enviar o tíquete de suporte, a equipe de suporte fornecerá orientação sobre as próximas etapas. Você pode registrar um tíquete de suporte com os seguintes detalhes:
 
    * Data exata e hora estimada (com seu fuso horário) quando você planeja iniciar a fase *Assimilação*.
    * Tipo de ambiente (Preparo ou Produção) no qual você planeja assimilar dados.
@@ -70,7 +70,7 @@ A ferramenta Transferência de conteúdo pode ser baixada como um arquivo zip no
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
 >title="Execução da ferramenta Transferência de conteúdo"
->abstract="Saiba como usar a ferramenta Transferência de conteúdo para migrar o conteúdo para o AEM como um Cloud Service (Autor/Publicação)."
+>abstract="Saiba como usar a ferramenta Transferência de conteúdo para migrar o conteúdo para AEM as a Cloud Service (Autor/Publicação)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Consulte Demonstração"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial - Uso da ferramenta Transferência de conteúdo"
 

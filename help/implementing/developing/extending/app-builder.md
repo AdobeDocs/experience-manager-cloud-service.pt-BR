@@ -1,5 +1,5 @@
 ---
-title: Extensão  [!DNL Adobe Experience Manager] como um Cloud Service usando o Construtor de aplicativos do Desenvolvedor do Adobe.
+title: Estender [!DNL Adobe Experience Manager] as a Cloud Service usando o Adobe Developer App Builder.
 description: Estender [!DNL Adobe Experience Manager] as a Cloud Service usando o Adobe Developer App Builder.
 source-git-commit: 9287a40518d7026d5361cb61ab3804583e22450f
 workflow-type: tm+mt
@@ -9,11 +9,11 @@ ht-degree: 0%
 ---
 
 
-# Estender [!DNL Adobe Experience Manager] como um Cloud Service usando o Construtor de aplicativos do desenvolvedor do Adobe {#extend-using-app-builder}
+# Estender [!DNL Adobe Experience Manager] as a Cloud Service usando o Adobe Developer App Builder {#extend-using-app-builder}
 
 ## O que é o App Builder para AEM as a Cloud Service {#project-firefly}
 
-O novo Adobe Developer App Builder oferece uma estrutura de extensibilidade para um desenvolvedor estender facilmente o AEM como funcionalidades do Cloud Service.
+O novo Adobe Developer App Builder oferece uma estrutura de extensibilidade para um desenvolvedor estender facilmente AEM funcionalidades as a Cloud Service.
 
 O App Builder fornece uma estrutura unificada de extensibilidade de terceiros para integrar e criar experiências personalizadas que estendem o Adobe Experience Manager. Com essa estrutura completa de extensibilidade, integrada à infraestrutura Adobe, os desenvolvedores podem criar microsserviços personalizados, estender e integrar a Adobe Experience Manager em soluções de Adobe e no restante da pilha de TI.
 

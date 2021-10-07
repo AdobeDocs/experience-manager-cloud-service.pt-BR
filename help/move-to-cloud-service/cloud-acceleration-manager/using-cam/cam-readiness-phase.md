@@ -71,7 +71,7 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
 
    ![imagem](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Clicar em **Visualização de impressão** abre uma nova guia com o relatório exibido em uma visualização que pode ser impressa. Clique em **Imprimir** para imprimir o relatório em um formato PDF para facilitar o compartilhamento.
+1. Clicar em **Visualização de impressão** abre uma nova guia com o relatório exibido em uma visualização que pode ser impressa. Clique em **Imprimir** para imprimir o relatório em um formato PDF para facilitar a compartilhabilidade.
 
    >[!IMPORTANT]
    >* A opção **Salvar como PDF** é recomendada e tem suporte para a funcionalidade acima.
@@ -101,7 +101,7 @@ O cartão **Propriedades do relatório** fornece informações sobre propriedade
 
 #### Visão geral do relatório {#report-overview}
 
-Este cartão **Visão geral do relatório** fornece as conclusões do relatório e os níveis de gravidade que se aplicam ao avaliar a disponibilidade para mudar para AEM como um Cloud Service, conforme mostrado na figura abaixo.
+Este cartão **Visão geral do relatório** fornece as descobertas do relatório e os níveis de gravidade que se aplicam ao avaliar a disponibilidade para mudar para AEM as a Cloud Service, como mostrado na figura abaixo.
 
 ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -128,7 +128,7 @@ A opção Avaliação de práticas recomendadas fornece uma avaliação da inst�
 
 #### Avaliação da complexidade da migração {#migration-complexity-assessment}
 
-A opção Avaliação da complexidade da migração fornece uma avaliação da complexidade para migrar a implementação de AEM existente para o AEM como Cloud Service.
+A opção Avaliação da complexidade da migração fornece uma avaliação da complexidade para migrar a implementação de AEM existente para AEM as a Cloud Service.
 
 Você pode revisar as seguintes informações nesta guia:
 

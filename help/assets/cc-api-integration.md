@@ -2,15 +2,15 @@
 title: Automação de conteúdo para integração com o Creative Cloud
 description: Gerar variações de ativos usando a integração do Creative Cloud
 contentOwner: AG
-feature: Upload,Processamento de Ativos,Publicação,Microserviços do Asset compute,Fluxo de Trabalho
+feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
-
 
 # Gerar variações de ativos usando a integração [!DNL Adobe Creative Cloud] {#content-automation}
 
@@ -32,7 +32,7 @@ Os usuários podem criar perfis de processamento para automatizar as seguintes o
 
    ![Predefinição de Lightroom](/help/assets/assets/content-automation-lrpresets.png)
 
-   *Figura: Predefinição Adobe Lightroom para melhorar a qualidade da imagem de forma consistente para muitas imagens.*
+   *Figura: Predefinição do Adobe Lightroom para melhorar a qualidade da imagem de forma consistente para muitas imagens.*
 
 * **Recorte** da imagem: Usa inteligência artificial para criar seleção em torno de objetos salientes e remover o plano de fundo com um único comando.
 
@@ -54,7 +54,7 @@ Os usuários podem criar perfis de processamento para automatizar as seguintes o
 
 Para usar perfis de processamento para criar variações automaticamente, siga estas etapas:
 
-1. Entre em contato com o [Adobe Customer Care](https://experienceleague.adobe.com/#support) para receber a licença.
+1. Entre em contato com o [Adobe Customer Support](https://experienceleague.adobe.com/#support) para receber a licença.
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de processamento]**.
 
@@ -64,7 +64,7 @@ Para usar perfis de processamento para criar variações automaticamente, siga e
 
 1. Forneça **[!UICONTROL Nome da representação]** (ou nome da saída), **[!UICONTROL Extensão]** (ou tipo de arquivo), selecione **[!UICONTROL Qualidade]** (ou parâmetros de saída), selecione **[!UICONTROL Inclui]** e **[!UICONTROL Exclui]** listas do tipo MIME (ou filtro de ativo de entrada) e selecione a operação criativa necessária.
 
-   ![ Creativetab no perfil  [!UICONTROL de processamento]](assets/creative-processing-profile.png)
+   ![ Creativetab no Perfil  [!UICONTROL de processamento]](assets/creative-processing-profile.png)
 
 1. Algumas operações exigem parâmetros extras (ativo). Forneça valores para esses parâmetros extras, se necessário.
 
