@@ -1,9 +1,9 @@
 ---
 title: Considerações importantes para a ferramenta Mapeamento de usuários
 description: Considerações importantes para a ferramenta Mapeamento de usuários
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -35,3 +35,7 @@ Os seguintes casos específicos serão registrados:
 * Se a instância do AEM Cloud Service de destino tiver um usuário com um nome de usuário diferente, mas o mesmo endereço de email de um dos usuários na instância de AEM de origem e o Mapeamento de usuários estiver ativado, uma mensagem de erro será gravada nos logs e o usuário do AEM de origem não será transferido, pois somente um usuário com um determinado endereço de email é permitido no sistema de destino.
 
 * Se dois usuários na instância de AEM de origem tiverem o mesmo endereço de email e o Mapeamento de usuários estiver ativado, uma mensagem de erro será gravada nos logs e um dos usuários de AEM de origem não será transferido, pois somente um usuário com um determinado endereço de email é permitido no sistema de destino.
+
+### O que vem a seguir {#whats-next}
+
+Depois de ter aprendido as considerações importantes e os casos excepcionais, você estará pronto para usar a ferramenta. Consulte [Usar a ferramenta de mapeamento de usuários](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) para obter mais detalhes.
