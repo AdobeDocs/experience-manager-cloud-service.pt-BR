@@ -2,14 +2,14 @@
 title: Fundamentos Técnicos AEM
 description: Uma visão geral dos fundamentos técnicos do AEM incluindo como o AEM é estruturado e tecnologias fundamentais como JCR, Sling e OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
 
-# AEM Fundamentos Técnicos {#aem-technical-foundations}
+# Fundamentos Técnicos AEM {#aem-technical-foundations}
 
 AEM é uma plataforma robusta baseada em tecnologias comprovadas, escaláveis e flexíveis. Este documento fornece uma visão geral detalhada das várias partes que compõem o AEM e se destina a ser um apêndice técnico para um desenvolvedor de AEM de pilha completa. Não se destina a ser um guia de introdução. Se você nunca usou o AEM desenvolvimento, consulte a [Introdução ao desenvolvimento do AEM Sites - Tutorial WKND](develop-wknd-tutorial.md) como uma primeira etapa.
 
@@ -34,9 +34,9 @@ O repositório de conteúdo subjacente e as camadas de lógica de negócios são
 
 ## Repositório de conteúdo Java {#java-content-repository}
 
-O padrão Java Content Repository (JCR), [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), especifica uma maneira independente do fornecedor e de implementação para acessar o conteúdo de forma bidirecional em um nível granular em um repositório de conteúdo. A Adobe Research (Suíça) AG detém o chumbo da especificação.
+O padrão Java Content Repository (JCR), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), especifica uma maneira independente do fornecedor e de implementação para acessar o conteúdo de forma bidirecional em um nível granular em um repositório de conteúdo. A Adobe Research (Suíça) AG detém o chumbo da especificação.
 
-O pacote [JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html), `javax.jcr.*` é usado para o acesso direto e a manipulação do conteúdo do repositório.
+O pacote [JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), `javax.jcr.*` é usado para o acesso direto e a manipulação do conteúdo do repositório.
 
 AEM é criado com base em um JCR.
 
@@ -46,7 +46,7 @@ AEM é criado com base em um JCR.
 
 Jackrabbit Oak (também chamado simplesmente de Oak) é a implementação do padrão JCR no qual o AEM é construído.
 
-## Processamento de Solicitação Sling {#sling-request-processing}
+## Processamento de solicitação Sling {#sling-request-processing}
 
 O AEM é criado usando o [Sling](https://sling.apache.org/site/index.html), uma estrutura de aplicação web baseada em princípios REST que fornece fácil desenvolvimento de aplicativos orientados a conteúdo. O Sling usa um repositório JCR, como o Apache Jackrabbit Oak, como seu armazenamento de dados. O Sling tem contribuído para a Apache Software Foundation - mais informações podem ser encontradas no Apache.
 
@@ -106,7 +106,7 @@ Podemos dividi-lo em suas partes compósitas:
 * **sufixo**  - Pode ser usado para especificar informações adicionais
 * **parâmetro(s)**  - Quaisquer parâmetros necessários para o conteúdo dinâmico
 
-#### Do URL para Conteúdo e Scripts {#from-url-to-content-and-scripts}
+#### Do URL para conteúdo e scripts {#from-url-to-content-and-scripts}
 
 Usando os princípios de decomposição de URL:
 
@@ -129,7 +129,7 @@ O pedido é dividido e as informações necessárias são extraídas. O reposit�
 
 O Sling também permite que outras coisas além dos nós JCR sejam recursos, mas esse é um recurso avançado.
 
-### Localizando o script {#locating-the-script}
+### Localização do script {#locating-the-script}
 
 Quando o recurso apropriado (nó de conteúdo) está localizado, o **tipo de recurso sling** é extraído. Este é um caminho, que localiza o script a ser usado para renderizar o conteúdo.
 
@@ -170,7 +170,7 @@ Usando o exemplo anterior, se `sling:resourceType` for `hr/jobs` então para:
    * Por exemplo, o script para `../content/corporate/jobs/developer.html` geraria uma pesquisa em `/apps/content/corporate/jobs/`.
    * O tipo de nó principal será usado.
 * Se nenhum script for encontrado, o script padrão será usado.
-   * A representação padrão é suportada atualmente como texto sem formatação (`.txt`), HTML (`.html`) e JSON (`.json`), todos os quais listarão as propriedades do nó (devidamente formatado). A representação padrão da extensão `.res`, ou solicitações sem uma extensão de solicitação, é spool do recurso (quando possível).
+   * A representação padrão é suportada atualmente como texto sem formatação (`.txt`), HTML (`.html`) e JSON (`.json`), e todos listarão as propriedades do nó (formatadas adequadamente). A representação padrão da extensão `.res`, ou solicitações sem uma extensão de solicitação, é spool do recurso (quando possível).
 * Para tratamento de erros http (códigos 403 ou 404), o Sling procurará um script em:
    * O local `/apps/sling/servlet/errorhandler` para scripts personalizados
    * Ou o local do script padrão `/libs/sling/servlet/errorhandler/404.jsp`
@@ -243,7 +243,7 @@ Se você chamar a representação (o script) diretamente, oculta o recurso dentr
 
 Isso usa o pacote da API do Sling, `org.apache.sling.*`, e as bibliotecas de tags.
 
-### Fazendo referência a elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
+### Referência a elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
 
 Uma consideração final é a necessidade de fazer referência a elementos existentes nos scripts.
 
@@ -280,7 +280,7 @@ Isso permite executar as seguintes ações em qualquer um dos pacotes da instala
 * Ver o status atual
 * Acesse informações mais detalhadas (por exemplo, nome simbólico, versão, localização, etc.) sobre os pacotes específicos
 
-Consulte [Configuração do OSGi para AEM como um Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obter mais informações.
+Consulte [Configuração do OSGi para AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obter mais informações.
 
 ## Estrutura no Repositório {#structure-within-the-repository}
 

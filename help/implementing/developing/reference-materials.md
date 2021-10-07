@@ -1,9 +1,10 @@
 ---
 title: Materiais de referência de API
 description: O AEM tem APIs abrangentes e eficientes que você pode aproveitar para o seu projeto de experiência digital.
-source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
+exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '664'
 ht-degree: 4%
 
 ---
@@ -34,7 +35,7 @@ O AEM depende de várias APIs de código aberto adicionais.
 |---|---|
 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | Estrutura da Web que usa um Java Content Repository (JCR) para armazenar e gerenciar conteúdo |
 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Implementar um Java Content Repository (JCR) hierárquico escalável e de alto desempenho para uso como a base de sites da Web modernos e de classe internacional |
-| [Repositório de conteúdo Java](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Especificação para o JCR versão 2.0 |
+| [Repositório de conteúdo Java](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Especificação para o JCR versão 2.0 |
 | [Apache Felix](https://felix.apache.org) | Implementação da estrutura e plataforma de serviço da iniciativa Open Services Gateway (OSGi) |
 
 ## Diretrizes de preferência de API {#guidelines}
