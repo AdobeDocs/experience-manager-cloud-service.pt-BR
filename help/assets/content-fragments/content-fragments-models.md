@@ -4,14 +4,18 @@ description: Saiba como os Modelos de fragmentos de conteúdo servem como base p
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 7%
+source-wordcount: '2772'
+ht-degree: 6%
 
 ---
 
 # Modelos de fragmentos do conteúdo {#content-fragment-models}
+
+>[!NOTE]
+>
+>O recurso [Modelos de fragmento de conteúdo bloqueados (publicados)](#locked-published-content-fragment-models) está na versão beta.
 
 Os Modelos de fragmento de conteúdo no AEM definem a estrutura do conteúdo dos [fragmentos de conteúdo,](/help/assets/content-fragments/content-fragments.md) servindo como base do conteúdo sem cabeçalho.
 
@@ -411,28 +415,82 @@ Para cancelar a publicação de um modelo de fragmento de conteúdo:
 1. Selecione o modelo, seguido por **Cancelar publicação** na barra de ferramentas.
 O status publicado será indicado no console.
 
-<!--
-## Locked Content Fragment Models {#locked-content-fragment-models}
+Se você tentar desfazer a publicação de um modelo usado atualmente por um ou mais fragmentos, um aviso de erro informará você sobre:
 
-This feature provides governance for Content Fragment Models that have been published. 
+![Mensagem de erro do Modelo de fragmento de conteúdo ao cancelar a publicação de um modelo em uso](assets/cfm-model-unpublish-error.png)
 
-The challenge:
+A mensagem sugerirá que você marque o painel [Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) para investigar mais:
 
-* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+![Modelo de fragmento de conteúdo em referências](assets/cfm-model-references.png)
 
-  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+## Modelos de fragmentos de conteúdo bloqueados (publicados) {#locked-published-content-fragment-models}
 
-  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+>[!NOTE]
+O recurso Modelos de fragmentos de conteúdo bloqueados (publicados) está em beta.
 
-* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+Esse recurso fornece o controle dos Modelos de fragmento de conteúdo que foram publicados.
 
-* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+### O desafio {#the-challenge}
 
-The solution:
+* Os Modelos de fragmento de conteúdo determinam o esquema para consultas GraphQL em AEM.
 
-* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+   * AEM esquemas GraphQL são criados assim que um Modelo de fragmento de conteúdo é criado e podem existir em ambientes do autor e de publicação.
 
-* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+   * Os esquemas em publicação são os mais críticos, pois fornecem a base para a entrega ao vivo do conteúdo do Fragmento de conteúdo no formato JSON.
 
-* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
--->
+* Problemas podem ocorrer quando os Modelos de fragmento de conteúdo são modificados ou, em outras palavras, editados. Isso significa que o esquema é alterado, o que, por sua vez, pode afetar as consultas GraphQL existentes.
+
+* A adição de novos campos a um Modelo de fragmento de conteúdo (normalmente) não deve ter efeitos prejudiciais. No entanto, a modificação de campos de dados existentes (por exemplo, seu nome) ou a exclusão de definições de campos quebrará as consultas GraphQL existentes ao solicitar esses campos.
+
+### Os requisitos {#the-requirements}
+
+* Para conscientizar os usuários sobre os riscos ao editar modelos que já são usados para a entrega de conteúdo ao vivo - em outras palavras, modelos que foram publicados).
+
+* Além disso, para evitar alterações não intencionais.
+
+Qualquer uma dessas opções pode interromper consultas se os modelos modificados forem publicados novamente.
+
+### A solução {#the-solution}
+
+Para solucionar esses problemas, os Modelos de fragmento de conteúdo são *bloqueados* em um modo SOMENTE LEITURA no autor - assim que forem publicados. Isso é indicado por **Locked**:
+
+![Cartão do modelo de fragmento de conteúdo bloqueado](assets/cfm-model-locked.png)
+
+Quando o modelo for **Locked** (no modo SOMENTE LEITURA), você poderá ver o conteúdo e a estrutura dos modelos, mas não poderá editá-los.
+
+Você pode gerenciar modelos **Bloqueados** no console ou no editor de modelo:
+
+* Console
+
+   No console, é possível gerenciar o modo SOMENTE LEITURA com as ações **Desbloquear** e **Bloquear** na barra de ferramentas:
+
+   ![Barra de ferramentas do modelo de fragmento de conteúdo bloqueado](assets/cfm-model-locked.png)
+
+   * Você pode **Desbloquear** um modelo para ativar as edições.
+
+      Se você selecionar **Desbloquear**, um aviso será exibido e você deverá confirmar a ação **Desbloquear**:
+      ![Mensagem ao desbloquear o modelo de fragmento de conteúdo](assets/cfm-model-unlock-message.png)
+
+      Em seguida, você pode abrir o modelo para edição.
+
+   * Você também pode **Bloquear** o modelo depois.
+   * A republicação do modelo o colocará imediatamente no modo **Locked** (SOMENTE LEITURA).
+
+* Editor de modelo
+
+   * Ao abrir um modelo bloqueado, você será avisado e terá três ações: **Cancelar**, **Ver Só de Leitura**, **Editar**:
+
+      ![Mensagem ao visualizar um modelo de fragmento de conteúdo bloqueado](assets/cfm-model-editor-lock-message.png)
+
+   * Se você selecionar **Exibir somente leitura** poderá ver o conteúdo e a estrutura do modelo:
+
+      ![Exibir somente leitura - modelo de fragmento de conteúdo bloqueado](assets/cfm-model-editor-locked-view-only.png)
+
+   * Se selecionar **Editar**, poderá editar e guardar as atualizações:
+
+      ![Editar - Modelo de fragmento de conteúdo bloqueado](assets/cfm-model-editor-locked-edit.png)
+
+      >[!NOTE]
+      Ainda pode haver um aviso na parte superior, mas é quando o modelo já está em uso pelos Fragmentos de conteúdo existentes.
+
+   * **** Cancelar retornará você ao console.

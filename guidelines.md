@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 91%
 
 ---
 # Diretrizes para colaboração na documentação do Adobe Experience Manager
@@ -37,9 +37,9 @@ As exceções a essa regra aplicam-se às notas de versão, nas quais problemas 
 
 Quaisquer ideias para melhorar a documentação do AEM são bem-vindas como contribuições. No entanto, comentários, problemas e pull requests destinam-se somente a *contribuições*, não para responder suas perguntas sobre como usar o AEM, implementar seu projeto do AEM ou resolver problemas técnicos.
 
-Quaisquer dúvidas sobre o uso do AEM ou erros técnicos devem ser notificados por meio do processo normal de suporte pelo [portal Experience Cloud Enterprise Support](https://helpx.adobe.com/br/contact/enterprise-support.ec.html) ou discutidas na [comunidade do Experience Manager](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
+Qualquer dúvida sobre o uso de AEM ou erros técnicos que você possa ter deve ser relatada por meio do processo de suporte normal por meio do [Portal de suporte do Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) ou discutida na [comunidade do Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
-***As contribuições à documentação do AEM não substituem o Atendimento ao cliente da Adobe***. Logo, quaisquer contribuições que buscarem respostas a perguntas relacionadas a suporte serão rejeitadas.
+***AEM contribuições de documentação não são uma substituição do*** Suporte ao cliente do Adobe e quaisquer contribuições que buscam respostas para perguntas relacionadas ao suporte serão rejeitadas.
 
 ### As contribuições devem mencionar claramente as páginas pertinentes à documentação.
 

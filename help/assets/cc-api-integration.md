@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Os usuários podem criar perfis de processamento para automatizar as seguintes o
 
 Para usar perfis de processamento para criar variações automaticamente, siga estas etapas:
 
-1. Entre em contato com o [Adobe Customer Care](https://experienceleague.adobe.com/#support) para receber a licença.
+1. Entre em contato com o [Adobe Customer Support](https://experienceleague.adobe.com/#support) para receber a licença.
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de processamento]**.
 

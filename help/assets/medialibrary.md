@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: e294ecdefca89bc3fd16ee2166a1a8418d0237ee
+source-git-commit: 51ebeda46fbacb2479a5bd007cb741486caa218f
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,15 @@ A Media Library abrange os seguintes casos de uso:
 
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
+* Basic metadata properties
+* Tag management
+* Version control
 * Static renditions
-* Projects, tasks authoring
+* Projects, tasks, workflow authoring
 * Activity stream (timeline)
+* Query Builder (API)
+* Marketing Cloud integration
+* User interface customization and extension
 * Comments and annotation
 -->
 
@@ -73,21 +79,13 @@ Para usar a funcionalidade Media Library, você pode usar a interface do usuári
 * Anotar ativos.
 * Adicione ativos a [!DNL Sites] páginas por meio do Localizador de conteúdo.
 * Uso [!DNL Content Fragments].
-* Use HTTP REST e APIs GraphQL para [!DNL Content Fragments] e ativos de mídia referenciados, sob licença Sites.
-* Integração do Marketing Cloud.
-* Personalize e estenda a interface do usuário do gerenciamento de ativos.
-* Acesse o Query Builder (API) para estender a funcionalidade de pesquisa.
-* Crie tags estáticas.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
-As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
 >
->Muitos casos de uso avançados do DAM são cumpridos por [!DNL Experience Manager Assets]. A licença da Media Library permite atender somente aos casos de uso listados usando o Media Library. Se um caso de uso não estiver listado, não o use com a licença do Media Library. Em caso de dúvidas, entre em contato com o Suporte ao cliente.
-
-Observe que não é possível usar tags inteligentes, link [!DNL Asset], seletor [!DNL Asset], marcação em massa, modificação de workflows de ativos sem licença [!DNL Assets].
+>Muitos casos de uso avançados do DAM são cumpridos por [!DNL Experience Manager Assets]. A licença da Media Library permite atender somente aos casos de uso listados usando o Media Library. Se um caso de uso não estiver listado, não o use com a licença do Media Library. Caso tenha dúvidas, entre em contato com o Atendimento ao cliente do Adobe.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

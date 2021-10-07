@@ -4,7 +4,7 @@ description: Saiba como o Smart Imaging com a Adobe Sensei AI aplica as caracter
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2624'
 ht-degree: 1%
@@ -213,10 +213,10 @@ Por padrão, o DPR de Smart Imaging e a otimização de rede estão desativadas 
       Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**. Se você estiver usando um domínio genérico do Dynamic Media Classic no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
    1. Indique se deseja que funcione em HTTP/2.
 
-1. O Atendimento ao cliente do Adobe adiciona você à Lista de espera do cliente de Smart Imaging com base na ordem em que as solicitações são enviadas.
-1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Atendimento ao cliente entrará em contato com você para coordenar e definir uma data de destino.
+1. O Suporte ao cliente do Adobe adiciona você à Lista de espera do cliente de Smart Imaging com base na ordem em que as solicitações são enviadas.
+1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Suporte ao cliente entrará em contato com você para coordenar e definir uma data de destino.
 1. **Opcional**: Como opção, você pode testar a Imagem inteligente na Preparação antes do Adobe colocar o novo recurso em produção.
-1. Você é notificado após a conclusão pelo Atendimento ao cliente.
+1. Você será notificado após a conclusão pelo Suporte ao cliente.
 1. Para maximizar os aprimoramentos de desempenho do Smart Imaging, o Adobe recomenda definir o Time To Live (TTL) para 24 horas ou mais. O TTL define quanto tempo os ativos são armazenados em cache pela CDN. Para alterar essa configuração:
 
    1. Se você usar o Dynamic Media Classic, vá para **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Publicar configuração]** > **[!UICONTROL Servidor de imagem]**. Defina o valor **[!UICONTROL Default Client Cache Time To Live]** como 24 ou mais.
@@ -224,7 +224,7 @@ Por padrão, o DPR de Smart Imaging e a otimização de rede estão desativadas 
 
 ## Quando posso esperar que minha conta seja ativada com a Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-As solicitações são processadas na ordem em que são recebidas pelo Atendimento ao cliente, de acordo com a Lista de espera.
+As solicitações são processadas na ordem em que são recebidas pelo Suporte ao cliente, de acordo com a Lista de espera.
 
 >[!NOTE]
 >

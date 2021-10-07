@@ -2,7 +2,7 @@
 title: Uso do Analisador de práticas recomendadas
 description: Uso do Analisador de práticas recomendadas
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2522'
 ht-degree: 42%
@@ -91,6 +91,7 @@ Você pode forçar o BPA a limpar seu cache e gerar novamente o relatório clica
 Enquanto o relatório está sendo gerado novamente, ele exibe o progresso em termos de porcentagem concluída, como mostrado na imagem abaixo.
 
    ![imagem](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
 
 
 #### Uso de filtros no relatório do Analisador de práticas recomendadas {#bpa-filters}

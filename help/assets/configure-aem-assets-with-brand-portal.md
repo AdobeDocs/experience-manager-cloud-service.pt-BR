@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 12%
@@ -178,7 +178,7 @@ Junto com o fluxo de trabalho de automação para ativar o Brand Portal no AEM A
 
 >[!NOTE]
 >
->Entre em contato com o Suporte do Adobe se tiver algum problema ao ativar o locatário do Brand Portal.
+>Entre em contato com o Suporte ao cliente se tiver algum problema ao ativar o locatário do Brand Portal.
 
 ## Configuração manual usando o Console do desenvolvedor do Adobe {#manual-configuration}
 
