@@ -2,9 +2,9 @@
 title: Exteriorização de URLs
 description: O Externalizador é um serviço OSGi que permite transformar programaticamente um caminho de recurso em um URL externo e absoluto.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,23 +13,23 @@ ht-degree: 0%
 
 No AEM, o **Externalizador** é um serviço OSGi que permite transformar programaticamente um caminho de recurso (por exemplo, `/path/to/my/page`) em um URL externo e absoluto (por exemplo, `https://www.mycompany.com/path/to/my/page`) ao prefixar o caminho com um DNS pré-configurado.
 
-Como um AEM como uma instância do Cloud Service não pode saber seu URL externamente visível e, às vezes, um link precisa ser criado fora do escopo da solicitação, esse serviço fornece um local central para configurar esses URLs externos e criá-los.
+Como uma instância AEM as a Cloud Service não pode saber seu URL externamente visível e, às vezes, um link deve ser criado fora do escopo da solicitação, esse serviço fornece um local central para configurar esses URLs externos e criá-los.
 
-Este artigo explica como configurar o serviço Externalizador e como usá-lo. Para obter detalhes técnicos do serviço, consulte o [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+Este artigo explica como configurar o serviço Externalizador e como usá-lo. Para obter detalhes técnicos do serviço, consulte o [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Comportamento padrão do Externalizador e Como substituir {#default-behavior}
 
 Pronto para uso, o serviço Externalizador tem valores como `author-p12345-e6789.adobeaemcloud.com` e `publish-p12345-e6789.adobeaemcloud.com`.
 
-Para substituir esses valores, use as variáveis de ambiente do Cloud Manager, conforme descrito no artigo [Configuração do OSGi para AEM como um Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e definição das variáveis predefinidas `AEM_CDN_DOMAIN_AUTHOR` e `AEM_CDN_DOMAIN_PUBLISH`.
+Para substituir esses valores, use as variáveis de ambiente do Cloud Manager, conforme descrito no artigo [Configuração do OSGi para AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e definição das variáveis predefinidas `AEM_CDN_DOMAIN_AUTHOR` e `AEM_CDN_DOMAIN_PUBLISH`.
 
-## Configurar o Serviço Externalizador {#configuring-the-externalizer-service}
+## Configurar o serviço Externalizador {#configuring-the-externalizer-service}
 
 O serviço Externalizador permite definir centralmente o domínio que pode ser usado para prefixar programaticamente caminhos de recursos. O serviço Externalizador só deve ser usado para aplicativos com um único domínio.
 
 >[!NOTE]
 >
->Como ao aplicar qualquer configuração [OSGi para AEM como um Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) as seguintes etapas devem ser executadas em uma instância de desenvolvedor local e, em seguida, confirmadas no código do projeto para implantação.
+>Como ao aplicar qualquer configuração [OSGi para AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) as seguintes etapas devem ser executadas em uma instância de desenvolvedor local e, em seguida, confirmadas no código do projeto para implantação.
 
 Para definir um mapeamento de domínio para o serviço Externalizador:
 
@@ -73,7 +73,7 @@ Para definir um mapeamento de domínio para o serviço Externalizador:
 
 1. Clique em **Salvar** para salvar as alterações.
 
-### Usar o Serviço Externalizador {#using-the-externalizer-service}
+### Uso do Serviço Externalizador {#using-the-externalizer-service}
 
 Esta seção mostra alguns exemplos de como o serviço Externalizador pode ser usado.
 
@@ -125,4 +125,4 @@ Esta seção mostra alguns exemplos de como o serviço Externalizador pode ser u
 
 >[!TIP]
 >
->Você pode encontrar mais exemplos no [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+>Você pode encontrar mais exemplos no [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).

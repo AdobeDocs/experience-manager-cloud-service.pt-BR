@@ -2,16 +2,16 @@
 title: Guia de referência de componentes
 description: Um guia de referência do desenvolvedor para obter os detalhes dos componentes e sua estrutura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '3659'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Guia de referência de componentes {#components-reference-guide}
 
-Os componentes estão no centro da criação de uma experiência no AEM. Os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) simplificam a introdução a um conjunto de ferramentas de componentes robustos e prontos. O [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) leva o desenvolvedor a usar essas ferramentas e como criar componentes personalizados para criar um novo site de AEM.
+Os componentes estão no centro da criação de uma experiência no AEM. Os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) simplificam a introdução a um conjunto de ferramentas de componentes robustos e prontos. O [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) orienta o desenvolvedor sobre como usar essas ferramentas e como criar componentes personalizados para criar um novo site de AEM.
 
 >[!TIP]
 >
@@ -32,14 +32,14 @@ Antes de começar a realmente configurar ou codificar seu componente, você deve
 * Seu componente precisará de lógica para selecionar/manipular o conteúdo?
    * A lógica deve ser mantida separada da camada da interface do usuário. O HTL foi projetado para ajudar a garantir que isso aconteça.
 * Seu componente precisará de formatação CSS?
-   * A formatação de CSS deve ser mantida separada das definições do componente. Defina convenções para nomear seus elementos HTML para modificá-los por meio de arquivos CSS externos.
+   * A formatação de CSS deve ser mantida separada das definições do componente. Defina as convenções para nomear seus elementos HTML para que você possa modificá-los por meio de arquivos CSS externos.
 * Quais implicações de segurança o novo componente pode apresentar?
 
 ### Reutilizar componentes existentes {#reusing-components}
 
 Antes de investir tempo na criação de um componente totalmente novo, considere personalizar ou estender os componentes existentes. [O ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Componente principal oferece um conjunto de componentes flexíveis, robustos e bem testados e prontos para produção.
 
-#### Estender componentes principais {#extending-core-components}
+#### Extensão dos componentes principais {#extending-core-components}
 
 Os Componentes principais também oferecem [padrões de personalização claros](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html) que você pode usar para adaptá-los às necessidades do seu próprio projeto.
 
@@ -53,7 +53,7 @@ Também é possível substituir uma caixa de diálogo de componente usando o Sli
 
 Isso significa que você só precisa redefinir as diferenças necessárias, em vez de redefinir toda a caixa de diálogo.
 
-### Marcação da lógica de conteúdo e renderização {#content-logic-and-rendering-markup}
+### Lógica de conteúdo e marcação de renderização  {#content-logic-and-rendering-markup}
 
 Seu componente será renderizado com [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Seu componente precisa definir o HTML necessário para obter o conteúdo necessário e, em seguida, renderizá-lo conforme necessário, nos ambientes de autor e publicação.
 
@@ -65,7 +65,7 @@ Essa lógica (opcional) pode ser implementada de diferentes maneiras e é invoca
 
 * Usando Java - [A API de uso do Java do HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada. Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
 * Uso do JavaScript - [A API de uso do JavaScript do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript. Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
-* Uso de bibliotecas do lado do cliente - Sites modernos dependem muito do processamento no lado do cliente impulsionado por códigos complexos de JavaScript e CSS. Consulte o documento [Usar bibliotecas do lado do cliente no AEM como um Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obter mais informações.
+* Uso de bibliotecas do lado do cliente - Sites modernos dependem muito do processamento no lado do cliente impulsionado por códigos complexos de JavaScript e CSS. Consulte o documento [Usar bibliotecas do lado do cliente em AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obter mais informações.
 
 ## Estrutura do componente {#structure}
 
@@ -171,7 +171,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
 | `cq:dialog` | `nt:unstructured` | Essa é a definição da caixa de diálogo de edição do componente. |
 | `cq:design_dialog` | `nt:unstructured` | Esta é a definição da caixa de diálogo de design do componente. |
 | `cq:editConfig` | `cq:EditConfig` | Isso define a configuração [editar do componente.](#edit-behavior) |
-| `cq:htmlTag` | `nt:unstructured` | Isso retorna atributos de tag adicionais que são adicionados à tag HTML circundante. Permite a adição de atributos aos divs gerados automaticamente. |
+| `cq:htmlTag` | `nt:unstructured` | Isso retorna atributos de tag adicionais que são adicionados à tag HTML ao redor. Permite a adição de atributos aos divs gerados automaticamente. |
 | `cq:noDecoration` | `Boolean` | Se verdadeiro, o componente não é renderizado com classes div e css geradas automaticamente. |
 | `cq:template` | `nt:unstructured` | Se encontrado, esse nó será usado como um modelo de conteúdo quando o componente for adicionado do Navegador de componentes. |
 | `jcr:created` | `Date` | Esta é a data de criação do componente. |
@@ -258,7 +258,7 @@ Mais especificamente, a interface do usuário do Granite fornece uma variedade d
 
 Depois de criar o tipo de recurso, é possível instanciar o campo adicionando um novo nó na caixa de diálogo, com a propriedade `sling:resourceType` referindo-se ao tipo de recurso que acabou de apresentar.
 
-#### Acesso aos Campos de Diálogo {#access-to-dialog-fields}
+#### Acesso aos campos de diálogo {#access-to-dialog-fields}
 
 Também é possível usar as condições de renderização (`rendercondition`) para controlar quem tem acesso a guias/campos específicos na caixa de diálogo; por exemplo:
 
@@ -317,12 +317,12 @@ O comportamento de edição de um componente é configurado adicionando um nó `
 
 Há muitas configurações existentes no AEM. Você pode pesquisar facilmente propriedades específicas ou nós secundários usando a ferramenta Query em **CRXDE Lite**.
 
-### Espaços reservados do componente {#component-placeholders}
+### Marcadores de posição de componente {#component-placeholders}
 
-Os componentes devem sempre renderizar algum HTML que esteja visível para o autor, mesmo quando o componente não tiver conteúdo. Caso contrário, pode desaparecer visualmente da interface do editor, tornando-a tecnicamente presente, mas invisível, na página e no editor. Nesse caso, os autores não poderão selecionar e interagir com o componente vazio.
+Os componentes devem sempre renderizar algum HTML visível para o autor, mesmo quando o componente não tiver conteúdo. Caso contrário, pode desaparecer visualmente da interface do editor, tornando-a tecnicamente presente, mas invisível, na página e no editor. Nesse caso, os autores não poderão selecionar e interagir com o componente vazio.
 
 Por isso, os componentes devem renderizar um espaço reservado, desde que não renderizem nenhuma saída visível quando a página for renderizada no editor de páginas (quando o modo WCM for `edit` ou `preview`).
-A marcação HTML típica para um espaço reservado é a seguinte:
+A marcação de HTML típica para um espaço reservado é a seguinte:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
@@ -350,7 +350,7 @@ No exemplo anterior, `model.text` é a variável que é verdadeira somente quand
 
 Um exemplo de uso desse modelo pode ser visto nos Componentes principais, [como no Componente de título.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
-### Configurar com cq:EditConfig Child Nodes {#configuring-with-cq-editconfig-child-nodes}
+### Configurar com nós filho cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
 #### Soltar ativos em uma caixa de diálogo - cq:dropTargets {#cq-droptargets}
 
@@ -370,7 +370,7 @@ O nó `cq:inplaceEditing` (tipo de nó `cq:InplaceEditingConfig`) define uma con
 |---|---|---|
 | `active` | `Boolean` | `true` para ativar a edição no local do componente. |
 | `configPath` | `String` | Caminho da configuração do editor, que pode ser especificado por um nó de configuração |
-| `editorType` | `String` | Os tipos disponíveis são: `plaintext` para conteúdo não HTML, `title` converte títulos gráficos em um texto simples antes de iniciar a edição e `text` usa o Editor de Rich Text |
+| `editorType` | `String` | Os tipos disponíveis são: `plaintext` para conteúdo não HTML, `title` converte títulos gráficos em um texto simples antes do início da edição e `text` usa o Editor de Rich Text |
 
 A configuração a seguir permite a edição no local do componente e define `plaintext` como o tipo de editor:
 
@@ -450,7 +450,7 @@ Esse evento é acionado sempre que a caixa de diálogo é carregada (ou recarreg
 
 ## Comportamento de visualização {#preview-behavior}
 
-O cookie [Modo WCM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) é definido ao alternar para o modo de Visualização mesmo quando a página não é atualizada.
+O cookie [Modo WCM](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) é definido ao alternar para o modo de Visualização mesmo quando a página não é atualizada.
 
 Para componentes com uma renderização que são sensíveis ao modo WCM, eles precisam ser definidos para serem atualizados especificamente e, em seguida, dependem do valor do cookie.
 

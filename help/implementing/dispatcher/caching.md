@@ -3,10 +3,10 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Esta página também descreve como o cache do dispatcher é invalidado, bem como
 ### HTML/Texto {#html-text}
 
 * por padrão, armazenado em cache pelo navegador por cinco minutos, com base no cabeçalho `cache-control` emitido pela camada do apache. A CDN também respeita esse valor.
-* a configuração padrão de armazenamento em cache de HTML/Texto pode ser desativada definindo a variável `DISABLE_DEFAULT_CACHING` em `global.vars`:
+* a configuração padrão de armazenamento em cache HTML/Text pode ser desativada definindo a variável `DISABLE_DEFAULT_CACHING` em `global.vars`:
 
 ```
 Define DISABLE_DEFAULT_CACHING
@@ -30,7 +30,7 @@ Define DISABLE_DEFAULT_CACHING
 
 Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste fino do cabeçalho da idade (com um valor com base no dia do calendário), já que, por padrão, o cabeçalho da idade é definido como 0. Dito isso, **tenha cuidado ao desativar o armazenamento em cache padrão.**
 
-* pode ser substituída para todo o conteúdo HTML/Texto definindo a variável `EXPIRATION_TIME` em `global.vars` usando o AEM como ferramentas do Dispatcher do SDK do Cloud Service.
+* pode ser substituída para todo o conteúdo de HTML/Texto definindo a variável `EXPIRATION_TIME` em `global.vars` usando as ferramentas do Dispatcher do SDK as a Cloud Service AEM.
 * pode ser substituído em um nível de granulado mais fino pelas seguintes diretivas apache mod_headers:
 
    ```
@@ -40,7 +40,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
    </LocationMatch>
    ```
 
-   Tenha cuidado ao definir cabeçalhos de controle de cache global ou aqueles que correspondem a um grande regex, de modo que eles não sejam aplicados ao conteúdo que você pretende manter privado. Considere o uso de várias diretivas para garantir que as regras sejam aplicadas de forma refinada. Dito isso, o AEM como Cloud Service removerá o cabeçalho do cache se detectar que ele foi aplicado ao que detecta como não armazenável em cache pelo dispatcher, conforme descrito na documentação do dispatcher. Para forçar o AEM a sempre aplicar os cabeçalhos de cache, é possível adicionar a opção **always** da seguinte maneira:
+   Tenha cuidado ao definir cabeçalhos de controle de cache global ou aqueles que correspondem a um grande regex, de modo que eles não sejam aplicados ao conteúdo que você pretende manter privado. Considere o uso de várias diretivas para garantir que as regras sejam aplicadas de forma refinada. Dito isso, AEM as a Cloud Service removerá o cabeçalho do cache se detectar que ele foi aplicado ao que detecta como não armazenável em cache pelo dispatcher, conforme descrito na documentação do dispatcher. Para forçar o AEM a sempre aplicar os cabeçalhos de cache, é possível adicionar a opção **always** da seguinte maneira:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -125,13 +125,13 @@ Quando a instância de publicação recebe uma nova versão de uma página ou at
 
 Em geral, não será necessário invalidar manualmente o conteúdo no dispatcher, mas é possível se necessário, conforme descrito abaixo.
 
-Antes de AEM como um Cloud Service, havia duas maneiras de invalidar o cache do dispatcher.
+Antes de AEM as a Cloud Service, havia duas maneiras de invalidar o cache do dispatcher.
 
 1. Chame o agente de replicação, especificando o agente de liberação do dispatcher de publicação
 2. Chamar diretamente a API `invalidate.cache` (por exemplo, `POST /dispatcher/invalidate.cache`)
 
-A abordagem da API `invalidate.cache` do dispatcher não será mais suportada, pois aborda apenas um nó específico do dispatcher. AEM como um Cloud Service opera no nível de serviço, não no nível de nó individual e, portanto, as instruções de invalidação na página [Invalidar páginas em cache de AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) não são mais válidas para AEM como Cloud Service .
-Em vez disso, o agente de limpeza de replicação deve ser usado. Isso pode ser feito usando a API de replicação. A documentação da API de replicação está disponível [aqui](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) e para obter um exemplo de limpeza do cache, consulte a [página de exemplo da API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) especificamente o exemplo `CustomStep` emitindo uma ação de replicação do tipo ATIVATE para todos os agentes disponíveis. O endpoint do agente de limpeza não é configurável, mas pré-configurado para apontar para o dispatcher, correspondente ao serviço de publicação que executa o agente de limpeza. O agente de limpeza normalmente pode ser acionado por eventos ou fluxos de trabalho OSGi.
+A abordagem da API `invalidate.cache` do dispatcher não será mais suportada, pois aborda apenas um nó específico do dispatcher. AEM as a Cloud Service opera no nível de serviço, não no nível de nó individual e, portanto, as instruções de invalidação na página [Invalidar páginas em cache de AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) não são mais válidas para AEM as a Cloud Service .
+Em vez disso, o agente de limpeza de replicação deve ser usado. Isso pode ser feito usando a API de replicação. A documentação da API de replicação está disponível [aqui](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html) e para obter um exemplo de limpeza do cache, consulte a [página de exemplo da API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) especificamente o exemplo `CustomStep` emitindo uma ação de replicação do tipo ATIVATE para todos os agentes disponíveis. O endpoint do agente de limpeza não é configurável, mas pré-configurado para apontar para o dispatcher, correspondente ao serviço de publicação que executa o agente de limpeza. O agente de limpeza normalmente pode ser acionado por eventos ou fluxos de trabalho OSGi.
 
 O diagrama apresentado abaixo ilustra isso.
 
@@ -143,15 +143,15 @@ A CDN gerenciada por Adobe respeita os TTLs e, portanto, não há necessidade de
 
 ## Bibliotecas do lado do cliente e consistência da versão {#content-consistency}
 
-As páginas são compostas de HTML, Javascript, CSS e imagens. Os clientes são incentivados a aproveitar o [Client-Side Library (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) para importar recursos Javascript e CSS para páginas HTML, levando em conta as dependências entre as bibliotecas JS.
+As páginas são compostas por HTML, Javascript, CSS e imagens. Os clientes são incentivados a aproveitar o [Client-Side Library (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) para importar recursos Javascript e CSS para páginas HTML, levando em conta as dependências entre as bibliotecas JS.
 
-A estrutura clientlibs fornece gerenciamento automático de versão, o que significa que os desenvolvedores podem fazer check-in de alterações nas bibliotecas JS no controle de origem e a versão mais recente será disponibilizada quando um cliente enviar o lançamento. Sem isso, os desenvolvedores precisariam alterar manualmente o HTML com referências à nova versão da biblioteca, o que é especialmente oneroso se muitos modelos HTML compartilharem a mesma biblioteca.
+A estrutura clientlibs fornece gerenciamento automático de versão, o que significa que os desenvolvedores podem fazer check-in de alterações nas bibliotecas JS no controle de origem e a versão mais recente será disponibilizada quando um cliente enviar o lançamento. Sem isso, os desenvolvedores precisariam alterar manualmente o HTML com referências à nova versão da biblioteca, que é especialmente onerosa se muitos templates de HTML compartilharem a mesma biblioteca.
 
-Quando as novas versões das bibliotecas são lançadas para produção, as páginas HTML de referência são atualizadas com novos links para essas versões atualizadas da biblioteca. Depois que o cache do navegador expirar para uma determinada página HTML, não há preocupação de que as bibliotecas antigas sejam carregadas do cache do navegador, pois a página atualizada (de AEM) agora é garantida para fazer referência às novas versões das bibliotecas. Em outras palavras, uma página HTML atualizada incluirá todas as versões mais recentes da biblioteca.
+Quando as novas versões das bibliotecas são lançadas para produção, as páginas de HTML de referência são atualizadas com novos links para essas versões atualizadas da biblioteca. Depois que o cache do navegador expirar para uma determinada HTML page, não há preocupação de que as bibliotecas antigas sejam carregadas do cache do navegador, pois a página atualizada (de AEM) agora é garantida para fazer referência às novas versões das bibliotecas. Em outras palavras, uma página de HTML atualizada incluirá todas as versões mais recentes da biblioteca.
 
 O mecanismo para isso é um hash serializado, que é anexado ao link da biblioteca do cliente, garantindo um url exclusivo com versão para o navegador armazenar em cache o CSS/JS. O hash serializado só é atualizado quando o conteúdo da biblioteca do cliente muda. Isso significa que, se ocorrerem atualizações não relacionadas (ou seja, sem alterações no css/js subjacente da biblioteca do cliente), mesmo com uma nova implantação, a referência permanecerá a mesma, garantindo menos interrupção do cache do navegador.
 
-### Ativação das versões do Longcache das bibliotecas do lado do cliente - AEM como um Início rápido do SDK do Cloud Service {#enabling-longcache}
+### Ativação das versões do Longcache das bibliotecas do lado do cliente - AEM Início rápido do SDK as a Cloud Service {#enabling-longcache}
 
 As inclusões padrão de clientlib em uma página HTML são semelhantes ao seguinte exemplo:
 
@@ -165,13 +165,13 @@ Quando o controle de versão restrito da clientlib é ativado, uma chave de hash
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.lc-7c8c5d228445ff48ab49a8e3c865c562-lc.css" type="text/css">
 ```
 
-O controle de versão clientlib restrito é ativado por padrão em todos os AEM como ambientes Cloud Service.
+O controle de versão clientlib restrito é ativado por padrão em todos os ambientes AEM as a Cloud Service.
 
 Para ativar o controle de versão restrito do clientlib no Quickstart do SDK local, execute as seguintes ações:
 
 1. Navegue até o Gerenciador de Configuração do OSGi `<host>/system/console/configMgr`
-1. Encontre a Configuração OSGi para o Gerenciador da Biblioteca HTML do Adobe Granite:
+1. Encontre a Configuração OSGi para o Gerenciador da Biblioteca de HTML do Adobe Granite:
    * Marque a caixa de seleção para ativar o controle de versão restrito
    * No campo rotulado Chave de cache do lado do cliente de longo prazo, insira o valor de /.*;hash
-1. Salve as alterações. Observe que não é necessário salvar essa configuração no controle de origem, pois o AEM como Cloud Service habilitará automaticamente essa configuração em ambientes de desenvolvimento, estágio e produção.
-1. Sempre que o conteúdo da biblioteca do cliente for alterado, uma nova chave hash será gerada e a referência HTML será atualizada.
+1. Salve as alterações. Observe que não é necessário salvar essa configuração no controle de origem, pois AEM as a Cloud Service habilitará automaticamente essa configuração em ambientes de desenvolvimento, estágio e produção.
+1. Sempre que o conteúdo da biblioteca do cliente for alterado, uma nova chave de hash será gerada e a referência de HTML será atualizada.

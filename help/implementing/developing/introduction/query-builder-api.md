@@ -2,9 +2,9 @@
 title: API do Construtor de consulta
 description: A funcionalidade do Construtor de consultas de compartilhamento de ativos é exposta por meio de uma API Java e uma API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 O Construtor de consultas oferece uma maneira fácil de consultar o repositório de conteúdo do AEM. A funcionalidade é exposta por meio de uma API Java e uma API REST. Este documento descreve essas APIs.
 
-O construtor de consultas do lado do servidor ([`QueryBuilder`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html)) aceitará uma descrição de consulta, criará e executará uma consulta XPath, filtrará opcionalmente o conjunto de resultados e também extrairá facetas, se desejado.
+O construtor de consultas do lado do servidor ([`QueryBuilder`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) aceitará uma descrição de consulta, criará e executará uma consulta XPath, filtrará opcionalmente o conjunto de resultados e também extrairá facetas, se desejado.
 
-A descrição da consulta é simplesmente um conjunto de predicados ([`Predicate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/Predicate.html)). Os exemplos incluem um predicado de texto completo, que corresponde à função `jcr:contains()` no XPath.
+A descrição da consulta é simplesmente um conjunto de predicados ([`Predicate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Os exemplos incluem um predicado de texto completo, que corresponde à função `jcr:contains()` no XPath.
 
-Para cada tipo de predicado, há um componente avaliador ([`PredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe como lidar com esse predicado específico para XPath, filtragem e extração de faceta. É muito fácil criar avaliadores personalizados, que são conectados por meio do tempo de execução do componente OSGi.
+Para cada tipo de predicado, há um componente avaliador ([`PredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe como lidar com esse predicado específico para XPath, filtragem e extração de faceta. É muito fácil criar avaliadores personalizados, que são conectados por meio do tempo de execução do componente OSGi.
 
 A REST API fornece acesso a exatamente os mesmos recursos por meio de HTTP, com respostas sendo enviadas em JSON.
 
@@ -125,7 +125,7 @@ Por padrão, o Construtor de consultas também forneceria o número de ocorrênc
 
 Por exemplo, a interface do usuário pode adaptar a seguinte abordagem:
 
-* Obter e exibir a contagem precisa do número total de ocorrências ([SearchResult.getTotalMatches()](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) ou total na resposta `querybuilder.json`) são menores ou iguais a 100;
+* Obter e exibir a contagem precisa do número total de ocorrências ([SearchResult.getTotalMatches()](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) ou total na resposta `querybuilder.json`) são menores ou iguais a 100;
 * Defina `guessTotal` como 100 ao fazer a chamada para o Construtor de consultas.
 
 * A resposta pode ter o seguinte resultado:
@@ -135,7 +135,7 @@ Por exemplo, a interface do usuário pode adaptar a seguinte abordagem:
 
 `guessTotal` também deve ser usada em casos em que a interface do usuário precisa usar a rolagem infinita, para evitar que o Construtor de consultas determine a contagem exata de ocorrências.
 
-### Encontre arquivos jar e ordene-os, primeiro mais recentes {#find-jar-files-and-order-them-newest-first}
+### Encontre arquivos jar e ordene-os, mais recentes primeiro {#find-jar-files-and-order-them-newest-first}
 
 `http://<host>:<port>/bin/querybuilder.json?type=nt:file&nodename=*.jar&orderby=@jcr:content/jcr:lastModified&orderby.sort=desc`
 
@@ -146,7 +146,7 @@ orderby=@jcr:content/jcr:lastModified
 orderby.sort=desc
 ```
 
-### Encontre todas as páginas e ordene-as pela última modificação {#find-all-pages-and-order-them-by-last-modified}
+### Localizar Todas as Páginas e Ordená-las pela Última Modificação {#find-all-pages-and-order-them-by-last-modified}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified`
 
@@ -155,7 +155,7 @@ type=cq:Page
 orderby=@jcr:content/cq:lastModified
 ```
 
-### Encontre todas as páginas e ordene-as pela última modificação, decrescente {#find-all-pages-and-order-them-by-last-modified-but-descending}
+### Encontrar todas as páginas e ordená-las pela última modificação, decrescente {#find-all-pages-and-order-them-by-last-modified-but-descending}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified&orderby.sort=desc`
 
@@ -165,7 +165,7 @@ orderby=@jcr:content/cq:lastModified
 orderby.sort=desc
 ```
 
-### Pesquisa de texto completo, Solicitada pela Pontuação {#fulltext-search-ordered-by-score}
+### Pesquisa de texto completo, ordenada por pontuação {#fulltext-search-ordered-by-score}
 
 `http://<host>:<port>/bin/querybuilder.json?fulltext=Management&orderby=@jcr:score&orderby.sort=desc`
 
@@ -238,7 +238,7 @@ property=jcr:content/cq:template
 property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 ```
 
-### Procurar várias propriedades {#search-for-multiple-properties}
+### Pesquisar por várias propriedades {#search-for-multiple-properties}
 
 Ao usar o predicado de propriedade várias vezes, é necessário adicionar os prefixos de número novamente:
 
@@ -252,7 +252,7 @@ type=cq:Page
 2_property.value=Cycling Tuscany
 ```
 
-### Procurar vários valores de propriedade {#search-for-multiple-property-values}
+### Pesquisar por vários valores de propriedade {#search-for-multiple-property-values}
 
 Para evitar grandes grupos quando quiser procurar vários valores de uma propriedade (`"A" or "B" or "C"`), você pode fornecer vários valores ao predicado `property`:
 
@@ -277,7 +277,7 @@ property.2_value=Ski Touring
 property.3_value=Whistler Mountain Biking
 ```
 
-## Refinando o que é retornado {#refining-what-is-returned}
+## Refinar o que é retornado {#refining-what-is-returned}
 
 Por padrão, o Servlet JSON do QueryBuilder retornará um conjunto padrão de propriedades para cada nó no resultado da pesquisa (por exemplo, caminho, nome, título etc.). Para obter controle sobre quais propriedades são retornadas, é possível fazer o seguinte:
 
@@ -347,9 +347,9 @@ p.nodedepth=5
 
 Para obter mais predicados, consulte a página [Referência de predicado do construtor de consultas](query-builder-predicates.md).
 
-Você também pode verificar o [Javadoc para as `PredicateEvaluator` classes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html). O Javadoc para essas classes contém a lista de propriedades que você pode usar.
+Você também pode verificar o [Javadoc para as `PredicateEvaluator` classes](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). O Javadoc para essas classes contém a lista de propriedades que você pode usar.
 
-O prefixo do nome da classe (por exemplo, `similar` em [`SimilarityPredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) é a *propriedade principal* da classe. Essa propriedade também é o nome do predicado a ser usado na query (em minúsculas).
+O prefixo do nome da classe (por exemplo, `similar` em [`SimilarityPredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) é a *propriedade principal* da classe. Essa propriedade também é o nome do predicado a ser usado na query (em minúsculas).
 
 Para essas propriedades principais, você pode encurtar a consulta e usar `similar=/content/en` em vez da variante totalmente qualificada `similar.similar=/content/en`. O formulário totalmente qualificado deve ser usado para todas as propriedades não principais de uma classe.
 
@@ -421,13 +421,13 @@ As consultas podem ser armazenadas no repositório para que você possa usá-las
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Ao usar o método [`QueryBuilder#storeQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-), o `Query` especificado é armazenado no repositório como um arquivo ou como uma propriedade de acordo com o valor do argumento `createFile`. O exemplo a seguir mostra como salvar um `Query` no caminho `/mypath/getfiles` como um arquivo:
+Ao usar o método [`QueryBuilder#storeQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-), o `Query` especificado é armazenado no repositório como um arquivo ou como uma propriedade de acordo com o valor do argumento `createFile`. O exemplo a seguir mostra como salvar um `Query` no caminho `/mypath/getfiles` como um arquivo:
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Qualquer query armazenada anteriormente pode ser carregada do repositório usando o método [`QueryBuilder#loadQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-):
+Qualquer query armazenada anteriormente pode ser carregada do repositório usando o método [`QueryBuilder#loadQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-):
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -453,7 +453,7 @@ ou, alternativamente, o servlet JSON do Query Builder em
 
 ### Depuração geral do Recommendations {#general-debugging-recommendations}
 
-### Obter XPath Explicável via Registro {#obtain-explain-able-xpath-via-logging}
+### Obter XPath explicável via registro {#obtain-explain-able-xpath-via-logging}
 
 Explicar **todas as** consultas durante o ciclo de desenvolvimento em relação ao conjunto de índice de destino.
 
@@ -521,10 +521,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Descrição** |
 |---|---|
-| [com.day.cq.search](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/package-summary.html) | Query Builder básico e API de consulta |
-| [com.day.cq.search.result](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/package-summary.html) | API de resultados |
-| [com.day.cq.search.facets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/package-summary.html) | Aspectos |
-| [com.day.cq.search.facets.buckets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Faixas (contidas em facetas) |
-| [com.day.cq.search.eval](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/package-summary.html) | Avaliadores de Predicados |
-| [com.day.cq.search.facets.extrators](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extratores Facetas (para avaliadores) |
-| [com.day.cq.search.writer](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/writer/package-summary.html) | Gravador de Ocorrência de Resultado JSON para o servlet do Construtor de Consultas (`/bin/querybuilder.json`) |
+| [com.day.cq.search](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | Query Builder básico e API de consulta |
+| [com.day.cq.search.result](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | API de resultados |
+| [com.day.cq.search.facets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | Aspectos |
+| [com.day.cq.search.facets.buckets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Faixas (contidas em facetas) |
+| [com.day.cq.search.eval](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | Avaliadores de Predicados |
+| [com.day.cq.search.facets.extrators](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extratores Facetas (para avaliadores) |
+| [com.day.cq.search.writer](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | Gravador de Ocorrência de Resultado JSON para o servlet do Construtor de Consultas (`/bin/querybuilder.json`) |

@@ -2,10 +2,10 @@
 title: Materiais de referência de API
 description: O AEM tem APIs abrangentes e eficientes que você pode aproveitar para o seu projeto de experiência digital.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ As seguintes APIs são fundamentais para a AEM.
 
 | API | Descrição |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | abstrações de produto, como páginas, ativos, fluxos de trabalho etc. |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | abstrações de produto, como páginas, ativos, fluxos de trabalho etc. |
 | [Interface do usuário do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pilha Open Web do Adobe, fornecendo vários componentes essenciais (Observe que os materiais de Granite 6.5 se aplicam ao AEMaaCS) |
 | [Interface do usuário do Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Estilo visual do Adobe para interfaces do usuário da nuvem, projetado para fornecer consistência à experiência do usuário |
 
@@ -44,7 +44,7 @@ AEM é criado nos quatro conjuntos principais de API do Java a seguir em ordem d
 
 | Prioridade | API | Descrição |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | abstrações de produto, como páginas, ativos, fluxos de trabalho etc. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | abstrações de produto, como páginas, ativos, fluxos de trabalho etc. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST e abstrações baseadas em recursos, como recursos, mapas de valor e solicitações HTTP. |
 | 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | abstrações de dados e conteúdo, como nó, propriedades e sessões. |
 | 4 | [Apache Felix](https://felix.apache.org/) | abstrações do contêiner de aplicativos OSGi, como serviços e componentes (OSGi). |

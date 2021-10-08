@@ -2,10 +2,10 @@
 title: Guia de migração para o Experience Manager as a Cloud Service para parceiros
 description: Guia de migração para o Experience Manager as a Cloud Service para parceiros
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,15 +14,15 @@ ht-degree: 10%
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration_overview"
 >title="Migração para o AEM as a Cloud Service"
->abstract="Descreve a abordagem em fases recomendada para clientes de transição de várias implantações de Experience Manager para o Experience Manager como Cloud Service e ajuda os clientes existentes a fornecer experiências conectadas e contínuas"
+>abstract="Descreve a abordagem em fases recomendada para clientes de transição de várias implantações de Experience Manager para o Experience Manager as a Cloud Service e ajuda os clientes existentes a fornecer experiências contínuas e conectadas"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en" text="Novidades e diferenças?"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en" text="Introdução ao AEM as a Cloud Service."
 
-O Adobe Experience Manager (AEM) as a Cloud Service oferece uma base reformulada para o Experience Manager, baseada em uma infraestrutura baseada em contêiner, desenvolvimento orientado por API e processo DevOps orientado, permitindo que os profissionais de marketing e desenvolvedores sempre se mantenham à frente da curva nas inovações de gerenciamento da experiência do cliente.
+O Adobe Experience Manager (AEM) as a Cloud Service oferece uma base reformulada para o Experience Manager, baseada em uma infraestrutura baseada em contêiner, desenvolvimento orientado por API e processo DevOps orientado, permitindo que os profissionais de marketing e desenvolvedores continuem sempre à frente da curva nas inovações de gerenciamento de experiência do cliente.
 
 O Cloud Service reúne recursos avançados e prontos para uso do Adobe Experience Manager com a agilidade da arquitetura moderna nativa em nuvem, permitindo que as marcas atendam às demandas sempre em evolução do consumidor.
 
-Esse único pager descreve a abordagem de fases recomendada para clientes de transição de várias implantações de Experience Manager para o Experience Manager como Cloud Service e ajuda os clientes existentes a fornecer experiências interconectadas e contínuas nessa plataforma moderna e projetada para o gerenciamento de experiências.
+Esse único pager descreve a abordagem de fases recomendada para clientes de transição de várias implantações de Experience Manager para o Experience Manager as a Cloud Service e ajuda os clientes existentes a fornecer experiências contínuas e conectadas nessa plataforma moderna e criada especificamente para o gerenciamento de experiências.
 
 <!-- It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
@@ -41,30 +41,30 @@ Esse único pager descreve a abordagem de fases recomendada para clientes de tra
 
 <br>
 
-## Jornada para desenvolvedores no Adobe Experience Manager as a Cloud Service {#developer-journey}
+## Jornada do desenvolvedor no Adobe Experience Manager as a Cloud Service {#developer-journey}
 
 ### Desenvolvimento
 
-Os fundamentos do desenvolvimento de código são semelhantes no Adobe Experience Manager as a Cloud Service, em comparação às soluções Adobe Experience Manager no local e Managed Services.
+Os fundamentos do desenvolvimento de código são semelhantes no Adobe Experience Manager as a Cloud Service em comparação às soluções Adobe Experience Manager no local e Managed Services.
 
-Os desenvolvedores gravam o código e o testam localmente, que é então enviado ao Adobe Experience Manager remoto como um ambiente Cloud Service.
+Os desenvolvedores gravam o código e o testam localmente, que é então enviado para ambientes remotos de Adobe Experience Manager as a Cloud Service.
 
-Consulte os recursos de autoajuda sobre implementação do Experience Manager as a Cloud Service para saber como personalizar o Experience Manager as a Cloud Service.
+Consulte os recursos de autoajuda sobre implementação do Experience Manager as a Cloud Service para saber como personalizar a implantação as a Cloud Service do Experience Manager.
 
 | Configuração de desenvolvimento local | O que você deve saber antes de começar |
 |-----------|------------|
-| <ol><li>Consulte a documentação do [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) para saber mais.</li><li>Assista [Instalar o SDK do Dispatcher](https://video.tv.adobe.com/v/30601) para entender como instalar o SDK do Dispatcher</li><li>Assista [Configurar o SDK do Dispatcher](https://video.tv.adobe.com/v/30602) para entender como configurar o SDK do Dispatcher</li><li>Consulte a documentação [Configuração de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up) para saber mais</li><li>Configuração do acesso ao Experience Manager [caminho](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)</li></ol> | <ol><li>[Princípios básicos de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[Diretrizes de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[Noções básicas sobre a estrutura do projeto do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)</li><li>[Digital Foundation Blueprint](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[Sobreposições](/help/implementing/developing/introduction/overlays.md)</li><li>[Referência da API do Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)</li></ol> |
+| <ol><li>Consulte a documentação do [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) para saber mais.</li><li>Assista [Instalar o SDK do Dispatcher](https://video.tv.adobe.com/v/30601) para entender como instalar o SDK do Dispatcher</li><li>Assista [Configurar o SDK do Dispatcher](https://video.tv.adobe.com/v/30602) para entender como configurar o SDK do Dispatcher</li><li>Consulte a documentação [Configuração de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up) para saber mais</li><li>Configuração do acesso ao Experience Manager [caminho](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)</li></ol> | <ol><li>[Princípios básicos de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[Diretrizes de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[Noções básicas sobre a estrutura do projeto do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)</li><li>[Digital Foundation Blueprint](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[Sobreposições](/help/implementing/developing/introduction/overlays.md)</li><li>[Referência da API do Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/)</li></ol> |
 
 >[!TIP]
 > Consulte tutorial sobre como [Desenvolver e implantar WKND no SDK do Experience Manager local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ### Implantação
 
-Os desenvolvedores gravam código e o testam localmente, que é então enviado para AEM remotos como um ambiente de Cloud Service.
+Os desenvolvedores gravam código e o testam localmente, que é então enviado para ambientes remotos AEM as a Cloud Service.
 
-O Cloud Manager, que era uma ferramenta opcional de entrega de conteúdo para o Managed Services, é necessário. Esse agora é o único mecanismo para implantar código no AEM como ambientes Cloud Service.
+O Cloud Manager, que era uma ferramenta opcional de entrega de conteúdo para o Managed Services, é necessário. Esse agora é o único mecanismo para implantar código em AEM ambientes as a Cloud Service.
 
-Consulte os recursos de autoajuda sobre como configurar e implantar no AEM como ambientes Cloud Service.
+Consulte os recursos de autoajuda sobre como configurar e implantar em ambientes AEM as a Cloud Service.
 
 1. [Configurar pipeline CM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager)
    * Pipeline de produção
@@ -104,11 +104,11 @@ Consulte os recursos de autoajuda sobre como configurar e implantar no AEM como 
 >[!CONTEXTUALHELP]
 >id="aemcloud_move_to_cloud"
 >title="Migração para o Adobe Experience Manager as a Cloud Service"
->abstract="Esse único pager descreve a abordagem de fases recomendada para clientes de transição de várias implantações de Experience Manager para o Experience Manager como Cloud Service e ajuda os clientes existentes a fornecer experiências interconectadas e contínuas nessa plataforma moderna e projetada para o gerenciamento de experiências."
+>abstract="Esse único pager descreve a abordagem de fases recomendada para clientes de transição de várias implantações de Experience Manager para o Experience Manager as a Cloud Service e ajuda os clientes existentes a fornecer experiências contínuas e conectadas nessa plataforma moderna e criada especificamente para o gerenciamento de experiências."
 
-**O Experience Manager as a Cloud Service oferece uma base de tecnologia escalável, segura e ágil para os Experience Manager Sites e Ativos, permitindo que os profissionais de marketing e de TI se concentrem em fornecer experiências impactantes em escala.**
+**O Experience Manager as a Cloud Service oferece uma base de tecnologia escalável, segura e ágil para Experience Manager Sites e Assets, permitindo que os profissionais de marketing e TI se concentrem em fornecer experiências impactantes em escala.**
 
-Com o Experience Manager como Cloud Service, suas equipes podem se concentrar em inovar em vez de planejar atualizações de produtos. Os novos recursos do produto são exaustivamente testados e entregues às suas equipes, sem interrupção, para que elas sempre tenham acesso ao aplicativo mais moderno e atual.
+Com o Experience Manager as a Cloud Service, suas equipes podem se concentrar em inovar em vez de planejar atualizações de produtos. Os novos recursos do produto são exaustivamente testados e entregues às suas equipes, sem interrupção, para que elas sempre tenham acesso ao aplicativo mais moderno e atual.
 
 A jornada de transição para o Cloud Service envolve três fases - Planejamento, Execução e Pós ativação.
 Para uma transição tranquila e bem-sucedida, você deve garantir um planejamento adequado e seguir as melhores práticas descritas neste Guia.
@@ -121,12 +121,12 @@ A figura abaixo mostra uma representação visual da jornada de transição reco
 
 ### Planejamento
 
-Antes de iniciar a jornada de transição para o Cloud Service, você deve se familiarizar com o Experience Manager como Cloud Service, revisar as alterações notáveis que foram feitas nele e também revisar os recursos que foram substituídos ou obsoletos.
+Antes de iniciar a jornada de transição para o Cloud Service, você deve se familiarizar com o Experience Manager as a Cloud Service e revisar as alterações notáveis que foram feitas nele, além de revisar os recursos que foram substituídos ou obsoletos.
 
 <table>
 <tr>
 <td>Detecção e avaliação de projetos</td>
-<td><ul><li>Consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en">Alterações importantes no Experience Manager como um Cloud Service</a> para entender as diferenças importantes entre o Adobe Experience Manager as a Cloud Service e o Experience Manager 6.x.</li><li>Consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=en#deprecated-features">Recursos obsoletos</a> para saber mais sobre os recursos e funcionalidades que foram marcados como obsoletos.</li><li>[Somente para migrações Cloud Service] Avaliação da prontidão do Cloud Service : Execute o <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration">Best Practices Analyzer(BPA)</a> no ambiente de origem </li><li>Conclua uma avaliação contra alterações notáveis e recursos obsoletos no Experience Manager CS</li></ul></td>
+<td><ul><li>Consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en">Alterações importantes no Experience Manager as a Cloud Service</a> para entender as diferenças importantes entre o Adobe Experience Manager as a Cloud Service e o Experience Manager 6.x.</li><li>Consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=en#deprecated-features">Recursos obsoletos</a> para saber mais sobre os recursos e funcionalidades que foram marcados como obsoletos.</li><li>[Somente para migrações Cloud Service] Avaliação da prontidão do Cloud Service : Execute o <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration">Best Practices Analyzer(BPA)</a> no ambiente de origem </li><li>Conclua uma avaliação contra alterações notáveis e recursos obsoletos no Experience Manager CS</li></ul></td>
 </tr>
 <tr>
 <td>Análise</td>
@@ -139,7 +139,7 @@ Antes de iniciar a jornada de transição para o Cloud Service, você deve se fa
 </table>
 
 >[!NOTE]
->O Relatório do Analisador de práticas recomendadas acelera o processo de estimativa do tempo e custo necessários para a transição para o AEM como um Cloud Service, fornecendo informações que de outra forma precisariam ser coletadas e avaliadas manualmente.
+>O Relatório do Analisador de Práticas Recomendadas acelera o processo de estimativa do tempo e custo necessários para a transição para o AEM as a Cloud Service, fornecendo informações que de outra forma precisariam ser coletadas e avaliadas manualmente.
 
 
 <br>
@@ -152,7 +152,7 @@ O Cloud Manager permite que as organizações autogerenciem o Experience Manager
 
 #### Migração de conteúdo
 
-1. [Ferramenta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration)  Transferência de conteúdo: usado para mover o conteúdo existente de uma instância de AEM de origem (no local ou AMS) para a instância de Cloud Service de AEM de destino.
+1. [Ferramenta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration)  Transferência de conteúdo: usado para mover o conteúdo existente de uma instância de AEM de origem (no local ou AMS) para a instância de destino do AEM Cloud Service.
 2. [Gerenciador](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#package-manager)  de Pacotes: usado para importar e exportar conteúdo mutável do repositório.
 
 
@@ -184,7 +184,7 @@ O Cloud Manager permite que as organizações autogerenciem o Experience Manager
 Na fase Pós-ativação, você deve garantir a limpeza de arquivos temporários, analisar práticas recomendadas para desenvolvimento contínuo e gerenciar logs.
 
 >[!TIP]
-> As ferramentas estão disponíveis para solucionar problemas de ambientes AEM as a Cloud Service
+> As ferramentas estão disponíveis para solucionar problemas AEM ambientes as a Cloud Service
 >1. [Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#aem-as-a-cloud-service-development-tools)
 >2. [CRX/DE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=en#debugging)
 >3. [Gerenciamento de logs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=en#using-cloud-manager)
@@ -196,7 +196,7 @@ Na fase Pós-ativação, você deve garantir a limpeza de arquivos temporários,
 
 | Avaliação | Refatoração | Modernização Experience Manager | Migração de conteúdo |
 |------------|-------------|---------------------------------|-------------------|
-| <ul><li>[Analisador de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Plug-in de experiência unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul> | <ul><li>[Modelos estáticos em modelos editáveis](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Configurações de design em políticas](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Componentes básicos em componentes principais](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[IU Clássica em IU ativada por toque](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[Ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement)</li></ul> |
+| <ul><li>[Analisador de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Plug-in de experiência unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul> | <ul><li>[Modelos estáticos em modelos editáveis](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Configurações de design em políticas](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Componentes de base para Componentes principais](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[IU Clássica em IU ativada por toque](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[Ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement)</li></ul> |
 
 >[!NOTE]
 > Para obter ajuda adicional, talvez você queira:
