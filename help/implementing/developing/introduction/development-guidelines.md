@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: c9ebeefa2a8707cbbf43df15cf90c10aadbba45f
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2059'
 ht-degree: 2%
 
 ---
@@ -190,10 +190,6 @@ Você deve enviar emails por meio de um servidor de email, em vez de diretamente
 O [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) deve ser usado e os emails devem ser enviados ao servidor de email indicado na solicitação de suporte, em vez de diretamente aos recipients.
 
 AEM as a Cloud Service requer que o correio seja enviado através da porta 465. Se um servidor de email não suportar a porta 465, a porta 587 poderá ser usada, desde que a opção TLS esteja habilitada.
-
->[!NOTE]
->
->Observe que o Adobe não suporta egresso SMTP sobre um endereço IP dedicado exclusivo.
 
 ### Configuração {#email-configuration}
 
