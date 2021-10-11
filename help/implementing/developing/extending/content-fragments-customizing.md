@@ -2,7 +2,7 @@
 title: Personalização e extensão de fragmentos de conteúdo
 description: Um fragmento de conteúdo estende um ativo padrão.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
+source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 2%
@@ -166,7 +166,7 @@ Os fragmentos de conteúdo podem ser integrados com:
 
 Você pode usar a API do lado do servidor para acessar os fragmentos de conteúdo; consulte:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -176,7 +176,7 @@ Você pode usar a API do lado do servidor para acessar os fragmentos de conteúd
 
 As três interfaces a seguir podem servir como pontos de entrada:
 
-* **Fragmento de conteúdo**  ([ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Fragmento de conteúdo**  ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    Essa interface permite que você trabalhe com um fragmento de conteúdo de forma abstrata.
 
@@ -202,7 +202,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
 
    As interfaces que representam os elementos principais de um fragmento são:
 
-   * **Elemento de conteúdo**  ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Elemento de conteúdo**  ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Obter dados básicos (nome, título, descrição)
       * Obter/definir conteúdo
@@ -214,7 +214,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
          * Remover variações (consulte [Avisos](#caveats))
          * Acesse os dados de variação (consulte `ContentVariation`)
       * Atalho para resolver variações (aplicando alguma lógica de fallback adicional específica da implementação se a variação especificada não estiver disponível para um elemento)
-   * **Variação de conteúdo**  ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Variação de conteúdo**  ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Obter dados básicos (nome, título, descrição)
       * Obter/definir conteúdo
@@ -244,9 +244,9 @@ Podem ser adaptadas as seguintes condições:
 
 * `ContentElement` pode ser adaptado para:
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - para aceder às informações estruturais do elemento.
+   * [`ElementTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - para aceder às informações estruturais do elemento.
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` pode ser adaptado para:
 
@@ -284,7 +284,7 @@ Consulte o link a seguir:
 >
 >Considere esta informação de base. Você não deve alterar nada aqui (pois está marcado como uma *área privada* no repositório), mas pode ajudar em alguns casos a entender como as coisas funcionam sob o capô.
 
-A edição de um fragmento de conteúdo, que pode abranger várias exibições (= páginas HTML), é atômica. Como esses recursos atômicos de edição de várias exibições não são um conceito típico de AEM, os fragmentos de conteúdo usam o que é chamado de *sessão de edição*.
+A edição de um fragmento de conteúdo, que pode abranger várias exibições (= HTML pages), é atômica. Como esses recursos atômicos de edição de várias exibições não são um conceito típico de AEM, os fragmentos de conteúdo usam o que é chamado de *sessão de edição*.
 
 Uma sessão de edição é iniciada quando o usuário abre um fragmento de conteúdo no editor. A sessão de edição é concluída quando o usuário deixa o editor selecionando **Salvar** ou **Cancelar**.
 
