@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: d8f24c10724a09acf911f6a80a87af32e4685ad5
+source-git-commit: 126035369d927a1fc9a6dc70e44a96f22ba16dbf
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -53,9 +53,7 @@ A Media Library abrange os seguintes casos de uso:
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Static renditions
-* Projects, tasks authoring
-* Activity stream (timeline)
-* Comments and annotation
+
 -->
 
 Para usar a funcionalidade Media Library, você pode usar a interface do usuário padrão [!DNL Experience Manager]. O Media Library faz parte da instalação [!DNL Experience Manager Sites] e nenhuma interface ou complemento separado é necessário. Usando a interface existente, os usuários do Media Library têm direito a realizar as seguintes tarefas:
@@ -78,6 +76,9 @@ Para usar a funcionalidade Media Library, você pode usar a interface do usuári
 * Personalize e estenda a interface do usuário do gerenciamento de ativos.
 * Acesse o Query Builder (API) para estender a funcionalidade de pesquisa.
 * Crie tags estáticas.
+* Crie projetos e tarefas.
+* Fluxo de atividade (linha do tempo).
+* Comentários e anotações.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
@@ -88,7 +89,7 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 >
 >Muitos casos de uso avançados do DAM são cumpridos por [!DNL Experience Manager Assets]. A licença da Media Library permite atender somente aos casos de uso listados usando o Media Library. Se um caso de uso não estiver listado, não o use com a licença do Media Library. Em caso de dúvidas, entre em contato com o Suporte ao cliente.
 
-Observe que não é possível usar tags inteligentes, link [!DNL Asset], seletor [!DNL Asset], marcação em massa, modificação de workflows de ativos sem licença [!DNL Assets].
+Observe que você não pode usar tags inteligentes, link [!DNL Asset], seletor [!DNL Asset], marcação em massa, modificar workflows do ativo ou interface de usuário padrão [!DNL Adobe Experience Manager] para acessar o Media Library sem [!DNL Assets] licença.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
