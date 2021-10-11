@@ -3,7 +3,7 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
+source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 3%
@@ -210,14 +210,13 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.6.0 é 4 de o
 
 ### Data de lançamento {#release-date-bpa-latest}
 
-A data de lançamento do Analisador de práticas recomendadas v2.1.18 é 2 de setembro de 2021.
+A data de lançamento do Analisador de práticas recomendadas v2.1.20 é 5 de outubro de 2021.
 
 ### Novidades {#what-is-new}
 
-* Capacidade de detectar e relatar a contagem total de nós.
+* Capacidade de detectar e relatar o comprimento do nome do nó.
 
-* Capacidade de detectar e relatar no tipo e tamanho do armazenamento do nó.
+* Capacidade de detectar e relatar o tamanho total do Índice.
 
-### Correções de erros {#bug-fixes-bpa}
+* Capacidade de detectar e gerar relatórios sobre ativos que não possuem sua representação original.
 
-* O BPA detectou falsamente a presença da Commerce Integration Framework.
