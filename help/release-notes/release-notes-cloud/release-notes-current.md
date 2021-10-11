@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
+source-git-commit: b71c624e3662129a6a081d095975ee86b60578ac
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1486'
 ht-degree: 3%
 
 ---
@@ -197,7 +197,7 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.6.0 é 4 de o
 
 ### Novidades {#what-is-new-ctt}
 
-* Mapeamento de usuário aprimorado com uma experiência de usuário simplificada, incluindo os seguintes recursos listados abaixo. Para obter mais detalhes, consulte [Usar a ferramenta de mapeamento de usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+* Mapeamento de usuário aprimorado com uma experiência de usuário simplificada, incluindo os seguintes recursos listados abaixo. Para obter mais detalhes, consulte [Usar a ferramenta de mapeamento de usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
    * Testar conexão com a API de gerenciamento de usuários antes de executar o Mapeamento de usuários
    * Ignore erros com cuidado e continue com a atividade de Mapeamento de usuários
    * O Mapeamento de usuário não falha mais se o Token de acesso expirar (após 24 horas). O Mapeamento de Usuário pode ser executado novamente de onde parou pela última vez.
