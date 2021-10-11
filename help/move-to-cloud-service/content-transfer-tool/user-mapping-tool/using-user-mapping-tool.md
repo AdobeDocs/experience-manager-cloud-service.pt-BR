@@ -1,9 +1,9 @@
 ---
 title: Usar a ferramenta Mapeamento de usuários
 description: Usar a ferramenta Mapeamento de usuários
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 2f763f774b21b0c3b43d61964dda2d2ae596161a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '596'
 ht-degree: 3%
 
 ---
@@ -31,20 +31,25 @@ Siga as etapas abaixo para configurar isso:
 
 A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferência de conteúdo. Você pode baixar a ferramenta Transferência de conteúdo no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Para obter mais detalhes sobre a versão mais recente, consulte as [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-1. Selecione o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> **Mapeamento de usuários**.
+1. Selecione o Adobe Experience Manager e navegue até Ferramentas -> **Operações** -> **Migração de Conteúdo**.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing1.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
+
+1. Clique no cartão **Mapeamento de Usuário**.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
 
 1. Clique em **Criar configuração de mapeamento de usuário**.
 
    >[!NOTE]
    >Se você ignorar esta etapa, o mapeamento de usuários e grupos será ignorado durante a fase de Extração.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing2.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
    Preencha os campos em **User Management API Configuration**, conforme descrito abaixo.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing3.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
+
 
    * **ID** da organização: Insira a ID da organização do Sistema Adobe Identity Management (IMS) para a organização na qual os usuários estão sendo migrados.
 
@@ -59,6 +64,8 @@ A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferê
       >O Token de acesso expira a cada 24 horas e um novo precisa ser criado. Para criar um novo token, volte para [Console do Desenvolvedor do Adobe](https://console.adobe.io), escolha seu projeto, clique em **API do Gerenciamento de Usuário** e cole a mesma chave privada na caixa.
 
 1. Depois de preencher os campos, clique em **Testar configuração** para testar a conexão com o serviço de API de Gerenciamento de Usuário. Se a conexão for bem-sucedida, você poderá clicar em **Save** para salvar a configuração.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
 1. Depois de salvar a configuração, selecione a configuração e clique em **Iniciar mapeamento de usuários**.
 
