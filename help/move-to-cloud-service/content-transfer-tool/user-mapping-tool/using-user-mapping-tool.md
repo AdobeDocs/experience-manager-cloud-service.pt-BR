@@ -1,7 +1,7 @@
 ---
 title: Usar a ferramenta Mapeamento de usuários
 description: Usar a ferramenta Mapeamento de usuários
-source-git-commit: 6ab32a952a53eed612192ee8359373087e6cf624
+source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 2%
@@ -79,12 +79,12 @@ A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferê
    >* Quando o Mapeamento de usuários for concluído, você poderá navegar de volta para a página Migração de conteúdo usando a navegação estrutural. O cartão Mapeamento de usuário exibe o status e o carimbo de data e hora. Clique em **Transferência de conteúdo** para criar um Conjunto de migração para executar a extração. Consulte [Execução da ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) para obter mais detalhes.
 
 
-### Retomando o processo de mapeamento de usuários {#resume-user-mapping}
+### Retomando o processo de mapeamento de usuários {#resume-user-mapping-process}
 
 Se o processo de Mapeamento de Usuário for interrompido por um dos seguintes motivos:
 
 * O usuário selecionou **Parar o mapeamento de usuários**
 * o token de acesso expirado durante o processo ou
-* outra razão.
+* alguma outra razão
 
 O progresso é salvo de onde o processo parou. Revise o log de Mapeamento de Usuário para verificar o progresso salvo. Clique novamente no botão **Iniciar mapeamento de usuários** para retomar de onde parou. Antes de reiniciar, verifique se o token de acesso ainda é válido ou foi atualizado.
