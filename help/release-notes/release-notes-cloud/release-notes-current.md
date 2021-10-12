@@ -3,10 +3,10 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b71c624e3662129a6a081d095975ee86b60578ac
+source-git-commit: 8382dc404ed8d5525e466de8ca79d1db70ce93f5
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 3%
+source-wordcount: '1508'
+ht-degree: 2%
 
 ---
 
@@ -197,12 +197,12 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.6.0 é 4 de o
 
 ### Novidades {#what-is-new-ctt}
 
-* Mapeamento de usuário aprimorado com uma experiência de usuário simplificada, incluindo os seguintes recursos listados abaixo. Para obter mais detalhes, consulte [Usar a ferramenta de mapeamento de usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+* Ferramenta de mapeamento de usuários aprimorada com uma experiência simplificada do usuário, incluindo os seguintes recursos listados abaixo. Para obter mais detalhes, consulte [Usar a ferramenta de mapeamento de usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
    * Testar conexão com a API de gerenciamento de usuários antes de executar o Mapeamento de usuários
    * Ignore erros com cuidado e continue com a atividade de Mapeamento de usuários
-   * O Mapeamento de usuário não falha mais se o Token de acesso expirar (após 24 horas). O Mapeamento de Usuário pode ser executado novamente de onde parou pela última vez.
+   * O Mapeamento de usuário não falha mais se **Token de acesso** expirar após 24 horas. O Mapeamento de Usuário pode ser executado novamente de onde parou pela última vez.
 
-* Para aumentar a robustez da CTT, o conteúdo pode ser assimilado na instância do autor ou na instância de publicação de cada vez.
+* Para aumentar a robustez da ferramenta Transferência de conteúdo, o conteúdo pode ser assimilado na instância de autor ou de publicação de cada vez. Consulte [Usar a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en) para obter mais detalhes.
 
 * Quando as versões são incluídas, o caminho `/var/audit` é incluído automaticamente para migrar eventos de auditoria.
 
