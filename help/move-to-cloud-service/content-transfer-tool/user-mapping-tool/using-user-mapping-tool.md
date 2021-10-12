@@ -1,10 +1,10 @@
 ---
 title: Usar a ferramenta Mapeamento de usuários
 description: Usar a ferramenta Mapeamento de usuários
-source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
+source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -71,6 +71,10 @@ A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferê
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
+1. Clique em **Iniciar** na caixa de diálogo para iniciar o processo de Mapeamento de Usuário.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
 1. Depois que o Mapeamento do usuário for concluído, clique em **Resultados** para exibir o resumo.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
@@ -87,4 +91,22 @@ Se o processo de Mapeamento de Usuário for interrompido por um dos seguintes mo
 * o token de acesso expirado durante o processo ou
 * alguma outra razão
 
-O progresso é salvo de onde o processo parou. Revise o log de Mapeamento de Usuário para verificar o progresso salvo. Clique novamente no botão **Iniciar mapeamento de usuários** para retomar de onde parou. Antes de reiniciar, verifique se o token de acesso ainda é válido ou foi atualizado.
+   >[!NOTE]
+   >O progresso é salvo de onde o processo parou.
+
+Siga as etapas abaixo para retomar o processo de mapeamento do usuário:
+
+1. Clique em **Exibir Log** para revisar o log de Mapeamento de Usuário para verificar o progresso salvo.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+
+1. Clique novamente no botão **Iniciar mapeamento de usuários** para retomar de onde parou.
+
+   >[!NOTE]
+   >Antes de reiniciar, verifique se o token de acesso ainda é válido ou foi atualizado.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+
+1. Clique em **Iniciar** na caixa de diálogo para retomar o processo de Mapeamento de Usuário.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
