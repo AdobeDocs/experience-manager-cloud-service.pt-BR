@@ -1,21 +1,21 @@
 ---
-title: Perguntas frequentes sobre o Screens as a Cloud Service
-description: Esta página descreve o Screens como perguntas frequentes do Cloud Service.
-source-git-commit: 7a26bb50a8b95a2358912249e21daeb9c5e9c1a3
+title: Perguntas frequentes as a Cloud Service do Screens
+description: Esta página descreve as perguntas frequentes as a Cloud Service do Screens.
+exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
+source-git-commit: cf091056bdb96917a6d22bf1197d9b34ebbf9610
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
+# Perguntas frequentes as a Cloud Service do Screens {#screens-cloud-faqs}
 
-# Perguntas frequentes sobre o Screens as a Cloud Service {#screens-cloud-faqs}
+A seção a seguir fornece respostas às Perguntas frequentes relacionadas ao projeto do Screens as a Cloud Service.
 
-A seção a seguir fornece respostas às Perguntas frequentes relacionadas ao Screens as a Cloud Service.
+## O que devo fazer se o reprodutor do AEM Screens que aponta para o Screens as a Cloud Service não selecionar as clientlibs personalizadas com o formato /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
 
-## O que devo fazer se o reprodutor do AEM Screens que aponta para o Screens como um Cloud Service não escolher as clientlibs personalizadas com o formato /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-81364378974b0f89d686d9591526d63-lc.min.css?
-
-O AEM as a Cloud Service altera as chaves de cache longas com cada implantação. O AEM Screens gera os caches offline quando o conteúdo é modificado, em vez de quando o Cloud Manager executa a implantação. Essas chaves de cache longas nos manifestos são inválidas, portanto, o reprodutor falha ao baixar esses *clientlibs*.
+AEM as a Cloud Service alterações nas chaves de cache longas com cada implantação. O AEM Screens gera os caches offline quando o conteúdo é modificado, em vez de quando o Cloud Manager executa a implantação. Essas chaves de cache longas nos manifestos são inválidas, portanto, o reprodutor falha ao baixar esses *clientlibs*.
 
 Usar `longCacheKey="none"` em sua pasta `clientlib` remove completamente as chaves de cache longas para esses *clientlibs*.
 
@@ -35,3 +35,8 @@ scripts=[
         end
         "] 
 ```
+
+## Quais formatos de imagem são recomendados para a representação contínua de imagens em canais as a Cloud Service do AEM Screens?{#screens-cloud-image-format}
+
+É recomendável usar imagens no formato `.png` e `.jpeg` em um canal as a Cloud Service do AEM Screens, para obter a melhor experiência em sinalização digital.
+As imagens no formato `*.tif` (Tag Image File format) não são suportadas no AEM Screens as a Cloud Service. Caso um canal tenha esse formato de imagem, então, no lado do reprodutor, a imagem não será renderizada.
