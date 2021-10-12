@@ -1,9 +1,9 @@
 ---
 title: Usar a ferramenta Mapeamento de usuários
 description: Usar a ferramenta Mapeamento de usuários
-source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
+source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '734'
 ht-degree: 3%
 
 ---
@@ -74,6 +74,11 @@ A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferê
 1. Clique em **Iniciar** na caixa de diálogo para iniciar o processo de Mapeamento de Usuário.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   Ele exibe o **Status** como **EXECUTANDO**.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
+
 
 1. Depois que o Mapeamento do usuário for concluído, clique em **Resultados** para exibir o resumo.
 
