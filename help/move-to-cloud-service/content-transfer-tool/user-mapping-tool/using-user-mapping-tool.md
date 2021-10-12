@@ -1,9 +1,9 @@
 ---
 title: Usar a ferramenta Mapeamento de usuários
 description: Usar a ferramenta Mapeamento de usuários
-source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
+source-git-commit: 09ab81364f0fd45ddedcd5f918e6ab5a4bdd1f0d
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '752'
 ht-degree: 3%
 
 ---
@@ -99,7 +99,7 @@ Se o processo de Mapeamento de Usuário for interrompido por um dos seguintes mo
    >[!NOTE]
    >O progresso é salvo de onde o processo parou.
 
-Siga as etapas abaixo para retomar o processo de mapeamento do usuário:
+Siga as etapas abaixo para retomar o processo de Mapeamento de usuários:
 
 1. Clique em **Exibir Log** para revisar o log de Mapeamento de Usuário para verificar o progresso salvo.
 
@@ -115,3 +115,7 @@ Siga as etapas abaixo para retomar o processo de mapeamento do usuário:
 1. Clique em **Iniciar** na caixa de diálogo para retomar o processo de Mapeamento de Usuário.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   Quando o processo Mapeamento de usuários for concluído, você exibirá o **Status** como **FINISHED** para essa configuração específica.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
