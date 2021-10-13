@@ -2,9 +2,9 @@
 title: Pré-requisitos para a ferramenta Transferência de conteúdo
 description: Pré-requisitos para a ferramenta Transferência de conteúdo
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '575'
 ht-degree: 1%
 
 ---
@@ -34,4 +34,4 @@ Revise todas as considerações listadas abaixo:
 
 ## O que vem a seguir {#whats-next}
 
-Depois de revisar os pré-requisitos e determinar se você pode usar a ferramenta Transferência de conteúdo no projeto de migração, consulte [Práticas recomendadas e considerações adicionais](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) ao usar a ferramenta Transferência de conteúdo.
+Depois de revisar os pré-requisitos e determinar se é possível usar a ferramenta Transferência de conteúdo no projeto de migração, consulte [Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en) ao usar a ferramenta Transferência de conteúdo.

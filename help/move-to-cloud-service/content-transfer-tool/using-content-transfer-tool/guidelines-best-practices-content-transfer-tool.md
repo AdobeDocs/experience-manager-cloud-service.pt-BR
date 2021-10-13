@@ -1,15 +1,15 @@
 ---
-title: Diretriz e práticas recomendadas para usar a ferramenta Transferência de conteúdo
-description: Diretriz e práticas recomendadas para usar a ferramenta Transferência de conteúdo
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
+description: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 26%
+source-wordcount: '1503'
+ht-degree: 25%
 
 ---
 
 
-# Diretriz e práticas recomendadas para usar a ferramenta Transferência de conteúdo {#guidelines}
+# Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo {#guidelines}
 
 ## Diretrizes e práticas recomendadas {#best-practices}
 
@@ -81,3 +81,7 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 * Se você pretende fazer atualizações adicionais, é essencial que a estrutura de conteúdo do conteúdo existente não seja alterada do momento em que a extração inicial é levada ao momento em que a extração complementar é executada. Os complementos não podem ser executados em conteúdo cuja estrutura foi alterada desde a extração inicial. Certifique-se de restringir isso durante o processo de migração.
 
 * Se você pretende incluir versões como parte de um conjunto de migração e estiver executando atualizações adicionais com `wipe=false`, você deve desativar a limpeza de versão devido a uma limitação atual na ferramenta Transferência de conteúdo. Se você preferir manter a limpeza de versão ativada e estiver executando os upups em um conjunto de migração, você deve executar a assimilação como `wipe=true`.
+
+## O que vem a seguir {#whats-next}
+
+Depois de conhecer as diretrizes, as práticas recomendadas e as considerações importantes para o uso da ferramenta Transferência de conteúdo, você estará pronto para instalar e usar a ferramenta, começando pela criação de um conjunto de migração. Consulte [Introdução à transferência de conteúdo para](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) para saber mais.
