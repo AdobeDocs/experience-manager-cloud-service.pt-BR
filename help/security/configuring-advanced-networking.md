@@ -1,7 +1,7 @@
 ---
 title: Configuração de redes avançadas para AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou endereço IP de saída dedicado para AEM as a Cloud Service
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 1c9e83a0351d51d96998f7126f0ab76db56144ce
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 1%
@@ -81,17 +81,15 @@ O tráfego Http ou https que vai para destinos por meio das portas 80 ou 443 pas
 Por exemplo, este é um exemplo de código para enviar uma solicitação para `www.example.com:8443`:
 
 ```java
-HttpsHost target = new HttpsHost("example.com", 8443, "https");
+String url = "www.example.com:8443"
+var proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
+var proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+HttpClient client = HttpClient.newBuilder()
+      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
+      .build();
  
-HttpHost proxy = new HttpHost(System.getenv("AEM_HTTPS_PROXY_HOST"),
-                              Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT")),
-                              "https");
- 
-RequestConfig config = RequestConfig.custom().setProxy(proxy).build();
- 
-HttpGet request = new HttpGet("/");
-request.setConfig(config);
-CloseableHttpResponse response = httpclient.execute(target, request);
+HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 ```
 
 Se estiver usando bibliotecas de rede Java não padrão, configure proxies usando as propriedades acima para todo o tráfego.
