@@ -2,9 +2,9 @@
 title: Verificando o status do nome de domínio
 description: Verificando o status do nome de domínio
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
+source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ AndamentoVerificação em andamento. Normalmente, esse status é visualizado dep
 *verifique novamente* ícone ao lado do status .
 
 * **Verificado se a verificação**
-FailedTXT da implantação foi bem-sucedida. No entanto, a implantação da CDN falhou. Um representante da Adobe será notificado automaticamente.
+FailedTXT da implantação foi bem-sucedida. No entanto, a implantação da CDN falhou. Entre em contato com o representante do Adobe.
 
 * **Domínio verificado e**
 implantado Este status indica que seu nome de domínio personalizado está pronto para ser usado.
