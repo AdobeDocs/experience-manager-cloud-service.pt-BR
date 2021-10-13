@@ -5,10 +5,10 @@ breadcrumb-title: Guia de migração
 user-guide-description: Entenda a jornada de transição para o Cloud Service.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: a309e668cb99231b274cf933c8392df873f33a81
+source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 41%
+source-wordcount: '177'
+ht-degree: 40%
 
 ---
 
@@ -38,8 +38,12 @@ ht-degree: 41%
       + [Visão geral](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
       + [Pré-requisitos para a ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
-      + [Introdução à ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/gettting-started-content-transfer-tool.md)
+      + [Introdução à ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [Lidar com grandes repositórios de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+      + [Extrair conteúdo da origem na ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+      + [Inserção de conteúdo no Target na ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [Visualização de logs para um conjunto de migração](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
+      + [Exclusão de um conjunto de migração](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Usar a ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + Ferramenta de Mapeamento de Usuário {#user-mapping-tool}
          + [Visão geral](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
