@@ -2,9 +2,9 @@
 title: Lidar com grandes repositórios de conteúdo
 description: Esta seção descreve o tratamento de repositórios de conteúdo grande
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
@@ -174,3 +174,7 @@ Final Job Status: CompletedWithSkipped
  
 *************** Completed AzCopy pre-copy phase ***************
 ```
+
+## O que vem a seguir {#whats-next}
+
+Depois de aprender a lidar com repositórios de conteúdo grande para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo para mover o conteúdo para AEM as a Cloud Service, agora você está pronto para aprender o Processo de extração na ferramenta Transferência de conteúdo. Consulte [Extraindo conteúdo da origem na ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) para saber como extrair o conjunto de migração da ferramenta Transferência de conteúdo.

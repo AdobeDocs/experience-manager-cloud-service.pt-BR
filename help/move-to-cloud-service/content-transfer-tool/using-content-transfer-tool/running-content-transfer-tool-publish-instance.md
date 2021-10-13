@@ -1,9 +1,9 @@
 ---
 title: Execução da ferramenta Transferência de conteúdo em uma instância de publicação
 description: Execução da ferramenta Transferência de conteúdo em uma instância de publicação
-source-git-commit: 27e68cd282414da4cc23c3ba276b0fb3c330d49c
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -13,10 +13,10 @@ ht-degree: 1%
 
 ## Introdução {#introduction}
 
-A Ferramenta de transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou de Publicação ou em ambos. Recomenda-se que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância de Autor de origem para mover o conteúdo para a instância de Autor de destino e, de forma semelhante, instale a CTT na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino.
+A Ferramenta de transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração será assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou de Publicação ou em ambos.
 
 >[!NOTE]
->Recomenda-se que, ao mover o conteúdo para uma instância de Publicação, a ferramenta Transferência de conteúdo seja instalada na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Consulte a seção [Abordagem recomendada](#recommended-approach) abaixo para obter mais detalhes.
+>Recomenda-se que, ao mover o conteúdo para uma instância de Produção, a Ferramenta de Transferência de Conteúdo seja instalada na instância de Autor de origem para mover o conteúdo para a instância de Autor de destino e, de forma semelhante, instale a Ferramenta de Transferência de Conteúdo na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Consulte a seção [Abordagem recomendada](#recommended-approach) abaixo para obter mais detalhes.
 
 ## Abordagem recomendada {#recommended-approach}
 

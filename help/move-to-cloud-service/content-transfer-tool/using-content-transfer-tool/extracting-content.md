@@ -1,10 +1,10 @@
 ---
 title: Extrair conteúdo da origem na ferramenta Transferência de conteúdo
 description: Extrair conteúdo da origem na ferramenta Transferência de conteúdo
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 53%
+source-wordcount: '526'
+ht-degree: 48%
 
 ---
 
@@ -60,3 +60,7 @@ Quando o processo de extração estiver concluído, você poderá transferir o c
    >Você deve desativar a opção **Substituir containercontêiner de preparação durante a extração**.
    >
    >![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
+## O que vem a seguir {#whats-next}
+
+Depois de aprender a extrair conteúdo da origem na ferramenta Transferência de conteúdo, você estará pronto para aprender o Processo de assimilação na ferramenta Transferência de conteúdo. Consulte [Inserir conteúdo no Target na ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para saber como assimilar seu conjunto de migração na ferramenta Transferência de conteúdo.
