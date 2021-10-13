@@ -1,9 +1,9 @@
 ---
 title: Execução da ferramenta Transferência de conteúdo em uma instância de publicação
 description: Execução da ferramenta Transferência de conteúdo em uma instância de publicação
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '270'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ A Ferramenta de transferência de conteúdo (CTT) não executa nenhum tipo de an
 
 Siga a abordagem recomendada conforme descrito abaixo:
 
-* Use a mesma versão da CTT usada na instância do Autor.
+* Use a mesma versão da ferramenta Transferência de conteúdo que foi usada na instância do autor.
 
 * Somente um único nó de publicação precisa ser migrado. Ele deve ser removido do balanceador de carga antes de iniciar a extração.
 
-* Ao criar o conjunto de migração, use o URL do ambiente AEMaaCS de autor.
+* Ao criar o conjunto de migração, use o URL do autor AEM ambiente as a Cloud Service.
 
 * Durante a assimilação para publicar, o nível de publicação NÃO será dimensionado para baixo (diferente do autor). Como precaução, evite quaisquer operações de gravação iniciadas pelo usuário, como:
 

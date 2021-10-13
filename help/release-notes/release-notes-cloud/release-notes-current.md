@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
+source-git-commit: 8814627c3144d657b564fee839ace8e4bdcf6f78
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -208,7 +208,7 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.6.0 é 4 de o
    * Ignore erros com cuidado e continue com a atividade de Mapeamento de usuários
    * O Mapeamento de usuário não falha mais se **Token de acesso** expirar após 24 horas. O Mapeamento de Usuário pode ser executado novamente de onde parou pela última vez.
 
-* Para aumentar a robustez da ferramenta Transferência de conteúdo, o conteúdo pode ser assimilado na instância de autor ou de publicação de cada vez. Consulte [Usar a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en) para obter mais detalhes.
+* Para aumentar a robustez da ferramenta Transferência de conteúdo, o conteúdo pode ser assimilado na instância de autor ou de publicação de cada vez. Consulte [Introdução à ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) para obter mais detalhes.
 
 * Quando as versões são incluídas, o caminho `/var/audit` é incluído automaticamente para migrar eventos de auditoria.
 
