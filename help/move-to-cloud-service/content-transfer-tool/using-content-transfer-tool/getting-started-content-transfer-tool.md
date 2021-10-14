@@ -2,10 +2,10 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
+source-git-commit: 1083f3913bdf0ff64f50f6e731e4fc2804a3036e
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 32%
+source-wordcount: '742'
+ht-degree: 33%
 
 ---
 
@@ -79,13 +79,11 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
 
       1. **Incluir versão**: selecione conforme necessário. Quando as versões são incluídas, o caminho `/var/audit` é incluído automaticamente para migrar eventos de auditoria.
 
-      ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
-      >[!NOTE]
-      >Se você pretende incluir versões como parte de um conjunto de migração e estiver executando atualizações adicionais com `wipe=false`, você deve desativar a limpeza de versão devido a uma limitação atual na ferramenta Transferência de conteúdo. Se você preferir manter a limpeza de versão ativada e estiver executando os upups em um conjunto de migração, você deve executar a assimilação como `wipe=true`.
+         >[!NOTE]
+         >Se você pretende incluir versões como parte de um conjunto de migração e estiver executando atualizações adicionais com `wipe=false`, você deve desativar a limpeza de versão devido a uma limitação atual na ferramenta Transferência de conteúdo. Se você preferir manter a limpeza de versão ativada e estiver executando os upups em um conjunto de migração, você deve executar a assimilação como `wipe=true`.
 
-      1. **Incluir mapeamento de usuários e grupos** do IMS: Selecione a opção para incluir o mapeamento de usuários e grupos do IMS.
-Consulte [Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obter mais detalhes.
 
       1. **Caminhos a serem incluídos**: use o navegador de caminhos para selecionar os caminhos que precisam ser migrados. O seletor de caminho aceita entrada digitando ou por seleção.
 
@@ -95,8 +93,6 @@ Consulte [Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.c
          >* `/libs`
          >* `/home`
          >* `/etc` (alguns  `/etc` caminhos podem ser selecionados no CTT)
-
-
 
 
 1. Clique em **Salvar** depois de preencher todos os campos na tela de detalhes **Criar conjunto de migração**.
