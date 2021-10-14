@@ -5,10 +5,10 @@ breadcrumb-title: Guia de migração
 user-guide-description: Entenda a jornada de transição para o Cloud Service.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 29211dd24346c10ffc634073c66881709990c6b7
+source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 36%
+source-wordcount: '178'
+ht-degree: 38%
 
 ---
 
@@ -40,8 +40,8 @@ ht-degree: 36%
       + [Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
       + [Introdução à ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [Lidar com grandes repositórios de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-      + [Extrair conteúdo da origem na ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-      + [Inserção de conteúdo no Target na ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [Extrair conteúdo da origem](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+      + [Inserção de conteúdo ao Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [Visualização de logs para um conjunto de migração](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [Exclusão de um conjunto de migração](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Execução da ferramenta Transferência de conteúdo em uma instância de publicação](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
