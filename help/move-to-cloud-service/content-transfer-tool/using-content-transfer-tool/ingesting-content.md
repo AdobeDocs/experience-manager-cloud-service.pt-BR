@@ -1,10 +1,10 @@
 ---
 title: Inserção de conteúdo no Target na ferramenta Transferência de conteúdo
 description: Inserção de conteúdo no Target na ferramenta Transferência de conteúdo
-source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
+source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 34%
+source-wordcount: '554'
+ht-degree: 27%
 
 ---
 
@@ -47,7 +47,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Tr
 
 1. Quando a assimilação estiver concluída, o status em **Author ingestion** será atualizado para **FINISHED**.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## Ingestão complementar {#top-up-ingestion-process}
 
@@ -58,9 +58,18 @@ A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a *a
 
 Quando o processo de assimilação estiver concluído, você poderá usar o conteúdo delta por meio do método de ingestão complementar. Siga as etapas abaixo:
 
-1. Navegue até a página *Visão geral* e selecione o conjunto de migração para o qual você deseja realizar a assimilação complementar. Clique em **Assimilar** para iniciar a extração complementar. A caixa de diálogo **Assimilação do conjunto de migração** é exibida.
+1. Navegue até o assistente de **Transferência de Conteúdo** e selecione o conjunto de migração para o qual deseja executar a assimilação complementar. Clique em **Assimilar** para iniciar a extração complementar.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+
+
+1. A caixa de diálogo **Assimilação do conjunto de migração** é exibida.
+
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >Você deve desativar a opção **Limpar conteúdo existente na instância do Cloud antes de assimilar**, para evitar que o conteúdo existente seja excluído da atividade de assimilação anterior. Além disso, clique em **Atendimento ao cliente** para registrar um tíquete, conforme mostrado na figura anterior.
+
+## O que vem a seguir {#whats-next}
+
+Depois de aprender a Inserir conteúdo no Target na ferramenta Transferência de conteúdo, você pode visualizar logs ao concluir cada etapa (extração e assimilação) e procurar erros. Consulte [Visualizando logs de um Conjunto de Migrações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) para saber mais.
