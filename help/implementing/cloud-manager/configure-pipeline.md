@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
+source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ No Cloud Manager, há dois tipos de pipeline:
 
    Consulte [Pipelines de não produção e de qualidade de código somente](configure-pipeline.md#non-production-pipelines) para obter mais detalhes.
 
->[!NOTE]
->Para configurar o pipeline, você deve:
-> * defina o acionador que iniciará o pipeline.
-> * defina os parâmetros que controlam a implantação de produção.
-> * configure os parâmetros de teste de desempenho.
+   >[!NOTE]
+   >Para configurar o pipeline, você deve:
+   > * defina o acionador que iniciará o pipeline.
+   > * defina os parâmetros que controlam a implantação de produção.
+   > * configure os parâmetros de teste de desempenho.
 
 
 ## Configuração do pipeline de produção {#setting-up-production-pipeline}
@@ -115,31 +115,33 @@ Siga as etapas abaixo para editar o pipeline configurado:
 
 1. Navegue até o cartão **Pipelines** da página **Visão geral do programa**.
 
-1. Clique em **Editar** no cartão **Pipelines**.
+1. Clique em **...** no cartão **Pipelines** e clique em **Editar**, conforme mostrado na figura abaixo.
 
-   ![](assets/configure-pipeline/edit-pipeline-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. A guia **Source Code** permite atualizar o repositório. Clique em **Acessar informações do repositório** para atualizar o repositório.
+1. A caixa de diálogo **Editar pipeline de produção** é exibida.
 
-   >[!NOTE]
-   >Consulte [Adicionar e gerenciar repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
+   1. A guia **Configuration** permite atualizar o **Pipeline Name**, **Deployment Trigger** e **Important Metrics Failure Behavior**.
 
-   ![](assets/configure-pipeline/edit-pipeline-2.png)
+      >[!NOTE]
+      >Consulte [Adicionar e gerenciar repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-1. A guia **Ambientes** permite atualizar as opções de estágio e produção.
+   1. A guia **Source** permite ignorar as configurações da camada da Web e atualizar de **Opções de implantação de produção**.
 
-   ![](assets/configure-pipeline/edit-pipeline-3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
-1. A opção **Auditoria de experiência** permite atualizar ou adicionar novas páginas.
+   1. A opção **Auditoria de experiência** permite atualizar ou adicionar novas páginas.
 
-   ![](assets/configure-pipeline/edit-pipeline-4.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. Clique em **Salvar** depois de concluir a edição do pipeline.
+1. Clique em **Atualizar** depois de concluir a edição do pipeline.
 
 ## Pipelines somente para não-produção e qualidade de código {#non-production-pipelines}
 
-Além do pipeline principal que é implantado na fase e na produção, os clientes podem configurar pipelines adicionais, conhecidos como **Non-Production Pipelines**. Esses pipelines sempre executam as etapas de criação e qualidade do código. Opcionalmente, também é possível implantar no AEM como um ambiente Cloud Service.
+Além do pipeline principal que é implantado na fase e na produção, os clientes podem configurar pipelines adicionais, conhecidos como **Non-Production Pipelines**. Esses pipelines sempre executam as etapas de criação e qualidade do código. Como opção, também podem implantar em AEM ambiente as a Cloud Service.
 
 Na tela inicial, esses pipelines são listados em um novo cartão:
 
