@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -129,12 +129,9 @@ Siga as etapas abaixo para editar o pipeline configurado:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. A guia **Source** fornece uma opção para ignorar a configuração da camada da Web para seu pipeline e verificar ou desmarcar **Pause antes de implantar nas opções Production** e **Scheduled** de **Production Deployment Options**.
+   1. A guia **Source** fornece uma opção para marcar ou desmarcar **Pause antes de implantar nas opções Production** e **Scheduled** em **Production Deployment Options**.
 
-      >[!NOTE]
-      >Se **Ignore Web Tier Configuration** for deixado desmarcado, o pipeline também implantará a configuração da camada da Web.
-
-      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-editnotier.png)
 
    1. A opção **Auditoria de experiência** permite atualizar ou adicionar novas páginas.
 
@@ -148,41 +145,59 @@ Além do pipeline principal que é implantado na fase e na produção, os client
 
 Na tela inicial, esses pipelines são listados em um novo cartão:
 
-1. Acesse o bloco **Pipelines de não produção** na tela inicial do Cloud Manager.
+1. Acesse o cartão **Pipelines** da tela inicial do Cloud Manager. Clique em **+Adicionar** e selecione **Adicionar pipeline de não produção**.
 
-   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Clique no botão **Add** para especificar o Nome do pipeline, o Tipo de pipeline e a Ramificação Git.
+1. **A caixa de diálogo Adicionar**  pipeline de não produção é exibida. Selecione o tipo de pipeline que deseja criar, seja **Pipeline de Qualidade de Código** ou **Pipeline de Implantação**.
 
-   Além disso, também é possível configurar o Acionador de implantação e o Comportamento de falha importante nas Opções de pipeline.
+   Além disso, você também pode configurar **Acionador de implantação** e **Comportamento de falha importante** em **Opções de implantação**. Clique em **Continuar**.
 
-   ![](assets/non-prod-pipe1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. Clique em **Save** e o pipeline é mostrado no cartão na tela inicial com cinco ações, conforme mostrado abaixo:
+1. **Código de pilha completa** selecionado. Você pode escolher o **Repository** e o **Git Branch**. Clique em **Salvar**.
 
-   ![](/help/implementing/cloud-manager/assets/prod-one.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
-   * **Editar**  - permite editar as configurações de pipeline
-   * **Detalhes**  - fornece detalhes da execução do pipeline
-   * **Build**  - navega até a página de execução, da qual o pipeline pode ser executado
-   * **Acessar informações do acordo de recompra**  - permite que o usuário obtenha as informações necessárias para acessar o repositório Git do Cloud Manager
+1. O pipeline de não produção recém-criado agora é exibido no cartão **Pipelines**.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add4.png)
+
+
+   O pipeline é mostrado no cartão na tela inicial com três ações, conforme mostrado abaixo:
+
+   * **Adicionar**  - permite adicionar um novo pipeline.
+   * **Acessar informações do acordo de recompra**  - permite que o usuário obtenha as informações necessárias para acessar o repositório Git do Cloud Manager.
    * **Saiba mais**  - navegue para entender o recurso de documentação do pipeline de CI/CD.
 
 ### Edição de um pipeline de não produção {#editing-nonprod-pipeline}
 
-É possível editar as configurações de pipeline na página **Visão geral do programa**.
+Você pode editar as configurações de pipeline no cartão **Pipelines** da página **Visão geral do programa**.
 
 Siga as etapas abaixo para editar o pipeline de não produção configurado:
 
 1. Navegue até o cartão **Pipelines** da página **Visão geral do programa**.
 
-1. Selecione a guia **Non-Production** e clique em **Edit** depois de selecionar os pipelines desejados.
+1. Selecione o pipeline de não produção e clique em **...**. Clique em **Editar**, conforme mostrado na figura abaixo.
 
-   ![](assets/configure-pipeline/non-prod-edit-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit1.png)
 
-1. Selecione o repositório desejado e outras atualizações necessárias e clique em **Salvar**.
+1. A caixa de diálogo **Editar pipeline de produção** é exibida.
 
-   ![](assets/configure-pipeline/edit-nonprodenv.png)
+   1. A guia **Configuration** permite atualizar o **Pipeline Name**, **Deployment Trigger** e **Important Metrics Failure Behavior**.
+
+      >[!NOTE]
+      >Consulte [Adicionar e gerenciar repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit2.png)
+
+
+   1. A guia **Código-Fonte** fornece a atualização do **Repositório** e da **Ramificação Git**.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
+
+1. Clique em **Atualizar** depois de concluir a edição do pipeline de não produção.
+
 
 ## Próximas etapas {#the-next-steps}
 

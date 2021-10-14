@@ -2,15 +2,25 @@
 title: Pipelines de CI-CD
 description: Pipelines de CI-CD
 index: false
-source-git-commit: b8b4d0b9e7e1dfc6809d2e193a2c2fd2438ecdb6
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
 
 
 # Pipelines CI-CD do Cloud Manager {#intro-cicd}
+
+## Introdução {#introduction}
+
+>[!NOTE]
+>Um pipeline de CI/CD no Cloud Manager é acionado por um evento, como uma solicitação de pull de um repositório de código-fonte, ou seja, uma alteração de código ou um agendamento regular para corresponder a uma cadência de lançamento.
+
+Para configurar o pipeline, você deve:
+* defina o acionador que iniciará o pipeline
+* defina os parâmetros que controlam a implantação de produção
+* configurar os parâmetros de teste de desempenho
 
 No Cloud Manager, há dois tipos de pipeline:
 
@@ -31,19 +41,3 @@ Um pipeline de não-produção tem como objetivo executar verificações de qual
 
 >[!NOTE]
 >Consulte Pipelines de não produção e de qualidade de código somente para obter mais detalhes.
-
-A implantação e a qualidade do código suportadas no pipeline de Produção e Não Produção no Cloud Manager são categorizadas em dois tipos diferentes:
-
-* Front-End
-* Pilha completa
-
-A tabela a seguir resume os pipelines:
-
-
->[!NOTE]
->Um pipeline de CI/CD no Cloud Manager é acionado por um evento, como uma solicitação de pull de um repositório de código-fonte, ou seja, uma alteração de código ou um agendamento regular para corresponder a uma cadência de lançamento.
->
->Para configurar o pipeline, você deve:
->* defina o acionador que iniciará o pipeline
->* defina os parâmetros que controlam a implantação de produção
->* configurar os parâmetros de teste de desempenho
