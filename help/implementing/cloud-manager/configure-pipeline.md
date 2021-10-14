@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
+source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,10 @@ Siga as etapas abaixo para editar o pipeline configurado:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. A guia **Source** permite ignorar as configurações da camada da Web e atualizar de **Opções de implantação de produção**.
+   1. A guia **Source** fornece uma opção para ignorar a configuração da camada da Web para seu pipeline e verificar ou desmarcar **Pause antes de implantar nas opções Production** e **Scheduled** de **Production Deployment Options**.
+
+      >[!NOTE]
+      >Se **Ignore Web Tier Configuration** for deixado desmarcado, o pipeline também implantará a configuração da camada da Web.
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
