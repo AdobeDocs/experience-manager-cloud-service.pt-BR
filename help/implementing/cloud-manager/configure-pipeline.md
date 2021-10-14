@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
+source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
@@ -45,44 +45,47 @@ Antes de começar a implantar seu código, você deve definir as configurações
 >
 >Você pode alterar as configurações do pipeline após a configuração inicial.
 
-## Configurar as configurações de pipeline de [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
+## Adicionar um novo pipeline de produção {#adding-production-pipeline}
 
-Depois de configurar seu programa e ter pelo menos um ambiente usando a interface do usuário do [!UICONTROL Cloud Manager], você estará pronto para configurar o pipeline de implantação.
+Depois de configurar seu programa e ter pelo menos um ambiente usando a interface do usuário do [!UICONTROL Cloud Manager], você estará pronto para adicionar um pipeline de produção.
 
-Siga estas etapas para configurar o comportamento e as preferências do pipeline:
+Siga estas etapas para configurar o comportamento e as preferências do pipeline de produção:
 
-1. Clique em **Configurar pipeline** para configurar seu pipeline.
+1. Navegue até o cartão **Pipelines** da página **Visão geral do programa**.
+Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
 
-   ![](assets/set-up-pipeline1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
 
-1. A tela **Configurar pipeline** é exibida. Selecione a ramificação e clique em **Next**.
+1. **A caixa de diálogo Adicionar** pipeline de produção é exibida. Insira o nome do pipeline.
 
-   ![](assets/setup-1.png)
+   Além disso, você também pode configurar **Acionador de implantação** e **Comportamento de falha importante** em **Opções de implantação**. Clique em **Continuar**.
 
-1. Configure suas opções de implantação.
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
-   ![](assets/setup-pipeline.png)
 
    Você pode definir o acionador para iniciar o pipeline:
 
    * **Manual**  - uso da interface do usuário para iniciar manualmente o pipeline.
    * **Em alterações no Git**  - inicia o pipeline de CI/CD sempre que há confirmações adicionadas à ramificação git configurada. Mesmo que você selecione essa opção, sempre poderá iniciar o pipeline manualmente.
 
-   Durante a configuração ou edição do pipeline, o Gerenciador de implantação tem a opção de definir o comportamento do pipeline quando uma falha importante for encontrada em qualquer uma das portas de qualidade.
+      Durante a configuração ou edição do pipeline, o Gerenciador de implantação tem a opção de definir o comportamento do pipeline quando uma falha importante for encontrada em qualquer uma das portas de qualidade.
 
-   Isso é útil para clientes que desejam processos mais automatizados. As opções disponíveis são:
+      Isso é útil para clientes que desejam processos mais automatizados. As opções disponíveis são:
 
-   * **Perguntar sempre**  - Essa é a configuração padrão e requer intervenção manual em qualquer falha importante.
-   * **Cancelar imediatamente**  - se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que rejeita manualmente cada falha.
-   * **Aprovar imediatamente**  - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que aprova manualmente cada falha.
+      * **Perguntar sempre**  - Essa é a configuração padrão e requer intervenção manual em qualquer falha importante.
+      * **Cancelar imediatamente**  - se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que rejeita manualmente cada falha.
+      * **Aprovar imediatamente**  - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que aprova manualmente cada falha.
 
+1. **Código de pilha completa** selecionado. Você pode escolher o **Repository** e o **Git Branch**. Clique em **Salvar**.
 
-1. As configurações de pipeline de produção incluem uma terceira guia rotulada como **Auditoria de experiência**. Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência.
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+
+1. A caixa de diálogo **Adicionar pipeline de produção** inclui uma terceira guia rotulada como **Auditoria de experiência**. Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência.
 
    >[!NOTE]
-   >Você deve clicar em **Adicionar nova página** para definir seu próprio link personalizado.
+   >Você deve clicar em **Adicionar Página** para definir seu próprio link personalizado.
 
-   ![](assets/setup-3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
 
    Clique em **Adicionar nova página** para fornecer um caminho de URL a ser incluído na Auditoria de experiência.
 
@@ -103,9 +106,13 @@ Siga estas etapas para configurar o comportamento e as preferências do pipeline
    >[!NOTE]
    > As páginas configuradas serão enviadas ao serviço e avaliadas de acordo com os testes de desempenho, acessibilidade, SEO (Search Engine Otimization), prática recomendada e PWA (Progressive Web App).
 
-1. Clique em **Salvar** na tela **Editar pipeline**. A página **Visão geral** agora exibe o cartão **Implantar seu programa**. Clique no botão **Implantar** para implantar seu programa.
+1. Clique em **Salvar**. O pipeline de produção recém-criado agora é exibido no cartão **Pipelines**.
 
-   ![](assets/configure-pipeline5.png)
+   O pipeline é mostrado no cartão na tela inicial com três ações, conforme mostrado abaixo:
+
+   * **Adicionar**  - permite adicionar um novo pipeline.
+   * **Acessar informações do acordo de recompra**  - permite que o usuário obtenha as informações necessárias para acessar o repositório Git do Cloud Manager.
+   * **Saiba mais**  - navegue para entender o recurso de documentação do pipeline de CI/CD.
 
 ### Edição de um pipeline de produção {#editing-prod-pipeline}
 
