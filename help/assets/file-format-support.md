@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
+source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '775'
 ht-degree: 10%
 
 ---
@@ -20,7 +20,7 @@ Além disso, [!DNL Experience Manager Assets] oferece suporte estendido para ger
 
 Os destaques da conversão de ativos usando microsserviços de ativos incluem:
 
-* Os formatos de arquivo de chave [Adobe](#adobe-formats) produzidos por aplicativos e serviços Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] ou PDF.
+* Os [formatos de arquivo Adobe](#adobe-formats) produzidos por aplicativos e serviços Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] ou PDF.
 * Chave [formatos de arquivo de imagem](#image-formats).
 * [Camera Raw ](#camera-raw-formats) formatos de arquivo para uma grande variedade de câmeras, incluindo Canon, Nikon, FujiFilm, Olympus e outros fabricantes (alimentados pela Adobe Camera Raw).
 * Formatos de documento comuns [a1/>, incluindo o Microsoft Office e formatos Open Document.](#document-formats)
@@ -86,10 +86,10 @@ Os seguintes subtipos de formatos de arquivo de imagem rasterizada que não são
 
 * Arquivos PNG com um tamanho de bloco IDAT superior a 100 MB.
 * Arquivos PSB.
-* Arquivos PSD com um espaço de cor diferente de CMYK, RGB, Escala de cinza ou Bitmap não são compatíveis. Não há suporte para espaços de cores DuoTone, Lab e Indexado.
-* Arquivos PSD com uma profundidade de bits superior a 16.
+* Arquivos PSD com um espaço de cores diferente de CMYK, RGB, Escala de cinza ou Bitmap não são compatíveis. Não há suporte para espaços de cores DuoTone, Lab e Indexado.
+* Arquivos PSD com profundidade de bits superior a 16.
 * Arquivos TIFF com dados de ponto flutuante.
-* Arquivos TIFF com espaço de cor Lab.
+* Arquivos TIFF com espaço de cores Lab.
 
 ## Formatos 3D {#support-3d-formats}
 
@@ -146,7 +146,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | DOC | - | - | - | Instantâneo | Instantâneo |
 | DOCX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| EPUB | - | Instantâneo | - | - | - |
+| ePub | - | Instantâneo | - | - | - |
 | HTML | - | Instantâneo | - | Instantâneo | Instantâneo |
 | ODF | Instantâneo | Instantâneo | Instantâneo | - | - |
 | ODM | Instantâneo | Instantâneo | Instantâneo | - | - |
@@ -202,20 +202,18 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 ## Formatos de vídeo em [!DNL Dynamic Media] para transcodificação {#video-dynamic-media-transcoding}
 
-| Extensão de arquivo de vídeo | Container | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
+| Extensão de arquivo de vídeo | Contêiner | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 |------------------------|--------------------|--------|-------|
 | MP4 | MPEG-4 | H264/AVC (todos os perfis) | - |
-| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação da Apple |
+| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação do Apple |
 | FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação vetorial) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Tela do Microsoft (MSS2), História de fotos do Microsoft (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
 | M4V | Apple iTunes | H264/AVC | - |
 | AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
 | WebM | WebM | VP8 do Google | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MKV | Matroska | H264/AVC | - |
-| RAM, RM | RealVideo | Não suportado | G2 real (RV20), Real 8 (RV30), Real 10 (RV40) |
-| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 | - |
 
 ## Formatos de áudio {#audio-formats}
 
