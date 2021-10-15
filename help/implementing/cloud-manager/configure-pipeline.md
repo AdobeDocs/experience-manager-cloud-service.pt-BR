@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
+source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,11 @@ Siga estas etapas para configurar o comportamento e as preferências do pipeline
 1. Navegue até o cartão **Pipelines** da página **Visão geral do programa**.
 Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **A caixa de diálogo Adicionar** pipeline de produção é exibida. Insira o nome do pipeline.
 
-   Além disso, você também pode configurar **Acionador de implantação** e **Comportamento de falha importante** em **Opções de implantação**. Clique em **Continuar**.
+   Além disso, você também pode configurar **Acionador de implantação** e **Comportamento importante de falhas de métrica** em **Opções de implantação**. Clique em **Continuar**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
@@ -78,16 +78,21 @@ Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
    * **Continuar imediatamente**  - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que aprova manualmente cada falha.
 
 
-1. A caixa de diálogo **Adicionar pipeline de produção** inclui uma segunda guia rotulada como **Código fonte**. **Código de pilha completa** selecionado. Você pode escolher o **Repository** e o **Git Branch**. Clique em **Salvar**.
+1. A caixa de diálogo **Adicionar pipeline de produção** inclui uma segunda guia rotulada como **Código fonte**. **Código de pilha completa** selecionado. Você pode escolher o **Repository** e o **Git Branch**. Selecione as Opções de implantação de produção, conforme explicado abaixo. Clique em **Continuar**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   Opções de implantação de produção:
+
+   * **Pausar antes de implantar na produção**: Essa opção permite a interrupção da implantação antes da produção.
+   * **Agendado**: Essa opção permite que o usuário habilite a implantação de produção agendada.
 
 1. A caixa de diálogo **Adicionar pipeline de produção** inclui uma terceira guia rotulada como **Auditoria de experiência**. Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência.
 
    >[!NOTE]
    >Você deve clicar em **Adicionar Página** para definir seu próprio link personalizado.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
    Clique em **Adicionar nova página** para fornecer um caminho de URL a ser incluído na Auditoria de experiência.
 
@@ -234,6 +239,28 @@ Siga as etapas abaixo para editar o pipeline de não produção configurado:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
 
 1. Clique em **Atualizar** depois de concluir a edição do pipeline de não produção.
+
+### Ações adicionais do pipeline de não produção {#additional-nonprod-actions}
+
+#### Execução de um pipeline de não produção {#run-nonprod}
+
+Você pode executar o pipeline de produção no cartão Pipelines :
+
+1. Navegue até o cartão **Pipelines** da página **Visão geral do programa**.
+
+1. Clique em **...** no cartão **Pipelines** e clique em **Executar**, conforme mostrado na figura abaixo.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### Excluindo um pipeline de não produção {#delete-nonprod}
+
+Você pode excluir o pipeline de produção do cartão Pipelines:
+
+1. Navegue até o cartão **Pipelines** da página **Visão geral do programa**.
+
+1. Clique em **...** no cartão **Pipelines** e clique em **Delete**, conforme mostrado na figura abaixo.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
 
 
 ## Próximas etapas {#the-next-steps}
