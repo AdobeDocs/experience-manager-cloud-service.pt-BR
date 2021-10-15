@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
+source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -147,6 +147,32 @@ Siga as etapas abaixo para editar o pipeline configurado:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
 1. Clique em **Atualizar** depois de concluir a edição do pipeline.
+
+### Ações adicionais do pipeline de produção {#additional-prod-actions}
+
+#### Execução de um pipeline de produção {#run-prod}
+
+Você pode executar o pipeline de produção no cartão Pipelines :
+
+1. Navegue até o cartão **Pipelines** da página **Visão geral do programa**.
+
+1. Clique em **...** no cartão **Pipelines** e clique em **Executar**, conforme mostrado na figura abaixo.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-run.png)
+
+#### Exclusão de um pipeline de produção {#delete-prod}
+
+Você pode excluir o pipeline de produção do cartão Pipelines:
+
+1. Navegue até o cartão **Pipelines** da página **Visão geral do programa**.
+
+1. Clique em **...** no cartão **Pipelines** e clique em **Delete**, conforme mostrado na figura abaixo.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-delete.png)
+
+   >[!NOTE]
+   >Um usuário na função Deployment Manager agora pode excluir o pipeline de Produção de maneira automatizada por meio da opção **Delete** do cartão Pipeline.
+
 
 ## Pipelines somente para não-produção e qualidade de código {#non-production-pipelines}
 
