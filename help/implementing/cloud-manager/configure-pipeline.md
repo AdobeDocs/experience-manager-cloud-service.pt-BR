@@ -2,7 +2,7 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
+source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Antes de começar a implantar seu código, você deve definir as configurações
 >
 >Você pode alterar as configurações do pipeline após a configuração inicial.
 
-## Adicionar um novo pipeline de produção {#adding-production-pipeline}
+### Adicionar um novo pipeline de produção {#adding-production-pipeline}
 
 Depois de configurar seu programa e ter pelo menos um ambiente usando a interface do usuário do [!UICONTROL Cloud Manager], você estará pronto para adicionar um pipeline de produção.
 
