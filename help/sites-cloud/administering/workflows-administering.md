@@ -4,7 +4,7 @@ description: Saiba como administrar instâncias de fluxo de trabalho
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 079c9a64aeee62b36a12083645ca43b115838705
+source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
@@ -170,13 +170,12 @@ Você pode definir o tamanho máximo da caixa de entrada configurando o **Adobe 
 
 ## Uso de variáveis de fluxo de trabalho para armazenamentos de dados de propriedade do cliente {#using-workflow-variables-customer-datastore}
 
-Os dados usados em fluxos de trabalho são armazenados no JCR (Adobe provided storage, armazenamento fornecido pelo JCR). Esses dados podem ser confidenciais por natureza. Você pode salvar todos os metadados/dados definidos pelo usuário em seu próprio armazenamento gerenciado, em vez do armazenamento fornecido pelo Adobe. Estas seções descrevem como configurar essas variáveis para armazenamento externo.
+Os dados processados por workflows são armazenados no JCR (Adobe provided storage, armazenamento fornecido pelo JCR). Esses dados podem ser confidenciais por natureza. Você pode salvar todos os metadados/dados definidos pelo usuário em seu próprio armazenamento gerenciado, em vez do armazenamento fornecido pelo Adobe. Essas seções descrevem como configurar essas variáveis para armazenamento externo.
 
 ### Definir o modelo para usar o armazenamento externo de metadados {#set-model-for-external-storage}
 
-No nível do modelo de fluxo de trabalho, é planejado introduzir um sinalizador para indicar que o modelo (e suas instâncias de tempo de execução) tem armazenamento externo de metadados. Os metadados do usuário não serão mantidos no JCR para as instâncias de fluxo de trabalho dos modelos marcados para armazenamento externo.
+No nível do modelo de fluxo de trabalho, é fornecido um sinalizador para indicar que o modelo (e suas instâncias de tempo de execução) tem armazenamento externo de metadados. As variáveis de workflow não serão persistentes no JCR para as instâncias de workflow dos modelos marcados para armazenamento externo.
 
-Para ativar esse recurso, você deve ativar o sinalizador de persistência externa: **userMetaDataCustomPersistenceEnabled = &quot;true&quot;**.
 A propriedade *userMetadataPersistenceEnabled* será armazenada no *jcr:content node* do modelo de fluxo de trabalho. Esse sinalizador será mantido nos metadados do workflow como *cq:userMetaDataCustomPersistenceEnabled*.
 
 A ilustração abaixo mostra ter que definir o sinalizador em um workflow.
@@ -184,6 +183,8 @@ A ilustração abaixo mostra ter que definir o sinalizador em um workflow.
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
 ### APIs para metadados em armazenamento externo {#apis-for-metadata-external-storage}
+
+Para armazenar as variáveis externamente, você deve implementar as APIs que o fluxo de trabalho expõe.
 
 UserMetaDataPersistenceContext
 
