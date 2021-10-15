@@ -2,9 +2,9 @@
 title: Configurar pipeline de CI/CD - Cloud Services
 description: Configurar pipeline de CI/CD - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
+source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
 
-   Você pode definir o acionador para iniciar o pipeline:
+   Você pode definir os acionadores de implantação para iniciar o pipeline.
 
    * **Manual**  - uso da interface do usuário para iniciar manualmente o pipeline.
    * **Em alterações no Git**  - inicia o pipeline de CI/CD sempre que há confirmações adicionadas à ramificação git configurada. Mesmo que você selecione essa opção, sempre poderá iniciar o pipeline manualmente.
@@ -71,14 +71,16 @@ Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
       Durante a configuração ou edição do pipeline, o Gerenciador de implantação tem a opção de definir o comportamento do pipeline quando uma falha importante for encontrada em qualquer uma das portas de qualidade.
 
       Isso é útil para clientes que desejam processos mais automatizados. As opções disponíveis são:
+   Você pode definir o comportamento importante das métricas de falha para iniciar o pipeline.
 
-      * **Perguntar sempre**  - Essa é a configuração padrão e requer intervenção manual em qualquer falha importante.
-      * **Cancelar imediatamente**  - se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que rejeita manualmente cada falha.
-      * **Aprovar imediatamente**  - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que aprova manualmente cada falha.
+   * **Perguntar sempre**  - Essa é a configuração padrão e requer intervenção manual em qualquer falha importante.
+   * **Falha imediatamente**  - se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que rejeita manualmente cada falha.
+   * **Continuar imediatamente**  - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que aprova manualmente cada falha.
 
-1. **Código de pilha completa** selecionado. Você pode escolher o **Repository** e o **Git Branch**. Clique em **Salvar**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+1. A caixa de diálogo **Adicionar pipeline de produção** inclui uma segunda guia rotulada como **Código fonte**. **Código de pilha completa** selecionado. Você pode escolher o **Repository** e o **Git Branch**. Clique em **Salvar**.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
 1. A caixa de diálogo **Adicionar pipeline de produção** inclui uma terceira guia rotulada como **Auditoria de experiência**. Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência.
 
@@ -150,6 +152,8 @@ Siga as etapas abaixo para editar o pipeline configurado:
 
 Além do pipeline principal que é implantado na fase e na produção, os clientes podem configurar pipelines adicionais, conhecidos como **Non-Production Pipelines**. Esses pipelines sempre executam as etapas de criação e qualidade do código. Como opção, também podem implantar em AEM ambiente as a Cloud Service.
 
+### Adicionar um novo pipeline de não produção {#adding-non-production-pipeline}
+
 Na tela inicial, esses pipelines são listados em um novo cartão:
 
 1. Acesse o cartão **Pipelines** da tela inicial do Cloud Manager. Clique em **+Adicionar** e selecione **Adicionar pipeline de não produção**.
@@ -158,7 +162,7 @@ Na tela inicial, esses pipelines são listados em um novo cartão:
 
 1. **A caixa de diálogo Adicionar**  pipeline de não produção é exibida. Selecione o tipo de pipeline que deseja criar, seja **Pipeline de Qualidade de Código** ou **Pipeline de Implantação**.
 
-   Além disso, você também pode configurar **Acionador de implantação** e **Comportamento de falha importante** em **Opções de implantação**. Clique em **Continuar**.
+   Além disso, você também pode configurar **Acionador de implantação** e **Comportamento importante de falhas de métrica** em **Opções de implantação**. Clique em **Continuar**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
@@ -191,7 +195,7 @@ Siga as etapas abaixo para editar o pipeline de não produção configurado:
 
 1. A caixa de diálogo **Editar pipeline de produção** é exibida.
 
-   1. A guia **Configuration** permite atualizar o **Pipeline Name**, **Deployment Trigger** e **Important Metrics Failure Behavior**.
+   1. A guia **Configuration** permite atualizar o **Pipeline Name**, **Deployment Trigger** e **Important Metric Failures Behavior**.
 
       >[!NOTE]
       >Consulte [Adicionar e gerenciar repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
