@@ -4,9 +4,9 @@ description: Saiba como os Modelos de fragmentos de conteúdo servem como base p
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: e099272245054bdff0bbeaa1fd9b01e564198dee
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2850'
 ht-degree: 6%
 
 ---
@@ -77,6 +77,9 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
       * Muitas propriedades são autoexplicativas, para obter detalhes adicionais, consulte [Propriedades](#properties).
       * A digitação de um **Rótulo do campo** preencherá automaticamente o **Nome da propriedade** - se estiver vazio, e poderá ser atualizado manualmente posteriormente.
 
+         >[!CAUTION]
+         Ao atualizar manualmente um tipo de dados **Nome da propriedade**, observe que os nomes devem conter somente caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
+         Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
       Por exemplo:
 
       ![propriedades de campo](assets/cfm-models-05.png)
@@ -136,6 +139,10 @@ No editor de fragmentos, cada instância aparecerá como uma guia.
 ## Propriedades {#properties}
 
 Muitas propriedades são autoexplicativas, para certas propriedades os detalhes adicionais são os seguintes:
+
+>[!CAUTION]
+Ao atualizar manualmente o **Nome da propriedade**, observe que os nomes devem conter somente caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
+Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
 * **Renderizar**
 comoAs várias opções para realizar/renderizar o campo em um fragmento. Geralmente, isso permite definir se o autor verá uma única instância do campo ou poderá criar várias instâncias.
