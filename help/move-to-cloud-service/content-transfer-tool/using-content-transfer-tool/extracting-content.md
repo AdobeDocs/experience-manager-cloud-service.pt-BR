@@ -1,10 +1,10 @@
 ---
 title: Extrair conteúdo da origem
 description: Extrair conteúdo da origem
-source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
+source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 39%
+source-wordcount: '596'
+ht-degree: 36%
 
 ---
 
@@ -36,6 +36,10 @@ Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Tran
 
    >[!NOTE]
    >Você tem a opção de substituir o containercontêiner de preparação durante a fase de extração.
+
+   >[!IMPORTANT]
+   >Se o Mapeamento de usuários não tiver sido executado nesse conjunto de migração antes da extração de conteúdo da origem, você verá um aviso exibindo se a etapa Mapeamento de usuários está pendente, como mostrado na figura abaixo. Clique em **Mapear usuários** para executar a ferramenta Mapeamento de usuários.
+   >![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. O **Extração** agora exibe a variável **EM EXECUÇÃO** status para indicar que a extração está em andamento.
 
