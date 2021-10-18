@@ -1,7 +1,7 @@
 ---
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 25%
@@ -84,4 +84,4 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 ## O que vem a seguir {#whats-next}
 
-Depois de conhecer as diretrizes, as práticas recomendadas e as considerações importantes para o uso da ferramenta Transferência de conteúdo, você estará pronto para instalar e usar a ferramenta, começando pela criação de um conjunto de migração. Consulte [Introdução à transferência de conteúdo para](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) para saber mais.
+Depois de conhecer as diretrizes, as práticas recomendadas e as considerações importantes para o uso da ferramenta Transferência de conteúdo, você estará pronto para instalar e usar a ferramenta, começando pela criação de um conjunto de migração. Consulte [Introdução à ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) para saber mais.
