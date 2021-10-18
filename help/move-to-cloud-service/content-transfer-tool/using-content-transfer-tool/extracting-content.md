@@ -1,10 +1,10 @@
 ---
 title: Extrair conteúdo da origem
 description: Extrair conteúdo da origem
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 42%
+source-wordcount: '549'
+ht-degree: 39%
 
 ---
 
@@ -19,22 +19,25 @@ ht-degree: 42%
 >abstract="Extração refere-se à extração de conteúdo da instância de AEM de origem em uma área temporária chamada de conjunto de migração. Um conjunto de migração é uma área de armazenamento em nuvem fornecida pela Adobe para armazenar temporariamente o conteúdo transferido entre a instância do AEM de origem e a instância do AEM Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extração complementar"
 
+>[!IMPORTANT]
+>Você deve executar a ferramenta Mapeamento de usuários antes de extrair o conteúdo da origem. Consulte [Usar a ferramenta Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) para obter mais detalhes.
+
 Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Transferência de conteúdo:
 >[!NOTE]
->Se o Amazon S3 ou o Azure Data Store for usado como o tipo de armazenamento de dados, você poderá executar a etapa opcional de pré-cópia para acelerar significativamente a fase de extração. Para fazer isso, será necessário configurar um arquivo `azcopy.config` antes de executar a extração. Consulte [Manipulação de Repositórios de Conteúdo Grandes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) para obter mais detalhes.
+>Se o Amazon S3 ou o Azure Data Store for usado como o tipo de armazenamento de dados, você poderá executar a etapa opcional de pré-cópia para acelerar significativamente a fase de extração. Para fazer isso, será necessário configurar um `azcopy.config` arquivo antes de executar a extração. Consulte [Lidar com grandes repositórios de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) para obter mais detalhes.
 
-1. Selecione um conjunto de migração no assistente de **Transferência de Conteúdo** e clique em **Extrair** para iniciar a extração.
+1. Selecione um conjunto de migração de **Transferência de conteúdo** e clique em **Extract** para iniciar a extração.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-01.png)
 
-1. A caixa de diálogo **Extração do conjunto de migração** é exibida e clique em **Extrair** para iniciar a fase de extração.
+1. O **Extração do conjunto de migração** é exibida e clique em **Extract** para iniciar a fase de extração.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-02.png)
 
    >[!NOTE]
    >Você tem a opção de substituir o containercontêiner de preparação durante a fase de extração.
 
-1. O campo **Extraction** agora exibe o status **RUNNING** para indicar que a extração está em andamento.
+1. O **Extração** agora exibe a variável **EM EXECUÇÃO** status para indicar que a extração está em andamento.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-03.png)
 
@@ -43,7 +46,7 @@ Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Tran
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-04.png)
 
    >[!IMPORTANT]
-   >A interface do usuário tem um recurso de recarregamento automático que recarrega o assistente de **Transferência de conteúdo** a cada 30 segundos.
+   >A interface do usuário tem um recurso de recarregamento automático que recarrega o **Transferência de conteúdo** assistente a cada 30 segundos.
    >Quando a fase de extração for iniciada, o bloqueio de gravação é criado e liberado após *60 segundos*. Em seguida, se uma extração for interrompida, você precisará esperar um minuto até que o bloqueio seja liberado antes de reiniciar a extração.
 
 ## Extração complementar {#top-up-extraction-process}
@@ -58,11 +61,11 @@ Quando o processo de extração estiver concluído, você poderá transferir o c
 
 Siga as etapas abaixo:
 
-1. Navegue até o assistente de **Transferência de Conteúdo** e selecione o conjunto de migração para o qual deseja executar a extração complementar. Clique em **Extrair** para iniciar a extração complementar.
+1. Navegue até o **Transferência de conteúdo** e selecione o conjunto de migração para o qual deseja executar a extração complementar. Clique em **Extrair** para iniciar a extração complementar.
 
    ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-05.png)
 
-1. A caixa de diálogo **Extração do conjunto de migração** é exibida. Clique em **Extrair**.
+1. O **Extração do conjunto de migração** será exibida. Clique em **Extract**.
 
    >[!IMPORTANT]
    >Você deve desativar a opção **Substituir containercontêiner de preparação durante a extração**.
@@ -71,4 +74,4 @@ Siga as etapas abaixo:
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender a extrair conteúdo da origem na ferramenta Transferência de conteúdo, você estará pronto para aprender o Processo de assimilação na ferramenta Transferência de conteúdo. Consulte [Inserir conteúdo no Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para saber como assimilar seu conjunto de migração na ferramenta Transferência de conteúdo.
+Depois de aprender a extrair conteúdo da origem na ferramenta Transferência de conteúdo, você estará pronto para aprender o Processo de assimilação na ferramenta Transferência de conteúdo. Consulte [Inserção de conteúdo ao Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para saber como assimilar seu conjunto de migração na ferramenta Transferência de conteúdo.
