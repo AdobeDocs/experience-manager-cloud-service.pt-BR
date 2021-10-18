@@ -1,24 +1,24 @@
 ---
-title: Registro de AEM como Cloud Service
-description: Saiba como configurar parâmetros globais para o serviço de registro central, configurações específicas para os serviços individuais ou como solicitar o logon de dados AEM como um Cloud Service.
+title: Registro para AEM as a Cloud Service
+description: Saiba como usar o Logging for AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o log de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 0c2a6753ab6c7fdf8cd8235b9071b21dcfff1e74
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2314'
 ht-degree: 2%
 
 ---
 
-# Registro para AEM como Cloud Service {#logging-for-aem-as-a-cloud-service}
+# Registro para AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-O AEM as a Cloud Service é uma plataforma para clientes incluírem código personalizado para criar experiências exclusivas para sua base de clientes. Com isso em mente, o serviço de registro é uma função essencial para depurar e entender a execução de código em desenvolvimento local e em ambientes de nuvem, especialmente o AEM como ambientes Cloud Service Dev.
+AEM as a Cloud Service é uma plataforma para clientes incluírem código personalizado para criar experiências exclusivas para a base de clientes. Com isso em mente, o serviço de registro é uma função essencial para depurar e entender a execução do código em ambientes de desenvolvimento local e em nuvem, especialmente os ambientes de desenvolvimento AEM as a Cloud Service.
 
-AEM configurações de registro e níveis de log são gerenciados em arquivos de configuração que são armazenados como parte do projeto AEM no Git e implantados como parte do projeto AEM pelo Cloud Manager. O logon AEM como um Cloud Service pode ser dividido em dois conjuntos lógicos:
+AEM configurações de registro as a Cloud Service e níveis de log são gerenciados em arquivos de configuração que são armazenados como parte do projeto AEM no Git e implantados como parte do projeto AEM pelo Cloud Manager. O logon AEM as a Cloud Service pode ser dividido em dois conjuntos lógicos:
 
 * Registro de AEM, que executa o registro em log no nível de aplicativo AEM
 * Apache HTTPD Web Server/Dispatcher logging, que executa o log do servidor da Web e do Dispatcher na camada de Publicação.
 
-## Registro de AEM {#aem-loggin}
+## Registro de AEM {#aem-logging}
 
 O registro no nível do aplicativo AEM é feito por três logs:
 
@@ -30,9 +30,9 @@ O registro no nível do aplicativo AEM é feito por três logs:
 >
 >As solicitações HTTP veiculadas a partir do cache do Dispatcher da camada de publicação ou do CDN upstream não são refletidas nesses logs.
 
-## AEM registro do Java {#aem-java-logging}
+## Registro do Java do AEM {#aem-java-logging}
 
-AEM como um Cloud Service fornece acesso às instruções de log do Java. Os desenvolvedores de aplicativos para AEM devem seguir as práticas recomendadas gerais de registro em Java, registrando declarações pertinentes sobre a execução do código personalizado, nos seguintes níveis de log:
+AEM as a Cloud Service fornece acesso às instruções de log do Java. Os desenvolvedores de aplicativos para AEM devem seguir as práticas recomendadas gerais de registro em Java, registrando declarações pertinentes sobre a execução do código personalizado, nos seguintes níveis de log:
 
 <table>
 <tr>
@@ -92,9 +92,9 @@ Quando o registro de ERROR está ativo, somente as instruções que indicam falh
 </tr>
 </table>
 
-Embora o registro em log do Java seja compatível com vários outros níveis de granularidade de registro, AEM como um Cloud Service recomenda o uso dos três níveis descritos acima.
+Embora o registro em log do Java ofereça suporte a vários outros níveis de granularidade de registro, AEM a as a Cloud Service recomenda o uso dos três níveis descritos acima.
 
-AEM Os níveis de log são definidos por tipo de ambiente por meio da configuração OSGi, que, por sua vez, são comprometidos com o Git, e implantados por meio do Cloud Manager para AEM como Cloud Service. Por causa disso, é melhor manter as declarações de log consistentes e bem conhecidas para tipos de ambiente, a fim de garantir que os logs disponíveis via AEM como Cloud Service estejam disponíveis no nível de log ideal sem exigir a reimplantação do aplicativo com a configuração atualizada do nível de log.
+AEM Os níveis de log são definidos por tipo de ambiente por meio da configuração OSGi, que, por sua vez, são comprometidos com o Git e implantados por meio do Cloud Manager para AEM as a Cloud Service. Por causa disso, é melhor manter as declarações de log consistentes e bem conhecidas para tipos de ambiente, a fim de garantir que os logs disponíveis via AEM como Cloud Service estejam disponíveis no nível de log ideal sem exigir a reimplantação do aplicativo com a configuração atualizada do nível de log.
 
 **Exemplo de saída de log**
 
@@ -115,7 +115,7 @@ AEM Os níveis de log são definidos por tipo de ambiente por meio da configura�
 <td>29.04.2020 21:50:13.398</td>
 </tr>
 <tr>
-<td>AEM como uma ID de nó Cloud Service</td>
+<td>ID de nó as a Cloud Service AEM</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 <tr>
@@ -137,9 +137,9 @@ AEM Os níveis de log são definidos por tipo de ambiente por meio da configura�
 </tbody>
 </table>
 
-### Registradores de configuração {#configuration-loggers}
+### Logs de configuração {#configuration-loggers}
 
-AEM logs Java são definidos como configuração OSGi e, portanto, direcionam AEM específicos como ambientes Cloud Service usando pastas de modo de execução.
+AEM logs Java são definidos como configuração OSGi e, portanto, direcionam ambientes AEM as a Cloud Service específicos usando pastas de modo de execução.
 
 Configure o registro do java para pacotes Java personalizados por meio de configurações OSGi para a fábrica do Sling LogManager. Há duas propriedades de configuração compatíveis:
 
@@ -148,9 +148,9 @@ Configure o registro do java para pacotes Java personalizados por meio de config
 | org.apache.sling.commons.log.names | Os pacotes Java para os quais coletar instruções de log. |
 | org.apache.sling.commons.log.level | O nível de log no qual registrar os pacotes Java, especificado por org.apache.sling.commons.log.names |
 
-Alterar outras propriedades de configuração do OSGi do LogManager pode resultar em problemas de disponibilidade no AEM como um Cloud Service.
+Alterar outras propriedades de configuração do OSGi do LogManager pode resultar em problemas de disponibilidade AEM as a Cloud Service.
 
-A seguir estão exemplos das configurações de registro recomendadas (usando o pacote Java de espaço reservado `com.example`) para os três AEM como tipos de ambiente Cloud Service.
+A seguir estão exemplos das configurações de registro recomendadas (usando o pacote Java de espaço reservado `com.example`) para os três tipos de ambiente as a Cloud Service AEM.
 
 ### Desenvolvimento {#development}
 
@@ -187,7 +187,7 @@ A seguir estão exemplos das configurações de registro recomendadas (usando o 
 
 ## Registro de solicitação HTTP AEM {#aem-http-request-logging}
 
-AEM como um Cloud Service no registro de solicitação HTTP fornece informações sobre solicitações HTTP feitas para AEM e suas respostas HTTP em ordem de tempo. Esse log é útil para entender as Solicitações HTTP feitas no AEM e a ordem em que são processadas e respondidas.
+AEM registro de solicitação HTTP do as a Cloud Service fornece informações sobre as solicitações HTTP feitas para AEM e suas respostas HTTP em ordem de tempo. Esse log é útil para entender as Solicitações HTTP feitas no AEM e a ordem em que são processadas e respondidas.
 
 A chave para entender esse log é mapear os pares de solicitação e resposta HTTP por suas IDs, indicadas pelo valor numérico entre colchetes. Observe que frequentemente as solicitações e suas respostas correspondentes têm outras solicitações HTTP e respostas interpeladas entre elas no log.
 
@@ -229,15 +229,15 @@ A chave para entender esse log é mapear os pares de solicitação e resposta HT
 </td>
 </tr>
 <tr>
-<td>AEM como uma ID de nó Cloud Service</td>
+<td>ID de nó as a Cloud Service AEM</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 </tbody>
 </table>
 
-### Configurar o registro {#configuring-the-log}
+### Configuração do log {#configuring-the-log}
 
-O log de Solicitação HTTP AEM não pode ser configurado no AEM como Cloud Service.
+O log de Solicitação HTTP AEM não pode ser configurado AEM as a Cloud Service.
 
 ## Registro de acesso HTTP AEM {#aem-http-access-logging}
 
@@ -253,11 +253,11 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-| AEM como uma ID de nó Cloud Service | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+| AEM ID de nó as a Cloud Service | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
 |---|---|
 | Endereço IP do cliente | - |
 | Usuário | myuser@adobe.com |
-| Data e hora | 30/Apr/2020:17:37:14 +0000 |
+| Data e hora | 30/Abr/2020:17:37:14 +0000 |
 | método HTTP | GET |
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | Protocolo | HTTP/1.1 |
@@ -268,11 +268,11 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 ### Configurar o registro de acesso HTTP {#configuring-the-http-access-log}
 
-O log de Acesso HTTP não pode ser configurado no AEM como Cloud Service.
+O log de Acesso HTTP não pode ser configurado AEM as a Cloud Service.
 
-## Apache Web Server e Dispatcher Logging {#apache-web-server-and-dispatcher-logging}
+## Apache Web Server e Registro do Dispatcher {#apache-web-server-and-dispatcher-logging}
 
-O AEM as a Cloud Service fornece três logs para os Servidores Web Apache e a camada do dispatcher na Publicação:
+AEM as a Cloud Service fornece três logs para os Servidores Web Apache e a camada do dispatcher na Publicação:
 
 * Log de acesso do servidor Web Apache HTTPD
 * Log de erros do servidor Web Apache HTTPD
@@ -280,7 +280,7 @@ O AEM as a Cloud Service fornece três logs para os Servidores Web Apache e a ca
 
 Observe que esses logs só estão disponíveis para a camada Publicar .
 
-Esse conjunto de logs fornece insights sobre solicitações HTTP para o AEM como um nível de publicação do Cloud Service antes que essas solicitações cheguem ao aplicativo AEM. Isso é importante para entender, pois, idealmente, a maioria das solicitações HTTP para os servidores da camada de Publicação é veiculada pelo conteúdo armazenado em cache pelo Apache HTTPD Web Server e AEM Dispatcher, e nunca alcança o aplicativo AEM em si. Portanto, não há instruções de log para essas solicitações em AEM logs de Java, Solicitação ou Acesso.
+Esse conjunto de logs fornece insights sobre solicitações HTTP para a camada de Publicação as a Cloud Service AEM antes que essas solicitações cheguem ao aplicativo AEM. Isso é importante para entender, pois, idealmente, a maioria das solicitações HTTP para os servidores da camada de Publicação é veiculada pelo conteúdo armazenado em cache pelo Apache HTTPD Web Server e AEM Dispatcher, e nunca alcança o aplicativo AEM em si. Portanto, não há instruções de log para essas solicitações em AEM logs de Java, Solicitação ou Acesso.
 
 ### Log de acesso do servidor Web Apache HTTPD {#apache-httpd-web-server-access-log}
 
@@ -349,7 +349,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 
 ### Configurando o Log de Acesso do Servidor Web Apache HTTPD {#configuring-the-apache-httpd-webs-server-access-log}
 
-Este log não pode ser configurado no AEM como um Cloud Service.
+Este log não pode ser configurado AEM as a Cloud Service.
 
 ## Log de erros do servidor Web Apache HTTPD {#apache-httpd-web-server-error-log}
 
@@ -433,7 +433,7 @@ Define REWRITE_LOG_LEVEL Debug
 <tbody>
 <tr>
 <td>Data e hora</td>
-<td>[17/07/2020:23:48:16 +0000]</td>
+<td>[17/julho/2020:23:48:16 +0000]</td>
 </tr>
 <tr>
 <td>Nome do pod</td>
@@ -476,7 +476,7 @@ Os níveis de log do dispatcher são definidos pela variável DISP_LOG_LEVEL no 
 
 Ele pode ser definido como Erro, Aviso, Informações, Depuração e Trace1, com um valor padrão de Aviso.
 
-Embora o log do Dispatcher seja compatível com vários outros níveis de granularidade do log, o AEM como um Cloud Service recomenda o uso dos níveis descritos abaixo.
+Embora o log do Dispatcher ofereça suporte a vários outros níveis de granularidade de log, a AEM as a Cloud Service recomenda o uso dos níveis descritos abaixo.
 
 Para definir o nível de log por ambiente, use a ramificação condicional apropriada no arquivo `global.var`, conforme descrito abaixo:
 
@@ -497,13 +497,13 @@ Define DISP_LOG_LEVEL Debug
 
 ## Como acessar logs {#how-to-access-logs}
 
-### Ambientes em nuvem {#cloud-environments}
+### Ambientes na nuvem {#cloud-environments}
 
-O AEM como um Cloud Service logs para serviços em nuvem pode ser acessado baixando a interface do Cloud Manager ou ajustando logs na linha de comando usando o usando a interface de linha de comando Adobe I/O. Para obter mais informações, consulte a [documentação de registro do Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
+AEM os registros as a Cloud Service para serviços em nuvem podem ser acessados baixando pela interface do Cloud Manager ou ajustando os logs na linha de comando usando o usando a interface de linha de comando Adobe I/O. Para obter mais informações, consulte a [documentação de registro do Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
 
 ### SDK local {#local-sdk}
 
-O AEM as a Cloud Service SDK fornece arquivos de logs para suportar desenvolvimento local.
+AEM SDK as a Cloud Service fornece arquivos de logs para dar suporte ao desenvolvimento local.
 
 AEM logs estão localizados na pasta `crx-quickstart/logs`, onde os seguintes logs podem ser visualizados:
 
@@ -532,7 +532,7 @@ Os registros também são impressos diretamente na saída do terminal. Na maiori
 
 Em circunstâncias excepcionais, os níveis de log precisam ser alterados para registrar em uma granularidade mais fina em ambientes de Preparo ou Produção.
 
-Embora isso seja possível, ele requer alterações nos níveis de log nos arquivos de configuração no Git de Aviso e Erro para Depuração e a execução de uma implantação para AEM como Cloud Service para registrar essas alterações de configuração nos ambientes.
+Embora isso seja possível, ele requer alterações nos níveis de log nos arquivos de configuração no Git de Aviso e Erro para Depuração, além de executar uma implantação para AEM as a Cloud Service para registrar essas alterações de configuração nos ambientes.
 
 Dependendo do tráfego e da quantidade de declarações de log gravadas pelo Debug, isso pode resultar em um impacto negativo no desempenho do ambiente. Portanto, é recomendável que as alterações nos níveis de depuração de Preparo e Produção sejam:
 
@@ -541,11 +541,11 @@ Dependendo do tráfego e da quantidade de declarações de log gravadas pelo Deb
 
 ## Logs do Splunk {#splunk-logs}
 
-Os clientes que têm contas do Splunk podem solicitar, por meio de um tíquete de suporte ao cliente, que seus registros de Cloud Service AEM sejam encaminhados ao índice apropriado. Os dados de registro são equivalentes ao que está disponível por meio dos downloads de log do Cloud Manager, mas os clientes podem achar conveniente aproveitar os recursos de query disponíveis no produto Splunk.
+Os clientes que têm contas do Splunk podem solicitar, por meio do tíquete de suporte ao cliente, que os logs do AEM Cloud Service sejam encaminhados ao índice apropriado. Os dados de registro são equivalentes ao que está disponível por meio dos downloads de log do Cloud Manager, mas os clientes podem achar conveniente aproveitar os recursos de query disponíveis no produto Splunk.
 
 A largura de banda de rede associada aos logs enviados ao Splunk é considerada parte do uso de E/S de rede do cliente.
 
-### Ativar o encaminhamento de subpartes {#enabling-splunk-forwarding}
+### Ativar o encaminhamento do Splunk {#enabling-splunk-forwarding}
 
 Na solicitação de suporte, os clientes devem indicar:
 
