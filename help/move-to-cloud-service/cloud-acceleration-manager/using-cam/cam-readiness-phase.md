@@ -2,9 +2,9 @@
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '782'
 ht-degree: 5%
 
 ---
@@ -67,11 +67,17 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
    >[!NOTE]
    >Fazer upload de um novo relatório redefine todas as avaliações.
 
+### Usando a Visualização de Impressão {#print-preview-cam}
+
+Você pode selecionar a opção de pré-visualização de impressão no Cloud Acceleration Manager para obter uma pré-visualização imprimível dos relatórios ou imprimir o relatório em um formato PDF para facilitar a compartilhabilidade.
+
+Siga as etapas abaixo:
+
 1. Clique no ícone **Visualização de impressão**, conforme mostrado abaixo.
 
    ![imagem](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Clicar em **Visualização de impressão** abre uma nova guia com o relatório exibido em uma visualização que pode ser impressa. Clique em **Imprimir** para imprimir o relatório em um formato PDF para facilitar a compartilhabilidade.
+1. Clicar em **Visualização de impressão** abre uma nova guia com o relatório exibido em uma visualização que pode ser impressa. Clique em **Imprimir** para imprimir o relatório em um formato PDF.
 
    >[!IMPORTANT]
    >* A opção **Salvar como PDF** é recomendada e tem suporte para a funcionalidade acima.
