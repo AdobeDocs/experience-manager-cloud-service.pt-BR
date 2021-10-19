@@ -1,10 +1,10 @@
 ---
 title: Exclusão de um conjunto de migração na ferramenta Transferência de conteúdo
 description: Exclusão de um conjunto de migração na ferramenta Transferência de conteúdo
-source-git-commit: 01c657a994e1f8d6bd71acda90cf3b0e290d826b
+source-git-commit: 6397bef5611dd75568f23c8d1adbf4afa53c5f42
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 67%
+source-wordcount: '81'
+ht-degree: 39%
 
 ---
 
@@ -17,10 +17,10 @@ Você pode excluir o conjunto de migração na página *Visão geral.*
 
 Siga as etapas abaixo:
 
-1. Navegue até a página *Visão geral*, selecione o conjunto de migração que você deseja excluir e clique em **Excluir** na barra de ações.
+1. Navegue até o **Transferência de conteúdo** , selecione o conjunto de migração que deseja excluir e clique em **Excluir** na barra de ações.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/delete-1.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/migration-delete1.png)
 
 1. Clique em **Excluir** na caixa de diálogo **Excluir conjunto de migração** para confirmar a exclusão.
 
-   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+   ![imagem](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/migration-delete2.png)
