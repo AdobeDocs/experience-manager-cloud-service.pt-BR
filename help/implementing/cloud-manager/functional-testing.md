@@ -2,10 +2,10 @@
 title: Teste funcional - Cloud Services
 description: Teste funcional - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
+source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 2%
+source-wordcount: '898'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Os Testes funcionais de produto são um conjunto de testes de integração HTTP 
 
 Os testes funcionais do produto são executados automaticamente sempre que um cliente implanta o novo código no Cloud Manager e não pode ser ignorado.
 
-Consulte [Teste funcional do produto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) para obter amostras de teste.
+Consulte [Testes funcionais de produto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) para os ensaios de amostras.
 
 ## Teste funcional personalizado {#custom-functional-testing}
 
@@ -45,42 +45,42 @@ No entanto, se nenhum JAR de teste for produzido pela build, o teste será aprov
 
 O AEM fornece aos clientes um conjunto integrado de portas de qualidade do Cloud Manager para garantir atualizações tranquilas em seus aplicativos. Em particular, os portões de teste de TI já permitem que os clientes criem e automatizem seus próprios testes que usam AEM APIs.
 
-O recurso de teste da interface personalizada é um recurso opcional [Opt-in do cliente](#customer-opt-in) que permite que nossos clientes criem e executem automaticamente testes da interface do usuário para seus aplicativos. Os testes da interface do usuário são testes baseados em Selenium, compactados em uma imagem Docker, para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium). Saiba mais sobre como criar interface do usuário e gravar testes da interface do usuário a partir daqui. Além disso, um projeto de Testes de interface pode ser facilmente gerado usando o Arquétipo de projeto AEM.
+O recurso de teste da interface do usuário personalizada é um [recurso opcional](#customer-opt-in) que permite que nossos clientes criem e executem automaticamente testes da interface do usuário para seus aplicativos. Os testes da interface do usuário são testes baseados em Selenium, compactados em uma imagem Docker, para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium). Saiba mais sobre como criar interface do usuário e gravar testes da interface do usuário a partir daqui. Além disso, um projeto de Testes de interface pode ser facilmente gerado usando o Arquétipo de projeto AEM.
 
 Os clientes podem criar testes personalizados (via GIT) e conjunto de testes para interface do usuário. O teste da interface do usuário será executado como parte de uma porta de qualidade específica para cada pipeline do Cloud Manager com suas informações específicas de etapa e feedback. Quaisquer testes da interface do usuário, incluindo regressão e novas funcionalidades, permitirão que os erros sejam detectados e relatados no contexto do cliente.
 
 Os testes da interface do usuário do cliente são executados automaticamente no pipeline de Produção na etapa &quot;Teste da interface personalizada&quot;.
 
-Diferentemente do Teste Funcional Personalizado, que são testes HTTP escritos em java, os testes da interface do usuário podem ser uma imagem do docker com testes escritos em qualquer idioma, desde que sigam as convenções definidas em [Criando Testes da Interface do Usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests).
+Diferentemente do Teste Funcional Personalizado, que são testes HTTP escritos em java, os testes da interface do usuário podem ser uma imagem mais docker com testes escritos em qualquer idioma, desde que sigam as convenções definidas em [Criação de testes da interface do usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests).
 
 >[!NOTE]
->É recomendável seguir a estrutura e o idioma *(js e wdio)* convenientemente fornecidos no [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) como ponto de partida.
+>É recomendável seguir a estrutura e o idioma *(js e wdio)* convenientemente fornecido no [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) como ponto de partida.
 
 ### Opt-in do cliente {#customer-opt-in}
 
-Para que os testes da interface do usuário sejam criados e executados, os clientes precisam &quot;aceitar&quot; adicionando um arquivo ao repositório de código, no submódulo maven para testes da interface do usuário (ao lado do arquivo pom.xml do submódulo de testes da interface do usuário) e garantir que esse arquivo esteja na raiz do arquivo criado `tar.gz`.
+Para que os testes da interface do usuário sejam criados e executados, os clientes precisam &quot;aceitar&quot; adicionando um arquivo ao repositório de código, no submódulo maven para testes da interface do usuário (ao lado do arquivo pom.xml do submódulo de testes da interface do usuário) e garantir que esse arquivo esteja na raiz da build `tar.gz` arquivo.
 
 *Nome do arquivo*: `testing.properties`
 
-*Conteúdo*:  `ui-tests.version=1`
+*Conteúdo*: `ui-tests.version=1`
 
-Se isso não estiver no arquivo `tar.gz` criado, a interface do usuário testa a criação e as execuções serão ignoradas
+Se isso não estiver na build `tar.gz` , a interface do usuário testa a criação e as execuções serão ignoradas
 
-Para adicionar o arquivo `testing.properties` no artefato criado, adicione uma instrução `include` no arquivo `assembly-ui-test-docker-context.xml` (no submódulo de testes da interface do usuário):
+Para adicionar `testing.properties` no artefato criado, adicione um `include` instrução em `assembly-ui-test-docker-context.xml` (no submódulo de testes da interface do usuário):
 
     &quot;
-    [..]
+    [...]
     &lt;includes>
-    &lt;include>&lt;/include>
-    &lt;include>Dockerfilewait-for-grid.&lt;/include>
-    &lt;include>shtesting.properties&lt;/include> &lt;!- módulo de teste de aceitação no Cloud Manager —>
-    &lt;/include>
+    &lt;include>Dockerfile&lt;/include>
+    &lt;include>wait-for-grid.sh&lt;/include>
+    &lt;include>testing.properties&lt;/include> &lt;!>- módulo de teste de aceitação no Cloud Manager —>
+    &lt;/includes>
     [...]
     &quot;
 
 >[!NOTE]
->Os pipelines de produção criados antes de 10 de fevereiro de 2021 precisarão ser atualizados para usar os testes da interface do usuário, conforme descrito nesta seção. Essencialmente, isso significa que o Usuário deve editar o pipeline de Produção e clicar em **Salvar** na interface do usuário, mesmo que nenhuma alteração tenha sido feita.
->Consulte [Configuração do pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) para saber mais sobre a configuração do pipeline.
+>Os pipelines de produção criados antes de 10 de fevereiro de 2021 precisarão ser atualizados para usar os testes da interface do usuário, conforme descrito nesta seção. Basicamente, isso significa que o Usuário deve editar o pipeline de Produção e clicar em **Salvar** da interface do usuário, mesmo que nenhuma alteração tenha sido feita.
+>Consulte [Configuração do pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) para saber mais sobre a configuração de pipeline.
 
 ### Gravação de testes funcionais {#writing-functional-tests}
 
@@ -121,9 +121,9 @@ Além disso, o JAR deve ter o cabeçalho do manifesto Cloud-Manager-TestType def
 
 Dentro desse arquivo JAR, os nomes de classe dos testes reais a serem executados devem terminar em TI.
 
-Por exemplo, uma classe chamada `com.myco.tests.aem.ExampleIT` seria executada, mas uma classe chamada `com.myco.tests.aem.ExampleTest` não seria executada.
+Por exemplo, uma classe chamada `com.myco.tests.aem.ExampleIT` seria executado, mas uma classe chamada `com.myco.tests.aem.ExampleTest` não.
 
-As classes de teste precisam ser testes JUnit normais. A infraestrutura de teste é projetada e configurada para ser compatível com as convenções usadas pela biblioteca de testes aem-testing-clients. Os desenvolvedores são altamente incentivados a usar essa biblioteca e seguir suas práticas recomendadas. Consulte [Git Link](https://github.com/adobe/aem-testing-clients) para obter mais detalhes.
+As classes de teste precisam ser testes JUnit normais. A infraestrutura de teste é projetada e configurada para ser compatível com as convenções usadas pela biblioteca de testes aem-testing-clients. Os desenvolvedores são altamente incentivados a usar essa biblioteca e seguir suas práticas recomendadas. Consulte [Link Git](https://github.com/adobe/aem-testing-clients) para obter mais detalhes.
 
 ### Execução de Teste Local {#local-test-execution}
 
