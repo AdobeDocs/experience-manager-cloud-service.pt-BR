@@ -2,10 +2,10 @@
 title: Introdução ao Adobe Experience Manager as a Cloud Service
 description: Introdução ao Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 438a43d7b57d8b1ca78873eecfd94a4b30004829
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 100%
+source-wordcount: '603'
+ht-degree: 52%
 
 ---
 
@@ -13,42 +13,37 @@ ht-degree: 100%
 
 Agora o [Adobe Experience Manager](https://www.adobe.com/br/marketing/experience-manager.html) (AEM) está disponível as a Cloud Service.
 
-Adobe Experience Manager as a Cloud Service:
+O Adobe Experience Manager (AEM) as a Cloud Service é a última oferta da linha de produtos AEM, ajudando você a continuar a fornecer aos clientes experiências personalizadas e orientadas por conteúdo. Ele oferece agilidade nativa em nuvem para acelerar o tempo de implantação e é extensível para atender às suas necessidades exclusivas de negócios. Você pode basear-se em investimentos e inovações anteriores preservando e estendendo todos os seus casos de uso e funcionalidades.
 
-* É a maneira nativa em nuvem de aproveitar os aplicativos do AEM.
+AEM as a Cloud Service permite capitalizar os aplicativos AEM de uma maneira nativa em nuvem, para que você possa:
 
-* Permite proporcionar experiências personalizadas e orientadas por conteúdo aos clientes, combinando a eficiência do Sistema de gerenciamento de conteúdo do AEM com o Gerenciamento de ativos digitais do AEM.
+* Escale seus esforços do DevOps com [Cloud Manager: Estrutura de IC/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en), dimensionamento automático, conectividade de API, modos de implantação flexíveis, [portas de qualidade do código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/code-quality-testing.html?lang=en), e serviço.
 
-* Fornece Entrega contínua e integração contínua para atualizações sem tempo de inatividade.
+* Permita que desenvolvedores adicionem automação às práticas de desenvolvimento de aplicativos.
 
-* Fornece conteúdo de forma rápida e eficiente, aproveitando uma Rede de entrega de conteúdo (CDN) integrada e outras práticas recomendadas de camada de rede.
+* Forneça conteúdo de forma rápida e eficiente em uma escala global, usando uma Rede de entrega de conteúdo (CDN) integrada e outras práticas recomendadas da camada de rede.
 
-* É baseado em uma arquitetura dinâmica com dimensionamento automático, eliminando assim as considerações sobre infraestrutura.
+* Aproveite uma arquitetura dinâmica com dimensionamento automático, eliminando assim as considerações sobre infraestrutura.
 
-* Concentra-se na segurança, usando testes automáticos para verificar vulnerabilidades comuns.
+* Fique por cima das ameaças e da mitigação de riscos à segurança, usando testes automatizados para verificar vulnerabilidades comuns.
 
-* Valida o código do cliente usando testes automáticos.
+* Garanta o máximo de resiliência e eficiência com base em topologias de desempenho otimizadas.
 
-* Possui topologias de desempenho otimizadas para máxima resiliência e eficiência.
+* Aproveite AEM integração profunda da as a Cloud Service com a Adobe Experience Cloud para fornecer melhores experiências ao cliente com produtos de marketing online e de análise da Web.
 
-* Reduz significativamente a configuração manual necessária.
+* Utilize ferramentas que ajudam a acelerar as tarefas de migração, como refatoração de código, transferência de conteúdo e muito mais.
 
-* É extremamente integrado à Adobe Experience Cloud.
+Com AEM as a Cloud Service,
 
-* Apresenta a próxima geração da linha de produtos Adobe Experience Manager, com base em investimentos e inovações anteriores, preservando e estendendo todos os casos de uso e funcionalidades.
+* Os desenvolvedores podem se concentrar na configuração e extensão do AEM com o novo padrão de desenvolvimento baseado em nuvem.
 
-Tudo isso ajuda no seguinte:
+* Os Autores de conteúdo podem aproveitar as vantagens das mais recentes inovações fornecidas regularmente.
 
-* Os desenvolvedores se concentram na configuração e extensão do AEM, seguindo os mesmos padrões que tornaram o AEM bem-sucedido até agora, aumentado com o novo padrão de desenvolvimento baseado em nuvem.
+* Os administradores do sistema podem minimizar as tarefas manuais na configuração e na manutenção da infraestrutura.
 
-* Os autores desfrutam das mais recentes inovações, entregues a eles regularmente.
-
-* Simplifique a configuração e a infraestrutura para os administradores do sistema.
-
-* Os profissionais de marketing experimentam um rendimento mais rápido.
+* Os profissionais de marketing podem obter um valor mais rápido.
 
 >[!NOTE]
->
 >Consulte [Terminologia](terminology.md) para obter alguns dos novos termos que foram introduzidos no AEM as a Cloud Service.
 
 ## Valor agregado as a Cloud Service {#value-added-as-a-cloud-service}
