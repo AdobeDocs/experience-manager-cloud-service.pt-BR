@@ -2,7 +2,7 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
+source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -11,7 +11,7 @@ ht-degree: 29%
 
 # Introdução à ferramenta Transferência de conteúdo {#getting-started-content-transfer-tool}
 
-## Conectividade do ambiente de origem
+## Conectividade do ambiente de origem {#source-environment-connectivity}
 
 A instância de AEM de origem pode estar em execução atrás de um firewall em que só pode alcançar determinados hosts que foram adicionados a uma Lista de permissões. Para executar com êxito uma extração, os seguintes endpoints precisarão ser acessíveis da instância que está executando AEM:
 
@@ -30,6 +30,7 @@ Para testar a conectividade com o ambiente de destino AEM as a Cloud Service, em
 
 >[!NOTE]
 >Se uma `HTTP/2 200` for recebida, uma conexão com AEM as a Cloud Service foi bem-sucedida.
+
 
 ## Disponibilidade {#availability}
 
