@@ -3,7 +3,7 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: adb0aa2812871f6efedd1fb88663170127dc59d4
+source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 2%
@@ -156,7 +156,7 @@ Leia o [documentação](/help/security/configuring-advanced-networking.md) para 
 
 **Otimizações de índice**
 
-Para melhorar o desempenho de consultas de pesquisa e indexação, o índice de texto completo lucene-2 não está mais incluído pronto para uso no [!DNL Adobe Experience Manager] como [!DNL Cloud Service] desta versão. Para remover esse índice de texto completo em ambientes de AEM de acordo com AEM clientes, a Adobe Engineering trabalha de forma individual e pró-ativa com os clientes para obter uma remoção suave e sustentável do índice de texto completo do Lucene. Visite o [!DNL Adobe Experience Manager] como [!DNL Cloud Service] [documentação](/help/operations/indexing.md#index-optimizations) para obter mais informações e entrar em contato diretamente com o nosso suporte se tiver dúvidas.
+Para melhorar o desempenho de consultas de pesquisa e indexação, o índice de texto completo lucene-2 não é mais usado pronto para uso em [!DNL Adobe Experience Manager] como [!DNL Cloud Service] desta versão. Para remover esse índice de texto completo em ambientes de AEM de acordo com AEM clientes, a Adobe Engineering trabalha de forma individual e pró-ativa com os clientes para obter uma remoção suave e sustentável do índice de texto completo do Lucene. Visite o [!DNL Adobe Experience Manager] como [!DNL Cloud Service] [documentação](/help/operations/indexing.md#index-optimizations) para obter mais informações e entrar em contato diretamente com o nosso suporte se tiver dúvidas.
 
 ## Cloud Manager {#cloud-manager}
 
