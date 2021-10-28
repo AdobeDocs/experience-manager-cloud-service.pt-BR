@@ -2,7 +2,7 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d8c9373da79b46d32f8da37b4dfeae815348ae8a
+source-git-commit: ce0c9349cf6b52f7cba27397f1b85896ee156a35
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -11,21 +11,6 @@ ht-degree: 29%
 
 # Introdução à ferramenta Transferência de conteúdo {#getting-started-content-transfer-tool}
 
-## Conectividade do ambiente de origem {#source-environment-connectivity}
-
-A instância de AEM de origem pode estar em execução atrás de um firewall em que só pode alcançar determinados hosts que foram adicionados a uma Lista de permissões. Para executar com êxito uma extração, os seguintes endpoints precisarão ser acessíveis da instância que está executando AEM:
-
-* O público-alvo AEM ambiente as a Cloud Service: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* O serviço de armazenamento de blobs do Azure: `*.blob.core.windows.net`
-* O ponto de extremidade de E/S de Mapeamento de Usuário: `usermanagement.adobe.io`
-
-Para testar a conectividade com o ambiente de destino AEM as a Cloud Service, emita o seguinte comando cURL do shell da instância de origem (substitua `program_id`, `environment_id`e `migration_token`):
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
-
->[!NOTE]
->Se uma `HTTP/2 200` for recebida, uma conexão com AEM as a Cloud Service foi bem-sucedida.
 
 ## Disponibilidade {#availability}
 
@@ -40,6 +25,21 @@ A ferramenta Transferência de conteúdo pode ser baixada como um arquivo zip no
 
 >[!NOTE]
 >Baixe a ferramenta Transferência de conteúdo no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+
+## Conectividade do ambiente de origem {#source-environment-connectivity}
+
+A instância de AEM de origem pode estar em execução atrás de um firewall em que só pode alcançar determinados hosts que foram adicionados a uma Lista de permissões. Para executar com êxito uma extração, os seguintes endpoints precisarão ser acessíveis da instância que está executando AEM:
+
+* O público-alvo AEM ambiente as a Cloud Service: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* O serviço de armazenamento de blobs do Azure: `*.blob.core.windows.net`
+* O ponto de extremidade de E/S de Mapeamento de Usuário: `usermanagement.adobe.io`
+
+Para testar a conectividade com o ambiente de destino AEM as a Cloud Service, emita o seguinte comando cURL do shell da instância de origem (substitua `program_id`, `environment_id`e `migration_token`):
+
+`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
+
+>[!NOTE]
+>Se uma `HTTP/2 200` for recebida, uma conexão com AEM as a Cloud Service foi bem-sucedida.
 
 ## Execução da ferramenta Transferência de conteúdo {#running-tool}
 
