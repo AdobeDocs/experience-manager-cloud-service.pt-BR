@@ -2,10 +2,10 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 54ecb65e78b25aed694f00eed99015ef0226f862
+source-git-commit: 4d71cd5f2376d7cf5ea201410890259ae19f2846
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 29%
+source-wordcount: '801'
+ht-degree: 27%
 
 ---
 
@@ -27,13 +27,6 @@ Para testar a conectividade com o ambiente de destino AEM as a Cloud Service, em
 >Se uma `HTTP/2 200` for recebida, uma conexão com AEM as a Cloud Service foi bem-sucedida.
 
 ## Disponibilidade {#availability}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_download"
->title="Download"
->abstract="A ferramenta Transferência de conteúdo pode ser baixada como um arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM). Faça o download da versão mais recente."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Notas de versão"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portal de distribuição de software"
 
 A ferramenta Transferência de conteúdo pode ser baixada como um arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM). Faça o download da versão mais recente. Para obter mais detalhes sobre a versão mais recente, consulte [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
 
