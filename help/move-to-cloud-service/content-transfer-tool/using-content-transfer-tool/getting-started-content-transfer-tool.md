@@ -2,7 +2,7 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: ef699487b40c6f1479e00de99956295b5978e632
+source-git-commit: 54ecb65e78b25aed694f00eed99015ef0226f862
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -21,9 +21,7 @@ A instância de AEM de origem pode estar em execução atrás de um firewall em 
 
 Para testar a conectividade com o ambiente de destino AEM as a Cloud Service, emita o seguinte comando cURL do shell da instância de origem (substitua `program_id`, `environment_id`e `migration_token`):
 
-```
-curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
-```
+`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
 
 >[!NOTE]
 >Se uma `HTTP/2 200` for recebida, uma conexão com AEM as a Cloud Service foi bem-sucedida.
