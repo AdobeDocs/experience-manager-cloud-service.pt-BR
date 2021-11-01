@@ -2,9 +2,9 @@
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
+source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1042'
 ht-degree: 5%
 
 ---
@@ -90,7 +90,7 @@ Siga as etapas abaixo:
 
 Ao fazer upload de mais de um relatório do Analisador de práticas recomendadas (BPA) em um Projeto, você pode selecionar a variável **Exibir linha de tendência** para exibir e comparar os resultados dos relatórios BPA antigos.
 
-Siga as etapas abaixo para visualizar a linha de tendência:
+Siga as etapas abaixo para exibir os relatórios a partir da opção de linha de tendência:
 
 >[!NOTE]
 >Ao fazer upload de mais de um relatório BPA em um Projeto, você verá o ícone **...**.
@@ -104,7 +104,7 @@ Siga as etapas abaixo para visualizar a linha de tendência:
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >O relatório exibido é sempre o relatório que tem a Data de relatório mais recente.
+   >O relatório exibido na **Tela Relatório de linha de tendência** é sempre aquele com a data recente do relatório.
 
 1. Clique em **Exibir linha de tendência**, conforme mostrado na figura abaixo.
 
@@ -116,12 +116,14 @@ Siga as etapas abaixo para visualizar a linha de tendência:
 
    >[!NOTE]
    >O Relatório de linha de tendência exibe os resultados dos relatórios históricos de BPA em uma representação gráfica.
+   >
    >Você verá dois gráficos exibindo a tendência do:
-   >1. Tendência das conclusões de relatório
-   >1. Tendência de componentes e modelos personalizados
-      >Você pode adicionar ou alterar a exibição gráfica na lista suspensa, como mostrado abaixo.
-      >![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >1. **Tendência das conclusões de relatório**
+   >1. **Tendência de componentes e modelos personalizados**
 
+   >
+   >Você pode adicionar ou alterar a exibição gráfica no menu suspenso, como mostrado na figura abaixo:
+   >![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
 #### Excluindo o relatório de linha de tendência {#delete-trendline}
 
