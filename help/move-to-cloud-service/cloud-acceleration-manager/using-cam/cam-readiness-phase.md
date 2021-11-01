@@ -2,7 +2,7 @@
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
+source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 5%
@@ -93,7 +93,7 @@ Ao fazer upload de mais de um relatório do Analisador de práticas recomendadas
 Siga as etapas abaixo para exibir os relatórios a partir da opção de linha de tendência:
 
 >[!NOTE]
->Ao fazer upload de mais de um relatório BPA em um Projeto, você verá o ícone **...**.
+>Ao fazer upload de mais de um relatório BPA em um Projeto, você verá a variável **...** ícone .
 
 1. Navegue até o seu projeto e clique em **Revisão** do **Análise de práticas recomendadas** no **Prontidão** fase.
 
