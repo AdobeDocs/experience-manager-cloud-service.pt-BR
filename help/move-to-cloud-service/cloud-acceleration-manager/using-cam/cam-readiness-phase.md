@@ -2,9 +2,9 @@
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
+source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1058'
 ht-degree: 5%
 
 ---
@@ -125,9 +125,12 @@ Siga as etapas abaixo para exibir os relatórios a partir da opção de linha de
    >Você pode adicionar ou alterar a exibição gráfica no menu suspenso, como mostrado na figura abaixo:
    >![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
-#### Excluindo o relatório de linha de tendência {#delete-trendline}
+#### Excluir o relatório {#delete-trendline}
 
 Siga as etapas abaixo para excluir um relatório da exibição de Linha de tendência:
+
+>[!IMPORTANT]
+>Um relatório pode ser excluído somente quando mais de um relatório tiver sido carregado em um projeto.
 
 1. Navegue até o seu projeto e clique em **Revisão** do **Análise de práticas recomendadas** no **Prontidão** fase.
 
