@@ -2,9 +2,9 @@
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
+source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1057'
 ht-degree: 5%
 
 ---
@@ -104,7 +104,7 @@ Siga as etapas abaixo para exibir os relatórios a partir da opção de linha de
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >O relatório exibido na **Tela Relatório de linha de tendência** é sempre aquele com a data recente do relatório.
+   >O relatório exibido é sempre o relatório que tem a data mais recente.
 
 1. Clique em **Exibir linha de tendência**, conforme mostrado na figura abaixo.
 
@@ -124,33 +124,6 @@ Siga as etapas abaixo para exibir os relatórios a partir da opção de linha de
    >
    >Você pode adicionar ou alterar a exibição gráfica no menu suspenso, como mostrado na figura abaixo:
    >![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
-
-#### Excluir o relatório {#delete-trendline}
-
-Siga as etapas abaixo para excluir um relatório da exibição de Linha de tendência:
-
->[!IMPORTANT]
->Um relatório pode ser excluído somente quando mais de um relatório tiver sido carregado em um projeto.
-
-1. Navegue até o seu projeto e clique em **Revisão** do **Análise de práticas recomendadas** no **Prontidão** fase.
-
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
-
-1. Clique no botão **...** ícone para exibir o menu suspenso.
-
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
-
-1. Clique em **Exibir linha de tendência**, conforme mostrado na figura abaixo.
-
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. Clique no ícone de exclusão do **Relatório de linha de tendência** tela.
-
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
-
-1. Clique em **Excluir** para confirmar a exclusão.
-
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 
 ### Relatório de análise de práticas recomendadas {#analysis-report}
@@ -222,6 +195,33 @@ Siga esta seção para explorar o cartão de atividade Planejamento e configura�
 1. Um carrossel de conteúdo exibe todas as informações relevantes para essa fase da jornada de migração.
 
    ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### Excluindo um Relatório de Análise de Práticas Recomendadas {#delete-trendline}
+
+Siga as etapas abaixo para excluir um relatório da exibição de Linha de tendência:
+
+>[!IMPORTANT]
+>Um relatório pode ser excluído somente quando mais de um relatório tiver sido carregado em um projeto.
+
+1. Navegue até o seu projeto e clique em **Revisão** do **Análise de práticas recomendadas** no **Prontidão** fase.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Clique no botão **...** ícone para exibir o menu suspenso.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Clique em **Exibir linha de tendência**, conforme mostrado na figura abaixo.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Clique no ícone de exclusão do **Relatório de linha de tendência** tela.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Clique em **Excluir** para confirmar a exclusão.
+
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 ## O que vem a seguir {#whats-next}
 
