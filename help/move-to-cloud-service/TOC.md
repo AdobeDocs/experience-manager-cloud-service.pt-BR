@@ -5,10 +5,10 @@ breadcrumb-title: Guia de migração
 user-guide-description: Entenda a jornada de transição para o Cloud Service.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
+source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 38%
+source-wordcount: '190'
+ht-degree: 39%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 38%
 # Guia de migração para o AEM as a Cloud Service {#moving}
 
 + [Migração para o AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
++ Notas de versão das Ferramentas de migração {#release-notes-migration-tools}
+   + [Notas de versão atuais (2021.11.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+   + 2021 {#2021}
+      + [Notas da versão 2021.10.0](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
 + Fases da jornada de transição {#phases}
    + [Prontidão](/help/move-to-cloud-service/migration-readiness.md)
    + [Implementação](/help/move-to-cloud-service/migration-implementation.md)
@@ -46,7 +50,7 @@ ht-degree: 38%
       + [Exclusão de um conjunto de migração](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Execução da ferramenta Transferência de conteúdo em uma instância de publicação](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
       + [Solução de problemas da ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-      + Ferramenta de Mapeamento de Usuário {#user-mapping-tool}
+      + Ferramenta de mapeamento de usuários {#user-mapping-tool}
          + [Visão geral](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
          + [Considerações importantes](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
          + [Usar a ferramenta Mapeamento de usuários](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)

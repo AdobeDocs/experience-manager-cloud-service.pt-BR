@@ -2,7 +2,7 @@
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
+source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -88,7 +88,7 @@ Siga as etapas abaixo:
 
 ### Usando a Linha de Tendência da Exibição {#trendline-view-cam}
 
-Ao fazer upload de mais de um relatório do Analisador de práticas recomendadas (BPA) em um Projeto, você pode selecionar a variável **Exibir linha de tendência** para exibir e comparar os resultados dos relatórios BPA antigos.
+Ao fazer upload de mais de um relatório do Analisador de práticas recomendadas (BPA) em um Projeto, você pode selecionar a variável **Exibir linha de tendência** para exibir e comparar os resultados dos relatórios BPA históricos.
 
 Siga as etapas abaixo para exibir os relatórios a partir da opção de linha de tendência:
 
