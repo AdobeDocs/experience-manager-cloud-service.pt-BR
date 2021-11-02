@@ -3,7 +3,7 @@ title: Notas de versão para Ferramentas de migração AEM versão as a Cloud Se
 description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.10.0
 feature: Release Information
 exl-id: null
-source-git-commit: c7cee58a465887b15994a963448fcba8d546673a
+source-git-commit: 0058cfda65ec8f59dbe3ea1bbcc43c08c5e5fe3e
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 6%
@@ -17,24 +17,6 @@ Esta página descreve as Notas de versão para as Ferramentas de migração AEM 
 
 >[!NOTE]
 >Para ver as Notas de versão atuais do Adobe Experience Manager as a Cloud Service, clique em [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
-
-## Ferramenta Transferência de conteúdo {#ctt-release}
-
-### Data de lançamento {#release-date-ctt-latest}
-
-A Data de lançamento da ferramenta Transferência de conteúdo v1.6.0 é 4 de outubro de 2021.
-
-### Novidades {#what-is-new-ctt-oct}
-
-* Ferramenta de mapeamento de usuários aprimorada com uma experiência simplificada do usuário, incluindo os seguintes recursos listados abaixo. Para obter mais detalhes, consulte [Usar a ferramenta Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
-   * Testar conexão com a API de gerenciamento de usuários antes de executar o Mapeamento de usuários
-   * Ignore erros com cuidado e continue com a atividade de Mapeamento de usuários
-   * O mapeamento de usuário não falha mais se **Token de acesso** expira após 24 horas. O Mapeamento de Usuário pode ser executado novamente de onde parou pela última vez.
-
-* Para aumentar a robustez da ferramenta Transferência de conteúdo, o conteúdo pode ser assimilado na instância de autor ou de publicação de cada vez. Consulte [Introdução à ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) para obter mais detalhes.
-
-* Quando as versões são incluídas, o caminho `/var/audit` é incluído automaticamente para migrar eventos de auditoria.
-
 
 ## Cloud Acceleration Manager {#cam-release}
 
@@ -53,6 +35,24 @@ A data de lançamento do Cloud Acceleration Manager é 4 de outubro de 2021.
 ### Novidades {#what-is-new-cam-oct}
 
 O Cloud Acceleration Manager agora oferece aos usuários a capacidade de visualizar os relatórios de BPA em uma pré-visualização que pode ser impressa, permitindo que a impressão ou impressão simples sejam feitas no PDF para proporcionar fácil compartilhamento. Consulte as Etapas 6 e 7 em [Uso do cartão de análise de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+
+
+## Ferramenta Transferência de conteúdo {#ctt-release}
+
+### Data de lançamento {#release-date-ctt-latest}
+
+A Data de lançamento da ferramenta Transferência de conteúdo v1.6.0 é 4 de outubro de 2021.
+
+### Novidades {#what-is-new-ctt-oct}
+
+* Ferramenta de mapeamento de usuários aprimorada com uma experiência simplificada do usuário, incluindo os seguintes recursos listados abaixo. Para obter mais detalhes, consulte [Usar a ferramenta Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+   * Testar conexão com a API de gerenciamento de usuários antes de executar o Mapeamento de usuários
+   * Ignore erros com cuidado e continue com a atividade de Mapeamento de usuários
+   * O mapeamento de usuário não falha mais se **Token de acesso** expira após 24 horas. O Mapeamento de Usuário pode ser executado novamente de onde parou pela última vez.
+
+* Para aumentar a robustez da ferramenta Transferência de conteúdo, o conteúdo pode ser assimilado na instância de autor ou de publicação de cada vez. Consulte [Introdução à ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) para obter mais detalhes.
+
+* Quando as versões são incluídas, o caminho `/var/audit` é incluído automaticamente para migrar eventos de auditoria.
 
 ## Analisador de práticas recomendadas {#best-practices-analyzer}
 
