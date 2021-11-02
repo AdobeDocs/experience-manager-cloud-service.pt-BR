@@ -2,7 +2,7 @@
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
+source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -112,7 +112,8 @@ Siga as etapas abaixo para exibir os relatórios a partir da opção de linha de
 
 1. Clicando em **Exibir linha de tendência** abre a visualização da linha de tendência do relatório, como mostrado na figura abaixo.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+
 
    >[!NOTE]
    >O Relatório de linha de tendência exibe os resultados dos relatórios históricos de BPA em uma representação gráfica.
@@ -217,11 +218,11 @@ Siga as etapas abaixo para excluir um relatório da exibição de Linha de tend�
 
 1. Clique no ícone de exclusão do **Relatório de linha de tendência** tela.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Clique em **Excluir** para confirmar a exclusão.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## O que vem a seguir {#whats-next}
 
