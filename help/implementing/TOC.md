@@ -5,9 +5,9 @@ breadcrumb-title: Guia de implementação
 user-guide-description: Guia para personalizar a implantação do Experience Manager as a Cloud Service, incluindo tópicos de implantação e desenvolvimento.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
+source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1051'
 ht-degree: 35%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 35%
       + [Exibição e atualização e substituição de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [Verificando o status de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [Excluindo um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
-   + Gerenciando Nomes de Domínio Personalizados {#custom-domain-names}
+   + Gerenciar nomes de domínio personalizados {#custom-domain-names}
       + [Introdução](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Obter um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -94,7 +94,7 @@ ht-degree: 35%
       + [Visualização e atualização e substituição de um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [Atualização de um certificado SSL de nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [Excluindo um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   + Gerenciando Listas de permissões IP {#ip-allow-lists}
+   + Gerenciamento de Listas de permissões IP {#ip-allow-lists}
       + [Introdução](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Adicionar uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Visualização e atualização de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
@@ -114,7 +114,7 @@ ht-degree: 35%
    + [Materiais de referência de API](/help/implementing/developing/reference-materials.md)
    + [Gerar tokens de acesso para APIs do lado do servidor](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Cabeça e Sem Cabeça no AEM](developing/headful-headless.md)
-   + Desenvolvimento de pilha completa {#full-stack}
+   + Desenvolvimento de pilha completa AEM {#full-stack}
       + [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
       + [Estrutura da interface AEM](developing/introduction/ui-structure.md)
       + [Folha de características do Sling](developing/introduction/sling-cheatsheet.md)
@@ -171,7 +171,7 @@ ht-degree: 35%
          + [API GraphQL de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
          + [AEM API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
          + [Autenticação para consultas GraphQL de AEM Remotas em Fragmentos de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
-   + Desenvolvimento AEM híbrido e SPA {#hybrid}
+   + Desenvolvimento híbrido e SPA AEM {#hybrid}
       + [Híbrido e SPA com AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [Ativando a exportação JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [Introdução SPA e Apresentação](developing/hybrid/introduction.md)
@@ -198,6 +198,7 @@ ht-degree: 35%
    + [Plug-in do Content Package Maven](/help/implementing/developing/tools/maven-plugin.md)
    + [Ferramenta AEM Repo](/help/implementing/developing/tools/repo-tool.md)
    + [Uso do CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+   + [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md)
    + [O Externalizador de links](/help/implementing/developing/tools/externalizer.md)
 + Personalização {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)

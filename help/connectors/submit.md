@@ -2,7 +2,7 @@
 title: Envio de um conector do AEM
 description: Envio de um conector do AEM
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 11%
@@ -14,9 +14,9 @@ Envio de um conector do AEM
 
 As informações fornecidas abaixo são úteis para o envio de Conectores do AEM e devem ser lidas em conjunto com artigos sobre a [implementação](implement.md) e [manutenção](maintain.md) de conectores.
 
-AEM Conectores são listados no [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
+Os AEM Connectors são listados na seção [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
-Em soluções de AEM anteriores, o Gerenciador de Pacotes era usado para instalar conectores em várias instâncias de AEM. No entanto, com o AEM como Cloud Service, os conectores são implantados durante o processo de CI/CD no Cloud Manager. Para que os conectores sejam implantados, os conectores precisam ser referenciados no pom.xml do projeto maven.
+Em soluções AEM anteriores, [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) O foi usado para instalar conectores em várias instâncias de AEM. No entanto, com AEM as a Cloud Service, os conectores são implantados durante o processo de CI/CD no Cloud Manager. Para que os conectores sejam implantados, os conectores precisam ser referenciados no pom.xml do projeto maven.
 
 Há várias opções de como os pacotes podem ser incluídos em um projeto:
 
