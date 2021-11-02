@@ -1,9 +1,9 @@
 ---
 title: Notas de versão para Ferramentas de migração AEM versão as a Cloud Service 2021.11.0
-description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.11.0
+description: Notas de versão para Ferramentas de migração AEM versão as a Cloud Service 2021.11.0
 feature: Release Information
 exl-id: null
-source-git-commit: 0058cfda65ec8f59dbe3ea1bbcc43c08c5e5fe3e
+source-git-commit: 43b56f074c0e09074c6745c2384e9bfd6b2eebb2
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 8%
