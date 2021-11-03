@@ -1,19 +1,20 @@
 ---
-title: Configuração de pipeline de não produção
-description: Configuração de pipeline de não produção
+title: Configurar pipeline de não produção
+description: Siga esta página para saber mais sobre como configurar um pipeline de não produção no Cloud Manager
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 7d45179093366dda2d035b5a8eed219e4846f777
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
 
-# Configuração de pipeline de não produção {#configure-non-production-pipeline}
+# Configurar pipeline de não produção {#configure-non-production-pipeline}
 
 Além do principal pipeline que é implantado na fase e na produção, os clientes podem configurar pipelines adicionais, conhecidos como pipeline não relacionados à produção.
-Existem dois tipos de gasodutos não relacionados à produção:
+
+Há dois tipos de pipelines de não produção:
 
 1. Qualidade do código: Executa verificações de qualidade de código no código na ramificação git. Esse pipeline executa as etapas de build e qualidade de código.
 1. Implantação: Além de executar as etapas de criação e qualidade do código, esse pipeline implanta o código na não produção selecionada para AEM ambiente as a Cloud Service.
