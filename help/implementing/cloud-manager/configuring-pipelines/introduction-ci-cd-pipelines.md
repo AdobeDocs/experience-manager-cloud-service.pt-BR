@@ -1,10 +1,10 @@
 ---
 title: Pipelines de CI-CD
-description: Pipelines de CI-CD
+description: Siga esta página para saber mais sobre os pipeline de CI-CD do Cloud Manager
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: b6749b149e2166a6f2881817368e418d8b2adb00
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -32,14 +32,14 @@ No Cloud Manager, há dois tipos de pipeline:
 
 Um pipeline de produção é um pipeline criado para a finalidade que inclui uma série de etapas orquestradas para levar o código fonte até a produção. As etapas incluem a criação, o empacotamento, o teste, a validação e a implantação em todos os ambientes de Preparo primeiro. Escusado será dizer que um Pipeline de produção só poderá ser adicionado depois que um conjunto de ambientes de produção e preparo for criado.
 
-Consulte Configuração do pipeline de produção para obter mais detalhes.
+Consulte [Configuração de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para obter mais detalhes.
 
 
 ## Pipeline de não produção {#non-prod-pipeline}
 
 Um pipeline de não-produção tem como objetivo executar verificações de qualidade de código ou implantar o código-fonte em um ambiente de desenvolvimento.
 
-Consulte Pipelines de não produção e de qualidade de código somente para obter mais detalhes.
+Consulte [Configurar um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para obter mais detalhes.
 
 ## Como entender os pipeline de CI-CD no Cloud Manager {#understand-pipelines}
 
@@ -47,10 +47,14 @@ A tabela a seguir resume todos os pipelines no Cloud Manager, juntamente com seu
 
 | Tipo de pipeline | Implantação ou qualidade do código | Código fonte | Quando usar | Quando ou Por que devo usar? |
 |--- |--- |--- |---|---|---|
-| Produção ou não produção | Implantação | Front-End | Para implantar o código front-end. O código front-end é qualquer código que é servido como um arquivo estático. É separado do código da interface do usuário fornecido pelo AEM. Inclui Temas do Sites, SPA definidas pelo Cliente, SPA do Firefly e quaisquer outras soluções. Deve estar AEM versão. | Tempos de implantação rápidos.<br> Vários pipelines de front-end podem ser configurados e executados simultaneamente por ambiente. |
-|  | Implantação | Pilha completa | Para implantar configurações de back-end, front-end e HTTPD/dispatcher simultaneamente. Observação: Algumas restrições se aplicam. | Quando os pipelines de configuração do front-end ou da camada da Web ainda não foram adotados. |
-|  | Implantação | Configuração da camada da Web | Para implantar exclusivamente a configuração HTTPD/dispatcher em uma questão de minutos.  Esse pipeline simplificado fornece aos usuários que desejam implantar apenas as alterações de configuração do dispatcher, um meio acelerado de fazê-lo. Observação: Deve estar em AEM versão [version] | Tempos de implantação rápidos. |
+| Produção ou não produção | Implantação | Front-End | Para implantar o código front-end. O código front-end é qualquer código que é servido como um arquivo estático. É separado do código da interface do usuário fornecido pelo AEM. Inclui Temas do Sites, SPA definidas pelo Cliente, SPA do Firefly e quaisquer outras soluções. Deve estar AEM versão. | Tempos de implantação rápidos<br> Vários pipelines de front-end podem ser configurados e executados simultaneamente por ambiente |
+|  | Implantação | Pilha completa | Para implantar configurações de back-end, front-end e HTTPD/dispatcher simultaneamente. Algumas restrições se aplicam. | Quando os gasodutos de front-end ainda não foram adotados. |
+| Não produção | Qualidade do código | Front-End | Executar verificações de qualidade de código no código front-end | Tempos de implantação rápidos<br> Vários pipelines podem ser configurados e executados |
+|  | Qualidade do código | Pilha completa | Executar verificação de qualidade do código no código de pilha completo | Tempos de implantação rápidos<br> Vários pipelines podem ser configurados e executados |
 
+O diagrama a seguir ilustra as configurações de pipeline do Cloud Manager com um repositório front-end único ou uma configuração de repositório front-end independente tradicional:
+
+![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
 
 ## Pipelines de Front-End do Cloud Manager {#front-end}
 
@@ -59,10 +63,7 @@ Os pipelines front-end ajudam suas equipes a simplificar seu processo de design 
 >[!NOTE]
 >Um usuário conectado como função do Gerenciador de implantação pode criar e executar vários pipelines do front-end simultaneamente. Existe, no entanto, um limite máximo de 300 gasodutos por programa (em todos os tipos).
 
-Há dois tipos de pipeline front-end:
-
-* Qualidade do código front-end
-* Implantação de front-end
+Elas podem ser do tipo Qualidade do código front-end ou pipelines de implantação front-end.
 
 ### Antes de configurar os pipelines do Front-End {#before-start}
 
@@ -89,10 +90,7 @@ As seguintes restrições serão aplicáveis:
 
 1. O pipeline de Pilha completa para um ambiente ignorará a configuração do dispatcher se o pipeline de Configuração de camada da Web correspondente para o ambiente existir.
 
-Há dois tipos de pipeline de pilha completa:
-
-* Pipeline de qualidade do código de pilha completo
-* Pipeline de implantação de pilha completa
+Eles podem ser do tipo Pilha cheia - Qualidade do código ou Pilha cheia - pipeline de implantação.
 
 ### Configurar o pipeline de pilha completa {#configure-full-stack}
 
