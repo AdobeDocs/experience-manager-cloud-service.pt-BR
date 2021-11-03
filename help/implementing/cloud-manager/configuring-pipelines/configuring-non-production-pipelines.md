@@ -2,9 +2,9 @@
 title: Configurar pipeline de não produção
 description: Siga esta página para saber mais sobre como configurar um pipeline de não produção no Cloud Manager
 index: false
-source-git-commit: 7d45179093366dda2d035b5a8eed219e4846f777
+source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -36,12 +36,15 @@ Na tela inicial, esses pipelines são listados em um novo cartão:
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. Selecionar **Código de pilha completo** ou **Código de front-end**. Você pode escolher a variável **Repositório** e **Ramificação Git**. Clique em **Salvar**.
+1. Selecionar **[Código de pilha completo](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** ou **[Código de front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Você pode escolher a variável **Repositório** e **Ramificação Git**. Clique em **Salvar**.
+
+   >[!IMPORTANT]
+   >Se um pipeline de Código de pilha completo já existir para o ambiente selecionado, essa seleção será desativada.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
    >[!NOTE]
    >Antes de começar a configurar os pipelines do Front-End, consulte AEM Quick Site Creation Jornada para um workflow completo por meio da ferramenta fácil de usar AEM Quick Site Creation. Este site de documentação ajudará você a simplificar o desenvolvimento de front-end do seu site de AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end.
-
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
 1. O pipeline de não produção recém-criado agora é exibido na variável **Pipelines** cartão.
 
