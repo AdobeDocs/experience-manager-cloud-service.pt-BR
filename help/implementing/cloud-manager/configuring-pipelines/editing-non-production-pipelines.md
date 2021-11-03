@@ -2,9 +2,9 @@
 title: Edição de um pipeline de não produção
 description: Edição de um pipeline de não produção
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # Edição de um pipeline de não produção {#edit-non-prod-pipeline}
 
 É possível editar as configurações de pipeline da variável **Cartão de pipeline** from **Visão geral do programa** página.
+
+>[!IMPORTANT]
+>Não é possível editar um pipeline que esteja em execução.
 
 Siga as etapas abaixo para editar o pipeline de não produção configurado:
 

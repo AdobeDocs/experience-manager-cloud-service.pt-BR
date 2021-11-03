@@ -2,9 +2,9 @@
 title: Edição de um pipeline de produção
 description: Edição de um pipeline de produção
 index: false
-source-git-commit: b9d28088ad18a389108ebfb81aa750c63e637922
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # Edição de um pipeline de produção {#edit-prod-pipeline}
 
 É possível editar as configurações de pipeline da variável **Visão geral do programa** página.
+
+>[!IMPORTANT]
+>Não é possível editar um pipeline que esteja em execução.
 
 Siga as etapas abaixo para editar o pipeline configurado:
 
