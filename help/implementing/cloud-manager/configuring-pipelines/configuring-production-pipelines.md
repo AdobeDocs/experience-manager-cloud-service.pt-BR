@@ -2,9 +2,9 @@
 title: Configuração de pipeline de produção
 description: Configuração de pipeline de produção
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,12 @@ Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
    * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que aprova manualmente cada falha.
 
 
-1. O **Adicionar pipeline de produção** caixa de diálogo inclui uma segunda guia rotulada como **Código fonte**. Você pode selecionar **Código de pilha completo**, **Código de front-end** ou **Configuração da camada da Web**. Você pode escolher a variável **Repositório** e **Ramificação Git**. Selecione as Opções de implantação de produção, conforme explicado abaixo. Clique em **Continuar**.
+1. O **Adicionar pipeline de produção** caixa de diálogo inclui uma segunda guia rotulada como **Código fonte**. Você pode selecionar **Código de pilha completo** e **Código de front-end**. Você pode escolher a variável **Repositório** e **Ramificação Git**. Selecione as Opções de implantação de produção, conforme explicado abaixo. Clique em **Continuar**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   >[!NOTE]
+   >Antes de começar a configurar os pipelines do Front-End, consulte AEM Quick Site Creation Jornada para um workflow completo por meio da ferramenta fácil de usar AEM Quick Site Creation. Este site de documentação ajudará você a simplificar o desenvolvimento de front-end do seu site de AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end.
 
    Opções de implantação de produção:
 
@@ -99,7 +102,5 @@ Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
    * **Adicionar** - permite adicionar um novo pipeline.
    * **Acessar informações do repositório** - permite que o usuário obtenha as informações necessárias para acessar o repositório Git do Cloud Manager.
    * **Saiba mais** - navega para entender o recurso de documentação do pipeline de CI/CD.
-
-
 
 
