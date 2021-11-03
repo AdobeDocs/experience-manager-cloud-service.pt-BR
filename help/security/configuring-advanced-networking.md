@@ -1,9 +1,9 @@
 ---
 title: Configuração de redes avançadas para AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para AEM as a Cloud Service
-source-git-commit: 8990113529fb892f58b9171ebc2b04736bf45003
+source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2836'
 ht-degree: 1%
 
 ---
@@ -15,10 +15,6 @@ Este artigo tem como objetivo apresentar a você os diferentes recursos avançad
 
 ## Visão geral {#overview}
 
->[!INFO]
->
->O recurso avançado de rede faz parte da versão 2021.9.0 e será ativado para clientes em meados de outubro.
-
 AEM as a Cloud Service oferece vários tipos de recursos avançados de rede, que podem ser configurados por clientes usando APIs do Cloud Manager. Dentre elas:
 
 * [Saída flexível da porta](#flexible-port-egress) - configure AEM as a Cloud Service para permitir o tráfego de saída de portas não padrão
@@ -27,11 +23,12 @@ AEM as a Cloud Service oferece vários tipos de recursos avançados de rede, que
 
 Este artigo descreve cada uma dessas opções em detalhes, incluindo como elas podem ser configuradas. Como estratégia de configuração geral, a variável `/networkInfrastructures` O endpoint da API é chamado no nível do programa para declarar o tipo desejado de rede avançada, seguido de uma chamada para a `/advancedNetworking` endpoint para cada ambiente para habilitar a infraestrutura e configurar parâmetros específicos do ambiente. Consulte os endpoints apropriados na documentação da API do Cloud Manager para cada sintaxe formal, bem como exemplos de solicitações e respostas.
 
-Ao decidir entre saída de porta flexível e endereço IP de saída dedicado, é recomendável escolher saída de porta flexível se um endereço IP específico não for necessário, pois o Adobe pode otimizar o desempenho do tráfego de saída de porta flexível.
+Um programa pode proporcionar uma única variação avançada em rede. Ao decidir entre saída de porta flexível e endereço IP de saída dedicado, é recomendável escolher saída de porta flexível se um endereço IP específico não for necessário, pois o Adobe pode otimizar o desempenho do tráfego de saída de porta flexível.
 
 >[!INFO]
 >
 >A rede avançada não está disponível para o programa sandbox.
+>Além disso, os ambientes devem ser atualizados para AEM versão 5958 ou superior.
 
 >[!NOTE]
 >
@@ -49,9 +46,9 @@ Saída de porta flexível é a opção recomendada se você não precisar de VPN
 
 Uma vez por programa, o POST `/program/<programId>/networkInfrastructures` endpoint é chamado, basta passar o valor de `flexiblePortEgress` para `kind` parâmetro e região. O endpoint responde com a variável `network_id`, bem como outras informações, incluindo o status . O conjunto completo de parâmetros e a sintaxe exata devem ser referenciados nos documentos da API.
 
-Uma vez chamada, normalmente leva aproximadamente 15 minutos para a infraestrutura de rede ser provisionada. Uma chamada para o [ponto de extremidade do GET do ambiente](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) mostraria um status de &quot;pronto&quot;.
+Uma vez chamada, normalmente leva aproximadamente 15 minutos para a infraestrutura de rede ser provisionada. Uma chamada para o [ponto de extremidade do GET de infraestrutura de rede](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) mostraria um status de &quot;pronto&quot;.
 
-Se a configuração de saída de porta flexível com escopo de programa estiver pronta, a variável `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` o endpoint deve ser chamado por ambiente para habilitar a rede no nível do ambiente e declarar quaisquer regras de encaminhamento de porta. Os parâmetros são configuráveis por ambiente para oferecer flexibilidade.
+Se a configuração de saída de porta flexível com escopo de programa estiver pronta, a variável `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` o endpoint deve ser chamado por ambiente para permitir a operação em rede no nível do ambiente e declarar, opcionalmente, quaisquer regras de encaminhamento de portas. Os parâmetros são configuráveis por ambiente para oferecer flexibilidade.
 
 As regras de encaminhamento de portas devem ser declaradas para qualquer porta diferente de 80/443, especificando o conjunto de hosts de destino (nomes ou IP e com portas). Para cada host de destino, os clientes devem mapear a porta de destino pretendida para uma porta de 30000 a 30999.
 
