@@ -1,47 +1,63 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0.
-description: '[!DNL Adobe Experience Manager] as a Cloud Service Release Notes para 2020.10.0.'
+description: '[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.10.0.'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: 15908636f916a55008513035e3072cf1b1cc5f1c
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 23%
+source-wordcount: '1195'
+ht-degree: 21%
 
 ---
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
-A seção a seguir descreve as Notas de versão gerais de [!DNL Experience Manager] como um Cloud Service 2020.10.0.
+A seção a seguir descreve as Notas de versão gerais de [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
 ## Data de lançamento {#release-date}
 
-A Data de lançamento de [!DNL Adobe Experience Manager] como Cloud Service 2020.10.0 é 28 de outubro de 2020.
+A data de lançamento para [!DNL Adobe Experience Manager] O as a Cloud Service 2020.10.0 é 28 de outubro de 2020.
 A seguinte versão (2020.11.0) será lançada em 1º de dezembro de 2020.
 
-## [!DNL Adobe Experience Manager Sites] como um Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Novidades em [!DNL Sites] {#what-is-new-sites}
+### Novidades do [!DNL Sites] {#what-is-new-sites}
 
-* **[Componentes principais 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)**: O Adobe Experience Manager as a Cloud Service se beneficia de atualizações automáticas para a versão mais recente dos Componentes principais. A versão 2.12.0 inclui as melhorias mais recentes contribuídas pela comunidade. As melhorias incluem [um novo manipulador de formulário POST;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) a capacidade de incluir tags CSS, JavaScript e metadados personalizados [por meio de configuração sensível ao contexto;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) e um utilitário [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) para simplificar a integração da Camada de dados do Adobe em componentes personalizados. Consulte a lista de alterações [em 2.12.0.](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)
+* **[Componentes principais 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)**: A Adobe Experience Manager as a Cloud Service se beneficia de atualizações automáticas para a versão mais recente dos Componentes principais. A versão 2.12.0 inclui as melhorias mais recentes contribuídas pela comunidade. As melhorias incluem [um novo manipulador de POST form;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) a capacidade de incluir CSS, JavaScript e metadados personalizados [tags por meio da configuração com reconhecimento de contexto;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) e [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) para simplificar a integração da Camada de dados Adobe em componentes personalizados. Consulte a [lista de alterações](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) em 2.12.0.
 
-* **[Arquétipo de projeto 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: A base recomendada para iniciar um novo Experience Manager ficou melhor. Agora inclui a nova [Camada de Dados do Cliente Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), a opção para [entregar site na AMP,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) e os novos [pontos de extensão para adicionar CSS/JS do projeto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
+* **[Arquétipo de projeto 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: A base recomendada para iniciar um novo Experience Manager ficou melhor. Agora inclui o novo [Camada de dados do cliente Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), opção para [entregar site no AMP,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) e novos [pontos de extensão para adicionar CSS/JS do projeto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 
 * **[Pastas do ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: Capacidade de criar pastas de público-alvo para organizar, localizar e selecionar facilmente segmentos de público-alvo a serem usados para os recursos de direcionamento de ofertas do ContextHub.
 
-## [!DNL Adobe Experience Manager Assets] como um Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei]Marcação** inteligente com vídeo alimentado: Ao aplicar modelos de IA para analisar o conteúdo de vídeo para tags específicas de objeto e ação, os usuários do DAM podem gastar menos tempo adicionando tags e mais tempo usando as informações avançadas e expostas. Por sua vez, você fornece a experiência correta aos clientes. Consulte [Ativos de vídeo de tag inteligente](/help/assets/smart-tags-video-assets.md).
+* **[!DNL Adobe Sensei]Marcação inteligente com vídeo avançado**: Ao aplicar modelos de IA para analisar o conteúdo de vídeo para tags específicas de objeto e ação, os usuários do DAM podem gastar menos tempo adicionando tags e mais tempo usando as informações avançadas e expostas. Por sua vez, você fornece a experiência correta aos clientes. Consulte [Ativos de vídeo de tags inteligentes](/help/assets/smart-tags-video-assets.md).
 
-* **Melhorias** na Brand Portal: Os novos recursos a seguir e muito mais estão disponíveis em  [!DNL Brand Portal]. Para obter detalhes, consulte as [[!DNL Brand Portal] notas de versão](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
+* **Melhorias na Brand Portal**: Os novos recursos a seguir e muito mais estão disponíveis em [!DNL Brand Portal]. Para obter detalhes, consulte [[!DNL Brand Portal] notas de versão](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
-   * [Experiência aprimorada ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) de download para downloads rápidos e simplificados. Configurações adicionais de downloads podem ser configuradas por administradores para uma experiência que atenda às necessidades de usuários e empresas.
+   * [Experiência aprimorada de download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) para downloads rápidos e simplificados. Configurações adicionais de downloads podem ser configuradas por administradores para uma experiência que atenda às necessidades de usuários e empresas.
    * Navegação até os Arquivos com um só clique, [Coleções](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html) e Links compartilhados estão agora possibilitados diretamente de qualquer página.
    * Os usuários agora podem [selecionar e baixar representações específicas](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page). A nova opção de download de representações está disponível no painel Representações na página de detalhes dos Ativos.
    * Um tempo limite de 15 minutos para sessões de usuários visitantes garante uma experiência otimizada a todos os usuários concomitantes.
 
-* **[!DNL Adobe Asset Link]versão 2.1**: Uma nova versão do  [Adobe Asset ](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) Linkextension for  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]e  [!DNL Adobe InDesign] está disponível. Ele adiciona compatibilidade com os aplicativos [!DNL Adobe Creative Cloud] mais recentes com a versão 2021, lançada em outubro de 2020.
+* **[!DNL Adobe Asset Link]versão 2.1**: Uma nova versão de [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) extensão para [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign] está disponível. Ele adiciona compatibilidade com o mais recente [!DNL Adobe Creative Cloud] aplicativos com a versão 2021, lançada em outubro de 2020.
 
-* **[!DNL Assets]Suporte** a arquivos WebP:  [!DNL Assets] o as a Cloud Service agora oferece suporte ao formato de imagem WebP. WebP é um formato de imagem emergente criado pelo Google. As imagens no formato de arquivo WebP são visualmente indistinguíveis dos arquivos JPG ou PNG e os arquivos são muito menores. O tamanho de arquivo reduzido dos ativos melhora o tempo de carregamento de página e ajuda os criadores de conteúdo a oferecerem uma experiência mais rápida na Web. Consulte como usar o WebP em [criar perfil de processamento](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
+* **[!DNL Assets]Suporte a arquivos WebP**: [!DNL Assets] as a Cloud Service agora oferece suporte ao formato de imagem WebP. WebP é um formato de imagem emergente criado pelo Google. As imagens no formato de arquivo WebP são visualmente indistinguíveis dos arquivos JPG ou PNG e os arquivos são muito menores. O tamanho de arquivo reduzido dos ativos melhora o tempo de carregamento de página e ajuda os criadores de conteúdo a oferecerem uma experiência mais rápida na Web. Veja como usar o WebP em [criar perfil de processamento](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
+
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#forms-oct-2021}
+
+### Novidades do [!DNL Forms] {#what-is-new-forms-oct-2021}
+
+* **Analytics para Adaptive Forms**: Agora é possível capturar e rastrear o comportamento de ambos, conectado e não conectado (anônimo) pelo Adobe Analytics para Adaptive Forms e coletar insights do usuário final. Ajuda os usuários de negócios a tomar decisões informadas sobre o conteúdo, layout e estilo do formulário adaptável com base nos insights coletados.
+
+### Novos recursos disponíveis em [!DNL Forms] canal de pré-lançamento {#prerelease-features-forms-oct-2021}
+
+* **Externalizar AEM dados do fluxo de trabalho para processamento seguro**: Você pode armazenar dados em andamento AEM variáveis do fluxo de trabalho que contêm elementos Sensíveis de dados pessoais (SPD) em um repositório gerenciado pelo cliente para processamento seguro. Ao processar o workflow, os dados armazenados nas variáveis do workflow não são mantidos em AEM repositório. Ele é buscado sob demanda do repositório gerenciado pelo cliente.
+
+### Recursos beta de [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) ajuda a combinar um modelo e dados XML para gerar documentos em vários formatos. O serviço permite gerar documentos no modo síncrono e em lote.
+
+Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no programa beta.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -49,7 +65,7 @@ A seguinte versão (2020.11.0) será lançada em 1º de dezembro de 2020.
 
 * Lançamento do site de referência CIF Venia - 2020.10.2, que inclui a versão mais recente dos Componentes principais CIF v1.4.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) para obter mais detalhes.
 
-* Lançamento de componentes principais CIF v1.4.0. Consulte [Componentes principais CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) para obter mais detalhes.
+* Lançamento de componentes principais CIF v1.4.0. Consulte [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-commerce}
 
@@ -63,7 +79,7 @@ A seguinte versão (2020.11.0) será lançada em 1º de dezembro de 2020.
 
 A Data de lançamento do Cloud Manager no Experience Manager as a Cloud Service 2020.10.0 é 2 de outubro de 2020.
 
-### Novidades em [!DNL Cloud Manager] {#what-is-new-cm}
+### Novidades do [!DNL Cloud Manager] {#what-is-new-cm}
 
 * A página Ambientes foi reprojetada.
 
@@ -73,7 +89,7 @@ A Data de lançamento do Cloud Manager no Experience Manager as a Cloud Service 
 
 * O número de variáveis por ambiente aumentou para 200.
 
-* O cartão Environment na página Visão geral agora lista até três ambientes. Os usuários podem selecionar o botão **Mostrar tudo** para navegar até a página de resumo do ambiente para exibir uma tabela com uma lista completa de ambientes.
+* O cartão Environment na página Visão geral agora lista até três ambientes. Os usuários podem selecionar a variável **Mostrar tudo** para navegar até a página de resumo do ambiente para exibir uma tabela com uma lista completa de ambientes.
 Consulte [Ambiente de visualização](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-cloud-manager}
@@ -98,11 +114,11 @@ Consulte [Ambiente de visualização](/help/implementing/cloud-manager/manage-en
 
 ### Fluxos de trabalhos {#workflows}
 
-* Foi adicionado suporte para pesquisar instâncias de fluxo de trabalho com base em Título do fluxo de trabalho, Modelo do fluxo de trabalho, Status, Iniciador, Caminho da carga útil e Data inicial. Consulte [Pesquisar Instâncias do Fluxo de Trabalho](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
+* Foi adicionado suporte para pesquisar instâncias de fluxo de trabalho com base em Título do fluxo de trabalho, Modelo do fluxo de trabalho, Status, Iniciador, Caminho da carga útil e Data inicial. Consulte [Pesquisar instâncias do fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ## Ferramenta Transferência de conteúdo {#content-transfer-tool}
 
-Saiba mais sobre as novidades e as atualizações da [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Versão v1.1.12.
+Saiba mais sobre as novidades e atualizações do [Ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Versão v1.1.12.
 
 ### Novidades {#what-is-new-ctt}
 

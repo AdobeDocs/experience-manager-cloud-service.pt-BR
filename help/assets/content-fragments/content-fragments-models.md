@@ -4,43 +4,39 @@ description: Saiba como os Modelos de fragmentos de conteúdo servem como base p
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d5032670c243779289e8e86850bbfd137d8d6286
+source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
 workflow-type: tm+mt
-source-wordcount: '2858'
+source-wordcount: '2838'
 ht-degree: 6%
 
 ---
 
 # Modelos de fragmentos do conteúdo {#content-fragment-models}
 
->[!NOTE]
->
->O recurso [Modelos de fragmento de conteúdo bloqueados (publicados)](#locked-published-content-fragment-models) está na versão beta.
-
-Os Modelos de fragmento de conteúdo no AEM definem a estrutura do conteúdo dos [fragmentos de conteúdo,](/help/assets/content-fragments/content-fragments.md) servindo como base do conteúdo sem cabeçalho.
+Modelos de fragmentos do conteúdo no AEM definem a estrutura do conteúdo para o [fragmentos de conteúdo,](/help/assets/content-fragments/content-fragments.md) servir como base do seu conteúdo sem periféricos.
 
 Para usar os Modelos de fragmento do conteúdo, você pode:
 
 1. [Ativar a funcionalidade do Modelo de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-1. [Crie](#creating-a-content-fragment-model) e  [configure](#defining-your-content-fragment-model) os Modelos de fragmento de conteúdo
-1. [Ativar os ](#enabling-disabling-a-content-fragment-model) Modelos de fragmento de conteúdo para usar ao criar Fragmentos de conteúdo para usar na criação de Fragmentos de conteúdo
-1. [Permita os Modelos de fragmento de conteúdo nas ](#allowing-content-fragment-models-assets-folder) pastas de Ativos necessárias, configurando as  **Políticas**.
+1. [Criar](#creating-a-content-fragment-model)e [configure](#defining-your-content-fragment-model), os Modelos de fragmento de conteúdo
+1. [Ativar os modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar Fragmentos de conteúdo para uso ao criar Fragmentos de conteúdo
+1. [Permitir os modelos de fragmento de conteúdo nas pastas de Ativos necessárias](#allowing-content-fragment-models-assets-folder) ao configurar **Políticas**.
 
 ## Criação de um modelo de fragmento de conteúdo {#creating-a-content-fragment-model}
 
-1. Navegue até **Ferramentas**, **Ativos** e abra **Modelos de fragmento de conteúdo**.
+1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
 1. Navegue até a pasta apropriada para sua [configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Use **Criar** para abrir o assistente.
 
    >[!CAUTION]
    >
-   >Se o [uso de modelos de fragmento de conteúdo não tiver sido ativado](/help/assets/content-fragments/content-fragments-configuration-browser.md), a opção **Criar** não estará disponível.
+   >Se a variável [o uso de modelos de fragmento de conteúdo não foi ativado](/help/assets/content-fragments/content-fragments-configuration-browser.md), o **Criar** não estará disponível.
 
-1. Especifique o **título do modelo**. Você também pode adicionar **Tags**, um **Descrição**, e selecionar **Ativar modelo** para [ativar o modelo](#enabling-disabling-a-content-fragment-model), se necessário.
+1. Especifique o **título do modelo**. Você também pode adicionar **Tags**, a **Descrição** e selecione **Ativar modelo** para [habilitar o modelo](#enabling-disabling-a-content-fragment-model) se necessário.
 
    ![título e descrição](assets/cfm-models-02.png)
 
-1. Use **Create** para salvar o modelo vazio. Uma mensagem indicará o sucesso da ação, você poderá selecionar **Abrir** para editar imediatamente o modelo ou **Concluído** para retornar ao console.
+1. Use **Criar** para salvar o modelo vazio. Uma mensagem indicará o sucesso da ação; você poderá selecionar **Abrir** para editar imediatamente o modelo, ou **Concluído** para retornar ao console.
 
 ## Definição do modelo de fragmento de conteúdo {#defining-your-content-fragment-model}
 
@@ -50,7 +46,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 >
 >A edição de um modelo de fragmento de conteúdo existente pode afetar fragmentos dependentes.
 
-1. Navegue até **Ferramentas**, **Ativos** e abra **Modelos de fragmento de conteúdo**.
+1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
 1. Abra o modelo necessário para **Editar**; use a ação rápida ou selecione o modelo e depois a ação na barra de ferramentas.
@@ -72,10 +68,10 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
       ![tipo de dados para campo](assets/cfm-models-04.png)
 
-   * Depois que um campo é adicionado ao modelo, o painel direito mostrará as **Propriedades** que podem ser definidas para esse tipo de dados específico. Aqui, é possível definir o que é necessário para esse campo.
+   * Depois que um campo é adicionado ao modelo, o painel direito mostrará a variável **Propriedades** que pode ser definido para esse tipo de dados específico. Aqui, é possível definir o que é necessário para esse campo.
 
-      * Muitas propriedades são autoexplicativas, para obter detalhes adicionais, consulte [Propriedades](#properties).
-      * A digitação de um **Rótulo do campo** preencherá automaticamente o **Nome da propriedade** - se estiver vazio, e poderá ser atualizado manualmente posteriormente.
+      * Muitas propriedades são autoexplicativas, para obter mais detalhes, consulte [Propriedades](#properties).
+      * Digitar um **Rótulo do campo** O preencherá automaticamente o **Nome da propriedade**  - se estiver vazio e puder ser atualizado manualmente posteriormente.
 
          >[!CAUTION]
          Ao atualizar manualmente a propriedade **Nome da propriedade** para um tipo de dados, observe que os nomes devem conter somente caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
@@ -95,7 +91,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
    ![save](assets/cfm-models-07.png)
 
-1. Selecione **Save** para manter a definição.
+1. Selecionar **Salvar** para manter a definição.
 
 ## Tipos de dados {#data-types}
 
@@ -116,10 +112,10 @@ Uma seleção de tipos de dados está disponível para definir seu modelo:
 * **Tags**
    * Permite que os autores de fragmentos acessem e selecionem áreas de tags
 * **Referência de conteúdo**
-   * Referências a outros conteúdos, de qualquer tipo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
+   * Referências a outros conteúdos, de qualquer tipo; pode ser usada para [criar conteúdo aninhado](#using-references-to-form-nested-content)
    * Se uma imagem for referenciada, você pode optar por mostrar uma miniatura
 * **Referência do fragmento**
-   * Faz referência a outros fragmentos de conteúdo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
+   * Faz referência a outros fragmentos de conteúdo; pode ser usada para [criar conteúdo aninhado](#using-references-to-form-nested-content)
    * O tipo de dados pode ser configurado para permitir que os autores de fragmento:
       * Edite o fragmento referenciado diretamente.
       * Crie um novo fragmento de conteúdo, com base no modelo apropriado
@@ -142,20 +138,20 @@ Muitas propriedades são autoexplicativas, para certas propriedades os detalhes 
 
 * **Nome da Propriedade**
 
-   Ao atualizar manualmente essa propriedade para um tipo de dados, observe que os nomes **must** contêm *somente* caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
+   Ao atualizar manualmente essa propriedade para um tipo de dados, observe que os nomes **must** contain *only* Caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
 
    >[!CAUTION]
    Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
-* **Renderizar**
-comoAs várias opções para realizar/renderizar o campo em um fragmento. Geralmente, isso permite definir se o autor verá uma única instância do campo ou poderá criar várias instâncias.
+* **Renderizar como**
+As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, isso permite definir se o autor verá uma única instância do campo ou poderá criar várias instâncias.
 
-* **Rótulo**
-do campoInserir um 
-**O** Rótulo do campo gerará automaticamente um Nome  **de propriedade**, que pode ser atualizado manualmente se necessário.
+* **Rótulo do campo**
+Inserir um 
+**Rótulo do campo** gerará automaticamente uma **Nome da propriedade**, que pode ser atualizado manualmente se necessário.
 
-* ****
-A validação ValidationBasic está disponível por mecanismos como a propriedade  **** Required . Alguns tipos de dados têm campos de validação de adição. Consulte [Validação](#validation) para obter mais detalhes.
+* **Validação**
+A validação básica está disponível por mecanismos como o **Obrigatório** propriedade. Alguns tipos de dados têm campos de validação de adição. Consulte [Validação](#validation) para obter mais detalhes.
 
 * No tipo de dados **Texto de várias linhas**, é possível definir o **Tipo padrão** como:
 
@@ -163,26 +159,26 @@ A validação ValidationBasic está disponível por mecanismos como a propriedad
    * **Markdown**
    * **Texto sem formatação**
 
-   Se não especificado, o valor padrão **Rich Text** é usado para este campo.
+   Se não especificado, o valor padrão **Texto formatado** é usada para esse campo.
 
    Alterar o **Tipo padrão** em um modelo de fragmento de conteúdo só terá efeito em um fragmento de conteúdo existente relacionado depois que esse fragmento for aberto no editor e salvo.
 
-* ****
-UniqueContent (para o campo específico) deve ser exclusivo em todos os fragmentos de conteúdo criados a partir do modelo atual.
+* **Exclusivo**
+O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos de conteúdo criados a partir do modelo atual.
 
    Isso é usado para garantir que os autores de conteúdo não possam repetir o conteúdo já adicionado em outro fragmento do mesmo modelo.
 
-   Por exemplo, um campo **Texto de linha única** chamado `Country` no Modelo de fragmento de conteúdo não pode ter o valor `Japan` em dois Fragmentos de conteúdo dependentes. Um aviso será emitido quando a segunda instância for tentada.
+   Por exemplo, um **Texto de linha única** campo chamado `Country` no Modelo de fragmento de conteúdo não pode ter o valor `Japan` em dois Fragmentos de conteúdo dependentes. Um aviso será emitido quando a segunda instância for tentada.
 
    >[!NOTE]
    A exclusividade é assegurada por raiz de idioma.
 
    >[!NOTE]
-   As variações podem ter o mesmo valor *exclusivo* que as variações do mesmo fragmento, mas não o mesmo valor que é usado em qualquer variação de outros fragmentos.
+   As variações podem ter o mesmo *único* como variações do mesmo fragmento, mas não o mesmo valor usado em qualquer variação de outros fragmentos.
 
 * Consulte **[Referência de conteúdo](#content-reference)** para obter mais detalhes sobre esse tipo de dados específico e suas propriedades.
 
-* Consulte **[Referência do fragmento (Fragmentos aninhados)](#fragment-reference-nested-fragments)** para obter mais detalhes sobre esse tipo de dados específico e suas propriedades.
+* Consulte **[Referência de fragmento (Fragmentos aninhados)](#fragment-reference-nested-fragments)** para obter mais detalhes sobre esse tipo de dados específico e suas propriedades.
 
 <!--
 * **Translatable**
@@ -215,20 +211,18 @@ Os Fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
    * Fornece uma referência simples a outro conteúdo; de qualquer tipo.
    * Pode ser configurado para uma ou várias referências (no fragmento resultante).
 
-* **[Referência de fragmento](#fragment-reference-nested-fragments)**  (fragmentos aninhados)
+* **[Referência do fragmento](#fragment-reference-nested-fragments)** (Fragmentos aninhados)
    * Faz referência a outros fragmentos, dependendo dos modelos específicos especificados.
    * Permite incluir/recuperar dados estruturados.
 
       >[!NOTE]
-      Esse método é de especial interesse em conjunto com [Entrega de conteúdo sem cabeçalho usando Fragmentos de conteúdo com GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+      Este método tem um interesse especial em conjunção com [Entrega de conteúdo sem cabeçalho usando Fragmentos de conteúdo com GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Pode ser configurado para uma ou várias referências (no fragmento resultante).
 
 >[!NOTE]
 AEM tem proteção de recorrência para:
-* Referências de conteúdo
-Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode levar a uma caixa de diálogo vazia do seletor de referência de fragmento.
-* Referências de fragmento em GraphQL
-Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados um pelo outro, ela retornará um valor nulo na primeira ocorrência.
+* Referências de conteúdo Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode levar a uma caixa de diálogo vazia do seletor de referência de fragmento.
+* Referências de fragmento em GraphQL Se você criar uma consulta profunda que retorne vários Fragmentos de conteúdo referenciados uns pelos outros, ela retornará um valor nulo na primeira ocorrência.
 
 
 ### Referência de conteúdo {#content-reference}
@@ -237,7 +231,7 @@ A Referência de conteúdo permite renderizar o conteúdo de outra fonte; por ex
 
 Além das propriedades padrão, você pode especificar:
 
-* O **Caminho Raiz** para qualquer conteúdo referenciado
+* O **Caminho raiz** para qualquer conteúdo referenciado
 * Os tipos de conteúdo que podem ser referenciados
 * Limitações para tamanhos de arquivo
 * Se uma imagem for referenciada:
@@ -270,27 +264,27 @@ type CompanyModel {
 ```
 
 >[!NOTE]
-Isso é de especial interesse em conjunto com [Entrega de conteúdo sem cabeçalho usando Fragmentos de conteúdo com GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+Este aspecto reveste-se de especial interesse em conjugação com [Entrega de conteúdo sem cabeçalho usando Fragmentos de conteúdo com GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Além das propriedades padrão, você pode definir:
 
 * **Renderizar como**:
 
-   * **multicampo**  - o autor do fragmento pode criar várias referências, individuais
+   * **multifield** - o autor do fragmento pode criar várias referências, individuais
 
-   * **referência de fragmento**  - permite que o autor do fragmento selecione uma única referência a um fragmento
+   * **fragmentreference** - permite que o autor do fragmento selecione uma única referência a um fragmento
 
-* **Modelo**
-TipoVários modelos podem ser selecionados. Ao criar o Fragmento de conteúdo, qualquer fragmento referenciado deve ter sido criado usando esses modelos.
+* **Tipo de modelo**
+Vários modelos podem ser selecionados. Ao criar o Fragmento de conteúdo, qualquer fragmento referenciado deve ter sido criado usando esses modelos.
 
-* **Caminho raizEspecifica um caminho raiz para qualquer fragmento referenciado.**
-
+* **Caminho raiz**
+Especifica um caminho raiz para qualquer fragmento referenciado.
 
 * **Permitir criação de fragmentos**
 
    Isso permitirá que o autor do fragmento crie um novo fragmento com base no modelo apropriado.
 
-   * **fragmentreferencecomposite**  - permite que o autor do fragmento crie um composto, selecionando vários fragmentos
+   * **fragmentreferencecomposite** - permite que o autor do fragmento crie um composto selecionando vários fragmentos
 
    ![Referência do fragmento](assets/cfm-fragment-reference.png)
 
@@ -300,7 +294,7 @@ Também há uma proteção de recorrência para Referências de fragmento em Gra
 
 ## Modelo de fragmento de conteúdo - Propriedades {#content-fragment-model-properties}
 
-Você pode editar as **Propriedades** de um Modelo de fragmento de conteúdo:
+Você pode editar o **Propriedades** de um modelo de fragmento de conteúdo:
 
 * **Básico**
    * **Título do modelo**
@@ -323,9 +317,9 @@ Depois que um modelo é criado, ele precisa ser ativado para que ele:
 Para ativar um Modelo que esteja sinalizado como:
 
 * **Rascunho** : mw (nunca habilitado).
-* **Desativado** : foi especificamente desativado.
+* **Desabilitado** : foi especificamente desativado.
 
-Use a opção **Ativar** de:
+Você usa a variável **Habilitar** de:
 
 * A barra de ferramentas superior, quando o Modelo necessário estiver selecionado.
 * A Ação rápida correspondente (passe o mouse sobre o Modelo necessário).
@@ -336,13 +330,13 @@ Use a opção **Ativar** de:
 
 Um modelo também pode ser desativado para que:
 
-* O modelo não está mais disponível como base para criar *novo* Fragmentos de conteúdo.
+* O modelo não está mais disponível como base para a criação *novo* Fragmentos de conteúdo.
 * No entanto:
    * O esquema GraphQL continua sendo gerado e ainda pode ser consultado (para evitar impacto na API JSON).
    * Todos os Fragmentos de conteúdo baseados no modelo ainda podem ser consultados e retornados do ponto de extremidade GraphQL.
 * O modelo não pode mais ser referenciado, mas as referências existentes são mantidas intocadas e ainda podem ser consultadas e retornadas do ponto de extremidade GraphQL.
 
-Para desativar um Modelo que esteja sinalizado como **Ativado**, use a opção **Desativar** de:
+Para desativar um Modelo que esteja sinalizado como **Ativado** você usa a variável **Desativar** de:
 
 * A barra de ferramentas superior, quando o Modelo necessário estiver selecionado.
 * A Ação rápida correspondente (passe o mouse sobre o Modelo necessário).
@@ -351,16 +345,16 @@ Para desativar um Modelo que esteja sinalizado como **Ativado**, use a opção *
 
 ## Permitir modelos de fragmentos de conteúdo na pasta Ativos {#allowing-content-fragment-models-assets-folder}
 
-Para implementar a governança de conteúdo, você pode configurar **Policies** na pasta Assets para controlar quais Modelos de fragmento de conteúdo são permitidos para a criação de Fragmento nessa pasta.
+Para implementar a governança de conteúdo, você pode configurar **Políticas** na pasta Ativos para controlar quais Modelos de fragmento de conteúdo são permitidos para a criação de Fragmento nessa pasta.
 
 >[!NOTE]
-O mecanismo é semelhante a [permitir modelos de página](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) para uma página e seus filhos, nas propriedades avançadas de uma página.
+O mecanismo é semelhante ao [como permitir modelos de página](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) para uma página e seus filhos, nas propriedades avançadas de uma página.
 
-Para configurar as **Políticas** para **Modelos permitidos de Fragmento de Conteúdo**:
+Para configurar o **Políticas** para **Modelos permitidos de fragmento do conteúdo**:
 
-1. Navegue e abra **Propriedades** para a pasta Ativos necessária.
+1. Navegar e abrir **Propriedades** para a pasta Ativos necessária.
 
-1. Abra a guia **Policies** , onde você pode configurar:
+1. Abra o **Políticas** , onde é possível configurar:
 
    * **Herdado de`<folder>`**
 
@@ -375,12 +369,12 @@ Para configurar as **Políticas** para **Modelos permitidos de Fragmento de Cont
       Vários modelos podem ser permitidos.
    ![Política do modelo de fragmento de conteúdo](assets/cfm-model-policy-assets-folder.png)
 
-1. **** Salve as alterações.
+1. **Salvar** quaisquer alterações.
 
 Os Modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos da seguinte maneira:
-* O **Policies** para **Modelos de fragmento de conteúdo permitidos**.
+* O **Políticas** para **Modelos permitidos de fragmento do conteúdo**.
 * Se estiver vazio, tente determinar a política usando as regras de herança.
-* Se a cadeia de herança não fornecer um resultado, verifique a configuração **Cloud Services** dessa pasta (também primeiro diretamente e, em seguida, por herança).
+* Se a cadeia de herança não fornecer um resultado, verifique a **Cloud Services** configuração dessa pasta (também diretamente e, em seguida, por herança).
 * Se nenhuma das opções acima fornecer resultados, então não há modelos permitidos para essa pasta.
 
 ## Exclusão de um modelo de fragmento de conteúdo {#deleting-a-content-fragment-model}
@@ -390,10 +384,10 @@ A exclusão de um modelo de fragmento de conteúdo pode afetar fragmentos depend
 
 Para excluir um modelo de fragmento de conteúdo:
 
-1. Navegue até **Ferramentas**, **Ativos** e abra **Modelos de fragmento de conteúdo**.
+1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
-1. Selecione o modelo, seguido por **Delete** na barra de ferramentas.
+1. Selecione seu modelo, seguido por **Excluir** na barra de ferramentas.
 
    >[!NOTE]
    Se o modelo for referenciado, um aviso será dado. Agir adequadamente.
@@ -404,10 +398,10 @@ Os modelos de fragmento de conteúdo precisam ser publicados quando/antes de qua
 
 Para publicar um modelo de fragmento de conteúdo:
 
-1. Navegue até **Ferramentas**, **Ativos** e abra **Modelos de fragmento de conteúdo**.
+1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
-1. Selecione o modelo, seguido por **Publish** na barra de ferramentas.
+1. Selecione seu modelo, seguido por **Publicar** na barra de ferramentas.
 O status publicado será indicado no console.
 
    >[!NOTE]
@@ -419,24 +413,21 @@ Os modelos de fragmento de conteúdo podem ter a publicação cancelada se não 
 
 Para cancelar a publicação de um modelo de fragmento de conteúdo:
 
-1. Navegue até **Ferramentas**, **Ativos** e abra **Modelos de fragmento de conteúdo**.
+1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
-1. Selecione o modelo, seguido por **Cancelar publicação** na barra de ferramentas.
+1. Selecione seu modelo, seguido por **Cancelar publicação** na barra de ferramentas.
 O status publicado será indicado no console.
 
 Se você tentar desfazer a publicação de um modelo usado atualmente por um ou mais fragmentos, um aviso de erro informará você sobre:
 
 ![Mensagem de erro do Modelo de fragmento de conteúdo ao cancelar a publicação de um modelo em uso](assets/cfm-model-unpublish-error.png)
 
-A mensagem sugerirá que você marque o painel [Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) para investigar mais:
+A mensagem sugerirá que você verifique a [Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) painel para investigar mais detalhadamente:
 
 ![Modelo de fragmento de conteúdo em referências](assets/cfm-model-references.png)
 
 ## Modelos de fragmentos de conteúdo bloqueados (publicados) {#locked-published-content-fragment-models}
-
->[!NOTE]
-O recurso Modelos de fragmentos de conteúdo bloqueados (publicados) está em beta.
 
 Esse recurso fornece o controle dos Modelos de fragmento de conteúdo que foram publicados.
 
@@ -462,45 +453,45 @@ Qualquer uma dessas opções pode interromper consultas se os modelos modificado
 
 ### A solução {#the-solution}
 
-Para solucionar esses problemas, os Modelos de fragmento de conteúdo são *bloqueados* em um modo SOMENTE LEITURA no autor - assim que forem publicados. Isso é indicado por **Locked**:
+Para solucionar esses problemas, os Modelos de fragmento de conteúdo são *bloqueado* em um modo SOMENTE LEITURA no autor - assim que forem publicados. Isso é indicado por **Bloqueado**:
 
 ![Cartão do modelo de fragmento de conteúdo bloqueado](assets/cfm-model-locked.png)
 
-Quando o modelo for **Locked** (no modo SOMENTE LEITURA), você poderá ver o conteúdo e a estrutura dos modelos, mas não poderá editá-los.
+Quando o modelo é **Bloqueado** (no modo SOMENTE LEITURA ), é possível visualizar o conteúdo e a estrutura dos modelos, mas não pode editá-los.
 
-Você pode gerenciar modelos **Bloqueados** no console ou no editor de modelo:
+Você pode gerenciar **Bloqueado** modelos do console ou do editor de modelo:
 
 * Console
 
-   No console, é possível gerenciar o modo SOMENTE LEITURA com as ações **Desbloquear** e **Bloquear** na barra de ferramentas:
+   No console, é possível gerenciar o modo SOMENTE LEITURA com o **Desbloquear** e **Bloquear** na barra de ferramentas:
 
    ![Barra de ferramentas do modelo de fragmento de conteúdo bloqueado](assets/cfm-model-locked.png)
 
    * Você pode **Desbloquear** um modelo para ativar as edições.
 
-      Se você selecionar **Desbloquear**, um aviso será exibido e você deverá confirmar a ação **Desbloquear**:
+      Se você selecionar **Desbloquear** um aviso será exibido e você deverá confirmar a variável **Desbloquear** ação:
       ![Mensagem ao desbloquear o modelo de fragmento de conteúdo](assets/cfm-model-unlock-message.png)
 
       Em seguida, você pode abrir o modelo para edição.
 
    * Você também pode **Bloquear** o modelo depois.
-   * A republicação do modelo o colocará imediatamente no modo **Locked** (SOMENTE LEITURA).
+   * A republicação do modelo imediatamente o colocará de volta **Bloqueado** Modo (SOMENTE LEITURA).
 
 * Editor de modelo
 
-   * Ao abrir um modelo bloqueado, você será avisado e terá três ações: **Cancelar**, **Ver Só de Leitura**, **Editar**:
+   * Ao abrir um modelo bloqueado, você será avisado e terá três ações: **Cancelar**, **Exibir somente leitura**, **Editar**:
 
       ![Mensagem ao visualizar um modelo de fragmento de conteúdo bloqueado](assets/cfm-model-editor-lock-message.png)
 
-   * Se você selecionar **Exibir somente leitura** poderá ver o conteúdo e a estrutura do modelo:
+   * Se você selecionar **Exibir somente leitura** é possível ver o conteúdo e a estrutura do modelo:
 
       ![Exibir somente leitura - modelo de fragmento de conteúdo bloqueado](assets/cfm-model-editor-locked-view-only.png)
 
-   * Se selecionar **Editar**, poderá editar e guardar as atualizações:
+   * Se você selecionar **Editar** você pode editar e salvar suas atualizações:
 
       ![Editar - Modelo de fragmento de conteúdo bloqueado](assets/cfm-model-editor-locked-edit.png)
 
       >[!NOTE]
       Ainda pode haver um aviso na parte superior, mas é quando o modelo já está em uso pelos Fragmentos de conteúdo existentes.
 
-   * **** Cancelar retornará você ao console.
+   * **Cancelar** retornará ao console.

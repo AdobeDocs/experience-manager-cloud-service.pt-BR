@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
+source-git-commit: 04e7cd99c98855ca109e112fd87877d0b6b536fc
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '690'
 ht-degree: 2%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 2%
 
 ## A história até agora {#story-so-far}
 
-No início da [AEM Jornada do autor de conteúdo sem cabeçalho](overview.md) os [Conceitos básicos de modelagem de conteúdo para headless com AEM](basics.md) cobriam os conceitos básicos e a terminologia relevante para a criação para headless.
+No início do [jornada do autor de conteúdo sem cabeçalho do AEM](overview.md) o [Noções básicas da modelagem de conteúdo para headless com AEM](basics.md) O aborda os conceitos básicos e a terminologia relevantes para a criação para periféricos.
 
 Este artigo se baseia neles para que você entenda como criar seus próprios Modelos de fragmento de conteúdo para seu projeto sem periféricos de AEM.
 
 ## Objetivo {#objective}
 
-* **Público-alvo**: Iniciante
+* **Público**: Iniciante
 * **Objetivo**: os conceitos e mecanismos de modelagem de conteúdo para seu CMS sem interface usando Modelos de fragmentos de conteúdo.
 
 <!-- which persona does this? -->
@@ -48,25 +48,25 @@ Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutur
 
 Após selecionar isso, navegue até o local do modelo e selecione **Criar**. Aqui você pode inserir vários detalhes principais.
 
-A opção **Enable model** é ativada por padrão. Isso significa que seu modelo estará disponível para uso (na criação de Fragmentos de conteúdo) assim que você salvá-lo. Você pode desativar se desejar - há oportunidades posteriormente para ativar (ou desativar) um modelo existente.
+A opção **Ativar modelo** é ativada por padrão. Isso significa que seu modelo estará disponível para uso (na criação de Fragmentos de conteúdo) assim que você salvá-lo. Você pode desativar se desejar - há oportunidades posteriormente para ativar (ou desativar) um modelo existente.
 
 ![Criar modelo de fragmento de conteúdo](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-Confirme com **Create** e você poderá **Abrir** seu modelo para começar a definir a estrutura.
+Confirme com **Criar** e você pode **Abrir** seu modelo para começar a definir a estrutura.
 
 ## Definição dos modelos de fragmento do conteúdo {#defining-content-fragment-models}
 
-Ao abrir um novo modelo pela primeira vez, você verá - um grande espaço em branco à esquerda e uma longa lista de **Tipos de dados** à direita:
+Ao abrir um novo modelo pela primeira vez, você verá um grande espaço em branco à esquerda e uma longa lista de **Tipos de dados** à direita:
 
 ![Modelo vazio](/help/assets/content-fragments/assets/cfm-models-03.png)
 
 Então, o que deve ser feito?
 
-Você pode arrastar instâncias dos **Tipos de dados** para o espaço esquerdo - você já está definindo seu modelo!
+Você pode arrastar as instâncias da variável **Tipos de dados** no espaço esquerdo - você já está definindo seu modelo!
 
 ![Definição de campos](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-Depois de adicionar um tipo de dados, você será solicitado a definir as **Properties** para esse campo. Eles dependem do tipo que está sendo usado. Por exemplo:
+Depois de adicionar um tipo de dados, você deverá definir a variável **Propriedades** para esse campo. Eles dependem do tipo que está sendo usado. Por exemplo:
 
 ![Propriedades de dados](/help/assets/content-fragments/assets/cfm-models-05.png)
 
@@ -101,13 +101,9 @@ Os modelos de fragmento de conteúdo precisam ser publicados quando/antes de qua
 >
 >Se um autor tentar publicar um fragmento de conteúdo para o qual o modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
 
->[!NOTE]
->
->O recurso Modelos de fragmentos de conteúdo bloqueados (publicados) está em beta.
+Assim que um modelo é publicado, ele é *bloqueado* em um modo SOMENTE LEITURA no autor. Isso tem como objetivo evitar alterações que resultariam em erros em esquemas e consultas GraphQL existentes, especialmente no ambiente de publicação. É indicado no console por **Bloqueado**.
 
-Assim que um modelo é publicado, ele fica *bloqueado* em um modo SOMENTE LEITURA no autor. Isso tem como objetivo evitar alterações que resultariam em erros em esquemas e consultas GraphQL existentes, especialmente no ambiente de publicação. É indicado no console por **Locked**.
-
-Quando o modelo é **Bloqueado** (no modo SOMENTE LEITURA), você pode ver o conteúdo e a estrutura dos modelos, mas não pode editá-los diretamente; no entanto, é possível gerenciar modelos **Bloqueados** no console ou no editor de modelos.
+Quando o modelo é **Bloqueado** (no modo SOMENTE LEITURA ), é possível visualizar o conteúdo e a estrutura dos modelos, mas não pode editá-los diretamente; embora você possa gerenciar **Bloqueado** modelos do console ou do editor de modelo.
 
 ## O que vem a seguir {#whats-next}
 
@@ -117,7 +113,7 @@ Agora que você aprendeu as noções básicas, o próximo passo é começar a cr
 
 * [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - esta página é baseada principalmente no console  **** Sites, mas muitos/a maioria dos recursos também são relevantes para navegar até os  **Modelos de fragmento de** conteúdo no console  **** Ativos e tomar medidas neles.
+* [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md) - esta página se baseia principalmente no **Sites** , mas muitos/a maioria dos recursos também são relevantes para navegar e executar ações, **Modelos de fragmentos do conteúdo** nos termos do **Ativos** console.
 
 * [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
 
