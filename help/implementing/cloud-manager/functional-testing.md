@@ -2,9 +2,9 @@
 title: Teste funcional - Cloud Services
 description: Teste funcional - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '920'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ Consulte [Testes funcionais de produto](https://github.com/adobe/aem-test-sample
 
 A etapa Custom Functional testing no pipeline está sempre presente e não pode ser ignorada.
 
-No entanto, se nenhum JAR de teste for produzido pela build, o teste será aprovado por padrão.
+A build deve produzir zero ou um JARs de teste. Se produzir JARs de teste zero, a etapa de teste será aprovada por padrão. Se a build produzir mais de um JARs de teste, o JAR selecionado é não determinístico.
 
 >[!NOTE]
 >O botão **Baixar registro** permite acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade de Download ou Registros finais. Consulte [Acesso e gerenciamento de logs](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
