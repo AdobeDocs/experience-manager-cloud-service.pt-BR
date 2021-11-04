@@ -1,10 +1,10 @@
 ---
 title: Pipelines de CI-CD
 description: Siga esta página para saber mais sobre os pipeline de CI-CD do Cloud Manager
-index: false
-source-git-commit: 71e4a9932ef89ebf263ebbc0300bf2c938fa50f5
+index: true
+source-git-commit: 45cb3ea26a86de07f98e576a23542e250c99291f
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ No Cloud Manager, há dois tipos de pipeline:
 * [Pipeline de produção](#prod-pipeline)
 * [Pipeline de não produção](#non-prod-pipeline)
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
 
 ## Pipeline de produção {#prod-pipeline}
@@ -49,11 +49,12 @@ Consulte [Configurar um pipeline de não produção](/help/implementing/cloud-ma
 A tabela a seguir resume todos os pipelines no Cloud Manager, juntamente com seu uso.
 
 | Tipo de pipeline | Implantação ou qualidade do código | Código fonte | Quando usar | Quando ou Por que devo usar? |
-|--- |--- |--- |---|---|---|
-| Produção ou não produção | Implantação | Front-End | Tempos de implantação rápidos.<br>Vários pipelines de front-end podem ser configurados e executados simultaneamente por ambiente.<br>A build do pipeline Front-End envia a build para um armazenamento. Quando uma página html é disponibilizada, ela pode fazer referência a arquivos estáticos do Código do Front, que serão fornecidos pela CDN usando esse armazenamento como uma origem. | Para implantar exclusivamente o código front-end contendo um ou mais aplicativos da interface do usuário do cliente. O código front-end é qualquer código que é servido como um arquivo estático. É separado do código da interface do usuário fornecido pelo AEM. Inclui Temas do Sites, SPA definidas pelo Cliente, SPA do Firefly e quaisquer outras soluções.<br>Deve estar em AEM versão `2021.10.5933.20211012T154732Z` |
+|--- |--- |--- |---|---|
+| Produção ou não produção | Implantação | Front-End | Tempos de implantação rápidos.<br>Vários pipelines de front-end podem ser configurados e executados simultaneamente por ambiente.<br>A build do pipeline Front-End envia a build para um armazenamento. Quando uma página html é disponibilizada, ela pode fazer referência a arquivos estáticos do Código do Front, que serão fornecidos pela CDN usando esse armazenamento como uma origem. | Para implantar exclusivamente o código front-end contendo um ou mais aplicativos da interface do usuário do cliente. O código front-end é qualquer código que é servido como um arquivo estático. É separado do código da interface do usuário fornecido pelo AEM. Inclui Temas do Sites, SPA definidas pelo Cliente, SPA do Firefly e quaisquer outras soluções.<br>Deve estar na AEM versão 2021.10.5933.20211012T154732Z |
 | Produção ou não produção | Implantação | Pilha completa | Quando os gasodutos de front-end ainda não foram adotados.<br>Para casos em que o código Front-End deve ser implantado exatamente ao mesmo tempo que o código do Servidor de AEM. | Para implantar AEM código do Servidor (conteúdo imutável, código Java, configurações OSGi, configuração HTTPD/dispatcher, repontar, conteúdo mutável, fontes) - contendo um ou mais aplicativos AEM do servidor, todos ao mesmo tempo. |
-| Não produção | Qualidade do código | Front-End | Fazer com que o Cloud Manager avalie o sucesso da build e a qualidade do código sem fazer uma implantação.<br>Vários pipelines podem ser configurados e executados. | Execute verificações de qualidade de código no código front-end. |
-| Não produção | Qualidade do código | Pilha completa | Fazer com que o Cloud Manager avalie o sucesso da build e a qualidade do código sem fazer uma implantação.<br>Vários pipelines podem ser configurados e executados. | Execute a verificação de qualidade do código no código de pilha completo. |
+| Não produção | Qualidade do código | Front-End | Para que o Cloud Manager seja avaliado. sucesso da build e qualidade do código sem fazer uma implantação.<br>Vários pipelines podem ser configurados e executados. | Execute verificações de qualidade de código no código front-end. |
+| Não produção | Qualidade do código | Pilha completa | Para que o Cloud Manager seja avaliado. sucesso da build e qualidade do código sem fazer uma implantação.<br>Vários pipelines podem ser configurados e executados. | Execute a verificação de qualidade do código no código de pilha completo. |
+
 
 O diagrama a seguir ilustra as configurações de pipeline do Cloud Manager com um repositório front-end único ou uma configuração de repositório front-end independente tradicional:
 
@@ -63,6 +64,9 @@ O diagrama a seguir ilustra as configurações de pipeline do Cloud Manager com 
 
 Os pipelines front-end ajudam suas equipes a simplificar seu processo de design e desenvolvimento, permitindo pipelines front-end acelerados para a implantação do código front-end. Esse pipeline diferenciado implanta JavaScript e CSS na camada de distribuição de AEM como um tema, resultando em uma nova versão de tema que pode ser referenciada das páginas entregues do tempo de execução de AEM. O código front-end é qualquer código que é servido como um arquivo estático. É separado do código da interface do usuário fornecido pelo AEM. Inclui Temas do Sites, SPA definidas pelo Cliente, SPA do Firefly e quaisquer outras soluções.
 
+>[!IMPORTANT]
+>Você deve estar AEM versão `2021.10.5933.20211012T154732Z ` para utilizar pipelines Front-End.
+
 >[!NOTE]
 >Um usuário conectado como função do Gerenciador de implantação pode criar e executar vários pipelines do front-end simultaneamente. Existe, no entanto, um limite máximo de 300 gasodutos por programa (em todos os tipos).
 
@@ -70,7 +74,7 @@ Elas podem ser do tipo Qualidade do código front-end ou pipelines de implantaç
 
 ### Antes de configurar os pipelines do Front-End {#before-start}
 
-Antes de começar a configurar os pipelines do Front-End, consulte AEM Quick Site Creation Jornada para um workflow completo por meio da ferramenta fácil de usar AEM Quick Site Creation. Este site de documentação ajudará você a simplificar o desenvolvimento de front-end do seu site de AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end.
+Antes de começar a configurar os pipelines do Front-End, consulte [AEM Jornada de criação rápida de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) para um fluxo de trabalho completo por meio da ferramenta de criação rápida de sites AEM fácil de usar. Este site de documentação ajudará você a simplificar o desenvolvimento de front-end do seu site de AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end.
 
 ### Configurar um pipeline front-end {#configure-front-end}
 
@@ -99,5 +103,5 @@ Eles podem ser do tipo Pilha cheia - Qualidade do código ou Pilha cheia - pipel
 
 Para saber como configurar o pipeline de pilha completa, consulte:
 
-* [Adicionar um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline))
+* [Adicionar um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Adicionar um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
