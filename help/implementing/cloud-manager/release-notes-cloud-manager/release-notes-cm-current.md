@@ -1,54 +1,63 @@
 ---
-title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.10.0
-description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.10.0
+title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.11.0
+description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.11.0
 feature: Release Information
 exl-id: null
-source-git-commit: 23b19789e9e9857c9ae3d763fc71586a5e5da25b
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '421'
 ht-degree: 3%
 
 ---
 
-# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.10.0 {#release-notes}
+# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.11.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager AEM as a Cloud Service 2021.10.0.
+Esta página descreve as Notas de versão do Cloud Manager AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->Para ver as Notas de versão atuais do Adobe Experience Manager as a Cloud Service, clique [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+>Para ver as Notas de versão atuais do Adobe Experience Manager as a Cloud Service, clique em [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
 
 ## Data de lançamento {#release-date}
 
-A Data de lançamento do Cloud Manager AEM as a Cloud Service 2021.10.0 é 14 de outubro de 2021.
-A próxima versão está planejada para 04 de novembro de 2021.
+A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.11.0 é 4 de novembro de 2021.
+A próxima versão está planejada para 9 de dezembro de 2021.
 
 ### Novidades {#what-is-new}
 
-* Em preparação para algumas alterações futuras, os pipelines de implantação existentes agora serão referenciados e rotulados na interface do usuário como **Pilha completa** pipelines.
+* Os usuários agora podem aproveitar os novos pipelines do Front-End para implantar exclusivamente o código front-end de forma acelerada. Consulte [Pipelines de Front-End do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para saber mais.
 
-* O cartão de pipeline foi atualizado para exibir agora uma única face integrada que mostra os pipelines de produção e não de produção, e o usuário pode selecionar Executar/Pausar/Retomar diretamente do menu de ação associado a cada pipeline.
+   >[!IMPORTANT]
+   >Você deve estar AEM versão `2021.10.5933.20211012T154732Z` para utilizar novos pipelines Front-End.
 
-* Um usuário na função Gerenciador de implantação agora pode excluir o pipeline de Produção de maneira automatizada por meio da interface do usuário.
+* A duração do pipeline de qualidade de código é significativamente reduzida ao executar a análise de código de uma maneira mais eficiente, sem a necessidade de criar uma imagem AEM inteira. Esta alteração será gradual durante as semanas que se seguem à libertação.
 
-* Adicionar e editar experiências de pipeline foi atualizado para agora usar modais modernos e familiares.
+* A ID de confirmação de Git agora será exibida nos detalhes de execução do pipeline, facilitando o rastreamento do código que foi criado.
 
-* Os usuários do Cloud Manager agora podem enviar feedback diretamente da interface do usuário por meio do botão **Feedback** no canto superior direito da página de aterrissagem.
+* A Criação de programas agora está disponível por meio da API exposta publicamente.
 
-* Os gráficos de SLA anuais agora podem ser baixados na interface do usuário do Cloud Manager.
+* A Criação de ambiente agora está disponível por meio da API exposta publicamente.
 
-* As execuções de pipeline de não produção e qualidade de código agora usam um processo de clonagem superficial mais eficiente durante a etapa de compilação, resultando em um tempo de compilação mais rápido para clientes com repositórios Git especialmente grandes.
+* O `x-request-id` o cabeçalho de resposta agora está visível no Reprodução da API em [www.adobe.io](https://www.adobe.io/). Esse cabeçalho é útil ao enviar problemas de atendimento ao cliente para solução de problemas.
 
-* O assistente Adicionar Lista de permissões de IP agora informará o usuário se o número máximo permitido de Listas de permissões de IP tiver sido atingido.
+* Como usuário, vejo que o pipeline card com zero pipelines me fornece a orientação apropriada.
 
-* A documentação da API do Cloud Manager agora inclui um playground interativo que permite que os usuários conectados façam experiências com a API a partir de seu navegador. Consulte [Espaço de reprodução da API do Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) para obter mais detalhes.
+* Uma nova página Pipelines com uma oferta de status on-hover para facilitar a visualização do resumo dos detalhes está disponível. As execuções de pipeline podem ser visualizadas junto com seus detalhes associados.
 
-* A dica de ferramenta no cartão Programa será mais descritiva se uma opção de seleção em &quot;Navegar para&quot; estiver desativada. Agora, ele exibe &quot;Um ambiente de produção não existe&quot;.
+* A API Editar pipeline agora oferece suporte à alteração do ambiente usado nas fases de implantação.
+
+* Uma otimização no processo de varredura do OakPal foi introduzida para pacotes grandes.
+
+* O arquivo CSV do problema de qualidade agora contém o carimbo de data e hora de cada problema de qualidade.
 
 ### Correções de erros {#bug-fixes}
 
-* Em raras situações, quando uma equipe de Adobe restaurava o ambiente de um cliente, a restauração era considerada concluída antes que o ambiente estivesse totalmente operacional.
+* Certas configurações de build não ortodoxas resultaram no armazenamento de arquivos desnecessários no cache de artefatos Maven do pipeline que resultaram em I/O de rede irrelevante ao iniciar e parar o contêiner de compilação.
 
-* Certas solicitações internas feitas durante a criação do ambiente não foram repetidas.
+* A API do PATCH de pipeline falha se a fase de implantação não existir.
 
-* Se ocorrer um erro de falha na implantação após a verificação do nome de domínio, a mensagem de erro foi corrigida para solicitar que o cliente entre em contato com o representante do Adobe.
+* O `ClientlibProxyResourceCheck` a regra de qualidade gerava problemas de falso positivo quando havia bibliotecas de clientes com caminhos de base comuns.
+
+* Mensagem de erro quando o número máximo de repositórios foi atingido não especificou o motivo do erro.
+
+* Em casos raros, os pipelines estavam falhando devido ao tratamento inadequado de tentativas de determinados códigos de resposta.
 

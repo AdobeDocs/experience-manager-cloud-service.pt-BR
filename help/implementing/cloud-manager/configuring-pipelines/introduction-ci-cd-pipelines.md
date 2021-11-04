@@ -2,7 +2,7 @@
 title: Pipelines de CI-CD
 description: Siga esta página para saber mais sobre os pipeline de CI-CD do Cloud Manager
 index: true
-source-git-commit: 45cb3ea26a86de07f98e576a23542e250c99291f
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -86,6 +86,7 @@ Para saber como configurar o pipeline front-end, consulte:
 ## Pipelines de pilha completa {#full-stack-pipeline}
 
 O pipeline de Pilha cheia oferece ao usuário a opção de implantar configurações de back-end, front-end e HTTPD/dispatcher simultaneamente.  Ele implanta código e conteúdo no tempo de execução AEM incluindo código front-end (JavaScript/CSS) empacotado como Bibliotecas AEM clientes. Ele pode implantar a configuração da camada da Web se um pipeline da camada da Web não estiver configurado. Isso representa o pipeline &quot;uber&quot;, enquanto fornece aos usuários as opções para implantar exclusivamente seu código Front-End ou a configuração do dispatcher por meio do pipeline Front-End e do pipeline de Configuração de camada da Web, respectivamente.
+Eles podem ser do tipo Pilha cheia - Qualidade do código ou Pilha cheia - pipeline de implantação.
 
 As seguintes restrições serão aplicáveis:
 
@@ -97,7 +98,6 @@ As seguintes restrições serão aplicáveis:
 
 1. O pipeline de Pilha completa para um ambiente ignorará a configuração do dispatcher se o pipeline de Configuração de camada da Web correspondente para o ambiente existir.
 
-Eles podem ser do tipo Pilha cheia - Qualidade do código ou Pilha cheia - pipeline de implantação.
 
 ### Configurar um pipeline de pilha completo {#configure-full-stack}
 
