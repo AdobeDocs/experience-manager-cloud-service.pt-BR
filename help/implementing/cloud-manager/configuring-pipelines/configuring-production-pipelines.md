@@ -2,9 +2,9 @@
 title: Configuração de pipeline de produção
 description: Configuração de pipeline de produção
 index: true
-source-git-commit: f25e26c84a87cf793f9c8a5ac53009034e6cd2e9
+source-git-commit: 8bdc246d1f47e1bdc9a217588f0be69a09982be5
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -55,14 +55,14 @@ Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
    * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que aprova manualmente cada falha.
 
 
-1. O **Adicionar pipeline de produção** caixa de diálogo inclui uma segunda guia rotulada como **Código fonte**. Você pode selecionar **[Código de pilha completo](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** ou **[Código de front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Você pode escolher a variável **Repositório** e **Ramificação Git**. Selecione as Opções de implantação de produção, conforme explicado abaixo. Clique em **Continuar**.
+1. O **Adicionar pipeline de produção** caixa de diálogo inclui uma segunda guia rotulada como **Código fonte**. Você pode selecionar **[Código de front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** ou **[Código de pilha completo](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
    Se você selecionou **Código de front-end**, você deve selecionar a variável **Repositório**, **Ramificação Git** e **Localização do código**, como mostrado na figura abaixo:
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
-   Se você selecionou **Código de pilha completo**, você deve selecionar a variável **Repositório**, **Ramificação Git** e **Opções de implantação de produção**, como mostrado na figura abaixo:
+   Se você selecionou **Código de pilha completo**, você deve selecionar a variável **Repositório**, **Ramificação Git** e **Opções de implantação de produção** (pormenores abaixo), como indicado na figura:
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
 
    **Opções de implantação de produção:**
@@ -77,9 +77,7 @@ Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
    >[!NOTE]
    >Antes de começar a configurar os pipelines do Front-End, consulte [AEM Jornada de criação rápida de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) para um fluxo de trabalho completo por meio da ferramenta de criação rápida de sites AEM fácil de usar. Este site de documentação ajudará você a simplificar o desenvolvimento de front-end do seu site de AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end.
 
-
-
-
+1. Clique em **Continuar** depois de selecionar as opções na **Código fonte** guia .
 
 1. O **Adicionar pipeline de produção** caixa de diálogo inclui uma terceira guia rotulada como **Auditoria de experiência**. Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência.
 
@@ -111,9 +109,12 @@ Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
 
 1. Clique em **Salvar**. O pipeline de produção recém-criado agora é exibido na variável **Pipelines** cartão.
 
-   O pipeline é mostrado no cartão na tela inicial com três ações, conforme mostrado abaixo:
+   O pipeline é mostrado no cartão na tela inicial com quatro ações, conforme mostrado abaixo:
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
 
    * **Adicionar** - permite adicionar um novo pipeline.
+   * **Mostrar tudo** - permite que o usuário visualize todos os pipelines.
    * **Acessar informações do repositório** - permite que o usuário obtenha as informações necessárias para acessar o repositório Git do Cloud Manager.
    * **Saiba mais** - navega para entender o recurso de documentação do pipeline de CI/CD.
 
