@@ -2,9 +2,9 @@
 title: Configuração de pipeline de produção
 description: Configuração de pipeline de produção
 index: true
-source-git-commit: 307472d5b9887101b9e365cafc781ec97a1bcdb5
+source-git-commit: f25e26c84a87cf793f9c8a5ac53009034e6cd2e9
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,18 @@ Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
 
 1. O **Adicionar pipeline de produção** caixa de diálogo inclui uma segunda guia rotulada como **Código fonte**. Você pode selecionar **[Código de pilha completo](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** ou **[Código de front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Você pode escolher a variável **Repositório** e **Ramificação Git**. Selecione as Opções de implantação de produção, conforme explicado abaixo. Clique em **Continuar**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+
+   Se você selecionou **Código de front-end**, você deve selecionar a variável **Repositório**, **Ramificação Git** e **Localização do código**, como mostrado na figura abaixo:
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+
+   Se você selecionou **Código de pilha completo**, você deve selecionar a variável **Repositório**, **Ramificação Git** e **Opções de implantação de produção**, como mostrado na figura abaixo:
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
+
+   **Opções de implantação de produção:**
+
+   * **Pausar antes de implantar na produção**: Essa opção permite que a implantação seja pausada antes da produção.
+   * **Programado**: Essa opção permite que o usuário habilite a implantação de produção agendada.
 
    >[!IMPORTANT]
    >Se um pipeline de Código de pilha completo já existir para o ambiente selecionado, essa seleção será desativada.
@@ -66,10 +77,9 @@ Clique em **+Adicionar** e selecione **Adicionar pipeline de produção**.
    >[!NOTE]
    >Antes de começar a configurar os pipelines do Front-End, consulte [AEM Jornada de criação rápida de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) para um fluxo de trabalho completo por meio da ferramenta de criação rápida de sites AEM fácil de usar. Este site de documentação ajudará você a simplificar o desenvolvimento de front-end do seu site de AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end.
 
-   Opções de implantação de produção:
 
-   * **Pausar antes de implantar na produção**: Essa opção permite a interrupção da implantação antes da produção.
-   * **Programado**: Essa opção permite que o usuário habilite a implantação de produção agendada.
+
+
 
 1. O **Adicionar pipeline de produção** caixa de diálogo inclui uma terceira guia rotulada como **Auditoria de experiência**. Essa opção fornece uma tabela para os caminhos de URL que devem ser sempre incluídos na Auditoria de experiência.
 
