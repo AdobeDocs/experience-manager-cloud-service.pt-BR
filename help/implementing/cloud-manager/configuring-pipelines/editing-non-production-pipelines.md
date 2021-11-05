@@ -2,7 +2,7 @@
 title: Edição de um pipeline de não produção
 description: Edição de um pipeline de não produção
 index: true
-source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
+source-git-commit: 7dc9f9a189927f3522445fac36a1606521f410b2
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Você pode executar o pipeline de produção no cartão Pipelines :
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
-#### Excluindo um pipeline de não produção {#delete-nonprod}
+### Excluindo um pipeline de não produção {#delete-nonprod}
 
 Você pode excluir o pipeline de produção do cartão Pipelines:
 
