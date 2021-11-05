@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 719ee458fee7d4b19907b8aaf51eb2f2e8062abd
+source-git-commit: a0bf314ff8f994dd77c2c124db1ab604dcae74b6
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1435'
 ht-degree: 2%
 
 ---
@@ -93,10 +93,56 @@ Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no progr
 
 Esta seção descreve as Notas de versão do Cloud Manager AEM as a Cloud Service 2021.10.0.
 
+### Data de lançamento {#release-date-cm-nov}
+
+A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.11.0 é 4 de novembro de 2021.
+A próxima versão está planejada para 9 de dezembro de 2021.
+
+### Novidades {#what-is-new-cm-nov}
+
+* Os usuários agora podem aproveitar os novos pipelines do Front-End para implantar exclusivamente o código front-end de forma acelerada. Consulte [Pipelines de Front-End do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para saber mais.
+
+   >[!IMPORTANT]
+   >Você deve estar AEM versão `2021.10.5933.20211012T154732Z` para utilizar novos pipelines Front-End.
+
+* A duração do pipeline de qualidade de código é significativamente reduzida ao executar a análise de código de uma maneira mais eficiente, sem a necessidade de criar uma imagem AEM inteira. Esta alteração será gradual durante as semanas que se seguem à libertação.
+
+* A ID de confirmação de Git agora será exibida nos detalhes de execução do pipeline, facilitando o rastreamento do código que foi criado.
+
+* A Criação de programas agora está disponível por meio da API exposta publicamente.
+
+* A Criação de ambiente agora está disponível por meio da API exposta publicamente.
+
+* O `x-request-id` o cabeçalho de resposta agora está visível no Reprodução da API em [www.adobe.io](https://www.adobe.io/). Esse cabeçalho é útil ao enviar problemas de atendimento ao cliente para solução de problemas.
+
+* Como usuário, vejo que o pipeline card com zero pipelines me fornece a orientação apropriada.
+
+* Uma nova Página de atividade agora está disponível, onde atividades como pipeline e execuções de código podem ser visualizadas junto com seus detalhes associados. Com o tempo, as atividades listadas nesta página se expanderão no escopo junto com os detalhes fornecidos.
+
+* Uma nova página Pipelines com uma oferta de status on-hover para facilitar a visualização do resumo dos detalhes está disponível. As execuções de pipeline podem ser visualizadas junto com seus detalhes associados.
+
+* A API Editar pipeline agora oferece suporte à alteração do ambiente usado nas fases de implantação.
+
+* Uma otimização no processo de varredura do OakPal foi introduzida para pacotes grandes.
+
+* O arquivo CSV do problema de qualidade agora contém o carimbo de data e hora de cada problema de qualidade.
+
+### Correções de erros {#bug-fixes-nov}
+
+* Certas configurações de build não ortodoxas resultaram no armazenamento de arquivos desnecessários no cache de artefatos Maven do pipeline que resultaram em I/O de rede irrelevante ao iniciar e parar o contêiner de compilação.
+
+* A API do PATCH de pipeline falha se a fase de implantação não existir.
+
+* O `ClientlibProxyResourceCheck` a regra de qualidade gerava problemas de falso positivo quando havia bibliotecas de clientes com caminhos de base comuns.
+
+* Mensagem de erro quando o número máximo de repositórios foi atingido não especificou o motivo do erro.
+
+* Em casos raros, os pipelines estavam falhando devido ao tratamento inadequado de tentativas de determinados códigos de resposta.
+
+
 ## Data de lançamento {#release-date-cm-oct}
 
 A Data de lançamento do Cloud Manager AEM as a Cloud Service 2021.10.0 é 14 de outubro de 2021.
-A próxima versão está planejada para 04 de novembro de 2021.
 
 ### Novidades {#what-is-new-cm-oct}
 
