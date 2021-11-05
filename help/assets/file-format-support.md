@@ -1,29 +1,29 @@
 ---
 title: Formatos de arquivo suportados e tipos MIME
-description: Formatos de arquivo e tipos MIME suportados por [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+description: Formatos de arquivo e tipos MIME suportados por [!DNL Experience Manager Assets] como [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 10%
+source-wordcount: '834'
+ht-degree: 9%
 
 ---
 
 # [!DNL Assets] formatos de arquivo compatíveis {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] o as a  [!DNL Cloud Service] suporta recursos básicos de gerenciamento de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download e assim por diante — para qualquer arquivo binário, independente de seu formato. [!DNL Adobe Experience Manager Assets] O suporta uma grande variedade de formatos de arquivo e cada recurso de produto tem suporte variado para diferentes formatos.
+[!DNL Adobe Experience Manager] como [!DNL Cloud Service] O suporta recursos básicos de gerenciamento de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download etc. — para qualquer arquivo binário, independente de seu formato. [!DNL Adobe Experience Manager Assets] O suporta uma grande variedade de formatos de arquivo e cada recurso de produto tem suporte variado para diferentes formatos.
 
-Além disso, [!DNL Experience Manager Assets] oferece suporte estendido para gerar visualizações e representações e extrair metadados e texto para indexação de texto completo. Esse suporte estendido é fornecido usando [asset microservices](asset-microservices-configure-and-use.md).
+Além disso, [!DNL Experience Manager Assets] O oferece suporte estendido para gerar visualizações e representações e extrair metadados e texto para indexação de texto completo. Este suporte estendido é fornecido usando [microsserviços de ativos](asset-microservices-configure-and-use.md).
 
 Os destaques da conversão de ativos usando microsserviços de ativos incluem:
 
-* Os [formatos de arquivo Adobe](#adobe-formats) produzidos por aplicativos e serviços Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] ou PDF.
+* Chave [Formatos de arquivo Adobe](#adobe-formats) produzidos por aplicações e serviços de Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension]e [!DNL Adobe Acrobat] ou PDF.
 * Chave [formatos de arquivo de imagem](#image-formats).
-* [Camera Raw ](#camera-raw-formats) formatos de arquivo para uma grande variedade de câmeras, incluindo Canon, Nikon, FujiFilm, Olympus e outros fabricantes (alimentados pela Adobe Camera Raw).
-* Formatos de documento comuns [a1/>, incluindo o Microsoft Office e formatos Open Document.](#document-formats)
+* [Formatos de arquivo Camera Raw](#camera-raw-formats) para uma grande variedade de câmeras, incluindo Canon, Nikon, FujiFilm, Olympus e outros fabricantes (viabilizada pela Adobe Camera Raw).
+* Frequentes [formatos de documento](#document-formats), incluindo o Microsoft Office e formatos Open Document.
 * Grande variedade de formatos de [vídeo](#video-formats) e [áudio.](#audio-formats)
 
 A legenda a seguir descreve o nível de suporte para cada formato.
@@ -50,7 +50,7 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 | PSD | Instantâneo | - | Instantâneo | Instantâneo |
 | XD | Instantâneo | - | Instantâneo | Instantâneo |
 
-\* Para arquivos [!DNL Adobe InDesign] (INDD), o tamanho da representação é determinado pela pré-visualização incorporada no arquivo INDD. Configure as preferências em [!DNL InDesign] (**[!UICONTROL Preferências > Manuseio de arquivo > Sempre Salvar imagens de visualização com documentos, Visualizar tamanho]**) para incorporar representações maiores.
+\* Para [!DNL Adobe InDesign] arquivos (INDD), o tamanho da representação é determinado pela visualização incorporada no arquivo INDD. Configure as preferências em [!DNL InDesign] (**[!UICONTROL Preferências > Manuseio de arquivo > Sempre salvar imagens de visualização com documentos, Tamanho da visualização]**) para incorporar uma representação maior.
 
 ## Formatos de imagem {#image-formats}
 
@@ -77,12 +77,12 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 | JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 | PICT | Instantâneo | - | - | - | - |
 | PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| PSD   ‡ | Instantâneo | - | - | - | - |
+| PSD ‡ | Instantâneo | - | - | - | - |
 | TIFF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 
-‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada por [!DNL Adobe Photoshop] e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada por [!DNL Adobe Photoshop] e está incluído no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
-Os seguintes subtipos de formatos de arquivo de imagem rasterizada que não são suportados em [!DNL Dynamic Media]:
+Os seguintes subtipos de formatos de arquivo de imagem rasterizada que não são aceitos no [!DNL Dynamic Media]:
 
 * Arquivos PNG com um tamanho de bloco IDAT superior a 100 MB.
 * Arquivos PSB.
@@ -217,7 +217,20 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 ## Formatos de áudio {#audio-formats}
 
-[!DNL Assets] a as a  [!DNL Cloud Service] fornece suporte XMP extração de metadados para formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
+[!DNL Assets] como [!DNL Cloud Service] fornece suporte XMP extração de metadados para formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
+
+## Formatos de entrada suportados para transcrição de áudio e vídeo {#audio-video-transcription-formats}
+
+* FLV (com codecs H.264 e AAC) (.flv)
+* MXF (.mxf)
+* MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
+* Windows Media Video (WMV)/ASF (.wmv, .asf)
+* AVI (8 bits/10 bits descompactado) (.avi)
+* MP4 (.mp4, .m4a, .m4v)
+* Gravação de vídeo digital da Microsoft (DVR-MS) (.dvr-ms)
+* Matroska/WebM (.mkv)
+* WAVE/WAV (.wav)
+* QuickTime (.mov)
 
 ## Dicas e limitações {#limitations-and-tips}
 
