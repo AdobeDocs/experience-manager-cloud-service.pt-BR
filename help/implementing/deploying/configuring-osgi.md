@@ -3,9 +3,9 @@ title: Configuração do OSGi para Adobe Experience Manager as a Cloud Service
 description: 'Configuração do OSGi com valores secretos e valores específicos do ambiente '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f1ad12d308319ecfff6c0138ca77862976594e42
+source-git-commit: f947650b0872785e1f1b5f4c6542afd41fa61309
 workflow-type: tm+mt
-source-wordcount: '2938'
+source-wordcount: '2993'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ seguindo o formato de configuração do OSGi cfg.json.
 >
 >As versões anteriores AEM arquivos de configuração OSGi compatíveis usando formatos de arquivo diferentes, como .cfg., .config e como definições de recurso XML sling:OsgiConfig . Esses formatos são substituídos pelo formato de configuração OSGi cfg.json .
 
-## Runmode Resolution {#runmode-resolution}
+## Resolução do Modo de Execução {#runmode-resolution}
 
-Configurações específicas de OSGi podem ser direcionadas a instâncias AEM específicas usando modos de execução. To use runmode, create config folders under `/apps/example` (where example is your project name), in the format:
+Configurações específicas de OSGi podem ser direcionadas a instâncias AEM específicas usando modos de execução. Para usar o runmode, crie pastas de configuração em `/apps/example` (onde por exemplo é o nome do seu projeto), no formato:
 
 `/apps/example/config.<author|publish>.<dev|stage|prod>/`
 
@@ -50,7 +50,7 @@ Todas as configurações OSGi nessas pastas serão usadas se os runmodes definid
 
 Por exemplo, se AEM estiver usando os modos de execução author e dev, os nós de configuração em `/apps/example/config.author/` e `/apps/example/config.author.dev/` são aplicados, enquanto os nós de configuração em `/apps/example/config.publish/` e `/apps/example/config.author.stage/` não são aplicadas.
 
-If multiple configurations for the same PID are applicable, the configuration with the highest number of matching run modes is applied.
+Se várias configurações para o mesmo PID forem aplicáveis, a configuração com o maior número de modos de execução correspondentes será aplicada.
 
 A granularidade desta regra está em um nível PID. Isso significa que não é possível definir algumas propriedades para o mesmo PID em `/apps/example/config.author/` e mais específicas em `/apps/example/config.author.dev/` para o mesmo PID. A configuração com o maior número de modos de execução correspondentes será efetiva para todo o PID.
 
@@ -156,15 +156,15 @@ O AEM Web Console do AEM SDK Quickstart Jar pode ser usado para configurar compo
 >A interface do usuário de configuração do Console da Web AEM grava `.cfg.json` arquivos no repositório. Portanto, esteja ciente disso para evitar um comportamento inesperado potencial durante o desenvolvimento local, quando as configurações OSGi definidas pelo AEM projeto podem diferir das configurações geradas.
 
 1. Faça logon no console AEM Web do AEM SDK Quickstart Jar como o usuário administrador
-1. Navigate to OSGi > Configuration
+1. Navegue até OSGi > Configuração
 1. Para configurar, localize o componente OSGi e toque em seu título para editar
    ![Configuração do OSGi](./assets/configuring-osgi/configuration.png)
 1. Edite os valores da propriedade de configuração OSGi por meio da interface do usuário da Web, conforme necessário
-1. Record the Persistent Identity (PID) to safe place. Isso é usado posteriormente para gerar a configuração JSON do OSGi
+1. Registre a Identidade Persistente (PID) no local seguro. Isso é usado posteriormente para gerar a configuração JSON do OSGi
 1. Toque em Salvar
-1. Navigate to OSGi > OSGi Installer Configuration Printer
+1. Navegue até OSGi > Impressora de configuração do instalador OSGi
 1. Colar no PID copiado na Etapa 5, certifique-se de que o Formato de Serialização esteja definido como &quot;OSGi Configurator JSON&quot;
-1. Tap Print
+1. Toque em Imprimir
 1. A configuração OSGi no formato JSON será exibida na seção Propriedades de configuração serializadas
    ![Impressora de configuração do instalador OSGi](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. No IDE, abra o `ui.apps` projeto, localize ou crie a pasta de configuração (`/apps/.../config.<runmode>`) que direciona os modos de execução em que a nova configuração OSGi precisa ser aplicada.
@@ -224,9 +224,15 @@ Os valores das variáveis não devem exceder 2048 caracteres.
 
 >[!CAUTION]
 >
->Nomes de variáveis com o prefixo `INTERNAL_`, `ADOBE_`ou `CONST_` são reservadas pelo Adobe. As variáveis definidas pelo cliente que começam com esses prefixos serão ignoradas.
+>Há regras relacionadas ao uso de determinados prefixos para nomes de variáveis:
 >
->Os clientes não devem fazer referência às variáveis com o prefixo `INTERNAL_` ou `ADOBE_` ou.
+>1. Nomes de variáveis com o prefixo `INTERNAL_`, `ADOBE_`ou `CONST_` são reservadas pelo Adobe. As variáveis definidas pelo cliente que começam com esses prefixos serão ignoradas.
+>
+>1. Os clientes não devem fazer referência às variáveis com o prefixo `INTERNAL_` ou `ADOBE_` ou.
+>
+>1. Variáveis de ambiente com o prefixo `AEM_` são definidas pelo produto como API pública para ser usada e definida pelos clientes.
+   >   Embora os clientes possam usar e definir variáveis de ambiente, a partir do prefixo `AEM_` elas não devem definir suas próprias variáveis com esse prefixo.
+
 
 ### Valores padrão {#default-values}
 
@@ -270,7 +276,7 @@ Se uma propriedade OSGI exigir valores diferentes para autor versus publicação
 
 Nos exemplos abaixo, considere que há três ambientes de desenvolvimento, além dos ambientes de preparo e produção.
 
-**Example 1**
+**Exemplo 1**
 
 A intenção é do valor da propriedade OSGI `my_var1` para ser o mesmo para estágio e produção, mas diferente para cada um dos três ambientes de desenvolvimento.
 
