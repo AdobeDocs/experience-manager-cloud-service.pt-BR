@@ -6,10 +6,10 @@ breadcrumb-title: Guia de criação
 user-guide-description: Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service.
 feature: Authoring
 role: User
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 4d87cb0db8219bd2b69906e041b74961e9638327
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 70%
+source-wordcount: '325'
+ht-degree: 68%
 
 ---
 
@@ -23,13 +23,14 @@ ht-degree: 70%
       + [Guia de início rápido para a criação de páginas](authoring/getting-started/quick-start.md)
       + [Conceitos de criação](authoring/getting-started/concepts.md)
       + [Manuseio básico](authoring/getting-started/basic-handling.md)
-      + [Pesquisar  ](authoring/getting-started/search.md)
+      + [Pesquisar](authoring/getting-started/search.md)
       + [Configurar o ambiente da sua conta](authoring/getting-started/account-environment.md)
       + [Sua caixa de entrada](authoring/getting-started/inbox.md)
       + [Atalhos de teclado](authoring/getting-started/keyboard-shortcuts.md)
    + Princípios básicos de criação {#fundamentals}
       + [Ambiente e ferramentas](authoring/fundamentals/environment-tools.md)
       + [Adição de anotações de página](authoring/fundamentals/annotations.md)
+      + [Criar um novo site](authoring/fundamentals/create-site.md)
       + [Criar e organizar páginas](authoring/fundamentals/organizing-pages.md)
       + [Editar conteúdo da página](authoring/fundamentals/editing-content.md)
       + [O editor de rich text](authoring/fundamentals/rich-text-editor.md)
@@ -82,8 +83,12 @@ ht-degree: 70%
       + [Configuração da segmentação com o ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registro, logon e perfil do usuário](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Administração {#administering}
+   + Criação do site {#site-creation}
+      + [Criar um novo site](administering/site-creation/create-site.md)
+      + [Modelos de site](administering/site-creation/site-templates.md)
+      + [Temas do site](administering/site-creation/site-themes.md)
    + [Administração de workflows](administering/workflows-administering.md)
-   + Reutilizar Conteúdo {#reusing-content}
+   + Reutilizar conteúdo {#reusing-content}
       + [MSM e tradução](administering/msm-and-translation.md)
       + Gerenciamento de vários sites {#msm}
          + [Visão geral do MSM e da Live Copy](administering/msm/overview.md)
