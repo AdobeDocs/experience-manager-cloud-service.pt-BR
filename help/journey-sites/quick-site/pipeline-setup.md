@@ -1,9 +1,9 @@
 ---
 title: Configurar o pipeline
 description: Crie um pipeline de front-end para gerenciar a personalização do tema do seu site.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -59,21 +59,13 @@ Dessa forma, o desenvolvimento de front-end pode funcionar separadamente e em pa
 
 ## Access Cloud Manager {#login}
 
-1. Faça logon no Adobe Experience Cloud em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Faça logon no Adobe Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Depois de fazer logon, verifique se você está na organização correta, marcando-a no canto superior direito da tela. Se você for membro apenas de uma organização, essa etapa não será necessária. Em seguida, toque ou clique em **Experience Manager**.
-
-   ![Visão geral do Experience Cloud](assets/experience-cloud-overview.png)
-
-1. Na próxima página, toque ou clique no botão **Launch** para iniciar o **Cloud Manager** aplicativo.
-
-   ![Experience Manager apps](assets/experience-manager-apps.png)
-
-1. A próxima página lista os vários programas disponíveis. Toque ou clique no que deseja gerenciar. Se você estiver apenas começando com AEM as a Cloud Service, você provavelmente terá apenas um programa disponível.
+1. O Cloud Manager lista os vários programas disponíveis. Toque ou clique no que deseja gerenciar. Se você estiver apenas começando com AEM as a Cloud Service, você provavelmente terá apenas um programa disponível.
 
    ![Seleção de um programa no Cloud Manager](assets/cloud-manager-select-program.png)
 
-Agora você verá uma visão geral do Cloud Manager. Sua página será diferente, mas semelhante a este exemplo.
+Agora você verá uma visão geral do seu programa. Sua página será diferente, mas semelhante a este exemplo.
 
 ![Visão geral do Cloud Manager](assets/cloud-manager-overview.png)
 

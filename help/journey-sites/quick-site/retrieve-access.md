@@ -1,10 +1,10 @@
 ---
 title: Recuperar informações de acesso do repositório Git
 description: Saiba como o desenvolvedor de front-end usa o Cloud Manager para acessar informações de repositório Git.
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 3%
+source-wordcount: '928'
+ht-degree: 4%
 
 ---
 
@@ -82,19 +82,11 @@ Se você não recebeu esse email, entre em contato com o administrador do Cloud 
 
 1. Faça logon no Adobe Experience Cloud em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) ou clique no link fornecido no email de boas-vindas.
 
-1. Depois de fazer logon, verifique se você está na organização correta, marcando-a no canto superior direito da tela. Se você for membro apenas de uma organização, essa etapa não será necessária. Em seguida, toque ou clique em **Experience Manager**.
-
-   ![Visão geral do Experience Cloud](assets/experience-cloud-overview.png)
-
-1. Na próxima página, toque ou clique no botão **Launch** para iniciar o **Cloud Manager** aplicativo.
-
-   ![Experience Manager apps](assets/experience-manager-apps.png)
-
-1. A próxima página lista os vários programas disponíveis. Toque ou clique no link que você precisa acessar, conforme fornecido pelo administrador do Cloud Manager. Se esse for seu primeiro projeto front-end para AEMaaCS, você provavelmente terá apenas um programa disponível.
+1. O Cloud Manager lista os vários programas disponíveis. Toque ou clique no link que você precisa acessar, conforme fornecido pelo administrador do Cloud Manager. Se esse for seu primeiro projeto front-end para AEMaaCS, você provavelmente terá apenas um programa disponível.
 
    ![Seleção de um programa no Cloud Manager](assets/cloud-manager-select-program.png)
 
-Agora você verá uma visão geral do Cloud Manager. Sua página será diferente, mas semelhante a este exemplo.
+Agora você verá uma visão geral do seu programa. Sua página será diferente, mas semelhante a este exemplo.
 
 ![Visão geral do Cloud Manager](assets/cloud-manager-overview.png)
 

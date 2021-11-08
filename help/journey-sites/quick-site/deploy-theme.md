@@ -1,9 +1,9 @@
 ---
 title: Implantar o Tema Personalizado
 description: Saiba como implantar o tema do site usando o pipeline.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '982'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Essa parte da jornada se aplica ao desenvolvedor de front-end.
 
 Depois de confirmar as alterações de personalização de tema no repositório Git AEM, você poderá executar [o pipeline que o administrador criou](pipeline-setup.md) para implantar as alterações.
 
-1. Access Cloud Manager [como você fez para recuperar as informações de acesso do git.](retrieve-access.md) No **Visão geral** você verá um cartão para **Pipelines**.
+1. Fazer logon no Cloud Manager [como você fez para recuperar as informações de acesso do git](retrieve-access.md) E acesse seu programa. No **Visão geral** você verá um cartão para **Pipelines**.
 
    ![Visão geral do Cloud Manager](assets/cloud-manager-overview.png)
 
