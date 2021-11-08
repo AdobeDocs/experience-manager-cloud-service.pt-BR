@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
 workflow-type: tm+mt
-source-wordcount: '2881'
-ht-degree: 98%
+source-wordcount: '2939'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ Em Navegação, os consoles disponíveis são:
 | Projetos | O console Projetos concede acesso direto aos projetos. [Projetos são painéis virtuais](/help/sites-cloud/authoring/projects/overview.md) que podem ser usados para criar uma equipe. Você pode conceder a essa equipe acesso a recursos, fluxos de trabalho e tarefas, permitindo que as pessoas trabalhem por um objetivo comum. |
 | Sites | O console Sites permite [criar, exibir e gerenciar sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) em execução na sua instância do AEM. Por meio desse console, você pode criar, copiar, mover e excluir páginas, iniciar fluxos de trabalho e publicar páginas. |
 | Fragmentos de experiência | Um [Fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências. |
-| Ativos | O console Assets permite importar e gerenciar [ativos digitais como imagens, vídeos, documentos e arquivos de áudio](/help/assets/overview.md). Esses ativos podem ser usados por um site em execução na mesma instância do AEM. Você também pode criar e gerenciar [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) no console Ativos. |
+| Ativos | O console Ativos permite importar e gerenciar [ativos digitais como imagens, vídeos, documentos e arquivos de áudio](/help/assets/overview.md). Esses ativos podem ser usados por um site em execução na mesma instância do AEM. Você também pode criar e gerenciar [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) no console Assets. |
 | Personalização | Esse console fornece uma estrutura de ferramentas para a [criação de conteúdo direcionado e a apresentação de experiências personalizadas.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## Painel Ferramentas {#tools-panel}
@@ -92,7 +92,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![Navegação global](/help/sites-cloud/authoring/assets/global-navigation.png)
 
-* [Pesquisar  ](/help/sites-cloud/authoring/getting-started/search.md)
+* [Pesquisar](/help/sites-cloud/authoring/getting-started/search.md)
 
    ![Ícone de Pesquisa](/help/sites-cloud/authoring/assets/search-icon.png)
 
@@ -202,7 +202,7 @@ Há vários recursos de ajuda disponíveis:
    >Para obter uma visão geral de todos os atalhos de teclado, consulte a seguinte documentação:
    >
    >* [Atalhos de teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   * [Atalhos de teclado para os consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   >* [Atalhos de teclado para consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Barra de ferramentas de Ações {#actions-toolbar}
@@ -222,7 +222,8 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 ![Opções adicionais](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
-Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
+>
+>Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
 ## Ações rápidas {#quick-actions}
 
@@ -243,7 +244,8 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 * [Exibição de lista  ](#list-view)
 
 >[!NOTE]
-Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
+>
+>Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
 
 ### Seleção de recursos   {#selecting-resources}
 
@@ -361,7 +363,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * **Nome** - O nome da página, que pode ser útil em um ambiente de criação multilíngue, pois faz parte do URL da página e não muda, independentemente do idioma
    * **Modificado** - Data da última modificação e o usuário que a realizou
    * **Publicado**- Status de publicação
-   * **Visualização**  - Status da visualização
+   * **Visualizar** - Status da visualização
    * **Modelo** - Modelo no qual a página se baseia
    * **Fluxo de trabalho** - Fluxo de trabalho aplicado atualmente à página. Mais informações estão disponíveis ao passar o mouse ou abrir a Linha do tempo.
    * **Análise de páginas**
@@ -374,7 +376,8 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 * Altere a ordem dos itens usando a barra vertical pontilhada na extremidade direita de cada item da lista.
 
    >[!NOTE]
-   Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
+   >
+   >Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
 
    ![Ordem das colunas](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -388,12 +391,13 @@ O **Seletor de painéis** está disponível no canto superior esquerdo da janela
 
 ![Seletor de painéis expandido](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-Por exemplo, no **Sites**, é possível selecionar somente conteúdo (padrão), árvore de conteúdo, linha de tempo, referências ou o painel lateral de filtro.
+Por exemplo, no **Sites** no console, é possível selecionar somente conteúdo (padrão), árvore de conteúdo, linha do tempo, referências, detalhes do site ou painel lateral de filtro.
 
 Se somente conteúdo for selecionado, apenas o ícone do painel será exibido. Se qualquer outra opção for selecionada, o nome da opção aparecerá ao lado do ícone do painel.
 
 >[!NOTE]
-[Atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) estão disponíveis para alternar rapidamente entre as opções de exibição do painel.
+>
+>[Atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) estão disponíveis para alternar rapidamente entre as opções de exibição do painel.
 
 ### Árvore de conteúdo {#content-tree}
 
@@ -404,8 +408,10 @@ Usando o painel lateral da árvore de conteúdo, juntamente com uma exibição d
 ![Árvore de conteúdo](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
-Quando uma entrada na exibição hierárquica é selecionada, as teclas de seta podem ser usadas para navegar rapidamente pela hierarquia.
-Consulte os [atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) para obter mais informações.
+>
+>Quando uma entrada na exibição hierárquica é selecionada, as teclas de seta podem ser usadas para navegar rapidamente pela hierarquia.
+>
+>Consulte os [atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) para obter mais informações.
 
 ### Linha do tempo {#timeline}
 
@@ -452,6 +458,18 @@ A opção **Referências** mostra conexões com o recurso selecionado. Por exemp
    * Conteúdo emprestado de e/ou concedido à página selecionada pelo componente Referência
 
 ![Exemplo de referências](/help/sites-cloud/authoring/assets/references-example.png)
+
+### Site {#site}
+
+**Site** mostra detalhes de sites [criado usando um modelo de site.](/help/sites-cloud/administering/site-creation/create-site.md)
+
+![Painel do site](../assets/site-rail.png)
+
+Toque ou clique no botão **Baixar Fontes de Tema** para personalizar o [tema do seu site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+
+>[!TIP]
+>
+>Uma descrição completa do processo de criação de um novo site a partir de um modelo e personalização de seu tema pode ser encontrada no [Jornada Rápida de Criação de Site.](/help/journey-sites/quick-site/overview.md)
 
 ### Filtro {#filter}
 

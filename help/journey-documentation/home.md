@@ -1,13 +1,13 @@
 ---
 title: jornadas de documentação de AEM
 description: As Jornadas de documentação fornecem uma estrutura narrativa dentro AEM documentação, unindo recursos complexos e díspares para resolver uma meta de negócios de uma maneira prática recomendada. Projetadas tendo em mente AEM iniciantes, as jornadas apresentam os conceitos e os recursos para atingir uma meta de A a Z.
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
+source-git-commit: 1f8f6aea389ecf5416121354876a68273cd653e7
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1313'
 ht-degree: 1%
 
 ---
-
 
 # jornadas de documentação de AEM {#aem-documentation-journeys}
 
@@ -17,7 +17,7 @@ As Jornadas de documentação fornecem uma estrutura narrativa dentro AEM docume
 
 Uma Jornada de Documentação reúne vários tópicos e recursos diferentes e complexos, fornecendo uma narrativa que ajuda o leitor, que pode ser novo em AEM, entender e resolver um problema de negócios do início ao fim, além de assumir um tópico prévio mínimo ou conhecimento AEM.
 
-As Jornadas de documentação contrastam com AEM documentos técnicos existentes que se concentram principalmente em um único recurso e documentação de tarefas, supondo que esteja familiarizado com AEM. Ao se concentrar nos conceitos e adiar os detalhes detalhados para a documentação técnica existente, as Jornadas de Documentação oferecem aos leitores novos AEM um lugar para começar a entender como a plataforma pode ser aproveitada usando as práticas recomendadas para atender às necessidades e fluxos de trabalho comuns dos negócios. Por esse motivo, as Jornadas de Documentação servem como um complemento para [AEM documentação técnica existente.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)
+As Jornadas de documentação contrastam com AEM documentos técnicos existentes que se concentram principalmente em um único recurso e documentação de tarefas, supondo que esteja familiarizado com AEM. Ao se concentrar nos conceitos e adiar os detalhes detalhados para a documentação técnica existente, as Jornadas de Documentação oferecem aos leitores novos AEM um lugar para começar a entender como a plataforma pode ser aproveitada usando as práticas recomendadas para atender às necessidades e fluxos de trabalho comuns dos negócios. Por esse motivo, as Jornadas de documentação servem como um complemento e não como uma substituição para [AEM documentação técnica existente.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)
 
 ### Aprendizagem por narrativa {#narrative}
 
@@ -33,7 +33,7 @@ O Jornada garante que o leitor saiba como AEM pode resolver um problema em vez d
 
 ### Orientação de práticas recomendadas {#best-practices}
 
-As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de serviços de Adobe e feedback de projetos de clientes.
+As Jornadas de documentação foram criadas com base nos princípios de práticas recomendadas, informadas pela última pesquisa Adobe, pela experiência comprovada de implementação dos serviços da Adobe e pelo feedback dos projetos do cliente.
 
 Se você quiser saber como o Adobe recomenda como resolver um caso comercial com AEM, as Jornadas de documentação são o local de início.
 
@@ -74,10 +74,10 @@ As Jornadas de documentação são um complemento da documentação técnica e d
 
 | Tipo de documentação | Propósito | Público | Assume | Omits | Tipo de conteúdo | Length |
 |---|---|---|---|---|---|---|
-| Jornada da documentação | Uma jornada define como o AEM pode resolver um problema geral de negócios por meio de uma narrativa que orienta os leitores por processos e recursos complexos e inter-relacionados. Ele ilustra como vários recursos trabalham juntos para resolver uma necessidade de negócios de uma maneira prática recomendada. | Reader novo em AEM | Familiaridade geral do CMS | Opções e configuração detalhadas | Texto | Ca 1 hora |
+| Jornada da documentação | Uma jornada define como o AEM pode resolver um problema geral de negócios por meio de uma narrativa que orienta os leitores por processos e recursos complexos e inter-relacionados. Ele ilustra como vários recursos trabalham juntos para resolver uma necessidade de negócios de uma maneira prática recomendada. | Reader novo em AEM | Familiaridade geral do CMS | Opções e configuração detalhadas | Texto | C-A. 1 hora |
 | Documentos técnicos | Os documentos técnicos se concentram em recursos individuais, detalhando o funcionamento técnico do recurso e cada opção disponível para o usuário. | Usuários experientes AEM | experiência AEM | Contexto e plano de fundo | Texto | Varia |
 | Tutorial | Um tutorial é um mergulho detalhado em um tópico que mostra a um desenvolvedor ou administrador como atingir um objetivo técnico (geralmente programação ou configuração do sistema) de forma passo a passo, fornecendo exemplos específicos e código de exemplo, geralmente aproveitando um conjunto limitado de recursos. | Desenvolvedores ou administradores de AEM | experiência AEM | Histórico e teoria | Vídeo | >1 hora |
-| Guia de Introdução | Um guia de introdução é uma apresentação rápida e relâmpago de um novo recurso de AEM específico. É uma visão geral rápida de um recurso individual, que leva o usuário por meio das etapas importantes (mas não todas) para configurar e usar um caso de uso simples. | Administradores AEM | experiência AEM | Histórico, teoria, opções detalhadas | Texto | &lt;1 hour=&quot;&quot;> |
+| Guia de Introdução | Um guia de introdução é uma apresentação rápida e relâmpago de um novo recurso de AEM específico. É uma visão geral rápida de um recurso individual, que leva o usuário por meio das etapas importantes (mas não todas) para configurar e usar um caso de uso simples. | Administradores AEM | experiência AEM | Histórico, teoria, opções detalhadas | Texto | &lt;1 hora |
 
 ## Que Jornadas Há? {#journeys}
 
@@ -89,7 +89,8 @@ Há várias Jornadas de Documentação disponíveis para você. Como cada jornad
 | [Jornada de criação sem cabeçalho](/help/journey-headless/author/overview.md) | Comece aqui para obter uma jornada guiada através dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como modelar seu conteúdo em seu primeiro projeto sem interface. |
 | [Jornada de arquitetura headless](/help/journey-headless/architect/overview.md) | Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto. |
 | [Jornada de tradução headless](/help/journey-headless/translation/overview.md) | Comece aqui para ver como configurar e gerenciar seus projetos de tradução sem periféricos no AEM. |
-| jornada de integração de AEM | Em breve! |
+| [jornada de integração de AEM](/help/journey-onboarding/home.md) | Comece aqui para entrar em operação rapidamente com seu novo ambiente as a Cloud Service AEM! |
+| [AEM Jornada de criação rápida de site](/help/journey-sites/quick-site/overview.md) | Comece aqui para obter uma jornada guiada através da ferramenta de criação rápida de sites AEM simples de usar para simplificar o desenvolvimento front-end do seu site AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end. |
 | jornada de comércio AEM | Em breve! |
 | Jornada de migração do AEMaaCS | Em breve! |
 
