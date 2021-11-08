@@ -2,9 +2,9 @@
 title: Pipelines de CI-CD
 description: Siga esta página para saber mais sobre os pipeline de CI-CD do Cloud Manager
 index: true
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ A tabela a seguir resume todos os pipelines no Cloud Manager, juntamente com seu
 
 | Tipo de pipeline | Implantação ou qualidade do código | Código fonte | Quando usar | Quando ou Por que devo usar? |
 |--- |--- |--- |---|---|
-| Produção ou não produção | Implantação | Front-End | Tempos de implantação rápidos.<br>Vários pipelines de front-end podem ser configurados e executados simultaneamente por ambiente.<br>A build do pipeline Front-End envia a build para um armazenamento. Quando uma página html é disponibilizada, ela pode fazer referência a arquivos estáticos do Código do Front, que serão fornecidos pela CDN usando esse armazenamento como uma origem. | Para implantar exclusivamente o código front-end contendo um ou mais aplicativos da interface do usuário do cliente. O código front-end é qualquer código que é servido como um arquivo estático. É separado do código da interface do usuário fornecido pelo AEM. Inclui Temas do Sites, SPA definidas pelo Cliente, SPA do Firefly e quaisquer outras soluções.<br>Deve estar na AEM versão 2021.10.5933.20211012T154732Z |
+| Produção ou não produção | Implantação | Front-End | Tempos de implantação rápidos.<br>Vários pipelines de front-end podem ser configurados e executados simultaneamente por ambiente.<br>A build do pipeline Front-End envia a build para um armazenamento. Quando uma página html é disponibilizada, ela pode fazer referência a arquivos estáticos do Código do Front, que serão fornecidos pela CDN usando esse armazenamento como uma origem. | Para implantar exclusivamente o código front-end contendo um ou mais aplicativos da interface do usuário do cliente. O código front-end é qualquer código que é servido como um arquivo estático. É separado do código da interface do usuário fornecido pelo AEM. Inclui Temas do Sites, SPA definidas pelo Cliente, SPA do Firefly e quaisquer outras soluções.<br>Deve estar na AEM versão 2021.10.5933.20211012T154732Z<br>Deve ter o Sites ativado. |
 | Produção ou não produção | Implantação | Pilha completa | Quando os gasodutos de front-end ainda não foram adotados.<br>Para casos em que o código Front-End deve ser implantado exatamente ao mesmo tempo que o código do Servidor de AEM. | Para implantar AEM código do Servidor (conteúdo imutável, código Java, configurações OSGi, configuração HTTPD/dispatcher, repontar, conteúdo mutável, fontes) - contendo um ou mais aplicativos AEM do servidor, todos ao mesmo tempo. |
 | Não produção | Qualidade do código | Front-End | Para que o Cloud Manager seja avaliado. sucesso da build e qualidade do código sem fazer uma implantação.<br>Vários pipelines podem ser configurados e executados. | Execute verificações de qualidade de código no código front-end. |
 | Não produção | Qualidade do código | Pilha completa | Para que o Cloud Manager seja avaliado. sucesso da build e qualidade do código sem fazer uma implantação.<br>Vários pipelines podem ser configurados e executados. | Execute a verificação de qualidade do código no código de pilha completo. |

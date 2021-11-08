@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.11.
 description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.11.0
 feature: Release Information
 exl-id: null
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 3%
+source-wordcount: '461'
+ht-degree: 2%
 
 ---
 
@@ -40,6 +40,8 @@ A próxima versão está planejada para 9 de dezembro de 2021.
 * O `x-request-id` o cabeçalho de resposta agora está visível no Reprodução da API em [www.adobe.io](https://www.adobe.io/). Esse cabeçalho é útil ao enviar problemas de atendimento ao cliente para solução de problemas.
 
 * Como usuário, vejo que o pipeline card com zero pipelines me fornece a orientação apropriada.
+
+* Uma nova Página de atividade agora está disponível, onde atividades como pipeline e execuções de código podem ser visualizadas junto com seus detalhes associados. Com o tempo, as atividades listadas nesta página se expanderão no escopo junto com os detalhes fornecidos.
 
 * Uma nova página Pipelines com uma oferta de status on-hover para facilitar a visualização do resumo dos detalhes está disponível. As execuções de pipeline podem ser visualizadas junto com seus detalhes associados.
 
