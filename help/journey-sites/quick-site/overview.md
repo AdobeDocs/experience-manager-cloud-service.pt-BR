@@ -1,9 +1,9 @@
 ---
 title: AEM Jornada de criação rápida de site
 description: Comece aqui para obter uma jornada guiada através da ferramenta de criação rápida de sites AEM fácil de usar para simplificar o desenvolvimento front-end do seu site AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end.
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 8daa6bc7d5df3263e8f2b506d8e0a23ecc547872
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1060'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,16 @@ O AEM Sites é um poderoso conjunto de ferramentas para criar e gerenciar experi
 A ferramenta Criação de site rápido AEM permite que não desenvolvedores criem rapidamente um novo site do zero usando modelos de site. Depois de criada, a ferramenta Criação rápida de site também permite a rápida personalização do tema e estilo do site AEM (JavaScript, CSS e recursos estáticos). Isso permite que o desenvolvedor de front-end, que precisa de conhecimento zero sobre AEM, funcione separadamente e em paralelo aos criadores de conteúdo. O administrador do AEM simplesmente baixa o tema do site e o fornece ao desenvolvedor front-end que o personaliza usando suas ferramentas favoritas e, em seguida, confirma as alterações no repositório de código AEM, que é implantado.
 
 Eliminando qualquer conhecimento do desenvolvedor para a criação do site, eliminando AEM requisitos de conhecimento para o desenvolvimento front-end e permitindo que o desenvolvimento de temas continue em paralelo com a criação de conteúdo, a ferramenta AEM Quick Site Creation acelera muito o tempo de implantação do site e aumenta a agilidade de personalização e implantação do site.
+
+## Visão geral do vídeo {#video-overview}
+
+Para obter uma visão geral rápida desse recurso em ação, você pode assistir a esta introdução de cinco minutos.
+
+>[!VIDEO]
+>
+>https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
+
+Esta jornada na documentação aborda detalhadamente todos os recursos do vídeo, para que você entenda o processo e possa recriá-lo em seu próprio ambiente.
 
 ## jornadas de documentação de AEM {#documentation-journeys}
 
@@ -48,16 +58,7 @@ Esta jornada apresenta os requisitos, as etapas e a abordagem para personalizar 
 
 Você explorará muitos tópicos nesta jornada. Os artigos a seguir fornecem conhecimento fundamental da criação e personalização de sites AEM usando a ferramenta de Criação rápida de sites e vinculam a documentação técnica detalhada.
 
-|#|Artigo|Descrição|Função responsável|
-|---|---|---|---|
-|0|AEM Jornada de Criação Rápida de Site|Este documento|Administradores do AEM &amp; Cloud Manager|
-|1|[Entender o Cloud Manager e o fluxo de trabalho de criação rápida de sites](cloud-manager.md)|Saiba mais sobre o Cloud Manager e como ele se vincula ao novo processo de Criação rápida de sites.|AEM Administrador|
-|2|[Criar site a partir do modelo](create-site.md)|Saiba como criar rapidamente um novo site AEM usando um modelo de site.|AEM Administrador|
-|3|[Configurar o pipeline](pipeline-setup.md)|Crie um pipeline de front-end para gerenciar a personalização do tema do site.|Administrador do Cloud Manager|
-|4|[Conceder acesso ao desenvolvedor de front-end](grant-access.md)|Integrar os desenvolvedores de front-end no Cloud Manager para que eles tenham acesso ao repositório e pipeline de git do site AEM.|Administrador do Cloud Manager|
-|5|[Recuperar informações de acesso do repositório Git](retrieve-access.md)|Saiba como o desenvolvedor de front-end usa o Cloud Manager para acessar informações de repositório Git.|Desenvolvedor front-end|
-|6|[Personalizar o tema do site](customize-theme.md)|Saiba como um tema de site é criado, como personalizá-lo e como testá-lo usando conteúdo de AEM ao vivo.|Desenvolvedor front-end|
-|7|[Implantar o tema personalizado](deploy-theme.md)|Saiba como implantar o tema do site usando o pipeline.|Desenvolvedor front-end|
+|#|Artigo|Descrição|Função responsável| |—|—|—|— |0|AEM Jornada de Criação Rápida de Site|Este documento|Administradores do AEM &amp; Cloud Manager| |1|[Entender o Cloud Manager e o fluxo de trabalho de criação rápida de sites](cloud-manager.md)|Saiba mais sobre o Cloud Manager e como ele se vincula ao novo processo de Criação rápida de sites.|AEM Administrador| |2|[Criar site a partir do modelo](create-site.md)|Saiba como criar rapidamente um novo site AEM usando um modelo de site.|AEM Administrador| |3|[Configurar o pipeline](pipeline-setup.md)|Crie um pipeline de front-end para gerenciar a personalização do tema do site.|Administrador do Cloud Manager| |4|[Conceder acesso ao desenvolvedor de front-end](grant-access.md)|Integrar os desenvolvedores de front-end no Cloud Manager para que eles tenham acesso ao repositório e pipeline de git do site AEM.|Administrador do Cloud Manager| |5|[Recuperar informações de acesso do repositório Git](retrieve-access.md)|Saiba como o desenvolvedor de front-end usa o Cloud Manager para acessar informações de repositório Git.|Desenvolvedor front-end| |6|[Personalizar o tema do site](customize-theme.md)|Saiba como um tema de site é criado, como personalizá-lo e como testá-lo usando conteúdo de AEM ao vivo.|Desenvolvedor front-end| |7|[Implantar o tema personalizado](deploy-theme.md)|Saiba como implantar o tema do site usando o pipeline.|Desenvolvedor front-end|
 
 ## O que vem a seguir {#what-is-next}
 
