@@ -5,20 +5,20 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: bd00cd19852affd24d732c15b03dbf8248f2ff38
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1434'
 ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] casos de uso do desenvolvedor, APIs e material de referência {#assets-cloud-service-apis}
 
-O artigo contém recomendações, materiais de referência e recursos para desenvolvedores de [!DNL Assets] como um [!DNL Cloud Service]. Ele inclui um novo módulo de upload de ativos, uma referência de API e informações sobre o suporte fornecido em workflows de pós-processamento.
+O artigo contém recomendações, materiais de referência e recursos para desenvolvedores de [!DNL Assets] como [!DNL Cloud Service]. Ele inclui um novo módulo de upload de ativos, uma referência de API e informações sobre o suporte fornecido em workflows de pós-processamento.
 
 ## [!DNL Experience Manager Assets] APIs e operações {#use-cases-and-apis}
 
-[!DNL Assets] o as a  [!DNL Cloud Service] fornece várias APIs para interagir programaticamente com ativos digitais. Cada API suporta casos de uso específicos, conforme mencionado na tabela abaixo. A interface do usuário [!DNL Assets], [!DNL Experience Manager] aplicativo de desktop e [!DNL Adobe Asset Link] são compatíveis com todas ou algumas das operações.
+[!DNL Assets] como [!DNL Cloud Service] O fornece várias APIs para interagir programaticamente com ativos digitais. Cada API suporta casos de uso específicos, conforme mencionado na tabela abaixo. O [!DNL Assets] interface do usuário, [!DNL Experience Manager] aplicativo de desktop e [!DNL Adobe Asset Link] dar suporte a todas ou algumas das operações.
 
 >[!CAUTION]
 >
@@ -30,7 +30,7 @@ O artigo contém recomendações, materiais de referência e recursos para desen
 | × | Não suportado. Não utilizar. |
 | - | Não disponível |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [APIs Experience Manager / Sling / ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) JCRJava | [Serviço Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlets Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Visualização)_ |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) APIs Java | [Serviço Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Visualização)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Binário original** |  |  |  |  |  |  |
 | Criar original | Instantâneo | × | - | × | × | - |
@@ -66,35 +66,35 @@ O artigo contém recomendações, materiais de referência e recursos para desen
 
 ## Upload de ativo {#asset-upload}
 
-Em [!DNL Experience Manager] como um [!DNL Cloud Service], é possível fazer upload direto dos ativos para o armazenamento na nuvem usando a API HTTP. As etapas para fazer upload de um arquivo binário estão abaixo. Execute essas etapas em um aplicativo externo e não na JVM [!DNL Experience Manager].
+Em [!DNL Experience Manager] como [!DNL Cloud Service], é possível fazer upload direto dos ativos para o armazenamento na nuvem usando a API HTTP. As etapas para fazer upload de um arquivo binário estão abaixo. Execute essas etapas em um aplicativo externo e não na [!DNL Experience Manager] JVM.
 
-1. [Envie uma solicitação](#initiate-upload) HTTP. Ele informa [!DNL Experience Manage]ou a implantação de sua intenção de fazer upload de um novo binário.
-1. [PUT do conteúdo do binário para um ou mais URIs fornecidos pelo pedido de início. ](#upload-binary) 
-1. [Envie uma ](#complete-upload) solicitação HTTP para informar ao servidor que o conteúdo do binário foi carregado com êxito.
+1. [Enviar uma solicitação HTTP](#initiate-upload). Ele informa [!DNL Experience Manage]Ou implantação de sua intenção de fazer upload de um novo binário.
+1. [PUT do conteúdo do binário](#upload-binary) a um ou mais URI fornecidos pelo pedido de início.
+1. [Enviar uma solicitação HTTP](#complete-upload) para informar ao servidor que o conteúdo do binário foi carregado com êxito.
 
 ![Visão geral do protocolo de upload binário direto](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-Execute as etapas acima em um aplicativo externo e não na JVM [!DNL Experience Manager].
+Execute as etapas acima em um aplicativo externo e não no [!DNL Experience Manager] JVM.
 
 A abordagem oferece uma manipulação escalável e mais eficiente dos uploads de ativos. As diferenças em comparação com [!DNL Experience Manager] 6.5 são:
 
-* Os binários não passam por [!DNL Experience Manager], que agora simplesmente coordena o processo de upload com o armazenamento em nuvem binário configurado para a implantação.
+* Os binários não passam [!DNL Experience Manager], que agora simplesmente coordena o processo de upload com o armazenamento em nuvem binário configurado para a implantação.
 * O armazenamento em nuvem binário funciona com uma Rede de entrega de conteúdo (CDN) ou rede de borda. Um CDN seleciona um ponto de extremidade de upload mais próximo de um cliente. Quando os dados viajam uma distância menor até um terminal próximo, o desempenho de upload e a experiência do usuário melhoram, especialmente para equipes distribuídas geograficamente.
 
 >[!NOTE]
-Consulte o código de cliente para implementar essa abordagem no [biblioteca aem-upload](https://github.com/adobe/aem-upload) de código aberto.
+Consulte o código de cliente para implementar essa abordagem no código aberto [biblioteca de upload do aem](https://github.com/adobe/aem-upload).
 
 ### Iniciar upload {#initiate-upload}
 
-Envie uma solicitação HTTP POST para a pasta desejada. Os ativos são criados ou atualizados nesta pasta. Inclua o seletor `.initiateUpload.json` para indicar que a solicitação é iniciar o upload de um arquivo binário. Por exemplo, o caminho para a pasta onde o ativo deve ser criado é `/assets/folder`. A solicitação de POST é `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
+Envie uma solicitação HTTP POST para a pasta desejada. Os ativos são criados ou atualizados nesta pasta. Incluir o seletor `.initiateUpload.json` para indicar que a solicitação é iniciar o upload de um arquivo binário. Por exemplo, o caminho para a pasta onde o ativo deve ser criado é `/assets/folder`. A solicitação POST é `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 O tipo de conteúdo do corpo da solicitação deve ser `application/x-www-form-urlencoded` dados do formulário, contendo os seguintes campos:
 
 * `(string) fileName`: Obrigatório. O nome do ativo como ele aparece em [!DNL Experience Manager].
 * `(number) fileSize`: Obrigatório. O tamanho do arquivo, em bytes, do ativo que está sendo carregado.
 
-Uma única solicitação pode ser usada para iniciar uploads para vários binários, desde que cada binário contenha os campos necessários. Se bem-sucedida, a solicitação responde com um código de status `201` e um corpo contendo dados JSON no seguinte formato:
+Uma única solicitação pode ser usada para iniciar uploads para vários binários, desde que cada binário contenha os campos necessários. Se bem-sucedida, a solicitação responde com um `201` código de status e um corpo contendo dados JSON no seguinte formato:
 
 ```json
 {
@@ -113,15 +113,15 @@ Uma única solicitação pode ser usada para iniciar uploads para vários binár
 }
 ```
 
-* `completeURI` (string): Chame esse URI quando o binário terminar o upload. O URI pode ser um URI absoluto ou relativo, e os clientes devem ser capazes de lidar com ambos. Ou seja, o valor pode ser `"https://[aem_server]:[port]/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` Consulte [concluir o upload](#complete-upload).
+* `completeURI` (string): Chame esse URI quando o binário terminar o upload. O URI pode ser um URI absoluto ou relativo, e os clientes devem ser capazes de lidar com ambos. Ou seja, o valor pode ser `"https://[aem_server]:[port]/content/dam.completeUpload.json"` ou `"/content/dam.completeUpload.json"` Consulte [upload completo](#complete-upload).
 * `folderPath` (string): Caminho completo para a pasta na qual o binário é carregado.
 * `(files)` (matriz): Uma lista de elementos cujo comprimento e ordem correspondem ao comprimento e à ordem da lista de informações binárias fornecidas na solicitação de inicialização.
 * `fileName` (string): O nome do binário correspondente, conforme fornecido na solicitação de inicialização. Esse valor deve ser incluído na solicitação completa.
 * `mimeType` (string): O tipo mime do binário correspondente, conforme fornecido na solicitação de inicialização. Esse valor deve ser incluído na solicitação completa.
 * `uploadToken` (string): Um token de upload para o binário correspondente. Esse valor deve ser incluído na solicitação completa.
-* `uploadURIs` (matriz): Uma lista de strings cujos valores são URIs completos para as quais o conteúdo do binário deve ser carregado (consulte  [Upload binário](#upload-binary)).
-* `minPartSize` (número): O comprimento mínimo, em bytes, dos dados que podem ser fornecidos a qualquer um dos  `uploadURIs`, se houver mais de um URI.
-* `maxPartSize` (número): O comprimento máximo, em bytes, dos dados que podem ser fornecidos a qualquer um dos  `uploadURIs`, se houver mais de um URI.
+* `uploadURIs` (matriz): Uma lista de strings cujos valores são URIs completos para as quais o conteúdo do binário deve ser carregado (consulte [Upload binário](#upload-binary)).
+* `minPartSize` (número): O comprimento mínimo, em bytes, dos dados que podem ser fornecidos a qualquer uma das `uploadURIs`, se houver mais de um URI.
+* `maxPartSize` (número): O comprimento máximo, em bytes, dos dados que podem ser fornecidos a qualquer uma das `uploadURIs`, se houver mais de um URI.
 
 ### Upload binário {#upload-binary}
 
@@ -133,7 +133,7 @@ Um possível método para fazer isso é calcular o tamanho da peça com base no 
 * Intervalo de POST byte 0-9.999 do binário para o primeiro URI na lista de URIs de upload.
 * Intervalo de POST byte 10.000 - 19.999 do binário para o segundo URI na lista de URIs de upload.
 
-Se o upload for bem-sucedido, o servidor responderá a cada solicitação com um código de status `201`.
+Se o upload for bem-sucedido, o servidor responderá a cada solicitação com uma `201` código de status.
 
 ### Carregamento completo {#complete-upload}
 
@@ -144,48 +144,48 @@ Depois que todas as partes de um arquivo binário forem carregadas, envie uma so
 | `fileName` | Sequência de caracteres | Obrigatório | O nome do ativo, conforme fornecido pelos dados de início. |
 | `mimeType` | Sequência de caracteres | Obrigatório | O tipo de conteúdo HTTP do binário, como foi fornecido pelos dados de início. |
 | `uploadToken` | Sequência de caracteres | Obrigatório | Faça upload do token para o binário, conforme fornecido pelos dados de início. |
-| `createVersion` | Booleano | Opcional | Se `True` e um ativo com o nome especificado existir, [!DNL Experience Manager] criará uma nova versão do ativo. |
+| `createVersion` | Booleano | Opcional | If `True` e um ativo com o nome especificado existe, então [!DNL Experience Manager] cria uma nova versão do ativo. |
 | `versionLabel` | Sequência de caracteres | Opcional | Se uma nova versão for criada, o rótulo associado à nova versão de um ativo . |
 | `versionComment` | Sequência de caracteres | Opcional | Se uma nova versão for criada, os comentários associados à versão. |
-| `replace` | Booleano | Opcional | Se `True` e um ativo com o nome especificado existir, [!DNL Experience Manager] o excluirá e o recriará. |
+| `replace` | Booleano | Opcional | If `True` e existe um ativo com o nome especificado, [!DNL Experience Manager] exclui o ativo e depois o recria. |
 
 >[!NOTE]
-Se o ativo existir e nenhum `createVersion` ou `replace` for especificado, [!DNL Experience Manager] atualizará a versão atual do ativo com o novo binário.
+Se o ativo existir e nem `createVersion` nor `replace` for especificado, [!DNL Experience Manager] atualiza a versão atual do ativo com o novo binário.
 
 Como o processo de inicialização, os dados completos da solicitação podem conter informações para mais de um arquivo.
 
-O processo de upload de um binário não é feito até que o URL completo seja chamado para o arquivo. Um ativo é processado após a conclusão do processo de upload. O processamento não é iniciado mesmo se o arquivo binário do ativo for carregado completamente, mas o processo de upload não estiver concluído. Se o upload for bem-sucedido, o servidor responderá com um código de status `200`.
+O processo de upload de um binário não é feito até que o URL completo seja chamado para o arquivo. Um ativo é processado após a conclusão do processo de upload. O processamento não é iniciado mesmo se o arquivo binário do ativo for carregado completamente, mas o processo de upload não estiver concluído. Se o upload for bem-sucedido, o servidor responderá com uma `200` código de status.
 
 ### Biblioteca de upload de código aberto {#open-source-upload-library}
 
 Para saber mais sobre os algoritmos de upload ou para criar seus próprios scripts e ferramentas de upload, o Adobe oferece bibliotecas e ferramentas de código aberto:
 
-* [Biblioteca de upload do aem de código aberto](https://github.com/adobe/aem-upload).
+* [Biblioteca de upload de aem de código aberto](https://github.com/adobe/aem-upload).
 * [Ferramenta de linha de comando de código aberto](https://github.com/adobe/aio-cli-plugin-aem).
 
 ### APIs de upload de ativos obsoletos {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-O novo método de upload é compatível somente para [!DNL Adobe Experience Manager] como um [!DNL Cloud Service]. As APIs de [!DNL Adobe Experience Manager] 6.5 estão obsoletas. Os métodos relacionados ao upload ou atualização de ativos ou representações (qualquer upload binário) estão obsoletos nas seguintes APIs:
+O novo método de upload é suportado somente para [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. As APIs de [!DNL Adobe Experience Manager] 6.5 estão obsoletas. Os métodos relacionados ao upload ou atualização de ativos ou representações (qualquer upload binário) estão obsoletos nas seguintes APIs:
 
-* [API HTTP do Experience Manager Assets](mac-api-assets.md)
-* `AssetManager` API Java, como  `AssetManager.createAsset(..)`
+* [API HTTP Experience Manager Assets](mac-api-assets.md)
+* `AssetManager` API Java, como `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [Biblioteca de upload do aem de código aberto](https://github.com/adobe/aem-upload).
+* [Biblioteca de upload de aem de código aberto](https://github.com/adobe/aem-upload).
 * [Ferramenta de linha de comando de código aberto](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## Fluxos de trabalho de processamento e pós-processamento de ativos {#post-processing-workflows}
 
-Em [!DNL Experience Manager], o processamento de ativos é baseado na configuração **[!UICONTROL Processando Perfis]** que usa [microsserviços de ativos](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). O processamento não requer extensões de desenvolvedor.
+Em [!DNL Experience Manager], o processamento de ativos é baseado em **[!UICONTROL Processando perfis]** configuração que usa [microsserviços de ativos](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). O processamento não requer extensões de desenvolvedor.
 
 Para configuração de fluxo de trabalho de pós-processamento, use os fluxos de trabalho padrão com extensões com etapas personalizadas.
 
 ## Suporte a etapas do fluxo de trabalho no fluxo de trabalho de pós-processamento {#post-processing-workflows-steps}
 
-Se você atualizar de uma versão anterior de [!DNL Experience Manager], poderá usar os microsserviços de ativos para processar ativos. Os microsserviços de ativos nativos em nuvem são mais simples de configurar e usar. Algumas etapas do fluxo de trabalho usadas no fluxo de trabalho [!UICONTROL Ativo de atualização DAM] na versão anterior não são suportadas. Para obter mais informações sobre classes compatíveis, consulte a [Referência da API Java ou Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html).
+Se você atualizar de uma versão anterior de [!DNL Experience Manager], é possível usar os microsserviços de ativos para processar ativos. Os microsserviços de ativos nativos em nuvem são mais simples de configurar e usar. Algumas etapas do fluxo de trabalho usadas na [!UICONTROL Ativo de atualização DAM] não há suporte para fluxo de trabalho na versão anterior. Para obter mais informações sobre as classes compatíveis, consulte a [Referência da API Java ou Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Os seguintes modelos de fluxo de trabalho técnicos são substituídos por microsserviços de ativos ou o suporte não está disponível:
 
