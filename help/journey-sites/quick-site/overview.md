@@ -1,9 +1,9 @@
 ---
 title: AEM Jornada de criação rápida de site
 description: Comece aqui para obter uma jornada guiada através da ferramenta de criação rápida de sites AEM fácil de usar para simplificar o desenvolvimento front-end do seu site AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end.
-source-git-commit: 8daa6bc7d5df3263e8f2b506d8e0a23ecc547872
+source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1061'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,9 @@ Eliminando qualquer conhecimento do desenvolvedor para a criação do site, elim
 
 ## Visão geral do vídeo {#video-overview}
 
-Para obter uma visão geral rápida desse recurso em ação, você pode assistir a esta introdução de cinco minutos.
+Para obter uma visão geral rápida desse recurso em ação, [podem ver esta introdução de cinco minutos.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
->[!VIDEO]
->
->https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
-
-Esta jornada na documentação aborda detalhadamente todos os recursos do vídeo, para que você entenda o processo e possa recriá-lo em seu próprio ambiente.
+Essa jornada da documentação o levará a todos os recursos do vídeo passo a passo e em detalhes para que você entenda o fluxo de trabalho e possa recriar o processo no seu próprio ambiente.
 
 ## jornadas de documentação de AEM {#documentation-journeys}
 
