@@ -3,9 +3,9 @@ title: Implantação do AEM as a Cloud Service
 description: 'Implantação do AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3364'
 ht-degree: 1%
 
 ---
@@ -111,7 +111,7 @@ Após a mudança para a nova versão do aplicativo:
 >[!NOTE]
 >Os pacotes de conteúdo são implantados em todos os tipos de ambiente (desenvolvimento, estágio, produção). Não é possível limitar a implantação a um ambiente específico. Esta limitação está em vigor para garantir a opção de uma execução de teste de execução automatizada. O conteúdo específico de um ambiente requer instalação manual por meio de [Gerenciador de pacotes.](/help/implementing/developing/tools/package-manager.md)
 
-Além disso, não há nenhum mecanismo para reverter as alterações no pacote de conteúdo mutável após sua aplicação. Se os clientes detectarem um problema, poderão optar por corrigi-lo na próxima versão de código ou como último recurso, restaurar o sistema inteiro para um ponto no tempo antes da implantação.
+Além disso, não há nenhum mecanismo para reverter as alterações no pacote de conteúdo mutável depois de terem sido aplicadas. Se os clientes detectarem um problema, poderão optar por corrigi-lo na próxima versão de código ou como último recurso, restaurar o sistema inteiro para um ponto no tempo antes da implantação.
 
 Qualquer pacote de terceiros incluído deve ser validado como sendo AEM compatível com o as a Cloud Service Service; caso contrário, sua inclusão resultará em uma falha de implantação.
 
@@ -179,7 +179,11 @@ Como o Gerenciador de pacotes é um conceito de tempo de execução, não é pos
 
 >[!IMPORTANT]
 >
->A interface do usuário do Gerenciador de pacotes pode retornar um **indefinido** mensagem de erro se um pacote levar mais de 10 minutos para ser instalado. Não repita a instalação se isso acontecer, pois ela está sendo executada corretamente em segundo plano e alguns conflitos podem ser introduzidos por vários processos de importação simultâneos.
+>A interface do usuário do Gerenciador de pacotes pode retornar um **indefinido** mensagem de erro se um pacote levar mais de 10 minutos para ser instalado.
+>
+>Isso não é devido a um erro na instalação, mas a um tempo limite que o Cloud Service tem para todas as solicitações.
+>
+>Não repita a instalação se esse erro aparecer. A instalação está a prosseguir corretamente em segundo plano. Se você reiniciar a instalação, alguns conflitos poderão ser introduzidos por vários processos de importação simultâneos.
 
 Todos os pacotes de conteúdo instalados pelo Cloud Manager (mutáveis e imutáveis) aparecerão em um estado congelado na interface do usuário do Gerenciador de Pacotes AEM. Esses pacotes não podem ser reinstalados, recriados ou até mesmo baixados e serão listados com um **&quot;cp2fm&quot;** , indicando que a instalação foi gerenciada pelo Cloud Manager.
 

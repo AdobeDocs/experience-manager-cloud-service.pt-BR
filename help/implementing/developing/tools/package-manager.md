@@ -3,9 +3,9 @@ title: Gerenciador de pacotes
 description: Aprender as noções básicas do AE; gerenciamento de pacotes com o Gerenciador de Pacotes.
 feature: Administering
 role: Admin
-source-git-commit: ddccd7f5b145283ff0f0ab39e53fce6584e147a8
+source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
 workflow-type: tm+mt
-source-wordcount: '3554'
+source-wordcount: '3584'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,11 @@ Os pacotes de conteúdo criados para AEM aplicativos as a Cloud Service devem te
 
 >[!IMPORTANT]
 >
->A interface do usuário do Gerenciador de pacotes pode retornar um **indefinido** mensagem de erro se um pacote levar mais de 10 minutos para ser instalado. Não repita a instalação se isso acontecer, pois ela está sendo executada corretamente em segundo plano e alguns conflitos podem ser introduzidos por vários processos de importação simultâneos.
+>A interface do usuário do Gerenciador de pacotes pode retornar um **indefinido** mensagem de erro se um pacote levar mais de 10 minutos para ser instalado.
+>
+>Isso não é devido a um erro na instalação, mas a um tempo limite que o Cloud Service tem para todas as solicitações.
+>
+>Não repita a instalação se esse erro aparecer. A instalação está a prosseguir corretamente em segundo plano. Se você reiniciar a instalação, alguns conflitos poderão ser introduzidos por vários processos de importação simultâneos.
 
 Para obter mais detalhes sobre como gerenciar pacotes para o AEMaaCS, consulte o documento [Implantação para AEM as a Cloud Service](/help/implementing/deploying/overview.md) no guia do usuário de implantação.
 
