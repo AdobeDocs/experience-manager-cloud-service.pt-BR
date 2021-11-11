@@ -3,10 +3,10 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: a6e0b19fae56328a587cf2fb8fdca29fe373b084
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1568'
+ht-degree: 1%
 
 ---
 
@@ -21,16 +21,16 @@ Esta página também descreve como o cache do dispatcher é invalidado, bem como
 
 ### HTML/Texto {#html-text}
 
-* por padrão, armazenado em cache pelo navegador por cinco minutos, com base no cabeçalho `cache-control` emitido pela camada do apache. A CDN também respeita esse valor.
-* a configuração padrão de armazenamento em cache HTML/Text pode ser desativada definindo a variável `DISABLE_DEFAULT_CACHING` em `global.vars`:
+* por padrão, armazenado em cache pelo navegador por cinco minutos, com base na variável `cache-control` cabeçalho emitido pela camada apache. A CDN também respeita esse valor.
+* A configuração padrão de armazenamento em cache de HTML/Texto pode ser desativada ao definir a variável `DISABLE_DEFAULT_CACHING` em `global.vars`:
 
 ```
 Define DISABLE_DEFAULT_CACHING
 ```
 
-Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste fino do cabeçalho da idade (com um valor com base no dia do calendário), já que, por padrão, o cabeçalho da idade é definido como 0. Dito isso, **tenha cuidado ao desativar o armazenamento em cache padrão.**
+Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste fino do cabeçalho da idade (com um valor com base no dia do calendário), já que, por padrão, o cabeçalho da idade é definido como 0. Dito isto, **tenha cuidado ao desativar o cache padrão.**
 
-* pode ser substituída para todo o conteúdo de HTML/Texto definindo a variável `EXPIRATION_TIME` em `global.vars` usando as ferramentas do Dispatcher do SDK as a Cloud Service AEM.
+* pode ser substituído para todo o conteúdo de HTML/Texto definindo a variável `EXPIRATION_TIME` em `global.vars` usando as ferramentas AEM as a Cloud Service do SDK Dispatcher.
 * pode ser substituído em um nível de granulado mais fino pelas seguintes diretivas apache mod_headers:
 
    ```
@@ -40,7 +40,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
    </LocationMatch>
    ```
 
-   Tenha cuidado ao definir cabeçalhos de controle de cache global ou aqueles que correspondem a um grande regex, de modo que eles não sejam aplicados ao conteúdo que você pretende manter privado. Considere o uso de várias diretivas para garantir que as regras sejam aplicadas de forma refinada. Dito isso, AEM as a Cloud Service removerá o cabeçalho do cache se detectar que ele foi aplicado ao que detecta como não armazenável em cache pelo dispatcher, conforme descrito na documentação do dispatcher. Para forçar o AEM a sempre aplicar os cabeçalhos de cache, é possível adicionar a opção **always** da seguinte maneira:
+   Tenha cuidado ao definir cabeçalhos de controle de cache global ou aqueles que correspondem a um grande regex, de modo que eles não sejam aplicados ao conteúdo que você pretende manter privado. Considere o uso de várias diretivas para garantir que as regras sejam aplicadas de forma refinada. Dito isso, AEM as a Cloud Service removerá o cabeçalho do cache se detectar que ele foi aplicado ao que detecta como não armazenável em cache pelo dispatcher, conforme descrito na documentação do dispatcher. Para forçar o AEM a sempre aplicar os cabeçalhos de cache, é possível adicionar o **always** da seguinte forma:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -51,14 +51,14 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
    </LocationMatch>
    ```
 
-   Você deve garantir que um arquivo em `src/conf.dispatcher.d/cache` tenha a seguinte regra (que está na configuração padrão):
+   Você deve garantir que um arquivo de `src/conf.dispatcher.d/cache` tem a seguinte regra (que está na configuração padrão):
 
    ```
    /0000
    { /glob "*" /type "allow" }
    ```
 
-* Para evitar que conteúdo específico seja armazenado em cache **no CDN**, defina o cabeçalho Cache-Control como *private*. Por exemplo, o seguinte impediria que o conteúdo html em um diretório chamado **secure** fosse armazenado em cache no CDN:
+* Para evitar que conteúdo específico seja armazenado em cache **na CDN**, defina o cabeçalho Controle de Cache como *private*. Por exemplo, o seguinte impediria o conteúdo html em um diretório chamado **seguro** de ser armazenado em cache no CDN:
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -69,10 +69,10 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
    ```
 
    >[!NOTE]
-   >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirão valores com êxito.
+   >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirá os valores com êxito.
 
    >[!NOTE]
-   >Observe que o dispatcher ainda pode armazenar o conteúdo em cache de acordo com suas próprias [regras de armazenamento em cache](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Para tornar o conteúdo realmente privado, você deve garantir que ele não seja armazenado em cache pelo dispatcher.
+   >Observe que o dispatcher ainda pode armazenar o conteúdo em cache de acordo com seu próprio [regras de armazenamento em cache](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Para tornar o conteúdo realmente privado, você deve garantir que ele não seja armazenado em cache pelo dispatcher.
 
 ### Bibliotecas do lado do cliente (js, css) {#client-side-libraries}
 
@@ -82,7 +82,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
 ### Imagens e qualquer conteúdo grande o suficiente armazenado no armazenamento de blob {#images}
 
 * por padrão, não armazenado em cache
-* pode ser definido em um nível mais fino pelas seguintes diretivas apache `mod_headers` :
+* pode ser definido em um nível mais fino pelo seguinte apache `mod_headers` diretivas:
 
    ```
       <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -93,7 +93,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
 
    Consulte a discussão na seção html/texto acima para ter cuidado para não armazenar em cache muito amplamente e também para forçar o AEM a sempre aplicar o armazenamento em cache com a opção &quot;sempre&quot;.
 
-   É necessário garantir que um arquivo em `src/conf.dispatcher.d/`cache tenha a seguinte regra (que está na configuração padrão):
+   É necessário assegurar que um processo `src/conf.dispatcher.d/`o cache tem a seguinte regra (que está na configuração padrão):
 
    ```
    /0000
@@ -103,12 +103,12 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
    Certifique-se de que os ativos destinados a serem mantidos privados em vez de armazenados em cache não façam parte dos filtros de diretiva LocationMatch .
 
    >[!NOTE]
-   >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirão valores com êxito.
+   >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirá os valores com êxito.
 
 ### Outros tipos de arquivos de conteúdo no armazenamento de nós {#other-content}
 
 * sem armazenamento em cache padrão
-* o padrão não pode ser definido com a variável `EXPIRATION_TIME` usada para tipos de arquivo html/text
+* O padrão não pode ser definido com a variável `EXPIRATION_TIME` variável usada para tipos de arquivo html/text
 * a expiração do cache pode ser definida com a mesma estratégia LocationMatch descrita na seção html/text especificando o regex apropriado
 
 ## Invalidação de cache do Dispatcher {#disp}
@@ -119,31 +119,34 @@ Em geral, não será necessário invalidar o cache do dispatcher. Em vez disso, 
 
 Como nas versões anteriores do AEM, a publicação ou o cancelamento da publicação de páginas limpará o conteúdo do cache do dispatcher. Se houver suspeita de um problema de cache, os clientes devem republicar as páginas em questão.
 
-Quando a instância de publicação recebe uma nova versão de uma página ou ativo do autor, ela usa o agente de limpeza para invalidar os caminhos apropriados em seu dispatcher. O caminho atualizado é removido do cache do dispatcher, juntamente com seus pais, até um nível (você pode configurar isso com o [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+Quando a instância de publicação recebe uma nova versão de uma página ou ativo do autor, ela usa o agente de limpeza para invalidar os caminhos apropriados em seu dispatcher. O caminho atualizado é removido do cache do dispatcher, juntamente com seus pais, até um nível (você pode configurar isso com a variável [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
 
 ### Invalidação do cache do dispatcher explícito {#explicit-invalidation}
 
-Em geral, não será necessário invalidar manualmente o conteúdo no dispatcher, mas é possível se necessário, conforme descrito abaixo.
+Em geral, não será necessário invalidar manualmente o conteúdo no dispatcher, mas é possível, se necessário.
 
-Antes de AEM as a Cloud Service, havia duas maneiras de invalidar o cache do dispatcher.
+>[!NOTE]
+>Antes de AEM as a Cloud Service, havia duas maneiras de invalidar o cache do dispatcher.
+>
+>1. Chame o agente de replicação, especificando o agente de liberação do dispatcher de publicação
+>2. Chamar diretamente a `invalidate.cache` API (por exemplo, `POST /dispatcher/invalidate.cache`)
 
-1. Chame o agente de replicação, especificando o agente de liberação do dispatcher de publicação
-2. Chamar diretamente a API `invalidate.cache` (por exemplo, `POST /dispatcher/invalidate.cache`)
+>
+>O do dispatcher `invalidate.cache` A abordagem da API não será mais suportada, pois aborda apenas um nó específico do dispatcher. AEM as a Cloud Service opera no nível de serviço, não no nível de nó individual e, portanto, as instruções de invalidação no [Invalidar páginas em cache do AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) não são mais válidas para AEM as a Cloud Service.
 
-A abordagem da API `invalidate.cache` do dispatcher não será mais suportada, pois aborda apenas um nó específico do dispatcher. AEM as a Cloud Service opera no nível de serviço, não no nível de nó individual e, portanto, as instruções de invalidação na página [Invalidar páginas em cache de AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) não são mais válidas para AEM as a Cloud Service .
-Em vez disso, o agente de limpeza de replicação deve ser usado. Isso pode ser feito usando a API de replicação. A documentação da API de replicação está disponível [aqui](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html) e para obter um exemplo de limpeza do cache, consulte a [página de exemplo da API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) especificamente o exemplo `CustomStep` emitindo uma ação de replicação do tipo ATIVATE para todos os agentes disponíveis. O endpoint do agente de limpeza não é configurável, mas pré-configurado para apontar para o dispatcher, correspondente ao serviço de publicação que executa o agente de limpeza. O agente de limpeza normalmente pode ser acionado por eventos ou fluxos de trabalho OSGi.
+O agente de limpeza de replicação deve ser usado. Isso pode ser feito usando a API de replicação. O [A documentação da API de replicação está disponível](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html)e para obter um exemplo de liberação do cache, consulte a [Página de exemplo da API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (em especial, `CustomStep` exemplo emitindo uma ação de replicação do tipo ATIVATE para todos os agentes disponíveis). O endpoint do agente de limpeza não é configurável, mas pré-configurado para apontar para o dispatcher, correspondente ao serviço de publicação que executa o agente de limpeza. O agente de limpeza normalmente pode ser acionado por eventos ou fluxos de trabalho OSGi.
 
 O diagrama apresentado abaixo ilustra isso.
 
-![](assets/cdnd.png "CDN")
+![CDN](assets/cdnd.png "CDN")
 
-Se houver uma preocupação de que o cache do dispatcher não esteja sendo limpo, entre em contato com o [customer support](https://helpx.adobe.com/support.ec.html) que pode liberar o cache do dispatcher, se necessário.
+Se houver uma preocupação de que o cache do dispatcher não esteja sendo limpo, entre em contato com o [suporte ao cliente](https://helpx.adobe.com/support.ec.html) que pode liberar o cache do dispatcher, se necessário.
 
-A CDN gerenciada por Adobe respeita os TTLs e, portanto, não há necessidade de liberá-la. Se houver suspeita de problema, [entre em contato com o suporte ao cliente](https://helpx.adobe.com/support.ec.html) que pode liberar um cache CDN gerenciado por Adobe, conforme necessário.
+A CDN gerenciada por Adobe respeita os TTLs e, portanto, não há necessidade de liberá-la. Se houver suspeita de um problema, [entre em contato com o suporte ao cliente](https://helpx.adobe.com/support.ec.html) suporte que pode liberar um cache CDN gerenciado por Adobe, conforme necessário.
 
 ## Bibliotecas do lado do cliente e consistência da versão {#content-consistency}
 
-As páginas são compostas por HTML, Javascript, CSS e imagens. Os clientes são incentivados a aproveitar o [Client-Side Library (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) para importar recursos Javascript e CSS para páginas HTML, levando em conta as dependências entre as bibliotecas JS.
+As páginas são compostas por HTML, Javascript, CSS e imagens. Os clientes são incentivados a aproveitar o [Estrutura de bibliotecas do lado do cliente (clientlibs)](/help/implementing/developing/introduction/clientlibs.md) para importar recursos Javascript e CSS para páginas HTML, levando em conta as dependências entre as bibliotecas JS.
 
 A estrutura clientlibs fornece gerenciamento automático de versão, o que significa que os desenvolvedores podem fazer check-in de alterações nas bibliotecas JS no controle de origem e a versão mais recente será disponibilizada quando um cliente enviar o lançamento. Sem isso, os desenvolvedores precisariam alterar manualmente o HTML com referências à nova versão da biblioteca, que é especialmente onerosa se muitos templates de HTML compartilharem a mesma biblioteca.
 
