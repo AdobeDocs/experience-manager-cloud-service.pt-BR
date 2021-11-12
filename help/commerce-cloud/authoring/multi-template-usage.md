@@ -10,14 +10,14 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ea4009b7ab99ea8fd9def4157302b942794aa283
+source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 61%
+ht-degree: 62%
 
 ---
 
-# Criação de várias categorias e páginas de produto
+# Criação de várias categorias e páginas de produto {#multiple}
 
     >[!OBSERVAÇÃO]
     >
@@ -31,6 +31,6 @@ Você pode encontrar mais informações sobre esse tópico nos seguintes recurso
 
 - [Componentes principais da CIF do AEM — Configuração de página de vários catálogos](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
-## Recursos relacionados
+## Recursos relacionados {#related}
 
 Também é possível direcionar dinamicamente regiões específicas de uma página e reutilizar o mesmo modelo. Saiba como [enriquecer dados do produto com conteúdo de AEM associado](./enrich-product-associated-content.md).

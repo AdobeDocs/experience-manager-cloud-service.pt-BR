@@ -1,10 +1,9 @@
 ---
 title: Criação de experiências comerciais
 description: Experiências comerciais de trabalho
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: a23b4767d5ef26363fa426c7d0a01a3342a81423
+source-git-commit: a5aa45f150ac6c26be9368edb3bb10cbc7d0c77f
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -63,9 +62,9 @@ A guia &quot;Ativos&quot; no painel lateral do editor oferece acesso aos dados d
 
 Analógico a ativos, os produtos podem ser adicionados em uma página (que cria um componente de teaser de produto como padrão) ou em componentes (atualmente compatíveis são o teaser de produto e o carrossel de produtos).
 
-### Adição de links para páginas de produto ou categoria em campos de texto usando o RTE (Editor de Rich Text)  {#rte}
+### Adição de links em campos de texto usando o RTE {#rte}
 
-As páginas do catálogo de produtos da CIF são páginas virtuais renderizadas dinamicamente. Assim, não é possível incorporar hiperlinks como para páginas de AEM comuns. A CIF adiciona uma nova ação &quot;Links de comércio&quot; ao RTE. Essa ação funciona exatamente como a ação &quot;Hiperlink&quot; normal, mas permite que os autores selecionem um produto ou categoria usando os seletores.
+As páginas do catálogo de produtos da CIF são páginas virtuais renderizadas dinamicamente. Assim, não é possível incorporar hiperlinks como para páginas de AEM comuns. A CIF adiciona uma nova ação &quot;Links de comércio&quot; ao RTE (Editor de Rich Text). Essa ação funciona exatamente como a ação &quot;Hiperlink&quot; normal, mas permite que os autores selecionem um produto ou categoria usando os seletores.
 
 ![RTE](../assets/authoring/RTE.png)
 

@@ -3,7 +3,7 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: Conteúdo AEM e Commerce as a Cloud Service
 breadcrumb-title: Manual do AEM Content and Commerce
 user-guide-description: Entenda como usar e administrar o Experience Manager Content and Commerce as a Cloud Service.
-source-git-commit: 2bc33096132164b54a8206c69945f3a3fd4227db
+source-git-commit: c96d2f41a09449ee742c4c153d8c4353eb75c35a
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 54%
@@ -19,13 +19,13 @@ ht-degree: 54%
 + Integrações {#integrations}
    + [Adobe Commerce](integrating/magento.md)
    + [Solução comercial de terceiros](integrating/third-party.md)
-   + Criação {#authoring}
-      + [Experiências comerciais](authoring/authoring-commerce-experiences.md)
-      + [cockpit de produtos](authoring/product-cockpit.md)
-      + [Uso de vários modelos](authoring/multi-template-usage.md)
-      + [Enriqueça os dados do produto com o conteúdo associado](authoring/enrich-product-associated-content.md)
 + Loja AEM {#storefront}
    + [Introdução](getting-started.md)
+   + Criação {#authoring}
+      + [Experiências comerciais](authoring/authoring-commerce-experiences.md)
+      + [Cockpit do produto](authoring/product-cockpit.md)
+      + [Uso de vários modelos](authoring/multi-template-usage.md)
+      + [Enriqueça os dados do produto com o conteúdo associado](authoring/enrich-product-associated-content.md)
    + Administração {#administering}
       + [Configuração de várias lojas](configuring/multi-store-setup.md)
       + [Configurar URLs para SEO](configuring/advanced-url-configuration.md)
