@@ -1,9 +1,9 @@
 ---
 title: Acesso do Usuário ao Novo Relic
 description: Siga esta página para saber mais sobre o New Relic Application Performance Monitoring for AEM as a Cloud Service
-source-git-commit: 62bee2d28c92c1d36651eb8b88607255640e511b
+source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Três por AEM ambiente as a Cloud Service:
 * Um aplicativo para o Serviço de publicação por ambiente (incluindo a Publicação dourada)
 * Um aplicativo para o serviço de Visualização por ambiente
    >[!IMPORTANT]
-   >Cada aplicativo usa uma chave de licença, AEM ambientes as a Cloud Service relatarão somente para uma conta New Relic . As métricas e os eventos de monitoramento completo da APM do Novo Relic e da Infraestrutura são retidos por 7 dias.
+   >Cada aplicativo usa uma chave de licença, AEM ambientes as a Cloud Service relatarão somente para uma conta New Relic . As métricas de monitoramento completo e os eventos para a APM do Novo Relic são retidos por 7 dias.
 
 ### Quem pode acessar os dados do New Relic Cloud Service? {#access-new-relic-cloud}
 
