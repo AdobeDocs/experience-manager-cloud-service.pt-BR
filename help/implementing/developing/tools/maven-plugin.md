@@ -2,7 +2,7 @@
 title: Plug-in Adobe Content Package Maven
 description: Use o plug-in Content Package Maven para implantar aplicativos AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 5%
@@ -117,7 +117,7 @@ Instala um pacote no repositório. A execução dessa meta não requer um projet
 Além dos parâmetros a seguir, consulte as descrições no [Parâmetros comuns](#common-parameters) seção.
 
 | Nome | Tipo | Obrigatório | Valor padrão | Descrição |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | `artifact` | `String` | Não | O valor da variável `artifactId` propriedade do projeto Maven | Uma string do formulário `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | Não | Nenhum | A ID do artefato a ser instalado |
 | `groupId` | `String` | Não | Nenhum | O `groupId` do artefato a ser instalado |
