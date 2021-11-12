@@ -3,9 +3,9 @@ title: Introdução e visão geral
 description: Introdução e visão geral do conteúdo e comércio. A CIF (Experience Manager Integration Framework) é um padrão recomendado do Commerce Adobe para integrar e estender os serviços comerciais do Magento e outras soluções comerciais de terceiros com o Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 8a8a1f7f461e5a02bfadfc392508d920bd6c1601
+source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '893'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Com o conteúdo e o comércio do Adobe Experience Manager, as marcas podem dimensionar e inovar mais rapidamente para diferenciar as experiências de comércio e capturar a aceleração dos gastos online. O AEM Content and Commerce combina as experiências imersivas, omnicanais e personalizadas no Experience Manager a qualquer quantidade de soluções comerciais para trazer experiências diferenciadas para todas as partes da jornada de compras, reduzindo o tempo de implantação e aumentando a conversão.
 
-## Como o conteúdo e o comércio ajudam os clientes a terem sucesso
+## Como o conteúdo e o comércio ajudam os clientes a terem sucesso {#successful}
 
 Com as expectativas cada vez maiores do cliente em experiências de comércio online, as marcas são pressionadas a oferecer experiências diferenciadas e mais conteúdo com mais rapidez. No entanto, a implementação de uma plataforma de gerenciamento de conteúdo geralmente requer investimentos em tempo e orçamento pesados no desenvolvimento de elementos fundamentais, como componentes personalizados e ferramentas de criação, e acumula custos em manutenção e upgrades. A Experience Manager Sites oferece conteúdo e comércio como um módulo complementar para o Experience Manager as a Cloud Service que fornece componentes principais de comércio prontos para uso, ferramentas de criação e uma loja de referência para acelerar o lançamento, permitir colaboração contínua entre equipes e impulsionar a conversão.
 
@@ -40,7 +40,7 @@ Essa complexidade abre as portas para possíveis falhas, aumento de TCO, atrasos
 
 ![Elementos da CIF](./assets/CIF/CIF_Overview.png)
 
-## A CIF oferece suporte aos clientes desde 2013 com sucesso
+## A CIF oferece suporte aos clientes desde 2013 com sucesso {#support}
 
 Com mais de 200 clientes, a CIF se estabeleceu como um ingrediente bem-sucedido para um projeto de conteúdo e comércio bem-sucedido. Isso oferece valor para TI e negócios hoje e no futuro. Projetos de clientes recentes descrevem a CIF como um &quot;grande acelerador e uma economia de tempo enorme com muito valor&quot;.
 
@@ -50,23 +50,23 @@ A CIF fornece componentes essenciais para o comércio prontos para uso que reduz
 
 O complemento CIF traz o contexto do produto para o Experience Manager e fornece ferramentas de criação, como um console de produto e seletores de produto/categoria que capacitam o profissional de marketing a criar e fornecer experiências que podem ser compradas no Experience Manager sem depender do desenvolvedor. As vantagens incluem:
 
-### Experiências
+### Experiências {#experiences}
 
 Ferramentas eficientes da CIF no AEM permitem que os criadores de conteúdo criem rapidamente experiências de comércio avançadas e personalizadas em uma maneira escalável e agnóstica de entrega para capitalizar as oportunidades de negócios.
 
 ![Elementos da CIF](./assets/CIF/CIF_Product_Experience_Management.png)
 
-### Valor de tempo (TTV)
+### Valor de tempo (TTV) {#ttv}
 
 Acelera o desenvolvimento de projetos com [Componentes principais do AEM](https://www.aemcomponents.dev/), [Loja de referência Venia AEM](https://github.com/adobe/aem-cif-guides-venia), [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)e padrões de integração para PWA (conteúdo sem cabeçalho e comércio).
 
 A CIF é criada para inovação contínua com um complemento sempre atualizado, permitindo que o cliente acesse recursos novos e aprimorados.
 
-### Integrações
+### Integrações {#integrations}
 
 Conecte seu ecossistema (por exemplo, solução comercial) com o Experience Cloud usando  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), um PaaS sem servidor baseado em microsserviços e [Implementação de referência da CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
-## Padrões comprovados e práticas recomendadas
+## Padrões comprovados e práticas recomendadas {#proven}
 
 A CIF oferece suporte a clientes com padrões de integração padronizados com base nas práticas recomendadas. Isso ajuda os clientes a terem sucesso hoje e é flexível para crescer com o cliente e se adaptar a requisitos futuros:
 
@@ -76,3 +76,9 @@ A CIF oferece suporte a clientes com padrões de integração padronizados com b
    * Necessidade de dados e experiências do produto em tempo real
 * Uma maturidade digital crescente resulta na necessidade de gerenciamento de experiência. A CIF é fornecida com recursos de gerenciamento da experiência do produto que podem ser incorporados de forma incremental, sem esforço adicional da TI.
 * Pronto para omnicanal: A CIF é compatível com diversas tecnologias de pontos de contato (lado do servidor, híbridas, lado do cliente) com padrões, aceleradores e componentes principais.
+
+## Jornada {#journey}
+
+Se você estiver seguindo uma Jornada de Comércio, vá para a próxima etapa:
+
+* O [jornada do autor de conteúdo AEM](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
