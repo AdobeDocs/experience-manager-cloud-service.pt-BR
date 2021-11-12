@@ -1,25 +1,23 @@
 ---
 title: Acesso do Usuário ao Novo Relic
 description: Acesso do Usuário ao Novo Relic
-index: false
-hide: true
-source-git-commit: 22dc38ac4aa736ae5c676cfba16e16b0b3e44936
+source-git-commit: 82ec1283bfa8cc5ff48801521c291d438ff24122
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
 
 
-# Novo Monitoramento de Desempenho do Aplicativo Relic para AEM as a Cloud Service {#new-relic}
+# Acesso do Usuário ao Novo Relic {#user-access}
 
 ## Introdução {#introduction}
 
 O Adobe dá alta ênfase ao monitoramento, disponibilidade e desempenho de seu aplicativo. Para ajudar a atingir essa meta, o AEM as a Cloud Service fornece acesso a um novo conjunto personalizado de monitoramento de Relic como parte da oferta padrão de produto para garantir que suas equipes tenham a visibilidade máxima para o sistema Cloud Service Adobe Experience Manager e para as métricas de desempenho do ambiente. Esta seção descreve os recursos de monitoramento do New Relic habilitados em seus ambientes AEM as a Cloud Service para ajudar a reforçar o desempenho e permitir que você aproveite ao máximo AEM as a Cloud Service.
 
-## AEM monitoramento as a Cloud Service de transações via Novo Relic {#transaction-monitoring}
+## AEM monitoramento as a Cloud Service de transações via Nova Relação - Proposta de Valor {#transaction-monitoring}
 
-Estes são os principais recursos do New Relic Application Performance Monitoring para AEM as a Cloud Service:
+Aqui está o resumo da proposta de valor do New Relic Application Performance Monitoring para AEM as a Cloud Service:
 
 * Acesso direto a uma conta dedicada do Novo Relic One (acesso gerenciado pelo Adobe Support).
 
@@ -40,34 +38,42 @@ Para obter acesso à sua subconta New Relic associada ao seu Programa as a Cloud
 * Todos os usuários devem receber um nome completo e um endereço de email válido.
 
    >[!NOTE]
-   >Para obter mais detalhes sobre AEM portal de suporte, consulte Suporte para Experience Cloud.
+   >Consulte [Portal de suporte AEM para Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) para obter mais detalhes.
 
-Depois que o acesso é fornecido, o Novo Relic envia um email de confirmação para cada usuário, para que ele possa concluir o processo de configuração e entrar. Se não conseguir localizar o email de confirmação da conta original:
+Depois que o acesso é fornecido, o Novo Relic envia um email de confirmação para cada usuário, para que o usuário possa concluir o processo de configuração e fazer logon.
 
-1. Navegue até a página de logon do Novo Relic em login.newrelic.com/login.
+Se o usuário não conseguir localizar o email de confirmação da conta original:
 
-1. Selecione Esqueceu sua senha.
+1. Navegue até a página de logon do Novo Relic em [login.newrelic.com/login](https://login.newrelic.com/login).
 
-1. Digite o endereço de email da conta e selecione Enviar minha senha.
+1. Selecionar **Esqueceu sua senha**.
+
+   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+
+1. Digite o endereço de email da conta e selecione **Enviar meu link de redefinição**.
+
+   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
 1. Quando o sistema do Novo Relic retornar uma mensagem de email, selecione o link nele para confirmar sua conta novamente.
 
    >[!NOTE]
    >Se você não receber um email do New Relic:
-   >Verifique seus filtros de spam. Se aplicável, adicione Novo Relic à sua lista de permissões de email.
+   >Verifique sua [filtros de spam](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). Se aplicável, [adicionar novo link à sua lista de permissões de email](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
    >Por favor, dê feedback sobre o tíquete de suporte e nossas equipes ajudarão você ainda mais
 
-1. Se você concluir o processo de assinatura e não conseguir fazer logon em sua conta devido a mensagens de erro de email ou senha, obtenha um tíquete de suporte via Admin Console.
+1. Se você concluir o processo de inscrição e não conseguir fazer logon em sua conta devido a mensagens de erro de email ou senha, registre um tíquete de suporte via [Admin Console](https://adminconsole.adobe.com/).
+
+### Verificar seu email {#verify-email}
 
 Se for solicitado que você verifique seu email durante o logon, significa que seu email está associado a várias contas e terá a opção de verificar seu email durante o logon. Isso permitirá escolher qual conta acessar. Se você não verificar seu endereço de email, o New Relic tentará fazer logon com o registro de usuário criado mais recentemente associado ao seu endereço de email. Para evitar a verificação do email durante cada logon, clique na caixa de seleção Lembre-me na tela de logon.
 
-Para obter mais ajuda, abra um tíquete de suporte pelo Portal de suporte AEM.
+Para obter mais ajuda, abra um tíquete de suporte via [Portal de suporte AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Exceções {#exceptions}
 
 AEM as a Cloud Service enfoca a oferta somente na solução APM do Novo Relic e não oferece suporte para recursos de alerta, registro ou integração de API.
 
-Para obter mais ajuda ou orientação adicional sobre as ofertas do New Relic para o seu Programa as a Cloud Service AEM, abra um tíquete de suporte via Portal de suporte AEM para obter assistência.
+Para obter mais ajuda ou orientação adicional sobre as ofertas do New Relic para o seu AEM Programa as a Cloud Service, abra um tíquete de suporte via [Portal de suporte AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) para obter assistência.
 
 ## Perguntas frequentes sobre a nova conta do Relic {#faqs}
 
@@ -79,7 +85,9 @@ Três por AEM ambiente as a Cloud Service:
 
 * Um aplicativo para o serviço Autor por ambiente
 * Um aplicativo para o Serviço de publicação por ambiente (incluindo a Publicação dourada)
-* Um aplicativo para o serviço de Visualização por ambiente Cada aplicativo usa uma chave de licença, AEM ambientes as a Cloud Service reportarão somente para uma conta New Relic. As métricas e os eventos de monitoramento completo da APM do Novo Relic e da Infraestrutura são retidos por 7 dias.
+* Um aplicativo para o serviço de Visualização por ambiente
+   >[!IMPORTANT]
+   >Cada aplicativo usa uma chave de licença, AEM ambientes as a Cloud Service relatarão somente para uma conta New Relic . As métricas e os eventos de monitoramento completo da APM do Novo Relic e da Infraestrutura são retidos por 7 dias.
 
 ### Quem pode acessar os dados do New Relic Cloud Service? {#access-new-relic-cloud}
 
