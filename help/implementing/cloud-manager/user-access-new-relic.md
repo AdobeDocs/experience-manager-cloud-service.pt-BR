@@ -1,9 +1,9 @@
 ---
 title: Acesso do Usuário ao Novo Relic
-description: Acesso do Usuário ao Novo Relic
-source-git-commit: 82ec1283bfa8cc5ff48801521c291d438ff24122
+description: Siga esta página para saber mais sobre o New Relic Application Performance Monitoring for AEM as a Cloud Service
+source-git-commit: 62bee2d28c92c1d36651eb8b88607255640e511b
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
