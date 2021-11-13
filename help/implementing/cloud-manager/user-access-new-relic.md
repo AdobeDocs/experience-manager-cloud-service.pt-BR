@@ -1,9 +1,9 @@
 ---
 title: Acesso do Usuário ao Novo Relic
 description: Siga esta página para saber mais sobre o New Relic Application Performance Monitoring for AEM as a Cloud Service
-source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
+source-git-commit: 696b86e9e88ca1fd7c0a5b688fa78f46227df3a4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Se o usuário não conseguir localizar o email de confirmação da conta origina
    >[!NOTE]
    >Se você não receber um email do New Relic:
    >Verifique sua [filtros de spam](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). Se aplicável, [adicionar novo link à sua lista de permissões de email](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >Por favor, dê feedback sobre o tíquete de suporte e nossas equipes ajudarão você ainda mais
+   >Forneça feedback sobre o tíquete de suporte e a equipe de suporte do Adobe ajudará você ainda mais.
 
 1. Se você concluir o processo de inscrição e não conseguir fazer logon em sua conta devido a mensagens de erro de email ou senha, registre um tíquete de suporte via [Admin Console](https://adminconsole.adobe.com/).
 
