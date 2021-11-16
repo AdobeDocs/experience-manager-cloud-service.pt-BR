@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
+source-git-commit: 477546f882197291403e59d8ba2e53dd4918a719
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2178'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ Da mesma forma, com tudo o que está acontecendo de forma assíncrona como atuar
 
 ## Tarefas em Segundo Plano e Trabalhos de Longa Execução {#background-tasks-and-long-running-jobs}
 
-O código executado como uma tarefa em segundo plano deve supor que a instância em execução pode ser desativada a qualquer momento. Portanto, o código deve ser resiliente e a maioria das importações deve ser retomada. Isso significa que, se o código for executado novamente, ele não deverá começar do início novamente, mas antes próximo de onde parou. Embora esse não seja um novo requisito para esse tipo de código, em AEM as a Cloud Service é mais provável que ocorra uma interrupção da instância.
+O código executado como uma tarefa em segundo plano deve supor que a instância em execução pode ser desativada a qualquer momento. Portanto, o código deve ser resiliente e, o mais importante, retomável. Isso significa que, se o código for executado novamente, ele não deverá começar do início novamente, mas antes próximo de onde parou. Embora esse não seja um novo requisito para esse tipo de código, em AEM as a Cloud Service é mais provável que ocorra uma interrupção da instância.
 
-Para minimizar os problemas, os empregos de longa duração devem ser evitados, se possível, e devem ser retomadas no mínimo. Para executar esses trabalhos, use os Trabalhos do Sling, que têm uma garantia pelo menos uma vez e, portanto, se forem interrompidos, serão executados novamente o mais rápido possível. Mas, provavelmente, não deveriam recomeçar desde o início. Para agendar essas tarefas, é melhor usar o [Trabalhos Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) agendador como essa novamente a execução pelo menos uma vez.
+Para minimizar os problemas, os empregos de longa duração devem ser evitados, se possível, e devem ser retomadas no mínimo. Para executar esses trabalhos, use os Trabalhos do Sling, que têm uma garantia pelo menos uma vez e, portanto, se forem interrompidos, serão executados novamente o mais rápido possível. Mas, provavelmente, não deveriam recomeçar desde o início. Para agendar essas tarefas, é melhor usar o [Trabalhos Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) o scheduler, dessa forma, garante novamente a execução pelo menos uma vez.
 
 O Sling Commons Scheduler não deve ser usado para agendamento, pois a execução não pode ser garantida. É muito mais provável que seja agendado.
 
