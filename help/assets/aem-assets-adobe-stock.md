@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
+source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2441'
 ht-degree: 8%
 
 ---
@@ -314,9 +314,9 @@ A tabela a seguir explica como as permissões do usuário funcionam ao acessar o
 | Usuário | Grupo | Permissões | Aceitar configuração do Stock nas Preferências do Usuário | Acessar ativos | Acessar o Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
 | admin | N/A | Todos os pacotes | N/D | Sim | Sim |
-| test-doc1 | Usuário do DAM | `/conf/global/settings/stock/cloud-config` | Sim | Sim | Sim |
-| test-doc1 | Usuário do DAM | `/conf/global/settings/stock/cloud-config` | Não | Erro: Falha ao carregar dados | Não |
-| test-doc1 | Usuário do DAM | permitir: `/conf/global/settings/stock` negar: `/cloud-config` | A configuração do estoque não está visível | Sim | Não |
+| test-doc1 | Usuário do DAM | /conf/global/settings/stock/cloud-config | Sim | Sim | Sim |
+| test-doc1 | Usuário do DAM | /conf/global/settings/stock/cloud-config | Não | Erro: Falha ao carregar dados | Não |
+| test-doc1 | Usuário do DAM | **allow**: /conf/global/settings/stock **negar**: /cloud-config | A configuração do estoque não está visível | Sim | Não |
 
 ## Usar e gerenciar [!DNL Adobe Stock] ativos em [!DNL Experience Manager] {#usemanage}
 
