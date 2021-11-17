@@ -3,7 +3,7 @@ title: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 description: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
+source-git-commit: 8ca25f86a8d0d61b40deaff0af85e56e438efbdc
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Um usuário com acesso de administrador em [!DNL Adobe Experience Manager] como 
 >
 >O Adobe requer implantação e configuração do [!DNL Adobe Workfront for Experience Manager enhanced connector] somente por parceiros certificados ou [!DNL Adobe Professional Services]. Se implantado e configurado sem um parceiro certificado ou [!DNL Adobe Professional Services], ele não é compatível com o Adobe.
 >
->O Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que torna este conector redundante; se isso ocorrer, os clientes podem ser solicitados a fazer a transição do uso desse conector.
+>O Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam redundante este conector; se isso ocorrer, os clientes podem ser solicitados a fazer a transição do uso desse conector.
 
 Antes de instalar o conector, siga estas etapas de pré-instalação:
 
