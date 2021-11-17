@@ -6,13 +6,13 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Estrutura de integração de comércio
+feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c5ae2fb098c30d2be45316367f87725d16d84af7
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '377'
 ht-degree: 81%
 
 ---
@@ -39,7 +39,7 @@ Para conectar um site do AEM e os Componentes principais da CIF do AEM a uma vis
 
 3. Crie uma configuração secundária da configuração do CIF Cloud Service seguindo estas etapas:
 
-   * AEM vá para Ferramentas -> Geral -> [Navegador de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * AEM acesse Ferramentas -> Geral -> [Navegador de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Selecione a configuração básica que você criou
    * Criar uma nova configuração usando as etapas descritas no ponto 2 acima
 
@@ -55,7 +55,7 @@ Para conectar um site do AEM e os Componentes principais da CIF do AEM a uma vis
    * Acesse a raiz de região ou idioma da estrutura do site, por exemplo, /content/venia/us _ou_ /content/venia/us/en para a página de exemplo Venia.
    * Selecione a página e abra as propriedades da página
    * Selecione a guia Avançado
-   * Na seção `Configuration` selecione a configuração que você criou na etapa 3
+   * Na seção `Configuration` selecione a configuração que você criou na etapa 3 3
 
 ## Recursos adicionais
 
