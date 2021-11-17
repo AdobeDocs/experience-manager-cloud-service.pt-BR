@@ -1,13 +1,13 @@
 ---
 title: Gerenciar [!DNL Adobe Stock] ativos em [!DNL Assets].
 description: Pesquisar, buscar, licenciar e gerenciar [!DNL Adobe Stock] ativos de dentro [!DNL Adobe Experience Manager]. Use os ativos licenciados como qualquer outro ativo digital.
-contentOwner: AG
+contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: ea1b2d58c04937304bddd528a9839bdf627f1ae9
+source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2426'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,7 @@ As organizações podem integrar sua empresa [!DNL Adobe Stock] planejar com [!D
 
 A integração exige:
 
+* Uma atividade ativa e em execução [!DNL Experience Manager Assets] como [!DNL Cloud Service] instância
 * Um [empresa [!DNL Adobe Stock] plano](https://stockenterprise.adobe.com/)
 * Um usuário com permissões no Admin Console para o perfil de produto do Stock padrão
 * Um usuário com permissões para o perfil de Acesso ao desenvolvedor para criar integração no Console do desenvolvedor do Adobe.
@@ -39,7 +40,7 @@ Uma empresa [!DNL Adobe Stock] plano,
 * Habilita a autenticação da conta de serviço (JWT) em [!DNL Adobe Developer Console] para seu direito ao estoque
 * Permite gerenciar os créditos e o licenciamento globalmente de dentro do [!DNL Adobe Admin Console]
 
-No direito, um perfil de produto padrão para [!DNL Adobe Stock] existe em [!DNL Admin Console]. Vários perfis podem ser criados, e esses perfis determinam quem pode licenciar ativos do Stock. Um usuário com acesso direto ao perfil do produto pode acessar [https://stock.adobe.com/](https://stock.adobe.com/) e licenciar ativos do Stock. Considerando que há outro método de usar o Developer Access para criar integração (API) para autenticar a comunicação entre [!DNL Experience Manager] e [!DNL Adobe Stock].
+No direito, um perfil de produto padrão para [!DNL Adobe Stock] existe em [!DNL Admin Console]. Vários perfis podem ser criados, e esses perfis determinam quem pode licenciar ativos do Stock. Um usuário com acesso direto ao perfil do produto pode acessar [https://stock.adobe.com/](https://stock.adobe.com/) e licenciar ativos do Stock. Enquanto que há outro método de uso do Acesso do desenvolvedor para criar uma integração (API). Essa integração autentica a comunicação entre [!DNL Experience Manager Assets] e [!DNL Adobe Stock].
 
 >[!NOTE]
 >
@@ -112,7 +113,7 @@ A configuração IMS inclui duas etapas:
 
 A chave pública (certificado) autentica seu perfil de produto no Console do desenvolvedor do Adobe.
 
-1. Faça logon no [!DNL Experience Manager Assets] instância do autor. O URL padrão é `http://localhost:4502/aem/start.html`.
+1. Faça logon no [!DNL Experience Manager Assets] instância da nuvem.
 
 1. No **[!UICONTROL Ferramentas]** , navegue até **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**.
 
