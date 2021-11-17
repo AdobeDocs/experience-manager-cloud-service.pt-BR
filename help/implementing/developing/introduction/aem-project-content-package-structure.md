@@ -2,9 +2,9 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: b9ada47611a3e4c38bedeae21f0bcf638c13b17a
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2877'
 ht-degree: 13%
 
 ---
@@ -80,7 +80,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
    + Execute pastas de configuração OSGi específicas ao modo que contenham configurações OSGi padrão que se aplicam a todos os destinos de implantação AEM as a Cloud Service do target
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Repo Init Scripts de configuração do OSGi
-      + [Repo Init](#repo-init) é a maneira recomendada de implantar conteúdo (mutável) que é logicamente parte do aplicativo AEM. As configurações de OSGi da inicialização do Repo devem ser posicionadas no `config.<runmode>` conforme descrito acima, e ser usado para definir:
+      + [Repo Init](#repo-init) é a maneira recomendada de implantar conteúdo (mutável) que é logicamente parte do aplicativo AEM. As configurações de OSGi da inicialização do Repo devem ser colocadas na `config.<runmode>` conforme descrito acima, e ser usado para definir:
          + Estruturas de conteúdo da linha de base
          + Usuários
          + Usuários do Serviço
@@ -97,7 +97,7 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
 + O `ui.content` contém todo o conteúdo e configuração. O Pacote de conteúdo contém todas as definições de nó no `ui.apps` ou `ui.config` pacotes ou, em outras palavras, qualquer item que não esteja em `/apps` ou `/oak:index`. Elementos comuns da `ui.content` O pacote inclui, mas não se limita a:
    + Configurações sensíveis ao contexto
       + `/conf`
-   + Estruturas de conteúdo necessárias e complexas (ou seja, Compilação de conteúdo que é criada e estende por cima das estruturas de conteúdo da Linha de base definidas no Repo Init.)
+   + Estruturas de conteúdo necessárias e complexas (ou seja, Compilação de conteúdo que se baseia em e estende por cima das estruturas de conteúdo da Linha de base definidas no Repo Init.)
       + `/content`, `/content/dam`, etc.
    + taxonomias de marcação controladas
       + `/content/cq:tags`

@@ -2,10 +2,10 @@
 title: Armazenamento em cache e desempenho
 description: Saiba mais sobre as diferentes configurações disponíveis para habilitar o GraphQL e o armazenamento em cache de conteúdo para otimizar o desempenho da sua implementação de comércio.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 460aa927453964f4878a8a969794a7052a2d3778
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ Antes de enviar uma solicitação GraphQL, o cliente verificará se já há uma 
 
 ### Exemplos
 
-Recomendamos configurar algum armazenamento em cache para o serviço de pesquisa que busca todos os valores de agregações/facetas disponíveis exibidos nas páginas de pesquisa e categoria de produto. Normalmente, esses valores só mudam quando um novo atributo é adicionado aos produtos, por exemplo, para que a duração dessa entrada de cache possa ser &quot;grande&quot; se o conjunto de atributos do produto não for alterado com frequência. Embora seja uma configuração específica de cada projeto, recomendamos valores de alguns minutos em fases de desenvolvimento do projeto e de algumas horas em sistemas de produção estáveis.
+Recomendamos que você configure algum armazenamento em cache para o serviço de pesquisa que busca todos os valores de agregações/facetas disponíveis exibidos nas páginas de pesquisa e categoria do produto. Normalmente, esses valores só mudam quando um novo atributo é adicionado aos produtos, por exemplo, para que a duração dessa entrada de cache possa ser &quot;grande&quot; se o conjunto de atributos do produto não for alterado com frequência. Embora seja uma configuração específica de cada projeto, recomendamos valores de alguns minutos em fases de desenvolvimento do projeto e de algumas horas em sistemas de produção estáveis.
 
 Normalmente, esses valores são configurados com a seguinte entrada de cache:
 
