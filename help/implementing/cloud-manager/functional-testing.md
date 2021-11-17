@@ -2,9 +2,9 @@
 title: Teste funcional - Cloud Services
 description: Teste funcional - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '946'
 ht-degree: 3%
 
 ---
@@ -119,9 +119,11 @@ Além disso, o JAR deve ter o cabeçalho do manifesto Cloud-Manager-TestType def
     </plugins>
 ```
 
-Dentro desse arquivo JAR, os nomes de classe dos testes reais a serem executados devem terminar em TI.
+Neste arquivo JAR, os nomes de classe dos testes reais a serem executados devem terminar em `IT`.
 
-Por exemplo, uma classe chamada `com.myco.tests.aem.ExampleIT` seria executado, mas uma classe chamada `com.myco.tests.aem.ExampleTest` não.
+Por exemplo, uma classe chamada `com.myco.tests.aem.it.ExampleIT` seria executada, mas uma classe chamada `com.myco.tests.aem.it.ExampleTest` não.
+
+Além disso, para excluir o código de teste da verificação de cobertura da verificação de código, o código de teste deve estar abaixo de um pacote chamado `it` (o filtro de exclusão de cobertura é `**/it/**/*.java`).
 
 As classes de teste precisam ser testes JUnit normais. A infraestrutura de teste é projetada e configurada para ser compatível com as convenções usadas pela biblioteca de testes aem-testing-clients. Os desenvolvedores são altamente incentivados a usar essa biblioteca e seguir suas práticas recomendadas. Consulte [Link Git](https://github.com/adobe/aem-testing-clients) para obter mais detalhes.
 
