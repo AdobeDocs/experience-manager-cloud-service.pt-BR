@@ -1,7 +1,7 @@
 ---
 title: Introdução à criação da CIF
 description: Introdução à criação da CIF
-source-git-commit: a98d525512dcba790d002d6a4042558962c36c97
+source-git-commit: e497b5b4439cf91ec7ea698d9bedcb4210802414
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Este artigo tem por base esses fundamentos.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como usar a CIF para criação específica de conteúdo e comércio. Depois de ler, você deve:
+Este documento ajuda você a entender como usar a CIF para criação específica de conteúdo e comércio. Após a leitura, você deve:
 
 * Entenda os conceitos da criação da CIF usando o Editor universal
 * Como acessar os dados do catálogo de produtos no AEM usando seletores de produto e categoria

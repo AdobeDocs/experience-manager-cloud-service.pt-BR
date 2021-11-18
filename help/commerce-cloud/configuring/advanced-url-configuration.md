@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9844a092f440f4520b4dd75e6a6253a4593eb630
+source-git-commit: 3ea19210049e49401da892021f098005759542a3
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 46%
+source-wordcount: '790'
+ht-degree: 41%
 
 ---
 
@@ -76,7 +76,7 @@ Com os dados de exemplo acima, um URL de página de categoria formatado usando o
 
 ## Formatos de URL personalizados {#custom-url-format}
 
-Para fornecer um formato de URL personalizado, um projeto pode implementar a variável [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) e registrar a implementação como serviço OSGI, usando-a como página de categoria ou formato de url da página do produto. O `UrlFormat#PROP_USE_AS` a propriedade service indica qual dos formatos predefinidos configurados deve ser substituído:
+Para fornecer um formato de URL personalizado, um projeto pode implementar a variável [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) e registre a implementação como serviço OSGI, usando-a como página de categoria ou formato de url da página do produto. O `UrlFormat#PROP_USE_AS` a propriedade service indica qual dos formatos predefinidos configurados deve ser substituído:
 
 * `useAs=productPageUrlFormat`, substituirá o formato de url da página do produto configurado
 * `useAs=categoryPageUrlFormat`, substituirá o formato de url da página da categoria configurada
@@ -91,17 +91,17 @@ Além do `UrlProvider`, também é possível configurar os [Mapeamentos do Sling
 
 ## Combinar com o AEM Dispatcher {#dispatcher}
 
-As substituições de URL também podem ser obtidas usando o servidor HTTP do AEM Dispatcher com o módulo `mod_rewrite`. O [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece uma configuração de referência do AEM Dispatcher que já inclui [regras de substituição](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para o tamanho gerado.
+As substituições de URL também podem ser obtidas usando AEM servidor HTTP do Dispatcher com `mod_rewrite` módulo. O [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece uma configuração de referência do AEM Dispatcher que já inclui [regras de substituição](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para o tamanho gerado.
 
-## Exemplo
+## Exemplo {#example}
 
-O projeto da [loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia) inclui configurações de exemplo para demonstrar o uso de URLs personalizados para páginas de produto e categoria. Dessa forma, cada projeto pode configurar padrões de URL individuais para páginas de produto e categoria de acordo com suas necessidades de SEO. Usa-se uma combinação do `UrlProvider` da CIF e os Mapeamentos do Sling conforme descrito acima.
+O projeto da [loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia) inclui configurações de exemplo para demonstrar o uso de URLs personalizados para páginas de produto e categoria. Isso permite que cada projeto configure padrões de URL individuais para páginas de produto e categoria de acordo com suas necessidades de SEO. Usa-se uma combinação do `UrlProvider` da CIF e os Mapeamentos do Sling conforme descrito acima.
 
 >[!NOTE]
 >
 >Essa configuração deve ser ajustada com o domínio externo usado pelo projeto. Os Mapeamentos do Sling estão funcionando com base no nome do host e no domínio. Portanto, essa configuração é desativada por padrão e deve ser ativada antes da implantação. Para fazer isso, renomeie a pasta `hostname.adobeaemcloud.com` do Mapeamento do Sling em `ui.content/src/main/content/jcr_root/etc/map.publish/https` de acordo com o nome de domínio usado e ative essa configuração adicionando `resource.resolver.map.location="/etc/map.publish"` à configuração `JcrResourceResolver` do projeto.
 
-## Recursos adicionais
+## Recursos adicionais {#additional}
 
 * [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia)
 * [Mapeamento de recursos do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)

@@ -2,10 +2,10 @@
 title: AEM - Perguntas frequentes sobre a integração com o Commerce usando a Commerce Integration Framework
 description: AEM - Perguntas frequentes sobre a integração com o Commerce usando a Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
+source-git-commit: 283bef84f2d5973150be8f62bd6f86193252d4f4
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 44%
+source-wordcount: '952'
+ht-degree: 41%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 44%
 
 ## 1. O GraphQL da CIF é usado apenas para comércio ou será disponibilizado para consultar conteúdo criado AEM JCR?
 
-A Adobe adotou as APIs GraphQL da Magento como a API oficial para todos os dados relacionados ao comércio. Portanto, o AEM usa GraphQL para trocar dados de comércio com a Magento e com qualquer mecanismo de comércio por meio da I/O Runtime. Essa API GraphQL é independente AEM API GraphQL para acessar os Fragmentos de conteúdo.
+O Adobe adotou as APIs GraphQL do Magento como a API oficial para todos os dados relacionados ao comércio. Portanto, o AEM usa GraphQL para trocar dados de comércio com a Magento e com qualquer mecanismo de comércio por meio da I/O Runtime. Essa API GraphQL é independente AEM API GraphQL para acessar os Fragmentos de conteúdo.
 
 ## 2. Os ativos do produto (imagens) podem ser armazenados e referenciados AEM por meio do administrador do Adobe Commerce (Magento)? Como os ativos do Dynamic Media podem ser consumidos?
 
@@ -35,7 +35,7 @@ O complemento CIF usado com o AEM Cloud Service permite que os dados fluam da so
 
 ## 6. Que tamanho de catálogo AEM com o suporte à CIF?
 
-Isso depende de alguns aspectos adicionais que você precisa considerar. Qual é a proporção de cache dos dados e páginas do catálogo? Quantas solicitações simultâneas você espera durante as horas de pico? Em que escala as APIs de suas soluções comerciais podem ser utilizadas?
+Isso depende de alguns aspectos adicionais que você precisa considerar. Qual é a proporção de cache dos dados e páginas do catálogo? Quantas solicitações simultâneas você espera durante as horas de pico? Qual é a escala das APIs de suas soluções comerciais?
 
 ## 7. Como o PIM atua nessa estrutura?
 
@@ -51,7 +51,7 @@ Recomendamos configurar a invalidação do cache com base em TTL para páginas a
 
 ## 10. Há alguma recomendação sobre a pesquisa unificada de conteúdo no AEM com o Commerce?
 
-É fornecida uma implementação de referência de pesquisa de produto, mas não de pesquisa unificada com conteúdo. Geralmente, esse recurso depende muito do cliente e é melhor encontrar uma solução para cada projeto.
+É fornecida uma implementação de referência de pesquisa de produto, mas não de pesquisa unificada com conteúdo. Normalmente, esse recurso é muito específico do cliente e é melhor resolvido em um nível específico do projeto.
 
 ## 11. Como a pesquisa funciona com AEM e comércio usando a CIF?
 
@@ -63,11 +63,11 @@ Os dados do produto geralmente já são traduzidos no PIM ou na Magento. A integ
 
 ## 13. Há alguma maneira de aprimorar os dados do produto com texto comercial? Onde é possível fazer isso? No AEM ou na solução comercial?
 
-Recomendamos gerenciar dados e conteúdo de marketing relacionados no AEM. Decorre dados de produtos de sua solução comercial com atributos adicionais usando Fragmentos de conteúdo ou crie e vincule Fragmentos de experiência para conteúdo não estruturado com seus produtos.
+Recomendamos o gerenciamento de dados e conteúdo relacionados ao marketing no AEM. Decorre dados de produtos de sua solução comercial com atributos adicionais usando Fragmentos de conteúdo ou crie e vincule Fragmentos de experiência para conteúdo não estruturado com seus produtos.
 
 ## 14. Como podemos garantir a conformidade com o PCI ao usar o AEM para a camada de apresentação inteira?
 
-Recomendamos usar métodos de pagamento abstratos. Isso coloca o cliente do navegador em comunicação direta com o provedor do gateway de pagamento para que nem o Adobe nem as soluções de comércio retenham ou transmitam os dados do titular do cartão. Esta abordagem requer apenas uma conformidade PCI de nível 3. No entanto, há outros aspectos que devem ser considerados em termos de conformidade com o PCI, como o modo como os funcionários interagem com o sistema e os dados. Para obter mais informações sobre a conformidade com a Magento PCI, consulte [Requisitos de conformidade PCI](https://magento.com/pci-compliance).
+Recomendamos o uso de métodos de pagamento abstratos. Isso coloca o cliente do navegador em comunicação direta com o provedor do gateway de pagamento para que nem o Adobe nem as soluções de comércio retenham ou transmitam os dados do titular do cartão. Esta abordagem requer apenas uma conformidade PCI de nível 3. No entanto, há outros aspectos que devem ser considerados em termos de conformidade com o PCI, como o modo como os funcionários interagem com o sistema e os dados. Para obter mais informações sobre a conformidade com a Magento PCI, consulte [Requisitos de conformidade PCI](https://magento.com/pci-compliance).
 
 ## 15. Se eu usar versões de nuvem de AEM e Magento, esta solução conjunta é compatível com PCI?
 
