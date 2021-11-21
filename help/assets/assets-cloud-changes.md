@@ -4,9 +4,9 @@ description: Alterações importantes no [!DNL Adobe Experience Manager Assets] 
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: e07529f73a3c0b39cb51afb4f3545a9094ce48ef
+source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1026'
 ht-degree: 5%
 
 ---
@@ -51,21 +51,22 @@ Para fazer uma validação completa do código e do processo, incluindo a assimi
 
 | Recurso ou caso de uso | Status em [!DNL Experience Manager] como [!DNL Cloud Service] | Comentários |
 |-----|-----|-----|
-| [Detecção de ativos duplicados](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Funciona de forma diferente. | Consulte [como funcionava [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
+| [Detecção de ativos duplicados](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Funciona de forma diferente | Consulte [como funcionava [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [Representações somente para posicionamento (FPO)](/help/assets/configure-fpo-renditions.md) | Funciona de forma diferente | Os Perfis de processamento usam microsserviços de ativos para gerar representações de FPO. No Experience Manager 6.5, uma solução de terceiros, como [!DNL ImageMagick] estava disponível para gerar as renderizações. |
 | Write-back de metadados | Funciona de forma diferente | Desativado por padrão. Ative o iniciador do fluxo de trabalho correspondente, se necessário. O write-back é realizado pelos microsserviços de ativos. |
-| Processamento de ativos carregados usando o Gerenciador de pacotes | Precisa de intervenção manual. | Reprocessar manualmente usando o **[!UICONTROL Reprocessar ativo]** ação. |
+| Processamento de ativos carregados usando o Gerenciador de pacotes | Precisa de intervenção manual | Reprocessar manualmente usando o **[!UICONTROL Reprocessar ativo]** ação. |
 | Detecção de tipo MIME | Não suportado. | Se você carregar um ativo digital sem uma extensão ou com uma extensão incorreta, ele poderá não ser processado conforme desejado. Os usuários ainda podem armazenar os arquivos binários sem uma extensão no DAM. Consulte [Detecção de tipo MIME em [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Geração de subconjunto para ativos compostos | Não suportado. | Casos de uso dependentes como anotações podem não ser cumpridos. Consulte [criação de subativos em [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). A visualização de PDF de alguns tipos de arquivos está disponível a partir de [Versão 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
-| Página inicial | Não suportado. | Consulte [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| Extrair ativos do arquivo ZIP | Não suportado. | Consulte [Extração de ZIP em [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
-| Classificações de ativos | Não suportado. | Não há suporte para o widget de classificação no editor de esquema de metadados. |
-| Filtro de disposição de conteúdo | Não suportado. | Um caso de uso popular de `ContentDispositionFilter` é permitir que os administradores configurem [!DNL Experience Manager] para enviar arquivos HTML e abrir arquivos PDF em linha, em vez de baixá-los. Nas instâncias de Publicação, é possível gerenciar a disposição usando a configuração do Dispatcher. Nas instâncias de Autor, o Adobe não recomenda a modificação do cabeçalho de Disposição de Conteúdo. Consulte [Filtro Content Disposition em [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
-| [Baixar relatório](/help/assets/asset-reports.md) | Não suportado. | Por enquanto, o relatório de download que informa o uso de ativos não está disponível. Consulte [baixar relatório em [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
-| Modelo de sessão fotográfica do produto | Não suportado. | Consulte [modelo de sessão de fotos do produto em [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
-| Tradução inteligente | Não suportado. | [Tradução inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) não é compatível com o [!DNL Experience Manager] como [!DNL Cloud Service]. |
-| WebDAV | Não suportado. | Para obter alternativas, consulte [[!DNL Creative Cloud] integração](/help/assets/aem-cc-integration-best-practices.md) ou [Material de referência do desenvolvedor](/help/assets/developer-reference-material-apis.md). |
-| Interface do usuário clássica | Não suportado. | Somente a interface habilitada para toque está disponível. |
+| Editar imagens | Não suportado | A edição de ativos não é suportada no Experience Manager as a Cloud Service. Consulte [como funcionava no Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#editing-images). |
+| Página inicial | Não suportado | Consulte [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
+| Extrair ativos do arquivo ZIP | Não suportado | Consulte [Extração de ZIP em [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
+| Classificações de ativos | Não suportado | Não há suporte para o widget de classificação no editor de esquema de metadados. |
+| Filtro de disposição de conteúdo | Não suportado | Um caso de uso popular de `ContentDispositionFilter` é permitir que os administradores configurem [!DNL Experience Manager] para enviar arquivos HTML e abrir arquivos PDF em linha, em vez de baixá-los. Nas instâncias de Publicação, é possível gerenciar a disposição usando a configuração do Dispatcher. Nas instâncias de Autor, o Adobe não recomenda a modificação do cabeçalho de Disposição de Conteúdo. Consulte [Filtro Content Disposition em [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
+| [Baixar relatório](/help/assets/asset-reports.md) | Não suportado | Por enquanto, o relatório de download que informa o uso de ativos não está disponível. Consulte [baixar relatório em [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
+| Modelo de sessão fotográfica do produto | Não suportado | Consulte [modelo de sessão de fotos do produto em [!DNL Experience Manager] 6,5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
+| Tradução inteligente | Não suportado | [Tradução inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) não é compatível com o [!DNL Experience Manager] como [!DNL Cloud Service]. |
+| WebDAV | Não suportado | Para obter alternativas, consulte [[!DNL Creative Cloud] integração](/help/assets/aem-cc-integration-best-practices.md) ou [Material de referência do desenvolvedor](/help/assets/developer-reference-material-apis.md). |
+| Interface do usuário clássica | Não suportado | Somente a interface habilitada para toque está disponível. |
 
 >[!MORELIKETHIS]
 >
