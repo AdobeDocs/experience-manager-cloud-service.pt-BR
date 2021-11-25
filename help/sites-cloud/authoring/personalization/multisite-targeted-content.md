@@ -1,14 +1,13 @@
 ---
 title: Trabalhar com conteúdo direcionado em vários sites
 description: Se você precisar gerenciar conteúdo direcionado, como atividades, experiências e ofertas entre seus sites, é possível aproveitar o suporte multisite integrado do AEM para conteúdo direcionado
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2893'
 ht-degree: 88%
 
 ---
-
 
 # Trabalhar com conteúdo direcionado em vários sites {#working-with-targeted-content-in-multisites}
 
@@ -33,15 +32,15 @@ Para configurar como os seus sites compartilham conteúdo personalizado, você p
 
 A qualquer momento, você pode suspender ou restaurar a herança. Além disso, se não quiser suspender a herança, você também poderá criar experiências locais. Por padrão, todas as páginas usam a Área mestra, a menos que você especifique o contrário.
 
-## Introdução ao suporte multisite para conteúdo direcionado  {#introduction-to-multisite-support-for-targeted-content}
+## Introdução ao suporte multisite para conteúdo direcionado {#introduction-to-multisite-support-for-targeted-content}
 
 O suporte multisite para conteúdo direcionado está disponível imediatamente e permite enviar conteúdo direcionado da página mestra que você gerencia por meio do MSM para uma live copy local, ou permite gerenciar modificações globais e locais desse conteúdo.
 
-Gerencie isso em uma **Área**. Áreas separam o conteúdo direcionado (atividades, experiências e ofertas) usado em diferentes sites e fornecem um mecanismo baseado no MSM para criar e gerenciar a herança do conteúdo direcionado junto com a herança do site. Dessa forma, você não precisa recriar conteúdo direcionado em sites herdados, como era exigido no AEM antes da versão 6.2.
+Você gerencia isso em um **Área**. Áreas separam o conteúdo direcionado (atividades, experiências e ofertas) usado em diferentes sites e fornecem um mecanismo baseado no MSM para criar e gerenciar a herança do conteúdo direcionado junto com a herança do site. Isso evita que você tenha que recriar o conteúdo direcionado nos sites herdados.
 
 Em uma área, apenas as atividades vinculadas a essa área são enviadas para cópias em tempo real. Por padrão, a Área mestra é selecionada. Depois de criar áreas adicionais, você pode vinculá-las a seus sites ou páginas para indicar qual conteúdo direcionado é enviado.
 
-Um site ou uma live copy se vincula a uma área que contém as atividades que precisam estar disponíveis nesse site ou nessa live copy. Por padrão, o site ou a live copy se vincula à área mestra, mas é possível vincular outras áreas além das áreas mestras.
+Um site ou uma live copy se vincula a uma área que contém as atividades que precisam estar disponíveis nesse site ou nessa live copy. Por padrão, o site ou a live copy se vincula à área principal, mas você pode vincular outras áreas além das áreas principais.
 
 >[!NOTE]
 >
@@ -53,10 +52,9 @@ Um site ou uma live copy se vincula a uma área que contém as atividades que pr
 >
 
 
+## Casos de uso {#use-cases}
 
-## Casos de uso  {#use-cases}
-
-Você pode configurar o suporte multisite para conteúdo direcionado de várias maneiras, dependendo do seu caso de uso. Esta seção descreve como isso funcionaria teoricamente com uma marca. Além disso, em [Exemplo: Direcionando conteúdo com base em geografia](#example-targeting-content-based-on-geography), você pode ver um aplicativo real de direcionamento de conteúdo em vários sites.
+Você pode configurar o suporte multisite para conteúdo direcionado de várias maneiras, dependendo do seu caso de uso. Esta seção descreve como isso funcionaria teoricamente com uma marca. Além disso, [Exemplo: Direcionamento de conteúdo com base em geografia](#example-targeting-content-based-on-geography), você pode ver uma aplicação real do conteúdo do direcionamento em vários sites.
 
 O conteúdo direcionado é agrupado nas áreas, que definem o escopo de sites ou páginas. Essas áreas são definidas no nível da marca. Uma marca pode conter várias áreas. Áreas podem ser distintas entre marcas. Embora uma marca possa conter apenas a área mestra e, portanto, ser compartilhada entre todas as marcas, outra marca pode conter várias marcas (por exemplo, por região). Portanto, marcas não precisam espelhar o conjunto de áreas entre elas.
 
@@ -68,7 +66,7 @@ Com o suporte multisite para conteúdo direcionado, você pode, por exemplo, ter
 * Um conjunto *compartilhado* de conteúdo direcionado - A edição em um site tem impacto direto nos dois sites; você pode definir essa configuração fazendo com que dois sites se refiram à mesma área. Sites com links para a mesma área compartilham o conteúdo direcionado nessa área. Por exemplo:
    * O Site A se vincula à Área X
    * O Site B se vincula à Área X
-* Um conjunto distinto de conteúdo direcionado *herdado* de outro site via MSM - O conteúdo pode ser implantado de forma unidirecional do mestre para a live copy. Por exemplo:
+* Um conjunto distinto de conteúdo direcionado *herdado* de outro site via MSM - O conteúdo pode ser implantado de forma unidirecional do principal para a live copy. Por exemplo:
    * O Site A se vincula à Área X
    * O Site B se vincula à Área Y (que é uma live copy da Área X)
 
@@ -94,7 +92,7 @@ Existem quatro versões do mesmo site com base na região:
 Cada site compartilha conteúdo personalizado em regiões geográficas:
 
 * Canadá compartilha a área mestra com os Estados Unidos.
-* A Grã-Bretanha está ligada ao espaço europeu e herda da zona principal.
+* A Grã-Bretanha está ligada ao espaço europeu e herda da principal.
 * Austrália, por estar no hemisfério sul e não ser aplicável para produtos sazonais, tem seu próprio conteúdo personalizado.
 
 ![Diagrama multisite](/help/sites-cloud/authoring/assets/multisite-diagram.png)
@@ -142,7 +140,7 @@ Para conseguir isso no AEM, você faria o seguinte:
 * O Site C vincula-se à Área herdada, que é uma live copy da Área mestra - Use a opção Criar área como Live Copy, em que você cria uma live copy com base na Área mestra. A Área herdada herda as atividades da área mestra após a implantação.
 * O Site D vincula-se à sua própria Área isolada - Use a opção Criar área, em que você cria uma área totalmente nova, sem atividades ainda definidas. A área isolada não compartilhará atividades com nenhum outro site.
 
-## Criação de novas áreas  {#creating-new-areas}
+## Criação de novas áreas {#creating-new-areas}
 
 Áreas podem abranger atividades e ofertas. Depois de criar uma área em qualquer uma delas (por exemplo, atividades), você também tem a área disponível na outra (por exemplo, ofertas).
 
@@ -208,7 +206,7 @@ Ao vincular, apenas as atividades, experiências e ofertas da área selecionada 
 
 >[!NOTE]
 >
->Páginas ou sites que fazem referência à mesma área estão usando o *mesmo* conjunto compartilhado de atividades, experiências e ofertas. A edição de uma atividade, experiência ou oferta compartilhada por vários sites afeta todos esses sites.
+>Páginas ou sites que fazem referência à mesma área estão usando o *same* conjunto compartilhado de atividades, experiências e ofertas. A edição de uma atividade, experiência ou oferta compartilhada por vários sites afeta todos esses sites.
 
 Para vincular um site a uma área:
 
@@ -241,8 +239,7 @@ Uma atividade herdada de outro site é marcada em verde ao lado do seu nome. Uma
 >
 
 
-
-### Suspensão da herança  {#suspending-inheritance}
+### Suspensão da herança {#suspending-inheritance}
 
 Para suspender ou desconectar a herança do conteúdo direcionado em uma atividade:
 
@@ -255,7 +252,7 @@ Para suspender ou desconectar a herança do conteúdo direcionado em uma ativida
 
    ![Suspender Live Copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
-1. Toque ou clique em **Suspender** para suspender a atividade. Atividades suspensas são marcadas em vermelho.
+1. Toque ou clique **Suspender** para suspender a atividade. Atividades suspensas são marcadas em vermelho.
 
    ![Live Copy suspensa](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
@@ -284,12 +281,12 @@ Para restaurar a herança do conteúdo direcionado em uma atividade:
 
 1. Toque ou clique em **Retomar** para confirmar que você deseja retomar a herança da live copy. Quaisquer modificações feitas na atividade atual serão perdidas se você retomar a herança.
 
-## Exclusão de áreas  {#deleting-areas}
+## Exclusão de áreas {#deleting-areas}
 
-Ao excluir uma área, você exclui todas as atividades nessa área. O AEM avisa antes que você possa excluir uma área. Se você excluir uma área à qual um site está vinculado, o mapeamento dessa marca será automaticamente remapeado para a área mestra.
+Ao excluir uma área, você exclui todas as atividades nessa área. O AEM avisa antes que você possa excluir uma área. Se você excluir uma área à qual um site está vinculado, o mapeamento dessa marca será automaticamente remapeado para a área principal.
 
 Para excluir uma área:
 
-1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e então sua marca.
+1. Navegar para **Personalização** > **Atividades** ou **Ofertas** e depois a sua marca.
 1. Toque ou clique no ícone ao lado da área que você deseja excluir.
 1. Toque ou clique em **Excluir** e confirme que você deseja excluir a área.

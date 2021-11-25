@@ -2,10 +2,10 @@
 title: Uso do Analisador de práticas recomendadas
 description: Uso do Analisador de práticas recomendadas
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 42%
+source-wordcount: '2470'
+ht-degree: 41%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="Uso do Analisador de práticas recomendadas"
 >abstract="Consulte a documentação para usar o Analisador de práticas recomendadas (antigo Cloud Readiness Analyzer) e o relatório gerado. O Relatório do Analisador de práticas recomendadas é usado para obter um alto nível de compreensão da disponibilidade geral de atualização."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considerações importantes sobre o uso do Analisador de práticas recomendadas {#imp-considerations}
 
@@ -113,14 +113,16 @@ O ícone do painel à esquerda será exibido somente se o BPA detectar o uso de 
 As conclusões do ACS Commons não devem ser ignoradas. Consulte [documentação](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar a compatibilidade com AEM as a Cloud Service.
 
 
-### Adobe Experience Manager 6.2 e 6.1 {#aem-specific-versions}
+<!--
+### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
+ 
+The Best Practices Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
 
-A ferramenta Analisador de práticas recomendadas é limitada no Adobe Experience Manager 6.2 a um link que gera e baixa o relatório CSV.
-
-Para o Adobe Experience Manager 6.1, a ferramenta não é funcional e apenas a interface HTTP pode ser usada.
+For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
 
 >[!NOTE]
-Em todas as versões, o Detector de padrões incluído pode ser executado independentemente.
+>In all versions, the included Pattern Detector may run independently.
+-->
 
 ## Interpretação do relatório do Analisador de práticas recomendadas {#cra-report}
 
