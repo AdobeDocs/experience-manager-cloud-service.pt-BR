@@ -2,9 +2,9 @@
 title: Adicionar um registro TXT
 description: Adicionar um nome de domínio personalizado
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 12849a79975f70dafd59f4b6ebf4b4ff24145cbf
+source-git-commit: f7688559a791281d0e157dd1d48a5f63568914f5
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ Consulte os exemplos na tabela abaixo.
 
 | Domínio | Nome | Valor TXT |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Copie o valor inteiro exibido na interface do usuário do Cloud Manager. Isso é específico para o domínio e o ambiente . Exemplo:<br>*adobe-aem-verify=example.com/[programa]/[env]/..* |
-| `www.example.com` | `_aemverification.www.example.com` | Copie o valor inteiro exibido na interface do usuário do Cloud Manager. Isso é específico para o domínio e o ambiente . Exemplo:<br>*adobe-aem-verify=www.example.com/[programa]/[env]/..* |
+| `example.com` | `_aemverification.example.com` | Copie o valor inteiro exibido na interface do usuário do Cloud Manager. Isso é específico para o domínio e o ambiente . Por exemplo:<br>*adobe-aem-verify=<br>example.com/[programa]/[env]/..* |
+| `www.example.com` | `_aemverification.www.example.com` | Copie o valor inteiro exibido na interface do usuário do Cloud Manager. Isso é específico para o domínio e o ambiente . Por exemplo:<br>*adobe-aem-verify=<br>www.example.com/[programa]/[env]/..* |
 
 Quando terminar, você poderá verificar o resultado executando: `dig _aemverification.[yourdomainname] -t txt`.
 O resultado esperado deve exibir o valor TXT fornecido na interface do usuário do Cloud Manager.

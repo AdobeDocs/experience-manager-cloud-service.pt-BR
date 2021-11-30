@@ -2,9 +2,9 @@
 title: Perguntas frequentes as a Cloud Service do Screens
 description: Esta página descreve as perguntas frequentes as a Cloud Service do Screens.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 41f057fa2a52068aa6dce97f1a445e072ce2a0af
+source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ As imagens no formato `*.tif` (Formato de arquivo de imagem de tag) não é comp
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
 ```
+
+## Qual é o uso do Limite do Código de Registro?
+
+Como prática recomendada, é possível limitar o uso do código de registro. Se um código de registro estiver comprometido, mas tiver um limite de 100 registros, o invasor poderá se registrar apenas até esse número, mas não mais. Você sempre pode atualizar o limite de uso depois que o código de registro é criado e alguns dos players do cliente já foram registrados. Se o cliente observar uma atividade de registro incomum para um código de registro específico, ele poderá reduzir o limite em tempo real enquanto investiga e aumentar o número novamente se for um alarme falso, sem afetar os players já registrados.
