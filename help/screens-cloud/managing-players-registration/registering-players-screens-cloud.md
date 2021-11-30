@@ -2,7 +2,7 @@
 title: Registrando Players no Screens as a Cloud Service
 description: Esta página descreve como registrar players no Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
+source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Siga as etapas abaixo para registrar o player:
 
    ![imagem](/help/screens-cloud/assets/player/register-player3.png)
 
-1. Click on the value under the column **REGISTRATION CODE**  to copy the value to the clipboard.
+1. Clique no valor sob a coluna **CÓDIGO DE REGISTRO**  para copiar o valor para a área de transferência.
 
 1. Cole esse valor na **Inserir código** no campo **Registro do reprodutor** na interface do usuário do administrador do reprodutor do AEM Screens e clique em **Registrar**.
 
@@ -63,11 +63,11 @@ Siga as etapas abaixo para registrar o player:
 
    ![imagem](/help/screens-cloud/assets/player/register-player6.png)
 
->[!IMPORTANT]
->**Recomendação de práticas recomendadas de segurança ao usar o código de registro
->Como prática recomendada, é possível limitar o uso do código de registro. Se um código de registro estiver comprometido, mas tiver um limite de 100 registros, o invasor poderá se registrar apenas até esse número, mas não mais. Você sempre pode atualizar o limite de uso depois que o código de registro é criado e alguns dos players do cliente já foram registrados. If the customer observes unusual registration activity for a specific registration code, they can lower the limit in real-time while they investigate and can increase the number back if it was a false alarm, without impacting the already registered players.
+   >[!IMPORTANT]
+   >**Recomendação de práticas recomendadas de segurança ao usar o código de registro**
+   >Como prática recomendada, é possível limitar o uso do código de registro. Se um código de registro estiver comprometido, mas tiver um limite de 100 registros, o invasor poderá se registrar apenas até esse número, mas não mais. Você sempre pode atualizar o limite de uso depois que o código de registro é criado e alguns dos players do cliente já foram registrados. Se o cliente observar uma atividade de registro incomum para um código de registro específico, ele poderá reduzir o limite em tempo real enquanto investiga e aumentar o número novamente se for um alarme falso, sem afetar os players já registrados.
 
 
 ## O que vem a seguir {#whats-next}
 
-Now, that you have installed and configured the player to Cloud mode, you should continue your Screens as a Cloud Service journey by next reviewing the document, [Assigning Player to a Display in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) from Screens Services Provider.
+Agora que você instalou e configurou o reprodutor para o modo Nuvem, deve continuar sua jornada as a Cloud Service do Screens ao próxima revisar o documento, [Atribuição do reprodutor a uma exibição no Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) do Provedor de serviços do Screens.
