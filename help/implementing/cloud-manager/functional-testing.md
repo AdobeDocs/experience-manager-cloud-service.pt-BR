@@ -1,10 +1,10 @@
 ---
-title: Teste funcional - Cloud Services
-description: Teste funcional - Cloud Services
+title: Functional Testing - Cloud Services
+description: Functional Testing - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
+source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '485'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
->title="Teste funcional"
+>title="Functional Testing"
 >abstract="Os ensaios funcionais são classificados em três tipos: Teste funcional do produto, teste funcional personalizado e teste de interface personalizada"
 
 Os ensaios funcionais são classificados em três tipos:
@@ -26,67 +26,27 @@ Os ensaios funcionais são classificados em três tipos:
 
 ## Teste funcional do produto {#product-functional-testing}
 
-Os Testes funcionais de produto são um conjunto de testes de integração HTTP (TIs) estáveis sobre a funcionalidade principal em AEM (por exemplo, criação e replicação) que impedem a implantação de alterações do cliente em seu código de aplicativo, caso quebre essa funcionalidade principal.
+Product Functional Tests are a set of stable HTTP integration tests (ITs) around core functionality in AEM (for example, authoring and replication) that prevent customer changes to their application code from being deployed if it breaks this core functionality.
 
-Os testes funcionais do produto são executados automaticamente sempre que um cliente implanta o novo código no Cloud Manager e não pode ser ignorado.
+Product Functional Tests run automatically whenever a customer deploys new code to Cloud Manager and cannot be skipped.
 
 Consulte [Testes funcionais de produto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) para os ensaios de amostras.
 
-## Teste funcional personalizado {#custom-functional-testing}
+## Custom Functional Testing {#custom-functional-testing}
 
-A etapa Custom Functional testing no pipeline está sempre presente e não pode ser ignorada.
+The Custom Functional testing step in the pipeline is always present and cannot be skipped.
 
-A build deve produzir zero ou um JARs de teste. Se produzir JARs de teste zero, a etapa de teste será aprovada por padrão. Se a build produzir mais de um JARs de teste, o JAR selecionado é não determinístico.
-
->[!NOTE]
->O botão **Baixar registro** permite acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. Esses registros não incluem os registros do processo de tempo de execução AEM real - eles podem ser acessados usando a funcionalidade de Download ou Registros finais. Consulte [Acesso e gerenciamento de logs](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
-
-## Teste de interface personalizada {#custom-ui-testing}
-
-O AEM fornece aos clientes um conjunto integrado de portas de qualidade do Cloud Manager para garantir atualizações tranquilas em seus aplicativos. Em particular, os portões de teste de TI já permitem que os clientes criem e automatizem seus próprios testes que usam AEM APIs.
-
-O recurso de teste da interface do usuário personalizada é um [recurso opcional](#customer-opt-in) que permite que nossos clientes criem e executem automaticamente testes da interface do usuário para seus aplicativos. Os testes da interface do usuário são testes baseados em Selenium, compactados em uma imagem Docker, para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium). Saiba mais sobre como criar interface do usuário e gravar testes da interface do usuário a partir daqui. Além disso, um projeto de Testes de interface pode ser facilmente gerado usando o Arquétipo de projeto AEM.
-
-Os clientes podem criar testes personalizados (via GIT) e conjunto de testes para interface do usuário. O teste da interface do usuário será executado como parte de uma porta de qualidade específica para cada pipeline do Cloud Manager com suas informações específicas de etapa e feedback. Quaisquer testes da interface do usuário, incluindo regressão e novas funcionalidades, permitirão que os erros sejam detectados e relatados no contexto do cliente.
-
-Os testes da interface do usuário do cliente são executados automaticamente no pipeline de Produção na etapa &quot;Teste da interface personalizada&quot;.
-
-Diferentemente do Teste Funcional Personalizado, que são testes HTTP escritos em java, os testes da interface do usuário podem ser uma imagem mais docker com testes escritos em qualquer idioma, desde que sigam as convenções definidas em [Criação de testes da interface do usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests).
+A build deve produzir zero ou um JARs de teste. Se produzir JARs de teste zero, a etapa de teste será aprovada por padrão. If the build produces more than one test JARs, which JAR is selected is non-deterministic.
 
 >[!NOTE]
->É recomendável seguir a estrutura e o idioma *(js e wdio)* convenientemente fornecido no [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) como ponto de partida.
+>O botão **Baixar registro** permite acesso a um arquivo ZIP contendo os registros para o formulário detalhado de execução de teste. These logs do not include the logs of the actual AEM runtime process – those can be accessed using the regular Download or Tail Logs functionality. Consulte [Acesso e gerenciamento de logs](/help/implementing/cloud-manager/manage-logs.md) para obter mais detalhes.
 
-### Opt-in do cliente {#customer-opt-in}
 
-Para que os testes da interface do usuário sejam criados e executados, os clientes precisam &quot;aceitar&quot; adicionando um arquivo ao repositório de código, no submódulo maven para testes da interface do usuário (ao lado do arquivo pom.xml do submódulo de testes da interface do usuário) e garantir que esse arquivo esteja na raiz da build `tar.gz` arquivo.
+## Writing Functional Tests {#writing-functional-tests}
 
-*Nome do arquivo*: `testing.properties`
+Customer-written functional tests must be packaged as a separate JAR file produced by the same Maven build as the artifacts to be deployed to AEM. Geralmente, seria um módulo Maven separado. O arquivo JAR resultante deve conter todas as dependências necessárias e geralmente seria criado usando o maven-assembly-plugin usando o descritor jar-com-dependências.
 
-*Conteúdo*: `ui-tests.version=1`
-
-Se isso não estiver na build `tar.gz` , a interface do usuário testa a criação e as execuções serão ignoradas
-
-Para adicionar `testing.properties` no artefato criado, adicione um `include` instrução em `assembly-ui-test-docker-context.xml` (no submódulo de testes da interface do usuário):
-
-    &quot;
-    [...]
-    &lt;includes>
-    &lt;include>Dockerfile&lt;/include>
-    &lt;include>wait-for-grid.sh&lt;/include>
-    &lt;include>testing.properties&lt;/include> &lt;!>- módulo de teste de aceitação no Cloud Manager —>
-    &lt;/includes>
-    [...]
-    &quot;
-
->[!NOTE]
->Os pipelines de produção criados antes de 10 de fevereiro de 2021 precisarão ser atualizados para usar os testes da interface do usuário, conforme descrito nesta seção. Basicamente, isso significa que o Usuário deve editar o pipeline de Produção e clicar em **Salvar** da interface do usuário, mesmo que nenhuma alteração tenha sido feita.
->Consulte [Configuração do pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) para saber mais sobre a configuração de pipeline.
-
-### Gravação de testes funcionais {#writing-functional-tests}
-
-Os testes funcionais escritos pelo cliente devem ser embalados como um arquivo JAR separado produzido pela mesma compilação Maven que os artefatos a serem implantados em AEM. Geralmente, seria um módulo Maven separado. O arquivo JAR resultante deve conter todas as dependências necessárias e geralmente seria criado usando o maven-assembly-plugin usando o descritor jar-com-dependências.
-
-Além disso, o JAR deve ter o cabeçalho do manifesto Cloud-Manager-TestType definido como integration-test. No futuro, espera-se que valores de cabeçalho adicionais sejam suportados. Um exemplo de configuração para o maven-assembly-plugin é:
+In addition, the JAR must have the Cloud-Manager-TestType manifest header set to integration-test. In the future, it is expected that additional header values will be supported. Um exemplo de configuração para o maven-assembly-plugin é:
 
 ```java
 <build>
@@ -123,17 +83,17 @@ Neste arquivo JAR, os nomes de classe dos testes reais a serem executados devem 
 
 Por exemplo, uma classe chamada `com.myco.tests.aem.it.ExampleIT` seria executada, mas uma classe chamada `com.myco.tests.aem.it.ExampleTest` não.
 
-Além disso, para excluir o código de teste da verificação de cobertura da verificação de código, o código de teste deve estar abaixo de um pacote chamado `it` (o filtro de exclusão de cobertura é `**/it/**/*.java`).
+Furthermore, to exclude test code from the coverage check of the code scanning, the test code must be below a package named `it` (the coverage exclusion filter is `**/it/**/*.java`).
 
-As classes de teste precisam ser testes JUnit normais. A infraestrutura de teste é projetada e configurada para ser compatível com as convenções usadas pela biblioteca de testes aem-testing-clients. Os desenvolvedores são altamente incentivados a usar essa biblioteca e seguir suas práticas recomendadas. Consulte [Link Git](https://github.com/adobe/aem-testing-clients) para obter mais detalhes.
+The test classes need to be normal JUnit tests. The test infrastructure is designed and configured to be compatible with the conventions used by the aem-testing-clients test library. Developers are strongly encouraged to use this library and follow its best practices. Consulte [Link Git](https://github.com/adobe/aem-testing-clients) para obter mais detalhes.
 
-### Execução de Teste Local {#local-test-execution}
+## Execução de Teste Local {#local-test-execution}
 
 Como as classes de teste são testes JUnit, elas podem ser executadas a partir de IDEs Java mainstream como Eclipse, IntelliJ, NetBeans e assim por diante.
 
-No entanto, ao executar esses testes, será necessário definir uma variedade de propriedades do sistema esperadas pelos clientes-teste do aem (e os clientes de teste do Sling subjacentes).
+However, when running these tests, it will be necessary to set a variety of system properties expected by the aem-testing-clients (and the underlying Sling Testing Clients).
 
-As propriedades do sistema são as seguintes:
+The system properties are as follows:
 
 * `sling.it.instances - should be set to 2`
 * `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`

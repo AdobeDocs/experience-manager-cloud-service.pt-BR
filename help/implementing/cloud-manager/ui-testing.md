@@ -2,10 +2,10 @@
 title: Teste da interface do usuário - Cloud Services
 description: Teste da interface do usuário - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
+source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 0%
+source-wordcount: '1582'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,47 @@ Os testes da interface do usuário são testes baseados em Selenium, compactados
 >[!NOTE]
 > Os pipelines de preparo e produção criados antes de 10 de fevereiro de 2021 precisam ser atualizados para usar os testes da interface do usuário, conforme descrito nesta página.
 > Consulte [Pipelines de CI-CD no Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obter informações sobre a configuração do pipeline.
+
+## Teste de interface personalizada {#custom-ui-testing}
+
+O AEM fornece aos clientes um conjunto integrado de portas de qualidade do Cloud Manager para garantir atualizações tranquilas em seus aplicativos. Em particular, os portões de teste de TI já permitem que os clientes criem e automatizem seus próprios testes que usam AEM APIs.
+
+The Custom UI testing feature is an [optional feature](#customer-opt-in) that enables our customers to create and automatically run UI tests for their applications. Os testes da interface do usuário são testes baseados em Selenium, compactados em uma imagem Docker, para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium). Saiba mais sobre como criar interface do usuário e gravar testes da interface do usuário a partir daqui. Além disso, um projeto de Testes de interface pode ser facilmente gerado usando o Arquétipo de projeto AEM.
+
+Os clientes podem criar testes personalizados (via GIT) e conjunto de testes para interface do usuário. The UI test will be executed as part of a specific quality gate for each Cloud Manager pipeline with their specific step and feedback information. Quaisquer testes da interface do usuário, incluindo regressão e novas funcionalidades, permitirão que os erros sejam detectados e relatados no contexto do cliente.
+
+Os testes da interface do usuário do cliente são executados automaticamente no pipeline de Produção na etapa &quot;Teste da interface personalizada&quot;.
+
+Unlike Custom Functional Testing which are HTTP tests written in java, the UI tests can be a docker image with tests written in any language, as long as they follow the conventions defined at [Building UI Tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests).
+
+>[!NOTE]
+>É recomendável seguir a estrutura e o idioma *(js e wdio)* convenientemente fornecido no [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) como ponto de partida.
+
+### Opt-in do cliente {#customer-opt-in}
+
+Para que os testes da interface do usuário sejam criados e executados, os clientes precisam &quot;aceitar&quot; adicionando um arquivo ao repositório de código, no submódulo maven para testes da interface do usuário (ao lado do arquivo pom.xml do submódulo de testes da interface do usuário) e garantir que esse arquivo esteja na raiz da build `tar.gz` arquivo.
+
+*Nome do arquivo*: `testing.properties`
+
+*Conteúdo*: `ui-tests.version=1`
+
+Se isso não estiver na build `tar.gz` , a interface do usuário testa a criação e as execuções serão ignoradas
+
+Para adicionar `testing.properties` no artefato criado, adicione um `include` instrução em `assembly-ui-test-docker-context.xml` (no submódulo de testes da interface do usuário):
+
+    &quot;
+    [...]
+    &lt;includes>
+    &lt;include>Dockerfile&lt;/include>
+    &lt;include>wait-for-grid.sh&lt;/include>
+    &lt;include>testing.properties&lt;/include> &lt;!>- módulo de teste de aceitação no Cloud Manager —>
+    &lt;/includes>
+    [...]
+    &quot;
+
+>[!NOTE]
+>Os pipelines de produção criados antes de 10 de fevereiro de 2021 precisarão ser atualizados para usar os testes da interface do usuário, conforme descrito nesta seção. Basicamente, isso significa que o Usuário deve editar o pipeline de Produção e clicar em **Salvar** da interface do usuário, mesmo que nenhuma alteração tenha sido feita.
+>Consulte [Configuração do pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) para saber mais sobre a configuração de pipeline.
 
 ## Criação de testes da interface do usuário {#building-ui-tests}
 
@@ -138,20 +179,20 @@ As variáveis de ambiente a seguir serão passadas para a imagem Docker em tempo
 
 ### Aguardando que o Selênio esteja pronto {#waiting-for-selenium}
 
-Antes de os testes começarem, é responsabilidade da imagem do Docker garantir que o servidor Selenium esteja funcionando. Aguardar o serviço Selenium é um processo de duas etapas:
+Before the tests start, it&#39;s the responsibility of the Docker image to ensure that the Selenium server is up and running. Waiting for the Selenium service is a two-steps process:
 
 1. Leia o URL do serviço Selenium no `SELENIUM_BASE_URL` variável de ambiente.
-2. Pesquisa em intervalos regulares para a [ponto final de status](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) exposto pela API do Selenium.
+2. Poll at regular interval to the [status endpoint](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) exposed by the Selenium API.
 
 Quando o endpoint de status do Selenium responde com uma resposta positiva, os testes podem finalmente começar.
 
 ### Gerar os relatórios de teste {#generate-test-reports}
 
-A imagem Docker deve gerar relatórios de teste no formato JUnit XML e salvá-los no caminho especificado pela variável de ambiente `REPORTS_PATH`. O formato JUnit XML é um formato amplo para relatar os resultados dos testes. Se a imagem do Docker usar Java e Maven, a variável [Plug-in do Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) e [Plug-in Maven Failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/). Se a imagem do Docker for implementada com outras linguagens de programação ou corredores de teste, verifique a documentação das ferramentas escolhidas para saber como gerar relatórios XML JUnit.
+A imagem Docker deve gerar relatórios de teste no formato JUnit XML e salvá-los no caminho especificado pela variável de ambiente `REPORTS_PATH`. The JUnit XML format is a widespread format for reporting the results of tests. If the Docker image uses Java and Maven, both the [Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/) and the [Maven Failsafe Plugin](https://maven.apache.org/surefire/maven-failsafe-plugin/). Se a imagem do Docker for implementada com outras linguagens de programação ou corredores de teste, verifique a documentação das ferramentas escolhidas para saber como gerar relatórios XML JUnit.
 
-### Upload de arquivos (#upload-files)
+### Upload files {#upload-files}
 
-Os testes às vezes devem carregar arquivos no aplicativo em teste. Para manter a implantação do Selenium em relação aos testes flexível, não é possível fazer upload direto de um ativo para o Selenium. Em vez disso, o upload de um arquivo passa por algumas etapas intermediárias:
+Tests sometimes must upload files to the application under test. Para manter a implantação do Selenium em relação aos testes flexível, não é possível fazer upload direto de um ativo para o Selenium. Instead, uploading a file goes through some intermediate steps:
 
 1. Faça upload do arquivo no URL especificado pela variável `UPLOAD_URL` variável de ambiente. O upload deve ser executado em uma solicitação de POST com um formulário multipart. O formulário multipart deve ter um único campo de arquivo. É equivalente a `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`. Consulte a documentação e as bibliotecas da linguagem de programação usada na imagem do Docker para saber como executar tal solicitação HTTP.
 2. Se o upload for bem-sucedido, a solicitação retornará um `200 OK` resposta do tipo `text/plain`. O conteúdo da resposta é um identificador de arquivo opaco. Você pode usar esse identificador no lugar de um caminho de arquivo em um `<input>` elemento para testar os uploads do arquivo em seu aplicativo.
