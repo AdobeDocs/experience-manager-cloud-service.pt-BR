@@ -4,9 +4,9 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
+source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2263'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Além do upload do navegador mais usado, outros métodos de adicionar ativos à variável [!DNL Experience Manager] existe repositório, incluindo clientes de desktop, como o Adobe Asset Link ou [!DNL Experience Manager] aplicativo de desktop, upload e scripts de assimilação que os clientes criariam e integrações de assimilação automatizadas adicionadas como [!DNL Experience Manager] extensões.
 
-Embora você possa fazer upload e gerenciar qualquer arquivo binário no [!DNL Experience Manager], os formatos de arquivo mais usados têm suporte para serviços adicionais, como extração de metadados ou geração de visualização/representação. Refer to [supported file formats](file-format-support.md) for details.
+Embora você possa fazer upload e gerenciar qualquer arquivo binário no [!DNL Experience Manager], os formatos de arquivo mais usados têm suporte para serviços adicionais, como extração de metadados ou geração de visualização/representação. Consulte [formatos de arquivo compatíveis](file-format-support.md) para obter detalhes.
 
 Você também pode optar por realizar processamento adicional nos ativos carregados. Vários perfis de processamento de ativos podem ser configurados na pasta, na qual os ativos são carregados, para adicionar metadados, representações ou serviços de processamento de imagens específicos. Consulte [processar ativos ao fazer upload](#process-when-uploaded).
 
@@ -30,8 +30,8 @@ Você também pode optar por realizar processamento adicional nos ativos carrega
 | [Interface do usuário do console Assets](#upload-assets) | Carregamento ocasional, facilidade de pressionar e arrastar, carregamento mais rápido. Não use o para fazer upload de um grande número de ativos. | Todos os usuários |
 | [Upload da API](#upload-using-apis) | Para decisões dinâmicas durante o upload. | Desenvolvedor |
 | Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Assimilação de ativos de baixo volume, mas não para migração. | Administrador, profissional de marketing |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Útil quando criativos e profissionais de marketing trabalham em ativos de dentro do [!DNL Creative Cloud] aplicativos de desktop. | Creative, Marketer |
-| [Gestor em massa de ativos](#asset-bulk-ingestor) | Recommended for large-scale migrations and occasional bulk ingestions. Somente para armazenamentos de dados compatíveis. | Administrador, Desenvolvedor |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Útil quando criativos e profissionais de marketing trabalham em ativos de dentro do [!DNL Creative Cloud] aplicativos de desktop. | Criativo, profissional de marketing |
+| [Gestor em massa de ativos](#asset-bulk-ingestor) | Recomendado para migrações em larga escala e ingestões ocasionais em massa. Somente para armazenamentos de dados compatíveis. | Administrador, Desenvolvedor |
 
 ## Fazer upload de ativos {#upload-assets}
 
@@ -61,14 +61,14 @@ Você também pode optar por realizar processamento adicional nos ativos carrega
 Para carregar um arquivo (ou vários arquivos), você pode selecioná-los na área de trabalho e arrastar a interface do usuário (navegador da Web) para a pasta de destino. Como alternativa, você pode iniciar o upload a partir da interface do usuário do .
 
 1. No [!DNL Assets] na interface do usuário, navegue até o local onde deseja adicionar ativos digitais.
-1. To upload the assets, do one of the following:
+1. Para fazer upload dos ativos, siga um destes procedimentos:
 
-   * Na barra de ferramentas, clique em **[!UICONTROL Criar]** > **[!UICONTROL Arquivos]**. You can rename the file in the presented dialog if needed.
-   * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. A caixa de diálogo para renomear arquivo não é exibida.
+   * Na barra de ferramentas, clique em **[!UICONTROL Criar]** > **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
+   * Em um navegador compatível com a HTML 5, arraste os ativos diretamente no [!DNL Assets] interface do usuário. A caixa de diálogo para renomear arquivo não é exibida.
 
-   ![create_menu](assets/create_menu.png)
+   ![criar_menu](assets/create_menu.png)
 
-   To select multiple files, select the `Ctrl` or the `Command` key and select the assets in the file picker dialog. When using an iPad, you can select only one file at a time.
+   Para selecionar vários arquivos, selecione o `Ctrl` ou `Command` e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar uma iPad, você pode selecionar apenas um arquivo de cada vez.
 
 1. Para cancelar um upload em andamento, clique em fechar (`X`) ao lado da barra de progresso. Ao cancelar a operação de upload, [!DNL Assets] exclui a parte parcialmente carregada do ativo.
 Se você cancelar uma operação de upload antes que os arquivos sejam carregados, [!DNL Assets] para de carregar o arquivo atual e atualiza o conteúdo. No entanto, os arquivos que já foram carregados não são excluídos.
@@ -78,7 +78,7 @@ Além disso, a variável [!DNL Assets] a interface do usuário exibe o ativo mai
 
 >[!NOTE]
 >
->To upload nested folder hierarchies, see [bulk upload assets](#bulk-upload).
+>Para fazer upload de hierarquias de pastas aninhadas, consulte [upload em massa de ativos](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -109,22 +109,22 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 Para reter o ativo duplicado em [!DNL Assets], clique em **[!UICONTROL Manter]**. Para excluir o ativo duplicado carregado, clique em **[!UICONTROL Excluir]**.
 
-### File name handling and forbidden characters {#filename-handling}
+### Tratamento do nome do arquivo e caracteres proibidos {#filename-handling}
 
 [!DNL Experience Manager Assets] O tenta impedir que você carregue ativos com os caracteres proibidos em seus nomes de arquivo. Se você tentar fazer upload de um ativo com nome de arquivo contendo um caractere não permitido ou mais, [!DNL Assets] exibe uma mensagem de aviso e interrompe o upload até que você remova esses caracteres ou faça upload com um nome permitido.
 
-To suit specific file naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload. The following (space-separated list of) characters are not supported:
+Para adequar as convenções específicas de nomenclatura de arquivos para sua organização, a [!UICONTROL Fazer upload de ativos] permite especificar nomes longos para os arquivos carregados. Os seguintes caracteres (lista separada por espaços de) não são suportados:
 
 * caracteres inválidos para o nome do arquivo de ativos `* / : [ \\ ] | # % { } ? &`
 * caracteres inválidos para o nome da pasta de ativos `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Fazer upload em massa de ativos {#bulk-upload}
 
-O criador de ativos em massa pode lidar com um grande número de ativos com eficiência. However, a large-scale ingestion is not just a broad file dump or a casual migration. Para que uma assimilação em grande escala seja um projeto significativo que atende à sua finalidade comercial e seja eficiente, planeje a migração e prepare a organização de ativos. Todas as sugestões são diferentes, portanto, em vez de generalizar, fator na composição de repositório e nas necessidades comerciais avançadas. Veja a seguir algumas sugestões abrangentes para planejar e executar uma assimilação em massa:
+O criador de ativos em massa pode lidar com um grande número de ativos com eficiência. No entanto, uma assimilação em grande escala não é apenas um despejo de arquivo amplo ou uma migração casual. Para que uma assimilação em grande escala seja um projeto significativo que atende à sua finalidade comercial e seja eficiente, planeje a migração e prepare a organização de ativos. Todas as sugestões são diferentes, portanto, em vez de generalizar, fator na composição de repositório e nas necessidades comerciais avançadas. Veja a seguir algumas sugestões abrangentes para planejar e executar uma assimilação em massa:
 
 * Preparar ativos: Remova ativos que não são necessários no DAM. Considere remover ativos não utilizados, obsoletos ou duplicados. Isso reduz os dados transferidos e os ativos assimilados, levando a ingestões mais rápidas.
 * Organizar ativos: Considere organizar o conteúdo em alguma ordem lógica, por exemplo, por tamanho de arquivo, formato de arquivo, caso de uso ou prioridade. Em geral, arquivos complexos grandes exigem mais processamento. Você também pode considerar a assimilação de arquivos grandes separadamente usando a opção de filtragem do tamanho do arquivo (descrita abaixo).
-* Gestões do Marcador: Considere dividir a assimilação em vários projetos de assimilação em massa. Isso permite que você veja o conteúdo antes e atualize a assimilação conforme necessário. Por exemplo, você pode assimilar ativos com processamento intensivo durante horas que não sejam de pico ou gradualmente em várias partes. However, you can ingest smaller and simpler assets that do not require much processing in one go.
+* Gestões do Marcador: Considere dividir a assimilação em vários projetos de assimilação em massa. Isso permite que você veja o conteúdo antes e atualize a assimilação conforme necessário. Por exemplo, você pode assimilar ativos com processamento intensivo durante horas que não sejam de pico ou gradualmente em várias partes. No entanto, é possível assimilar ativos menores e mais simples que não exigem muito processamento de uma só vez.
 
 Para fazer upload de um número maior de arquivos, use uma das abordagens a seguir. Além disso, consulte o [casos de uso e métodos](#upload-methods-comparison)
 
@@ -151,15 +151,15 @@ Para configurar a ferramenta, siga estas etapas:
    * [!UICONTROL Conta de Armazenamento do Azure]: Forneça o nome da variável [!DNL Azure] conta de armazenamento.
    * [!UICONTROL Contêiner de blobs do Azure]: Forneça a [!DNL Azure] contêiner de armazenamento.
    * [!UICONTROL Chave de Acesso do Azure]: Forneça a chave de acesso para [!DNL Azure] conta.
-   * [!UICONTROL Source Folder]: This filter is typically supported by Azure and AWS cloud storage providers.
-   * [!UICONTROL Filter by Min Size]: Provide minimum file size of assets in MB.
+   * [!UICONTROL Pasta de Origem]: Normalmente, esse filtro é compatível com os provedores de armazenamento em nuvem do Azure e da AWS.
+   * [!UICONTROL Filtrar por tamanho mínimo]: Forneça o tamanho mínimo de arquivo dos ativos em MB.
    * [!UICONTROL Filtrar por tamanho máximo]: Forneça o tamanho máximo de arquivo dos ativos em MB.
    * [!UICONTROL Excluir tipos MIME]: Lista separada por vírgulas de tipos MIME a serem excluídos da assimilação. Por exemplo, `image/jpeg, image/.*, video/mp4`. Consulte [todos os formatos de arquivo compatíveis](/help/assets/file-format-support.md).
    * [!UICONTROL Incluir Tipos Mime]: Lista de tipos MIME separada por vírgulas para incluir na assimilação. Consulte [todos os formatos de arquivo compatíveis](/help/assets/file-format-support.md).
    * [!UICONTROL Excluir arquivo de origem após a importação]: Selecione essa opção para excluir os arquivos originais do armazenamento de dados de origem depois que os arquivos forem importados para o [!DNL Experience Manager].
    * [!UICONTROL Modo de importação]: Selecione Ignorar, Substituir ou Criar Versão. O modo Ignorar é o padrão e, nesse modo, o assimilador ignora para importar um ativo se ele já existir. Veja o significado de [substituir e criar opções de versão](#handling-upload-existing-file).
    * [!UICONTROL Pasta do Target de ativos]: Importe a pasta no DAM, onde os ativos devem ser importados. Por exemplo, `/content/dam/imported_assets`
-   * [!UICONTROL Arquivo de metadados]: O arquivo de metadados a ser importado, fornecido no formato CSV. Você fornece esse arquivo CSV no local do blob de origem e faz referência ao caminho na configuração da ferramenta de assimilação em massa.
+   * [!UICONTROL Arquivo de metadados]: O arquivo de metadados a ser importado, fornecido no formato CSV. Especifique o arquivo CSV no local do blob de origem e consulte o caminho ao configurar a ferramenta Ingestor em massa . O formato de arquivo CSV referenciado nesse campo é o mesmo do formato de arquivo CSV quando você [Importar e exportar metadados de ativos em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Se você selecionar a variável **Excluir arquivo de origem após a importação** , filtre os arquivos CSV usando o **Excluir** ou **Incluir tipo MIME** ou **Filtrar por caminho/arquivo** campos. Você pode usar uma expressão regular para filtrar arquivos CSV nesses campos.
 
 1. Você pode excluir, modificar, executar e fazer mais com as configurações de ingresso criadas. Quando você seleciona uma configuração de assimilador de importação em massa, as seguintes opções estão disponíveis na barra de ferramentas.
 
@@ -172,14 +172,14 @@ Para configurar a ferramenta, siga estas etapas:
    * [!UICONTROL Agendar]: Defina um agendamento único ou recorrente para assimilar ativos.
    * [!UICONTROL Status da tarefa]: Exibir o status da configuração quando ela for usada em um trabalho de importação em andamento ou em um trabalho concluído.
    * [!UICONTROL Histórico de tarefas]: Instâncias anteriores da tarefa.
-   * [!UICONTROL View Assets]: View the target folder if it exists.
+   * [!UICONTROL Exibir ativos]: Exiba a pasta de destino, se ela existir.
 
-   ![Toolbar options for ingestor configurations](assets/bulk-ingest-toolbar-options.png)
+   ![Opções da barra de ferramentas para configurações de assimilador](assets/bulk-ingest-toolbar-options.png)
 
-To schedule a one-time or a recurring bulk import, follow these steps:
+Para agendar uma importação em massa única ou recorrente, siga estas etapas:
 
 1. Criar uma configuração de importação em massa.
-1. Select the configuration and select **[!UICONTROL Schedule]** from the toolbar.
+1. Selecione a configuração e selecione **[!UICONTROL Agendar]** na barra de ferramentas.
 1. Defina uma ingestão única ou programe uma hora, uma diária ou uma programação semanal. Clique em **[!UICONTROL Enviar]**.
 
    ![Programar tarefa de assimilação em massa](assets/bulk-ingest-schedule1.png)
@@ -188,7 +188,7 @@ To schedule a one-time or a recurring bulk import, follow these steps:
 
 Além da interface do usuário do navegador da Web, [!DNL Experience Manager] O suporta outros clientes no desktop. Eles também fornecem experiência de upload sem a necessidade de acessar o navegador da Web.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) provides access to assets from [!DNL Experience Manager] in Adobe Photoshop, Adobe Illustrator, and Adobe InDesign desktop applications. Você pode fazer upload do documento aberto no momento para [!DNL Experience Manager] diretamente da interface do usuário do Adobe Asset Link a partir desses aplicativos de desktop.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) fornece acesso a ativos do [!DNL Experience Manager] nos aplicativos de desktop do Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Você pode fazer upload do documento aberto no momento para [!DNL Experience Manager] diretamente da interface do usuário do Adobe Asset Link a partir desses aplicativos de desktop.
 * [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) O simplifica o trabalho com ativos no desktop, independentemente do tipo de arquivo ou do aplicativo nativo que os manipula. É particularmente útil fazer upload de arquivos nas hierarquias de pastas aninhadas do seu sistema de arquivos local, pois o upload do navegador suporta apenas o upload de listas de arquivos simples.
 
 ## Processar ativos ao fazer upload {#process-when-uploaded}
@@ -200,7 +200,7 @@ Para fazer processamento adicional nos ativos carregados, você pode aplicar per
 As seguintes guias estão disponíveis:
 
 * [Perfis de metadados](metadata-profiles.md) permite aplicar propriedades de metadados padrão a ativos carregados nessa pasta.
-* [Processing profiles](asset-microservices-configure-and-use.md) let you generate more renditions than are possible by default.
+* [Processar perfis](asset-microservices-configure-and-use.md) permite gerar mais representações do que as possíveis por padrão.
 
 Além disso, se [!DNL Dynamic Media] estiver habilitado na implantação, as seguintes guias estarão disponíveis:
 
