@@ -2,14 +2,14 @@
 title: Backup e restauração em AEM as a Cloud Service
 description: Backup e restauração em AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
+source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
-# Backup e restauração em AEM as a Cloud Service
+# Backup e restauração em AEM as a Cloud Service {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -23,7 +23,7 @@ Se a implantação de um cliente, o que significa que o código de aplicativo im
 >
 >Esse recurso deve ser usado somente quando houver problemas graves com código ou conteúdo. Os dados recentes entre o momento do backup restaurado e o presente serão perdidos. O armazenamento temporário também será restaurado para a versão antiga.
 
-## Como usar
+## Como usar {#how-to-use}
 
 Os clientes devem registrar um tíquete de suporte, descrevendo o problema que está sendo enfrentado. Isso levará a uma investigação por parte do suporte Adobe, que determinará se uma restauração é necessária.
 
@@ -41,3 +41,9 @@ Após uma restauração, a versão do AEM será atualizada para a mais recente.
 >[!CAUTION]
 >
 >Os dados de ambientes excluídos são perdidos permanentemente e não podem ser recuperados.
+
+## Backup externo {#offsite-backup}
+
+Embora os backups regulares cubram o risco de exclusões acidentais ou falhas técnicas nos Serviços em Nuvem do AEM, os riscos que podem surgir da falha de uma região também devem ser cobertos. Além da disponibilidade, o maior risco de paralisação dessas regiões de dados é principalmente a perda de dados.
+AEM as a Cloud Service cobre esse risco como padrão para todos os ambientes de produção AEM copiando continuamente todo o conteúdo AEM para uma região remota e disponibilizando-o para recuperação por um período de três meses. Chamamos esse recurso de backup externo.
+A restauração dos Serviços em Nuvem do AEM para ambientes de estágio e produção é realizada pela AEM Service Reliability Engineering em caso de paralisação da região de dados.
