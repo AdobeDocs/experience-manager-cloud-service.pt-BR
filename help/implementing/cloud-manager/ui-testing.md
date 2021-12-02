@@ -2,9 +2,9 @@
 title: Teste da interface do usuário - Cloud Services
 description: Teste da interface do usuário - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
+source-git-commit: 710f156e606902ab5548169661d4a82c8cf4f819
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1616'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,10 @@ Para que os testes da interface do usuário sejam criados e executados, os clien
 
 Se isso não estiver na build `tar.gz` , a interface do usuário testa a criação e as execuções serão ignoradas
 
-Para adicionar `testing.properties` no artefato criado, adicione um `include` instrução em `assembly-ui-test-docker-context.xml` (no submódulo de testes da interface do usuário). Se o projeto não incluir a linha, será necessário editar esse arquivo para aceitar o teste da interface do usuário. Se o arquivo tiver uma linha aconselhando a não editar, ignore esse conselho.
+Para adicionar `testing.properties` no artefato criado, adicione um `include` instrução em `assembly-ui-test-docker-context.xml` (no submódulo de testes da interface do usuário).
+
+>[!NOTE]
+>Se o projeto não incluir a linha, será necessário editar esse arquivo para aceitar o teste da interface do usuário. Se o arquivo tiver uma linha aconselhando a não editar, ignore esse conselho.
 
     &quot;
     [...]
