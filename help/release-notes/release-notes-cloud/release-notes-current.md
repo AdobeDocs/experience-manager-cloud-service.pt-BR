@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c4d664450244394a65ddbc8097731d913db59091
+source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1525'
 ht-degree: 2%
 
 ---
@@ -187,3 +187,21 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.20 é 5 de ou
 * Capacidade de detectar e relatar o tamanho total do Índice.
 
 * Capacidade de detectar e gerar relatórios sobre ativos que não possuem sua representação original.
+
+
+## Analisador de práticas recomendadas {#bpa-release}
+
+### Data de lançamento {#release-date-bpa}
+
+A data de lançamento do Analisador de práticas recomendadas v2.1.2 é 1 de dezembro de 2021.
+
+### Novidades {#what-is-new-bpa}
+
+* Capacidade de detectar e relatar a versão do ACS commons usada.
+* Capacidade de detectar e relatar o número de usuários e subgrupos em um grupo.
+* Capacidade de detectar e relatar valores de propriedade de nó no MongoDB que excedem 16MB.
+
+### Correções de erros {#bug-fixes-bpa}
+
+* A detecção de componentes de base foi refinada para reduzir falsos negativos.
+* Para clientes do AEM Forms, mensagens de BPA relacionadas a `EMAIL_PDF_SUBMIT_ACTION` não estar disponível AEM as a Cloud Service foi corrigido.
