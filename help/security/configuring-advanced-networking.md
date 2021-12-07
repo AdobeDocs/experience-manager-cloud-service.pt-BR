@@ -1,7 +1,7 @@
 ---
 title: Configuração de redes avançadas para AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para AEM as a Cloud Service
-source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
+source-git-commit: fa11beb1dfdd8dd2a1a5d49ece059f5894c835be
 workflow-type: tm+mt
 source-wordcount: '2836'
 ht-degree: 1%
@@ -74,7 +74,7 @@ Para obter mais informações, consulte o [Documentação da API do Cloud Manage
 
 ### Roteamento de tráfego {#flexible-port-egress-traffic-routing}
 
-O tráfego Http ou https que vai para destinos por meio das portas 80 ou 443 passará por um proxy pré-configurado, supondo que a biblioteca de rede Java padrão seja usada. Para o tráfego http ou https que atravessa outras portas, um proxy deve ser configurado usando as seguintes propriedades.
+O tráfego Http ou https que vai para destinos por meio das portas 80 ou 443 passará por um proxy pré-configurado, supondo que a biblioteca de rede Java padrão seja usada. Para tráfego http ou https que atravessa outras portas, um proxy deve ser configurado usando as seguintes propriedades.
 
 * `AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST`
 * `AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT`
@@ -159,7 +159,7 @@ A tabela abaixo descreve o roteamento de tráfego:
 A camada do AEM Cloud Service Apache/Dispatcher `mod_proxy` pode ser configurada usando as propriedades descritas acima.
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:${AEM_HTTP_PROXY_PORT}"
+ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
 ProxyPass "/somepath" "http://example.com"
 ProxyPassReverse "/somepath" "http://example.com"
 ```
@@ -167,7 +167,7 @@ ProxyPassReverse "/somepath" "http://example.com"
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:${AEM_HTTPS_PROXY_PORT}"
+ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
