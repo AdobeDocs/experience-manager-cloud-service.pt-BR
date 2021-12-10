@@ -1,11 +1,11 @@
 ---
 title: AEM Screens as a Cloud Service
-description: Recursos de autoajuda e links de documentação do Adobe Experience Manager Screens as a Cloud Service
+description: Recursos de autoajuda as a Cloud Service da Adobe Experience Manager Screens e links de documentação
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 54%
+source-wordcount: '408'
+ht-degree: 52%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 54%
 Esta página lista os recursos de autoajuda relacionados ao AEM Screens as a Cloud Service.
 
 >[!NOTE]
->Para AEM Screens com AEM 6.5, consulte [Guia do Usuário do AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
+>Para AEM Screens com AEM 6.5, consulte [Guia do usuário do AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
 
 
-## Conteúdo principal e artigos do AEM Screens as a Cloud Service {#key-articles}
+## Conteúdo principal e artigos as a Cloud Service da AEM Screens {#key-articles}
 
 * [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
 * [Integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
@@ -29,7 +29,6 @@ Esta página lista os recursos de autoajuda relacionados ao AEM Screens as a Clo
 
 | Guia do usuário | Descrição |
 |---|---|
-| [Página inicial do Experience Manager as a Cloud Service](/help/landing/home.md) | Para obter uma visão geral da documentação do Experience Manager as a Cloud Service, comece aqui. |
 | [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, arquitetura etc. |
 | [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo as novidades dos recursos descontinuados e removidos e problemas conhecidos. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |

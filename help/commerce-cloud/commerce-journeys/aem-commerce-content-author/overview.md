@@ -1,7 +1,7 @@
 ---
 title: jornada do autor de conteúdo de comércio AEM
 description: Comece aqui para obter uma jornada guiada por meio da Criação de comércio AEM
-source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Este guia aborda os tópicos mais importantes de criação de Conteúdo AEM e Co
 
 ## jornadas de documentação de AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/home.md) une vários tópicos e recursos diferentes e talvez complicados ao fornecer uma narrativa que ajude o leitor, que pode ser novo a AEM, compreender e resolver um problema de negócios do início ao fim, assumindo o mínimo de tópico ou conhecimento AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados ao fornecer uma narrativa que ajude o leitor, que pode ser novo a AEM, compreender e resolver um problema de negócios do início ao fim, assumindo o mínimo de tópico ou conhecimento AEM.
 
 As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
 

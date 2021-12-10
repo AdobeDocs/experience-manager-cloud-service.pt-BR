@@ -2,7 +2,7 @@
 title: AEM Sites Jornada
 description: Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para compreender AEM recursos avançados de sites.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: e69d3efbb45f95cbb5f84724c86c3cbd1255b8fb
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para c
 
 ## jornadas de documentação de AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/home.md) une vários tópicos e recursos diferentes e talvez complicados ao fornecer uma narrativa que ajude o leitor, que pode ser novo a AEM, compreender e resolver um problema de negócios do início ao fim, assumindo o mínimo de tópico ou conhecimento AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados ao fornecer uma narrativa que ajude o leitor, que pode ser novo a AEM, compreender e resolver um problema de negócios do início ao fim, assumindo o mínimo de tópico ou conhecimento AEM.
 
 As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
 
@@ -42,4 +42,4 @@ As seguintes Jornadas de documentação estão disponíveis para os tópicos do 
 | [Jornada de Tradução de Sites](/help/journey-sites/translation/overview.md) | Saiba mais sobre as tecnologias AEM Sites, como elas podem ser usadas em seu projeto e como criar e atualizar projetos de tradução em AEM de A a Z. | Especialistas em tradução |
 | [Jornada Rápida de Criação de Site](/help/journey-sites/quick-site/overview.md) | Comece aqui para obter uma jornada guiada através da ferramenta de criação rápida de sites AEM fácil de usar para simplificar o desenvolvimento front-end do seu site AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end. | Desenvolvedores de front-end |
 
-Fique ligado para [jornadas futuras que abordarão funções adicionais.](/help/journey-documentation/home.md#journeys)
+Fique ligado para [jornadas futuras que abordarão funções adicionais.](/help/journey-documentation/documentation-journeys.md#journeys)

@@ -2,10 +2,10 @@
 title: Visão geral do Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: ea4e017be8f15782582ce1fac88d0c4b5c031d1e
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 86%
+source-wordcount: '362'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,6 @@ Esta página lista os recursos de autoajuda que apresentam uma introdução e a 
 
 | Guia do usuário | Descrição |
 |---|---|
-| [Página inicial do Experience Manager as a Cloud Service](/help/landing/home.md) | Comece por aqui para ter uma visão geral da documentação do Experience Manager as a Cloud Service. |
 | [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo novidades, problemas conhecidos e recursos obsoletos e removidos. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
 | [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |

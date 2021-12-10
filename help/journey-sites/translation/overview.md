@@ -4,13 +4,13 @@ description: Comece aqui para obter uma jornada guiada por meio da tradução do
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 08127d72c84d6f47f5058ef631dc3128114f1953
+exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 2%
 
 ---
-
 
 # jornada de tradução AEM Sites {#aem-sites-translation-journey}
 
@@ -22,11 +22,11 @@ O AEM Sites é um poderoso conjunto de ferramentas para criar e gerenciar experi
 
 O AEM oferece ferramentas igualmente eficientes para traduzir seu conteúdo, permitindo que você o entregue o mais rápido possível aos seus públicos-alvo em outras regiões ou localidades. Esta jornada de documentação apresenta as ferramentas de criação para que você entenda como o conteúdo é criado e gerenciado no AEM e depois mergulhe no que você precisa saber para gerenciar seu próprio projeto de tradução.
 
-Se você já estiver familiarizado com o AEM Sites e com seus requisitos de tradução, talvez já tenha o conhecimento fundamental dessa jornada. Nesse caso, considere consultar nossa documentação técnica vinculada na seção [recursos adicionais abaixo.](#additional-resources)
+Se você já estiver familiarizado com o AEM Sites e com seus requisitos de tradução, talvez já tenha o conhecimento fundamental dessa jornada. Em caso afirmativo, considere consultar nossa documentação técnica vinculada ao [seção recursos adicionais abaixo.](#additional-resources)
 
 ## jornadas de documentação de AEM {#documentation-journeys}
 
-[Uma ](/help/journey-documentation/home.md) Jornadas da documentação reúne vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo em AEM, entender e resolver um problema comercial do início ao fim, além de assumir um tópico prévio mínimo ou conhecimento AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados ao fornecer uma narrativa que ajude o leitor, que pode ser novo a AEM, compreender e resolver um problema de negócios do início ao fim, assumindo o mínimo de tópico ou conhecimento AEM.
 
 As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
 
@@ -47,7 +47,7 @@ A seguir estão as personas que interagem nessa jornada.
 | Administrador | Gerencia a configuração básica e a configuração do AEM | O especialista em tradução trabalha com o administrador para fazer as alterações de configuração necessárias para a tradução, como instalar um conector de tradução. |
 | Arquitetura de conteúdo | Analisa os requisitos dos dados que devem ser entregues como sites e define a estrutura desses dados | Especialistas em tradução trabalham com o arquiteto de conteúdo para definir a organização do conteúdo, para que ele possa ser facilmente traduzido. |
 
-As informações nesta jornada podem, é claro, ser úteis para todas as pessoas, mas algumas informações podem ser supérfluas para determinadas funções. Fique atento às [próximas jornadas que abrangem funções adicionais.](/help/journey-documentation/home.md#journeys)
+As informações nesta jornada podem, é claro, ser úteis para todas as pessoas, mas algumas informações podem ser supérfluas para determinadas funções. Fique ligado para [jornadas futuras que abordarão funções adicionais.](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## A Jornada de tradução de sites {#the-journey}
 
@@ -67,14 +67,14 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 
 ## O que vem a seguir {#what-is-next}
 
-Agora você está pronto para começar a usar a jornada de tradução de Adobe sites. Recomendamos que você continue para a próxima parte da jornada e leia o artigo [Saiba mais sobre o conteúdo dos sites e como traduzi-lo em AEM](learn-about.md)
+Agora você está pronto para começar a usar a jornada de tradução de Adobe sites. Recomendamos que você continue para a próxima parte da jornada e leia o artigo [Saiba mais sobre o conteúdo de sites e como traduzi-lo em AEM](learn-about.md)
 
 ## Recursos adicionais {#additional-resources}
 
 Confira estes recursos adicionais para obter mais informações sobre como AEM recursos avançados trabalham juntos.
 
-* [Jornada de criação sem interface](/help/journey-headless/author/overview.md)  - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface do AEM, seus recursos e como modelar seu conteúdo no seu primeiro projeto sem interface.
-* [Jornada de arquitetura headless](/help/journey-headless/architect/overview.md)  - Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.
-* [AEM Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md)  - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
-* [AEM como documentação técnica do Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)  - Se você já tem uma compreensão firme das tecnologias AEM e sem periféricos, pode consultar diretamente nossos documentos técnicos aprofundados.
-* [AEM tutoriais headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - se você preferir aprender fazendo e se inclinar tecnicamente, utilize tutoriais práticos organizados por API e framework, que exploram a criação e o uso de aplicativos criados AEM Headless.
+* [Jornada de criação sem cabeçalho](/help/journey-headless/author/overview.md) - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como modelar seu conteúdo em seu primeiro projeto sem interface.
+* [Jornada de arquitetura headless](/help/journey-headless/architect/overview.md) - Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.
+* [jornada do desenvolvedor sem periféricos do AEM](/help/journey-headless/developer/overview.md) - Comece aqui para obter uma jornada guiada com os recursos avançados e flexíveis do AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
+* [AEM documentação técnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - Se você já tiver um conhecimento profundo das tecnologias AEM e sem interface, poderá consultar diretamente nossos documentos técnicos aprofundados.
+* [Tutoriais AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Se você preferir aprender fazendo e for tecnicamente inclinado, utilize nossos tutoriais práticos organizados por API e framework, que exploram a criação e o uso de aplicativos criados AEM Headless.
