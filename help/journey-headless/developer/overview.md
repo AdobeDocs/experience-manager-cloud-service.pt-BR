@@ -1,10 +1,11 @@
 ---
 title: jornada do desenvolvedor sem periféricos do AEM
 description: AEM Documentação CMS sem cabeçalho. Comece aqui para obter uma jornada guiada com os recursos avançados e flexíveis do AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
+landing-page-description: Comece aqui para obter uma jornada guiada pelos recursos headless de AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1247'
 ht-degree: 2%
 
 ---
