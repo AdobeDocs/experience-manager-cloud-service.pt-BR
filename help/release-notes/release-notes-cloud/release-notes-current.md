@@ -3,9 +3,9 @@ title: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud S
 description: Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
+source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1619'
 ht-degree: 2%
 
 ---
@@ -205,3 +205,14 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.2 é 1 de dez
 
 * A detecção de componentes de base foi refinada para reduzir falsos negativos.
 * Para clientes do AEM Forms, mensagens de BPA relacionadas a `EMAIL_PDF_SUBMIT_ACTION` não estar disponível AEM as a Cloud Service foi corrigido.
+
+## Ferramenta Transferência de conteúdo {#ctt-release}
+
+### Data de lançamento {#release-date-ctt}
+
+A Data de lançamento da ferramenta Transferência de conteúdo v1.7.10 é 8 de dezembro de 2021.
+
+### Novidades {#what-is-new-ctt}
+
+* Alternar adicionada à fase de assimilação na ferramenta Transferência de conteúdo para permitir que os usuários desativem [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) durante a ingestão. Para velocidades ideais de ingestão, a pré-cópia durante a ingestão deve ser desativada para pequenos conjuntos de migração ou se apenas alguns blobs foram adicionados desde a última ingestão.
+* Mapeamento de usuários atualizado para usar a API de gerenciamento de usuários aprimorada, que permite obter 2000 usuários por vez, melhorando significativamente o desempenho.
