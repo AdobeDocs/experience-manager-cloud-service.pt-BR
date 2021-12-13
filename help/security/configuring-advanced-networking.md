@@ -1,9 +1,9 @@
 ---
 title: Configuração de redes avançadas para AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para AEM as a Cloud Service
-source-git-commit: 76cc8f5ecac4fc8e1663c1500433a9e3eb1485df
+source-git-commit: 4079e44d4fdce49b1c60caf178583a8800e17c0e
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2982'
 ht-degree: 1%
 
 ---
@@ -78,17 +78,17 @@ Para obter mais informações, consulte o [Documentação da API do Cloud Manage
 
 ### Roteamento de tráfego {#flexible-port-egress-traffic-routing}
 
-O tráfego Http ou https que vai para destinos por meio das portas 80 ou 443 passará por um proxy pré-configurado, supondo que a biblioteca de rede Java padrão seja usada. Para tráfego http ou https que atravessa outras portas, um proxy deve ser configurado usando as seguintes propriedades.
+Para o tráfego http ou https que vai para portas diferentes de 80 ou 443, um proxy deve ser configurado usando as seguintes variáveis de ambiente de host e porta:
 
-* `AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST`
-* `AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT`
+* para HTTP: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (padrão para `proxy.tunnel:3128` em versões AEM &lt; 6094)
+* para HTTPS: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (padrão para `proxy.tunnel:3128` em versões AEM &lt; 6094)
 
 Por exemplo, este é um exemplo de código para enviar uma solicitação para o `www.example.com:8443`:
 
 ```java
 String url = "www.example.com:8443"
-var proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-var proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+String proxyHost = System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel");
+int proxyPort = Integer.parseInt(System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", "3128"));
 HttpClient client = HttpClient.newBuilder()
       .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
       .build();
@@ -111,10 +111,10 @@ A tabela abaixo descreve o roteamento de tráfego:
 <thead>
   <tr>
     <th>Tráfego</th>
-    <th>Condição de determinação</th>
+    <th>Condição de destino</th>
     <th>Port</th>
     <th>Conexão</th>
-    <th>Exemplo</th>
+    <th>Exemplo de destino externo</th>
   </tr>
 </thead>
 <tbody>
@@ -127,12 +127,13 @@ A tabela abaixo descreve o roteamento de tráfego:
   </tr> 
   <tr>
     <td></td>
-    <td>Tráfego não padrão (em outras portas fora de 80 ou 443) por proxy http configurado usando estas variáveis de ambiente:<br><ul>
-     <li>AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST</li>
-     <li>AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT</li>
+    <td>Tráfego não padrão (em outras portas fora de 80 ou 443) por proxy http configurado usando a variável de ambiente a seguir e o número da porta proxy. Não declare a porta de destino no parâmetro portForwards da chamada da API do Cloud Manager:<br><ul>
+     <li>AEM_PROXY_HOST (padrão para "proxy.túnel" em versões AEM &lt; 6094)</li>
+     <li>AEM_HTTPS_PROXY_PORT (padrão para a porta 3128 em versões AEM &lt; 6094)</li>
     </ul>
     <td>Portas fora de 80 ou 443</td>
     <td>Permitido</td>
+    <td>example.com:8443</td>
   </tr>
   <tr>
     <td></td>
@@ -163,15 +164,15 @@ A tabela abaixo descreve o roteamento de tráfego:
 A camada do AEM Cloud Service Apache/Dispatcher `mod_proxy` pode ser configurada usando as propriedades descritas acima.
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
-ProxyPass "/somepath" "http://example.com"
-ProxyPassReverse "/somepath" "http://example.com"
+ProxyRemote "http://example.com:8080" "http://${AEM_PROXY_HOST}:3128"
+ProxyPass "/somepath" "http://example.com:8080"
+ProxyPassReverse "/somepath" "http://example.com:8080"
 ```
 
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
+ProxyRemote "https://example.com:8443" "http://${AEM_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
@@ -204,6 +205,36 @@ Ao decidir entre saída de porta flexível e endereço IP de saída dedicado, os
 
 ### Roteamento de tráfego {#dedcated-egress-ip-traffic-routing}
 
+O tráfego Http ou https que vai para destinos por meio das portas 80 ou 443 passará por um proxy pré-configurado, supondo que a biblioteca de rede Java padrão seja usada. Para tráfego http ou https que atravessa outras portas, um proxy deve ser configurado usando as seguintes propriedades.
+
+```
+AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
+AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
+```
+
+Por exemplo, este é um exemplo de código para enviar uma solicitação para o `www.example.com:8443`:
+
+```java
+String url = "www.example.com:8443"
+String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
+int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+
+HttpClient client = HttpClient.newBuilder()
+      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
+      .build();
+ 
+HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+```
+
+Se estiver usando bibliotecas de rede Java não padrão, configure proxies usando as propriedades acima para todo o tráfego.
+
+Tráfego não http/s com destinos por meio de portas declaradas no `portForwards` deve fazer referência a uma propriedade chamada `AEM_PROXY_HOST`, juntamente com a porta mapeada. Por exemplo:
+
+```java
+DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
+```
+
 <table>
 <thead>
   <tr>
@@ -211,7 +242,7 @@ Ao decidir entre saída de porta flexível e endereço IP de saída dedicado, os
     <th>Condição de destino</th>
     <th>Port</th>
     <th>Conexão</th>
-    <th>Exemplo</th>
+    <th>Exemplo de destino externo</th>
   </tr>
 </thead>
 <tbody>
@@ -380,7 +411,7 @@ A tabela abaixo descreve o roteamento de tráfego.
     <th>Condição de destino</th>
     <th>Port</th>
     <th>Conexão</th>
-    <th>Exemplo</th>
+    <th>Exemplo de destino externo</th>
   </tr>
 </thead>
 <tbody>
