@@ -2,7 +2,7 @@
 title: Configurar um ambiente de desenvolvimento local para o Adobe Experience Manager Forms as a Cloud Service
 description: Configurar um ambiente de desenvolvimento local para o Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 131b17f53b364138d2cea7648d4c23a8480740bf
 workflow-type: tm+mt
 source-wordcount: '2647'
 ht-degree: 2%
@@ -251,7 +251,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    Abra o prompt de comando e execute o comando abaixo para criar um [!DNL Experience Manager Forms] Projeto as a Cloud Service. Para incluir [!DNL Forms] configurações, temas e modelos específicos, conjunto `includeFormsenrollment=y`.
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y"
+   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y"
    ```
 
    Além disso, altere `appTitle`, `appId`e `groupId`, no comando acima para refletir seu ambiente.
