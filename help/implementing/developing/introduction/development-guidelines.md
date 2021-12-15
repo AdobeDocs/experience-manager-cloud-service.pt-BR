@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 477546f882197291403e59d8ba2e53dd4918a719
+source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2180'
 ht-degree: 1%
 
 ---
@@ -195,7 +195,7 @@ Os emails no AEM devem ser enviados usando o [Serviço OSGi do Day CQ Mail Servi
 
 Consulte a [Documentação do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) para obter detalhes sobre como definir configurações de email. Para AEM as a Cloud Service, observe os seguintes ajustes necessários na `com.day.cq.mailer.DefaultMailService OSGI` serviço:
 
-* O nome do host do servidor SMTP deve ser definido como $[env:AEM_PROXY_HOST]
+* O nome do host do servidor SMTP deve ser definido como $[env:AEM_PROXY_HOST;default=proxy.túnel]
 * A porta do servidor SMTP deve ser definida com o valor da porta proxy original definida no parâmetro portForwards usado na chamada da API ao configurar a rede avançada. Por exemplo, 30465 (em vez de 465)
 
 Também é recomendável que, se a porta 465 tiver sido solicitada:
