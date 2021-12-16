@@ -1,64 +1,48 @@
 ---
-title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.11.0
-description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.11.0
+title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.12.0
+description: Estas são as notas de versão do Cloud Manager AEM as a Cloud Service versão 2021.12.0.
 feature: Release Information
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 2%
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
 
-# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.11.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager AEM as a Cloud Service 2021.11.0.
+# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.12.0 {#release-notes}
+
+Esta página descreve as notas de versão do Cloud Manager AEM as a Cloud Service 2021.12.0.
 
 >[!NOTE]
->Para ver as Notas de versão atuais do Adobe Experience Manager as a Cloud Service, clique em [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+>
+>Consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md) para as Notas de versão atuais do Adobe Experience Manager as a Cloud Service.
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.11.0 é 4 de novembro de 2021.
-A próxima versão está planejada para 16 de dezembro de 2021.
+A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.12.0 é 16 de dezembro de 2021. A próxima versão está planejada para janeiro de 2022.
 
 ### Novidades {#what-is-new}
 
-* Os usuários agora podem aproveitar os novos pipelines do Front-End para implantar exclusivamente o código front-end de forma acelerada. Consulte [Pipelines de Front-End do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para saber mais.
-
-   >[!IMPORTANT]
-   >Você deve estar AEM versão `2021.10.5933.20211012T154732Z` para utilizar novos pipelines Front-End.
-
-* A duração do pipeline de qualidade de código é significativamente reduzida ao executar a análise de código de uma maneira mais eficiente, sem a necessidade de criar uma imagem AEM inteira. Esta alteração será gradual durante as semanas que se seguem à libertação.
-
-* A ID de confirmação de Git agora será exibida nos detalhes de execução do pipeline, facilitando o rastreamento do código que foi criado.
-
-* A Criação de programas agora está disponível por meio da API exposta publicamente.
-
-* A Criação de ambiente agora está disponível por meio da API exposta publicamente.
-
-* O `x-request-id` o cabeçalho de resposta agora está visível no Reprodução da API em [www.adobe.io](https://www.adobe.io/). Esse cabeçalho é útil ao enviar problemas de atendimento ao cliente para solução de problemas.
-
-* Como usuário, vejo que o pipeline card com zero pipelines me fornece a orientação apropriada.
-
-* Uma nova Página de atividade agora está disponível, onde atividades como pipeline e execuções de código podem ser visualizadas junto com seus detalhes associados. Com o tempo, as atividades listadas nesta página se expanderão no escopo junto com os detalhes fornecidos.
-
-* Uma nova página Pipelines com uma oferta de status on-hover para facilitar a visualização do resumo dos detalhes está disponível. As execuções de pipeline podem ser visualizadas junto com seus detalhes associados.
-
-* A API Editar pipeline agora oferece suporte à alteração do ambiente usado nas fases de implantação.
-
-* Uma otimização no processo de varredura do OakPal foi introduzida para pacotes grandes.
-
-* O arquivo CSV do problema de qualidade agora contém o carimbo de data e hora de cada problema de qualidade.
+* O hash de confirmação, que já está visível na interface do usuário, agora também é fornecido na API.
+* A página Atividade agora inclui um pop-up para a execução de pipelines que fornece um resumo dos detalhes do pipeline imediatamente.
+* Foram adicionadas atualizações para incluir detalhes adicionais apresentados na página Atividades.
+* A guia Aprendizagem no Cloud Manager agora inclui acesso rápido aos guias da API e aos recursos associados.
+* Um usuário com a função Deployment Manager agora pode iniciar o assistente de criação de Projeto/Ramificação para um repositório sem ramificações no menu de ação na página Repositórios.
+* O Gerenciador de implantação, que está no fluxo de trabalho de adicionar ou editar pipeline, agora é informado sobre como criar uma ramificação ou projeto se o repositório selecionado não tiver ramificações.
+* Um novo recurso de autoatendimento do Cloud Manager foi adicionado para permitir [adicionar variáveis e segredos de forma livre no nível do ambiente.](/help/implementing/cloud-manager/environment-variables.md)
+* Com o novo Suplemento de Demonstrações de Referência (disponível em 17 de dezembro de 2021), as bases de código de demonstração mais recentes para produtos AEM podem ser instaladas e prontas para serem implantadas através do novo [ferramenta de criação rápida de sites](/help/journey-sites/quick-site/overview.md) em Sites.
+* Os pipelines de front-end agora oferecem suporte a variáveis de pipeline.
+* As telas agora podem ser ativadas na caixa de diálogo Editar programa para todas as sandboxes.
+* As orientações fornecidas pelo cartão de chamada para ação na página de visão geral foram atualizadas para refletir precisamente sua associação com o pipeline de pilha completa de produção.
+* Aprimoramentos na página Atividade foram adicionados à superfície detalhes adicionais aplicáveis a pipelines, incluindo código-fonte, ID de confirmação, etc.
+* Pequenas atualizações foram feitas na interface do usuário ao copiar entradas TXT (&quot;valor TXT&quot; em vez de &quot;registro TXT&quot;) para remover uma possível confusão.
+* [A documentação relacionada aos erros de certificado](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) O foi atualizado para cobrir mais exemplos, juntamente com etapas de solução de problemas.
+* Uma opção agora está disponível na execução do pipeline de front-end para rejeitar ou aprovar antes da implantação para produção.
 
 ### Correções de erros {#bug-fixes}
 
-* Certas configurações de build não ortodoxas resultaram no armazenamento de arquivos desnecessários no cache de artefatos Maven do pipeline que resultaram em I/O de rede irrelevante ao iniciar e parar o contêiner de compilação.
-
-* A API do PATCH de pipeline falha se a fase de implantação não existir.
-
-* O `ClientlibProxyResourceCheck` a regra de qualidade gerava problemas de falso positivo quando havia bibliotecas de clientes com caminhos de base comuns.
-
-* Mensagem de erro quando o número máximo de repositórios foi atingido não especificou o motivo do erro.
-
-* Em casos raros, os pipelines estavam falhando devido ao tratamento inadequado de tentativas de determinados códigos de resposta.
-
+* Os artefatos de teste funcionais e de interface do usuário não foram incluídos no log de etapas da compilação.
+* Os registros das etapas de teste do produto, funcional e interface do usuário não eram acessíveis por meio da API pública.
+* Em casos raros, o link da página de detalhes do ambiente para o serviço de publicação ou visualização não funcionaria.
+* Os pipelines de produção de pilha completa permanecem nomeados como &quot;Pipeline de produção&quot; mesmo quando o usuário insere um nome diferente no campo de nome.
