@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: aaeecc897157b08686a741ed7c2143a443fb2633
+source-git-commit: dd127862d65ed2f6a2dc2f93f9668552c577181c
 workflow-type: tm+mt
-source-wordcount: '3354'
+source-wordcount: '3362'
 ht-degree: 34%
 
 ---
@@ -292,6 +292,7 @@ ht-degree: 34%
       + [Reutilizar ativos usando o MSM](/help/assets/reuse-assets-using-msm.md)
       + [Baixar ativos](/help/assets/download-assets-from-aem.md)
       + [Ativos de check-in e check-out para edição](/help/assets/check-out-and-submit-assets.md)
+      + [Criar e compartilhar pastas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management por ativos](/help/assets/drm.md)
       + [Ativos de marca d&#39;água](/help/assets/watermark-assets.md)
       + [Processar ativos usando [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
@@ -435,7 +436,7 @@ ht-degree: 34%
       + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
       + [Configurar [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
       + [Configurar [!DNL Azure] armazenamento](/help/forms/configure-azure-storage.md)
-      + [Configurar [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] serviços em nuvem](/help/forms/configure-msdynamics-salesforce.md)
+      + [Configurar [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] serviços em nuvem](/help/forms/configure-msdynamics-salesforce.md)
       + [Criar modelo de dados do formulário](/help/forms/create-form-data-models.md)
       + [Trabalhar com o Modelo de dados de formulário](/help/forms/work-with-form-data-model.md)
       + [Usar modelo de dados de formulário](/help/forms/using-form-data-model.md)
