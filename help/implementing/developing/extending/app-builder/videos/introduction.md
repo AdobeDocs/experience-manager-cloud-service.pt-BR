@@ -1,0 +1,47 @@
+---
+title: Introdução ao App Builder
+description: Saiba mais sobre as noções básicas do App Builder desde seu valor comercial até sua arquitetura.
+version: Cloud Service
+feature: App Builder
+topic: Integrations, Development
+role: Developer, Architect
+level: Beginner
+kt: 9452, 9464, 9465, 9466
+thumbnail: 339158.jpg
+source-git-commit: 528abc0938a71746c2c8b69382c961686cc42634
+workflow-type: tm+mt
+source-wordcount: '97'
+ht-degree: 2%
+
+---
+
+
+# Introdução ao App Builder
+
+>[!IMPORTANT]
+>
+> _O Adobe Project Firefly, como mencionado nos vídeos desta série, agora é chamado de App Builder_
+
+## Introdução
+
+Saiba mais sobre o App Builder, seus recursos e o valor comercial que o App Builder oferece.
+
+>[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
+
+## Pontos de contato
+
+Saiba como os usuários finais interagem com a SPA do App Builder e onde os desenvolvedores podem aprender mais sobre o desenvolvimento do App Builder.
+
+>[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
+
+## Arquitetura
+
+Saiba mais sobre a arquitetura de aplicativos do App Builder e suas vantagens.
+
+>[!VIDEO](https://video.tv.adobe.com/v/339160/?quality=12&learn=on)
+
+## Valor comercial e casos de uso
+
+Saiba mais sobre os princípios de design do App Builder e casos de uso comuns.
+
+>[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)
