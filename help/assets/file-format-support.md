@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 479cfffd17dcde12bda7d53a7acddfbb46782a8f
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 9%
+source-wordcount: '985'
+ht-degree: 8%
 
 ---
 
@@ -66,30 +66,6 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 | SGI | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 | SVG | Instantâneo | - | Instantâneo | Instantâneo |
 | TIFF | Instantâneo | Instantâneo | Instantâneo | - |
-
-## Formatos de imagem em [!DNL Dynamic Media] {#image-support-dynamic-media}
-
-| Formato | Upload (Formato de entrada) | Criar predefinição de imagem (formato de saída) | Visualizar representação dinâmica | Fornecer representação dinâmica | Baixar representação dinâmica |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| BMP | Instantâneo | - | - | - | - |
-| EPS | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| GIF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| PICT | Instantâneo | - | - | - | - |
-| PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| PSD ‡ | Instantâneo | - | - | - | - |
-| TIFF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-
-‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada por [!DNL Adobe Photoshop] e está incluído no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
-
-Os seguintes subtipos de formatos de arquivo de imagem rasterizada que não são aceitos no [!DNL Dynamic Media]:
-
-* Arquivos PNG com um tamanho de bloco IDAT superior a 100 MB.
-* Arquivos PSB.
-* Arquivos PSD com um espaço de cores diferente de CMYK, RGB, Escala de cinza ou Bitmap não são compatíveis. Não há suporte para espaços de cores DuoTone, Lab e Indexado.
-* Arquivos PSD com profundidade de bits superior a 16.
-* Arquivos TIFF com dados de ponto flutuante.
-* Arquivos TIFF com espaço de cores Lab.
 
 ## Formatos 3D {#support-3d-formats}
 
@@ -164,14 +140,6 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | XLSX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 | XML | - | Instantâneo | - | - | - |
 
-## Formatos de documento em [!DNL Dynamic Media] {#document-support-dynamic-media}
-
-| Formato | Upload (Formato de entrada) | Criar predefinição de imagem (formato de saída) | Visualizar representação dinâmica | Fornecer representação dinâmica | Baixar representação dinâmica |
-| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | Instantâneo | - | - | - | - |
-| INDD | Instantâneo | - | - | - | - |
-| PDF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-
 ## Formatos de vídeo {#video-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
@@ -200,24 +168,6 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | WebM | Instantâneo | - | Instantâneo |
 | WMV | Instantâneo | Instantâneo | Instantâneo |
 
-## Formatos de vídeo em [!DNL Dynamic Media] para transcodificação {#video-dynamic-media-transcoding}
-
-| Extensão de arquivo de vídeo | Contêiner | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
-| --- | --- | --- | --- |
-| AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação vetorial) |
-| M4V | Apple iTunes | H264/AVC | - |
-| MKV | Matroska | H264/AVC | - |
-| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação do Apple |
-| MP4 | MPEG-4 | H264/AVC (todos os perfis) | - |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| WebM | WebM | VP8 do Google | - |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Tela do Microsoft (MSS2), História de fotos do Microsoft (WVP2) |
-
-‡ Este formato de vídeo ainda não é suportado para o uso com Vídeos interativos no Dynamic Media ou para o uso com Anotações no Experience Manager Assets.
-
 ## Formatos de áudio {#audio-formats}
 
 [!DNL Assets] como [!DNL Cloud Service] fornece suporte XMP extração de metadados para formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
@@ -238,6 +188,69 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 ## Dicas e limitações {#limitations-and-tips}
 
 * Atualmente, o limite de tamanho do arquivo para extração de metadados é de aproximadamente 15 GB. Ao fazer upload de ativos muito grandes, às vezes a operação de extração de metadados falha.
+
+## Dynamic Media - Formatos de vídeo de entrada compatíveis com transcodificação {#video-dynamic-media-transcoding}
+
+| Extensão de arquivo de vídeo | Contêiner | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
+| --- | --- | --- | --- |
+| AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação vetorial) |
+| M4V | Apple iTunes | H264/AVC | - |
+| MKV | Matroska | H264/AVC | - |
+| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação do Apple |
+| MP4 | MPEG-4 | H264/AVC (todos os perfis) | - |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| WebM | WebM | VP8 do Google | - |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Tela do Microsoft (MSS2), História de fotos do Microsoft (WVP2) |
+
+‡ Este formato de vídeo ainda não é suportado para o uso com Vídeos interativos no Dynamic Media ou para o uso com Anotações no Experience Manager Assets.
+
+## Dynamic Media - Formatos de documento compatíveis {#document-support-dynamic-media}
+
+| Formato | Upload (Formato de entrada) | Criar predefinição de imagem (formato de saída) | Visualizar representação dinâmica | Fornecer representação dinâmica | Baixar representação dinâmica |
+| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
+| AI | Instantâneo | - | - | - | - |
+| INDD | Instantâneo | - | - | - | - |
+| PDF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+
+## Dynamic Media - Formatos de imagem rasterizada compatíveis {#image-support-dynamic-media}
+
+| Formato | Upload (Formato de entrada) | Criar predefinição de imagem (formato de saída) | Visualizar representação dinâmica | Fornecer representação dinâmica | Baixar representação dinâmica | Definir tipos que suportam este formato |
+| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
+| BMP | Instantâneo | - | - | - | - | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+| EPS | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
+| GIF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
+| JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | Instantâneo | - | - | - | - | - |
+| PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+| PSD ‡ | Instantâneo | - | - | - | - | - |
+| TIFF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+
+‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada por [!DNL Adobe Photoshop] e está incluído no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+
+## Dynamic Media - Formatos de imagem rasterizada não aceitos {#unsupported-raster-image-formats-dm}
+
+Os seguintes subtipos de formatos de arquivo de imagem rasterizada que são *not* com suporte em [!DNL Dynamic Media]:
+
+* Arquivos PNG com um tamanho de bloco IDAT superior a 100 MB.
+* Arquivos PSB.
+* Arquivos PSD com um espaço de cores diferente de CMYK, RGB, Escala de cinza ou Bitmap não são compatíveis. Não há suporte para espaços de cores DuoTone, Lab e Indexado.
+* Arquivos PSD com profundidade de bits superior a 16.
+* Arquivos TIFF com dados de ponto flutuante.
+* Arquivos TIFF com espaço de cores Lab.
+
+## Dynamic Media - Formatos de arquivo 3D compatíveis {#support-3d-formats-dynamic-media}
+
+Consulte também [Formatos 3D compatíveis](/help/assets/file-format-support.md#support-3d-formats)
+
+| extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
+|---|---|---|---|
+| GLB | Transmissão binária GL | modelo/gltf-binário | Inclui os materiais e as texturas como um único ativo. |
+| OBJ | Arquivo de objeto 3D WaveFront | application/x-tgif |  |
+| STL | Estereolitografia | application/vnd.ms-pki.stl |  |
+| USDZ | Arquivo Zip de descrição da cena universal | model/vnd.usdz+zip | *Suporte apenas para ingestão; nenhuma visualização ou interação está disponível.* USDZ é um formato 3D proprietário que pode ser visualizado originalmente pelo Safari ou pelo iOS. |
 
 >[!MORELIKETHIS]
 >
