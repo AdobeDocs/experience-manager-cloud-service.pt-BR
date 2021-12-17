@@ -3,9 +3,9 @@ title: Temas do site
 description: Saiba como AEM temas do site podem ser usados para personalizar o estilo e o design do site.
 feature: Administering
 role: Admin
-source-git-commit: 9e7ad4a640f1783be5aed75e01e860b647662f52
+source-git-commit: 0b00d579886a106f5f66cfc54d90eab9563724cd
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,9 @@ ht-degree: 1%
 
 Saiba como AEM temas do site podem ser usados para personalizar o estilo e o design do site.
 
->[!CAUTION]
->
->No momento, a ferramenta Criação rápida de site é uma visualização técnica. É disponibilizado para fins de ensaio e avaliação e não se destina à utilização da produção, a menos que acordado com o apoio ao Adobe.
-
 ## Visão geral {#overview}
 
-Um tema de site AEM é um pacote que contém o CSS, JavaScript e recursos estáticos que definem o estilo do site AEM e estão em conformidade com a estrutura de um tema de site AEM.
+Um tema de site AEM é um pacote que contém o CSS, o JavaScript e os recursos estáticos que definem o estilo do site AEM e estão em conformidade com a estrutura de um tema de site AEM.
 
 Os sites criados com modelos de site AEM permitem fácil download, personalização e reimplantação dos temas.
 
@@ -55,6 +51,6 @@ O Adobe fornece um tema de referência de práticas recomendadas que pode ser us
 
 ## Desenvolver temas do site {#developing-themes}
 
-O Adobe fornece e AEM o Criador de Temas do Site como um conjunto de scripts para criar novos temas do site.
+O Adobe fornece um AEM Criador de Temas do Site como um conjunto de scripts para criar novos temas do site.
 
 [O AEM Site Theme Builder está disponível junto com a documentação de uso no GitHub.](https://github.com/adobe/aem-site-theme-builder) É necessária experiência de desenvolvimento front-end para personalizar o tema.

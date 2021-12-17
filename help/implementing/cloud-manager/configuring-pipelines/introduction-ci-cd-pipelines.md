@@ -2,9 +2,9 @@
 title: Pipelines de CI-CD
 description: Siga esta página para saber mais sobre os pipeline de CI-CD do Cloud Manager
 index: true
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Elas podem ser do tipo Qualidade do código front-end ou pipelines de implantaç
 
 ### Antes de configurar os pipelines do Front-End {#before-start}
 
-Antes de começar a configurar os pipelines do Front-End, consulte [AEM Jornada de criação rápida de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) para um fluxo de trabalho completo por meio da ferramenta de criação rápida de sites AEM fácil de usar. Este site de documentação ajudará você a simplificar o desenvolvimento de front-end do seu site de AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end.
+Antes de começar a configurar os pipelines do Front-End, consulte [AEM Jornada de criação rápida de site](/help/journey-sites/quick-site/overview.md) para um fluxo de trabalho completo por meio da ferramenta de criação rápida de sites AEM fácil de usar. Este site de documentação ajudará você a simplificar o desenvolvimento de front-end do seu site de AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end.
 
 ### Configurar um pipeline front-end {#configure-front-end}
 
@@ -83,9 +83,15 @@ Para saber como configurar o pipeline front-end, consulte:
 * [Adicionar um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Adicionar um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
+### Desenvolvimento de sites com o pipeline front-end {#developing-with-front-end-pipeline}
+
+Com o pipeline front-end, mais independência é dada aos desenvolvedores front-end e o processo de desenvolvimento pode ganhar uma velocidade substancial.
+
+Consulte [este documento](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem levadas em conta, a fim de tirar todo o potencial desse processo.
+
 ## Pipelines de pilha completa {#full-stack-pipeline}
 
-O pipeline de Pilha cheia oferece ao usuário a opção de implantar configurações de back-end, front-end e HTTPD/dispatcher simultaneamente.  Ele implanta código e conteúdo no tempo de execução AEM incluindo código front-end (JavaScript/CSS) empacotado como Bibliotecas AEM clientes. Ele pode implantar a configuração da camada da Web se um pipeline da camada da Web não estiver configurado. Isso representa o pipeline &quot;uber&quot;, enquanto fornece aos usuários as opções para implantar exclusivamente seu código Front-End ou a configuração do dispatcher por meio do pipeline Front-End e do pipeline de Configuração de camada da Web, respectivamente.
+O pipeline de Pilha cheia oferece ao usuário a opção de implantar configurações de back-end, front-end e HTTPD/dispatcher simultaneamente.  Ele implanta código e conteúdo no tempo de execução AEM incluindo código front-end (JavaScript/CSS) empacotado como Bibliotecas AEM clientes. Ele pode implantar a configuração de camada da Web se um pipeline de Camada da Web não estiver configurado. Isso representa o pipeline &quot;uber&quot;, enquanto fornece aos usuários as opções para implantar exclusivamente seu código Front-End ou a configuração do dispatcher por meio do pipeline Front-End e do pipeline de Configuração de camada da Web, respectivamente.
 Eles podem ser do tipo Pilha cheia - Qualidade do código ou Pilha cheia - pipeline de implantação.
 
 As seguintes restrições serão aplicáveis:

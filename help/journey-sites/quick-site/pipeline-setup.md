@@ -1,9 +1,9 @@
 ---
 title: Configurar o pipeline
 description: Crie um pipeline de front-end para gerenciar a personalização do tema do seu site.
-source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Configurar o pipeline {#set-up-your-pipeline}
 
 Crie um pipeline de front-end para gerenciar a personalização do tema do seu site.
-
->[!CAUTION]
->
->No momento, a ferramenta Criação rápida de site é uma visualização técnica. É disponibilizado para fins de ensaio e avaliação e não se destina à utilização da produção, a menos que acordado com o apoio ao Adobe.
 
 ## A História Até Agora {#story-so-far}
 

@@ -3,10 +3,10 @@ title: Criação de um site
 description: Saiba como usar o AEM para criar um site usando modelos de site para definir o estilo e a estrutura de seu site.
 feature: Administering
 role: Admin
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 0%
+source-wordcount: '788'
+ht-degree: 1%
 
 ---
 
@@ -15,17 +15,13 @@ ht-degree: 0%
 
 Saiba como usar AEM criar um site usando modelos de site para definir o estilo e a estrutura de seu site.
 
->[!CAUTION]
->
->No momento, a ferramenta Criação rápida de site é uma visualização técnica. É disponibilizado para fins de ensaio e avaliação e não se destina à utilização da produção, a menos que acordado com o apoio ao Adobe.
-
 ## Visão geral {#overview}
 
 Antes que os autores de conteúdo possam criar páginas com conteúdo, o site deve ser criado primeiro. Isso geralmente é executado por um administrador de AEM que define a estrutura inicial do site. Usar modelos de site torna a criação de sites rápida e flexível.
 
 A ferramenta Criação de site rápido AEM permite que não desenvolvedores criem rapidamente um novo site do zero usando modelos de site.
 
-Depois de criada, a ferramenta Criação rápida de site também permite a rápida personalização do tema e estilo do site AEM (JavaScript, CSS e recursos estáticos). Isso permite que o desenvolvedor de front-end, que precisa de conhecimento zero sobre AEM, funcione separadamente e em paralelo aos criadores de conteúdo. O administrador do AEM simplesmente baixa o tema do site e o fornece ao desenvolvedor front-end que o personaliza usando suas ferramentas favoritas e, em seguida, confirma as alterações no repositório de código AEM, que é implantado.
+Depois de criada, a ferramenta Quick Site Creation também permite a rápida personalização do tema e estilo do site AEM (JavaScript, CSS e recursos estáticos). Isso permite que o desenvolvedor de front-end, que precisa de conhecimento zero sobre AEM, funcione separadamente e em paralelo aos criadores de conteúdo. O administrador do AEM simplesmente baixa o tema do site e o fornece ao desenvolvedor front-end que o personaliza usando suas ferramentas favoritas e, em seguida, confirma as alterações no repositório de código AEM, que é implantado.
 
 Este documento se concentra na criação do site usando a ferramenta Criação rápida de sites. Se você deseja ter uma visão geral do fluxo de trabalho de criação e personalização do site, consulte a seção [AEM Jornada de criação rápida de site](/help/journey-sites/quick-site/overview.md)
 

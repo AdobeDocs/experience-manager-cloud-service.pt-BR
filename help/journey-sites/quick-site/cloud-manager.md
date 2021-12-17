@@ -1,9 +1,9 @@
 ---
 title: Entender o Cloud Manager e o fluxo de trabalho de criação rápida de sites
 description: Saiba mais sobre o Cloud Manager e como ele se vincula ao novo processo de Criação rápida de sites.
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # Entender o Cloud Manager e o fluxo de trabalho de criação rápida de sites {#understand-cloud-manager}
 
 Saiba mais sobre o Cloud Manager e como ele se vincula ao novo processo de Criação rápida de sites.
-
->[!CAUTION]
->
->No momento, a ferramenta Criação rápida de site é uma visualização técnica. É disponibilizado para fins de ensaio e avaliação e não se destina à utilização da produção, a menos que acordado com o apoio ao Adobe.
 
 >[!TIP]
 >

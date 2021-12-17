@@ -1,9 +1,9 @@
 ---
 title: Implantar o Tema Personalizado
 description: Saiba como implantar o tema do site usando o pipeline.
-source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # Implantar o Tema Personalizado {#deploy-your-customized-theme}
 
 Saiba como implantar o tema do site usando o pipeline.
-
->[!CAUTION]
->
->No momento, a ferramenta Criação rápida de site é uma visualização técnica. É disponibilizado para fins de ensaio e avaliação e não se destina à utilização da produção, a menos que acordado com o apoio ao Adobe.
 
 ## A História Até Agora {#story-so-far}
 
@@ -95,11 +91,16 @@ Parabéns! Você concluiu a jornada de Criação de Site Rápido AEM! Agora voc�
 * Como personalizar e testar um tema usando conteúdo AEM proxied e confirmar essas alterações em AEM git.
 * Como implantar a personalização de front-end usando o pipeline.
 
-Agora você está pronto para personalizar os temas de seu próprio site AEM. No entanto, AEM é uma ferramenta poderosa e há muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis no [Seção Recursos adicionais](#additional-resources) para saber mais sobre os recursos que você viu nesta jornada.
+Agora você está pronto para personalizar os temas de seu próprio site AEM. No entanto, antes de começar a criar fluxos de trabalho diferentes usando vários pipelines de front-end, revise o documento [Desenvolvimento de sites com o pipeline front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) Ele ajudará você a aproveitar ao máximo o seu desenvolvimento de front-end ao:
+
+* Manter uma única fonte de verdade.
+* Manter uma separação de preocupações.
+
+AEM é uma ferramenta poderosa e há muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis no [Seção Recursos adicionais](#additional-resources) para saber mais sobre os recursos que você viu nesta jornada.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de Criação Rápida de Site revisando o documento [Implante Seu Tema Personalizado,](deploy-theme.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não é necessário que eles continuem na jornada.
+Veja a seguir alguns recursos adicionais que aprofundam alguns conceitos mencionados neste documento.
 
 * [AEM documentação técnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - Se já tiver um conhecimento profundo da AEM, poderá consultar diretamente os documentos técnicos aprofundados.
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
@@ -115,3 +116,4 @@ Embora seja recomendável seguir para a próxima parte da jornada de Criação R
 * [Jornada de integração](/help/journey-onboarding/home.md) - Este guia serve como ponto de partida para garantir que suas equipes estejam configuradas e tenham acesso a AEM as a Cloud Service.
 * [Documentação do Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR) - Explore a documentação do Cloud Manager para obter detalhes completos sobre seus recursos.
 * [Documentação de administração do site](/help/sites-cloud/administering/site-creation/create-site.md) - Consulte os documentos técnicos sobre a criação do site para obter mais detalhes sobre os recursos da ferramenta de Criação rápida de sites.
+* [Desenvolvimento de sites com o pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Este documento descreve algumas considerações que devem ser levadas em conta para tirar todo o potencial do processo de desenvolvimento front-end usando o pipeline front-end.

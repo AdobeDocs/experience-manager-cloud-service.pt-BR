@@ -1,9 +1,9 @@
 ---
 title: Conceder acesso ao desenvolvedor front-end
 description: Integram os desenvolvedores de front-end no Cloud Manager para que eles tenham acesso ao repositório e pipeline de Git do site de AEM.
-source-git-commit: 7c70be541e811e1be236763081d5571db4269b7a
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Conceder acesso ao desenvolvedor front-end {#grant-fed-access}
 
 Integram os desenvolvedores de front-end no Cloud Manager para que eles tenham acesso ao repositório e pipeline de Git do site de AEM.
-
->[!CAUTION]
->
->No momento, a ferramenta Criação rápida de site é uma visualização técnica. É disponibilizado para fins de ensaio e avaliação e não se destina à utilização da produção, a menos que acordado com o apoio ao Adobe.
 
 ## A História Até Agora {#story-so-far}
 
