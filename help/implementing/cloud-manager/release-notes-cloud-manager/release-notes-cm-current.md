@@ -2,7 +2,7 @@
 title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.12.0
 description: Estas são as notas de versão do Cloud Manager AEM as a Cloud Service versão 2021.12.0.
 feature: Release Information
-source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
+source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -31,7 +31,7 @@ A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.12.0 é 16 de
 * Um usuário com a função Deployment Manager agora pode iniciar o assistente de criação de Projeto/Ramificação para um repositório sem ramificações no menu de ação na página Repositórios.
 * O Gerenciador de implantação, que está no fluxo de trabalho de adicionar ou editar pipeline, agora é informado sobre como criar uma ramificação ou projeto se o repositório selecionado não tiver ramificações.
 * Um novo recurso de autoatendimento do Cloud Manager foi adicionado para permitir [adicionar variáveis e segredos de forma livre no nível do ambiente.](/help/implementing/cloud-manager/environment-variables.md)
-* Com o novo Suplemento de Demonstrações de Referência (disponível em 17 de dezembro de 2021), as bases de código de demonstração mais recentes para produtos AEM podem ser instaladas e prontas para serem implantadas através do novo [ferramenta de criação rápida de sites](/help/journey-sites/quick-site/overview.md) em Sites.
+* Com o novo [Complemento de Demonstrações de Referência](/help/journey-sites/demos-add-on/overview.md) (disponível em 17 de dezembro de 2021), as bases de código de demonstração mais recentes para AEM produtos podem ser instaladas e estar prontas para serem implantadas através do novo [ferramenta de criação rápida de sites](/help/journey-sites/quick-site/overview.md) em Sites.
 * Os pipelines de front-end agora oferecem suporte a variáveis de pipeline.
 * As telas agora podem ser ativadas na caixa de diálogo Editar programa para todas as sandboxes.
 * As orientações fornecidas pelo cartão de chamada para ação na página de visão geral foram atualizadas para refletir precisamente sua associação com o pipeline de pilha completa de produção.

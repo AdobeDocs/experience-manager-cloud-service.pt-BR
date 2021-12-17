@@ -3,10 +3,11 @@ title: Caminho de aprendizado para desenvolvedores e gerentes de implantação
 description: Siga esta página para saber mais sobre as próximas etapas após obter acesso, se você for um desenvolvedor ou um gerente de implantação
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 2%
+source-wordcount: '607'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +28,7 @@ Se você estiver lendo esta seção, provavelmente estará atribuído a um perfi
 
 >[!NOTE]
 >* Como um *Desenvolvedor*, você desejará fazer logon no Cloud Manager e se familiarizar com o acesso ao Git.
->* Como *Gerenciador de implantação*, você deve se familiarizar com a configuração de pipelines e até mesmo implantar o código.
+>* Como um *Gerenciador de implantação*, você deve se familiarizar com a configuração de pipelines e até mesmo implantar o código.
 
 
 ## Pré-requisitos {#prerequisites}
@@ -41,24 +42,28 @@ Antes de começar, verifique:
 ## Gerenciar o GitHub {#manage-git}
 
 Você pode acessar e gerenciar seu Repositório Git usando o Gerenciamento de conta Git de Autoatendimento da interface do usuário do Cloud Manager.
-Para saber mais sobre este tópico, consulte [Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
+Para saber mais sobre esse tópico, consulte [Acesso ao Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
 ## Configurar pipeline {#setup-pipeline}
 
 Você pode configurar o Pipeline de produção ou não-produção na interface do usuário do Cloud Manager.
-Para saber mais sobre este tópico, consulte [Configuração do pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
+Para saber mais sobre esse tópico, consulte [Configuração do pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## O que vem a seguir {#whats-next}
 
-Os Gerentes de desenvolvimento e implantação agora estão prontos para se familiarizar com o desenvolvimento de código no AEM as a Cloud Service. Saiba mais ou encontre mais caminhos de aprendizagem na seção Recursos adicionais abaixo. Para saber mais sobre a jornada de aprendizado para autores de conteúdo, consulte [Caminho de aprendizado para autores do AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+Os Gerentes de desenvolvimento e implantação agora estão prontos para se familiarizarem com o desenvolvimento de código em AEM as a Cloud Service. Saiba mais ou encontre mais caminhos de aprendizagem na seção Recursos adicionais abaixo. Para saber mais sobre a jornada de aprendizado para autores de conteúdo, consulte [Caminho de aprendizado para autores do AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+
+>[!TIP]
+>
+>Agora que você está integrado, você pode [saiba como adicionar facilmente o complemento Demonstrações de referência de AEM](/help/journey-sites/demos-add-on/overview.md) para um ambiente de sandbox com configuração mínima de AEM e poder testar os recursos avançados de AEM com exemplos avançados com base nas práticas recomendadas.
 
 ## Recursos adicionais {#additional-resources}
 
 * [Acesso ao gerenciamento de conta Git e Git pelo Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* [Ambiente de desenvolvimento local para o AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [Ambiente de desenvolvimento local para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR)
 
-* [Introdução ao AEM Sites (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Introdução ao AEM Sites (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 
 * [Introdução ao Editor de SPA de AEM e React | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 
