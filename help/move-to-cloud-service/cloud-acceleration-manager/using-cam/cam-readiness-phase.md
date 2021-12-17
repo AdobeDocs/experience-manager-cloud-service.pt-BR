@@ -2,7 +2,7 @@
 title: Fase de disponibilidade no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral sobre a fase Preparação no Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 7737a9e6a0182fc98bf39da97c52f120139a2cc4
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -22,11 +22,11 @@ Siga as etapas abaixo para navegar até a Fase de disponibilidade:
 
 1. Clique no cartão do projeto para abrir a página de aterrissagem do projeto.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
 1. Navegue até o **Prontidão** conforme mostrado na figura abaixo.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
    >Consulte Criação e gerenciamento de um projeto no Cloud Acceleration Manager para saber mais.
@@ -37,7 +37,7 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
 
 1. Clique no botão **Revisão** do botão **Análise de práticas recomendadas** cartão.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
 1. Siga estas etapas para baixar o BPA (Best Practices Analyzer).
 
@@ -53,14 +53,14 @@ Siga as etapas abaixo para usar o cartão Análise de práticas recomendadas :
 
 1. Clique em **Fazer upload do novo relatório** para fazer upload do relatório BPA no CAM.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3.png)
 
    >[!IMPORTANT]
    >O relatório não pode ser carregado se você estiver no modo Incógnito do navegador.
 
 1. Após carregar um novo relatório, você verá o relatório de Análise de práticas recomendadas .
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 1. Revise e explore o painel de análise de práticas recomendadas do CAM. Consulte a seção abaixo [Relatório de análise de práticas recomendadas](#analysis-report) para obter mais detalhes.
 
@@ -75,7 +75,7 @@ Siga as etapas abaixo:
 
 1. Clique em **Visualização de impressão** , conforme mostrado abaixo.
 
-   ![imagem](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+   ![imagem](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
 
 1. Clicando em **Visualização de impressão** abre uma nova guia com o relatório exibido em uma visualização que pode ser impressa. Clique em **Imprimir** para imprimir o relatório em um formato PDF.
 
@@ -84,7 +84,7 @@ Siga as etapas abaixo:
    >* Se o botão de impressão do navegador for usado, ele imprimirá apenas uma página.
 
 
-   ![imagem](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
+   ![imagem](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Usando a Linha de Tendência da Exibição {#trendline-view-cam}
 
@@ -97,22 +97,22 @@ Siga as etapas abaixo para exibir os relatórios a partir da opção de linha de
 
 1. Navegue até o seu projeto e clique em **Revisão** do **Análise de práticas recomendadas** no **Prontidão** fase.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Clique no botão **...** ícone para exibir o menu suspenso.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
    >O relatório exibido é sempre o relatório que tem a data mais recente.
 
 1. Clique em **Exibir linha de tendência**, conforme mostrado na figura abaixo.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
 1. Clicando em **Exibir linha de tendência** abre a visualização da linha de tendência do relatório, como mostrado na figura abaixo.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
@@ -124,14 +124,14 @@ Siga as etapas abaixo para exibir os relatórios a partir da opção de linha de
 
    >
    >Você pode adicionar ou alterar a exibição gráfica no menu suspenso, como mostrado na figura abaixo:
-   >![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/reports-bpa1.png)
+   >![imagem](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### Relatório de análise de práticas recomendadas {#analysis-report}
 
 Explore os seguintes cartões disponíveis na página Relatório de análise de práticas recomendadas :
 
-![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > Com cada placa, você tem a capacidade de:
@@ -144,21 +144,21 @@ Explore os seguintes cartões disponíveis na página Relatório de análise de 
 
 O **Propriedades do relatório** O cartão fornece informações sobre propriedades do relatório, como data do relatório, duração, filtros, data de upload e detalhes do Adobe Experience Manager (AEM).
 
-![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
+![imagem](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Visão geral do relatório {#report-overview}
 
 Essa **Visão geral do relatório** O cartão fornece os resultados do relatório e os níveis de gravidade que se aplicam ao avaliar a disponibilidade para mudar para AEM as a Cloud Service, como mostrado na figura abaixo.
 
-![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+![imagem](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
 Clicar nesse relatório abre o **Relatório** guia .
 
-![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+![imagem](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
 Você pode filtrar o relatório com base na importância, no subtipo ou na contagem.
 
-![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+![imagem](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
 >Consulte [Interpretação do relatório do Analisador de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) para saber mais sobre as categorias de descobertas e os níveis de importância.
@@ -183,7 +183,7 @@ Você pode revisar as seguintes informações nesta guia:
 * Avaliação
 * Considerações sobre a migração de conteúdo
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Uso do Cartão de Planejamento e Configuração {#planning-setup}
 
@@ -191,11 +191,11 @@ Siga esta seção para explorar o cartão de atividade Planejamento e configura�
 
 1. Clique no botão **Exibir** do botão **Planejamento E Configuração** cartão. Este cartão fornece todo o conteúdo relevante que ajudará você a planejar e configurar sua migração de AEM.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
 1. Um carrossel de conteúdo exibe todas as informações relevantes para essa fase da jornada de migração.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ### Excluindo um Relatório de Análise de Práticas Recomendadas {#delete-trendline}
 
@@ -206,23 +206,23 @@ Siga as etapas abaixo para excluir um relatório da exibição de Linha de tend�
 
 1. Navegue até o seu projeto e clique em **Revisão** do **Análise de práticas recomendadas** no **Prontidão** fase.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
 1. Clique no botão **...** ícone para exibir o menu suspenso.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
 1. Clique em **Exibir linha de tendência**, conforme mostrado na figura abaixo.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
 1. Clique no ícone de exclusão do **Relatório de linha de tendência** tela.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Clique em **Excluir** para confirmar a exclusão.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## O que vem a seguir {#whats-next}
 

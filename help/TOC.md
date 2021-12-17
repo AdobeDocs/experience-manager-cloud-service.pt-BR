@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6e78e3c72bd67ca63503cf4d1710826b53994675
+source-git-commit: 0c079a38f7137a8bb469f4a45df70ffcb13cca76
 workflow-type: tm+mt
-source-wordcount: '3431'
+source-wordcount: '3433'
 ht-degree: 33%
 
 ---
@@ -93,55 +93,54 @@ ht-degree: 33%
       + [Criar programa](/help/journey-sites/demos-add-on/create-program.md)
       + [Criar Site de Demonstração](/help/journey-sites/demos-add-on/create-site.md)
       + [Gerenciar seu site de demonstração](/help/journey-sites/demos-add-on/manage.md)
-+ Migração para o AEMaaCS {#moving}
-   + [Migração para o AEM as a Cloud Service](/help/move-to-cloud-service/home.md)
++ jornada de migração as a Cloud Service AEM {#migration-journey}
+   + [Introdução ao movimento AEM as a Cloud Service](/help/journey-migration/getting-started.md)
+   + [Prontidão](/help/journey-migration/readiness.md)
+   + [Implementação](/help/journey-migration/implementation.md)
+   + [Ativa](/help/journey-migration/go-live.md)
+   + [Postagem ativa](/help/journey-migration/post-go-live.md)
+   + [Guia de migração para o Experience Manager as a Cloud Service para parceiros](/help/journey-migration/getting-started-partners.md)
    + Notas de versão das Ferramentas de migração {#release-notes-migration-tools}
-      + [Notas de versão atuais (2021.12.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+      + [Notas de versão atuais (2021.12.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2021 {#2021}
-         + [Notas da versão 2021.11.0](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-11-0.md)
-         + [Notas da versão 2021.10.0](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Fases da jornada de transição {#phases}
-      + [Prontidão](/help/move-to-cloud-service/migration-readiness.md)
-      + [Implementação](/help/move-to-cloud-service/migration-implementation.md)
-      + [Ativa](/help/move-to-cloud-service/migration-go-live.md)
-      + [Postagem ativa](/help/move-to-cloud-service/migration-post-go-live.md)
+         + [Notas da versão 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
+         + [Notas da versão 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Introdução ao Cloud Acceleration Manager {#introduction-cam}
-         + [Visão geral](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
-         + [Benefícios](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
+         + [Visão geral](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [Benefícios](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Uso do Cloud Acceleration Manager {#using-cam}
-         + [Introdução ao Cloud Acceleration Manager](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
-         + [Fase de preparação](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
-         + [Fase de implementação](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
-         + [Ir para a Fase Ativa](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
+         + [Introdução ao Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+         + [Fase de preparação](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+         + [Fase de implementação](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+         + [Ir para a Fase Ativa](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + Ferramentas de transição para a nuvem {#cloud-migration}
       + Analisador de práticas recomendadas {#best-practices-analyzer}
-         + [Visão geral](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
-         + [Uso do Analisador de práticas recomendadas](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
+         + [Visão geral](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [Uso do Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + Ferramenta Transferência de conteúdo {#content-transfer-tool}
-         + [Visão geral](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
-         + [Pré-requisitos para a ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
-         + [Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
-         + [Introdução à ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
-         + [Lidar com grandes repositórios de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [Extrair conteúdo da origem](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-         + [Inserção de conteúdo ao Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-         + [Visualização de logs para um conjunto de migração](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
-         + [Exclusão de um conjunto de migração](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
-         + [Execução da ferramenta Transferência de conteúdo em uma instância de publicação](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-         + [Solução de problemas da ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+         + [Visão geral](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [Pré-requisitos para a ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+         + [Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+         + [Introdução à ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+         + [Lidar com grandes repositórios de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+         + [Extrair conteúdo da origem](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+         + [Inserção de conteúdo ao Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [Visualização de logs para um conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
+         + [Exclusão de um conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
+         + [Execução da ferramenta Transferência de conteúdo em uma instância de publicação](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+         + [Solução de problemas da ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Ferramenta de mapeamento de usuários {#user-mapping-tool}
-            + [Visão geral](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
-            + [Considerações importantes](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
-            + [Usar a ferramenta Mapeamento de usuários](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+            + [Visão geral](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+            + [Considerações importantes](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
+            + [Usar a ferramenta Mapeamento de usuários](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
    + Ferramentas de refatoração de código {#refactoring-tools}
-      + [Experiência unificada](/help/move-to-cloud-service/unified-experience.md)
-      + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
-      + [Conversor de índice](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
-      + [Migração de fluxo de trabalho de ativos](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-      + [Conversor do Dispatcher do AEM](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-      + [Ferramentas de Modernização do AEM](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
-   + [Guia de migração para o Experience Manager as a Cloud Service para parceiros](/help/move-to-cloud-service/getting-started.md)
+      + [Experiência unificada](/help/journey-migration/unified-experience.md)
+      + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
+      + [Conversor de índice](/help/journey-migration/refactoring-tools/index-converter.md)
+      + [Migração de fluxo de trabalho de ativos](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+      + [Conversor do Dispatcher do AEM](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
+      + [Ferramentas de Modernização do AEM](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
    + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
    + [Alterações importantes para o AEM Sites no AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)

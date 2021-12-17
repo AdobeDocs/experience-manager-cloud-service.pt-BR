@@ -3,9 +3,9 @@ title: jornadas de documentação de AEM
 description: As Jornadas de documentação fornecem uma estrutura narrativa dentro AEM documentação, unindo recursos complexos e díspares para resolver uma meta de negócios de uma maneira prática recomendada. Projetadas tendo em mente AEM iniciantes, as jornadas apresentam os conceitos e os recursos para atingir uma meta de A a Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: fee595892367448a95b7f26bb03713e1b6e43822
+source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1352'
 ht-degree: 1%
 
 ---
@@ -93,6 +93,6 @@ Há várias Jornadas de Documentação disponíveis para você. Como cada jornad
 | [jornada de integração de AEM](/help/journey-onboarding/home.md) | Comece aqui para entrar em operação rapidamente com seu novo ambiente as a Cloud Service AEM! |
 | [AEM Jornada de criação rápida de site](/help/journey-sites/quick-site/overview.md) | Comece aqui para obter uma jornada guiada através da ferramenta de criação rápida de sites AEM simples de usar para simplificar o desenvolvimento front-end do seu site AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end. |
 | jornada de comércio AEM | Em breve! |
-| Jornada de migração do AEMaaCS | Em breve! |
+| [jornada de migração as a Cloud Service AEM](/help/journey-migration/getting-started.md) | Comece aqui para obter uma jornada passo a passo sobre como migrar da sua instalação no local ou do Adobe Managed AEM para o AEM totalmente baseado em nuvem as a Cloud Service e ser apresentado aos seus muitos benefícios. |
 
 Verifique novamente se há mais conteúdo à medida que novas jornadas se tornam disponíveis.

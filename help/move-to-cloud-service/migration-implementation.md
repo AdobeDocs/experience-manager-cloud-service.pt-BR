@@ -2,10 +2,10 @@
 title: Fase de implementação
 description: Fase de implementação
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ As etapas precisas da sua transição para o Cloud Service dependem dos sistemas
 
 A figura a seguir mostra as principais etapas envolvidas na fase de Execução:
 
-![imagem](/help/move-to-cloud-service/assets/exec-image1.png)
+![imagem](/help/journey-migration/assets/exec-image1.png)
 
 ## Transferência de conteúdo {#content-transfer}
 
@@ -41,7 +41,7 @@ Com essa ferramenta, você pode especificar o subconjunto de conteúdo desejado 
 >[!NOTE]
 >É recomendável fazer atualizações complementares frequentes de conteúdo diferencial para reduzir o período de congelamento de conteúdo para a transferência final de conteúdo diferencial antes de entrar online no Cloud Service.
 
-Consulte a [Ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) para obter mais detalhes.
+Consulte a [Ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) para obter mais detalhes.
 
 >[!IMPORTANT]
 >O requisito mínimo do sistema para a ferramenta Transferência de conteúdo é o AEM 6.3 + e JAVA 8. Se você estiver em uma versão inferior do AEM, precisará atualizar seu repositório de conteúdo para o AEM 6.5 para usar a ferramenta Transferência de conteúdo.
@@ -64,9 +64,9 @@ Na fase de Planejamento, você deve ter uma lista de áreas que precisam ser ref
 
 Para ajudar a acelerar algumas das tarefas de refatoração de código, você pode usar as seguintes ferramentas:
 
-* [Migração de fluxo de trabalho de ativos](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-* [Conversor do Dispatcher Converter](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-* [Ferramentas de Modernização](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
+* [Migração de fluxo de trabalho de ativos](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+* [Conversor do Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
+* [Ferramentas de Modernização](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 
 É recomendável refatorar e testar o código localmente antes de enviá-lo para um ambiente do Cloud Service por meio do Git do Cloud Manager.
 
@@ -82,7 +82,7 @@ Alguns recursos adicionais estão listados abaixo:
 
    >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-* Consulte a documentação de [Configuração de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) para configurar um ambiente de desenvolvimento local
+* Consulte a documentação de [Configuração de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR) para configurar um ambiente de desenvolvimento local
 
 
 Para gerenciar o desenvolvimento contínuo do seu código no AEM ativo, juntamente com a tarefa de refatoração de código como parte da sua jornada de transição, é recomendável programar um período de congelamento do código até você concluir a reestruturação do seu projeto Maven para que ele seja compatível com o AEM as a Cloud Service.

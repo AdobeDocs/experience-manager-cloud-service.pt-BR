@@ -2,7 +2,7 @@
 title: Lidar com grandes repositórios de conteúdo
 description: Esta seção descreve o tratamento de repositórios de conteúdo grande
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 6228e4072ad0042dae8ce415464c7bd5ed36612c
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 1%
@@ -70,14 +70,14 @@ Siga esta seção para saber como configurar o AzCopy como uma etapa de pré-có
 
 Na página de propriedades do contêiner no portal do Azure, use o **Calcular tamanho** para determinar o tamanho de todo o conteúdo no container. Por exemplo:
 
-![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![imagem](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Armazenamento de dados do Amazon S3 {#amazon-data}
 
 Você pode usar a guia Métricas do contêiner para determinar o tamanho de todo o conteúdo do contêiner. Por exemplo:
 
 
-![imagem](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
+![imagem](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 #### Armazenamento de dados do arquivo {#file-data-store-determine-size}
 
@@ -243,4 +243,4 @@ Por exemplo, a extração de azcopy pode ser desativada com: `mv /mnt/crx/author
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender a lidar com repositórios de conteúdo grande para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo para mover o conteúdo para AEM as a Cloud Service, agora você está pronto para aprender o Processo de extração na ferramenta Transferência de conteúdo. Consulte [Extrair conteúdo da origem na ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) para saber como extrair seu conjunto de migração da ferramenta Transferência de conteúdo.
+Depois de aprender a lidar com repositórios de conteúdo grande para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo para mover o conteúdo para AEM as a Cloud Service, agora você está pronto para aprender o Processo de extração na ferramenta Transferência de conteúdo. Consulte [Extrair conteúdo da origem na ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) para saber como extrair seu conjunto de migração da ferramenta Transferência de conteúdo.

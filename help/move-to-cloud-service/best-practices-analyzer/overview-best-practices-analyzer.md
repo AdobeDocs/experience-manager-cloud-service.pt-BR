@@ -1,23 +1,22 @@
 ---
 title: Visão geral do Analisador de práticas recomendadas
 description: Visão geral do Analisador de práticas recomendadas
-translation-type: tm+mt
-source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
+exl-id: 2c45f527-3bcd-489b-a3be-b5c6f371429e
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 29%
 
 ---
 
-
 # Visão geral {#overview-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="Visão geral do Analisador de práticas recomendadas"
->abstract="O Analisador de práticas recomendadas fornece uma avaliação da implementação atual de AEM, indicando áreas que não estão seguindo AEM práticas recomendadas. Fornece também orientações sobre as próximas etapas para adotar AEM práticas recomendadas. Além disso, ajuda a acelerar os processos de avaliação da prontidão para mudar de uma implantação existente da Adobe Experience Manager (AEM) para a AEM como Cloud Service."
+>abstract="O Analisador de práticas recomendadas fornece uma avaliação da implementação de AEM atual, indicando áreas que não estão seguindo AEM práticas recomendadas. Também fornece orientação sobre as próximas etapas para adotar AEM práticas recomendadas. Além disso, ajuda a acelerar os processos de avaliação da prontidão para migrar de uma implantação do Adobe Experience Manager (AEM) existente para AEM as a Cloud Service."
 
-O Analisador de práticas recomendadas fornece uma avaliação da implementação atual de AEM, indicando áreas que não estão seguindo AEM práticas recomendadas. Fornece também orientações sobre as próximas etapas para adotar AEM práticas recomendadas. Além disso, ajuda a acelerar os processos de avaliação da prontidão para mudar de uma implantação existente da Adobe Experience Manager (AEM) para a AEM como Cloud Service.
+O Analisador de práticas recomendadas fornece uma avaliação da implementação de AEM atual, indicando áreas que não estão seguindo AEM práticas recomendadas. Também fornece orientação sobre as próximas etapas para adotar AEM práticas recomendadas. Além disso, ajuda a acelerar os processos de avaliação da prontidão para migrar de uma implantação do Adobe Experience Manager (AEM) existente para AEM as a Cloud Service.
 
 Essa ferramenta gera um relatório que identifica áreas de refatoração potencial, que é o primeiro passo na jornada da transição para o AEM as a Cloud Service.
 
@@ -33,9 +32,9 @@ O relatório do Analisador de práticas recomendadas inclui as seguintes categor
 * Problemas de implantação e configuração
 * Recursos do AEM 6.x que foram substituídos por novas funcionalidades ou que atualmente não têm suporte no AEM as a Cloud Service
 
-Informações adicionais sobre as categorias e possíveis implicações e soluções associadas a essas categorias são fornecidas por meio de links no Relatório do Analisador de práticas recomendadas.
+Informações adicionais sobre as categorias e possíveis implicações e soluções associadas a essas categorias são fornecidas por meio de links do Relatório do Analisador de práticas recomendadas.
 
 >[!NOTE]
->O Relatório do Analisador de Práticas Recomendadas acelera o processo de estimativa do tempo e custo necessários para a transição, fornecendo informações que, de outra forma, precisariam ser coletadas e avaliadas manualmente.
+>O Relatório do Analisador de Práticas Recomendadas acelera o processo de estimativa do tempo e custo necessários para a transição para o AEM as a Cloud Service, fornecendo informações que de outra forma precisariam ser coletadas e avaliadas manualmente.
 
-Você também pode baixar o relatório do Analisador de práticas recomendadas da sua instância AEM. Consulte [Visualizando o Relatório do Analisador de Práticas Recomendadas](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obter mais detalhes.
+Também é possível baixar o relatório do Analisador de práticas recomendadas da instância do AEM. Consulte [Como visualizar o relatório do Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obter mais detalhes.

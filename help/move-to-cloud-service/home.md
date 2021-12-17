@@ -3,7 +3,7 @@ title: Migração para o AEM as a Cloud Service
 description: 'Recursos de autoajuda e links de documentação referentes à migração para o AEM as a Cloud Service '
 landing-page-description: Entenda a jornada de transição para o Cloud Service.
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 54%
@@ -31,7 +31,7 @@ Para uma transição tranquila e bem-sucedida, você deve garantir um planejamen
 
 A figura abaixo mostra uma representação visual da jornada de transição recomendada para AEM as a Cloud Service.
 
-![imagem](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
+![imagem](/help/journey-migration/assets/move-aemcloud-process.png)
 
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}

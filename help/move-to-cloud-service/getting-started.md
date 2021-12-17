@@ -2,10 +2,10 @@
 title: Guia de migração para o Experience Manager as a Cloud Service para parceiros
 description: Guia de migração para o Experience Manager as a Cloud Service para parceiros
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2092'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -115,7 +115,7 @@ Para uma transição tranquila e bem-sucedida, você deve garantir um planejamen
 
 A figura abaixo mostra uma representação visual da jornada de transição recomendada para o Cloud Service.
 
-![imagem](/help/move-to-cloud-service/assets/home-img1.png)
+![imagem](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
@@ -171,7 +171,7 @@ O Cloud Manager permite que as organizações autogerenciem o Experience Manager
 1. [Implantar no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) git
 2. Execute o código do cliente por meio da [Pipeline de qualidade do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use)
 3. [Implantar no ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**Somente migração**] Transferência de conteúdo através de pacotes ou [Ferramenta Transferência de conteúdo](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(TPC)
+4. [**Somente migração**] Transferência de conteúdo através de pacotes ou [Ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(TPC)
 5. Executar ciclos de teste recomendados (fumaça, QA e muito mais)
 6. Promover para o pipeline de produção do Cloud Manager
 7. Validação do ensaio de fumo

@@ -1,21 +1,21 @@
 ---
 title: Fase de ativação no Cloud Acceleration Manager
 description: Esta página fornece uma visão geral da fase de ativação no Cloud Acceleration Manager.
-source-git-commit: 22ee20401a8c576ae56547cf678b9f5c0d69362d
+exl-id: 56c8e9a2-bd49-4588-b7ed-9739dd07162f
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 2%
 
 ---
 
-
 # Ativa a fase no Cloud Acceleration Manager {#golive-phase-cam}
 
-O cartão Go Live fornece todo o conteúdo relevante que destaca a preparação, as ações específicas a serem tomadas e a consideração completa para garantir um lançamento tranquilo e bem-sucedido do AEM como Cloud Service.
+O cartão Go Live fornece todo o conteúdo relevante que destaca a preparação, as ações específicas a serem tomadas e a consideração completa para garantir um lançamento tranquilo e bem-sucedido AEM as a Cloud Service.
 
-Clique no cartão do projeto para abrir a página de aterrissagem do projeto e navegue até a seção **Ativar**, conforme mostrado na figura abaixo.
+Clique no cartão do projeto para abrir a página de aterrissagem do projeto e navegue até o **Ativa** conforme mostrado na figura abaixo.
 
-![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
+![imagem](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
 >Consulte [Criação e gerenciamento de um projeto no Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) para saber mais.
@@ -25,10 +25,10 @@ Clique no cartão do projeto para abrir a página de aterrissagem do projeto e n
 
 Siga esta seção para explorar o cartão de atividades do Go Live:
 
-1. Clique no botão **Exibir** do cartão **Acessar**.
+1. Clique no botão **Exibir** do botão **Ativa** cartão.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 1. Um carrossel de conteúdo exibe informações relevantes para essa fase da jornada de migração.
 
-   ![imagem](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-2.png)
+   ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)
