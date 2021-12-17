@@ -2,10 +2,10 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: ed8150e3b1e7d318a15ad84ebda7df52cf40128b
+source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
-source-wordcount: '2877'
-ht-degree: 13%
+source-wordcount: '2930'
+ht-degree: 12%
 
 ---
 
@@ -72,21 +72,6 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
       + Qualquer `rep:policy` para qualquer caminho em `/apps`
    + [Scripts agrupados pré-compilados](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
-+ O `ui.config` pacote, contém tudo [Configurações do OSGi](/help/implementing/deploying/configuring-osgi.md):
-   + Pasta organizacional contendo definições de configuração OSGi específicas do modo de execução
-      + `/apps/my-app/osgiconfig`
-   + Pasta de configuração OSGi comum contendo configurações OSGi padrão que se aplicam a todos os alvos AEM alvos de implantação as a Cloud Service
-      + `/apps/my-app/osgiconfig/config`
-   + Execute pastas de configuração OSGi específicas ao modo que contenham configurações OSGi padrão que se aplicam a todos os destinos de implantação AEM as a Cloud Service do target
-      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
-   + Repo Init Scripts de configuração do OSGi
-      + [Repo Init](#repo-init) é a maneira recomendada de implantar conteúdo (mutável) que é logicamente parte do aplicativo AEM. As configurações de OSGi da inicialização do Repo devem ser colocadas na `config.<runmode>` conforme descrito acima, e ser usado para definir:
-         + Estruturas de conteúdo da linha de base
-         + Usuários
-         + Usuários do Serviço
-         + Grupos
-         + ACLs (permissões)
-
 >[!NOTE]
 >
 >O mesmo código deve ser implantado em todos os ambientes. Isso é necessário para garantir que um nível de validação de confiança no ambiente de preparo também esteja em produção. Para obter mais informações, consulte a seção em [Runmodes](/help/implementing/deploying/overview.md#runmodes).
@@ -125,6 +110,22 @@ A estrutura de implantação do aplicativo recomendada é a seguinte:
       + `site-b.ui.config` implanta configurações OSGi necessárias para o site B
       + `site-b.ui.content` implanta conteúdo e configuração exigidos pelo site B
 
++ O `ui.config` pacote contém tudo [Configurações do OSGi](/help/implementing/deploying/configuring-osgi.md):
+   + Código considerado e pertence a pacotes OSGi, mas não contém nós de conteúdo regular. Assim, ele é marcado como um pacote de contêiner
+   + Pasta organizacional contendo definições de configuração OSGi específicas do modo de execução
+      + `/apps/my-app/osgiconfig`
+   + Pasta de configuração OSGi comum contendo configurações OSGi padrão que se aplicam a todos os alvos AEM alvos de implantação as a Cloud Service
+      + `/apps/my-app/osgiconfig/config`
+   + Execute pastas de configuração OSGi específicas ao modo que contenham configurações OSGi padrão que se aplicam a todos os destinos de implantação AEM as a Cloud Service do target
+      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
+   + Repo Init Scripts de configuração do OSGi
+      + [Repo Init](#repo-init) é a maneira recomendada de implantar conteúdo (mutável) que é logicamente parte do aplicativo AEM. As configurações de OSGi da inicialização do Repo devem ser colocadas na `config.<runmode>` conforme descrito acima, e ser usado para definir:
+         + Estruturas de conteúdo da linha de base
+         + Usuários
+         + Usuários do Serviço
+         + Grupos
+         + ACLs (permissões)
+
 ### Pacotes de aplicativos extras{#extra-application-packages}
 
 Se outros projetos de AEM, que são eles mesmos compostos de seus próprios pacotes de código e conteúdo, forem usados pela implantação de AEM, seus pacotes de contêiner deverão ser incorporados no `all` pacote.
@@ -141,14 +142,14 @@ Por exemplo, um projeto de AEM que inclui dois aplicativos de AEM de fornecedor 
 
 ## Tipos de pacotes {#package-types}
 
-As embalagens devem ser marcadas com o tipo de pacote declarado.
+As embalagens devem ser marcadas com o tipo de pacote declarado. Os tipos de pacote ajudam a esclarecer a finalidade e a implantação de um pacote.
 
-+ Os pacotes de contêiner devem definir seus `packageType` para `container`. Os pacotes de contêineres não devem conter diretamente pacotes OSGi, configurações OSGi e não podem usar [instalar ganchos](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Os pacotes de contêiner devem definir seus `packageType` para `container`. Os pacotes de contêiner não devem conter nós regulares. Somente pacotes OSGi, configurações e pacotes secundários são permitidos. Não é permitido usar contêineres em AEM as a Cloud Service [instalar ganchos](http://jackrabbit.apache.org/filevault/installhooks.html).
 + Os pacotes de código (imutáveis) devem definir seus `packageType` para `application`.
 + Os pacotes de conteúdo (mutável) devem definir seus `packageType` para `content`.
 
 
-Para obter mais informações, consulte [Apache Jackrabbit FileVault - Documentação de plug-in do pacote Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) e [Snippet de configuração do Maven do FileVault](#marking-packages-for-deployment-by-adoube-cloud-manager) abaixo.
+Para obter mais informações, consulte [Apache Jackrabbit FileVault - Documentação de plug-in do pacote Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Tipos de pacotes Apache Jackrabbit](http://jackrabbit.apache.org/filevault/packagetypes.html)e o [Snippet de configuração do Maven do FileVault](#marking-packages-for-deployment-by-adoube-cloud-manager) abaixo.
 
 >[!TIP]
 >
