@@ -1,9 +1,9 @@
 ---
 title: Ao vivo
 description: Saiba como executar a migração assim que o código e o conteúdo estiverem prontos para a nuvem
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+source-git-commit: fe0261fa9708b2250b6f5e4931100a9fc006e55d
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,6 @@ Antes de executar a migração de produção, siga as etapas de instalação e p
 * Inicie a migração da produção com base na experiência adquirida durante a migração do estágio as a Cloud Service de AEM realizada em clones:
    * Autor-autor
    * Publicar-Publicar
-
->[!NOTE]
->
->O autor as a Cloud Service do Aem será exibido durante a assimilação, mas AEM publicação as a Cloud Service estará ativa durante a assimilação.
 
 * Valide o conteúdo assimilado nos níveis de autor e publicação as a Cloud Service AEM.
 * Instrua a equipe de criação de conteúdo a evitar mover o conteúdo na origem e no destino até que a assimilação seja concluída
