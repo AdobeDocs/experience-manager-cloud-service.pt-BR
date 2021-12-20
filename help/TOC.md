@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d390ea1f0bcdff22869cfa8418cc3445aa149cf7
+source-git-commit: 9dc60e627a6770ee636ad5f8a8e0a8eb81adae9b
 workflow-type: tm+mt
-source-wordcount: '3437'
+source-wordcount: '3438'
 ht-degree: 33%
 
 ---
@@ -282,7 +282,7 @@ ht-degree: 33%
       + [Adicionar e carregar ativos](/help/assets/add-assets.md)
       + [Pesquisar ativos](/help/assets/search-assets.md)
       + [Tarefas comuns do gerenciamento de ativos](/help/assets/manage-digital-assets.md)
-      + [Visualização de ativos 3d](/help/assets/dynamic-media/previewing-3d-assets.md)
+      + [Visualizar ativos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Tags inteligentes para imagens](/help/assets/smart-tags.md)
       + [Tag inteligente de seus ativos de vídeo](/help/assets/smart-tags-video-assets.md)
       + [Como organizar ativos](/help/assets/organize-assets.md)
@@ -347,7 +347,7 @@ ht-degree: 33%
       + [Opcional - Configurar o Dynamic Media, Configuração de publicação](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Solução de problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
       + [Acessibilidade no Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md)
-      + [Gerenciamento de ativos do Dynamic Media](/help/assets/dynamic-media/managing-assets.md)
+      + [Gerenciar ativos do Dynamic Media](/help/assets/dynamic-media/managing-assets.md)
       + [Práticas recomendadas para otimização da qualidade de imagens](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
       + [Perfis de imagem](/help/assets/dynamic-media/image-profiles.md)
       + [Perfis de vídeo](/help/assets/dynamic-media/video-profiles.md)
