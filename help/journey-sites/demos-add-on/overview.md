@@ -1,10 +1,10 @@
 ---
 title: jornada do complemento Demonstrações de referência AEM
 description: Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de Demonstrações de Referência de AEM a um ambiente de sandbox com configuração mínima de AEM e poder testar os recursos avançados de AEM com exemplos avançados com base nas práticas recomendadas.
-source-git-commit: f9794f52f2d09723a62e1f19cc951a5032661fce
+source-git-commit: 3dc268060188defcc84971f73baced1f30dccd49
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '813'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,13 @@ Esta jornada apresenta os requisitos, as etapas e a abordagem para criar um novo
 
 Você explorará vários tópicos nesta jornada. Os artigos a seguir fornecem um conhecimento fundamental da criação de um novo programa e da configuração e uso do Suplemento de Demonstrações de Referência de AEM e devem ser lidos em ordem. Elas vinculam a documentação técnica detalhada, conforme necessário.
 
-|#|Artigo|Descrição| |—|—|—|— |0|AEM Jornada do Complemento de Demonstrações de Referência|Este documento| |1|[Entender a instalação do complemento de demonstração de referência](installation.md)|Saiba mais sobre o Cloud Manager e como ele é usado para instalar o complemento.| |2|[Criar um programa e um pipeline](create-program.md)|Saiba como configurar um novo programa e pipeline para implantar o complemento.| |3|[Criar um site de demonstração](create-site.md)|Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados.| |4|[Gerencie seus sites de demonstração](manage.md)|Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.|
+| # | Artigo | Descrição |
+|---|---|---|
+| 0 | jornada do complemento Demonstrações de referência AEM | Este documento |
+| 1 | [Entender a instalação do complemento de demonstração de referência](installation.md) | Saiba mais sobre o Cloud Manager e como ele é usado para instalar o complemento. |
+| 2 | [Criar um programa e um pipeline](create-program.md) | Saiba como configurar um novo programa e pipeline para implantar o complemento. |
+| 3 | [Criar um site de demonstração](create-site.md) | Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados. |
+| 4 | [Gerencie seus sites de demonstração](manage.md) | Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los. |
 
 ## O que vem a seguir {#what-is-next}
 
