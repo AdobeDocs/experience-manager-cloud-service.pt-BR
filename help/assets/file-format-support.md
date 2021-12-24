@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 479cfffd17dcde12bda7d53a7acddfbb46782a8f
+source-git-commit: 1ea99c0eb602fa48674a03e25ee615add425f6af
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 8%
@@ -57,7 +57,7 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura | Cortar |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | Instantâneo | - | Instantâneo | Instantâneo |
-| EPS | - | Instantâneo | - | - |
+| EPS | Instantâneo | Instantâneo | - | - |
 | GIF | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 | JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 | PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
