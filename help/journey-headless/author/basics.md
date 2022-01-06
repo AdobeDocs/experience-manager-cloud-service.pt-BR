@@ -1,238 +1,235 @@
 ---
-title: Noções básicas sobre criação de aprendizado
-description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS sem cabeçalho usando Fragmentos de conteúdo.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn Authoring Basics
+description: Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments.
+exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 3%
 
 ---
 
+# Authoring Basics for Headless with AEM {#author-headless-basics}
 
-# Noções básicas de criação para headless com AEM {#author-headless-basics}
+## The Story so Far {#story-so-far}
 
-## A história até agora {#story-so-far}
+[](overview.md)[](introduction.md)
 
-No início da [AEM Jornada do autor de conteúdo sem cabeçalho](overview.md) a [Introdução](introduction.md) cobria os conceitos básicos e a terminologia relevante para a criação sem cabeçalho.
-
-Este artigo é baseado neles para que você entenda como criar seu próprio conteúdo para seu projeto sem periféricos de AEM.
+This article builds on these so you understand how to author your own content for your AEM headless project.
 
 ## Objetivo {#objective}
 
-* **Público-alvo**: Iniciante
-* **Objetivo**: Apresente as noções básicas da criação de CMS sem cabeçalho:
-   * Introdução à criação com o AEMaaCS
-   * Introdução aos fragmentos de conteúdo
+* ****
+* ****
+   * Introduction to authoring with AEMaaCS
+   * Introduction to Content Fragments
 
 ## Manuseio básico {#basic-handling}
 
-Antes de lidar com Fragmentos de conteúdo, veja uma (muito) rápida introdução ao uso de AEM....mas nada substitui a experiência de entrar e tentar usar o sistema.
+Before you get to grips with Content Fragments, here is a (very) quick introduction to using AEM....but nothing really replaces the experience of signing in and trying to use the system.
 
-### Autor e publicação {#author-preview-publish}
+### Author and Publish {#author-preview-publish}
 
 Uma instalação do AEM geralmente consiste em pelo menos dois ambientes:
 
 * Autor
 * Publicação
 
-Você faz logon e usa o ambiente de criação para gerar seu conteúdo. Quando estiver pronto, publique seu conteúdo para que ele fique disponível. Para ser impotente, isso seria para outros aplicativos, para páginas da Web isso seria para os leitores na Web.
+You log into, and use the author environment to generate your content. When ready you then publish your content so that it becomes generally available. For headless this would be to other applications, for web pages this would be to readers on the web.
 
-Para obter mais detalhes, consulte os Conceitos de criação .
+For more details see the Authoring Concepts.
 
-### Fazer logon {#signing-in}
+### Signing In {#signing-in}
 
-Assim como na maioria dos sistemas, você precisará fazer logon. Como autor, você receberá:
+As with most systems you will need to login. As an author you will be provided with:
 
-* Nome do usuário (conta)
+* User (account) name
 * Senha
-* Link para acessar a tela de logon
+* Link to access the login screen
 
-Sua conta terá sido configurada com os privilégios necessários. Em caso de problemas, recomendamos que você entre em contato com a equipe interna de suporte a projetos.
+Your account will have been configured with any privileges that you need. If you have any issues, we recommend that you contact your in-house project support team.
 
 ### Navegação {#navigation}
 
-A primeira vez que você efetuar o logon em um pequeno tutorial online destacará alguns dos principais recursos da interface do usuário do .
+The first time you log in a small online tutorial will highlight some of the main features of the user interface.
 
-Em seguida, você pode usar o Painel de navegação para acessar áreas-chave de AEM. Para Fragmentos de conteúdo, você estará usando o **Console de ativos**.
+You can then use the Navigation Panel to access key areas of AEM. ****
 
-O Painel de navegação pode ser aberto selecionando o ícone Adobe na parte superior esquerda, seguido pelo pequeno ícone de bússola:
+The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
 
 ![Painel Navegação](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->Embora os Fragmentos de conteúdo sejam um recurso AEM **Sites**, eles são encontrados no console **Assets**. Este é um detalhe técnico que não deve afetá-lo, mas que pode ser útil saber.
+>******** This is a technical detail that should not affect you, but might be useful to know.
 
-No console, é possível selecionar pastas para navegar até o Fragmento do conteúdo ou a navegação estrutural (no cabeçalho) para navegar de volta para a árvore.
+Within the console you can select folders to navigate to your Content Fragment, or the breadcrumbs (in the header) to navigate back up the tree.
 
 ![Navegações estruturais](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
 
-### Ações, Seleção, Exibição {#actions-selecting-viewing}
+### Actions, Selecting, Viewing {#actions-selecting-viewing}
 
-O console **Assets** tem **Barras de ferramentas de ação** dedicadas e **Ações rápidas** que você pode usar após selecionar um recurso (por exemplo, uma pasta ou fragmento de conteúdo).
+************
 
-As Ações rápidas estão disponíveis para um único recurso, consulte **Basel** no exemplo abaixo:
+****
 
 ![Ações rápidas](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
-A barra de ferramentas Ações fornece acesso a toda a gama de ações - aplicáveis ao cenário atual. As ações disponíveis podem mudar; por exemplo, dependendo da sua localização ou se você selecionou vários recursos:
+The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
 
 ![Barra de ferramentas de ação](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
 
-Você pode selecionar o formato para visualizar seus recursos com o Seletor de exibições:
+You can select the format for viewing your resources with the View Selector:
 
 ![Exibir seletor](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
 
-Você pode exibir informações adicionais sobre itens usando o Seletor de painéis. Isso também dá acesso a ações adicionais.
+You can view additional information about items using the Rail Selector. This also gives access to additional actions.
 
 ![Painel esquerdo](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
 
-## Criação de fragmentos de conteúdo {#authoring-content-fragments}
+## Authoring Content Fragments {#authoring-content-fragments}
 
-Então, essa foi uma introdução muito rápida à interface do usuário do AEM, mas espero que você tenha tido a chance de experimentá-la. Agora, mostramos seu interesse real - Fragmentos de conteúdo para headless.
+So, that was a very quick introduction to the AEM User Interface (UI), but hopefully you&#39;ve had a chance to try it out. Now we get down to your real interest - Content Fragments for Headless.
 
-Teremos que passar pelas coisas do início ao fim, mas sua instância já pode ter pastas e/ou fragmentos criados, e eles podem estar em locais diferentes. Os princípios são os mesmos.
+We&#39;ll have to go through things from start to finish, but your instance might already have folders and/or fragments created, and these might be in different locations. The principles are the same.
 
-### Organização e navegação {#organizing-and-navigating}
+### Organizing and Navigating {#organizing-and-navigating}
 
-A menos que tenha pouquíssimos Fragmentos de conteúdo, você desejará organizá-los - para que você (e outros) os encontre novamente.
+Unless you have very few Content Fragments you will want to organize them - so that you (and others) can find them again.
 
-#### Criação de uma pasta {#creating-folder}
+#### Creating a Folder {#creating-folder}
 
-Você pode fazer isso criando uma série de pastas na seção **Files** do console Assets. Selecione a opção **Create** (canto superior direito), seguida por **Folder**:
+**** ********
 
-![Opção Criar pasta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
+![](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Uma caixa de diálogo será aberta onde você pode inserir os detalhes e, em seguida, confirmar com **Criar**:
+****
 
-![Caixa de diálogo Criar pasta](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
+![](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
-#### Uso de caminhos e tags para limitar os modelos de fragmentos de conteúdo disponíveis na pasta {#tags-paths-for-models-in-folder}
+#### Using Paths and Tags to limit Content Fragment Models available in the Folder {#tags-paths-for-models-in-folder}
 
-Esta seção está um pouco mais avançada. Você não precisa realmente dele se estiver apenas começando e tentando coisas, mas ele é *very* útil quando você tem muitos fragmentos. Por isso é bom saber - mesmo que ainda não o utilize.
+This section is slightly more advanced. ** So it&#39;s good to know about - even if you don&#39;t use it quite yet.
 
-Seu Arquiteto de conteúdo terá criado todos os Modelos de fragmento de conteúdo necessários para seu projeto atual e talvez alguns outros projetos também. Para ajudar a simplificar as coisas para si mesmo e para outros autores, você pode limitar a lista de modelos disponíveis para uma pasta específica.
+Your Content Architect will have created all the Content Fragment Models required for your current project, and maybe some other projects too. To help keep things simple for yourself, and other authors, you can limit the list of models available for a specific folder.
 
-Depois de criar a pasta, você pode abrir a pasta **Propriedades**. Aqui estão várias guias com informações e detalhes de configuração sobre a pasta. Particularmente para Fragmentos de conteúdo, você pode usar a guia **Policies** para definir caminhos e/ou tags específicos para essa pasta. Isso limita os Modelos de fragmento de conteúdo disponíveis para uso na pasta, pois significa que os Modelos de fragmento de conteúdo devem atender a esses requisitos antes que possam ser usados para gerar fragmentos nessa pasta.
+**** Here there are various tabs with information, and configuration details, about the folder. **** This limits the Content Fragment Models available for use in the folder as it means that Content Fragment Models must meet these requirements before they can be used to generate fragments in this folder.
 
-![Criar propriedades de pasta - Políticas](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
-
->[!NOTE]
->
->Você pode ler mais detalhes em Modelos de fragmentos de conteúdo - Permitir modelos de fragmentos de conteúdo na pasta Ativos.
-
-Em seguida, navegue por essas pastas para criar e editar os Fragmentos de conteúdo.
-
-#### Por acaso - Configuração de Cloud Services de pasta {#cloud-services-folder}
-
-Só para o caso...
-
-Você provavelmente receberá uma pasta inicial onde poderá criar suas pastas. Isso ocorre porque alguns detalhes de configuração devem ser aplicados (geralmente por um Desenvolvedor ou Administrador do Sistema) à pasta raiz. Isso provavelmente não lhe interessará, mas se necessário, você poderá verificar a **Configuração** no **Cloud Services** da pasta **Propriedades**:
-
-![Criar propriedades de pasta - Configuração](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
+![](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
 
 >[!NOTE]
 >
->Você pode ler mais em Aplicar a configuração à pasta Ativos .
+>You can read further details under Content Fragment Models - Allowing Content Fragment Models on your Assets Folder.
 
-### Criação de um fragmento de conteúdo {#creating-fragment}
+You then navigate through these folders to create, and edit your Content Fragments.
 
-A criação de um Fragmento de conteúdo é muito semelhante - em vez disso, use a opção **Fragmento de conteúdo** :
+#### Just in case - Folder Cloud Services Configuration {#cloud-services-folder}
 
-![Opção Criar fragmento de conteúdo](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+Just in case...
 
-Desta vez, um assistente será aberto. A primeira etapa é selecionar o Modelo do fragmento de conteúdo no qual o fragmento será baseado:
+You will probably be given an initial folder where you can create your folders. This is as some configuration details must be applied (usually by a Developer or System Administrator) to the root folder. ************
 
-![Criar fragmento de conteúdo - selecione Modelo](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
-
-Depois de continuar com **Next** você pode fornecer os detalhes (**Basic** e **Advanced**) do seu fragmento:
-
-![Criar fragmento do conteúdo - fornecer nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-Confirme com **Criar** e você poderá **Abrir** seu fragmento no editor.
-
-### Edição de um fragmento {#editing-fragment}
-
-Você pode abrir um fragmento imediatamente após criá-lo ou selecionando-o no console Assets.
-
-Quando o editor for aberto pela primeira vez, você verá:
-
-* Uma lista de ícones no lado esquerdo - isso dá acesso a várias áreas de funcionalidade. O editor é aberto na guia **Variations**, é aqui que a maior parte da edição acontece. Você também pode estar interessado nas guias **Anotações** e **Metadados**.
-
-* Um cabeçalho com informações sobre o fragmento e acesso a várias ações.
-
-* A área de edição principal - depende do modelo usado para criar o fragmento.
-
-Como exemplos:
-
-* Um fragmento que requer apenas várias informações, algumas com um tipo específico. Para conteúdo sem cabeçalho, referências são fundamentais, você aprenderá sobre isso mais tarde na sua jornada.
-
-   ![Editor de fragmento de conteúdo - Meu fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
-
-* Um fragmento que permite escrever uma longa seção de texto. Aqui há opções adicionais para gerenciar e formatar o texto. Você pode até mesmo abrir os campos de texto individuais em um editor de tela cheia (usando o ícone de tela pequena à direita)
-
-   ![Editor de fragmentos de conteúdo - Espirais do Alasca](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+![](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
 >[!NOTE]
 >
->A documentação específica do projeto pode ser necessária para ajudar os autores com detalhes sobre como preencher alguns campos com êxito.
->
->Consulte Modelos de fragmentos de conteúdo - Tipos de dados e propriedades para obter detalhes genéricos.
+>You can read more under Apply the Configuration to your Assets Folder.
 
-Confirme suas atualizações com **Save** ou **Save &amp; close**.
+### Creating a Content Fragment {#creating-fragment}
+
+****
+
+![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+
+![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+
+************
+
+![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+********
+
+### Editing a Fragment {#editing-fragment}
+
+You can open a fragment immediately after creating it, or by selecting it from the Assets console.
+
+When the editor first opens you&#39;ll see:
+
+* A list of icons at the left side - this gives you access to various areas of functionality. **** ********
+
+* A header with information about the fragment, and access to various actions.
+
+* The main editing area - this depends on the model used to create your fragment.
+
+As examples:
+
+* A fragment that only requires multiple pieces of information, some with a specific type. For headless content, references are key, you&#39;ll learn about these later in your journey.
+
+   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+
+* A fragment that allows you to write a long section of text. Here there are additional options for managing, and formatting the text. You can even open the individual text fields in a full screen editor (using the small screen-like icon at the right)
+
+   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
->Para obter mais detalhes, leia Variações - Criação de fragmentos de conteúdo .
+>Project specific documentation might be required to help authors with details of how to successfully complete some fields.
+>
+>See Content Fragments Models - Data Types and Properties for generic details.
 
-#### O que você (provavelmente) não precisa se preocupar {#what-you-probably-do-not-need-to-worry-about}
+********
 
-OK, essa seção pode parecer um pouco estranha, mas depois de abrir o Editor de fragmento de conteúdo e começar a explorar, você verá várias opções que (provavelmente) não se aplicam à sua jornada sem cabeçalho como um Autor de conteúdo. Então isto é apenas uma breve visualização do que você deve ser capaz de ignorar no contexto sem cabeça:
+>[!NOTE]
+>
+>For more details you can read Variations - Authoring Content Fragments.
+
+#### What you (probably) don&#39;t need to worry about {#what-you-probably-do-not-need-to-worry-about}
+
+OK, this might seem a slightly strange section, but once you open the Content Fragment Editor and start exploring you&#39;ll see various options that (probably) do not apply for your headless journey as a Content Author. So this is just a quick heads-up on what you should be able ignore in the headless context:
 
 * **Modelos de fragmentos do conteúdo**
 
-   Você verá o nome do Modelo do fragmento de conteúdo na parte superior do editor - diretamente sob o nome do fragmento. Este também é um link que leva você ao editor de modelo.
-Os Modelos de fragmentos de conteúdo são essenciais para os Fragmentos de conteúdo, pois definem a estrutura usada. No entanto, criá-los e editá-los é (geralmente) responsabilidade de outra pessoa, o Arquiteto de conteúdo.
+   You will see the name of the Content Fragment Model at the top of the editor - directly under the fragment name. This is also a link that takes you to the model editor.
+Content Fragment Models are actually vital to your Content Fragments as they define the structure that you use. However, creating and editing them is (usually) the responsibility of another persona, the Content Architect.
 
    >[!NOTE]
    >
-   >Se quiser saber mais, leia a Jornada do AEM Headless Content Architect.
+   >If you want to learn more, you can read the AEM Headless Content Architect Journey.
 
 * **Conteúdo associado**
 
-   Esta é bastante óbvia, já que é uma guia no editor.
+   This one is quite obvious as it&#39;s a tab in the editor.
 
-   Fragmentos de conteúdo foram disponibilizados no AEM para várias versões. Originalmente, eles eram disponibilizados para uso &quot;tradicional&quot; durante a criação de páginas....e ainda são usados nesse contexto. Isso pode envolver a associação de ativos (por exemplo, imagens) que, embora não estejam incorporados ao fragmento, precisam estar disponíveis para o autor ao criar uma página.
+   Content Fragments have been available in AEM for quite a few versions. Originally they were made available for &quot;traditional&quot; use when authoring pages....and they are still used in this context. This can involve associating assets (for example images) that although not embedded in the fragment, needs to be available to the author when authoring a page.
 
 * **Visualizar**
 
-   Esta é outra guia no editor e fornece uma visualização técnica, destinada principalmente aos desenvolvedores.
+   This is another tab in the editor and provides a technical view, primarily intended for developers.
 
 * **Atualizar referências de página**
 
-   Esta ação está disponível no **...Lista suspensa** (elipses). Não é interessante para autores sem cabeçalho, pois se relaciona à criação de página.
+   **** It is not interesting for headless authors as it relates to page authoring.
 
 ### Publicação {#publishing}
 
 <!-- needs more details -->
 
-Após concluir o fragmento, você pode **Publicar** para que ele fique disponível para os aplicativos sem periféricos.
+****
 
-As ações de publicação estão disponíveis no editor (ou na barra de ferramentas do console **Assets**):
+****
 
-![Editor de fragmento de conteúdo - Meu fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
-## O que vem a seguir {#whats-next}
+## What&#39;s Next {#whats-next}
 
-Agora que você aprendeu as noções básicas, o próximo passo é [Saiba como sobre Referências](references.md). Isso introduzirá e discutirá as várias referências disponíveis e como criar níveis de estrutura com as Referências de fragmento - uma parte essencial da criação para o headless.
+[](references.md) This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of authoring for headless.
 
 ## Recursos adicionais {#additional-resources}
 
 * [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - esta página é baseada principalmente no console  **** Sites, mas muitos/a maioria dos recursos também são relevantes para a criação de  **Fragmentos** de conteúdo no console  **** Ativos.
+* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
 
    * [Painel Navegação  ](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 
@@ -250,23 +247,23 @@ Agora que você aprendeu as noções básicas, o próximo passo é [Saiba como s
 
    * [Gerenciamento dos fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [Aplicar a configuração à sua pasta de ativos](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Apply the Configuration to your Assets Folder](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Criação de um fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Variações - Criação de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-variations.md)
+      * [Creating a Content Fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Modelos de fragmentos do conteúdo - Tipos de dados](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modelos de fragmentos do conteúdo - Propriedades](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
 
-      * [Modelos de fragmentos do conteúdo - Permitir modelos de fragmentos do conteúdo na pasta Ativos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 
-* Guias de introdução
-   * [Criação de uma pasta de ativos sem cabeçalho Guia de início rápido](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+* Getting Started Guides
+   * [Creating an Assets Folder Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
 
-* jornada do AEM Headless Content Architect
+* AEM Headless Content Architect Journey
 
-* jornada de tradução sem cabeçalho AEM
+* AEM Headless Translation Journey

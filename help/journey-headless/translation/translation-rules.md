@@ -1,103 +1,101 @@
 ---
-title: Configurar regras de tradução
-description: Saiba como definir regras de tradução para identificar o conteúdo para tradução.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Configure Translation Rules
+description: Learn how to define translation rules to identify content for translation.
+exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
-# Configurar regras de tradução {#configure-translation-rules}
+# Configure Translation Rules {#configure-translation-rules}
 
-Saiba como definir regras de tradução para identificar o conteúdo para tradução.
+Learn how to define translation rules to identify content for translation.
 
-## A História Até Agora {#story-so-far}
+## The Story So Far {#story-so-far}
 
-No documento anterior da jornada de tradução AEM sem cabeçalho, [Configure translation connector](configure-connector.md) você aprendeu a instalar e configurar seu conector de tradução e agora deve:
+[](configure-connector.md)
 
-* Entenda os parâmetros importantes da Estrutura de integração de tradução no AEM.
-* Pode configurar sua própria conexão com o serviço de tradução.
+* Understand the important parameters of the Translation Integration Framework in AEM.
+* Be able to set up your own connection to your translation service.
 
-Agora que seu conector está configurado, este artigo o conduzirá até a próxima etapa de identificação do conteúdo que deve ser traduzido.
+Now that your connector is set up, this article takes you through the next step of identifying what content you need to translate.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como usar AEM regras de tradução para identificar o conteúdo de tradução. Após ler este documento, você deve:
+This document helps you understand how to use AEM&#39;s translation rules to identify your translation content. After reading this document you should:
 
-* Entenda o que as regras de tradução fazem.
-* Pode definir suas próprias regras de tradução.
+* Understand what the translation rules do.
+* Be able to define your own translation rules.
 
-## Regras de tradução {#translation-rules}
+## Translation Rules {#translation-rules}
 
-Fragmentos de conteúdo, que representam o conteúdo sem periféricos, podem conter muitas informações organizadas por campos estruturados. Dependendo das necessidades do seu projeto, é provável que nem todos os campos em um Fragmento de conteúdo precisem ser traduzidos.
+Content Fragments, which represent your headless content, can contain much information organized by structured fields. Depending on your project needs, it is likely that not all of the fields within a Content Fragment must to be translated.
 
-As regras de tradução identificam o conteúdo que está incluído ou excluído dos projetos de tradução. Quando o conteúdo é traduzido, AEM extrai ou obtém o conteúdo com base nessas regras. Dessa forma, somente o conteúdo que deve ser traduzido é enviado para o serviço de tradução.
+Translation rules identify the content that is included in, or excluded from, translation projects. When content is translated, AEM extracts or harvests the content based on these rules. In this way only content that must be translated is sent to the translation service.
 
-As regras de tradução incluem as seguintes informações:
+Translation rules include the following information:
 
-* O caminho do conteúdo ao qual a regra se aplica
-   * A regra também se aplica aos descendentes do conteúdo
-* Os nomes das propriedades que contêm o conteúdo a ser traduzido
-   * A propriedade pode ser específica para um tipo de recurso específico ou para todos os tipos de recurso
+* The path of the content to which the rule applies
+   * The rule also applies to the descendants of the content
+* The names of the properties that contain the content to translate
+   * The property can be specific to a specific resource type or to all resource types
 
-Como os Modelos de fragmentos de conteúdo, que definem a estrutura dos Fragmentos de conteúdo, são exclusivos de seu próprio projeto, é vital configurar regras de tradução para que o AEM saiba quais elementos dos modelos de conteúdo devem ser traduzidos.
+Because Content Fragment Models, which define the structure of your Content Fragments, are unique to your own project, it is vital to set up translation rules so AEM knows what elements of your content models to translate.
 
 >[!TIP]
 >
->Geralmente, o arquiteto de conteúdo fornece ao especialista de tradução o **Nome da propriedade** s de todos os campos necessários para a tradução. Esses nomes são necessários para configurar as regras de tradução. Como especialista em tradução, você [pode encontrar esses **Nome da propriedade** como ](getting-started.md#content-modlels) conforme descrito anteriormente nesta jornada.
+>**** These names are needed to configure translation rules. [****](getting-started.md#content-modlels)
 
-## Criação de regras de tradução {#creating-rules}
+## Creating Translation Rules {#creating-rules}
 
-Várias regras podem ser criadas para suportar requisitos complexos de tradução. Por exemplo, um projeto no qual você pode estar trabalhando requer que todos os campos do modelo sejam traduzidos, mas em outro apenas os campos de descrição devem ser traduzidos enquanto os títulos ficam não traduzidos.
+Multiple rules can be created to support complex translation requirements. For example, one project you may be working on requires all fields of the model to be translated, but on another only description fields must be translated while titles are left untranslated.
 
-As regras de tradução são projetadas para lidar com tais cenários. No entanto, neste exemplo, ilustramos como criar regras com foco em uma configuração simples e única.
+Translation rules are designed to handle such scenarios. However in this example we illustrate how to create rules by focusing on a simple, single configuration.
 
-Há um console **Configuração de tradução** disponível para configurar regras de tradução. Para acessá-lo:
+**** To access it:
 
-1. Navegue até **Ferramentas** -> **Geral**.
-1. Toque ou clique em **Configuração de Tradução**.
+1. ********
+1. ****
 
-Na interface **Configuração de tradução**, há várias opções disponíveis para suas regras de tradução. Aqui destacamos as etapas mais necessárias e típicas necessárias para uma configuração básica de localização sem cabeçalho.
+**** Here we highlight the most necessary and typical steps required for a basic headless localization configuration.
 
-1. Toque ou clique em **Adicionar contexto**, o que permite adicionar um caminho. Esse é o caminho do conteúdo que deve ser afetado pela regra.
-   ![Adicionar contexto](assets/add-translation-context.png)
-1. Use o navegador de caminho para selecionar o caminho necessário e toque ou clique no botão **Confirm** para salvar. Lembre-se, os Fragmentos de conteúdo, que contêm conteúdo sem cabeçalho, geralmente estão localizados em `/content/dam/<your-project>`.
-   ![Selecione o caminho](assets/select-context.png)
-1. AEM salva a configuração.
-1. Você deve selecionar o contexto que acabou de criar e tocar ou clicar em **Editar**. Isso abre o **Editor de regras de tradução** para configurar as propriedades.
-   ![Editor de regras de tradução](assets/translation-rules-editor.png)
-1. Por padrão, todas as configurações são herdadas do caminho pai, neste caso `/content/dam`. Desmarque a opção **Herdar de`/content/dam`** para adicionar campos adicionais à configuração.
-1. Depois de desmarcado, na seção **Geral** da lista, adicione os nomes de propriedade dos Modelos de Fragmento de Conteúdo que você [anteriormente identificado como campos para tradução.](getting-started.md#content-models)
-   1. Insira o nome da propriedade no campo **New Property**.
-   1. As opções **Translate** e **Inherit** são marcadas automaticamente.
-   1. Toque ou clique em **Adicionar**.
-   1. Repita essas etapas para todos os campos que devem ser traduzidos.
-   1. Toque ou clique em **Salvar**.
-      ![Adicionar propriedade](assets/add-property.png)
+1. **** This is the path of the content that is be affected by the rule.
+   ![](assets/add-translation-context.png)
+1. **** `/content/dam/<your-project>`
+   ![](assets/select-context.png)
+1. AEM saves the configuration.
+1. **** ****
+   ![](assets/translation-rules-editor.png)
+1. `/content/dam` **`/content/dam`**
+1. ****[](getting-started.md#content-models)
+   1. ****
+   1. ********
+   1. ****
+   1. Repeat these steps for all of the fields that you must translate.
+   1. ****
+      ![](assets/add-property.png)
 
-Agora você configurou suas regras de tradução.
+You have now configured your translation rules.
 
-## Uso avançado {#advanced-usage}
+## Advanced Usage {#advanced-usage}
 
-Há várias propriedades adicionais que podem ser configuradas como parte das regras de tradução. Além disso, você pode especificar suas regras manualmente como XML, o que permite maior especificidade e flexibilidade.
+There are a number of additional properties that can be configured as part of your translation rules. In addition, you can specify your rules by hand as XML, which allows for more specificity and flexibility.
 
-Esses recursos geralmente não são necessários para começar a localizar seu conteúdo sem periféricos, mas você pode ler mais sobre eles na seção [Additional Resources](#additional-resources) se estiver interessado.
+[](#additional-resources)
 
-## O que vem a seguir {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-Agora que você concluiu esta parte da jornada de tradução sem cabeçalho, é necessário:
+Now that you have completed this part of the headless translation journey you should:
 
-* Entenda o que as regras de tradução fazem.
-* Pode definir suas próprias regras de tradução.
+* Understand what the translation rules do.
+* Be able to define your own translation rules.
 
-Aproveite esse conhecimento e prossiga com sua jornada de tradução sem periféricos AEM revisando o documento [Traduzir conteúdo](translate-content.md), onde você aprenderá como seu conector e as regras trabalham juntos para traduzir conteúdo sem periféricos.
+[](translate-content.md)
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de tradução sem periféricos revisando o documento [Traduzir conteúdo,](translate-content.md) a seguir estão alguns recursos adicionais opcionais que fazem um mergulho mais profundo em alguns conceitos mencionados neste documento, mas eles não são solicitados a continuar com a jornada sem periféricos.
+[](translate-content.md)
 
-* [Identificação de conteúdo para traduzir](/help/sites-cloud/administering/translation/rules.md)  - saiba como as regras de tradução identificam o conteúdo que precisa ser traduzido.
+* [](/help/sites-cloud/administering/translation/rules.md)

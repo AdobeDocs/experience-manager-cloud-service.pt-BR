@@ -1,84 +1,81 @@
 ---
-title: Conheça as noções básicas da modelagem de conteúdo
-description: Saiba mais sobre a base de modelagem de conteúdo para seu CMS sem cabeçalho usando Fragmentos de conteúdo.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn Content Modeling Basics
+description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
+exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 4%
 
 ---
 
+# Learn the Content Modeling Basics for Headless with AEM {#content-modeling-headless-basics}
 
-# Saiba mais sobre a modelagem de conteúdo para headless com AEM {#content-modeling-headless-basics}
+## The Story so Far {#story-so-far}
 
-## A história até agora {#story-so-far}
+[](overview.md)[](introduction.md)
 
-No início da [AEM Jornada do arquiteto de conteúdo headless](overview.md) a [Introdução](introduction.md) cobria os conceitos básicos e a terminologia relevantes para a modelagem de conteúdo sem periféricos.
-
-Este artigo se baseia neles para que você entenda como modelar o conteúdo para o seu projeto sem periféricos de AEM.
+This article builds on these so you understand how to model your content for your AEM headless project.
 
 ## Objetivo {#objective}
 
-* **Público-alvo**: Iniciante
-* **Objetivo**: Apresente os conceitos de modelagem de conteúdo para CMS sem interface.
+* ****
+* ****
 
-## Modelagem de conteúdo com modelos de fragmento de conteúdo {#architect-content-fragment-models}
+## Content Modeling with Content Fragment Models {#architect-content-fragment-models}
 
-A modelagem de conteúdo (dados) é um conjunto de técnicas estabelecidas, geralmente usadas quando bancos de dados de relacionamento desenvolvidos, portanto, o que a modelagem de conteúdo significa para AEM headless?
+Content (Data) Modeling is a set of established techniques, often used when developed relationship databases, so what does Content Modeling mean for AEM Headless?
 
-### Por quê? {#why}
+### Why? {#why}
 
-Para garantir que seu aplicativo possa solicitar e receber o conteúdo necessário de AEM de forma consistente e eficiente, esse conteúdo deve ser estruturado.
+To ensure that your application can consistently and efficiently request and receive the required content from AEM, this content must be structured.
 
-Isso significa que o aplicativo sabe antecipadamente a forma de resposta e, portanto, como processá-la. Isso é muito mais fácil do que receber conteúdo de forma livre, que deve ser analisado para determinar o que contém e, portanto, como ele pode ser usado.
+This means that your application knows in advance the form of response and therefore, how to process it. This is much easier than receiving free-form content, which has to be parsed to determine what it contains and therefore, how it can be used.
 
-### Introdução a Como? {#how}
+### Introduction to How? {#how}
 
-O AEM usa Fragmentos de conteúdo para fornecer as estruturas necessárias para a entrega sem cabeçalho do conteúdo aos seus aplicativos.
+AEM uses Content Fragments to provide the structures needed for Headless delivery of your content to your applications.
 
-A estrutura do modelo de conteúdo é:
+The structure of your content model is:
 
-* realizado pela definição do modelo de fragmento de conteúdo,
-* usado como base dos Fragmentos de conteúdo usados para a geração de conteúdo.
+* realized by the definition of your Content Fragment Model,
+* used as a basis of the Content Fragments used for your content generation.
 
 >[!NOTE]
 >
->Os Modelos do Fragmento de conteúdo também são usados como a base dos Esquemas GraphQL de AEM, usados para recuperar o conteúdo - mais sobre isso na Jornada do desenvolvedor.
+>The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in the Developer Journey.
 
-As solicitações de conteúdo são feitas usando a API GraphQL AEM, uma implementação personalizada da API GraphQL padrão. A API GraphQL AEM permite que os aplicativos executem consultas (complexas) nos Fragmentos de conteúdo, sendo que cada consulta é feita de acordo com um tipo de modelo específico.
+Requests for your content are made using the AEM GraphQL API, a customized implementation of the standard GraphQL API. The AEM GraphQL API allows applications to perform (complex) queries on your Content Fragments, with each query being according to a specific model type.
 
-O conteúdo retornado pode ser usado pelos seus aplicativos.
+The content returned can then be used by your applications.
 
-## Criar a estrutura com modelos de fragmento de conteúdo {#create-structure-content-fragment-models}
+## Creating the Structure with Content Fragment Models {#create-structure-content-fragment-models}
 
-Os Modelos de fragmentos do conteúdo fornecem vários mecanismos que permitem definir a estrutura do conteúdo.
+Content Fragment Models provide various mechanisms that allow you to define the structure of your content.
 
-Um Modelo de fragmento de conteúdo descreve uma entidade.
+A Content Fragment Model describes an entity.
 
 >[!NOTE]
->A funcionalidade Fragmento de conteúdo deve estar ativada no Navegador de configuração para que você possa criar novos modelos.
+>Content Fragment functionality must be enabled in the Configuration Browser so that you can create new models.
 
 >[!TIP]
 >
->O modelo deve ser nomeado para que o autor de conteúdo saiba qual modelo selecionar ao criar um Fragmento de conteúdo.
+>The model should be named so that the content author knows which model to select when creating a Content Fragment.
 
-Dentro de um modelo:
+Within a model:
 
-1. **Os** Tipos de dados permitem definir os atributos individuais.
-Por exemplo, defina o campo com o nome de um professor como **Text** e seus anos de serviço como **Number**.
-1. Os tipos de dados **Referência de conteúdo** e **Referência de fragmento** permitem criar relacionamentos com outro conteúdo no AEM.
-1. O tipo de dados **Referência do fragmento** permite que você atinja vários níveis de estrutura aninhando seus Fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de conteúdo.
+1. ****
+********
+1. ********
+1. **** This is vital for your content modeling.
 
 Por exemplo:
 
-![Modelagem de conteúdo com ](assets/headless-modeling-01.png "fragmentos de conteúdoModelagem de conteúdo com fragmentos de conteúdo")
+![](assets/headless-modeling-01.png "")
 
 ## Tipos de dados {#data-types}
 
-AEM fornece os seguintes tipos de dados para você modelar o conteúdo:
+AEM provides the following data types for you to model your content:
 
 * Texto em linha única
 * Texto multilinha
@@ -93,71 +90,69 @@ AEM fornece os seguintes tipos de dados para você modelar o conteúdo:
 
 >[!NOTE]
 >
->Mais detalhes estão disponíveis em Modelos de fragmento de conteúdo - Tipos de dados.
+>Further details are available under Content Fragment Models - Data Types.
 
-## Referências e conteúdo aninhado {#references-nested-content}
+## References and Nested Content {#references-nested-content}
 
-Dois tipos de dados fornecem referências ao conteúdo fora de um fragmento específico:
+Two data types provide references to content outside a specific fragment:
 
 * ****
-Referência de conteúdoFornece uma referência simples a outro conteúdo de qualquer tipo.
-Por exemplo, você pode fazer referência a uma imagem em um local especificado.
+For example, you can reference an image at a specified location.
 
-* **Referência**
-de fragmentoFornece referências a outros Fragmentos de conteúdo.
-Esse tipo de referência é usado para criar conteúdo aninhado, introduzindo as relações necessárias para modelar seu conteúdo.
-O tipo de dados pode ser configurado para permitir que os autores de fragmento:
-   * Edite o fragmento referenciado diretamente.
-   * Crie um novo fragmento de conteúdo, com base no modelo apropriado
+* ****
+This type of reference is used to create nested content, introducing the relationships needed to model your content.
+The data type can be configured to allow fragment authors to:
+   * Edit the referenced fragment directly.
+   * Create a new content fragment, based on the appropriate model
 
 >[!NOTE]
 >
->Você também pode criar referências ad hoc usando links dentro de blocos de texto.
+>You can also create ad hoc references by using links within Text blocks.
 
-## Níveis de estrutura (Fragmentos aninhados) {#levels-of-structure-nested-fragments}
+## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
 
-Para modelagem de conteúdo, o tipo de dados **Referência de fragmento** permite criar vários níveis de estrutura e relacionamentos.
+****
 
-Com essa referência, você pode *conectar* vários Modelos de Fragmento de Conteúdo para representar as interrelações. Isso permite que o aplicativo sem periféricos siga as conexões e acesse o conteúdo conforme necessário.
+** This allows the headless application to follow the connections and access the content as necessary.
 
 >[!NOTE]
 >
->Isso deve ser usado com cautela e a prática recomendada pode ser definida como *aninhar o mais necessário, mas o menos possível*.
+>**
 
-As Referências de fragmento fazem exatamente isso - permitem que você faça referência a outro fragmento.
+Fragment References do just that - they allow you to reference another fragment.
 
-Por exemplo, você pode ter os seguintes Modelos de fragmento de conteúdo definidos:
+For example, you might have the following Content Fragment Models defined:
 
 * Cidade
 * Empresa
 * Person
-* Prêmios
+* Awards
 
-Parece muito simples, mas é claro que uma empresa tem um CEO e funcionários....E estas são todas pessoas, cada uma definida como uma Pessoa.
+Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
-E uma Pessoa pode ter um Prêmio (ou talvez dois).
+And a Person can have an Award (or maybe two).
 
-* Minha empresa - Empresa
-   * CEO - Pessoa
-   * Empregado(s) - Pessoa
-      * Prêmio(s) Pessoal - Prêmio
+* My Company - Company
+   * CEO - Person
+   * Employee(s) - Person
+      * Personal Award(s) - Award
 
-E isso é só para começar. Dependendo da complexidade, um prêmio pode ser específico da empresa ou uma empresa pode ter seu escritório principal em uma cidade específica.
+And that&#39;s just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
 
-A representação dessas interrelações pode ser alcançada com as Referências de fragmento, já que elas são entendidas por você (o arquiteto), pelo autor de conteúdo e pelos aplicativos sem periféricos.
+Representing these interrelationships can be achieved with Fragment References, as they are understood by you (the architect), your content author and the headless applications.
 
-## O que vem a seguir {#whats-next}
+## What&#39;s Next {#whats-next}
 
-Agora que você aprendeu as noções básicas, a próxima etapa é [Saiba mais sobre como Criar modelos de fragmentos de conteúdo em AEM](model-structure.md). Isso introduzirá e discutirá as várias referências disponíveis e como criar níveis de estrutura com as Referências de fragmento - uma parte chave da modelagem para sem periféricos.
+[](model-structure.md) This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of modeling for headless.
 
 ## Recursos adicionais {#additional-resources}
 
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [Modelos de fragmentos do conteúdo - Tipos de dados](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Manuseio básico](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - esta página é baseada principalmente no console  **** Sites, mas muitos/a maioria dos recursos também são relevantes para a criação de  **Fragmentos** de conteúdo no console  **** Ativos.
+* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
 
 * [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
