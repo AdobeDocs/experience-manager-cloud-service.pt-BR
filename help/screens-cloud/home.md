@@ -3,10 +3,10 @@ title: AEM Screens as a Cloud Service
 description: Recursos de autoajuda as a Cloud Service da Adobe Experience Manager Screens e links de documentação
 landing-page-description: Entenda o AEM Screens as a Cloud Service.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 51%
+source-wordcount: '408'
+ht-degree: 52%
 
 ---
 
@@ -46,7 +46,7 @@ Esta página lista os recursos de autoajuda relacionados ao AEM Screens as a Clo
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
 * [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

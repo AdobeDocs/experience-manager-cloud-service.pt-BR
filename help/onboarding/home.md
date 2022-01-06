@@ -3,9 +3,9 @@ title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
 landing-page-description: Este guia fornece um resumo de como começar a usar AEM as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '518'
 ht-degree: 24%
 
 ---
@@ -53,7 +53,7 @@ A jornada de integração ilustrada abaixo foi projetada para uma persona de Adm
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
 * [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

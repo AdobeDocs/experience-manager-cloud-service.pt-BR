@@ -2,10 +2,10 @@
 title: Visão geral do Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 85%
+source-wordcount: '354'
+ht-degree: 87%
 
 ---
 
@@ -42,7 +42,7 @@ Esta página lista os recursos de autoajuda que apresentam uma introdução e a 
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
 * [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

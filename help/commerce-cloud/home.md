@@ -3,10 +3,10 @@ title: AEM Content and Commerce
 description: Recursos de autoajuda e links de documentação do AEM Content and Commerce
 landing-page-description: Entenda como usar e administrar o Experience Manager Content and Commerce as a Cloud Service.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 64%
+source-wordcount: '357'
+ht-degree: 65%
 
 ---
 
@@ -44,7 +44,7 @@ Esta página lista os recursos de autoajuda sobre Conteúdo e Comércio AEM.
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
 * [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentação do Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
