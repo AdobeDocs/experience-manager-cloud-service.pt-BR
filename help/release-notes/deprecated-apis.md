@@ -2,16 +2,16 @@
 title: APIs obsoletas
 description: Notas de versão específicas para APIs obsoletas e removidas em [!DNL Adobe Experience Manager] como [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
+source-git-commit: d7fc88481ab0d85f62ad0b9891c286cee92edfae
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '855'
 ht-degree: 5%
 
 ---
 
 # APIs obsoletas {#deprecated-apis}
 
-Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção esperada. Espera-se que os clientes removam as APIs pela data de remoção do target de seus códigos. Qualquer uso da API após a data de remoção gerará erros no Ambiente de desenvolvimento/SDK local e no processo de build do Cloud Manager.
+Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção esperada. Espera-se que os clientes removam as APIs pela data de remoção do target de seus códigos. Any usage of the API past the removal date will generate errors in the local SDK/Development Environment and the Cloud Manager build process.
 
 
 <table>
@@ -38,7 +38,7 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
   </tr>
   <tr>
     <td>com.day.cq.jcrclustersupport</td>
-    <td>Usar a API de Descoberta do Sling como alternativa</td>
+    <td>Use Sling's Discovery API as an alternative</td>
     <td>2015</td>
     <td>removida</td>
   </tr>
@@ -51,8 +51,8 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
   <tr>
     <td>org.apache.fop.apps</td>
     <td></td>
-    <td>1°/3/21</td>
-    <td>1°/6/21</td>
+    <td>3/1/21</td>
+    <td>6/1/21</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
@@ -74,15 +74,15 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>O Commons Lang 2 está em modo de manutenção. Em vez disso, use Commons Lang 3.</td>
-    <td>30/4/21</td>
-    <td>31/12/21</td>
+    <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead.</td>
+    <td>4/30/21</td>
+    <td>12/31/21</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 está em modo de manutenção. Em vez disso, as Coleções Comuns 4 devem ser usadas.</td>
-    <td>30/4/21</td>
-    <td>31/12/21</td>
+    <td>Commons Collections 3 is in maintenance mode. Commons Collections 4 should be used instead.</td>
+    <td>4/30/21</td>
+    <td>12/31/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.systemready</td>
@@ -93,14 +93,14 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
   <tr>
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n</td>
     <td>The Felix web console is not supported in Cloud environments</td>
-    <td>30/4/21</td>
-    <td>30/7/21</td>
+    <td>4/30/21</td>
+    <td>7/30/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml<br>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.client.util</td>
-    <td>Os pacotes Eclipse Jetty e Felix Http Jetty não são mais compatíveis.</td>
-    <td>27/5/21</td>
-    <td>26/8/21</td>
+    <td>The Eclipse Jetty and Felix Http Jetty packages are no longer supported.</td>
+    <td>5/27/21</td>
+    <td>8/26/21</td>
   </tr>
   <tr>
     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
@@ -109,16 +109,16 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
     <td>30/7/21</td>
   </tr>
   <tr>
-    <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info</td>
+    <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
     <td>A metatótipo do Apache Felix e as APIs SCR foram substituídas.  Em vez disso, use o metattipo OSGi e as APIs do Serviço Declarativo.</td>
     <td>27/5/21</td>
-    <td>26/8/21</td>
+    <td>removida</td>
   </tr>
   <tr>
-    <td>oorg.slf4j.impl</td>
+    <td>org.slf4j.impl</td>
     <td>As classes de implementação de log não são compatíveis com AEM as a Cloud Service.</td>
     <td>7/4/21</td>
-    <td>8/26/21</td>
+    <td>removida</td>
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
@@ -128,27 +128,27 @@ Abaixo está uma extensa lista de APIs de AEM obsoletas e sua data de remoção 
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
-    <td>Essa API está obsoleta, pois o Apache Abdera é um projeto aposentado desde 2017.</td>
-    <td>8/4/19</td>
-    <td>29/09/21</td>
+    <td>This API is deprecated as Apache Abdera is a retired project since 2017.</td>
+    <td>4/8/19</td>
+    <td>09/29/21</td>
   </tr>
   <tr>
     <td>org.apache.sling.startupfilter<br>com.adobe.granite.crypto.spi<br>com.adobe.granite.crpyto.spi.base<br>com.adobe.agl.impl.data.icudt40b<br>com.adobe.agl.impl.data.icudt40b.brkitr<br>com.adobe.agl.impl.data.icudt40b.coll<br>com.adobe.agl.impl.data.icudt40b.rbnf<br>com.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></td>
     <td>API herdada AEM 6.x.</td>
     <td>8/4/19</td>
-    <td>29/09/21</td>
+    <td>removida</td>
   </tr>
   <tr>
     <td>org.apache.sling.discovery.commons<br>org.apache.sling.discovery.commons.providers<br>org.apache.sling.discovery.commons.providers.base<br>org.apache.sling.discovery.commons.providers.spi<br>org.apache.sling.discovery.commons.providers.spi.base<br>org.apache.sling.discovery.commons.providers.util</td>
-    <td>Essa API não é compatível com o Cloud Service.</td>
+    <td>This API is not supported in Cloud Service.</td>
     <td>30/9/21</td>
-    <td>30/10/21</td>
+    <td>removida</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml<br>org.apache.jackrabbit.vault.util.xml.serialize</td>
     <td>As classes de até mesmo relacionadas ao Apache Xerces são removidas em versões subsequentes que causam uma alteração de versão principal. Como esses utils são para uso interno no Filevault, a API está sendo descontinuada da superfície da API pública.</td>
     <td>1°/9/21</td>
-    <td>10/30/21</td>
+    <td>removida</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
     <td>Legacy AEM 6.x API.</td>
