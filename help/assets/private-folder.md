@@ -4,9 +4,9 @@ description: Saiba como criar uma pasta privada no [!DNL Adobe Experience Manage
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
-source-git-commit: ac8dc2a765aba5be45017cf4adbc8f64b20ff7f3
+source-git-commit: 103bf8a477fb851e093bfde8e2c0535f49a01566
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Você pode criar uma pasta privada no [!DNL Adobe Experience Manager Assets] int
 >
 >A pasta privada tem pelo menos um membro com a função Proprietário.
 >
->Para criar uma pasta privada, é necessário `Read` e `Modify` permissões na pasta pai na qual deseja criar uma pasta privada. Se você não for um administrador, essas permissões não serão ativadas para você por padrão em `/content/dam`. Nesse caso, primeiro obtenha essas permissões para sua ID/grupo de usuários antes de tentar criar pastas privadas.
+>Para criar uma pasta privada, é necessário `Read` e `Modify` permissões na pasta pai na qual você cria uma pasta privada. Se você não for um administrador, essas permissões não serão ativadas por padrão em `/content/dam`. Nesse caso, primeiro obtenha essas permissões para sua ID/grupo de usuários antes de tentar criar pastas privadas.
 
 ## Criar e compartilhar pasta privada  {#create-share-private-folder}
 
