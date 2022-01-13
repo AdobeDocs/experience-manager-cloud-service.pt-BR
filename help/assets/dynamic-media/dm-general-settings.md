@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: cca950b0a4eed60f82d65779766405ed216111e3
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2492'
 ht-degree: 4%
 
 ---
@@ -72,9 +72,13 @@ Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidor
 
    O Adobe Dynamic Media não permite que dois arquivos tenham o mesmo nome. A Adobe Dynamic Media ID de cada item (o nome da imagem menos a extensão do nome do arquivo) deve ser exclusiva. Por causa dessa regra, **[!UICONTROL Fazer upload para o aplicativo]** tem uma substituição. O efeito exato dessa opção depende da opção de Substituição de imagens especificada que você escolheu. Essas opções especificam como as imagens de substituição são carregadas: se eles substituem as imagens originais ou se tornam imagens duplicadas. Imagens duplicadas são renomeadas com um `-1`. Por exemplo, `chair.tif` é renomeado `chair-1.tif`. Essas opções afetam as imagens carregadas em uma pasta diferente da original ou as imagens com uma extensão de nome de arquivo diferente da original, como JPG, TIF ou PNG.
 
+   >[!NOTE]
+   >
+   >Para manter a consistência com o Experience Manager, selecione a opção Substituir imagens **[!UICONTROL Substituir na pasta atual, mesmo nome/extensão base]**.
+
    | Opção Substituir imagens | Descrição |
    | --- | --- |
-   | **[!UICONTROL Substituir na pasta atual, mesmo nome base/extensão]** | Padrão somente para novas contas do Dynamic Media.<br>Essa opção é a regra mais rígida para substituição. Ela requer que você carregue a imagem de substituição na mesma pasta do original e que a imagem de substituição tenha a mesma extensão de nome de arquivo do original. Se esses requisitos não forem atendidos, uma duplicata será criada. |
+   | **[!UICONTROL Substituir na pasta atual, mesmo nome base/extensão]** | *Padrão* somente para novas contas do Dynamic Media.<br>Essa opção é a regra mais rígida para substituição. Ela requer que você carregue a imagem de substituição na mesma pasta do original e que a imagem de substituição tenha a mesma extensão de nome de arquivo do original. Se esses requisitos não forem atendidos, uma duplicata será criada.<br>*Para manter a consistência com o Experience Manager, selecione essa opção*. |
    | **[!UICONTROL Substituir na pasta atual, mesmo nome base independentemente da extensão]** | Requer que você carregue a imagem de substituição na mesma pasta do original, no entanto, a extensão do nome do arquivo pode ser diferente do original. Por exemplo, chair.tif substitui chair.jpg. |
    | **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão do ativo base]** | Requer que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, chair.jpg deve substituir chair.jpg, não chair.tif). No entanto, é possível fazer upload da imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original. |
    | **[!UICONTROL Substituir em qualquer pasta, mesmo nome de ativo base independentemente da extensão]** | Essa é a regra de substituição mais inclusiva. Você pode fazer upload de uma imagem de substituição para uma pasta diferente do original, fazer upload de um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição residirá na nova pasta para a qual foi carregada. |
