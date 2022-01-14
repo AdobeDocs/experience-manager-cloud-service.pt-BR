@@ -4,9 +4,9 @@ description: Saiba como trabalhar com vídeo no Dynamic Media, como práticas re
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9842ee9117c33155ce206452d34d10123da9366e
+source-git-commit: d5ac82da6c46a020fc1ff9323a127b05551a3f88
 workflow-type: tm+mt
-source-wordcount: '9458'
+source-wordcount: '9476'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
       * Saiba mais sobre [Organizar ativos digitais](/help/assets/organize-assets.md).
    * Faça upload dos vídeos de origem primária para as pastas. Ao adicionar vídeos à pasta, eles são codificados de acordo com o perfil de processamento de vídeo atribuído à pasta.
 
-      * O Dynamic Media oferece suporte principalmente a vídeos de forma curta com uma duração máxima de 30 minutos.
+      * O Dynamic Media oferece suporte principalmente a vídeos de forma curta, com duração máxima de 30 minutos e resolução mínima superior a 50 x 50.
       * Você pode fazer upload de arquivos de vídeo com até 15 GB cada.
       * [Fazer upload de seus vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Saiba mais sobre [Formatos de arquivo de entrada suportados](/help/assets/file-format-support.md).
@@ -273,7 +273,7 @@ A seguir estão dicas de práticas recomendadas para a codificação de arquivos
 
 Ao codificar um arquivo de vídeo, use um arquivo de vídeo de origem com a maior qualidade possível. Evite usar arquivos de vídeo previamente codificados, pois esses arquivos já estão compactados, e uma codificação adicional criará um vídeo de qualidade inferior.
 
-* O Dynamic Media oferece suporte principalmente a vídeos de forma curta com uma duração máxima de 30 minutos.
+* O Dynamic Media oferece suporte principalmente a vídeos de forma curta, com duração máxima de 30 minutos e resolução mínima superior a 50 x 50.
 * Você pode fazer upload de arquivos de vídeo de origem primária com até 15 GB cada.
 
 A tabela a seguir descreve o tamanho recomendado, a proporção e a taxa mínima de bits que seus arquivos de vídeo de origem devem ter antes de codificá-los:
