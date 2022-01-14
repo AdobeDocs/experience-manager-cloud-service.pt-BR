@@ -1,12 +1,12 @@
 ---
-title: Integração ao Adobe Analytics
-description: 'Integração ao Adobe Analytics '
+title: Integrar o Adobe Analytics com a automação de configuração do Experience Cloud
+description: A Automação de configuração do Experience Cloud oferece uma maneira simples e automatizada de integrar e instrumentar o Experience Manager Sites com o Experience Platform Launch e o Adobe Analytics com uma interface simples de assistente de interface do usuário. Saiba como usar a configuração automatizada com seu próprio site.
 feature: Administering
 role: Admin
-source-git-commit: 4bf5ee1218f775efdc7829b790360033ad756c9a
+source-git-commit: 75d8f2a14ea97216c48c3bf242aa6186d97d4490
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 2%
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
