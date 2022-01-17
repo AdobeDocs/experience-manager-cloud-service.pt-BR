@@ -2,9 +2,9 @@
 title: Backup e restauração em AEM as a Cloud Service
 description: Backup e restauração em AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
+source-git-commit: 7778430b409bdd6f30530d34f2e8cd10d63df153
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Os clientes devem registrar um tíquete de suporte, descrevendo o problema que e
 
 AEM suporte as a Cloud Service:
 
+* Backup e restauração para ambientes de estágio, produção e desenvolvimento.
 * Recuperação de 24 horas, o que significa que o sistema pode ser restaurado para qualquer ponto nas últimas 24 horas.
 * Restaure a partir de um carimbo de data e hora específico e definido por Adobe, coletado duas vezes por dia nos últimos 7 dias.  Todas as mensagens de replicação (excluir, atualizar, criar) serão preservadas.
 
