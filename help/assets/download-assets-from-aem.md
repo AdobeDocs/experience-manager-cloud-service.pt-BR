@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1194'
 ht-degree: 3%
 
 ---
@@ -33,16 +33,45 @@ Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
 ## Baixar ativos usando [!DNL Experience Manager] interface {#download-assets}
 
-O serviço de download assíncrono fornece uma estrutura para o download perfeito de ativos de grande porte. Arquivos menores são baixados da interface do usuário em tempo real. [!DNL Experience Manager] não arquiva downloads de ativos únicos onde o arquivo original é baixado. Essa funcionalidade permite downloads mais rápidos. Os arquivos grandes são baixados de forma assíncrona e [!DNL Experience Manager] notifica a conclusão através de notificações na Caixa de entrada. Consulte [compreender [!DNL Experience Manager] Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
+O serviço de download assíncrono fornece uma estrutura para o download perfeito de ativos de grande porte. Arquivos menores são baixados da interface do usuário em tempo real. [!DNL Experience Manager] não arquiva downloads de ativos únicos onde o arquivo original é baixado. Essa funcionalidade permite downloads mais rápidos.
 
-![Baixar notificação](assets/download-notification.png)
+Por padrão, o Experience Manager aciona uma notificação após a conclusão do workflow de download. A notificação de download é exibida no  [[!DNL Experience Manager] Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-*Figura: Baixar notificação via [!DNL Experience Manager] Caixa de entrada.*
+![Notificação da caixa de entrada](assets/inbox-notification-for-large-downloads.png)
 
-Os downloads assíncronos são acionados em um dos seguintes casos:
+<!--
+The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-* Se houver mais de 10 ativos ou mais de 100 MB para download.
-* Se o download demorar mais de 30 segundos para se preparar.
+![Download notification](assets/download-notification.png)
+
+*Figure: Download notification via [!DNL Experience Manager] Inbox.*
+
+Asynchronous downloads are triggered in either of the following case:
+
+* If there are more than 10 assets or more than 100 MB to be downloaded.
+* If the download takes more than 30 seconds to prepare.
+-->
+
+### Habilitar notificação por email para downloads grandes {#enable-emails-for-large-downloads}
+
+Os downloads assíncronos são acionados em qualquer um dos seguintes casos:
+
+* Se houver mais de 10 ativos
+* Se o tamanho de download for superior a 100 MB
+* Se o download demorar mais de 30 segundos para se preparar
+
+Embora o download assíncrono seja executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. É necessário um mecanismo pronto para uso para notificar o usuário após a conclusão do processo de download. Para atingir esse objetivo, os administradores podem configurar o serviço de email configurando um servidor SMTP. Consulte [configurar Serviço de Correio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+
+Após configurar o serviço de email, os administradores e usuários poderão ativar notificações por email na interface do Experience Manager.
+
+Para ativar notificações por email:
+
+1. Faça logon em [!DNL Experience Manager Assets].
+1. Clique no ícone do usuário no canto superior direito e clique em **[!UICONTROL Minhas preferências]**. A janela Preferências de usuário é aberta.
+1. Selecione o **[!UICONTROL Notificações por email de download de ativos]** e clique em **[!UICONTROL Aceitar]**.
+
+   ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+
 
 Para baixar ativos, siga estas etapas:
 
@@ -50,8 +79,6 @@ Para baixar ativos, siga estas etapas:
 1. Navegue até os ativos que deseja baixar. Selecione a pasta ou selecione um ou mais ativos na pasta. Na barra de ferramentas, clique em **[!UICONTROL Baixar]**.
 
    ![Opções disponíveis ao baixar ativos do [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
-
-   *Figura: Opções da caixa de diálogo Download.*
 
 1. Na caixa de diálogo Download, selecione as opções de download desejadas.
 
@@ -66,13 +93,23 @@ Para baixar ativos, siga estas etapas:
 
 1. Na caixa de diálogo, clique em **[!UICONTROL Baixar]**.
 
+   Se a notificação por email estiver ativada para downloads grandes, um email contendo um URL de download da pasta zip arquivada aparecerá em sua caixa de entrada. Clique no link de download do email para baixar a pasta zip.
+
+   ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
+
+   Você também pode exibir a notificação em [!DNL Experience Manager] Caixa de entrada.
+
+   ![notificações da caixa de entrada para downloads grandes](/help/assets/assets/inbox-notification-for-large-downloads.png)
+
 ## Baixar ativos compartilhados usando o compartilhamento de link {#link-share-download}
 
+<!--
 >[!NOTE]
 >
->Essa funcionalidade está disponível no canal de pré-lançamento do Experience Manager.
+>This functionality is available in the Experience Manager prerelease channel.
+-->
 
-O compartilhamento de ativos usando um link é uma maneira conveniente de torná-lo disponível para as pessoas interessadas, sem que elas precisem primeiro fazer logon no [!DNL Assets]. Para gerar um URL para compartilhar ativos, use a variável [Funcionalidade de compartilhamento de links](/help/assets/share-assets.md#sharelink).
+O compartilhamento de ativos usando um link é uma maneira conveniente de torná-lo disponível para as pessoas interessadas, sem que elas precisem primeiro fazer logon no [!DNL Assets]. Consulte [Funcionalidade de compartilhamento de links](/help/assets/share-assets.md#sharelink).
 
 Quando usuários baixam ativos de links compartilhados, [!DNL Assets] O usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos. Os ativos a serem baixados são enfileirados em segundo plano em uma caixa de entrada em arquivos ZIP com tamanho de arquivo gerenciável. Para downloads muito grandes, o download é fragmentado em arquivos de 100 GB de tamanho.
 
