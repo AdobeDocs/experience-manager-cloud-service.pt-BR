@@ -1,9 +1,9 @@
 ---
 title: 'Usar fontes personalizadas '
 description: 'Usar fontes personalizadas '
-source-git-commit: 7dd3785206b6d79caa500a155d3a6f3597303e65
+source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 0%
 
 **A documentação de Comunicações do Cloud Service está em beta**
 
-Você pode usar as Comunicações as a Cloud Service do Forms para combinar modelos XDP, documentos PDF baseados em XDP ou Acrobat Forms (AcroForm) com dados XML para gerar documentos PDF. Você pode usar fontes do sistema (fontes incluídas no Cloud Service) ou fontes personalizadas (fontes aprovadas pela organização) para renderizar os documentos PDF gerados.
-
-As fontes do sistema já estão disponíveis no Cloud Service. Você pode usar o projeto de desenvolvimento do Cloud Service para adicionar fontes personalizadas ao seu ambiente Cloud Service.
+Você pode usar as Comunicações as a Cloud Service do Forms para combinar um modelo XDP, um documento PDF baseado em XDP ou um Formulário Acrobat (AcroForm) com dados XML para gerar documentos PDF. Você pode usar fontes incluídas no Cloud Service ou fontes personalizadas (fontes aprovadas pela organização) para renderizar os documentos PDF gerados. Você pode usar o projeto de desenvolvimento do Cloud Service para adicionar fontes personalizadas ao seu ambiente Cloud Service.
 
 ## Comportamento dos documentos do PDF
 
-Você pode [incorporar uma fonte](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) para um documento PDF ou simplesmente especifique o nome de uma fonte. Quando uma fonte é incorporada, o documento PDF aparece (Aparência) idêntico em todas as plataformas. Usava fonte incorporada para garantir uma aparência consistente. Quando uma fonte não está incorporada, o cliente de renderização do PDF procura a fonte na máquina cliente. Se a fonte estiver disponível na máquina cliente, o PDF usa a fonte especificada, caso contrário, o PDF é renderizado com uma fonte de fallback.
+Você pode [incorporar uma fonte](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) para um documento PDF. Quando uma fonte é incorporada, o documento PDF aparece (Aparência) idêntico em todas as plataformas. Usava fonte incorporada para garantir uma aparência consistente. Quando uma fonte não é incorporada, a renderização da fonte depende das configurações de renderização do cliente do visualizador de PDF. Se a fonte estiver disponível na máquina cliente, o PDF usa a fonte especificada, caso contrário, o PDF é renderizado com uma fonte de fallback.
 
 ## Adicionar fontes personalizadas ao seu ambiente as a Cloud Service do Forms
 
