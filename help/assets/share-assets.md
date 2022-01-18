@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '885'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ O compartilhamento de ativos por meio de um link é uma maneira conveniente de d
 
    * No **[!UICONTROL Assunto]** digite um assunto para o ativo que deseja compartilhar.
    * No **[!UICONTROL Mensagem]** digite uma mensagem, se necessário.
-   * No **[!UICONTROL Expiração]** , use o seletor de datas para especificar a data e a hora de expiração do link. Por padrão, a data de expiração é definida como 7 dias a partir da data em que você compartilha o link.
+   * No **[!UICONTROL Expiração]** , use o seletor de datas para especificar a data e a hora de expiração do link. O tempo de expiração padrão do link é de um dia.
    * Ative o **[!UICONTROL Permitir download do arquivo original]** caixa de seleção para permitir que os destinatários baixem a representação original.
 
 1. Clique em **[!UICONTROL Compartilhar]**. Uma mensagem confirma que o link é compartilhado com os usuários. Os usuários recebem um email contendo o link compartilhado.

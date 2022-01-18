@@ -1,13 +1,13 @@
 ---
 title: Baixar ativos
 description: Baixar ativos de [!DNL Adobe Experience Manager Assets] e ative ou desative a funcionalidade de download.
-contentOwner: AG
+contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1196'
 ht-degree: 3%
 
 ---
@@ -52,11 +52,11 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
-### Habilitar notificação por email para downloads grandes {#enable-emails-for-large-downloads}
+### Ativar notificações por email para downloads grandes {#enable-emails-for-large-downloads}
 
 Os downloads assíncronos são acionados em qualquer um dos seguintes casos:
 
-* Se houver mais de 10 ativos
+* Se houver mais de dez ativos
 * Se o tamanho de download for superior a 100 MB
 * Se o download demorar mais de 30 segundos para se preparar
 
