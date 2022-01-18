@@ -2,9 +2,9 @@
 title: Uma introdução às Comunicações as a Cloud Service do Forms
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
+source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1869'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,12 @@ Você pode gerar um documento sob demanda ou criar um trabalho em lote para gera
 
 * recursos de geração de documentação em lote e sob demanda simplificados
 
-* fornecer APIs HTTP para facilitar a integração com sistemas existentes
+* APIs HTTP para facilitar a integração com sistemas existentes. Estão incluídas APIs separadas para operações sob demanda (baixa latência) e em lote (operações de alta throughput). Isso torna a geração de documentos uma tarefa eficiente.
 
 * um acesso seguro aos dados. As APIs de comunicações se conectam e acessam somente dados de repositórios de dados designados pelo cliente, não fazem cópias locais de dados, tornando as Comunicações altamente seguras.
 
-* APIs separadas para operações de baixa latência e alta throughput que tornam a geração de documentos uma tarefa eficiente.
-
 ![Um exemplo de demonstrativo de cartão de crédito](assets/statement.png)
+Um exemplo de declaração de cartão de crédito pode ser criado usando APIs de comunicações. A declaração usa o mesmo modelo, mas dados separados para cada cliente, dependendo de seu uso do cartão de crédito.
 
 ## Como funciona?
 
@@ -143,16 +142,15 @@ Antes de começar a gerar documentos usando APIs de comunicação, analise as se
 
 ### Dados do formulário {#form-data}
 
-As APIs de comunicações aceitam um design de formulário normalmente criado em [Designer](use-forms-designer.md) e dados de formulário XML como entrada. Para preencher um documento com dados, um elemento XML deve existir nos dados do formulário XML para cada campo de formulário que você deseja preencher. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML é ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos. O fator importante é que os elementos XML são especificados com valores correspondentes.
+As APIs de comunicações aceitam um design de formulário normalmente criado em [Designer](use-forms-designer.md) e dados de formulário XML como entrada. Para preencher um documento com dados, um elemento XML deve existir nos dados do formulário XML para cada campo de formulário que você deseja preencher. O nome do elemento XML deve corresponder ao nome do campo. Se um elemento XML não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo, o elemento XML será ignorado. Não é necessário corresponder à ordem em que os elementos XML são exibidos. O fator importante é que os elementos XML são especificados com valores correspondentes.
 
 Considere o seguinte exemplo de formulário de pedido de empréstimo:
 
 ![Formulário de pedido de empréstimo](assets/loanFormData.png)
 
-Para unir dados neste design de formulário, crie uma fonte de dados XML que corresponda ao formulário. O XML a seguir representa uma fonte de dados XML que corresponde ao formulário de aplicativo de hipoteca de exemplo.
+Para unir dados neste design de formulário, crie uma fonte de dados XML que corresponda à hierarquia de formulário, nomeação de campos e tipos de dados. O XML a seguir representa uma fonte de dados XML que corresponde ao formulário de aplicativo de hipoteca de exemplo.
 
 ```XML
-<?xml version="1.0" encoding="UTF-8" ?>
 * <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
 * <xfa:data>
 * <data>
@@ -196,11 +194,11 @@ For email functionality, you can create a process in Experience Manager Workflow
 
 ### Áreas para impressão {#printable-areas}
 
-A margem não imprimível padrão de 0,25 polegadas não é exata para impressoras de etiquetas e varia de impressora para impressora e do tamanho do rótulo para tamanho do rótulo. É recomendável manter a margem de 0,25 polegadas ou reduzi-la. No entanto, é recomendável não aumentar a margem não imprimível. Caso contrário, as informações na área de impressão não serão impressas corretamente.
+A margem padrão não imprimível de 0,25 polegadas não é exata para impressoras de etiquetas e varia de impressora para impressora e do tamanho do rótulo para tamanho do rótulo, no entanto, é recomendável manter a margem de 0,25 polegadas ou reduzi-la. No entanto, é recomendável não aumentar a margem não imprimível. Caso contrário, as informações na área de impressão não serão impressas corretamente.
 
 Sempre verifique se você usa o arquivo XDC correto para a impressora. Por exemplo, evite escolher um arquivo XDC para uma impressora de 300 dpi e envie o documento para uma impressora de 200 dpi.
 
-### Scripts {#scripts}
+### Scripts somente para formulários XFA (XDP/PDF) {#scripts}
 
 Um design de formulário usado com as APIs de comunicações pode conter scripts executados no servidor. Certifique-se de que um design de formulário não contenha scripts executados no cliente. Para obter informações sobre como criar scripts de design de formulário, consulte [Ajuda do Designer](use-forms-designer.md).
 
@@ -250,7 +248,7 @@ Um perfil de dispositivo (arquivo XDC) é um arquivo de descrição de impressor
 * dpl600.xdc
 
 Você pode usar os arquivos XDC fornecidos para gerar documentos de impressão ou modificá-los de acordo com seu requisito.
-&lt;!-* Não é necessário modificar esses arquivos para criar documentos. No entanto, você pode modificá-las para atender aos requisitos de sua empresa. —>
+<!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
 Esses arquivos são arquivos XDC de referência que oferecem suporte aos recursos de impressoras específicas, como fontes residentes, bandejas de papel e grampeador. A finalidade dessa referência é ajudar você a entender como configurar suas próprias impressoras usando perfis de dispositivo. As referências são também um ponto de partida para impressoras semelhantes na mesma linha de produtos.
 
