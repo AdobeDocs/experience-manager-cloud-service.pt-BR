@@ -2,9 +2,9 @@
 title: Uma introdução às Comunicações as a Cloud Service do Forms
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 0673aa4f2f0ad2f0a5205bf929de3f26aea0d879
+source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1840'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Comunicações utilizam [Templates PDF e XFA](#supported-document-types) com [Da
 
 Uma API de comunicações ajuda a combinar um modelo (XFA ou PDF) com os dados do cliente ([Dados XML](#form-data)) para gerar documentos em Formatos de PDF e impressão, como PS, PCL, DPL, IPL e ZPL.
 
-Normalmente, você cria um modelo usando o Designer e usa as APIs de Comunicações para unir dados ao modelo. Seu aplicativo pode enviar o documento de saída para uma impressora de rede, uma impressora local ou para um sistema de armazenamento para arquivamento. Um fluxo de trabalho típico e personalizado é semelhante ao seguinte:
+Normalmente, você cria um modelo usando [Designer](use-forms-designer.md) e use as APIs de comunicações para mesclar dados com o modelo. Seu aplicativo pode enviar o documento de saída para uma impressora de rede, uma impressora local ou para um sistema de armazenamento para arquivamento. Um fluxo de trabalho típico e personalizado é semelhante ao seguinte:
 
 ![Fluxo de trabalho de comunicações](assets/communicaions-workflow.png)
 
@@ -44,13 +44,13 @@ Dependendo do caso de uso, também é possível disponibilizar esses documentos 
 
 As comunicações fornecem APIs HTTP para geração de documentos sob demanda e em lote:
 
-* **APIs síncronas** são adequados para cenários sob demanda, baixa latência e geração de documento de registro único. Essas APIs são mais adequadas para casos de uso baseados em ações do usuário. Por exemplo, gerar um documento depois que um usuário conclui o preenchimento de um formulário.
+* **[APIs síncronas](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** são adequados para cenários sob demanda, baixa latência e geração de documento de registro único. Essas APIs são mais adequadas para casos de uso baseados em ações do usuário. Por exemplo, gerar um documento depois que um usuário conclui o preenchimento de um formulário.
 
-* **APIs em lote (APIs assíncronas)** são adequados para cenários programados, de alta taxa de transferência e de geração de vários documentos. Essas APIs geram documentos em lotes. Por exemplo, contas telefônicas, demonstrativos de cartão de crédito e demonstrativos de benefícios gerados todo mês.
+* **[APIs em lote (APIs assíncronas)](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** são adequados para cenários programados, de alta taxa de transferência e de geração de vários documentos. Essas APIs geram documentos em lotes. Por exemplo, contas telefônicas, demonstrativos de cartão de crédito e demonstrativos de benefícios gerados todo mês.
 
 ## Integração
 
-As comunicações estão disponíveis como um módulo independente e complementar para o usuário as a Cloud Service do Forms. Você pode entrar em contato com a equipe de vendas do Adobe ou com seu representante de Adobe para solicitar acesso.
+As comunicações estão disponíveis como um módulo independente e complementar para o usuário as a Cloud Service do Forms. Você pode entrar em contato com a equipe de vendas de Adobe ou com o representante de Adobe para solicitar acesso.
 
 A Adobe habilita o acesso para sua organização e fornece os privilégios necessários à pessoa designada como administrador em sua organização. O administrador pode conceder acesso aos desenvolvedores (usuários) da AEM Forms de sua organização para usar as APIs.
 
@@ -143,7 +143,7 @@ Antes de começar a gerar documentos usando APIs de comunicação, analise as se
 
 ### Dados do formulário {#form-data}
 
-As APIs de comunicações aceitam um design de formulário que normalmente é criado no Designer e dados de formulário XML como entrada. Para preencher um documento com dados, um elemento XML deve existir nos dados do formulário XML para cada campo de formulário que você deseja preencher. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML é ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos. O fator importante é que os elementos XML são especificados com valores correspondentes.
+As APIs de comunicações aceitam um design de formulário normalmente criado em [Designer](use-forms-designer.md) e dados de formulário XML como entrada. Para preencher um documento com dados, um elemento XML deve existir nos dados do formulário XML para cada campo de formulário que você deseja preencher. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML é ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos. O fator importante é que os elementos XML são especificados com valores correspondentes.
 
 Considere o seguinte exemplo de formulário de pedido de empréstimo:
 
@@ -186,13 +186,13 @@ Para unir dados neste design de formulário, crie uma fonte de dados XML que cor
 
 Para obter acesso completo aos recursos de renderização das APIs de Comunicação, é recomendável usar um arquivo XDP como entrada. Às vezes, um arquivo PDF pode ser usado. No entanto, usar um arquivo PDF como entrada tem as seguintes limitações:
 
-Um documento PDF que não contém um fluxo XFA não pode ser renderizado como PostScript, PCL ou ZPL. As APIs de comunicações podem renderizar documentos PDF com fluxos XFA (ou seja, formulários criados no Designer) em formatos de laser e rótulo. Se o documento do PDF for assinado, certificado ou contiver direitos de uso (aplicados usando o serviço AEM Forms Reader Extensions), ele não poderá ser renderizado para esses formatos de impressão.
+Um documento PDF que não contém um fluxo XFA não pode ser renderizado como PostScript, PCL ou ZPL. As APIs de comunicações podem renderizar documentos do PDF com fluxos XFA (ou seja, formulários criados em [Designer](use-forms-designer.md)) em formatos de laser e etiqueta. Se o documento do PDF for assinado, certificado ou contiver direitos de uso (aplicados usando o serviço AEM Forms Reader Extensions), ele não poderá ser renderizado para esses formatos de impressão.
 
-&lt;!-* * Opções de tempo de execução como PDF e PDF marcado não são suportadas para formulários Acrobat. Eles são válidos para PDF forms que contêm fluxos XFA; no entanto, esses formulários não podem ser assinados ou certificados.
+<!-- Run-time options such as PDF version and tagged PDF are not supported for Acrobat forms. They are valid for PDF forms that contain XFA streams; however, these forms cannot be signed or certified. 
 
-### Suporte por email {#email-support}
+### Email support {#email-support}
 
-Para obter a funcionalidade de email, você pode criar um processo em Fluxos de trabalho do Experience Manager que usa a Etapa de email. Um workflow representa um processo de negócios que você está automatizando. —>
+For email functionality, you can create a process in Experience Manager Workflows that uses the Email Step. A workflow represents a business process that you are automating. -->
 
 ### Áreas para impressão {#printable-areas}
 
@@ -202,9 +202,10 @@ Sempre verifique se você usa o arquivo XDC correto para a impressora. Por exemp
 
 ### Scripts {#scripts}
 
-Um design de formulário usado com as APIs de comunicações pode conter scripts executados no servidor. Certifique-se de que um design de formulário não contenha scripts executados no cliente. Para obter informações sobre como criar scripts de design de formulário, consulte a Ajuda do Designer.
+Um design de formulário usado com as APIs de comunicações pode conter scripts executados no servidor. Certifique-se de que um design de formulário não contenha scripts executados no cliente. Para obter informações sobre como criar scripts de design de formulário, consulte [Ajuda do Designer](use-forms-designer.md).
 
-&lt;!-* #### Trabalhando com fontes Considerações do documento para Trabalhar com fontes>> —>
+<!-- #### Working with Fonts
+ Document Considerations for Working with Fonts>> -->
 
 ### Mapeamento de fonte {#font-mapping}
 
@@ -255,7 +256,7 @@ Esses arquivos são arquivos XDC de referência que oferecem suporte aos recurso
 
 ### Trabalhar com o arquivo de configuração XCI {#working-with-xci-files}
 
-As APIs de comunicações usam um arquivo de configuração XCI para executar tarefas, como controlar se a saída é um único painel ou paginada. Embora esse arquivo contenha configurações que podem ser definidas, não é normal modificar esse valor. &lt;!-* O arquivo default.xci está localizado na pasta svcdata\XMLFormService. —>
+As APIs de comunicações usam um arquivo de configuração XCI para executar tarefas, como controlar se a saída é um único painel ou paginada. Embora esse arquivo contenha configurações que podem ser definidas, não é normal modificar esse valor. <!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
 
 Você pode passar um arquivo XCI modificado usando uma API de comunicações. Ao fazer isso, crie uma cópia do arquivo padrão, altere somente os valores que exigem modificação para atender às suas necessidades de negócios e use o arquivo XCI modificado.
 
