@@ -4,9 +4,9 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
+source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2720'
 ht-degree: 1%
 
 ---
@@ -104,6 +104,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 É possível fazer upload de um ativo com o mesmo caminho (mesmo nome e mesmo local) de um ativo existente. No entanto, uma caixa de diálogo de aviso é exibida com as seguintes opções:
 
 * Substituir ativo existente: Se você substituir um ativo existente, os metadados do ativo e quaisquer modificações anteriores (por exemplo, anotações, corte e assim por diante) feitas no ativo existente serão excluídos.
+
+   >[!NOTE]
+   >
+   >A opção para substituir ativos não está disponível se o ativo estiver bloqueado ou com check-out.
+
 * Criar outra versão: Uma nova versão do ativo existente é criada no repositório. Você pode exibir as duas versões na [!UICONTROL Linha do tempo] e podem reverter para a versão existente anteriormente, se necessário.
 * Mantenha ambos: Se você optar por manter ambos os ativos, o novo ativo será renomeado.
 
