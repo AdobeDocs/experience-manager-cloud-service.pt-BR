@@ -1,17 +1,17 @@
 ---
 title: Desenvolver o AEM Commerce para o AEM as a Cloud Service
-description: Saiba como gerar um projeto de AEM habilitado para comércio usando o arquétipo de projeto AEM. Saiba como criar e implantar o projeto em um ambiente de desenvolvimento local usando o AEM como um SDK do Cloud Service.
+description: Saiba como gerar um projeto de AEM habilitado para comércio usando o arquétipo de projeto AEM. Saiba como criar e implantar o projeto em um ambiente de desenvolvimento local usando o SDK as a Cloud Service AEM.
 topics: Commerce, Development
-feature: Estrutura de integração de comércio
+feature: Commerce Integration Framework
 version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 64221be65eb54e1edba7e0353bc290a5340063e7
+source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 64%
+source-wordcount: '1002'
+ht-degree: 65%
 
 ---
 
@@ -19,19 +19,19 @@ ht-degree: 64%
 
 O desenvolvimento de projetos do AEM Commerce com base na Commerce Integration Framework (CIF) para o AEM as a Cloud Service segue as mesmas regras e práticas recomendadas de outros projetos AEM no AEM as a Cloud Service. Leia primeiro estes itens:
 
-- [Estrutura de projetos do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
-- [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [Estrutura de projetos do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR)
+- [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=pt-BR)
 - [Diretrizes de desenvolvimento do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ## Desenvolvimento local com o SDK do AEM as a Cloud Service {#local}
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-Um ambiente de desenvolvimento local é recomendado para trabalhar com projetos da CIF. O complemento CIF fornecido para o AEM como Cloud Service também está disponível para desenvolvimento local. Ele pode ser baixado no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+Um ambiente de desenvolvimento local é recomendado para trabalhar com projetos da CIF. O complemento CIF fornecido para AEM as a Cloud Service também está disponível para desenvolvimento local. Ele pode ser baixado no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 O complemento CIF é fornecido como um arquivo de recursos Sling. O arquivo zip disponível no Portal de distribuição de software inclui dois arquivos de recursos Sling, um para o autor no AEM e outro para instâncias de publicação do AEM.
 
-**Novo no AEM as a Cloud Service?** Consulte  [um guia mais detalhado para configurar um ambiente de desenvolvimento local usando o AEM como um SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) do Cloud Service.
+**Novo no AEM as a Cloud Service?** Veja [um guia mais detalhado para configurar um ambiente de desenvolvimento local usando o SDK as a Cloud Service AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
 
 ### Software necessário
 
@@ -46,7 +46,7 @@ Devem ser instalados:
 
 ### Acesso ao complemento CIF
 
-É possível baixar o complemento CIF como um arquivo zip no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). O arquivo zip contém o complemento CIF como **Arquivo de recursos Sling**, ele não é um pacote AEM. Observe que o acesso às listagens do SDK está limitado aos que têm uma licença do AEM as a Cloud Service.
+É possível baixar o complemento CIF como um arquivo zip no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). O arquivo zip contém o complemento CIF como **Arquivo de recursos Sling**, não é um pacote AEM. Observe que o acesso às listagens do SDK está limitado aos que têm uma licença do AEM as a Cloud Service.
 
 >[!TIP]
 >
@@ -84,23 +84,23 @@ Para o desenvolvimento local do complemento CIF usando o AEM as a Cloud Service,
 
    Essa variável é usada pelo AEM para se conectar ao seu sistema de comércio. Além disso, o complemento CIF inclui um proxy reverso local para disponibilizar o ponto de extremidade GraphQL do Commerce localmente. Isso é usado pelas ferramentas de criação da CIF (console do produto e seletores) e para os componentes do lado do cliente da CIF que fazem chamadas GraphQL diretas.
 
-   Essa variável também deve ser configurada para o ambiente do AEM as a Cloud Service. Para obter mais informações sobre variáveis, consulte [Configuração do OSGi para AEM como um Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   Essa variável também deve ser configurada para o ambiente do AEM as a Cloud Service. Para obter mais informações sobre variáveis, consulte [Configuração do OSGi para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
 1. (Opcional) Para ativar os recursos do catálogo preparado, você deve criar um token de integração para sua instância do Magento. Siga as etapas em [Introdução](./getting-started.md#staging) para criar o token.
 
-   Defina um segredo OSGi com o nome `COMMERCE_AUTH_HEADER` para o seguinte valor:
+   Definir um segredo OSGi com o nome `COMMERCE_AUTH_HEADER` para o seguinte valor:
 
    ```xml
    Authorization: Bearer <Access Token>
    ```
 
-   Para obter mais informações sobre segredos, consulte [Configuração do OSGi para AEM como um Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   Para obter mais informações sobre segredos, consulte [Configuração do OSGi para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
 1. Inicie o SDK do AEM as a Cloud Service
 
 >[!NOTE]
 >
->Certifique-se de iniciar o AEM como um SDK do Cloud Service na mesma janela de terminal em que a variável de ambiente foi definida na etapa 5. Se você iniciá-la em uma janela de terminal separada ou clicar duas vezes no arquivo .jar, verifique se a variável de ambiente está visível.
+>Certifique-se de iniciar AEM SDK as a Cloud Service na mesma janela de terminal em que a variável de ambiente foi definida na etapa 5. Se você iniciá-la em uma janela de terminal separada ou clicar duas vezes no arquivo .jar, verifique se a variável de ambiente está visível.
 
 Verifique a configuração por meio do console OSGI: `http://localhost:4502/system/console/osgi-installer`. A lista deve incluir os pacotes relacionados ao complemento CIF, o pacote de conteúdo e as configurações OSGI, conforme definido no arquivo de modelo de recurso.
 
@@ -114,27 +114,24 @@ O [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype)
 
 >[!TIP]
 >
->Use o [Arquétipo de projeto do AEM 24 ou posterior](https://github.com/adobe/aem-project-archetype/releases) para gerar o projeto.
+>Sempre use a versão mais recente do [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype/releases) para gerar o projeto.
 
 Consulte as [instruções de uso](https://github.com/adobe/aem-project-archetype#usage) do Arquétipo de projeto do AEM sobre como gerar um projeto do AEM. Para incluir a CIF no projeto, use a opção `includeCommerce`.
 
 Por exemplo:
 
 ```bash
-mvn -B archetype:generate \
- -D archetypeGroupId=com.adobe.granite.archetypes \
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
+ -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=24 \
- -D aemVersion=cloud \
+ -D archetypeVersion=35 \
  -D appTitle="My Site" \
  -D appId="mysite" \
  -D groupId="com.mysite" \
- -D frontendModule=general \
- -D includeExamples=n \
  -D includeCommerce=y
 ```
 
-Os Componentes principais da CIF podem ser usados em qualquer projeto, incluindo o pacote `all` fornecido ou individualmente, usando o pacote de conteúdo da CIF e os pacotes OSGI relacionados. Para adicionar os Componentes principais da CIF manualmente a um projeto, use as seguintes dependências:
+Os Componentes principais da CIF podem ser usados em qualquer projeto, incluindo o `all` ou individualmente usando o pacote de conteúdo da CIF e os pacotes OSGI relacionados. Para adicionar os Componentes principais da CIF manualmente a um projeto, use as seguintes dependências:
 
 ```java
 <dependency>
