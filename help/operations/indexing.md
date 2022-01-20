@@ -2,10 +2,10 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 7c247f5080c59f07bc9ba549fb746bf62cca80ba
+source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 2%
+source-wordcount: '2224'
+ht-degree: 1%
 
 ---
 
@@ -41,13 +41,23 @@ Abaixo está uma lista das principais alterações em comparação ao AEM 6.5 e 
 
 ## Como usar {#how-to-use}
 
-A definição de índices pode incluir esses três casos de uso:
+A definição de índices pode incluir estes três casos de uso:
 
-1. Adicionando uma nova definição de índice de cliente
-1. Atualização de uma definição de índice existente. Isso significa efetivamente adicionar uma nova versão de uma definição de índice existente
+1. Adicionando uma nova definição de índice de cliente.
+1. Atualização de uma definição de índice existente. Isso significa efetivamente adicionar uma nova versão de uma definição de índice existente.
 1. Remoção de um índice existente redundante ou obsoleto.
 
 Para ambos os pontos 1 e 2 acima, é necessário criar uma nova definição de índice como parte da base de código personalizada no agendamento de lançamento do Cloud Manager respectivo. Para obter mais informações, consulte o [Implantação em AEM documentação as a Cloud Service](/help/implementing/deploying/overview.md).
+
+## Nomes de Índice {#index-names}
+
+Uma definição de índice pode ser:
+
+1. Um índice pronto para uso. Um exemplo é `/oak:index/cqPageLucene-2`.
+1. Uma personalização de um índice pronto para uso. Essas personalizações são definidas pelo cliente. Um exemplo é `/oak:index/cqPageLucene-2-custom-1`.
+1. Um índice totalmente personalizado. Um exemplo é `/oak:index/acme.product-1-custom-2`. Para evitar nomear colisões, é necessário que os índices totalmente personalizados tenham um prefixo, por exemplo `acme.`
+
+Observe que a personalização de um índice pronto para uso, bem como os índices totalmente personalizados, precisam conter `-custom-`. Somente índices totalmente personalizados devem começar com um prefixo .
 
 ### Preparando a Nova Definição de Índice {#preparing-the-new-index-definition}
 
@@ -154,7 +164,7 @@ Atualmente, o gerenciamento de índice é compatível apenas com índices do tip
 
 ### Adicionar um índice {#adding-an-index}
 
-Para adicionar um índice chamado `/oak:index/acme.product-custom-1` para ser usado em uma nova versão do aplicativo e posterior, o índice deve ser configurado da seguinte maneira:
+Para adicionar um índice totalmente personalizado chamado `/oak:index/acme.product-custom-1` para ser usado em uma nova versão do aplicativo e posterior, o índice deve ser configurado da seguinte maneira:
 
 `acme.product-1-custom-1`
 
