@@ -2,9 +2,9 @@
 title: Recursos obsoletos e removidos
 description: Notas de versão específicas para recursos obsoletos e removidos do [!DNL Adobe Experience Manager] como [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: bbd8277fc5ed81bc656900ec3a993630aa5ffad5
+source-git-commit: d55e2aec4718e752cfc0dfa610abf1a1d36a583f
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '603'
 ht-degree: 34%
 
 ---
@@ -46,16 +46,16 @@ Os clientes são aconselhados a verificar se usam o recurso/funcionalidade em su
 
 Esta seção lista os recursos e funcionalidades removidos do [!DNL Experience Manager] com [!DNL Experience Manager] como [!DNL Cloud Service].
 
-| Área | Recurso | Substituição |
-| ------------ | ------------------ | ----------- |
-| Interface do usuário | A interface clássica é removida da interface do usuário do produto. Algumas caixas de diálogo da interface clássica estão disponíveis para alguns recursos selecionados, como o Verificador de links, a Limpeza de versão e algumas configurações do Cloud Service. Em breve [atualizações do produto](/help/release-notes/home.md) pode remover ainda mais a disponibilidade da interface clássica. | Interface do usuário padrão |
-| [!DNL Dynamic Media] | Integrações anteriores com [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) e [Modo híbrido do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) não estão disponíveis em [!DNL Experience Manager] como [!DNL Cloud Service]. | Use [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) com [!DNL Experience Manager] como [!DNL Cloud Service]. |
-| [!DNL Sites] | Portal Director e Portlet Component | Esses recursos foram descontinuados em [!DNL Experience Manager] 6.4 e agora foram retiradas de [!DNL Experience Manager]. |
-| [!DNL Sites] | Importador de design | Esse recurso foi removido como seções imutáveis do [!DNL Experience Manager] O repositório não está acessível no tempo de execução. |
-| [!DNL Assets] | [!DNL Assets]O compartilhamento do com os serviços Marketing Cloud Assets Core Service e Creative Cloud não está disponível. | Para integração com [!DNL Adobe Creative Cloud], use [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html). |
-| [!DNL Foundation] | Suporte para fontes de dados do Apache Sling (pacote OSGi org.apache.sling.datasource) | N/A |
-| [!DNL Foundation] | Suporte para modelos de script JST (pacote OSGi org.apache.sling.scripting.jst) | N/D |
-| [!DNL Foundation] | Suporte para o quadro branco Apache Felix Http | Quadro de permissões HTTP OSGi |
+| Área | Recurso | Substituição | Data de remoção do Target |
+| ------------ | ------------------ | ----------- | ------------------- |
+| Interface do usuário | A interface clássica é removida da interface do usuário do produto. Algumas caixas de diálogo da interface clássica estão disponíveis para alguns recursos selecionados, como o Verificador de links, a Limpeza de versão e algumas configurações do Cloud Service. Em breve [atualizações do produto](/help/release-notes/home.md) pode remover ainda mais a disponibilidade da interface clássica. | Interface do usuário padrão | Removido |
+| [!DNL Dynamic Media] | Integrações anteriores com [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) e [Modo híbrido do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) não estão disponíveis em [!DNL Experience Manager] como [!DNL Cloud Service]. | Use [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) com [!DNL Experience Manager] como [!DNL Cloud Service]. | Removido |
+| [!DNL Sites] | Portal Director e Portlet Component | Esses recursos foram descontinuados em [!DNL Experience Manager] 6.4 e agora foram retiradas de [!DNL Experience Manager]. | Removido |
+| [!DNL Sites] | Importador de design | Esse recurso foi removido como seções imutáveis do [!DNL Experience Manager] O repositório não está acessível no tempo de execução. | Removido |
+| [!DNL Assets] | [!DNL Assets]O compartilhamento do com os serviços Marketing Cloud Assets Core Service e Creative Cloud não está disponível. | Para integração com [!DNL Adobe Creative Cloud], use [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html). | Removido |
+| [!DNL Foundation] | Suporte para fontes de dados do Apache Sling (pacote OSGi org.apache.sling.datasource) | N/A | Removido |
+| [!DNL Foundation] | Suporte para modelos de script JST (pacote OSGi org.apache.sling.scripting.jst) | N/D | Removido |
+| [!DNL Foundation] | Suporte para o quadro branco Apache Felix Http | Quadro de permissões HTTP OSGi | Março de 2022 |
 
 ## API Java {#java-api}
 
