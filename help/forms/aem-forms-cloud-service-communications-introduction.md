@@ -2,7 +2,7 @@
 title: Uma introdução às Comunicações as a Cloud Service do Forms
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Você pode gerar um documento sob demanda ou criar um trabalho em lote para gera
 * um acesso seguro aos dados. As APIs de comunicações se conectam e acessam somente dados de repositórios de dados designados pelo cliente, não fazem cópias locais de dados, tornando as Comunicações altamente seguras.
 
 ![Um exemplo de demonstrativo de cartão de crédito](assets/statement.png)
-Um exemplo de declaração de cartão de crédito pode ser criado usando APIs de comunicações. A declaração usa o mesmo modelo, mas dados separados para cada cliente, dependendo de seu uso do cartão de crédito.
+Uma declaração de cartão de crédito pode ser criada usando APIs de comunicações. Esta declaração de exemplo usa o mesmo modelo, mas dados separados para cada cliente, dependendo de seu uso do cartão de crédito.
 
 ## Como funciona?
 

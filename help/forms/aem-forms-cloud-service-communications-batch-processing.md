@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] Processamento em lote de comunicações as a Cloud Service
 description: Como criar comunicações personalizadas e orientadas por marca?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2297'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Uma operação em lote é um processo de geração de vários documentos do tipo
 
 Você pode usar operações em lote para gerar vários documentos em intervalos programados.
 
->[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/338349)
 
 Você pode assistir ao vídeo ou executar as instruções abaixo para saber como gerar documentos usando operações em lote. A documentação de referência da API usada no vídeo está disponível no formato .yaml. Você pode baixar o [APIs em lote](assets/batch-api.yaml) e carregue-o no Postman para verificar a funcionalidade das APIs e acompanhar o vídeo.
 
@@ -100,7 +100,7 @@ A configuração de dados em lote ajuda a configurar contêineres e pastas para 
 
 Para criar a configuração:
 
-1. Acesse Ferramentas > Forms > Lote de saída - Conector de armazenamento unificado.
+1. Acesse Ferramentas > Forms > Conector de armazenamento unificado.
 1. Abra uma pasta para hospedar a configuração e clique em Criar. Use a pasta Global ou crie uma pasta.
 1. Especifique o Título e o Nome da configuração. Em Armazenamento, selecione Armazenamento do Microsoft Azure.
 1. No Caminho de configuração de armazenamento, navegue e selecione a Configuração da nuvem que contém credenciais da conta de armazenamento do Azure de propriedade do cliente.
