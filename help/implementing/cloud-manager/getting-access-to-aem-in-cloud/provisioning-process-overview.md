@@ -1,7 +1,7 @@
 ---
 title: Processo de provisionamento - Visão geral
 description: Processo de provisionamento - Visão geral
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 7%
@@ -38,9 +38,9 @@ Para obter mais informações, visite [Integração ao Experience Manager as a C
 
 ### Recursos e links
 
-• [Suporte IMS do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)\
-・ ・ [Permissões baseadas em funções no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)\
-• [Acesso ao Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
+* [Suporte IMS do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)
+* [Permissões baseadas em funções no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)
+* [Acesso ao Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
 
 
 ## Processo de integração do Adobe Experience Manager as a Cloud Service
@@ -49,7 +49,8 @@ Para obter mais informações, visite [Integração ao Experience Manager as a C
 
 ### 2. Organizações integradas da Adobe Admin Console:
 
->   ![processador overview2.jpg](./assets/processOverview2.jpg)
+![processador overview2.jpg](./assets/processOverview2.jpg)
+
 * Administrador do sistema:
    * Provisionar programas e ambientes AEM.
    * Navegue até o Admin Console para tarefas administrativas.
@@ -61,7 +62,7 @@ Para obter mais informações, visite [Integração ao Experience Manager as a C
 
 ### 3. Usuários integrados e Gerenciar acesso no Admin Console:
 
->   ![processador overview3.jpg](./assets/processOverview3.jpg)
+![processador overview3.jpg](./assets/processOverview3.jpg)
 
 Três métodos para integrar usuários, dependendo do tamanho e da preferência:
 * Criar usuários manualmente no Admin Console
