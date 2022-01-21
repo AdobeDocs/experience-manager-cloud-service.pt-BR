@@ -1,14 +1,13 @@
 ---
 title: Atalhos de teclado para Consoles
 description: Poupe tempo durante a criação usando estes atalhos de teclado
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
+source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 100%
 
 ---
-
 
 # Atalhos de teclado para Consoles   {#keyboard-shortcuts-for-consoles}
 
@@ -26,7 +25,7 @@ Os seguintes atalhos estão disponíveis para os consoles Sites, Ativos, Usuári
 | Consoles | `?` | Ajuda dos atalhos de teclado |
 |  | `/` | Executar a [pesquisa](/help/sites-cloud/authoring/getting-started/search.md) |
 |  | `Alt+`&lt;`Number`> | Alternar para a opção de [seletor do painel](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) que deseja exibir |
-|  | &grave; | Ocultar painel |
+|  | ``` ` ``` | Ocultar painel |
 |  | `e` | Editar |
 |  | `p` | Propriedades |
 |  | `m` | Mover |
