@@ -5,9 +5,9 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
+source-git-commit: 462fd68ce4a33e14464256be4f4e9fdfe8d34aab
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1193'
 ht-degree: 3%
 
 ---
@@ -16,9 +16,11 @@ ht-degree: 3%
 
 Você pode baixar ativos, incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente do [!DNL Adobe Experience Manager Assets]. Os ativos baixados são agrupados em um arquivo ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
+<!--
 >[!NOTE]
 >
->Os recipients de emails devem ser membros do `dam-users` para acessar o link de download do ZIP na mensagem de email. Para baixar os ativos, os membros devem ter permissões para iniciar fluxos de trabalho que acionam o download de ativos.
+>Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
+-->
 
 Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de mídia mista e Conjuntos de carrossel não podem ser baixados.
 
@@ -33,9 +35,9 @@ Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
 ## Baixar ativos usando [!DNL Experience Manager] interface {#download-assets}
 
-O serviço de download assíncrono fornece uma estrutura para o download perfeito de ativos de grande porte. Arquivos menores são baixados da interface do usuário em tempo real. [!DNL Experience Manager] não arquiva downloads de ativos únicos onde o arquivo original é baixado. Essa funcionalidade permite downloads mais rápidos.
+O serviço de download assíncrono fornece uma estrutura para o download perfeito de ativos de grande porte. O download arquiva arquivos com mais de 100 GB em tamanho se divide em vários arquivos zip com um tamanho máximo de 100 GB cada. Eles podem ser baixados individualmente. Arquivos menores são baixados da interface do usuário em tempo real. [!DNL Experience Manager] não arquiva downloads de ativos únicos onde o arquivo original é baixado. Essa funcionalidade permite downloads mais rápidos.
 
-Por padrão, o Experience Manager aciona uma notificação após a conclusão do workflow de download. A notificação de download é exibida no  [[!DNL Experience Manager] Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
+Por padrão, [!DNL Experience Manager] aciona uma notificação após a conclusão do workflow de download. A notificação de download é exibida no  [[!DNL Experience Manager] Caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Notificação da caixa de entrada](assets/inbox-notification-for-large-downloads.png)
 
@@ -85,7 +87,7 @@ Para baixar ativos, siga estas etapas:
    | Opção de download | Descrição |
    |---|---|
    | **[!UICONTROL Criar uma pasta separada para cada ativo]** | Selecione essa opção para incluir cada ativo que você baixar, incluindo ativos em pastas filhas aninhadas na pasta principal do ativo, em uma pasta no computador local. Quando esta opção estiver *not* selecione, por padrão, a hierarquia de pastas é ignorada e todos os ativos são baixados em uma pasta no computador local. |
-   | **[!UICONTROL Email]** | Selecione essa opção para enviar uma notificação por email para o recipient. Os modelos padrão de emails estão disponíveis nos seguintes locais:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Os modelos personalizados durante a implantação estão disponíveis nos seguintes locais: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Você pode armazenar modelos personalizados específicos do locatário nos seguintes locais:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL Email]** | Selecione essa opção para enviar uma notificação por email (contendo um link para download) para outro usuário. O usuário destinatário deve ser membro do `dam-users` grupo. Os modelos padrão de emails estão disponíveis nos seguintes locais:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Os modelos personalizados durante a implantação estão disponíveis nos seguintes locais: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Você pode armazenar modelos personalizados específicos do locatário nos seguintes locais:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Ativo(s)]** | Selecione essa opção para baixar o ativo em seu formulário original sem nenhuma representação.<br>A opção de subativos estará disponível se o ativo original tiver subativos. |
    | **[!UICONTROL Representações]** | Uma representação é uma representação binária de um ativo. Os ativos têm uma representação principal: a do arquivo carregado. Eles podem ter qualquer número de representações. <br> Com essa opção, você pode selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |
    | **[!UICONTROL Cortes inteligentes]** | Selecione esta opção para baixar todas as representações de recorte inteligente do ativo selecionado de dentro [!DNL Experience Manager]. Um arquivo zip com as representações de Recorte inteligente é criado e baixado no computador local. |
