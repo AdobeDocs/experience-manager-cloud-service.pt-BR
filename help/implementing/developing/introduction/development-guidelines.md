@@ -2,14 +2,20 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
+source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 1%
+source-wordcount: '2222'
+ht-degree: 2%
 
 ---
 
 # Diretrizes de desenvolvimento do AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
+
+>[!CONTEXTUALHELP]
+>id="development_guidelines"
+>title="Diretrizes de desenvolvimento do AEM as a Cloud Service"
+>abstract="Nesta guia, você pode visualizar as práticas recomendadas para codificação em AEM as a Cloud Service. A codificação pode ser substancialmente diferente das implantações do AMS ou no local."
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demonstração da estrutura do pacote"
 
 O código em execução AEM as a Cloud Service deve estar ciente do fato de que ele está sempre em execução em um cluster. Isso significa que sempre há mais de uma instância em execução. O código deve ser resiliente, especialmente porque uma instância pode ser interrompida em qualquer momento.
 
