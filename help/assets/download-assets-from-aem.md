@@ -5,9 +5,9 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 462fd68ce4a33e14464256be4f4e9fdfe8d34aab
+source-git-commit: 797f0e6585666196acf7972f93d936fc54359c4a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1033'
 ht-degree: 3%
 
 ---
@@ -54,26 +54,29 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
-### Ativar notificações por email para downloads grandes {#enable-emails-for-large-downloads}
 
-Os downloads assíncronos são acionados em qualquer um dos seguintes casos:
+<!-- Go live is on 27th Jan 2022
+### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
 
-* Se houver mais de dez ativos
-* Se o tamanho de download for superior a 100 MB
-* Se o download demorar mais de 30 segundos para se preparar
+Asynchronous downloads are triggered in any of the following cases:
 
-Embora o download assíncrono seja executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. É necessário um mecanismo pronto para uso para notificar o usuário após a conclusão do processo de download. Para atingir esse objetivo, os administradores podem configurar o serviço de email configurando um servidor SMTP. Consulte [configurar Serviço de Correio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+* If there are more than ten assets 
+* If the download size is more than 100 MB
+* If the download takes more than 30 seconds to prepare
 
-Após configurar o serviço de email, os administradores e usuários poderão ativar notificações por email na interface do Experience Manager.
+While the asynchronous download runs at the backend, the user can continue to explore and work further in Experience Manager. An out-of-the-box mechanism is required to notify the user upon completion of the download process. To achieve this objective, the administrators can configure email service by setting up an SMTP server. See [configure Mail Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
-Para ativar notificações por email:
+Once the email service is configured, the administrators and users can enable email notifications from the Experience Manager interface. 
 
-1. Faça logon em [!DNL Experience Manager Assets].
-1. Clique no ícone do usuário no canto superior direito e clique em **[!UICONTROL Minhas preferências]**. A janela Preferências de usuário é aberta.
-1. Selecione o **[!UICONTROL Notificações por email de download de ativos]** e clique em **[!UICONTROL Aceitar]**.
+To enable email notifications:
+
+1. Log in to [!DNL Experience Manager Assets].
+1. Click the user icon from the upper-right corner and then click **[!UICONTROL My Preferences]**. The User Preferences window opens.
+1. Select the **[!UICONTROL Asset Download email notifications]** check box and click **[!UICONTROL Accept]**.
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
+-->
 
 Para baixar ativos, siga estas etapas:
 
