@@ -5,9 +5,9 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 797f0e6585666196acf7972f93d936fc54359c4a
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1032'
 ht-degree: 3%
 
 ---
@@ -57,6 +57,10 @@ Asynchronous downloads are triggered in either of the following case:
 
 <!-- Go live is on 27th Jan 2022
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
+
+>[!NOTE]
+>
+>This functionality is available in the Experience Manager prerelease channel.
 
 Asynchronous downloads are triggered in any of the following cases:
 
@@ -114,13 +118,13 @@ Para baixar ativos, siga estas etapas:
 >This functionality is available in the Experience Manager prerelease channel.
 -->
 
-O compartilhamento de ativos usando um link é uma maneira conveniente de torná-lo disponível para as pessoas interessadas, sem que elas precisem primeiro fazer logon no [!DNL Assets]. Consulte [Funcionalidade de compartilhamento de links](/help/assets/share-assets.md#sharelink).
+O compartilhamento de ativos usando um link é uma maneira conveniente de disponibilizá-lo para as pessoas interessadas, sem a necessidade de fazer logon no [!DNL Assets]. Consulte [Funcionalidade de compartilhamento de links](/help/assets/share-assets.md#sharelink).
 
 Quando usuários baixam ativos de links compartilhados, [!DNL Assets] O usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos. Os ativos a serem baixados são enfileirados em segundo plano em uma caixa de entrada em arquivos ZIP com tamanho de arquivo gerenciável. Para downloads muito grandes, o download é fragmentado em arquivos de 100 GB de tamanho.
 
-A caixa de entrada exibe o status de processamento de cada arquivo. Após concluir o processamento, é possível baixar os arquivos da caixa de entrada.
+O [!UICONTROL Baixar Caixa de entrada] exibe o status de processamento de cada arquivo. Após concluir o processamento, é possível baixar os arquivos da caixa de entrada.
 
-![Baixar caixa de entrada](assets/download-inbox.png)
+![Baixar caixa de entrada](assets/link-sharing-download-inbox.png)
 
 ## Habilitar servlet de download de ativos {#enable-asset-download-servlet}
 
