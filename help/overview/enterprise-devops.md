@@ -2,14 +2,14 @@
 title: DevOps empresarial
 description: Saiba mais sobre os processos, os métodos e a comunicação necessários para facilitar a implantação e simplificar a colaboração.
 source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1001'
 ht-degree: 100%
 
 ---
 
 
-# DevOps empresarial{#enterprise-devops}
+# DevOps empresarial {#enterprise-devops}
 
 O DevOps abrange os processos, os métodos e a comunicação necessários para:
 
