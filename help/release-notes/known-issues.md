@@ -3,17 +3,17 @@ title: Problemas conhecidos
 description: Problemas conhecidos com o Adobe Experience Manager as a Cloud Service
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '111'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
 # Problemas conhecidos {#known-issues}
 
-Este artigo lista os problemas conhecidos do [!DNL Adobe Experience Manager] como [!DNL Cloud Service] oferta. A lista é revisada e atualizada a cada versão contínua do [!DNL Experience Manager].
+Este artigo lista os problemas conhecidos da oferta [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. A lista é revisada e atualizada a cada versão contínua do [!DNL Experience Manager].
 
-[Entre em contato com o suporte](https://experienceleague.adobe.com/?lang=en&amp;support-solution=Experience+Manager#support) para obter mais informações sobre os problemas conhecidos.
+[Entre em contato com o suporte](https://experienceleague.adobe.com/?lang=pt-BR&amp;support-solution=Experience+Manager#support) para obter mais informações sobre os problemas conhecidos.
 
 <!-- 
 ## Platform {#platform}
@@ -27,11 +27,11 @@ Este artigo lista os problemas conhecidos do [!DNL Adobe Experience Manager] com
 
 Alguns problemas conhecidos no [!DNL Assets] são:
 
-* **Baixar**: Se você baixar uma pasta vazia, [!DNL Experience Manager] transmite uma mensagem de sucesso sobre a criação de um arquivo ZIP, mas o arquivo não é criado.
+* **Download**: ao baixar uma pasta vazia, o [!DNL Experience Manager] transmite uma mensagem de sucesso sobre a criação de um arquivo ZIP, mas o arquivo não é criado.
 
 * **Esquema de metadados**: o dispositivo de classificação de ativos usado para causar erro de compilação de JSP. Foi removido do esquema de metadados. <!-- CQ-4282865, CQ-4284633 -->
 
-Além disso, consulte [alterações importantes para [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md).
+Além disso, consulte [alterações importantes no [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md).
 
 <!-- This content was added at GA. Not sure if we should continue to have this commitment about upcoming features/enh. in the docs. Commenting it for now.
 
@@ -50,7 +50,7 @@ A few capabilities of Adobe Experience Manager Assets that depend on foundation 
 
 >[!MORELIKETHIS]
 >
->* [Alterações importantes na [!DNL Experience Manager]](aem-cloud-changes.md)
+>* [Principais alterações no [!DNL Experience Manager]](aem-cloud-changes.md)
 >* [Recursos obsoletos e removidos](deprecated-removed-features.md)
 >* [Notas de versão](home.md)
 
