@@ -3,9 +3,9 @@ title: Suporte IMS do Adobe Experience Manager as a Cloud Service
 description: Suporte IMS do Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2022'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 90%
 
 >[!TIP]
 >
->Consulte nosso curso do Experience League [Configurar acesso ao AEM para administradores](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) para obter uma introdução sobre como os usuários se autenticam usando o Adobe IMS para AEM as a Cloud Service e como os usuários do Adobe IMS, grupos de usuários e perfis de produtos são usados para controlar o acesso ao AEM e seus recursos e funcionalidades. Adobe ID necessário.
+>Veja nosso curso da Experience League, [Configurar acesso ao AEM para administradores](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem&amp;lang=pt-BR), para uma introdução sobre como os usuários se autenticam usando o Adobe IMS para o AEM as a Cloud Service. O curso também explica como os usuários, grupos de usuários e perfis de produtos do Adobe IMS são usados para controlar o acesso ao AEM e seus recursos e funcionalidades. Adobe ID necessário.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ O AEM as a Cloud Service oferece suporte à autenticação do IMS somente para o
 * O Admin Console representará clientes como Organizações de IMS, Instâncias de criação e publicação em um ambiente como Instâncias de contexto de produto. Isso permitirá que os administradores do Sistema e do Produto gerenciem o acesso às instâncias.
 * Os perfis de produto no Admin Console determinam quais instâncias um usuário pode acessar.
 * Os clientes poderão usar seus próprios Provedores de identidade compatíveis com SAML 2 (IDP) para Logon único.
-* Somente IDs empresariais ou federadas para Logon único do cliente serão compatíveis, sem Adobe IDs pessoais.
+* Somente IDs Enterprise ou Federated para Logon único do cliente serão compatíveis, sem Adobe IDs pessoais.
 
 ## Arquitetura {#architecture}
 
@@ -102,13 +102,13 @@ A Ferramenta de sincronização de usuários é distribuída pelo repositório d
 
 Os principais recursos desta versão são a capacidade de mapear dinamicamente novos grupos LDAP para associação de usuários no Admin Console, bem como a criação dinâmica de grupos de usuários.
 
-Mais informações sobre os novos recursos do grupo podem ser encontradas [neste local](https://github.com/adobe-apiplatform/user-sync.py/blob/v2/docs/br/user-manual/advanced_configuration.md#additional-group-options).
+Mais informações sobre os novos recursos do grupo podem ser encontradas [neste local](https://github.com/adobe-apiplatform/user-sync.py/blob/v2/docs/en/user-manual/advanced_configuration.md#additional-group-options).
 
 **Documentação da sincronização de usuários**
 
-Consulte a [documentação da UST](https://adobe-apiplatform.github.io/user-sync.py/br/) para obter mais detalhes.
+Consulte a [documentação da UST](https://adobe-apiplatform.github.io/user-sync.py/bp/) para obter mais detalhes.
 
-A Ferramenta de sincronização de usuários precisa se registrar como uma UMAPI do cliente de E/S da Adobe usando o procedimento [aqui](https://adobe-apiplatform.github.io/umapi-documentation/br/UM_Authentication.html).
+A Ferramenta de sincronização de usuários precisa se registrar como uma UMAPI do cliente de E/S da Adobe usando o procedimento [aqui](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
 A Documentação do console de E/S da Adobe pode ser encontrada [aqui](https://www.adobe.io/apis/cloudplatform/console.html).
 
@@ -132,7 +132,7 @@ Estas são as principais configurações de OSGI que precisam ser modificadas pa
 
 ### Gerenciamento de produtos e acesso do usuário no Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Quando o Administrador do produto fizer logon no Admin Console, ele verá várias instâncias do Contexto de produto as a Cloud Service AEM, como mostrado abaixo. Por exemplo, selecione qualquer um dos produtos na página **Visão geral**:
+Quando o Administrador do produto fizer logon no Admin Console, ele verá várias instâncias do Contexto de produto do AEM as a Cloud Service, como mostrado abaixo. Por exemplo, selecione qualquer um dos produtos da página **Visão geral**:
 
 ![Logon de instâncias](/help/security/assets/ims6.png)
 
@@ -140,7 +140,7 @@ Você verá uma lista de instâncias existentes:
 
 ![Logon de instâncias 2](/help/security/assets/ims7.png)
 
-Em cada instância do Contexto do Produto, haverá instâncias que abrangem os serviços de Autor ou Publicação em todos os ambientes de Produção, Estágio ou Desenvolvimento. Cada instância será associada às funções Perfis de produto ou Cloud Manager . Esses perfis de produto são usados para atribuir acesso a usuários e grupos com os privilégios necessários.
+Em cada instância de Contexto do Produto, haverá instâncias que abrangem os serviços de Autor ou Publicação em todos os ambientes de Produção, Preparo ou Desenvolvimento. Cada instância será associada às funções Perfis de produto ou Cloud Manager. Esses perfis de produto são usados para atribuir acesso a usuários e grupos com os privilégios necessário.
 
 O perfil **Administrator_xxx** será usado para conceder privilégios de Administrador na instância do AEM associada, enquanto o perfil **User_xxx** é usado para adicionar usuários regulares.
 
@@ -167,7 +167,7 @@ Para outros usuários, o logon baseado no IMS pode ser usado assim que o IMS for
 
 >[!NOTE]
 >
->Qualquer usuário criado no IMS pode ser criado usando a Adobe ID ou a Federated ID. Se um usuário for configurado usando o Federated ID, ele será autenticado usando o Provedor de identidade da Empresa para fazer logon.
+>Qualquer usuário criado no IMS pode ser criado usando a Adobe ID ou a Federated ID. Se um usuário for configurado usando o Federated ID, ele será autenticado usando o Provedor de identidade da empresa para fazer logon.
 
 Eles serão redirecionados para a tela de logon do IMS e precisarão digitar as credenciais:
 
@@ -213,7 +213,7 @@ Para acessar os ambientes do Cloud Manager ou do AEM as a Cloud Service, você d
 Consulte Definições de função para saber mais sobre funções para usuários que controlam a disponibilidade de recursos específicos no Cloud Manager.
 
 >[!NOTE]
->O Cloud Manager tem funções pré-configuradas com permissões apropriadas. Para saber mais sobre cada uma das funções com permissões específicas, tarefas pré-configuradas ou permissões associadas a cada função, consulte [Permissões baseadas em funções](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>O Cloud Manager tem funções pré-configuradas com permissões apropriadas. Para saber mais sobre cada uma das funções com permissões específicas, tarefas pré-configuradas ou permissões associadas a cada função, consulte [Permissões baseadas em funções](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=pt-BR).
 
 **Etapas para adicionar um usuário**
 
