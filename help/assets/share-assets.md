@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: c74846dc4d4da9fa5050ce7b8ffce7f27e77269b
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1289'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## Compartilhar ativos como um link {#sharelink}
 
-O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar os recursos para terceiros, sem que eles precisem fazer logon no [!DNL Assets]. A funcionalidade permite que usuários anônimos acessem e baixem os ativos compartilhados com eles. Quando usuários baixam ativos de links compartilhados, [!DNL Assets] O usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos. Os ativos a serem baixados são enfileirados em segundo plano em uma caixa de entrada em arquivos ZIP com tamanho de arquivo gerenciável. Para downloads muito grandes, o download é empacotado em arquivos de 100 GB em tamanho.
+O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar os recursos para terceiros, sem que eles precisem fazer logon no [!DNL Assets]. A funcionalidade permite que usuários anônimos acessem e baixem os ativos compartilhados com eles. Quando usuários baixam ativos de links compartilhados, [!DNL Assets] O usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos. Os ativos a serem baixados são enfileirados em segundo plano em uma caixa de entrada em arquivos ZIP com tamanho de arquivo gerenciável. Para downloads grandes, o download é empacotado em arquivos de 100 GB.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -49,7 +49,7 @@ Há duas maneiras de compartilhar os ativos usando a funcionalidade de compartil
 Para compartilhar ativos como um URL público:
 
 1. Faça logon em [!DNL Experience Manager Assets] e navegue até **[!UICONTROL Arquivos]**.
-1. Selecione o(s) ativo(s) ou a pasta que contém os ativos. Na barra de ferramentas, clique em **[!UICONTROL Compartilhar link]**.
+1. Selecione os ativos ou a pasta que contém os ativos. Na barra de ferramentas, clique em **[!UICONTROL Compartilhar link]**.
 1. O **[!UICONTROL Compartilhamento de link]** será exibida, contendo um link de ativo gerado automaticamente no **[!UICONTROL Compartilhar link]** campo.
 1. Copie o link de ativo e compartilhe-o com os usuários.
 
@@ -57,7 +57,7 @@ Para compartilhar ativos como um URL público:
 
 Para compartilhar ativos por email:
 
-1. Selecione o(s) ativo(s) ou a pasta que contém os ativos. Na barra de ferramentas, clique em **[!UICONTROL Compartilhar link]**.
+1. Selecione os ativos ou a pasta que contém os ativos. Na barra de ferramentas, clique em **[!UICONTROL Compartilhar link]**.
 1. O **[!UICONTROL Compartilhamento de link]** será exibida, contendo um link de ativo gerado automaticamente no **[!UICONTROL Compartilhar link]** campo.
 
    * Na caixa Endereço de email, digite a ID do email do usuário com quem você deseja compartilhar o link. Você pode compartilhar o link com vários usuários. Se o usuário for membro de sua organização, selecione sua ID de email nas sugestões que aparecem na lista suspensa. Se o usuário for externo, digite a ID de email completa e pressione **[!UICONTROL Enter]**; a ID do email é adicionada à lista de usuários.
@@ -65,7 +65,7 @@ Para compartilhar ativos por email:
    * No **[!UICONTROL Assunto]** digite um assunto para especificar a finalidade dos ativos compartilhados.
    * No **[!UICONTROL Mensagem]** digite uma mensagem, se necessário.
    * No **[!UICONTROL Expiração]** , use o seletor de datas para especificar a data e a hora de expiração do link.
-   * Ative o **[!UICONTROL Permitir download do arquivo original]** caixa de seleção para permitir que os destinatários baixem a representação original.
+   * Ative o **[!UICONTROL Permitir download do arquivo original]** caixa de seleção para permitir que os recipients baixem a representação original.
 
 1. Clique em **[!UICONTROL Compartilhar]**. Uma mensagem confirma que o link é compartilhado com os usuários. Os usuários recebem um email contendo o link compartilhado.
 
@@ -98,6 +98,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 >[!NOTE]
 >
 >Se um ativo compartilhado for movido para um local diferente, seu link para de funcionar. Recrie o link e compartilhe-o com os usuários.
+
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -166,7 +167,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## Baixar e compartilhar ativos {#download-and-share-assets}
+## Baixar ativos e compartilhar separadamente {#download-and-share-assets}
 
 Os usuários podem baixar os ativos necessários e compartilhá-los fora do [!DNL Experience Manager]. Para obter mais informações, consulte [como pesquisar ativos](/help/assets/search-assets.md), [como baixar ativos](/help/assets/download-assets-from-aem.md)e [como baixar coleções](manage-collections.md#download-a-collection)
 
