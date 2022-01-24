@@ -5,7 +5,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
@@ -19,23 +19,23 @@ ht-degree: 43%
 
 ## Como se preparar para uma versão {#how-to-prepare}
 
-Com o modelo de liberação contínua em [!DNL Adobe Experience Manager] as a Cloud Service, o aplicativo é atualizado automaticamente de forma contínua. Há dois tipos de atualizações, versões de recursos e atualizações críticas:
+Com o modelo de liberação contínua no [!DNL Adobe Experience Manager] as a Cloud Service, o aplicativo é atualizado automaticamente de forma contínua. Há dois tipos de atualizações: versões de recursos e atualizações críticas.
 
-* As versões de recursos são feitas com uma frequência mensal previsível e são focadas em novos recursos e inovações de produtos.
-* As atualizações críticas são feitas com frequência e são focadas em atualizações de segurança, correções de erros e aprimoramentos de desempenho. Isso garante que [!DNL Adobe Experience Manager] O as a Cloud Service está sempre atualizado com qualquer correção crítica.
+* As versões de recursos são liberadas com uma frequência mensal previsível e são focadas em novos recursos e inovações de produtos.
+* As atualizações críticas são liberadas com frequência e seu foco está em atualizações de segurança, correções de erros e aprimoramentos de desempenho. Isso garante que o [!DNL Adobe Experience Manager] as a Cloud Service esteja sempre atualizado com qualquer correção crítica.
 
-Além da velocidade da inovação, [!DNL Adobe Experience Manager] O as a Cloud Service também oferece a flexibilidade de visualizar os recursos futuros com um mês de antecedência, antes que eles sejam lançados para produção. Isso permite avaliar o impacto de uma versão futura na organização, testando a condução dos recursos em seu próprio ambiente personalizado e treinando/preparando os usuários internos com bastante antecedência.
+Além da velocidade da inovação, o [!DNL Adobe Experience Manager] as a Cloud Service também oferece a flexibilidade de pré-visualizar os recursos futuros com um mês de antecedência, antes que eles sejam lançados para produção. Isso permite avaliar o impacto de uma versão futura na organização, testando a condução dos recursos em seu próprio ambiente personalizado e treinando/preparando os usuários internos com bastante antecedência.
 
 >[!NOTE]
 >
->O pré-lançamento é feito apenas para versões mensais de recursos, não para atualizações críticas.
+>O pré-lançamento acontece apenas para versões mensais de recursos, não para atualizações críticas.
 
-Para preparar uma versão:
+Para se preparar para uma versão:
 
-1. Marcar seus calendários: Verificar datas-chave de lançamentos mensais no [Roteiro de versões de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) e marque seus calendários para se preparar para as atividades principais para se preparar para o lançamento.
-1. Revise as notas de versão: Leia o [notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md) para se familiarizar com os recursos de lançamento e pré-lançamento.
-1. Acesse e tente novos recursos: Ative o [canal de pré-lançamento](/help/release-notes/prerelease.md) em seus ambientes não relacionados à produção e comece a experimentar os recursos a serem avaliados em seus ambientes personalizados.
-1. Treine seus usuários: Use a documentação e os recursos do Experience League para fazer com que os usuários se familiarizem com os novos recursos.
+1. Marque em seu calendário: verifique datas importantes de lançamentos mensais no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service) e marque em seu calendário para se preparar para as atividades principais e assim estar pronto para o lançamento.
+1. Revise as notas de versão: leia as [notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md) para se familiarizar com os recursos de lançamento e pré-lançamento.
+1. Acesse e experimente novos recursos: ative o [canal de pré-lançamento](/help/release-notes/prerelease.md) em seus ambientes não relacionados à produção e comece a experimentar os recursos a serem avaliados em seus ambientes personalizados.
+1. Treine seus usuários: use a documentação e os recursos da Experience League para fazer com que os usuários se familiarizem com os novos recursos.
 
 ## Informações-chave sobre versão {#key-articles}
 
@@ -55,19 +55,19 @@ Para preparar uma versão:
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service. |
 | [Migração para o AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Entenda a jornada de transição para o Cloud Service. |
-| [Implementação do Guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando AEM recursos avançados explorando esses tópicos de desenvolvimento e implantação. |
-| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada com os recursos avançados e flexíveis do AEM para se preparar para o seu primeiro projeto sem periféricos. |
+| [Implementação do Guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando recursos avançados do AEM ao explorar esses tópicos de desenvolvimento e implantação. |
+| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada com os recursos headless avançados e flexíveis do AEM para se preparar para o seu primeiro projeto headless. |
 | [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar conectores ao Experience Manager as a Cloud Service. |
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção. |
 | [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM as a Cloud Service. |
 
 ## Outros recursos do Experience Manager {#other-resources}
 
-* [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=pt-BR)
 * [Documentação do Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
 * [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html)
+* [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=pt-BR)
 * [Disponibilidade do GDPR](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriais do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
