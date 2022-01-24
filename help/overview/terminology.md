@@ -3,9 +3,9 @@ title: Introdução ao Adobe Experience Manager as a Cloud Service - Terminologi
 description: Introdução ao Adobe Experience Manager as a Cloud Service - Terminologia.
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Os termos a seguir são usados em relação ao Adobe Experience Manager (AEM) as
 | Produto | Descrição |
 |---|---|
 | AEM as a Cloud Service | A forma nativa de nuvem de aproveitar os aplicativos do AEM |
-| Ativos AEM as a Cloud Service | Recursos do Gerenciamento de ativos digitais (DAM) como uma solução escalável nativa em nuvem para assimilar, processar e gerenciar seus ativos digitais e, ao mesmo tempo, integrar ao ecossistema mais amplo da Adobe Experience Cloud e da Adobe Creative Cloud. |
+| AEM Assets as a Cloud Service | Recursos do Gerenciamento de ativos digitais (DAM) como uma solução escalável nativa em nuvem para assimilar, processar e gerenciar seus ativos digitais e, ao mesmo tempo, integrar ao ecossistema mais amplo da Adobe Experience Cloud e da Adobe Creative Cloud. |
 | AEM Sites as a Cloud Service | Uma instância do AEM as a Cloud Service com o aplicativo do AEM Sites. |
 
 ## Instâncias e pipelines {#instances-and-pipelines}
@@ -27,7 +27,7 @@ Os termos a seguir são usados em relação ao Adobe Experience Manager (AEM) as
 |---|---|
 | Adobe Pipeline | O mecanismo de publicação de conteúdo do autor para publicação. |
 | Nível de criação do AEM | Descreve o ambiente de criação do Sites e do Assets. |
-| Camada de visualização do AEM | Descreve o ambiente de visualização do Sites. |
+| Nível de pré-visualização do AEM | Descreve o ambiente de pré-visualização do Sites. |
 | Nível de publicação do AEM | Descreve o ambiente de publicação de Sites. |
 
 
