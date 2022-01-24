@@ -2,9 +2,9 @@
 title: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service
 description: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service.
 source-git-commit: a54841ca2e959e885a997b19dd03c6ece3f00d1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1782'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -12,8 +12,8 @@ ht-degree: 82%
 
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
->title="Introdução ao AEM as a Cloud Service Architecture"
->abstract="Nesta guia, é possível visualizar a nova arquitetura do AEM como um Cloud Service e compreender as alterações. AEM resultou em uma arquitetura dinâmica com um número variável de imagens, portanto é importante levar tempo para entender.a arquitetura de nuvem"
+>title="Introdução à arquitetura do AEM as a Cloud Service"
+>abstract="Nesta guia, é possível visualizar a nova arquitetura do AEM as a Cloud Service e compreender as alterações. O AEM resultou em uma arquitetura dinâmica com um número variável de imagens, portanto é importante reservar um tempo para entender a arquitetura de nuvem"
 >additional-url="https://video.tv.adobe.com/v/330542/" text="Visão geral da arquitetura"
 
 
@@ -29,7 +29,7 @@ O AEM as a Cloud Service agora tem:
 
 Essa arquitetura:
 
-* É dimensionada com base no tráfego *real* e na atividade *real* .
+* É dimensionada com base no tráfego *real* e na atividade *real*.
 
 * Possui instâncias individuais que são executadas somente quando necessário.
 
@@ -68,7 +68,7 @@ O dimensionamento de instâncias por locatário do serviço pode ser automático
 
 O AEM as a Cloud Service é disponibilizado como instâncias individuais e cada instância representa um ambiente completo do AEM.
 
-Há três tipos de ambientes disponíveis com o AEM as a Cloud Service:
+Há três tipos de ambientes disponíveis no AEM as a Cloud Service:
 
 * **Ambiente de produção**: hospeda os aplicativos para os profissionais de negócios.
 
@@ -76,7 +76,7 @@ Há três tipos de ambientes disponíveis com o AEM as a Cloud Service:
 
 * **Ambiente de desenvolvimento**: permite que os desenvolvedores implementem os aplicativos do AEM nas mesmas condições de tempo de execução que os ambientes de preparo e produção.
 
-   Consulte [Gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) para obter mais detalhes.
+   Consulte [Gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR#using-cloud-manager) para obter mais detalhes.
 
 ## Programas {#programs}
 
@@ -98,7 +98,7 @@ Dois tipos de programas estão disponíveis inicialmente para o AEM as a Cloud S
 
 * Serviços de ativos na nuvem AEM
 
-Ambos permitem acesso a vários recursos e funcionalidades. O nível de criação conterá todas as funcionalidades de Sites e Ativos para todos os programas, mas os programas de Ativos não terão um nível de publicação nem um nível de visualização, por padrão.
+Ambos permitem acesso a vários recursos e funcionalidades. O nível do autor conterá todas as funcionalidades do Sites e do Assets para todos os programas, mas os programas do Assets não terão um nível de publicação nem de pré-visualização por padrão.
 
 ## Arquitetura do tempo de execução {#runtime-architecture}
 
@@ -119,7 +119,7 @@ Há vários componentes principais dessa nova arquitetura:
       * O logon no nível de criação é gerenciado pelo Adobe Identity Management Services (IMS).
 
       * A integração e o processamento de ativos usam um Serviço de cálculo de ativos dedicado.
-   * O nível de visualização é composto por um único nó de visualização. Usado para garantir a qualidade do conteúdo antes de publicar no nível de publicação.
+   * O nível de pré-visualização é composto por um único nó de pré-visualização. Isso é usado para garantir a qualidade do conteúdo antes de publicar no nível de publicação.
 
    * O nível de publicação é composto por dois ou mais nós em um único farm de publicação: eles podem operar independentemente uns dos outros. Cada nó consiste em um editor do AEM e um servidor da Web equipado com o módulo do AEM Dispatcher. É dimensionado automaticamente de acordo com as necessidades de tráfego do site.
 
@@ -130,15 +130,15 @@ Há vários componentes principais dessa nova arquitetura:
 
    * A arquitetura inclui apenas um ambiente de criação.
 
-* O nível de criação, o nível de visualização e o nível de publicação leem e persistem no conteúdo de/para um Serviço de repositório de conteúdo.
+* O níveis de criação, pré-visualização e publicação leem e persistem conteúdo de/para um Serviço de repositório de conteúdo.
 
-   * O nível de publicação e o nível de visualização somente leem o conteúdo da camada de persistência.
+   * O nível de publicação e o nível de pré-visualização somente leem o conteúdo da camada de persistência.
 
    * O nível de criação lê e grava conteúdo de e para a camada de persistência.
 
-   * O armazenamento de blobs é compartilhado nos níveis de publicação, visualização e criação; os arquivos não são *movidos*.
+   * O armazenamento de blobs é compartilhado em todos os níveis de publicação, pré-visualização e do autor. Os arquivos não são *transferidos*.
 
-   * Quando o conteúdo é aprovado do nível de criação, isso indica que pode ser ativado, portanto, enviado para a camada de persistência do nível de publicação; ou opcionalmente para a camada de visualização. Isso acontece por meio do Serviço de replicação, um middleware de pipeline. Esse pipeline recebe o novo conteúdo, com os nós individuais do serviço de publicação (ou serviço de visualização) que assinam o conteúdo enviado para o pipeline.
+   * Quando o conteúdo é aprovado do nível do autor, isso indica que pode ser ativado, portanto, enviado para a camada de persistência do nível de publicação ou, opcionalmente, para o nível de pré-visualização. Isso acontece por meio do Serviço de replicação, um middleware de pipeline. Esse pipeline recebe o novo conteúdo, com os nós de serviço de publicação (ou serviço de pré-visualização) individuais que assinam o conteúdo enviado para o pipeline.
 
       >[!NOTE]
       >
@@ -148,15 +148,15 @@ Há vários componentes principais dessa nova arquitetura:
 
    * O acesso aos níveis de criação e publicação sempre ocorre por meio de um balanceador de carga. É sempre atualizado com os nós ativos em cada um dos níveis.
 
-   * Para o nível de publicação e o nível de visualização, um Serviço de rede de entrega contínua (CDN) também está disponível como o primeiro ponto de entrada.
+   * Para os níveis de publicação e pré-visualização, um Serviço de rede de entrega contínua (CDN) também está disponível como o primeiro ponto de entrada.
 
 * Para instâncias de demonstração do AEM as a Cloud Service, a arquitetura é simplificada em um único nó de criação. Portanto, não apresenta todas as características do ambiente padrão de desenvolvimento, preparo ou produção. Isso também significa que pode haver algum tempo de inatividade e que não há suporte para operações de backup/restauração.
 
 ## Arquitetura de implantação {#deployment-architecture}
 
-O Cloud Manager gerencia todas as atualizações nas instâncias do AEM as a Cloud Service. É obrigatório, sendo a única maneira de criar, testar e implantar o aplicativo do cliente, para os níveis de criação, visualização e publicação. Essas atualizações podem ser acionadas pela Adobe, quando uma nova versão do AEM Cloud Service estiver pronta, ou pelo Cliente, quando uma nova versão do aplicativo do cliente estiver pronta.
+O Cloud Manager gerencia todas as atualizações nas instâncias do AEM as a Cloud Service. Isso é obrigatório e a única maneira de criar, testar e implantar o aplicativo do cliente nos níveis do autor, de pré-visualização e publicação. Essas atualizações podem ser acionadas pela Adobe, quando uma nova versão do AEM Cloud Service estiver pronta, ou pelo Cliente, quando uma nova versão do aplicativo do cliente estiver pronta.
 
-Tecnicamente, isso é implementado devido ao conceito de um pipeline de implantação, acoplado a cada ambiente dentro de um programa. Quando um pipeline do Cloud Manager está em execução, ele cria uma nova versão do aplicativo do cliente, tanto para os níveis de autor, visualização e publicação. Isso é feito combinando os pacotes mais recentes do cliente com a imagem mais recente da linha de base da Adobe. Quando as novas imagens são criadas e testadas com êxito, o Cloud Manager automatiza totalmente a transferência para a versão mais recente da imagem, atualizando todos os nós de serviço com um padrão de atualização contínua. Isso não resulta em tempo de inatividade para o serviço de criação ou publicação.
+Tecnicamente, isso é implementado devido ao conceito de um pipeline de implantação, acoplado a cada ambiente dentro de um programa. Quando um pipeline do Cloud Manager está em execução, ele cria uma nova versão do aplicativo do cliente para os níveis do autor, de pré-visualização e publicação. Isso é feito combinando os pacotes mais recentes do cliente com a imagem mais recente da linha de base da Adobe. Quando as novas imagens são criadas e testadas com êxito, o Cloud Manager automatiza totalmente a transferência para a versão mais recente da imagem, atualizando todos os nós de serviço com um padrão de atualização contínua. Isso não resulta em tempo de inatividade para o serviço de criação ou publicação.
 
 <!--- needs reworking -->
 
