@@ -3,9 +3,9 @@ title: Um guia rápido para a WCAG 2.1
 description: Um guia rápido para a WCAG 2.1
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1774'
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ As diretrizes fornecem informações sobre as novidades da WCAG 2.1:
 
 ### Técnicas da WCAG 2.1 {#techniques-for-wcag}
 
-As técnicas da WCAG 2.1 estão disponíveis na página [Técnicas da WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/) .
+As técnicas da WCAG 2.1 estão disponíveis na página [Técnicas da WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/).
 
 As **técnicas** formam o nível abaixo dos critérios de sucesso na hierarquia da WCAG 2.1. Elas são classificadas pela WAI como informativas, não normativas. Em outras palavras, não é necessário seguir uma técnica específica para que um recurso esteja em conformidade com a WCAG 2.1.
 
@@ -145,7 +145,7 @@ Um exemplo pode ser encontrado em: [Noções sobre o critério de sucesso 1.1.1 
 
 ### Como cumprir a WCAG 2.1 {#how-to-meet-wcag}
 
-A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) . Esta seção fornece uma apresentação alternativa da WCAG, permitindo que os leitores refinem o conteúdo das diretrizes para os mais relevantes para os próprios interesses e/ou circunstâncias do leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização, especificando tecnologias específicas de conteúdo na Web, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
+A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Esta seção fornece uma apresentação alternativa da WCAG, permitindo que os leitores refinem o conteúdo das diretrizes para os mais relevantes para os próprios interesses e/ou circunstâncias do leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização, especificando tecnologias específicas de conteúdo na Web, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
 
 Sem filtragem, esse recurso fornece todos os critérios de sucesso agrupados por diretriz. Para cada critério de sucesso, é fornecido o seguinte:
 
