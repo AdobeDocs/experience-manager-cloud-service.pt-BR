@@ -2,9 +2,9 @@
 title: 'Como atribuir um fluxo de trabalho a outro usuário, enviar email, usar o Adobe Sign em um fluxo de trabalho? '
 description: Os fluxos de trabalho centrados no Forms permitem que você crie rapidamente os fluxos de trabalho baseados no Adaptive Forms. Você pode usar o Adobe Sign para assinar documentos por email, criar processos comerciais baseados em formulários, recuperar e enviar dados para várias fontes de dados e enviar notificações por email
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '5377'
+source-wordcount: '5467'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ As etapas do fluxo de trabalho centradas no Forms executam operações específi
 * Conecte um modelo de fluxo de trabalho a várias fontes de dados para salvar e recuperar dados facilmente.
 
 * Use a etapa de email para enviar emails de notificação e outros anexos ao concluir uma ação e no início ou na conclusão de um workflow.
+
+>[!NOTE]
+>
+>Se o modelo de fluxo de trabalho estiver marcado para um armazenamento externo, em seguida, para todas as etapas do fluxo de trabalho do Forms, você poderá selecionar apenas a opção de variável para armazenar ou recuperar arquivos de dados e anexos.
 
 
 ## Atribuir etapa da tarefa {#assign-task-step}
@@ -62,11 +66,11 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
 * **[!UICONTROL Caminho do formulário adaptável]**: Especifique o caminho do formulário adaptável.<!--  or Interactive Communication.--> Você pode usar o formulário adaptável <!-- or interactive communication --> que é enviado para o fluxo de trabalho, disponível em um caminho absoluto, ou recupera o formulário adaptável de um caminho armazenado em uma variável do tipo de dados da string.
 * **[!UICONTROL Selecionar PDF de entrada usando]**: Especifique o caminho de um documento PDF não interativo. O campo fica disponível ao escolher um documento de PDF não interativo no campo Tipo. Você pode selecionar o PDF de entrada usando o caminho relativo à carga útil, salvo em um caminho absoluto ou usando uma variável do tipo de dados Documento. Por exemplo, [Diretório_de_carga]/Workflow/PDF/credit-card.pdf. O caminho não existe no repositório crx. Um administrador cria o caminho antes de usá-lo. Você precisa ter uma opção Documento de registro ativada ou o modelo de formulário baseado em Adaptive Forms para usar a opção PDF path .
-* **[!UICONTROL Para tarefas concluídas, renderize o Formulário adaptável como]**: Quando uma tarefa é marcada como concluída, é possível renderizar o Formulário adaptável como um formulário adaptável somente leitura ou um documento PDF. É necessário ativar uma opção Documento de registro ou Forms adaptável baseado em modelo de formulário para renderizar o Formulário adaptável como Documento de registro.
+* **[!UICONTROL Para tarefas concluídas, renderize o Formulário adaptável como]**: Quando uma tarefa é marcada como concluída, é possível renderizar o Formulário adaptável como um formulário adaptável somente leitura ou um documento PDF. É necessário ativar uma opção Documento de registro ou Forms adaptável baseado no modelo de formulário para renderizar o Formulário adaptável como Documento de registro.
 * **[!UICONTROL Pré-preenchido]**: Os seguintes campos listados abaixo servem como entradas para a tarefa:
 
    * **[!UICONTROL Selecione o arquivo de dados de entrada usando]**: Caminho do arquivo de dados de entrada (.json, .xml, .doc ou modelo de dados de formulário). Você pode recuperar o arquivo de dados de entrada usando um caminho relativo à carga útil ou recuperar o arquivo armazenado em uma variável do tipo de dados Document, XML ou JSON. Por exemplo, o arquivo contém os dados enviados para o formulário por meio de um aplicativo AEM Caixa de entrada. Um caminho de exemplo é [Diretório_de_carga]/workflow/data.
-   * **[!UICONTROL Selecionar anexos de entrada usando]**: Os anexos disponíveis no local são anexados ao formulário associado à tarefa. O caminho é sempre relativo à carga útil. Um caminho de exemplo é [Diretório_de_carga]/anexos/. Você pode especificar anexos colocados em relação à carga ou usar uma variável do tipo de documento (Lista de matriz > Documento) para especificar um anexo de entrada para o Formulário adaptável
+   * **[!UICONTROL Selecionar anexos de entrada usando]**: Os anexos disponíveis no local são anexados ao formulário associado à tarefa. O caminho pode ser relativo à carga útil ou recuperar o anexo armazenado em uma variável de um documento. Um caminho de exemplo é [Diretório_de_carga]/anexos/. Você pode especificar anexos colocados em relação à carga útil ou usar uma variável do tipo de documento (Lista de matriz > Documento) para especificar um anexo de entrada para o Formulário adaptável.
 
    <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -88,7 +92,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL Destinatário]** > **[!UICONTROL Atribuir opções]**: Especifique o método para atribuir a tarefa a um usuário. Você pode atribuir dinamicamente a tarefa a um usuário ou grupo usando o script do Seletor de Participante ou atribuir a tarefa a um usuário ou grupo de AEM específico.
-* **[!UICONTROL Seletor de participante]**: A opção está disponível quando a variável **[!UICONTROL Dinamicamente para um usuário ou grupo]** está selecionada no campo Assign options . Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Atribuir dinamicamente um fluxo de trabalho aos usuários](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Criando uma etapa personalizada do Adobe Experience Manager Dynamic Participant.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **[!UICONTROL Seletor de participante]**: A opção está disponível quando a variável **[!UICONTROL Dinamicamente para um usuário ou grupo]** está selecionada no campo Assign options . Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Atribuir dinamicamente um fluxo de trabalho aos usuários](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Criando uma etapa personalizada do Adobe Experience Manager Dynamic Participant.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL Participantes]**: O campo está disponível quando a variável **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** é selecionada na variável **[!UICONTROL Seletor de participante]** campo. O campo permite selecionar usuários ou grupos para a opção RandomParticipantChooser.
 
@@ -130,6 +134,10 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 * **[!UICONTROL Mostrar dados das etapas anteriores]**: Selecione essa opção para permitir que os destinatários exibam os destinatários anteriores, a ação já realizada na tarefa, os comentários adicionados à tarefa e o Documento de registro da tarefa concluída, se disponível.
 * **[!UICONTROL Mostrar dados de etapas subsequentes]**: Selecione essa opção para permitir que o destinatário atual visualize a ação executada e os comentários adicionados à tarefa pelos destinatários subsequentes. Também permite que o destinatário atual exiba um Documento de registro da tarefa concluída, se disponível.
 * **[!UICONTROL Visibilidade do tipo de dados]**: Por padrão, um destinatário pode visualizar um Documento de registro, destinatários, ação tomada e comentários que destinatários anteriores e subsequentes adicionaram. Use a opção visibility of data type para limitar o tipo de dados visível para os destinatários.
+
+>[!NOTE]
+>
+>As opções para salvar a etapa Atribuir tarefa como rascunho e recuperar o histórico da etapa Atribuir tarefa são desativadas ao configurar um modelo de fluxo de trabalho AEM para armazenamento de dados externo. Além disso, na Caixa de entrada, a opção para salvar está desativada.
 
 ## Etapa Enviar Email {#send-email-step}
 

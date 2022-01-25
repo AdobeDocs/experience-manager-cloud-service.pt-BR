@@ -1,9 +1,9 @@
 ---
 title: Como configurar o Unified Storage Connector para AEM Forms?
 description: Saiba como gerenciar o Unified Storage Connector para AEM Forms. Use o Conector de armazenamento unificado para conectar o AEM Forms a armazenamentos de dados externos.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -53,16 +53,16 @@ Execute as seguintes etapas para configurar um modelo de Fluxo de trabalho AEM p
 
 >[!NOTE]
 >
->As opções para salvar a etapa Atribuir tarefa como rascunho e recuperar o histórico da etapa Atribuir tarefa não estão disponíveis ao configurar um modelo de fluxo de trabalho AEM para armazenamento de dados externo.
+>As opções para salvar a etapa Atribuir tarefa como rascunho e recuperar o histórico da etapa Atribuir tarefa são desativadas ao configurar um modelo de fluxo de trabalho AEM para armazenamento de dados externo.
 
 ### Diretrizes para fluxos de trabalho de AEM para armazenamento externo de dados {#guidelines-workflows-external-data-storage}
 
 A seguir estão as diretrizes ao usar AEM Workflows e armazenar dados em armazenamentos de dados externos, como o servidor de armazenamento do Microsoft Azure:
 
-* Use variáveis para armazenar dados enquanto define arquivos de dados de entrada e saída e anexos em etapas do modelo de fluxo de trabalho. Não selecionar **[!UICONTROL Em relação à carga]** e **[!UICONTROL Disponível em um caminho absoluto]** opções. O **[!UICONTROL Em relação à carga]** e **Disponível em um caminho absoluto** as opções não são exibidas automaticamente após [configurar um modelo de fluxo de trabalho AEM para armazenamento externo de dados](#configure-workflow-external-data-storage).
+* Use variáveis para armazenar dados enquanto define arquivos de dados de entrada e saída e anexos em etapas do modelo de fluxo de trabalho. Não selecionar **[!UICONTROL Em relação à carga]** e **[!UICONTROL Disponível em um caminho absoluto]** opções. O **[!UICONTROL Em relação à carga]** e **[!UICONTROL Disponível em um caminho absoluto]** as opções não são exibidas automaticamente após [configurar um modelo de fluxo de trabalho AEM para armazenamento externo de dados](#configure-workflow-external-data-storage).
 
 * Use variáveis para armazenar arquivos de dados e anexos enquanto envia um formulário adaptável para um Fluxo de trabalho AEM. Não selecionar **[!UICONTROL Em relação à carga]** ao enviar um formulário adaptável para um Fluxo de trabalho AEM. O **[!UICONTROL Em relação à carga]** não será exibida automaticamente após [configurar um modelo de fluxo de trabalho AEM para armazenamento externo de dados](#configure-workflow-external-data-storage).
 
 * Não use uma etapa personalizada AEM Workflow em um modelo de workflow para armazenar dados no repositório CRX DE.
 
-* Quando você [configurar um modelo de fluxo de trabalho AEM para armazenamento externo de dados](#configure-workflow-external-data-storage), não crie colunas personalizadas para AEM Caixa de entrada com base nos dados de um fluxo de trabalho.
+* Quando você [configurar um modelo de fluxo de trabalho AEM para armazenamento externo de dados](#configure-workflow-external-data-storage), não crie colunas personalizadas para AEM Caixa de entrada, pois os valores das colunas personalizadas não são buscados se o item de trabalho na Caixa de entrada AEM pertencer a um fluxo de trabalho marcado para armazenamento externo.
