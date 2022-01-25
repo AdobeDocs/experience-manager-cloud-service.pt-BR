@@ -2,14 +2,14 @@
 title: Como configurar o armazenamento do Azure?
 description: Saiba como integrar formulários ao servidor de armazenamento do Azure.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
 
-# Configurar [!DNL Azure] armazenamento {#configure-azure-storage}
+# Configurar[!DNL Azure]armazenamento {#configure-azure-storage}
 
 [[!DNL Experience Manager Forms] Integração de dados](data-integration.md) fornece uma [!DNL Azure] configuração de armazenamento para integrar formulários com o [!DNL Azure] serviços de armazenamento. O Modelo de dados de formulário pode ser usado para criar um Forms adaptável que interage com o [!DNL Azure] para ativar workflows de negócios. Por exemplo:
 
@@ -93,4 +93,8 @@ Para definir uma propriedade de objeto de modelo de dados como uma chave de pesq
 1. Alterne a **[!UICONTROL Chave de pesquisa]** alterne a opção para o estado ATIVADO. Essa opção está disponível somente para tipos de dados primários.
 1. Toque **[!UICONTROL Concluído]** em seguida, toque em **[!UICONTROL Salvar]** para salvar o Modelo de dados de formulário.
 
-Após definir as propriedades do objeto de modelo de dados como chaves de pesquisa, as chaves são salvas como metadados no armazenamento do Azure.
+Após definir as propriedades do objeto de modelo de dados como chaves de pesquisa, os valores de hash são armazenados nas tags de índice do Azure e os valores codificados Base64 são armazenados nos metadados do Azure.
+
+>[!NOTE]
+>
+>Somente 10 chaves de pesquisa são permitidas por entidade do Azure, pois o Azure permite somente 10 tags por Blob e o valor das propriedades marcado como chaves de pesquisa são armazenadas nas tags de índice do Azure após o hash.
