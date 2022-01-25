@@ -10,7 +10,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
+source-git-commit: 494f6803967725ca04a1cc4512c1e553b9f0282c
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -29,11 +29,11 @@ Uma conta de alias de empresa do Dynamic Media garante que todos os URLs do Dyna
 
 Ao configurar uma conta de alias de empresa do Dynamic Media, esteja ciente do seguinte:
 
-* Ao configurar uma conta de alias da empresa no **[!UICONTROL Editar configuração do Dynamic Media]** para que a invalidação do cache seja bem-sucedida, você deve invalidar URLs para *both* o **[!UICONTROL Empresa]** e a **[!UICONTROL Alias da Empresa]** , simultaneamente.
 * Quaisquer URLs do Dynamic Media ou código incorporado do visualizador em seu *live* as propriedades digitais devem ser atualizadas manualmente para refletir o novo nome do alias. No entanto, quaisquer URLs ou códigos de inserção de visualizadores com o nome original da empresa Dynamic Media continuam a funcionar para ativos existentes ou novos.
 * O recurso de conta de alias da empresa do Dynamic Media está limitado ao modo de criação e ao delivery do Experience Manager Assets. O nome do alias da empresa não funciona com o Experience Manager Sites. Os componentes do WCM (Gerenciamento de conteúdo da Web) não são atualizados para essa alteração. Esses componentes continuam a funcionar com o nome original da empresa da Dynamic Media para buscar ativos da Dynamic Media.
 * Você pode configurar apenas uma conta de alias da empresa no **[!UICONTROL Editar configuração do Dynamic Media]** página. No entanto, é possível criar quantas contas de alias da empresa por meio de um caso de suporte e refletir manualmente o nome do alias necessário nos URLs do Dynamic Media ou no código incorporado do visualizador.
 * O pronto para uso [Invalidação de cache](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) O recurso do Dynamic Media invalida os URLs com as contas Alias da empresa e da empresa configuradas na página Configuração do Dynamic Media no Cloud Services.
+* Ao configurar uma conta de alias da empresa no **[!UICONTROL Editar configuração do Dynamic Media]** para que a invalidação do cache seja bem-sucedida, você deve invalidar URLs para *both* o **[!UICONTROL Empresa]** e a **[!UICONTROL Alias da Empresa]** , simultaneamente.
 
 Consulte também [Criar uma configuração do Dynamic Media no Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
