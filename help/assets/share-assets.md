@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1bef3ed7ba12e872dd8f478b13d14b459eb9495b
+source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1287'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## Compartilhar ativos como um link {#sharelink}
 
-O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar os recursos para partes externas, profissionais de marketing e outros [!DNL Experience Manager] usuários. A funcionalidade permite que usuários anônimos acessem e baixem os ativos compartilhados com eles. Ao baixar ativos de um link compartilhado, [!DNL Experience Manager Assets] O usa um serviço assíncrono que oferece download mais rápido e ininterrupto. Os ativos a serem baixados são enfileirados em segundo plano em uma caixa de entrada em arquivos ZIP com tamanho de arquivo gerenciável. Para downloads grandes, o download é agrupado em vários arquivos de 100 GB por tamanho de arquivo.
+O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar os recursos para partes externas, profissionais de marketing e outros [!DNL Experience Manager] usuários. A funcionalidade permite que usuários anônimos acessem e baixem os ativos compartilhados com eles. Ao baixar ativos de um link compartilhado, [!DNL Experience Manager Assets] O usa um serviço assíncrono que oferece download mais rápido e ininterrupto. Os ativos a serem baixados são enfileirados em segundo plano em arquivos ZIP com tamanho de arquivo gerenciável. Para downloads grandes, o download é agrupado em vários arquivos de 100 GB por tamanho de arquivo.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
