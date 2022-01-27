@@ -1,11 +1,10 @@
 ---
 title: Configuração do carrinho de compras e do Dispatcher
 description: Configuração do carrinho de compras e do Dispatcher
-translation-type: tm+mt
-source-git-commit: cdeef662947c502a70b89b6565b347030b286b85
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 100%
+source-wordcount: '142'
+ht-degree: 95%
 
 ---
 
@@ -19,5 +18,5 @@ Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-
 Você pode encontrar mais informações sobre esse tópico nos seguintes recursos:
 
 - [Carrinho de compras](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
-- [AEM Dispatcher com proxy da Magento](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
+- [AEM Dispatcher com proxy da Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
 - [Hub do Docker](https://hub.docker.com/)

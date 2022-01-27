@@ -1,16 +1,16 @@
 ---
 title: Introdução e visão geral
-description: Introdução e visão geral do conteúdo e comércio. A CIF (Experience Manager Integration Framework) é um padrão recomendado do Commerce Adobe para integrar e estender os serviços comerciais do Magento e outras soluções comerciais de terceiros com o Experience Cloud.
+description: Introdução e visão geral do conteúdo e comércio. A CIF (Experience Manager Integration Framework) é um padrão recomendado do Commerce Adobe para integrar e estender os serviços comerciais da Adobe Commerce e outras soluções comerciais de terceiros com o Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 2%
+source-wordcount: '894'
+ht-degree: 3%
 
 ---
 
-# Conteúdo e comércio {#content-commerce}
+# Content and Commerce {#content-commerce}
 
 Com o conteúdo e o comércio do Adobe Experience Manager, as marcas podem dimensionar e inovar mais rapidamente para diferenciar as experiências de comércio e capturar a aceleração dos gastos online. O AEM Content and Commerce combina as experiências imersivas, omnicanais e personalizadas no Experience Manager a qualquer quantidade de soluções comerciais para trazer experiências diferenciadas para todas as partes da jornada de compras, reduzindo o tempo de implantação e aumentando a conversão.
 

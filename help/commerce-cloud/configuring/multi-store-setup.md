@@ -1,6 +1,6 @@
 ---
 title: Configuração de várias lojas do Commerce
-description: Saiba como mapear várias exibições de loja do Magento para o AEM. Isso permite que os projetos suportem casos de uso de vários locatários e várias línguas.
+description: Saiba como mapear várias exibições de loja do Adobe Commerce para o AEM. Isso permite que os projetos suportem casos de uso de vários locatários e várias línguas.
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
@@ -10,32 +10,32 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: c5ae2fb098c30d2be45316367f87725d16d84af7
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 81%
+source-wordcount: '385'
+ht-degree: 57%
 
 ---
 
 # Configuração de várias lojas do Commerce {#multi-store}
 
-Os Componentes principais da CIF do AEM podem ser usados em várias estruturas de site do AEM e a implementação de cliente GraphQL subjacente pode se conectar a diferentes lojas/visualizações de loja da Magento. Assim, os projetos podem implementar configurações complexas de várias lojas/vários sites.
+Os Componentes principais da CIF do AEM podem ser usados em várias estruturas de site do AEM e a implementação de cliente GraphQL subjacente pode se conectar a diferentes lojas/visualizações de loja da Adobe Commerce. Assim, os projetos podem implementar configurações complexas de várias lojas/vários sites.
 
-Veja abaixo um vídeo que detalha passo a passo as opções para integrar várias visualizações da loja da Magento ao Adobe Experience Manager Sites.
+Um vídeo que detalha detalhadamente as opções para integrar várias visualizações da Adobe Commerce Store ao Adobe Experience Manager Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 Os recursos de gerenciamento de vários sites do AEM para Live Copy e Language Copy são usados junto com a Commerce Integration Framework para gerenciar sites em várias regiões e locales.
 
-A configuração recomendada é usar uma relação 1:1 entre um site do AEM e uma visualização de loja da Magento.
+A configuração recomendada é usar uma relação 1:1 entre AEM site e a visualização da loja da Adobe Commerce.
 
 Para conectar um site do AEM e os Componentes principais da CIF do AEM a uma visualização de loja dedicada, siga as etapas abaixo:
 
 ## Configuração {#configuration}
 
-1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações da Magento](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações da Adobe Commerce](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
-2. Verifique se a conexão entre o AEM e a Magento está funcionando.
+2. Verifique se a conexão entre o AEM e o Adobe Commerce está funcionando.
 
 3. Crie uma configuração secundária da configuração do CIF Cloud Service seguindo estas etapas:
 
@@ -47,7 +47,7 @@ Para conectar um site do AEM e os Componentes principais da CIF do AEM a uma vis
 
    >[!TIP]
    >
-   > Os catálogos de comércio podem ser abordados usando IDs ou UIDs. Os UIDs foram introduzidos no Magento 2.4.2. Habilite-os somente se o back-end de comércio suportar um esquema GraphQL da versão 2.4.2 ou posterior.
+   > Os catálogos de comércio podem ser abordados usando IDs ou UIDs. As UIDs foram introduzidas no Adobe Commerce 2.4.2. Habilite-a somente se o back-end de comércio suportar um esquema GraphQL da versão 2.4.2 ou posterior.
 
 4. Atribua a configuração secundária a um site do AEM
 
@@ -59,7 +59,7 @@ Para conectar um site do AEM e os Componentes principais da CIF do AEM a uma vis
 
 ## Recursos adicionais
 
-* [Sites, lojas e visualizações da Magento](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+* [Sites, lojas e visualizações da Adobe Commerce](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [Componentes principais da CIF do AEM — Configuração de várias lojas/sites](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Usar o gerenciamento de vários sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](/help/sites-cloud/administering/msm/overview.md)

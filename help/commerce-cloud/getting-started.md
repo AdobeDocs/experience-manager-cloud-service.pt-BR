@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 2afeb12ec7b99da056652fc869da5bc82db30754
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1096'
 ht-degree: 29%
 
 ---
@@ -32,7 +32,7 @@ Com o provisionamento do complemento CIF, ele será aplicado a todos os programa
 
 A segunda etapa é o autoatendimento para cada ambiente do AEM as a Cloud Service. Há algumas configurações adicionais a serem feitas após o provisionamento inicial do complemento CIF.
 
-## Conexão de AEM com uma solução comercial {#magento}
+## Conexão de AEM com uma solução comercial {#solution}
 
 Para conectar o complemento CIF e a [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) com uma solução comercial, é necessário fornecer o URL do ponto de extremidade GraphQL por meio de uma variável de ambiente do Cloud Manager. O nome da variável é `COMMERCE_ENDPOINT`. Deve ser configurada uma conexão segura via HTTPS.
 
@@ -81,7 +81,7 @@ Para conectar AEM com uma solução comercial via Adobe I/O CLI, siga estas etap
 
    Consulte [documentos da CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) para saber mais.
 
-   O URL do ponto de extremidade GraphQL de comércio deve apontar para o serviço GraphQl do Commerce e usar uma conexão HTTPS segura. Por exemplo: `https://<yourmagentosystem>/graphql`.
+   O URL do ponto de extremidade GraphQL de comércio deve apontar para o serviço GraphQl do Commerce e usar uma conexão HTTPS segura. Por exemplo: `https://<yourcommercesystem>/graphql`.
 
 4. Habilitar recursos do catálogo de preparo que exigem autenticação (opcional)
 
@@ -103,7 +103,7 @@ Agora você está pronto para usar o AEM Commerce as a Cloud Service e implantar
 
 ## Configuração de lojas e catálogos {#catalog}
 
-O complemento CIF e a [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components) pode ser usado em várias estruturas de site AEM conectadas a diferentes lojas de comércio (ou visualizações de loja, etc.). Por padrão, o complemento CIF é implantado com uma configuração padrão conectando-se ao catálogo e loja padrão do Adobe Commerce (Magento).
+O complemento CIF e a [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components) pode ser usado em várias estruturas de site AEM conectadas a diferentes lojas de comércio (ou visualizações de loja, etc.). Por padrão, o complemento CIF é implantado com uma configuração padrão conectando-se ao catálogo e loja padrão da Adobe Commerce.
 
 Essa configuração pode ser ajustada para o projeto por meio da configuração do Cloud Service da CIF, seguindo estas etapas:
 
@@ -118,7 +118,7 @@ Essa configuração pode ser ajustada para o projeto por meio da configuração 
 As seguintes propriedades podem ser configuradas:
 
 - Cliente GraphQL - selecione o cliente GraphQL configurado para comunicação de back-end de comércio. Normalmente, isso deve permanecer no padrão.
-- Exibição de armazenamento - o identificador de exibição de loja (Magento). Se estiver vazia, a exibição de loja padrão será usada.
+- Exibição da loja - o identificador de exibição da loja. Se estiver vazia, a exibição de loja padrão será usada.
 - Caminho do proxy GraphQL - o caminho do URL Proxy GraphQL no AEM usado para solicitações de proxy no ponto de extremidade GraphQL de back-end do comércio.
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ As seguintes propriedades podem ser configuradas:
 - Ativar o suporte à UID do catálogo - ative o suporte para UID em vez da ID nas chamadas GraphQL de back-end de comércio.
    >[!NOTE]
    >
-   > O suporte para UIDs foi introduzido no Adobe Commerce (Magento) 2.4.2. Habilite-o somente se o back-end de comércio suportar um esquema GraphQL da versão 2.4.2 ou posterior.
+   > O suporte para UIDs foi introduzido no Adobe Commerce 2.4.2. Habilite-o somente se o back-end de comércio suportar um esquema GraphQL da versão 2.4.2 ou posterior.
 - Identificador de categoria raiz do catálogo - o identificador (UID ou ID) da raiz do catálogo de loja
    >[!CAUTION]
    >

@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
+source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 65%
+source-wordcount: '1004'
+ht-degree: 64%
 
 ---
 
@@ -68,25 +68,25 @@ Para o desenvolvimento local do complemento CIF usando o AEM as a Cloud Service,
 
    O arquivo zip do complemento CIF contém dois arquivos `.far` de recursos Sling. Use o arquivo correto para autor ou publicação no AEM, dependendo de como você planeja executar o SDK do AEM as a Cloud Service local.
 
-1. Crie uma variável de ambiente do sistema operacional local com o nome `COMMERCE_ENDPOINT` mantendo o ponto de extremidade GraphQL da Magento.
+1. Crie uma variável de ambiente do sistema operacional local com o nome `COMMERCE_ENDPOINT` mantendo o ponto de extremidade GraphQL da Adobe Commerce.
 
    Exemplo para Mac OSX:
 
    ```bash
-   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    Exemplo para Windows:
 
    ```bash
-   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    Essa variável é usada pelo AEM para se conectar ao seu sistema de comércio. Além disso, o complemento CIF inclui um proxy reverso local para disponibilizar o ponto de extremidade GraphQL do Commerce localmente. Isso é usado pelas ferramentas de criação da CIF (console do produto e seletores) e para os componentes do lado do cliente da CIF que fazem chamadas GraphQL diretas.
 
    Essa variável também deve ser configurada para o ambiente do AEM as a Cloud Service. Para obter mais informações sobre variáveis, consulte [Configuração do OSGi para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (Opcional) Para ativar os recursos do catálogo preparado, você deve criar um token de integração para sua instância do Magento. Siga as etapas em [Introdução](./getting-started.md#staging) para criar o token.
+1. (Opcional) Para ativar os recursos do catálogo preparado, você deve criar um token de integração para sua instância do Adobe Commerce. Siga as etapas em [Introdução](./getting-started.md#staging) para criar o token.
 
    Definir um segredo OSGi com o nome `COMMERCE_AUTH_HEADER` para o seguinte valor:
 
