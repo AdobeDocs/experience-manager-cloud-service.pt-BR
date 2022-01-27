@@ -1,14 +1,14 @@
 ---
 title: Referências do desenvolvedor para [!DNL Assets]
-description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
+description: '[!DNL Assets] O conteúdo de referência de APIs e desenvolvedores permite gerenciar ativos, incluindo arquivos binários, metadados, representações, comentários e [!DNL Content Fragments].'
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: bd00cd19852affd24d732c15b03dbf8248f2ff38
+source-git-commit: 2f0521831383c11e1edee8c5d719ec42f7bcfd5e
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 2%
+source-wordcount: '1449'
+ht-degree: 3%
 
 ---
 
@@ -26,43 +26,43 @@ O artigo contém recomendações, materiais de referência e recursos para desen
 
 | Nível de suporte | Descrição |
 | ------------- | --------------------------- |
-| Instantâneo | Compatível |
+| ✓ | Compatível |
 | × | Não suportado. Não utilizar. |
 | - | Não disponível |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) APIs Java | [Serviço Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Visualização)_ |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) APIs Java | [Serviço Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Binário original** |  |  |  |  |  |  |
-| Criar original | Instantâneo | × | - | × | × | - |
-| Ler original | - | × | Instantâneo | Instantâneo | Instantâneo | - |
-| Atualizar original | Instantâneo | × | Instantâneo | × | × | - |
-| Excluir original | - | Instantâneo | - | Instantâneo | Instantâneo | - |
-| Copiar original | - | Instantâneo | - | Instantâneo | Instantâneo | - |
-| Mover original | - | Instantâneo | - | Instantâneo | Instantâneo | - |
+| Criar original | ✓ | × | - | × | × | - |
+| Ler original | - | × | ✓ | ✓ | ✓ | - |
+| Atualizar original | ✓ | × | ✓ | × | × | - |
+| Excluir original | - | ✓ | - | ✓ | ✓ | - |
+| Copiar original | - | ✓ | - | ✓ | ✓ | - |
+| Mover original | - | ✓ | - | ✓ | ✓ | - |
 | **Metadados** |  |  |  |  |  |  |
-| Criar metadados | - | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| Ler metadados | - | Instantâneo | - | Instantâneo | Instantâneo | - |
-| Atualizar metadados | - | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| Excluir metadados | - | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| Copiar metadados | - | Instantâneo | - | Instantâneo | Instantâneo | - |
-| Mover metadados | - | Instantâneo | - | Instantâneo | Instantâneo | - |
+| Criar metadados | - | ✓ | ✓ | ✓ | ✓ | - |
+| Ler metadados | - | ✓ | - | ✓ | ✓ | - |
+| Atualizar metadados | - | ✓ | ✓ | ✓ | ✓ | - |
+| Excluir metadados | - | ✓ | ✓ | ✓ | ✓ | - |
+| Copiar metadados | - | ✓ | - | ✓ | ✓ | - |
+| Mover metadados | - | ✓ | - | ✓ | ✓ | - |
 | **Fragmentos de conteúdo (CF)** |  |  |  |  |  |  |
-| Criar CF | - | Instantâneo | - | Instantâneo | - | - |
-| Ler CF | - | Instantâneo | - | Instantâneo | - | Instantâneo |
-| Atualizar CF | - | Instantâneo | - | Instantâneo | - | - |
-| Excluir CF | - | Instantâneo | - | Instantâneo | - | - |
-| Copiar CF | - | Instantâneo | - | Instantâneo | - | - |
-| Mover CF | - | Instantâneo | - | Instantâneo | - | - |
+| Criar CF | - | ✓ | - | ✓ | - | - |
+| Ler CF | - | ✓ | - | ✓ | - | ✓ |
+| Atualizar CF | - | ✓ | - | ✓ | - | - |
+| Excluir CF | - | ✓ | - | ✓ | - | - |
+| Copiar CF | - | ✓ | - | ✓ | - | - |
+| Mover CF | - | ✓ | - | ✓ | - | - |
 | **Versões** |  |  |  |  |  |  |
-| Criar versão | Instantâneo | Instantâneo | - | - | - | - |
-| Ler versão | - | Instantâneo | - | - | - | - |
-| Excluir versão | - | Instantâneo | - | - | - | - |
+| Criar versão | ✓ | ✓ | - | - | - | - |
+| Ler versão | - | ✓ | - | - | - | - |
+| Excluir versão | - | ✓ | - | - | - | - |
 | **Pastas** |  |  |  |  |  |  |
-| Criar pasta | Instantâneo | Instantâneo | - | Instantâneo | - | - |
-| Ler pasta | - | Instantâneo | - | Instantâneo | - | - |
-| Excluir pasta | Instantâneo | Instantâneo | - | Instantâneo | - | - |
-| Copiar pasta | Instantâneo | Instantâneo | - | Instantâneo | - | - |
-| Mover pasta | Instantâneo | Instantâneo | - | Instantâneo | - | - |
+| Criar pasta | ✓ | ✓ | - | ✓ | - | - |
+| Ler pasta | - | ✓ | - | ✓ | - | - |
+| Excluir pasta | ✓ | ✓ | - | ✓ | - | - |
+| Copiar pasta | ✓ | ✓ | - | ✓ | - | - |
+| Mover pasta | ✓ | ✓ | - | ✓ | - | - |
 
 ## Upload de ativo {#asset-upload}
 

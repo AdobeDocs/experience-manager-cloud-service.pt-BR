@@ -1,10 +1,10 @@
 ---
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 27%
+source-wordcount: '859'
+ht-degree: 29%
 
 ---
 
@@ -88,7 +88,7 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
    1. **Token de acesso**: insira o token de acesso.
 
       >[!NOTE]
-      >Você pode recuperar o token de acesso usando o **Abrir token de acesso** botão. Você precisa garantir que pertença ao grupo dos administradores de AEM na instância do Cloud Service de destino.
+      >Você pode recuperar o token de acesso usando o **Abrir token de acesso** botão. Você precisa garantir que pertença ao grupo &quot;Administradores&quot; na instância do Cloud Service de destino.
 
    1. **Parâmetros**: selecione os seguintes parâmetros para criar o conjunto de migração:
 
