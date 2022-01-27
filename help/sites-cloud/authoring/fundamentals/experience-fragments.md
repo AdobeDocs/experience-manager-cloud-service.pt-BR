@@ -2,10 +2,10 @@
 title: Fragmentos de experiência
 description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 229e2d8252a9efe1e303e926bde6719387833fa9
+source-git-commit: 848c0090565db7a93243c7215ef159204597360e
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 99%
+source-wordcount: '1494'
+ht-degree: 98%
 
 ---
 
@@ -353,6 +353,4 @@ Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML 
 
 Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado pelo AEM e por canais de terceiros.
 
-Para exportar para o Adobe Target, consulte [Integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
-
-<!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
+Para exportar para o Adobe Target, consulte [Integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md). JSON também pode ser usado, consulte [Integração do Target com fragmentos de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md).
