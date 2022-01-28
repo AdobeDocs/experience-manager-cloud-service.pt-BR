@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
+source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2288'
 ht-degree: 2%
 
 ---
@@ -105,15 +105,34 @@ Para alterar os níveis de log de ambientes do Cloud, a configuração OSGI do S
 
 **Ativando o Nível de Log DEBUG**
 
-O nível de log padrão é INFO, ou seja, as mensagens DEBUG não são registradas.
-Para ativar o nível de log DEBUG, defina a variável
+O nível de log padrão é INFO, ou seja, as mensagens DEBUG não são registradas. Para ativar o nível de log DEBUG, atualize a seguinte propriedade para o modo de depuração.
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-propriedade a ser depurada. Não deixe o log no nível de log DEBUG por mais tempo do que o necessário, pois ele gera muitos logs.
+Por exemplo, defina `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` com o seguinte valor.
+
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+Não deixe o log no nível de log DEBUG por mais tempo do que o necessário, pois isso gera muitas entradas.
+
+Níveis de log discretos podem ser definidos para os diferentes ambientes de AEM usando o direcionamento de configuração OSGi baseado em modo de execução, se for desejável sempre fazer logon em `DEBUG` durante o desenvolvimento. Por exemplo:
+
+| Ambiente | Local de configuração OSGi por modo de execução | `org.apache.sling.commons.log.level` valor da propriedade | | - | - | - | | Desenvolvimento | /apps/example/config/org.apache.sling.commons.log.LogManager.fatory.config~example.cfg.json | DEPURAÇÃO | | Fase | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.fatory.config~example.cfg.json | AVISO | | Produção | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.fatory.config~example.cfg.json | ERRO |
+
 Uma linha no arquivo de depuração geralmente começa com DEBUG e, em seguida, fornece o nível de log, a ação do instalador e a mensagem de log. Por exemplo:
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 Os níveis de log são os seguintes:
 
