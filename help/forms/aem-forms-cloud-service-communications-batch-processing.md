@@ -2,10 +2,10 @@
 title: Experience Manager [!DNL Forms] Processamento em lote de comunicações as a Cloud Service
 description: Como criar comunicações personalizadas e orientadas por marca?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '2297'
-ht-degree: 1%
+source-wordcount: '2250'
+ht-degree: 0%
 
 ---
 
@@ -32,9 +32,9 @@ As comunicações fornecem APIs para geração de documentos sob demanda e progr
 
 Uma operação em lote é um processo de geração de vários documentos do tipo semelhante para um conjunto de registros em intervalos programados. Uma operação em lote tem duas partes: Configuração (definição) e execução.
 
-* **Configuração (definição)**: Uma configuração em lote armazena informações sobre vários ativos e propriedades a serem definidos para documentos gerados. Por exemplo, ele fornece detalhes sobre o modelo XDP ou PDF e o local dos dados do cliente a serem usados, além de especificar várias propriedades para documentos de PDF de saída.
+* **Configuração (definição)**: Uma configuração em lote armazena informações sobre vários ativos e propriedades a serem definidos para documentos gerados. Por exemplo, ele fornece detalhes sobre o modelo XDP ou PDF e o local dos dados do cliente a serem usados, além de especificar várias propriedades para documentos de saída.
 
-* **Execução**: Para iniciar uma operação em lote, especifique a execução e transmita o nome da configuração em lote para a API de execução em lote.
+* **Execução**: Para iniciar uma operação em lote, passe o nome da configuração do lote para a API de execução em lote.
 
 ### Componentes de uma operação em lote {#components-of-a-batch-operations}
 
@@ -42,7 +42,7 @@ Uma operação em lote é um processo de geração de vários documentos do tipo
 
 **Configuração do armazenamento de dados em lote (USC)**: A configuração de dados em lote ajuda a configurar uma instância específica do armazenamento de blobs para APIs em lote. Ele permite especificar os locais de entrada e saída no armazenamento do Microsoft Azure Blob de propriedade do cliente.
 
-**APIs em lote**: Permite criar configurações em lote e executar as execuções em lote com base nessas configurações para criar e executar uma operação em lote para unir um modelo PDF ou XDP aos dados e gerar saída nos formatos PDF, PS, PCL, DPL, IPL e ZPL. As comunicações fornecem APIs em lote para criar, ler, atualizar e excluir operações.
+**APIs em lote**: Permite criar configurações de lote e executar as execuções de lote com base nessas configurações para unir um modelo PDF ou XDP aos dados e gerar saída nos formatos PDF, PS, PCL, DPL, IPL e ZPL. As comunicações fornecem APIs em lote para o gerenciamento de configurações e a execução em lote.
 
 ![tabela de mesclagem de dados](assets/communications-batch-structure.png)
 
@@ -125,12 +125,11 @@ Para usar uma API em lote, crie uma configuração em lote e execute uma execuç
 
 ### Criar um lote {#create-a-batch}
 
-Para criar um lote, use o `GET /config` API. Inclua as seguintes propriedades obrigatórias no corpo da solicitação HTTP:
-
+Para criar um lote, use o `POST /config` API. Inclua as seguintes propriedades obrigatórias no corpo da solicitação HTTP:
 
 * **configName**: Especifique o nome Exclusivo do lote. Por exemplo, `wknd-job`
 * **dataSourceConfigUri**: Especifique o local da configuração do armazenamento de dados em lote. Pode ser um caminho relativo ou absoluto da configuração. Por exemplo: `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**: Especificar formatos de saída: PDF ou IMPRIMIR. Se você usar o tipo de saída PRINT , em `printedOutputOptionsList` , especifique pelo menos uma opção de impressão. As opções de impressão são identificadas pelo tipo de renderização, de modo que, no momento, várias opções de impressão com o mesmo tipo de renderização não são permitidas. Os formatos compatíveis são PS, PCL, DPL, IPL e ZPL.
+* **outputTypes**: Especificar formatos de saída: PDF e IMPRIMIR. Se você usar o tipo de saída PRINT , em `printedOutputOptionsList` , especifique pelo menos uma opção de impressão. As opções de impressão são identificadas pelo tipo de renderização, de modo que, no momento, várias opções de impressão com o mesmo tipo de renderização não são permitidas. Os formatos compatíveis são PS, PCL, DPL, IPL e ZPL.
 
 * **modelo**: Especifique o caminho absoluto ou relativo do modelo. Por exemplo, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -138,7 +137,7 @@ Se você especificar um caminho relativo, também forneça uma raiz de conteúdo
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
-Depois de criar um lote, é possível usar a variável `GET /config /[configName]/execution/[execution-identifier]` para ver detalhes do lote.
+Você pode usar `GET /config /[configName]` para ver detalhes da configuração do lote.
 
 ### Executar um lote {#run-a-batch}
 
@@ -150,14 +149,14 @@ Para executar (executar) um lote, use o `POST /config /[configName]/execution`. 
 
 ### Verificar o status de um lote {#status-of-a-batch}
 
-Para recuperar o status de um lote, use o `GET /config /[configName]/execution/[execution-identifier]`. O identificador de execução é incluído no cabeçalho da resposta HTTP para a solicitação de execução em lote.  Por exemplo, a imagem a seguir exibe o identificador de execução para um trabalho em lote.
+Para recuperar o status de um lote, use o `GET /config /[configName]/execution/[execution-identifier]`. O identificador de execução é incluído no cabeçalho da resposta HTTP para a solicitação de execução em lote.
 
 A resposta da solicitação de status contém a seção de status . Ele fornece detalhes sobre o status do trabalho em lote, o número de registros já em pipeline (já lidos e processados) e o status de cada outputType/renderType(número de itens em andamento, bem-sucedidos e com falha). O status também inclui a hora inicial e final do trabalho em lote, juntamente com informações sobre erros, se houver. A hora de término é -1 até que a execução do lote seja realmente concluída.
 
 >[!NOTE]
 >
 >* Quando você solicita vários formatos PRINT, o status contém várias entradas. Por exemplo, PRINT/ZPL, PRINT/IPL.
->* Um trabalho em lote não lê todos os registros simultaneamente, em vez disso, o trabalho continua lendo e incrementando o número de registros. Portanto, o status retorna um número diferente de registros em cada execução.
+>* Um trabalho em lote não lê todos os registros simultaneamente, em vez disso, o trabalho continua lendo e incrementando o número de registros. Portanto, o status retorna -1 até que todos os registros tenham sido lidos.
 
 
 ### Exibir documentos gerados {#view-generated-documents}
@@ -224,8 +223,6 @@ Um documento PDF que não contém um fluxo XFA não pode ser renderizado como Po
 A documentação de referência da API fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e vários serviços fornecidos pelas APIs. A documentação de referência da API está disponível no formato .yaml. Você pode baixar o [APIs em lote](assets/batch-api.yaml) e faça upload para o Postman para verificar a funcionalidade de APIs.
 
 ## Problemas conhecidos {#known-issues}
-
-* Certifique-se de que o arquivo xml de dados não contenha o cabeçalho da declaração XML. Por exemplo, `<?xml version="1.0" encoding="UTF-8"?>`
 
 * Quando PRINT é especificado, um tipo de renderização específico só pode ser especificado uma vez na lista de opções de impressão. Por exemplo, você não pode ter duas opções de impressão especificando cada uma um um tipo de renderização PCL.
 

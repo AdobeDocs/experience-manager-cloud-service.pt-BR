@@ -1,9 +1,9 @@
 ---
 title: 'Usar fontes personalizadas '
 description: 'Usar fontes personalizadas '
-source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Você pode usar as Comunicações as a Cloud Service do Forms para combinar um m
 
 Você pode [incorporar uma fonte](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) para um documento PDF. Quando uma fonte é incorporada, o documento PDF aparece (Aparência) idêntico em todas as plataformas. Usava fonte incorporada para garantir uma aparência consistente. Quando uma fonte não é incorporada, a renderização da fonte depende das configurações de renderização do cliente do visualizador de PDF. Se a fonte estiver disponível na máquina cliente, o PDF usa a fonte especificada, caso contrário, o PDF é renderizado com uma fonte de fallback.
 
-## Adicionar fontes personalizadas ao seu ambiente as a Cloud Service do Forms
+## Adicionar fontes personalizadas ao seu ambiente as a Cloud Service do Forms {#custom-fonts-cloud-service}
 
 Para adicionar fontes personalizadas ao seu ambiente Cloud Service:
 
-1. Configure e abra o projeto de desenvolvimento local. Você pode usar qualquer IDE de sua escolha.
+1. Configure e abra o [projeto de desenvolvimento local](setup-local-development-environment.md). Você pode usar qualquer IDE de sua escolha.
 1. Na estrutura de pastas de nível superior do projeto, crie uma pasta para salvar fontes personalizadas e adicionar fontes personalizadas à pasta. Por exemplo, fonts/src/main/resources
    ![Pasta de fontes](assets/fonts.png)
 
@@ -71,3 +71,21 @@ Para adicionar fontes personalizadas ao seu ambiente Cloud Service:
    ```
 
 1. Verifique o código atualizado e [executar o pipeline](/help/implementing/cloud-manager/deploy-code.md) para implantar as fontes no seu ambiente Cloud Service.
+
+1. Abra o prompt de comando, navegue até a pasta local do projeto e execute o comando abaixo. Ele cria um pacote com as fontes em um arquivo .jar. Você pode usar o arquivo .jar para a implantação local do projeto.
+
+```shell
+mvn clean install
+```
+
+## Adicionar fontes personalizadas ao ambiente de desenvolvimento do Forms Cloud Service {#custom-fonts-cloud-service-sdk}
+
+1. Inicie seu ambiente de desenvolvimento local.
+1. Navegar para [crx-repository]\instalar pasta
+1. Coloque o arquivo .jar contendo fontes personalizadas e o código de implantação relevante na pasta de instalação. Se você não tiver o arquivo .jar, execute as etapas listadas em [Adicionar fontes personalizadas ao seu ambiente as a Cloud Service do Forms](#custom-fonts-cloud-service) para gerar o arquivo.
+1. Execute o [Ambiente SDK baseado em docker](setup-local-development-environment.md#docker-microservices)
+
+
+   >[!NOTE]
+   >
+   >Sempre que você implantar um arquivo .jar atualizado para adicionar ou remover fontes personalizadas do ambiente de implantação local, pare e inicie o ambiente SDK baseado em docker.
