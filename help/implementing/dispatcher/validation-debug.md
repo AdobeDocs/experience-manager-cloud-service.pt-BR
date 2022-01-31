@@ -3,9 +3,9 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 7306afb0ff2e84077673bbd9c728028e0933ebb1
+source-git-commit: ddc49ef1eed491a4464d17b6a47f924c42381e7f
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2518'
 ht-degree: 2%
 
 ---
@@ -441,6 +441,8 @@ Na configuração do Dispatcher, a mesma variável de ambiente está disponível
   { "${VIRTUALHOST}" }
 }
 ```
+
+Como alternativa, você pode usar variáveis de ambiente do Cloud Manager na configuração httpd/dispatcher. Esse método é especialmente importante se um programa tiver vários ambientes dev e alguns desses ambientes dev tiverem valores diferentes para a configuração httpd/dispatcher. A mesma sintaxe ${VIRTUALHOST} seria usada como no exemplo acima, no entanto, as declarações Define no arquivo de variáveis acima não seriam usadas. Leia o [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en) para obter instruções sobre como configurar variáveis de ambiente do Cloud Manager.
 
 Ao testar sua configuração localmente, você pode simular diferentes tipos de ambiente transmitindo a variável `DISP_RUN_MODE` para `docker_run.sh` script diretamente:
 
