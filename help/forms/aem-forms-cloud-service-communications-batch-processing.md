@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] Processamento em lote de comunicações as a Cloud Service
 description: Como criar comunicações personalizadas e orientadas por marca?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
@@ -168,55 +168,6 @@ Vamos entender com a ajuda de um exemplo: Suponha que haja um arquivo de dados d
 >[!NOTE]
 >
 >O processamento de um lote pode levar algum tempo, dependendo do número de registros de entrada e da complexidade do template, aguardar alguns minutos antes de verificar as pastas de destino quanto a arquivos de saída.
-
-## Considerações  {#considerations-for-communications-apis}
-
-### Dados do formulário {#form-data}
-
-As APIs de comunicações aceitam um design de formulário que normalmente é criado no Designer e dados de formulário XML como entrada. Para preencher um documento com dados, um elemento XML deve existir nos dados do formulário XML para cada campo de formulário que você deseja preencher. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML é ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos. O fator importante é que os elementos XML são especificados com valores correspondentes.
-
-Considere o seguinte exemplo de formulário de pedido de empréstimo:
-
-![Formulário de pedido de empréstimo](assets/loanFormData.png)
-
-Para unir dados neste design de formulário, crie uma fonte de dados XML que corresponda ao formulário. O XML a seguir representa uma fonte de dados XML que corresponde ao formulário de aplicativo de hipoteca de exemplo.
-
-```XML
-<?xml version="1.0" encoding="UTF-8" ?>
-- <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
-- <xfa:data>
-- <data>
-    - <Layer>
-        <closeDate>1/26/2007</closeDate>
-        <lastName>Johnson</lastName>
-        <firstName>Jerry</firstName>
-        <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>
-        <city>New York</city>
-        <zipCode>00501</zipCode>
-        <state>NY</state>
-        <dateBirth>26/08/1973</dateBirth>
-        <middleInitials>D</middleInitials>
-        <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>
-        <phoneNumber>5555550000</phoneNumber>
-    </Layer>
-    - <Mortgage>
-        <mortgageAmount>295000.00</mortgageAmount>
-        <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>
-        <purchasePrice>300000</purchasePrice>
-        <downPayment>5000</downPayment>
-        <term>25</term>
-        <interestRate>5.00</interestRate>
-    </Mortgage>
-</data>
-</xfa:data>
-</xfa:datasets>
-```
-
-### Tipos de documento suportados {#supported-document-types}
-
-Para obter acesso completo aos recursos de renderização das APIs de Comunicação, é recomendável usar um arquivo XDP como entrada. Às vezes, um arquivo PDF pode ser usado. No entanto, usar um arquivo PDF como entrada tem as limitações:
-
-Um documento PDF que não contém um fluxo XFA não pode ser renderizado como PostScript, PCL ou ZPL. As APIs de comunicações podem renderizar documentos PDF com fluxos XFA (ou seja, formulários criados no Designer) em formatos de laser e rótulo. Se o documento do PDF for assinado, certificado ou contiver direitos de uso (aplicados usando o serviço AEM Forms Reader Extensions), ele não poderá ser renderizado para esses formatos de impressão.
 
 ## Documentação de referência da API
 
