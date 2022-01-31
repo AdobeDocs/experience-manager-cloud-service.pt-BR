@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] Processamento em lote de comunicações as a Cloud Service
 description: Como criar comunicações personalizadas e orientadas por marca?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '1957'
 ht-degree: 0%
 
 ---
@@ -221,44 +221,3 @@ Um documento PDF que não contém um fluxo XFA não pode ser renderizado como Po
 ## Documentação de referência da API
 
 A documentação de referência da API fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e vários serviços fornecidos pelas APIs. A documentação de referência da API está disponível no formato .yaml. Você pode baixar o [APIs em lote](assets/batch-api.yaml) e faça upload para o Postman para verificar a funcionalidade de APIs.
-
-## Problemas conhecidos {#known-issues}
-
-* Quando PRINT é especificado, um tipo de renderização específico só pode ser especificado uma vez na lista de opções de impressão. Por exemplo, você não pode ter duas opções de impressão especificando cada uma um um tipo de renderização PCL.
-
-* Não modifique a Configuração do USC da Fonte de Dados/Configuração da Nuvem do Azure usada em uma configuração de lote enquanto o lote está sendo executado. Mesmo após a execução, se alguma atualização for necessária, crie uma cópia da configuração em vez de atualizar a usada em uma configuração de lote existente.
-
-## Práticas recomendadas     {#best-practices}
-
-* O Adobe recomenda hospedar arquivos de dados no armazenamento do contêiner de blob na região de nuvem usada pelo Experience Manager Cloud Service.
-
-## Perguntas frequentes {#faq}
-
-**Posso usar uma pasta monitorada ou outros mecanismos de armazenamento para armazenar entrada e saída?**
-
-No momento, você pode usar o Armazenamento do Microsoft Azure para salvar dados de entrada e documentos gerados. O armazenamento do Microsoft Azure fornece várias opções para [automatizar operações de movimentação de dados](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
-
-**Uma conta de armazenamento do Microsoft Azure está incluída na licença do Experience Manager Forms Cloud Service?**
-
-A conta de armazenamento do Microsoft Azure é independente da licença do Experience Manager Forms Cloud Service.
-
-**As APIs do Communication armazenam dados nos servidores do Experience Manager Forms Cloud Service?**
-
-Os dados de entrada e saída são salvos somente no Armazenamento do Microsoft Azure.
-
-**As APIs de comunicação estão disponíveis apenas para o Experience Manager Forms Cloud Service? Posso obter funcionalidade semelhante no ambiente local?**
-
-Você pode usar o serviço AEM Forms Output para combinar um modelo (XFA ou PDF) com dados do cliente para gerar documentos nos formatos PDF, PS, PCL e ZPL.
-
-Em comparação com o ambiente local, o Cloud Service oferece benefícios adicionais de dimensionamento automático e economia de custos.
-
-<!--**Where is data processed?**
-
-**Who has access to data?**
-
-**Is data encrypted?**
-
-**Where is data hosted?** -->
-
-**Posso executar várias operações em lote simultaneamente?**
-Sim, você pode executar várias operações em lote de maneira semelhante. Sempre use pastas de origem e de destino diferentes para cada operação para evitar conflitos.

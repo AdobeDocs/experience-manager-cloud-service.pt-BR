@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Comunicações
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2250'
 ht-degree: 0%
 
 ---
@@ -267,24 +267,8 @@ A tabela a seguir especifica as opções de XCI.
 | config/present/pdf/tagged | Controla a inclusão de tags no documento PDF de saída. As tags, no contexto do PDF, são informações adicionais incluídas em um documento para expor a estrutura lógica do documento. As tags ajudam a acessibilidade e a reformatação. Por exemplo, um número de página pode ser marcado como um artefato, de modo que um leitor de tela não o enuncie no meio do texto. Embora as tags tornem um documento mais útil, elas também aumentam o tamanho do documento e o tempo de processamento para criá-lo. |
 | config/presente/pdf/version | Especifica a versão do documento PDF a ser gerado. |
 
-### Problemas conhecidos
-
-- Certifique-se de que o tamanho do modelo e dos arquivos de configuração XCI seja maior que 16KB.
-
-- Certifique-se de que o arquivo xml de dados não contenha o cabeçalho da declaração XML. Por exemplo, `<?xml version="1.0" encoding="UTF-8"?>`
-
-- Para uma configuração de lote, apenas uma instância da combinação de valores de OutputType(PDF, PRINT) e RenderType(PostScript, PCL, IPL, ZPL, etc.) é permitido.
-
-- Não modifique a Configuração do USC da Fonte de Dados/Configuração da Nuvem do Azure usada em uma configuração de lote enquanto o lote está sendo executado. Mesmo após a execução, se alguma atualização for necessária, crie uma cópia da configuração em vez de atualizar a usada em uma configuração de lote existente.
-
-### Práticas recomendadas    
-
-- O Adobe recomenda hospedar arquivos de dados no armazenamento do contêiner de blob na região de nuvem usada pelo AEM Cloud Service.
-
 <!-- Using API
 
  There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as HTTP endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
 
 The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document. -->
-
-
