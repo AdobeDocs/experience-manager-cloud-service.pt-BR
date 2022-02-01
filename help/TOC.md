@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 634644b55f9fbe7d0abe4038da8b8ebb37cd7892
+source-git-commit: 80483d812d8f8ee6a942d21a87a281a98feddbdd
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3485'
 ht-degree: 95%
 
 ---
@@ -461,9 +461,9 @@ ht-degree: 95%
       + [Usar variáveis em um fluxo de trabalho centrado no Forms](/help/forms/variable-in-aem-workflows.md)
       + [Usar a opção Out of Office](/help/forms/configure-out-of-office-settings.md)
    + Uso de Comunicações {#using-communications}
-      + [Introdução](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [APIs de comunicações](/help/forms/aem-forms-cloud-service-communications.md)
-      + [Processamento em lote de APIs de comunicações](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Introdução para APIs de comunicações](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [APIs de comunicações - Processamento síncrono](/help/forms/aem-forms-cloud-service-communications.md)
+      + [APIs de comunicações - Processamento em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Uso de fontes personalizadas em documentos PDF](/help/forms/use-custom-fonts.md)
       + [Problemas conhecidos, práticas recomendadas e perguntas frequentes](/help/forms/communications-known-issues-limitations.md)
    + [Migrar para o [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
