@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: 0194c7edebfc49fd0cf98779100424e3c5272981
+source-git-commit: aaac412148d1499476c99a15fd1eed45d29fc29b
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Saiba como os profissionais de marketing podem enriquecer dados de produtos com 
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
-Os ativos digitais podem ser associados a um ou mais SKUs de produto. Depois de associado, o ativo digital pode ser descoberto com pesquisas de palavras-chave com base no SKU. O ativo também será exibido automaticamente como conteúdo associado ao editar uma página que inclui o produto relevante, tornando ainda mais fácil criar sua próxima experiência digital
+Os ativos digitais podem ser associados a um ou mais SKUs de produto. Depois de associado, o ativo digital pode ser descoberto com pesquisas de palavras-chave com base no SKU. O ativo também será exibido automaticamente como conteúdo associado ao editar uma página que inclui o produto relevante, tornando ainda mais fácil criar sua próxima experiência digital.
 
 ## Fragmentos de experiência
 
