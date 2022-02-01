@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
 source-wordcount: '3448'
 ht-degree: 3%
@@ -43,11 +43,11 @@ Consulte também [Opcional - Configuração e configuração das configurações
 1. Na página Servidor de imagens, defina o Servidor de imagens - contexto de publicação e use as cinco guias para definir as configurações de publicação padrão.
 
    * [Servidor de imagens](#image-server)
-   * [Segurança](#security-tab) guia
-   * [Gerenciamento de catálogo](#catalog-management-tab) guia
-   * [Atributos da solicitação](#request-attributes-tab) guia
-   * [Atributos de miniatura comuns](#common-thumbnail-attributes-tab) guia
-   * [Atributos do gerenciamento de cores](#color-management-attributes-tab) guia
+      * [Segurança](#security-tab) guia
+      * [Gerenciamento de catálogo](#catalog-management-tab) guia
+      * [Atributos da solicitação](#request-attributes-tab) guia
+      * [Atributos de miniatura comuns](#common-thumbnail-attributes-tab) guia
+      * [Atributos do gerenciamento de cores](#color-management-attributes-tab) guia
 
    ![Página Configuração de publicação do Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
    *página Configuração de publicação do Dynamic Media, com o **[!UICONTROL Atributos da solicitação]**selecionada.*<br><br>
