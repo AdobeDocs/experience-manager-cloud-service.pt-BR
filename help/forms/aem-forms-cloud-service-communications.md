@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Comunicações
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
+source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ Uma operação síncrona é um processo de geração de documentos de maneira li
 
 * **Autenticação básica**: Autenticação básica é um esquema de autenticação simples integrado ao protocolo HTTP. O cliente envia solicitações HTTP com o cabeçalho de Autorização que contém a palavra Básico seguida de um espaço e uma sequência de caracteres codificada em base64, username:password. Por exemplo, para autorizar como administrador / administrador o cliente envia Básico [nome de usuário da string codificada em base64]: [senha de string codificada em base64].
 
-* **Autenticação por token:** A autenticação baseada em token usa um token de acesso (token de autenticação portador) para fazer solicitações para AEM as a Cloud Service. O AEM Forms as a Cloud Service fornece APIs para recuperar com segurança o token de acesso. Para recuperar e usar o token para autenticar uma solicitação:
+* **Autenticação por token:** A autenticação baseada em token usa um token de acesso (token de autenticação portador) para fazer solicitações ao Experience Manager as a Cloud Service. O AEM Forms as a Cloud Service fornece APIs para recuperar com segurança o token de acesso. Para recuperar e usar o token para autenticar uma solicitação:
 
-   1. [Recupere AEM credenciais as a Cloud Service do Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [Instale AEM credenciais as a Cloud Service em seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Servidor de Aplicativos, Servidor da Web ou outros servidores não AEM) configurados para enviar solicitações para (fazer chamadas) o serviço em nuvem.
+   1. [Recupere credenciais do Experience Manager as a Cloud Service no Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [Instale as credenciais do Experience Manager as a Cloud Service em seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Servidor de Aplicativos, Servidor da Web ou outros servidores não AEM) configurados para enviar solicitações para (fazer chamadas) o serviço em nuvem.
    1. [Gere um token JWT e trocou-o com as APIs do Adobe IMS para um token de acesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. Execute a API de AEM com o token de acesso como um token de autenticação do portador.
-   1. [Defina as permissões apropriadas para o usuário da conta técnica no ambiente AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. Execute a API do Experience Manager com o token de acesso como um token de autenticação do portador.
+   1. [Defina as permissões apropriadas para o usuário da conta técnica no ambiente Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
    >[!NOTE]
    >

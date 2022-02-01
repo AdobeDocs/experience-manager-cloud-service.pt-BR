@@ -2,9 +2,9 @@
 title: Uma introdução às Comunicações as a Cloud Service do Forms
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dbc0ef92b0b61945ee195971aacab3bc8781b01c
+source-git-commit: d4372e7f5766c6fadea6ca25edc7bfa2aeba10b9
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1026'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ O recurso de comunicações ajuda você a criar documentos orientados à marca, 
 
 Você pode gerar um documento sob demanda ou criar um trabalho em lote para gerar vários documentos em intervalos definidos. As APIs de comunicação fornecem:
 
-* recursos de geração de documentação em lote e sob demanda simplificados
+* recursos simplificados de geração de documentação sob demanda e em lote.
 
-* APIs HTTP para facilitar a integração com sistemas existentes. Estão incluídas APIs separadas para operações sob demanda (baixa latência) e em lote (operações de alta throughput). Isso torna a geração de documentos uma tarefa eficiente.
+* APIs HTTP para facilitar a integração com sistemas externos. Estão incluídas APIs separadas para operações sob demanda (baixa latência) e em lote (operações de alta throughput). Isso torna a geração de documentos uma tarefa eficiente.
 
 * um acesso seguro aos dados. As APIs de comunicações se conectam e acessam somente dados de repositórios de dados designados pelo cliente, não fazem cópias locais de dados, tornando as Comunicações altamente seguras.
 
@@ -31,7 +31,7 @@ Uma declaração de cartão de crédito pode ser criada usando APIs de comunica�
 
 Comunicações utilizam [Templates PDF e XFA](#supported-document-types) com [Dados XML](#form-data) para gerar um único documento sob demanda ou vários documentos usando um trabalho em lote em um intervalo definido.
 
-Uma API de comunicações ajuda a combinar um modelo (XFA ou PDF) com os dados do cliente ([Dados XML](#form-data)) para gerar documentos em Formatos de PDF e impressão, como PS, PCL, DPL, IPL e ZPL.
+As APIs de comunicações ajudam a combinar um modelo (XFA ou PDF) com os dados do cliente ([Dados XML](#form-data)) para gerar documentos em Formatos de PDF e impressão, como PS, PCL, DPL, IPL e ZPL.
 
 Normalmente, você cria um modelo usando [Designer](use-forms-designer.md) e use as APIs de comunicações para mesclar dados com o modelo. Seu aplicativo pode enviar o documento de saída para uma impressora de rede, uma impressora local ou para um sistema de armazenamento para arquivamento. Um fluxo de trabalho típico e personalizado é semelhante ao seguinte:
 
@@ -43,9 +43,9 @@ Dependendo do caso de uso, também é possível disponibilizar esses documentos 
 
 As comunicações fornecem APIs HTTP para geração de documentos sob demanda e em lote:
 
-* **[APIs síncronas](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** são adequados para cenários sob demanda, baixa latência e geração de documento de registro único. Essas APIs são mais adequadas para casos de uso baseados em ações do usuário. Por exemplo, gerar um documento depois que um usuário conclui o preenchimento de um formulário.
+* **[APIs síncronas](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** são adequados para cenários sob demanda, baixa latência e geração de documento de registro único. Essas APIs são mais adequadas para casos de uso baseados em ações do usuário. Por exemplo, gerar um documento depois que um usuário conclui o preenchimento de um formulário.
 
-* **[APIs em lote (APIs assíncronas)](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** são adequados para cenários programados, de alta taxa de transferência e de geração de vários documentos. Essas APIs geram documentos em lotes. Por exemplo, contas telefônicas, demonstrativos de cartão de crédito e demonstrativos de benefícios gerados todo mês.
+* **[APIs em lote (APIs assíncronas)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** são adequados para cenários programados, de alta taxa de transferência e de geração de vários documentos. Essas APIs geram documentos em lotes. Por exemplo, contas telefônicas, demonstrativos de cartão de crédito e demonstrativos de benefícios gerados todo mês.
 
 Alguns dos principais usos das APIs de comunicação são:
 
@@ -100,7 +100,6 @@ Se você tentar nivelar um documento PDF não interativo, ocorrerá uma exceçã
 Um documento PDF interativo contém vários elementos que constituem um formulário. Esses elementos podem incluir campos (para aceitar ou exibir dados), botões (para acionar eventos) e scripts (comandos para executar uma ação específica). Clicar em um botão pode acionar um evento que altera o estado de um campo. Por exemplo, escolher uma opção de gênero pode alterar a cor de um campo ou a aparência do formulário. Este é um exemplo de um evento manual que faz com que o estado do formulário mude.
 
 Quando esse documento PDF interativo é nivelado usando as APIs de Comunicação, o estado do formulário não é mantido. Para garantir que o estado do formulário seja mantido mesmo depois que o formulário for achatado, defina o valor booleano _keepFormState_ como Verdadeiro para salvar e manter o estado do formulário.
-
 
 ## Integração
 
