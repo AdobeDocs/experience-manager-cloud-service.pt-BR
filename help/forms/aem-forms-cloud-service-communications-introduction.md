@@ -2,9 +2,9 @@
 title: Uma introdução às Comunicações as a Cloud Service do Forms
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: fcde70f424d8e798469563397ba091547163bd77
+source-git-commit: c934eba98a9dcb74687739ccbaaedff3c0228561
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1410'
 ht-degree: 1%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 **As APIs de manipulação de documentos do AEM Forms as a Cloud Service Communications estão em beta e podem ser alteradas significativamente antes do lançamento.**
 
-O recurso de comunicações ajuda você a criar documentos aprovados pela marca, personalizados e padronizados, como correspondências comerciais, demonstrativos, cartas de processamento de solicitações, avisos de benefícios, contas mensais ou kits de boas-vindas. O recurso fornece APIs para gerar e manipular os documentos. Você pode gerar ou manipular um documento sob demanda ou criar um trabalho em lote para gerar vários documentos em intervalos definidos. As APIs de comunicação fornecem:
+O recurso de comunicações ajuda você a criar documentos aprovados pela marca, personalizados e padronizados, como correspondências comerciais, demonstrativos, cartas de processamento de solicitações, avisos de benefícios, contas mensais ou kits de boas-vindas. O recurso fornece APIs para gerar e manipular os documentos. Você pode gerar ou manipular um documento sob demanda ou criar um trabalho em lote para gerar vários documentos em intervalos definidos. As APIs de comunicações fornecem:
 
 * Recursos simplificados de geração de documentação sob demanda e em lote.
 
-* Combine, reorganize e aumente documentos PDF e XDP e obtenha informações sobre documentos PDF
+* Combine, reorganize e valide documentos PDF.
 
 * APIs HTTP para facilitar a integração com sistemas externos. Estão incluídas APIs separadas para operações sob demanda (baixa latência) e em lote (operações de alta throughput). Isso torna a geração de documentos uma tarefa eficiente.
 
@@ -26,33 +26,22 @@ O recurso de comunicações ajuda você a criar documentos aprovados pela marca,
 ![Um exemplo de demonstrativo de cartão de crédito](assets/statement.png)
 Uma declaração de cartão de crédito pode ser criada usando APIs de comunicações. Esta declaração de exemplo usa o mesmo modelo, mas dados separados para cada cliente, dependendo de seu uso do cartão de crédito.
 
-## Como funciona?
+## Geração de documentos
 
-Comunicações utilizam [Templates PDF e XFA](#supported-document-types) com [Dados XML](#form-data) para gerar um único documento sob demanda ou vários documentos usando um trabalho em lote em um intervalo definido.
-
-As APIs de comunicações ajudam a combinar um modelo (XFA ou PDF) com os dados do cliente ([Dados XML](#form-data)) para gerar documentos em Formatos de PDF e impressão, como PS, PCL, DPL, IPL e ZPL.
+As APIs de geração de documento de comunicações ajudam a combinar um modelo (XFA ou PDF) com os dados do cliente ([Dados XML](#form-data)) para gerar documentos em Formatos de PDF e impressão, como PS, PCL, DPL, IPL e ZPL. Essas APIs utilizam [Templates PDF e XFA](#supported-document-types) com [Dados XML](communications-known-issues-limitations.md#form-data) para gerar um único documento sob demanda ou vários documentos usando um trabalho em lote em um intervalo definido.
 
 Normalmente, você cria um modelo usando [Designer](use-forms-designer.md) e use as APIs de comunicações para mesclar dados com o modelo. Seu aplicativo pode enviar o documento de saída para uma impressora de rede, uma impressora local ou para um sistema de armazenamento para arquivamento. Um fluxo de trabalho típico e personalizado é semelhante ao seguinte:
 
-![Fluxo de trabalho de comunicações](assets/communicaions-workflow.png)
+![Fluxo de trabalho de geração de documentos de comunicações](assets/communicaions-workflow.png)
 
-Dependendo do caso de uso, também é possível disponibilizar esses documentos para download através do seu site ou de um servidor de armazenamento.
-
-## APIs de comunicação
-
-As comunicações fornecem APIs HTTP para geração de documentos sob demanda e em lote:
-
-* **[APIs síncronas](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** são adequados para cenários sob demanda, baixa latência e geração de documento de registro único. Essas APIs são mais adequadas para casos de uso baseados em ações do usuário. Por exemplo, gerar um documento depois que um usuário conclui o preenchimento de um formulário.
-
-* **[APIs em lote (APIs assíncronas)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** são adequados para cenários programados, de alta taxa de transferência e de geração de vários documentos. Essas APIs geram documentos em lotes. Por exemplo, contas telefônicas, demonstrativos de cartão de crédito e demonstrativos de benefícios gerados todo mês.
-
-Alguns dos principais usos das APIs de comunicação são:
+Dependendo do caso de uso, também é possível disponibilizar esses documentos para download através do seu site ou de um servidor de armazenamento. Alguns exemplos de APIs de geração de documentos são:
 
 ### Criar documentos PDF {#create-pdf-documents}
 
 Você pode usar as APIs de geração de documentos para criar um documento PDF baseado em um design de formulário e dados de formulário XML. A saída é um documento PDF não interativo. Ou seja, os usuários não podem inserir ou modificar dados de formulário. Um fluxo de trabalho básico é unir dados de formulário XML a um design de formulário para criar um documento PDF. A ilustração a seguir mostra a união de um design de formulário e dados de formulário XML para produzir um documento PDF.
 
 ![Criar documentos PDF](assets/outPutPDF_popup.png)
+Figura: Fluxo de trabalho típico para criar um documento PDF
 
 ### Criar documento PostScript (PS), PCL (Printer Command Language), ZPL (Zebra Printing Language) {#create-PS-PCL-ZPL-documents}
 
@@ -70,7 +59,11 @@ The following illustration shows Communications APIs processing an XML data file
 
 ### Processamento de dados em lote para criar vários documentos {#processing-batch-data-to-create-multiple-documents}
 
-Você pode usar APIs de geração de documentos para criar documentos separados para cada registro em uma fonte de dados em lote XML. Você pode gerar documentos em massa e em modo assíncrono. Você pode configurar vários parâmetros para a conversão e iniciar o processo em lote. <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
+Você pode usar APIs de geração de documentos para criar documentos separados para cada registro em uma fonte de dados em lote XML. Você pode gerar documentos em massa e em modo assíncrono. Você pode configurar vários parâmetros para a conversão e iniciar o processo em lote.
+
+![Criar documentos PDF](assets/ou_OutputBatchMany_popup.png)
+
+<!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
 
 <!-- The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all of the records.
 
@@ -100,6 +93,11 @@ Um documento PDF interativo contém vários elementos que constituem um formulá
 
 Quando esse documento PDF interativo é nivelado usando as APIs de Comunicação, o estado do formulário não é mantido. Para garantir que o estado do formulário seja mantido mesmo depois que o formulário for achatado, defina o valor booleano _keepFormState_ como Verdadeiro para salvar e manter o estado do formulário.
 
+
+## Manipulação de documento
+
+As APIs de manipulação de documentos de comunicações ajudam a combinar, reorganizar e validar documentos do PDF. Normalmente, você cria um DDX e o envia para as APIs de manupulação de documentos para montar ou reorganizar um documento. O documento DDX fornece instruções sobre como usar os documentos de origem para produzir um conjunto de documentos necessários. A documentação de referência DDX fornece informações detalhadas sobre todas as operações suportadas. Alguns exemplos de manipulação de documentos são:
+
 ### Montar documentos do PDF
 
 Você pode usar as APIs de fabricação de documentos para montar dois ou mais documentos PDF em um único documento PDF ou Portfolio PDF. Também é possível aplicar recursos ao documento do PDF que auxilia a navegação ou aprimora a segurança. Estas são algumas das maneiras de montar documentos do PDF:
@@ -110,6 +108,9 @@ Você pode usar as APIs de fabricação de documentos para montar dois ou mais d
 * Montar documentos usando a numeração de Bates
 * Nivelar e reunir documentos
 
+![Montagem de um documento PDF simples a partir de vários documentos de PDF](assets/as_document_assembly.png)
+Figura: Montagem de um documento PDF simples a partir de vários documentos de PDF
+
 ### Desmontar documentos do PDF
 
 Você pode usar as APIs de fabricação de documentos para desmontar um documento do PDF. O serviço pode extrair páginas do documento de origem ou dividir um documento de origem com base em marcadores. Normalmente, essa tarefa é útil se o documento PDF foi criado originalmente de muitos documentos individuais, como uma coleção de declarações.
@@ -117,9 +118,21 @@ Você pode usar as APIs de fabricação de documentos para desmontar um document
 * Extrair páginas de um documento de origem
 * Dividir um documento de origem com base em marcadores
 
+![Dividir um documento de origem com base em marcadores em vários documentos](assets/as_intro_pdfsfrombookmarks.png)
+Figura: Dividir um documento de origem com base em marcadores em vários documentos
+
 ### Converter em e validar documentos compatíveis com PDF/A
 
 Você pode usar as APIs de fabricação de documentos para converter um documento PDF para uma versão compatível com PDF/A e determinar se um documento PDF é compatível com PDF/A. PDF/A é um formato de arquivo destinado à preservação de longo prazo do conteúdo do documento. As fontes são incorporadas no documento e o arquivo é descompactado. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Além disso, um documento PDF/A não contém conteúdo de áudio e vídeo.
+
+
+## Tipos de APIs de comunicação
+
+As comunicações fornecem APIs HTTP para geração de documentos sob demanda e em lote:
+
+* **[APIs síncronas](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** são adequados para cenários sob demanda, baixa latência e geração de documento de registro único. Essas APIs são mais adequadas para casos de uso baseados em ações do usuário. Por exemplo, gerar um documento depois que um usuário conclui o preenchimento de um formulário.
+
+* **[APIs em lote (APIs assíncronas)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** são adequados para cenários programados, de alta taxa de transferência e de geração de vários documentos. Essas APIs geram documentos em lotes. Por exemplo, contas telefônicas, demonstrativos de cartão de crédito e demonstrativos de benefícios gerados todo mês.
 
 ## Integração
 
@@ -141,7 +154,7 @@ Após a integração, para ativar as Comunicações no seu ambiente as a Cloud S
 
 1. Execute o pipeline de build.
 
-Depois que a pipeline de criação for bem-sucedida, as APIs de comunicação serão ativadas para seu ambiente.
+Depois que a pipeline de criação for bem-sucedida, as APIs de comunicações serão ativadas para seu ambiente.
 
 
 <!--
