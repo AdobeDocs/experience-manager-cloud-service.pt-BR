@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '3358'
-ht-degree: 23%
+source-wordcount: '3328'
+ht-degree: 24%
 
 ---
 
@@ -214,11 +214,7 @@ Para exibir e gerenciar referências no [!DNL Assets] , siga estas etapas:
 
 ### Gerenciar atualizações em ativos no DAM remoto {#handling-updates-to-remote-assets}
 
->[!NOTE]
->
->Esse recurso está disponível no canal de pré-lançamento. Consulte [Documentação do Canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
-
-Depois [configuração de uma conexão](#configure-a-connection-between-sites-and-assets-deployments) entre implantações remotas de DAM e Sites, os ativos no DAM remoto são disponibilizados na implantação do Sites. Em seguida, você pode executar as operações de atualização, exclusão, renomeação e movimentação nos ativos ou pastas remotos do DAM. As atualizações, com algum atraso, estão disponíveis automaticamente na implantação do Sites . Além disso, se um ativo no DAM remoto for usado em uma página local do Experience Manager Sites, as atualizações do ativo no DAM remoto serão exibidas na página Sites .
+Depois [configuração de uma conexão](#configure-a-connection-between-sites-and-assets-deployments) entre implantações remotas de DAM e Sites, os ativos no DAM remoto são disponibilizados na implantação do Sites. Em seguida, você pode executar as operações de atualização, exclusão, renomeação e movimentação nos ativos ou pastas remotos do DAM. As atualizações, com algum atraso, estão disponíveis automaticamente na implantação do Sites. Além disso, se um ativo no DAM remoto for usado em uma página local do Experience Manager Sites, as atualizações do ativo no DAM remoto serão exibidas na página Sites .
 
 Ao mover um ativo de um local para outro, assegure-se de [ajustar referências](manage-digital-assets.md) para que o ativo seja exibido na página Sites . Se você mover um ativo para um local que não está acessível a partir da implantação local do Sites, o ativo não será exibido na implantação do Sites.
 

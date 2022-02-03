@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: c49352926c67587096b8c60840e00bf379b92075
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '4063'
+source-wordcount: '4356'
 ht-degree: 11%
 
 ---
@@ -44,16 +44,30 @@ Consulte [adicionar ativos digitais ao Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Se um usuário do DAM fizer upload de um ou mais ativos que já existem no repositório, [!DNL Experience Manager] detecta a duplicação e notifica o usuário. A detecção de duplicatas é desativada por padrão, pois pode ter impacto no desempenho dependendo do tamanho do repositório e do número de ativos carregados. Para ativar o recurso, configure [!UICONTROL Detector de duplicação de ativos na nuvem do Adobe AEM]. Consulte [como fazer configurações do OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). A detecção de duplicação é baseada no `dam:sha1` valor armazenado em `jcr:content/metadata/dam:sha1`. Isso significa que os ativos duplicados são detectados, mesmo se os nomes de arquivo forem diferentes.
+Se um usuário do DAM fizer upload de um ou mais ativos que já existem no repositório, [!DNL Experience Manager] detecta a duplicação e notifica o usuário. A detecção de duplicatas é desativada por padrão, pois pode ter impacto no desempenho dependendo do tamanho do repositório e do número de ativos carregados.
 
-Você pode adicionar o arquivo de configuração `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` no código personalizado e o arquivo pode conter o seguinte:
+>[!NOTE]
+>
+>Esse recurso está disponível no canal de pré-lançamento. Consulte [Documentação do Canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
 
-```json
-{
-  "enabled":true,
-  "detectMetadataField":"dam:sha1"
-}
-```
+Para ativar o recurso:
+
+1. Navegar para **[!UICONTROL Ferramentas > Ativos > Configurações de ativos]**.
+
+1. Clique em **[!UICONTROL Detector de Duplicação de Ativos]**.
+
+1. No [!UICONTROL Página Detector de Duplicação de Ativos], clique em **[!UICONTROL Ativado]**.
+
+   `dam:sha1` para o campo Detectar metadados garante que ativos duplicados sejam detectados, mesmo que os nomes de arquivo sejam diferentes.
+
+1. Clique em **[!UICONTROL Salvar]**.
+
+   ![Detector de duplicação de ativo](assets/asset-duplication-detector.png)
+
+>[!NOTE]
+>
+>Se você configurou o Detector de Duplicação usando `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` arquivo de configuração (configuração OSGi), você pode continuar a usá-lo, no entanto, o Adobe recomenda usar o novo método.
+
 
 Depois de habilitado, o Experience Manager envia notificações de ativos duplicados para a Caixa de entrada do Experience Manager. É um resultado agregado para várias duplicatas. Os usuários podem optar por remover os ativos com base nos resultados.
 
@@ -278,35 +292,27 @@ Consulte [baixar ativos de [!DNL Experience Manager]](/help/assets/download-asse
 
 ## Publicar ou desfazer a publicação de ativos {#publish-assets}
 
-Você pode publicar ativos e pastas contendo ativos da instância de criação para o [!DNL Experience Manager Assets], [!DNL Dynamic Media]e [!DNL Brand Portal]. Você pode publicar ou cancelar a publicação de ativos no nível do ativo ou da pasta, usando **[!UICONTROL Publicação rápida]** ou **[!UICONTROL Gerenciar publicação]** disponível na [!DNL Experience Manager Assets] interface.
+1. Navegue até o local do ativo ou da pasta de ativos que deseja publicar ou que deseja remover do ambiente de publicação (cancelar a publicação).
 
-Consulte [gerenciar publicação a partir de [!DNL Experience Manager]](/help/assets/manage-publication.md)
+1. Selecione o ativo ou a pasta para publicar ou desfazer a publicação e selecione **[!UICONTROL Gerenciar publicação]** ![opção gerenciar publicação](assets/do-not-localize/globe-publication.png) na barra de ferramentas. Como alternativa, para publicar rapidamente, selecione o **[!UICONTROL Publicação rápida]** na barra de ferramentas. Se a pasta que você deseja publicar incluir uma pasta vazia, a pasta vazia não será publicada.
 
-<!--
+1. Selecione o **[!UICONTROL Publicar]** ou **[!UICONTROL Cancelar publicação]** conforme necessário.
 
-1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
+   ![Cancelar publicação da ação](assets/unpublish_action.png)
+   *Figura: Opções de publicação e cancelamento de publicação e a opção de agendamento.*
 
-1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
+1. Selecionar **[!UICONTROL Agora]** para agir no ativo imediatamente ou selecione **[!UICONTROL Mais tarde]** para agendar a ação. Selecione uma data e hora se escolher a variável **[!UICONTROL Mais tarde]** opção. Clique em **[!UICONTROL Avançar]**.
 
-1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
+1. Ao publicar, se um ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências são exibidas, que não são publicadas ou modificadas desde a última publicação. Escolha as referências que deseja publicar.
 
-   ![Unpublish action](assets/unpublish_action.png)
-   *Figure: Publish and unpublish options and the scheduling option.*
+1. Ao cancelar a publicação, se um ativo fizer referência a outros ativos, escolha as referências que deseja cancelar a publicação. Clique em **[!UICONTROL Cancelar publicação]**. Na caixa de diálogo de confirmação, clique em **[!UICONTROL Cancelar]** para interromper a ação ou clique em **[!UICONTROL Cancelar publicação]** para confirmar que a publicação dos ativos deve ser cancelada na data especificada.
 
-1. Select **[!UICONTROL Now]** to act on the asset right away or select **[!UICONTROL Later]** to schedule the action. Select a date and time if you choose the **[!UICONTROL Later]** option. Click **[!UICONTROL Next]**.
+Entenda as seguintes limitações e dicas relacionadas à publicação ou ao cancelamento da publicação de ativos ou pastas:
 
-1. When publishing, if an asset references other assets, its references are listed in the wizard. Only those references are displayed, that are either unpublished or modified since last publish. Choose the references that you want to publish.
-
-1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
-
-Understand the following limitations and tips related to publishing or unpublishing assets or folders:
-
-* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
-* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
-* Empty folders are not published.
-* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
-
--->
+* A opção para [!UICONTROL Gerenciar publicação] O está disponível somente para contas de usuário com permissões de replicação.
+* Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite desfazer a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
+* Pastas vazias não são publicadas.
+* Se você publicar um ativo que está sendo processado, somente o conteúdo original será publicado. As representações estão ausentes. Aguarde até que o processamento seja concluído e publique ou publique novamente o ativo quando o processamento for concluído.
 
 ## Grupo de usuários fechado {#closed-user-group}
 
