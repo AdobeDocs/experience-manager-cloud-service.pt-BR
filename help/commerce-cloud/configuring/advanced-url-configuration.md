@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 8c3a1366d076c009262eeab8129e4e589dc4f7c5
+source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2039'
 ht-degree: 17%
 
 ---
@@ -78,7 +78,7 @@ Com os dados de exemplo acima, um URL de página de categoria formatado usando o
 > 
 > O `url_path` é uma concatenação do `url_keys` dos ancestrais de um produto ou categoria e do produto ou categoria `url_key` separados por `/` barra. Cada `url_key` é considerada exclusiva em uma determinada loja.
 
-### Configuração específica do armazenamento {#store-specific-urlformats}
+### Configuração específica da loja {#store-specific-urlformats}
 
 Os formatos de URL de página de produto e categoria do sistema definidos pela variável _Configuração do provedor de URL da CIF_ pode ser alterado para cada loja.
 
@@ -92,27 +92,27 @@ Alterar o formato do URL de um site ativo pode ter um impacto negativo no tráfe
 >
 > A configuração específica do armazenamento dos formatos de URL requer [Componentes principais da CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-CIF-components-reator-2.6.0) e a versão mais recente do complemento Adobe Experience Manager Content and Commerce.
 
-## URLs de produto com reconhecimento de categoria {#context-aware-pdps}
+## URLs de página de produto com reconhecimento de categoria {#context-aware-pdps}
 
 Como é possível codificar informações de categoria em um URL de produto, os produtos que estão em várias categorias também podem ser endereçados com vários URLs de produto.
 
-Na configuração padrão, os formatos padrão de URL selecionarão uma das alternativas possíveis usando o seguinte esquema:
+Os formatos padrão de URL selecionarão uma das alternativas possíveis usando o seguinte esquema:
 
 * se a variável `url_path` é definido pelo back-end de comércio eletrônico usá-lo (obsoleto)
 * do `url_rewrites` use os URLs que terminam com o `url_key` como alternativas
 * Essas alternativas usam o que tem mais segmentos de caminho
 * se houver vários, tome o primeiro na ordem dada pelo backend de comércio eletrônico
 
-Este esquema selecionará a variável `url_path` que tem mais ancestrais, baseado na suposição de que uma categoria filho é mais específica do que a categoria pai. Os selecionados `url_path` é considerado _canônico_ e sempre serão usados para o link canônico nas páginas de produto ou no mapa do site do produto.
+Este esquema selecionará a variável `url_path` com mais ancestrais, baseado na suposição de que uma categoria filho é mais específica do que a categoria pai. Os selecionados `url_path` é considerado _canônico_ e sempre serão usados como o link canônico nas páginas de produto ou no mapa do site do produto.
 
 No entanto, quando um comprador navega de uma página de categoria para uma página de produto, ou de uma página de produto para outra página de produto relacionada na mesma categoria, vale a pena manter o contexto de categoria atual. Nesse caso, a variável `url_path` a seleção deve preferir alternativas que estejam no contexto da categoria atual em vez da _canônico_ seleção descrita acima.
 
 Esse recurso deve ser ativado no _Configuração do provedor de URL da CIF_. Se ativada, a seleção pontuará as alternativas mais altas, quando
 
-* correspondem a partes de uma determinada categoria `url_paths` desde o início (correspondência de prefixo difusa)
-* ou correspondem a uma determinada categoria `url_key` em qualquer lugar (correspondência parcial exata)
+* correspondem a partes de uma determinada categoria `url_path` desde o início (correspondência de prefixo difusa)
+* ou correspondem a uma categoria específica `url_key` em qualquer lugar (correspondência parcial exata)
 
-Por exemplo, considere a resposta de uma [consulta de produtos](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) abaixo. Considerando que o usuário está na página da categoria &quot;Novos produtos / Novo no verão de 2022&quot; e que a loja está usando o formato de URL da página da categoria padrão, a alternativa &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; corresponderia a 2 dos segmentos de caminho do contexto desde o início: &quot;novos produtos&quot; e &quot;novo no verão de 2022&quot;. Se a loja estivesse usando um formato de URL de página de categoria que contém apenas o `url_key`, a mesma alternativa ainda seria selecionada, pois corresponde ao contexto `url_key` em qualquer lugar. Em ambos os casos, o URL da página do produto seria criado para o &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; `url_path`.
+Por exemplo, considere a resposta de uma [consulta de produtos](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) abaixo. Considerando que o usuário está na página da categoria &quot;Novos produtos / Novos no verão de 2022&quot; e que a loja usa o formato de URL da página da categoria padrão, a alternativa &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; corresponderia a 2 dos segmentos de caminho do contexto desde o início: &quot;novos produtos&quot; e &quot;novo no verão de 2022&quot;. Se a loja usar um formato de URL de página de categoria que contenha apenas a categoria `url_key`, a mesma alternativa ainda seria selecionada, pois corresponde ao contexto `url_key` em qualquer lugar. Em ambos os casos, o URL da página do produto seria criado para o &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; `url_path`.
 
 ```
 {
@@ -207,25 +207,25 @@ Conforme mencionado antes de selecionar um dos formatos padrão disponíveis, ou
 
 _**Use o formato de URL da página do produto que contém o SKU.**_
 
-Os Componentes principais da CIF usam o SKU como identificador principal em todos os componentes. Se o formato de URL da página do produto não contiver o sku, uma consulta GraphQL será necessária para resolvê-la do `url_key`, que pode afetar a métrica de tempo do primeiro byte. Além disso, pode ser desejável que os compradores encontrem produtos por sku em mecanismos de pesquisa.
+Os Componentes principais da CIF usam o SKU como identificador principal em todos os componentes. Se o formato de URL da página do produto não contiver o SKU, será necessário um query GraphQL para resolvê-lo. Isso pode afetar o tempo para o primeiro byte. Além disso, pode ser desejável que os compradores possam encontrar produtos por sku usando mecanismos de pesquisa.
 
 _**Use um formato de URL da página do produto que contenha o contexto da categoria.**_
 
-Alguns recursos do provedor de URL da CIF só estão disponíveis ao usar formatos de URL de produto que codificam o contexto da categoria, como a categoria `url_key` ou a categoria `url_path`. Mesmo que esses recursos não sejam necessários para uma nova loja, usar um desses formatos de URL no início ajuda a reduzir os esforços de migração no futuro.
+Alguns recursos do provedor de URL da CIF só estão disponíveis ao usar formatos de URL do produto, que codificam o contexto da categoria, como a categoria `url_key` ou a categoria `url_path`. Mesmo que esses recursos não sejam necessários para uma nova loja, usar um desses formatos de URL no início ajuda a reduzir os esforços de migração no futuro.
 
 _**Equilíbrio entre a duração do URL e as informações codificadas.**_
 
-Dependendo do tamanho do catálogo, em especial do tamanho e profundidade da árvore de categoria, pode não ser razoável codificar todo o `url_path` de categorias no URL. Nesse caso, o comprimento do URL pode ser reduzido ao incluir o da categoria `url_key` em vez disso. Isso habilitará quase todos os recursos disponíveis ao usar a categoria `url_path`.
+Dependendo do tamanho do catálogo, em especial do tamanho e profundidade da árvore de categoria, pode não ser razoável codificar todo o `url_path` de categorias no URL. Nesse caso, o comprimento do URL pode ser reduzido ao incluir somente o da categoria `url_key` em vez disso. Isso oferecerá suporte à maioria dos recursos disponíveis ao usar a categoria `url_path`.
 
 Além disso, use [Mapeamentos do Sling](#sling-mapping) para combinar o SKU com o produto `url_key`. Na maioria dos sistemas de comércio eletrônico, o sku segue um formato específico e separa o sku do `url_key` para solicitações recebidas deve ser facilmente possível. Tendo isso em mente, deve ser possível reescrever um URL de página de produto para `/p/{{category}}/{{sku}}-{{url_key}}.html`e um URL de categoria para `/c/{{url_key}}.html` , respectivamente. O `/p` e `/c` ainda são necessários para distinguir as páginas de produto e categoria de outras páginas de conteúdo.
 
-### Migração de um formato de URL para outro {#migrate-url-formats}
+### Migrando para um novo formato de URL {#migrate-url-formats}
 
-Muitos dos formatos de URL padrão são compatíveis entre si, o que significa que URLs formatados por um podem ser analisados por outro. Isso ajuda na migração entre os formatos de URL.
+Muitos dos formatos de URL padrão são compatíveis entre si, o que significa que URLs formatados por um podem ser analisados por outro. Isso ajuda a migrar entre formatos de URL.
 
 Por outro lado, os mecanismos de pesquisa precisarão de algum tempo para rastrear novamente todas as páginas de catálogo com o novo formato de URL. Para dar suporte a esse processo e também melhorar a experiência do usuário final, é recomendável fornecer redirecionamentos que encaminhem o usuário dos URLs antigos para os novos.
 
-Uma abordagem para isso seria conectar um ambiente de estágio ao back-end de comércio eletrônico de produção e configurá-lo para usar o novo formato de URL. Depois obtenha o [sitemap de produto gerado pelo gerador de mapa de site de produtos CIF](../../overview/seo-and-url-management.md) para o ambiente de estágio e produção e use-os para criar um [Mapa de reescrita httpd do Apache](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Esse mapa de reescrita pode ser implantado no dispatcher junto com a implantação do novo formato de URL.
+Uma abordagem para isso poderia ser conectar um ambiente de preparo ao back-end de produção de comércio eletrônico e configurá-lo para usar o novo formato de URL. Depois obtenha o [sitemap de produto gerado pelo gerador de mapa de site de produtos CIF](../../overview/seo-and-url-management.md) para o ambiente de preparo e produção, e use-os para criar um [Mapa de reescrita httpd do Apache](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Esse mapa de reescrita pode ser implantado no dispatcher junto com a implantação do novo formato de URL.
 
 ## Exemplo {#example}
 
