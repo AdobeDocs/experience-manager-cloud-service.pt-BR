@@ -3,16 +3,18 @@ title: Configurar o Dynamic Media Cloud Service
 description: Saiba como configurar o Dynamic Media no Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
 workflow-type: tm+mt
-source-wordcount: '3420'
-ht-degree: 4%
+source-wordcount: '3438'
+ht-degree: 3%
 
 ---
 
 # Sobre a configuração do Dynamic Media Cloud Service {#configuring-dynamic-media}
 
 Se você usar o Adobe Experience Manager para ambientes diferentes, como desenvolvimento, armazenamento temporário e produção ao vivo, configure o Dynamic Media Cloud Services para cada um desses ambientes.
+
+Consulte também [Configurar uma conta de alias de empresa do Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md)
 
 ## Diagrama de arquitetura do Dynamic Media {#architecture-diagram-of-dynamic-media}
 
@@ -90,7 +92,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | Propriedade | Descrição |
    |---|---|
-   | Empresa | O nome da conta do Dynamic Media. É possível ter várias contas do Dynamic Media para diferentes submarcas, divisões ou ambientes de preparo/produção. |
+   | Empresa | O nome da conta do Dynamic Media. É possível ter várias contas do Dynamic Media para diferentes submarcas, divisões ou ambientes de preparo/produção.<br>Consulte também [Configurar uma conta de alias de empresa do Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md). |
    | Caminho da pasta raiz da empresa | O caminho da pasta raiz da sua empresa. |
    | Publicar ativos | Você pode escolher entre as três opções a seguir:<br>**[!UICONTROL Imediatamente ]**- Quando os ativos são carregados, o sistema assimila os ativos e fornece o URL/Incorporado instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.<br>**[!UICONTROL Na ativação]** - Você deve publicar explicitamente o ativo primeiro antes de fornecer um URL/link Incorporado.<br>**[!UICONTROL Publicação seletiva ]**- Os ativos são publicados automaticamente apenas para visualização segura. Eles também podem ser publicados explicitamente no Experience Manager as a Cloud Service sem publicação no DMS7 para entrega no domínio público. No futuro, essa opção pretende publicar ativos no Experience Manager as a Cloud Service e publicar ativos no Dynamic Media, mutuamente exclusivos entre si. Ou seja, você pode publicar ativos no DMS7 para usar recursos como um Recorte inteligente ou representações dinâmicas. Ou, você pode publicar ativos exclusivamente no Experience Manager as a Cloud Service para visualização; esses mesmos ativos não são publicados no DMS7 para entrega no domínio público. |
    | Servidor de visualização seguro | Permite que você especifique o caminho do URL para seu servidor de visualização de representações seguras. Ou seja, depois que as renderizações são geradas, o Experience Manager as a Cloud Service pode acessar com segurança e visualizar as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância Experience Manager as a Cloud Service).<br>A menos que você tenha um acordo especial para usar o servidor da sua empresa ou um servidor especial, o Adobe recomenda deixar essa configuração como especificado. |
