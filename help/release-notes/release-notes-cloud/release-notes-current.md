@@ -3,7 +3,7 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Se
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3c6b25bdcc626946ae7bd4b98da65f4ccfd963f7
+source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 31%
@@ -52,10 +52,10 @@ Dê uma olhada no [Visão geral da versão de janeiro de 2022](https://video.tv.
 
    * Configure a adição de marcas d&#39;água digitais a imagens.
 
-* Os administradores agora podem configurar o serviço de email para downloads grandes. Ela permite que os usuários habilitem notificações por email para downloads grandes da [!DNL Experience Manager Assets] interface. O usuário recebe uma notificação por email contendo o link de download da pasta zip arquivada após concluir o processo de download.
+* Os administradores agora podem configurar o serviço de email para downloads grandes. Permite que os usuários [ativar notificações por email para downloads grandes](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) do [!DNL Experience Manager Assets] interface. O usuário recebe uma notificação por email contendo o link de download da pasta zip arquivada após concluir o processo de download.
 
 
-* O recurso Gerenciar publicação é aprimorado com uma interface do usuário aprimorada. Os usuários podem publicar ou cancelar a publicação de conteúdo de e para o destino selecionado, Adicionar conteúdo à lista de publicação no repositório DAM, Incluir configurações da pasta para publicar o conteúdo das pastas selecionadas e aplicar filtros, e agendar a publicação para uma data ou hora posterior.
+* O [Gerenciar publicação](/help/assets/manage-publication.md) O recurso é aprimorado com uma interface do usuário aprimorada. Os usuários podem publicar ou desfazer a publicação de conteúdo de e para o destino selecionado, [Adicionar conteúdo](/help/assets/manage-publication.md#add-content) para a lista de publicação em todo o repositório DAM, [Incluir configurações de pasta](/help/assets/manage-publication.md#include-folder-settings) para publicar o conteúdo das pastas selecionadas e aplicar filtros, e [agendar publicação](/help/assets/manage-publication.md#publish-assets-later) para uma data ou hora posterior.
 
 ### Correções de erros {#bug-fixes}
 
