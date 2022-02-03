@@ -1,9 +1,9 @@
 ---
 title: Gerencie seus sites de demonstração
 description: Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
-source-git-commit: cb04570664188635d6dc0237eb4ab0a9d347aaf2
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,17 @@ Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sit
 
 ## A História Até Agora {#story-so-far}
 
-No documento anterior da jornada de Criação AEM de Site Rápido, [Criar Site,](create-site.md) você criou um novo site de demonstração com base nos modelos do Reference Demo Add-On. Agora você deve:
+No documento anterior da jornada do complemento Demonstrações de Referência AEM, [Criar Site,](create-site.md) você criou um novo site de demonstração com base nos modelos do Reference Demo Add-On. Agora você deve:
 
 * Entenda como acessar o ambiente de criação do AEM.
 * Saiba como criar um site com base em um modelo.
 * Entenda as noções básicas de navegação na estrutura do site e edição de uma página.
+
+Se também [AEM Screens habilitado para seu site de demonstração,](screens.md) você também deve:
+
+* Noções básicas do AEM Screens.
+* Entenda o conteúdo de demonstração We.Cafe .
+* Saiba como configurar o AEM Screens para We.Cafe.
 
 Agora que você tem seu próprio site de demonstração para explorar, este artigo descreve as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
 

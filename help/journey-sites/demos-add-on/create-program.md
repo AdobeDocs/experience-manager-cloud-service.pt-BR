@@ -1,9 +1,9 @@
 ---
 title: Criar programa
 description: Saiba como configurar um novo programa e pipeline para implantar o complemento.
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Saiba como configurar um novo programa e pipeline para implantar o complemento.
 
 ## A História Até Agora {#story-so-far}
 
-No documento anterior da jornada de Criação AEM de Site Rápido, [Entender A Instalação Do Complemento De Demonstração De Referência,](installation.md) você aprendeu como funciona o processo de instalação do Suplemento de Demonstrações de Referência, ilustrando como as diferentes partes funcionam juntas. Agora você deve:
+No documento anterior da jornada do complemento Demonstrações de Referência AEM, [Entender A Instalação Do Complemento De Demonstração De Referência,](installation.md) você aprendeu como funciona o processo de instalação do Suplemento de Demonstrações de Referência, ilustrando como as diferentes partes funcionam juntas. Agora você deve:
 
 * Ter uma compreensão básica do Cloud Manager.
 * Entenda como os pipelines entregam conteúdo e configuração ao AEM.
@@ -76,7 +76,7 @@ Depois de fazer logon no Cloud Manager, você pode criar um novo programa de san
 
    ![Caixa de diálogo Editar programa](assets/edit-program-dialog.png)
 
-1. No **Soluções e complementos** , expanda a **Sites** na lista e, em seguida, verifique **Demonstrações de referência**. Toque ou clique **Atualizar**.
+1. No **Soluções e complementos** , expanda a **Sites** na lista e, em seguida, verifique **Demonstrações de referência**. Se você também deseja criar demonstrações para o AEM Screens, marque a opção **Telas** na lista também. Toque ou clique **Atualizar**.
 
    ![Opção Verificar demonstrações de referência](assets/edit-program-add-on.png)
 

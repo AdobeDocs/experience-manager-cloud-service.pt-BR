@@ -1,9 +1,9 @@
 ---
 title: jornada do complemento Demonstrações de referência AEM
 description: Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de Demonstrações de Referência de AEM a um ambiente de sandbox com configuração mínima de AEM e poder testar os recursos avançados de AEM com exemplos avançados com base nas práticas recomendadas.
-source-git-commit: 3dc268060188defcc84971f73baced1f30dccd49
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -11,18 +11,18 @@ ht-degree: 2%
 
 # jornada do complemento Demonstrações de referência AEM {#reference-demos-add-on-journey}
 
-Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de Demonstrações de Referência de AEM a um ambiente de sandbox com configuração mínima de AEM e poder testar os recursos avançados de AEM com exemplos avançados com base nas práticas recomendadas.
+Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de Demonstrações de Referência de AEM a um ambiente de sandbox com configuração mínima de AEM e poder testar os recursos avançados do AEM Sites e do AEM Screens com exemplos avançados com base nas práticas recomendadas.
 
 ## Introdução {#introduction}
 
-O AEM Sites é um poderoso conjunto de ferramentas para criar e gerenciar experiências digitais. Os autores de conteúdo podem criar experiências digitais facilmente usando o editor de sites e organizar o conteúdo usando o console sites, tudo enquanto podem ver o conteúdo ao vivo, conforme será entregue pelo AEM aos seus públicos-alvo através de canais.
+AEM é um conjunto de ferramentas avançado para criar e gerenciar experiências digitais. Os autores de conteúdo podem criar experiências digitais facilmente usando o editor de sites e organizar o conteúdo usando o console sites, tudo enquanto podem ver o conteúdo ao vivo, conforme será entregue pelo AEM aos seus públicos-alvo através de canais.
 
-Sem conteúdo e configuração de amostra, pode ser difícil testar os recursos avançados do AEM para clientes novos e experientes. O complemento Demos de referência de AEM permite a fácil criação de ambientes sandbox pré-carregados com conteúdo de amostra e pré-configurados usando as diretrizes mais recentes de práticas recomendadas do Adobe. Com o complemento , é possível avaliar facilmente os recursos AEM no contexto e com quase nenhuma configuração.
+Sem conteúdo e configuração de amostra, pode ser difícil testar os recursos avançados do AEM para clientes novos e experientes. O complemento Demos de referência de AEM permite a fácil criação de ambientes sandbox pré-carregados com conteúdo de amostra e pré-configurados usando as diretrizes mais recentes de práticas recomendadas do Adobe. Com o complemento, é possível avaliar facilmente os recursos do AEM Sites e AEM Screens no contexto e com pouca configuração.
 
 * **Se você é novo em AEM**, seguir essa jornada é a maneira mais fácil de começar a usar o conteúdo real em um ambiente de AEM real e totalmente funcional, para permitir que você teste a funcionalidade e conheça os recursos da AEM.
 * **Se você for um usuário AEM experiente**, seguir essa jornada é a maneira mais fácil de configurar um ambiente de demonstração separado para fins de teste ou criar um POC usando nova funcionalidade.
 
-Seja qual for a sua necessidade específica, se você precisar de um ambiente de AEM preenchido com conteúdo de amostra realista, totalmente funcional, configurar uma sandbox com o complemento Demonstração de AEM referência é apenas para você. Continue lendo!
+Seja qual for a sua necessidade específica, se você precisar de um ambiente de AEM preenchido com conteúdo de amostra realista e totalmente funcional, é para você configurar uma sandbox com o AEM Reference Demo Add-On. Continue lendo!
 
 ## jornadas de documentação de AEM {#documentation-journeys}
 
@@ -34,7 +34,7 @@ Se você quiser saber como o Adobe recomenda como resolver casos de negócios de
 
 ## Público {#audience}
 
-Esta jornada apresenta os requisitos, as etapas e a abordagem para criar um novo programa e configurar uma sandbox de AEM com o AEM Reference Demos Add-On (Complemento para Demonstrações de Referência). Seu público-alvo principal é o **administrador do sistema** quem recebe a função **Proprietário da empresa** no Cloud Manager. Essa é geralmente a mesma pessoa que seria responsável pela gestão do ambiente. No entanto, uma vez instalado o Suplemento de Demonstrações de Referência, esse administrador poderá conceder a outros usuários acesso ao ambiente de AEM para testar os recursos que foram ativados pelo complemento.
+Esta jornada apresenta os requisitos, as etapas e a abordagem para criar um novo programa e configurar uma sandbox de AEM com o complemento Demonstrações de referência AEM incluindo o conteúdo de demonstração Sites e/ou Screens. Seu público-alvo principal é o **administrador do sistema** quem recebe a função **Proprietário da empresa** no Cloud Manager. Essa é geralmente a mesma pessoa que seria responsável pela gestão do ambiente. No entanto, uma vez instalado o Suplemento de Demonstrações de Referência, esse administrador poderá conceder a outros usuários acesso ao ambiente de AEM para testar os recursos que foram ativados pelo complemento.
 
 ## A Jornada AEM Reference Demo Add-On {#the-journey}
 
@@ -46,7 +46,8 @@ Você explorará vários tópicos nesta jornada. Os artigos a seguir fornecem um
 | 1 | [Entender a instalação do complemento de demonstração de referência](installation.md) | Saiba mais sobre o Cloud Manager e como ele é usado para instalar o complemento. |
 | 2 | [Criar um programa e um pipeline](create-program.md) | Saiba como configurar um novo programa e pipeline para implantar o complemento. |
 | 3 | [Criar um site de demonstração](create-site.md) | Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados. |
-| 4 | [Gerencie seus sites de demonstração](manage.md) | Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los. |
+| 4 | [(Opcional) Ativar o AEM Screens para seu site de demonstração](screens.md) | Opcional - saiba mais sobre as etapas adicionais para ativar a experiência as a Cloud Service completa da AEM Screens no site de demonstração. |
+| 5 | [Gerencie seus sites de demonstração](manage.md) | Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los. |
 
 ## O que vem a seguir {#what-is-next}
 
