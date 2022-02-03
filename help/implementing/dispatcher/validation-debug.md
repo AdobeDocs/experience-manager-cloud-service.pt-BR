@@ -3,9 +3,9 @@ title: Validação e depuração usando ferramentas do Dispatcher
 description: Validação e depuração usando ferramentas do Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: dc25b243c2d64d735e553e7ea2fb990fb34cb4cb
+source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2512'
 ht-degree: 2%
 
 ---
@@ -442,7 +442,7 @@ Na configuração do Dispatcher, a mesma variável de ambiente está disponível
 }
 ```
 
-Como alternativa, você pode usar variáveis de ambiente do Cloud Manager na configuração httpd/dispatcher. Esse método é especialmente importante se um programa tiver vários ambientes dev e alguns desses ambientes dev tiverem valores diferentes para a configuração httpd/dispatcher. A mesma sintaxe ${VIRTUALHOST} seria usada como no exemplo acima, no entanto, as declarações Define no arquivo de variáveis acima não seriam usadas. Leia o [Documentação do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) para obter instruções sobre como configurar variáveis de ambiente do Cloud Manager.
+Como alternativa, você pode usar variáveis de ambiente do Cloud Manager na configuração httpd/dispatcher, embora não segredos de ambiente. Esse método é especialmente importante se um programa tiver vários ambientes dev e alguns desses ambientes dev tiverem valores diferentes para a configuração httpd/dispatcher. A mesma sintaxe ${VIRTUALHOST} seria usada como no exemplo acima, no entanto, as declarações Define no arquivo de variáveis acima não seriam usadas. Leia o [Documentação do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) para obter instruções sobre como configurar variáveis de ambiente do Cloud Manager.
 
 Ao testar sua configuração localmente, você pode simular diferentes tipos de ambiente transmitindo a variável `DISP_RUN_MODE` para `docker_run.sh` script diretamente:
 
