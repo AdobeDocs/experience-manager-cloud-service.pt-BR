@@ -2,16 +2,17 @@
 title: Fragmentos de experiência
 description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 45da72dc39a4c2a66957dbbe26f563b00100488e
+source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 99%
+source-wordcount: '1522'
+ht-degree: 95%
 
 ---
 
 # Fragmentos de experiência {#experience-fragments}
 
 No Adobe Experience Manager as a Cloud Service, um fragmento de experiência:
+
 * é um grupo de um ou mais componentes
 * inclui conteúdo e layout
 * pode ser referenciado nas páginas
@@ -22,10 +23,12 @@ Um fragmento de experiência:
 * É parte de uma experiência (página).
 * Pode ser usado em várias páginas.
 * É baseado em um modelo (somente editável) para definir a estrutura e os componentes.
+* Esse modelo é usado para criar o *página raiz* do Fragmento de experiência.
 * É composto por um ou mais componentes, com layout, em um sistema de parágrafos.
 * Pode conter outros fragmentos de experiência.
 * Pode ser combinado com outros componentes (incluindo outros Fragmentos de experiência) para formar uma página completa (experiência).
-* Pode apresentar variações diferentes e pode compartilhar conteúdo e/ou componentes.
+* Uma ou mais variações podem ser criadas, com base na página raiz.
+* Essas variações podem compartilhar conteúdo e/ou componentes.
 * Pode ser dividida em blocos de construção que poderão ser usados em várias variações do fragmento.
 
 Use os Fragmentos de experiência:
@@ -57,7 +60,6 @@ Os fragmentos de experiência devem ser usados:
    * Canal ou variações específicas ao contexto.
    * Experiências que fazem sentido agrupar; por exemplo, uma campanha com diferentes experiências entre canais.
 * Quando você usar o Comércio omnichannel.
-   * Ao compartilhar conteúdo comercial em canais de [redes sociais](/help/implementing/developing/extending/experience-fragments.md#social-variations) em escala.
    * Tornar pontos de toque transacionais.
 
 ## Organizar os Fragmentos de experiência {#organizing-your-experience-fragments}
@@ -151,7 +153,6 @@ Para criar e configurar uma pasta para os Fragmentos de experiência, recomenda-
 
 1. Selecione **Salvar**.
 
-
 ## Criação de um fragmento de experiência {#creating-an-experience-fragment}
 
 Para criar um fragmento de experiência:
@@ -176,6 +177,12 @@ Para criar um fragmento de experiência:
    É obrigatório ter um **título**. Se o **Nome** for deixado em branco, ele será derivado do **Título**.
 
    ![Propriedades do fragmento de experiência](/help/sites-cloud/authoring/assets/xf-04.png)
+
+   >[!NOTE]
+   >
+   >As tags do modelo do Fragmento de experiência não serão unidas com tags nesta página raiz do Fragmento de experiência .
+   >
+   >Elas são completamente separadas.
 
 1. Clique em **Criar**.
 
@@ -232,6 +239,7 @@ Você pode criar variações de seu fragmento de experiência, de acordo com sua
 
    ![Propriedades de variação](/help/sites-cloud/authoring/assets/xf-07.png)
 
+
 1. Confirme com **Concluído**, a nova variação será mostrada no painel.
 
 ## Usar seu fragmento de experiência {#using-your-experience-fragment}
@@ -283,7 +291,7 @@ Para criar um novo Bloco de construção:
 
 O bloco de construção está visível na guia **Blocos de construção**. As seguintes ações estão disponíveis para cada bloco:
 
-* **** Acesse o mestre: abra a variação mestre em uma nova guia
+* **Ir para principal**: abra a variação da página raiz em uma nova guia
 * **Renomeie**
 * **Excluir**
 
@@ -338,8 +346,6 @@ Os detalhes são mostrados em todas as exibições do console **Fragmentos de ex
       * **Pasta do Pinterest**
    * **Referências**
       * Uma lista de referências
-   * **Status da rede social**
-      * Detalhes de variações de redes sociais
 
 ## A representação HTML simples {#the-plain-html-rendition}
 
