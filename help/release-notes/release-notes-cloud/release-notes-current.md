@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Se
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
+source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 31%
+source-wordcount: '1024'
+ht-degree: 30%
 
 ---
 
@@ -95,12 +95,6 @@ Dê uma olhada no [Visão geral da versão de janeiro de 2022](https://video.tv.
 
 ## Cloud Manager {#cloud-manager}
 
-Esta página descreve as notas de versão do Cloud Manager AEM as a Cloud Service 2022.01.0.
-
->[!NOTE]
->
->Consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md) para obter as notas de versão atuais do Adobe Experience Manager as a Cloud Service.
-
 ### Data de lançamento {#release-date-cm}
 
 A data de lançamento do Cloud Manager AEM as a Cloud Service 2022.01.0 é 20 de janeiro de 2022. A próxima versão está planejada para 10 de fevereiro de 2022.
@@ -118,6 +112,20 @@ A data de lançamento do Cloud Manager AEM as a Cloud Service 2022.01.0 é 20 de
 * As variáveis de ambiente agora podem ser adicionadas, atualizadas e excluídas quando um ambiente estiver executando uma versão desatualizada do AEM.
 * A etapa de criação de imagem não será mais marcada como ERRO para pipelines que usaram a etapa agendada em determinados casos raros.
 * Para programas com apenas um repositório, a tela de execução do pipeline agora exibirá o nome do repositório.
+
+## Ferramenta Transferência de conteúdo {#ctt-release}
+
+### Data de lançamento {#release-date-ctt}
+
+A Data de lançamento da ferramenta Transferência de conteúdo v1.8.6 é 3 de fevereiro de 2022.
+
+### Novidades {#what-is-new-ctt}
+
+* Validação de conteúdo - os usuários podem determinar de forma confiável se todo o conteúdo que foi extraído pela ferramenta Transferência de conteúdo foi assimilado com êxito na instância de destino. Para usar esse recurso, será necessário ativá-lo no `System Console` do ambiente de AEM de origem. Consulte [Validação de transferências de conteúdo - Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) para obter mais detalhes.
+
+### Correções de erros {#bug-fixes-ctt}
+
+* Alguns usuários não foram mapeados porque o Mapeamento de usuários diferenciava maiúsculas de minúsculas. Isso foi corrigido. O Mapeamento de Usuário não diferencia mais maiúsculas de minúsculas.
 
 ## Analisador de práticas recomendadas {#bpa-release}
 
