@@ -3,9 +3,9 @@ title: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Ser
 description: Alterações importantes no Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '819'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ O AEM Cloud Service oferece muitos novos recursos e possibilidades para gerencia
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
->title="Alterações importantes no AEM como Cloud Service"
->abstract="Nesta guia, é possível visualizar o conteúdo que ajudará você a entender as diferenças entre AEM no local ou no Adobe Managed Services, em comparação ao AEM como Cloud Service."
->additional-url="https://video.tv.adobe.com/v/330543" text="Evolução do AEM como Cloud Service"
+>title="Alterações importantes no AEM as a Cloud Service"
+>abstract="Nesta guia, é possível visualizar o conteúdo que o ajudará a entender as diferenças entre o AEM no local, ou no Adobe Managed Services, e o AEM as a Cloud Service."
+>additional-url="https://video.tv.adobe.com/v/330543" text="Evolução do AEM as a Cloud Service"
 
 
 >[!NOTE]
@@ -34,7 +34,7 @@ As principais diferenças encontram-se nas seguintes áreas:
 
 * [/apps e /libs não mudam no tempo de execução](#apps-libs-immutable)
 
-* [Pacotes e configurações de OSGi devem ser baseados em repositório](#osgi)
+* [Pacotes e configurações de OSGi devem ser baseados no repositório](#osgi)
 
 * [Não são permitidas alterações no repositório de publicação](#changes-to-publish-repo)
 
@@ -42,7 +42,7 @@ As principais diferenças encontram-se nas seguintes áreas:
 
 * [Remoção dos agentes de replicação](#replication-agents)
 
-* [Remoção da interface do usuário clássica](#classic-ui)
+* [Remoção da interface clássica do usuário ](#classic-ui)
 
 * [Entrega do lado da publicação](#publish-side-delivery)
 
@@ -62,7 +62,7 @@ O conteúdo e as subpastas em `/apps` e `/libs` são somente leitura. Não é po
 * As configurações de implantação de MSM Blueprint e MSM personalizado devem ser instaladas no Git por meio do pipeline de CI/CD.
 * As mudanças na tradução de I18n precisam vir do Git por meio do pipeline de CI/CD.
 
-## Pacotes e configurações de OSGi devem ser baseados em repositório {#osgi}
+## Pacotes e configurações de OSGi devem ser baseados no repositório {#osgi}
 
 O console da Web, usado nas versões anteriores do AEM para alterar as configurações de OSGi, não está disponível no AEM Cloud Service. Portanto, as alterações no OSGi devem ser introduzidas por meio do pipeline de IC/CD.
 
@@ -71,7 +71,7 @@ O console da Web, usado nas versões anteriores do AEM para alterar as configura
 
 ## Não são permitidas alterações no repositório de publicação {#changes-to-publish-repo}
 
-Além de alterações na pasta `/home` no nível de publicação, alterações diretas no repositório de publicação não são permitidas no AEM Cloud Service. Em versões anteriores de AEM no local ou AEM no AMS, as alterações de código poderiam ser feitas diretamente no repositório de publicação. Algumas limitações podem ser atenuadas das seguintes maneiras:
+Além das alterações na pasta `/home` no nível de publicação, alterações diretas no repositório de publicação não são permitidas no AEM Cloud Service. Em versões anteriores do AEM no local ou AEM no AMS, as alterações de código poderiam ser feitas diretamente no repositório de publicação. Algumas limitações podem ser atenuadas das seguintes formas:
 
 * Para configuração de conteúdo e baseada em conteúdo: faça as alterações na instância de criação e as publique.
 * Para código e configuração: faça as alterações no repositório de GIT e execute o pipeline de CI/CD para implementá-las.
@@ -102,9 +102,9 @@ No AEM Cloud Service, o conteúdo é publicado usando a [Distribuição de conte
 * Personalização dos agentes de replicação para transformar conteúdo
 * Uso de Replicação reversa para devolver o conteúdo da publicação para o autor
 
-## Remoção da interface do usuário clássica {#classic-ui}
+## Remoção da interface clássica do usuário {#classic-ui}
 
-A interface do usuário clássica não está mais disponível no AEM Cloud Service.
+A interface clássica do usuário não está mais disponível no AEM Cloud Service.
 
 ## Entrega do lado da publicação {#publish-side-delivery}
 
@@ -114,4 +114,4 @@ Para a transição de projetos do AMS ou de uma instalação local, a Adobe reco
 
 ## Manuseio e entrega de ativos {#asset-handling}
 
-O upload, o processamento e o download de ativos são otimizados em [!DNL Experience Manager Assets] como um [!DNL Cloud Service]. [!DNL Assets] O agora é mais eficiente, permite maior dimensionamento e permite carregar e baixar a uma taxa muito mais rápida. Além disso, isso afeta o código personalizado existente e algumas operações. Para obter uma lista de alterações e para paridade com os recursos [!DNL Experience Manager] 6.5, consulte as [alterações para [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+O upload, processamento e download de ativos estão otimizados no [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Agora, o [!DNL Assets] é mais eficiente, permite maior dimensionamento e possibilita uploads e downloads muito mais rápidos. Além disso, isso afeta o código personalizado existente e algumas operações. Para uma lista de alterações e para paridade com os recursos do [!DNL Experience Manager] 6.5, consulte as [alterações do  [!DNL Assets]](/help/assets/assets-cloud-changes.md).
