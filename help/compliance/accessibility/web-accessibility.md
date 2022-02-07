@@ -64,4 +64,4 @@ Usando o Adobe Experience Manager, os criadores de conteúdo e/ou proprietários
 
 ## Acessibilidade na Adobe {#accessibility-at-adobe}
 
-Para obter informações adicionais, visite o [Centro de recursos de acessibilidade da Adobe](https://www.adobe.com/br/accessibility/).
+Para obter informações adicionais, visite o [Centro de recursos de acessibilidade da Adobe](https://www.adobe.com/accessibility/).
