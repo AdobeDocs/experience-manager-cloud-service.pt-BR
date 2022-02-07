@@ -3,9 +3,9 @@ title: Canal de pré-lançamento do [!DNL Adobe Experience Manager] as a Cloud S
 description: Canal de pré-lançamento do [!DNL Adobe Experience Manager] as a Cloud Service
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ A CLI do Cloud Manager também pode ser usada, de acordo com as instruções em 
 
 A variável pode ser excluída ou retornada a um valor diferente se você quiser que o ambiente seja restaurado ao comportamento do canal padrão (não pré-lançamento)
 
-* Como alternativa, você também pode configurar as variáveis de ambiente na variável [Interface do usuário do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+* Como alternativa, você também pode configurar as variáveis de ambiente na [Interface de usuário do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
 ### SDK local {#local-sdk}
 
