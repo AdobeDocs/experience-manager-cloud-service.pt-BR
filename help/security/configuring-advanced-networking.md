@@ -99,7 +99,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 Ao usar bibliotecas de rede Java não padrão, configure proxies usando as propriedades acima para todo o tráfego.
 
-Tráfego não http/s com destinos por meio de portas declaradas no parâmetro `portForwards` deve fazer referência a uma propriedade chamada `AEM_PROXY_HOST`, juntamente com a porta mapeada. Por exemplo:
+O tráfego não http/s com destinos por meio de portas declaradas no parâmetro `portForwards` deve fazer referência a uma propriedade chamada `AEM_PROXY_HOST`, juntamente com a porta mapeada. Por exemplo:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
