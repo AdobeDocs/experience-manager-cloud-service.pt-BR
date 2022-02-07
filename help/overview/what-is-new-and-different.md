@@ -3,9 +3,9 @@ title: O que é diferente e quais são as novidades - Adobe Experience Manager a
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1906'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -273,6 +273,6 @@ Para obter mais informações, consulte:
 
 >[!TIP]
 >
->Depois de ter uma visão geral do AEM as a Cloud Service, você pode integrar-se rapidamente revisando o [Jornada de integração.](/help/journey-onboarding/home.md)
+>Depois de receber uma visão geral do AEM as a Cloud Service, você poderá integrar-se rapidamente revisando a [Jornada de integração](/help/journey-onboarding/home.md).
 >
->Já integrado ou pronto para mergulhar nos recursos de AEM de teste? Instale o [Complemento de Demonstrações de Referência AEM](/help/journey-sites/demos-add-on/overview.md) explorar AEM recursos avançados usando exemplos avançados.
+>Já integrado ou pronto para mergulhar nos recursos de AEM de teste? Instale o [Complemento de demonstrações de referência do AEM](/help/journey-sites/demos-add-on/overview.md) para explorar recursos avançados do AEM usando exemplos bem colocados.
