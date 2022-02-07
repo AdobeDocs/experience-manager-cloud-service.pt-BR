@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: c135f7c0c5265110774d145bf8c5a73d44d660b1
 workflow-type: tm+mt
 source-wordcount: '3500'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -88,15 +88,15 @@ ht-degree: 95%
       + [Atribuir membros da equipe aos perfis do produto AEM as a Cloud Service](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
       + [Caminho de aprendizado para desenvolvedores e gerentes de implantação](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
       + [Caminho de aprendizado para usuários do AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-   + jornada do complemento Demonstrações de referência AEM {#demo-add-on}
+   + Jornada do complemento de demonstrações de referência do AEM {#demo-add-on}
       + [Visão geral](/help/journey-sites/demos-add-on/overview.md)
       + [Instalação](/help/journey-sites/demos-add-on/installation.md)
       + [Criar programa](/help/journey-sites/demos-add-on/create-program.md)
-      + [Criar Site de Demonstração](/help/journey-sites/demos-add-on/create-site.md)
+      + [Criar site de demonstração](/help/journey-sites/demos-add-on/create-site.md)
       + [Ativar o Screens](/help/journey-sites/demos-add-on/screens.md)
       + [Gerenciar seu site de demonstração](/help/journey-sites/demos-add-on/manage.md)
-+ jornada de migração as a Cloud Service AEM {#migration-journey}
-   + [Introdução ao movimento AEM as a Cloud Service](/help/journey-migration/getting-started.md)
++ Jornada de migração do AEM as a Cloud Service {#migration-journey}
+   + [Introdução à movimentação do AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase de preparação](/help/journey-migration/readiness.md)
    + [Fase de implementação](/help/journey-migration/implementation.md)
    + [Go Live](/help/journey-migration/go-live.md)
@@ -271,7 +271,7 @@ ht-degree: 95%
             + [Práticas recomendadas de tradução](/help/sites-cloud/administering/translation/best-practices.md)
    + Integração ao AEM as a Cloud Service {#integrations}
       + [Integração ao Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
-      + [Integração com a configuração automatizada do Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Integração com a configuração automática do Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Exportar fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
@@ -290,7 +290,7 @@ ht-degree: 95%
       + [Pesquisar ativos](/help/assets/search-assets.md)
       + [Tarefas comuns do gerenciamento de ativos](/help/assets/manage-digital-assets.md)
       + [Gerenciar publicação](/help/assets/manage-publication.md)
-      + [Visualizar ativos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
+      + [Pré-visualizar ativos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Tags inteligentes para imagens](/help/assets/smart-tags.md)
       + [Insira tags inteligentes em seus ativos de vídeo](/help/assets/smart-tags-video-assets.md)
       + [Como organizar ativos](/help/assets/organize-assets.md)
@@ -354,7 +354,7 @@ ht-degree: 95%
       + [Opcional - Configurar o Dynamic Media, Configurações gerais](/help/assets/dynamic-media/dm-general-settings.md)
       + [Opcional - Configurar o Dynamic Media, Configuração de publicação](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Solução de problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
-      + [Configurar uma conta do Dynamic Media Alias](/help/assets/dynamic-media/dm-alias-account.md)
+      + [Configurar um alias de conta do Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md)
       + [Acessibilidade no Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md)
       + [Gerenciar ativos do Dynamic Media](/help/assets/dynamic-media/managing-assets.md)
       + [Práticas recomendadas para otimização da qualidade de imagens](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -459,7 +459,7 @@ ht-degree: 95%
       + [Utilizar modelo de dados do formulário](/help/forms/using-form-data-model.md)
    + [Integrar ao Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [Integrar ao DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-   + [Integrar com sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+   + [Integração com o Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Integrar ao Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
    + Criar e usar fluxos de trabalho {#create-form-centric-workflows}
       + [Usar etapas centradas no Forms em um fluxo de trabalho + referência de etapa](/help/forms/aem-forms-workflow-step-reference.md)
@@ -736,7 +736,7 @@ ht-degree: 95%
             + [Autenticação para consultas remotas de GraphQL do AEM em fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=pt-BR)
       + Desenvolvimento híbrido e SPA {#hybrid}
          + [Híbrido e SPA com AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [Ativação da exportação JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [Ativação da exportação JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=pt-BR)
          + [Introdução e passo a passo do SPA](/help/implementing/developing/hybrid/introduction.md)
          + [Tutorial WKND do SPA](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Introdução à utilização do React](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -772,9 +772,9 @@ ht-degree: 95%
       + [Diagnósticos do ContextHub](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [Extensão do ContextHub](/help/implementing/developing/personalization/extending-contexthub.md)
       + [API do ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
-      + [Configuração de segmentação com o ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
+      + [Configuração de segmentação com o ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=pt-BR)
    + Configuração e extensão do AEM as a Cloud Service {#configuring-and-extending}
-      + Extensão de AEM com o App Builder{#app-builder}
+      + Extensão do AEM com o App Builder{#app-builder}
          + [Extensão do AEM usando o Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Introdução ao App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Console do desenvolvedor do Adobe](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
