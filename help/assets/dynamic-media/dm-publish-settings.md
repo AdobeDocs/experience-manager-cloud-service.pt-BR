@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3456'
 ht-degree: 3%
 
 ---
@@ -66,6 +66,9 @@ A página Servidor de imagens estabelece as configurações padrão para o forne
 ### Guia Segurança {#security-tab}
 
 **[!UICONTROL Endereço do cliente]** - Permite especificar um ou mais endereços IP ou intervalos de endereço IP. Quando especificado, as solicitações para este catálogo de imagem que se origina de um cliente em um endereço IP não listado são rejeitadas. Essa regra se aplica à entrega de imagens e imagens renderizadas.
+
+![Guia Segurança ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Guia Segurança mostrando o campo &quot;permitir&quot; IP.*
+
 
 ### Guia Gerenciamento de catálogo {#catalog-management-tab}
 
