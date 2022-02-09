@@ -2,9 +2,9 @@
 title: Geração de tokens de acesso para APIs do lado do servidor
 description: Saiba como facilitar a comunicação entre um servidor de terceiros e AEM as a Cloud Service gerando um token JWT seguro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 1b2f1f50832bb06fa5d4cc9a540ebc68cbebf7c8
+source-git-commit: c4f4ce968c17db1f1185ce7be9cad833eaf0b91b
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ O fluxo de servidor para servidor é descrito abaixo, juntamente com um fluxo si
 
 ## O fluxo de servidor para servidor {#the-server-to-server-flow}
 
-Um usuário com uma função de administrador de organização IMS e que também seja membro do Perfil de produto Usuários ou Administradores de AEM no Autor do AEM pode gerar uma credencial as a Cloud Service AEM. Essa credencial pode ser recuperada posteriormente por um usuário com a função de administrador do Ambiente as a Cloud Service AEM e deve ser instalada no servidor e precisa ser tratada cuidadosamente como uma chave secreta. Esse arquivo de formato JSON contém todos os dados necessários para integrar com uma AEM API as a Cloud Service. Os dados são usados para criar um token JWT assinado, que é trocado por IMS para um token de acesso IMS. Esse token de acesso pode ser usado como um token de autenticação Portador para fazer solicitações para AEM as a Cloud Service. As credenciais expiram após um ano por padrão, mas podem ser atualizadas quando necessário, gerando conforme descrito [here](#refresh-credentials).
+Um usuário com uma função de administrador de organização IMS e que também seja membro do Perfil de produto Usuários ou Administradores de AEM no Autor do AEM pode gerar uma credencial as a Cloud Service AEM. Essa credencial pode ser recuperada posteriormente por um usuário com a função de administrador do Ambiente as a Cloud Service AEM e deve ser instalada no servidor e precisa ser tratada cuidadosamente como uma chave secreta. Esse arquivo de formato JSON contém todos os dados necessários para integrar com uma AEM API as a Cloud Service. Os dados são usados para criar um token JWT assinado, que é trocado por IMS para um token de acesso IMS. Esse token de acesso pode ser usado como um token de autenticação Portador para fazer solicitações para AEM as a Cloud Service. As credenciais expiram após um ano por padrão, mas podem ser atualizadas quando necessário, conforme descrito [here](#refresh-credentials).
 
 O fluxo de servidor para servidor envolve as seguintes etapas:
 
