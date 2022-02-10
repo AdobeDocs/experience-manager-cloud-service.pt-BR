@@ -1,18 +1,18 @@
 ---
-title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2022.01.0
-description: Estas são as notas de versão do Cloud Manager AEM as a Cloud Service versão 2022.01.0.
+title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2022.02.0
+description: Estas são as notas de versão do Cloud Manager AEM as a Cloud Service versão 2022.02.0.
 feature: Release Information
-source-git-commit: 8da3976250c94d5858d07a83b0eb395fab9a3eda
+source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '274'
 ht-degree: 2%
 
 ---
 
 
-# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2022.01.0 {#release-notes}
+# Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2022.02.0 {#release-notes}
 
-Esta página descreve as notas de versão do Cloud Manager AEM as a Cloud Service 2022.01.0.
+Esta página descreve as notas de versão do Cloud Manager AEM as a Cloud Service 2022.02.0.
 
 >[!NOTE]
 >
@@ -20,18 +20,20 @@ Esta página descreve as notas de versão do Cloud Manager AEM as a Cloud Servic
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager AEM as a Cloud Service 2022.01.0 é 20 de janeiro de 2022. A próxima versão está planejada para 10 de fevereiro de 2022.
+A data de lançamento do Cloud Manager AEM as a Cloud Service 2022.02.0 é 10 de fevereiro de 2022. A próxima versão está prevista para 10 de março de 2022.
 
 ## Novidades {#what-is-new}
 
-* O Cloud Manager [evite reconstruir a base de código quando detecta que a mesma confirmação de git é usada](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) em várias execuções de pipeline de pilha completa.
-* Agora, para acessar o log de ambiente AEM é necessário **Gerenciador de implantação** perfil do produto. Os usuários sem esse perfil verão um botão desativado na interface do usuário.
-* A interface do usuário não permitirá a configuração de pipeline de front-end para um programa em que o Sites não está habilitado como uma solução.
-* Após gerar uma senha git, a data de expiração será exibida.
+* Novo acelerado [pipelines de configuração da camada da Web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) foram introduzidos para implantar exclusivamente a configuração HTTPD/dispatcher
+   * Você deve estar AEM versão `2021.12.6151.20211217T120950Z` para usar esse recurso.
+   * Esse recurso será implementado em uma abordagem em fases durante as duas semanas seguintes à versão 2022.02.0.
+* A experiência de página de aterrissagem do Cloud Manager foi atualizada para oferecer navegação aprimorada, fácil alternância entre exibições de grade/bloco e pop-ups para resumo rápido do programa.
+* Um novo limite de falha (`< D`) foi adicionado ao [métrica de classificação de confiabilidade.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
+   * Os clientes com problemas graves de qualidade que afetam a estabilidade do sistema, relacionados principalmente a índices inválidos e processos de fluxo de trabalho, não poderão implantar até que esses problemas sejam resolvidos.
+* A gravidade da `BannedPath` [regra de qualidade](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) O foi alterado de bloqueador para crítico.
+* O assistente de pipeline informará o usuário quando uma atualização de ambiente de AEM pode ser necessária antes de configurar um [pipelines de configuração da camada da Web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) associado a ela.
 
 ## Correções de erros {#bug-fixes}
 
-* Exceções de ponteiro nulo encontradas por algumas implantações de pipeline front-end foram corrigidas.
-* As variáveis de ambiente agora podem ser adicionadas, atualizadas e excluídas quando um ambiente estiver executando uma versão desatualizada do AEM.
-* A etapa de criação de imagem não será mais marcada como ERRO para pipelines que usaram a etapa agendada em determinados casos raros.
-* Para programas com apenas um repositório, a tela de execução do pipeline agora exibirá o nome do repositório.
+* As senhas antigas do repositório Git agora são sempre invalidadas quando uma nova senha é gerada.
+* A atualização de variáveis de ambiente por meio da API não interfere mais na execução de um pipeline em raras situações.

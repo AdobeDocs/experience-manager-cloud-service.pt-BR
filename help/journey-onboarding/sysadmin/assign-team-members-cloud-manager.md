@@ -1,173 +1,157 @@
 ---
-title: 'Atribuindo membros da equipe a perfis de produto do Cloud Manager '
+title: Atribuindo membros da equipe a perfis de produto do Cloud Manager
 description: Siga esta página para saber como atribuir membros da equipe a perfis de produto do Cloud Manager
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
+source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 0%
+source-wordcount: '1154'
+ht-degree: 1%
 
 ---
 
-
 # Atribuir membros da equipe aos perfis de produto do Cloud Manager {#assign-team-members}
 
-Depois de saber como fazer logon no [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) e visualizar seus privilégios como um [Administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en), você estará pronto para atribuir membros da equipe aos perfis de produto do Cloud Manager.
+Na etapa anterior desta jornada, [Introdução ao processo de integração](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md), agora você aprendeu a fazer logon no Admin Console e visualizou seus privilégios como Administrador do sistema. Agora você está pronto para atribuir membros da equipe aos perfis de produto do Cloud Manager.
 
 ## Objetivo {#objective}
 
-Este documento resume como atribuir membros da equipe aos perfis de produto do Cloud Manager da Adobe Admin Console.
+Este documento resume como atribuir membros da equipe aos perfis de produto do Cloud Manager da Adobe Admin Console. Depois de atribuídos, esses membros podem criar recursos da nuvem de acesso, conforme descrito na próxima etapa desta jornada.
 
 Após ler esta seção, você deve ser capaz de:
 
 * Entenda por que e como você deve adicionar membros da equipe.
-* Saiba mais sobre três perfis de produto diferentes do Cloud Manager, como Proprietário comercial, Gerenciador de implantação e Desenvolvedor.
-* Atribua membros da equipe a perfis de produtos do Cloud Manager, como Proprietário comercial, Gerenciador de implantação e Desenvolvedor.
+* Saiba mais sobre três perfis de produto importantes do Cloud Manager: **Proprietário da empresa**, **Gerenciador de implantação** e **Desenvolvedor**.
+* Atribua membros da equipe aos perfis de produto do Cloud Manager.
+
+>[!TIP]
+>
+>Para fins de integração, o Adobe recomenda adicionar usuários inicialmente que participarão das tarefas imediatas, como administradores, desenvolvedores e autores de conteúdo. Você pode continuar o processo de integração sem adicionar todos os usuários. Após concluir a integração, você pode adicionar outros usuários.
 
 ## Pré-requisitos {#prerequisites}
 
-Os seguintes pré-requisitos devem ser considerados antes de iniciar esta seção. Você deve:
+Os seguintes pré-requisitos devem ser atendidos antes de iniciar esta seção. Você deve:
 
-* Seja um Administrador do sistema e entenda [Perfis de produto do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
-* Entenda as noções básicas do [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en).
-* Tenha detalhes sobre os membros da sua equipe. Um Administrador do sistema deve ter os nomes, endereços de email e as funções e responsabilidades dos membros da equipe que precisarão acessar o AEM como Cloud Service.
-
-   >[!NOTE]
-   >Para fins de integração, recomendamos que você adicione inicialmente usuários que participarão das tarefas imediatas, como administradores, desenvolvedores e autores de conteúdo. Você pode continuar o resto da integração sem adicionar todos os usuários. Depois de concluir a integração, você pode dimensionar para um número maior de usuários posteriormente.
+* Seja um administrador do sistema e entenda os perfis de produto do Cloud Manager.
+   * Retorne ao [Visão geral da Jornada de integração](onboarding-journey-overview.md) se você não estiver familiarizado com esses conceitos.
+* Entenda as noções básicas do Adobe Admin Console.
+   * Retorne ao [Visão geral da Jornada de integração](onboarding-journey-overview.md) se você não estiver familiarizado com esses conceitos.
+* Tenha detalhes sobre os membros da sua equipe, que precisarão acessar AEM as a Cloud Service, incluindo
+   * Nomes
+   * Endereços de email
+   * Funções e responsabilidades
 
 ## Revisar perfis de produto do Cloud Manager {#review-product-profiles}
 
-Na Adobe Admin Console, é possível ver a lista de Perfis do Cloud Manager.
+No Adobe Admin Console, é possível ver a lista de perfis do Cloud Manager.
 
->[!NOTE]
->Antes de revisar os perfis de produto do Cloud Manager no Admin Console, é recomendável revisar os [Perfis de produto do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) disponíveis.
+1. Faça logon no Adobe Admin Console em [adminconsole.adobe.com](https://adminconsole.adobe.com/) e da **Visão geral** página, selecione **Adobe Experience Manager as a Cloud Service** do **Produtos e serviços** cartão.
 
-Siga as etapas abaixo para exibir a lista de Perfis do Cloud Manager:
+   ![AEM como produto](/help/journey-onboarding/assets/assign-team1.png)
 
-1. Faça logon em [Adobe Admin Console](https://adminconsole.adobe.com/). Na página **Visão geral**, selecione **Adobe Experience Manager como um Cloud Service** no cartão **Produtos e serviços**.
+1. Navegue até o **Cloud Manager** da lista de todas as instâncias.
 
-   ![](/help/journey-onboarding/assets/assign-team1.png)
+   ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-   >[!NOTE]
-   >Consulte Fazer logon no Admin Console para saber como usar o Admin Console.
+1. Você verá a lista de perfis de produto pré-configurados do Cloud Manager.
 
-
-1. Navegue até a instância **Cloud Manager** a partir da lista de todas as instâncias.
-
-   ![](/help/journey-onboarding/assets/assign-team2.png)
-
-1. Você verá a lista de [perfis de produto do Cloud Manager pré-configurados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
-
-   ![](/help/journey-onboarding/assets/assign-team3.png)
-
+   ![Perfis de produto](/help/journey-onboarding/assets/assign-team3.png)
 
 ## Atribuir usuários ao perfil de produto do proprietário comercial {#assign-users-business-owner}
 
-Agora você está pronto para adicionar usuários e atribuí-los ao perfil de produto Proprietário comercial do Cloud Manager.
+Agora você está pronto para adicionar usuários e atribuí-los à variável **Proprietário da empresa** perfil do produto.
 
->[!NOTE]
->Para fazer isso com êxito, no console de administração do Adobe, é necessário adicionar um usuário ao produto (AEM como Cloud Service neste caso) e [Perfil de produto Proprietário comercial do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
+1. Identifique os usuários que gerenciarão os programas do Cloud Manager e adicione-os ao perfil de produto Proprietário comercial.
 
-As etapas a seguir guiarão você por isso:
+1. Faça logon no Admin Console em [adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview) e no **Visão geral** página, selecione **Adobe Experience Manager as a Cloud Service** produto de **Produtos e serviços** cartão.
 
-1. Identifique os usuários que gerenciarão os programas do Cloud Manager e adicione-os ao perfil de produto Proprietário comercial. O Administrador do sistema deve ser a primeira pessoa a acessar e fazer logon no Cloud Manager. Você deve adicionar a si mesmo (Administrador do sistema) ao perfil de produto Proprietário comercial primeiro.
+   ![Produtos e serviços](/help/journey-onboarding/assets/assign-team1.png)
 
-1. Na página [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **Visão geral**, selecione **Adobe Experience Manager como Cloud Service** produto da placa **Produtos e serviços** como mostrado abaixo.
+1. Selecione o **Usuários** na navegação superior, em seguida, selecione **Adicionar usuário**.
 
-   ![](/help/journey-onboarding/assets/assign-team1.png)
+   ![Adicionar usuário](/help/journey-onboarding/assets/assign-team4.png)
 
-1. Selecione a guia **Users** no início da navegação e selecione **Adicionar usuário**.
+1. No **Adicionar usuários à equipe** , insira a ID de email do usuário que deseja adicionar.
 
-   ![](/help/journey-onboarding/assets/assign-team4.png)
+   * Se a ID federada dos membros da equipe ainda não tiver sido configurada, selecione **Adobe ID** para **Tipo de ID**.
 
-1. Na caixa de diálogo **Adicionar usuários à sua equipe**, digite a ID do email do usuário que deseja adicionar. Para o Tipo de ID, selecione Adobe ID, se o Federated ID para os membros da equipe ainda não tiver sido configurado.
+   ![Adicionar detalhes do usuário](/help/journey-onboarding/assets/assign-team5.png)
 
-   ![](/help/journey-onboarding/assets/assign-team5.png)
+1. Clique no botão de mais sob a **Selecionar produtos ou grupos de usuários** para iniciar a seleção do produto e selecione **Adobe Experience Manager as a Cloud Service** e atribuir **Proprietário da empresa** perfil de produto para o usuário.
 
-1. Na seleção Produto , selecione **Adobe Experience Manager como Cloud Service** e atribua o perfil de produto **Proprietário comercial** ao usuário, conforme mostrado abaixo.
+   * Atribua cada usuário a pelo menos um perfil de produto para que ele possa acessar o Cloud Manager.
+   * Lembre-se de atribuir a si mesmo como Administrador do sistema ao **Proprietário da empresa** função.
 
-   >[!NOTE]
-   >Consulte [Cloud Manager product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) para garantir que as funções certas sejam atribuídas aos usuários certos no Admin Console, conforme mostrado abaixo.
+   ![Atribuição de usuários](/help/journey-onboarding/assets/assign-team6.png)
 
-   ![](/help/journey-onboarding/assets/assign-team6.png)
+1. Clique em **Salvar** e um email de boas-vindas é enviado ao usuário adicionado. O usuário convidado pode acessar o Cloud Manager clicando no link do email de boas-vindas e fazendo logon usando a Adobe ID.
 
-   >[!NOTE]
-   >Atribua o usuário a pelo menos um perfil de produto para que ele possa acessar o Cloud Manager. Lembre-se de atribuir a si mesmo (Administrador do sistema) ao Proprietário comercial.
+1. Repita essas etapas para os usuários em sua equipe.
 
-1. Clique em **Salvar**. Um email de boas-vindas é enviado ao usuário adicionado. O usuário convidado pode acessar o Cloud Manager clicando no link do email de boas-vindas e fazendo logon usando a Adobe ID.
-
-   Parabéns! Sua equipe recém-formada do Cloud Manager (incluindo você atribuído à função &quot;Proprietário comercial&quot;) foi configurada. Os membros receberão um email de boas-vindas convidando-os para fazer logon e acessar o Cloud Manager. Na função de Proprietário comercial, agora você está a apenas um passo de fazer logon no Cloud Manager e ativar a criação dos recursos de nuvem.
+Sua equipe recém-formada do Cloud Manager (incluindo você atribuído ao **Proprietário da empresa** foi configurada. No papel de **Proprietário da empresa**, agora você está a apenas um passo de fazer logon no Cloud Manager e ativar a criação dos recursos da nuvem.
 
 ## Atribuir usuários ao perfil de produto do Gerenciador de implantação {#assign-users-deployment-manager}
 
-1. Identifique os usuários que gerenciarão os programas do Cloud Manager e adicione-os ao perfil de produto do Deployment Manager. O Administrador do sistema deve ser a primeira pessoa a acessar e fazer logon no Cloud Manager. Primeiro, você deve adicionar a si mesmo (Administrador do sistema) ao perfil de produto Proprietário comercial (conforme descrito na seção anterior).
+1. Identifique os usuários que gerenciarão os programas do Cloud Manager e adicione-os ao perfil de produto do Deployment Manager.
 
-1. Na página [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **Visão geral**, selecione **Adobe Experience Manager como Cloud Service** produto da placa **Produtos e serviços** como mostrado abaixo.
+1. Faça logon no Admin Console em [adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview) e no **Visão geral** seleção de página **Adobe Experience Manager as a Cloud Service** do **Produtos e serviços** cartão.
 
-   ![](/help/journey-onboarding/assets/assign-team1.png)
+   ![Produtos e serviços](/help/journey-onboarding/assets/assign-team1.png)
 
-1. Selecione a guia **Users** no início da navegação e selecione **Adicionar usuário**.
+1. Selecione o **Usuários** no início da navegação e selecione **Adicionar usuário**.
 
-   ![](/help/journey-onboarding/assets/assign-team4.png)
+   ![Adicionar usuário](/help/journey-onboarding/assets/assign-team4.png)
 
-1. Na caixa de diálogo **Adicionar usuários à sua equipe**, digite a ID do email do usuário que deseja adicionar. Para o Tipo de ID, selecione Adobe ID, se o Federated ID para os membros da equipe ainda não tiver sido configurado.
+1. No **Adicionar usuários à equipe** , insira a ID de email do usuário que deseja adicionar.
 
-   ![](/help/journey-onboarding/assets/assign-team5.png)
+   * Se a ID federada dos membros da equipe ainda não tiver sido configurada, selecione **Adobe ID** para **Tipo de ID**.
 
-1. Na seleção Produto , selecione **Adobe Experience Manager como Cloud Service** e atribua o perfil de produto **Gerenciador de implantação** ao usuário, conforme mostrado abaixo.
+   ![Inserir ID](/help/journey-onboarding/assets/assign-team5.png)
 
-   >[!NOTE]
-   >Consulte [Cloud Manager product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) para garantir que as funções certas sejam atribuídas aos usuários certos no Admin Console, conforme mostrado abaixo.
+1. Clique no botão de mais sob a **Selecionar produtos ou grupos de usuários** para iniciar a seleção do produto e selecione **Adobe Experience Manager as a Cloud Service** e atribuir **Gerenciador de implantação** perfil de produto para o usuário.
 
-   ![](/help/journey-onboarding/assets/assign-team6.png).
-
-   >[!IMPORTANT]
-   >O usuário pode ser adicionado ao perfil de produto do Gerenciador de implantação depois que os recursos do Cloud Manager forem criados.
+   ![Atribuir perfil](/help/journey-onboarding/assets/assign-team6.png).
 
 ## Atribuir usuários ao perfil de produto do desenvolvedor {#assign-users-developer}
 
-1. Identifique os usuários que gerenciarão os programas do Cloud Manager e adicione-os ao perfil de produto do Desenvolvedor. O Administrador do sistema deve ser a primeira pessoa a acessar e fazer logon no Cloud Manager. Você deve adicionar a si mesmo (Administrador do sistema) ao perfil de produto Proprietário comercial primeiro.
+1. Identifique os usuários que gerenciarão os programas do Cloud Manager.
 
-1. Na página [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **Visão geral**, selecione **Adobe Experience Manager como Cloud Service** produto da placa **Produtos e serviços** como mostrado abaixo.
+1. Faça logon no Admin Console em [adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise/overview) e no **Visão geral** seleção de página **Adobe Experience Manager as a Cloud Service** do **Produtos e serviços** cartão.
 
-   ![](/help/journey-onboarding/assets/assign-team1.png)
+   ![Produtos e serviços](/help/journey-onboarding/assets/assign-team1.png)
 
-1. Selecione a guia **Users** no início da navegação e selecione **Adicionar usuário**.
+1. Selecione o **Usuários** no início da navegação e selecione **Adicionar usuário**.
 
-   ![](/help/journey-onboarding/assets/assign-team4.png)
+   ![Adicionar usuário](/help/journey-onboarding/assets/assign-team4.png)
 
-1. Na caixa de diálogo **Adicionar usuários à sua equipe**, digite a ID do email do usuário que deseja adicionar. Para o Tipo de ID, selecione Adobe ID, se o Federated ID para os membros da equipe ainda não tiver sido configurado.
+1. Em **Adicionar usuários à equipe** , insira a ID de email do usuário que deseja adicionar.
 
-   >[!NOTE]
-   >Para saber mais sobre tipos de identidade no Adobe Admin Console, consulte [Visão geral da identidade](https://helpx.adobe.com/enterprise/using/identity.html).
+   * Se a ID federada dos membros da equipe ainda não tiver sido configurada, selecione **Adobe ID** para **Tipo de ID**.
 
-   ![](/help/journey-onboarding/assets/assign-team5.png)
+   ![Adicionar ID de usuário](/help/journey-onboarding/assets/assign-team5.png)
 
-1. Na seleção Produto , selecione **Adobe Experience Manager como Cloud Service** e atribua o perfil de produto **Desenvolvedor** ao usuário, conforme mostrado abaixo.
+1. Clique no botão de mais sob a **Selecionar produtos ou grupos de usuários** para iniciar a seleção do produto e selecione **Adobe Experience Manager as a Cloud Service** e atribuir **Desenvolvedor** perfil de produto para o usuário.
 
-   >[!NOTE]
-   >Consulte [Cloud Manager product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) para garantir que as funções certas sejam atribuídas aos usuários certos no Admin Console, conforme mostrado abaixo.
-
-   ![](/help/journey-onboarding/assets/assign-team6.png).
-
-
-   >[!IMPORTANT]
-   >O usuário pode ser adicionado ao perfil de produto Desenvolvedor após a criação dos recursos do Cloud Manager.
+   ![Atribuir perfil](/help/journey-onboarding/assets/assign-team6.png).
 
 ## O que vem a seguir {#whats-next}
 
-Você aprendeu sobre três perfis de produto diferentes do Cloud Manager, como Proprietário comercial, Gerenciador de implantação e Desenvolvedor. Em seguida, você atribuiu membros da equipe a perfis de produtos do Cloud Manager, como Proprietário comercial, Gerenciador de implantação e Desenvolvedor. Agora você está pronto para continuar sua jornada de integração ao revisar o documento [Configurar recursos da nuvem por meio do Cloud Manager](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md), onde você aprenderá:
+Nesta parte da jornada de integração, você aprendeu tudo sobre como atribuir membros da equipe a funções no Admin Console. Agora você deve:
 
-1. Como Administrador do sistema atribuído à função *Proprietário comercial*, você deve acessar e fazer logon no Cloud Manager.
+* Entenda por que e como você deve adicionar membros da equipe.
+* Entenda três perfis de produto importantes do Cloud Manager: **Proprietário da empresa**, **Gerenciador de implantação** e **Desenvolvedor**.
+* Atribua membros da equipe a perfis de produto do Cloud Manager.
 
-1. Em seguida, um usuário do Cloud Manager na função *Proprietário comercial* pode fazer logon e configurar os recursos da nuvem, incluindo o Programa da nuvem e os Ambientes. Isso garantirá que sua equipe de especialistas possa começar a acessar o AEM como Cloud Service o mais rápido possível.
+Agora você está pronto para continuar sua jornada de integração ao revisar o documento [Configuração de recursos da nuvem via Cloud Manager](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md), onde você aprenderá:
 
-1. Depois que seu *Proprietário da empresa* configurar seus recursos de nuvem, os *Desenvolvedores* e os *Gerenciadores de implantação* que foram adicionados com êxito aos perfis de produto do Cloud Manager poderão acessar o Cloud Manager e se familiarizar como eles podem continuar em seu caminho de aprendizagem.
+1. Para que outros proprietários de negócios criem programas, você, como Administrador do Sistema, é atribuído ao **Proprietário da empresa** , deve primeiro acessar e fazer logon no Cloud Manager.
+1. Como um usuário com a **Proprietário da empresa** pode fazer logon e configurar os recursos da nuvem, incluindo o Programa da nuvem e os Ambientes.
+1. Como os usuários com a **Desenvolvedor** e **Gerenciador de implantação** As funções podem acessar o Cloud Manager.
 
 ## Recursos adicionais {#additional-resources}
 
-Siga os recursos adicionais para saber mais sobre:
+É recomendável continuar na jornada de integração conforme descrito anteriormente. Esses são alguns recursos adicionais se você quiser fazer um mergulho profundo em um tópico específico desta jornada.
 
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)
 * [Perfis de produto do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)
