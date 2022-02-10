@@ -15,7 +15,10 @@ Saiba como o teste de qualidade de código de pipelines funciona e como ele pode
 
 >[!CONTEXTUALHELP]
 >
->
+>id="aemcloud_nonbpa_codequalitytests"
+>title="Code Quality Testing"
+>abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+
 ## Introdução {#introduction}
 
 O teste de qualidade do código avalia o código do aplicativo com base em um conjunto de regras de qualidade. É o objetivo principal de um pipeline somente de qualidade de código e é executado imediatamente após a etapa de build em todos os pipelines de produção e não produção.
