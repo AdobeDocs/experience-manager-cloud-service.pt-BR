@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1095'
 ht-degree: 29%
 
 ---
@@ -43,7 +43,7 @@ Essa variável de ambiente é usada em dois lugares:
 
 Pode ser usado um URL de ponto de extremidade GraphQL da diferente para cada ambiente do AEM as a Cloud Service. Dessa forma, os projetos podem conectar AEM ambientes de preparo com sistemas de preparo comercial e AEM ambiente de produção a um sistema de produção comercial. Esse ponto de extremidade GraphQL da deve estar disponível publicamente. Não há suporte para VPN privada ou conexões locais. Como opção, é possível fornecer um cabeçalho de autenticação para usar recursos adicionais da CIF que exigem autenticação.
 
-Opcional e somente para Adobe Commerce Enterprise/Cloud, o complemento CIF é compatível com o uso de dados de catálogo preparados para AEM autores. Isso requer a configuração de um token de autorização. O token de autorização configurado só está disponível e é usado em instâncias AEM autor por motivos de segurança. AEM instâncias de publicação não podem mostrar dados preparados.
+Como opção e somente para Adobe Commerce Enterprise/Cloud, o complemento CIF é compatível com o uso de dados de catálogo preparados para AEM autores. Isso requer a configuração de um cabeçalho de autorização. Esse cabeçalho só está disponível e é usado em instâncias AEM autor por motivos de segurança. AEM instâncias de publicação não podem mostrar dados preparados.
 
 Há duas opções para configurar o ponto de extremidade:
 
@@ -59,7 +59,7 @@ Clicar nesse botão abre uma caixa de diálogo:
 
 ![Endpoint de comércio CM](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Depois que o endpoint (como opção, um token de autenticação para suporte ao catálogo preparado) é definido, o endpoint é exibido na página de detalhes. Clicar no ícone Editar abrirá a mesma caixa de diálogo em que o endpoint pode ser modificado, se necessário.
+Depois que o endpoint e, opcionalmente, um cabeçalho de autorização para o suporte ao catálogo preparado forem definidos, o endpoint será exibido na página de detalhes. Clicar no ícone Editar abrirá a mesma caixa de diálogo em que o endpoint pode ser modificado, se necessário.
 
 ![Informações do ambiente CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
