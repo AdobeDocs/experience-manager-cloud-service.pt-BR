@@ -2,9 +2,9 @@
 title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2022.02.0
 description: Estas são as notas de versão do Cloud Manager AEM as a Cloud Service versão 2022.02.0.
 feature: Release Information
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '287'
 ht-degree: 2%
 
 ---
@@ -24,8 +24,8 @@ A data de lançamento do Cloud Manager AEM as a Cloud Service 2022.02.0 é 10 de
 
 ## Novidades {#what-is-new}
 
-* Novo acelerado [pipelines de configuração da camada da Web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) foram introduzidos para implantar exclusivamente a configuração HTTPD/dispatcher
-   * Você deve estar AEM versão `2021.12.6151.20211217T120950Z` para usar esse recurso.
+* Novo acelerado [pipelines de configuração da camada da Web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) foram introduzidos para implantar exclusivamente a configuração HTTPD/dispatcher.
+   * Você deve estar AEM versão `2021.12.6151.20211217T120950Z` ou mais recentes e [aceitar o modo flexível das ferramentas do dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para usar esse recurso.
    * Esse recurso será implementado em uma abordagem em fases durante as duas semanas seguintes à versão 2022.02.0.
 * A experiência de página de aterrissagem do Cloud Manager foi atualizada para oferecer navegação aprimorada, fácil alternância entre exibições de grade/bloco e pop-ups para resumo rápido do programa.
 * Um novo limite de falha (`< D`) foi adicionado ao [métrica de classificação de confiabilidade.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)

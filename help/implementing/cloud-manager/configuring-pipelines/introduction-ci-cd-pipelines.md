@@ -2,9 +2,9 @@
 title: Pipelines de CI/CD
 description: Saiba mais sobre os pipelines de CI/CD do Cloud Manager e como eles podem ser usados para implantar seu código com eficiência.
 index: true
-source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1364'
 ht-degree: 1%
 
 ---
@@ -147,16 +147,18 @@ Para saber como configurar pipelines de pilha completa, consulte os seguintes do
 
 Os pipelines de configuração da camada da Web permitem a implantação exclusiva da configuração HTTPD/Dispatcher no tempo de execução do AEM, dissociando-a de outras alterações de código. É um pipeline simplificado que fornece aos usuários que desejam implantar apenas as alterações de configuração do dispatcher, um meio acelerado de fazê-lo em apenas alguns minutos.
 
->[!IMPORTANT]
+>[!TIP]
 >
->Você deve estar AEM versão `X` ou superior para aproveitar os pipelines de configuração da camada da Web.
+>Com os pipelines de configuração da camada da Web, você pode escolher entre armazenar a configuração da Web no mesmo local de origem do pipeline de pilha completo ou em um local diferente, dependendo de qual estrutura se adapta melhor ao seu projeto.
 
 As restrições a seguir se aplicam.
 
+* Você deve estar AEM versão `2021.12.6151.20211217T120950Z` ou mais recente para aproveitar os pipelines de configuração da camada da Web.
+* Você deve [aceitar o modo flexível das ferramentas do dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para aproveitar os pipelines de configuração da camada da Web.
 * Um usuário deve estar conectado com a variável **Gerenciador de implantação** para configurar ou executar pipelines.
 * A qualquer momento, só pode haver um pipeline de configuração de camada da Web por ambiente.
 * O usuário não pode configurar um pipeline de configuração de camada da Web quando seu pipeline de pilha completa correspondente está em execução.
-* A estrutura da camada da Web deve aderir à estrutura do modo flexível, conforme definido no documento [Dispatcher na nuvem](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* A estrutura da camada da Web deve aderir à estrutura do modo flexível, conforme definido no documento [Dispatcher na nuvem.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
 Além disso, esteja ciente de como a variável [pipeline de pilha completo](#full-stack-pipeline) se comportará ao introduzir um pipeline de camada da Web.
 
