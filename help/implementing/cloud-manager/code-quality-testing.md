@@ -2,9 +2,9 @@
 title: Teste de qualidade do código
 description: Saiba como o teste de qualidade de código de pipelines funciona e como ele pode melhorar a qualidade de suas implantações.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ca3c1f255b8441a8d376a55a5353d58848384b8b
+source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1147'
 ht-degree: 2%
 
 ---
@@ -14,10 +14,9 @@ ht-degree: 2%
 Saiba como o teste de qualidade de código de pipelines funciona e como ele pode melhorar a qualidade de suas implantações.
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_codequalitytests"
->title="Code Quality Testing"
->abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+>title="Teste de qualidade do código"
+>abstract="O teste de qualidade do código avalia o código do aplicativo com base em um conjunto de regras de qualidade. É o objetivo principal de um pipeline somente de qualidade de código e é executado imediatamente após a etapa de build em todos os pipelines de produção e não produção."
 
 ## Introdução {#introduction}
 
@@ -30,7 +29,8 @@ Consulte o documento [Configurar seu pipeline de CI-CD](/help/implementing/cloud
 O teste de qualidade do código verifica o código-fonte para garantir que ele atenda a determinados critérios de qualidade. Esta é implementada por uma combinação de SonarQube e exame ao nível do pacote de conteúdo usando OakPAL. Há mais de 100 regras, combinando regras genéricas do Java e regras específicas de AEM. Algumas das regras específicas do AEM são criadas com base nas práticas recomendadas da engenharia AEM e são chamadas de [regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
-Você pode baixar a lista completa de regras [com este link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>
+>Você pode baixar a lista completa de regras [com este link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
 ### Classificações de três níveis {#three-tiered-gate}
 
@@ -58,10 +58,12 @@ A tabela a seguir resume as notações e os limiares de falha para cada uma das 
 | Compatibilidade Cloud Service | Número de problemas de compatibilidade do serviço em nuvem identificados | Informações | > 0 |
 
 >[!NOTE]
-Consulte [Definições de métrica da SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) para obter definições mais detalhadas.
+>
+>Consulte [Definições de métrica da SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) para obter definições mais detalhadas.
 
 >[!NOTE]
-Para saber mais sobre as regras de qualidade do código personalizado executadas pelo [!UICONTROL Cloud Manager]consulte o documento [Regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>
+>Para saber mais sobre as regras de qualidade do código personalizado executadas pelo [!UICONTROL Cloud Manager]consulte o documento [Regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Lidar com falsos positivos {#dealing-with-false-positives}
 
@@ -94,10 +96,11 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 Em seguida, a solução correta é remover a senha codificada.
 
 >[!NOTE]
-Embora seja uma prática recomendada fazer a variável `@SuppressWarnings` anotação o mais específica possível, ou seja, anote apenas a declaração ou bloco específico que causa o problema, é possível anotar em nível de classe.
+>
+>Embora seja uma prática recomendada fazer a variável `@SuppressWarnings` anotação o mais específica possível, ou seja, anote apenas a declaração ou bloco específico que causa o problema, é possível anotar em nível de classe.
 
 >[!NOTE]
-Embora não haja uma etapa explícita de teste de segurança, há regras de qualidade de código relacionadas à segurança avaliadas durante a etapa de qualidade do código. Consulte o documento [Visão geral de segurança para AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) para saber mais sobre segurança no Cloud Service.
+>Embora não haja uma etapa explícita de teste de segurança, há regras de qualidade de código relacionadas à segurança avaliadas durante a etapa de qualidade do código. Consulte o documento [Visão geral de segurança para AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) para saber mais sobre segurança no Cloud Service.
 
 ## Otimização da digitalização do pacote de conteúdo {#content-package-scanning-optimization}
 
@@ -114,6 +117,7 @@ Para projetos que produzem dezenas de pacotes incorporados, essa otimização ec
 Um caso especial pode ocorrer quando o pacote de conteúdo &quot;todos&quot; contiver uma combinação de pacotes de conteúdo ignorados e pacotes OSGi. Por exemplo, se `myco-all-1.0.0-SNAPSHOT.zip` continha os dois pacotes incorporados mencionados anteriormente, bem como um ou mais pacotes OSGi, então um novo pacote de conteúdo mínimo é construído apenas com os pacotes OSGi. Este pacote é sempre nomeado `cloudmanager-synthetic-jar-package` e os pacotes contidos são colocados em `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
-* Essa otimização não afeta os pacotes implantados no AEM.
-* Como a correspondência entre os pacotes de conteúdo incorporados e os pacotes de conteúdo ignorado se baseia em nomes de arquivo, essa otimização não pode ser executada se vários pacotes de conteúdo ignorados tiverem exatamente o mesmo nome de arquivo ou se o nome do arquivo for alterado durante a incorporação.
+>
+>* Essa otimização não afeta os pacotes implantados no AEM.
+>* Como a correspondência entre os pacotes de conteúdo incorporados e os pacotes de conteúdo ignorado se baseia em nomes de arquivo, essa otimização não pode ser executada se vários pacotes de conteúdo ignorados tiverem exatamente o mesmo nome de arquivo ou se o nome do arquivo for alterado durante a incorporação.
 
