@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ad49f5896680f191cd667b2e17ee8e81b7c424a5
+source-git-commit: 7076b5b7db75ebe4f6b381ab2330769f7dcd6904
 workflow-type: tm+mt
-source-wordcount: '3494'
-ht-degree: 98%
+source-wordcount: '3444'
+ht-degree: 97%
 
 ---
 
@@ -158,12 +158,7 @@ ht-degree: 98%
          + [Configurar o ambiente da sua conta](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [Sua caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [Atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + Jornada do autor de conteúdo headless {#headless-journey}
-         + [Jornada do autor de conteúdo headless do AEM - Visão geral](/help/journey-headless/author/overview.md)
-         + [Criação para headless com AEM - uma introdução](/help/journey-headless/author/introduction.md)
-         + [Noções básicas de criação para headless com AEM](/help/journey-headless/author/basics.md)
-         + [Saiba mais sobre como usar referências em Fragmentos de conteúdo](/help/journey-headless/author/references.md)
-         + [Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo](/help/journey-headless/author/metadata-tagging.md)
+      + [Jornada do autor de conteúdo headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
       + Princípios básicos de criação {#fundamentals}
          + [Ambiente e ferramentas](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [Adição de anotações de página](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -253,14 +248,7 @@ ht-degree: 98%
                + [Configurar regras de tradução](/help/journey-sites/translation/translation-rules.md)
                + [Traduzir conteúdo](/help/journey-sites/translation/translate-content.md)
                + [Publicar conteúdo traduzido](/help/journey-sites/translation/publish-content.md)
-            + Jornada de tradução headless {#headless}
-               + [Entender a tradução headless no AEM](/help/journey-headless/translation/overview.md)
-               + [Introdução à tradução do AEM headless](/help/journey-headless/translation/getting-started.md)
-               + [Saiba mais sobre o conteúdo headless e como traduzir no AEM](/help/journey-headless/translation/learn-about.md)
-               + [Configurar conector de tradução](/help/journey-headless/translation/configure-connector.md)
-               + [Configurar regras de tradução](/help/journey-headless/translation/translation-rules.md)
-               + [Traduzir conteúdo](/help/journey-headless/translation/translate-content.md)
-               + [Publicar conteúdo traduzido](/help/journey-headless/translation/publish-content.md)
+            + [Jornada de tradução headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [Tradução de conteúdo para sites multilíngues](/help/sites-cloud/administering/translation/overview.md)
             + [Preparação de conteúdo para tradução](/help/sites-cloud/administering/translation/preparation.md)
             + [Gerenciamento de projetos de tradução](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -319,9 +307,6 @@ ht-degree: 98%
       + [Pesquisar aspectos](/help/assets/search-facets.md)
       + [API HTTP de ativos](/help/assets/mac-api-assets.md)
       + [Suporte a Fragmentos de conteúdo na API HTTP do Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
-      + [API GraphQL para fragmentos de conteúdo](/help/assets/content-fragments/graphql-api-content-fragments.md)
-      + [Autenticação para consultas GraphQL remotas em fragmentos de conteúdo](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-      + [API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
       + [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
       + [Gerar para representações somente de posicionamento](/help/assets/configure-fpo-renditions.md)
       + [Relatórios de ativos](/help/assets/asset-reports.md)
@@ -547,6 +532,73 @@ ht-degree: 98%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migração](/help/commerce-cloud/migration.md)
    + [Perguntas frequentes](/help/commerce-cloud/faq.md)
++ Cabeça {#headless}
+   + [Introdução ao AEM headless](/help/headless/introduction.md)
+   + Configurar {#setup}
+      + [Introdução](/help/headless/setup/introduction.md)
+      + [Configuração](/help/headless/setup/create-configuration.md)
+      + [Modelo de fragmentos do conteúdo](/help/headless/setup/create-content-model.md)
+      + [Pasta de ativos](/help/headless/setup/create-assets-folder.md)
+      + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
+      + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
+   + Fragmentos de conteúdo {#content-fragments}
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=pt-BR)
+      + [Modelos de fragmentos do conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=pt-BR)
+      + [Gerenciamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=pt-BR)
+      + Criação{#authoring}
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=pt-BR)
+         + [Editor de texto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=pt-BR)
+         + [Conteúdo associado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=pt-BR)
+         + [Variações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
+      + [Metadados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+   + API GraphQL {#graphql-api}
+      + [API GraphQL para fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
+      + [Gerenciar pontos de extremidade do GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
+      + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
+      + [Exemplos de consultas GraphQL](/help/headless/graphql-api/sample-queries.md)
+      + [Consultas GraphQL persistentes](/help/headless/graphql-api/persisted-queries.md)
+   + [API REST de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=pt-BR)
+   + Segurança {#security}
+      + [Permissões](/help/headless/security/permissions.md)
+      + [Autenticação](/help/headless/security/authentication.md)
+   + Implantação {#deployment}
+      + [Arquitetura](/help/headless/deployment/architecture.md)
+      + [Dispatcher](/help/headless/deployment/dispatcher.md)
+      + [Configuração do CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
+      + [Filtro referenciador](/help/headless/deployment/referrer-filter.md)
+   + Jornadas headless {#journeys}
+      + Jornada de desenvolvedores headless {#developer}
+         + [Compreender o headless no AEM](/help/journey-headless/developer/overview.md)
+         + [Saiba mais sobre o desenvolvimento headless CMS](/help/journey-headless/developer/learn-about.md)
+         + [Introdução ao AEM Headless as a Cloud Service](/help/journey-headless/developer/getting-started.md)
+         + [Caminho para sua primeira experiência usando o AEM Headless](/help/journey-headless/developer/path-to-first-experience.md)
+         + [Como modelar seu conteúdo como Modelos de conteúdo do AEM](/help/journey-headless/developer/model-your-content.md)
+         + [Como acessar seu conteúdo por meio das APIs de entrega do AEM](/help/journey-headless/developer/access-your-content.md)
+         + [Como atualizar seu conteúdo por meio de APIs do AEM Assets](/help/journey-headless/developer/update-your-content.md)
+         + [Como reunir e organizar tudo](/help/journey-headless/developer/put-it-all-together.md)
+         + [Como executar o aplicativo headless](/help/journey-headless/developer/go-live.md)
+         + [Opcional - Como criar aplicativos de página única com o AEM](/help/journey-headless/developer/create-spa.md)
+      + Jornada do arquiteto de conteúdo do Headless {#architect}
+         + [Visão geral da jornada do Arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
+         + [Modelagem de conteúdo para headless com o AEM - uma introdução](/help/journey-headless/architect/introduction.md)
+         + [Saiba o básico sobre a modelagem de conteúdo para headless com AEM](/help/journey-headless/architect/basics.md)
+         + [Saiba mais sobre criação de modelos de fragmento de conteúdo no AEM](/help/journey-headless/architect/model-structure.md)
+      + Jornada de tradução headless {#translation}
+         + [Entender a tradução headless no AEM](/help/journey-headless/translation/overview.md)
+         + [Introdução à tradução do AEM headless](/help/journey-headless/translation/getting-started.md)
+         + [Saiba mais sobre o conteúdo headless e como traduzir no AEM](/help/journey-headless/translation/learn-about.md)
+         + [Configurar conector de tradução](/help/journey-headless/translation/configure-connector.md)
+         + [Configurar regras de tradução](/help/journey-headless/translation/translation-rules.md)
+         + [Traduzir conteúdo](/help/journey-headless/translation/translate-content.md)
+         + [Publicar conteúdo traduzido](/help/journey-headless/translation/publish-content.md)
+      + Jornada do autor de conteúdo headless {#author}
+         + [Jornada do autor de conteúdo headless do AEM - Visão geral](/help/journey-headless/author/overview.md)
+         + [Criação para headless com AEM - uma introdução](/help/journey-headless/author/introduction.md)
+         + [Noções básicas de criação para headless com AEM](/help/journey-headless/author/basics.md)
+         + [Saiba mais sobre como usar referências em Fragmentos de conteúdo](/help/journey-headless/author/references.md)
+         + [Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo](/help/journey-headless/author/metadata-tagging.md)
 + Implementação {#implementing}
    + [Implementação de aplicativos do AEM as a Cloud Service](/help/implementing/home.md)
    + Uso do Cloud Manager {#using-cloud-manager}
@@ -690,49 +742,7 @@ ht-degree: 98%
             + [Implementação de um avaliador de predicado personalizado](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [Páginas de erro personalizadas](/help/implementing/developing/introduction/custom-error-page.md)
          + [Tipos de nós do AEM](/help/implementing/developing/introduction/node-types.md)
-      + Gerenciamento de experiência headless {#headless}
-         + [Headless e AEM](/help/implementing/developing/headless/introduction.md)
-         + Jornadas headless {#journeys}
-            + Jornada de desenvolvedores headless {#developer}
-               + [Compreender o headless no AEM](/help/journey-headless/developer/overview.md)
-               + [Saiba mais sobre o desenvolvimento headless CMS](/help/journey-headless/developer/learn-about.md)
-               + [Introdução ao AEM Headless as a Cloud Service](/help/journey-headless/developer/getting-started.md)
-               + [Caminho para sua primeira experiência usando o AEM Headless](/help/journey-headless/developer/path-to-first-experience.md)
-               + [Como modelar seu conteúdo como Modelos de conteúdo do AEM](/help/journey-headless/developer/model-your-content.md)
-               + [Como acessar seu conteúdo por meio das APIs de entrega do AEM](/help/journey-headless/developer/access-your-content.md)
-               + [Como atualizar seu conteúdo por meio de APIs do AEM Assets](/help/journey-headless/developer/update-your-content.md)
-               + [Como reunir e organizar tudo](/help/journey-headless/developer/put-it-all-together.md)
-               + [Como executar o aplicativo headless](/help/journey-headless/developer/go-live.md)
-               + [Opcional - Como criar aplicativos de página única com o AEM](/help/journey-headless/developer/create-spa.md)
-            + Jornada do arquiteto de conteúdo do AEM Headless {#architect}
-               + [Visão geral da jornada do Arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
-               + [Modelagem de conteúdo para headless com o AEM - uma introdução](/help/journey-headless/architect/introduction.md)
-               + [Saiba o básico sobre a modelagem de conteúdo para headless com AEM](/help/journey-headless/architect/basics.md)
-               + [Saiba mais sobre criação de modelos de fragmento de conteúdo no AEM](/help/journey-headless/architect/model-structure.md)
-         + Guia de introdução do Headless {#getting-started}
-            + [Introdução](/help/implementing/developing/headless/getting-started/introduction.md)
-            + [Criação de uma configuração](/help/implementing/developing/headless/getting-started/create-configuration.md)
-            + [Criação de um modelo de fragmento de conteúdo](/help/implementing/developing/headless/getting-started/create-content-model.md)
-            + [Criação de uma pasta de ativos](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
-            + [Criação de um fragmento de conteúdo](/help/implementing/developing/headless/getting-started/create-content-fragment.md)
-            + [Acesso e entrega de fragmentos de conteúdo](/help/implementing/developing/headless/getting-started/create-api-request.md)
-         + Fragmentos de conteúdo {#content-fragments}
-            + [Entrega headless com fragmentos de conteúdo e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=pt-BR)
-            + [Trabalho com fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=pt-BR)
-            + [Ativar a funcionalidade de fragmento de conteúdo para sua instância](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html?lang=pt-BR)
-            + [Modelos de fragmentos do conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=pt-BR)
-            + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=pt-BR)
-            + [Variações - Criação dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=pt-BR)
-            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=pt-BR)
-            + [Usar conteúdo associado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=pt-BR)
-            + [Metadados - propriedades dos fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=pt-BR)
-            + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=pt-BR)
-            + [Visualização - Representação JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
-         + API de entrega {#delivery-api}
-            + [API REST de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=pt-BR)
-            + [API GraphQL de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=pt-BR)
-            + [API GraphQL do AEM com fragmentos de conteúdo - Amostras de conteúdo e consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=pt-BR)
-            + [Autenticação para consultas remotas de GraphQL do AEM em fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=pt-BR)
+      + [Gerenciamento de experiência headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + Desenvolvimento híbrido e SPA {#hybrid}
          + [Híbrido e SPA com AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Ativação da exportação JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=pt-BR)

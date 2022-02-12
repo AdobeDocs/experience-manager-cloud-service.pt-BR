@@ -1,34 +1,33 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0.
-description: '[!DNL Adobe Experience Manager] Notas de versão do as a Cloud Service para 2021.2.0.'
+description: '[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.2.0.'
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-translation-type: tm+mt
-source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
+source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
 workflow-type: tm+mt
 source-wordcount: '1237'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-A seção a seguir descreve as Notas de versão gerais para [!DNL Experience Manager] como um Cloud Service.
+A seção a seguir descreve as Notas de versão gerais de [!DNL Experience Manager] as a Cloud Service.
 
 ## Data de lançamento {#release-date}
 
-A Data de lançamento de [!DNL Adobe Experience Manager] como Cloud Service 2021.2.0 é 25 de fevereiro de 2021.
+A data de lançamento para [!DNL Adobe Experience Manager] O as a Cloud Service 2021.2.0 é 25 de fevereiro de 2021.
 A seguinte versão (2021.3.0) será lançada em 25 de março de 2021.
 
-## [!DNL Adobe Experience Manager Sites] como um Cloud Service  {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Gerenciamento de conteúdo sem periféricos {#headless}
 
-* **[API GraphQL para entrega](/help/assets/content-fragments/graphql-api-content-fragments.md)** de fragmentos de conteúdo: Capacidade de consultar Fragmentos de conteúdo usando a sintaxe GraphQL e esquemas com base em modelos de Fragmento de conteúdo, para saída no formato JSON.
+* **[API GraphQL para entrega de fragmento de conteúdo](/help/headless/graphql-api/content-fragments.md)**: Capacidade de consultar Fragmentos de conteúdo usando a sintaxe GraphQL e esquemas com base em modelos de Fragmento de conteúdo, para saída no formato JSON.
 
-* **[Suporte de autenticação para solicitações](/help/assets/content-fragments/graphql-authentication-content-fragments.md)** de API GraphQL: Capacidade de autenticar solicitações de API GraphQL com tokens de acesso para APIs do lado do servidor.
+* **[Suporte de autenticação para solicitações de API GraphQL](/help/headless/security/authentication.md)**: Capacidade de autenticar solicitações de API GraphQL com tokens de acesso para APIs do lado do servidor.
 
-* **[O componente](/help/implementing/developing/hybrid/remote-page.md)** RemotePage: Adição de suporte para visualizar e editar SPA externos no AEM usando o .
+* **[O componente RemotePage](/help/implementing/developing/hybrid/remote-page.md)**: Adição de suporte para visualizar e editar SPA externos no AEM usando o .
 
 * **[Edição de um SPA externo no AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Adição da capacidade de carregar um aplicativo de página única independente em uma instância do AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 
@@ -52,22 +51,22 @@ A seguinte versão (2021.3.0) será lançada em 25 de março de 2021.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-## Novidades em [!DNL Assets] {#what-is-new-assets}
+## Novidades do [!DNL Assets] {#what-is-new-assets}
 
 * Os ativos podem ser obtidos usando [!DNL Experience Manager Assets Brand Portal]. Ajuda a obter ativos dos usuários da agência para novas campanhas de marketing, fotografias e projetos.
 
-* [!DNL Experience Manager Assets] as a  [!DNL Cloud Service] tem direito a ter uma  [!DNL Brand Portal] instância pré-configurada. O usuário [!DNL Cloud Manager] pode ativar [!DNL Brand Portal] em [!DNL Experience Manager Assets] como um [!DNL Cloud Service]. Consulte [ativar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
+* [!DNL Experience Manager Assets] como [!DNL Cloud Service] tem direito a uma pré-configuração [!DNL Brand Portal] instância. O [!DNL Cloud Manager] o usuário pode ativar [!DNL Brand Portal] on [!DNL Experience Manager Assets] como [!DNL Cloud Service]. Consulte [ativar o Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=pt-BR).
 
-* Agora, as empresas podem criar ativos usando [!DNL Brand Portal]. O recurso de fornecimento de ativos aproveita [!DNL Brand Portal] para ajudar os clientes a se envolverem com usuários de agências a obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
+* Agora, as empresas podem adquirir ativos usando [!DNL Brand Portal]. Recursos de fornecimento de ativos aproveitam [!DNL Brand Portal] para ajudar os clientes a se envolverem com usuários de agências para obter ativos para novas campanhas de marketing, fotografias e projetos. Consulte [origem de ativos em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR).
 
-* O relatório de uso [!DNL Brand Portal] agora exibe somente os usuários ativos. Os usuários inativos não são exibidos agora. Os usuários ativos são aqueles cuja conta está atribuída a um perfil de produto no [!DNL Admin Console]. Consulte [[!DNL Brand Portal] relatórios](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
+* O [!DNL Brand Portal] relatório de uso agora exibe somente os usuários ativos. Os usuários inativos não são exibidos agora. Os usuários ativos são aqueles cuja conta está atribuída a um perfil de produto no [!DNL Admin Console]. Consulte [[!DNL Brand Portal] relatórios](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
-* Em [!DNL Brand Portal], uma nova configuração de download é introduzida, permitindo que você crie uma pasta separada para cada ativo ao baixar pastas, coleção e assim por diante. Consulte [configurações de download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
+* Em [!DNL Brand Portal], uma nova configuração de download é introduzida, permitindo criar uma pasta separada para cada ativo ao baixar pastas, coleção e assim por diante. Consulte [configurações de download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
-## Correções de erros em [!DNL Assets] {#bug-fixes-assets}
+## Correções de erros no [!DNL Assets] {#bug-fixes-assets}
 
 * Quando vários ativos são selecionados para atualizar as propriedades, às vezes ocorre um erro ou as propriedades de um ativo desmarcado são atualizadas. (CQ-4316532)
-* Ao tentar abrir [!UICONTROL Painel de pesquisa do administrador de ativos], a página permanece em branco e clicar em [!UICONTROL Editar] > [!UICONTROL Configurações] gera um erro. (CQ-4315079)
+* Ao tentar abrir [!UICONTROL Painel de pesquisa do administrador de ativos], a página permanece em branco e ao clicar em [!UICONTROL Editar] > [!UICONTROL Configurações] gera um erro. (CQ-4315079)
 * Quando uma nova versão de um ativo existente é criada após resolver o conflito de nomes, os metadados do ativo original são substituídos. (CQ-4313594)
 * Quando um ativo com texto de anotação longo é impresso, o texto da anotação é cortado, mesmo se espaço estiver disponível. (CQ-4314101)
 
@@ -81,18 +80,18 @@ A seguinte versão (2021.3.0) será lançada em 25 de março de 2021.
 
 * Lançamento do site de referência CIF Venia - 2021.02.24, que inclui a versão mais recente dos Componentes principais CIF v1.8.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) para obter mais detalhes.
 
-* Lançamento de componentes principais CIF v1.8.0. Consulte [Componentes principais CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) para obter mais detalhes.
+* Lançamento de componentes principais CIF v1.8.0. Consulte [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) para obter mais detalhes.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Data de lançamento {#release-date-cm}
 
-A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.2.0 é 11 de fevereiro de 2021.
+A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.2.0 é 11 de fevereiro de 2021.
 
 ### Novidades {#what-is-new-cloud-manager}
 
 
-* Os clientes do Assets agora poderão escolher quando e onde implantar sua instância do Brand Portal de forma automatizada por meio da interface do usuário do Cloud Manager. Para um programa regular (não sandbox) com a solução Assets, o Brand Portal agora pode ser provisionado no ambiente de produção. O provisionamento pode ser feito apenas uma vez no ambiente de Produção.
+* Os clientes do Assets agora poderão escolher quando e onde implantar sua instância do Brand Portal de forma automatizada por meio da interface do usuário do Cloud Manager. Para um programa regular (não sandbox) com a solução Assets, a Brand Portal agora pode ser provisionada no ambiente de produção. O provisionamento pode ser feito apenas uma vez no ambiente de Produção.
 
 * O Arquétipo de projeto AEM usado na Criação de projeto e sandbox foi atualizado para a versão 25.
 
@@ -102,7 +101,7 @@ A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.2.0 é 11 
 
 * A interface do usuário do Cloud Manager informará o usuário que pode não ser temporariamente capaz de adicionar/atualizar o nome de domínio porque o ambiente associado tem um pipeline em execução anexado a ele ou que está aguardando a etapa de aprovação.
 
-* As propriedades definidas nos arquivos `pom.xml` do cliente prefixados com o sonar agora serão removidas dinamicamente para evitar falhas de verificação de qualidade e criação.
+* Propriedades definidas no cliente `pom.xml` Os arquivos com o prefixo sonar agora serão removidos dinamicamente para evitar falhas de build e de verificação de qualidade.
 
 * A interface do usuário do Cloud Manager informará o usuário que pode não ser temporariamente capaz de selecionar um certificado SSL se ele estiver sendo usado por um nome de domínio que está sendo implantado no momento.
 
@@ -134,10 +133,10 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.2.4 é 10 de 
 
 A Data de lançamento da ferramenta Transferência de conteúdo v1.2.2 é 1 de fevereiro de 2021.
 
-### Novidades na ferramenta Transferência de conteúdo {#what-is-new-ctt}
+### Novidades da ferramenta Transferência de conteúdo {#what-is-new-ctt}
 
 * Novo recurso e interface do usuário adicionados à ferramenta Transferência de conteúdo - Ferramenta de mapeamento de usuário. Esse recurso mapeia automaticamente usuários e grupos existentes para suas IDs de sistema do Adobe Identity Management como parte da atividade de migração de conteúdo.
-Consulte [Usar a ferramenta de mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obter mais detalhes.
+Consulte [Usar a ferramenta Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obter mais detalhes.
 * A ferramenta Transferência de conteúdo agora migra todos os grupos e usuários referenciados no conjunto de migração, incluindo filhos.
 * Os usuários podem selecionar determinados caminhos em `/etc` ao criar conjuntos de migração.
 
@@ -160,9 +159,9 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.2 é 18 de fe
 ### Novidades nas Ferramentas de refatoração de código {#what-is-new-crt}
 
 * Nova versão do plug-in AIO-CLI lançada. A versão mais recente deste plug-in inclui várias correções de erros para o Repository Modernizer.
-Consulte [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para saber mais sobre esse plug-in.
+Consulte [Experiência unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para saber mais sobre este plug-in.
 
 ### Correções de erros {#bug-fixes-crt}
 
 * Várias correções de erros feitas no Repository Modernizer.
-Consulte [Recurso GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obter mais detalhes.
+Consulte [Recurso do GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obter mais detalhes.

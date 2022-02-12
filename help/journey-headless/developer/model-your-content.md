@@ -2,7 +2,7 @@
 title: Como modelar seu conteúdo
 description: Nesta parte da Jornada do desenvolvedor sem cabeçalho AEM, saiba como modelar o conteúdo para AEM entrega sem cabeçalho usando a Modelagem de conteúdo com modelos de fragmentos de conteúdo e fragmentos de conteúdo.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 8107e6fdf4a1e4b49d0ab1ac213cfcf286c5dc86
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 2%
@@ -11,11 +11,11 @@ ht-degree: 2%
 
 # Como modelar seu conteúdo {#model-your-content}
 
-Nesta parte da [AEM Jornada do desenvolvedor headless](overview.md), você pode aprender a modelar sua estrutura de conteúdo. Em seguida, perceba essa estrutura do Adobe Experience Manager (AEM) usando Modelos de fragmentos de conteúdo e Fragmentos de conteúdo, para reutilização em canais.
+Nesta parte do [jornada do desenvolvedor sem periféricos do AEM](overview.md), você pode aprender a modelar sua estrutura de conteúdo. Em seguida, perceba essa estrutura do Adobe Experience Manager (AEM) usando Modelos de fragmentos de conteúdo e Fragmentos de conteúdo, para reutilização em canais.
 
 ## A História Até Agora {#story-so-far}
 
-No início, [Saiba mais sobre o CMS Headless Development](learn-about.md) cobriu a entrega de conteúdo sem cabeçalho e por que ele deve ser usado. Em seguida, [Introdução ao AEM Headless como um Cloud Service](getting-started.md) descrito AEM Headless no contexto de seu próprio projeto.
+No início [Saiba mais sobre o desenvolvimento sem periféricos do CMS](learn-about.md) a entrega de conteúdo sem cabeçalho coberto e por que ele deve ser usado. Então [Introdução ao AEM Headless as a Cloud Service](getting-started.md) descrito AEM Headless no contexto de seu próprio projeto.
 
 No documento anterior da jornada sem cabeçalho AEM, [Caminho para sua primeira experiência usando AEM headless](path-to-first-experience.md), você aprendeu as etapas necessárias para implementar seu primeiro projeto. Depois de lê-lo, você deve:
 
@@ -28,7 +28,7 @@ Este artigo se baseia nesses fundamentos para que você entenda como preparar se
 
 ## Objetivo {#objective}
 
-* **Público-alvo**: Iniciante
+* **Público**: Iniciante
 * **Objetivo**: Saiba como modelar sua estrutura de conteúdo e, em seguida, perceber essa estrutura usando AEM Modelos de fragmento de conteúdo e Fragmentos de conteúdo:
    * Introduza conceitos e terminologia relacionados à modelagem de dados/conteúdo.
    * Saiba por que a modelagem de conteúdo é necessária para a entrega de conteúdo sem interface.
@@ -43,9 +43,9 @@ Este artigo se baseia nesses fundamentos para que você entenda como preparar se
 
 ## Modelagem de conteúdo {#content-modeling}
 
-*É um mundo grande e ruim lá* fora.
+*É um mundo grande e ruim lá fora*.
 
-Talvez, talvez não, mas é certamente um grande ***complicado*** mundo afora e a modelagem de dados é usada para definir uma representação simplificada de uma subseção muito (muito) pequena, usando as informações específicas necessárias para um certo propósito.
+Talvez, talvez não, mas é certamente um grande ***complicado*** mundo afora e a modelagem de dados é usada para definir uma representação simplificada de uma subseção muito pequena, usando as informações específicas necessárias para um determinado propósito.
 
 >[!NOTE]
 >
@@ -81,29 +81,29 @@ Por exemplo, a publicidade de eventos especiais para todas as escolas da área:
 
 ### Conceitos  {#concepts}
 
-O que você deseja descrever é chamado de **Entities** - basicamente os &quot;itens&quot; sobre os quais queremos armazenar informações.
+O que você deseja descrever é chamado de **Entidades** - basicamente as &quot;coisas&quot; sobre as quais queremos armazenar informações.
 
-As informações que queremos armazenar sobre eles são os **Atributos** (propriedades), como Nome e Qualificações para os professores.
+As informações que queremos armazenar sobre eles são as **Atributos** (propriedades), como Nome e Qualificações para os professores.
 
-Em seguida, há vários **Relacionamentos** entre as entidades. Por exemplo, geralmente uma escola tem apenas um professor titular e muitos professores (e geralmente o professor principal também é professor).
+Então há vários **Relações** entre as entidades. Por exemplo, geralmente uma escola tem apenas um professor titular e muitos professores (e geralmente o professor principal também é professor).
 
-O processo de análise e definição dessas informações, juntamente com as relações entre elas, é chamado de **Modelagem de Conteúdo**.
+O processo de análise e definição dessas informações, junto com as relações entre elas, é chamado de **Modelagem de conteúdo**.
 
 ### Básico {#basics}
 
-Frequentemente, é necessário começar elaborando um **Esquema Conceitual** que descreva as entidades e seus relacionamentos. Geralmente, isso é de alto nível (conceitual).
+Frequentemente, é necessário começar elaborando um **Esquema conceitual** que descreve as entidades e seus relacionamentos. Geralmente, isso é de alto nível (conceitual).
 
-Depois que isso estiver estável, você poderá traduzir os modelos em um **Esquema lógico** que descreve as entidades, juntamente com os atributos, e os relacionamentos. Nesse nível, você deve examinar as definições cuidadosamente para eliminar a duplicação e otimizar o design.
+Depois que isso estiver estável, você pode traduzir os modelos em um **Esquema lógico** que descreve as entidades, juntamente com os atributos, e os relacionamentos. Nesse nível, você deve examinar as definições cuidadosamente para eliminar a duplicação e otimizar o design.
 
 >[!NOTE]
 >
 >Às vezes, essas duas etapas são mescladas, frequentemente dependendo da complexidade do seu cenário.
 
-Por exemplo, você precisa de entidades separadas para `Head Teacher` e `Teacher`, ou simplesmente um atributo adicional no modelo `Teacher`?
+Por exemplo, você precisa de entidades separadas para `Head Teacher` e `Teacher`ou simplesmente um atributo adicional no `Teacher` modelo?
 
 ### Garantia da integridade dos dados {#data-integrity}
 
-A integridade dos dados é necessária para garantir a precisão e a consistência do conteúdo durante todo o ciclo de vida. Isso inclui garantir que os autores de conteúdo possam entender facilmente o que armazenar, para que os itens a seguir sejam vitais:
+A integridade dos dados é necessária para garantir a precisão e a consistência do conteúdo em todo o ciclo de vida. Isso inclui garantir que os autores de conteúdo possam entender facilmente o que armazenar, para que os itens a seguir sejam vitais:
 
 * uma estrutura clara
 * uma estrutura o mais concisa possível (sem sacrificar a precisão)
@@ -166,10 +166,10 @@ Um Modelo de fragmento de conteúdo descreve uma entidade.
 
 Dentro de um modelo:
 
-1. **Os** Tipos de dados permitem definir os atributos individuais.
-Por exemplo, defina o campo com o nome de um professor como **Text** e seus anos de serviço como **Number**.
-1. Os tipos de dados **Referência de conteúdo** e **Referência de fragmento** permitem criar relacionamentos com outro conteúdo no AEM.
-1. O tipo de dados **Referência do fragmento** permite que você atinja vários níveis de estrutura aninhando seus Fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de conteúdo.
+1. **Tipos de dados** permitem definir os atributos individuais.
+Por exemplo, defina o campo com o nome de um professor como **Texto** e os seus anos de serviço **Número**.
+1. Os tipos de dados **Referência de conteúdo** e **Referência do fragmento** permite criar relações com outro conteúdo no AEM.
+1. O **Referência do fragmento** o tipo de dados permite que você atinja vários níveis de estrutura aninhando seus Fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de conteúdo.
 
 Por exemplo:
 ![Modelagem de conteúdo com fragmentos de conteúdo](assets/headless-modeling-01.png "Modelagem de conteúdo com fragmentos de conteúdo")
@@ -193,12 +193,12 @@ AEM fornece os seguintes tipos de dados para você modelar o conteúdo:
 
 Dois tipos de dados fornecem referências ao conteúdo fora de um fragmento específico:
 
-* ****
-Referência de conteúdoFornece uma referência simples a outro conteúdo de qualquer tipo.
+* **Referência de conteúdo**
+Isso fornece uma referência simples a outro conteúdo de qualquer tipo.
 Por exemplo, você pode fazer referência a uma imagem em um local especificado.
 
-* **Referência**
-de fragmentoFornece referências a outros Fragmentos de conteúdo.
+* **Referência do fragmento**
+Isso fornece referências a outros Fragmentos de conteúdo.
 Esse tipo de referência é usado para criar conteúdo aninhado, introduzindo as relações necessárias para modelar seu conteúdo.
 O tipo de dados pode ser configurado para permitir que os autores de fragmento:
    * Edite o fragmento referenciado diretamente.
@@ -270,11 +270,11 @@ Agora que você aprendeu a modelar sua estrutura e criar conteúdo dependente di
 
 ## Recursos adicionais {#additional-resources}
 
-* [Trabalhar com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)  - a página principal dos fragmentos de conteúdo
-   * [Fragmentos de conteúdo no navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md)  - ative a funcionalidade Fragmento de conteúdo no navegador de configuração
-   * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)  - criação e edição dos modelos de fragmentos do conteúdo
-   * [Gerenciamento de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md)  - criação e criação de fragmentos de conteúdo; esta página o levará a outras seções detalhadas
-* [AEM esquemas GraphQL](access-your-content.md)  - como o GraphQL realiza modelos
-* [A estrutura do fragmento de conteúdo de amostra](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - Uma pequena série de tutoriais em vídeo que fornece uma visão geral do uso de AEM recursos headless, incluindo modelagem de conteúdo e GraphQL.
-   * [Noções básicas sobre a modelagem GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html)  - saiba como definir e usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) para usar com GraphQL.
+* [Trabalhar com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) - a página de lead para Fragmentos de conteúdo
+   * [Fragmentos de conteúdo no navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md) - ativar a funcionalidade de Fragmento de conteúdo no Navegador de configuração
+   * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md) - criação e edição dos modelos de fragmento de conteúdo
+   * [Gerenciamento de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) - criação e criação de Fragmentos de conteúdo; esta página o levará a outras seções detalhadas
+* [AEM Esquemas GraphQL](access-your-content.md) - como o GraphQL realiza modelos
+* [A estrutura do fragmento de conteúdo de amostra](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
+* [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Uma breve série de tutoriais em vídeo que fornece uma visão geral do uso de recursos AEM sem periféricos, incluindo modelagem de conteúdo e GraphQL
+   * [Noções básicas do modelo GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - Saiba como definir e usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) para uso com GraphQL.

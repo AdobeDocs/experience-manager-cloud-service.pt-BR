@@ -1,21 +1,21 @@
 ---
-title: Introdução ao AEM Headless como um Cloud Service
+title: Introdução ao AEM Headless as a Cloud Service
 description: Nesta parte do AEM Headless Developer Jornada, saiba mais sobre AEM pré-requisitos headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
 workflow-type: tm+mt
 source-wordcount: '3058'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Introdução ao AEM Headless como um Cloud Service {#getting-started}
+# Introdução ao AEM Headless as a Cloud Service {#getting-started}
 
-Nesta parte da [AEM Jornada do desenvolvedor headless,](overview.md) saiba mais sobre o que é necessário para iniciar seu próprio projeto com AEM Headless.
+Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) saiba mais sobre o que é necessário para iniciar seu próprio projeto com AEM Headless.
 
 ## A História Até Agora {#story-so-far}
 
-No documento anterior da jornada sem periféricos AEM, [Saiba mais sobre o desenvolvimento sem periféricos do CMS](learn-about.md) você aprendeu a teoria básica do que é um CMS sem periféricos e agora deve:
+No documento anterior da jornada sem cabeçalho AEM, [Saiba mais sobre o desenvolvimento sem periféricos do CMS](learn-about.md) você aprendeu a teoria básica do que é um CMS sem periféricos e agora deve:
 
 * Entenda os conceitos básicos e a terminologia da entrega de conteúdo sem periféricos
 * Entenda por que e quando o headless é necessário
@@ -38,7 +38,7 @@ Antes de definir seu projeto sem periféricos no AEM, é importante entender alg
 
 ### Instância do autor {#author}
 
-Em sua forma mais simples, o AEM consiste em uma instância de autor e uma [instância de publicação](#publish) que trabalham juntas para criar, gerenciar e publicar seu conteúdo.
+Em sua forma mais simples, o AEM consiste em uma instância de autor e um [instância de publicação](#publish) que trabalham em conjunto para criar, gerenciar e publicar seu conteúdo.
 
 O conteúdo começa na instância do autor. É aqui que os autores de conteúdo criam seu conteúdo. O ambiente de criação oferece várias ferramentas para que os autores criem, organizem e reutilizem seu conteúdo.
 
@@ -58,7 +58,7 @@ No nível mais simples, a criação de experiências digitais no AEM requer as s
 1. Quando esse conteúdo estiver pronto, ele será replicado para a instância de publicação.
 1. As APIs podem ser chamadas para recuperar esse conteúdo.
 
-AEM headless é uma base técnica ao oferecer ferramentas poderosas para gerenciar conteúdo sem periféricos, o que é [descrito na próxima seção.](#aem-headless-basics)
+AEM a base técnica é desenvolvida com facilidade, oferecendo ferramentas poderosas para gerenciar conteúdo sem interface, que é [descrito na próxima seção.](#aem-headless-basics)
 
 ## Noções básicas sobre o AEM Headless {#aem-headless-basics}
 
@@ -81,7 +81,7 @@ Para modificar o conteúdo sem interrupções, o AEM oferece duas APIs robustas.
 * A API GraphQL permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
 * A API REST de ativos permite criar e modificar Fragmentos de conteúdo (e outros ativos).
 
-Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada sem periféricos AEM. Ou consulte a seção [recursos adicionais](#additional-resources) abaixo para obter documentação adicional.
+Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada sem periféricos AEM. Ou consulte a [recursos adicionais](#additional-resources) para obter a documentação adicional.
 
 ## Níveis de integração headless {#integration-levels}
 
@@ -141,7 +141,7 @@ Para qualquer projeto bem-sucedido, é importante definir claramente não apenas
 
 É importante ter um âmbito claramente definido para o projeto. O escopo informa os critérios de aceitação e permite que você estabeleça uma definição de concluído.
 
-A primeira pergunta que você deve fazer é &quot;O que estou tentando alcançar com AEM sem Cabeça?&quot; A resposta deve ser, em geral, que você tem ou terá no futuro um aplicativo de experiência que você criou com suas próprias ferramentas de desenvolvimento e não com AEM. Esse aplicativo de experiência pode ser um aplicativo móvel, um site ou qualquer outro aplicativo de experiência voltado para o cliente final. O objetivo de usar o AEM Headless é alimentar seu aplicativo de experiência com conteúdo criado, armazenado e gerenciado no AEM com APIs de última geração que chamariam AEM Headless para buscar conteúdo ou até mesmo conteúdo totalmente CRUD diretamente do seu aplicativo de experiência. Se isso não for o que você deseja fazer, provavelmente quer [retornar à documentação AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) e encontrar a seção que melhor se adapta ao que você deseja realizar.
+A primeira pergunta que você deve fazer é &quot;O que estou tentando alcançar com AEM sem Cabeça?&quot; A resposta deve ser, em geral, que você tem ou terá no futuro um aplicativo de experiência que você criou com suas próprias ferramentas de desenvolvimento e não com AEM. Esse aplicativo de experiência pode ser um aplicativo móvel, um site ou qualquer outro aplicativo de experiência voltado para o cliente final. O objetivo de usar o AEM Headless é alimentar seu aplicativo de experiência com conteúdo criado, armazenado e gerenciado no AEM com APIs de última geração que chamariam AEM Headless para buscar conteúdo ou até mesmo conteúdo totalmente CRUD diretamente do seu aplicativo de experiência. Se isto não é o que pretende fazer, provavelmente quer [volte para a documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) e encontre a seção que melhor se adapta ao que você deseja realizar.
 
 ### Funções e responsabilidades {#roles-responsibilities}
 
@@ -158,7 +158,7 @@ O administrador é responsável pela configuração básica do sistema. Por exem
 
 Depois que os usuários são configurados pelo administrador, eles recebem as permissões para acessar todos os recursos de AEM para realizar seu trabalho como contribuidores no delivery do aplicativo de experiência usando AEM Headless.
 
-O administrador deve ser o usuário que configura o AEM e prepara o ambiente de tempo de execução para permitir que [autores de conteúdo](#content-author) crie e atualize o conteúdo e [desenvolvedores](#developer) usem APIs que busquem ou modifiquem o conteúdo de seus aplicativos de experiência.
+O administrador deve ser o usuário que configura o AEM e prepara o ambiente de tempo de execução para ativar o [autores de conteúdo](#content-author) para criar e atualizar conteúdo e [desenvolvedores](#developer) para usar APIs que buscam ou modificam o conteúdo de seus aplicativos de experiência.
 
 #### Autor do conteúdo {#content-author}
 
@@ -177,18 +177,18 @@ Crie um plano sobre qual tradução de conteúdo você precisa.
 
 Seja claro sobre o fluxo de trabalho de atualização de conteúdo. Qual é o processo de aprovação que o sistema deve suportar? AEM workflows podem ser aproveitados para automatizar esse processo?
 
-Observe que sua [hierarquia de conteúdo](#content-hierarchy) pode ser aproveitada para facilitar a tradução.
+Observe que a [hierarquia de conteúdo](#content-hierarchy) pode ser aproveitado para facilitar a tradução.
 
-Consulte a seção [recursos adicionais](#additional-resources) para obter documentação adicional sobre fluxos de trabalho AEM e ferramentas de tradução, incluindo links para a Jornada de Tradução sem cabeçalho AEM.
+Consulte a [recursos adicionais](#additional-resources) para obter a documentação adicional sobre fluxos de trabalho AEM e ferramentas de tradução, incluindo links para a Jornada de tradução sem cabeçalho AEM.
 
 ##### Aproveite a hierarquia de conteúdo {#content-hierarchy}
 
 A hierarquia de pastas pode atender a duas principais preocupações com relação à gestão de conteúdo:
 
-* [Tradução](#translation)  - o AEM gerencia a tradução do conteúdo ao manter cópias do conteúdo em pastas específicas para localidades.
+* [Tradução](#translation) - AEM gerencia a tradução do conteúdo mantendo cópias do conteúdo em pastas específicas da localidade.
 * Organização - As pastas são usadas para definir uma hierarquia de conteúdo necessária para suportar as necessidades de tradução, bem como para gerenciar logicamente os Fragmentos de conteúdo.
 
-AEM permite uma estrutura de conteúdo flexível e uma hierarquia pode ser arbitrariamente grande. No entanto, é importante perceber que qualquer alteração na estrutura da pasta pode ter consequências não intencionais para as consultas existentes que [dependem do caminho do conteúdo.](#developer) Portanto, uma hierarquia bem definida, claramente definida e previamente, pode ser útil para os autores de conteúdo.
+AEM permite uma estrutura de conteúdo flexível e uma hierarquia pode ser arbitrariamente grande. No entanto, é importante perceber que qualquer alteração na estrutura de pastas pode ter consequências não intencionais para consultas existentes que [Confie no caminho do conteúdo.](#developer) Portanto, uma hierarquia bem definida, claramente definida e previamente, pode ser útil para os autores de conteúdo.
 
 As pastas também podem ser restritas para permitir apenas determinados tipos de conteúdo (com base nos Modelos de fragmento de conteúdo). É recomendável sempre especificar explicitamente quais modelos são permitidos para todas as pastas na hierarquia. Especificação do conteúdo permitido para uma determinada pasta:
 
@@ -204,17 +204,17 @@ Os nomes dos Fragmentos de conteúdo devem ser descritivos para os autores de co
 * Nome incorreto: `cta_btn_1`
 * Nome correto: `Call To Action Button`
 
-Consulte a seção [recursos adicionais](#additional-resources) para obter documentação adicional sobre AEM convenções de nomenclatura de página.
+Consulte a [recursos adicionais](#additional-resources) para obter documentação adicional sobre AEM convenções de nomenclatura de página.
 
 ##### Não estenda o aninhamento de conteúdo {#content-nesting}
 
-[Os ](#content-fragments) Fragmentos de conteúdo são usados no AEM para criar conteúdo sem periféricos. AEM suporta até dez níveis de aninhamento de conteúdo para Fragmentos de conteúdo. No entanto, é importante ter em mente que AEM deve resolver iterativamente cada referência definida no Fragmento de conteúdo pai e verificar se há referências filho em todos os irmãos. Essas operações podem ser adicionadas rapidamente e se tornarem uma preocupação com o desempenho.
+[Fragmentos de conteúdo](#content-fragments) são usados em AEM para criar conteúdo sem cabeçalho. AEM suporta até dez níveis de aninhamento de conteúdo para Fragmentos de conteúdo. No entanto, é importante ter em mente que AEM deve resolver iterativamente cada referência definida no Fragmento de conteúdo pai e verificar se há referências filho em todos os irmãos. Essas operações podem ser adicionadas rapidamente e se tornarem uma preocupação com o desempenho.
 
 Como regra geral, as referências do Fragmento de conteúdo não devem ser aninhadas além de cinco níveis.
 
 #### Arquitetura de conteúdo {#content-architect}
 
-Os arquitetos de conteúdo analisam os requisitos para os dados que devem ser entregues sem periféricos e definem a estrutura desses dados. Essas estruturas são chamadas de [Modelos de fragmento de conteúdo](#content-fragment-models) no AEM. Os Modelos de fragmentos do conteúdo são usados como a base dos Fragmentos do conteúdo criados pelos autores do conteúdo.
+Os arquitetos de conteúdo analisam os requisitos para os dados que devem ser entregues sem periféricos e definem a estrutura desses dados. Essas estruturas são chamadas de [Modelos de fragmentos do conteúdo](#content-fragment-models) em AEM. Os Modelos de fragmentos do conteúdo são usados como a base dos Fragmentos do conteúdo criados pelos autores do conteúdo.
 
 Uma abordagem útil ao definir Modelos de fragmento de conteúdo é criar modelos que mapeiam para os componentes UX dos aplicativos que consomem o conteúdo.
 
@@ -229,12 +229,12 @@ GraphQL serve como a &quot;cola&quot; entre o AEM e os consumidores de conteúdo
 Os desenvolvedores devem ter em mente algumas recomendações básicas, pois planejam suas consultas:
 
 * As consultas não devem depender de um caminho fixo (`ByPath`) para recuperar Fragmentos de conteúdo.
-   * [Os autores de conteúdo têm controle total sobre a ](#content-hierarchy) hierarquia do fragmento de conteúdo e podem fazer alterações que podem quebrar tal consulta.
+   * [Os autores de conteúdo têm controle total sobre a hierarquia do fragmento de conteúdo](#content-hierarchy) e podem fazer alterações que quebrariam esse query.
    * Em vez disso, as consultas devem optar por referências do modelo de fragmento de conteúdo com parâmetros de consulta dinâmicos para filtrar os resultados para gerar a carga útil desejada.
 * Para obter o melhor desempenho da consulta, sempre use consultas persistentes no AEM. Eles são discutidos posteriormente na jornada.
-* GraphQL é declarativo seguindo o lema &quot;Pergunte exatamente o que você precisa e obtenha exatamente isso&quot;. Isso significa que ao criar consultas GraphQL, sempre evite consultas do tipo `select *` que você pode criar em um banco de dados relacional.
+* GraphQL é declarativo seguindo o lema &quot;Pergunte exatamente o que você precisa e obtenha exatamente isso&quot;. Isso significa que ao criar consultas GraphQL, sempre evite `select *`O tipo queries que você pode criar em um banco de dados relacional.
 
-Para uma implementação sem cabeçalho [típica usando AEM,](#level-1) o desenvolvedor não requer conhecimento de codificação de AEM.
+Para um [implementação sem periféricos típica usando AEM,](#level-1) o desenvolvedor não requer conhecimento de codificação de AEM.
 
 ### Requisitos de desempenho {#performance-requirements}
 
@@ -255,7 +255,7 @@ Começar a entender o tráfego e os padrões de tráfego com o que você sabe do
 
 #### Frequência de atualização {#update-frequency}
 
-Frequentemente, diferentes seções de experiências têm frequências diferentes de atualizações de conteúdo. Entender isso é importante para ajustar as configurações de CDN e cache. Isso também é importante para os [Arquitetos de conteúdo](#content-architects), pois eles projetam modelos para representar seu conteúdo. Considere:
+Frequentemente, diferentes seções de experiências têm frequências diferentes de atualizações de conteúdo. Entender isso é importante para ajustar as configurações de CDN e cache. Isso também é importante para o [Arquitetos de conteúdo](#content-architects) conforme eles criam modelos para representar seu conteúdo. Considere:
 
 * Alguns tipos de conteúdo devem expirar após um determinado período?
 * Há elementos que são específicos do usuário e, portanto, não podem ser armazenados em cache?
@@ -269,26 +269,26 @@ Agora que você concluiu esta parte da Jornada de Desenvolvedores sem Cabeça da
 * Esteja ciente AEM níveis de integração sem periféricos.
 * Pode definir seu projeto em termos de escopo.
 
-Você deve continuar sua jornada sem periféricos de AEM revisando o documento [Caminho para sua primeira experiência usando AEM headless](path-to-first-experience.md), onde você aprenderá a configurar as ferramentas necessárias e a começar a pensar em modelar seus dados no AEM.
+Você deve continuar sua jornada sem periféricos de AEM revisando o documento em seguida [Caminho para sua primeira experiência usando AEM headless](path-to-first-experience.md) onde você aprenderá a configurar as ferramentas necessárias e a começar a pensar em modelar seus dados no AEM.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento sem periféricos revisando o documento [Caminho para a sua primeira experiência usando AEM headless,](path-to-first-experience.md) a seguir estão alguns recursos adicionais opcionais que fazem um mergulho mais profundo em alguns conceitos mencionados neste documento, mas eles não são solicitados a continuar com a jornada sem periféricos.
+Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento sem periféricos revisando o documento [Caminho para sua primeira experiência usando AEM headless,](path-to-first-experience.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não é necessário que eles continuem na jornada sem periféricos.
 
-* [AEM Jornada de tradução headless](/help/journey-headless/translation/overview.md)  - Essa jornada de documentação oferece uma ampla compreensão da tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
-* [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)  - Entenda o AEM como uma estrutura Cloud Service
-* [AEM Tutorials sem interface](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com AEM e escolha o que é certo para você.
-* [Gerenciamento de conteúdo sem cabeçalho usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. A autenticação via AdobeID é necessária.
-* [AEM Guias WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  - Este projeto do GitHub inclui aplicativos de exemplo que destacam AEM APIs GraphQL.
-* [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md)  - Documentação técnica do ambiente de criação de AEM, incluindo detalhes sobre a configuração de publicação do autor
-* [Publicação de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  - Documentação técnica para publicação de conteúdo no AEM
-* [Convenções de nomenclatura](/help/implementing/developing/introduction/naming-conventions.md)  - Documentação técnica das restrições de nomenclatura de página no AEM
-* [Multi Site Manager e Translation](/help/sites-cloud/administering/msm-and-translation.md)  - Documentação técnica AEM recursos avançados de tradução
-* [AEM workflows](/help/sites-cloud/authoring/workflows/overview.md)  - Documentação técnica sobre como automatizar workflows no AEM
-* [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)  - Documentação técnica dos Fragmentos de conteúdo.
-* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)  - Documentação técnica dos modelos de fragmentos do conteúdo.
-* [Documentação técnica GraphQL](https://graphql.org)  - A definição GraphQL (link externo)
-* [API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md)  - Documentação técnica que explica como criar solicitações para acessar e fornecer Fragmentos de conteúdo
-* [API REST de ativos](/help/assets/content-fragments/assets-api-content-fragments.md)  - Documentação técnica que explica como criar e modificar Fragmentos de conteúdo (e outros ativos)
-* [Consultas Persistentes](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching)  - Documentação técnica sobre consultas persistentes em AEM
-* [Cabeça e vazia no AEM](/help/implementing/developing/headful-headless.md)  - Uma discussão completa dos níveis de integração sem periféricos disponíveis no AEM
+* [jornada de tradução sem cabeçalho AEM](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia sem interface, como a AEM fornece conteúdo sem interface e como você pode traduzi-la.
+* [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Compreender AEM estrutura do as a Cloud Service
+* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.
+* [Gerenciamento de conteúdo sem cabeçalho usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. A autenticação via AdobeID é necessária.
+* [WKND de guias de AEM - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este projeto do GitHub inclui aplicativos de exemplo que destacam AEM APIs GraphQL.
+* [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md) - Documentação técnica do ambiente de criação de AEM, incluindo detalhes sobre a configuração de publicação do autor
+* [Publicar páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Documentação técnica para publicação de conteúdo no AEM
+* [Convenções de nomenclatura](/help/implementing/developing/introduction/naming-conventions.md) - Documentação técnica das restrições de nomenclatura de página no AEM
+* [Gerenciador de vários sites e tradução](/help/sites-cloud/administering/msm-and-translation.md) - Documentação técnica sobre AEM recursos avançados de tradução
+* [Fluxos de trabalho AEM](/help/sites-cloud/authoring/workflows/overview.md) - Documentação técnica sobre como automatizar workflows no AEM
+* [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) - Documentação técnica dos Fragmentos de conteúdo.
+* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md) - Documentação técnica dos Modelos de fragmento de conteúdo.
+* [Documentação técnica da GraphQL](https://graphql.org) - A definição GraphQL (link externo)
+* [API GraphQL](/help/headless/graphql-api/content-fragments.md) - Documentação técnica que explica como criar solicitações para acessar e fornecer Fragmentos de conteúdo
+* [API REST de ativos](/help/assets/content-fragments/assets-api-content-fragments.md) - Documentação técnica que explica como criar e modificar Fragmentos de conteúdo (e outros ativos)
+* [Consultas Persistentes](/help/headless/graphql-api/persisted-queries.md) - Documentação técnica sobre consultas persistentes no AEM
+* [Cabeça e Sem Cabeça no AEM](/help/implementing/developing/headful-headless.md) - Uma discussão completa dos níveis de integração sem interface disponíveis no AEM

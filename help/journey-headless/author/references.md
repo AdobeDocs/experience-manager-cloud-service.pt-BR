@@ -1,112 +1,112 @@
 ---
-title: Learn about using references in Content Fragments
-description: Learn about using references in Content Fragments, for content, other fragments and other assets (media). Introduce the necessity for, and the mechanics of, nested fragments for Headless CMS Authoring.
+title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
+description: Saiba mais sobre como usar referências em Fragmentos de conteúdo, para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação headless de CMS.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 2%
+source-wordcount: '729'
+ht-degree: 5%
 
 ---
 
-# Learn about using references in Content Fragments {#author-headless-references}
+# Saiba mais sobre como usar referências em Fragmentos de conteúdo {#author-headless-references}
 
-## The Story so Far {#story-so-far}
+## A história até agora {#story-so-far}
 
-[](overview.md)[](introduction.md)
+No início do [jornada do autor de conteúdo sem cabeçalho do AEM](overview.md) o [Introdução](introduction.md) O aborda os conceitos básicos e a terminologia relevantes para a criação para periféricos.
 
-You have learned the basics of Headless CMS Authoring, with an introduction to authoring with AEMaaCS and in particular, authoring Content Fragments.
+Você aprendeu as noções básicas da criação de CMS sem cabeçalho, com uma introdução à criação com o AEMaaCS e, em particular, a criação de Fragmentos de conteúdo.
 
-This article builds on these so you understand how to use references to author your own content for your AEM headless project.
+Este artigo se baseia nesses itens para que você entenda como usar referências para criar seu próprio conteúdo para seu projeto sem periféricos AEM.
 
 ## Objetivo {#objective}
 
-* ****
-* **** What sorts of references are available, and what are their purposes:
+* **Público**: Avançado
+* **Objetivo**: Introduza o uso de referências para a Criação de CMS sem cabeçalho. Que tipos de referências estão disponíveis e quais são seus objetivos:
 
    * Referências do conteúdo
-   * Asset/Media References
-   * Fragment References
-   * Ad hoc references from within a text block
+   * Referências de ativo/mídia
+   * Referências de fragmento
+   * Referências ad hoc de dentro de um bloco de texto
 
-## What are references {#what-are-references}
+## O que são referências {#what-are-references}
 
-References are simply a mechanism for connecting your resources, be it other content, assets (as in images), or other fragments. Although very similar, there are some differences.
+As referências são simplesmente um mecanismo para conectar seus recursos, seja outro conteúdo, ativos (como em imagens) ou outros fragmentos. Embora muito parecidas, há algumas diferenças.
 
-Some references have dedicated data-types (for example, Content References and Fragment References), whereas others are simply added as a reference within a text block (asset references and ad hoc references).
+Algumas referências têm tipos de dados dedicados (por exemplo, Referências de conteúdo e Referências de fragmento), enquanto outras são simplesmente adicionadas como referência em um bloco de texto (referências de ativos e referências ad hoc).
 
-![](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![Fragmentos de conteúdo - Referências](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
 ## Referências do conteúdo {#content-references}
 
-Content References do just that - they allow you to reference any other content. This will open a browser that allows you to select the content item.
+As Referências de conteúdo fazem exatamente isso - permitem que você faça referência a qualquer outro conteúdo. Isso abrirá um navegador que permite selecionar o item de conteúdo.
 
-## Asset/Media References {#assets-media-references}
+## Referências de ativo/mídia {#assets-media-references}
 
-**** This will open a browser that allows you to select the asset.
+Os ativos (por exemplo, imagens ou mídia) podem ser referenciados em um bloco de Texto usando a variável **Inserir ativo** opção. Isso abrirá um navegador que permite selecionar o ativo.
 
-![](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
+![Fragmentos de conteúdo - Inserir ativo](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
-## Fragment References {#fragment-references}
+## Referências de fragmento {#fragment-references}
 
-Again Fragment References do just that - they allow you to reference another fragment. Why this is significant needs a bit more explanation.
+Novamente, as Referências de fragmento fazem exatamente isso - permitem que você faça referência a outro fragmento. Por que isso é significativo precisa de um pouco mais de explicação.
 
-For example, you might have the following Content Fragment Models defined:
+Por exemplo, você pode ter os seguintes Modelos de fragmento de conteúdo definidos:
 
 * Cidade
 * Empresa
 * Person
-* Awards
+* Prêmios
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+Parece muito simples, mas é claro que uma empresa tem um CEO e funcionários....E estas são todas pessoas, cada uma definida como uma Pessoa.
 
-And a Person can have an Award (or maybe two).
+E uma Pessoa pode ter um Prêmio (ou talvez dois).
 
-* My Company - Company
-   * CEO - Person
-   * Employee(s) - Person
-      * Personal Award(s) - Award
+* Minha empresa - Empresa
+   * CEO - Pessoa
+   * Empregado(s) - Pessoa
+      * Prêmio(s) Pessoal - Prêmio
 
-And that&#39;s just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
+E isso é só para começar. Dependendo da complexidade, um prêmio pode ser específico da empresa ou uma empresa pode ter seu escritório principal em uma cidade específica.
 
-Representing these interrelationships can be achieved with Fragment References, as they are understood by both you (the author) and the headless applications.
+A representação dessas interrelações pode ser alcançada com as Referências de fragmento, já que são entendidas por você (o autor) e pelos aplicativos sem periféricos.
 
-As an author you&#39;re not responsible for defining these relationships (that&#39;s done by the Content Architect when creating the Content Fragment Model), but you need to know how to recognize and edit the references.
+Como autor, você não é responsável por definir esses relacionamentos (isso é feito pelo Arquiteto de conteúdo ao criar o Modelo de fragmento de conteúdo), mas precisa saber como reconhecer e editar as referências.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
 -->
 
-### How to author nested fragments {#author-nested-fragment}
+### Como criar fragmentos aninhados {#author-nested-fragment}
 
-**** You can either type in the reference directly, or (more likely) select the folder icon to open a browser that allows you to navigate and select the fragment you need.
+A criação de referências de fragmento é bastante direta (embora o campo geralmente não seja rotulado como **Referência do fragmento**). Você pode digitar a referência diretamente ou (provavelmente) selecionar o ícone de pasta para abrir um navegador que permite navegar e selecionar o fragmento necessário.
 
-![](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
+![Fragmentos de conteúdo - Referências](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
-The definition of the Content Fragment Model controls:
+A definição do Modelo de fragmento de conteúdo controla:
 
-* whether you can select to add multiple references
-* the model types of Content Fragments that you can select; the Content Fragment Model defines the fragment models allowed for the reference, so AEM only presents fragments based on those models.
+* se você pode optar por adicionar várias referências
+* os tipos de modelo de Fragmentos de conteúdo que você pode selecionar; o Modelo de fragmento de conteúdo define os modelos de fragmento permitidos para a referência, de modo que o AEM apresenta apenas fragmentos com base nesses modelos.
 
-### How to navigate nested fragments {#navigate-nested-fragment}
+### Como navegar pelos fragmentos aninhados {#navigate-nested-fragment}
 
-**** Selecting a reference opens that fragment for editing.
+Usar o **Árvore da estrutura** no Editor de fragmento do conteúdo, é possível navegar pelos fragmentos referenciados pelo fragmento e, em seguida, por meio de quaisquer referências que eles possam conter. Selecionar uma referência abre esse fragmento para edição.
 
 >[!NOTE]
 >
->Using the breadcrumbs in the main panel you can navigate back to your starting point.
+>Usando a navegação estrutural no painel principal, você pode retornar ao ponto de partida.
 
-![](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![Árvore da estrutura do fragmento do conteúdo](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
 
-## Ad Hoc References {#adhoc-references}
+## Referências ad hoc {#adhoc-references}
 
-Ad hoc references can be added as a simple link within a block of text:
+Referências ad hoc podem ser adicionadas como um link simples dentro de um bloco de texto:
 
-![](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
+![Fragmentos de conteúdo - Referências ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
-## What&#39;s Next {#whats-next}
+## O que vem a seguir {#whats-next}
 
-[](metadata-tagging.md) This will introduce and discuss how you can define metadata and tags for your Content Fragments.
+Agora que você aprendeu sobre referências e estrutura nos Fragmentos de conteúdo, a próxima etapa é [Saiba mais sobre metadados e marcação](metadata-tagging.md). Isso apresentará e discutirá como você pode definir metadados e tags para os Fragmentos de conteúdo.
 
 ## Recursos adicionais {#additional-resources}
 
@@ -114,21 +114,21 @@ Ad hoc references can be added as a simple link within a block of text:
 
    * [Gerenciamento dos fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [Apply the Configuration to your Assets Folder](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Aplicar a configuração à sua pasta de ativos](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Creating a Content Fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
+      * [Criação de um fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Variações - Criação de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Modelos de fragmentos do conteúdo - Tipos de dados](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Modelos de fragmentos do conteúdo - Propriedades](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 
-* Getting Started Guides
-   * [Creating an Assets Folder Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+* Guias de introdução
+   * [Criação de uma pasta de ativos - Configuração sem cabeçalho](/help/headless/setup/create-assets-folder.md)
 
-* AEM Headless Content Architect Journey
+* Jornada do arquiteto de conteúdo do AEM Headless
 
-* AEM Headless Translation Journey
+* jornada de tradução sem cabeçalho AEM

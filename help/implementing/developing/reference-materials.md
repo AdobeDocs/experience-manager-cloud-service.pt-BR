@@ -2,10 +2,10 @@
 title: Materiais de referência de API
 description: O AEM tem APIs abrangentes e eficientes que você pode aproveitar para o seu projeto de experiência digital.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '664'
+ht-degree: 6%
 
 ---
 
@@ -53,7 +53,7 @@ Se uma API for fornecida pelo AEM, prefira-a em vez do Sling, JCR e OSGi. Se AEM
 
 >[!TIP]
 >
->Para obter detalhes sobre essas diretrizes, consulte o documento [Entender práticas recomendadas da API Java.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+>Para obter detalhes sobre essas diretrizes, consulte o documento [Entenda as práticas recomendadas da API Java.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ## Serviços e APIs de entrega e gerenciamento de conteúdo de AEM {#delivery-apis}
 
@@ -63,10 +63,10 @@ AEM oferece componentes personalizáveis e opções de entrega de conteúdo.
 |---|---|
 | [Os componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) | Componentes padronizados do Gerenciamento de conteúdo da Web (WCM) para AEM agilizar o tempo de desenvolvimento e reduzir o custo de manutenção de seus sites |
 | [Exportador JSON](/help/implementing/developing/components/json-exporter.md) | Fornecer o conteúdo de qualquer página de AEM no formato de modelo de dados JSON |
-| [Ativando a exportação JSON para um componente](/help/implementing/developing/components/enabling-json-exporter.md) | Gerar exportação JSON do conteúdo do componente com base em uma estrutura de modelador |
+| [Ativação da exportação JSON para um componente](/help/implementing/developing/components/enabling-json-exporter.md) | Gerar exportação JSON do conteúdo do componente com base em uma estrutura de modelador |
 | [API de ativos](/help/assets/mac-api-assets.md) | Permite a criação-leitura-atualização-exclusão (CRUD) de operações em ativos, incluindo binários, metadados, representações e comentários. Consulte API HTTP do AEM Assets |
 | [API HTTP dos fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md) | Acesse o conteúdo do fragmento de conteúdo diretamente pela API HTTP por meio de operações CRUD |
-| [API GraphQL do fragmento de conteúdo](/help/assets/content-fragments/graphql-api-content-fragments.md) | Ativar a entrega eficiente de Fragmentos de conteúdo para clientes JavaScript em implementações CMS sem periféricos |
+| [API GraphQL do fragmento de conteúdo](/help/headless/graphql-api/content-fragments.md) | Ativar a entrega eficiente de Fragmentos de conteúdo para clientes JavaScript em implementações CMS sem periféricos |
 | [API HTTP dos ativos dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato exato de solicitações de ativos HTTP compatíveis |
 
 ## APIs específicas do SPA {#spa-apis}
@@ -82,4 +82,4 @@ AEM estrutura do SDK do Editor de aplicativo de página única (SPA) fornece ref
 
 >[!TIP]
 >
->Confira o [SPA Introdução e o Walkthrough](/help/implementing/developing/hybrid/introduction.md) para obter mais informações sobre aplicativos de página única.
+>Confira o [Introdução SPA e Apresentação](/help/implementing/developing/hybrid/introduction.md) para obter mais informações sobre aplicativos de página única.
