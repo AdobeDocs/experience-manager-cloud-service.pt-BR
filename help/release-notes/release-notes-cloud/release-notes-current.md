@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Se
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
+source-git-commit: 7935ed5c332934cf1824ef8e6b52b6a7f451dc34
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1083'
 ht-degree: 30%
 
 ---
@@ -32,6 +32,10 @@ A seguinte versão (2022.2.0) é em 24 de fevereiro de 2022.
 
 Dê uma olhada no [Visão geral da versão de janeiro de 2022](https://video.tv.adobe.com/v/340120) vídeo para obter um resumo dos recursos adicionados na versão 2022.1.0.
 
+## Adobe Experience Manager Sites as a Cloud Service {#sites}
+
+* O **[Ativar pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** está disponível no **Site** do console Sites para sites que usam a v2 do Componente principal de página. Esse botão configura o site para carregar os temas implantados com o pipeline de front-end sobre as bibliotecas de clientes existentes.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
@@ -40,7 +44,7 @@ Dê uma olhada no [Visão geral da versão de janeiro de 2022](https://video.tv.
 
 * O [!DNL Dynamic Media] agora é compatível com a assimilação, visualização, reprodução e publicação de vídeos MXF. As funcionalidades de Anotação e vídeo que pode ser comprado ainda não são suportados para vídeos MXF.
 
-* Após configurar uma conexão entre implantações remotas do DAM e do Sites, os ativos no DAM remoto são disponibilizados na implantação do Sites. Agora você pode executar o [atualizar, excluir, renomear e mover operações](/help/assets/use-assets-across-connected-assets-instances.md) nos ativos ou pastas remotos do DAM. As atualizações, com algum atraso, estão disponíveis automaticamente na implantação do Sites.
+* Após configurar uma conexão entre implantações remotas do DAM e do Sites, os ativos no DAM remoto são disponibilizados na implantação do Sites. Agora é possível executar as operações [atualizar, excluir, renomear e mover](/help/assets/use-assets-across-connected-assets-instances.md) nos ativos ou pastas do DAM remoto. As atualizações, com algum atraso, estão disponíveis automaticamente na implantação do Sites.
 
 ### Novos recursos no canal de pré-lançamento do [!DNL Assets] {#assets-prerelease-features}
 
