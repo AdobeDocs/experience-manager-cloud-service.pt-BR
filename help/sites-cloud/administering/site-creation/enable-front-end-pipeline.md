@@ -3,9 +3,9 @@ title: Ativar pipeline front-end
 description: Saiba como você pode ativar o pipeline de front-end para sites existentes para aproveitar os temas do site para personalizar seu site mais rapidamente.
 feature: Administering
 role: Admin
-source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
+source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,18 @@ Sites com base em modelos de site podem aproveitar o pipeline de front-end por p
 >Se você não estiver familiarizado com o pipeline de front-end e como implantar sites rapidamente usando ele e modelos de site, revise o [Jornada Rápida de Criação de Site](/help/journey-sites/quick-site/overview.md) para uma introdução.
 
 Se você não tiver criado seu site existente com base em modelos de site e temas, AEM poderá configurar seu site para carregar os temas que são implantados com o pipeline de front-end sobre as bibliotecas de clientes existentes.
+
+## Detalhes técnicos {#technical-details}
+
+Quando você ativa o pipeline de front-end para um site, o AEM faz as seguintes alterações na estrutura do site.
+
+* Todas as páginas do site incluirão um arquivo CSS e JS adicional, que pode ser modificado ao implantar atualizações por meio de um pipeline front-end dedicado do Cloud Manager.
+* Os arquivos CSS e JS adicionados estarão inicialmente vazios, mas uma pasta de &quot;fontes de temas&quot; pode ser baixada para inicializar a estrutura da pasta que permite implantar atualizações de código CSS e JS por meio desse pipeline.
+* Essa alteração só pode ser desfeita por um desenvolvedor, excluindo o `SiteConfig` e `HtmlPageItemsConfig` nós que esta operação cria abaixo `/conf/<site-name>/sling:configs`.
+
+>[!NOTE]
+>
+>Essa ação não converterá automaticamente as bibliotecas de clientes existentes do site para usar o pipeline de fonte final. Mover essas fontes da pasta da biblioteca do cliente para a pasta de pipeline front-end é uma tarefa que requer trabalho manual de um desenvolvedor front-end.
 
 ## Requisitos {#requirements}
 
