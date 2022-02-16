@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 026004564eb3085717e088381058d579d26083bd
 workflow-type: tm+mt
 source-wordcount: '3447'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 97%
    + Notas de versão {#release-notes}
       + [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2021 {#2021}
-         + [Notas da versão 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
+         + [Notas de versão 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [Notas da versão 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
          + [Notas da versão 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
          + [Notas da versão 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
@@ -105,8 +105,8 @@ ht-degree: 97%
    + Notas de versão das ferramentas de migração {#release-notes-migration-tools}
       + [Notas de versão atuais (2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2021 {#2021}
-         + [Notas da versão 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-         + [Notas da versão 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
+         + [Notas de versão 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
+         + [Notas de versão 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Notas da versão 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Notas da versão 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
@@ -454,7 +454,7 @@ ht-degree: 97%
    + Uso de Comunicações {#using-communications}
       + [Introdução para APIs de comunicações](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [APIs de comunicações - Processamento síncrono](/help/forms/aem-forms-cloud-service-communications.md)
-      + [APIs de comunicações - Processamento em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [APIs de comunicação - Processamento em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Uso de fontes personalizadas em documentos PDF](/help/forms/use-custom-fonts.md)
       + [Problemas conhecidos, práticas recomendadas e perguntas frequentes](/help/forms/communications-known-issues-limitations.md)
    + [Migrar para o [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
@@ -606,7 +606,7 @@ ht-degree: 97%
       + Notas de versão do Cloud Manager {#release-notes-cloud-manager}
          + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
          + 2022 {#2022}
-            + [Notas da versão 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+            + [Notas de versão 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021 {#2021}
             + [Notas da versão 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [Notas da versão 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -834,7 +834,7 @@ ht-degree: 97%
    + [Tarefas de manutenção](/help/operations/maintenance.md)
    + [Backup e restauração](/help/operations/backup.md)
    + [Trabalhos assíncronos](/help/operations/asynchronous-jobs.md)
-   + [Remoção do índice de lucene genérico](/help/operations/removal-generic-lucene-index.md)
+   + [Remoção do índice de Lucene genérico](/help/operations/removal-generic-lucene-index.md)
 + Conformidade {#compliance}
    + [Conformidade no AEM as a Cloud Service](/help/compliance/home.md)
    + Disponibilidade para proteção e privacidade de dados {#data-privacy}

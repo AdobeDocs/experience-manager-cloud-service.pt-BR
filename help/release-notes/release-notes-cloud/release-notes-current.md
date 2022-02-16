@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: 7935ed5c332934cf1824ef8e6b52b6a7f451dc34
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 30%
+ht-degree: 95%
 
 ---
 
@@ -25,12 +25,12 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Adobe Experience Manager] como [!DNL Cloud Service] versão atual (2022.1.0) é 3 de fevereiro de 2022.
-A seguinte versão (2022.2.0) é em 24 de fevereiro de 2022.
+A data de lançamento da versão atual (2022.1.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é 3 de fevereiro de 2022.
+A data de lançamento da versão seguinte (2022.2.0) é 24 de fevereiro de 2022.
 
 ## Vídeo da versão {#release-video}
 
-Dê uma olhada no [Visão geral da versão de janeiro de 2022](https://video.tv.adobe.com/v/340120) vídeo para obter um resumo dos recursos adicionados na versão 2022.1.0.
+Assista ao vídeo [Visão geral da versão de janeiro de 2022](https://video.tv.adobe.com/v/340120) para ver um resumo dos recursos adicionados na versão 2022.1.0.
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
@@ -48,22 +48,22 @@ Dê uma olhada no [Visão geral da versão de janeiro de 2022](https://video.tv.
 
 ### Novos recursos no canal de pré-lançamento do [!DNL Assets] {#assets-prerelease-features}
 
-* [!DNL AEM Dynamic Media] oferece a flexibilidade para [configurar uma conta alias](../../assets/dynamic-media/dm-alias-account.md) na interface do usuário, garantindo assim a atualização imediata dos URLs do Dynamic Media e do código de inserção do visualizador. Isso afeta positivamente a SEO, para refletir as atualizações feitas no contexto de negócios, como rebranding.
+* Agora, o [!DNL AEM Dynamic Media] oferece a flexibilidade para [configurar um alias de conta](../../assets/dynamic-media/dm-alias-account.md) na interface do usuário, garantindo assim a atualização imediata dos URLs do Dynamic Media e do código de inserção do visualizador. Isso afeta positivamente o SEO, para que reflita as atualizações feitas no contexto comercial, como o processo de rebranding.
 
-* Agora você pode usar o [!DNL Experience Manager Assets] interface do usuário para:
+* Agora você pode usar a interface de usuário do [!DNL Experience Manager Assets] para:
 
-   * Configure a detecção de ativos duplicados em um repositório.
+   * Configurar a detecção de ativos duplicados em um repositório.
 
    * Configure a adição de marcas d&#39;água digitais a imagens.
 
-* Os administradores agora podem configurar o serviço de email para downloads grandes. Permite que os usuários [ativar notificações por email para downloads grandes](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) do [!DNL Experience Manager Assets] interface. O usuário recebe uma notificação por email contendo o link de download da pasta zip arquivada após concluir o processo de download.
+* Os administradores agora podem configurar o serviço de email para downloads grandes. Permite que os usuários [ativem notificações por email para downloads grandes](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) na interface do [!DNL Experience Manager Assets]. O usuário recebe uma notificação por email contendo o link de download do arquivo ZIP após concluir o processo de download.
 
 
-* O [Gerenciar publicação](/help/assets/manage-publication.md) O recurso é aprimorado com uma interface do usuário aprimorada. Os usuários podem publicar ou desfazer a publicação de conteúdo de e para o destino selecionado, [Adicionar conteúdo](/help/assets/manage-publication.md#add-content) para a lista de publicação em todo o repositório DAM, [Incluir configurações de pasta](/help/assets/manage-publication.md#include-folder-settings) para publicar o conteúdo das pastas selecionadas e aplicar filtros, e [agendar publicação](/help/assets/manage-publication.md#publish-assets-later) para uma data ou hora posterior.
+* O recurso [Gerenciar publicação](/help/assets/manage-publication.md) está aprimorado, com uma interface de usuário melhorada. Os usuários podem publicar ou desfazer a publicação de conteúdo de e para o destino selecionado, [adicionar conteúdo](/help/assets/manage-publication.md#add-content) à lista de publicação em todo o repositório DAM, [incluir configurações de pasta](/help/assets/manage-publication.md#include-folder-settings) para publicar o conteúdo das pastas selecionadas e aplicar filtros, e [agendar publicações](/help/assets/manage-publication.md#publish-assets-later) para uma data ou hora posterior.
 
 ### Correções de erros {#bug-fixes}
 
-* Os ativos não processados sem representação original são enviados ao Asset compute para processamento ao migrar ativos do AEM local para os serviços em nuvem.
+* Durante a migração de ativos do AEM local para os serviços em nuvem, os ativos não processados e sem representação original são enviados ao Asset Compute para processamento.
 
 ## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
@@ -71,29 +71,29 @@ Dê uma olhada no [Visão geral da versão de janeiro de 2022](https://video.tv.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=pt-BR) ajudam a combinar um modelo e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modos síncronos e em lote. As APIs permitem criar aplicativos que possibilitam a você:
 
-   * Gere documentos preenchendo arquivos de modelo com dados XML.
-   * Gere formulários em vários formatos, incluindo fluxos de PDF não interativos.
-   * Gere PDF de impressão a partir de PDF de formulário XFA.
-   * Gere documentos PDF, PostScript, PCL e ZPL em massa ao mesclar vários conjuntos de dados com modelos de origem.
+   * Gerar documentos preenchendo arquivos de modelo com dados XML.
+   * Gerar formulários em vários formatos, incluindo fluxos de impressão de PDF não interativos.
+   * Gerar PDFs de impressão a partir de PDFs de formulário XFA.
+   * Gerar documentos PDF, PostScript, PCL e ZPL em massa ao mesclar vários conjuntos de dados com modelos de origem.
 
 * **Fontes personalizadas para Documentos de Registro e documentos PDF criados com APIs de comunicações**: agora é possível usar fontes aprovadas pela marca em documentos PDF gerados pelo uso de APIs de comunicações para se alinhar aos requisitos organizacionais.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
 
-* **[API do Assembler](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: APIs do Assembler para combinar, reorganizar, aumentar e obter informações sobre documentos do PDF.
+* **[API do Assembler](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: APIs do Assembler para combinar, reorganizar, aumentar e obter informações sobre documentos PDF.
 
 
 ## Complemento CIF {#cloud-services-cif}
 
 ### Novidades {#what-is-new-cif}
 
-* Componentes da minha conta aprimorados
-* O componente Recomendação de produto suporta tipos de página adicionais (página inicial, carrinho de compras, confirmação de pedido)
+* Componentes myAccount aprimorados
+* O componente Recomendação de produto oferece suporte a tipos de página adicionais (página inicial, carrinho de compras, confirmação de pedido)
 * **Lista de desejos**
    * Os visitantes conectados podem adicionar produtos a uma lista de desejos
-   * O gerenciamento da lista de desejos e seus produtos é possível por meio da myAccount
-   * O botão &quot;Adicionar à lista de desejos&quot; pode ser ativado/desativado em um nível de componente por meio de uma política (por exemplo, teaser de produto, detalhes do produto
-   * Disponível como um componente principal e na loja AEM Venia
+   * O gerenciamento da lista de desejos e de seus produtos é possível por meio da myAccount
+   * O botão “Adicionar à lista de desejos” pode ser ativado/desativado no nível de componente por meio de uma política (por exemplo, teaser de produto, detalhes do produto)
+   * Disponível como um Componente principal e na loja AEM Venia
 
 ![Lista de desejos](/help/assets/CIF/wishlist.png)
 
@@ -101,18 +101,18 @@ Dê uma olhada no [Visão geral da versão de janeiro de 2022](https://video.tv.
 
 ### Data de lançamento {#release-date-cm}
 
-A data de lançamento do Cloud Manager AEM as a Cloud Service 2022.01.0 é 20 de janeiro de 2022. A próxima versão está planejada para 10 de fevereiro de 2022.
+A data de lançamento do Cloud Manager no AEM as a Cloud Service 2022.01.0 é 20 de janeiro de 2022. A próxima versão está planejada para 10 de fevereiro de 2022.
 
 ### Novidades {#what-is-new-cm}
 
-* O Cloud Manager [evite reconstruir a base de código quando detecta que a mesma confirmação de git é usada](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) em várias execuções de pipeline de pilha completa.
-* Agora, para acessar o log de ambiente AEM é necessário **Gerenciador de implantação** perfil do produto. Os usuários sem esse perfil verão um botão desativado na interface do usuário.
-* A interface do usuário não permitirá a configuração de pipeline de front-end para um programa em que o Sites não está habilitado como uma solução.
-* Após gerar uma senha git, a data de expiração será exibida.
+* O Cloud Manager [evitará reconstruir a base de código quando detectar que a mesma Git Commit é usada](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) em várias execuções de pipeline de pilha completa.
+* Acessar o log de ambiente AEM agora requer o perfil de produto **Gerenciador de implantação**. Os usuários sem esse perfil verão um botão desativado na interface do usuário.
+* A interface não permitirá a configuração de pipeline de front-end para um programa em que o Sites não está habilitado como uma solução.
+* Após gerar uma senha Git, a data de expiração será exibida.
 
 ### Correções de erros {#bug-fixes-cm}
 
-* Exceções de ponteiro nulo encontradas por algumas implantações de pipeline front-end foram corrigidas.
+* Foram corrigidas exceções de ponteiro nulo encontradas por algumas implantações de pipeline front-end.
 * As variáveis de ambiente agora podem ser adicionadas, atualizadas e excluídas quando um ambiente estiver executando uma versão desatualizada do AEM.
 * A etapa de criação de imagem não será mais marcada como ERRO para pipelines que usaram a etapa agendada em determinados casos raros.
 * Para programas com apenas um repositório, a tela de execução do pipeline agora exibirá o nome do repositório.
@@ -121,26 +121,26 @@ A data de lançamento do Cloud Manager AEM as a Cloud Service 2022.01.0 é 20 de
 
 ### Data de lançamento {#release-date-ctt}
 
-A Data de lançamento da ferramenta Transferência de conteúdo v1.8.6 é 3 de fevereiro de 2022.
+A data de lançamento da ferramenta de Transferência de conteúdo v1.8.6 é 3 de fevereiro de 2022.
 
 ### Novidades {#what-is-new-ctt}
 
-* Validação de conteúdo - os usuários podem determinar de forma confiável se todo o conteúdo que foi extraído pela ferramenta Transferência de conteúdo foi assimilado com êxito na instância de destino. Para usar esse recurso, será necessário ativá-lo no `System Console` do ambiente de AEM de origem. Consulte [Validação de transferências de conteúdo - Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) para obter mais detalhes.
+* Validação de conteúdo - os usuários podem determinar com garantia se todo o conteúdo que foi extraído pela ferramenta Transferência de conteúdo foi assimilado com sucesso na instância de destino. Para usar esse recurso, será necessário ativá-lo no `System Console` do ambiente do AEM de origem. Consulte [Validação de transferências de conteúdo - Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=pt-BR#getting-started) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-ctt}
 
-* Alguns usuários não foram mapeados porque o Mapeamento de usuários diferenciava maiúsculas de minúsculas. Isso foi corrigido. O Mapeamento de Usuário não diferencia mais maiúsculas de minúsculas.
+* Alguns usuários não foram mapeados porque o mapeamento de usuários diferenciava letras maiúsculas de letras minúsculas. Isso foi corrigido. O mapeamento de usuário não diferencia mais letras maiúsculas de letras minúsculas.
 
 ## Analisador de práticas recomendadas {#bpa-release}
 
 ### Data de lançamento {#release-date-bpa}
 
-A data de lançamento do Analisador de práticas recomendadas v2.1.24 é 1 de fevereiro de 2022.
+A data de lançamento do Analisador de práticas recomendadas v2.1.24 é 1º de fevereiro de 2022.
 
 ### Novidades {#what-is-new-bpa}
 
-* Capacidade de detectar e relatar o número de ativos com e sem Tags inteligentes.
-* Capacidade de detectar e relatar a versão do Componente principal usado.
+* Capacidade de detectar e gerar relatórios sobre o número de ativos com e sem Tags inteligentes.
+* Capacidade de detectar e gerar relatórios sobre a versão do Componente principal usada.
 * Capacidade de detectar e gerar relatórios sobre o tipo de camada de origem (Autor ou Publicação) em que o BPA foi executado.
 
 ### Correções de erros {#bug-fixes-bpa}
