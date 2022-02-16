@@ -2,7 +2,7 @@
 title: Configuração de pipeline de não produção
 description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -124,7 +124,7 @@ Um pipeline de configuração de camada da Web implanta configurações HTTPD/Di
 >
 >Se um pipeline de código de camada da Web já existir para o ambiente selecionado, essa seleção será desativada.
 
-Para concluir a configuração do pipeline de não produção do código de pilha completo, siga estas etapas.
+Para concluir a configuração do pipeline de não produção do código da camada da Web, siga estas etapas.
 
 1. No **Código fonte** , você deve definir as seguintes opções.
 
