@@ -2,9 +2,9 @@
 title: Tarefas de manutenção em AEM as a Cloud Service
 description: Tarefas de manutenção em AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 7ff9cabe239c8e474b03c4ecce6d32bf659665a7
+source-git-commit: a5e4f4617e16e0f7ee36623b41fdd5197eca7178
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -28,17 +28,17 @@ Em versões anteriores do AEM, você podia configurar tarefas de manutenção us
 
 A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do lançamento AEM as a Cloud Service.
 
-| Tarefa de manutenção | Quem é o proprietário da configuração | Como configurar (opcional) |
+<!--| Maintenance Task | Who owns the configuration | How to configure (optional)  |
 |---|---|---|
-| Coleta de lixo do armazenamento de dados | Adobe | N/A - de propriedade totalmente Adobe |
-| Remoção da versão | Adobe | Propriedade total do Adobe, mas no futuro os clientes poderão configurar determinados parâmetros. |
-| Limpeza de Log de Auditoria | Adobe | Propriedade total do Adobe, mas no futuro os clientes poderão configurar determinados parâmetros. |
-| Limpeza de binários do Lucene | Adobe | Não usado e, portanto, desabilitado pelo Adobe. |
-| Limpeza de tarefa ad-hoc | Cliente | Deve ser feito no github. <br> Substitua o nó de configuração da janela de manutenção pronto para uso em `/libs` criando propriedades na pasta `/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o `granite_TaskPurgeTask`) com as propriedades apropriadas. <br> Para configurar as propriedades do OSGI, consulte a [Documentação da Tarefa de manutenção do AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Remoção do fluxo de trabalho | Cliente | Deve ser feito no github. <br> Substitua o nó de configuração da janela de manutenção pronto para uso em `/libs` criando propriedades na pasta`/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o `granite_WorkflowPurgeTask`) com as propriedades apropriadas. <br> Configure as propriedades OSGI, consulte [Documentação da Tarefa de manutenção do AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Remoção do projeto | Cliente | Deve ser feito no github. <br> Substitua o nó de configuração da janela de manutenção pronto para uso em `/libs` criando propriedades na pasta `/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando um nó sob o nó acima (nomeie-o `granite_ProjectPurgeTask`) com as propriedades apropriadas. <br> Configure as propriedades OSGI consulte [Documentação da Tarefa de manutenção do AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Datastore garbage collection | Adobe | N/A - fully Adobe owned |
+| Version Purge | Adobe | Fully owned by Adobe, but in the future, customers will be able to configure certain parameters. |
+| Audit Log Purge  | Adobe | Fully owned by Adobe, but in the future, customers will be able to configure certain parameters. |
+| Lucene Binaries Cleanup | Adobe | Unused and therefore disabled by Adobe. |
+| Ad-hoc Task Purge | Customer | Must be done in github. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder `/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (name it `granite_TaskPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties see the [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)|
+| Workflow Purge | Customer |  Must be done in github. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder`/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding another node under the node above (name it `granite_WorkflowPurgeTask`) with the appropriate properties. <br> Configure the OSGI properties see [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Project Purge | Customer |  Must be done in github. <br> Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the the folder `/apps/settings/granite/operations/maintenance/granite_weekly` or `granite_daily`. See the Maintenance Window table below for additional configuration details. <br> Enable the maintenance task by adding a node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. <br> Configure OSGI properties see [AEM 6.5 Maintenance Task documentation](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de trabalho, Expurgação de tarefa ad-hoc e Manutenção de limpeza de projeto para serem executadas durante as janelas de manutenção diária, semanal ou mensal. Essas configurações devem ser editadas diretamente no controle do código-fonte. A tabela abaixo descreve os parâmetros de configuração disponíveis para cada janela. Além disso, consulte os locais e as amostras de código fornecidas após a tabela.
+Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project Purge Maintenance tasks to be executed during the daily, weekly, or monthly maintenance windows. These configurations should be edited directly in source control. The table below describes the configuration parameters available for each of the window. Also, see the locations and code samples provided after the table.-->
 
 <table style="table-layout:auto">
  <tbody>
