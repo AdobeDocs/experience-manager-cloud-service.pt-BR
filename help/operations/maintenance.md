@@ -2,9 +2,9 @@
 title: Tarefas de manutenção em AEM as a Cloud Service
 description: Tarefas de manutenção em AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 83fe5c7b3a30f2444cddd982e9cc14a07c410530
+source-git-commit: 7ff9cabe239c8e474b03c4ecce6d32bf659665a7
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '1211'
 ht-degree: 2%
 
 ---
@@ -39,6 +39,64 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
 | Remoção do projeto | Cliente | Deve ser feito no github. <br> Substitua o nó de configuração da janela de manutenção pronto para uso em `/libs` criando propriedades na pasta `/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. <br> Ative a tarefa de manutenção adicionando um nó sob o nó acima (nomeie-o `granite_ProjectPurgeTask`) com as propriedades apropriadas. <br> Configure as propriedades OSGI consulte [Documentação da Tarefa de manutenção do AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 Os clientes podem agendar cada uma das tarefas de Expurgação de fluxo de trabalho, Expurgação de tarefa ad-hoc e Manutenção de limpeza de projeto para serem executadas durante as janelas de manutenção diária, semanal ou mensal. Essas configurações devem ser editadas diretamente no controle do código-fonte. A tabela abaixo descreve os parâmetros de configuração disponíveis para cada janela. Além disso, consulte os locais e as amostras de código fornecidas após a tabela.
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>Tarefa de manutenção</th>
+    <th>Quem é o proprietário da configuração</th>
+    <th>Como configurar (opcional)</th>
+  </tr>  
+  <tr>
+    <td>Coleta de lixo do armazenamento de dados</td>
+    <td>Adobe</td>
+    <td>N/A - de propriedade totalmente Adobe</td>
+  </td> 
+  </tr>
+  <tr>
+    <td>Remoção da versão</td>
+    <td>Adobe</td>
+    <td>Propriedade total do Adobe, mas no futuro os clientes poderão configurar determinados parâmetros.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Limpeza de Log de Auditoria</td>
+    <td>Adobe</td>
+    <td>Propriedade total do Adobe, mas no futuro os clientes poderão configurar determinados parâmetros.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Limpeza de binários do Lucene</td>
+    <td>Adobe</td>
+    <td>Não usado e, portanto, desabilitado pelo Adobe.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Limpeza de tarefa ad-hoc</td>
+    <td>Cliente</td>
+    <td>
+    <p>Deve ser feito no github. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>.</p>
+    <p>Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o <code>granite_TaskPurgeTask</code>) com as propriedades apropriadas. Para configurar as propriedades do OSGI, consulte a <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">Documentação da Tarefa de manutenção do AEM 6.5</a>.</p>
+  </td>
+  </tr>
+    <tr>
+    <td>Remoção do fluxo de trabalho</td>
+    <td>Cliente</td>
+    <td>
+    <p>Deve ser feito no github. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
+    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o <code>granite_WorkflowPurgeTask</code>) com as propriedades apropriadas. Configure as propriedades OSGI, consulte <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">Documentação da Tarefa de manutenção do AEM 6.5</a>.</p>
+  </td>
+  </tr>
+  <tr>
+    <td>Remoção do projeto</td>
+    <td>Cliente</td>
+    <td>
+    <p>Deve ser feito no github. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
+    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o <code>granite_ProjectPurgeTask</code>) com as propriedades apropriadas. Configure as propriedades OSGI, consulte <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">Documentação da Tarefa de manutenção do AEM 6.5</a>.</p>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 <table style="table-layout:auto">
  <tbody>
