@@ -1,17 +1,17 @@
 ---
-title: Ativar pipeline front-end
+title: Ativação do pipeline front-end
 description: Saiba como você pode ativar o pipeline de front-end para sites existentes para aproveitar os temas do site para personalizar seu site mais rapidamente.
 feature: Administering
 role: Admin
-source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
+source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
 
-# Ativar pipeline front-end {#enable-front-end-pipeline}
+# Ativação do pipeline front-end {#enable-front-end-pipeline}
 
 Saiba como você pode ativar o pipeline de front-end para sites existentes para aproveitar os temas do site para personalizar seu site mais rapidamente.
 
@@ -47,7 +47,7 @@ AEM pode adaptar automaticamente seu site existente para usar o pipeline de fron
 
 ## Ativação do pipeline front-end {#enabling}
 
-Habilitar seu site é feito a partir do console Sites .
+A ativação do site é feita pelo console Sites usando o [Painel do site.](site-rail.md)
 
 1. Faça logon no AEM e navegue até seu site via **Navegação global** > **Sites**.
 1. Selecione seu site no console. Você deve selecionar a raiz do site e não qualquer página secundária.
@@ -58,7 +58,8 @@ Habilitar seu site é feito a partir do console Sites .
 
 1. AEM solicita que você confirme com uma visão geral das alterações que serão feitas. Confirme se o site está adaptado.
 
-Agora, seu site está pronto para usar o pipeline de front-end. Para saber mais sobre o pipeline front-end, consulte:
+Agora, seu site está pronto para usar o pipeline de front-end. Para saber mais sobre o pipeline de front-end e gerenciar o tema do site, consulte:
 
+* [Usar o painel do site para gerenciar o tema do site](site-rail.md)
 * [Jornada Rápida de Criação de Site](/help/journey-sites/quick-site/overview.md) - Esta jornada de documentação fornece a você uma visão geral do processo de implantação rápida de um site usando o pipeline front-end e a ferramenta Criação rápida de site .
 * [Pipelines de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) - Este documento descreve o pipeline de front-end no contexto dos pipelines de pilha completa e da camada da Web.

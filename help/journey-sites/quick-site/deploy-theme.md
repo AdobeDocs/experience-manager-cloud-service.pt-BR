@@ -1,9 +1,9 @@
 ---
 title: Implantar o Tema Personalizado
 description: Saiba como implantar o tema do site usando o pipeline.
-source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
+source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -102,6 +102,7 @@ AEM é uma ferramenta poderosa e há muitas opções adicionais disponíveis. Co
 
 Veja a seguir alguns recursos adicionais que aprofundam alguns conceitos mencionados neste documento.
 
+* [Usar o painel do site para gerenciar o tema do site](/help/sites-cloud/administering/site-creation/site-rail.md) - Conheça os recursos avançados do painel Site para ajudá-lo a personalizar e gerenciar facilmente o tema do site, incluindo o download de fontes de temas e o gerenciamento de versões de temas.
 * [AEM documentação técnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - Se já tiver um conhecimento profundo da AEM, poderá consultar diretamente os documentos técnicos aprofundados.
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
 * [Permissões baseadas em função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - O Cloud Manager tem funções pré-configuradas com permissões apropriadas. Consulte este documento para obter detalhes sobre essas funções e como administrá-las.
