@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Familiarize-se com navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
+source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
-source-wordcount: '2939'
-ht-degree: 96%
+source-wordcount: '2954'
+ht-degree: 95%
 
 ---
 
@@ -465,7 +465,7 @@ A opção **Referências** mostra conexões com o recurso selecionado. Por exemp
 
 ![Painel do site](../assets/site-rail.png)
 
-Toque ou clique no botão **Baixar Fontes de Tema** para personalizar o [tema do seu site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Consulte o documento [Usar o painel do site para gerenciar o tema do site](/help/sites-cloud/administering/site-creation/site-rail.md) para obter mais detalhes sobre como você pode usar o painel para gerenciar o [tema do seu site.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
