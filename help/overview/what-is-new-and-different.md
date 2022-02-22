@@ -2,8 +2,8 @@
 title: O que é diferente e quais são as novidades - Adobe Experience Manager as a Cloud Service
 description: O que é diferente e quais são as novidades - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
-workflow-type: ht
+source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+workflow-type: tm+mt
 source-wordcount: '1906'
 ht-degree: 100%
 
@@ -112,7 +112,7 @@ Especificamente, o número e o tipo de programas do AEM que podem ser criados no
 
 O Cloud Manager evoluiu como um portal de autoatendimento, em que os principais componentes do AEM as a Cloud Service podem ser criados e configurados:
 
-* Criação e gerenciamento de novos programas. Consulte [Noções básicas sobre programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) para obter mais detalhes.
+* Criação e gerenciamento de novos programas. Consulte [Noções básicas sobre programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) para obter mais detalhes.
 
 * Criação e gerenciamento dos ambientes AEM nesses programas. Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais detalhes.
 

@@ -1,9 +1,9 @@
 ---
 title: Entender o Cloud Manager e o fluxo de trabalho de criação rápida de sites
 description: Saiba mais sobre o Cloud Manager e como ele se vincula ao novo processo de Criação rápida de sites.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1130'
 ht-degree: 1%
 
 ---
@@ -82,11 +82,17 @@ Para fins dessa jornada, não é necessário compreender completamente o Cloud M
 
 ![Estrutura do Cloud Manager](assets/cloud-manager-structure.png)
 
-* **CONTENTOR** - Todos os clientes são provisionados com um locatário. **WKND Travel and Adventure Enterprises** pode ser um inquilino.
-* **PROGRAMAS** - Cada locatário tem um ou mais programas. O **WKND Travel and Adventure Enterprises** o inquilino pode ter um **WKND Nightlife** e **Projetos da tarde da WKND** programa.
-* **AMBIENTES** - Cada programa tem vários ambientes, como produção para conteúdo ao vivo e armazenamento temporário e desenvolvimento para fins de desenvolvimento. **WKND Nightlife** e **Projetos da tarde da WKND** programas teriam ambientes de desenvolvimento, estágio e produção.
+* **CONTENTOR** - Todos os clientes são provisionados com um locatário.
+* **PROGRAMAS** - Cada locatário tem um ou mais programas, que refletem frequentemente as soluções licenciadas do cliente.
+* **AMBIENTES** - Cada programa tem vários ambientes, como produção para conteúdo ao vivo, um para preparo e outro para fins de desenvolvimento.
 * **REPOSITÓRIO** - Os ambientes têm repositórios git, onde o aplicativo e o código front-end são mantidos.
 * **FERRAMENTAS E FLUXOS DE TRABALHO** - Pipelines gerencia a implantação do código dos repositórios para os ambientes.
+
+Um exemplo geralmente é útil na contextualização dessa hierarquia.
+
+* A WKND Travel and Adventure Enterprise pode ser uma **inquilino** que se concentra em mídia relacionada a viagens.
+* O locatário da WKND Travel and Adventure Enterprises pode ter dois **programas**: programa one Sites para a WKND Magazine e um programa Assets para a WKND Media.
+* Os programas WKND Magazine e WKND Media teriam desenvolvimento, estágio e produção **ambientes**.
 
 ## O fluxo de desenvolvimento front-end para a criação rápida de sites {#flow}
 
