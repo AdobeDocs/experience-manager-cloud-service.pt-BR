@@ -1,9 +1,9 @@
 ---
 title: Fase de preparação
 description: Saiba mais sobre as etapas necessárias para garantir que sua instalação do AEM esteja pronta para ser movida para a nuvem
-source-git-commit: 2b2b18993d2782f01cc9361e1d558fb0d1a8c530
+source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1975'
 ht-degree: 6%
 
 ---
@@ -114,7 +114,7 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
   <tr>
     <td>Inicializadores do fluxo de trabalho</td>
     <td></td>
-    <td>Remova todos os Iniciadores de fluxo de trabalho que estão acionando o fluxo de trabalho de ativos de atualização do OOTB ou DAM personalizado de seu código.</br>Todos os ativos carregados AEM as a Cloud Service serão processados pelo Serviço de processamento de ativos. Há uma configuração OSGi de pós-processamento de fluxo de trabalho que pode ser usada para acionar etapas adicionais de processamento personalizado.</td>
+    <td>Remova todos os Iniciadores de fluxo de trabalho que estão acionando o fluxo de trabalho de ativos de atualização do OOTB ou DAM personalizado de seu código.</br>Todos os ativos carregados AEM as a Cloud Service serão processados pelo Serviço de processamento de ativos. Para obter etapas personalizadas, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Fluxos de trabalho de pós-processamento</a> sobre como configurar e configurar workflows de pós-processamento.</td>
   </tr>
   <tr>
     <td>Etapas da representação personalizada</td>
