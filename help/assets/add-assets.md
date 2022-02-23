@@ -4,9 +4,9 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
+source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2744'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,11 @@ A imagem a seguir ilustra os vários estágios ao assimilar ativos no Experience
 
 #### Pré-requisitos {#prerequisites-bulk-ingestion}
 
-Você deve ter os detalhes de armazenamento do blob de origem para conectar a instância do Experience Manager a um armazenamento de dados.
+É necessário ter uma conta de armazenamento externa ou um bucket do Azure ou AWS para usar esse recurso.
+
+>[!NOTE]
+>
+>Crie o contêiner ou o bucket da conta de armazenamento como privado e aceite as conexões somente de solicitações autorizadas. No entanto, não há suporte para restrições adicionais sobre conexões de rede de entrada.
 
 #### Configurar a ferramenta Importação em massa {#configure-bulk-ingestor-tool}
 
