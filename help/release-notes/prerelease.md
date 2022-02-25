@@ -1,11 +1,11 @@
 ---
-title: Canal de pré-lançamento do [!DNL Adobe Experience Manager] as a Cloud Service
-description: Canal de pré-lançamento do [!DNL Adobe Experience Manager] as a Cloud Service
+title: '"[!DNL Adobe Experience Manager] Canal de pré-lançamento as a Cloud Service"'
+description: '"[!DNL Adobe Experience Manager] Canal de pré-lançamento as a Cloud Service"'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
-workflow-type: ht
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

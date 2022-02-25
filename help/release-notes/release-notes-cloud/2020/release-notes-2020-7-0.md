@@ -1,11 +1,11 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0.
-description: '[!DNL Adobe Experience Manager] as a Cloud Service Release Notes para 2020.7.0.'
+description: '"[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.7.0."'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -29,11 +29,11 @@ Os conectores do [!DNL Experience Manager] as a Cloud Service para o [!DNL Adobe
 
 * As configurações agora são armazenadas em `/conf` e não em `/etc/cloudsettings` no repositório do Experience Manager.
 
-## [!DNL Adobe Experience Manager Assets] como um Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### Novidades em [!DNL Assets] {#what-is-new-assets}
+### Novidades do [!DNL Assets] {#what-is-new-assets}
 
-* O [!DNL Asset Compute Service] é um serviço dimensionável e extensível para processar ativos. Os administradores podem configurar [!DNL Experience Manager] para chamar aplicativos personalizados criados usando o [!DNL Asset Compute Service]. Os desenvolvedores podem usar o serviço para criar aplicativos personalizados especializados que atendam a casos de uso complexos. Esse serviço da Web pode gerar miniaturas para diferentes tipos de arquivos, renderizações de imagem de alta qualidade de formatos de arquivo Adobe, codificar vídeos (no futuro), extrair metadados, extrair texto completo como precursor para indexação e executar um ativo por meio de todos os serviços [!DNL Sensei] disponíveis. consulte [usar microsserviços de ativos e perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).
+* O [!DNL Asset Compute Service] é um serviço dimensionável e extensível para processar ativos. Os administradores podem configurar [!DNL Experience Manager] para invocar aplicativos personalizados criados usando o [!DNL Asset Compute Service]. Os desenvolvedores podem usar o serviço para criar aplicativos personalizados especializados que atendam a casos de uso complexos. Esse serviço da Web pode gerar miniaturas para diferentes tipos de arquivos, renderizações de imagem de alta qualidade de formatos de arquivo Adobe, codificar vídeos (no futuro), extrair metadados, extrair texto completo como precursor para indexação e executar um ativo por meio de todos os recursos disponíveis [!DNL Sensei] serviços. see [usar microsserviços de ativos e perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).
 
 * A configuração inicial do [!DNL Dynamic Media] no [!DNL Experience Manager] as a Cloud Service foi aprimorada para ficar mais robusta. Agora, ela informa o progresso dos processos aos administradores.
 
@@ -46,7 +46,7 @@ Os conectores do [!DNL Experience Manager] as a Cloud Service para o [!DNL Adobe
 ### Erros corrigidos {#assets-bugs-fixed}
 
 * O assistente Mover ativo não é carregado conforme esperado para os ativos incluídos em Coleções. (CQ-4296756)
-* Os valores de `dam:size` e `dam:sha1` são excluídos XMP write-back. (CQ-4237355)
+* Os valores de `dam:size` e `dam:sha1` são excluídos de XMP write-back. (CQ-4237355)
 * Ao cancelar a publicação de ativos em massa, [!DNL Brand Portal] gera um erro sugerindo que o URI da solicitação é muito longo. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}

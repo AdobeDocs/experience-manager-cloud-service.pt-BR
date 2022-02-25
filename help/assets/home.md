@@ -1,14 +1,14 @@
 ---
-title: '[!DNL Assets] como [!DNL Cloud Service] Guia'
-description: '[!DNL Adobe Experience Manager Assets] como [!DNL Cloud Service] recursos de autoajuda e links de documentação'
+title: '"[!DNL Assets] como [!DNL Cloud Service] Guia"'
+description: '"[!DNL Adobe Experience Manager Assets] como [!DNL Cloud Service] recursos de autoajuda e links de documentação"'
 landing-page-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 
