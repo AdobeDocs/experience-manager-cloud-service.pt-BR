@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
+source-git-commit: 37a54fdc1c78350cd1c45e6ec4c0674d5b73c0f8
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1737'
 ht-degree: 2%
 
 ---
@@ -128,22 +128,24 @@ Uma única solicitação pode ser usada para iniciar uploads para vários binár
 ### Upload binário {#upload-binary}
 
 A saída de iniciar um upload inclui um ou mais valores de URI de upload. Se mais de um URI for fornecido, o cliente poderá dividir o binário em partes e fazer solicitações de PUT de cada parte aos URIs de upload fornecidos, em ordem. Se você optar por dividir o binário em partes, siga as seguintes diretrizes:
+
 * Cada parte, com exceção do último, deve ter um tamanho maior ou igual a `minPartSize`.
 * Cada parte deve ter um tamanho inferior ou igual a `maxPartSize`.
-* Se o tamanho do seu binário exceder `maxPartSize`, é necessário dividir o binário em partes para carregá-lo.
+* Se o tamanho do seu binário exceder `maxPartSize`, divida o binário em partes para carregá-lo.
 * Não é necessário usar todos os URIs.
 
-Se o tamanho do seu binário for menor ou igual a `maxPartSize`, você pode fazer upload de todo o binário para um único URI de upload. Se mais de um URI de upload for fornecido, use o primeiro e ignore o restante. Não é necessário usar todos os URIs.
+Se o tamanho do seu binário for menor ou igual a `maxPartSize`, em vez disso, você pode fazer upload de todo o binário para um único URI de upload. Se mais de um URI de upload for fornecido, use o primeiro e ignore o restante. Não é necessário usar todos os URIs.
 
 Os nós de borda CDN ajudam a acelerar o upload solicitado de binários.
 
-A maneira mais fácil de fazer isso é usar o valor de `maxPartSize` como seu tamanho de peça. O contrato da API garante que haja URIs de upload suficientes para carregar seu binário se você usar esse valor como tamanho de peça. Para fazer isso, divida o binário em partes do tamanho `maxPartSize`, usando um URI para cada parte, em ordem. A parte final pode ser de qualquer tamanho menor ou igual a `maxPartSize`. Por exemplo, suponha que o tamanho total do binário seja de 20.000 bytes, a variável `minPartSize` é de 5.000 bytes, `maxPartSize` é de 8.000 bytes e o número de URIs de upload é de 5. Siga estas etapas:
+A maneira mais fácil de fazer isso é usar o valor de `maxPartSize` como seu tamanho de peça. O contrato da API garante que haja URIs de upload suficientes para carregar seu binário se você usar esse valor como tamanho de peça. Para fazer isso, divida o binário em partes do tamanho `maxPartSize`, usando um URI para cada parte, em ordem. A parte final pode ser de qualquer tamanho menor ou igual a `maxPartSize`. Por exemplo, suponha que o tamanho total do binário seja de 20.000 bytes, a variável `minPartSize` é de 5.000 bytes, `maxPartSize` é de 8.000 bytes e o número de URIs de upload é de 5. Execute as seguintes etapas:
+
 * Faça upload dos primeiros 8.000 bytes do binário usando o primeiro URI de upload.
 * Faça upload dos segundos 8.000 bytes do binário usando o segundo URI de upload.
 * Faça upload dos últimos 4.000 bytes do binário usando o terceiro URI de upload. Uma vez que esta é a parte final, não é necessário que seja superior a `minPartSize`.
-* Não é necessário usar os dois últimos URIs de upload. Apenas ignore-os.
+* Não é necessário usar os dois últimos URIs de upload. Você pode ignorá-los.
 
-Um erro comum é calcular o tamanho da peça com base no número de URIs de upload fornecidos pela API. O contrato da API não garante que essa abordagem funcione e pode resultar em tamanhos de partes que estão fora do intervalo entre `minPartSize` e `maxPartSize`. Isso pode resultar em falhas de upload binário.
+Um erro comum é calcular o tamanho da peça com base no número de URIs de upload fornecidos pela API. O contrato da API não garante que essa abordagem funcione e pode realmente resultar em tamanhos de partes fora do intervalo entre `minPartSize` e `maxPartSize`. Isso pode resultar em falhas de upload binário.
 
 Novamente, a maneira mais fácil e segura é simplesmente usar partes de tamanho igual a `maxPartSize`.
 
