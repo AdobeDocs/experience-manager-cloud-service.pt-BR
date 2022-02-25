@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: f624b287bf5a46d4a20991dae6cd7b521a7fe472
 workflow-type: tm+mt
-source-wordcount: '3328'
-ht-degree: 24%
+source-wordcount: '3827'
+ht-degree: 19%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 24%
 Em grandes empresa, a infraestrutura necessária para criar sites pode ser distribuída. Às vezes, os recursos de criação de sites e os ativos digitais usados para criar esses sites podem residir em diferentes implantações. Um motivo pode ser a distribuição geográfica de implantações existentes necessárias para trabalhar em conjunto. Outra razão pode ser as aquisições que levam a infraestruturas heterogêneas, incluindo diferentes [!DNL Experience Manager] versões, que a empresa pai deseja usar em conjunto.
 
 A funcionalidade Ativos conectados oferece suporte ao caso de uso acima, integrando [!DNL Experience Manager Sites] e [!DNL Experience Manager Assets]. Os usuários podem criar páginas da Web em [!DNL Sites] que usam os ativos digitais de uma [!DNL Assets] implantações.
+
+>[!NOTE]
+>
+>Configure o Connected Assets somente quando precisar usar os ativos disponíveis em uma implantação remota do DAM em uma implantação separada do Sites para criação de páginas da Web.
 
 ## Visão geral do Connected Assets {#overview-of-connected-assets}
 
@@ -48,19 +52,19 @@ Os autores pesquisam imagens e os seguintes tipos de documentos no Localizador d
 
 As várias funções envolvidas para configurar e usar o recurso e seus grupos de usuários correspondentes são descritas abaixo. O escopo local é usado para o caso de uso em que um autor cria uma página da Web. O escopo remoto é usado para a implantação do DAM que hospeda os ativos necessários. O [!DNL Sites] O autor busca esses ativos remotos.
 
-| Função | Escopo | Grupo de usuários | Nome do usuário na apresentação | Requisito |
+| Função | Escopo | Grupo de usuários | Requisito |
 |------|--------|-----------|-----|----------|
-| [!DNL Sites] administrador | Local | [!DNL Experience Manager] `administrators` | `admin` | Configurar [!DNL Experience Manager] e configurar a integração com o controle remoto [!DNL Assets] implantação. |
-| Usuário do DAM | Local | `Authors` | `ksaner` | Usado para exibir e duplicar os ativos pesquisados em `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Local | <ul><li>`Authors` (com acesso de leitura no DAM remoto e acesso de autor no local [!DNL Sites]) </li> <li>`dam-users` no local [!DNL Sites]</li></ul> | `ksaner` | Os usuários finais são [!DNL Sites] autores que usam essa integração para melhorar a velocidade do conteúdo. Os autores podem pesquisar e procurar ativos no DAM remoto usando [!UICONTROL Localizador de conteúdo] e usando as imagens necessárias em páginas da Web locais. As credenciais do usuário do DAM `ksaner` são usadas. |
-| [!DNL Assets] administrador | Remoto | [!DNL Experience Manager] `administrators` | `admin` no modo remoto [!DNL Experience Manager] | Configure o CORS (Cross-Origin Resource Sharing). |
-| Usuário do DAM | Remoto | `Authors` | `ksaner` no modo remoto [!DNL Experience Manager] | Função de autor no controle remoto [!DNL Experience Manager] implantação. Pesquise e procure ativos no Connected Assets usando o [!UICONTROL Localizador de conteúdo]. |
-| Distribuidor do DAM (usuário técnico) | Remoto | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` no modo remoto [!DNL Experience Manager] | Esse usuário presente na implantação remota é usado por [!DNL Experience Manager] servidor local (não o [!DNL Sites] função de autor) para buscar os ativos remotos, em nome de [!DNL Sites] autor. Essa função não é igual às duas funções `ksaner` acima e pertence a um grupo de usuários diferente. |
-| [!DNL Sites] usuário técnico | Local | `connectedassets-sites-techaccts` | - | Permite [!DNL Assets] implantação para procurar referências a ativos na [!DNL Sites] páginas da Web. |
+| [!DNL Sites] administrador | Local | [!DNL Experience Manager] `administrators` | Configurar [!DNL Experience Manager] e configurar a integração com o controle remoto [!DNL Assets] implantação. |
+| Usuário do DAM | Local | `Authors` | Usado para exibir e duplicar os ativos pesquisados em `/content/DAM/connectedassets/`. |
+| [!DNL Sites] author | Local | <ul><li>`Authors` (com acesso de leitura no DAM remoto e acesso de autor no local [!DNL Sites]) </li> <li>`dam-users` no local [!DNL Sites]</li></ul> | Os usuários finais são [!DNL Sites] autores que usam essa integração para melhorar a velocidade do conteúdo. Os autores podem pesquisar e procurar ativos no DAM remoto usando [!UICONTROL Localizador de conteúdo] e usando as imagens necessárias em páginas da Web locais. |
+| [!DNL Assets] administrador | Remoto | [!DNL Experience Manager] `administrators` | Configure o CORS (Cross-Origin Resource Sharing). |
+| Usuário do DAM | Remoto | `Authors` | Autor na função remota [!DNL Experience Manager] implantação. Pesquise e procure ativos no Connected Assets usando o [!UICONTROL Localizador de conteúdo]. |
+| Distribuidor do DAM (usuário técnico) | Remoto | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | Esse usuário presente na implantação remota é usado por [!DNL Experience Manager] servidor local (não o [!DNL Sites] função de autor) para buscar os ativos remotos, em nome de [!DNL Sites] autor. |
+| [!DNL Sites] usuário técnico | Local | `connectedassets-sites-techaccts` | Permite [!DNL Assets] implantação para procurar referências a ativos na [!DNL Sites] páginas da Web. |
 
 ### Arquitetura do Connected Assets {#connected-assets-architecture}
 
-O Experience Manager permite conectar uma implantação remota do DAM como fonte para várias implantações do Experience Manager Sites. Você pode conectar um máximo de quatro implantações de Sites a um DAM remoto de origem. No entanto, você pode conectar uma implantação do Sites com apenas uma implantação remota do DAM.
+O Experience Manager permite conectar uma implantação remota de DAM como uma origem a vários Experience Manager [!DNL Sites] implantações. Você pode conectar um máximo de quatro [!DNL Sites] implantações em um DAM remoto de origem. No entanto, é possível conectar uma [!DNL Sites] implantação com apenas uma implantação remota do DAM.
 
 Os diagramas a seguir ilustram os cenários compatíveis:
 
@@ -132,6 +136,19 @@ Você pode verificar a conectividade entre o [!DNL Sites] implantações e [!DNL
 
 Você pode configurar uma conexão entre [!DNL Sites] implantação e [!DNL Dynamic Media] implantação que permite que autores de páginas da Web usem [!DNL Dynamic Media] imagens em suas páginas da Web. Ao criar páginas da Web, a experiência de usar ativos remotos e [!DNL Dynamic Media] as implantações permanecem as mesmas. Isso permite que você aproveite a [!DNL Dynamic Media] por meio do recurso Connected Assets, por exemplo, recorte inteligente e predefinições de imagens.
 
+Com o Connected Assets, você pode aproveitar o [!DNL Dynamic Media] para processar ativos de imagem na implantação remota do DAM.
+
+Para usar [!DNL Dynamic Media] imagens de uma implantação remota do DAM em um [!DNL Sites] implantação:
+
+1. Configurar [!DNL Dynamic Media] na implantação remota do DAM com as seguintes opções:
+   * Modo de sincronização: Ativado por padrão
+   * Publicar ativos: Sincronizar todo o conteúdo
+1. Ligado [!DNL Sites] implantação:
+   1. Configurar [!DNL Dynamic Media] usando a mesma empresa da etapa 1 (Modo de sincronização desativado).
+   1. Configurar ativos conectados.
+
+   [!DNL Dynamic Media] ativos estão disponíveis em [!DNL Sites] implantação em um modo somente leitura. Como resultado, não é possível usar [!DNL Dynamic Media] para processar ativos na [!DNL Sites] implantação.
+
 Para configurar a conexão, siga estas etapas:
 
 1. Criar a configuração do Connected Assets conforme descrito acima, exceto ao configurar a funcionalidade, selecione **[!UICONTROL Buscar a representação original do Dynamic Media Connected Assets]** opção.
@@ -159,15 +176,15 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
 1. Navegue até o [!DNL Assets] interface na implantação remota acessando **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]** from [!DNL Experience Manager] espaço de trabalho. Como alternativa, acesse `https://[assets_servername_ams]:[port]/assets.html/content/dam` em um navegador. Carregue os ativos de sua escolha.
 
-1. No [!DNL Sites] , no ativador de perfil no canto superior direito, clique em **[!UICONTROL Representar como]**. Forneça `ksaner` como nome de usuário, selecione a opção fornecida e clique em **[!UICONTROL OK]**.
+1. No [!DNL Sites] , no ativador de perfil no canto superior direito, clique em **[!UICONTROL Representar como]**. Especifique o nome de usuário, selecione a opção fornecida e clique em **[!UICONTROL OK]**.
 
-1. Abra um `We.Retail` página do site em **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edite a página. Como alternativa, acesse `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` em um navegador para editar uma página.
+1. Abra um [!DNL Sites] e edite a página.
 
    Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo da página.
 
 1. Abra o [!UICONTROL Ativos] e clique em **[!UICONTROL Faça logon no Connected Assets]**.
 
-1. Forneça as credenciais - `ksaner` como nome de usuário e `password` como senha. Esse usuário tem permissões de criação em [!DNL Experience Manager] implantações.
+1. Especifique as credenciais para fazer logon no Connected Assets. Esse usuário tem permissões de criação em [!DNL Experience Manager] implantações.
 
 1. Procure o ativo que você adicionou ao DAM. Os ativos remotos são exibidos no painel esquerdo. Filtre por imagens ou documentos e filtre também por tipos de documentos compatíveis. Arraste as imagens em um componente `Image` e os documentos em um componente `Download`.
 
@@ -227,6 +244,49 @@ Experience Manager exibe um `expired` indicador visual de status em ativos no Lo
 >[!NOTE]
 >
 >As atualizações para ativos no DAM remoto são disponibilizadas para a implantação do Sites somente se as implantações remotas do DAM e do Sites estiverem no Experience Manager as a Cloud Service.
+
+## Perguntas frequentes  {#frequently-asked-questions}
+
+### Você deve configurar o Connected Assets se precisar usar os ativos disponíveis no [!DNL Sites] implantação?
+
+Nesse caso, não há necessidade de configurar o Connected Assets. Você pode usar os ativos disponíveis na [!DNL Sites] implantação.
+
+### Quando é necessário configurar o recurso Ativos conectados?
+
+Configure o recurso Connected Assets somente quando for necessário usar os ativos disponíveis em uma implantação remota do DAM em um [!DNL Sites] implantação.
+
+### Quantos [!DNL Sites] as implantações podem ser conectadas a uma implantação remota do DAM após a configuração do Connected Assets?
+
+Você pode conectar um máximo de quatro [!DNL Sites] implantações em uma implantação remota do DAM após a configuração do Connected Assets. Para obter mais informações, consulte [Arquitetura do Connected Assets](#connected-assets-architecture).
+
+### Quantas implantações remotas do DAM você pode se conectar a um [!DNL Sites] implantação após configurar o Connected Assets?
+
+Você pode conectar uma implantação remota do DAM a um [!DNL Sites] implantação após configurar o Connected Assets. Para obter mais informações, consulte [Arquitetura do Connected Assets](#connected-assets-architecture).
+
+### Você pode usar os ativos da Dynamic Media da sua [!DNL Sites] implantação após configurar o Connected Assets?
+
+Após configurar o Connected Assets, [!DNL Dynamic Media] ativos estão disponíveis em [!DNL Sites] implantação em um modo somente leitura. Como resultado, não é possível usar [!DNL Dynamic Media] para processar ativos na [!DNL Sites] implantação. Para obter mais informações, consulte [Configurar uma conexão entre implantações do Sites e do Dynamic Media](#sites-dynamic-media-connected-assets).
+
+### Você pode usar ativos de tipos de formato Imagem e Documento da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets?
+
+Sim, você pode usar ativos dos tipos de formato Imagem e Documento da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets.
+
+### Você pode usar fragmentos de conteúdo e ativos de vídeo da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets?
+
+Não, não é possível usar fragmentos de conteúdo e ativos de vídeo da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets.
+
+### Você pode usar ativos do Dynamic Media a partir da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets?
+
+Sim, você pode configurar e usar os ativos do Dynamic Media na implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets. Para obter mais informações, consulte [Configurar uma conexão entre implantações do Sites e do Dynamic Media](#sites-dynamic-media-connected-assets).
+
+### Após configurar o Connected Assets, é possível executar as operações de atualização, exclusão, renomeação e movimentação nos ativos ou pastas remotos do DAM?
+
+Sim, depois de configurar o Connected Assets, você pode executar as operações de atualização, exclusão, renomeação e movimentação nos ativos ou pastas remotos do DAM. As atualizações, com algum atraso, estão disponíveis automaticamente na implantação do Sites. Para obter mais informações, consulte [Gerenciar atualizações em ativos no DAM remoto](#handling-updates-to-remote-assets).
+
+### Após configurar o Connected Assets, você pode adicionar ou modificar ativos em seu [!DNL Sites] e disponibilizá-los na implantação remota do DAM?
+
+Você pode adicionar ativos à [!DNL Sites] no entanto, esses ativos não podem ser disponibilizados para a implantação remota do DAM.
+
 
 ## Limitações e práticas recomendadas {#tip-and-limitations}
 
