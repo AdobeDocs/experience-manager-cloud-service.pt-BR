@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 3%
+source-wordcount: '1744'
+ht-degree: 2%
 
 ---
 
@@ -99,7 +99,7 @@ Uma única solicitação pode ser usada para iniciar uploads para vários binár
 ```json
 {
     "completeURI": "(string)",
-    "folderPath": (string)",
+    "folderPath": "(string)",
     "files": [
         {
             "fileName": "(string)",
@@ -107,7 +107,9 @@ Uma única solicitação pode ser usada para iniciar uploads para vários binár
             "uploadToken": "(string)",
             "uploadURIs": [
                 "(string)"
-            ]
+            ],
+            "minPartSize": (number),
+            "maxPartSize": (number)
         }
     ]
 }
@@ -125,15 +127,30 @@ Uma única solicitação pode ser usada para iniciar uploads para vários binár
 
 ### Upload binário {#upload-binary}
 
-A saída de iniciar um upload inclui um ou mais valores de URI de upload. Se mais de um URI for fornecido, o cliente dividirá o binário em partes e fará solicitações de PUT de cada parte para cada URI, em ordem. Use todos os URIs. Certifique-se de que o tamanho de cada parte esteja dentro dos tamanhos mínimo e máximo especificados na resposta de inicialização. Os nós de borda CDN ajudam a acelerar o upload solicitado de binários.
+A saída de iniciar um upload inclui um ou mais valores de URI de upload. Se mais de um URI for fornecido, o cliente poderá dividir o binário em partes e fazer solicitações de PUT de cada parte aos URIs de upload fornecidos, em ordem. Se você optar por dividir o binário em partes, siga as seguintes diretrizes:
+* Cada parte, com exceção do último, deve ter um tamanho maior ou igual a `minPartSize`.
+* Cada parte deve ter um tamanho inferior ou igual a `maxPartSize`.
+* Se o tamanho do seu binário exceder `maxPartSize`, é necessário dividir o binário em partes para carregá-lo.
+* Não é necessário usar todos os URIs.
 
-Um possível método para fazer isso é calcular o tamanho da peça com base no número de URIs de upload fornecidos pela API. Por exemplo, suponha que o tamanho total do binário seja de 20.000 bytes e o número de URIs de upload seja 2. Siga estas etapas:
+Se o tamanho do seu binário for menor ou igual a `maxPartSize`, você pode fazer upload de todo o binário para um único URI de upload. Se mais de um URI de upload for fornecido, use o primeiro e ignore o restante. Não é necessário usar todos os URIs.
 
-* Calcule o tamanho da peça dividindo o tamanho total pelo número de URIs: 20.000 / 2 = 10.000.
-* Intervalo de POST byte 0-9.999 do binário para o primeiro URI na lista de URIs de upload.
-* Intervalo de POST byte 10.000 - 19.999 do binário para o segundo URI na lista de URIs de upload.
+Os nós de borda CDN ajudam a acelerar o upload solicitado de binários.
+
+A maneira mais fácil de fazer isso é usar o valor de `maxPartSize` como seu tamanho de peça. O contrato da API garante que haja URIs de upload suficientes para carregar seu binário se você usar esse valor como tamanho de peça. Para fazer isso, divida o binário em partes do tamanho `maxPartSize`, usando um URI para cada parte, em ordem. A parte final pode ser de qualquer tamanho menor ou igual a `maxPartSize`. Por exemplo, suponha que o tamanho total do binário seja de 20.000 bytes, a variável `minPartSize` é de 5.000 bytes, `maxPartSize` é de 8.000 bytes e o número de URIs de upload é de 5. Siga estas etapas:
+* Faça upload dos primeiros 8.000 bytes do binário usando o primeiro URI de upload.
+* Faça upload dos segundos 8.000 bytes do binário usando o segundo URI de upload.
+* Faça upload dos últimos 4.000 bytes do binário usando o terceiro URI de upload. Uma vez que esta é a parte final, não é necessário que seja superior a `minPartSize`.
+* Não é necessário usar os dois últimos URIs de upload. Apenas ignore-os.
+
+Um erro comum é calcular o tamanho da peça com base no número de URIs de upload fornecidos pela API. O contrato da API não garante que essa abordagem funcione e pode resultar em tamanhos de partes que estão fora do intervalo entre `minPartSize` e `maxPartSize`. Isso pode resultar em falhas de upload binário.
+
+Novamente, a maneira mais fácil e segura é simplesmente usar partes de tamanho igual a `maxPartSize`.
 
 Se o upload for bem-sucedido, o servidor responderá a cada solicitação com uma `201` código de status.
+
+>[!NOTE]
+Para obter mais informações sobre o algoritmo de carregamento, consulte o [documentação de recursos oficiais](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) e [Documentação da API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) no projeto Apache Jackrabbit Oak.
 
 ### Carregamento completo {#complete-upload}
 
@@ -175,6 +192,7 @@ O novo método de upload é suportado somente para [!DNL Adobe Experience Manage
 >[!MORELIKETHIS]
 * [Biblioteca de upload de aem de código aberto](https://github.com/adobe/aem-upload).
 * [Ferramenta de linha de comando de código aberto](https://github.com/adobe/aio-cli-plugin-aem).
+* [Documentação do Apache Jackrabbit Oak para upload direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 
 ## Fluxos de trabalho de processamento e pós-processamento de ativos {#post-processing-workflows}
@@ -259,7 +277,7 @@ Os seguintes modelos de fluxo de trabalho técnicos são substituídos por micro
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
+<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
