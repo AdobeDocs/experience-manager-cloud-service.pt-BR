@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f624b287bf5a46d4a20991dae6cd7b521a7fe472
+source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3825'
 ht-degree: 19%
 
 ---
@@ -53,7 +53,7 @@ Os autores pesquisam imagens e os seguintes tipos de documentos no Localizador d
 As várias funções envolvidas para configurar e usar o recurso e seus grupos de usuários correspondentes são descritas abaixo. O escopo local é usado para o caso de uso em que um autor cria uma página da Web. O escopo remoto é usado para a implantação do DAM que hospeda os ativos necessários. O [!DNL Sites] O autor busca esses ativos remotos.
 
 | Função | Escopo | Grupo de usuários | Requisito |
-|------|--------|-----------|-----|----------|
+|------|--------|-----------|----------|
 | [!DNL Sites] administrador | Local | [!DNL Experience Manager] `administrators` | Configurar [!DNL Experience Manager] e configurar a integração com o controle remoto [!DNL Assets] implantação. |
 | Usuário do DAM | Local | `Authors` | Usado para exibir e duplicar os ativos pesquisados em `/content/DAM/connectedassets/`. |
 | [!DNL Sites] author | Local | <ul><li>`Authors` (com acesso de leitura no DAM remoto e acesso de autor no local [!DNL Sites]) </li> <li>`dam-users` no local [!DNL Sites]</li></ul> | Os usuários finais são [!DNL Sites] autores que usam essa integração para melhorar a velocidade do conteúdo. Os autores podem pesquisar e procurar ativos no DAM remoto usando [!UICONTROL Localizador de conteúdo] e usando as imagens necessárias em páginas da Web locais. |
@@ -136,7 +136,7 @@ Você pode verificar a conectividade entre o [!DNL Sites] implantações e [!DNL
 
 Você pode configurar uma conexão entre [!DNL Sites] implantação e [!DNL Dynamic Media] implantação que permite que autores de páginas da Web usem [!DNL Dynamic Media] imagens em suas páginas da Web. Ao criar páginas da Web, a experiência de usar ativos remotos e [!DNL Dynamic Media] as implantações permanecem as mesmas. Isso permite que você aproveite a [!DNL Dynamic Media] por meio do recurso Connected Assets, por exemplo, recorte inteligente e predefinições de imagens.
 
-Com o Connected Assets, você pode aproveitar o [!DNL Dynamic Media] para processar ativos de imagem na implantação remota do DAM.
+Com o Connected Assets, você pode usar [!DNL Dynamic Media] para processar ativos de imagem na implantação remota do DAM.
 
 Para usar [!DNL Dynamic Media] imagens de uma implantação remota do DAM em um [!DNL Sites] implantação:
 
