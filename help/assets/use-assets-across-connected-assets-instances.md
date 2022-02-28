@@ -5,12 +5,13 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
+source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3856'
 ht-degree: 19%
 
 ---
+
 
 # Use o Connected Assets para compartilhar ativos do DAM no [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -132,22 +133,24 @@ Você pode verificar a conectividade entre o [!DNL Sites] implantações e [!DNL
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
+## Usar ativos do Dynamic Media {#dynamic-media-assets}
+
+
+Com o Connected Assets, você pode usar ativos de imagem processados por [!DNL Dynamic Media] da implantação remota do DAM nas páginas do Sites e aproveite as funcionalidades do Dynamic Media, como recorte inteligente e predefinições de imagens.
+
+Para usar [!DNL Dynamic Media] com Connected Assets:
+
+1. Configurar [!DNL Dynamic Media] na implantação remota do DAM com o modo de sincronização ativado.
+1. Configurar [Ativos conectados](#configure-a-connection-between-sites-and-assets-deployments).
+1. Configurar [!DNL Dynamic Media] na instância do Sites com o mesmo nome de empresa configurado no DAM remoto. A implantação Sites deve ter acesso somente leitura à conta do Dynamic Media para funcionar com ativos conectados. Portanto, desative o modo de Sincronização na configuração do Dynamic Media na instância do Sites.
+
+>[!CAUTION]
+>
+>Com ativos conectados e [!DNL Dynamic Media] configuração, não é possível usar [!DNL Dynamic Media] para processar ativos locais disponíveis no [!DNL Sites] implantação.
+
 ## Configure uma conexão entre [!DNL Sites] e [!DNL Dynamic Media] implantações {#sites-dynamic-media-connected-assets}
 
 Você pode configurar uma conexão entre [!DNL Sites] implantação e [!DNL Dynamic Media] implantação que permite que autores de páginas da Web usem [!DNL Dynamic Media] imagens em suas páginas da Web. Ao criar páginas da Web, a experiência de usar ativos remotos e [!DNL Dynamic Media] as implantações permanecem as mesmas. Isso permite que você aproveite a [!DNL Dynamic Media] por meio do recurso Connected Assets, por exemplo, recorte inteligente e predefinições de imagens.
-
-Com o Connected Assets, você pode usar [!DNL Dynamic Media] para processar ativos de imagem na implantação remota do DAM.
-
-Para usar [!DNL Dynamic Media] imagens de uma implantação remota do DAM em um [!DNL Sites] implantação:
-
-1. Configurar [!DNL Dynamic Media] na implantação remota do DAM com as seguintes opções:
-   * Modo de sincronização: Ativado por padrão
-   * Publicar ativos: Sincronizar todo o conteúdo
-1. Ligado [!DNL Sites] implantação:
-   1. Configurar [!DNL Dynamic Media] usando a mesma empresa da etapa 1 (Modo de sincronização desativado).
-   1. Configurar ativos conectados.
-
-   [!DNL Dynamic Media] ativos estão disponíveis em [!DNL Sites] implantação em um modo somente leitura. Como resultado, não é possível usar [!DNL Dynamic Media] para processar ativos na [!DNL Sites] implantação.
 
 Para configurar a conexão, siga estas etapas:
 
