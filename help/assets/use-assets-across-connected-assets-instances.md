@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
+source-git-commit: 97e704dae32baa52f3e9490aa5dcab8f5081fd1a
 workflow-type: tm+mt
-source-wordcount: '3856'
+source-wordcount: '3796'
 ht-degree: 19%
 
 ---
@@ -148,11 +148,9 @@ Para usar [!DNL Dynamic Media] com Connected Assets:
 >
 >Com ativos conectados e [!DNL Dynamic Media] configuração, não é possível usar [!DNL Dynamic Media] para processar ativos locais disponíveis no [!DNL Sites] implantação.
 
-## Configure uma conexão entre [!DNL Sites] e [!DNL Dynamic Media] implantações {#sites-dynamic-media-connected-assets}
+## Configurar [!DNL Dynamic Media] {#configure-dynamic-media}
 
-Você pode configurar uma conexão entre [!DNL Sites] implantação e [!DNL Dynamic Media] implantação que permite que autores de páginas da Web usem [!DNL Dynamic Media] imagens em suas páginas da Web. Ao criar páginas da Web, a experiência de usar ativos remotos e [!DNL Dynamic Media] as implantações permanecem as mesmas. Isso permite que você aproveite a [!DNL Dynamic Media] por meio do recurso Connected Assets, por exemplo, recorte inteligente e predefinições de imagens.
-
-Para configurar a conexão, siga estas etapas:
+Para configurar [!DNL Dynamic Media] on [!DNL Assets] e [!DNL Sites] implantações:
 
 1. Criar a configuração do Connected Assets conforme descrito acima, exceto ao configurar a funcionalidade, selecione **[!UICONTROL Buscar a representação original do Dynamic Media Connected Assets]** opção.
 
