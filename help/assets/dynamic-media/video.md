@@ -4,9 +4,9 @@ description: Saiba como trabalhar com vídeo no Dynamic Media, como práticas re
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
+source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
 workflow-type: tm+mt
-source-wordcount: '9334'
+source-wordcount: '9332'
 ht-degree: 4%
 
 ---
@@ -447,9 +447,6 @@ O Google altera periodicamente sua interface do usuário. Dessa forma, as etapas
 
 1. Na página Painel , à direita de **[!UICONTROL Google Cloud Platform]**, selecione a lista suspensa Projeto para abrir o **[!UICONTROL Selecionar um projeto]** caixa de diálogo.
 1. No **[!UICONTROL Selecionar um projeto]** caixa de diálogo, selecione **[!UICONTROL Novo projeto]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
 1. No **[!UICONTROL Novo projeto]** na caixa de diálogo , na **[!UICONTROL Nome do projeto]** digite o nome do novo projeto.
 
    A ID do projeto é baseada no nome do projeto. Como tal, escolha cuidadosamente o nome do projeto; ele não pode ser alterado após ser criado. Além disso, você deve inserir a mesma ID de projeto novamente quando configurar o YouTube no Experience Manager posteriormente. Portanto, anote.
@@ -460,8 +457,6 @@ O Google altera periodicamente sua interface do usuário. Dessa forma, as etapas
 
    * No Painel do seu projeto, no **[!UICONTROL Introdução]** cartão, selecione **[!UICONTROL Explorar e ativar APIs]**.
    * No Painel do seu projeto, no **[!UICONTROL APIs]** cartão, selecione **[!UICONTROL Visão geral das APIs]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Próximo do meio superior da **[!UICONTROL APIs e serviços]** página, selecione **[!UICONTROL ATIVAR APIS E SERVIÇOS]**.<!-- NEXT STEP BELOW IS STEP 10 -->
 1. No **[!UICONTROL Biblioteca da API]** no lado esquerdo, em **[!UICONTROL Categoria]**, selecione **[!UICONTROL YouTube]**. No lado direito da página, selecione **[!UICONTROL YouTube]**.
