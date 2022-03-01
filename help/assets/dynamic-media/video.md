@@ -4,9 +4,9 @@ description: Saiba como trabalhar com vídeo no Dynamic Media, como práticas re
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 22588f102f5b388d6da3a8aae124c30288ecb0a5
+source-git-commit: e1f0b04dde2eb5a3392a0b9befbc56135b06cff4
 workflow-type: tm+mt
-source-wordcount: '9346'
+source-wordcount: '9361'
 ht-degree: 4%
 
 ---
@@ -433,7 +433,7 @@ O Google altera periodicamente sua interface do usuário. Dessa forma, as etapas
 
 >[!NOTE]
 >
->As etapas a seguir foram precisas no momento da escrita. No entanto, o Google atualiza periodicamente seus sites sem aviso prévio. Dessa forma, essas etapas podem ser um pouco diferentes.
+>As etapas a seguir eram precisas no momento da escrita. No entanto, o Google atualiza periodicamente suas páginas da Web em nuvem sem aviso prévio. Dessa forma, algumas opções de configuração podem ter um nome ligeiramente diferente na interface do usuário do Google do nome usado nas etapas.
 
 **Para definir as configurações da Google Cloud:**
 
@@ -447,7 +447,7 @@ O Google altera periodicamente sua interface do usuário. Dessa forma, as etapas
 
    Se necessário, **[!UICONTROL Fazer logon]** usando as credenciais da conta do Google para visualizar o **[!UICONTROL Console]** opção.
 
-1. Na página Painel , à direita de **[!UICONTROL Google Cloud Platform]**, selecione a lista suspensa Projeto para abrir o **[!UICONTROL Selecionar um projeto]** caixa de diálogo.
+1. Na página Painel , à direita de **[!UICONTROL Google Cloud Platform]**, selecione o **[!UICONTROL Projeto]** lista suspensa para abrir o **[!UICONTROL Selecionar um projeto]** caixa de diálogo.
 1. No **[!UICONTROL Selecionar um projeto]** caixa de diálogo, selecione **[!UICONTROL Novo projeto]**.
 1. No **[!UICONTROL Novo projeto]** na caixa de diálogo , na **[!UICONTROL Nome do projeto]** digite o nome do novo projeto.
 
@@ -468,9 +468,7 @@ O Google altera periodicamente sua interface do usuário. Dessa forma, as etapas
    ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
 1. Para usar a API, você precisa de credenciais. Se necessário, no lado esquerdo da página APIs e serviços , selecione **[!UICONTROL Credenciais]**.
-
 1. Na página Credenciais , próximo à parte superior, selecione **[!UICONTROL CRIAR CREDENCIAIS]**, em seguida selecione **[!UICONTROL ID de cliente OAuth]**.
-
 1. No **[!UICONTROL Criar ID de cliente OAuth]** na página **[!UICONTROL Tipo de aplicativo]** , selecione **[!UICONTROL aplicação web]**.
 
    ![6_5_googleaccount-apis-application-type](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
@@ -495,7 +493,6 @@ O Google altera periodicamente sua interface do usuário. Dessa forma, as etapas
    >O caminho de exemplo acima é hipotético e somente para fins de explicação.
 
 1. Em **[!UICONTROL URIs de redirecionamento autorizados]** selecione ADICIONAR URI.
-
 1. No **[!UICONTROL URIs]** , insira o seguinte caminho, substituindo seu próprio domínio e número da porta no caminho e pressione **[!UICONTROL Enter]** para adicionar o caminho à lista:
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
@@ -507,7 +504,6 @@ O Google altera periodicamente sua interface do usuário. Dessa forma, as etapas
    >O caminho de exemplo acima é hipotético e somente para fins de explicação.
 
 1. Próximo à parte inferior da **[!UICONTROL Criar ID de cliente OAuth]** página, selecione **[!UICONTROL Criar]**.
-
 1. No **[!UICONTROL Cliente OAuth criado]** , faça o seguinte:
 
    * (Opcional) Copie a ID do cliente e o Segredo do cliente e salve.
@@ -518,7 +514,6 @@ O Google altera periodicamente sua interface do usuário. Dessa forma, as etapas
    ![6_5_googleaccount-apis-authclientcreated](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
 1. No **[!UICONTROL Cliente OAuth criado]** caixa de diálogo, selecione **[!UICONTROL OK]**.
-
 1. Faça logoff de sua conta do Google. Agora crie um canal YouTube.
 
 ### Criar um canal YouTube {#creating-a-youtube-channel}
