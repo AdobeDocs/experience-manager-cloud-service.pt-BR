@@ -1,10 +1,10 @@
 ---
 title: Introdução à ferramenta Transferência de conteúdo
 description: Introdução à ferramenta Transferência de conteúdo
-source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
+source-git-commit: 0951942690949c23a99da3494526c1c78e7bcf22
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 29%
+source-wordcount: '1069'
+ht-degree: 24%
 
 ---
 
@@ -125,6 +125,44 @@ Siga esta seção para saber como usar a ferramenta Transferência de conteúdo 
 1. Selecione um conjunto de migração e clique em **Propriedades** para exibir ou editar as propriedades do conjunto de migração. Ao editar propriedades, não é possível alterar a variável **Nome do conjunto de migração** ou **URL de serviço**.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+
+### Determinando o tamanho e o espaço em disco do conjunto de migração {#migration-set-size}
+
+Depois de criar um conjunto de migração, é altamente recomendável executar uma verificação de tamanho no conjunto de migração antes de iniciar um processo de Extração.
+Ao executar uma verificação de tamanho no conjunto de migração, você poderá:
+* Determine se há espaço em disco suficiente no `crx-quickstart` subdiretório para concluir a extração com êxito.
+* Determine se o tamanho do conjunto de migração está dentro dos limites do produto suportado e evite ingestões de conteúdo com falha.
+
+Siga as etapas abaixo para executar uma verificação de tamanho:
+
+1. Selecione um conjunto de migração e clique em **Verificar tamanho**.
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
+
+1. Isso abrirá o **Verificar tamanho** caixa de diálogo.
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
+
+1. Clique em **Verificar tamanho** para iniciar o processo. Em seguida, você retornará à exibição de lista do conjunto de migração e verá uma mensagem indicando que **Verificar tamanho** está em execução.
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
+
+
+1. Uma vez **Verificar tamanho** o processo estiver concluído, o status será alterado para **CONCLUÍDO**. Selecione o mesmo conjunto de migração e clique em **Verificar tamanho** para visualizar os resultados.
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
+
+   Veja abaixo um exemplo de **Verificar tamanho** resulta sem avisos.
+
+   ![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+
+1. Se a variável **Verificar tamanho** os resultados indicam que há espaço em disco insuficiente e/ou que o conjunto de migração excede os limites do produto, **AVISO** será exibido.
+
+![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+
+Veja abaixo um exemplo de **Verificar tamanho** resulta com avisos.
+
+![imagem](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
 ## O que vem a seguir {#whats-next}
