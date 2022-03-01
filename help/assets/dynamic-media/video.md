@@ -4,9 +4,9 @@ description: Saiba como trabalhar com vídeo no Dynamic Media, como práticas re
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
+source-git-commit: 22588f102f5b388d6da3a8aae124c30288ecb0a5
 workflow-type: tm+mt
-source-wordcount: '9332'
+source-wordcount: '9346'
 ht-degree: 4%
 
 ---
@@ -439,6 +439,8 @@ O Google altera periodicamente sua interface do usuário. Dessa forma, as etapas
 
 1. Crie uma conta do Google.
    [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
+
+   Se você já tiver uma conta do Google, pule para a próxima etapa.
 
 1. Ir para [https://cloud.google.com/](https://cloud.google.com/).
 1. Na página do Google Cloud, próximo ao canto superior direito, selecione **[!UICONTROL Console]**.
