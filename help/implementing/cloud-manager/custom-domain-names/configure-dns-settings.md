@@ -2,10 +2,10 @@
 title: 'Definição das configurações de DNS '
 description: Definição das configurações de DNS
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 0b24f8c8b88f476a0d1073e873e46441b1b8b821
+source-git-commit: 016954bc712a135886a6031deba05d92e7d5099c
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -22,14 +22,14 @@ As etapas a seguir devem ser completadas conforme indicado no quadro abaixo:
 
 | Etapa |  | Responsabilidade | Saiba mais |
 |--- |--- |--- |---|
-| Adicionar certificado SLL | Adicionar certificado SLL | Cliente | [Adicionar um certificado SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
+| Adicionar certificado SSL | Adicionar certificado SSL | Cliente | [Adicionar um certificado SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
 | Verificação de domínio | Adicionar registro TXT | Cliente | [Adicionar um registro TXT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
 | Verificar Status de Verificação de Domínio |  | Cliente |  |
 |  | Status: Falha na Verificação de Domínio | Cliente | [Verificando o status do nome de domínio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
 |  | Status: Verificado, Falha na Implantação | Entre em contato com o representante da Adobe | [Verificando o status do nome de domínio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
 | Adicionar registros DNS que apontam para AEM as a Cloud Service adicionando registros CNAME ou APEX | Definir configurações de DNS | Cliente | [Definição das configurações de DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en) |
-| Verificar Status do Registro DNS |  | Cliente | [Verificando o Status do Registro DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
-|  | Status: Status de DNS não detectado | Cliente | [Verificando o Status do Registro DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+| Verificar Status do Registro DNS |  | Cliente | [Verificação de status do registro DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | Status: Status de DNS não detectado | Cliente | [Verificação de status do registro DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
 |  | Status: O DNS resolve incorretamente | Cliente |  |
 
 

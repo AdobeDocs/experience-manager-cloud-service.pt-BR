@@ -1,19 +1,19 @@
 ---
-title: Navegar até o Provedor de serviços do Screens
+title: Navegar até o provedor de serviços do Screens
 description: Esta página descreve como navegar até o Provedor de serviços do Screens.
-source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
+exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
+source-git-commit: 9263c833edf092a4254b7692924c1638100b9f6d
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 1%
+source-wordcount: '270'
+ht-degree: 5%
 
 ---
 
-
-# Navegar até o Provedor de serviços do Screens {#setup-screens-services-provider}
+# Navegar até o provedor de serviços do Screens {#setup-screens-services-provider}
 
 ## Introdução {#introduction}
 
-**Provedor de serviços do Screens**, permite que o autor de conteúdo, desenvolvedores e administradores gerenciem exibições e players para reprodução de conteúdo depois que o conteúdo é adicionado aos canais. Depois que os usuários receberem acesso AEM Cloud Service, eles poderão fazer logon no Provedor de serviços do Screens.
+**Provedor de serviços do Screens**, permite que o autor de conteúdo, desenvolvedores e administradores gerenciem exibições e players para reprodução de conteúdo depois que o conteúdo é adicionado aos canais. Depois que os usuários receberem acesso ao AEM Cloud Service, eles poderão fazer logon no Provedor de serviços do Screens.
 
 Esta seção descreve como configurar o Provedor de serviços do Screens.
 
@@ -31,15 +31,25 @@ Siga as etapas abaixo para configurar o Provedor de serviços do Screens:
    >[!CAUTION]
    >Se você tiver acesso a várias organizações, verifique se fez logon na Organização correta. Para alterar sua organização, clique no nome da Organização no canto superior direito da tela e escolha a organização necessária à qual você precisa acessar.
 
-1. Selecione **Channels** na barra de navegação esquerda e clique em **abrir no provedor de conteúdo**.
+2. Clique no ícone de engrenagem ao lado de Projeto (canto superior esquerdo)
+
+   ![imagem](/help/screens-cloud/assets/configure/configure-screens0.png)
+
+3. Digite os seguintes detalhes na caixa de diálogo Editar configurações.
+o **Url Base** - URL de publicação do AEM o **Url Do Autor** - URL do autor do AEM **Caminho do Provedor de Canais** - /screens/channels.json
+
+   ![imagem](/help/screens-cloud/assets/configure/configure-screens4.png)
+
+4. Clique em **Salvar** para se conectar ao provedor de conteúdo do Screens
+
+5. Selecionar **Canais** na barra de navegação esquerda e clique em **abrir no provedor de conteúdo**.
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-1. O Provedor de conteúdo do Screens é aberto em outra guia que permite criar o conteúdo.
+6. O Provedor de conteúdo do Screens é aberto em outra guia que permite criar o conteúdo.
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens2.png)
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender como configurar o Provedor de serviços do Screens, você pode navegar até [Usando o Provedor de conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) para obter mais detalhes.
-
+Depois de aprender a configurar o Provedor de serviços do Screens para o qual você pode navegar, [Uso do provedor de conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) para obter mais detalhes.
