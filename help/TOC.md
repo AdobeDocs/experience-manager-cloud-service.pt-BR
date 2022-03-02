@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 86b1677b79f64c2d4ddfa260f17021da068283c9
+source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3436'
 ht-degree: 97%
 
 ---
@@ -809,6 +809,7 @@ ht-degree: 97%
       + [Atualizações de versão do AEM](/help/implementing/deploying/aem-version-updates.md)
       + [Configuração do OSGi para o AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
       + [API de configuração do OSGi](/help/implementing/deploying/osgi-configuration-api.md)
+      + [Mapeamento de recursos](/help/implementing/deploying/resource-mapping.md)
    + Camada do autor {#author-tier}
       + [Acesso à camada do autor](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Proteção da camada do autor](/help/implementing/author-tier/securing-the-author-tier.md)
