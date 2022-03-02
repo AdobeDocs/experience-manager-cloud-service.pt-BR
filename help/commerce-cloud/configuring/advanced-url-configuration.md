@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
+source-git-commit: af07bce8618c7b13b4dc5e287c7218316029f565
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 17%
@@ -177,7 +177,7 @@ Páginas específicas do produto são selecionadas pelo SKU ou categoria do prod
 >
 > A seleção de páginas de produto específicas por categoria requer [Componentes principais da CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) ou mais recente.
 
-### Dep Linking {#specific-pages-deep-linking}
+### Vinculação profunda {#specific-pages-deep-linking}
 
 O `UrlProvider` O é pré-configurado para gerar deep links para páginas de categoria e produto específicas em instâncias da camada do autor. Isso é útil para editores que navegam em um site usando o modo de Visualização, navegam até uma página de produto ou categoria específica e alternam de volta para o modo de Edição para editar a página.
 
