@@ -4,9 +4,9 @@ description: Saiba como trabalhar com vídeo no Dynamic Media, como práticas re
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: efdb8304197a76e66e71d6f7b5c510216ac5ff7e
+source-git-commit: 6ab9ec4efdefd6fb850fd59966b2424e6a19a9ab
 workflow-type: tm+mt
-source-wordcount: '9368'
+source-wordcount: '9349'
 ht-degree: 4%
 
 ---
@@ -425,7 +425,7 @@ Você também pode [cancelar a publicação de vídeos para removê-los do YouTu
 
 ### Definir as configurações da Google Cloud {#configuring-google-cloud-settings}
 
-Para publicar no YouTube, você precisa de uma conta do Google. Se tiver uma conta GMAIL, você já terá uma conta Google; se você não tiver uma conta do Google, poderá criar uma facilmente. Você precisa da conta, pois precisa de credenciais para publicar ativos de vídeo no YouTube. Se você já tiver uma conta criada, ignore esta tarefa e prossiga diretamente para [Criar um canal YouTube](#creating-a-youtube-channel).
+Para publicar no YouTube, você precisa de uma conta do Google. Se tiver uma conta GMAIL, você já terá uma conta Google; se você não tiver uma conta do Google, poderá criar uma facilmente. Você precisa da conta, pois precisa de credenciais para publicar ativos de vídeo no YouTube. <!-- hidden March 3 2022 If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel). -->
 
 A conta usada com a Google Cloud e a conta da Google usada para o YouTube não precisam ser a mesma.
 
