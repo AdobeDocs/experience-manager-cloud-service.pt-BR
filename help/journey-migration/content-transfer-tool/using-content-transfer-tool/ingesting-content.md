@@ -1,15 +1,15 @@
 ---
-title: Inserção de conteúdo ao Target
-description: Inserção de conteúdo ao Target
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+title: Assimilar conteúdo no Target
+description: Assimilar conteúdo no Target
+source-git-commit: 80e148aa5533963bcd6354e2117a4619bcf5b27f
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 28%
+source-wordcount: '527'
+ht-degree: 31%
 
 ---
 
 
-# Inserção de conteúdo ao Target {#ingesting-content}
+# Assimilar conteúdo no Target {#ingesting-content}
 
 ## Processo de assimilação na ferramenta Transferência de conteúdo {#ingestion-process}
 
@@ -21,7 +21,7 @@ ht-degree: 28%
 
 Siga as etapas abaixo para assimilar seu conjunto de migração da ferramenta Transferência de conteúdo:
 >[!NOTE]
->Se o Amazon S3 ou o Azure Data Store for usado como o tipo de armazenamento de dados, você poderá executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. Consulte [Integração com o AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) para obter mais detalhes.
+>Você pode executar a etapa opcional de pré-cópia para acelerar significativamente a fase de assimilação. Consulte [Integração com o AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) para obter mais detalhes.
 
 1. Selecione um conjunto de migração de **Transferência de conteúdo** e clique em **Assimilar** para iniciar a ingestão.
 
