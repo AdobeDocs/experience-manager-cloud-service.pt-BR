@@ -2,9 +2,9 @@
 title: Pesquisa e indexação de conteúdo
 description: Pesquisa e indexação de conteúdo
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
+source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2366'
 ht-degree: 1%
 
 ---
@@ -36,8 +36,9 @@ Abaixo está uma lista das principais alterações em comparação ao AEM 6.5 e 
 1. Os clientes podem ver se o trabalho de indexação está concluído na página de build do Cloud Manager e receberão uma notificação quando a nova versão estiver pronta para receber tráfego.
 
 1. Limitações:
-* Atualmente, o gerenciamento de índice em AEM as a Cloud Service é compatível apenas com índices do tipo lucene.
+* Atualmente, o gerenciamento de índice em AEM as a Cloud Service é compatível somente com índices do tipo `lucene`.
 * Somente os analisadores padrão são suportados (ou seja, aqueles enviados com o produto). Não há suporte para analisadores personalizados.
+* Internamente, outros índices podem ser configurados e usados para consultas. Por exemplo, consultas gravadas em relação à variável `damAssetLucene` O índice pode, no Skyline, de fato, ser executado em uma versão Elasticsearch desse índice. Normalmente, essa diferença não é visível para o aplicativo e para o usuário, no entanto, certas ferramentas, como a variável `explain` reportará um índice diferente. Para obter diferenças entre os índices Lucene e os índices elásticos, consulte [a documentação elástica no Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Os clientes não precisam e não podem configurar os índices de Elasticsearch diretamente.
 
 ## Como usar {#how-to-use}
 
@@ -129,7 +130,9 @@ Durante o desenvolvimento ou ao usar instalações locais, os índices podem ser
 
 ### Gerenciamento de índice com implantação em verde-azul {#index-management-with-blue-green-deployment}
 
-Com implantações azul-esverdeadas, não há tempo de inatividade. No entanto, para o gerenciamento de índice, isso requer que os índices sejam usados apenas por determinadas versões do aplicativo. Por exemplo, ao adicionar um índice na versão 2 do aplicativo, você não gostaria que ele fosse usado pela versão 1 do aplicativo ainda. O inverso é o caso quando um índice é removido: um índice removido na versão 2 ainda é necessário na versão 1. Ao alterar uma definição de índice, queremos que a versão antiga do índice seja usada apenas para a versão 1 e que a nova versão do índice seja usada apenas para a versão 2.
+Com implantações azul-esverdeadas, não há tempo de inatividade. Durante uma atualização, por algum tempo, a versão antiga (por exemplo, a versão 1) do aplicativo, bem como a nova versão (versão 2), estão sendo executadas simultaneamente, no mesmo repositório. Se a versão 1 exigir que um determinado índice esteja disponível, esse índice não deverá ser removido na versão 2: o índice deve ser removido posteriormente, por exemplo, na versão 3, em que é garantido que a versão 1 do aplicativo não está mais em execução. Além disso, os aplicativos devem ser escritos de modo que a versão 1 funcione bem, mesmo se a versão 2 estiver em execução e se os índices da versão 2 estiverem disponíveis.
+
+Após a conclusão da atualização para a nova versão, os índices antigos podem ser coletados pela lixeira do sistema. Os índices antigos ainda podem permanecer por algum tempo, para acelerar as reversões (caso uma reversão deva ser necessária).
 
 A tabela a seguir mostra cinco definições de índice: index `cqPageLucene` é usada em ambas as versões enquanto o índice `damAssetLucene-custom-1` é usada somente na versão 2.
 
@@ -160,7 +163,7 @@ Uma vez o Adobe altera um índice pronto para uso como &quot;damAssetLucene&quot
 
 ### Limitações atuais {#current-limitations}
 
-Atualmente, o gerenciamento de índice é compatível apenas com índices do tipo `lucene`.
+Atualmente, o gerenciamento de índice é compatível apenas com índices do tipo `lucene`. Internamente, outros índices podem ser configurados e usados para consultas, por exemplo, índices elásticos.
 
 ### Adicionar um índice {#adding-an-index}
 
