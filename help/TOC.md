@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '3436'
-ht-degree: 97%
+source-wordcount: '3419'
+ht-degree: 96%
 
 ---
 
@@ -641,17 +641,17 @@ ht-degree: 97%
          + [Editar programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Ambientes de hibernação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Criação de um projeto de aplicativo AEM {#create-application-project}
-         + [Uso do Assistente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-         + [Configuração do seu projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [Informações sobre o ambiente de criação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [Assistente de criação de projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+         + [Ambiente de build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md)
       + Gerenciamento do código {#managing-code}
          + [Manuseio da versão do projeto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Repositórios no Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [Acesso a repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Integração do Git com o Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [Trabalhar com vários repositórios Git de origem](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [Configuração de desenvolvimento de equipes corporativas para o AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Uso do Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [Usando vários repositórios](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [Configuração da Equipe de Desenvolvimento Empresarial](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [Variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md)
       + Pipelines CI-CD do Cloud Manager {#cicd-pipelines}
          + [Introdução](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -668,8 +668,8 @@ ht-degree: 97%
          + [Teste da interface](/help/implementing/cloud-manager/ui-testing.md)
       + [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md)
       + [Relatórios de SLA](/help/implementing/cloud-manager/sla-reporting.md)
-      + [Acesso do usuário ao New Relic](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [Noções básicas das notificações](/help/implementing/cloud-manager/notifications.md)
+      + [Novo Relic Um](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [Notificações](/help/implementing/cloud-manager/notifications.md)
       + Gerenciar certificados SSL {#manage-ssl-certificates}
          + [Introdução](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Obter um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)

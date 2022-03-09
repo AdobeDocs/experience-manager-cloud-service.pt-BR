@@ -1,225 +1,255 @@
 ---
-title: Gerenciar ambientes - Cloud Service
-description: Gerenciar ambientes - Cloud Service
+title: Gerenciamento de ambientes
+description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
+source-git-commit: 409bd3d701c50f40c6d4e0d85228ea183c6a2764
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 3%
+source-wordcount: '1755'
+ht-degree: 1%
 
 ---
 
-# Gerenciamento de ambientes {#manage-environments}
+# Gerenciamento de ambientes {#managing-environments}
 
-A seção a seguir descreve os tipos de ambiente que um usuário pode criar e como ele pode criar um ambiente.
+Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 
 ## Tipos de ambientes {#environment-types}
 
 Um usuário com as permissões necessárias pode criar os seguintes tipos de ambiente (dentro dos limites do que está disponível para o locatário específico).
 
-* **Ambiente** de produção e preparo: A Produção e o Estágio estão disponíveis como um duo e são usados para fins de teste e produção.
+* **Produção e Estágio** - Os ambientes de produção e de preparo estão disponíveis como um par e são usados para fins de produção e teste, respectivamente.
 
-* **Desenvolvimento**: Um ambiente de desenvolvimento pode ser criado para fins de desenvolvimento e teste e será associado apenas a pipelines não relacionados à produção.
+* **Desenvolvimento** - Pode ser criado um ambiente de desenvolvimento para fins de desenvolvimento e de ensaio e pode ser associado apenas a gasodutos não relacionados com a produção.
 
-   >[!NOTE]
-   >Um ambiente de desenvolvimento criado automaticamente em um programa de sandbox será configurado para incluir soluções do Sites e do Assets.
 
-   A tabela a seguir resume os tipos de ambientes e seus atributos:
+Os recursos de ambientes individuais dependem das soluções ativadas no [programa.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
-   | Nome | Camada do autor | Publicar camada | O usuário pode criar | O usuário pode excluir | Pipeline que pode ser associado ao ambiente |
-   |--- |--- |--- |--- |---|---|
-   | Produção | Sim | Sim se Sites incluídos | Sim | Não | Gasoduto de produção |
-   | Estágio | Sim | Sim se Sites incluídos | Sim | Não | Gasoduto de produção |
-   | Desenvolvimento | Sim | Sim se Sites incluídos | Sim | Sim | Gasoduto de não produção |
+* [Sites](/help/sites-cloud/home.md)
+* [Ativos](/help/assets/home.md)
+* [Forms](/help/forms/home.md)
+* [Screens](/help/screens-cloud/home.md)
 
-   >[!NOTE]
-   >A Produção e o Estágio estão disponíveis como um duo e são usados para fins de teste e produção.  O usuário não poderá criar somente o ambiente de Preparo ou Produção.
+>[!NOTE]
+>
+>Ambientes de produção e de preparo são criados apenas como um par. Não é possível criar apenas um ambiente de preparo ou de produção.
 
-## Adicionar ambiente {#adding-environments}
+## Adicionar um ambiente {#adding-environments}
 
-1. Clique em **Adicionar ambiente** para adicionar um ambiente. Esse botão será acessível na tela **Ambientes**.
-   ![](assets/environments-tab.png)
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
 
-   A opção **Adicionar ambiente** também está disponível no cartão **Ambientes** quando há zero ambientes no programa.
+1. Clique no programa para o qual deseja adicionar um ambiente.
 
-   ![](assets/no-environments.png)
+1. No **Visão geral do programa** clique em **Adicionar ambiente** no **Ambientes** cartão para adicionar um ambiente.
 
-   >[!NOTE]
-   >A opção **Adicionar Ambiente** será desativada com base na falta de permissões ou no que pode ser contratado.
+   ![Cartão de ambientes](assets/no-environments.png)
 
-1. A caixa de diálogo **Adicionar ambiente** é exibida. O usuário precisa enviar detalhes como **Tipo de ambiente** e **Nome do ambiente** e **Descrição do ambiente** (dependendo do objetivo do usuário ao criar o ambiente dentro dos limites do que está disponível para o locatário específico).
+   * O **Adicionar ambiente** também está disponível no **Ambientes** guia .
 
-   ![](assets/add-environment2.png)
+      ![Guia Ambientes](assets/environments-tab.png)
 
-   >[!NOTE]
-   >Ao criar um ambiente, uma ou mais *integrações* são criadas no Adobe I/O. Elas estão visíveis para os usuários clientes que têm acesso ao console Adobe I/O e não devem ser excluídas. Isso é descartado na descrição no console do Adobe I/O.
+   * O **Adicionar ambiente** pode ser desativada devido à falta de permissões ou dependendo dos recursos licenciados.
 
-   ![](assets/add-environment-image1.png)
+1. No **Adicionar ambiente** exibida:
 
-1. Clique em **Save** para adicionar um ambiente com os critérios preenchidos.  Agora a tela *Visão geral* exibe o cartão de onde você pode configurar o pipeline.
+   * Selecione um **Tipo de ambiente**.
+      * O número de ambientes disponíveis/usados é exibido entre parênteses atrás do tipo de ambiente de desenvolvimento.
+   * Forneça uma **Nome do ambiente**.
+   * Forneça uma **Descrição do ambiente**.
+   * Selecione um **Região da nuvem**.
 
-   >[!NOTE]
-   >Caso ainda não tenha configurado o pipeline de não produção, a tela *Visão geral* exibe o cartão de onde você pode criar o pipeline de não produção.
+   ![Caixa de diálogo Adicionar ambiente](assets/add-environment2.png)
+
+1. Clique em **Salvar** para adicionar o ambiente especificado.
+
+O **Visão geral** agora exibe seu novo ambiente na **Ambientes** cartão. Agora você pode configurar pipelines para seu novo ambiente.
 
 ## Detalhes do ambiente {#viewing-environment}
 
-O cartão **Ambientes** na página Visão geral lista até três ambientes.
+Você pode usar o **Ambientes** na página de visão geral para acessar os detalhes de um ambiente de duas maneiras.
 
-1. Selecione o botão **Mostrar tudo** para navegar até a página de resumo **Ambiente** para exibir uma tabela com uma lista completa de ambientes.
+1. No **Visão geral** clique no botão **Ambientes** na parte superior da tela.
 
-   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
+   ![Guia Ambientes](assets/environments-tab2.png)
 
-1. A página **Ambientes** exibe a lista de todos os ambientes existentes.
+   * Como alternativa, clique no botão **Mostrar tudo** no botão **Ambientes** cartão para ir diretamente para o **Ambientes** guia .
 
-   ![](assets/environment-view-2.png)
+      ![Mostrar todas as opções](assets/environment-showall.png)
 
-1. Selecione qualquer um dos ambientes na lista para exibir os detalhes do ambiente.
+1. O **Ambientes** abre e lista todos os ambientes para o programa.
 
-   ![](assets/environ-preview1.png)
+   ![A guia ambientes](assets/environment-view-2.png)
 
+1. Clique em um ambiente na lista para revelar seus detalhes.
+
+   ![Detalhes do ambiente](assets/environ-preview1.png)
+
+Como alternativa, clique no botão de reticências do ambiente desejado e selecione **Exibir detalhes**.
+
+![Exibir detalhes do ambiente](assets/view-environment-details.png)
+
+>[!NOTE]
+>
+>O **Ambientes** O cartão lista apenas três ambientes. Clique no botão **Mostrar tudo** conforme descrito anteriormente para ver todos os ambientes do programa.
 
 ### Acesso ao serviço de visualização {#access-preview-service}
 
-O recurso Serviço de visualização fornece um Serviço de visualização (publicação) adicional para cada AEM como um ambiente de Cloud Service via Cloud Manager.
+O Cloud Manager fornece um serviço de visualização (fornecido como um serviço de publicação adicional) para cada ambiente AEM as a Cloud Service.
 
-Visualize a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente. Alguns indicadores antes de visualizar e usar o Serviço de visualização:
+Usando o serviço, você pode visualizar a experiência final de um site antes que ele atinja o ambiente de publicação real e esteja disponível publicamente.
 
-1. **Versão** AEM: Seu ambiente deve estar AEM versão  `2021.05.5368.20210529T101701Z` ou superior. Certifique-se de que um pipeline de atualização tenha sido executado com êxito em seu ambiente para fazer isso.
+Após a criação, o serviço de visualização terá uma lista de permissões IP padrão aplicada a ele, identificada `Preview Default [<envId>]`, que bloqueia todo o tráfego para o serviço de visualização. Você deve desaplicar ativamente a lista de permissões IP padrão do serviço de visualização para ativar o acesso.
 
-1. **Bloqueio** de Lista de permissões IP padrão: Após a criação, o Serviço de visualização terá uma Lista de permissões IP padrão aplicada, rotulada como  `Preview Default [Env ID]`.
+![Serviço de visualização e sua lista de permissões](assets/preview-ip-allow.png)
 
-   >[!NOTE]
-   >Após a primeira criação, você deve desaplicar ativamente a Lista de permissões IP padrão do Serviço de visualização em seu ambiente para habilitar o acesso.
+Um usuário com as permissões necessárias deve concluir as etapas das seguintes opções antes de compartilhar o URL do serviço de visualização com qualquer uma das equipes para garantir o acesso ao URL de visualização.
 
-   Um usuário com as permissões necessárias deve executar um dos seguintes procedimentos para *desbloquear* o acesso ao Serviço de visualização e fornecer o acesso desejado:
+1. Crie uma lista de permissões IP apropriada, aplique-a ao serviço de visualização e desaplique imediatamente a variável `Preview Default [<envId>]` lista de permissões.
 
-   * Crie uma Lista de permissões IP apropriada e aplique-a ao Serviço de visualização. Siga isto imediatamente ao desaplicar `Preview Default [Env ID] IP Allow List` do Serviço de Pré-visualização. Consulte [Desaplicar uma Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) para obter mais detalhes.
+   * Consulte [Desaplicar uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) para obter mais detalhes.
 
-      *OU*,
+1. Usar a atualização **LISTA DE PERMISSÕES IP** para remover o IP padrão e adicionar IPs conforme apropriado. Consulte [Visualização e atualização de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) para saber mais.
 
-   * Use o fluxo de trabalho de atualização da Lista de permissões de IP para remover o IP padrão e adicionar IP(s) conforme apropriado. Consulte [Visualização e atualização de uma Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) para saber mais.
+Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de bloqueio antes do nome do serviço de visualização não será mais exibido.
 
-      >[!NOTE]
-      >As etapas acima devem ser feitas antes de compartilhar o URL do serviço de visualização com qualquer uma das equipes, para garantir que os membros apropriados de sua equipe possam acessar o URL de visualização.
+Depois de ativado, você pode publicar conteúdo no serviço de visualização usando a interface Gerenciar publicação no AEM. Consulte o documento [Visualização de conteúdo](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para obter mais detalhes.
 
-      Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de bloqueio (como mostrado na figura abaixo) não será mais exibido.
+>[!NOTE]
+>
+>Seu ambiente deve estar AEM versão `2021.05.5368.20210529T101701Z` ou mais recente. Para fazer isso, verifique se um pipeline de atualização foi executado com êxito em seu ambiente.
 
-      ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+## Atualização de ambientes {#updating-dev-environment}
 
-1. **Publicar conteúdo na visualização**: Você pode publicar conteúdo no Serviço de visualização usando a interface Gerenciar publicação no AEM. Consulte [Visualização de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) para obter mais detalhes.
+Como um serviço nativo em nuvem, as atualizações dos ambientes de preparo e produção nos programas de produção são automaticamente gerenciadas pelo Adobe.
 
-## Atualização do ambiente {#updating-dev-environment}
+No entanto, as atualizações em ambientes de desenvolvimento e em ambientes em programas sandbox são gerenciadas dentro dos programas. Quando esse ambiente não estiver executando a versão de AEM mais recente disponível publicamente, o status na **Ambientes** no cartão **Visão geral** a tela do programa será exibida **Atualização disponível**.
 
-As atualizações de ambientes de Preparo e Produção são gerenciadas automaticamente pelo Adobe.
+![Status de atualização do ambiente](assets/environ-update.png)
 
-As atualizações para ambientes de desenvolvimento são gerenciadas pelos usuários do programa. Quando um ambiente não estiver executando a versão de AEM mais recente disponível publicamente, o status no Cartão de ambientes na tela inicial mostrará **ATUALIZAR DISPONÍVEL**.
+### Atualizações e pipelines {#updates-pipelines}
 
-![](assets/environ-update.png)
+Os pipelines são a única maneira de [implante o código nos ambientes AEM as a Cloud Service.](deploy-code.md) Por esse motivo, cada pipeline está associado a uma versão de AEM específica.
 
+Se o Cloud Manager detectar que há uma versão mais recente do AEM disponível do que a implantada pela última vez no pipeline, ela mostrará a variável **Atualização disponível** status do ambiente.
 
-A opção **Update** está disponível no cartão **Ambientes**.
-Essa opção também estará disponível se você clicar em **Detalhes** no cartão **Ambientes**. A página **Ambientes** é aberta e, depois de selecionar o Ambiente de desenvolvimento, clique em **...** e selecione **Atualizar**, conforme mostrado na figura abaixo:
+O processo de atualização é, portanto, um processo em duas etapas:
 
-![](assets/environ-update2.png)
+1. Atualização do pipeline com a versão de AEM mais recente
+1. Execução do pipeline para implantar a nova versão do AEM em um ambiente
 
-Selecionar essa opção permitirá que um Gerenciador de implantação atualize o pipeline associado a esse ambiente para a versão mais recente e, em seguida, execute o pipeline.
+### Atualização de seus ambientes {#updating-your-environments}
 
-Se o pipeline já tiver sido atualizado, o usuário será solicitado a executar o pipeline.
+O **Atualizar** está disponível no **Ambientes** cartão para ambientes e ambientes de desenvolvimento em programas sandbox clicando no botão de reticências do ambiente.
 
-## Excluir ambiente {#deleting-environment}
+![Atualizar opção do cartão Ambientes](assets/environ-update2.png)
+
+Essa opção também está disponível ao clicar no botão **Ambientes** do programa e selecionando o botão de reticências do ambiente.
+
+![Atualizar opção da guia Ambientes](assets/environ-update3.png)
+
+Um usuário com a **Gerenciador de implantação** A função pode usar essa opção para atualizar o pipeline associado a esse ambiente para a versão de AEM mais recente.
+
+Quando a versão do pipeline é atualizada para a versão de AEM mais recente disponível publicamente, o usuário é solicitado a executar o pipeline associado para implantar a versão mais recente no ambiente .
+
+![Solicitar a execução do pipeline para atualizar o ambiente](assets/update-run-pipeline.png)
+
+O **Atualizar** O comportamento da opção varia dependendo da configuração e do estado atual do programa.
+
+* Se o pipeline já tiver sido atualizado, a variável **Atualizar** solicita que o usuário execute o pipeline.
+* Se o pipeline já estiver sendo atualizado, a variável **Atualizar** informa ao usuário que uma atualização já está em execução.
+* Se um pipeline apropriado não existir, a variável **Atualizar** solicita que o usuário crie uma.
+
+## Exclusão de ambientes de desenvolvimento {#deleting-environment}
 
 O usuário com as permissões necessárias poderá excluir um ambiente de desenvolvimento.
 
-A opção **Delete** está disponível no menu suspenso no cartão **Ambientes**. Clique em **...** para um ambiente de desenvolvimento que você deseja excluir.
+No **Visão geral** do programa no **Ambientes** , clique no botão de reticências do ambiente de desenvolvimento que deseja excluir.
 
-![](assets/environ-delete.png)
+![A opção de exclusão](assets/environ-delete.png)
 
-A opção de exclusão também estará disponível se você clicar em **Detalhes** no cartão **Ambientes**. A página **Ambientes** é aberta e, depois de selecionar o Ambiente de desenvolvimento, clique em **...** e selecione **Delete**, conforme mostrado na figura abaixo:
+A opção de exclusão também está disponível no **Ambientes** da guia **Visão geral** janela do programa. Clique no botão de reticências do ambiente e selecione **Excluir**.
 
-![](assets/environ-delete2.png)
-
+![A opção de exclusão da guia Ambientes.](assets/environ-delete2.png)
 
 >[!NOTE]
->Esse recurso não está disponível para o ambiente de Produção/Estágio definido em um programa de Produção configurado para fins de produção. No entanto, o recurso está disponível para ambientes de Produção/Estágio em um programa de sandbox.
+>
+>* Os ambientes de produção e de preparo criados em um programa de produção não podem ser excluídos.
+>* Os ambientes de produção e de preparo em um programa sandbox podem ser excluídos.
+
 
 ## Gerenciamento de acesso {#managing-access}
 
-Selecione **Gerenciar acesso** no menu suspenso do cartão **Ambientes**. Você pode navegar diretamente para a instância do autor e gerenciar o acesso do seu ambiente.
+Selecionar **Gerenciar acesso** no menu elipse do ambiente no **Ambientes** cartão. Você pode navegar diretamente para a instância do autor e gerenciar o acesso do seu ambiente.
 
-![](assets/environ-access.png)
-
+![Opção Gerenciar acesso](assets/environ-access.png)
 
 ## Acesso ao Console do desenvolvedor {#accessing-developer-console}
 
-Selecione **Console do Desenvolvedor** no menu suspenso do cartão **Ambientes**. Isso abrirá uma nova guia no navegador com a página de logon em **Console do desenvolvedor**.
-
-Somente um usuário na função Desenvolvedor terá acesso ao **Console do Desenvolvedor**. A exceção é para Programas de sandbox, em que qualquer usuário com acesso ao Programa de sandbox do Cloud Manager terá acesso ao **Console do desenvolvedor**.
-
-Consulte [Hibernando e removendo ambientes de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) para obter mais detalhes.
-
+Selecionar **Console do desenvolvedor** no menu elipse do ambiente no **Ambientes** cartão. Isso abrirá uma nova guia no navegador com a página de logon no **Console do desenvolvedor**.
 
 ![](assets/environ-devconsole.png)
 
-Essa opção também estará disponível se você clicar em **Detalhes** no cartão **Ambientes**. A página **Ambientes** é aberta e, depois de selecionar um ambiente, clique em **...** e selecione **Console do desenvolvedor**.
+Somente um usuário com a variável **Desenvolvedor** terá acesso à função **Console do desenvolvedor**. No entanto, para programas sandbox, qualquer usuário com acesso ao programa sandbox terá acesso a **Console do desenvolvedor**.
+
+Consulte o documento [Hibernar e desibernar ambientes de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) para obter mais detalhes.
+
+Essa opção também está disponível no **Ambiente** da guia **Visão geral** ao clicar no menu de reticências de um ambiente individual.
 
 ## Fazer logon localmente {#login-locally}
 
-Selecione **Logon local** no menu suspenso do cartão **Ambientes** para fazer logon localmente no Adobe Experience Manager.
+Selecionar **Logon local** no menu elipse do ambiente no **Ambientes** para fazer logon localmente no Adobe Experience Manager.
 
-![](assets/environ-login-locally.png)
+![Logon localmente](assets/environ-login-locally.png)
 
-Além disso, você pode fazer logon localmente na página de resumo **Ambientes**.
+Além disso, você pode fazer logon localmente da **Ambientes** da guia **Visão geral** página.
 
-![](assets/environ-login-locally-2.png)
-
+![Logon localmente na guia Ambientes](assets/environ-login-locally-2.png)
 
 ## Gerenciar nomes de domínio personalizados {#manage-cdn}
 
-Navegue até a página de detalhes **Ambientes** na página Resumo dos ambientes .
+Os nomes de domínio personalizados são suportados nos programas do Cloud Manager for Sites para serviços de publicação e visualização. Cada ambiente do Cloud Manager pode hospedar até 250 domínios personalizados.
 
->[!NOTE]
->Agora, os nomes de domínio personalizados são compatíveis com os programas do Cloud Manager for Sites para Serviços de publicação e visualização. Cada Ambiente do Cloud Manager pode hospedar até 250 domínios personalizados por ambiente.
+Para configurar nomes de domínio personalizados, navegue até o **Ambientes** e clique em um ambiente para exibir os detalhes do ambiente.
 
-As seguintes ações podem ser executadas no serviço de Publicação para o seu ambiente, conforme descrito abaixo:
+![Detalhes do ambiente](assets/domain-names.png)
 
-1. [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+As seguintes ações podem ser executadas no serviço de publicação para seu ambiente.
 
-1. [Visualização e atualização de um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+* [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. [Excluindo um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+* [Visualização e atualização de um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. [Verificando o status do ](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) nome de domínio personalizado ou de um certificado  [SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+* [Excluir um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-1. [Verificando o status de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [Verificando o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) ou [Certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+
+* [Verificando o status de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 
-## Gerenciamento de Listas de permissões IP {#manage-ip-allow-lists}
+## Gerenciamento de listas de permissões de IP {#manage-ip-allow-lists}
 
-Navegue até a página Detalhes do ambiente na página Resumo dos ambientes . Você pode executar as seguintes ações no(s) serviço(s) de Publicação e/ou Autor para seu ambiente aqui.
+As listas de permissões de IP são compatíveis com o Cloud Manager para criar, publicar e visualizar serviços para programas do Sites.
 
->[!NOTE]
->O recurso Lista de permissões de IP agora é compatível com o Cloud Manager para Autor, Publicação e Serviços de visualização (disponível nos programas Sites).
+Para gerenciar listas de permissões de IP, navegue até o **Ambientes** da guia **Visão geral** página do seu programa. Clique em um ambiente individual para gerenciar seus detalhes.
 
-### Aplicação de uma Lista de permissões IP {#apply-ip-allow-list}
+### Aplicação de uma lista de permissões de IP {#apply-ip-allow-list}
 
-A aplicação de uma Lista de permissões IP é o processo pelo qual todos os intervalos IP incluídos na definição da Lista de permissões são associados a um serviço de Autor ou Publicação em um ambiente. Um usuário na função Proprietário comercial ou Gerente de implantação deve estar conectado para poder aplicar uma Lista de permissões de IP.
+A aplicação de uma lista de permissões IP associa todos os intervalos IP incluídos na definição da lista de permissões a um serviço de criação ou publicação em um ambiente. Um usuário na **Proprietário da empresa** ou **Gerenciador de implantação** deve estar conectado para poder aplicar uma lista de permissões IP.
 
->[!NOTE]
->A Lista de permissões IP deve existir no Cloud Manager para ser aplicada a um serviço do ambiente. Para saber mais sobre Listas de permissões de IP no Cloud Manager, navegue até [Introdução às Listas de permissões de IP no Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+A lista de permissões IP deve existir no Cloud Manager para ser aplicada a um ambiente. Para saber mais sobre listas de permissões de IP no Cloud Manager, consulte o documento[Introdução às Listas de permissões IP no Cloud Manager.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
-Siga as etapas abaixo para aplicar uma Lista de permissões IP:
+Siga estas etapas para aplicar uma lista de permissões IP.
 
-1. Navegue até o ambiente específico na página de detalhes **Ambientes** e navegue até a tabela **Listas de permissões IP**.
-1. Use os campos de entrada na parte superior da tabela Lista de permissões de IP para selecionar a Lista de permissões de IP e o serviço de Autor ou Publicação ao qual deseja aplicá-la.
+1. Navegue até o ambiente específico do **Ambientes** guia do programa **Visão geral** e navegue até a **LISTAS DE PERMISSÕES de IP** tabela.
+1. Use os campos de entrada na parte superior da tabela lista de permissões IP para selecionar a lista de permissões IP e o serviço de criação ou publicação ao qual deseja aplicá-la.
 1. Clique em **Aplicar** e confirme seu envio.
 
 ### Desaplicar uma Lista de permissões IP {#unapply-ip-allow-list}
 
-Desaplicar uma Lista de permissões IP é o processo pelo qual todos os intervalos IP incluídos na definição da Lista de permissões são desassociados de um serviço Autor ou Editor em um ambiente. Um usuário na função Proprietário comercial ou Gerente de implantação deve estar conectado para poder Desaplicar uma Lista de permissões IP.
+A desaplicação de uma lista de permissões IP desassocia todos os intervalos IP incluídos na definição da lista de permissões de um serviço de autor ou editor em um ambiente. Um usuário na **Proprietário da empresa** ou **Gerenciador de implantação** deve estar conectado para poder desaplicar uma lista de permissões IP.
 
-Siga as etapas abaixo para desaplicar uma Lista de permissões IP:
+Siga estas etapas para desaplicar uma lista de permissões IP.
 
-1. Navegue até a página de detalhes **Ambientes** específica da tela Ambientes e navegue até a tabela **Listas de permissões IP**.
-1. Identifique a linha na qual a regra de Lista de permissões IP que você deseja desaplicar está listada.
-1. Selecione o **...** a partir da extremidade direita da linha.
-1. Selecione a opção **Unapply** e confirme seu envio.
+1. Navegue até o ambiente específico do **Ambientes** guia do programa **Visão geral** e navegue até a **LISTAS DE PERMISSÕES de IP** tabela.
+1. Identifique a linha na qual a regra de lista de permissões IP que você deseja desaplicar é listada.
+1. Selecione o botão de reticências no final da linha.
+1. Selecionar **Não aplicar** e confirme seu envio.

@@ -1,82 +1,86 @@
 ---
-title: Implantar o código - Cloud Services
-description: Implantar o código - Cloud Services
+title: Implantação do código
+description: Saiba como implantar seu código usando os pipelines do Cloud Manager AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
+source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 2%
+source-wordcount: '669'
+ht-degree: 0%
 
 ---
 
+
 # Implantação do código {#deploy-your-code}
 
-## Implantação do código com o Cloud Manager no AEM as a Cloud Service {#deploying-code-with-cloud-manager}
+Saiba como implantar seu código usando os pipelines do Cloud Manager AEM as a Cloud Service.
 
-Depois de configurar o Pipeline de produção (repositório, ambiente e ambiente de teste), você estará pronto para implantar seu código.
+## Implantação do código com o Cloud Manager AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
-1. Clique em **Implantar** no Cloud Manager para iniciar o processo de implantação.
+Depois de [configuração do pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) incluindo repositório, ambiente e ambiente de teste, você está pronto para implantar seu código.
 
-   ![](assets/deploy-code1.png)
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
 
+1. Clique no programa para o qual deseja implantar o código.
 
-1. A tela **Pipeline Execution** é exibida.
+1. Clique em **Implantar** do convite à ação no **Visão geral** para iniciar o processo de implantação.
 
-   Clique em **Criar** para iniciar o processo.
+   ![CTA](assets/deploy-code1.png)
 
-   ![](assets/deploy-code2.png)
+1. O **Execução de pipeline** será exibida. Clique em **Criar** para iniciar o processo.
 
-1. O processo de build completo implanta seu código.
+   ![Tela de execução do pipeline](assets/deploy-code2.png)
 
-   Os seguintes estágios estão envolvidos no processo de criação:
+O processo de build implanta seu código em três fases.
 
-   1. Implantação do Estágio
-   1. Teste de preparo
-   1. Implantação de produção
+1. [Implantação do Estágio](#stage-deployment)
+1. [Teste de preparo](#stage-testing)
+1. [Implantação de produção](#production-deployment)
 
-   >[!NOTE]
-   >
-   >Além disso, você pode revisar as etapas de vários processos de implantação exibindo registros ou revisando resultados para os critérios de teste.
+>[!TIP]
+>
+>Você pode revisar as etapas de vários processos de implantação exibindo registros ou revisando resultados para os critérios de teste.
 
-   A **Implantação do preparo** envolve estas etapas:
+## Fase de implantação do estágio {#stage-deployment}
 
-   * Validação: Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento, por exemplo, que a ramificação configurada exista, os ambientes estarão disponíveis.
-   * Teste de compilação e unidade: Essa etapa executa um processo de criação contêiner. Consulte [Detalhes do ambiente de criação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obter detalhes sobre o ambiente de criação.
-   * Verificação de código: Esta etapa avalia a qualidade do código de seu aplicativo. Consulte [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) para obter detalhes sobre o processo de teste.
-   * Criar imagens: Esta etapa tem um arquivo de log do processo usado para criar imagens. Esse processo é responsável por transformar os pacotes de conteúdo e dispatcher produzidos pela etapa de compilação em imagens Docker e configuração de Kubernetes.
-   * Implantar no Estágio
+O **Implantação do Estágio** fase. envolve essas etapas.
 
-      ![](assets/stage-deployment.png)
-   O **Teste de preparo** envolve as seguintes etapas:
+* **Validação**  - Essa etapa garante que o pipeline esteja configurado para usar os recursos disponíveis no momento. Por exemplo, teste se a ramificação configurada existe e se os ambientes estão disponíveis.
+* **Teste de compilação e unidade** - Essa etapa executa um processo de criação em contêiner.
+   * Consulte o documento [Detalhes do ambiente de criação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obter detalhes sobre o ambiente de criação.
+* **Verificação de código** - Esta etapa avalia a qualidade do código do seu aplicativo.
+   * Consulte o documento [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) para obter detalhes sobre o processo de teste.
+* **Criar imagens** - Esse processo é responsável por transformar os pacotes de conteúdo e dispatcher produzidos pela etapa de compilação em imagens Docker e configurações de Kubernetes.
+* **Implantar no Estágio** - A imagem é implantada no ambiente de preparo temporário, em preparação para o [Fase de teste.](#stage-testing)
 
-   * **Teste** funcional do produto: As execuções de pipeline do Cloud Manager oferecerão suporte à execução de testes que são executados no ambiente de preparo.
-Consulte [Teste funcional do produto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) para obter mais detalhes.
+![Implantação do Estágio](assets/stage-deployment.png)
 
-   * **Teste** funcional personalizado: Essa etapa no pipeline está sempre presente e não pode ser ignorada. No entanto, se nenhum JAR de teste for produzido pela build, o teste será aprovado por padrão.\
-      Consulte [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obter mais detalhes.
+## Fase de teste de estágio {#stage-testing}
 
-   * **Teste** da interface personalizada: Esta etapa é um recurso opcional que permite que nossos clientes criem e executem automaticamente testes de interface para seus aplicativos. Os testes da interface do usuário são testes baseados em Selenium, compactados em uma imagem Docker, para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium).
-Consulte [Teste de interface personalizada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing) para obter mais detalhes.
+O **Teste de preparo** envolve essas etapas.
 
+* **Teste funcional do produto** - O pipeline do Cloud Manager executa testes que são executados no ambiente de preparo.
+   * Consulte o documento [Teste funcional do produto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) para obter mais detalhes.
 
-   * **Auditoria** de experiência: Essa etapa no pipeline está sempre presente e não pode ser ignorada. Conforme um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após um teste funcional personalizado que executará as verificações. As páginas configuradas serão enviadas ao serviço e avaliadas. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
-Consulte [Entendendo os resultados da auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
+* **Teste funcional personalizado** - Essa etapa no pipeline é sempre executada e não pode ser ignorada. Se nenhum JAR de teste for produzido pela criação, o teste será aprovado por padrão.
+   * Consulte o documento [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obter mais detalhes.
 
-      ![](assets/stage-testing.png)
+* **Teste de interface personalizada** - Esta etapa é um recurso opcional que executa automaticamente testes de interface criados para aplicativos personalizados.
+   * Os testes da interface do usuário são testes baseados em Selenium compactados em uma imagem Docker para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia desenvolvida na Selenium).
+   * Consulte o documento [Teste de interface personalizada](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obter mais detalhes.
 
+* **Auditoria de experiência** - Essa etapa no pipeline é sempre executada e não pode ser ignorada. Conforme um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após um teste funcional personalizado que executará as verificações.
+   * As páginas configuradas são enviadas ao serviço e avaliadas.
+   * Os resultados são informativos e mostram as pontuações e a alteração entre as pontuações atual e anterior.
+   * Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
+   * Consulte o documento [Compreender os resultados da auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
 
+![Teste de preparo](assets/stage-testing.png)
 
+## Fase de implantação da produção {#deployment-production}
 
+O processo de implantação das topologias de produção é um pouco diferente para minimizar o impacto dos visitantes em um site de AEM.
 
-## Processo de implantação {#deployment-process}
-
-Todas as implantações de Cloud Service seguem um processo contínuo para garantir tempo de inatividade zero. Consulte [Como as implantações em andamento funcionam](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) para saber mais.
-
-### Implantação para fase de produção {#deployment-production-phase}
-
-O processo de implantação das topologias de produção é um pouco diferente para minimizar o impacto para AEM visitantes do Site.
-
-As implantações de produção geralmente seguem as mesmas etapas descritas acima, mas de maneira contínua:
+As implantações de produção geralmente seguem as mesmas etapas descritas anteriormente, mas de maneira contínua.
 
 1. Implantar pacotes de AEM para o autor.
 1. Desanexar dispatcher1 do balanceador de carga.
@@ -85,4 +89,11 @@ As implantações de produção geralmente seguem as mesmas etapas descritas aci
 1. Depois que o dispatcher1 estiver novamente em serviço, desconecte o dispatcher2 do balanceador de carga.
 1. Implante AEM pacotes para publish2 e o pacote do dispatcher para dispatcher2, libere o cache do dispatcher.
 1. Coloque o dispatcher2 de volta no balanceador de carga.
+
 Esse processo continua até que a implantação tenha atingido todos os editores e dispatchers na topologia.
+
+![Fase de implantação da produção](assets/production-deployment.png)
+
+## Processo de implantação {#deployment-process}
+
+Todas as implantações de Cloud Service seguem um processo contínuo para garantir tempo de inatividade zero. Consulte o documento [Como funcionam as implantações em andamento](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para saber mais.

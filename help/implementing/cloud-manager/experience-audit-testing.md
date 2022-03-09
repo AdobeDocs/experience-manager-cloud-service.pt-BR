@@ -1,68 +1,70 @@
 ---
-title: Teste de auditoria de experiência - Cloud Services
-description: Teste de auditoria de experiência - Cloud Services
+title: Teste de auditoria de experiência
+description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 0%
+source-wordcount: '536'
+ht-degree: 1%
 
 ---
+
 
 # Teste de auditoria de experiência {#experience-audit-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_expaudittesting"
 >title="Teste de auditoria de experiência"
->abstract="A Auditoria de experiência é um recurso disponível em pipelines de produção de sites do Cloud Manager, desenvolvido pelo Google Lighthouse, uma ferramenta de código aberto do Google. Esse recurso é ativado em todos os pipelines de produção do Cloud Manager."
+>abstract="Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO."
 
-A Auditoria de experiência é um recurso disponível em pipelines de produção de sites do Cloud Manager, desenvolvido pelo Google Lighthouse, uma ferramenta de código aberto do Google. Esse recurso é ativado em todos os pipelines de produção do Cloud Manager.
+Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO.
 
-Ele valida o processo de implantação e ajuda a garantir que as alterações sejam implantadas:
+## Visão geral {#overview}
+
+A Auditoria de experiência é um recurso disponível nos pipelines de produção de sites do Cloud Manager que valida o processo de implantação e ajuda a garantir que as alterações sejam implantadas:
 
 1. Atenda aos padrões básicos de desempenho, acessibilidade, práticas recomendadas, SEO (Search Engine Otimization) e PWA (Progressive Web App).
 
-1. Não inclua regressões nessas dimensões.
+1. Não introduza regressões.
 
-A Auditoria de experiência no Cloud Manager garante que a experiência digital dos usuários finais no site possa ser mantida nos mais altos padrões. Os resultados são informativos e permitem que o usuário veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
+A Auditoria de experiência no Cloud Manager garante que a experiência do usuário final no site seja dos mais altos padrões.
 
-## Como entender os resultados da auditoria de experiência {#understanding-experience-audit-results}
+Os resultados da auditoria são informativos e permitem que o gerente de implantação veja as pontuações e a alteração entre as pontuações atual e anterior. Esse insight é importante para determinar se há uma regressão que será introduzida com a implantação atual.
 
-A Auditoria de experiência fornece resultados de teste agregados e detalhados em nível de página por meio da página de execução do pipeline de produção .
+A Auditoria de experiência é disponibilizada pelo Google Lighthouse, uma ferramenta de código aberto da Google, e é ativada em todos os pipelines de produção do Cloud Manager.
 
-* Métricas de nível agregado medem a pontuação média nas páginas que foram auditadas para desempenho, acessibilidade, práticas recomendadas, SEO (Otimização do mecanismo de pesquisa).
-   >[!NOTE]
-   >A pontuação do Progressive Web App (PWA) não está incluída na pontuação do resumo e será exibida somente na tela de detalhes do relatório no nível da página.
+## Noções básicas dos resultados da auditoria de experiência {#understanding-experience-audit-results}
+
+A Auditoria de experiência fornece resultados de teste agregados e detalhados em nível de página por meio da [página de execução do pipeline de produção.](/help/implementing/cloud-manager/deploy-code.md)
+
+* Métricas agregadas medem as pontuações médias nas páginas que foram auditadas para desempenho, acessibilidade, práticas recomendadas, SEO (Otimização do mecanismo de pesquisa).
 * As pontuações de nível de página individual também estão disponíveis por meio do detalhamento.
-* Os detalhes das pontuações estão disponíveis para ver quais são os resultados dos testes individuais, juntamente com orientações sobre como corrigir quaisquer problemas identificados durante a auditoria da experiência.
-* Um histórico dos resultados do teste é mantido no Cloud Manager para que os clientes possam ver se as alterações que estão sendo introduzidas na execução do pipeline incluem qualquer regressão da execução anterior.
+* Detalhes das pontuações estão disponíveis para visualizar os resultados dos testes individuais, juntamente com orientações sobre como corrigir quaisquer problemas identificados.
+* Um histórico dos resultados do teste é mantido no Cloud Manager para determinar se as alterações que estão sendo introduzidas no pipeline incluem qualquer regressão da execução anterior.
 
 ### Pontuações agregadas {#aggregate-scores}
 
-Há uma pontuação de nível agregado para cada tipo de teste, como desempenho, acessibilidade, SEO e práticas recomendadas.
->[!NOTE]
->A pontuação do Progressive Web App (PWA) não está incluída na pontuação do resumo e será exibida somente na tela de detalhes do relatório no nível da página.
-
 A pontuação de nível agregado obtém a pontuação média das páginas incluídas na execução. A alteração no nível de agregação representa a pontuação média das páginas na execução atual em comparação à média das pontuações da execução anterior, mesmo se a coleção de páginas configuradas para serem incluídas tiver sido alterada entre as execuções.
 
-O valor da métrica Change pode ser um dos seguintes:
+Há uma pontuação de nível agregado para cada tipo de teste, como desempenho, acessibilidade, SEO e práticas recomendadas.
 
-* **Valor positivo**  - as páginas foram aprimoradas no teste selecionado desde a última execução do pipeline de produção
+A métrica de alteração pode ter um dos valores a seguir.
 
-* **Valor negativo**  - as páginas foram regressadas no teste selecionado desde a última execução do pipeline de produção
+* **Valor positivo** - As páginas foram aprimoradas no teste selecionado desde a última execução do pipeline de produção.
 
-* **Sem alterações**  - as páginas tiveram a mesma pontuação desde a última execução do pipeline de produção
+* **Valor negativo** - a(s) página(s) regressou(ão) ao teste selecionado desde a última execução do pipeline de produção.
 
-* **N/A**  - não havia pontuação anterior disponível para comparação a
+* **Sem alteração** - As páginas tiveram a mesma pontuação desde a última execução do pipeline de produção.
 
-   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+* **N/D** - Não havia pontuação anterior disponível para comparação.
+
+![Resultados da auditoria de experiência](/help/implementing/cloud-manager/assets/exp-audit-1.png)
 
 
 ### Pontuações no nível da página {#page-level-scores}
 
-Ao detalhar qualquer um dos testes, é possível visualizar uma pontuação mais detalhada no nível da página. O usuário poderá ver a pontuação de páginas individuais para o teste específico junto com a alteração da hora anterior em que o teste foi executado.
+Ao detalhar qualquer um dos testes, a pontuação de nível de página mais detalhada está disponível. Você pode ver como as páginas individuais foram pontuadas para o teste específico junto com a alteração da execução do teste anterior.
 
-Clicar nos detalhes de qualquer página individual fornecerá informações sobre os elementos da página que foram avaliados e orientação para corrigir problemas se forem detectadas oportunidades de melhoria. Os detalhes dos testes e as orientações associadas são fornecidos pelo Google Lighthouse.
+Clicar nos detalhes de qualquer página individual fornece informações sobre os elementos da página que foram avaliados, bem como orientação para corrigir problemas se forem detectadas oportunidades de melhoria.
 
-![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
+![Pontuações no nível da página](/help/implementing/cloud-manager/assets/exp-audit-2.png)
