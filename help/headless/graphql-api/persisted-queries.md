@@ -1,51 +1,53 @@
 ---
-title: Consultas GraphQL persistentes
-description: Saiba como persistir consultas GraphQL no Adobe Experience Manager para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método HTTP GET e a resposta pode ser armazenada em cache nas camadas do dispatcher e CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
+title: 'Consultas persistentes de GraphQL '
+description: Saiba como criar consultas persistentes de GraphQL no Adobe Experience Manager para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 feature: Content Fragments,GraphQL API
 source-git-commit: 0912cadeae13050c9cfc606d1c2b8f4236cd78ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '644'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Consultas GraphQL persistentes {#persisted-queries-caching}
+# Consultas persistentes de GraphQL  {#persisted-queries-caching}
 
-As consultas persistentes são consultas GraphQL criadas e armazenadas no servidor AEM. As consultas GraphQL padrão são executadas usando solicitações POST e a resposta não pode ser facilmente armazenada em cache. Consultas persistentes podem ser solicitadas com uma solicitação GET por aplicativos clientes. A resposta de uma solicitação de GET pode ser armazenada em cache nas camadas do dispatcher e CDN, melhorando, em última análise, o desempenho do aplicativo cliente solicitante.
+Consultas persistentes são consultas de GraphQL criadas e armazenadas no servidor do AEM. As consultas de GraphQL padrão são executadas usando solicitações POST e a resposta não pode ser armazenada em cache com facilidade. Consultas persistentes podem ser feitas através de uma solicitação GET de aplicativos clientes. A resposta para uma solicitação GET pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho do aplicativo cliente solicitante.
 
-As consultas persistentes devem sempre usar o terminal relacionado ao [configuração apropriada do Sites](graphql-endpoint.md); para que possam usar ou ambos:
+Consultas persistentes devem sempre usar o endpoint relacionado à [configuração apropriada do Sites](graphql-endpoint.md); para que possam usar um desses, ou ambos:
 
-* A configuração global e o terminal A consulta tem acesso a todos os Modelos de fragmento de conteúdo.
-* Configuração(ões) de sites específicos e endpoint(s) A criação de uma consulta persistente para uma configuração de sites específica requer um endpoint específico para a configuração de sites correspondente (para fornecer acesso aos Modelos de fragmento de conteúdo relacionados).
-Por exemplo, para criar uma consulta persistente especificamente para a configuração de Sites WKND, uma configuração de Sites específica de WKND correspondente e um endpoint específico de WKND devem ser criados antecipadamente.
+* A configuração global e o endpoint 
+A consulta tem acesso a todos os modelos de fragmento de conteúdo.
+* Configuração(ões) e endpoint(s) do Sites específicos 
+A criação de uma consulta persistente para uma configuração do Sites específica requer um endpoint correspondente específico para a configuração do Sites (para fornecer acesso aos modelos de fragmento de conteúdo relacionados).
+Por exemplo, para criar uma consulta persistente especificamente para a configuração do Sites WKND, uma configuração do Sites correspondente específica de WKND e um endpoint específico de WKND devem ser criados antecipadamente.
 
 >[!NOTE]
 >
->Consulte [Ativar a funcionalidade de fragmento de conteúdo no navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) para obter mais detalhes.
+>Consulte [Habilitar a funcionalidade de fragmentos de conteúdo no Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) para obter mais detalhes.
 >
->O **Consultas de persistência GraphQL** precisam ser ativados para a configuração apropriada do Sites.
+>As **Consultas de persistência GraphQL** precisam estar habilitadas para a configuração apropriada do Sites.
 
-Por exemplo, se houver um query específico chamado `my-query`, que usa um modelo `my-model` na configuração Sites `my-conf`:
+Por exemplo, se houver uma consulta específica chamada `my-query`, que usa um modelo `my-model` da configuração `my-conf` do Sites:
 
-* Você pode criar um query usando o `my-conf` endpoint específico e, em seguida, o query será salvo da seguinte maneira:
+* É possível criar uma consulta usando o endpoint específico `my-conf` e, em seguida, a consulta será salva da seguinte maneira:
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* Você pode criar a mesma query usando `global` endpoint, mas a consulta será salva como a seguir:
+* É possível criar a mesma consulta usando o endpoint `global`, mas a consulta será salva da seguinte maneira:
    `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
 >Essas são duas consultas diferentes - salvas em caminhos diferentes.
 >
->Acontece que eles apenas usam o mesmo modelo - mas por diferentes endpoints.
+>Por acaso, elas usam o mesmo modelo - mas por meio de diferentes endpoints.
 
-## Como persistir uma consulta GraphQL
+## Como criar uma consulta persistente de GraphQL
 
-É recomendável manter consultas em um ambiente de criação de AEM inicialmente e, em seguida, [publicar o query](#publish-persisted-query) para um ambiente de publicação de AEM. Ferramentas como [Postman](https://www.postman.com/) ou ferramentas de linha de comando como [curl](https://curl.se/) pode ser usada.
+É recomendável criar consultas persistentes inicialmente em um ambiente de criação do AEM e, em seguida, [publicar a consulta](#publish-persisted-query) em um ambiente de publicação do AEM. Ferramentas como [Postman](https://www.postman.com/) ou ferramentas de linha de comando como [curl](https://curl.se/) podem ser usadas.
 
-Estas são as etapas para persistir um determinado query usando o **curl** ferramenta de linha de comando:
+Estas são as etapas para criar uma determinada consulta persistente usando a ferramenta de linha de comando **curl**:
 
-1. Prepare a consulta colocando-a no novo URL do ponto final `/graphql/persist.json/<config>/<persisted-label>`.
+1. Prepare a consulta utilizando o método PUT no novo URL do endpoint `/graphql/persist.json/<config>/<persisted-label>`.
 
    Por exemplo, crie uma consulta persistente:
 
@@ -82,7 +84,7 @@ Estas são as etapas para persistir um determinado query usando o **curl** ferra
    }
    ```
 
-1. Você pode solicitar a consulta persistente usando GETthe URL `/graphql/execute.json/<shortPath>`.
+1. É possível solicitar a consulta persistente utilizando o método GET com o URL `/graphql/execute.json/<shortPath>`.
 
    Por exemplo, use a consulta persistente:
 
@@ -91,7 +93,7 @@ Estas são as etapas para persistir um determinado query usando o **curl** ferra
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. Atualize uma consulta persistente do POSTing para um caminho de consulta já existente.
+1. Atualize uma consulta persistente utilizando o método POST em um caminho de consulta já existente.
 
    Por exemplo, use a consulta persistente:
 
@@ -117,7 +119,7 @@ Estas são as etapas para persistir um determinado query usando o **curl** ferra
    }'
    ```
 
-1. Crie uma consulta simples encapsulada.
+1. Crie uma consulta agrupada simples.
 
    Por exemplo:
 
@@ -130,7 +132,7 @@ Estas são as etapas para persistir um determinado query usando o **curl** ferra
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
 
-1. Crie uma consulta simples encapsulada com controle de cache.
+1. Crie uma consulta agrupada simples com controle de cache.
 
    Por exemplo:
 
@@ -189,7 +191,7 @@ As consultas persistentes podem ser publicadas em um ambiente de publicação do
 
 Há várias abordagens para a publicação de uma consulta persistente:
 
-* **Uso de um POST para replicação**:
+* **Uso de POST para replicação**:
 
    ```xml
    $ curl -X POST   http://localhost:4502/bin/replicate.json \
@@ -202,20 +204,20 @@ Há várias abordagens para a publicação de uma consulta persistente:
    1. Crie uma nova definição de pacote.
    1. Inclua a configuração (por exemplo, `/conf/wknd/settings/graphql/persistentQueries`).
    1. Crie o pacote.
-   1. Replicar o pacote.
+   1. Replique o pacote.
 
 * **Uso da ferramenta de replicação/distribuição**:
-   1. Vá para a ferramenta Distribution .
+   1. Vá para a ferramenta de Distribuição.
    1. Selecione a ativação em árvore para a configuração (por exemplo, `/conf/wknd/settings/graphql/persistentQueries`).
 
-* **Uso de um workflow (por meio da configuração do iniciador do workflow)**:
-   1. Defina uma regra do iniciador do workflow para executar um modelo de workflow que replicaria a configuração em eventos diferentes (por exemplo, criar, modificar, entre outros).
+* **Uso de um fluxo de trabalho (por meio da configuração do iniciador do fluxo de trabalho)**:
+   1. Defina uma regra do iniciador do fluxo de trabalho para executar um modelo de fluxo de trabalho que replique a configuração em eventos diferentes (por exemplo, criar, modificar, entre outros).
 
-Quando a configuração da consulta estiver em publicação, os mesmos princípios de autenticação serão aplicados, usando o endpoint de publicação.
+Quando a configuração da consulta estiver em publicação, os mesmos princípios de autenticação serão aplicados no uso do endpoint de publicação.
 
 >[!NOTE]
 >
->Para acesso anônimo, o sistema assume que a ACL permite que &quot;todos&quot; tenham acesso à configuração da consulta.
+>Para acesso anônimo, o sistema assume que a ACL permite que “todos” tenham acesso à configuração da consulta.
 >
 >Se esse não for o caso, não será possível executar.
 
@@ -223,7 +225,7 @@ Quando a configuração da consulta estiver em publicação, os mesmos princípi
 >
 >Qualquer ponto e vírgula (&quot;;&quot;) nos URLs precisa ser codificado.
 >
->Por exemplo, como na solicitação para executar uma consulta mantida:
+>Por exemplo, como na solicitação para executar uma consulta persistente:
 >
 >
 ```xml
