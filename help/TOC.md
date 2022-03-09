@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
 source-wordcount: '3419'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -33,28 +33,28 @@ ht-degree: 96%
    + Notas de versão {#release-notes}
       + [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2021 {#2021}
-         + [Notas de versão 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
-         + [Notas da versão 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
-         + [Notas da versão 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
-         + [Notas da versão 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
-         + [Notas da versão 2021.7.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)
-         + [Notas da versão 2021.6.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
-         + [Notas da versão 2021.5.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
-         + [Notas da versão 2021.4.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
-         + [Notas da versão 2021.3.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
-         + [Notas da versão 2021.2.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
-         + [Notas da versão 2021.1.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
+         + [Notas da versão 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
+         + [Notas da versão para 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
+         + [Notas da versão para 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
+         + [Notas da versão para 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
+         + [Notas da versão para 2021.7.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)
+         + [Notas da versão para 2021.6.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
+         + [Notas da versão para 2021.5.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
+         + [Notas da versão para 2021.4.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
+         + [Notas da versão para 2021.3.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
+         + [Notas da versão para 2021.2.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
+         + [Notas da versão para 2021.1.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
       + 2020 {#2020}
-         + [Notas da versão 2020.12.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
-         + [Notas da versão 2020.11.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
-         + [Notas da versão 2020.10.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-10-0.md)
-         + [Notas da versão 2020.9.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-9-0.md)
-         + [Notas da versão 2020.8.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md)
-         + [Notas da versão 2020.7.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-7-0.md)
-         + [Notas da versão 2020.6.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-6-0.md)
-         + [Notas da versão 2020.5.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-5-0.md)
-         + [Notas da versão 2020.4.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
-         + [Notas da versão 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
+         + [Notas da versão para 2020.12.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
+         + [Notas da versão para 2020.11.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
+         + [Notas da versão para 2020.10.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-10-0.md)
+         + [Notas da versão para 2020.9.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-9-0.md)
+         + [Notas da versão para 2020.8.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md)
+         + [Notas da versão para 2020.7.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-7-0.md)
+         + [Notas da versão para 2020.6.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-6-0.md)
+         + [Notas da versão para 2020.5.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-5-0.md)
+         + [Notas da versão para 2020.4.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
+         + [Notas da versão para 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [Notas da versão 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + [Novidades?](/help/release-notes/what-is-new.md)
    + [Alterações importantes no AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -104,11 +104,11 @@ ht-degree: 96%
    + [Guia de migração para o Experience Manager as a Cloud Service para parceiros](/help/journey-migration/getting-started-partners.md)
    + Notas de versão das ferramentas de migração {#release-notes-migration-tools}
       + [Notas de versão atuais (2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + [Notas de versão 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
+      + [Notas da versão 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
-         + [Notas de versão 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
-         + [Notas da versão 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
-         + [Notas da versão 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
+         + [Notas de versão para 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
+         + [Notas da versão para 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
+         + [Notas da versão para 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Introdução ao Cloud Acceleration Manager {#introduction-cam}
          + [Visão geral](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
@@ -148,7 +148,7 @@ ht-degree: 96%
       + [Ferramentas de Modernização do AEM](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
    + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
-   + [Alterações importantes para o AEM Sites no AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+   + [Alterações importantes do AEM Sites no AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
    + Criação {#authoring}
       + Introdução {#getting-started}
          + [Guia de início rápido para a criação de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md)
@@ -158,7 +158,7 @@ ht-degree: 96%
          + [Configurar o ambiente da sua conta](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [Sua caixa de entrada](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [Atalhos de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + [Jornada do autor de conteúdo headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+      + [Jornada do autor de conteúdo headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=pt-BR)
       + Princípios básicos de criação {#fundamentals}
          + [Ambiente e ferramentas](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [Adição de anotações de página](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -191,14 +191,14 @@ ht-degree: 96%
          + [Gerenciamento de projetos](/help/sites-cloud/authoring/projects/managing.md)
          + [Trabalhar com tarefas](/help/sites-cloud/authoring/projects/tasks.md)
          + [Trabalhar com fluxos de trabalho de projeto](/help/sites-cloud/authoring/projects/workflows.md)
-      + Lançamentos {#launches}
-         + [Trabalho com lançamentos](/help/sites-cloud/authoring/launches/overview.md)
-         + [Criação de lançamentos](/help/sites-cloud/authoring/launches/creating.md)
+      + Inicializações {#launches}
+         + [Trabalho com inicializações](/help/sites-cloud/authoring/launches/overview.md)
+         + [Criação de inicializações](/help/sites-cloud/authoring/launches/creating.md)
          + [Gerenciamento de páginas em inicializações](/help/sites-cloud/authoring/launches/managing-pages.md)
-         + [Edição de lançamentos](/help/sites-cloud/authoring/launches/editing.md)
+         + [Edição de inicializações](/help/sites-cloud/authoring/launches/editing.md)
          + [Visualização de inicializações com o Timewarp](/help/sites-cloud/authoring/launches/preview.md)
-         + [Promoção de lançamentos](/help/sites-cloud/authoring/launches/promoting.md)
-      + Fluxos de trabalhos {#workflows}
+         + [Promoção de inicializações](/help/sites-cloud/authoring/launches/promoting.md)
+      + Fluxos de trabalho {#workflows}
          + [Trabalhar com fluxos de trabalho](/help/sites-cloud/authoring/workflows/overview.md)
          + [Aplicação de fluxos de trabalho a páginas](/help/sites-cloud/authoring/workflows/applying.md)
          + [Participar de fluxos de trabalho](/help/sites-cloud/authoring/workflows/participating.md)
@@ -230,7 +230,7 @@ ht-degree: 96%
             + [Recuperar informações de acesso do repositório Git](/help/journey-sites/quick-site/retrieve-access.md)
             + [Personalizar o tema do site](/help/journey-sites/quick-site/customize-theme.md)
             + [Implantar o tema personalizado](/help/journey-sites/quick-site/deploy-theme.md)
-      + [Administração de workflows](/help/sites-cloud/administering/workflows-administering.md)
+      + [Administração de fluxos de trabalho](/help/sites-cloud/administering/workflows-administering.md)
       + Reutilizar conteúdo {#reusing-content}
          + [MSM e tradução](/help/sites-cloud/administering/msm-and-translation.md)
          + Gerenciamento de vários sites {#msm}
@@ -250,7 +250,7 @@ ht-degree: 96%
                + [Configurar regras de tradução](/help/journey-sites/translation/translation-rules.md)
                + [Traduzir conteúdo](/help/journey-sites/translation/translate-content.md)
                + [Publicar conteúdo traduzido](/help/journey-sites/translation/publish-content.md)
-            + [Jornada de tradução headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
+            + [Jornada de tradução headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=pt-BR)
             + [Tradução de conteúdo para sites multilíngues](/help/sites-cloud/administering/translation/overview.md)
             + [Preparação de conteúdo para tradução](/help/sites-cloud/administering/translation/preparation.md)
             + [Gerenciamento de projetos de tradução](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -265,13 +265,13 @@ ht-degree: 96%
       + [Integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Exportar fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
-   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
+   + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
    + [Visão geral e novidades](/help/assets/overview.md)
-   + [Alterações importantes no [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
+   + [Alterações importantes no  [!DNL Assets]  as a  [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
    + [Arquitetura do [!DNL Assets]](/help/assets/architecture.md)
-   + [Formatos de arquivo não suportados](/help/assets/file-format-support.md)
+   + [Formatos de arquivo compatíveis](/help/assets/file-format-support.md)
    + [Visão geral dos microsserviços de ativos](/help/assets/asset-microservices-overview.md)
-   + [Acessibilidade em [!DNL Assets]](/help/assets/accessibility.md)
+   + [Acessibilidade no  [!DNL Assets]](/help/assets/accessibility.md)
    + Gerenciar ativos digitais {#manage}
       + [Compartilhar ativos](/help/assets/share-assets.md)
       + [Monitorar atividades e tarefas do DAM](/help/assets/assets-activity-history.md)
@@ -284,10 +284,10 @@ ht-degree: 96%
       + [Tags inteligentes para imagens](/help/assets/smart-tags.md)
       + [Insira tags inteligentes em seus ativos de vídeo](/help/assets/smart-tags-video-assets.md)
       + [Como organizar ativos](/help/assets/organize-assets.md)
-      + [Use ativos do  [!DNL Adobe Stock] ](/help/assets/aem-assets-adobe-stock.md)
+      + [Usar ativos do  [!DNL Adobe Stock] ](/help/assets/aem-assets-adobe-stock.md)
       + [Gerenciar coleções](/help/assets/manage-collections.md)
       + [Visão geral dos metadados](/help/assets/manage-metadata.md)
-      + [Integrar com a [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integrar com a  [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
       + [Como adicionar ou editar metadados](/help/assets/meta-edit.md)
       + [Revisar ativos e coleções de pastas](/help/assets/bulk-approval.md)
       + [Usar e configurar o Assets Insights](/help/assets/assets-insights.md)
@@ -300,7 +300,7 @@ ht-degree: 96%
       + [Criar e compartilhar pastas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para ativos](/help/assets/drm.md)
       + [Inserir marca d&#39;água em ativos](/help/assets/watermark-assets.md)
-      + [Processar ativos usando APIs da [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
+      + [Processar ativos usando APIs da  [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
    + Configurar, administrar e estender [!DNL Assets] {#admin}
       + [Documentos do desenvolvedor e referências de APIs](/help/assets/developer-reference-material-apis.md)
       + [Esquema de metadados de pastas](/help/assets/folder-metadata-schema.md)
@@ -310,19 +310,19 @@ ht-degree: 96%
       + [API HTTP de ativos](/help/assets/mac-api-assets.md)
       + [Suporte a Fragmentos de conteúdo na API HTTP do Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
       + [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
-      + [Gerar para representações somente de posicionamento](/help/assets/configure-fpo-renditions.md)
+      + [Gerar representações somente para posicionamento](/help/assets/configure-fpo-renditions.md)
       + [Relatórios de ativos](/help/assets/asset-reports.md)
       + [Metadados em cascata](/help/assets/cascading-metadata.md)
       + [Metadados XMP](/help/assets/xmp-metadata.md)
       + [Recursos MediaLibrary](/help/assets/medialibrary.md)
       + [Importar e exportar metadados de ativos](/help/assets/metadata-import-export.md)
    + Compartilhar e distribuir ativos {#brand-portal}
-      + [Configurar o [!DNL Assets] com o [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
-      + [Publicar ativos no [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [Publicar ativos do [!DNL Brand Portal] no [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR)
+      + [Configurar o  [!DNL Assets]  com o  [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [Publicar ativos no  [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
+      + [Publicar ativos do  [!DNL Brand Portal]  no  [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR)
    + Fragmentos de conteúdo {#content-fragments}
       + [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
-      + [Headless delivery com fragmentos de conteúdo e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
+      + [Entrega headless com fragmentos de conteúdo e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
       + [Ativar a funcionalidade de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
       + [Gerenciamento dos fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md)
@@ -397,7 +397,7 @@ ht-degree: 96%
    + Gerenciar grupos de usuários, formulários e ativos relacionados {#manage-forms-and-related-assets}
       + [Grupos e permissões](/help/forms/forms-groups-privileges-tasks.md)
       + [Importar, exportar e organizar formulários adaptáveis, formulários PDF e outros ativos](/help/forms/import-export-forms-templates.md)
-   + Converter PDF forms em Formulários adaptáveis {#afcs}
+   + Converter formulários PDF em formulários adaptáveis {#afcs}
       + [Introdução ao serviço de conversão automática de formulários](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=pt-BR)
       + [Converter um Formulário PDF existente em um Formulário adaptável](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=pt-BR)
       + [Revisar e corrigir formulários convertidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=pt-BR#welcome-to-review-and-correct-editor)
@@ -408,7 +408,7 @@ ht-degree: 96%
          + [Conectar suas fontes de dados ao Cloud Service](/help/forms/data-integration.md)
       + Criar um formulário adaptável {#create-an-adaptive-form-on-forms-cs}
          + [Criar um formulário adaptável](/help/forms/creating-adaptive-form.md)
-         + [Design do esquema JSON para um formulário adaptável](/help/forms/adaptive-form-json-schema-form-model.md)
+         + [Criar um esquema JSON para um formulário adaptável](/help/forms/adaptive-form-json-schema-form-model.md)
          + [Criar um esquema XML para um formulário adaptável](/help/forms/adaptive-form-xml-schema-form-model.md)
          + [Usar o Forms Designer](/help/forms/use-forms-designer.md)
          + [Melhorar o desempenho de formulários grandes com carregamento lento](/help/forms/lazy-loading-adaptive-forms.md)
@@ -422,8 +422,8 @@ ht-degree: 96%
          + [Aplicar estilos CSS em linha a componentes individuais do Formulário adaptável](/help/forms/inline-style-adaptive-forms.md)
       + Adicionar regras e usar expressões em um Formulário adaptável {#add-rules-and-use-expressions-in-an-adaptive-form}
          + [Adicionar regras a um Formulário adaptável](/help/forms/rule-editor.md)
-      + Uso [!DNL Adobe Sign] {#use-adobe-sign}
-         + [Usar o Adobe Sign para assinar eletronicamente um Formulário adaptável](/help/forms/working-with-adobe-sign.md)
+      + Uso do [!DNL Adobe Sign] {#use-adobe-sign}
+         + [Usar o Adobe Acrobat Sign para assinar eletronicamente um Formulário adaptável](/help/forms/working-with-adobe-sign.md)
       + Configurar o envio de ações e metadados {#configure-submit-actions-and-metadata-submission}
          + [Definir a Ação de envio para um Formulário adaptável](/help/forms/configuring-submit-actions.md)
          + [Configurar página de redirecionamento](/help/forms/configuring-redirect-page.md)
@@ -438,13 +438,13 @@ ht-degree: 96%
       + [Configurar o Forms Portal](/help/forms/configure-forms-portal.md)
    + Integrar um formulário a uma ou mais fontes de dados {#use-form-data-model}
       + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
-      + [Configurar [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [Configurar [!DNL Azure] armazenamento](/help/forms/configure-azure-storage.md)
-      + [Configurar os serviços em nuvem [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
+      + [Configurar OData do  [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
+      + [Configurar armazenamento do  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+      + [Configurar os serviços em nuvem do  [!DNL Microsoft Dynamics 365]  e do  [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
       + [Criar modelo de dados do formulário](/help/forms/create-form-data-models.md)
       + [Trabalhar com o modelo de dados de formulário](/help/forms/work-with-form-data-model.md)
       + [Utilizar modelo de dados do formulário](/help/forms/using-form-data-model.md)
-   + [Integrar ao Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+   + [Integrar ao Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [Integrar ao DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
    + [Integração com o Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Integrar ao Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
@@ -458,7 +458,7 @@ ht-degree: 96%
       + [APIs de comunicação - Processamento em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Uso de fontes personalizadas em documentos PDF](/help/forms/use-custom-fonts.md)
       + [Problemas conhecidos, práticas recomendadas e perguntas frequentes](/help/forms/communications-known-issues-limitations.md)
-   + [Migrar para o [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+   + [Migrar para o  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [Perguntas frequentes](/help/forms/faq.md)
    + [Problemas conhecidos](/help/forms/known-issues.md)
    + Solução de problemas {#troubleshooting-aem-forms-cloud-service}
@@ -477,7 +477,7 @@ ht-degree: 96%
       + [Criação de uma ramificação](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)
       + [Criação de um ambiente](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)
       + [Execução do pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)
-   + Configuração do projeto Screens as a Cloud Service {#configure-screens-cloud}
+   + Configuração do projeto do Screens as a Cloud Service {#configure-screens-cloud}
       + [Navegar até o provedor de serviços do Screens](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
       + [Utilização do provedor de conteúdo do Screens](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Criação das representações de vídeo do Screens](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
@@ -531,11 +531,11 @@ ht-degree: 96%
          + [Alterar estilo de componentes da CIF](/help/commerce-cloud/customizing/style-cif-component.md)
          + [Personalizar componentes da CIF](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [Usar seletores de catálogo da CIF](/help/commerce-cloud/customizing/use-cif-pickers.md)
-   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
+   + [PWA Studio do Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migração](/help/commerce-cloud/migration.md)
    + [Perguntas frequentes](/help/commerce-cloud/faq.md)
-+ Cabeça {#headless}
-   + [Introdução ao AEM headless](/help/headless/introduction.md)
++ Headless {#headless}
+   + [Introdução ao AEM Headless](/help/headless/introduction.md)
    + Configurar {#setup}
       + [Introdução](/help/headless/setup/introduction.md)
       + [Configuração](/help/headless/setup/create-configuration.md)
@@ -545,22 +545,22 @@ ht-degree: 96%
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
       + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=pt-BR)
-      + [Modelos de fragmentos do conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=pt-BR)
-      + [Gerenciamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=pt-BR)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=pt-BR)
+      + [Gerenciar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=pt-BR)
       + Criação{#authoring}
          + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=pt-BR)
          + [Editor de texto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=pt-BR)
          + [Conteúdo associado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=pt-BR)
-         + [Variações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
-      + [Metadados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+         + [Variações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=pt-BR#managing-variations)
+      + [Metadados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=pt-BR)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=pt-BR)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
    + API GraphQL {#graphql-api}
       + [API GraphQL para fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
       + [Gerenciar pontos de extremidade do GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
-      + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
-      + [Exemplos de consultas GraphQL](/help/headless/graphql-api/sample-queries.md)
-      + [Consultas GraphQL persistentes](/help/headless/graphql-api/persisted-queries.md)
+      + [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
+      + [Exemplo de consultas GraphQL](/help/headless/graphql-api/sample-queries.md)
+      + [Consultas persistentes de GraphQL ](/help/headless/graphql-api/persisted-queries.md)
    + [API REST de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=pt-BR)
    + Segurança {#security}
       + [Permissões](/help/headless/security/permissions.md)
@@ -569,7 +569,7 @@ ht-degree: 96%
       + [Arquitetura](/help/headless/deployment/architecture.md)
       + [Dispatcher](/help/headless/deployment/dispatcher.md)
       + [Configuração do CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
-      + [Filtro referenciador](/help/headless/deployment/referrer-filter.md)
+      + [Filtro de referenciador](/help/headless/deployment/referrer-filter.md)
    + Jornadas headless {#journeys}
       + Jornada de desenvolvedores headless {#developer}
          + [Compreender o headless no AEM](/help/journey-headless/developer/overview.md)
@@ -607,31 +607,31 @@ ht-degree: 96%
       + Notas de versão do Cloud Manager {#release-notes-cloud-manager}
          + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
          + 2022 {#2022}
-            + [Notas de versão 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+            + [Notas da versão 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021 {#2021}
-            + [Notas da versão 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
-            + [Notas da versão 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
-            + [Notas da versão 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
-            + [Notas da versão 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
-            + [Notas da versão 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
-            + [Notas da versão 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
-            + [Notas da versão 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
-            + [Notas da versão 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
-            + [Notas da versão 2021.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
-            + [Notas da versão 2021.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
-            + [Notas da versão 2021.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+            + [Notas da versão para 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
+            + [Notas da versão para 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
+            + [Notas da versão para 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
+            + [Notas da versão para 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
+            + [Notas da versão para 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
+            + [Notas da versão para 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
+            + [Notas da versão para 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
+            + [Notas da versão para 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
+            + [Notas da versão para 2021.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
+            + [Notas da versão para 2021.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
+            + [Notas da versão para 2021.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
          + 2020 {#2020}
-            + [Notas da versão 2020.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
-            + [Notas da versão 2020.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
-            + [Notas da versão 2020.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
-            + [Notas da versão 2020.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
-            + [Notas da versão 2020.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
-            + [Notas da versão 2020.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
-            + [Notas da versão 2020.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
-            + [Notas da versão 2020.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
-            + [Notas da versão 2020.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
-            + [Notas da versão 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
-            + [Notas da versão 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+            + [Notas da versão para 2020.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
+            + [Notas da versão para 2020.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
+            + [Notas da versão para 2020.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+            + [Notas da versão para 2020.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+            + [Notas da versão para 2020.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+            + [Notas da versão para 2020.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+            + [Notas da versão para 2020.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+            + [Notas da versão para 2020.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+            + [Notas da versão para 2020.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+            + [Notas da versão para 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
+            + [Notas da versão para 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
       + Programas {#programs}
          + [Programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
@@ -640,7 +640,7 @@ ht-degree: 96%
          + [Criação de programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Editar programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Ambientes de hibernação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + Criação de um projeto de aplicativo AEM {#create-application-project}
+      + Criação de um projeto de aplicativo do AEM {#create-application-project}
          + [Assistente de criação de projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Ambiente de build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
@@ -657,7 +657,7 @@ ht-degree: 96%
          + [Introdução](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configuração de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configurar um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [Gerenciamento de pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+         + [Gerenciar pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [Implantação do código](/help/implementing/cloud-manager/deploy-code.md)
       + Noções básicas dos resultados de teste {#test-results}
          + [Visão geral](/help/implementing/cloud-manager/overview-test-results.md)
@@ -674,7 +674,7 @@ ht-degree: 96%
          + [Introdução](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Obter um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
          + [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [Exibição, atualização e substituição de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+         + [Visualização, atualização e substituição de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
          + [Verificação de status de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
          + [Excluir um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
       + Gerenciar nomes de domínio personalizados {#custom-domain-names}
@@ -704,7 +704,7 @@ ht-degree: 96%
       + [Diretrizes de desenvolvimento do AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
       + [Logs](/help/implementing/developing/introduction/logging.md)
       + [Configurações e o navegador de configuração](/help/implementing/developing/introduction/configurations.md)
-      + [Fundamentos técnicos AEM](/help/implementing/developing/introduction/aem-technologies.md)
+      + [Fundamentos técnicos do AEM](/help/implementing/developing/introduction/aem-technologies.md)
       + [Materiais de referência de API](/help/implementing/developing/reference-materials.md)
       + [Geração de tokens de acesso para APIs do lado do servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
       + [Criação rápida de sites e personalização de front-end](/help/implementing/developing/introduction/quick-site-creation.md)
@@ -734,23 +734,23 @@ ht-degree: 96%
             + [Uso de condições de ocultação](/help/implementing/developing/components/hide-conditions.md)
             + [Guia de referência de componentes](/help/implementing/developing/components/reference.md)
          + [Estrutura de marcação do AEM](/help/implementing/developing/introduction/tagging-framework.md)
-         + [Criação de tags em aplicativos AEM](/help/implementing/developing/introduction/tagging-applications.md)
+         + [Criação de tags em aplicativos do AEM](/help/implementing/developing/introduction/tagging-applications.md)
          + Pesquisar {#search}
             + [API do Construtor de consulta](/help/implementing/developing/introduction/query-builder-api.md)
             + [Referência de predicado do construtor de consultas](/help/implementing/developing/introduction/query-builder-predicates.md)
             + [Implementação de um avaliador de predicado personalizado](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [Páginas de erro personalizadas](/help/implementing/developing/introduction/custom-error-page.md)
          + [Tipos de nós do AEM](/help/implementing/developing/introduction/node-types.md)
-      + [Gerenciamento de experiência headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
+      + [Gerenciamento de experiência headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=pt-BR)
       + Desenvolvimento híbrido e SPA {#hybrid}
-         + [Híbrido e SPA com AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [Ativação da exportação JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=pt-BR)
+         + [Híbrido e SPA com o AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [Ativação da exportação em JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=pt-BR)
          + [Introdução e passo a passo do SPA](/help/implementing/developing/hybrid/introduction.md)
          + [Tutorial WKND do SPA](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Introdução à utilização do React](/help/implementing/developing/hybrid/getting-started-react.md)
          + [Introdução à utilização do Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
          + [Aprofundamentos de SPA](/help/implementing/developing/hybrid/deep-dives.md)
-         + [Desenvolvimento de SPAs para AEM](/help/implementing/developing/hybrid/developing.md)
+         + [Desenvolvimento de SPAs para o AEM](/help/implementing/developing/hybrid/developing.md)
          + [Visão geral do editor de SPA](/help/implementing/developing/hybrid/editor-overview.md)
          + [Blueprint do SPA](/help/implementing/developing/hybrid/blueprint.md)
          + [Componente de página SPA](/help/implementing/developing/hybrid/page-component.md)
@@ -760,7 +760,7 @@ ht-degree: 96%
          + [Edição de um SPA externo no AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [Composite Components em SPAs](/help/implementing/developing/hybrid/composite-components.md)
          + [Renderização do lado do servidor](/help/implementing/developing/hybrid/ssr.md)
-         + [Ativação de exportação JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [Ativação de exportação em JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [Integração do Launch](/help/implementing/developing/hybrid/launch-integration.md)
          + [Documentos de referência SPA](/help/implementing/developing/hybrid/reference-materials.md)
    + Ferramentas do desenvolvedor {#developer-tools}
@@ -785,7 +785,7 @@ ht-degree: 96%
       + Extensão do AEM com o App Builder{#app-builder}
          + [Extensão do AEM usando o Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Introdução ao App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
-         + [Console do desenvolvedor do Adobe](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
+         + [Console do desenvolvedor da Adobe](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
          + [SDKs e CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
          + [Criar um aplicativo](/help/implementing/developing/extending/app-builder/videos/create.md)
          + [Ações](/help/implementing/developing/extending/app-builder/videos/actions.md)

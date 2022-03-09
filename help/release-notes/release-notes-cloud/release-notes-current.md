@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: 08ed7f06b60ab65a0060c4fa00f902006f3afbdd
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -30,11 +30,11 @@ A seguinte versão (2022.2.0) é em 10 de março de 2022.
 
 ## Vídeo da versão {#release-video}
 
-Assista ao vídeo [Visão geral da versão de janeiro de 2022](https://video.tv.adobe.com/v/340120) para ver um resumo dos recursos adicionados na versão 2022.1.0.
+Assista ao vídeo [Visão geral da versão de janeiro de 2022](https://video.tv.adobe.com/v/340120) que exibe um resumo dos recursos adicionados na versão 2022.1.0.
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
-* O **[Ativar pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** está disponível no **Site** do console Sites para sites que usam a v2 do Componente principal de página. Esse botão configura o site para carregar os temas implantados com o pipeline de front-end sobre as bibliotecas de clientes existentes.
+* O botão **[Ativar pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** está disponível no painel **Site** do console Sites, para sites que usam a versão v2 do Componente principal de página. Esse botão configura o site para carregar os temas implantados com o pipeline de front-end por cima das bibliotecas de clientes existentes.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -54,9 +54,9 @@ Assista ao vídeo [Visão geral da versão de janeiro de 2022](https://video.tv.
 
    * Configurar a detecção de ativos duplicados em um repositório.
 
-   * Configure a adição de marcas d&#39;água digitais a imagens.
+   * Configurar a adição de marcas d&#39;água digitais a imagens.
 
-* Os administradores agora podem configurar o serviço de email para downloads grandes. Permite que os usuários [ativem notificações por email para downloads grandes](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) na interface do [!DNL Experience Manager Assets]. O usuário recebe uma notificação por email contendo o link de download do arquivo ZIP após concluir o processo de download.
+* Os administradores agora podem configurar o serviço de email para downloads grandes. Ele permite que os usuários [ativem notificações por email para downloads grandes](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) na interface do [!DNL Experience Manager Assets]. O usuário recebe uma notificação por email contendo o link de download do arquivo ZIP após concluir o processo de download.
 
 
 * O recurso [Gerenciar publicação](/help/assets/manage-publication.md) está aprimorado, com uma interface de usuário melhorada. Os usuários podem publicar ou desfazer a publicação de conteúdo de e para o destino selecionado, [adicionar conteúdo](/help/assets/manage-publication.md#add-content) à lista de publicação em todo o repositório DAM, [incluir configurações de pasta](/help/assets/manage-publication.md#include-folder-settings) para publicar o conteúdo das pastas selecionadas e aplicar filtros, e [agendar publicações](/help/assets/manage-publication.md#publish-assets-later) para uma data ou hora posterior.
