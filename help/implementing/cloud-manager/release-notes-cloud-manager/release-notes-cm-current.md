@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager 2022.3.0 no Adobe Experience Manager as
 description: Estas são as notas de versão do Cloud Manager 2022.3.0 em AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 0749099acf98b09d0f83bfe86c2cc4558261c029
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 2%
+source-wordcount: '195'
+ht-degree: 3%
 
 ---
 
@@ -25,12 +25,11 @@ A data de lançamento do Cloud Manager versão 2022.3.0 em AEM as a Cloud Servic
 
 ## Novidades {#what-is-new}
 
-* Um usuário com a **Desenvolvedor** agora pode acessar o log de ambiente AEM.
-* [O `reliability_rating` métrica crítica](/help/implementing/cloud-manager/code-quality-testing.md) foi desativado.
-* Agora, um usuário pode classificar as colunas na variável **Pipelines** no Cloud Manager.
+* O acesso ao log de Ambiente de AEM pode ser feito usando a função Desenvolvedor .
 
 ## Correções de erros {#bug-fixes}
 
-* Um subconjunto de repositórios git criados manualmente tinha valores de nome incorretos que afetavam [o recurso de reuso do artefato de compilação.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) Os nomes desses repositórios foram alterados e os usuários verão o nome corrigido na API/interface do usuário do Cloud Manager.
-* [Ao adicionar ou editar um pipeline de qualidade de código,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) o **Comportamento de falhas importantes da métrica** não são mais exibidas.
-* Configurações inesperadas de variável de pipeline não causam mais erros na etapa de build.
+* Um subconjunto de repositórios git criados manualmente tinha um valor de nome incorreto que impedia a efetivação do recurso de reuso de artefato de compilação. Os nomes desses repositórios foram alterados e os usuários verão o nome corrigido na API/interface do usuário do Cloud Manager.
+* Os artefatos de construção provenientes de gasodutos que não são de produção foram reutilizados de forma imprópria em gasodutos de produção em pilha completa.
+* Ao adicionar ou editar um pipeline de qualidade de código, as opções para lidar com falhas de métrica não são mais exibidas.
+* Algumas configurações inesperadas de variável de pipeline podem causar na etapa de build.
