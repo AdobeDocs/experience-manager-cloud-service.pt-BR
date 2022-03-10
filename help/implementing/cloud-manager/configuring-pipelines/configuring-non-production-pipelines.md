@@ -2,13 +2,13 @@
 title: Configuração de pipeline de não produção
 description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 index: true
-source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
+exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
+source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 1%
+source-wordcount: '1058'
+ht-degree: 0%
 
 ---
-
 
 # Configuração de pipeline de não produção {#configuring-non-production-pipelines}
 
@@ -47,12 +47,6 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
 
       * **Manual** - Use essa opção para iniciar manualmente o pipeline.
       * **Nas alterações no Git** - Essas opções iniciam o pipeline de CI/CD sempre que os commits são adicionados à ramificação git configurada. Com essa opção, ainda é possível iniciar o pipeline manualmente, conforme necessário.
-   * **Comportamento de falhas importantes da métrica** - Durante a configuração ou edição do pipeline, a variável **Gerenciador de implantação** tem a opção de definir o comportamento do pipeline quando uma falha importante é encontrada em qualquer uma das portas de qualidade. Você tem as seguintes opções.
-
-      * **Perguntar sempre** - Esta é a configuração padrão e requer intervenção manual em qualquer falha importante.
-      * **Falhar imediatamente** - Se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que rejeita manualmente cada falha.
-      * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Isso é basicamente emular um usuário que aprova manualmente cada falha.
-
 
 1. Clique em **Continuar**.
 
