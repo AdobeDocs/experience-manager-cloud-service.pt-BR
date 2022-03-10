@@ -1,17 +1,17 @@
 ---
 title: Criar pop-ups personalizados usando o Quickview
-description: '"Saiba mais sobre como o Quickview padrão é usado em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado na janela pop-up do Windows®."'
+description: '"Saiba mais sobre como o Quickview padrão é usado em experiências de comércio eletrônico, em que uma janela pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado na janela pop-up."'
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 1%
+source-wordcount: '1002'
+ht-degree: 2%
 
 ---
 
-# Criar janelas pop-up personalizadas usando o Quickview {#using-quickviews-to-create-custom-pop-ups}
+# Criar pop-ups personalizados usando o Quickview {#using-quickviews-to-create-custom-pop-ups}
 
 O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. No entanto, você pode acionar a exibição de conteúdo personalizado nas janelas pop-ups. Dependendo do visualizador usado, os clientes podem selecionar um ponto de acesso, uma imagem em miniatura ou um mapa de imagem para ver informações ou conteúdo relacionado.
 
@@ -23,7 +23,7 @@ O Quickview é compatível com os seguintes visualizadores no Dynamic Media:
 
 Embora a funcionalidade de cada visualizador seja diferente, o processo de criação de uma exibição rápida é o mesmo em todos os três visualizadores compatíveis.
 
-**Para criar janelas pop-up personalizadas usando o Quickview:**
+**Para criar pop-ups personalizados usando o Quickview:**
 
 1. Crie uma Exibição rápida para um ativo carregado.
 
