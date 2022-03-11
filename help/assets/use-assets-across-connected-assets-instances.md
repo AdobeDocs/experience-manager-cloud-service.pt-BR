@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 9f90c343aad8a8eaa8624d388e31ad21ef5c02f6
+source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
 workflow-type: tm+mt
 source-wordcount: '3770'
 ht-degree: 16%
@@ -249,45 +249,65 @@ Experience Manager exibe um `expired` indicador visual de status em ativos no Lo
 
 ## Perguntas frequentes  {#frequently-asked-questions}
 
-### Você deve configurar o Connected Assets se precisar usar os ativos disponíveis no [!DNL Sites] implantação?
++++**Você deve configurar o Connected Assets se precisar usar os ativos disponíveis no [!DNL Sites] implantação?**
 
 Nesse caso, não há necessidade de configurar o Connected Assets. Você pode usar os ativos disponíveis na [!DNL Sites] implantação.
 
-### Quando é necessário configurar o recurso Ativos conectados?
++++
+
++++**Quando é necessário configurar o recurso Ativos conectados?**
 
 Configure o recurso Connected Assets somente quando for necessário usar os ativos disponíveis em uma implantação remota do DAM em um [!DNL Sites] implantação.
 
-### Quantos [!DNL Sites] as implantações podem ser conectadas a uma implantação remota do DAM após a configuração do Connected Assets?
++++
+
++++**Quantos [!DNL Sites] as implantações podem ser conectadas a uma implantação remota do DAM após a configuração do Connected Assets?**
 
 Você pode conectar um máximo de quatro [!DNL Sites] implantações em uma implantação remota do DAM após a configuração do Connected Assets. Para obter mais informações, consulte [Arquitetura do Connected Assets](#connected-assets-architecture).
 
-### Quantas implantações remotas do DAM você pode se conectar a um [!DNL Sites] implantação após configurar o Connected Assets?
++++
+
++++**Quantas implantações remotas do DAM você pode se conectar a um [!DNL Sites] implantação após configurar o Connected Assets?**
 
 Você pode conectar uma implantação remota do DAM a um [!DNL Sites] implantação após configurar o Connected Assets. Para obter mais informações, consulte [Arquitetura do Connected Assets](#connected-assets-architecture).
 
-### Você pode usar os ativos da Dynamic Media da sua [!DNL Sites] implantação após configurar o Connected Assets?
++++
+
++++**Você pode usar os ativos da Dynamic Media da sua [!DNL Sites] implantação após configurar o Connected Assets?**
 
 Após configurar o Connected Assets, [!DNL Dynamic Media] ativos estão disponíveis em [!DNL Sites] implantação em um modo somente leitura. Como resultado, não é possível usar [!DNL Dynamic Media] para processar ativos na [!DNL Sites] implantação. Para obter mais informações, consulte [Configurar uma conexão entre implantações do Sites e do Dynamic Media](#dynamic-media-assets).
 
-### Você pode usar ativos de tipos de formato Imagem e Documento da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets?
++++
+
++++**Você pode usar ativos de tipos de formato Imagem e Documento da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets?**
 
 Sim, você pode usar ativos dos tipos de formato Imagem e Documento da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets.
 
-### Você pode usar fragmentos de conteúdo e ativos de vídeo da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets?
++++
+
++++**Você pode usar fragmentos de conteúdo e ativos de vídeo da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets?**
 
 Não, não é possível usar fragmentos de conteúdo e ativos de vídeo da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets.
 
-### Você pode usar ativos do Dynamic Media a partir da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets?
++++
+
++++**Você pode usar ativos do Dynamic Media a partir da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets?**
 
 Sim, você pode configurar e usar ativos de imagem do Dynamic Media a partir da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets. Para obter mais informações, consulte [Configurar uma conexão entre implantações do Sites e do Dynamic Media](#dynamic-media-assets).
 
-### Após configurar o Connected Assets, é possível executar as operações de atualização, exclusão, renomeação e movimentação nos ativos ou pastas remotos do DAM?
++++
+
++++**Após configurar o Connected Assets, é possível executar as operações de atualização, exclusão, renomeação e movimentação nos ativos ou pastas remotos do DAM?**
 
 Sim, depois de configurar o Connected Assets, você pode executar as operações de atualização, exclusão, renomeação e movimentação nos ativos ou pastas remotos do DAM. As atualizações, com algum atraso, estão disponíveis automaticamente na implantação do Sites. Para obter mais informações, consulte [Gerenciar atualizações em ativos no DAM remoto](#handling-updates-to-remote-assets).
 
-### Após configurar o Connected Assets, você pode adicionar ou modificar ativos em seu [!DNL Sites] e disponibilizá-los na implantação remota do DAM?
++++
+
++++**Após configurar o Connected Assets, você pode adicionar ou modificar ativos em seu [!DNL Sites] e disponibilizá-los na implantação remota do DAM?**
 
 Você pode adicionar ativos à [!DNL Sites] no entanto, esses ativos não podem ser disponibilizados para a implantação remota do DAM.
+
++++
 
 
 ## Limitações e práticas recomendadas {#tip-and-limitations}
