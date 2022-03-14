@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless. Os fragmentos de conteúdo são armazenados nas pastas de ativos.
 
-##  O que é uma pasta de ativos? {#what-is-an-assets-folder}
+## O que é uma pasta de ativos? {#what-is-an-assets-folder}
 
 [Agora que você criou modelos de fragmento de conteúdo](create-content-model.md) que definem a estrutura desejada para os fragmentos de conteúdo futuros, você provavelmente está animado para criar alguns fragmentos.
 
