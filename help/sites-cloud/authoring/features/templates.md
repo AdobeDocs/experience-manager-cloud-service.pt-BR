@@ -91,11 +91,11 @@ Ao criar um novo modelo editável:
 >
 >Nunca insira qualquer informação que precise ser internacionalizada em um modelo. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, aproveite os recursos de [localização dos componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, aproveite os recursos de [localização dos componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR)
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
-Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. Esta é uma tarefa de administrador e está descrita no documento [Modelos de Página](/help/implementing/developing/components/templates.md#template-folders).—>
+Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos específicos de projetos. Esta é uma tarefa de administrador e está descrita no documento [Modelos de página](/help/implementing/developing/components/templates.md#template-folders).—>
 
 ### Criação de um novo modelo - Autor do modelo {#creating-a-new-template-template-author}
 
@@ -132,7 +132,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
 >
 >O Adobe não recomenda ter mais de 1000 modelos devido a possíveis impactos no desempenho.
 
-### Definir propriedades do modelo - Autor do modelo    {#defining-template-properties-template-author}
+### Definir propriedades do modelo - Autor do modelo   {#defining-template-properties-template-author}
 
 Um modelo pode ter as seguintes propriedades:
 
@@ -167,7 +167,7 @@ Para definir a miniatura do modelo:
    * Se não for satisfatório, clique ou toque em **Limpar** para fazer o upload de outra imagem ou para gerar a miniatura novamente.
 1. Quando estiver satisfeito com a miniatura, clique ou toque em **Salvar e fechar**.
 
-### Ativar e permitir um modelo - Autor do modelo    {#enabling-and-allowing-a-template-template-author}
+### Ativar e permitir um modelo - Autor do modelo   {#enabling-and-allowing-a-template-template-author}
 
 Para poder usar um modelo ao criar uma página é necessário:
 
@@ -209,7 +209,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
    >Se a lista **Modelos permitidos** de for deixada em branco, a árvore será crescente até que um valor/lista seja encontrado.
    >
    >
-   >Consulte [Disponibilidade do modelo](/help/implementing/developing/components/templates.md#template-availability) - os princípios para os modelos permitidos permanecem os mesmos.
+   >Consulte [Disponibilidade do modelo](/help/implementing/developing/components/templates.md#template-availability) - os princípios aplicáveis aos modelos permitidos permanecem os mesmos.
 
 1. Clique em **Salvar** para salvar as alterações nas propriedades da página.
 
@@ -226,7 +226,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 1. Selecione as **Políticas do conteúdo** para ser publicado em tandem.
 1. Selecione **Publicar** na barra de ferramentas para concluir a ação.
 
-## Editar modelos - Autores do modelo    {#editing-templates-template-authors}
+## Editar modelos - Autores do modelo   {#editing-templates-template-authors}
 
 Ao criar ou editar um modelo há vários aspectos que podem ser definidos. A edição modelos é semelhante à criação de página.
 
@@ -621,7 +621,7 @@ Usando a opção **Propriedades da página inicial**, é possível definir as [p
 
 1. Confirme suas definições em **Concluído**.
 
-## Práticas recomendadas    {#best-practices}
+## Práticas recomendadas   {#best-practices}
 
 Ao criar modelos você deve considerar:
 

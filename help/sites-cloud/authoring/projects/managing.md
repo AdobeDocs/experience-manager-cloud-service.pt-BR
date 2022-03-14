@@ -19,7 +19,7 @@ No console **Projetos**, você acessa e toma medidas nos seus projetos:
 
 Em Projetos, é possível criar um projeto, associar recursos ao projeto e também excluir um projeto ou vínculos de recursos. Você pode querer abrir um mosaico para exibir seu conteúdo, bem como adicionar itens a um mosaico. Este tópico descreve esses procedimentos.
 
-## Criação de um projeto   {#creating-a-project}
+## Criação de um projeto {#creating-a-project}
 
 Pronto para uso, o AEM permite escolher os seguintes modelos ao criar um projeto:
 
@@ -34,11 +34,11 @@ Pronto para uso, o AEM permite escolher os seguintes modelos ao criar um projeto
 O procedimento de criação de um projeto é o mesmo em todos os projetos. A diferença entre os tipos de projetos inclui [funções de usuário](/help/sites-cloud/authoring/projects/overview.md) e [fluxos de trabalho](/help/sites-cloud/authoring/projects/workflows.md) disponíveis.  Para criar um novo projeto:
 
 1. Em **Projetos**, toque/clique em **Criar** para abrir o assistente **Criar projeto**:
-1. Selecione um modelo e clique em **Next**.
+1. Selecione um modelo e clique em **Próximo**.
 
    ![Criação de um projeto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Defina o **Título** e **Descrição** e adicione uma imagem **Miniatura** se necessário. Você também adiciona ou exclui os usuários e os grupos aos quais pertencem. Além disso, clique em **Avançado** para adicionar um nome utilizado no URL.
+1. Defina as **Título** e **Descrição** e adicione uma **Miniatura** imagem, se necessário. Você também adiciona ou exclui os usuários e os grupos aos quais pertencem. Além disso, clique em **Avançado** para adicionar um nome utilizado no URL.
 
    ![Adicionar detalhes do projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -107,17 +107,17 @@ Para abrir um mosaico para ver ou modificar itens:
 
 ## Exibir as estatísticas do projeto {#viewing-project-statistics}
 
-É possível exibir estatísticas do projeto, no console **Projetos**.
+Você pode exibir as estatísticas do projeto na **Projetos** console.
 
 ### Exibir uma linha do tempo do projeto {#viewing-a-project-timeline}
 
-A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para exibir a linha do tempo do projeto, clique/toque em **Linha do tempo**, em seguida, insira o modo de seleção e selecione o projeto. Os ativos são exibidos no painel esquerdo. Clique/toque em **Linha do tempo** para retornar ao console **Projetos**.
+A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para exibir a linha do tempo do projeto, clique/toque em **Linha do tempo**, em seguida, entre no modo de seleção e selecione o projeto. Os ativos são exibidos no painel esquerdo. Clicar/tocar **Linha do tempo** para retornar ao **Projetos** console.
 
 ![Linha do tempo do projeto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Exibir projetos ativos/inativos {#viewing-active-inactive-projects}
 
-Para alternar entre os projetos ativos e inativos, no console **Projetos**, clique em **Alternar projetos ativos**. Se o ícone tiver uma marca de seleção ao lado, estará exibindo os projetos ativos.
+Para alternar entre os projetos ativos e inativos, no **Projetos** , clique em **Alternar projetos ativos**. Se o ícone tiver uma marca de seleção ao lado, estará exibindo os projetos ativos.
 
 ![Botão Alternar projetos ativos](/help/sites-cloud/authoring/assets/projects-active.png)
 
@@ -136,7 +136,7 @@ Para tornar um projeto inativo (ou ativo):
    >[!NOTE]
    Talvez seja necessário adicionar este mosaico se ele ainda não estiver no seu projeto. Consulte [Adicionar mosaico](#adding-items-to-a-tile).
 
-1. Toque/clique em **Editar**.
+1. Toque/clique **Editar**.
 1. Altere o seletor de **Ativo** para **Inativo** (ou vice-versa).
 
    ![Ativar um projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)

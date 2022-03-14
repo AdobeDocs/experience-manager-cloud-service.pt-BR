@@ -1,16 +1,16 @@
 ---
-title: Trabalhar com a Dynamic Media
+title: Trabalhar com o Dynamic Media
 description: Saiba como usar o Dynamic Media para fornecer ativos para consumo na Web, em dispositivos móveis e em sites sociais.
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
-# Trabalhar com a Dynamic Media {#working-with-dynamic-media}
+# Trabalhar com o Dynamic Media {#working-with-dynamic-media}
 
 O [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ajuda a fornecer ativos de marketing e merchandising visual por demanda, automaticamente dimensionados para o consumo na Web, em dispositivos móveis e sites sociais. Usando um conjunto de ativos de origem primária, a Dynamic Media gera e fornece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho.
 
@@ -62,7 +62,7 @@ Quando você clica em um ativo de imagem, a exibição do ativo é diferente com
 
 ### Representações dinâmicas {#dynamic-renditions}
 
-As representações dinâmicas, como predefinições de imagem e do visualizador (em **[!UICONTROL Dinâmico]**), estão disponíveis quando o Dynamic Media está ativado.
+Representações dinâmicas, como predefinições de imagem e do visualizador (em **[!UICONTROL Dinâmico]**) estão disponíveis quando o Dynamic Media está ativado.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
@@ -80,7 +80,7 @@ Os ativos habilitados para Dynamic Media incluem `pyramid.tiffs`.
 
 ### Alteração nas exibições de ativos {#asset-views-change}
 
-Com o Dynamic Media ativado, é possível ampliar e diminuir o zoom clicando nos botões `+` e `-`. Também é possível clicar/tocar para ampliar determinadas áreas. Reverter o traz para a versão original e você pode fazer a imagem em tela cheia clicando nas setas diagonais. O Dynamic Media ativado é exibido da seguinte maneira:
+Com o Dynamic Media ativado, é possível ampliar e diminuir o zoom clicando no botão `+` e `-` botões. Também é possível clicar/tocar para ampliar determinadas áreas. Reverter o traz para a versão original e você pode fazer a imagem em tela cheia clicando nas setas diagonais. O Dynamic Media ativado é exibido da seguinte maneira:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

@@ -1,17 +1,16 @@
 ---
 title: Folha de características do Sling
 description: Uma referência fácil do Sling
-translation-type: tm+mt
-source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
+exl-id: 6ca374f4-5dc4-4322-bc36-5010bc2c7768
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '30'
 ht-degree: 13%
 
 ---
 
-
 # Folha de características do Sling {#sling-cheatsheet}
 
-![Compreensão da resolução do script do Apache Sling.](assets/sling-cheatsheet-01.png)
+![Entendendo a resolução do script Apache Sling.](assets/sling-cheatsheet-01.png)
 
 ![Usando o SlingPostServlet - este é o manipulador padrão para suas solicitações de POST; pode fazer quase tudo.](assets/sling-cheatsheet-02.png)

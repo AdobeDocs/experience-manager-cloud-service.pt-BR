@@ -1,5 +1,5 @@
 ---
-title: Reutilizar propriedades de metadados de um formulário adaptável
+title: Reutilizar propriedades de metadados de um Formulário adaptável
 seo-title: Reuse metadata properties of an Adaptive Form
 description: É possível reutilizar um formulário adaptável existente para criar um novo Forms adaptável.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
@@ -7,11 +7,11 @@ exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Reutilizar propriedades de metadados de um formulário adaptável {#reusing-adaptive-forms}
+# Reutilizar propriedades de metadados de um Formulário adaptável {#reusing-adaptive-forms}
 
 Se você quiser usar algumas das propriedades de um formulário adaptável existente para gerar um novo formulário, basta usar a funcionalidade copiar e colar. Além disso, é possível colar o novo Formulário adaptável no caminho de pasta desejado. Todas as propriedades de metadados são replicadas e os XFA e os XSDs para o Forms adaptável baseado em XFA e XSD também são copiados.
 

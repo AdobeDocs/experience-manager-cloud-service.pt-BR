@@ -135,7 +135,7 @@ Agora você pode:
 * [Publicar ativos do Experience Manager Assets no Brand Portal](publish-to-brand-portal.md)
 * [Publicar pastas do Experience Manager Assets no Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publicar coleções do Experience Manager Assets no Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Publicar ativos do Brand Portal no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Origem de ativos no Brand Portal
+* [Publicar ativos do Brand Portal no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR) - Origem de ativos no Brand Portal
 * [Publicar predefinições, esquemas e aspectos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Publicar marcações no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 

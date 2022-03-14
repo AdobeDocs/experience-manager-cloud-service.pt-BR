@@ -1,23 +1,23 @@
 ---
-title: Aplicar predefinições da imagem do Dynamic Media
+title: Aplicar predefinições de imagem do Dynamic Media
 description: Saiba como aplicar predefinições de imagens no Dynamic Media.
-feature: Predefinições de imagem, Visualizadores, Representações
+feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 4%
+source-wordcount: '302'
+ht-degree: 7%
 
 ---
 
-# Aplicar predefinições da imagem do Dynamic Media {#applying-image-presets}
+# Aplicar predefinições de imagem do Dynamic Media {#applying-image-presets}
 
 As predefinições de imagens permitem que os ativos forneçam dinamicamente imagens de tamanhos diferentes, em formatos diferentes ou com outras propriedades de imagens que foram geradas dinamicamente. Você pode escolher uma predefinição ao exportar para reformatar imagens às especificações descritas pelo administrador.
 
-Além disso, você pode escolher uma predefinição de imagem responsiva (designada pelo botão **[!UICONTROL RESS]** após selecioná-la).
+Além disso, é possível escolher uma predefinição de imagem responsiva (designada pela variável **[!UICONTROL RESS]** depois de selecioná-lo).
 
-[Os administradores podem criar e configurar predefinições](managing-image-presets.md) de imagens.
+[Os administradores podem criar e configurar predefinições de imagens](managing-image-presets.md).
 
 >[!NOTE]
 >
@@ -31,10 +31,9 @@ Você pode aplicar uma predefinição de imagem a uma imagem sempre que visualiz
 
    >[!NOTE]
    >
-   >* As representações estáticas são exibidas na metade superior do painel. As representações dinâmicas aparecem na metade inferior. Com representações dinâmicas somente, você pode usar o URL para exibir a imagem. O botão **[!UICONTROL URL]** aparece somente se você selecionar uma representação dinâmica. O botão **[!UICONTROL RESS]** só aparece se você selecionar uma predefinição de imagem responsiva.
-      >
-      >
-   * O sistema mostra várias representações ao selecionar **[!UICONTROL Representações]** na exibição Detalhes de um ativo. Você pode aumentar o número de predefinições vistas. Consulte [Aumentar o número de predefinições de imagens exibidas](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+   >* As representações estáticas são exibidas na metade superior do painel. As representações dinâmicas aparecem na metade inferior. Com representações dinâmicas somente, você pode usar o URL para exibir a imagem. O **[!UICONTROL URL]** somente será exibido se você selecionar uma representação dinâmica. O **[!UICONTROL RESS]** só será exibido se você selecionar uma predefinição de imagem responsiva.
+   >
+   >* O sistema mostra várias representações ao selecionar **[!UICONTROL Representações]** na exibição Detalhes de um ativo. Você pode aumentar o número de predefinições vistas. Consulte [Aumento do número de predefinições de imagens exibidas](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
@@ -46,6 +45,6 @@ Você pode aplicar uma predefinição de imagem a uma imagem sempre que visualiz
 
    >[!NOTE]
    >
-   >Se o ativo *e* a predefinição de imagem ainda não tiver sido publicada, o botão **[!UICONTROL URL]** (ou botões URL e RESS, se aplicável) não estará disponível.
+   >Se o ativo *e* a predefinição de imagem ainda não foi publicada, a variável **[!UICONTROL URL]** (ou botões URL e RESS, se aplicável) não estiverem disponíveis.
    >
    >Observe também que as predefinições de imagens são publicadas automaticamente em um servidor Dynamic Media S7.

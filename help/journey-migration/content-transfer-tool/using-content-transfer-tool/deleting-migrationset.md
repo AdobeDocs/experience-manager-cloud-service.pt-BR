@@ -1,13 +1,13 @@
 ---
 title: Exclusão de um conjunto de migração na ferramenta Transferência de conteúdo
 description: Exclusão de um conjunto de migração na ferramenta Transferência de conteúdo
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 39%
 
 ---
-
 
 # Exclusão de um conjunto de migração {#delete-migration-set}
 

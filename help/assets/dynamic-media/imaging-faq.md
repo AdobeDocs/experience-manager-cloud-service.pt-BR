@@ -25,7 +25,7 @@ O Smart Imaging também se beneficia do aumento de desempenho adicional de ser t
 
 Os seguintes exemplos de ativos de imagem representam a otimização adicionada da imagem inteligente:
 
-| Imagem<br>(URL) | Miniatura  | Size<br> (JPEG) | Tamanho (WebP)<br> (com Smart Imaging) | % redução |
+| Imagem<br>(URL) | Miniatura  | Tamanho<br> (JPEG) | Tamanho (WebP)<br> (com Smart Imaging) | % redução |
 |---|---|---|---|---|
 | [Imagem 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
 | [Imagem 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
@@ -53,7 +53,7 @@ Ativar a configuração do DPR do Smart Imaging ajusta automaticamente a imagem 
 | Valores permitidos no URL de uma imagem | Descrição |
 |---|---|
 | `dpr=off` | Desative a otimização do DPR em um nível de URL de imagem individual. |
-| `dpr=on,dprValue` | Substitua o valor do DPR detectado pelo Smart Imaging, com um valor personalizado (como detectado por qualquer lógica do lado do cliente ou outros meios). O valor permitido para `dprValue` é qualquer número maior que 0. Valores especificados de 1,5, 2 ou 3 são típicos. |
+| `dpr=on,dprValue` | Substitua o valor do DPR detectado pelo Smart Imaging, com um valor personalizado (como detectado por qualquer lógica do lado do cliente ou outros meios). Valor permitido para `dprValue` é qualquer número maior que 0. Valores especificados de 1,5, 2 ou 3 são típicos. |
 
 >[!NOTE]
 >
@@ -90,11 +90,11 @@ Aprimoramentos na versão mais recente do Smart Imaging:
 
 * Melhoria na classificação de SEO do Google para páginas da Web que usam o Smart Imaging mais recente.
 * Atua conteúdo otimizado imediatamente (no tempo de execução).
-* Usa a tecnologia Adobe Sensei para converter de acordo com a qualidade (`qlt`) especificada na solicitação de imagem.
-* A Imagem inteligente pode ser desativada usando o parâmetro de URL `bfc`.
+* Usa a tecnologia Adobe Sensei para conversão de acordo com a qualidade (`qlt`) especificado na solicitação de imagem.
+* A imagem inteligente pode ser desativada com o uso da variável `bfc` Parâmetro de URL.
 * TTL (Tempo de vida útil) independente. Anteriormente, um TTL mínimo de 12 horas era obrigatório para que a Smart Imaging funcionasse.
 * Anteriormente, as imagens original e derivada eram armazenadas em cache e era um processo de duas etapas para invalidar o cache. No último Smart Imaging, somente os derivados são armazenados em cache, permitindo um processo de invalidação de cache de uma única etapa.
-* Os clientes que usam cabeçalhos personalizados em seus conjuntos de regras se beneficiam do Smart Imaging mais recente, pois esses cabeçalhos não estão bloqueados, ao contrário da versão anterior do Smart Imaging. Por exemplo, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; conforme sugerido em [Adicionar um valor de cabeçalho personalizado às respostas da imagem|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* Os clientes que usam cabeçalhos personalizados em seus conjuntos de regras se beneficiam do Smart Imaging mais recente, pois esses cabeçalhos não estão bloqueados, ao contrário da versão anterior do Smart Imaging. Por exemplo, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot;, conforme sugerido em [Adicionar um valor de cabeçalho personalizado às respostas da imagem|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## Há algum custo de licenciamento associado ao Smart Imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -112,7 +112,7 @@ Quando uma imagem é solicitada por um consumidor, o Smart Imaging verifica as c
     * Safari 14 only with iOS 14.0 and above and macOS BigSur and above -->
 
 * Converta automaticamente em WebP para os seguintes navegadores:
-   * Cromo
+   * Chrome
    * Firefox
    * Microsoft® Edge
    * O Safari (em iOS, macOS, iPadOS), forneceu suporte à versão de navegador e SO da WebP
@@ -145,7 +145,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## Como o Smart Imaging funciona com as predefinições de imagens existentes que já estão em uso? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-O Smart Imaging funciona com suas &quot;predefinições de imagem&quot; existentes. Ele observa todas as suas configurações de imagem, exceto qualidade (`qlt`) e formato (`fmt`), se o formato de arquivo solicitado for JPEG ou PNG. Para conversão de formato, o Smart Imaging mantém a fidelidade visual completa conforme definido pelas configurações predefinidas da imagem, mas em um tamanho de arquivo menor. Se o tamanho da imagem original for menor do que o produzido pela Imagem inteligente, a imagem original será veiculada.
+O Smart Imaging funciona com suas &quot;predefinições de imagem&quot; existentes. Ele observa todas as suas configurações de imagem, exceto por qualidade (`qlt`) e o formato (`fmt`) se o formato de arquivo solicitado for JPEG ou PNG. Para conversão de formato, o Smart Imaging mantém a fidelidade visual completa conforme definido pelas configurações predefinidas da imagem, mas em um tamanho de arquivo menor. Se o tamanho da imagem original for menor do que o produzido pela Imagem inteligente, a imagem original será veiculada.
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
@@ -155,7 +155,7 @@ O Smart Imaging funciona perfeitamente com seus URLs de imagem existentes e pred
 
 Caso você precise configurar um novo domínio personalizado para usar a Smart Imaging, os URLs devem ser atualizados para refletir esse domínio personalizado.
 
-Para entender os pré-requisitos para Smart Imaging, consulte [Posso usar Smart Imaging?](#am-i-eligible-to-use-smart-imaging)
+Para entender os pré-requisitos para Smart Imaging, consulte [Posso usar a Smart Imaging?](#am-i-eligible-to-use-smart-imaging)
 
 <!-- OLD No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
@@ -170,11 +170,11 @@ O Smart Imaging funciona com imagens entregues por HTTP ou HTTPS. Além disso, t
 Para usar a Smart Imaging, a Dynamic Media Classic ou Dynamic Media na Experience Manager deve atender aos seguintes requisitos:
 
 * Use a CDN (Content Delivery Network) fornecida pelo Adobe como parte de sua licença.
-* Use um domínio dedicado (por exemplo, `images.company.com` ou `mycompany.scene7.com`), não um domínio genérico (por exemplo, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
+* Usar um domínio dedicado (por exemplo, `images.company.com` ou `mycompany.scene7.com`), não um domínio genérico (por exemplo, `s7d1.scene7.com`, `s7d2.scene7.com`ou `s7d13.scene7.com`).
 
-Para encontrar seus domínios, abra o [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta ou contas da empresa.
+Para localizar seus domínios, abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta ou contas da empresa.
 
-Vá para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Definições Gerais]**. Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**. Se você usa um domínio genérico no momento, é possível solicitar a transferência para seu próprio domínio personalizado. Faça essa solicitação de transição ao enviar um tíquete de suporte técnico.
+Ir para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**. Procure o campo rotulado **[!UICONTROL Nome do servidor publicado]**. Se você usa um domínio genérico no momento, é possível solicitar a transferência para seu próprio domínio personalizado. Faça essa solicitação de transição ao enviar um tíquete de suporte técnico.
 
 Seu primeiro domínio personalizado não tem custo adicional com uma licença do Dynamic Media.
 
@@ -192,25 +192,25 @@ Por padrão, o DPR de Smart Imaging e a otimização de rede estão desativadas 
 | Europe, Middle East, Africa | 13 August 2021 | 
 | Asia-Pacific | 22 July 2021 | -->
 
-1. [Use o Admin Console para criar um caso](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) de suporte.
+1. [Use o Admin Console para criar um caso de suporte](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 1. Forneça as seguintes informações no caso de suporte:
 
    1. Nome do contato principal, email, telefone.
    1. Todos os domínios a serem ativados para Smart Imaging (ou seja, `images.company.com` ou `mycompany.scene7.com`).
 
-      Para encontrar seus domínios, abra o [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta ou contas da empresa.
+      Para localizar seus domínios, abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta ou contas da empresa.
 
-      Vá para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Definições Gerais]**.
+      Ir para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**.
 
-      Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**.
+      Procure o campo rotulado **[!UICONTROL Nome do servidor publicado]**.
    1. Verifique se você está usando a CDN por meio do Adobe e não é gerenciada com uma relação direta.
-   1. Verifique se você está usando um domínio dedicado, como `images.company.com` ou `mycompany.scene7.com`, e não um domínio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+   1. Verifique se você está usando um domínio dedicado como `images.company.com` ou `mycompany.scene7.com`e não um domínio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Para encontrar seus domínios, abra o [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta ou contas da empresa.
+      Para localizar seus domínios, abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta ou contas da empresa.
 
-      Vá para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Definições Gerais]**.
+      Ir para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**.
 
-      Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**. Se você estiver usando um domínio genérico do Dynamic Media Classic no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
+      Procure o campo rotulado **[!UICONTROL Nome do servidor publicado]**. Se você estiver usando um domínio genérico do Dynamic Media Classic no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
    1. Indique se deseja que funcione em HTTP/2.
 
 1. O Suporte ao cliente do Adobe adiciona você à Lista de espera do cliente de Smart Imaging com base na ordem em que as solicitações são enviadas.
@@ -219,8 +219,8 @@ Por padrão, o DPR de Smart Imaging e a otimização de rede estão desativadas 
 1. Você será notificado após a conclusão pelo Suporte ao cliente.
 1. Para maximizar os aprimoramentos de desempenho do Smart Imaging, o Adobe recomenda definir o Time To Live (TTL) para 24 horas ou mais. O TTL define quanto tempo os ativos são armazenados em cache pela CDN. Para alterar essa configuração:
 
-   1. Se você usar o Dynamic Media Classic, vá para **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Publicar configuração]** > **[!UICONTROL Servidor de imagem]**. Defina o valor **[!UICONTROL Default Client Cache Time To Live]** como 24 ou mais.
-   1. Se você usar o Dynamic Media, siga [estas instruções](config-dm.md). Defina o valor **[!UICONTROL Expiration]** 24 horas ou mais.
+   1. Se você usar o Dynamic Media Classic, acesse **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configuração de publicação]** > **[!UICONTROL Servidor de imagem]**. Defina as **[!UICONTROL Tempo de Vida do Cache do Cliente Padrão]** para 24 ou mais.
+   1. Se você usar o Dynamic Media, siga [estas instruções](config-dm.md). Defina as **[!UICONTROL Expiração]** 24 horas ou mais.
 
 ## Quando posso esperar que minha conta seja ativada com a Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
@@ -243,8 +243,8 @@ Durante a transição inicial, as imagens não armazenadas em cache acessam dire
 
 1. Certifique-se de que o cache esteja desativado quando as ferramentas do desenvolvedor estiverem abertas.
 
-   * No Windows®, navegue até as configurações no painel de ferramentas do desenvolvedor e marque a caixa de seleção **[!UICONTROL Desativar cache (enquanto as ferramentas do dispositivo estão abertas)]**.
-   * No macOS, no painel do desenvolvedor, na guia **[!UICONTROL Rede]**, selecione **[!UICONTROL desativar cache]**.
+   * No Windows®, navegue até as configurações no painel de ferramentas do desenvolvedor e selecione **[!UICONTROL Desabilitar cache (enquanto as ferramentas do dispositivo estão abertas)]** caixa de seleção.
+   * No macOS, no painel do desenvolvedor, em **[!UICONTROL Rede]** guia , selecione **[!UICONTROL desativar cache]**.
 
 1. Observe que o Tipo de conteúdo é transformado no formato apropriado. A captura de tela a seguir mostra uma imagem PNG sendo convertida dinamicamente em WebP no Chrome.
 1. Repita esse teste em navegadores e condições de usuário diferentes.
@@ -257,7 +257,7 @@ Durante a transição inicial, as imagens não armazenadas em cache acessam dire
 
 ## A Smart Imaging pode ser desativada para qualquer solicitação?{#turning-off-smart-imaging}
 
-Sim. Você pode desativar a Imagem inteligente adicionando o modificador `bfc=off` ao URL.
+Sim. Você pode desativar a Smart Imaging adicionando o modificador `bfc=off` ao URL.
 
 ## Posso solicitar que o DPR e a otimização de rede sejam desativados no nível da empresa? {#dpr-companylevel-turnoff}
 
@@ -277,7 +277,7 @@ O Smart Imaging determina se a conversão é benéfica ou não. Ele retorna a no
 
 Como a otimização do DPR do Smart Imaging funciona com componentes do Adobe Experience Manager Sites e visualizadores do Dynamic Media?
 
-* Os Componentes principais do Experience Manager Sites são configurados por padrão para otimização do DPR. Para evitar imagens com tamanho excessivo devido à otimização do DPR de imagem inteligente do lado do servidor, `dpr=off` é sempre adicionado às imagens Dynamic Media dos Componentes principais do Experience Manager Sites.
+* Os Componentes principais do Experience Manager Sites são configurados por padrão para otimização do DPR. Para evitar imagens com tamanho excessivo devido à otimização do DPR do Smart Imaging do lado do servidor, `dpr=off` é sempre adicionado às imagens Dynamic Media dos Componentes principais do Experience Manager Sites.
 * Dado que o Dynamic Media Foundation Component é configurado por padrão para otimização de DPR, para evitar imagens com tamanho excessivo devido à otimização de DPR de imagem inteligente do lado do servidor, `dpr=off` é sempre adicionado às imagens do Dynamic Media Foundation Component. Mesmo que o cliente desmarque a otimização do DPR no Componente de base do DM, o DPR de imagem inteligente do lado do servidor não inicia. Em resumo, no Componente de base do DM, a otimização do DPR entra em vigor com base apenas na configuração de nível do Componente de base do DM.
 * Qualquer otimização de DPR do lado do visualizador funciona em conjunto com a otimização de DPR de imagem inteligente do lado do servidor e não resulta em imagens muito grandes. Em outras palavras, sempre que o DPR for manipulado pelo visualizador, como a exibição principal somente em um visualizador habilitado para zoom, os valores do DPR de imagem inteligente do lado do servidor não serão acionados. Da mesma forma, sempre que elementos do visualizador, como amostras e miniaturas, não tiverem tratamento com DPR, o valor do DPR de Smart Imaging do lado do servidor será acionado.
 

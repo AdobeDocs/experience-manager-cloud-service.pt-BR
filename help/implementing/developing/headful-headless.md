@@ -21,7 +21,7 @@ AEM também pode ser usado para simplesmente gerenciar o conteúdo, permitindo q
 
 Mas isso não precisa ser uma escolha binária. AEM oferece flexibilidade sem precedentes, permitindo explorar as vantagens de ambos os modelos para o seu projeto.
 
-![Modelos de implementação de AEM](/help/headless/assets/aem-implementation-models.png)
+![Modelos de implementação do AEM](/help/headless/assets/aem-implementation-models.png)
 
 Em um modelo com pilha completa ou headful, o conteúdo é gerenciado no repositório AEM e AEM componentes com base em Java, HTL etc. são usados para renderizar o conteúdo da experiência do usuário. Neste modelo, a criação de conteúdo, o estilo, a apresentação e o delivery tudo acontece em AEM.
 

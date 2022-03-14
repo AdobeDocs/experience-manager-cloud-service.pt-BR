@@ -3,7 +3,7 @@ title: Acesso a KPIs
 description: Acesso a KPIs
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 100%
 

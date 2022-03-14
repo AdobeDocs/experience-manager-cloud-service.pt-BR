@@ -8,7 +8,7 @@ exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: f5282d149e80328742ff9008441960f62cea6290
 workflow-type: tm+mt
 source-wordcount: '1737'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ O artigo contém recomendações, materiais de referência e recursos para desen
 | × | Não suportado. Não utilizar. |
 | - | Não disponível |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) APIs Java | [Serviço Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) APIs Java | [Serviço Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Binário original** |  |  |  |  |  |  |
 | Criar original | ✓ | × | - | × | × | - |
@@ -158,7 +158,7 @@ Para obter mais informações sobre o algoritmo de carregamento, consulte o [doc
 
 Depois que todas as partes de um arquivo binário forem carregadas, envie uma solicitação POST HTTP para o URI completo fornecido pelos dados de início. O tipo de conteúdo do corpo da solicitação deve ser `application/x-www-form-urlencoded` dados do formulário, contendo os seguintes campos.
 
-| Fields | Tipo | Obrigatório ou não | Descrição |
+| Campos | Tipo | Obrigatório ou não | Descrição |
 |---|---|---|---|
 | `fileName` | Sequência de caracteres | Obrigatório | O nome do ativo, conforme fornecido pelos dados de início. |
 | `mimeType` | Sequência de caracteres | Obrigatório | O tipo de conteúdo HTTP do binário, como foi fornecido pelos dados de início. |

@@ -1,6 +1,6 @@
 ---
-title: Instalar e configurar players no Screens como um Cloud Service
-description: Esta página descreve como instalar e configurar players no Screens como um Cloud Service.
+title: Instalação e configuração de players no Screens as a Cloud Service
+description: Esta página descreve como instalar e configurar players no Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 1%
 
 ---
 
-# Instalar e configurar players no Screens como um Cloud Service {#installing-players-screens-cloud}
+# Instalação e configuração de players no Screens as a Cloud Service {#installing-players-screens-cloud}
 
-Esta seção descreve como instalar players do AEM Screens registrados em instâncias de AEM locais. Além disso, você deve fazer uma redefinição de fábrica do reprodutor existente e registrar o novo reprodutor no AEM Screens como um Cloud Service.
+Esta seção descreve como instalar players do AEM Screens registrados em instâncias de AEM locais. Além disso, você deve fazer uma redefinição de fábrica do reprodutor existente e registrar o novo reprodutor no AEM Screens as a Cloud Service.
 
 ## Objetivo {#objective}
 
@@ -22,7 +22,7 @@ Este documento ajuda você a entender como configurar o reprodutor antes de regi
 
 ## Etapas para definir o reprodutor para o modo Nuvem {#cloud-mode-setup}
 
-Depois de baixar o player mais recente em [Downloads do AEM Screens Player](https://download.macromedia.com/screens/), você está pronto para atualizar o player para o modo Cloud.
+Depois de baixar o reprodutor mais recente de [Downloads do AEM Screens Player](https://download.macromedia.com/screens/), agora você está pronto para atualizar seu reprodutor para o modo Cloud.
 
 Siga as etapas abaixo para atualizar o player:
 
@@ -31,21 +31,21 @@ Siga as etapas abaixo para atualizar o player:
    >[!NOTE]
    >Você pode optar por testar com dispositivos de hardware dedicados ou com uma extensão da Web em seu próprio player.
 
-1. Clique na guia **Configuração** e clique no botão **Para fábrica** na opção **Redefinir**.
+1. Clique no botão **Configuração** e clique em **Para Fábrica** botão abaixo **Redefinir** opção.
 
    ![imagem](/help/screens-cloud/assets/player/installplayer-2.png)
 
-1. Clique em **Confirm** para redefinir o player.
+1. Clique em **Confirmar** para redefinir o reprodutor.
 
-1. Novamente na guia **Configuration** e clique no botão **Change to Cloud Mode** sob a opção **Toggle Runmode**.
+1. Novamente na **Configuração** e clique em **Alterar para o modo Nuvem** botão abaixo **Alternar modo de execução** opção.
 
    ![imagem](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. Clique em **Confirm** que solicita que, ao alternar para o modo de nuvem, o registro do reprodutor seja cancelado.
+1. Clique em **Confirmar** que é solicitado ao alternar para o modo de nuvem, cancelará o registro do reprodutor.
 
 ## Monitoramento básico da reprodução {#playback-monitoring}
 
-O reprodutor relata várias métricas de reprodução com cada `ping` padrão de 30 segundos. Com base nessas métricas, podemos detectar vários casos de borda, como experiência paralisada, tela em branco e problemas de agendamento. Isso nos permite entender e solucionar problemas no dispositivo e, portanto, acelerar uma investigação e medidas corretivas.
+O reprodutor relata várias métricas de reprodução com cada `ping` que assume o padrão de 30 segundos. Com base nessas métricas, podemos detectar vários casos de borda, como experiência paralisada, tela em branco e problemas de agendamento. Isso nos permite entender e solucionar problemas no dispositivo e, portanto, acelerar uma investigação e medidas corretivas.
 
 O monitoramento básico da reprodução em um reprodutor AEM Screens permite:
 
@@ -80,7 +80,7 @@ Abaixo estão listadas algumas limitações do monitoramento básico da reprodu�
 
 * O reprodutor relata seu próprio estado de reprodução no servidor para que ele exija uma conexão ativa.
 
-* A propriedade `isContentRendering` que verifica a GPU atualmente exige muitos recursos para ser ativada por padrão e requer aceitação explícita das preferências do reprodutor. É recomendável não usá-lo juntamente com vídeos em produção.
+* O `isContentRendering` A propriedade que verifica a GPU atualmente usa muitos recursos para ser ativada por padrão e requer aceitação explícita das preferências do reprodutor. É recomendável não usá-lo juntamente com vídeos em produção.
 
 * Esse recurso é compatível apenas para canais de sequência e ainda não cobre o caso de uso dos canais interativos (SPA).
 
@@ -88,4 +88,4 @@ Abaixo estão listadas algumas limitações do monitoramento básico da reprodu�
 
 ## O que vem a seguir {#whats-next}
 
-Agora, que você instalou e configurou o reprodutor para o modo Nuvem, você deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento [Registrando Players no Screens como um Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) do Provedor de serviços do Screens.
+Agora que você instalou e configurou o reprodutor para o modo Nuvem, deve continuar sua jornada as a Cloud Service do Screens ao próxima revisar o documento, [Registrando Players no Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) do Provedor de serviços do Screens.

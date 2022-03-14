@@ -5,8 +5,8 @@ feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 2%
+source-wordcount: '916'
+ht-degree: 6%
 
 ---
 
@@ -19,23 +19,23 @@ ht-degree: 2%
 
 ## Introdução {#apache-and-dispatcher-configuration-and-testing}
 
-Esta página descreve as ferramentas do dispatcher e como baixá-las e extraí-las, os módulos de apache compatíveis e fornece uma visão geral de alto nível dos modos herdados e flexíveis. Além disso, há outras referências na validação e depuração e migração da configuração do Dispatcher do AMS para o AEM como Cloud Service
+Esta página descreve as ferramentas do dispatcher e como baixá-las e extraí-las, os módulos de apache compatíveis e fornece uma visão geral de alto nível dos modos herdados e flexíveis. Além disso, há outras referências na validação e depuração e migração da configuração do Dispatcher do AMS para o AEM as a Cloud Service
 
 ## Ferramentas do Dispatcher {#dispatcher-sdk}
 
-As Ferramentas do Dispatcher fazem parte do AEM geral como um Cloud Service SDK e fornecem:
+As Ferramentas do Dispatcher fazem parte do SDK AEM as a Cloud Service geral e fornecem:
 
 * Uma estrutura de arquivo baunilha contendo os arquivos de configuração a serem incluídos em um projeto maven para o Dispatcher.
-* Ferramentas para clientes validarem se a configuração do Dispatcher inclui apenas AEM como diretivas suportadas pelo Cloud Service.        Além disso, a ferramenta também valida que a sintaxe está correta para que o apache possa ser iniciado com êxito.
+* Ferramentas para clientes validarem se a configuração do Dispatcher inclui apenas AEM diretivas suportadas as a Cloud Service.        Além disso, a ferramenta também valida que a sintaxe está correta para que o apache possa ser iniciado com êxito.
 * Uma imagem Docker que exibe o Dispatcher localmente.
 
 ## Download e extração de ferramentas {#extracting-the-sdk}
 
-As Ferramentas do Dispatcher, parte do [AEM como um Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), podem ser baixadas de um arquivo zip no portal [Distribuição de software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Qualquer nova configuração disponível nessa nova versão das Ferramentas do Dispatcher pode ser usada para implantar em ambientes do Cloud que executam essa versão de AEM na Cloud ou posterior.
+As Ferramentas do Dispatcher, parte do [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), pode ser baixado de um arquivo zip no [Distribuição de software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal. Qualquer nova configuração disponível nessa nova versão das Ferramentas do Dispatcher pode ser usada para implantar em ambientes do Cloud que executam essa versão de AEM na Cloud ou posterior.
 
 Descompacte o SDK, que agrupa as Ferramentas do Dispatcher para macOS, Linux e Windows.
 
-**Para macOS/Linux**, torne o artefato da ferramenta Dispatcher executável e execute-o. Ele extrairá automaticamente os arquivos das Ferramentas do Dispatcher sob o diretório em que você o armazenou (onde `version` é a versão das Ferramentas do Dispatcher).
+**Para macOS/Linux**, torne o artefato da ferramenta Dispatcher executável e execute-o. Ele extrairá automaticamente os arquivos das Ferramentas do Dispatcher sob o diretório em que você os armazenou (onde `version` é a versão das Ferramentas do Dispatcher).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -44,15 +44,15 @@ Verifying archive integrity...  100%   All good.
 Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**No Windows**, extraia o arquivo zip Dispatcher Tool.
+**Para Windows**, extraia o arquivo zip Dispatcher Tool.
 
 ## Validação e depuração usando as ferramentas do Dispatcher {#validation-debug}
 
 As ferramentas do dispatcher são usadas para validar e depurar a configuração do Dispatcher do seu projeto. Saiba mais sobre como usar essas ferramentas nas páginas referenciadas abaixo, com base em se a configuração do dispatcher do seu projeto está estruturada em modo flexível ou no modo herdado:
 
-* **Modo flexível**  - o modo recomendado e o padrão para  [AEM arquétipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) e superior, que também é usado pelo Cloud Manager para novos ambientes criados após a versão 2021.7.0 do Cloud Manager. Os clientes podem ativar esse modo adicionando a pasta e o arquivo `opt-in/USE_SOURCES_DIRECTLY`. Ao usar esse modo mais flexível, não há limitações na estrutura de arquivos na pasta de regravações que, no modo herdado, exigiam um único arquivo `rewrite.rules`. Além disso, não há limitação no número de regras que podem ser adicionadas. Para obter detalhes sobre a estrutura da pasta e a validação local, consulte [Validação e Depuração usando Ferramentas do Dispatcher](/help/implementing/dispatcher/validation-debug.md).
+* **Modo flexível** - o modo recomendado e o padrão para [AEM arquétipo 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) e superior, que também é usada pelo Cloud Manager para novos ambientes criados após a versão 2021.7.0 do Cloud Manager. Os clientes podem ativar esse modo adicionando a pasta e o arquivo `opt-in/USE_SOURCES_DIRECTLY`. Ao usar esse modo mais flexível, não há limitações na estrutura de arquivos na pasta de regravações que, no modo herdado, exigiam uma única `rewrite.rules` arquivo. Além disso, não há limitação no número de regras que podem ser adicionadas. Para obter detalhes sobre a estrutura de pastas e a validação local, consulte [Validação e depuração usando ferramentas do Dispatcher](/help/implementing/dispatcher/validation-debug.md).
 
-* **Modo herdado**  - para obter detalhes sobre a estrutura da pasta e a validação local para o modo herdado de configuração do dispatcher, consulte  [Validação e depuração usando ferramentas do Dispatcher (herdado)](/help/implementing/dispatcher/validation-debug-legacy.md)
+* **Modo herdado** - para obter detalhes sobre a estrutura de pastas e a validação local para o modo herdado de configuração do dispatcher, consulte [Validação e depuração usando ferramentas do Dispatcher (herdadas)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 Para obter mais informações sobre como migrar do modelo de configuração herdado para o mais flexível, fornecido com AEM arquétipo 28 em diante, consulte [esta documentação](/help/implementing/dispatcher/validation-debug.md#migrating).
 
@@ -103,8 +103,8 @@ Allowlisted directives:
 
 ## Estrutura da pasta {#folder-structure}
 
-A estrutura de pastas do apache e do dispatcher do projeto será ligeiramente diferente com base em qual modo o projeto está usando, conforme descrito na seção [Validação e depuração usando as Ferramentas do Dispatcher](#validation-debug) acima.
+A estrutura de pastas do apache e do dispatcher do projeto será ligeiramente diferente com base em qual modo o projeto está usando, conforme descrito na [Validação e depuração usando as ferramentas do Dispatcher](#validation-debug) acima.
 
 ## Migração da configuração do Dispatcher do AMS {#ams-aem}
 
-Para obter detalhes sobre como migrar a configuração do Dispatcher do AMS para o AEM como um Cloud Service, consulte a página [Migrating the Dispatcher configuration from AMS to AEM](/help/implementing/dispatcher/ams-aem.md) as a Cloud Service.
+Para obter detalhes sobre como migrar a configuração do Dispatcher do AMS para o AEM as a Cloud Service, consulte o [Migração da configuração do Dispatcher do AMS para o AEM](/help/implementing/dispatcher/ams-aem.md) as a Cloud Service página.

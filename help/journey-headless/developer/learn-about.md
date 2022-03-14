@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Saiba mais sobre o desenvolvimento sem periféricos do CMS {#learn-about}
 
-Nesta parte da [AEM Jornada de desenvolvedores headless,](overview.md) saiba mais sobre tecnologia headless e por que usá-la.
+Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) saiba mais sobre tecnologia sem interface e por que usá-la.
 
 ## Objetivo {#objective}
 
@@ -58,7 +58,7 @@ O cabeçalho de qualquer sistema é geralmente o renderizador de saída desse si
 
 Um servidor sem periféricos, por exemplo, provavelmente está sentado em um rack em uma sala de servidor em algum lugar e não tem monitor conectado. Para acessá-lo, você precisa se conectar remotamente a ele. Nesse caso, o monitor é o cabeçalho à medida que resolve a renderização da saída do servidor. Como consumidor do serviço, forneça seu próprio cabeçalho (o monitor) ao se conectar remotamente a ele.
 
-Quando falamos de um CMS sem interface, o CMS gerencia o conteúdo e continua a entregá-lo aos consumidores. No entanto, ao fornecer apenas o **content** de forma padronizada, um CMS sem periféricos omita a renderização de saída final, deixando o **presentation** do conteúdo para o serviço de consumo.
+Quando falamos de um CMS sem interface, o CMS gerencia o conteúdo e continua a entregá-lo aos consumidores. No entanto, apenas entregando a variável **conteúdo** de forma padronizada, um CMS sem periféricos omita a renderização final de output, deixando o **apresentação** do conteúdo para o serviço de consumo.
 
 ![CMS sem periféricos](assets/headless-cms.png)
 
@@ -120,11 +120,11 @@ Obrigado por começar a sua jornada AEM sem cabeça! Agora que você leu este do
 * Entenda por que e quando o headless é necessário.
 * Saiba em alto nível como os conceitos sem interface são usados e como eles se relacionam.
 
-Aproveite esse conhecimento e prossiga com sua jornada sem periféricos de AEM revisando o documento [Introdução ao AEM Headless como um Cloud Service](getting-started.md), onde você aprenderá a configurar as ferramentas necessárias e a começar a pensar em como o AEM aborda a entrega de conteúdo sem periféricos e seus pré-requisitos.
+Aproveite esse conhecimento e prossiga com sua jornada sem periféricos AEM ao próximo revisar o documento [Introdução ao AEM Headless as a Cloud Service](getting-started.md) onde você aprenderá a configurar as ferramentas necessárias e a começar a pensar em como o AEM aborda a entrega de conteúdo sem periféricos e seus pré-requisitos.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento sem periféricos revisando o documento [Introdução AEM Cabeça como Cloud Service,](getting-started.md) os seguintes são alguns recursos adicionais opcionais que fazem um mergulho mais profundo em alguns conceitos mencionados neste documento, mas eles não são solicitados a continuar com a jornada sem periféricos.
+Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento sem periféricos revisando o documento [Introdução ao AEM Headless as a Cloud Service,](getting-started.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não é necessário que eles continuem na jornada sem periféricos.
 
-* [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)  - Entenda o AEM como uma estrutura Cloud Service
-* [AEM Tutorials sem interface](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com AEM e escolha o que é certo para você.
+* [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Compreender AEM estrutura do as a Cloud Service
+* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.

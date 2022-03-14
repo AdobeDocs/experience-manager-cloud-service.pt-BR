@@ -1,13 +1,13 @@
 ---
 title: Pós-ativação
 description: Saiba como monitorar problemas e melhorar o desempenho
-source-git-commit: c9143d77e70476beb7f7dd162c36aeda8d1be506
+exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 21%
+ht-degree: 23%
 
 ---
-
 
 # Pós-ativação {#post-go-live}
 
@@ -61,7 +61,7 @@ Consulte [Acessar e gerenciar logs](/help/implementing/cloud-manager/manage-logs
 >abstract="Entre em contato com a equipe de suporte AEM para obter esclarecimentos ou solucionar problemas."
 >additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Suporte para Experience Cloud"
 
-Em caso de dúvidas sobre o acesso ao Cloud Service, entre em contato com o representante do Adobe ou [Suporte para Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) para obter mais detalhes.
+Em caso de dúvidas sobre o acesso ao Cloud Service, entre em contato com o representante do Adobe ou [Suporte para Experience Cloud](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para obter mais detalhes.
 
 ## Aprendizados de documentos {#document-learnings}
 

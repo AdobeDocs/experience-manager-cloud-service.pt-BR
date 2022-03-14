@@ -1,51 +1,51 @@
 ---
-title: Learn about defining Metadata and Tagging for Content Fragments
-description: Learn about defining Metadata and Tagging for Content Fragments
+title: Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo
+description: Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 3%
+ht-degree: 14%
 
 ---
 
-# Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
+# Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo {#author-headless-metadata-tagging}
 
-## The Story so Far {#story-so-far}
+## A história até agora {#story-so-far}
 
-[](overview.md)[](introduction.md)
+No início do [jornada do autor de conteúdo sem cabeçalho do AEM](overview.md) o [Introdução](introduction.md) O aborda os conceitos básicos e a terminologia relevantes para a criação para periféricos.
 
-In the previous step you were introduced to the use of references for Headless CMS Authoring. You learned what sorts of references are available, and what are their purposes: Content References, Asset/Media References, and Fragment References.
+Na etapa anterior, você foi introduzido no uso de referências para Criação de CMS sem cabeçalho. Você aprendeu que tipos de referências estão disponíveis e quais são seus propósitos: Referências de conteúdo, referências de ativo/mídia e referências de fragmento.
 
-This article builds on these so you understand how to use metadata and tagging to author your own content for your AEM headless project.
+Este artigo se baseia neles para que você entenda como usar metadados e marcação para criar seu próprio conteúdo para seu projeto sem periféricos de AEM.
 
 ## Objetivo {#objective}
 
-* ****
-* ****
+* **Público**: Avançado
+* **Objetivo**: Introduza o uso de metadados e marcação para criação de CMS sem cabeçalho.
 
-## Adding Metadata and Tags {#adding-metadata-and-tags}
+## Adição de metadados e tags {#adding-metadata-and-tags}
 
-There are three methods that you can use to add metadata and tags:
+Há três métodos que você pode usar para adicionar metadados e tags:
 
-* When first creating your fragment:
+* Ao criar o fragmento pela primeira vez:
 
-   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+   ![Criar fragmento do conteúdo - fornecer nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* ********
+* O **Metadados** guia do editor de Fragmento de conteúdo permite adicionar vários campos de metadados e predefinidos **Tags** do seu projeto:
 
-   ![](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+   ![Editor de fragmento de conteúdo - Metadados](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * ****
+   * Também é diretamente acessível usando o **Propriedades** na barra de ferramentas do console Assets.
 
-## What&#39;s Next {#whats-next}
+## O que vem a seguir {#whats-next}
 
-Now you can put all this knowledge to use and start creating Content Fragments for your project.
+Agora é possível colocar todo esse conhecimento para usar e começar a criar Fragmentos de conteúdo para o seu projeto.
 
 ## Recursos adicionais {#additional-resources}
 
 * [Metadados - propriedades dos fragmentos](/help/assets/content-fragments/content-fragments-metadata.md)
 
-* [Uso de tags  ](/help/sites-cloud/authoring/features/tags.md)
+* [Uso de tags](/help/sites-cloud/authoring/features/tags.md)
 
-* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modelos de fragmentos do conteúdo - Permitir modelos de fragmentos do conteúdo na pasta Ativos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

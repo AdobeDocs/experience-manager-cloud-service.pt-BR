@@ -3,7 +3,7 @@ title: Criação de uma pasta de ativos - Configuração do headless
 description: Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 65c20293f2b5481d9c7fdd050af4bee5f64a33e6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless. Os fragmentos de conteúdo são armazenados nas pastas de ativos.
 
-## O que é uma pasta de ativos? {#what-is-an-assets-folder}
+##  O que é uma pasta de ativos? {#what-is-an-assets-folder}
 
 [Agora que você criou modelos de fragmento de conteúdo](create-content-model.md) que definem a estrutura desejada para os fragmentos de conteúdo futuros, você provavelmente está animado para criar alguns fragmentos.
 

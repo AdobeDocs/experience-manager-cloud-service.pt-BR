@@ -1,22 +1,22 @@
 ---
-title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2020.8.0
-description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2020.8.0
-feature: Informações da versão
+title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2020.8.0
+description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2020.8.0
+feature: Release Information
 exl-id: 70674e16-f9ba-4777-98fe-34161e90a481
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 2%
+source-wordcount: '423'
+ht-degree: 1%
 
 ---
 
 # Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2020.8.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2020.8.0.
+Esta página descreve as Notas de versão do Cloud Manager AEM as a Cloud Service 2020.8.0.
 
 ## Data de lançamento {#release-date}
 
-A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2020.8.0 é 6 de agosto de 2020.
+A Data de lançamento do Cloud Manager AEM as a Cloud Service 2020.8.0 é 6 de agosto de 2020.
 
 ## Novidades {#whats-new-cloud-manager}
 
@@ -30,7 +30,7 @@ A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2020.8.0 é 6 d
 
 * Os ambientes recém-criados nos programas do Assets agora serão configurados automaticamente com os Serviços de conteúdo inteligente.
 
-* Ambientes hibernados podem ser removidos da hibernação na página **Visão geral** do Cloud Manager.
+* Ambientes hibernados podem ser removidos da hibernação no do Cloud Manager **Visão geral** página.
 
 * Capacidade de executar verificações de experiência em páginas, acionadas pelo Google Lighthouse. Como parte do pipeline do Cloud Manager , até 25 páginas podem ser verificadas e validadas em relação aos KPIs de experiência, e as pontuações são exibidas na interface do usuário do Cloud Manager.
 
@@ -42,7 +42,7 @@ A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2020.8.0 é 6 d
 
 * Em alguns casos, as execuções de pipeline concluídas não foram registradas com êxito como tendo sido concluídas, impedindo assim novas execuções do pipeline.
 
-* Ocasionalmente, as execuções de pipeline ficariam *presas* devido a problemas de comunicação interna.
+* Ocasionalmente, as execuções de pipeline receberiam *preso* devido a problemas de comunicação interna.
 
 * Ao provisionar uma nova organização, alguns usuários com funções administrativas diferentes dos administradores de sistema receberam erroneamente acesso ao Cloud Manager.
 
@@ -52,7 +52,7 @@ A Data de lançamento do Cloud Manager no AEM as a Cloud Service 2020.8.0 é 6 d
 
 * A interface do usuário permitiu erroneamente que as operações fossem tentadas em um ambiente enquanto eram excluídas.
 
-* Havia uma incompatibilidade de cores na página **Visão geral** do Cloud Manager.
+* Havia uma incompatibilidade de cores no Cloud Manager **Visão geral** página.
 
 ### Problemas conhecidos {#known-issues-cm}
 

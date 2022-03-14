@@ -1,7 +1,8 @@
 ---
 title: Gerenciar páginas e modelos do catálogo de produtos
 description: Saiba como gerenciar páginas e modelos de catálogo de produtos
-source-git-commit: b84896e70df0c22aea1581d8d0d0561e8bc4b24d
+exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%

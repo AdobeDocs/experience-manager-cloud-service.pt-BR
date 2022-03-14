@@ -1,67 +1,67 @@
 ---
-title: AEM Headless Content Author Journey
-description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to author content for your project.
+title: jornada do autor de conteúdo sem cabeçalho do AEM
+description: Comece aqui para obter uma jornada guiada através dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como criar conteúdo para seu projeto.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
-# AEM Headless Content Author Journey {#aem-headless-author-journey}
+# jornada do autor de conteúdo sem cabeçalho do AEM {#aem-headless-author-journey}
 
-Start here for a guided journey through the powerful and flexible headless features of AEM, and how to author content for your headless project.
+Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis do AEM e como criar conteúdo para seu projeto sem periféricos.
 
 ## Introdução {#introduction}
 
-Headless implementation is becoming increasingly important for delivering experiences to your audience, wherever they are and regardless of channel.
+A implementação sem periféricos está se tornando cada vez mais importante para fornecer experiências ao seu público-alvo, onde quer que estejam e independentemente do canal.
 
-Headless content is not based on the traditional structure of pages, and components. Instead it is based on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery.
+O conteúdo sem cabeçalho não se baseia na estrutura tradicional de páginas e componentes. Em vez disso, ele se baseia na criação de fragmentos de conteúdo neutros em canais e reutilizáveis e em seu delivery entre canais.
 
-In AEM this is realized with Content Fragments. You author the content in individual Content Fragments that are then made available for an application to select and use as required.
+No AEM, isso é realizado com Fragmentos de conteúdo. Você cria o conteúdo em Fragmentos de conteúdo individuais que são disponibilizados para um aplicativo selecionar e usar, conforme necessário.
 
-This flexibility means that headless is a modern and dynamic development pattern for implementing digital experiences.
+Essa flexibilidade significa que sem interface é um padrão de desenvolvimento moderno e dinâmico para a implementação de experiências digitais.
 
-This guide leads you through the most important topics so that on completion you:
+Este guia aborda os tópicos mais importantes para que você, ao concluir:
 
-* Have a basic understanding of what headless content delivery is and its benefits.
-* Understand AEM&#39;s headless features and how they work together to deliver a headless experience.
-* Have the ability to author content for your AEM headless project.
+* Ter uma compreensão básica do que é entrega de conteúdo sem periféricos e de seus benefícios.
+* Entenda AEM recursos sem periféricos e como eles trabalham juntos para proporcionar uma experiência sem periféricos.
+* Tenha a capacidade de criar conteúdo para seu projeto sem periféricos de AEM.
 
-## AEM Documentation Journeys {#documentation-journeys}
+## jornadas de documentação de AEM {#documentation-journeys}
 
-[](/help/journey-documentation/documentation-journeys.md)
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados ao fornecer uma narrativa que ajude o leitor, que pode ser novo a AEM, compreender e resolver um problema de negócios do início ao fim, assumindo o mínimo de tópico ou conhecimento AEM.
 
-Documentation Journeys are designed around best practices principles, informed by Adobe&#39;s latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
 
-[](/help/journey-documentation/documentation-journeys.md)
+Se você quiser saber como o Adobe recomenda como resolver casos de negócios sem periféricos com o AEM, [AEM Jornadas headless](/help/journey-documentation/documentation-journeys.md) são onde começar.
 
 ## Público {#audience}
 
-This journey is designed for the Content Author persona. As a Content Author you will be creating the actual content in Content Fragments.
+Essa jornada foi projetada para o perfil do autor de conteúdo. Como autor de conteúdo, você criará o conteúdo real nos Fragmentos de conteúdo.
 
-The journey lays out the requirements, steps, and approach for authoring content for an AEM Headless project. The journey will define additional personas with which the author must interact for a successful project, but the point-of-view for the journey is that of the content author.
+A jornada apresenta os requisitos, as etapas e a abordagem para a criação de conteúdo para um projeto sem cabeçalho AEM. A jornada definirá personas adicionais com as quais o autor deverá interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o do autor de conteúdo.
 
-Information in this journey can of course be useful to other personas, but some information will be superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
+As informações nesta jornada podem, é claro, ser úteis para outras pessoas, mas algumas informações serão supérfluas para certas funções. Fique atento às próximas jornadas que abordam outras funções.
 
-## The Headless Content Author Journey {#the-journey}
+## A Jornada do autor de conteúdo sem cabeçalho {#the-journey}
 
-You will explore many topics in this journey. The following articles give you foundational knowledge of headless in AEM and link out to detailed technical documentation.
+Você explorará muitos tópicos nesta jornada. Os artigos a seguir fornecem um conhecimento fundamental da AEM sem cabeça e vinculam-se à documentação técnica detalhada.
 
-Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless in AEM, we recommend that you start at the beginning and progress sequentially.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo em AEM sem periféricos, recomendamos que você comece no início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|
-| 0 | AEM Headless Content Author Journey | Este documento |
-| 1 | [](introduction.md) | An introduction to the headless features of Adobe Experience Manager as a Cloud Service, and how to author content for your project. |
-| 2 | [](basics.md) | Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments. |
-| 3 | [](references.md) | Learn about how to use references in Content Fragments. These also allow you to create and manage multiple levels of structure for your Headless CMS using Nested Fragments. |
-| 4 | [](metadata-tagging.md) | Learn about defining Metadata and Tagging for Content Fragments. |
+| 0 | jornada do autor de conteúdo sem cabeçalho do AEM | Este documento |
+| 1 | [Criação para AEM sem cabeçalho as a Cloud Service - uma introdução](introduction.md) | Uma introdução aos recursos headless do Adobe Experience Manager as a Cloud Service e como criar conteúdo para seu projeto. |
+| 2 | [Noções básicas de criação para headless com AEM](basics.md) | Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS sem cabeçalho usando Fragmentos de conteúdo. |
+| 3 | [Saiba mais sobre como usar referências em Fragmentos de conteúdo](references.md) | Saiba mais sobre como usar referências em Fragmentos de conteúdo. Isso também permite que você crie e gerencie vários níveis de estrutura para seu CMS sem cabeçalho usando Fragmentos aninhados. |
+| 4 | [Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo](metadata-tagging.md) | Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo. |
 
-## What&#39;s Next {#what-is-next}
+## O que vem a seguir {#what-is-next}
 
-You are now ready to get started on your Adobe Headless journey. [](introduction.md)
+Agora você está pronto para começar a usar sua jornada sem cabeça do Adobe. Recomendamos que você continue para a próxima parte da jornada e leia o artigo [Criação para AEM sem cabeçalho as a Cloud Service - uma introdução.](introduction.md)
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
@@ -74,12 +74,12 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 
 ## Recursos adicionais {#additional-resources}
 
-Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
+As jornadas de documentação mostram como o AEM soluciona um problema comercial fornecendo uma narrativa que o orienta por processos e recursos complexos e inter-relacionados. Uma jornada ilustra como vários recursos trabalham juntos para atender a uma única necessidade de negócios.
 
-As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM&#39;s powerful features work together.
+Como tais jornadas são projetadas para se sustentarem sozinhas. No entanto, alguns deles podem estar relacionados entre si. Confira estas jornadas adicionais para obter mais informações sobre como AEM recursos avançados trabalham juntos.
 
-* [](/help/journey-headless/translation/overview.md)
-* [](/help/journey-headless/developer/overview.md)
-* [](/help/journey-headless/architect/overview.md)
-* [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)
-* [](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [jornada de tradução sem cabeçalho AEM](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia sem interface, como a AEM fornece conteúdo sem interface e como você pode traduzi-la.
+* [jornada do desenvolvedor sem periféricos do AEM](/help/journey-headless/developer/overview.md) - Comece aqui para obter uma jornada guiada com os recursos avançados e flexíveis do AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
+* [Jornada de arquitetura headless](/help/journey-headless/architect/overview.md) - Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.
+* [AEM documentação técnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - Se você já tiver um conhecimento profundo das tecnologias AEM e sem interface, poderá consultar diretamente nossos documentos técnicos aprofundados.
+* [Tutoriais AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Se você preferir aprender fazendo e for tecnicamente inclinado, utilize nossos tutoriais práticos organizados por API e framework, que exploram a criação e o uso de aplicativos criados AEM Headless.

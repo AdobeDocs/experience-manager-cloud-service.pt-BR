@@ -35,27 +35,27 @@ Estas são algumas recomendações gerais de quando incluir o elemento wrapper q
 
 As seguintes propriedades e nós podem ser aplicados aos componentes para controlar o comportamento de sua tag de decoração:
 
-* **`cq:noDecoration {boolean}`:** Essa propriedade pode ser adicionada a um componente e um valor real força o AEM a não gerar nenhum elemento wrapper sobre o componente.
-* **`cq:htmlTag`node :** esse nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
-   * **`cq:tagName {String}`:** isso pode ser usado para especificar uma tag HTML personalizada a ser usada para vincular os componentes, em vez do elemento DIV padrão.
-   * **`class {String}`:** Isso pode ser usado para especificar nomes de classe css a serem adicionados ao wrapper.
-   * Outros nomes de propriedade serão adicionados como atributos HTML com o mesmo valor de String fornecido.
+* **`cq:noDecoration {boolean}`:** Essa propriedade pode ser adicionada a um componente e um valor real força AEM não gerar nenhum elemento wrapper sobre o componente.
+* **`cq:htmlTag`node :** Esse nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
+   * **`cq:tagName {String}`:** Isso pode ser usado para especificar uma tag HTML personalizada a ser usada para vincular os componentes, em vez do elemento DIV padrão.
+   * **`class {String}`:** Isso pode ser usado para especificar nomes de classe CSS a serem adicionados ao wrapper.
+   * Outros nomes de propriedade serão adicionados como atributos HTML com o mesmo valor String fornecido.
 
 ## Controles de script {#script-controls}
 
 Em geral, o comportamento do wrapper no HTL pode ser resumido da seguinte maneira:
 
-* Nenhum DIV wrapper é renderizado por padrão (ao fazer apenas `data-sly-resource="foo"`).
+* Nenhum DIV de invólucro é renderizado por padrão (apenas ao fazer `data-sly-resource="foo"`).
 * Todos os wcm-modes (desativado, pré-visualização, editar autor e publicar) são renderizados de forma idêntica.
 
 O comportamento do invólucro também pode ser totalmente controlado.
 
 * O script HTL tem controle total sobre o comportamento resultante da tag wrapper.
-* As propriedades do componente (como `cq:noDecoration` e `cq:tagName`) também podem definir a tag wrapper.
+* Propriedades do componente (como `cq:noDecoration` e `cq:tagName`) também pode definir a tag wrapper.
 
 É possível controlar totalmente o comportamento das tags wrapper a partir de scripts HTL e sua lógica associada.
 
-Para obter mais informações sobre o desenvolvimento no HTL, consulte a [documentação do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR).
+Para obter mais informações sobre o desenvolvimento no HTL, consulte [Documentação do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR).
 
 ### Árvore de decisão {#decision-tree}
 
@@ -65,7 +65,7 @@ Essa árvore de decisão resume a lógica que determina o comportamento das tags
 
 ### Casos de uso {#use-cases}
 
-Os três casos de uso a seguir fornecem exemplos de como as tags wrapper são manipuladas e também ilustram quão simples é controlar o comportamento desejado das tags wrapper.
+Os três casos de uso a seguir fornecem exemplos de como as tags wrapper são manipuladas e também ilustram como é simples controlar o comportamento desejado das tags wrapper.
 
 Todos os exemplos a seguir pressupõem a seguinte estrutura de conteúdo e componentes:
 
@@ -87,15 +87,15 @@ Todos os exemplos a seguir pressupõem a seguinte estrutura de conteúdo e compo
       @class = "component-two"
 ```
 
-#### Caso de uso 1: Incluir um componente para reutilização de código {#use-case-include-a-component-for-code-reuse}
+#### Caso de uso 1: Incluir um componente para reutilização do código {#use-case-include-a-component-for-code-reuse}
 
-O caso de uso mais comum é quando um componente inclui outro componente por motivos de reutilização do código. Nesse caso, o componente incluído não é desejado para ser editável com sua própria barra de ferramentas e caixa de diálogo, portanto, nenhum wrapper é necessário e o `cq:htmlTag` do componente será ignorado. Isso pode ser considerado o comportamento padrão.
+O caso de uso mais comum é quando um componente inclui outro componente por motivos de reutilização do código. Nesse caso, o componente incluído não é desejado para ser editável com sua própria barra de ferramentas e caixa de diálogo, portanto, nenhum wrapper é necessário e o componente `cq:htmlTag` serão ignoradas. Isso pode ser considerado o comportamento padrão.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
 `two.html: Hello World!`
 
-Resultado em `/content/test.html`:
+Resultado na saída em `/content/test.html`:
 
 **`Hello World!`**
 
@@ -103,15 +103,15 @@ Um exemplo seria um componente que inclui um componente de imagem principal para
 
 #### Caso de uso 2: Incluir um componente editável {#use-case-include-an-editable-component}
 
-Outro caso de uso comum é quando os componentes do contêiner incluem componentes filhos editáveis, como um Contêiner de layout. Nesse caso, cada filho incluído precisa imperativamente de um wrapper para que o editor funcione (a menos que explicitamente desabilitado com a propriedade `cq:noDecoration`).
+Outro caso de uso comum é quando os componentes do contêiner incluem componentes filhos editáveis, como um Contêiner de layout. Nesse caso, cada filho incluído precisa imperativamente de um invólucro para o editor funcionar (a menos que explicitamente desativado com o `cq:noDecoration` propriedade).
 
-Como o componente incluído é, nesse caso, um componente independente, ele precisa de um elemento wrapper para que o editor funcione e defina seu layout e estilo para aplicar. Para acionar esse comportamento, há a opção `decoration=true`.
+Como o componente incluído é, nesse caso, um componente independente, ele precisa de um elemento wrapper para que o editor funcione e defina seu layout e estilo para aplicar. Para acionar esse comportamento, há a variável `decoration=true` opção.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
 `two.html: Hello World!`
 
-Resultado em `/content/test.html`:
+Resultado na saída em `/content/test.html`:
 
 **`<article class="component-two">Hello World!</article>`**
 
@@ -126,6 +126,6 @@ Pode haver vários casos complexos, que podem ser facilmente alcançados com a p
 
 `two.html: Hello World!`
 
-Resultado `/content/test.html`:
+Saída resultante `/content/test.html`:
 
 **`<aside class="child">Hello World!</aside>`**

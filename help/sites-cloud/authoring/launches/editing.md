@@ -1,16 +1,15 @@
 ---
-title: Edição de lançamentos
-description: 'Depois de criar um lançamento para a sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de lançamento da(s) página(s). '
-translation-type: tm+mt
-source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
+title: Edição de inicializações
+description: Depois de criar um lançamento para a sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de lançamento da(s) página(s).
+exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 78%
 
 ---
 
-
-# Edição de lançamentos {#editing-launches}
+# Edição de inicializações {#editing-launches}
 
 ## Edição de páginas de lançamento {#editing-launch-pages}
 
@@ -19,7 +18,7 @@ Quando um lançamento foi criado para uma página (ou um conjunto de páginas), 
 1. Acesse [Lançamento a partir de Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
 1. Selecione **Vá para a página** para abrir a página para edição.
 
-Ao editar a página, você verá uma indicação na barra de ferramentas superior, junto com as opções **Sair** e **Navegar**:
+Ao editar a página, você verá uma indicação na barra de ferramentas superior, juntamente com o **Sair** e **Navegar** opções:
 
 ![Deixe e navegue para iniciar pelo Editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
@@ -32,10 +31,10 @@ Ao editar a página, você verá uma indicação na barra de ferramentas superio
 
 ### Edição de páginas de lançamento sujeitas a uma live copy {#editing-launch-pages-subject-to-a-live-copy}
 
-Se sua inicialização for baseada em um [Live Copy](/help/sites-cloud/administering/msm/overview.md), você:
+Se o lançamento se basear em um [Live Copy](/help/sites-cloud/administering/msm/overview.md) em seguida, você:
 
 * Consulte Bloquear símbolos (pequenos cadeados) ao editar um componente (conteúdo e/ou propriedades).
-* Consulte a guia **Live Copy** em **Propriedades da página**
+* Consulte a **Live Copy** em **Propriedades da página**
 
 Uma livecopy é usada para sincronizar o conteúdo da *ramificação de origem* para a *ramificação de inicialização* (para manter a inicialização atualizada com as alterações feitas na origem).
 
@@ -46,11 +45,11 @@ Você pode fazer alterações da mesma forma como pode editar uma live copy padr
 
 Consulte [Alteração do conteúdo da live copy](/help/sites-cloud/administering/msm/creating-live-copies.md) para obter mais informações.
 
-## Comparação de uma página de lançamento com sua página de origem  {#comparing-a-launch-page-to-its-source-page}
+## Comparação de uma página de lançamento com sua página de origem {#comparing-a-launch-page-to-its-source-page}
 
 Para rastrear as alterações feitas, é possível exibir a inicialização em **Referências** e comparar a página de inicialização com a página de origem:
 
-1. No console **Sites**, [navegue até as páginas de origem do seu lançamento e selecione um](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. No **Sites** console, [navegue até as páginas de origem do seu lançamento e selecione uma](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra o painel **[Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** e selecione **Lançamentos**.
 1. Selecione seu lançamento específico e depois **Comparar com a origem**:
 
@@ -60,12 +59,12 @@ Para rastrear as alterações feitas, é possível exibir a inicialização em *
 
    Para obter informações completas sobre como usar esse recurso, consulte [Diferencial de página](/help/sites-cloud/authoring/features/page-diff.md).
 
-## Alteração nas páginas de origem usadas  {#changing-the-source-pages-used}
+## Alteração nas páginas de origem usadas {#changing-the-source-pages-used}
 
 A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de páginas de origem para um lançamento:
 
 1. Acesse e selecione o lançamento a partir do seguinte:
-   * O console [Lançamentos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+   * O [Console Lançamentos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * Selecione **Editar**.
    * [Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
       * Selecione **Editar lançamento**.
@@ -76,7 +75,7 @@ A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de 
 >
 >Para adicionar páginas a um lançamento, elas devem estar abaixo de uma raiz de linguagem comum, isto é, dentro de um único site.
 
-## Edição de configuração de lançamento  {#editing-a-launch-configuration}
+## Edição de configuração de lançamento {#editing-a-launch-configuration}
 
 A qualquer momento, você pode editar as propriedades de um lançamento:
 
@@ -87,9 +86,9 @@ A qualquer momento, você pode editar as propriedades de um lançamento:
       * Selecione **Editar propriedades**.
       * Os detalhes serão mostrados.
 1. Faça as alterações necessárias e confirme com **Salvar**.
-   * Consulte [Lançamentos - a ordem de eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) para obter informações sobre o propósito e a interação dos campos **Data de lançamento** e **Pronto para produção**.
+   * Consulte [Inicializações - a Ordem dos eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) para obter informações sobre a finalidade e interação dos campos **Data de inicialização** e **Pronto para produção**.
 
-## Descoberta do status de lançamento de uma página  {#discovering-the-launch-status-of-a-page}
+## Descoberta do status de lançamento de uma página {#discovering-the-launch-status-of-a-page}
 
 O status é mostrado quando você seleciona um lançamento específico na guia Referências (consulte [Lançamentos em Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
 

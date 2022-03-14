@@ -25,9 +25,9 @@ Um formulário acessível é um formulário que todos podem usar, incluindo usu�
 Ao criar um formulário adaptável, o autor deve considerar os seguintes pontos para criar um formulário adaptável acessível:
 
 * Verifique o formulário com a ferramenta de teste de acessibilidade ANDI (Accessible Name and Description Inspetor)
-* Provide proper labels for form controls
+* Fornecer rótulos adequados para controles de formulário
 * Fornecer equivalentes de texto para imagens
-* Provide sufficient color contrast
+* Fornecer contraste de cor suficiente
 * Verifique se os controles de formulário são acessíveis ao teclado
 
 ## Pré-requisitos
@@ -92,7 +92,7 @@ Depois de aplicar um tema acessível, execute as correções adicionais listadas
 
 1. Use a descrição curta em vez da descrição longa dos componentes do formulário adaptável. Uma descrição longa adiciona o botão de ajuda. Verifique se o formulário adaptável não tem nenhum botão de ajuda.
 
-1. Add custom accessibility text to all the read-only cells of tables. Além disso, desative todas as células somente leitura das tabelas.
+1. Adicione texto de acessibilidade personalizado a todas as células de tabelas somente leitura. Além disso, desative todas as células somente leitura das tabelas.
 
 1. Remova os campos de assinatura do rabisco, se houver, no Formulário adaptável. Configure o formulário adaptável para usar [!DNL Adobe Sign] para uma experiência de assinatura digital contínua.
 
@@ -100,12 +100,12 @@ Depois de aplicar um tema acessível, execute as correções adicionais listadas
 
 O rótulo ou o título de um componente identifica o que o componente de formulário representa. Por exemplo, o texto &quot;Nome&quot; informa aos usuários que eles devem inserir seu nome em um campo de texto. Para ser acessível por leitores de tela, o rótulo é associado de forma programática a um componente de formulário. Como alternativa, o controle de formulário é configurado com informações adicionais de acessibilidade.
 
-The label that is perceived by screen readers need not necessarily be the same as the visual caption. Em alguns casos, talvez você queira ser mais específico sobre a finalidade do controle. Para cada objeto de campo em um formulário, as opções de acessibilidade podem ser usadas para especificar o que o leitor de tela anuncia para identificar o campo de formulário específico.
+O rótulo percebido pelos leitores de tela não precisa ser necessariamente o mesmo da legenda visual. Em alguns casos, talvez você queira ser mais específico sobre a finalidade do controle. Para cada objeto de campo em um formulário, as opções de acessibilidade podem ser usadas para especificar o que o leitor de tela anuncia para identificar o campo de formulário específico.
 
 Para usar a opção Acessibilidade , siga estas etapas:
 
 1. Selecione um componente e toque em ![cmppr](assets/cmppr.png).
-1. Click **[!UICONTROL Accessibility]** in the sidebar to choose the desired accessibility option.
+1. Clique em **[!UICONTROL Acessibilidade]** na barra lateral para escolher a opção de acessibilidade desejada.
 
 ### Opções de acessibilidade em componentes de formulário {#accessibility-options-in-form-components}
 
@@ -170,9 +170,9 @@ As seguintes teclas de atalho do teclado estão disponíveis para o componente S
 |---|---|
 | <ul><li>Exibir as opções do componente Seletor de datas quando o foco da guia realçar o ícone do calendário</li><li>Executar o evento de clique quando o foco da guia realçar uma opção</li> | Espaço ou Enter |
 | Ocultar as opções do componente Seletor de datas | Esc |
-| <ul><li>Mova o cursor para frente por meio das opções disponíveis no componente Seletor de datas.</li><li>Set tab focus on calendar icon when date input field is active</li> | Guia |
+| <ul><li>Mova o cursor para frente por meio das opções disponíveis no componente Seletor de datas.</li><li>Definir foco da guia no ícone de calendário quando o campo de entrada de data estiver ativo</li> | Guia |
 | Mova o cursor para trás através das opções disponíveis no componente Seletor de datas | Shift+Tab |
-| <ul><li>Display the Date Picker component options when the tab focus highlights the date input field</li><li>Mova o cursor para baixo no calendário disponível no componente Seletor de datas</li> | Seta para baixo |
+| <ul><li>Exibir as opções do componente Seletor de data quando o foco da guia realçar o campo de entrada de data</li><li>Mova o cursor para baixo no calendário disponível no componente Seletor de datas</li> | Seta para baixo |
 | Mova o cursor para cima no calendário, disponível no componente Seletor de datas | Seta para cima |
 | Move o cursor para trás no calendário, disponível no componente Seletor de datas | Seta para a esquerda |
 | Move o cursor para frente no calendário disponível no componente Seletor de datas | Seta para a direita |
@@ -180,10 +180,10 @@ As seguintes teclas de atalho do teclado estão disponíveis para o componente S
 | Executar a ação para o ícone de seta de navegação direita ![seta para a direita](assets/right-navigation-icon.svg) disponível no calendário | Shift+Seta para a esquerda |
 | Executar a ação para o ícone de seta de navegação à esquerda ![seta esquerda](assets/left-navigation-icon.svg) disponível no calendário | Shift+Seta para a direita |
 
-## Use the accessibility tool to find remaining accessibility issues
+## Use a ferramenta de acessibilidade para encontrar problemas de acessibilidade restantes
 
 O ANDI (Accessible Name and Description Inspetor) ajuda a identificar e corrigir problemas relacionados à conformidade de acessibilidade em um formulário adaptável. Para usar a ferramenta ANDI para encontrar os problemas de acessibilidade em um Formulário adaptável:
 
-1. Open the Adaptive Form in preview mode.
-1. Clique no ícone de ferramenta ANDI marcado. The ANDI tool analyzes the Adaptive Form and displays accessibility issues. Para obter detalhes sobre como usar a ferramenta, consulte [Documentação da ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
+1. Abra o Adaptive Form no modo de visualização.
+1. Clique no ícone de ferramenta ANDI marcado. A ferramenta ANDI analisa o formulário adaptável e exibe problemas de acessibilidade. Para obter detalhes sobre como usar a ferramenta, consulte [Documentação da ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
 1. Revise e corrija os problemas relatados pela ANDI.

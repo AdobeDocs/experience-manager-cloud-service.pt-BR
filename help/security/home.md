@@ -4,7 +4,7 @@ description: Recursos de autoajuda e links de documentação da segurança do Ad
 landing-page-description: Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service.
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 100%
 

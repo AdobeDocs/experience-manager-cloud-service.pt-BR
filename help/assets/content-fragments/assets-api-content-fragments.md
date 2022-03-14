@@ -22,7 +22,6 @@ Saiba mais sobre o suporte para Fragmentos de conteúdo na API HTTP do Assets, u
 >
 >* API REST de ativos
 >* incluindo suporte para Fragmentos de conteúdo
-
 >
 >A implementação atual da API HTTP de ativos é baseada no [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) estilo arquitetônico.
 
@@ -148,7 +147,6 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >
 >* [Explicação do CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vídeo - Desenvolvimento do CORS com AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 

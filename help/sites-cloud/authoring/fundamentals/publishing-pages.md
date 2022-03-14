@@ -19,7 +19,7 @@ Você pode publicar/desfazer a publicação de uma página imediatamente ou em u
 
 ## Terminologia {#terminology}
 
-Você pode encontrar termos diferentes relacionados à publicação ao trabalhar com o Adobe Experience Manager (AEM) como Cloud Service.
+Você pode encontrar termos diferentes relacionados à publicação enquanto trabalha com o Adobe Experience Manager (AEM) as a Cloud Service.
 
 * **Publicar/Desfazer a publicação**
    * Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
@@ -49,7 +49,7 @@ Dependendo da sua localização, você pode publicar:
 
 >[!NOTE]
 >
-> Para outras possibilidades, consulte **No Tempo** e **Tempo desligado** na guia [Básico das Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> Para ver outras possibilidades, consulte **Hora de ligar** e **Hora de desligar** no [Guia Básico das Propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Publicação por meio do Editor {#publishing-from-the-editor}
 
@@ -82,7 +82,7 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 >[!NOTE]
 >
->As páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não podem ser publicadas. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+>Páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não pode ser publicado. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
 ### Publicação por meio do Console {#publishing-from-the-console}
 
@@ -113,7 +113,7 @@ Para publicar uma página com a Publicação rápida:
 
 #### Gerenciar publicação    {#manage-publication}
 
-**A opção Gerenciar** publicação oferece mais opções do que a Publicação  **rápida**, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
+**Gerenciar publicação** oferece mais opções do que **Publicação rápida**, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
 
 Para publicar ou desfazer a publicação de uma página usando Gerenciar publicação:
 
@@ -148,9 +148,9 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    Você pode usar o botão **Adicionar conteúdo** para adicionar outras páginas à lista de páginas a serem publicadas caso tenha se esquecido de selecionar uma antes de iniciar o assistente para Gerenciar publicação.
 
-   Selecionar o botão **Adicionar Conteúdo** inicia o [navegador de caminho](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) para permitir a seleção de conteúdo.
+   Selecionar o **Adicionar conteúdo** O botão inicia o [navegador de caminho](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) para permitir a seleção de conteúdo.
 
-   Selecione as páginas necessárias e clique em **Select** para adicionar o conteúdo ao assistente ou em **Cancelar** para cancelar a seleção e retornar ao assistente.
+   Selecione as páginas necessárias e clique em **Selecionar** para adicionar o conteúdo ao assistente ou **Cancelar** para cancelar a seleção e retornar ao assistente.
 
    **Remover seleção**
 
@@ -178,7 +178,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
    >
    >Consulte [Publicar e desfazer a publicação de uma árvore](#publishing-and-unpublishing-a-tree)
 
-   Clicar em **Incluir filhos** abre uma caixa de diálogo que permite:
+   Clicar **Incluir filhos** abre uma caixa de diálogo que permite:
 
    * **Incluir filhos**
    * **Incluir somente filhos imediatos**
@@ -224,7 +224,7 @@ Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a
 
 >[!NOTE]
 >
->As páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não podem ter a publicação desfeita. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+>Páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não pode desfazer a publicação. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
 ### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
 
@@ -257,18 +257,18 @@ Você pode usar a opção [Gerenciar publicação](#manage-publication) no conso
 
    ![Gerenciar páginas de seleção de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. Na caixa de diálogo **Incluir filhos**:
+1. No **Incluir filhos** caixa de diálogo:
 
-   * selecione **Incluir filhos**
-   * desmarque **Incluir somente filhos imediatos**
-   * desmarque **Incluir apenas páginas já publicadas**
-   * configure **Incluir apenas páginas modificadas** conforme necessário
+   * select **Incluir filhos**
+   * cancelar seleção **Incluir somente filhos imediatos**
+   * cancelar seleção **Incluir somente páginas já publicadas**
+   * configure **Incluir somente as páginas modificadas** conforme necessário
 
-   Essas opções são selecionadas por padrão, portanto, lembre-se de configurá-las. Confirme a seleção com **OK** para adicionar o conteúdo à publicação ou ao cancelamento da publicação.
+   Essas opções são selecionadas por padrão, portanto, lembre-se de configurá-las. Confirmar a seleção com **OK** para adicionar o conteúdo à publicação ou ao cancelamento da publicação.
 
    ![Inclusão de filhos para publicação em árvore](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. No assistente **Gerenciar publicação**, é possível personalizar ainda mais a seleção, adicionando outras páginas ou removendo as selecionadas.
+1. No **Gerenciar publicação** assistente você pode personalizar ainda mais a seleção adicionando outras páginas ou removendo as selecionadas.
 
    Lembre-se de que você também pode rever as referências a serem publicadas por meio da opção **Referências publicadas**.
 

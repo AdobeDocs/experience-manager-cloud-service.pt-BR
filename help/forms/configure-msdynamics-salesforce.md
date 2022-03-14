@@ -9,7 +9,7 @@ ht-degree: 1%
 
 ---
 
-# Configurar [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] serviços em nuvem {#configure-azure-storage}
+# Configurar os serviços em nuvem do [!DNL Microsoft Dynamics 365] e do [!DNL Salesforce] {#configure-azure-storage}
 
 [[!DNL Experience Manager Forms] Integração de dados](data-integration.md) forneça [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] serviços em nuvem para integrar formulários adaptáveis aos Modelos de dados de formulário prontos para uso. O Adaptive Forms pode então interagir com [!DNL Microsoft Dynamics 365] e [!DNL Salesforce] servidores para ativar workflows de negócios. Por exemplo:
 

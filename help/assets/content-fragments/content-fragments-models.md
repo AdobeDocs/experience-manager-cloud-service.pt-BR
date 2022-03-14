@@ -7,7 +7,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
 workflow-type: tm+mt
 source-wordcount: '2838'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -30,9 +30,9 @@ Para usar os Modelos de fragmento do conteúdo, você pode:
 
    >[!CAUTION]
    >
-   >Se a variável [o uso de modelos de fragmento de conteúdo não foi ativado](/help/assets/content-fragments/content-fragments-configuration-browser.md), o **Criar** não estará disponível.
+   >Se o [uso de modelos de fragmento de conteúdo não foi habilitado](/help/assets/content-fragments/content-fragments-configuration-browser.md), a opção **Criar** não estará disponível.
 
-1. Especifique o **título do modelo**. Você também pode adicionar **Tags**, a **Descrição** e selecione **Ativar modelo** para [habilitar o modelo](#enabling-disabling-a-content-fragment-model) se necessário.
+1. Especifique o **título do modelo**. You can also add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if required.
 
    ![título e descrição](assets/cfm-models-02.png)
 
@@ -87,7 +87,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
    ![remover](assets/cfm-models-06.png)
 
-1. Adicione todos os campos obrigatórios e defina as propriedades relacionadas, conforme necessário. Por exemplo:
+1. Add all required fields, and define the related properties, as required. Por exemplo:
 
    ![save](assets/cfm-models-07.png)
 
@@ -98,13 +98,13 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 Uma seleção de tipos de dados está disponível para definir seu modelo:
 
 * **Texto em linha única**
-   * Adicione um ou mais campos de uma única linha de texto; o comprimento máximo pode ser definido
+   * Add one, or more, fields of a single line of text; the maximum length can be defined
 * **Texto multilinha**
-   * Uma área de texto que pode ser Rich Text, Plain Text ou Markdown
+   * A text area that can be Rich Text, Plain Text or Markdown
 * **Número**
-   * Adicionar um ou mais campos numéricos
+   * Add one, or more, numerical fields
 * **Booleano**
-   * Adicionar uma caixa de seleção booleana
+   * Add a boolean checkbox
 * **Data e hora**
    * Adicionar uma data e/ou hora
 * **Enumeração**
@@ -127,7 +127,7 @@ Uma seleção de tipos de dados está disponível para definir seu modelo:
 * **Espaço reservado da guia**
    * Permite a introdução de guias para uso ao editar o conteúdo do Fragmento de conteúdo.
 Isso será mostrado como um divisor no editor de modelo, separando seções da lista de tipos de dados de conteúdo. Cada instância representa o início de uma nova guia.
-No editor de fragmentos, cada instância aparecerá como uma guia.
+No editor de fragmentos, cada instância será exibida como uma guia.
 
       >[!NOTE]
       Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL AEM.
@@ -168,13 +168,13 @@ O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos
 
    Isso é usado para garantir que os autores de conteúdo não possam repetir o conteúdo já adicionado em outro fragmento do mesmo modelo.
 
-   Por exemplo, um **Texto de linha única** campo chamado `Country` no Modelo de fragmento de conteúdo não pode ter o valor `Japan` em dois Fragmentos de conteúdo dependentes. Um aviso será emitido quando a segunda instância for tentada.
+   Por exemplo, um **Texto de linha única** campo chamado `Country` no Modelo de fragmento de conteúdo não pode ter o valor `Japan` em dois Fragmentos de conteúdo dependentes. A warning will be issued when the second instance is attempted.
 
    >[!NOTE]
-   A exclusividade é assegurada por raiz de idioma.
+   Uniqueness is ensured per language root.
 
    >[!NOTE]
-   As variações podem ter o mesmo *único* como variações do mesmo fragmento, mas não o mesmo valor usado em qualquer variação de outros fragmentos.
+   Variations can have the same *unique* value as variations of the same fragment, but not the same value as used in any variation of other fragments.
 
 * Consulte **[Referência de conteúdo](#content-reference)** para obter mais detalhes sobre esse tipo de dados específico e suas propriedades.
 
@@ -190,16 +190,16 @@ O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos
 
 ## Validação {#validation}
 
-Vários tipos de dados agora incluem a possibilidade de definir requisitos de validação para quando o conteúdo é inserido no fragmento resultante:
+Various data types now include the possibility to define validation requirements for when content is entered in the resulting fragment:
 
 * **Texto em linha única**
-   * Compare com um regex predefinido.
+   * Compare against a predefined regex.
 * **Número**
-   * Verifique valores específicos.
+   * Check for specific values.
 * **Referência de conteúdo**
    * Teste tipos específicos de conteúdo.
-   * Somente ativos de tamanho de arquivo especificado ou menor podem ser referenciados.
-   * Somente imagens dentro de um intervalo predefinido de largura e/ou altura (em pixels) podem ser referenciadas.
+   * Only assets of specified file size or smaller can be referenced.
+   * Only images within a predefined range of width and/or height (in pixels) can be referenced.
 * **Referência do fragmento**
    * Teste um modelo de fragmento de conteúdo específico.
 
@@ -208,7 +208,7 @@ Vários tipos de dados agora incluem a possibilidade de definir requisitos de va
 Os Fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguintes tipos de dados:
 
 * **[Referência de conteúdo](#content-reference)**
-   * Fornece uma referência simples a outro conteúdo; de qualquer tipo.
+   * Provides a simple reference to other content; of any type.
    * Pode ser configurado para uma ou várias referências (no fragmento resultante).
 
 * **[Referência do fragmento](#fragment-reference-nested-fragments)** (Fragmentos aninhados)
@@ -292,7 +292,7 @@ Especifica um caminho raiz para qualquer fragmento referenciado.
 Está em vigor um mecanismo de proteção contra as recorrências. Ela proíbe que o usuário selecione o Fragmento de conteúdo atual na Referência de fragmento. Isso pode levar a uma caixa de diálogo vazia do seletor de referência de fragmento.
 Também há uma proteção de recorrência para Referências de fragmento em GraphQL. Se você criar uma consulta profunda em dois Fragmentos de conteúdo que fazem referência um ao outro, ela retornará um valor nulo.
 
-## Modelo de fragmento de conteúdo - Propriedades {#content-fragment-model-properties}
+## Content Fragment Model - Properties {#content-fragment-model-properties}
 
 Você pode editar o **Propriedades** de um modelo de fragmento de conteúdo:
 
@@ -312,14 +312,14 @@ Depois que um modelo é criado, ele precisa ser ativado para que ele:
 
 * Está disponível para seleção ao criar um novo Fragmento do conteúdo.
 * Pode ser referenciado a partir de um Modelo de fragmento de conteúdo.
-* Está disponível para GraphQL; assim, o schema é gerado.
+* Is available to GraphQL; so the schema is generated.
 
-Para ativar um Modelo que esteja sinalizado como:
+To enable a Model that is flagged as either:
 
 * **Rascunho** : mw (nunca habilitado).
 * **Desabilitado** : foi especificamente desativado.
 
-Você usa a variável **Habilitar** de:
+You use the **Enable** option from either:
 
 * A barra de ferramentas superior, quando o Modelo necessário estiver selecionado.
 * A Ação rápida correspondente (passe o mouse sobre o Modelo necessário).
@@ -371,7 +371,7 @@ Para configurar o **Políticas** para **Modelos permitidos de fragmento do conte
 
 1. **Salvar** quaisquer alterações.
 
-Os Modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos da seguinte maneira:
+The Content Fragment Models allowed for a folder are resolved as follows:
 * O **Políticas** para **Modelos permitidos de fragmento do conteúdo**.
 * Se estiver vazio, tente determinar a política usando as regras de herança.
 * Se a cadeia de herança não fornecer um resultado, verifique a **Cloud Services** configuração dessa pasta (também diretamente e, em seguida, por herança).
@@ -400,9 +400,9 @@ Para publicar um modelo de fragmento de conteúdo:
 
 1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
 
-1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
-1. Selecione seu modelo, seguido por **Publicar** na barra de ferramentas.
-O status publicado será indicado no console.
+1. Navigate to the folder holding your content fragment model.
+1. Select your model, followed by **Publish** from the toolbar.
+The published status will be indicated in the console.
 
    >[!NOTE]
    Se você publicar um fragmento de conteúdo para o qual o modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
@@ -413,15 +413,15 @@ Os modelos de fragmento de conteúdo podem ter a publicação cancelada se não 
 
 Para cancelar a publicação de um modelo de fragmento de conteúdo:
 
-1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
+1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
-1. Selecione seu modelo, seguido por **Cancelar publicação** na barra de ferramentas.
+1. Select your model, followed by **Unpublish** from the toolbar.
 O status publicado será indicado no console.
 
-Se você tentar desfazer a publicação de um modelo usado atualmente por um ou mais fragmentos, um aviso de erro informará você sobre:
+Se você tentar desfazer a publicação de um modelo que é usado atualmente por um ou mais fragmentos, um aviso de erro informará você sobre:
 
-![Mensagem de erro do Modelo de fragmento de conteúdo ao cancelar a publicação de um modelo em uso](assets/cfm-model-unpublish-error.png)
+![Content Fragment Model error message when unpublishing a model that is in use](assets/cfm-model-unpublish-error.png)
 
 A mensagem sugerirá que você verifique a [Referências](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) painel para investigar mais detalhadamente:
 
@@ -433,7 +433,7 @@ Esse recurso fornece o controle dos Modelos de fragmento de conteúdo que foram 
 
 ### O desafio {#the-challenge}
 
-* Os Modelos de fragmento de conteúdo determinam o esquema para consultas GraphQL em AEM.
+* Content Fragment Models determine the schema for GraphQL queries in AEM.
 
    * AEM esquemas GraphQL são criados assim que um Modelo de fragmento de conteúdo é criado e podem existir em ambientes do autor e de publicação.
 

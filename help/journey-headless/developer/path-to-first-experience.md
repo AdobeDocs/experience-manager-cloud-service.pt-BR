@@ -5,7 +5,7 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '2014'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -136,7 +136,7 @@ Queremos que você se baseie nesse conhecimento fundamental para entender totalm
 Não importa qual o seu estilo de aprendizagem, o Adobe quer que você tenha sucesso à medida que inicia seu projeto AEM Headless.
 
 * Se preferir continuar a **saiba mais sobre conceitos sem periféricos e AEM tecnologias sem periféricos**, você deve continuar sua jornada sem periféricos AEM ao revisar o documento [Como modelar seu conteúdo como modelos de conteúdo AEM](model-your-content.md) onde você aprende a modelar sua estrutura de conteúdo no AEM.
-* Se preferir **aprenda fazendo**, você pode pular para o [Introdução ao AEM tutorial prático](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) onde você vai participar diretamente AEM desenvolvimento sem cabeçalho implementando um projeto simples para expor AEM conteúdo sem cabeçalho.
+* Se preferir **aprenda fazendo**, você pode pular para o [Introdução ao AEM tutorial prático](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR) onde você vai participar diretamente AEM desenvolvimento sem cabeçalho implementando um projeto simples para expor AEM conteúdo sem cabeçalho.
 
 ## Recursos adicionais {#additional-resources}
 
@@ -144,7 +144,7 @@ Embora seja recomendável seguir para a próxima parte da jornada de desenvolvim
 
 * [jornada de tradução sem cabeçalho AEM](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia sem interface, como a AEM fornece conteúdo sem interface e como você pode traduzi-la.
 * [Desenvolvimento sem periféricos para o AEM Sites as a Cloud Service](/help/headless/introduction.md) - Uma introdução rápida para orientar o desenvolvedor sem cabeçalho AEM com os recursos necessários
-* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.
+* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.
 * [Gerenciamento de conteúdo sem cabeçalho usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. A autenticação via AdobeID é necessária.
 * [WKND de guias de AEM - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este projeto do GitHub inclui aplicativos de exemplo que destacam AEM APIs GraphQL.
 * [Introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Uma visão geral completa da arquitetura AEM

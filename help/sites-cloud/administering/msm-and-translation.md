@@ -7,7 +7,7 @@ exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -20,11 +20,11 @@ O Adobe Experience Manager integrado Multi Site Manager e as ferramentas de trad
 * A tradução permite automatizar a tradução do conteúdo da página para criar e manter sites multilíngues:
    * [Tradução de conteúdo para sites multilíngues](translation/overview.md)
 
-Esses dois recursos podem ser combinados para atender a sites que são [multinacionais e multilíngues](#multinational-and-multilingual-sites).
+Esses dois recursos podem ser combinados para atender a sites que são ambos [multinacional e multilingue](#multinational-and-multilingual-sites).
 
 >[!TIP]
 >
->Se você não estiver familiarizado com a tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é o caminho orientado pela tradução do conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideal para aqueles sem AEM ou experiência de tradução.
+>Se você é novo em traduzir conteúdo, consulte nosso [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é o caminho orientado pela tradução do conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência de AEM ou tradução.
 
 ## Sites multinacionais e multilíngues {#multinational-and-multilingual-sites}
 
@@ -32,7 +32,7 @@ Você pode criar conteúdo com eficiência para sites multinacionais e multilín
 
 Normalmente, você cria um site principal em um idioma e para um país específico, em seguida, usa esse conteúdo como base para os outros sites, usando tradução quando necessário.
 
-1. [](translation/overview.md) Traduza o site principal em diferentes idiomas.
+1. [Traduzir](translation/overview.md) o site principal em diferentes idiomas.
 1. Use [Gerenciador de vários sites](msm/overview.md) para:
    1. Reutilize o conteúdo do site principal e suas traduções para criar sites para outros países e culturas.
    1. Quando necessário, desanexe elementos das Live Copies para adicionar detalhes de localização.
@@ -49,8 +49,8 @@ O diagrama a seguir ilustra como os principais conceitos se cruzam (mas não mos
 
 Neste cenário, e em situações comparáveis, o MSM não gerencia as diferentes versões de idioma como tal.
 
-* [](msm/overview.md) O MSMgerencia a implantação de conteúdo traduzido de um blueprint (ou seja, um principal global) para as Live Copies (ou seja, os sites locais), dentro dos limites de um idioma.
-* Os recursos de integração [translation](translation/overview.md) do AEM, juntamente com serviços de gerenciamento de tradução de terceiros, gerenciam os idiomas e traduzem o conteúdo nesses diferentes idiomas.
+* [MSM](msm/overview.md) gerencia a implantação do conteúdo traduzido de um blueprint (ou seja, um principal global) para as Live Copies (ou seja, os sites locais), dentro dos limites de um idioma.
+* O [tradução](translation/overview.md) recursos de integração do AEM, juntamente com serviços de gerenciamento de tradução de terceiros, gerencia os idiomas e traduz o conteúdo nesses diferentes idiomas.
 
 Para casos de uso mais avançados, o MSM também pode ser usado em mestres de idiomas.
 

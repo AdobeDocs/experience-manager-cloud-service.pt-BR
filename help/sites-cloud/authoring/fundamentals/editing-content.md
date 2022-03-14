@@ -1,14 +1,13 @@
 ---
 title: Editar conteúdo da página
 description: Uma vez que a sua página é criada, você poderá editar o conteúdo para fazer atualizações necessárias
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
 
 ---
-
 
 # Editar conteúdo da página{#editing-page-content}
 
@@ -270,7 +269,7 @@ Existem dois métodos de adição e/ou edição do conteúdo dos componentes:
 * Abra a caixa de diálogo de [componentes para editar](#component-edit-dialog).
 * [Arraste e solte um ativo](#drag-and-drop-assets-into-component) do navegador de ativos para adicionar diretamente o conteúdo.
 
-### Caixa de diálogo de edição de componente    {#component-edit-dialog}
+### Caixa de diálogo de edição de componente   {#component-edit-dialog}
 
 Você pode abrir um componente para editar o conteúdo usando o [ícone Editar (lápis) na barra de ferramentas do componente](#component-toolbar).
 
@@ -394,7 +393,7 @@ Você pode alternar facilmente para o [editor de modelo](/help/sites-cloud/autho
 
 É possível ver em qual modelo a página é baseada ao selecionar a página na [Exibição de coluna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) ou na [Exibição de lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
 
-## Status da Live Copy    {#live-copy-status}
+## Status da Live Copy   {#live-copy-status}
 
 O modo de página [Status da Live Copy](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) permite ter uma visão geral rápida do status da live copy e quais componentes são/não são herdados:
 
@@ -409,7 +408,7 @@ Por exemplo:
 
 As [anotações ](/help/sites-cloud/authoring/fundamentals/annotations.md) permitem que revisores e outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
 
-## Visualizar páginas    {#previewing-pages}
+## Visualizar páginas   {#previewing-pages}
 
 Existem duas opções para a visualização de uma página:
 
@@ -443,7 +442,7 @@ Ao criar, o modo de visualização estará disponível utilizando o ícone no ca
 
 A opção **Exibir como publicada** está disponível no menu [Informações da página](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information). Isto abre a página em uma nova guia, atualiza o conteúdo e mostra as páginas exatamente como elas aparecerão no ambiente de publicação.
 
-## Bloquear uma página {#locking-a-page}
+## Bloquear uma página   {#locking-a-page}
 
 O AEM permite bloquear uma página, de modo que ninguém mais possa modificar o conteúdo. Isso é útil quando você está fazendo diversas edições para uma página específica ou quando precisa congelar uma página por pouco tempo.
 

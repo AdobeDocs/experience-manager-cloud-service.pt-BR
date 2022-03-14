@@ -30,7 +30,7 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 
 | Nível de suporte | Descrição |
 | ------------- | --------------------------- |
-| Instantâneo | Compatível |
+| ✓ | Compatível |
 | * | Ver observações abaixo do quadro |
 | - | Não aplicável |
 
@@ -38,17 +38,17 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 
 | Formato de arquivo | Geração de miniaturas | Extração de texto completo | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | Instantâneo | - | Instantâneo | Instantâneo |
-| COLAGEM | - | - | Instantâneo | - |
-| DN | Instantâneo | - | Instantâneo | Instantâneo |
-| IDEIAS | - | - | Instantâneo | - |
-| INDD | Instantâneo | - | Instantâneo | ✓ * |
-| INDT | - | - | Instantâneo | - |
-| PDF | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| PROTO | - | - | Instantâneo | - |
-| PSB | Instantâneo | - | Instantâneo | Instantâneo |
-| PSD | Instantâneo | - | Instantâneo | Instantâneo |
-| XD | Instantâneo | - | Instantâneo | Instantâneo |
+| AI | ✓ | - | ✓ | ✓ |
+| COLAGEM | - | - | ✓ | - |
+| DN | ✓ | - | ✓ | ✓ |
+| IDEIAS | - | - | ✓ | - |
+| INDD | ✓ | - | ✓ | ✓ * |
+| INDT | - | - | ✓ | - |
+| PDF | ✓ | ✓ | ✓ | ✓ |
+| PROTO | - | - | ✓ | - |
+| PSB | ✓ | - | ✓ | ✓ |
+| PSD | ✓ | - | ✓ | ✓ |
+| XD | ✓ | - | ✓ | ✓ |
 
 \* Para [!DNL Adobe InDesign] arquivos (INDD), o tamanho da representação é determinado pela visualização incorporada no arquivo INDD. Configure as preferências em [!DNL InDesign] (**[!UICONTROL Preferências > Manuseio de arquivo > Sempre salvar imagens de visualização com documentos, Tamanho da visualização]**) para incorporar uma representação maior.
 
@@ -56,16 +56,16 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura | Cortar |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | Instantâneo | - | Instantâneo | Instantâneo |
-| EPS | Instantâneo | Instantâneo | - | - |
-| GIF | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| RGB | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| RGBA | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| SGI | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| SVG | Instantâneo | - | Instantâneo | Instantâneo |
-| TIFF | Instantâneo | Instantâneo | Instantâneo | - |
+| BMP | ✓ | - | ✓ | ✓ |
+| EPS | ✓ | ✓ | - | - |
+| GIF | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ |
+| PNG | ✓ | ✓ | ✓ | ✓ |
+| RGB | ✓ | ✓ | ✓ | ✓ |
+| RGBA | ✓ | ✓ | ✓ | ✓ |
+| SGI | ✓ | ✓ | ✓ | ✓ |
+| SVG | ✓ | - | ✓ | ✓ |
+| TIFF | ✓ | ✓ | ✓ | - |
 
 ## Formatos 3D {#support-3d-formats}
 
@@ -75,44 +75,44 @@ Consulte também [Trabalhar com ativos 3D no Dynamic Media](/help/assets/dynamic
 
 | Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Visualização de miniatura | Visualização 3D | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo | - | - |
-| gLB | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
-| gLTF | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | - | Instantâneo | - |
-| OBJ | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
-| STL | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
-| USDz | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | - | Instantâneo |
+| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## [!DNL Camera RAW] formatos {#camera-raw-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | Instantâneo | Instantâneo | Instantâneo |
-| ARMA | Instantâneo | Instantâneo | Instantâneo |
-| CR2 | Instantâneo | Instantâneo | Instantâneo |
-| CR3 | Instantâneo | Instantâneo | Instantâneo |
-| CRW | Instantâneo | Instantâneo | Instantâneo |
-| DCR | Instantâneo | Instantâneo | Instantâneo |
-| DNG | Instantâneo | Instantâneo | Instantâneo |
-| ERF | Instantâneo | Instantâneo | Instantâneo |
-| FFF | Instantâneo | Instantâneo | Instantâneo |
-| GPR | Instantâneo | Instantâneo | Instantâneo |
-| IIQ | Instantâneo | Instantâneo | Instantâneo |
-| KDC | Instantâneo | Instantâneo | Instantâneo |
-| MEF | Instantâneo | Instantâneo | Instantâneo |
-| MFW | Instantâneo | Instantâneo | Instantâneo |
-| MOS | Instantâneo | Instantâneo | Instantâneo |
-| MRW | Instantâneo | Instantâneo | Instantâneo |
-| NEF | Instantâneo | Instantâneo | Instantâneo |
-| NRW | Instantâneo | Instantâneo | Instantâneo |
-| ORF | Instantâneo | Instantâneo | Instantâneo |
-| PEF | Instantâneo | Instantâneo | Instantâneo |
-| RAF | Instantâneo | Instantâneo | Instantâneo |
-| BRUTO | Instantâneo | Instantâneo | Instantâneo |
-| RW2 | Instantâneo | Instantâneo | Instantâneo |
-| RWL | Instantâneo | Instantâneo | Instantâneo |
-| SRF | Instantâneo | Instantâneo | Instantâneo |
-| SRW | Instantâneo | Instantâneo | Instantâneo |
-| X3F | Instantâneo | Instantâneo | Instantâneo |
+| 3FR | ✓ | ✓ | ✓ |
+| ARMA | ✓ | ✓ | ✓ |
+| CR2 | ✓ | ✓ | ✓ |
+| CR3 | ✓ | ✓ | ✓ |
+| CRW | ✓ | ✓ | ✓ |
+| DCR | ✓ | ✓ | ✓ |
+| DNG | ✓ | ✓ | ✓ |
+| ERF | ✓ | ✓ | ✓ |
+| FFF | ✓ | ✓ | ✓ |
+| GPR | ✓ | ✓ | ✓ |
+| IIQ | ✓ | ✓ | ✓ |
+| KDC | ✓ | ✓ | ✓ |
+| MEF | ✓ | ✓ | ✓ |
+| MFW | ✓ | ✓ | ✓ |
+| MOS | ✓ | ✓ | ✓ |
+| MRW | ✓ | ✓ | ✓ |
+| NEF | ✓ | ✓ | ✓ |
+| NRW | ✓ | ✓ | ✓ |
+| ORF | ✓ | ✓ | ✓ |
+| PEF | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ |
+| BRUTO | ✓ | ✓ | ✓ |
+| RW2 | ✓ | ✓ | ✓ |
+| RWL | ✓ | ✓ | ✓ |
+| SRF | ✓ | ✓ | ✓ |
+| SRW | ✓ | ✓ | ✓ |
+| X3F | ✓ | ✓ | ✓ |
 
 ## Formatos de documento {#document-formats}
 
@@ -120,53 +120,53 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 | Formato de arquivo | Geração de miniaturas | Extração de texto completo | Largura/altura | Gerenciamento de metadados | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| DOC | - | - | - | Instantâneo | Instantâneo |
-| DOCX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| ePub | - | Instantâneo | - | - | - |
-| HTML | - | Instantâneo | - | Instantâneo | Instantâneo |
-| ODF | Instantâneo | Instantâneo | Instantâneo | - | - |
-| ODM | Instantâneo | Instantâneo | Instantâneo | - | - |
-| ODP | Instantâneo | Instantâneo | Instantâneo | - | - |
-| ODS | Instantâneo | Instantâneo | Instantâneo | - | - |
-| ODT | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| OFG | Instantâneo | Instantâneo | Instantâneo | - | - |
-| PDF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| PPT | - | - | - | Instantâneo | Instantâneo |
-| PPTX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| PS | - | - | Instantâneo | - | - |
-| RTF | - | Instantâneo | - | Instantâneo | Instantâneo |
-| TXT | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
-| XLS | - | - | - | Instantâneo | Instantâneo |
-| XLSX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| XML | - | Instantâneo | - | - | - |
+| DOC | - | - | - | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ePub | - | ✓ | - | - | - |
+| HTML | - | ✓ | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
+| OFG | ✓ | ✓ | ✓ | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PS | - | - | ✓ | - | - |
+| RTF | - | ✓ | - | ✓ | ✓ |
+| TXT | ✓ | ✓ | - | ✓ | ✓ |
+| XLS | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | - | ✓ | - | - | - |
 
 ## Formatos de vídeo {#video-formats}
 
 | Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | Instantâneo | - |
-| 3GP | - | Instantâneo | - |
-| AVI | Instantâneo | Instantâneo | Instantâneo |
-| DIVX | Instantâneo | - | Instantâneo |
-| F4V | Instantâneo | Instantâneo | Instantâneo |
-| FLV | Instantâneo | Instantâneo | Instantâneo |
-| M2T | Instantâneo | - | Instantâneo |
-| M2TS | Instantâneo | - | Instantâneo |
-| M2V | Instantâneo | - | Instantâneo |
-| M4V | Instantâneo | Instantâneo | Instantâneo |
-| MKV | Instantâneo | - | Instantâneo |
-| MOV | Instantâneo | Instantâneo | Instantâneo |
-| MP4 | Instantâneo | Instantâneo | Instantâneo |
-| MPEG | Instantâneo | Instantâneo | Instantâneo |
-| MPG | Instantâneo | Instantâneo | Instantâneo |
-| MTS | Instantâneo | - | Instantâneo |
-| MXF | Instantâneo | - | Instantâneo |
-| OGV | Instantâneo | - | Instantâneo |
-| QT | Instantâneo | - | Instantâneo |
-| R3D | - | Instantâneo | Instantâneo |
-| SWF | Instantâneo | - | Instantâneo |
-| WebM | Instantâneo | - | Instantâneo |
-| WMV | Instantâneo | Instantâneo | Instantâneo |
+| 3G2 | - | ✓ | - |
+| 3GP | - | ✓ | - |
+| AVI | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ |
+| F4V | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ |
+| M2TS | ✓ | - | ✓ |
+| M2V | ✓ | - | ✓ |
+| M4V | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ |
+| MOV | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ |
+| MXF | ✓ | - | ✓ |
+| OGV | ✓ | - | ✓ |
+| QT | ✓ | - | ✓ |
+| R3D | - | ✓ | ✓ |
+| SWF | ✓ | - | ✓ |
+| WebM | ✓ | - | ✓ |
+| WMV | ✓ | ✓ | ✓ |
 
 ## Formatos de áudio {#audio-formats}
 
@@ -211,22 +211,22 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 | Formato | Upload (Formato de entrada) | Criar predefinição de imagem (formato de saída) | Visualizar representação dinâmica | Fornecer representação dinâmica | Baixar representação dinâmica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | Instantâneo | - | - | - | - |
-| INDD | Instantâneo | - | - | - | - |
-| PDF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| AI | ✓ | - | - | - | - |
+| INDD | ✓ | - | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## Dynamic Media - Formatos de imagem rasterizada compatíveis {#image-support-dynamic-media}
 
 | Formato | Upload (Formato de entrada) | Criar predefinição de imagem (formato de saída) | Visualizar representação dinâmica | Fornecer representação dinâmica | Baixar representação dinâmica | Definir tipos que suportam este formato |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP | Instantâneo | - | - | - | - | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
-| EPS | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| GIF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
-| PICT | Instantâneo | - | - | - | - | - |
-| PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
-| PSD ‡ | Instantâneo | - | - | - | - | - |
-| TIFF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | - | - | - | - | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+| EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | ✓ | - | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+| PSD ‡ | ✓ | - | - | - | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md)e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada por [!DNL Adobe Photoshop] e está incluído no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 

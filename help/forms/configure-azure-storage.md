@@ -9,7 +9,7 @@ ht-degree: 1%
 
 ---
 
-# Configurar[!DNL Azure]armazenamento {#configure-azure-storage}
+# Configurar armazenamento do [!DNL Azure] {#configure-azure-storage}
 
 [[!DNL Experience Manager Forms] Integração de dados](data-integration.md) fornece uma [!DNL Azure] configuração de armazenamento para integrar formulários com o [!DNL Azure] serviços de armazenamento. O Modelo de dados de formulário pode ser usado para criar um Forms adaptável que interage com o [!DNL Azure] para ativar workflows de negócios. Por exemplo:
 

@@ -1,13 +1,13 @@
 ---
-title: Criação de uma Ramificação
+title: Criação de uma ramificação
 description: Esta página descreve como criar uma ramificação no Cloud Manager para Screens as a Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Criação de um ambiente no Cloud Manager {#create-environment-screens-cloud}
 
@@ -24,13 +24,13 @@ A seção a seguir descreve como criar um ambiente para o seu programa no Cloud 
 
 Quando a criação do projeto for concluída com êxito, você verá a atualização do cartão de chamada para ação na página Visão geral do Cloud Manager.
 
-1. Navegue até o Cloud Manager e selecione o ícone para chegar à página **Visão geral** do Cloud Manager.
+1. Navegue até o Cloud Manager e selecione o ícone para acessar o Cloud Manager **Visão geral** página.
 
-1. Clique em **Adicionar ambiente** na página **Visão geral** do Cloud Manager.
+1. Clique em **Adicionar ambiente** do Cloud Manager **Visão geral** página.
 
    ![imagem](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. Selecione os detalhes do ambiente na caixa de diálogo **Adicionar ambiente** e clique em **Salvar**.
+1. Selecione os detalhes do ambiente no **Adicionar ambiente** e clique em **Salvar**.
 
    ![imagem](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
@@ -40,5 +40,4 @@ Quando a criação do projeto for concluída com êxito, você verá a atualiza�
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender a configurar um ambiente para seu programa no Cloud Manager, agora você está pronto para seguir para a próxima etapa do processo de integração, ou seja, [Executar o pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
-
+Depois de aprender a configurar um ambiente para o seu programa no Cloud Manager, você está pronto para seguir para a próxima etapa do processo de integração, ou seja, [Execução do pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

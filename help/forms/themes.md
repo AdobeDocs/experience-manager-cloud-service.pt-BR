@@ -384,7 +384,7 @@ As opções para personalizar estilos de estado variam para componentes diferent
  <tbody>
   <tr>
    <td><strong>Propriedade</strong></td>
-   <td><strong>Uso</strong></td>
+   <td><strong>Uso do</strong></td>
   </tr>
   <tr>
    <td><p>Dimensões e Posição</p> </td>

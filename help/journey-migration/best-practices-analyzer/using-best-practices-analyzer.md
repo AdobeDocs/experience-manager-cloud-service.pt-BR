@@ -1,20 +1,21 @@
 ---
-title: Uso do Analisador de práticas recomendadas
-description: Uso do Analisador de práticas recomendadas
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: Utilização do Analisador de práticas recomendadas
+description: Utilização do Analisador de práticas recomendadas
+exl-id: e8498e17-f55a-4600-87d7-60584d947897
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2470'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
-# Uso do Analisador de práticas recomendadas {#using-best-practices-analyzer}
+# Utilização do Analisador de práticas recomendadas {#using-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
 >title="Uso do Analisador de práticas recomendadas"
 >abstract="Consulte a documentação para usar o Analisador de práticas recomendadas (antigo Cloud Readiness Analyzer) e o relatório gerado. O Relatório do Analisador de práticas recomendadas é usado para obter um alto nível de compreensão da disponibilidade geral de atualização."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considerações importantes sobre o uso do Analisador de práticas recomendadas {#imp-considerations}
 

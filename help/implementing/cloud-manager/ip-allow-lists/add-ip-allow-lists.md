@@ -1,32 +1,31 @@
 ---
-title: 'Adicionando Lista de permissões IP '
-description: Adicionando Lista de permissões IP
-translation-type: tm+mt
-source-git-commit: 701020701fd45af720edea13a70cb459a650fbca
+title: 'Adicionar Lista de permissões IP '
+description: Adicionar Lista de permissões IP
+exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
+# Adicionar uma lista de permissões de IP {#add-ip-allow-list}
 
-# Adicionando uma Lista de permissões IP {#add-ip-allow-list}
-
-Um usuário na função Proprietário da empresa ou Gerenciador de implantação deve estar conectado para poder adicionar uma Lista de permissões IP.
+Um usuário na função Proprietário comercial ou Gerente de implantação deve estar conectado para poder adicionar uma Lista de permissões de IP.
 
 Siga as etapas abaixo para adicionar uma Lista de permissões IP:
 
-1. Navegue até a página **Listas de permissões IP** a partir da tela **Ambientes**.
+1. Navegar para **LISTAS DE PERMISSÕES de IP** da página **Ambientes** tela.
    ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
-1. Clique em **Adicionar Lista de permissões IP** para abrir a caixa de diálogo **Adicionar Lista de permissões IP**.
+1. Clique em **Adicionar Lista de permissões IP** para abrir o **Adicionar Lista de permissões IP** caixa de diálogo.
 
    ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. Digite um nome amigável que você gostaria de usar para fazer referência à regra de Lista de permissões em **Nome da Lista de permissões IP**.
+1. Insira um nome amigável que você gostaria de usar para fazer referência à regra de Lista de permissões em **Nome da Lista de permissões IP**.
 
-1. Insira um ou mais blocos IP CIDR separados por vírgula ou TAB em **endereço IP/CIDR**.
+1. Insira um bloco IP ou IP CIDR separado por vírgula ou TAB em **Endereço IP/CIDR**.
 
-1. Selecione **Salvar** para confirmar o envio. Se algum erro for detectado, você deverá abordar antes que a regra possa ser salva.
+1. Selecionar **Salvar** para confirmar o envio. Se algum erro for detectado, você deverá abordar antes que a regra possa ser salva.
 
-1. Ao salvar, a regra de Lista de permissões IP recém-criada aparecerá como uma linha na tabela da página Lista de permissões IP.
+1. Ao salvar, a regra de Lista de permissões de IP recém-criada aparecerá como uma linha na tabela na página Lista de permissões de IP.

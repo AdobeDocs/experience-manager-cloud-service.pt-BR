@@ -4,7 +4,7 @@ description: Processo de provisionamento - Visão geral
 source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 

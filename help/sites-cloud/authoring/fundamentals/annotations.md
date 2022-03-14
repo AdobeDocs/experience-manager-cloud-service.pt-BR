@@ -53,7 +53,7 @@ As anotações são visíveis apenas no modo Anotar.
 
 Além de visualizar as anotações, o modo Anotar permite criar, editar, mover ou excluir anotações do seu conteúdo
 
-1. [Iniciar o ](#annotate-mode) modo Anotar na página.
+1. [Iniciar modo Anotar](#annotate-mode) na página.
 
 1. Clique ou toque no ícone Adicionar anotação (símbolo de mais à esquerda da barra de ferramentas) para começar a adicionar as anotações.
 
@@ -80,7 +80,7 @@ Além de visualizar as anotações, o modo Anotar permite criar, editar, mover o
 
 1. Depois que terminar de editar uma anotação específica, você pode:
 
-   * Clique ou toque no marcador de texto para abrir a anotação. Depois de aberta, você pode exibir o texto completo, fazer alterações ou [excluir a anotação.](#deleting-annotations)
+   * Clique ou toque no marcador de texto para abrir a anotação. Depois de aberto, você pode exibir o texto completo, fazer alterações ou [excluir a anotação.](#deleting-annotations)
    * Reposicionar o marcador de texto.
    * Clique ou toque em uma linha de rascunho para selecionar esse rascunho e arrastá-lo para a posição desejada.
    * Mover ou copiar um componente
@@ -95,11 +95,11 @@ Além de visualizar as anotações, o modo Anotar permite criar, editar, mover o
 >
 >A definição de um tipo de componente individual determina se é possível adicionar uma anotação (ou não) nas instâncias desse componente.
 
-## Excluindo anotações e rascunhos {#deleting-annotations}
+## Exclusão de anotações e rascunhos {#deleting-annotations}
 
 As anotações e seus rascunhos associados podem ser excluídos.
 
-1. [Iniciar o ](#annotate-mode) modo Anotar na página.
+1. [Iniciar modo Anotar](#annotate-mode) na página.
 
 1. Clicar/tocar em um marcador de texto para abrir a anotação.
 
@@ -113,11 +113,11 @@ As anotações e seus rascunhos associados podem ser excluídos.
 >
 >A exclusão de um componente exclui todas as anotações e rascunhos associados a ele, independentemente de suas posições na página como um todo.
 
-## Excluindo Rascunhos Somente {#deleting-sketches}
+## Exclusão de rascunhos somente {#deleting-sketches}
 
 Você pode excluir somente rascunhos específicos em vez da anotação inteira com todos os rascunhos associados.
 
-1. [Iniciar o ](#annotate-mode) modo Anotar na página.
+1. [Iniciar modo Anotar](#annotate-mode) na página.
 
 1. Clique ou toque no rascunho. AEM o destaca com uma caixa azul mais escura.
 

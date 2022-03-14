@@ -63,7 +63,7 @@ AEM oferece componentes personalizáveis e opções de entrega de conteúdo.
 |---|---|
 | [Os componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) | Componentes padronizados do Gerenciamento de conteúdo da Web (WCM) para AEM agilizar o tempo de desenvolvimento e reduzir o custo de manutenção de seus sites |
 | [Exportador JSON](/help/implementing/developing/components/json-exporter.md) | Fornecer o conteúdo de qualquer página de AEM no formato de modelo de dados JSON |
-| [Ativação da exportação JSON para um componente](/help/implementing/developing/components/enabling-json-exporter.md) | Gerar exportação JSON do conteúdo do componente com base em uma estrutura de modelador |
+| [Ativação da exportação em JSON para um componente](/help/implementing/developing/components/enabling-json-exporter.md) | Gerar exportação JSON do conteúdo do componente com base em uma estrutura de modelador |
 | [API de ativos](/help/assets/mac-api-assets.md) | Permite a criação-leitura-atualização-exclusão (CRUD) de operações em ativos, incluindo binários, metadados, representações e comentários. Consulte API HTTP do AEM Assets |
 | [API HTTP dos fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md) | Acesse o conteúdo do fragmento de conteúdo diretamente pela API HTTP por meio de operações CRUD |
 | [API GraphQL do fragmento de conteúdo](/help/headless/graphql-api/content-fragments.md) | Ativar a entrega eficiente de Fragmentos de conteúdo para clientes JavaScript em implementações CMS sem periféricos |

@@ -1,74 +1,71 @@
 ---
 title: Gerenciamento de páginas no Launch
-description: 'É possível criar novas páginas no Launch. Também é possível excluir páginas indesejadas. '
-translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+description: Você pode criar novas páginas no Launch. Também é possível excluir páginas indesejadas.
+exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
 
 ---
 
-
 # Gerenciamento de páginas no Launch {#managing-pages-in-launch}
 
-Com inicializações, você pode:
+Com lançamentos, você pode:
 
-* [Gerenciar novo conteúdo em páginas](/help/sites-cloud/authoring/launches/editing.md) existentes,
-* [Navegue pela estrutura de uma inicialização no console](#navigate-structure-of-launch) Sites,
-* No console [Adicione novas páginas a](#add-pages-to-launch), ou [exclua páginas indesejadas de](#remove-pages-from-launch), uma inicialização,
-* Execute outras ações padrão nas páginas na inicialização.
+* [Gerenciar novo conteúdo em páginas existentes](/help/sites-cloud/authoring/launches/editing.md),
+* [Navegar pela estrutura de um lançamento no console Sites](#navigate-structure-of-launch),
+* Do console [Adicionar novas páginas a](#add-pages-to-launch)ou [excluir páginas indesejadas de](#remove-pages-from-launch), um lançamento,
+* Execute outras ações padrão nas páginas da inicialização.
 
-## Navegue pela estrutura do lançamento {#navigate-structure-of-launch}
+## Navegar pela estrutura do seu lançamento {#navigate-structure-of-launch}
 
-É possível navegar pela estrutura de sua inicialização a partir de:
+É possível navegar pela estrutura do seu lançamento em:
 
 * O Editor de páginas:
 
-   * Selecione **Navegar** para abrir a estrutura do Launch no console:
-      ![Navegar para inicialização a partir do Editor de páginas](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+   * Selecionar **Navegar** para abrir a estrutura do Launch no console:
+      ![Navegar para a inicialização a partir do Editor de páginas](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
       >[!NOTE]
       >
       >Você também pode:
       >
-      >* **Sair** da inicialização e retornar à edição da página de origem
+      >* **Sair** o lançamento e retornar à edição da página de origem
 
 
-* A Console **Inicializações**:
-Se você selecionar uma inicialização específica, poderá selecionar **Gerenciar conteúdo**:
-   ![Iniciar console - Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+* O **Lançamentos** Console: Se você selecionar um lançamento específico, será possível selecionar **Gerenciar conteúdo**:
+   ![Console do Launch - Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
-* O console **Sites**:
-Se você selecionar uma página de origem específica e abrir **Referências**, poderá selecionar **Inicializações**, seguido por **Gerenciar Conteúdo**:
-   ![Iniciar console - Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+* O **Sites** Console: Se você selecionar uma página de origem específica e abrir **Referências**, você pode selecionar **Lançamentos** seguida de **Gerenciar conteúdo**:
+   ![Console do Launch - Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
    >[!NOTE]
    >
-   >Você também pode selecionar **Iniciar Console** para acessar **Gerenciar conteúdo** (e outras ações).
+   >Você também pode selecionar **Console Lançamentos** para acessar **Gerenciar conteúdo** (e outras ações).
 
-Todos esses pontos de entrada abrirão a inicialização no console Sites, onde você pode:
+Todos esses pontos de entrada abrirão o lançamento no console Sites, onde é possível:
 
 * Navegar,
-* **** Criar novas páginas,
-* Selecionar páginas existentes e executar ações; por exemplo, **Editar**, abra **Propriedades**, **Bloquear**, **Copiar**, **Colar** e **Eliminar**
+* **Criar** novas páginas,
+* Selecionar páginas existentes e executar ações; por exemplo, **Editar**, abrir **Propriedades**, **Bloquear**, **Copiar**, **Colar** e **Excluir**
 
-   ![Navegar para inicialização no console Sites a partir de Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
-* Use o painel **Referências** para retornar às páginas **Iniciar Origem**:
-   ![Console Sites - Iniciar origem](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
+   ![Navegar para a inicialização no console Sites a partir de Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* Use o **Referências** para retornar ao **Origem do Launch** páginas:
+   ![Console Sites - Origem do Launch](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## Adicionar páginas ao lançamento {#add-pages-to-launch}
 
-Para adicionar novas páginas ao lançamento:
+Para adicionar novas páginas ao seu lançamento:
 
-1. [Navegue até o local desejado na inicialização](#navigate-structure-of-launch).
+1. [Navegue até o local desejado no seu lançamento](#navigate-structure-of-launch).
 
-1. Selecione **Criar** para [criar uma página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) como de costume.
+1. Selecionar **Criar** para [criar uma página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) como de costume.
 
-## Remover páginas do lançamento {#remove-pages-from-launch}
+## Remover páginas do seu lançamento {#remove-pages-from-launch}
 
-Para remover páginas da inicialização:
+Para remover páginas de seu lançamento:
 
-1. [Navegue até o local desejado na inicialização](#navigate-structure-of-launch).
+1. [Navegue até o local desejado no seu lançamento](#navigate-structure-of-launch).
 
-1. Selecione **Excluir** para [excluir uma página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) como de costume.
+1. Selecionar **Excluir** para [excluir uma página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) como de costume.

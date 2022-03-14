@@ -2,13 +2,13 @@
 title: Gerenciar endpoints de GraphQL no AEM
 description: Saiba como gerenciar endpoints de GraphQL no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
-source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
-workflow-type: ht
+exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 100%
 
 ---
-
 
 # Gerenciar endpoints de GraphQL no AEM {#graphql-aem-endpoint}
 

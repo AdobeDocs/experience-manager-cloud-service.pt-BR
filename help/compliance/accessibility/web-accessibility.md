@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service e as diretrizes de acessibili
 description: Uma introdução ao Adobe Experience Manager as a Cloud Service e às diretrizes de acessibilidade na Web
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 

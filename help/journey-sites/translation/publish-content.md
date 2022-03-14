@@ -4,13 +4,13 @@ description: Saiba como publicar seu conteúdo traduzido e atualizar as traduç�
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 8c04ffde2cbafcb6d556de8d48fc19f5b130a2c1
+exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 0%
 
 ---
-
 
 # Publicar conteúdo traduzido {#publish-content}
 
@@ -18,7 +18,7 @@ Saiba como publicar seu conteúdo traduzido e atualizar as traduções como atua
 
 ## A História Até Agora {#story-so-far}
 
-No documento anterior da jornada de tradução do AEM Sites, [Traduzir conteúdo,](configure-connector.md) você aprendeu a usar AEM Projetos de tradução para traduzir seu conteúdo. Agora você deve:
+No documento anterior da jornada de tradução do AEM Sites, [Traduzir conteúdo,](configure-connector.md) você aprendeu a usar AEM Projetos de tradução para traduzir o conteúdo. Agora você deve:
 
 * Entenda o que é um projeto de tradução.
 * Pode criar novos projetos de tradução.
@@ -43,10 +43,10 @@ Antes de publicar seu conteúdo, é uma boa ideia entender AEM modelo de publica
 
 Portanto, AEM é fisicamente separado em duas instâncias.
 
-1. A instância **author** é o sistema no qual os autores e administradores de conteúdo trabalham para criar e gerenciar conteúdo.
-1. A instância **publish** é o sistema que entrega o conteúdo aos consumidores.
+1. O **autor** instância é o sistema no qual os autores e administradores de conteúdo trabalham para criar e gerenciar conteúdo.
+1. O **publicar** A instância é o sistema que entrega o conteúdo para os consumidores.
 
-Depois que o conteúdo é criado na instância do autor, ele deve ser transferido para a instância de publicação para que esteja disponível para consumo. O processo de transferência do autor para a publicação é chamado de **publication**.
+Depois que o conteúdo é criado na instância do autor, ele deve ser transferido para a instância de publicação para que esteja disponível para consumo. O processo de transferência do autor para a publicação é chamado **publicação**.
 
 ## Publicar seu conteúdo traduzido {#publishing}
 
@@ -66,13 +66,13 @@ A maneira mais simples de publicar as traduções é navegar até a pasta do pro
 
 Nesse caminho, você tem subpastas para cada idioma de tradução e pode escolher qual publicar.
 
-1. Vá para **Navegação** -> **Sites** -> **Arquivos** e abra a pasta do projeto.
+1. Ir para **Navegação** -> **Sites** -> **Arquivos** e abra a pasta do projeto.
 1. Aqui você vê a pasta raiz do idioma e todas as outras pastas de idioma. Selecione o idioma ou idiomas localizados que deseja publicar.
    ![Selecionar pasta de idioma](assets/select-language-folder.png)
-1. Toque ou clique em **Gerenciar publicação**.
-1. Na janela **Gerenciar publicação**, verifique se **Publicar** é automaticamente selecionado em **Ação** e se **Agora** é selecionado em **Agendamento**. Toque ou clique em **Próximo**.
+1. Toque ou clique **Gerenciar publicação**.
+1. No **Gerenciar publicação** verifique se **Publicar** é automaticamente selecionado em **Ação** e que **Agora** é selecionado em **Agendamento**. Toque ou clique em **Próximo**.
    ![Gerenciar opções de publicação](assets/manage-publication-options.png)
-1. Na próxima janela **Gerenciar publicação**, confirme se os caminhos adequados estão selecionados. Toque ou clique em **Publicar**.
+1. No próximo **Gerenciar publicação** , confirme se os caminhos adequados estão selecionados. Toque ou clique **Publicar**.
    ![Gerenciar escopo de publicação](assets/manage-publication-scope.png)
 1. AEM confirma a ação de publicação com uma mensagem pop-up na parte inferior da tela.
    ![Banner publicado de recursos](assets/resources-published-message.png)
@@ -83,7 +83,7 @@ Seu conteúdo traduzido foi publicado! Agora ele pode ser acessado e consumido.
 >
 >Você pode selecionar vários itens (ou seja, várias pastas de idioma) ao publicar para publicar várias traduções de uma vez.
 
-Há opções adicionais ao publicar seu conteúdo, como agendar um tempo de publicação, que estão além do escopo desta jornada. Consulte a seção [Recursos adicionais](#additional-resources) no final do documento para obter mais informações.
+Há opções adicionais ao publicar seu conteúdo, como agendar um tempo de publicação, que estão além do escopo desta jornada. Consulte a [Recursos adicionais](#additional-resources) no final do documento para obter mais informações.
 
 ## Atualização do seu conteúdo traduzido {#updating-translations}
 
@@ -95,21 +95,21 @@ No entanto, como antes, o processo é um pouco diferente se você optar por cria
 
 ### Atualização de um projeto de tradução criado automaticamente {#updating-automatic-project}
 
-1. Navegue até **Navegação** -> **Ativos** -> **Arquivos**. Lembre-se de que o conteúdo no AEM é armazenado em `/content`.
+1. Navegar para **Navegação** -> **Ativos** -> **Arquivos**. Lembre-se de que o conteúdo no AEM é armazenado em `/content`.
 1. Selecione a raiz do idioma do projeto. Nesse caso, selecionamos `/content/wknd/en`.
-1. Toque ou clique no seletor do painel e mostre o painel **Referências**.
+1. Toque ou clique no seletor do painel e mostre o **Referências** painel.
 1. Toque ou clique em **Cópias de idioma**.
-1. Marque a caixa de seleção **Language Copies**.
-1. Expanda a seção **Atualizar cópias de idioma** na parte inferior do painel de referências.
-1. Na lista suspensa **Project**, selecione **Adicionar a um Projeto de Tradução existente**.
-1. Na lista suspensa **Projeto de tradução existente**, selecione o projeto criado para a tradução inicial.
-1. Toque ou clique em **Atualizar**.
+1. Verifique a **Cópias de idioma** caixa de seleção.
+1. Expanda a seção **Atualizar Cópias de Idioma** na parte inferior do painel de referências.
+1. No **Projeto** lista suspensa, selecione **Adicionar a um projeto de tradução existente**.
+1. No **Projeto de tradução existente** selecione o projeto criado para a tradução inicial.
+1. Toque ou clique **Atualizar**.
 
 ![Adicionar itens ao projeto de tradução existente](assets/add-to-existing-project.png)
 
 O conteúdo é adicionado ao projeto de tradução existente. Para exibir o projeto de tradução:
 
-1. Navegue até **Navegação** -> **Projetos**.
+1. Navegar para **Navegação** -> **Projetos**.
 1. Toque ou clique no projeto que você acabou de atualizar.
 1. Toque ou clique no idioma ou em um dos idiomas atualizados.
 
@@ -119,37 +119,37 @@ Você vê que um novo cartão de trabalho foi adicionado ao projeto. Neste exemp
 
 Você pode notar que as estatísticas listadas no novo cartão são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui apenas o conteúdo que precisa ser traduzido. Isso inclui a retradução do conteúdo atualizado, bem como a primeira tradução do novo conteúdo.
 
-A partir deste ponto, você [inicia e gerencia seu trabalho de tradução exatamente como fazia no original.](translate-content.md#using-translation-project)
+A partir deste ponto, você [inicie e gerencie seu trabalho de tradução da mesma forma que fazia o original.](translate-content.md#using-translation-project)
 
 ### Atualização de um projeto de tradução criado manualmente {#updating-manual-project}
 
 Para atualizar uma tradução, você pode adicionar um novo trabalho ao projeto existente responsável pela tradução do conteúdo atualizado.
 
-1. Navegue até **Navegação** -> **Projetos**.
+1. Navegar para **Navegação** -> **Projetos**.
 1. Toque ou clique no projeto que você precisa atualizar.
-1. Toque ou clique no botão **Add** na parte superior da janela.
-1. Na janela **Adicionar mosaico**, toque ou clique em **Tarefa de Tradução** e em **Enviar**.
+1. Toque ou clique no botão **Adicionar** na parte superior da janela.
+1. No **Adicionar mosaico** janela, toque ou clique **Tarefa de tradução** e depois **Enviar**.
 
    ![Adicionar bloco](assets/add-translation-job-tile.png)
 
-1. No cartão do novo trabalho de tradução, toque ou clique no botão divisa na parte superior do cartão e selecione **Atualizar destino** para definir o idioma de destino do novo trabalho.
+1. No cartão do novo trabalho de tradução, toque ou clique no botão divisa na parte superior do cartão e selecione **Atualizar Target** para definir o idioma do target do novo job.
 
    ![Atualizar destino](assets/update-target.png)
 
-1. Na caixa de diálogo **Selecionar idioma de destino**, use a lista suspensa para selecionar o idioma e toque ou clique em **Concluído**.
+1. No **Selecione o idioma de destino** , use o menu suspenso para selecionar o idioma e toque ou clique em **Concluído**.
 
    ![Selecione o idioma de destino](assets/select-target-language.png)
 
 1. Depois que o idioma alvo do novo trabalho de tradução for definido, toque ou clique no botão de reticências na parte inferior do cartão de trabalho para exibir os detalhes do trabalho.
-1. A tarefa fica vazia quando é criada pela primeira vez. Adicione conteúdo à tarefa tocando ou clicando no botão **Adicionar** e usando o navegador de caminho [como você fez antes ao criar originalmente o projeto de tradução.](translate-content.md##manually-creating)
+1. A tarefa fica vazia quando é criada pela primeira vez. Adicione conteúdo à tarefa tocando ou clicando no link **Adicionar** e usando o navegador de caminho [como você fez antes ao criar originalmente o projeto de tradução.](translate-content.md##manually-creating)
 
 >[!TIP]
 >
 >Os filtros potentes do navegador de caminho podem ser úteis novamente para localizar apenas o conteúdo que foi atualizado.
 >
->Você pode saber mais sobre o navegador de caminho na seção [recursos adicionais.](#additional-resources)
+>Você pode saber mais sobre o navegador de caminho no [seção recursos adicionais.](#additional-resources)
 
-A partir deste ponto, você [inicia e gerencia seu trabalho de tradução exatamente como fazia no original.](translate-content.md#using-translation-project)
+A partir deste ponto, você [inicie e gerencie seu trabalho de tradução da mesma forma que fazia o original.](translate-content.md#using-translation-project)
 
 ## Fim da Jornada? {#end-of-journey}
 
@@ -159,11 +159,11 @@ Parabéns! Você concluiu a jornada de tradução do AEM Sites! Agora você deve
 * Entenda AEM recursos de tradução e como eles estão relacionados ao conteúdo de seus sites.
 * Tenha a capacidade de começar a traduzir seu próprio conteúdo.
 
-Agora você está pronto para traduzir seu próprio conteúdo no AEM. No entanto, AEM é uma ferramenta poderosa e há muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis na seção [Recursos adicionais](#additional-resources) para saber mais sobre os recursos que você viu nesta jornada.
+Agora você está pronto para traduzir seu próprio conteúdo no AEM. No entanto, AEM é uma ferramenta poderosa e há muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis no [Seção Recursos adicionais](#additional-resources) para saber mais sobre os recursos que você viu nesta jornada.
 
 ## Recursos adicionais {#additional-resources}
 
-* [Gerenciamento de projetos de tradução](/help/sites-cloud/administering/translation/managing-projects.md)  - saiba mais detalhes de projetos de tradução e recursos adicionais, como fluxos de trabalho de tradução humana e projetos de vários idiomas.
-* [Criação de conceitos](/help/sites-cloud/authoring/getting-started/concepts.md)  - saiba mais sobre o modelo de criação e publicação de AEM com mais detalhes. Este documento está focado na criação de páginas em vez de Fragmentos de conteúdo, mas a teoria ainda se aplica.
-* [Publicação de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  - saiba mais sobre os recursos adicionais disponíveis ao publicar conteúdo. Este documento está focado na criação de páginas em vez de Fragmentos de conteúdo, mas a teoria ainda se aplica.
-* [Ambiente e ferramentas de criação](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)  - o AEM fornece vários mecanismos para organização e edição de conteúdo, incluindo um navegador de caminho robusto.
+* [Gerenciamento de projetos de tradução](/help/sites-cloud/administering/translation/managing-projects.md) - Saiba mais sobre os detalhes de projetos de tradução e recursos adicionais, como fluxos de trabalho de tradução humana e projetos multilíngues.
+* [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md) - Saiba mais sobre o modelo de criação e publicação de AEM. Este documento está focado na criação de páginas em vez de Fragmentos de conteúdo, mas a teoria ainda se aplica.
+* [Publicar páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Saiba mais sobre os recursos adicionais disponíveis ao publicar conteúdo. Este documento está focado na criação de páginas em vez de Fragmentos de conteúdo, mas a teoria ainda se aplica.
+* [Ambiente e ferramentas de criação](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM fornece vários mecanismos para organização e edição de conteúdo, incluindo um navegador de caminho robusto.

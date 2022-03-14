@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,6 @@ Por meio de uma configuração simples, um autor de conteúdo agora pode ativar 
 >* Conhecimento do seu site e estrutura de conteúdo
 >* Noções básicas sobre estratégias de armazenamento em cache
 >* Suporte da sua equipe de desenvolvimento
-
 >
 >Antes de usar esse recurso, é recomendável discutir isso com a equipe de desenvolvimento para definir a melhor maneira de aproveitá-lo para o seu projeto.
 
@@ -125,7 +124,7 @@ Com [os pré-requisitos](#prerequisites) já que, para um autor de conteúdo, é
       ![Definir caminhos de PWA offline](../assets/pwa-offline.png)
 
 
-1. Toque ou clique **Salvar e fechar**.
+1. Toque ou clique em **Salvar e fechar**.
 
 Seu site agora está configurado e você pode [instale-o como um aplicativo local.](#using-pwa-enabled-site)
 

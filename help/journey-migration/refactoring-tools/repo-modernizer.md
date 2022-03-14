@@ -1,14 +1,15 @@
 ---
-title: Repository Modernizer
-description: Repository Modernizer
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: Modernizador de repositório
+description: Modernizador de repositório
+exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
-# Repository Modernizer {#repo-modernizer}
+# Modernizador de repositório {#repo-modernizer}
 
 O Repository Modernizer é um utilitário desenvolvido para reestruturar pacotes de projetos existentes, separando conteúdo e código em pacotes discretos para serem compatíveis com a estrutura do projeto definida para o Adobe Experience Manager as a Cloud Service.
 

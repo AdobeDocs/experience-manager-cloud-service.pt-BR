@@ -1,51 +1,50 @@
 ---
 title: Configuração da segmentação com o ContextHub
 description: Saiba como configurar a segmentação usando o ContextHub.
-translation-type: tm+mt
-source-git-commit: c9c7176f6c3bf70529b761183341a2490d4ecbfc
+exl-id: fbc38611-dbee-426e-b823-df64b6730c45
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1692'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
+# Configuração da segmentação com o ContextHub{#configuring-segmentation-with-contexthub}
 
-# Configurando a segmentação com o ContextHub{#configuring-segmentation-with-contexthub}
+A segmentação é uma consideração importante ao criar uma campanha. Consulte [Noções sobre segmentação](segmentation.md) para obter informações sobre como a segmentação funciona e os termos principais.
 
-A segmentação é uma consideração importante ao criar uma campanha. Consulte [Entendendo a segmentação](segmentation.md) para obter informações sobre como a segmentação funciona e os termos principais.
+Dependendo das informações que você já coletou sobre os visitantes do seu site e das metas que deseja alcançar, será necessário definir os segmentos e as estratégias necessárias para o seu conteúdo direcionado.
 
-Dependendo das informações que você já coletou sobre os visitantes do site e as metas que deseja atingir, será necessário definir os segmentos e as estratégias necessárias para o conteúdo direcionado.
+Esses segmentos são usados para fornecer a um visitante conteúdo direcionado especificamente. [Atividades](activities.md) definido aqui pode ser incluído em qualquer página e definir para qual segmento de visitante o conteúdo especializado se aplica.
 
-Esses segmentos são então usados para fornecer um visitante com conteúdo direcionado especificamente. [As ](activities.md) atividades definidas aqui podem ser incluídas em qualquer página e definir para qual segmento de visitante o conteúdo especializado se aplica.
+AEM permite personalizar facilmente as experiências dos usuários. Também permite verificar os resultados das definições de segmento.
 
-AEM permite que você personalize facilmente as experiências de seus usuários. Também permite verificar os resultados das definições de segmento.
+## Acesso a segmentos {#accessing-segments}
 
-## Acessar segmentos {#accessing-segments}
+O [Públicos-alvo](audiences.md) O console é usado para gerenciar segmentos do ContextHub, bem como públicos-alvo da sua conta do Adobe Target. Esta documentação abrange o gerenciamento de segmentos para o ContextHub.
 
-O console [Audiência](audiences.md) é usado para gerenciar segmentos do ContextHub, bem como do audiência para sua conta do Adobe Target. Esta documentação cobre o gerenciamento de segmentos para o ContextHub.
+Para acessar seus segmentos, na navegação global, selecione **Navegação > Personalização > Públicos-alvo**.
 
-Para acessar seus segmentos, na navegação global, selecione **Navegação > Personalização > Audiência**.
+![Gerenciamento de públicos-alvo](../assets/contexthub-segmentation-audiences.png)
 
-![Gerenciamento de audiências](../assets/contexthub-segmentation-audiences.png)
-
-## Editor do segmento {#segment-editor}
+## Editor do segmento  {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-O **Editor de segmentos** permite que você modifique facilmente um segmento. Para editar um segmento, selecione-o na lista de segmentos e clique no botão **Editar**.
+O **Editor de segmentos** permite modificar facilmente um segmento. Para editar um segmento, selecione um segmento na lista de segmentos e clique no botão **Editar** botão.
 
 ![Editor de segmentos](../assets/contexthub-segment-editor.png)
 
-Usando o navegador de componentes, você pode adicionar **AND** e **OU** container para definir a lógica do segmento, em seguida, adicionar componentes adicionais para comparar propriedades e valores ou scripts de referência e outros segmentos para definir os critérios de seleção (consulte [Criação de um novo segmento](#creating-a-new-segment)) para definir o cenário exato para a seleção do segmento.
+Usando o navegador de componentes, você pode adicionar **E** e **OU** contêineres para definir a lógica do segmento, em seguida, adicionar componentes adicionais para comparar propriedades e valores ou scripts de referência e outros segmentos para definir os critérios de seleção (consulte [Criar um novo segmento](#creating-a-new-segment)) para definir o cenário exato para selecionar o segmento.
 
-Quando a declaração inteira for avaliada como true, o segmento será resolvido. No evento de vários segmentos serem aplicáveis, o fator **Boost** também é usado. Consulte [Criação de um novo segmento](#creating-a-new-segment) para obter detalhes sobre o fator de aumento.
+Quando a declaração inteira for avaliada como true, o segmento será resolvido. Caso vários segmentos sejam aplicáveis, a variável **Aumento** também é usado. Consulte [Criar um novo segmento](#creating-a-new-segment) para obter detalhes sobre o fator de reforço.
 
 >[!CAUTION]
 >
->O editor de segmentos não verifica se há referências circulares. Por exemplo, o segmento A faz referência a outro segmento B, que por sua vez faz referência ao segmento A. É necessário garantir que seus segmentos não contenham referências circulares.
+>O editor de segmentos não verifica se há referências circulares. Por exemplo, o segmento A faz referência a outro segmento B, que por sua vez faz referência ao segmento A. Você deve garantir que seus segmentos não contenham referências circulares.
 
-### Container {#containers}
+### Contêineres {#containers}
 
-Os container a seguir estão disponíveis prontamente e permitem agrupar comparações e referências para avaliação booleana. Eles podem ser arrastados do navegador de componentes para o editor. Consulte a seção a seguir [Usando Container AND e OR](#using-and-and-or-containers) para obter mais informações.
+Os seguintes contêineres estão disponíveis prontamente e permitem agrupar comparações e referências para avaliação booleana. Eles podem ser arrastados do navegador de componentes para o editor. Consulte a seguinte seção [Uso de contêineres AND e OR](#using-and-and-or-containers) para obter mais informações.
 
 |  |  |
 |---|---|
@@ -54,71 +53,71 @@ Os container a seguir estão disponíveis prontamente e permitem agrupar compara
 
 ### Comparações {#comparisons}
 
-As seguintes comparações de segmentos estão disponíveis prontamente para avaliar as propriedades do segmento. Eles podem ser arrastados do navegador de componentes para o editor.
+As comparações de segmentos a seguir estão disponíveis prontas para uso para avaliar as propriedades do segmento. Eles podem ser arrastados do navegador de componentes para o editor.
 
 |  |  |
 |---|---|
 | Valor da propriedade | Compara uma propriedade de uma loja com um valor definido |
-| Propriedade-Propriedade | Compara uma propriedade de uma loja com outra propriedade |
+| Propriedade | Compara uma propriedade de um armazenamento a outra propriedade |
 | Referência do segmento de propriedade | Compara uma propriedade de uma loja com outro segmento referenciado |
-| Referência do script de propriedade | Compara uma propriedade de uma loja com os resultados de um script |
-| Referência do segmento - Referência do script | Compara um segmento referenciado com os resultados de um script |
+| Referência de script de propriedade | Compara uma propriedade de uma loja com os resultados de um script |
+| Referência do script de segmento | Compara um segmento referenciado aos resultados de um script |
 
 >[!NOTE]
 >
->Ao comparar valores, se o tipo de dados da comparação não estiver definido (isto é, definido para detecção automática), o mecanismo de segmentação do ContextHub simplesmente comparará os valores como javascript faria. Não converte valores em seus tipos esperados, o que pode levar a resultados enganosos. Por exemplo:
+>Ao comparar valores, se o tipo de dados da comparação não estiver definido (ou seja, definido para detecção automática), o mecanismo de segmentação do ContextHub simplesmente comparará os valores como o javascript faria. Não converte valores em seus tipos esperados, o que pode levar a resultados enganosos. Por exemplo:
 >
 >`null < 30 // will return true`
 >
->Portanto, ao [criar um segmento](#creating-a-new-segment), você deve selecionar um **tipo de dados** sempre que os tipos de valores comparados forem conhecidos. Por exemplo:
+>Portanto, quando [criação de um segmento](#creating-a-new-segment), você deve selecionar uma **tipo de dados** sempre que os tipos de valores comparados forem conhecidos. Por exemplo:
 >
->Ao comparar a propriedade `profile/age`, você já sabe que o tipo comparado será **number**, portanto, mesmo que `profile/age` não esteja definido, uma comparação `profile/age` menor que 30 retornará **false**, como você esperaria.
+>Ao comparar a propriedade `profile/age`, você já sabe que o tipo comparado será **número**, mesmo que `profile/age` não estiver definido, uma comparação `profile/age` menos de 30 retornará **false**, como seria de esperar.
 
 ### Referências {#references}
 
-As referências a seguir estão disponíveis prontamente para vinculação direta a um script ou outro segmento. Eles podem ser arrastados do navegador de componentes para o editor.
+As seguintes referências estão disponíveis prontas para uso para vincular diretamente a um script ou outro segmento. Eles podem ser arrastados do navegador de componentes para o editor.
 
 |  |  |
 |---|---|
 | Referência do segmento | Avaliar o segmento referenciado |
-| Referência de scripts | Avalie o script referenciado. Consulte a seção a seguir [Usando referências de script](#using-script-references) para obter mais informações. |
+| Referência de scripts | Avalie o script referenciado. Consulte a seguinte seção [Uso de referências de script](#using-script-references) para obter mais informações. |
 
-## Criação de um novo segmento {#creating-a-new-segment}
+## Criar um novo segmento {#creating-a-new-segment}
 
 Para definir seu novo segmento:
 
-1. Depois de [acessar os segmentos](#accessing-segments), [navegue até a pasta](#organizing-segments) onde você deseja criar o segmento ou deixá-lo na raiz.
+1. Depois [acesso aos segmentos](#accessing-segments), [navegue até a pasta](#organizing-segments) onde deseja criar o segmento ou deixá-lo na raiz.
 
 1. Toque ou clique no botão **Criar** e selecione **Criar segmento do ContextHub**.
 
    ![Adicionar segmento](../assets/contexthub-create-segment.png)
 
-1. No **Novo segmento ContextHub**, insira um título para o segmento, bem como um valor de aumento, se necessário, e toque ou clique em **Criar**.
+1. No **Novo segmento do ContextHub**, insira um título para o segmento, bem como um valor de reforço, se necessário, e toque ou clique em **Criar**.
 
    ![Novo segmento](../assets/contexthub-new-segment.png)
 
-   Cada segmento tem um parâmetro de aumento que é usado como fator de ponderação. Um número mais alto indica que o segmento será selecionado de preferência a um segmento com um número menor em instâncias onde vários segmentos são válidos.
+   Cada segmento tem um parâmetro de reforço usado como fator de ponderação. Um número mais alto indica que o segmento será selecionado em detrimento de um segmento com um número menor em instâncias em que vários segmentos são válidos.
 
    * Valor mínimo: `0`
    * Valor máximo: `1000000`
 
-1. No console de segmentos, edite seu segmento recém-criado para abri-lo no editor de segmentos.
-1. Arraste uma comparação ou referência para o editor de segmentos que aparecerá no container AND padrão.
-1. Clique com o duplo ou toque na opção de configuração da nova referência ou segmento para editar os parâmetros específicos. Neste exemplo, estamos a testar pessoas em Basileia.
+1. No console segmentos, edite o segmento criado recentemente para abri-lo no editor de segmentos.
+1. Arraste uma comparação ou referência para o editor de segmentos que ela aparecerá no contêiner AND padrão.
+1. Clique duas vezes em ou toque na opção de configuração da nova referência ou segmento para editar os parâmetros específicos. Neste exemplo, estamos a testar pessoas em Basileia.
 
    ![Teste para pessoas em Basileia](../assets/contexthub-comparing-property-value.png)
 
-   Sempre defina um **Tipo de dados**, se possível, para garantir que suas comparações sejam avaliadas corretamente. Consulte [Comparações](#comparisons) para obter mais informações.
+   Sempre defina uma **Tipo de dados** se possível para garantir que suas comparações sejam avaliadas corretamente. Consulte [Comparações](#comparisons) para obter mais informações.
 
 1. Clique em **Concluído** para salvar sua definição:
-1. Adicione mais componentes conforme necessário. Você pode formular expressões booleanas usando os componentes do container para comparações AND e OR (consulte [Usando Container AND e Or](#using-and-and-or-containers) abaixo). Com o editor de segmentos, é possível excluir componentes que não são mais necessários ou arrastá-los para novas posições na declaração.
+1. Adicione mais componentes conforme necessário. É possível formular expressões booleanas usando os componentes do contêiner para comparações AND e OR (consulte [Uso de contêineres AND e Or](#using-and-and-or-containers) abaixo). Com o editor de segmentos, é possível excluir componentes que não são mais necessários ou arrastá-los para novas posições na instrução.
 
-### Uso de Container AND e OR {#using-and-and-or-containers}
+### Uso de contêineres AND e OR {#using-and-and-or-containers}
 
-Usando os componentes E e OU do container, é possível construir segmentos complexos em AEM. Ao fazer isso, ajuda a ter em mente alguns pontos básicos:
+Usando os componentes de contêiner AND e OR, é possível construir segmentos complexos em AEM. Ao fazer isso, é útil estar ciente de alguns pontos básicos:
 
-* O nível superior da definição é sempre o container AND criado inicialmente. Isso não pode ser alterado, mas não afeta o restante da definição do segmento.
-* Certifique-se de que o aninhamento do seu container faça sentido. Os container podem ser exibidos como colchetes de sua expressão booleana.
+* O nível superior da definição é sempre o contêiner AND criado inicialmente. Isso não pode ser alterado, mas não afeta o restante da definição de segmento.
+* Certifique-se de que o aninhamento do seu contêiner faça sentido. Os contêineres podem ser exibidos como colchetes da expressão booleana.
 
 O exemplo a seguir é usado para selecionar visitantes considerados em nosso grupo alvo suíço:
 
@@ -130,19 +129,19 @@ O exemplo a seguir é usado para selecionar visitantes considerados em nosso gru
  People in Zürich
 ```
 
-Você start colocando um componente OU container dentro do container AND padrão. No container OR, é possível adicionar a propriedade ou os componentes de referência.
+Você começa colocando um componente de contêiner OR no contêiner AND padrão. No contêiner OR , é possível adicionar a propriedade ou os componentes de referência.
 
-![Segmentar com operador OU](../assets/contexthub-or-operator.png)
+![Segmentar com operador OR](../assets/contexthub-or-operator.png)
 
-É possível aninhar vários operadores E e OU, conforme necessário.
+É possível aninhar vários operadores AND e OR, conforme necessário.
 
-### Usando Referências de Script {#using-script-references}
+### Uso de referências de script {#using-script-references}
 
-Usando o componente de Referência de script, a avaliação de uma propriedade de segmento pode ser delegada a um script externo. Depois que o script é configurado corretamente, ele pode ser usado como qualquer outro componente de uma condição de segmento.
+Ao usar o componente Referência de script , a avaliação de uma propriedade de segmento pode ser delegada a um script externo. Depois que o script é configurado corretamente, ele pode ser usado como qualquer outro componente de uma condição de segmento.
 
 #### Definição de um script para referência {#defining-a-script-to-reference}
 
-1. Adicione o arquivo ao clientlib `contexthub.segment-engine.scripts`.
+1. Adicionar arquivo a `contexthub.segment-engine.scripts` clientlib.
 1. Implemente uma função que retorne um valor. Por exemplo:
 
    ```javascript
@@ -176,7 +175,7 @@ Usando o componente de Referência de script, a avaliação de uma propriedade d
 
 1. Registre o script com `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Se o script depender de propriedades adicionais, ele deverá chamar `this.dependOn()`. Por exemplo, se o script depender de `profile/age`:
+Se o script depender de propriedades adicionais, será necessário chamar `this.dependOn()`. Por exemplo, se o script depender de `profile/age`:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -184,25 +183,25 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 #### Referência a um script {#referencing-a-script}
 
-1. Criar segmento ContextHub.
-1. Adicione o componente **Referência de script** no local desejado do segmento.
-1. Abra a caixa de diálogo de edição do componente **Referência de script**. Se [corretamente configurado](#defining-a-script-to-reference), o script deverá estar disponível no menu suspenso **Nome do script**.
+1. Criar segmento do ContextHub.
+1. Adicionar **Referência de script** no local desejado do segmento.
+1. Abra a caixa de diálogo de edição da **Referência de script** componente. If [configurado adequadamente](#defining-a-script-to-reference), o script deve estar disponível na variável **Nome do script** lista suspensa.
 
-## Organização de segmentos {#organizing-segments}
+## Organizar segmentos {#organizing-segments}
 
 Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar como uma lista simples. Nesses casos, pode ser útil criar pastas para gerenciar seus segmentos.
 
 ### Criar uma nova pasta {#create-folder}
 
-1. Depois de [acessar os segmentos](#accessing-segments), clique ou toque no botão **Criar** e selecione **Pasta**.
+1. Depois [acesso aos segmentos](#accessing-segments), clique ou toque no **Criar** e selecione **Pasta**.
 
    ![Adicionar pasta](../assets/contexthub-create-segment.png)
 
-1. Forneça um **Título** e um **Nome** para a sua pasta.
-   * O **Title** deve ser descritivo.
-   * O **Name** se tornará o nome do nó no repositório.
-      * Será gerado automaticamente com base no título e ajustado de acordo com [AEM convenções de nomenclatura.](/help/implementing/developing/introduction/naming-conventions.md)
-      * Pode ser ajustado, se necessário.
+1. Forneça um **Título** e um **Nome** para sua pasta.
+   * O **Título** deve ser descritivo.
+   * O **Nome** se tornará o nome do nó no repositório.
+      * Ele será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Ele pode ser ajustado, se necessário.
 
    ![Criar pasta](../assets/contexthub-create-folder.png)
 
@@ -210,20 +209,20 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
    ![Confirmar pasta](../assets/contexthub-confirm-folder.png)
 
-1. A pasta será exibida na lista de segmentos.
-   * A forma como você classifica as colunas afetará o local em que a nova pasta será exibida na lista.
-   * Você pode tocar ou clicar nos cabeçalhos das colunas para ajustar sua classificação.
+1. A pasta aparecerá na lista de segmentos.
+   * A forma como você classifica as colunas afetará onde a nova pasta aparece na lista.
+   * Toque ou clique nos cabeçalhos da coluna para ajustar sua classificação.
       ![A nova pasta](../assets/contexthub-folder.png)
 
-### Modificar Pastas Existentes {#modify-folders}
+### Modificar pastas existentes {#modify-folders}
 
-1. Depois de [acessar os segmentos](#accessing-segments), clique ou toque na pasta que deseja modificar para selecioná-la.
+1. Depois [acesso aos segmentos](#accessing-segments), clique ou toque na pasta que deseja modificar para selecioná-la.
 
    ![Selecionar pasta](../assets/contexthub-select-folder.png)
 
-1. Toque ou clique em **Renomear** na barra de ferramentas para renomear a pasta.
+1. Toque ou clique **Renomear** na barra de ferramentas para renomear a pasta.
 
-1. Forneça um novo **Título da pasta** e toque ou clique em **Salvar**.
+1. Fornecer um novo **Título da pasta** e toque ou clique **Salvar**.
 
    ![Renomear pasta](../assets/contexthub-rename-folder.png)
 
@@ -233,40 +232,40 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 ### Excluir uma pasta
 
-1. Depois de [acessar os segmentos](#accessing-segments), clique ou toque na pasta que deseja modificar para selecioná-la.
+1. Depois [acesso aos segmentos](#accessing-segments), clique ou toque na pasta que deseja modificar para selecioná-la.
 
    ![Selecionar pasta](../assets/contexthub-select-folder.png)
 
-1. Toque ou clique em **Excluir** na barra de ferramentas para excluir a pasta.
+1. Toque ou clique **Excluir** na barra de ferramentas para excluir a pasta .
 
 1. Uma caixa de diálogo apresenta uma lista de pastas selecionadas para exclusão.
 
    ![Confirmar exclusão](../assets/contexthub-confirm-segment-delete.png)
 
-   * Toque ou clique em **Excluir** para confirmar.
-   * Toque ou clique em **Cancelar** para abortar.
+   * Toque ou clique **Excluir** para confirmar.
+   * Toque ou clique **Cancelar** para suspender.
 
-1. Se alguma das pastas selecionadas contiver subpastas ou segmentos, sua exclusão deverá ser confirmada.
+1. Se qualquer uma das pastas selecionadas contiver subpastas ou segmentos, sua exclusão deverá ser confirmada.
 
    ![Confirmar exclusão de filhos](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Toque ou clique em **Forçar exclusão** para confirmar.
-   * Toque ou clique em **Cancelar** para abortar.
+   * Toque ou clique **Forçar exclusão** para confirmar.
+   * Toque ou clique **Cancelar** para suspender.
 
 >[!NOTE]
 >
 > Não é possível mover um segmento de uma pasta para outra.
 
-## Testando o aplicativo de um segmento {#testing-the-application-of-a-segment}
+## Testando a aplicação de um segmento {#testing-the-application-of-a-segment}
 
-Depois que o segmento é definido, os resultados potenciais podem ser testados com a ajuda do **[ContextHub](contexthub.md).**
+Depois que o segmento é definido, os resultados potenciais podem ser testados com o auxílio da **[ContextHub](contexthub.md).**
 
-1. Pré-visualização de uma página
-1. Clique no ícone ContextHub para revelar a barra de ferramentas do ContextHub
-1. Selecione uma pessoa que corresponda ao segmento criado
+1. Visualizar uma página
+1. Clique no ícone do ContextHub para exibir a barra de ferramentas do ContextHub
+1. Selecione uma persona que corresponda ao segmento criado
 1. O ContextHub resolverá os segmentos aplicáveis para a persona selecionada
 
-Por exemplo, nossa definição de segmento simples para identificar usuários em Basel é baseada na localização do usuário. O carregamento de uma pessoa específica que corresponde a esses critérios mostra se o segmento foi resolvido com êxito:
+Por exemplo, nossa definição de segmento simples para identificar usuários em Basel é baseada no local do usuário. O carregamento de uma persona específica que corresponde a esses critérios mostra se o segmento foi resolvido com êxito:
 
 ![Segmento que resolve](../assets/contexthub-segment-resolve.png)
 
@@ -276,16 +275,16 @@ Ou se não for resolvido:
 
 >[!NOTE]
 >
->Todas as características são resolvidas imediatamente, embora a maioria só seja alterada no recarregamento da página.
+>Todas as características são resolvidas imediatamente, embora a maioria das alterações seja alterada somente no recarregamento da página.
 
-Esses testes também podem ser executados em páginas de conteúdo e em combinação com conteúdo direcionado e **Atividade** e **Experiências** relacionadas.
+Esses testes também podem ser executados em páginas de conteúdo e em combinação com conteúdo direcionado e relacionado **Atividades** e **Experiências**.
 
-Se você configurou uma atividade e uma experiência, é possível testar facilmente seu segmento com a atividade. Para obter detalhes sobre como configurar uma atividade, consulte a documentação relacionada [sobre como criar conteúdo direcionado](targeted-content.md).
+Se você configurou uma atividade e uma experiência, é possível testar facilmente seu segmento com a atividade. Para obter detalhes sobre como configurar uma atividade, consulte os [documentação sobre a criação de conteúdo direcionado](targeted-content.md).
 
-1. No modo de edição de uma página onde você configurou o conteúdo direcionado, é possível ver que o conteúdo é direcionado por meio do ícone de seta no conteúdo.
-1. Alterne para o modo de pré-visualização e, usando o hub de contexto, alterne para uma pessoa que não corresponde à segmentação configurada para a experiência.
-1. Alterne para uma pessoa que não corresponda à segmentação configurada para a experiência e veja se a experiência muda de acordo.
+1. No modo de edição de uma página em que você configurou o conteúdo direcionado, é possível ver que o conteúdo é direcionado por meio do ícone de seta no conteúdo.
+1. Alterne para o modo de visualização e usando o hub de contexto, alterne para uma persona que não corresponda à segmentação configurada para a experiência.
+1. Alterne para uma persona que corresponda à segmentação configurada para a experiência e veja que a experiência muda de acordo.
 
-## Usando seu segmento {#using-your-segment}
+## Usar seu segmento {#using-your-segment}
 
-Os segmentos são usados para controlar o conteúdo real visualizado por audiências de públicos alvos específicas. Consulte [Gerenciando Audiência](audiences.md) para obter mais informações sobre audiências e segmentos e [Criação de conteúdo direcionado](targeted-content.md) sobre como usar audiências e segmentos para o conteúdo do público alvo.
+Os segmentos são usados para controlar o conteúdo real visualizado por públicos-alvo específicos. Consulte [Gerenciamento de públicos-alvo](audiences.md) para obter mais informações sobre públicos-alvo e segmentos e [Criação de conteúdo direcionado](targeted-content.md) sobre o uso de públicos-alvo e segmentos para direcionar conteúdo.

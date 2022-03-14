@@ -3,13 +3,13 @@ title: Usar o painel do site para gerenciar o tema do site
 description: Conheça os recursos avançados do painel Site para ajudá-lo a personalizar e gerenciar facilmente o tema do site.
 feature: Administering
 role: Admin
-source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
+exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
 
 ---
-
 
 # Usar o painel do site para gerenciar o tema do site {#site-rail}
 

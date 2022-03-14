@@ -221,6 +221,7 @@ Outros idiomas estão disponíveis como Pacotes de modelo de idioma na Distribui
 * [Alemão (Alemanha)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [Italiano (Itália)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [Espanhol (Espanha)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
 
 
 1. Selecionar **Principal** ou a variação exigida.
@@ -285,7 +286,7 @@ Para anotar um fragmento:
 
 Anotações:
 
-* São indicados pelo destaque no texto, no modo de tela cheia e no modo normal do editor. Detalhes completos de uma anotação podem ser exibidos, editados e/ou excluídos ao clicar no texto destacado, o que reabrirá a caixa de diálogo.
+* São indicados pelo destaque no texto, no modo de tela cheia e no modo normal do editor. Detalhes completos de uma anotação podem ser exibidos, editados e/ou excluídos ao clicar no texto destacado, o que abrirá novamente a caixa de diálogo.
 
    >[!NOTE]
    Um seletor suspenso é fornecido se várias anotações tiverem sido aplicadas a um texto.

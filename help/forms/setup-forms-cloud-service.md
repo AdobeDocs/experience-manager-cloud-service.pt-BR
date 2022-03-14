@@ -5,7 +5,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ Para obter mais informações sobre grupos de AEM específicos do Forms e permis
 
 ## Próxima etapa {#next-steps}
 
-[Configurar um ambiente de desenvolvimento local](setup-local-development-environment.md). Você pode usar o ambiente de desenvolvimento local para criar um Formulário adaptável e ativos relacionados (Temas, Modelos, Ações de envio personalizadas, serviço de pré-preenchimento e muito mais) e [converter PDF forms em Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) sem fazer logon no ambiente de desenvolvimento de nuvem.
+[Configurar um ambiente de desenvolvimento local](setup-local-development-environment.md). Você pode usar o ambiente de desenvolvimento local para criar um Formulário adaptável e ativos relacionados (Temas, Modelos, Ações de envio personalizadas, serviço de pré-preenchimento e muito mais) e [converter PDF forms em Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=pt-BR) sem fazer logon no ambiente de desenvolvimento de nuvem.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 

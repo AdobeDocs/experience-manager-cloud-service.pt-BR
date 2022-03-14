@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # Gerenciamento de projetos de tradução {#managing-translation-projects}
 
-Os projetos de tradução permitem gerenciar a tradução de AEM conteúdo. Um projeto de tradução é um tipo de AEM [project](/help/sites-cloud/authoring/projects/overview.md) que contém recursos que devem ser traduzidos para outros idiomas. Esses recursos são as páginas e os ativos das [cópias de idioma](preparation.md) que são criadas a partir do idioma principal.
+Os projetos de tradução permitem gerenciar a tradução de AEM conteúdo. Um projeto de tradução é um tipo de AEM [projeto](/help/sites-cloud/authoring/projects/overview.md) que contém recursos a serem traduzidos para outras línguas. Esses recursos são as páginas e os ativos da variável [cópias de idioma](preparation.md) que são criados a partir do idioma principal.
 
 >[!TIP]
 >
->Se você não estiver familiarizado com a tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é o caminho orientado pela tradução do conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideal para aqueles sem AEM ou experiência de tradução.
+>Se você é novo em traduzir conteúdo, consulte nosso [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é o caminho orientado pela tradução do conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência de AEM ou tradução.
 
 Quando os recursos são adicionados a um projeto de tradução, um trabalho de tradução é criado para eles. Os trabalhos fornecem comandos e informações de status que você usa para gerenciar os workflows de tradução humana e tradução automática que são executados nos recursos.
 
@@ -37,10 +37,10 @@ O AEM detecta se um projeto de tradução está sendo criado para a tradução i
    * Quando a página traduzida é importada para o AEM, ela substitui a página na inicialização.
    * A página traduzida substitui a cópia de idioma somente quando o lançamento é promovido.
 
-Por exemplo, a raiz de idioma `/content/wknd/fr` é criada para a tradução em francês do `/content/wknd/en` idioma principal. Não há outras páginas na cópia em francês.
+Por exemplo, a variável `/content/wknd/fr` a raiz do idioma é criada para a tradução em francês do `/content/wknd/en` Idioma principal. Não há outras páginas na cópia em francês.
 
-* Um projeto de tradução é criado para a página `/content/wknd/en/products` e todas as páginas filhas, direcionando a cópia em francês. Como a cópia de idioma não inclui a página `/content/wknd/fr/products`, o AEM copia imediatamente a página `/content/wknd/en/products` e todas as páginas filhas para a cópia em francês. As cópias também são incluídas no projeto de tradução.
-* Um projeto de tradução é criado para a página `/content/wknd/en` e todas as páginas filhas, direcionando a cópia em francês. Como a cópia de idioma inclui a página que corresponde à página `/content/wknd/en` (a raiz de idioma), AEM copia a página `/content/wknd/en` e todas as páginas filhas e as adiciona a um lançamento. As cópias também são incluídas no projeto de tradução.
+* Um projeto de tradução é criado para o `/content/wknd/en/products` página e todas as páginas filhas, direcionando a cópia em francês. Porque a cópia de idioma não inclui a variável `/content/wknd/fr/products` AEM copia imediatamente a página `/content/wknd/en/products` e todas as páginas secundárias na cópia em francês. As cópias também são incluídas no projeto de tradução.
+* Um projeto de tradução é criado para o `/content/wknd/en` página e todas as páginas filhas, direcionando a cópia em francês. Como a cópia de idioma inclui a página que corresponde ao `/content/wknd/en` página (a raiz do idioma), AEM copia a variável `/content/wknd/en` e todas as páginas filhas e as adiciona a um lançamento. As cópias também são incluídas no projeto de tradução.
 
 ## Tradução do console Sites {#performing-initial-translations-and-updating-existing-translations}
 
@@ -60,7 +60,7 @@ Você também pode [criar projetos de tradução manualmente](#creating-a-transl
 
 >[!NOTE]
 >
->Para criar um projeto, sua conta deve ser membro do grupo `project-administrators`.
+>Para criar um projeto, sua conta deve ser membro do `project-administrators` grupo.
 
 ### Traduções iniciais e atualização de traduções {#initial-and-updating}
 
@@ -68,7 +68,7 @@ O painel Referências indica se você está atualizando cópias de idioma existe
 
 ![Atualizar cópias de idioma](../assets/update-language-copies.png)
 
-Após a tradução, você pode [revisar a tradução](#reviewing-and-promoting-updated-content) antes de substituir a cópia de idioma por ela. Quando não existe uma cópia de idioma para a página selecionada, a guia Criar e traduzir aparece para fornecer acesso aos comandos relacionados ao projeto.
+Depois de traduzir, você pode [revisar a tradução](#reviewing-and-promoting-updated-content) antes de substituir a cópia de idioma por ela. Quando não existe uma cópia de idioma para a página selecionada, a guia Criar e traduzir aparece para fornecer acesso aos comandos relacionados ao projeto.
 
 ![Criar e traduzir](../assets/create-and-translate.png)
 
@@ -76,18 +76,18 @@ Após a tradução, você pode [revisar a tradução](#reviewing-and-promoting-u
 
 1. Use o console Sites para selecionar a página que você está adicionando aos projetos de tradução.
 
-1. Usando a barra de ferramentas, abra o painel **Referências**.
+1. Na barra de ferramentas, abra o **Referências** trilho.
 
    ![Referências](../assets/references.png)
 
-1. Selecione **Cópias de idioma** e selecione as cópias de idioma para as quais você está traduzindo as páginas de origem.
+1. Selecionar **Cópias de idioma** e, em seguida, selecione as cópias de idioma para as quais você está traduzindo as páginas de origem.
 1. Clique ou toque em **Criar e traduzir** e configure o trabalho de tradução:
 
-   * Use o menu suspenso **Languages** para selecionar uma cópia de idioma para a qual deseja traduzir. Selecione idiomas adicionais, conforme necessário. Os idiomas que aparecem na lista correspondem às raízes de idioma [que você criou](preparation.md#creating-a-language-root).
+   * Use o **Languages** para selecionar uma cópia de idioma para a qual deseja traduzir. Selecione idiomas adicionais, conforme necessário. Os idiomas exibidos na lista correspondem à variável [raízes de idioma criadas por você](preparation.md#creating-a-language-root).
       * Selecionar vários idiomas cria um projeto com um trabalho de tradução para cada idioma.
    * Para traduzir a página selecionada e todas as páginas filhas, selecione **Selecionar todas as subpáginas**. Para traduzir apenas a página selecionada, desmarque a opção .
    * Para **Projeto**, selecione **Criar projeto(s) de tradução**.
-   * Como opção para **Projeto Principal**, selecione um projeto do qual herdar funções e permissões de usuário.
+   * Opcionalmente para **Projeto Principal**, selecione um projeto do qual herdar funções e permissões de usuário.
    * Em **Título** digite um nome para o projeto.
 
    ![Criar projeto de tradução](../assets/create-translation-project.png)
@@ -98,16 +98,16 @@ Após a tradução, você pode [revisar a tradução](#reviewing-and-promoting-u
 
 1. Use o console Sites para selecionar a página que você está adicionando aos projetos de tradução.
 
-1. Usando a barra de ferramentas, abra o painel **Referências**.
+1. Na barra de ferramentas, abra o **Referências** trilho.
 
    ![Referências](../assets/references.png)
 
-1. Selecione **Cópias de idioma** e selecione as cópias de idioma para as quais você está traduzindo as páginas de origem.
+1. Selecionar **Cópias de idioma** e, em seguida, selecione as cópias de idioma para as quais você está traduzindo as páginas de origem.
 1. Clique ou toque em **Atualizar Cópias de Idioma** e configure o trabalho de tradução:
 
    * Para traduzir a página selecionada e todas as páginas filhas, selecione **Selecionar todas as subpáginas**. Para traduzir apenas a página selecionada, desmarque a opção .
    * Para **Projeto**, selecione **Criar projeto(s) de tradução**.
-   * Como opção para **Projeto Principal**, selecione um projeto do qual herdar funções e permissões de usuário.
+   * Opcionalmente para **Projeto Principal**, selecione um projeto do qual herdar funções e permissões de usuário.
    * Em **Título** digite um nome para o projeto.
 
    ![Criar projeto para atualizar cópias de idioma](../assets/create-update-language-copies-project.png)
@@ -116,7 +116,7 @@ Após a tradução, você pode [revisar a tradução](#reviewing-and-promoting-u
 
 ### Adicionar páginas a um projeto de tradução {#adding-pages-to-a-translation-project}
 
-Depois de criar um projeto de tradução, você pode usar o painel **Resources** para adicionar páginas ao projeto. Adicionar páginas é útil quando você está incluindo páginas de diferentes ramificações no mesmo projeto.
+Depois de criar um projeto de tradução, você pode usar a variável **Recursos** painel para adicionar páginas ao projeto. Adicionar páginas é útil quando você está incluindo páginas de diferentes ramificações no mesmo projeto.
 
 Quando você adiciona páginas a um projeto de tradução, as páginas são incluídas em um novo trabalho de tradução. Você também pode [adicionar páginas a um trabalho existente](#adding-pages-assets-to-a-translation-job).
 
@@ -124,19 +124,19 @@ Assim como ao criar um novo projeto, ao adicionar páginas, cópias das páginas
 
 1. Use o console Sites para selecionar a página que você está adicionando ao projeto de tradução.
 
-1. Usando a barra de ferramentas, abra o painel **Referências**.
+1. Na barra de ferramentas, abra o **Referências** trilho.
 
    ![Referências](../assets/references.png)
 
-1. Selecione **Cópias de idioma** e selecione as cópias de idioma para as quais você está traduzindo as páginas de origem.
+1. Selecionar **Cópias de idioma** e, em seguida, selecione as cópias de idioma para as quais você está traduzindo as páginas de origem.
 
    ![Atualizar cópias de idioma do painel de referências](../assets/update-language-copies-references.png)
 
 1. Clique ou toque em **Atualizar Cópias de Idioma** e configure as propriedades:
 
    * Para traduzir a página selecionada e todas as páginas filhas, selecione **Selecionar todas as subpáginas**. Para traduzir apenas a página selecionada, desmarque a opção .
-   * Para **Projeto**, selecione **Adicionar ao Projeto de Tradução existente**.
-   * Selecione o projeto em **Projeto de Tradução Existente**.
+   * Para **Projeto**, selecione **Adicionar ao projeto de tradução existente**.
+   * Selecione o projeto em **Projeto de tradução existente**.
 
    >[!NOTE]
    >
@@ -148,20 +148,20 @@ Assim como ao criar um novo projeto, ao adicionar páginas, cópias das páginas
 
 É possível criar apenas a estrutura da cópia de idioma, permitindo copiar o conteúdo e as alterações estruturais no idioma principal às cópias de idioma (não traduzidas). Isso não está relacionado a um trabalho ou projeto de tradução. Você pode usar isso para manter seus mestres em sincronia, mesmo sem tradução.
 
-Preencha sua cópia de idioma para que ela contenha conteúdo do idioma principal que você está traduzindo. Antes de preencher a cópia de idioma, você deve ter [criado a raiz de idioma](preparation.md#creating-a-language-root) da cópia de idioma.
+Preencha sua cópia de idioma para que ela contenha conteúdo do idioma principal que você está traduzindo. Antes de preencher a cópia de idioma, é necessário ter [criado a raiz de idioma](preparation.md#creating-a-language-root) da cópia do idioma.
 
 1. Use o console Sites para selecionar a raiz do idioma do idioma principal que você está usando como a fonte.
 1. Abra o painel de referências clicando ou tocando em **Referências** na barra de ferramentas.
 
    ![Referências](../assets/references.png)
 
-1. Selecione **Cópias de idioma** e selecione as cópias de idioma que deseja preencher.
+1. Selecionar **Cópias de idioma** e, em seguida, selecione as cópias de idioma que deseja preencher.
 
    ![Selecionar cópias de idioma](../assets/language-copy-structure-select.png)
 
-1. Clique ou toque em **Atualizar Cópias de Idioma** para revelar as ferramentas de tradução e configure as propriedades:
+1. Clique ou toque em **Atualizar Cópias de Idioma** para revelar as ferramentas de tradução e configurar as propriedades:
 
-   * Selecione a opção **Select all sub-pages**.
+   * Selecione o **Selecionar todas as subpáginas** opção.
    * Para **Projeto**, selecione **Criar apenas estrutura**.
 
    ![Somente estrutura](../assets/language-copy-structure-only.png)
@@ -173,7 +173,7 @@ Preencha sua cópia de idioma para que ela contenha conteúdo do idioma principa
 As edições manuais de conteúdo traduzido podem ser sincronizadas de volta ao Sistema de Gerenciamento de Tradução (TMS) para treinar sua Memória de Tradução.
 
 1. No console Sites, depois de atualizar o conteúdo do texto em uma página traduzida, selecione **Atualizar memória de tradução**.
-1. Uma exibição de lista mostra uma comparação lado a lado da origem e da tradução para cada componente de texto que foi editado. Selecione quais atualizações de tradução devem ser sincronizadas com a memória de tradução e selecione **Atualizar Memória**.
+1. Uma exibição de lista mostra uma comparação lado a lado da origem e da tradução para cada componente de texto que foi editado. Selecione quais atualizações de tradução devem ser sincronizadas com a memória de tradução e selecione **Atualizar memória**.
 
 ![Comparar alterações da memória de tradução](../assets/update-translation-memory-compare.png)
 
@@ -183,11 +183,11 @@ AEM enviará as cadeias de caracteres selecionadas de volta para o Sistema de ge
 
 Uma propriedade pode ser selecionada na exibição de lista do console de sites que mostra se uma página foi traduzida, está na tradução ou ainda não foi traduzida.
 
-1. No console do site, alterne para [list view.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
-1. Toque ou clique em **Configurações de exibição** no menu suspenso de exibição.
-1. Na caixa de diálogo, marque a propriedade **Translated** e toque ou clique em **Atualizar**.
+1. No console do site, alterne para [exibição em lista.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. Toque ou clique em, **Exibir configurações** no menu suspenso exibição .
+1. Na caixa de diálogo , marque a opção **Traduzido** e toque ou clique **Atualizar**.
 
-O console Sites agora exibe a coluna **Translated** mostrando o status de tradução das páginas listadas.
+O console Sites agora exibe a variável **Traduzido** coluna mostrando o status de tradução das páginas listadas.
 
 ![Status da tradução na exibição de lista](../assets/translation-status-list-view.png)
 
@@ -197,16 +197,16 @@ Muitas tarefas de tradução e opções avançadas podem ser acessadas no consol
 
 ### Noções básicas sobre o console Projetos
 
-Os projetos de tradução em AEM usam o console [AEM projetos padrão.](/help/sites-cloud/authoring/projects/overview.md) Se você não estiver familiarizado com AEM projetos, revise essa documentação.
+Os projetos de tradução em AEM usam o padrão [AEM console projetos .](/help/sites-cloud/authoring/projects/overview.md) Se você não estiver familiarizado com AEM projetos, revise essa documentação.
 
 Como qualquer outro projeto, um projeto de tradução é composto de blocos que apresentam uma visão geral das tarefas do projeto.
 
 ![Projeto de tradução](../assets/translation-project.png)
 
-* **Resumo**  - Uma visão geral do projeto
-* **Tarefas**  - Uma ou mais tarefas de tradução
-* **Equipe**  - Usuários colaborando no projeto de tradução
-* **Tarefas**  - Itens que precisam ser concluídos como parte do esforço de tradução
+* **Resumo** - Uma visão geral do projeto
+* **Tarefas** - Uma ou mais tarefas de tradução
+* **Equipe** - Usuários colaborando no projeto de tradução
+* **Tarefas** - Itens que precisam ser preenchidos como parte do esforço de tradução
 
 Use os comandos e botões de reticências na parte superior e inferior dos blocos (respectivamente) para acessar controles e opções para os vários blocos.
 
@@ -220,21 +220,21 @@ Você pode criar manualmente um projeto de tradução se preferir usar o console
 
 >[!NOTE]
 >
->Para criar um projeto, sua conta deve ser membro do grupo `project-administrators`.
+>Para criar um projeto, sua conta deve ser membro do `project-administrators` grupo.
 
-Ao criar manualmente um projeto de tradução, você deve fornecer valores para as seguintes propriedades relacionadas à tradução, além das [propriedades básicas](/help/sites-cloud/authoring/projects/managing.md#creating-a-project):
+Ao criar manualmente um projeto de tradução, você deve fornecer valores para as seguintes propriedades relacionadas à tradução, além da variável [propriedades básicas](/help/sites-cloud/authoring/projects/managing.md#creating-a-project):
 
 * **Nome:** Nome do projeto
-* **Idioma de origem:** o idioma do conteúdo de origem
-* **Idioma de destino:** o idioma ou idiomas para os quais o conteúdo está sendo traduzido
+* **Idioma de Origem:** O idioma do conteúdo de origem
+* **Idioma de Destino:** O idioma ou idiomas em que o conteúdo está sendo traduzido
    * Se vários idiomas forem selecionados, uma tarefa será criada para cada idioma no projeto.
-* **Método de tradução:** selecione  **Tradução** humana para indicar que a tradução deve ser executada manualmente.
+* **Método de tradução:** Selecionar **Tradução humana** para indicar que a tradução deve ser executada manualmente.
 
 1. Na barra de ferramentas do console de projetos, clique ou toque em **Criar**.
-1. Selecione o modelo **Projeto de Tradução** e clique ou toque em **Próximo**.
-1. Insira valores para a guia de propriedades **Basic**.
-1. Clique ou toque em **Avançado** e forneça valores para as propriedades relacionadas à tradução.
-1. Clique ou toque em **Criar**. Na caixa de confirmação, clique ou toque em **Concluído** para retornar ao console de projetos ou clique ou toque em **Abrir projeto** para abrir e começar a gerenciar o projeto.
+1. Selecione o **Projeto de tradução** modelo e, em seguida, clique ou toque em **Próximo**.
+1. Insira valores para o **Básico** guia de propriedades.
+1. Clique ou toque em **Avançado** e fornecer valores para as propriedades relacionadas à tradução.
+1. Clique ou toque em **Criar**. Na caixa de confirmação, clique ou toque em **Concluído** para retornar ao console projetos ou clique ou toque em **Abrir projeto** para abrir e começar a gerenciar o projeto.
 
 ### Adicionar páginas e ativos a um trabalho de tradução {#adding-pages-assets-to-a-translation-job}
 
@@ -244,7 +244,7 @@ Você pode adicionar páginas, ativos ou tags ao trabalho de tradução do seu p
 
    ![Mosaico de trabalho de tradução](../assets/translation-job.png)
 
-1. Na próxima janela, clique ou toque no botão **Add** na barra de ferramentas e selecione **Assets/Pages**.
+1. Na próxima janela, clique ou toque no botão **Adicionar** na barra de ferramentas e selecione **Ativos/páginas**.
 
    ![Adicionar páginas](../assets/add-to-project.png)
 
@@ -260,29 +260,29 @@ Você pode adicionar páginas, ativos ou tags ao trabalho de tradução do seu p
 
 >[!TIP]
 >
->Esse método adiciona páginas/ativos e seus filhos ao projeto. Selecione **Ativo/Página (sem filhos)** se desejar adicionar apenas os pais.
+>Esse método adiciona páginas/ativos e seus filhos ao projeto. Selecionar **Ativo/Página (sem filhos)** se você quiser apenas adicionar os pais.
 
 ### Adicionar tags a um trabalho de tradução {#adding-tags-to-a-translation-job}
 
-É possível adicionar tags a um projeto de tradução semelhante a [como você adiciona ativos e páginas a um projeto.](#adding-pages-assets-to-a-translation-job) Basta selecionar  **** Tags no  **** menu Adicionar e seguir as mesmas etapas.
+Você pode adicionar tags a um projeto de tradução semelhante a [como adicionar ativos e páginas a um projeto.](#adding-pages-assets-to-a-translation-job) Basta selecionar **Tags** nos termos do **Adicionar** em seguida, siga as mesmas etapas.
 
 ### Visualizar detalhes do projeto de tradução {#seeing-translation-project-details}
 
-As propriedades do projeto de tradução são acessíveis por meio do botão de reticências do bloco de resumo do projeto. Além das [informações genéricas do projeto](/help/sites-cloud/authoring/projects/overview.md#project-info), as propriedades do projeto de tradução contêm traduções específicas.
+As propriedades do projeto de tradução são acessíveis por meio do botão de reticências do bloco de resumo do projeto. Além do genérico [informações do projeto](/help/sites-cloud/authoring/projects/overview.md#project-info), as propriedades do projeto de tradução contêm traduções específicas.
 
-No seu projeto de tradução, clique ou toque nas reticências na parte inferior do bloco Resumo da tradução . A maioria das propriedades específicas do projeto está na guia **Avançado**.
+No seu projeto de tradução, clique ou toque nas reticências na parte inferior do bloco Resumo da tradução . A maioria das propriedades específicas do projeto está no **Avançado** guia .
 
-* **Idioma de origem:** o idioma das páginas que estão sendo traduzidas
-* **Idioma de destino:** o idioma ou idiomas para os quais as páginas estão sendo traduzidas
-* **Configuração da nuvem:** a configuração da nuvem do conector do serviço de tradução usado para o projeto
-* **Método de tradução:** o fluxo de trabalho de tradução, seja  **Tradução** Humana ou Tradução  **Automática**
-* **Provedor de tradução:** o provedor de serviços de tradução que está executando a tradução
-* **Categoria de conteúdo:**  (tradução automática) a categoria de conteúdo usada para a tradução
+* **Idioma de Origem:** O idioma das páginas que estão sendo traduzidas
+* **Idioma de Destino:** O idioma ou os idiomas em que as páginas estão sendo traduzidas
+* **Configuração na nuvem:** A configuração de nuvem do conector do serviço de tradução usado para o projeto
+* **Método de tradução:** O fluxo de trabalho de tradução, **Tradução humana** ou **Tradução Automática**
+* **Provedor de Tradução:** O provedor de serviços de tradução que está executando a tradução
+* **Categoria de conteúdo:** (Tradução automática) A categoria de conteúdo usada para tradução
 * **Credencial do Provedor de Tradução:** As credenciais para entrar no provedor
-* **Promover automaticamente inicializações de tradução:** depois de receber conteúdo traduzido, as inicializações de tradução são promovidas automaticamente
-   * **Excluir lançamento após promoção:** se as inicializações de tradução forem promovidas automaticamente, exclua a inicialização após a promoção
-* **Aprovar traduções automaticamente:** depois de receber conteúdo traduzido, as tarefas de tradução são aprovadas automaticamente
-* **Repetir tradução:** configure a execução recorrente de um projeto de tradução selecionando a frequência em que o projeto criará e executará automaticamente os trabalhos de tradução
+* **Promover automaticamente inicializações de tradução:** Depois de receber conteúdo traduzido, as inicializações de tradução são promovidas automaticamente
+   * **Excluir lançamento após promoção:** Se as inicializações de tradução forem promovidas automaticamente, exclua a inicialização após a promoção
+* **Aprovar traduções automaticamente:** Depois de receber conteúdo traduzido, as tarefas de tradução são aprovadas automaticamente
+* **Repetir tradução:** Configure a execução recorrente de um projeto de tradução selecionando a frequência com que o projeto criará e executará automaticamente os trabalhos de tradução
 
 Quando um projeto é criado usando o painel de referências de uma página, essas propriedades são configuradas automaticamente com base nas propriedades da página de origem.
 
@@ -298,9 +298,9 @@ A tabela a seguir descreve cada status que uma ordem de produção ou um item na
 
 | Status | Descrição |
 |---|---|
-| **Rascunho** | O trabalho de tradução não foi iniciado. Os trabalhos de tradução estão no status **Rascunho**** quando são criados. |
-| **Enviado** | Os arquivos no trabalho de tradução têm esse status quando foram enviados com êxito para o serviço de tradução. Esse status pode ocorrer após o comando **Escopo da Solicitação** ou o comando **Iniciar** ser emitido. |
-| **Escopo solicitado** | Para o fluxo de trabalho de tradução humana, os arquivos no trabalho foram enviados ao fornecedor de tradução para escopo. Esse status aparece após o comando **Escopo da Solicitação** ser emitido. |
+| **Rascunho** | O trabalho de tradução não foi iniciado. Os trabalhos de tradução estão em **Rascunho**** status ao serem criadas. |
+| **Enviado** | Os arquivos no trabalho de tradução têm esse status quando foram enviados com êxito para o serviço de tradução. Esse status pode ocorrer após a **Escopo da Solicitação** ou o **Iniciar** é emitido. |
+| **Escopo solicitado** | Para o fluxo de trabalho de tradução humana, os arquivos no trabalho foram enviados ao fornecedor de tradução para escopo. Este status aparece após a **Escopo da Solicitação** é emitido. |
 | **Escopo concluído** | O fornecedor esticou o trabalho de tradução. |
 | **Autorizado para tradução** | O proprietário do projeto aceitou o escopo. Esse status indica que o fornecedor de tradução deve começar a traduzir os arquivos na tarefa. |
 | **Tradução Em Andamento** | Para uma tarefa, a tradução de um ou mais arquivos na tarefa ainda não foi concluída. Para um item na tarefa, o item está sendo traduzido. |
@@ -321,7 +321,7 @@ Especifique a data antes da qual seu fornecedor de tradução precisa retornar o
 
    ![Mosaico de resumo da tradução](../assets/translation-summary-tile.png)
 
-1. Na guia **Basic**, use o seletor de datas da propriedade **Data de Vencimento** para selecionar a data de vencimento.
+1. No **Básico** , use o seletor de datas do **Data de vencimento** para selecionar a data de vencimento.
 
    ![Propriedades do projeto de tradução](../assets/translation-project-properties-basic.png)
 
@@ -337,13 +337,13 @@ Para obter mais informações sobre os resultados do escopo, entre em contato co
 >
 >O escopo é opcional e se aplica somente à tradução humana. Você pode iniciar um trabalho de tradução sem escopo.
 
-Quando você cria um escopo de trabalho de tradução, o status do trabalho é **Scope Requested**. Quando o fornecedor de tradução retorna o escopo, o status é alterado para **Scope Completed**. Quando o escopo é concluído, você pode usar o comando **Mostrar escopo** para revisar os resultados do escopo.
+Quando você cria escopo de um trabalho de tradução, o status do trabalho é **Escopo solicitado**. Quando o fornecedor de tradução retorna o escopo, o status é alterado para **Escopo Concluído**. Quando o escopo for concluído, você poderá usar a variável **Mostrar Escopo** para analisar os resultados do escopo.
 
 O escopo funciona corretamente somente quando o fornecedor de tradução que você está usando suporta esse recurso.
 
 1. No console Projetos , abra o projeto de tradução.
-1. No título do trabalho de tradução, toque ou clique no menu de comandos e, em seguida, toque ou clique em **Escopo da solicitação**.
-1. Quando o status da tarefa for alterado para **Escopo concluído**, clique ou toque no menu de comandos e, em seguida, clique ou toque em **Mostrar escopo**.
+1. No título do trabalho de tradução, toque ou clique no menu de comandos e, em seguida, toque ou clique em **Escopo da Solicitação**.
+1. Quando o status do trabalho for alterado para **Escopo Concluído**, clique ou toque no menu de comandos e, em seguida, clique ou toque em **Mostrar Escopo**.
 
 ### Iniciando trabalhos de tradução {#starting-translation-jobs}
 
@@ -355,17 +355,17 @@ Você pode iniciar um trabalho individual dentro do projeto.
 1. No bloco do trabalho de tradução, clique ou toque no menu de comandos e, em seguida, clique ou toque em **Iniciar**.
 1. Na caixa de diálogo de ação que confirma o início da tradução, clique ou toque em **Fechar**.
 
-Depois de iniciar o trabalho de tradução, o bloco de trabalho de tradução mostra a tradução no status **Em progresso**.
+Depois de iniciar o trabalho de tradução, o bloco de trabalho de tradução mostra a tradução em **Em Andamento** status.
 
 Você também pode iniciar todos os trabalhos de tradução de um projeto.
 
 1. No console do projeto, selecione o projeto de tradução.
 1. Na barra de ferramentas, toque ou clique em **Iniciar trabalho de tradução**.
-1. Na caixa de diálogo, revise a lista de tarefas que serão iniciadas e confirme com **Iniciar** ou aborte com **Cancelar**.
+1. Na caixa de diálogo, revise a lista de tarefas que serão iniciadas e confirme com **Iniciar** ou abortar com **Cancelar**.
 
 ### Cancelar um trabalho de tradução {#canceling-a-translation-job}
 
-Cancele um trabalho de tradução para interromper o processo de tradução e impedir que o fornecedor de tradução execute mais traduções. Você pode cancelar um trabalho quando ele tiver o status **Confirmado para tradução** ou **Tradução em andamento**.
+Cancele um trabalho de tradução para interromper o processo de tradução e impedir que o fornecedor de tradução execute mais traduções. Você pode cancelar um trabalho quando ele tiver o valor **Autorizado para tradução** ou **Tradução Em Andamento** status.
 
 1. No console Projetos , abra o projeto de tradução.
 1. No bloco do trabalho de tradução, clique ou toque no menu de comandos e, em seguida, clique ou toque em **Cancelar**.
@@ -373,9 +373,9 @@ Cancele um trabalho de tradução para interromper o processo de tradução e im
 
 ### Aceitar e Rejeitar Fluxo de Trabalho {#accept-reject-workflow}
 
-Quando o conteúdo volta após a tradução e está no status **Pronto para revisão**, você pode ir no trabalho de tradução e aceitar/rejeitar o conteúdo.
+Quando o conteúdo volta após a tradução e está em **Pronto para revisão** , você pode acessar o trabalho de tradução e aceitar/rejeitar o conteúdo.
 
-Se você selecionar **Reject Translation**, terá a opção de adicionar um comentário.
+Se você selecionar **Rejeitar tradução**, você tem a opção de adicionar um comentário.
 
 Rejeitar o conteúdo o envia de volta ao fornecedor de tradução, onde ele poderá ver o comentário.
 
@@ -384,8 +384,8 @@ Rejeitar o conteúdo o envia de volta ao fornecedor de tradução, onde ele pode
 Conclua um trabalho de tradução depois de ter revisado os arquivos traduzidos do fornecedor.
 
 1. No console Projetos , abra o projeto de tradução.
-1. No bloco do trabalho de tradução, clique ou toque no menu de comandos e, em seguida, clique ou toque em **Complete**.
-1. O trabalho agora tem o status **Complete**.
+1. No bloco do trabalho de tradução, clique ou toque no menu de comandos e, em seguida, clique ou toque em **Concluído**.
+1. O trabalho agora tem o status **Concluído**.
 
 Para fluxos de trabalho de tradução humana, concluir uma tradução indica ao fornecedor que o contrato de tradução foi cumprido e que ele deve salvar a tradução na sua memória de tradução.
 
@@ -402,7 +402,7 @@ Você pode usar o console Sites para revisar o conteúdo, comparar cópias de id
 
 ### Promover conteúdo atualizado {#promoting-updated-content}
 
-Quando o conteúdo é traduzido para uma cópia de idioma existente, revise as traduções, faça alterações se necessário e promova as traduções para movê-lo para a cópia de idioma. Você pode revisar arquivos traduzidos quando o trabalho de tradução mostrar o status **Pronto para Revisão**.
+Quando o conteúdo é traduzido para uma cópia de idioma existente, revise as traduções, faça alterações se necessário e promova as traduções para movê-lo para a cópia de idioma. Você pode revisar arquivos traduzidos quando o trabalho de tradução mostrar a variável **Pronto Para Revisão** status.
 
 ![Trabalho pronto para revisão](../assets/job-ready-for-review.png)
 
@@ -411,22 +411,22 @@ Quando o conteúdo é traduzido para uma cópia de idioma existente, revise as t
 
    ![Cópia de idioma pronta para revisão](../assets/language-copy-ready-for-review.png)
 
-1. Clique ou toque em **Launch** para revelar os comandos relacionados ao lançamento.
+1. Clique ou toque em **Launch** para revelar os comandos relacionados ao launch.
 
    ![Início](../assets/language-copy-launch.png)
 
 1. Para abrir a cópia de lançamento da página para revisar e editar o conteúdo, clique em **Abrir página**.
-1. Após ter revisado o conteúdo e feito as alterações necessárias, para promover a cópia de lançamento, clique em **Promover**.
-1. Na página **Promover lançamento** , especifique quais páginas promover e clique ou toque em **Promover**.
+1. Após ter revisado o conteúdo e feito as alterações necessárias, para promover o clique na cópia de lançamento **Promover**.
+1. No **Promover lançamento** especifique quais páginas serão promovidas e clique ou toque em **Promover**.
 
 ### Comparação de cópias de idioma {#comparing-language-copies}
 
 Para comparar cópias de idioma ao idioma principal:
 
 1. No console Sites, navegue até a cópia de idioma que deseja comparar.
-1. Abra o painel [Referências.](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)
-1. No cabeçalho **Cópias** selecione **Cópias de Idioma.**
-1. Selecione a cópia de idioma específica e, em seguida, clique em **Comparar com Principal** ou **Comparar com Anterior**, se aplicável.
+1. Abra o [Trilho de referências.](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)
+1. Em **Cópias** seleção de cabeçalho **Cópias de idioma.**
+1. Selecione a cópia de idioma específica e, em seguida, clique em **Comparar ao Principal** ou **Comparar com anterior** se aplicável.
 
    ![Comparar cópias de idioma](../assets/language-copy-compare.png)
 

@@ -4,18 +4,18 @@ description: Um guia de referência do desenvolvedor para obter os detalhes dos 
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3659'
+ht-degree: 1%
 
 ---
 
 # Guia de referência de componentes {#components-reference-guide}
 
-Os componentes estão no centro da criação de uma experiência no AEM. Os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) simplificam a introdução a um conjunto de ferramentas de componentes robustos e prontos. O [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) orienta o desenvolvedor sobre como usar essas ferramentas e como criar componentes personalizados para criar um novo site de AEM.
+Os componentes estão no centro da criação de uma experiência no AEM. O [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) facilita começar a usar um conjunto de ferramentas de componentes robustos e prontos. O [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) O leva o desenvolvedor a usar essas ferramentas e como criar componentes personalizados para criar um novo site de AEM.
 
 >[!TIP]
 >
->Antes de fazer referência a este documento, verifique se você concluiu o [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e, portanto, está familiarizado com os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) e o [Arquétipo de projeto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+>Antes de fazer referência a este documento, verifique se você concluiu a [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e, portanto, familiarizar-se com a [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) e [AEM Arquétipo de projeto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
 Como o tutorial WKND aborda a maioria dos casos de uso, este documento destina-se somente a complementar esses recursos. Ele fornece especificações técnicas detalhadas sobre como os componentes são estruturados e configurados em AEM e não se destina a ser um guia de introdução.
 
@@ -37,15 +37,15 @@ Antes de começar a realmente configurar ou codificar seu componente, você deve
 
 ### Reutilizar componentes existentes {#reusing-components}
 
-Antes de investir tempo na criação de um componente totalmente novo, considere personalizar ou estender os componentes existentes. [O ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Componente principal oferece um conjunto de componentes flexíveis, robustos e bem testados e prontos para produção.
+Antes de investir tempo na criação de um componente totalmente novo, considere personalizar ou estender os componentes existentes. [Os componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) oferecem um conjunto de componentes flexíveis, robustos e bem testados prontos para produção.
 
 #### Extensão dos componentes principais {#extending-core-components}
 
-Os Componentes principais também oferecem [padrões de personalização claros](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html) que você pode usar para adaptá-los às necessidades do seu próprio projeto.
+Os Componentes principais também oferecem [limpar padrões de personalização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html) que você pode usar para adaptá-las às necessidades do seu próprio projeto.
 
 #### Sobreposição de componentes {#overlying-components}
 
-Os componentes também podem ser redefinidos com uma [sobreposição](/help/implementing/developing/introduction/overlays.md) com base na lógica do caminho de pesquisa. No entanto, nesse caso, o [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) não será acionado e `/apps` deverá definir toda a sobreposição.
+Os componentes também podem ser redefinidos com um [sobreposição](/help/implementing/developing/introduction/overlays.md) com base na lógica do caminho de pesquisa. No entanto, nesse caso, o [Fusão de Recursos Sling](/help/implementing/developing/introduction/sling-resource-merger.md) não será acionado e `/apps` deve definir a sobreposição inteira.
 
 #### Extensão de caixas de diálogo de componentes {#extending-component-dialogs}
 
@@ -59,13 +59,13 @@ Seu componente será renderizado com [HTML.](https://www.w3schools.com/htmL/html
 
 É recomendável manter o código responsável pela marcação e renderização separadas do código que controla a lógica usada para selecionar o conteúdo do componente.
 
-Essa filosofia é suportada pelo [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR), uma linguagem de modelo que é propositalmente limitada para garantir que uma linguagem de programação real seja usada para definir a lógica de negócios subjacente. Esse mecanismo destaca o código chamado para uma determinada visualização e, se necessário, permite uma lógica específica para diferentes visualizações do mesmo componente.
+Essa filosofia é apoiada por [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR), uma linguagem de modelo que é propositalmente limitada para garantir uma linguagem de programação real é usada para definir a lógica comercial subjacente. Esse mecanismo destaca o código chamado para uma determinada visualização e, se necessário, permite uma lógica específica para diferentes visualizações do mesmo componente.
 
 Essa lógica (opcional) pode ser implementada de diferentes maneiras e é invocada do HTL com comandos específicos:
 
-* Usando Java - [A API de uso do Java do HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada. Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
-* Uso do JavaScript - [A API de uso do JavaScript do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript. Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
-* Uso de bibliotecas do lado do cliente - Sites modernos dependem muito do processamento no lado do cliente impulsionado por códigos complexos de JavaScript e CSS. Consulte o documento [Usar bibliotecas do lado do cliente em AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obter mais informações.
+* Uso do Java - [A API de uso do Java do HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada. Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
+* Uso do JavaScript - [A API de uso do JavaScript do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) permite que um arquivo HTL acesse o código auxiliar gravado em JavaScript. Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
+* Uso de bibliotecas do lado do cliente - Sites modernos dependem muito do processamento no lado do cliente impulsionado por códigos complexos de JavaScript e CSS. Consulte o documento [Usar bibliotecas do lado do cliente no AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obter mais informações.
 
 ## Estrutura do componente {#structure}
 
@@ -90,11 +90,11 @@ Essa é uma abstração que ajuda a garantir que, mesmo quando a aparência muda
 
 A definição de um componente pode ser dividida da seguinte maneira:
 
-* AEM componentes são baseados em [Sling.](https://sling.apache.org/documentation.html)
+* AEM componentes se baseiam em [Sling.](https://sling.apache.org/documentation.html)
 * AEM componentes estão localizados em `/libs/core/wcm/components`.
 * Os componentes específicos do projeto/site estão localizados em `/apps/<myApp>/components`.
-* AEM componentes padrão são definidos como `cq:Component` e têm os elementos principais:
-   * propriedades do jcr - Uma lista de propriedades do jcr. Elas são variáveis e algumas podem ser opcionais se a estrutura básica de um nó de componente, suas propriedades e subnós forem definidos pela definição `cq:Component`.
+* AEM componentes padrão são definidos como `cq:Component` e ter os elementos principais:
+   * propriedades do jcr - Uma lista de propriedades do jcr. Elas são variáveis e algumas podem ser opcionais se a estrutura básica de um nó de componente, suas propriedades e subnós forem definidos pela variável `cq:Component` definição.
    * Recursos - Eles definem elementos estáticos usados pelo componente.
    * Scripts - São usados para implementar o comportamento da instância resultante do componente.
 
@@ -102,14 +102,14 @@ A definição de um componente pode ser dividida da seguinte maneira:
 
 * **Nó raiz**:
    * `<mycomponent> (cq:Component)` - Nó de hierarquia do componente.
-* **Propriedades** vitais:
-   * `jcr:title` - Título do componente; por exemplo, usado como um rótulo quando o componente está listado no console  [Componentes ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) e no console  [Componentes](/help/sites-cloud/authoring/features/components-console.md)
+* **Propriedades vitais**:
+   * `jcr:title` - Título do componente; por exemplo, usado como um rótulo quando o componente está listado no [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) e [Console de componentes](/help/sites-cloud/authoring/features/components-console.md)
    * `jcr:description` - Descrição do componente; usado como dica de mouse sobre o console Navegador de componentes e Componentes
    * Consulte a seção [Ícone do componente](#component-icon) para obter detalhes
-* **Nós** Secundários Vitais:
+* **Nós Secundários Vitais**:
    * `cq:editConfig (cq:EditConfig)` - Define as propriedades de edição do componente e permite que o componente apareça no Navegador de componentes
       * Se o componente tiver uma caixa de diálogo, ela aparecerá automaticamente no navegador Componentes ou no Sidekick, mesmo se cq:editConfig não existir.
-   * `cq:childEditConfig (cq:EditConfig)` - Controla os aspectos da interface do usuário do autor para componentes filhos que não definem seus próprios  `cq:editConfig`.
+   * `cq:childEditConfig (cq:EditConfig)` - Controla os aspectos da interface do usuário do autor para componentes filhos que não definem seus próprios `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` - Caixa de diálogo desse componente. Define a interface que permite ao usuário configurar o componente e/ou editar conteúdo.
    * `cq:design_dialog (nt:unstructured)` - Edição de design para este componente
 
@@ -117,31 +117,31 @@ A definição de um componente pode ser dividida da seguinte maneira:
 
 O ícone ou a abreviação do componente é definido por meio das propriedades do JCR do componente quando ele é criado pelo desenvolvedor. Essas propriedades são avaliadas na ordem a seguir e a primeira propriedade válida encontrada é usada.
 
-1. `cq:icon` - Propriedade de string que aponta para um ícone padrão na  [biblioteca da interface do usuário do ](https://opensource.adobe.com/coral-spectrum/examples/#icon) Coral para exibir no navegador de componente
+1. `cq:icon` - Propriedade da string que aponta para um ícone padrão na [Biblioteca da interface do usuário do Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) para exibir no navegador de componentes
    * Use o valor do atributo HTML do ícone Coral.
 1. `abbreviation` - Propriedade String para personalizar a abreviação do nome do componente no navegador do componente
    * A abreviação deve ser limitada a dois caracteres.
-   * Fornecer uma string vazia criará a abreviação dos dois primeiros caracteres da propriedade `jcr:title` .
+   * Fornecer uma string vazia criará a abreviação dos dois primeiros caracteres do `jcr:title` propriedade.
       * Por exemplo, &quot;Im&quot; para &quot;Image&quot;
       * O título localizado será usado para criar a abreviação.
-   * A abreviação só é traduzida se o componente tiver uma propriedade `abbreviation_commentI18n` , que é usada como dica de tradução.
-1. `cq:icon.png` ou  `cq:icon.svg`  - Ícone para este componente, que é mostrado no Navegador de componentes
+   * A abreviação só é traduzida se o componente tiver uma `abbreviation_commentI18n` , que é usada como dica de tradução.
+1. `cq:icon.png` ou `cq:icon.svg` - Ícone para este componente, que é mostrado no Navegador de componentes
    * 20 x 20 pixels é o tamanho dos ícones dos componentes padrão.
       * Os ícones maiores serão baixados (no lado do cliente).
    * A cor recomendada é rgb(112, 112, 112) > #707070
    * O plano de fundo dos ícones de componentes padrão é transparente.
-   * Somente os arquivos `.png` e `.svg` são compatíveis.
-   * Ao importar do sistema de arquivos por meio do plug-in Eclipse, os nomes de arquivo precisam ser escapados como `_cq_icon.png` ou `_cq_icon.svg`, por exemplo.
-   * `.png` tem precedência sobre  `.svg` se ambos estiverem presentes.
+   * Somente `.png` e `.svg` os arquivos são suportados.
+   * Ao importar do sistema de arquivos por meio do plug-in Eclipse, os nomes de arquivo precisam ser evitados como `_cq_icon.png` ou `_cq_icon.svg` por exemplo.
+   * `.png` tem precedência sobre `.svg` se ambos estiverem presentes.
 
-Se nenhuma das propriedades acima (`cq:icon`, `abbreviation`, `cq:icon.png` ou `cq:icon.svg`) for encontrada no componente:
+Se nenhuma das propriedades acima (`cq:icon`, `abbreviation`, `cq:icon.png` ou `cq:icon.svg`) são encontradas no componente :
 
-* O sistema pesquisará as mesmas propriedades nos supercomponentes após a propriedade `sling:resourceSuperType` .
-* Se nada ou uma abreviação vazia for encontrada no nível do supercomponente, o sistema criará a abreviação das primeiras letras da propriedade `jcr:title` do componente atual.
+* O sistema pesquisará as mesmas propriedades nos supercomponentes seguindo o `sling:resourceSuperType` propriedade.
+* Se nada ou uma abreviação vazia for encontrada no nível do supercomponente, o sistema criará a abreviação das primeiras letras do `jcr:title` propriedade do componente atual.
 
-Para cancelar a herança de ícones dos supercomponentes, definir uma propriedade `abbreviation` vazia no componente reverterá para o comportamento padrão.
+Para cancelar a herança de ícones de supercomponentes, defina um valor vazio `abbreviation` no componente será revertido para o comportamento padrão.
 
-O [Console de Componentes](/help/sites-cloud/authoring/features/components-console.md#component-details) exibe como o ícone de um componente específico é definido.
+O [Console do componente](/help/sites-cloud/authoring/features/components-console.md#component-details) exibe como o ícone de um componente específico é definido.
 
 #### Exemplo de ícone SVG {#svg-icon-example}
 
@@ -166,11 +166,11 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
 | Nome | Tipo | Descrição |
 |---|---|---|
 | `.` | `cq:Component` | Representa o componente atual. Um componente é do tipo de nó `cq:Component`. |
-| `componentGroup` | `String` | Representa o grupo sob o qual o componente pode ser selecionado no [Navegador de componentes.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Um valor que começa com  `.` é usado para componentes que não estão disponíveis para seleção na interface do usuário, como componentes básicos dos quais outros componentes herdam. |
+| `componentGroup` | `String` | Representa o grupo sob o qual o componente pode ser selecionado no [Navegador de componentes.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Um valor que começa com `.` é usada para componentes que não estão disponíveis para seleção na interface do usuário, como componentes base dos quais outros componentes herdam. |
 | `cq:isContainer` | `Boolean` | Isso indica se o componente é um componente de contêiner e, portanto, pode conter outros componentes, como um sistema de parágrafo. |
 | `cq:dialog` | `nt:unstructured` | Essa é a definição da caixa de diálogo de edição do componente. |
 | `cq:design_dialog` | `nt:unstructured` | Esta é a definição da caixa de diálogo de design do componente. |
-| `cq:editConfig` | `cq:EditConfig` | Isso define a configuração [editar do componente.](#edit-behavior) |
+| `cq:editConfig` | `cq:EditConfig` | Isso define o [edite a configuração do componente.](#edit-behavior) |
 | `cq:htmlTag` | `nt:unstructured` | Isso retorna atributos de tag adicionais que são adicionados à tag HTML ao redor. Permite a adição de atributos aos divs gerados automaticamente. |
 | `cq:noDecoration` | `Boolean` | Se verdadeiro, o componente não é renderizado com classes div e css geradas automaticamente. |
 | `cq:template` | `nt:unstructured` | Se encontrado, esse nó será usado como um modelo de conteúdo quando o componente for adicionado do Navegador de componentes. |
@@ -179,9 +179,9 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
 | `jcr:title` | `String` | Este é o título do componente. |
 | `sling:resourceSuperType` | `String` | Quando definido, o componente herda desse componente. |
 | `component.html` | `nt:file` | Este é o arquivo de script HTL do componente. |
-| `cq:icon` | `String` | Esse valor aponta para o ícone [do componente](#component-icon) e aparece no Navegador de componentes. |
+| `cq:icon` | `String` | Esse valor aponta para a variável [ícone do componente](#component-icon) e é exibido no Navegador de componentes. |
 
-Se observarmos o componente **Text**, podemos ver vários desses elementos:
+Se olharmos para a **Texto** , podemos ver vários desses elementos:
 
 ![Estrutura do componente de texto](assets/components-text.png)
 
@@ -205,13 +205,13 @@ Dependendo da complexidade do componente, a caixa de diálogo pode precisar de u
 
 Caixas de diálogo para componentes AEM:
 
-* São nós `cq:dialog` do tipo `nt:unstructured`.
-* Estão localizados em seus nós `cq:Component` e ao lado de suas definições de componente.
+* São `cq:dialog` nós do tipo `nt:unstructured`.
+* Estejam localizadas sob as suas `cq:Component` e ao lado de suas definições de componentes.
 * Defina a caixa de diálogo para editar o conteúdo desse componente.
 * São definidas usando componentes da interface do usuário do Granite.
-* São renderizados do lado do servidor (como componentes do Sling), com base em sua estrutura de conteúdo e na propriedade `sling:resourceType` .
+* São renderizados do lado do servidor (como componentes do Sling), com base em sua estrutura de conteúdo e na variável `sling:resourceType` propriedade.
 * Contém uma estrutura de nó que descreve os campos na caixa de diálogo
-   * Esses nós são `nt:unstructured` com a propriedade `sling:resourceType` necessária.
+   * Esses nós são `nt:unstructured` com o `sling:resourceType` propriedade.
 
 ![Definição da caixa de diálogo do componente Título](assets/components-title-dialog.png)
 
@@ -223,20 +223,20 @@ Na caixa de diálogo , campos individuais são definidos:
 
 As caixas de diálogo de design são semelhantes às caixas de diálogo usadas para editar e configurar o conteúdo, mas fornecem a interface para os autores de modelo pró-configurar e fornecer detalhes de design para esse componente em um modelo de página. Os modelos de página são então usados pelos autores de conteúdo para criar páginas de conteúdo. Consulte a [documentação do modelo](/help/sites-cloud/authoring/features/templates.md) para obter detalhes sobre como os modelos são criados.
 
-[As caixas de diálogo Design são usadas ao editar um modelo](/help/sites-cloud/authoring/features/templates.md) de página, embora não sejam necessárias para todos os componentes. Por exemplo, os **Título** e **Componentes de imagem** têm caixas de diálogo de design, enquanto o **Componente de compartilhamento de mídia social** não.
+[As caixas de diálogo de design são usadas ao editar um modelo de página](/help/sites-cloud/authoring/features/templates.md), embora não sejam necessários para todos os componentes. Por exemplo, a variável **Título** e **Componentes de imagem** ambos têm diálogos de design, enquanto que a variável **Componente de compartilhamento de mídia social** não.
 
 ### Interface do usuário do Coral e do Granite {#coral-and-granite}
 
 A interface do usuário do Coral e a interface do Granite definem a aparência do AEM.
 
-* [A ](https://opensource.adobe.com/coral-spectrum/documentation/) interface do usuário do Coral fornece uma interface consistente em todas as soluções de nuvem.
-* [A ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) interface de usuário do Granite fornece marcação de interface de usuário Coral embutida em componentes do Sling para criar consoles e caixas de diálogo da interface de usuário.
+* [Interface do usuário do Coral](https://opensource.adobe.com/coral-spectrum/documentation/) O fornece uma interface do usuário consistente em todas as soluções de nuvem.
+* [Interface do usuário do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) O fornece marcação de interface de usuário Coral embutida em componentes do Sling para criar consoles e caixas de diálogo de interface de usuário.
 
 A interface do usuário do Granite fornece uma grande variedade de widgets básicos necessários para criar sua caixa de diálogo no ambiente de criação. Quando necessário, é possível estender essa seleção e criar seu próprio widget.
 
 Para obter detalhes adicionais, consulte os seguintes recursos:
 
-* [Estrutura da interface AEM](/help/implementing/developing/introduction/ui-structure.md)
+* [Estrutura da interface do AEM](/help/implementing/developing/introduction/ui-structure.md)
 
 ### Personalização de campos de diálogo {#customizing-dialog-fields}
 
@@ -250,17 +250,17 @@ Content not found
 
 Para criar um novo widget para uso em uma caixa de diálogo de componente, é necessário criar um novo componente de campo da interface do usuário do Granite.
 
-Se sua caixa de diálogo for considerada um contêiner simples para um elemento de formulário, você também poderá ver o conteúdo principal do conteúdo da caixa de diálogo como campos de formulário. A criação de um novo campo de formulário requer a criação de um tipo de recurso; isso equivale a criar um novo componente. Para ajudá-lo nessa tarefa, a interface de usuário do Granite oferece um componente de campo genérico do qual herdar (usando `sling:resourceSuperType`):
+Se sua caixa de diálogo for considerada um contêiner simples para um elemento de formulário, você também poderá ver o conteúdo principal do conteúdo da caixa de diálogo como campos de formulário. A criação de um novo campo de formulário requer a criação de um tipo de recurso; isso equivale a criar um novo componente. Para ajudar você nessa tarefa, a interface do usuário do Granite oferece um componente de campo genérico do qual herdar (usando `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
 Mais especificamente, a interface do usuário do Granite fornece uma variedade de componentes de campo adequados para uso em caixas de diálogo ou, de modo mais geral, em [formulários.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
 
-Depois de criar o tipo de recurso, é possível instanciar o campo adicionando um novo nó na caixa de diálogo, com a propriedade `sling:resourceType` referindo-se ao tipo de recurso que acabou de apresentar.
+Depois de criar o tipo de recurso, é possível instanciar o campo adicionando um novo nó na caixa de diálogo, com a propriedade `sling:resourceType` referência ao tipo de recurso que acabou de apresentar.
 
 #### Acesso aos campos de diálogo {#access-to-dialog-fields}
 
-Também é possível usar as condições de renderização (`rendercondition`) para controlar quem tem acesso a guias/campos específicos na caixa de diálogo; por exemplo:
+Também é possível usar condições de renderização (`rendercondition`) para controlar quem tem acesso a guias/campos específicos na caixa de diálogo; por exemplo:
 
 ```text
 + mybutton
@@ -282,7 +282,7 @@ Consulte a [documentação do modelo](/help/sites-cloud/authoring/features/templ
 
 ### Componentes e o conteúdo que eles criam {#components-and-the-content-they-create}
 
-Se criarmos e configurarmos uma instância do componente **Title** na página: `/content/wknd/language-masters/en/adventures/extreme-ironing.html`
+Se criarmos e configurarmos uma instância do **Título** componente na página: `/content/wknd/language-masters/en/adventures/extreme-ironing.html`
 
 ![Caixa de diálogo Editar título](assets/components-title-dialog.png)
 
@@ -290,16 +290,16 @@ Então podemos ver a estrutura do conteúdo criado no repositório:
 
 ![Estrutura do nó do componente de título](assets/components-title-content-nodes.png)
 
-Especificamente, se você observar o texto real de um **Componente de Título**:
+Em particular, se você observar o texto real de uma **Componente de título**:
 
-* O conteúdo contém uma propriedade `jcr:title` contendo o texto real do título inserido pelo autor.
-* Ela também contém uma referência `sling:resourceType` para a definição do componente.
+* O conteúdo contém um `jcr:title` propriedade contendo o texto real do título inserido pelo autor.
+* Também contém um `sling:resourceType` referência à definição do componente.
 
-As propriedades definidas dependem das definições individuais. Embora possam ser mais complexas do que acima, continuam a seguir os mesmos princípios básicos.
+As propriedades definidas dependem das definições individuais. Embora possam ser mais complexas do que acima, seguem ainda os mesmos princípios básicos.
 
 ## Hierarquia e herança de componentes {#component-hierarchy-and-inheritance}
 
-Os componentes dentro de AEM estão sujeitos à **Hierarquia do tipo de recurso**. Isso é usado para estender componentes usando a propriedade `sling:resourceSuperType`. Isso permite que o componente herde de outro componente.
+Os componentes no AEM estão sujeitos ao **Hierarquia do Tipo de Recurso**. Isso é usado para estender componentes usando a propriedade `sling:resourceSuperType`. Isso permite que o componente herde de outro componente.
 
 Consulte a seção [Reutilizar componentes](#reusing-components) para obter mais informações.
 
@@ -307,13 +307,13 @@ Consulte a seção [Reutilizar componentes](#reusing-components) para obter mais
 
 Esta seção explica como configurar o comportamento de edição de um componente. Isso inclui atributos como ações disponíveis para o componente, características do editor in.place e os ouvintes relacionados a eventos no componente.
 
-O comportamento de edição de um componente é configurado adicionando um nó `cq:editConfig` do tipo `cq:EditConfig` abaixo do nó do componente (do tipo `cq:Component`) e adicionando propriedades específicas e nós secundários. As seguintes propriedades e nós secundários estão disponíveis:
+O comportamento de edição de um componente é configurado ao adicionar um `cq:editConfig` nó do tipo `cq:EditConfig` abaixo do nó do componente (do tipo `cq:Component`) e adicionando propriedades específicas e nós secundários. As seguintes propriedades e nós secundários estão disponíveis:
 
 * `cq:editConfig` propriedades do nó
-* [`cq:editConfig` nós](#configuring-with-cq-editconfig-child-nodes) filhos:
-   * `cq:dropTargets` (tipo de nó  `nt:unstructured`): define uma lista de destinos de soltar que podem aceitar uma queda de um ativo do localizador de conteúdo (um único destino de soltar é permitido)
-   * `cq:inplaceEditing` (tipo de nó  `cq:InplaceEditingConfig`): define uma configuração de edição no local para o componente
-   * `cq:listeners` (tipo de nó  `cq:EditListenersConfig`): define o que acontece antes ou depois que uma ação ocorre no componente
+* [`cq:editConfig` nós filhos](#configuring-with-cq-editconfig-child-nodes):
+   * `cq:dropTargets` (tipo de nó) `nt:unstructured`): define uma lista de destinos de soltar que podem aceitar uma queda de um ativo do localizador de conteúdo (um único destino de soltar é permitido)
+   * `cq:inplaceEditing` (tipo de nó) `cq:InplaceEditingConfig`): define uma configuração de edição no local para o componente
+   * `cq:listeners` (tipo de nó) `cq:EditListenersConfig`): define o que acontece antes ou depois que uma ação ocorre no componente
 
 Há muitas configurações existentes no AEM. Você pode pesquisar facilmente propriedades específicas ou nós secundários usando a ferramenta Query em **CRXDE Lite**.
 
@@ -321,7 +321,7 @@ Há muitas configurações existentes no AEM. Você pode pesquisar facilmente pr
 
 Os componentes devem sempre renderizar algum HTML visível para o autor, mesmo quando o componente não tiver conteúdo. Caso contrário, pode desaparecer visualmente da interface do editor, tornando-a tecnicamente presente, mas invisível, na página e no editor. Nesse caso, os autores não poderão selecionar e interagir com o componente vazio.
 
-Por isso, os componentes devem renderizar um espaço reservado, desde que não renderizem nenhuma saída visível quando a página for renderizada no editor de páginas (quando o modo WCM for `edit` ou `preview`).
+Por isso, os componentes devem renderizar um espaço reservado, desde que não renderizem nenhuma saída visível quando a página for renderizada no editor de páginas (quando o modo WCM estiver `edit` ou `preview`).
 A marcação de HTML típica para um espaço reservado é a seguinte:
 
 ```HTML
@@ -337,7 +337,7 @@ O script HTL típico que renderiza o HTML de espaço reservado acima é o seguin
 
 No exemplo anterior, `isEmpty` é uma variável que é verdadeira somente quando o componente não tem conteúdo e é invisível para o autor.
 
-Para evitar a repetição, o Adobe recomenda que os implementadores de componentes usem um modelo HTL para esses espaços reservados, [como o fornecido pelos Componentes principais.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Para evitar a repetição, o Adobe recomenda que os implementadores de componentes usem um template HTL para esses espaços reservados, [como o fornecido pelos Componentes principais.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
 
 O uso do template no link anterior é feito com a seguinte linha de HTL:
 
@@ -354,25 +354,25 @@ Um exemplo de uso desse modelo pode ser visto nos Componentes principais, [como 
 
 #### Soltar ativos em uma caixa de diálogo - cq:dropTargets {#cq-droptargets}
 
-O nó `cq:dropTargets` (tipo de nó `nt:unstructured`) define o destino de soltar que pode aceitar uma queda de um ativo arrastado do localizador de conteúdo. É um nó do tipo `cq:DropTargetConfig`.
+O `cq:dropTargets` nó (tipo de nó) `nt:unstructured`) define o público-alvo que pode aceitar uma queda de um ativo arrastado do localizador de conteúdo. É um nó do tipo `cq:DropTargetConfig`.
 
 O nó filho do tipo `cq:DropTargetConfig` define um destino de soltar no componente.
 
 ### Edição no local - cq:inplaceEditing {#cq-inplaceediting}
 
-Um editor local permite que o usuário edite conteúdo diretamente no fluxo de conteúdo, sem a necessidade de abrir uma caixa de diálogo. Por exemplo, os componentes padrão **Text** e **Title** têm um editor inp-lace.
+Um editor local permite que o usuário edite conteúdo diretamente no fluxo de conteúdo, sem a necessidade de abrir uma caixa de diálogo. Por exemplo, o padrão **Texto** e **Título** ambos os componentes têm um editor inp-lace.
 
 Um editor local não é necessário/significativo para cada tipo de componente.
 
-O nó `cq:inplaceEditing` (tipo de nó `cq:InplaceEditingConfig`) define uma configuração de edição no local para o componente. Pode ter as seguintes propriedades:
+O `cq:inplaceEditing` nó (tipo de nó) `cq:InplaceEditingConfig`) define uma configuração de edição no local para o componente. Pode ter as seguintes propriedades:
 
 | Nome da Propriedade | Tipo de propriedade | Valor da propriedade |
 |---|---|---|
 | `active` | `Boolean` | `true` para ativar a edição no local do componente. |
 | `configPath` | `String` | Caminho da configuração do editor, que pode ser especificado por um nó de configuração |
-| `editorType` | `String` | Os tipos disponíveis são: `plaintext` para conteúdo não HTML, `title` converte títulos gráficos em um texto simples antes do início da edição e `text` usa o Editor de Rich Text |
+| `editorType` | `String` | Os tipos disponíveis são: `plaintext` para conteúdo não HTML, `title` converte títulos gráficos em um texto simples antes do início da edição, e `text` O usa o Editor de Rich Text |
 
-A configuração a seguir permite a edição no local do componente e define `plaintext` como o tipo de editor:
+A configuração a seguir permite a edição no local do componente e define `plaintext` como tipo de editor:
 
 ```text
     <cq:inplaceEditing
@@ -383,16 +383,16 @@ A configuração a seguir permite a edição no local do componente e define `pl
 
 ### Tratamento de eventos de campo - cq:listeners {#cq-listeners}
 
-O método de tratamento de eventos em campos de diálogo é feito com ouvintes em uma biblioteca cliente personalizada [.](/help/implementing/developing/introduction/clientlibs.md)
+O método de tratamento de eventos em campos de diálogo é feito com ouvintes em um [biblioteca do cliente.](/help/implementing/developing/introduction/clientlibs.md)
 
 Para inserir lógica em seu campo, você deve:
 
 * Marque seu campo com uma determinada classe CSS (o gancho).
 * Defina na biblioteca do cliente um ouvinte JS vinculado ao nome da classe CSS (isso garante que a lógica personalizada tenha escopo somente para o campo e não afete outros campos do mesmo tipo).
 
-Para isso, você precisa saber sobre a biblioteca de widgets subjacente com a qual deseja interagir. [Consulte a ](https://opensource.adobe.com/coral-spectrum/documentation/) documentação da interface do usuário do Coral para identificar a qual evento você deseja reagir.
+Para isso, você precisa saber sobre a biblioteca de widgets subjacente com a qual deseja interagir. [Consulte a documentação da interface do usuário do Coral](https://opensource.adobe.com/coral-spectrum/documentation/) para identificar a qual evento você deseja reagir.
 
-O nó `cq:listeners` (tipo de nó `cq:EditListenersConfig`) define o que acontece antes ou depois de uma ação no componente. A tabela a seguir define suas possíveis propriedades.
+O `cq:listeners` nó (tipo de nó) `cq:EditListenersConfig`) define o que acontece antes ou depois de uma ação no componente. A tabela a seguir define suas possíveis propriedades.
 
 | Nome da Propriedade | Valor da propriedade |
 |---|---|
@@ -411,7 +411,7 @@ O nó `cq:listeners` (tipo de nó `cq:EditListenersConfig`) define o que acontec
 
 >[!NOTE]
 >
->No caso de componentes aninhados, há certas restrições em ações definidas como propriedades no nó `cq:listeners`. Para componentes aninhados, os valores das seguintes propriedades **devem** ser `REFRESH_PAGE`:
+>No caso de componentes aninhados, há certas restrições nas ações definidas como propriedades na variável `cq:listeners` nó . Para componentes aninhados, os valores das seguintes propriedades **must** be `REFRESH_PAGE`:
 >
 >* `aftermove`
 >* `aftercopy`
@@ -421,7 +421,7 @@ O manipulador de eventos pode ser implementado com uma implementação personali
 
 `afteredit = "project.customerAction"`
 
-O exemplo a seguir é equivalente à configuração `REFRESH_INSERTED` :
+O exemplo a seguir é equivalente ao `REFRESH_INSERTED` configuração:
 
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
@@ -438,11 +438,11 @@ Com a seguinte configuração, a página é atualizada após o componente ter si
 
 ### Validação de campo {#field-validation}
 
-A validação de campo na interface do usuário do Granite e nos widgets da interface de usuário do Granite é feita usando a API `foundation-validation`. Consulte a [`foundation-valdiation` documentação do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html) para obter detalhes.
+A validação de campo na interface do usuário do Granite e nos widgets da interface do usuário do Granite é feita usando o `foundation-validation` API. Consulte a [`foundation-valdiation` Documentação do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html) para obter detalhes.
 
 ### Detectando Disponibilidade da Caixa de Diálogo {#dialog-ready}
 
-Se você tiver um JavaScript personalizado que precisa ser executado apenas quando a caixa de diálogo estiver disponível e pronta, você deve ouvir o evento `dialog-ready`.
+Se você tiver um JavaScript personalizado que precisa ser executado somente quando a caixa de diálogo estiver disponível e pronta, você deve ouvir a `dialog-ready` evento.
 
 Esse evento é acionado sempre que a caixa de diálogo é carregada (ou recarregada) e está pronta para uso, o que significa que sempre que há uma alteração (criar/atualizar) no DOM da caixa de diálogo.
 
@@ -450,7 +450,7 @@ Esse evento é acionado sempre que a caixa de diálogo é carregada (ou recarreg
 
 ## Comportamento de visualização {#preview-behavior}
 
-O cookie [Modo WCM](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) é definido ao alternar para o modo de Visualização mesmo quando a página não é atualizada.
+O [Modo WCM](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) é definido ao alternar para o modo de Visualização mesmo quando a página não é atualizada.
 
 Para componentes com uma renderização que são sensíveis ao modo WCM, eles precisam ser definidos para serem atualizados especificamente e, em seguida, dependem do valor do cookie.
 
@@ -466,12 +466,12 @@ Como desenvolvedor, você deseja obter acesso fácil à documentação do compon
 
 Por isso, é muito fácil tornar qualquer marcação de documentação existente disponível no próprio componente.
 
-Basta colocar um arquivo `README.md` na estrutura do componente.
+Tudo o que você precisa fazer é colocar um `README.md` na estrutura do componente.
 
 ![README.md na estrutura do componente](assets/components-documentation.png)
 
-Essa marcação será exibida no [Console do Componente.](/help/sites-cloud/authoring/features/components-console.md)
+Essa marcação será exibida no [Console de componentes.](/help/sites-cloud/authoring/features/components-console.md)
 
 ![README.md visível no console Componentes](assets/components-documentation-console.png)
 
-O Markdown suportado é o mesmo para [fragmentos de conteúdo.](/help/assets/content-fragments/content-fragments.md)
+O Markdown suportado é igual ao do [fragmentos de conteúdo.](/help/assets/content-fragments/content-fragments.md)

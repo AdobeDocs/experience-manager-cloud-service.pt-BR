@@ -19,7 +19,7 @@ Depois de definir o [Modelos de fragmentos do conteúdo](#creating-a-content-mod
 
 O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vários [modos](#modes-in-the-content-fragment-editor) para permitir:
 
-* [Edit the content](#editing-the-content-of-your-fragment) and [manage Variations](#creating-and-managing-variations-within-your-fragment)
+* [Editar o conteúdo](#editing-the-content-of-your-fragment) e [gerenciar variações](#creating-and-managing-variations-within-your-fragment)
 * [Anotar em seu fragmento](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Associar conteúdo ao fragmento](#associating-content-with-your-fragment)
 * [Configurar os metadados](#viewing-and-editing-the-metadata-properties-of-your-fragment)
@@ -88,7 +88,7 @@ O método de criação de um fragmento de conteúdo é:
    >[!NOTE]
    >Em **Lista** do console, você pode atualizar o **Exibir configurações** para ativar o **Modelo de fragmento de conteúdo** coluna.
 
-## Actions for a Content Fragment in the Assets Console {#actions-for-a-content-fragment-assets-console}
+## Ações para um fragmento de conteúdo no console Ativos {#actions-for-a-content-fragment-assets-console}
 
 No **Ativos** no console, uma variedade de ações está disponível para seus fragmentos de conteúdo:
 
@@ -112,7 +112,7 @@ Selecione o fragmento para exibir a barra de ferramentas com as ações aplicáv
 
 * **Editar**
 
-   * Allows you to [open the fragment for editing content](/help/assets/content-fragments/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
+   * Permite que você [abrir o fragmento para edição de conteúdo](/help/assets/content-fragments/content-fragments-variations.md) juntamente com seus elementos, variações, conteúdo associado e metadados.
 
 * **Publicação rápida**
 * **Gerenciar publicação**
@@ -138,7 +138,7 @@ Para abrir o fragmento para edição:
 >
 >Para editar um fragmento de conteúdo, você precisa das permissões apropriadas. Entre em contato com o administrador do sistema em caso de problemas.
 
-1. Use the **Assets** console to navigate to the location of your content fragment.
+1. Use o **Ativos** para navegar até o local do fragmento de conteúdo.
 1. Abra o fragmento para edição, por:
 
    * Clicar/tocar no link do fragmento ou fragmento (depende da exibição do console).
@@ -180,23 +180,23 @@ Navegue pelos vários modos usando os ícones no painel lateral:
 
 Alguns recursos na barra de ferramentas superior estão disponíveis em vários modos:
 
-![modes](assets/cfm-managing-top-toolbar.png)
+![modos](assets/cfm-managing-top-toolbar.png)
 
 * Uma mensagem será exibida quando o fragmento já estiver referenciado em uma página de conteúdo. Você pode **Fechar** a mensagem.
 
 * O painel lateral pode ser oculto/exibido usando o **Alternar painel lateral** ícone .
 
-* Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
+* Sob o nome do fragmento, você pode ver o nome do [Modelo de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) usado para criar o fragmento atual:
 
-   * The name is also a link that will open the model editor.
+   * O nome também é um link que abrirá o editor de modelo.
 
-* See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
+* Ver o status do fragmento; por exemplo, informações sobre quando foi criado, modificado ou publicado. O status também é codificado por cores:
 
    * **Novo**: cinza
    * **Rascunho**: azul
    * **Publicado**: verde
-   * **Modified**: orange
-   * **Deactivated**: red
+   * **Modificado**: laranja
+   * **Desativado**: vermelho
 
 * **Salvar** fornece acesso ao **Salvar e fechar** opção.
 
@@ -209,13 +209,13 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
 <!--
 This updates any page references and ensures that the Dispatcher is flushed as required. -->
 
-## Save, Close and Versions {#save-close-and-versions}
+## Salvar, fechar e versões {#save-close-and-versions}
 
 >[!NOTE]
 >
 >As versões também podem ser [criado, comparado e revertido a partir da Linha do tempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-The editor has various options:
+O editor tem várias opções:
 
 * **Salvar** e **Salvar e fechar**
 
@@ -244,14 +244,14 @@ Ao editar o fragmento de conteúdo, o AEM cria automaticamente versões para gar
 
 1. Quando um fragmento de conteúdo é aberto para edição, o AEM verifica a existência do token baseado em cookie que indica se uma *sessão de edição* existe:
 
-   1. If the token is found, the fragment is considered to be part of the existing editing session.
+   1. Se o token for encontrado, o fragmento será considerado parte da sessão de edição existente.
    2. Se o token for *not* disponível e o usuário inicia a edição de conteúdo, uma versão é criada e um token para essa nova sessão de edição é enviado ao cliente, onde é salvo em um cookie.
 
 2. Enquanto há um *ative* sessão de edição, o conteúdo que está sendo editado é automaticamente salvo a cada 600 segundos (padrão).
 
    >[!NOTE]
    >
-   >The auto save interval is configurable using the `/conf` mechanism.
+   >O intervalo de salvamento automático pode ser configurado usando o `/conf` mecanismo.
    >
    >Valor padrão, consulte:
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
@@ -280,7 +280,7 @@ Você também pode [conteúdo associado](/help/assets/content-fragments/content-
 Além das opções padrão, [Linha do tempo](/help/assets/manage-digital-assets.md#timeline) fornece informações e ações específicas para fragmentos de conteúdo:
 
 * Exibir informações sobre versões, comentários e anotações
-* Actions for Versions
+* Ações para versões
 
    * **[Reverter para esta versão](#reverting-to-a-version)** (selecione um fragmento existente e, em seguida, uma versão específica)
 
@@ -310,9 +310,9 @@ Por exemplo:
 
 ![linha do tempo](assets/cfm-managing-05.png)
 
-## Comparing Fragment Versions {#comparing-fragment-versions}
+## Comparação de versões do fragmento {#comparing-fragment-versions}
 
-The **Compare to Current** action is available from the [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) after you have selected a specific version.
+O **Comparar com Atual** está disponível no [Linha do tempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) após selecionar uma versão específica.
 
 Isso abrirá:
 
@@ -325,27 +325,27 @@ Elas serão mostradas lado a lado, onde:
 * Quaisquer diferenças são destacadas
 
    * Texto excluído - vermelho
-   * Inserted text - green
-   * Replaced text - blue
+   * Texto inserido - verde
+   * Texto substituído - azul
 
 * O ícone de tela cheia permite abrir uma versão por conta própria; em seguida, voltar para a exibição paralela
 * Você pode **Reverter** da versão específica
-* **Done** will return you to the console
+* **Concluído** retornará ao console
 
 >[!NOTE]
-You cannot edit the fragment content when comparing fragments.
+Não é possível editar o conteúdo do fragmento ao comparar fragmentos.
 
-![comparing](assets/cfm-managing-06.png)
+![comparação](assets/cfm-managing-06.png)
 
-## Reverting to a Version  {#reverting-to-a-version}
+## Reverter para uma versão  {#reverting-to-a-version}
 
-You can revert to a specific version of your fragment:
+Você pode reverter para uma versão específica do fragmento:
 
-* Directly from the [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+* Diretamente do [Linha do tempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
    Selecione a versão necessária, em seguida, a **Reverter para esta versão** ação.
 
-* While [comparing a version to the current version](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) you can **Revert** to the selected version.
+* Ao [comparação de uma versão com a versão atual](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) você pode **Reverter** à versão selecionada.
 
 ## Publicação e referência a um fragmento {#publishing-and-referencing-a-fragment}
 

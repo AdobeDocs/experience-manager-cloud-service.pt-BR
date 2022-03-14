@@ -4,13 +4,13 @@ description: Saiba mais sobre os conceitos do AEM Sites e a teoria da tradução
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 8c04ffde2cbafcb6d556de8d48fc19f5b130a2c1
+exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
 
 ---
-
 
 # Saiba mais sobre o conteúdo de sites e como traduzi-lo em AEM {#learn-about}
 
@@ -33,7 +33,7 @@ As páginas que compõem sua experiência são fáceis de gerenciar no console d
 >
 >Esta jornada de documentação abrange apenas as noções básicas dos recursos AEM sites, para que você, como o especialista em tradução, entenda o conteúdo que precisa traduzir.
 >
->Para obter mais informações sobre o AEM Sites e detalhes de todos os seus recursos avançados, consulte a [seção de informações adicionais](#additional-information) no final deste artigo para obter mais recursos do AEM Sites.
+>Para obter mais informações sobre o AEM Sites e detalhes de todos os seus recursos avançados, consulte o [seção de informações adicionais](#additional-information) no final deste artigo para obter mais recursos do AEM Sites.
 
 ## Tradução do conteúdo de sites no AEM {#translating-in-aem}
 
@@ -56,11 +56,11 @@ Obrigado por começar a sua jornada de tradução do AEM Sites! Agora que você 
 * Entenda os conceitos básicos da criação de conteúdo do AEM Sites.
 * Familiarize-se com o suporte AEM tradução.
 
-Aproveite esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento [Introdução à tradução do AEM Sites](getting-started.md), onde você terá uma visão geral de como o AEM gerencia o conteúdo e conhecerá suas ferramentas de tradução.
+Aproveite esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento [Introdução à tradução do AEM Sites](getting-started.md) onde você terá uma visão geral de como o AEM gerencia o conteúdo e conhecerá suas ferramentas de tradução.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de tradução de sites revisando o documento [Introdução à tradução do AEM Sites,](getting-started.md) os seguintes são alguns recursos adicionais e opcionais que fazem um mergulho mais profundo em alguns conceitos mencionados neste documento, mas eles não são solicitados a continuar na jornada.
+Embora seja recomendável seguir para a próxima parte da jornada de tradução de sites revisando o documento [Introdução à tradução do AEM Sites,](getting-started.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não é necessário que eles continuem na jornada.
 
-* [Guia de início rápido para a criação de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md)  - uma visão geral rápida dos conceitos mais importantes para a criação de conteúdo usando o AEM Sites
-* [MSM e Tradução](/help/sites-cloud/administering/msm-and-translation.md)  - Os detalhes do AEM Multi-Site Manager e como ele funciona com suas ferramentas de tradução
+* [Guia de início rápido para a criação de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md) - Uma visão geral rápida dos conceitos mais importantes para a criação de conteúdo usando o AEM Sites
+* [MSM e tradução](/help/sites-cloud/administering/msm-and-translation.md) - Os detalhes do AEM Multi-Site Manager e como ele funciona com suas ferramentas de tradução

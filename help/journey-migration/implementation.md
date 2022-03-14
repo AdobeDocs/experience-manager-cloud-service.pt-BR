@@ -1,7 +1,8 @@
 ---
 title: Fase de implementação
 description: Certifique-se de que seu código e conteúdo estejam prontos para a migração para a nuvem
-source-git-commit: b6667e19ae111685ab4832a1859a62164b4e31c5
+exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 9%
@@ -52,19 +53,19 @@ Começaremos a detalhar as ferramentas que você precisa usar para conseguir iss
 
 ## Migração de conteúdo {#content-migration}
 
-To migrate content from your current AEM instance to your Cloud Service instance, you can use Adobe&#39;s Content Transfer Tool.
+Para migrar o conteúdo da instância de AEM atual para a instância de Cloud Service, você pode usar a ferramenta Transferência de conteúdo do Adobe.
 
 Com essa ferramenta, você pode especificar o subconjunto de conteúdo desejado que deseja transferir da instância de origem do AEM para a instância do AEM Cloud Service.
 
-Content Migration is a multi-step process that requires planning, tracking, and collaboration between different teams.
+A Migração de conteúdo é um processo em várias etapas que requer planejamento, rastreamento e colaboração entre diferentes equipes.
 
 Para obter um detalhe completo sobre como a ferramenta funciona e como recomendamos que você a use, consulte o [Documentação da ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## Refatoração do código {#code-refactor}
 
-### Set Up for Development {#set-up-for-development}
+### Configurar para desenvolvimento {#set-up-for-development}
 
-It is time to start refactoring the existing features to be compatible with Cloud Services.
+É hora de começar a refatorar os recursos existentes para serem compatíveis com o Cloud Services.
 
 Para fazer isso, você precisa consultar a documentação detalhando as ferramentas básicas necessárias para iniciar a refatoração do código:
 
@@ -84,9 +85,9 @@ Além disso, também é possível:
 
    >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-### A Change in Mindset {#a-change-in-mindset}
+### Uma alteração no conjunto de indicadores {#a-change-in-mindset}
 
-Developing and running code in AEM as a Cloud Service requires a change in the mindset. Vale lembrar que o código deve ser resiliente, especialmente porque uma instância pode ser interrompida a qualquer momento. O código em execução no Cloud Service deve reconhecer o fato de que ele está sempre em execução em um cluster. Isso significa que sempre há mais de uma instância em execução.
+O desenvolvimento e a execução de código AEM as a Cloud Service requer uma mudança de mentalidade. Vale lembrar que o código deve ser resiliente, especialmente porque uma instância pode ser interrompida a qualquer momento. O código em execução no Cloud Service deve reconhecer o fato de que ele está sempre em execução em um cluster. Isso significa que sempre há mais de uma instância em execução.
 
 Determinadas alterações são necessárias para que AEM projetos Maven sejam compatíveis com a nuvem. AEM as a Cloud Service exige a separação de *conteúdo* e *código* em pacotes distintos para implantação no AEM:
 
@@ -111,7 +112,7 @@ Depois de configurar o ambiente de desenvolvimento local, familiarize-se com o S
 
 ### Programar um congelamento de código {#schedule-a-code-freeze}
 
-To manage your on-going code development on your active AEM along with the code refactoring tasks as part of your transition journey, we recommended you schedule a code freeze period until you have completed restructuring your Maven project to be compatible with AEM as a Cloud Service.
+Para gerenciar o desenvolvimento contínuo do código no AEM ativo, juntamente com as tarefas de refatoração de código como parte da jornada de transição, recomendamos que você programe um período de congelamento do código até concluir a reestruturação do projeto Maven para ser compatível com AEM as a Cloud Service.
 
 Quando a reestruturação do projeto estiver concluída, você poderá retomar o desenvolvimento de novo código com base nessa nova estrutura. Isso reduz as falhas de pipeline do Cloud Manager durante a implantação e os testes do código.
 
@@ -145,12 +146,12 @@ Ao acessar uma [clone de produção](#proof-of-migration) for estabelecido, cont
 |---------|----------|
 | Usuários, grupos e permissões | Você precisa entender o volume de usuários, grupos e a complexidade em torno das associações. Procure oportunidades para limpar usuários e grupos não utilizados na origem antes da migração. |
 | Processamento incompleto de ativos | Tente concluir o processamento de ativos no sistema de origem antes de iniciar a migração para evitar possíveis problemas AEM pós migração as a Cloud Service. |
-| Integridade do conteúdo | É recomendável consultar se há conteúdo incorreto e limpá-lo antes de iniciar a migração. For example, look for assets or pages that do not have original renditions or that are stuck in workflow processing. Consulte também [Integridade do ativo](#asset-health). |
+| Integridade do conteúdo | É recomendável consultar se há conteúdo incorreto e limpá-lo antes de iniciar a migração. Por exemplo, procure por ativos ou páginas que não têm representações originais ou que estão travadas no processamento do fluxo de trabalho. Consulte também [Integridade do ativo](#asset-health). |
 
 ## Coletando dados {#gathering-data}
 
 >[!NOTE]
-> The [Content migration strategy and timeline](#content-strategy-and-timeline) section further details how to extrapolate the gathered data and create a migration plan.
+> O [Estratégia e cronograma da migração de conteúdo](#content-strategy-and-timeline) seção mais detalhes sobre como extrapolar os dados coletados e criar um plano de migração.
 
 A coleta de dados pode ajudar você a planejar as atividades de migração e tarefas associadas. Os tempos de extração e ingestão são particularmente úteis porque os pontos de dados podem ser associados a um tamanho específico do conjunto de migração. Assim, esses pontos de dados podem ser extrapolados para se elaborar um plano:
 
@@ -167,14 +168,14 @@ Esses pontos de dados também podem ajudar você [Estabeleça KPIs](/help/journe
 
 Com base nos pontos de dados coletados (veja acima), você pode criar um plano de migração que pode ser integrado a um plano de projeto de macro. Esta etapa permitirá que todos os principais participantes visualizem e planejem as atividades de migração.
 
-The following table illustrates a typical migration plan:
+A tabela a seguir ilustra um plano de migração típico:
 
-| Migration Iteration | Data inicial | Data final estimada | Dependências | Estimated Duration (in days) | Detalhes adicionais / Itens de ação |
+| Iteração da migração | Data inicial | Data final estimada | Dependências | Duração estimada (em dias) | Detalhes adicionais / Itens de ação |
 |---|---|---|---|---|---|
 | PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |  |  |  |  |  |
 | PRDCLONE-PUBLISH-TOPUP-CSSTAGE-AUTHOR |  |  |  |  |  |
 
-As you can see in the table above, it is helpful to follow a specific naming format to identify the migration iterations, for example: **PRDCLONE** for the source AEM environment , **AUTHOR/PUBLISH** for the AEM as a Cloud Service environment, **CSSTAGE-AUTHOR** for the AEM as a Cloud Service instance, and so on.
+Como você pode ver na tabela acima, é útil seguir um formato de nomenclatura específico para identificar as iterações de migração, por exemplo: **PRDCLONE** para o ambiente AEM de origem , **AUTOR/PUBLICAÇÃO** para o ambiente AEM as a Cloud Service, **AUTOR DO CSSTAGE** para a instância AEM as a Cloud Service e assim por diante.
 
 Alguns detalhes importantes que influenciam seu plano de migração:
 
@@ -189,9 +190,9 @@ Alguns detalhes importantes que influenciam seu plano de migração:
 * Número de ingestões de Topo.
 * Migrar o conteúdo do Autor de origem para a instância do Autor do serviço de nuvem e da Publicação de origem para publicação do Cloud Service é a prática recomendada para evitar assimilar todo o conteúdo do Autor na publicação do Cloud Service.
 
-### Migration Tracker {#migration-tracker}
+### Rastreador de migração {#migration-tracker}
 
-You can use the migration tracker to note down the times for both the initial and top up runs. Esses pontos de dados ajudarão você a formular requisitos realistas de congelamento de conteúdo antes do complemento final.
+Você pode usar o rastreador de migração para anotar os tempos das execuções inicial e superior. Esses pontos de dados ajudarão você a formular requisitos realistas de congelamento de conteúdo antes do complemento final.
 
 O rastreador também ajudará você a:
 
@@ -238,7 +239,7 @@ A seção a seguir mostra as etapas importantes e as tarefas associadas que pode
 * Escolha um subconjunto do conteúdo que será migrado para que:
    * É uma combinação de todos os tipos de conteúdo disponíveis
    * Contém todos os usuários e grupos no caso [mapeamento de usuário](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) é obrigatório
-* Includes either 25% of the content or up to 1 TB of content, whichever is less.
+* Inclui 25% do conteúdo ou até 1 TB de conteúdo, o que for menor.
 * Executar pelo menos um completo e [top-up](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) migração, do clone de produção para o ambiente de não produção AEM as a Cloud Service
 * Resolva possíveis problemas como:
    * Espaço em disco na origem AEM
@@ -248,6 +249,6 @@ A seção a seguir mostra as etapas importantes e as tarefas associadas que pode
    * Saiba quanto conteúdo é adicionado por semana
    * Extrapolar os tempos medidos a partir da prova de migração para criar um [plano de migração](#migration-plan).
 
-## What&#39;s Next {#what-is-next}
+## O que vem a seguir {#what-is-next}
 
-Once you&#39;ve fully understood how to assess if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it&#39;s time to move on to the [go-live phase](/help/journey-migration/go-live.md).
+Assim que você tiver compreendido completamente como avaliar se sua instalação do AEM está pronta para ser movida para a nuvem, já que nós, enquanto aprendemos a usar as ferramentas necessárias para prepará-la, é hora de ir para a [fase de ativação](/help/journey-migration/go-live.md).

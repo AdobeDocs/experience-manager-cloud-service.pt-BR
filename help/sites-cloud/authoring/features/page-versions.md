@@ -1,26 +1,25 @@
 ---
 title: Trabalhar com versões de páginas
 description: Criar, comparar e restaurar versões de uma página
-translation-type: tm+mt
-source-git-commit: 83c6301cd804ea1bb41204cf68d9a8de0b373678
+exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 66%
 
 ---
 
-
 # Trabalhar com versões de páginas {#working-with-page-versions}
 
 O controle de versão cria um “instantâneo” de uma página em um ponto no tempo específico. Com o controle de versão, você pode executar as seguintes ações:
 
 * Criar uma versão de uma página.
-* Reinstale uma versão anterior de uma ou mais páginas para:
+* Instale novamente uma versão anterior de uma ou mais páginas para:
    * Desfazer alterações feitas nas páginas.
    * Restaurar páginas que foram excluídas.
    * Restaure uma árvore (como em uma data e hora especificadas).
-* Pré-visualização uma versão.
-* Compare a versão atual de uma página com uma versão anterior.
+* Visualize uma versão.
+* Comparar a versão atual de uma página com uma versão anterior.
    * As diferenças no texto e nas imagens são destacadas.
 * O Timewarp usa as versões de página para determinar o estado do ambiente de publicação.
 
@@ -59,23 +58,23 @@ O controle de versão cria um “instantâneo” de uma página em um ponto no t
 
 A linha do tempo será aberta com as informações atualizadas para indicar a nova versão.
 
-## Reinstalando Versões {#reinstating-versions}
+## Reposição de versões {#reinstating-versions}
 
-Depois de criar uma versão da página, há vários métodos de reinstalação de uma versão anterior:
+Depois de criar uma versão da página, há vários métodos para restabelecer uma versão anterior:
 
-* a opção **Reverter para esta versão** no painel [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
+* o **Reverter para esta versão** da [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) trilho
 
-   Reinstale uma versão anterior de uma página selecionada.
+   Instale novamente uma versão anterior de uma página selecionada.
 
-* as opções **Restaurar** na barra de ferramentas [ações superior](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+* o **Restaurar** opções na parte superior [barra de ferramentas ações](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
 
    * **Restaurar versão**
 
-      Reinstalar versões de páginas especificadas na pasta atualmente selecionada; isso também pode incluir a restauração de páginas que foram excluídas anteriormente.
+      Instale novamente as versões das páginas especificadas na pasta atualmente selecionada; isso também pode incluir a restauração de páginas que foram excluídas anteriormente.
 
    * **Restaurar árvore**
 
-      Reinstale uma versão de uma árvore inteira como em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente.
+      Retomar uma versão de uma árvore inteira em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente.
 
 >[!NOTE]
 >
@@ -107,15 +106,15 @@ Para **Reverter** a página selecionada para uma versão anterior:
 
 Este método pode ser usado para restaurar versões de páginas especificadas na pasta atual; isso também pode incluir a restauração de páginas que foram excluídas anteriormente:
 
-1. Navegue até a pasta desejada e [selecione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Navegue até e [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), a pasta necessária.
 
-1. Selecione **Restaurar** e **Restaurar versão** na barra de ferramentas de [ações superior](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar).
+1. Selecionar **Restaurar**, em seguida **Restaurar versão** na parte superior [barra de ferramentas ações](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar).
 
    >[!NOTE]
    >
-   >Se, faça o seguinte:
-   >* você selecionou uma única página que nunca teve nenhuma página secundária.
-   >* ou nenhuma das páginas da pasta tem versões,
+   >Se, você:
+   >* você selecionou uma única página que nunca teve páginas secundárias,
+   >* ou nenhuma das páginas na pasta tem versões,
 
    >
    >Em seguida, a exibição estará vazia, pois não há versões aplicáveis.
@@ -132,33 +131,33 @@ Este método pode ser usado para restaurar versões de páginas especificadas na
 
    ![Restaurar versão - Selecionar página](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. Selecione **Restaurar** para a versão selecionada da página selecionada, a ser restaurada como a versão atual.
+1. Selecionar **Restaurar** para a versão selecionada, da página selecionada, a ser restaurada como a versão atual.
 
 >[!NOTE]
 >
->A ordem na qual você seleciona uma página obrigatória e a versão relacionada é intercambiável.
+>A ordem em que você seleciona uma página obrigatória e a versão relacionada é intercambiável.
 
 ### Restaurar árvore {#restore-tree}
 
-Este método pode ser usado para restaurar uma versão de uma árvore em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente:
+Esse método pode ser usado para restaurar uma versão de uma árvore como em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente:
 
-1. Navegue até a pasta desejada e [selecione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Navegue até e [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), a pasta necessária.
 
-1. Selecione **Restaurar**, em seguida **Restaurar árvore** na barra de ferramentas de [ações superior](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). A versão mais recente da árvore será exibida:
+1. Selecionar **Restaurar**, em seguida **Restaurar árvore** na parte superior [barra de ferramentas ações](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). A versão mais recente da árvore será mostrada:
 
    ![Restaurar árvore](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
-1. Use o seletor de data e hora em **Versões mais recentes em Date** para selecionar outra versão da árvore - a que será restaurada.
+1. Use o seletor de data e hora em **Últimas versões na data** para selecionar outra versão da árvore - a que será restaurada.
 
-1. Defina o sinalizador **Páginas sem versão preservadas**, conforme necessário:
+1. Definir o sinalizador **Páginas sem versão preservadas** conforme necessário:
 
-   * Se ativo (selecionado), quaisquer páginas sem controle de versão serão mantidas e não serão afetadas pela restauração.
+   * Se estiver ativo (selecionado), quaisquer páginas sem versão serão mantidas e não serão afetadas pela restauração.
 
-   * Se inativo (não selecionado), quaisquer páginas sem controle de versão serão removidas, pois não existiam na árvore com controle de versão.
+   * Se estiver inativo (não selecionado), quaisquer páginas sem versão serão removidas, pois não existiam na árvore com versão.
 
-1. Selecione **Restaurar** para a versão selecionada da árvore a ser restaurada como a versão *atual*.
+1. Selecionar **Restaurar** para a versão selecionada da árvore a ser restaurada como a *atual* versão.
 
-## Visualização de uma versão    {#previewing-a-version}
+## Visualização de uma versão   {#previewing-a-version}
 
 É possível visualizar uma versão específica:
 
@@ -190,13 +189,13 @@ Para comparar uma versão anterior com a página atual:
 
 1. Selecione **Comparar a atual**. O [diferencial de páginas](/help/sites-cloud/authoring/features/page-diff.md) será aberto e exibirá as diferenças.
 
-## Timewarp    {#timewarp}
+## Timewarp   {#timewarp}
 
 O Timewarp é um recursos criado para simular o estado *publicado* de uma página em ocasiões específicas no passado.
 
 >[!NOTE]
 >
->[O Timewarp também pode ser usado com Inicializações para pré-visualização no futuro](/help/sites-cloud/authoring/launches/preview.md).
+>[O Timewarp também pode ser usado com Inicializações para visualizar o futuro](/help/sites-cloud/authoring/launches/preview.md).
 
 Como a criação de conteúdo é um processo contínuo e colaborativo, o objetivo do Timewarp é permitir que os autores rastreiem o site publicado ao longo do tempo, para entender como o conteúdo mudou. Esse recurso usa as versões de página para determinar o estado do ambiente de publicação.
 

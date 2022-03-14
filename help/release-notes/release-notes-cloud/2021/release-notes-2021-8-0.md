@@ -1,38 +1,38 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0.
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 4%
+ht-degree: 12%
 
 ---
 
-
-# Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais da versão atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->A partir daqui, você pode navegar até as notas de versão das versões anteriores; por exemplo, para aqueles em 2020, 2021 e assim por diante.
+>A partir daqui, você pode navegar até as notas de versão das versões anteriores; por exemplo, para aquelas em 2020, 2021 e assim por diante.
 
 >[!NOTE]
 >
->Consulte [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) para obter detalhes das atualizações de documentação não diretamente relacionadas a uma versão.
+>Consulte [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=pt-BR) para obter detalhes de atualizações de documentação não relacionadas diretamente a uma versão.
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento de [!DNL Adobe Experience Manager] como uma [!DNL Cloud Service] versão atual (2021.8.0) é 26 de agosto de 2021.
+A data de lançamento do [!DNL Adobe Experience Manager] como [!DNL Cloud Service] a versão atual (2021.8.0) é 26 de agosto de 2021.
 A seguinte versão (2021.9.0) é em 6 de outubro de 2021.
 
-## Lançamento de vídeo {#release-video}
+## Vídeo da versão {#release-video}
 
-Assista ao vídeo [Visão geral da versão de agosto de 2021](https://video.tv.adobe.com/v/336277) para obter um resumo dos recursos adicionados.
+Dê uma olhada no [Visão geral da versão de agosto de 2021](https://video.tv.adobe.com/v/336277) vídeo para obter um resumo dos recursos adicionados.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Novos recursos em [!DNL Assets] {#assets-features}
+### Novos recursos no [!DNL Assets] {#assets-features}
 
 * Ao compartilhar ativos digitais como um link, os usuários podem copiar o URL para a área de transferência imediatamente. O aprimoramento permite compartilhar ativos de maneira mais rápida e conveniente. Essa funcionalidade permite um compartilhamento de ativos mais rápido e prático.
 
@@ -41,34 +41,34 @@ Assista ao vídeo [Visão geral da versão de agosto de 2021](https://video.tv.a
 
 * Ao fazer upload de arquivos TXT, os microsserviços de ativos geram automaticamente uma miniatura. A miniatura de PNG é uma representação do arquivo TXT que ajuda os usuários a identificar o conteúdo ou os arquivos até certo ponto, sem abrir os arquivos. Essa funcionalidade não requer configuração e funciona por padrão.
 
-   ![Uma representação de um arquivo TXT é gerada automaticamente por  [!DNL Assets] em um formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
+   ![Uma representação de um arquivo TXT é gerada automaticamente por [!DNL Assets] em formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
    *Figura: Uma representação de um arquivo TXT é gerada automaticamente para ajudar a identificar o arquivo sem abri-lo.*
 
-### Novo recurso no canal de pré-lançamento [!DNL Assets] {#assets-prerelease-features}
+### Novo recurso na [!DNL Assets] canal de pré-lançamento {#assets-prerelease-features}
 
 * Os usuários agora podem classificar os ativos exibidos nos resultados da pesquisa nas exibições Coluna e Cartão. A classificação funciona nas colunas Nome, Criado, Modificado ou Nenhum.
 
-   ![Classifique os resultados da pesquisa  [!DNL Assets] nas exibições Coluna e Cartão](/help/assets/assets/sort-searched-assets.png)
-   *Figura: Classifique os resultados da pesquisa  [!DNL Assets] nas exibições Coluna e Cartão.*
+   ![Classifique os resultados da pesquisa em [!DNL Assets] nas exibições Coluna e Cartão](/help/assets/assets/sort-searched-assets.png)
+   *Figura: Classifique os resultados da pesquisa em [!DNL Assets] nas exibições Coluna e Cartão.*
 
 ### Erros corrigidos em [!DNL Assets] {#assets-bugs-fixed}
 
-* Quando um membro do grupo do colaborador navega até o [!DNL Assets] Console, uma solicitação `POST` extra é gerada para tentar criar uma Coleção. Essa solicitação não é necessária, falha devido a problemas de permissões e cria muitos erros nos logs. (CQ-4328856)
-* Quando os usuários visualizam um ativo e selecionam a [!UICONTROL Linha do tempo] no menu pop-up no painel esquerdo, um erro é exibido. Nos logs, muitos avisos são registrados devido a uma consulta incorreta. (CQ-4328919)
+* Quando um membro do grupo do colaborador navega até a variável [!DNL Assets] Console, um `POST` é gerada para tentar criar uma Coleção. Essa solicitação não é necessária, falha devido a problemas de permissões e cria muitos erros nos logs. (CQ-4328856)
+* Quando os usuários visualizam um ativo e selecionam a variável [!UICONTROL Linha do tempo] no menu pop-up do painel esquerdo, um erro é exibido. Nos logs, muitos avisos são registrados devido a uma consulta incorreta. (CQ-4328919)
 
-## [!DNL Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
-### Novidades em [!DNL Forms] {#what-is-new-forms}
+### Novidades do [!DNL Forms] {#what-is-new-forms}
 
-* O serviço Automated forms conversion pode [converter PDF forms em italiano e português](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) em Adaptive Forms.
+* O serviço Automated forms conversion pode [converter PDF forms em italiano e português](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) para Adaptive Forms.
 
-* **Documento de registro** baseado em formulário: O AEM Forms as a Cloud Service suporta o uso do  [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) como um modelo para o Documento de registro além do modelo de formulário baseado em XFA.
+* **Documento de registro baseado em formulário**: O AEM Forms as a Cloud Service oferece suporte ao uso do [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) como um modelo para o Documento de registro além do modelo de formulário baseado em XFA.
 
-* **Conector** do armazenamento de dados do Microsoft Azure: Agora você pode  [conectar o Modelo de dados de formulário ao Armazenamento do Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Microsoft Azure Storage como um BLOB.
+* **Conector do armazenamento de dados do Microsoft Azure**: Agora você pode [conectar o Modelo de Dados de Formulário ao Armazenamento do Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Microsoft Azure Storage como um BLOB.
 
-### Novos recursos disponíveis no canal de pré-lançamento [!DNL Forms] {#prerelease-features-forms}
+### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
 
-* **Usar as funções do Adobe Sign em um formulário** adaptável: Os níveis de serviço Adobe Sign for business and enterprise têm a opção de expandir as funções para os recipients do Agreement, além apenas do Signer, para melhor corresponder aos seus requisitos de fluxo de trabalho. Agora você pode habilitar cada recipient do contrato para configurar sua função em um Formulário adaptável, com o Assinante sendo a função padrão.
+* **Usar as funções do Adobe Sign em um formulário adaptável**: Os níveis de serviço Adobe Sign for business and enterprise têm a opção de expandir as funções para os recipients do Agreement, além apenas do Signer, para melhor corresponder aos seus requisitos de fluxo de trabalho. Agora você pode habilitar cada recipient do contrato para configurar sua função em um Formulário adaptável, com o Assinante sendo a função padrão.
 
 * **Analytics para Adaptive Forms**: Agora é possível capturar e rastrear o comportamento do usuário final por meio do Adobe Analytics para o Adaptive Forms para coletar insights do usuário final. Ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário final.
 
@@ -96,9 +96,9 @@ A próxima versão está planejada para 09 de setembro de 2021.
 ### Novidades {#what-is-new-aug}
 
 * Os clientes do Cloud Service agora podem visualizar os relatórios do Contrato de nível de serviço (SLA) no Cloud Manager. Esta informação será disponibilizada progressivamente nos próximos meses.
-Consulte [Relatórios do SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) para saber mais.
+Consulte [Relatórios de SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) para saber mais.
 
-* O tipo e a gravidade das regras de qualidade IndexType e `IndexDamAssetLucene` foram alterados. Agora, ambos são Bugs do Blocker *serverity*.
+* O tipo e a gravidade do IndexType e `IndexDamAssetLucene` as regras de qualidade foram alteradas. Estes são agora os dois Bugs do Bloqueador *servidão*.
 
 * Novas regras de qualidade do índice Oak foram introduzidas para abranger configurações assíncronas e tika.
 
@@ -118,7 +118,7 @@ Consulte [Relatórios do SLA](https://experienceleague.adobe.com/docs/experience
 
 * A integração inicial estava falhando para novas organizações com nomes muito longos.
 
-* Ocasionalmente, quando um pipeline é acionado duas vezes por algum motivo, resulta em uma das execuções falhando com o erro *cannot update pipeline execution status* .
+* Ocasionalmente, quando um pipeline é acionado duas vezes por algum motivo, resulta em uma das execuções falhar com *não é possível atualizar o status de execução do pipeline* erro.
 
 ## Ferramenta Transferência de conteúdo {#content-transfer-tool}
 
@@ -130,6 +130,6 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.5.6 é 11 de 
 
 * Em alguns casos, nem todos os usuários foram migrados para a instância de destino. Para obter essa correção, o CTT v1.5.6 é necessário juntamente com o aem-ethos-tools 1.2.354 ou versão posterior na instância as a Cloud Service do target AEM.
 
-* O botão **Parar assimilação** estava sendo desativado durante a assimilação na instância de publicação. Isso não é necessário porque não há uma etapa de restauração de mongo durante a assimilação de Publicação.
+* O **Parar Assimilação** estava sendo desativado durante a assimilação na instância de publicação. Isso não é necessário porque não há uma etapa de restauração de mongo durante a assimilação de Publicação.
 
-* A CTT não limpou o diretório `/tmp` após uma extração bem-sucedida. Isso às vezes levava a problemas de espaço em disco.
+* O CTT não limpou o `/tmp` após uma extração bem-sucedida. Isso às vezes levava a problemas de espaço em disco.

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Tabelas no Adaptive Forms {#tables-in-adaptive-forms}
 
-O uso de tabelas é uma maneira eficiente, simplificada e organizada de apresentar dados complexos. It helps users in identifying information easily and providing inputs in an ordered arrangement of rows and columns. A maioria das formas de serviços financeiros e organizações governamentais requer grandes tabelas de dados para colocar números e realizar cálculos.
+O uso de tabelas é uma maneira eficiente, simplificada e organizada de apresentar dados complexos. Ajuda os usuários a identificar informações facilmente e fornecer entradas em uma disposição ordenada de linhas e colunas. A maioria das formas de serviços financeiros e organizações governamentais requer grandes tabelas de dados para colocar números e realizar cálculos.
 
 [!DNL AEM Forms] O fornece um componente Tabela no navegador de componentes na barra lateral que permite criar tabelas no Adaptive Forms. Alguns dos principais recursos que ele oferece são:
 
@@ -57,7 +57,7 @@ Você pode unir duas ou mais células de corpo selecionando as células que dese
 Para adicionar ou excluir uma linha ou coluna ou mover uma linha, clique em qualquer célula na linha ou coluna. Um menu suspenso é exibido na parte superior da coluna e à esquerda da linha. O menu na parte superior fornece opções para adicionar ou excluir a coluna, enquanto o menu à esquerda permite adicionar, excluir ou mover a linha.
 
 * A operação Add adiciona uma linha abaixo ou uma coluna à direita da linha ou da coluna selecionada.
-* The Delete operation deletes the selected row or column.
+* A operação Delete exclui a linha ou a coluna selecionada.
 * A operação Mover para cima e Mover para baixo move a linha selecionada para cima e para baixo.
 
 O menu suspenso da linha também fornece a operação Editar para editar propriedades, configurações e opções de estilo de linha.
@@ -66,9 +66,9 @@ O menu suspenso da linha também fornece a operação Editar para editar proprie
 
 >[!NOTE]
 >
->* While you can add any number of rows in a table, the maximum number of columns you can add is six. Além disso, não é possível excluir a linha de cabeçalho da tabela.
+>* Embora seja possível adicionar qualquer número de linhas em uma tabela, o número máximo de colunas que você pode adicionar é seis. Além disso, não é possível excluir a linha de cabeçalho da tabela.
 >
->* Automated conversion of a PDF form to Adaptive Form can create tables without headers. You can add and delete columns to tables without headers. Hidden headers are added to such tables to help you add and delete columns. Esses cabeçalhos são visíveis durante a criação, mas permanecem ocultos no formulário publicado.
+>* A conversão automatizada de um formulário PDF para Formulário adaptável pode criar tabelas sem cabeçalhos. É possível adicionar e excluir colunas em tabelas sem cabeçalhos. Cabeçalhos ocultos são adicionados a essas tabelas para ajudá-lo a adicionar e excluir colunas. Esses cabeçalhos são visíveis durante a criação, mas permanecem ocultos no formulário publicado.
 
 
 
@@ -89,16 +89,16 @@ Você pode classificar dados com base em qualquer coluna em uma tabela no Formul
 A classificação pode ser aplicada às colunas da tabela contendo:
 
 * Texto estático
-* Data model object properties
+* Propriedades do objeto do modelo de dados
 * Combinação de propriedades de objetos de texto estático e de modelo de dados
 
 Para aplicar a classificação em colunas da tabela, as células da coluna da tabela devem conter qualquer um dos seguintes componentes: Caixa numérica, Etapa numérica, Campo de entrada de data, Seletor de data, Texto ou Caixa de texto.
 
 Para ativar a classificação:
 
-1. Select the table and tap ![configure_icon](assets/configure_icon.png) (Configure). Também é possível selecionar a tabela usando o **Conteúdo** no sidekick da Comunicação interativa.
+1. Selecione a tabela e toque em ![configure_icon](assets/configure_icon.png) (Configurar). Também é possível selecionar a tabela usando o **Conteúdo** no sidekick da Comunicação interativa.
 1. Selecionar **Habilitar Classificação**.
-1. Tap ![done_icon](assets/done_icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
+1. Toque ![done_icon](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, em cabeçalhos de colunas representam que a classificação foi ativada.
 
    ![Habilitar classificação](assets/enable_sorting_new.png)
 
@@ -109,9 +109,9 @@ Para ativar a classificação:
 
    ![Classificação em ordem crescente](assets/sorting_ascending_new.png)
 
-   Similarly, a column header with a down arrow represents that the values in the column are displayed in the descending order.
+   Da mesma forma, um cabeçalho de coluna com uma seta para baixo representa que os valores na coluna são exibidos na ordem decrescente.
 
-   You can also make changes in the table in the **Preview** mode and click the column header again to sort the column values.
+   Também é possível fazer alterações na tabela no **Visualizar** e clique no cabeçalho da coluna novamente para classificar os valores da coluna.
 
 ## Configurar estilo de tabela {#configure}
 
@@ -192,19 +192,19 @@ No layout Collapsible column , as colunas na tabela são recolhidas para mostrar
 >
 >Embora o layout de coluna Reduzível seja otimizado para dispositivos móveis, ele também funcionará na área de trabalho, se a largura disponível não for suficiente para mostrar todas as colunas em uma tabela.
 
-The following images compare how a table looks on a device with collapsed and expanded columns.
+As imagens a seguir comparam a aparência de uma tabela em um dispositivo com colunas recolhidas e expandidas.
 
-![collapsed-column](assets/collapsed-column.png)
+![coluna recolhida](assets/collapsed-column.png)
 
 Colunas recolhidas de uma tabela com apenas duas colunas exibidas em um dispositivo móvel
 
-![collapsible_column](assets/collapsible_column.png)
+![coluna_recolhível](assets/collapsible_column.png)
 
 Coluna expandida de uma tabela em um dispositivo móvel
 
 ## Mesclar dados em uma tabela {#merge-data-in-a-table}
 
-Tables in Adaptive Forms allow you to populate the table at runtime using data from an XML file. The data XML file can reside in the local file system of the machine where [!DNL AEM Forms] server is running or in the CRX repository.
+As tabelas no Adaptive Forms permitem preencher a tabela em tempo de execução usando dados de um arquivo XML. O arquivo XML de dados pode residir no sistema de arquivos local da máquina em que [!DNL AEM Forms] O servidor está em execução ou no repositório CRX.
 
 Vamos ver o exemplo da seguinte tabela de resumo de transação bancária que queremos preencher com dados de um arquivo XML.
 
@@ -276,9 +276,9 @@ O arquivo XML que contém dados no seguinte formato:
 </afData>
 ```
 
-In the sample XML, the data for a row is defined by the `<Row1>` tags, which is the element name for the row in the table. No `<Row1>` , os dados de cada célula são definidos dentro da tag para o nome do elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`e `<type>`.
+No XML de amostra, os dados de uma linha são definidos pela variável `<Row1>` tags , que é o nome do elemento para a linha na tabela. No `<Row1>` , os dados de cada célula são definidos dentro da tag para o nome do elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`e `<type>`.
 
-Para mesclar esses dados com a tabela no tempo de execução, precisamos apontar o Formulário adaptável que contém a tabela para o local XML absoluto com wcmmode desabilitado. For example, if the Adaptive Form is at *https://`servername`/myForms/bankTransaction.html* and the data XML file is saved at *C:/myTransactions/bankSummary.xml*, you can view the table with data at the following URL:
+Para mesclar esses dados com a tabela no tempo de execução, precisamos apontar o Formulário adaptável que contém a tabela para o local XML absoluto com wcmmode desabilitado. Por exemplo, se o formulário adaptável estiver em *https://`servername`/myForms/bankTransaction.html* e o arquivo XML de dados é salvo em *C:/myTransactions/bankSummary.xml*, é possível exibir a tabela com dados no seguinte URL:
 
 *https://`servername`/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 

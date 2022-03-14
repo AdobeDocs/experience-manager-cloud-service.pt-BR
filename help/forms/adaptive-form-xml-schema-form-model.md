@@ -165,7 +165,6 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
 >
 >* Capitalizar o primeiro caractere do nome do elemento
 >* Inserindo espaço em branco nos limites da Camel Case.
-
 >
 >Por exemplo, se você adicionar a variável `userFirstName` elemento de esquema, a legenda gerada no Formulário adaptável é `User First Name`.
 

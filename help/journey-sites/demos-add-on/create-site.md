@@ -1,15 +1,15 @@
 ---
-title: Criar Site de Demonstração
+title: Criar site de demonstração
 description: Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# Criar Site de Demonstração {#creating-a-site}
+# Criar site de demonstração {#creating-a-site}
 
 Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados.
 

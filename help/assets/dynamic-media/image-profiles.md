@@ -7,7 +7,7 @@ exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
 workflow-type: tm+mt
 source-wordcount: '3234'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -229,7 +229,7 @@ Depois de editar um recorte inteligente e salvar, a alteração é propagada em 
 
 >[!IMPORTANT]
 >
->Ao realinhar ou redimensionar manualmente a janela de recorte inteligente de vários ativos, essas edições são mantidas e preservadas, mesmo se posteriormente você decidir reprocessar esses ativos. No entanto, se você editar a largura, a altura ou ambos na variável **[!UICONTROL Recorte responsivo de imagem]** do Perfil de imagem, esses ativos ficam sujeitos ao reprocessamento.
+>Ao realinhar ou redimensionar manualmente a janela de recorte inteligente de vários ativos, essas edições são mantidas e preservadas, mesmo que você decida reprocessar esses ativos posteriormente. No entanto, se você editar a largura, a altura ou ambos na área **[!UICONTROL Recorte de imagem responsivo]** do Perfil de imagem, esses ativos estarão sujeitos a reprocessamento.
 >Consulte [Reprocessar ativos do Dynamic Media em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Você pode executar o recorte inteligente novamente para gerar as culturas adicionais, se necessário.

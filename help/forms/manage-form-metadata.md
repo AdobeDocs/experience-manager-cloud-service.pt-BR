@@ -11,7 +11,7 @@ ht-degree: 2%
 
 ---
 
-# Adicionar, remover ou editar metadados de um formulário adaptável {#manage-form-metadata}
+# Adicionar, remover ou editar metadados de um Formulário adaptável {#manage-form-metadata}
 
 Os metadados permitem a categorização e a organização mais fáceis de ativos e ajudam os usuários que estão procurando por um ativo específico.
 
@@ -232,7 +232,6 @@ Para o Adaptive Forms, é fornecida uma funcionalidade adicional, que permite ao
 >
 >* Use uma imagem quadrada para a miniatura. Ao usar uma imagem não quadrada e exibir a miniatura na exibição em lista, a miniatura aparece cortada.
 >* Depois que uma nova imagem é carregada ou gerada, a miniatura é substituída por essa imagem e não pode ser redefinida para a imagem anterior.
-
 >
 
 

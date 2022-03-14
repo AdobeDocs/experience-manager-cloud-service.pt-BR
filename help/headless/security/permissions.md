@@ -1,14 +1,14 @@
 ---
-title: 'Considerações de permissão para conteúdo headless '
+title: Considerações de permissão para conteúdo headless
 description: Saiba mais sobre as diferentes permissões e considerações de ACL para uma implementação headless com o Adobe Experience Manager. Entenda os diferentes perfis e os possíveis níveis de permissão necessários para os ambientes do Autor e de Publicação.
 feature: Content Fragments,GraphQL API
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
-workflow-type: ht
+exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
 
 ---
-
 
 # Considerações de permissão para conteúdo headless
 
@@ -98,4 +98,3 @@ O [SDK do AEM Headless](https://github.com/adobe/aem-headless-client-js#create-a
 ### Acesse a API GraphQL
 
 Solicitações HTTP que fornecem as [credenciais de autenticação apropriadas](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) para os endpoints da API GraphQL do serviço de publicação do AEM incluem o conteúdo que as credenciais estão autorizadas a ler e o conteúdo acessível anonimamente. Outros consumidores da API GraphQL não podem ler o conteúdo nas pastas protegidas por CUGs.
-

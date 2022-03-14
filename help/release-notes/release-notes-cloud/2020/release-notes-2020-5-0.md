@@ -1,16 +1,15 @@
 ---
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.5.0
 description: Notas de versão do Experience Manager para 2020.5.0
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
 ---
 
-
-# Notas de versão do AEM as a Cloud Service 2020.5.0{#release-notes}
+# Notas de versão do AEM as a Cloud Service 2020.5.0 {#release-notes}
 
 Esta página descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.5.0.
 
@@ -41,7 +40,7 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 * O desempenho da página Atividade e da API de Lista de execuções de pipeline foi aprimorado.
 * O log de qualidade do código agora contém rastreamentos completos de pilha para exceções.
 
-### Correções de erros {#bug-fixes}
+### Correções de erros  {#bug-fixes}
 
 * Um cartão enganoso era exibido na página de visão geral enquanto o pipeline de produção estava em execução.
 * A regra de qualidade de código *DontImplementOrExtendProviderTypesPomCheck* pode, às vezes, produzir uma Exceção de ponteiro nulo.
@@ -49,5 +48,3 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 * A caixa de diálogo Criar ambiente não era renderizada corretamente no Safari.
 * Determinados cartões na página de visão geral não exibiam os nomes de entidades corretamente.
 * Em alguns casos, a etapa Criar imagem não baixava pacotes de clientes com êxito.
-
-

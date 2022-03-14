@@ -50,7 +50,7 @@ O serviço de tradução automática imediatamente traduz o conteúdo no Formul�
 
 [Configurações do documento de registro](generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
-1. [Personalizar as informações de marca do Documento de registro](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e verifique se a localidade do navegador está definida com o mesmo idioma no qual você localizou o Formulário adaptável usando o idioma do computador. A localidade do navegador ajuda a localizar as informações de marca no Documento de registro.
+1. [Personalizar as informações de marca do Documento de registro](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e verifique se a localidade do navegador está definida com o mesmo idioma no qual você localizou o Formulário adaptável usando o idioma da máquina. A localidade do navegador ajuda a localizar as informações de marca no Documento de registro.
 1. Para exibir o Documento de registro localizado, toque em Gerar visualização. O PDF Document of Record é gerado e aberto em uma nova guia no seu navegador.
 
 <!-- ## Localizing an Adaptive Form and its Document of Record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}

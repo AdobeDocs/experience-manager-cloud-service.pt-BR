@@ -1,14 +1,13 @@
 ---
 title: Guia de início rápido para a criação de páginas
 description: Um guia rápido de alto nível para começar a criar conteúdo de página
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
 
 ---
-
 
 # Guia de início rápido para a criação de páginas {#quick-guide-to-authoring-pages}
 
@@ -181,7 +180,7 @@ Para editar sua página:
    >
    >Para navegar usando os links no conteúdo, você deve usar o [Modo de visualização](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
 
-### Editar as propriedades da página    {#editing-the-page-properties}
+### Editar as propriedades da página   {#editing-the-page-properties}
 
 Existem dois métodos (principais) [para editar as propriedades da página](/help/sites-cloud/authoring/fundamentals/page-properties.md):
 
@@ -233,7 +232,7 @@ Existem dois métodos principais [para publicar a sua página](/help/sites-cloud
 
    Consulte [Publicação de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) para obter mais informações.
 
-### Mover, copiar e colar ou excluir sua página    {#move-copy-and-paste-or-delete-your-page}
+### Mover, copiar e colar ou excluir sua página   {#move-copy-and-paste-or-delete-your-page}
 
 Essas ações podem ser acionadas por:
 
@@ -284,7 +283,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
 1. Toque/clique no tipo de referência desejado para mostrar mais detalhes e (conforme o caso) realizar novas ações.
 
-### Criar uma versão da sua página    {#creating-a-version-of-your-page}
+### Criar uma versão da sua página   {#creating-a-version-of-your-page}
 
 Para criar uma [versão](/help/sites-cloud/authoring/features/page-versions.md) da página:
 

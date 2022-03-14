@@ -5,45 +5,45 @@ exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
 
-# Notas de versão atuais para [!DNL Adobe Experience Manager] como um Cloud Service {#release-notes}
+# Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-A seção a seguir descreve as Notas de versão gerais para a versão atual (mais recente) de [!DNL Experience Manager] como um Cloud Service.
+A seção a seguir descreve as Notas de versão gerais da versão atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >A partir daqui, você pode navegar até as notas de versão das versões anteriores; por exemplo, para aqueles em 2020, 2021 e assim por diante.
 
 >[!NOTE]
 >
->Consulte [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) para obter detalhes das atualizações de documentação não diretamente relacionadas a uma versão.
+>Consulte [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=pt-BR) para obter detalhes de atualizações de documentação não relacionadas diretamente a uma versão.
 
 ## Data de lançamento {#release-date}
 
-A Data de lançamento de [!DNL Adobe Experience Manager] como Cloud Service 2021.5.0 é 27 de maio de 2021.
+A data de lançamento para [!DNL Adobe Experience Manager] O as a Cloud Service 2021.5.0 é 27 de maio de 2021.
 A seguinte versão (2021.6.0) será lançada em 28 de junho de 2021.
 
-## AEM como uma fundação de Cloud Service {#foundation}
+## AEM fundação as a Cloud Service {#foundation}
 
-### O que há de novo no AEM como uma fundação de Cloud Service {#what-is-new-foundation}
+### Novidades AEM fundação as a Cloud Service {#what-is-new-foundation}
 
-* [Canal](/help/release-notes/prerelease.md) de pré-lançamento: Visualize os recursos futuros por um mês inteiro antes de eles entrarem em produção!
+* [Canal de pré-lançamento](/help/release-notes/prerelease.md): Visualize os recursos futuros por um mês inteiro antes de eles entrarem em produção!
 
-* [Substituição](/help/release-notes/deprecated-apis.md) da API: uma lista das APIs obsoletas mais recentes para o AEM as a Cloud Service está disponível.
+* [Substituição da API](/help/release-notes/deprecated-apis.md): uma lista das APIs obsoletas mais recentes para AEM as a Cloud Service está disponível.
 
-* [AEM como um plug-in Maven do Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Atualize seus projetos maven para a versão mais recente, que inclui uma verificação da API Java obsoleta e outras melhorias.
+* [AEM Plug-in Maven do Analisador de Compilação do SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Atualize seus projetos maven para a versão mais recente, que inclui uma verificação da API Java obsoleta e outras melhorias.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Novidades em [!DNL Sites] {#what-is-new-sites}
+### Novidades do [!DNL Sites] {#what-is-new-sites}
 
-* Em breve, você poderá verificar o conteúdo em um novo [Camada de visualização](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para simular a aparência da experiência final e a experiência como faria no nível de Publicação. Isso é ativado pelo assistente de Publicação gerenciada do AEM Sites , que agora permite escolher um destino de publicação entre Publicar ou Visualizar. As experiências na Visualização podem ser acessadas por um URL dedicado. Após a validação em Visualizar, o conteúdo pode ser publicado de Autor para Publicar como de costume. Habilitar o Serviço de visualização no AEM como ambientes Cloud Service será implementado gradualmente nas próximas semanas.
+* Em breve você poderá verificar o conteúdo em um novo [Camada de visualização](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para simular a aparência da experiência final na camada Publicar . Isso é ativado pelo assistente de Publicação gerenciada do AEM Sites , que agora permite escolher um destino de publicação entre Publicar ou Visualizar. As experiências na Visualização podem ser acessadas por um URL dedicado. Após a validação em Visualizar, o conteúdo pode ser publicado de Autor para Publicar como de costume. Habilitar o Serviço de visualização em AEM ambientes as a Cloud Service será implementado gradualmente nas próximas semanas.
 
-## [!DNL Adobe Experience Manager Assets] como  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] como [!DNL Cloud Service] {#assets}
 
-### Novidades em [!DNL Assets] {#what-is-new-assets}
+### Novidades do [!DNL Assets] {#what-is-new-assets}
 
 * Você pode baixar os ativos compartilhados usando a funcionalidade Compartilhamento de links . Esse download agora usa um serviço assíncrono que oferece downloads mais rápidos e ininterruptos, mesmo para downloads muito grandes. Consulte [baixar ativos](/help/assets/download-assets-from-aem.md#link-share-download).
 
@@ -63,28 +63,28 @@ A seguinte versão (2021.6.0) será lançada em 28 de junho de 2021.
 
 ### Erros corrigidos em [!DNL Assets] {#assets-bugs-fixed}
 
-* Fazer upload de arquivos muito grandes trava o [!DNL Experience Manager desktop app]. (CQ-4320942)
+* O upload de arquivos muito grandes interrompe o [!DNL Experience Manager desktop app]. (CQ-4320942)
 * As opções da barra de ferramentas são diferentes quando a mesma Coleção é selecionada de uma pasta e quando é selecionada de um resultado de pesquisa. (CQ-4321406)
 
 #### Novidades no Dynamic Media {#what-is-new-dm}
 
-* O Smart Imaging DPR (Device Pixel Ratio) e a otimização da largura de banda da rede permitem fornecer imagens de melhor qualidade com eficiência, em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter mais informações, consulte [Perguntas frequentes sobre imagem inteligente](/help/assets/dynamic-media/imaging-faq.md) e [Otimização de imagem com formatos de imagem da próxima geração WebP e AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* O Smart Imaging DPR (Device Pixel Ratio) e a otimização da largura de banda da rede permitem fornecer imagens de melhor qualidade com eficiência, em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter mais informações, consulte [Perguntas frequentes sobre imagens inteligentes](/help/assets/dynamic-media/imaging-faq.md) e [Otimização de imagem com formatos de imagem da próxima geração, WebP e AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * Introdução do suporte para AVIF na próxima geração do formato de imagem na entrega do Dynamic Media (modificador de URL fmt).
 
-## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
-### Novidades em [!DNL Forms] {#what-is-new-forms}
+### Novidades do [!DNL Forms] {#what-is-new-forms}
 
-* **Ajuda** contextual: Adição de ajuda contextual para o editor de formulários adaptáveis, editor de modelos e editor de temas para ajudar os autores a entender melhor vários recursos dos editores.
-* **Mensagens de erro no navegador** Propriedades: Adicionadas mensagens de erro para cada propriedade no navegador Adaptive Forms Properties. Essas mensagens ajudam a entender os valores permitidos para um campo.
+* **Ajuda contextual**: Adição de ajuda contextual para o editor de formulários adaptáveis, editor de modelos e editor de temas para ajudar os autores a entender melhor vários recursos dos editores.
+* **Mensagens de erro no navegador Propriedades**: Adicionadas mensagens de erro para cada propriedade no navegador Adaptive Forms Properties. Essas mensagens ajudam a entender os valores permitidos para um campo.
 
 ### Futuro recurso beta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
 Saída como um serviço da nuvem: O serviço de saída ajuda a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo de lote síncrono e assíncrono. O serviço de saída permite criar aplicativos que permitem:
 
 * Gere documentos de formulário finais preenchendo arquivos de modelo com dados XML.
-* Gere formulários de saída em vários formatos, incluindo fluxos de impressão PDF não interativos.
-* Gere PDFs de impressão a partir de PDFs de formulários XFA.
+* Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
+* Gerar PDFs de impressão a partir de PDFs de formulário XFA.
 
 Você pode gravar em formscsbeta@adobe.com para se inscrever no programa beta.
 
@@ -101,7 +101,7 @@ Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Ser
 
 ### Data de lançamento {#release-date-cm-may}
 
-A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.5.0 é 6 de maio de 2021.
+A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.5.0 é 6 de maio de 2021.
 A próxima versão está planejada para 3 de junho de 2021.
 
 ### Novidades {#what-is-new-may}
@@ -128,7 +128,7 @@ A próxima versão está planejada para 3 de junho de 2021.
 
 * Ocasionalmente, o usuário pode ver um status verde &quot;ativo&quot; ao lado de uma Lista de permissões de IP, mesmo quando essa configuração não foi implantada.
 
-* Em vez de remover variáveis &quot;excluídas&quot;, a API de variáveis de pipelines somente as marcaria com o status **DELETED**.
+* Em vez de remover variáveis &quot;excluídas&quot;, a API de variáveis de pipelines somente as marcaria com status **EXCLUÍDO**.
 
 * Alguns problemas de qualidade do tipo Código Smell estavam afetando incorretamente a Classificação de confiabilidade.
 
@@ -148,7 +148,7 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.4.6 é 27 de 
 
 * Uma nova instrução de log foi adicionada ao log de erros do início rápido, se o usuário não tiver permissão de execução no executável Java.
 
-* Quando um usuário exclui um conjunto de migração da interface do usuário da CTT, onde uma extração foi executada, a pasta `tmp` associada a esse conjunto de migração será excluída para economizar espaço.
+* Quando um usuário exclui um conjunto de migração da interface do usuário da CTT, onde uma extração foi executada, a variável `tmp` a pasta associada a esse conjunto de migração será excluída para economizar espaço.
 
 ### Correções de erros {#bug-fixes-ctt-latest}
 
@@ -168,7 +168,7 @@ A Data de lançamento da ferramenta Transferência de conteúdo v1.4.0 é 11 de 
 ### Correções de erros {#bug-fixes-ctt-may}
 
 * Várias correções de erros relacionadas ao recurso de atualização automática na interface do usuário da ferramenta Transferência de conteúdo .
-* A ferramenta Transferência de conteúdo com `wipe=true` resultou em um índice de contador incorreto no destino. Isso foi corrigido.
+* Ferramenta Transferência de conteúdo com `wipe=true` resultava em índice de contador incorreto no target. Isso foi corrigido.
 
 ## Suplemento comercial {#cloud-services-commerce}
 

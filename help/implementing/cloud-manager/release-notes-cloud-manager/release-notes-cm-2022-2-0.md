@@ -2,13 +2,13 @@
 title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2022.02.0
 description: Estas são as notas de versão do Cloud Manager AEM as a Cloud Service versão 2022.02.0.
 feature: Release Information
-source-git-commit: f89e1942f63db0b1c57a9d87b051b6a3935ee7cd
+exl-id: da0643a0-78f8-4e9d-9cc9-a1a17067a08c
+source-git-commit: 8162d1d6ddeff867507f749f223c0111b6856122
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 2%
 
 ---
-
 
 # Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2022.02.0 {#release-notes}
 

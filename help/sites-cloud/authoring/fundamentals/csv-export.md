@@ -1,14 +1,13 @@
 ---
-title: 'Exportar para CSV  '
+title: Exportar para CSV
 description: Exportar informações sobre suas páginas em um arquivo CSV em seu sistema local
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 100%
 
 ---
-
 
 # Exportar para CSV   {#export-to-csv}
 
@@ -33,7 +32,7 @@ O assistente **Criar exportação de arquivos CSV** permite selecionar:
       * Fluxo de trabalho
    * Tradução
       * Traduzido
-   * Análise
+   * Analytics
       * Exibições da página
       * Visitantes únicos
       * Tempo na página

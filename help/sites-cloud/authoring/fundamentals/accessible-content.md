@@ -4,8 +4,8 @@ description: Usar o AEM as a Cloud Service para ajuda a tornar o conteúdo da We
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '14050'
+ht-degree: 99%
 
 ---
 
@@ -365,7 +365,6 @@ O AEM facilita a construção de conteúdo da Web semanticamente significativo u
 
       >
       >Eles são efetivamente os mesmos, mas `<strong>` e `<em>` são preferíveis, pois são html semanticamente corretos. Sua equipe de desenvolvimento pode configurar o RTE para usar `<strong>` e `<em>` (em vez de `<b>` e `<i>`), ao desenvolver a instância do projeto.
-
 
 * **Tabelas de dados complexos**: em alguns casos, onde há tabelas complexas com dois ou mais níveis de cabeçalhos, as Propriedades da tabela básicas podem não ser suficientes para fornecer toda a informação estrutural necessária. Para esses tipos de tabelas complexas, relações diretas precisam ser criadas entre os cabeçalhos e as suas células relacionadas usando os atributos **cabeçalho** e **id**.
 

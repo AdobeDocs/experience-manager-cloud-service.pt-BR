@@ -1,13 +1,13 @@
 ---
 title: Gerencie seus sites de demonstração
 description: Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
 
 ---
-
 
 # Gerencie seus sites de demonstração {#manage-demo-sites}
 

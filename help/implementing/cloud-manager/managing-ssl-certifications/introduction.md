@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -47,4 +47,4 @@ Usando a página Certificados SSL de interface do usuário do Cloud Manager , um
 * [Exibição, atualização ou substituição de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
    >[!NOTE]
    >Essas ações permitem exibir detalhes ou substituir um certificado que está prestes a expirar.
-* [Excluindo um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+* [Excluir um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)

@@ -1,14 +1,13 @@
 ---
 title: 'Configurar o ambiente da sua conta  '
 description: O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação
-translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
 
 ---
-
 
 # Configurar o ambiente da sua conta   {#configuring-your-account-environment}
 
@@ -84,7 +83,7 @@ Cada usuário pode definir certas propriedades para si mesmo.
    O AEM oferece suporte a vários atalhos de teclado que tornam a criação mais eficiente.
 
    * [Atalhos de teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   * [Atalhos de teclado para consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   * [Atalhos de teclado para os consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
    Essa opção ativa atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados, por exemplo, caso um usuário tenha determinados requisitos de acessibilidade.
 

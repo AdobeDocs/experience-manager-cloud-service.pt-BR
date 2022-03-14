@@ -1,14 +1,13 @@
 ---
 title: Sua caixa de entrada
 description: Gerenciar suas tarefas com a caixa de entrada
-translation-type: tm+mt
-source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
+exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
 ---
-
 
 # Sua caixa de entrada {#your-inbox}
 
@@ -43,7 +42,7 @@ De qualquer um dos consoles, o número atual de itens em sua caixa de entrada é
 >
 >Algumas ações também serão mostradas na [exibição de cartão do recurso apropriado](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## Abrir a Caixa de entrada    {#opening-the-inbox}
+## Abrir a Caixa de entrada   {#opening-the-inbox}
 
 Para abrir a caixa de entrada de notificação do AEM:
 
@@ -183,7 +182,7 @@ Na caixa de entrada, você pode criar tarefas:
 
 1. Selecione **Enviar**.
 
-## Criação de um projeto    {#creating-a-project}
+## Criação de um projeto   {#creating-a-project}
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-cloud/authoring/projects/overview.md) com base nessa tarefa:
 

@@ -1,17 +1,17 @@
 ---
-title: 'Gerenciar publicação    '
+title: 'Gerenciar publicação   '
 description: Publicar ou desfazer a publicação de ativos no Experience Manager Assets, Dynamic Media e Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-source-git-commit: 6ffdd6801fffb743314759b6c303723c2599dfa5
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 8%
 
 ---
-
 
 # Gerenciar publicação no Experience Manager Assets {#manage-publication-in-aem}
 
@@ -191,4 +191,3 @@ Você pode publicar ativos, pastas e coleções no [!DNL Experience Manager Asse
 * Pastas vazias não são publicadas.
 * Se você publicar um ativo que está sendo processado, somente o conteúdo original será publicado. As representações estão ausentes. Aguarde até que o processamento seja concluído e publique ou republique o ativo quando o processamento for concluído.
 * Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite desfazer a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
-

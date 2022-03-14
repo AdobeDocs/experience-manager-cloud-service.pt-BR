@@ -1,88 +1,88 @@
 ---
-title: AEM Headless Translation Journey
-description: Start here for a guided journey through translating your headless content using AEM's powerful translation tools.
+title: jornada de tradução sem cabeçalho AEM
+description: Comece aqui para obter uma jornada guiada por meio da tradução do conteúdo sem periféricos usando AEM ferramentas de tradução avançadas.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# AEM Headless Translation Journey {#aem-headless-translation-journey}
+# jornada de tradução sem cabeçalho AEM {#aem-headless-translation-journey}
 
-Start here for a guided journey through translating your headless content using AEM&#39;s powerful translation tools.
+Comece aqui para obter uma jornada guiada por meio da tradução do conteúdo sem periféricos usando AEM ferramentas de tradução avançadas.
 
 ## Introdução {#introduction}
 
-Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel, region, or locale.
+A implementação sem periféricos está se tornando cada vez mais importante para fornecer experiências ao seu público-alvo, onde quer que sejam e independentemente do canal, da região ou da localidade.
 
-Headless implementation forgoes page and component management as is traditional in full stack solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. By using AEM&#39;s powerful translation tools, these reusable fragments can be easily translated and delivered to your audience wherever it may be.
+A implementação sem cabeçalho perde o gerenciamento de página e componente, como é tradicional em soluções de pilha completa, e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em canais e em sua entrega entre canais. Ao usar AEM ferramentas de tradução avançadas, esses fragmentos reutilizáveis podem ser facilmente traduzidos e entregues ao seu público-alvo, onde quer que seja.
 
-This guide leads you through the most important headless translation topics so that on completion you:
+Este guia o conduz pelos tópicos mais importantes de tradução sem cabeçalho, de modo que, ao concluir, você:
 
-* Have an overview of what headless content delivery is.
-* Have a basic understanding AEM&#39;s headless features.
-* Understand AEM&#39;s translation features and how they related to headless content.
-* Have the ability to start translating your own headless content.
+* Ter uma visão geral do que é a entrega de conteúdo sem periféricos.
+* Ter uma compreensão básica AEM recursos sem periféricos.
+* Entenda AEM recursos de tradução e como eles estão relacionados ao conteúdo sem periféricos.
+* Tenha a capacidade de começar a traduzir seu próprio conteúdo sem periféricos.
 
-The goal is to give you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it. If you are not familiar with any of these topics, this is your ideal place to start.
+O objetivo é fornecer uma ampla compreensão da tecnologia sem interface, como a AEM serve conteúdo sem interface e como você pode traduzi-la. Se você não está familiarizado com nenhum desses tópicos, este é o seu lugar ideal para começar.
 
-If you are already familiar with AEM, headless, and translation, you may already have the foundational knowledge of this journey. [](#additional-resources)
+Se você já está familiarizado com AEM, sem cabeça e tradução, você pode já ter o conhecimento fundamental dessa jornada. Considere consultar nossa documentação técnica vinculada ao [seção recursos adicionais abaixo.](#additional-resources)
 
-## AEM Documentation Journeys {#documentation-journeys}
+## jornadas de documentação de AEM {#documentation-journeys}
 
-[](/help/journey-documentation/documentation-journeys.md)
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e talvez complicados ao fornecer uma narrativa que ajude o leitor, que pode ser novo a AEM, compreender e resolver um problema de negócios do início ao fim, assumindo o mínimo de tópico ou conhecimento AEM.
 
-Documentation Journeys are designed around best practices principles, informed by Adobe&#39;s latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa Adobe, experiência comprovada de implementação de consultores de Adobe e feedback de projetos de clientes.
 
-[](/help/journey-documentation/documentation-journeys.md)
+Se você quiser saber como o Adobe recomenda como resolver casos de negócios sem periféricos com o AEM, [AEM Jornadas headless](/help/journey-documentation/documentation-journeys.md) são onde começar.
 
 ## Público {#audience}
 
-This journey is designed for the translation specialist persona, often referred to as the Translation Project Manager or TPM. This journey lays out the requirements, steps, and approach to translate headless content in AEM. The journey may define additional personas with which the translation specialist must interact, but the point-of-view for the journey is that of the translation specialist.
+Essa jornada foi projetada para o perfil especialista em tradução, geralmente chamado de Gerenciador de projetos de tradução ou TPM. Essa jornada apresenta os requisitos, as etapas e a abordagem para traduzir o conteúdo sem periféricos em AEM. A jornada pode definir personas adicionais com as quais o especialista de tradução deve interagir, mas o ponto de vista da jornada é o do especialista de tradução.
 
-This journey assumes the reader has experience translating content on a large CMS system, but assumes no knowledge of headless technology or AEM.
+Essa jornada supõe que o leitor tenha experiência de tradução de conteúdo em um grande sistema CMS, mas não assume conhecimento de tecnologia ou AEM sem periféricos.
 
-The following are the personas that interact in this journey.
+A seguir estão as personas que interagem nessa jornada.
 
-| Persona | Descrição | Role in Journey |
+| Persona | Descrição | Função no Jornada |
 |---|---|---|
-| Translation Specialist | Defines what content should be translated and manages those workflows | Audience of this journey |
-| Content Author | Creates and manage content that is delivered headlessly | Content Authors create content that the translation specialist must translate. |
-| Administrador | Manages the base setup and configuration of AEM | The translation specialist works with the administrator to make configuration changes needed for translation such as installing a translation connector. |
-| Content Architect | Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data | Translation specialists work with the content architect to define the organization of the content so it can be easily translated. |
+| Especialista em tradução | Define qual conteúdo deve ser traduzido e gerencia esses workflows | Público-alvo desta jornada |
+| Autor do conteúdo | Cria e gerencia conteúdo entregue sem cabeçalho | Os Autores de conteúdo criam conteúdo que o especialista de tradução deve traduzir. |
+| Administrador | Gerencia a configuração básica e a configuração do AEM | O especialista em tradução trabalha com o administrador para fazer as alterações de configuração necessárias para a tradução, como instalar um conector de tradução. |
+| Arquitetura de conteúdo | Analisa os requisitos dos dados que devem ser entregues sem periféricos e define a estrutura desses dados | Especialistas em tradução trabalham com o arquiteto de conteúdo para definir a organização do conteúdo, para que ele possa ser facilmente traduzido. |
 
-Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. [](/help/journey-documentation/documentation-journeys.md#journeys)
+As informações nesta jornada podem, é claro, ser úteis para todas as pessoas, mas algumas informações podem ser supérfluas para determinadas funções. Fique ligado para [jornadas futuras que abordarão funções adicionais.](/help/journey-documentation/documentation-journeys.md#journeys)
 
-## The Headless Translation Journey {#the-journey}
+## A Jornada de tradução sem cabeçalho {#the-journey}
 
-You will explore many topics in this journey. The following articles give you foundational knowledge of translating headless content in AEM and link out to detailed technical documentation.
+Você explorará muitos tópicos nesta jornada. Os artigos a seguir fornecem conhecimento fundamental da tradução do conteúdo sem interface no AEM e vinculam a documentação técnica detalhada.
 
-Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless translation in AEM, we recommend that you start at the beginning and progress sequentially.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo em uma tradução sem cabeçalho no AEM, recomendamos que você comece no início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|
-| 0 | AEM Headless Translation Journey | Este documento |
-| 1 | [](learn-about.md) | Learn headless concepts, how they map to AEM, and the theory of AEM translation. |
-| 2 | [](getting-started.md) | Get to know how to organize your headless content and how AEM&#39;s translation tools work. |
-| 3 | [](configure-connector.md) | Learn how to connect AEM to a translation service. |
-| 4 | [](translation-rules.md) | Learn how to define translation rules to identify content for translation. |
-| 5 | [](translate-content.md) | Use the translation connector and rules to translate your headless content. |
-| 6 | [](publish-content.md) | Learn how to publish your translated content and update the translation when the underlying content is updated. |
+| 0 | jornada de tradução sem cabeçalho AEM | Este documento |
+| 1 | [Saiba mais sobre o conteúdo sem periféricos e como traduzi-lo em AEM](learn-about.md) | Aprenda conceitos sem interface, como eles mapeiam para AEM e a teoria AEM tradução. |
+| 2 | [Introdução à tradução do AEM headless](getting-started.md) | Saiba como organizar o conteúdo sem periféricos e como funcionam AEM ferramentas de tradução. |
+| 3 | [Configurar o conector de tradução](configure-connector.md) | Saiba como conectar AEM a um serviço de tradução. |
+| 4 | [Configurar regras de tradução](translation-rules.md) | Saiba como definir regras de tradução para identificar o conteúdo para tradução. |
+| 5 | [Traduzir conteúdo](translate-content.md) | Use o conector e as regras de tradução para traduzir o conteúdo sem cabeçalho. |
+| 6 | [Publicar conteúdo traduzido](publish-content.md) | Saiba como publicar seu conteúdo traduzido e atualizar a tradução quando o conteúdo subjacente for atualizado. |
 
-## What&#39;s Next {#what-is-next}
+## O que vem a seguir {#what-is-next}
 
-You are now ready to get started on your Adobe headless translation journey. [](learn-about.md)
+Agora você está pronto para começar a usar a jornada de tradução sem cabeçalho do Adobe. Recomendamos que você continue para a próxima parte da jornada e leia o artigo [Saiba mais sobre o conteúdo sem periféricos e como traduzi-lo em AEM](learn-about.md)
 
 ## Recursos adicionais {#additional-resources}
 
-Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
+As jornadas de documentação mostram como o AEM soluciona um problema comercial fornecendo uma narrativa que o orienta por processos e recursos complexos e inter-relacionados. Uma jornada ilustra como vários recursos trabalham juntos para atender a uma única necessidade de negócios.
 
-As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM&#39;s powerful features work together.
+Como tais jornadas são projetadas para se sustentarem sozinhas. No entanto, alguns deles podem estar relacionados entre si. Confira estas jornadas adicionais para obter mais informações sobre como AEM recursos avançados trabalham juntos.
 
-* [](/help/journey-headless/author/overview.md)
-* [](/help/journey-headless/architect/overview.md)
-* [](/help/journey-headless/developer/overview.md)
-* [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)
-* [](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [Jornada de criação sem cabeçalho](/help/journey-headless/author/overview.md) - Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como modelar seu conteúdo em seu primeiro projeto sem interface.
+* [Jornada de arquitetura headless](/help/journey-headless/architect/overview.md) - Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.
+* [jornada do desenvolvedor sem periféricos do AEM](/help/journey-headless/developer/overview.md) - Comece aqui para obter uma jornada guiada com os recursos avançados e flexíveis do AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
+* [AEM documentação técnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - Se você já tiver um conhecimento profundo das tecnologias AEM e sem interface, poderá consultar diretamente nossos documentos técnicos aprofundados.
+* [Tutoriais AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Se você preferir aprender fazendo e for tecnicamente inclinado, utilize nossos tutoriais práticos organizados por API e framework, que exploram a criação e o uso de aplicativos criados AEM Headless.

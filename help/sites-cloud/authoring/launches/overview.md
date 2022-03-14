@@ -1,14 +1,13 @@
 ---
 title: Lançamentos
 description: Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma versão futura. Eles permitem que você faça alterações prontas para publicação futura, mantendo ao mesmo tempo suas páginas atuais
-translation-type: tm+mt
-source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
+exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 80%
 
 ---
-
 
 # Lançamentos {#launches}
 
@@ -24,7 +23,7 @@ Por exemplo, as páginas de produtos sazonais da sua loja online são atualizada
 Você também pode:
 
 * Navegar pelo conteúdo na ramificação de lançamento; adicionar ou remover páginas, conforme necessário.
-* Pré-visualização como o conteúdo publicado será exibido em uma data/hora específica no futuro.
+* Visualize como o conteúdo publicado terá uma data/hora específica no futuro.
 
 Quando o próximo trimestre chegar, você promoverá as páginas de lançamento para poder publicar as páginas de origem (mantendo o conteúdo atualizado). É possível promover todas as páginas ou apenas aquelas que você modificou.
 
@@ -33,13 +32,13 @@ Lançamentos também podem ser:
 * Criados para várias ramificações raiz. Embora você possa criar o lançamento para o site inteiro (e fazer as alterações lá), isso pode ser impraticável, pois todo o conteúdo precisa ser copiado. Quando centenas ou até milhares de páginas estão envolvidas, os requisitos e o desempenho do sistema são afetados pela ação de cópia e posteriormente pelas comparações necessárias para as tarefas de promoção.
 * Aninhados (um lançamento dentro de outro), para dar a você a capacidade de criar um lançamento a partir de outro existente, de forma que os autores possam aproveitar as alterações já feitas, em vez de terem que fazer as mesmas alterações várias vezes em cada lançamento.
 
-Esta seção descreve como criar, editar e promover (e, se necessário, [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) páginas de inicialização no console Sites ou [no console Inicializações](#the-launches-console):
+Esta seção descreve como criar, editar e promover (e se necessário [excluir](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) inicie páginas de dentro do console Sites ou [o console Lançamentos](#the-launches-console):
 
-* [Criação de lançamentos](/help/sites-cloud/authoring/launches/creating.md)
-* [Edição de lançamentos](/help/sites-cloud/authoring/launches/editing.md)
+* [Criação de inicializações](/help/sites-cloud/authoring/launches/creating.md)
+* [Edição de inicializações](/help/sites-cloud/authoring/launches/editing.md)
 * [Gerenciamento de páginas em inicializações](/help/sites-cloud/authoring/launches/managing-pages.md)
-* [Uso do Timewarp para Pré-visualização de seu conteúdo com base em Inicializações](/help/sites-cloud/authoring/launches/preview.md)
-* [Promoção de lançamentos](/help/sites-cloud/authoring/launches/promoting.md)
+* [Uso do Timewarp para visualizar seu conteúdo com base em inicializações](/help/sites-cloud/authoring/launches/preview.md)
+* [Promoção de inicializações](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Lançamentos - a ordem dos eventos {#launches-the-order-of-events}
 
@@ -52,7 +51,7 @@ Lançamentos permitem que você:
    * As páginas de origem de nível superior são conhecidas como **Produção**.
       * As páginas de origem podem ser obtidas de várias ramificações (separadas).
 
-   ![Ordem de funcionamento das inicializações](/help/sites-cloud/authoring/assets/launches-order.png)
+   ![Ordem de funcionamento dos lançamentos](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * Edite a configuração de inicialização:
    * Adicione ou remova páginas e/ou ramificações ao/do lançamento.
@@ -77,7 +76,7 @@ Lançamentos permitem que você:
    * A origem é um lançamento existente.
    * Você pode [promover um lançamento ](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch)aninhado para qualquer destino. Esse destino pode ser um lançamento pai ou as páginas de origem de nível superior (Produção).
 
-   ![Uma inicialização aninhada](/help/sites-cloud/authoring/assets/launches-nested.png)
+   ![Um lançamento aninhado](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
    >
@@ -85,7 +84,7 @@ Lançamentos permitem que você:
 
 >[!NOTE]
 >
->A criação e edição de inicializações requer direitos de acesso a `/content/launches` - como no grupo padrão `content-authors`.
+>Criar e editar lançamentos requer direitos de acesso a `/content/launches` - como com o grupo padrão `content-authors`.
 >
 >Entre em contato com o administrador do sistema se você tiver algum problema.
 
@@ -93,13 +92,13 @@ Lançamentos permitem que você:
 
 1. No console **Sites**, navegue até a origem dos lançamentos.
 1. Abra o painel **Referências** e selecione a página de origem.
-1. Selecione **Inicializações**, as inicializações existentes serão listadas, juntamente com o acesso ao **Console de Inicializações**:
+1. Selecionar **Lançamentos**, os lançamentos existentes serão listados, juntamente com o acesso à variável **Console Lançamentos**:
 
    ![Referências de inicializações no console de sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Toque/clique no lançamento apropriado. A lista de ações possíveis será exibida:
 
-   ![Ações a serem iniciadas no console de sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+   ![Ações para iniciar o console Sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## O console Lançamentos {#the-launches-console}
 
@@ -107,13 +106,13 @@ O console Lançamentos fornece uma visão geral dos seus lançamentos e permite 
 
 * No console **Ferramentas**: **Ferramentas**, **Sites**, **Lançamentos**.
 
-* **Inicializações** Consolide a parte inferior da seção  **** Inicialização do painel  **** Referências ao navegar pelo conteúdo de origem no console Sites.
+* **Console Lançamentos** na parte inferior do **Lançamentos** da seção **Referências** ao navegar pelo conteúdo de origem no console Sites.
 
-   ![Inicia o Console em Referências de inicializações no console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![Console Lançamentos em Referências de lançamentos no console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-* O botão **Inicializações** na parte superior direita, ao navegar pelo conteúdo de inicialização no console Sites:
+* O **Lançamentos** na parte superior direita, ao navegar pelo conteúdo do launch no console Sites :
 
-   ![Opção Inicializações no console Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+   ![Opção Lançamentos no console Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * Ou diretamente; por exemplo, com:
    `https://<host>:<port>/libs/launches/content/launches.html`

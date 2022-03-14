@@ -1,14 +1,15 @@
 ---
 title: Gerenciar experiências de catálogo de produtos preparados
 description: Saiba como gerenciar experiências de catálogo de produtos preparados.
-source-git-commit: a98d525512dcba790d002d6a4042558962c36c97
+exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Criação de experiências de catálogo de produtos preparados {#building-experiences}
+# Criação de experiências de catálogo de produtos em estágios {#building-experiences}
 
 Saiba como gerenciar experiências de catálogo de produtos preparados.
 

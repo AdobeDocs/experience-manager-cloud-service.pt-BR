@@ -44,7 +44,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
 
-## Formatos de arquivo não suportados {#supported-file-formats}
+## Formatos de arquivo compatíveis {#supported-file-formats}
 
 Os microsserviços de ativos oferecem suporte para uma grande variedade de formatos de arquivo para processar, gerar representações ou extrair metadados. Consulte [formatos de arquivo compatíveis](file-format-support.md) para obter a lista completa de tipos MIME e a funcionalidade suportada para cada tipo.
 

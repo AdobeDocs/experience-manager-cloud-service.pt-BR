@@ -1,33 +1,32 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0.
-source-git-commit: bef02a7e72d54b7c9eb5726bb046460c5902fb84
+exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
 
-
-
-# Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais da versão atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->A partir daqui, você pode navegar até as notas de versão das versões anteriores; por exemplo, para aqueles em 2020, 2021 e assim por diante.
+>A partir daqui, você pode navegar até as notas de versão das versões anteriores; por exemplo, para aquelas em 2020, 2021 e assim por diante.
 
 >[!NOTE]
 >
->Consulte [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) para obter detalhes de atualizações de documentação não diretamente relacionadas a uma versão.
+>Consulte [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=pt-BR) para obter detalhes de atualizações de documentação não relacionadas diretamente a uma versão.
 
 ## Data de lançamento {#release-date}
 
 A data de lançamento do [!DNL Adobe Experience Manager] como [!DNL Cloud Service] versão atual (2021.9.0) é 6 de outubro de 2021.
 A seguinte versão (2021.10.0) é 4 de novembro de 2021.
 
-## Lançamento de vídeo {#release-video}
+## Vídeo da versão {#release-video}
 
 Dê uma olhada no [Visão geral da versão de setembro de 2021](https://video.tv.adobe.com/v/337381) vídeo para obter um resumo dos recursos adicionados.
 
@@ -39,7 +38,7 @@ Dê uma olhada no [Visão geral da versão de setembro de 2021](https://video.tv
 
 ## [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#assets}
 
-### Novos recursos em [!DNL Assets] {#assets-features}
+### Novos recursos no [!DNL Assets] {#assets-features}
 
 * Os usuários agora podem classificar os ativos exibidos nos resultados da pesquisa nas exibições Coluna e Cartão. A classificação funciona nas colunas Nome, Criado, Modificado ou Nenhum.
 
@@ -77,11 +76,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Conector de armazenamento unificado:** Use o Unified Storage Connector para externalizar dados em andamento em repositórios gerenciados pelo cliente. Por exemplo, você pode
    * Habilite a funcionalidade de salvar e retomar do Forms Portal e armazene rascunhos de formulários adaptáveis em um repositório de dados gerenciado pelo cliente.
-   * Armazene dados de fluxos de trabalho em andamento AEM (dados AEM variáveis de fluxo de trabalho) que contêm dados confidenciais pessoais (SPD) em um repositório gerenciado pelo cliente.
+   * Armazene dados de fluxos de trabalho AEM em andamento (dados AEM variáveis de fluxo de trabalho) que contêm dados confidenciais pessoais (SPD) em um repositório gerenciado pelo cliente.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) Ajudar a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo síncrono. As APIs permitem criar aplicativos que permitem:
-   * Gere documentos preenchendo arquivos de modelo com dados XML.
-   * Gere formulários de saída em vários formatos, incluindo fluxos de PDF não interativos.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) Ajudar a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos no modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
+   * Gerar documentos preenchendo arquivos de modelo com dados XML.
+   * Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
    * Gere arquivos PDF de impressão a partir de um PDF de formulário XFA e do Formulário Adobe Acrobat.
 
 Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no programa beta.
@@ -128,7 +127,7 @@ Consulte [Suporte a miniaturas para vídeos](https://experienceleague.adobe.com/
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
-### Novos recursos em [!DNL Experience Manager as a Cloud Service] {#foundation-features}
+### Novos recursos no [!DNL Experience Manager as a Cloud Service] {#foundation-features}
 
 **Rede avançada**
 

@@ -1,24 +1,23 @@
 ---
 title: Configuração de formulários de pesquisa
-description: Configuração do Search Forms for Adobe Experience Manager como Cloud Service.
-translation-type: tm+mt
-source-git-commit: c48274f76db764e1cbad459e644d5fb4b753a086
+description: Configuração do Search Forms para Adobe Experience Manager as a Cloud Service.
+exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 17%
 
 ---
 
-
 # Configuração de formulários de pesquisa {#configuring-search-forms}
 
-O Adobe Experience Manager como Cloud Service vem com um poderoso mecanismo [Search](/help/sites-cloud/authoring/getting-started/search.md).
+O Adobe Experience Manager as a Cloud Service vem com um [Pesquisar](/help/sites-cloud/authoring/getting-started/search.md) mecanismo.
 
-Em combinação com isso, também há um conjunto de opções predefinidas para ajudar a filtrar o conteúdo. Eles possuem aspectos predefinidos como **Data Modificada**, **Status de Publicação** ou **Status do Livecopy** para ajudá-lo a detalhar rapidamente os recursos de que precisa.
+Em combinação com isso, também há um conjunto de opções predefinidas para ajudar você a filtrar o conteúdo. Eles têm facetas predefinidas, como **Data de modificação**, **Publicar status** ou **Status da Livecopy** para ajudá-lo a detalhar rapidamente os recursos necessários.
 
-![uso de pesquisa e filtro](assets/csf-usage.png)
+![pesquisar e filtrar uso](assets/csf-usage.png)
 
-Juntas, essas metas ajudam a localizar o conteúdo de forma rápida e fácil:
+Juntas, essas metas ajudam a localizar o conteúdo de forma rápida e fácil a partir de:
 
 * [Pesquisar e filtrar](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [Seletor de painéis](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
@@ -26,11 +25,11 @@ Juntas, essas metas ajudam a localizar o conteúdo de forma rápida e fácil:
 
 >[!NOTE]
 >
->Você pode configurar o serviço subjacente [Pesquisa e Indexação de Conteúdo](/help/operations/indexing.md).
+>Você pode configurar o [Pesquisa e indexação de conteúdo](/help/operations/indexing.md) serviço.
 
 Usando **Pesquisar Forms**, você pode personalizar e estender esses painéis, de acordo com suas necessidades específicas.
 
-O **Search Forms** oferece uma seleção predefinida de [predicados](#predicates-and-their-settings) que você pode combinar e definir. As caixas de diálogo [para configurar estes formulários](#configuring-your-search-forms) podem ser acessadas através de:
+O **Pesquisar Forms** fornecer uma seleção pronta para uso de [predicados](#predicates-and-their-settings) que você pode combinar e definir. O [caixas de diálogo para configurar esses formulários](#configuring-your-search-forms) pode ser acessado via:
 
 * **Ferramentas**
    * **Geral**
@@ -38,7 +37,7 @@ O **Search Forms** oferece uma seleção predefinida de [predicados](#predicates
 
 ## Forms padrão {#default-forms}
 
-Quando você acessa o console **Pesquisar Forms** pela primeira vez, você pode ver que todas as configurações têm um símbolo de cadeado. Isso indica que a configuração correspondente é a configuração padrão (out-of-the-box) e não pode ser excluída. Depois que você tiver personalizado e salvo, uma configuração do bloqueio desaparecerá. Ele reaparecerá quando você [excluir sua configuração personalizada](#deleting-a-configuration-to-reinstate-the-default), nesse caso, o padrão (e o indicador de cadeado) será reinstalado.
+Ao acessar o **Pesquisar Forms** é possível ver que todas as configurações têm um símbolo de cadeado. Isso indica que a configuração correspondente é a configuração padrão (pronta para uso) e não pode ser excluída. Depois de personalizar e salvar, uma configuração do bloqueio desaparecerá. Ele reaparecerá quando você [excluir sua configuração personalizada](#deleting-a-configuration-to-reinstate-the-default), nesse caso, o padrão (e o indicador de cadeado) será reinstalado.
 
 ![configuração da visão geral dos formulários de pesquisa](assets/csf-overview.png)
 
@@ -65,7 +64,7 @@ As configurações padrão (listadas em ordem alfabética) disponíveis são:
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre formulários de pesquisa relacionados ao ativo, consulte [Ativos - Aspectos de pesquisa](/help/assets/search-facets.md)
+>Para obter mais detalhes sobre formulários de pesquisa relacionados a ativos, consulte [Ativos - Aspectos de pesquisa](/help/assets/search-facets.md)
 
 
 ## Predicados e suas configurações {#predicates-and-their-settings}
@@ -82,8 +81,8 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <th>Configurações</th>
   </tr>
   <tr>
-   <td>Análise</td>
-   <td>Recursos de pesquisa/filtro no navegador Sites ao mostrar dados ativados pelo Analytics. Os filtros de pesquisa do Analytics são carregados até corresponder às colunas de análise personalizadas mapeadas.</td>
+   <td>Analytics</td>
+   <td>Pesquise/filtre recursos no navegador Sites ao mostrar dados fornecidos pelo Analytics. Os filtros de pesquisa do Analytics são carregados para corresponder às colunas de análise personalizadas mapeadas.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -114,7 +113,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Retirado por</td>
-   <td>Procure ativos cujo check-out foi feito por um usuário específico.</td>
+   <td>Pesquise ativos com check-out feito por um usuário específico.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -125,7 +124,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Status da retirada</td>
-   <td>Procure ativos com um status de check-out específico.</td>
+   <td>Pesquise ativos com um status de finalização específico.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -147,7 +146,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Intervalo de datas</td>
-   <td>Procure recursos criados em um intervalo especificado para uma propriedade de data. No painel Pesquisar, é possível especificar datas de Start e término.</td>
+   <td>Procure recursos criados em um intervalo especificado para uma propriedade date . No painel Pesquisar , é possível especificar datas de Início e Término.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -160,7 +159,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Status da expiração</td>
-   <td>Pesquisar recursos com base no status de expiração.</td>
+   <td>Pesquise recursos com base no status de expiração.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -170,7 +169,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Tamanho do arquivo</td>
-   <td>Filtre os recursos com base no tamanho.</td>
+   <td>Filtre recursos com base em seu tamanho.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -181,7 +180,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Tipo de arquivo</td>
-   <td>Pesquisar ativos com base no tipo de arquivo/mime.</td>
+   <td>Pesquise ativos com base no tipo de arquivo/MIME.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li> 
@@ -193,7 +192,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Texto completo</td>
-   <td>Projetar pesquisa para pesquisas de texto completo. Ela é mapeada com o operador ‘jcr:contains’.</td>
+   <td>predicado de pesquisa para pesquisas de texto completo. Ele é mapeado com o operador ‘jcr:contains’.</td>
    <td>
     <ul>
      <li>Espaço reservado</li>
@@ -203,7 +202,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Grupo</td>
-   <td>Predicado de pesquisa para grupo (usado somente no Predicado de insights).</td>
+   <td>predicado de pesquisa para grupo (usado somente no Predicado de insights).</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -212,7 +211,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Filtro oculto</td>
-   <td>Um filtro na propriedade e no valor, não visível para o usuário.</td>
+   <td>Um filtro na propriedade e no valor , não visível para o usuário.</td>
    <td>
     <ul>
      <li>Nome da Propriedade*</li>
@@ -222,7 +221,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Insights</td>
-   <td>Pesquisar de acordo com uma seleção de parâmetros do Insights.</td>
+   <td>Pesquise de acordo com uma seleção de parâmetros do Insights.</td>
    <td>Este é um predicado complexo composto de vários predicados:
     <ul>
      <li>Grupo</li>
@@ -233,7 +232,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Membro da coleção</td>
-   <td>Procurar ativos que sejam membros de uma coleção</td>
+   <td>Pesquisar ativos que são membros de uma coleção</td>
    <td>
     <ul>
      <li>Descrição</li>
@@ -242,7 +241,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Propriedade de valores múltiplos</td>
-   <td>Pesquisar em vários valores de uma propriedade especificada.</td>
+   <td>Pesquise em vários valores de uma propriedade especificada.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -257,7 +256,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Opções</td>
-   <td><p>As opções são nós de conteúdo criados pelo usuário.</p> <p>Consulte <a href="#addinganoptionspredicate">Adicionar um Predicado de opções</a> para obter mais informações.</p> </td>
+   <td><p>As opções são nós de conteúdo criados pelo usuário.</p> <p>Consulte <a href="#addinganoptionspredicate">Adicionar um predicado de opções</a> para obter mais informações.</p> </td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -269,7 +268,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
     </ul> </td>
   </tr>
   <tr>
-   <td>Propriedade de opções</td>
+   <td>Propriedade Opções</td>
    <td>Pesquise em uma ou mais propriedades da opção.</td>
    <td>
     <ul>
@@ -294,7 +293,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Caminho</td>
-   <td>Filtrar de acordo com o caminho específico. É possível especificar vários caminhos como opções.</td>
+   <td>Filtre de acordo com o caminho específico. Você pode especificar vários caminhos como opções.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -325,7 +324,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Propriedade</td>
-   <td>Pesquisar em uma propriedade especificada.</td>
+   <td>Pesquise em uma propriedade especificada.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -339,7 +338,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Publicar status</td>
-   <td>Filtre os recursos com base no status de publicação.</td>
+   <td>Filtre recursos com base em seu status de publicação.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -349,7 +348,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Intervalo</td>
-   <td>Pesquise os recursos que estão dentro de um intervalo especificado. No painel Pesquisar, você pode especificar valores mínimos e máximos para o intervalo.</td>
+   <td>Pesquise os recursos que estão dentro de um intervalo especificado. No painel Pesquisar , é possível especificar valores mínimos e máximos para o intervalo.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -370,7 +369,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Data relativa</td>
-   <td>Filtre os recursos com base na data relativa de sua criação. Por exemplo, 1 semana atrás, 1 mês atrás.</td>
+   <td>Filtre recursos com base na data relativa de sua criação. Por exemplo, 1 semana atrás, 1 mês atrás.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -381,7 +380,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Intervalo do controle deslizante</td>
-   <td>Um predicado de pesquisa comum que estende o predicado de intervalo com o recurso de controle deslizante. O valor da propriedade pesquisada deve estar entre os limites do controle deslizante.</td>
+   <td>Um predicado de pesquisa comum que estende o predicado de intervalo com o recurso do controle deslizante. O valor da propriedade pesquisada deve estar entre os limites do controle deslizante.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -405,7 +404,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>Pesquisar com base em tags.</td>
    <td>
     <ul>
-     <li>Campo Lavel</li>
+     <li>Lavel de campo</li>
      <li>Espaço reservado</li>
      <li>Nome da Propriedade*</li>
      <li>Exibir a opção Corresponder todas as tags</li>
@@ -415,7 +414,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Modelos</td>
-   <td>Pesquisar de acordo com o modelo selecionado.</td>
+   <td>Pesquise de acordo com o modelo selecionado.</td>
    <td>
     <ul>
      <li>Espaço reservado</li>
@@ -426,7 +425,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
   </tr>
   <tr>
    <td>Status da tradução</td>
-   <td>Pesquisar de acordo com o status da tradução.</td>
+   <td>Pesquise de acordo com o status da tradução.</td>
    <td>
     <ul>
      <li>Rótulo do campo</li>
@@ -490,13 +489,13 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
 >
 -->
 
-### Prever configurações {#predicate-settings}
+### Configurações do predicado {#predicate-settings}
 
 Dependendo do predicado, uma seleção de configurações está disponível para configuração, incluindo:
 
 * **Rótulo do campo**
 
-   O rótulo que aparecerá como o cabeçalho flexível ou como o rótulo do campo do predicado.
+   O rótulo que aparecerá como o cabeçalho que pode ser recolhido ou como o rótulo de campo do predicado.
 
 * **Descrição**
 
@@ -508,13 +507,13 @@ Dependendo do predicado, uma seleção de configurações está disponível para
 
 * **Nome da Propriedade**
 
-   A propriedade a ser pesquisada. Ele usa um caminho relativo e os curingas `*/*/*` especificam a profundidade da propriedade em relação ao nó `jcr:content` (cada asterisco representa um nível de nó).
+   A propriedade a ser pesquisada. Ele usa um caminho relativo e curingas `*/*/*` especifique a profundidade da propriedade em relação à variável `jcr:content` (cada asterisco representa um nível de nó).
 
-   Se quiser pesquisar apenas em um nó filho de primeiro nível do recurso que tenha a propriedade `x` no nó `jcr:content`, use `*/jcr:content/x`
+   Se quiser pesquisar apenas em um nó filho de primeiro nível do recurso que tenha o `x` na `jcr:content` uso do nó `*/jcr:content/x`
 
 * **Profundidade da propriedade**
 
-   A profundidade máxima para procurar essa propriedade dentro dos recursos. Portanto, uma pesquisa nessa propriedade pode ser executada em um recurso e filhos recursivos até que o nível dos filhos seja igual a profundidade especificada.
+   A profundidade máxima para procurar essa propriedade nos recursos. Portanto, uma pesquisa nessa propriedade pode ser executada em um recurso e em filhos recursivos até que o nível dos filhos seja igual à profundidade especificada.
 
 * **Valor da propriedade**
 
@@ -524,38 +523,38 @@ Dependendo do predicado, uma seleção de configurações está disponível para
 
 * **Texto do intervalo**
 
-   O rótulo do campo de intervalo no predicado **Intervalo de datas**.
+   O rótulo do campo de intervalo na variável **Intervalo de datas** predicado.
 
 * **Caminho de opção**
 
-   O usuário pode selecionar o caminho usando o Navegador de caminhos na guia de configuração de predicado. Depois de selecionar o ícone **+** é usado para adicionar a seleção à lista de opções válidas (em seguida, o ícone **-** para remover, se necessário).
+   O usuário pode selecionar o caminho usando o Navegador de caminhos na guia de configuração do predicado. Depois de selecionar o **+** é usado para adicionar a seleção à lista de opções válidas (em seguida, o ícone **-** ícone para remover, se necessário).
 
    As opções são nós de conteúdo criados pelo usuário, com a seguinte estrutura:
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Opções**
-caminho do nóEfetivamente é o mesmo que 
-**Caminho** de opções, somente este está no campo predicado comum comum, o outro é específico para ativos.
+* **Caminho do nó Opções**
+Efetivamente, o mesmo que o 
+**Caminho das opções**, somente se estiver no campo predicado comum, o outro é específico para ativos.
 
-* **Seleção únicaSe**
-marcada, as opções são renderizadas como caixas de seleção que permitem apenas uma seleção. Se estiver selecionado por engano, uma caixa de seleção pode ser desmarcada.
+* **Seleção única**
+Se marcada, as opções são renderizadas como caixas de seleção que permitem somente uma seleção. Se estiver selecionado incorretamente, uma caixa de seleção pode ser desmarcada.
 
-* **Nome(s) de propriedade de publicação e Live Copy**
-Os rótulos das caixas de seleção de publicação e live copy para o predicado específico Sites.
+* **Publicar e Live Copy Nome(s) de Propriedade**
+Os rótulos das caixas de seleção publicar e live copy para o predicado específico Sites.
 
-* O &amp;ast; nos rótulos de campo na guia **Settings** significa que os campos são obrigatórios e, se deixados em branco, uma mensagem de erro será exibida.
+* O &amp;último; nos rótulos de campo na **Configurações** guia significa que os campos são obrigatórios e, se deixados em branco, uma mensagem de erro será exibida.
 
-## Configurando seu Forms de pesquisa {#configuring-your-search-forms}
+## Configurar sua Forms de pesquisa {#configuring-your-search-forms}
 
 ### Criando/Abrindo uma Configuração Personalizada {#creating-opening-a-customized-configuration}
 
-1. Navegue até **Ferramentas**, **Geral**, **Pesquisar Forms**.
+1. Navegar para **Ferramentas**, **Geral**, **Pesquisar Forms**.
 
 1. Selecione a configuração que deseja personalizar.
-1. Use o ícone **Editar** para abrir a configuração para atualização.
-1. Se uma nova personalização você provavelmente desejará [adicionar novos campos de predicado e definir as configurações](#add-edit-a-predicate-field-and-define-field-settings) conforme necessário. Se uma personalização existente você pode selecionar um campo existente e [atualizar as configurações](#add-edit-a-predicate-field-and-define-field-settings).
-1. Selecione **Done** para salvar a configuração. Suas alterações poderão ser vistas na próxima vez que a configuração for usada.
+1. Use o **Editar** ícone para abrir a configuração para atualização.
+1. Se uma nova personalização você provavelmente desejará [adicionar novos campos de predicado e definir as configurações](#add-edit-a-predicate-field-and-define-field-settings) conforme necessário. Se houver uma personalização, você poderá selecionar um campo existente e [atualizar as configurações](#add-edit-a-predicate-field-and-define-field-settings).
+1. Selecionar **Concluído** para salvar a configuração. Suas alterações poderão ser vistas na próxima vez que a configuração for usada.
 
    >[!NOTE]
    >
@@ -565,12 +564,12 @@ Os rótulos das caixas de seleção de publicação e live copy para o predicado
    >* `/apps/commerce/gui/content/facets/<option>`
 
 
-### Adicionar/editar um campo previsto e definir configurações de campo {#add-edit-a-predicate-field-and-define-field-settings}
+### Adicionar/editar um campo predicado e definir configurações de campo {#add-edit-a-predicate-field-and-define-field-settings}
 
 Você pode adicionar ou editar campos e definir/atualizar suas configurações:
 
-1. [Abra a ](#creating-opening-a-customized-configuration) configuração personalizada para atualização.
-1. Se quiser adicionar um novo campo, abra a guia **Selecionar Predicado** e arraste o predicado necessário para o local desejado. Por exemplo, o **Predicado de intervalo de datas**:
+1. [Abra a configuração personalizada](#creating-opening-a-customized-configuration) para atualização.
+1. Se quiser adicionar um novo campo, abra o **Selecionar predicado** e arraste o predicado necessário para o local desejado. Por exemplo, a variável **Predicado de intervalo de datas**:
 
    ![adicionar um predicado](assets/csf-add-predicate.png)
 
@@ -578,133 +577,133 @@ Você pode adicionar ou editar campos e definir/atualizar suas configurações:
 
    * Você está adicionando um novo campo:
 
-      Depois de adicionar o predicado, a guia **Settings** abrirá e mostrará as propriedades que podem ser definidas.
+      Após adicionar o predicado **Configurações** será aberta e mostrará as propriedades que podem ser definidas.
 
    * Você deseja atualizar um predicado existente:
 
-      Selecione o campo predicado (à direita) e abra a guia **Configurações**.
-   Por exemplo, as configurações para **Predicado de intervalo de datas**:
+      Selecione o campo predicado (à direita) e abra o **Configurações** guia .
+   Por exemplo, as configurações da variável **Predicado de intervalo de datas**:
 
    ![modificar predicado](assets/csf-modify-predicate.png)
 
-1. Faça as alterações necessárias e confirme com **Done**. Suas alterações poderão ser vistas na próxima vez que a configuração for usada.
+1. Faça as alterações necessárias e confirme com **Concluído**. Suas alterações poderão ser vistas na próxima vez que a configuração for usada.
 
-### Pré-visualização da Configuração de Pesquisa {#previewing-the-search-configuration}
+### Visualização da configuração de pesquisa {#previewing-the-search-configuration}
 
-1. Selecione o ícone de Pré-visualização:
+1. Selecione o ícone Preview :
 
-   ![Ícone pré-visualização](assets/csf-preview-icon.png)
+   ![ícone de visualização](assets/csf-preview-icon.png)
 
-1. Isso exibirá os formulários de pesquisa da forma que eles serão exibidos (totalmente expandidos) na coluna Pesquisar do console apropriado.
+1. Isso exibirá os formulários de pesquisa da forma que serão exibidos (totalmente expandidos) na coluna Pesquisar do console apropriado.
 
-   ![formulário de pré-visualização](assets/csf-preview-form.png)
+   ![formulário de visualização](assets/csf-preview-form.png)
 
-1. **** Feche a pré-visualização para retornar e concluir a configuração.
+1. **Fechar** a pré-visualização para retornar e concluir a configuração.
 
-### Excluindo um Campo Predicado {#deleting-a-predicate-field}
+### Excluindo um campo de predicado {#deleting-a-predicate-field}
 
-1. [Abra a ](#creating-opening-a-customized-configuration) configuração personalizada para atualização.
-1. Selecione o campo predicado (à direita), abra a guia **Configurações** e selecione o ícone **Excluir** (canto inferior esquerdo).
+1. [Abra a configuração personalizada](#creating-opening-a-customized-configuration) para atualização.
+1. Selecione o campo predicado (à direita) e abra o **Configurações** e selecione a **Excluir** ícone (canto inferior esquerdo).
 
    ![ícone excluir](assets/csf-delete-icon.png)
 
 1. Uma caixa de diálogo solicitará a confirmação da ação de exclusão.
 
-1. Confirme esta e quaisquer outras alterações com **Done**.
+1. Confirme esta e quaisquer outras alterações com **Concluído**.
 
-### Excluindo uma configuração (para reinstalar o padrão) {#deleting-a-configuration-to-reinstate-the-default}
+### Excluindo uma configuração (para restabelecer o padrão) {#deleting-a-configuration-to-reinstate-the-default}
 
-Depois de personalizar uma configuração, isso substituirá os padrões. É possível reinstalar a configuração padrão excluindo a configuração personalizada.
+Após personalizar uma configuração, os padrões serão substituídos. Você pode restabelecer a configuração padrão excluindo a configuração personalizada.
 
 >[!NOTE]
 >
 >Não é possível excluir as configurações padrão.
 
-A exclusão de uma configuração personalizada é feita do console:
+A exclusão de uma configuração personalizada é feita no console:
 
-1. Selecione a configuração necessária (por exemplo, **Editor de páginas (pesquisa de parágrafos)**) e o ícone **Excluir** na barra de ferramentas:
+1. Selecione a configuração necessária (por exemplo, **Editor de páginas (pesquisa de parágrafos)**) e depois a variável **Excluir** na barra de ferramentas:
 
    ![restaurar padrão](assets/csf-restore-default.png)
 
-1. A configuração personalizada será excluída e o padrão será reinstalado (isso é indicado pelo reaparecimento do símbolo de cadeado no console).
+1. A configuração personalizada será excluída e o padrão reinstalado (isso é indicado pelo reaparecimento do símbolo de cadeado no console).
 
-### Adicionar opções prevê {#adding-options-predicates}
+### Adicionar predicados de opções {#adding-options-predicates}
 
-Os predicados de opção (Opções, Propriedade de opções) permitem que você configure um item a ser pesquisado. Normalmente, eles são usados para procurar algo diretamente abaixo da página; por exemplo, uma propriedade no nó da página.
+Os predicados de opção (Opções, Propriedade de opções) permitem configurar um item a ser pesquisado. Normalmente, eles são usados para procurar algo diretamente abaixo da página; por exemplo, uma propriedade no nó da página.
 
 O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma página) ilustra as etapas envolvidas:
 
 1. Crie o nó que define a propriedade a ser pesquisada.
 
-   Você precisará de um nó raiz contendo as definições das opções individuais para estar disponível para o usuário.
+   Você precisará de um nó raiz contendo definições das opções individuais para estar disponível para o usuário.
 
    Os nós das opções individuais precisam das propriedades:
 
-   * `jcr:title` - o rótulo do campo a ser mostrado no painel de pesquisa
+   * `jcr:title` - o rótulo do campo a ser exibido no painel de pesquisa
    * `value` - o valor da propriedade a ser pesquisada
 
-   ![Definição de previsão](assets/csf-options-predicate-01.png)
+   ![Definição de predicado](assets/csf-options-predicate-01.png)
 
    >[!NOTE]
    >
-   >Você ***deve*** não alterar nada no caminho `/libs`.
+   >Você ***must*** não altere nada no `/libs` caminho.
    >
-   >Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos).
+   >Isso ocorre porque o conteúdo da variável `/libs` O é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
    >
    >O método recomendado para configuração e outras alterações é:
    >
-   >1. Recrie o item necessário, como ele existe em `/libs`, em `/apps`. Neste caso a partir de:
+   >1. Recrie o item necessário, como ele existe em `/libs`, sob `/apps`. Nesse caso, de:
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. Faça quaisquer alterações em `/apps.`
+   >1. Faça quaisquer alterações no `/apps.`
 
 
-1. Abra o console **Pesquisar Forms** e selecione a configuração que deseja atualizar. Por exemplo, **Painel de pesquisa do administrador do Sites**. Em seguida, selecione **Editar**.
+1. Abra o **Pesquisar Forms** e selecione a configuração que deseja atualizar. Por exemplo, **Painel de pesquisa do administrador de sites**. Em seguida, selecione **Editar**.
 
-1. Dependendo da configuração, adicione **Options** ou **Options Property** à configuração.
-1. Atualize os campos, em especial:
+1. Dependendo da configuração, adicione uma **Opções** ou **Propriedade Opções** à configuração.
+1. Atualizar os campos, em particular:
 
    * **Nome da Propriedade**
 
-      Específico da propriedade node a ser pesquisada nos nós do público alvo. Por exemplo:
+      Específico da propriedade do nó a ser pesquisado nos nós de destino. Por exemplo:
 
       `jcr:content/cq:template`
 
-   * **Caminho do nó de opção**
+   * **Caminho do nó da opção**
 
-      Selecione o caminho para onde suas opções são mantidas. Por exemplo:
+      Selecione o caminho onde suas opções são mantidas. Por exemplo:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-   ![Previsões de opção](assets/csf-options-predicate-02.png)
+   ![Indicadores de opção](assets/csf-options-predicate-02.png)
 
-1. Selecione **Done** para salvar sua configuração.
-1. Navegue até o console apropriado (neste exemplo, **Sites**) e abra o painel **Pesquisar - Filtros**. Os formulários de pesquisa recém-definidos, juntamente com as várias opções, estarão visíveis. Selecione a opção necessária para ver os resultados da pesquisa.
+1. Selecionar **Concluído** para salvar sua configuração.
+1. Navegue até o console apropriado (neste exemplo, **Sites**) e abra o **Pesquisar - Filtros** trilho. Os formulários de pesquisa recém-definidos, juntamente com as várias opções, estarão visíveis. Selecione a opção necessária para ver os resultados da pesquisa.
 
-   ![opções que estão sendo usadas](assets/csf-options-usage.png)
+   ![opções em uso](assets/csf-options-usage.png)
 
 
 ## Permissões de usuário {#user-permissions}
 
-A tabela a seguir lista as permissões necessárias para executar ações de edição, exclusão e pré-visualização em formulários de pesquisa.
+A tabela a seguir lista as permissões necessárias para executar ações de edição, exclusão e visualização em formulários de pesquisa.
 
 <table>
  <thead>
   <tr>
    <td><strong>Ação</strong></td>
-   <td><strong>Permissões </strong></td>
+   <td><strong>Permissões</strong></td>
   </tr>
  </thead>
  <tbody>
   <tr>
    <td>Editar </td>
-   <td>Permissões de leitura e gravação no nó <code>/apps </code>.</td>
+   <td>Permissões de leitura e gravação no <code>/apps </code>nó .</td>
   </tr>
   <tr>
    <td>Excluir</td>
-   <td>Permissões de Leitura, Gravação e Exclusão no nó <code>/apps</code></td>
+   <td>Permissões de Leitura, Gravação e Exclusão no <code>/apps</code> nó</td>
   </tr>
   <tr>
    <td>Visualizar</td>
-   <td>Permissões de Leitura, Gravação e Exclusão no nó <code>/var/dam/content</code>.<br /> Permissões de leitura e gravação no  <code>/apps</code> nó.</td>
+   <td>Permissões de Leitura, Gravação e Exclusão no <code>/var/dam/content</code> nó .<br /> Permissões de leitura e gravação no <code>/apps</code> nó .</td>
   </tr>
  </tbody>
 </table>

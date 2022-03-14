@@ -1,20 +1,19 @@
 ---
 title: Verificando o status da Lista de permissões de IP
 description: Verificando o status da Lista de permissões de IP
-translation-type: tm+mt
-source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
+exl-id: 5ddea04f-3720-4663-90a8-9399019bfcbe
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
-
 # Verificando o status da Lista de permissões de IP {#check-allow-list-status}
 
 Siga as etapas abaixo para determinar o status das atualizações na sua Lista de permissões de IP:
 
-1. Clique no ícone Status da Lista de permissões IP na tabela da tela **Ambientes** e selecione **Listas de permissões IP**.
+1. Clique no ícone Status da Lista de permissões IP na tabela **Ambientes** e selecione **LISTAS DE PERMISSÕES de IP** página.
 
 1. O Cloud Manager exibirá um dos seguintes status, conforme mencionado na seção abaixo.
 
@@ -31,12 +30,12 @@ Estas são as definições de status que aparecerão em uma Lista de permissões
    * O status permanecerá com Falha até que todas as falhas sejam apagadas. O usuário deve selecionar o ícone de nova tentativa ao lado do status para limpar a falha.
    * O usuário não poderá atualizar ou excluir a Lista de permissões IP enquanto o status for Failed.
 
-* **Excluindo**: A solicitação de exclusão está em andamento. Isto implica a não aplicação de todos os serviços. Cada Desaplicação será listada juntamente com Não Iniciado/Em Andamento/Concluído ou Falha.
+* **Exclusão**: A solicitação de exclusão está em andamento. Isto implica a não aplicação de todos os serviços. Cada Desaplicação será listada juntamente com Não Iniciado/Em Andamento/Concluído ou Falha.
 Quando a operação Delete for concluída, a Lista de permissões IP irá:
    * Não é mais exibido na tabela de Lista de permissões de IP.
    * Não pode mais ser aplicado a nenhum serviço no programa no Cloud Manager.
 
-* **Falha** na Exclusão: Falha em um ou mais processos de desaplicação em uma operação de exclusão. Cada Desaplicação será listada juntamente com Concluído ou Falha.
+* **Falha ao Excluir**: Falha em um ou mais processos de desaplicação em uma operação de exclusão. Cada Desaplicação será listada juntamente com Concluído ou Falha.
 
    * O status será Delete Failed (Falha na exclusão), mesmo se uma não aplicação falhar.
    * O status permanecerá Delete Failed até que todas as falhas sejam apagadas. O usuário deve selecionar Excluir no **...** na extremidade direita da linha da tabela para limpar qualquer falha.
@@ -44,12 +43,11 @@ Quando a operação Delete for concluída, a Lista de permissões IP irá:
 
 ## Configurações de CDN pré-existentes para Listas de permissões IP {#pre-existing-cdn}
 
-Os clientes com ambientes que incluem configurações de CDN pré-existentes para Listas de permissões de IP, certificados SSL ou nomes de domínio personalizados verão a seguinte mensagem na página de detalhes **Lista de permissões de IP** e **Ambiente**. A mensagem exibida na interface do usuário desaparecerá assim que o cliente migrar totalmente todas as configurações de ambiente pré-existentes por meio da interface do usuário e talvez demore de 1 a 2 dias úteis para a mensagem desaparecer.
+Os clientes com ambientes que incluem configurações de CDN pré-existentes para Listas de permissões de IP, certificados SSL ou nomes de domínio personalizados verão a seguinte mensagem na **LISTA DE PERMISSÕES IP** e **Ambiente** página de detalhes. A mensagem exibida na interface do usuário desaparecerá assim que o cliente migrar totalmente todas as configurações de ambiente pré-existentes por meio da interface do usuário e talvez demore de 1 a 2 dias úteis para a mensagem desaparecer.
 
 >[!NOTE]
->Para visualizar e gerenciar as configurações pré-existentes, elas devem ser adicionadas por meio da interface do usuário. Consulte [Adicionar uma Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) para obter mais detalhes.
+>Para visualizar e gerenciar as configurações pré-existentes, elas devem ser adicionadas por meio da interface do usuário. Consulte [Adicionar uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) para obter mais detalhes.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
-

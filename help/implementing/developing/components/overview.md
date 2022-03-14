@@ -5,13 +5,13 @@ exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Visão geral dos componentes {#components-overview}
 
-Esta página fornece uma visão geral dos componentes do Adobe Experience Manager (AEM), como aqueles [usados para criação de página](/help/sites-cloud/authoring/fundamentals/components.md).
+Esta página fornece uma visão geral dos componentes do Adobe Experience Manager (AEM), como esses [usado para criação de página](/help/sites-cloud/authoring/fundamentals/components.md).
 
 ## O que são Componentes? {#what-are-components}
 
@@ -26,7 +26,7 @@ Os componentes em AEM são:
 * Ter uma interface de usuário padronizada.
 * Ter um comportamento de edição que possa ser configurado.
 * Use caixas de diálogo que são criadas usando subelementos com base nos componentes da interface do Granite.
-* São desenvolvidas usando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR).
+* São desenvolvidos usando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR).
 * Pode ser desenvolvido para criar componentes personalizados que estendem a funcionalidade padrão.
 
 Como os componentes são modulares, você pode:
@@ -42,23 +42,23 @@ Cada componente AEM:
 * É uma coleção de scripts que executa completamente uma função específica.
 * Pode funcionar isoladamente, ou seja, dentro de AEM ou de um portal.
 
-## AEM Core Components {#aem-core-components}
+## Componentes principais do AEM {#aem-core-components}
 
-[Os Componentes principais AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) são um conjunto de componentes padronizados do WCM (Web Content Management, gerenciamento de conteúdo da Web) para AEM acelerar o tempo de desenvolvimento e reduzir o custo de manutenção de seus sites.
+[Os Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) são um conjunto de componentes padronizados do Web Content Management (WCM) para AEM a fim de acelerar o tempo de desenvolvimento e reduzir o custo de manutenção de seus sites.
 
-Os Componentes principais são fornecidos com o AEM como um Cloud Service e o [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) ilustra como implementar e usar componentes. Os componentes são fornecidos com todo o código-fonte e podem ser usados como estão ou como pontos de partida para componentes modificados ou estendidos.
+Os Componentes principais são fornecidos com AEM as a Cloud Service e a variável [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) ilustra como implementar e usar componentes. Os componentes são fornecidos com todo o código-fonte e podem ser usados como estão ou como pontos de partida para componentes modificados ou estendidos.
 
 ### Visualizando componentes disponíveis {#viewing-available-components}
 
-Para obter uma visão geral de todos os componentes disponíveis na instância do AEM, use o [Console de componentes](/help/sites-cloud/authoring/features/components-console.md).
+Para obter uma visão geral de todos os componentes disponíveis na sua instância do AEM, use o [Console de componentes](/help/sites-cloud/authoring/features/components-console.md).
 
 Como alternativa, você também pode usar o CRXDE Lite para obter uma lista de todos os componentes disponíveis no repositório.
 
-1. Em **[!UICONTROL CRXDE Lite]**, selecione **[!UICONTROL Ferramentas]** na barra de ferramentas, em seguida **[!UICONTROL Consulta]**, que abre a guia **[!UICONTROL Consulta]**.
+1. Em **[!UICONTROL CRXDE Lite]**, selecione **[!UICONTROL Ferramentas]** na barra de ferramentas, em seguida **[!UICONTROL Query]**, que abre o **[!UICONTROL Query]** guia .
 
-1. Na guia **[!UICONTROL Query]**, selecione `XPath` como **[!UICONTROL Type]**.
+1. No **[!UICONTROL Query]** guia , selecione `XPath` as **[!UICONTROL Tipo]**.
 
-1. No campo de entrada **[!UICONTROL Query]**, digite a seguinte string:
+1. No **[!UICONTROL Query]** campo de entrada, digite a seguinte string:
 
    `//element(*, cq:Component)`
 

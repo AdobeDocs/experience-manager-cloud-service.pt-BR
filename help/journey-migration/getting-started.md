@@ -1,10 +1,11 @@
 ---
 title: Introdução à Jornada de migração para AEM as a Cloud Service
-description: Inicie sua jornada de migração familiarizando-se com as noções básicas da mudança para AEM as a Cloud Service
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+description: Inicie sua jornada de migração ao familiarizar-se com as noções básicas da mudança para o AEM as a Cloud Service
+exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '568'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 

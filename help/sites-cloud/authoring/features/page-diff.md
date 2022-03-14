@@ -1,14 +1,13 @@
 ---
-title: 'Diferencial de páginas  '
+title: Diferencial de páginas
 description: O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 97%
 
 ---
-
 
 # Diferencial de páginas   {#page-diff}
 
@@ -24,7 +23,7 @@ O recurso de diferencial de página permite a comparação lado a lado convenien
 >
 >Consulte [Desenvolvimento e diff de página](/help/implementing/developing/introduction/page-diff.md#operation-details) para obter mais detalhes técnicos sobre este recurso.
 
-## Uso {#use}
+## Uso do {#use}
 
 O diferencial lado a lado pode comparar o seguinte:
 
@@ -35,7 +34,7 @@ O diferencial lado a lado pode comparar o seguinte:
 
 Consulte os respectivos tópicos sobre como iniciar o diferencial nesses contextos.
 
-### Apresentação das diferenças    {#presentation-of-differences}
+### Apresentação das diferenças   {#presentation-of-differences}
 
 Independentemente do conteúdo que está sendo comparado, a apresentação das diferenças permanece a mesma.
 
@@ -64,7 +63,7 @@ O diferencial detecta alterações no componente e no nível do HTML. Itens que 
 >
 >Ao comparar cópias de idiomas, o realce é desativado, pois, em uma tradução, tudo muda, e não seria benéfico realçar.
 
-### Tela cheia e ao sair    {#fullscreen-and-exiting}
+### Tela cheia e ao sair   {#fullscreen-and-exiting}
 
 Para se concentrar em um conteúdo específico, você pode clicar no ícone de tela inteira para qualquer &quot;lado&quot; da comparação lado a lado, ampliando o conteúdo até o tamanho da janela do navegador.
 
@@ -84,7 +83,7 @@ Você também pode optar por fechar a visualização em tela cheia clicando no �
 
 Você pode sair do diferencial lado a lado a qualquer momento clicando no botão Fechar do cabeçalho.
 
-## Limitações    {#limitations}
+## Limitações   {#limitations}
 
 Existem algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme o esperado.
 

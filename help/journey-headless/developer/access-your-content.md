@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '1353'
-ht-degree: 1%
+ht-degree: 8%
 
 ---
 
@@ -243,7 +243,7 @@ Antes de começar com queries no seu conteúdo, você precisa:
 
 * Ativar o terminal
    * Use Ferramentas -> Ativos -> GraphQL
-   * [Ativação do terminal GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
+   * [Habilitação do seu endpoint de GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
 
 * Instalar GraphiQL (se necessário)
    * Instalado como um pacote dedicado
@@ -350,7 +350,7 @@ Para obter todos os detalhes sobre o uso da API GraphQL da AEM, juntamente com a
 
 * Aprendendo a usar GraphQL com AEM
 * A estrutura do fragmento de conteúdo de amostra
-* Saiba como usar GraphQL com AEM - Conteúdo de amostra e consultas
+* Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas
 
 ## O que vem a seguir {#whats-next}
 
@@ -364,17 +364,17 @@ Agora que você aprendeu a acessar e consultar o conteúdo sem periféricos usan
    * [Bibliotecas GraphQL Java](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [Aprendendo a usar GraphQL com AEM](/help/headless/graphql-api/content-fragments.md)
-   * [Ativação do terminal GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
+   * [Habilitação do seu endpoint de GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
    * [Instalação da interface GraphiQL AEM](/help/headless/graphql-api/graphiql-ide.md)
 * [A estrutura do fragmento de conteúdo de amostra](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [Saiba como usar GraphQL com AEM - Conteúdo de amostra e consultas](/help/headless/graphql-api/sample-queries.md)
+* [Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas](/help/headless/graphql-api/sample-queries.md)
    * [Exemplo de consulta - Um único fragmento de cidade específico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
-   * [Exemplo de consulta para metadados - Lista os metadados para prêmios denominados GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
-   * [Consulta de exemplo - Todas as cidades com uma variável nomeada](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+   * [Exemplo de consulta para metadados - listar os metadados para prêmios denominados GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+   * [Exemplo de consulta - Todas as cidades com uma variação nomeada](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [Ativar a funcionalidade de fragmento de conteúdo no navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
    * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
    * [Saída JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Entenda o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [Geração de tokens de acesso para APIs do lado do servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-* [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Uma pequena série de tutoriais em vídeo que fornece uma visão geral do uso de AEM recursos headless, incluindo modelagem de conteúdo e GraphQL.
+* [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR) - Uma pequena série de tutoriais em vídeo que fornece uma visão geral do uso de AEM recursos headless, incluindo modelagem de conteúdo e GraphQL.

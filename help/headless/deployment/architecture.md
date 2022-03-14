@@ -2,13 +2,13 @@
 title: Arquitetura do AEM Headless
 description: Saiba mais sobre a arquitetura de alto nível do Adobe Experience Manager e sua relação com uma implantação headless. Entenda a função dos serviços de Autor, Visualização e Publicação do AEM e o padrão de implantação recomendado para aplicativos headless.
 feature: Content Fragments,GraphQL API
-source-git-commit: 64b2beb4af2297e19e39ad534856bce33ffcfcf8
-workflow-type: ht
+exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 
 ---
-
 
 # Arquitetura do AEM Headless
 
@@ -49,4 +49,3 @@ Outra opção para implantações headless é incorporar um serviço de **Visual
 1. É possível configurar uma versão de Visualização do aplicativo que se conecta ao serviço de Visualização.
 1. Depois que o conteúdo é revisado e aprovado, pode ser publicado no serviço de Publicação do AEM.
 1. Os usuários finais interagem com a versão de Produção do aplicativo. O aplicativo de Produção se conecta ao serviço de Publicação por meio do Dispatcher e usa as APIs GraphQL para solicitar e consumir conteúdo.
-

@@ -3,7 +3,7 @@ title: Criação de uma configuração - Configuração do headless
 description: Crie uma configuração como uma primeira etapa para começar a usar o headless no AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 100%
 

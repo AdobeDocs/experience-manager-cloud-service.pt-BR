@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
 workflow-type: tm+mt
 source-wordcount: '3058'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -66,20 +66,20 @@ Os recursos sem periféricos do AEM são baseados em alguns recursos principais.
 
 ### Modelos de fragmentos do conteúdo {#content-fragment-models}
 
-Os Modelos de fragmentos de conteúdo definem a estrutura dos dados e do conteúdo que você cria e gerencia no AEM. Eles servem como uma espécie de scaffolding para o seu conteúdo. Ao optar por criar o conteúdo, os autores selecionam entre os Modelos de fragmento de conteúdo definidos, que os orientam na criação do conteúdo.
+Os Modelos de fragmentos de conteúdo definem a estrutura dos dados e do conteúdo que você cria e gerencia no AEM. Eles servem como uma espécie de andaime para o conteúdo. Ao optar por criar o conteúdo, os autores selecionam entre os Modelos de fragmento de conteúdo definidos, que os orientam na criação do conteúdo.
 
 ### Fragmentos de conteúdo {#content-fragments}
 
-Os Fragmentos de conteúdo permitem que você crie, crie, prepare e publique conteúdo independente da página. Eles permitem que você prepare conteúdo pronto para uso em vários locais e em vários canais.
+Os fragmentos de conteúdo permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem que você deixe o conteúdo pronto para uso em vários locais e em vários canais.
 
-Os fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no formato JSON.
+Fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no formato JSON.
 
 ### APIs GraphQL e REST {#apis}
 
 Para modificar o conteúdo sem interrupções, o AEM oferece duas APIs robustas.
 
 * A API GraphQL permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
-* A API REST de ativos permite criar e modificar Fragmentos de conteúdo (e outros ativos).
+* A API REST do Assets permite criar e modificar Fragmentos de conteúdo (e outros ativos).
 
 Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada sem periféricos AEM. Ou consulte a [recursos adicionais](#additional-resources) para obter a documentação adicional.
 
@@ -277,7 +277,7 @@ Embora seja recomendável seguir para a próxima parte da jornada de desenvolvim
 
 * [jornada de tradução sem cabeçalho AEM](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia sem interface, como a AEM fornece conteúdo sem interface e como você pode traduzi-la.
 * [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Compreender AEM estrutura do as a Cloud Service
-* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.
+* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.
 * [Gerenciamento de conteúdo sem cabeçalho usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. A autenticação via AdobeID é necessária.
 * [WKND de guias de AEM - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este projeto do GitHub inclui aplicativos de exemplo que destacam AEM APIs GraphQL.
 * [Conceitos de criação](/help/sites-cloud/authoring/getting-started/concepts.md) - Documentação técnica do ambiente de criação de AEM, incluindo detalhes sobre a configuração de publicação do autor

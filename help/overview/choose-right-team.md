@@ -3,7 +3,7 @@ title: Pessoas certas, funções certas
 description: Pessoas certas, funções certas
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ Talvez você já tenha maioria das pessoas necessárias para executar uma implem
 | Função | Habilidades | Nível de capacidade | Qualidades |
 |--- |--- |--- |--- |
 | Gerenciador de Projetos | Certificação PMP, certificação ágil, experiência em gestão de riscos | Especialista | Justo, consistente, responsável, organizado, positivo, abordável, disposto a aceitar mudanças |
-| Scrum Master | Certificação ScrumMaster, certificação ágil, experiência em facilitação | Especialista | Consistente e criativo |
+| Scrum Principal | Certificação ScrumMaster, certificação ágil, experiência em facilitação | Especialista | Consistente e criativo |
 | Dono do produto | Certificação Agile, compreensão profunda das necessidades do negócio | Especialista | Equilibrado, confiante |
 | Líderes da TI para segurança, infraestrutura e ferramentas | Certificação em CISM, certificação Adobe Experience Manager Component Developer | Especialista | Orientados a detalhes |
 | Estrategistas/Usuários avançados | Proficiência no Adobe Experience Manager Sites | De iniciantes a especialistas | Tenazes, curiosos, minuciosos, abertos, dispostos a aceitar mudanças, colaborativos |
@@ -77,4 +77,4 @@ Agora que você sabe que funções são necessárias, examine o gráfico abaixo 
 
 >[!TIP]
 >
-> Saiba mais sobre a Adobe Experience Cloud e aproveite os recursos da [Experience League](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager) para obter certificação por meio do [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+> Saiba mais sobre a Adobe Experience Cloud e aproveite os recursos da [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) para obter certificação por meio do [Adobe Digital Learning](https://learning.adobe.com/certification.html).

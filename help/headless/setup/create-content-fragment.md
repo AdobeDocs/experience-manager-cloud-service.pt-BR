@@ -3,7 +3,7 @@ title: Criação de fragmentos de conteúdo - Configuração do headless
 description: Saiba como usar fragmentos de conteúdo do AEM para projetar, criar, preparar e usar conteúdo independente de página para entrega headless.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 100%
 

@@ -1,14 +1,13 @@
 ---
-title: 'Layout responsivo  '
+title: Layout responsivo
 description: O AEM permite que você crie um layout responsivo para suas páginas
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 99%
 
 ---
-
 
 # Layout responsivo   {#responsive-layout}
 
@@ -231,9 +230,9 @@ No modo de layout, é possível executar várias ações em uma grade:
    >
    >No exemplo acima, as ações flutuar e ocultar estão disponíveis porque este Contêiner de layout está aninhado em um Contêiner de layout pai.
 
-   * **Mostrar**
-componentesSelecione os componentes principais para mostrar a barra de ferramentas de ação com o 
-**Mostrar** opção de componentes ocultos. Neste exemplo, dois componentes estão ocultos.
+   * **Mostrar componentes**
+Selecione os componentes principais para mostrar a barra de ferramentas de ação com o 
+**Mostrar componentes ocultos** opção. Neste exemplo, dois componentes estão ocultos.
 
       ![Mostrar componentes](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Selecionar a opção **Mostrar componentes ocultos** exibirá em azul os componentes que estão ocultos no momento em suas posições originais.

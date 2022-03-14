@@ -1,10 +1,11 @@
 ---
 title: Cockpit do produto
 description: Trabalhar com o Cockpit do produto
-source-git-commit: 5d7c877c158994048c092f310274c01fd2bedbd1
+exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 

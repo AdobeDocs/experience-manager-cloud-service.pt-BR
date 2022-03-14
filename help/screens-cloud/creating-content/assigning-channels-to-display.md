@@ -1,15 +1,15 @@
 ---
-title: Atribuição de canal a uma exibição no Screens como Cloud Service
-description: Esta página descreve como atribuir um canal a uma exibição no Screens como um Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+title: Atribuir canal a uma exibição no Screens as a Cloud Service
+description: Esta página descreve como atribuir um canal a uma exibição no Screens as a Cloud Service.
+exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 19%
 
 ---
 
-
-# Atribuição de canal a uma exibição no Screens como Cloud Service {#assign-channel-displays-screens-cloud}
+# Atribuir canal a uma exibição no Screens as a Cloud Service {#assign-channel-displays-screens-cloud}
 
 Quando a configuração do projeto for concluída, você deverá atribuir o canal a uma exibição para visualizar o conteúdo.
 
@@ -28,13 +28,13 @@ Antes de executar as etapas abaixo para atribuir um canal a uma exibição, é n
 
 Siga as etapas abaixo para atribuir um canal a uma exibição:
 
-1. Navegue até Provedor de serviços do Screens e selecione **Exibe** no painel de navegação esquerdo.
+1. Navegue até o Provedor de serviços do Screens e selecione **Exibições** no painel de navegação esquerdo.
 
-1. Clique em **Atribuir canal** à exibição.
+1. Clique em **Atribuir canal** para a exibição.
 
    ![imagem](/help/screens-cloud/assets/display/assignchannel-1.png)
 
-1. Preencha os seguintes campos da caixa de diálogo **Atribuir um canal**.
+1. Preencha os seguintes campos de **Atribuir um canal** caixa de diálogo.
 
    ![imagem](/help/screens-cloud/assets/display/assignchannel-2.png)
 
@@ -55,9 +55,9 @@ Siga as etapas abaixo para atribuir um canal a uma exibição:
    Você pode definir as seguintes opções:
 
    * **Nome**: Título do seu agendamento de recorrência.
-   * **Repita**: Escolha se o agendamento é executado Diariamente, Semanalmente, Mensalmente ou Anualmente.
-   * **Início**: A hora de início da sua programação.
-   * **Fim**: A hora de término da sua programação. Você pode defini-lo por tempo ou duração.
+   * **Repetir**: Escolha se o agendamento é executado Diariamente, Semanalmente, Mensalmente ou Anualmente.
+   * **Iniciar**: A hora de início da sua programação.
+   * **End**: A hora de término da sua programação. Você pode defini-lo por tempo ou duração.
    * **Hora**: O agendamento terminará em um horário especificado.
    * **Duração**: O agendamento é executado por uma duração específica em horas ou minutos.
 
@@ -68,4 +68,4 @@ Siga as etapas abaixo para atribuir um canal a uma exibição:
 
 ## O que vem a seguir {#whats-next}
 
-Agora, que você atribuiu o canal a uma exibição, você deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento [Instalando e configurando o Player do Screens para AEM como um Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Agora que você atribuiu o canal a uma exibição, deve continuar sua jornada as a Cloud Service do Screens ao próxima revisar o documento [Instalar e configurar o player do Screens para AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

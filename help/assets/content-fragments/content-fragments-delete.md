@@ -1,12 +1,12 @@
 ---
 title: Fragmentos de conteúdo - excluir considerações
 description: Revise essas importantes considerações antes de definir as políticas de exclusão dos Fragmentos de conteúdo no AEM. Os Fragmentos de conteúdo são uma ferramenta poderosa para fornecer conteúdo sem interface, e as implicações de excluí-los devem ser cuidadosamente consideradas.
-feature: Fragmentos de conteúdo
+feature: Content Fragments
 role: User
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 10%
 
 ---
@@ -23,19 +23,19 @@ Em relação às permissões de exclusão, os Fragmentos de conteúdo devem ser 
 
 1. **O Fragmento do conteúdo como uma única entidade.**
 
-   * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo  **e excluir um fragmento** inteiro.
-   * **Permissões**: A permissão Excluir pode ser atribuída por meio do Gerenciamento de usuários e/ou do Gerenciamento de grupos.  <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
+   * **Caso de uso**: Um usuário que precisa editar/atualizar um fragmento de conteúdo - **e excluir um fragmento inteiro**.
+   * **Permissões**: A permissão Excluir pode ser atribuída por meio do Gerenciamento de usuários e/ou do Gerenciamento de grupos. <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **As várias subentidades que compõem um fragmento de conteúdo; por exemplo, variações, subnós.**
 
    A operação básica do editor de fragmentos de conteúdo requer que esses subelementos transitórios possam ser excluídos. Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
 
-   * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo -  **sem ter permissão para excluir um fragmento** inteiro.
-   * **Permissões**: Consulte  [Permissões necessárias somente para a funcionalidade do editor](#permissions-required-for-editor-functionality-only).
+   * **Caso de uso**: Um usuário que precisa editar/atualizar um fragmento de conteúdo - **sem ter permissão para excluir um fragmento inteiro**.
+   * **Permissões**: Consulte [Permissões necessárias somente para a funcionalidade do editor](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
->Quando um usuário não tem permissões de exclusão, o editor de Fragmento de conteúdo opera no modo *somente leitura*. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>Quando um usuário não tem permissões de exclusão, o editor de Fragmento de conteúdo opera em *somente leitura* modo. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
@@ -59,9 +59,9 @@ Por exemplo, uma pasta que manterá todos os fragmentos de conteúdo, como:
 
 >[!CAUTION]
 >
->A configuração das permissões em `/content/dam` também é possível, pois todos os fragmentos de conteúdo são armazenados aqui.
+>Definir as permissões em `/content/dam` também é possível, pois todos os fragmentos de conteúdo são armazenados aqui.
 >
->No entanto, essa ação aplica as mesmas permissões de exclusão a *todos* outros tipos de ativos também.
+>No entanto, essa ação aplica as mesmas permissões de exclusão a *all* outros tipos de ativos também.
 
 Os pré-requisitos de permissões para permitir que um usuário e/ou grupo específico edite/atualize um fragmento de conteúdo são:
 
@@ -73,13 +73,13 @@ Os pré-requisitos de permissões para permitir que um usuário e/ou grupo espec
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* Para o nó `jcr:content`de todos os Fragmentos de conteúdo:
+* Para o `jcr:content`nó de todos os Fragmentos de conteúdo:
 
-   * `jcr:addChildNodes`,  `jcr:modifyProperties` e  `jcr:removeChildNodes`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`
 
-* Para todos os nós abaixo de `jcr:content` de todos os Fragmentos de conteúdo:
+* Para todos os nós abaixo `jcr:content` de todos os Fragmentos de conteúdo:
 
-   * `jcr:addChildNodes`,  `jcr:modifyProperties` e  `jcr:removeChildNodes`,  `jcr:removeNode`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
 
 <!-- There is no CRXDE Lite -->
 

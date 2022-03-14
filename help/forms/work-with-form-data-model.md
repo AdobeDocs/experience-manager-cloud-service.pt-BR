@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# Trabalhar com o Modelo de dados de formulário {#work-with-form-data-model}
+# Trabalhar com o modelo de dados de formulário {#work-with-form-data-model}
 
 ![integração de dados](do-not-localize/data-integeration.png)
 

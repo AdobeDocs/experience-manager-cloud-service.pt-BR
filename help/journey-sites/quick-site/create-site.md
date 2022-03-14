@@ -1,13 +1,13 @@
 ---
 title: Criar Site a partir de Modelo
 description: Saiba como criar rapidamente um novo site de AEM usando um modelo de site.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 0%
 
 ---
-
 
 # Criar Site a partir de Modelo {#create-site-from-template}
 
@@ -162,7 +162,7 @@ Para que o desenvolvedor de front-end visualize as personalizações usando o co
 
    ![Adicionar ao grupo](assets/add-to-group.png)
 
-1. Toque ou clique **Salvar e fechar**.
+1. Toque ou clique em **Salvar e fechar**.
 
 Agora você concluiu a configuração do . Os autores de conteúdo agora podem começar a criar conteúdo na preparação do site e começar a personalizar o front-end na próxima etapa da jornada.
 

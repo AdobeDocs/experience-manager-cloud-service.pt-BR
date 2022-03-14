@@ -1,16 +1,16 @@
 ---
-title: Gerenciamento de pipeline
+title: Gerenciar pipelines
 description: Saiba como gerenciar seus pipelines existentes, incluindo edição, execução e exclusão.
 index: true
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Gerenciamento de pipeline {#managing-pipelines}
+# Gerenciar pipelines {#managing-pipelines}
 
 Saiba como gerenciar seus pipelines existentes, incluindo edição, execução e exclusão.
 

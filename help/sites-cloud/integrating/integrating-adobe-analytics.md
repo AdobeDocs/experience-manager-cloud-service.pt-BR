@@ -16,7 +16,7 @@ ht-degree: 4%
 Integrar o Adobe Analytics e AEM as a Cloud Service permite rastrear a atividade da página da Web. A integração exige:
 
 * usando a interface do usuário de toque para criar uma configuração do Analytics em AEM as a Cloud Service.
-* adicionar e configurar o Adobe Analytics como uma extensão no [Adobe Launch](#analytics-launch). Para obter mais detalhes sobre o Adobe Launch, consulte [esta página](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
+* adicionar e configurar o Adobe Analytics como uma extensão em [Adobe Launch](#analytics-launch). Para obter mais detalhes sobre o Adobe Launch, consulte [esta página](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
 Comparado às versões anteriores do AEM, o suporte à estrutura não é fornecido na Configuração do Analytics em AEM as a Cloud Service. Em vez disso, agora é feito por meio do Adobe Launch, que é a ferramenta de fato para instrumentar um site AEM com recursos do Analytics (bibliotecas JS). No Adobe Launch, uma propriedade é criada, onde a extensão Adobe Analytics pode ser configurada e as regras são criadas para enviar dados ao Adobe Analytics. O Adobe Launch substituiu a tarefa de análise fornecida pelo sitecatalyst.
 
@@ -26,17 +26,17 @@ Comparado às versões anteriores do AEM, o suporte à estrutura não é forneci
 
 ## Criação da configuração do Adobe Analytics {#analytics-configuration}
 
-1. Navegue até **Ferramentas** → **Cloud Services**.
-2. Selecione **Adobe Analytics**.
-   ![Janela ](assets/analytics_screen2.png "do Adobe AnalyticsJanela do Adobe Analytics")
-3. Selecione o botão **Create**.
+1. Navegar para **Ferramentas** → **Cloud Services**.
+2. Selecionar **Adobe Analytics**.
+   ![Janela Adobe Analytics](assets/analytics_screen2.png "Janela Adobe Analytics")
+3. Selecione o **Criar** botão.
 4. Preencha os detalhes (veja abaixo) e clique em **Connect**.
 
 ### Parâmetros de configuração {#configuration-parameters}
 
 Os campos de configuração presentes na janela Configuração do Adobe Analytics são:
 
-![Parâmetros ](assets/properties_field1.png "de configuração")
+![Parâmetros de configuração](assets/properties_field1.png "Parâmetros de configuração")
 
 | Propriedade | Descrição |
 |---|---|
@@ -49,13 +49,13 @@ Os campos de configuração presentes na janela Configuração do Adobe Analytic
 
 ### Adicionar uma configuração a um site {#add-configuration}
 
-Para aplicar uma configuração da interface de toque a um site, acesse: **Sites** → **Selecione qualquer página de site** → **Propriedades** → **Avançado** → **Configuração** → selecione o locatário de configuração.
+Para aplicar uma configuração da interface de toque a um site, acesse: **Sites** → **Selecionar qualquer página do site** → **Propriedades** → **Avançado** → **Configuração** → selecione o locatário de configuração.
 
 ## Integração do Adobe Analytics em sites AEM usando o Adobe Launch {#analytics-launch}
 
 O Adobe Analytics pode ser adicionado como uma extensão na propriedade do Launch. As regras podem ser definidas para executar o mapeamento e fazer uma chamada de postagem para o Adobe Analytics:
 
-* Assista a [este vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) para saber como configurar a extensão do Analytics no Launch para um site básico.
+* Observar [este vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html) para saber como configurar a extensão do Analytics no Launch para um site básico.
 
 * Consulte [esta página](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html) para obter detalhes sobre como criar regras e enviar dados para o Adobe Analytics.
 

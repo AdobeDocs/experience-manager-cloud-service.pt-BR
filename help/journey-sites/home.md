@@ -5,7 +5,7 @@ exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -41,6 +41,6 @@ As seguintes Jornadas de documentação estão disponíveis para os tópicos do 
 |---|---|---|
 | [Jornada Rápida de Criação de Site](/help/journey-sites/quick-site/overview.md) | Comece aqui para obter uma jornada guiada através da ferramenta de criação rápida de sites AEM fácil de usar para simplificar o desenvolvimento front-end do seu site AEM e personalizar rapidamente seu site sem conhecimento AEM de back-end. | Desenvolvedores de front-end |
 | [Jornada do complemento Demonstrações de referência](/help/journey-sites/demos-add-on/overview.md) | Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de Demonstrações de Referência de AEM a um ambiente de sandbox com configuração mínima de AEM e poder testar os recursos avançados de AEM com exemplos avançados com base nas práticas recomendadas. | Administrador do sistema |
-| [Jornada de Tradução de Sites](/help/journey-sites/translation/overview.md) | Saiba mais sobre as tecnologias AEM Sites, como elas podem ser usadas em seu projeto e como criar e atualizar projetos de tradução em AEM de A a Z. | Especialistas em tradução |
+| [Jornada de tradução de sites](/help/journey-sites/translation/overview.md) | Saiba mais sobre as tecnologias AEM Sites, como elas podem ser usadas em seu projeto e como criar e atualizar projetos de tradução em AEM de A a Z. | Especialistas em tradução |
 
 Fique ligado para [jornadas futuras que abordarão funções adicionais.](/help/journey-documentation/documentation-journeys.md#journeys)

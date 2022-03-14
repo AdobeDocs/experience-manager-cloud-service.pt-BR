@@ -1,17 +1,17 @@
 ---
-title: Usar Ocultar condições
+title: Uso de condições de ocultação
 description: As condições Ocultar podem ser usadas para determinar se um recurso de componente é renderizado ou não.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Usar Ocultar Condições {#using-hide-conditions}
+# Uso de condições de ocultação {#using-hide-conditions}
 
-As condições Ocultar podem ser usadas para determinar se um recurso de componente é renderizado ou não. Um exemplo disso seria quando um autor de modelo configura o Componente principal [list component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) no [editor de modelo](/help/sites-cloud/authoring/features/templates.md) e decide desabilitar as opções para criar a lista com base em páginas filhas. Desativar essa opção na caixa de diálogo de design define uma propriedade para que, quando o componente de lista for renderizado, a condição de ocultação seja avaliada e a opção para mostrar páginas filhas não seja exibida.
+As condições Ocultar podem ser usadas para determinar se um recurso de componente é renderizado ou não. Um exemplo disso seria quando um autor de modelo configura o Componente principal [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) no [editor de modelos](/help/sites-cloud/authoring/features/templates.md) e decide desabilitar as opções para criar a lista com base em páginas filhas. Desativar essa opção na caixa de diálogo de design define uma propriedade para que, quando o componente de lista for renderizado, a condição de ocultação seja avaliada e a opção para mostrar páginas filhas não seja exibida.
 
 ## Visão geral {#overview}
 
@@ -25,11 +25,11 @@ Ao usar condições de ocultação, administradores, desenvolvedores e superusu�
 
 ## Detalhes de implementação e uso {#implementation-and-usage-details}
 
-`com.adobe.granite.ui.components.FilteringResourceWrapper` O é responsável por filtrar os recursos com base na existência e no valor da  `granite:hide` propriedade, localizada no campo a ser filtrado. A implementação de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` inclui uma instância de `FilteringResourceWrapper.`
+`com.adobe.granite.ui.components.FilteringResourceWrapper` é responsável por filtrar os recursos com base na existência e no valor da variável `granite:hide` , localizada no campo a ser filtrado. A execução do `/libs/cq/gui/components/authoring/dialog/dialog.jsp` inclui uma instância de `FilteringResourceWrapper.`
 
-A implementação usa o Granite [ELResolver API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) e adiciona uma variável personalizada `cqDesign` por meio do ExpressionCustomizer.
+A implementação utiliza o Granite [API ELResolver](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) e adiciona uma `cqDesign` variável personalizada por meio do ExpressionCustomizer.
 
-Aqui estão alguns exemplos de condições de ocultação em um nó de design localizado em `etc/design` ou como uma Política de conteúdo.
+Veja alguns exemplos de condições de ocultação em um nó de design localizado em `etc/design` ou como uma Política de conteúdo.
 
 ```
 ${cqDesign.myProperty}
@@ -49,9 +49,9 @@ Ao definir sua expressão de ocultação, lembre-se:
 
 ## Exemplo {#example}
 
-Exemplos de condições de ocultação podem ser encontrados em todo o AEM e nos [componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em particular. Por exemplo, considere o [componente principal da lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) como implementado no tutorial [WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Exemplos de condições de ocultação podem ser encontrados em todo o AEM e no [componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em especial. Por exemplo, considere a variável [componente principal da lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) conforme implementado no [Tutorial WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
-[Usando o editor](/help/sites-cloud/authoring/features/templates.md) de modelo, o autor do modelo pode definir na caixa de diálogo de design quais opções do componente de lista estão disponíveis para o autor da página. Opções como permitir que a lista seja uma lista estática, uma lista de páginas filhas, uma lista de páginas marcadas etc. pode ser ativado ou desativado.
+[Uso do editor de modelo](/help/sites-cloud/authoring/features/templates.md), o autor do modelo pode definir na caixa de diálogo de design quais opções do componente de lista estão disponíveis para o autor da página. Opções como permitir que a lista seja uma lista estática, uma lista de páginas filhas, uma lista de páginas marcadas etc. pode ser ativado ou desativado.
 
 Se um autor de modelo optar por desativar a opção páginas filhas, uma propriedade de design será definida e uma condição de ocultação será avaliada em relação a ela, o que fará com que a opção não seja renderizada para o autor da página.
 
@@ -59,20 +59,20 @@ Se um autor de modelo optar por desativar a opção páginas filhas, uma proprie
 
    ![Listar configurações do componente](assets/hide-conditions-list-settings.png)
 
-1. Na caixa de diálogo de design do componente principal da lista, o autor do modelo pode escolher a opção **Desativar filhos** para impedir que a opção de gerar uma lista baseada em páginas filhas seja mostrada ao autor da página.
+1. Na caixa de diálogo de design do componente principal da lista, o autor do modelo pode escolher a opção **Desativar Filhos** para impedir que a opção de gerar uma lista baseada em páginas filhas seja exibida ao autor da página.
 
    ![Caixa de diálogo Design do componente de lista](assets/hide-conditions-list-design.png)
 
-1. Um nó de política é criado em `/conf/wknd/settings/wcm/policies/wknd/components/list` com uma propriedade `disableChildren` definida como `true`.
+1. Um nó de política é criado em `/conf/wknd/settings/wcm/policies/wknd/components/list` com uma propriedade `disableChildren` defina como `true`.
 
    ![Estrutura do nó da condição de ocultação](assets/hide-conditions-node-structure.png)
 
-1. A condição de ocultação é definida como o valor de uma propriedade `granite:hide` no nó de propriedade da caixa de diálogo `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
+1. A condição de ocultação é definida como o valor de um `granite:hide` propriedade no nó de propriedade da caixa de diálogo `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
 
    ![Avaliação da condição de ocultação](assets/hide-conditions-evaluation.png)
 
-1. O valor de `disableChildren` é extraído da configuração do design e a expressão `${cqDesign.disableChildren}` é avaliada como `false`, o que significa que a opção não será renderizada como parte do componente.
+1. O valor de `disableChildren` é extraída da configuração do design e da expressão `${cqDesign.disableChildren}` resulta em `false`, o que significa que a opção não será renderizada como parte do componente.
 
-1. A opção **Páginas secundárias** não é mais renderizada para o autor da página ao usar o componente de lista.
+1. A opção **Páginas secundárias** não é mais renderizado para o autor da página ao usar o componente de lista.
 
    ![Componente de lista com opção filho desativada](assets/hide-conditions-child-disabled.png)

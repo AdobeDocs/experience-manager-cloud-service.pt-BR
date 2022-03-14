@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -55,7 +55,7 @@ Por exemplo, você pode ter os seguintes Modelos de fragmento de conteúdo defin
 
 * Cidade
 * Empresa
-* Person
+* Pessoa
 * Prêmios
 
 Parece muito simples, mas é claro que uma empresa tem um CEO e funcionários....E estas são todas pessoas, cada uma definida como uma Pessoa.
@@ -127,7 +127,7 @@ Agora que você aprendeu sobre referências e estrutura nos Fragmentos de conte�
 
 
 * Guias de introdução
-   * [Criação de uma pasta de ativos - Configuração sem cabeçalho](/help/headless/setup/create-assets-folder.md)
+   * [Criação de uma pasta de ativos - Configuração do headless](/help/headless/setup/create-assets-folder.md)
 
 * Jornada do arquiteto de conteúdo do AEM Headless
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# Adicionar regras a um formulário adaptável {#adaptive-forms-rule-editor}
+# Adicionar regras a um Formulário adaptável {#adaptive-forms-rule-editor}
 
 ## Visão geral {#overview}
 

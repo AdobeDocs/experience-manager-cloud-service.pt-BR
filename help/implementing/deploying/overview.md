@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
 source-wordcount: '3364'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -106,7 +106,7 @@ Após a mudança para a nova versão do aplicativo:
    * Configuração sensível ao contexto (qualquer item abaixo de `/conf`) (adicionar, modificar, remover)
    * Scripts (pacotes podem acionar hooks de instalação em vários estágios do processo de instalação do pacote). Consulte a [Documentação do Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sobre ganchos de instalação. Observe que AEM CS usa atualmente o Filevault versão 3.4.0, que limita os ganchos de instalação para usuários administradores, usuários do sistema e membro do grupo de administradores).
 
-É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author or install.publish em `/apps`. A reestruturação para refletir esta separação foi efetuada no AEM 6.5 e podem ser obtidas informações pormenorizadas sobre a reestruturação de projetos recomendada no [AEM documentação 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author or install.publish em `/apps`. A reestruturação para refletir esta separação foi efetuada no AEM 6.5 e podem ser obtidas informações pormenorizadas sobre a reestruturação de projetos recomendada no [AEM documentação 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=pt-BR)
 
 >[!NOTE]
 >Os pacotes de conteúdo são implantados em todos os tipos de ambiente (desenvolvimento, estágio, produção). Não é possível limitar a implantação a um ambiente específico. Esta limitação está em vigor para garantir a opção de uma execução de teste de execução automatizada. O conteúdo específico de um ambiente requer instalação manual por meio de [Gerenciador de pacotes.](/help/implementing/developing/tools/package-manager.md)
@@ -287,7 +287,7 @@ Se forem feitas alterações nos índices, é importante que a versão Azul cont
 
 Se uma falha for relatada ou detectada após a implantação, é possível que uma reversão para a versão Azul seja necessária. Seria sensato garantir que o código azul seja compatível com quaisquer novas estruturas criadas pela versão verde, uma vez que as novas estruturas (qualquer conteúdo mutável) não serão revertidas. Se o código antigo não for compatível, as correções precisarão ser aplicadas nas versões subsequentes do cliente.
 
-## Runmodes {#runmodes}
+## Modos de execução {#runmodes}
 
 Nas soluções de AEM existentes, os clientes têm a opção de executar instâncias com modos de execução arbitrários e aplicar a configuração OSGI ou instalar pacotes OSGI a essas instâncias específicas. Os modos de execução definidos normalmente incluem o *service* (criar e publicar) e o ambiente (dev, stage, prod).
 

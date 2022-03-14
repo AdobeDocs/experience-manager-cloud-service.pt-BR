@@ -1,13 +1,13 @@
 ---
 title: Desenvolvimento de sites com o pipeline front-end
 description: Com o pipeline front-end, mais independência é dada aos desenvolvedores front-end e o processo de desenvolvimento pode ganhar uma velocidade substancial.
-source-git-commit: fd6a17a199b6cae03e91eba2ee938a03a326e612
+exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Desenvolvimento de sites com o pipeline front-end {#developing-site-with-front-end-pipeline}
 

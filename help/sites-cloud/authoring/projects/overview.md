@@ -11,11 +11,11 @@ ht-degree: 78%
 
 # Projetos {#projects}
 
-Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Mosaicos podem incluir informações do projeto e da equipe, ativos, fluxos de trabalho e outros tipos de informações, conforme descrito detalhadamente em [Mosaicos de projetos.](#project-tiles)
+Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Mosaicos podem incluir informações do projeto e da equipe, ativos, fluxos de trabalho e outros tipos de informações, conforme descrito detalhadamente em [Mosaicos do projeto.](#project-tiles)
 
 >[!CAUTION]
 >
->Para que os usuários em projetos vejam outros usuários/grupos ao usar a funcionalidade Projetos, como criar projetos, criar tarefas/fluxos de trabalho, ver e gerenciar a equipe, esses usuários precisam ter acesso de leitura em `/home/users` e `/home/groups`. A maneira mais fácil de implementar isso é conceder ao grupo **projects-users** acesso de leitura a `/home/users` e `/home/groups`.
+>Para que os usuários em projetos vejam outros usuários/grupos ao usar a funcionalidade Projetos, como criar projetos, criar tarefas/fluxos de trabalho, ver e gerenciar a equipe, esses usuários precisam ter acesso de leitura no `/home/users` e `/home/groups`. A maneira mais fácil de implementar isso é dar **projects-users** acesso de leitura de grupo para `/home/users` e `/home/groups`.
 
 Como usuário, você pode fazer o seguinte:
 
@@ -83,7 +83,7 @@ O bloco **Experiências** permite adicionar um aplicativo para dispositivos móv
 
 ![Experiências](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Os ícones indicam que tipo de experiência é representada: site, aplicativo móvel ou publicação. Adicione experiências tocando ou clicando na divisa inferior e tocando em **Adicionar experiência** e selecionando o tipo de experiência.
+Os ícones indicam que tipo de experiência é representada: site, aplicativo móvel ou publicação. Adicione experiências tocando ou clicando na divisa para baixo e tocando **Adicionar experiência** e selecionando o tipo de experiência.
 
 ![Adicionar uma experiência](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -115,7 +115,7 @@ O bloco Tarefa de tradução é onde você inicia uma tradução e visualiza o s
 
 ![Trabalho de tradução](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Clique nas reticências na parte inferior do cartão **Tarefa de Tradução** para exibir os ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
+Clique nas reticências na parte inferior da **Tarefa de tradução** cartão para exibir os ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
 
 ![Detalhes do trabalho de tradução](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
@@ -157,7 +157,7 @@ O AEM acompanha três modelos diferentes prontos para uso:
 
 * Um projeto simples - Uma amostra de referência para quaisquer projetos que não se encaixem em outras categorias (uma categoria genérica). Ele inclui três funções básicas (Proprietários, Editores e Observadores) e quatro fluxos de trabalho (Aprovação de projeto, Solicitar lançamento, Solicitar página de aterrissagem e Solicitar email).
 * Um projeto de mídia - Um projeto de amostra de referência para atividades relacionadas à mídia. Ele inclui várias funções de projeto relacionadas a mídia (Fotógrafos, Editores, Redatores, Designers, Proprietários e Observadores). Também é necessário solicitar fluxo de trabalho de cópia para solicitar e revisar o texto.
-* Um [projeto de tradução](/help/sites-cloud/administering/translation/overview.md) - Uma amostra de referência para gerenciar atividades relacionadas à tradução. Ele inclui três funções básicas (Proprietários, Editores e Observadores). Também inclui dois fluxos de trabalho que são acessados na interface de usuário de Fluxos de trabalho.
+* A [projeto de tradução](/help/sites-cloud/administering/translation/overview.md) - Uma amostra de referência para a gestão de atividades relacionadas com a tradução. Ele inclui três funções básicas (Proprietários, Editores e Observadores). Também inclui dois fluxos de trabalho que são acessados na interface de usuário de Fluxos de trabalho.
 
 Com base no modelo selecionado, você tem diferentes opções disponíveis, principalmente em relação a funções de usuário e fluxos de trabalho.
 

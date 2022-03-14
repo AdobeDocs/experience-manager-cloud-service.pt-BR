@@ -43,7 +43,7 @@ Por exemplo, suponha que você criou um Perfil de imagem do Dynamic Media e o at
 
 Você pode executar o fluxo de trabalho de reprocessamento em um ativo para o qual o processamento falhou na primeira vez. Mesmo que você não tenha editado um perfil de imagem ou de vídeo ou já tenha aplicado um perfil de imagem ou de vídeo, ainda poderá executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
 
-Opcionalmente, é possível ajustar o tamanho do lote do workflow de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Ao executar o _Scene7: Reprocessar ativos_ em uma pasta, os ativos são agrupados em lotes e enviados ao servidor da Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados em [!DNL Adobe Experience Manager]. Se o tamanho do lote for grande, você pode experimentar um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta para o servidor do Dynamic Media.
+Opcionalmente, é possível ajustar o tamanho do lote do workflow de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Quando você executa a variável _Scene7: Reprocessar ativos_ em uma pasta, os ativos são agrupados em lotes e enviados ao servidor da Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados em [!DNL Adobe Experience Manager]. Se o tamanho do lote for grande, você pode experimentar um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta para o servidor do Dynamic Media.
 
 Consulte [Ajuste o tamanho do lote do workflow de reprocessamento](#adjusting-load).
 

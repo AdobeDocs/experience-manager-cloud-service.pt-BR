@@ -1,12 +1,12 @@
 ---
 title: Implementação do Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da implementação do Adobe Experience Manager as a Cloud Service
-landing-page-description: Saiba como personalizar sua implantação as a Cloud Service AEM, incluindo tópicos de desenvolvimento e implantação.
+landing-page-description: Saiba como personalizar a implantação do AEM as a Cloud Service, incluindo tópicos sobre desenvolvimento e implantação.
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 82%
+ht-degree: 97%
 
 ---
 
@@ -26,14 +26,14 @@ Esta página lista os recursos de autoajuda sobre implementação do Experience 
 
 | Guia do usuário | Descrição |
 |---|---|
-| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, arquitetura etc. |
+| [Visão geral](/help/overview/home.md) | Este guia fornece uma visão geral do Experience Manager as a Cloud Service, incluindo uma introdução, terminologia, arquitetura, etc. |
 | [Notas de versão](/help/release-notes/home.md) | Este guia fornece informações importantes sobre a versão mais recente do Experience Manager as a Cloud Service, incluindo novidades, problemas conhecidos e recursos obsoletos e removidos. |
 | [Guia do usuário de segurança](/help/security/home.md) | Saiba mais sobre tópicos importantes de segurança relacionados ao Experience Manager as a Cloud Service. |
 | [Integração](/help/onboarding/home.md) | Este guia fornece um resumo de como começar a usar o Experience Manager as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados. |
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como administrar e criar com o Experience Manager Sites as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service. |
 | [Implementação do Guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando AEM recursos avançados. |
-| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada com os recursos avançados e flexíveis do AEM para se preparar para o seu primeiro projeto sem periféricos. |
+| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada com os recursos headless avançados e flexíveis do AEM para se preparar para o seu primeiro projeto headless. |
 | [Migração para o AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Entenda a jornada de transição para o Cloud Service. |
 | [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar conectores ao Experience Manager as a Cloud Service. |
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção. |

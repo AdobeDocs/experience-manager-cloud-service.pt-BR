@@ -3,7 +3,7 @@ title: Criar uma solicitação de API - Configuração Headless
 description: Saiba como usar a API GraphQL para a entrega headless do conteúdo do Fragmento de conteúdo e a API REST do AEM Assets para gerenciar Fragmentos de conteúdo.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 100%
 

@@ -1,14 +1,15 @@
 ---
 title: jornada do autor de conteúdo de comércio AEM
 description: Comece aqui para obter uma jornada guiada por meio da Criação de comércio AEM
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
-# jornada do autor de conteúdo AEM e comércio {#aem-commerce-author-journey}
+# Jornada de autor de conteúdo do AEM Content and Commerce {#aem-commerce-author-journey}
 
 Comece aqui para obter uma jornada guiada por meio de Conteúdo e Comércio AEM para saber como gerenciar as experiências do produto.
 

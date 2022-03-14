@@ -1,13 +1,13 @@
 ---
 title: Ativar o AEM Screens para o seu site de demonstração
 description: Saiba mais sobre as etapas para habilitar a experiência as a Cloud Service completa da AEM Screens em seu site de demonstração.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2666'
 ht-degree: 0%
 
 ---
-
 
 # Ativar o AEM Screens para o seu site de demonstração {#enable-screens}
 

@@ -1,13 +1,13 @@
 ---
 title: Publicação de um canal no Screens as a Cloud Service
 description: Esta página descreve como publicar um canal no Screens as a Cloud Service.
-source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
+exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
 
 ---
-
 
 # Canais de publicação no Screens as a Cloud Service {#publish-channel-screens-cloud}
 
@@ -29,24 +29,24 @@ Este documento ajuda você a entender a publicação do conteúdo editado no pro
 
 Siga as etapas abaixo para publicar o canal:
 
-1. Navegue e selecione o canal em seu projeto, como **FirstDigitalExperience** —> **Channels** —> **LoopingChannelOne**.
+1. Navegue e selecione o canal em seu projeto, como **FirstDigitalExperience** —> **Canais** —> **LoopingChannelOne**.
 
    ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. Clique em **Gerenciar publicação** na barra de ações.
 
-1. Selecione **Ação** como **Publicar** e **Agendamento** como **Agora** no **Assistente para Gerenciar Publicação** e clique em **Próximo**.
+1. Selecione o **Ação** as **Publicar** e **Agendamento** as **Agora** do **Gerenciar assistente de publicação** e clique em **Próximo**.
 
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >Clique em **+ Incluir filhos** na barra de ações e desmarque todas as opções para publicar todos os módulos no seu projeto e clique em Adicionar para publicar. Por padrão, todas as caixas serão marcadas e você terá que desmarcar manualmente as caixas para publicar todos os módulos no seu projeto.
+   >Clique em **+ Incluir filhos** na barra de ações, desmarque todas as opções para publicar todos os módulos no projeto e clique em Adicionar para publicar. Por padrão, todas as caixas serão marcadas e você terá que desmarcar manualmente as caixas para publicar todos os módulos no seu projeto.
 
-1. Depois de selecionar o canal no assistente **Gerenciar publicação**, clique em **Publicar** para publicar o canal.
+1. Depois de selecionar o canal na **Gerenciar publicação** assistente, clique em **Publicar** para publicar o canal.
 
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## O que vem a seguir {#whats-next}
 
-Agora, que você publicou seus canais no projeto, você deve continuar seu Screens como uma jornada de Cloud Service, revisando o documento, [Instalando e configurando players no Screens como um Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).
+Agora, que você publicou seus canais no projeto, é necessário continuar sua jornada as a Cloud Service do Screens ao revisar o documento, [Instalação e configuração de players no Screens as a Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).

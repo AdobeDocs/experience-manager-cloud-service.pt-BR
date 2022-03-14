@@ -1,13 +1,13 @@
 ---
 title: Validar transferências de conteúdo
 description: Use a ferramenta Transferência de conteúdo para validar transferências de conteúdo
-source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
+exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '948'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Validar transferências de conteúdo {#validating-content-transfers}
 
@@ -157,7 +157,3 @@ Para verificar, escolha um caminho no relatório de validação e verifique se e
 Alguns caminhos dos digests de extração e assimilação são excluídos com o objetivo de manter o tamanho desses arquivos gerenciável, com o objetivo de poder calcular o resultado da validação da migração dentro de duas horas após a conclusão da assimilação.
 
 Os caminhos que atualmente excluímos dos digests incluem: `cqdam.text.txt` representações, nós em `/home`e nós dentro de `/jcr:system`.
-
-
-
-

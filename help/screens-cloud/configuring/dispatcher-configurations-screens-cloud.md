@@ -1,19 +1,19 @@
 ---
-title: Configurações do Dispatcher no Screens como um Cloud Service
-description: Esta página descreve as configurações do Dispatcher no Screens como um Cloud Service.
-source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
+title: Configurações do Dispatcher no Screens as a Cloud Service
+description: Esta página descreve as configurações do Dispatcher no Screens as a Cloud Service.
+exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
+# Configurações do Dispatcher no Screens as a Cloud Service {#dispatcher-configurations-screens-cloud}
 
-# Configurações do Dispatcher no Screens como um Cloud Service {#dispatcher-configurations-screens-cloud}
+Esta seção descreve as configurações do dispatcher para o Screens as a Cloud Service.
 
-Esta seção descreve as configurações do dispatcher para Screens como um Cloud Service.
-
-## Adicionar filtros e regras de cache no Dispatcher para o Screens como uma implantação do Cloud Service {#deployment}
+## Adicionar filtros e regras de cache no Dispatcher para implantação as a Cloud Service do Screens {#deployment}
 
 Permita os seguintes filtros e regras de cache nos dispatchers para as instâncias de publicação no Screens as a Cloud Service.
 
@@ -32,12 +32,12 @@ Permita os seguintes filtros e regras de cache nos dispatchers para as instânci
 
 ### Regras de cache {#cache-rules}
 
-* Adicione `/statfileslevel "10"` à seção `/cache` em `publish_farm.any`/.
+* Adicionar `/statfileslevel "10"` para `/cache` seção em `publish_farm.any`/.
 
    >[!NOTE]
    >Essa regra de cache oferece suporte ao armazenamento em cache de até 10 níveis a partir do ponto de cache e invalida quando o conteúdo é publicado, em vez de invalidar tudo. Você pode alterar esse nível com base no quão profundo sua estrutura de conteúdo está configurada.
 
-* Adicione o seguinte à seção `/invalidate` em `publish_farm.any`.
+* Adicione o seguinte a `/invalidate` seção em `publish_farm.any`.
 
    ```
    /0003 {
@@ -46,7 +46,7 @@ Permita os seguintes filtros e regras de cache nos dispatchers para as instânci
    }
    ```
 
-* Adicione as seguintes regras à seção `/rules` em `/cache` em publish_farm.any ou em um arquivo incluído de `publish_farm.any`.
+* Adicione as seguintes regras a `/rules` seção em `/cache` em publish_farm.any ou em um arquivo incluído de `publish_farm.any`.
 
    ```
    ## Allow Dispatcher Cache for Screens channels

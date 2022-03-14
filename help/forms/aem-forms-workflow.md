@@ -273,4 +273,4 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### Limpar instâncias do fluxo de trabalho {#purge-workflow-instances}
 
-Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do mecanismo de fluxo de trabalho, para que você possa limpar regularmente as instâncias de fluxo de trabalho concluídas ou em execução do repositório. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) limpeza de instâncias de fluxo de trabalho
+Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do mecanismo de fluxo de trabalho, para que você possa limpar regularmente as instâncias de fluxo de trabalho concluídas ou em execução do repositório. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=pt-BR) limpeza de instâncias de fluxo de trabalho

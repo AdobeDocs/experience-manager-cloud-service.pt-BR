@@ -1,15 +1,15 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0.
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
-
-# Notas de versão atuais para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais da versão atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
 
@@ -18,22 +18,22 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 >[!NOTE]
 >
->Consulte [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) para obter detalhes das atualizações de documentação não diretamente relacionadas a uma versão.
+>Consulte [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=pt-BR) para obter detalhes de atualizações de documentação não relacionadas diretamente a uma versão.
 
 ## Data de lançamento {#release-date}
 
-A Data de lançamento para [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 é 6 de maio de 2021.
+A data de lançamento para [!DNL Adobe Experience Manager] O as a Cloud Service 2021.4.0 é 6 de maio de 2021.
 A seguinte versão (2021.5.0) será lançada em 27 de maio de 2021.
 
 ## AEM fundação as a Cloud Service{#aem-as-a-cloud-service-foundation}
 
 ### Novidades {#what-is-new-foundation}
 
-* [Fluxo de trabalho da Árvore de conteúdo de publicação](/help/operations/replication.md#publish-content-tree-workflow)  - Um novo modelo de fluxo de trabalho e uma etapa proporcionam maior desempenho ao publicar hierarquias profundas de conteúdo.
+* [Fluxo de trabalho da Árvore de conteúdo de publicação](/help/operations/replication.md#publish-content-tree-workflow) - Um novo modelo de fluxo de trabalho e uma etapa proporcionam mais desempenho ao publicar hierarquias profundas de conteúdo.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Novidades em [!DNL Sites] {#what-is-new-sites}
+### Novidades do [!DNL Sites] {#what-is-new-sites}
 
 * Endpoints GraphQL - agora é possível habilitar a API GraphQL da AEM para configurações AEM Sites individuais e criar pontos de extremidade GraphQL personalizados para essas configurações usando uma nova interface do usuário do console GraphQL. A interface do usuário também permite o gerenciamento de pontos de extremidade GraphQL.
 
@@ -43,25 +43,25 @@ A seguinte versão (2021.5.0) será lançada em 27 de maio de 2021.
 
 * Modelos de conteúdo, novo tipo de dados de Espaço reservado de guia - o novo tipo de dados de Espaço reservado de guia permite agrupar tipos de dados em seções que serão renderizadas em guias no editor de fragmento de conteúdo.
 
-### Correções de erros em [!DNL Sites] {#bug-fixes-sites}
+### Correções de erros no [!DNL Sites] {#bug-fixes-sites}
 
 * Fragmentos de conteúdo - mover fragmentos de conteúdo ou pastas agora atualiza referências aninhadas dentro do fragmento (CQ-4320815)
 
 * GraphQL - As consultas persistentes agora oferecem suporte a endpoints definidos pelo usuário que são específicos das configurações do AEM Sites (CQ-4315928)
 
-## [!DNL Adobe Experience Manager Assets] como  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] como [!DNL Cloud Service] {#assets}
 
-### Novidades em [!DNL Assets] {#what-is-new-assets}
+### Novidades do [!DNL Assets] {#what-is-new-assets}
 
 * [!DNL Experience Manager] não arquiva downloads de ativos únicos onde o arquivo original é baixado. Esse aprimoramento permite downloads mais rápidos.
 
 * Quando um ativo é baixado por meio da opção linkshare, você pode optar por baixar ou não as representações. Anteriormente, todas as representações de ativos eram baixadas.
 
-* Os administradores podem configurar [!DNL Experience Manager] para excluir a fonte de ativos depois de fazer ingestões de ativos em massa. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Os administradores podem configurar [!DNL Experience Manager] para excluir a origem dos ativos depois de fazer ingestões de ativos em massa. Consulte [ingestão de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Ao executar uma verificação de integridade para importar ativos em massa, o Experience Manager agora fornece mais motivos de informações para falhas. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Ao executar uma verificação de integridade para importar ativos em massa, o Experience Manager agora fornece mais motivos de informações para falhas. Consulte [ingestão de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Ao importar ativos usando a ferramenta de importação em massa, os administradores agora têm a opção de excluir os arquivos de origem após a importação ser bem-sucedida. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Ao importar ativos usando a ferramenta de importação em massa, os administradores agora têm a opção de excluir os arquivos de origem após a importação ser bem-sucedida. Consulte [ingestão de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Ao editar um esquema de metadados, um novo campo seletor de caminho raiz permite que os administradores façam a seleção de forma rápida e fácil, reduzindo assim o tempo de configuração.
 
@@ -73,7 +73,7 @@ A seguinte versão (2021.5.0) será lançada em 27 de maio de 2021.
 
 * Ao navegar pelos ativos na exibição em Coluna, um indicador visual é exibido para os ativos expirados.
 
-### Correções de erros em [!DNL Assets] {#bug-fixes-assets}
+### Correções de erros no [!DNL Assets] {#bug-fixes-assets}
 
 * Ao tentar mover vários ativos ou pastas, um erro é registrado no console e a operação de movimentação não é concluída. A operação de movimentação falhará se o título não puder ser atualizado. (CQ-4322080)
 
@@ -89,19 +89,19 @@ A seguinte versão (2021.5.0) será lançada em 27 de maio de 2021.
 
 * A opção de publicação rápida não é exibida quando um ativo é selecionado nos resultados da pesquisa após pesquisá-lo. (CQ-4317748)
 
-## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
-### Novidades em [!DNL Forms] {#what-is-new-forms}
+### Novidades do [!DNL Forms] {#what-is-new-forms}
 
 * **Usar o método de autenticação de identidade do Governo no Adobe Sign Adaptive Forms habilitado**
 
    Alimentado por algoritmos avançados de aprendizado de máquina, o processo de ID do governo da Adobe Sign capacita empresas em todo o mundo com a capacidade de garantir uma autenticação de alta qualidade da identidade do destinatário. Agora, você pode usar o método de autenticação de identidade do Governo no Adobe Sign Adaptive Forms habilitado.
 
-   ID do governo é um método de autenticação de identidade premium que instrui o recipient a [carregar a imagem de um documento de identidade emitido pelo governo (licença de motorista, ID nacional, passaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html), e então avalia esse documento para garantir que ele seja autêntico.
+   ID do governo é um método de autenticação de identidade premium que instrui o recipient a [Fazer upload da imagem de um documento de identidade emitido pelo Estado (carta de condução, identificação nacional, passaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)e, em seguida, avalia esse documento para certificar-se de que ele é autêntico.
 
 * **Suporte para usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis**
 
-   Agora é possível usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis. Você também pode incorporar um formulário adaptável em uma página [!DNL Experience Manager Sites] e usar a experiência de assinatura no formulário para envios de formulários adaptáveis.
+   Agora é possível usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis. Também é possível incorporar um formulário adaptável em um [!DNL Experience Manager Sites] e use a experiência de assinatura no formulário para enviar formulários adaptáveis.
 
 * **Suporte para usar uma variável para especificar um anexo ao preencher previamente um Formulário adaptável para uma etapa Atribuir tarefa**
 
@@ -115,7 +115,7 @@ A seguinte versão (2021.5.0) será lançada em 27 de maio de 2021.
 
    Você pode usar um XDP como modelo de Documento de registro em instâncias do Cloud Service e no SDK as a Cloud Service do AEM Forms (ambiente de desenvolvimento local). Anteriormente, o suporte estava limitado apenas a instâncias Cloud Service.
 
-### Correções de erros em [!DNL Forms] {#bug-fixes-forms}
+### Correções de erros no [!DNL Forms] {#bug-fixes-forms}
 
 * Quando um Formulário adaptável configurado para não gerar Documento de registro é enviado a um Fluxo de trabalho AEM configurado para gerar Documento de registro, nenhuma mensagem de erro é exibida e a tarefa não é enviada.
 
@@ -144,7 +144,7 @@ A seguinte versão (2021.5.0) será lançada em 27 de maio de 2021.
 
 ## Cloud Manager {#cloud-manager}
 
-Esta seção descreve as Notas de versão do Cloud Manager AEM as a Cloud Service 2021.4.0.
+Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.4.0.
 
 ### Data de lançamento {#release-date-cm-april}
 
@@ -159,7 +159,7 @@ A próxima versão está planejada para 06 de maio de 2021.
 
 * Agora, as variáveis de ambiente podem ser enviadas para um serviço específico, seja de criação ou de publicação. Exige AEM versão `2021.03.5104.20210328T185548Z` ou superior.
 
-* O botão **Gerenciar Git** é exibido no cartão Pipelines mesmo quando nenhum pipeline foi configurado.
+* O **Gerenciar Git** é exibido no cartão Pipelines, mesmo quando nenhum pipeline foi configurado.
 
 * A versão do arquétipo de projeto AEM usado pelo Cloud Manager foi atualizada para a versão 27.
 
@@ -175,13 +175,13 @@ A próxima versão está planejada para 06 de maio de 2021.
 
 ### Correções de erros {#bug-fixes-cm-april}
 
-* Ao editar a página Auditoria de experiência de um pipeline, um caminho de entrada que começa com uma barra `( / )` não resultará mais na etapa presa no status pendente.
+* Ao editar a página de auditoria da experiência de um pipeline, um caminho de entrada que começa com uma barra `( / )` O não resultará mais na interrupção da etapa no status pendente.
 
 * Quando um novo pipeline de produção é criado, se nenhuma substituição de auditoria de conteúdo for adicionada pelo usuário, a página inicial padrão não foi auditada.
 
-* Os problemas para `CloudServiceIncompatibleWorkflowProcess` tinham a severidade incorreta no arquivo CSV de problema baixável.
+* Problemas para o `CloudServiceIncompatibleWorkflowProcess` tinha a severidade incorreta no arquivo CSV de problema baixável.
 
-* A verificação `Runmode` estava produzindo falsos positivos em nós que não eram pastas.
+* O `Runmode` check estava produzindo falsos positivos em nós que não eram pastas.
 
 ## Analisador de práticas recomendadas {#best-practices-analyzer}
 
@@ -193,4 +193,3 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.12 é 12 de a
 
 * Linhas duplicadas foram vistas no BPA relatado. Isso foi corrigido.
 * A interface do usuário do BPA AEM versão 6.4.2 estava exibindo um erro de JS que estava desativando o botão Gerar relatório . Isso foi corrigido
-

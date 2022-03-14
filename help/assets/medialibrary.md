@@ -8,7 +8,7 @@ exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -95,6 +95,6 @@ Observe que não é possível usar tags inteligentes, [!DNL Asset] link , [!DNL 
 
 >[!MORELIKETHIS]
 >
->* [Recursos do DAM em [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
+>* [Recursos do DAM em [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=pt-BR)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] descrição do produto](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
 

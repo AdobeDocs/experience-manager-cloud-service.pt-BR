@@ -1,12 +1,12 @@
 ---
 title: Integração ao Adobe Experience Manager as a Cloud Service
 description: Recursos de autoajuda e links de documentação da integração ao Adobe Experience Manager as a Cloud Service
-landing-page-description: Este guia fornece um resumo de como começar a usar AEM as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
+landing-page-description: Este guia fornece um resumo de como começar a usar o AEM as a Cloud Service, incluindo como obter acesso e informações importantes sobre proteção de dados.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 24%
+ht-degree: 38%
 
 ---
 
@@ -41,8 +41,8 @@ A jornada de integração ilustrada abaixo foi projetada para uma persona de Adm
 | [Guia do usuário do Sites](/help/sites-cloud/home.md) | Entenda como criar com e administrar, [!DNL Experience Manager Sites] as a Cloud Service. |
 | [Guia do usuário do Assets](/help/assets/home.md) | Saiba como usar e administrar [!DNL Experience Manager Assets as a Cloud Service]. |
 | [Migração para o AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Entenda a jornada de transição para o Cloud Service |
-| [Implementação do Guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando AEM recursos avançados explorando esses tópicos de desenvolvimento e implantação. |
-| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada com os recursos avançados e flexíveis do AEM para se preparar para o seu primeiro projeto sem periféricos. |
+| [Implementação do Guia do usuário](/help/implementing/home.md) | Entenda como criar e personalizar experiências usando recursos avançados do AEM ao explorar esses tópicos de desenvolvimento e implantação. |
+| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Explore essa jornada guiada com os recursos headless avançados e flexíveis do AEM para se preparar para o seu primeiro projeto headless. |
 | [Guia do usuário de conectores](/help/connectors/home.md) | Saiba como integrar Conectores ao [!DNL Experience Manager as a Cloud Service]. |
 | [Guia do usuário de operações](/help/operations/home.md) | Saiba mais sobre as operações de back-end do [!DNL Experience Manager as a Cloud Service], como tarefas de indexação e manutenção. |
 | [Guia do usuário do Commerce](/help/commerce-cloud/home.md) | Saiba mais sobre a Commerce Integration Framework em [!DNL Experience Manager as a Cloud Service]. |

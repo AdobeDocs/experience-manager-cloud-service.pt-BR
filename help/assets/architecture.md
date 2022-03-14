@@ -1,23 +1,22 @@
 ---
-title: Arquitetura de [!DNL Assets]
-description: Arquitetura do Adobe Experience Manager Assets as a [!DNL Cloud Service]
+title: Arquitetura do [!DNL Assets]
+description: Arquitetura dos ativos Adobe Experience Manager as a [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management,Asset Compute Microservices
 role: Architect
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 8%
+source-wordcount: '86'
+ht-degree: 9%
 
 ---
 
+# Arquitetura do Assets as a [!DNL Cloud Service] solução {#assets-architecture}
 
-# Arquitetura do Assets como uma solução [!DNL Cloud Service] {#assets-architecture}
+[!DNL Experience Manager Assets] como [!DNL Cloud Service] é baseado em [!DNL Adobe Experience Manager] e se compara bem com a oferta mais recente [!DNL Experience Manager] 6.5. [!DNL Cloud Service] A oferta tem uma arquitetura e funcionalidade ajustadas para ser um serviço nativo em nuvem. As alterações na arquitetura subjacente não permitem que toda a funcionalidade do Experience Manager 6.5 faça parte do [!DNL Cloud Service].
 
-[!DNL Experience Manager Assets] o as a  [!DNL Cloud Service] é baseado em  [!DNL Adobe Experience Manager] e se compara bem com a última oferta  [!DNL Experience Manager] 6.5. A  [!DNL Cloud Service] oferta tem uma arquitetura e funcionalidade ajustadas, oferecendo-se para ser um serviço nativo de nuvem. As alterações na arquitetura subjacente não permitem que toda a funcionalidade do Experience Manager 6.5 faça parte do [!DNL Cloud Service].
-
-Para ver a visão geral da arquitetura dos microsserviços de ativos, consulte esta [visão geral dos microsserviços de ativos](asset-microservices-overview.md#asset-microservices-architecture).
+Para ver a visão geral da arquitetura dos microsserviços de ativos, consulte isto [visão geral dos microsserviços de ativos](asset-microservices-overview.md#asset-microservices-architecture).
 
 >[!MORELIKETHIS]
 >

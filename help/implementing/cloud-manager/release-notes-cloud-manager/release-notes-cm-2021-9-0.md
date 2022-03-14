@@ -15,7 +15,7 @@ ht-degree: 5%
 Esta página descreve as Notas de versão do Cloud Manager AEM as a Cloud Service 2021.9.0.
 
 >[!NOTE]
->Para ver as Notas de versão atuais do Adobe Experience Manager as a Cloud Service, clique [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+>Para ver as Notas de versão atuais do Adobe Experience Manager as a Cloud Service, clique em [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
 
 ## Data de lançamento {#release-date}
 
@@ -29,9 +29,9 @@ A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.9.0 é 9 de s
 
 * O Log de Etapa de Qualidade do Código agora inclui informações de log detalhadas no processo de varredura do OakPal.
 
-* As opções de menu da página Atividade agora incluirão uma opção para **Baixar log** para execuções concluídas do Gerador de código. Ao selecionar essa opção, o log da etapa de build será baixado.
+* As opções de menu da página Atividade agora incluirão uma opção para **Baixar registro** para execuções concluídas do Gerador de código. Ao selecionar essa opção, o log da etapa de build será baixado.
 
-* Clicar diretamente no cartão do Programa agora navegará até a página **Visão geral** do Cloud Manager. Consulte [Criação de um programa de produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) para obter mais detalhes.
+* Clicar diretamente no cartão do Programa agora navegará para o do Cloud Manager **Visão geral** página. Consulte [Criação de um programa de produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes}
 

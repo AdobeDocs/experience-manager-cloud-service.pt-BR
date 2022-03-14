@@ -1,14 +1,13 @@
 ---
 title: Remoção Genérica do Índice Lucene
 description: Saiba mais sobre a remoção planejada de índices genéricos de Lucene e como você pode ser afetado.
-exl-id: fe0e00ac-f9c8-43cf-83c2-5a353f5eaeab
-source-git-commit: 7a3c8b59a5a642ffc335fc80898fb956221cfcc2
+exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1349'
 ht-degree: 0%
 
 ---
-
 
 # Remoção Genérica do Índice Lucene {#generic-lucene-index-removal}
 

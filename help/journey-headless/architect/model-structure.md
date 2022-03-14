@@ -69,7 +69,7 @@ Depois de adicionar um tipo de dados, você deverá definir a variável **Propri
 
 Você pode adicionar quantos campos forem necessários. Por exemplo:
 
-![Modelo de fragmentos de conteúdo](/help/assets/content-fragments/assets/cfm-models-07.png)
+![Modelo de fragmentos do conteúdo](/help/assets/content-fragments/assets/cfm-models-07.png)
 
 ### Seus autores de conteúdo {#your-content-authors}
 

@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
 workflow-type: tm+mt
 source-wordcount: '1907'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -64,11 +64,11 @@ Em seguida, vamos dar uma olhada nas partes constituintes de um ambiente AEM.
 
 Um ambiente AEM completo é composto de um Autor, Publicação e Dispatcher. Esses mesmos componentes serão disponibilizados no tempo de execução de desenvolvimento local para facilitar a visualização do código e conteúdo antes de entrar no ar.
 
-* **O serviço Autor** é onde os usuários internos criam, gerenciam e visualizam o conteúdo.
+* **O serviço do Autor** é onde os usuários internos criam, gerenciam e visualizam conteúdo.
 
-* **O serviço de publicação** O é considerado o ambiente &quot;Live&quot; e normalmente é com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço Autor, é distribuído ao serviço de Publicação. O padrão de implantação mais comum com AEM aplicativos sem cabeçalho é ter a versão de produção do aplicativo conectada a um serviço de publicação do AEM.
+* **O serviço de Publicação** é considerado o ambiente &quot;ativo&quot; e é, normalmente, com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço do Autor, é distribuído ao serviço de Publicação. O padrão de implantação mais comum com aplicativos headless do AEM é ter uma versão de produção do aplicativo conectada a um serviço de publicação do AEM.
 
-* **O Dispatcher** é um servidor Web estático aumentado com o módulo Dispatcher do AEM. Armazena em cache as páginas da Web produzidas pela instância de publicação para melhorar o desempenho.
+* **O Dispatcher** é um servidor Web estático aumentado com o módulo dispatcher do AEM. Armazena em cache as páginas da Web produzidas pela instância de publicação para melhorar o desempenho.
 
 ## O fluxo de trabalho de desenvolvimento local {#the-local-development-workflow}
 

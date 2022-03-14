@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -30,9 +30,9 @@ LISTAS DE PERMISSÕES IP podem ser adicionadas uma vez e aplicadas/não aplicada
 
 Usando a página Lista de permissões de IP da interface do usuário do Cloud Manager ou a página Detalhes do ambiente , um usuário com permissões pode executar várias tarefas para gerenciar Listas de permissões de IP em seus ambientes, incluindo:
 
-* [Adicionar uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+* [Adicionar uma lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
    >[!NOTE]
    > Você pode Adicionar uma vez e reutilizar ou aplicar a regra várias vezes em todos os serviços do ambiente no programa.
 * [Visualização ou atualização de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
 * [Aplicar ou desaplicar uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-* [Exclusão de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+* [Excluir uma lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)

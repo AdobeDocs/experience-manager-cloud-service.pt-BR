@@ -38,7 +38,7 @@ Você também pode usar [pastas](#creating-a-new-folder) para ajudar a organizar
 
 A estrutura de um site pode ser considerada como uma árvore que armazena suas páginas de conteúdo. Os nomes dessas páginas de conteúdo são usadas para formar os URLs, ao passo que os títulos são mostrados quando o conteúdo da página é visualizado.
 
-O exemplo a seguir mostra o site [Tutorial WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), onde um artigo sobre skateparks ( `la-skateparks`) é acessado:
+O exemplo a seguir mostra o site [Tutorial WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR), onde um artigo sobre skateparks ( `la-skateparks`) é acessado:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -92,7 +92,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs de até um determinado comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-Ao criar uma nova página, o AEM [validará o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e o JCR.
+Ao criar uma nova página, o AEM [validar o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e pelo JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -262,13 +262,13 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Navegue até o local para a nova cópia da página.
-1. Toque ou clique no ícone **Colar** que ficou disponível.
+1. Toque ou clique no botão **Colar** ícone que ficou disponível.
 
    ![Colar](/help/sites-cloud/authoring/assets/paste.png)
 
 1. A caixa de diálogo de colagem apresenta um resumo da transação de colagem e a capacidade de:
-   * **Novo nome do site:** altere o nome da página colada
-   * **Colar sem filhos:** Omita as páginas filhas da página selecionada ao colar (por padrão, as páginas filhas são coladas)
+   * **Nome do novo site:** Alterar o nome da página colada
+   * **Colar sem filhos:** Omitir as páginas secundárias da página selecionada ao colar (por padrão, as páginas secundárias são coladas)
 
    ![Caixa de diálogo Colar](/help/sites-cloud/authoring/assets/paste-dialog.png)
 

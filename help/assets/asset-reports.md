@@ -1,24 +1,24 @@
 ---
 title: Relatórios sobre uso e compartilhamento
-description: Relatórios sobre seus ativos em [!DNL Adobe Experience Manager Assets] que ajudam a entender o uso, a atividade e o compartilhamento dos ativos digitais.
+description: Relatórios sobre seus ativos em [!DNL Adobe Experience Manager Assets] que ajudam você a entender o uso, a atividade e o compartilhamento dos ativos digitais.
 contentOwner: AG
-feature: Relatórios de ativos, Gerenciamento de ativos
+feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 6%
+source-wordcount: '868'
+ht-degree: 7%
 
 ---
 
 # Relatórios de ativos {#asset-reports}
 
-O relatório de ativos permite avaliar a utilidade da implantação [!DNL Adobe Experience Manager Assets]. Com [!DNL Assets], você pode gerar vários relatórios para seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com ativos e quais ativos são <!-- downloaded and --> compartilhados.
+O relatório de ativos permite avaliar a utilidade da [!DNL Adobe Experience Manager Assets] implantação. Com [!DNL Assets], você pode gerar vários relatórios para seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com ativos e quais ativos são <!-- downloaded and --> compartilhado.
 
-Use as informações nos relatórios para derivar as métricas principais de sucesso para medir a adoção de [!DNL Assets] em sua empresa e por clientes.
+Use as informações nos relatórios para obter as métricas principais de sucesso e medir a adoção de [!DNL Assets] na empresa e pelos clientes.
 
-A estrutura de relatórios [!DNL Assets] usa tarefas [!DNL Sling] para processar de forma assíncrona solicitações de relatórios de maneira ordenada. É escalável para repositórios grandes. O processamento assíncrono de relatórios aumenta a eficiência e a velocidade com que os relatórios são gerados.
+O [!DNL Assets] uso da estrutura de relatórios [!DNL Sling] tarefas para processar de forma assíncrona solicitações de relatório de maneira ordenada. É escalável para repositórios grandes. O processamento assíncrono de relatórios aumenta a eficiência e a velocidade com que os relatórios são gerados.
 
 A interface de gerenciamento de relatórios é intuitiva e inclui opções e controles otimizados para acessar relatórios arquivados e visualizar status de execução de relatórios (sucesso, falha e enfileirado).
 
@@ -51,12 +51,12 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
 
 [!DNL Adobe Experience Manager] Os administradores do podem gerar e personalizar facilmente esses relatórios para sua implementação. Um administrador pode seguir estas etapas para gerar um relatório:
 
-1. Na interface [!DNL Experience Manager], clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
+1. Em [!DNL Experience Manager] clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
 
    ![Página Ferramentas para navegar no relatório de ativos](assets/navigation.png)
 
-1. Na página [!UICONTROL Relatórios de ativos], clique em **[!UICONTROL Criar]** na barra de ferramentas.
-1. Na página **[!UICONTROL Criar relatório]**, escolha o relatório que deseja criar e clique em **[!UICONTROL Próximo]**.
+1. No [!UICONTROL Relatórios de ativos] página, clique em **[!UICONTROL Criar]** na barra de ferramentas.
+1. No **[!UICONTROL Criar relatório]** escolha o relatório que deseja criar e clique em **[!UICONTROL Próximo]**.
 
    ![Selecionar tipo de relatório](assets/choose_report.png)
 
@@ -70,7 +70,7 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
    >
    >Se optar por agendar o relatório posteriormente, especifique a data e a hora nos campos Data e hora . Se você não especificar um valor, o mecanismo de relatório o tratará como um relatório que deve ser gerado instantaneamente.
 
-   Os campos de configuração podem ser diferentes com base no tipo de relatório que você cria. Por exemplo, o relatório **[!UICONTROL Uso de disco]** fornece opções para incluir representações de ativos ao calcular o espaço em disco usado pelos ativos. Você pode optar por incluir ou excluir ativos em subpastas para o cálculo do uso do disco.
+   Os campos de configuração podem ser diferentes com base no tipo de relatório que você cria. Por exemplo, a variável **[!UICONTROL Uso de disco]** fornece opções para incluir representações de ativos ao calcular o espaço em disco usado por ativos. Você pode optar por incluir ou excluir ativos em subpastas para o cálculo do uso do disco.
 
    >[!NOTE]
    >
@@ -78,32 +78,32 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
 
    ![Página Detalhes do relatório de Uso de Disco](assets/disk_usage_configuration.png)
 
-   Ao criar o relatório **[!UICONTROL Files]**, é possível incluir/excluir subpastas. No entanto, não é possível incluir representações de ativos para esse relatório.
+   Ao criar o **[!UICONTROL Arquivos]** , é possível incluir/excluir subpastas. No entanto, não é possível incluir representações de ativos para esse relatório.
 
    ![Página de detalhes do relatório Arquivos](assets/files_report.png)
 
    O relatório **[!UICONTROL Compartilhamento de links]** exibe URLs de ativos que são compartilhados com usuários externos a partir do [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> As colunas não são personalizáveis.
 
-   O relatório **[!UICONTROL Compartilhamento de links]** não inclui opções para subpastas e representações porque apenas publica os URLs compartilhados que aparecem em `/var/dam/share`.
+   O **[!UICONTROL Compartilhamento de links]** , não inclui opções para subpastas e representações porque apenas publica os URLs compartilhados que aparecem em `/var/dam/share`.
 
    ![Página de detalhes do relatório de Compartilhamento de links](assets/link_share.png)
 
-1. Clique em **[!UICONTROL Avançar]** na barra de ferramentas.
+1. Clique em **[!UICONTROL Próximo]** na barra de ferramentas.
 
-1. Na página **[!UICONTROL Configurar colunas]**, algumas colunas são selecionadas para serem exibidas no relatório por padrão. Você pode selecionar mais colunas. Cancele a seleção de uma coluna para excluí-la no relatório.
+1. No **[!UICONTROL Configurar colunas]** por padrão, algumas colunas são selecionadas para serem exibidas no relatório. Você pode selecionar mais colunas. Cancele a seleção de uma coluna para excluí-la no relatório.
 
    ![Selecionar ou cancelar seleção de colunas de relatório](assets/configure_columns.png)
 
-   Para exibir um nome de coluna ou caminho de propriedade personalizado, configure as propriedades do binário de ativo no nó `jcr:content` no CRX. Como alternativa, adicione-o por meio do seletor de caminho de propriedade.
+   Para exibir um nome de coluna ou caminho de propriedade personalizado, configure as propriedades para o binário de ativo sob o `jcr:content` no CRX. Como alternativa, adicione-o por meio do seletor de caminho de propriedade.
 
    ![Selecionar ou cancelar seleção de colunas de relatório](assets/custom_columns.png)
 
 1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatório foi iniciada.
-1. Na página [!UICONTROL Relatórios de Ativos], o status da geração de relatórios é baseado no estado atual do trabalho de relatório, por exemplo [!UICONTROL Sucesso], [!UICONTROL Falha], [!UICONTROL Em fila] ou [!UICONTROL Programado]. O mesmo status aparece na caixa de entrada de notificações.Para exibir a página do relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Exibir]** na barra de ferramentas.
+1. No [!UICONTROL Relatórios de ativos] , o status de geração do relatório é baseado no estado atual do trabalho de relatório, por exemplo [!UICONTROL Sucesso], [!UICONTROL Falha], [!UICONTROL Em fila]ou [!UICONTROL Programado]. O mesmo status aparece na caixa de entrada de notificações.Para exibir a página do relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Exibir]** na barra de ferramentas.
 
    ![Um relatório gerado](assets/report_page.png)
 
-   Clique em **[!UICONTROL Download]** na barra de ferramentas para baixar o relatório no formato CSV.
+   Clique em **[!UICONTROL Baixar]** na barra de ferramentas para baixar o relatório no formato CSV.
 
 ## Adicionar colunas personalizadas aos relatórios {#add-custom-columns}
 
@@ -129,17 +129,17 @@ Você pode adicionar colunas personalizadas aos seguintes relatórios para exibi
 Para adicionar colunas personalizadas a esses relatórios, siga estas etapas:
 
 1. No [!DNL Manager interface], clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
-1. Na página [!UICONTROL Relatórios de ativos], clique em **[!UICONTROL Criar]** na barra de ferramentas.
+1. No [!UICONTROL Relatórios de ativos] página, clique em **[!UICONTROL Criar]** na barra de ferramentas.
 
-1. Na página **[!UICONTROL Criar relatório]**, escolha um relatório a ser criado. Clique em **[!UICONTROL Avançar]**.
+1. No **[!UICONTROL Criar relatório]** escolha um relatório para criar. Clique em **[!UICONTROL Avançar]**.
 
 1. Configure os detalhes do relatório, como título, descrição, miniatura, caminho da pasta e intervalo de datas, conforme aplicável. Clique em **[!UICONTROL Avançar]**.
 
-1. Selecione as informações aplicáveis na lista de **[!UICONTROL Colunas Padrão]**. Para exibir uma coluna personalizada, especifique o nome da coluna em **[!UICONTROL Colunas personalizadas]**.
+1. Selecione as informações aplicáveis na lista de **[!UICONTROL Colunas padrão]**. Para exibir uma coluna personalizada, especifique o nome da coluna em **[!UICONTROL Colunas personalizadas]**.
 
    ![Especificar o nome da coluna personalizada do relatório](assets/custom_columns-1.png)
 
-1. Adicione o caminho da propriedade no nó `jcr:content` no CRXDE usando o seletor de caminho de propriedade. Como alternativa, digite o caminho no campo do caminho da propriedade.
+1. Adicione o caminho da propriedade sob o `jcr:content` no CRXDE usando o seletor de caminho de propriedade. Como alternativa, digite o caminho no campo do caminho da propriedade.
 
    ![Mapear o caminho da propriedade de caminhos em jcr:content](assets/property_picker.png)
 
@@ -161,7 +161,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## Informações de solução de problemas {#tips-troubleshoot}
 
-* Se o [!UICONTROL Relatório de uso de disco] não for gerado e se você estiver usando [!DNL Dynamic Media], verifique se todos os ativos estão funcionando corretamente. Para resolver, reprocesse os ativos e gere o relatório novamente.
+* Se a variável [!UICONTROL Relatório de uso de disco] não gera e se estiver usando [!DNL Dynamic Media], verifique se todos os ativos estão funcionando corretamente. Para resolver, reprocesse os ativos e gere o relatório novamente.
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 

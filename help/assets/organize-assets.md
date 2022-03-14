@@ -59,18 +59,18 @@ A maneira mais básica de organizar ativos é salvar os ativos em pastas. É sem
 * Geralmente, seu repositório de ativos digitais está sempre crescendo. Portanto, é importante formalizar o uso de metadados, a estrutura de pastas e a nomenclatura de arquivos no início do ciclo de criação de conteúdo.
 * Use pastas somente para impor uma estrutura de armazenamento consistente para seus ativos digitais. Essa consistência ajuda a processar e gerencia melhor seus ativos. Por exemplo, os ativos colocados nos seguintes tipos de pastas podem ajudar a segregar seus ativos:
 
-   * **Pastas** de desenvolvimento: contém ativos digitais em que você está trabalhando no momento.
-   * **Pastas** do cliente: contém ativos digitais com base em clientes ou nomes de projeto.
-   * **Pastas** primárias: contém ativos digitais de origem original.
-   * **Pastas** de representação: contém representações e cópias dos ativos digitais de origem original.
-   * **Pastas** de tamanho de arquivo: contém ativos digitais com base em tamanhos de arquivo pequenos, médios ou grandes.
-   * **Pastas** de preparo: O contém ativos digitais prontos para publicação ao vivo em seu site.
-   * **Pastas** do tipo MIME: contém ativos digitais específicos para tipos MIME, como imagens, documentos e multimídia.
+   * **Pastas de desenvolvimento**: contém ativos digitais em que você está trabalhando no momento.
+   * **Pastas de clientes**: contém ativos digitais com base em clientes ou nomes de projeto.
+   * **Pastas primárias**: contém ativos digitais de origem original.
+   * **Pastas de representação**: contém representações e cópias dos ativos digitais de origem original.
+   * **Pastas de tamanho de arquivo**: contém ativos digitais com base em tamanhos de arquivo pequenos, médios ou grandes.
+   * **Pastas de preparo**: O contém ativos digitais prontos para publicação ao vivo em seu site.
+   * **Pastas de tipo MIME**: contém ativos digitais específicos para tipos MIME, como imagens, documentos e multimídia.
    * **Arquivar pastas**: contém ativos digitais removidos.
-   * **Pastas** baseadas em data: contém ativos digitais com base em uma data de criação ou em uma data da última modificação.
+   * **Pastas baseadas em data**: contém ativos digitais com base em uma data de criação ou em uma data da última modificação.
 
 * Crie um diretório de pastas que provavelmente não serão alteradas para que qualquer personalização ou automação continue a funcionar. Por exemplo, os perfis de processamento atribuídos continuam a funcionar.
-* Se um ativo já estiver publicado, use [!DNL Experience Manager] para movê-lo para outra pasta e republicar de seu novo local. O local do ativo publicado original ainda está disponível junto com o ativo republicado recentemente. O ativo publicado original, no entanto, é *lost* para [!DNL Experience Manager] e não pode ter a publicação cancelada. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e depois o mova para uma pasta diferente.
+* Se um ativo já estiver publicado, você usará [!DNL Experience Manager] para mover o ativo para outra pasta e republicar de seu novo local. O local do ativo publicado original ainda está disponível junto com o ativo republicado recentemente. O ativo publicado original, no entanto, é *perdido* para [!DNL Experience Manager] e não pode desfazer a publicação. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e depois o mova para uma pasta diferente.
 
 ## Organizar ativos usando tags {#use-tags-to-organize-assets}
 
@@ -85,7 +85,7 @@ Para obter mais informações, consulte os seguintes artigos:
 
 ## Organizar como coleções {#organize-as-collections}
 
-Com as coleções de ativos em [!DNL Experience Manager Assets], você pode simplificar a capacidade de criar, editar e compartilhar ativos entre usuários. Crie vários tipos de coleções com base na maneira como você as usa, incluindo coleções que contêm uma lista de referência estática de ativos, pastas e coleções, e coleções que extrai ativos com base em critérios de pesquisa. Você pode criar coleções com ativos de diferentes locais e compartilhá-las com vários usuários com diferentes níveis de acesso, privilégios de visualização e edição.
+Com coleções de ativos em [!DNL Experience Manager Assets], você pode otimizar a capacidade de criar, editar e compartilhar ativos entre usuários. Crie vários tipos de coleções com base na maneira como você as usa, incluindo coleções que contêm uma lista de referência estática de ativos, pastas e coleções, e coleções que extrai ativos com base em critérios de pesquisa. Você pode criar coleções com ativos de diferentes locais e compartilhá-las com vários usuários com diferentes níveis de acesso, privilégios de visualização e edição.
 
 Para obter mais informações, consulte [gerenciar coleções](manage-collections.md)
 

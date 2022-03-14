@@ -1,15 +1,15 @@
 ---
-title: Suporte a Adobe
+title: Suporte da Adobe
 description: Siga esta página para saber mais sobre os recursos de ajuda onboard e o suporte ao Adobe.
 exl-id: 2d5076b6-abeb-428e-9071-98f861893cd0
 source-git-commit: 3ae9b4fa1e23a7f80acbda43649d47f86459a323
 workflow-type: tm+mt
 source-wordcount: '120'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-# Suporte a Adobe {#adobe-support}
+# Suporte da Adobe {#adobe-support}
 
 O Suporte ao Adobe pode ser acessado via Adobe Admin Console, onde você pode gerenciar seus casos de suporte e agendar uma sessão de especialistas.
 

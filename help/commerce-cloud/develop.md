@@ -11,7 +11,7 @@ exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 64%
+ht-degree: 65%
 
 ---
 
@@ -21,7 +21,7 @@ O desenvolvimento de projetos do AEM Commerce com base na Commerce Integration F
 
 - [Estrutura de projetos do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR)
 - [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=pt-BR)
-- [Diretrizes de desenvolvimento do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [Diretrizes de desenvolvimento do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=pt-BR)
 
 ## Desenvolvimento local com o SDK do AEM as a Cloud Service {#local}
 

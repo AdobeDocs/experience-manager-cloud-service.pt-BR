@@ -1,16 +1,15 @@
 ---
 title: Notas de versão para 2020.3.0
 description: Notas de versão para 2020.3.0
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
 
 ---
 
-
-# Notas de versão para AEM as a Cloud Service 2020.3.0{#release-notes}
+# Notas de versão do AEM as a Cloud Service 2020.3.0 {#release-notes}
 
 Esta página descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.3.0.
 
@@ -27,7 +26,7 @@ Siga esta seção para saber mais sobre as novidades e atualizações do Cloud M
 * O registro da etapa de build já está disponível, enquanto a etapa de build está em execução.
 * Algumas das mensagens na página de detalhes de execução do pipeline foram editadas para maior clareza.
 
-### Correções de erros {#bug-fixes}
+### Correções de erros  {#bug-fixes}
 
 * Não foi possível baixar os arquivos de registro para as etapas de teste funcional personalizadas e do produto por meio da interface do usuário.
 * Quando ocorria uma falha na criação do repositório de git de um programa do Cloud Service, às vezes os usuários na função do Gerenciador de implantação não conseguiam se recuperar dessa falha.
@@ -36,4 +35,3 @@ Siga esta seção para saber mais sobre as novidades e atualizações do Cloud M
 * A criação simultânea de ambientes de desenvolvimento no mesmo programa de Cloud Service pode encontrar uma condição em que apenas um pode ser criado com sucesso.
 * As notificações da Experience Cloud para programas do Cloud Service não eram recebidas constantemente.
 * Em projetos específicos, os objetos *ResourceResolver devem ser sempre fechados*, gerando uma Exceção de Null Pointer. No entanto, isso não teve impacto na execução do pipeline.
-

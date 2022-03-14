@@ -2,13 +2,13 @@
 title: Configuração do Dispatcher com o AEM Headless
 description: O Dispatcher é uma camada de segurança e cache na frente dos ambientes de publicação do Adobe Experience Manager. Várias configurações são usadas para abrir pontos de extremidade GraphQL em aplicativos headless.
 feature: Dispatcher, GraphQL API
-source-git-commit: 0cc131209f497241949f8da6e8144dfcaffe7e6e
-workflow-type: ht
+exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 100%
 
 ---
-
 
 # Configuração do Dispatcher com o AEM Headless
 
@@ -16,7 +16,7 @@ O [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispat
 
 >[!NOTE]
 >
->Para obter a documentação detalhada sobre o Dispatcher, consulte o [Guia do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)
+>Para obter a documentação detalhada sobre o Dispatcher, consulte o [Guia do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 
 Como parte de um Projeto do AEM, é incluído um módulo de dispatcher que contém configurações para o dispatcher. Projetos recém-gerados do [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) incluem automaticamente [filtros](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#defining-a-filter) que ativam endpoints GraphQL.
 

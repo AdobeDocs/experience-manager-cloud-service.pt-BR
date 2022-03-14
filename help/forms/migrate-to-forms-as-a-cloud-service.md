@@ -14,7 +14,7 @@ ht-degree: 3%
 
 ---
 
-# Migrar para o[!DNL AEM Forms]as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# Migrar para o [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 Você pode migrar sua Forms adaptativa, temas, modelos e configurações de nuvem do <!-- AEM 6.3 Forms--> AEM 6.4 Forms em OSGi e AEM 6.5 Forms em OSGi para [!DNL AEM] as a Cloud Service. Antes de migrar esses ativos, use o Utilitário de migração para converter o formato usado nas versões anteriores para o formato usado em [!DNL AEM] as a Cloud Service. Ao executar o Utilitário de migração, os seguintes ativos são atualizados:
 

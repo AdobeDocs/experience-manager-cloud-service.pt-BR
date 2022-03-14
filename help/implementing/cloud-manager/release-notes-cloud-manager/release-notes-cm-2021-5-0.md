@@ -1,25 +1,25 @@
 ---
-title: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.5.0
-description: Notas de versão do Cloud Manager no AEM as a Cloud Service versão 2021.5.0
-feature: Informações da versão
+title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.5.0
+description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.5.0
+feature: Release Information
 exl-id: 8ae3cf2f-1865-427a-b612-bdf56e2f0304
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '377'
 ht-degree: 3%
 
 ---
 
 # Notas de versão do Cloud Manager no Adobe Experience Manager as a Cloud Service 2021.5.0 {#release-notes}
 
-Esta página descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.5.0.
+Esta página descreve as Notas de versão do Cloud Manager AEM as a Cloud Service 2021.5.0.
 
 >[!NOTE]
->Para ver as Notas de versão atuais do Adobe Experience Manager como um Cloud Service, clique [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+>Para ver as Notas de versão atuais do Adobe Experience Manager as a Cloud Service, clique em [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.5.0 é 6 de maio de 2021.
+A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.5.0 é 6 de maio de 2021.
 
 ### Novidades {#what-is-new}
 
@@ -33,11 +33,11 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.5.0 é 6 d
 
 * O complemento Commerce agora pode ser aplicado a programas Sandbox durante o fluxo de trabalho Editar programa .
 
-* A experiência *Editar programa* foi atualizada.
+* O *Editar programa* a experiência foi atualizada.
 
 * A tabela Nomes de Domínio na página Detalhes do Ambiente exibirá até 250 nomes de Domínio por paginação.
 
-* A guia **Solutions &amp; Add-ons** em **Add Program** e **Edit Program** workflows exibirá a solução, mesmo se apenas uma solução estiver disponível para o Programa.
+* O **Soluções e complementos** em **Adicionar programa** e **Editar programa** os fluxos de trabalho exibirão a solução, mesmo se apenas uma solução estiver disponível para o Programa.
 
 * A mensagem de erro no log de etapas da criação quando a build não produziu nenhum pacote de conteúdo implantado não estava clara.
 
@@ -45,7 +45,7 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.5.0 é 6 d
 
 * Ocasionalmente, o usuário pode ver um status verde &quot;ativo&quot; ao lado de uma Lista de permissões de IP, mesmo quando essa configuração não foi implantada.
 
-* Em vez de remover variáveis &quot;excluídas&quot;, a API de variáveis de pipelines somente as marcaria com o status **DELETED**.
+* Em vez de remover variáveis &quot;excluídas&quot;, a API de variáveis de pipelines somente as marcaria com status **EXCLUÍDO**.
 
 * Alguns problemas de qualidade do tipo Código Smell estavam afetando incorretamente a Classificação de confiabilidade.
 

@@ -4,7 +4,7 @@ description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo em head
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 6d5cdc4b606692f059fe3a6b7a29544f5bc0fa11
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 100%
 
@@ -1578,7 +1578,7 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 |  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
-#### Person {#fragment-person}
+#### Pessoa {#fragment-person}
 
 | Nome | Nome | Prêmios |
 |--- |--- |--- |
@@ -1609,4 +1609,4 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 | São Francisco |  EUA |  883306 |  city:beach<br>city:na |
 | San Jose |  EUA |  102635 |  city:na |
 | Stuttgart |  Alemanha |  634830 |  city:emea |
-|  Zurique |  Suíça |  415367 |  city:capital<br>city:emea |
+|  Zurique |  Suíça |  415367 |  cidade:capital<br>cidade:emea |

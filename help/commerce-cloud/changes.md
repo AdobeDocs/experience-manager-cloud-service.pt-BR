@@ -1,11 +1,11 @@
 ---
 title: Alterações importantes do complemento Commerce Integration Framework (CIF)
 description: Alterações importantes da Commerce Integration Framework (CIF) em comparação às versões antigas da CIF.
-exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,7 @@ Este documento destaca as importantes diferenças entre o complemento Commerce I
 
 O complemento CIF do AEM é instalado por meio do Cloud Manager. A instalação requer um crédito da CIF, exceto para sandboxes, onde a CIF pode ser instalada sem créditos. Os créditos são recebidos automaticamente por meio do provisionamento do complemento CIF em seu contrato de AEM.
 
-O complemento é atualizado automaticamente como parte do AEM regular como atualizações de Cloud Service.
+O complemento é atualizado automaticamente como parte das atualizações regulares AEM as a Cloud Service.
 
 **Versões anteriores da CIF**
 
@@ -38,7 +38,7 @@ O endpoint é configurado e atualizado por meio da interface do usuário do Clou
 
 ## Implantação do projeto CIF Venia
 
-Projeto disponível em [Repositório Git do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) e implantação feita via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)
+Projeto disponível em [Repositório Git do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) e implantação feita via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR)
 
 **Versões anteriores da CIF**
 
@@ -63,4 +63,4 @@ AEM renderiza experiências de catálogo de produtos dinamicamente usando modelo
 
 >[!NOTE]
 >
->Para obter a documentação adicional sobre como usar a CIF com AEM Managed Service ou AEM no local, consulte [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Para obter a documentação adicional sobre como usar a CIF com AEM Managed Service ou AEM no local, consulte [Estrutura de integração de comércio](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

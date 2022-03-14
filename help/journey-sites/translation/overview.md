@@ -8,7 +8,7 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -77,4 +77,4 @@ Confira estes recursos adicionais para obter mais informações sobre como AEM r
 * [Jornada de arquitetura headless](/help/journey-headless/architect/overview.md) - Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.
 * [jornada do desenvolvedor sem periféricos do AEM](/help/journey-headless/developer/overview.md) - Comece aqui para obter uma jornada guiada com os recursos avançados e flexíveis do AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
 * [AEM documentação técnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - Se você já tiver um conhecimento profundo das tecnologias AEM e sem interface, poderá consultar diretamente nossos documentos técnicos aprofundados.
-* [Tutoriais AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Se você preferir aprender fazendo e for tecnicamente inclinado, utilize nossos tutoriais práticos organizados por API e framework, que exploram a criação e o uso de aplicativos criados AEM Headless.
+* [Tutoriais AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Se você preferir aprender fazendo e for tecnicamente inclinado, utilize nossos tutoriais práticos organizados por API e framework, que exploram a criação e o uso de aplicativos criados AEM Headless.

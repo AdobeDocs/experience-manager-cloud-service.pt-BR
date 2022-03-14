@@ -1,84 +1,84 @@
 ---
-title: AEM Headless Content Author Journey
-description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to author content for your project.
+title: jornada do autor de conteúdo sem cabeçalho do AEM
+description: Uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como criar conteúdo para o seu projeto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# Authoring for Headless with AEM - An Introduction {#author-headless-introduction}
+# Criação para headless com AEM - uma introdução {#author-headless-introduction}
 
-[](overview.md)
+Nesta parte do [jornada do autor de conteúdo sem cabeçalho do AEM](overview.md), você pode aprender os conceitos e a terminologia (básica) necessários para entender a criação de conteúdo para entrega de conteúdo sem periféricos com o Adobe Experience Manager (AEM) as a Cloud Service.
 
 ## Objetivo {#objective}
 
-* ****
-* ****
+* **Público**: Iniciante
+* **Objetivo**: Apresente os conceitos e a terminologia relevantes para a criação sem cabeçalho.
 
-## Content Management System (CMS) {#content-management-system}
+## Sistema de gerenciamento de conteúdo (CMS) {#content-management-system}
 
-What is a Content Management System?
+O que é um sistema de gerenciamento de conteúdo?
 
-A Content Management System (CMS) is just what it says it is - a computer system used to manage content. That&#39;s a bit general, so to be more precise, it is (typically) used for managing content that you want to make available on your website(s).
+Um Sistema de Gerenciamento de Conteúdo (CMS) é exatamente o que diz ser - um sistema de computador usado para gerenciar conteúdo. Isso é um pouco geral, portanto, para ser mais preciso, ele é (normalmente) usado para gerenciar conteúdo que você deseja disponibilizar em seu(s) site(s).
 
-## Headless CMS {#headless-cms}
+## CMS sem periféricos {#headless-cms}
 
-Headless is a term used to describe systems that effectively detaches the content from the manner of displaying that content on the web.
+Headless é um termo usado para descrever sistemas que efetivamente desconectam o conteúdo da maneira de exibir esse conteúdo na Web.
 
-Traditionally you would manage your content in a CMS, and the same CMS would be responsible for rendering that content on your webpages.
+Tradicionalmente, você gerenciava seu conteúdo em um CMS e o mesmo CMS seria responsável pela renderização desse conteúdo em suas páginas da Web.
 
-Now, headless means that your content-set can be managed in the CMS and then accessed by one, or more, (independent) applications.
+Agora, sem periféricos significa que o conjunto de conteúdo pode ser gerenciado no CMS e, em seguida, acessado por um ou mais aplicativos (independentes).
 
-This means that your content can be delivered to any device, in a wide range of formats. This makes the whole process much more flexible, and also means that you do not need to worry about layout and formatting.
+Isso significa que seu conteúdo pode ser entregue a qualquer dispositivo, em uma grande variedade de formatos. Isso torna todo o processo muito mais flexível e também significa que você não precisa se preocupar com layout e formatação.
 
 >[!NOTE]
 >
->If you want to learn more about the technical details of Headless CMS you can read more at Learn About CMS Headless Development.
+>Se quiser saber mais sobre os detalhes técnicos do CMS sem periféricos, leia mais em Saiba mais sobre o desenvolvimento sem periféricos do CMS.
 
 ## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
 
-So what is AEM?
+Então, o que é AEM?
 
-First and foremost, AEM is a Content Management System with a wide range of features that can also be customized to meet your requirements.
+Em primeiro lugar, AEM é um sistema de gerenciamento de conteúdo com uma grande variedade de recursos que também podem ser personalizados para atender às suas necessidades.
 
-This all means that it can be used as a:
+Isso significa que ele pode ser usado como um:
 
-* Headless CMS
-   * ****
-****
-This means your content can reach a wide range of devices, in a wide range of formats and with a wide selection of functionality.
-(And as a double-whammy, these fragments can also be used when constructing AEM web pages - if you want.)
+* CMS sem periféricos
+   * Para ser headless, seu conteúdo pode ser criado como **Fragmentos de conteúdo**.
+Esses são itens autônomos de conteúdo que podem ser acessados diretamente por uma variedade de aplicativos, pois têm uma estrutura predefinida, com base em **Modelos de fragmentos do conteúdo**.
+Isso significa que o conteúdo pode atingir uma grande variedade de dispositivos, em uma grande variedade de formatos e com uma ampla seleção de funcionalidade.
+(E como um whammy duplo, esses fragmentos também podem ser usados na construção de páginas AEM da Web, se desejar).
 
-* &quot;Traditional&quot; CMS
-   * Content is authored for web pages, using a range of components that define how the content will be rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
+* CMS &quot;tradicional&quot;
+   * O conteúdo é criado para páginas da Web, usando uma variedade de componentes que definem como o conteúdo será renderizado em seu site. Mesmo aqui AEM é extremamente flexível, pois a equipe de projeto pode desenvolver componentes personalizados.
 
-## Content Modeling {#content-modeling}
+## Modelagem de conteúdo {#content-modeling}
 
-So content modeling (also known as data modeling) is another technical term - why should it interest you as an author?
+Portanto, a modelagem de conteúdo (também conhecida como modelagem de dados) é outro termo técnico - por que ela deve interessá-lo como autor?
 
-For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. **
+Para que os aplicativos sem periféricos possam acessar seu conteúdo e fazer algo com ele, seu conteúdo precisa realmente ter uma estrutura predefinida. Seria possível ter seu conteúdo como de forma livre, mas isso faria vida *very* complicado para os aplicativos.
 
-Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling.
+Basicamente, o processo de definição da estrutura para que o seu conteúdo adira ao envolve o design de um modelo, chamado de modelagem de dados.
 
-********
+Para AEM a função de Arquiteto de conteúdo (geralmente uma pessoa diferente), executará a modelagem de dados para projetar uma variedade de **Modelos de fragmentos do conteúdo** - que você usa como base para o seu conteúdo usando **Fragmentos de conteúdo**.
 
 >[!NOTE]
 >
->If you want to learn more about data modeling you can read more under the AEM Headless Content Architect Journey.
+>Se quiser saber mais sobre a modelagem de dados, leia mais na Jornada AEM Headless Content Architect .
 
-## What&#39;s Next {#whats-next}
+## O que vem a seguir {#whats-next}
 
-[](basics.md) This will introduce the basic handling of AEM together with how to author Content Fragments.
+Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Saiba mais sobre as noções básicas da criação de Fragmentos de conteúdo](basics.md). Isso introduzirá a manipulação básica de AEM, além de como criar Fragmentos de conteúdo.
 
 ## Recursos adicionais {#additional-resources}
 
-* AEM Headless Developer Journey
-   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
-   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
+* jornada do desenvolvedor sem periféricos do AEM
+   * [Saiba mais sobre o desenvolvimento sem periféricos do CMS](/help/journey-headless/developer/learn-about.md)
+   * [Saiba como modelar seu conteúdo](/help/journey-headless/developer/model-your-content.md)
 
-* AEM Headless Content Architect Journey
+* Jornada do arquiteto de conteúdo do AEM Headless
 
-* AEM Headless Content Translation Journey
+* jornada de tradução de conteúdo sem cabeçalho do AEM

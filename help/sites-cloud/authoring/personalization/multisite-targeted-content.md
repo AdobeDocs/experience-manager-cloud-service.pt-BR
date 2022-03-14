@@ -48,7 +48,6 @@ Um site ou uma live copy se vincula a uma área que contém as atividades que pr
 >
 >* Quando você usa implantações ou cópias em tempo real, é necessário usar uma licença do MSM.
 >* Quando você usa a sincronização com o Adobe Target, é necessária uma licença do Adobe Target.
-
 >
 
 
@@ -235,7 +234,6 @@ Uma atividade herdada de outro site é marcada em verde ao lado do seu nome. Uma
 >
 >* Apenas é possível suspender ou desconectar cópias em tempo real em uma atividade.
 >* Não é necessário suspender ou desconectar cópias em tempo real para estender uma atividade herdada. Você sempre pode criar **novas** experiências e ofertas locais para essa atividade. Se quiser modificar uma atividade existente, será necessário suspender a herança.
-
 >
 
 

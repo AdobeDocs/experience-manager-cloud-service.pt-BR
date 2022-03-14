@@ -7,7 +7,7 @@ exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
 source-wordcount: '1164'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ As regras de tradução identificam o conteúdo a ser traduzido para páginas, c
 
 >[!TIP]
 >
->Se você não estiver familiarizado com a tradução de conteúdo, consulte nossa [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é o caminho orientado pela tradução do conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideal para aqueles sem AEM ou experiência de tradução.
+>Se você é novo em traduzir conteúdo, consulte nosso [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é o caminho orientado pela tradução do conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência de AEM ou tradução.
 
 As páginas e os ativos são representados como nós no repositório JCR. O conteúdo extraído é um ou mais valores de propriedade dos nós. As regras de tradução identificam as propriedades que contêm o conteúdo a ser extraído.
 
@@ -36,7 +36,7 @@ As regras incluem as seguintes informações:
 * Os nomes das propriedades do nó que contêm o conteúdo a ser traduzido
    * A propriedade pode ser específica para um tipo de recurso específico ou para todos os tipos de recurso.
 
-Por exemplo, você pode criar uma regra que traduza o conteúdo que os autores adicionam a todos os componentes de texto nas suas páginas. A regra pode identificar o nó `/content` e a propriedade `text` do componente `core/wcm/components/text/v2/text`.
+Por exemplo, você pode criar uma regra que traduza o conteúdo que os autores adicionam a todos os componentes de texto nas suas páginas. A regra pode identificar a variável `/content` e o `text` para a `core/wcm/components/text/v2/text` componente.
 
 Existe um [console](#translation-rules-ui) que foi adicionado para configurar regras de tradução. As definições na interface do usuário preencherão o arquivo para você.
 
@@ -48,7 +48,7 @@ Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, cons
 
 ## Sintaxe de regra para páginas, componentes e ativos {#rule-syntax-for-pages-components-and-assets}
 
-Uma regra é um elemento `node` com um ou mais elementos secundários `property` e zero ou mais elementos secundários `node`:
+Uma regra é `node` elemento com um ou mais filhos `property` elementos e zero ou mais filhos `node` elementos:
 
 ```xml
 <node path="content path">
@@ -59,17 +59,17 @@ Uma regra é um elemento `node` com um ou mais elementos secundários `property`
 </node>
 ```
 
-Cada um desses elementos `node` tem as seguintes características:
+Cada um desses `node` Os elementos têm as seguintes características:
 
-* O atributo `path` contém o caminho para o nó raiz da ramificação à qual as regras se aplicam.
-* Os elementos filho `property` identificam as propriedades do nó a serem traduzidas para todos os tipos de recursos:
-   * O atributo `name` contém o nome da propriedade.
-   * O atributo opcional `translate` é igual a `false` se a propriedade não for traduzida. Por padrão, o valor é `true`. Esse atributo é útil ao substituir regras anteriores.
-* Os elementos secundários `node` identificam as propriedades do nó a serem traduzidas para tipos de recursos específicos:
-   * O atributo `resourceType` contém o caminho que é resolvido para o componente que implementa o tipo de recurso.
-   * Os elementos filho `property` identificam a propriedade do nó a ser traduzida. Use esse nó da mesma forma que os elementos secundários `property` para as regras do nó.
+* O `path` contém o caminho para o nó raiz da ramificação à qual as regras se aplicam.
+* Filho `property` Os elementos identificam as propriedades do nó a serem traduzidas para todos os tipos de recursos:
+   * O `name` contém o nome da propriedade.
+   * O `translate` atributo igual `false` se a propriedade não for traduzida. Por padrão, o valor é `true`. Esse atributo é útil ao substituir regras anteriores.
+* Filho `node` Os elementos identificam as propriedades do nó a serem traduzidas para tipos de recursos específicos:
+   * O `resourceType` contém o caminho que é resolvido para o componente que implementa o tipo de recurso.
+   * Filho `property` Os elementos identificam a propriedade do nó a ser traduzida. Usar este nó da mesma forma que o filho `property` elementos para regras de nó.
 
-A seguinte regra de exemplo faz com que o conteúdo de todas as propriedades `text` seja traduzido para todas as páginas abaixo do nó `/content`. A regra é efetiva para qualquer componente que armazene conteúdo em uma propriedade `text` , como o componente de texto.
+A seguinte regra de exemplo causa o conteúdo de todos `text` propriedades a serem traduzidas para todas as páginas abaixo do `/content` nó . A regra é eficaz para qualquer componente que armazene conteúdo em um `text` , como o componente de texto.
 
 ```xml
 <node path="/content">
@@ -77,7 +77,7 @@ A seguinte regra de exemplo faz com que o conteúdo de todas as propriedades `te
 </node>
 ```
 
-O exemplo a seguir traduz o conteúdo de todas as `text` propriedades e também traduz outras propriedades do componente de imagem. Se outros componentes tiverem propriedades com o mesmo nome, a regra não se aplica a eles.
+O exemplo a seguir traduz o conteúdo de todos `text` e também traduz outras propriedades do componente de imagem. Se outros componentes tiverem propriedades com o mesmo nome, a regra não se aplica a eles.
 
 ```xml
 <node path="/content">
@@ -98,10 +98,10 @@ Use a sintaxe de regra a seguir para incluir ativos incorporados ou referenciado
 <assetNode resourceType="path to component" assetReferenceAttribute="property that stores asset"/>
 ```
 
-Cada elemento `assetNode` tem as seguintes características:
+Cada `assetNode` tem as seguintes características:
 
-* Um atributo `resourceType` que é igual ao caminho que é resolvido para o componente
-* Um atributo `assetReferenceAttribute` que é igual ao nome da propriedade que armazena o binário do ativo (para ativos incorporados) ou o caminho para o ativo referenciado
+* One `resourceType` atributo que é igual ao caminho que é resolvido para o componente
+* One `assetReferenceAttribute` atributo que é igual ao nome da propriedade que armazena o binário do ativo (para ativos incorporados) ou o caminho para o ativo referenciado
 
 O exemplo a seguir extrai imagens do componente de imagem:
 
@@ -111,7 +111,7 @@ O exemplo a seguir extrai imagens do componente de imagem:
 
 ## Substituição de regras {#overriding-rules}
 
-O arquivo `translation_rules.xml` consiste em um elemento `nodelist` com vários elementos secundários `node`. AEM lê a lista de nós de cima para baixo. Quando várias regras têm como alvo o mesmo nó, a regra que está menor no arquivo é usada. Por exemplo, as seguintes regras fazem com que todo o conteúdo nas propriedades `text` seja traduzido, exceto para a ramificação `/content/mysite/en` das páginas:
+O `translation_rules.xml` O arquivo consiste em um `nodelist` elemento com vários filhos `node` elementos. AEM lê a lista de nós de cima para baixo. Quando várias regras têm como alvo o mesmo nó, a regra que está menor no arquivo é usada. Por exemplo, as seguintes regras causam todo o conteúdo em `text` propriedades a serem traduzidas, exceto para `/content/mysite/en` ramificação de páginas:
 
 ```xml
 <nodelist>
@@ -126,9 +126,9 @@ O arquivo `translation_rules.xml` consiste em um elemento `nodelist` com vários
 
 ## Propriedades do filtro {#filtering-properties}
 
-Você pode filtrar nós que têm uma propriedade específica usando um elemento `filter` .
+Você pode filtrar nós que têm uma propriedade específica usando um `filter` elemento.
 
-Por exemplo, as seguintes regras fazem com que todo o conteúdo nas propriedades `text` seja traduzido, exceto para os nós que têm a propriedade `draft` definida como `true`.
+Por exemplo, as seguintes regras causam todo o conteúdo em `text` propriedades a serem traduzidas, exceto para os nós que têm a propriedade `draft` defina como `true`.
 
 ```xml
 <nodelist>
@@ -147,17 +147,17 @@ Um console também está disponível para configurar regras de tradução.
 
 Para acessá-lo:
 
-1. Navegue até **Ferramentas** e depois **Geral**.
+1. Navegar para **Ferramentas** e depois **Geral**.
 
-1. Selecione **Configuração de Tradução**.
+1. Selecionar **Configuração de tradução**.
 
 Na interface do usuário das regras de tradução, é possível:
 
-1. **Adicionar contexto**, que permite que você adicione um caminho.
+1. **Adicionar contexto**, que permite adicionar um caminho.
 
    ![Adicionar contexto de tradução](../assets/add-translation-context.png)
 
-1. Use o navegador de caminho para selecionar o contexto necessário e toque ou clique no botão **Confirm** para salvar.
+1. Use o navegador de caminho para selecionar o contexto necessário e toque ou clique no **Confirmar** para salvar.
 
    ![Selecionar contexto](../assets/select-context.png)
 
@@ -176,13 +176,13 @@ Há quatro atributos que você pode alterar por meio da interface do usuário:
 
 **`isDeep`**  é aplicável em filtros de nó e é verdadeiro por padrão. Verifica se o nó (ou seus ancestrais) contém essa propriedade com o valor da propriedade especificado no filtro. Se falso, ele só verifica o nó atual.
 
-Por exemplo, nós filho são adicionados a um trabalho de tradução mesmo quando o nó pai tem a propriedade `draftOnly` definida como true para sinalizar o conteúdo de rascunho. Aqui `isDeep` entra em cena e verifica se os nós pai têm a propriedade `draftOnly` como true e exclui esses nós filhos.
+Por exemplo, nós filho são adicionados a um trabalho de tradução mesmo quando o nó pai tem a propriedade `draftOnly` definido como true para sinalizar o conteúdo de rascunho. Aqui `isDeep` entra em reprodução e verifica se os nós pai têm propriedade `draftOnly` como true e exclui esses nós filho.
 
-No editor, você pode marcar/desmarcar **Is Deep** na guia **Filters**.
+No editor, você pode marcar/desmarcar **É Profundo** no **Filtros** guia .
 
 ![Regras de filtro](../assets/translation-rules-editor-filters.png)
 
-Este é um exemplo do XML resultante quando **Is Deep** está desmarcado na interface do usuário:
+Este é um exemplo do XML resultante quando **É Profundo** está desmarcada na interface do usuário:
 
 ```xml
  <filter>
@@ -194,21 +194,21 @@ Este é um exemplo do XML resultante quando **Is Deep** está desmarcado na inte
 
 **`inherit`** é aplicável às propriedades. Por padrão, cada propriedade é herdada, mas se você quiser que alguma propriedade não seja herdada pelo filho, poderá marcar essa propriedade como false para que seja aplicada somente a esse nó específico.
 
-Na interface do usuário, você pode marcar/desmarcar **Herdar** na guia **Propriedades**.
+Na interface do usuário, você pode marcar/desmarcar **Herdar** no **Propriedades** guia .
 
 ### traduzir {#translate}
 
 **`translate`** é usada apenas para especificar se uma propriedade deve ser traduzida ou não.
 
-Na interface do usuário, você pode marcar/desmarcar **Translate** na guia **Properties**.
+Na interface do usuário, você pode marcar/desmarcar **Traduzir** no **Propriedades** guia .
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** é usado para propriedades que não têm texto, mas códigos de idioma, por exemplo  `jcr:language`. O usuário não está traduzindo o texto, mas o idioma local da origem para o destino. Essas propriedades não são enviadas para tradução.
+**`updateDestinationLanguage`** é usado para propriedades que não têm texto, mas códigos de idioma, por exemplo `jcr:language`. O usuário não está traduzindo o texto, mas o idioma local da origem para o destino. Essas propriedades não são enviadas para tradução.
 
-Na interface do usuário, você pode marcar/desmarcar **Translate** na guia **Properties** para modificar esse valor, mas para as propriedades específicas que têm códigos de idioma como valor.
+Na interface do usuário, você pode marcar/desmarcar **Traduzir** no **Propriedades** para modificar esse valor, mas para as propriedades específicas que têm códigos de idioma como valor.
 
-Para ajudar a esclarecer a diferença entre `updateDestinationLanguage` e `translate`, aqui está um exemplo simples de um contexto com apenas duas regras:
+Para ajudar a esclarecer a diferença entre `updateDestinationLanguage` e `translate`, este é um exemplo simples de um contexto com apenas duas regras:
 
 ![exemplo updateDestinationLanguage](../assets/translation-rules-updatedestinationlanguage.png)
 
@@ -221,9 +221,9 @@ O resultado no xml terá esta aparência:
 
 ## Editar o arquivo de regras manualmente {#editing-the-rules-file-manually}
 
-O arquivo `translation_rules.xml` instalado com AEM contém um conjunto padrão de regras de tradução. Você pode editar o arquivo para atender aos requisitos dos seus projetos de tradução. Por exemplo, você pode adicionar regras para que o conteúdo dos componentes personalizados seja traduzido.
+O `translation_rules.xml` O arquivo instalado com AEM contém um conjunto padrão de regras de tradução. Você pode editar o arquivo para atender aos requisitos dos seus projetos de tradução. Por exemplo, você pode adicionar regras para que o conteúdo dos componentes personalizados seja traduzido.
 
-Se você editar o arquivo `translation_rules.xml`, mantenha uma cópia de backup em um pacote de conteúdo. A reinstalação de determinados pacotes de AEM pode substituir o arquivo `translation_rules.xml` atual pelo original. Para restaurar as regras nessa situação, você pode instalar o pacote que contém sua cópia de backup.
+Se você editar o `translation_rules.xml` mantenha uma cópia de backup em um pacote de conteúdo. A reinstalação de determinados pacotes de AEM pode substituir o pacote atual `translation_rules.xml` com o original. Para restaurar as regras nessa situação, você pode instalar o pacote que contém sua cópia de backup.
 
 >[!NOTE]
 >

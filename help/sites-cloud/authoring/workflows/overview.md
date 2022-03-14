@@ -1,14 +1,13 @@
 ---
 title: Trabalhar com fluxos de trabalho
 description: Os fluxos de trabalho no AEM permitem automatizar uma série de etapas realizadas em uma página ou ativo.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 100%
 
 ---
-
 
 # Trabalhar com fluxos de trabalho {#working-with-workflows}
 
@@ -27,5 +26,5 @@ Geralmente:
 
 As seguintes páginas abordam a:
 
-* [Aplicação de fluxos de trabalho às páginas](/help/sites-cloud/authoring/workflows/applying.md)
-* [Participação em fluxos de trabalho](/help/sites-cloud/authoring/workflows/participating.md)
+* [Aplicação de fluxos de trabalho a páginas](/help/sites-cloud/authoring/workflows/applying.md)
+* [Participar de fluxos de trabalho](/help/sites-cloud/authoring/workflows/participating.md)

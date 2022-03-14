@@ -1,14 +1,14 @@
 ---
 title: Suporte a miniaturas para vídeos no Screens as a Cloud Service
-description: Esta página descreve como adicionar suporte de miniatura a vídeos no Screens as a Cloud Service.
+description: Esta página descreve como adicionar suporte a miniaturas para vídeos no Screens as a Cloud Service.
 index: true
-source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
+exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Suporte a miniaturas para vídeos {#thumbnail-support-videos}
 
@@ -31,14 +31,14 @@ O suporte a miniaturas permite:
 
 >[!IMPORTANT]
 >**Pré-requisitos**
->Antes de aprender a usar miniaturas em vídeos, certifique-se de criar representações de vídeo para canais no Screens as a Cloud Service. Consulte [aqui](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) para obter mais detalhes.
+>Antes de aprender a usar miniaturas para vídeos, certifique-se de criar representações de vídeo para canais no projeto as a Cloud Service do Screens. Consulte [here](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) para obter mais detalhes.
 
 Siga as etapas abaixo para usar a miniatura em vídeos:
 
 1. Navegue até um canal existente do Screens ou crie um novo canal.
 
    >[!NOTE]
-   >Para saber como criar um canal e adicionar conteúdo a um canal, consulte [Criação e gerenciamento de um canal no Screens como um Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
+   >Para saber como criar um canal e adicionar conteúdo a um canal, consulte [Criação e gerenciamento de um canal no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
 
 1. Selecione o canal e clique em **Editar** na barra de ações para abrir o editor.
 
@@ -48,15 +48,15 @@ Siga as etapas abaixo para usar a miniatura em vídeos:
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Selecione o vídeo e clique no ícone *chave* para abrir as propriedades do vídeo.
+1. Selecione o vídeo e clique no botão *chave inglesa* ícone para abrir as propriedades do vídeo.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. A caixa de diálogo **Vídeo** é aberta, onde você visualizará a área de soltar **Miniatura**.
+1. O **Vídeo** será aberta onde você visualizará a **Miniatura** área de soltar.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
-1. Arraste e solte uma imagem do seletor de ativos para a área de soltar **Miniatura** e clique em **Concluído**.
+1. Arraste e solte uma imagem do seletor de ativos para a **Miniatura** solte a zona e clique em **Concluído**.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
 

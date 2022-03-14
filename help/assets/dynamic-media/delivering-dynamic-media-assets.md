@@ -1,13 +1,13 @@
 ---
 title: Fornecer ativos da Dynamic Media
 description: Saiba como fornecer ativos do Dynamic Media.
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 2%
+source-wordcount: '319'
+ht-degree: 10%
 
 ---
 
@@ -32,12 +32,12 @@ Para obter mais informações, consulte os seguintes tópicos:
 
 * [Adicionar ativos Dynamic Media às páginas da Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Incorporar o visualizador de vídeo ou imagem a uma página da Web](/help/assets/dynamic-media/embed-code.md)
-* [Ativar a proteção de hotlink no Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
+* [Ativar proteção de hotlink no Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Vincular URLs ao seu aplicativo web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Fornecer imagens otimizadas para um site responsivo](/help/assets/dynamic-media/responsive-site.md)
 * [Entrega de conteúdo HTTP2](/help/assets/dynamic-media/http2faq.md)
-* [Invalidar o cache CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [Invalidar o cache CDN por meio do Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [Invalidar o cache da CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [Invalidar o cache da CDN por meio do Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [Usar conjuntos de regras para transformar URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## Entrega HTTP/2 de ativos do Dynamic Media {#http-delivery-of-dynamic-media-assets}

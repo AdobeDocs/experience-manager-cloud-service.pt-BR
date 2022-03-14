@@ -1,7 +1,8 @@
 ---
 title: Visão geral da ferramenta Transferência de conteúdo
 description: Visão geral da ferramenta Transferência de conteúdo
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 58%
@@ -58,4 +59,3 @@ Na fase de assimilação, para aplicar o conteúdo delta sobre o conteúdo atual
 ## O que vem a seguir {#whats-next}
 
 Depois de saber mais sobre a ferramenta Transferência de conteúdo e sua visão geral que descreve essa ferramenta podem ser usadas para mover o conteúdo existente de uma instância de AEM de origem (no local ou AMS) para a instância de destino do AEM Cloud Service, você deve revisar [Pré-requisitos para a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
-

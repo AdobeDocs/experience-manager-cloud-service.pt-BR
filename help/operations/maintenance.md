@@ -1,15 +1,15 @@
 ---
-title: Tarefas de manutenção em AEM as a Cloud Service
-description: Tarefas de manutenção em AEM as a Cloud Service
+title: Tarefas de manutenção no AEM as a Cloud Service
+description: Tarefas de manutenção no AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 9177741a57bb16c36b51d1a042538b9cee20a0b8
 workflow-type: tm+mt
 source-wordcount: '881'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# Tarefas de manutenção em AEM as a Cloud Service
+# Tarefas de manutenção no AEM as a Cloud Service
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"

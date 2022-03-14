@@ -1,16 +1,15 @@
 ---
 title: Notas de versão para 2020.2.0
 description: Notas de versão para 2020.2.0
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 005c4756-44c6-4af5-9b0c-0fc07bd211a0
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 100%
 
 ---
 
-
-# Notas de versão para AEM as a Cloud Service 2020.2.0{#release-notes}
+# Notas de versão do AEM as a Cloud Service 2020.2.0 {#release-notes}
 
 Esta página descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.2.0.
 
@@ -31,7 +30,7 @@ Siga esta seção para saber mais sobre as novidades e atualizações do Cloud M
 * A etapa de Verificação de código agora tem um registro que pode ser baixado.
 * A planilha que contém os problemas detectados durante a verificação de código agora tem uma coluna com um link para a documentação da regra específica.
 
-### Correções de erros {#bug-fixes}
+### Correções de erros  {#bug-fixes}
 
 * Às vezes, as políticas de segurança do navegador impediam que determinados botões na tela de execução do pipeline funcionassem corretamente.
 * Os links Visão geral, Ambientes e Atividade às vezes ficavam disponíveis na página de aterrissagem do Cloud Manager.

@@ -7,7 +7,7 @@ exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
@@ -24,7 +24,7 @@ Com o Adobe Experience Manager (AEM) as a Cloud Service, é possível usar os Fr
 >O GraphQL é usado atualmente em dois cenários (separados) no Adobe Experience Manager (AEM) as a Cloud Service:
 >
 >* [O AEM Commerce consome dados de uma plataforma de comércio via GraphQL](/help/commerce-cloud/integrating/magento.md).
->* [AEM Fragmentos de conteúdo trabalham com a API GraphQL AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos](/help/headless/graphql-api/content-fragments.md).
+>* [Fragmentos de conteúdo do AEM trabalham em conjunto com a API GraphQL do AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos](/help/headless/graphql-api/content-fragments.md).
 
 
 ## CMS sem periféricos {#headless-cms}
@@ -43,7 +43,7 @@ Em termos de criação de Fragmentos de conteúdo no AEM isso significa que:
 
 ## GraphQL - Uma visão geral {#graphql-overview}
 
-GraphQL é:
+O GraphQL é:
 
 * &quot;*...um idioma de consulta para APIs e um tempo de execução para realizar essas consultas com seus dados existentes.*&quot;.
 
@@ -103,10 +103,10 @@ O **[Referência do fragmento](/help/assets/content-fragments/content-fragments-
 
 Para ajudar a projetar e desenvolver os Modelos de fragmentos de conteúdo, você pode visualizar [Saída JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
 
-## Saiba como usar GraphQL com AEM - Conteúdo de amostra e consultas {#learn-graphql-with-aem-sample-content-queries}
+## Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas {#learn-graphql-with-aem-sample-content-queries}
 
 Consulte [Saiba como usar GraphQL com AEM - Conteúdo de amostra e consultas](/help/headless/graphql-api/sample-queries.md) para obter uma introdução ao uso da API GraphQL da AEM.
 
 ## Tutorial - Introdução ao AEM Headless e GraphQL
 
-Procurando um tutorial prático? Veja [Introdução ao AEM Headless e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) Tutorial completo que ilustra como criar e expor conteúdo usando as APIs GraphQL da AEM e consumido por um aplicativo externo, em um cenário de CMS sem cabeçalho.
+Procurando um tutorial prático? Veja o tutorial completo de [Introdução ao AEM Headless e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR) que ilustra como criar e expor conteúdo usando as APIs GraphQL do AEM e consumi-lo por meio de um aplicativo externo, em um cenário de CMS headless.

@@ -7,7 +7,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '2033'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -53,7 +53,7 @@ Esta e as seguintes páginas abordam as tarefas de criação, configuração, ma
 >* [Personalização e extensão de fragmentos de conteúdo](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [Fragmentos de conteúdo configuram componentes para renderização](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
->* [AEM API GraphQL para uso com Fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
+>* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
 
 
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo de delivery, como:
@@ -295,7 +295,7 @@ O [Site WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.m
 
 O projeto WKND inclui:
 
-* Modelos de fragmentos do conteúdo disponíveis em:
+* Modelos de fragmentos de conteúdo disponíveis em:
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Fragmentos de conteúdo (e outro conteúdo) disponíveis em:

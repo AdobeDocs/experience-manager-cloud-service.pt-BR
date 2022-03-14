@@ -1,15 +1,15 @@
 ---
-title: jornada do complemento Demonstrações de referência AEM
+title: Jornada do complemento de demonstrações de referência do AEM
 description: Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de Demonstrações de Referência de AEM a um ambiente de sandbox com configuração mínima de AEM e poder testar os recursos avançados de AEM com exemplos avançados com base nas práticas recomendadas.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# jornada do complemento Demonstrações de referência AEM {#reference-demos-add-on-journey}
+# Jornada do complemento de demonstrações de referência do AEM {#reference-demos-add-on-journey}
 
 Comece aqui para obter uma jornada guiada sobre como adicionar facilmente o complemento de Demonstrações de Referência de AEM a um ambiente de sandbox com configuração mínima de AEM e poder testar os recursos avançados do AEM Sites e do AEM Screens com exemplos avançados com base nas práticas recomendadas.
 
@@ -42,7 +42,7 @@ Você explorará vários tópicos nesta jornada. Os artigos a seguir fornecem um
 
 | # | Artigo | Descrição |
 |---|---|---|
-| 0 | jornada do complemento Demonstrações de referência AEM | Este documento |
+| 0 | Jornada do complemento de demonstrações de referência do AEM | Este documento |
 | 1 | [Entender a instalação do complemento de demonstração de referência](installation.md) | Saiba mais sobre o Cloud Manager e como ele é usado para instalar o complemento. |
 | 2 | [Criar um programa e um pipeline](create-program.md) | Saiba como configurar um novo programa e pipeline para implantar o complemento. |
 | 3 | [Criar um site de demonstração](create-site.md) | Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré-configurados. |

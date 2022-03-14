@@ -1,83 +1,83 @@
 ---
-title: AEM Headless Content Architect Journey
-description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.
+title: Jornada do arquiteto de conteúdo do AEM Headless
+description: Uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Content Modeling for Headless with AEM - An Introduction {#architect-headless-introduction}
+# Modelagem de conteúdo para headless com o AEM - uma introdução {#architect-headless-introduction}
 
-[](overview.md)
+Nesta parte do [jornada do AEM Headless Content Architect](overview.md), você pode aprender os conceitos e a terminologia (básica) necessários para entender a modelagem de conteúdo para entrega de conteúdo sem periféricos com o Adobe Experience Manager (AEM) as a Cloud Service.
 
-This document helps you understand headless content delivery, how AEM supports headless, and how content is modeled for headless. After reading you should:
+Este documento ajuda você a entender a entrega sem periféricos, como o AEM suporta periféricos e como o conteúdo é modelado para ficar sem periféricos. Depois de ler, você deve:
 
-* Understand the basic concepts of headless content delivery.
-* Be familiar with how AEM supports headless and content modeling.
+* Entenda os conceitos básicos de entrega de conteúdo sem periféricos.
+* Familiarize-se com o modo como o AEM suporta modelagem sem periféricos e de conteúdo.
 
 ## Objetivo {#objective}
 
-* ****
-* ****
+* **Público**: Iniciante
+* **Objetivo**: Apresente os conceitos e a terminologia relevantes para a Modelagem de conteúdo sem cabeçalho.
 
-## Full-Stack Content Delivery {#full-stack}
+## Entrega de conteúdo em pilha completa {#full-stack}
 
-Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have leveraged them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
+Desde o aumento dos sistemas de gerenciamento de conteúdo (CMSs) fáceis de usar e em larga escala, as organizações os aproveitaram como um local central para gerenciar mensagens, identidade visual e comunicações. Usar o CMS como ponto central para administrar experiências melhorou a eficiência, eliminando a necessidade de duplicar tarefas em sistemas diferentes.
 
-![](/help/journey-headless/developer/assets/full-stack.png)
+![O CMS clássico de pilha completa](/help/journey-headless/developer/assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
+Em um CMS de pilha completa, toda a funcionalidade de manipulação de conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
 
-* There is one system to maintain.
-* Content is managed centrally.
-* All services of the system are integrated.
-* Content authoring is seamless.
+* Há um sistema para manter.
+* O conteúdo é gerenciado centralmente.
+* Todos os serviços do sistema estão integrados.
+* A criação de conteúdo é contínua.
 
-So if new channel needs to be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
+Portanto, se um novo canal precisar ser adicionado ou se o suporte para novos tipos de experiências for necessário, um (ou mais) novo componente poderá ser inserido na pilha e só há um lugar para fazer alterações.
 
-![](/help/journey-headless/developer/assets/adding-channel.png)
+![Adicionar um novo canal à pilha](/help/journey-headless/developer/assets/adding-channel.png)
 
-However the complexity of the dependencies within the stack quickly become apparent as other items in the stack need to be adjusted to accommodate the changes.
+No entanto, a complexidade das dependências na pilha rapidamente se torna aparente, pois outros itens na pilha precisam ser ajustados para acomodar as alterações.
 
-## The Head in Headless {#the-head}
+## A Cabeça em Sem Cabeça {#the-head}
 
-The head of any system is generally the output renderer of that system, typically in the form of a GUI or other graphical output.
+O cabeçalho de qualquer sistema é geralmente o renderizador de saída desse sistema, normalmente na forma de uma GUI ou outro resultado gráfico.
 
-When we talk about a headless CMS, the CMS manages the content and continues to deliver it to consumers. ********
+Quando falamos de um CMS sem interface, o CMS gerencia o conteúdo e continua a entregá-lo aos consumidores. No entanto, apenas entregando a variável **conteúdo** de forma padronizada, um CMS sem periféricos omita a renderização final de output, deixando o **apresentação** do conteúdo para o serviço de consumo.
 
-![](/help/journey-headless/developer/assets/headless-cms.png)
+![CMS sem periféricos](/help/journey-headless/developer/assets/headless-cms.png)
 
-The consuming services, be they AR experiences, a webshop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
+Os serviços que consomem, sejam experiências de AR, um webshop, experiências móveis, aplicativos web progressivos (PWA), etc., absorvem conteúdo do CMS sem cabeçalho e fornecem sua própria renderização. Eles cuidam de fornecer suas próprias cabeças para o seu conteúdo.
 
-Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
+Omitir a cabeça simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 
-## Content Modeling {#content-modeling}
+## Modelagem de conteúdo {#content-modeling}
 
-Content Modeling (also known as data modeling) is your specialty, so what needs to be considered when modeling for headless?
+A modelagem de conteúdo (também conhecida como modelagem de dados) é sua especialidade, portanto, o que precisa ser considerado ao modelar para imutável?
 
-For the headless applications to be able to access your content, and do something with it, the content really needs to have a predefined structure. **
+Para que os aplicativos sem periféricos possam acessar seu conteúdo e fazer algo com ele, o conteúdo precisa realmente ter uma estrutura predefinida. Seria possível ter seu conteúdo como de forma livre, mas isso faria vida *very* complicado para os aplicativos.
 
-**** ****
+Para AEM você, como um Arquiteto de conteúdo, executará a modelagem de conteúdo para projetar uma variedade de **Modelos de fragmentos do conteúdo**. Eles definem a estrutura usada quando os autores de conteúdo criam a variável **Fragmentos de conteúdo** que contêm o conteúdo.
 
-### Accessing the Content {#access-content}
+### Acesso ao conteúdo {#access-content}
 
-This is more of a development detail - but it might interest you, just to complete the story.
+Isso é mais um detalhe de desenvolvimento - mas pode lhe interessar, apenas para concluir a história.
 
-Once you&#39;ve created the Content Fragment Models, and your authors have used them to generate the content, the headless applications will need to access this content.
+Depois de criar os Modelos de fragmento de conteúdo, e seus autores os usaram para gerar o conteúdo, os aplicativos sem cabeçalho precisarão acessar esse conteúdo.
 
-Adobe Experience Manager (AEM) as a Cloud Service, can selectively access your Content Fragments using the AEM GraphQL API, to return only the content that is needed. **
+O Adobe Experience Manager (AEM) as a Cloud Service pode acessar seletivamente seus Fragmentos de conteúdo usando a API GraphQL AEM, para retornar somente o conteúdo necessário. Usando a API, um desenvolvedor pode formular consultas que selecionam conteúdo específico. Esse processo de seleção é baseado em *your* Modelos de fragmentos do conteúdo.
 
-This means your project can realize headless delivery of structured content for use in your applications.
+Isso significa que seu projeto pode realizar a entrega sem interface de conteúdo estruturado para uso em seus aplicativos.
 
-## What&#39;s Next {#whats-next}
+## O que vem a seguir {#whats-next}
 
-[](basics.md)
+Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Saiba mais sobre as noções básicas de modelagem com Modelos de fragmentos de conteúdo](basics.md).
 
 ## Recursos adicionais {#additional-resources}
 
-* AEM Headless Developer Journey
-   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
-   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
+* jornada do desenvolvedor sem periféricos do AEM
+   * [Saiba mais sobre o desenvolvimento sem periféricos do CMS](/help/journey-headless/developer/learn-about.md)
+   * [Saiba como modelar seu conteúdo](/help/journey-headless/developer/model-your-content.md)

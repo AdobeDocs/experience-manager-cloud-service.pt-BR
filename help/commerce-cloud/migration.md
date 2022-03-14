@@ -5,7 +5,7 @@ exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 21%
+ht-degree: 45%
 
 ---
 
@@ -15,11 +15,11 @@ Este guia ajuda a identificar as áreas que você precisa atualizar para a migra
 
 ## Complemento CIF
 
-Para o Experience Manager as a Cloud Service, o complemento CIF é a única solução de integração comercial compatível para soluções comerciais Adobe Commerce e de terceiros. O complemento CIF é implantado automaticamente para clientes no Experience Manager as a Cloud Service, não é necessária implantação manual. Consulte [Introdução ao AEM Commerce as a Cloud Service](getting-started.md).
+Para o Experience Manager as a Cloud Service, o complemento CIF é a única solução de integração comercial compatível para soluções comerciais do Adobe Commerce e de terceiros. O complemento CIF é implantado automaticamente para clientes no Experience Manager as a Cloud Service; não é necessária implantação manual. Consulte [Introdução ao AEM Commerce as a Cloud Service](getting-started.md).
 
 Para apoiar projetos que implantam o Adobe da CIF, [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components).
 
-O complemento CIF está disponível para o AEM 6.5 e por meio do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). Ele é compatível e fornece os mesmos recursos do complemento CIF para o Experience Manager as a Cloud Service, não sendo necessário fazer ajustes.
+O complemento CIF está disponível para o AEM 6.5 e por meio do [Portal de distribuição de softwares](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). Ele é compatível e fornece os mesmos recursos do complemento CIF para o Experience Manager as a Cloud Service, não sendo necessário fazer ajustes.
 
 A CIF clássica com suas dependências não está mais disponível. Código que depende desta versão da CIF usando `com.adobe.cq.commerce.api` As APIs do Java devem ser ajustadas ao complemento CIF e seus princípios.
 

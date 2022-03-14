@@ -1,15 +1,15 @@
 ---
-title: Perguntas frequentes as a Cloud Service do Screens
+title: Perguntas frequentes sobre o Screens as a Cloud Service
 description: Esta página descreve as perguntas frequentes as a Cloud Service do Screens.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
 source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Perguntas frequentes as a Cloud Service do Screens {#screens-cloud-faqs}
+# Perguntas frequentes sobre o Screens as a Cloud Service {#screens-cloud-faqs}
 
 A seção a seguir fornece respostas às Perguntas frequentes relacionadas ao projeto do Screens as a Cloud Service.
 
