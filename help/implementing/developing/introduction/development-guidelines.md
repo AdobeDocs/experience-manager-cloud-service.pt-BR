@@ -2,9 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Diretrizes de desenvolvimento do AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
+source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2356'
 ht-degree: 2%
 
 ---
@@ -55,15 +55,19 @@ Da mesma forma, com tudo o que está acontecendo de forma assíncrona, como agir
 
 ## Conexões HTTP de saída {#outgoing-http-connections}
 
-É altamente recomendável que todas as conexões HTTP de saída definam conexões razoáveis e tempos limite de leitura. Para código que não aplica esses tempos limite, as instâncias AEM executadas em AEM as a Cloud Service impõem um tempo limite global. Esses valores de tempo limite são de 10 segundos para chamadas de conexão e 60 segundos para chamadas de leitura para conexões usadas pelas seguintes bibliotecas Java populares:
+É altamente recomendável que todas as conexões HTTP de saída definam conexões razoáveis e tempos limite de leitura; os valores sugeridos são 1 segundo para o tempo limite da conexão e 5 segundos para o tempo limite de leitura. Os números exatos devem ser determinados com base no desempenho do sistema de back-end que manipula essas solicitações.
+
+Para código que não aplica esses tempos limite, as instâncias AEM executadas em AEM as a Cloud Service impõem um tempo limite global. Esses valores de tempo limite são de 10 segundos para chamadas de conexão e 60 segundos para chamadas de leitura para conexões.
 
 A Adobe recomenda o uso da variável [Biblioteca 4.x do Apache HttpComponents Client](https://hc.apache.org/httpcomponents-client-ga/) para fazer conexões HTTP.
 
 As alternativas que são conhecidas por funcionar, mas que podem exigir que você mesmo forneça a dependência, são:
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) e/ou [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (Fornecido por AEM)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) e/ou [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (Fornecido por AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (não recomendado, pois está desatualizado e substituído pela versão 4.x)
 * [OK Http](https://square.github.io/okhttp/) (Não fornecido pelo AEM)
+
+Ao lado de fornecer limites de tempo, também é necessário lidar com limites de tempo e com códigos de status HTTP inesperados.
 
 ## Nenhuma personalização da interface clássica {#no-classic-ui-customizations}
 
