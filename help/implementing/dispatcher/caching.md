@@ -3,9 +3,9 @@ title: Armazenamento em cache no AEM as a Cloud Service
 description: 'Armazenamento em cache no AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 265999e5e92fc7b0f78f41bee4545ca6cee618a5
+source-git-commit: b490d581532576bc526f9bd166003df7f2489495
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1549'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Isso pode ser útil, por exemplo, quando sua lógica comercial requer o ajuste f
    >Os outros métodos, incluindo o [dispatcher-ttl AEM projeto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), não substituirá os valores com êxito.
 
    >[!NOTE]
-   >Observe que o dispatcher ainda pode armazenar o conteúdo em cache de acordo com seu próprio [regras de armazenamento em cache](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Para tornar o conteúdo realmente privado, você deve garantir que ele não seja armazenado em cache pelo dispatcher.
+   >Observe que o dispatcher ainda pode armazenar o conteúdo em cache de acordo com seu próprio [regras de armazenamento em cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Para tornar o conteúdo realmente privado, você deve garantir que ele não seja armazenado em cache pelo dispatcher.
 
 ### Bibliotecas do lado do cliente (js, css) {#client-side-libraries}
 
