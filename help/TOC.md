@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
 source-wordcount: '3434'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -219,7 +219,7 @@ ht-degree: 98%
       + Criação do site {#site-creation}
          + [Criação de um novo site](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Ativar pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
-         + [Usar o painel do site](/help/sites-cloud/administering/site-creation/site-rail.md)
+         + [Uso do painel do site](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [Modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [Temas do site](/help/sites-cloud/administering/site-creation/site-themes.md)
          + Jornada de criação rápida de site do AEM {#quick-site}
@@ -640,28 +640,28 @@ ht-degree: 98%
          + [Programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
          + [Criação de programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [Programas do Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [Criação de programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [Editar programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [Criação de programas do sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+         + [Programas de edição](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Ambientes de hibernação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Criação de um projeto de aplicativo do AEM {#create-application-project}
          + [Assistente de criação de projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [Ambiente de build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [Ambiente de criação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md)
       + Gerenciamento do código {#managing-code}
          + [Manuseio da versão do projeto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Repositórios no Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [Acesso a repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Uso do Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [Usando vários repositórios](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [Configuração da Equipe de Desenvolvimento Empresarial](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Uso de vários repositórios](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [Configuração da equipe de desenvolvimento corporativa](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [Variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md)
       + Pipelines CI-CD do Cloud Manager {#cicd-pipelines}
          + [Introdução](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configuração de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configurar um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Gerenciar pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
-      + [Implantação do código](/help/implementing/cloud-manager/deploy-code.md)
+      + [Implantação de código](/help/implementing/cloud-manager/deploy-code.md)
       + Noções básicas dos resultados de teste {#test-results}
          + [Visão geral](/help/implementing/cloud-manager/overview-test-results.md)
          + [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md)
@@ -671,7 +671,7 @@ ht-degree: 98%
          + [Teste da interface](/help/implementing/cloud-manager/ui-testing.md)
       + [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md)
       + [Relatórios de SLA](/help/implementing/cloud-manager/sla-reporting.md)
-      + [Novo Relic Um](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [Novo Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
       + Gerenciar certificados SSL {#manage-ssl-certificates}
          + [Introdução](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
