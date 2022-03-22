@@ -1,13 +1,13 @@
 ---
-title: Configurar o conector de tradução
+title: Configurar o conector de tradução (AEM Sites)
 description: Saiba como conectar AEM a um serviço de tradução.
 index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1168'
 ht-degree: 1%
 
 ---

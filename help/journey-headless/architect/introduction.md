@@ -1,11 +1,11 @@
 ---
-title: Jornada do arquiteto de conteúdo do AEM Headless
+title: Modelagem de conteúdo para headless com AEM introdução
 description: Uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 2%
+source-wordcount: '716'
+ht-degree: 1%
 
 ---
 

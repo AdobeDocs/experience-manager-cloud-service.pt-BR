@@ -1,8 +1,8 @@
 ---
-title: Criação de uma ramificação
-description: Esta página descreve como criar uma ramificação no Cloud Manager para Screens as a Cloud Service.
+title: Criação de um ambiente
+description: Esta página descreve como criar um ambiente no Cloud Manager para Screens as a Cloud Service.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 3%

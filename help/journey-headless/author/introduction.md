@@ -1,11 +1,11 @@
 ---
-title: jornada do autor de conteúdo sem cabeçalho do AEM
+title: Criação para headless com AEM - uma introdução
 description: Uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como criar conteúdo para o seu projeto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 3%
+source-wordcount: '650'
+ht-degree: 4%
 
 ---
 
