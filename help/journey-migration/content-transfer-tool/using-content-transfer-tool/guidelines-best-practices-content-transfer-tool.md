@@ -2,10 +2,10 @@
 title: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 description: Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6f2a306f54295ec0ec78706fec4b34313e3000c7
 workflow-type: tm+mt
-source-wordcount: '1503'
-ht-degree: 25%
+source-wordcount: '1570'
+ht-degree: 24%
 
 ---
 
@@ -56,7 +56,9 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Para usar a ferramenta Transferência de conteúdo, você precisa ser um usuário administrador na instância de origem e pertencer ao AEM local **administradores** na instância do Cloud Service para a qual você está transferindo conteúdo. Os usuários sem privilégios não poderão recuperar o token de acesso para usar a ferramenta Transferência de conteúdo.
 
-* Se a configuração **Limpar o conteúdo existente na instância do Cloud antes da assimilação** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também é verdadeiro para um usuário administrador adicionado ao **administradores** grupo. O usuário deve ser adicionado novamente ao **administradores** para recuperar o token de acesso para CTT.
+* Se a configuração **Limpar o conteúdo existente na instância do Cloud antes da assimilação** estiver ativada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Isso também é verdadeiro para um usuário administrador adicionado ao **administradores** grupo. O usuário deve ser adicionado novamente ao **administradores** para recuperar o token de acesso da ferramenta Transferência de conteúdo.
+
+* A ferramenta Transferência de conteúdo não oferece suporte à mesclagem de conteúdo de várias fontes na instância do Cloud Service de destino se o conteúdo das duas fontes for movido para os mesmos caminhos no destino. Para mover o conteúdo de várias fontes para uma única instância do Cloud Service de destino, você precisa garantir que não haja sobreposição dos caminhos de conteúdo das fontes.
 
 * O token de acesso pode expirar periodicamente após um período de tempo específico ou após a atualização do ambiente de Cloud Service. Se o token de acesso tiver expirado, você não poderá se conectar à instância do Cloud Service e precisará recuperar o novo token de acesso. O ícone de status associado a um conjunto de migração existente será alterado para uma nuvem vermelha e exibirá uma mensagem ao passar o mouse sobre ela.
 
