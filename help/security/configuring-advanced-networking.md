@@ -2,10 +2,10 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 100%
+source-wordcount: '2976'
+ht-degree: 99%
 
 ---
 
@@ -305,11 +305,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## Clientes de endereço de saída dedicado herdado {#legacy-dedicated-egress-address-customers}
-
-Se tiver sido provisionado com um IP de saída dedicado antes de 30/09/2021, seu recurso IP de saída dedicado funcionará conforme descrito abaixo.
-
-### Uso de recursos {#feature-usage}
+## Uso de recursos {#feature-usage}
 
 O recurso é compatível com código Java ou bibliotecas que resultam em tráfego de saída, desde que usem propriedades padrão do sistema Java para configurações de proxy. Na prática, isso deve incluir as bibliotecas mais comuns.
 
@@ -351,11 +347,14 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 O mesmo IP dedicado é aplicado a todos os programas de um cliente em sua Organização Adobe e para todos os ambientes em cada um de seus programas. Isso se aplica aos serviços de autor e de publicação.
 
-Somente as portas HTTP e HTTPS são compatíveis. Isso inclui HTTP/1.1 e HTTP/2 quando há criptografia.
-
 ### Considerações sobre depuração {#debugging-considerations}
 
 Para validar se o tráfego está saindo no endereço IP dedicado esperado, verifique os logs no serviço de destino, se disponível. Caso contrário, pode ser útil chamar um serviço de depuração como [https://ifconfig.me/IP](https://ifconfig.me/IP), que retornará o endereço IP de chamada.
+
+## Clientes de endereço de saída dedicado herdado {#legacy-dedicated-egress-address-customers}
+
+Se você tiver sido provisionado com um IP de saída dedicado antes de 2021.09.30, seu recurso IP de saída dedicado só oferecerá suporte a portas HTTP e HTTPS.
+Isso inclui HTTP/1.1 e HTTP/2 quando há criptografia.
 
 ## VPN (Virtual Private Network) {#vpn}
 
