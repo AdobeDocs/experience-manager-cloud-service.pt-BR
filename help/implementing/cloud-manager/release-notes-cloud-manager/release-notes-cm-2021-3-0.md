@@ -3,7 +3,7 @@ title: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.3.0
 description: Notas de versão do Cloud Manager AEM versão as a Cloud Service 2021.3.0
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -22,7 +22,7 @@ A data de lançamento do Cloud Manager AEM as a Cloud Service 2021.3.0 é 11 de 
 
 ### Novidades {#what-is-new}
 
-* Clientes com ambientes com configurações pré-existentes de Nome de domínio personalizado para [LISTAS DE PERMISSÕES de IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) e [Nomes de Domínio Personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) O verá uma mensagem sobre suas configurações existentes anteriormente e poderá se autoservir por meio da interface do usuário.
+* Clientes com ambientes com configurações pré-existentes de Nome de domínio personalizado para [LISTAS DE PERMISSÕES de IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) e [Nomes de Domínio Personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) O verá uma mensagem sobre suas configurações existentes anteriormente e poderá se autoservir por meio da interface do usuário.
 
 * Os usuários com as permissões necessárias agora podem editar um Programa, permitindo que façam o seguinte de maneira automatizada:
    * Adicionar a solução Sites a um programa existente com Ativos ou vice-versa.

@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
+source-git-commit: 3c1012469db3e8a947634d5995eaee09a632e7f8
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3417'
 ht-degree: 99%
 
 ---
@@ -675,11 +675,8 @@ ht-degree: 99%
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
       + Gerenciar certificados SSL {#manage-ssl-certificates}
          + [Introdução](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         + [Obter um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
          + [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [Visualização, atualização e substituição de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
-         + [Verificação de status de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
-         + [Excluir um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+         + [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Gerenciar nomes de domínio personalizados {#custom-domain-names}
          + [Introdução](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Obter um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)

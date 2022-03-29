@@ -2,7 +2,7 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 409bd3d701c50f40c6d4e0d85228ea183c6a2764
+source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 1%
@@ -220,7 +220,7 @@ As seguintes ações podem ser executadas no serviço de publicação para seu a
 
 * [Excluir um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-* [Verificando o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) ou [Certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn).
+* [Verificando o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) ou [Certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
 * [Verificando o status de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 

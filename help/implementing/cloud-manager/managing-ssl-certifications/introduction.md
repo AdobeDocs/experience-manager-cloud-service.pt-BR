@@ -1,50 +1,76 @@
 ---
-title: Introdução - Gerenciar certificados SSL
-description: Introdução - Gerenciar certificados SSL
+title: Introdução ao Gerenciamento de certificados SSL
+description: Saiba como o Cloud Manager oferece ferramentas de autoatendimento para instalar certificados SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 09a2c24b848364954dc5621995d0d0dc24059011
+source-git-commit: 898f7bc46a3f1b0ac93ee43fbf7b60a11682a073
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 2%
+source-wordcount: '636'
+ht-degree: 1%
 
 ---
 
-# Introdução {#introduction}
+
+# Introdução ao Gerenciamento de certificados SSL{#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Gerenciar certificados SSL"
->abstract="O Cloud Manager fornece aos clientes o recurso de autoatendimento para instalar certificados SSL por meio da interface do usuário do Cloud Manager. O Cloud Manager usa um serviço TLS da Platform para gerenciar certificados SSL e chaves privadas de propriedade de clientes e normalmente obtidas de autoridades de certificação de terceiros."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html" text="Exibir, atualizar e substituir um certificado SSL"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html" text="Verificar o status de um certificado SSL"
+>abstract="Saiba como o Cloud Manager fornece ferramentas de autoatendimento para instalar e gerenciar certificados SSL para proteger seu site para seus usuários. O Cloud Manager usa um serviço TLS de plataforma para gerenciar certificados SSL e chaves privadas de propriedade de clientes e obtidas de autoridades de certificação de terceiros."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Exibir, atualizar e substituir um certificado SSL"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Verificar o status de um certificado SSL"
 
+O Cloud Manager fornece ferramentas de autoatendimento para instalar e gerenciar certificados SSL para proteger seu site para seus usuários. O Cloud Manager usa um serviço TLS de plataforma para gerenciar certificados SSL e chaves privadas de propriedade de clientes e obtidas de autoridades de certificação de terceiros, como Let&#39;s Encrypt.
 
-O Cloud Manager fornece aos clientes o recurso de autoatendimento para instalar certificados SSL por meio da interface do usuário do Cloud Manager. O Cloud Manager usa um serviço TLS da Platform para gerenciar certificados SSL e chaves privadas de propriedade de clientes e normalmente obtidas de autoridades de certificação de terceiros, por exemplo, *Vamos criptografar*.
+## Introdução aos certificados {#certificates}
 
-## Considerações importantes {#important-considerations}
+As empresas usam certificados SSL para proteger seus sites e permitir que seus clientes confiem neles. Para usar o protocolo SSL, um servidor da Web requer o uso de um certificado SSL.
 
-* O Cloud Manager não fornece certificados SSL ou chaves privadas. Estes devem ser obtidos junto de autoridades certificadoras de terceiros. Consulte [Obter um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para saber mais.
+Quando uma entidade solicita um certificado de uma autoridade de certificação, a autoridade de certificação conclui um processo de verificação. Isso pode variar desde verificar o controle do nome de domínio até coletar documentos de registro da empresa e contratos de assinante. Depois que as informações de uma entidade forem verificadas, a CA assinará sua chave pública usando a chave privada da CA. Como todas as principais autoridades de certificados têm certificados raiz em navegadores da Web, o certificado da entidade será vinculado por meio de um *cadeia de confiança* e o navegador da Web o reconhecerá como um certificado confiável.
 
-* AEM as a Cloud Service só oferece suporte seguro `https` sites. Os clientes com vários domínios personalizados não desejarão carregar um certificado sempre que adicionarem um domínio. Portanto, esses clientes se beneficiarão ao obter um certificado com vários domínios.
+>[!IMPORTANT]
+>
+>O Cloud Manager não fornece certificados SSL ou chaves privadas. Estas devem ser obtidas junto das autoridades de certificação (AC).
 
-* AEM as a Cloud Service só aceitará certificados que estejam em conformidade com a política OV (Validação da Organização) ou EV (Validação Estendida). A política DV (Validação de Domínio) não será aceita. Além disso, qualquer certificado deve ser um certificado TLS X.509 de uma autoridade de certificação (CA) confiável com uma chave privada RSA de 2048 bits correspondente.
+## Recursos de gerenciamento SSL do Cloud Manager {#features}
 
-* AEM as a Cloud Service aceitará certificados SSL curinga para um domínio.
+O Cloud Manager oferece suporte às seguintes opções de uso do certificado SSL do cliente.
 
-* A qualquer momento, o Cloud Manager permitirá um máximo de 50 certificados SSL que podem ser associados a um ou mais ambientes em todo o Programa, mesmo que um certificado tenha expirado. No entanto, a interface do usuário do Cloud Manager permitirá que até 50 certificados SSL sejam instalados no programa com essa restrição. Normalmente, um certificado pode abranger vários domínios (até 100 SANs), portanto, considere agrupar vários domínios no mesmo certificado para permanecer abaixo desse limite.
+* Um certificado SSL pode ser usado por vários ambientes. Ou seja, pode ser adicionado uma vez e usado várias vezes.
+* Cada ambiente do Cloud Manager pode usar vários certificados.
+* Uma chave privada pode emitir vários certificados SSL.
+* Cada certificado normalmente contém vários domínios.
+* O serviço TLS da plataforma encaminha solicitações para o serviço CDN do cliente com base no certificado SSL usado para encerrar e no serviço CDN que hospeda esse domínio.
+* AEM as a Cloud Service aceita certificados SSL curinga para um domínio.
 
-O Cloud Manager é compatível com os seguintes requisitos de certificado SSL do cliente:
+## Recomendações {#recommendations}
 
-* Um certificado SSL pode ser usado por vários ambientes, ou seja, adicionar uma vez e usar várias vezes.
-* Cada Ambiente do Cloud Manager pode usar vários certificados.
-* Uma Chave privada pode emitir vários certificados SSL.
-* Cada certificado normalmente conterá vários domínios.
-* O serviço TLS da plataforma encaminha solicitações para o Serviço CDN do cliente com base no certificado SSL usado para encerrar e no Serviço CDN que hospeda esse domínio.
+AEM as a Cloud Service só oferece suporte seguro `https` sites.
 
-Usando a página Certificados SSL de interface do usuário do Cloud Manager , um usuário com permissões pode executar várias tarefas para gerenciar certificados SSL para um programa:
+* Os clientes com vários domínios personalizados não desejarão carregar um certificado sempre que adicionarem um domínio.
+* Esses clientes se beneficiarão ao obter um certificado com vários domínios.
+
+## Requisitos {#requirements}
+
+* AEM as a Cloud Service só aceitará certificados que estejam em conformidade com a política OV (Validação da Organização) ou EV (Validação Estendida).
+* Qualquer certificado deve ser um certificado TLS X.509 de uma autoridade de certificação (CA) confiável com uma chave privada RSA de 2048 bits correspondente.
+* A política DV (Validação de Domínio) não é aceita.
+* Certificados autoassinados não são aceitos.
+
+Os certificados OV e EV fornecem aos usuários informações extras validadas por CA que podem ser usadas para decidir se o proprietário de um site, remetente de um email ou signatário digital de código executável ou documentos PDF é confiável. Os certificados DV não permitem essa verificação da propriedade.
+
+## Limitações           {#limitations}
+
+A qualquer momento, o Cloud Manager permitirá a instalação de no máximo 50 certificados SSL. Eles podem ser associados a um ou mais ambientes em todo o programa e também incluir quaisquer certificados expirados.
+
+Se tiver atingido o limite, revise os certificados e considere:
+
+* Exclusão de certificados expirados.
+* Agrupar vários domínios no mesmo certificado, pois um certificado pode abranger vários domínios (até 100 SANs).
+
+## Saiba mais {#learn-more}
+
+Um usuário com as permissões necessárias pode usar o Cloud Manager para gerenciar certificados SSL para um programa. Consulte os seguintes documentos para obter mais detalhes sobre o uso desses recursos.
 
 * [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-* [Exibição, atualização ou substituição de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
-   >[!NOTE]
-   >Essas ações permitem exibir detalhes ou substituir um certificado que está prestes a expirar.
-* [Excluir um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+* [Exibição, atualização ou substituição de um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+* [Excluir um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
