@@ -1,33 +1,43 @@
 ---
 title: Verificação de status do registro DNS
-description: Verificação de status do registro DNS
+description: Saiba como determinar se as configurações de DNS estão sendo resolvidas corretamente usando o Cloud Manager.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 5%
+source-wordcount: '253'
+ht-degree: 3%
 
 ---
 
 # Verificação de status do registro DNS {#check-dns-record-status}
 
-Você pode determinar se o nome de domínio está sendo resolvido corretamente para o site AEM as a Cloud Service clicando no ícone Status do registro DNS na tabela na tabela Ambientes da página Configurações de domínio .
+No Cloud Manager, você pode determinar se o nome de domínio está sendo resolvido corretamente para o seu site as a Cloud Service AEM.
 
-O Cloud Manager acionará automaticamente uma pesquisa de DNS quando o Nome de domínio personalizado for verificado e implantado pela primeira vez com êxito. Para tentativas subsequentes, é necessário selecionar ativamente a variável **resolver novamente** ícone ao lado do status.
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
 
-O Cloud Manager realiza uma pesquisa de DNS para o nome de domínio e exibe uma das seguintes mensagens de status:
+1. Navegue até o **Ambientes** da tela **Visão geral** página.
 
-* **Status de DNS não detectado**
-O status de DNS não será detectado até que o nome de domínio personalizado tenha sido verificado e implantado com êxito. Esse status também é observado quando o nome do Domínio personalizado está em processo de exclusão.
+1. Clique em **Configurações de domínio** no painel de navegação esquerdo.
 
-* **O DNS resolve incorretamente**
-Isso indica que a configuração de registros DNS ainda não foi resolvida/apontada ou está incorreta.
+1. Clique no botão **Status** ícone para o nome do domínio.
 
-   >[!NOTE]
-   >Você deve configurar um `CNAME` ou `A-record` seguindo as instruções correspondentes. Consulte Definição de configurações de DNS para saber mais. Quando estiver pronto, você deverá selecionar a variável **resolver novamente** ícone ao lado do status.
+O Cloud Manager realiza uma pesquisa de DNS para o nome de domínio e exibe uma das seguintes mensagens de status.
 
-* **Resolução DNS em Andamento**
-A resolução está em curso. Normalmente, esse status é visto depois que você seleciona o ícone &quot;resolver novamente&quot; ao lado do status .
+* **Status de DNS não detectado** - O status de DNS não será detectado até que o nome de domínio personalizado tenha sido verificado e implantado com êxito.
 
-* **O DNS resolve corretamente**
-Suas configurações de DNS estão configuradas corretamente. Seu site está servindo visitantes.
+   * Esse status também é observado quando o nome do Domínio personalizado está em processo de exclusão.
+
+* **O DNS resolve incorretamente** - Isso indica que a configuração dos registros DNS não foi resolvida ou está incorreta.
+
+   * Consulte o documento [Definição das configurações de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) para saber mais.
+   * Quando estiver pronto, você deverá selecionar a variável **Resolver novamente** ícone ao lado do status.
+
+* **Resolução DNS em Andamento** - A resolução está em curso.
+
+   * Normalmente, esse status é visualizado depois que você seleciona a variável **Resolver novamente** ícone ao lado do status.
+
+* **O DNS resolve corretamente** - Suas configurações de DNS estão configuradas corretamente.
+
+   * Seu site está servindo visitantes.
+
+O Cloud Manager acionará automaticamente uma pesquisa de DNS quando o nome de domínio personalizado for verificado e implantado com êxito pela primeira vez. Para tentativas subsequentes, é necessário selecionar ativamente a variável **Resolver novamente** ícone ao lado do status.

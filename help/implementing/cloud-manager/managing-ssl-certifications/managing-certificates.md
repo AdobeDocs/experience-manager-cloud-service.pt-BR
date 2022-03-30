@@ -1,13 +1,13 @@
 ---
 title: Gerenciar certificados SSL
 description: Saiba como usar o Cloud Manager para verificar o status dos certificados SSL e como editá-los, substituí-los, atualizá-los e excluí-los.
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
+source-git-commit: 6cc1620d139db3804325c118d0874c5f94cb23a4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '637'
 ht-degree: 1%
 
 ---
-
 
 # Gerenciar certificados SSL {#managing-ssl-certificates}
 
@@ -57,7 +57,7 @@ Um certificado SSL pode ser substituído seguindo as mesmas etapas descritas na 
 
 Remover certificados do Cloud Manager é uma ação permanente que não pode ser desfeita. Como prática recomendada, o Adobe recomenda salvar os arquivos SSL localmente antes de excluí-los no Cloud Manager.
 
-O Cloud Manager não permitirá que você exclua um certificado SSL que tenha um ou mais domínios associados a ele. Todos os domínios associados devem ser excluídos antes de excluir o certificado SSL. Consulte o documento [Excluindo um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) para saber mais.
+O Cloud Manager não permitirá que você exclua um certificado SSL que tenha um ou mais domínios associados a ele. Todos os domínios associados devem ser excluídos antes de excluir o certificado SSL. Consulte o documento [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para saber mais.
 
 Siga estas etapas para excluir um certificado SSL.
 

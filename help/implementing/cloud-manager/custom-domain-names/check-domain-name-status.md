@@ -1,53 +1,61 @@
 ---
 title: Verificando o status do nome de domínio
-description: Verificando o status do nome de domínio
+description: Saiba como determinar se o nome de domínio personalizado foi verificado com êxito pelo Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
+source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
+
 # Verificando o status do nome de domínio {#check-status}
 
-Você pode determinar se o nome de domínio foi verificado com êxito clicando no ícone Status do nome de domínio da tabela em Ambientes na página Configurações do domínio .
+Você pode determinar o status do seu nome de domínio personalizado no Cloud Manager.
 
->[!NOTE]
->O Cloud Manager acionará automaticamente uma verificação TXT ao selecionar Salvar na etapa de verificação do assistente Adicionar domínio personalizado . Para verificações subsequentes, você deve selecionar ativamente a variável **verificar novamente** ícone ao lado do status.
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
 
-O Cloud Manager verificará a propriedade do domínio por meio do valor TXT e exibirá uma das seguintes mensagens de status:
+1. Navegue até o **Ambientes** da tela **Visão geral** página.
 
-* **Falha na Verificação de Domínio**
-O valor TXT está ausente ou é detectado com erros. Siga as instruções e tente novamente. Quando estiver pronto, você deverá selecionar a variável 
-*verificar novamente* ícone ao lado do status.
+1. Clique em **Configurações de domínio** no painel de navegação esquerdo.
 
-* **Verificação de Domínio em Andamento**
-Verificação em andamento. Normalmente, esse status é visualizado depois que você seleciona a variável 
-*verificar novamente* ícone ao lado do status.
+1. Clique no botão **Status** ícone para o nome do domínio.
 
-* **Verificado, Falha na Implantação**
-A verificação TXT foi bem-sucedida. No entanto, a implantação da CDN falhou. Entre em contato com o representante do Adobe.
+O Cloud Manager verificará a propriedade do domínio por meio do valor TXT e exibirá uma das seguintes mensagens de status.
 
-* **Domínio verificado e implantado**
-Esse status indica que o nome de domínio personalizado está pronto para ser usado.
-   >[!NOTE]
-   >Neste ponto, o nome de domínio personalizado está pronto para teste e deve ser apontado para o nome de domínio do Cloud Manager. Consulte [Definição das configurações de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) para saber mais.
+* **Falha na Verificação de Domínio** - O valor TXT está ausente ou é detectado com erros.
 
-* **Exclusão**
-A exclusão do nome de domínio personalizado está em andamento.
+   * Siga as instruções fornecidas para resolver o problema.
+   * Quando estiver pronto, você deverá selecionar a variável **Verificar novamente** ícone ao lado do status.
 
-* **Falha na Exclusão**
-Falha na exclusão do nome de Domínio Personalizado. Você deve tentar novamente. Consulte [Excluindo um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) para saber mais.
+* **Verificação de Domínio em Andamento** - A verificação está em curso.
 
+   * Normalmente, esse status é visualizado depois que você seleciona a variável **Verificar novamente** ícone ao lado do status.
+
+* **Verificado, Falha na Implantação** - A verificação TXT foi bem-sucedida, mas a implantação da CDN falhou.
+
+   * Nesses casos, entre em contato com o representante do Adobe.
+
+* **Domínio verificado e implantado** - Esse status indica que o nome de domínio personalizado está pronto para ser usado.
+
+   * Neste ponto, o nome de domínio personalizado está pronto para teste e deve ser apontado para o nome de domínio do Cloud Manager.
+   * Consulte o documento [Definição das configurações de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) para saber mais.
+
+* **Exclusão** - A exclusão de um nome de domínio personalizado está em andamento.
+
+* **Falha na Exclusão** - A exclusão do nome de domínio personalizado falhou e deve ser repetida.
+
+   * Consulte o documento [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para saber mais.
+
+O Cloud Manager acionará automaticamente uma verificação TXT ao selecionar **Salvar** sobre a etapa de verificação do **Adicionar domínio personalizado** assistente. Para verificações subsequentes, você deve selecionar ativamente o ícone de verificação novamente ao lado do status.
 
 ## Configurações de CDN pré-existentes para nomes de domínio personalizados {#pre-existing-cdn}
 
-Os clientes com ambientes que incluem configurações de CDN pré-existentes para Listas de permissões de IP, certificados SSL ou nomes de domínio personalizados verão a seguinte mensagem na **LISTA DE PERMISSÕES IP** e **Ambiente** página de detalhes. A mensagem exibida na interface do usuário desaparecerá assim que o cliente migrar totalmente todas as configurações de ambiente pré-existentes por meio da interface do usuário e talvez demore de 1 a 2 dias úteis para a mensagem desaparecer.
+Se você tiver uma configuração de CDN preexistente para seus nomes de domínio personalizados, haverá uma mensagem informativa no **LISTA DE PERMISSÕES IP** e **Ambiente** páginas, incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e configuráveis no Cloud Manager.
 
->[!NOTE]
->Para visualizar e gerenciar as configurações pré-existentes, elas devem ser adicionadas por meio da interface do usuário. Consulte [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para obter mais detalhes.
+A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário do . Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
+Consulte o documento [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para obter mais detalhes.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
+![Mensagem de configuração de CDN pré-existente](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
