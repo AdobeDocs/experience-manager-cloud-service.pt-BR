@@ -3,19 +3,23 @@ title: Navegador de Repositório
 seo-title: Repository Browser
 description: O navegador de repositório fornece uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
-source-git-commit: 76e28ca5628fb985df21f53d1c3e9898985dc736
+exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
+source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
-
 
 # Navegador de Repositório {#repository-browser}
 
 >[!NOTE]
 >
 >O Navegador de Repositório está disponível AEM versões 6582 e posteriores.
+
+>[!INFO]
+>
+>Você também pode assistir [este clipe](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) para obter uma introdução rápida sobre como usar o Navegador de repositório para depurar AEM as a Cloud Service.
 
 ## Introdução {#introduction}
 
