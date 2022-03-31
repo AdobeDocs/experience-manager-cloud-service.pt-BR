@@ -2,10 +2,10 @@
 title: Criação e gerenciamento de canais no as a Cloud Service do Screens
 description: Esta página descreve como criar e gerenciar canais no Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: afcee8019c9b59f3eb1fdcabd569272eeea76dab
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 7%
+source-wordcount: '1116'
+ht-degree: 4%
 
 ---
 
@@ -20,6 +20,7 @@ Este documento ajuda você a entender a criação e o gerenciamento de canais pa
 
 * saiba como criar canais para o Provedor de conteúdo do Screens
 * gerenciar e editar conteúdo em seus canais
+* agendamento de ativação para seus canais
 
 ## Etapas para criar um novo canal de sequência no Screens as a Cloud Service {#create-new-channel}
 
@@ -87,6 +88,89 @@ Os seguintes modelos estão disponíveis ao usar o **Criar** assistente de canal
 | Canal de sequência | Permite criar um canal que reproduz os componentes sequencialmente (um por um em uma apresentação de slides). |
 | Canal de tela dividida da barra L esquerda ou direita | Permite que os autores de conteúdo visualizem diferentes tipos de ativos em zonas de tamanho apropriado. |
 
+## Usar detalhes de atribuição padrão para canais {#default-channels}
+
+Esse recurso permite definir um agendamento de ativação padrão para um canal e usá-lo por padrão para cada atribuição para uma exibição. Isso fornece um método para que a definição de agendamento complicada não precise ser repetida.
+
+### Criar detalhes de atribuição padrão para um canal {#create-default}
+
+1. Navegue até a página de detalhes do canal que deseja configurar.
+1. Localize a variável **Detalhes da atribuição padrão** bloco na página.
+
+   ![imagem](/help/screens-cloud/assets/display/Assignment1.png)
+
+1. Clique em **Definir detalhes padrão**.
+1. Configure os detalhes da atribuição padrão, incluindo prioridade, datas de início e término, bem como padrões de recorrência para o canal, e clique em **Atribuir**.
+
+   ![imagem](/help/screens-cloud/assets/display/Assignments2.png)
+
+1. Observe que os detalhes da atribuição são mostrados no **Detalhes da atribuição padrão** mosaico:
+
+   ![imagem](/help/screens-cloud/assets/display/Assignments3.png)
+
+Este bloco exibe as seguintes informações:
+* Prioridade padrão do canal na exibição.
+* Datas de início e término da ativação quando o canal é agendado para reprodução.
+* Visualização sintética da recorrência (por hora/dia/semana/mês/ano, bem como nome dado à recorrência).
+
+### Usar os detalhes da atribuição padrão ao atribuir a uma exibição {#default-display}
+
+Os canais com detalhes de atribuição padrão podem ser atribuídos a exibições da mesma forma que os canais regulares, com a opção adicionada para aproveitar os detalhes de atribuição padrão em vez de definir manualmente os personalizados de cada vez.
+
+1. Navegue até a página de detalhes de exibição à qual deseja atribuir o canal e clique no botão **Atribuir canal**.
+como alternativa, selecione a exibição desejada na exibição de inventário e clique no botão **Atribuir canal**.
+1. A caixa de diálogo Atribuição de canal é aberta.
+
+   ![imagem](/help/screens-cloud/assets/display/Assignments4.png)
+
+1. Selecione o canal desejado que tem os detalhes padrão da atribuição no seletor de canais.
+1. Observe as alterações na caixa de diálogo de atribuição de canal para permitir que você escolha os detalhes padrão da atribuição ou selecione os personalizados:
+
+   ![imagem](/help/screens-cloud/assets/display/Assignments5.png)
+
+1. Clique em **Atribuir** para finalizar a atribuição ou clique em **Definir detalhes de atribuição personalizada** se preferir substituir os padrões por alguns outros valores no contexto dessa exibição específica.
+
+   ![imagem](/help/screens-cloud/assets/display/Assignments6.png)
+
+1. Observe que **Canais atribuídos** O bloco é atualizado com a nova atribuição:
+
+   ![imagem](/help/screens-cloud/assets/display/Assignments7.png)
+
+1. Observe que os canais terão um ícone diferente, dependendo se estiverem usando agendamentos personalizados (ícone de Relógio) ou herdando os detalhes padrão (ícone do relógio do Mundo), e clicar neles mostrará os detalhes do agendamento.
+1. Observe também que as ações disponíveis para cada tipo serão diferentes.
+
+   ![imagem](/help/screens-cloud/assets/display/Assignments8.png)
+
+**Observação:** Uma atribuição de canal que aproveita os detalhes padrão da atribuição não será editável no contexto da exibição.
+
+* Se precisar alterá-la para uma atribuição personalizada, primeiro será necessário removê-la e depois adicioná-la novamente usando a **Definir detalhes de atribuição personalizada** opção.
+* Se precisar alterar as propriedades dos detalhes da atribuição padrão, será necessário fazer isso diretamente na página de detalhes do canal.
+
+### Remover detalhes da atribuição padrão de um canal {#remove-display}
+
+1. Navegue até a página de detalhes do canal que deseja remover os detalhes padrão da atribuição.
+1. Localize a variável **Detalhes da atribuição padrão** bloco na página
+1. Clique no botão **Remover padrão**.
+
+   ![imagem](/help/screens-cloud/assets/display/Assignments9.png)
+
+1. Uma caixa de diálogo de confirmação será exibida e os detalhes corresponderão a uma das seguintes condições:
+   **a.** Canal não é usado em nenhuma exibição.
+
+   ![imagem](/help/screens-cloud/assets/display/Assignments10.png)
+
+**b.** Canal é usado em uma única exibição.
+
+![imagem](/help/screens-cloud/assets/display/Assignment11.png)
+
+**c.** O canal é usado em várias exibições.
+
+![imagem](/help/screens-cloud/assets/display/Assignments12.png)
+
+1. Clique no botão *Remover* para validar a alteração.
+
+**Observação:** Remover os detalhes da atribuição padrão de um canal removerá as atribuições correspondentes em todas as exibições que estavam usando.
+Como consequência, isso pode levar a telas em branco se não houver conteúdo alternativo para reproduzir nessas telas.
 
 ## O que vem a seguir {#whats-next}
 
