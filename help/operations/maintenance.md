@@ -2,9 +2,9 @@
 title: Tarefas de manutenção no AEM as a Cloud Service
 description: Tarefas de manutenção no AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
+source-git-commit: 0472c3247f171c7c090444f02b928bbcf3a4e1fe
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1020'
 ht-degree: 4%
 
 ---
@@ -61,7 +61,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Versões com mais de 30 dias são removidas</li>
        <li>As 5 versões mais recentes nos últimos 30 dias são mantidas</li>
        <li>Independentemente das regras acima, a versão mais recente é preservada.</li>
-     </ol><br>OBSERVAÇÃO: o comportamento descrito acima é aplicado a novos ambientes a partir de 14 de março de 2022 e será aplicado a ambientes existentes (aqueles que foram criados antes de 14 de março de 2022) em 21 de abril de 2022.</td>
+     </ol><br>OBSERVAÇÃO: o comportamento descrito acima é aplicado por padrão para novos ambientes criados após 14 de março de 2022. Envie um tíquete de suporte ao cliente se você precisar de configurações diferentes.</td>
   </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Para auditoria de replicação, os logs de auditoria com mais de 3 dias são removidos</li>
        <li>Para auditoria do DAM (Assets), os logs de auditoria com mais de 30 dias são removidos</li>
        <li>Para auditoria de página, os logs com mais de 3 dias são removidos.</li>
-     </ol><br>OBSERVAÇÃO: o comportamento descrito acima é aplicado a novos ambientes a partir de 14 de março de 2022 e será aplicado a ambientes existentes (aqueles que foram criados antes de 14 de março de 2022) em 21 de abril de 2022.</td>
+     </ol><br>OBSERVAÇÃO: o comportamento descrito acima é aplicado por padrão para novos ambientes criados após 14 de março de 2022. Envie um tíquete de suporte ao cliente se você precisar de configurações diferentes.</td>
    </td>
   </tr>
   <tr>
