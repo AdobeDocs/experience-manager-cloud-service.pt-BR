@@ -2,7 +2,7 @@
 title: Gerenciar certificados SSL
 description: Saiba como usar o Cloud Manager para verificar o status dos certificados SSL e como editá-los, substituí-los, atualizá-los e excluí-los.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 6cc1620d139db3804325c118d0874c5f94cb23a4
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 1%
@@ -24,16 +24,6 @@ O status dos certificados SSL pode ser entendido rapidamente na página de certi
    * O Cloud Manager enviará notificações regulares na interface do usuário para alertá-lo sobre uma expiração iminente de certificado.
 
 * **Vermelho** - Esse status indica que o certificado SSL expirou.
-
-## Configurações pré-existentes de CDN {#pre-existing-cdn}
-
-Se você tiver uma configuração CDN preexistente para seu certificado SSL, haverá uma mensagem informativa no **Certificados SSL** , incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e configuráveis no Cloud Manager.
-
-A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário do . Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
-
-Consulte o documento [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obter mais detalhes.
-
-Uma mensagem semelhante também é fornecida no **LISTA DE PERMISSÕES IP** e **Ambientes** páginas para ambientes que tenham configurações de CDN pré-existentes para listas de permissões IP ou nomes de domínio personalizados.
 
 ## Atualização de um certificado SSL {#update-ssl-certificate}
 
@@ -70,3 +60,13 @@ Siga estas etapas para excluir um certificado SSL.
 >[!NOTE]
 >
 >Um usuário deve ser membro do **Proprietário da empresa** ou **Gerenciador de implantação** para excluir um certificado SSL no Cloud Manager.
+
+## Configurações pré-existentes de CDN {#pre-existing-cdn}
+
+Se você tiver uma configuração CDN preexistente para seu certificado SSL, haverá uma mensagem informativa no **Certificados SSL** , incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e configuráveis no Cloud Manager.
+
+A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário do . Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
+
+Consulte o documento [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obter mais detalhes.
+
+Uma mensagem semelhante também é fornecida no **LISTA DE PERMISSÕES IP** e **Ambientes** páginas para ambientes que tenham configurações de CDN pré-existentes para listas de permissões IP ou nomes de domínio personalizados.

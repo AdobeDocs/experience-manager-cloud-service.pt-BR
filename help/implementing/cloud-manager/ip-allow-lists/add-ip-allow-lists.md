@@ -1,31 +1,41 @@
 ---
-title: 'Adicionar Lista de permissões IP '
-description: Adicionar Lista de permissões IP
+title: Adicionar Listas de permissões IP
+description: Saiba como adicionar sua própria lista de permissões IP usando o Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 378ff582435f1ab3db431a0c9c3e80a4661cccc4
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 3%
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
+
 # Adicionar uma lista de permissões de IP {#add-ip-allow-list}
 
-Um usuário na função Proprietário comercial ou Gerente de implantação deve estar conectado para poder adicionar uma Lista de permissões de IP.
+Saiba como adicionar sua própria lista de permissões IP usando o Cloud Manager.
 
-Siga as etapas abaixo para adicionar uma Lista de permissões IP:
+Um usuário na **Proprietário da empresa** ou **Gerenciador de implantação** pode seguir essas etapas para adicionar uma lista de permissões IP.
+
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
+
+1. Navegar para **Ambientes** da tela **Visão geral** página.
 
 1. Navegar para **LISTAS DE PERMISSÕES de IP** da página **Ambientes** tela.
-   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
+
+   ![Opção de listas de permissões IP no painel lateral](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
 1. Clique em **Adicionar Lista de permissões IP** para abrir o **Adicionar Lista de permissões IP** caixa de diálogo.
 
-   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
+   ![A caixa de diálogo Adicionar Lista de permissões IP](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. Insira um nome amigável que você gostaria de usar para fazer referência à regra de Lista de permissões em **Nome da Lista de permissões IP**.
+1. Insira um nome que gostaria de usar para fazer referência à lista de permissões no **Nome da Lista de permissões IP** campo.
 
-1. Insira um bloco IP ou IP CIDR separado por vírgula ou TAB em **Endereço IP/CIDR**.
+   * Isso é apenas informativo e deve ser descritivo para ajudar a identificar a lista.
 
-1. Selecionar **Salvar** para confirmar o envio. Se algum erro for detectado, você deverá abordar antes que a regra possa ser salva.
+1. Insira um bloco IP ou IP CIDR no **Endereço IP/CIDR** campo.
 
-1. Ao salvar, a regra de Lista de permissões de IP recém-criada aparecerá como uma linha na tabela na página Lista de permissões de IP.
+   * Vários blocos podem ser separados por vírgula ou por guia.
+
+1. Clique em **Salvar** para confirmar o envio.
+
+Ao salvar, a lista de permissões IP recém-criada aparecerá como uma linha na tabela no **LISTAS DE PERMISSÕES de IP** página.

@@ -1,23 +1,37 @@
 ---
-title: 'Aplicar Lista de permissões IP '
-description: Aplicar Lista de permissões IP
+title: 'Aplicar e desaplicar Listas de permissões IP '
+description: Saiba como aplicar e desaplicar listas de permissões de IP a ambientes.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 3%
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
-# Aplicação de uma lista de permissões de IP {#apply-allow-list}
 
-A aplicação de uma Lista de permissões de IP é o processo pelo qual todos os intervalos IP incluídos na definição da Lista de permissões são associados a um serviço de Autor ou Editor em um ambiente. Um usuário na função Proprietário comercial ou Gerente de implantação deve estar conectado para poder aplicar uma Lista de permissões de IP.
+# Aplicar e desaplicar Listas de permissões IP {#apply-allow-list}
 
->[!NOTE]
->A Lista de permissões IP deve existir no Cloud Manager para ser aplicada a um serviço do ambiente.
+Ao aplicar uma lista de permissões IP, todos os intervalos IP incluídos na definição da lista são associados a um serviço de criação ou publicação em um ambiente. Desaplicar uma lista é o inverso desse processo.
 
-Siga as etapas abaixo para aplicar uma Lista de permissões IP:
+## Aplicação de Listas de permissões IP {#applying}
 
-1. Navegue até a página Detalhes do ambiente específica de **Ambientes** e navegue até a tabela de Lista de permissões IP.
-1. Use os campos de entrada na parte superior da tabela Lista de permissões de IP para selecionar a Lista de permissões de IP e o serviço de Autor ou Publicação ao qual deseja aplicá-la.
-1. Selecionar **Aplicar** e confirme seu envio.
+Um usuário na **Proprietário da empresa** ou **Gerenciador de implantação** pode seguir essas etapas para aplicar uma lista de permissões IP.
+
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
+1. Navegue até o **Ambientes** da tela **Visão geral** página.
+1. Navegue até a página de detalhes do ambiente específico no **Ambientes** e navegue até a **LISTA DE PERMISSÕES IP** tabela.
+1. Use os campos de entrada na parte superior da tabela para selecionar a lista de permissões IP e o serviço de criação ou publicação ao qual deseja aplicá-la.
+   * A Lista de permissões IP deve existir no Cloud Manager para ser aplicada.
+1. Clique em **Aplicar** e confirme seu envio.
+
+## Desaplicar Listas de permissões {#un-applying}
+
+Um usuário na **Proprietário da empresa** ou **Gerenciador de implantação** pode seguir essas etapas para desaplicar uma lista de permissões IP.
+
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
+1. Navegue até o **Ambientes** da tela **Visão geral** página.
+1. Navegue até a página de detalhes do ambiente específico no **Ambientes** e navegue até a **LISTA DE PERMISSÕES IP** tabela.
+1. Identifique a linha da lista de permissões IP que deseja desaplicar.
+1. Selecione o botão de reticências na extremidade direita da linha.
+1. Selecione o **Não aplicar** e confirme seu envio.

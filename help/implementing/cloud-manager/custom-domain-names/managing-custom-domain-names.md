@@ -1,13 +1,13 @@
 ---
 title: Gerenciar nomes de domínio personalizados
 description: Saiba como usar o Cloud Manager para exibir, atualizar, substituir e excluir nomes de domínio personalizados.
-source-git-commit: 4604b5fad59524a05dc7addf16c70246a14cfea1
+exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 3%
 
 ---
-
 
 # Gerenciar nomes de domínio personalizados {#managing-custom-domain-names}
 
@@ -52,7 +52,8 @@ Um usuário com a **Proprietário da empresa** ou **Gerenciador de implantação
 1. Clique no botão de reticências na extremidade direita da linha.
 
 1. Selecionar **Excluir**.
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
+
+   ![Exclusão de nomes de domínio personalizados](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Confirme seu envio.
 

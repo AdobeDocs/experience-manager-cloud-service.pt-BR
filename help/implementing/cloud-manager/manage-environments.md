@@ -2,9 +2,9 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1745'
 ht-degree: 1%
 
 ---
@@ -105,9 +105,9 @@ Um usuário com as permissões necessárias deve concluir as etapas das seguinte
 
 1. Crie uma lista de permissões IP apropriada, aplique-a ao serviço de visualização e desaplique imediatamente a variável `Preview Default [<envId>]` lista de permissões.
 
-   * Consulte [Desaplicar uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) para obter mais detalhes.
+   * Consulte o documento [Aplicar e desaplicar Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) para obter mais detalhes.
 
-1. Usar a atualização **LISTA DE PERMISSÕES IP** para remover o IP padrão e adicionar IPs conforme apropriado. Consulte [Visualização e atualização de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) para saber mais.
+1. Usar a atualização **LISTA DE PERMISSÕES IP** para remover o IP padrão e adicionar IPs conforme apropriado. Consulte [Gerenciamento de Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para saber mais.
 
 Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de bloqueio antes do nome do serviço de visualização não será mais exibido.
 
@@ -220,7 +220,7 @@ As seguintes ações podem ser executadas no serviço de publicação para seu a
 
 * [Verificando o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) ou [Certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
-* [Verificando o status de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
 
 ## Gerenciamento de listas de permissões de IP {#manage-ip-allow-lists}

@@ -1,38 +1,32 @@
 ---
-title: Introdução - Listas de permissões de IP no Cloud Manager
-description: Introdução - Listas de permissões de IP no Cloud Manager
+title: Introdução às Listas de permissões de IP
+description: Saiba como as listas de permissões de IP podem limitar de quais endereços os usuários podem acessar seus domínios as a Cloud Service AEM.
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
+source-git-commit: 8d1680fa8dbaaefa297cf8c6698097b3c7acc48d
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
 
-# Introdução {#introduction}
+
+# Introdução às Listas de permissões de IP {#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
 >title="Gerenciar Listas de permissões de IP"
->abstract="O AEM as a cloud service está aberto na Internet e a segurança é tratada por meio de autenticação e autorização do usuário. A lista de permissões de IP é um recurso no Cloud Manager usado para limitar e controlar o acesso somente a usuários confiáveis. Esse recurso permite que usuários com permissões criem listas de permissões de endereços IP confiáveis dos quais os usuários de sites podem acessar seus domínios AEM."
+>abstract="O AEM as a cloud service é acessível pela Internet e é protegido por meio de autenticação e autorização do usuário. As listas de permissões IP do Cloud Manager podem ser usadas para limitar e controlar o acesso somente a endereços IP confiáveis. Usuários do Cloud Manager com permissões apropriadas podem criar listas de permissões de endereços IP confiáveis a partir dos quais os usuários do site podem acessar seus domínios AEM."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html" text="Adicionar uma Lista de permissões IP"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html" text="Exibir e atualizar uma Lista de permissões IP"
 
-O AEM as a cloud service está aberto na Internet e a segurança é tratada por meio de autenticação e autorização do usuário. A lista de permissões de IP é um recurso no Cloud Manager usado para limitar e controlar o acesso somente a usuários confiáveis. Esse recurso permite que usuários com permissões criem listas de permissões de endereços IP confiáveis dos quais os usuários de sites podem acessar seus domínios AEM.
+O AEM as a cloud service é acessível pela Internet e é protegido por meio de autenticação e autorização do usuário. As listas de permissões IP do Cloud Manager podem ser usadas para limitar e controlar o acesso somente a endereços IP confiáveis. Usuários do Cloud Manager com permissões apropriadas podem criar listas de permissões de endereços IP confiáveis a partir dos quais os usuários do site podem acessar seus domínios AEM.
 
->[!NOTE]
->É possível adicionar no máximo 50 Listas de permissões IP ao seu programa e no máximo 50 endereços IP/CIDR podem ser adicionados a cada Lista de permissões IP.
+LISTAS DE PERMISSÕES IP podem ser adicionadas uma vez e aplicadas/não aplicadas várias vezes como uma unidade ou entidade a um serviço de autor e/ou editor em um ambiente.
 
-LISTAS DE PERMISSÕES IP podem ser adicionadas uma vez e aplicadas/não aplicadas várias vezes como uma unidade ou entidade a um serviço Autor e/ou Editor em um ambiente.
+## Limitações           {#limitations}
 
->[!NOTE]
->Os nomes de Listas de permissões IP são compatíveis com o Cloud Manager para o serviço Autor e/ou Publicação em um ambiente.
+Existem várias limitações para listas de permissões de IP que devem ser levadas em conta.
 
-Usando a página Lista de permissões de IP da interface do usuário do Cloud Manager ou a página Detalhes do ambiente , um usuário com permissões pode executar várias tarefas para gerenciar Listas de permissões de IP em seus ambientes, incluindo:
-
-* [Adicionar uma lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-   >[!NOTE]
-   > Você pode Adicionar uma vez e reutilizar ou aplicar a regra várias vezes em todos os serviços do ambiente no programa.
-* [Visualização ou atualização de uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-* [Aplicar ou desaplicar uma Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-* [Excluir uma lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+* É possível adicionar no máximo 50 listas de permissões IP ao seu programa
+* É possível adicionar no máximo 50 endereços IP/CIDR a cada lista de permissões de IP.
+* Os nomes de listas de permissões IP são aceitos no Cloud Manager para o serviço de criação e/ou publicação em um ambiente.
