@@ -2,16 +2,16 @@
 title: Criação e gerenciamento de exibições no Screens as a Cloud Service
 description: Esta página descreve como criar e gerenciar exibições no Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: b56c7e5de41cf75f4442d8294ddfbe1a05cb3dee
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 13%
+source-wordcount: '436'
+ht-degree: 9%
 
 ---
 
 # Criação e gerenciamento de exibições no Screens as a Cloud Service {#create-displays-screens-cloud}
 
-Depois de publicar seu canal, é hora de criar a exibição no Provedor de serviços do Screens.
+Depois de publicar seu canal, é hora de criar sua exibição no Provedor de serviços do Screens.
 
 Uma Exibição é um agrupamento virtual de telas que geralmente são posicionadas próximas umas das outras. A exibição é, em geral, permanente com relação a uma instalação. Esse será o objeto no qual os autores de conteúdo irão trabalhar e é sempre referenciado como uma exibição lógica em vez de suas contrapartes físicas.
 
@@ -19,7 +19,8 @@ Uma Exibição é um agrupamento virtual de telas que geralmente são posicionad
 
 Este documento ajuda você a entender como criar e gerenciar exibições no Provedor de serviços do Screens. Depois de ler, você deve:
 
-* Entenda como criar exibições.
+* Entender como criar e excluir exibições
+* Entender como organizar as exibições em pastas
 
 ## Etapas para criar uma exibição {#create-display}
 
@@ -49,6 +50,37 @@ Você pode excluir uma exibição do Provedor de serviços do Screens.
 Selecione a exibição e clique em **Excluir** na parte inferior do painel, conforme mostrado na figura abaixo.
 
 ![imagem](/help/screens-cloud/assets/display/disp-5.png)
+
+## Etapas para organizar exibições em pastas {#organize-display}
+
+## Como alternar o painel de pastas {#toggle-rail}
+
+Você pode deixar que o painel de pastas exiba todas as pastas para pastas específicas:
+
+1. Navegue até a exibição de inventário de exibições clicando no botão destacado abaixo:
+
+   ![imagem](/help/screens-cloud/assets/display/display-inventory.png)
+
+1. O painel lateral da pasta é exibido.
+
+![imagem](/help/screens-cloud/assets/display/toggle-rail.png)
+
+1. Selecionar **Ocultar pastas** para fechá-lo novamente.
+
+## Como criar uma nova pasta {#create-folder}
+
+Você pode criar pastas para organizar melhor suas exibições.
+
+1. Navegue até a exibição de inventário exibida.
+1. Certifique-se de que você não está em uma pasta no momento, deve ver o seguinte:
+
+![imagem](/help/screens-cloud/assets/display/verify-view.png)
+
+Observação: **Todas as exibições** deve ser selecionada no painel lateral da pasta e a navegação da navegação estrutural deve mostrar somente **Exibições**.
+
+1. Clique no botão &quot;Criar&quot; na parte superior direita e selecione o **Pasta** opção
+
+1. Preencha o título da nova pasta e clique em **Criar**.
 
 ## O que vem a seguir {#whats-next}
 
