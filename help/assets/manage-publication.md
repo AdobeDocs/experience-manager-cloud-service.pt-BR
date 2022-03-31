@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1435'
 ht-degree: 8%
 
 ---
@@ -61,10 +61,6 @@ Para continuar, clique em **[!UICONTROL Próximo]**. Com base na seleção, a va
 
 ### Adicionar conteúdo {#add-content}
 
->[!NOTE]
->
->Esse recurso está disponível no canal de pré-lançamento. Consulte [Documentação do Canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
-
 Publicar em [!DNL Experience Manager Assets] permite adicionar mais conteúdo (ativos e pastas) à lista de publicação. Você pode adicionar mais ativos ou pastas à lista nos repositórios dam. Clique em **[!UICONTROL Adicionar conteúdo]** para adicionar mais conteúdo.
 
 Você pode adicionar vários ativos de uma pasta ou adicionar várias pastas de cada vez. Mas não é possível adicionar ativos de várias pastas de cada vez.
@@ -72,10 +68,6 @@ Você pode adicionar vários ativos de uma pasta ou adicionar várias pastas de 
 ![Adicionar conteúdo](assets/manage-publication-add-content.png)
 
 ### Incluir configurações de pasta {#include-folder-settings}
-
->[!NOTE]
->
->Esse recurso está disponível no canal de pré-lançamento. Consulte [Documentação do Canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
 
 Por padrão, publicar uma pasta em [!DNL Experience Manager Assets] O publica todos os ativos, subpastas e suas referências.
 

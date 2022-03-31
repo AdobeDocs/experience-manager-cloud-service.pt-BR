@@ -5,20 +5,16 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
 # Marque seus ativos com água {#watermark-assets}
 
 [!DNL Adobe Experience Manager Assets] permite adicionar uma marca d&#39;água digital a imagens. [!DNL Assets] O suporta a aplicação de uma imagem como marca d&#39;água a outros arquivos de imagem. As marcas d&#39;água podem ajudar os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. Além disso, uma marca d&#39;água pode ser usada para indicar o estado de um documento como confidencial, rascunho, validade e assim por diante.
-
->[!NOTE]
->
->Esse recurso está disponível no canal de pré-lançamento. Consulte [Documentação do Canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
 
 Para configurar [!DNL Experience Manager] para adicionar ativos de marca d&#39;água:
 

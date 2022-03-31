@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
 workflow-type: tm+mt
-source-wordcount: '4356'
+source-wordcount: '4326'
 ht-degree: 11%
 
 ---
@@ -23,7 +23,7 @@ Ao organizar uma coleção de ativos, por exemplo, todos `Nature` , é possível
 
 >[!NOTE]
 >
->* Compartilhamento de uma pasta de Ativos do tipo `sling:OrderedFolder`, não é compatível ao compartilhar com o Marketing Cloud. Se deseja compartilhar uma pasta, não selecione [!UICONTROL Solicitado] ao criar uma pasta.
+>* Compartilhamento de uma pasta de Ativos do tipo `sling:OrderedFolder`, não é compatível ao compartilhar com o Experience Cloud. Se deseja compartilhar uma pasta, não selecione [!UICONTROL Solicitado] ao criar uma pasta.
 >* Experience Manager não permite usar `subassets` palavra como o nome de uma pasta. É uma palavra-chave reservada para nós que contêm subativos para ativos compostos
 
 
@@ -45,10 +45,6 @@ Consulte [adicionar ativos digitais ao Experience Manager](add-assets.md).
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
 Se um usuário do DAM fizer upload de um ou mais ativos que já existem no repositório, [!DNL Experience Manager] detecta a duplicação e notifica o usuário. A detecção de duplicatas é desativada por padrão, pois pode ter impacto no desempenho dependendo do tamanho do repositório e do número de ativos carregados.
-
->[!NOTE]
->
->Esse recurso está disponível no canal de pré-lançamento. Consulte [Documentação do Canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
 
 Para ativar o recurso:
 

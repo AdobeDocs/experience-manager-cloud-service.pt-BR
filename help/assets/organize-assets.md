@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
+source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -74,14 +74,45 @@ A maneira mais básica de organizar ativos é salvar os ativos em pastas. É sem
 
 ## Organizar ativos usando tags {#use-tags-to-organize-assets}
 
-Usando tags como metadados, você pode pesquisar ativos facilmente, criar coleções usando os resultados de pesquisa, aumentar a classificação de pesquisa para alguns ativos e aplicar algoritmos de IA do Adobe Sensei para descoberta de ativos.
+<!--
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] O usa um algoritmo de autoaprendizado para criar tags altamente descritivas que permitem encontrar o ativo certo em apenas alguns cliques. A marcação inteligente usa a Adobe Sensei, a inteligência artificial e a estrutura de aprendizado de máquina, que podem ser treinadas para reconhecer e aplicar tags padrão e específicas de negócios a imagens. As Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas aos ativos
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+
+For more information, see the following articles:
+
+* [Edit asset metadata](meta-edit.md)
+* [Smart Tags in Assets](smart-tags.md)
+-->
+
+Adicionar tags a ativos facilita sua recuperação durante uma pesquisa, criar coleções usando os resultados da pesquisa, aumentar a classificação de pesquisa para alguns ativos e aplicar algoritmos de IA do Adobe Sensei para descoberta de ativos.
+
+[!DNL Adobe Experience Manager Assets] O usa um algoritmo de autoaprendizado para criar tags altamente descritivas que permitem encontrar o ativo certo em apenas alguns cliques. A marcação inteligente usa a Adobe Sensei, a inteligência artificial e a estrutura de aprendizado de máquina, que podem ser treinadas para reconhecer e aplicar tags padrão e específicas de negócios a imagens. As Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas aos ativos.
+
+Veja a seguir as etapas para adicionar tags a um ativo:
+
+1. Faça logon em [!DNL Experience Manager Assets].
+1. Clique em **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]**, selecione o ativo e clique em **[!UICONTROL Propriedades]** para abrir as propriedades do ativo.
+1. No **[!UICONTROL Básico]** , clique no ícone da pasta em **[!UICONTROL Tags]** metadados. Uma janela pop-up é aberta.
+1. Pesquise ou selecione as tags apropriadas a partir das tags existentes em `cq-tags`. Você pode atribuir várias tags ao ativo.
+
+   Você pode classificar a estrutura das tags em ordem crescente ou decrescente com base na variável **[!UICONTROL Nome]** (ordem alfabética), **[!UICONTROL Criado]** data, ou **[!UICONTROL Modificado]** data. Na ilustração a seguir, a estrutura de tags é classificada alfabeticamente com base na variável **[!UICONTROL Nome]**.
+
+   ![adicionar tags](assets/add-tags-to-asset.png)
+
+1. Clique em **Salvar** para atualizar as alterações nos metadados do ativo.
+
+>[!NOTE]
+>
+>Você pode classificar a estrutura das tags ao criar tags inteligentes e ao aplicar filtros de pesquisa usando o predicado de tags.
+>
+>O recurso de tags de classificação está disponível no canal de pré-lançamento. Consulte [Documentação do Canal de pré-lançamento](/help/release-notes/prerelease.md#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
 
 Para obter mais informações, consulte os seguintes artigos:
 
 * [Editar metadados de ativos](meta-edit.md)
 * [Tags inteligentes no Assets](smart-tags.md)
+* [Adicionar tags predicado ao painel de pesquisa](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## Organizar como coleções {#organize-as-collections}
 

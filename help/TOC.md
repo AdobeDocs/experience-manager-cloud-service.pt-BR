@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 62c0c4cbc6de202e4fb2aecb02a146a19088d7ee
+source-git-commit: 170f93e9ef8b92ce258cc6f3e2d35ece27709fd5
 workflow-type: tm+mt
-source-wordcount: '3387'
+source-wordcount: '3409'
 ht-degree: 98%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 98%
    + [Informações da versão](/help/release-notes/home.md)
    + Notas de versão {#release-notes}
       + [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2022 {#2022}
+         + [Notas da versão 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
          + [Notas da versão 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [Notas da versão para 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
@@ -104,7 +106,7 @@ ht-degree: 98%
    + [Guia de migração para o Experience Manager as a Cloud Service para parceiros](/help/journey-migration/getting-started-partners.md)
    + Notas de versão das ferramentas de migração {#release-notes-migration-tools}
       + [Notas de versão atuais (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + [Nota de versão para 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+      + [Notas da versão 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [Notas da versão 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
          + [Notas de versão para 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
@@ -263,7 +265,9 @@ ht-degree: 98%
    + Integração ao AEM as a Cloud Service {#integrations}
       + [Integração ao Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integração com a configuração automática do Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Configuração IMS para uso ao integrar com o Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+      + [Configuração IMS para uso ao integrar com o Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportar fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
@@ -386,7 +390,7 @@ ht-degree: 98%
       + [Notas de versão do Workfront para conector Experience Manager aprimorado](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [Integrações com [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Instalar o [!DNL enhanced connector] para o [!DNL Workfront]](/help/assets/workfront-connector-install.md)
-      + [Remover dependências externas para instalações existentes](/help/assets/remove-external-dependencies.md)
+      + [Remover dependências externas de instalações existentes](/help/assets/remove-external-dependencies.md)
       + [Configurar o [!DNL enhanced connector] para o [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Atualizar [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
@@ -611,7 +615,7 @@ ht-degree: 98%
       + Notas de versão do Cloud Manager {#release-notes-cloud-manager}
          + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
          + 2022 {#2022}
-            + [Notas da versão para 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
+            + [Notas da versão 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
             + [Notas da versão 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021 {#2021}
             + [Notas da versão para 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)

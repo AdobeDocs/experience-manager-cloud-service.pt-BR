@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
+source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2411'
 ht-degree: 5%
 
 ---
@@ -118,7 +118,13 @@ Para criar e treinar um modelo para suas tags específicas de negócios, siga es
 1. Crie as tags necessárias e a estrutura de tags apropriada. Faça upload das imagens relevantes no repositório DAM.
 1. Em [!DNL Experience Manager] interface do usuário, acesso **[!UICONTROL Ativos]** > **[!UICONTROL Treinamento em tags inteligentes]**.
 1. Clique em **[!UICONTROL Criar]**. Forneça uma **[!UICONTROL Título]**, **[!UICONTROL Descrição]**.
-1. Navegue e selecione as tags nas tags existentes em `cq:tags` para o qual você deseja treinar o modelo. Clique em **[!UICONTROL Avançar]**.
+1. Clique no ícone de pasta em **[!UICONTROL Tags]** campo. Uma janela pop-up é aberta.
+1. Pesquise ou selecione as tags apropriadas a partir das tags existentes em `cq-tags` que você deseja adicionar ao modelo. Clique em **[!UICONTROL Avançar]**.
+
+   >[!NOTE]
+   >
+   >Você pode classificar a estrutura das tags em ordem crescente ou decrescente com base na variável **[!UICONTROL Nome]** (ordem alfabética), **[!UICONTROL Criado]** data, ou **[!UICONTROL Modificado]** data.
+
 1. No **[!UICONTROL Selecionar ativos]** , clique em **[!UICONTROL Adicionar ativos]** em relação a cada tag. Pesquise no repositório DAM ou navegue pelo repositório para selecionar pelo menos 10 e no máximo 50 imagens. Selecione ativos e não a pasta. Depois de selecionar as imagens, clique em **[!UICONTROL Selecionar]**.
 
    ![Exibir status de treinamento](assets/smart-tags-training-status.png)

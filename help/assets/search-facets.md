@@ -4,9 +4,9 @@ description: Este artigo descreve como criar, modificar e usar facetas de pesqui
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2397'
 ht-degree: 21%
 
 ---
@@ -144,6 +144,11 @@ O `Tags` O predicado permite executar pesquisas baseadas em tags para ativos. Po
 1. Navegue até o painel Pesquisar . O **[!UICONTROL Tags]** predicado é adicionado ao painel Pesquisar.
 1. Especifique tags com base nas quais deseja pesquisar ativos ou selecione na lista de sugestões.
 1. Selecionar **[!UICONTROL Corresponder tudo]** para procurar correspondências que incluam todas as tags especificadas.
+
+Você pode classificar a estrutura das tags em ordem crescente ou decrescente com base na variável **[!UICONTROL Nome]** (ordem alfabética), **[!UICONTROL Criado]** data, ou **[!UICONTROL Modificado]** data. Na ilustração a seguir, a estrutura de tags é classificada alfabeticamente com base na variável **[!UICONTROL Nome]**.
+
+![adicionar tags](assets/add-tags-to-asset.png)
+
 
 ## Adicionar outros predicados {#adding-other-predicates}
 

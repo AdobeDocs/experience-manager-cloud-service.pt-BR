@@ -2,10 +2,10 @@
 title: Criar uma solicitação de API - Configuração Headless
 description: Saiba como usar a API GraphQL para a entrega headless do conteúdo do Fragmento de conteúdo e a API REST do AEM Assets para gerenciar Fragmentos de conteúdo.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 100%
+source-wordcount: '670'
+ht-degree: 92%
 
 ---
 
@@ -48,13 +48,16 @@ Os arquitetos da informação precisarão projetar consultas para seus endpoints
 O GraphiQL é um IDE que pode ser instalado em um ambiente AEM. Siga as etapas em [Uso do GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) para instalar no seu ambiente AEM.
 
 1. Faça logon no AEM as a Cloud Service e acesse a interface GraphiQL:
-   * Por exemplo: `https://<host>:<port>/content/graphiql.html`.
+   * Por exemplo: `https://<host>:<port>/aem/graphiql.html`.
 
-1. O GraphiQL IDE é um editor de consultas no navegador para GraphQL. Você pode usá-lo para criar consultas para recuperar Fragmentos de conteúdo e entregá-los de forma headless como JSON.
-   * O painel esquerdo permite criar a consulta.
-   * O painel direito exibe os resultados.
+1. O GraphiQL IDE é um editor de consultas no navegador para GraphQL. Você pode usá-lo para criar consultas para recuperar Fragmentos de conteúdo para entregá-los sem periféricos como JSON.
+   * A lista suspensa no canto superior direito permite selecionar o ponto de extremidade.
+   * Um painel à esquerda lista as consultas persistentes (quando disponíveis)
+   * O painel do meio à esquerda permite criar seu query.
+   * O painel do meio direito exibe os resultados.
    * O Editor de consultas tem recursos de autocompletar código e teclas de atalho para executar a consulta com facilidade.
-      ![Editor do GraphiQL](../assets/graphiql.png)
+
+   ![Editor do GraphiQL](../assets/graphiql.png)
 
 1. Supondo que o modelo que criamos era chamado `person`, com os campos `firstName`, `lastName` e `position`, podemos criar uma consulta simples para recuperar o conteúdo do Fragmento de conteúdo.
 
