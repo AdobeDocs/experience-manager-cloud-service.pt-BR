@@ -4,9 +4,9 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
+source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
 workflow-type: tm+mt
-source-wordcount: '2744'
+source-wordcount: '2943'
 ht-degree: 1%
 
 ---
@@ -114,14 +114,14 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 Para reter o ativo duplicado em [!DNL Assets], clique em **[!UICONTROL Manter]**. Para excluir o ativo duplicado carregado, clique em **[!UICONTROL Excluir]**.
 
-### Tratamento do nome do arquivo e caracteres proibidos {#filename-handling}
+### Tratamento de nomes de arquivos e caracteres proibidos {#filename-handling}
 
-[!DNL Experience Manager Assets] O tenta impedir que você carregue ativos com os caracteres proibidos em seus nomes de arquivo. Se você tentar fazer upload de um ativo com nome de arquivo contendo um caractere não permitido ou mais, [!DNL Assets] exibe uma mensagem de aviso e interrompe o upload até que você remova esses caracteres ou faça upload com um nome permitido.
+[!DNL Experience Manager Assets] impede que você carregue ativos com os caracteres proibidos em seus nomes de arquivo. Se você tentar fazer upload de um ativo com nomes de arquivo contendo um caractere não permitido ou mais, [!DNL Assets] exibe uma mensagem de aviso e interrompe o upload até que você remova esses caracteres ou faça upload com um nome permitido.
 
 Para adequar as convenções específicas de nomenclatura de arquivos para sua organização, a [!UICONTROL Fazer upload de ativos] permite especificar nomes longos para os arquivos carregados. Os seguintes caracteres (lista separada por espaços de) não são suportados:
 
-* caracteres inválidos para o nome do arquivo de ativos `* / : [ \\ ] | # % { } ? &`
-* caracteres inválidos para o nome da pasta de ativos `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* Caracteres inválidos para o nome do ativo: `* / : [ \\ ] | # % { } ? &`
+* Caracteres inválidos para o nome da pasta de ativos: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Fazer upload em massa de ativos {#bulk-upload}
 
@@ -147,7 +147,7 @@ A imagem a seguir ilustra os vários estágios ao assimilar ativos no Experience
 
 ![Ferramenta Assimilação em massa](assets/bulk-ingestion.png)
 
-#### Pré-requisitos {#prerequisites-bulk-ingestion}
+**Pré-requisitos**
 
 É necessário ter uma conta de armazenamento externa ou um bucket do Azure ou AWS para usar esse recurso.
 
@@ -155,7 +155,7 @@ A imagem a seguir ilustra os vários estágios ao assimilar ativos no Experience
 >
 >Crie o contêiner ou o bucket da conta de armazenamento como privado e aceite as conexões somente de solicitações autorizadas. No entanto, não há suporte para restrições adicionais sobre conexões de rede de entrada.
 
-#### Configurar a ferramenta Importação em massa {#configure-bulk-ingestor-tool}
+### Configurar a ferramenta Importação em massa {#configure-bulk-ingestor-tool}
 
 Para configurar a ferramenta Importação em massa, siga estas etapas:
 
@@ -187,31 +187,108 @@ Para configurar a ferramenta Importação em massa, siga estas etapas:
 
 1. Clique em **[!UICONTROL Salvar]** para salvar a configuração.
 
-#### Gerenciar a configuração da ferramenta Importação em massa {#manage-bulk-import-configuration}
+### Gerenciar a configuração da ferramenta Importação em massa {#manage-bulk-import-configuration}
 
 Depois de criar a configuração da ferramenta Importação em massa, você pode executar tarefas para avaliar a configuração antes de assimilar ativos em massa para sua instância do Experience Manager. Selecione a configuração disponível em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Importação em massa]** para exibir as opções disponíveis para gerenciar a configuração da ferramenta Importação em massa .
 
-##### Editar a configuração {#edit-configuration}
+### Editar a configuração {#edit-configuration}
 
 Selecione a configuração e clique em **[!UICONTROL Editar]** para modificar os detalhes de configuração. Não é possível editar o título da configuração e da fonte de dados de importação ao executar a operação de edição.
 
-##### Excluir a configuração {#delete-configuration}
+### Excluir a configuração {#delete-configuration}
 
 Selecione a configuração e clique em **[!UICONTROL Excluir]** para excluir a configuração Importação em massa.
 
-##### Validar conexão com a fonte de dados {#validate-connection}
+### Validar conexão com a fonte de dados {#validate-connection}
 
 Selecione a configuração e clique em **[!UICONTROL check]** para validar a conexão com a fonte de dados. No caso de uma conexão bem-sucedida, o Experience Manager exibe a seguinte mensagem:
 
 ![Mensagem bem-sucedida de importação em massa](assets/bulk-import-success-message.png)
 
-##### Chamar uma execução de teste para o trabalho de importação em massa {#invoke-test-run-bulk-import}
+### Chamar uma execução de teste para o trabalho de importação em massa {#invoke-test-run-bulk-import}
 
 Selecione a configuração e clique em **[!UICONTROL Execução de prática]** para chamar uma execução de teste para o trabalho de importação em massa. O Experience Manager exibe os seguintes detalhes sobre o trabalho de importação em massa:
 
 ![Resultado do teste](assets/dry-assets-result.png)
 
-##### Programar uma importação em massa única ou recorrente {#schedule-bulk-import}
+### Manuseio de nomes de arquivo durante a importação em massa {#filename-handling-bulkimport}
+
+Ao importar ativos ou pastas em massa, [!DNL Experience Manager Assets] importa toda a estrutura do que existe na fonte de importação. [!DNL Experience Manager] O segue as regras incorporadas para caracteres especiais nos nomes de ativo e pasta, portanto, esses nomes de arquivo precisam de limpeza. Para o nome da pasta e do ativo, o título definido pelo usuário permanece inalterado e é armazenado em `jcr:title`.
+
+Durante a importação em massa, [!DNL Experience Manager] procure as pastas existentes para evitar a reimportação de ativos e pastas, e também verifique as regras de limpeza aplicadas na pasta principal em que a importação ocorre. Se as regras de limpeza forem aplicadas na pasta pai, as mesmas regras serão aplicadas à fonte de importação. Para nova importação, as seguintes regras de privatização são aplicadas para gerenciar os nomes de arquivo de ativos e pastas.
+
+**Manuseio do nome do ativo na importação em massa**
+
+Para nomes de arquivos de ativos, o nome e caminho do Jcr é limpo usando a API: `JcrUtil.escapeIllegalJcrChars`.
+
+* Mantenha o unicode como está
+* Substitua os caracteres especiais por seu Código de escape de URL, por exemplo, `new*asset.png` é atualizado para `new%2Aasset.png`:
+
+   ```
+          URL escape code   
+   
+   "         %22
+   %         %25
+   '         %27
+   *         %2A
+   .         %2E
+   /         %2F
+   :         %3A
+   [         %5B
+   \n        %5Cn
+   \r        %5Cr
+   \t        %5Ct
+   ]         %5D
+   |         %7C
+   ```
+
+**Manipulação do nome da pasta na importação em massa**
+
+Para nomes de arquivos de pastas, o nome e caminho do Jcr é limpo usando a API: `JcrUtil.createValidName`.
+
+* Converter maiúsculas em minúsculas
+* Manter unicode como está
+* Substitua os caracteres especiais por um traço (&#39;-&#39;), por exemplo, `new*asset.png` é atualizado para `new-asset.png`:
+
+   ```
+   "                           
+   #                         
+   %                           
+   &                          
+   *                           
+   +                          
+   .                           
+   :                           
+   ;                          
+   ?                          
+   [                           
+   ]                           
+   ^                         
+   {                         
+   }                         
+   |                           
+   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \      Not allowed in Azure, allowed in AWS.
+   \t                          
+   ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
+
+#### Programar uma importação em massa única ou recorrente {#schedule-bulk-import}
 
 Para agendar uma importação em massa única ou recorrente, execute as seguintes etapas:
 
@@ -222,7 +299,7 @@ Para agendar uma importação em massa única ou recorrente, execute as seguinte
    ![Programar tarefa de assimilação em massa](assets/bulk-ingest-schedule1.png)
 
 
-##### Exibir a pasta de destino Ativos {#view-assets-target-folder}
+#### Exibir a pasta de destino Ativos {#view-assets-target-folder}
 
 Selecione a configuração e clique em **[!UICONTROL Exibir ativos]** para exibir o local de destino dos Ativos, onde os ativos são importados após a execução do trabalho de Importação em massa.
 

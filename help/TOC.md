@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos de autoajuda e links de documentação da visão geral do Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 170f93e9ef8b92ce258cc6f3e2d35ece27709fd5
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
-source-wordcount: '3409'
+source-wordcount: '3416'
 ht-degree: 98%
 
 ---
@@ -310,6 +310,7 @@ ht-degree: 98%
       + [Documentos do desenvolvedor e referências de APIs](/help/assets/developer-reference-material-apis.md)
       + [Esquema de metadados de pastas](/help/assets/folder-metadata-schema.md)
       + [Trabalhar com perfis de imagem e vídeo](/help/assets/dynamic-media/about-image-video-profiles.md)
+      + [Configurar transcrição para ativos de áudio e vídeo](/help/assets/configure-transcription.md)
       + [Tradução e ativos multilíngues](/help/assets/translate-assets.md)
       + [Pesquisar aspectos](/help/assets/search-facets.md)
       + [API HTTP de ativos](/help/assets/mac-api-assets.md)
