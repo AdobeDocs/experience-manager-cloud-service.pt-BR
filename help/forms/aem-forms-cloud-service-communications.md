@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Comunicações
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,9 @@ ht-degree: 0%
 
 # Usar processamento síncrono {#sync-processing-introduction}
 
-As comunicações permitem criar, montar e fornecer comunicações personalizadas e orientadas por marcas, como correspondências comerciais, documentos, demonstrativos, cartas de processamento de solicitações, avisos de benefícios, cartas de processamento de solicitações, contas mensais e kits de boas-vindas. Você pode usar as APIs de comunicações para combinar um modelo (XFA ou PDF) com os dados do cliente para gerar documentos nos formatos PDF, PS, PCL, DPL, IPL e ZPL.
+O recurso de comunicações ajuda você a criar documentos aprovados pela marca, personalizados e padronizados, como correspondências comerciais, demonstrativos, cartas de processamento de solicitações, avisos de benefícios, contas mensais ou kits de boas-vindas.
 
-Considere um cenário em que você tem um ou mais modelos e vários registros de dados XML para cada modelo. Você pode usar as APIs de comunicações para gerar um documento de impressão para cada registro. <!-- You can also combine the records into a single document. --> O resultado é um documento PDF não interativo. Um documento PDF não interativo não permite que os usuários insiram dados em seus campos.
-
+O recurso fornece APIs para gerar e manipular os documentos. Você pode gerar ou manipular um documento sob demanda ou criar um trabalho em lote para gerar vários documentos em intervalos definidos.
 
 As comunicações fornecem APIs para geração de documentos sob demanda e programada. Você pode usar APIs síncronas para APIs sob demanda e em lote (APIs assíncronas) para geração de documento agendado:
 
@@ -25,7 +24,7 @@ As comunicações fornecem APIs para geração de documentos sob demanda e progr
 
 ## Usar operações síncronas {#batch-operations}
 
-Uma operação síncrona é um processo de geração de documentos de maneira linear. Ele suporta dois tipos de autenticação:
+Uma operação síncrona é um processo de geração ou manipulação de documentos de maneira linear. Ele suporta dois tipos de autenticação:
 
 * **Autenticação básica**: Autenticação básica é um esquema de autenticação simples integrado ao protocolo HTTP. O cliente envia solicitações HTTP com o cabeçalho de Autorização que contém a palavra Básico seguida de um espaço e uma sequência de caracteres codificada em base64, username:password. Por exemplo, para autorizar como administrador / administrador o cliente envia Básico [nome de usuário da string codificada em base64]: [senha de string codificada em base64].
 
@@ -41,9 +40,9 @@ Uma operação síncrona é um processo de geração de documentos de maneira li
    >
    >O Adobe recomenda usar a autenticação baseada em token em um ambiente de produção.
 
-### Pré-requisitos {#pre-requisites}
+### (Somente APIs de geração de documento)Pré-requisitos {#pre-requisites}
 
-Para usar APIs síncronas, o seguinte é obrigatório:
+Para usar APIs síncronas para geração de documento, o seguinte é obrigatório:
 
 * Modelos PDF ou XDP
 * [Dados a serem mesclados com modelos](#form-data)
@@ -73,4 +72,3 @@ O [Documentação de referência da API](https://www.adobe.io/experience-manager
 >[!NOTE]
 >
 >Somente membros do grupo forms-users podem acessar APIs de comunicações.
-
