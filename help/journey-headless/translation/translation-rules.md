@@ -2,9 +2,9 @@
 title: Configurar regras de tradução (sem cabeçalho AEM)
 description: Saiba como definir regras de tradução para identificar o conteúdo para tradução.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,15 @@ No documento anterior da jornada de tradução AEM sem cabeçalho, [Configurar c
 * Pode configurar sua própria conexão com o serviço de tradução.
 
 Agora que seu conector está configurado, este artigo o conduzirá até a próxima etapa de identificação do conteúdo que deve ser traduzido.
+
+>[!CAUTION]
+>
+>Essa etapa da jornada da documentação só é necessária se você não estiver no canal de pré-lançamento AEM as a Cloud Service.
+>
+>* Se você estiver no canal de pré-lançamento, pule para a próxima etapa do jornada [Traduza o conteúdo.](translate-content.md)
+>* Se você não estiver no canal de pré-lançamento, continue lendo este documento.
+>
+>Consulte a [Seção Recursos adicionais](#additional-resources) para obter mais informações sobre o canal de pré-lançamento.
 
 ## Objetivo {#objective}
 
@@ -99,3 +108,4 @@ Aproveite esse conhecimento e prossiga com sua jornada de tradução sem perifé
 Embora seja recomendável seguir para a próxima parte da jornada de tradução sem periféricos revisando o documento [Traduzir conteúdo,](translate-content.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não é necessário que eles continuem na jornada sem periféricos.
 
 * [Identificação de conteúdo a ser traduzido](/help/sites-cloud/administering/translation/rules.md) - Saiba como as regras de tradução identificam o conteúdo que precisa ser traduzido.
+* [Canal de pré-lançamento AEM as a Cloud Service](/help/release-notes/prerelease.md#enable-prerelease) - Saiba como aderir ao canal de pré-lançamento do AEM as a Cloud Service para experimentar recursos novos e futuros.

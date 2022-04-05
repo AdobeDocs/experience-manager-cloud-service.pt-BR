@@ -2,12 +2,13 @@
 title: Traduzir conteúdo (sem periféricos AEM)
 description: Use o conector e as regras de tradução para traduzir o conteúdo sem cabeçalho.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
+
 
 # Traduzir conteúdo {#translate-content}
 
@@ -21,6 +22,10 @@ No documento anterior da jornada de tradução AEM sem cabeçalho, [Configurar r
 * Pode definir suas próprias regras de tradução.
 
 Agora que seu conector e as regras de tradução estão configurados, este artigo o orienta pela próxima etapa da tradução do conteúdo sem periféricos.
+
+>[!NOTE]
+>
+>Se você ignorou o [Configurar regras de tradução](translation-rules.md) etapa dessa jornada, pois você está no canal de pré-lançamento AEM as a Cloud Service, não precisa se preocupar com as regras de tradução, conforme mencionado neste documento.
 
 ## Objetivo {#objective}
 

@@ -2,9 +2,9 @@
 title: Configure o conector de tradução (sem cabeçalho AEM)
 description: Saiba como conectar AEM a um serviço de tradução.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1296'
 ht-degree: 1%
 
 ---
@@ -99,6 +99,11 @@ Para criar uma nova configuração de tradução:
    1. **Traduzir metadados** - Marque essa opção para traduzir metadados de ativos.
    1. **Traduzir tags** - Marque essa opção para traduzir tags associadas ao ativo.
    1. **Executar tradução automaticamente** - Marque essa propriedade se desejar que as traduções sejam enviadas automaticamente para o serviço de tradução.
+   1. **Desativar Tradução Somente Atualização** - Quando essa opção estiver marcada, a atualização do projeto de tradução enviará todos os campos traduzíveis para tradução, não apenas os alterados desde a última tradução. A atualização do seu projeto de tradução será discutida posteriormente na jornada.
+   1. **Ativar campos do modelo de conteúdo para tradução** - Marque essa opção para que a configuração de tradução reconheça automaticamente os campos nos Modelos de conteúdo com base no **Traduzível** sinalizador.
+      * Se disponível, essa opção deve ser verificada para simplificar o processo de tradução.
+      * Essa opção só está disponível no canal de pré-lançamento AEM as a Cloud Service.
+      * Consulte a [Seção Recursos adicionais](#additional-resources) para obter mais informações sobre o canal de pré-lançamento.
 
 1. Toque ou clique em **Salvar e fechar**.
 
@@ -138,3 +143,4 @@ Embora seja recomendável seguir para a próxima parte da jornada de tradução 
 
 * [Configuração da estrutura de integração de tradução](/help/sites-cloud/administering/translation/integration-framework.md) - Revise uma lista de conectores de tradução selecionados e saiba como configurar a Estrutura de integração de tradução para integrar com serviços de tradução de terceiros.
 * [Conexão com o Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM fornece uma conta de tradução Microsoft de avaliação para fins de teste.
+* [Canal de pré-lançamento AEM as a Cloud Service](/help/release-notes/prerelease.md#enable-prerelease) - Saiba como aderir ao canal de pré-lançamento do AEM as a Cloud Service para experimentar recursos novos e futuros.

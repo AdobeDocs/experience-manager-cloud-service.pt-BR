@@ -4,9 +4,9 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
+source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '2948'
 ht-degree: 1%
 
 ---
@@ -219,36 +219,37 @@ Durante a importação em massa, [!DNL Experience Manager] procure as pastas exi
 
 **Manuseio do nome do ativo na importação em massa**
 
-Para nomes de arquivos de ativos, o nome e caminho do Jcr é limpo usando a API: `JcrUtil.escapeIllegalJcrChars`.
+Para nomes de arquivos de ativos, o nome e o caminho do JCR são limpos usando a API: `JcrUtil.escapeIllegalJcrChars`.
 
-* Mantenha o unicode como está
-* Substitua os caracteres especiais por seu Código de escape de URL, por exemplo, `new*asset.png` é atualizado para `new%2Aasset.png`:
+* Caracteres Unicode não são alterados
+* Substitua os caracteres especiais por seu Código de escape de URL, por exemplo, `new asset.png` é atualizado para `new%20asset.png`:
 
    ```
-          URL escape code   
+                   URL escape code   
    
-   "         %22
-   %         %25
-   '         %27
-   *         %2A
-   .         %2E
-   /         %2F
-   :         %3A
-   [         %5B
-   \n        %5Cn
-   \r        %5Cr
-   \t        %5Ct
-   ]         %5D
-   |         %7C
+   "               %22
+   %               %25
+   '               %27
+   *               %2A
+   .               %2E
+   /               %2F
+   :               %3A
+   [               %5B
+   \n              %5Cn
+   \r              %5Cr
+   \t              %5Ct
+   ]               %5D
+   |               %7C
+   space char      %20
    ```
 
 **Manipulação do nome da pasta na importação em massa**
 
-Para nomes de arquivos de pastas, o nome e caminho do Jcr é limpo usando a API: `JcrUtil.createValidName`.
+Para nomes de arquivos de pastas, o nome e o caminho do JCR são limpos usando a API: `JcrUtil.createValidName`.
 
-* Converter maiúsculas em minúsculas
-* Manter unicode como está
-* Substitua os caracteres especiais por um traço (&#39;-&#39;), por exemplo, `new*asset.png` é atualizado para `new-asset.png`:
+* Os caracteres em maiúsculas são convertidos em minúsculas
+* Caracteres Unicode não são alterados
+* Substitua os caracteres especiais por um traço (&#39;-&#39;), por exemplo, `new asset.png` é atualizado para `new-asset.png`:
 
    ```
    "                           
@@ -267,9 +268,10 @@ Para nomes de arquivos de pastas, o nome e caminho do Jcr é limpo usando a API:
    {                         
    }                         
    |                           
-   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
-   \      Not allowed in Azure, allowed in AWS.
-   \t                          
+   /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \         Not allowed in Azure, allowed in AWS.
+   \t
+   space     It is the space character.
    ```
 
 <!-- 
@@ -378,7 +380,7 @@ Detalhes técnicos das APIs e protocolo de upload, além de links para SDK de c�
 >[!MORELIKETHIS]
 >
 >* Aplicativo de desktop do [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Sobre [!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Sobre [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentação](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Referência técnica para upload de ativos](developer-reference-material-apis.md#asset-upload)
 

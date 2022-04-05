@@ -2,9 +2,9 @@
 title: Uma introdução às Comunicações as a Cloud Service do Forms
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1138'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Manipulação de documento
 
-As APIs de manipulação de documentos de comunicações ajudam a combinar, reorganizar e validar documentos do PDF. Normalmente, você cria um DDX e o envia para APIs de manipulação de documentos para montar ou reorganizar um documento. O documento DDX fornece instruções sobre como usar os documentos de origem para produzir um conjunto de documentos necessários. A documentação de referência DDX fornece informações detalhadas sobre todas as operações suportadas. Alguns exemplos de manipulação de documentos são:
+As APIs de manipulação de documentos de comunicações ajudam a combinar, reorganizar e validar documentos do PDF. Normalmente, você cria um DDX e o envia para APIs de manipulação de documentos para montar ou reorganizar um documento. O [Documento DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) O fornece instruções sobre como usar os documentos de origem para produzir um conjunto de documentos necessários. A documentação de referência DDX fornece informações detalhadas sobre todas as operações suportadas. Alguns exemplos de manipulação de documentos são:
 
 ### Montar documentos do PDF
 

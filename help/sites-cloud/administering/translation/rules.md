@@ -4,9 +4,9 @@ description: Saiba como as regras de tradução identificam o conteúdo que prec
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1292'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,22 @@ As regras de tradução identificam o conteúdo a ser traduzido para páginas, c
 >[!TIP]
 >
 >Se você é novo em traduzir conteúdo, consulte nosso [Jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é o caminho orientado pela tradução do conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência de AEM ou tradução.
+
+## Fragmentos de conteúdo e regras de tradução {#content-fragments}
+
+As regras de tradução descritas neste documento se aplicam aos Fragmentos de conteúdo somente se a variável **Ativar campos do modelo de conteúdo para tradução** não foi ativada na [nível de configuração da estrutura de integração de tradução.](integration-framework.md#assets-configuration-properties)
+
+Se a variável **Ativar campos do modelo de conteúdo para tradução** estiver ativa, AEM usará a variável **Traduzível** no campo [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md#properties) para determinar se o campo deve ser traduzido. Nesse caso, [regras de tradução](rules.md) são substituídas.
+
+Se você quiser usar regras de tradução para traduzir os Fragmentos de conteúdo, a variável **Ativar campos do modelo de conteúdo para tradução** a opção na configuração da estrutura de integração de tradução deve estar desativada.
+
+>[!NOTE]
+>
+>Esse recurso está disponível no canal de pré-lançamento.
+> 
+>Consulte a [Documentação do Canal de pré-lançamento](/help/release-notes/prerelease.md#enable-prerelease) para obter informações sobre como habilitar o recurso para seu ambiente.
+
+## Visão geral {#overview}
 
 As páginas e os ativos são representados como nós no repositório JCR. O conteúdo extraído é um ou mais valores de propriedade dos nós. As regras de tradução identificam as propriedades que contêm o conteúdo a ser extraído.
 

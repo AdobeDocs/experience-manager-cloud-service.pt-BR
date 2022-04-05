@@ -1,17 +1,17 @@
 ---
-title: Modelagem de conteúdo para headless com AEM introdução
-description: Uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager as a Cloud Service e como modelar o conteúdo para seu projeto.
+title: Modelagem de conteúdo para o AEM as a Headless - uma introdução
+description: Uma introdução ao uso dos recursos do Adobe Experience Manager as a Cloud Service as a Headless CMS para modelar o conteúdo do seu projeto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
-# Modelagem de conteúdo para headless com o AEM - uma introdução {#architect-headless-introduction}
+# Modelagem de conteúdo para o AEM as a Headless - uma introdução {#architect-headless-introduction}
 
-Nesta parte do [jornada do AEM Headless Content Architect](overview.md), você pode aprender os conceitos e a terminologia (básica) necessários para entender a modelagem de conteúdo para entrega de conteúdo sem periféricos com o Adobe Experience Manager (AEM) as a Cloud Service.
+Nesta parte do [jornada do AEM Headless Content Architect](overview.md), você pode aprender os conceitos e a terminologia (básica) necessários para entender a modelagem de conteúdo ao usar o Adobe Experience Manager (AEM) as a Cloud Service como um CMS sem interface.
 
 Este documento ajuda você a entender a entrega sem periféricos, como o AEM suporta periféricos e como o conteúdo é modelado para ficar sem periféricos. Depois de ler, você deve:
 
