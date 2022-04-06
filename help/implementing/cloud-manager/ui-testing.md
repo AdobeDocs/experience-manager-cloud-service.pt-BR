@@ -2,9 +2,9 @@
 title: Teste da interface
 description: O teste da interface personalizada é um recurso opcional que permite criar e executar automaticamente testes da interface do usuário para seus aplicativos personalizados
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1338'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,6 @@ ht-degree: 1%
 >abstract="O teste da interface personalizada é um recurso opcional que permite criar e executar automaticamente testes da interface do usuário para seus aplicativos. Os testes da interface do usuário são testes baseados em Selenium, compactados em uma imagem Docker, para permitir uma grande escolha na linguagem e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium)."
 
 O teste da interface personalizada é um recurso opcional que permite criar e executar automaticamente testes da interface do usuário para seus aplicativos.
-
->[!NOTE]
-> Os pipelines de preparo e produção criados antes de 10 de fevereiro de 2021 precisam ser atualizados para usar os testes da interface do usuário, conforme descrito nesta página.
-> Consulte [Pipelines de CI-CD no Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obter informações sobre a configuração do pipeline.
 
 ## Visão geral {#custom-ui-testing}
 
@@ -62,12 +58,9 @@ Para incluir uma `testing.properties` no artefato de criação, adicione um `inc
 
 >[!NOTE]
 >
->Se o seu projeto não incluir essa linha, será necessário editar esse arquivo para aceitar o teste da interface do usuário. Se o arquivo tiver uma linha avisando para não editá-lo, ignore esse conselho.
-
->[!NOTE]
+>Se o seu projeto não incluir essa linha, será necessário editar o arquivo para aceitar o teste da interface do usuário.
 >
->Os pipelines de produção criados antes de 10 de fevereiro de 2021 precisarão ser atualizados para usar os testes da interface do usuário, conforme descrito nesta seção. Basicamente, isso significa que o Usuário deve editar o pipeline de Produção e clicar em **Salvar** da interface do usuário, mesmo que nenhuma alteração tenha sido feita.
->Consulte [Configuração do pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) para saber mais sobre a configuração de pipeline.
+>O arquivo pode conter uma linha avisando para não editá-lo. Isso se deve ao fato de ele ter sido introduzido em seu projeto antes que o teste de interface de usuário de opt-in fosse introduzido e os clientes não queriam editar o arquivo. Isso pode ser ignorado com segurança.
 
 ## Criação de testes da interface do usuário {#building-ui-tests}
 
@@ -177,7 +170,7 @@ As variáveis de ambiente a seguir serão passadas para a imagem Docker em tempo
 | Variável | Exemplos | Descrição |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | O URL do servidor Selenium |
-| `SELENIUM_BROWSER` | `chrome`, `firefox` | A implementação do navegador usada pelo servidor Selenium |
+| `SELENIUM_BROWSER` | `chrome` | A implementação do navegador usada pelo servidor Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | O URL da instância do autor do AEM |
 | `AEM_AUTHOR_USERNAME` | `admin` | O nome de usuário para fazer logon na instância do autor do AEM |
 | `AEM_AUTHOR_PASSWORD` | `admin` | A senha para fazer logon na instância do autor do AEM |
@@ -198,7 +191,7 @@ Quando o endpoint de status do Selenium responde com uma resposta positiva, os t
 
 ### Gerar relatórios de teste {#generate-test-reports}
 
-A imagem Docker deve gerar relatórios de teste no formato JUnit XML e salvá-los no caminho especificado pela variável de ambiente `REPORTS_PATH`. O formato JUnit XML é um formato amplamente usado para relatar os resultados de testes. Se a imagem do Docker usar Java e Maven, a variável [Plug-in do Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) e [Plug-in Maven Failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/).
+A imagem Docker deve gerar relatórios de teste no formato JUnit XML e salvá-los no caminho especificado pela variável de ambiente `REPORTS_PATH`. O formato JUnit XML é um formato amplamente usado para relatar os resultados de testes. Se a imagem do Docker usar Java e Maven, módulos de teste padrão como [Plug-in do Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) e [Plug-in Maven Failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/) podem gerar esses relatórios imediatamente.
 
 Se a imagem do Docker for implementada com outras linguagens de programação ou corredores de teste, verifique a documentação das ferramentas escolhidas para saber como gerar relatórios XML JUnit.
 
