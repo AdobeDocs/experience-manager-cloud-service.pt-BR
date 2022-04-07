@@ -1,18 +1,18 @@
 ---
 title: jornada do desenvolvedor sem periféricos do AEM
-description: AEM Documentação CMS sem cabeçalho. Comece aqui para obter uma jornada guiada com os recursos avançados e flexíveis do AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
+description: Comece aqui para obter uma jornada guiada por meio do Adobe Experience Manager (AEM) as a Cloud Service quando estiver sendo usada como um Sistema de gerenciamento de conteúdo sem cabeçalho (CMS). Esta jornada fornece todas as informações necessárias para desenvolver seu primeiro aplicativo sem periféricos.
 landing-page-description: Comece aqui para obter uma jornada guiada pelos recursos headless de AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
+source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1277'
 ht-degree: 6%
 
 ---
 
 # jornada do desenvolvedor sem periféricos do AEM {#aem-headless-developer-journey}
 
-Comece aqui para obter uma jornada guiada por meio dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento sem periféricos. Esta jornada fornece toda a Documentação sem cabeçalho AEM necessária para desenvolver seu primeiro aplicativo sem periféricos.
+Comece aqui para obter uma jornada guiada por meio do Adobe Experience Manager (AEM) as a Cloud Service quando estiver sendo usada como um Sistema de gerenciamento de conteúdo sem cabeçalho (CMS). Saiba mais sobre os recursos avançados e flexíveis, seus recursos e como aproveitá-los em seu primeiro projeto de desenvolvimento sem periféricos. Esta jornada fornece todas as informações necessárias para desenvolver seu primeiro aplicativo sem periféricos.
 
 ## Introdução {#introduction}
 
