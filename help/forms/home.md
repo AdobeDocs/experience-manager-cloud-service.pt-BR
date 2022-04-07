@@ -1,12 +1,12 @@
 ---
 title: Introdução ao [!DNL AEM Forms] as a Cloud Service
-description: Recursos de autoajuda e links de documentação do Adobe Experience Manager Forms as a Cloud Service
-landing-page-description: Entenda como usar formulários no AEM as a Cloud Service.
+description: Use essa Plataforma como um serviço (PaaS) para criar, gerenciar e publicar formulários digitais de nível empresarial e processos de negócios, bem como para conectar formulários às fontes de dados atuais.
+landing-page-description: Saiba como usar formulários no AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fe2f0743d8efaaf9b3fcfc9e20264cca627db6c8
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 11%
+source-wordcount: '289'
+ht-degree: 6%
 
 ---
 
