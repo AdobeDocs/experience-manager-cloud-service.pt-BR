@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre o Cloud Manager
 description: Encontre respostas para as perguntas mais frequentes sobre o Cloud Manager AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 11ac22974524293ce3e4ceaa26e59fe75ea387e6
+source-git-commit: 5f4bbedaa5c4630d6f955bb0986e8b32444d6aa3
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -16,64 +16,56 @@ Este documento fornece respostas para as perguntas mais frequentes sobre o Cloud
 
 ## É possível usar o Java 11 com builds do Cloud Manager? {#java-11-cloud-manager}
 
-A build do AEM Cloud Manager pode falhar ao tentar alternar a build do Java 8 para o 11. O problema pode ter muitas causas e as mais comuns são documentadas nesta seção.
+Sim. Será necessário adicionar a variável `maven-toolchains-plugin` com as configurações apropriadas para o Java 11.
 
-* Adicione o `maven-toolchains-plugin` com as configurações apropriadas para o Java 11.
-   * Isso está documentado [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
-   * Por exemplo, consulte o [código do projeto wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+* Isso está documentado [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+* Por exemplo, consulte o [código do projeto wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-* Se você encontrar o seguinte erro, será necessário remover `maven-scr-plugin` e converter todas as anotações OSGi em anotações OSGi R6.
-   * Para obter instruções, consulte [aqui.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+## Minha build falha com um erro sobre o maven-scr-plugin após mudar do Java 8 para o Java 11. O que posso fazer? {#build-fails-maven-scr-plugin}
 
-   ```text
-   [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
-   ```
+A build do AEM Cloud Manager pode falhar ao tentar alternar a build do Java 8 para o 11. Se você encontrar o seguinte erro, será necessário remover `maven-scr-plugin` e converter todas as anotações OSGi em anotações OSGi R6.
 
-* Para builds do Cloud Manager, a variável `maven-enforcer-plugin` falha com erro `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"`. Esse é um problema conhecido porque o Cloud Manager usa uma versão diferente do Java para executar o comando maven versus o código de compilação. Por enquanto, omita `requireJavaVersion` do `maven-enforcer-plugin` configurações.
+```text
+[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
+```
+
+Para obter instruções sobre como remover este plug-in, consulte [aqui.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
+
+## Minha build falha com um erro sobre RequireJavaVersion após alternar do Java 8 para o Java 11. O que posso fazer? {#build-fails-requirejavaversion}
+
+Para builds do Cloud Manager, a variável `maven-enforcer-plugin` falha com esse erro.
+
+```text
+"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
+```
+
+Esse é um problema conhecido porque o Cloud Manager usa uma versão diferente do Java para executar o comando maven versus o código de compilação. Simplesmente omite `requireJavaVersion` do `maven-enforcer-plugin` configurações.
 
 ## A verificação de qualidade do código falhou e sua implantação travou. Existe uma maneira de ignorar esta verificação? {#deployment-stuck}
 
-Todas as falhas de verificação de qualidade de código, exceto a classificação de segurança, são métricas não críticas, portanto, podem ser ignoradas ao expandir os itens na interface do usuário de resultados.
-
-Um usuário na [Gerenciador de implantação, Gerente de programa ou Proprietário comercial](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md) pode substituir os problemas, caso o pipeline continue. Esses usuários também podem aceitar os problemas, nesse caso, o pipeline para com uma falha.
+Sim. Todas as falhas de verificação de qualidade de código, exceto a classificação de segurança, são métricas não críticas, portanto, podem ser ignoradas ao expandir os itens na interface do usuário de resultados.
 
 Consulte o documento [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) para obter mais detalhes.
 
-## Posso usar o SNAPSHOT para a versão do projeto Maven? Como o controle de versão dos pacotes e arquivos jar funciona para implantações de estágio e produção? {#snapshot-version}
+## Posso usar o SNAPSHOT para a versão do projeto Maven? {#use-snapshot}
 
-Os cenários a seguir lidam com o controle de versão do pacote e do arquivo jar de pacote para implantações de estágio e produção.
+Sim. Para implantações de desenvolvedores, a ramificação git `pom.xml` os arquivos devem conter `-SNAPSHOT` no final do `<version>` valor.
 
-* Para implantações de desenvolvedores, a ramificação git `pom.xml` os arquivos devem conter `-SNAPSHOT` no final do `<version>` valor.
-   * Isso permite que a implantação subsequente ainda seja instalada quando a versão não foi alterada. Em implantações de desenvolvedores, nenhuma versão automática é adicionada ou gerada para a build maven.
+Isso permite que a implantação subsequente ainda seja instalada quando a versão não foi alterada. Em implantações de desenvolvedores, nenhuma versão automática é adicionada ou gerada para a build maven.
 
-* Em implantações de estágio e produção, uma versão automática é gerada como [documentado aqui.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+Você também pode definir a versão como `-SNAPSHOT` para builds ou implantações de estágio e produção. O Cloud Manager define automaticamente um número de versão adequado e cria uma tag para você no git. Essa tag pode ser consultada posteriormente, se necessário.
 
-* Para o controle de versão personalizado em implantações de estágio e produção, defina uma versão maven adequada em três partes como `1.0.0`. Aumente a versão sempre que implantar na produção.
+## Como o controle de versão de pacote e pacote funciona em implantações de estágio e produção? {#snapshot-version}
 
-* O Cloud Manager adiciona automaticamente sua versão ao palco e compilações de produção e cria uma ramificação git. Nenhuma configuração especial é necessária. Se você não definir uma versão maven conforme descrito anteriormente, a implantação ainda terá sucesso e uma versão será definida automaticamente.
+Em implantações de estágio e produção, uma versão automática é gerada como [documentado aqui.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
-* Você pode definir a versão como `-SNAPSHOT` para builds ou implantações de estágio e produção sem problemas. O Cloud Manager define automaticamente um número de versão adequado e cria uma tag para você no git. Essa tag pode ser consultada posteriormente, se necessário.
+Para o controle de versão personalizado em implantações de estágio e produção, defina uma versão maven adequada em três partes como `1.0.0`. Aumente a versão sempre que implantar na produção.
 
-* Se quiser experimentar algum código experimental em um ambiente de desenvolvimento, você pode criar uma nova ramificação git e definir o pipeline para usar essa ramificação.
-   * Isso é útil quando as implantações falham e você gostaria de testar com versões mais antigas do código para determinar qual alteração causou a falha.
-
-   * O comando git abaixo cria uma ramificação remota chamada `testbranch1` com base na confirmação pré-existente `485548e4fbafbc83b11c3cb12b035c9d26b6532b`.  Essa ramificação pode ser usada no Cloud Manager sem afetar outras ramificações.
-
-   ```shell
-   git push origin 485548e4fbafbc83b11c3cb12b035c9d26b6532b:refs/heads/testbranch1
-   ```
-
-   * Consulte a [documentação do git](https://git-scm.com/book/en/v2/Git-Internals-Git-References) para obter mais detalhes.
-
-   * Se desejar excluir a ramificação de teste posteriormente, use o comando delete:
-
-   ```shell
-   git push origin --delete testbranch1
-   ```
+O Cloud Manager adiciona automaticamente sua versão ao palco e compilações de produção e cria uma ramificação git. Nenhuma configuração especial é necessária. Se você não definir uma versão maven conforme descrito anteriormente, a implantação ainda terá sucesso e uma versão será definida automaticamente.
 
 ## Minha build maven falha para implantações do Cloud Manager, mas é criada localmente sem erros. O que há de errado? {#maven-build-fail}
 
-Consulte [Recurso Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) para obter mais detalhes.
+Consulte [este recurso git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) para obter mais detalhes.
 
 ## O que devo fazer se uma implantação do Cloud Manager falhar na etapa de implantação AEM as a Cloud Service? {#cloud-manager-deployment-cloud-service}
 
@@ -88,7 +80,7 @@ Caused by: org.apache.sling.api.resource.PersistenceException: Unable to commit 
 Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventAdminAsyncThread #7] org.apache.sling.distribution.journal.impl.publisher.DistributionPublisher [null] Error processing distribution package` `dstrpck-1583514457813-c81e7751-2da6-4d00-9814-434187f08d32. Retry attempts 344/infinite. Message: Error trying to extract package at path /etc/packages/com.myapp/myapp-base.ui.content-5.1.0-SNAPSHOT.
 ```
 
-Nesse caso, a variável `sling-distribution-importer` O usuário precisa de permissões adicionais para os caminhos de conteúdo definidos na variável `ui.content package`.  Isso geralmente significa que você precisa adicionar permissões para ambos `/conf` e `/var`.
+O `sling-distribution-importer` O usuário precisa de permissões adicionais para os caminhos de conteúdo definidos na variável `ui.content package`.  Isso geralmente significa que você precisa adicionar permissões para ambos `/conf` e `/var`.
 
 A solução é adicionar um [Configuração OSGi do RepositoryInitializer](/help/implementing/deploying/overview.md#repoint) script para o pacote de implantação de aplicativos para adicionar ACLs para o `sling-distribution-importer` usuário.
 
@@ -97,7 +89,9 @@ No erro de exemplo anterior, o pacote `myapp-base.ui.content-*.zip` inclui conte
 Veja um exemplo [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) de uma dessas configurações OSGi que adiciona permissões adicionais para o `sling-distribution-importer` usuário.  Essa configuração adiciona permissões em `/var`.  Este arquivo xml abaixo [1] precisa ser adicionado ao pacote do aplicativo em `/apps/myapp/config` (onde myapp é a pasta onde o código do aplicativo está armazenado).
 org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
 
-Se a adição de uma configuração OSGi do RepositoryInitializer não resolveu o erro, pode ser devido a um desses problemas adicionais.
+## A implantação do My Cloud Manager falha na etapa de implantação AEM as a Cloud Service e já sou uma configuração OSGi do RepositoryInitializer. O que mais posso fazer? {#build-failures}
+
+If [adicionando uma configuração OSGi do RepositoryInitializer](##cloud-manager-deployment-cloud-service) não resolveu o erro, pode ser devido a um desses problemas adicionais.
 
 * A implantação pode estar falhando devido a uma configuração OSGi incorreta que interrompe um serviço predefinido.
    * Verifique os logs durante a implantação para ver se há erros óbvios.

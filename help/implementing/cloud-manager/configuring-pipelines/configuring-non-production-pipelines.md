@@ -3,9 +3,9 @@ title: Configuração de pipeline de não produção
 description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1119'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,7 @@ Para concluir a configuração do pipeline de não produção do código front-e
    >Consulte o documento [Adicionar e gerenciar repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
 
    * **Ramificação Git** - Essa opção define de qual ramificação o pipeline selecionado deve recuperar o código.
+      * Insira os primeiros caracteres do nome da ramificação e o recurso de preenchimento automático desse campo encontrará as ramificações correspondentes para ajudá-lo a selecionar.
    * **Localização do código** - Essa opção define o caminho na ramificação do acordo de recompra selecionado a partir do qual o pipeline deve recuperar o código.
 
    ![Gasoduto front-end](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -102,7 +103,8 @@ Para concluir a configuração do pipeline de não produção do código de pilh
    >Consulte o documento [Adicionar e gerenciar repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
 
    * **Ramificação Git** - Essa opção define de qual ramificação o pipeline selecionado deve recuperar o código.
-   * **Ignorar configuração da camada da Web** -
+      * Insira os primeiros caracteres do nome da ramificação e o recurso de preenchimento automático desse campo encontrará as ramificações correspondentes para ajudá-lo a selecionar.
+   * **Ignorar configuração da camada da Web** - Quando marcado, o pipeline não implantará sua configuração de camada da Web.
 
    ![pipeline de pilha completa](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

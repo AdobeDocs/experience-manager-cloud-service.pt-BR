@@ -1,19 +1,19 @@
 ---
-title: Notas de versão do Cloud Manager 2022.3.0 no Adobe Experience Manager as a Cloud Service
-description: Estas são as notas de versão do Cloud Manager 2022.3.0 em AEM as a Cloud Service.
+title: Notas de versão do Cloud Manager 2022.4.0 no Adobe Experience Manager as a Cloud Service
+description: Estas são as notas de versão do Cloud Manager 2022.4.0 em AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 0749099acf98b09d0f83bfe86c2cc4558261c029
+source-git-commit: e448ee4ee2928a136bdab382c67104bedce28732
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 3%
+source-wordcount: '398'
+ht-degree: 1%
 
 ---
 
 
-# Notas de versão do Cloud Manager 2022.3.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de versão do Cloud Manager 2022.4.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta as notas de versão do Cloud Manager 2022.3.0 AEM as a Cloud Service.
+Esta página documenta as notas de versão do Cloud Manager 2022.4.0 AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,15 +21,23 @@ Esta página documenta as notas de versão do Cloud Manager 2022.3.0 AEM as a Cl
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2022.3.0 em AEM as a Cloud Service 10 de março de 2022. A próxima versão está planejada para 7 de abril de 2022.
+A data de lançamento do Cloud Manager versão 2022.4.0 em AEM as a Cloud Service 7 de abril de 2022. A próxima versão está prevista para 5 de maio de 2022.
 
 ## Novidades {#what-is-new}
 
-* O acesso ao log de Ambiente de AEM pode ser feito usando a função Desenvolvedor .
+* As melhorias na duração e na taxa de sucesso das etapas de criação do pipeline foram implementadas e serão implantadas de forma incremental para todos os clientes até o mês de abril.
+* Agora é possível encontrar facilmente uma ramificação git digitando os primeiros caracteres do nome no campo de entrada no assistente adicionar e editar pipeline e selecionando entre as correspondências sugeridas para ambos [produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Gasodutos.
+* Logo após a versão de abril, a Índia estará disponível para seleção ao definir a região da nuvem durante a criação do ambiente.
+* O **Pipelines** A página agora tem paginação para melhorar a usabilidade de programas com um grande número de pipelines.
+   * 50 linhas por página serão exibidas na tabela.
+* A versão do [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) usado pelo Cloud Manager foi atualizado para a versão 36.
+* O JDK do Oracle agora é o JDK padrão para o desenvolvimento e a operação de aplicativos AEM. O processo de build do Cloud Manager mudará automaticamente para o uso do JDK do Oracle, mesmo se uma opção alternativa estiver explicitamente selecionada na cadeia de ferramentas Maven.
+   * Para saber mais sobre como alternar para o Oracle JDK, consulte [a documentação do Ambiente de build.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)
+   * Consulte [Perguntas frequentes sobre a política de suporte de Java para Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/assets/Java_Policy_for_Adobe_Experience_Manager.pdf) para abordar perguntas comuns sobre essa alteração.
+* A execução do pipeline agora falhará mais rápido ao detectar versões de AEM mais antigas durante a etapa de validação. Os usuários receberão uma mensagem na interface do usuário para orientá-los.
 
 ## Correções de erros {#bug-fixes}
 
-* Um subconjunto de repositórios git criados manualmente tinha um valor de nome incorreto que impedia a efetivação do recurso de reuso de artefato de compilação. Os nomes desses repositórios foram alterados e os usuários verão o nome corrigido na API/interface do usuário do Cloud Manager.
-* Os artefatos de construção provenientes de gasodutos que não são de produção foram reutilizados de forma imprópria em gasodutos de produção em pilha completa.
-* Ao adicionar ou editar um pipeline de qualidade de código, as opções para lidar com falhas de métrica não são mais exibidas.
-* Algumas configurações inesperadas de variável de pipeline podem causar na etapa de build.
+* O log criado na etapa Teste da interface do usuário agora está disponível para download por meio da interface do usuário.
+* Os pipelines de configuração do nível da Web agora só podem reutilizar pacotes de execuções de configuração do nível da Web.
+* Foi adicionada mais clareza às mensagens na interface do usuário sobre como atualizar AEM em um ambiente desatualizado.
