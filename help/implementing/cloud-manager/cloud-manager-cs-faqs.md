@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre o Cloud Manager
 description: Encontre respostas para as perguntas mais frequentes sobre o Cloud Manager AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 5f4bbedaa5c4630d6f955bb0986e8b32444d6aa3
+source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,9 @@ Este documento fornece respostas para as perguntas mais frequentes sobre o Cloud
 
 Sim. Será necessário adicionar a variável `maven-toolchains-plugin` com as configurações apropriadas para o Java 11.
 
-* Isso está documentado [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
-* Por exemplo, consulte o [código do projeto wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+O processo está documentado [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+
+Por exemplo, consulte o [código do projeto wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Minha build falha com um erro sobre o maven-scr-plugin após mudar do Java 8 para o Java 11. O que posso fazer? {#build-fails-maven-scr-plugin}
 
@@ -33,7 +34,7 @@ Para obter instruções sobre como remover este plug-in, consulte [aqui.](https:
 
 ## Minha build falha com um erro sobre RequireJavaVersion após alternar do Java 8 para o Java 11. O que posso fazer? {#build-fails-requirejavaversion}
 
-Para builds do Cloud Manager, a variável `maven-enforcer-plugin` falha com esse erro.
+Para builds do Cloud Manager, a variável `maven-enforcer-plugin` pode falhar com esse erro.
 
 ```text
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
@@ -55,7 +56,9 @@ Isso permite que a implantação subsequente ainda seja instalada quando a vers�
 
 Você também pode definir a versão como `-SNAPSHOT` para builds ou implantações de estágio e produção. O Cloud Manager define automaticamente um número de versão adequado e cria uma tag para você no git. Essa tag pode ser consultada posteriormente, se necessário.
 
-## Como o controle de versão de pacote e pacote funciona em implantações de estágio e produção? {#snapshot-version}
+Mais detalhes sobre o manuseio de versão são [documentado aqui.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+
+## Como funciona o controle de versão de pacote e pacote para implantações de estágio e produção? {#snapshot-version}
 
 Em implantações de estágio e produção, uma versão automática é gerada como [documentado aqui.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
@@ -86,12 +89,11 @@ A solução é adicionar um [Configuração OSGi do RepositoryInitializer](/help
 
 No erro de exemplo anterior, o pacote `myapp-base.ui.content-*.zip` inclui conteúdo em `/conf` e `/var/workflow`. Para que a implantação seja bem-sucedida, as permissões do `sling-distribution-importer` nesses caminhos é necessário.
 
-Veja um exemplo [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) de uma dessas configurações OSGi que adiciona permissões adicionais para o `sling-distribution-importer` usuário.  Essa configuração adiciona permissões em `/var`.  Este arquivo xml abaixo [1] precisa ser adicionado ao pacote do aplicativo em `/apps/myapp/config` (onde myapp é a pasta onde o código do aplicativo está armazenado).
-org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
+Aqui está um exemplo de um [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) Configuração do OSGi que adiciona permissões adicionais para o `sling-distribution-importer` usuário.  A configuração adiciona permissões em `/var`.  Essa configuração deve ser adicionada ao pacote do aplicativo em `/apps/myapp/config` (onde myapp é a pasta onde o código do aplicativo está armazenado).
 
-## A implantação do My Cloud Manager falha na etapa de implantação AEM as a Cloud Service e já sou uma configuração OSGi do RepositoryInitializer. O que mais posso fazer? {#build-failures}
+## A implantação do My Cloud Manager falha na etapa de implantação AEM as a Cloud Service e já adicionei uma configuração OSGi do RepositoryInitializer. O que mais posso fazer? {#build-failures}
 
-If [adicionando uma configuração OSGi do RepositoryInitializer](##cloud-manager-deployment-cloud-service) não resolveu o erro, pode ser devido a um desses problemas adicionais.
+If [adicionando uma configuração OSGi do RepositoryInitializer](#cloud-manager-deployment-cloud-service) não resolveu o erro, pode ser devido a um desses problemas adicionais.
 
 * A implantação pode estar falhando devido a uma configuração OSGi incorreta que interrompe um serviço predefinido.
    * Verifique os logs durante a implantação para ver se há erros óbvios.
@@ -127,6 +129,6 @@ setting variables... !
 Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)
 ```
 
-Nesse caso, o usuário que executa esses comandos precisa ser adicionado ao **Gerenciamento de implantação** na Admin Console.
+Nesse caso, o usuário que executa esses comandos precisa ser adicionado ao **Gerenciador de implantação** na Admin Console.
 
 Consulte [Permissões de API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) para obter mais detalhes.
