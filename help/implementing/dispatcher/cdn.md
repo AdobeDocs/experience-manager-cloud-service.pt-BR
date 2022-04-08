@@ -3,10 +3,10 @@ title: CDN no AEM as a Cloud Service
 description: CDN no AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: ef0a4d3c8daf091ef10c7ebb2bcaa562cf4357fa
+source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 9%
 AEM como Cloud Service é enviado com um CDN integrado. Seu principal objetivo é reduzir a latência, fornecendo conteúdo que pode ser armazenado em cache a partir dos nós CDN na borda, perto do navegador. Ele é totalmente gerenciado e configurado para obter o desempenho ideal dos aplicativos AEM.
 
 A CDN gerenciada AEM atenderá aos requisitos de desempenho e segurança da maioria dos clientes. Para o nível de publicação, os clientes podem apontar para ele opcionalmente a partir de sua própria CDN, que precisarão gerenciar. Isso será permitido caso a caso, com base no atendimento a determinados pré-requisitos, incluindo, mas não limitado a, o cliente que tem uma integração herdada com seu fornecedor de CDN que é difícil de abandonar.
+
+Além disso, veja os vídeos a seguir [Cloud 5 AEM CDN Parte 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) e [Cloud 5 AEM CDN Parte 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) para obter informações adicionais sobre a CDN em AEM as a Cloud Service.
 
 ## CDN gerenciada AEM  {#aem-managed-cdn}
 

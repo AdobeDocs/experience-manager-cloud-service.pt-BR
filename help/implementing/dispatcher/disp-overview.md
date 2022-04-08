@@ -3,10 +3,10 @@ title: Dispatcher na nuvem
 description: 'Dispatcher na nuvem '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## Introdução {#apache-and-dispatcher-configuration-and-testing}
 
-Esta página descreve as ferramentas do dispatcher e como baixá-las e extraí-las, os módulos de apache compatíveis e fornece uma visão geral de alto nível dos modos herdados e flexíveis. Além disso, há outras referências na validação e depuração e migração da configuração do Dispatcher do AMS para o AEM as a Cloud Service
+Esta página descreve as ferramentas do dispatcher e como baixá-las e extraí-las, os módulos de apache compatíveis e fornece uma visão geral de alto nível dos modos herdados e flexíveis. Além disso, há outras referências na validação e depuração e migração da configuração do Dispatcher do AMS para o AEM as a Cloud Service. Além disso, consulte [este vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) para obter detalhes adicionais sobre a implantação de arquivos do dispatcher em um ambiente do cloud service.
 
 ## Ferramentas do Dispatcher {#dispatcher-sdk}
 
