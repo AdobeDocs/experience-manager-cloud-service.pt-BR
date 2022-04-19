@@ -3,9 +3,9 @@ title: Pipelines de CI/CD
 description: Saiba mais sobre os pipelines de CI/CD do Cloud Manager e como eles podem ser usados para implantar seu código com eficiência.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,12 @@ O Cloud Manager oferece dois tipos de pipelines:
 * [Pipelines de não produção](#non-prod-pipeline)
 
 ![Tipos de gasodutos](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
+
+## Visão geral do vídeo {#video}
+
+Para obter uma visão geral rápida dos tipos de pipeline, assista a este vídeo curto.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)
 
 ## Pipelines de produção {#prod-pipeline}
 
